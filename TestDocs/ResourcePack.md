@@ -7,6 +7,7 @@ A **Resource Pack** is a folder structure that will contain all of your custom m
 1.	Right-click in the File Explorer window and select **New** and then **Folder** to create a new folder. 
 1.	Name the new folder **HelloWorldRP**.
 1.	Double-click on **HelloWorldRP** to open the folder. 
+    :::image type="content" source="{TestDocs\Media\ResourcePack\HelloWorldRP.png}" alt-text="{image of newly created folder with a single Folder called HelloWorldRP located within}":::
 
 ## The Manifest File
 
@@ -23,6 +24,7 @@ Since the file is written in JSON, Minecraft will be able to parse the informati
 1.	Right-click in the Explorer window and select **New**, then select **Text Document**. 
 1.	Set the name to **manifest.json**. 
     1.	You will need to change the file extension from .txt to .json. If your Explorer window does not show file extensions, you can enable **File Name Extensions** under the **View** tab.
+    :::image type="content" source="{TestDocs\Media\ResourcePack\manifest file.png}" alt-text="{image of newly created JSON file named Manifest located within the HelloWorldRP folder}":::
 1.	Double-click on **manifest.json** to open it in a Text Editor. 
 1.	Copy/Paste the following text into your text editor. 
 
@@ -63,10 +65,12 @@ With the Manifest file completed. You can now start adding custom content to Min
 1.	Right-click and select **New**, then select **Folder**.
 1.	Rename the folder to **blocks**.
 1.	Double-click on the **blocks** folder.
+    :::image type="content" source="{TestDocs\Media\ResourcePack\blocks folder.png}" alt-text="{image of the Windows Explorer Address Bar showcasing the 2 new folders named textures and blocks}":::
 
 ### Creating the texture
 
-Now that the folder structure is created, you can now place your custom textures here. A png file is also provided that you can download and place in your folder. <hyperlink to a simple color png>
+Now that the folder structure is created, you can now place your custom textures here. A png file is also provided that you can download and place in your folder. 
+:::image type="content" source="{TestDocs\Media\ResourcePack\dirt.png}" alt-text="{A PNG file that can be downloaded and used in place of a custom texture made in a photo editor}":::
 
 1.	Open up an image editor such as Paint, GIMP or Photoshop. 
     1.	In this tutorial, Paint will be used.
@@ -75,7 +79,7 @@ Now that the folder structure is created, you can now place your custom textures
 You can now design a pattern or any artwork in the editor. In this example, a simple fill color has been added. <add a dev blurb explaining some of the barebones design principles such as texture size and color pallet>
 1.	When done with your texture, select **File** and then select **Save As a PNG**.
 1.	Navigate to the **blocks** folder.
-1.	Save the file as **grass.png**.
+1.	Save the file as **dirt.png**.
 
 ### Testing the Pack
 
