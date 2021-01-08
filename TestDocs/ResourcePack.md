@@ -7,7 +7,7 @@ A **Resource Pack** is a folder structure that will contain all of your custom m
 1.	Right-click in the File Explorer window and select **New** and then **Folder** to create a new folder. 
 1.	Name the new folder **HelloWorldRP**.
 1.	Double-click on **HelloWorldRP** to open the folder. 
-   	![image of newly created folder with a single Folder called HelloWorldRP located within](Media/ResourcePack/helloworldrp.png)
+   	![image of newly created folder with a single Folder called HelloWorldRP located within](Media/ResourcePack/HelloWorldRP.png)
 ## The Manifest File
 
 In order to load a resource pack into Minecraft, a manifest file will need to be generated. The Manifest file is a JSON file that contains the following information; 
