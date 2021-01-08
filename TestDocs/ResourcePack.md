@@ -54,7 +54,7 @@ Universally Unique Identifier, or UUID for short, is a unique number used to ide
 1.	Copy and paste another UUID into the Module section. 
 1.	Save. 
 
-## Changing the Grass block
+## Changing the Dirt block
 
 With the Manifest file completed. You can now start adding custom content to Minecraft. Let’s get started by applying a new texture to the Vanilla dirt block. 
 
@@ -64,8 +64,7 @@ With the Manifest file completed. You can now start adding custom content to Min
 1.	Right-click and select **New**, then select **Folder**.
 1.	Rename the folder to **blocks**.
 1.	Double-click on the **blocks** folder.
-
-    ![image of the Windows Explorer Address Bar showcasing the 2 new folders named textures and blocks](Media/ResourcePack/blocks_folder.png)
+	![image of the Windows Explorer Address Bar showcasing the 2 new folders named textures and blocks](Media/ResourcePack/blocks_folder.png)
 
 ### Creating the texture
 
