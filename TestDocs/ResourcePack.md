@@ -7,7 +7,7 @@ A **Resource Pack** is a folder structure that will contain all of your custom m
 1.	Right-click in the File Explorer window and select **New** and then **Folder** to create a new folder. 
 1.	Name the new folder **HelloWorldRP**.
 1.	Double-click on **HelloWorldRP** to open the folder. 
-    :::image type="content" source="TestDocs\Media\ResourcePack\helloworldrp.png" alt-text="image of newly created folder with a single Folder called HelloWorldRP located within":::
+    :::image type="content" source="TestDocs\Media\ResourcePack\helloworldrp.png?raw=true" alt-text="image of newly created folder with a single Folder called HelloWorldRP located within":::
 
 ## The Manifest File
 
