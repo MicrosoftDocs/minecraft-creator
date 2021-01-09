@@ -1,7 +1,7 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Welcome to Minecraft - Creator!
+title: Resource Pack
 ms.prod: minecraft
 ---
 
