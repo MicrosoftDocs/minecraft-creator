@@ -1,3 +1,10 @@
+---
+author: v-josjones
+ms.author: v-josjones
+title: Welcome to Minecraft - Creator!
+ms.prod: minecraft
+---
+
 # Resource Pack
 
 A **Resource Pack** is a folder structure that will contain all of your custom models, sounds, textures and any custom content that is made. For this tutorial, you will change the appearance of the Dirt block.
