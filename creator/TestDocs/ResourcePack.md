@@ -17,6 +17,11 @@ In this tutorial, You will learn the following:
 * How custom textures are loaded into Minecraft. 
 * The concept of **Pack Stacking** when working with Add-on content. 
 
+### Requirements
+
+It’s recommended that the following be completed before beginning this tutorial.
+-	<Hyperlink to dev tools setup><need Level 0 Doc> 
+
 In order to create a new Resource Pack, You will need to create a new folder to contain a Manifest File and the custom content. 
 
 1.	Open up your game location folder **com.mojang**
