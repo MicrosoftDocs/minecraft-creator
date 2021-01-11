@@ -1,7 +1,7 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Introduction To Resource Pack
+title: Introduction To Behavior Pack
 ms.prod: Gaming
 ---
 
@@ -301,7 +301,7 @@ In the snippet, located above, is from the  vanilla zombie.json file, you can se
 1.	Save the cow.json file.
 <insert image here> 
 
-**Testing the Pack**
+### Testing the Pack
 Now that the pack has both a manifest file and a modification for the cow entity, You can now launch Minecraft and test your new Add-on. As stated in the Resource Pack, **Pack Stacking** will work for Behavior Packs as well. This means that content is loaded with any and all vanilla content being loaded first, followed by any additional Add-ons. Since the cow is using the cow.json namespace, every cow will inherit the new behaviors.
 
 1.	Launch **Minecraft**.
