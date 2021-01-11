@@ -1,13 +1,23 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Resource Pack
+title: Introduction To Resource Pack
 ms.prod: Gaming
 ---
 
 # Resource Pack
 
-A **Resource Pack** is a folder structure that will contain all of your custom models, sounds, textures and any custom content that is made. For this tutorial, you will change the appearance of the Dirt block.
+Before building your first Add On, you will need to create a Pack in order to add any custom content in Minecraft. There are two types of Packs that a creator can make, Resource and Behavior Packs. In this tutorial, you will learn about Resource Packs. 
+
+A **Resource Pack** is a folder structure that will contain all of your custom models, sounds, textures and any custom content that is made. Resource Packs are commonly used to add user generated content to add or replace new 
+
+In this tutorial, You will learn the following:
+* Understand how a **Resource Pack** is created. 
+* How a **Manifest File** is created. 
+* How custom textures are loaded into Minecraft. 
+* The concept of **Pack Stacking** when working with Add-on content. 
+
+In order to create a new Resource Pack, You will need to create a new folder to contain a Manifest File and the custom content. 
 
 1.	Open up your game location folder **com.mojang**
 1.	Double-click on the folder **resource_pack**.
@@ -25,7 +35,7 @@ In order to load a resource pack into Minecraft, a manifest file will need to be
 -	**Version** – Version of the Resource Pack.
 -	**Minimal Engine Version** – Required version of Minecraft that this Pack will work in.
 
-Since the file is written in JSON, Minecraft will be able to parse the information from the file and display it in the Add-On section. Inside the file, the information will be split into two separate sections; header and modules. The header section will contain the overall information for the pack, while modules will contain the dedicated packages 
+Since the file is written in JSON, Minecraft will be able to parse the information from the file and display it in the Add-On section. Inside the file, the information will be split into two separate sections; header and modules. The header section will contain the overall information for the pack, while modules will contain the dedicated packages information. 
 
 1.	Right-click in the Explorer window and select **New**, then select **Text Document**. 
 1.	Set the name to **manifest.json**. 
