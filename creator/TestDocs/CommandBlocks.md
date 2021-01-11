@@ -47,15 +47,17 @@ You will see a single command block that has been added to your inventory.
 
 Command Blocks have a wide range of uses within Minecraft, from handling entity spawning locations, rewarding a player for an action, or used to keep score in a multiplayer experience. Command Blocks also have a lot of customization settings to fit a Creators’ needs.
 
-When placing a block, you may notice arrows on the side. 
-  ![Image showcasing CommandBlock Arrows pointing to the right of the image](creator\TestDocs\Media\CommandBlocks\commandblockarrows.png)
+When placing a block, you may notice arrows on the side.
+
+![Image showcasing CommandBlock Arrows pointing to the right of the image](Media/CommandBlocks/commandblockarrows.png)
+
 These arrows will always point towards the player when placing down. The arrows show the flow of execution, as shown in the image as the block on the left will execute first, followed by the middle command block and finally the last block on the right will execute.
 
 Click the **Use** button (right-click for Windows 10 OS), to open up the Command Block GUI
 
 ## Command Block GUI
 
-![Overview of the command block graphical user interface](creator\TestDocs\Media\CommandBlocks\commandblockgui.png)
+![Overview of the command block graphical user interface](Media/CommandBlocks/commandblockgui.png)
 
 - **Block Type** defines what type of command block this is. There are 3 options;
     - **Impulse** will execute once they are activated via redstone signal.
