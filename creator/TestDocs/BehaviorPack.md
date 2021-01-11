@@ -33,7 +33,6 @@ A Behavior pack is a type of pack that allows creators to add, remove or alter b
 1.	Double-click on the folder **behavior_pack**.
 1.	Right-click in the File Explorer window and select **New** and then **Folder** to create a new folder.
 1.	Name the new folder **HelloWorldBP**.
-    1.	<Insert image here>
 1.	Double-click on **HelloWorldBP** to open the folder.
 
 ### The Manifest File
@@ -113,7 +112,7 @@ For a behavior pack, you can add a 3rd section to the manifest.json file called 
 
 Each character’s behaviors are defined using a json file. For this tutorial, you will copy the cow.json file located in the vanilla Behavior Pack located in the hyperlink in Requirements.
  
-1.	In the **HelloWorldBP** folder, right-click in the File Explorer window and select **New** and then **Folder&& to create a new folder.
+1.	In the **HelloWorldBP** folder, right-click in the File Explorer window and select **New** and then **Folder** to create a new folder.
 2.	Name the folder **entities**.
 3.	Verify that you have downloaded the Vanilla Behavior Pack located in the Requirements section of this tutorial. 
 4.	Unzip the folder in order to access the files within. 
