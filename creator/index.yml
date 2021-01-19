@@ -19,25 +19,25 @@ landingContent:
           - text: What is Minecraft Add-ons?
             url: https://www.minecraft.net/en-us/addons
           - text: Getting Started With Minecraft Add-ons
-            url: creator\TestDocs\GettingStarted.md
+            url: TestDocs/GettingStarted.md
     - title: Resource and Behavior Packs
       linkLists:
         - linkListType: learn
           links:
           - text: Resource Packs
-            url: creator\TestDocs\ResourcePack.md
+            url: TestDocs/ResourcePack.md
           - text: Behavior Packs
-            url: creator\TestDocs\BehaviorPack.md
+            url: TestDocs/BehaviorPack.md
   ## Row 2 ##
     - title: Working with Commands
       linkLists:
         - linkListType: learn
           links:
             - text: Introduction To Command Blocks
-              url: creator\TestDocs\CommandBlocks.md
+              url: TestDocs/CommandBlocks.md
     - title: Creating Custom Content
       linkLists:
         - linkListType: learn
           links:
             - text: Introduction to Adding Custom Blocks
-              url: creator\TestDocs\CustomBlock.md
+              url: TestDocs/CustomBlock.md
