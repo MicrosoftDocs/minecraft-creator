@@ -19,7 +19,7 @@ In this tutorial, you will learn the following:
 - What components are and how they are used to define Minecraft mobs.
 - How to add behaviors to an existing mob.
 
-## Requirements
+### Requirements
 It’s recommended that the following be completed before beginning this tutorial.
 -	<Hyperlink to dev tools setup><need Level 0 Doc> 
 -	[Introduction To Resource Packs](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/resourcepack?branch=main)
@@ -86,15 +86,16 @@ For a behavior pack, you can add a 3rd section to the manifest.json file called 
     "version": [1, 0, 0],
     "min_engine_version": [1, 16, 0]
   },
-  "modules": [
-    {
-      "description": "My First Add-On!",
-      "type": "data",
-      "uuid": "",
-      "version": [1, 0, 0]
-    }
-  ],
-“dependency”: [
+  "modules": 
+    [
+      {
+        "description": "My First Add-On!",
+          "type": "data",
+          "uuid": "",
+          "version": [1, 0, 0]
+      },
+    ],
+  “dependency”: [
     {
       “uuid”:””,
       “version”:[0,0,1]
@@ -136,10 +137,10 @@ The first section is the `Minecraft:entity`. This container is used to define wh
     },
 ```
 
-- **Identifier** is the in-game name used to define an entity.
-- **Is_Spawnable** is a Boolean allowing the option for the entity to be spawned in the world
-- **Is_Summonable** is a Boolean allowing players to summon via command interface.
-- **Is_experimental** is a Boolean that flags if the entity is in an experimental state.
+- **`Identifier`** is the in-game name used to define an entity.
+- **`Is_Spawnable`** is a Boolean allowing the option for the entity to be spawned in the world
+- **`Is_Summonable`** is a Boolean allowing players to summon via command interface.
+- **`Is_experimental`** is a Boolean that flags if the entity is in an experimental state.
 
 ### Component Groups
 
@@ -218,8 +219,7 @@ Events are actions that interface with Minecraft.
 
 In the cow.json file shown above, an entity_spawned event is defined here in order to spawn either an adult cow or a baby cow in the world.
 
-- **Randomize** allows the use of defining the odds of the entity spawning in either group. Here, there is a 95/100 chance it could spawn an adult cow or a 5/100 to spawn a baby cow
-- **Randomize** does not work off of a percentage system. The odds are calculated via the sum of the `“weight”` definition. If you were to change `“weight”: 5`, to `“weight”:25`, it would have a 25/120 chance of spawning.
+- **`Randomize`** allows the use of defining the odds of the entity spawning in either group. Here, there is a 95/100 chance it could spawn an adult cow or a 5/100 to spawn a baby cow `Randomize` does not work off of a percentage system. The odds are calculated via the sum of the `“weight”` definition. If you were to change `“weight”: 5`, to `“weight”:25`, it would have a 25/120 chance of spawning.
 
 ## Adding new behaviors
 
@@ -252,21 +252,22 @@ In order for the cow to attack, it will need to find a target that can be attack
 
 In the sample above, the **nearest_attackable_target** is a component that handles the behavior for detecting a potential target. The component has the following flags;
 
-- **Priority** is how important this component is compared to other behaviors. Lower numbers represent a higher priority, meaning that a component with a priority set to 1, will happen before another component set at 4. 
-- **Reselect_targets** is a Boolean that allows the entity to re-target the same entity after an attack.
-- **Within_radius** defines a radius around the cow of what targets can be selected
-- **Entity_types** is a collection of arguments that define what type of entity is considered a target.
-- **Filters** is what type of entity the cow will look for.
-- **Max** dist is the distance in blocks between the cow and the potential target in the filter.
-- **Must_see** is a Boolean that determines if the cow needs to have vision on its target. The cow will have to look directly at the player in order for the cow to consider the player a target.
+- **`Priority`** is how important this component is compared to other behaviors. Lower numbers represent a higher priority, meaning that a component with a priority set to 1, will happen before another component set at 4.
+- **`Reselect_targets`** is a Boolean that allows the entity to re-target the same entity after an attack.
+- **`Within_radius`** defines a radius around the cow of what targets can be selected
+- **`Entity_types`** is a collection of arguments that define what type of entity is considered a target.
+- **`Filters`** is what type of entity the cow will look for.
+- **`Max`** dist is the distance in blocks between the cow and the potential target in the filter.
+- **`Must_see`** is a Boolean that determines if the cow needs to have vision on its target. The cow will have to look directly at the player in order for the cow to consider the player a target.
 
 ### Adding the behavior
 
 Now we will add nearest_attackable_target to the cow.json in order to allow the cow to target a player.
 
 1.	Copy the sample located above for `minecraft:behavior.nearest_attackable_target.`
-1.	At the bottom of the **Component** header list, right below `Minecraft:pushable`, paste the snippet. 
+1.	At the bottom of the **Component** header list, right below `Minecraft:pushable`, paste the snippet.
 1.	Add a coma to the end of the `minecraft:pushable` snippet in order to prevent any JSON errors.
+
 <slap an image here> 
 
 ### Minecraft:behavior.MeleeAttack
