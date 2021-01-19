@@ -90,6 +90,22 @@ With the block defined in the **blocks.json** file, the next step is to associat
 
 1. Save the file.
 
+### The Canvas Texture
+
+<hyperlink to a texture>
+
+The Canvas block texture will need to be generated and placed in the Resource Pack. There is an image that will be provided for the `canvasBlock.png` but feel free to use a different texture.
+
+If you are using the one provided:
+
+1. Download the file to your computer.
+1. Place `canvasBlock.png` in the `HelloWorldRP/textures/blocks` folder.
+
+If you are creating a custom one:
+
+1. Check that the **Width** and **Height** to are set **64** each.
+1. Save the file as `canvasBlock.png` in the `HelloWorldRP/textures/blocks` folder.
+
 ## Setting up the Behavior JSON file
 
 With the work in the Resource Pack done, the Behavior Pack will need to be updated with the Canvas Block's components.
