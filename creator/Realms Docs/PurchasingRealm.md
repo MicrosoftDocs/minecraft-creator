@@ -10,7 +10,7 @@ ms.prod: Gaming
 Minecraft Realms are personal multiplayer servers that you can use to play with your friends. Your Minecraft Realm is always online and can always be accessed by you or anyone you invite. There are two different types of Realms subscriptions, Realms and Realms Plus.
 
 
-<insert artwork of finished product> <> 
+<insert artwork of finished product>
 
 
 In this tutorial, you will learn the following:
@@ -67,16 +67,19 @@ You will also need to configure your device privacy settings to allow Minecraft 
 After you have purchased a Realms or Realms Plus subscription, you will need to set up your Realm world. You can either create a new world, or you can use one of your existing worlds on your Realm.
 
 To create a new realm, follow these instructions:
-1.	In Minecraft, click Play.
-2.	Click the Create New button and then click the Create New World button. If you have a Realms Plus subscription, you can also choose a Realms Plus template to load. Click the template you want and click the Download button and then click the Create this World! button. 
+
+1.	In Minecraft, click **Play**.
+2.	Click the **Create New** button and then click the **Create New World** button. If you have a Realms Plus subscription, you can also choose a Realms Plus template to load. Click the template you want and click the **Download** button and then click the **Create this World!** button. 
 3.	Choose the game and multiplayer settings for your new world. For more information on world settings, see this article.
-4.	After you have completed adjusting your world settings, click the Create on Realms button.
+4.	After you have completed adjusting your world settings, click the **Create on Realms** button.
 5.	Choose the realm you want to play on. 
 Note: If the realm you choose already has a world loaded, this will erase that world and any saved progress. You will also need to re-invite any friends to give them access to your new world. If you want to save your progress in this world, you can [download your world] before you create a new one.
+
 To play an existing world on your realm, follow these instructions:
-1.	In Minecraft, click Play.
-2.	Click the Edit button next to the world you want to load.
+
+1.	In Minecraft, click **Play**.
+2.	Click the **Edit** button next to the world you want to load.
 3.	Adjust any game or multiplayer settings you want to change.
-4.	Click the Play on Realm button.
+4.	Click the **Play on Realm** button.
 5.	Choose the realm you want to play on. 
 Note: If the realm you choose already has a world loaded, this will erase that world and any saved progress. You will also need to re-invite any friends to give them access to your new world. If you want to save your progress in this world, you can [download your world] before you create a new one.
