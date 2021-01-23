@@ -46,13 +46,13 @@ landingContent:
       linkLists:
         - linkListType: overview
           links:
-            - text:  Minecraft and Microsoft Accounts
+            - text: Minecraft and Microsoft Accounts
               url: Realms Docs\MinecraftAndMicrosoftAccounts.md
             - text: Purchasing and Setting Up a New Realm
               url: Realms Docs\PurchasingRealm.md
     - title: Inviting Friends
       linkLists:
-        - linkListType: overview
+        - linkListType: learn
           links:
             - text: Invite With Gamertag
               url: Realms Docs\InviteWithGamertag.md
