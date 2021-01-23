@@ -41,3 +41,22 @@ landingContent:
           links:
             - text: Introduction to Adding Custom Blocks
               url: TestDocs/CustomBlock.md
+  ## Row 3 ##
+    - title: Getting started with Realms
+    - linkList:
+      - linkListType: overview
+        links:
+          - text: Minecraft and Microsoft Accounts
+            url:  Realms Docs\MinecraftAndMicrosoftAccounts.md
+          - text: Purchasing and Setting Up a New Realm
+            url:  Realms Docs\PurchasingRealm.md
+    - title: Inviting Friends
+    - linkList:
+      - linkListType: overview
+        links:
+          - text: Invite With Gamertag
+            url: Realms Docs\InviteWithGamertag.md
+          - text: Invite with Share Link
+            url: Realms Docs\InviteWithShareLink.md
+
+
