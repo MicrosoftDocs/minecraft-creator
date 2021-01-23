@@ -42,7 +42,7 @@ landingContent:
             - text: Introduction to Adding Custom Blocks
               url: TestDocs/CustomBlock.md
      - title: Getting started with Realms
-      linkLists:
+       linkLists:
         - linkListType: overview
           links:
             - text:  Minecraft and Microsoft Accounts
