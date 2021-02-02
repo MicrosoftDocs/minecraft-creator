@@ -38,7 +38,7 @@ productDirectory:
   # card
     - title: Add-on Packs
       #imageSrc needs to in a square ratio with no whitespace
-      imageSrc: creator\images\minecraftBlock.png
+      imageSrc: creator/images/minecraftBlock.png
       links:
         - url: TestDocs/ResourcePack.md
           text: Changing textures with a Resource Pack
@@ -46,13 +46,13 @@ productDirectory:
           text: How to make a cow attack a player using a Behavior Pack
   # card
     - title: Working with Commands
-      imageSrc: creator\images\minecraftBlock.png
+      imageSrc: creator/images/minecraftBlock.png
       links:
         - url: TestDocs/CommandBlocks.md
           text: Introduction to Command Blocks
   # card
     - title: Adding New Content
-      imageSrc: creator\images\minecraftBlock.png
+      imageSrc: creator/images/minecraftBlock.png
       links:
         - url: TestDocs/CustomBlock.md
           text: Adding a new Block
