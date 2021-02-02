@@ -1,60 +1,84 @@
-### YamlMime:Landing
+### YamlMime:Hub
 
-title: Minecraft Creator Platform documentation
-summary: The Minecraft Creator Platform is a service that helps Creators build add-on content within Minecraft.
+title: Minecraft Creator Platform documentation # < 60 chars
+summary: Minecraft Creator Platform is the first step on our journey towards bringing even greater levels of customisation to Minecraft. # < 160 chars
 
 metadata:
-  ms.topic: landing-page
+  title: Mincraft Creator Platform documentation # Required; page title shown in search results < 60 chars
+  description: Minecraft Creator Platform is the first step on our journey towards bringing even greater levels of customisation to Minecraft. # < 160 chars
+  service: service
+  ms.service: service # Required; service per approved list. 
+  ms.topic: hub-page # Required
   ms.date: 01/19/2021
-  author: v-josjones
-  ms.author: v-josjones
+  author: v-josjones # Required; Github alias
+  ms.author: v-josjones # Required; Microsoft alias; with correct grammar
 
-landingContent:
+# highlighted content section (optional), will outlined up to 8 items in a 4x2 grid. 
+highlightedContent: 
+# itemType:  architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    #card used to define plugin
+    - title: What is Minecraft Add-ons?
+      itemType: concept
+      url: https://www.minecraft.net/en-us/addons
+    #card
+    - title: Getting Started with Add-on Development
+      itemType: get-started
+      url: TestDocs/GettingStarted.md
+    #card
+    - title: Compass Partner Documentation
+      itemType: reference
+      url: https://compass.minecraft.partners/
 
-  ## Row 1 ###
-    - title: About Minecraft Creator Platform
-      linkLists:
-        - linkListType: overview
-          links:
-          - text: What is Minecraft Add-ons?
-            url: https://www.minecraft.net/en-us/addons
-          - text: Getting Started With Minecraft Add-ons
-            url: TestDocs/GettingStarted.md
-    - title: Resource and Behavior Packs
-      linkLists:
-        - linkListType: learn
-          links:
-          - text: Resource Packs
-            url: TestDocs/ResourcePack.md
-          - text: Behavior Packs
-            url: TestDocs/BehaviorPack.md
-  ## Row 2 ##
+# productDirectory section (optional) will outline rows that can contain text and media along with lists. 
+productDirectory:
+  title: Building up the Foundation
+  summary: If you are new to Minecraft development or looking to brush up on some knowledge, we have created a few getting started tutorials to help you take your first steps as a Creator!
+  items:
+  # card
+    - title: Add-on Packs
+      #imageSrc needs to in a square ratio with no whitespace
+      #imageSrc: 
+      links:
+        - url: TestDocs/ResourcePack.md
+          text: Changing textures with a Resource Pack
+        - url: TestDocs/BehaviorPack.md
+          text: How to make a cow attack a player using a Behavior Pack
+  # card
     - title: Working with Commands
-      linkLists:
-        - linkListType: learn
-          links:
-            - text: Introduction To Command Blocks
-              url: TestDocs/CommandBlocks.md
-    - title: Creating Custom Content
-      linkLists:
-        - linkListType: learn
-          links:
-            - text: Introduction to Adding Custom Blocks
-              url: TestDocs/CustomBlock.md
-  ## Row 3 ##
+      #imageSrc:
+      links:
+        - url: TestDocs/CommandBlocks.md
+          text: Introduction to Command Blocks
+  # card
+    - title: Adding New Content
+      #imageSrc:
+      links:
+        - url: TestDocs/CustomBlock.md
+          text: Adding a new Block
+
+# conceptualContent is similar to product directory but using to split between realms and creator
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  title: Realms # < 60 chars
+  summary: Realms are personal multiplayer servers, run by Minecraft, just for you and your friends.  # < 160 chars
+  items:
     - title: Getting started with Realms
-      linkLists:
-        - linkListType: overview
-          links:
-            - text: Minecraft and Microsoft Accounts
-              url: Realms Docs\MinecraftAndMicrosoftAccounts.md
-            - text: Purchasing and Setting Up a New Realm
-              url: Realms Docs\PurchasingRealm.md
+      summary: Realms requires a few set up steps before you can get started.
+      links:
+        - url: Realms Docs\MinecraftAndMicrosoftAccounts.md
+          itemType: overview
+          text: Minecraft and Microsoft Accounts
+        - url: Realms Docs\PurchasingRealm.md
+          itemType: deploy
+          text: Purchasing and Setting Up a New Realm
     - title: Inviting Friends
-      linkLists:
-        - linkListType: learn
-          links:
-            - text: Invite With Gamertag
-              url: Realms Docs\InviteWithGamertag.md
-            - text: Invite with Share Link
-              url: Realms Docs\InviteWithShareLink.md
+      summary: With a realm set up, now you just need to invite your friends!
+      links: 
+        - url: Realms Docs\InviteWithGamertag.md
+          itemType: how-to-guide
+          text: Invite with Gamertag
+        - url: Realms Docs\InviteWithShareLink.md
+          itemType: how-to-guide
+          text: Invite with Share Link
+
