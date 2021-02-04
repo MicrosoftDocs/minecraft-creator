@@ -1,59 +1,27 @@
 <a name="module_GameTest"></a>
 
-## GameTest
-
-* [GameTest](#module_GameTest)
-    * [~RegistrationBuilder](#module_GameTest..RegistrationBuilder)
-        * [.batch(batchName)](#module_GameTest..RegistrationBuilder+batch) â‡’ <code>object\_handle\_todo</code>
-        * [.required(isRequired)](#module_GameTest..RegistrationBuilder+required) â‡’ <code>object\_handle\_todo</code>
-        * [.requiredSuccessfulAttempts(attemptCount)](#module_GameTest..RegistrationBuilder+requiredSuccessfulAttempts) â‡’ <code>object\_handle\_todo</code>
-        * [.maxAttempts(attemptCount)](#module_GameTest..RegistrationBuilder+maxAttempts) â‡’ <code>object\_handle\_todo</code>
-        * [.maxTicks(tickCount)](#module_GameTest..RegistrationBuilder+maxTicks) â‡’ <code>object\_handle\_todo</code>
-        * [.setupTicks(tickCount)](#module_GameTest..RegistrationBuilder+setupTicks) â‡’ <code>object\_handle\_todo</code>
-        * [.structureName(structureName)](#module_GameTest..RegistrationBuilder+structureName) â‡’ <code>object\_handle\_todo</code>
-        * [.tag(tagName)](#module_GameTest..RegistrationBuilder+tag) â‡’ <code>object\_handle\_todo</code>
-    * [~Helper](#module_GameTest..Helper)
-        * [.succeed()](#module_GameTest..Helper+succeed)
-        * [.succeedIf(callback)](#module_GameTest..Helper+succeedIf)
-        * [.succeedWhen(callback)](#module_GameTest..Helper+succeedWhen)
-        * [.failIf(callback)](#module_GameTest..Helper+failIf)
-        * [.runAtTickTime(tickTime, callback)](#module_GameTest..Helper+runAtTickTime)
-        * [.runAfterDelay(ticksToDelay, callback)](#module_GameTest..Helper+runAfterDelay)
-        * [.succeedWhenActorPresent(actorTypeId, x, y, z)](#module_GameTest..Helper+succeedWhenActorPresent)
-        * [.succeedWhenActorNotPresent(actorTypeId, x, y, z)](#module_GameTest..Helper+succeedWhenActorNotPresent)
-        * [.succeedWhenBlockPresent(block, x, y, z)](#module_GameTest..Helper+succeedWhenBlockPresent)
-        * [.setBlock(block, x, y, z)](#module_GameTest..Helper+setBlock)
-        * [.pressButton(x, y, z)](#module_GameTest..Helper+pressButton)
-        * [.killAllActors()](#module_GameTest..Helper+killAllActors)
-        * [.spawn(actorTypeId, x, y, z)](#module_GameTest..Helper+spawn)
-        * [.assertActorPresent(actorTypeId, x, y, z)](#module_GameTest..Helper+assertActorPresent)
-        * [.assertActorNotPresentInArea(actorTypeId)](#module_GameTest..Helper+assertActorNotPresentInArea)
-        * [.assertActorNotPresent(actorTypeId, x, y, z)](#module_GameTest..Helper+assertActorNotPresent)
-        * [.assertBlockPresent(block, x, y, z)](#module_GameTest..Helper+assertBlockPresent)
-        * [.assertBlockNotPresent(block, x, y, z)](#module_GameTest..Helper+assertBlockNotPresent)
-        * [.assertItemActorPresent()](#module_GameTest..Helper+assertItemActorPresent)
-        * [.assertItemActorNotPresent()](#module_GameTest..Helper+assertItemActorNotPresent)
+# GameTest API
 
 <a name="module_GameTest..RegistrationBuilder"></a>
 
-### GameTest~RegistrationBuilder
+## GameTest ~RegistrationBuilder Class
 A utility class to set GameTest parameters for a test
 
 **Kind**: inner class of [<code>GameTest</code>](#module_GameTest)  
 
 * [~RegistrationBuilder](#module_GameTest..RegistrationBuilder)
-    * [.batch(batchName)](#module_GameTest..RegistrationBuilder+batch) â‡’ <code>object\_handle\_todo</code>
-    * [.required(isRequired)](#module_GameTest..RegistrationBuilder+required) â‡’ <code>object\_handle\_todo</code>
-    * [.requiredSuccessfulAttempts(attemptCount)](#module_GameTest..RegistrationBuilder+requiredSuccessfulAttempts) â‡’ <code>object\_handle\_todo</code>
-    * [.maxAttempts(attemptCount)](#module_GameTest..RegistrationBuilder+maxAttempts) â‡’ <code>object\_handle\_todo</code>
-    * [.maxTicks(tickCount)](#module_GameTest..RegistrationBuilder+maxTicks) â‡’ <code>object\_handle\_todo</code>
-    * [.setupTicks(tickCount)](#module_GameTest..RegistrationBuilder+setupTicks) â‡’ <code>object\_handle\_todo</code>
-    * [.structureName(structureName)](#module_GameTest..RegistrationBuilder+structureName) â‡’ <code>object\_handle\_todo</code>
-    * [.tag(tagName)](#module_GameTest..RegistrationBuilder+tag) â‡’ <code>object\_handle\_todo</code>
+    * [.batch(batchName)](#module_GameTest..RegistrationBuilder+batch)  
+    * [.required(isRequired)](#module_GameTest..RegistrationBuilder+required)  
+    * [.requiredSuccessfulAttempts(attemptCount)](#module_GameTest..RegistrationBuilder+requiredSuccessfulAttempts)  
+    * [.maxAttempts(attemptCount)](#module_GameTest..RegistrationBuilder+maxAttempts)  
+    * [.maxTicks(tickCount)](#module_GameTest..RegistrationBuilder+maxTicks)  
+    * [.setupTicks(tickCount)](#module_GameTest..RegistrationBuilder+setupTicks)  
+    * [.structureName(structureName)](#module_GameTest..RegistrationBuilder+structureName)  
+    * [.tag(tagName)](#module_GameTest..RegistrationBuilder+tag)  
 
 <a name="module_GameTest..RegistrationBuilder+batch"></a>
 
-#### registrationBuilder.batch(batchName) â‡’ <code>object\_handle\_todo</code>
+### registrationBuilder.batch(batchName)  
 Sets the batch for the test to run in
 
 **Kind**: instance method of [<code>RegistrationBuilder</code>](#module_GameTest..RegistrationBuilder)  
@@ -64,7 +32,7 @@ Sets the batch for the test to run in
 
 <a name="module_GameTest..RegistrationBuilder+required"></a>
 
-#### registrationBuilder.required(isRequired) â‡’ <code>object\_handle\_todo</code>
+### registrationBuilder.required(isRequired)  
 **Kind**: instance method of [<code>RegistrationBuilder</code>](#module_GameTest..RegistrationBuilder)  
 
 | Param | Type |
@@ -73,7 +41,7 @@ Sets the batch for the test to run in
 
 <a name="module_GameTest..RegistrationBuilder+requiredSuccessfulAttempts"></a>
 
-#### registrationBuilder.requiredSuccessfulAttempts(attemptCount) â‡’ <code>object\_handle\_todo</code>
+### registrationBuilder.requiredSuccessfulAttempts(attemptCount)  
 Sets the number of successful test runs to be considered successful
 
 **Kind**: instance method of [<code>RegistrationBuilder</code>](#module_GameTest..RegistrationBuilder)  
@@ -84,7 +52,7 @@ Sets the number of successful test runs to be considered successful
 
 <a name="module_GameTest..RegistrationBuilder+maxAttempts"></a>
 
-#### registrationBuilder.maxAttempts(attemptCount) â‡’ <code>object\_handle\_todo</code>
+### registrationBuilder.maxAttempts(attemptCount)  
 Sets the maximum number of times a test will try to rerun if it fails
 
 **Kind**: instance method of [<code>RegistrationBuilder</code>](#module_GameTest..RegistrationBuilder)  
@@ -95,7 +63,7 @@ Sets the maximum number of times a test will try to rerun if it fails
 
 <a name="module_GameTest..RegistrationBuilder+maxTicks"></a>
 
-#### registrationBuilder.maxTicks(tickCount) â‡’ <code>object\_handle\_todo</code>
+### registrationBuilder.maxTicks(tickCount)  
 Sets the maximum number of ticks a test will run for before timing out and failing
 
 **Kind**: instance method of [<code>RegistrationBuilder</code>](#module_GameTest..RegistrationBuilder)  
@@ -106,7 +74,7 @@ Sets the maximum number of ticks a test will run for before timing out and faili
 
 <a name="module_GameTest..RegistrationBuilder+setupTicks"></a>
 
-#### registrationBuilder.setupTicks(tickCount) â‡’ <code>object\_handle\_todo</code>
+### registrationBuilder.setupTicks(tickCount)  
 Sets the number of ticks for a test to wait before executing when the structure is spawned
 
 **Kind**: instance method of [<code>RegistrationBuilder</code>](#module_GameTest..RegistrationBuilder)  
@@ -117,7 +85,7 @@ Sets the number of ticks for a test to wait before executing when the structure 
 
 <a name="module_GameTest..RegistrationBuilder+structureName"></a>
 
-#### registrationBuilder.structureName(structureName) â‡’ <code>object\_handle\_todo</code>
+### registrationBuilder.structureName(structureName)  
 Sets the name of the structure for a test to use.  "Foo:bar" will load `/structures/Foo/bar.mcstructure` from the behavior pack stack
 
 **Kind**: instance method of [<code>RegistrationBuilder</code>](#module_GameTest..RegistrationBuilder)  
@@ -128,7 +96,7 @@ Sets the name of the structure for a test to use.  "Foo:bar" will load `/structu
 
 <a name="module_GameTest..RegistrationBuilder+tag"></a>
 
-#### registrationBuilder.tag(tagName) â‡’ <code>object\_handle\_todo</code>
+### registrationBuilder.tag(tagName)  
 Adds a tag to a test.  You can run all tests with a given tag with `/gametest runall <tag>`
 
 **Kind**: instance method of [<code>RegistrationBuilder</code>](#module_GameTest..RegistrationBuilder)  
@@ -139,7 +107,7 @@ Adds a tag to a test.  You can run all tests with a given tag with `/gametest ru
 
 <a name="module_GameTest..Helper"></a>
 
-### GameTest~Helper
+## GameTest ~Helper Class
 **Kind**: inner class of [<code>GameTest</code>](#module_GameTest)  
 
 * [~Helper](#module_GameTest..Helper)
@@ -166,11 +134,11 @@ Adds a tag to a test.  You can run all tests with a given tag with `/gametest ru
 
 <a name="module_GameTest..Helper+succeed"></a>
 
-#### helper.succeed()
+### helper.succeed()
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
 <a name="module_GameTest..Helper+succeedIf"></a>
 
-#### helper.succeedIf(callback)
+### helper.succeedIf(callback)
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
 
 | Param | Type |
@@ -179,7 +147,7 @@ Adds a tag to a test.  You can run all tests with a given tag with `/gametest ru
 
 <a name="module_GameTest..Helper+succeedWhen"></a>
 
-#### helper.succeedWhen(callback)
+### helper.succeedWhen(callback)
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
 
 | Param | Type |
@@ -188,7 +156,7 @@ Adds a tag to a test.  You can run all tests with a given tag with `/gametest ru
 
 <a name="module_GameTest..Helper+failIf"></a>
 
-#### helper.failIf(callback)
+### helper.failIf(callback)
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
 
 | Param | Type |
@@ -197,7 +165,7 @@ Adds a tag to a test.  You can run all tests with a given tag with `/gametest ru
 
 <a name="module_GameTest..Helper+runAtTickTime"></a>
 
-#### helper.runAtTickTime(tickTime, callback)
+### helper.runAtTickTime(tickTime, callback)
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
 
 | Param | Type |
@@ -207,7 +175,7 @@ Adds a tag to a test.  You can run all tests with a given tag with `/gametest ru
 
 <a name="module_GameTest..Helper+runAfterDelay"></a>
 
-#### helper.runAfterDelay(ticksToDelay, callback)
+### helper.runAfterDelay(ticksToDelay, callback)
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
 
 | Param | Type |
@@ -217,7 +185,7 @@ Adds a tag to a test.  You can run all tests with a given tag with `/gametest ru
 
 <a name="module_GameTest..Helper+succeedWhenActorPresent"></a>
 
-#### helper.succeedWhenActorPresent(actorTypeId, x, y, z)
+### helper.succeedWhenActorPresent(actorTypeId, x, y, z)
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
 
 | Param | Type |
@@ -229,7 +197,7 @@ Adds a tag to a test.  You can run all tests with a given tag with `/gametest ru
 
 <a name="module_GameTest..Helper+succeedWhenActorNotPresent"></a>
 
-#### helper.succeedWhenActorNotPresent(actorTypeId, x, y, z)
+### helper.succeedWhenActorNotPresent(actorTypeId, x, y, z)
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
 
 | Param | Type |
@@ -241,7 +209,7 @@ Adds a tag to a test.  You can run all tests with a given tag with `/gametest ru
 
 <a name="module_GameTest..Helper+succeedWhenBlockPresent"></a>
 
-#### helper.succeedWhenBlockPresent(block, x, y, z)
+### helper.succeedWhenBlockPresent(block, x, y, z)
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
 
 | Param | Type |
@@ -253,7 +221,7 @@ Adds a tag to a test.  You can run all tests with a given tag with `/gametest ru
 
 <a name="module_GameTest..Helper+setBlock"></a>
 
-#### helper.setBlock(block, x, y, z)
+### helper.setBlock(block, x, y, z)
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
 
 | Param | Type |
@@ -265,7 +233,7 @@ Adds a tag to a test.  You can run all tests with a given tag with `/gametest ru
 
 <a name="module_GameTest..Helper+pressButton"></a>
 
-#### helper.pressButton(x, y, z)
+### helper.pressButton(x, y, z)
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
 
 | Param | Type |
@@ -276,11 +244,11 @@ Adds a tag to a test.  You can run all tests with a given tag with `/gametest ru
 
 <a name="module_GameTest..Helper+killAllActors"></a>
 
-#### helper.killAllActors()
+### helper.killAllActors()
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
 <a name="module_GameTest..Helper+spawn"></a>
 
-#### helper.spawn(actorTypeId, x, y, z)
+### helper.spawn(actorTypeId, x, y, z)
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
 
 | Param | Type |
@@ -292,7 +260,7 @@ Adds a tag to a test.  You can run all tests with a given tag with `/gametest ru
 
 <a name="module_GameTest..Helper+assertActorPresent"></a>
 
-#### helper.assertActorPresent(actorTypeId, x, y, z)
+### helper.assertActorPresent(actorTypeId, x, y, z)
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
 
 | Param | Type |
@@ -304,7 +272,7 @@ Adds a tag to a test.  You can run all tests with a given tag with `/gametest ru
 
 <a name="module_GameTest..Helper+assertActorNotPresentInArea"></a>
 
-#### helper.assertActorNotPresentInArea(actorTypeId)
+### helper.assertActorNotPresentInArea(actorTypeId)
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
 
 | Param | Type |
@@ -313,7 +281,7 @@ Adds a tag to a test.  You can run all tests with a given tag with `/gametest ru
 
 <a name="module_GameTest..Helper+assertActorNotPresent"></a>
 
-#### helper.assertActorNotPresent(actorTypeId, x, y, z)
+### helper.assertActorNotPresent(actorTypeId, x, y, z)
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
 
 | Param | Type |
@@ -325,7 +293,7 @@ Adds a tag to a test.  You can run all tests with a given tag with `/gametest ru
 
 <a name="module_GameTest..Helper+assertBlockPresent"></a>
 
-#### helper.assertBlockPresent(block, x, y, z)
+### helper.assertBlockPresent(block, x, y, z)
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
 
 | Param | Type |
@@ -337,7 +305,7 @@ Adds a tag to a test.  You can run all tests with a given tag with `/gametest ru
 
 <a name="module_GameTest..Helper+assertBlockNotPresent"></a>
 
-#### helper.assertBlockNotPresent(block, x, y, z)
+### helper.assertBlockNotPresent(block, x, y, z)
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
 
 | Param | Type |
@@ -349,9 +317,9 @@ Adds a tag to a test.  You can run all tests with a given tag with `/gametest ru
 
 <a name="module_GameTest..Helper+assertItemActorPresent"></a>
 
-#### helper.assertItemActorPresent()
+### helper.assertItemActorPresent()
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
 <a name="module_GameTest..Helper+assertItemActorNotPresent"></a>
 
-#### helper.assertItemActorNotPresent()
+### helper.assertItemActorNotPresent()
 **Kind**: instance method of [<code>Helper</code>](#module_GameTest..Helper)  
