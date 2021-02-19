@@ -4,7 +4,7 @@ title: Minecraft Creator Platform documentation # < 60 chars
 summary: Minecraft Creator Platform is the first step on our journey towards bringing even greater levels of customisation to Minecraft. # < 160 chars
 
 metadata:
-  title: Mincraft Creator Platform documentation # Required; page title shown in search results < 60 chars
+  title: Minecraft Creator Platform documentation # Required; page title shown in search results < 60 chars
   description: Minecraft Creator Platform is the first step on our journey towards bringing even greater levels of customisation to Minecraft. # < 160 chars
   service: service
   ms.service: service # Required; service per approved list. 
@@ -50,6 +50,8 @@ productDirectory:
       links:
         - url: TestDocs/CommandBlocks.md
           text: Introduction to Command Blocks
+        - url: TestDocs/scriptingGettingStarted.md
+          text: Scripting - Getting Started with GameTest
   # card
     - title: Adding New Content
       imageSrc: creator\images\minecraftBlock.png
