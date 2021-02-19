@@ -1,3 +1,27 @@
-- name: Index
-  href: index.md
+- name: CreatorPortal
+  items:
+    - name: Getting Started
+      href: TestDocs/GettingStarted.md
+    - name: Resource & Behavior Packs
+      items:
+      - name: Resource Pack
+        href: TestDocs/ResourcePack.md
+      - name: Behavior Pack
+        href: TestDocs/BehaviorPack.md
+    - name: Scripting
+      items:
+      - name: Getting Started with Commands
+        href: TestDocs/CommandBlocks.md
+      - name: Getting Started with GameTest
+        href: TestDocs/scriptingGettingStarted.md
+    - name: Adding Content
+      items:
+      - name: Adding a Custom Block
+        href: TestDocs/CustomBlock.md
+    - name: Bedrock API 
+      items:
+      - name: Scripting
+        items:
+        - name: GameTest
+          href: TestAPI/gametest.md
   
