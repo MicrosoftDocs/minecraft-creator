@@ -20,12 +20,6 @@ In this tutorial, you will learn the following:
 -   Requirements for a Realms or Realms Plus subscription.
 -   How to set up a new Realm.
 
-### Requirements
-It’s recommended that the following be completed before beginning this tutorial.
--	<Hyperlink to dev tools setup><need Level 0 Doc> 
--	[Introduction To Resource Packs](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/resourcepack?branch=main)
--	[Vanilla Behavior Pack](https://aka.ms/behaviorpacktemplate)
-
 ## Purchasing a Realms or Realms Plus subscription
 
 Subscribing to Realms or Realms Plus will give you access to one Realm. You can try Realms or Realms Plus for free for a 30-day trial. After your trial is over, you will be charged the appropriate subscription fee every 30 days.
