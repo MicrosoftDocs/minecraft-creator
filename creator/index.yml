@@ -50,7 +50,7 @@ productDirectory:
       links:
         - url: TestDocs/CommandBlocks.md
           text: Introduction to Command Blocks
-        - url: TestDocs/scriptingGettingStarted.md
+        - url: TestDocs/GameTestGettingStarted.md
           text: Scripting - Getting Started with GameTest
   # card
     - title: Adding New Content
