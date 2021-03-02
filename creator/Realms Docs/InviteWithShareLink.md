@@ -7,7 +7,7 @@ ms.prod: Gaming
 
 # Invite a Friend Using Share Links
 
-Share links are the best way to invite friends who play Minecraft on different devices, like iOS, Android, or Playstation. To invite a friend to play on your Realm using their a share link, follow these instructions:
+Share Links are an easy way to invite friends who play Minecraft, but aren't on your friends list, yet. To invite a friend to play on your Realm using a Share Link, follow these instructions:
 
 1. In Minecraft, select **Play**.
 2. Select the **Edit** button next to the Realm you want to invite your friend to.
