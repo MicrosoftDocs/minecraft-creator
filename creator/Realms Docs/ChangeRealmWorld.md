@@ -7,7 +7,7 @@ ms.prod: Gaming
 
 # Change Your Realm World 
 
-You can change the world you want to play on your Realm any time. Keep in mind that if you change your Realm world, all of the progress and changes you have made to that world will be lost and any friends you have invited will lose access to your Realm. If you would like to save your progress in this world, we recommend downloading it before replacing it with a different world.
+You can change the world you want to play on your Realm any time. Keep in mind that if you change your Realm world, all of the progress and changes you have made to that world will be lost. If you would like to save your progress in this world, we recommend downloading it before replacing it with a different world. Any friends you have invited to your Realm will still be able to play on your new Realm world. 
 
 ## Download Your Current Realm World
 
