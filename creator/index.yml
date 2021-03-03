@@ -74,6 +74,9 @@ conceptualContent:
         - url: Realms Docs\PurchasingRealm.md
           itemType: deploy
           text: Purchasing and Setting Up a New Realm
+        - url: Realms Docs\ChangeRealmWorld.md
+          itemType: deploy
+          text: Change Your Realm World
     - title: Inviting Friends
       summary: With a realm set up, now you just need to invite your friends!
       links: 
@@ -83,4 +86,7 @@ conceptualContent:
         - url: Realms Docs\InviteWithShareLink.md
           itemType: how-to-guide
           text: Invite with Share Link
+        - url: Realms Docs\JoiningARealm.md
+          itemType: how-to-guide
+          text: Joining Someone's Realm
 

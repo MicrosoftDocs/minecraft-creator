@@ -9,10 +9,6 @@ ms.prod: Gaming
 
 Minecraft Realms are personal multiplayer servers that you can use to play with your friends. Your Minecraft Realm is always online and can always be accessed by you or anyone you invite. There are two different types of Realms subscriptions, Realms and Realms Plus.
 
-
-<insert artwork of finished product>
-
-
 In this tutorial, you will learn the following:
 
 -   How to purchase a Realms or Realms Plus subscription on Bedrock.
