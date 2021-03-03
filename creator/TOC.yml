@@ -1,7 +1,7 @@
 - name: Minecraft Creator
   items:
     - name: Minecraft Creator Documentation
-      href: creator/index.yml
+      href: index.yml
     - name: Getting Started
       href: TestDocs/GettingStarted.md
     - name: Resource & Behavior Packs
