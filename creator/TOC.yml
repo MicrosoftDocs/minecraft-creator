@@ -10,7 +10,7 @@
         href: TestDocs/ResourcePack.md
       - name: Behavior Pack
         href: TestDocs/BehaviorPack.md
-    - name: GameTest
+    - name: Commands and GameTest
       items:
       - name: Getting Started with Commands
         href: TestDocs/CommandBlocks.md
