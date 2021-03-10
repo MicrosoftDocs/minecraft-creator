@@ -13,17 +13,17 @@ A **Resource Pack** is a folder structure that will contain all of your custom m
 
 In this tutorial, You will learn the following:
 
-[!div class="checklist"]
-- Understand how a **Resource Pack** is created. 
--  How a **Manifest File** is created.
-- How custom textures are loaded into Minecraft.
-- The concept of **Pack Stacking** when working with Add-on content.
+> [!div class="checklist"]
+> - Understand how a **Resource Pack** is created. 
+> -  How a **Manifest File** is created.
+> - How custom textures are loaded into Minecraft.
+> - The concept of **Pack Stacking** when working with Add-on content.
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial.
+It’s recommended that the following be completed before beginning this tutorial:
 
-- [Getting Started with Add-on Development](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/gettingstarted?branch=main)
+- [Getting Started with Add-on Development](GettingStarted.md)
 - [Vanilla Resource Pack](https://aka.ms/resourcepacktemplate)
 
 ## Building the Resource Pack
@@ -120,8 +120,8 @@ You can now design a pattern or any artwork in the editor. In this example, a si
 
 Now that the pack has both a manifest file and a texture. You can now launch Minecraft and test your new Add-on.
 
-[!TIP]
-Pack Stacking is when Content is loaded with any and all vanilla content being loaded first, followed by any additional Add-ons.
+> [!IMPORTANT]
+> **Pack Stacking** is when Content is loaded with any and all vanilla content being loaded first, followed by any additional Add-ons.
 
 Since the custom texture is named dirt.png. the texture will be used on every single dirt block in game.
 
@@ -138,5 +138,5 @@ Since the custom texture is named dirt.png. the texture will be used on every si
 
 With a custom texture now apart of your Minecraft world, its now time to look at Behavior Packs and how you can alter existing entity behaviors. In the next section, you will learn how to add an attackable behavior to a normally peaceful cow entity.
 
-[!div class="nextstepaction"]
-[Behavior Pack](creator/TestDocs/BehaviorPack.md)
+> [!div class="nextstepaction"]
+> [Behavior Pack](BehaviorPack.md)

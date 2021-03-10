@@ -11,11 +11,11 @@ Before building your first Add On, you will need to create a Pack in order to ad
 
 In this tutorial, you will learn the following:
 
-[!div class="checklist"]
-- The difference between a Resource Pack and a Behavior Pack. 
-- How to build a **dependency** link between Resource Packs and Behavior Packs.
-- What components are and how they are used to define Minecraft mobs.
-- How to add behaviors to an existing mob.
+> [!div class="checklist"]
+> - The difference between a Resource Pack and a Behavior Pack. 
+> - How to build a **dependency** link between Resource Packs and Behavior Packs.
+> - What components are and how they are used to define Minecraft mobs.
+> - How to add behaviors to an existing mob.
 
 ### Requirements
 It’s recommended that the following be completed before beginning this tutorial.
@@ -325,5 +325,5 @@ Now that the pack has both a manifest file and a modification for the cow entity
 
 Now that you have learned how to augment existing Minecraft features such as textures and behaviors, it's recommended that Creators learn how to add new items to Minecraft, starting with a custom block component.
 
-[!div class="nextstepaction"]
-[Custom Block](creator/TestDocs/CustomBlock.md)
+> [!div class="nextstepaction"]
+> [Custom Block](CustomBlock.md)

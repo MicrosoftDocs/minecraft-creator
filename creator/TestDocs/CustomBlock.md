@@ -11,11 +11,11 @@ Minecraft's Behavior and Resource Packs allow for Creators to create custom cont
 
 In this tutorial you will learn the following:
 
-[!div class="checklist"]
-* How blocks can be created with JSON.
-* How to assign textures to a new block.
-* What are some of the behaviors and components that blocks have access to.
-* What is .lang and how it's used for in-game text.
+> [!div class="checklist"]
+> - How blocks can be created with JSON.
+> - How to assign textures to a new block.
+> - What are some of the behaviors and components that blocks have access to.
+> - What is **.lang** and how it's used for in-game text.
 
 ### Requirements
 It’s recommended that the following be completed before beginning this tutorial.
@@ -34,7 +34,7 @@ Block entity definitions are handled differently in the Resource Pack. Blocks ar
     1. If you do not have this folder, please refer to the tutorials in the Requirements.
 1. Right-click in the Explorer window and select **New**, then select **Text Document**.
 1. Set the name to **blocks.json**.
-1. Double-click on **blocks.json** to open it in a text editor or IDE. 
+1. Double-click on **blocks.json** to open it in a text editor.
 
 ### blocks.json
 
@@ -73,7 +73,7 @@ With the block defined in the **blocks.json** file, the next step is to associat
 1. In **File Explorer**, Navigate to the folder **HelloWorldRP/textures**.
 1. Right-click in the Explorer window and select **New**, then select **Text Document**.
 1. Set the name to **terrain_texture.json**.
-1. Double-click on **terrain_texture.json** to open it in a text editor or IDE.
+1. Double-click on **terrain_texture.json** to open it in a text editor.
 1. Copy and Paste the following code:
 
 ```json
@@ -117,7 +117,7 @@ With the work in the Resource Pack done, the Behavior Pack will need to be updat
 1. Double-click on **blocks** to open the folder.
 1. Right-click in the Explorer window and select **New**, then select **Text Document**.
 1. Set the name to **canvasBlock.json**.
-1. Double-click on **canvasBlock.json** to open it in a text editor or IDE.
+1. Double-click on **canvasBlock.json** to open it in a text editor.
 
 ### Description
 

@@ -11,10 +11,10 @@ Add-Ons are the first step on our journey towards bringing even greater levels o
 
 Before building your first pack. You will need software, tools, and an understanding of how Add-ons work within Minecraft. In this tutorial, You will learning the following.
 
-[!div class="checklist"]
-- How Minecraft's file structure is laid out.
-- What software is use for editing JSON files.
-- What are some of the plugins available to help with Add-on development.
+>[!div class="checklist"]
+> - How Minecraft's file structure is laid out.
+> - What software is use for editing JSON files.
+> - What are some of the plugins available to help with Add-on development.
 
 ## com.mojang
 
@@ -42,7 +42,8 @@ As shown in the image below in a Windows Explorer window, there are multiple dir
 
 ![Image of com.mojang on a Windows Explorer environment.](Media/GettingStarted/comMojang.png)
 
-
+> [!TIP]
+> If you see more content in this folder than what is shown above, do not panic! This image shows a fresh install of Minecraft. 
 
 ### Behavior, Skin, And Resource Packs
 
@@ -81,10 +82,11 @@ Visual Studio Code supports 3rd party extensions created by the VSCode developer
 
 Now that your developer environment is now set up, you can now get started learning how to make your first Minecraft Add-on with Resource Packs with setting up a custom texture.
 
-[!div class="nextstepaction"]
-[Resource Pack](creator/TestDocs/ResourcePack.md)
+
+> [!div class="nextstepaction"]
+> [Resource Pack](ResourcePack.md)
 
 Alternatively, if you would like to get started with Commands in Minecraft, head on over to Introduction to Command Blocks to learn how to use Command Blocks to chain together different commands.
 
-[!div class="nextstepaction"]
-[Introduction to Command Blocks](creator/TestDocs/CommandBlocks.md)
+> [!div class="nextstepaction"]
+> [Introduction to Command Blocks](CommandBlocks.md)
