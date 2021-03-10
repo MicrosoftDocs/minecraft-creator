@@ -1,7 +1,7 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Getting Started With Bedrock Add-ons
+title: Getting Started With Minecraft Add-ons
 ms.prod: Gaming
 ---
 
@@ -11,6 +11,7 @@ Add-Ons are the first step on our journey towards bringing even greater levels o
 
 Before building your first pack. You will need software, tools, and an understanding of how Add-ons work within Minecraft. In this tutorial, You will learning the following.
 
+[!div class="checklist"]
 - How Minecraft's file structure is laid out.
 - What software is use for editing JSON files.
 - What are some of the plugins available to help with Add-on development.
@@ -19,7 +20,7 @@ Before building your first pack. You will need software, tools, and an understan
 
 When minecraft is installed to your computer, there is a folder directory called **com.mojang** that is generated in the AppData folder. To access this folder, you can use the following solutions for each OS:
 
-### Windows 
+### Windows
 
 1. Press **Win+R** to open **Run**. Alternatively you can launch Run in the start menu.
 1. Type `%appdata%.\minecraft`.
@@ -36,9 +37,12 @@ When minecraft is installed to your computer, there is a folder directory called
 
 The directory is located at `/home/YOURNAME/.minecraft/.`
 
-<insert art of com.mojang folder>
 
-As shown in the image above, there are multiple directories within the com.mojang folder.
+As shown in the image below in a Windows Explorer window, there are multiple directories within the com.mojang folder.
+
+![Image of com.mojang on a Windows Explorer environment.](Media/GettingStarted/comMojang.png)
+
+
 
 ### Behavior, Skin, And Resource Packs
 
@@ -54,7 +58,7 @@ Along with the 3 pack folders, there are also Development version of those folde
 
 It's recommended that when installing a new build of Minecraft, Users back up this folder in order to prevent any potential loss of Minecraft Worlds that users may have.
 
-## IDE Setup
+## Visual Studio Code
 
 Integrated Development Environment, or IDE is a piece of software that provides the fundamental tools of computer programming within one program. This type of software usually includes a code editor, a compiler, a debugger, and a graphical user interface builder.
 
@@ -64,11 +68,23 @@ In this tutorial, you will learn about Visual Studio Code, a free and open sourc
 
 1. Follow the link here to [Install VSCode](https://code.visualstudio.com/Download)
 
-## Visual Studio Code Extensions 
+## Visual Studio Code Extensions
 
-Visual Studio Code supports 3rd party extensions created by the VSCode developer community. Extensions are a great way to help write and understand Minecraft syntax when working on resource and behavior packs. 
+Visual Studio Code supports 3rd party extensions created by the VSCode developer community. Extensions are a great way to help write and understand Minecraft syntax when working on resource and behavior packs.
 
 ### Installing Extensions
 
 1. Click on the link provided to download [Bedrock Definitions](https://marketplace.visualstudio.com/items?itemName=destruc7i0n.vscode-bedrock-definitions) for Visual Studio Code.
 1. Click on the link provided to download [Blockception's Minecraft Bedrock Development](https://marketplace.visualstudio.com/items?itemName=BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension) for Visual Studio Code.
+
+### What's Next?
+
+Now that your developer environment is now set up, you can now get started learning how to make your first Minecraft Add-on with Resource Packs with setting up a custom texture.
+
+[!div class="nextstepaction"]
+[Resource Pack](creator/TestDocs/ResourcePack.md)
+
+Alternatively, if you would like to get started with Commands in Minecraft, head on over to Introduction to Command Blocks to learn how to use Command Blocks to chain together different commands.
+
+[!div class="nextstepaction"]
+[Introduction to Command Blocks](creator/TestDocs/CommandBlocks.md)

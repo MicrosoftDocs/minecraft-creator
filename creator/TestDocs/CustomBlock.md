@@ -11,10 +11,11 @@ Minecraft's Behavior and Resource Packs allow for Creators to create custom cont
 
 In this tutorial you will learn the following:
 
-- How blocks can be created with JSON.
-- How to assign textures to a new block.
-- What are some of the behaviors and components that blocks have access to.
-- What is .lang and how it's used for in-game text.
+[!div class="checklist"]
+* How blocks can be created with JSON.
+* How to assign textures to a new block.
+* What are some of the behaviors and components that blocks have access to.
+* What is .lang and how it's used for in-game text.
 
 ### Requirements
 It’s recommended that the following be completed before beginning this tutorial.
@@ -92,7 +93,7 @@ With the block defined in the **blocks.json** file, the next step is to associat
 
 ### The Canvas Texture
 
-<hyperlink to a texture>
+![A PNG file that can be downloaded and used in place of a custom texture made in a photo editor](Media/CustomBlocks/canvasBlock.png)
 
 The Canvas block texture will need to be generated and placed in the Resource Pack. There is an image that will be provided for the `canvasBlock.png` but feel free to use a different texture.
 
@@ -180,7 +181,7 @@ Now that both of the packs are set up and completed, the last thing is to add th
 1. Double-click on **texts** to open the folder.
 1. Right-click in the Explorer window and select **New**, then select **Text Document**.
 1. Set the name to **en_US.lang**
-1. Double-click on **en_US.lang** to open it in a text editor or IDE.
+1. Double-click on **en_US.lang** to open it in a text editor.
 
 ### .lang
 
