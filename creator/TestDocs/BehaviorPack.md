@@ -9,41 +9,41 @@ ms.prod: Gaming
 
 Before building your first Add On, you will need to create a Pack in order to add any custom content in Minecraft. There are two types of Packs that a creator can make, Resource and Behavior Packs. This tutorial will go over how Behavior Packs are created and adding a series of attacking behaviors to an in-game Cow mob.
 
-<insert artwork of finished product> <in this case, a gif of the mob attacking the player> 
-
-
 In this tutorial, you will learn the following:
 
-- The difference between a Resource Pack and a Behavior Pack. 
-- How to build a **dependency** link between Resource Packs and Behavior Packs.
-- What components are and how they are used to define Minecraft mobs.
-- How to add behaviors to an existing mob.
+> [!div class="checklist"]
+> - The difference between a Resource Pack and a Behavior Pack. 
+> - How to build a **dependency** link between Resource Packs and Behavior Packs.
+> - What components are and how they are used to define Minecraft mobs.
+> - How to add behaviors to an existing mob.
 
 ### Requirements
 It’s recommended that the following be completed before beginning this tutorial.
--	<Hyperlink to dev tools setup><need Level 0 Doc> 
--	[Introduction To Resource Packs](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/resourcepack?branch=main)
--	[Vanilla Behavior Pack](https://aka.ms/behaviorpacktemplate)
 
-## Behavior Pack
+- [Getting Started with Add-on Development](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/gettingstarted?branch=main)
+- [Introduction To Resource Packs](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/resourcepack?branch=main)
+- [Vanilla Behavior Pack](https://aka.ms/behaviorpacktemplate)
+
+## Building the Behavior Pack
 
 A Behavior pack is a type of pack that allows creators to add, remove or alter behaviors of entities within Minecraft.  
 
-1.	Open up your game location folder **com.mojang**.
-1.	Double-click on the folder **behavior_pack**.
-1.	Right-click in the File Explorer window and select **New** and then **Folder** to create a new folder.
-1.	Name the new folder **HelloWorldBP**.
-1.	Double-click on **HelloWorldBP** to open the folder.
+1. Open up your game location folder **com.mojang**.
+1. Double-click on the folder **behavior_pack**.
+1. Right-click in the File Explorer window and select **New** and then **Folder** to create a new folder.
+1. Name the new folder **HelloWorldBP**.
+1. Double-click on **HelloWorldBP** to open the folder.
 
 ### The Manifest File
 
 In order to load a behavior pack into Minecraft, a manifest file will need to be generated. The manifest file is similar to the one created for a Resource Pack, but has a new section that will need to be added in.
 
-1.	Right-click in the Explorer window and select **New**, then select **Text Document**.
-1.	Set the name to **manifest.json**. 
-    1.	You will need to change the file extension from .txt to .json. If your Explorer window does not show file extensions, you can enable File Name Extensions under the View tab. <add this to environment requirements>
-1.	Double-click on **manifest.json** to open it in a Text Editor.
-1.	Copy/Paste the following text into your text editor.
+1. Right-click in the Explorer window and select **New**, then select **Text Document**.
+1. Set the name to **manifest.json**. 
+    1. You will need to change the file extension from .txt to .json. If your Explorer window does not show file extensions, you can enable File Name Extensions under the View tab. <add this to environment requirements>
+1. Double-click on **manifest.json** to open it in a Text Editor.
+1. Copy/Paste the following text into your text editor.
+
 ```json
 	{
 	  "format_version": 2,
@@ -68,9 +68,11 @@ In order to load a behavior pack into Minecraft, a manifest file will need to be
 ### UUID
 Similar to the resource pack manifest file, a series of UUIDs will need to be generated in order to load the pack into Minecraft. For th Header and Modules, there will need to be 2 different UUID numbers entered between the quotes. You can use an online UUID Generator such as https://www.uuidgenerator.net/
 
-1.	Copy and paste a UUID into the Header section.
-1.	Copy and paste another UUID into the Module section.
-1.	Save.
+![Image of UUIDGenerator.net home screen with a custom UUID generated out](\Media\BehaviorPack\UUID.png)
+
+1. Copy and paste a UUID into the Header section.
+1. Copy and paste another UUID into the Module section.
+1. Save.
 
 ### Dependency
 
@@ -104,22 +106,22 @@ For a behavior pack, you can add a 3rd section to the manifest.json file called 
 }
 ```
 
-1.	In the example shown above, copy the dependency section.
-1.	Paste the dependency section below the modules section. Use the example above as a reference.
-    1.	Note the JSON formatting above.
+1. In the example shown above, copy the dependency section.
+1. Paste the dependency section below the modules section. Use the example above as a reference.
+    1. Note the JSON formatting above.
 1. Copy and paste the UUID from the **header** section in the **manifest.json** located in the **HelloWorldRP** folder into the Dependency section.
-1.	Add a coma after the closing bracket located above dependency.
+1. Add a coma after the closing bracket located above dependency.
 
 ## Entity
 
 Each character’s behaviors are defined using a json file. For this tutorial, you will copy the cow.json file located in the vanilla Behavior Pack located in the hyperlink in Requirements.
- 
-1.	In the **HelloWorldBP** folder, right-click in the File Explorer window and select **New** and then **Folder** to create a new folder.
-2.	Name the folder **entities**.
-3.	Verify that you have downloaded the Vanilla Behavior Pack located in the Requirements section of this tutorial.
-4.	Unzip the folder in order to access the files within.
-5.	Navigate to the **entites** folder located in the unzipped pack.
-6.	Copy the **cow.json** and paste it into the **HelloWorldBP/entites** folder.
+
+1. In the **HelloWorldBP** folder, right-click in the File Explorer window and select **New** and then **Folder** to create a new folder.
+2. Name the folder **entities**.
+3. Verify that you have downloaded the Vanilla Behavior Pack located in the Requirements section of this tutorial.
+4. Unzip the folder in order to access the files within.
+5. Navigate to the **entites** folder located in the unzipped pack.
+6. Copy the **cow.json** and paste it into the **HelloWorldBP/entites** folder.
 
 Now with a copy of the cow.json file located in the HelloWordBP, you can make changes and edit the behavior of the existing cow mob. Cow.json, like other Minecraft entity json files can be broken down into a series of sections.
 
@@ -262,11 +264,11 @@ In the sample above, the **nearest_attackable_target** is a component that handl
 
 ### Adding the behavior
 
-Now we will add nearest_attackable_target to the cow.json in order to allow the cow to target a player.
+Now we will add `nearest_attackable_target` to the cow.json in order to allow the cow to target a player.
 
-1.	Copy the sample located above for `minecraft:behavior.nearest_attackable_target.`
-1.	At the bottom of the **Component** header list, right below `Minecraft:pushable`, paste the snippet.
-1.	Add a coma to the end of the `minecraft:pushable` snippet in order to prevent any JSON errors.
+1. Copy the sample located above for `minecraft:behavior.nearest_attackable_target.`
+1. At the bottom of the **Component** header list, right below `Minecraft:pushable`, paste the snippet.
+1. Add a coma to the end of the `minecraft:pushable` snippet in order to prevent any JSON errors.
 
 <slap an image here> 
 
@@ -300,20 +302,28 @@ Now that the cow can look for a target and attack, You will need to add a value 
 In the snippet, located above, is from the  vanilla zombie.json file, you can see that the component has a single argument. `"Damage"` is set to a value of `3`, meaning every attack will take away 3 hearts from a player’s life bar.
 
 ### Adding the behavior
-1.	Copy the sample located above for `minecraft: attack`. 
-1.	At the bottom of the **Component** header list, right below `Minecraft:behavior.melee_attack`, paste the snippet. 
-1.	Add a coma to the end of the `minecraft:behavior.melee_attack` snippet in order to prevent any JSON errors.
-1.	Save the cow.json file.
+
+1. Copy the sample located above for `minecraft: attack`.
+1. At the bottom of the **Component** header list, right below `Minecraft:behavior.melee_attack`, paste the snippet.
+1. Add a coma to the end of the `minecraft:behavior.melee_attack` snippet in order to prevent any JSON errors.
+1. Save the cow.json file.
 <insert image here> 
 
 ### Testing the Pack
 
 Now that the pack has both a manifest file and a modification for the cow entity, You can now launch Minecraft and test your new Add-on. As stated in the Resource Pack, **Pack Stacking** will work for Behavior Packs as well. This means that content is loaded with any and all vanilla content being loaded first, followed by any additional Add-ons. Since the cow is using the cow.json namespace, every cow will inherit the new behaviors.
 
-1.	Launch **Minecraft**.
-1.	When Minecraft has launched and reached the main menu, select **Play**.
-1.	Select **Create a New World**.
-1.	Under **Settings**, scroll down to the **Add-on** section.
-1.	Click on **Behavior Packs** to see all available packs.
-1.	Under all of the packs, select **HelloWorldBP** to add the pack to the world.
-1.	Launch your world.
+1. Launch **Minecraft**.
+1. When Minecraft has launched and reached the main menu, select **Play**.
+1. Select **Create a New World**.
+1. Under **Settings**, scroll down to the **Add-on** section.
+1. Click on **Behavior Packs** to see all available packs.
+1. Under all of the packs, select **HelloWorldBP** to add the pack to the world.
+1. Launch your world.
+
+### What's Next?
+
+Now that you have learned how to augment existing Minecraft features such as textures and behaviors, it's recommended that Creators learn how to add new items to Minecraft, starting with a custom block component.
+
+> [!div class="nextstepaction"]
+> [Custom Block](CustomBlock.md)

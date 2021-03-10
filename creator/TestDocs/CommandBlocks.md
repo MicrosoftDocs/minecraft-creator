@@ -10,10 +10,11 @@ Command Blocks are a specialized type of block within a Minecraft world that all
 
 In this tutorial, You will learn the following;
 
-- What are Command Blocks and how to access them in-game.
-- How /cheats can be used via Command Blocks.
-- How a Command Block chain work to string together multiple Command Blocks.
-- Create a Gameplay loop to reward a player after performing an action.
+> [!div class="checklist"]
+> - What are Command Blocks and how to access them in-game.
+> - How /cheats can be used via Command Blocks.
+> - How a Command Block chain work to string together multiple Command Blocks.
+> - Create a Gameplay loop to reward a player after performing an action.
 
 In this guide, we will set up a command block chain to look for a certain type of block in a set location, and then reward the player for placing a block in the correct place.
 
