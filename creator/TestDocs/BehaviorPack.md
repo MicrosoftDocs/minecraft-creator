@@ -12,12 +12,14 @@ Before building your first Add On, you will need to create a Pack in order to ad
 In this tutorial, you will learn the following:
 
 > [!div class="checklist"]
-> - The difference between a Resource Pack and a Behavior Pack. 
+>
+> - The difference between a Resource Pack and a Behavior Pack.
 > - How to build a **dependency** link between Resource Packs and Behavior Packs.
 > - What components are and how they are used to define Minecraft mobs.
 > - How to add behaviors to an existing mob.
 
 ### Requirements
+
 It’s recommended that the following be completed before beginning this tutorial.
 
 - [Getting Started with Add-on Development](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/gettingstarted?branch=main)
@@ -50,7 +52,7 @@ In order to load a behavior pack into Minecraft, a manifest file will need to be
 	  "header": {
 	    "description": "My First Add-On!",
 	    "name": "Hello WorldBP",
-	    "uuid":””,
+	    "uuid":"",
 	    "version": [1, 0, 0],
 	    "min_engine_version": [1, 16, 0]
 	  },
@@ -66,17 +68,18 @@ In order to load a behavior pack into Minecraft, a manifest file will need to be
 ```
 
 ### UUID
-Similar to the resource pack manifest file, a series of UUIDs will need to be generated in order to load the pack into Minecraft. For th Header and Modules, there will need to be 2 different UUID numbers entered between the quotes. You can use an online UUID Generator such as https://www.uuidgenerator.net/
+Similar to the resource pack manifest file, a series of UUIDs will need to be generated in order to load the pack into Minecraft. For the Header and Modules, there will need to be 2 different UUID numbers entered between the quotes. You can use an online UUID Generator such as https://www.uuidgenerator.net/
 
 ![Image of UUIDGenerator.net home screen with a custom UUID generated out](\Media\BehaviorPack\UUID.png)
 
-1. Copy and paste a UUID into the Header section.
-1. Copy and paste another UUID into the Module section.
-1. Save.
+1. Copy and paste a UUID into the Header section. The UUID will need to be pasted between the quotation ("") marks in order to be read correctly.
+1. Reload the webpage in order to generate a new UUID for use in the Modules section.
+1. Copy and paste the new UUID into the Modules section in-between the quotation marks.
+1. Save the manifest file.
 
 ### Dependency
 
-For a behavior pack, you can add a 3rd section to the manifest.json file called Dependency. Dependency creates a link between a Behavior pack and a Resource pack via UUID located in the header section of the Resource pack manifest.json. Add a dependency for your helloWorldRP resource pack you previously created and set it to automatically load in when the behavior pack is loaded. Below is an example of what the completed Behavior Pack Manifest File will look like.
+For a behavior pack, you can add a 3rd section to the manifest.json file called Dependencies. Dependency creates a link between a Behavior pack and a Resource pack via UUID located in the header section of the Resource pack manifest.json. Add a dependency for your helloWorldRP resource pack you previously created and set it to automatically load in when the behavior pack is loaded. Below is an example of what the completed Behavior Pack Manifest File will look like.
 
 ```json
 {
@@ -84,7 +87,7 @@ For a behavior pack, you can add a 3rd section to the manifest.json file called 
   "header": {
     "description": "My First Add-On!",
     "name": "Hello WorldBP",
-    "uuid":””,
+    "uuid":"",
     "version": [1, 0, 0],
     "min_engine_version": [1, 16, 0]
   },
@@ -97,20 +100,20 @@ For a behavior pack, you can add a 3rd section to the manifest.json file called 
           "version": [1, 0, 0]
       },
     ],
-  “dependency”: [
+  "dependencies": [
     {
-      “uuid”:””,
-      “version”:[0,0,1]
+      "uuid":"",
+      "version":[1,0,0]
     }
  ]
 }
 ```
 
-1. In the example shown above, copy the dependency section.
+1. In the example shown above, copy the dependencies section.
 1. Paste the dependency section below the modules section. Use the example above as a reference.
     1. Note the JSON formatting above.
-1. Copy and paste the UUID from the **header** section in the **manifest.json** located in the **HelloWorldRP** folder into the Dependency section.
-1. Add a coma after the closing bracket located above dependency.
+1. Copy and paste the UUID from the **header** section in the **manifest.json** located in the **HelloWorldRP** folder into the Dependencies section.
+1. Add a comma after the closing bracket located above dependencies.
 
 ## Entity
 
@@ -146,7 +149,7 @@ The first section is the `Minecraft:entity`. This container is used to define wh
 
 ### Component Groups
 
-Component groups are used to help organize and define a collection of behaviors for the entity. Component groups allow for variation in behaviors for similar types of mobs such as creating an adult and a child version of a single mob entity.  In cow.json, there are 2 groups;  `“minecraft:cow_baby”` and `“minecraft:cow_adult”`. Shown below is the cow_baby component group.
+Component groups are used to help organize and define a collection of behaviors for the entity. Component groups allow for variation in behaviors for similar types of mobs such as creating an adult and a child version of a single mob entity.  In cow.json, there are 2 groups;  `"minecraft:cow_baby"` and `"minecraft:cow_adult"`. Shown below is the cow_baby component group.
 
 ```json
 "component_groups": {
@@ -172,7 +175,7 @@ Component groups are used to help organize and define a collection of behaviors 
       },
 ```
 
-In the cow.json sample shown above, you can see that the `“minecraft:cow_baby”` has dedicated components under it, controlling the size, its ability to age, and being able to follow something tagged as a parent.
+In the cow.json sample shown above, you can see that the `"minecraft:cow_baby"` has dedicated components under it, controlling the size, its ability to age, and being able to follow something tagged as a parent.
 
 ### Components
 
@@ -189,7 +192,7 @@ Components are the global settings used to define and drive an entity.
       },
 ```
 
-In the cow.json, you can see that the first two components are `“minecraft:type_family”` and `“minecraft:breathable”`. These components set which family categories the cow belongs to, and how well it can hold its breathe while underwater before taking damage. These are global settings that apply to any minecraft:cow entity regardless if it is a baby or an adult.
+In the cow.json, you can see that the first two components are `"minecraft:type_family"` and `"minecraft:breathable"`. These components set which family categories the cow belongs to, and how well it can hold its' breath while underwater before taking damage. These are global settings that apply to any minecraft:cow entity regardless if it is a baby or an adult.
 
 ### Events
 
@@ -221,7 +224,7 @@ Events are actions that interface with Minecraft.
 
 In the cow.json file shown above, an entity_spawned event is defined here in order to spawn either an adult cow or a baby cow in the world.
 
-- **`Randomize`** allows the use of defining the odds of the entity spawning in either group. Here, there is a 95/100 chance it could spawn an adult cow or a 5/100 to spawn a baby cow `Randomize` does not work off of a percentage system. The odds are calculated via the sum of the `“weight”` definition. If you were to change `“weight”: 5`, to `“weight”:25`, it would have a 25/120 chance of spawning.
+- **`Randomize`** allows the use of defining the odds of the entity spawning in either group. Here, there is a 95/100 chance it could spawn an adult cow or a 5/100 to spawn a baby cow `Randomize` does not work off of a percentage system. The odds are calculated via the sum of the `"weight"` definition. If you were to change `"weight": 5`, to `"weight":25`, it would have a 25/120 chance of spawning.
 
 ## Adding new behaviors
 
@@ -232,22 +235,18 @@ Now that you know the 4 areas that define an entity, you will add new existing b
 In order for the cow to attack, it will need to find a target that can be attacked.
 
 ```json
-"minecraft:behavior.nearest_attackable_target”:{
-	“priority: 2,
-    “must_see”: true,
-	“reselect_targets”: true, 
-	“within_radius”: 25.0,
-	“entity_types”: [
-		{
-			“filters”:{
-                “all_of”:[
-                    {“test”: “is_family”,”subject”:”other”, “value”:”player”}
-                        ]
-                    },
-        },
-    ]
-    “max_dist”:32
-		}
+"minecraft:behavior.nearest_attackable_target":{
+	"priority": 2,
+  "must_see": true,
+	"reselect_targets": true, 
+	"within_radius": 25.0,
+	"entity_types": [
+	{
+		"filters":{
+      "all_of":[{"test": "is_family","subject":"other", "value":"player"}]
+              },
+    "max_dist":32
+	}
 	]	
 }, 
 ```
@@ -268,7 +267,6 @@ Now we will add `nearest_attackable_target` to the cow.json in order to allow th
 
 1. Copy the sample located above for `minecraft:behavior.nearest_attackable_target.`
 1. At the bottom of the **Component** header list, right below `Minecraft:pushable`, paste the snippet.
-1. Add a coma to the end of the `minecraft:pushable` snippet in order to prevent any JSON errors.
 
 <slap an image here> 
 
@@ -286,7 +284,7 @@ Once the cow is able to located a target, the next step is to allow an attack us
 
 1.	Copy the sample located above for `minecraft:behavior.melee_attack`.
 1.	At the bottom of the **Component** header list, right below `Minecraft:behavior.nearest_attackable_target`, paste the snippet.
-1.	Add a coma to the end of the `minecraft:behavior.nearest.attackable_target` snippet in order to prevent any JSON errors.
+1.	Add a comma to the end of the `minecraft:behavior.nearest.attackable_target` snippet in order to prevent any JSON errors.
 <insert image here>
 
 ### Minecraft:Attack
@@ -299,13 +297,13 @@ Now that the cow can look for a target and attack, You will need to add a value 
       },
 ```
 
-In the snippet, located above, is from the  vanilla zombie.json file, you can see that the component has a single argument. `"Damage"` is set to a value of `3`, meaning every attack will take away 3 hearts from a player’s life bar.
+In the snippet, located above, is from the  vanilla zombie.json file, you can see that the component has a single argument. `"Damage"`is set to a value of `3`, meaning every attack will take away 1.5 hearts from a player’s life bar.
 
 ### Adding the behavior
 
 1. Copy the sample located above for `minecraft: attack`.
 1. At the bottom of the **Component** header list, right below `Minecraft:behavior.melee_attack`, paste the snippet.
-1. Add a coma to the end of the `minecraft:behavior.melee_attack` snippet in order to prevent any JSON errors.
+1. Add a comma to the end of the `minecraft:behavior.melee_attack` snippet in order to prevent any JSON errors.
 1. Save the cow.json file.
 <insert image here> 
 
