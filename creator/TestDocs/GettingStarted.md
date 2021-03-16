@@ -13,7 +13,7 @@ Before building your first pack. You will need software, tools, and an understan
 
 >[!div class="checklist"]
 > - How Minecraft's file structure is laid out.
-> - What software is use for editing JSON files.
+> - What software is used for editing JSON files.
 > - What are some of the plugins available to help with Add-on development.
 
 ## com.mojang
@@ -21,6 +21,10 @@ Before building your first pack. You will need software, tools, and an understan
 When minecraft is installed to your computer, there is a folder directory called **com.mojang** that is generated in the AppData folder. To access this folder, you can use the following solutions for each OS:
 
 ### Windows
+
+In order to locate the **com.mojang** folder in Windows, You will need to have **Hidden Folders** set to **true**.
+
+:::image type="content" source="Media/GettingStarted/viewHiddenFolders.png" alt-text="Image of Windows 10 File Explorer window's view options. Here the Hidden Folder item is checked to indicate that its set to true":::
 
 1. Press **Win+R** to open **Run**. Alternatively you can launch Run in the start menu.
 1. Type `%appdata%.\minecraft`.
@@ -51,7 +55,7 @@ There are 3 folders called **behavior_packs**, **resource_packs**, and **skin_pa
 
 ### Development Packs
 
-Along with the 3 pack folders, there are also Development version of those folders. Development packs are backs that are updated everytime Minecraft is launched, allowing Creators to quickly load and test changes they have made to their packs.
+Along with the 3 pack folders, there are also Development version of those folders. Development packs are packs that are updated every time Minecraft is launched, allowing Creators to quickly load and test changes they have made to their packs.
 
 ### minecraftWorlds
 

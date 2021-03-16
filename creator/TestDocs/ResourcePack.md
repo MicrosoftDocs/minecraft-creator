@@ -62,7 +62,7 @@ Since the file is written in JSON, Minecraft will be able to parse the informati
 	  "format_version": 2,
 	  "header": {	    "description": "My First Add-On!",
 	    "name": "Hello WorldRP",
-	    "uuid":””,
+	    "uuid":"",
 	    "version": [1, 0, 0],
 	    "min_engine_version": [1, 16, 0]
 	  },
@@ -83,8 +83,9 @@ Universally Unique Identifier, or UUID for short, is a unique number used to ide
 
 ![Image of UUIDGenerator.net home screen with a custom UUID generated out](\Media\BehaviorPack\UUID.png)
 
-1. Copy and paste a UUID into the Header section
-1. Copy and paste another UUID into the Module section.
+1. Copy and paste a UUID into the Header section. The UUID will need to be pasted between the quotation ("") marks in order to be read correctly.
+1. Reload the webpage in order to generate a new UUID for use in the Modules section.
+1. Copy and paste the new UUID into the Modules section in-between the quotation marks.
 1. Save the manifest file.
 
 ## Changing the Dirt block
@@ -108,9 +109,9 @@ Now that the folder structure is created, you can now place your custom textures
 1. Open up an image editor such as Paint, GIMP or Photoshop.
     1. In this tutorial, Paint will be used.
 1. In the **Toolbar**, select **File**, then select **Properties**.
-1. Set the **Width** and **Height** to **64** each.
+1. Set the **Width** and **Height** to **16** each.
 
-You can now design a pattern or any artwork in the editor. In this example, a simple fill color has been added. <add a dev blurb explaining some of the barebones design principles such as texture size and color pallet>
+You can now design a pattern or any artwork in the editor. In this example, a simple fill color has been added. 
 
 1. When done with your texture, select **File** and then select **Save As a PNG**.
 1. Navigate to the **blocks** folder.
@@ -121,7 +122,7 @@ You can now design a pattern or any artwork in the editor. In this example, a si
 Now that the pack has both a manifest file and a texture. You can now launch Minecraft and test your new Add-on.
 
 > [!IMPORTANT]
-> **Pack Stacking** is when Content is loaded with any and all vanilla content being loaded first, followed by any additional Add-ons.
+> **Pack Stacking** is when content is loaded on top of vanilla content causing each object that has the same name in both packs to be overwritten by the latest applied Pack (in our example, the Dirt texture is overwritten by our custom texture).
 
 Since the custom texture is named dirt.png. the texture will be used on every single dirt block in game.
 
@@ -136,7 +137,7 @@ Since the custom texture is named dirt.png. the texture will be used on every si
 
 ### What's Next?
 
-With a custom texture now apart of your Minecraft world, its now time to look at Behavior Packs and how you can alter existing entity behaviors. In the next section, you will learn how to add an attackable behavior to a normally peaceful cow entity.
+With a custom texture now a part of your Minecraft world, its now time to look at Behavior Packs and how you can alter existing entity behaviors. In the next section, you will learn how to add an aggressive behavior to a normally peaceful cow entity.
 
 > [!div class="nextstepaction"]
 > [Behavior Pack](BehaviorPack.md)

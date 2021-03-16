@@ -30,14 +30,14 @@ While this can be done on any Minecraft world that a player may have, we will be
 1. Select **Play**, select **Create New**, then select **Create New World**.
 1. In the world settings, set the world to **Flat World**.
 1. In the world settings, set **Show Coordinates** to **True**.
-1. In the world settings, set **Enabled Cheats** to **True**. 
+1. In the world settings, set **Enabled Cheats** to **True**.
 1. Select **Create**.
 
 ### How to get Command Blocks
 
 Since Command Blocks are not a craft-able block, they will need to be added via the command console.
 
-1. Open up the chat dialogue box (T on Windows 10 OS).
+1. Open up the chat dialogue box (T or Enter on Windows 10 OS).
 1. Type the following command: `/give @s command_block`
 
 You will see a single command block that has been added to your inventory.
@@ -69,7 +69,7 @@ Click the **Use** button (right-click for Windows 10 OS), to open up the Command
     - **Conditional** will only execute if the previous block in a chain was successful
     - **Unconditional** will execute regardless if the previous block was successful or not.
 - **Redstone** defines whether or not a command block requires redstone to activate. There are 2 options;
-    - **Needs Redstone** will set the command block to require redstone activation source. 
+    - **Needs Redstone** will set the command block to require redstone activation source.
     - **Always Active** will set the command block to always activate with or without redstone.
 - **Execute on First Tick** is a boolean that is used for Command Blocks set to repeat. If set **True**, the command will activate as soon as it is activated. If set **False**, the command will activate on a delay.
 - **Delay in Ticks** is a value that defines how long a command waits to execute after the command block has been activated.
@@ -90,7 +90,7 @@ The Scoreboard is a gameplay system that exists within Minecraft that can keep t
 1. In Minecraft, Open up the chat dialogue box (T on Windows 10 OS)
 1. Enter the following command: `/scoreboard objectives add wool_placed dummy`.
     1. The command is adding a brand new objective called Wool_Placed. Dummy fills the argument since scores can only be adjusted via commands.
-1. Enter the following command: `/scoreboard players set #player wool_placed 0`.
+1. Enter the following command: `/scoreboard players set @player wool_placed 0`.
 
 ### Setting up the first command block
 
@@ -128,7 +128,7 @@ Command Blocks have multiple block types it can be set to. A Command Block set t
 1. Set the **Block Type** to **Chain**.
 1. Set the **Condition** to **Conditional**.
 1. Set the **Redstone** to **Always Active**.
-1. Set the **Command Input** to  `/scoreboard players test #player wool_placed 0 0`
+1. Set the **Command Input** to  `/scoreboard players test @ wool_placed 0 0`
 
 Since the second block is set to Conditional, the block will only execute if the first command block gives a true value. If a player places a wool block in the correct location, the next block will check if the player's Wool_placed score is 0.
 
@@ -139,7 +139,7 @@ Since the second block is set to Conditional, the block will only execute if the
 1. Set the **Block Type** to **Chain**.
 1. Set the **Condition** to **Conditional**.
 1. Set the **Redstone** to **Always Active**.
-1. Set the **Command Input** to `/giveitem @a emerald`.
+1. Set the **Command Input** to `/give @a emerald`.
 
 Now that the player has received the emerald, the last step is to then close the loop by giving the player a score value of 1. This will then set the 2nd block in the chain to false.
 
@@ -148,7 +148,7 @@ Now that the player has received the emerald, the last step is to then close the
 1. Set the **Block Type** to **Chain**.
 1. Set the **Condition** to **Conditional**.
 1. Set the **Redstone** to **Always Active**.
-1. Set the **Command Input** to  `/scoreboard players set #player wool_placed 1`
+1. Set the **Command Input** to  `/scoreboard players set @ wool_placed 1`
 
 ### Testing the loop
 
