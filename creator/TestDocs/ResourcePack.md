@@ -7,7 +7,7 @@ ms.prod: Gaming
 
 # Resource Pack
 
-Before building your first Add On, you will need to create a Pack in order to add any custom content in Minecraft. There are two types of Packs that a creator can make, Resource and Behavior Packs. In this tutorial, you will learn about Resource Packs. 
+Before building your first Add On, you will need to create a Pack in order to add any custom content in Minecraft. There are two types of Packs that a creator can make, Resource and Behavior Packs. In this tutorial, you will learn about Resource Packs.
 
 A **Resource Pack** is a folder structure that will contain all of your custom models, sounds, textures and any custom content that is made. Resource Packs are commonly used to add user generated content to Minecraft in order to augment a player's experience.
 
