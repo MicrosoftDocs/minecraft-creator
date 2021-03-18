@@ -21,9 +21,5 @@
       - name: Adding a Custom Block
         href: TestDocs/CustomBlock.md
     - name: Bedrock API 
-      items:
-      - name: GameTest
-        items:
-        - name: GameTest
-          href: TestAPI/gametest.md
+      href: ScriptAPI/TOC.yml
   

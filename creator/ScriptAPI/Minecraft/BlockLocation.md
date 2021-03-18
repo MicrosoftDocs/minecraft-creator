@@ -1,0 +1,67 @@
+# BlockLocation
+
+## Properties
+### **x** - `number`
+
+
+### **y** - `number`
+
+
+### **z** - `number`
+
+
+
+## Methods
+- [equals](#equals)
+- [offset](#offset)
+- [above](#above)
+- [constructor](#constructor)
+  
+### **equals**
+`
+equals(other: BlockLocation): boolean;
+`
+
+#### Arguments
+| Param | Type | Description |
+| :---: | :---: | :---: |
+| **other** | [*BlockLocation*]("BlockLocation.md") | - |
+
+Returns *boolean*
+
+### **offset**
+`
+offset(x: number, y: number, z: number): BlockLocation;
+`
+
+#### Arguments
+| Param | Type | Description |
+| :---: | :---: | :---: |
+| **x** | *number* | - |
+| **y** | *number* | - |
+| **z** | *number* | - |
+
+Returns [*BlockLocation*]("BlockLocation.md")
+
+### **above**
+`
+above(): BlockLocation;
+`
+
+
+Returns [*BlockLocation*]("BlockLocation.md")
+
+### **constructor**
+`
+constructor(x: number, y: number, z: number);
+`
+
+#### Arguments
+| Param | Type | Description |
+| :---: | :---: | :---: |
+| **x** | *number* | - |
+| **y** | *number* | - |
+| **z** | *number* | - |
+
+Returns [*BlockLocation*]("BlockLocation.md")
+
