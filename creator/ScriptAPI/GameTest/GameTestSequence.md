@@ -27,7 +27,7 @@ thenExecute(callback: () => undefined): GameTestSequence
 | :--- | :--- | :---: |
 | **callback** | () => undefined | - |
 
-Returns [*GameTestSequence*]("GameTestSequence.md")
+Returns [*GameTestSequence*](GameTestSequence.md)
 
 ### **thenExecuteAfter**
 `
@@ -40,7 +40,7 @@ thenExecuteAfter(delayTicks: number, callback: () => undefined): GameTestSequenc
 | **delayTicks** | *number* | - |
 | **callback** | () => undefined | - |
 
-Returns [*GameTestSequence*]("GameTestSequence.md")
+Returns [*GameTestSequence*](GameTestSequence.md)
 
 ### **thenFail**
 `
@@ -64,7 +64,7 @@ thenIdle(delayTicks: number): GameTestSequence
 | :--- | :--- | :---: |
 | **delayTicks** | *number* | - |
 
-Returns [*GameTestSequence*]("GameTestSequence.md")
+Returns [*GameTestSequence*](GameTestSequence.md)
 
 ### **thenSucceed**
 `
@@ -84,7 +84,7 @@ thenWait(callback: () => undefined): GameTestSequence
 | :--- | :--- | :---: |
 | **callback** | () => undefined | - |
 
-Returns [*GameTestSequence*]("GameTestSequence.md")
+Returns [*GameTestSequence*](GameTestSequence.md)
 
 ### **thenWaitWithDelay**
 `
@@ -97,5 +97,5 @@ thenWaitWithDelay(delayTicks: number, callback: () => undefined): GameTestSequen
 | **delayTicks** | *number* | - |
 | **callback** | () => undefined | - |
 
-Returns [*GameTestSequence*]("GameTestSequence.md")
+Returns [*GameTestSequence*](GameTestSequence.md)
 

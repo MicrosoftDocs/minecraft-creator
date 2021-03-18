@@ -19,7 +19,7 @@ setState(state: BlockState): any
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **state** | [*BlockState*]("BlockState.md") | - |
+| **state** | [*BlockState*](BlockState.md) | - |
 
 Returns *any*
 

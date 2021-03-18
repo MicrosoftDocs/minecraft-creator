@@ -8,13 +8,13 @@ ms.prod: Gaming
 # GameTest
 
 ## Classes
-### [RegistrationBuilder]("RegistrationBuilder.md")
+### [RegistrationBuilder](RegistrationBuilder.md)
 
-### [Helper]("Helper.md")
+### [Helper](Helper.md)
 
-### [GameTestSequence]("GameTestSequence.md")
+### [GameTestSequence](GameTestSequence.md)
 
-### [Tags]("Tags.md")
+### [Tags](Tags.md)
 
 
 ## Functions
@@ -25,7 +25,7 @@ register(): RegistrationBuilder
 
 Registers a game test
 
-Returns [*RegistrationBuilder*]("RegistrationBuilder.md")
+Returns [*RegistrationBuilder*](RegistrationBuilder.md)
 
 #### Examples
 ##### ***example1.js***

@@ -31,7 +31,7 @@ Sets the batch for the test to run in
 | :--- | :--- | :---: |
 | **batchName** | `'night'`, `'day'` | Name of the batch for the test |
 
-Returns [*RegistrationBuilder*]("RegistrationBuilder.md")
+Returns [*RegistrationBuilder*](RegistrationBuilder.md)
 
 ### **required**
 `
@@ -43,7 +43,7 @@ required(isRequired: boolean): RegistrationBuilder
 | :--- | :--- | :---: |
 | **isRequired** | *boolean* | - |
 
-Returns [*RegistrationBuilder*]("RegistrationBuilder.md")
+Returns [*RegistrationBuilder*](RegistrationBuilder.md)
 
 ### **requiredSuccessfulAttempts**
 `
@@ -56,7 +56,7 @@ Sets the number of successful test runs to be considered successful
 | :--- | :--- | :---: |
 | **attemptCount** | *number* | - |
 
-Returns [*RegistrationBuilder*]("RegistrationBuilder.md")
+Returns [*RegistrationBuilder*](RegistrationBuilder.md)
 
 ### **maxAttempts**
 `
@@ -69,7 +69,7 @@ Sets the maximum number of times a test will try to rerun if it fails
 | :--- | :--- | :---: |
 | **attemptCount** | *number* | - |
 
-Returns [*RegistrationBuilder*]("RegistrationBuilder.md")
+Returns [*RegistrationBuilder*](RegistrationBuilder.md)
 
 ### **maxTicks**
 `
@@ -82,7 +82,7 @@ Sets the maximum number of ticks a test will run for before timing out and faili
 | :--- | :--- | :---: |
 | **tickCount** | *number* | - |
 
-Returns [*RegistrationBuilder*]("RegistrationBuilder.md")
+Returns [*RegistrationBuilder*](RegistrationBuilder.md)
 
 ### **setupTicks**
 `
@@ -95,7 +95,7 @@ Sets the number of ticks for a test to wait before executing when the structure 
 | :--- | :--- | :---: |
 | **tickCount** | *number* | - |
 
-Returns [*RegistrationBuilder*]("RegistrationBuilder.md")
+Returns [*RegistrationBuilder*](RegistrationBuilder.md)
 
 ### **structureName**
 `
@@ -108,7 +108,7 @@ Sets the name of the structure for a test to use.  "Foo:bar" will load `/structu
 | :--- | :--- | :---: |
 | **structureName** | *string* | - |
 
-Returns [*RegistrationBuilder*]("RegistrationBuilder.md")
+Returns [*RegistrationBuilder*](RegistrationBuilder.md)
 
 ### **padding**
 `
@@ -120,7 +120,7 @@ padding(paddingBlocks: number): RegistrationBuilder
 | :--- | :--- | :---: |
 | **paddingBlocks** | *number* | - |
 
-Returns [*RegistrationBuilder*]("RegistrationBuilder.md")
+Returns [*RegistrationBuilder*](RegistrationBuilder.md)
 
 ### **tag**
 `
@@ -133,5 +133,5 @@ Adds a tag to a test.  You can run all tests with a given tag with `/gametest ru
 | :--- | :--- | :---: |
 | **tag** | *string* | - |
 
-Returns [*RegistrationBuilder*]("RegistrationBuilder.md")
+Returns [*RegistrationBuilder*](RegistrationBuilder.md)
 

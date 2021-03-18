@@ -36,7 +36,7 @@ new BlockLocation(x: number, y: number, z: number)
 | **y** | *number* | - |
 | **z** | *number* | - |
 
-Returns [*BlockLocation*]("BlockLocation.md")
+Returns [*BlockLocation*](BlockLocation.md)
 
 ### **equals**
 `
@@ -46,7 +46,7 @@ equals(other: BlockLocation): boolean
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **other** | [*BlockLocation*]("BlockLocation.md") | - |
+| **other** | [*BlockLocation*](BlockLocation.md) | - |
 
 Returns *boolean*
 
@@ -62,7 +62,7 @@ offset(x: number, y: number, z: number): BlockLocation
 | **y** | *number* | - |
 | **z** | *number* | - |
 
-Returns [*BlockLocation*]("BlockLocation.md")
+Returns [*BlockLocation*](BlockLocation.md)
 
 ### **above**
 `
@@ -70,5 +70,5 @@ above(): BlockLocation
 `
 
 
-Returns [*BlockLocation*]("BlockLocation.md")
+Returns [*BlockLocation*](BlockLocation.md)
 

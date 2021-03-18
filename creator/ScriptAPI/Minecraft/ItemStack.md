@@ -19,7 +19,7 @@ new ItemStack(block: Block)
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **block** | [*Block*]("Block.md") | - |
+| **block** | [*Block*](Block.md) | - |
 
-Returns [*ItemStack*]("ItemStack.md")
+Returns [*ItemStack*](ItemStack.md)
 

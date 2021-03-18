@@ -49,8 +49,8 @@ assertBlockNotPresent(block: Minecraft.Block, position: Minecraft.BlockLocation)
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **block** | [*Minecraft.Block*]("../Minecraft/Block.md") | - |
-| **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
+| **block** | [*Minecraft.Block*](../Minecraft/Block.md) | - |
+| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
 
@@ -62,8 +62,8 @@ assertBlockPresent(block: Minecraft.Block, position: Minecraft.BlockLocation): a
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **block** | [*Minecraft.Block*]("../Minecraft/Block.md") | - |
-| **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
+| **block** | [*Minecraft.Block*](../Minecraft/Block.md) | - |
+| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
 
@@ -77,7 +77,7 @@ assertBlockState(blockStateName: string, stateValue: number, position: Minecraft
 | :--- | :--- | :---: |
 | **blockStateName** | *string* | - |
 | **stateValue** | *number* | - |
-| **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
+| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
 
@@ -90,7 +90,7 @@ assertContainerContains(itemName: string, position: Minecraft.BlockLocation): an
 | Param | Type | Description |
 | :--- | :--- | :---: |
 | **itemName** | *string* | - |
-| **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
+| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
 
@@ -102,7 +102,7 @@ assertContainerEmpty(position: Minecraft.BlockLocation): any
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
+| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
 
@@ -116,7 +116,7 @@ assertEntityHasComponent(entityIdentifier: string, componentIdentifier: string, 
 | :--- | :--- | :---: |
 | **entityIdentifier** | *string* | - |
 | **componentIdentifier** | *string* | - |
-| **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
+| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 | **hasComponent** | *boolean* | - |
 
 Returns *any*
@@ -130,7 +130,7 @@ assertEntityNotPresent(entityIdentifier: string, position: Minecraft.BlockLocati
 | Param | Type | Description |
 | :--- | :--- | :---: |
 | **entityIdentifier** | *string* | - |
-| **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
+| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
 
@@ -155,7 +155,7 @@ assertEntityPresent(entityIdentifier: string, position: Minecraft.BlockLocation)
 | Param | Type | Description |
 | :--- | :--- | :---: |
 | **entityIdentifier** | *string* | - |
-| **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
+| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
 
@@ -167,8 +167,8 @@ assertItemEntityNotPresent(item: Minecraft.ItemStack, position: Minecraft.BlockL
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **item** | [*Minecraft.ItemStack*]("../Minecraft/ItemStack.md") | - |
-| **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
+| **item** | [*Minecraft.ItemStack*](../Minecraft/ItemStack.md) | - |
+| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 | **searchDistance** | *number* | - |
 
 Returns *any*
@@ -181,8 +181,8 @@ assertItemEntityPresent(item: Minecraft.ItemStack, position: Minecraft.BlockLoca
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **item** | [*Minecraft.ItemStack*]("../Minecraft/ItemStack.md") | - |
-| **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
+| **item** | [*Minecraft.ItemStack*](../Minecraft/ItemStack.md) | - |
+| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 | **searchDistance** | *number* | - |
 
 Returns *any*
@@ -231,7 +231,7 @@ Presses a button at a position.  Note: Will error if button is not present.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
+| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
 
@@ -243,7 +243,7 @@ pullLever(position: Minecraft.BlockLocation): any
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
+| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
 
@@ -281,8 +281,8 @@ setBlock(block: Minecraft.Block, position: Minecraft.BlockLocation): any
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **block** | [*Minecraft.Block*]("../Minecraft/Block.md") | - |
-| **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
+| **block** | [*Minecraft.Block*](../Minecraft/Block.md) | - |
+| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
 
@@ -303,7 +303,7 @@ spawn(entityIdentifier: string, position: Minecraft.BlockLocation): any
 | Param | Type | Description |
 | :--- | :--- | :---: |
 | **entityIdentifier** | *string* | - |
-| **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
+| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
 
@@ -313,7 +313,7 @@ startSequence(): GameTestSequence
 `
 
 
-Returns [*GameTestSequence*]("GameTestSequence.md")
+Returns [*GameTestSequence*](GameTestSequence.md)
 
 ### **succeed**
 `
@@ -380,8 +380,8 @@ succeedWhenBlockPresent(block: Minecraft.Block, position: Minecraft.BlockLocatio
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **block** | [*Minecraft.Block*]("../Minecraft/Block.md") | - |
-| **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
+| **block** | [*Minecraft.Block*](../Minecraft/Block.md) | - |
+| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
 
@@ -395,7 +395,7 @@ succeedWhenEntityHasComponent(entityIdentifier: string, componentIdentifier: str
 | :--- | :--- | :---: |
 | **entityIdentifier** | *string* | - |
 | **componentIdentifier** | *string* | - |
-| **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
+| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 | **hasComponent** | *boolean* | - |
 
 Returns *any*
@@ -409,7 +409,7 @@ succeedWhenEntityNotPresent(entityIdentifier: string, position: Minecraft.BlockL
 | Param | Type | Description |
 | :--- | :--- | :---: |
 | **entityIdentifier** | *string* | - |
-| **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
+| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
 
@@ -422,7 +422,7 @@ succeedWhenEntityPresent(entityIdentifier: string, position: Minecraft.BlockLoca
 | Param | Type | Description |
 | :--- | :--- | :---: |
 | **entityIdentifier** | *string* | - |
-| **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
+| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
 
