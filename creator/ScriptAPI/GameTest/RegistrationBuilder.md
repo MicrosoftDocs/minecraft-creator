@@ -1,7 +1,7 @@
 ---
 title: GameTest.RegistrationBuilder
 description: Contents of the GameTest.RegistrationBuilder class
-author: Jake Shirley
+author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---

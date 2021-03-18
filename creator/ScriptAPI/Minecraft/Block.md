@@ -1,7 +1,7 @@
 ---
 title: Minecraft.Block
 description: Contents of the Minecraft.Block class
-author: Jake Shirley
+author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---

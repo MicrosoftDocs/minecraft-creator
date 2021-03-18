@@ -1,7 +1,7 @@
 ---
 title: Minecraft.BlockStates
 description: Contents of the Minecraft.BlockStates class
-author: Jake Shirley
+author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---

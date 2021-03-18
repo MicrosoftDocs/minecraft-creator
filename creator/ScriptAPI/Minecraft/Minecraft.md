@@ -1,24 +1,24 @@
 ---
 title: Minecraft
 description: Contents of the Minecraft module
-author: Jake Shirley
+author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---
 # Minecraft
 
 ## Classes
-### [Block](Block.md)
+### [Block]("Block.md")
 
-### [ItemStack](ItemStack.md)
+### [ItemStack]("ItemStack.md")
 
-### [Blocks](Blocks.md)
+### [Blocks]("Blocks.md")
 
-### [BlockState](BlockState.md)
+### [BlockState]("BlockState.md")
 
-### [BlockStates](BlockStates.md)
+### [BlockStates]("BlockStates.md")
 
-### [BlockLocation](BlockLocation.md)
+### [BlockLocation]("BlockLocation.md")
 
 
 ## Functions

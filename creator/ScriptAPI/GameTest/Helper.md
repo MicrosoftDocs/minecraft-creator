@@ -1,7 +1,7 @@
 ---
 title: GameTest.Helper
 description: Contents of the GameTest.Helper class
-author: Jake Shirley
+author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---
