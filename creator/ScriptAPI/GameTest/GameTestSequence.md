@@ -24,7 +24,7 @@ thenExecute(callback: () => undefined): GameTestSequence;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **callback** | () => undefined | - |
 
 Returns [*GameTestSequence*]("GameTestSequence.md")
@@ -36,7 +36,7 @@ thenExecuteAfter(delayTicks: number, callback: () => undefined): GameTestSequenc
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **delayTicks** | *number* | - |
 | **callback** | () => undefined | - |
 
@@ -49,7 +49,7 @@ thenFail(errorMessage: string): void;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **errorMessage** | *string* | - |
 
 Returns *undefined*
@@ -61,7 +61,7 @@ thenIdle(delayTicks: number): GameTestSequence;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **delayTicks** | *number* | - |
 
 Returns [*GameTestSequence*]("GameTestSequence.md")
@@ -81,7 +81,7 @@ thenWait(callback: () => undefined): GameTestSequence;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **callback** | () => undefined | - |
 
 Returns [*GameTestSequence*]("GameTestSequence.md")
@@ -93,7 +93,7 @@ thenWaitWithDelay(delayTicks: number, callback: () => undefined): GameTestSequen
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **delayTicks** | *number* | - |
 | **callback** | () => undefined | - |
 

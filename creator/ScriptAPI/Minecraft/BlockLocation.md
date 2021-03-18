@@ -31,7 +31,7 @@ equals(other: BlockLocation): boolean;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **other** | [*BlockLocation*]("BlockLocation.md") | - |
 
 Returns *boolean*
@@ -43,7 +43,7 @@ offset(x: number, y: number, z: number): BlockLocation;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **x** | *number* | - |
 | **y** | *number* | - |
 | **z** | *number* | - |
@@ -65,7 +65,7 @@ constructor(x: number, y: number, z: number);
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **x** | *number* | - |
 | **y** | *number* | - |
 | **z** | *number* | - |

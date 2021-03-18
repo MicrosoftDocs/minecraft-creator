@@ -48,7 +48,7 @@ assertBlockNotPresent(block: Minecraft.Block, position: Minecraft.BlockLocation)
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **block** | [*Minecraft.Block*]("../Minecraft/Block.md") | - |
 | **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
 
@@ -61,7 +61,7 @@ assertBlockPresent(block: Minecraft.Block, position: Minecraft.BlockLocation): a
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **block** | [*Minecraft.Block*]("../Minecraft/Block.md") | - |
 | **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
 
@@ -74,7 +74,7 @@ assertBlockState(blockStateName: string, stateValue: number, position: Minecraft
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **blockStateName** | *string* | - |
 | **stateValue** | *number* | - |
 | **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
@@ -88,7 +88,7 @@ assertContainerContains(itemName: string, position: Minecraft.BlockLocation): an
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **itemName** | *string* | - |
 | **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
 
@@ -101,7 +101,7 @@ assertContainerEmpty(position: Minecraft.BlockLocation): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
 
 Returns *any*
@@ -113,7 +113,7 @@ assertEntityHasComponent(entityIdentifier: string, componentIdentifier: string, 
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **entityIdentifier** | *string* | - |
 | **componentIdentifier** | *string* | - |
 | **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
@@ -128,7 +128,7 @@ assertEntityNotPresent(entityIdentifier: string, position: Minecraft.BlockLocati
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **entityIdentifier** | *string* | - |
 | **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
 
@@ -141,7 +141,7 @@ assertEntityNotPresentInArea(entityIdentifier: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **entityIdentifier** | *string* | - |
 
 Returns *any*
@@ -153,7 +153,7 @@ assertEntityPresent(entityIdentifier: string, position: Minecraft.BlockLocation)
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **entityIdentifier** | *string* | - |
 | **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
 
@@ -166,7 +166,7 @@ assertItemEntityNotPresent(item: Minecraft.ItemStack, position: Minecraft.BlockL
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **item** | [*Minecraft.ItemStack*]("../Minecraft/ItemStack.md") | - |
 | **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
 | **searchDistance** | *number* | - |
@@ -180,7 +180,7 @@ assertItemEntityPresent(item: Minecraft.ItemStack, position: Minecraft.BlockLoca
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **item** | [*Minecraft.ItemStack*]("../Minecraft/ItemStack.md") | - |
 | **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
 | **searchDistance** | *number* | - |
@@ -194,7 +194,7 @@ fail(errorMessage: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **errorMessage** | *string* | - |
 
 Returns *any*
@@ -208,7 +208,7 @@ Registers a callback to run.  The test will fail if this callback does _not_ fai
 Note: The callback takes a single parameter, Helper, which is created each time the callback is called.
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **callback** | () => void | - |
 
 Returns *any*
@@ -230,7 +230,7 @@ pressButton(position: Minecraft.BlockLocation): any;
 Presses a button at a position.  Note: Will error if button is not present.
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
 
 Returns *any*
@@ -242,7 +242,7 @@ pullLever(position: Minecraft.BlockLocation): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
 
 Returns *any*
@@ -254,7 +254,7 @@ runAfterDelay(delayTicks: number, callback: () => void): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **delayTicks** | *number* | - |
 | **callback** | () => void | - |
 
@@ -267,7 +267,7 @@ runAtTickTime(tick: number, callback: () => void): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **tick** | *number* | - |
 | **callback** | () => void | - |
 
@@ -280,7 +280,7 @@ setBlock(block: Minecraft.Block, position: Minecraft.BlockLocation): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **block** | [*Minecraft.Block*]("../Minecraft/Block.md") | - |
 | **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
 
@@ -301,7 +301,7 @@ spawn(entityIdentifier: string, position: Minecraft.BlockLocation): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **entityIdentifier** | *string* | - |
 | **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
 
@@ -330,7 +330,7 @@ succeedIf(callback: () => void): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **callback** | () => void | - |
 
 Returns *any*
@@ -342,7 +342,7 @@ succeedOnTick(tick: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **tick** | *number* | - |
 
 Returns *any*
@@ -354,7 +354,7 @@ succeedOnTickWhen(tick: number, callback: () => void): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **tick** | *number* | - |
 | **callback** | () => void | - |
 
@@ -367,7 +367,7 @@ succeedWhen(callback: () => void): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **callback** | () => void | - |
 
 Returns *any*
@@ -379,7 +379,7 @@ succeedWhenBlockPresent(block: Minecraft.Block, position: Minecraft.BlockLocatio
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **block** | [*Minecraft.Block*]("../Minecraft/Block.md") | - |
 | **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
 
@@ -392,7 +392,7 @@ succeedWhenEntityHasComponent(entityIdentifier: string, componentIdentifier: str
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **entityIdentifier** | *string* | - |
 | **componentIdentifier** | *string* | - |
 | **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
@@ -407,7 +407,7 @@ succeedWhenEntityNotPresent(entityIdentifier: string, position: Minecraft.BlockL
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **entityIdentifier** | *string* | - |
 | **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
 
@@ -420,7 +420,7 @@ succeedWhenEntityPresent(entityIdentifier: string, position: Minecraft.BlockLoca
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **entityIdentifier** | *string* | - |
 | **position** | [*Minecraft.BlockLocation*]("../Minecraft/BlockLocation.md") | - |
 

@@ -132,7 +132,7 @@ dripstoneThickness(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -144,7 +144,7 @@ respawnAnchorCharge(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -156,7 +156,7 @@ twistingVinesAge(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -168,7 +168,7 @@ rotation(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -180,7 +180,7 @@ wallConnectionTypeWest(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -192,7 +192,7 @@ wallConnectionTypeSouth(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -204,7 +204,7 @@ wallConnectionTypeEast(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -216,7 +216,7 @@ wallConnectionTypeNorth(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -228,7 +228,7 @@ wallPostBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -240,7 +240,7 @@ weepingVinesAge(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -252,7 +252,7 @@ honeyLevel(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -264,7 +264,7 @@ blockLightLevel(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -276,7 +276,7 @@ pillarAxis(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -288,7 +288,7 @@ leverDirection(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -300,7 +300,7 @@ coralFanDirection(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -312,7 +312,7 @@ composterFillLevel(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -324,7 +324,7 @@ extinguished(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -336,7 +336,7 @@ structureBlockType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -348,7 +348,7 @@ structureVoidType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -360,7 +360,7 @@ attachment(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -372,7 +372,7 @@ coralHangTypeBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -384,7 +384,7 @@ strippedBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -396,7 +396,7 @@ hanging(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -408,7 +408,7 @@ cauldronLiquid(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -420,7 +420,7 @@ coralColor(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -432,7 +432,7 @@ seaGrassType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -444,7 +444,7 @@ chemistryTableType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -456,7 +456,7 @@ doublePlantType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -468,7 +468,7 @@ prismarineBlockType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -480,7 +480,7 @@ wallBlockType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -492,7 +492,7 @@ hugeMushroomBits(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -504,7 +504,7 @@ stoneBrickType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -516,7 +516,7 @@ monsterEggStoneType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -528,7 +528,7 @@ stoneSlabType4(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -540,7 +540,7 @@ stoneSlabType3(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -552,7 +552,7 @@ stoneSlabType2(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -564,7 +564,7 @@ stoneSlabType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -576,7 +576,7 @@ flowerType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -588,7 +588,7 @@ tallGrassType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -600,7 +600,7 @@ sandStoneType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -612,7 +612,7 @@ spongeType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -624,7 +624,7 @@ newLeafType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -636,7 +636,7 @@ oldLeafType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -648,7 +648,7 @@ deprecated(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -660,7 +660,7 @@ chiselType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -672,7 +672,7 @@ newLogType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -684,7 +684,7 @@ oldLogType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -696,7 +696,7 @@ sandType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -708,7 +708,7 @@ dirtType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -720,7 +720,7 @@ stoneType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -732,7 +732,7 @@ woodType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -744,7 +744,7 @@ stabilityCheck(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -756,7 +756,7 @@ stability(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -768,7 +768,7 @@ bambooLeafSize(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -780,7 +780,7 @@ bambooStalkThickness(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -792,7 +792,7 @@ color(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -804,7 +804,7 @@ coralDirection(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -816,7 +816,7 @@ weirdoDirection(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -828,7 +828,7 @@ groundSignDirection(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -840,7 +840,7 @@ crackedState(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -852,7 +852,7 @@ turtleEggCount(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -864,7 +864,7 @@ dragDown(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -876,7 +876,7 @@ torchFacingDirection(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -888,7 +888,7 @@ saplingType(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -900,7 +900,7 @@ itemFrameMapBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -912,7 +912,7 @@ clusterCount(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -924,7 +924,7 @@ deadBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -936,7 +936,7 @@ colorBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -948,7 +948,7 @@ allowUnderwaterBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -960,7 +960,7 @@ vineDirectionBits(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -972,7 +972,7 @@ upsideDownBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -984,7 +984,7 @@ updateBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -996,7 +996,7 @@ triggeredBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1008,7 +1008,7 @@ topSlotBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1020,7 +1020,7 @@ toggleBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1032,7 +1032,7 @@ suspendedBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1044,7 +1044,7 @@ repeaterDelay(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -1056,7 +1056,7 @@ redstoneSignal(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -1068,7 +1068,7 @@ railDirection(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -1080,7 +1080,7 @@ railDataBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1092,7 +1092,7 @@ poweredBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1104,7 +1104,7 @@ persistentBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1116,7 +1116,7 @@ outputLitBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1128,7 +1128,7 @@ outputSubtractBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1140,7 +1140,7 @@ openBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1152,7 +1152,7 @@ occupiedBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1164,7 +1164,7 @@ kelpAge(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -1176,7 +1176,7 @@ noDropBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1188,7 +1188,7 @@ moisturizedAmount(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -1200,7 +1200,7 @@ liquidDepth(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -1212,7 +1212,7 @@ inWallBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1224,7 +1224,7 @@ infiniburnBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1236,7 +1236,7 @@ height(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -1248,7 +1248,7 @@ headPieceBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1260,7 +1260,7 @@ growth(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -1272,7 +1272,7 @@ fillLevel(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -1284,7 +1284,7 @@ facingDirection(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -1296,7 +1296,7 @@ explodeBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1308,7 +1308,7 @@ endPortalEyeBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1320,7 +1320,7 @@ direction(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -1332,7 +1332,7 @@ upperBlockBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1344,7 +1344,7 @@ doorHingeBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1356,7 +1356,7 @@ disarmedBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1368,7 +1368,7 @@ damage(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -1380,7 +1380,7 @@ coveredBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1392,7 +1392,7 @@ conditionalBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1404,7 +1404,7 @@ buttonPressedBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1416,7 +1416,7 @@ brewingStandSlotCBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1428,7 +1428,7 @@ brewingStandSlotBBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1440,7 +1440,7 @@ brewingStandSlotABit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1452,7 +1452,7 @@ biteCounter(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -1464,7 +1464,7 @@ portalAxis(stateName: string): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateName** | *string* | - |
 
 Returns *any*
@@ -1476,7 +1476,7 @@ attachedBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*
@@ -1488,7 +1488,7 @@ age(stateValue: number): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *number* | - |
 
 Returns *any*
@@ -1500,7 +1500,7 @@ ageBit(stateValue: boolean): any;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **stateValue** | *boolean* | - |
 
 Returns *any*

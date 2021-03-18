@@ -572,7 +572,7 @@ get(blockName: string): Block;
 
 #### Arguments
 | Param | Type | Description |
-| :---: | :---: | :---: |
+| :--- | :--- | :---: |
 | **blockName** | *string* | - |
 
 Returns [*Block*]("Block.md")
