@@ -1,11 +1,11 @@
 ---
-title: GameTest
+title: GameTest Module
 description: Contents of the GameTest module
 author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---
-# GameTest
+# *GameTest* Module
 
 ## Classes
 ### [RegistrationBuilder](RegistrationBuilder.md)

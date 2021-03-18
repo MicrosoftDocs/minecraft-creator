@@ -1,11 +1,11 @@
 ---
-title: Minecraft.BlockLocation
+title: Minecraft.BlockLocation Class
 description: Contents of the Minecraft.BlockLocation class
 author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---
-# BlockLocation
+# *BlockLocation* Class
 
 ## Properties
 ### **x** - `number`

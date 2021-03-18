@@ -1,11 +1,11 @@
 ---
-title: Minecraft.Blocks
+title: Minecraft.Blocks Class
 description: Contents of the Minecraft.Blocks class
 author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---
-# Blocks
+# *Blocks* Class
 
 
 ## Methods

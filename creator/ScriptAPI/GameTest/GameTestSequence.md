@@ -1,11 +1,11 @@
 ---
-title: GameTest.GameTestSequence
+title: GameTest.GameTestSequence Class
 description: Contents of the GameTest.GameTestSequence class
 author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---
-# GameTestSequence
+# *GameTestSequence* Class
 
 
 ## Methods

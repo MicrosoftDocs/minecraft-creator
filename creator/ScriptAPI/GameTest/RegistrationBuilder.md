@@ -1,11 +1,11 @@
 ---
-title: GameTest.RegistrationBuilder
+title: GameTest.RegistrationBuilder Class
 description: Contents of the GameTest.RegistrationBuilder class
 author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---
-# RegistrationBuilder
+# *RegistrationBuilder* Class
 A utility class to set GameTest parameters for a test
 
 

@@ -1,11 +1,11 @@
 ---
-title: Minecraft.BlockStates
+title: Minecraft.BlockStates Class
 description: Contents of the Minecraft.BlockStates class
 author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---
-# BlockStates
+# *BlockStates* Class
 
 
 ## Methods

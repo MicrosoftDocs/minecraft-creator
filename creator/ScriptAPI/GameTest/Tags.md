@@ -1,11 +1,11 @@
 ---
-title: GameTest.Tags
+title: GameTest.Tags Class
 description: Contents of the GameTest.Tags class
 author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---
-# Tags
+# *Tags* Class
 
 ## Properties
 ### **suiteDefault** - `string`

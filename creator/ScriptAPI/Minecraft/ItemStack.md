@@ -1,11 +1,11 @@
 ---
-title: Minecraft.ItemStack
+title: Minecraft.ItemStack Class
 description: Contents of the Minecraft.ItemStack class
 author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---
-# ItemStack
+# *ItemStack* Class
 
 
 ## Methods
