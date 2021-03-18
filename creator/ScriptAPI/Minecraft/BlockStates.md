@@ -127,7 +127,7 @@ ms.prod: Gaming
   
 ### **dripstoneThickness**
 `
-dripstoneThickness(stateName: string): any;
+dripstoneThickness(stateName: string): any
 `
 
 #### Arguments
@@ -139,7 +139,7 @@ Returns *any*
 
 ### **respawnAnchorCharge**
 `
-respawnAnchorCharge(stateValue: number): any;
+respawnAnchorCharge(stateValue: number): any
 `
 
 #### Arguments
@@ -151,7 +151,7 @@ Returns *any*
 
 ### **twistingVinesAge**
 `
-twistingVinesAge(stateValue: number): any;
+twistingVinesAge(stateValue: number): any
 `
 
 #### Arguments
@@ -163,7 +163,7 @@ Returns *any*
 
 ### **rotation**
 `
-rotation(stateValue: number): any;
+rotation(stateValue: number): any
 `
 
 #### Arguments
@@ -175,7 +175,7 @@ Returns *any*
 
 ### **wallConnectionTypeWest**
 `
-wallConnectionTypeWest(stateName: string): any;
+wallConnectionTypeWest(stateName: string): any
 `
 
 #### Arguments
@@ -187,7 +187,7 @@ Returns *any*
 
 ### **wallConnectionTypeSouth**
 `
-wallConnectionTypeSouth(stateName: string): any;
+wallConnectionTypeSouth(stateName: string): any
 `
 
 #### Arguments
@@ -199,7 +199,7 @@ Returns *any*
 
 ### **wallConnectionTypeEast**
 `
-wallConnectionTypeEast(stateName: string): any;
+wallConnectionTypeEast(stateName: string): any
 `
 
 #### Arguments
@@ -211,7 +211,7 @@ Returns *any*
 
 ### **wallConnectionTypeNorth**
 `
-wallConnectionTypeNorth(stateName: string): any;
+wallConnectionTypeNorth(stateName: string): any
 `
 
 #### Arguments
@@ -223,7 +223,7 @@ Returns *any*
 
 ### **wallPostBit**
 `
-wallPostBit(stateValue: boolean): any;
+wallPostBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -235,7 +235,7 @@ Returns *any*
 
 ### **weepingVinesAge**
 `
-weepingVinesAge(stateValue: number): any;
+weepingVinesAge(stateValue: number): any
 `
 
 #### Arguments
@@ -247,7 +247,7 @@ Returns *any*
 
 ### **honeyLevel**
 `
-honeyLevel(stateValue: number): any;
+honeyLevel(stateValue: number): any
 `
 
 #### Arguments
@@ -259,7 +259,7 @@ Returns *any*
 
 ### **blockLightLevel**
 `
-blockLightLevel(stateValue: number): any;
+blockLightLevel(stateValue: number): any
 `
 
 #### Arguments
@@ -271,7 +271,7 @@ Returns *any*
 
 ### **pillarAxis**
 `
-pillarAxis(stateName: string): any;
+pillarAxis(stateName: string): any
 `
 
 #### Arguments
@@ -283,7 +283,7 @@ Returns *any*
 
 ### **leverDirection**
 `
-leverDirection(stateName: string): any;
+leverDirection(stateName: string): any
 `
 
 #### Arguments
@@ -295,7 +295,7 @@ Returns *any*
 
 ### **coralFanDirection**
 `
-coralFanDirection(stateValue: number): any;
+coralFanDirection(stateValue: number): any
 `
 
 #### Arguments
@@ -307,7 +307,7 @@ Returns *any*
 
 ### **composterFillLevel**
 `
-composterFillLevel(stateValue: number): any;
+composterFillLevel(stateValue: number): any
 `
 
 #### Arguments
@@ -319,7 +319,7 @@ Returns *any*
 
 ### **extinguished**
 `
-extinguished(stateValue: boolean): any;
+extinguished(stateValue: boolean): any
 `
 
 #### Arguments
@@ -331,7 +331,7 @@ Returns *any*
 
 ### **structureBlockType**
 `
-structureBlockType(stateName: string): any;
+structureBlockType(stateName: string): any
 `
 
 #### Arguments
@@ -343,7 +343,7 @@ Returns *any*
 
 ### **structureVoidType**
 `
-structureVoidType(stateName: string): any;
+structureVoidType(stateName: string): any
 `
 
 #### Arguments
@@ -355,7 +355,7 @@ Returns *any*
 
 ### **attachment**
 `
-attachment(stateName: string): any;
+attachment(stateName: string): any
 `
 
 #### Arguments
@@ -367,7 +367,7 @@ Returns *any*
 
 ### **coralHangTypeBit**
 `
-coralHangTypeBit(stateValue: boolean): any;
+coralHangTypeBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -379,7 +379,7 @@ Returns *any*
 
 ### **strippedBit**
 `
-strippedBit(stateValue: boolean): any;
+strippedBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -391,7 +391,7 @@ Returns *any*
 
 ### **hanging**
 `
-hanging(stateValue: boolean): any;
+hanging(stateValue: boolean): any
 `
 
 #### Arguments
@@ -403,7 +403,7 @@ Returns *any*
 
 ### **cauldronLiquid**
 `
-cauldronLiquid(stateName: string): any;
+cauldronLiquid(stateName: string): any
 `
 
 #### Arguments
@@ -415,7 +415,7 @@ Returns *any*
 
 ### **coralColor**
 `
-coralColor(stateName: string): any;
+coralColor(stateName: string): any
 `
 
 #### Arguments
@@ -427,7 +427,7 @@ Returns *any*
 
 ### **seaGrassType**
 `
-seaGrassType(stateName: string): any;
+seaGrassType(stateName: string): any
 `
 
 #### Arguments
@@ -439,7 +439,7 @@ Returns *any*
 
 ### **chemistryTableType**
 `
-chemistryTableType(stateName: string): any;
+chemistryTableType(stateName: string): any
 `
 
 #### Arguments
@@ -451,7 +451,7 @@ Returns *any*
 
 ### **doublePlantType**
 `
-doublePlantType(stateName: string): any;
+doublePlantType(stateName: string): any
 `
 
 #### Arguments
@@ -463,7 +463,7 @@ Returns *any*
 
 ### **prismarineBlockType**
 `
-prismarineBlockType(stateName: string): any;
+prismarineBlockType(stateName: string): any
 `
 
 #### Arguments
@@ -475,7 +475,7 @@ Returns *any*
 
 ### **wallBlockType**
 `
-wallBlockType(stateName: string): any;
+wallBlockType(stateName: string): any
 `
 
 #### Arguments
@@ -487,7 +487,7 @@ Returns *any*
 
 ### **hugeMushroomBits**
 `
-hugeMushroomBits(stateValue: number): any;
+hugeMushroomBits(stateValue: number): any
 `
 
 #### Arguments
@@ -499,7 +499,7 @@ Returns *any*
 
 ### **stoneBrickType**
 `
-stoneBrickType(stateName: string): any;
+stoneBrickType(stateName: string): any
 `
 
 #### Arguments
@@ -511,7 +511,7 @@ Returns *any*
 
 ### **monsterEggStoneType**
 `
-monsterEggStoneType(stateName: string): any;
+monsterEggStoneType(stateName: string): any
 `
 
 #### Arguments
@@ -523,7 +523,7 @@ Returns *any*
 
 ### **stoneSlabType4**
 `
-stoneSlabType4(stateName: string): any;
+stoneSlabType4(stateName: string): any
 `
 
 #### Arguments
@@ -535,7 +535,7 @@ Returns *any*
 
 ### **stoneSlabType3**
 `
-stoneSlabType3(stateName: string): any;
+stoneSlabType3(stateName: string): any
 `
 
 #### Arguments
@@ -547,7 +547,7 @@ Returns *any*
 
 ### **stoneSlabType2**
 `
-stoneSlabType2(stateName: string): any;
+stoneSlabType2(stateName: string): any
 `
 
 #### Arguments
@@ -559,7 +559,7 @@ Returns *any*
 
 ### **stoneSlabType**
 `
-stoneSlabType(stateName: string): any;
+stoneSlabType(stateName: string): any
 `
 
 #### Arguments
@@ -571,7 +571,7 @@ Returns *any*
 
 ### **flowerType**
 `
-flowerType(stateName: string): any;
+flowerType(stateName: string): any
 `
 
 #### Arguments
@@ -583,7 +583,7 @@ Returns *any*
 
 ### **tallGrassType**
 `
-tallGrassType(stateName: string): any;
+tallGrassType(stateName: string): any
 `
 
 #### Arguments
@@ -595,7 +595,7 @@ Returns *any*
 
 ### **sandStoneType**
 `
-sandStoneType(stateName: string): any;
+sandStoneType(stateName: string): any
 `
 
 #### Arguments
@@ -607,7 +607,7 @@ Returns *any*
 
 ### **spongeType**
 `
-spongeType(stateName: string): any;
+spongeType(stateName: string): any
 `
 
 #### Arguments
@@ -619,7 +619,7 @@ Returns *any*
 
 ### **newLeafType**
 `
-newLeafType(stateName: string): any;
+newLeafType(stateName: string): any
 `
 
 #### Arguments
@@ -631,7 +631,7 @@ Returns *any*
 
 ### **oldLeafType**
 `
-oldLeafType(stateName: string): any;
+oldLeafType(stateName: string): any
 `
 
 #### Arguments
@@ -643,7 +643,7 @@ Returns *any*
 
 ### **deprecated**
 `
-deprecated(stateValue: number): any;
+deprecated(stateValue: number): any
 `
 
 #### Arguments
@@ -655,7 +655,7 @@ Returns *any*
 
 ### **chiselType**
 `
-chiselType(stateName: string): any;
+chiselType(stateName: string): any
 `
 
 #### Arguments
@@ -667,7 +667,7 @@ Returns *any*
 
 ### **newLogType**
 `
-newLogType(stateName: string): any;
+newLogType(stateName: string): any
 `
 
 #### Arguments
@@ -679,7 +679,7 @@ Returns *any*
 
 ### **oldLogType**
 `
-oldLogType(stateName: string): any;
+oldLogType(stateName: string): any
 `
 
 #### Arguments
@@ -691,7 +691,7 @@ Returns *any*
 
 ### **sandType**
 `
-sandType(stateName: string): any;
+sandType(stateName: string): any
 `
 
 #### Arguments
@@ -703,7 +703,7 @@ Returns *any*
 
 ### **dirtType**
 `
-dirtType(stateName: string): any;
+dirtType(stateName: string): any
 `
 
 #### Arguments
@@ -715,7 +715,7 @@ Returns *any*
 
 ### **stoneType**
 `
-stoneType(stateName: string): any;
+stoneType(stateName: string): any
 `
 
 #### Arguments
@@ -727,7 +727,7 @@ Returns *any*
 
 ### **woodType**
 `
-woodType(stateName: string): any;
+woodType(stateName: string): any
 `
 
 #### Arguments
@@ -739,7 +739,7 @@ Returns *any*
 
 ### **stabilityCheck**
 `
-stabilityCheck(stateValue: boolean): any;
+stabilityCheck(stateValue: boolean): any
 `
 
 #### Arguments
@@ -751,7 +751,7 @@ Returns *any*
 
 ### **stability**
 `
-stability(stateValue: number): any;
+stability(stateValue: number): any
 `
 
 #### Arguments
@@ -763,7 +763,7 @@ Returns *any*
 
 ### **bambooLeafSize**
 `
-bambooLeafSize(stateName: string): any;
+bambooLeafSize(stateName: string): any
 `
 
 #### Arguments
@@ -775,7 +775,7 @@ Returns *any*
 
 ### **bambooStalkThickness**
 `
-bambooStalkThickness(stateName: string): any;
+bambooStalkThickness(stateName: string): any
 `
 
 #### Arguments
@@ -787,7 +787,7 @@ Returns *any*
 
 ### **color**
 `
-color(stateName: string): any;
+color(stateName: string): any
 `
 
 #### Arguments
@@ -799,7 +799,7 @@ Returns *any*
 
 ### **coralDirection**
 `
-coralDirection(stateValue: number): any;
+coralDirection(stateValue: number): any
 `
 
 #### Arguments
@@ -811,7 +811,7 @@ Returns *any*
 
 ### **weirdoDirection**
 `
-weirdoDirection(stateValue: number): any;
+weirdoDirection(stateValue: number): any
 `
 
 #### Arguments
@@ -823,7 +823,7 @@ Returns *any*
 
 ### **groundSignDirection**
 `
-groundSignDirection(stateValue: number): any;
+groundSignDirection(stateValue: number): any
 `
 
 #### Arguments
@@ -835,7 +835,7 @@ Returns *any*
 
 ### **crackedState**
 `
-crackedState(stateName: string): any;
+crackedState(stateName: string): any
 `
 
 #### Arguments
@@ -847,7 +847,7 @@ Returns *any*
 
 ### **turtleEggCount**
 `
-turtleEggCount(stateName: string): any;
+turtleEggCount(stateName: string): any
 `
 
 #### Arguments
@@ -859,7 +859,7 @@ Returns *any*
 
 ### **dragDown**
 `
-dragDown(stateValue: boolean): any;
+dragDown(stateValue: boolean): any
 `
 
 #### Arguments
@@ -871,7 +871,7 @@ Returns *any*
 
 ### **torchFacingDirection**
 `
-torchFacingDirection(stateName: string): any;
+torchFacingDirection(stateName: string): any
 `
 
 #### Arguments
@@ -883,7 +883,7 @@ Returns *any*
 
 ### **saplingType**
 `
-saplingType(stateName: string): any;
+saplingType(stateName: string): any
 `
 
 #### Arguments
@@ -895,7 +895,7 @@ Returns *any*
 
 ### **itemFrameMapBit**
 `
-itemFrameMapBit(stateValue: boolean): any;
+itemFrameMapBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -907,7 +907,7 @@ Returns *any*
 
 ### **clusterCount**
 `
-clusterCount(stateValue: number): any;
+clusterCount(stateValue: number): any
 `
 
 #### Arguments
@@ -919,7 +919,7 @@ Returns *any*
 
 ### **deadBit**
 `
-deadBit(stateValue: boolean): any;
+deadBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -931,7 +931,7 @@ Returns *any*
 
 ### **colorBit**
 `
-colorBit(stateValue: boolean): any;
+colorBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -943,7 +943,7 @@ Returns *any*
 
 ### **allowUnderwaterBit**
 `
-allowUnderwaterBit(stateValue: boolean): any;
+allowUnderwaterBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -955,7 +955,7 @@ Returns *any*
 
 ### **vineDirectionBits**
 `
-vineDirectionBits(stateValue: number): any;
+vineDirectionBits(stateValue: number): any
 `
 
 #### Arguments
@@ -967,7 +967,7 @@ Returns *any*
 
 ### **upsideDownBit**
 `
-upsideDownBit(stateValue: boolean): any;
+upsideDownBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -979,7 +979,7 @@ Returns *any*
 
 ### **updateBit**
 `
-updateBit(stateValue: boolean): any;
+updateBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -991,7 +991,7 @@ Returns *any*
 
 ### **triggeredBit**
 `
-triggeredBit(stateValue: boolean): any;
+triggeredBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1003,7 +1003,7 @@ Returns *any*
 
 ### **topSlotBit**
 `
-topSlotBit(stateValue: boolean): any;
+topSlotBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1015,7 +1015,7 @@ Returns *any*
 
 ### **toggleBit**
 `
-toggleBit(stateValue: boolean): any;
+toggleBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1027,7 +1027,7 @@ Returns *any*
 
 ### **suspendedBit**
 `
-suspendedBit(stateValue: boolean): any;
+suspendedBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1039,7 +1039,7 @@ Returns *any*
 
 ### **repeaterDelay**
 `
-repeaterDelay(stateValue: number): any;
+repeaterDelay(stateValue: number): any
 `
 
 #### Arguments
@@ -1051,7 +1051,7 @@ Returns *any*
 
 ### **redstoneSignal**
 `
-redstoneSignal(stateValue: number): any;
+redstoneSignal(stateValue: number): any
 `
 
 #### Arguments
@@ -1063,7 +1063,7 @@ Returns *any*
 
 ### **railDirection**
 `
-railDirection(stateValue: number): any;
+railDirection(stateValue: number): any
 `
 
 #### Arguments
@@ -1075,7 +1075,7 @@ Returns *any*
 
 ### **railDataBit**
 `
-railDataBit(stateValue: boolean): any;
+railDataBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1087,7 +1087,7 @@ Returns *any*
 
 ### **poweredBit**
 `
-poweredBit(stateValue: boolean): any;
+poweredBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1099,7 +1099,7 @@ Returns *any*
 
 ### **persistentBit**
 `
-persistentBit(stateValue: boolean): any;
+persistentBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1111,7 +1111,7 @@ Returns *any*
 
 ### **outputLitBit**
 `
-outputLitBit(stateValue: boolean): any;
+outputLitBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1123,7 +1123,7 @@ Returns *any*
 
 ### **outputSubtractBit**
 `
-outputSubtractBit(stateValue: boolean): any;
+outputSubtractBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1135,7 +1135,7 @@ Returns *any*
 
 ### **openBit**
 `
-openBit(stateValue: boolean): any;
+openBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1147,7 +1147,7 @@ Returns *any*
 
 ### **occupiedBit**
 `
-occupiedBit(stateValue: boolean): any;
+occupiedBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1159,7 +1159,7 @@ Returns *any*
 
 ### **kelpAge**
 `
-kelpAge(stateValue: number): any;
+kelpAge(stateValue: number): any
 `
 
 #### Arguments
@@ -1171,7 +1171,7 @@ Returns *any*
 
 ### **noDropBit**
 `
-noDropBit(stateValue: boolean): any;
+noDropBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1183,7 +1183,7 @@ Returns *any*
 
 ### **moisturizedAmount**
 `
-moisturizedAmount(stateValue: number): any;
+moisturizedAmount(stateValue: number): any
 `
 
 #### Arguments
@@ -1195,7 +1195,7 @@ Returns *any*
 
 ### **liquidDepth**
 `
-liquidDepth(stateValue: number): any;
+liquidDepth(stateValue: number): any
 `
 
 #### Arguments
@@ -1207,7 +1207,7 @@ Returns *any*
 
 ### **inWallBit**
 `
-inWallBit(stateValue: boolean): any;
+inWallBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1219,7 +1219,7 @@ Returns *any*
 
 ### **infiniburnBit**
 `
-infiniburnBit(stateValue: boolean): any;
+infiniburnBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1231,7 +1231,7 @@ Returns *any*
 
 ### **height**
 `
-height(stateValue: number): any;
+height(stateValue: number): any
 `
 
 #### Arguments
@@ -1243,7 +1243,7 @@ Returns *any*
 
 ### **headPieceBit**
 `
-headPieceBit(stateValue: boolean): any;
+headPieceBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1255,7 +1255,7 @@ Returns *any*
 
 ### **growth**
 `
-growth(stateValue: number): any;
+growth(stateValue: number): any
 `
 
 #### Arguments
@@ -1267,7 +1267,7 @@ Returns *any*
 
 ### **fillLevel**
 `
-fillLevel(stateValue: number): any;
+fillLevel(stateValue: number): any
 `
 
 #### Arguments
@@ -1279,7 +1279,7 @@ Returns *any*
 
 ### **facingDirection**
 `
-facingDirection(stateValue: number): any;
+facingDirection(stateValue: number): any
 `
 
 #### Arguments
@@ -1291,7 +1291,7 @@ Returns *any*
 
 ### **explodeBit**
 `
-explodeBit(stateValue: boolean): any;
+explodeBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1303,7 +1303,7 @@ Returns *any*
 
 ### **endPortalEyeBit**
 `
-endPortalEyeBit(stateValue: boolean): any;
+endPortalEyeBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1315,7 +1315,7 @@ Returns *any*
 
 ### **direction**
 `
-direction(stateValue: number): any;
+direction(stateValue: number): any
 `
 
 #### Arguments
@@ -1327,7 +1327,7 @@ Returns *any*
 
 ### **upperBlockBit**
 `
-upperBlockBit(stateValue: boolean): any;
+upperBlockBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1339,7 +1339,7 @@ Returns *any*
 
 ### **doorHingeBit**
 `
-doorHingeBit(stateValue: boolean): any;
+doorHingeBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1351,7 +1351,7 @@ Returns *any*
 
 ### **disarmedBit**
 `
-disarmedBit(stateValue: boolean): any;
+disarmedBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1363,7 +1363,7 @@ Returns *any*
 
 ### **damage**
 `
-damage(stateName: string): any;
+damage(stateName: string): any
 `
 
 #### Arguments
@@ -1375,7 +1375,7 @@ Returns *any*
 
 ### **coveredBit**
 `
-coveredBit(stateValue: boolean): any;
+coveredBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1387,7 +1387,7 @@ Returns *any*
 
 ### **conditionalBit**
 `
-conditionalBit(stateValue: boolean): any;
+conditionalBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1399,7 +1399,7 @@ Returns *any*
 
 ### **buttonPressedBit**
 `
-buttonPressedBit(stateValue: boolean): any;
+buttonPressedBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1411,7 +1411,7 @@ Returns *any*
 
 ### **brewingStandSlotCBit**
 `
-brewingStandSlotCBit(stateValue: boolean): any;
+brewingStandSlotCBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1423,7 +1423,7 @@ Returns *any*
 
 ### **brewingStandSlotBBit**
 `
-brewingStandSlotBBit(stateValue: boolean): any;
+brewingStandSlotBBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1435,7 +1435,7 @@ Returns *any*
 
 ### **brewingStandSlotABit**
 `
-brewingStandSlotABit(stateValue: boolean): any;
+brewingStandSlotABit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1447,7 +1447,7 @@ Returns *any*
 
 ### **biteCounter**
 `
-biteCounter(stateValue: number): any;
+biteCounter(stateValue: number): any
 `
 
 #### Arguments
@@ -1459,7 +1459,7 @@ Returns *any*
 
 ### **portalAxis**
 `
-portalAxis(stateName: string): any;
+portalAxis(stateName: string): any
 `
 
 #### Arguments
@@ -1471,7 +1471,7 @@ Returns *any*
 
 ### **attachedBit**
 `
-attachedBit(stateValue: boolean): any;
+attachedBit(stateValue: boolean): any
 `
 
 #### Arguments
@@ -1483,7 +1483,7 @@ Returns *any*
 
 ### **age**
 `
-age(stateValue: number): any;
+age(stateValue: number): any
 `
 
 #### Arguments
@@ -1495,7 +1495,7 @@ Returns *any*
 
 ### **ageBit**
 `
-ageBit(stateValue: boolean): any;
+ageBit(stateValue: boolean): any
 `
 
 #### Arguments

@@ -20,7 +20,7 @@ ms.prod: Gaming
 ## Functions
 ### **register**
 `
-register(): RegistrationBuilder;
+register(): RegistrationBuilder
 `
 
 Registers a game test

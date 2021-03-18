@@ -43,7 +43,7 @@ ms.prod: Gaming
   
 ### **assertBlockNotPresent**
 `
-assertBlockNotPresent(block: Minecraft.Block, position: Minecraft.BlockLocation): any;
+assertBlockNotPresent(block: Minecraft.Block, position: Minecraft.BlockLocation): any
 `
 
 #### Arguments
@@ -56,7 +56,7 @@ Returns *any*
 
 ### **assertBlockPresent**
 `
-assertBlockPresent(block: Minecraft.Block, position: Minecraft.BlockLocation): any;
+assertBlockPresent(block: Minecraft.Block, position: Minecraft.BlockLocation): any
 `
 
 #### Arguments
@@ -69,7 +69,7 @@ Returns *any*
 
 ### **assertBlockState**
 `
-assertBlockState(blockStateName: string, stateValue: number, position: Minecraft.BlockLocation): any;
+assertBlockState(blockStateName: string, stateValue: number, position: Minecraft.BlockLocation): any
 `
 
 #### Arguments
@@ -83,7 +83,7 @@ Returns *any*
 
 ### **assertContainerContains**
 `
-assertContainerContains(itemName: string, position: Minecraft.BlockLocation): any;
+assertContainerContains(itemName: string, position: Minecraft.BlockLocation): any
 `
 
 #### Arguments
@@ -96,7 +96,7 @@ Returns *any*
 
 ### **assertContainerEmpty**
 `
-assertContainerEmpty(position: Minecraft.BlockLocation): any;
+assertContainerEmpty(position: Minecraft.BlockLocation): any
 `
 
 #### Arguments
@@ -108,7 +108,7 @@ Returns *any*
 
 ### **assertEntityHasComponent**
 `
-assertEntityHasComponent(entityIdentifier: string, componentIdentifier: string, position: Minecraft.BlockLocation, hasComponent: boolean): any;
+assertEntityHasComponent(entityIdentifier: string, componentIdentifier: string, position: Minecraft.BlockLocation, hasComponent: boolean): any
 `
 
 #### Arguments
@@ -123,7 +123,7 @@ Returns *any*
 
 ### **assertEntityNotPresent**
 `
-assertEntityNotPresent(entityIdentifier: string, position: Minecraft.BlockLocation): any;
+assertEntityNotPresent(entityIdentifier: string, position: Minecraft.BlockLocation): any
 `
 
 #### Arguments
@@ -136,7 +136,7 @@ Returns *any*
 
 ### **assertEntityNotPresentInArea**
 `
-assertEntityNotPresentInArea(entityIdentifier: string): any;
+assertEntityNotPresentInArea(entityIdentifier: string): any
 `
 
 #### Arguments
@@ -148,7 +148,7 @@ Returns *any*
 
 ### **assertEntityPresent**
 `
-assertEntityPresent(entityIdentifier: string, position: Minecraft.BlockLocation): any;
+assertEntityPresent(entityIdentifier: string, position: Minecraft.BlockLocation): any
 `
 
 #### Arguments
@@ -161,7 +161,7 @@ Returns *any*
 
 ### **assertItemEntityNotPresent**
 `
-assertItemEntityNotPresent(item: Minecraft.ItemStack, position: Minecraft.BlockLocation, searchDistance: number): any;
+assertItemEntityNotPresent(item: Minecraft.ItemStack, position: Minecraft.BlockLocation, searchDistance: number): any
 `
 
 #### Arguments
@@ -175,7 +175,7 @@ Returns *any*
 
 ### **assertItemEntityPresent**
 `
-assertItemEntityPresent(item: Minecraft.ItemStack, position: Minecraft.BlockLocation, searchDistance: number): any;
+assertItemEntityPresent(item: Minecraft.ItemStack, position: Minecraft.BlockLocation, searchDistance: number): any
 `
 
 #### Arguments
@@ -189,7 +189,7 @@ Returns *any*
 
 ### **fail**
 `
-fail(errorMessage: string): any;
+fail(errorMessage: string): any
 `
 
 #### Arguments
@@ -201,7 +201,7 @@ Returns *any*
 
 ### **failIf**
 `
-failIf(callback: () => void): any;
+failIf(callback: () => void): any
 `
 
 Registers a callback to run.  The test will fail if this callback does _not_ fail/assert.
@@ -215,7 +215,7 @@ Returns *any*
 
 ### **killAllEntities**
 `
-killAllEntities(): any;
+killAllEntities(): any
 `
 
 Kills all actors within the GameTest structure.
@@ -224,7 +224,7 @@ Returns *any*
 
 ### **pressButton**
 `
-pressButton(position: Minecraft.BlockLocation): any;
+pressButton(position: Minecraft.BlockLocation): any
 `
 
 Presses a button at a position.  Note: Will error if button is not present.
@@ -237,7 +237,7 @@ Returns *any*
 
 ### **pullLever**
 `
-pullLever(position: Minecraft.BlockLocation): any;
+pullLever(position: Minecraft.BlockLocation): any
 `
 
 #### Arguments
@@ -249,7 +249,7 @@ Returns *any*
 
 ### **runAfterDelay**
 `
-runAfterDelay(delayTicks: number, callback: () => void): any;
+runAfterDelay(delayTicks: number, callback: () => void): any
 `
 
 #### Arguments
@@ -262,7 +262,7 @@ Returns *any*
 
 ### **runAtTickTime**
 `
-runAtTickTime(tick: number, callback: () => void): any;
+runAtTickTime(tick: number, callback: () => void): any
 `
 
 #### Arguments
@@ -275,7 +275,7 @@ Returns *any*
 
 ### **setBlock**
 `
-setBlock(block: Minecraft.Block, position: Minecraft.BlockLocation): any;
+setBlock(block: Minecraft.Block, position: Minecraft.BlockLocation): any
 `
 
 #### Arguments
@@ -288,7 +288,7 @@ Returns *any*
 
 ### **setEntityTamed**
 `
-setEntityTamed(): any;
+setEntityTamed(): any
 `
 
 
@@ -296,7 +296,7 @@ Returns *any*
 
 ### **spawn**
 `
-spawn(entityIdentifier: string, position: Minecraft.BlockLocation): any;
+spawn(entityIdentifier: string, position: Minecraft.BlockLocation): any
 `
 
 #### Arguments
@@ -309,7 +309,7 @@ Returns *any*
 
 ### **startSequence**
 `
-startSequence(): GameTestSequence;
+startSequence(): GameTestSequence
 `
 
 
@@ -317,7 +317,7 @@ Returns [*GameTestSequence*]("GameTestSequence.md")
 
 ### **succeed**
 `
-succeed(): any;
+succeed(): any
 `
 
 
@@ -325,7 +325,7 @@ Returns *any*
 
 ### **succeedIf**
 `
-succeedIf(callback: () => void): any;
+succeedIf(callback: () => void): any
 `
 
 #### Arguments
@@ -337,7 +337,7 @@ Returns *any*
 
 ### **succeedOnTick**
 `
-succeedOnTick(tick: number): any;
+succeedOnTick(tick: number): any
 `
 
 #### Arguments
@@ -349,7 +349,7 @@ Returns *any*
 
 ### **succeedOnTickWhen**
 `
-succeedOnTickWhen(tick: number, callback: () => void): any;
+succeedOnTickWhen(tick: number, callback: () => void): any
 `
 
 #### Arguments
@@ -362,7 +362,7 @@ Returns *any*
 
 ### **succeedWhen**
 `
-succeedWhen(callback: () => void): any;
+succeedWhen(callback: () => void): any
 `
 
 #### Arguments
@@ -374,7 +374,7 @@ Returns *any*
 
 ### **succeedWhenBlockPresent**
 `
-succeedWhenBlockPresent(block: Minecraft.Block, position: Minecraft.BlockLocation): any;
+succeedWhenBlockPresent(block: Minecraft.Block, position: Minecraft.BlockLocation): any
 `
 
 #### Arguments
@@ -387,7 +387,7 @@ Returns *any*
 
 ### **succeedWhenEntityHasComponent**
 `
-succeedWhenEntityHasComponent(entityIdentifier: string, componentIdentifier: string, position: Minecraft.BlockLocation, hasComponent: boolean): any;
+succeedWhenEntityHasComponent(entityIdentifier: string, componentIdentifier: string, position: Minecraft.BlockLocation, hasComponent: boolean): any
 `
 
 #### Arguments
@@ -402,7 +402,7 @@ Returns *any*
 
 ### **succeedWhenEntityNotPresent**
 `
-succeedWhenEntityNotPresent(entityIdentifier: string, position: Minecraft.BlockLocation): any;
+succeedWhenEntityNotPresent(entityIdentifier: string, position: Minecraft.BlockLocation): any
 `
 
 #### Arguments
@@ -415,7 +415,7 @@ Returns *any*
 
 ### **succeedWhenEntityPresent**
 `
-succeedWhenEntityPresent(entityIdentifier: string, position: Minecraft.BlockLocation): any;
+succeedWhenEntityPresent(entityIdentifier: string, position: Minecraft.BlockLocation): any
 `
 
 #### Arguments

@@ -26,7 +26,7 @@ ms.prod: Gaming
   
 ### **constructor**
 `
-new BlockLocation(x: number, y: number, z: number);
+new BlockLocation(x: number, y: number, z: number)
 `
 
 #### Arguments
@@ -40,7 +40,7 @@ Returns [*BlockLocation*]("BlockLocation.md")
 
 ### **equals**
 `
-equals(other: BlockLocation): boolean;
+equals(other: BlockLocation): boolean
 `
 
 #### Arguments
@@ -52,7 +52,7 @@ Returns *boolean*
 
 ### **offset**
 `
-offset(x: number, y: number, z: number): BlockLocation;
+offset(x: number, y: number, z: number): BlockLocation
 `
 
 #### Arguments
@@ -66,7 +66,7 @@ Returns [*BlockLocation*]("BlockLocation.md")
 
 ### **above**
 `
-above(): BlockLocation;
+above(): BlockLocation
 `
 
 

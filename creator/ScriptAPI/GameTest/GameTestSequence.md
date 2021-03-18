@@ -19,7 +19,7 @@ ms.prod: Gaming
   
 ### **thenExecute**
 `
-thenExecute(callback: () => undefined): GameTestSequence;
+thenExecute(callback: () => undefined): GameTestSequence
 `
 
 #### Arguments
@@ -31,7 +31,7 @@ Returns [*GameTestSequence*]("GameTestSequence.md")
 
 ### **thenExecuteAfter**
 `
-thenExecuteAfter(delayTicks: number, callback: () => undefined): GameTestSequence;
+thenExecuteAfter(delayTicks: number, callback: () => undefined): GameTestSequence
 `
 
 #### Arguments
@@ -44,7 +44,7 @@ Returns [*GameTestSequence*]("GameTestSequence.md")
 
 ### **thenFail**
 `
-thenFail(errorMessage: string): void;
+thenFail(errorMessage: string): void
 `
 
 #### Arguments
@@ -56,7 +56,7 @@ Returns *undefined*
 
 ### **thenIdle**
 `
-thenIdle(delayTicks: number): GameTestSequence;
+thenIdle(delayTicks: number): GameTestSequence
 `
 
 #### Arguments
@@ -68,7 +68,7 @@ Returns [*GameTestSequence*]("GameTestSequence.md")
 
 ### **thenSucceed**
 `
-thenSucceed(): void;
+thenSucceed(): void
 `
 
 
@@ -76,7 +76,7 @@ Returns *undefined*
 
 ### **thenWait**
 `
-thenWait(callback: () => undefined): GameTestSequence;
+thenWait(callback: () => undefined): GameTestSequence
 `
 
 #### Arguments
@@ -88,7 +88,7 @@ Returns [*GameTestSequence*]("GameTestSequence.md")
 
 ### **thenWaitWithDelay**
 `
-thenWaitWithDelay(delayTicks: number, callback: () => undefined): GameTestSequence;
+thenWaitWithDelay(delayTicks: number, callback: () => undefined): GameTestSequence
 `
 
 #### Arguments

@@ -13,7 +13,7 @@ ms.prod: Gaming
   
 ### **setState**
 `
-setState(state: BlockState): any;
+setState(state: BlockState): any
 `
 
 #### Arguments

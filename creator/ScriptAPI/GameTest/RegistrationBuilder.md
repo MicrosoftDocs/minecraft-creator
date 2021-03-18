@@ -22,7 +22,7 @@ A utility class to set GameTest parameters for a test
   
 ### **batch**
 `
-batch(batchName: ('night'|'day')): RegistrationBuilder;
+batch(batchName: ('night'|'day')): RegistrationBuilder
 `
 
 Sets the batch for the test to run in
@@ -35,7 +35,7 @@ Returns [*RegistrationBuilder*]("RegistrationBuilder.md")
 
 ### **required**
 `
-required(isRequired: boolean): RegistrationBuilder;
+required(isRequired: boolean): RegistrationBuilder
 `
 
 #### Arguments
@@ -47,7 +47,7 @@ Returns [*RegistrationBuilder*]("RegistrationBuilder.md")
 
 ### **requiredSuccessfulAttempts**
 `
-requiredSuccessfulAttempts(attemptCount: number): RegistrationBuilder;
+requiredSuccessfulAttempts(attemptCount: number): RegistrationBuilder
 `
 
 Sets the number of successful test runs to be considered successful
@@ -60,7 +60,7 @@ Returns [*RegistrationBuilder*]("RegistrationBuilder.md")
 
 ### **maxAttempts**
 `
-maxAttempts(attemptCount: number): RegistrationBuilder;
+maxAttempts(attemptCount: number): RegistrationBuilder
 `
 
 Sets the maximum number of times a test will try to rerun if it fails
@@ -73,7 +73,7 @@ Returns [*RegistrationBuilder*]("RegistrationBuilder.md")
 
 ### **maxTicks**
 `
-maxTicks(tickCount: number): RegistrationBuilder;
+maxTicks(tickCount: number): RegistrationBuilder
 `
 
 Sets the maximum number of ticks a test will run for before timing out and failing
@@ -86,7 +86,7 @@ Returns [*RegistrationBuilder*]("RegistrationBuilder.md")
 
 ### **setupTicks**
 `
-setupTicks(tickCount: number): RegistrationBuilder;
+setupTicks(tickCount: number): RegistrationBuilder
 `
 
 Sets the number of ticks for a test to wait before executing when the structure is spawned
@@ -99,7 +99,7 @@ Returns [*RegistrationBuilder*]("RegistrationBuilder.md")
 
 ### **structureName**
 `
-structureName(structureName: string): RegistrationBuilder;
+structureName(structureName: string): RegistrationBuilder
 `
 
 Sets the name of the structure for a test to use.  "Foo:bar" will load `/structures/Foo/bar.mcstructure` from the behavior pack stack
@@ -112,7 +112,7 @@ Returns [*RegistrationBuilder*]("RegistrationBuilder.md")
 
 ### **padding**
 `
-padding(paddingBlocks: number): RegistrationBuilder;
+padding(paddingBlocks: number): RegistrationBuilder
 `
 
 #### Arguments
@@ -124,7 +124,7 @@ Returns [*RegistrationBuilder*]("RegistrationBuilder.md")
 
 ### **tag**
 `
-tag(tag: string): RegistrationBuilder;
+tag(tag: string): RegistrationBuilder
 `
 
 Adds a tag to a test.  You can run all tests with a given tag with `/gametest runall <tag>`
