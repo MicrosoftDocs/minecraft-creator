@@ -1,3 +1,8 @@
+---
+title: Minecraft.BlockLocation
+author: Jake Shirley
+description: Contents of the Minecraft.BlockLocation class
+---
 # BlockLocation
 
 ## Properties

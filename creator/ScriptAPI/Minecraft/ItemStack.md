@@ -1,3 +1,8 @@
+---
+title: Minecraft.ItemStack
+author: Jake Shirley
+description: Contents of the Minecraft.ItemStack class
+---
 # ItemStack
 
 

@@ -1,3 +1,8 @@
+---
+title: GameTest.Helper
+author: Jake Shirley
+description: Contents of the GameTest.Helper class
+---
 # Helper
 
 

@@ -1,3 +1,8 @@
+---
+title: GameTest.Tags
+author: Jake Shirley
+description: Contents of the GameTest.Tags class
+---
 # Tags
 
 ## Properties

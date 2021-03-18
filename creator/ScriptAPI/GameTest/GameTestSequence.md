@@ -1,3 +1,8 @@
+---
+title: GameTest.GameTestSequence
+author: Jake Shirley
+description: Contents of the GameTest.GameTestSequence class
+---
 # GameTestSequence
 
 

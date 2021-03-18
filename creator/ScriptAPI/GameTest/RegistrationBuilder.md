@@ -1,3 +1,8 @@
+---
+title: GameTest.RegistrationBuilder
+author: Jake Shirley
+description: Contents of the GameTest.RegistrationBuilder class
+---
 # RegistrationBuilder
 A utility class to set GameTest parameters for a test
 

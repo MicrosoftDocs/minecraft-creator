@@ -1,3 +1,8 @@
+---
+title: Minecraft.Blocks
+author: Jake Shirley
+description: Contents of the Minecraft.Blocks class
+---
 # Blocks
 
 
