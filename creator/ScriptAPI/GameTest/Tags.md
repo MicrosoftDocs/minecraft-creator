@@ -5,7 +5,7 @@ author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---
-# *Tags* Class
+# Tags Class
 
 ## Properties
 ### **suiteDefault** - `string`

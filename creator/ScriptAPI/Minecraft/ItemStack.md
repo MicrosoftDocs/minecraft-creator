@@ -5,7 +5,7 @@ author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---
-# *ItemStack* Class
+# ItemStack Class
 
 
 ## Methods

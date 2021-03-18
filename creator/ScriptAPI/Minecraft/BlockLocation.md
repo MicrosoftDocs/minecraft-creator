@@ -5,7 +5,7 @@ author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---
-# *BlockLocation* Class
+# BlockLocation Class
 
 ## Properties
 ### **x** - `number`

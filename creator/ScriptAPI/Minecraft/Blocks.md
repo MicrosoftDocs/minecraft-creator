@@ -5,7 +5,7 @@ author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---
-# *Blocks* Class
+# Blocks Class
 
 
 ## Methods

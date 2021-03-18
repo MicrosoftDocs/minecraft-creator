@@ -5,7 +5,7 @@ author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---
-# *RegistrationBuilder* Class
+# RegistrationBuilder Class
 A utility class to set GameTest parameters for a test
 
 

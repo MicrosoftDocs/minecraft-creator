@@ -5,7 +5,7 @@ author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---
-# *Helper* Class
+# Helper Class
 
 
 ## Methods

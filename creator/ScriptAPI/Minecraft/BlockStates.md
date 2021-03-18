@@ -5,7 +5,7 @@ author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---
-# *BlockStates* Class
+# BlockStates Class
 
 
 ## Methods

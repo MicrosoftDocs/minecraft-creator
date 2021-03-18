@@ -5,6 +5,6 @@ author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
 ---
-# *BlockState* Class
+# BlockState Class
 
 
