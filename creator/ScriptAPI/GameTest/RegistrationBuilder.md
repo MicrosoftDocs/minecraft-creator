@@ -12,11 +12,11 @@ A utility class to set GameTest parameters for a test
 ## Methods
 - [batch](#batch)
 - [required](#required)
-- [requiredSuccessfulAttempts](#requiredSuccessfulAttempts)
-- [maxAttempts](#maxAttempts)
-- [maxTicks](#maxTicks)
-- [setupTicks](#setupTicks)
-- [structureName](#structureName)
+- [requiredSuccessfulAttempts](#requiredsuccessfulattempts)
+- [maxAttempts](#maxattempts)
+- [maxTicks](#maxticks)
+- [setupTicks](#setupticks)
+- [structureName](#structurename)
 - [padding](#padding)
 - [tag](#tag)
   

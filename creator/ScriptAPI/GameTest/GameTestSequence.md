@@ -9,13 +9,13 @@ ms.prod: Gaming
 
 
 ## Methods
-- [thenExecute](#thenExecute)
-- [thenExecuteAfter](#thenExecuteAfter)
-- [thenFail](#thenFail)
-- [thenIdle](#thenIdle)
-- [thenSucceed](#thenSucceed)
-- [thenWait](#thenWait)
-- [thenWaitWithDelay](#thenWaitWithDelay)
+- [thenExecute](#thenexecute)
+- [thenExecuteAfter](#thenexecuteafter)
+- [thenFail](#thenfail)
+- [thenIdle](#thenidle)
+- [thenSucceed](#thensucceed)
+- [thenWait](#thenwait)
+- [thenWaitWithDelay](#thenwaitwithdelay)
   
 ### **thenExecute**
 `

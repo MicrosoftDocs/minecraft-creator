@@ -9,7 +9,7 @@ ms.prod: Gaming
 
 
 ## Methods
-- [setState](#setState)
+- [setState](#setstate)
   
 ### **setState**
 `
