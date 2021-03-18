@@ -22,6 +22,6 @@ setState(state: BlockState): any
 | **state** | [*BlockState*](BlockState.md) | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 

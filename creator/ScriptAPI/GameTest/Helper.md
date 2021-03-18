@@ -53,7 +53,7 @@ assertBlockNotPresent(block: Minecraft.Block, position: Minecraft.BlockLocation)
 | **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **assertBlockPresent**
@@ -68,7 +68,7 @@ assertBlockPresent(block: Minecraft.Block, position: Minecraft.BlockLocation): a
 | **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **assertBlockState**
@@ -84,7 +84,7 @@ assertBlockState(blockStateName: string, stateValue: number, position: Minecraft
 | **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **assertContainerContains**
@@ -99,7 +99,7 @@ assertContainerContains(itemName: string, position: Minecraft.BlockLocation): an
 | **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **assertContainerEmpty**
@@ -113,7 +113,7 @@ assertContainerEmpty(position: Minecraft.BlockLocation): any
 | **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **assertEntityHasComponent**
@@ -130,7 +130,7 @@ assertEntityHasComponent(entityIdentifier: string, componentIdentifier: string, 
 | **hasComponent** | *boolean* | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **assertEntityNotPresent**
@@ -145,7 +145,7 @@ assertEntityNotPresent(entityIdentifier: string, position: Minecraft.BlockLocati
 | **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **assertEntityNotPresentInArea**
@@ -159,7 +159,7 @@ assertEntityNotPresentInArea(entityIdentifier: string): any
 | **entityIdentifier** | *string* | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **assertEntityPresent**
@@ -174,7 +174,7 @@ assertEntityPresent(entityIdentifier: string, position: Minecraft.BlockLocation)
 | **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **assertItemEntityNotPresent**
@@ -190,7 +190,7 @@ assertItemEntityNotPresent(item: Minecraft.ItemStack, position: Minecraft.BlockL
 | **searchDistance** | *number* | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **assertItemEntityPresent**
@@ -206,7 +206,7 @@ assertItemEntityPresent(item: Minecraft.ItemStack, position: Minecraft.BlockLoca
 | **searchDistance** | *number* | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **fail**
@@ -220,7 +220,7 @@ fail(errorMessage: string): any
 | **errorMessage** | *string* | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **failIf**
@@ -236,7 +236,7 @@ Note: The callback takes a single parameter, Helper, which is created each time 
 | **callback** | () => void | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **killAllEntities**
@@ -247,7 +247,7 @@ killAllEntities(): any
 Kills all actors within the GameTest structure.
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **pressButton**
@@ -262,7 +262,7 @@ Presses a button at a position.  Note: Will error if button is not present.
 | **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **pullLever**
@@ -276,7 +276,7 @@ pullLever(position: Minecraft.BlockLocation): any
 | **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **runAfterDelay**
@@ -291,7 +291,7 @@ runAfterDelay(delayTicks: number, callback: () => void): any
 | **callback** | () => void | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **runAtTickTime**
@@ -306,7 +306,7 @@ runAtTickTime(tick: number, callback: () => void): any
 | **callback** | () => void | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **setBlock**
@@ -321,7 +321,7 @@ setBlock(block: Minecraft.Block, position: Minecraft.BlockLocation): any
 | **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **setEntityTamed**
@@ -331,7 +331,7 @@ setEntityTamed(): any
 
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **spawn**
@@ -346,7 +346,7 @@ spawn(entityIdentifier: string, position: Minecraft.BlockLocation): any
 | **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **startSequence**
@@ -364,7 +364,7 @@ succeed(): any
 
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **succeedIf**
@@ -378,7 +378,7 @@ succeedIf(callback: () => void): any
 | **callback** | () => void | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **succeedOnTick**
@@ -392,7 +392,7 @@ succeedOnTick(tick: number): any
 | **tick** | *number* | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **succeedOnTickWhen**
@@ -407,7 +407,7 @@ succeedOnTickWhen(tick: number, callback: () => void): any
 | **callback** | () => void | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **succeedWhen**
@@ -421,7 +421,7 @@ succeedWhen(callback: () => void): any
 | **callback** | () => void | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **succeedWhenBlockPresent**
@@ -436,7 +436,7 @@ succeedWhenBlockPresent(block: Minecraft.Block, position: Minecraft.BlockLocatio
 | **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **succeedWhenEntityHasComponent**
@@ -453,7 +453,7 @@ succeedWhenEntityHasComponent(entityIdentifier: string, componentIdentifier: str
 | **hasComponent** | *boolean* | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **succeedWhenEntityNotPresent**
@@ -468,7 +468,7 @@ succeedWhenEntityNotPresent(entityIdentifier: string, position: Minecraft.BlockL
 | **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
 ### **succeedWhenEntityPresent**
@@ -483,6 +483,6 @@ succeedWhenEntityPresent(entityIdentifier: string, position: Minecraft.BlockLoca
 | **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *any*
-> [!CAUTION]
+> [!WARNING]
 > This function can throw errors. 
 
