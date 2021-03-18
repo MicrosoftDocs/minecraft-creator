@@ -1,7 +1,9 @@
 ---
 title: GameTest.GameTestSequence
-author: Jake Shirley
 description: Contents of the GameTest.GameTestSequence class
+author: Jake Shirley
+ms.author: jashir
+ms.prod: Gaming
 ---
 # GameTestSequence
 

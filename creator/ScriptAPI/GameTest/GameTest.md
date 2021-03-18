@@ -1,7 +1,9 @@
 ---
 title: GameTest
-author: Jake Shirley
 description: Contents of the GameTest module
+author: Jake Shirley
+ms.author: jashir
+ms.prod: Gaming
 ---
 # GameTest
 

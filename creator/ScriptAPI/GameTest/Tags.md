@@ -1,7 +1,9 @@
 ---
 title: GameTest.Tags
-author: Jake Shirley
 description: Contents of the GameTest.Tags class
+author: Jake Shirley
+ms.author: jashir
+ms.prod: Gaming
 ---
 # Tags
 
