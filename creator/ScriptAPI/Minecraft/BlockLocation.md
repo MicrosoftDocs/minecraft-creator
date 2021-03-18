@@ -19,11 +19,25 @@ ms.prod: Gaming
 
 
 ## Methods
+- [constructor](#constructor)
 - [equals](#equals)
 - [offset](#offset)
 - [above](#above)
-- [constructor](#constructor)
   
+### **constructor**
+`
+new BlockLocation(x: number, y: number, z: number);
+`
+
+#### Arguments
+| Param | Type | Description |
+| :--- | :--- | :---: |
+| **x** | *number* | - |
+| **y** | *number* | - |
+| **z** | *number* | - |
+
+Returns [*BlockLocation*]("BlockLocation.md")
+
 ### **equals**
 `
 equals(other: BlockLocation): boolean;
@@ -55,20 +69,6 @@ Returns [*BlockLocation*]("BlockLocation.md")
 above(): BlockLocation;
 `
 
-
-Returns [*BlockLocation*]("BlockLocation.md")
-
-### **constructor**
-`
-constructor(x: number, y: number, z: number);
-`
-
-#### Arguments
-| Param | Type | Description |
-| :--- | :--- | :---: |
-| **x** | *number* | - |
-| **y** | *number* | - |
-| **z** | *number* | - |
 
 Returns [*BlockLocation*]("BlockLocation.md")
 

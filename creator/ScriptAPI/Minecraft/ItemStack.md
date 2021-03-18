@@ -13,7 +13,7 @@ ms.prod: Gaming
   
 ### **constructor**
 `
-constructor(block: Block);
+new ItemStack(block: Block);
 `
 
 #### Arguments
