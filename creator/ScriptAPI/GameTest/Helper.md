@@ -1,9 +1,10 @@
 ---
-title: GameTest.Helper Class
-description: Contents of the GameTest.Helper class
+# DO NOT TOUCH — This file was automatically generated.  See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
+title: GameTest.Helper Class
+description: Contents of the GameTest.Helper class.
 ---
 # Helper Class
 

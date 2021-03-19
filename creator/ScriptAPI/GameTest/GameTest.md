@@ -1,20 +1,21 @@
 ---
-title: GameTest Module
-description: Contents of the GameTest module
+# DO NOT TOUCH — This file was automatically generated.  See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
+title: GameTest Module
+description: Contents of the GameTest module
 ---
 # GameTest Module
 
 ## Classes
-### [*RegistrationBuilder*](RegistrationBuilder.md)
+- [*RegistrationBuilder*](RegistrationBuilder.md)
 
-### [*Helper*](Helper.md)
+- [*Helper*](Helper.md)
 
-### [*GameTestSequence*](GameTestSequence.md)
+- [*GameTestSequence*](GameTestSequence.md)
 
-### [*Tags*](Tags.md)
+- [*Tags*](Tags.md)
 
 
 ## Functions
