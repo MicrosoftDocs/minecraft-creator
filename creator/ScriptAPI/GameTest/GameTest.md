@@ -9,14 +9,10 @@ description: Contents of the GameTest module
 # GameTest Module
 
 ## Classes
-- [*RegistrationBuilder*](RegistrationBuilder.md)
-
-- [*Helper*](Helper.md)
-
-- [*GameTestSequence*](GameTestSequence.md)
-
-- [*Tags*](Tags.md)
-
+- [RegistrationBuilder](RegistrationBuilder.md)
+- [Helper](Helper.md)
+- [GameTestSequence](GameTestSequence.md)
+- [Tags](Tags.md)
 
 ## Functions
 ### **register**
