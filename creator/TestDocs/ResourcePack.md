@@ -7,11 +7,11 @@ ms.prod: Gaming
 
 # Resource Pack
 
-Before building your first Add On, you will need to create a Pack in order to add any custom content in Minecraft. There are two types of Packs that a creator can make, Resource and Behavior Packs. In this tutorial, you will learn about Resource Packs.
+Before building your first Add-On, you will need to create a Pack in order to add any custom content in Minecraft Bedrock Edition. There are two types of Packs that a creator can make: Resource and Behavior Packs. In this tutorial, you will learn about Resource Packs.
 
 A **Resource Pack** is a folder structure that will contain all of your custom models, sounds, textures and any custom content that is made. Resource Packs are commonly used to add user generated content to Minecraft in order to augment a player's experience.
 
-In this tutorial, You will learn the following:
+In this tutorial, you will learn the following:
 
 > [!div class="checklist"]
 > - Understand how a **Resource Pack** is created. 
@@ -24,12 +24,11 @@ In this tutorial, You will learn the following:
 It’s recommended that the following be completed before beginning this tutorial:
 
 - [Getting Started with Add-on Development](GettingStarted.md)
-- [Vanilla Resource Pack](https://aka.ms/resourcepacktemplate)
+- Download the [Vanilla Resource Pack](https://aka.ms/resourcepacktemplate)
 
 ## Building the Resource Pack
 
-In order to create a new Resource Pack, You will need to create a new folder to contain a Manifest File that can be read by Minecraft, and the custom content that will be loaded into the game.
-
+In order to create a new Resource Pack, you will need to create a new folder to contain a Manifest File that can be read by Minecraft, and the custom content that will be loaded into the game.
 
 1. Open up your game location folder **com.mojang**
 1. Double-click on the folder **resource_pack**.
@@ -46,7 +45,7 @@ In order to load a resource pack into Minecraft, a manifest file will need to be
 - **Name** – In-game name of the Resource Pack.
 - **UUID** - Universally Unique Identifier.
 - **Version** – Version of the Resource Pack.
-- **Minimal Engine Version** – Required version of Minecraft that this Pack will work in.
+- **Minimum Engine Version** – Required version of Minecraft that this Pack will work in.
 
 Since the file is written in JSON, Minecraft will be able to parse the information from the file and display it in the Add-On section. Inside the file, the information will be split into two separate sections; header and modules. The header section will contain the overall information for the pack, while modules will contain the dedicated packages information.
 
@@ -90,7 +89,7 @@ Universally Unique Identifier, or UUID for short, is a unique number used to ide
 
 ## Changing the Dirt block
 
-With the Manifest file completed. You can now start adding custom content to Minecraft. Let’s get started by applying a new texture to the Vanilla dirt block.
+With the Manifest file completed, you can now start adding custom content to Minecraft. Let’s get started by applying a new texture to the Vanilla dirt block.
 
 1. In File Explorer, in the **HelloWorldRP** folder, right-click and select **New**, then select **Folder**.
 1. Rename the folder to **textures**.
@@ -111,7 +110,7 @@ Now that the folder structure is created, you can now place your custom textures
 1. In the **Toolbar**, select **File**, then select **Properties**.
 1. Set the **Width** and **Height** to **16** each.
 
-You can now design a pattern or any artwork in the editor. In this example, a simple fill color has been added. 
+You can now design a pattern or any artwork in the editor. In this example, a simple fill color has been added.
 
 1. When done with your texture, select **File** and then select **Save As a PNG**.
 1. Navigate to the **blocks** folder.
@@ -119,12 +118,14 @@ You can now design a pattern or any artwork in the editor. In this example, a si
 
 ### Testing the Pack
 
-Now that the pack has both a manifest file and a texture. You can now launch Minecraft and test your new Add-on.
+Now that the pack has both a manifest file and a texture, you can now launch Minecraft and test your new Add-on.
 
 > [!IMPORTANT]
-> **Pack Stacking** is when content is loaded on top of vanilla content causing each object that has the same name in both packs to be overwritten by the latest applied Pack (in our example, the Dirt texture is overwritten by our custom texture).
+> **Pack Stacking** is when content is loaded on top of vanilla content causing each object that has the same name in both packs to be overwritten by the *latest* applied Pack (in our example, the Dirt texture is overwritten by our custom texture).
+>
+> If another pack that uses the dirt.png file is loaded **after** helloWorldBP, then Minecraft will use the latest dirt.png that was applied.
 
-Since the custom texture is named dirt.png. the texture will be used on every single dirt block in game.
+Since the custom texture is named dirt.png, the texture will be used on every single dirt block in game.
 
 1. Launch Minecraft.
 1. When Minecraft has launched and reached the main menu, select **Play**.

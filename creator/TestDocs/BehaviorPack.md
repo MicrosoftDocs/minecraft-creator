@@ -13,7 +13,6 @@ In this tutorial, you will learn the following:
 
 > [!div class="checklist"]
 >
-> - The difference between a Resource Pack and a Behavior Pack.
 > - How to build a **dependency** link between Resource Packs and Behavior Packs.
 > - What components are and how they are used to define Minecraft mobs.
 > - How to add behaviors to an existing mob.
@@ -24,7 +23,7 @@ It’s recommended that the following be completed before beginning this tutoria
 
 - [Getting Started with Add-on Development](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/gettingstarted?branch=main)
 - [Introduction To Resource Packs](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/resourcepack?branch=main)
-- [Vanilla Behavior Pack](https://aka.ms/behaviorpacktemplate)
+- Download the [Vanilla Behavior Pack](https://aka.ms/behaviorpacktemplate)
 
 ## Building the Behavior Pack
 
@@ -41,8 +40,8 @@ A Behavior pack is a type of pack that allows creators to add, remove or alter b
 In order to load a behavior pack into Minecraft, a manifest file will need to be generated. The manifest file is similar to the one created for a Resource Pack, but has a new section that will need to be added in.
 
 1. Right-click in the Explorer window and select **New**, then select **Text Document**.
-1. Set the name to **manifest.json**. 
-    1. You will need to change the file extension from .txt to .json. If your Explorer window does not show file extensions, you can enable File Name Extensions under the View tab. <add this to environment requirements>
+1. Set the name to **manifest.json**.
+    1. You will need to change the file extension from .txt to .json. If your Explorer window does not show file extensions, you can enable File Name Extensions under the View tab.
 1. Double-click on **manifest.json** to open it in a Text Editor.
 1. Copy/Paste the following text into your text editor.
 
@@ -68,6 +67,7 @@ In order to load a behavior pack into Minecraft, a manifest file will need to be
 ```
 
 ### UUID
+
 Similar to the resource pack manifest file, a series of UUIDs will need to be generated in order to load the pack into Minecraft. For the Header and Modules, there will need to be 2 different UUID numbers entered between the quotes. You can use an online UUID Generator such as https://www.uuidgenerator.net/
 
 ![Image of UUIDGenerator.net home screen with a custom UUID generated out](\Media\BehaviorPack\UUID.png)
@@ -79,7 +79,9 @@ Similar to the resource pack manifest file, a series of UUIDs will need to be ge
 
 ### Dependency
 
-For a behavior pack, you can add a 3rd section to the manifest.json file called Dependencies. Dependency creates a link between a Behavior pack and a Resource pack via UUID located in the header section of the Resource pack manifest.json. Add a dependency for your helloWorldRP resource pack you previously created and set it to automatically load in when the behavior pack is loaded. Below is an example of what the completed Behavior Pack Manifest File will look like.
+For a behavior pack, you can add a 3rd section to the manifest.json file called Dependencies. Dependency creates a link between a Behavior pack and a Resource pack via UUID located in the header section of the Resource pack manifest.json. Add a dependency for your helloWorldRP resource pack you previously created and set it to automatically load in when the behavior pack is loaded.
+
+Below is an example of what the completed Behavior Pack Manifest File will look like.
 
 ```json
 {
@@ -117,7 +119,7 @@ For a behavior pack, you can add a 3rd section to the manifest.json file called 
 
 ## Entity
 
-Each character’s behaviors are defined using a json file. For this tutorial, you will copy the cow.json file located in the vanilla Behavior Pack located in the hyperlink in Requirements.
+Each character’s behaviors are defined using a json file. For this section, you will copy the **cow.json** file located in the default vanilla Behavior Pack.
 
 1. In the **HelloWorldBP** folder, right-click in the File Explorer window and select **New** and then **Folder** to create a new folder.
 2. Name the folder **entities**.
@@ -142,10 +144,10 @@ The first section is the `Minecraft:entity`. This container is used to define wh
     },
 ```
 
-- **`Identifier`** is the in-game name used to define an entity.
-- **`Is_Spawnable`** is a Boolean allowing the option for the entity to be spawned in the world
-- **`Is_Summonable`** is a Boolean allowing players to summon via command interface.
-- **`Is_experimental`** is a Boolean that flags if the entity is in an experimental state.
+- **`identifier`** is the in-game name used to define an entity.
+- **`is_spawnable`** is a Boolean (True/False statement) allowing the option for the entity to be spawned in the world
+- **`is_summonable`** is a Boolean allowing players to summon via command interface.
+- **`is_experimental`** is a Boolean that flags if the entity is in an experimental state.
 
 ### Component Groups
 
@@ -224,7 +226,7 @@ Events are actions that interface with Minecraft.
 
 In the cow.json file shown above, an entity_spawned event is defined here in order to spawn either an adult cow or a baby cow in the world.
 
-- **`Randomize`** allows the use of defining the odds of the entity spawning in either group. Here, there is a 95/100 chance it could spawn an adult cow or a 5/100 to spawn a baby cow `Randomize` does not work off of a percentage system. The odds are calculated via the sum of the `"weight"` definition. If you were to change `"weight": 5`, to `"weight":25`, it would have a 25/120 chance of spawning.
+- **`randomize`** allows the use of defining the odds of the entity spawning in either group. Here, there is a 95/100 chance it could spawn an adult cow or a 5/100 to spawn a baby cow `randomize` does not work off of a percentage system. The odds are calculated via the sum of the `"weight"` definition. If you were to change `"weight": 5`, to `"weight":25`, it would have a 25/120 chance of spawning.
 
 ## Adding new behaviors
 
@@ -253,15 +255,15 @@ In order for the cow to attack, it will need to find a target that can be attack
 
 In the sample above, the **nearest_attackable_target** is a component that handles the behavior for detecting a potential target. The component has the following flags;
 
-- **`Priority`** is how important this component is compared to other behaviors. Lower numbers represent a higher priority, meaning that a component with a priority set to 1, will happen before another component set at 4.
-- **`Reselect_targets`** is a Boolean that allows the entity to re-target the same entity after an attack.
-- **`Within_radius`** defines a radius around the cow of what targets can be selected
-- **`Entity_types`** is a collection of arguments that define what type of entity is considered a target.
-- **`Filters`** is what type of entity the cow will look for.
-- **`Max`** dist is the distance in blocks between the cow and the potential target in the filter.
-- **`Must_see`** is a Boolean that determines if the cow needs to have vision on its target. The cow will have to look directly at the player in order for the cow to consider the player a target.
+- **`priority`** is how important this component is compared to other behaviors. Lower numbers represent a higher priority, meaning that a component with a priority set to 1, will happen before another component set at 4.
+- **`reselect_targets`** is a Boolean that allows the entity to re-target the same entity after an attack.
+- **`within_radius`** defines a radius around the cow of what targets can be selected
+- **`entity_types`** is a collection of arguments that define what type of entity is considered a target.
+- **`filters`** is what type of entity the cow will look for.
+- **`max`** dist is the distance in blocks between the cow and the potential target in the filter.
+- **`must_see`** is a Boolean that determines if the cow needs to have vision on its target. The cow will have to look directly at the player in order for the cow to consider the player a target.
 
-### Adding the behavior
+#### Adding the behavior
 
 Now we will add `nearest_attackable_target` to the cow.json in order to allow the cow to target a player.
 
@@ -270,9 +272,9 @@ Now we will add `nearest_attackable_target` to the cow.json in order to allow th
 
 <slap an image here> 
 
-### Minecraft:behavior.MeleeAttack
+### Minecraft:behavior.meleeattack
 
-Once the cow is able to located a target, the next step is to allow an attack using the `behavior.MeleeAttack` component.
+Once the cow is able to located a target, the next step is to allow an attack using the `behavior.meleeattack` component.
 
 ```JSON
 "minecraft:behavior.melee_attack": {
@@ -280,16 +282,16 @@ Once the cow is able to located a target, the next step is to allow an attack us
       },
 ```
 
-### Adding the behavior
+#### Adding the behavior
 
 1.	Copy the sample located above for `minecraft:behavior.melee_attack`.
 1.	At the bottom of the **Component** header list, right below `Minecraft:behavior.nearest_attackable_target`, paste the snippet.
 1.	Add a comma to the end of the `minecraft:behavior.nearest.attackable_target` snippet in order to prevent any JSON errors.
 <insert image here>
 
-### Minecraft:Attack
+### Minecraft:attack
 
-Now that the cow can look for a target and attack, You will need to add a value to deal damage for each attack.
+Now that the cow can look for a target and attack, you will need to add a value to deal damage for each attack.
 
 ```json
       "minecraft:attack": {
@@ -297,9 +299,9 @@ Now that the cow can look for a target and attack, You will need to add a value 
       },
 ```
 
-In the snippet, located above, is from the  vanilla zombie.json file, you can see that the component has a single argument. `"Damage"`is set to a value of `3`, meaning every attack will take away 1.5 hearts from a player’s life bar.
+In the snippet above, you can see that the component has a single argument. `"damage"`is set to a value of `3`, meaning every attack will take away 1.5 hearts from a player’s life bar.
 
-### Adding the behavior
+#### Adding the behavior
 
 1. Copy the sample located above for `minecraft: attack`.
 1. At the bottom of the **Component** header list, right below `Minecraft:behavior.melee_attack`, paste the snippet.
@@ -309,7 +311,7 @@ In the snippet, located above, is from the  vanilla zombie.json file, you can se
 
 ### Testing the Pack
 
-Now that the pack has both a manifest file and a modification for the cow entity, You can now launch Minecraft and test your new Add-on. As stated in the Resource Pack, **Pack Stacking** will work for Behavior Packs as well. This means that content is loaded with any and all vanilla content being loaded first, followed by any additional Add-ons. Since the cow is using the cow.json namespace, every cow will inherit the new behaviors.
+Now that the pack has both a manifest file and a modification for the cow entity, you can now launch Minecraft and test your new Add-on. As stated in the Resource Pack, **Pack Stacking** will work for Behavior Packs as well. This means that content is loaded with any and all vanilla content being loaded first, followed by any additional Add-ons. Since the cow is using the cow.json namespace, every cow will inherit the new behaviors.
 
 1. Launch **Minecraft**.
 1. When Minecraft has launched and reached the main menu, select **Play**.

@@ -146,14 +146,6 @@ Data-Driven spawning allows you to adjust the spawn conditions of mobs, includin
 
 **Getting Started**
 
-
-|Column1  |Column2  |Column3  |
-|---------|---------|---------|
-|Row1     |         | <table>  <thead>  <tr>  <th></th>  <th>ASCII</th>  <th>HTML</th>  </tr>  </thead>  <tbody>  <tr>  <td>Single backticks</td>  <td><code>'Isn't this fun?'</code></td>  <td>‘Isn’t this fun?’</td>  </tr>  <tr>  <td>Quotes</td>  <td><code>"Isn't this fun?"</code></td>  <td>“Isn’t this fun?”</td>  </tr>  <tr>  <td>Dashes</td>  <td><code>-- is en-dash, --- is em-dash</code></td>  <td>– is en-dash, — is em-dash</td>  </tr>  </tbody>  </table>         |
-|Row2     |         |         |
-|Row3     |         |         |
-
-
 Spawn rules contain description and conditionsAll Spawn Rules JSON need to have an ID (located under the description section). Similar to other identifiers, it follows the convention "namespace:name". The minecraft namespace is reserved for the vanilla Minecraft rules.When changing an existing mob use the ID that appears in the entity JSON for that entity. When creating your own mob, make sure the mobs have the same ID in all the entity's JSON files.
 
 Spawn Rules also needs to define the pool that is used for population control.Each pool has their own spawn limit, By setting an entity to a pool it will spawn as long as that pool hasn't reached the spawn limit.
@@ -167,50 +159,129 @@ There are 3 pools that entities can be assigned to:
 
 Components
 
-| Param| Arguements|Description |
-|------|-----|-----------|
-| minecraft:spawns_on_surface| N/A |Entity will spawn on a flat surface  |
-| minecraft:spawns_underwater| N/A |Entity will spawn underwater  |
-| minecraft:brightness_filter| <br />
-| Type| Name| Default Value| Description |
-|-----------|-----------|-----------|-----------|
-| Boolean| adjust_for_weather| false| This determines if weather can affect the light level conditions that cause the mob to spawn (e.g. Allowing hostile mobs to spawn during the day when it rains.) |
-| Decimal| max| 15.0| This is the maximum light level value that allows the mob to spawn |
-| Decimal| min| 0.0| This is the minimum light level value that allows the mob to spawn |
- |
-| minecraft:weight| <br/>| Type| Name| Default Value| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| Decimal| default| 0.0| This is the priority of the mob spawning |
-
-
- |
-| minecraft:difficulty_filter| <br/>| Type| Name| Default Value| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| max| | This is the maximum difficulty level that a mob spawns |
-| String| min| | This is the minimum difficulty level that a mob spawns |
-
-
- |
-| minecraft:herd| <br/>| Type| Name| Default Value| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| event| | This is an event that can be triggered from spawning |
-| Decimal| event_skip_count| | This is the number of mobs spawned before the specified event is triggered |
-| Decimal| max_size| | This is the maximum number of mobs that spawn in a herd |
-| Decimal| min_size| | This is the minimum number of mobs that spawn in a herd |
-
-
- |
-| minecraft:biome_filter|  |
-| minecraft:density_limit| <br/>| Type| Name| Default Value| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| Integer| surface| | This is the maximum number of mobs of this type spawnable on the surface |
-| Integer| underground| | This is the maximum number of mobs of this type spawnable underground |
-
-
- |
-
-
-
+<import from HTML Docs>
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
+<tr> <th style="border-style:solid; border-width:1;">Name</th> <th style="border-style:solid; border-width:1;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:9px">minecraft:spawns_on_surface</td>
+<td style="border-style:solid; border-width:1; padding:9px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:9px">minecraft:spawns_underwater</td>
+<td style="border-style:solid; border-width:1; padding:9px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:9px">minecraft:brightness_filter</td>
+<td style="border-style:solid; border-width:1; padding:9px"><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
+<tr> <th style="border-style:solid; border-width:1;">Name</th> <th style="border-style:solid; border-width:1;">Type</th> <th style="border-style:solid; border-width:1;">Default Value</th> <th style="border-style:solid; border-width:1;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:10px">adjust_for_weather</td>
+<td style="border-style:solid; border-width:1; padding:10px">Boolean</td>
+<td style="border-style:solid; border-width:1; padding:10px">false</td>
+<td style="border-style:solid; border-width:1; padding:10px">This determines if weather can affect the light level conditions that cause the mob to spawn (e.g. Allowing hostile mobs to spawn during the day when it rains.)</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:10px">max</td>
+<td style="border-style:solid; border-width:1; padding:10px">Decimal</td>
+<td style="border-style:solid; border-width:1; padding:10px">15.0</td>
+<td style="border-style:solid; border-width:1; padding:10px">This is the maximum light level value that allows the mob to spawn</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:10px">min</td>
+<td style="border-style:solid; border-width:1; padding:10px">Decimal</td>
+<td style="border-style:solid; border-width:1; padding:10px">0.0</td>
+<td style="border-style:solid; border-width:1; padding:10px">This is the minimum light level value that allows the mob to spawn</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:9px">minecraft:weight</td>
+<td style="border-style:solid; border-width:1; padding:9px"><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
+<tr> <th style="border-style:solid; border-width:1;">Name</th> <th style="border-style:solid; border-width:1;">Type</th> <th style="border-style:solid; border-width:1;">Default Value</th> <th style="border-style:solid; border-width:1;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:10px">default</td>
+<td style="border-style:solid; border-width:1; padding:10px">Decimal</td>
+<td style="border-style:solid; border-width:1; padding:10px">0.0</td>
+<td style="border-style:solid; border-width:1; padding:10px">This is the priority of the mob spawning</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:9px">minecraft:difficulty_filter</td>
+<td style="border-style:solid; border-width:1; padding:9px"><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
+<tr> <th style="border-style:solid; border-width:1;">Name</th> <th style="border-style:solid; border-width:1;">Type</th> <th style="border-style:solid; border-width:1;">Default Value</th> <th style="border-style:solid; border-width:1;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:10px">max</td>
+<td style="border-style:solid; border-width:1; padding:10px">String</td>
+<td style="border-style:solid; border-width:1; padding:10px"></td>
+<td style="border-style:solid; border-width:1; padding:10px">This is the maximum difficulty level that a mob spawns</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:10px">min</td>
+<td style="border-style:solid; border-width:1; padding:10px">String</td>
+<td style="border-style:solid; border-width:1; padding:10px"></td>
+<td style="border-style:solid; border-width:1; padding:10px">This is the minimum difficulty level that a mob spawns</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:9px">minecraft:herd</td>
+<td style="border-style:solid; border-width:1; padding:9px"><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
+<tr> <th style="border-style:solid; border-width:1;">Name</th> <th style="border-style:solid; border-width:1;">Type</th> <th style="border-style:solid; border-width:1;">Default Value</th> <th style="border-style:solid; border-width:1;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:10px">event</td>
+<td style="border-style:solid; border-width:1; padding:10px">String</td>
+<td style="border-style:solid; border-width:1; padding:10px"></td>
+<td style="border-style:solid; border-width:1; padding:10px">This is an event that can be triggered from spawning</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:10px">event_skip_count</td>
+<td style="border-style:solid; border-width:1; padding:10px">Decimal</td>
+<td style="border-style:solid; border-width:1; padding:10px"></td>
+<td style="border-style:solid; border-width:1; padding:10px">This is the number of mobs spawned before the specified event is triggered</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:10px">max_size</td>
+<td style="border-style:solid; border-width:1; padding:10px">Decimal</td>
+<td style="border-style:solid; border-width:1; padding:10px"></td>
+<td style="border-style:solid; border-width:1; padding:10px">This is the maximum number of mobs that spawn in a herd</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:10px">min_size</td>
+<td style="border-style:solid; border-width:1; padding:10px">Decimal</td>
+<td style="border-style:solid; border-width:1; padding:10px"></td>
+<td style="border-style:solid; border-width:1; padding:10px">This is the minimum number of mobs that spawn in a herd</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:9px">minecraft:biome_filter</td>
+<td style="border-style:solid; border-width:1; padding:9px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:9px">minecraft:density_limit</td>
+<td style="border-style:solid; border-width:1; padding:9px"><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
+<tr> <th style="border-style:solid; border-width:1;">Name</th> <th style="border-style:solid; border-width:1;">Type</th> <th style="border-style:solid; border-width:1;">Default Value</th> <th style="border-style:solid; border-width:1;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:10px">surface</td>
+<td style="border-style:solid; border-width:1; padding:10px">Integer</td>
+<td style="border-style:solid; border-width:1; padding:10px"></td>
+<td style="border-style:solid; border-width:1; padding:10px">This is the maximum number of mobs of this type spawnable on the surface</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:10px">underground</td>
+<td style="border-style:solid; border-width:1; padding:10px">Integer</td>
+<td style="border-style:solid; border-width:1; padding:10px"></td>
+<td style="border-style:solid; border-width:1; padding:10px">This is the maximum number of mobs of this type spawnable underground</br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
 
 **Biome Tags**
 
@@ -253,6 +324,7 @@ Components
 | taiga |
 | the_end |
 | warm |
+
 
 
 
@@ -331,9 +403,9 @@ Components
 | Mountain + M|  |
 | Giant Tree Taiga Hills M|  |
 
-
 **Example Spawn Rules for the zombie**
-```
+
+```json
 "format_version": "1.8.0",
   "minecraft:spawn_rules": {
     "description": {
@@ -376,15 +448,11 @@ Components
   }
 ```
 
-
-
-#Filters
+## Filters
 
 Filters allow data objects to specify test criteria which allows their use.
 
 For example, a model that includes a filter will only be used when the filter criteria is true.
-
-
 
 A typical filter consists of four parameters:
 
@@ -397,14 +465,11 @@ A typical filter consists of four parameters:
  value: the value being compared with the test.
 
 
-
 A typical filter looks like the following:
 
- { "test" : "moon_intensity", "subject" : "self", "operator" : "greater", "value" : "0.5" } 
+` { "test" : "moon_intensity", "subject" : "self", "operator" : "greater", "value" : "0.5" }` 
 
 Which results in the calling entity (self) calculating the moon_intensity at its location and returning true if the result is greater than 0.5.
-
-
 
 Tests can be combined into groups using the collections 'all_of', 'any_of', or 'none_of'.
 
@@ -414,67 +479,13 @@ Tests can be combined into groups using the collections 'all_of', 'any_of', or '
 
  All tests in a 'none_of' group must fail in order for the group to pass.
 
-
-
-
--Original- 
-##clock_time
+## clock_time
 
 Compares the current time with a float value in the range (0.0, 1.0).
 0.0= Noon
 0.25= Sunset
 0.5= Midnight
 0.75= Sunrise
-
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
-
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| Decimal| value| | (Required) A floating point value. |
-
-
-**Examples**
-
-**Full..**
-```
-{ "test": "clock_time", "subject": "self", "operator": "equals", "value": "0.00" }
-```
-
-**Short (using Defaults)..**
-```
-{ "test": "clock_time", "value": "0.00" }
-```
-Doc HTML Output
-Compares the current time with a float value in the range (0.0, 1.0).
-0.0= Noon
-0.25= Sunset
-0.5= Midnight
-0.75= Sunrise</br><h2></h2>
 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
 <tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
@@ -572,1613 +583,3762 @@ Compares the current time with a float value in the range (0.0, 1.0).
 </tr>
 </table>
 
+**Examples**
 
+**Full..**
+```json
+{ "test": "clock_time", "subject": "self", "operator": "equals", "value": "0.00" }
+```
 
-##distance_to_nearest_player
+**Short (using Defaults)..**
+```json
+{ "test": "clock_time", "value": "0.00" }
+```
+
+## distance_to_nearest_player
 
 Compares the distance to the nearest Player with a float value.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+<import from HTML Docs>
 
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| Decimal| value| | (Required) A floating point value. |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">Decimal</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">(Required) A floating point value.</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "distance_to_nearest_player", "subject": "self", "operator": "equals", "value": "0.00" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "distance_to_nearest_player", "value": "0.00" }
 ```
 
-
-
-##has_ability
+## has_ability
 
 Returns true when the subject entity has the named ability.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
-
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| String| value| | (Required) The Ability type to test<br/>| Options| Description |
-|:-----------:|:-----------:|
-| flySpeed|  |
-| flying|  |
-| instabuild|  |
-| invulnerable|  |
-| lightning|  |
-| mayfly|  |
-| mute|  |
-| noclip|  |
-| walkSpeed|  |
-| worldbuilder|  |
-
-
- |
-
+<import from HTML Docs>
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">(Required) The Ability type to test</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">flySpeed</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">flying</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">instabuild</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">invulnerable</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">lightning</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">mayfly</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">mute</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">noclip</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">walkSpeed</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">worldbuilder</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "has_ability", "subject": "self", "operator": "equals", "value": "instabuild" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "has_ability", "value": "instabuild" }
 ```
 
-
-
-##has_biome_tag
+## has_biome_tag
 
 Tests whether the biome the subject is in has the specified tag.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
-
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| String| value| | (Required) The tag to look for |
-
+<import from HTML Docs>
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">(Required) The tag to look for</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "has_biome_tag", "subject": "self", "operator": "equals", "value": " " }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "has_biome_tag", "value": " " }
 ```
 
-
-
-##has_component
+## has_component
 
 Returns true when the subject entity contains the named component.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
-
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| String| value| | (Required) The component name to look for |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">(Required) The component name to look for</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "has_component", "subject": "self", "operator": "equals", "value": "minecraft:explode" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "has_component", "value": "minecraft:explode" }
 ```
 
-
-
-##has_container_open
+## has_container_open
 
 Returns true when the subject Player entity has opened a container.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+<import from HTML Docs>
 
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| Boolean| value| true| (Optional) true or false. |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
+<td style="border-style:solid; border-width:3; padding:7px">true</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) true or false.</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "has_container_open", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "has_container_open" }
 ```
 
-
-
-##has_damage
+## has_damage
 
 Returns true when the subject entity receives the named damage type.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
-
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| String| value| | (Required) The Damage type to test<br/>| Options| Description |
-|:-----------:|:-----------:|
-| anvil|  |
-| attack|  |
-| block_explosion|  |
-| contact|  |
-| drowning|  |
-| entity_explosion|  |
-| fall|  |
-| falling_block|  |
-| fatal| Any damage which kills the subject |
-| fire|  |
-| fire_tick|  |
-| fly_into_wall|  |
-| lava|  |
-| magic|  |
-| none|  |
-| override|  |
-| piston|  |
-| projectile|  |
-| starve|  |
-| suffocation|  |
-| suicide|  |
-| thorns|  |
-| void|  |
-| wither|  |
-
-
- |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">(Required) The Damage type to test</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">anvil</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">attack</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block_explosion</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">contact</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">drowning</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">entity_explosion</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">fall</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">falling_block</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">fatal</td>
+<td style="border-style:solid; border-width:2; padding:8px">Any damage which kills the subject</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">fire</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">fire_tick</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">fly_into_wall</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">lava</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">magic</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">none</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">override</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">piston</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">projectile</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">starve</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">suffocation</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">suicide</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">thorns</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">void</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">wither</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "has_damage", "subject": "self", "operator": "equals", "value": "fatal" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "has_damage", "value": "fatal" }
 ```
 
-
-
-##has_equipment
+## has_equipment
 
 Tests for the presence of a named item in the designated slot of the subject entity.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| domain| any| (Optional) The equipment location to test<br/>| Options| Description |
-|:-----------:|:-----------:|
-| any|  |
-| armor|  |
-| feet|  |
-| hand|  |
-| head|  |
-| leg|  |
-| torso|  |
+<import from HTML Docs>
 
-
- |
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
-
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| String| value| | (Required) The item name to look for |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">domain</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">any</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The equipment location to test</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">any</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">armor</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">feet</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">hand</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">head</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">leg</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">torso</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">(Required) The item name to look for</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "has_equipment", "subject": "self", "domain": "any", "operator": "equals", "value": "dirt" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "has_equipment", "value": "dirt" }
 ```
 
-
-
-##has_mob_effect
+## has_mob_effect
 
 Tests whether the Subject has the specified mob effect.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+<import from HTML Docs>
 
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| String| value| | (Optional) A string value. |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) A string value.</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "has_mob_effect", "subject": "self", "operator": "equals", "value": "" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "has_mob_effect" }
 ```
 
-
-
-##has_ranged_weapon
+## has_ranged_weapon
 
 Returns true when the subject entity is holding a ranged weapon like a bow or crossbow.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
-
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| Boolean| value| true| (Optional) true or false. |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
+<td style="border-style:solid; border-width:3; padding:7px">true</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) true or false.</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "has_ranged_weapon", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "has_ranged_weapon" }
 ```
 
-
-
-##has_tag
+## has_tag
 
 Returns true if the subject entity has the tag provided.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+<import from HTML Docs>
 
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| String| value| | (Optional) A string value. |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) A string value.</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "has_tag", "subject": "self", "operator": "equals", "value": "" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "has_tag" }
 ```
 
-
-
-##has_target
+## has_target
 
 Returns true if the subject entity has a valid target.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+<import from HTML>
 
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| Boolean| value| true| (Optional) true or false. |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
+<td style="border-style:solid; border-width:3; padding:7px">true</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) true or false.</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "has_target", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "has_target" }
 ```
 
-
-
-##has_trade_supply
+## has_trade_supply
 
 Tests whether the target has any trade supply left. Will return false if the target cannot be traded with.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+<import via HTML Docs>
 
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| Boolean| value| true| (Optional) true or false. |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
+<td style="border-style:solid; border-width:3; padding:7px">true</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) true or false.</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "has_trade_supply", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "has_trade_supply" }
 ```
 
-
-
-##hourly_clock_time
+## hourly_clock_time
 
 Compares the current 24 hour time with an int value in the range[0, 24000]
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+<import from HTML Docs>
 
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| Integer| value| | (Required) An integer value. |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">Integer</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">(Required) An integer value.</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "hourly_clock_time", "subject": "self", "operator": "equals", "value": "0" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "hourly_clock_time", "value": "0" }
 ```
 
-
-
-##in_caravan
+## in_caravan
 
 Returns true if the subject entity is in a caravan.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
-
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| Boolean| value| true| (Optional) true or false. |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
+<td style="border-style:solid; border-width:3; padding:7px">true</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) true or false.</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "in_caravan", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "in_caravan" }
 ```
 
-
-
-##in_clouds
+## in_clouds
 
 Returns true when the subject entity is in the clouds.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
-
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| Boolean| value| true| (Optional) true or false. |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
+<td style="border-style:solid; border-width:3; padding:7px">true</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) true or false.</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "in_clouds", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "in_clouds" }
 ```
 
-
-
-##in_lava
+## in_lava
 
 Returns true when the subject entity is in lava.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+<import via HTML Docs>
 
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| Boolean| value| true| (Optional) true or false. |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
+<td style="border-style:solid; border-width:3; padding:7px">true</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) true or false.</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "in_lava", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "in_lava" }
 ```
 
-
-
-##in_nether
+## in_nether
 
 Returns true when the subject entity is in Nether.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+<import via HTML Docs>
 
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| Boolean| value| true| (Optional) true or false. |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
+<td style="border-style:solid; border-width:3; padding:7px">true</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) true or false.</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json 
 { "test": "in_nether", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "in_nether" }
 ```
 
-
-
-##in_water
+## in_water
 
 Returns true when the subject entity is in water.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
-
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| Boolean| value| true| (Optional) true or false. |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
+<td style="border-style:solid; border-width:3; padding:7px">true</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) true or false.</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "in_water", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "in_water" }
 ```
 
-
-
-##in_water_or_rain
+## in_water_or_rain
 
 Returns true when the subject entity is in water or rain.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+<import via HTML Docs>
 
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| Boolean| value| true| (Optional) true or false. |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
+<td style="border-style:solid; border-width:3; padding:7px">true</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) true or false.</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "in_water_or_rain", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "in_water_or_rain" }
 ```
 
 
 
-##inactivity_timer
+## inactivity_timer
 
 Tests if the specified duration in seconds of inactivity for despawning has been reached.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+<import via HTML Docs>
 
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| Integer| value| | (Required) An integer value. |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">Integer</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">(Required) An integer value.</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "inactivity_timer", "subject": "self", "operator": "equals", "value": "0" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "inactivity_timer", "value": "0" }
 ```
 
-
-
-##is_altitude
+## is_altitude
 
 Tests the current altitude against a provided value. 0= bedrock elevation.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
-
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| Integer| value| | (Required) The altitude value to compare with |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">Integer</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">(Required) The altitude value to compare with</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "is_altitude", "subject": "self", "operator": "equals", "value": "0" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "is_altitude", "value": "0" }
 ```
 
-
-
-##is_avoiding_mobs
+## is_avoiding_mobs
 
 Returns true if the subject entity is fleeing from other mobs.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+<import via HTML Docs>
 
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| Boolean| value| true| (Optional) true or false. |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
+<td style="border-style:solid; border-width:3; padding:7px">true</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) true or false.</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "is_avoiding_mobs", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "is_avoiding_mobs" }
 ```
 
-
-
-##is_biome
+## is_biome
 
 Tests whether the Subject is currently in the named biome.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
-
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| String| value| | (Required) The Biome type to test<br/>| Options| Description |
-|:-----------:|:-----------:|
-| beach|  |
-| desert|  |
-| extreme_hills|  |
-| flat|  |
-| forest|  |
-| ice|  |
-| jungle|  |
-| mesa|  |
-| mushroom_island|  |
-| ocean|  |
-| plain|  |
-| river|  |
-| savanna|  |
-| stone_beach|  |
-| swamp|  |
-| taiga|  |
-| the_end|  |
-| the_nether|  |
-
-
- |
-
+<import via HTML Docs>
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">(Required) The Biome type to test</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">beach</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">desert</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">extreme_hills</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">flat</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">forest</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">ice</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">jungle</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">mesa</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">mushroom_island</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">ocean</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">plain</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">river</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">savanna</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">stone_beach</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">swamp</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">taiga</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">the_end</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">the_nether</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "is_biome", "subject": "self", "operator": "equals", "value": "beach" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "is_biome", "value": "beach" }
 ```
 
-
-
-##is_block
+## is_block
 
 Returns true when the block has the given name.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+<import via HTML Docs>
 
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| String| value| | (Required) The Family name to look for |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">(Required) The Family name to look for</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "is_block", "subject": "self", "operator": "equals", "value": "player" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "is_block", "value": "player" }
 ```
 
-
-
-##is_brightness
+## is_brightness
 
 Tests the current brightness against a provided value in the range (0.0f, 1.0f).
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+<import via HTML Docs>
 
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| Decimal| value| | (Required) The brightness value to compare with. |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">Decimal</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">(Required) The brightness value to compare with.</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "is_brightness", "subject": "self", "operator": "equals", "value": "0.50" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "is_brightness", "value": "0.50" }
 ```
 
-
-
-##is_climbing
+## is_climbing
 
 Returns true if the subject entity is climbing.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+<import via HTML Docs>
 
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| Boolean| value| true| (Optional) true or false. |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
+<td style="border-style:solid; border-width:3; padding:7px">true</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) true or false.</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "is_climbing", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "is_climbing" }
 ```
 
-
-
-##is_color
+## is_color
 
 Returns true if the subject entity is the named color.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+<import via HTML Docs>
 
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| String| value| | (Required) The Palette Color to test<br/>| Options| Description |
-|:-----------:|:-----------:|
-| black|  |
-| blue|  |
-| brown|  |
-| cyan|  |
-| gray|  |
-| green|  |
-| light_blue|  |
-| light_green|  |
-| magenta|  |
-| orange|  |
-| pink|  |
-| purple|  |
-| red|  |
-| silver|  |
-| white|  |
-| yellow|  |
-
-
- |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">(Required) The Palette Color to test</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">black</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">blue</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">brown</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">cyan</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">gray</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">green</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">light_blue</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">light_green</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">magenta</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">orange</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">pink</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">purple</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">red</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">silver</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">white</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">yellow</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "is_color", "subject": "self", "operator": "equals", "value": "white" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "is_color", "value": "white" }
 ```
 
-
-
-##is_daytime
+## is_daytime
 
 Returns true during the daylight hours.
+<import via HTML Docs>
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
-
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| Boolean| value| true| (Optional) true or false. |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
+<td style="border-style:solid; border-width:3; padding:7px">true</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) true or false.</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "is_daytime", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "is_daytime" }
 ```
 
-
-
-##is_difficulty
+## is_difficulty
 
 Tests the current difficulty level of the game.
+<import via HTML Docs>
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
-
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| String| value| | (Required) The game's difficulty level to test<br/>| Options| Description |
-|:-----------:|:-----------:|
-| easy|  |
-| hard|  |
-| normal|  |
-| peaceful|  |
-
-
- |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">(Required) The game's difficulty level to test</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">easy</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">hard</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">normal</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">peaceful</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "is_difficulty", "subject": "self", "operator": "equals", "value": "normal" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "is_difficulty", "value": "normal" }
 ```
 
-
-
-##is_family
+## is_family
 
 Returns true when the subject entity is a member of the named family.
 
-| Type| Name| Default| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| String| operator| equals| (Optional) The comparison to apply with 'value'.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+<import via HTML Docs>
 
-
- |
-| String| subject| self| (Optional) The subject of this filter test.<br/>| Options| Description |
-|:-----------:|:-----------:|
-| block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
-
-
- |
-| String| value| | (Required) The Family name to look for |
-
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">operator</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">equals</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The comparison to apply with 'value'.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">!=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for less-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px"><></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">==</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">></td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">>=</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for greater-than or equal to the value.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">equals</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for equality.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">not</td>
+<td style="border-style:solid; border-width:2; padding:8px">Test for inequality.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">subject</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">(Optional) The subject of this filter test.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Options</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block</td>
+<td style="border-style:solid; border-width:2; padding:8px">The block involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">damager</td>
+<td style="border-style:solid; border-width:2; padding:8px">The damaging actor involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">other</td>
+<td style="border-style:solid; border-width:2; padding:8px">The other member of an interaction, not the caller.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">parent</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current parent.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">player</td>
+<td style="border-style:solid; border-width:2; padding:8px">The player involved with the interaction.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">self</td>
+<td style="border-style:solid; border-width:2; padding:8px">The entity or object calling the test</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target</td>
+<td style="border-style:solid; border-width:2; padding:8px">The caller's current target.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">value</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">(Required) The Family name to look for</br></td>
+</tr>
+</table>
 
 **Examples**
 
 **Full..**
-```
+```json
 { "test": "is_family", "subject": "self", "operator": "equals", "value": "player" }
 ```
 
 **Short (using Defaults)..**
-```
+```json
 { "test": "is_family", "value": "player" }
 ```
 
-
-
-##is_game_rule
+## is_game_rule
 
 Tests whether a named game rule is active.
 
