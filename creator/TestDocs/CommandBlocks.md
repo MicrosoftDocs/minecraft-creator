@@ -6,11 +6,12 @@ ms.prod: Gaming
 ---
 # Introduction to Command Blocks
 
-Command Blocks are a specialized type of block within a Minecraft world that allows the use of console commands in game. Command Blocks are able to extend and build completely new experiences for players to experience. 
+Command Blocks are a specialized type of block within a Minecraft world that allows the use of console commands in game. Command Blocks are able to extend and build completely new experiences for players to experience.
 
-In this tutorial, You will learn the following;
+In this tutorial, you will learn the following;
 
 > [!div class="checklist"]
+>
 > - What are Command Blocks and how to access them in-game.
 > - How /cheats can be used via Command Blocks.
 > - How a Command Block chain work to string together multiple Command Blocks.
@@ -71,7 +72,7 @@ Click the **Use** button (right-click for Windows 10 OS), to open up the Command
 - **Redstone** defines whether or not a command block requires redstone to activate. There are 2 options;
     - **Needs Redstone** will set the command block to require redstone activation source.
     - **Always Active** will set the command block to always activate with or without redstone.
-- **Execute on First Tick** is a boolean that is used for Command Blocks set to repeat. If set **True**, the command will activate as soon as it is activated. If set **False**, the command will activate on a delay.
+- **Execute on First Tick** is a boolean (True/False statement) that is used for Command Blocks set to repeat. If set **True**, the command will activate as soon as it is activated. If set **False**, the command will activate on a delay.
 - **Delay in Ticks** is a value that defines how long a command waits to execute after the command block has been activated.
 
 ## Designing a Gameplay Loop
@@ -79,7 +80,7 @@ Click the **Use** button (right-click for Windows 10 OS), to open up the Command
 A use case of command blocks is allowing Creators to create gameplay loops within minecraft to enrich the player's experience. A simple gameplay loop would be rewarding a player for completing an action. If the gameplay loop was to give a player an emerald for placing a block of wool in a certain location, you can break down each step needed:
 
 1. Check to see if a wool block exists at a set location.
-1. Check to see if the player has already received the reward by checking their score.
+1. Once a player places a block in the desired location, check to see if the player has already received the reward by checking their score.
 1. If the player hasn't receive the reward, give the player an emerald.
 1. If the player received a emerald, then give them a point.
 
@@ -87,7 +88,7 @@ A use case of command blocks is allowing Creators to create gameplay loops withi
 
 The Scoreboard is a gameplay system that exists within Minecraft that can keep track of players, objectives, and score values. The scoreboard enables Creators a wide use of options to create unique gameplay styles. In this tutorial, you will have a single objective and value in order to track when a player has completed the task.
 
-1. In Minecraft, Open up the chat dialogue box (T on Windows 10 OS)
+1. In Minecraft, Open up the chat dialogue box (T or Enter on Windows 10 OS)
 1. Enter the following command: `/scoreboard objectives add wool_placed dummy`.
     1. The command is adding a brand new objective called Wool_Placed. Dummy fills the argument since scores can only be adjusted via commands.
 1. Enter the following command: `/scoreboard players set @player wool_placed 0`.
@@ -98,13 +99,13 @@ Now that we have looked at the settings of a command block, let’s set up the f
 
 1. Place a command block on the ground in a location near your player character.
 1. Right-click to open up the Command Block GUI.
-1  Set the **Block Type** to **Repeat**.
+1.  Set the **Block Type** to **Repeat**.
 1. Set the **Condition** to **Unconditional**.
 1. Set the **Redstone** to **Always Active**.
 
 #### The /testforblock Command
 
-The /testforblock command will look for a specific block at a specific point that the creator can specify. In the example of `/testforblock 0,0,0 wool`, you can see that the command is looking for any type of wool block located at 0, 0, 0.
+The /testforblock command will look for a specific block at a specific point that the creator can specify. In the example of `/testforblock 0 0 0 wool`, you can see that the command is looking for any type of wool block located at 0, 0, 0.
 
 `/testforblock <position: x y z> <tileName:block> [dataValue: int]`
 
@@ -121,7 +122,7 @@ If you are following this tutorial, you will be in a flat world. The flat world 
 
 ## Command Block Chains
 
-Command Blocks have multiple block types it can be set to. A Command Block set to a Chain type means that it will execute its' command if the previous command block executed. You can connect multiple types of Command Blocks and chain them together to execute a series of logic. The next step in the gameplay loop is to check if the player is able to receive a reward.
+Command Blocks have multiple types it can be set to. A Command Block set to a Chain type means that it will execute its' command if the previous command block executed. You can connect multiple types of Command Blocks and chain them together to execute a series of logic. The next step in the gameplay loop is to check if the player is able to receive a reward.
 
 1. Place another command block next to the existing block. Make sure that the new block is placed in front of the direction that the arrow is pointing. <add image to show full chain>
 1. Click the **Use** button on the newly created block to open the Command Block GUI.
@@ -134,7 +135,7 @@ Since the second block is set to Conditional, the block will only execute if the
 
  Let’s add a third block to set a command to reward the player for placing a block in the right spot.
 
-1. Place another command block next to the existing block. Make sure that the new block is placed in front of the direction that the arrow is pointing. <add image to show full chain>
+1. Place another command block next to the existing block. Make sure that the new block is placed in front of the direction that the arrow is pointing.
 1. Click the **Use** button on the newly created block to open the Command Block GUI.
 1. Set the **Block Type** to **Chain**.
 1. Set the **Condition** to **Conditional**.
@@ -143,7 +144,7 @@ Since the second block is set to Conditional, the block will only execute if the
 
 Now that the player has received the emerald, the last step is to then close the loop by giving the player a score value of 1. This will then set the 2nd block in the chain to false.
 
-1. Place another command block next to the existing block. Make sure that the new block is placed in front of the direction that the arrow is pointing. <add image to show full chain>
+1. Place another command block next to the existing block. Make sure that the new block is placed in front of the direction that the arrow is pointing.
 1. Click the **Use** button on the newly created block to open the Command Block GUI.
 1. Set the **Block Type** to **Chain**.
 1. Set the **Condition** to **Conditional**.
@@ -152,6 +153,6 @@ Now that the player has received the emerald, the last step is to then close the
 
 ### Testing the loop
 
-If everything has been set up correctly, you can now place a wool block on location `0, 4, 0` and you will receive an emerald in your player inventory.
+If everything has been set up correctly, you can now place a wool block on location `0, 4, 0` and you will receive a single emerald in your player inventory.
 
 <insert gif of action>

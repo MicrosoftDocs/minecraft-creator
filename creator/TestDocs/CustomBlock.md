@@ -104,7 +104,7 @@ If you are using the one provided:
 
 If you are creating a custom one:
 
-1. Check that the **Width** and **Height** to are set **64** each.
+1. Check that the **Width** and **Height** to are set **16** each.
 1. Save the file as `canvasBlock.png` in the `HelloWorldRP/textures/blocks` folder.
 
 ## Setting up the Behavior JSON file
@@ -168,8 +168,8 @@ The identifier that was used in the resource pack is defined here. The block is 
     - **`flame_odds`** is how likely the block is to catch fire.
     - **`burn_odds`** is how likely the block is to be destroyed when on fire.
 - **`map_color`** is the color, in hex format, that is used by the Map in order to symbolize the block.
-- **`block_light_absorption`** is how light the block absorbs.
-- **`block_light_emission`** is how much light the block produces.
+- **`block_light_absorption`** is how much light the block absorbs. Value uses a range of `0` to `1` as an input.
+- **`block_light_emission`** is how much light the block produces. Value uses a range of `0` to `1` as an input.
 
 ## Setting the block name with .lang
 
@@ -185,7 +185,7 @@ Now that both of the packs are set up and completed, the last thing is to add th
 
 ### .lang
 
-.lang is a file type that minecraft uses in order to write code within Add-ons. .lang files are also a convenient way to organize all custom text within an addon in a single location and also use for localizing Creator content.
+.lang is a file type that Minecraft uses to provide in-game text for different languages for concepts within Add-ons. .lang files are also a convenient way to organize all custom text within an addon in a single location and also use for localizing Creator content.
 
 1. Copy and Paste the following in **en_US.lang**:
 `tile.HelloWorldRP:canvasBlock.name=Canvas Block`
