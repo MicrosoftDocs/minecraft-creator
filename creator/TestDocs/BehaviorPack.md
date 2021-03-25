@@ -27,7 +27,9 @@ It’s recommended that the following be completed before beginning this tutoria
 
 ## Building the Behavior Pack
 
-A Behavior pack is a type of pack that allows creators to add, remove or alter behaviors of entities within Minecraft.  
+A Behavior pack is a type of pack that allows creators to add, remove or alter behaviors of entities within Minecraft. Behaviors are the gameplay characteristics used by entities in Minecraft. Behaviors are what drive each entity to perform certain actions, such as a flock of chickens following a feather or whether a zombie will attack a player or another entity.
+
+Behaviors give Creators the ability to change the way entities can act in the world. In this section, you will set up a folder for a new Behavior Pack called **HelloWorldBP**.
 
 1. Open up your game location folder **com.mojang**.
 1. Double-click on the folder **behavior_pack**.
