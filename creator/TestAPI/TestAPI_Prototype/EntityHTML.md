@@ -1,4 +1,5 @@
-<h1>ENTITIES DOCUMENTATION </br>Version: 1.16.100.1</h1>
+# Client Entity Documentation
+
 <h2><p id="Index">Index</p></h2>
 <table border="1">
 <tr> <th><a href="#Client Entity Documentation">Client Entity Documentation</a></th> </tr>
