@@ -1,11 +1,11 @@
 ### YamlMime:Hub
 
 title: Minecraft Creator Platform documentation # < 60 chars
-summary: Minecraft Creator Platform is the first step on our journey towards bringing even greater levels of customisation to Minecraft. # < 160 chars
+summary: Minecraft Creator Platform is the first step on our journey towards bringing even greater levels of customization  to Minecraft. # < 160 chars
 
 metadata:
   title: Minecraft Creator Platform documentation # Required; page title shown in search results < 60 chars
-  description: Minecraft Creator Platform is the first step on our journey towards bringing even greater levels of customisation to Minecraft. # < 160 chars
+  description: Minecraft Creator Platform is the first step on our journey towards bringing even greater levels of customization p;[[[[[[[[[[[[[[[[[[[i9]]]]]]]]]]]]]]]]]]] to Minecraft. # < 160 chars
   service: service
   ms.service: service # Required; service per approved list. 
   ms.topic: hub-page # Required
@@ -32,6 +32,16 @@ productDirectory:
   title: Building up the Foundation
   summary: If you are new to Minecraft development or looking to brush up on some knowledge, we have created a few getting started tutorials to help you take your first steps as a Creator!
   items:
+    # card
+    - title: What's New?
+      imageSrc: images/minecraftBlock.png
+      links:
+        - url:  TestDocs/GameTestGettingStarted.md
+          text: Getting Started with GameTest
+        - url: TestDocs/GameTestBuildYourFirstGameTest.md
+          text: Build your first GameTest
+        - url: TestAPI/gametest.md
+          text: GameTest API
   # card
     - title: Add-on Packs
       #imageSrc needs to in a square ratio with no whitespace
@@ -47,8 +57,6 @@ productDirectory:
       links:
         - url: TestDocs/CommandBlocks.md
           text: Introduction to Command Blocks
-        - url: TestDocs/GameTestGettingStarted.md
-          text: Scripting - Getting Started with GameTest
   # card
     - title: Adding New Content
       imageSrc: images/minecraftBlock.png

@@ -26,6 +26,8 @@
         href: TestDocs/CustomBlock.md
     - name: Minecraft Bedrock API 
       items:
+      - name: Entity
+        href: TestAPI/entity.md
       - name: GameTest
         items:
         - name: GameTest
