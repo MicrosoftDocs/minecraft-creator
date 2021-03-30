@@ -289,7 +289,7 @@ Components
 **Biome Tags**
 
 | Tag |
-|:-----------:|
+|:-----------|
 | animal |
 | beach |
 | birch |
@@ -331,7 +331,7 @@ Components
 **Tagged Biomes**
 
 | Biome| Tags |
-|:-----------:|:-----------:|
+|:-----------|-----------:|
 | Plains|  |
 | Desert|  |
 | Mountain|  |
@@ -9626,7 +9626,7 @@ Tests the current weather, at the actor's position, against a provided weather v
 </tr>
 </table>
 
-## minecraft:behavior.find_underwater_treasure
+### minecraft:behavior.find_underwater_treasure
 
 | Type| Name| Default Value| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
@@ -10218,15 +10218,15 @@ Defines the way an entity can get into the 'love' state.
 <td style="border-style:solid; border-width:2; padding:8px"></td>
 <td style="border-style:solid; border-width:2; padding:8px">The list of nearby block requirements to get the entity into the 'love' state.</br><h5><p id="blocks">blocks</p></h5>
 
-The block types required nearby for the entity to breed.</br><a href="#Index">Back to top</a><br><br>
+The block types required nearby for the entity to breed.
 
 <h5><p id="count">count</p></h5>
 
-The number of the required block types nearby for the entity to breed.</br><a href="#Index">Back to top</a><br><br>
+The number of the required block types nearby for the entity to breed.
 
 <h5><p id="radius">radius</p></h5>
 
-How many blocks radius from the mob's center to search in for the required blocks. Bounded between 0 and 16.</br><a href="#Index">Back to top</a><br><br>
+How many blocks radius from the mob's center to search in for the required blocks. Bounded between 0 and 16.
 
 </td>
 </tr>
@@ -10316,7 +10316,7 @@ Enables an entity to float on the specified liquid blocks.
 
 Specifies if/how a mob burns in daylight.
 
-## minecraft:celebrate_hunt
+### minecraft:celebrate_hunt
 
 Specifies hunt celebration behaviour.
 
@@ -10341,19 +10341,19 @@ Defines the Conditional Spatial Update Bandwidth Optimizations of this entity.
 <td style="border-style:solid; border-width:2; padding:8px"></td>
 <td style="border-style:solid; border-width:2; padding:8px">The object containing the conditional bandwidth optimization values.</br><h5><p id="conditional_values">conditional_values</p></h5>
 
-Conditions that must be met for these optimization values to be used.</br><a href="#Index">Back to top</a><br><br>
+Conditions that must be met for these optimization values to be used.
 
 <h5><p id="max_dropped_ticks">max_dropped_ticks</p></h5>
 
-In relation to the optimization value, determines the maximum ticks spatial update packets can be not sent.</br><a href="#Index">Back to top</a><br><br>
+In relation to the optimization value, determines the maximum ticks spatial update packets can be not sent.
 
 <h5><p id="max_optimized_distance">max_optimized_distance</p></h5>
 
-The maximum distance considered during bandwidth optimizations. Any value below the max is interpolated to find optimization, and any value greater than or equal to this max results in max optimization.</br><a href="#Index">Back to top</a><br><br>
+The maximum distance considered during bandwidth optimizations. Any value below the max is interpolated to find optimization, and any value greater than or equal to this max results in max optimization.
 
 <h5><p id="use_motion_prediction_hints">use_motion_prediction_hints</p></h5>
 
-When set to true, smaller motion packets will be sent during drop packet intervals, resulting in the same amount of packets being sent as without optimizations but with much less data being sent. This should be used when actors are travelling very quickly or teleporting to prevent visual oddities.</br><a href="#Index">Back to top</a><br><br>
+When set to true, smaller motion packets will be sent during drop packet intervals, resulting in the same amount of packets being sent as without optimizations but with much less data being sent. This should be used when actors are travelling very quickly or teleporting to prevent visual oddities.
 
 </td>
 </tr>
@@ -10363,15 +10363,15 @@ When set to true, smaller motion packets will be sent during drop packet interva
 <td style="border-style:solid; border-width:2; padding:8px"></td>
 <td style="border-style:solid; border-width:2; padding:8px">The object containing the default bandwidth optimization values.</br><h5><p id="max_dropped_ticks">max_dropped_ticks</p></h5>
 
-In relation to the optimization value, determines the maximum ticks spatial update packets can be not sent.</br><a href="#Index">Back to top</a><br><br>
+In relation to the optimization value, determines the maximum ticks spatial update packets can be not sent.
 
 <h5><p id="max_optimized_distance">max_optimized_distance</p></h5>
 
-The maximum distance considered during bandwidth optimizations. Any value below the max is interpolated to find optimization, and any value greater than or equal to this max results in max optimization.</br><a href="#Index">Back to top</a><br><br>
+The maximum distance considered during bandwidth optimizations. Any value below the max is interpolated to find optimization, and any value greater than or equal to this max results in max optimization.
 
 <h5><p id="use_motion_prediction_hints">use_motion_prediction_hints</p></h5>
 
-When set to true, smaller motion packets will be sent during drop packet intervals, resulting in the same amount of packets being sent as without optimizations but with much less data being sent. This should be used when actors are travelling very quickly or teleporting to prevent visual oddities.</br><a href="#Index">Back to top</a><br><br>
+When set to true, smaller motion packets will be sent during drop packet intervals, resulting in the same amount of packets being sent as without optimizations but with much less data being sent. This should be used when actors are travelling very quickly or teleporting to prevent visual oddities.
 
 </td>
 </tr>
@@ -10844,7 +10844,7 @@ Defines a set of conditions under which an entity should take damage.
 <td style="border-style:solid; border-width:2; padding:8px"></td>
 <td style="border-style:solid; border-width:2; padding:8px">damage_conditions</br><h5><p id="Minecraft Filter">Minecraft Filter</p></h5>
 
-filters</br><a href="#Index">Back to top</a><br><br>
+filters
 
 <h5><p id="String">String</p></h5>
 
@@ -10943,15 +10943,15 @@ Defines interactions with this entity.
 <td style="border-style:solid; border-width:2; padding:8px"></td>
 <td style="border-style:solid; border-width:2; padding:8px">Particle effect that will be triggered at the start of the interaction.</br><h5><p id="particle_offset_towards_interactor">particle_offset_towards_interactor</p></h5>
 
-Whether or not the particle will appear closer to who performed the interaction.</br><a href="#Index">Back to top</a><br><br>
+Whether or not the particle will appear closer to who performed the interaction.
 
 <h5><p id="particle_type">particle_type</p></h5>
 
-The type of particle that will be spawned.</br><a href="#Index">Back to top</a><br><br>
+The type of particle that will be spawned.
 
 <h5><p id="particle_y_offset">particle_y_offset</p></h5>
 
-Will offset the particle this amount in the y direction.</br><a href="#Index">Back to top</a><br><br>
+Will offset the particle this amount in the y direction.
 
 </td>
 </tr>
@@ -11639,47 +11639,47 @@ Defines a list of items the mob wants to share or pick up. Each item must have t
 <td style="border-style:solid; border-width:2; padding:8px"></td>
 <td style="border-style:solid; border-width:2; padding:8px">List of items that the entity wants to share.</br><h5><p id="admire">admire</p></h5>
 
-Mob will admire the item after picking up by looking at it. For this to happen the mob needs to have an Admire component and an Admire goal.</br><a href="#Index">Back to top</a><br><br>
+Mob will admire the item after picking up by looking at it. For this to happen the mob needs to have an Admire component and an Admire goal.
 
 <h5><p id="barter">barter</p></h5>
 
-Mob will barter for the item after picking it up. For this to work the mob needs to have a Barter component and a Barter goal.</br><a href="#Index">Back to top</a><br><br>
+Mob will barter for the item after picking it up. For this to work the mob needs to have a Barter component and a Barter goal.
 
 <h5><p id="consume_item">consume_item</p></h5>
 
-Determines whether the mob will consume the item or not.</br><a href="#Index">Back to top</a><br><br>
+Determines whether the mob will consume the item or not.
 
 <h5><p id="craft_into">craft_into</p></h5>
 
-Defines the item this entity wants to craft with the item defined above. Should be an item name.</br><a href="#Index">Back to top</a><br><br>
+Defines the item this entity wants to craft with the item defined above. Should be an item name.
 
 <h5><p id="item">item</p></h5>
 
-The name of the item. Aux value can be specified, for instance 'minecraft:skull:1'.</br><a href="#Index">Back to top</a><br><br>
+The name of the item. Aux value can be specified, for instance 'minecraft:skull:1'.
 
 <h5><p id="max_amount">max_amount</p></h5>
 
-Maximum number of this item the mob will hold.</br><a href="#Index">Back to top</a><br><br>
+Maximum number of this item the mob will hold.
 
 <h5><p id="pickup_limit">pickup_limit</p></h5>
 
-Maximum number of this item the mob will pick up during a single goal tick.</br><a href="#Index">Back to top</a><br><br>
+Maximum number of this item the mob will pick up during a single goal tick.
 
 <h5><p id="priority">priority</p></h5>
 
-Prioritizes which items the entity prefers. 0 is the highest priority.</br><a href="#Index">Back to top</a><br><br>
+Prioritizes which items the entity prefers. 0 is the highest priority.
 
 <h5><p id="stored_in_inventory">stored_in_inventory</p></h5>
 
-Determines whether the mob will try to put the item in its inventory if it has the inventory component and if it can't be equipped.</br><a href="#Index">Back to top</a><br><br>
+Determines whether the mob will try to put the item in its inventory if it has the inventory component and if it can't be equipped.
 
 <h5><p id="surplus_amount">surplus_amount</p></h5>
 
-Number of this item considered extra that the entity wants to share.</br><a href="#Index">Back to top</a><br><br>
+Number of this item considered extra that the entity wants to share.
 
 <h5><p id="want_amount">want_amount</p></h5>
 
-Number of this item this entity wants to have.</br><a href="#Index">Back to top</a><br><br>
+Number of this item this entity wants to have.
 
 </td>
 </tr>
@@ -12097,7 +12097,7 @@ Sets the mapping of internal animation controller references to actual animation
 ### AI Goals
 
 | JSON Name| ID |
-|:-----------:|:-----------:|
+|:-----------|:-----------|
 | minecraft.behavior.hide| 233394190 |
 | minecraft.behavior.move_to_poi| 1721669938 |
 | minecraft.behavior.scared| 1812936510 |
@@ -12215,7 +12215,7 @@ Sets the mapping of internal animation controller references to actual animation
 ### Attributes
 
 | JSON Name| ID |
-|:-----------:|:-----------:|
+|:-----------|:-----------|
 | minecraft:attack| 1651346034 |
 | minecraft:spell_effects| 523264365 |
 | minecraft:strength| 648564399 |
@@ -12223,7 +12223,7 @@ Sets the mapping of internal animation controller references to actual animation
 ### Components
 
 | JSON Name| ID |
-|:-----------:|:-----------:|
+|:-----------|-----------:|
 | | -2078137563 |
 | minecraft:addrider| -1014528905 |
 | minecraft:admire_item| -1838165406 |
@@ -12327,14 +12327,14 @@ Sets the mapping of internal animation controller references to actual animation
 ### Entity Description Properties
 
 | JSON Name| ID |
-|:-----------:|:-----------:|
+|:-----------|:-----------|
 | animations| 1232311658 |
 | scripts| -76244517 |
 
 ### Properties
 
 | JSON Name| ID |
-|:-----------:|:-----------:|
+|:-----------|:-----------|
 | minecraft:ambient_sound_interval| -1314051310 |
 | minecraft:can_climb| -550459594 |
 | minecraft:can_fly| 985724318 |
@@ -12644,7 +12644,7 @@ Only usable by the Ender Dragon. Adds a trigger to call on this entity's death.
 | Minecraft Filter| filters| | The list of conditions for this trigger to execute. |
 | String| target| self| The target of the event. |
 
-## minecraft:on_friendly_anger
+### minecraft:on_friendly_anger
 
 Adds a trigger that will run when a nearby entity of the same type as this entity becomes Angry.
 
