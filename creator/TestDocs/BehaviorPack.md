@@ -36,6 +36,7 @@ Behaviors give Creators the ability to change the way entities can act in the wo
 1. Right-click in the File Explorer window and select **New** and then **Folder** to create a new folder.
 1. Name the new folder **HelloWorldBP**.
 1. Double-click on **HelloWorldBP** to open the folder.
+    :::image type="content" source="Media/BehaviorPack/helloworldBP.png" alt-text="Image of Hello World BP folder located in the behavior pack folder":::
 
 ### The Manifest File
 
@@ -44,6 +45,7 @@ In order to load a behavior pack into Minecraft, a manifest file will need to be
 1. Right-click in the Explorer window and select **New**, then select **Text Document**.
 1. Set the name to **manifest.json**.
     1. You will need to change the file extension from .txt to .json. If your Explorer window does not show file extensions, you can enable File Name Extensions under the View tab.
+    :::image type="content" source="Media/BehaviorPack/manifest_fileBP.png" alt-text="Image of the manifest.json file located within the HelloWorldBP folder":::
 1. Double-click on **manifest.json** to open it in a Text Editor.
 1. Copy/Paste the following text into your text editor.
 
@@ -272,8 +274,6 @@ Now we will add `nearest_attackable_target` to the cow.json in order to allow th
 1. Copy the sample located above for `minecraft:behavior.nearest_attackable_target.`
 1. At the bottom of the **Component** header list, right below `Minecraft:pushable`, paste the snippet.
 
-<slap an image here> 
-
 ### Minecraft:behavior.meleeattack
 
 Once the cow is able to located a target, the next step is to allow an attack using the `behavior.meleeattack` component.
@@ -309,7 +309,6 @@ In the snippet above, you can see that the component has a single argument. `"da
 1. At the bottom of the **Component** header list, right below `Minecraft:behavior.melee_attack`, paste the snippet.
 1. Add a comma to the end of the `minecraft:behavior.melee_attack` snippet in order to prevent any JSON errors.
 1. Save the cow.json file.
-<insert image here> 
 
 ### Testing the Pack
 
