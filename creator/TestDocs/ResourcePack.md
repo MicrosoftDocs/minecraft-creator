@@ -105,8 +105,8 @@ Now that the folder structure is created, you can now place your custom textures
 
 ![A PNG file that can be downloaded and used in place of a custom texture made in a photo editor](Media/ResourcePack/dirt.png)
 
-1. Open up an image editor such as Paint, GIMP or Photoshop.
-    1. In this tutorial, MS Paint will be used.
+1. Open up an image editor such as Paint3D, MS Paint or Photoshop.
+    1. In this tutorial, Paint 3D will be used.
 1. In the **Toolbar**, select **File**, then select **Properties**.
 1. Set the **Width** and **Height** to **16** each.
 
@@ -115,12 +115,6 @@ You can now design a pattern or any artwork in the editor. In this example, a si
 1. When done with your texture, select **File** and then select **Save As a PNG**.
 1. Navigate to the **blocks** folder.
 1. Save the file as **dirt.png**.
-
-> [!CAUTION]
-> MS Paint is a free software package included with Windows 10 and is great for creating simple textures. However, MS Paint is limited when it comes to building more complex textures such as textures using transparency.
->
-> **GIMP** and **Adobe Photoshop** are two alternative image editing solutions available to use for texturing.
-
 
 ### Testing the Pack
 
