@@ -43,7 +43,7 @@ productDirectory:
         - url: TestAPI/gametest.md
           text: GameTest API
   # card
-    - title: Add-on Packs
+    - title: Add-on Pack Tutorials
       #imageSrc needs to in a square ratio with no whitespace
       imageSrc: images/minecraftBlock.png
       links:
