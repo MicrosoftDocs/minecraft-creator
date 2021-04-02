@@ -1,7 +1,7 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Getting Started with GameTest
+title: Building your first GameTest
 ms.prod: Gaming
 ---
 
