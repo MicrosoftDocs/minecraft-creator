@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Introduction To Resource Pack
+title: Introduction to Resource Packs
 ms.prod: Gaming
 ---
 
-# Resource Pack
+# Introduction to Resource Packs
 
 Before building your first Add-On, you will need to create a Pack in order to add any custom content in Minecraft Bedrock Edition. There are two types of Packs that a creator can make: Resource and Behavior Packs. In this tutorial, you will learn about Resource Packs.
 

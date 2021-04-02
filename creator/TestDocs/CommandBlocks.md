@@ -1,10 +1,10 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Introduction To Command Blocks
+title: Getting Started with Command Blocks
 ms.prod: Gaming
 ---
-# Introduction to Command Blocks
+# Getting Started with Command Blocks
 
 Command Blocks are a specialized type of block within a Minecraft world that allows the use of console commands in game. Command Blocks are able to extend and build completely new experiences for players to experience.
 
@@ -47,7 +47,7 @@ You will see a single command block that has been added to your inventory.
 
 ## How to use Command Blocks
 
-Command Blocks have a wide range of uses within Minecraft, from handling entity spawning locations, rewarding a player for an action, or used to keep score in a multiplayer experience. Command Blocks also have a lot of customization settings to fit a Creators’ needs.
+Command Blocks have a wide range of uses within Minecraft, from handling entity spawning locations, rewarding a player for an action, or used to keep score in a multiplayer experience. Command Blocks also have a lot of customization settings to fit your needs.
 
 When placing a block, you may notice arrows on the side.
 
@@ -77,7 +77,7 @@ Click the **Use** button (right-click for Windows 10 OS), to open up the Command
 
 ## Designing a Gameplay Loop
 
-A use case of command blocks is allowing Creators to create gameplay loops within minecraft to enrich the player's experience. A simple gameplay loop would be rewarding a player for completing an action. If the gameplay loop was to give a player an emerald for placing a block of wool in a certain location, you can break down each step needed:
+A use case of command blocks is allowing creators to create gameplay loops within minecraft to enrich the player's experience. A simple gameplay loop would be rewarding a player for completing an action. If the gameplay loop was to give a player an emerald for placing a block of wool in a certain location, you can break down each step needed:
 
 1. Check to see if a wool block exists at a set location.
 1. Once a player places a block in the desired location, check to see if the player has already received the reward by checking their score.
@@ -86,7 +86,7 @@ A use case of command blocks is allowing Creators to create gameplay loops withi
 
 ### Scoreboard
 
-The Scoreboard is a gameplay system that exists within Minecraft that can keep track of players, objectives, and score values. The scoreboard enables Creators a wide use of options to create unique gameplay styles. In this tutorial, you will have a single objective and value in order to track when a player has completed the task.
+The Scoreboard is a gameplay system that exists within Minecraft that can keep track of players, objectives, and score values. The scoreboard enables c a wide use of options to create unique gameplay styles. In this tutorial, you will have a single objective and value in order to track when a player has completed the task.
 
 1. In Minecraft, Open up the chat dialogue box (T or Enter on Windows 10 OS)
 1. Enter the following command: `/scoreboard objectives add wool_placed dummy`.

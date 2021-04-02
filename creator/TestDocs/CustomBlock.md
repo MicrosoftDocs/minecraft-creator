@@ -7,7 +7,7 @@ ms.prod: Gaming
 
 # How to add a Custom Block
 
-Minecraft's Behavior and Resource Packs allow for Creators to create custom content for their audience. Custom Blocks are a great way for Creators to start adding in interactive content that Players can interact with. Through this tutorial, you will build a new block that will be called **CanvasBlock** that you can set up with different textures and can be placed by a Player.
+Minecraft's Behavior and Resource Packs allow for you to create custom content for their audience. Custom Blocks are a great way for creators to start adding in interactive content that Players can interact with. Through this tutorial, you will build a new block that will be called **CanvasBlock** that you can set up with different textures and can be placed by a Player.
 
 In this tutorial you will learn the following:
 
@@ -185,7 +185,7 @@ Now that both of the packs are set up and completed, the last thing is to add th
 
 ### .lang
 
-.lang is a file type that Minecraft uses to provide in-game text for different languages for concepts within Add-ons. .lang files are also a convenient way to organize all custom text within an addon in a single location and also use for localizing Creator content.
+.lang is a file type that Minecraft uses to provide in-game text for different languages for concepts within Add-ons. .lang files are also a convenient way to organize all custom text within an addon in a single location and also use for localizing creator content.
 
 1. Copy and Paste the following in **en_US.lang**:
 `tile.HelloWorldRP:canvasBlock.name=Canvas Block`

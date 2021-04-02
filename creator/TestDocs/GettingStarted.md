@@ -42,14 +42,13 @@ There are 3 folders called **behavior_packs**, **resource_packs**, and **skin_pa
 
 ### Development Packs
 
-Along with the 3 pack folders, there are also Development version of those folders. Development packs are packs that are updated every time Minecraft is launched, allowing Creators to quickly load and test changes they have made to their packs.
+Along with the 3 pack folders, there are also Development version of those folders. Development packs are packs that are updated every time Minecraft is launched, allowing you to quickly load and test changes they have made to their packs.
 
 ### minecraftWorlds
 
 **minecraftWorlds** contains each world that has been generated within the current build of Minecraft. Each folder will also contain resource and behavior pack folders to contain any packs that may be in use within the world.
 > [!TIP]
-> It's recommended that when installing a new build of Minecraft, this folder should be backed up in order to prevent any potential loss of Minecraft Worlds that a Creator may have.
-
+> It's recommended that when installing a new build of Minecraft, this folder should be backed up in order to prevent any potential loss of Minecraft Worlds that you may have.
 
 ## Visual Studio Code
 
