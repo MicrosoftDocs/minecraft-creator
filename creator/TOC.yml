@@ -8,9 +8,9 @@
           items:
             - name: Getting Started
               href: TestDocs/GettingStarted.md
-            - name: Getting Started with Resource Packs
+            - name: Introduction to Resource Packs
               href: TestDocs/ResourcePack.md
-            - name: Getting Started with Behavior Packs
+            - name: Introduction to Behavior Packs
               href: TestDocs/BehaviorPack.md
             - name: Adding a Custom Block
               href: TestDocs/CustomBlock.md

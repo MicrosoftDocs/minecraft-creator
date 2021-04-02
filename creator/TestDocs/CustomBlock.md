@@ -23,6 +23,7 @@ It’s recommended that the following be completed before beginning this tutoria
 - [Getting Started with Add-on Development](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/gettingstarted?branch=main)
 - [Introduction To Resource Packs](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/resourcepack?branch=main)
 - [Introduction To Behavior Packs](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/behaviorpack?branch=main)
+- A Minecraft World with `Holiday Creator Features` enabled.
 
 ## Setting up the Resource JSON File
 
