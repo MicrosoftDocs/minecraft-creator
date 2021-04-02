@@ -24,6 +24,7 @@
       items:
       - name: Adding a Custom Block
         href: TestDocs/CustomBlock.md
+<<<<<<< HEAD
     - name: Minecraft Bedrock API 
       items:
       - name: Entity
@@ -32,4 +33,8 @@
         items:
         - name: GameTest
           href: TestAPI/gametest.md
+=======
+    - name: Bedrock API 
+      href: ScriptAPI/TOC.yml
+>>>>>>> f6a936c27e5b5e2baa93d30dd4dce33f7384a79b
   
