@@ -265,7 +265,7 @@ To finish the sample, you will want to use a structure block to define the test.
 
 To do this, open up Minecraft and start a new world in Creative mode to build your environment.  This is a simple glass pen that was built for our GameTest, made from glass blocks:
 
-![Image of a glass structure within Minecraft.](Media/GameTestBuildYourFirstGameTest/glasspen.png)
+![Glass structure within Minecraft](Media/GameTestBuildYourFirstGameTest/glasspen.png)
 
 Next, you will want to export this a structure.  Run the following command in Minecraft:
 
@@ -275,20 +275,20 @@ give @s structure_block
 
 This will give you a structure block to work with.  Place a structure block next to your creation, and use the Structure Block popup to frame your creation.  Export this as `mediumglass.mcstructure`.
 
-![Image of a glass structure within Minecraft.](Media/GameTestBuildYourFirstGameTest/structureblock.png)
+![Structure Block interface in Minecraft](Media/GameTestBuildYourFirstGameTest/structureblock.png)
 
 In your behavior pack, go to your structures folder and create a subfolder called startertests.  
 
 Place this mediumglass.mcstructure file within a subfolder called startertests. Make sure that you match the casing you specified in your JavaScript code, so make it all lower-case. Copy the mediumglass.mcstructure file to that folder. Your folder should look like this:
 
-![Image of a glass structure within Minecraft.](Media/GameTestBuildYourFirstGameTest/startertestfolder.png)
+![Default starter folder layout](Media/GameTestBuildYourFirstGameTest/startertestfolder.png)
 
 
 ## Running your tests within the game
 
 Once you have completed your GameTest behavior pack, you'll want to try it out within Minecraft. To do this, create a new Minecraft world. For this new world, you'll want to start in Creative mode and turn the GameTest Framework experiment on. You'll want to add the GameTeset Behavior Packs in your world.  If everything is correct, you should see the Start Hello World GameTest behavior pack when you create your world:
 
-![Image of a glass structure within Minecraft.](Media/GameTestBuildYourFirstGameTest/behaviorpack.png)
+![Minecraft Behavior Pack with GameTest](Media/GameTestBuildYourFirstGameTest/behaviorpack.png)
 
 Click on the Starter Hello World behavior packs tile to activate it.
 
