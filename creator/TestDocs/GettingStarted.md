@@ -1,54 +1,61 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Getting Started With Minecraft Add-ons
+title: Getting Started With Minecraft Add-Ons
 ms.prod: Gaming
 ---
 
-# Getting Started with Add-on Development for Bedrock Edition
+# Getting Started with Add-On Development for Bedrock Edition
 
-Add-Ons are the first step on our journey towards bringing even greater levels of customization to  Minecraft Bedrock Edition. Add-ons allow players to transform the look of their worlds and even change the behavior of mobs. For example, you can change the blast radius of a creeper, or the texture it’s wearing.
+Add-Ons are the first step on our journey towards bringing even greater levels of customization to  Minecraft Bedrock Edition. Add-Ons allow players to transform the look of their worlds and even change the behavior of mobs. For example, you can change the blast radius of a creeper or the texture it’s wearing.
 
 In this tutorial, you will learn the following.
 
 >[!div class="checklist"]
-> - How Minecraft's file structure is laid out.
-> - What software is used for editing JSON files.
-> - What are some of the plugins available to help with Add-on development.
+> - The File Structure used for Minecraft
+> - Software is used for editing JSON files.
+> - Extensions that are available to help with Add-On development.
 
 ## com.mojang
 
 When Minecraft is installed to your computer, there is a folder directory called **com.mojang** that is generated in the AppData folder. To access this folder, you can use the following solution to locate within Windows 10 OS.
 
-In order to locate the **com.mojang** folder in Windows, You will need to have **Hidden Folders** set to **true**.
+In order to locate the **com.mojang** folder in Windows, You will need to have **Hidden items** set to **true** by selecting the **Checkbox** as shown below.
 
-:::image type="content" source="Media/GettingStarted/viewHiddenFolders.png" alt-text="Image of Windows 10 File Explorer window's view options. Here the Hidden Folder item is checked to indicate that its set to true":::
+To enable **View Hidden Items**
 
-1. Press **Win+R** to open **Run**. Alternatively you can launch Run in the start menu.
+1. Open **File Explorer** from the taskbar.
+1. Select **View** > **Options** > **Change folder and search options**.
+1. Select the **View** tab and, in **Advanced settings**, select **Show hidden files, folders, and drives** and **OK**.
+
+:::image type="content" source="Media/GettingStarted/viewHiddenFolders.png" alt-text="Image of Windows 10 File Explorer window's view options. Here the Hidden items item is checked to indicate that its set to true":::
+
+### Locating com.mojang
+
+1. Press **Win+R** to open **Run**. Alternatively, you can launch **Run** in the start menu.
 1. Copy and paste the following: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
-1. Press Ok.
+1. Press **OK**.
 
-
-As shown in the image below in a Windows Explorer window, there are multiple directories within the com.mojang folder.
+As shown in the image below, there are multiple subdirectories located within the com.mojang folder.
 
 ![Image of com.mojang on a Windows Explorer environment.](Media/GettingStarted/comMojang.png)
 
 > [!TIP]
 > If you see more content in this folder than what is shown above, do not panic! This image shows a fresh install of Minecraft.
 
-### Behavior, Skin, And Resource Packs
+### Behavior, Skin, and Resource Packs
 
-There are 3 folders called **behavior_packs**, **resource_packs**, and **skin_packs**. These folders contain folders for each of their respective type of packs. Any custom content that will be added to Minecraft will come in the form of one of these 3 packs.
+There are 3 folders called **behavior_packs**, **resource_packs**, and **skin_packs**. Any custom content that will be added to Minecraft will come in the form of one of these 3 packs.
 
 ### Development Packs
 
-Along with the 3 pack folders, there are also Development version of those folders. Development packs are packs that are updated every time Minecraft is launched, allowing you to quickly load and test changes they have made to their packs.
+Along with the 3 pack folders, there are also Development versions of those folders. Development packs are packs that are updated every time Minecraft is launched, allowing you to quickly load and test changes they have made to their packs.
 
 ### minecraftWorlds
 
 **minecraftWorlds** contains each world that has been generated within the current build of Minecraft. Each folder will also contain resource and behavior pack folders to contain any packs that may be in use within the world.
 > [!TIP]
-> It's recommended that when installing a new build of Minecraft, this folder should be backed up in order to prevent any potential loss of Minecraft Worlds that you may have.
+> It's recommended that when installing a new build of Minecraft, you should save a copy of this folder to use as a back up in order to prevent any potential loss of Minecraft Worlds that you may have.
 
 ## Visual Studio Code
 
@@ -56,11 +63,11 @@ JSON is a popular text file format that is used by Minecraft Bedrock Edition in 
 
 ### Installing Visual Studio Code
 
-1. Follow the link here to [Install VSCode](https://code.visualstudio.com/Download)
+1. Follow the link here to [Install Visual Studio Code](https://code.visualstudio.com/Download)
 
 ## Visual Studio Code Extensions
 
-Visual Studio Code supports 3rd party extensions created by the VSCode developer community. Extensions are a great way to help write and understand Minecraft syntax when working on resource and behavior packs.
+Visual Studio Code supports extensions created by the Visual Studio Code developer community. Extensions are a great way to help write and understand Minecraft syntax when working on resource and behavior packs.
 
 ### Installing Extensions
 
@@ -69,7 +76,7 @@ Visual Studio Code supports 3rd party extensions created by the VSCode developer
 
 ### What's Next?
 
-Now that your developer environment is now set up, you can now get started with creating your first Add-On by learning more about Resource Packs.
+Now that your development environment is set up, you can start creating your first Add-On by learning more about Resource Packs.
 
 > [!div class="nextstepaction"]
 > [Resource Pack](ResourcePack.md)
