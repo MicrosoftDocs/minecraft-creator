@@ -26,9 +26,9 @@ To get started, you'll want to begin with understanding how a Behavior Pack work
 
 ## What's a GameTest?
 
-A GameTest is a miniature environment along with a set of starting conditions; such as a set of mobs or items.  After that environment plays out in the Minecraft world for a period of time, a GameTest has conditional code that evaluates whether expected conditions were met. If a test passes, you will receive confirmation that  everything is working as expected.  When a test fails, you can observe and diagnose why it may have failed.
+A GameTest is a miniature environment along with a set of starting conditions, such as a set of mobs or items.  After that environment plays out in the Minecraft world for a period of time, a GameTest has conditional code that evaluates whether expected conditions were met. If a test passes, you will receive confirmation that  everything is working as expected.  When a test fails, you can observe and diagnose why it may have failed.
 
-Let's examine a potential use case for a GameTest. Let's say that we want to validate that a minecart can make its way around curves and over a complex track when Redstone triggers it. We can build a GameTest for this case by building out a track, placing a minecart at the start of the track, and then power the track with a block of Redstone.  We can then validate that the minecart reaches the end of its track within a reasonable time-frame. Minecraft includes a growing set of GameTests that show various situations in Microsoft. However, you are able to build your own GameTests to validate the changes you introduce into the world.
+Let's examine a potential use case for a GameTest. Let's say that we want to validate that a minecart can make its way around curves and over a complex track when Redstone triggers it. We can build a GameTest for this case by building out a track, placing a minecart at the start of the track, and then power the track with a block of Redstone.  We can then validate that the minecart reaches the end of its track within a reasonable time-frame. Minecraft includes a growing set of GameTests that test various basic situations in the Minecraft world. However, you can build your own GameTests to validate any changes you introduce.
 
 ## Running tests within game
 
@@ -51,11 +51,18 @@ To run a specific test, use `/gametest run <classname>:<testName>`, like:
 
 `/gametest run minecarttests:turn`
 
+![Image of a command being run in Minecraft's command tool](Media/GameTestGettingStarted/runcommand.png)
+
+You will see the test run, and if the test completes successfully, you will see a "passed" completion message.
+
+![Image of a command successfully passing.](Media/GameTestGettingStarted/runcommandpassed.png)
+
+
 To run the default set of tests, use `/gametest runall`.
 
 ## What's Next?
 
-When building out your own tests, you will likely want to start your own Test Behavior Pack. Building sets of GameTests requires building out your GameTests via a behavior pack, and writing some simple JavaScript code.
+Building sets of GameTests requires building out your GameTests via a behavior pack, and writing some simple JavaScript code.  When building out your own tests, you will likely want to start a new Test Behavior Pack that is just focused on adding additional GameTests.
 
 > [!div class="nextstepaction"]
 >[Build your first GameTest](GameTestBuildYourFirstGameTest.md)

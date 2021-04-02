@@ -9,7 +9,7 @@ ms.prod: Gaming
 
 ## What's in a GameTest?
 
-A GameTest is a miniature environment along with a set of starting conditions; such as a set of mobs or items.  After that environment plays out in the Minecraft world for a little while, you can run conditional code to evaluate that your expectations were met.  
+A GameTest is a miniature environment along with a set of starting conditions, such as a set of mobs or items.  After that environment plays out in the Minecraft world for a little while, you can run conditional code to evaluate that your expectations were met.  
 
 Building sets of GameTests requires building out your GameTests via a Behavior Pack, and writing some simple JavaScript code.
 
@@ -27,9 +27,9 @@ It’s recommended that the following be completed before beginning this tutoria
 
 Within a Behavior Pack, every GameTest consists of a few elements:
 
-- **A structure** which defines the physical environment for the test as well as any starting entities.  Within Minecraft, you can create new structures by designing them out (typically in Creative Mode) and then placing a Structure Block. You can then use the Structure Block to save out the results to disk.
+- **A structure** which defines the physical environment for the test as well as any starting entities.  Within Minecraft, you can create new structures by designing them out (typically in Creative Mode) and then placing a Structure Block nearby. You can then use the Structure Block to save out the results to disk. This creates an .mcstructure file which you can add to your test.  
 
-This creates an .mcstructure file which you can add to your test.  When GameTests are run in Minecraft, your structure will be loaded and expanded into Minecraft. You should note that this Structure will be instantiated in a generally flat world, broader world, so you'll want to ensure that any mobs are penned into the structures you create.
+When GameTests are run in Minecraft, your structure will be loaded and expanded into Minecraft. You should note that this Structure will be created and run in a generally flat broader world, so you'll want to ensure that any mobs are penned into the structures you create.
 
 GameTests then use JavaScript code to define the test, including:
 
@@ -37,13 +37,13 @@ GameTests then use JavaScript code to define the test, including:
 
 - **Test setup** - additional code that sets up conditions within the Structure environment that has been created. Typically, this will be the creation of additional mobs.
 
-- **Test validation** are additional code snippets written in JavaScript that evaluates when a test is complete.
+- **Test validation** are additional code snippets written in JavaScript that evaluates whether a test has completed successfully or has failed.
 
 With this simple foundation, GameTests can be created with a few lines of JavaScript code plus a Minecraft structure.
 
 ## Start building your own tests
 
-To get started, you'll want to begin with your own Behavior Pack.  Create a new folder in the `development_behavior_packs` folder, and a subfolder within that called `startertests`.
+To get started, you'll want to begin with your own Behavior Pack. To begin your behavior pack, create a new folder in the `development_behavior_packs` folder called `startertests`.
 
 Within the `startertests` folder, you'll also want to include two subfolders:
 
@@ -52,7 +52,22 @@ Within the `startertests` folder, you'll also want to include two subfolders:
 
 ### Update your manifest
 
-A behavior pack manifest needs to have additional elements to support GameTests.  The `modules` section needs one module that registers your JavaScript code entry point as follows:
+You can start a behavior pack manifest with a manifest.json file within your startertests folder, as follows:
+
+``` JSON
+{
+    "format_version": 2,
+    "header": {
+        "description": "Introductory tests for Minecraft GameTest Framework.",
+        "name": "Starter Hello World Tests",
+        "uuid": "1A2F42BD-98D4-4E0D-8E3F-934AB8A0C05E",
+        "version": [0, 0, 1],
+        "min_engine_version": [ 1, 14, 0 ]
+    }
+}
+```
+
+A behavior pack manifest needs to have additional elements to support GameTests.  The `modules` section needs one module, added beneath the header section, that registers your JavaScript code entry point, as follows:
 
 ``` JSON
     "modules": [
@@ -69,10 +84,10 @@ A behavior pack manifest needs to have additional elements to support GameTests.
 Note several facets of this `module`:
 
 - This module is of type `javascript`.  
-- The `uuid` needs to be unique and generated for your project.  See the Introduction to Behavior packs topic for tools for generating new UUIDs.
+- The `uuid` needs to be unique and generated for your project.  See the [Introduction To Behavior Packs](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/behaviorpack?branch=main) topic for tools for generating new UUIDs.
 - The `entry` attribute points to a JavaScript file that contains your GameTest code.
 
-In addition, you will need to establish dependencies on Minecraft APIs and GameTest Framework.  You can do this with additional dependencies, below:
+In addition, you will need to establish dependencies on Minecraft APIs and GameTest Framework.  You can do this with additional dependencies, added beneath the modules section, below:
 
 ``` JSON
  "dependencies": [
@@ -87,12 +102,10 @@ In addition, you will need to establish dependencies on Minecraft APIs and GameT
     ]
 ```
 >[!WARNING]
->Note that here `uuid` refer to core Minecraft components. You should **not** change these values.
+>Note that here `uuid` refers to core Minecraft components. You should **not** change these values within the dependencies section.
 
 >[!IMPORTANT]
 >As you can see, GameTest Framework tests dependent on versions "0.1.0" of Minecraft APIs and GameTest Framework.  Version 0 indicates that these features are still **experimental**. As with all experiments, we are improving their capabilities over time, and API signatures may change build over build without advanced notice.  Check the Minecraft Changelog for more changes over time.
-
-
 
 A full manifest file for a Behavior Pack with a GameTest looks like:
 
@@ -138,7 +151,7 @@ Every GameTest needs a script file. As you saw in the previous section, we added
 
 When a GameTest Framework-enabled world opens with this file registered, your GameTest JavaScript file will load and execute. Here, the main role for your code is to register downstream GameTests.
 
-Note that as you make changes to your scripts or structures as you author tests, you will need to exit out of your world and reload it. If there are any script errors, you will see them printed as the world is loaded.
+Note that as you make changes to your scripts or structures, you will need to exit out of your world and reload it. If there are any script errors, you will see them displayed as the world is loaded.
 
 To register your GameTest scripts, you'll want to use the RegistrationBuilder class. You can see more information on the Registration Builder class at [Registration Builder](../TestAPI/GameTest/RegistrationBuilder.md).
 
@@ -148,13 +161,12 @@ An example line of JavaScript that uses RegistrationBuilder looks like:
 // Registration Code for our test
 GameTest.register("StarterTests", "simpleMobTest", simpleMobTest)
         .maxTicks(410)
-        .structureName("StarterTests:mediumglass");   
-        /* use the mediumglass.mcstructure file */
+        .structureName("startertests:mediumglass"); /* use the mediumglass.mcstructure file */
 ```
 
 This line of code establishes a new test called `simpleMobTest` within the `StarterTests` test group.
 It adds an additional parameter (`maxTicks`) that expresses this test may take 410 ticks (20.5 seconds) to run.
-Finally, the GameTest specifies a MCStructure (`Startertests:mediumglass`).  By convention, this causes Minecraft to use an MCStructure file at `/structures/StarterTests/mediumglass.mcstructure` within your behavior pack folder.
+Finally, the GameTest specifies a MCStructure (`startertests:mediumglass`). By convention, this causes Minecraft to use an MCStructure file at `/structures/startertests/mediumglass.mcstructure` within your behavior pack folder.
 
 The rest of the JavaScript uses the GameTest Helper class to actually express the test within a `simpleMobTest` function.
 
@@ -202,8 +214,8 @@ function assertEntityNotInArea(test, entityType, xFrom, yFrom, zFrom, xTo, yTo, 
 
 Some things to observe in this test function:
 
-- You can use the `spawn` method to create new Mobs in your test
-- Note that coordinates are relative to within your .MCStructure
+- You can use the `spawn` method to create new Mobs in your test.
+- Coordinates used in APIs like spawn are relative to within your .MCStructure.
 - `assert` functions cause code execution to stop if the conditions described in the method are not true.  Here, utilizing a helper function, this code asserts that a chicken entity is no longer in the structure. If one is found within any of the blocks in the structure, that `assert` code will throw an error.  But if no chicken is found, we make our way to the test.succeed line of code, and the test passes.
 
 The full JavaScript StarterTests.js file looks like:
@@ -246,19 +258,44 @@ function assertEntityNotInArea(test, entityType, xFrom, yFrom, zFrom, xTo, yTo, 
 /// Registration Code for our test
 GameTest.register("StarterTests", "simpleMobTest", simpleMobTest)
         .maxTicks(410)
-        .structureName("StarterTests:mediumglass");   /* use the mediumglass.mcstructure file */
+        .structureName("startertests:mediumglass");   /* use the mediumglass.mcstructure file */
 ```
+
+To finish the sample, you will want to use a structure block to define the test.
+
+To do this, open up Minecraft and start a new world in Creative mode to build your environment.  This is a simple glass pen that was built for our GameTest, made from glass blocks:
+
+![Image of a glass structure within Minecraft.](Media/GameTestBuildYourFirstGameTest/glasspen.png)
+
+Next, you will want to export this a structure.  Run the following command in Minecraft:
+
+`
+give @s structure_block
+`
+
+This will give you a structure block to work with.  Place a structure block next to your creation, and use the Structure Block popup to frame your creation.  Export this as `mediumglass.mcstructure`.
+
+![Image of a glass structure within Minecraft.](Media/GameTestBuildYourFirstGameTest/structureblock.png)
+
+In your behavior pack, go to your structures folder and create a subfolder called startertests.  
+
+Place this mediumglass.mcstructure file within a subfolder called startertests. Make sure that you match the casing you specified in your JavaScript code, so make it all lower-case. Copy the mediumglass.mcstructure file to that folder. Your folder should look like this:
+
+![Image of a glass structure within Minecraft.](Media/GameTestBuildYourFirstGameTest/startertestfolder.png)
+
 
 ## Running your tests within the game
 
-Once you have completed your GameTest behavior pack, you'll want to try it out within Minecraft. To do this, create a new Minecraft world. For this new world, you'll want to ensure that cheats are enabled and that the GameTest Framework experiment is turned on. You'll want to add the GameTeset Behavior Packs in your world.
+Once you have completed your GameTest behavior pack, you'll want to try it out within Minecraft. To do this, create a new Minecraft world. For this new world, you'll want to start in Creative mode and turn the GameTest Framework experiment on. You'll want to add the GameTeset Behavior Packs in your world.  If everything is correct, you should see the Start Hello World GameTest behavior pack when you create your world:
 
-<Add Image>
+![Image of a glass structure within Minecraft.](Media/GameTestBuildYourFirstGameTest/behaviorpack.png)
+
+Click on the Starter Hello World behavior packs tile to activate it.
 
 >[!IMPORTANT]
 >You’ll also likely want to specify some additional changes in your environment:
 >- Selecting a Flat world
->- You'll probably also want to retain Normal difficulty (mobs work differently in completely Peaceful worlds)
+>- Retain Normal difficulty (mobs work differently in completely Peaceful worlds)
 
 Once the world is loaded, use the `/gametest` command to run tests.
 
