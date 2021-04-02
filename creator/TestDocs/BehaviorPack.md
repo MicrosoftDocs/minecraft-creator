@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Introduction To Behavior Pack
+title: Introduction To Behavior Packs
 ms.prod: Gaming
 ---
 
-# Behavior Pack
+# Introduction to Behavior Packs
 
 Before building your first Add On, you will need to create a Pack in order to add any custom content in Minecraft. There are two types of Packs that a creator can make, Resource and Behavior Packs. This tutorial will go over how Behavior Packs are created and adding a series of attacking behaviors to an in-game Cow mob.
 
@@ -29,7 +29,7 @@ It’s recommended that the following be completed before beginning this tutoria
 
 A Behavior pack is a type of pack that allows creators to add, remove or alter behaviors of entities within Minecraft. Behaviors are the gameplay characteristics used by entities in Minecraft. Behaviors are what drive each entity to perform certain actions, such as a flock of chickens following a feather or whether a zombie will attack a player or another entity.
 
-Behaviors give Creators the ability to change the way entities can act in the world. In this section, you will set up a folder for a new Behavior Pack called **HelloWorldBP**.
+Behaviors give creators the ability to change the way entities can act in the world. In this section, you will set up a folder for a new Behavior Pack called **HelloWorldBP**.
 
 1. Open up your game location folder **com.mojang**.
 1. Double-click on the folder **behavior_pack**.
@@ -324,7 +324,7 @@ Now that the pack has both a manifest file and a modification for the cow entity
 
 ### What's Next?
 
-Now that you have learned how to augment existing Minecraft features such as textures and behaviors, it's recommended that Creators learn how to add new items to Minecraft, starting with a custom block component.
+Now that you have learned how to augment existing Minecraft features such as textures and behaviors, it's recommended that c learn how to add new items to Minecraft, starting with a custom block component.
 
 > [!div class="nextstepaction"]
 > [Custom Block](CustomBlock.md)

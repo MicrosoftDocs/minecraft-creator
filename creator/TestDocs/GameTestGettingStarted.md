@@ -1,13 +1,13 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Getting Started with GameTest
+title: Introduction to the GameTest Framework
 ms.prod: Gaming
 ---
 
-# Getting started with GameTest
+# Introduction to the GameTest Framework
 
-GameTest Framework is a new toolset available to Creators to build and test any new content created by Creators.  Within the world of Minecraft, you can express infinite forms of gameplay and variability in your content. With all these creative possibilities, sometimes a Creator may need additional tools to help validate that your experiences are running just as you expect it, and assist you as you customize aspects of the broader Minecraft environment.
+GameTest Framework is a new toolset available to creators to build and test any new content created by you.  Within the world of Minecraft, you can express infinite forms of gameplay and variability in your content. With all these creative possibilities, sometimes a Creator may need additional tools to help validate that your experiences are running just as you expect it, and assist you as you customize aspects of the broader Minecraft environment.
 
 What happens if you change the behavior of Villagers? or introduce a new Mob? Small changes can have unexpectedly big impacts that can be really hard to anticipate. With the GameTest Framework - a system for establishing sets of tests - you can track and repeat to ensure everything works the way you intend.  
 

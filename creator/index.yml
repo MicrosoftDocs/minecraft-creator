@@ -18,9 +18,9 @@ highlightedContent:
 # itemType:  architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     #card used to define plugin
-    - title: What are Minecraft Add-ons?
-      itemType: concept
-      url: https://www.minecraft.net/en-us/addons
+    - title: Introduction to the GameTest Framework
+      itemType: whats-new
+      url: TestDocs/GameTestGettingStarted.md
     #card
     - title: Getting Started with Add-on Development
       itemType: get-started
