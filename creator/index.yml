@@ -1,11 +1,11 @@
 ### YamlMime:Hub
 
-title: Minecraft Creator Platform documentation # < 60 chars
-summary: Minecraft Creator Platform is the first step on our journey towards bringing even greater levels of customization  to Minecraft. # < 160 chars
+title: Minecraft Bedrock documentation # < 60 chars
+summary: Minecraft Bedrock is the first step on our journey towards bringing even greater levels of customization  to Minecraft. # < 160 chars
 
 metadata:
-  title: Minecraft Creator Platform documentation # Required; page title shown in search results < 60 chars
-  description: Minecraft Creator Platform is the first step on our journey towards bringing even greater levels of customization p;[[[[[[[[[[[[[[[[[[[i9]]]]]]]]]]]]]]]]]]] to Minecraft. # < 160 chars
+  title: Minecraft Bedrock documentation # Required; page title shown in search results < 60 chars
+  description: Minecraft Bedrock is the first step on our journey towards bringing even greater levels of customization p;[[[[[[[[[[[[[[[[[[[i9]]]]]]]]]]]]]]]]]]] to Minecraft. # < 160 chars
   service: service
   ms.service: service # Required; service per approved list. 
   ms.topic: hub-page # Required
