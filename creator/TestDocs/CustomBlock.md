@@ -12,6 +12,7 @@ Minecraft's Behavior and Resource Packs allow for you to create custom content f
 In this tutorial you will learn the following:
 
 > [!div class="checklist"]
+>
 > - How blocks can be created with JSON.
 > - How to assign textures to a new block.
 > - What are some of the behaviors and components that blocks have access to.
@@ -24,6 +25,9 @@ It’s recommended that the following be completed before beginning this tutoria
 - [Introduction To Resource Packs](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/resourcepack?branch=main)
 - [Introduction To Behavior Packs](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/behaviorpack?branch=main)
 - A Minecraft World with `Holiday Creator Features` enabled.
+
+>[!IMPORTANT]
+>Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.  
 
 ## Setting up the Resource JSON File
 
