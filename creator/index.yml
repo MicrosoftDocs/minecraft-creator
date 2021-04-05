@@ -51,15 +51,12 @@ productDirectory:
           text: Changing textures with a Resource Pack
         - url: TestDocs/BehaviorPack.md
           text: How to make a cow attack a player using a Behavior Pack
+        - url: TestDocs/CustomBlock.md
+          text: Adding a new Block
   # card
     - title: Working with Commands
       imageSrc: images/minecraftBlock.png
       links:
         - url: TestDocs/CommandBlocks.md
           text: Introduction to Command Blocks
-  # card
-    - title: Adding New Content
-      imageSrc: images/minecraftBlock.png
-      links:
-        - url: TestDocs/CustomBlock.md
-          text: Adding a new Block
+
