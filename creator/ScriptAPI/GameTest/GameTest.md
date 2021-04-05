@@ -8,6 +8,9 @@ description: Contents of the GameTest module
 ---
 # GameTest Module
 
+>[!IMPORTANT]
+>These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
+
 ## Classes
 - [RegistrationBuilder](RegistrationBuilder.md)
 - [Helper](Helper.md)

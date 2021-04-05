@@ -153,7 +153,7 @@ When a GameTest Framework-enabled world opens with this file registered, your Ga
 
 Note that as you make changes to your scripts or structures, you will need to exit out of your world and reload it. If there are any script errors, you will see them displayed as the world is loaded.
 
-To register your GameTest scripts, you'll want to use the RegistrationBuilder class. You can see more information on the Registration Builder class at [Registration Builder](../TestAPI/GameTest/RegistrationBuilder.md).
+To register your GameTest scripts, you'll want to use the RegistrationBuilder class. You can see more information on the Registration Builder class at [Registration Builder](../ScriptAPI/GameTest/RegistrationBuilder.md).
 
 An example line of JavaScript that uses RegistrationBuilder looks like:
 

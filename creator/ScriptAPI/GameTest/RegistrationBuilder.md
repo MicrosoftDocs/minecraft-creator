@@ -9,6 +9,9 @@ description: Contents of the GameTest.RegistrationBuilder class.
 # RegistrationBuilder Class
 A utility class to set GameTest parameters for a test
 
+>[!IMPORTANT]
+>These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
+
 
 ## Methods
 - [batch](#batch)
