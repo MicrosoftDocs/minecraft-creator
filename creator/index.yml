@@ -1,11 +1,10 @@
 ### YamlMime:Hub
 
 title: Minecraft Bedrock documentation # < 60 chars
-summary: Minecraft Bedrock is the first step on our journey towards bringing even greater levels of customization  to Minecraft. # < 160 chars
-
+summary: Learn how to customize Minecraft Bedrock Edition through Add-ons.
 metadata:
   title: Minecraft Bedrock documentation # Required; page title shown in search results < 60 chars
-  description: Minecraft Bedrock is the first step on our journey towards bringing even greater levels of customization p;[[[[[[[[[[[[[[[[[[[i9]]]]]]]]]]]]]]]]]]] to Minecraft. # < 160 chars
+  description: Learn how to customize Minecraft Bedrock Edition through Add-ons. # < 160 chars
   service: service
   ms.service: service # Required; service per approved list. 
   ms.topic: hub-page # Required
@@ -40,7 +39,7 @@ productDirectory:
           text: Getting Started with GameTest
         - url: TestDocs/GameTestBuildYourFirstGameTest.md
           text: Build your first GameTest
-        - url: TestAPI/gametest.md
+        - url: ScriptAPI/GameTest/GameTest.md
           text: GameTest API
   # card
     - title: Add-on Pack Tutorials
