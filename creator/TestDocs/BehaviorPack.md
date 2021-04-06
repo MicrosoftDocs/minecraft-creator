@@ -21,8 +21,8 @@ In this tutorial, you will learn the following:
 
 It’s recommended that the following be completed before beginning this tutorial.
 
-- [Getting Started with Add-on Development](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/gettingstarted?branch=main)
-- [Introduction To Resource Packs](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/resourcepack?branch=main)
+- [Getting Started with Add-on Development](TestDocs/GettingStarted.md)
+- [Introduction To Resource Packs](TestDocs/ResourcePack.md)
 - Download the [Vanilla Behavior Pack](https://aka.ms/behaviorpacktemplate)
 
 ## Building the Behavior Pack
