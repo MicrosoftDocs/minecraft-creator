@@ -21,8 +21,8 @@ In this tutorial, you will learn the following:
 
 It’s recommended that the following be completed before beginning this tutorial.
 
-- [Getting Started with Add-on Development](TestDocs/GettingStarted.md)
-- [Introduction To Resource Packs](TestDocs/ResourcePack.md)
+- [Getting Started with Add-on Development](GettingStarted.md)
+- [Introduction To Resource Packs](ResourcePack.md)
 - Download the [Vanilla Behavior Pack](https://aka.ms/behaviorpacktemplate)
 
 ## Building the Behavior Pack
