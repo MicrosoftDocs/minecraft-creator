@@ -1,0 +1,30 @@
+- name: Modules
+  items:
+    - name: GameTest
+      items:
+      - name: GameTest
+        href: GameTest/GameTest.md
+      - name: RegistrationBuilder
+        href: GameTest/RegistrationBuilder.md
+      - name: Helper
+        href: GameTest/Helper.md
+      - name: GameTestSequence
+        href: GameTest/GameTestSequence.md
+      - name: Tags
+        href: GameTest/Tags.md
+    - name: Minecraft
+      items:
+      - name: Minecraft
+        href: Minecraft/Minecraft.md
+      - name: Block
+        href: Minecraft/Block.md
+      - name: ItemStack
+        href: Minecraft/ItemStack.md
+      - name: Blocks
+        href: Minecraft/Blocks.md
+      - name: BlockState
+        href: Minecraft/BlockState.md
+      - name: BlockStates
+        href: Minecraft/BlockStates.md
+      - name: BlockLocation
+        href: Minecraft/BlockLocation.md

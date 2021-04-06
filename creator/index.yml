@@ -1,0 +1,61 @@
+### YamlMime:Hub
+
+title: Minecraft Bedrock documentation # < 60 chars
+summary: Learn how to customize Minecraft Bedrock Edition through Add-ons.
+metadata:
+  title: Minecraft Bedrock documentation # Required; page title shown in search results < 60 chars
+  description: Learn how to customize Minecraft Bedrock Edition through Add-ons. # < 160 chars
+  service: service
+  ms.service: service # Required; service per approved list. 
+  ms.topic: hub-page # Required
+  ms.date: 03/20/2021
+  author: v-josjones # Required; Github alias
+  ms.author: v-josjones # Required; Microsoft alias; with correct grammar
+
+# highlighted content section (optional), will outlined up to 8 items in a 4x2 grid. 
+highlightedContent: 
+# itemType:  architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    #card used to define plugin
+    - title: Introduction to the GameTest Framework
+      itemType: whats-new
+      url: TestDocs/GameTestGettingStarted.md
+    #card
+    - title: Getting Started with Add-on Development
+      itemType: get-started
+      url: TestDocs/GettingStarted.md
+
+
+# productDirectory section (optional) will outline rows that can contain text and media along with lists. 
+productDirectory:
+  title: Building up the Foundation
+  summary: If you are new to Minecraft development or looking to brush up on some knowledge, we have created a few getting started tutorials to help you take your first steps as a Creator!
+  items:
+    # card
+    - title: What's New?
+      imageSrc: images/minecraftBlock.png
+      links:
+        - url:  TestDocs/GameTestGettingStarted.md
+          text: Getting Started with GameTest
+        - url: TestDocs/GameTestBuildYourFirstGameTest.md
+          text: Build your first GameTest
+        - url: ScriptAPI/GameTest/GameTest.md
+          text: GameTest API
+  # card
+    - title: Add-on Pack Tutorials
+      #imageSrc needs to in a square ratio with no whitespace
+      imageSrc: images/minecraftBlock.png
+      links:
+        - url: TestDocs/ResourcePack.md
+          text: Changing textures with a Resource Pack
+        - url: TestDocs/BehaviorPack.md
+          text: How to make a cow attack a player using a Behavior Pack
+        - url: TestDocs/CustomBlock.md
+          text: Adding a new Block
+  # card
+    - title: Working with Commands
+      imageSrc: images/minecraftBlock.png
+      links:
+        - url: TestDocs/CommandBlocks.md
+          text: Introduction to Command Blocks
+

@@ -1,0 +1,31 @@
+- name: Minecraft Bedrock Documentation
+  items:
+    - name: Minecraft Bedrock Documentation Homepage
+      href: index.yml
+    - name: Tutorials
+      items: 
+        - name: Adding Content
+          items:
+            - name: Getting Started
+              href: TestDocs/GettingStarted.md
+            - name: Introduction to Resource Packs
+              href: TestDocs/ResourcePack.md
+            - name: Introduction to Behavior Packs
+              href: TestDocs/BehaviorPack.md
+            - name: Adding a Custom Block
+              href: TestDocs/CustomBlock.md
+        - name: Commands and Command Blocks
+          items:
+          - name: Getting Started with Commands
+            href: TestDocs/CommandBlocks.md
+        - name: GameTest Framework
+          items:
+          - name: Getting Started with GameTest
+            href: TestDocs/GameTestGettingStarted.md
+          - name: Build your first GameTest
+            href: TestDocs/GameTestBuildYourFirstGameTest.md
+    - name: Reference Documentation
+      items:
+      - name: Bedrock API 
+        href: ScriptAPI/TOC.yml
+  
