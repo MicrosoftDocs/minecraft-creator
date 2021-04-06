@@ -314,4 +314,4 @@ To run a specific test, use `/gametest run <classname>:<testName>`, like:
 You've created your first GameTest Framework test. GameTests allow you as a Creator to stretch your content, exercise your entities, and validate your gameplay mechanics. You can view the GameTest API below to learn more about what is included in the GameTest Framework.
 
 > [!div class="nextstepaction"]
-> [GameTest API](TestAPI/gametest.md)
+> [GameTest API](../ScriptAPI/GameTest/gametest.md)
