@@ -17,13 +17,13 @@ In this tutorial, you will learn the following:
 > - Understand how a **Resource Pack** is created. 
 > -  How a **Manifest File** is created.
 > - How custom textures are loaded into Minecraft.
-> - The concept of **Pack Stacking** when working with Add-on content.
+> - The concept of **Pack Stacking** when working with Add-On content.
 
 ### Requirements
 
 It’s recommended that the following be completed before beginning this tutorial:
 
-- [Getting Started with Add-on Development](GettingStarted.md)
+- [Getting Started with Add-on Development](TestDocs/GettingStarted.md)
 - Download the [Vanilla Resource Pack](https://aka.ms/resourcepacktemplate)
 
 ## Building the Resource Pack
@@ -118,7 +118,7 @@ You can now design a pattern or any artwork in the editor. In this example, a si
 
 ### Testing the Pack
 
-Now that the pack has both a manifest file and a texture, you can now launch Minecraft and test your new Add-on.
+Now that the pack has both a manifest file and a texture, you can now launch Minecraft and test your new Add-On.
 
 > [!IMPORTANT]
 > **Pack Stacking** is when content is loaded on top of vanilla content causing each object that has the same name in both packs to be overwritten by the *latest* applied Pack (in our example, the Dirt texture is overwritten by our custom texture).

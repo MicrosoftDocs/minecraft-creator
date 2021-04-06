@@ -16,12 +16,15 @@ Building sets of GameTests requires building out your GameTests via a Behavior P
 >[!IMPORTANT]
 >GameTest Framework is still experimental. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.  Check the Minecraft Changelog for details on any changes to GameTest Framework.
 
+>[!IMPORTANT]
+>We recommend using the latest Beta versions of Minecraft when building your own GameTests. See [Minecraft Betas](https://aka.ms/mcbeta) for more information.
+
 ### Requirements
 
 It’s recommended that the following be completed before beginning this tutorial.
 
 > [!div class="checklist"]
-> - [Introduction To Behavior Packs](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/behaviorpack?branch=main)
+> - [Introduction To Behavior Packs](BehaviorPack.md)
 
 ### GameTest Elements
 
@@ -44,6 +47,9 @@ With this simple foundation, GameTests can be created with a few lines of JavaSc
 ## Start building your own tests
 
 To get started, you'll want to begin with your own Behavior Pack. To begin your behavior pack, create a new folder in the `development_behavior_packs` folder called `startertests`.
+
+>[!IMPORTANT]
+>We recommend using the latest Beta versions of Minecraft when building your own GameTests. See [Minecraft Betas](https://aka.ms/mcbeta) for more information.
 
 Within the `startertests` folder, you'll also want to include two subfolders:
 
@@ -84,7 +90,7 @@ A behavior pack manifest needs to have additional elements to support GameTests.
 Note several facets of this `module`:
 
 - This module is of type `javascript`.  
-- The `uuid` needs to be unique and generated for your project.  See the [Introduction To Behavior Packs](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/behaviorpack?branch=main) topic for tools for generating new UUIDs.
+- The `uuid` needs to be unique and generated for your project.  See the [Introduction To Behavior Packs](BehaviorPack.md) topic for tools for generating new UUIDs.
 - The `entry` attribute points to a JavaScript file that contains your GameTest code.
 
 In addition, you will need to establish dependencies on Minecraft APIs and GameTest Framework.  You can do this with additional dependencies, added beneath the modules section, below:
@@ -308,4 +314,4 @@ To run a specific test, use `/gametest run <classname>:<testName>`, like:
 You've created your first GameTest Framework test. GameTests allow you as a Creator to stretch your content, exercise your entities, and validate your gameplay mechanics. You can view the GameTest API below to learn more about what is included in the GameTest Framework.
 
 > [!div class="nextstepaction"]
-> [GameTest API](TestAPI/gametest.md)
+> [GameTest API](../ScriptAPI/GameTest/gametest.md)
