@@ -21,9 +21,9 @@ In this tutorial you will learn the following:
 ### Requirements
 It’s recommended that the following be completed before beginning this tutorial.
 
-- [Getting Started with Add-on Development](TestDocs/GettingStarted.md)
-- [Introduction To Resource Packs](TestDocs/ResourcePack.md)
-- [Introduction To Behavior Packs](TestDocs/BehaviorPack.md)
+- [Getting Started with Add-on Development](GettingStarted.md)
+- [Introduction To Resource Packs](ResourcePack.md)
+- [Introduction To Behavior Packs](BehaviorPack.md)
 - A Minecraft World with `Holiday Creator Features` enabled.
 
 >[!IMPORTANT]

@@ -23,7 +23,7 @@ In this tutorial, you will learn the following:
 
 It’s recommended that the following be completed before beginning this tutorial:
 
-- [Getting Started with Add-on Development](TestDocs/GettingStarted.md)
+- [Getting Started with Add-on Development](GettingStarted.md)
 - Download the [Vanilla Resource Pack](https://aka.ms/resourcepacktemplate)
 
 ## Building the Resource Pack
