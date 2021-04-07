@@ -2,7 +2,7 @@
 author: v-josjones
 ms.author: v-josjones
 title: Introduction to Resource Packs
-ms.prod: Gaming
+ms.prod: gaming
 ---
 
 # Introduction to Resource Packs
@@ -108,7 +108,7 @@ Now that the folder structure is created, you can now place your custom textures
 1. Open up an image editor such as Paint3D, MS Paint or Photoshop.
     1. In this tutorial, Paint 3D will be used.
 1. In the **Toolbar**, select **File**, then select **Properties**.
-1. Set the **Width** and **Height** to **16** each.
+1. Set the **Width** and **Height** to **16 pixels** each.
 
 You can now design a pattern or any artwork in the editor. In this example, a simple fill color has been added.
 

@@ -2,7 +2,7 @@
 author: v-josjones
 ms.author: v-josjones
 title: Getting Started With Minecraft Add-Ons
-ms.prod: Gaming
+ms.prod: gaming
 ---
 
 # Getting Started with Add-On Development for Bedrock Edition
