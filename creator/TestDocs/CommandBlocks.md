@@ -2,7 +2,7 @@
 author: v-josjones
 ms.author: v-josjones
 title: Getting Started with Command Blocks
-ms.prod: Gaming
+ms.prod: gaming
 ---
 # Getting Started with Command Blocks
 

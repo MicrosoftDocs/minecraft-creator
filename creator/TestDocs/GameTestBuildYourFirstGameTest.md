@@ -2,7 +2,7 @@
 author: v-josjones
 ms.author: v-josjones
 title: Building your first GameTest
-ms.prod: Gaming
+ms.prod: gaming
 ---
 
 # Building your first GameTest
@@ -17,7 +17,7 @@ Building sets of GameTests requires building out your GameTests via a Behavior P
 >GameTest Framework is still experimental. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.  Check the Minecraft Changelog for details on any changes to GameTest Framework.
 
 >[!IMPORTANT]
->We recommend using the latest Beta versions of Minecraft when building your own GameTests. See [Minecraft Betas](https://aka.ms/mcbeta) for more information.
+>To build and run your own GameTests, you must use the latest Beta versions of Minecraft (version 1.16.230+). See [Minecraft Betas](https://aka.ms/mcbeta) for more information.
 
 ### Requirements
 
@@ -49,7 +49,7 @@ With this simple foundation, GameTests can be created with a few lines of JavaSc
 To get started, you'll want to begin with your own Behavior Pack. To begin your behavior pack, create a new folder in the `development_behavior_packs` folder called `startertests`.
 
 >[!IMPORTANT]
->We recommend using the latest Beta versions of Minecraft when building your own GameTests. See [Minecraft Betas](https://aka.ms/mcbeta) for more information.
+>To build and run your own GameTests, you must use the latest Beta versions of Minecraft (version 1.16.230+). See [Minecraft Betas](https://aka.ms/mcbeta) for more information.
 
 Within the `startertests` folder, you'll also want to include two subfolders:
 
@@ -275,9 +275,7 @@ To do this, open up Minecraft and start a new world in Creative mode to build yo
 
 Next, you will want to export this a structure.  Run the following command in Minecraft:
 
-`
-give @s structure_block
-`
+`/give @s structure_block`
 
 This will give you a structure block to work with.  Place a structure block next to your creation, and use the Structure Block popup to frame your creation.  Export this as `mediumglass.mcstructure`.
 

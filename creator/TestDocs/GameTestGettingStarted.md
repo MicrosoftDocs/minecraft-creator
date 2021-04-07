@@ -2,12 +2,12 @@
 author: v-josjones
 ms.author: v-josjones
 title: Introduction to the GameTest Framework
-ms.prod: Gaming
+ms.prod: gaming
 ---
 
 # Introduction to the GameTest Framework
 
-GameTest Framework is a new toolset available to creators to build and test any new content that you have created.  Within the world of Minecraft, you can express infinite forms of gameplay and variability in your content. With all these creative possibilities, sometimes you may need additional tools to help validate that your experiences are running just as you expect it, and assist you as you customize aspects of the broader Minecraft environment.
+GameTest Framework is a new toolset available to creators to build and test any new content created by you.  Within the world of Minecraft, you can express infinite forms of gameplay and variability in your content. With all these creative possibilities, sometimes a Creator may need additional tools to help validate that your experiences are running just as you expect it, and assist you as you customize aspects of the broader Minecraft environment.
 
 What happens if you change the behavior of Villagers? or introduce a new Mob? Small changes can have unexpectedly big impacts that can be really hard to anticipate. With the GameTest Framework - a system for establishing sets of tests - you can track and repeat to ensure everything works the way you intend.  
 
@@ -21,8 +21,6 @@ To get started, you'll want to begin with understanding how a Behavior Pack work
 
 > [!div class="checklist"]
 > - [Introduction To Behavior Packs](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/behaviorpack?branch=main) 
-
-
 
 ## What's a GameTest?
 
@@ -63,6 +61,9 @@ To run the default set of tests, use `/gametest runall`.
 ## What's Next?
 
 Building sets of GameTests requires building out your GameTests via a behavior pack, and writing some simple JavaScript code.  When building out your own tests, you will likely want to start a new Test Behavior Pack that is just focused on adding additional GameTests.
+
+>[!IMPORTANT]
+>To build and run your own GameTests, you must use the latest Beta versions of Minecraft (version 1.16.230+). See [Minecraft Betas](https://aka.ms/mcbeta) for more information.
 
 > [!div class="nextstepaction"]
 >[Build your first GameTest](GameTestBuildYourFirstGameTest.md)
