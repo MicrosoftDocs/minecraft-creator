@@ -2,7 +2,7 @@
 author: v-josjones
 ms.author: v-josjones
 title: Introduction To Behavior Packs
-ms.prod: Gaming
+ms.prod: gaming
 ---
 
 # Introduction to Behavior Packs
@@ -54,7 +54,7 @@ In order to load a behavior pack into Minecraft, a manifest file will need to be
 	  "format_version": 2,
 	  "header": {
 	    "description": "My First Add-On!",
-	    "name": "Hello WorldBP",
+	    "name": "HelloWorldBP",
 	    "uuid":"",
 	    "version": [1, 0, 0],
 	    "min_engine_version": [1, 16, 0]
@@ -264,7 +264,7 @@ In the sample above, the **nearest_attackable_target** is a component that handl
 - **`within_radius`** defines a radius around the cow of what targets can be selected
 - **`entity_types`** is a collection of arguments that define what type of entity is considered a target.
 - **`filters`** is what type of entity the cow will look for.
-- **`max`** dist is the distance in blocks between the cow and the potential target in the filter.
+- **`max_dist`** is the distance in blocks between the cow and the potential target in the filter.
 - **`must_see`** is a Boolean that determines if the cow needs to have vision on its target. The cow will have to look directly at the player in order for the cow to consider the player a target.
 
 #### Adding the behavior
@@ -324,7 +324,7 @@ Now that the pack has both a manifest file and a modification for the cow entity
 
 ### What's Next?
 
-Now that you have learned how to augment existing Minecraft features such as textures and behaviors, it's recommended that c learn how to add new items to Minecraft, starting with a custom block component.
+Now that you have learned how to augment existing Minecraft features such as textures and behaviors, it's recommended that you learn how to add new items to Minecraft, starting with a custom block component.
 
 > [!div class="nextstepaction"]
 > [Custom Block](CustomBlock.md)

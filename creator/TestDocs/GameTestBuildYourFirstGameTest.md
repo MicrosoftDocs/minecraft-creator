@@ -2,7 +2,7 @@
 author: v-josjones
 ms.author: v-josjones
 title: Building your first GameTest
-ms.prod: Gaming
+ms.prod: gaming
 ---
 
 # Building your first GameTest
@@ -275,9 +275,7 @@ To do this, open up Minecraft and start a new world in Creative mode to build yo
 
 Next, you will want to export this a structure.  Run the following command in Minecraft:
 
-`
-give @s structure_block
-`
+`/give @s structure_block`
 
 This will give you a structure block to work with.  Place a structure block next to your creation, and use the Structure Block popup to frame your creation.  Export this as `mediumglass.mcstructure`.
 

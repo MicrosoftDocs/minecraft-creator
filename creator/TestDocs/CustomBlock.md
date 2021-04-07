@@ -2,7 +2,7 @@
 author: v-josjones
 ms.author: v-josjones
 title: Introduction to Adding Custom Blocks
-ms.prod: Gaming
+ms.prod: gaming
 ---
 
 # How to add a Custom Block
