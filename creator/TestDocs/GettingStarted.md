@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Getting Started with Add-On Development for Bedrock Edition
 
-Add-Ons are the first step on our journey towards bringing even greater levels of customization to  Minecraft Bedrock Edition. Add-Ons allow players to transform the look of their worlds and even change the behavior of mobs. For example, you can change the blast radius of a creeper or the texture it’s wearing.
+Add-Ons are the first step on our journey towards bringing even greater levels of customization to Minecraft: Bedrock Edition. Add-Ons allow players to transform the look of their worlds and even change the behavior of mobs. For example, you can change the blast radius of a creeper or the texture it’s wearing.
 
 In this tutorial, you will learn the following.
 
@@ -45,11 +45,11 @@ As shown in the image below, there are multiple subdirectories located within th
 
 ### Behavior, Skin, and Resource Packs
 
-There are 3 folders called **behavior_packs**, **resource_packs**, and **skin_packs**. Any custom content that will be added to Minecraft will come in the form of one of these 3 packs.
+There are 3 folders called **behavior_packs**, **resource_packs**, and **skin_packs**. Any custom content that will be added to Minecraft: Bedrock Edition will come in the form of one of these 3 packs.
 
 ### Development Packs
 
-Along with the 3 pack folders, there are also Development versions of those folders. Development packs are packs that are updated every time Minecraft is launched, allowing you to quickly load and test changes they have made to their packs.
+Along with the 3 pack folders, there are also development versions of those folders. Development packs are packs that are updated every time Minecraft is launched, allowing you to quickly load and test changes they have made to their packs.
 
 ### minecraftWorlds
 
@@ -76,12 +76,12 @@ Visual Studio Code supports extensions created by the Visual Studio Code develop
 
 ### What's Next?
 
-Now that your development environment is set up, you can start creating your first Add-On by learning more about Resource Packs.
+Now that your development environment is set up, you can start creating your first Add-On by learning more about resource packs.
 
 > [!div class="nextstepaction"]
 > [Resource Pack](ResourcePack.md)
 
-Alternatively, if you would like to get started with Commands in Minecraft, head on over to Introduction to Command Blocks to learn how to use Command Blocks to chain together different commands.
+Alternatively, if you would like to get started with commands in Minecraft, head on over to Introduction to Command Blocks to learn how to use command blocks to chain together different commands.
 
 > [!div class="nextstepaction"]
 > [Introduction to Command Blocks](CommandBlocks.md)
