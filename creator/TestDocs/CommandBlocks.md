@@ -34,7 +34,7 @@ While this can be done on any Minecraft world that a player may have, we will be
 1. In the world settings, set **Enabled Cheats** to **True**.
 1. Select **Create**.
 
-### How to get command blocks
+### How to get Command Blocks
 
 Since command blocks are not a craft-able block, they will need to be added via the Command Console.
 
