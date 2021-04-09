@@ -116,8 +116,6 @@ The /testforblock command will look for a specific block at a specific point tha
 If you are following this tutorial, you will be in a flat world. The flat world has no blocks placed above the height, or y, value of 4. Let’s set the command input to look for any type of wool block near the origin of the map.
 
 1. In the Command Input section, input the following: `/testforblock 0 4 0 wool -1`
-1. Set the **Block Type** to **Repeat**.
-1. Set the **Redstone** to **Always Active**.
 1. Close the GUI.
 
 ## Command Block Chains
