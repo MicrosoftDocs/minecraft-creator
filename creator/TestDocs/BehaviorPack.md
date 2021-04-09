@@ -13,7 +13,7 @@ In this tutorial, you will learn the following:
 
 > [!div class="checklist"]
 >
-> - How to build a **dependency** link between Resource Packs and Behavior Packs.
+> - **Dependency** links between Resource Packs and Behavior Packs.
 > - What components are and how they are used to define Minecraft mobs.
 > - How to add behaviors to an existing mob.
 
@@ -51,7 +51,7 @@ In order to load a behavior pack into Minecraft, a manifest file will need to be
 
 ```json
 	{
-	  "format_version": 2,
+	  "format_version": 1.16.0,
 	  "header": {
 	    "description": "My First Add-On!",
 	    "name": "HelloWorldBP",
@@ -89,7 +89,7 @@ Below is an example of what the completed Behavior Pack Manifest File will look 
 
 ```json
 {
-  "format_version": 2,
+  "format_version": "1.16.0",
   "header": {
     "description": "My First Add-On!",
     "name": "Hello WorldBP",
@@ -234,11 +234,15 @@ In the cow.json file shown above, an entity_spawned event is defined here in ord
 
 ## Adding new behaviors
 
-Now that you know the 4 areas that define an entity, you will add new existing behaviors to the cow.json to allow the cow to look for the player and once spotted, to begin attacking the player.
+Now that you know the 4 areas that define an entity, you will add new behaviors to an existing mob. In this example, you will add the following behaviors:
+
+- `Minecraft:behavior.nearest_attackable_target` to define what the cow is able to attack.
+- `Minecraft:behavior.meleeattack` to allow every cow the ability to inflict damage on its target.
+- `Minecraft:attack` to define how much damage each attack does.
 
 ### Minecraft:behavior.nearest_attackable_target
 
-In order for the cow to attack, it will need to find a target that can be attacked.
+In order for the cow to attack, it will need to find a target that can be attacked. In this example, you will set the filter to look for `player` in order to make the cows a hostile mob and attack any player.
 
 ```json
 "minecraft:behavior.nearest_attackable_target":{
@@ -267,13 +271,6 @@ In the sample above, the **nearest_attackable_target** is a component that handl
 - **`max_dist`** is the distance in blocks between the cow and the potential target in the filter.
 - **`must_see`** is a Boolean that determines if the cow needs to have vision on its target. The cow will have to look directly at the player in order for the cow to consider the player a target.
 
-#### Adding the behavior
-
-Now we will add `nearest_attackable_target` to the cow.json in order to allow the cow to target a player.
-
-1. Copy the sample located above for `minecraft:behavior.nearest_attackable_target.`
-1. At the bottom of the **Component** header list, right below `Minecraft:pushable`, paste the snippet.
-
 ### Minecraft:behavior.meleeattack
 
 Once the cow is able to located a target, the next step is to allow an attack using the `behavior.meleeattack` component.
@@ -283,13 +280,6 @@ Once the cow is able to located a target, the next step is to allow an attack us
         "priority": 3
       },
 ```
-
-#### Adding the behavior
-
-1.	Copy the sample located above for `minecraft:behavior.melee_attack`.
-1.	At the bottom of the **Component** header list, right below `Minecraft:behavior.nearest_attackable_target`, paste the snippet.
-1.	Add a comma to the end of the `minecraft:behavior.nearest.attackable_target` snippet in order to prevent any JSON errors.
-<insert image here>
 
 ### Minecraft:attack
 
@@ -303,11 +293,25 @@ Now that the cow can look for a target and attack, you will need to add a value 
 
 In the snippet above, you can see that the component has a single argument. `"damage"`is set to a value of `3`, meaning every attack will take away 1.5 hearts from a player’s life bar.
 
-#### Adding the behavior
+#### Adding the behaviors
 
-1. Copy the sample located above for `minecraft: attack`.
-1. At the bottom of the **Component** header list, right below `Minecraft:behavior.melee_attack`, paste the snippet.
-1. Add a comma to the end of the `minecraft:behavior.melee_attack` snippet in order to prevent any JSON errors.
+Now that you know what each behavior is needed to make a cow attack a player, You will now add the behaviors to the cow.json file in the **HelloWorldBP/entites** folder.
+
+1. Copy the following code:
+:::code language="json" source="TestDocs/CodeSnippets/BehaviorPack/cow.json" range="183-204":::
+2. Navigate to the `components` container in the **cow.json** file.
+3. Below the behavior `minecraft:pushable`, after the comma ending the behavior, press Enter to add a new line.
+4. Paste the code on the new line.
+    1. If there is another behavior after `minecraft:attack`, add a comma after the closing bracket.
+5. Save the cow.json file.
+
+> [!IMPORTANT]
+> Commas are used to separate each behavior within the `components` section. When adding new behaviors, remember to add commas when necessary.
+
+Shown below is the completed component's section with with the added behavior.
+
+:::code language="json" source="TestDocs/CodeSnippets/BehaviorPack/cow.json" range="77-206" highlight="183-202":::
+
 1. Save the cow.json file.
 
 ### Testing the Pack
