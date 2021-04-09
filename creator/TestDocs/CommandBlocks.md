@@ -1,10 +1,10 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Getting Started with command blocks
+title: Getting Started with Command Blocks
 ms.prod: gaming
 ---
-# Getting Started with command blocks
+# Getting Started with Command Blocks
 
 Command blocks are a specialized type of block within a Minecraft: Bedrock Edition world that allows the use of console commands in game. Command blocks are able to extend and build completely new experiences for players to experience.
 

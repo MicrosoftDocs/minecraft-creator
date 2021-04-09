@@ -187,10 +187,8 @@
         "within_radius": 25.0,
         "entity_types":[
           {
-            "filters": {
-              "all_of": [
-                {"test": "is_family", "subject": "other", "value": "player"}
-              ]
+            "filters":{
+              "test": "is_family", "subject": "other", "value": "player"
             },
             "max_dist":32
           }

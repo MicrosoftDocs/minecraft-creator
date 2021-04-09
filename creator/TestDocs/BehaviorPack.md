@@ -81,7 +81,7 @@ Similar to the resource pack manifest file, a series of UUIDs will need to be ge
 1. Copy and paste the new UUID into the Modules section in-between the quotation marks.
 1. Save the manifest file.
 
-### Dependency
+### Dependencies
 
 For a behavior pack, you can add a 3rd section to the manifest.json file called Dependencies. Dependency creates a link between a Behavior pack and a Resource pack via UUID located in the header section of the Resource pack manifest.json. Add a dependency for your helloWorldRP resource pack you previously created and set it to automatically activate when the behavior pack is activated.
 
@@ -185,7 +185,7 @@ In the cow.json sample shown above, you can see that the `"minecraft:cow_baby"` 
 
 ### Components
 
-Components are the global settings used to define and drive an entity.
+Components define behaviors and properties that you can assign to an entity to adapt how they behave.
 
 ```json
     "components": {
@@ -202,7 +202,7 @@ In the cow.json, you can see that the first two components are `"minecraft:type_
 
 ### Events
 
-Events are actions that interface with Minecraft.
+Events are actions you can take on the entity when a special condition is triggered by the entity's behavior.
 
 ```json
     "events": {
@@ -246,22 +246,22 @@ In order for the cow to attack, it will need to find a target that can be attack
 
 ```json
 "minecraft:behavior.nearest_attackable_target":{
-	"priority": 2,
-  "must_see": true,
-	"reselect_targets": true, 
-	"within_radius": 25.0,
-	"entity_types": [
-	{
-		"filters":{
-      "all_of":[{"test": "is_family","subject":"other", "value":"player"}]
-              },
+    "priority": 2,
+    "must_see": true,
+    "reselect_targets": true, 
+    "within_radius": 25.0,
+    "entity_types": [
+    {
+      "filters":{
+           "test": "is_family", "subject": "other", "value": "player"
+        },
     "max_dist":32
-	}
-	]	
+    }
+  ]
 }, 
 ```
 
-In the sample above, the **nearest_attackable_target** is a component that handles the behavior for detecting a potential target. The component has the following flags;
+In the sample above, the **`nearest_attackable_target`** is a component that handles the behavior for detecting a potential target. The component has the following flags:
 
 - **`priority`** is how important this component is compared to other behaviors. Lower numbers represent a higher priority, meaning that a component with a priority set to 1, will happen before another component set at 4.
 - **`reselect_targets`** is a Boolean that allows the entity to re-target the same entity after an attack.
@@ -271,9 +271,9 @@ In the sample above, the **nearest_attackable_target** is a component that handl
 - **`max_dist`** is the distance in blocks between the cow and the potential target in the filter.
 - **`must_see`** is a Boolean that determines if the cow needs to have vision on its target. The cow will have to look directly at the player in order for the cow to consider the player a target.
 
-### minecraft:behavior.meleeattack
+### minecraft:behavior.melee_attack
 
-Once the cow is able to located a target, the next step is to allow an attack using the `minecraft:behavior.meleeattack` component.
+Once the cow is able to locate a target, the next step is to allow an attack using the `minecraft:behavior.melee_attack` component.
 
 ```JSON
 "minecraft:behavior.melee_attack": {
@@ -295,7 +295,7 @@ In the snippet above, you can see that the component has a single argument. `"da
 
 #### Adding the behaviors
 
-Now that you know what each behavior is needed to make a cow attack a player, You will now add the behaviors to the cow.json file in the **HelloWorldBP/entities** folder.
+Now that you know each behavior that is needed to make a cow attack a player, you will now add the behaviors to the cow.json file in the **HelloWorldBP/entities** folder.
 
 1. Copy the following code:
 
@@ -312,7 +312,6 @@ Now that you know what each behavior is needed to make a cow attack a player, Yo
 > Commas are used to separate each behavior within the `components` section. When adding new behaviors, remember to add commas when necessary.
 
 Shown below is the completed component's section with with the added behavior.
-
 
 :::code language="json" source="CodeSnippets/BehaviorPack/cow.json" range="77-206":::
 
