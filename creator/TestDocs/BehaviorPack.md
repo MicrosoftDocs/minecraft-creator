@@ -317,9 +317,6 @@ Shown below is the completed component's section with with the added behavior.
 
 :::code language="json" source="CodeSnippets/BehaviorPack/cow.json" range="77-206":::
 
-
-1. Save the cow.json file.
-
 ### Testing the Pack
 
 Now that the pack has both a manifest file and a modification for the cow entity, you can now launch Minecraft and test your new Add-on. As stated in the Resource Pack, **Pack Stacking** will work for Behavior Packs as well. This means that content is loaded with any and all vanilla content being loaded first, followed by any additional Add-ons. Since the cow is using the cow.json namespace, every cow will inherit the new behaviors.
