@@ -298,7 +298,7 @@ In the snippet above, you can see that the component has a single argument. `"da
 Now that you know what each behavior is needed to make a cow attack a player, You will now add the behaviors to the cow.json file in the **HelloWorldBP/entites** folder.
 
 1. Copy the following code:
-:::code language="json" source="~/TestDocs/CodeSnippets/BehaviorPack/cow.json" range="183-204":::
+:::code language="json" source="~/../../TestDocs/CodeSnippets/BehaviorPack/cow.json" range="183-204":::
 2. Navigate to the `components` container in the **cow.json** file.
 3. Below the behavior `minecraft:pushable`, after the comma ending the behavior, press Enter to add a new line.
 4. Paste the code on the new line.
@@ -310,7 +310,7 @@ Now that you know what each behavior is needed to make a cow attack a player, Yo
 
 Shown below is the completed component's section with with the added behavior.
 
-:::code language="json" source="~/TestDocs/CodeSnippets/BehaviorPack/cow.json" range="77-206" highlight="183-202":::
+:::code language="json" source="~/../../TestDocs/CodeSnippets/BehaviorPack/cow.json" range="77-206" highlight="183-202":::
 
 1. Save the cow.json file.
 
