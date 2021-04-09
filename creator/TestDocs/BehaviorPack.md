@@ -299,11 +299,13 @@ Now that you know what each behavior is needed to make a cow attack a player, Yo
 
 1. Copy the following code:
 
+
     :::code language="json" source="CodeSnippets/BehaviorPack/cow.json" range="183-204":::
 
 1. Navigate to the `components` container in the **cow.json** file.
 1. Below the behavior `minecraft:pushable`, after the comma ending the behavior, press Enter to add a new line.
 1. Paste the code on the new line.
+
     1. If there is another behavior after `minecraft:attack`, add a comma after the closing bracket.
 1. Save the cow.json file.
 
@@ -312,7 +314,9 @@ Now that you know what each behavior is needed to make a cow attack a player, Yo
 
 Shown below is the completed component's section with with the added behavior.
 
+
 :::code language="json" source="CodeSnippets/BehaviorPack/cow.json" range="77-206":::
+
 
 1. Save the cow.json file.
 
