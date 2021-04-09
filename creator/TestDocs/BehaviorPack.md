@@ -51,7 +51,7 @@ In order to load a behavior pack into Minecraft, a manifest file will need to be
 
 ```json
 	{
-	  "format_version": 1.16.0,
+	  "format_version": "1.16.0",
 	  "header": {
 	    "description": "My First Add-On!",
 	    "name": "HelloWorldBP",
@@ -298,19 +298,21 @@ In the snippet above, you can see that the component has a single argument. `"da
 Now that you know what each behavior is needed to make a cow attack a player, You will now add the behaviors to the cow.json file in the **HelloWorldBP/entites** folder.
 
 1. Copy the following code:
-:::code language="json" source="~/TestDocs/CodeSnippets/BehaviorPack/cow.json" range="183-204":::
-2. Navigate to the `components` container in the **cow.json** file.
-3. Below the behavior `minecraft:pushable`, after the comma ending the behavior, press Enter to add a new line.
-4. Paste the code on the new line.
+
+    :::code language="json" source="CodeSnippets/BehaviorPack/cow.json" range="183-204":::
+
+1. Navigate to the `components` container in the **cow.json** file.
+1. Below the behavior `minecraft:pushable`, after the comma ending the behavior, press Enter to add a new line.
+1. Paste the code on the new line.
     1. If there is another behavior after `minecraft:attack`, add a comma after the closing bracket.
-5. Save the cow.json file.
+1. Save the cow.json file.
 
 > [!IMPORTANT]
 > Commas are used to separate each behavior within the `components` section. When adding new behaviors, remember to add commas when necessary.
 
 Shown below is the completed component's section with with the added behavior.
 
-:::code language="json" source="~/TestDocs/CodeSnippets/BehaviorPack/cow.json" range="77-206" highlight="183-202":::
+:::code language="json" source="CodeSnippets/BehaviorPack/cow.json" range="77-206":::
 
 1. Save the cow.json file.
 
