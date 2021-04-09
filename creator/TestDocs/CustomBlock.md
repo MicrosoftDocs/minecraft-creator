@@ -1,7 +1,7 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Introduction to Adding Custom Blocks
+title: How to add a Custom Block
 ms.prod: gaming
 ---
 
@@ -55,7 +55,7 @@ The blocks.json file has a similar set up to the manifest.json and has requireme
         "textures": {
             "up": "log_oak_top",
             "down": "log_oak_top",
-            "side": "canvasBlock"
+            "side": "canvasblock"
             },
         "sound":"dirt"
         }
@@ -209,3 +209,15 @@ Now that both of the packs are set up and completed, the last thing is to add th
 1. Save and close.
 
 In the code above, you are setting the name of the block to be `Canvas Block` while in-game.
+
+### Testing the block
+
+With the canvas block defined in both the behavior pack and resource pack, you can now test it in-game.
+
+>[!IMPORTANT]
+>You’ll also need to have a Minecraft world where cheats are enabled in order to add the block to your inventory.
+>
+>You will also need to have both Hello World packs enabled in the world in order to get access to the canvas block.
+
+1. Open up the chat dialogue box (T or Enter on Windows 10 OS).
+1. Type the following command: `/give @p helloworld:canvasblock`

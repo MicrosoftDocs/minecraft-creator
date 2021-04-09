@@ -50,25 +50,28 @@ In order to load a behavior pack into Minecraft, a manifest file will need to be
 1. Copy/Paste the following text into your text editor.
 
 ```json
-	{
-	  "format_version": 2,
-	  "header": {
-	    "description": "My First Add-On!",
-	    "name": "HelloWorldBP",
-	    "uuid":"",
-	    "version": [1, 0, 0],
-	    "min_engine_version": [1, 16, 0]
-	  },
-	  "modules": [
-	    {
-	      "description": "My First Add-On!",
-	      "type": "data",
-	      "uuid": "",
-	      "version": [1, 0, 0]
-	    }
-	  ]
-	}
+{
+  "format_version": 2,
+  "heSader": {
+    "description": "My First Add-On!",
+    "name": "HelloWorldBP",
+    "uuid":"",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 16, 0]
+  },
+  "modules": [
+    {
+      "description": "My First Add-On!",
+      "type": "data",
+      "uuid": "",
+      "version": [1, 0, 0]
+    }
+  ]
+}
 ```
+
+> [!NOTE]
+> For `format_version`, `2` is used as the value for the manifest.json file. While `"1.16.0` or `[1.16.0]` are used in vanilla manifest files, it is recommended to use the latest `"format_version": 2` for custom content.
 
 ### UUID
 
@@ -299,10 +302,10 @@ Now that you know each behavior that is needed to make a cow attack a player, yo
 
 1. Copy the following code:
 
-    :::code language="json" source="CodeSnippets/BehaviorPack/cow.json" range="183-204":::
+    :::code language="json" source="CodeSnippets/BehaviorPack/cow.json" range="185-206":::
 
 1. Navigate to the `components` container in the **cow.json** file.
-1. Below the behavior `minecraft:pushable`, after the comma ending the behavior, press Enter to add a new line.
+1. Below the behavior `minecraft:conditional_bandwidth_optimization`, after the comma ending the behavior, press Enter to add a new line.
 1. Paste the code on the new line.
 
     1. If there is another behavior after `minecraft:attack`, add a comma after the closing bracket.
