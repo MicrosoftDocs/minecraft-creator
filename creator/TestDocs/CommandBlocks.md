@@ -55,7 +55,7 @@ These arrows will always point towards the player when placing down. The arrows 
 
 Click the **Use** button (right-click for Windows 10 OS), to open up the command block user interface.
 
-## command block user interface
+## Command Block User Interface
 
 ![Overview of the command block graphical user interface](Media/CommandBlocks/commandblockgui.png)
 
@@ -91,7 +91,7 @@ The Scoreboard is a gameplay system that exists within Minecraft that can keep t
     1. The command is adding a brand new objective called Wool_Placed. Dummy fills the argument since scores can only be adjusted via commands.
 1. Enter the following command: `/scoreboard players set @p wool_placed 0`.
 
-### Setting up the first command block
+### Setting up the first Command Block
 
 Now that we have looked at the settings of a command block, let’s set up the first block to detect a certain type of block in a location.
 
@@ -116,7 +116,7 @@ If you are following this tutorial, you will be in a flat world. The flat world 
 1. In the Command Input section, input the following: `/testforblock 0 4 0 wool -1`
 1. Close the GUI.
 
-## command block chains
+## Command Block Chains
 
 Command blocks have multiple types it can be set to. A command block set to a Chain type means that it will execute its' command if the previous command block executed. You can connect multiple types of command blocks and chain them together to execute a series of logic. The next step in the gameplay loop is to check if the player is able to receive a reward.
 
