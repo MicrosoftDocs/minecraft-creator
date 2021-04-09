@@ -27,7 +27,7 @@ It’s recommended that the following be completed before beginning this tutoria
 
 ## Building the Behavior Pack
 
-A behavior pack is a type of pack that allows creators to add, remove or alter behaviors of entities within Minecraft: Bedrock Edition. Within those entity files, behaviors are what drive each entity to perform certain actions, such as a flock of chickens following a feather or whether a zombie will attack a player or another entity.
+A behavior pack is a type of pack that allows creators to add, remove or alter gameplay behavior of entities within Minecraft: Bedrock Edition. Within those entity files, behaviors are what drive each entity to perform certain actions, such as a flock of chickens following a feather or whether a zombie will attack a player or another entity.
 
 Behaviors give creators the ability to change the way entities can act in the world. In this section, you will set up a folder for a new Behavior Pack called **HelloWorldBP**.
 
@@ -83,7 +83,7 @@ Similar to the resource pack manifest file, a series of UUIDs will need to be ge
 
 ### Dependency
 
-For a behavior pack, you can add a 3rd section to the manifest.json file called Dependencies. Dependency creates a link between a Behavior pack and a Resource pack via UUID located in the header section of the Resource pack manifest.json. Add a dependency for your helloWorldRP resource pack you previously created and set it to automatically load in when the behavior pack is loaded.
+For a behavior pack, you can add a 3rd section to the manifest.json file called Dependencies. Dependency creates a link between a Behavior pack and a Resource pack via UUID located in the header section of the Resource pack manifest.json. Add a dependency for your helloWorldRP resource pack you previously created and set it to automatically activate when the behavior pack is activated.
 
 Below is an example of what the completed Behavior Pack Manifest File will look like.
 
