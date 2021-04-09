@@ -5,9 +5,9 @@ title: Introduction to resource packs
 ms.prod: gaming
 ---
 
-# Introduction to resource packs
+# Introduction to Resource Packs
 
-Before building your first Add-On, you will need to create a pack in order to add any custom content in Minecraft: Bedrock Edition. There are two types of packs that a creator can make: resource and Behavior packs. In this tutorial, you will learn about resource packs.
+Before building your first Add-On, you will need to create a pack in order to add any custom content in Minecraft: Bedrock Edition. There are two types of packs that a creator can make: resource and behavior packs. In this tutorial, you will learn about resource packs.
 
 A **resource pack** is a folder structure that will contain all of your custom models, sounds, textures and any custom content that is made. resource packs are commonly used to add user generated content to Minecraft in order to augment a player's experience.
 
@@ -31,7 +31,7 @@ It’s recommended that the following be completed before beginning this tutoria
 In order to create a new resource pack, you will need to create a new folder to contain a manifest file that can be read by Minecraft, and the custom content that will be loaded into the game.
 
 1. Open up your game location folder **com.mojang**
-1. Double-click on the folder **resource_pack**.
+1. Double-click on the folder **resource_packs**.
 1. Right-click in the File Explorer window and select **New** and then **Folder** to create a new folder.
 1. Name the new folder **HelloWorldRP**.
 1. Double-click on **HelloWorldRP** to open the folder.
@@ -58,8 +58,9 @@ Since the file is written in JSON, Minecraft will be able to parse the informati
 
 ```json
 	{
-	  "format_version": "1.16.0",
-	  "header": {	    "description": "My First Add-On!",
+	  "format_version": 2,
+	  "header": {    
+        "description": "My First Add-On!",
 	    "name": "Hello WorldRP",
 	    "uuid":"",
 	    "version": [1, 0, 0],
@@ -87,7 +88,7 @@ Universally Unique Identifier, or UUID for short, is a unique number used to ide
 1. Copy and paste the new UUID into the modules section in-between the quotation marks.
 1. Save the manifest file.
 
-## Changing the Dirt block
+## Changing the dirt block
 
 With the manifest file completed, you can now start adding custom content to Minecraft. Let’s get started by applying a new texture to the vanilla dirt block.
 
@@ -121,7 +122,7 @@ You can now design a pattern or any artwork in the editor. In this example, a si
 Now that the pack has both a manifest file and a texture, you can now launch Minecraft and test your new Add-On.
 
 > [!IMPORTANT]
-> * pack Stacking** is when content is loaded on top of vanilla content causing each object that has the same name in both packs to be overwritten by the *latest* applied pack (in our example, the Dirt texture is overwritten by our custom texture).
+> **Pack Stacking** is when content is loaded on top of vanilla content causing each object that has the same name in both packs to be overwritten by the *latest* applied pack (in our example, the Dirt texture is overwritten by our custom texture).
 >
 > If another pack that uses the dirt.png file is loaded **after** helloWorldBP, then Minecraft will use the latest dirt.png that was applied.
 
