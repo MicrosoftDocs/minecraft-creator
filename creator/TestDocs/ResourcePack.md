@@ -77,6 +77,9 @@ Since the file is written in JSON, Minecraft will be able to parse the informati
 	}
 ```
 
+> [!NOTE]
+> For `format_version`, `2` is used as the value for the manifest.json file. While `"1.16.0` or `[1.16.0]` are used in vanilla manifest files, it is recommended to use the latest `"format_version": 2` for custom content.
+
 ### UUID
 
 Universally Unique Identifier, or UUID for short, is a unique number used to identify different software. For Minecraft, the UUID is used to define a specific pack and prevent any duplicate software from causing issues. For both header and modules, there will need to be 2 different UUID numbers entered between the quotes. You can use an online UUID Generator such as [UUID Generator](https://www.uuidgenerator.net/).

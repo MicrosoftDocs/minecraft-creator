@@ -209,3 +209,15 @@ Now that both of the packs are set up and completed, the last thing is to add th
 1. Save and close.
 
 In the code above, you are setting the name of the block to be `Canvas Block` while in-game.
+
+### Testing the block
+
+With the canvas block defined in both the behavior pack and resource pack, you can now test it in-game.
+
+>[!IMPORTANT]
+>You’ll also need to have a Minecraft world where cheats are enabled in order to add the block to your inventory.
+>
+>You will also need to have both Hello World packs enabled in the world in order to get access to the canvas block.
+
+1. Open up the chat dialogue box (T or Enter on Windows 10 OS).
+1. Type the following command: `/give @p helloworld:canvasblock`

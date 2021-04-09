@@ -50,25 +50,28 @@ In order to load a behavior pack into Minecraft, a manifest file will need to be
 1. Copy/Paste the following text into your text editor.
 
 ```json
-	{
-	  "format_version": 2,
-	  "header": {
-	    "description": "My First Add-On!",
-	    "name": "HelloWorldBP",
-	    "uuid":"",
-	    "version": [1, 0, 0],
-	    "min_engine_version": [1, 16, 0]
-	  },
-	  "modules": [
-	    {
-	      "description": "My First Add-On!",
-	      "type": "data",
-	      "uuid": "",
-	      "version": [1, 0, 0]
-	    }
-	  ]
-	}
+{
+  "format_version": 2,
+  "heSader": {
+    "description": "My First Add-On!",
+    "name": "HelloWorldBP",
+    "uuid":"",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 16, 0]
+  },
+  "modules": [
+    {
+      "description": "My First Add-On!",
+      "type": "data",
+      "uuid": "",
+      "version": [1, 0, 0]
+    }
+  ]
+}
 ```
+
+> [!NOTE]
+> For `format_version`, `2` is used as the value for the manifest.json file. While `"1.16.0` or `[1.16.0]` are used in vanilla manifest files, it is recommended to use the latest `"format_version": 2` for custom content.
 
 ### UUID
 
