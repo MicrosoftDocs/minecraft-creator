@@ -11,7 +11,7 @@ ms.prod: gaming
 
 A GameTest is a miniature environment along with a set of starting conditions, such as a set of mobs or items.  After that environment plays out in the Minecraft world for a little while, you can run conditional code to evaluate that your expectations were met.  
 
-Building sets of GameTests requires building out your GameTests via a Behavior Pack, and writing some simple JavaScript code.
+Building sets of GameTests requires building out your GameTests via a behavior Pack, and writing some simple JavaScript code.
 
 >[!IMPORTANT]
 >GameTest Framework is still experimental. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.  Check the Minecraft Changelog for details on any changes to GameTest Framework.
@@ -28,11 +28,11 @@ It’s recommended that the following be completed before beginning this tutoria
 
 ### GameTest Elements
 
-Within a Behavior Pack, every GameTest consists of a few elements:
+Within a behavior pack, every GameTest consists of a few elements:
 
-- **A structure** which defines the physical environment for the test as well as any starting entities.  Within Minecraft, you can create new structures by designing them out (typically in Creative Mode) and then placing a Structure Block nearby. You can then use the Structure Block to save out the results to disk. This creates an .mcstructure file which you can add to your test.  
+- **A structure** which defines the physical environment for the test as well as any starting entities.  Within Minecraft, you can create new structures by designing them out (typically in Creative Mode) and then placing a structure block nearby. You can then use the structure block to save out the results to disk. This creates an .mcstructure file which you can add to your test.  
 
-When GameTests are run in Minecraft, your structure will be loaded and expanded into Minecraft. You should note that this Structure will be created and run in a generally flat broader world, so you'll want to ensure that any mobs are penned into the structures you create.
+When GameTests are run in Minecraft, your structure will be loaded and expanded into Minecraft. You should note that this structure will be created and run in a generally flat broader world, so you'll want to ensure that any mobs are penned into the structures you create.
 
 GameTests then use JavaScript code to define the test, including:
 
@@ -46,7 +46,7 @@ With this simple foundation, GameTests can be created with a few lines of JavaSc
 
 ## Start building your own tests
 
-To get started, you'll want to begin with your own Behavior Pack. To begin your behavior pack, create a new folder in the `development_behavior_packs` folder called `startertests`.
+To get started, you'll want to begin with your own behavior pack. To begin your behavior pack, create a new folder in the `development_behavior_packs` folder called `startertests`.
 
 >[!IMPORTANT]
 >To build and run your own GameTests, you must use the latest Beta versions of Minecraft (version 1.16.230+). See [Minecraft Betas](https://aka.ms/mcbeta) for more information.
@@ -107,6 +107,7 @@ In addition, you will need to establish dependencies on Minecraft APIs and GameT
       }
     ]
 ```
+
 >[!WARNING]
 >Note that here `uuid` refers to core Minecraft components. You should **not** change these values within the dependencies section.
 
@@ -220,9 +221,9 @@ function assertEntityNotInArea(test, entityType, xFrom, yFrom, zFrom, xTo, yTo, 
 
 Some things to observe in this test function:
 
-- You can use the `spawn` method to create new Mobs in your test.
+- You can use the `spawn` method to create new mobs in your test.
 - Coordinates used in APIs like spawn are relative to within your .MCStructure.
-- `assert` functions cause code execution to stop if the conditions described in the method are not true.  Here, utilizing a helper function, this code asserts that a chicken entity is no longer in the structure. If one is found within any of the blocks in the structure, that `assert` code will throw an error.  But if no chicken is found, we make our way to the test.succeed line of code, and the test passes.
+- `assert` functions cause code execution to stop if the conditions described in the method are not true.  Here, utilizing a helper function, this code asserts that a chicken entity is no longer in the structure. If one is found within any of the blocks in the structure, that `assert` code will throw an error.  However, if no chicken is found, we make our way to the test.succeed line of code, and the test passes.
 
 The full JavaScript StarterTests.js file looks like:
 
@@ -286,7 +287,6 @@ In your behavior pack, go to your structures folder and create a subfolder calle
 Place this mediumglass.mcstructure file within a subfolder called startertests. Make sure that you match the casing you specified in your JavaScript code, so make it all lower-case. Copy the mediumglass.mcstructure file to that folder. Your folder should look like this:
 
 ![Default starter folder layout](Media/GameTestBuildYourFirstGameTest/startertestfolder.png)
-
 
 ## Running your tests within the game
 

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Introduction to the GameTest Framework
 
-GameTest Framework is a new toolset available to creators to build and test any new content created by you.  Within the world of Minecraft, you can express infinite forms of gameplay and variability in your content. With all these creative possibilities, sometimes a Creator may need additional tools to help validate that your experiences are running just as you expect it, and assist you as you customize aspects of the broader Minecraft environment.
+GameTest Framework is a new toolset available to creators to build and test any new content created by you.  Within the world of Minecraft:Bedrock Edition, you can express infinite forms of gameplay and variability in your content. With all these creative possibilities, sometimes you may need additional tools to help validate that your experiences are running just as you expect it, and assist you as you customize aspects of the broader Minecraft environment.
 
 What happens if you change the behavior of Villagers? or introduce a new Mob? Small changes can have unexpectedly big impacts that can be really hard to anticipate. With the GameTest Framework - a system for establishing sets of tests - you can track and repeat to ensure everything works the way you intend.  
 
@@ -17,7 +17,7 @@ Submitting and using GameTests can be a great way to establish and communicate t
 
 ### Requirements
 
-To get started, you'll want to begin with understanding how a Behavior Pack works within Minecraft.  To read more about creating behavior packs, see this topic:
+To get started, you'll want to begin with understanding how a behavior pack works within Minecraft.  To read more about creating behavior packs, see this topic:
 
 > [!div class="checklist"]
 > - [Introduction To Behavior Packs](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/behaviorpack?branch=main) 
@@ -32,7 +32,7 @@ Let's examine a potential use case for a GameTest. Let's say that we want to val
 
 To run tests within a game, you’ll want to create a new world or start with a copy of your existing adventure and experience.  
 
-Within this GameTest world, you'll want to ensure that cheats are enabled and that the GameTest Framework experiment is turned on.  If you've created GameTest Framework tests within behavior packs, you'll want to add those Behavior Packs in your world.
+Within this GameTest world, you'll want to ensure that cheats are enabled and that the GameTest Framework experiment is turned on. If you've created GameTest Framework tests within behavior packs, you'll want to add those behavior packs in your world.
 
 >[!IMPORTANT]
 >You’ll also likely want to specify some additional changes in your environment:
@@ -55,12 +55,11 @@ You will see the test run, and if the test completes successfully, you will see 
 
 ![Image of a command successfully passing.](Media/GameTestGettingStarted/runcommandpassed.png)
 
-
 To run the default set of tests, use `/gametest runall`.
 
 ## What's Next?
 
-Building sets of GameTests requires building out your GameTests via a behavior pack, and writing some simple JavaScript code.  When building out your own tests, you will likely want to start a new Test Behavior Pack that is just focused on adding additional GameTests.
+Building sets of GameTests requires building out your GameTests via a behavior pack, and writing some simple JavaScript code.  When building out your own tests, you will likely want to start a new test behavior pack that is just focused on adding additional GameTests.
 
 >[!IMPORTANT]
 >To build and run your own GameTests, you must use the latest Beta versions of Minecraft (version 1.16.230+). See [Minecraft Betas](https://aka.ms/mcbeta) for more information.
