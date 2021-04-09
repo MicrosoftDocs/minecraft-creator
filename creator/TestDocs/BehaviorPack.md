@@ -13,7 +13,7 @@ In this tutorial, you will learn the following:
 
 > [!div class="checklist"]
 >
-> - How to build a **dependency** link between Resource Packs and Behavior Packs.
+> - **Dependency** links between Resource Packs and Behavior Packs.
 > - What components are and how they are used to define Minecraft mobs.
 > - How to add behaviors to an existing mob.
 
@@ -51,7 +51,7 @@ In order to load a behavior pack into Minecraft, a manifest file will need to be
 
 ```json
 	{
-	  "format_version": 2,
+	  "format_version": 1.16.0,
 	  "header": {
 	    "description": "My First Add-On!",
 	    "name": "HelloWorldBP",
@@ -89,7 +89,7 @@ Below is an example of what the completed Behavior Pack Manifest File will look 
 
 ```json
 {
-  "format_version": 2,
+  "format_version": "1.16.0",
   "header": {
     "description": "My First Add-On!",
     "name": "Hello WorldBP",

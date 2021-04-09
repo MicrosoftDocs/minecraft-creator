@@ -16,7 +16,7 @@ In this tutorial you will learn the following:
 > - Using JSON to define a new block.
 > - Assigning textures to a new block.
 > - What are some of the behaviors and components that blocks have access to.
-> - Introducing **.lang** and how it's used for in-game text.
+> - A quick look at **.lang** and how it's used for in-game text.
 
 ### Requirements
 It’s recommended that the following be completed before beginning this tutorial.
@@ -49,7 +49,7 @@ The blocks.json file has a similar set up to the manifest.json and has requireme
 
     ```json
     {
-	  "format_version": 2,
+	  "format_version": "1.16.0",
       "HelloWorldRP:canvasblock": {
         "textures": {
             "up": "log_oak_top.png",
@@ -132,7 +132,7 @@ In the file, you will need to define what the block is, similar to the `manifest
 
 ```json
 {
-    "format_version": 1.16.0,
+    "format_version": "1.16.0",
     "minecraft:block": {
         "description": {
             "identifier": "HelloWorldBP:canvasblock",
