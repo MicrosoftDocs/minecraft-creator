@@ -1,7 +1,7 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Introduction to Adding Custom Blocks
+title: How to add a Custom Block
 ms.prod: gaming
 ---
 
@@ -55,7 +55,7 @@ The blocks.json file has a similar set up to the manifest.json and has requireme
         "textures": {
             "up": "log_oak_top",
             "down": "log_oak_top",
-            "side": "canvasBlock"
+            "side": "canvasblock"
             },
         "sound":"dirt"
         }

@@ -180,6 +180,8 @@
         "is_pushable": true,
         "is_pushable_by_piston": true
       },
+      "minecraft:conditional_bandwidth_optimization": {
+      },
       "minecraft:behavior.nearest_attackable_target":{
         "priority": 2,
         "must_see":true,

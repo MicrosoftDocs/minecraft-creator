@@ -302,7 +302,7 @@ Now that you know each behavior that is needed to make a cow attack a player, yo
     :::code language="json" source="CodeSnippets/BehaviorPack/cow.json" range="183-204":::
 
 1. Navigate to the `components` container in the **cow.json** file.
-1. Below the behavior `minecraft:pushable`, after the comma ending the behavior, press Enter to add a new line.
+1. Below the behavior `minecraft:conditional_bandwidth_optimization`, after the comma ending the behavior, press Enter to add a new line.
 1. Paste the code on the new line.
 
     1. If there is another behavior after `minecraft:attack`, add a comma after the closing bracket.
