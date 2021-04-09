@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Introduction to Behavior Packs
 
-Before building your first Add On, you will need to create a Pack in order to add any custom content in Minecraft. There are two types of Packs that a creator can make, Resource and Behavior Packs. This tutorial will go over how Behavior Packs are created and adding a series of attacking behaviors to an in-game Cow mob.
+Before building your first Add-On, you will need to create a pack in order to add any custom content in Minecraft: Bedrock Edition. There are two types of packs that a creator can make; resource and behavior packs. This tutorial will go over how behavior packs are created and how to add a series of attacking behaviors to an in-game cow mob.
 
 In this tutorial, you will learn the following:
 
@@ -27,7 +27,7 @@ It’s recommended that the following be completed before beginning this tutoria
 
 ## Building the Behavior Pack
 
-A Behavior pack is a type of pack that allows creators to add, remove or alter behaviors of entities within Minecraft. Behaviors are the gameplay characteristics used by entities in Minecraft. Behaviors are what drive each entity to perform certain actions, such as a flock of chickens following a feather or whether a zombie will attack a player or another entity.
+A behavior pack is a type of pack that allows creators to add, remove or alter behaviors of entities within Minecraft: Bedrock Edition. Within those entity files, behaviors are what drive each entity to perform certain actions, such as a flock of chickens following a feather or whether a zombie will attack a player or another entity.
 
 Behaviors give creators the ability to change the way entities can act in the world. In this section, you will set up a folder for a new Behavior Pack called **HelloWorldBP**.
 
@@ -51,7 +51,7 @@ In order to load a behavior pack into Minecraft, a manifest file will need to be
 
 ```json
 	{
-	  "format_version": "1.16.0",
+	  "format_version": 2,
 	  "header": {
 	    "description": "My First Add-On!",
 	    "name": "HelloWorldBP",
@@ -89,7 +89,7 @@ Below is an example of what the completed Behavior Pack Manifest File will look 
 
 ```json
 {
-  "format_version": "1.16.0",
+  "format_version": 2,
   "header": {
     "description": "My First Add-On!",
     "name": "Hello WorldBP",
@@ -108,7 +108,7 @@ Below is an example of what the completed Behavior Pack Manifest File will look 
     ],
   "dependencies": [
     {
-      "uuid":"",
+      "uuid":"<Insert the UUID from HelloWorldRP>",
       "version":[1,0,0]
     }
  ]
@@ -129,14 +129,14 @@ Each character’s behaviors are defined using a json file. For this section, yo
 2. Name the folder **entities**.
 3. Verify that you have downloaded the Vanilla Behavior Pack located in the Requirements section of this tutorial.
 4. Unzip the folder in order to access the files within.
-5. Navigate to the **entites** folder located in the unzipped pack.
-6. Copy the **cow.json** and paste it into the **HelloWorldBP/entites** folder.
+5. Navigate to the **entities** folder located in the unzipped pack.
+6. Copy the **cow.json** and paste it into the **HelloWorldBP/entities** folder.
 
 Now with a copy of the cow.json file located in the HelloWordBP, you can make changes and edit the behavior of the existing cow mob. Cow.json, like other Minecraft entity json files can be broken down into a series of sections.
 
-### Minecraft:Entity
+### minecraft:entity
 
-The first section is the `Minecraft:entity`. This container is used to define what the entity is. Description, Components Groups, Components, and Events are contained under the `minecraft:entity object`. In the cow.json, you can see the following set for its description.
+The first section is the `minecraft:entity`. This container is used to define what the entity is. Description, Components Groups, Components, and Events are contained under the `minecraft:entity object`. In the cow.json, you can see the following set for its description:
 
 ```json
 "minecraft:entity": {
@@ -230,17 +230,17 @@ Events are actions that interface with Minecraft.
 
 In the cow.json file shown above, an entity_spawned event is defined here in order to spawn either an adult cow or a baby cow in the world.
 
-- **`randomize`** allows the use of defining the odds of the entity spawning in either group. Here, there is a 95/100 chance it could spawn an adult cow or a 5/100 to spawn a baby cow `randomize` does not work off of a percentage system. The odds are calculated via the sum of the `"weight"` definition. If you were to change `"weight": 5`, to `"weight":25`, it would have a 25/120 chance of spawning.
+- **`randomize`** allows the use of defining the odds of the entity spawning in either group. Here, there is a 95/100 chance it could spawn an adult cow or a 5/100 chance to spawn a baby cow. Note that `randomize` does not work off of a percentage system. Instead, the odds are calculated via the sum of the `"weight"` definition. If you were to change `"weight": 5`, to `"weight":25`, it would have a 25/120 chance of spawning.
 
 ## Adding new behaviors
 
 Now that you know the 4 areas that define an entity, you will add new behaviors to an existing mob. In this example, you will add the following behaviors:
 
-- `Minecraft:behavior.nearest_attackable_target` to define what the cow is able to attack.
-- `Minecraft:behavior.meleeattack` to allow every cow the ability to inflict damage on its target.
-- `Minecraft:attack` to define how much damage each attack does.
+- `minecraft:behavior.nearest_attackable_target` to define what the cow is able to attack.
+- `minecraft:behavior.meleeattack` to allow every cow the ability to inflict damage on its target.
+- `minecraft:attack` to define how much damage each attack does.
 
-### Minecraft:behavior.nearest_attackable_target
+### minecraft:behavior.nearest_attackable_target
 
 In order for the cow to attack, it will need to find a target that can be attacked. In this example, you will set the filter to look for `player` in order to make the cows a hostile mob and attack any player.
 
@@ -271,9 +271,9 @@ In the sample above, the **nearest_attackable_target** is a component that handl
 - **`max_dist`** is the distance in blocks between the cow and the potential target in the filter.
 - **`must_see`** is a Boolean that determines if the cow needs to have vision on its target. The cow will have to look directly at the player in order for the cow to consider the player a target.
 
-### Minecraft:behavior.meleeattack
+### minecraft:behavior.meleeattack
 
-Once the cow is able to located a target, the next step is to allow an attack using the `behavior.meleeattack` component.
+Once the cow is able to located a target, the next step is to allow an attack using the `minecraft:behavior.meleeattack` component.
 
 ```JSON
 "minecraft:behavior.melee_attack": {
@@ -281,7 +281,7 @@ Once the cow is able to located a target, the next step is to allow an attack us
       },
 ```
 
-### Minecraft:attack
+### minecraft:attack
 
 Now that the cow can look for a target and attack, you will need to add a value to deal damage for each attack.
 
@@ -295,7 +295,7 @@ In the snippet above, you can see that the component has a single argument. `"da
 
 #### Adding the behaviors
 
-Now that you know what each behavior is needed to make a cow attack a player, You will now add the behaviors to the cow.json file in the **HelloWorldBP/entites** folder.
+Now that you know what each behavior is needed to make a cow attack a player, You will now add the behaviors to the cow.json file in the **HelloWorldBP/entities** folder.
 
 1. Copy the following code:
 
@@ -319,12 +319,12 @@ Shown below is the completed component's section with with the added behavior.
 
 ### Testing the Pack
 
-Now that the pack has both a manifest file and a modification for the cow entity, you can now launch Minecraft and test your new Add-on. As stated in the Resource Pack, **Pack Stacking** will work for Behavior Packs as well. This means that content is loaded with any and all vanilla content being loaded first, followed by any additional Add-ons. Since the cow is using the cow.json namespace, every cow will inherit the new behaviors.
+Now that the pack has both a manifest file and a modification for the cow entity, you can now launch Minecraft and test your new Add-On. As stated in the Resource Pack, **Pack Stacking** will work for Behavior Packs as well. This means that content is loaded with any and all vanilla content being loaded first, followed by any additional Add-Ons. Since the cow is using the cow.json namespace, every cow will inherit the new behaviors.
 
 1. Launch **Minecraft**.
 1. When Minecraft has launched and reached the main menu, select **Play**.
 1. Select **Create a New World**.
-1. Under **Settings**, scroll down to the **Add-on** section.
+1. Under **Settings**, scroll down to the **Add-On** section.
 1. Click on **Behavior Packs** to see all available packs.
 1. Under all of the packs, select **HelloWorldBP** to add the pack to the world.
 1. Launch your world.
