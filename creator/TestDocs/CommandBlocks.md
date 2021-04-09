@@ -84,7 +84,7 @@ A use case of command blocks is allowing creators to create gameplay loops withi
 
 ### Scoreboard
 
-The Scoreboard is a gameplay system that exists within Minecraft that can keep track of players, objectives, and score values. The scoreboard enables c a wide use of options to create unique gameplay styles. In this tutorial, you will have a single objective and value in order to track when a player has completed the task.
+The Scoreboard is a gameplay system that exists within Minecraft that can keep track of players, objectives, and score values. The scoreboard enables a wide use of options to create unique gameplay styles. In this tutorial, you will have a single objective and value in order to track when a player has completed the task.
 
 1. In Minecraft, open up the chat dialogue box (T or Enter on Windows 10 OS)
 1. Enter the following command: `/scoreboard objectives add wool_placed dummy`.
