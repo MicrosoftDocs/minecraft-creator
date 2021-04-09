@@ -58,7 +58,7 @@ Since the file is written in JSON, Minecraft will be able to parse the informati
 
 ```json
 	{
-	  "format_version": 2,
+	  "format_version": 1.16.0,
 	  "header": {	    "description": "My First Add-On!",
 	    "name": "Hello WorldRP",
 	    "uuid":"",
