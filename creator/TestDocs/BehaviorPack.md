@@ -32,7 +32,7 @@ A behavior pack is a type of pack that allows creators to add, remove or alter g
 Behaviors give creators the ability to change the way entities can act in the world. In this section, you will set up a folder for a new Behavior Pack called **HelloWorldBP**.
 
 1. Open up your game location folder **com.mojang**.
-1. Double-click on the folder **behavior_packs**.
+1. Double-click on the folder **development_behavior_packs**.
 1. Right-click in the File Explorer window and select **New** and then **Folder** to create a new folder.
 1. Name the new folder **HelloWorldBP**.
 1. Double-click on **HelloWorldBP** to open the folder.
@@ -136,7 +136,7 @@ Now with a copy of the cow.json file located in the HelloWordBP, you can make ch
 
 ### minecraft:entity
 
-The first section is the `minecraft:entity`. This container is used to define what the entity is. Description, Components Groups, Components, and Events are contained under the `minecraft:entity object`. In the cow.json, you can see the following set for its description:
+The first section is the `minecraft:entity`. This container is used to define what the entity is. Description, Components Groups, Components, and Events are contained under the `minecraft:entity` object. In the cow.json, you can see the following set for its description:
 
 ```json
 "minecraft:entity": {
@@ -155,7 +155,7 @@ The first section is the `minecraft:entity`. This container is used to define wh
 
 ### Component Groups
 
-Component groups are used to help organize and define a collection of behaviors for the entity. Component groups allow for variation in behaviors for similar types of mobs such as creating an adult and a child version of a single mob entity.  In cow.json, there are 2 groups;  `"minecraft:cow_baby"` and `"minecraft:cow_adult"`. Shown below is the cow_baby component group.
+Component groups are used to help organize and define a collection of behaviors for the entity. Component groups allow for variation in behaviors for similar types of mobs such as creating an adult and a child version of a single mob entity.  In cow.json, there are 2 groups: `"minecraft:cow_baby"` and `"minecraft:cow_adult"`. Shown below is the cow_baby component group.
 
 ```json
 "component_groups": {
@@ -298,7 +298,6 @@ In the snippet above, you can see that the component has a single argument. `"da
 Now that you know what each behavior is needed to make a cow attack a player, You will now add the behaviors to the cow.json file in the **HelloWorldBP/entities** folder.
 
 1. Copy the following code:
-
 
     :::code language="json" source="CodeSnippets/BehaviorPack/cow.json" range="183-204":::
 

@@ -15,7 +15,7 @@ In this tutorial, you will learn the following:
 
 > [!div class="checklist"]
 > - Understand how a **resource pack** is created. 
-> -  How a **manifest file** is created.
+> - How a **manifest file** is created.
 > - How custom textures are loaded into Minecraft.
 > - The concept of * pack Stacking** when working with Add-On content.
 
@@ -31,7 +31,7 @@ It’s recommended that the following be completed before beginning this tutoria
 In order to create a new resource pack, you will need to create a new folder to contain a manifest file that can be read by Minecraft, and the custom content that will be loaded into the game.
 
 1. Open up your game location folder **com.mojang**
-1. Double-click on the folder **resource_packs**.
+1. Double-click on the folder **development_resource_packs**.
 1. Right-click in the File Explorer window and select **New** and then **Folder** to create a new folder.
 1. Name the new folder **HelloWorldRP**.
 1. Double-click on **HelloWorldRP** to open the folder.
