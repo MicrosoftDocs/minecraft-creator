@@ -6,7 +6,7 @@ ms.prod: gaming
 ---
 # Getting Started with command blocks
 
-Command blocks are a specialized type of block within a Minecraft:Bedrock Edition world that allows the use of console commands in game. Command blocks are able to extend and build completely new experiences for players to experience.
+Command blocks are a specialized type of block within a Minecraft: Bedrock Edition world that allows the use of console commands in game. Command blocks are able to extend and build completely new experiences for players to experience.
 
 In this tutorial, you will learn the following;
 
@@ -53,9 +53,9 @@ When placing a block, you may notice arrows on the side.
 
 These arrows will always point towards the player when placing down. The arrows show the flow of execution, as shown in the image as the block on the left will execute first, followed by the middle command block and finally the last block on the right will execute.
 
-Click the **Use** button (right-click for Windows 10 OS), to open up the command block GUI.
+Click the **Use** button (right-click for Windows 10 OS), to open up the command block user interface.
 
-## command block GUI
+## command block user interface
 
 ![Overview of the command block graphical user interface](Media/CommandBlocks/commandblockgui.png)
 
@@ -105,18 +105,18 @@ Now that we have looked at the settings of a command block, let’s set up the f
 
 The /testforblock command will look for a specific block at a specific point that the creator can specify. In the example of `/testforblock 0 0 0 wool`, you can see that the command is looking for any type of wool block located at 0, 0, 0.
 
-`/testforblock <position: x y z> <tileName:block> [dataValue: int]`
+`/testforblock <position: x y z> <tilename:block> [datavalue: int]`
 
-- **Position** is the coordinates in the world where the command block will look for the specific block.
-- **TileName** is the type of block you are looking for. This must be the Bedrock Block ID of the block.
-- **DataValue** is an extra argument used to handle variations of the same block. For instance, wool has many different colors. If you set it to `wool` or `wool -1`, it will look for all types of wool. If you set it to `wool 1`, it will only look for orange wool.
+- **position** is the coordinates in the world where the command block will look for the specific block.
+- **tilename** is the type of block you are looking for. This must be the Bedrock Block ID of the block.
+- **datavalue** is an extra argument used to handle variations of the same block. For instance, wool has many different colors. If you set it to `wool` or `wool -1`, it will look for all types of wool. If you set it to `wool 1`, it will only look for orange wool.
 
 If you are following this tutorial, you will be in a flat world. The flat world has no blocks placed above the height, or y, value of 4. Let’s set the command input to look for any type of wool block near the origin of the map.
 
 1. In the Command Input section, input the following: `/testforblock 0 4 0 wool -1`
 1. Close the GUI.
 
-## command block Chains
+## command block chains
 
 Command blocks have multiple types it can be set to. A command block set to a Chain type means that it will execute its' command if the previous command block executed. You can connect multiple types of command blocks and chain them together to execute a series of logic. The next step in the gameplay loop is to check if the player is able to receive a reward.
 

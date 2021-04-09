@@ -34,7 +34,7 @@ It’s recommended that the following be completed before beginning this tutoria
 Block entity definitions are handled differently in the resource pack. Blocks are stored in a single JSON file that will contain definitions for each custom block.
 
 1. Open up your game location folder **com.mojang**
-1. Double-click on the folder **resource_pack**.
+1. Double-click on the folder **resource_packs**.
 1. Double-click on the folder **HelloWorldRP**.
     1. If you do not have this folder, please refer to the tutorials in the Requirements.
 1. Right-click in the Explorer window and select **New**, then select **Text Document**.
@@ -49,15 +49,15 @@ The blocks.json file has a similar set up to the manifest.json and has requireme
 
     ```json
     {
-	  "format_version": "1.16.0",
-      "HelloWorldRP:canvasblock": {
+    "format_version": "1.16.0",
+      "helloworldrp:canvasblock": {
         "textures": {
             "up": "log_oak_top.png",
             "down": "log_oak_top.png",
             "side": "canvasBlock.png"
             },
         "sound":"dirt"
-        },
+        }
     }    
     ```
 
@@ -94,7 +94,7 @@ With the block defined in the **blocks.json** file, the next step is to associat
   }
 ```
 
-1. Save the file.
+6. Save the file.
 
 ### The Canvas Texture
 
@@ -135,7 +135,7 @@ In the file, you will need to define what the block is, similar to the `manifest
     "format_version": "1.16.0",
     "minecraft:block": {
         "description": {
-            "identifier": "HelloWorldBP:canvasblock",
+            "identifier": "helloworldbp:canvasblock",
             "is_experimental": false,
             "register_to_creative_menu": true
         },
@@ -164,7 +164,7 @@ The identifier that was used in the resource pack is defined here. The block is 
 }
 ```
 
-1. Save the file.
+2. Save the file.
 
 - **`destroy_time`** is how many player hits does it take to destroy this block.
 - **`explosion_resistance`** is how resistent the block is to explosions. Higher values mean the block is less likely to break.
