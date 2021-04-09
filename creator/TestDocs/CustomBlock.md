@@ -92,6 +92,7 @@ With the block defined in the **blocks.json** file, the next step is to associat
       "textures": "textures/blocks/canvasblock"
     }
   }
+}
 ```
 
 6. Save the file.
@@ -116,7 +117,7 @@ If you are creating a custom one:
 
 With the work in the resource pack done, the behavior pack will need to be updated with the canvas block's components.
 
-1. In **File Explorer**, Navigate to the folder **HelloWorldBP**, located in the **behavior_pack** folder.
+1. In **File Explorer**, Navigate to the folder **HelloWorldBP**, located in the **behavior_packs** folder.
 1. Right-click in the Explorer window and select **New**, then select **Folder**.
 1. Set the name to **blocks**.
 1. Double-click on **blocks** to open the folder.
