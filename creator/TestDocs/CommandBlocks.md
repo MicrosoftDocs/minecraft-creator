@@ -13,7 +13,7 @@ In this tutorial, you will learn the following;
 > [!div class="checklist"]
 >
 > - What are command blocks and how to access them in-game.
-> - How `/cheats` can be used via command blocks.
+> - How `/commands` can be used via command blocks.
 > - How command block chains work by stringing together multiple command blocks.
 > - Create a gameplay loop to reward a player after performing an action.
 
