@@ -7,13 +7,13 @@ ms.prod: gaming
 
 # Introduction to Behavior Packs
 
-Before building your first Add On, you will need to create a Pack in order to add any custom content in Minecraft. There are two types of Packs that a creator can make, Resource and Behavior Packs. This tutorial will go over how Behavior Packs are created and adding a series of attacking behaviors to an in-game Cow mob.
+Before building your first Add-On, you will need to create a pack in order to add any custom content in Minecraft: Bedrock Edition. There are two types of packs that a creator can make; resource and behavior packs. This tutorial will go over how behavior packs are created and how to add a series of attacking behaviors to an in-game cow mob.
 
 In this tutorial, you will learn the following:
 
 > [!div class="checklist"]
 >
-> - How to build a **dependency** link between Resource Packs and Behavior Packs.
+> - **Dependency** links between Resource Packs and Behavior Packs.
 > - What components are and how they are used to define Minecraft mobs.
 > - How to add behaviors to an existing mob.
 
@@ -27,12 +27,12 @@ It’s recommended that the following be completed before beginning this tutoria
 
 ## Building the Behavior Pack
 
-A Behavior pack is a type of pack that allows creators to add, remove or alter behaviors of entities within Minecraft. Behaviors are the gameplay characteristics used by entities in Minecraft. Behaviors are what drive each entity to perform certain actions, such as a flock of chickens following a feather or whether a zombie will attack a player or another entity.
+A behavior pack is a type of pack that allows creators to add, remove or alter gameplay behavior of entities within Minecraft: Bedrock Edition. Within those entity files, behaviors are what drive each entity to perform certain actions, such as a flock of chickens following a feather or whether a zombie will attack a player or another entity.
 
 Behaviors give creators the ability to change the way entities can act in the world. In this section, you will set up a folder for a new Behavior Pack called **HelloWorldBP**.
 
 1. Open up your game location folder **com.mojang**.
-1. Double-click on the folder **behavior_pack**.
+1. Double-click on the folder **development_behavior_packs**.
 1. Right-click in the File Explorer window and select **New** and then **Folder** to create a new folder.
 1. Name the new folder **HelloWorldBP**.
 1. Double-click on **HelloWorldBP** to open the folder.
@@ -50,25 +50,28 @@ In order to load a behavior pack into Minecraft, a manifest file will need to be
 1. Copy/Paste the following text into your text editor.
 
 ```json
-	{
-	  "format_version": 2,
-	  "header": {
-	    "description": "My First Add-On!",
-	    "name": "HelloWorldBP",
-	    "uuid":"",
-	    "version": [1, 0, 0],
-	    "min_engine_version": [1, 16, 0]
-	  },
-	  "modules": [
-	    {
-	      "description": "My First Add-On!",
-	      "type": "data",
-	      "uuid": "",
-	      "version": [1, 0, 0]
-	    }
-	  ]
-	}
+{
+  "format_version": 2,
+  "heSader": {
+    "description": "My First Add-On!",
+    "name": "HelloWorldBP",
+    "uuid":"",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 16, 0]
+  },
+  "modules": [
+    {
+      "description": "My First Add-On!",
+      "type": "data",
+      "uuid": "",
+      "version": [1, 0, 0]
+    }
+  ]
+}
 ```
+
+> [!NOTE]
+> For `format_version`, `2` is used as the value for the manifest.json file. While `"1.16.0` or `[1.16.0]` are used in vanilla manifest files, it is recommended to use the latest `"format_version": 2` for custom content.
 
 ### UUID
 
@@ -81,9 +84,9 @@ Similar to the resource pack manifest file, a series of UUIDs will need to be ge
 1. Copy and paste the new UUID into the Modules section in-between the quotation marks.
 1. Save the manifest file.
 
-### Dependency
+### Dependencies
 
-For a behavior pack, you can add a 3rd section to the manifest.json file called Dependencies. Dependency creates a link between a Behavior pack and a Resource pack via UUID located in the header section of the Resource pack manifest.json. Add a dependency for your helloWorldRP resource pack you previously created and set it to automatically load in when the behavior pack is loaded.
+For a behavior pack, you can add a 3rd section to the manifest.json file called Dependencies. Dependency creates a link between a Behavior pack and a Resource pack via UUID located in the header section of the Resource pack manifest.json. Add a dependency for your helloWorldRP resource pack you previously created and set it to automatically activate when the behavior pack is activated.
 
 Below is an example of what the completed Behavior Pack Manifest File will look like.
 
@@ -108,7 +111,7 @@ Below is an example of what the completed Behavior Pack Manifest File will look 
     ],
   "dependencies": [
     {
-      "uuid":"",
+      "uuid":"<Insert the UUID from HelloWorldRP>",
       "version":[1,0,0]
     }
  ]
@@ -129,14 +132,14 @@ Each character’s behaviors are defined using a json file. For this section, yo
 2. Name the folder **entities**.
 3. Verify that you have downloaded the Vanilla Behavior Pack located in the Requirements section of this tutorial.
 4. Unzip the folder in order to access the files within.
-5. Navigate to the **entites** folder located in the unzipped pack.
-6. Copy the **cow.json** and paste it into the **HelloWorldBP/entites** folder.
+5. Navigate to the **entities** folder located in the unzipped pack.
+6. Copy the **cow.json** and paste it into the **HelloWorldBP/entities** folder.
 
 Now with a copy of the cow.json file located in the HelloWordBP, you can make changes and edit the behavior of the existing cow mob. Cow.json, like other Minecraft entity json files can be broken down into a series of sections.
 
-### Minecraft:Entity
+### minecraft:entity
 
-The first section is the `Minecraft:entity`. This container is used to define what the entity is. Description, Components Groups, Components, and Events are contained under the `minecraft:entity object`. In the cow.json, you can see the following set for its description.
+The first section is the `minecraft:entity`. This container is used to define what the entity is. Description, Components Groups, Components, and Events are contained under the `minecraft:entity` object. In the cow.json, you can see the following set for its description:
 
 ```json
 "minecraft:entity": {
@@ -155,7 +158,7 @@ The first section is the `Minecraft:entity`. This container is used to define wh
 
 ### Component Groups
 
-Component groups are used to help organize and define a collection of behaviors for the entity. Component groups allow for variation in behaviors for similar types of mobs such as creating an adult and a child version of a single mob entity.  In cow.json, there are 2 groups;  `"minecraft:cow_baby"` and `"minecraft:cow_adult"`. Shown below is the cow_baby component group.
+Component groups are used to help organize and define a collection of behaviors for the entity. Component groups allow for variation in behaviors for similar types of mobs such as creating an adult and a child version of a single mob entity.  In cow.json, there are 2 groups: `"minecraft:cow_baby"` and `"minecraft:cow_adult"`. Shown below is the cow_baby component group.
 
 ```json
 "component_groups": {
@@ -185,7 +188,7 @@ In the cow.json sample shown above, you can see that the `"minecraft:cow_baby"` 
 
 ### Components
 
-Components are the global settings used to define and drive an entity.
+Components define behaviors and properties that you can assign to an entity to adapt how they behave.
 
 ```json
     "components": {
@@ -202,7 +205,7 @@ In the cow.json, you can see that the first two components are `"minecraft:type_
 
 ### Events
 
-Events are actions that interface with Minecraft.
+Events are actions you can take on the entity when a special condition is triggered by the entity's behavior.
 
 ```json
     "events": {
@@ -230,34 +233,38 @@ Events are actions that interface with Minecraft.
 
 In the cow.json file shown above, an entity_spawned event is defined here in order to spawn either an adult cow or a baby cow in the world.
 
-- **`randomize`** allows the use of defining the odds of the entity spawning in either group. Here, there is a 95/100 chance it could spawn an adult cow or a 5/100 to spawn a baby cow `randomize` does not work off of a percentage system. The odds are calculated via the sum of the `"weight"` definition. If you were to change `"weight": 5`, to `"weight":25`, it would have a 25/120 chance of spawning.
+- **`randomize`** allows the use of defining the odds of the entity spawning in either group. Here, there is a 95/100 chance it could spawn an adult cow or a 5/100 chance to spawn a baby cow. Note that `randomize` does not work off of a percentage system. Instead, the odds are calculated via the sum of the `"weight"` definition. If you were to change `"weight": 5`, to `"weight":25`, it would have a 25/120 chance of spawning.
 
 ## Adding new behaviors
 
-Now that you know the 4 areas that define an entity, you will add new existing behaviors to the cow.json to allow the cow to look for the player and once spotted, to begin attacking the player.
+Now that you know the 4 areas that define an entity, you will add new behaviors to an existing mob. In this example, you will add the following behaviors:
 
-### Minecraft:behavior.nearest_attackable_target
+- `minecraft:behavior.nearest_attackable_target` to define what the cow is able to attack.
+- `minecraft:behavior.meleeattack` to allow every cow the ability to inflict damage on its target.
+- `minecraft:attack` to define how much damage each attack does.
 
-In order for the cow to attack, it will need to find a target that can be attacked.
+### minecraft:behavior.nearest_attackable_target
+
+In order for the cow to attack, it will need to find a target that can be attacked. In this example, you will set the filter to look for `player` in order to make the cows a hostile mob and attack any player.
 
 ```json
 "minecraft:behavior.nearest_attackable_target":{
-	"priority": 2,
-  "must_see": true,
-	"reselect_targets": true, 
-	"within_radius": 25.0,
-	"entity_types": [
-	{
-		"filters":{
-      "all_of":[{"test": "is_family","subject":"other", "value":"player"}]
-              },
+    "priority": 2,
+    "must_see": true,
+    "reselect_targets": true, 
+    "within_radius": 25.0,
+    "entity_types": [
+    {
+      "filters":{
+           "test": "is_family", "subject": "other", "value": "player"
+        },
     "max_dist":32
-	}
-	]	
+    }
+  ]
 }, 
 ```
 
-In the sample above, the **nearest_attackable_target** is a component that handles the behavior for detecting a potential target. The component has the following flags;
+In the sample above, the **`nearest_attackable_target`** is a component that handles the behavior for detecting a potential target. The component has the following flags:
 
 - **`priority`** is how important this component is compared to other behaviors. Lower numbers represent a higher priority, meaning that a component with a priority set to 1, will happen before another component set at 4.
 - **`reselect_targets`** is a Boolean that allows the entity to re-target the same entity after an attack.
@@ -267,16 +274,9 @@ In the sample above, the **nearest_attackable_target** is a component that handl
 - **`max_dist`** is the distance in blocks between the cow and the potential target in the filter.
 - **`must_see`** is a Boolean that determines if the cow needs to have vision on its target. The cow will have to look directly at the player in order for the cow to consider the player a target.
 
-#### Adding the behavior
+### minecraft:behavior.melee_attack
 
-Now we will add `nearest_attackable_target` to the cow.json in order to allow the cow to target a player.
-
-1. Copy the sample located above for `minecraft:behavior.nearest_attackable_target.`
-1. At the bottom of the **Component** header list, right below `Minecraft:pushable`, paste the snippet.
-
-### Minecraft:behavior.meleeattack
-
-Once the cow is able to located a target, the next step is to allow an attack using the `behavior.meleeattack` component.
+Once the cow is able to locate a target, the next step is to allow an attack using the `minecraft:behavior.melee_attack` component.
 
 ```JSON
 "minecraft:behavior.melee_attack": {
@@ -284,14 +284,7 @@ Once the cow is able to located a target, the next step is to allow an attack us
       },
 ```
 
-#### Adding the behavior
-
-1.	Copy the sample located above for `minecraft:behavior.melee_attack`.
-1.	At the bottom of the **Component** header list, right below `Minecraft:behavior.nearest_attackable_target`, paste the snippet.
-1.	Add a comma to the end of the `minecraft:behavior.nearest.attackable_target` snippet in order to prevent any JSON errors.
-<insert image here>
-
-### Minecraft:attack
+### minecraft:attack
 
 Now that the cow can look for a target and attack, you will need to add a value to deal damage for each attack.
 
@@ -303,21 +296,36 @@ Now that the cow can look for a target and attack, you will need to add a value 
 
 In the snippet above, you can see that the component has a single argument. `"damage"`is set to a value of `3`, meaning every attack will take away 1.5 hearts from a player’s life bar.
 
-#### Adding the behavior
+#### Adding the behaviors
 
-1. Copy the sample located above for `minecraft: attack`.
-1. At the bottom of the **Component** header list, right below `Minecraft:behavior.melee_attack`, paste the snippet.
-1. Add a comma to the end of the `minecraft:behavior.melee_attack` snippet in order to prevent any JSON errors.
+Now that you know each behavior that is needed to make a cow attack a player, you will now add the behaviors to the cow.json file in the **HelloWorldBP/entities** folder.
+
+1. Copy the following code:
+
+    :::code language="json" source="CodeSnippets/BehaviorPack/cow.json" range="185-204":::
+
+1. Navigate to the `components` container in the **cow.json** file.
+1. Below the behavior `minecraft:conditional_bandwidth_optimization`, after the comma ending the behavior, press Enter to add a new line.
+1. Paste the code on the new line.
+
+    1. If there is another behavior after `minecraft:attack`, add a comma after the closing bracket.
 1. Save the cow.json file.
+
+> [!IMPORTANT]
+> Commas are used to separate each behavior within the `components` section. When adding new behaviors, remember to add commas when necessary.
+
+Shown below is the completed component's section with with the added behavior.
+
+:::code language="json" source="CodeSnippets/BehaviorPack/cow.json" range="77-206":::
 
 ### Testing the Pack
 
-Now that the pack has both a manifest file and a modification for the cow entity, you can now launch Minecraft and test your new Add-on. As stated in the Resource Pack, **Pack Stacking** will work for Behavior Packs as well. This means that content is loaded with any and all vanilla content being loaded first, followed by any additional Add-ons. Since the cow is using the cow.json namespace, every cow will inherit the new behaviors.
+Now that the pack has both a manifest file and a modification for the cow entity, you can now launch Minecraft and test your new Add-On. As stated in the Resource Pack, **Pack Stacking** will work for Behavior Packs as well. This means that content is loaded with any and all vanilla content being loaded first, followed by any additional Add-Ons. Since the cow is using the cow.json namespace, every cow will inherit the new behaviors.
 
 1. Launch **Minecraft**.
 1. When Minecraft has launched and reached the main menu, select **Play**.
 1. Select **Create a New World**.
-1. Under **Settings**, scroll down to the **Add-on** section.
+1. Under **Settings**, scroll down to the **Add-On** section.
 1. Click on **Behavior Packs** to see all available packs.
 1. Under all of the packs, select **HelloWorldBP** to add the pack to the world.
 1. Launch your world.
