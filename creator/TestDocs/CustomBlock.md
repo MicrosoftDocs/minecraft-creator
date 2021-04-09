@@ -24,6 +24,7 @@ It’s recommended that the following be completed before beginning this tutoria
 - [Getting Started with Add-on Development](GettingStarted.md)
 - [Introduction To Resource Packs](ResourcePack.md)
 - [Introduction To Behavior Packs](BehaviorPack.md)
+- Download the [Vanilla resource pack](https://aka.ms/resourcepacktemplate)
 - A Minecraft World with `Holiday Creator Features` enabled.
 
 >[!IMPORTANT]
@@ -34,7 +35,7 @@ It’s recommended that the following be completed before beginning this tutoria
 Block entity definitions are handled differently in the resource pack. Blocks are stored in a single JSON file that will contain definitions for each custom block.
 
 1. Open up your game location folder **com.mojang**
-1. Double-click on the folder **resource_packs**.
+1. Double-click on the folder **development_resource_packs**.
 1. Double-click on the folder **HelloWorldRP**.
     1. If you do not have this folder, please refer to the tutorials in the Requirements.
 1. Right-click in the Explorer window and select **New**, then select **Text Document**.
@@ -43,18 +44,18 @@ Block entity definitions are handled differently in the resource pack. Blocks ar
 
 ### blocks.json
 
-The blocks.json file has a similar set up to the manifest.json and has requirements in order to work correctly. The canvas block will use a custom texture for each of the size, except for the top and bottom. Those sides will be using a vanilla texture.
+The blocks.json file has a similar set up to the manifest.json and has requirements in order to work correctly. The canvas block will use a custom texture for each of the size, except for the top and bottom. Those sides will be using a vanilla texture that will be brought over to the pack for use.
 
 1. Copy/Paste the following text into your text editor.
 
     ```json
     {
     "format_version": "1.16.0",
-      "helloworldrp:canvasblock": {
+      "helloworld:canvasblock": {
         "textures": {
-            "up": "log_oak_top.png",
-            "down": "log_oak_top.png",
-            "side": "canvasBlock.png"
+            "up": "log_oak_top",
+            "down": "log_oak_top",
+            "side": "canvasBlock"
             },
         "sound":"dirt"
         }
@@ -67,7 +68,7 @@ The blocks.json file has a similar set up to the manifest.json and has requireme
 
 As shown in the JSON code above, the canvas block is using 2 textures. The top and bottom are using the existing **log_oak_top.png** while the other side is using a custom texture. Blocks can be assigned a single texture to cover every side of a block with the same texture.
 
-`"textures": "canvasblock.png"`
+`"textures": "canvasblock"`
 
 Textures can be broken down in to sub-texture groups. `up`, `down`, `side` are all sub-textures that allow a creator to define which face gets a certain texture. `side` can also be broken down into cardinal directions with `north`, `east`, `south` , `west`.
 
@@ -90,6 +91,9 @@ With the block defined in the **blocks.json** file, the next step is to associat
   "texture_data": {
     "canvasblock": {
       "textures": "textures/blocks/canvasblock"
+    },
+    "log_oak_top":{
+      "textures": "textures/blocks/log_oak_top"
     }
   }
 }
@@ -113,11 +117,18 @@ If you are creating a custom one:
 1. Check that the **Width** and **Height** to are set **16** each.
 1. Save the file as `canvasblock.png` in the `HelloWorldRP/textures/blocks` folder.
 
+#### Adding the log_oak_top.png
+
+The log_oak_top.png file will also need to be added to the texture folder in the behavior pack since the `terrain_texture.json` is set to look for both textures in the HelloWorldRP folder.
+
+1. Navigate to the `Vanilla_Resource_Pack\textures\blocks` folder and copy `log_oak_top.png`.
+1. Navigate to `HelloWorldRP/textures/blocks` and paste a copy of `log_oak_top.png`.
+
 ## Setting up the Behavior JSON file
 
 With the work in the resource pack done, the behavior pack will need to be updated with the canvas block's components.
 
-1. In **File Explorer**, Navigate to the folder **HelloWorldBP**, located in the **behavior_packs** folder.
+1. In **File Explorer**, Navigate to the folder **HelloWorldBP**, located in the **development_behavior_packs** folder.
 1. Right-click in the Explorer window and select **New**, then select **Folder**.
 1. Set the name to **blocks**.
 1. Double-click on **blocks** to open the folder.
@@ -136,7 +147,7 @@ In the file, you will need to define what the block is, similar to the `manifest
     "format_version": "1.16.0",
     "minecraft:block": {
         "description": {
-            "identifier": "helloworldbp:canvasblock",
+            "identifier": "helloworld:canvasblock",
             "is_experimental": false,
             "register_to_creative_menu": true
         },
@@ -194,7 +205,7 @@ Now that both of the packs are set up and completed, the last thing is to add th
 .lang is a file type that Minecraft uses to provide in-game text for different languages for concepts within Add-Ons. .lang files are also a convenient way to organize all custom text within an addon in a single location and also use for localizing creator content.
 
 1. Copy and Paste the following in **en_US.lang**:
-`tile.HelloWorldRP:canvasblock.name=Canvas Block`
+`tile.helloworld:canvasblock.name=Canvas Block`
 1. Save and close.
 
 In the code above, you are setting the name of the block to be `Canvas Block` while in-game.
