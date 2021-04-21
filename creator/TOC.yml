@@ -7,23 +7,23 @@
         - name: Adding Content
           items:
             - name: Getting Started
-              href: TestDocs/GettingStarted.md
+              href: Documents/GettingStarted.md
             - name: Introduction to Resource Packs
-              href: TestDocs/ResourcePack.md
+              href: Documents/ResourcePack.md
             - name: Introduction to Behavior Packs
-              href: TestDocs/BehaviorPack.md
+              href: Documents/BehaviorPack.md
             - name: Adding a Custom Block
-              href: TestDocs/CustomBlock.md
+              href: Documents/CustomBlock.md
         - name: Commands and Command Blocks
           items:
           - name: Getting Started with Commands
-            href: TestDocs/CommandBlocks.md
+            href: Documents/CommandBlocks.md
         - name: GameTest Framework
           items:
           - name: Getting Started with GameTest
-            href: TestDocs/GameTestGettingStarted.md
+            href: Documents/GameTestGettingStarted.md
           - name: Build your first GameTest
-            href: TestDocs/GameTestBuildYourFirstGameTest.md
+            href: Documents/GameTestBuildYourFirstGameTest.md
     - name: Reference Documentation
       items:
       - name: Bedrock API 
