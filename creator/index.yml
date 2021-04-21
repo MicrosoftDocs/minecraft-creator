@@ -19,11 +19,11 @@ highlightedContent:
     #card used to define plugin
     - title: Introduction to the GameTest Framework
       itemType: whats-new
-      url: TestDocs/GameTestGettingStarted.md
+      url: Documents/GameTestGettingStarted.md
     #card
     - title: Getting Started with Add-on Development
       itemType: get-started
-      url: TestDocs/GettingStarted.md
+      url: Documents/GettingStarted.md
 
 
 # productDirectory section (optional) will outline rows that can contain text and media along with lists. 
@@ -35,9 +35,9 @@ productDirectory:
     - title: What's New?
       imageSrc: images/minecraftBlock.png
       links:
-        - url:  TestDocs/GameTestGettingStarted.md
+        - url:  Documents/GameTestGettingStarted.md
           text: Getting Started with GameTest
-        - url: TestDocs/GameTestBuildYourFirstGameTest.md
+        - url: Documents/GameTestBuildYourFirstGameTest.md
           text: Build your first GameTest
         - url: ScriptAPI/GameTest/GameTest.md
           text: GameTest API
@@ -46,16 +46,16 @@ productDirectory:
       #imageSrc needs to in a square ratio with no whitespace
       imageSrc: images/minecraftBlock.png
       links:
-        - url: TestDocs/ResourcePack.md
+        - url: Documents/ResourcePack.md
           text: Introduction to Resource Packs
-        - url: TestDocs/BehaviorPack.md
+        - url: Documents/BehaviorPack.md
           text: Introduction To Behavior Packs
-        - url: TestDocs/CustomBlock.md
+        - url: Documents/CustomBlock.md
           text: How to add a Custom Block
   # card
     - title: Working with Commands
       imageSrc: images/minecraftBlock.png
       links:
-        - url: TestDocs/CommandBlocks.md
+        - url: Documents/CommandBlocks.md
           text: Getting Started with Command Blocks
 
