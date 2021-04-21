@@ -14,7 +14,7 @@
               href: Documents/BehaviorPack.md
             - name: Adding a Custom Block
               href: Documents/CustomBlock.md
-        - name: Commands and Command Blocks
+        - name: Command and Command Blocks
           items:
           - name: Getting Started with Commands
             href: Documents/CommandBlocks.md
