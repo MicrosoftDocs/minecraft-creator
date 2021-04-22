@@ -24,7 +24,7 @@ Building sets of GameTests requires building out your GameTests via a behavior P
 It’s recommended that the following be completed before beginning this tutorial.
 
 > [!div class="checklist"]
-> - [Introduction To Behavior Packs](BehaviorPack.md)
+> - [Introduction to Behavior Packs](BehaviorPack.md)
 
 ### GameTest Elements
 
