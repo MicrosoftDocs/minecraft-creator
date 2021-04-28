@@ -6,7 +6,7 @@ summary: Landing page for all things related to Entities for Minecraft:Bedrock E
 metadata:
   title: Entity Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Landing page for all things related to Entities for Minecraft:Bedrock Edition. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: gaming #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   author: v-josjones #Required; your GitHub user alias, with correct capitalization.
   ms.author: v-josjones #Required; microsoft alias of author; optional team alias.
