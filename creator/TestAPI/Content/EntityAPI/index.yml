@@ -1,0 +1,46 @@
+### YamlMime:Landing
+
+title: Entity Documentation # < 60 chars
+summary: Landing page for all things related to Entities for Minecraft:Bedrock Edition. # < 160 chars
+
+metadata:
+  title: Entity Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Landing page for all things related to Entities for Minecraft:Bedrock Edition. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: gaming #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: v-josjones #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-josjones #Required; microsoft alias of author; optional team alias.
+  ms.date: 04/28/2021 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Entities
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is E?
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+
+
+  # Card (optional)
+  - title: Components
+    linkLists:
+      - linkListType: linkListType
+        links:
+          - text: minecraft:behavior.melee_attack
+            url: creator/TestAPI/Content/EntityAPI/Examples/EntityComponents/minecraftBehavior_melee_attack.md
+          - text: minecraft:behavior.nearest_attackable_target
+            url: creator/TestAPI/Content/EntityAPI/Examples/EntityComponents/minecraftBehavior_nearest_attackable_target.md
+      - linkListType: linkListType
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+
