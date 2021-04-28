@@ -39,6 +39,8 @@ Allows the mob to check for and pursue the nearest valid target.
 
 ## Vanilla mob examples
 
+### Zombie
+
 :::code language="json" source="Source/VanilliaBehaviorPack/entities/zombie.json" range="435-472":::
 
 ### Vanilla mobs using `nearest_attackable_target`
