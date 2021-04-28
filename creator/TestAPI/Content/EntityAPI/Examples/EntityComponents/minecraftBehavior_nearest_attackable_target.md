@@ -16,7 +16,7 @@ Allows the mob to check for and pursue the nearest valid target.
 
 ## Parameters
 
-:::code language="markdown" source="../../../../Source/entity.md" range="9765-9884":::
+:::code language="html" source="../../../../Source/entity.md" range="9765-9884":::
 
 ## Example
 
