@@ -20,7 +20,7 @@ landingContent:
   # Card (optional)
   - title: Components
     linkLists:
-      - linkListType: linkListType
+      - linkListType: overview
         links:
           - text: minecraft:behavior.melee_attack
             url: Examples/EntityComponents/minecraftBehavior_melee_attack.md
