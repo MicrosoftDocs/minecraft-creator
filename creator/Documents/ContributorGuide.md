@@ -1,3 +1,9 @@
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Minecraft Creator Contributing Guide
+ms.prod: gaming
+---
 # Contributing to Minecraft Creator documentation
 
 Welcome to the public repo for Minecraft Creator documentation! Any articles you create or edit in this repo will be visible to the public.
