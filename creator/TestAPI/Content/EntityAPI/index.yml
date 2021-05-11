@@ -33,6 +33,8 @@ landingContent:
       - links:
           - text: Melee FOV
             url: Examples/Definitions/melee_fov.md
-          - text: Operators
+          - text: Entity Types
+            url: Examples/Definitions/entity_types.md
+
 
 
