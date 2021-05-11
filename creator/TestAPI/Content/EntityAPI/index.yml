@@ -30,7 +30,7 @@ landingContent:
   - title: Definitions
     linkLists:
       - linkListType: concept
-      - links:
+        links:
           - text: Melee FOV
             url: Examples/Definitions/melee_fov.md
           - text: Entity Types
