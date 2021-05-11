@@ -1,16 +1,3 @@
-{
-  "format_version": "1.10",
-  "minecraft:item": {
-    "description": {
-      "identifier": "minecraft:apple"
-    },
+# Apple
 
-    "components": {
-      "minecraft:use_duration": 32,
-      "minecraft:food": {
-        "nutrition": 4,
-        "saturation_modifier": "low"
-      }
-    }
-  }
-}
+:::code language="json" source="../../VanilliaBehaviorPack/items/apple.json":::

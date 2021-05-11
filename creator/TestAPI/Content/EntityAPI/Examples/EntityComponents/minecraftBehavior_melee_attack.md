@@ -12,14 +12,14 @@ This component allows entities to make close combat melee attacks.
 > [!IMPORTANT]
 > In order for the entity to be able to attack its target, the entity will also need another component that sets its target, such as:
 >
->- [minecraft:behavior.nearest_attackable_target](Examples/EntityComponents/minecraftBehavior_nearest_attackable_target.md)
+>- [minecraft:behavior.nearest_attackable_target Component](minecraftBehavior_nearest_attackable_target.md)
 >- minecraft:behavior.hurt_by_target
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
-|[melee_fov](Examples/Definitions/melee_fov.md)     |90.0       |Decimal   |The allowable FOV the actor will use to determine if it can make a valid melee attack|
+|[melee_fov](../Definitions/melee_fov.md)     |90.0       |Decimal   |The allowable FOV the actor will use to determine if it can make a valid melee attack|
 |speed_multiplier     |1.0         |Decimal         |Movement speed multiplier of the mob when using this AI Goal|
 |track_target     |false         |Boolean         |If true, this mob will chase after the target as long as it's a valid target|
 |attack_types     |         |String         |Defines the entity types this mob will attack|
@@ -46,7 +46,7 @@ This component allows entities to make close combat melee attacks.
 
 ### Zombie
 
-:::code language="json" source="~/TestAPI/Source/VanilliaBehaviorPack/entities/zombie.json" range="401-404":::
+:::code language="json" source="~/TestAPI/Source/VanilliaBehaviorPack/entities/zombie.json" range="401-403":::
 
 ### Cave Spider
 
@@ -54,30 +54,30 @@ This component allows entities to make close combat melee attacks.
 
 ### Vanilla mobs using `melee_attack`
 
-- [bee](~/TestAPI/Source/VanilliaBehaviorPack/entities/bee.json)
-- [blaze](~/TestAPI/Source/VanilliaBehaviorPack/entities/blaze.json)
-- [cave spider](~/TestAPI/Source/VanilliaBehaviorPack/entities/cave_spider.json)
-- [creeper](~/TestAPI/Source/VanilliaBehaviorPack/entities/creeper.json)
-- [dolphin](~/TestAPI/Source/VanilliaBehaviorPack/entities/dolphin.json)
-- [drowned](~/TestAPI/Source/VanilliaBehaviorPack/entities/drowned.json)
-- [enderman](~/TestAPI/Source/VanilliaBehaviorPack/entities/enderman.json)
-- [endermite](~/TestAPI/Source/VanilliaBehaviorPack/entities/endermite.json)
-- [fox](~/TestAPI/Source/VanilliaBehaviorPack/entities/fox.json)
-- [hoglin](~/TestAPI/Source/VanilliaBehaviorPack/entities/hoglin.json)
-- [husk](~/TestAPI/Source/VanilliaBehaviorPack/entities/husk.json)
-- [iron golem](~/TestAPI/Source/VanilliaBehaviorPack/entities/iron_golem.json)
-- [panda](~/TestAPI/Source/VanilliaBehaviorPack/entities/panda.json)
-- [piglin brute](~/TestAPI/Source/VanilliaBehaviorPack/entities/piglin_brute.json)
-- [piglin](~/TestAPI/Source/VanilliaBehaviorPack/entities/piglin.json)
-- [pillager](~/TestAPI/Source/VanilliaBehaviorPack/entities/pillager.json)
-- [silverfish](~/TestAPI/Source/VanilliaBehaviorPack/entities/silverfish.json)
-- [skeleton](~/TestAPI/Source/VanilliaBehaviorPack/entities/skeleton.json)
-- [spider](~/TestAPI/Source/VanilliaBehaviorPack/entities/spider.json)
-- [stray](~/TestAPI/Source/VanilliaBehaviorPack/entities/stray.json)
-- [vindicator](~/TestAPI/Source/VanilliaBehaviorPack/entities/vindicator.json)
-- [wither skeleton](~/TestAPI/Source/VanilliaBehaviorPack/entities/wither_skeleton.json)
-- [wolf](~/TestAPI/Source/VanilliaBehaviorPack/entities/wolf.json)
-- [zoglin](~/TestAPI/Source/VanilliaBehaviorPack/entities/zoglin.json)
-- [zombie pigman](~/TestAPI/Source/VanilliaBehaviorPack/entities/zombie_pigman.json)
-- [zombie villager](~/TestAPI/Source/VanilliaBehaviorPack/entities/zombie_villager.json)
-- [zombie](~/TestAPI/Source/VanilliaBehaviorPack/entities/zombie.json)
+- [bee](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/bee.md)
+- [blaze](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/blaze.md)
+- [cave spider](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/cave_spider.md)
+- [creeper](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/creeper.md)
+- [dolphin](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/dolphin.md)
+- [drowned](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/drowned.md)
+- [enderman](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/enderman.md)
+- [endermite](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/endermite.md)
+- [fox](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/fox.md)
+- [hoglin](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/hoglin.md)
+- [husk](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/husk.md)
+- [iron golem](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/iron_golem.md)
+- [panda](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/panda.md)
+- [piglin brute](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/piglin_brute.md)
+- [piglin](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/piglin.md)
+- [pillager](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/pillager.md)
+- [silverfish](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/silverfish.md)
+- [skeleton](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/skeleton.md)
+- [spider](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/spider.md)
+- [stray](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/stray.md)
+- [vindicator](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/vindicator.md)
+- [wither skeleton](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/wither_skeleton.md)
+- [wolf](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/wolf.md)
+- [zoglin](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/zoglin.md)
+- [zombie pigman](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/zombie_pigman.md)
+- [zombie villager](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/zombie_villager.md)
+- [zombie](~/TestAPI/Source/VanilliaBehaviorPack_Snippets/entities/zombie.md)
