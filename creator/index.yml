@@ -58,4 +58,10 @@ productDirectory:
       links:
         - url: Documents/CommandBlocks.md
           text: Getting Started with Command Blocks
+  # card
+    - title: Reference Documentation
+      imageSrc: images/minecraftBlock.png
+      links:
+        - url: TestAPI/Content/EntityAPI/index.yml
+          text: Entity Landing Page
 
