@@ -26,5 +26,13 @@ landingContent:
             url: Examples/EntityComponents/minecraftBehavior_melee_attack.md
           - text: minecraft:behavior.nearest_attackable_target
             url: Examples/EntityComponents/minecraftBehavior_nearest_attackable_target.md
+# Card
+  - title: Definitions
+    linkLists:
+      - linkListType: concept
+      - links:
+          - text: Melee FOV
+            url: Examples/Definitions/melee_fov.md
+          - text: Operators
 
 

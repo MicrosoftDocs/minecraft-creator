@@ -16,7 +16,25 @@ Allows the mob to check for and pursue the nearest valid target.
 
 ## Parameters
 
-:::code language="html" source="../../../../Source/entity.md" range="9765-9884":::
+|Name |Default Value  |Type  |Description  |
+|---------|---------|---------|---------|
+|attack_interval |0 |Integer |Time range (in seconds) between searching for an attack target, range is in (0, "attack_interval"]. Only used if "attack_interval" is greater than 0, otherwise "scan_interval" is used. |
+|attack_interval_min |0 |Integer |Alias for "attack_interval"; provides the same functionality as "attack_interval". |
+|attack_owner |false |Boolean |If true, this entity can attack its owner |
+|[entity_types](Examples/Definitions/entity_types.md) | |JSON Object |Filters which types of targets are valid for this entity (Please see entity_types' definition page)|
+|must_reach |false |Boolean |If true, this entity requires a path to the target.|
+|must_see |false |Boolean |Determines if target-validity requires this entity to be in range only, or both in range and in sight |
+|must_see_forget_duration |3.0 |Decimal |Time (in seconds) the target must not be seen by this entity to become invalid. Used only if "must_see" is true.|
+|persist_time |0.0 |Decimal |Time (in seconds) this entity can continue attacking the target after the target is no longer valid. |
+|reselect_targets |false |Boolean |Allows the attacking entity to update the nearest target, otherwise a target is only reselected after each "scan_interval" or "attack_interval". |
+|scan_interval |10 |Integer |If "attack_interval" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to "scan_interval", minimum value is 1. Values under 10 can affect performance. |
+|set_persistent |false |Boolean |Allows the actor to be set to persist upon targeting a player. |
+|target_invisible_multiplier |0.7 | Decimal |Multiplied with the target's armor coverage percentage to modify "max_dist" when detecting an invisible target.|
+|target_search_height |-1.0 |Decimal |Maximum vertical target-search distance, if it's greater than the target type's "max_dist". A negative value defaults to "entity_types" greatest "max_dist". |
+|target_sneak_visibility_multiplier |0.8 |Decimal |Multiplied with the target type's "max_dist" when trying to detect a sneaking target. |
+|within_radius |0.0 |Decimal |Maximum distance this entity can be from the target when following it, otherwise the target becomes invalid. This value is only used if the entity doesn't declare "minecraft:follow_range".|
+
+:::code language="markdown" source="../Definitions/entity_types.md" range="14-21":::
 
 ## Example
 
