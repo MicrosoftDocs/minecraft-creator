@@ -12,25 +12,23 @@ metadata:
   author: v-josjones # Required; Github alias
   ms.author: v-josjones # Required; Microsoft alias; with correct grammar
 
-# highlighted content section (optional), will outlined up to 8 items in a 4x2 grid. 
-highlightedContent: 
-# itemType:  architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-  items:
-    #card used to define plugin
-    - title: Introduction to the GameTest Framework
-      itemType: whats-new
-      url: Documents/GameTestGettingStarted.md
-    #card
-    - title: Getting Started with Add-on Development
-      itemType: get-started
-      url: Documents/GettingStarted.md
-
-
 # productDirectory section (optional) will outline rows that can contain text and media along with lists. 
 productDirectory:
-  title: Building up the Foundation
-  summary: If you are new to Minecraft development or looking to brush up on some knowledge, we have created a few getting started tutorials to help you take your first steps as a Creator!
   items:
+    #card
+    - title: What's new
+      imageSrc: images/Compass64.png
+      links:
+        - url: Documents/GameTestGettingStarted.md
+          text: Introduction to the GameTest Framework      
+     #card
+    - title: Get Started
+      imageSrc: images/ResourcePack64.png
+      links:
+        - url: Documents/GettingStarted.md
+          text: Getting Started with Add-on Development      
+     
+    
     # card
     - title: Add-on Pack Tutorials
       #imageSrc needs to in a square ratio with no whitespace
