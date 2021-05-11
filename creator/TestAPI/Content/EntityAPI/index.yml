@@ -35,6 +35,15 @@ landingContent:
             url: Examples/Definitions/melee_fov.md
           - text: Entity Types
             url: Examples/Definitions/entity_types.md
+# Card
+  - title: References
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Vanilla Entity List
+            url: Examples/EntityList.md
+          - text: Filters
+            url: Examples/FilterList.md
 
 
 
