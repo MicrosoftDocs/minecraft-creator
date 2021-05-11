@@ -1,7 +1,7 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: EntityList
+title: FilterList
 ms.prod: gaming
 ---
 
