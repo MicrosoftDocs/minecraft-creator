@@ -20,7 +20,7 @@ Submitting and using GameTests can be a great way to establish and communicate t
 To get started, you'll want to begin with understanding how a behavior pack works within Minecraft.  To read more about creating behavior packs, see this topic:
 
 > [!div class="checklist"]
-> - [Introduction To Behavior Packs](https://review.docs.microsoft.com/en-us/minecraft/creator/testdocs/behaviorpack?branch=main) 
+> - [Introduction To Behavior Packs](/minecraft/creator/documents/behaviorpack) 
 
 ## What's a GameTest?
 
