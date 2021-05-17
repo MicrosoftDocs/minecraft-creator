@@ -117,4 +117,3 @@ A list of all entities located in the latest vanilla behavior pack.
         - [zombie](../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)
     :::column-end:::
 :::row-end:::
-
