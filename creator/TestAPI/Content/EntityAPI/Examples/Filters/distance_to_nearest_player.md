@@ -14,7 +14,8 @@ ms.prod: gaming
 |---------|---------|---------|---------|
 |value | |Decimal|(Required) A floating point value.|
 
-`distance_to_nearest_player` can also use `subject` and `operator` parameters but are optional.
+> [!NOTE]
+> `distance_to_nearest_player` can also use `subject` and [operators](../Definitions/operator.md) parameters but are optional.
 
 ### subject
 
@@ -49,7 +50,7 @@ ms.prod: gaming
 
 :::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/zoglin.json" range="139-155":::
 
-## Vanilla Mobs using behavior
+## Vanilla Mobs using `distance_to_nearest_player` filter
 
 
 - [fox](Source/VanilliaBehaviorPack_Snippets/entities/fox.json)

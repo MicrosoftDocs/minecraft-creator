@@ -26,6 +26,15 @@ landingContent:
             url: Examples/EntityComponents/minecraftBehavior_melee_attack.md
           - text: minecraft:behavior.nearest_attackable_target
             url: Examples/EntityComponents/minecraftBehavior_nearest_attackable_target.md
+ # Card (optional)
+  - title: Filters
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: clock_time
+            url: Examples/Filters/clock_time.md
+          - text: distance_to_nearest_player
+            url: Examples/Filters/distance_to_nearest_player.md
 # Card
   - title: Definitions
     linkLists:
