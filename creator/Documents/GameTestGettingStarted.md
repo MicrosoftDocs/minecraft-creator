@@ -9,7 +9,7 @@ ms.prod: gaming
 
 GameTest Framework is a new toolset available to creators to build and test any new content created by you.  Within the world of Minecraft:Bedrock Edition, you can express infinite forms of gameplay and variability in your content. With all these creative possibilities, sometimes you may need additional tools to help validate that your experiences are running just as you expect it, and assist you as you customize aspects of the broader Minecraft environment.
 
-What happens if you change the behavior of Villagers? or introduce a new Mob? Small changes can have unexpectedly big impacts that can be really hard to anticipate. With the GameTest Framework - a system for establishing sets of tests - you can track and repeat to ensure everything works the way you intend.  
+What happens if you change the behavior of Villagers? Or introduce a new Mob? Small changes can have unexpectedly big impacts that can be really hard to anticipate. With the GameTest Framework - a system for establishing sets of tests - you can track and repeat to ensure everything works the way you intend.  
 
 With these tests, you can express and document your expectations for how things should work - both for your content and games, and for the Minecraft world. You'll be able to save time by using GameTests to take the place of repeatedly needing to manually play through conditions just to validate that all is working as expected.
 
@@ -21,6 +21,7 @@ To get started, you'll want to begin with understanding how a behavior pack work
 
 > [!div class="checklist"]
 > - [Introduction To Behavior Packs](BehaviorPack.md) 
+
 
 ## What's a GameTest?
 
