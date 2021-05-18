@@ -31,7 +31,7 @@ A behavior pack is a type of pack that allows creators to add, remove or alter g
 
 Behaviors give creators the ability to change the way entities can act in the world. In this section, you will set up a folder for a new Behavior Pack called **HelloWorldBP**.
 
-1. Open up your game location folder **com.mojang**.
+1. Open your game location folder **com.mojang**.
 1. Double-click on the folder **development_behavior_packs**.
 1. Right-click in the File Explorer window and select **New** and then **Folder** to create a new folder.
 1. Name the new folder **HelloWorldBP**.
