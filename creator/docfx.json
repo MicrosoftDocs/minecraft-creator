@@ -41,7 +41,9 @@
     "globalMetadata": {
       "breadcrumb_path": "/minecraft/creator/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/minecraft-creator",
+      "uhfHeaderId": "minecraft-creator"
     },
     "fileMetadata": {},
     "template": [],

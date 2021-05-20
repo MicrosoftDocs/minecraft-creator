@@ -8,7 +8,7 @@ ms.prod: gaming
 
 Welcome to the public repo for Minecraft Bedrock documentation! Any articles you create or edit in this repo will be visible to the public.
 
-The Minecraft Bedrock docs are on the docs.microsoft.com platform, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo will be formatted into Microsoft Docs stylized pages that show up at [Minecraft Bedrock docs](https://docs.microsoft.com/minecraft/creator). Content created by you and other members of the Bedrock Community will be released as a part of our content drops and Minecraft: Bedrock Edition updates. 
+The Minecraft Bedrock docs are on the docs.microsoft.com platform, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo will be formatted into Microsoft Docs stylized pages that show up at [Minecraft Bedrock docs](https://docs.microsoft.com/minecraft/creator). Content created by you and other members of the Bedrock Community will be released as a part of our content drops and Minecraft: Bedrock Edition updates.
 
 This page covers the basic steps and guidelines for contributing and links to Markdown basics. Thank you for your contribution!
 
@@ -149,7 +149,6 @@ The Docs Markdown Extension for Visual Studio Code also makes table generation e
 ### Adding images
 
 You’ll need to upload your images to the "minecraft-creator/creator/images" folder in the repo, and then reference them appropriately in the article. Images will automatically show up at full-size, which means large images will fill the entire width of the article. We recommend pre-sizing your images before uploading them. The recommended width is between 600 and 700 pixels, though you should size up or down if it’s a dense screenshot or a fraction of a screenshot, respectively.
-
 ```markdown
 An example of Image with specific formatting for Microsoft Docs specific markdown utilizing image type, source and alternative text
 :::image type="content" source="creator/images/<article name>/<image.png>" alt-text="alternative text":::
