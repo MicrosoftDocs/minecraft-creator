@@ -15,7 +15,7 @@ This page covers the basic steps and guidelines for contributing and links to Ma
 ## Available repos
 | Repository name | URL |
 |------ | ----- |
-| Creator Learning Portal | https://github.com/MicrosoftDocs/minecraft-creator |
+| Minecraft Bedrock docs | https://github.com/MicrosoftDocs/minecraft-creator |
 
 ## Before you start
 If you don't already have one, you'll need to [create a GitHub account.](https://github.com/join)
@@ -124,7 +124,7 @@ keywords:
 
 [Image]
 
-Your pull request will be reviewed by our content team. If it is approved, your changes will go live at our [next regular release](url-for-release-schedule). If your pull request is not approved, a member of the content team will leave a comment in your pull request letting you know the reason it was not approved.
+Your pull request will be reviewed by our content team. If it is approved, your changes will go live at our next regular release. If your pull request is not approved, a member of the content team will leave a comment in your pull request letting you know the reason it was not approved.
 
 ## Markdown basics
 
