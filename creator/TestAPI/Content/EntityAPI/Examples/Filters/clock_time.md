@@ -46,11 +46,9 @@ ms.prod: gaming
 | equals| Test for equality. |
 | not| Test for inequality. |
 
-
 ## Vanilla Mob examples
 
 No mobs currently use `clock_time`
-
 
 ## Vanilla Mobs using `clock_time` filter
 

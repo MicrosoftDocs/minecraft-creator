@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value |Type |Description |
-|-----|--------------|-----|------------|
+|:-----|:--------------|:-----|:------------|
 |filters | |Minecraft Filter|Conditions that make this entry in the list valid. |
 |max_dist |16 |Decimal |Maximum distance this mob can be away to be a valid choice. |
 |must_see |false |Boolean |If true, the mob has to be visible to be a valid choice. |

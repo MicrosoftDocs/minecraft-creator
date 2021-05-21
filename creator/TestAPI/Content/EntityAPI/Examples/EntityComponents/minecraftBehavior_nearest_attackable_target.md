@@ -21,7 +21,7 @@ Allows the mob to check for and pursue the nearest valid target.
 |attack_interval |0 |Integer |Time range (in seconds) between searching for an attack target, range is in (0, "attack_interval"]. Only used if "attack_interval" is greater than 0, otherwise "scan_interval" is used. |
 |attack_interval_min |0 |Integer |Alias for "attack_interval"; provides the same functionality as "attack_interval". |
 |attack_owner |false |Boolean |If true, this entity can attack its owner |
-|[entity_types](../Definitions/entity_types.md) | |JSON Object |Filters which types of targets are valid for this entity (Please see entity_types' definition page)|
+|[entity_types](../Definitions/NestedTables/entity_types.md) | |JSON Object |Filters which types of targets are valid for this entity (Please see entity_types' definition page)|
 |must_reach |false |Boolean |If true, this entity requires a path to the target.|
 |must_see |false |Boolean |Determines if target-validity requires this entity to be in range only, or both in range and in sight |
 |must_see_forget_duration |3.0 |Decimal |Time (in seconds) the target must not be seen by this entity to become invalid. Used only if "must_see" is true.|
