@@ -15,7 +15,7 @@ ms.prod: gaming
 |value | |Decimal|(Required) A floating point value.|
 
 > [!NOTE]
-> `distance_to_nearest_player` can also use `subject` and [operators](../Definitions/operator.md) parameters but are optional.
+> `distance_to_nearest_player` can also use `subject` and [operators](../Definitions/NestedTables/operator.md) parameters but are optional.
 
 ### subject
 

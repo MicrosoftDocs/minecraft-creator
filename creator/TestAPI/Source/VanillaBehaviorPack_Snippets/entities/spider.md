@@ -1,3 +1,3 @@
 # Spider
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/spiders.json":::
+:::code language="json" source="../../VanilliaBehaviorPack/entities/spider.json":::

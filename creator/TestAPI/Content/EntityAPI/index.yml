@@ -17,6 +17,15 @@ metadata:
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
+  # Card
+  - title: Getting Started with Entities
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Entity Documentation Introduction
+            url: Examples/ClientEntityDocumenation/ClientEntityDocumentationIntroduction.md
+          - text: Data Driven Spawning
+            url:  Examples/ClientEntityDocumenation/DataDrivenSpawning.md
   # Card (optional)
   - title: Components
     linkLists:
@@ -43,7 +52,7 @@ landingContent:
           - text: Melee FOV
             url: Examples/Definitions/melee_fov.md
           - text: Entity Types
-            url: Examples/Definitions/entity_types.md
+            url: Examples/Definitions/NestedTables/entity_types.md
 # Card
   - title: References
     linkLists:
@@ -53,6 +62,8 @@ landingContent:
             url: Examples/EntityList.md
           - text: Filters
             url: Examples/FilterList.md
+          - text: Biome Tags
+            url: Examples/Definitions/biome_filter.md
 
 
 
