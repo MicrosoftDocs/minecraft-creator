@@ -8,7 +8,7 @@ ms.prod: gaming
 
 Welcome to the public repo for Minecraft Bedrock documentation! Any articles you create or edit in this repo will be visible to the public.
 
-The Minecraft Bedrock docs are on the docs.microsoft.com platform, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo will be formatted into Microsoft Docs stylized pages that show up at [Minecraft Bedrock docs](https://docs.microsoft.com/minecraft/creator). Content created by you and other members of the Bedrock Community will be released as a part of our content drops and Minecraft: Bedrock Edition updates.
+The Minecraft Bedrock docs are on the docs.microsoft.com platform, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo will be formatted into Microsoft Docs stylized pages that show up at [Minecraft Bedrock docs](/minecraft/creator). Content created by you and other members of the Bedrock Community will be released as a part of our content drops and Minecraft: Bedrock Edition updates.
 
 This page covers the basic steps and guidelines for contributing and links to Markdown basics. Thank you for your contribution!
 
@@ -36,13 +36,13 @@ The publishing system is tied to GitHub, so these steps are important. You'll be
 
 Use the following workflow to make updates to an existing article via GitHub in a web browser:
 
-1. Navigate to the article you wish to edit in the [Minecraft Creator docs](https://docs.microsoft.com/minecraft/creator/?branch=main).
+1. Navigate to the article you wish to edit in the [Minecraft Creator docs](/minecraft/creator).
 
 2. Select the edit button (pencil icon) in the top right, which will automatically fork a disposable branch off the 'main' branch.
 
 [image]
 
-3. Edit the content of the article and format according to the [Markdown basics](#markdown_basics).
+3. Edit the content of the article and format according to the [Markdown basics](#markdown-basics).
 
 4. Update the metadata at the top of each article:
 
@@ -131,8 +131,8 @@ Your pull request will be reviewed by our content team. If it is approved, your 
 The following resources will help you learn how to edit documentation using the Markdown language:
 
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-- [Markdown-at-a-glance reference poster](https://docs.microsoft.com/en-us/windows/mixed-reality/images/markdownposter.pdf)
-- [Additional resources for writing Markdown for docs.microsoft.com](https://docs.microsoft.com/en-us/contribute/markdown-reference)
+- [Markdown-at-a-glance reference poster](/windows/mixed-reality/images/markdownposter.pdf)
+- [Additional resources for writing Markdown for docs.microsoft.com](/contribute/markdown-reference)
 
 ### Adding tables
 
