@@ -36,7 +36,7 @@ The publishing system is tied to GitHub, so these steps are important. You'll be
 
 Use the following workflow to make updates to an existing article via GitHub in a web browser:
 
-1. Navigate to the article you wish to edit in the [Minecraft Creator docs](https://review.docs.microsoft.com/en-us/minecraft/creator/?branch=main).
+1. Navigate to the article you wish to edit in the [Minecraft Creator docs](https://docs.microsoft.com/minecraft/creator/?branch=main).
 
 2. Select the edit button (pencil icon) in the top right, which will automatically fork a disposable branch off the 'main' branch.
 
@@ -44,7 +44,7 @@ Use the following workflow to make updates to an existing article via GitHub in 
 
 [image]
 
-3. Edit the content of the article and format according to the [Markdown basics](https://docs.microsoft.com/en-us/windows/mixed-reality/contributing#markdown-basics).
+3. Edit the content of the article and format according to the [Markdown basics](#markdown_basics).
 
 4. Update the metadata at the top of each article:
 
@@ -71,13 +71,13 @@ To add a redirect to .openpublishing.redirection.json, add an entry to the `redi
 {
     "redirections": [
         {
-            "source_path": "minecraft-creator-pr/creator/old-article.md",
+            "source_path": "minecraft-creator/creator/old-article.md",
             "redirect_url": "new-article#section-about-old-topic",
             "redirect_document_id": false
         },
 ```
-- The `source_path` is the relative repository path to the old article that you're removing. Be sure the path starts with `minecraft-creator-pr/creator` and ends with `.md`.
-- The `redirect_url` is the relative public URL from the old article to the new article. Be sure that this URL **doesn't** contain `minecraft-creator-pr/creator` or `.md`, as it refers to the public URL and not the repository path. Linking to a section within the new article using #section is allowed. You can also use an absolute path to another site here, if necessary.
+- The `source_path` is the relative repository path to the old article that you're removing. Be sure the path starts with `minecraft-creator/creator` and ends with `.md`.
+- The `redirect_url` is the relative public URL from the old article to the new article. Be sure that this URL **doesn't** contain `minecraft-creator/creator` or `.md`, as it refers to the public URL and not the repository path. Linking to a section within the new article using #section is allowed. You can also use an absolute path to another site here, if necessary.
 - `redirect_document_id` indicates whether you would like to keep the document ID from the previous file. The default is false. Use true if you want to preserve the ms.documentid attribute value from the redirected article. If you preserve the document ID, data, such as page views and rankings, will be transferred to the target article. Do this if the redirect is primarily a rename, and not a pointer to different article that only covers some of the same content.
 
 If you add a redirect, be sure to delete the old file as well.
@@ -86,7 +86,7 @@ If you add a redirect, be sure to delete the old file as well.
 
 Use the following workflow to create new articles in the documentation repo via GitHub in a web browser:
 
-1. Create a fork off the MicrosoftDocs/minecraft-creator-pr 'main' branch (using the Fork button in the top right).
+1. Create a fork off the MicrosoftDocs/minecraft-creator 'main' branch (using the Fork button in the top right).
 
 [Image]
 
@@ -122,7 +122,7 @@ keywords:
 
 8. When you are finished writing your article, select **Commit new file**.
 
-9. Select New pull request and merge your fork's 'main' branch into MicrosoftDocs/mixed-reality 'main' (make sure the arrow is pointing the correct way).
+9. Select New pull request and merge your fork's 'main' branch into MicrosoftDocs/minecraft-creator 'main' (make sure the arrow is pointing the correct way).
 
 [Image]
 
@@ -144,16 +144,16 @@ The Docs Markdown Extension for Visual Studio Code also makes table generation e
 
 ### Adding images
 
-You’ll need to upload your images to the "minecraft-creator-pr/creator/images" folder in the repo, and then reference them appropriately in the article. Images will automatically show up at full-size, which means large images will fill the entire width of the article. We recommend pre-sizing your images before uploading them. The recommended width is between 600 and 700 pixels, though you should size up or down if it’s a dense screenshot or a fraction of a screenshot, respectively.
+You’ll need to upload your images to the "minecraft-creator/creator/images" folder in the repo, and then reference them appropriately in the article. Images will automatically show up at full-size, which means large images will fill the entire width of the article. We recommend pre-sizing your images before uploading them. The recommended width is between 600 and 700 pixels, though you should size up or down if it’s a dense screenshot or a fraction of a screenshot, respectively.
 
  Important
 
 You can only upload images to your forked repo before merging. So, if you plan on adding images to an article, you'll need to use Visual Studio Code to add the images to your fork's "images" folder first or make sure you've done the following in a web browser:
 
-1. Forked the MicrosoftDocs/minecraft-creator-pr repo.
+1. Forked the MicrosoftDocs/minecraft-creator repo.
 2. Edited the article in your fork.
-3. Uploaded the images you're referencing in your article to the "minecraft-creator-pr/creator/images" folder in your fork.
-4. Created a pull request to merge your fork into the MicrosoftDocs/minecraft-creator-pr 'main' branch.
+3. Uploaded the images you're referencing in your article to the "minecraft-creator/creator/images" folder in your fork.
+4. Created a pull request to merge your fork into the MicrosoftDocs/minecraft-creator 'main' branch.
 
 To learn how to set up your own forked repo, follow the instructions for creating a new article.
 
@@ -165,7 +165,7 @@ While editing in GitHub via a web browser, you can select the Preview tab near t
 
 Previewing your changes on review.docs.microsoft.com is only available to Microsoft employees
 
-Microsoft employees: once your contributions have been merged into the 'main' branch, you can review the content before it goes public at https://github.com/MicrosoftDocs/minecraft-creator-pr/tree/main/creator. Find your article using the table of contents in the left column.
+Microsoft employees: once your contributions have been merged into the 'main' branch, you can review the content before it goes public at https://github.com/MicrosoftDocs/minecraft-creator/tree/main/creator. Find your article using the table of contents in the left column.
 
 ## Editing in the browser vs. editing with a desktop client
 
@@ -191,7 +191,7 @@ Follow these steps to configure Visual Studio Code to work with this repo:
 
     b. Install Visual Studio Code.
 
-    c. Fork MicrosoftDocs/mixed-reality if you haven't already.
+    c. Fork MicrosoftDocs/minecraft-creator if you haven't already.
     
     d. In your fork, select Clone or download and copy the URL.
 
@@ -217,7 +217,7 @@ All the guidance for editing and creating articles, and the basics of editing Ma
 
 1. Make sure your cloned fork is up to date with the official repo.
 
-    a. In a web browser, create a pull request to sync recent changes from other contributors in MicrosoftDocs/mixed-reality 'main' to your fork (make sure the arrow is pointing the right way).
+    a. In a web browser, create a pull request to sync recent changes from other contributors in MicrosoftDocs/minecraft-creator 'main' to your fork (make sure the arrow is pointing the right way).
 
     [Image]
 
@@ -241,7 +241,7 @@ All the guidance for editing and creating articles, and the basics of editing Ma
 
     [Image]
 
-3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/mixed-reality 'main' (make sure the arrow is pointing the correct way).
+3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/minecraft-creator 'main' (make sure the arrow is pointing the correct way).
 
     [Image]
 
