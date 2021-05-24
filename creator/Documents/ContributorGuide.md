@@ -131,7 +131,7 @@ Your pull request will be reviewed by our content team. If it is approved, your 
 The following resources will help you learn how to edit documentation using the Markdown language:
 
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-- [Markdown-at-a-glance reference poster](media/markdownposter.pdf)
+- [Markdown-at-a-glance reference poster](media/ContributorGuide/markdownposter.jpg)
 - [Additional resources for writing Markdown for docs.microsoft.com](/contribute/markdown-reference)
 
 ### Adding tables
