@@ -1,21 +1,21 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Minecraft Creator Contributing Guide
+title: Contributing to Minecraft Bedrock Documentation
 ms.prod: gaming
 ---
-# Contributing to Minecraft Creator documentation
+# Contributing to Minecraft Bedrock Documentation
 
-Welcome to the public repo for Minecraft Creator documentation! Any articles you create or edit in this repo will be visible to the public.
+Welcome to the public repo for Minecraft Bedrock documentation! Any articles you create or edit in this repo will be visible to the public.
 
-The Minecraft Creator docs are now on the docs.microsoft.com platform, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo gets formatted into stylized pages that show up at [Learning Portal URL].
+The Minecraft Bedrock docs are on the docs.microsoft.com platform, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo will be formatted into Microsoft Docs stylized pages that show up at [Minecraft Bedrock docs](https://docs.microsoft.com/minecraft/creator). Content created by you and other members of the Bedrock Community will be released as a part of our content drops and Minecraft: Bedrock Edition updates.
 
 This page covers the basic steps and guidelines for contributing and links to Markdown basics. Thank you for your contribution!
 
 ## Available repos
 | Repository name | URL |
 |------ | ----- |
-| Creator Learning Portal | [Forked Repo URL] |
+| Minecraft Bedrock docs | https://github.com/MicrosoftDocs/minecraft-creator |
 
 ## Before you start
 If you don't already have one, you'll need to [create a GitHub account.](https://github.com/join)
@@ -40,20 +40,18 @@ Use the following workflow to make updates to an existing article via GitHub in 
 
 2. Select the edit button (pencil icon) in the top right, which will automatically fork a disposable branch off the 'main' branch.
 
-[FIND OUT HOW TO SET UP THIS BEHAVIOR - currently this takes user to the file in the existing GitHub repo, which is private]
-
 [image]
 
 3. Edit the content of the article and format according to the [Markdown basics](#markdown_basics).
 
 4. Update the metadata at the top of each article:
 
-    - title: Page title that appears in the browser tab when the article is being viewed. Page titles are used for SEO and indexing, so don't change the title unless necessary (though this is less critical before documentation goes public).
-    - description: Write a brief description of the article's content, which boosts SEO and discovery.
-    - author: If you're the primary owner of the page, add your GitHub alias here.
-    - ms.author: If you're the primary owner of the page, add your Microsoft alias here (you don't need @microsoft.com, just the alias).
-    - ms.date: Update the date if you're adding major content to the page, but not for fixes like clarification, formatting, grammar, or spelling.
-    - keywords: Keywords aid in SEO (search engine optimization). Add keywords, separated by a comma and a space, that are specific to your article, but no punctuation after the last keyword in your list. You don't need to add global keywords that apply to all articles, as those are managed elsewhere.
+    - **title**: Page title that appears in the browser tab when the article is being viewed. Page titles are used for SEO and indexing, so don't change the title unless necessary (though this is less critical before documentation goes public).
+    - **description**: Write a brief description of the article's content, which boosts SEO and discovery.
+    - **author**: If you're the primary owner of the page, add your GitHub alias here.
+    - **ms.author**: If you're the primary owner of the page, add your Microsoft alias here (you don't need @microsoft.com, just the alias).
+    - **ms.date**: Update the date if you're adding major content to the page, but not for fixes like clarification, formatting, grammar, or spelling.
+    - **keywords**: Keywords aid in SEO (search engine optimization). Add keywords, separated by a comma and a space, that are specific to your article, but no punctuation after the last keyword in your list. You don't need to add global keywords that apply to all articles, as those are managed elsewhere.
 
 5. When you've completed your article edits, scroll down and select Propose file change.
 
@@ -126,21 +124,27 @@ keywords:
 
 [Image]
 
-Your pull request will be reviewed by our content team. If it is approved, your changes will go live at our [next regular release](url-for-release-schedule). If your pull request is not approved, a member of the content team will leave a comment in your pull request letting you know the reason it was not approved.
+Your pull request will be reviewed by our content team. If it is approved, your changes will go live at our next regular release. If your pull request is not approved, a member of the content team will leave a comment in your pull request letting you know the reason it was not approved.
 
 ## Markdown basics
 
 The following resources will help you learn how to edit documentation using the Markdown language:
 
-- Markdown basics
-- Markdown-at-a-glance reference poster
-- Additional resources for writing Markdown for docs.microsoft.com
+- [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+- [Markdown-at-a-glance reference poster](https://docs.microsoft.com/en-us/windows/mixed-reality/images/markdownposter.pdf)
+- [Additional resources for writing Markdown for docs.microsoft.com](https://docs.microsoft.com/en-us/contribute/markdown-reference)
 
 ### Adding tables
 
 Because of the way docs.microsoft.com styles tables, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. Here’s a site that makes Markdown tables easy.
 
 The Docs Markdown Extension for Visual Studio Code also makes table generation easy if you're using Visual Studio Code (see below) to edit the documentation.
+
+```markdown
+|Title 1 |Title 2| Title 3|
+|--------|-------|--------|
+|This will |Show a three |column table|
+```
 
 ### Adding images
 
@@ -167,7 +171,7 @@ Previewing your changes on review.docs.microsoft.com is only available to Micros
 
 Microsoft employees: once your contributions have been merged into the 'main' branch, you can review the content before it goes public at https://github.com/MicrosoftDocs/minecraft-creator/tree/main/creator. Find your article using the table of contents in the left column.
 
-## Editing in the browser vs. editing with a desktop client
+## Editing in a web browser vs. editing with a desktop client
 
 Editing in the browser is the easiest way to make quick changes, however, there are a few disadvantages:
 
