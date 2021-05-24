@@ -1,28 +1,32 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: clock_time
+title: has_ability
 ms.prod: gaming
 ---
 
-# clock_time
+# has_ability
 
-`clock_time` allows a creator to compares the current time with a float value in the range (0.0, 1.0).
-
-0.0= Noon
-0.25= Sunset
-0.5= Midnight
-0.75= Sunrise
-
-> [!IMPORTANT]
-> `hourly_clock_time` is an updated version of the `clock_time` filter that uses an Integer in a range of 0 to 24000 based on the in-game time.
+Returns true when the subject entity has the named ability.
 
 ## Parameters
+
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
-|value | |Decimal|(Required) A floating point value.|
+|value | *not set* |String |The Ability type to test. The following abilities are usable to test for:|
 
-`clock_time` can also use `subject` and `operator` parameters but are optional.
+- flyspeed
+- flying
+- instabuild
+- invulnerable
+- lightning
+- mayfly
+- mute
+- noclip
+- walkspeed
+- worldbuilder
+
+`has_ability` can also use `subject` and `operator` parameters but are optional.
 
 ### subject
 
@@ -51,24 +55,27 @@ ms.prod: gaming
 | equals| Test for equality. |
 | not| Test for inequality. |
 
-## Examples
+## Example
 
 ### Full
 
 ```json
-{ "test": "clock_time", "subject": "self", "operator": "equals", "value": "0.00" }
+{ "test": "has_ability", "subject": "self", "operator": "equals", "value": "instabuild" }
 ```
 
-### Short (using Defaults)
+### Short
 
 ```json
-{ "test": "clock_time", "value": "0.00" }
+{ "test": "has_ability", "value": "instabuild" }
 ```
 
 ## Vanilla Mob examples
 
-No mobs currently use `clock_time`
+### Shulker
 
-## Vanilla Mobs using `clock_time` filter
+:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/shulker.json" range="180-193":::
 
-No mobs currently use `clock_time`
+## Vanilla Mobs using Filter
+
+- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
+- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
