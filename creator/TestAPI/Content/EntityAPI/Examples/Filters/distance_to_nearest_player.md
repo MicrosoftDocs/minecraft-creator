@@ -69,5 +69,5 @@ ms.prod: gaming
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
 - [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
 - [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.json)
+- [wandering trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
 - [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)

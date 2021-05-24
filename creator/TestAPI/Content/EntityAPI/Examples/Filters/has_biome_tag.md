@@ -62,13 +62,13 @@ Tests whether the biome the subject is in has the specified tag.
 
 ### Creeper
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/creeper.md" range="28-30":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/creeper.json" range="28-30":::
 
 ## Vanilla Mobs using Filter
 
 A list to the vanilla Filter pack snippets that currently use the Filter. If more than 25 Filters are used, feel free to split the list into 2 or 3 columns.
 
-- [Bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
+- [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
