@@ -64,7 +64,7 @@ ms.prod: gaming
 
 :::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/zoglin.json" range="139-155":::
 
-## Vanilla Mobs using `distance_to_nearest_player` filter
+## Vanilla Mobs using `distance_to_nearest_player` 
 
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
 - [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)

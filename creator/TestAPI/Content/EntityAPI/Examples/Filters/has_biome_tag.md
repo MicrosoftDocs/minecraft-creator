@@ -64,49 +64,48 @@ Tests whether the biome the subject is in has the specified tag.
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/creeper.json" range="28-30":::
 
-## Vanilla Mobs using Filter
+## Vanilla Mobs using `has_biome_tag`
 
-A list to the vanilla Filter pack snippets that currently use the Filter. If more than 25 Filters are used, feel free to split the list into 2 or 3 columns.
-
-- [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
-- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-- [cave spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
-- [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
-- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [elder guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
-- [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
-- [endermite](../../../../Source/VanillaBehaviorPack_Snippets/entities/endermite.md)
-- [evocation illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
-- [ghast](../../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)
-- [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [husk](Source/VanilliaFilterPack/entities/husk.md)
-- [iron golem](Source/VanilliaFilterPack/entities/iron_golem.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [magma cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
-- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
-- [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)
-- [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
-- [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
-- [polar bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
-- [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
-- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
-- [silverfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/silverfish.md)
-- [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
-- [slime](../../../../Source/VanillaBehaviorPack_Snippets/entities/slime.md)
-- [snow golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
-- [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
-- [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
-- [vex](../../../../Source/VanillaBehaviorPack_Snippets/entities/vex.md)
-- [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)
-- [witch](../../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)
-- [wither skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
-- [wither](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither.md)
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
-- [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)
-- [zombie pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.md)
-- [zombie villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
-- [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)
+- bat
+- bee
+- chicken
+- cod
+- cow
+- creeper
+- dolphin
+- donkey
+- drowned
+- enderman
+- fox
+- ghast
+- hoglin
+- horse
+- husk
+- llama
+- magma cube
+- mooshroom
+- ocelot
+- panda
+- parrot
+- phantom
+- pig
+- piglin
+- pillager_patrol
+- polar bear
+- pufferfish
+- rabbit
+- salmon
+- sheep
+- skeleton
+- slime
+- spider
+- squid
+- stray
+- strider
+- tropical fish
+- turtle
+- witch
+- wolf
+- zombie pigman
+- zombie
+- 

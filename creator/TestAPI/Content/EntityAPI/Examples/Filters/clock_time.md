@@ -69,6 +69,6 @@ ms.prod: gaming
 
 No mobs currently use `clock_time`
 
-## Vanilla Mobs using `clock_time` filter
+## Vanilla Mobs using `clock_time` 
 
 No mobs currently use `clock_time`
