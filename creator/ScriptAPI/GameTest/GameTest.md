@@ -2,7 +2,7 @@
 # DO NOT TOUCH — This file was automatically generated.  See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: Gaming
+ms.prod: gaming
 title: GameTest Module
 description: Contents of the GameTest module
 ---
@@ -31,7 +31,7 @@ Registers a new GameTest function. This GameTest will become available in Minecr
 
 Returns [*RegistrationBuilder*](RegistrationBuilder.md)
 
-Returns a [*RegistrationBuilder.RegistrationBuilder*](../RegistrationBuilder/RegistrationBuilder.md) where additional options for this test can be specified via builder methods.
+Returns a @GameTest.RegistrationBuilder where additional options for this test can be specified via builder methods.
 
 
 #### Examples
