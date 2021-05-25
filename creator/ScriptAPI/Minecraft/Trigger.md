@@ -3,27 +3,10 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
-title: GameTest.Tags Class
-description: Contents of the GameTest.Tags class.
+title: Minecraft.Trigger Class
+description: Contents of the Minecraft.Trigger class.
 ---
-# Tags Class
+# Trigger Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
-## Properties
-### **suiteDefault** - `string`
-
-
-
-### **suiteDisabled** - `string`
-
-
-
-### **suiteAll** - `string`
-
-
-
-### **suiteDebug** - `string`
-
-
-
 

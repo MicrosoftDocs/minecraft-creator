@@ -3,10 +3,10 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
-title: Minecraft.ItemStack Class
-description: Contents of the Minecraft.ItemStack class.
+title: Minecraft.MountTaming Class
+description: Contents of the Minecraft.MountTaming class.
 ---
-# ItemStack Class
+# MountTaming Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 ## Properties
@@ -14,30 +14,22 @@ description: Contents of the Minecraft.ItemStack class.
 
 
 
-### **amount** - `number`
-
-
-
-### **data** - `number`
-
-
-
 
 ## Methods
-- [constructor](#constructor)
+- [setTamed](#settamed)
   
-### **constructor**
+### **setTamed**
 `
-new ItemStack(itemType: ItemType, amount: number, data: number)
+setTamed(showParticles: boolean): void
 `
 
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **itemType** | [*ItemType*](ItemType.md) | - |
-| **amount** | *number* | - |
-| **data** | *number* | - |
+| **showParticles** | *boolean* | - |
 
-Returns [*ItemStack*](ItemStack.md)
+Returns *undefined*
 
+> [!WARNING]
+> This function can throw errors.
 

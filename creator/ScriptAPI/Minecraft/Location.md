@@ -3,41 +3,55 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
-title: Minecraft.ItemStack Class
-description: Contents of the Minecraft.ItemStack class.
+title: Minecraft.Location Class
+description: Contents of the Minecraft.Location class.
 ---
-# ItemStack Class
+# Location Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 ## Properties
-### **id** - `string`
+### **x** - `number`
 
 
 
-### **amount** - `number`
+### **y** - `number`
 
 
 
-### **data** - `number`
+### **z** - `number`
 
 
 
 
 ## Methods
 - [constructor](#constructor)
+- [equals](#equals)
   
 ### **constructor**
 `
-new ItemStack(itemType: ItemType, amount: number, data: number)
+new Location(x: number, y: number, z: number)
 `
 
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **itemType** | [*ItemType*](ItemType.md) | - |
-| **amount** | *number* | - |
-| **data** | *number* | - |
+| **x** | *number* | - |
+| **y** | *number* | - |
+| **z** | *number* | - |
 
-Returns [*ItemStack*](ItemStack.md)
+Returns [*Location*](Location.md)
+
+
+### **equals**
+`
+equals(other: Location): boolean
+`
+
+#### Arguments
+| Param | Type | Description |
+| :--- | :--- | :---: |
+| **other** | [*Location*](Location.md) | - |
+
+Returns *boolean*
 
 

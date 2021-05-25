@@ -3,41 +3,28 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
-title: Minecraft.ItemStack Class
-description: Contents of the Minecraft.ItemStack class.
+title: Minecraft.Commands Class
+description: Contents of the Minecraft.Commands class.
 ---
-# ItemStack Class
+# Commands Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
-## Properties
-### **id** - `string`
-
-
-
-### **amount** - `number`
-
-
-
-### **data** - `number`
-
-
-
 
 ## Methods
-- [constructor](#constructor)
+- [run](#run)
   
-### **constructor**
+### **run**
 `
-new ItemStack(itemType: ItemType, amount: number, data: number)
+run(commandString: string): json
 `
 
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **itemType** | [*ItemType*](ItemType.md) | - |
-| **amount** | *number* | - |
-| **data** | *number* | - |
+| **commandString** | *string* | - |
 
-Returns [*ItemStack*](ItemStack.md)
+Returns *json*
 
+> [!WARNING]
+> This function can throw errors.
 

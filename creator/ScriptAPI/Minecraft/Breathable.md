@@ -3,32 +3,72 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
-title: Minecraft.Block Class
-description: Contents of the Minecraft.Block class.
+title: Minecraft.Breathable Class
+description: Contents of the Minecraft.Breathable class.
 ---
-# Block Class
+# Breathable Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 ## Properties
-### **name** - `string`
+### **id** - `string`
+
+
+
+### **totalSupply** - `number`
+
+
+
+### **suffocateTime** - `number`
+
+
+
+### **inhaleTime** - `number`
+
+
+
+### **breathesAir** - `boolean`
+
+
+
+### **breathesWater** - `boolean`
+
+
+
+### **breathesLava** - `boolean`
+
+
+
+### **breathesSolids** - `boolean`
+
+
+
+### **generatesBubbles** - `boolean`
+
+
+
+### **breatheBlocks** - `array`
+
+
+
+### **nonBreatheBlocks** - `array`
 
 
 
 
 ## Methods
-- [setState](#setstate)
+- [setAirSupply](#setairsupply)
   
-### **setState**
+### **setAirSupply**
 `
-setState(state: BlockState): any
+setAirSupply(value: number): void
 `
 
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **state** | [*BlockState*](BlockState.md) | - |
+| **value** | *number* | - |
 
-Returns *any*
+Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.

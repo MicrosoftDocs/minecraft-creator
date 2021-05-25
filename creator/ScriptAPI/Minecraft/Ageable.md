@@ -3,10 +3,10 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
-title: Minecraft.ItemStack Class
-description: Contents of the Minecraft.ItemStack class.
+title: Minecraft.Ageable Class
+description: Contents of the Minecraft.Ageable class.
 ---
-# ItemStack Class
+# Ageable Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 ## Properties
@@ -14,30 +14,20 @@ description: Contents of the Minecraft.ItemStack class.
 
 
 
-### **amount** - `number`
+### **duration** - `number`
 
 
 
-### **data** - `number`
+### **feedItems** - `array`
 
 
 
+### **dropItems** - `array`
 
-## Methods
-- [constructor](#constructor)
-  
-### **constructor**
-`
-new ItemStack(itemType: ItemType, amount: number, data: number)
-`
 
-#### Arguments
-| Param | Type | Description |
-| :--- | :--- | :---: |
-| **itemType** | [*ItemType*](ItemType.md) | - |
-| **amount** | *number* | - |
-| **data** | *number* | - |
 
-Returns [*ItemStack*](ItemStack.md)
+### **growUp** - `Trigger`
+
+
 
 

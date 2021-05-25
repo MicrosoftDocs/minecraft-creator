@@ -3,26 +3,26 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
-title: GameTest.Tags Class
-description: Contents of the GameTest.Tags class.
+title: Minecraft.Seat Class
+description: Contents of the Minecraft.Seat class.
 ---
-# Tags Class
+# Seat Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 ## Properties
-### **suiteDefault** - `string`
+### **position** - `Location`
 
 
 
-### **suiteDisabled** - `string`
+### **minRiderCount** - `number`
 
 
 
-### **suiteAll** - `string`
+### **maxRiderCount** - `number`
 
 
 
-### **suiteDebug** - `string`
+### **lockRiderRotation** - `number`
 
 
 

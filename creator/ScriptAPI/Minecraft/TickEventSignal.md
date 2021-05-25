@@ -3,32 +3,43 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: Gaming
-title: Minecraft.Block Class
-description: Contents of the Minecraft.Block class.
+title: Minecraft.TickEventSignal Class
+description: Contents of the Minecraft.TickEventSignal class.
 ---
-# Block Class
+# TickEventSignal Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
-## Properties
-### **name** - `string`
-
-
-
 
 ## Methods
-- [setState](#setstate)
+- [subscribe](#subscribe)
+- [unsubscribe](#unsubscribe)
   
-### **setState**
+### **subscribe**
 `
-setState(state: BlockState): any
+subscribe(callback: () => undefined): void
 `
 
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **state** | [*BlockState*](BlockState.md) | - |
+| **callback** | () => undefined | - |
 
-Returns *any*
+Returns *undefined*
+
+> [!WARNING]
+> This function can throw errors.
+
+### **unsubscribe**
+`
+unsubscribe(callback: () => undefined): void
+`
+
+#### Arguments
+| Param | Type | Description |
+| :--- | :--- | :---: |
+| **callback** | () => undefined | - |
+
+Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.

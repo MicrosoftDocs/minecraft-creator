@@ -2,23 +2,24 @@
 # DO NOT TOUCH — This file was automatically generated.  See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.prod: Gaming
 title: Minecraft.BlockLocation Class
 description: Contents of the Minecraft.BlockLocation class.
 ---
 # BlockLocation Class
-
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
-
 ## Properties
 ### **x** - `number`
+
 
 
 ### **y** - `number`
 
 
+
 ### **z** - `number`
+
 
 
 
@@ -42,6 +43,7 @@ new BlockLocation(x: number, y: number, z: number)
 
 Returns [*BlockLocation*](BlockLocation.md)
 
+
 ### **equals**
 `
 equals(other: BlockLocation): boolean
@@ -53,6 +55,7 @@ equals(other: BlockLocation): boolean
 | **other** | [*BlockLocation*](BlockLocation.md) | - |
 
 Returns *boolean*
+
 
 ### **offset**
 `
@@ -68,6 +71,7 @@ offset(x: number, y: number, z: number): BlockLocation
 
 Returns [*BlockLocation*](BlockLocation.md)
 
+
 ### **above**
 `
 above(): BlockLocation
@@ -75,4 +79,5 @@ above(): BlockLocation
 
 
 Returns [*BlockLocation*](BlockLocation.md)
+
 
