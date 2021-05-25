@@ -3,26 +3,26 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: GameTest.Tags Class
-description: Contents of the GameTest.Tags class.
+title: Minecraft.MovementGlide Class
+description: Contents of the Minecraft.MovementGlide class.
 ---
-# Tags Class
+# MovementGlide Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 ## Properties
-### **suiteDefault** - `string`
+### **id** - `string`
 
 
 
-### **suiteDisabled** - `string`
+### **maxTurn** - `number`
 
 
 
-### **suiteAll** - `string`
+### **startSpeed** - `number`
 
 
 
-### **suiteDebug** - `string`
+### **speedWhenTurning** - `number`
 
 
 

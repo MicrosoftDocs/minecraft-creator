@@ -7,7 +7,6 @@ title: GameTest.GameTestSequence Class
 description: Contents of the GameTest.GameTestSequence class.
 ---
 # GameTestSequence Class
-
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 
@@ -32,6 +31,7 @@ thenExecute(callback: () => undefined): GameTestSequence
 
 Returns [*GameTestSequence*](GameTestSequence.md)
 
+
 ### **thenExecuteAfter**
 `
 thenExecuteAfter(delayTicks: number, callback: () => undefined): GameTestSequence
@@ -45,6 +45,7 @@ thenExecuteAfter(delayTicks: number, callback: () => undefined): GameTestSequenc
 
 Returns [*GameTestSequence*](GameTestSequence.md)
 
+
 ### **thenFail**
 `
 thenFail(errorMessage: string): void
@@ -56,6 +57,7 @@ thenFail(errorMessage: string): void
 | **errorMessage** | *string* | - |
 
 Returns *undefined*
+
 
 ### **thenIdle**
 `
@@ -69,6 +71,7 @@ thenIdle(delayTicks: number): GameTestSequence
 
 Returns [*GameTestSequence*](GameTestSequence.md)
 
+
 ### **thenSucceed**
 `
 thenSucceed(): void
@@ -76,6 +79,7 @@ thenSucceed(): void
 
 
 Returns *undefined*
+
 
 ### **thenWait**
 `
@@ -89,6 +93,7 @@ thenWait(callback: () => undefined): GameTestSequence
 
 Returns [*GameTestSequence*](GameTestSequence.md)
 
+
 ### **thenWaitWithDelay**
 `
 thenWaitWithDelay(delayTicks: number, callback: () => undefined): GameTestSequence
@@ -101,4 +106,5 @@ thenWaitWithDelay(delayTicks: number, callback: () => undefined): GameTestSequen
 | **callback** | () => undefined | - |
 
 Returns [*GameTestSequence*](GameTestSequence.md)
+
 

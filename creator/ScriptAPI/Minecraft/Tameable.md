@@ -3,27 +3,41 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: GameTest.Tags Class
-description: Contents of the GameTest.Tags class.
+title: Minecraft.Tameable Class
+description: Contents of the Minecraft.Tameable class.
 ---
-# Tags Class
+# Tameable Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 ## Properties
-### **suiteDefault** - `string`
+### **id** - `string`
 
 
 
-### **suiteDisabled** - `string`
+### **probability** - `number`
 
 
 
-### **suiteAll** - `string`
+### **tameItems** - `array`
 
 
 
-### **suiteDebug** - `string`
+### **tameEvent** - `Trigger`
 
 
 
+
+## Methods
+- [tame](#tame)
+  
+### **tame**
+`
+tame(): boolean
+`
+
+
+Returns *boolean*
+
+> [!WARNING]
+> This function can throw errors.
 

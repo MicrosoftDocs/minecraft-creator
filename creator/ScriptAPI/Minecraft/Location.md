@@ -3,10 +3,10 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: Minecraft.BlockLocation Class
-description: Contents of the Minecraft.BlockLocation class.
+title: Minecraft.Location Class
+description: Contents of the Minecraft.Location class.
 ---
-# BlockLocation Class
+# Location Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 ## Properties
@@ -26,12 +26,10 @@ description: Contents of the Minecraft.BlockLocation class.
 ## Methods
 - [constructor](#constructor)
 - [equals](#equals)
-- [offset](#offset)
-- [above](#above)
   
 ### **constructor**
 `
-new BlockLocation(x: number, y: number, z: number)
+new Location(x: number, y: number, z: number)
 `
 
 #### Arguments
@@ -41,43 +39,19 @@ new BlockLocation(x: number, y: number, z: number)
 | **y** | *number* | - |
 | **z** | *number* | - |
 
-Returns [*BlockLocation*](BlockLocation.md)
+Returns [*Location*](Location.md)
 
 
 ### **equals**
 `
-equals(other: BlockLocation): boolean
+equals(other: Location): boolean
 `
 
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **other** | [*BlockLocation*](BlockLocation.md) | - |
+| **other** | [*Location*](Location.md) | - |
 
 Returns *boolean*
-
-
-### **offset**
-`
-offset(x: number, y: number, z: number): BlockLocation
-`
-
-#### Arguments
-| Param | Type | Description |
-| :--- | :--- | :---: |
-| **x** | *number* | - |
-| **y** | *number* | - |
-| **z** | *number* | - |
-
-Returns [*BlockLocation*](BlockLocation.md)
-
-
-### **above**
-`
-above(): BlockLocation
-`
-
-
-Returns [*BlockLocation*](BlockLocation.md)
 
 

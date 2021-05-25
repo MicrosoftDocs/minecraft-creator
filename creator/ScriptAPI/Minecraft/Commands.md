@@ -3,27 +3,28 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: GameTest.Tags Class
-description: Contents of the GameTest.Tags class.
+title: Minecraft.Commands Class
+description: Contents of the Minecraft.Commands class.
 ---
-# Tags Class
+# Commands Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
-## Properties
-### **suiteDefault** - `string`
 
+## Methods
+- [run](#run)
+  
+### **run**
+`
+run(commandString: string): json
+`
 
+#### Arguments
+| Param | Type | Description |
+| :--- | :--- | :---: |
+| **commandString** | *string* | - |
 
-### **suiteDisabled** - `string`
+Returns *json*
 
-
-
-### **suiteAll** - `string`
-
-
-
-### **suiteDebug** - `string`
-
-
-
+> [!WARNING]
+> This function can throw errors.
 

@@ -3,10 +3,10 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: Minecraft.ItemStack Class
-description: Contents of the Minecraft.ItemStack class.
+title: Minecraft.Leashable Class
+description: Contents of the Minecraft.Leashable class.
 ---
-# ItemStack Class
+# Leashable Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 ## Properties
@@ -14,30 +14,38 @@ description: Contents of the Minecraft.ItemStack class.
 
 
 
-### **amount** - `number`
-
-
-
-### **data** - `number`
+### **softDistance** - `number`
 
 
 
 
 ## Methods
-- [constructor](#constructor)
+- [leash](#leash)
+- [unleash](#unleash)
   
-### **constructor**
+### **leash**
 `
-new ItemStack(itemType: ItemType, amount: number, data: number)
+leash(leashHolder: Entity): void
 `
 
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **itemType** | [*ItemType*](ItemType.md) | - |
-| **amount** | *number* | - |
-| **data** | *number* | - |
+| **leashHolder** | [*Entity*](Entity.md) | - |
 
-Returns [*ItemStack*](ItemStack.md)
+Returns *undefined*
 
+> [!WARNING]
+> This function can throw errors.
+
+### **unleash**
+`
+unleash(): void
+`
+
+
+Returns *undefined*
+
+> [!WARNING]
+> This function can throw errors.
 

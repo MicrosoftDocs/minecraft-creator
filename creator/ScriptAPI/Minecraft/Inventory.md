@@ -3,26 +3,38 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: GameTest.Tags Class
-description: Contents of the GameTest.Tags class.
+title: Minecraft.Inventory Class
+description: Contents of the Minecraft.Inventory class.
 ---
-# Tags Class
+# Inventory Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 ## Properties
-### **suiteDefault** - `string`
+### **additionalSlotsPerStrength** - `number`
 
 
 
-### **suiteDisabled** - `string`
+### **canBeSiphonedFrom** - `boolean`
 
 
 
-### **suiteAll** - `string`
+### **containerType** - `string`
 
 
 
-### **suiteDebug** - `string`
+### **inventorySize** - `number`
+
+
+
+### **private** - `boolean`
+
+
+
+### **restrictToOwner** - `boolean`
+
+
+
+### **container** - `InventoryComponentContainer`
 
 
 

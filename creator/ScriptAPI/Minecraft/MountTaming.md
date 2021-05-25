@@ -3,27 +3,33 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: GameTest.Tags Class
-description: Contents of the GameTest.Tags class.
+title: Minecraft.MountTaming Class
+description: Contents of the Minecraft.MountTaming class.
 ---
-# Tags Class
+# MountTaming Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 ## Properties
-### **suiteDefault** - `string`
+### **id** - `string`
 
 
 
-### **suiteDisabled** - `string`
 
+## Methods
+- [setTamed](#settamed)
+  
+### **setTamed**
+`
+setTamed(showParticles: boolean): void
+`
 
+#### Arguments
+| Param | Type | Description |
+| :--- | :--- | :---: |
+| **showParticles** | *boolean* | - |
 
-### **suiteAll** - `string`
+Returns *undefined*
 
-
-
-### **suiteDebug** - `string`
-
-
-
+> [!WARNING]
+> This function can throw errors.
 
