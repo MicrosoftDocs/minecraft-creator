@@ -1,20 +1,20 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_leashed
+title: is_underground
 ms.prod: gaming
 ---
 
-# is_leashed
+# is_underground
 
-Returns true if the subject entity is leashed.
+Returns true when the subject entity is underground. An entity is considered underground if there are non-solid blocks above it.
 
 ## Parameters
 
 > [!Note]
-> `is_leashed` does **not** require any parameters to work properly. It can be used as a standalone filter.
+> `is_underground` does **not** require any parameters to work properly. It can be used as a standalone filter.
 
-`is_leashed` can also use `subject`, `operator` and `value` parameters.
+`is_underground` can also use `subject`, `operator` and `value` parameters.
 
 ### subject
 
@@ -54,22 +54,24 @@ Returns true if the subject entity is leashed.
 ### Full
 
 ```json
-{ "test": "is_leashed", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "is_underground", "subject": "self", "operator": "equals", "value": "true"}
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "is_leashed" }
+{ "test": "is_underground" }
 ```
 
 ## Vanilla Mob examples
 
-### llama
+### spider
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/llama.json" range="82-96":::
+:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/spider.json" range="236-315":::
 
-## Vanilla Mobs using `is_leashed`
+## Vanilla Mobs using `is_underground`
 
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
+- [cave spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
+- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
+- [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
+- [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)

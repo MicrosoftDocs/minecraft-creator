@@ -1,20 +1,20 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_leashed
+title: is_sneaking
 ms.prod: gaming
 ---
 
-# is_leashed
+# is_sneaking
 
-Returns true if the subject entity is leashed.
+Tests whether the Subject is sleeping.
 
 ## Parameters
 
 > [!Note]
-> `is_leashed` does **not** require any parameters to work properly. It can be used as a standalone filter.
+> `is_sneaking` does **not** require any parameters to work properly. It can be used as a standalone filter.
 
-`is_leashed` can also use `subject`, `operator` and `value` parameters.
+`is_sneaking` can also use `subject`, `operator` and `value` parameters.
 
 ### subject
 
@@ -54,22 +54,21 @@ Returns true if the subject entity is leashed.
 ### Full
 
 ```json
-{ "test": "is_leashed", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "is_sneaking", "subject": "self", "operator": "equals", "value": "true"}
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "is_leashed" }
+{ "test": "is_sneaking" }
 ```
 
 ## Vanilla Mob examples
 
-### llama
+### fox
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/llama.json" range="82-96":::
+:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/fox.json" range="546-568":::
 
-## Vanilla Mobs using `is_leashed`
+## Vanilla Mobs using `is_sneaking`
 
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
+- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)

@@ -1,21 +1,33 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_mark_variant
+title: is_temperature_type
 ms.prod: gaming
 ---
 
-# is_mark_variant
+# is_temperature_type
 
-Returns true if the subject entity is the mark variant number provided.
+Tests whether the current temperature is a given type.
 
 ## Parameters
 
+
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
-|value |*not set* |Integer |(Required) An integer value. |
+|value |*not set* |String |(Required) The Biome temperature catagory to test. |
 
-`is_mark_variant` can also use `subject` and `operator` parameters but they are optional.
+### List of temperature types
+
+Below are a list of temperature types that can be used for the `value` string.
+
+Options|
+|:-----------|
+| cold|
+| mild|
+| ocean|
+| warm|
+
+`is_temperature_type` can also use `subject` and `operator` parameters but they are optional.
 
 ### subject
 
@@ -49,28 +61,19 @@ Returns true if the subject entity is the mark variant number provided.
 ### Full
 
 ```json
-{ "test": "is_mark_variant", "subject": "self", "operator": "equals", "value": "0" }
+{ "test": "is_temperature_type", "subject": "self", "operator": "equals", "value": "cold" }
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "is_mark_variant", "value": "0" }
+{ "test": "is_temperature_type", "value": "cold" }
 ```
 
 ## Vanilla Mob examples
 
-### llama
+No mobs currently use `is_temperature_type`.
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/llama.json" range="58-72":::
+## Vanilla Mobs using `is_temperature_type`
 
-### villager_v2
-
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/villager_v2.json" range="2040-2062":::
-
-## Vanilla Mobs using `is_mark_variant`
-
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
+No mobs currently use `is_temperature_type`.

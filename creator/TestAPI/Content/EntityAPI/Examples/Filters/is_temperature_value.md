@@ -1,21 +1,21 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_mark_variant
+title: is_temperature_value
 ms.prod: gaming
 ---
 
-# is_mark_variant
+# is_temperature_value
 
-Returns true if the subject entity is the mark variant number provided.
+Tests the current temperature against a provided value in the range (0.0, 1.0) where 0.0f is the coldest temp and 1.0f is the hottest.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
-|value |*not set* |Integer |(Required) An integer value. |
+|value |*not set* |Decimal |(Required) The Biome temperature value to compare with. |
 
-`is_mark_variant` can also use `subject` and `operator` parameters but they are optional.
+`is_temperature_value` can also use `subject` and `operator` parameters but they are optional.
 
 ### subject
 
@@ -49,28 +49,21 @@ Returns true if the subject entity is the mark variant number provided.
 ### Full
 
 ```json
-{ "test": "is_mark_variant", "subject": "self", "operator": "equals", "value": "0" }
+{ "test": "is_temperature_value", "subject": "self", "operator": "equals", "value": "0.50" }
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "is_mark_variant", "value": "0" }
+{ "test": "is_temperature_value", "value": "0.50" }
 ```
 
 ## Vanilla Mob examples
 
-### llama
+### snow golem
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/llama.json" range="58-72":::
+:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/snow_golem.json" range="60-78":::
 
-### villager_v2
+## Vanilla Mobs using `is_temperature_value`
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/villager_v2.json" range="2040-2062":::
-
-## Vanilla Mobs using `is_mark_variant`
-
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
+- [snow golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)

@@ -1,20 +1,20 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_leashed
+title: is_owner
 ms.prod: gaming
 ---
 
-# is_leashed
+# is_owner
 
-Returns true if the subject entity is leashed.
+Returns true if the subject entity is the owner of the calling entity.
 
 ## Parameters
 
 > [!Note]
-> `is_leashed` does **not** require any parameters to work properly. It can be used as a standalone filter.
+> `is_owner` does **not** require any parameters to work properly. It can be used as a standalone filter.
 
-`is_leashed` can also use `subject`, `operator` and `value` parameters.
+`is_owner` can also use `subject`, `operator` and `value` parameters.
 
 ### subject
 
@@ -54,22 +54,19 @@ Returns true if the subject entity is leashed.
 ### Full
 
 ```json
-{ "test": "is_leashed", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "is_owner", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "is_leashed" }
+{ "test": "is_owner" }
 ```
 
 ## Vanilla Mob examples
 
-### llama
+No mobs currently use `is_owner`.
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/llama.json" range="82-96":::
+## Vanilla Mobs using `is_owner`
 
-## Vanilla Mobs using `is_leashed`
-
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
+No mobs currently use `is_owner`.

@@ -1,20 +1,20 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_leashed
+title: is_snow_covered
 ms.prod: gaming
 ---
 
-# is_leashed
+# is_snow_covered
 
-Returns true if the subject entity is leashed.
+Tests whether the Subject is in an area covered by snow.
 
 ## Parameters
 
 > [!Note]
-> `is_leashed` does **not** require any parameters to work properly. It can be used as a standalone filter.
+> `is_snow_covered` does **not** require any parameters to work properly. It can be used as a standalone filter.
 
-`is_leashed` can also use `subject`, `operator` and `value` parameters.
+`is_snow_covered` can also use `subject`, `operator` and `value` parameters.
 
 ### subject
 
@@ -54,22 +54,22 @@ Returns true if the subject entity is leashed.
 ### Full
 
 ```json
-{ "test": "is_leashed", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "is_snow_covered", "subject": "self", "operator": "equals", "value": "true"}
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "is_leashed" }
+{ "test": "is_snow_covered" }
 ```
 
 ## Vanilla Mob examples
 
-### llama
+### Mob 1
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/llama.json" range="82-96":::
+## Vanilla Mobs using `is_snow_covered`
 
-## Vanilla Mobs using `is_leashed`
-
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
+- [cave spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
+- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
+- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
+- [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)

@@ -1,21 +1,22 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_mark_variant
+title: is_skin_id
 ms.prod: gaming
 ---
 
-# is_mark_variant
+# is_skin_id
 
-Returns true if the subject entity is the mark variant number provided.
+Returns true if the subject entity is the skin id number provided.
 
 ## Parameters
 
+
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
-|value |*not set* |Integer |(Required) An integer value. |
+|value |*not set* |Integer |(Required)  An integer value. |
 
-`is_mark_variant` can also use `subject` and `operator` parameters but they are optional.
+`is_skin_id` can also use `subject` and `operator` parameters but they are optional.
 
 ### subject
 
@@ -49,28 +50,22 @@ Returns true if the subject entity is the mark variant number provided.
 ### Full
 
 ```json
-{ "test": "is_mark_variant", "subject": "self", "operator": "equals", "value": "0" }
+{ "test": "is_skin_id", "subject": "self", "operator": "equals", "value": "true"}
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "is_mark_variant", "value": "0" }
+{ "test": "is_skin_id" }
 ```
 
 ## Vanilla Mob examples
 
-### llama
-
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/llama.json" range="58-72":::
-
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/villager_v2.json" range="2040-2062":::
+:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/villager_v2.json" range="2012-2038":::
 
-## Vanilla Mobs using `is_mark_variant`
+## Vanilla Mobs using `is_skin_id`
 
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
 - [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
 - [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)

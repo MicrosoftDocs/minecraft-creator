@@ -1,20 +1,20 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_leashed
+title: is_riding
 ms.prod: gaming
 ---
 
-# is_leashed
+# is_riding
 
-Returns true if the subject entity is leashed.
+Returns true if the subject entity is riding on another entity.
 
 ## Parameters
 
 > [!Note]
-> `is_leashed` does **not** require any parameters to work properly. It can be used as a standalone filter.
+> `is_riding` does **not** require any parameters to work properly. It can be used as a standalone filter.
 
-`is_leashed` can also use `subject`, `operator` and `value` parameters.
+`is_riding` can also use `subject`, `operator` and `value` parameters.
 
 ### subject
 
@@ -54,22 +54,22 @@ Returns true if the subject entity is leashed.
 ### Full
 
 ```json
-{ "test": "is_leashed", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "is_riding", "subject": "self", "operator": "equals", "value": "true"}
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "is_leashed" }
+{ "test": "is_riding" }
 ```
 
 ## Vanilla Mob examples
 
-### llama
+### parrot
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/llama.json" range="82-96":::
+:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/parrot.json" range="164-181":::
 
-## Vanilla Mobs using `is_leashed`
+## Vanilla Mobs using is_riding
 
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
+- [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)
+- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
