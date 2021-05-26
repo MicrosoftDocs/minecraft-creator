@@ -1,32 +1,20 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: has_ability
+title: has_tag
 ms.prod: gaming
 ---
 
-# has_ability
+# has_tag
 
-Returns true when the subject entity has the named ability.
+Returns true if the subject entity has the tag provided.
 
 ## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value | *not set* |String |The Ability type to test. The following abilities are usable to test for:|
+> [!Note]
+> `has_tag` does **not** require any parameters to work properly. It can be used as a standalone filter.
 
-- flyspeed
-- flying
-- instabuild
-- invulnerable
-- lightning
-- mayfly
-- mute
-- noclip
-- walkspeed
-- worldbuilder
-
-`has_ability` can also use `subject` and `operator` parameters but are optional.
+`has_tag` can also use `subject`, `operator` and `value` parameters.
 
 ### subject
 
@@ -55,27 +43,28 @@ Returns true when the subject entity has the named ability.
 | equals| Test for equality. |
 | not| Test for inequality. |
 
+|Name |Default Value  |Type  |Description  |
+|---------|---------|---------|---------|
+|value |*not set* |String |(Optional) true or false. |
+
 ## Example
 
 ### Full
 
 ```json
-{ "test": "has_ability", "subject": "self", "operator": "equals", "value": "instabuild" }
+{ "test": "has_tag", "subject": "self", "operator": "equals", "value": "" }
 ```
 
-### Short
+### Short (using Defaults)
 
 ```json
-{ "test": "has_ability", "value": "instabuild" }
+{ "test": "has_tag" }
 ```
 
 ## Vanilla Mob examples
 
-### Shulker
+No mobs currently use `has_tag`
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/shulker.json" range="180-193":::
+## Vanilla Mobs using `has_tag`
 
-## Vanilla Mobs using `has_ability`
-
-- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
-- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
+No mobs currently use `has_tag`

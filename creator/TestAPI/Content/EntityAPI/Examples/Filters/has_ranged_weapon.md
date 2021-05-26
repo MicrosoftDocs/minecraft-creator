@@ -1,32 +1,20 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: has_ability
+title: has_ranged_weapon
 ms.prod: gaming
 ---
 
-# has_ability
+# has_ranged_weapon
 
-Returns true when the subject entity has the named ability.
+Returns true when the subject entity is holding a ranged weapon like a bow or crossbow.
 
 ## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value | *not set* |String |The Ability type to test. The following abilities are usable to test for:|
+> [!Note]
+> `has_ranged_weapon` does **not** require any parameters to work properly. It can be used as a standalone filter.
 
-- flyspeed
-- flying
-- instabuild
-- invulnerable
-- lightning
-- mayfly
-- mute
-- noclip
-- walkspeed
-- worldbuilder
-
-`has_ability` can also use `subject` and `operator` parameters but are optional.
+`has_ranged_weapon` can also use `subject`, `operator` and `value` parameters.
 
 ### subject
 
@@ -55,27 +43,33 @@ Returns true when the subject entity has the named ability.
 | equals| Test for equality. |
 | not| Test for inequality. |
 
+### value
+
+|Name |Default Value  |Type  |Description  |
+|---------|---------|---------|---------|
+|value |true |Boolean |(Optional) true or false. |
+
 ## Example
 
 ### Full
 
 ```json
-{ "test": "has_ability", "subject": "self", "operator": "equals", "value": "instabuild" }
+{ "test": "has_ranged_weapon", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
-### Short
+### Short (using Defaults)
 
 ```json
-{ "test": "has_ability", "value": "instabuild" }
+{ "test": "has_ranged_weapon" }
 ```
 
 ## Vanilla Mob examples
 
-### Shulker
+### skeleton
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/shulker.json" range="180-193":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/skeleton.json" range="61-84":::
 
-## Vanilla Mobs using `has_ability`
+## Vanilla Mobs using Filter
 
-- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
-- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
+- [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
+- [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)

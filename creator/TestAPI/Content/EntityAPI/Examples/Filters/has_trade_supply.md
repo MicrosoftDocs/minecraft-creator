@@ -1,32 +1,20 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: has_ability
+title: has_trade_supply
 ms.prod: gaming
 ---
 
-# has_ability
+# has_trade_supply
 
-Returns true when the subject entity has the named ability.
+Tests whether the target has any trade supply left. Will return false if the target cannot be traded with.
 
 ## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value | *not set* |String |The Ability type to test. The following abilities are usable to test for:|
+> [!Note]
+> `has_trade_supply` does **not** require any parameters to work properly. It can be used as a standalone filter.
 
-- flyspeed
-- flying
-- instabuild
-- invulnerable
-- lightning
-- mayfly
-- mute
-- noclip
-- walkspeed
-- worldbuilder
-
-`has_ability` can also use `subject` and `operator` parameters but are optional.
+`has_trade_supply` can also use `subject`, `operator` and `value` parameters.
 
 ### subject
 
@@ -55,27 +43,32 @@ Returns true when the subject entity has the named ability.
 | equals| Test for equality. |
 | not| Test for inequality. |
 
+### value
+
+|Name |Default Value  |Type  |Description  |
+|---------|---------|---------|---------|
+|value |true |Boolean |(Optional) true or false. |
+
 ## Example
 
 ### Full
 
 ```json
-{ "test": "has_ability", "subject": "self", "operator": "equals", "value": "instabuild" }
+{ "test": "has_trade_supply", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
-### Short
+### Short (using Defaults)
 
 ```json
-{ "test": "has_ability", "value": "instabuild" }
+{ "test": "has_trade_supply" }
 ```
 
 ## Vanilla Mob examples
 
-### Shulker
+### wandering trader
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/shulker.json" range="180-193":::
+:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/wandering_trader.json" range="113-126":::
 
-## Vanilla Mobs using `has_ability`
+## Vanilla Mobs using `has_trade_supply`
 
-- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
-- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
+- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)

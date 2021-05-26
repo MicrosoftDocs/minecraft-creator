@@ -1,32 +1,21 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: has_ability
+title: has_container_open
 ms.prod: gaming
 ---
 
-# has_ability
+# has_container_open
 
-Returns true when the subject entity has the named ability.
+Returns true when the subject Player entity has opened a container.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
-|value | *not set* |String |The Ability type to test. The following abilities are usable to test for:|
+|value |true |Boolean |  (Optional) true or false. |
 
-- flyspeed
-- flying
-- instabuild
-- invulnerable
-- lightning
-- mayfly
-- mute
-- noclip
-- walkspeed
-- worldbuilder
-
-`has_ability` can also use `subject` and `operator` parameters but are optional.
+`has_container_open` can also use `subject` and `operator` parameters but they are optional.
 
 ### subject
 
@@ -60,22 +49,21 @@ Returns true when the subject entity has the named ability.
 ### Full
 
 ```json
-{ "test": "has_ability", "subject": "self", "operator": "equals", "value": "instabuild" }
+{ "test": "has_container_open", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
-### Short
+### Short (using Defaults)
 
 ```json
-{ "test": "has_ability", "value": "instabuild" }
+{ "test": "has_container_open" }
 ```
 
 ## Vanilla Mob examples
 
-### Shulker
+### Piglin
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/shulker.json" range="180-193":::
+:::code language="markdown" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="378-387":::
 
-## Vanilla Mobs using `has_ability`
+## Vanilla Mobs using `has_container_open`
 
-- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
-- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
+- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
