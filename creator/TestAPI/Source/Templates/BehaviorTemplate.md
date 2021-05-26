@@ -32,6 +32,9 @@ This is a custom example written by the developers/Technical writers of a fleshe
 
 ```json
 "minecraft:behavior.foo":{
+    "priority": 2,
+    "parameterA":true,
+    "parameterB":42,
 }
 ```
 

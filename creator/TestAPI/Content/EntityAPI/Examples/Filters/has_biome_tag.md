@@ -1,28 +1,21 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: clock_time
+title: has_biome_tag
 ms.prod: gaming
 ---
 
-# clock_time
+# has_biome_tag
 
-`clock_time` allows a creator to compares the current time with a float value in the range (0.0, 1.0).
-
-0.0= Noon
-0.25= Sunset
-0.5= Midnight
-0.75= Sunrise
-
-> [!IMPORTANT]
-> [hourly_clock_time](hourly_clock_time.md) is an updated version of the `clock_time` filter that uses an Integer in a range of 0 to 24000 based on the in-game time.
+Tests whether the biome the subject is in has the specified tag.
 
 ## Parameters
+
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
-|value | |Decimal|(Required) A floating point value.|
+|value |*not set* |String | (Required) The tag to look for |
 
-`clock_time` can also use `subject` and `operator` parameters but are optional.
+`has_biome_tag` can also use `subject` and `operator` parameters but they are optional.
 
 ### subject
 
@@ -51,24 +44,68 @@ ms.prod: gaming
 | equals| Test for equality. |
 | not| Test for inequality. |
 
-## Examples
+## Example
 
 ### Full
 
 ```json
-{ "test": "clock_time", "subject": "self", "operator": "equals", "value": "0.00" }
+{ "test": "has_biome_tag", "subject": "self", "operator": "equals", "value": " " }
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "clock_time", "value": "0.00" }
+{ "test": "has_biome_tag", "value": " " }
 ```
 
 ## Vanilla Mob examples
 
-No mobs currently use `clock_time`
+### Creeper
 
-## Vanilla Mobs using `clock_time` 
+:::code language="json" source="../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/creeper.json" range="28-30":::
 
-No mobs currently use `clock_time`
+## Vanilla Mobs using `has_biome_tag`
+
+- bat
+- bee
+- chicken
+- cod
+- cow
+- creeper
+- dolphin
+- donkey
+- drowned
+- enderman
+- fox
+- ghast
+- hoglin
+- horse
+- husk
+- llama
+- magma cube
+- mooshroom
+- ocelot
+- panda
+- parrot
+- phantom
+- pig
+- piglin
+- pillager_patrol
+- polar bear
+- pufferfish
+- rabbit
+- salmon
+- sheep
+- skeleton
+- slime
+- spider
+- squid
+- stray
+- strider
+- tropical fish
+- turtle
+- witch
+- wolf
+- zombie pigman
+- zombie
+- 

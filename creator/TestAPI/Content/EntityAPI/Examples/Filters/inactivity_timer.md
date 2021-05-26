@@ -1,28 +1,21 @@
 ---
-author: v-josjones
-ms.author: v-josjones
-title: clock_time
+author: <Employee Name>
+ms.author: <Employee Name>
+title: inactivity_timer
 ms.prod: gaming
 ---
 
-# clock_time
+# inactivity_timer
 
-`clock_time` allows a creator to compares the current time with a float value in the range (0.0, 1.0).
-
-0.0= Noon
-0.25= Sunset
-0.5= Midnight
-0.75= Sunrise
-
-> [!IMPORTANT]
-> [hourly_clock_time](hourly_clock_time.md) is an updated version of the `clock_time` filter that uses an Integer in a range of 0 to 24000 based on the in-game time.
+Tests if the specified duration in seconds of inactivity for despawning has been reached.
 
 ## Parameters
+
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
-|value | |Decimal|(Required) A floating point value.|
+|value |*not set* |Integer |(Required) An integer value. |
 
-`clock_time` can also use `subject` and `operator` parameters but are optional.
+`inactivity_timer` can also use `subject` and `operator` parameters but they are optional.
 
 ### subject
 
@@ -51,24 +44,27 @@ ms.prod: gaming
 | equals| Test for equality. |
 | not| Test for inequality. |
 
-## Examples
+## Example
 
 ### Full
 
 ```json
-{ "test": "clock_time", "subject": "self", "operator": "equals", "value": "0.00" }
+{ "test": "inactivity_timer", "subject": "self", "operator": "equals", "value": "0" }
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "clock_time", "value": "0.00" }
+{ "test": "inactivity_timer", "value": "0" }
 ```
 
 ## Vanilla Mob examples
 
-No mobs currently use `clock_time`
+### piglin_brute
 
-## Vanilla Mobs using `clock_time` 
+:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/piglin_brute.json" range="248-252":::
 
-No mobs currently use `clock_time`
+## Vanilla Mobs using `inactivity_timer`
+
+- [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
+- [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)

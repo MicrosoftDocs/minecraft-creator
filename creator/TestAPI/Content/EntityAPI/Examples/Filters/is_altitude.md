@@ -1,28 +1,23 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: clock_time
+title: is_altitude
 ms.prod: gaming
 ---
 
-# clock_time
+# is_altitude
 
-`clock_time` allows a creator to compares the current time with a float value in the range (0.0, 1.0).
+Tests the current altitude against a provided value.
 
-0.0= Noon
-0.25= Sunset
-0.5= Midnight
-0.75= Sunrise
-
-> [!IMPORTANT]
-> [hourly_clock_time](hourly_clock_time.md) is an updated version of the `clock_time` filter that uses an Integer in a range of 0 to 24000 based on the in-game time.
+0 = bedrock elevation.
 
 ## Parameters
+
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
-|value | |Decimal|(Required) A floating point value.|
+|value |*not set* |Integer |(Required) The altitude value to compare with. |
 
-`clock_time` can also use `subject` and `operator` parameters but are optional.
+`is_altitude` can also use `subject` and `operator` parameters but they are optional.
 
 ### subject
 
@@ -51,24 +46,24 @@ ms.prod: gaming
 | equals| Test for equality. |
 | not| Test for inequality. |
 
-## Examples
+## Example
 
 ### Full
 
 ```json
-{ "test": "clock_time", "subject": "self", "operator": "equals", "value": "0.00" }
+{ "test": "is_altitude", "subject": "self", "operator": "equals", "value": "0" }
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "clock_time", "value": "0.00" }
+{ "test": "is_altitude", "value": "0" }
 ```
 
 ## Vanilla Mob examples
 
-No mobs currently use `clock_time`
+No mobs currently use `is_altitude`.
 
-## Vanilla Mobs using `clock_time` 
+## Vanilla Mobs using `is_altitude`
 
-No mobs currently use `clock_time`
+No mobs currently use `is_altitude`.

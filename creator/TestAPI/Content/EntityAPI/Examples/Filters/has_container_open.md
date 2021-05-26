@@ -1,28 +1,21 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: clock_time
+title: has_container_open
 ms.prod: gaming
 ---
 
-# clock_time
+# has_container_open
 
-`clock_time` allows a creator to compares the current time with a float value in the range (0.0, 1.0).
-
-0.0= Noon
-0.25= Sunset
-0.5= Midnight
-0.75= Sunrise
-
-> [!IMPORTANT]
-> [hourly_clock_time](hourly_clock_time.md) is an updated version of the `clock_time` filter that uses an Integer in a range of 0 to 24000 based on the in-game time.
+Returns true when the subject Player entity has opened a container.
 
 ## Parameters
+
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
-|value | |Decimal|(Required) A floating point value.|
+|value |true |Boolean |  (Optional) true or false. |
 
-`clock_time` can also use `subject` and `operator` parameters but are optional.
+`has_container_open` can also use `subject` and `operator` parameters but they are optional.
 
 ### subject
 
@@ -51,24 +44,26 @@ ms.prod: gaming
 | equals| Test for equality. |
 | not| Test for inequality. |
 
-## Examples
+## Example
 
 ### Full
 
 ```json
-{ "test": "clock_time", "subject": "self", "operator": "equals", "value": "0.00" }
+{ "test": "has_container_open", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "clock_time", "value": "0.00" }
+{ "test": "has_container_open" }
 ```
 
 ## Vanilla Mob examples
 
-No mobs currently use `clock_time`
+### Piglin
 
-## Vanilla Mobs using `clock_time` 
+:::code language="markdown" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="378-387":::
 
-No mobs currently use `clock_time`
+## Vanilla Mobs using `has_container_open`
+
+- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)

@@ -1,28 +1,20 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: clock_time
+title: <is_avoiding_mobs>
 ms.prod: gaming
 ---
 
-# clock_time
+# is_avoiding_mobs
 
-`clock_time` allows a creator to compares the current time with a float value in the range (0.0, 1.0).
-
-0.0= Noon
-0.25= Sunset
-0.5= Midnight
-0.75= Sunrise
-
-> [!IMPORTANT]
-> [hourly_clock_time](hourly_clock_time.md) is an updated version of the `clock_time` filter that uses an Integer in a range of 0 to 24000 based on the in-game time.
+Returns true if the subject entity is fleeing from other mobs.
 
 ## Parameters
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value | |Decimal|(Required) A floating point value.|
 
-`clock_time` can also use `subject` and `operator` parameters but are optional.
+> [!Note]
+> `is_avoiding_mobs` does **not** require any parameters to work properly. It can be used as a standalone filter.
+
+`is_avoiding_mobs` can also use `subject`, `operator` and `value` parameters.
 
 ### subject
 
@@ -51,24 +43,34 @@ ms.prod: gaming
 | equals| Test for equality. |
 | not| Test for inequality. |
 
-## Examples
+### value
+
+|Name |Default Value  |Type  |Description  |
+|---------|---------|---------|---------|
+|value |true |Boolean |(Optional) true or false. |
+
+## Example
 
 ### Full
 
 ```json
-{ "test": "clock_time", "subject": "self", "operator": "equals", "value": "0.00" }
+{ "test": "is_avoiding_mobs", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "clock_time", "value": "0.00" }
+{ "test": "is_avoiding_mobs" }
 ```
 
 ## Vanilla Mob examples
 
-No mobs currently use `clock_time`
+This section includes up to 2 snippets of the Filter being used in a vanilla mob.
 
-## Vanilla Mobs using `clock_time` 
+### wandering_trader
 
-No mobs currently use `clock_time`
+:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/wandering_trader.json" range="173-199":::
+
+## Vanilla Mobs using `is_avoiding_mobs`
+
+- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)

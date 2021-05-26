@@ -44,17 +44,30 @@ ms.prod: gaming
 | equals| Test for equality. |
 | not| Test for inequality. |
 
+## Examples
+
+### Full
+
+```json
+{ "test": "distance_to_nearest_player", "subject": "self", "operator": "equals", "value": "0.00" }
+```
+
+### Short (using Defaults)
+
+```json
+{ "test": "distance_to_nearest_player", "value": "0.00" }
+```
+
 ## Vanilla Mob examples
 
 ### Zoglin
 
 :::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/zoglin.json" range="139-155":::
 
-## Vanilla Mobs using `distance_to_nearest_player` filter
+## Vanilla Mobs using `distance_to_nearest_player` 
 
-
-- [fox](Source/VanilliaBehaviorPack_Snippets/entities/fox.json)
-- [piglin brute](Source/VanilliaBehaviorPack_Snippets/entities/piglin_brute.json)
-- [pufferfish](Source/VanilliaBehaviorPack_Snippets/entities/pufferfish.json)
-- [wandering_trader](Source/VanilliaBehaviorPack_Snippets/entities/wandering_trader.json)
-- [zoglin](Source/VanilliaBehaviorPack_Snippets/entities/zoglin.json)
+- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
+- [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
+- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
+- [wandering trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
+- [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)

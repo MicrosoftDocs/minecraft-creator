@@ -1,28 +1,20 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: clock_time
+title: <has_mob_effect>
 ms.prod: gaming
 ---
 
-# clock_time
+# has_mob_effect
 
-`clock_time` allows a creator to compares the current time with a float value in the range (0.0, 1.0).
-
-0.0= Noon
-0.25= Sunset
-0.5= Midnight
-0.75= Sunrise
-
-> [!IMPORTANT]
-> [hourly_clock_time](hourly_clock_time.md) is an updated version of the `clock_time` filter that uses an Integer in a range of 0 to 24000 based on the in-game time.
+Tests whether the Subject has the specified mob effect.
 
 ## Parameters
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value | |Decimal|(Required) A floating point value.|
 
-`clock_time` can also use `subject` and `operator` parameters but are optional.
+> [!Note]
+> `has_mob_effect` does **not** require any parameters to work properly. It can be used as a standalone filter.
+
+`has_mob_effect` can use `subject`. `operator` and `value` parameters.
 
 ### subject
 
@@ -51,24 +43,32 @@ ms.prod: gaming
 | equals| Test for equality. |
 | not| Test for inequality. |
 
-## Examples
+### value
+
+|Name |Default Value  |Type  |Description  |
+|---------|---------|---------|---------|
+|value |*not set* |String |(Optional) A string value. |
+
+## Example
 
 ### Full
 
 ```json
-{ "test": "clock_time", "subject": "self", "operator": "equals", "value": "0.00" }
+{ "test": "has_mob_effect", "subject": "self", "operator": "equals", "value": "" }
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "clock_time", "value": "0.00" }
+{ "test": "has_mob_effect" }
 ```
 
 ## Vanilla Mob examples
 
-No mobs currently use `clock_time`
+### player
 
-## Vanilla Mobs using `clock_time` 
+:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/player.json" range="141-154":::
 
-No mobs currently use `clock_time`
+## Vanilla Mobs using `has_mob_effect`
+
+- [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
