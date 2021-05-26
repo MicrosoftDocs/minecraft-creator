@@ -78,7 +78,7 @@ Returns true when the subject entity is under water.
 
 ## Vanilla Mobs using `is_underwater`
 
-- [husk](../../../../Source/VanilliaFilterPack/entities/husk.md)
+- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
 - [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
 - [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
 - [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
