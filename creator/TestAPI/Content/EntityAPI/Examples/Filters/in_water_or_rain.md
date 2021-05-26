@@ -1,20 +1,20 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: in_nether
+title: in_water_or_rain
 ms.prod: gaming
 ---
 
-# in_nether
+# in_water_or_rain
 
-Returns true when the subject entity is in Nether.
+Returns true when the subject entity is in water or rain.
 
 ## Parameters
 
 > [!Note]
-> `in_nether` does **not** require any parameters to work properly. It can be used as a standalone filter.
+> `in_water_or_rain` does **not** require any parameters to work properly. It can be used as a standalone filter.
 
-`in_nether` can also use `subject`, `operator` and `value` parameters.
+`in_water_or_rain` can also use `subject`, `operator` and `value` parameters.
 
 ### subject
 
@@ -54,23 +54,29 @@ Returns true when the subject entity is in Nether.
 ### Full
 
 ```json
-{ "test": "in_nether", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "in_water_or_rain", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "in_nether" }
+{ "test": "in_water_or_rain" }
 ```
 
 ## Vanilla Mob examples
 
-### hoglin
+### enderman
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/hoglin.json" range="12-24":::
+:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/fish.json" range="58-71":::
 
-## Vanilla Mobs using `in_nether`
+### dolphin
 
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
+:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/dolphin.json" range="119-130":::
+
+## Vanilla Mobs using `in_water_or_rain`
+
+- [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
+- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
+- [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
+- [snow golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
+- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)

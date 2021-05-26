@@ -1,20 +1,21 @@
 ---
-author: v-josjones
-ms.author: v-josjones
-title: in_nether
+author: <Employee Name>
+ms.author: <Employee Name>
+title: inactivity_timer
 ms.prod: gaming
 ---
 
-# in_nether
+# inactivity_timer
 
-Returns true when the subject entity is in Nether.
+Tests if the specified duration in seconds of inactivity for despawning has been reached.
 
 ## Parameters
 
-> [!Note]
-> `in_nether` does **not** require any parameters to work properly. It can be used as a standalone filter.
+|Name |Default Value  |Type  |Description  |
+|---------|---------|---------|---------|
+|value |*not set* |Integer |(Required) An integer value. |
 
-`in_nether` can also use `subject`, `operator` and `value` parameters.
+`inactivity_timer` can also use `subject` and `operator` parameters but they are optional.
 
 ### subject
 
@@ -43,34 +44,27 @@ Returns true when the subject entity is in Nether.
 | equals| Test for equality. |
 | not| Test for inequality. |
 
-### value
-
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |true |Boolean |(Optional) true or false. |
-
 ## Example
 
 ### Full
 
 ```json
-{ "test": "in_nether", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "inactivity_timer", "subject": "self", "operator": "equals", "value": "0" }
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "in_nether" }
+{ "test": "inactivity_timer", "value": "0" }
 ```
 
 ## Vanilla Mob examples
 
-### hoglin
+### piglin_brute
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/hoglin.json" range="12-24":::
+:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/piglin_brute.json" range="248-252":::
 
-## Vanilla Mobs using `in_nether`
+## Vanilla Mobs using `inactivity_timer`
 
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
 - [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
+- [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)

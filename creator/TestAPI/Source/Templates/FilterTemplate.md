@@ -79,7 +79,7 @@ This section includes up to 2 snippets of the Filter being used in a vanilla mob
 
 json snippet configured to the FilterPack_Snippets
 
-## Vanilla Mobs using Filter
+## Vanilla Mobs using Name of Filter
 
 A list to the vanilla Filter pack snippets that currently use the Filter. If more than 25 Filters are used, feel free to split the list into 2 or 3 columns.
 

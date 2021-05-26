@@ -1,20 +1,20 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: in_nether
+title: <is_avoiding_mobs>
 ms.prod: gaming
 ---
 
-# in_nether
+# is_avoiding_mobs
 
-Returns true when the subject entity is in Nether.
+Returns true if the subject entity is fleeing from other mobs.
 
 ## Parameters
 
 > [!Note]
-> `in_nether` does **not** require any parameters to work properly. It can be used as a standalone filter.
+> `is_avoiding_mobs` does **not** require any parameters to work properly. It can be used as a standalone filter.
 
-`in_nether` can also use `subject`, `operator` and `value` parameters.
+`is_avoiding_mobs` can also use `subject`, `operator` and `value` parameters.
 
 ### subject
 
@@ -54,23 +54,23 @@ Returns true when the subject entity is in Nether.
 ### Full
 
 ```json
-{ "test": "in_nether", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "is_avoiding_mobs", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "in_nether" }
+{ "test": "is_avoiding_mobs" }
 ```
 
 ## Vanilla Mob examples
 
-### hoglin
+This section includes up to 2 snippets of the Filter being used in a vanilla mob.
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/hoglin.json" range="12-24":::
+### wandering_trader
 
-## Vanilla Mobs using `in_nether`
+:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/wandering_trader.json" range="173-199":::
 
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
+## Vanilla Mobs using `is_avoiding_mobs`
+
+- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)

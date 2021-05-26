@@ -1,20 +1,23 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: in_nether
+title: is_altitude
 ms.prod: gaming
 ---
 
-# in_nether
+# is_altitude
 
-Returns true when the subject entity is in Nether.
+Tests the current altitude against a provided value.
+
+0 = bedrock elevation.
 
 ## Parameters
 
-> [!Note]
-> `in_nether` does **not** require any parameters to work properly. It can be used as a standalone filter.
+|Name |Default Value  |Type  |Description  |
+|---------|---------|---------|---------|
+|value |*not set* |Integer |(Required) The altitude value to compare with. |
 
-`in_nether` can also use `subject`, `operator` and `value` parameters.
+`is_altitude` can also use `subject` and `operator` parameters but they are optional.
 
 ### subject
 
@@ -43,34 +46,24 @@ Returns true when the subject entity is in Nether.
 | equals| Test for equality. |
 | not| Test for inequality. |
 
-### value
-
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |true |Boolean |(Optional) true or false. |
-
 ## Example
 
 ### Full
 
 ```json
-{ "test": "in_nether", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "is_altitude", "subject": "self", "operator": "equals", "value": "0" }
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "in_nether" }
+{ "test": "is_altitude", "value": "0" }
 ```
 
 ## Vanilla Mob examples
 
-### hoglin
+No mobs currently use `is_altitude`.
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/hoglin.json" range="12-24":::
+## Vanilla Mobs using `is_altitude`
 
-## Vanilla Mobs using `in_nether`
-
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
+No mobs currently use `is_altitude`.

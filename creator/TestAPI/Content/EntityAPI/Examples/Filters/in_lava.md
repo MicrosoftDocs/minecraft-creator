@@ -73,7 +73,7 @@ Returns true when the subject entity is in lava.
 
 :::code language="markdown" source="../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md" range="146-152":::
 
-## Vanilla Mobs using Filter
+## Vanilla Mobs using `in_lava`
 
 - [area_effect_cloud](../../../../Source/VanillaBehaviorPack_Snippets/entities/area_effect_cloud.md)
 - [arrow](../../../../Source/VanillaBehaviorPack_Snippets/entities/arrow.md)
