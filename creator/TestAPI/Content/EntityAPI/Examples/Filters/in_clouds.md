@@ -1,28 +1,20 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: clock_time
+title: in_clouds
 ms.prod: gaming
 ---
 
-# clock_time
+# in_clouds
 
-`clock_time` allows a creator to compares the current time with a float value in the range (0.0, 1.0).
-
-0.0= Noon
-0.25= Sunset
-0.5= Midnight
-0.75= Sunrise
-
-> [!IMPORTANT]
-> [hourly_clock_time](hourly_clock_time.md) is an updated version of the `clock_time` filter that uses an Integer in a range of 0 to 24000 based on the in-game time.
+Returns true when the subject entity is in the clouds.
 
 ## Parameters
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value | |Decimal|(Required) A floating point value.|
 
-`clock_time` can also use `subject` and `operator` parameters but are optional.
+> [!Note]
+> `in_clouds` does **not** require any parameters to work properly. It can be used as a standalone filter.
+
+`in_clouds` can also use `subject`, `operator` and `value` parameters.
 
 ### subject
 
@@ -51,24 +43,30 @@ ms.prod: gaming
 | equals| Test for equality. |
 | not| Test for inequality. |
 
-## Examples
+### value
+
+|Name |Default Value  |Type  |Description  |
+|---------|---------|---------|---------|
+|value |true |Boolean |(Optional) true or false. |
+
+## Example
 
 ### Full
 
 ```json
-{ "test": "clock_time", "subject": "self", "operator": "equals", "value": "0.00" }
+{ "test": "in_clouds", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "clock_time", "value": "0.00" }
+{ "test": "in_clouds" }
 ```
 
 ## Vanilla Mob examples
 
-No mobs currently use `clock_time`
+No mobs currently use `in_clouds`
 
-## Vanilla Mobs using `clock_time` 
+## Vanilla Mobs using `in_clouds`
 
-No mobs currently use `clock_time`
+No mobs currently use `has_tag`
