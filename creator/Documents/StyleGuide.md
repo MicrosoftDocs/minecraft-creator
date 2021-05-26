@@ -46,7 +46,7 @@ If the answer to any of these questions is "yes", please reconsider how you add 
 
 ## Game Titles
 
-First things first, how should you refer to Minecraft and its many editions, updates, and versions?
+So now that you are ready to write about Minecraft, how should you refer to the game and its many editions, updates, and versions?
 
 ### Minecraft
 
