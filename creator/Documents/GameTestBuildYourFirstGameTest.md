@@ -9,7 +9,7 @@ ms.prod: gaming
 
 ## What's in a GameTest?
 
-A GameTest is a miniature environment along with a set of starting conditions, such as a set of mobs or items.  After that environment plays out in the Minecraft world for a little while, you can run conditional code to evaluate that your expectations were met.  
+A GameTest is a miniature environment along with a set of starting conditions, such as a set of mobs or items. After that environment plays out in the Minecraft world for a little while, you can run conditional code to evaluate that your expectations were met.
 
 Building sets of GameTests requires building out your GameTests via a behavior Pack, and writing some simple JavaScript code.
 
