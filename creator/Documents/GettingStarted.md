@@ -59,7 +59,7 @@ Along with the 3 pack folders, there are also development versions of those fold
 
 ## Visual Studio Code
 
-JSON is a popular text file format that is used by Minecraft Bedrock Edition in order to interact with content within. JSON can be edited in any text editor, such as Notepad or Word. However, Visual Studio Code is a free to use text based editor that supports 3rd party extensions, including some built for Bedrock development.
+JSON is a popular text file format that is used by Minecraft Bedrock Edition in order to interact with content within. JSON can be edited in any text editor such as Notepad or Word. However, Visual Studio Code is a free to use text based editor that supports 3rd party extensions, including some built for Bedrock development.
 
 ### Installing Visual Studio Code
 
