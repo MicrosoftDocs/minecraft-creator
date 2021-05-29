@@ -125,7 +125,7 @@ You can now design a pattern or any artwork in the editor. In this example, a si
 Now that the pack has both a manifest file and a texture, you can now launch Minecraft and test your new Add-On.
 
 > [!IMPORTANT]
-> **Pack Stacking** is when content is loaded on top of vanilla content causing each object that has the same name in both packs to be overwritten by the *latest* applied pack (in our example, the Dirt texture is overwritten by our custom texture).
+> **Pack Stacking** is when content is loaded on top of vanilla content, causing each object that has the same name in both packs to be overwritten by the *latest* applied pack (in our example, the Dirt texture is overwritten by our custom texture).
 >
 > If another pack that uses the dirt.png file is loaded **after** helloWorldBP, then Minecraft will use the latest dirt.png that was applied.
 
