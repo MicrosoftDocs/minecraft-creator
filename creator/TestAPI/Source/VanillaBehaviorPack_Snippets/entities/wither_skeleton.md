@@ -1,3 +1,3 @@
 # Wither Skeleton
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/wither_skeleton.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/wither_skeleton.json":::

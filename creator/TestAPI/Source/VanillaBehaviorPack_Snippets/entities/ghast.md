@@ -1,3 +1,3 @@
 # Ghast
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/ghast.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/ghast.json":::

@@ -1,3 +1,3 @@
 # Stray
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/stray.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/stray.json":::

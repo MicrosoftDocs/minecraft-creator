@@ -1,3 +1,3 @@
 # Silverfish
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/silverfish.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/silverfish.json":::

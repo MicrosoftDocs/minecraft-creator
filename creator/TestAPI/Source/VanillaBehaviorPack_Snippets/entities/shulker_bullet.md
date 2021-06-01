@@ -1,3 +1,3 @@
 # Shulker Bullet
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/shulker_bullet.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/shulker_bullet.json":::

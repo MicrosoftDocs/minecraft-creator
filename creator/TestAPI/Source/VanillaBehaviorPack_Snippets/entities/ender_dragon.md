@@ -1,3 +1,3 @@
 # Ender Dragon
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/ender_dragon.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/ender_dragon.json":::

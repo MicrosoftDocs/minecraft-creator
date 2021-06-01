@@ -1,3 +1,3 @@
 # Vindicator
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/vindicator.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/vindicator.json":::

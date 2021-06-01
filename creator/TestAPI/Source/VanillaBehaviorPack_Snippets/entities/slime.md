@@ -1,3 +1,3 @@
 # Slime
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/slime.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/slime.json":::

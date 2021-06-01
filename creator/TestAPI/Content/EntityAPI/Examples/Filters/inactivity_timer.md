@@ -63,7 +63,7 @@ Tests if the specified duration in seconds of inactivity for despawning has been
 
 ### piglin_brute
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/piglin_brute.json" range="248-252":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin_brute.json" range="248-252":::
 
 ## Vanilla entities using `inactivity_timer`
 

@@ -1,3 +1,3 @@
 # Phantom
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/phantom.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/phantom.json":::

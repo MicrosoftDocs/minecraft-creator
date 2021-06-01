@@ -1,3 +1,3 @@
 # Ocelot
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/ocelot.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/ocelot.json":::

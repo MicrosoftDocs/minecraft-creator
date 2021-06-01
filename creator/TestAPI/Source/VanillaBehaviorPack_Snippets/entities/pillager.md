@@ -1,3 +1,3 @@
 # Pillager
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/pillager.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/pillager.json":::

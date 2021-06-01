@@ -1,3 +1,3 @@
 # Mooshroom
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/mooshroom.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/mooshroom.json":::

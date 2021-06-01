@@ -1,3 +1,3 @@
 # Lighting Bold
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/lightning_bolt.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/lightning_bolt.json":::

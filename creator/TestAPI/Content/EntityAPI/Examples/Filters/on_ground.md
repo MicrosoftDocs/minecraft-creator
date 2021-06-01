@@ -67,7 +67,7 @@ Returns true when the subject entity is on ground.
 
 ### dolphin
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/dolphin.json" range="81-101":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/dolphin.json" range="81-101":::
 
 ## Vanilla entities using `on_ground`
 

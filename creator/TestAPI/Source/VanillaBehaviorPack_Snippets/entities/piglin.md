@@ -1,3 +1,3 @@
 # Piglin
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/piglin.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/piglin.json":::

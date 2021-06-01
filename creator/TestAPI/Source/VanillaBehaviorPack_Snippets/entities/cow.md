@@ -1,3 +1,3 @@
 # Cow
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/cow.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/cow.json":::

@@ -1,3 +1,3 @@
 # Bee
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/bee.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/bee.json":::

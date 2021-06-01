@@ -1,3 +1,3 @@
 # Zombie Pigman
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/zombie_pigman.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/zombie_pigman.json":::

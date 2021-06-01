@@ -1,3 +1,3 @@
 # Panda
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/panda.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/panda.json":::

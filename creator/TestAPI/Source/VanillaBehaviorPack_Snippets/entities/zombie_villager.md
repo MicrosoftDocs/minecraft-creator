@@ -1,3 +1,3 @@
 # Zombie Villager
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/zombie_villager.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/zombie_villager.json":::

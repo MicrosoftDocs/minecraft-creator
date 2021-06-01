@@ -1,3 +1,3 @@
 # Skeleton
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/skeleton.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/skeleton.json":::

@@ -1,3 +1,3 @@
 # Fireball
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/fireball.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/fireball.json":::

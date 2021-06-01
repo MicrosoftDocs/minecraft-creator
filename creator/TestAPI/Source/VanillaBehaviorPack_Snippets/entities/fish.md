@@ -1,3 +1,3 @@
 # Fish
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/fish.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/fish.json":::

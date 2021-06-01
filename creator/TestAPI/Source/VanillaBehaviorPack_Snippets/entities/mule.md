@@ -1,3 +1,3 @@
 # Mule
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/mule.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/mule.json":::

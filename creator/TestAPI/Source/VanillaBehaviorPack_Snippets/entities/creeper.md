@@ -1,3 +1,3 @@
 # Creeper
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/creeper.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/creeper.json":::

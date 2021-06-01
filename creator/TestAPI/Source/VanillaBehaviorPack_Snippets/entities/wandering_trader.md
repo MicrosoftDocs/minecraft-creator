@@ -1,3 +1,3 @@
 # Wandering Trader
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/wandering_trader.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/wandering_trader.json":::

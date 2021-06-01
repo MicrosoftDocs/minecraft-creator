@@ -1,3 +1,3 @@
 # Squid
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/squid.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/squid.json":::

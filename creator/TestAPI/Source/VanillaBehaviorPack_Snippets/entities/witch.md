@@ -1,3 +1,3 @@
 # Witch
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/witch.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/witch.json":::

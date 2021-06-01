@@ -1,3 +1,3 @@
 # Arrow
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/arrow.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/arrow.json":::

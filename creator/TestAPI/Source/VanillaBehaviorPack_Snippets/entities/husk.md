@@ -1,3 +1,3 @@
 # Husk
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/husk.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/husk.json":::

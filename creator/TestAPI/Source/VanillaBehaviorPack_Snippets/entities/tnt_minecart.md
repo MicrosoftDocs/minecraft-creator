@@ -1,3 +1,3 @@
 # TNT Minecart
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/tnt_minecart.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/tnt_minecart.json":::

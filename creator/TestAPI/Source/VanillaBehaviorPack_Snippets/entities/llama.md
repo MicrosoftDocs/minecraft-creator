@@ -1,3 +1,3 @@
 # Llama
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/llama.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/llama.json":::

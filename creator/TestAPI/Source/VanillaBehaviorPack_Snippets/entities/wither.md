@@ -1,3 +1,3 @@
 # Wither
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/wither.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/wither.json":::

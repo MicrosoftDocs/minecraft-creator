@@ -1,3 +1,3 @@
 # Guardian
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/guardian.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/guardian.json":::

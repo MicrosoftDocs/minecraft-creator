@@ -1,3 +1,3 @@
 # Lingering Potion
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/lingering_potion.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/lingering_potion.json":::

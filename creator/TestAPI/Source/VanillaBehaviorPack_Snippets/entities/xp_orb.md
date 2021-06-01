@@ -1,3 +1,3 @@
 # XP Orb
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/xp_orb.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/xp_orb.json":::

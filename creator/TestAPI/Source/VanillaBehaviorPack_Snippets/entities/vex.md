@@ -1,3 +1,3 @@
 # Vex
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/vex.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/vex.json":::

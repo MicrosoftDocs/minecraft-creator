@@ -1,3 +1,3 @@
 # Zoglin
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/zoglin.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/zoglin.json":::
