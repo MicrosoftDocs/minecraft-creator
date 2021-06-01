@@ -15,7 +15,8 @@ Returns true if the subject entity is the variant number provided.
 |---------|---------|---------|---------|
 |value |*not set* |Integer |(Required) An integer value. |
 
-`is_variant` can also use `subject` and `operator` parameters but they are optional.
+>[!Note]
+>`is_variant` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -58,13 +59,13 @@ Returns true if the subject entity is the variant number provided.
 { "test": "is_variant", "value": "0" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### panda
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/panda.json" range="563-606":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/panda.json" range="563-606":::
 
-## Vanilla Mobs using `is_variant`
+## Vanilla entities using `is_variant`
 
 - [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
 - [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)

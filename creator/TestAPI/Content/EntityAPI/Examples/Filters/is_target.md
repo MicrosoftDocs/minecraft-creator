@@ -13,8 +13,8 @@ Returns true if the subject entity is the target of the calling entity.
 
 > [!Note]
 > `is_target` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`is_target` can also use `subject`, `operator` and `value` parameters.
+>
+> `is_target` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,10 +63,10 @@ Returns true if the subject entity is the target of the calling entity.
 { "test": "is_target" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-No mobs currently use `is_target`.
+No entities currently use `is_target`.
 
-## Vanilla Mobs using `is_target`
+## Vanilla entities using `is_target`
 
-No mobs currently use `is_target`
+No entities currently use `is_target`.

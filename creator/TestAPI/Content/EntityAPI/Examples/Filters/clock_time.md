@@ -9,20 +9,24 @@ ms.prod: gaming
 
 `clock_time` allows a creator to compares the current time with a float value in the range (0.0, 1.0).
 
-0.0= Noon
-0.25= Sunset
-0.5= Midnight
-0.75= Sunrise
+|Value |Definition |
+|:----|:----|
+|0.0 |Noon |
+|0.25 |Sunset |
+|0.5 |Midnight |
+|0.75 |Sunrise |
 
 > [!IMPORTANT]
 > [hourly_clock_time](hourly_clock_time.md) is an updated version of the `clock_time` filter that uses an Integer in a range of 0 to 24000 based on the in-game time.
 
 ## Parameters
+
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
-|value | |Decimal|(Required) A floating point value.|
+|value |*not set* |Decimal|(Required) A floating point value.|
 
-`clock_time` can also use `subject` and `operator` parameters but are optional.
+> [!NOTE]
+> `clock_time` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -65,10 +69,10 @@ ms.prod: gaming
 { "test": "clock_time", "value": "0.00" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entity examples
 
-No mobs currently use `clock_time`
+No entities currently use `clock_time`
 
-## Vanilla Mobs using `clock_time` 
+## Vanilla entities using `clock_time`
 
-No mobs currently use `clock_time`
+No entities currently use `clock_time`

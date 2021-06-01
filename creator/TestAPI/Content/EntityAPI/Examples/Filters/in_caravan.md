@@ -1,7 +1,7 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: <in_caravan>
+title: in_caravan
 ms.prod: gaming
 ---
 
@@ -13,8 +13,8 @@ Returns true if the subject entity is in a caravan.
 
 > [!Note]
 > `in_caravan` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`in_caravan` can also use `subject`, `operator` and `value` parameters.
+>
+> `in_caravan` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,12 +63,12 @@ Returns true if the subject entity is in a caravan.
 { "test": "in_caravan" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### llama
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/llama.json" range="432-441":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/llama.json" range="308-315":::
 
-## Vanilla Mobs using `in_caravan`
+## Vanilla entities using `in_caravan`
 
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)

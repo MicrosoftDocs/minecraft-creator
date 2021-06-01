@@ -11,12 +11,12 @@ Returns true if the subject entity is the skin id number provided.
 
 ## Parameters
 
-
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
 |value |*not set* |Integer |(Required)  An integer value. |
 
-`is_skin_id` can also use `subject` and `operator` parameters but they are optional.
+>[!Note]
+>`is_skin_id` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -59,13 +59,13 @@ Returns true if the subject entity is the skin id number provided.
 { "test": "is_skin_id" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/villager_v2.json" range="2012-2038":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="2012-2038":::
 
-## Vanilla Mobs using `is_skin_id`
+## Vanilla entities using `is_skin_id`
 
 - [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
 - [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)

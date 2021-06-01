@@ -13,8 +13,8 @@ Returns true if the subject is trusted by entity.
 
 > [!Note]
 > `trusts` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`trusts` can also use `subject`, `operator` and `value` parameters.
+>
+>`trusts` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,12 +63,12 @@ Returns true if the subject is trusted by entity.
 { "test": "trusts" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/fox.json" range="368-389":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="368-389":::
 
-## Vanilla Mobs using `trusts`
+## Vanilla entities using `trusts`
 
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)

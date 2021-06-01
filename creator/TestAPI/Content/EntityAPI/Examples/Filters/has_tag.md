@@ -13,8 +13,8 @@ Returns true if the subject entity has the tag provided.
 
 > [!Note]
 > `has_tag` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`has_tag` can also use `subject`, `operator` and `value` parameters.
+>
+> `has_tag` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -61,10 +61,10 @@ Returns true if the subject entity has the tag provided.
 { "test": "has_tag" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-No mobs currently use `has_tag`
+No entities currently use `has_tag`
 
-## Vanilla Mobs using `has_tag`
+## Vanilla entities using `has_tag`
 
-No mobs currently use `has_tag`
+No entities currently use `has_tag`

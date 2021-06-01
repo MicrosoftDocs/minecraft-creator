@@ -13,8 +13,8 @@ Returns true when the subject entity is in water.
 
 > [!Note]
 > `in_water` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`in_water` can also use `subject`, `operator` and `value` parameters.
+>
+> `in_water` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,17 +63,17 @@ Returns true when the subject entity is in water.
 { "test": "in_water" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### fish
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/fish.json" range="110-129":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fish.json" range="110-129":::
 
 ### ocelot
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/ocelot.json" range="198-229":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ocelot.json" range="198-229":::
 
-## Vanilla Mobs using `in_water`
+## Vanilla entities using `in_water`
 
 - [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
@@ -82,19 +82,19 @@ Returns true when the subject entity is in water.
 - [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
 - [fish](../../../../Source/VanillaBehaviorPack_Snippets/entities/fish.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [husk](../../../../Source/VanilliaFilterPack/entities/husk.md)
+- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
 - [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
 - [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
 - [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
 - [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
 - [salmon](../../../../Source/VanillaBehaviorPack_Snippets/entities/salmon.md)
 - [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
-- [snow golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
+- [snow_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
 - [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
 - [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
 - [tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/tropicalfish.md)
-- [wither skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
+- [wither_skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
 - [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
 - [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-- [zombie villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
+- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
 - [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)

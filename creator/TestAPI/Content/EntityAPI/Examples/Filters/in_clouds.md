@@ -13,8 +13,8 @@ Returns true when the subject entity is in the clouds.
 
 > [!Note]
 > `in_clouds` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`in_clouds` can also use `subject`, `operator` and `value` parameters.
+>
+> `in_clouds` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,10 +63,10 @@ Returns true when the subject entity is in the clouds.
 { "test": "in_clouds" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-No mobs currently use `in_clouds`
+No entities currently use `in_clouds`
 
-## Vanilla Mobs using `in_clouds`
+## Vanilla entities using `in_clouds`
 
-No mobs currently use `has_tag`
+No entities currently use `in_clouds`

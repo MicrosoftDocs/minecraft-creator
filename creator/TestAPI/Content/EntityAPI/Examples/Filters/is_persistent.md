@@ -13,8 +13,8 @@ Tests if the subject's persistence matches the bool value passed in.
 
 > [!Note]
 > `is_persistent` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`is_persistent` can also use `subject`, `operator` and `value` parameters.
+>
+> `is_persistent` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,13 +63,13 @@ Tests if the subject's persistence matches the bool value passed in.
 { "test": "is_persistent" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### zoglin
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/zoglin.json" range="139-179":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zoglin.json" range="139-179":::
 
-## Vanilla Mobs using `is_persistent`
+## Vanilla entities using `is_persistent`
 
-- [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
+- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
 - [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)

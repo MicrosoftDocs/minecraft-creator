@@ -40,7 +40,8 @@ Below are a list of biome types that can be used for the `value` string.
 | the_end|  |
 | the_nether|  |
 
-`is_biome` can also use `subject` and `operator` parameters but they are optional.
+>[!Note]
+>`is_biome` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -83,15 +84,15 @@ Below are a list of biome types that can be used for the `value` string.
 { "test": "is_biome", "value": "beach" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### cave_spider
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/cave_spider.json" range="283-285":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/cave_spider.json" range="283-285":::
 
-## Vanilla Mobs using `is_biome`
+## Vanilla entities using `is_biome`
 
-- [cave spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
+- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
 - [fishing_hook](../../../../Source/VanillaBehaviorPack_Snippets/entities/fishing_hook.md)
 - [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
 - [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)

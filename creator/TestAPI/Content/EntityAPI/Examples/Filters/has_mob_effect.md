@@ -1,7 +1,7 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: <has_mob_effect>
+title: has_mob_effect
 ms.prod: gaming
 ---
 
@@ -11,10 +11,10 @@ Tests whether the Subject has the specified mob effect.
 
 ## Parameters
 
-> [!Note]
+> [!Important]
 > `has_mob_effect` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`has_mob_effect` can use `subject`. `operator` and `value` parameters.
+>
+> `has_mob_effect` can use `subject`. [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,12 +63,12 @@ Tests whether the Subject has the specified mob effect.
 { "test": "has_mob_effect" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### player
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/player.json" range="141-154":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/player.json" range="141-154":::
 
-## Vanilla Mobs using `has_mob_effect`
+## Vanilla entities using `has_mob_effect`
 
 - [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)

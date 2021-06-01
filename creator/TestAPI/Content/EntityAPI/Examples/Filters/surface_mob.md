@@ -13,8 +13,8 @@ Tests if the subject is a surface mob.
 
 > [!Note]
 > `surface_mob` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`surface_mob` can also use `subject`, `operator` and `value` parameters.
+>
+> `surface_mob` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,10 +63,10 @@ Tests if the subject is a surface mob.
 { "test": "surface_mob" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-No mobs currently use `surface_mob`.
+No entities currently use `surface_mob`.
 
-## Vanilla Mobs using `surface_mob`
+## Vanilla entities using `surface_mob`
 
-No mobs currently use `surface_mob`.
+No entities currently use `surface_mob`.

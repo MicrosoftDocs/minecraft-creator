@@ -11,7 +11,6 @@ Tests the current difficulty level of the game.
 
 ## Parameters
 
-
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
 |value |*not set* |String |(Required) The game's difficulty level to test |
@@ -27,7 +26,8 @@ Below are a list of difficulty levels that can be used for the `value` string.
 | normal|  
 | peaceful|  
 
-`is_difficulty` can also use `subject` and `operator` parameters but they are optional.
+>[!Note]
+>`is_difficulty` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -70,19 +70,19 @@ Below are a list of difficulty levels that can be used for the `value` string.
 { "test": "is_difficulty", "value": "normal" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-### Mob 1
+### skeleton
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/wither_skeleton.json" range="434-447":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither_skeleton.json" range="434-447":::
 
-## Vanilla Mobs using is_difficulty
+## Vanilla entities using is_difficulty
 
 - [arrow](../../../../Source/VanillaBehaviorPack_Snippets/entities/arrow.md)
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [cave spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
-- [iron golem](../../../../Source/VanilliaFilterPack/entities/iron_golem.md)
+- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
+- [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
 - [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
 - [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
 - [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
-- [wither skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
+- [wither_skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)

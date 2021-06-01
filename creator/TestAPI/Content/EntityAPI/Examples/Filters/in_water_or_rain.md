@@ -13,8 +13,8 @@ Returns true when the subject entity is in water or rain.
 
 > [!Note]
 > `in_water_or_rain` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`in_water_or_rain` can also use `subject`, `operator` and `value` parameters.
+>
+> `in_water_or_rain` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,20 +63,20 @@ Returns true when the subject entity is in water or rain.
 { "test": "in_water_or_rain" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### enderman
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/fish.json" range="58-71":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/enderman.json" range="58-71":::
 
 ### dolphin
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/dolphin.json" range="119-130":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/dolphin.json" range="119-130":::
 
-## Vanilla Mobs using `in_water_or_rain`
+## Vanilla entities using `in_water_or_rain`
 
 - [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
 - [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
 - [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
-- [snow golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
+- [snow_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
 - [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)

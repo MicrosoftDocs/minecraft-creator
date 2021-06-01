@@ -1,7 +1,7 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: <is_avoiding_mobs>
+title: is_avoiding_mobs
 ms.prod: gaming
 ---
 
@@ -13,8 +13,8 @@ Returns true if the subject entity is fleeing from other mobs.
 
 > [!Note]
 > `is_avoiding_mobs` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`is_avoiding_mobs` can also use `subject`, `operator` and `value` parameters.
+>
+> `is_avoiding_mobs` can also use `subject`, `operator` and `value` parameters.
 
 ### subject
 
@@ -63,14 +63,12 @@ Returns true if the subject entity is fleeing from other mobs.
 { "test": "is_avoiding_mobs" }
 ```
 
-## Vanilla Mob examples
-
-This section includes up to 2 snippets of the Filter being used in a vanilla mob.
+## Vanilla entity examples
 
 ### wandering_trader
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/wandering_trader.json" range="173-199":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wandering_trader.json" range="173-199":::
 
-## Vanilla Mobs using `is_avoiding_mobs`
+## Vanilla entities using `is_avoiding_mobs`
 
 - [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)

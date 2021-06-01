@@ -16,8 +16,8 @@ Returns true when the subject entity is under water.
 
 > [!Note]
 > `is_underwater` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`is_underwater` can also use `subject`, `operator` and `value` parameters.
+>
+> `is_underwater` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -66,17 +66,17 @@ Returns true when the subject entity is under water.
 { "test": "is_underwater" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### stray
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/stray.json" range="29-50":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/stray.json" range="29-50":::
 
 ### wolf
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/wolf.json" range="121-174":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wolf.json" range="121-174":::
 
-## Vanilla Mobs using `is_underwater`
+## Vanilla entities using `is_underwater`
 
 - [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
 - [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)

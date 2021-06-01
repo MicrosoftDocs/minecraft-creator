@@ -15,7 +15,8 @@ Tests if the specified duration in seconds of inactivity for despawning has been
 |---------|---------|---------|---------|
 |value |*not set* |Integer |(Required) An integer value. |
 
-`inactivity_timer` can also use `subject` and `operator` parameters but they are optional.
+>[!Note]
+>`inactivity_timer` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -58,13 +59,13 @@ Tests if the specified duration in seconds of inactivity for despawning has been
 { "test": "inactivity_timer", "value": "0" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### piglin_brute
 
 :::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/piglin_brute.json" range="248-252":::
 
-## Vanilla Mobs using `inactivity_timer`
+## Vanilla entities using `inactivity_timer`
 
-- [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
+- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
 - [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)

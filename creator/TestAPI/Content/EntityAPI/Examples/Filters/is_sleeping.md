@@ -13,8 +13,8 @@ Tests whether the Subject is sleeping.
 
 > [!Note]
 > `is_sleeping` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`is_sleeping` can also use `subject`, `operator` and `value` parameters.
+>
+> `is_sleeping` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,12 +63,12 @@ Tests whether the Subject is sleeping.
 { "test": "is_sleeping" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### fox
 
 :::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/fox.json" range="661-681":::
 
-## Vanilla Mobs using `is_sleeping`
+## Vanilla entities using `is_sleeping`
 
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)

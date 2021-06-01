@@ -13,8 +13,8 @@ Returns true if the subject entity leashed to the calling entity.
 
 > [!Note]
 > `is_leashed_to` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`is_leashed_to` can also use `subject`, `operator` and `value` parameters.
+>
+> `is_leashed_to` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,12 +63,12 @@ Returns true if the subject entity leashed to the calling entity.
 { "test": "is_leashed_to" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-### wandering trader
+### wandering_trader
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/wandering_trader.json" range="21-33":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wandering_trader.json" range="21-33":::
 
-## Vanilla Mobs using `is_leashed_to`
+## Vanilla entities using `is_leashed_to`
 
 - [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)

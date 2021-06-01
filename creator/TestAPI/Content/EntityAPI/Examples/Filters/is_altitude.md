@@ -17,7 +17,8 @@ Tests the current altitude against a provided value.
 |---------|---------|---------|---------|
 |value |*not set* |Integer |(Required) The altitude value to compare with. |
 
-`is_altitude` can also use `subject` and `operator` parameters but they are optional.
+>[!Note]
+>`is_altitude` can also use `subject` and [operator](../Definitions/NestedTables/operator.md)parameters but they are optional.
 
 ### subject
 
@@ -60,10 +61,10 @@ Tests the current altitude against a provided value.
 { "test": "is_altitude", "value": "0" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-No mobs currently use `is_altitude`.
+No entities currently use `is_altitude`.
 
-## Vanilla Mobs using `is_altitude`
+## Vanilla entities using `is_altitude`
 
-No mobs currently use `is_altitude`.
+No entities currently use `is_altitude`.

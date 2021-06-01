@@ -1,7 +1,7 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: <has_target>
+title: has_target
 ms.prod: gaming
 ---
 
@@ -13,8 +13,8 @@ Returns true if the subject entity has a valid target.
 
 > [!Note]
 > `has_target` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`has_target` can also use `subject`, `operator` and `value` parameters.
+>
+> `has_target` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,13 +63,13 @@ Returns true if the subject entity has a valid target.
 { "test": "has_target" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### drowned
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/drowned.json" range="50-53":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/drowned.json" range="596-601":::
 
-## Vanilla Mobs using `has_target`
+## Vanilla entities using `has_target`
 
 - [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)

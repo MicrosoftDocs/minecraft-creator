@@ -13,8 +13,8 @@ Returns true if the subject entity is moving.
 
 > [!Note]
 > `is_moving` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`is_moving` can also use `subject`, `operator` and `value` parameters.
+>
+> `is_moving` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -67,11 +67,11 @@ Returns true if the subject entity is moving.
 
 ### boat
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/boat.json" range="187-194":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/boat.json" range="187-194":::
 
 ### tnt minecart
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/tnt_minecart.json" range="138-147":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/tnt_minecart.json" range="138-147":::
 
 ## Vanilla entities using `is_moving`
 

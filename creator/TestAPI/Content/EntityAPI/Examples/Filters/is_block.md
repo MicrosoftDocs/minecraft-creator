@@ -15,7 +15,8 @@ Returns true when the block has the given name.
 |---------|---------|---------|---------|
 |value |*not set* |String |(Required) The Family name to look for. |
 
-`is_block` can also use `subject` and `operator` parameters but they are optional.
+>[!Note]
+> `is_block` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -58,13 +59,13 @@ Returns true when the block has the given name.
 { "test": "is_block", "value": "player" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### Fox
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/fox.json" range="523-536":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="523-536":::
 
-## Vanilla Mobs using `is_block`
+## Vanilla entities using `is_block`
 
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)

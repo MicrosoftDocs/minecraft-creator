@@ -13,8 +13,8 @@ Returns true when the subject entity is in lava.
 
 > [!Note]
 > `in_lava` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`in_lava` can also use `subject`, `operator` and `value` parameters.
+>
+> `in_lava` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,32 +63,30 @@ Returns true when the subject entity is in lava.
 { "test": "in_lava" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### zombie
 
-:::code language="markdown" source="../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md" range="152-160":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="152-160":::
 
 ### turtle
 
-:::code language="markdown" source="../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md" range="146-152":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/turtle.json" range="146-152":::
 
-## Vanilla Mobs using `in_lava`
+## Vanilla entities using `in_lava`
 
-- [area_effect_cloud](../../../../Source/VanillaBehaviorPack_Snippets/entities/area_effect_cloud.md)
 - [arrow](../../../../Source/VanillaBehaviorPack_Snippets/entities/arrow.md)
 - [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [boat](../../../../Source/VanillaBehaviorPack_Snippets/entities/boat.md)
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-- [cave spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
+- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
 - [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
 - [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
 - [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
 - [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
 - [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
 - [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [egg](../../../../Source/VanillaBehaviorPack_Snippets/entities/egg.md)
 - [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
 - [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
 - [endermite](../../../../Source/VanillaBehaviorPack_Snippets/entities/endermite.md)
@@ -97,8 +95,8 @@ Returns true when the subject entity is in lava.
 - [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [husk](../../../../Source/VanilliaFilterPack/entities/husk.md)
-- [iron golem](../../../../Source/VanilliaFilterPack/entities/iron_golem.md)
+- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
+- [iron golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
 - [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
 - [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)

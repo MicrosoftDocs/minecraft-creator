@@ -48,7 +48,8 @@ Below are a list of damage types that can be used for the `value` string.
 | void|  |
 | wither|  |
 
-`has_damage` can also use `subject` and `operator` parameters but they are optional.
+> [!NOTE]
+> `has_damage` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -91,17 +92,17 @@ Below are a list of damage types that can be used for the `value` string.
 { "test": "has_damage", "value": "fatal" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-### Pillager
+### pillager
 
-:::code language="markdown" source="../../../../Source/VanillaBehaviorPack/entities/pillager.json" range="112-127":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/pillager.json" range="112-127":::
 
-### Villager
+### villager
 
-:::code language="markdown" source="../../../../Source/VanillaBehaviorPack/entities/villager.json" range="380-404":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager.json" range="380-404":::
 
-## Vanilla Mobs using `has_damage`
+## Vanilla entities using `has_damage`
 
 - [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
 - [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)

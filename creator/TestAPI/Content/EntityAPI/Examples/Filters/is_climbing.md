@@ -13,9 +13,8 @@ Returns true if the subject entity is climbing.
 
 > [!Note]
 > `is_climbing` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`is_climbing` can also use `subject`, `operator` and `value` parameters.
-
+>
+> `is_climbing` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -64,10 +63,10 @@ Returns true if the subject entity is climbing.
 { "test": "is_climbing" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-No mobs currently use `is_climbing`
+No entities currently use `is_climbing`
 
-## Vanilla Mobs using `is_climbing`
+## Vanilla entities using `is_climbing`
 
-No mobs currently use `is_climbing`
+No entities currently use `is_climbing`

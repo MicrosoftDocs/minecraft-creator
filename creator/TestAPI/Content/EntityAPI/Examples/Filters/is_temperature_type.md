@@ -11,7 +11,6 @@ Tests whether the current temperature is a given type.
 
 ## Parameters
 
-
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
 |value |*not set* |String |(Required) The Biome temperature catagory to test. |
@@ -27,7 +26,8 @@ Options|
 | ocean|
 | warm|
 
-`is_temperature_type` can also use `subject` and `operator` parameters but they are optional.
+>[!Note]
+>`is_temperature_type` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -70,10 +70,10 @@ Options|
 { "test": "is_temperature_type", "value": "cold" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-No mobs currently use `is_temperature_type`.
+No entities currently use `is_temperature_type`.
 
-## Vanilla Mobs using `is_temperature_type`
+## Vanilla entities using `is_temperature_type`
 
-No mobs currently use `is_temperature_type`.
+No entities currently use `is_temperature_type`.

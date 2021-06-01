@@ -1,7 +1,7 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: distance to nearest player
+title: distance_to_nearest_player
 ms.prod: gaming
 ---
 
@@ -15,7 +15,7 @@ ms.prod: gaming
 |value | |Decimal|(Required) A floating point value.|
 
 > [!NOTE]
-> `distance_to_nearest_player` can also use `subject` and [operators](../Definitions/NestedTables/operator.md) parameters but are optional.
+> `distance_to_nearest_player` can also use `subject` and [operators](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -58,16 +58,16 @@ ms.prod: gaming
 { "test": "distance_to_nearest_player", "value": "0.00" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-### Zoglin
+### zoglin
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/zoglin.json" range="139-155":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zoglin.json" range="139-155":::
 
-## Vanilla Mobs using `distance_to_nearest_player` 
+## Vanilla entities using `distance_to_nearest_player`
 
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
+- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
 - [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
-- [wandering trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
+- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
 - [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)

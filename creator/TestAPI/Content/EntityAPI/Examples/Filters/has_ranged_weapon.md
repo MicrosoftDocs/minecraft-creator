@@ -13,8 +13,8 @@ Returns true when the subject entity is holding a ranged weapon like a bow or cr
 
 > [!Note]
 > `has_ranged_weapon` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`has_ranged_weapon` can also use `subject`, `operator` and `value` parameters.
+>
+>`has_ranged_weapon` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,13 +63,13 @@ Returns true when the subject entity is holding a ranged weapon like a bow or cr
 { "test": "has_ranged_weapon" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### skeleton
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/skeleton.json" range="61-84":::
 
-## Vanilla Mobs using Filter
+## Vanilla entities using Filter
 
 - [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
 - [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
