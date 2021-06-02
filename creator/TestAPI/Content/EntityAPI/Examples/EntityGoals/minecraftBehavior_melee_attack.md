@@ -13,12 +13,12 @@ This component allows entities to make close combat melee attacks.
 > In order for the entity to be able to attack its target, the entity will also need another component that sets its target, such as:
 >
 >- [minecraft:behavior.nearest_attackable_target Component](minecraftBehavior_nearest_attackable_target.md)
->- minecraft:behavior.hurt_by_target
+>- [minecraft:behavior.hurt_by_target](minecraftBehavior_hurt_by_target.md)
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
+|:---------:|:---------:|:---------:|:---------:|
 |[melee_fov](../Definitions/melee_fov.md)     |90.0       |Decimal   |The allowable FOV the actor will use to determine if it can make a valid melee attack|
 |speed_multiplier     |1.0         |Decimal         |Movement speed multiplier of the mob when using this AI Goal|
 |track_target     |false         |Boolean         |If true, this mob will chase after the target as long as it's a valid target|

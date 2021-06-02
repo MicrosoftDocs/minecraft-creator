@@ -27,14 +27,23 @@ landingContent:
           - text: Data Driven Spawning
             url:  Examples/ClientEntityDocumenation/DataDrivenSpawning.md
   # Card (optional)
-  - title: Components
+  - title: AI Goals
     linkLists:
       - linkListType: overview
         links:
           - text: minecraft:behavior.melee_attack
-            url: Examples/EntityComponents/minecraftBehavior_melee_attack.md
+            url: Examples/EntityGoals/minecraftBehavior_melee_attack.md
           - text: minecraft:behavior.nearest_attackable_target
-            url: Examples/EntityComponents/minecraftBehavior_nearest_attackable_target.md
+            url: Examples/EntityGoals/minecraftBehavior_nearest_attackable_target.md
+ # Card (optional)
+  - title: Componets
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: minecraft:addrider
+            url: Examples/EntityComponents/minecraft_addrider.md
+          - text: minecraft:admire_item
+            url: Examples/EntityComponents/minecraft_admire_item.md
  # Card (optional)
   - title: Filters
     linkLists:
@@ -64,6 +73,8 @@ landingContent:
             url: Examples/FilterList.md
           - text: Biome Tags
             url: Examples/Definitions/biome_filter.md
+          - text: AI Goals
+            url: Examples/AIGoalList.md
 
 
 
