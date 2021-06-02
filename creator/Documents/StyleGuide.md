@@ -74,7 +74,7 @@ When you want to refer to an update to Minecraft, just use the name of the updat
 
 ## Capitalization
 
-In Minecraft, we only capitalize when something is unique. This means that there is only one of that object in the game world. You can use this rule to determine whether you should capitalize the name of a game object.
+In Minecraft, we usually capitalize only when something is unique. This means that there is only one of that object in the game world. You can use this rule to determine whether you should capitalize the name of a game object.
 
 ### Mobs
 
