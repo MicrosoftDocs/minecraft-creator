@@ -1,3 +1,3 @@
 # Fox
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/fox.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/fox.json":::

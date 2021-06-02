@@ -15,7 +15,8 @@ Compares the current moon intensity with a float value in the range of 0.0 and 1
 |---------|---------|---------|---------|
 |value |*not set* |Decimal |(Required) A floating point value. |
 
-`moon_intensity` can also use `subject` and `operator` parameters but they are optional.
+>[!Note]
+> `moon_intensity` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -58,10 +59,10 @@ Compares the current moon intensity with a float value in the range of 0.0 and 1
 { "test": "moon_intensity", "value": "0.0" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-No mobs currently use `moon_intensity`.
+No entities currently use `moon_intensity`.
 
-## Vanilla Mobs using `moon_intensity`
+## Vanilla entities using `moon_intensity`
 
-No mobs currently use `moon_intensity`.
+No entities currently use `moon_intensity`.

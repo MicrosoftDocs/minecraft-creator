@@ -1,3 +1,3 @@
 # Minecart
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/minecart.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/minecart.json":::

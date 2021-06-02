@@ -1,3 +1,3 @@
 # Chest Minecart
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/chest_minecart.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/chest_minecart.json":::

@@ -13,8 +13,8 @@ Tests whether the target has any trade supply left. Will return false if the tar
 
 > [!Note]
 > `has_trade_supply` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`has_trade_supply` can also use `subject`, `operator` and `value` parameters.
+>
+> `has_trade_supply` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,12 +63,12 @@ Tests whether the target has any trade supply left. Will return false if the tar
 { "test": "has_trade_supply" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### wandering trader
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/wandering_trader.json" range="113-126":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wandering_trader.json" range="113-126":::
 
-## Vanilla Mobs using `has_trade_supply`
+## Vanilla entities using `has_trade_supply`
 
 - [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)

@@ -1,3 +1,3 @@
 # Skeleton Horse
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/skeleton_horse.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/skeleton_horse.json":::

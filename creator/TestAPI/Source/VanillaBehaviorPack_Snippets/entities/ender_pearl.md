@@ -1,3 +1,3 @@
 # Ender Pearl
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/ender_pearl.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/ender_pearl.json":::

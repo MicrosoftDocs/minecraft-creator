@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # entity_types
 
-`entity_types` is a specific type of JSON object used by Minecraft: Bedrock Edition in order to encapsulate entity data that can be used in certain behaviors.
+`entity_types` is a specific type of JSON object used by Minecraft: Bedrock Edition in order to encapsulate entity data that can be used in certain behaviors and components.
 
 ## Parameters
 

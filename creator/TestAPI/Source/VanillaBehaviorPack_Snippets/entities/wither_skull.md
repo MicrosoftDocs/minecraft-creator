@@ -1,3 +1,3 @@
 # Wither Skull
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/wither_skull.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/wither_skull.json":::

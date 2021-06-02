@@ -1,3 +1,3 @@
 # Ravager
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/ravager.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/ravager.json":::

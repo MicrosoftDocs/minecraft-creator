@@ -7,14 +7,14 @@ ms.prod: gaming
 
 # is_sneaking
 
-Tests whether the Subject is sleeping.
+Tests whether the subject is sneaking.
 
 ## Parameters
 
 > [!Note]
 > `is_sneaking` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`is_sneaking` can also use `subject`, `operator` and `value` parameters.
+>
+> `is_sneaking` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,12 +63,12 @@ Tests whether the Subject is sleeping.
 { "test": "is_sneaking" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/fox.json" range="546-568":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="546-568":::
 
-## Vanilla Mobs using `is_sneaking`
+## Vanilla entities using `is_sneaking`
 
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)

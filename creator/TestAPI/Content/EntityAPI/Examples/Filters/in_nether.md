@@ -13,8 +13,8 @@ Returns true when the subject entity is in Nether.
 
 > [!Note]
 > `in_nether` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`in_nether` can also use `subject`, `operator` and `value` parameters.
+>
+> `in_nether` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,13 +63,13 @@ Returns true when the subject entity is in Nether.
 { "test": "in_nether" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### hoglin
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/hoglin.json" range="12-24":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/hoglin.json" range="12-24":::
 
-## Vanilla Mobs using `in_nether`
+## Vanilla entities using `in_nether`
 
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
 - [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)

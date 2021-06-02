@@ -1,3 +1,3 @@
 # Endermite
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/endermite.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/endermite.json":::

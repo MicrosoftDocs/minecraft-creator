@@ -1,3 +1,3 @@
 # Tropical Fish
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/tropicalfish.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/tropicalfish.json":::

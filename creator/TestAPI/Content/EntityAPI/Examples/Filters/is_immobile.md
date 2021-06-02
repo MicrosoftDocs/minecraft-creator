@@ -13,9 +13,8 @@ Returns true if the subject entity is immobile. An entity is immobile if it lack
 
 > [!Note]
 > `is_immobile` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`is_immobile` can also use `subject`, `operator` and `value` parameters.
-
+>
+> `is_immobile` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -64,10 +63,10 @@ Returns true if the subject entity is immobile. An entity is immobile if it lack
 { "test": "is_immobile" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-No mobs currently use `is_immobile`.
+No entities currently use `is_immobile`.
 
-## Vanilla Mobs using `is_immobile`
+## Vanilla entities using `is_immobile`
 
-No mobs currently use `is_immobile`.
+No entities currently use `is_immobile`.

@@ -1,3 +1,3 @@
 # Egg
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/egg.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/egg.json":::

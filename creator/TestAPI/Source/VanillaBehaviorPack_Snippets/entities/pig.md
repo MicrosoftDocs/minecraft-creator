@@ -1,3 +1,3 @@
 # Pig
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/pig.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/pig.json":::

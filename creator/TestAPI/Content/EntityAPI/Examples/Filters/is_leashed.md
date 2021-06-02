@@ -13,8 +13,8 @@ Returns true if the subject entity is leashed.
 
 > [!Note]
 > `is_leashed` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`is_leashed` can also use `subject`, `operator` and `value` parameters.
+>
+> `is_leashed` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,13 +63,13 @@ Returns true if the subject entity is leashed.
 { "test": "is_leashed" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### llama
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/llama.json" range="82-96":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/llama.json" range="82-96":::
 
-## Vanilla Mobs using `is_leashed`
+## Vanilla entities using `is_leashed`
 
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
 - [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)

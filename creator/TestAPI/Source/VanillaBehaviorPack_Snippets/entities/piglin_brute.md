@@ -1,3 +1,3 @@
 # Piglin Brute
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/piglin_brute.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/piglin_brute.json":::

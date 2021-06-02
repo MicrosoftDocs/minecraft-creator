@@ -13,8 +13,8 @@ Returns true during the daylight hours.
 
 > [!Note]
 > `is_daytime` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`is_daytime` can also use `subject`, `operator` and `value` parameters.
+>
+> `is_daytime` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,17 +63,16 @@ Returns true during the daylight hours.
 { "test": "is_daytime" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### drowned
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/drowned.json" range="453-458":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/drowned.json" range="453-458":::
 
-## Vanilla Mobs using `is_daytime`
+## Vanilla entities using `is_daytime`
 
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [cave spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
+- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
 - [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
 - [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
-- 

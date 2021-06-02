@@ -15,7 +15,8 @@ Tests whether the biome the subject is in has the specified tag.
 |---------|---------|---------|---------|
 |value |*not set* |String | (Required) The tag to look for |
 
-`has_biome_tag` can also use `subject` and `operator` parameters but they are optional.
+> [!NOTE]
+> `has_biome_tag` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -58,54 +59,53 @@ Tests whether the biome the subject is in has the specified tag.
 { "test": "has_biome_tag", "value": " " }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### Creeper
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/creeper.json" range="28-30":::
 
-## Vanilla Mobs using `has_biome_tag`
+## Vanilla entities using `has_biome_tag`
 
-- bat
-- bee
-- chicken
-- cod
-- cow
-- creeper
-- dolphin
-- donkey
-- drowned
-- enderman
-- fox
-- ghast
-- hoglin
-- horse
-- husk
-- llama
-- magma cube
-- mooshroom
-- ocelot
-- panda
-- parrot
-- phantom
-- pig
-- piglin
-- pillager_patrol
-- polar bear
-- pufferfish
-- rabbit
-- salmon
-- sheep
-- skeleton
-- slime
-- spider
-- squid
-- stray
-- strider
-- tropical fish
-- turtle
-- witch
-- wolf
-- zombie pigman
-- zombie
-- 
+- [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
+- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
+- [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
+- [cod](../../../../Source/VanillaBehaviorPack_Snippets/entities/cod.md)
+- [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
+- [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
+- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
+- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
+- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
+- [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
+- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
+- [ghast](../../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)
+- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
+- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
+- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
+- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
+- [magma_cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
+- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
+- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
+- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
+- [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)
+- [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)
+- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
+- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
+- [pillager_patrol](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager_patrol.md)
+- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
+- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
+- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
+- [salmon](../../../../Source/VanillaBehaviorPack_Snippets/entities/salmon.md)
+- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
+- [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
+- [slime](../../../../Source/VanillaBehaviorPack_Snippets/entities/slime.md)
+- [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
+- [squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/squid.md)
+- [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
+- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
+- [tropical_fish](../../../../Source/VanillaBehaviorPack_Snippets/entities/tropical_fish.md)
+- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
+- [witch](../../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)
+- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
+- [zombie_pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.md)
+- [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)

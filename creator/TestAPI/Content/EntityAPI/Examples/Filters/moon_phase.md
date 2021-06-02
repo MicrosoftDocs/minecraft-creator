@@ -30,7 +30,8 @@ Below are a list of moon phases that can be used for the `value` string.
 |6 | |
 |7 | |
 
-`moon_phase` can also use `subject` and `operator` parameters but they are optional.
+>[!Note]
+>`moon_phase` can also use `subject` and [operator](../Definitions/NestedTables/operator.md)parameters but they are optional.
 
 ### subject
 
@@ -73,10 +74,10 @@ Below are a list of moon phases that can be used for the `value` string.
 { "test": "moon_phase", "value": "0" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-No mobs currently use `moon_phase`.
+No entities currently use `moon_phase`.
 
-## Vanilla Mobs using `moon_phase`
+## Vanilla entities using `moon_phase`
 
-No mobs currently use `moon_phase`.
+No entities currently use `moon_phase`.

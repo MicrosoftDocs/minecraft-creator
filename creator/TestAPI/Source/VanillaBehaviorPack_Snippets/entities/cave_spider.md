@@ -1,3 +1,3 @@
 # Cave Spider
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/cave_spider.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/cave_spider.json":::

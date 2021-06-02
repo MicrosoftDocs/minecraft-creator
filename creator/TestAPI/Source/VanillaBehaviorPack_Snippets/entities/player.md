@@ -1,3 +1,3 @@
 # Player
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/player.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/player.json":::

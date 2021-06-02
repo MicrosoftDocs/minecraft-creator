@@ -1,3 +1,3 @@
 # Horse
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/horse.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/horse.json":::

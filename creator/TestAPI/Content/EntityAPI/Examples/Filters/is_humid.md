@@ -1,20 +1,20 @@
 ---
-author: <Employee Name>
-ms.author: <Employee Name>
-title: <is_humid>
+author: v-josjones
+ms.author: v-josjones
+title: is_humid
 ms.prod: gaming
 ---
 
 # is_humid
 
-Tests whether the Subject is in an area with humidity.
+Tests whether the subject is in an area with humidity.
 
 ## Parameters
 
 > [!Note]
 > `is_humid` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`is_humid` can also use `subject`, `operator` and `value` parameters.
+>
+> `is_humid` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,10 +63,10 @@ Tests whether the Subject is in an area with humidity.
 { "test": "is_humid" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-No mobs currently use `is_humid`.
+No entities currently use `is_humid`.
 
-## Vanilla Mobs using `is_humid`
+## Vanilla entities using `is_humid`
 
-No mobs currently use `is_humid`.
+No entities currently use `is_humid`.

@@ -13,8 +13,8 @@ Returns true if the subject entity is the owner of the calling entity.
 
 > [!Note]
 > `is_owner` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`is_owner` can also use `subject`, `operator` and `value` parameters.
+>
+> `is_owner` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,10 +63,10 @@ Returns true if the subject entity is the owner of the calling entity.
 { "test": "is_owner" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-No mobs currently use `is_owner`.
+No entities currently use `is_owner`.
 
-## Vanilla Mobs using `is_owner`
+## Vanilla entities using `is_owner`
 
-No mobs currently use `is_owner`.
+No entities currently use `is_owner`.

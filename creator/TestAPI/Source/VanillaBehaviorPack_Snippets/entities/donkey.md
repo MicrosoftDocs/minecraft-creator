@@ -1,3 +1,3 @@
 # Donkey
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/donkey.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/donkey.json":::

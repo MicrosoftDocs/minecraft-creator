@@ -13,8 +13,8 @@ Returns true when the subject entity is underground. An entity is considered und
 
 > [!Note]
 > `is_underground` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`is_underground` can also use `subject`, `operator` and `value` parameters.
+>
+>`is_underground` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,15 +63,15 @@ Returns true when the subject entity is underground. An entity is considered und
 { "test": "is_underground" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### spider
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/spider.json" range="236-315":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/spider.json" range="236-315":::
 
-## Vanilla Mobs using `is_underground`
+## Vanilla entities using `is_underground`
 
-- [cave spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
+- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
 - [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
 - [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)

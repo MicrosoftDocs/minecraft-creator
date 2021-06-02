@@ -11,7 +11,6 @@ Tests whether a named game rule is active.
 
 ## Parameters
 
-
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
 |domain |*not set* |String |(Required) The Game Rule to test |
@@ -20,9 +19,8 @@ Tests whether a named game rule is active.
 
 Below are a list of game rules that can be used for the `value` string.
 
-
-
-`is_game_rule` can also use `subject` , `operator` and `value` parameters but they are optional.
+>[!Note]
+>`is_game_rule` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -71,13 +69,13 @@ Below are a list of game rules that can be used for the `value` string.
 { "test": "is_game_rule", "value": "normal" }
 ```
 
-## Vanilla example
+## Vanilla entities example
 
 ### ender_pearl
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/ender_pearl.json" range="63-72":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ender_pearl.json" range="63-72":::
 
 ## Vanilla entities using `is_game_rule`
 
-- [Ender Pearl](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_pearl.md)
-- [TNT Minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/tnt_minecart.md)
+- [ender_pearl](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_pearl.md)
+- [tnt_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/tnt_minecart.md)

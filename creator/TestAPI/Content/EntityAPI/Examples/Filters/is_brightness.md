@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # is_brightness
 
-Tests the current brightness against a provided value in the range (0.0f, 1.0f).
+Tests the current brightness against a provided value in the range (0.0, 1.0).
 
 ## Parameters
 
@@ -15,7 +15,8 @@ Tests the current brightness against a provided value in the range (0.0f, 1.0f).
 |---------|---------|---------|---------|
 |value |*not set* |Decimal |(Required) The brightness value to compare with. |
 
-`is_brightness` can also use `subject` and `operator` parameters but they are optional.
+>[!Note]
+> `is_brightness` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -44,7 +45,6 @@ Tests the current brightness against a provided value in the range (0.0f, 1.0f).
 | equals| Test for equality. |
 | not| Test for inequality. |
 
-
 ## Example
 
 ### Full
@@ -59,13 +59,13 @@ Tests the current brightness against a provided value in the range (0.0f, 1.0f).
 { "test": "is_brightness", "value": "0.50" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### spider
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/spider.json" range="58-72":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/spider.json" range="58-72":::
 
-## Vanilla Mobs using `is_brightness`
+## Vanilla entities using `is_brightness`
 
-- [cave spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
+- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
 - [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)

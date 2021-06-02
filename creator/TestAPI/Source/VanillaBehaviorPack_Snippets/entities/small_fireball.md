@@ -1,3 +1,3 @@
 # Small Fireball
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/small_fireball.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/small_fireball.json":::

@@ -13,8 +13,8 @@ Tests whether the Subject is inside the bounds of a village.
 
 > [!Note]
 > `is_in_village` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`is_in_village` can also use `subject`, `operator` and `value` parameters.
+>
+> `is_in_village` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,12 +63,12 @@ Tests whether the Subject is inside the bounds of a village.
 { "test": "is_in_village" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### player
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/player.json" range="148-152":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/player.json" range="148-152":::
 
-## Vanilla Mobs using `is_in_village`
+## Vanilla entities using `is_in_village`
 
 - [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)

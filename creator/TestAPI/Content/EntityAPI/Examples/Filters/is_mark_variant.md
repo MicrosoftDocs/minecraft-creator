@@ -15,7 +15,8 @@ Returns true if the subject entity is the mark variant number provided.
 |---------|---------|---------|---------|
 |value |*not set* |Integer |(Required) An integer value. |
 
-`is_mark_variant` can also use `subject` and `operator` parameters but they are optional.
+>[!Note]
+>`is_mark_variant` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -58,17 +59,17 @@ Returns true if the subject entity is the mark variant number provided.
 { "test": "is_mark_variant", "value": "0" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### llama
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/llama.json" range="58-72":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/llama.json" range="58-72":::
 
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/villager_v2.json" range="2040-2062":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="2040-2062":::
 
-## Vanilla Mobs using `is_mark_variant`
+## Vanilla entities using `is_mark_variant`
 
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
 - [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)

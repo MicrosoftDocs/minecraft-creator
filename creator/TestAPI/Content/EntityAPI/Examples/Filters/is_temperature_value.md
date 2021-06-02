@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # is_temperature_value
 
-Tests the current temperature against a provided value in the range (0.0, 1.0) where 0.0f is the coldest temp and 1.0f is the hottest.
+Tests the current temperature against a provided value in the range (0.0, 1.0) where 0.0 is the coldest temp and 1.0 is the hottest.
 
 ## Parameters
 
@@ -15,7 +15,8 @@ Tests the current temperature against a provided value in the range (0.0, 1.0) w
 |---------|---------|---------|---------|
 |value |*not set* |Decimal |(Required) The Biome temperature value to compare with. |
 
-`is_temperature_value` can also use `subject` and `operator` parameters but they are optional.
+>[!Note]
+>`is_temperature_value` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -58,12 +59,12 @@ Tests the current temperature against a provided value in the range (0.0, 1.0) w
 { "test": "is_temperature_value", "value": "0.50" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### snow golem
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/snow_golem.json" range="60-78":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/snow_golem.json" range="60-78":::
 
-## Vanilla Mobs using `is_temperature_value`
+## Vanilla entities using `is_temperature_value`
 
 - [snow golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)

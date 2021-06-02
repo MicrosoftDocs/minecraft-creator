@@ -1,3 +1,3 @@
 # NPC
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/npc.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/npc.json":::

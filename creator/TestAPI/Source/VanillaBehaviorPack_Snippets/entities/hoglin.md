@@ -1,3 +1,3 @@
 # Hoglin
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/hoglin.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/hoglin.json":::

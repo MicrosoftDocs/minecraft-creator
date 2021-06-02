@@ -13,8 +13,8 @@ Returns true if the subject entity is riding on another entity.
 
 > [!Note]
 > `is_riding` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`is_riding` can also use `subject`, `operator` and `value` parameters.
+>
+> `is_riding` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,13 +63,13 @@ Returns true if the subject entity is riding on another entity.
 { "test": "is_riding" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### parrot
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/parrot.json" range="164-181":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/parrot.json" range="164-181":::
 
-## Vanilla Mobs using is_riding
+## Vanilla entities using is_riding
 
 - [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)
 - [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)

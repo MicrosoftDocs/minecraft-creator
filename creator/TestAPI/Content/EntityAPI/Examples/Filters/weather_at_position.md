@@ -15,7 +15,8 @@ Tests the current weather, at the actor's position, against a provided weather v
 |---------|---------|---------|---------|
 |value |*not set* |String |(Required) The Family name to look for. |
 
-`weather_at_position` can also use `subject` and `operator` parameters but they are optional.
+>[!Note]
+> `weather_at_position` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -64,12 +65,12 @@ Tests the current weather, at the actor's position, against a provided weather v
 { "test": "weather_at_position", "value": "player" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/fox.json" range="290-319":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="290-319":::
 
-## Vanilla Mobs using `weather_at_position`
+## Vanilla entities using `weather_at_position`
 
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)

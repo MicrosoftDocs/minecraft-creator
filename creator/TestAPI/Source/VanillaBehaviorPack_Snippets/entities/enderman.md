@@ -1,3 +1,3 @@
 # Enderman
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/enderman.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/enderman.json":::

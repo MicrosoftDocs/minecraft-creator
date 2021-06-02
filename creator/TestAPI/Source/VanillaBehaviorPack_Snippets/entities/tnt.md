@@ -1,3 +1,3 @@
 # TNT
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/tnt.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/tnt.json":::

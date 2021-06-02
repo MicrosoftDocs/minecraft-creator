@@ -13,8 +13,8 @@ Returns true when the subject entity is on a ladder.
 
 > [!Note]
 > `on_ladder` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`on_ladder` can also use `subject`, `operator` and `value` parameters.
+>
+> `on_ladder` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,10 +63,10 @@ Returns true when the subject entity is on a ladder.
 { "test": "on_ladder" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-No mobs currently use `on_ladder`.
+No entities currently use `on_ladder`.
 
-## Vanilla Mobs using `on_ladder`
+## Vanilla entities using `on_ladder`
 
-No mobs currently use `on_ladder`.
+No entities currently use `on_ladder`.

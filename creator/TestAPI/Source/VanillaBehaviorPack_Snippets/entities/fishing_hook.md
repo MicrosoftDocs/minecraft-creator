@@ -1,3 +1,3 @@
 # Fishing Hook
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/fishing_hook.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/fishing_hook.json":::

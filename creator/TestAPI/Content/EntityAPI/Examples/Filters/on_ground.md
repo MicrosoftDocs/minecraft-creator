@@ -13,8 +13,8 @@ Returns true when the subject entity is on ground.
 
 > [!Note]
 > `on_ground` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`on_ground` can also use `subject`, `operator` and `value` parameters.
+>
+>`on_ground` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,15 +63,15 @@ Returns true when the subject entity is on ground.
 { "test": "on_ground" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### dolphin
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/dolphin.json" range="81-101":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/dolphin.json" range="81-101":::
 
-## Vanilla Mobs using `on_ground`
+## Vanilla entities using `on_ground`
 
-- [cave spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
+- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
 - [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
 - [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)

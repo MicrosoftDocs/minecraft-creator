@@ -1,3 +1,3 @@
 # Villager
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/villager.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/villager.json":::

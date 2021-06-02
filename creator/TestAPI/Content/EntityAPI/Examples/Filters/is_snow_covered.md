@@ -7,14 +7,14 @@ ms.prod: gaming
 
 # is_snow_covered
 
-Tests whether the Subject is in an area covered by snow.
+Tests whether the subject is in an area covered by snow.
 
 ## Parameters
 
 > [!Note]
 > `is_snow_covered` does **not** require any parameters to work properly. It can be used as a standalone filter.
-
-`is_snow_covered` can also use `subject`, `operator` and `value` parameters.
+>
+> `is_snow_covered` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -63,13 +63,15 @@ Tests whether the Subject is in an area covered by snow.
 { "test": "is_snow_covered" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-### Mob 1
+### rabbit
 
-## Vanilla Mobs using `is_snow_covered`
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/spawn_rules/rabbit.json" range="29-40":::
 
-- [cave spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
+## Vanilla entities using `is_snow_covered`
+
+- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
 - [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
 - [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)

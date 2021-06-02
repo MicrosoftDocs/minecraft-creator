@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # light_level
 
-Tests is the mob is outside of the specified light level range. The range is set between 0 and 16.
+Tests is the entity is outside of the specified light level range. The range is set between 0 and 16.
 
 ## Parameters
 
@@ -15,8 +15,8 @@ Tests is the mob is outside of the specified light level range. The range is set
 |---------|---------|---------|---------|
 |value |*not set* |Integer |(Required) An integer value. |
 
-
-`light_level` can also use `subject` and `operator` parameters but they are optional.
+>[!Note]
+>`light_level` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -59,10 +59,10 @@ Tests is the mob is outside of the specified light level range. The range is set
 { "test": "light_level", "value": "0" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-No mobs currently use `light_level`.
+No entities currently use `light_level`.
 
-## Vanilla Mobs using `light_level`
+## Vanilla entities using `light_level`
 
-No mobs currently use `light_level`.
+No entities currently use `light_level`.

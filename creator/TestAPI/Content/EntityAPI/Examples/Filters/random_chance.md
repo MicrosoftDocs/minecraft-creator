@@ -9,7 +9,7 @@ ms.prod: gaming
 
 Returns true if the random chance rolls 0 out of a specified max range.
 
-And example is if a `value` of 5 is set, a random number in the range of 0 - 5 will be selected.
+An example is if a `value` of 5 is set, a random number in the range of 0 - 5 will be selected.
 
 ## Parameters
 
@@ -17,7 +17,8 @@ And example is if a `value` of 5 is set, a random number in the range of 0 - 5 w
 |---------|---------|---------|---------|
 |value |*not set* |Integer |(Required) An integer value. |
 
-`random_chance` can also use `subject` and `operator` parameters but they are optional.
+>[!Note]
+>`random_chance` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -60,9 +61,6 @@ And example is if a `value` of 5 is set, a random number in the range of 0 - 5 w
 { "test": "random_chance", "value": "0" }
 ```
 
-## Vanilla Mob loot table examples
+## Vanilla entities examples
 
-### Mob 1
-
-## Vanilla Mob loot tables using `random_chance`
-
+## Vanilla entities examples using `random_chance`

@@ -1,3 +1,3 @@
 # XP Bottle
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/xp_bottle.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/xp_bottle.json":::

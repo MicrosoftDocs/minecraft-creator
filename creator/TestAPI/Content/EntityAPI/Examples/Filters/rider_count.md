@@ -15,7 +15,8 @@ Returns the number of riders on this entity.
 |---------|---------|---------|---------|
 |value |*not set* |Integer |(Required) An integer value. |
 
-`rider_count` can also use `subject` and `operator` parameters but they are optional.
+>[!Note]
+> `rider_count` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -58,13 +59,12 @@ Returns the number of riders on this entity.
 { "test": "rider_count", "value": "0" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-### boat
+### chicken
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/chicken.json" range="74-84":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/chicken.json" range="74-84":::
 
-## Vanilla Mobs using `rider_count`
+## Vanilla entities using `rider_count`
 
 - [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
-

@@ -1,3 +1,3 @@
 # Dolphin
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/dolphin.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/dolphin.json":::

@@ -1,3 +1,3 @@
 # Shulker
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/shulker.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/shulker.json":::

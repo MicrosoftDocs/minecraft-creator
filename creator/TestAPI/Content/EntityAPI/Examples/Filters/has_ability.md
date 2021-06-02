@@ -26,7 +26,8 @@ Returns true when the subject entity has the named ability.
 - walkspeed
 - worldbuilder
 
-`has_ability` can also use `subject` and `operator` parameters but are optional.
+> [!NOTE]
+> `has_ability` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -69,13 +70,13 @@ Returns true when the subject entity has the named ability.
 { "test": "has_ability", "value": "instabuild" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
 ### Shulker
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/shulker.json" range="180-193":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/shulker.json" range="180-193":::
 
-## Vanilla Mobs using `has_ability`
+## Vanilla entities using `has_ability`
 
 - [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
 - [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)

@@ -1,3 +1,3 @@
 # Wolf
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/wolf.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/wolf.json":::

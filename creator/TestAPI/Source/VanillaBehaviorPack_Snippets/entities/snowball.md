@@ -1,3 +1,3 @@
 # Snowball
 
-:::code language="json" source="../../VanilliaBehaviorPack/entities/snowball.json":::
+:::code language="json" source="../../VanillaBehaviorPack/entities/snowball.json":::

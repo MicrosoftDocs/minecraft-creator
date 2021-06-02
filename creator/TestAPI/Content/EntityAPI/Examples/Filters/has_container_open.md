@@ -15,7 +15,8 @@ Returns true when the subject Player entity has opened a container.
 |---------|---------|---------|---------|
 |value |true |Boolean |  (Optional) true or false. |
 
-`has_container_open` can also use `subject` and `operator` parameters but they are optional.
+> [!NOTE]
+> `has_container_open` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
 
 ### subject
 
@@ -58,12 +59,12 @@ Returns true when the subject Player entity has opened a container.
 { "test": "has_container_open" }
 ```
 
-## Vanilla Mob examples
+## Vanilla entities examples
 
-### Piglin
+### piglin
 
-:::code language="markdown" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="378-387":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="378-387":::
 
-## Vanilla Mobs using `has_container_open`
+## Vanilla entities using `has_container_open`
 
 - [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
