@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated.  See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -10,9 +10,11 @@ description: Contents of the GameTest.Helper class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 
+
+
 ## Methods
-- [assertBlockNotPresent](#assertblocknotpresent)
-- [assertBlockPresent](#assertblockpresent)
+- [assertBlockTypeNotPresent](#assertblocktypenotpresent)
+- [assertBlockTypePresent](#assertblocktypepresent)
 - [assertBlockState](#assertblockstate)
 - [assert](#assert)
 - [assertContainerContains](#assertcontainercontains)
@@ -34,6 +36,7 @@ description: Contents of the GameTest.Helper class.
 - [assertRedstonePower](#assertredstonepower)
 - [fail](#fail)
 - [failIf](#failif)
+- [getBlock](#getblock)
 - [killAllEntities](#killallentities)
 - [pressButton](#pressbutton)
 - [print](#print)
@@ -42,7 +45,8 @@ description: Contents of the GameTest.Helper class.
 - [relativeLocation](#relativelocation)
 - [runAfterDelay](#runafterdelay)
 - [runAtTickTime](#runatticktime)
-- [setBlock](#setblock)
+- [setBlockPermutation](#setblockpermutation)
+- [setBlockType](#setblocktype)
 - [spawn](#spawn)
 - [spawnItem](#spawnitem)
 - [spawnWithoutBehaviors](#spawnwithoutbehaviors)
@@ -52,39 +56,40 @@ description: Contents of the GameTest.Helper class.
 - [succeedOnTick](#succeedontick)
 - [succeedOnTickWhen](#succeedontickwhen)
 - [succeedWhen](#succeedwhen)
-- [succeedWhenBlockPresent](#succeedwhenblockpresent)
+- [succeedWhenBlockTypePresent](#succeedwhenblocktypepresent)
 - [succeedWhenEntityHasComponent](#succeedwhenentityhascomponent)
 - [succeedWhenEntityNotPresent](#succeedwhenentitynotpresent)
 - [succeedWhenEntityPresent](#succeedwhenentitypresent)
 - [walkTo](#walkto)
+- [setTntFuse](#settntfuse)
 - [worldLocation](#worldlocation)
   
-### **assertBlockNotPresent**
+### **assertBlockTypeNotPresent**
 `
-assertBlockNotPresent(block: Minecraft.Block, position: Minecraft.BlockLocation): void
+assertBlockTypeNotPresent(blockType: Minecraft.BlockType, location: Minecraft.BlockLocation): void
 `
 
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **block** | [*Minecraft.Block*](../Minecraft/Block.md) | - |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **blockType** | [*Minecraft.BlockType*](../Minecraft/BlockType.md) | - |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
 
-### **assertBlockPresent**
+### **assertBlockTypePresent**
 `
-assertBlockPresent(block: Minecraft.Block, position: Minecraft.BlockLocation): void
+assertBlockTypePresent(blockType: Minecraft.BlockType, location: Minecraft.BlockLocation): void
 `
 
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **block** | [*Minecraft.Block*](../Minecraft/Block.md) | - |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **blockType** | [*Minecraft.BlockType*](../Minecraft/BlockType.md) | - |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *undefined*
 
@@ -93,27 +98,34 @@ Returns *undefined*
 
 ### **assertBlockState**
 `
-assertBlockState(blockStateName: string, stateValue: number, position: Minecraft.BlockLocation): void
+assertBlockState(blockStateName: string, stateValue: number, location: Minecraft.BlockLocation): void
 `
 
+Tests that a block has a particular state value at the specified location. If it does not have that state value, an exception is thrown.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **blockStateName** | *string* | - |
-| **stateValue** | *number* | - |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **blockStateName** | *string* | Name of the block state to test. |
+| **stateValue** | *number* | Expected state value. |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
 
+#### Examples
+##### ***testIfButtonNotPressed.js***
+```javascript
+test.assertBlockState("button_pressed_bit", 0, buttonPos);
+
+```
 ### **assert**
 `
 assert(condition: boolean, message: string): void
 `
 
-Tests that the condition specified in _condition_ is true.  If not, an error with the specified _message_ is thrown.
+Tests that the condition specified in _condition_ is true. If not, an error with the specified _message_ is thrown.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
@@ -127,15 +139,15 @@ Returns *undefined*
 
 ### **assertContainerContains**
 `
-assertContainerContains(itemStack: Minecraft.ItemStack, position: Minecraft.BlockLocation): void
+assertContainerContains(itemStack: Minecraft.ItemStack, location: Minecraft.BlockLocation): void
 `
 
-Tests that a container (e.g., a chest) at the specified location contains a particular type of item.  If not, an error is thrown.
+Tests that a container (e.g., a chest) at the specified location contains a specified of item stack. If not, an error is thrown.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **itemStack** | [*Minecraft.ItemStack*](../Minecraft/ItemStack.md) | Basic description of the items to check for.  The specified container must contain at least the set of items defined in this _itemStack_. |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | Location of the block with a container (for example, a chest.) |
+| **itemStack** | [*Minecraft.ItemStack*](../Minecraft/ItemStack.md) | Represents the type of item to check for. The specified container must contain at least 1 item matching the item type defined in _itemStack_. |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *undefined*
 
@@ -144,14 +156,14 @@ Returns *undefined*
 
 ### **assertContainerEmpty**
 `
-assertContainerEmpty(position: Minecraft.BlockLocation): void
+assertContainerEmpty(location: Minecraft.BlockLocation): void
 `
 
-Tests that a container (e.g., a chest) at the specified location is empty.  If not, an error is thrown.
+Tests that a container (e.g., a chest) at the specified location is empty. If not, an error is thrown.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | Location of the block with a container (for example, a chest.) |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *undefined*
 
@@ -160,16 +172,16 @@ Returns *undefined*
 
 ### **assertEntityData**
 `
-assertEntityData(position: Minecraft.BlockLocation, entityIdentifier: string, callback: (arg0: Minecraft.Entity) => boolean): void
+assertEntityData(location: Minecraft.BlockLocation, entityIdentifier: string, callback: (arg0: Minecraft.Entity) => boolean): void
 `
 
-Tests that an entity (e.g., a skeleton) at the specified location has a particular piece of data.  If not, an error is thrown.
+Tests that an entity (e.g., a skeleton) at the specified location has a particular piece of data. If not, an error is thrown.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | Location of the entity to look for |
-| **entityIdentifier** | *string* | Identifier of the entity (e.g., 'minecraft:skeleton') to look for. |
-| **callback** | (arg0: Minecraft.Entity) => boolean | Callback function where facets of the selected entity can be tested for. If this callback function returns false, an error is thrown. |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **entityIdentifier** | *string* | Identifier of the entity (e.g., 'minecraft:skeleton') to look for. Note if no namespace is specified, 'minecraft:' is assumed. |
+| **callback** | (arg0: Minecraft.Entity) => boolean | Callback function where facets of the selected entity can be tested for. If this callback function returns false or no entity with the specified identifier is found, an exception is thrown. |
 
 Returns *undefined*
 
@@ -188,19 +200,19 @@ test.assertEntityData(
 ```
 ### **assertEntityHasArmor**
 `
-assertEntityHasArmor(entityIdentifier: string, armorSlot: number, armorName: string, armorData: number, position: Minecraft.BlockLocation, hasArmor: boolean): void
+assertEntityHasArmor(entityIdentifier: string, armorSlot: number, armorName: string, armorData: number, location: Minecraft.BlockLocation, hasArmor: boolean): void
 `
 
-Tests that an entity has a specific piece of armor equipped.  If not, an error is thrown.
+Tests that an entity has a specific piece of armor equipped. If not, an error is thrown.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **entityIdentifier** | *string* | - |
-| **armorSlot** | *number* | - |
-| **armorName** | *string* | - |
+| **entityIdentifier** | *string* | Identifier of the entity to match (e.g., 'minecraft:skeleton'). |
+| **armorSlot** | *number* | Container slot index to test. |
+| **armorName** | *string* | Name of the armor to look for. |
 | **armorData** | *number* | - |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | Location of the entity with armor to test for. |
-| **hasArmor** | *boolean* | - |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **hasArmor** | *boolean* | Whether or not the entity is expected to have the specified armor equipped. |
 
 Returns *undefined*
 
@@ -215,16 +227,16 @@ test.assertEntityHasArmor("minecraft:horse", armorSlotTorso, "diamond_horse_armo
 ```
 ### **assertEntityHasComponent**
 `
-assertEntityHasComponent(entityIdentifier: string, componentIdentifier: string, position: Minecraft.BlockLocation, hasComponent: boolean): void
+assertEntityHasComponent(entityIdentifier: string, componentIdentifier: string, location: Minecraft.BlockLocation, hasComponent: boolean): void
 `
 
-Tests that an entity has a particular component.  If not, an error is thrown.
+Tests that an entity has a particular component. If not, an exception is thrown.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **entityIdentifier** | *string* | Identifier of the specified entity (e.g., 'minecraft:skeleton').  If the namespace is not specified, 'minecraft:' is assumed. |
-| **componentIdentifier** | *string* | Identifier of the component to check for. |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | Location of the block with a container (for example, a chest.) |
+| **entityIdentifier** | *string* | Identifier of the specified entity (e.g., 'minecraft:skeleton'). If the namespace is not specified, 'minecraft:' is assumed. |
+| **componentIdentifier** | *string* | Identifier of the component to check for. If the namespace is not specified, 'minecraft:' is assumed. |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 | **hasComponent** | *boolean* | Determines whether to test that the component exists, or does not. |
 
 Returns *undefined*
@@ -256,15 +268,15 @@ Returns *undefined*
 
 ### **assertEntityNotPresent**
 `
-assertEntityNotPresent(entityIdentifier: string, position: Minecraft.BlockLocation): void
+assertEntityNotPresent(entityIdentifier: string, location: Minecraft.BlockLocation): void
 `
 
-Tests that a particular entity is not present at a particular location. If not, an error is thrown.
+Tests that an entity of a specified type is not present at a specified location. If it is, an exception is thrown.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
 | **entityIdentifier** | *string* | Type of entity to test for (e.g., 'minecraft:skeleton'). If an entity namespace is not specified, 'minecraft:' is assumed. |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | Location of the entity to test for. |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *undefined*
 
@@ -276,7 +288,7 @@ Returns *undefined*
 assertEntityNotPresentInArea(entityIdentifier: string): void
 `
 
-Tests that a particular entity is not present within the GameTest area. If not, an error is thrown.
+Tests that an entity of a specified type is not present within the GameTest area. If not, an exception is thrown.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
@@ -292,7 +304,7 @@ Returns *undefined*
 assertEntityNotTouching(entityIdentifier: string, position: Minecraft.Location): void
 `
 
-Tests that a particular entity is not touching or connected to another entity.
+Tests that an entity of a specified type is not touching or connected to another entity. If it is, an exception is thrown.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
@@ -306,15 +318,15 @@ Returns *undefined*
 
 ### **assertEntityPresent**
 `
-assertEntityPresent(entityIdentifier: string, position: Minecraft.BlockLocation): void
+assertEntityPresent(entityIdentifier: string, location: Minecraft.BlockLocation): void
 `
 
-Tests that a particular entity is present at a particular location. If not, an error is thrown.
+Tests that an entity of a specified type is present at a particular location. If not, an exception is thrown.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
 | **entityIdentifier** | *string* | Type of entity to test for (e.g., 'minecraft:skeleton'). If an entity namespace is not specified, 'minecraft:' is assumed. |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | Location of the entity to test for. |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *undefined*
 
@@ -326,7 +338,7 @@ Returns *undefined*
 assertEntityPresentInArea(entityIdentifier: string): void
 `
 
-Tests that a particular entity is present within the GameTest area. If not, an error is thrown.
+Tests that an entity of a specified type is present within the GameTest area. If not, an exception is thrown.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
@@ -342,7 +354,7 @@ Returns *undefined*
 assertEntityTouching(entityIdentifier: string, position: Minecraft.Location): void
 `
 
-Tests that a particular entity is touching or connected to another entity.
+Tests that an entity of a specified type is touching or connected to another entity. If not, an exception is thrown.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
@@ -356,15 +368,15 @@ Returns *undefined*
 
 ### **assertIsWaterlogged**
 `
-assertIsWaterlogged(position: Minecraft.BlockLocation, isWaterlogged: boolean): void
+assertIsWaterlogged(location: Minecraft.BlockLocation, isWaterlogged: boolean): void
 `
 
-Tests that a block at a location has some water at it.  If not, an error is thrown.
+Tests that a block at a location contains water in addition to another block type. If not, an error is thrown. Water blocks are not considered to be waterlogged.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | Location of the block to test for. |
-| **isWaterlogged** | *boolean* | Determines whether to test for the presence of water at the _position_, or to test whether there is no water at the specified _position_. |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **isWaterlogged** | *boolean* | Whether not not the block at _position_ is expected to be waterlogged. |
 
 Returns *undefined*
 
@@ -373,7 +385,7 @@ Returns *undefined*
 
 ### **assertItemEntityCountIs**
 `
-assertItemEntityCountIs(itemType: Minecraft.ItemType, position: Minecraft.BlockLocation, searchDistance: number, count: number): void
+assertItemEntityCountIs(itemType: Minecraft.ItemType, location: Minecraft.BlockLocation, searchDistance: number, count: number): void
 `
 
 Tests that items of a particular type and count are present within an area. If not, an error is thrown.
@@ -381,7 +393,7 @@ Tests that items of a particular type and count are present within an area. If n
 | Param | Type | Description |
 | :--- | :--- | :---: |
 | **itemType** | [*Minecraft.ItemType*](../Minecraft/ItemType.md) | Type of item to look for. |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | Location to search around for the specified set of items. |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 | **searchDistance** | *number* | Range, in blocks, to aggregate a count of items around. If 0, will only search the particular block at _position_. |
 | **count** | *number* | Number of items, at minimum, to look and test for. |
 
@@ -398,15 +410,16 @@ test.assertItemEntityCountIs(Items.feather, expectedFeatherLoc, 0, 1);
 ```
 ### **assertItemEntityNotPresent**
 `
-assertItemEntityNotPresent(itemType: Minecraft.ItemType, position: Minecraft.BlockLocation, searchDistance: number): void
+assertItemEntityNotPresent(itemType: Minecraft.ItemType, location: Minecraft.BlockLocation, searchDistance: number): void
 `
 
+Tests that a particular item entity is not present at a particular location. If it is, an exception is thrown.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **itemType** | [*Minecraft.ItemType*](../Minecraft/ItemType.md) | - |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
-| **searchDistance** | *number* | - |
+| **itemType** | [*Minecraft.ItemType*](../Minecraft/ItemType.md) | Type of item to test for. |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **searchDistance** | *number* | Radius in blocks to look for the item entity. |
 
 Returns *undefined*
 
@@ -415,15 +428,16 @@ Returns *undefined*
 
 ### **assertItemEntityPresent**
 `
-assertItemEntityPresent(itemType: Minecraft.ItemType, position: Minecraft.BlockLocation, searchDistance: number): void
+assertItemEntityPresent(itemType: Minecraft.ItemType, location: Minecraft.BlockLocation, searchDistance: number): void
 `
 
+Tests that a particular item entity is present at a particular location. If not, an exception is thrown.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **itemType** | [*Minecraft.ItemType*](../Minecraft/ItemType.md) | - |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
-| **searchDistance** | *number* | - |
+| **itemType** | [*Minecraft.ItemType*](../Minecraft/ItemType.md) | Type of item to test for. |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **searchDistance** | *number* | Radius in blocks to look for the item entity. |
 
 Returns *undefined*
 
@@ -432,14 +446,15 @@ Returns *undefined*
 
 ### **assertRedstonePower**
 `
-assertRedstonePower(position: Minecraft.BlockLocation, power: number): void
+assertRedstonePower(location: Minecraft.BlockLocation, power: number): void
 `
 
+Tests that Redstone power at a particular location matches a particular value. If not, an exception is thrown.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
-| **power** | *number* | - |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **power** | *number* | Expected power level. |
 
 Returns *undefined*
 
@@ -451,10 +466,11 @@ Returns *undefined*
 fail(errorMessage: string): void
 `
 
+Marks the current test as a failure case.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **errorMessage** | *string* | - |
+| **errorMessage** | *string* | Error message summarizing the failure condition. |
 
 Returns *undefined*
 
@@ -466,14 +482,27 @@ Returns *undefined*
 failIf(callback: () => undefined): void
 `
 
-Registers a callback to run.  The test will fail if this callback does _not_ fail/assert.
-Note: The callback takes a single parameter, Helper, which is created each time the callback is called.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
 | **callback** | () => undefined | - |
 
 Returns *undefined*
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getBlock**
+`
+getBlock(location: Minecraft.BlockLocation): Minecraft.Block
+`
+
+#### Arguments
+| Param | Type | Description |
+| :--- | :--- | :---: |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+
+Returns [*Minecraft.Block*](../Minecraft/Block.md)
 
 > [!WARNING]
 > This function can throw errors.
@@ -492,29 +521,30 @@ Returns *undefined*
 
 ### **pressButton**
 `
-pressButton(position: Minecraft.BlockLocation): void
+pressButton(location: Minecraft.BlockLocation): void
 `
 
-Presses a button at a position.  Note: Will error if button is not present.
+Presses a button at a block location.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *undefined*
 
 > [!WARNING]
-> This function can throw errors.
+> Will throw an error if a button is not present at the specified position.
 
 ### **print**
 `
 print(text: string): void
 `
 
+Displays the specified message to all players.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **text** | *string* | - |
+| **text** | *string* | Message to display. |
 
 Returns *undefined*
 
@@ -523,29 +553,31 @@ Returns *undefined*
 
 ### **pullLever**
 `
-pullLever(position: Minecraft.BlockLocation): void
+pullLever(location: Minecraft.BlockLocation): void
 `
 
+Pulls a lever at a block location.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *undefined*
 
 > [!WARNING]
-> This function can throw errors.
+> Will throw an error if a lever is not present at the specified position.
 
 ### **pulseRedstone**
 `
-pulseRedstone(position: Minecraft.BlockLocation, duration: number): void
+pulseRedstone(location: Minecraft.BlockLocation, duration: number): void
 `
 
+Sends a Redstone pulse at a particular location by creating a temporary Redstone block.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
-| **duration** | *number* | - |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **duration** | *number* | Number of ticks to pulse Redstone. |
 
 Returns *undefined*
 
@@ -557,12 +589,13 @@ Returns *undefined*
 relativeLocation(worldLocation: Minecraft.BlockLocation): Minecraft.BlockLocation
 `
 
+From a BlockLocation, returns a new BlockLocation with coordinates relative to the current GameTest structure block. For example, the relative coordinates for the block above the structure block are (0, 1, 0). Rotation of the GameTest structure is also taken into account.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **worldLocation** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **worldLocation** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | Absolute location in the world to convert to a relative location. |
 
-Returns [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md)
+Returns [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) - A location relative to the GameTest command block.
 
 > [!WARNING]
 > This function can throw errors.
@@ -572,11 +605,12 @@ Returns [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md)
 runAfterDelay(delayTicks: number, callback: () => undefined): void
 `
 
+Runs a specific callback after a specified delay of ticks
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **delayTicks** | *number* | - |
-| **callback** | () => undefined | - |
+| **delayTicks** | *number* | Number of ticks to delay before running the specified callback. |
+| **callback** | () => undefined | Callback function to execute. |
 
 Returns *undefined*
 
@@ -588,27 +622,44 @@ Returns *undefined*
 runAtTickTime(tick: number, callback: () => undefined): void
 `
 
+Runs the given callback after a delay of _tick_ ticks from the start of the GameTest.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **tick** | *number* | - |
-| **callback** | () => undefined | - |
+| **tick** | *number* | Tick (after the start of the GameTest) to run the callback at. |
+| **callback** | () => undefined | Callback function to execute. |
 
 Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
 
-### **setBlock**
+### **setBlockPermutation**
 `
-setBlock(block: Minecraft.Block, position: Minecraft.BlockLocation): void
+setBlockPermutation(blockData: Minecraft.BlockPermutation, location: Minecraft.BlockLocation): void
 `
 
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **block** | [*Minecraft.Block*](../Minecraft/Block.md) | - |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **blockData** | [*Minecraft.BlockPermutation*](../Minecraft/BlockPermutation.md) | - |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+
+Returns *undefined*
+
+> [!WARNING]
+> This function can throw errors.
+
+### **setBlockType**
+`
+setBlockType(blockType: Minecraft.BlockType, location: Minecraft.BlockLocation): void
+`
+
+#### Arguments
+| Param | Type | Description |
+| :--- | :--- | :---: |
+| **blockType** | [*Minecraft.BlockType*](../Minecraft/BlockType.md) | - |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *undefined*
 
@@ -617,46 +668,65 @@ Returns *undefined*
 
 ### **spawn**
 `
-spawn(entityIdentifier: string, position: Minecraft.BlockLocation): Minecraft.Entity
+spawn(entityIdentifier: string, location: Minecraft.BlockLocation): Minecraft.Entity
 `
 
+Spawns an entity at a location.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **entityIdentifier** | *string* | - |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **entityIdentifier** | *string* | Type of entity to create. If no namespace is provided, 'minecraft:' is assumed. Note that an optional initial spawn event can be specified between less than/greater than signs (e.g., namespace:entityType<spawnEvent>). |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
-Returns [*Minecraft.Entity*](../Minecraft/Entity.md)
+Returns [*Minecraft.Entity*](../Minecraft/Entity.md) - The spawned entity. If the entity cannot be spawned, returns undefined.
 
 > [!WARNING]
 > This function can throw errors.
 
+#### Examples
+##### ***spawnAdultPig.js***
+```javascript
+test.spawn("minecraft:pig<minecraft:ageable_grow_up>", new BlockLocation(1, 2, 1));
+
+```
 ### **spawnItem**
 `
 spawnItem(itemStack: Minecraft.ItemStack, position: Minecraft.Location): Minecraft.Entity
 `
 
+Spawns an item entity at a specified location.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **itemStack** | [*Minecraft.ItemStack*](../Minecraft/ItemStack.md) | - |
-| **position** | [*Minecraft.Location*](../Minecraft/Location.md) | - |
+| **itemStack** | [*Minecraft.ItemStack*](../Minecraft/ItemStack.md) | ItemStack that describes the item entity to create. |
+| **position** | [*Minecraft.Location*](../Minecraft/Location.md) | Location to create the item entity at. |
 
 Returns [*Minecraft.Entity*](../Minecraft/Entity.md)
 
 > [!WARNING]
 > This function can throw errors.
 
+#### Examples
+##### ***spawnEmeralds.js***
+```javascript
+const oneEmerald = new ItemStack(Items.emerald, 1, 0);
+const fiveEmeralds = new ItemStack(Items.emerald, 5, 0);
+
+test.spawnItem(oneEmerald, new Location(3.5, 3, 1.5));
+test.spawnItem(fiveEmeralds, new Location(1.5, 3, 1.5));
+
+```
 ### **spawnWithoutBehaviors**
 `
-spawnWithoutBehaviors(entityIdentifier: string, position: Minecraft.BlockLocation): Minecraft.Entity
+spawnWithoutBehaviors(entityIdentifier: string, location: Minecraft.BlockLocation): Minecraft.Entity
 `
 
+Spawns an entity at a location without any AI behaviors. This method is frequently used in conjunction with methods like .walkTo to create predictable mob actions.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
 | **entityIdentifier** | *string* | - |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns [*Minecraft.Entity*](../Minecraft/Entity.md)
 
@@ -668,8 +738,9 @@ Returns [*Minecraft.Entity*](../Minecraft/Entity.md)
 startSequence(): GameTestSequence
 `
 
+Creates a new GameTestSequence - A set of steps that play out sequentially within a GameTest.
 
-Returns [*GameTestSequence*](GameTestSequence.md)
+Returns [*GameTestSequence*](GameTestSequence.md) - A new GameTestSequence with chaining methods that facilitate creating a set of steps.
 
 
 ### **succeed**
@@ -677,6 +748,7 @@ Returns [*GameTestSequence*](GameTestSequence.md)
 succeed(): void
 `
 
+Marks the current test as a success case.
 
 Returns *undefined*
 
@@ -688,10 +760,11 @@ Returns *undefined*
 succeedIf(callback: () => undefined): void
 `
 
+Runs the given callback. If the callback does not throw an exception, the test is marked as a success.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **callback** | () => undefined | - |
+| **callback** | () => undefined | Callback function that runs. If the function runs successfully, the test is marked as a success. Typically, this function will have .assertXyz method calls within it. |
 
 Returns *undefined*
 
@@ -703,10 +776,11 @@ Returns *undefined*
 succeedOnTick(tick: number): void
 `
 
+Marks the test as a success at the specified tick.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **tick** | *number* | - |
+| **tick** | *number* | Tick after the start of the GameTest to mark the test as successful. |
 
 Returns *undefined*
 
@@ -718,11 +792,12 @@ Returns *undefined*
 succeedOnTickWhen(tick: number, callback: () => undefined): void
 `
 
+Runs the given callback at _tick_ ticks after the start of the test. If the callback does not throw an exception, the test is marked as a failure.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **tick** | *number* | - |
-| **callback** | () => undefined | - |
+| **tick** | *number* | Tick after the start of the GameTest to run the testing callback at. |
+| **callback** | () => undefined | Callback function that runs. If the function runs successfully, the test is marked as a success. |
 
 Returns *undefined*
 
@@ -734,26 +809,27 @@ Returns *undefined*
 succeedWhen(callback: () => undefined): void
 `
 
+Runs the given callback every tick. When the callback successfully executes, the test is marked as a success. Specifically, the test will succeed when the callback does not throw an exception.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **callback** | () => undefined | - |
+| **callback** | () => undefined | Testing callback function that runs. If the function runs successfully, the test is marked as a success. |
 
 Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
 
-### **succeedWhenBlockPresent**
+### **succeedWhenBlockTypePresent**
 `
-succeedWhenBlockPresent(block: Minecraft.Block, position: Minecraft.BlockLocation): void
+succeedWhenBlockTypePresent(blockType: Minecraft.BlockType, location: Minecraft.BlockLocation): void
 `
 
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **block** | [*Minecraft.Block*](../Minecraft/Block.md) | - |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **blockType** | [*Minecraft.BlockType*](../Minecraft/BlockType.md) | - |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *undefined*
 
@@ -762,15 +838,16 @@ Returns *undefined*
 
 ### **succeedWhenEntityHasComponent**
 `
-succeedWhenEntityHasComponent(entityIdentifier: string, componentIdentifier: string, position: Minecraft.BlockLocation, hasComponent: boolean): void
+succeedWhenEntityHasComponent(entityIdentifier: string, componentIdentifier: string, location: Minecraft.BlockLocation, hasComponent: boolean): void
 `
 
+Tests for the presence of a component on every tick. When the specified component is found, the test is marked as a success.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **entityIdentifier** | *string* | - |
-| **componentIdentifier** | *string* | - |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **entityIdentifier** | *string* | Type of entity to look for. If no namespace is specified, 'minecraft:' is assumed. |
+| **componentIdentifier** | *string* | Type of component to test for the presence of. If no namespace is specified, 'minecraft:' is assumed. |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 | **hasComponent** | *boolean* | - |
 
 Returns *undefined*
@@ -780,14 +857,15 @@ Returns *undefined*
 
 ### **succeedWhenEntityNotPresent**
 `
-succeedWhenEntityNotPresent(entityIdentifier: string, position: Minecraft.BlockLocation): void
+succeedWhenEntityNotPresent(entityIdentifier: string, location: Minecraft.BlockLocation): void
 `
 
+Tests every tick and marks the test as a success when a particular entity is not present at a particular location.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **entityIdentifier** | *string* | - |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **entityIdentifier** | *string* | Type of entity to test for (e.g., 'minecraft:skeleton'). If an entity namespace is not specified, 'minecraft:' is assumed. |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *undefined*
 
@@ -796,14 +874,15 @@ Returns *undefined*
 
 ### **succeedWhenEntityPresent**
 `
-succeedWhenEntityPresent(entityIdentifier: string, position: Minecraft.BlockLocation): void
+succeedWhenEntityPresent(entityIdentifier: string, location: Minecraft.BlockLocation): void
 `
 
+Tests for the presence of an entity on every tick. When an entity of the specified type is found, the test is marked as a success.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **entityIdentifier** | *string* | - |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **entityIdentifier** | *string* | Type of entity to test for (e.g., 'minecraft:skeleton'). If an entity namespace is not specified, 'minecraft:' is assumed. |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
 Returns *undefined*
 
@@ -812,15 +891,32 @@ Returns *undefined*
 
 ### **walkTo**
 `
-walkTo(mob: Minecraft.Entity, position: Minecraft.BlockLocation, speedModifier: number): void
+walkTo(mob: Minecraft.Entity, location: Minecraft.BlockLocation, speedModifier: number): void
+`
+
+Forces an entity to walk to a particular location. Usually used in conjunction with methods like .spawnWithoutBehaviors to have more predictable mob behaviors.
+#### Arguments
+| Param | Type | Description |
+| :--- | :--- | :---: |
+| **mob** | [*Minecraft.Entity*](../Minecraft/Entity.md) | Mob entity to give orders to. |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **speedModifier** | *number* | Adjustable modifier to the mob's walking speed. |
+
+Returns *undefined*
+
+> [!WARNING]
+> This function can throw errors.
+
+### **setTntFuse**
+`
+setTntFuse(actor: Minecraft.Entity, fuseLength: number): void
 `
 
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **mob** | [*Minecraft.Entity*](../Minecraft/Entity.md) | - |
-| **position** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
-| **speedModifier** | *number* | - |
+| **actor** | [*Minecraft.Entity*](../Minecraft/Entity.md) | - |
+| **fuseLength** | *number* | - |
 
 Returns *undefined*
 
@@ -832,12 +928,13 @@ Returns *undefined*
 worldLocation(relativeLocation: Minecraft.BlockLocation): Minecraft.BlockLocation
 `
 
+From a BlockLocation with coordinates relative to the GameTest structure block, returns a new BlockLocation with coordinates relative to world. Rotation of the GameTest structure is also taken into account.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **relativeLocation** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **relativeLocation** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | Location relative to the GameTest command block. |
 
-Returns [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md)
+Returns [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) - An absolute location relative to the GameTest command block.
 
 > [!WARNING]
 > This function can throw errors.

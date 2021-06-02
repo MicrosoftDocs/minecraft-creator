@@ -16,14 +16,36 @@
       items:
       - name: Minecraft
         href: Minecraft/Minecraft.md
+      - name: BlockTypes
+        href: Minecraft/BlockTypes.md
+      - name: Block
+        href: Minecraft/Block.md
+      - name: BlockType
+        href: Minecraft/BlockType.md
+      - name: BlockPermutation
+        href: Minecraft/BlockPermutation.md
+      - name: BlockComponent
+        href: Minecraft/BlockComponent.md
+      - name: BlockInventoryComponent
+        href: Minecraft/BlockInventoryComponent.md
+      - name: BlockInventoryComponentContainer
+        href: Minecraft/BlockInventoryComponentContainer.md
+      - name: BlockProperties
+        href: Minecraft/BlockProperties.md
+      - name: StringBlockProperty
+        href: Minecraft/StringBlockProperty.md
+      - name: IntBlockProperty
+        href: Minecraft/IntBlockProperty.md
+      - name: BoolBlockProperty
+        href: Minecraft/BoolBlockProperty.md
       - name: TickEventSignal
         href: Minecraft/TickEventSignal.md
       - name: WeatherChangedEventSignal
         href: Minecraft/WeatherChangedEventSignal.md
-      - name: Blocks
-        href: Minecraft/Blocks.md
-      - name: BlockStates
-        href: Minecraft/BlockStates.md
+      - name: ChatEvent
+        href: Minecraft/ChatEvent.md
+      - name: ChatEventSignal
+        href: Minecraft/ChatEventSignal.md
       - name: Entity
         href: Minecraft/Entity.md
       - name: EntityDefinitionFeedItem
@@ -32,10 +54,6 @@
         href: Minecraft/AddRider.md
       - name: Ageable
         href: Minecraft/Ageable.md
-      - name: Block
-        href: Minecraft/Block.md
-      - name: BlockState
-        href: Minecraft/BlockState.md
       - name: Breathable
         href: Minecraft/Breathable.md
       - name: Color
@@ -50,6 +68,8 @@
         href: Minecraft/Effects.md
       - name: EffectType
         href: Minecraft/EffectType.md
+      - name: ExplosionOptions
+        href: Minecraft/ExplosionOptions.md
       - name: Events
         href: Minecraft/Events.md
       - name: FeedItem
@@ -116,6 +136,8 @@
         href: Minecraft/NavigationHover.md
       - name: NavigationWalk
         href: Minecraft/NavigationWalk.md
+      - name: Player
+        href: Minecraft/Player.md
       - name: Rideable
         href: Minecraft/Rideable.md
       - name: Seat
