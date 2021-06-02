@@ -9,6 +9,7 @@ ms.prod: gaming
 # Filter list
 
 Below are a list of all the available filters within Minecraft:Bedrock Edition for use with Entity files.
+
 |Filter |Description|
 |:-----:|:----------|
 |[clock_time](Filters/clock_time.md)|`clock_time` allows a creator to compares the current time with a float value in the range (0.0, 1.0). |

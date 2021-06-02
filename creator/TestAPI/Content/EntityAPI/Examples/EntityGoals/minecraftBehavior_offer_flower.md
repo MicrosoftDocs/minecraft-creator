@@ -7,13 +7,16 @@ ms.prod: gaming
 
 # minecraft:behavior.offer_flower
 
-`minecraft:behavior.offer_flower` allows an entity to navigate around a village by creating a path to patrol.
+`minecraft:behavior.offer_flower` allows an entity to offer a flower to another entity.
+
+>[!IMPORTANT]
+> `minecraft:behavior.offer_flower` requires a flower item to be held by the entity.
 
 ## Example
 
 ```json
 "minecraft:behavior.offer_flower":{
-    "priority": 1,
+    "priority": 4,
 }
 ```
 
