@@ -29,7 +29,7 @@ As you contribute to the Bedrock docs, keep the following guidelines in mind:
 * **Don't use profanity**: Minecraft is a family-friendly brand and even masked profanity (such as using symbols like *&$# to conceal profanity) is not allowed in any Minecraft docs
 * **Don't reference inappropriate topics**: references to drinking, drugs, gambling, and explicit content is prohibited in all Minecraft docs
 * **Avoid stereotypes**: stereotypes can be hurtful and should be avoided whenever possible
-* **Avoid referencing current events**: we want our docs to be timeless and many real-world events can affect many people in different ways, so avoid referencing these events whenever you can to minimize the impact on other readers
+* **Avoid referencing current events**: we want our docs to be timeless and many real-world events can affect many people in different ways so avoid referencing these events whenever you can to minimize the impact on other readers
 * **Avoid violent language**: while conflict exists in Minecraft, excessively violent language (such as "slaughter" or esports terms like "frag" and "slay") should be avoided
 
 ### Humor
@@ -102,7 +102,7 @@ In the same way, we don't capitalize the names of biomes or dimensions *unless t
 
 ### Blocks
 
-We don't typically capitalize the names of blocks. Just like in the real world, you wouldn't capitalize materials such as dirt, bricks, or even gold, blocks are not capitalized in Minecraft, no matter how rare. The only exception to this rule is when a block contains the name of a dimension, such as:
+We don't typically capitalize the names of blocks. Just like in the real world, you wouldn't capitalize materials such as dirt, bricks, or even gold. Blocks are not capitalized in Minecraft, no matter how rare. The only exception to this rule is when a block contains the name of a dimension such as:
 
 * End stone
 * Nether brick slab
