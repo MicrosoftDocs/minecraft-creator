@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # inactivity_timer
 
-Tests if the specified duration in seconds of inactivity for despawning has been reached.
+Tests if the specified duration in seconds of inactivity.
 
 ## Parameters
 

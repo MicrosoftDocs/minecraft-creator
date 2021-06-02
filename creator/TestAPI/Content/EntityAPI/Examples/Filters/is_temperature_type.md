@@ -13,7 +13,7 @@ Tests whether the current temperature is a given type.
 
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
-|value |*not set* |String |(Required) The Biome temperature catagory to test. |
+|value |*not set* |String |(Required) The Biome temperature category to test. |
 
 ### List of temperature types
 

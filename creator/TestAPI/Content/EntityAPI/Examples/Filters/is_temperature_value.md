@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # is_temperature_value
 
-Tests the current temperature against a provided value in the range (0.0, 1.0) where 0.0f is the coldest temp and 1.0f is the hottest.
+Tests the current temperature against a provided value in the range (0.0, 1.0) where 0.0 is the coldest temp and 1.0 is the hottest.
 
 ## Parameters
 

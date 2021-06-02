@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # is_humid
 
-Tests whether the Subject is in an area with humidity.
+Tests whether the subject is in an area with humidity.
 
 ## Parameters
 

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # is_sneaking
 
-Tests whether the Subject is sleeping.
+Tests whether the subject is sneaking.
 
 ## Parameters
 

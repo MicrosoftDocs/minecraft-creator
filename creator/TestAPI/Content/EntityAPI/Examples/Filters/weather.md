@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # weather
 
-Returns true if the subject is trusted by entity.
+Tests for the current weather state the entity is experiencing.
 
 ## Parameters
 
@@ -62,7 +62,7 @@ Returns true if the subject is trusted by entity.
 
 ### bee
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/bee.json" range="292-318":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/bee.json" range="292-318":::
 
 ## Vanilla Mobs using `weather`
 

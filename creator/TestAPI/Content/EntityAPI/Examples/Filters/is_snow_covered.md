@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # is_snow_covered
 
-Tests whether the Subject is in an area covered by snow.
+Tests whether the subject is in an area covered by snow.
 
 ## Parameters
 
