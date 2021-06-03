@@ -28,4 +28,6 @@
       items:
       - name: Bedrock API 
         href: ScriptAPI/TOC.yml
+      - name: Entity API
+        href: TestAPI/Content/EntityAPI/TOC.yml
   
