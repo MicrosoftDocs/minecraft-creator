@@ -16,15 +16,121 @@
       items:
       - name: Minecraft
         href: Minecraft/Minecraft.md
-      - name: Block
-        href: Minecraft/Block.md
-      - name: ItemStack
-        href: Minecraft/ItemStack.md
+      - name: TickEventSignal
+        href: Minecraft/TickEventSignal.md
+      - name: WeatherChangedEventSignal
+        href: Minecraft/WeatherChangedEventSignal.md
       - name: Blocks
         href: Minecraft/Blocks.md
-      - name: BlockState
-        href: Minecraft/BlockState.md
       - name: BlockStates
         href: Minecraft/BlockStates.md
+      - name: Entity
+        href: Minecraft/Entity.md
+      - name: EntityDefinitionFeedItem
+        href: Minecraft/EntityDefinitionFeedItem.md
+      - name: AddRider
+        href: Minecraft/AddRider.md
+      - name: Ageable
+        href: Minecraft/Ageable.md
+      - name: Block
+        href: Minecraft/Block.md
+      - name: BlockState
+        href: Minecraft/BlockState.md
+      - name: Breathable
+        href: Minecraft/Breathable.md
+      - name: Color
+        href: Minecraft/Color.md
+      - name: Commands
+        href: Minecraft/Commands.md
+      - name: Trigger
+        href: Minecraft/Trigger.md
+      - name: Dimension
+        href: Minecraft/Dimension.md
+      - name: Effects
+        href: Minecraft/Effects.md
+      - name: EffectType
+        href: Minecraft/EffectType.md
+      - name: Events
+        href: Minecraft/Events.md
+      - name: FeedItem
+        href: Minecraft/FeedItem.md
+      - name: FeedItemEffect
+        href: Minecraft/FeedItemEffect.md
+      - name: FilterGroup
+        href: Minecraft/FilterGroup.md
+      - name: FlyingSpeed
+        href: Minecraft/FlyingSpeed.md
+      - name: Healable
+        href: Minecraft/Healable.md
+      - name: Health
+        href: Minecraft/Health.md
+      - name: Inventory
+        href: Minecraft/Inventory.md
+      - name: InventoryComponentContainer
+        href: Minecraft/InventoryComponentContainer.md
+      - name: Container
+        href: Minecraft/Container.md
+      - name: Items
+        href: Minecraft/Items.md
+      - name: ItemStack
+        href: Minecraft/ItemStack.md
+      - name: ItemType
+        href: Minecraft/ItemType.md
+      - name: LavaMovement
+        href: Minecraft/LavaMovement.md
+      - name: Leashable
+        href: Minecraft/Leashable.md
+      - name: Effect
+        href: Minecraft/Effect.md
+      - name: MountTaming
+        href: Minecraft/MountTaming.md
+      - name: MovementAmphibious
+        href: Minecraft/MovementAmphibious.md
+      - name: MovementBasic
+        href: Minecraft/MovementBasic.md
+      - name: Movement
+        href: Minecraft/Movement.md
+      - name: MovementFly
+        href: Minecraft/MovementFly.md
+      - name: MovementGeneric
+        href: Minecraft/MovementGeneric.md
+      - name: MovementGlide
+        href: Minecraft/MovementGlide.md
+      - name: MovementHover
+        href: Minecraft/MovementHover.md
+      - name: MovementJump
+        href: Minecraft/MovementJump.md
+      - name: MovementSkip
+        href: Minecraft/MovementSkip.md
+      - name: MovementSway
+        href: Minecraft/MovementSway.md
+      - name: NavigationClimb
+        href: Minecraft/NavigationClimb.md
+      - name: NavigationFloat
+        href: Minecraft/NavigationFloat.md
+      - name: NavigationFly
+        href: Minecraft/NavigationFly.md
+      - name: NavigationGeneric
+        href: Minecraft/NavigationGeneric.md
+      - name: NavigationHover
+        href: Minecraft/NavigationHover.md
+      - name: NavigationWalk
+        href: Minecraft/NavigationWalk.md
+      - name: Rideable
+        href: Minecraft/Rideable.md
+      - name: Seat
+        href: Minecraft/Seat.md
+      - name: Strength
+        href: Minecraft/Strength.md
+      - name: Tameable
+        href: Minecraft/Tameable.md
+      - name: UnderwaterMovement
+        href: Minecraft/UnderwaterMovement.md
+      - name: WeatherChangedEvent
+        href: Minecraft/WeatherChangedEvent.md
       - name: BlockLocation
         href: Minecraft/BlockLocation.md
+      - name: Location
+        href: Minecraft/Location.md
+      - name: World
+        href: Minecraft/World.md

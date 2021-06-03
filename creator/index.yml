@@ -24,27 +24,14 @@ highlightedContent:
     - title: Getting Started with Add-on Development
       itemType: get-started
       url: Documents/GettingStarted.md
-
-
+      
 # productDirectory section (optional) will outline rows that can contain text and media along with lists. 
 productDirectory:
-  title: Building up the Foundation
-  summary: If you are new to Minecraft development or looking to brush up on some knowledge, we have created a few getting started tutorials to help you take your first steps as a Creator!
   items:
     # card
-    - title: What's New?
-      imageSrc: images/minecraftBlock.png
-      links:
-        - url:  Documents/GameTestGettingStarted.md
-          text: Getting Started with GameTest
-        - url: Documents/GameTestBuildYourFirstGameTest.md
-          text: Build your first GameTest
-        - url: ScriptAPI/GameTest/GameTest.md
-          text: GameTest API
-  # card
     - title: Add-on Pack Tutorials
       #imageSrc needs to in a square ratio with no whitespace
-      imageSrc: images/minecraftBlock.png
+      imageSrc: images/Add-Resource-Pack.png
       links:
         - url: Documents/ResourcePack.md
           text: Introduction to Resource Packs
@@ -54,14 +41,19 @@ productDirectory:
           text: How to add a Custom Block
   # card
     - title: Working with Commands
-      imageSrc: images/minecraftBlock.png
+      imageSrc: images/Script.png
       links:
         - url: Documents/CommandBlocks.md
           text: Getting Started with Command Blocks
-  # card
-    - title: Reference Documentation
-      imageSrc: images/minecraftBlock.png
+    # card
+    - title: Using GameTest
+      imageSrc: images/Firework.png
       links:
-        - url: TestAPI/Content/EntityAPI/index.yml
-          text: Entity Landing Page
+        - url:  Documents/GameTestGettingStarted.md
+          text: Getting Started with GameTest
+        - url: Documents/GameTestBuildYourFirstGameTest.md
+          text: Build your first GameTest
+        - url: ScriptAPI/GameTest/GameTest.md
+          text: GameTest API
+
 

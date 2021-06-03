@@ -7,11 +7,14 @@ title: Minecraft.BlockStates Class
 description: Contents of the Minecraft.BlockStates class.
 ---
 # BlockStates Class
-
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 
 ## Methods
+- [multiFaceDirectionBits](#multifacedirectionbits)
+- [bigDripleafHead](#bigdripleafhead)
+- [bigDripleafTilt](#bigdripleaftilt)
+- [growingPlantAge](#growingplantage)
 - [dripstoneThickness](#dripstonethickness)
 - [respawnAnchorCharge](#respawnanchorcharge)
 - [twistingVinesAge](#twistingvinesage)
@@ -128,6 +131,66 @@ description: Contents of the Minecraft.BlockStates class.
 - [age](#age)
 - [ageBit](#agebit)
   
+### **multiFaceDirectionBits**
+`
+multiFaceDirectionBits(stateValue: number): any
+`
+
+#### Arguments
+| Param | Type | Description |
+| :--- | :--- | :---: |
+| **stateValue** | *number* | - |
+
+Returns *any*
+
+> [!WARNING]
+> This function can throw errors.
+
+### **bigDripleafHead**
+`
+bigDripleafHead(stateValue: boolean): any
+`
+
+#### Arguments
+| Param | Type | Description |
+| :--- | :--- | :---: |
+| **stateValue** | *boolean* | - |
+
+Returns *any*
+
+> [!WARNING]
+> This function can throw errors.
+
+### **bigDripleafTilt**
+`
+bigDripleafTilt(stateName: string): any
+`
+
+#### Arguments
+| Param | Type | Description |
+| :--- | :--- | :---: |
+| **stateName** | *string* | - |
+
+Returns *any*
+
+> [!WARNING]
+> This function can throw errors.
+
+### **growingPlantAge**
+`
+growingPlantAge(stateValue: number): any
+`
+
+#### Arguments
+| Param | Type | Description |
+| :--- | :--- | :---: |
+| **stateValue** | *number* | - |
+
+Returns *any*
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **dripstoneThickness**
 `
 dripstoneThickness(stateName: string): any
@@ -139,8 +202,9 @@ dripstoneThickness(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **respawnAnchorCharge**
 `
@@ -153,8 +217,9 @@ respawnAnchorCharge(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **twistingVinesAge**
 `
@@ -167,8 +232,9 @@ twistingVinesAge(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **rotation**
 `
@@ -181,8 +247,9 @@ rotation(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **wallConnectionTypeWest**
 `
@@ -195,8 +262,9 @@ wallConnectionTypeWest(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **wallConnectionTypeSouth**
 `
@@ -209,8 +277,9 @@ wallConnectionTypeSouth(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **wallConnectionTypeEast**
 `
@@ -223,8 +292,9 @@ wallConnectionTypeEast(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **wallConnectionTypeNorth**
 `
@@ -237,8 +307,9 @@ wallConnectionTypeNorth(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **wallPostBit**
 `
@@ -251,8 +322,9 @@ wallPostBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **weepingVinesAge**
 `
@@ -265,8 +337,9 @@ weepingVinesAge(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **honeyLevel**
 `
@@ -279,8 +352,9 @@ honeyLevel(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **blockLightLevel**
 `
@@ -293,8 +367,9 @@ blockLightLevel(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **pillarAxis**
 `
@@ -307,8 +382,9 @@ pillarAxis(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **leverDirection**
 `
@@ -321,8 +397,9 @@ leverDirection(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **coralFanDirection**
 `
@@ -335,8 +412,9 @@ coralFanDirection(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **composterFillLevel**
 `
@@ -349,8 +427,9 @@ composterFillLevel(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **extinguished**
 `
@@ -363,8 +442,9 @@ extinguished(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **structureBlockType**
 `
@@ -377,8 +457,9 @@ structureBlockType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **structureVoidType**
 `
@@ -391,8 +472,9 @@ structureVoidType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **attachment**
 `
@@ -405,8 +487,9 @@ attachment(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **coralHangTypeBit**
 `
@@ -419,8 +502,9 @@ coralHangTypeBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **strippedBit**
 `
@@ -433,8 +517,9 @@ strippedBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **hanging**
 `
@@ -447,8 +532,9 @@ hanging(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **cauldronLiquid**
 `
@@ -461,8 +547,9 @@ cauldronLiquid(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **coralColor**
 `
@@ -475,8 +562,9 @@ coralColor(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **seaGrassType**
 `
@@ -489,8 +577,9 @@ seaGrassType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **chemistryTableType**
 `
@@ -503,8 +592,9 @@ chemistryTableType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **doublePlantType**
 `
@@ -517,8 +607,9 @@ doublePlantType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **prismarineBlockType**
 `
@@ -531,8 +622,9 @@ prismarineBlockType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **wallBlockType**
 `
@@ -545,8 +637,9 @@ wallBlockType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **hugeMushroomBits**
 `
@@ -559,8 +652,9 @@ hugeMushroomBits(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **stoneBrickType**
 `
@@ -573,8 +667,9 @@ stoneBrickType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **monsterEggStoneType**
 `
@@ -587,8 +682,9 @@ monsterEggStoneType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **stoneSlabType4**
 `
@@ -601,8 +697,9 @@ stoneSlabType4(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **stoneSlabType3**
 `
@@ -615,8 +712,9 @@ stoneSlabType3(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **stoneSlabType2**
 `
@@ -629,8 +727,9 @@ stoneSlabType2(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **stoneSlabType**
 `
@@ -643,8 +742,9 @@ stoneSlabType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **flowerType**
 `
@@ -657,8 +757,9 @@ flowerType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **tallGrassType**
 `
@@ -671,8 +772,9 @@ tallGrassType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **sandStoneType**
 `
@@ -685,8 +787,9 @@ sandStoneType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **spongeType**
 `
@@ -699,8 +802,9 @@ spongeType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **newLeafType**
 `
@@ -713,8 +817,9 @@ newLeafType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **oldLeafType**
 `
@@ -727,8 +832,9 @@ oldLeafType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **deprecated**
 `
@@ -741,8 +847,9 @@ deprecated(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **chiselType**
 `
@@ -755,8 +862,9 @@ chiselType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **newLogType**
 `
@@ -769,8 +877,9 @@ newLogType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **oldLogType**
 `
@@ -783,8 +892,9 @@ oldLogType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **sandType**
 `
@@ -797,8 +907,9 @@ sandType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **dirtType**
 `
@@ -811,8 +922,9 @@ dirtType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **stoneType**
 `
@@ -825,8 +937,9 @@ stoneType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **woodType**
 `
@@ -839,8 +952,9 @@ woodType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **stabilityCheck**
 `
@@ -853,8 +967,9 @@ stabilityCheck(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **stability**
 `
@@ -867,8 +982,9 @@ stability(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **bambooLeafSize**
 `
@@ -881,8 +997,9 @@ bambooLeafSize(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **bambooStalkThickness**
 `
@@ -895,8 +1012,9 @@ bambooStalkThickness(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **color**
 `
@@ -909,8 +1027,9 @@ color(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **coralDirection**
 `
@@ -923,8 +1042,9 @@ coralDirection(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **weirdoDirection**
 `
@@ -937,8 +1057,9 @@ weirdoDirection(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **groundSignDirection**
 `
@@ -951,8 +1072,9 @@ groundSignDirection(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **crackedState**
 `
@@ -965,8 +1087,9 @@ crackedState(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **turtleEggCount**
 `
@@ -979,8 +1102,9 @@ turtleEggCount(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **dragDown**
 `
@@ -993,8 +1117,9 @@ dragDown(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **torchFacingDirection**
 `
@@ -1007,8 +1132,9 @@ torchFacingDirection(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **saplingType**
 `
@@ -1021,8 +1147,9 @@ saplingType(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **itemFrameMapBit**
 `
@@ -1035,8 +1162,9 @@ itemFrameMapBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **clusterCount**
 `
@@ -1049,8 +1177,9 @@ clusterCount(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **deadBit**
 `
@@ -1063,8 +1192,9 @@ deadBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **colorBit**
 `
@@ -1077,8 +1207,9 @@ colorBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **allowUnderwaterBit**
 `
@@ -1091,8 +1222,9 @@ allowUnderwaterBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **vineDirectionBits**
 `
@@ -1105,8 +1237,9 @@ vineDirectionBits(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **upsideDownBit**
 `
@@ -1119,8 +1252,9 @@ upsideDownBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **updateBit**
 `
@@ -1133,8 +1267,9 @@ updateBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **triggeredBit**
 `
@@ -1147,8 +1282,9 @@ triggeredBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **topSlotBit**
 `
@@ -1161,8 +1297,9 @@ topSlotBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **toggleBit**
 `
@@ -1175,8 +1312,9 @@ toggleBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **suspendedBit**
 `
@@ -1189,8 +1327,9 @@ suspendedBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **repeaterDelay**
 `
@@ -1203,8 +1342,9 @@ repeaterDelay(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **redstoneSignal**
 `
@@ -1217,8 +1357,9 @@ redstoneSignal(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **railDirection**
 `
@@ -1231,8 +1372,9 @@ railDirection(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **railDataBit**
 `
@@ -1245,8 +1387,9 @@ railDataBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **poweredBit**
 `
@@ -1259,8 +1402,9 @@ poweredBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **persistentBit**
 `
@@ -1273,8 +1417,9 @@ persistentBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **outputLitBit**
 `
@@ -1287,8 +1432,9 @@ outputLitBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **outputSubtractBit**
 `
@@ -1301,8 +1447,9 @@ outputSubtractBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **openBit**
 `
@@ -1315,8 +1462,9 @@ openBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **occupiedBit**
 `
@@ -1329,8 +1477,9 @@ occupiedBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **kelpAge**
 `
@@ -1343,8 +1492,9 @@ kelpAge(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **noDropBit**
 `
@@ -1357,8 +1507,9 @@ noDropBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **moisturizedAmount**
 `
@@ -1371,8 +1522,9 @@ moisturizedAmount(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **liquidDepth**
 `
@@ -1385,8 +1537,9 @@ liquidDepth(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **inWallBit**
 `
@@ -1399,8 +1552,9 @@ inWallBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **infiniburnBit**
 `
@@ -1413,8 +1567,9 @@ infiniburnBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **height**
 `
@@ -1427,8 +1582,9 @@ height(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **headPieceBit**
 `
@@ -1441,8 +1597,9 @@ headPieceBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **growth**
 `
@@ -1455,8 +1612,9 @@ growth(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **fillLevel**
 `
@@ -1469,8 +1627,9 @@ fillLevel(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **facingDirection**
 `
@@ -1483,8 +1642,9 @@ facingDirection(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **explodeBit**
 `
@@ -1497,8 +1657,9 @@ explodeBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **endPortalEyeBit**
 `
@@ -1511,8 +1672,9 @@ endPortalEyeBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **direction**
 `
@@ -1525,8 +1687,9 @@ direction(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **upperBlockBit**
 `
@@ -1539,8 +1702,9 @@ upperBlockBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **doorHingeBit**
 `
@@ -1553,8 +1717,9 @@ doorHingeBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **disarmedBit**
 `
@@ -1567,8 +1732,9 @@ disarmedBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **damage**
 `
@@ -1581,8 +1747,9 @@ damage(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **coveredBit**
 `
@@ -1595,8 +1762,9 @@ coveredBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **conditionalBit**
 `
@@ -1609,8 +1777,9 @@ conditionalBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **buttonPressedBit**
 `
@@ -1623,8 +1792,9 @@ buttonPressedBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **brewingStandSlotCBit**
 `
@@ -1637,8 +1807,9 @@ brewingStandSlotCBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **brewingStandSlotBBit**
 `
@@ -1651,8 +1822,9 @@ brewingStandSlotBBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **brewingStandSlotABit**
 `
@@ -1665,8 +1837,9 @@ brewingStandSlotABit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **biteCounter**
 `
@@ -1679,8 +1852,9 @@ biteCounter(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **portalAxis**
 `
@@ -1693,8 +1867,9 @@ portalAxis(stateName: string): any
 | **stateName** | *string* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **attachedBit**
 `
@@ -1707,8 +1882,9 @@ attachedBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **age**
 `
@@ -1721,8 +1897,9 @@ age(stateValue: number): any
 | **stateValue** | *number* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
 ### **ageBit**
 `
@@ -1735,6 +1912,7 @@ ageBit(stateValue: boolean): any
 | **stateValue** | *boolean* | - |
 
 Returns *any*
+
 > [!WARNING]
-> This function can throw errors. 
+> This function can throw errors.
 
