@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:behavior.nearest_attackable_target Component
 
-Allows the mob to check for and pursue the nearest valid target.
+Allows an entity to attack the closest target within a given subset of specific target types.
 
 > [!NOTE]
 > This behavior is a requirement for the following behaviors:
