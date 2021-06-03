@@ -22,7 +22,6 @@ To get started, you'll want to begin with understanding how a behavior pack work
 > [!div class="checklist"]
 > - [Introduction To Behavior Packs](BehaviorPack.md) 
 
-
 ## What's a GameTest?
 
 A GameTest is a miniature environment along with a set of starting conditions, such as a set of mobs or items.  After that environment plays out in the Minecraft world for a period of time, a GameTest has conditional code that evaluates whether expected conditions were met. If a test passes, you will receive confirmation that  everything is working as expected.  When a test fails, you can observe and diagnose why it may have failed.
