@@ -9,7 +9,7 @@
     - name: Filters
       items:
       - name: clock_time 
-        href: Examples/Examples/Filters/clock_time.md
+        href: Examples/Filters/clock_time.md
       - name: distance_to_nearest_player
         href: Examples/Filters/distance_to_nearest_player.md
       - name: has_ability
@@ -260,8 +260,8 @@
         href: Examples/EntityGoals/minecraftBehavior_silverfish_merge_with_stone.md
       - name: minecraft:behavior.silverfish_wake_up_friends
         href: Examples/EntityGoals/minecraftBehavior_silverfish_wake_up_friends.md
-      - name: minecraft:behavior.silverfish_snacking
-        href: Examples/EntityGoals/minecraftBehavior_silverfish_snacking.md
+      - name: minecraft:behavior.snacking
+        href: Examples/EntityGoals/minecraftBehavior_snacking.md
       - name: minecraft:behavior.stay_while_sitting
         href: Examples/EntityGoals/minecraftBehavior_stay_while_sitting.md
       - name: minecraft:behavior.stomp_turtle_egg
