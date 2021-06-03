@@ -66,7 +66,7 @@ Returns [*Block*](Block.md) - Block at the specified location.
 spawnEntity(identifier: string, location: BlockLocation): Entity
 `
 
-Creates a new entity (e.g., a mob) at the specified location. This type was introduced as of version 1.17.10.21.
+Creates a new entity (e.g., a mob) at the specified location. This method was introduced as of version 1.17.10.21.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |

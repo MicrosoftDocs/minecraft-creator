@@ -27,7 +27,7 @@ clone(): BlockPermutation
 `
 
 
-Returns [*BlockPermutation*](BlockPermutation.md) - The list of tags that the permutation has.
+Returns [*BlockPermutation*](BlockPermutation.md) - A copy of the permutation.
 
 
 ### **getAllProperties**
