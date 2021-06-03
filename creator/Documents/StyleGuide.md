@@ -74,7 +74,7 @@ When you want to refer to an update to Minecraft, just use the name of the updat
 
 ## Capitalization
 
-In Minecraft, we only capitalize when something is unique. This means that there is only one of that object in the game world. You can use this rule to determine whether you should capitalize the name of a game object.
+In Minecraft, we usually capitalize only when something is unique. This means that there is only one of that object in the game world. You can use this rule to determine whether you should capitalize the name of a game object.
 
 ### Mobs
 
@@ -90,7 +90,9 @@ because there are many of these mobs all over the game world. We do capitalize t
 * Redstone Monstrosity
 * Corrupted Cauldron
 
-because there is only one of these mobs in each game world.
+because there is only one of these mobs in each game world. 
+
+> **Note**: One notable exception is the "Enderman". Even though Enderman is not unique, we do capitalize this mob name.
 
 ### Biomes and Dimensions
 
@@ -99,6 +101,7 @@ In the same way, we don't capitalize the names of biomes or dimensions *unless t
 * the Void
 * the Nether
 * the End
+* the Overworld
 
 ### Blocks
 
@@ -110,9 +113,11 @@ We don't typically capitalize the names of blocks. Just like in the real world, 
 
 Even then, note that only the dimension name is capitalized, and not the name of the block itself.
 
+> **Note**: Blocks like "netherite" and "netherrack" *are not* capitalized because they do not contain "Nether" as a separate word.
+
 ### Items
 
-Items are only capitalized when they are unique, or when they contain the name of a dimension. Keep in mind that items made from any material *are not* capitalized, such as:
+Items are only capitalized when they contain the name of a dimension. Keep in mind that items made from any material *are not* capitalized, such as:
 
 * netherite axe
 * heart of the sea
@@ -130,4 +135,5 @@ The following game objects are *always* considered unique and should *always* be
 
 * Status effects (Nausea, Fire Resistance, Haste, etc.)
 * Potions
+* Enchantments
 * Achievements and advancements ("Time to Mine!", "Acquire Hardware", "Diamonds to You!")
