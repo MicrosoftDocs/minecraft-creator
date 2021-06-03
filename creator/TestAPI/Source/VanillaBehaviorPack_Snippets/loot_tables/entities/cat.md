@@ -1,3 +1,3 @@
 # Cat
 
-:::code language="json" source="../../../VanilliaBehaviorPack/loot_tables/entities/cat.json":::
+:::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/cat.json":::

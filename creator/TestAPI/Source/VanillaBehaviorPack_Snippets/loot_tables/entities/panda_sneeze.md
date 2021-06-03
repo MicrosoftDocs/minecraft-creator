@@ -1,3 +1,3 @@
 # Panda Sneeze
 
-:::code language="json" source="../../../VanilliaBehaviorPack/loot_tables/entities/panda_sneeze.json":::
+:::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/panda_sneeze.json":::

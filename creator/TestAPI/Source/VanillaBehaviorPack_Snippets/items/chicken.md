@@ -1,3 +1,3 @@
 # Chicken
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/chicken.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/chicken.json":::

@@ -1,3 +1,3 @@
 # Wither Boss
 
-:::code language="json" source="../../../VanilliaBehaviorPack/loot_tables/entities/wither_boss.json":::
+:::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/wither_boss.json":::

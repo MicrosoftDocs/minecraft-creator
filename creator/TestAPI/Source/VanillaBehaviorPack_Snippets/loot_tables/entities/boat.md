@@ -1,3 +1,3 @@
 # Boat 
 
-:::code language="json" source="../../../VanilliaBehaviorPack/loot_tables/entities/boat.json":::
+:::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/boat.json":::

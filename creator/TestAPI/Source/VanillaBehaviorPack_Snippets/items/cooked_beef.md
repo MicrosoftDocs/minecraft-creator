@@ -1,3 +1,3 @@
 # Cooked Beef
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/cooked_beef.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/cooked_beef.json":::

@@ -1,3 +1,3 @@
 # Carrot
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/carrot.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/carrot.json":::

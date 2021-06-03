@@ -1,3 +1,3 @@
 # Beef
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/beef.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/beef.json":::

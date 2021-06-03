@@ -1,3 +1,3 @@
 # Clownfish
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/clownfish.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/clownfish.json":::

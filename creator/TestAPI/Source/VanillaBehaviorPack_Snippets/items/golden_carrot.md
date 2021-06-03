@@ -1,3 +1,3 @@
 # Golden Carrot
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/golden_carrot.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/golden_carrot.json":::

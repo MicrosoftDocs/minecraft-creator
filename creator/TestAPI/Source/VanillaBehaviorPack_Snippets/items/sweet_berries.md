@@ -1,3 +1,3 @@
 # Sweet Berries
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/sweet_berries.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/sweet_berries.json":::

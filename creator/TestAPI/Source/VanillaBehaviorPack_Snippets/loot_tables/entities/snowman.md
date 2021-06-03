@@ -1,3 +1,3 @@
 # Snowman
 
-:::code language="json" source="../../../VanilliaBehaviorPack/loot_tables/entities/snowman.json":::
+:::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/snowman.json":::
