@@ -1,4 +1,4 @@
-- name: Modules
+- name: EnityAPI
   items:
     - name: Getting Started with Entities
       items:

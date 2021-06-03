@@ -26,8 +26,8 @@
             href: Documents/GameTestBuildYourFirstGameTest.md
     - name: Reference Documentation
       items:
-      - name: Bedrock API 
+      - name: GameTest API 
         href: ScriptAPI/TOC.yml
-      - name: Entity API
+      - name: Vanilla API
         href: TestAPI/Content/EntityAPI/TOC.yml
   
