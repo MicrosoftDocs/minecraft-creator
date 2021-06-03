@@ -1,3 +1,3 @@
 # Mutton Cooked
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/muttonCooked.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/muttonCooked.json":::

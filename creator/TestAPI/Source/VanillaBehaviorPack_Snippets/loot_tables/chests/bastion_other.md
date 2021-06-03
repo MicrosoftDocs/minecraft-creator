@@ -1,3 +1,3 @@
 # Bastion Other
 
-:::code language="json" source="../../../VanilliaBehaviorPack/loot_tables/chests/bastion_other.json":::
+:::code language="json" source="../../../VanillaBehaviorPack/loot_tables/chests/bastion_other.json":::

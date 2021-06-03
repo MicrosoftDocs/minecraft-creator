@@ -1,3 +1,3 @@
 # Drowned
 
-:::code language="json" source="../../../VanilliaBehaviorPack/loot_tables/entities/drowned.json":::
+:::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/drowned.json":::

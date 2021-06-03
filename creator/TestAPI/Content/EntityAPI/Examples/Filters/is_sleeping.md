@@ -67,7 +67,7 @@ Tests whether the Subject is sleeping.
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/fox.json" range="661-681":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="661-681":::
 
 ## Vanilla entities using `is_sleeping`
 

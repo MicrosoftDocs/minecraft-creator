@@ -1,3 +1,3 @@
 # Honey Bottle
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/honey_bottle.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/honey_bottle.json":::

@@ -1,3 +1,3 @@
 # Camera
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/camera.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/camera.json":::

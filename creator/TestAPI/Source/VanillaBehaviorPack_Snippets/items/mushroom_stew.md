@@ -1,3 +1,3 @@
 # Mushroom Stew
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/mushroom_stew.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/mushroom_stew.json":::

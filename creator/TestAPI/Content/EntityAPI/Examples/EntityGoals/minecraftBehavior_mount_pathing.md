@@ -42,7 +42,7 @@ ms.prod: gaming
 - [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
 - [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [husk](../../../../Source/VanilliaFilterPack/entities/husk.md)
+- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
 - [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
 - [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)

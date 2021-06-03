@@ -1,3 +1,3 @@
 # Village Desert House
 
-:::code language="json" source="../../../../VanilliaBehaviorPack/loot_tables/chests/village/village_armorer.json":::
+:::code language="json" source="../../../../VanillaBehaviorPack/loot_tables/chests/village/village_armorer.json":::

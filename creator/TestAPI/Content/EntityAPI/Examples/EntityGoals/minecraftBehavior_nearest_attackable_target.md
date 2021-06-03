@@ -57,7 +57,7 @@ Allows an entity to attack the closest target within a given subset of specific 
 
 ### Zombie
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/zombie.json" range="435-472":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.json" range="435-472":::
 
 ### Vanilla mobs using `nearest_attackable_target`
 
@@ -74,8 +74,8 @@ Allows an entity to attack the closest target within a given subset of specific 
 - [ghast](../../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)
 - [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [husk](../../../../Source/VanilliaBehaviorPack/entities/husk.md)
-- [iron golem](../../../../Source/VanilliaBehaviorPack/entities/iron_golem.md)
+- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
+- [iron golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
 - [magma cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
 - [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)

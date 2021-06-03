@@ -1,3 +1,3 @@
 # Ravager
 
-:::code language="json" source="../../../VanilliaBehaviorPack/loot_tables/entities/ravager.json":::
+:::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/ravager.json":::

@@ -1,3 +1,3 @@
 # Elder Guardian
 
-:::code language="json" source="../../../VanilliaBehaviorPack/loot_tables/entities/elder_guardian.json":::
+:::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/elder_guardian.json":::

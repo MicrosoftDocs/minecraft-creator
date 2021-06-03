@@ -1,3 +1,3 @@
 # Honeycomb
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/honeycomb.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/honeycomb.json":::

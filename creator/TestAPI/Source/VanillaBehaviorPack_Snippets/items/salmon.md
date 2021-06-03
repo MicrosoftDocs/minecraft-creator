@@ -1,3 +1,3 @@
 # Salmon
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/salmon.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/salmon.json":::

@@ -1,3 +1,3 @@
 # Cookie
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/cookie.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/cookie.json":::

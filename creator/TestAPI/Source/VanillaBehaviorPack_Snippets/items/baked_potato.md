@@ -1,3 +1,3 @@
 # Baked Potato
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/baked_potato.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/baked_potato.json":::

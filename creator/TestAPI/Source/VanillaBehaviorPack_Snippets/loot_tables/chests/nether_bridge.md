@@ -1,3 +1,3 @@
 # Nether Bridge
 
-:::code language="json" source="../../../VanilliaBehaviorPack/loot_tables/chests/nether_bridge.json":::
+:::code language="json" source="../../../VanillaBehaviorPack/loot_tables/chests/nether_bridge.json":::

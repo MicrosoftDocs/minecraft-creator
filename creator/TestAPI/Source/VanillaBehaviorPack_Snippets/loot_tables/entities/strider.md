@@ -1,3 +1,3 @@
 # Strider
 
-:::code language="json" source="../../../VanilliaBehaviorPack/loot_tables/entities/strider.json":::
+:::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/strider.json":::
