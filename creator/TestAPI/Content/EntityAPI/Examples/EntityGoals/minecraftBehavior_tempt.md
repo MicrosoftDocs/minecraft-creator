@@ -1,0 +1,56 @@
+---
+author: v-josjones
+ms.author: v-josjones
+title: minecraft:behavior.tempt
+ms.prod: gaming
+---
+
+# minecraft:behavior.tempt
+
+`minecraft:behavior.tempt` allows an entity to be tempted by a set item.
+
+## Parameters
+
+|Name |Default Value  |Type  |Description  |
+|:---------:|:---------:|:---------:|:---------:|
+|can_get_scared| false| Boolean|  If true, the mob can stop being tempted if the player moves too fast while close to this mob |
+|items|*not set* | List|  List of items this mob is tempted by |
+|speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |
+|within_radius| 0.0| Decimal| Distance in blocks this mob can get tempted by a player holding an item they like |
+
+## Example
+
+```json
+"minecraft:behavior.tempt":{
+    "priority": 2,
+    "can_get_scared":true,
+    "speed_multiplier": 1.3,
+    "within_radius": 5.0,
+    "items":["carrot"]
+}
+```
+
+## Vanilla entities examples
+
+### mooshroom
+
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/mooshroom.json" range="488-494":::
+
+## Vanilla entities using `minecraft:behavior.tempt`
+
+- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
+- [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
+- [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
+- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
+- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
+- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
+- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
+- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
+- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
+- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
+- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
+- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
+- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
+- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
+- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
+- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
