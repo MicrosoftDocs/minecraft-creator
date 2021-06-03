@@ -22,10 +22,10 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### elder_dragon
+### ender_dragon
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/elder_dragon.json" range="24-26":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ender_dragon.json" range="24-26":::
 
 ## Vanilla entities using `minecraft:behavior.dragontakeoff`
 
-- [elder_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_dragon.md)
+- [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)
