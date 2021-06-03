@@ -7,22 +7,20 @@ ms.prod: gaming
 
 # minecraft:behavior.roll
 
-`minecraft:behavior.roll` allows an entity to roll and potentially started other entities. While sneezing, the entity may drop an item.
-
-> [!NOTE]
-> `minecraft:behavior.roll` requires a `player` to be tagged as the entity's owner, via taming or console command.
+`minecraft:behavior.roll` allows an entity roll forward.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:---------:|:---------:|:---------:|:---------:|
-|probability| [1.0]| Decimal| The probability that the mob will use the goal. |
+|probability| 1.0| Decimal| The probability that the mob will use the goal. |
 
 ## Example
 
 ```json
 "minecraft:behavior.roll":{
     "priority": 7,
+    "probability": 0.6
 }
 ```
 
@@ -30,7 +28,7 @@ ms.prod: gaming
 
 ### panda
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/panda.json" range="217-258":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/panda.json" range="197-200":::
 
 ## Vanilla entities using `minecraft:behavior.roll`
 
