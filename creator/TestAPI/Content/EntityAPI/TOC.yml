@@ -1,5 +1,7 @@
 - name: EnityAPI
   items:
+    - name: Entity API landing page
+      href: index.yml
     - name: Getting Started with Entities
       items:
       - name: Entity Documentation Introduction
