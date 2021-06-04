@@ -32,6 +32,8 @@
         items:
         - name: Entity JSON
           items:
+          - name: Filters
+            href: TestAPI/Content/EntityAPI/Examples/Filters/TOC.yml
           - name: Components
             href: TestAPI/Content/EntityAPI/Examples/EntityComponents/TOC.yml
           - name: AI Goals

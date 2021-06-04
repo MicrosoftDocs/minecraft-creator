@@ -1,48 +1,46 @@
- - name: Properties
-   items:
-    - name: minecraft:ambient_sound_interval 
-      href: Examples/EntityPropertys/minecraftProperty_ambient_sound_interval .md
-    - name: minecraft:can_climb
-      href: Examples/EntityPropertys/minecraftProperty_can_climb.md
-    - name: minecraft:can_fly
-      href: Examples/EntityPropertys/minecraftProperty_can_fly.md
-    - name: minecraft:can_power_jump
-      href: Examples/EntityPropertys/minecraftProperty_can_power_jump.md
-    - name: minecraft:collision_box
-      href: Examples/EntityPropertys/minecraftProperty_collision_box.md
-    - name: minecraft:color
-      href: Examples/EntityPropertys/minecraftProperty_color.md
-    - name: minecraft:color2
-      href: Examples/EntityPropertys/minecraftProperty_color2.md
-    - name: minecraft:default_look_angle
-      href: Examples/EntityPropertys/minecraftProperty_default_look_angle.md
-    - name: minecraft:equipment
-      href: Examples/EntityPropertys/minecraftProperty_equipment.md
-    - name: minecraft:fire_immune
-      href: Examples/EntityPropertys/minecraftProperty_fire_immune.md
-    - name: minecraft:floats_in_liquid
-      href: Examples/EntityPropertys/minecraftProperty_floats_in_liquid.md
-    - name: minecraft:flying_speed
-      href: Examples/EntityPropertys/minecraftProperty_flying_speed.md
-    - name: minecraft:friction_modifier
-      href: Examples/EntityPropertys/minecraftProperty_friction_modifier.md
-    - name: minecraft:ground_offset
-      href: Examples/EntityPropertys/minecraftProperty_ground_offset.md
-    - name: minecraft:input_ground_controlled
-      href: Examples/EntityPropertys/minecraftProperty_input_ground_controlled.md
-    - name: minecraft:is_baby
-      href: Examples/EntityPropertys/minecraftProperty_is_baby.md
-    - name: minecraft:is_charged
-      href: Examples/EntityPropertys/minecraftProperty_is_charged.md
-    - name: minecraft:is_chested
-      href: Examples/EntityPropertys/minecraftProperty_is_chested.md
-    - name: minecraft:is_dyeable
-      href: Examples/EntityPropertys/minecraftProperty_is_dyeable.md
-    - name: minecraft:is_hidden_when_invisible
-      href: Examples/EntityPropertys/minecraftProperty_is_hidden_when_invisible.md
-    - name: minecraft:is_ignited
-      href: Examples/EntityPropertys/minecraftProperty_is_ignited.md
-    - name: minecraft:is_illager_captain
-      href: Examples/EntityPropertys/minecraftProperty_is_illager_captain.md
-    - name: minecraft:is_saddled
-      href: Examples/EntityPropertys/minecraftProperty_is_saddled.md
+ - name: minecraft:ambient_sound_interval 
+   href: Examples/EntityPropertys/minecraftProperty_ambient_sound_interval .md
+ - name: minecraft:can_climb
+   href: Examples/EntityPropertys/minecraftProperty_can_climb.md
+ - name: minecraft:can_fly
+   href: Examples/EntityPropertys/minecraftProperty_can_fly.md
+ - name: minecraft:can_power_jump
+   href: Examples/EntityPropertys/minecraftProperty_can_power_jump.md
+ - name: minecraft:collision_box
+   href: Examples/EntityPropertys/minecraftProperty_collision_box.md
+ - name: minecraft:color
+   href: Examples/EntityPropertys/minecraftProperty_color.md
+ - name: minecraft:color2
+   href: Examples/EntityPropertys/minecraftProperty_color2.md
+ - name: minecraft:default_look_angle
+   href: Examples/EntityPropertys/minecraftProperty_default_look_angle.md
+ - name: minecraft:equipment
+   href: Examples/EntityPropertys/minecraftProperty_equipment.md
+ - name: minecraft:fire_immune
+   href: Examples/EntityPropertys/minecraftProperty_fire_immune.md
+ - name: minecraft:floats_in_liquid
+   href: Examples/EntityPropertys/minecraftProperty_floats_in_liquid.md
+ - name: minecraft:flying_speed
+   href: Examples/EntityPropertys/minecraftProperty_flying_speed.md
+ - name: minecraft:friction_modifier
+   href: Examples/EntityPropertys/minecraftProperty_friction_modifier.md
+ - name: minecraft:ground_offset
+   href: Examples/EntityPropertys/minecraftProperty_ground_offset.md
+ - name: minecraft:input_ground_controlled
+   href: Examples/EntityPropertys/minecraftProperty_input_ground_controlled.md
+ - name: minecraft:is_baby
+   href: Examples/EntityPropertys/minecraftProperty_is_baby.md
+ - name: minecraft:is_charged
+   href: Examples/EntityPropertys/minecraftProperty_is_charged.md
+ - name: minecraft:is_chested
+   href: Examples/EntityPropertys/minecraftProperty_is_chested.md
+ - name: minecraft:is_dyeable
+   href: Examples/EntityPropertys/minecraftProperty_is_dyeable.md
+ - name: minecraft:is_hidden_when_invisible
+   href: Examples/EntityPropertys/minecraftProperty_is_hidden_when_invisible.md
+ - name: minecraft:is_ignited
+   href: Examples/EntityPropertys/minecraftProperty_is_ignited.md
+ - name: minecraft:is_illager_captain
+   href: Examples/EntityPropertys/minecraftProperty_is_illager_captain.md
+ - name: minecraft:is_saddled
+   href: Examples/EntityPropertys/minecraftProperty_is_saddled.md

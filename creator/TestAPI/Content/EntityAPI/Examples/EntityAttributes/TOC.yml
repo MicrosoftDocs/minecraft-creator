@@ -1,8 +1,6 @@
-  - name: Attributes
-    items:
-    - name: minecraft:attack 
-      href: Examples/EntityAttributes/minecraftAttribute_attack.md
-    - name: minecraft:spell_effects
-      href: Examples/EntityAttributes/minecraftAttribute_spell_effects.md
-    - name: minecraft:strength
-      href: Examples/EntityAttributes/minecraftAttribute_strength.md
+ - name: minecraft:attack 
+   href: Examples/EntityAttributes/minecraftAttribute_attack.md
+ - name: minecraft:spell_effects
+   href: Examples/EntityAttributes/minecraftAttribute_spell_effects.md
+ - name: minecraft:strength
+   href: Examples/EntityAttributes/minecraftAttribute_strength.md

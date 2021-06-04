@@ -1,4 +1,2 @@
- - name: Components
-   items:
-   - name: minecraft:add_rider
-     href: Examples/EntityComponents/minecraft_addrider.md
+- name: minecraft:add_rider
+  href: Examples/EntityComponents/minecraft_addrider.md

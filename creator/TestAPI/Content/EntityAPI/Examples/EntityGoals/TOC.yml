@@ -1,134 +1,132 @@
-- name: AI Goals
-  items:
-   - name: minecraft:behavior.admire_item
-     href: Examples/EntityGoals/minecraftBehavior_admire_item.md
-   - name: minecraft:behavior.barter
-     href: Examples/EntityGoals/minecraftBehavior_barter.md
-   - name: minecraft:behavior.beg
-     href: Examples/EntityGoals/minecraftBehavior_beg.md
-   - name: minecraft:behavior.break_door
-     href: Examples/EntityGoals/minecraftBehavior_break_door.md
-   - name: minecraft:behavior.breed
-     href: Examples/EntityGoals/minecraftBehavior_breed.md
-   - name: minecraft:behavior.defend_trusted_target
-     href: Examples/EntityGoals/minecraftBehavior_defend_trusted_target.md
-   - name: minecraft:behavior.door_interact
-     href: Examples/EntityGoals/minecraftBehavior_door_interact.md
-   - name: minecraft:behavior.drink_potion
-     href: Examples/EntityGoals/minecraftBehavior_drink_potion.md
-   - name: minecraft:behavior.eat_carried_item
-     href: Examples/EntityGoals/minecraftBehavior_eat_carried_item.md
-   - name: minecraft:behavior.explore_outskirts
-     href: Examples/EntityGoals/minecraftBehavior_explore_outskirts.md
-   - name: minecraft:behavior.find_cover
-     href: Examples/EntityGoals/minecraftBehavior_find_cover.md
-   - name: minecraft:behavior.flee_sun
-     href: Examples/EntityGoals/minecraftBehavior_flee_sun.md
-   - name: minecraft:behavior.float
-     href: Examples/EntityGoals/minecraftBehavior_float.md
-   - name: minecraft:behavior.follow_caravan
-     href: Examples/EntityGoals/minecraftBehavior_follow_caravan.md
-   - name: minecraft:behavior.follow_mob
-     href: Examples/EntityGoals/minecraftBehavior_follow_mob.md
-   - name: minecraft:behavior.follow_owner
-     href: Examples/EntityGoals/minecraftBehavior_follow_owner.md
-   - name: minecraft:behavior.follow_parent
-     href: Examples/EntityGoals/minecraftBehavior_follow_parent.md
-   - name: minecraft:behavior.follow_target_captain
-     href: Examples/EntityGoals/minecraftBehavior_follow_target_captain.md
-   - name: minecraft:behavior.go_home
-     href: Examples/EntityGoals/minecraftBehavior_go_home.md
-   - name: minecraft:behavior.hide
-     href: Examples/EntityGoals/minecraftBehavior_hide.md
-   - name: minecraft:behavior.hold_ground
-     href: Examples/EntityGoals/minecraftBehavior_hold_ground.md
-   - name: minecraft:behavior.hurt_by_target
-     href: Examples/EntityGoals/minecraftBehavior_hurt_by_target.md
-   - name: minecraft:behavior.knockback_roar
-     href: Examples/EntityGoals/minecraftBehavior_knockback_roar.md
-   - name: minecraft:behavior.lay_down
-     href: Examples/EntityGoals/minecraftBehavior_lay_down.md
-   - name: minecraft:behavior.lay_egg
-     href: Examples/EntityGoals/minecraftBehavior_lay_egg.md
-   - name: minecraft:behavior.look_at_entity
-     href: Examples/EntityGoals/minecraftBehavior_look_at_entity.md
-   - name: minecraft:behavior.look_at_player
-     href: Examples/EntityGoals/minecraftBehavior_look_at_player.md
-   - name: minecraft:behavior.look_at_target
-     href: Examples/EntityGoals/minecraftBehavior_look_at_target.md
-   - name: minecraft:behavior.look_at_trading_player
-     href: Examples/EntityGoals/minecraftBehavior_look_at_trading_player.md
-   - name: minecraft:behavior.make_love
-     href: Examples/EntityGoals/minecraftBehavior_make_love.md
-   - name: minecraft:behavior.melee_attack
-     href: Examples/EntityGoals/minecraftBehavior_melee_attack.md
-   - name: minecraft:behavior.mount_pathing
-     href: Examples/EntityGoals/minecraftBehavior_mount_pathing.md
-   - name: minecraft:behavior.move_indoors
-     href: Examples/EntityGoals/minecraftBehavior_move_indoors.md
-   - name: minecraft:behavior.move_through_village
-     href: Examples/EntityGoals/minecraftBehavior_move_through_village.md
-   - name: minecraft:behavior.move_to_land
-     href: Examples/EntityGoals/minecraftBehavior_move_to_land.md
-   - name: minecraft:behavior.move_to_lava
-     href: Examples/EntityGoals/minecraftBehavior_move_to_lava.md
-   - name: minecraft:behavior.move_to_poi
-     href: Examples/EntityGoals/minecraftBehavior_move_to_poi.md
-   - name: minecraft:behavior.move_to_random_block
-     href: Examples/EntityGoals/minecraftBehavior_move_to_random_block.md
-   - name: minecraft:behavior.move_to_village
-     href: Examples/EntityGoals/minecraftBehavior_move_to_village.md
-   - name: minecraft:behavior.move_to_water
-     href: Examples/EntityGoals/minecraftBehavior_move_to_water.md
-   - name: minecraft:behavior.move_towards_target
-     href: Examples/EntityGoals/minecraftBehavior_move_towards_target.md
-   - name: minecraft:behavior.nearest_attackable_target
-     href: Examples/EntityGoals/minecraftBehavior_nearest_attackable_target.md
-   - name: minecraft:behavior.nearest_prioritized_attackable_target
-     href: Examples/EntityGoals/minecraftBehavior_nearest_prioritized_attackable_target.md
-   - name: minecraft:behavior.ocelot_sit_on_block
-     href: Examples/EntityGoals/minecraftBehavior_ocelot_sit_on_block.md
-   - name: minecraft:behavior.offer_flower
-     href: Examples/EntityGoals/minecraftBehavior_offer_flower.md
-   - name: minecraft:behavior.open_door
-     href: Examples/EntityGoals/minecraftBehavior_open_door.md
-   - name: minecraft:behavior.owner_hurt_by_target
-     href: Examples/EntityGoals/minecraftBehavior_owner_hurt_by_target.md
-   - name: minecraft:behavior.owner_hurt_target
-     href: Examples/EntityGoals/minecraftBehavior_owner_hurt_target.md
-   - name: minecraft:behavior.panic
-     href: Examples/EntityGoals/minecraftBehavior_panic.md
-   - name: minecraft:behavior.random_breach
-     href: Examples/EntityGoals/minecraftBehavior_random_breach.md
-   - name: minecraft:behavior.random_look_around_and_sit
-     href: Examples/EntityGoals/minecraftBehavior_random_look_around_and_sit.md
-   - name: minecraft:behavior.random_look_around
-     href: Examples/EntityGoals/minecraftBehavior_random_look_around.md
-   - name: minecraft:behavior.random_sitting
-     href: Examples/EntityGoals/minecraftBehavior_random_sitting.md
-   - name: minecraft:behavior.random_stroll
-     href: Examples/EntityGoals/minecraftBehavior_random_stroll.md
-   - name: minecraft:behavior.restrict_open_door
-     href: Examples/EntityGoals/minecraftBehavior_restrict_open_door.md
-   - name: minecraft:behavior.restrict_sun
-     href: Examples/EntityGoals/minecraftBehavior_restrict_sun.md
-   - name: minecraft:behavior.rise_to_liquid_level
-     href: Examples/EntityGoals/minecraftBehavior_rise_to_liquid_level.md
-   - name: minecraft:behavior.run_around_like_crazy
-     href: Examples/EntityGoals/minecraftBehavior_run_around_like_crazy.md
-   - name: minecraft:behavior.scared
-     href: Examples/EntityGoals/minecraftBehavior_scared.md
-   - name: minecraft:behavior.silverfish_merge_with_stone
-     href: Examples/EntityGoals/minecraftBehavior_silverfish_merge_with_stone.md
-   - name: minecraft:behavior.silverfish_wake_up_friends
-     href: Examples/EntityGoals/minecraftBehavior_silverfish_wake_up_friends.md
-   - name: minecraft:behavior.snacking
-     href: Examples/EntityGoals/minecraftBehavior_snacking.md
-   - name: minecraft:behavior.stay_while_sitting
-     href: Examples/EntityGoals/minecraftBehavior_stay_while_sitting.md
-   - name: minecraft:behavior.stomp_turtle_egg
-     href: Examples/EntityGoals/minecraftBehavior_stomp_turtle_egg.md
-   - name: minecraft:behavior.stroll_towards_village
-     href: Examples/EntityGoals/minecraftBehavior_stroll_towards_village.md
-   - name: minecraft:behavior.work
-     href: Examples/EntityGoals/minecraftBehavior_work.md
+- name: minecraft:behavior.admire_item
+  href: Examples/EntityGoals/minecraftBehavior_admire_item.md
+- name: minecraft:behavior.barter
+  href: Examples/EntityGoals/minecraftBehavior_barter.md
+- name: minecraft:behavior.beg
+  href: Examples/EntityGoals/minecraftBehavior_beg.md
+- name: minecraft:behavior.break_door
+  href: Examples/EntityGoals/minecraftBehavior_break_door.md
+- name: minecraft:behavior.breed
+  href: Examples/EntityGoals/minecraftBehavior_breed.md
+- name: minecraft:behavior.defend_trusted_target
+  href: Examples/EntityGoals/minecraftBehavior_defend_trusted_target.md
+- name: minecraft:behavior.door_interact
+  href: Examples/EntityGoals/minecraftBehavior_door_interact.md
+- name: minecraft:behavior.drink_potion
+  href: Examples/EntityGoals/minecraftBehavior_drink_potion.md
+- name: minecraft:behavior.eat_carried_item
+  href: Examples/EntityGoals/minecraftBehavior_eat_carried_item.md
+- name: minecraft:behavior.explore_outskirts
+  href: Examples/EntityGoals/minecraftBehavior_explore_outskirts.md
+- name: minecraft:behavior.find_cover
+  href: Examples/EntityGoals/minecraftBehavior_find_cover.md
+- name: minecraft:behavior.flee_sun
+  href: Examples/EntityGoals/minecraftBehavior_flee_sun.md
+- name: minecraft:behavior.float
+  href: Examples/EntityGoals/minecraftBehavior_float.md
+- name: minecraft:behavior.follow_caravan
+  href: Examples/EntityGoals/minecraftBehavior_follow_caravan.md
+- name: minecraft:behavior.follow_mob
+  href: Examples/EntityGoals/minecraftBehavior_follow_mob.md
+- name: minecraft:behavior.follow_owner
+  href: Examples/EntityGoals/minecraftBehavior_follow_owner.md
+- name: minecraft:behavior.follow_parent
+  href: Examples/EntityGoals/minecraftBehavior_follow_parent.md
+- name: minecraft:behavior.follow_target_captain
+  href: Examples/EntityGoals/minecraftBehavior_follow_target_captain.md
+- name: minecraft:behavior.go_home
+  href: Examples/EntityGoals/minecraftBehavior_go_home.md
+- name: minecraft:behavior.hide
+  href: Examples/EntityGoals/minecraftBehavior_hide.md
+- name: minecraft:behavior.hold_ground
+  href: Examples/EntityGoals/minecraftBehavior_hold_ground.md
+- name: minecraft:behavior.hurt_by_target
+  href: Examples/EntityGoals/minecraftBehavior_hurt_by_target.md
+- name: minecraft:behavior.knockback_roar
+  href: Examples/EntityGoals/minecraftBehavior_knockback_roar.md
+- name: minecraft:behavior.lay_down
+  href: Examples/EntityGoals/minecraftBehavior_lay_down.md
+- name: minecraft:behavior.lay_egg
+  href: Examples/EntityGoals/minecraftBehavior_lay_egg.md
+- name: minecraft:behavior.look_at_entity
+  href: Examples/EntityGoals/minecraftBehavior_look_at_entity.md
+- name: minecraft:behavior.look_at_player
+  href: Examples/EntityGoals/minecraftBehavior_look_at_player.md
+- name: minecraft:behavior.look_at_target
+  href: Examples/EntityGoals/minecraftBehavior_look_at_target.md
+- name: minecraft:behavior.look_at_trading_player
+  href: Examples/EntityGoals/minecraftBehavior_look_at_trading_player.md
+- name: minecraft:behavior.make_love
+  href: Examples/EntityGoals/minecraftBehavior_make_love.md
+- name: minecraft:behavior.melee_attack
+  href: Examples/EntityGoals/minecraftBehavior_melee_attack.md
+- name: minecraft:behavior.mount_pathing
+  href: Examples/EntityGoals/minecraftBehavior_mount_pathing.md
+- name: minecraft:behavior.move_indoors
+  href: Examples/EntityGoals/minecraftBehavior_move_indoors.md
+- name: minecraft:behavior.move_through_village
+  href: Examples/EntityGoals/minecraftBehavior_move_through_village.md
+- name: minecraft:behavior.move_to_land
+  href: Examples/EntityGoals/minecraftBehavior_move_to_land.md
+- name: minecraft:behavior.move_to_lava
+  href: Examples/EntityGoals/minecraftBehavior_move_to_lava.md
+- name: minecraft:behavior.move_to_poi
+  href: Examples/EntityGoals/minecraftBehavior_move_to_poi.md
+- name: minecraft:behavior.move_to_random_block
+  href: Examples/EntityGoals/minecraftBehavior_move_to_random_block.md
+- name: minecraft:behavior.move_to_village
+  href: Examples/EntityGoals/minecraftBehavior_move_to_village.md
+- name: minecraft:behavior.move_to_water
+  href: Examples/EntityGoals/minecraftBehavior_move_to_water.md
+- name: minecraft:behavior.move_towards_target
+  href: Examples/EntityGoals/minecraftBehavior_move_towards_target.md
+- name: minecraft:behavior.nearest_attackable_target
+  href: Examples/EntityGoals/minecraftBehavior_nearest_attackable_target.md
+- name: minecraft:behavior.nearest_prioritized_attackable_target
+  href: Examples/EntityGoals/minecraftBehavior_nearest_prioritized_attackable_target.md
+- name: minecraft:behavior.ocelot_sit_on_block
+  href: Examples/EntityGoals/minecraftBehavior_ocelot_sit_on_block.md
+- name: minecraft:behavior.offer_flower
+  href: Examples/EntityGoals/minecraftBehavior_offer_flower.md
+- name: minecraft:behavior.open_door
+  href: Examples/EntityGoals/minecraftBehavior_open_door.md
+- name: minecraft:behavior.owner_hurt_by_target
+  href: Examples/EntityGoals/minecraftBehavior_owner_hurt_by_target.md
+- name: minecraft:behavior.owner_hurt_target
+  href: Examples/EntityGoals/minecraftBehavior_owner_hurt_target.md
+- name: minecraft:behavior.panic
+  href: Examples/EntityGoals/minecraftBehavior_panic.md
+- name: minecraft:behavior.random_breach
+  href: Examples/EntityGoals/minecraftBehavior_random_breach.md
+- name: minecraft:behavior.random_look_around_and_sit
+  href: Examples/EntityGoals/minecraftBehavior_random_look_around_and_sit.md
+- name: minecraft:behavior.random_look_around
+  href: Examples/EntityGoals/minecraftBehavior_random_look_around.md
+- name: minecraft:behavior.random_sitting
+  href: Examples/EntityGoals/minecraftBehavior_random_sitting.md
+- name: minecraft:behavior.random_stroll
+  href: Examples/EntityGoals/minecraftBehavior_random_stroll.md
+- name: minecraft:behavior.restrict_open_door
+  href: Examples/EntityGoals/minecraftBehavior_restrict_open_door.md
+- name: minecraft:behavior.restrict_sun
+  href: Examples/EntityGoals/minecraftBehavior_restrict_sun.md
+- name: minecraft:behavior.rise_to_liquid_level
+  href: Examples/EntityGoals/minecraftBehavior_rise_to_liquid_level.md
+- name: minecraft:behavior.run_around_like_crazy
+  href: Examples/EntityGoals/minecraftBehavior_run_around_like_crazy.md
+- name: minecraft:behavior.scared
+  href: Examples/EntityGoals/minecraftBehavior_scared.md
+- name: minecraft:behavior.silverfish_merge_with_stone
+  href: Examples/EntityGoals/minecraftBehavior_silverfish_merge_with_stone.md
+- name: minecraft:behavior.silverfish_wake_up_friends
+  href: Examples/EntityGoals/minecraftBehavior_silverfish_wake_up_friends.md
+- name: minecraft:behavior.snacking
+  href: Examples/EntityGoals/minecraftBehavior_snacking.md
+- name: minecraft:behavior.stay_while_sitting
+  href: Examples/EntityGoals/minecraftBehavior_stay_while_sitting.md
+- name: minecraft:behavior.stomp_turtle_egg
+  href: Examples/EntityGoals/minecraftBehavior_stomp_turtle_egg.md
+- name: minecraft:behavior.stroll_towards_village
+  href: Examples/EntityGoals/minecraftBehavior_stroll_towards_village.md
+- name: minecraft:behavior.work
+  href: Examples/EntityGoals/minecraftBehavior_work.md

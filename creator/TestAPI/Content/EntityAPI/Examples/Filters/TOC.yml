@@ -1,130 +1,128 @@
-- name: Filters
-  items:
-   - name: clock_time 
-     href: Examples/Filters/clock_time.md
-   - name: distance_to_nearest_player
-     href: Examples/Filters/distance_to_nearest_player.md
-   - name: has_ability
-     href: Examples/Filters/has_ability.md
-   - name: has_biome_tag
-     href: Examples/Filters/has_biome_tag.md
-   - name: has_component
-     href: Examples/Filters/has_component.md
-   - name: has_container_open
-     href: Examples/Filters/has_container_open.md
-   - name: has_damage
-     href: Examples/Filters/has_damage.md
-   - name: has_equipment
-     href: Examples/Filters/has_equipment.md
-   - name: has_mob_effect
-     href: Examples/Filters/has_mob_effect.md
-   - name: has_ranged_weapon
-     href: Examples/Filters/has_ranged_weapon.md
-   - name: has_tag
-     href: Examples/Filters/has_tag.md
-   - name: has_target
-     href: Examples/Filters/has_target.md
-   - name: has_trade_supply
-     href: Examples/Filters/has_trade_supply.md
-   - name: hourly_clock_time
-     href: Examples/Filters/hourly_clock_time.md
-   - name: in_caravan
-     href: Examples/Filters/in_caravan.md
-   - name: in_clouds
-     href: Examples/Filters/in_clouds.md
-   - name: in_lava
-     href: Examples/Filters/in_lava.md
-   - name: in_nether
-     href: Examples/Filters/in_nether.md
-   - name: in_water_or_rain
-     href: Examples/Filters/in_water_or_rain.md
-   - name: in_water
-     href: Examples/Filters/in_water.md
-   - name: inactivity_timer
-     href: Examples/Filters/inactivity_timer.md
-   - name: is_altitude
-     href: Examples/Filters/is_altitude.md
-   - name: is_avoiding_mobs
-     href: Examples/Filters/is_avoiding_mobs.md
-   - name: is_biome
-     href: Examples/Filters/is_biome.md
-   - name: is_block
-     href: Examples/Filters/is_block.md
-   - name: is_brightness
-     href: Examples/Filters/is_brightness.md
-   - name: is_climbing
-     href: Examples/Filters/is_climbing.md
-   - name: is_color
-     href: Examples/Filters/is_color.md
-   - name: is_daytime
-     href: Examples/Filters/is_daytime.md
-   - name: is_difficulty
-     href: Examples/Filters/is_difficulty.md
-   - name: is_family
-     href: Examples/Filters/is_family.md
-   - name: is_game_rule
-     href: Examples/Filters/is_game_rule.md
-   - name: is_humid
-     href: Examples/Filters/is_humid.md
-   - name: is_immobile
-     href: Examples/Filters/is_immobile.md
-   - name: is_in_village
-     href: Examples/Filters/is_in_village.md
-   - name: is_leashed
-     href: Examples/Filters/is_leashed.md
-   - name: is_leashed_to
-     href: Examples/Filters/is_leashed_to.md
-   - name: is_mark_variant
-     href: Examples/Filters/is_mark_variant.md
-   - name: is_moving
-     href: Examples/Filters/is_moving.md
-   - name: is_owner
-     href: Examples/Filters/is_owner.md
-   - name: is_persistent
-     href: Examples/Filters/is_persistent.md
-   - name: is_riding
-     href: Examples/Filters/is_riding.md
-   - name: is_skin_id
-     href: Examples/Filters/is_skin_id.md
-   - name: is_sleeping
-     href: Examples/Filters/is_sleeping.md
-   - name: is_sneaking
-     href: Examples/Filters/is_sneaking.md
-   - name: is_snow_covered
-     href: Examples/Filters/is_snow_covered.md
-   - name: is_target
-     href: Examples/Filters/is_target.md
-   - name: is_temperature_type
-     href: Examples/Filters/is_temperature_type.md
-   - name: is_temperature_value
-     href: Examples/Filters/is_temperature_value.md
-   - name: is_underground
-     href: Examples/Filters/is_underground.md
-   - name: is_underwater
-     href: Examples/Filters/is_underwater.md
-   - name: is_variant
-     href: Examples/Filters/is_variant.md
-   - name: is_visible
-     href: Examples/Filters/is_visible.md
-   - name: light_level
-     href: Examples/Filters/light_level.md
-   - name: moon_intensity
-     href: Examples/Filters/moon_intensity.md
-   - name: moon_phase
-     href: Examples/Filters/moon_phase.md
-   - name: on_ground
-     href: Examples/Filters/on_ground.md
-   - name: on_ladder
-     href: Examples/Filters/on_ladder.md
-   - name: random_chance
-     href: Examples/Filters/random_chance.md
-   - name: rider_count
-     href: Examples/Filters/rider_count.md
-   - name: surface_mob
-     href: Examples/Filters/surface_mob.md
-   - name: trusts
-     href: Examples/Filters/trusts.md
-   - name: weather_at_position
-     href: Examples/Filters/weather_at_position.md
-   - name: weather
-     href: Examples/Filters/weather.md
+- name: clock_time 
+  href: Examples/Filters/clock_time.md
+- name: distance_to_nearest_player
+  href: Examples/Filters/distance_to_nearest_player.md
+- name: has_ability
+  href: Examples/Filters/has_ability.md
+- name: has_biome_tag
+  href: Examples/Filters/has_biome_tag.md
+- name: has_component
+  href: Examples/Filters/has_component.md
+- name: has_container_open
+  href: Examples/Filters/has_container_open.md
+- name: has_damage
+  href: Examples/Filters/has_damage.md
+- name: has_equipment
+  href: Examples/Filters/has_equipment.md
+- name: has_mob_effect
+  href: Examples/Filters/has_mob_effect.md
+- name: has_ranged_weapon
+  href: Examples/Filters/has_ranged_weapon.md
+- name: has_tag
+  href: Examples/Filters/has_tag.md
+- name: has_target
+  href: Examples/Filters/has_target.md
+- name: has_trade_supply
+  href: Examples/Filters/has_trade_supply.md
+- name: hourly_clock_time
+  href: Examples/Filters/hourly_clock_time.md
+- name: in_caravan
+  href: Examples/Filters/in_caravan.md
+- name: in_clouds
+  href: Examples/Filters/in_clouds.md
+- name: in_lava
+  href: Examples/Filters/in_lava.md
+- name: in_nether
+  href: Examples/Filters/in_nether.md
+- name: in_water_or_rain
+  href: Examples/Filters/in_water_or_rain.md
+- name: in_water
+  href: Examples/Filters/in_water.md
+- name: inactivity_timer
+  href: Examples/Filters/inactivity_timer.md
+- name: is_altitude
+  href: Examples/Filters/is_altitude.md
+- name: is_avoiding_mobs
+  href: Examples/Filters/is_avoiding_mobs.md
+- name: is_biome
+  href: Examples/Filters/is_biome.md
+- name: is_block
+  href: Examples/Filters/is_block.md
+- name: is_brightness
+  href: Examples/Filters/is_brightness.md
+- name: is_climbing
+  href: Examples/Filters/is_climbing.md
+- name: is_color
+  href: Examples/Filters/is_color.md
+- name: is_daytime
+  href: Examples/Filters/is_daytime.md
+- name: is_difficulty
+  href: Examples/Filters/is_difficulty.md
+- name: is_family
+  href: Examples/Filters/is_family.md
+- name: is_game_rule
+  href: Examples/Filters/is_game_rule.md
+- name: is_humid
+  href: Examples/Filters/is_humid.md
+- name: is_immobile
+  href: Examples/Filters/is_immobile.md
+- name: is_in_village
+  href: Examples/Filters/is_in_village.md
+- name: is_leashed
+  href: Examples/Filters/is_leashed.md
+- name: is_leashed_to
+  href: Examples/Filters/is_leashed_to.md
+- name: is_mark_variant
+  href: Examples/Filters/is_mark_variant.md
+- name: is_moving
+  href: Examples/Filters/is_moving.md
+- name: is_owner
+  href: Examples/Filters/is_owner.md
+- name: is_persistent
+  href: Examples/Filters/is_persistent.md
+- name: is_riding
+  href: Examples/Filters/is_riding.md
+- name: is_skin_id
+  href: Examples/Filters/is_skin_id.md
+- name: is_sleeping
+  href: Examples/Filters/is_sleeping.md
+- name: is_sneaking
+  href: Examples/Filters/is_sneaking.md
+- name: is_snow_covered
+  href: Examples/Filters/is_snow_covered.md
+- name: is_target
+  href: Examples/Filters/is_target.md
+- name: is_temperature_type
+  href: Examples/Filters/is_temperature_type.md
+- name: is_temperature_value
+  href: Examples/Filters/is_temperature_value.md
+- name: is_underground
+  href: Examples/Filters/is_underground.md
+- name: is_underwater
+  href: Examples/Filters/is_underwater.md
+- name: is_variant
+  href: Examples/Filters/is_variant.md
+- name: is_visible
+  href: Examples/Filters/is_visible.md
+- name: light_level
+  href: Examples/Filters/light_level.md
+- name: moon_intensity
+  href: Examples/Filters/moon_intensity.md
+- name: moon_phase
+  href: Examples/Filters/moon_phase.md
+- name: on_ground
+  href: Examples/Filters/on_ground.md
+- name: on_ladder
+  href: Examples/Filters/on_ladder.md
+- name: random_chance
+  href: Examples/Filters/random_chance.md
+- name: rider_count
+  href: Examples/Filters/rider_count.md
+- name: surface_mob
+  href: Examples/Filters/surface_mob.md
+- name: trusts
+  href: Examples/Filters/trusts.md
+- name: weather_at_position
+  href: Examples/Filters/weather_at_position.md
+- name: weather
+  href: Examples/Filters/weather.md
