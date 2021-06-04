@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # light_level
 
-Tests is the entity is outside of the specified light level range. The range is set between 0 and 16.
+Tests if the entity is outside of the specified light level range. The range is set between 0 and 16.
 
 ## Parameters
 

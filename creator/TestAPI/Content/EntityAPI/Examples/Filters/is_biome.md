@@ -17,7 +17,7 @@ Tests whether the Subject is currently in the named biome.
 
 ### List of biomes
 
-Below are a list of biome types that can be used for the `value` string.
+Below is a list of biome types that can be used for the `value` string.
 
 | Options| Description |
 |:-----------:|:-----------:|

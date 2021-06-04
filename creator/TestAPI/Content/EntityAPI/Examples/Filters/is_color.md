@@ -17,7 +17,7 @@ Returns true if the subject entity is the named color.
 
 ### List of colors
 
-Below are a list of color types that can be used for the `value` string.
+Below is a list of color types that can be used for the `value` string.
 
 | Options|
 |:-----------|

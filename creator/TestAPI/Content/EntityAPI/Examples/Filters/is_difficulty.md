@@ -17,7 +17,7 @@ Tests the current difficulty level of the game.
 
 ### List of difficulty levels
 
-Below are a list of difficulty levels that can be used for the `value` string.
+Below is a list of difficulty levels that can be used for the `value` string.
 
 | Options|
 |:-----------|
