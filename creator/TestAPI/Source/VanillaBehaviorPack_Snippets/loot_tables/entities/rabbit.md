@@ -1,3 +1,3 @@
 # Rabbit
 
-:::code language="json" source="../../../VanilliaBehaviorPack/loot_tables/entities/rabbit.json":::
+:::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/rabbit.json":::

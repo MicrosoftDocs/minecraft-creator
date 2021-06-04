@@ -1,3 +1,3 @@
 # Apple
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/apple.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/apple.json":::

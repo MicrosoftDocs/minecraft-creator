@@ -1,3 +1,3 @@
 # Cooked Fish
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/cooked_fish.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/cooked_fish.json":::

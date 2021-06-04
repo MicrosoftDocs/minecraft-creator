@@ -1,3 +1,3 @@
 # Beetroot
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/beetroot.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/beetroot.json":::

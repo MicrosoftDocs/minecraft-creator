@@ -1,3 +1,3 @@
 # Suspicious Stew
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/suspicious_stew.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/suspicious_stew.json":::

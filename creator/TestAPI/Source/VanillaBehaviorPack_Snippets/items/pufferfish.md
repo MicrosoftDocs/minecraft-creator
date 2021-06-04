@@ -1,3 +1,3 @@
 # Pufferfish
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/pufferfish.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/pufferfish.json":::

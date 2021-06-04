@@ -28,6 +28,6 @@
       items:
       - name: GameTest API 
         href: ScriptAPI/TOC.yml
-      - name: Vanilla API
+      - name: Behavior Pack Definitions
         href: TestAPI/Content/EntityAPI/TOC.yml
   

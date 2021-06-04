@@ -1,3 +1,3 @@
 # Melon
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/melon.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/melon.json":::

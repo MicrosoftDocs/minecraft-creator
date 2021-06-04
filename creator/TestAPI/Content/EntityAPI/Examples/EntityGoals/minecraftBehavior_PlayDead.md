@@ -1,17 +1,15 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:behavior.ramAttack
+title: minecraft:behavior.play_dead
 ms.prod: gaming
 ---
 
-# Name of Behavior
+# minecraft:behavior.play_dead
 
 This component allows the mob to play dead when attacked by other entities. When playing dead, other entities will not target this mob.
 
 ## Parameters
-
-
 
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
@@ -27,7 +25,7 @@ This component allows the mob to play dead when attacked by other entities. When
 ## Example
 
 ```json
-"minecraft:behavior.jumpToBlock":{
+"minecraft:behavior.play_dead":{
     "playDead": true,
     "duration": 10,
     "randomStartChance": ,
@@ -41,10 +39,10 @@ This component allows the mob to play dead when attacked by other entities. When
 
 ## Vanilla Mob examples
 
-### Goat
+### axolot
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/axolotl.json"
 
-## Vanilla Mobs using `ramAttack`
+## Vanilla Mobs using `minecraft:beahavior.play_dead`
 
 - [axolotl](Source/VanilliaBehaviorPack_Snippets/entities/axolotl.json)

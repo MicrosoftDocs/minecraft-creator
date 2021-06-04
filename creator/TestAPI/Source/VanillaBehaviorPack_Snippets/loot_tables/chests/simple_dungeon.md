@@ -1,3 +1,3 @@
 # Simple Dungeons
 
-:::code language="json" source="../../../VanilliaBehaviorPack/loot_tables/chests/simple_dungeon.json":::
+:::code language="json" source="../../../VanillaBehaviorPack/loot_tables/chests/simple_dungeon.json":::

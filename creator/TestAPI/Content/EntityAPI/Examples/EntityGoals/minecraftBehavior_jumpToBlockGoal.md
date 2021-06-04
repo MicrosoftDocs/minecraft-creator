@@ -1,17 +1,15 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:behavior.jumpToBlock
+title: minecraft:behavior.jump_to_block
 ms.prod: gaming
 ---
 
-# Name of Behavior
+# minecraft:behavior.jump_to_block
 
-This component allows the mob to search around for a block to jump to and then jump to that block. 
+This component allows the mob to search around for a block to jump to and then jump to that block.
 
 ## Parameters
-
-
 
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
@@ -24,8 +22,6 @@ This component allows the mob to search around for a block to jump to and then j
 | coolDownTimeRange | | Integer | The minimum and maximum cooldown time-range in seconds between each attempted jump.
 
 ## Example
-
-This is a custom example written by the developers/Technical writers of a fleshed out behavior using as many of the arguments available.
 
 ```json
 "minecraft:behavior.jumpToBlock":{
@@ -45,8 +41,6 @@ This is a custom example written by the developers/Technical writers of a fleshe
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/goat.json"
 
-## Vanilla Mobs using `jumpToBlock`
-
-A list to the vanilla behavior pack snippets that currently use the behavior. If more than 25 behaviors are used, feel free to split the list into 2 or 3 columns.
+## Vanilla Mobs using `minecraft:behavior.jump_to_block`
 
 - [goat](Source/VanilliaBehaviorPack_Snippets/entities/goat.json)

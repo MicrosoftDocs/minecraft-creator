@@ -1,3 +1,3 @@
 # Chorus Fruit
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/chorus_fruit.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/chorus_fruit.json":::

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:behavior.nearest_attackable_target Component
 
-Allows the mob to check for and pursue the nearest valid target.
+Allows an entity to attack the closest target within a given subset of specific target types.
 
 > [!NOTE]
 > This behavior is a requirement for the following behaviors:
@@ -57,7 +57,7 @@ Allows the mob to check for and pursue the nearest valid target.
 
 ### Zombie
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/zombie.json" range="435-472":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="435-472":::
 
 ### Vanilla mobs using `nearest_attackable_target`
 
@@ -70,12 +70,12 @@ Allows the mob to check for and pursue the nearest valid target.
 - [elder guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
 - [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
 - [endermite](../../../../Source/VanillaBehaviorPack_Snippets/entities/endermite.md)
-- [evocation illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
+- [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
 - [ghast](../../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)
 - [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [husk](../../../../Source/VanilliaBehaviorPack/entities/husk.md)
-- [iron golem](../../../../Source/VanilliaBehaviorPack/entities/iron_golem.md)
+- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
+- [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
 - [magma cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
 - [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
@@ -100,5 +100,5 @@ Allows the mob to check for and pursue the nearest valid target.
 - [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
 - [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)
 - [zombie pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.md)
-- [zombie villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
+- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
 - [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)

@@ -1,3 +1,3 @@
 # Pumpkin Seeds
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/pumpkin_seeds.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/pumpkin_seeds.json":::
