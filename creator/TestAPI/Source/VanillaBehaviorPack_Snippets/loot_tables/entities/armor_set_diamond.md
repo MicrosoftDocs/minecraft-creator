@@ -1,3 +1,3 @@
 # Armor Set Diamond
 
-:::code language="json" source="../../../VanilliaBehaviorPack/loot_tables/entities/armor_set_diamond.json":::
+:::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/armor_set_diamond.json":::

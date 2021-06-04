@@ -1,3 +1,3 @@
 # Junk
 
-:::code language="json" source="../../../../VanilliaBehaviorPack/loot_tables/gameplay/fishing/junk.json":::
+:::code language="json" source="../../../../VanillaBehaviorPack/loot_tables/gameplay/fishing/junk.json":::

@@ -1,275 +1,280 @@
-- name: EnityAPI
+- name: Entity Reference Documentation
   items:
-    - name: Entity API landing page
-      href: index.yml
-    - name: Getting Started with Entities
+    - name: Resource Pack
       items:
-      - name: Entity Documentation Introduction
+      - name: Client Entity JSON
         href: Examples/ClientEntityDocumenation/ClientEntityDocumentationIntroduction.md
-      - name: Data Driven Spawning
-        href: Examples/ClientEntityDocumenation/DataDrivenSpawning.md
-    - name: Filters
-      items:
-      - name: clock_time 
-        href: Examples/Filters/clock_time.md
-      - name: distance_to_nearest_player
-        href: Examples/Filters/distance_to_nearest_player.md
-      - name: has_ability
-        href: Examples/Filters/has_ability.md
-      - name: has_biome_tag
-        href: Examples/Filters/has_biome_tag.md
-      - name: has_component
-        href: Examples/Filters/has_component.md
-      - name: has_container_open
-        href: Examples/Filters/has_container_open.md
-      - name: has_damage
-        href: Examples/Filters/has_damage.md
-      - name: has_equipment
-        href: Examples/Filters/has_equipment.md
-      - name: has_mob_effect
-        href: Examples/Filters/has_mob_effect.md
-      - name: has_ranged_weapon
-        href: Examples/Filters/has_ranged_weapon.md
-      - name: has_tag
-        href: Examples/Filters/has_tag.md
-      - name: has_target
-        href: Examples/Filters/has_target.md
-      - name: has_trade_supply
-        href: Examples/Filters/has_trade_supply.md
-      - name: hourly_clock_time
-        href: Examples/Filters/hourly_clock_time.md
-      - name: in_caravan
-        href: Examples/Filters/in_caravan.md
-      - name: in_clouds
-        href: Examples/Filters/in_clouds.md
-      - name: in_lava
-        href: Examples/Filters/in_lava.md
-      - name: in_nether
-        href: Examples/Filters/in_nether.md
-      - name: in_water_or_rain
-        href: Examples/Filters/in_water_or_rain.md
-      - name: in_water
-        href: Examples/Filters/in_water.md
-      - name: inactivity_timer
-        href: Examples/Filters/inactivity_timer.md
-      - name: is_altitude
-        href: Examples/Filters/is_altitude.md
-      - name: is_avoiding_mobs
-        href: Examples/Filters/is_avoiding_mobs.md
-      - name: is_biome
-        href: Examples/Filters/is_biome.md
-      - name: is_block
-        href: Examples/Filters/is_block.md
-      - name: is_brightness
-        href: Examples/Filters/is_brightness.md
-      - name: is_climbing
-        href: Examples/Filters/is_climbing.md
-      - name: is_color
-        href: Examples/Filters/is_color.md
-      - name: is_daytime
-        href: Examples/Filters/is_daytime.md
-      - name: is_difficulty
-        href: Examples/Filters/is_difficulty.md
-      - name: is_family
-        href: Examples/Filters/is_family.md
-      - name: is_game_rule
-        href: Examples/Filters/is_game_rule.md
-      - name: is_humid
-        href: Examples/Filters/is_humid.md
-      - name: is_immobile
-        href: Examples/Filters/is_immobile.md
-      - name: is_in_village
-        href: Examples/Filters/is_in_village.md
-      - name: is_leashed
-        href: Examples/Filters/is_leashed.md
-      - name: is_leashed_to
-        href: Examples/Filters/is_leashed_to.md
-      - name: is_mark_variant
-        href: Examples/Filters/is_mark_variant.md
-      - name: is_moving
-        href: Examples/Filters/is_moving.md
-      - name: is_owner
-        href: Examples/Filters/is_owner.md
-      - name: is_persistent
-        href: Examples/Filters/is_persistent.md
-      - name: is_riding
-        href: Examples/Filters/is_riding.md
-      - name: is_skin_id
-        href: Examples/Filters/is_skin_id.md
-      - name: is_sleeping
-        href: Examples/Filters/is_sleeping.md
-      - name: is_sneaking
-        href: Examples/Filters/is_sneaking.md
-      - name: is_snow_covered
-        href: Examples/Filters/is_snow_covered.md
-      - name: is_target
-        href: Examples/Filters/is_target.md
-      - name: is_temperature_type
-        href: Examples/Filters/is_temperature_type.md
-      - name: is_temperature_value
-        href: Examples/Filters/is_temperature_value.md
-      - name: is_underground
-        href: Examples/Filters/is_underground.md
-      - name: is_underwater
-        href: Examples/Filters/is_underwater.md
-      - name: is_variant
-        href: Examples/Filters/is_variant.md
-      - name: is_visible
-        href: Examples/Filters/is_visible.md
-      - name: light_level
-        href: Examples/Filters/light_level.md
-      - name: moon_intensity
-        href: Examples/Filters/moon_intensity.md
-      - name: moon_phase
-        href: Examples/Filters/moon_phase.md
-      - name: on_ground
-        href: Examples/Filters/on_ground.md
-      - name: on_ladder
-        href: Examples/Filters/on_ladder.md
-      - name: random_chance
-        href: Examples/Filters/random_chance.md
-      - name: rider_count
-        href: Examples/Filters/rider_count.md
-      - name: surface_mob
-        href: Examples/Filters/surface_mob.md
-      - name: trusts
-        href: Examples/Filters/trusts.md
-      - name: weather_at_position
-        href: Examples/Filters/weather_at_position.md
-      - name: weather
-        href: Examples/Filters/weather.md
-    - name: AI Goals
-      items:
-      - name: minecraft:behavior.admire_item
-        href: Examples/EntityGoals/minecraftBehavior_admire_item.md
-      - name: minecraft:behavior.barter
-        href: Examples/EntityGoals/minecraftBehavior_barter.md
-      - name: minecraft:behavior.beg
-        href: Examples/EntityGoals/minecraftBehavior_beg.md
-      - name: minecraft:behavior.break_door
-        href: Examples/EntityGoals/minecraftBehavior_break_door.md
-      - name: minecraft:behavior.breed
-        href: Examples/EntityGoals/minecraftBehavior_breed.md
-      - name: minecraft:behavior.defend_trusted_target
-        href: Examples/EntityGoals/minecraftBehavior_defend_trusted_target.md
-      - name: minecraft:behavior.door_interact
-        href: Examples/EntityGoals/minecraftBehavior_door_interact.md
-      - name: minecraft:behavior.drink_potion
-        href: Examples/EntityGoals/minecraftBehavior_drink_potion.md
-      - name: minecraft:behavior.eat_carried_item
-        href: Examples/EntityGoals/minecraftBehavior_eat_carried_item.md
-      - name: minecraft:behavior.explore_outskirts
-        href: Examples/EntityGoals/minecraftBehavior_explore_outskirts.md
-      - name: minecraft:behavior.find_cover
-        href: Examples/EntityGoals/minecraftBehavior_find_cover.md
-      - name: minecraft:behavior.flee_sun
-        href: Examples/EntityGoals/minecraftBehavior_flee_sun.md
-      - name: minecraft:behavior.float
-        href: Examples/EntityGoals/minecraftBehavior_float.md
-      - name: minecraft:behavior.follow_caravan
-        href: Examples/EntityGoals/minecraftBehavior_follow_caravan.md
-      - name: minecraft:behavior.follow_mob
-        href: Examples/EntityGoals/minecraftBehavior_follow_mob.md
-      - name: minecraft:behavior.follow_owner
-        href: Examples/EntityGoals/minecraftBehavior_follow_owner.md
-      - name: minecraft:behavior.follow_parent
-        href: Examples/EntityGoals/minecraftBehavior_follow_parent.md
-      - name: minecraft:behavior.follow_target_captain
-        href: Examples/EntityGoals/minecraftBehavior_follow_target_captain.md
-      - name: minecraft:behavior.go_home
-        href: Examples/EntityGoals/minecraftBehavior_go_home.md
-      - name: minecraft:behavior.hide
-        href: Examples/EntityGoals/minecraftBehavior_hide.md
-      - name: minecraft:behavior.hold_ground
-        href: Examples/EntityGoals/minecraftBehavior_hold_ground.md
-      - name: minecraft:behavior.hurt_by_target
-        href: Examples/EntityGoals/minecraftBehavior_hurt_by_target.md
-      - name: minecraft:behavior.knockback_roar
-        href: Examples/EntityGoals/minecraftBehavior_knockback_roar.md
-      - name: minecraft:behavior.lay_down
-        href: Examples/EntityGoals/minecraftBehavior_lay_down.md
-      - name: minecraft:behavior.lay_egg
-        href: Examples/EntityGoals/minecraftBehavior_lay_egg.md
-      - name: minecraft:behavior.look_at_entity
-        href: Examples/EntityGoals/minecraftBehavior_look_at_entity.md
-      - name: minecraft:behavior.look_at_player
-        href: Examples/EntityGoals/minecraftBehavior_look_at_player.md
-      - name: minecraft:behavior.look_at_target
-        href: Examples/EntityGoals/minecraftBehavior_look_at_target.md
-      - name: minecraft:behavior.look_at_trading_player
-        href: Examples/EntityGoals/minecraftBehavior_look_at_trading_player.md
-      - name: minecraft:behavior.make_love
-        href: Examples/EntityGoals/minecraftBehavior_make_love.md
-      - name: minecraft:behavior.melee_attack
-        href: Examples/EntityGoals/minecraftBehavior_melee_attack.md
-      - name: minecraft:behavior.mount_pathing
-        href: Examples/EntityGoals/minecraftBehavior_mount_pathing.md
-      - name: minecraft:behavior.move_indoors
-        href: Examples/EntityGoals/minecraftBehavior_move_indoors.md
-      - name: minecraft:behavior.move_through_village
-        href: Examples/EntityGoals/minecraftBehavior_move_through_village.md
-      - name: minecraft:behavior.move_to_land
-        href: Examples/EntityGoals/minecraftBehavior_move_to_land.md
-      - name: minecraft:behavior.move_to_lava
-        href: Examples/EntityGoals/minecraftBehavior_move_to_lava.md
-      - name: minecraft:behavior.move_to_poi
-        href: Examples/EntityGoals/minecraftBehavior_move_to_poi.md
-      - name: minecraft:behavior.move_to_random_block
-        href: Examples/EntityGoals/minecraftBehavior_move_to_random_block.md
-      - name: minecraft:behavior.move_to_village
-        href: Examples/EntityGoals/minecraftBehavior_move_to_village.md
-      - name: minecraft:behavior.move_to_water
-        href: Examples/EntityGoals/minecraftBehavior_move_to_water.md
-      - name: minecraft:behavior.move_towards_target
-        href: Examples/EntityGoals/minecraftBehavior_move_towards_target.md
-      - name: minecraft:behavior.nearest_attackable_target
-        href: Examples/EntityGoals/minecraftBehavior_nearest_attackable_target.md
-      - name: minecraft:behavior.nearest_prioritized_attackable_target
-        href: Examples/EntityGoals/minecraftBehavior_nearest_prioritized_attackable_target.md
-      - name: minecraft:behavior.ocelot_sit_on_block
-        href: Examples/EntityGoals/minecraftBehavior_ocelot_sit_on_block.md
-      - name: minecraft:behavior.offer_flower
-        href: Examples/EntityGoals/minecraftBehavior_offer_flower.md
-      - name: minecraft:behavior.open_door
-        href: Examples/EntityGoals/minecraftBehavior_open_door.md
-      - name: minecraft:behavior.owner_hurt_by_target
-        href: Examples/EntityGoals/minecraftBehavior_owner_hurt_by_target.md
-      - name: minecraft:behavior.owner_hurt_target
-        href: Examples/EntityGoals/minecraftBehavior_owner_hurt_target.md
-      - name: minecraft:behavior.panic
-        href: Examples/EntityGoals/minecraftBehavior_panic.md
-      - name: minecraft:behavior.random_breach
-        href: Examples/EntityGoals/minecraftBehavior_random_breach.md
-      - name: minecraft:behavior.random_look_around_and_sit
-        href: Examples/EntityGoals/minecraftBehavior_random_look_around_and_sit.md
-      - name: minecraft:behavior.random_look_around
-        href: Examples/EntityGoals/minecraftBehavior_random_look_around.md
-      - name: minecraft:behavior.random_sitting
-        href: Examples/EntityGoals/minecraftBehavior_random_sitting.md
-      - name: minecraft:behavior.random_stroll
-        href: Examples/EntityGoals/minecraftBehavior_random_stroll.md
-      - name: minecraft:behavior.restrict_open_door
-        href: Examples/EntityGoals/minecraftBehavior_restrict_open_door.md
-      - name: minecraft:behavior.restrict_sun
-        href: Examples/EntityGoals/minecraftBehavior_restrict_sun.md
-      - name: minecraft:behavior.rise_to_liquid_level
-        href: Examples/EntityGoals/minecraftBehavior_rise_to_liquid_level.md
-      - name: minecraft:behavior.run_around_like_crazy
-        href: Examples/EntityGoals/minecraftBehavior_run_around_like_crazy.md
-      - name: minecraft:behavior.scared
-        href: Examples/EntityGoals/minecraftBehavior_scared.md
-      - name: minecraft:behavior.silverfish_merge_with_stone
-        href: Examples/EntityGoals/minecraftBehavior_silverfish_merge_with_stone.md
-      - name: minecraft:behavior.silverfish_wake_up_friends
-        href: Examples/EntityGoals/minecraftBehavior_silverfish_wake_up_friends.md
-      - name: minecraft:behavior.snacking
-        href: Examples/EntityGoals/minecraftBehavior_snacking.md
-      - name: minecraft:behavior.stay_while_sitting
-        href: Examples/EntityGoals/minecraftBehavior_stay_while_sitting.md
-      - name: minecraft:behavior.stomp_turtle_egg
-        href: Examples/EntityGoals/minecraftBehavior_stomp_turtle_egg.md
-      - name: minecraft:behavior.stroll_towards_village
-        href: Examples/EntityGoals/minecraftBehavior_stroll_towards_village.md
-      - name: minecraft:behavior.work
-        href: Examples/EntityGoals/minecraftBehavior_work.md
-
+    - name: Entity JSON
+      items:  
+      - name: Filters
+        items:
+         - name: clock_time 
+           href: Examples/Filters/clock_time.md
+         - name: distance_to_nearest_player
+           href: Examples/Filters/distance_to_nearest_player.md
+         - name: has_ability
+           href: Examples/Filters/has_ability.md
+         - name: has_biome_tag
+           href: Examples/Filters/has_biome_tag.md
+         - name: has_component
+           href: Examples/Filters/has_component.md
+         - name: has_container_open
+           href: Examples/Filters/has_container_open.md
+         - name: has_damage
+           href: Examples/Filters/has_damage.md
+         - name: has_equipment
+           href: Examples/Filters/has_equipment.md
+         - name: has_mob_effect
+           href: Examples/Filters/has_mob_effect.md
+         - name: has_ranged_weapon
+           href: Examples/Filters/has_ranged_weapon.md
+         - name: has_tag
+           href: Examples/Filters/has_tag.md
+         - name: has_target
+           href: Examples/Filters/has_target.md
+         - name: has_trade_supply
+           href: Examples/Filters/has_trade_supply.md
+         - name: hourly_clock_time
+           href: Examples/Filters/hourly_clock_time.md
+         - name: in_caravan
+           href: Examples/Filters/in_caravan.md
+         - name: in_clouds
+           href: Examples/Filters/in_clouds.md
+         - name: in_lava
+           href: Examples/Filters/in_lava.md
+         - name: in_nether
+           href: Examples/Filters/in_nether.md
+         - name: in_water_or_rain
+           href: Examples/Filters/in_water_or_rain.md
+         - name: in_water
+           href: Examples/Filters/in_water.md
+         - name: inactivity_timer
+           href: Examples/Filters/inactivity_timer.md
+         - name: is_altitude
+           href: Examples/Filters/is_altitude.md
+         - name: is_avoiding_mobs
+           href: Examples/Filters/is_avoiding_mobs.md
+         - name: is_biome
+           href: Examples/Filters/is_biome.md
+         - name: is_block
+           href: Examples/Filters/is_block.md
+         - name: is_brightness
+           href: Examples/Filters/is_brightness.md
+         - name: is_climbing
+           href: Examples/Filters/is_climbing.md
+         - name: is_color
+           href: Examples/Filters/is_color.md
+         - name: is_daytime
+           href: Examples/Filters/is_daytime.md
+         - name: is_difficulty
+           href: Examples/Filters/is_difficulty.md
+         - name: is_family
+           href: Examples/Filters/is_family.md
+         - name: is_game_rule
+           href: Examples/Filters/is_game_rule.md
+         - name: is_humid
+           href: Examples/Filters/is_humid.md
+         - name: is_immobile
+           href: Examples/Filters/is_immobile.md
+         - name: is_in_village
+           href: Examples/Filters/is_in_village.md
+         - name: is_leashed
+           href: Examples/Filters/is_leashed.md
+         - name: is_leashed_to
+           href: Examples/Filters/is_leashed_to.md
+         - name: is_mark_variant
+           href: Examples/Filters/is_mark_variant.md
+         - name: is_moving
+           href: Examples/Filters/is_moving.md
+         - name: is_owner
+           href: Examples/Filters/is_owner.md
+         - name: is_persistent
+           href: Examples/Filters/is_persistent.md
+         - name: is_riding
+           href: Examples/Filters/is_riding.md
+         - name: is_skin_id
+           href: Examples/Filters/is_skin_id.md
+         - name: is_sleeping
+           href: Examples/Filters/is_sleeping.md
+         - name: is_sneaking
+           href: Examples/Filters/is_sneaking.md
+         - name: is_snow_covered
+           href: Examples/Filters/is_snow_covered.md
+         - name: is_target
+           href: Examples/Filters/is_target.md
+         - name: is_temperature_type
+           href: Examples/Filters/is_temperature_type.md
+         - name: is_temperature_value
+           href: Examples/Filters/is_temperature_value.md
+         - name: is_underground
+           href: Examples/Filters/is_underground.md
+         - name: is_underwater
+           href: Examples/Filters/is_underwater.md
+         - name: is_variant
+           href: Examples/Filters/is_variant.md
+         - name: is_visible
+           href: Examples/Filters/is_visible.md
+         - name: light_level
+           href: Examples/Filters/light_level.md
+         - name: moon_intensity
+           href: Examples/Filters/moon_intensity.md
+         - name: moon_phase
+           href: Examples/Filters/moon_phase.md
+         - name: on_ground
+           href: Examples/Filters/on_ground.md
+         - name: on_ladder
+           href: Examples/Filters/on_ladder.md
+         - name: random_chance
+           href: Examples/Filters/random_chance.md
+         - name: rider_count
+           href: Examples/Filters/rider_count.md
+         - name: surface_mob
+           href: Examples/Filters/surface_mob.md
+         - name: trusts
+           href: Examples/Filters/trusts.md
+         - name: weather_at_position
+           href: Examples/Filters/weather_at_position.md
+         - name: weather
+           href: Examples/Filters/weather.md
+      - name: AI Goals
+        items:
+         - name: minecraft:behavior.admire_item
+           href: Examples/EntityGoals/minecraftBehavior_admire_item.md
+         - name: minecraft:behavior.barter
+           href: Examples/EntityGoals/minecraftBehavior_barter.md
+         - name: minecraft:behavior.beg
+           href: Examples/EntityGoals/minecraftBehavior_beg.md
+         - name: minecraft:behavior.break_door
+           href: Examples/EntityGoals/minecraftBehavior_break_door.md
+         - name: minecraft:behavior.breed
+           href: Examples/EntityGoals/minecraftBehavior_breed.md
+         - name: minecraft:behavior.defend_trusted_target
+           href: Examples/EntityGoals/minecraftBehavior_defend_trusted_target.md
+         - name: minecraft:behavior.door_interact
+           href: Examples/EntityGoals/minecraftBehavior_door_interact.md
+         - name: minecraft:behavior.drink_potion
+           href: Examples/EntityGoals/minecraftBehavior_drink_potion.md
+         - name: minecraft:behavior.eat_carried_item
+           href: Examples/EntityGoals/minecraftBehavior_eat_carried_item.md
+         - name: minecraft:behavior.explore_outskirts
+           href: Examples/EntityGoals/minecraftBehavior_explore_outskirts.md
+         - name: minecraft:behavior.find_cover
+           href: Examples/EntityGoals/minecraftBehavior_find_cover.md
+         - name: minecraft:behavior.flee_sun
+           href: Examples/EntityGoals/minecraftBehavior_flee_sun.md
+         - name: minecraft:behavior.float
+           href: Examples/EntityGoals/minecraftBehavior_float.md
+         - name: minecraft:behavior.follow_caravan
+           href: Examples/EntityGoals/minecraftBehavior_follow_caravan.md
+         - name: minecraft:behavior.follow_mob
+           href: Examples/EntityGoals/minecraftBehavior_follow_mob.md
+         - name: minecraft:behavior.follow_owner
+           href: Examples/EntityGoals/minecraftBehavior_follow_owner.md
+         - name: minecraft:behavior.follow_parent
+           href: Examples/EntityGoals/minecraftBehavior_follow_parent.md
+         - name: minecraft:behavior.follow_target_captain
+           href: Examples/EntityGoals/minecraftBehavior_follow_target_captain.md
+         - name: minecraft:behavior.go_home
+           href: Examples/EntityGoals/minecraftBehavior_go_home.md
+         - name: minecraft:behavior.hide
+           href: Examples/EntityGoals/minecraftBehavior_hide.md
+         - name: minecraft:behavior.hold_ground
+           href: Examples/EntityGoals/minecraftBehavior_hold_ground.md
+         - name: minecraft:behavior.hurt_by_target
+           href: Examples/EntityGoals/minecraftBehavior_hurt_by_target.md
+         - name: minecraft:behavior.knockback_roar
+           href: Examples/EntityGoals/minecraftBehavior_knockback_roar.md
+         - name: minecraft:behavior.lay_down
+           href: Examples/EntityGoals/minecraftBehavior_lay_down.md
+         - name: minecraft:behavior.lay_egg
+           href: Examples/EntityGoals/minecraftBehavior_lay_egg.md
+         - name: minecraft:behavior.look_at_entity
+           href: Examples/EntityGoals/minecraftBehavior_look_at_entity.md
+         - name: minecraft:behavior.look_at_player
+           href: Examples/EntityGoals/minecraftBehavior_look_at_player.md
+         - name: minecraft:behavior.look_at_target
+           href: Examples/EntityGoals/minecraftBehavior_look_at_target.md
+         - name: minecraft:behavior.look_at_trading_player
+           href: Examples/EntityGoals/minecraftBehavior_look_at_trading_player.md
+         - name: minecraft:behavior.make_love
+           href: Examples/EntityGoals/minecraftBehavior_make_love.md
+         - name: minecraft:behavior.melee_attack
+           href: Examples/EntityGoals/minecraftBehavior_melee_attack.md
+         - name: minecraft:behavior.mount_pathing
+           href: Examples/EntityGoals/minecraftBehavior_mount_pathing.md
+         - name: minecraft:behavior.move_indoors
+           href: Examples/EntityGoals/minecraftBehavior_move_indoors.md
+         - name: minecraft:behavior.move_through_village
+           href: Examples/EntityGoals/minecraftBehavior_move_through_village.md
+         - name: minecraft:behavior.move_to_land
+           href: Examples/EntityGoals/minecraftBehavior_move_to_land.md
+         - name: minecraft:behavior.move_to_lava
+           href: Examples/EntityGoals/minecraftBehavior_move_to_lava.md
+         - name: minecraft:behavior.move_to_poi
+           href: Examples/EntityGoals/minecraftBehavior_move_to_poi.md
+         - name: minecraft:behavior.move_to_random_block
+           href: Examples/EntityGoals/minecraftBehavior_move_to_random_block.md
+         - name: minecraft:behavior.move_to_village
+           href: Examples/EntityGoals/minecraftBehavior_move_to_village.md
+         - name: minecraft:behavior.move_to_water
+           href: Examples/EntityGoals/minecraftBehavior_move_to_water.md
+         - name: minecraft:behavior.move_towards_target
+           href: Examples/EntityGoals/minecraftBehavior_move_towards_target.md
+         - name: minecraft:behavior.nearest_attackable_target
+           href: Examples/EntityGoals/minecraftBehavior_nearest_attackable_target.md
+         - name: minecraft:behavior.nearest_prioritized_attackable_target
+           href: Examples/EntityGoals/minecraftBehavior_nearest_prioritized_attackable_target.md
+         - name: minecraft:behavior.ocelot_sit_on_block
+           href: Examples/EntityGoals/minecraftBehavior_ocelot_sit_on_block.md
+         - name: minecraft:behavior.offer_flower
+           href: Examples/EntityGoals/minecraftBehavior_offer_flower.md
+         - name: minecraft:behavior.open_door
+           href: Examples/EntityGoals/minecraftBehavior_open_door.md
+         - name: minecraft:behavior.owner_hurt_by_target
+           href: Examples/EntityGoals/minecraftBehavior_owner_hurt_by_target.md
+         - name: minecraft:behavior.owner_hurt_target
+           href: Examples/EntityGoals/minecraftBehavior_owner_hurt_target.md
+         - name: minecraft:behavior.panic
+           href: Examples/EntityGoals/minecraftBehavior_panic.md
+         - name: minecraft:behavior.random_breach
+           href: Examples/EntityGoals/minecraftBehavior_random_breach.md
+         - name: minecraft:behavior.random_look_around_and_sit
+           href: Examples/EntityGoals/minecraftBehavior_random_look_around_and_sit.md
+         - name: minecraft:behavior.random_look_around
+           href: Examples/EntityGoals/minecraftBehavior_random_look_around.md
+         - name: minecraft:behavior.random_sitting
+           href: Examples/EntityGoals/minecraftBehavior_random_sitting.md
+         - name: minecraft:behavior.random_stroll
+           href: Examples/EntityGoals/minecraftBehavior_random_stroll.md
+         - name: minecraft:behavior.restrict_open_door
+           href: Examples/EntityGoals/minecraftBehavior_restrict_open_door.md
+         - name: minecraft:behavior.restrict_sun
+           href: Examples/EntityGoals/minecraftBehavior_restrict_sun.md
+         - name: minecraft:behavior.rise_to_liquid_level
+           href: Examples/EntityGoals/minecraftBehavior_rise_to_liquid_level.md
+         - name: minecraft:behavior.run_around_like_crazy
+           href: Examples/EntityGoals/minecraftBehavior_run_around_like_crazy.md
+         - name: minecraft:behavior.scared
+           href: Examples/EntityGoals/minecraftBehavior_scared.md
+         - name: minecraft:behavior.silverfish_merge_with_stone
+           href: Examples/EntityGoals/minecraftBehavior_silverfish_merge_with_stone.md
+         - name: minecraft:behavior.silverfish_wake_up_friends
+           href: Examples/EntityGoals/minecraftBehavior_silverfish_wake_up_friends.md
+         - name: minecraft:behavior.snacking
+           href: Examples/EntityGoals/minecraftBehavior_snacking.md
+         - name: minecraft:behavior.stay_while_sitting
+           href: Examples/EntityGoals/minecraftBehavior_stay_while_sitting.md
+         - name: minecraft:behavior.stomp_turtle_egg
+           href: Examples/EntityGoals/minecraftBehavior_stomp_turtle_egg.md
+         - name: minecraft:behavior.stroll_towards_village
+           href: Examples/EntityGoals/minecraftBehavior_stroll_towards_village.md
+         - name: minecraft:behavior.work
+           href: Examples/EntityGoals/minecraftBehavior_work.md
+      - name: Attributes
+        items:
+         - name: minecraft:attack 
+           href: Examples/EntityAttributes/minecraftAttribute_attack.md
+         - name: minecraft:spell_effects
+           href: Examples/EntityAttributes/minecraftAttribute_spell_effects.md
+         - name: minecraft:strength
+           href: Examples/EntityAttributes/minecraftAttribute_strength.md

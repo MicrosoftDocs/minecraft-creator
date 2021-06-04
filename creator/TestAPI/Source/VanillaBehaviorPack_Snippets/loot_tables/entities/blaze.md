@@ -1,3 +1,3 @@
 # Blaze
 
-:::code language="json" source="../../../VanilliaBehaviorPack/loot_tables/entities/blaze.json":::
+:::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/blaze.json":::

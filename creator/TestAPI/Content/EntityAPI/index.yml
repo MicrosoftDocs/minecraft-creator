@@ -36,7 +36,7 @@ landingContent:
           - text: minecraft:behavior.nearest_attackable_target
             url: Examples/EntityGoals/minecraftBehavior_nearest_attackable_target.md
  # Card (optional)
-  - title: Componets
+  - title: Components
     linkLists:
       - linkListType: overview
         links:

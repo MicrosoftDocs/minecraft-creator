@@ -1,3 +1,3 @@
 # Dried Kelp
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/dried_kelp.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/dried_kelp.json":::

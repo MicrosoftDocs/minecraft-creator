@@ -1,3 +1,3 @@
 # Nether Wart
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/nether_wart.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/nether_wart.json":::

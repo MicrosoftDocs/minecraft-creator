@@ -1,3 +1,3 @@
 # Salmon Large
 
-:::code language="json" source="../../../VanilliaBehaviorPack/loot_tables/entities/salmon_large.json":::
+:::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/salmon_large.json":::

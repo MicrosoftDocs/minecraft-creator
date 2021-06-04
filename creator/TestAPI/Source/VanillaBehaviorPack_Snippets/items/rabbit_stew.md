@@ -1,3 +1,3 @@
 # Rabbit Stew
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/rabbit_stew.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/rabbit_stew.json":::

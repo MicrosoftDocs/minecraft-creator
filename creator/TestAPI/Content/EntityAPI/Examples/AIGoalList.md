@@ -103,4 +103,25 @@ Below are a list of all the available AI Goals within Minecraft:Bedrock Edition 
 |[minecraft:behavior.skeleton_horse_trap](EntityGoals/minecraftBehavior_skeleton_horse_trap.md)| |
 |[minecraft:behavior.sleep](EntityGoals/minecraftBehavior_sleep.md)| |
 |[minecraft:behavior.slime_attack](EntityGoals/minecraftBehavior_slime_attack.md)| |
-
+|[minecraft:behavior.snacking](EntityGoals/minecraftBehavior_snacking.md)| |
+|[minecraft:behavior.sneeze](EntityGoals/minecraftBehavior_sneeze.md)| |
+|[minecraft:behavior.squid_dive](EntityGoals/minecraftBehavior_squid_dive.md)| |
+|[minecraft:behavior.squid_flee](EntityGoals/minecraftBehavior_squid_flee.md)| |
+|[minecraft:behavior.squid_idle](EntityGoals/minecraftBehavior_squid_idle.md)| |
+|[minecraft:behavior.squid_move_away_from_ground](EntityGoals/minecraftBehavior_squid_move_away_from_ground.md)| |
+|[minecraft:behavior.squid_out_of_water](EntityGoals/minecraftBehavior_squid_out_of_water.md)| |
+|[minecraft:behavior.stalk_and_pounce_on_target](EntityGoals/minecraftBehavior_stalk_and_pounce_on_target.md)| |
+|[minecraft:behavior.stomp_turtle_egg](EntityGoals/minecraftBehavior_stomp_turtle_egg.md)| |
+|[minecraft:behavior.stay_while_sitting](EntityGoals/minecraftBehavior_stay_while_sitting.md)| |
+|[minecraft:behavior.stroll_towards_village](EntityGoals/minecraftBehavior_stroll_towards_village.md)| |
+|[minecraft:behavior.summon_entity](EntityGoals/minecraftBehavior_summon_entity.md)| |
+|[minecraft:behavior.swell](EntityGoals/minecraftBehavior_swell.md)| |
+|[minecraft:behavior.take_flower](EntityGoals/minecraftBehavior_take_flower.md)| |
+|[minecraft:behavior.tempt](EntityGoals/minecraftBehavior_tempt.md)| |
+|[minecraft:behavior.trade_interest](EntityGoals/minecraftBehavior_trade_interest.md)| |
+|[minecraft:behavior.trade_with_player](EntityGoals/minecraftBehavior_trade_with_player.md)| |
+|[minecraft:behavior.vex_copy_owner_target](EntityGoals/minecraftBehavior_vex_copy_owner_target.md)| |
+|[minecraft:behavior.vex_random_move](EntityGoals/minecraftBehavior_vex_random_move.md)| |
+|[minecraft:behavior.wither_random_attack_pos_goal](EntityGoals/minecraftBehavior_wither_random_attack_pos_goal.md)| |
+|[minecraft:behavior.wither_target_highest_damage](EntityGoals/minecraftBehavior_wither_target_highest_damage.md)| |
+|[minecraft:behavior.work](EntityGoals/minecraftBehavior_work.md)| |

@@ -1,3 +1,3 @@
 # Porkchop
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/porkchop.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/porkchop.json":::

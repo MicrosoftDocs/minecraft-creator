@@ -1,3 +1,3 @@
 # Bread
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/bread.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/bread.json":::

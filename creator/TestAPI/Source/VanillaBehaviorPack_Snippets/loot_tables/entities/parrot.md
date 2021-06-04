@@ -1,3 +1,3 @@
 # Parrot
 
-:::code language="json" source="../../../VanilliaBehaviorPack/loot_tables/entities/parrot.json":::
+:::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/parrot.json":::

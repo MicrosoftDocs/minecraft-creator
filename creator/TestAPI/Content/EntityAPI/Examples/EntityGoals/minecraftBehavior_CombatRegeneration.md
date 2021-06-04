@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:behavior.ramAttack
+title: minecraft:behavior.combat_regeneration
 ms.prod: gaming
 ---
 
-# Name of Behavior
+# minecraft:behavior.combat_regeneration
 
 This component gives Regeneration I and removes Mining Fatigue from the mob that kills the Actor's attack target.
 
@@ -20,7 +20,7 @@ This component gives Regeneration I and removes Mining Fatigue from the mob that
 ## Example
 
 ```json
-"minecraft:behavior.CombatRegeneration":{
+"minecraft:behavior.combat_regeneration":{
     "regeneration_duration": 7,
     "apply_to_self": true,
     "apply_to_family": false,
@@ -29,10 +29,10 @@ This component gives Regeneration I and removes Mining Fatigue from the mob that
 
 ## Vanilla Mob examples
 
-### Goat
+### axolot
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/axolotl.json"
 
-## Vanilla Mobs using `ramAttack`
+## Vanilla Mobs using `combat_regeneration`
 
 - [axolotl](Source/VanilliaBehaviorPack_Snippets/entities/axolotl.json)

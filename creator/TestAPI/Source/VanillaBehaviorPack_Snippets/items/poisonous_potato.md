@@ -1,3 +1,3 @@
 # Poisonous Potato
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/poisonous_potato.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/poisonous_potato.json":::

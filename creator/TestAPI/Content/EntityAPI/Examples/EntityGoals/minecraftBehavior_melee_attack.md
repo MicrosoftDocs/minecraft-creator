@@ -46,11 +46,11 @@ This component allows entities to make close combat melee attacks.
 
 ### Zombie
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/zombie.json" range="401-403":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="401-403":::
 
 ### Cave Spider
 
-:::code language="json" source="../../../../Source/VanilliaBehaviorPack/entities/cave_spider.json" range="98-103":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/cave_spider.json" range="98-103":::
 
 ### Vanilla mobs using `melee_attack`
 
@@ -65,7 +65,7 @@ This component allows entities to make close combat melee attacks.
 - [fox](../../../../source/vanillabehaviorpack_snippets/entities/fox.md)
 - [hoglin](../../../../source/vanillabehaviorpack_snippets/entities/hoglin.md)
 - [husk](../../../../source/vanillabehaviorpack_snippets/entities/husk.md)
-- [iron golem](../../../../source/vanillabehaviorpack_snippets/entities/iron_golem.md)
+- [iron_golem](../../../../source/vanillabehaviorpack_snippets/entities/iron_golem.md)
 - [panda](../../../../source/vanillabehaviorpack_snippets/entities/panda.md)
 - [piglin brute](../../../../source/vanillabehaviorpack_snippets/entities/piglin_brute.md)
 - [piglin](../../../../source/vanillabehaviorpack_snippets/entities/piglin.md)
@@ -79,5 +79,5 @@ This component allows entities to make close combat melee attacks.
 - [wolf](../../../../source/vanillabehaviorpack_snippets/entities/wolf.md)
 - [zoglin](../../../../source/vanillabehaviorpack_snippets/entities/zoglin.md)
 - [zombie pigman](../../../../source/vanillabehaviorpack_snippets/entities/zombie_pigman.md)
-- [zombie villager](../../../../source/vanillabehaviorpack_snippets/entities/zombie_villager.md)
+- [zombie_villager](../../../../source/vanillabehaviorpack_snippets/entities/zombie_villager.md)
 - [zombie](../../../../source/vanillabehaviorpack_snippets/entities/zombie.md)

@@ -1,3 +1,3 @@
 # Cooked Porkchop
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/cooked_porkchop.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/cooked_porkchop.json":::

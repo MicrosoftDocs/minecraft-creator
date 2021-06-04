@@ -1,3 +1,3 @@
 # Golden Apple
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/golden_apple.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/golden_apple.json":::

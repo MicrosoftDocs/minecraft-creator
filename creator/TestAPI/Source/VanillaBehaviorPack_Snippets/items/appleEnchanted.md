@@ -1,3 +1,3 @@
 # Apple Enchanted
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/appleEnchanted.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/appleEnchanted.json":::

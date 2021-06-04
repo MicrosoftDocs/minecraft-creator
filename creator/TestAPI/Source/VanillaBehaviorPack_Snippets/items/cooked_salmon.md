@@ -1,3 +1,3 @@
 # Cooked Salmon
 
-:::code language="json" source="../../VanilliaBehaviorPack/items/cooked_salmon.json":::
+:::code language="json" source="../../VanillaBehaviorPack/items/cooked_salmon.json":::
