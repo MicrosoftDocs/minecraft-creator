@@ -64,7 +64,7 @@ A list to the vanilla behavior pack snippets that currently use the behavior. If
 - [guardian](Source/VanillaBehaviorPack_Snippets/entities/guardian.json)
 - [hoglin](Source/VanillaBehaviorPack_Snippets/entities/hoglin.json)
 - [husk](Source/VanillaBehaviorPack/entities/husk.json)
-- [iron golem](Source/VanillaBehaviorPack/entities/iron_golem.json)
+- [iron_golem](Source/VanillaBehaviorPack/entities/iron_golem.json)
 - [llama](Source/VanillaBehaviorPack_Snippets/entities/llama.json)
 - [magma cube](Source/VanillaBehaviorPack_Snippets/entities/magma_cube.json)
 - [ocelot](Source/VanillaBehaviorPack_Snippets/entities/ocelot.json)

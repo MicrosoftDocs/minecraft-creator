@@ -40,7 +40,7 @@ ms.prod: gaming
 
 ## Vanilla entities using `minecraft:behavior.find_mount`
 
-- [husk](../../../../Source/VanillaBehaviorPack/entities/husk.md)
+- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
 - [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)
 - [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
 - [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)

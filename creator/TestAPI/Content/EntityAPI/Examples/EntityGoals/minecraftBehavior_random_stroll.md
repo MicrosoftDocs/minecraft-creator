@@ -1,131 +1,87 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.random_look_around
+title: minecraft:behavior.random_stroll
 ms.prod: gaming
 ---
 
-# minecraft:behavior.random_look_around
+# minecraft:behavior.random_stroll
 
-`minecraft:behavior.random_look_around` allows an entity to choose a random direction to look in for a random duration within a range.
+`minecraft:behavior.random_stroll` allows an entity to choose a random direction to walk towards.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:---------:|:---------:|:---------:|:---------:|
-|look_time| [2, 4]| Range [a, b]|  The range of time in seconds the mob will stay looking in a random direction before looking elsewhere |
+|interval| 120| Integer|  A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal |
+|speed_multiplier| 1.0| Decimal|  Movement speed multiplier of the mob when using this AI Goal |
+|xz_dist| 10| Integer|  Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1 |
+|y_dist| 7| Integer|  Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1 |
 
 ## Example
 
 ```json
-"minecraft:behavior.random_look_around":{
+"minecraft:behavior.random_stroll":{
     "priority": 2,
-    "look_time": [1,5]
+    "interval": 50,
+    "speed_multiplier": 1.0,
+    "xy_dist": 10,
+    "y_dist": 7
 }
 ```
 
 ## Vanilla entities examples
 
-### blaze
+### cat
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/blaze.json" range="134-136":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/cat.json" range="382-385":::
 
-## Vanilla entities using `minecraft:behavior.random_look_around`
+## Vanilla entities using `minecraft:behavior.random_stroll`
 
-- [area_effect_cloud](../../../../Source/VanillaBehaviorPack_Snippets/entities/area_effect_cloud.md)
-- [armor_stand](../../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)
-- [arrow](../../../../Source/VanillaBehaviorPack_Snippets/entities/arrow.md)
-- [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
-- [boat](../../../../Source/VanillaBehaviorPack_Snippets/entities/boat.md)
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
 - [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
-- [chest_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/chest_minecart.md)
 - [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
-- [command_block_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/command_block_minecart.md)
 - [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
 - [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
 - [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
 - [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [dragon_fireball](../../../../Source/VanillaBehaviorPack_Snippets/entities/dragon_fireball.md)
 - [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [egg](../../../../Source/VanillaBehaviorPack_Snippets/entities/egg.md)
-- [elder guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
-- [ender_crystal](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_crystal.md)
-- [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)
-- [ender_pearl](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_pearl.md)
 - [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
 - [endermite](../../../../Source/VanillaBehaviorPack_Snippets/entities/endermite.md)
 - [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
-- [eye_of_ender_signal](../../../../Source/VanillaBehaviorPack_Snippets/entities/eye_of_ender_signal.md)
-- [fireball](../../../../Source/VanillaBehaviorPack_Snippets/entities/fireball.md)
-- [fireworks_rocket](../../../../Source/VanillaBehaviorPack_Snippets/entities/fireworks_rocket.md)
-- [fish](../../../../Source/VanillaBehaviorPack_Snippets/entities/fish.md)
-- [fishing_hook](../../../../Source/VanillaBehaviorPack_Snippets/entities/fishing_hook.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [ghast](../../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)
-- [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [hopper_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/hopper_minecart.md)
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
 - [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
-- [iron golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
-- [lightning_bold](../../../../Source/VanillaBehaviorPack_Snippets/entities/lightning_bold.md)
-- [llama_spit](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama_spit.md)
+- [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [magma cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
-- [minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/minecart.md)
 - [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
 - [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [npc](../../../../Source/VanillaBehaviorPack_Snippets/entities/npc.md)
 - [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
 - [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)
-- [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)
 - [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
 - [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
 - [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
 - [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
-- [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
 - [polar bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
-- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
 - [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
 - [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
-- [salmon](../../../../Source/VanillaBehaviorPack_Snippets/entities/salmon.md)
-- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
-- [shulker_bullet](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker_bullet.md)
-- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
-- [silverfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/silverfish.md)
+- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md))
 - [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
-- [slime](../../../../Source/VanillaBehaviorPack_Snippets/entities/slime.md)
-- [small_fireball](../../../../Source/VanillaBehaviorPack_Snippets/entities/small_fireball.md)
+- [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)
 - [snow golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
-- [snowball](../../../../Source/VanillaBehaviorPack_Snippets/entities/snowball.md)
 - [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
-- [splash_potion](../../../../Source/VanillaBehaviorPack_Snippets/entities/splash_potion.md)
-- [squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/squid.md)
 - [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
 - [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
-- [thrown_trident](../../../../Source/VanillaBehaviorPack_Snippets/entities/thrown_trident.md)
-- [tnt_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/tnt_minecart.md)
-- [tnt](../../../../Source/VanillaBehaviorPack_Snippets/entities/tnt.md)
-- [tripod_camera](../../../../Source/VanillaBehaviorPack_Snippets/entities/tripod_camera.md)
-- [tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/tropicalfish.md)
 - [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
-- [vex](../../../../Source/VanillaBehaviorPack_Snippets/entities/vex.md)
 - [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
 - [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
 - [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
 - [witch](../../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)
 - [wither skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
-- [wither_skull_dangerous](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skull_dangerous.md)
-- [wither_skull](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skull.md)
 - [wither](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither.md)
 - [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
-- [xp_bottle](../../../../Source/VanillaBehaviorPack_Snippets/entities/xp_bottle.md)
-- [xp_orb](../../../../Source/VanillaBehaviorPack_Snippets/entities/xp_orb.md)
 - [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)
 - [zombie_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_horse.md)
 - [zombie pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.md)

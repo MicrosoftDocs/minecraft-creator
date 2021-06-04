@@ -121,7 +121,7 @@ A list to the vanilla Filter pack snippets that currently use the Filter. If mor
 - [hopper_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/hopper_minecart.md)
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
 - [husk](../../../../Source/VanillaFilterPack/entities/husk.md)
-- [iron golem](../../../../Source/VanillaFilterPack/entities/iron_golem.md)
+- [iron_golem](../../../../Source/VanillaFilterPack/entities/iron_golem.md)
 - [lightning_bold](../../../../Source/VanillaBehaviorPack_Snippets/entities/lightning_bold.md)
 - [llama_spit](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama_spit.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)

@@ -45,7 +45,7 @@ ms.prod: gaming
 
 - [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [husk](../../../../Source/VanillaBehaviorPack/entities/husk.md)
+- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
 - [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
 - [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
 - [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)

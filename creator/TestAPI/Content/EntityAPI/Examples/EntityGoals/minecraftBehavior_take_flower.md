@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:behavior.take_flower
 
-`minecraft:behavior.take_flower` allows an entity to receive flowers when presented from the `iron golem`.
+`minecraft:behavior.take_flower` allows an entity to receive flowers when presented from the `iron_golem`.
 
 > [!NOTE]
 > This behavior can only be used by `villager` entity types.

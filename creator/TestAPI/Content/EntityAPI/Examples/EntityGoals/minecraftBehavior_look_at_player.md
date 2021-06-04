@@ -62,7 +62,7 @@ ms.prod: gaming
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
 - [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
-- [iron golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
+- [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
 - [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
 - [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
