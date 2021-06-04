@@ -1,3 +1,3 @@
-# blaze - spawn rule
+# blaze spawn_rule
 
-:::code language="json" source="../../VanillaBehaviorPack/spawn_rules/blaze.json":::
+}:::code language="json" source="../../VanillaBehaviorPack/spawn_rules/blaze.json":::
