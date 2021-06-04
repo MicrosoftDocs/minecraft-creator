@@ -1,20 +1,20 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_visibler
+title: is_visible
 ms.prod: gaming
 ---
 
-# is_visibler
+# is_visible
 
 Returns true if the subject entity is visible.
 
 ## Parameters
 
 > [!Note]
-> `is_visibler` does **not** require any parameters to work properly. It can be used as a standalone filter.
+> `is_visible` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
-> `is_visibler` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
+> `is_visible` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
 ### subject
 
@@ -54,13 +54,13 @@ Returns true if the subject entity is visible.
 ### Full
 
 ```json
-{ "test": "is_visibler", "subject": "self", "operator": "equals", "value": "true"}
+{ "test": "is_visible", "subject": "self", "operator": "equals", "value": "true"}
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "is_visibler" }
+{ "test": "is_visible" }
 ```
 
 ## Vanilla entities examples
@@ -69,6 +69,6 @@ Returns true if the subject entity is visible.
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wandering_trader.json" range="170-218":::
 
-## Vanilla entities using `is_visibler`
+## Vanilla entities using `is_visible`
 
 - [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)

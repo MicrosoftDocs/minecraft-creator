@@ -17,7 +17,7 @@ Tests whether a named game rule is active.
 
 ### List of Game Rules
 
-Below are a list of game rules that can be used for the `value` string.
+Below is a list of game rules that can be used for the `value` string.
 
 >[!Note]
 >`is_game_rule` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.

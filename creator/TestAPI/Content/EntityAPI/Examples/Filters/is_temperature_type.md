@@ -17,7 +17,7 @@ Tests whether the current temperature is a given type.
 
 ### List of temperature types
 
-Below are a list of temperature types that can be used for the `value` string.
+Below is a list of temperature types that can be used for the `value` string.
 
 Options|
 |:-----------|

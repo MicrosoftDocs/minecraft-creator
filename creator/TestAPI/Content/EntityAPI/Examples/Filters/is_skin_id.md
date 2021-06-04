@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # is_skin_id
 
-Returns true if the subject entity is the skin id number provided.
+Returns true if the subject entity uses the skin id number provided.
 
 ## Parameters
 
