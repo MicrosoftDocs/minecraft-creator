@@ -75,7 +75,7 @@ ms.prod: gaming
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
 - [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
 - [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
-- [lightning_bold](../../../../Source/VanillaBehaviorPack_Snippets/entities/lightning_bold.md)
+- [lightning_bolt](../../../../Source/VanillaBehaviorPack_Snippets/entities/lightning_bolt.md)
 - [llama_spit](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama_spit.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
 - [magma cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
