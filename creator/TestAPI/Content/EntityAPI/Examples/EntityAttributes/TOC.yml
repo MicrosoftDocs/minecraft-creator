@@ -1,0 +1,6 @@
+ - name: minecraft:attack 
+   href: minecraftAttribute_attack.md
+ - name: minecraft:spell_effects
+   href: minecraftAttribute_spell_effects.md
+ - name: minecraft:strength
+   href: minecraftAttribute_strength.md
