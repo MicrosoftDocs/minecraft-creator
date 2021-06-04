@@ -7,11 +7,11 @@ ms.prod: gaming
 
 # Introduction to the Caves & Cliffs Entities
 
-The Caves & Cliffs update brings three brand new entities to Minecraft: the glow squid, the goat, and the axolotl. These new entities have some fun new behaviors that you can tweak and use to create even more customized Minecraft experiences.
+The Caves & Cliffs update brings three brand-new entities to Minecraft: the glow squid, the goat, and the axolotl. These new entities have some fun new behaviors that you can tweak and use to create even more customized Minecraft experiences.
 
 ## Glow Squid
 
-The glow squid is identical to the [squid](../Source/VanillaBehaviorPack/entities/axolotl.json) in its behavior, but, like its name implies, this new mob has a glowing texture. The glow squid also drops glow ink that you can use to create glowing signs!
+The glow squid is identical to the [squid](../Source/VanillaBehaviorPack/entities/axolotl.json) in its behavior, but like its name implies, this new mob has a glowing texture. The glow squid also drops glow ink that you can use to create glowing signs!
 
 ## Goat
 
@@ -21,7 +21,7 @@ The goat is a mischievous mob that can be found in the mountain biomes. While ha
 - How fast the goat will jump
 - The cooldown timer between jumps
 
-When players or other mobs get near the goat, it will find a random target and, if it has a direct path, it will perform a ram attack. Be careful, because the goat will knock its targets back depending on how its ramming distance and speed! You can customize:
+When players or other mobs get near the goat, it will find a random target and if it has a direct path, it will perform a ram attack. Be careful because the goat will knock its targets back depending on how its ramming distance and speed! You can customize:
 
 - How far away the goat will target other entities
 - The force of the knockback from a successful ram attack
