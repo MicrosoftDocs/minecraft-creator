@@ -33,4 +33,4 @@ ms.prod: gaming
 
 ## Vanilla entities using `minecraft:strength`
 
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.json)
+- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
