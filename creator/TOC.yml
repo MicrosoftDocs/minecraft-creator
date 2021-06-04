@@ -28,6 +28,17 @@
       items:
       - name: GameTest API 
         href: ScriptAPI/TOC.yml
-      - name: Behavior Pack Definitions
-        href: TestAPI/Content/EntityAPI/TOC.yml
+      - name: Behavior Pack 
+        items:
+        - name: Entity JSON
+          items:
+          - name: Components
+            href: 
+          - name: AI Goals
+            href: TestAPI/Content/EntityAPI/Examples/EntityGoals/TOC.yml
+          - name: Attributes
+            href: TestAPI/Content/EntityAPI/Examples/EntityAttributes/TOC.yml
+      - name: Resource Pack
+        href: TestAPI/Content/EntityAPI/
+
   
