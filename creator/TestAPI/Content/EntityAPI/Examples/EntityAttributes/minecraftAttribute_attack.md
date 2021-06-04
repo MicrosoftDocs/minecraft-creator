@@ -1,78 +1,84 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.hurt_by_target
+title: minecraft:attack
 ms.prod: gaming
 ---
 
-# minecraft:behavior.hurt_by_target
+# minecraft:attack
 
-`minecraft:behavior.hurt_by_target` allows an entity to react when hit by set target.
+`minecraft:attack` allows an entity to define an entity's melee attack and any additional effects on it's attack.
+
+>[!IMPORTANT]
+> `minecraft:attack` is *required* for an entity to attack another entity.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:---------:|:---------:|:---------:|:---------:|
-|alert_same_type| false| Boolean| If true, nearby mobs of the same type will be alerted about the damage |
-|[entity_types](../Definitions/NestedTables/entity_types.md)|*not set* | JSON Object| List of entity types that this mob can target if they hurt their owner|
-|hurt_owner| false| Boolean|  If true, the mob will hurt its owner and other mobs with the same owner as itself |
+| damage|*not set* | Range [a, b]| Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it |
+|effect_duration| 0.0| Decimal|  Duration in seconds of the status ailment applied to the damaged entity |
+|effect_name|*not set* | String|  Identifier of the status ailment to apply to an entity attacked by this entity's melee attack |
 
 ## Example
 
 ```json
-"minecraft:behavior.hurt_by_target":{
-    "priority": 1,
-    "alert_same_type":true,
-    "hurt_owner": false,
-        "entity_types": {
-            "filters":{
-              "test": "is_family", "subject": "other", "value": "player"
-            },
-            "max_dist":32
-          }
+"minecraft:attack":{
+    "damage": 2,
+    "effect_duration": 10.0,
+    "effect_name": "poison"
 }
 ```
 
 ## Vanilla entities examples
 
-### piglin
+### zombie
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="476-478":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="167-169":::
 
-### iron_golem
+### wither_skeleton
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/iron_golem.json" range="306-311":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither_skeleton.json" range="32-36":::
 
-## Vanilla entities using `minecraft:behavior.hurt_by_target`
+## Vanilla entities using `minecraft:attack`
 
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
+- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
 - [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
 - [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
 - [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
 - [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
+- [elder guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
+- [ender_crystal](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_crystal.md)
+- [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)
 - [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
-- [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
-- [ghast](../../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)
+- [endermite](../../../../Source/VanillaBehaviorPack_Snippets/entities/endermite.md)
+- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
+- [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
 - [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
-- [iron-golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
+- [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
+- [magma cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
+- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
 - [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
+- [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)
+- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
 - [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
 - [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
 - [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
+- [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
 - [polar bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
 - [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
-- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
 - [silverfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/silverfish.md)
 - [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
+- [slime](../../../../Source/VanillaBehaviorPack_Snippets/entities/slime.md)
+- [snow_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
 - [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
+- [squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/squid.md)
 - [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
-- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
 - [vex](../../../../Source/VanillaBehaviorPack_Snippets/entities/vex.md)
 - [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)
-- [witch](../../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)
 - [wither skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
 - [wither](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither.md)
 - [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)

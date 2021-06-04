@@ -1,77 +1,65 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.hurt_by_target
+title: minecraft:can_climb
 ms.prod: gaming
 ---
 
-# minecraft:behavior.hurt_by_target
+# minecraft:can_climb
 
-`minecraft:behavior.hurt_by_target` allows an entity to react when hit by set target.
-
-## Parameters
-
-|Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
-|alert_same_type| false| Boolean| If true, nearby mobs of the same type will be alerted about the damage |
-|[entity_types](../Definitions/NestedTables/entity_types.md)|*not set* | JSON Object| List of entity types that this mob can target if they hurt their owner|
-|hurt_owner| false| Boolean|  If true, the mob will hurt its owner and other mobs with the same owner as itself |
+`minecraft:can_climb` allows an entity to climb ladders.
 
 ## Example
 
 ```json
-"minecraft:behavior.hurt_by_target":{
-    "priority": 1,
-    "alert_same_type":true,
-    "hurt_owner": false,
-        "entity_types": {
-            "filters":{
-              "test": "is_family", "subject": "other", "value": "player"
-            },
-            "max_dist":32
-          }
+"minecraft:can_climb":{
 }
 ```
 
 ## Vanilla entities examples
 
-### piglin
+### villager_v2
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="476-478":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="1454-1455":::
 
-### iron_golem
+## Vanilla entities using `minecraft:can_climb`
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/iron_golem.json" range="306-311":::
-
-## Vanilla entities using `minecraft:behavior.hurt_by_target`
-
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
+- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
 - [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
+- [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
+- [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
 - [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
 - [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
+- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
 - [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
 - [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
+- [endermite](../../../../Source/VanillaBehaviorPack_Snippets/entities/endermite.md)
 - [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
-- [ghast](../../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)
+- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
 - [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
-- [iron-golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
+- [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
+- [magma_cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
+- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
+- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
 - [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
-- [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
+- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
+- [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
 - [polar bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
-- [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
-- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
+- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
+- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
 - [silverfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/silverfish.md)
 - [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
+- [slime](../../../../Source/VanillaBehaviorPack_Snippets/entities/slime.md)
+- [snow_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
 - [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
+- [squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/squid.md)
 - [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
-- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
 - [vex](../../../../Source/VanillaBehaviorPack_Snippets/entities/vex.md)
-- [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)
+- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
+- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
+- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
 - [witch](../../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)
 - [wither skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
 - [wither](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither.md)
