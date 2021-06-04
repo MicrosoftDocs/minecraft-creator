@@ -33,7 +33,7 @@
         - name: Entity JSON
           items:
           - name: Components
-            href: 
+            href: TestAPI/Content/EntityAPI/Examples/EntityComponents/TOC.yml
           - name: AI Goals
             href: TestAPI/Content/EntityAPI/Examples/EntityGoals/TOC.yml
           - name: Attributes
