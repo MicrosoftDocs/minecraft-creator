@@ -100,5 +100,5 @@ Allows an entity to attack the closest target within a given subset of specific 
 - [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
 - [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)
 - [zombie pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.md)
-- [zombie villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
+- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
 - [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)

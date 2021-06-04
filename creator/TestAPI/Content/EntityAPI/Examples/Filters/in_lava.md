@@ -136,5 +136,5 @@ Returns true when the subject entity is in lava.
 - [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
 - [zombie_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_horse.md)
 - [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-- [zombie villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
+- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
 - [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)

@@ -79,5 +79,5 @@ This component allows entities to make close combat melee attacks.
 - [wolf](../../../../source/vanillabehaviorpack_snippets/entities/wolf.md)
 - [zoglin](../../../../source/vanillabehaviorpack_snippets/entities/zoglin.md)
 - [zombie pigman](../../../../source/vanillabehaviorpack_snippets/entities/zombie_pigman.md)
-- [zombie villager](../../../../source/vanillabehaviorpack_snippets/entities/zombie_villager.md)
+- [zombie_villager](../../../../source/vanillabehaviorpack_snippets/entities/zombie_villager.md)
 - [zombie](../../../../source/vanillabehaviorpack_snippets/entities/zombie.md)

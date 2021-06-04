@@ -125,4 +125,3 @@ Below are a list of all the available AI Goals within Minecraft:Bedrock Edition 
 |[minecraft:behavior.wither_random_attack_pos_goal](EntityGoals/minecraftBehavior_wither_random_attack_pos_goal.md)| |
 |[minecraft:behavior.wither_target_highest_damage](EntityGoals/minecraftBehavior_wither_target_highest_damage.md)| |
 |[minecraft:behavior.work](EntityGoals/minecraftBehavior_work.md)| |
-

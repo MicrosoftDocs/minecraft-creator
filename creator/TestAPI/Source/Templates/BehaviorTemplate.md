@@ -89,5 +89,5 @@ A list to the vanilla behavior pack snippets that currently use the behavior. If
 - [wolf](Source/VanillaBehaviorPack_Snippets/entities/wolf.json)
 - [zoglin](Source/VanillaBehaviorPack_Snippets/entities/zoglin.json)
 - [zombie pigman](Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.json)
-- [zombie villager](Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.json)
+- [zombie_villager](Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.json)
 - [zombie](Source/VanillaBehaviorPack_Snippets/entities/zombie.json)
