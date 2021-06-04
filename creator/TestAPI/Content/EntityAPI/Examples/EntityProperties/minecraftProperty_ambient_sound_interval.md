@@ -7,19 +7,15 @@ ms.prod: gaming
 
 # minecraft:ambient_sound_interval
 
-`minecraft:ambient_sound_interval` allows an entity to
-
-
-> [!NOTE]
-> This behavior is a requirement for the following behaviors:
-
->[!IMPORTANT]
-> `minecraft:ambient_sound_interval` requires 
+`minecraft:ambient_sound_interval` will set the entity's delay between playing its ambient sound.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:---------:|:---------:|:---------:|:---------:|
+|event_name| ambient| String|  Level sound event to be played as the ambient sound. |
+|range| 16.000000|  Decimal| Maximum time in seconds to randomly add to the ambient sound delay time. |
+|value| 8.000000| Decimal|  Minimum time in seconds before the entity plays its ambient sound again. |
 
 ## Example
 
@@ -33,7 +29,9 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### entities 1
+### witch
+
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/witch.json" range="45-49":::
 
 ## Vanilla entities using `minecraft:ambient_sound_interval`
 
