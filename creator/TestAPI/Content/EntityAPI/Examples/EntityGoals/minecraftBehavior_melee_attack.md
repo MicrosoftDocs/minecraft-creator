@@ -67,7 +67,7 @@ This component allows entities to make close combat melee attacks.
 - [husk](../../../../source/vanillabehaviorpack_snippets/entities/husk.md)
 - [iron_golem](../../../../source/vanillabehaviorpack_snippets/entities/iron_golem.md)
 - [panda](../../../../source/vanillabehaviorpack_snippets/entities/panda.md)
-- [piglin brute](../../../../source/vanillabehaviorpack_snippets/entities/piglin_brute.md)
+- [piglin_brute](../../../../source/vanillabehaviorpack_snippets/entities/piglin_brute.md)
 - [piglin](../../../../source/vanillabehaviorpack_snippets/entities/piglin.md)
 - [pillager](../../../../source/vanillabehaviorpack_snippets/entities/pillager.md)
 - [silverfish](../../../../source/vanillabehaviorpack_snippets/entities/silverfish.md)

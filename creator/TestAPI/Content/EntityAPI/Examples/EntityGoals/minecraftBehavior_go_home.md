@@ -42,5 +42,5 @@ ms.prod: gaming
 ## Vanilla entities using `minecraft:behavior.go_home`
 
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
+- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
 - [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
