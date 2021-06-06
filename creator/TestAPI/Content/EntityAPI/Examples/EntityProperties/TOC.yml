@@ -45,7 +45,7 @@
  - name: minecraft:is_saddled
    href: minecraftProperty_is_saddled.md
  - name: minecraft:is_shaking 
-   href: minecraftProperty_is_shaking .md
+   href: minecraftProperty_is_shaking.mdSS
  - name: minecraft:is_sheared
    href: minecraftProperty_is_sheared.md
  - name: minecraft:is_stackable

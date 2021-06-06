@@ -40,4 +40,4 @@ ms.prod: gaming
 
 ## Vanilla entities using `admire_item`
 
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.json)
+- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)

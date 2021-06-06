@@ -12,8 +12,8 @@ ms.prod: gaming
 >[!IMPORTANT]
 > `minecraft:on_target_acquired` requires a target in order to work properly.
 >
->- [minecraft:behavior.nearest_attackable_target](minecraftBehavior_nearest_attackable_target.md)
->- [minecraft:behavior.hurt_by_target](minecraftBehavior_hurt_by_target.md)
+>- [minecraft:behavior.nearest_attackable_target](../EntityGoals/minecraftBehavior_nearest_attackable_target.md)
+>- [minecraft:behavior.hurt_by_target](../EntityGoals/minecraftBehavior_hurt_by_target.md)
 
 ## Parameters
 

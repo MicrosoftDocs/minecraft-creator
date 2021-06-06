@@ -40,9 +40,9 @@ ms.prod: gaming
 
 ## Vanilla entities using `minecraft:behavior.stomp_turtle_egg`
 
-- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.json)
-- [husk](../../../../Source/VanillaBehaviorPack/entities/husk.json)
-- [zombie_pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.json)
-- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.json)
+- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
+- [husk](../../../../Source/VanillaBehaviorPack/entities/husk.md)
+- [zombie_pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.md)
+- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
 - [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-- [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.json)
+- [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)

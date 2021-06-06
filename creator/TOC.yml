@@ -42,6 +42,8 @@
             href: TestAPI/Content/EntityAPI/Examples/EntityAttributes/TOC.yml
           - name: Properties
             href: TestAPI/Content/EntityAPI/Examples/EntityProperties/TOC.yml
+          - name: ID Lists
+            href: TestAPI/Content/EntityAPI/Examples/ClientEntityDocumenation/IDLists.md
         - name: Spawn Rules
           href: TestAPI/Content/EntityAPI/Examples/ClientEntityDocumenation/DataDrivenSpawning.md
       - name: Resource Pack

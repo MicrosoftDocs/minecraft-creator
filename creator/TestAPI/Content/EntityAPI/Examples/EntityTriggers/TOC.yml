@@ -16,5 +16,5 @@
   href: minecraftTrigger_on_target_acquired.md
 - name: minecraft:on_target_escape
   href: minecraftTrigger_on_target_escape.md
-- name: minecraft:on_wake_up_with_owner
-  href: minecraftTrigger_on_wake_up_with_owner.md
+- name: minecraft:on_wake_with_owner
+  href: minecraftTrigger_on_wake_with_owner.md
