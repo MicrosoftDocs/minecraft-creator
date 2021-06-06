@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |value| 1.0| Decimal| The higher the number, the more the friction affects this entity. A value of 1.0 means regular friction, while 2.0 means twice as much. |
 
 ## Example

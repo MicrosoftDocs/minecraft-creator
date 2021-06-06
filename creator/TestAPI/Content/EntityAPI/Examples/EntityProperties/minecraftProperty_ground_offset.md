@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |value| 1.0| Decimal| The value of the entity's offset from the terrain, in blocks. |
 
 ## Example

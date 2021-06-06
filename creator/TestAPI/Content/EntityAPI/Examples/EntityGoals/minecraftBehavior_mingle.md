@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |cooldown_time| 0.0| Decimal| Time in seconds the mob has to wait before using the goal again |
 |duration| 1.0| Decimal|  Amount of time in seconds that the entity will chat with another entity |
 |mingle_distance| 2.0| Decimal|  The distance from its partner that this entity will mingle. If the entity type is not the same as the entity, this value needs to be identical on both entities. |

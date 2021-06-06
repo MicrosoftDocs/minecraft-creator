@@ -19,7 +19,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 
 ## Example
 
@@ -56,7 +56,7 @@ ms.prod: gaming
 - [dragon_fireball](../../../../Source/VanillaBehaviorPack_Snippets/entities/dragon_fireball.md)
 - [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
 - [egg](../../../../Source/VanillaBehaviorPack_Snippets/entities/egg.md)
-- [elder guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
+- [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
 - [ender_crystal](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_crystal.md)
 - [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)
 - [ender_pearl](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_pearl.md)
@@ -76,10 +76,10 @@ ms.prod: gaming
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
 - [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
 - [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
-- [lightning_bold](../../../../Source/VanillaBehaviorPack_Snippets/entities/lightning_bold.md)
+- [lightning_bolt](../../../../Source/VanillaBehaviorPack_Snippets/entities/lightning_bolt.md)
 - [llama_spit](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama_spit.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [magma cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
+- [magma_cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
 - [minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/minecart.md)
 - [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
 - [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
@@ -89,11 +89,11 @@ ms.prod: gaming
 - [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)
 - [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)
 - [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
+- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
 - [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
 - [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
 - [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
-- [polar bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
+- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
 - [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
 - [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
 - [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
@@ -105,7 +105,7 @@ ms.prod: gaming
 - [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
 - [slime](../../../../Source/VanillaBehaviorPack_Snippets/entities/slime.md)
 - [small_fireball](../../../../Source/VanillaBehaviorPack_Snippets/entities/small_fireball.md)
-- [snow golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
+- [snow_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
 - [snowball](../../../../Source/VanillaBehaviorPack_Snippets/entities/snowball.md)
 - [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
 - [splash_potion](../../../../Source/VanillaBehaviorPack_Snippets/entities/splash_potion.md)
@@ -133,7 +133,7 @@ ms.prod: gaming
 - [xp_orb](../../../../Source/VanillaBehaviorPack_Snippets/entities/xp_orb.md)
 - [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)
 - [zombie_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_horse.md)
-- [zombie pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.md)
+- [zombie_pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.md)
 - [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
 - [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
 - [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)

@@ -15,7 +15,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |value| 0| Integer|  The Palette Color value of the entity. |
 
 ## Example

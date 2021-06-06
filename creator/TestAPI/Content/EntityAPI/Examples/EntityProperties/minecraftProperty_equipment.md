@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |slot_drop_chance|*not set* | List|  A list of slots with the chance to drop an equipped item from that slot. |
 |table|*not set* | String|  The file path to the equipment table, relative to the behavior pack's root. |
 

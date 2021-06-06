@@ -19,7 +19,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |float_duration| [0.0, 0.0]| Range [a, b]|Range of time in seconds the mob will float around before landing and choosing to do something else |
 |must_reach| false| Boolean|  If true, the point has to be reachable to be a valid target |
 |random_reselect| false| Boolean|  If true, the mob will randomly pick a new point while moving to the previously selected one |

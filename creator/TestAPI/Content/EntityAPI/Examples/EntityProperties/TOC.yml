@@ -44,3 +44,35 @@
    href: minecraftProperty_is_illager_captain.md
  - name: minecraft:is_saddled
    href: minecraftProperty_is_saddled.md
+ - name: minecraft:is_shaking 
+   href: minecraftProperty_is_shaking .md
+ - name: minecraft:is_sheared
+   href: minecraftProperty_is_sheared.md
+ - name: minecraft:is_stackable
+   href: minecraftProperty_is_stackable.md
+ - name: minecraft:is_stunned
+   href: minecraftProperty_is_stunned.md
+ - name: minecraft:is_tamed
+   href: minecraftProperty_is_tamed.md
+ - name: minecraft:item_controllable
+   href: minecraftProperty_item_controllable.md
+ - name: minecraft:loot
+   href: minecraftProperty_loot.md
+ - name: minecraft:mark_variant
+   href: minecraftProperty_mark_variant.md
+ - name: minecraft:push_through
+   href: minecraftProperty_push_through.md
+ - name: minecraft:scale
+   href: minecraftProperty_scale.md
+ - name: minecraft:skin_id
+   href: minecraftProperty_skin_id.md
+ - name: minecraft:sound_volume
+   href: minecraftProperty_sound_volume.md
+ - name: minecraft:type_family
+   href: minecraftProperty_type_family.md
+ - name: minecraft:variant
+   href: minecraftProperty_variant.md
+ - name: minecraft:walk_animation_speed
+   href: minecraftProperty_walk_animation_speed.md
+ - name: minecraft:wants_jockey
+   href: minecraftProperty_wants_jockey.md

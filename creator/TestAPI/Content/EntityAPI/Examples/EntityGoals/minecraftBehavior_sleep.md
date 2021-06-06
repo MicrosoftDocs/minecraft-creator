@@ -15,7 +15,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |cooldown_time| 0.0| Decimal| Time in seconds the mob has to wait before using the goal again |
 |sleep_collider_height| 1.0| Decimal|  The height of the mob's collider while sleeping |
 |sleep_collider_width| 1.0| Decimal|  The width of the mob's collider while sleeping |

@@ -15,7 +15,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 | damage|*not set* | Range [a, b]| Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it |
 |effect_duration| 0.0| Decimal|  Duration in seconds of the status ailment applied to the damaged entity |
 |effect_name|*not set* | String|  Identifier of the status ailment to apply to an entity attacked by this entity's melee attack |

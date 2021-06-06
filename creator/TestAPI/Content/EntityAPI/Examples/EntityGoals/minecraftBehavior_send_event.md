@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |cast_duration|*not set*| Decimal| Time in seconds for the entire event sending process |
 |look_at_target| true|Boolean| If true, the mob will face the entity it sends an event to |
 |sequence|*not set* | List| List of events to send
@@ -22,7 +22,7 @@ ms.prod: gaming
 `sequence` is a list variable that can use the following parameters:
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |base_delay| 0.0| Decimal| Amount of time in seconds before starting this step |
 |event|*not set* | String|  The event to send to the entity |
 |sound_event|*not set* | String|  The sound event to play when this step happens |

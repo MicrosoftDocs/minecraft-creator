@@ -17,7 +17,7 @@ Allows an entity to attack the closest target within a given subset of specific 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |attack_interval |0 |Integer |Time range (in seconds) between searching for an attack target, range is in (0, "attack_interval"]. Only used if "attack_interval" is greater than 0, otherwise "scan_interval" is used. |
 |attack_interval_min |0 |Integer |Alias for "attack_interval"; provides the same functionality as "attack_interval". |
 |attack_owner |false |Boolean |If true, this entity can attack its owner |

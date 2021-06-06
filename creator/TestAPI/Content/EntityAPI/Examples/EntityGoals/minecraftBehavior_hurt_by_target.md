@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |alert_same_type| false| Boolean| If true, nearby mobs of the same type will be alerted about the damage |
 |[entity_types](../Definitions/NestedTables/entity_types.md)|*not set* | JSON Object| List of entity types that this mob can target if they hurt their owner|
 |hurt_owner| false| Boolean|  If true, the mob will hurt its owner and other mobs with the same owner as itself |

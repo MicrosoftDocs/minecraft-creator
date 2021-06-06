@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |height| 1.0|  Decimal| Height of the collision box in blocks. A negative value will be assumed to be 0. |
 |width| 1.0| Decimal| Width and Depth of the collision box in blocks. A negative value will be assumed to be 0. |
 

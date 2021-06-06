@@ -15,7 +15,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |value| 0| Integer|The ID of the skin. By convention, 0 is the ID of the base skin.|
 
 ## Example

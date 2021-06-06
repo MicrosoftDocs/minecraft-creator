@@ -15,7 +15,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |table|*not set* | String| The path to the loot table, relative to the Behavior Pack's root. |
 
 ## Example

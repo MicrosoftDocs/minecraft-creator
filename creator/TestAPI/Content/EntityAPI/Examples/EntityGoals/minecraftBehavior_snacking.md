@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |items|*not set* | List| Items that we are interested in snacking on |
 |snacking_cooldown| 7.5| Decimal| The cooldown time in seconds before the mob is able to snack again |
 |snacking_cooldown_min| 0.5| Decimal| The minimum time in seconds before the mob is able to snack again |

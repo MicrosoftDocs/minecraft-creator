@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |can_pickup_any_item| false| Boolean| If true, the mob can pickup any item |
 | can_pickup_to_hand_or_equipment| true| Boolean| If true, the mob can pickup items to its hand or armor slots |
 |goal_radius| 0.5| Decimal| Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot |

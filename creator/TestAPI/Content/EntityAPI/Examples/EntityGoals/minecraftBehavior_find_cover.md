@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |cooldown_time| 0.0| Decimal| Time in seconds the mob has to wait before using the goal again |
 |speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |
 

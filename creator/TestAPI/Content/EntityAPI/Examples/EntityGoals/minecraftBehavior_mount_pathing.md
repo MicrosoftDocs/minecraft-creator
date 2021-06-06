@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |
 |target_dist| 0.0| Decimal| The distance at which this mob wants to be away from its target |
 |track_target| false| Boolean| If true, this mob will chase after the target as long as it's a valid target |

@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |look_time| [2, 4]| Range [a, b]|  The range of time in seconds the mob will stay looking in a random direction before looking elsewhere |
 
 ## Example

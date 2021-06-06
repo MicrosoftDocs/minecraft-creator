@@ -1,18 +1,18 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:is_tammed
+title: minecraft:is_tamed
 ms.prod: gaming
 ---
 
-# minecraft:is_tammed
+# minecraft:is_tamed
 
-`minecraft:is_tammed` sets that this entity is currently tamed.
+`minecraft:is_tamed` sets that this entity is currently tamed.
 
 ## Example
 
 ```json
-"minecraft:is_tammed":{
+"minecraft:is_tamed":{
 }
 ```
 
@@ -22,7 +22,7 @@ ms.prod: gaming
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/horse.json" range="155-156":::
 
-## Vanilla entities using `minecraft:is_tammed`
+## Vanilla entities using `minecraft:is_tamed`
 
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
 - [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
