@@ -67,9 +67,9 @@ Returns true when the subject entity is holding a ranged weapon like a bow or cr
 
 ### skeleton
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/skeleton.json" range="61-84":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.json" range="61-84":::
 
-## Vanilla entities using Filter has_ranged_weapon
+## Vanilla entities using Filter `has_ranged_weapon`
 
 - [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
 - [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
