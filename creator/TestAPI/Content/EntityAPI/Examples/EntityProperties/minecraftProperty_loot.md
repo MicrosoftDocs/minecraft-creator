@@ -91,7 +91,7 @@ ms.prod: gaming
 - [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
 - [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)
 - [witch](../../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)
-- [wither skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton_horse.md)
+- [wither_skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
 - [wither](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither.md)
 - [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
 - [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)
