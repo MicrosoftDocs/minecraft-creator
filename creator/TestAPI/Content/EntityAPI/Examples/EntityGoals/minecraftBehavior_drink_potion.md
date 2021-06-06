@@ -19,6 +19,7 @@ ms.prod: gaming
 ### Potion Parameters
 
 Each potion entry has the following parameters:
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |chance | 1.0| Decimal| The percent chance (from 0.0 to 1.0) of this potion being selected when searching for a potion to use. |
