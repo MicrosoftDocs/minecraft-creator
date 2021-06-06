@@ -46,7 +46,7 @@ ms.prod: gaming
 - [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
 - [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
 - [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
-- [polar bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
+- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
 - [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
 - [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
 - [silverfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/silverfish.md)

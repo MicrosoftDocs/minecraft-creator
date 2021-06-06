@@ -17,7 +17,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |aggro_sound|*not set* | String| Sound to occasionally play while defending. |
 |attack_interval| 0| Integer| Time in seconds between attacks |
 |[entity_types](../Definitions/NestedTables/entity_types.md)|*not set* | JSON Object| List of entity types that this mob considers valid targets|

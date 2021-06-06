@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |cooldown_time| 0.0| Decimal| Time in seconds the mob has to wait before using the goal again |
 |interval| 120| Integer| A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal |
 |speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |

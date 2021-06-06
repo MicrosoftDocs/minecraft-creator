@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |cooldown_max| 0.0| Decimal|  Maximum time in seconds the mob has to wait before using the goal again |
 |cooldown_min| 0.0| Decimal|  Minimum time in seconds the mob has to wait before using the goal again |
 |mob_detect_dist| 6.0| Decimal|  The block distance in x and z that will be checked for mobs that this mob detects |

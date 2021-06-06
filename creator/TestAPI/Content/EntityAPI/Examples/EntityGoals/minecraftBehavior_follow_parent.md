@@ -15,7 +15,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |
 
 ## Example
@@ -48,7 +48,7 @@ ms.prod: gaming
 - [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
 - [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
 - [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [polar bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
+- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
 - [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
 - [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
 - [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)

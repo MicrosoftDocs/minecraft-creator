@@ -23,7 +23,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 | Boolean| set_persistent| false| Allows the actor to be set to persist upon targeting a player |
 
 ## Example

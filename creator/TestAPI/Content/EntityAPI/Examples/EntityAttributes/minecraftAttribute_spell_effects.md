@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |add_effects|*not set* | List|  List of effects to add to this entity after adding this component |
 |remove_effects|*not set* | String|  List of identifiers of effects to be removed from this entity after adding this component |
 

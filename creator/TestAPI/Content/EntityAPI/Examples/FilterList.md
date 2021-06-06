@@ -11,7 +11,7 @@ ms.prod: gaming
 Below are a list of all the available filters within Minecraft:Bedrock Edition for use with Entity files.
 
 |Filter |Description|
-|:-----:|:----------|
+|:------|:----------|
 |[clock_time](Filters/clock_time.md)|`clock_time` allows a creator to compares the current time with a float value in the range (0.0, 1.0). |
 |[distance_to_nearest_player](Filters/distance_to_nearest_player.md)|`distance_to_nearest_player` compares the distance to the nearest Player with a float value. |
 |[has_ability](Filters/has_ability.md)|Returns true when the subject entity has the named ability. |
