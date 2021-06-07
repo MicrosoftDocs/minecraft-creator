@@ -7,11 +7,11 @@ ms.prod: gaming
 
 # Introduction to the Caves & Cliffs Entities
 
-The Caves & Cliffs update brings three brand-new entities to Minecraft: the glow squid, the goat, and the axolotl. These new entities have some fun, new behaviors that you can tweak and use to create even more customized Minecraft experiences.
+The Caves & Cliffs update brings three brand-new entities to Minecraft:Bedrock Edition: the glow squid, the goat, and the axolotl. These new entities have some fun, new behaviors that you can tweak and use to create even more customized Minecraft experiences.
 
 ## Axolotl
 
-[The axolotl](../TestAPI/Source/VanillaBehaviorPack/entities/axolotl.json) is a most helpful critter. It will attack other sea creatures, so you can use it as a buddy in combat! It can also grant combat regeneration to any entity that kills its current target.
+The [axolotl](../TestAPI/Source/VanillaBehaviorPack_Snippets/entities/axolotl.md) is a most helpful critter. It will attack other sea creatures, so you can use it as a buddy in combat! It can also grant combat regeneration to any entity that kills its current target.
 
 When attacked, the axolotl can play dead, which will cause all other mobs to stop targeting it. You can adjust how long it plays dead and what triggers cause it to play dead, such as:
 
@@ -21,11 +21,11 @@ When attacked, the axolotl can play dead, which will cause all other mobs to sto
 
 ## Glow Squid
 
-[The glow squid](../TestAPI/Source/VanillaBehaviorPack/entities/glow_squid.json) is identical to the [squid](../TestAPI/Source/VanillaBehaviorPack/entities/squid.json) in its behavior, but like its name implies, this new mob has a glowing texture. The glow squid also drops glow ink that you can use to create glowing signs!
+[The glow squid](../TestAPI/Source/VanillaBehaviorPack/entities/glow_squid.md) is identical to the [squid](../TestAPI/Source/VanillaBehaviorPack/entities/squid.md) in its behavior, but like its name implies, this new mob has a glowing texture. The glow squid also drops glow ink that you can use to create glowing signs!
 
 ## Goat
 
-[The goat](../TestAPI/Source/VanillaBehaviorPack/entities/goat.json) is a mischievous mob that can be found in the mountain biomes. While hanging out, it will search for random blocks to jump to within a set height, width, and distance and jump to that block. You can tweak the following parameters for this behavior:
+[The goat](../TestAPI/Source/VanillaBehaviorPack/entities/goat.md) is a mischievous mob that can be found in the mountain biomes. While hanging out, it will search for random blocks to jump to within a set height, width, and distance and jump to that block. You can tweak the following parameters for this behavior:
 
 - How far the goat will search for a block to jump to
 - How fast the goat will jump

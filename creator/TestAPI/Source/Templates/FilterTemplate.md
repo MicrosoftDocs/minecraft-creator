@@ -1,4 +1,3 @@
-
 ---
 author: <Employee Name>
 ms.author: <Employee Name>
