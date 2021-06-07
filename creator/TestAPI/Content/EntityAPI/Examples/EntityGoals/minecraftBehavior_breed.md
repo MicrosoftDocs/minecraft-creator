@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.breed` allows an entity to breed with other entities that have been assigned.
 
 >[!IMPORTANT]
-> `minecraft:behavior.breed` requires the `"minecraft:breedable"` component in order to work properly.
+> `minecraft:behavior.breed` requires the [minecraft:breedable](../EntityComponents/minecraftComponent_breedable.md) component in order to work properly.
 
 ## Parameters
 

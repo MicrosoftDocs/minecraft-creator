@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:annotation.break_door
 
-`minecraft:annotation.break_door` allows an entity to break doors, assuming that that flags set up for the component to use in navigation
+`minecraft:annotation.break_door` allows an entity to break doors, assuming that that flags set up for the component to use in navigation.
 
 >[!IMPORTANT]
 > `minecraft:annotation.break_door` requires the entity's navigation component to have the parameter `can_break_doors` set to `true`.
