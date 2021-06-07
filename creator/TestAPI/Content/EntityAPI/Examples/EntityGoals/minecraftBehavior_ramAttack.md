@@ -14,17 +14,17 @@ This component allows the mob to search for a random target and, if a direct pat
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
 | ramAttack | True | Boolean | Allows this mob to damage a target by using a ram attack. |
-| ramDistance |*not set* | Integer | The distance in blocks at which the mob will start to ram its target. |
-| minRamDistance |*not set* | Integer | The minimum distance in blocks at which the mob can start a ram attack. |
-| knockbackForce |*not set* | Decimal | The force of the knockback of the ram's attack. |
-| babyKnockbackModifier |*not set* | Decimal | The modifier to knockback for baby mobs. |
-| knockbackHeight |*not set* | Integer | The height in blocks of the knockback of the ram attack. |
-| runSpeed |*not set* | Decimal | Sets the mob's speed when running toward the target. |
-| ramSpeed |*not set* | Decimal | Sets the mob's speed when performing a ram attack toward the target. |
-| preRamSound |*not set* | String | The sound to play when the mob is about to perform a ram attack. |
-| ramImpactSound |*not set* | String | The sound to play when the mob hits the target with a ram attack .|
-| trigger |*not set* | String | The event to trigger when attacking. |
-| coolDownTimeRange |*not set* | Integer | The minimum and maximum cooldown time-range in seconds between each attempted ram attack. |
+| ramDistance | 7 | Integer | The distance in blocks at which the mob will start to ram its target. |
+| minRamDistance | 4 | Integer | The minimum distance in blocks at which the mob can start a ram attack. |
+| knockbackForce | 5.0 | Decimal | The force of the knockback of the ram's attack. |
+| babyKnockbackModifier | 4 | Integer | The modifier to knockback for baby mobs. |
+| knockbackHeight | 0.1 | Decimal | The height in blocks of the knockback of the ram attack. |
+| runSpeed | 1.0 | Decimal | Sets the mob's speed when running toward the target. |
+| ramSpeed | 2.0 | Decimal | Sets the mob's speed when performing a ram attack toward the target. |
+| preRamSound | *not set* | String | The sound to play when the mob is about to perform a ram attack. |
+| ramImpactSound | *not set* | String | The sound to play when the mob hits the target with a ram attack .|
+| trigger | *not set* | String | The event to trigger when attacking. |
+| coolDownTimeRange | [10.0, 20.0] | Decimal | The minimum and maximum cooldown time-range in seconds between each attempted ram attack. |
 
 ## Example
 
