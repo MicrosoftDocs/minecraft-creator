@@ -41,9 +41,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: minecraft:addrider
-            url: Examples/EntityComponents/minecraft_addrider.md
+            url: Examples/EntityComponents/minecraftComponent_addrider.md
           - text: minecraft:admire_item
-            url: Examples/EntityComponents/minecraft_admire_item.md
+            url: Examples/EntityComponents/minecraftComponent_admire_item.md
  # Card (optional)
   - title: Filters
     linkLists:

@@ -1,20 +1,19 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.Name of Behavior
+title: minecraft:conditional_bandwidth_optimization
 ms.prod: gaming
 ---
 
-# minecraft:behavior.Name of Behavior
+# minecraft:conditional_bandwidth_optimization
 
-`minecraft:behavior.Name of Behavior` allows an entity to
-
+`minecraft:conditional_bandwidth_optimization` defines the Conditional Spatial Update Bandwidth Optimizations of this entity.
 
 > [!NOTE]
 > This behavior is a requirement for the following behaviors:
 
 >[!IMPORTANT]
-> `minecraft:behavior.Name of Behavior` requires 
+> `minecraft:conditional_bandwidth_optimization` requires 
 
 ## Parameters
 
@@ -24,7 +23,7 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:behavior.Name of Behavior":{
+"minecraft:conditional_bandwidth_optimization":{
     "priority": 2,
     "parameterA":true,
     "parameterB":42,
@@ -35,7 +34,7 @@ ms.prod: gaming
 
 ### entities 1
 
-## Vanilla entities using `minecraft:behavior.Name of Behavior`
+## Vanilla entities using `minecraft:conditional_bandwidth_optimization`
 
 - [area_effect_cloud](../../../../Source/VanillaBehaviorPack_Snippets/entities/area_effect_cloud.md)
 - [armor_stand](../../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)

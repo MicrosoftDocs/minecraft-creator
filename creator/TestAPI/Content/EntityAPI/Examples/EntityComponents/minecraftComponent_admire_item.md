@@ -7,9 +7,7 @@ ms.prod: gaming
 
 # minecraft:admire_item
 
-`minecraft:admire_item` allows an entity to
-
-Causes the mob to ignore attackable targets for a given duration.
+`minecraft:admire_item` allows an entity to ignore attackable targets for a given duration.
 
 ## Parameters
 
