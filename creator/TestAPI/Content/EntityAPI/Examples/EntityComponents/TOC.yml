@@ -1,4 +1,4 @@
-- name: minecraft:add_rider
-  href: minecraft_addrider.md
+- name: minecraft:addrider
+  href: minecraftComponent_addrider.md
 - name: minecraft:admire_item
-  href: minecraft_admire_item.md
+  href: minecraftComponent_admire_item.md

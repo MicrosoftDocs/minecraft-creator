@@ -102,6 +102,7 @@ ms.prod: gaming
 - [shulker_bullet](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker_bullet.md)
 - [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
 - [silverfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/silverfish.md)
+- [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)
 - [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
 - [slime](../../../../Source/VanillaBehaviorPack_Snippets/entities/slime.md)
 - [small_fireball](../../../../Source/VanillaBehaviorPack_Snippets/entities/small_fireball.md)
@@ -124,7 +125,7 @@ ms.prod: gaming
 - [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)
 - [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
 - [witch](../../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)
-- [wither skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
+- [wither_skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
 - [wither_skull_dangerous](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skull_dangerous.md)
 - [wither_skull](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skull.md)
 - [wither](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither.md)
@@ -137,4 +138,3 @@ ms.prod: gaming
 - [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
 - [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
 - [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)
-
