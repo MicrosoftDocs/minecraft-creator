@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |max_look_count| 2| Integer|  The max amount of unique looks a mob will have while looking around. |
 |max_look_time| 40| Integer|  The max amount of time (in ticks) a mob will stay looking at a direction while looking around. |
 |min_look_count| 1| Integer| The min amount of unique looks a mob will have while looking around. |

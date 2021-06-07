@@ -10,12 +10,12 @@ ms.prod: gaming
 `minecraft:behavior.breed` allows an entity to breed with other entities that have been assigned.
 
 >[!IMPORTANT]
-> `minecraft:behavior.breed` requires the `"minecraft:breedable"` component in order to work properly.
+> `minecraft:behavior.breed` requires the [minecraft:breedable](../EntityComponents/minecraftComponent_breedable.md) component in order to work properly.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 | speed_multiplier| 1.0|Decimal |  Movement speed multiplier of the mob when using this AI Goal |
 
 ## Example

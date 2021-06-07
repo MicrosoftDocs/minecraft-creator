@@ -12,17 +12,18 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |speed_modifier| 0.0| Decimal| Movement speed modifier of the mob when using this AI Goal|
 |potions |*not set* |List |A list of potions that this entity can drink. |
 
 ### Potion Parameters
 
 Each potion entry has the following parameters:
+
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
-|chance| 1.0| Decimal| The percent chance (from 0.0 to 1.0) of this potion being selected when searching for a potion to use. |
-| filters|*not set* | Minecraft Filter| The filters to use when determining if this potion can be selected. |
+|:----------|:----------|:----------|:----------|
+|chance | 1.0| Decimal| The percent chance (from 0.0 to 1.0) of this potion being selected when searching for a potion to use. |
+| [filters](../FilterList.md)|*not set* | Minecraft Filter| The filters to use when determining if this potion can be selected. |
 |id| -1|Integer | The registry ID of the potion to use |
 
 ## Vanilla entities examples

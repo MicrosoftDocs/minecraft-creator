@@ -28,6 +28,6 @@ ms.prod: gaming
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="495-497":::
 
-## Vanilla entities using `behavior`
+## Vanilla entities using `minecraft:behavior.barter`
 
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.json)
+- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)

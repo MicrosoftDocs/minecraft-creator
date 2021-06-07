@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:behavior.play
 
-`minecraft:behavior.play` allows an entity to play with entities that have been tagged as `baby`
+`minecraft:behavior.play` allows an entity to play with entities that have been tagged as `baby`.
 
 > [!NOTE]
 > This behavior can only be used by `villager` entity types.
@@ -15,7 +15,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |
 
 ## Example

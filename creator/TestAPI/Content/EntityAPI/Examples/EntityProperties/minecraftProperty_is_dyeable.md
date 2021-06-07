@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |interact_text|*not set* | String|  The text that will display when interacting with this entity with a dye when playing with Touch-screen controls. |
 
 ## Example

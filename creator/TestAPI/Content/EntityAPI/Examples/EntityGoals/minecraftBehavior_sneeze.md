@@ -15,7 +15,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |cooldown_time| 0.0|Decimal| Time in seconds the mob has to wait before using the goal again |
 |drop_item_chance| 1.0| Decimal| The probability that the mob will drop an item when it sneezes. |
 |[entity_types](../Definitions/NestedTables/entity_types.md)|*not set* | JSON Object|  List of entity types this mob will startle (cause to jump) when it sneezes.|

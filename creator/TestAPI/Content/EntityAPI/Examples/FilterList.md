@@ -11,7 +11,7 @@ ms.prod: gaming
 Below are a list of all the available filters within Minecraft:Bedrock Edition for use with Entity files.
 
 |Filter |Description|
-|:-----:|:----------|
+|:------|:----------|
 |[clock_time](Filters/clock_time.md)|`clock_time` allows a creator to compares the current time with a float value in the range (0.0, 1.0). |
 |[distance_to_nearest_player](Filters/distance_to_nearest_player.md)|`distance_to_nearest_player` compares the distance to the nearest Player with a float value. |
 |[has_ability](Filters/has_ability.md)|Returns true when the subject entity has the named ability. |
@@ -74,6 +74,5 @@ Below are a list of all the available filters within Minecraft:Bedrock Edition f
 |[rider_count](Filters/rider_count.md)|Returns the number of riders on this entity. |
 |[surface_mob](Filters/surface_mob.md)|Tests if the subject is a surface mob. |
 |[trusts](Filters/trusts.md)|Returns true if the subject is trusted by entity. |
-|[weather_at_position](Filters/weather_at_position.md)|Tests the current weather, at the actor's position, against a provided weather value.
- |
+|[weather_at_position](Filters/weather_at_position.md)|Tests the current weather, at the actor's position, against a provided weather value.|
 |[weather](Filters/weather.md)|Tests for the current weather state the entity is experiencing. |

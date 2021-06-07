@@ -15,7 +15,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |[entity_types](../Definitions/NestedTables/entity_types.md)|*not set* | JSON Object| List of entities this mob can copy the owner from|
 
 ### entity_types

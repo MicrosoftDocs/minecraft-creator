@@ -39,4 +39,4 @@ ms.prod: gaming
 
 ## Vanilla entities using `behavior`
 
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.json)
+- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)

@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 | can_land_on_trees| true|Boolean|  If true, the mob can stop flying and land on a tree instead of the ground |
 |xz_dist| 10| Integer| Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1 |
 | y_dist| 7| Integer| Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1 |

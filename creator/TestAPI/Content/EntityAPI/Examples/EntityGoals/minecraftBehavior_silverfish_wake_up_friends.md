@@ -11,7 +11,7 @@ ms.prod: gaming
 
 > [!NOTE]
 > This behavior can only be used by `silverfish` entity types.
-> This behavior requires `minecraft:behavior.silverfish_merge_with_stone` to be set. 
+> This behavior requires `minecraft:behavior.silverfish_merge_with_stone` to be set.
 
 ## Example
 

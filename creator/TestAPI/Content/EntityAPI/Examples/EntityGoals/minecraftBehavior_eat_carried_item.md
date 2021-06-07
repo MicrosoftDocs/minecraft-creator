@@ -15,7 +15,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |delay_before_eating|*not set* | Decimal|  Time in seconds the mob should wait before eating the item. |
 
 ## Example

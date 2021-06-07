@@ -7,12 +7,12 @@ ms.prod: gaming
 
 # minecraft:behavior.nearest_prioritized_attackable_target
 
-`minecraft:behavior.nearest_prioritized_attackable_target` allows an entity to target and prioritize the nearest valid target. 
+`minecraft:behavior.nearest_prioritized_attackable_target` allows an entity to target and prioritize the nearest valid target.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |attack_interval| 0| Integer| Time in seconds before selecting a target |
 |[entity_types](../Definitions/NestedTables/entity_types.md)|*not set* | JSON Object| List of entity types that this mob considers valid targets|
 |must_reach| false| Boolean| If true, only entities that this mob can path to can be selected as targets |

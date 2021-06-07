@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |blocks|*not set* | List|  Blocks that the mob is looking for to eat/raid |
 |eat_delay| 2| Integer|  Time in seconds between each time it eats/raids |
 | full_delay| 100| Integer| Amount of time in seconds before this mob wants to eat/raid again after eating its maximum |

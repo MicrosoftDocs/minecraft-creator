@@ -76,7 +76,7 @@
             }
           },
           "mutation_factor": {
-            "variant": 0.00083
+            "variant": 0.00083 // roughly 1/1200
           }
         }
       },

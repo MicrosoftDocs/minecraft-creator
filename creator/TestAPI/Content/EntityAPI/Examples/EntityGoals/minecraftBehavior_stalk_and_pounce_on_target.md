@@ -23,7 +23,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |interest_time| 2.0| Decimal|  The amount of time the mob will be interested before pouncing. This happens when the mob is within range of pouncing |
 |leap_distance| 0.8| Decimal| The distance in blocks the mob jumps in the direction of its target |
 |leap_height| 0.9| Decimal|  The height in blocks the mob jumps when leaping at its target |

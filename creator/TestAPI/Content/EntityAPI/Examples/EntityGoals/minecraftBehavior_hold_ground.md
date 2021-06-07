@@ -18,7 +18,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |broadcast| false| Boolean| Whether to broadcast out the mob's target to other mobs of the same type. |
 |broadcast_range| 0.0| Decimal| Range in blocks for how far to broadcast. |
 |min_radius| 10.0| Decimal| Minimum distance the target must be for the mob to run this goal. |
