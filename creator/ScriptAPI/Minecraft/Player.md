@@ -3,30 +3,34 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: Minecraft.Entity Class
-description: Contents of the Minecraft.Entity class.
+title: Minecraft.Player Class
+description: Contents of the Minecraft.Player class.
 ---
-# Entity Class
+# Player Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 
-Represents the state of an entity (a mob, the player, or other moving objects like Minecarts) in the world.
+Represents a player within the world.
 
 ## Properties
 ### **id** - `string`
-
+Identifier for the player.
 
 
 ### **location** - `Location`
-
+Current location of the player.
 
 
 ### **velocity** - `Location`
-
+Current speed of the player across X, Y, and Z dimensions.
 
 
 ### **nameTag** - `string`
+Optional name tag of the player.
 
+
+### **name** - `string`
+Name of the player.
 
 
 
@@ -44,11 +48,10 @@ Represents the state of an entity (a mob, the player, or other moving objects li
 hasComponent(componentId: string): boolean
 `
 
-Returns true if the specified component is present on this entity.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **componentId** | *string* | The identifier of the component (e.g., 'minecraft:rideable') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed. |
+| **componentId** | *string* | - |
 
 Returns *boolean*
 
@@ -58,11 +61,10 @@ Returns *boolean*
 getComponent(componentId: string): any
 `
 
-Gets a component (that represents additional capabilities) for an entity.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **componentId** | *string* | The identifier of the component (e.g., 'minecraft:rideable') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed. If the component is not present on the entity, undefined is returned. |
+| **componentId** | *string* | - |
 
 Returns *any*
 
@@ -72,7 +74,6 @@ Returns *any*
 getComponents(): any[]
 `
 
-Returns all components that are both present on this entity and supported by the API.
 
 Returns *any*[]
 
@@ -82,7 +83,6 @@ Returns *any*[]
 kill(): void
 `
 
-Kills this entity. The entity will drop loot as normal.
 
 Returns *undefined*
 
@@ -94,13 +94,12 @@ Returns *undefined*
 getEffect(effectType: EffectType): Effect
 `
 
-Returns the effect for the specified EffectType on the entity, or undefined if the effect is not present.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
 | **effectType** | [*EffectType*](EffectType.md) | - |
 
-Returns [*Effect*](Effect.md) - Effect object for the specified effect, or undefined if the effect is not present.
+Returns [*Effect*](Effect.md)
 
 > [!WARNING]
 > This function can throw errors.
@@ -110,30 +109,18 @@ Returns [*Effect*](Effect.md) - Effect object for the specified effect, or undef
 addEffect(effectType: EffectType, duration: number, amplifier: number): void
 `
 
-Adds an effect, like poison, to the entity.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **effectType** | [*EffectType*](EffectType.md) | Type of effect to add to the entity. |
-| **duration** | *number* | Amount of time, in seconds, for the effect to apply. |
-| **amplifier** | *number* | Optional amplification of the effect to apply. |
+| **effectType** | [*EffectType*](EffectType.md) | - |
+| **duration** | *number* | - |
+| **amplifier** | *number* | - |
 
 Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
 
-#### Examples
-##### ***addEffect.js***
-```javascript
-const villagerId = "minecraft:villager_v2<minecraft:ageable_grow_up>";
-const villagerLoc = new BlockLocation(1, 2, 1);
-const villager = test.spawn(villagerId, villagerLoc);
-const duration = 20;
-
-villager.addEffect(Effects.poison, duration, 1);
-
-```
 ### **triggerEvent**
 `
 triggerEvent(eventName: string): void
