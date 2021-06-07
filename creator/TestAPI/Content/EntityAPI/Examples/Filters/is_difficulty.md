@@ -72,7 +72,7 @@ Below is a list of difficulty levels that can be used for the `value` string.
 
 ## Vanilla entities examples
 
-### skeleton
+### wither_skeleton
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither_skeleton.json" range="434-447":::
 
