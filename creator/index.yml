@@ -49,18 +49,6 @@ productDirectory:
       links:
         - url: Documents/CommandBlocks.md
           text: Getting Started with Command Blocks
-    #card
-    - title: Caves and Cliffs Entity Documentation
-      imageSrc: images/
-      links:
-        - url: TestAPI/Content/EntityAPI/EntityGoals/minecraftBehavior_jumpToBlockGoal.md
-          text: minecraft:behavior.jump_to_block
-        - url: TestAPI/Content/EntityAPI/Examples/EntityGoals/minecraftBehavior_ramAttack.md
-          text: minecraft:behavior.minecraft:behavior.ram_attack
-        - url: TestAPI/Content/EntityAPI/EntityGoals/PlayDead.md
-          text: minecraft:behavior.play_dead
-        - url: TestAPI/Content/EntityAPI/Examples/EntityGoals/minecraftBehavior_CombatRegeneration.md
-          text: minecraft:behavior.combat_regeneration
     # card
     - title: Using GameTest
       imageSrc: images/Firework.png
