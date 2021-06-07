@@ -15,7 +15,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |follow_distance| 0.0| Decimal| Defines the distance in blocks the mob will stay from its target while following. |
 |within_radius| 0.0| Decimal| Defines the maximum distance in blocks a mob can get from its target captain before giving up trying to follow it. |
 

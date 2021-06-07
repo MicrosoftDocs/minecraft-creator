@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
  start_distance| 10.0|Decimal| This mob starts swelling when a target is at least this many blocks away |
 |stop_distance| 2.0| Decimal| This mob stops swelling when a target has moved away at least this many blocks |
 

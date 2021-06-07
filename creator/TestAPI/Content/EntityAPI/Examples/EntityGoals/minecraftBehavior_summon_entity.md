@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |summon_choices|*not set* | List|  List of spells for the mob to use to summon entities.|
 
 ### summon_choices
@@ -20,7 +20,7 @@ ms.prod: gaming
 `summon_choices` is a List variable that can use the following parameters:
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |cast_duration|*not set*| Decimal| Time in seconds the spell casting will take |
 |cooldown_time| 0.0| Decimal| Time in seconds the mob has to wait before using the spell again |
 |do_casting| true| Boolean|  If true, the mob will do the casting animations and render spell particles |
@@ -37,7 +37,7 @@ ms.prod: gaming
 `sequence` is a list variable that can use the following parameters:
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 | base_delay| 0.0|Decimal| Amount of time in seconds to wait before this step starts |
 |delay_per_summon| 0.0| Decimal|  Amount of time in seconds before each entity is summoned in this step |
 |entity_lifespan| -1.0| Decimal|  Amount of time in seconds that the spawned entity will be alive for. A value of -1.0 means it will remain alive for as long as it can |

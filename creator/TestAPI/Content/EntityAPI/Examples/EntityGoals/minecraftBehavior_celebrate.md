@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |celebration_sound|*not set* | String|  The sound to occasionally play. |
 |duration| 1.0|  Decimal| The duration of the celebration (in seconds). |
 | jump_interval| [0,0]| Range [a, b]| The range of time in seconds to randomly wait before jumping again. |

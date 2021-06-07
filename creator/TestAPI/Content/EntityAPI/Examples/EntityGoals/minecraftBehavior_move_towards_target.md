@@ -18,7 +18,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |within_radius| 0.0| Decimal| Defines the radius in blocks that the mob tries to be from the target. A value of 0 means it tries to occupy the same block as the target |
 
 ## Example

@@ -15,7 +15,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |angle_of_view_horizontal| 360| Integer| The angle in degrees that the mob can see in the Y-axis (up-down) |
 |angle_of_view_vertical| 360| Integer| The angle in degrees that the mob can see in the X-axis (left-right) |
 |look_distance| 8.0| Decimal| The distance in blocks from which the entity will look at |

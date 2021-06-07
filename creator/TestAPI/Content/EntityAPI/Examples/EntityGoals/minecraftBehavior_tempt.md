@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |can_get_scared| false| Boolean|  If true, the mob can stop being tempted if the player moves too fast while close to this mob |
 |items|*not set* | List|  List of items this mob is tempted by |
 |speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |
