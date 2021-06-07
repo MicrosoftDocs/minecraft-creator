@@ -1,5 +1,5 @@
  - name: Properties List
-   href: ./PropertiesList.md
+   href: ../PropertiesList.md
  - name: minecraft:ambient_sound_interval 
    href: minecraftProperty_ambient_sound_interval.md
  - name: minecraft:can_climb

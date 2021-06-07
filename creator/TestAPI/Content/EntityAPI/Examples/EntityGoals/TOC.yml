@@ -1,5 +1,5 @@
 - name: AI Goals List
-  href: ./AIGoalList.md
+  href: ../AIGoalList.md
 - name: minecraft:behavior.admire_item
   href: minecraftBehavior_admire_item.md
 - name: minecraft:behavior.barter
