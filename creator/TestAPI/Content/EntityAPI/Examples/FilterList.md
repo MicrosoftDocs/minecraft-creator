@@ -74,6 +74,5 @@ Below are a list of all the available filters within Minecraft:Bedrock Edition f
 |[rider_count](Filters/rider_count.md)|Returns the number of riders on this entity. |
 |[surface_mob](Filters/surface_mob.md)|Tests if the subject is a surface mob. |
 |[trusts](Filters/trusts.md)|Returns true if the subject is trusted by entity. |
-|[weather_at_position](Filters/weather_at_position.md)|Tests the current weather, at the actor's position, against a provided weather value.
- |
+|[weather_at_position](Filters/weather_at_position.md)|Tests the current weather, at the actor's position, against a provided weather value.|
 |[weather](Filters/weather.md)|Tests for the current weather state the entity is experiencing. |

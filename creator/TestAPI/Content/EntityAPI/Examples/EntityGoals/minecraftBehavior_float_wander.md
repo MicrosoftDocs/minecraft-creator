@@ -7,14 +7,7 @@ ms.prod: gaming
 
 # minecraft:behavior.float_wander
 
-`minecraft:behavior.float_wander` allows an entity to
-
-
-> [!NOTE]
-> This behavior is a requirement for the following behaviors:
-
->[!IMPORTANT]
-> `minecraft:behavior.float_wander` requires 
+`minecraft:behavior.float_wander` allows an entity to float around in a random direction, similar to the `ghast` entity.
 
 ## Parameters
 

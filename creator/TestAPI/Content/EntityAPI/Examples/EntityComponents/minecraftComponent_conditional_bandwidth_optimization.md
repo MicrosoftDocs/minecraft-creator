@@ -9,12 +9,6 @@ ms.prod: gaming
 
 `minecraft:conditional_bandwidth_optimization` defines the Conditional Spatial Update Bandwidth Optimizations of this entity.
 
-> [!NOTE]
-> This behavior is a requirement for the following behaviors:
-
->[!IMPORTANT]
-> `minecraft:conditional_bandwidth_optimization` requires 
-
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |

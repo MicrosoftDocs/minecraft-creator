@@ -17,7 +17,7 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |entity_type|*not set* | String| The entity type that will be riding this entity. |
-|spawn_event|*not set* | String|  The spawn event that will be used when the riding entity is created. |
+|spawn_event|*not set* | String| The spawn event that will be used when the riding entity is created. |
 
 ## Example
 

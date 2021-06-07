@@ -1,3 +1,5 @@
+- name: Trigger List
+  href: ../TriggerList.md
 - name: minecraft:on_death
   href: minecraftTrigger_on_death.md
 - name: minecraft:on_friendly_anger
