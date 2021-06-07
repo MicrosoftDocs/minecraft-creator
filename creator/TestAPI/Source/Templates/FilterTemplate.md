@@ -1,3 +1,4 @@
+<!--
 ---
 author: <Employee Name>
 ms.author: <Employee Name>
@@ -183,3 +184,4 @@ A list to the vanilla Filter pack snippets that currently use the Filter. If mor
 - [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
 - [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
 - [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)
+-->

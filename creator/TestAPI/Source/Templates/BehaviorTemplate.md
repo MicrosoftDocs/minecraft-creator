@@ -1,3 +1,4 @@
+<!--
 ---
 author: <Employee Name>
 ms.author: <Employee Name>
@@ -49,7 +50,7 @@ json snippet configured to the behaviorPack_Snippets
 ## Vanilla Mobs using behavior
 
 A list to the vanilla behavior pack snippets that currently use the behavior. If more than 25 behaviors are used, feel free to split the list into 2 or 3 columns.
-
+<!--
 - [bee](Source/VanillaBehaviorPack_Snippets/entities/bee.json)
 - [blaze](Source/VanillaBehaviorPack_Snippets/entities/blaze.json)
 - [cat](Source/VanillaBehaviorPack_Snippets/entities/cat.json)
@@ -91,3 +92,4 @@ A list to the vanilla behavior pack snippets that currently use the behavior. If
 - [zombie pigman](Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.json)
 - [zombie_villager](Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.json)
 - [zombie](Source/VanillaBehaviorPack_Snippets/entities/zombie.json)
+-->
