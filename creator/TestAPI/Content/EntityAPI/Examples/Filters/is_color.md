@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # is_color
 
-Returns true if the subject entity is the named color.
+Returns true if the subject entity is of the named color.
 
 ## Parameters
 
