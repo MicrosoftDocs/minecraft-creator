@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:behavior.slime_attack
 
-`minecraft:behavior.slime_attack` allows an entity to make a melee attack similar to the `slime` and `magma_cube`
+`minecraft:behavior.slime_attack` allows an entity to make a melee attack similar to the `slime` and `magma_cube`.
 
 > [!IMPORTANT]
 > `minecraft:behavior.slime_attack` requires a target in order to work properly.
