@@ -3,14 +3,14 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: Minecraft.TickEventSignal Class
-description: Contents of the Minecraft.TickEventSignal class.
+title: Minecraft.ChatEventSignal Class
+description: Contents of the Minecraft.ChatEventSignal class.
 ---
-# TickEventSignal Class
+# ChatEventSignal Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 
-Manages callbacks that are connected to a tick event.
+Manages callbacks that are connected to chat messages being sent.
 
 
 ## Methods
@@ -19,28 +19,28 @@ Manages callbacks that are connected to a tick event.
   
 ### **subscribe**
 `
-subscribe(callback: () => undefined): () => undefined
+subscribe(callback: (arg0: ChatEvent) => undefined): (arg0: ChatEvent) => undefined
 `
 
-Adds a callback that will be called on every tick.
+Adds a callback that will be called when new chat messages are sent.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **callback** | () => undefined | - |
+| **callback** | (arg0: ChatEvent) => undefined | - |
 
-Returns () => undefined
+Returns (arg0: ChatEvent) => undefined
 
 
 ### **unsubscribe**
 `
-unsubscribe(callback: () => undefined): void
+unsubscribe(callback: (arg0: ChatEvent) => undefined): void
 `
 
-Removes a callback from being called every tick.
+Removes a callback from being called when new chat messages are sent.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **callback** | () => undefined | - |
+| **callback** | (arg0: ChatEvent) => undefined | - |
 
 Returns *undefined*
 

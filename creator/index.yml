@@ -17,13 +17,17 @@ highlightedContent:
 # itemType:  architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     #card used to define plugin
-    - title: Introduction to the GameTest Framework
+    - title: Entity Documentation
       itemType: whats-new
-      url: Documents/GameTestGettingStarted.md
+      url: TestAPI/Content/EntityAPI/index.yml
     #card
     - title: Getting Started with Add-on Development
       itemType: get-started
       url: Documents/GettingStarted.md
+    #card
+    - title: Caves and Cliffs Entities
+      itemType: whats-new
+      url: Documents/CavesAndCliffsEntities.md
       
 # productDirectory section (optional) will outline rows that can contain text and media along with lists. 
 productDirectory:
@@ -45,6 +49,18 @@ productDirectory:
       links:
         - url: Documents/CommandBlocks.md
           text: Getting Started with Command Blocks
+    #card
+    - title: Caves and Cliffs Entity Documentation
+      imageSrc: images/
+      links:
+        - url: TestAPI/Content/EntityAPI/EntityGoals/minecraftBehavior_jumpToBlockGoal.md
+          text: minecraft:behavior.jump_to_block
+        - url: TestAPI/Content/EntityAPI/Examples/EntityGoals/minecraftBehavior_ramAttack.md
+          text: minecraft:behavior.minecraft:behavior.ram_attack
+        - url: TestAPI/Content/EntityAPI/EntityGoals/PlayDead.md
+          text: minecraft:behavior.play_dead
+        - url: TestAPI/Content/EntityAPI/Examples/EntityGoals/minecraftBehavior_CombatRegeneration.md
+          text: minecraft:behavior.combat_regeneration
     # card
     - title: Using GameTest
       imageSrc: images/Firework.png
