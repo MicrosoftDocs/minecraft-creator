@@ -39,7 +39,7 @@ This component allows the mob to play dead when attacked by other entities. When
 
 ## Vanilla Mob examples
 
-### axolot
+### axolotl
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/axolotl.json"
 
