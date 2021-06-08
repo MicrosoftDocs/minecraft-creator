@@ -17,7 +17,7 @@ Tests the current difficulty level of the game.
 
 ### List of difficulty levels
 
-Below are a list of difficulty levels that can be used for the `value` string.
+Below is a list of difficulty levels that can be used for the `value` string.
 
 | Options|
 |:-----------|
@@ -72,7 +72,7 @@ Below are a list of difficulty levels that can be used for the `value` string.
 
 ## Vanilla entities examples
 
-### skeleton
+### wither_skeleton
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither_skeleton.json" range="436-449":::
 

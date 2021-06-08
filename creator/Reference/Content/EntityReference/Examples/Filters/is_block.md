@@ -13,7 +13,7 @@ Returns true when the block has the given name.
 
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
-|value |*not set* |String |(Required) The Family name to look for. |
+|value |*not set* |String |(Required) Name of the block to look for. |
 
 >[!Note]
 > `is_block` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
