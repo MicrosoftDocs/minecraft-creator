@@ -74,7 +74,7 @@ Returns true when the subject entity is under water.
 
 ### wolf
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wolf.json" range="121-174":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wolf.json" range="156-170":::
 
 ## Vanilla entities using `is_underwater`
 

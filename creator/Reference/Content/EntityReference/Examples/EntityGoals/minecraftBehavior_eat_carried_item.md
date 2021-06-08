@@ -31,7 +31,7 @@ ms.prod: gaming
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="596-599":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="606-609":::
 
 ## Vanilla entities using `minecraft:behavior.eat_carried_item`
 

@@ -46,7 +46,7 @@ ms.prod: gaming
 
 ### slime
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/slime.json" range="126-128":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/slime.json" range="128-130":::
 
 ## Vanilla entities using `minecraft:behavior.slime_attack`
 

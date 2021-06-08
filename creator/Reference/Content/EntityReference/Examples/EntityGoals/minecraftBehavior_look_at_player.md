@@ -36,11 +36,11 @@ ms.prod: gaming
 
 ### enderman
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/enderman.json" range="148-152":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/enderman.json" range="150-154":::
 
 ### rabbit
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/rabbit.json" range="199-201":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/rabbit.json" range="201-203":::
 
 ## Vanilla entities using `minecraft:behavior.look_at_player`
 

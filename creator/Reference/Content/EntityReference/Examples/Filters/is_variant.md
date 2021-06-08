@@ -63,7 +63,7 @@ Returns true if the subject entity is the variant number provided.
 
 ### panda
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/panda.json" range="563-606":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/panda.json" range="565-608":::
 
 ## Vanilla entities using `is_variant`
 

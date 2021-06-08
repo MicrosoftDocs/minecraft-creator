@@ -63,7 +63,7 @@ Tests the current temperature against a provided value in the range (0.0, 1.0) w
 
 ### snow_golem
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/snow_golem.json" range="60-78":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/snow_golem.json" range="62-80":::
 
 ## Vanilla entities using `is_temperature_value`
 

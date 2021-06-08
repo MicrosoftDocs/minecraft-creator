@@ -28,7 +28,7 @@ ms.prod: gaming
 
 ### wither
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither.json" range="69-71":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither.json" range="74-76":::
 
 ## Vanilla entities using `minecraft:behavior.wither_target_highest_damage`
 

@@ -35,7 +35,7 @@ ms.prod: gaming
 
 ### dolphin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/dolphin.json" range="288-292":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/dolphin.json" range="284-288":::
 
 ## Vanilla entities using `minecraft:behavior.move_to_water`
 

@@ -30,7 +30,7 @@ ms.prod: gaming
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="314-318":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="320-324":::
 
 ## Vanilla entities using `minecraft:behavior.find_cover`
 

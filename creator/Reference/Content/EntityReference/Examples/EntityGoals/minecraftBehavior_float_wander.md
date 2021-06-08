@@ -36,7 +36,7 @@ ms.prod: gaming
 
 ### ghast
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ghast.json" range="37-40":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ghast.json" range="39-42":::
 
 ## Vanilla entities using `minecraft:behavior.float_wander`
 

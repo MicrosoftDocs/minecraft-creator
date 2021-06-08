@@ -21,7 +21,7 @@ ms.prod: gaming
 
 ### creeper
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/creeper.json" range="159-161":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/creeper.json" range="161-163":::
 
 ## Vanilla entities using `minecraft:behavior.float`
 

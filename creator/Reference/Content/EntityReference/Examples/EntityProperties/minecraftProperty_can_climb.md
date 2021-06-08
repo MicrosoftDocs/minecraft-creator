@@ -20,7 +20,7 @@ ms.prod: gaming
 
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="1454-1455":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="1456-1457":::
 
 ## Vanilla entities using `minecraft:can_climb`
 

@@ -41,7 +41,7 @@ ms.prod: gaming
 
 ### rabbit
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/rabbit.json" range="185-192":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/rabbit.json" range="187-194":::
 
 ## Vanilla entities using `minecraft:behavior.raid_garden`
 

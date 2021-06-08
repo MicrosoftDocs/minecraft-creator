@@ -35,7 +35,7 @@ ms.prod: gaming
 
 ### iron_golem
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/iron_golem.json" range="216-220":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/iron_golem.json" range="218-222":::
 
 ## Vanilla entities using `minecraft:behavior.move_towards_target`
 

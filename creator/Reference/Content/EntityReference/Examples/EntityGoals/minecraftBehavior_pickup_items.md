@@ -39,7 +39,7 @@ ms.prod: gaming
 
 ### zombie_villager_v2
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie_villager_v2.json" range="598-605":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie_villager_v2.json" range="600-607":::
 
 ## Vanilla entities using `minecraft:behavior.pickup_items`
 

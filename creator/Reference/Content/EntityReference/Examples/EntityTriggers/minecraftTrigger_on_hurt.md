@@ -31,7 +31,7 @@ ms.prod: gaming
 
 ### blaze
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/blaze.json" range="146-149":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/blaze.json" range="148-151":::
 
 ## Vanilla entities using `minecraft:on_hurt`
 

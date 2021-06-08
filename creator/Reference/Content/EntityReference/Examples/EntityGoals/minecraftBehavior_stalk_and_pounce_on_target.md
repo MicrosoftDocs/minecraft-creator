@@ -54,7 +54,7 @@ ms.prod: gaming
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="578-589":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="588-599":::
 
 ## Vanilla entities using `minecraft:behavior.stalk_and_pounce_on_target`
 

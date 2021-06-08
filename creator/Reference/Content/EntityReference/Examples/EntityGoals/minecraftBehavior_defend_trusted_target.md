@@ -45,9 +45,8 @@ ms.prod: gaming
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="73-83":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="79-89":::
 
 ## Vanilla entities using `minecraft:behavior.defend_trusted_target`
 
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-

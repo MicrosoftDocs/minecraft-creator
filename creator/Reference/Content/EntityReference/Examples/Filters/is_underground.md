@@ -67,7 +67,7 @@ Returns true when the subject entity is underground. An entity is considered und
 
 ### spider
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/spider.json" range="236-315":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/spider.json" range="246-259":::
 
 ## Vanilla entities using `is_underground`
 

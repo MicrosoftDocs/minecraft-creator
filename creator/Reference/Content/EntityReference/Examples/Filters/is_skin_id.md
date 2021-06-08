@@ -63,7 +63,7 @@ Returns true if the subject entity uses the skin id number provided.
 
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="2012-2038":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="2013-2066":::
 
 ## Vanilla entities using `is_skin_id`
 

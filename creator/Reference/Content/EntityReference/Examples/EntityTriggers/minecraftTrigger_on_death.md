@@ -34,7 +34,7 @@ ms.prod: gaming
 
 ### ender_dragon
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ender_dragon.json" range="92-95":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ender_dragon.json" range="94-97":::
 
 ## Vanilla entities using `minecraft:on_death`
 

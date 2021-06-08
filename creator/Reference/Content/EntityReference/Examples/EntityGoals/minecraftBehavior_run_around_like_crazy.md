@@ -28,7 +28,7 @@ ms.prod: gaming
 
 ### llama
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/llama.json" range="392-395":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/llama.json" range="394-397":::
 
 ## Vanilla entities using `minecraft:behavior.run_around_like_crazy`
 

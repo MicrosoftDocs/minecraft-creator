@@ -67,7 +67,7 @@ Tests whether the subject is sneaking.
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="546-568":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="562-566":::
 
 ## Vanilla entities using `is_sneaking`
 

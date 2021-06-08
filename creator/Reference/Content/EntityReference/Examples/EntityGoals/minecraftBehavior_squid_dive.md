@@ -24,7 +24,7 @@ ms.prod: gaming
 
 ### squid
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/squid.json" range="87-89":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/squid.json" range="89-91":::
 
 ## Vanilla entities using `minecraft:behavior.squid_dive`
 

@@ -30,7 +30,7 @@ ms.prod: gaming
 
 ### iron_golem
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/iron_golem.json" range="221-225":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/iron_golem.json" range="223-227":::
 
 ## Vanilla entities using `minecraft:behavior.move_through_village`
 

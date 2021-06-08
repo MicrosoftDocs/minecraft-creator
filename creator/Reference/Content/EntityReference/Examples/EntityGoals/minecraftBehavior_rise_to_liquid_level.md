@@ -24,7 +24,7 @@ ms.prod: gaming
 
 ### strider
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/strider.json" range="268-273":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/strider.json" range="270-275":::
 
 ## Vanilla entities using `minecraft:behavior.rise_to_liquid_level`
 

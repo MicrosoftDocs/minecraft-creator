@@ -30,7 +30,7 @@ ms.prod: gaming
 
 ### zombie
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="170-172":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="172-174":::
 
 ## Vanilla entities using `minecraft:loot`
 
