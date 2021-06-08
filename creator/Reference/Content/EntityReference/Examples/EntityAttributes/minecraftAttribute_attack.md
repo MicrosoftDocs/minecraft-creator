@@ -42,6 +42,7 @@ ms.prod: gaming
 
 ## Vanilla entities using `minecraft:attack`
 
+- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)

@@ -33,9 +33,9 @@ ms.prod: gaming
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/cow.json" range="40-43":::
 
-
 ## Vanilla entities using `minecraft:behavior.breed`
 
+- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
 - [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)

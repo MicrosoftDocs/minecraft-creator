@@ -126,6 +126,7 @@ ms.prod: gaming
 
 ## Vanilla entities using `minecraft:breedable`
 
+- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
 - [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)

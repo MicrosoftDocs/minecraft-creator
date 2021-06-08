@@ -51,6 +51,7 @@ ms.prod: gaming
 
 ## Vanilla entities using `minecraft:breathable`
 
+- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)

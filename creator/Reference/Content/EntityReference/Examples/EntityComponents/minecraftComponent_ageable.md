@@ -44,6 +44,7 @@ ms.prod: gaming
 
 ## Vanilla entities using `minecraft:ageable`
 
+- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)

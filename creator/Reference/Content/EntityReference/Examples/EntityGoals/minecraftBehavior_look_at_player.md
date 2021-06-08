@@ -44,6 +44,7 @@ ms.prod: gaming
 
 ## Vanilla entities using `minecraft:behavior.look_at_player`
 
+- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
 - [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
 - [chest_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/chest_minecart.md)

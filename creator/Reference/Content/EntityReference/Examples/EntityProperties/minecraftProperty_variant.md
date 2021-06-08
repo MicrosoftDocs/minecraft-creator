@@ -34,6 +34,7 @@ ms.prod: gaming
 
 ## Vanilla entities using `minecraft:variant`
 
+- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)

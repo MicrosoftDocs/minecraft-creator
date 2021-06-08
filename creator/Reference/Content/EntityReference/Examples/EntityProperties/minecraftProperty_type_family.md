@@ -47,6 +47,7 @@ ms.prod: gaming
 ## Vanilla entities using `minecraft:type_family`
 
 - [armor_stand](../../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)
+- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
