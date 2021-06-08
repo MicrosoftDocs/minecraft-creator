@@ -40,7 +40,7 @@ Use the following workflow to make updates to an existing article via GitHub in 
 
 2. Select the edit button (pencil icon) in the top right, which will automatically fork a disposable branch off the 'main' branch.
 
-[image]
+![Learning Portal Edit Button](Media/ContributorGuide/LearningPortal_EditButton.png)
 
 3. Edit the content of the article and format according to the [Markdown basics](#markdown-basics).
 
@@ -86,17 +86,14 @@ Use the following workflow to create new articles in the documentation repo via 
 
 1. Create a fork off the MicrosoftDocs/minecraft-creator 'main' branch (using the Fork button in the top right).
 
-[Image]
+![GitHub Fork Button](\Media\ContributorGuide\LearningPortal_GitHubFork.png)
 
 2. In the "creator/Documents" folder, select **Add file** > **Create new file** in the top right.
 
 3. Create a page name for the article (use hyphens instead of spaces and don't use punctuation or apostrophes) and append ".md"
 
-[Image]
-
- Important
-
-Make sure you create the new article from within the "creator/Documents" folder. You can confirm this by checking for "/creator/Documents" in the new file name line.
+>[!IMPORTANT]
+>Make sure you create the new article from within the "creator/Documents" folder. You can confirm this by checking for "/creator/Documents" in the new file name line.
 
 4. At the top of your new page, add the following metadata block:
 
@@ -122,7 +119,7 @@ keywords:
 
 9. Select New pull request and merge your fork's 'main' branch into MicrosoftDocs/minecraft-creator 'main' (make sure the arrow is pointing the correct way).
 
-[Image]
+![GitHub Pull Request](\Media\ContributorGuide\LearningPortal_GitHubPR.png)
 
 Your pull request will be reviewed by our content team. If it is approved, your changes will go live at our next regular release. If your pull request is not approved, a member of the content team will leave a comment in your pull request letting you know the reason it was not approved.
 
@@ -150,9 +147,8 @@ The Docs Markdown Extension for Visual Studio Code also makes table generation e
 
 You’ll need to upload your images to the "minecraft-creator/creator/images" folder in the repo, and then reference them appropriately in the article. Images will automatically show up at full-size, which means large images will fill the entire width of the article. We recommend pre-sizing your images before uploading them. The recommended width is between 600 and 700 pixels, though you should size up or down if it’s a dense screenshot or a fraction of a screenshot, respectively.
 
- Important
-
-You can only upload images to your forked repo before merging. So if you plan on adding images to an article, you'll need to use Visual Studio Code to add the images to your fork's "images" folder first or make sure you've done the following in a web browser:
+ >[!IMPORTANT]
+ >You can only upload images to your forked repo before merging. So if you plan on adding images to an article, you'll need to use Visual Studio Code to add the images to your fork's "images" folder first or make sure you've done the following in a web browser:
 
 1. Forked the MicrosoftDocs/minecraft-creator repo.
 2. Edited the article in your fork.
@@ -165,9 +161,8 @@ To learn how to set up your own forked repo, follow the instructions for creatin
 
 While editing in GitHub via a web browser, you can select the Preview tab near the top of the page to preview your work before committing.
 
- Note
-
-Previewing your changes on review.docs.microsoft.com is only available to Microsoft employees
+>[!NOTE]
+>Previewing your changes on review.docs.microsoft.com is only available to Microsoft employees
 
 Microsoft employees: once your contributions have been merged into the 'main' branch, you can review the content before it goes public at https://github.com/MicrosoftDocs/minecraft-creator/tree/main/creator. Find your article using the table of contents in the left column.
 
@@ -215,19 +210,18 @@ Follow these steps to configure Visual Studio Code to work with this repo:
 
 Use the following workflow to make changes to the documentation with Visual Studio Code:
 
- Note
-
-All the guidance for editing and creating articles, and the basics of editing Markdown from above applies when using Visual Studio Code as well.
+ >[!NOTE]
+ >All the guidance for editing and creating articles, and the basics of editing Markdown from above applies when using Visual Studio Code as well.
 
 1. Make sure your cloned fork is up to date with the official repo.
 
     a. In a web browser, create a pull request to sync recent changes from other contributors in MicrosoftDocs/minecraft-creator 'main' to your fork (make sure the arrow is pointing the right way).
 
-    [Image]
+    ![GitHub Sync Pull](Media\ContributorGuide\LearningPortal_GitHubSyncPull.png)
 
     b. In Visual Studio Code, select the sync button to sync your freshly updated fork to the local clone.
 
-    [Image]
+    ![GitHub Sync Button](Media\ContributorGuide\LearningPortal_GitHubSyncButton.png)
 
 2. Create or edit articles in your cloned repo using Visual Studio Code.
 
@@ -235,19 +229,15 @@ All the guidance for editing and creating articles, and the basics of editing Ma
 
     b. **Save** changes in **Explorer**.
 
-    [Image]
-
     c. Commit all changes in Source Control (write commit message when prompted).
 
-    [Image]
+    ![GitHub Commit Changes](Media\ContributorGuide\LearningPortal_GitHubCommitChanges.png)
 
     d. Select the sync button to sync your changes back to origin (your fork on GitHub).
 
-    [Image]
-
 3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/minecraft-creator 'main' (make sure the arrow is pointing the correct way).
 
-    [Image]
+    ![GitHub Pull Request](\Media\ContributorGuide\LearningPortal_GitHubPR.png)
 
 ### Useful extensions
 

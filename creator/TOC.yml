@@ -18,6 +18,12 @@
           items:
           - name: Getting Started with Commands
             href: Documents/CommandBlocks.md
+        - name: Contributing to Minecraft Bedrock Documentation
+          items:
+            - name: Contributing to Minecraft Bedrock Documentation
+              href: Documents/ContributorGuide.md
+            - name: Contributor Style Guide
+              href: Documents/StyleGuide.md
         - name: GameTest Framework
           items:
           - name: Getting Started with GameTest
