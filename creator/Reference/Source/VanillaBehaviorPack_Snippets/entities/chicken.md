@@ -1,10 +1,10 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Chicken
+title: chicken
 ms.prod: gaming
 ---
 
-# Chicken
+# chicken
 
 :::code language="json" source="../../VanillaBehaviorPack/entities/Chicken.json":::

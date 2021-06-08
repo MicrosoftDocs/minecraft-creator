@@ -1,10 +1,10 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Creeper
+title: creeper
 ms.prod: gaming
 ---
 
-# Creeper
+# creeper
 
 :::code language="json" source="../../VanillaBehaviorPack/entities/creeper.json":::

@@ -1,10 +1,10 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Cat
+title: cat
 ms.prod: gaming
 ---
 
-# Cat
+# cat
 
 :::code language="json" source="../../VanillaBehaviorPack/entities/cat.json":::

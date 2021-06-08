@@ -1,10 +1,10 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Cow
+title: cow
 ms.prod: gaming
 ---
 
-# Cow
+# cow
 
 :::code language="json" source="../../VanillaBehaviorPack/entities/cow.json":::

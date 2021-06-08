@@ -1,10 +1,10 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Armor_stand
+title: armor_stand
 ms.prod: gaming
 ---
 
-# Armor_stand
+# armor_stand
 
 :::code language="json" source="../../VanillaBehaviorPack/entities/armor_stand.json":::

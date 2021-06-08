@@ -1,10 +1,10 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Arrow
+title: arrow
 ms.prod: gaming
 ---
 
-# Arrow
+# arrow
 
 :::code language="json" source="../../VanillaBehaviorPack/entities/arrow.json":::

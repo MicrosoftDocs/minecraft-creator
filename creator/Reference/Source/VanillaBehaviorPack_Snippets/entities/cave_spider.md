@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Cave_Spider
+title: cave_spider
 ms.prod: gaming
 ---
 
 
-# Cave Spider
+# cave spider
 
 :::code language="json" source="../../VanillaBehaviorPack/entities/cave_spider.json":::

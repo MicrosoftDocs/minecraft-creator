@@ -1,10 +1,10 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Boat
+title: boat
 ms.prod: gaming
 ---
 
-# Boat
+# boat
 
 :::code language="json" source="../../VanillaBehaviorPack/entities/boat.json":::

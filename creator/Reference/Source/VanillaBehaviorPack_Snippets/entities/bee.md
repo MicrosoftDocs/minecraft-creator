@@ -1,10 +1,10 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Bee
+title: bee
 ms.prod: gaming
 --- 
 
-# Bee
+# bee
 
 :::code language="json" source="../../VanillaBehaviorPack/entities/bee.json":::

@@ -1,10 +1,10 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Blaze
+title: blaze
 ms.prod: gaming
 ---
 
-# Blaze
+# blaze
 
 :::code language="json" source="../../VanillaBehaviorPack/entities/blaze.json":::

@@ -1,10 +1,10 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Command_Block_Minecraft
+title: command_block_minecraft
 ms.prod: gaming
 ---
 
-# Command Block Minecarft
+# command block minecarft
 
 :::code language="json" source="../../VanillaBehaviorPack/entities/command_block_minecart.json":::

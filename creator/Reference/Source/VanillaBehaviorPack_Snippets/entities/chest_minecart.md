@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Chest_Minecraft
+title: chest_minecraft
 ms.prod: gaming
 ---
 
 
-# Chest Minecart
+# chest minecart
 
 :::code language="json" source="../../VanillaBehaviorPack/entities/chest_minecart.json":::

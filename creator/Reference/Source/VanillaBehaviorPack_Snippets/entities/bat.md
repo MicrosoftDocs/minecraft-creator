@@ -1,10 +1,10 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Bat
+title: bat
 ms.prod: gaming
 ---
 
-# Bat
+# bat
 
 :::code language="json" source="../../VanillaBehaviorPack/entities/bat.json":::
