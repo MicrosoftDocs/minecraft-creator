@@ -19,7 +19,7 @@ This component allows entities to make close combat melee attacks.
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|[melee_fov](../Definitions/melee_fov.md)     |90.0       |Decimal   |The allowable FOV the actor will use to determine if it can make a valid melee attack|
+|melee_fov |90.0       |Decimal   |The allowable FOV the actor will use to determine if it can make a valid melee attack|
 |speed_multiplier     |1.0         |Decimal         |Movement speed multiplier of the mob when using this AI Goal|
 |track_target     |false         |Boolean         |If true, this mob will chase after the target as long as it's a valid target|
 |attack_types     |         |String         |Defines the entity types this mob will attack|
@@ -54,6 +54,7 @@ This component allows entities to make close combat melee attacks.
 
 ### Vanilla mobs using `melee_attack`
 
+- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [bee](../../../../source/vanillabehaviorpack_snippets/entities/bee.md)
 - [blaze](../../../../source/vanillabehaviorpack_snippets/entities/blaze.md)
 - [cave spider](../../../../source/vanillabehaviorpack_snippets/entities/cave_spider.md)

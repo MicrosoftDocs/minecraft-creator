@@ -39,5 +39,6 @@ ms.prod: gaming
 
 ## Vanilla entities using `minecraft:behavior.move_to_water`
 
+- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
 - [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)

@@ -38,6 +38,7 @@ ms.prod: gaming
 
 ## Vanilla entities using `minecraft:behavior.tempt`
 
+- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
 - [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
