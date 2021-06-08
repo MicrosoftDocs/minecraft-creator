@@ -11,7 +11,7 @@ ms.prod: gaming
 
 >[!IMPORTANT]
 > `minecraft:behavior.offer_flower` requires a flower item to be held by the entity.
-> This behavior can only be used by `villager` entity types.
+> This behavior can only be used by the `villager` entity types.
 
 ## Example
 

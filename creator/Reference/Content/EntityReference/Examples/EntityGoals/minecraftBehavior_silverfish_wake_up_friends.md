@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.silverfish_wake_up_friends` allows an entity to alert other entities of the same family to leave a stone block.
 
 > [!NOTE]
-> This behavior can only be used by `silverfish` entity type.
+> This behavior can only be used by the `silverfish` entity type.
 > This behavior requires `minecraft:behavior.silverfish_merge_with_stone` to be set.
 
 ## Example

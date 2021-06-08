@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.skeleton_horse_trap` allows an entity to function as a Skeleton horse trap and be triggered like them, spawning a lightning bolt, additional skeleton horses and skeleton horse riders when a player gets nearby.
 
 > [!NOTE]
-> This behavior can only be used by `horse`, `mule`, `donkey` and `skeleton horses` entity type.
+> This behavior can only be used by the `horse`, `mule`, `donkey` and `skeleton horses` entity type.
 
 ## Parameters
 

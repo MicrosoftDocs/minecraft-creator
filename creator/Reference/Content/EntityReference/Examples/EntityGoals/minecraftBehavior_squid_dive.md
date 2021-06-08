@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.squid_dive` allows an entity to dive underwater.
 
 > [!NOTE]
-> This behavior can only be used by `squid` entity type.
+> This behavior can only be used by the `squid` entity type.
 
 ## Example
 

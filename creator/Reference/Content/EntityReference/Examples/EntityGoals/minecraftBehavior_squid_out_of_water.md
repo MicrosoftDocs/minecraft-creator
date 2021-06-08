@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.squid_out_of_water` allows an entity to stay close to a ground block when out of water.
 
 > [!NOTE]
-> This behavior can only be used by `squid` entity type.
+> This behavior can only be used by the `squid` entity type.
 
 ## Example
 

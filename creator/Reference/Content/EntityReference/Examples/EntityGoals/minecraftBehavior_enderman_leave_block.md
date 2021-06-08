@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.enderman_leave_block` allows the entity to drop the block they are currently holding.
 
 > [!NOTE]
-> This behavior can only be used by `enderman` entity type.
+> This behavior can only be used by the `enderman` entity type.
 
 ## Example
 

@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.wither_random_attack_pos_goal` allows an entity to attack at random.
 
 > [!NOTE]
-> This behavior can only be used by `wither` entity type.
+> This behavior can only be used by the `wither` entity type.
 
 ## Example
 
