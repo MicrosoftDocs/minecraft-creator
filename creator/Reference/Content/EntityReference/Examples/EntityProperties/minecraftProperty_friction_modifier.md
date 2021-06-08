@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:friction_modifier":{
-    "value": 2.0 //twice the friction
+    "value": 2.0
 }
 ```
 

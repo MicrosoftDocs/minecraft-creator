@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:skin_id":{
-    "value": 0.75,
+    "value": 0,
 }
 ```
 
