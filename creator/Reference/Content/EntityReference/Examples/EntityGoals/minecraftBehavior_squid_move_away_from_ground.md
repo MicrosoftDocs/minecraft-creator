@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.squid_move_away_from_ground` allows an entity to swim away from the ground blocks.
 
 > [!NOTE]
-> This behavior can only be used by `squid` entity types.
+> This behavior can only be used by `squid` entity type.
 
 ## Example
 

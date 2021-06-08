@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.silverfish_merge_with_stone` allows an entity to enter a stone block.
 
 > [!NOTE]
-> This behavior can only be used by `silverfish` entity types.
+> This behavior can only be used by `silverfish` entity type.
 
 ## Example
 

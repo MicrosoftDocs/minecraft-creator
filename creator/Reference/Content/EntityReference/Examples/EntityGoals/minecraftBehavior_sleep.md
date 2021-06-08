@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.sleep` allows an entity to sleep in a bed.
 
 > [!NOTE]
-> This behavior can only be used by `villager` entity types.
+> This behavior can only be used by `villager` entity type.
 
 ## Parameters
 

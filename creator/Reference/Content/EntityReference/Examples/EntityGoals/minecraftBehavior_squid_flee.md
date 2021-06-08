@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.squid_flee` allows an entity to swim away when attacked.
 
 > [!NOTE]
-> This behavior can only be used by `squid` entity types.
+> This behavior can only be used by `squid` entity type.
 
 ## Example
 

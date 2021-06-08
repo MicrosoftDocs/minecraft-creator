@@ -8,7 +8,7 @@ ms.prod: gaming
 
 # AI Goal list
 
-Below are a list of all the available AI Goals within Minecraft:Bedrock Edition for use with Entity files.
+Below is a list of all the available AI Goals within Minecraft:Bedrock Edition for use with Entity files.
 
 |AI Goal |Description|
 |:-----|:----------|
