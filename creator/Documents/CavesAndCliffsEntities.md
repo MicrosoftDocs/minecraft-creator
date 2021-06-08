@@ -25,7 +25,7 @@ The [glow squid](../Reference/Source/VanillaBehaviorPack_Snippets/entities/glow_
 
 ## Goat
 
-The [goat](../Reference/Source/VanillaBehaviorPack_Snippets/entities/goat.md)is a mischievous mob that can be found in the mountain biomes. While hanging out, it will search for random blocks to jump to within a set height, width, and distance and jump to that block. You can tweak the following parameters for this behavior:
+The [goat](../Reference/Source/VanillaBehaviorPack_Snippets/entities/goat.md) is a mischievous mob that can be found in the mountain biomes. While hanging out, it will search for random blocks to jump to within a set height, width, and distance and jump to that block. You can tweak the following parameters for this behavior:
 
 - How far the goat will search for a block to jump to.
 - How fast the goat will jump.
