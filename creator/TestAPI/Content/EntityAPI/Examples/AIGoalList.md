@@ -46,6 +46,7 @@ Below are a list of all the available AI Goals within Minecraft:Bedrock Edition 
 |[minecraft:behavior.hold_ground](EntityGoals/minecraftBehavior_hold_ground.md)|`minecraft:behavior.hold_ground` allows an entity to stop in their current location, turn to face a mob they are targeting and react with an event. |
 |[minecraft:behavior.hurt_by_target](EntityGoals/minecraftBehavior_hurt_by_target.md)|`minecraft:behavior.hurt_by_target` allows an entity to react when hit by set target. |
 |[minecraft:behavior.inspect_bookshelf](EntityGoals/minecraftBehavior_inspect_bookshelf.md)|`minecraft:behavior.inspect_bookshelf` allows an entity to look at and inspect a bookshelf. |
+|**NEW!** &nbsp; [minecraft:behavior.jump_to_block](EntityGoals/minecraftBehavior_jump_to_block.md) |This component allows the mob to search around for a block to jump to and then jump to that block. |
 |[minecraft:behavior.knockback_roar](EntityGoals/minecraftBehavior_knockback_roar.md)|`minecraft:behavior.knockback_roar` allows an entity to emit a roar effect that knocks back other entities in a set radius from where the roar was emitted. |
 |[minecraft:behavior.lay_down](EntityGoals/minecraftBehavior_lay_down.md)|`minecraft:behavior.lay_down` allows an entity randomly lay down for a period of time. |
 |[minecraft:behavior.lay_egg](EntityGoals/minecraftBehavior_lay_egg.md)|`minecraft:behavior.lay_egg` allows an entity to lay eggs |
@@ -79,9 +80,11 @@ Below are a list of all the available AI Goals within Minecraft:Bedrock Edition 
 |[minecraft:behavior.peek](EntityGoals/minecraftBehavior_peek.md)|`minecraft:behavior.peek` allows an entity to peek out. |
 |[minecraft:behavior.pet_sleep_with_owner](EntityGoals/minecraftBehavior_pet_sleep_with_owner.md)|`minecraft:behavior.pet_sleep_with_owner` allows an entity to sleep on a bed shared with its' owner. |
 |[minecraft:behavior.pickup_items](EntityGoals/minecraftBehavior_pickup_items.md)|`minecraft:behavior.pickup_items` allows an entity to pick up selected items off the ground. |
+|**NEW!** &nbsp; [minecraft:behavior.play_dead](EntityGoals/minecraftBehavior_play_dead.md) |This component allows the mob to play dead when attacked by other entities. When playing dead, other entities will not target this mob. |
 |[minecraft:behavior.play](EntityGoals/minecraftBehavior_play.md)|`minecraft:behavior.play` allows an entity to play with entities that have been tagged as `baby`. |
 |[minecraft:behavior.player_ride_tamed](EntityGoals/minecraftBehavior_player_ride_tamed.md)|`minecraft:behavior.player_ride_tamed` allows an entity to be rideable after being tamed by a player. |
 |[minecraft:behavior.raid_garden](EntityGoals/minecraftBehavior_raid_garden.md)|`minecraft:behavior.raid_garden` allows an entity to eat crops that have been planted in a farm. |
+|**NEW!** &nbsp; [minecraft:behavior.ram_attack](EntityGoals/minecraftBehavior_ram_attack.md) |This component allows the mob to search for a random target and, if a direct path exists between the mob and the target, it will perform a charge. If the attack hits, the target will be knocked back based on the mob's speed. |
 |[minecraft:behavior.random_breach](EntityGoals/minecraftBehavior_random_breach.md)|`minecraft:behavior.random_breach` allows an entity to breach the surface of the water at a random interval. |
 |[minecraft:behavior.random_fly](EntityGoals/minecraftBehavior_random_fly.md)|`minecraft:behavior.random_fly` allows an entity to fly in a random point in water. |
 |[minecraft:behavior.random_hover](EntityGoals/minecraftBehavior_random_hover.md)|`minecraft:behavior.random_hover` allows an entity to hover around in random locations. |
@@ -126,8 +129,7 @@ Below are a list of all the available AI Goals within Minecraft:Bedrock Edition 
 |[minecraft:behavior.trade_interest](EntityGoals/minecraftBehavior_trade_interest.md)|`minecraft:behavior.trade_interest` allows an entity to focus on a player that will initiate a trade. |
 |[minecraft:behavior.trade_with_player](EntityGoals/minecraftBehavior_trade_with_player.md)|`minecraft:behavior.trade_with_player` allows an entity to focus on a player that will initiate a trade. |
 |[minecraft:behavior.vex_copy_owner_target](EntityGoals/minecraftBehavior_vex_copy_owner_target.md)|`minecraft:behavior.vex_copy_owner_target` allows an entity of the`vex` family to target the same entity as it's owner. |
-|[minecraft:behavior.vex_random_move](EntityGoals/minecraftBehavior_vex_random_move.md)|`minecraft:behavior.vex_random_move` allows an entity of the`vex` family to move randomly.
- |
+|[minecraft:behavior.vex_random_move](EntityGoals/minecraftBehavior_vex_random_move.md)|`minecraft:behavior.vex_random_move` allows an entity of the`vex` family to move randomly.|
 |[minecraft:behavior.wither_random_attack_pos_goal](EntityGoals/minecraftBehavior_wither_random_attack_pos_goal.md)|`minecraft:behavior.wither_random_attack_pos_goal` allows an entity to attack at random.
  |
 |[minecraft:behavior.wither_target_highest_damage](EntityGoals/minecraftBehavior_wither_target_highest_damage.md)|`minecraft:behavior.wither_target_highest_damage` allows an entity to focus its attacks on whichever hostile mob has dealt the most damage to it. |

@@ -44,6 +44,10 @@
   href: minecraftBehavior_hold_ground.md
 - name: minecraft:behavior.hurt_by_target
   href: minecraftBehavior_hurt_by_target.md
+- name: minecraft:behavior.inspect_bookshelf
+  href: minecraftBehavior_inspect_bookshelf.md
+- name: minecraft:behavior.jump_to_block
+  href: minecraftBehavior_jump_to_block.md
 - name: minecraft:behavior.knockback_roar
   href: minecraftBehavior_knockback_roar.md
 - name: minecraft:behavior.lay_down
@@ -98,6 +102,22 @@
   href: minecraftBehavior_owner_hurt_target.md
 - name: minecraft:behavior.panic
   href: minecraftBehavior_panic.md
+- name: minecraft:behavior.peek
+  href: minecraftBehavior_peek.md
+- name: minecraft:behavior.pet_sleep_with_owner
+  href: minecraftBehavior_pet_sleep_with_owner.md
+- name: minecraft:behavior.pickup_items
+  href: minecraftBehavior_pickup_items.md
+- name: minecraft:behavior.play_dead
+  href: minecraftBehavior_play_dead.md
+- name: minecraft:behavior.play
+  href: minecraftBehavior_play.md
+- name: minecraft:behavior.player_ride_tamed
+  href: minecraftBehavior_player_ride_tamed.md
+- name: minecraft:behavior.raid_garden
+  href: minecraftBehavior_raid_garden.md
+- name: minecraft:behavior.ram_attack
+  href: minecraftBehavior_ram_attack.md
 - name: minecraft:behavior.random_breach
   href: minecraftBehavior_random_breach.md
 - name: minecraft:behavior.random_look_around_and_sit
@@ -130,5 +150,25 @@
   href: minecraftBehavior_stomp_turtle_egg.md
 - name: minecraft:behavior.stroll_towards_village
   href: minecraftBehavior_stroll_towards_village.md
+- name: minecraft:behavior.summon_entity
+  href: minecraftBehavior_summon_entity.md
+- name: minecraft:behavior.swell
+  href: minecraftBehavior_swell.md
+- name: minecraft:behavior.take_flower
+  href: minecraftBehavior_take_flower.md
+- name: minecraft:behavior.tempt
+  href: minecraftBehavior_tempt.md
+- name: minecraft:behavior.trade_interest
+  href: minecraftBehavior_trade_interest.md
+- name: minecraft:behavior.trade_with_player
+  href: minecraftBehavior_trade_with_player.md
+- name: minecraft:behavior.vex_copy_owner_target
+  href: minecraftBehavior_vex_copy_owner_target.md
+- name: minecraft:behavior.vex_random_move
+  href: minecraftBehavior_vex_random_move.md
+- name: minecraft:behavior.wither_random_attack_pos_goal
+  href: minecraftBehavior_wither_random_attack_pos_goal.md
+- name: minecraft:behavior.wither_target_highest_damage
+  href: minecraftBehavior_wither_target_highest_damage.md
 - name: minecraft:behavior.work
   href: minecraftBehavior_work.md
