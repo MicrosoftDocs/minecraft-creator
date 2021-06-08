@@ -46,7 +46,7 @@ This component allows entities to make close combat melee attacks.
 
 ### Zombie
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="401-403":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="403-405":::
 
 ### Cave Spider
 

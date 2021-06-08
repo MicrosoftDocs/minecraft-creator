@@ -31,7 +31,7 @@ ms.prod: gaming
 
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="523-526":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="1241-1243":::
 
 ## Vanilla entities using `minecraft:behavior.receive_love`
 

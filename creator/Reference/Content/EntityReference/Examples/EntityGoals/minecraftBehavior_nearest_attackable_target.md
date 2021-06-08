@@ -57,7 +57,7 @@ Allows an entity to attack the closest target within a given subset of specific 
 
 ### Zombie
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="435-472":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="437-474":::
 
 ### Vanilla mobs using `nearest_attackable_target`
 

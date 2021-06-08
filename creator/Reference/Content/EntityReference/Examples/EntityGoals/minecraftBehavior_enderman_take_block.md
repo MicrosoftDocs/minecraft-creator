@@ -24,7 +24,7 @@ ms.prod: gaming
 
 ### enderman
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/enderman.json" range="162-164":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/enderman.json" range="164-166":::
 
 ## Vanilla entities using `minecraft:behavior.enderman_take_block`
 

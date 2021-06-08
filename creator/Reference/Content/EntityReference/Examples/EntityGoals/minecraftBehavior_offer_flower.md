@@ -24,7 +24,7 @@ ms.prod: gaming
 
 ### iron_golem
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/iron_golem.json" range="230-232":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/iron_golem.json" range="232-234":::
 
 ## Vanilla entities using `minecraft:behavior.offer_flower`
 

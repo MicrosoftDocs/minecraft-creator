@@ -28,7 +28,7 @@ ms.prod: gaming
 
 ### blaze
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/blaze.json" range="134-136":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/blaze.json" range="136-138":::
 
 ## Vanilla entities using `minecraft:behavior.random_look_around`
 

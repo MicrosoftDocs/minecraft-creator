@@ -33,7 +33,7 @@ ms.prod: gaming
 
 ### llama
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/llama.json" range="396-402":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/llama.json" range="398-405":::
 
 ## Vanilla entities using `minecraft:behavior.follow_caravan`
 

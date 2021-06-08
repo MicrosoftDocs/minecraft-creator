@@ -37,11 +37,11 @@ ms.prod: gaming
 
 ### piglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="476-478":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="480-482":::
 
 ### iron_golem
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/iron_golem.json" range="306-311":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/iron_golem.json" range="308-313":::
 
 ## Vanilla entities using `minecraft:behavior.hurt_by_target`
 

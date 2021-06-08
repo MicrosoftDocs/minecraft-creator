@@ -34,7 +34,7 @@ ms.prod: gaming
 
 ### mooshroom
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/mooshroom.json" range="488-494":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/mooshroom.json" range="490-496":::
 
 ## Vanilla entities using `minecraft:behavior.tempt`
 

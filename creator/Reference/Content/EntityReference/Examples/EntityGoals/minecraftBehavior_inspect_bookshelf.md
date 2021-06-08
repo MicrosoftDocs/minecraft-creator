@@ -36,7 +36,7 @@ ms.prod: gaming
 
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="1549-1553":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="1551-1555":::
 
 ## Vanilla entities using `minecraft:behavior.inspect_bookshelf`
 

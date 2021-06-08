@@ -35,7 +35,7 @@ ms.prod: gaming
 
 ### wolf
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wolf.json" range="404-410":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wolf.json" range="406-412":::
 
 ## Vanilla entities using `behavior`
 

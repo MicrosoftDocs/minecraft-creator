@@ -37,7 +37,7 @@ ms.prod: gaming
 
 ### dolphin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/dolphin.json" range="248-253":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/dolphin.json" range="244-249":::
 
 ## Vanilla entities using `minecraft:behavior.random_breach`
 

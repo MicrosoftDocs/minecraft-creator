@@ -30,7 +30,7 @@ ms.prod: gaming
 
 ### creeper
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/creeper.json" range="162-166":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/creeper.json" range="164-168":::
 
 ## Vanilla entities using `minecraft:behavior.swell`
 

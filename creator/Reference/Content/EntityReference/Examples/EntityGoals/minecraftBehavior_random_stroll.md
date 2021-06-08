@@ -34,7 +34,7 @@ ms.prod: gaming
 
 ### cat
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/cat.json" range="382-385":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/cat.json" range="384-387":::
 
 ## Vanilla entities using `minecraft:behavior.random_stroll`
 
