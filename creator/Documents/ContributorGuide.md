@@ -28,7 +28,7 @@ When setting up your GitHub account, we also recommend these security precaution
 - Update your public profile settings.
     - Set your name, and consider setting your Public email to Don't show my email address.
     - We recommend you upload a profile picture because a thumbnail is shown on docs pages you contribute to.
-- If you plan to use the command line, consider setting up Git Credential Manager for Windows. That way, you won't have to enter your password every time you make a contribution.
+- If you plan to use the command line, consider setting up Git Credential Manager for Windows. That way you won't have to enter your password every time you make a contribution.
 
 The publishing system is tied to GitHub, so these steps are important. You'll be listed as either author or contributor to each article using your GitHub alias.
 
@@ -40,7 +40,7 @@ Use the following workflow to make updates to an existing article via GitHub in 
 
 2. Select the edit button (pencil icon) in the top right, which will automatically fork a disposable branch off the 'main' branch.
 
-[image]
+![Learning Portal Edit Button](Media/ContributorGuide/LearningPortal_EditButton.png)
 
 3. Edit the content of the article and format according to the [Markdown basics](#markdown-basics).
 
@@ -51,7 +51,7 @@ Use the following workflow to make updates to an existing article via GitHub in 
     - **author**: If you're the primary owner of the page, add your GitHub alias here.
     - **ms.author**: If you're the primary owner of the page, add your Microsoft alias here (you don't need @microsoft.com, just the alias).
     - **ms.date**: Update the date if you're adding major content to the page, but not for fixes like clarification, formatting, grammar, or spelling.
-    - **keywords**: Keywords aid in SEO (search engine optimization). Add keywords, separated by a comma and a space, that are specific to your article, but no punctuation after the last keyword in your list. You don't need to add global keywords that apply to all articles, as those are managed elsewhere.
+    - **keywords**: Keywords aid in SEO (search engine optimization). Add keywords separated by a comma and a space that are specific to your article, but no punctuation after the last keyword in your list. You don't need to add global keywords that apply to all articles, as those are managed elsewhere.
 
 5. When you've completed your article edits, scroll down and select Propose file change.
 
@@ -75,7 +75,7 @@ To add a redirect to .openpublishing.redirection.json, add an entry to the `redi
         },
 ```
 - The `source_path` is the relative repository path to the old article that you're removing. Be sure the path starts with `minecraft-creator/creator` and ends with `.md`.
-- The `redirect_url` is the relative public URL from the old article to the new article. Be sure that this URL **doesn't** contain `minecraft-creator/creator` or `.md`, as it refers to the public URL and not the repository path. Linking to a section within the new article using #section is allowed. You can also use an absolute path to another site here, if necessary.
+- The `redirect_url` is the relative public URL from the old article to the new article. Be sure that this URL **doesn't** contain `minecraft-creator/creator` or `.md`, as it refers to the public URL and not the repository path. Linking to a section within the new article using #section is allowed. You can also use an absolute path to another site here if necessary.
 - `redirect_document_id` indicates whether you would like to keep the document ID from the previous file. The default is false. Use true if you want to preserve the ms.documentid attribute value from the redirected article. If you preserve the document ID, data, such as page views and rankings, will be transferred to the target article. Do this if the redirect is primarily a rename, and not a pointer to different article that only covers some of the same content.
 
 If you add a redirect, be sure to delete the old file as well.
@@ -86,17 +86,14 @@ Use the following workflow to create new articles in the documentation repo via 
 
 1. Create a fork off the MicrosoftDocs/minecraft-creator 'main' branch (using the Fork button in the top right).
 
-[Image]
+![GitHub Fork Button](\Media\ContributorGuide\LearningPortal_GitHubFork.png)
 
 2. In the "creator/Documents" folder, select **Add file** > **Create new file** in the top right.
 
 3. Create a page name for the article (use hyphens instead of spaces and don't use punctuation or apostrophes) and append ".md"
 
-[Image]
-
- Important
-
-Make sure you create the new article from within the "creator/Documents" folder. You can confirm this by checking for "/creator/Documents" in the new file name line.
+>[!IMPORTANT]
+>Make sure you create the new article from within the "creator/Documents" folder. You can confirm this by checking for "/creator/Documents" in the new file name line.
 
 4. At the top of your new page, add the following metadata block:
 
@@ -122,7 +119,7 @@ keywords:
 
 9. Select New pull request and merge your fork's 'main' branch into MicrosoftDocs/minecraft-creator 'main' (make sure the arrow is pointing the correct way).
 
-[Image]
+![GitHub Pull Request](\Media\ContributorGuide\LearningPortal_GitHubPR.png)
 
 Your pull request will be reviewed by our content team. If it is approved, your changes will go live at our next regular release. If your pull request is not approved, a member of the content team will leave a comment in your pull request letting you know the reason it was not approved.
 
@@ -136,7 +133,7 @@ The following resources will help you learn how to edit documentation using the 
 
 ### Adding tables
 
-Because of the way docs.microsoft.com styles tables, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. Here’s a site that makes Markdown tables easy.
+Because of the way docs.microsoft.com styles tables, they won’t have borders or custom styles even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. Here’s a site that makes Markdown tables easy.
 
 The Docs Markdown Extension for Visual Studio Code also makes table generation easy if you're using Visual Studio Code (see below) to edit the documentation.
 
@@ -150,9 +147,8 @@ The Docs Markdown Extension for Visual Studio Code also makes table generation e
 
 You’ll need to upload your images to the "minecraft-creator/creator/images" folder in the repo, and then reference them appropriately in the article. Images will automatically show up at full-size, which means large images will fill the entire width of the article. We recommend pre-sizing your images before uploading them. The recommended width is between 600 and 700 pixels, though you should size up or down if it’s a dense screenshot or a fraction of a screenshot, respectively.
 
- Important
-
-You can only upload images to your forked repo before merging. So, if you plan on adding images to an article, you'll need to use Visual Studio Code to add the images to your fork's "images" folder first or make sure you've done the following in a web browser:
+ >[!IMPORTANT]
+ >You can only upload images to your forked repo before merging. So if you plan on adding images to an article, you'll need to use Visual Studio Code to add the images to your fork's "images" folder first or make sure you've done the following in a web browser:
 
 1. Forked the MicrosoftDocs/minecraft-creator repo.
 2. Edited the article in your fork.
@@ -165,9 +161,8 @@ To learn how to set up your own forked repo, follow the instructions for creatin
 
 While editing in GitHub via a web browser, you can select the Preview tab near the top of the page to preview your work before committing.
 
- Note
-
-Previewing your changes on review.docs.microsoft.com is only available to Microsoft employees
+>[!NOTE]
+>Previewing your changes on review.docs.microsoft.com is only available to Microsoft employees
 
 Microsoft employees: once your contributions have been merged into the 'main' branch, you can review the content before it goes public at https://github.com/MicrosoftDocs/minecraft-creator/tree/main/creator. Find your article using the table of contents in the left column.
 
@@ -215,45 +210,40 @@ Follow these steps to configure Visual Studio Code to work with this repo:
 
 Use the following workflow to make changes to the documentation with Visual Studio Code:
 
- Note
-
-All the guidance for editing and creating articles, and the basics of editing Markdown, from above applies when using Visual Studio Code as well.
+ >[!NOTE]
+ >All the guidance for editing and creating articles, and the basics of editing Markdown from above applies when using Visual Studio Code as well.
 
 1. Make sure your cloned fork is up to date with the official repo.
 
     a. In a web browser, create a pull request to sync recent changes from other contributors in MicrosoftDocs/minecraft-creator 'main' to your fork (make sure the arrow is pointing the right way).
 
-    [Image]
+    ![GitHub Sync Pull](Media\ContributorGuide\LearningPortal_GitHubSyncPull.png)
 
     b. In Visual Studio Code, select the sync button to sync your freshly updated fork to the local clone.
 
-    [Image]
+    ![GitHub Sync Button](Media\ContributorGuide\LearningPortal_GitHubSyncButton.png)
 
 2. Create or edit articles in your cloned repo using Visual Studio Code.
 
-    a. Edit one or more articles (add images to “images” folder if necessary).
+    a. Edit one or more articles (add images to “images” folder, if necessary).
 
     b. **Save** changes in **Explorer**.
 
-    [Image]
-
     c. Commit all changes in Source Control (write commit message when prompted).
 
-    [Image]
+    ![GitHub Commit Changes](Media\ContributorGuide\LearningPortal_GitHubCommitChanges.png)
 
     d. Select the sync button to sync your changes back to origin (your fork on GitHub).
 
-    [Image]
-
 3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/minecraft-creator 'main' (make sure the arrow is pointing the correct way).
 
-    [Image]
+    ![GitHub Pull Request](\Media\ContributorGuide\LearningPortal_GitHubPR.png)
 
 ### Useful extensions
 
 The following Visual Studio Code extensions are useful when editing documentation:
 
-- Docs Markdown Extension for Visual Studio Code - Use Alt+M to bring up a menu of docs authoring options like:
+- Docs Markdown Extension for Visual Studio Code - Use Alt+M to bring up a menu of docs authoring options such as:
     - Search and reference images you've uploaded.
     - Add formatting like lists, tables, and docs-specific call-outs like >[!NOTE].
     - Search and reference internal links and bookmarks (links to specific sections within a page).

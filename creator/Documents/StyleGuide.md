@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Contributor Style Guide
 
-Contributing to the Minecraft Bedrock documentation is a great way to support the Minecraft creator community and showcase some amazing concepts. One of the most important things to remember when contributing to the documentation is to make sure that all of the Minecraft Bedrock documentation follows a single style and voice. 
+Contributing to the Minecraft Bedrock documentation is a great way to support the Minecraft creator community and showcase some amazing concepts. One of the most important things to remember when contributing to the documentation is to make sure that all of the Minecraft Bedrock documentation follows a single style and voice.
 
 This doesn't just make the docs nicer to read, it helps readers engage with and understand the content more effectively. Consistency in vocabulary, tone, style, and usage across all docs will make the docs an effective tool, no matter who authored, edited, or updated an article most recently.
 
@@ -29,7 +29,7 @@ As you contribute to the Bedrock docs, keep the following guidelines in mind:
 * **Don't use profanity**: Minecraft is a family-friendly brand and even masked profanity (such as using symbols like *&$# to conceal profanity) is not allowed in any Minecraft docs
 * **Don't reference inappropriate topics**: references to drinking, drugs, gambling, and explicit content is prohibited in all Minecraft docs
 * **Avoid stereotypes**: stereotypes can be hurtful and should be avoided whenever possible
-* **Avoid referencing current events**: we want our docs to be timeless and many real-world events can affect many people in different ways, so avoid referencing these events whenever you can to minimize the impact on other readers
+* **Avoid referencing current events**: we want our docs to be timeless and many real-world events can affect many people in different ways so avoid referencing these events whenever you can to minimize the impact on other readers
 * **Avoid violent language**: while conflict exists in Minecraft, excessively violent language (such as "slaughter" or esports terms like "frag" and "slay") should be avoided
 
 ### Humor
@@ -74,7 +74,7 @@ When you want to refer to an update to Minecraft, just use the name of the updat
 
 ## Capitalization
 
-In Minecraft, we only capitalize when something is unique. This means that there is only one of that object in the game world. You can use this rule to determine whether you should capitalize the name of a game object.
+In Minecraft, we usually capitalize only when something is unique. This means that there is only one of that object in the game world. You can use this rule to determine whether you should capitalize the name of a game object.
 
 ### Mobs
 
@@ -90,7 +90,9 @@ because there are many of these mobs all over the game world. We do capitalize t
 * Redstone Monstrosity
 * Corrupted Cauldron
 
-because there is only one of these mobs in each game world.
+because there is only one of these mobs in each game world. 
+
+> **Note**: One notable exception is the "Enderman". Even though Enderman is not unique, we do capitalize this mob name.
 
 ### Biomes and Dimensions
 
@@ -99,10 +101,11 @@ In the same way, we don't capitalize the names of biomes or dimensions *unless t
 * the Void
 * the Nether
 * the End
+* the Overworld
 
 ### Blocks
 
-We don't typically capitalize the names of blocks. Just like in the real world, you wouldn't capitalize materials such as dirt, bricks, or even gold, blocks are not capitalized in Minecraft, no matter how rare. The only exception to this rule is when a block contains the name of a dimension, such as:
+We don't typically capitalize the names of blocks. Just like in the real world, you wouldn't capitalize materials such as dirt, bricks, or even gold. Blocks are not capitalized in Minecraft, no matter how rare. The only exception to this rule is when a block contains the name of a dimension such as:
 
 * End stone
 * Nether brick slab
@@ -110,9 +113,11 @@ We don't typically capitalize the names of blocks. Just like in the real world, 
 
 Even then, note that only the dimension name is capitalized, and not the name of the block itself.
 
+> **Note**: Blocks like "netherite" and "netherrack" *are not* capitalized because they do not contain "Nether" as a separate word.
+
 ### Items
 
-Items are only capitalized when they are unique, or when they contain the name of a dimension. Keep in mind that items made from any material *are not* capitalized, such as:
+Items are only capitalized when they contain the name of a dimension. Keep in mind that items made from any material *are not* capitalized, such as:
 
 * netherite axe
 * heart of the sea
@@ -130,4 +135,5 @@ The following game objects are *always* considered unique and should *always* be
 
 * Status effects (Nausea, Fire Resistance, Haste, etc.)
 * Potions
+* Enchantments
 * Achievements and advancements ("Time to Mine!", "Acquire Hardware", "Diamonds to You!")
