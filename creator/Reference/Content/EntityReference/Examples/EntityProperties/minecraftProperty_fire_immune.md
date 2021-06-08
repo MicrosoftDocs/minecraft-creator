@@ -20,7 +20,7 @@ ms.prod: gaming
 
 ### magma_cube
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/magma_cube.json" range="95-96":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/magma_cube.json" range="97-98":::
 
 ## Vanilla entities using `minecraft:fire_immune`
 

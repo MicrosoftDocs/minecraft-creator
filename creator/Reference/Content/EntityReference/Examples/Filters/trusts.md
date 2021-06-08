@@ -67,7 +67,7 @@ Returns true if the subject is trusted by entity.
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="300-305":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="375-394":::
 
 ## Vanilla entities using `trusts`
 
