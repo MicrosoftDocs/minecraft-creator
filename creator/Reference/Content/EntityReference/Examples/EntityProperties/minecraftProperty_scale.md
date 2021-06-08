@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:scale":{
-    "value": 0.75,
+    "value": 1.0
 }
 ```
 

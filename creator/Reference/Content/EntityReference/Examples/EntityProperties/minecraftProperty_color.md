@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:color":{
-    "priority": 6,
+    "value": 0
 }
 ```
 

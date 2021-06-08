@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:variant":{
-    "value": 0,
+    "value": 0
 }
 ```
 

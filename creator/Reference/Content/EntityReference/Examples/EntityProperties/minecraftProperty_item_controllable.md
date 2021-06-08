@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:item_controllable
 
-`minecraft:item_controllable` allows an entity to be  controlled by an item when riding this entity.
+`minecraft:item_controllable` allows an entity to be controlled by an item when riding this entity.
 
 ## Parameters
 
@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:item_controllable":{
-    "control_item:":"IronSword"
+    "control_item:":"iron_sword"
 }
 ```
 
