@@ -104,7 +104,7 @@ Tests whether the biome the subject is in has the specified tag.
 - [squid](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/squid.md)
 - [stray](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/stray.md)
 - [strider](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/strider.md)
-- [tropical_fish](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/tropical_fish.md)
+- [tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/tropicalfish.md)
 - [turtle](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/turtle.md)
 - [witch](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/witch.md)
 - [wolf](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/wolf.md)
