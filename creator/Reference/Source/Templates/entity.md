@@ -1,6 +1,12 @@
 <!--
 <big>Version: 1.16.220.2</big>
 
+---
+author: v-josjones
+ms.author: v-josjones
+title: Client Entity Documentation 
+ms.prod: gaming
+---
 
 # Client Entity Documentation
 
