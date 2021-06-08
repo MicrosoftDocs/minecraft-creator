@@ -42,6 +42,7 @@ ms.prod: gaming
 - [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
 - [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
+- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)

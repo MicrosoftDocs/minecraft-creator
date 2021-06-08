@@ -73,6 +73,7 @@ Allows an entity to attack the closest target within a given subset of specific 
 - [endermite](../../../../Source/VanillaBehaviorPack_Snippets/entities/endermite.md)
 - [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
 - [ghast](../../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)
+- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
 - [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
 - [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)

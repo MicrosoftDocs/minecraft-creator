@@ -92,6 +92,7 @@ Returns true when the subject entity is in lava.
 - [endermite](../../../../Source/VanillaBehaviorPack_Snippets/entities/endermite.md)
 - [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
 - [fish](../../../../Source/VanillaBehaviorPack_Snippets/entities/fish.md)
+- [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)
 - [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
