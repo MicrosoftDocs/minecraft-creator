@@ -67,11 +67,7 @@ Returns true when the subject entity is holding a ranged weapon like a bow or cr
 
 ### skeleton
 
-<<<<<<< HEAD:creator/Reference/Content/EntityReference/Examples/Filters/has_ranged_weapon.md
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/skeleton.json" range="116-121":::
-=======
-:::code language="json" source="../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.json" range="61-84":::
->>>>>>> 81bd1a499f45bf42b07f10c82ed3e454b81351c2:creator/TestAPI/Content/EntityAPI/Examples/Filters/has_ranged_weapon.md
 
 ## Vanilla entities using Filter `has_ranged_weapon`
 
