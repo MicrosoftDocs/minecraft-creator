@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Contributor Style Guide
 
-Contributing to the Minecraft Bedrock documentation is a great way to support the Minecraft creator community and showcase some amazing concepts. One of the most important things to remember when contributing to the documentation is to make sure that all of the Minecraft Bedrock documentation follows a single style and voice. 
+Contributing to the Minecraft Bedrock documentation is a great way to support the Minecraft creator community and showcase some amazing concepts. One of the most important things to remember when contributing to the documentation is to make sure that all of the Minecraft Bedrock documentation follows a single style and voice.
 
 This doesn't just make the docs nicer to read, it helps readers engage with and understand the content more effectively. Consistency in vocabulary, tone, style, and usage across all docs will make the docs an effective tool, no matter who authored, edited, or updated an article most recently.
 

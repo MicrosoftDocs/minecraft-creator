@@ -15,7 +15,7 @@ This component allows the mob to search around for a block to jump to and then j
 |---------|---------|---------|---------|
 | searchWidth | 8 | Integer | The maximum width in blocks that the mob will search. Range [2, 15]. |
 | searchHeight | 10 | Integer | The maximum height in blocks that the mob will search. Range [2, 15]. |
-| scaleFactor | 0.7 | Decimal | The scalefactor of the bounding box of the mob while it is jumping. |
+| scaleFactor | 0.7 | Decimal | The scale factor of the bounding box of the mob while it is jumping. |
 | maxVelocity | 1.5 | Decimal | The maximum velocity with which the mob can jump. |
 | minPathLength | 5 | Integer | The minimum length in blocks of the mob's path to a block in order to consider jumping to it. |
 | minDistance | 2 | Integer | The minimum distance in blocks from the mob to a block in order to consider jumping to it. |
@@ -24,7 +24,7 @@ This component allows the mob to search around for a block to jump to and then j
 ## Example
 
 ```json
-"minecraft:behavior.jumpToBlock":{
+"minecraft:behavior.jump_to_block":{
     "searchWidth": 9,
     "searchHeight": 5,
     "scaleFactor": 2.0,
@@ -39,8 +39,8 @@ This component allows the mob to search around for a block to jump to and then j
 
 ### Goat
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/goat.json"
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/goat.json" range="205-216":::
 
 ## Vanilla Mobs using `minecraft:behavior.jump_to_block`
 
-- [goat](Source/VanilliaBehaviorPack_Snippets/entities/goat.json)
+- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
