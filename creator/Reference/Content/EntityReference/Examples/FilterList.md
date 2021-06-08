@@ -8,7 +8,7 @@ ms.prod: gaming
 
 # Filter list
 
-Below are a list of all the available filters within Minecraft:Bedrock Edition for use with Entity files.
+Below is a list of all the available filters within Minecraft:Bedrock Edition for use with Entity JSON files.
 
 |Filter |Description|
 |:------|:----------|
