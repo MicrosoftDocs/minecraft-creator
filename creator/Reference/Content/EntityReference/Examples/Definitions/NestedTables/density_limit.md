@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:density_limit
 
-*Descritpion Needed!*
+This component allows the players to specify the amount of mobs to spawn in certain locations.
 
 |Name|Default Value |Type |Description |
 |:-----------|:-----------|:-----------|:-----------|

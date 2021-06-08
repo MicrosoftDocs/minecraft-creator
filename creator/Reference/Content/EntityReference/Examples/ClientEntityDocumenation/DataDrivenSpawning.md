@@ -33,7 +33,7 @@ Components
 | [minecraft:difficulty_filter](../Definitions/NestedTables/difficulty_filter.md)| This component allows players to set mobs spawn with certain difficulty levels. |
 | [minecraft:herd](../Definitions/NestedTables/herd.md)| This component allows players to determine the herd size of animals.|
 | [minecraft:biome_filter](../Definitions/biome_filter.md)| This component allows the players to specify which biomes the mob spawns in. Check on **minecraft:biome_filter** to see which Biome Tags exist, and what each biome is tagged as. |
-| [minecraft:density_limit](../Definitions/NestedTables/density_limit.md)|*Description Needed!* |
+| [minecraft:density_limit](../Definitions/NestedTables/density_limit.md)|This component allows the players to specify the amount of mobs to spawn in certain locations. |
 
 ### Example Spawn Rules for the zombie
 

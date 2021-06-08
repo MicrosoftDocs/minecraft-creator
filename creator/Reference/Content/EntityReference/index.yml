@@ -93,7 +93,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: Trigger List
-            url: Examples/AttributeList.md
+            url: Examples/TriggerList.md
           - text: minecraft:attack
             url: Examples/EntityTriggers/minecraftTrigger_on_death.md
           - text: minecraft:spell_effects

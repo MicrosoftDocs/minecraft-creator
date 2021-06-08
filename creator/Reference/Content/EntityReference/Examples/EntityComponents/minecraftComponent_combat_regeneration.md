@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:combat_regeneration
 
-This component gives Regeneration I and removes Mining Fatigue from the mob that kills the Actor's attack target.
+`minecraft:combat_regeneration`gives Regeneration I and removes Mining Fatigue from the mob that kills the Actor's attack target.
 
 ## Parameters
 
