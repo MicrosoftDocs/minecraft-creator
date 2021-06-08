@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.slime_attack` allows an entity to make a melee attack similar to the `slime` and `magma_cube`.
 
 > [!IMPORTANT]
-> `minecraft:behavior.slime_attack` requires a target in order to work properly.
+> `minecraft:behavior.slime_attack` requires a target in order to work properly. Target can be determined by using one of the following behaviors:
 >
 >- [minecraft:behavior.nearest_attackable_target](minecraftBehavior_nearest_attackable_target.md)
 >- [minecraft:behavior.hurt_by_target](minecraftBehavior_hurt_by_target.md)

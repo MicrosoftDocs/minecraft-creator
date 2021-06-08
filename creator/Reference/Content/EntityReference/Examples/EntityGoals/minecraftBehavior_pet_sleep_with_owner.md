@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:behavior.pet_sleep_with_owner
 
-`minecraft:behavior.pet_sleep_with_owner` allows an entity to sleep on a bed shared with its' owner.
+`minecraft:behavior.pet_sleep_with_owner` allows an entity to sleep on a bed shared with its owner.
 
 > [!NOTE]
 > `minecraft:behavior.pet_sleep_with_owner` requires a `player` to be tagged as the entity's owner, via taming or console command.

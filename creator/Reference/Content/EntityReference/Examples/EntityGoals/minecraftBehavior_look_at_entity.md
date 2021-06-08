@@ -13,8 +13,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|angle_of_view_horizontal| 360| Integer| The angle in degrees that the mob can see in the Y-axis (up-down) |
-|angle_of_view_vertical| 360| Integer| The angle in degrees that the mob can see in the X-axis (left-right) |
+|angle_of_view_horizontal| 360| Integer| TThe angle in degrees that the mob can see in the X-axis (left-right)|
+|angle_of_view_vertical| 360| Integer| The angle in degrees that the mob can see in the Y-axis (up-down) |
 |filters|*not set* | Minecraft Filter|  Filter to determine the conditions for this mob to look at the entity |
 |look_distance| 8.0| Decimal| The distance in blocks from which the entity will look at |
 |look_time| [2, 4]| Range [a, b]| Time range to look at the entity |

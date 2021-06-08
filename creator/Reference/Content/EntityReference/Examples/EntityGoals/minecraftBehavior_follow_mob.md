@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:behavior.follow_mob
 
-`minecraft:behavior.follow_mob` allows an entity to follow and gather around all types of mobs, both hostile and neutral mobs.
+`minecraft:behavior.follow_mob` allows an entity to follow and gather around other mobs of the same type.
 
 ## Parameters
 
