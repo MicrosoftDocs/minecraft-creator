@@ -16,8 +16,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|angle_of_view_horizontal| 360| Integer| The angle in degrees that the mob can see in the Y-axis (up-down) |
-|angle_of_view_vertical| 360| Integer| The angle in degrees that the mob can see in the X-axis (left-right) |
+|angle_of_view_horizontal| 360| Integer| TThe angle in degrees that the mob can see in the X-axis (left-right)|
+|angle_of_view_vertical| 360| Integer| The angle in degrees that the mob can see in the Y-axis (up-down) |
 |look_distance| 8.0| Decimal| The distance in blocks from which the entity will look at |
 |look_time| [2, 4]| Range [a, b]| Time range to look at the entity |
 |probability| 0.02|  Decimal| The probability of looking at the target. A value of 1.00 is 100% |
@@ -26,9 +26,12 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.look_at_trading_player":{
-    "priority": 2,
-    "parameterA":true,
-    "parameterB":42,
+    "priority": 6,
+    "angle_of_view_horizontal":90,
+    "angle_of_view_vertical":90,
+    "look_distance": 8.0,
+    "look_time": [1,5],
+    "probability": 0.02
 }
 ```
 

@@ -17,7 +17,6 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |[entity_types](../Definitions/NestedTables/entity_types.md)|*not set* | JSON Object| List of entity types that this mob can target if they hurt their owner|
-|hurt_owner| false| Boolean|  If true, the mob will hurt its owner and other mobs with the same owner as itself |
 
 ## Example
 

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:behavior.lay_egg
 
-`minecraft:behavior.lay_egg` allows an entity to lay eggs
+`minecraft:behavior.lay_egg` allows an entity to lay eggs.
 
 ## Parameters
 

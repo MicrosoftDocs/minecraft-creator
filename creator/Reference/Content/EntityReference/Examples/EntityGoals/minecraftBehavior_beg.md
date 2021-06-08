@@ -37,6 +37,6 @@ ms.prod: gaming
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wolf.json" range="406-412":::
 
-## Vanilla entities using `behavior`
+## Vanilla entities using `minecraft:behavior.beg`
 
 - [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)

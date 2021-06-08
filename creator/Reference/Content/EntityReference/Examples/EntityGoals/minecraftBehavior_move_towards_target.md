@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.move_towards_target` allows an entity to move towards a target.
 
 > [!IMPORTANT]
-> `minecraft:behavior.move_towards_target` requires a target in order to work properly.
+> `minecraft:behavior.move_towards_target` requires a target in order to work properly. Target can be determined by using one of the following behaviors:
 >
 >- [minecraft:behavior.nearest_attackable_target](minecraftBehavior_nearest_attackable_target.md)
 >- [minecraft:behavior.hurt_by_target](minecraftBehavior_hurt_by_target.md)

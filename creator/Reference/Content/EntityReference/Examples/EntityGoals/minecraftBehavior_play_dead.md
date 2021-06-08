@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:behavior.play_dead
 
-This component allows the mob to play dead when attacked by other entities. When playing dead, other entities will not target this mob.
+`minecraft:behavior.play_dead` allows the mob to play dead when attacked by other entities. When playing dead, other entities will not target this mob.
 
 ## Parameters
 
