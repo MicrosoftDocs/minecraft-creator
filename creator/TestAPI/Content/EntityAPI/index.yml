@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Entity JSON Documentation # < 60 chars
-summary: Landing page for all things related to Entities for Minecraft:Bedrock Edition. # < 160 chars
+summary: "Landing page for all things related to Entities for Minecraft: Bedrock Edition." # < 160 chars
 
 metadata:
   title: Entity JSON Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Landing page for all things related to Entities for Minecraft:Bedrock Edition. # Required; article description that is displayed in search results. < 160 chars.
+  description: "Landing page for all things related to Entities for Minecraft: Bedrock Edition." # Required; article description that is displayed in search results. < 160 chars.
   ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   author: v-josjones #Required; your GitHub user alias, with correct capitalization.
@@ -33,8 +33,10 @@ landingContent:
         links:
           - text: AI Goal List
             url: Examples/AIGoalList.md
-          - text: minecraft:behavior.melee_attack
-            url: Examples/EntityGoals/minecraftBehavior_melee_attack.md
+          - text: "NEW! minecraft:behavior.jump_to_block"
+            url: Examples/EntityGoals/minecraftBehavior_jump_to_block.md
+          - text: "NEW! minecraft:behavior.play_dead"
+            url: Examples/EntityGoals/minecraftBehavior_play_dead.md
           - text: minecraft:behavior.nearest_attackable_target
             url: Examples/EntityGoals/minecraftBehavior_nearest_attackable_target.md
  # Card (optional)
@@ -44,6 +46,8 @@ landingContent:
         links:
           - text: Components List
             url: Examples/ComponentList.md
+          - text: "NEW! minecraft:combat_regeneration"
+            url: Examples/EntityComponents/minecraftComponent_combat_regeneration.md
           - text: minecraft:addrider
             url: Examples/EntityComponents/minecraftComponent_addrider.md
           - text: minecraft:admire_item
@@ -101,8 +105,10 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: Vanilla Entity List
+          - text: Entity Behavior List
             url: Examples/EntityList.md
+          - text: Entity JSON ID List
+            url: Examples/ClientEntityDocumenation/IDLists.md
 
 
 
