@@ -35,7 +35,7 @@ ms.prod: gaming
 
 ### turtle
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/turtle.json" range="189-193":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/turtle.json" range="191-195":::
 
 ## Vanilla entities using `minecraft:behavior.panic`
 

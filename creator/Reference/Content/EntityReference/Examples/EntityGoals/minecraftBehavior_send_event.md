@@ -48,7 +48,7 @@ ms.prod: gaming
 
 ### evocation_illager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/evocation_illager.json" range="179-205":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/evocation_illager.json" range="181-207":::
 
 ## Vanilla entities using `minecraft:behavior.send_event`
 

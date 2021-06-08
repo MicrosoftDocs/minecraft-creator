@@ -29,7 +29,7 @@ ms.prod: gaming
 
 ### zombie
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="128-131":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="130-133":::
 
 ### small_fireball
 

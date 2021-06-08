@@ -135,7 +135,7 @@ ms.prod: gaming
 
 ### evocation_illager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/evocation_illager.json" range="102-178":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/evocation_illager.json" range="104-180":::
 
 ## Vanilla entities using `minecraft:behavior.summon_entity`
 

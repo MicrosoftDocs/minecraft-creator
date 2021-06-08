@@ -33,7 +33,7 @@ ms.prod: gaming
 >[!Note]
 >This snippet is showing how `minecraft:color` and `minecraft:color2` working together to create a special variant.
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/tropicalfish.json" range="298-307":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/tropicalfish.json" range="252-265":::
 
 ## Vanilla entities using `minecraft:color2`
 

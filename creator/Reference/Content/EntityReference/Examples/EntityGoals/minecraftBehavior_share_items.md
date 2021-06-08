@@ -51,7 +51,7 @@ ms.prod: gaming
 
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="1562-1572":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="1564-1574":::
 
 ## Vanilla entities using `minecraft:behavior.share_items`
 

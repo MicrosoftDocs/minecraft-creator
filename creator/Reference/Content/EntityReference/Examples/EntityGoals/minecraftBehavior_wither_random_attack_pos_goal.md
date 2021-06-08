@@ -24,7 +24,7 @@ ms.prod: gaming
 
 ### wither
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither.json" range="69-71":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither.json" range="71-73":::
 
 ## Vanilla entities using `minecraft:behavior.wither_random_attack_pos_goal`
 

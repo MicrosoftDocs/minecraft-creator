@@ -37,7 +37,7 @@ ms.prod: gaming
 
 ### magma_cube
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/magma_cube.json" range="119-122":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/magma_cube.json" range="121-124":::
 
 ## Vanilla entities using `minecraft:on_target_escape`
 

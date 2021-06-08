@@ -35,7 +35,7 @@ ms.prod: gaming
 
 ### bee
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/bee.json" range="391-398":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/bee.json" range="400-407":::
 
 ## Vanilla entities using `minecraft:behavior.random_hover`
 

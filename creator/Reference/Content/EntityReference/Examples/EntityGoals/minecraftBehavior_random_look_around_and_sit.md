@@ -36,7 +36,7 @@ ms.prod: gaming
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="600-607":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="610-617":::
 
 ## Vanilla entities using `minecraft:behavior.random_look_around_and_sit`
 

@@ -28,7 +28,7 @@ ms.prod: gaming
 
 ### skeleton
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/skeleton.json" range="436-439":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/skeleton.json" range="540-543":::
 
 ## Vanilla entities using `minecraft:behavior.flee_sun`
 

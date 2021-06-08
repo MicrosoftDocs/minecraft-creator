@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # moon_phase
 
-Compares the current moon intensity with a float value in the range of 0.0 and 1.0
+Compares the current moon intensity with an Integer value in the range of 0 to 7.
 
 ## Parameters
 

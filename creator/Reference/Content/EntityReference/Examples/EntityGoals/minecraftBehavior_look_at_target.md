@@ -42,7 +42,7 @@ ms.prod: gaming
 
 ### wither
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither.json" range="111-113":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither.json" range="113-115":::
 
 ## Vanilla entities using `minecraft:behavior.look_at_target`
 

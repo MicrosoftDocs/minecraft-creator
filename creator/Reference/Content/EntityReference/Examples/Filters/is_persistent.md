@@ -67,7 +67,7 @@ Tests if the subject's persistence matches the bool value passed in.
 
 ### zoglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zoglin.json" range="139-179":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zoglin.json" range="141-181":::
 
 ## Vanilla entities using `is_persistent`
 

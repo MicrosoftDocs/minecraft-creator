@@ -36,7 +36,7 @@ ms.prod: gaming
 
 ### guardian
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/guardian.json" range="155_160":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/guardian.json" range="157-162":::
 
 ## Vanilla entities using `minecraft:behavior.random_swim`
 

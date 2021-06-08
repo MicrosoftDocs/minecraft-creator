@@ -27,7 +27,7 @@ ms.prod: gaming
 
 ### ender_dragon
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ender_dragon.json" range="72-74":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ender_dragon.json" range="74-76":::
 
 ## Vanilla entities using `minecraft:flying_speed`
 

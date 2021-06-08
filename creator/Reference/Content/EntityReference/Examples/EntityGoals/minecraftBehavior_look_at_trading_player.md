@@ -36,7 +36,7 @@ ms.prod: gaming
 
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="1554-1556":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="1556-1558":::
 
 ## Vanilla entities using `minecraft:behavior.look_at_trading_player`
 

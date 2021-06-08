@@ -24,7 +24,7 @@ ms.prod: gaming
 
 ### squid
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/squid.json" range="78-80":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/squid.json" range="80-82":::
 
 ## Vanilla entities using `minecraft:behavior.squid_move_away_from_ground`
 

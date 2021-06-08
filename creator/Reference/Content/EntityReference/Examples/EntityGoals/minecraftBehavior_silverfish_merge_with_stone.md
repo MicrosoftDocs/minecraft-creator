@@ -24,7 +24,7 @@ ms.prod: gaming
 
 ### silverfish
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/silverfish.json" range="93-95":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/silverfish.json" range="94-96":::
 
 ## Vanilla entities using `minecraft:behavior.silverfish_merge_with_stone`
 

@@ -36,7 +36,7 @@ ms.prod: gaming
 
 ### piglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="479-494":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="483-498":::
 
 ## Vanilla entities using `admire_item`
 

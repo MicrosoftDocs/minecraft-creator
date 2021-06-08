@@ -32,7 +32,7 @@ ms.prod: gaming
 
 ### dolphin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/dolphin.json" range="282-287":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/dolphin.json" range="278-283":::
 
 ## Vanilla entities using `minecraft:behavior.find_underwater_treasure`
 

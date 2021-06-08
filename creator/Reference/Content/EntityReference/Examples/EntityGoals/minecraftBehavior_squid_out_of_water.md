@@ -24,7 +24,7 @@ ms.prod: gaming
 
 ### squid
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/squid.json" range="90-92":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/squid.json" range="92-94":::
 
 ## Vanilla entities using `minecraft:behavior.squid_out_of_water`
 

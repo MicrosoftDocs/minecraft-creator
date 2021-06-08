@@ -21,7 +21,7 @@ ms.prod: gaming
 
 ### wandering_trader
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wandering_trader.json" range="152_154":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wandering_trader.json" range="152-154":::
 
 ## Vanilla entities using `minecraft:behavior.trade_with_player`
 
