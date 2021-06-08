@@ -94,8 +94,7 @@ Below are a list of all the available AI Goals within Minecraft:Bedrock Edition 
 |[minecraft:behavior.random_stroll](EntityGoals/minecraftBehavior_random_stroll.md)|`minecraft:behavior.random_stroll` allows an entity to choose a random direction to walk towards. |
 |[minecraft:behavior.random_swim](EntityGoals/minecraftBehavior_random_swim.md)|`minecraft:behavior.random_swim` allows an entity to swim in a random point in water. |
 |[minecraft:behavior.receive_love](EntityGoals/minecraftBehavior_receive_love.md)|`minecraft:behavior.receive_love` allows an entity to mate with another similar entity when approached to breed. |
-|[minecraft:behavior.restrict_open_door](EntityGoals/minecraftBehavior_restrict_open_door.md)|`minecraft:behavior.restrict_open_door` allows an entity to stay indoors while the sun is down.
- |
+|[minecraft:behavior.restrict_open_door](EntityGoals/minecraftBehavior_restrict_open_door.md)|`minecraft:behavior.restrict_open_door` allows an entity to stay indoors while the sun is down.|
 |[minecraft:behavior.restrict_sun](EntityGoals/minecraftBehavior_restrict_sun.md)|`minecraft:behavior.restrict_sun` allows an entity to actively avoid direct sunlight. |
 |[minecraft:behavior.rise_to_liquid_level](EntityGoals/minecraftBehavior_rise_to_liquid_level.md)|`minecraft:behavior.rise_to_liquid_level` allows an entity to rise to the top of lava if they are located or have spawned under lava. |
 |[minecraft:behavior.roll](EntityGoals/minecraftBehavior_roll.md)|`minecraft:behavior.roll` allows an entity roll forward. |
@@ -104,8 +103,7 @@ Below are a list of all the available AI Goals within Minecraft:Bedrock Edition 
 |[minecraft:behavior.send_event](EntityGoals/minecraftBehavior_send_event.md)|`minecraft:behavior.send_event` allows an entity to send an event to another entity. |
 |[minecraft:behavior.share_items](EntityGoals/minecraftBehavior_share_items.md)|`minecraft:behavior.share_items` allows an entity to share items they have in their inventory with other specific entities that have been defined. |
 |[minecraft:behavior.silverfish_wake_up_friends](EntityGoals/minecraftBehavior_silverfish_wake_up_friends.md)|`minecraft:behavior.silverfish_wake_up_friends` allows an entity to alert other entities of the same family to leave a stone block. |
-|[minecraft:behavior.silverfish_merge_with_stone](EntityGoals/minecraftBehavior_silverfish_merge_with_stone.md)|`minecraft:behavior.silverfish_merge_with_stone` allows an entity to enter a stone block.
- |
+|[minecraft:behavior.silverfish_merge_with_stone](EntityGoals/minecraftBehavior_silverfish_merge_with_stone.md)|`minecraft:behavior.silverfish_merge_with_stone` allows an entity to enter a stone block.|
 |[minecraft:behavior.skeleton_horse_trap](EntityGoals/minecraftBehavior_skeleton_horse_trap.md)|`minecraft:behavior.skeleton_horse_trap` Allows an entity to be Horse Traps and be triggered like them, spawning a lightning bolt and a bunch of horses when a player is nearby. |
 |[minecraft:behavior.sleep](EntityGoals/minecraftBehavior_sleep.md)|`minecraft:behavior.sleep` allows an entity to sleep in a bed. |
 |[minecraft:behavior.slime_attack](EntityGoals/minecraftBehavior_slime_attack.md)|`minecraft:behavior.slime_attack` allows an entity to make a melee attack similar to the `slime` and `magma_cube`. |
@@ -119,18 +117,15 @@ Below are a list of all the available AI Goals within Minecraft:Bedrock Edition 
 |[minecraft:behavior.stalk_and_pounce_on_target](EntityGoals/minecraftBehavior_stalk_and_pounce_on_target.md)|`minecraft:behavior.stalk_and_pounce_on_target` allows an entity to stalk a specific target. Once within range of the target, the entity will then leap at the target and deal damage based upon its attack attribute. |
 |[minecraft:behavior.stomp_turtle_egg](EntityGoals/minecraftBehavior_stomp_turtle_egg.md)|`minecraft:behavior.stomp_turtle_egg` allows an entity to target and stomp on turtle eggs when detected. |
 |[minecraft:behavior.stay_while_sitting](EntityGoals/minecraftBehavior_stay_while_sitting.md)|`minecraft:behavior.stay_while_sitting` allows an entity to stay in place while sitting. |
-|[minecraft:behavior.stroll_towards_village](EntityGoals/minecraftBehavior_stroll_towards_village.md)|`minecraft:behavior.stroll_towards_village` allows an entity to navigate and search for a nearby village.
- |
+|[minecraft:behavior.stroll_towards_village](EntityGoals/minecraftBehavior_stroll_towards_village.md)|`minecraft:behavior.stroll_towards_village` allows an entity to navigate and search for a nearby village.|
 |[minecraft:behavior.summon_entity](EntityGoals/minecraftBehavior_summon_entity.md)|`minecraft:behavior.summon_entity` allows an entity to attack other entities by summoning new entities. |
 |[minecraft:behavior.swell](EntityGoals/minecraftBehavior_swell.md)|`minecraft:behavior.swell` allows an entity to grow in size when approached, and scale down back to normal after a certain distance. |
-|[minecraft:behavior.take_flower](EntityGoals/minecraftBehavior_take_flower.md)|`minecraft:behavior.take_flower` allows an entity to receive flowers when presented from the `iron_golem` entity.
- |
+|[minecraft:behavior.take_flower](EntityGoals/minecraftBehavior_take_flower.md)|`minecraft:behavior.take_flower` allows an entity to receive flowers when presented from the `iron_golem` entity.|
 |[minecraft:behavior.tempt](EntityGoals/minecraftBehavior_tempt.md)|`minecraft:behavior.tempt` allows an entity to be tempted by a set item. |
 |[minecraft:behavior.trade_interest](EntityGoals/minecraftBehavior_trade_interest.md)|`minecraft:behavior.trade_interest` allows an entity to focus on a player that will initiate a trade. |
 |[minecraft:behavior.trade_with_player](EntityGoals/minecraftBehavior_trade_with_player.md)|`minecraft:behavior.trade_with_player` allows an entity to focus on a player that will initiate a trade. |
 |[minecraft:behavior.vex_copy_owner_target](EntityGoals/minecraftBehavior_vex_copy_owner_target.md)|`minecraft:behavior.vex_copy_owner_target` allows an entity of the`vex` family to target the same entity as it's owner. |
 |[minecraft:behavior.vex_random_move](EntityGoals/minecraftBehavior_vex_random_move.md)|`minecraft:behavior.vex_random_move` allows an entity of the`vex` family to move randomly.|
-|[minecraft:behavior.wither_random_attack_pos_goal](EntityGoals/minecraftBehavior_wither_random_attack_pos_goal.md)|`minecraft:behavior.wither_random_attack_pos_goal` allows an entity to attack at random.
- |
+|[minecraft:behavior.wither_random_attack_pos_goal](EntityGoals/minecraftBehavior_wither_random_attack_pos_goal.md)|`minecraft:behavior.wither_random_attack_pos_goal` allows an entity to attack at random.|
 |[minecraft:behavior.wither_target_highest_damage](EntityGoals/minecraftBehavior_wither_target_highest_damage.md)|`minecraft:behavior.wither_target_highest_damage` allows an entity to focus its attacks on whichever hostile mob has dealt the most damage to it. |
 |[minecraft:behavior.work](EntityGoals/minecraftBehavior_work.md)|`minecraft:behavior.work` allows an entity to navigate and interact with a point of interest that has been assigned as their worksite. |
