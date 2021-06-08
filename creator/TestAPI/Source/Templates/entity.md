@@ -1,3 +1,4 @@
+<!--
 <big>Version: 1.16.220.2</big>
 
 
@@ -12733,3 +12734,5 @@ Adds a trigger to call when this pet's owner awakes after sleeping with the pet.
 | String| event| | The event to run when the conditions for this trigger are met. |
 | Minecraft Filter| filters| | The list of conditions for this trigger to execute. |
 | String| target| self| The target of the event. |
+
+-->

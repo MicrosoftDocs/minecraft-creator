@@ -1,6 +1,6 @@
 ---
-author: <Employee Name>
-ms.author: <Employee Name>
+author: v-josjones
+ms.author: v-josjones
 title: is_biome
 ms.prod: gaming
 ---

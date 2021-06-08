@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:behavior.combat_regeneration
+title: minecraft:combat_regeneration
 ms.prod: gaming
 ---
 
-# minecraft:behavior.combat_regeneration
+# minecraft:combat_regeneration
 
 This component gives Regeneration I and removes Mining Fatigue from the mob that kills the Actor's attack target.
 
@@ -20,7 +20,7 @@ This component gives Regeneration I and removes Mining Fatigue from the mob that
 ## Example
 
 ```json
-"minecraft:behavior.combat_regeneration":{
+"minecraft:combat_regeneration":{
     "regeneration_duration": 7,
     "apply_to_self": true,
     "apply_to_family": false,
@@ -29,10 +29,10 @@ This component gives Regeneration I and removes Mining Fatigue from the mob that
 
 ## Vanilla Mob examples
 
-### axolot
+### axolotl
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/axolotl.json"
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/axolotl.json" range="209":::
 
-## Vanilla Mobs using `combat_regeneration`
+## Vanilla Mobs using `minecraft:combat_regeneration`
 
-- [axolotl](Source/VanilliaBehaviorPack_Snippets/entities/axolotl.json)
+- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
