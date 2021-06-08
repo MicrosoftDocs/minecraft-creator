@@ -14,10 +14,27 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |conditional_values|*not set* | List| The object containing the conditional bandwidth optimization values.|
+|default_values|*not set* | JSON Object| The object containing the default bandwidth optimization values. |
 
 ### conditional_values
 
-`conditional_values` is an array defined by two parameters. Each item has the following properties:
+`conditional_values` is a list defined by three parameters. Each item has the following properties:
+
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|max_dropped_ticks |*not set* |Integer |In relation to the optimization value, determines the maximum ticks spatial update packets can be not sent.|
+|max_optimized_distance |*not set* |Integer|The maximum distance considered during bandwidth optimizations. Any value below the max is interpolated to find optimization, and any value greater than or equal to this max results in max optimization. |
+|use_motion_prediction_hints |false |Boolean |When set to true, smaller motion packets will be sent during drop packet intervals, resulting in the same amount of packets being sent as without optimizations but with much less data being sent. This should be used when actors are travelling very quickly or teleporting to prevent visual oddities.|
+
+### default_values
+
+`default_values` is a JSON object defined by two parameters. Each item has the following properties:
+
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|max_dropped_ticks |*not set* |Integer |In relation to the optimization value, determines the maximum ticks spatial update packets can be not sent.|
+|max_optimized_distance |*not set* |Integer|The maximum distance considered during bandwidth optimizations. Any value below the max is interpolated to find optimization, and any value greater than or equal to this max results in max optimization.|
+|use_motion_prediction_hints |false |Boolean |When set to true, smaller motion packets will be sent during drop packet intervals, resulting in the same amount of packets being sent as without optimizations but with much less data being sent. This should be used when actors are travelling very quickly or teleporting to prevent visual oddities.|
 
 ## Example
 
@@ -31,7 +48,9 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### entities 1
+### fireworks_rocket
+
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fireworks_rocket.json" range="21-27":::
 
 ## Vanilla entities using `minecraft:conditional_bandwidth_optimization`
 
@@ -75,6 +94,7 @@ ms.prod: gaming
 - [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
 - [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
 - [lightning_bolt](../../../../Source/VanillaBehaviorPack_Snippets/entities/lightning_bolt.md)
+- [lingering_potion](../../../../Source/VanillaBehaviorPack_Snippets/entities/lingering_potion.md)
 - [llama_spit](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama_spit.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
 - [magma_cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
