@@ -69,7 +69,7 @@ Returns true if the subject entity is moving.
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/boat.json" range="187-194":::
 
-### tnt minecart
+### tnt_minecart
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/tnt_minecart.json" range="138-147":::
 
