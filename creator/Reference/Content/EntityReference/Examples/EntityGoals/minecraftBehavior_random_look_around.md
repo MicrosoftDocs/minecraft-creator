@@ -45,7 +45,6 @@ ms.prod: gaming
 - [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
 - [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
-- [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
 - [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)

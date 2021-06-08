@@ -55,6 +55,7 @@ ms.prod: gaming
 - [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)
 - [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
 - [endermite](../../../../Source/VanillaBehaviorPack_Snippets/entities/endermite.md)
+- [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
 - [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
 - [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)

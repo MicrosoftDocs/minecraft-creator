@@ -78,6 +78,7 @@ Tests whether the biome the subject is in has the specified tag.
 - [drowned](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/drowned.md)
 - [enderman](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/enderman.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/fox.md)
+- [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)
 - [ghast](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/ghast.md)
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/hoglin.md)
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/horse.md)
