@@ -17,7 +17,7 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices.md",
-          "creator/TestAPI/Source/Templates/**"
+          "creator/Reference/Source/Templates/**"
         ]
       }
     ],

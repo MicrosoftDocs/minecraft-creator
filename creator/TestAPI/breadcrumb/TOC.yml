@@ -1,7 +1,0 @@
-- name: Minecraft Bedrock documentation
-  tocHref: /creator/
-  topicHref: /creator/index
-  items:
-  - name: Entity API
-    tocHref: /creator/testapi/content/entityapi/
-    topicHref: /creator/testapi/content/entityapi/index
