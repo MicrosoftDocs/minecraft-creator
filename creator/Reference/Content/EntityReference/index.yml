@@ -94,11 +94,11 @@ landingContent:
         links:
           - text: Trigger List
             url: Examples/TriggerList.md
-          - text: minecraft:attack
+          - text: minecraft:on_death
             url: Examples/EntityTriggers/minecraftTrigger_on_death.md
-          - text: minecraft:spell_effects
+          - text: minecraft:on_friendly_anger
             url: Examples/EntityTriggers/minecraftTrigger_on_friendly_anger.md
-          - text: minecraft:strength
+          - text: minecraft:on_hurt_by_player
             url: Examples/EntityTriggers/minecraftTrigger_on_hurt_by_player.md
 # Card
   - title: References
