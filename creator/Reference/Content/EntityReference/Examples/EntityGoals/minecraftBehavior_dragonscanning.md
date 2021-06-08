@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.dragonscanning` allows an entity to look around for a player to attack while in perch mode.
 
 > [!NOTE]
-> This behavior can only be used by `ender_dragon` entity type.
+> This behavior can only be used by the `ender_dragon` entity type.
 
 ## Example
 

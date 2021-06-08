@@ -28,7 +28,8 @@ ms.prod: gaming
     "priority": 2,
     "speed_multiplier": 1.2,
     "poi_type": "bed",
-    "duration": 60.0
+    "duration": 60.0,
+    "timeout_cooldown": 8.0
 }
 ```
 

@@ -7,10 +7,10 @@ ms.prod: gaming
 
 # minecraft:behavior.enderman_take_block
 
-`minecraft:behavior.enderman_take_block` allows the entity to pick up a nearby block and carry the block in it's hands.
+`minecraft:behavior.enderman_take_block` allows the entity to pick up a nearby block and carry the block in its hands.
 
 > [!NOTE]
-> This behavior can only be used by `enderman` entity type.
+> This behavior can only be used by the `enderman` entity type.
 
 ## Example
 

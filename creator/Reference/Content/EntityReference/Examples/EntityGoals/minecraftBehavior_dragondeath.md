@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.dragondeath` controls the entity's death state and animation.
 
 > [!NOTE]
-> This behavior can only be used by `ender_dragon` entity type.
+> This behavior can only be used by the `ender_dragon` entity type.
 
 ## Example
 

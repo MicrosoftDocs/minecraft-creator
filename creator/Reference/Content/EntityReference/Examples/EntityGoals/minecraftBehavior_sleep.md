@@ -28,8 +28,12 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.sleep":{
     "priority": 2,
-    "duration": 1.0,
-    "within_radius": 12.0,
+    "cooldown_time": 0.0,
+    "sleep_collider_height": 1.0,
+    "sleep_collider_width": 1.0,
+    "sleep_y_offset": 1.0,
+    "speed_multiplier": 1.0,
+    "timer_cooldown": 8.0
 }
 ```
 

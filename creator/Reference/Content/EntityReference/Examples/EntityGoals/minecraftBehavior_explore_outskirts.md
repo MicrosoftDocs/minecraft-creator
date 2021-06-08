@@ -22,8 +22,9 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.explore_outskirts":{
     "priority": 2,
-    "parameterA":true,
-    "parameterB":42,
+    "explore_dist": 5.0,
+    "speed_multiplier": 1.0,
+    "wait_time": 0
 }
 ```
 

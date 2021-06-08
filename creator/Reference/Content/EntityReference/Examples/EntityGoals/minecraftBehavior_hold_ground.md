@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.hold_ground` allows an entity to stop in their current location, turn to face a mob they are targeting and react with an event.
 
 > [!IMPORTANT]
-> `minecraft:behavior.hold_ground` requires a target in order to work properly.
+> `minecraft:behavior.hold_ground` requires a target in order to work properly. Target can be determined by using one of the following behaviors:
 >
 >- [minecraft:behavior.nearest_attackable_target](minecraftBehavior_nearest_attackable_target.md)
 >- [minecraft:behavior.hurt_by_target](minecraftBehavior_hurt_by_target.md)

@@ -40,5 +40,5 @@ ms.prod: gaming
 - [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
 - [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
 - [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
-- [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)tities/wandering_trader.md)
+- [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)
 - [witch](../../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)

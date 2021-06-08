@@ -14,6 +14,8 @@ ms.prod: gaming
 
 ## Parameters
 
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
 |[entity_types](../Definitions/NestedTables/entity_types.md) | |JSON Object |List of entity types the wither takes into account to find who dealt the most damage to it (Please see entity_types' definition page)|
 
 ## Example

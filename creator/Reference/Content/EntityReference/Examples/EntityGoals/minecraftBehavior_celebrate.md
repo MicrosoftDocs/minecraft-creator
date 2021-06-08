@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:behavior.celebrate
 
-`minecraft:behavior.celebrate` allows an entity to jump up and down while playing a sound
+`minecraft:behavior.celebrate` allows an entity to jump up and down while playing a sound.
 
 ## Parameters
 

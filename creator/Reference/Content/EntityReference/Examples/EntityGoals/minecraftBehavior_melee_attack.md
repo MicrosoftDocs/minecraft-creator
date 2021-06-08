@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:behavior.melee_attack Component
 
-This component allows entities to make close combat melee attacks.
+`minecraft:behavior.melee_attack` allows entities to make close combat melee attacks.
 
 > [!IMPORTANT]
 > In order for the entity to be able to attack its target, the entity will also need another component that sets its target, such as:
