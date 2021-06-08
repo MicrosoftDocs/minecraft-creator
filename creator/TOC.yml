@@ -44,6 +44,8 @@
             href: Reference/Content/entityreference/Examples/EntityAttributes/TOC.yml
           - name: Properties
             href: Reference/Content/entityreference/Examples/EntityProperties/TOC.yml
+          - name: Triggers
+            href: Reference/Content/entityreference/Examples/EntityTriggers/TOC.yml
           - name: ID Lists
             href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/IDLists.md
         - name: Spawn Rules

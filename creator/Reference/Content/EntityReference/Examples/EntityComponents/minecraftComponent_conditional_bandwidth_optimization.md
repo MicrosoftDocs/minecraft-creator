@@ -13,6 +13,11 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
+|conditional_values|*not set* | List| The object containing the conditional bandwidth optimization values.|
+
+### conditional_values
+
+`conditional_values` is an array defined by two parameters. Each item has the following properties:
 
 ## Example
 
