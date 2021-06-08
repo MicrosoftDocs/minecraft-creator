@@ -28,4 +28,5 @@ ms.prod: gaming
 
 ## Vanilla entities using `minecraft:behavior.squid_idle`
 
+- [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)
 - [squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/squid.md)

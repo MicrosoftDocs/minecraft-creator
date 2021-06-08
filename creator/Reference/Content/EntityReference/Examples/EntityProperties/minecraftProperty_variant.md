@@ -37,6 +37,7 @@ ms.prod: gaming
 - [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
+- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
 - [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)

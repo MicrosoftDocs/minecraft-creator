@@ -44,6 +44,8 @@ ms.prod: gaming
 - [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
 - [fish](../../../../Source/VanillaBehaviorPack_Snippets/entities/fish.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
+- [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)
+- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
 - [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)

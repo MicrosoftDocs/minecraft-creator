@@ -38,6 +38,7 @@ ms.prod: gaming
 - [endermite](../../../../Source/VanillaBehaviorPack_Snippets/entities/endermite.md)
 - [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
+- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
 - [ghast](../../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
