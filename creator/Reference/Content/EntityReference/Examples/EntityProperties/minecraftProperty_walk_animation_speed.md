@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:walk_animation_speed":{
-    "value": 0.5
+    "value": 0.0
 }
 ```
 

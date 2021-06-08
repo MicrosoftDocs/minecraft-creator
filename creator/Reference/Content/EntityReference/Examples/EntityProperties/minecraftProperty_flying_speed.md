@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:flying_speed":{
-    "value": 2,
+    "value": 2.0,
 }
 ```
 

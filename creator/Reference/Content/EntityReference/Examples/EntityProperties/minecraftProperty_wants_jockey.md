@@ -13,7 +13,6 @@ ms.prod: gaming
 
 ```json
 "minecraft:wants_jockey":{
-    "value": 0.5
 }
 ```
 

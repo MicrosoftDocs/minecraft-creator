@@ -22,8 +22,9 @@ ms.prod: gaming
 ```json
 "minecraft:ambient_sound_interval":{
     "priority": 2,
-    "parameterA":true,
-    "parameterB":42,
+    "event_name": "ambient",
+    "range": 16.0,
+    "value": 8.0
 }
 ```
 
