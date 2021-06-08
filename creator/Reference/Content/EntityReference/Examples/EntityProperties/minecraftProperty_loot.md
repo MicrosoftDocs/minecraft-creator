@@ -52,6 +52,7 @@ ms.prod: gaming
 - [fishing_hook](../../../../Source/VanillaBehaviorPack_Snippets/entities/fishing_hook.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
 - [ghast](../../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)
+- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
 - [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
