@@ -19,7 +19,7 @@ highlightedContent:
     #card used to define plugin
     - title: Entity Documentation
       itemType: whats-new
-      url: Reference/Content/EntityAPI/index.yml
+      url: Reference/Content/entityreference/index.yml
     #card
     - title: Getting Started with Add-on Development
       itemType: get-started

@@ -2,6 +2,6 @@
   tocHref: /creator/
   topicHref: /creator/index
   items:
-  - name: Entity API
-    tocHref: /creator/testapi/content/entityapi/
-    topicHref: /creator/testapi/content/entityapi/index
+  - name: Entity Documentation
+    tocHref: /creator/reference/content/entityreference/
+    topicHref: /creator/reference/content/entityreference/index
