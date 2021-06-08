@@ -29,8 +29,6 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### blaze
-
 No entities currently use `minecraft:on_ignite`
 
 ## Vanilla entities using `minecraft:on_ignite`
