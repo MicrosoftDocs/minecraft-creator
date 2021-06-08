@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.squid_idle` allows an entity to swim in place.
 
 > [!NOTE]
-> This behavior can only be used by `squid` entity types.
+> This behavior can only be used by the `squid` entity type.
 
 ## Example
 
