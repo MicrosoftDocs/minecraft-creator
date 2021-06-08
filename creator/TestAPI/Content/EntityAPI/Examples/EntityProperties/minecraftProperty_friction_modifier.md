@@ -7,12 +7,12 @@ ms.prod: gaming
 
 # minecraft:friction_modifier
 
-`minecraft:friction_modifier` defines how much friction affects this entity
+`minecraft:friction_modifier` defines how much friction affects this entity.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |value| 1.0| Decimal| The higher the number, the more the friction affects this entity. A value of 1.0 means regular friction, while 2.0 means twice as much. |
 
 ## Example

@@ -15,7 +15,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |
 |start_distance| 10.0| Decimal| The distance in blocks that the owner can be away from this mob before it starts following it |
 |stop_distance| 2.0| Decimal| The distance in blocks this mob will stop from its owner while following it |

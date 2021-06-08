@@ -253,7 +253,7 @@ All the guidance for editing and creating articles, and the basics of editing Ma
 
 The following Visual Studio Code extensions are useful when editing documentation:
 
-- Docs Markdown Extension for Visual Studio Code - Use Alt+M to bring up a menu of docs authoring options like:
+- Docs Markdown Extension for Visual Studio Code - Use Alt+M to bring up a menu of docs authoring options such as:
     - Search and reference images you've uploaded.
     - Add formatting like lists, tables, and docs-specific call-outs like >[!NOTE].
     - Search and reference internal links and bookmarks (links to specific sections within a page).

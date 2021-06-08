@@ -7,19 +7,12 @@ ms.prod: gaming
 
 # minecraft:behavior.float_wander
 
-`minecraft:behavior.float_wander` allows an entity to
-
-
-> [!NOTE]
-> This behavior is a requirement for the following behaviors:
-
->[!IMPORTANT]
-> `minecraft:behavior.float_wander` requires 
+`minecraft:behavior.float_wander` allows an entity to float around in a random direction, similar to the `ghast` entity.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |float_duration| [0.0, 0.0]| Range [a, b]|Range of time in seconds the mob will float around before landing and choosing to do something else |
 |must_reach| false| Boolean|  If true, the point has to be reachable to be a valid target |
 |random_reselect| false| Boolean|  If true, the mob will randomly pick a new point while moving to the previously selected one |

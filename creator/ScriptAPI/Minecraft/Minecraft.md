@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated.  See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -9,17 +9,28 @@ description: Contents of the Minecraft module
 # Minecraft Module
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
+
+
 ## Classes
+- [BlockTypes](BlockTypes.md)
+- [Block](Block.md)
+- [BlockType](BlockType.md)
+- [BlockPermutation](BlockPermutation.md)
+- [BlockComponent](BlockComponent.md)
+- [BlockInventoryComponent](BlockInventoryComponent.md)
+- [BlockInventoryComponentContainer](BlockInventoryComponentContainer.md)
+- [BlockProperties](BlockProperties.md)
+- [StringBlockProperty](StringBlockProperty.md)
+- [IntBlockProperty](IntBlockProperty.md)
+- [BoolBlockProperty](BoolBlockProperty.md)
 - [TickEventSignal](TickEventSignal.md)
 - [WeatherChangedEventSignal](WeatherChangedEventSignal.md)
-- [Blocks](Blocks.md)
-- [BlockStates](BlockStates.md)
+- [ChatEvent](ChatEvent.md)
+- [ChatEventSignal](ChatEventSignal.md)
 - [Entity](Entity.md)
 - [EntityDefinitionFeedItem](EntityDefinitionFeedItem.md)
 - [AddRider](AddRider.md)
 - [Ageable](Ageable.md)
-- [Block](Block.md)
-- [BlockState](BlockState.md)
 - [Breathable](Breathable.md)
 - [Color](Color.md)
 - [Commands](Commands.md)
@@ -27,6 +38,7 @@ description: Contents of the Minecraft module
 - [Dimension](Dimension.md)
 - [Effects](Effects.md)
 - [EffectType](EffectType.md)
+- [ExplosionOptions](ExplosionOptions.md)
 - [Events](Events.md)
 - [FeedItem](FeedItem.md)
 - [FeedItemEffect](FeedItemEffect.md)
@@ -60,6 +72,7 @@ description: Contents of the Minecraft module
 - [NavigationGeneric](NavigationGeneric.md)
 - [NavigationHover](NavigationHover.md)
 - [NavigationWalk](NavigationWalk.md)
+- [Player](Player.md)
 - [Rideable](Rideable.md)
 - [Seat](Seat.md)
 - [Strength](Strength.md)

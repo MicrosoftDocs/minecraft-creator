@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |search_range| 0| Integer| The range that the mob will search for a treasure chest within a ruin or shipwreck to move towards. |
 |speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |
 |stop_distance| 2.0| Decimal| The distance the mob will move before stopping. |

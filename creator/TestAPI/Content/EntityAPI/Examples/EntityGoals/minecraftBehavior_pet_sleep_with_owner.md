@@ -15,7 +15,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |goal_radius| 0.5| Decimal| Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot |
 |search_height| 1| Integer| Height in blocks from the owner the pet can be to sleep with owner. |
 |search_range| 0| Integer| The range that the mob will search for a treasure chest within a ruin or shipwreck to move towards. |

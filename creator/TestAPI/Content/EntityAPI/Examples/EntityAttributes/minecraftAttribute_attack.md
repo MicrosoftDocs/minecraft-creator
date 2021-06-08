@@ -15,7 +15,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 | damage|*not set* | Range [a, b]| Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it |
 |effect_duration| 0.0| Decimal|  Duration in seconds of the status ailment applied to the damaged entity |
 |effect_name|*not set* | String|  Identifier of the status ailment to apply to an entity attacked by this entity's melee attack |
@@ -34,11 +34,11 @@ ms.prod: gaming
 
 ### zombie
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="167-169":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="169-171":::
 
 ### wither_skeleton
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither_skeleton.json" range="32-36":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither_skeleton.json" range="34-38":::
 
 ## Vanilla entities using `minecraft:attack`
 
@@ -49,7 +49,7 @@ ms.prod: gaming
 - [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
 - [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
 - [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [elder guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
+- [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
 - [ender_crystal](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_crystal.md)
 - [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)
 - [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
@@ -59,16 +59,16 @@ ms.prod: gaming
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
 - [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
 - [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
-- [magma cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
+- [magma_cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
 - [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
 - [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
 - [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)
 - [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
+- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
 - [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
 - [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
 - [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
-- [polar bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
+- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
 - [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
 - [silverfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/silverfish.md)
 - [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)

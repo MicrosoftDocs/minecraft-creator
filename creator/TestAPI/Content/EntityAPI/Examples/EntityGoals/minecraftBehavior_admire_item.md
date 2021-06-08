@@ -15,7 +15,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |admire_item_sound|*not set* |String |The sound event to play when admiring the item |
 |sound_interval|0 |Range ["range_min", "range_max"] |The range of time in seconds to randomly wait before playing the sound again. |
 
@@ -40,4 +40,4 @@ ms.prod: gaming
 
 ## Vanilla entities using `admire_item`
 
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.json)
+- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)

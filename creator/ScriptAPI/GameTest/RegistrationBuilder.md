@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated.  See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -8,7 +8,9 @@ description: Contents of the GameTest.RegistrationBuilder class.
 ---
 # RegistrationBuilder Class
 >[!IMPORTANT]
->These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.A utility class to set GameTest parameters for a test
+>These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
+
+A utility class to set GameTest parameters for a test
 
 
 ## Methods
@@ -110,7 +112,7 @@ Returns [*RegistrationBuilder*](RegistrationBuilder.md)
 structureName(structureName: string): RegistrationBuilder
 `
 
-Sets the name of the structure for a test to use.  "Foo:bar" will load `/structures/Foo/bar.mcstructure` from the behavior pack stack
+Sets the name of the structure for a test to use. "xyz:bar" will load `/structures/xyz/bar.mcstructure` from the behavior pack stack.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
@@ -137,7 +139,7 @@ Returns [*RegistrationBuilder*](RegistrationBuilder.md)
 tag(tag: string): RegistrationBuilder
 `
 
-Adds a tag to a test.  You can run all tests with a given tag with `/gametest runall <tag>`
+Adds a tag to a test. You can run all tests with a given tag with `/gametest runall <tag>`
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |

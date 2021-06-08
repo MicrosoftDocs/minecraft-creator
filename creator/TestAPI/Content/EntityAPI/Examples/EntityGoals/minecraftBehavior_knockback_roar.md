@@ -15,7 +15,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |attack_time| 0.5| Decimal| The delay after which the knockback occurs (in seconds). |
 |cooldown_time| 0.0| Decimal| Time in seconds the mob has to wait before using the goal again |
 |duration| 1.0| Decimal| The duration of the roar (in seconds). |
