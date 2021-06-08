@@ -29,7 +29,7 @@ ms.prod: gaming
 
 ### llama
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/llama.json" range="495-497":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/llama.json" range="99-102":::
 
 ## Vanilla entities using `minecraft:strength`
 
