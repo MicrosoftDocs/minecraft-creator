@@ -14,23 +14,22 @@ Below is a list of all the available Components within Minecraft:Bedrock Edition
 |:-----|:----------|
 |[minecraft:addrider](EntityComponents/minecraftComponent_addrider.md)|`minecraft:addrider` adds a rider to the entity. |
 |[minecraft:admire_item](EntityComponents/minecraftComponent_admire_item.md)|`minecraft:admire_item` allows an entity to ignore attackable targets for a given duration. |
-|[minecraft:ageable](minecraftComponent_ageable.md) | |
-|[minecraft:angry](minecraftComponent_angry.md) | |
-|[minecraft:annotation_break_door](minecraftComponent_annotation_break_door.md) | |
-|[minecraft:annotation_open_door](minecraftComponent_annotation_open_door.md) | |
-|[minecraft:area_attack](minecraftComponent_area_attack.md) | |
-|[minecraft:attack_cooldown](minecraftComponent_attack_cooldown.md) | |
-|[minecraft:barter](minecraftComponent_barter.md) | |
-|[minecraft:block_sensor](minecraftComponent_block_sensor.md) | |
-|[minecraft:boostable](minecraftComponent_boostable.md) | |
-|[minecraft:boss](minecraftComponent_boss.md) | |
-|[minecraft:break_blocks](minecraftComponent_break_blocks.md) | |
-|[minecraft:breathable](minecraftComponent_breathable.md) | |
-|[minecraft:breedable](minecraftComponent_breedable.md) | |
-|[minecraft:bribeable](minecraftComponent_bribeable.md) | |
-|[minecraft:buoyant](minecraftComponent_buoyant.md) | |
-|[minecraft:burns_in_daylight](minecraftComponent_burns_in_daylight.md) | |
-|[minecraft:celebrate_hunt](minecraftComponent_celebrate_hunt.md) | |
-|[minecraft:combat_regeneration](minecraftComponent_combat_regeneration.md) | |
-|[minecraft:conditional_bandwidth_optimization]
-  (minecraftComponent_conditional_bandwidth_optimiza)on.md | |
+|[minecraft:ageable](EntityComponents/minecraftComponent_ageable.md) |`minecraft:ageable` will add a timer for the entity to grow up. It can be accelerated by giving the entity the items it likes as defined by `feedItems`. |
+|[minecraft:angry](EntityComponents/minecraftComponent_angry.md) | |
+|[minecraft:annotation_break_door](EntityComponents/minecraftComponent_annotation_break_door.md) | |
+|[minecraft:annotation_open_door](EntityComponents/minecraftComponent_annotation_open_door.md) | |
+|[minecraft:area_attack](EntityComponents/minecraftComponent_area_attack.md) | |
+|[minecraft:attack_cooldown](EntityComponents/minecraftComponent_attack_cooldown.md) | |
+|[minecraft:barter](EntityComponents/minecraftComponent_barter.md) | |
+|[minecraft:block_sensor](EntityComponents/minecraftComponent_block_sensor.md) | |
+|[minecraft:boostable](EntityComponents/minecraftComponent_boostable.md) | |
+|[minecraft:boss](EntityComponents/minecraftComponent_boss.md) | |
+|[minecraft:break_blocks](EntityComponents/minecraftComponent_break_blocks.md) | |
+|[minecraft:breathable](EntityComponents/minecraftComponent_breathable.md) | |
+|[minecraft:breedable](EntityComponents/minecraftComponent_breedable.md) | |
+|[minecraft:bribeable](EntityComponents/minecraftComponent_bribeable.md) | |
+|[minecraft:buoyant](EntityComponents/minecraftComponent_buoyant.md) | |
+|[minecraft:burns_in_daylight](EntityComponents/minecraftComponent_burns_in_daylight.md) | |
+|[minecraft:celebrate_hunt](EntityComponents/minecraftComponent_celebrate_hunt.md) | |
+|[minecraft:combat_regeneration](EntityComponents/minecraftComponent_combat_regeneration.md) | |
+|[minecraft:conditional_bandwidth_optimization](EntityComponents/minecraftComponent_conditional_bandwidth_optimiza)on.md | |
