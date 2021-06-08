@@ -16,7 +16,8 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices.md"
+          "ThirdPartyNotices.md",
+          "creator/TestAPI/Source/Templates/**"
         ]
       }
     ],

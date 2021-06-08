@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |avoid_surface| true| Boolean|  If true, the mob will avoid surface water blocks by swimming below them |
 |interval| 120| Integer|  A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal |
 |speed_multiplier| 1.0|Decimal|  Movement speed multiplier of the mob when using this AI Goal |

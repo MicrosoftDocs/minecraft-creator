@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |cooldown_time| 0.0| Decimal| Time in seconds the mob has to wait before using the goal again |
 |goal_radius| 0.5| Decimal| Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot |
 |search_range| 0| Integer| The distance in blocks to search for points inside villages. If <= 0, find the closest village regardless of distance. |

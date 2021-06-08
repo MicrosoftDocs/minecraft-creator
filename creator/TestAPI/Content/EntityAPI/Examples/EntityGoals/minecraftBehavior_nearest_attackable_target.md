@@ -17,7 +17,7 @@ Allows an entity to attack the closest target within a given subset of specific 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |attack_interval |0 |Integer |Time range (in seconds) between searching for an attack target, range is in (0, "attack_interval"]. Only used if "attack_interval" is greater than 0, otherwise "scan_interval" is used. |
 |attack_interval_min |0 |Integer |Alias for "attack_interval"; provides the same functionality as "attack_interval". |
 |attack_owner |false |Boolean |If true, this entity can attack its owner |
@@ -67,7 +67,7 @@ Allows an entity to attack the closest target within a given subset of specific 
 - [cave spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
 - [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
 - [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [elder guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
+- [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
 - [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
 - [endermite](../../../../Source/VanillaBehaviorPack_Snippets/entities/endermite.md)
 - [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
@@ -77,19 +77,19 @@ Allows an entity to attack the closest target within a given subset of specific 
 - [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
 - [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [magma cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
+- [magma_cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
 - [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
 - [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)
-- [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
+- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
 - [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
 - [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
-- [polar bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
+- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
 - [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
 - [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
 - [silverfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/silverfish.md)
 - [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
 - [slime](../../../../Source/VanillaBehaviorPack_Snippets/entities/slime.md)
-- [snow golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
+- [snow_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
 - [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
 - [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
 - [vex](../../../../Source/VanillaBehaviorPack_Snippets/entities/vex.md)

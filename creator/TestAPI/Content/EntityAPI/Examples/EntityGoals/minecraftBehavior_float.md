@@ -48,7 +48,7 @@ ms.prod: gaming
 - [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)
 - [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
 - [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
-- [polar bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
+- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
 - [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
 - [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
 - [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)

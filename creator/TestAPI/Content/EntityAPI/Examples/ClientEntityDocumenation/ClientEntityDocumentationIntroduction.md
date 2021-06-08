@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Client Entity Documentation Introduction
+title: Client Entity JSON Introduction
 ms.prod: gaming
 ---
 
-# Client Entity Documenation
+# Client Entity JSON Introduction
 
 Client entity definitions are contained within a Resource Pack.
 

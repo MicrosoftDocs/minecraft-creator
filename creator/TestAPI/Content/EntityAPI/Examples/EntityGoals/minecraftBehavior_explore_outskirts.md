@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |explore_dist| 5.0| Decimal| The distance in which the mob will proceed past the village bounds |
 |speed_multiplier| 1.0| Decimal|  Movement speed multiplier of the mob when using this AI Goal |
 |wait_time| 0| Integer| The time the mob will stand around 'searching' for POIs |

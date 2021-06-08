@@ -1,0 +1,6 @@
+- name: Components List
+  href: ../ComponentList.md
+- name: minecraft:addrider
+  href: minecraftComponent_addrider.md
+- name: minecraft:admire_item
+  href: minecraftComponent_admire_item.md

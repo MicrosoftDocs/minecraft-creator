@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |slot_drop_chance|*not set* | List|  A list of slots with the chance to drop an equipped item from that slot. |
 |table|*not set* | String|  The file path to the equipment table, relative to the behavior pack's root. |
 
@@ -35,7 +35,7 @@ ms.prod: gaming
 - [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
 - [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
-- [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
+- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
 - [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
 - [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
 - [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)

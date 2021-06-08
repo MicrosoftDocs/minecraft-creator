@@ -18,7 +18,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |must_be_on_ground| true| Boolean|  If true, the mob will only jump at its target if its on the ground. Setting it to false will allow it to jump even if its already in the air |
 |set_persistent| false| Boolean|  Allows the actor to be set to persist upon targeting a player |
 |yd| 0.0| Decimal| The height in blocks the mob jumps when leaping at its target |

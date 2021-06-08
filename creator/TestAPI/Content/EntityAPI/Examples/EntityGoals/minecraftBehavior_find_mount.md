@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |avoid_water| false| Boolean|  If true, the mob will not go into water blocks when going towards a mount |
 |mount_distance| -1.0| Decimal|  This is the distance the mob needs to be, in blocks, from the desired mount to mount it. If the value is below 0, the mob will use its default attack distance |
 |start_delay| 0| Integer|  Time the mob will wait before starting to move towards the mount |

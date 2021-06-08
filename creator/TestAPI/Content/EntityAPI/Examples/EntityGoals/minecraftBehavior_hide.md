@@ -15,7 +15,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |duration| 1.0| Decimal| Amount of time in seconds that the mob reacts. |
 |poi_type|*not set* | String| Defines what POI type to hide at. |
 |speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |

@@ -1,6 +1,6 @@
-- name: Minecraft Bedrock Documentation
+- name: "Minecraft: Bedrock Documentation"
   items:
-    - name: Minecraft Bedrock Documentation Homepage
+    - name: "Minecraft: Bedrock Documentation Homepage"
       href: index.yml
     - name: Tutorials
       items: 
@@ -28,6 +28,33 @@
       items:
       - name: GameTest API 
         href: ScriptAPI/TOC.yml
-      - name: Behavior Pack Definitions
-        href: TestAPI/Content/EntityAPI/TOC.yml
-  
+      - name: Behavior Pack 
+        items:
+        - name: Entity JSON
+          items:
+          - name: Entity Documentation Homepage
+            href: TestAPI/Content/EntityAPI/index.yml
+          - name: Filters
+            href: TestAPI/Content/EntityAPI/Examples/Filters/TOC.yml
+          - name: Components
+            href: TestAPI/Content/EntityAPI/Examples/EntityComponents/TOC.yml
+          - name: AI Goals
+            href: TestAPI/Content/EntityAPI/Examples/EntityGoals/TOC.yml
+          - name: Attributes
+            href: TestAPI/Content/EntityAPI/Examples/EntityAttributes/TOC.yml
+          - name: Properties
+            href: TestAPI/Content/EntityAPI/Examples/EntityProperties/TOC.yml
+          - name: ID Lists
+            href: TestAPI/Content/EntityAPI/Examples/ClientEntityDocumenation/IDLists.md
+        - name: Spawn Rules
+          href: TestAPI/Content/EntityAPI/Examples/ClientEntityDocumenation/DataDrivenSpawning.md
+      - name: Resource Pack
+        items:
+        - name: Client Entity JSON
+          href: TestAPI/Content/EntityAPI/Examples/ClientEntityDocumenation/ClientEntityDocumentationIntroduction.md
+    - name: Contribute
+      items: 
+      - name: "Contributing to Minecraft: Bedrock Documentation"
+        href: Documents/ContributorGuide.md
+      - name: Contributor Style Guide
+        href: Documents/StyleGuide.md

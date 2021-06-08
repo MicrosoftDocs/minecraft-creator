@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |active_time| 0| Integer| The amount of ticks the NPC will stay in their the work location |
 |can_work_in_rain| false| Boolean| If true, this entity can work when their worksite POI is being rained on. |
 |goal_cooldown| 0| Integer| The amount of ticks the goal will be on cooldown before it can be used again |

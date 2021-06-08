@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |alert_same_type| false| Boolean| If true, nearby mobs of the same type will be alerted about the damage |
 |[entity_types](../Definitions/NestedTables/entity_types.md)|*not set* | JSON Object| List of entity types that this mob can target if they hurt their owner|
 |hurt_owner| false| Boolean|  If true, the mob will hurt its owner and other mobs with the same owner as itself |
@@ -59,10 +59,10 @@ ms.prod: gaming
 - [iron-golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
 - [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [piglin brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
+- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
 - [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
 - [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
-- [polar bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
+- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
 - [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
 - [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
 - [silverfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/silverfish.md)

@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |damage_sources| all| List| The list of Entity Damage Sources that will cause this mob to panic |
 |force| false| Boolean| If true, this mob will not stop panicking until it can't move anymore or the goal is removed from it |
 |ignore_mob_damage| false| Boolean| If true, the mob will not panic in response to damage from other mobs. This overrides the damage types in "damage_sources" |
@@ -56,7 +56,7 @@ ms.prod: gaming
 - [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)
 - [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
 - [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
-- [polar bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
+- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
 - [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
 - [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
 - [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)

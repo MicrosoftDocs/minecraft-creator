@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 |carried_item_switch_time| 2.0| Decimal| The max time in seconds that the trader will hold an item before attempting to switch for a different item that takes the same trade |
 |cooldown | 2.0| Decimal| The time in seconds before the trader can use this goal again |
 |interest_time | 45.0| Decimal|  The max time in seconds that the trader will be interested with showing it's trade items |

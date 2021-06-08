@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
-|:---------:|:---------:|:---------:|:---------:|
+|:----------|:----------|:----------|:----------|
 | max| 5| Integer| The maximum strength of this entity |
 |value| 1| Integer|  The initial value of the strength |
 
