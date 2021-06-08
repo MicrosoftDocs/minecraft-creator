@@ -34,7 +34,7 @@ ms.prod: gaming
 
 ### ender_dragon
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ender_dragon.json" range="84-87":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ender_dragon.json" range="86-89":::
 
 ## Vanilla entities using `minecraft:on_start_landing`
 
