@@ -69,7 +69,7 @@ Tests the current weather, at the actor's position, against a provided weather v
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="290-319":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="300-305":::
 
 ## Vanilla entities using `weather_at_position`
 

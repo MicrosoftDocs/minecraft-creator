@@ -64,3 +64,6 @@ An example is if a `value` of 5 is set, a random number in the range of 0 - 5 wi
 ## Vanilla entities examples
 
 ## Vanilla entities examples using `random_chance`
+
+- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
+- [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)

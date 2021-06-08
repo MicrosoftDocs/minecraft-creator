@@ -62,7 +62,7 @@ Tests for the current weather state the entity is experiencing.
 
 ### bee
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/bee.json" range="292-318":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/bee.json" range="334-344":::
 
 ## Vanilla Mobs using `weather`
 
