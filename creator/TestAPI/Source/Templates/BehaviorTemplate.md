@@ -1,8 +1,12 @@
 ---
-author: <Employee Name>
-ms.author: <Employee Name>
-title: <Name of Behavior>
+author: v-josjones
+ms.author: v-josjones
+title: Name of Behavior
 ms.prod: gaming
+
+
+
+
 ---
 
 # Name of Behavior
