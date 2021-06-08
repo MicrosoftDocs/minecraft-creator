@@ -42,3 +42,7 @@
   href: minecraftComponent_combat_regeneration.md
 - name: minecraft:conditional_bandwidth_optimization
   href: minecraftComponent_conditional_bandwidth_optimization.md
+- name: minecraft:custom_hit_test
+  href: minecraftComponent_custom_hit_test.md
+- name: minecraft:damage_over_time
+  href: minecraftComponent_damage_over_time.md

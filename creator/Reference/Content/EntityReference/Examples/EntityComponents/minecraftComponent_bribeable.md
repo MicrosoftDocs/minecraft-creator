@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:bribeable
 
-`minecraft:bribeable` allows an entity to establish a way to get into the `bribed` state..
+`minecraft:bribeable` allows an entity to establish a way to get into the `bribed` state.
 
 ## Parameters
 
