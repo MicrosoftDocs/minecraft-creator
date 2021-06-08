@@ -24,5 +24,6 @@ ms.prod: gaming
 
 ## Vanilla entities using `minecraft:is_hidden_when_invisible`
 
+- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
 - [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)

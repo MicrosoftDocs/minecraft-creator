@@ -40,6 +40,7 @@ ms.prod: gaming
 
 ## Vanilla entities using `minecraft:behavior.random_swim`
 
+- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
 - [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
 - [fish](../../../../Source/VanillaBehaviorPack_Snippets/entities/fish.md)

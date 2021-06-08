@@ -5,7 +5,7 @@ title: minecraft:behavior.nearest_attackable_target
 ms.prod: gaming
 ---
 
-# minecraft:behavior.nearest_attackable_target Component
+# minecraft:behavior.nearest_attackable_target 
 
 Allows an entity to attack the closest target within a given subset of specific target types.
 
@@ -61,6 +61,7 @@ Allows an entity to attack the closest target within a given subset of specific 
 
 ### Vanilla mobs using `nearest_attackable_target`
 
+- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
