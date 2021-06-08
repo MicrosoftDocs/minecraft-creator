@@ -14,7 +14,7 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |interval| 120| Integer| A random value to determine at what intervals something can occur. This has a 1/interval chance to choose this goal |
-|random_stop_interval| 120| Integer| a random value in which the goal can use to pull out of the behavior. This is a 1/interval chance to play the sound |
+|random_stop_interval| 120| Integer| A random value to determine at what interval the AI goal can stop. This has a 1/interval chance to stop this goal.|
 
 ## Example
 

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:behavior.scared
 
-`minecraft:behavior.scared` allows an entity to react and scared when a thunderstorm occurs.
+`minecraft:behavior.scared` allows an entity to become scared and react when a thunderstorm occurs.
 
 ## Parameters
 

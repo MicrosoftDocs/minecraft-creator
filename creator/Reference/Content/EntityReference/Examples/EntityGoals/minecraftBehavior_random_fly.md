@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:behavior.random_fly
 
-`minecraft:behavior.random_fly` allows an entity to fly in a random point in water.
+`minecraft:behavior.random_fly` allows an entity to fly to a random spot.
 
 ## Parameters
 

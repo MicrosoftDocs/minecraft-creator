@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:behavior.ram_attack
 
-This component allows the mob to search for a random target and, if a direct path exists between the mob and the target, it will perform a charge. If the attack hits, the target will be knocked back based on the mob's speed.
+`minecraft:behavior.ram_attack` allows the mob to search for a random target and, if a direct path exists between the mob and the target, it will perform a charge. If the attack hits, the target will be knocked back based on the mob's speed.
 
 ## Parameters
 

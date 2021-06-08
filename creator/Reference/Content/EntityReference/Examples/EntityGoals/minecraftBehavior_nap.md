@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:behavior.nap
 
-`minecraft:behavior.nap` allows an entity to move to land when in a non-land medium such as lava or water.
+`minecraft:behavior.nap` allows an entity to nap in a location when distant from other entities.
 
 ## Parameters
 

@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.leap_at_target` allows an entity to jump towards a target.
 
 > [!IMPORTANT]
-> `minecraft:behavior.leap_at_target` requires a target in order to work properly.
+> `minecraft:behavior.leap_at_target` requires a target in order to work properly. Target can be determined by using one of the following behaviors:
 >
 >- [minecraft:behavior.nearest_attackable_target](minecraftBehavior_nearest_attackable_target.md)
 >- [minecraft:behavior.hurt_by_target](minecraftBehavior_hurt_by_target.md)
