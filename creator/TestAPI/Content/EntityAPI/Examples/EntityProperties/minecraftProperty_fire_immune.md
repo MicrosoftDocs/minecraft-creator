@@ -36,4 +36,3 @@ ms.prod: gaming
 - [wither](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither.md)
 - [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)
 - [zombie pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.md)
-

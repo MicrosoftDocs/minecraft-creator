@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:input_ground_controlled
 
-`minecraft:input_ground_controlled` allows a ridable entity the ability to be controlled using WASD controls when ridden by a player.
+`minecraft:input_ground_controlled` allows a ridable entity the ability to be controlled using keyboard controls when ridden by a player.
 
 ## Example
 

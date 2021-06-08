@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:friction_modifier
 
-`minecraft:friction_modifier` defines how much friction affects this entity
+`minecraft:friction_modifier` defines how much friction affects this entity.
 
 ## Parameters
 

@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:skin_id` sets the entity's Skin ID value. Can be used to differentiate skins, such as base skins for villagers.
 
 > [!IMPORTANT]
-> `minecraft:skin_id` requires multiple texture sets to be set up for the entity. 
+> `minecraft:skin_id` requires multiple texture sets to be set up for the entity.
 
 ## Parameters
 
@@ -39,4 +39,3 @@ ms.prod: gaming
 
 - [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
 - [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-
