@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:behavior.jump_to_block
 
-This component allows the mob to search around for a block to jump to and then jump to that block.
+`minecraft:behavior.jump_to_block` allows the mob to search around for a block to jump to and then jump to that block.
 
 ## Parameters
 

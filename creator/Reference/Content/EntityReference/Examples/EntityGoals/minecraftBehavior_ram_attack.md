@@ -50,4 +50,4 @@ This component allows the mob to search for a random target and, if a direct pat
 
 ## Vanilla Mobs using `minecraft:behavior.ram_attack`
 
-- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
+- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
