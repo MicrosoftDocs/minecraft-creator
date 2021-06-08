@@ -1,7 +1,7 @@
 ---
-author: <Employee Name>
-ms.author: <Employee Name>
-title: <Name of Filter>
+author: v-josjones
+ms.author: v-josjones
+title: Name of Filter
 ms.prod: gaming
 ---
 
