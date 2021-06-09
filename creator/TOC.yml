@@ -1,6 +1,6 @@
-- name: Minecraft Bedrock Documentation
+- name: "Minecraft: Bedrock Documentation"
   items:
-    - name: Minecraft Bedrock Documentation Homepage
+    - name: "Minecraft: Bedrock Documentation Homepage"
       href: index.yml
     - name: Tutorials
       items: 
@@ -14,7 +14,9 @@
               href: Documents/BehaviorPack.md
             - name: Adding a Custom Block
               href: Documents/CustomBlock.md
-        - name: Command and Command Blocks
+            - name: Introduction to the Caves & Cliffs Entities
+              href: Documents/CavesAndCliffsEntities.md
+        - name: Commands and Command Blocks 
           items:
           - name: Getting Started with Commands
             href: Documents/CommandBlocks.md
@@ -26,6 +28,37 @@
             href: Documents/GameTestBuildYourFirstGameTest.md
     - name: Reference Documentation
       items:
-      - name: Bedrock API 
+      - name: GameTest API 
         href: ScriptAPI/TOC.yml
-  
+      - name: Behavior Pack 
+        items:
+        - name: Entity JSON
+          items:
+          - name: Entity Documentation Homepage
+            href: Reference/Content/entityreference/index.yml
+          - name: Filters
+            href: Reference/Content/entityreference/Examples/Filters/TOC.yml
+          - name: Components
+            href: Reference/Content/entityreference/Examples/EntityComponents/TOC.yml
+          - name: AI Goals
+            href: Reference/Content/entityreference/Examples/EntityGoals/TOC.yml
+          - name: Attributes
+            href: Reference/Content/entityreference/Examples/EntityAttributes/TOC.yml
+          - name: Properties
+            href: Reference/Content/entityreference/Examples/EntityProperties/TOC.yml
+          - name: Triggers
+            href: Reference/Content/entityreference/Examples/EntityTriggers/TOC.yml
+          - name: ID Lists
+            href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/IDLists.md
+        - name: Spawn Rules
+          href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/DataDrivenSpawning.md
+      - name: Resource Pack
+        items:
+        - name: Client Entity JSON
+          href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/ClientEntityDocumentationIntroduction.md
+    - name: Contribute
+      items: 
+      - name: "Contributing to Minecraft: Bedrock Documentation"
+        href: Documents/ContributorGuide.md
+      - name: Contributor Style Guide
+        href: Documents/StyleGuide.md

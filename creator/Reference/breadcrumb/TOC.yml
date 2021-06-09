@@ -1,0 +1,7 @@
+- name: Minecraft Bedrock documentation
+  tocHref: /creator/
+  topicHref: /creator/index
+  items:
+  - name: Entity Documentation
+    tocHref: /creator/reference/content/entityreference/
+    topicHref: /creator/reference/content/entityreference/index

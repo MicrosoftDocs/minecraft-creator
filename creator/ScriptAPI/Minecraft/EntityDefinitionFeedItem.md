@@ -1,0 +1,24 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.prod: gaming
+title: Minecraft.EntityDefinitionFeedItem Class
+description: Contents of the Minecraft.EntityDefinitionFeedItem class.
+---
+# EntityDefinitionFeedItem Class
+>[!IMPORTANT]
+>These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
+
+As part of the Ageable component, represents a set of items that can be fed to an entity and the rate at which that causes them to grow.
+
+## Properties
+### **growth** - `number`
+The amount by which an entity's age will increase when fed this item. Values usually range between 0 and 1.
+
+
+### **item** - `string`
+Identifier of type of item that can be fed. If a namespace is not specified, 'minecraft:' is assumed. Example values include 'wheat' or 'golden_apple'.
+
+
+
