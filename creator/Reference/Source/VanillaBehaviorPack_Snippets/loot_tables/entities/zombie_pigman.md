@@ -1,3 +1,10 @@
-# Zombie Pigman loot_table
+---
+author: v-josjones
+ms.author: v-josjones
+title: zombie_pigman
+ms.prod: gaming
+---
+
+# zombie_pigman 
 
 :::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/zombie_pigman.json":::
