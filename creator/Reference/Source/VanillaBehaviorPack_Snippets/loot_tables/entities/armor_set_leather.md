@@ -1,7 +1,7 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title:armor_set_leather
+title: armor_set_leather
 ms.prod: gaming
 ---
 
