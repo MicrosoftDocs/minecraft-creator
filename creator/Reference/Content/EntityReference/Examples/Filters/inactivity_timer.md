@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # inactivity_timer
 
-Tests if the specified duration in seconds of inactivity.
+Tests if the entity was inactive for specified duration. 
 
 ## Parameters
 

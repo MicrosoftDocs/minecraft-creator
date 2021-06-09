@@ -12,7 +12,7 @@ Below is a list of all the available filters within Minecraft:Bedrock Edition fo
 
 |Filter |Description|
 |:------|:----------|
-|[clock_time](Filters/clock_time.md)|`clock_time` allows a creator to compares the current time with a float value in the range (0.0, 1.0). |
+|[clock_time](Filters/clock_time.md)|`clock_time` allows a creator to compare the current time with a float value in the range (0.0, 1.0). |
 |[distance_to_nearest_player](Filters/distance_to_nearest_player.md)|`distance_to_nearest_player` compares the distance to the nearest Player with a float value. |
 |[has_ability](Filters/has_ability.md)|Returns true when the subject entity has the named ability. |
 |[has_biome_tag](Filters/has_biome_tag.md)|Tests whether the biome the subject is in has the specified tag. |
@@ -54,7 +54,7 @@ Below is a list of all the available filters within Minecraft:Bedrock Edition fo
 |[is_owner](Filters/is_owner.md)|Returns true if the subject entity is the owner of the calling entity. |
 |[is_persistent](Filters/is_persistent.md)|Tests if the subject's persistence matches the bool value passed in. |
 |[is_riding](Filters/is_riding.md)|Returns true if the subject entity is riding on another entity. |
-|[is_skin_id](Filters/is_skin_id.md)|Returns true if the subject entity is the skin id number provided. |
+|[is_skin_id](Filters/is_skin_id.md)|Returns true if the subject entity uses the skin id number provided. |
 |[is_sleeping](Filters/is_sleeping.md)|Tests whether the subject is sleeping. |
 |[is_sneaking](Filters/is_sneaking.md)|Tests whether the subject is sneaking. |
 |[is_snow_covered](Filters/is_snow_covered.md)|Tests whether the subject is in an area covered by snow. |
@@ -65,10 +65,10 @@ Below is a list of all the available filters within Minecraft:Bedrock Edition fo
 |[is_underwater](Filters/is_underwater.md)|Returns true when the subject entity is under water. |
 |[is_variant](Filters/is_variant.md)|Returns true if the subject entity is the variant number provided. |
 |[is_visible](Filters/is_visible.md)|Returns true if the subject entity is visible. |
-|[light_level](Filters/light_level.md)|Tests is the entity is outside of the specified light level range. The range is set between 0 and 16. |
+|[light_level](Filters/light_level.md)|Tests if the entity is outside of the specified light level range. The range is set between 0 and 16. |
 |[moon_intensity](Filters/moon_intensity.md)|Compares the current moon intensity with a float value in the range of 0.0 and 1.0 |
 |[moon_phase](Filters/moon_phase.md)|Compares the current moon intensity with a float value in the range of 0.0 and 1.0 |
-|[on_ground](Filters/on_ground.md)|Returns true when the subject entity is on ground. |
+|[on_ground](Filters/on_ground.md)|Returns true when the subject entity is on the ground. |
 |[on_ladder](Filters/on_ladder.md)|Returns true when the subject entity is on a ladder. |
 |[random_chance](Filters/random_chance.md)|Returns true if the random chance rolls 0 out of a specified max range. |
 |[rider_count](Filters/rider_count.md)|Returns the number of riders on this entity. |
