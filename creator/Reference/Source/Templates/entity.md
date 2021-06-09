@@ -6924,7 +6924,7 @@ Returns true if the subject entity is visible.
 
 ### light_level
 
-Tests is the mob is outside of the specified light level range (0, 16).
+Tests if the mob is outside of the specified light level range (0, 16).
 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
 <tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
@@ -7260,7 +7260,7 @@ Compares the current moon phase with an integer value in the range (0, 7).
 
 ### on_ground
 
-Returns true when the subject entity is on ground.
+Returns true when the subject entity is on the ground.
 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
 <tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>

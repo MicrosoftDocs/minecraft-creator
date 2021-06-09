@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity List
 
-Below are a list of all the available Entities within Minecraft:Bedrock Edition located in the Vanilla Behavior Pack.
+Below is a list of all the available Entities within Minecraft:Bedrock Edition located in the Vanilla Behavior Pack.
 
 |Entity Behavior JSON |
 |:-----|
