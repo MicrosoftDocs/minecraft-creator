@@ -31,7 +31,7 @@ ms.prod: gaming
 
 ### wither
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither.json" range="19-22":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither.json" range="21-24":::
 
 ## Vanilla entities using `minecraft:boss`
 
