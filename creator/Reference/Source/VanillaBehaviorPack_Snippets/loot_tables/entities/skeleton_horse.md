@@ -1,3 +1,10 @@
-# Skeleton Horse loot_table
+---
+author: v-josjones
+ms.author: v-josjones
+title: skeleton_horse
+ms.prod: gaming
+---
+
+# skeleton_horse
 
 :::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/skeleton_horse.json":::

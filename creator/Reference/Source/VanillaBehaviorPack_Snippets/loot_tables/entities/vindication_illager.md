@@ -1,3 +1,10 @@
-# Vindication Illager loot_table
+---
+author: v-josjones
+ms.author: v-josjones
+title: vindication_illager
+ms.prod: gaming
+---
+
+# vindication_illager
 
 :::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/vindication_illager.json":::

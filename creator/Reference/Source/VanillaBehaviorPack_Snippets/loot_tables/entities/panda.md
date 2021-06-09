@@ -1,3 +1,10 @@
-# Panda loot_table
+---
+author: v-josjones
+ms.author: v-josjones
+title: panda
+ms.prod: gaming
+---
+
+# panda
 
 :::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/panda.json":::
