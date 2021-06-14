@@ -88,6 +88,19 @@ landingContent:
           - text: minecraft:strength
             url: Examples/EntityAttributes/minecraftAttribute_strength.md
 # Card
+  - title: Built-in Events
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Events List
+            url: Examples/EventList.md
+          - text: minecraft:entity_born
+            url: Examples/EntityEvents/minecraftEvents_entity_born.md
+          - text: minecraft:entity_spawned
+            url: Examples/EntityEvents/minecraftEvents_entity_spawned.md
+          - text: minecraft:entity_transformed
+            url: Examples/EntityEvents/minecraftEvents_entity_transformed.md
+# Card
   - title: Triggers
     linkLists:
       - linkListType: reference
