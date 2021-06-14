@@ -49,7 +49,7 @@ Below is a list of all the available Components within Minecraft:Bedrock Edition
 |[minecraft:genetics](EntityComponents/minecraftComponent_genetics.md) |`minecraft:genetics` |
 |[minecraft:giveable](EntityComponents/minecraftComponent_giveable.md) |`minecraft:giveable` |
 |[minecraft:group_size](EntityComponents/minecraftComponent_group_size.md) |`minecraft:group_size` |
-|[minecraft:grows_crops](EntityComponents/minecraftComponent_grows_crops.md) |`minecraft:grows_crops` |
+|[minecraft:grows_crop](EntityComponents/minecraftComponent_grows_crop.md) |`minecraft:grows_crop` |
 |[minecraft:healable](EntityComponents/minecraftComponent_healable.md) |`minecraft:healable` |
 |[minecraft:home](EntityComponents/minecraftComponent_home.md) |`minecraft:home` |
 |[minecraft:hurt_on_condition](EntityComponents/minecraftComponent_hurt_on_condition.md) |`minecraft:hurt_on_condition` |
