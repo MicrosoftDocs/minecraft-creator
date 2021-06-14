@@ -1,41 +1,79 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:behavior.Name of Behavior
+title: minecraft:shareables
 ms.prod: gaming
 ---
 ​
-# minecraft:behavior.Name of Behavior
+# minecraft:shareables
 ​
-`minecraft:behavior.Name of Behavior` allows an entity to
-​
-​
-> [!NOTE]
-> This behavior is a requirement for the following behaviors:
-​
+`minecraft:shareables` Defines a list of items the mob wants to share or pick up.
+
 >[!IMPORTANT]
-> `minecraft:behavior.Name of Behavior` requires 
+> `minecraft:shareables.items.admire` requires `minecraft:admire_item`
 ​
 ## Parameters
 ​
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-​
+| all_items| False| Boolean| A bucket for all other items in the game. Note this category is always least priority items. |
+| all_items_max_amount| -1| Integer| Maximum number of this item the mob will hold. |
+| all_items_surplus_amount| -1| Integer| Number of this item considered extra that the entity wants to share. |
+| all_items_want_amount| -1| Integer| Number of this item this entity wants to share. |
+| items| *not set*| List| List of items that the entity wants to share.|
+
+### items
+
+`items` is a list defined by eleven parameters. Each item has the following properties:
+
+| Name| Default Value| Type| Description|
+|:----------|:----------|:----------|:----------|
+| admire| *not set*| Boolean| Mob will admire the item after picking up by looking at it. For this to happen the mob needs to have an Admire component and an Admire goal.|
+| barter| *not set*| Boolean| Mob will barter for the item after picking it up. For this to work the mob needs to have a Barter component and a Barter goal.|
+​| consume_item| *not set*| Boolean| Determines whether the mob will consume the item or not.|
+​| craft_into| *not set*| String| Defines the item this entity wants to craft with the item defined above. Should be an item name.|
+​| item| *not set*| String| The name of the item. Aux value can be specified, for instance 'minecraft:skull:1'.|
+​| max_amount| *not set*| Integer| Maximum number of this item the mob will hold.|
+​| pickup_limit| *not set*| Integer| Maximum number of this item the mob will pick up during a single goal tick.|
+​| priority| *not set*| Integer| Prioritizes which items the entity prefers. 0 is the highest priority.
+​| stored_in_inventory| *not set*| Boolean| DetDetermines whether the mob will try to put the item in its inventory if it has the inventory component and if it can't be equipped.|
+​| surplus_amount| *not set*| Integer| Number of this item considered extra that the entity wants to share.|
+​| want_amount| *not set*| Integer| Number of this item this entity wants to have.|
+
 ## Example
 ​
 ```json
-"minecraft:behavior.Name of Behavior":{
-    "priority": 2,
-    "parameterA": true,
-    "parameterB": 42,
+"minecraft:shareables":{
+    "all_items": 2,
+    "all_items_max_amount": 2,
+    "all_items_surplus_amount": 2,
+    "all_items_want_amount": 2,
+    "items": 2 [
+        {
+        "admire": ,
+        "barter": ,
+        "consume_item": ,
+        "craft_into": ,
+        "item": ,
+        "max_amount": ,
+        "pickup_limit": ,
+        "priority": ,
+        "stored_in_inventory": ,
+        "surplus_amount": ,
+        "want_amount": ,
+        }
+    ],
+        
 }
 ```
 ​
 ## Vanilla entities examples
 ​
-### entities 1
+### wither_skeleton
+
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither_skeleton.json" range="59-410":::
 ​
-## Vanilla entities using `minecraft:behavior.Name of Behavior`
+## Vanilla entities using `minecraft:shareables`
 ​
 - [area_effect_cloud](../../../../Source/VanillaBehaviorPack_Snippets/entities/area_effect_cloud.md)
 - [armor_stand](../../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)

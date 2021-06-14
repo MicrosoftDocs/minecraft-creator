@@ -1,30 +1,67 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:behavior.Name of Behavior
+title: minecraft:interact
 ms.prod: gaming
 ---
 ​
-# minecraft:behavior.Name of Behavior
+# minecraft:interact
 ​
-`minecraft:behavior.Name of Behavior` allows an entity to
-​
-​
-> [!NOTE]
-> This behavior is a requirement for the following behaviors:
-​
->[!IMPORTANT]
-> `minecraft:behavior.Name of Behavior` requires 
+`minecraft:interact` defines interactions with this entity.
 ​
 ## Parameters
 ​
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
+| add_items| *not set*| JSON Object| Loot table with items to add to the player's inventory upon successful interaction.|
+| cooldown| 0| Decimal| Time in seconds before this entity can be interacted with again. |
+| cooldown_after_being_attacked| 0| Decimal| Time in seconds before this entity can be interacted with after being attacked. |
+| hurt_item| 0| Integer| The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability. |
+| interact_text| *not set*| String| Text to show when the player is able to interact in this way with this entity when playing with Touch-screen controls. |
+| on_interact| *not set*| String| Event to fire when the interaction occurs. |
+| particle_on_start| *not set*| JSON Object| Particle effect that will be triggered at the start of the interaction.<br/>
+
+particle_offset_towards_interactor
+
+Whether or not the particle will appear closer to who performed the interaction.
+
+
+
+particle_type
+
+The type of particle that will be spawned.
+
+
+
+particle_y_offset
+
+Will offset the particle this amount in the y direction.
+
+ |
+| play_sounds| *not set*| String| List of sounds to play when the interaction occurs. |
+| spawn_entities| *not set*| String| List of entities to spawn when the interaction occurs. |
+| spawn_items| *not set*| JSON Object| Loot table with items to drop on the ground upon successful interaction.|
+
+### add_items
+
+`add_items` is a JSON object defined by one parameter. Each item has the following properties:
+
+| Name| Default Value| Type| Description |
+|:-----------:|:-----------:|:-----------:|:-----------:|
+| table| *not set*| String| File path, relative to the Behavior Pack's path, to the loot table file. |
+
+### spawn_items
+
+`spawn_items` is a JSON object defined by one parameter. Each item has the following properties:
+
+| Type| Name| Default Value| Description |
+|:-----------:|:-----------:|:-----------:|:-----------:|
+| table| *not set*| String| File path, relative to the Behavior Pack's path, to the loot table file. |
 ​
 ## Example
 ​
 ```json
-"minecraft:behavior.Name of Behavior":{
+"minecraft:interact":{
     "priority": 2,
     "parameterA": true,
     "parameterB": 42,
@@ -35,7 +72,7 @@ ms.prod: gaming
 ​
 ### entities 1
 ​
-## Vanilla entities using `minecraft:behavior.Name of Behavior`
+## Vanilla entities using `minecraft:interact`
 ​
 - [area_effect_cloud](../../../../Source/VanillaBehaviorPack_Snippets/entities/area_effect_cloud.md)
 - [armor_stand](../../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)
