@@ -27,7 +27,7 @@ ms.prod: gaming
 `autoRejectItems` is a JSON Object defined by one parameter. Each item has the following properties:
 
 | Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
+|:-----------|:-----------|:-----------|:-----------|
 | item| *not set*| String| Name of the item this entity dislikes and will cause it to get angry if used while untamed. |
 
 ### feed_items
@@ -35,7 +35,7 @@ ms.prod: gaming
 `feed_items` is a JSON Object defined by one parameter. Each item has the following properties:
 
 | Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
+|:-----------|:-----------|:-----------|:-----------|
 | item| *not set*| String| Name of the item this entity likes and can be used to increase this entity's temper. |
 ​
 ## Example

@@ -28,7 +28,7 @@ ms.prod: gaming
 `seats` is a list defined by five parameters. Each item has the following properties:
 
 | Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
+|:-----------|:-----------|:-----------|:-----------|
 | lock_rider_rotation| 181| Decimal| Angle in degrees that a rider is allowed to rotate while riding this entity. Omit this property for no limit |
 | max_rider_count| seat_count| Integer| Defines the maximum number of riders that can be riding this entity for this seat to be valid |
 | min_rider_count| 0| Integer| Defines the minimum number of riders that need to be riding this entity before this seat can be used |

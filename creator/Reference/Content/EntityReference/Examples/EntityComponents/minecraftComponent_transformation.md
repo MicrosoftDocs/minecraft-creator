@@ -20,7 +20,7 @@ ms.prod: gaming
 `add` is a JSON Object defined by ten parameters. Each item has the following properties:
 
 | Name| Default Value| Type| Description|
-|:-----------:|:-----------:|:-----------:|:-----------:|
+|:-----------|:-----------|:-----------|:-----------|
 | component_groups| *not set*| List| Names of component groups to add |
 | begin_transform_sound| *not set*| String| Sound to play when the transformation starts |
 | drop_equipment| False| Boolean| Cause the entity to drop all equipment upon transformation |
@@ -37,7 +37,7 @@ ms.prod: gaming
 `delay` is a JSON Object defined by six parameters. Each item has the following properties:
 
 | Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
+|:-----------|:-----------|:-----------|:-----------|
 | block_assist_chance| 0.0| Decimal| Chance that the entity will look for nearby blocks that can speed up the transformation. Value must be between 0.0 and 1.0 |
 | block_chance| 0| Decimal| Chance that, once a block is found, will help speed up the transformation |
 | block_max| 0| Integer| Maximum number of blocks the entity will look for to aid in the transformation. If not defined or set to 0, it will be set to the block radius |

@@ -22,7 +22,7 @@ ms.prod: gaming
 `items` is an array defined by two parameters. Each item has the following properties:
 
 | Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
+|:-----------|:-----------|:-----------|:-----------|
 | heal_amount| 1| Integer| The amount of health this entity gains when fed this item. |
 | item| *not set*| String| Item identifier that can be used to heal this entity. |
 ​
