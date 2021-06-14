@@ -13,7 +13,7 @@ ms.prod: gaming
 
 > [!IMPORTANT]
 > `minecraft:shareables` items must have the following parameters set:
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | all_items| False| Boolean| A bucket for all other items in the game. Note this category is always least priority items. |
@@ -30,15 +30,15 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 | admire| False| Boolean| Mob will admire the item after picking up by looking at it. For this to happen the mob needs to have an [Admire](minecraftComponent_admire_item.md) component and an [Admire](../EntityGoals/minecraftBehavior_admire_item.md) goal.|
 | barter| False| Boolean| Mob will barter for the item after picking it up. For this to work the mob needs to have a [Barter](minecraftComponent_barter.md) component and a [Barter](../EntityGoals/minecraftBehavior_barter.md) goal.|
-​| consume_item| False| Boolean| Determines whether the mob will consume the item or not.|
-​| craft_into| *not set*| String| Defines the item this entity wants to craft with the item defined above. Should be an item name.|
-​| item| *not set*| String| The name of the item. Aux value can be specified, for instance 'minecraft:skull:1'.|
-​| max_amount| *not set*| Integer| Maximum number of this item the mob will hold.|
-​| pickup_limit| *not set*| Integer| Maximum number of this item the mob will pick up during a single goal tick.|
-​| priority| *not set*| Integer| Prioritizes which items the entity prefers. 0 is the highest priority.
-​| stored_in_inventory| *not set*| Boolean| DetDetermines whether the mob will try to put the item in its inventory if it has the inventory component and if it can't be equipped.|
-​| surplus_amount| *not set*| Integer| Number of this item considered extra that the entity wants to share.|
-​| want_amount| *not set*| Integer| Number of this item this entity wants to have.|
+| consume_item|False|Boolean|Determines whether the mob will consume the item or not.|
+| craft_into|*not set*|String| Defines the item this entity wants to craft with the item defined above. Should be an item name.|
+|item |*not set* | String| The name of the item. Aux value can be specified, for instance `minecraft:skull:1`.|
+| max_amount| *not set*| Integer| Maximum number of this item the mob will hold.|
+| pickup_limit| *not set*| Integer| Maximum number of this item the mob will pick up during a single goal tick.|
+| priority| *not set*| Integer| Prioritizes which items the entity prefers. 0 is the highest priority.|
+| stored_in_inventory| *not set*| Boolean| Determines whether the mob will try to put the item in its inventory if it has the inventory component and if it can't be equipped.|
+| surplus_amount| *not set*| Integer| Number of this item considered extra that the entity wants to share.|
+| want_amount| *not set*| Integer| Number of this item this entity wants to have.|
 
 ## Example
 

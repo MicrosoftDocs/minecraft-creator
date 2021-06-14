@@ -20,24 +20,6 @@ ms.prod: gaming
 | interact_text| *not set*| String| Text to show when the player is able to interact in this way with this entity when playing with Touch-screen controls. |
 | on_interact| *not set*| String| Event to fire when the interaction occurs. |
 | particle_on_start| *not set*| JSON Object| Particle effect that will be triggered at the start of the interaction.|
-
-particle_offset_towards_interactor
-
-Whether or not the particle will appear closer to who performed the interaction.
-
-
-
-particle_type
-
-The type of particle that will be spawned.
-
-
-
-particle_y_offset
-
-Will offset the particle this amount in the y direction.
-
- |
 | play_sounds| *not set*| String| List of sounds to play when the interaction occurs. |
 | spawn_entities| *not set*| String| List of entities to spawn when the interaction occurs. |
 | spawn_items| *not set*| JSON Object| Loot table with items to drop on the ground upon successful interaction.|
@@ -72,15 +54,29 @@ Will offset the particle this amount in the y direction.
 ​
 ```json
 "minecraft:interact":{
-    "priority": 2,
-    "parameterA": true,
-    "parameterB": 42,
+    "add_items": {
+                "table": "loot_tables/gameplay/entities/cow_milking.json"
+              },
+    "cooldown": 25.0,
+    "cooldown_after_being_attacked": 0.0,
+    "hurt_item": 0,
+    "interact_text": "got milk?",
+    "on_interact": {
+        "event":"minecraft:produce_milk",
+        "target": "self"
+    },
+    "particle_on_start": { 
+        "particle_type": "smoke", "particle_y_offset": 0.25, "particle_offset_towards_interactor": true 
+    },
+    "play_sound": "moo",
 }
 ```
 ​
 ## Vanilla entities examples
 ​
-### entities 1
+### mooshroom
+
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/mooshroom.json" range="67-326":::
 ​
 ## Vanilla entities using `minecraft:interact`
 ​
