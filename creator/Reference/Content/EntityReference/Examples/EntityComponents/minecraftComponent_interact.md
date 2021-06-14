@@ -8,9 +8,9 @@ ms.prod: gaming
 # minecraft:interact
 ​
 `minecraft:interact` defines interactions with this entity.
-​
-## Parameters
-​
+
+## Parameter
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |add_items| | JSON Object|  Loot table with items to add to the player's inventory upon successful interaction.|
