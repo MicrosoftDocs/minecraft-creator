@@ -31,7 +31,7 @@ ms.prod: gaming
 `allele_range` is an integer defined by two parameters. Each item has the following properties:
 
 | Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
+|:-----------|:-----------|:-----------|:-----------|
 | range_max| 0| Integer| Upper bound of the allele values for this gene. |
 | range_min| 0| Integer| Lower bound of the allele values for this gene. |
 
@@ -40,7 +40,7 @@ ms.prod: gaming
 `genetic_variants` is an decimal defined by five parameters. Each item has the following properties:
 
 | Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
+|:-----------|:-----------|:-----------|:-----------|
 | birth_event| *not set*| String| Event to run when this mob is created and matches the above allele conditions. |
 | both_allele| -1| Integer| If this value is non-negative, compare both the mob's main and hidden alleles with this value for a match with both. Can also be a range of integers. |
 | either_allele| -1| Integer| If this value is non-negative, compare both the mob's main and hidden alleles with this value for a match with either. Can also be a range of integers. |

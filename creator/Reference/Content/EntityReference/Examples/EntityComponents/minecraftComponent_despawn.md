@@ -1,30 +1,40 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.Name of Behavior
+title: minecraft:despawn
 ms.prod: gaming
 ---
 
-# minecraft:behavior.Name of Behavior
+# minecraft:despawn
 
-`minecraft:behavior.Name of Behavior` allows an entity to
-
-
-> [!NOTE]
-> This behavior is a requirement for the following behaviors:
-
->[!IMPORTANT]
-> `minecraft:behavior.Name of Behavior` requires 
+`minecraft:despawn` allows an entity despawn when the despawn rules or optional filters evaluate to true.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
+|despawn_from_distance |*not set* |JSON Object|Defines the minimum and maximum distance for despawn to occur |
+|despawn_from_chance| true| Boolean|  Determines if "min_range_random_chance" is used in the standard despawn rules |
+|despawn_from_inactivity| true| Boolean|  Determines if the "min_range_inactivity_timer" is used in the standard despawn rules. |
+|despawn_from_simulation_edge| true|  Boolean| Determines if the mob is instantly despawned at the edge of simulation distance in the standard despawn rules. |
+|[filters](../FilterList.md)|*not set* | Minecraft Filter|  The list of conditions that must be satisfied before the Actor is despawned. If a filter is defined then standard despawn rules are ignored. |
+|min_range_inactivity_timer| 30| Integer|  The amount of time in seconds that the mob must be inactive. |
+|min_range_random_chance| 800| Integer|  A random chance between 1 and the given value. |
+| remove_child_entities| false| Boolean|If true, all entities linked to this entity in a child relationship (eg. leashed) will also be despawned. |
+
+### despawn_from_distance
+
+`despawn_from_distance` is a JSON Object that is defined by 2 parameters. Each item has the following properties:
+
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|max_distance| 128| Integer| maximum distance for standard despawn rules to instantly despawn the mob. |
+| min_distance| 32| Integer| minimum distance for standard despawn rules to try to despawn the mob. |
 
 ## Example
 
 ```json
-"minecraft:behavior.Name of Behavior":{
+"minecraft:despawn":{
     "priority": 2,
     "parameterA":true,
     "parameterB":42,

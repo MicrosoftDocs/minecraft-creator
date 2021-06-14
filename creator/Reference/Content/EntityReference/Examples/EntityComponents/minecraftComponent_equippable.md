@@ -20,7 +20,7 @@ ms.prod: gaming
 `slots` is a list defined by six parameters. Each item has the following properties:
 
 | Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
+|:-----------|:-----------|:-----------|:-----------|
 | accepted_items| *not set*| List| The list of items that can go in this slot. |
 | interact_text| *not set*| String| Text to be displayed when the entity can be equipped with this item when playing with Touch-screen controls. |
 | item| *not set*| String| Identifier of the item that can be equipped for this slot. |

@@ -8,11 +8,11 @@ ms.prod: gaming
 # minecraft:shareables
 ​
 `minecraft:shareables` Defines a list of items the mob wants to share or pick up.
-
->[!IMPORTANT]
-> `minecraft:shareables.items.admire` requires `minecraft:admire_item`
 ​
 ## Parameters
+
+> [!IMPORTANT]
+> `minecraft:shareables` items must have the following parameters set:
 ​
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
@@ -28,9 +28,9 @@ ms.prod: gaming
 
 | Name| Default Value| Type| Description|
 |:----------|:----------|:----------|:----------|
-| admire| *not set*| Boolean| Mob will admire the item after picking up by looking at it. For this to happen the mob needs to have an Admire component and an Admire goal.|
-| barter| *not set*| Boolean| Mob will barter for the item after picking it up. For this to work the mob needs to have a Barter component and a Barter goal.|
-​| consume_item| *not set*| Boolean| Determines whether the mob will consume the item or not.|
+| admire| False| Boolean| Mob will admire the item after picking up by looking at it. For this to happen the mob needs to have an [Admire](minecraftComponent_admire_item.md) component and an [Admire](../EntityGoals/minecraftBehavior_admire_item.md) goal.|
+| barter| False| Boolean| Mob will barter for the item after picking it up. For this to work the mob needs to have a [Barter](minecraftComponent_barter.md) component and a [Barter](../EntityGoals/minecraftBehavior_barter.md) goal.|
+​| consume_item| False| Boolean| Determines whether the mob will consume the item or not.|
 ​| craft_into| *not set*| String| Defines the item this entity wants to craft with the item defined above. Should be an item name.|
 ​| item| *not set*| String| The name of the item. Aux value can be specified, for instance 'minecraft:skull:1'.|
 ​| max_amount| *not set*| Integer| Maximum number of this item the mob will hold.|
@@ -41,29 +41,30 @@ ms.prod: gaming
 ​| want_amount| *not set*| Integer| Number of this item this entity wants to have.|
 
 ## Example
+
+In this example, an entity wants to be able to make `bread` from `wheat`. Since bread requires 3 total wheat, the entity will want a total of 3 and will consider 4 or more as surplus.
 ​
 ```json
 "minecraft:shareables":{
-    "all_items": 2,
-    "all_items_max_amount": 2,
-    "all_items_surplus_amount": 2,
-    "all_items_want_amount": 2,
-    "items": 2 [
+    "all_items": true,
+    "all_items_max_amount": 1,
+    "all_items_surplus_amount": 4,
+    "all_items_want_amount": 3,
+    "items": [
         {
-        "admire": ,
-        "barter": ,
-        "consume_item": ,
-        "craft_into": ,
-        "item": ,
-        "max_amount": ,
-        "pickup_limit": ,
-        "priority": ,
-        "stored_in_inventory": ,
-        "surplus_amount": ,
-        "want_amount": ,
-        }
+            "item": "minecraft:wheat",
+            "admire": false,
+            "barter": false,
+            "consume_item": false, 
+            "craft_into": "minecraft:bread", 
+            "priority": 0, 
+            "max_amount": 3,
+            "pickup_limit": -1, //no limit
+            "store_in_inventory": true,
+            "surplus_amount": 4,
+            "want_amount": 3
+        },
     ],
-        
 }
 ```
 ​

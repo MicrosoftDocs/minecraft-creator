@@ -19,7 +19,7 @@ ms.prod: gaming
 | hurt_item| 0| Integer| The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability. |
 | interact_text| *not set*| String| Text to show when the player is able to interact in this way with this entity when playing with Touch-screen controls. |
 | on_interact| *not set*| String| Event to fire when the interaction occurs. |
-| particle_on_start| *not set*| JSON Object| Particle effect that will be triggered at the start of the interaction.<br/>
+| particle_on_start| *not set*| JSON Object| Particle effect that will be triggered at the start of the interaction.|
 
 particle_offset_towards_interactor
 
@@ -47,15 +47,25 @@ Will offset the particle this amount in the y direction.
 `add_items` is a JSON object defined by one parameter. Each item has the following properties:
 
 | Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
+|:-----------|:-----------|:-----------|:-----------|
 | table| *not set*| String| File path, relative to the Behavior Pack's path, to the loot table file. |
+
+### particle_on_start
+
+`particle_on_start` is a JSON object defined by three parameters. Each item has the following properties:
+
+| Name| Default Value| Type| Description |
+|:-----------|:-----------|:-----------|:-----------|
+|particle_offset_towards_interactor|False |Boolean |Whether or not the particle will appear closer to who performed the interaction. |
+|particle_type|*not set* |String |name of the particle system to run |
+|particle_y_offset|0.0 |Decimal |vertical offset of the particle system |
 
 ### spawn_items
 
 `spawn_items` is a JSON object defined by one parameter. Each item has the following properties:
 
 | Type| Name| Default Value| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
+|:-----------|:-----------|:-----------|:-----------|
 | table| *not set*| String| File path, relative to the Behavior Pack's path, to the loot table file. |
 ​
 ## Example

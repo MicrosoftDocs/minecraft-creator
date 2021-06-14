@@ -13,7 +13,7 @@ ms.prod: gaming
 ## Parameters
 ​
 |Name |Default Value  |Type  |Description  |
-|:-----------:|:-----------:|:-----------:|:-----------:|
+|:-----------|:-----------|:-----------|:-----------|
 | drag_factor| 0.8| Decimal| Drag factor to determine movement speed when in water. |
 ​
 ## Example

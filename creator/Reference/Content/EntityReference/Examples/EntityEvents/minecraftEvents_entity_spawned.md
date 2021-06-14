@@ -1,86 +1,63 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
-title: minecraft:nameable
+author: v-josjones
+ms.author: v-josjones
+title: minecraft:entity_spawned
 ms.prod: gaming
 ---
-​
-# minecraft:nameable
-​
-`minecraft:nameable` allows this entity to be named (e.g. using a name tag).
-​
-## Parameters
-​
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| allow_name_tag_renaming| True| Boolean| If true, this entity can be renamed with name tags |
-| always_show| False| Boolean| If true, the name will always be shown |
-| default_trigger| *not set*| String| Trigger to run when the entity gets named |
-| name_actions| *not set*| JSON Object| Describes the special names for this entity and the events to call when the entity acquires those names|
 
-### name_actions
+# minecraft:entity_spawned
 
-`name_actions` is a JSON object defined by two parameters. Each item has the following properties:
+`minecraft:entity_spawned` triggers an event calls on an entity when the entity is spawned in the world.
 
-| Name| Default Value| Type| Description |
-|:-----------|:-----------|:-----------|:-----------|
-| name_filter| *not set*| String| List of special names that will cause the events defined in 'on_named' to fire |
-| on_named| *not set*| String| Event to be called when this entity acquires the name specified in 'name_filter' |
-​
+> [!NOTE]
+> `minecraft:entity_spawned` is used to trigger events when the entity is spawned in the world. For events to trigger when the entity is born via breeding, see [minecraft:entity_born](minecraftEvents_entity_born.md)
+
 ## Example
-​
+
 ```json
-"minecraft:nameable":{
-    "allow_name_tag_renaming": true,
-    "always_show": false,
-    "default_trigger": ,
-    "name_actions": {
-        "name_filter": ,
-        "on_named": ,
-    },
+"minecraft:entity_spawned":{
 }
 ```
-​
-## Vanilla entities examples
-​
-### cat
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/cat.json" range="288-289":::
-​
-## Vanilla entities using `minecraft:nameable`
-​
-- [armor_stand](../../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)
+## Vanilla entities examples
+
+### goat
+
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/goat.json" range="375-394":::
+
+### command_block_minecart
+
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/command_block_minecart.json" range="75-81":::
+
+## Vanilla entities using `minecraft:entity_spawned`
+
 - [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
-- [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
 - [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
 - [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
+- [command_block_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/command_block_minecart.md)
 - [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
-- [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
 - [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
 - [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
 - [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
+- [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)
+- [ender_pearl](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_pearl.md)
 - [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
-- [endermite](../../../../Source/VanillaBehaviorPack_Snippets/entities/endermite.md)
-- [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
-- [fish](../../../../Source/VanillaBehaviorPack_Snippets/entities/fish.md)
+- [fishing_hook](../../../../Source/VanillaBehaviorPack_Snippets/entities/fishing_hook.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [ghast](../../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)
 - [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)
 - [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
-- [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
+- [hopper_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/hopper_minecart.md)
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
 - [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
-- [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
 - [magma_cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
+- [minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/minecart.md)
 - [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
 - [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [npc](../../../../Source/VanillaBehaviorPack_Snippets/entities/npc.md)
 - [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
 - [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
 - [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)
@@ -89,7 +66,6 @@ ms.prod: gaming
 - [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
 - [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
 - [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
-- [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
 - [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
 - [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
 - [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
@@ -101,18 +77,16 @@ ms.prod: gaming
 - [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)
 - [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
 - [slime](../../../../Source/VanillaBehaviorPack_Snippets/entities/slime.md)
-- [snow_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
 - [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
 - [squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/squid.md)
 - [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
 - [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
+- [tnt_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/tnt_minecart.md)
 - [tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/tropicalfish.md)
 - [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
-- [vex](../../../../Source/VanillaBehaviorPack_Snippets/entities/vex.md)
 - [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
 - [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
 - [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)
-- [witch](../../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)
 - [wither_skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
 - [wither](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither.md)
 - [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)

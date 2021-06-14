@@ -23,4 +23,10 @@ ms.prod: gaming
 }
 ```
 ​
+## Vanilla entities examples
+
+No entities currently use `minecraft:instant_despawn`.
+
 ## Vanilla entities using `minecraft:instant_despawn`​
+
+No entities currently use `minecraft:instant_despawn`.

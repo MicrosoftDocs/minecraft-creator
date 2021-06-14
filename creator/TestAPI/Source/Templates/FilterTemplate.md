@@ -28,7 +28,7 @@ If the table has a nested table, pull the table out as a definition, link to the
 ### subject
 
 | Options| Description |
-|:-----------:|:-----------:|
+|:-----------|:-----------|
 | block| The block involved with the interaction. |
 | damager| The damaging actor involved with the interaction. |
 | other| The other member of an interaction, not the caller. |
@@ -40,7 +40,7 @@ If the table has a nested table, pull the table out as a definition, link to the
 ### operator
 
 | Options| Description |
-|:-----------:|:-----------:|
+|:-----------|:-----------|
 | !=| Test for inequality. |
 | <| Test for less-than the value. |
 | <=| Test for less-than or equal to the value. |
