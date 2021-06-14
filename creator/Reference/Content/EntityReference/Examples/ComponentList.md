@@ -78,3 +78,9 @@ Below is a list of all the available Components within Minecraft:Bedrock Edition
 |[minecraft:navigation.float](EntityComponents/minecraftComponent_navigation.float.md) |`minecraft:navigation.float` |
 |[minecraft:navigation.fly](EntityComponents/minecraftComponent_navigation.fly.md) |`minecraft:navigation.fly` |
 |[minecraft:navigation.generic](EntityComponents/minecraftComponent_navigation.generic.md) |`minecraft:navigation.generic` |
+|[minecraft:navigation.hover](EntityComponents/minecraftComponent_navigation.hover.md) |`minecraft:navigation.hover` |
+|[minecraft:navigation.swim](EntityComponents/minecraftComponent_navigation.swim.md) |`minecraft:navigation.swim` |
+|[minecraft:navigation.walk](EntityComponents/minecraftComponent_navigation.walk.md) |`minecraft:navigation.walk` |
+|[minecraft:peek](EntityComponents/minecraftComponent_peek.md) |`minecraft:peek` |
+|[minecraft:persistent](EntityComponents/minecraftComponent_persistent.md) |`minecraft:persistent` |
+|[minecraft:physics](EntityComponents/minecraftComponent_physics.md) |`minecraft:physics` |
