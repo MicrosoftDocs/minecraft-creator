@@ -9,8 +9,6 @@ ms.prod: gaming
 ​
 `minecraft:equip_item` causes the entity to put on the desired equipment.
 ​
-## Parameters
-​
 ## Example
 ​
 ```json

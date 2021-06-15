@@ -7,7 +7,7 @@ ms.prod: gaming
 ​
 # minecraft:navigation.climb
 ​
-`minecraft:navigation.climb` allows this entity to generate paths by flying around the air like the regular Ghast.
+`minecraft:navigation.climb` allows this entity to generate paths that include vertical walls like the vanilla Spiders do.
 ​
 ## Parameters
 ​

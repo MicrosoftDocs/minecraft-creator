@@ -7,9 +7,7 @@ ms.prod: gaming
 ​
 # minecraft:item_hopper
 ​
-`minecraft:item_hopper` allows an entity to
-​
-## Parameters
+`minecraft:item_hopper` allows an entity to function like a `hopper` block.
 ​
 ## Example
 ​

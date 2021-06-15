@@ -7,7 +7,7 @@ ms.prod: gaming
 ​
 # minecraft:inventory
 ​
-`minecraft:inventory` allows an entity to
+`minecraft:inventory` defines how an entity's inventory is managed.
 ​
 ## Parameters
 ​

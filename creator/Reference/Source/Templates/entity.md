@@ -1,4 +1,4 @@
-<!--
+
 <big>Version: 1.16.220.2</big>
 
 ---
@@ -11614,6 +11614,7 @@ Fires off scheduled mob events at time of day events.
 
 Defines a list of items the mob wants to share or pick up. Each item must have the following parameters:
 
+<minecraft_shareables_table>
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
 <tr>
@@ -11691,6 +11692,8 @@ Number of this item this entity wants to have.
 </td>
 </tr>
 </table>
+
+</minecraft_shareables_table>
 
 ### minecraft:shooter
 
