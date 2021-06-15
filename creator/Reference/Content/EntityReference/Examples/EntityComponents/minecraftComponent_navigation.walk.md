@@ -1,106 +1,101 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:behavior.Name of Behavior
+title: minecraft:navigation.walk
 ms.prod: gaming
 ---
 ​
-# minecraft:behavior.Name of Behavior
+# minecraft:navigation.walk
 ​
-`minecraft:behavior.Name of Behavior` allows an entity to
-​
-​
-> [!NOTE]
-> This behavior is a requirement for the following behaviors:
-​
->[!IMPORTANT]
-> `minecraft:behavior.Name of Behavior` requires 
+`minecraft:navigation.walk` allows this entity to generate paths by walking around and jumping up and down a block like regular mobs.
 ​
 ## Parameters
 ​
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
+| avoid_damage_blocks| False| Boolean| Tells the pathfinder to avoid blocks that cause damage when finding a path |
+| avoid_portals| False| Boolean| Tells the pathfinder to avoid portals (like nether portals) when finding a path |
+| avoid_sun| False| Boolean| Whether or not the pathfinder should avoid tiles that are exposed to the sun when creating paths |
+| avoid_water| False| Boolean| Tells the pathfinder to avoid water when creating a path |
+| blocks_to_avoid| *not set*| List| Tells the pathfinder which blocks to avoid when creating a path |
+| can_breach| False| Boolean| Tells the pathfinder whether or not it can jump out of water (like a dolphin) |
+| can_break_doors| False| Boolean| Tells the pathfinder that it can path through a closed door and break it |
+| can_jump| True| Boolean| Tells the pathfinder whether or not it can jump up blocks |
+| can_open_doors| False| Boolean| Tells the pathfinder that it can path through a closed door assuming the AI will open the door |
+| can_open_iron_doors| False| Boolean| Tells the pathfinder that it can path through a closed iron door assuming the AI will open the door |
+| can_pass_doors| True| Boolean| Whether a path can be created through a door |
+| can_path_from_air| False| Boolean| Tells the pathfinder that it can start pathing when in the air |
+| can_path_over_lava| False| Boolean| Tells the pathfinder whether or not it can travel on the surface of the lava |
+| can_path_over_water| False| Boolean| Tells the pathfinder whether or not it can travel on the surface of the water |
+| can_sink| True| Boolean| Tells the pathfinder whether or not it will be pulled down by gravity while in water |
+| can_swim| False| Boolean| Tells the pathfinder whether or not it can path anywhere through water and plays swimming animation along that path |
+| can_walk| True| Boolean| Tells the pathfinder whether or not it can walk on the ground outside water |
+| can_walk_in_lava| False| Boolean| Tells the pathfinder whether or not it can travel in lava like walking on ground |
+| is_amphibious| False| Boolean| Tells the pathfinder whether or not it can walk on the ground underwater |
 ​
 ## Example
 ​
 ```json
-"minecraft:behavior.Name of Behavior":{
-    "priority": 2,
-    "parameterA": true,
-    "parameterB": 42,
+"minecraft:navigation.walk":{
+    "avoid_damage_blocks": false,
+    "avoid_portals": false,
+    "avoid_sun": false,
+    "avoid_water": false,
+    "blocks_to_avoid": [],
+    "can_breach": false,
+    "can_break_doors": false,
+    "can_jump": true,
+    "can_open_doors": false,
+    "can_open_iron_doors": false,
+    "can_pass_doors": true,
+    "can_path_from_air": false,
+    "can_path_over_lava": false,
+    "can_path_over_water": false,
+    "can_sink": true,
+    "can_swim": false,
+    "can_walk": true,
+    "can_walk_in_lava": false,
+    "is_amphibious": false,
 }
 ```
 ​
 ## Vanilla entities examples
 ​
-### entities 1
+### villager
+
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager.json" range="361-368":::
 ​
-## Vanilla entities using `minecraft:behavior.Name of Behavior`
+## Vanilla entities using `minecraft:navigation.walk`
 ​
-- [area_effect_cloud](../../../../Source/VanillaBehaviorPack_Snippets/entities/area_effect_cloud.md)
-- [armor_stand](../../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)
-- [arrow](../../../../Source/VanillaBehaviorPack_Snippets/entities/arrow.md)
-- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
-- [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
-- [boat](../../../../Source/VanillaBehaviorPack_Snippets/entities/boat.md)
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
-- [chest_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/chest_minecart.md)
 - [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
-- [command_block_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/command_block_minecart.md)
 - [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
 - [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
-- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
 - [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [dragon_fireball](../../../../Source/VanillaBehaviorPack_Snippets/entities/dragon_fireball.md)
-- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [egg](../../../../Source/VanillaBehaviorPack_Snippets/entities/egg.md)
-- [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
-- [ender_crystal](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_crystal.md)
-- [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)
-- [ender_pearl](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_pearl.md)
 - [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
 - [endermite](../../../../Source/VanillaBehaviorPack_Snippets/entities/endermite.md)
 - [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
-- [eye_of_ender_signal](../../../../Source/VanillaBehaviorPack_Snippets/entities/eye_of_ender_signal.md)
-- [fireball](../../../../Source/VanillaBehaviorPack_Snippets/entities/fireball.md)
-- [fireworks_rocket](../../../../Source/VanillaBehaviorPack_Snippets/entities/fireworks_rocket.md)
-- [fish](../../../../Source/VanillaBehaviorPack_Snippets/entities/fish.md)
-- [fishing_hook](../../../../Source/VanillaBehaviorPack_Snippets/entities/fishing_hook.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [ghast](../../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)
 - [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)
 - [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
-- [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [hopper_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/hopper_minecart.md)
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
 - [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
 - [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
-- [lightning_bolt](../../../../Source/VanillaBehaviorPack_Snippets/entities/lightning_bolt.md)
-- [llama_spit](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama_spit.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
 - [magma_cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
-- [minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/minecart.md)
 - [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
 - [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [npc](../../../../Source/VanillaBehaviorPack_Snippets/entities/npc.md)
 - [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
 - [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)
-- [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)
 - [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
 - [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
 - [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
 - [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
-- [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
 - [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
-- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
 - [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
 - [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
-- [salmon](../../../../Source/VanillaBehaviorPack_Snippets/entities/salmon.md)
 - [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
 - [shulker_bullet](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker_bullet.md)
 - [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
@@ -108,20 +103,10 @@ ms.prod: gaming
 - [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)
 - [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
 - [slime](../../../../Source/VanillaBehaviorPack_Snippets/entities/slime.md)
-- [small_fireball](../../../../Source/VanillaBehaviorPack_Snippets/entities/small_fireball.md)
 - [snow_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
-- [snowball](../../../../Source/VanillaBehaviorPack_Snippets/entities/snowball.md)
-- [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
-- [splash_potion](../../../../Source/VanillaBehaviorPack_Snippets/entities/splash_potion.md)
 - [squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/squid.md)
 - [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
 - [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
-- [thrown_trident](../../../../Source/VanillaBehaviorPack_Snippets/entities/thrown_trident.md)
-- [tnt_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/tnt_minecart.md)
-- [tnt](../../../../Source/VanillaBehaviorPack_Snippets/entities/tnt.md)
-- [tripod_camera](../../../../Source/VanillaBehaviorPack_Snippets/entities/tripod_camera.md)
-- [tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/tropicalfish.md)
-- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
 - [vex](../../../../Source/VanillaBehaviorPack_Snippets/entities/vex.md)
 - [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
 - [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
@@ -129,12 +114,8 @@ ms.prod: gaming
 - [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
 - [witch](../../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)
 - [wither_skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
-- [wither_skull_dangerous](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skull_dangerous.md)
-- [wither_skull](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skull.md)
 - [wither](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither.md)
 - [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
-- [xp_bottle](../../../../Source/VanillaBehaviorPack_Snippets/entities/xp_bottle.md)
-- [xp_orb](../../../../Source/VanillaBehaviorPack_Snippets/entities/xp_orb.md)
 - [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)
 - [zombie_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_horse.md)
 - [zombie_pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.md)
