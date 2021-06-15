@@ -176,8 +176,6 @@
   href: minecraftComponent_sittable.md
 - name: minecraft:spawn_entity
   href: minecraftComponent_spawn_entity.md
-- name: minecraft:strength
-  href: minecraftComponent_strength.md
 - name: minecraft:tameable
   href: minecraftComponent_tameable.md
 - name: minecraft:tamemount
