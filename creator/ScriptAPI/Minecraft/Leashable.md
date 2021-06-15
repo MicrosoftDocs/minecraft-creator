@@ -37,7 +37,6 @@ Leashes this entity to another entity.
 | :--- | :--- | :---: |
 | **leashHolder** | [*Entity*](Entity.md) | The entity to leash this entity to. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -49,7 +48,6 @@ unleash(): void
 
 Unleashes this entity if it is leashed to another entity.
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.

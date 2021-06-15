@@ -57,13 +57,14 @@ Returns [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence o
 thenExecuteFor(tickCount: number, callback: () => undefined): GameTestSequence
 `
 
+Runs the given callback every tick for the given number of ticks.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
 | **tickCount** | *number* | - |
-| **callback** | () => undefined | - |
+| **callback** | () => undefined | Callback function to execute. |
 
-Returns [*GameTestSequence*](GameTestSequence.md)
+Returns [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
 
 
 ### **thenFail**
@@ -77,7 +78,6 @@ Causes the test to fail if this step in the GameTest sequence is reached.
 | :--- | :--- | :---: |
 | **errorMessage** | *string* | Error message summarizing the failure condition. |
 
-Returns *undefined*
 
 
 ### **thenIdle**
@@ -101,7 +101,6 @@ thenSucceed(): void
 
 Marks the GameTest a success if this step is reached in the GameTest sequence.
 
-Returns *undefined*
 
 
 ### **thenWait**
@@ -123,12 +122,13 @@ Returns [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence o
 thenWaitWithDelay(delayTicks: number, callback: () => undefined): GameTestSequence
 `
 
+After a delay from the previous step, executes the given callback every tick until it succeeds. Exceptions thrown within the callback will end sequence execution.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **delayTicks** | *number* | - |
-| **callback** | () => undefined | - |
+| **delayTicks** | *number* | Tick (after the previous step in the GameTest sequence) to run the callback at. |
+| **callback** | () => undefined | Testing callback function to execute. Typically, this function will have .assertXyz functions within it. |
 
-Returns [*GameTestSequence*](GameTestSequence.md)
+Returns [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
 
 

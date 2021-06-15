@@ -13,9 +13,10 @@ description: Contents of the GameTest.Helper class.
 
 
 ## Methods
+- [assertBlockState](#assertblockstate)
 - [assertBlockTypeNotPresent](#assertblocktypenotpresent)
 - [assertBlockTypePresent](#assertblocktypepresent)
-- [assertBlockState](#assertblockstate)
+- [assertCanReachLocation](#assertcanreachlocation)
 - [assert](#assert)
 - [assertContainerContains](#assertcontainercontains)
 - [assertContainerEmpty](#assertcontainerempty)
@@ -47,6 +48,7 @@ description: Contents of the GameTest.Helper class.
 - [runAtTickTime](#runatticktime)
 - [setBlockPermutation](#setblockpermutation)
 - [setBlockType](#setblocktype)
+- [setTntFuse](#settntfuse)
 - [spawn](#spawn)
 - [spawnItem](#spawnitem)
 - [spawnWithoutBehaviors](#spawnwithoutbehaviors)
@@ -61,41 +63,8 @@ description: Contents of the GameTest.Helper class.
 - [succeedWhenEntityNotPresent](#succeedwhenentitynotpresent)
 - [succeedWhenEntityPresent](#succeedwhenentitypresent)
 - [walkTo](#walkto)
-- [setTntFuse](#settntfuse)
 - [worldLocation](#worldlocation)
   
-### **assertBlockTypeNotPresent**
-`
-assertBlockTypeNotPresent(blockType: Minecraft.BlockType, location: Minecraft.BlockLocation): void
-`
-
-#### Arguments
-| Param | Type | Description |
-| :--- | :--- | :---: |
-| **blockType** | [*Minecraft.BlockType*](../Minecraft/BlockType.md) | - |
-| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
-
-Returns *undefined*
-
-> [!WARNING]
-> This function can throw errors.
-
-### **assertBlockTypePresent**
-`
-assertBlockTypePresent(blockType: Minecraft.BlockType, location: Minecraft.BlockLocation): void
-`
-
-#### Arguments
-| Param | Type | Description |
-| :--- | :--- | :---: |
-| **blockType** | [*Minecraft.BlockType*](../Minecraft/BlockType.md) | - |
-| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
-
-Returns *undefined*
-
-> [!WARNING]
-> This function can throw errors.
-
 ### **assertBlockState**
 `
 assertBlockState(blockStateName: string, stateValue: number, location: Minecraft.BlockLocation): void
@@ -109,7 +78,6 @@ Tests that a block has a particular state value at the specified location. If it
 | **stateValue** | *number* | Expected state value. |
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -120,6 +88,54 @@ Returns *undefined*
 test.assertBlockState("button_pressed_bit", 0, buttonPos);
 
 ```
+### **assertBlockTypeNotPresent**
+`
+assertBlockTypeNotPresent(blockType: Minecraft.BlockType, location: Minecraft.BlockLocation): void
+`
+
+Tests that a block of the specified type is not present at the specified location. If it is, an exception is thrown.
+#### Arguments
+| Param | Type | Description |
+| :--- | :--- | :---: |
+| **blockType** | [*Minecraft.BlockType*](../Minecraft/BlockType.md) | - |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+
+
+> [!WARNING]
+> This function can throw errors.
+
+### **assertBlockTypePresent**
+`
+assertBlockTypePresent(blockType: Minecraft.BlockType, location: Minecraft.BlockLocation): void
+`
+
+Tests that a block of the specified type is present at the specified location. If it is not, an exception is thrown.
+#### Arguments
+| Param | Type | Description |
+| :--- | :--- | :---: |
+| **blockType** | [*Minecraft.BlockType*](../Minecraft/BlockType.md) | - |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+
+
+> [!WARNING]
+> This function can throw errors.
+
+### **assertCanReachLocation**
+`
+assertCanReachLocation(mob: Minecraft.Entity, location: Minecraft.BlockLocation, canReach: boolean): void
+`
+
+#### Arguments
+| Param | Type | Description |
+| :--- | :--- | :---: |
+| **mob** | [*Minecraft.Entity*](../Minecraft/Entity.md) | - |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **canReach** | *boolean* | - |
+
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **assert**
 `
 assert(condition: boolean, message: string): void
@@ -132,7 +148,6 @@ Tests that the condition specified in _condition_ is true. If not, an error with
 | **condition** | *boolean* | Expression of the condition to evaluate. |
 | **message** | *string* | Message that is passed if the _condition_ does not evaluate to true. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -149,7 +164,6 @@ Tests that a container (e.g., a chest) at the specified location contains a spec
 | **itemStack** | [*Minecraft.ItemStack*](../Minecraft/ItemStack.md) | Represents the type of item to check for. The specified container must contain at least 1 item matching the item type defined in _itemStack_. |
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -165,14 +179,13 @@ Tests that a container (e.g., a chest) at the specified location is empty. If no
 | :--- | :--- | :---: |
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **assertEntityData**
 `
-assertEntityData(location: Minecraft.BlockLocation, entityIdentifier: string, callback: (arg0: Minecraft.Entity) => boolean): void
+assertEntityData(location: Minecraft.BlockLocation, entityIdentifier: string, callback: (arg: Minecraft.Entity) => boolean): void
 `
 
 Tests that an entity (e.g., a skeleton) at the specified location has a particular piece of data. If not, an error is thrown.
@@ -181,9 +194,8 @@ Tests that an entity (e.g., a skeleton) at the specified location has a particul
 | :--- | :--- | :---: |
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 | **entityIdentifier** | *string* | Identifier of the entity (e.g., 'minecraft:skeleton') to look for. Note if no namespace is specified, 'minecraft:' is assumed. |
-| **callback** | (arg0: Minecraft.Entity) => boolean | Callback function where facets of the selected entity can be tested for. If this callback function returns false or no entity with the specified identifier is found, an exception is thrown. |
+| **callback** | (arg: Minecraft.Entity) => boolean | Callback function where facets of the selected entity can be tested for. If this callback function returns false or no entity with the specified identifier is found, an exception is thrown. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -214,7 +226,6 @@ Tests that an entity has a specific piece of armor equipped. If not, an error is
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 | **hasArmor** | *boolean* | Whether or not the entity is expected to have the specified armor equipped. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -239,7 +250,6 @@ Tests that an entity has a particular component. If not, an exception is thrown.
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 | **hasComponent** | *boolean* | Determines whether to test that the component exists, or does not. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -261,7 +271,6 @@ Tests that a particular entity is still present and alive within the GameTest ar
 | :--- | :--- | :---: |
 | **entity** | [*Minecraft.Entity*](../Minecraft/Entity.md) | Specific entity to test for. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -278,7 +287,6 @@ Tests that an entity of a specified type is not present at a specified location.
 | **entityIdentifier** | *string* | Type of entity to test for (e.g., 'minecraft:skeleton'). If an entity namespace is not specified, 'minecraft:' is assumed. |
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -294,7 +302,6 @@ Tests that an entity of a specified type is not present within the GameTest area
 | :--- | :--- | :---: |
 | **entityIdentifier** | *string* | Type of entity to test for (e.g., 'minecraft:skeleton'). If an entity namespace is not specified, 'minecraft:' is assumed. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -311,7 +318,6 @@ Tests that an entity of a specified type is not touching or connected to another
 | **entityIdentifier** | *string* | Type of entity to test for (e.g., 'minecraft:skeleton'). If an entity namespace is not specified, 'minecraft:' is assumed. |
 | **position** | [*Minecraft.Location*](../Minecraft/Location.md) | Location of the entity to test for. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -328,7 +334,6 @@ Tests that an entity of a specified type is present at a particular location. If
 | **entityIdentifier** | *string* | Type of entity to test for (e.g., 'minecraft:skeleton'). If an entity namespace is not specified, 'minecraft:' is assumed. |
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -344,7 +349,6 @@ Tests that an entity of a specified type is present within the GameTest area. If
 | :--- | :--- | :---: |
 | **entityIdentifier** | *string* | Type of entity to test for (e.g., 'minecraft:skeleton'). If an entity namespace is not specified, 'minecraft:' is assumed. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -361,7 +365,6 @@ Tests that an entity of a specified type is touching or connected to another ent
 | **entityIdentifier** | *string* | Type of entity to test for (e.g., 'minecraft:skeleton'). If an entity namespace is not specified, 'minecraft:' is assumed. |
 | **position** | [*Minecraft.Location*](../Minecraft/Location.md) | Location of the entity to test for. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -378,7 +381,6 @@ Tests that a block at a location contains water in addition to another block typ
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 | **isWaterlogged** | *boolean* | Whether not not the block at _position_ is expected to be waterlogged. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -397,7 +399,6 @@ Tests that items of a particular type and count are present within an area. If n
 | **searchDistance** | *number* | Range, in blocks, to aggregate a count of items around. If 0, will only search the particular block at _position_. |
 | **count** | *number* | Number of items, at minimum, to look and test for. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -421,7 +422,6 @@ Tests that a particular item entity is not present at a particular location. If 
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 | **searchDistance** | *number* | Radius in blocks to look for the item entity. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -439,7 +439,6 @@ Tests that a particular item entity is present at a particular location. If not,
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 | **searchDistance** | *number* | Radius in blocks to look for the item entity. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -456,7 +455,6 @@ Tests that Redstone power at a particular location matches a particular value. I
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 | **power** | *number* | Expected power level. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -472,7 +470,6 @@ Marks the current test as a failure case.
 | :--- | :--- | :---: |
 | **errorMessage** | *string* | Error message summarizing the failure condition. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -482,12 +479,12 @@ Returns *undefined*
 failIf(callback: () => undefined): void
 `
 
+Runs the given callback. If the callback does not throw an exception, the test is marked as a failure.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **callback** | () => undefined | - |
+| **callback** | () => undefined | Callback function that runs. If the function runs successfully, the test is marked as a failure. Typically, this function will have .assertXyz method calls within it. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -497,10 +494,11 @@ Returns *undefined*
 getBlock(location: Minecraft.BlockLocation): Minecraft.Block
 `
 
+Gets a block at the specified block location.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | Location of the block to retrieve. |
 
 Returns [*Minecraft.Block*](../Minecraft/Block.md)
 
@@ -514,7 +512,6 @@ killAllEntities(): void
 
 Kills all entities within the GameTest structure.
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -530,7 +527,6 @@ Presses a button at a block location.
 | :--- | :--- | :---: |
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
-Returns *undefined*
 
 > [!WARNING]
 > Will throw an error if a button is not present at the specified position.
@@ -546,7 +542,6 @@ Displays the specified message to all players.
 | :--- | :--- | :---: |
 | **text** | *string* | Message to display. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -562,7 +557,6 @@ Pulls a lever at a block location.
 | :--- | :--- | :---: |
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
-Returns *undefined*
 
 > [!WARNING]
 > Will throw an error if a lever is not present at the specified position.
@@ -579,7 +573,6 @@ Sends a Redstone pulse at a particular location by creating a temporary Redstone
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 | **duration** | *number* | Number of ticks to pulse Redstone. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -612,7 +605,6 @@ Runs a specific callback after a specified delay of ticks
 | **delayTicks** | *number* | Number of ticks to delay before running the specified callback. |
 | **callback** | () => undefined | Callback function to execute. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -629,7 +621,6 @@ Runs the given callback after a delay of _tick_ ticks from the start of the Game
 | **tick** | *number* | Tick (after the start of the GameTest) to run the callback at. |
 | **callback** | () => undefined | Callback function to execute. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -639,13 +630,13 @@ Returns *undefined*
 setBlockPermutation(blockData: Minecraft.BlockPermutation, location: Minecraft.BlockLocation): void
 `
 
+Sets a block to a particular configuration (a BlockPermutation) at the specified block location.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **blockData** | [*Minecraft.BlockPermutation*](../Minecraft/BlockPermutation.md) | - |
-| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
+| **blockData** | [*Minecraft.BlockPermutation*](../Minecraft/BlockPermutation.md) | Permutation that contains the configuration data for a block. |
+| **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | Location of the block to set. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -655,13 +646,29 @@ Returns *undefined*
 setBlockType(blockType: Minecraft.BlockType, location: Minecraft.BlockLocation): void
 `
 
+Sets a block to a particular type at the specified block location.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
 | **blockType** | [*Minecraft.BlockType*](../Minecraft/BlockType.md) | - |
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
-Returns *undefined*
+
+> [!WARNING]
+> This function can throw errors.
+
+### **setTntFuse**
+`
+setTntFuse(actor: Minecraft.Entity, fuseLength: number): void
+`
+
+Sets the fuse of an explodable entity.
+#### Arguments
+| Param | Type | Description |
+| :--- | :--- | :---: |
+| **actor** | [*Minecraft.Entity*](../Minecraft/Entity.md) | Entity that is explodable. |
+| **fuseLength** | *number* | Length of time, in ticks, before the entity explodes. |
+
 
 > [!WARNING]
 > This function can throw errors.
@@ -750,7 +757,6 @@ succeed(): void
 
 Marks the current test as a success case.
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -766,7 +772,6 @@ Runs the given callback. If the callback does not throw an exception, the test i
 | :--- | :--- | :---: |
 | **callback** | () => undefined | Callback function that runs. If the function runs successfully, the test is marked as a success. Typically, this function will have .assertXyz method calls within it. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -782,7 +787,6 @@ Marks the test as a success at the specified tick.
 | :--- | :--- | :---: |
 | **tick** | *number* | Tick after the start of the GameTest to mark the test as successful. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -799,7 +803,6 @@ Runs the given callback at _tick_ ticks after the start of the test. If the call
 | **tick** | *number* | Tick after the start of the GameTest to run the testing callback at. |
 | **callback** | () => undefined | Callback function that runs. If the function runs successfully, the test is marked as a success. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -815,7 +818,6 @@ Runs the given callback every tick. When the callback successfully executes, the
 | :--- | :--- | :---: |
 | **callback** | () => undefined | Testing callback function that runs. If the function runs successfully, the test is marked as a success. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -825,13 +827,13 @@ Returns *undefined*
 succeedWhenBlockTypePresent(blockType: Minecraft.BlockType, location: Minecraft.BlockLocation): void
 `
 
+Tests for the presence of a block of a particular type on every tick. When the specified block of a type is found, the test is marked as a success.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
 | **blockType** | [*Minecraft.BlockType*](../Minecraft/BlockType.md) | - |
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -850,7 +852,6 @@ Tests for the presence of a component on every tick. When the specified componen
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 | **hasComponent** | *boolean* | - |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -867,7 +868,6 @@ Tests every tick and marks the test as a success when a particular entity is not
 | **entityIdentifier** | *string* | Type of entity to test for (e.g., 'minecraft:skeleton'). If an entity namespace is not specified, 'minecraft:' is assumed. |
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -884,7 +884,6 @@ Tests for the presence of an entity on every tick. When an entity of the specifi
 | **entityIdentifier** | *string* | Type of entity to test for (e.g., 'minecraft:skeleton'). If an entity namespace is not specified, 'minecraft:' is assumed. |
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -902,23 +901,6 @@ Forces an entity to walk to a particular location. Usually used in conjunction w
 | **location** | [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md) | - |
 | **speedModifier** | *number* | Adjustable modifier to the mob's walking speed. |
 
-Returns *undefined*
-
-> [!WARNING]
-> This function can throw errors.
-
-### **setTntFuse**
-`
-setTntFuse(actor: Minecraft.Entity, fuseLength: number): void
-`
-
-#### Arguments
-| Param | Type | Description |
-| :--- | :--- | :---: |
-| **actor** | [*Minecraft.Entity*](../Minecraft/Entity.md) | - |
-| **fuseLength** | *number* | - |
-
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.

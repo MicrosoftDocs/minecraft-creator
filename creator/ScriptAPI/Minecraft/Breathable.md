@@ -72,7 +72,6 @@ Sets the current air supply of the entity.
 | :--- | :--- | :---: |
 | **value** | *number* | New air supply for the entity. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.

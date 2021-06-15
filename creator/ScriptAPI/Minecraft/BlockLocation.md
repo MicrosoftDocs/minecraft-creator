@@ -10,7 +10,7 @@ description: Contents of the Minecraft.BlockLocation class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 
-Contains the integer X, Y, Z coordinates for a block. For decimal locations useful for entities, items, and more, see [Location](Location.md).
+Contains the integer X, Y, Z coordinates for a block. For decimal locations useful for entities, items, and more, see [*Minecraft.Location*](../Minecraft/Location.md).
 
 ## Properties
 ### **x** - `number`
