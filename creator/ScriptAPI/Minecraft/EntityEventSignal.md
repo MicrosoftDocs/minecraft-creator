@@ -3,34 +3,41 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: Minecraft.MountTaming Class
-description: Contents of the Minecraft.MountTaming class.
+title: Minecraft.EntityEventSignal Class
+description: Contents of the Minecraft.EntityEventSignal class.
 ---
-# MountTaming Class
+# EntityEventSignal Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
-
-Contains options for taming a rideable entity based on the entity that mounts it.
-
-## Properties
-### **id** - `string`
-Identifier of this component. Should always be minecraft:mount_taming.
 
 
 
 ## Methods
-- [setTamed](#settamed)
+- [subscribe](#subscribe)
+- [unsubscribe](#unsubscribe)
   
-### **setTamed**
+### **subscribe**
 `
-setTamed(showParticles: boolean): void
+subscribe(callback: (arg: EntityEvent) => undefined): (arg: EntityEvent) => undefined
 `
 
-Sets this rideable entity as tamed.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **showParticles** | *boolean* | Whether to show effect particles when this entity is tamed. |
+| **callback** | (arg: EntityEvent) => undefined | - |
+
+Returns (arg: EntityEvent) => undefined
+
+
+### **unsubscribe**
+`
+unsubscribe(callback: (arg: EntityEvent) => undefined): void
+`
+
+#### Arguments
+| Param | Type | Description |
+| :--- | :--- | :---: |
+| **callback** | (arg: EntityEvent) => undefined | - |
 
 
 > [!WARNING]

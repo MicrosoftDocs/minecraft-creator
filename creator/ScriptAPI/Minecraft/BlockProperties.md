@@ -12,6 +12,14 @@ description: Contents of the Minecraft.BlockProperties class.
 
 
 ## Properties
+### **candles** - `string`
+
+
+
+### **lit** - `string`
+
+
+
 ### **multiFaceDirectionBits** - `string`
 
 

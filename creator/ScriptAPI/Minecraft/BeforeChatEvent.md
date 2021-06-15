@@ -3,10 +3,10 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: Minecraft.ChatEvent Class
-description: Contents of the Minecraft.ChatEvent class.
+title: Minecraft.BeforeChatEvent Class
+description: Contents of the Minecraft.BeforeChatEvent class.
 ---
-# ChatEvent Class
+# BeforeChatEvent Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 
@@ -27,6 +27,10 @@ List of players that will receive this message.
 
 ### **sendToTargets** - `boolean`
 If true, this message is directly targeted to one or more players (i.e., is not broadcast.)
+
+
+### **cancel** - `boolean`
+If set to true in a beforeChat event handler, this message is not broadcast out.
 
 
 

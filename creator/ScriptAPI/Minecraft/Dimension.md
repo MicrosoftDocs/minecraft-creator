@@ -89,7 +89,6 @@ Creates an explosion at the specified location.
 | **radius** | *number* | Radius, in blocks, of the explosion to create. |
 | **explosionOptions** | [*ExplosionOptions*](ExplosionOptions.md) | Additional configurable options for the explosion. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.

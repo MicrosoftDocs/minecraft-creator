@@ -19,30 +19,44 @@ Manages callbacks that are connected to chat messages being sent.
   
 ### **subscribe**
 `
-subscribe(callback: (arg0: ChatEvent) => undefined): (arg0: ChatEvent) => undefined
+subscribe(callback: (arg: ChatEvent) => undefined): (arg: ChatEvent) => undefined
 `
 
 Adds a callback that will be called when new chat messages are sent.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **callback** | (arg0: ChatEvent) => undefined | - |
+| **callback** | (arg: ChatEvent) => undefined | - |
 
-Returns (arg0: ChatEvent) => undefined
+Returns (arg: ChatEvent) => undefined
 
 
+#### Examples
+##### ***custom_command.js***
+```javascript
+// Kills the chatting player if they type "!killme"
+const chatCallback = World.events.beforeChat.subscribe((eventData) => {
+  if (eventData.message.includes("cancel")) {
+    // Cancel event if the message contains "cancel"
+    eventData.canceled = true;
+  } else {
+    // Modify chat message being sent
+    eventData.message = `Modified '${eventData.message}'`;
+  }
+});
+
+```
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg0: ChatEvent) => undefined): void
+unsubscribe(callback: (arg: ChatEvent) => undefined): void
 `
 
 Removes a callback from being called when new chat messages are sent.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **callback** | (arg0: ChatEvent) => undefined | - |
+| **callback** | (arg: ChatEvent) => undefined | - |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.

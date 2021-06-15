@@ -82,7 +82,6 @@ Ejects the specified rider of this entity.
 | :--- | :--- | :---: |
 | **rider** | [*Entity*](Entity.md) | Entity that should be ejected from this entity. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -94,7 +93,6 @@ ejectRiders(): void
 
 Ejects all riders of this entity.
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.

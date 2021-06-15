@@ -30,6 +30,8 @@
         href: Minecraft/BlockInventoryComponent.md
       - name: BlockInventoryComponentContainer
         href: Minecraft/BlockInventoryComponentContainer.md
+      - name: BlockPistonComponent
+        href: Minecraft/BlockPistonComponent.md
       - name: BlockProperties
         href: Minecraft/BlockProperties.md
       - name: StringBlockProperty
@@ -38,14 +40,36 @@
         href: Minecraft/IntBlockProperty.md
       - name: BoolBlockProperty
         href: Minecraft/BoolBlockProperty.md
-      - name: TickEventSignal
-        href: Minecraft/TickEventSignal.md
-      - name: WeatherChangedEventSignal
-        href: Minecraft/WeatherChangedEventSignal.md
+      - name: WeatherChangedEvent
+        href: Minecraft/WeatherChangedEvent.md
+      - name: ChangeWeatherEventSignal
+        href: Minecraft/ChangeWeatherEventSignal.md
+      - name: BeforeChatEvent
+        href: Minecraft/BeforeChatEvent.md
+      - name: BeforeChatEventSignal
+        href: Minecraft/BeforeChatEventSignal.md
       - name: ChatEvent
         href: Minecraft/ChatEvent.md
       - name: ChatEventSignal
         href: Minecraft/ChatEventSignal.md
+      - name: ActorAddEffectEvent
+        href: Minecraft/ActorAddEffectEvent.md
+      - name: AddEffectEventSignal
+        href: Minecraft/AddEffectEventSignal.md
+      - name: EntityEvent
+        href: Minecraft/EntityEvent.md
+      - name: EntityEventSignal
+        href: Minecraft/EntityEventSignal.md
+      - name: BeforeActivatePistonEvent
+        href: Minecraft/BeforeActivatePistonEvent.md
+      - name: BeforeActivatePistonEventSignal
+        href: Minecraft/BeforeActivatePistonEventSignal.md
+      - name: ActivatePistonEvent
+        href: Minecraft/ActivatePistonEvent.md
+      - name: ActivatePistonEventSignal
+        href: Minecraft/ActivatePistonEventSignal.md
+      - name: EmptySignal
+        href: Minecraft/EmptySignal.md
       - name: Entity
         href: Minecraft/Entity.md
       - name: EntityDefinitionFeedItem
@@ -148,8 +172,6 @@
         href: Minecraft/Tameable.md
       - name: UnderwaterMovement
         href: Minecraft/UnderwaterMovement.md
-      - name: WeatherChangedEvent
-        href: Minecraft/WeatherChangedEvent.md
       - name: BlockLocation
         href: Minecraft/BlockLocation.md
       - name: Location
