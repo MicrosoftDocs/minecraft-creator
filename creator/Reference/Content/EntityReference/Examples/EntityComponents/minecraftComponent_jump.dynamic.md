@@ -9,8 +9,6 @@ ms.prod: gaming
 ​
 `minecraft:jump.dynamic` defines a dynamic type jump control that will change jump properties based on the speed modifier of the mob.
 ​
-## Parameters
-​
 ## Example
 ​
 ```json

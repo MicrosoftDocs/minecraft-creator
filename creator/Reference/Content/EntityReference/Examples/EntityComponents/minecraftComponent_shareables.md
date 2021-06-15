@@ -7,7 +7,7 @@ ms.prod: gaming
 ​
 # minecraft:shareables
 ​
-`minecraft:shareables` Defines a list of items the mob wants to share or pick up.
+`minecraft:shareables` defines a list of items the mob wants to share or pick up.
 ​
 ## Parameters
 

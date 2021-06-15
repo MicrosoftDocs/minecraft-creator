@@ -7,7 +7,7 @@ ms.prod: gaming
 ​
 # minecraft:movement.basic
 ​
-`minecraft:movement.basic` accents the movement of an entity.
+`minecraft:movement.basic` defines the movement of an entity.
 ​
 ## Parameters
 ​
