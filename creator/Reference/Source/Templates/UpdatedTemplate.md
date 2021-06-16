@@ -4,16 +4,16 @@ ms.author: v-jeffreykim
 title: minecraft:behavior.Name of Behavior
 ms.prod: gaming
 ---
-​
+
 :::code language="markdown" source="entity.md" id="minecraft:shooter":::
 
-​
+
 ## Parameters
-​
+
 :::code language="markdown" source="entity.md" id="minecraft:shareables_table":::
-​
+
 ## Example
-​
+
 ```json
 "minecraft:behavior.Name of Behavior":{
     "priority": 2,
@@ -21,13 +21,13 @@ ms.prod: gaming
     "parameterB": 42,
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### entities 1
-​
+
 ## Vanilla entities using `minecraft:behavior.Name of Behavior`
-​
+
 - [area_effect_cloud](../../../../Source/VanillaBehaviorPack_Snippets/entities/area_effect_cloud.md)
 - [armor_stand](../../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)
 - [arrow](../../../../Source/VanillaBehaviorPack_Snippets/entities/arrow.md)

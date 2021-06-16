@@ -4,13 +4,13 @@ ms.author: v-jeffreykim
 title: minecraft:tamemount
 ms.prod: gaming
 ---
-​
+
 # minecraft:tamemount
-​
+
 `minecraft:tamemount` allows the Entity to be tamed by mounting it.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | attempt_temper_mod| 5| Integer| The amount the entity's temper will increase when mounted. |
@@ -37,9 +37,9 @@ ms.prod: gaming
 | Name| Default Value| Type| Description |
 |:-----------|:-----------|:-----------|:-----------|
 | item| *not set*| String| Name of the item this entity likes and can be used to increase this entity's temper. |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:tamemount":{
     "attempt_temper_mod": 5,
@@ -52,15 +52,15 @@ ms.prod: gaming
     "tame_event": ,
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### horse
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/horse.json" range="99-151":::
-​
+
 ## Vanilla entities using `minecraft:tamemount`
-​
+
 - [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)

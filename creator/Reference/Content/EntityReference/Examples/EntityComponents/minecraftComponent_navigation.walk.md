@@ -4,13 +4,13 @@ ms.author: v-jeffreykim
 title: minecraft:navigation.walk
 ms.prod: gaming
 ---
-​
+
 # minecraft:navigation.walk
-​
+
 `minecraft:navigation.walk` allows this entity to generate paths by walking around and jumping up and down a block like regular mobs.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | avoid_damage_blocks| False| Boolean| Tells the pathfinder to avoid blocks that cause damage when finding a path |
@@ -32,9 +32,9 @@ ms.prod: gaming
 | can_walk| True| Boolean| Tells the pathfinder whether or not it can walk on the ground outside water |
 | can_walk_in_lava| False| Boolean| Tells the pathfinder whether or not it can travel in lava like walking on ground |
 | is_amphibious| False| Boolean| Tells the pathfinder whether or not it can walk on the ground underwater |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:navigation.walk":{
     "avoid_damage_blocks": false,
@@ -58,15 +58,15 @@ ms.prod: gaming
     "is_amphibious": false,
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### villager
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager.json" range="361-368":::
-​
+
 ## Vanilla entities using `minecraft:navigation.walk`
-​
+
 - [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
 - [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)

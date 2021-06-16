@@ -4,13 +4,13 @@ ms.author: v-jeffreykim
 title: minecraft:entity_sensor
 ms.prod: gaming
 ---
-​
+
 # minecraft:entity_sensor
-​
+
 `minecraft:entity_sensor` is a component that fires an event when a set of conditions are met by other entities within the defined range.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | Minecraft Filter| *not set*| | event_filters |
@@ -20,9 +20,9 @@ ms.prod: gaming
 | relative_range| True| Boolean| If true the sensor range is additive on top of the entity's size. |
 | require_all| False| Boolean| If true requires all nearby entities to pass the filter conditions for the event to send. |
 | sensor_range| 10| Decimal| The maximum distance another entity can be from this and have the filters checked against it. |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:entity_sensor":{
     "Minecraft": ,
@@ -34,13 +34,13 @@ ms.prod: gaming
     "sensor_range": 10,
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### pufferfish
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/pufferfish.json" range="15-31":::
-​
+
 ## Vanilla entities using `minecraft:entity_sensor`
-​
+
 - [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)

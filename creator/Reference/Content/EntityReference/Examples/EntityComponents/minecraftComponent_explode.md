@@ -4,13 +4,13 @@ ms.author: v-jeffreykim
 title: minecraft:explode
 ms.prod: gaming
 ---
-​
+
 # minecraft:explode
-​
+
 `minecraft:explode` defines how the entity explodes.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | breaks_blocks| True| Boolean| If true, the explosion will destroy blocks in the explosion radius. |
@@ -21,9 +21,9 @@ ms.prod: gaming
 | fuse_lit| False| Boolean| If true, the fuse is already lit when this component is added to the entity. |
 | max_resistance| 3.40282e+38| Decimal| A blocks explosion resistance will be capped at this value when an explosion occurs. |
 | power| 3| Decimal| The radius of the explosion in blocks and the amount of damage the explosion deals. |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:explode":{
     "breaks_blocks": true,
@@ -36,15 +36,15 @@ ms.prod: gaming
     "power": 3,
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### tnt
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/tnt.json" range="34-39":::
-​
+
 ## Vanilla entities using `minecraft:explode`
-​
+
 - [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
 - [ender_crystal](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_crystal.md)
 - [fireball](../../../../Source/VanillaBehaviorPack_Snippets/entities/fireball.md)

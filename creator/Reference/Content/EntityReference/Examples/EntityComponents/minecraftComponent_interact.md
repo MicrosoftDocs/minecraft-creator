@@ -4,9 +4,9 @@ ms.author: v-jeffreykim
 title: minecraft:interact
 ms.prod: gaming
 ---
-​
+
 # minecraft:interact
-​
+
 `minecraft:interact` defines interactions with this entity.
 
 ## Parameter
@@ -52,9 +52,9 @@ ms.prod: gaming
 | Type| Name| Default Value| Description |
 |:-----------|:-----------|:-----------|:-----------|
 | table| *not set*| String| File path, relative to the Behavior Pack's path, to the loot table file. |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:interact":{
     "add_items": {
@@ -68,8 +68,8 @@ ms.prod: gaming
         "event":"minecraft:produce_milk",
         "target": "self"
     },
-    "particle_on_start": { 
-        "particle_type": "smoke", "particle_y_offset": 0.25, "particle_offset_towards_interactor": true 
+    "particle_on_start": {
+        "particle_type": "smoke", "particle_y_offset": 0.25, "particle_offset_towards_interactor": true
     },
     "play_sound": "moo",
     "transform_to_item": "bucket:1",
@@ -77,15 +77,15 @@ ms.prod: gaming
     "use_item": true
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### mooshroom
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/mooshroom.json" range="67-326":::
-​
+
 ## Vanilla entities using `minecraft:interact`
-​
+
 - [area_effect_cloud](../../../../Source/VanillaBehaviorPack_Snippets/entities/area_effect_cloud.md)
 - [armor_stand](../../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)
 - [arrow](../../../../Source/VanillaBehaviorPack_Snippets/entities/arrow.md)

@@ -4,33 +4,33 @@ ms.author: v-jeffreykim
 title: minecraft:jump.static
 ms.prod: gaming
 ---
-​
+
 # minecraft:jump.static
-​
+
 `minecraft:jump.static` gives the entity the ability to jump.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | jump_power| 0.42| Decimal| The initial vertical velocity for the jump |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:jump.static":{
     "jump_power": 0.42,
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### horse
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/horse.json" range="351-352":::
-​
+
 ## Vanilla entities using `minecraft:jump.static`
-​
+
 - [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
