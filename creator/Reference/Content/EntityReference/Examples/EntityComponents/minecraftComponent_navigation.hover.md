@@ -4,13 +4,13 @@ ms.author: v-jeffreykim
 title: minecraft:navigation.hover
 ms.prod: gaming
 ---
-​
+
 # minecraft:navigation.hover
-​
+
 `minecraft:navigation.hover` allows this entity to generate paths in the air like the vanilla Bees do. Keeps them from falling out of the skies and doing predictive movement.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | avoid_damage_blocks| False| Boolean| Tells the pathfinder to avoid blocks that cause damage when finding a path |
@@ -32,9 +32,9 @@ ms.prod: gaming
 | can_walk| True| Boolean| Tells the pathfinder whether or not it can walk on the ground outside water |
 | can_walk_in_lava| False| Boolean| Tells the pathfinder whether or not it can travel in lava like walking on ground |
 | is_amphibious| False| Boolean| Tells the pathfinder whether or not it can walk on the ground underwater |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:navigation.hover":{
     "avoid_damage_blocks": false,
@@ -58,13 +58,13 @@ ms.prod: gaming
     "is_amphibious": false,
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### bee
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/bee.json" range="469-477":::
-​
+
 ## Vanilla entities using `minecraft:navigation.hover`
-​
+
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)

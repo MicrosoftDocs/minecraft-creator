@@ -4,13 +4,13 @@ ms.author: v-jeffreykim
 title: minecraft:navigation.generic
 ms.prod: gaming
 ---
-​
+
 # minecraft:navigation.generic
-​
+
 `minecraft:navigation.generic` allows this entity to generate paths by walking, swimming, flying and/or climbing around and jumping up and down a block.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | avoid_damage_blocks| False| Boolean| Tells the pathfinder to avoid blocks that cause damage when finding a path |
@@ -32,9 +32,9 @@ ms.prod: gaming
 | can_walk| True| Boolean| Tells the pathfinder whether or not it can walk on the ground outside water |
 | can_walk_in_lava| False| Boolean| Tells the pathfinder whether or not it can travel in lava like walking on ground |
 | is_amphibious| False| Boolean| Tells the pathfinder whether or not it can walk on the ground underwater |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:navigation.generic":{
     "avoid_damage_blocks": false,
@@ -58,15 +58,15 @@ ms.prod: gaming
     "is_amphibious": false,
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### fish
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fish.json" range="54-61":::
-​
+
 ## Vanilla entities using `minecraft:navigation.generic`
-​
+
 - [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
 - [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)

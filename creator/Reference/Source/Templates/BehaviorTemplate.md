@@ -4,25 +4,25 @@ ms.author: v-jeffreykim
 title: minecraft:behavior.Name of Behavior
 ms.prod: gaming
 ---
-​
+
 # minecraft:behavior.Name of Behavior
-​
+
 `minecraft:behavior.Name of Behavior` allows an entity to
-​
-​
+
+
 > [!NOTE]
 > This behavior is a requirement for the following behaviors:
-​
+
 >[!IMPORTANT]
-> `minecraft:behavior.Name of Behavior` requires 
-​
+> `minecraft:behavior.Name of Behavior` requires
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-​
+
 ## Example
-​
+
 ```json
 "minecraft:behavior.Name of Behavior":{
     "priority": 2,
@@ -30,13 +30,13 @@ ms.prod: gaming
     "parameterB": 42,
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### entities 1
-​
+
 ## Vanilla entities using `minecraft:behavior.Name of Behavior`
-​
+
 - [area_effect_cloud](../../../../Source/VanillaBehaviorPack_Snippets/entities/area_effect_cloud.md)
 - [armor_stand](../../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)
 - [arrow](../../../../Source/VanillaBehaviorPack_Snippets/entities/arrow.md)

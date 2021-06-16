@@ -4,42 +4,42 @@ ms.author: v-jeffreykim
 title: minecraft:pushable
 ms.prod: gaming
 ---
-​
+
 # minecraft:pushable
-​
+
 `minecraft:pushable` defines what can push an entity between other entities and pistons.
-​
-​
+
+
 > [!NOTE]
 > This behavior is a requirement for the following behaviors:
-​
+
 >[!IMPORTANT]
-> `minecraft:pushable` requires 
-​
+> `minecraft:pushable` requires
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | is_pushable| True| Boolean| Whether the entity can be pushed by other entities. |
 | is_pushable_by_piston| True| Boolean| Whether the entity can be pushed by pistons safely. |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:pushable":{
     "is_pushable": true,
     "is_pushable_by_piston": true,
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### minecart
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/minecart.json" range="37-40":::
-​
+
 ## Vanilla entities using `minecraft:pushable`
-​
+
 - [armor_stand](../../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)
 - [arrow](../../../../Source/VanillaBehaviorPack_Snippets/entities/arrow.md)
 - [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)

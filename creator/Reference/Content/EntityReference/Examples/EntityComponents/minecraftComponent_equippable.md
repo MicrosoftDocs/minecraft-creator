@@ -4,13 +4,13 @@ ms.author: v-jeffreykim
 title: minecraft:equippable
 ms.prod: gaming
 ---
-​
+
 # minecraft:equippable
-​
+
 `minecraft:equippable` defines an entity's behavior for having items equipped to it.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | slots| *not set*| List| List of slots and the item that can be equipped.|
@@ -27,9 +27,9 @@ ms.prod: gaming
 | on_equip| *not set*| String| Event to trigger when this entity is equipped with this item. |
 | on_unequip| *not set*| String| Event to trigger when this item is removed from this entity. |
 | slot| 0| Integer| The slot number of this slot. |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:equippable":{
     "slots": [
@@ -44,15 +44,15 @@ ms.prod: gaming
     ]
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### horse
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/horse.json" range="287-311":::
-​
+
 ## Vanilla entities using `minecraft:equippable`
-​
+
 - [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)

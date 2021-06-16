@@ -4,17 +4,17 @@ ms.author: v-jeffreykim
 title: minecraft:transformation
 ms.prod: gaming
 ---
-​
+
 # minecraft:transformation
-​
+
 `minecraft:transformation` defines an entity's transformation from the current definition into another.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | add| *not set*| JSON Object| List of components to add to the entity after the transformation
-​
+
 ### add
 
 `add` is a JSON Object defined by ten parameters. Each item has the following properties:
@@ -46,7 +46,7 @@ ms.prod: gaming
 | value| 0| Decimal| Time in seconds before the entity transforms |
 
 ## Example
-​
+
 ```json
 "minecraft:transformation": {
     "into": ,
@@ -62,19 +62,19 @@ ms.prod: gaming
     }
 }
 ```
-​
+
 ## Vanilla entities examples
 
 ### husk
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/husk.json" range="41-48":::​
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/husk.json" range="41-48":::
 
 ### piglin
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="49-55":::
-​
+
 ## Vanilla entities using `minecraft:transformation`
-​
+
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
 - [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
 - [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)

@@ -4,26 +4,26 @@ ms.author: v-jeffreykim
 title: minecraft:persistent
 ms.prod: gaming
 ---
-​
+
 # minecraft:persistent
-​
+
 `minecraft:persistent` defines whether an entity should be persistent in the game world.
-​
+
 ## Example
-​
+
 ```json
 "minecraft:persistent":{
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### armor_stand
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/armor_stand.json" range="39-40":::
-​
+
 ## Vanilla entities using `minecraft:persistent`
-​
+
 - [armor_stand](../../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)
 - [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)
 - [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)

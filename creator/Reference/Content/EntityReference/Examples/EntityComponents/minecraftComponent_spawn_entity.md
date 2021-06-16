@@ -4,13 +4,13 @@ ms.author: v-jeffreykim
 title: minecraft:spawn_entity
 ms.prod: gaming
 ---
-​
+
 # minecraft:spawn_entity
-​
+
 `minecraft:spawn_entity` adds a timer after which this entity will spawn another entity or item (similar to vanilla's chicken's egg-laying behavior).
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | filters| *not set*| Minecraft Filter| If present, the specified entity will only spawn if the filter evaluates to true. |
@@ -24,9 +24,9 @@ ms.prod: gaming
 | spawn_item| egg| String| Item identifier of the item to spawn. |
 | spawn_method| born| String| Method to use to spawn the entity. |
 | spawn_sound| plop| String| Identifier of the sound effect to play when the entity is spawned. |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:spawn_entity":{
     "filters": ,
@@ -42,13 +42,13 @@ ms.prod: gaming
     "spawn_sound": "plop",
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### chicken
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/chicken.json" range="74-84":::
-​
+
 ## Vanilla entities using `minecraft:spawn_entity`
 
 - [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
