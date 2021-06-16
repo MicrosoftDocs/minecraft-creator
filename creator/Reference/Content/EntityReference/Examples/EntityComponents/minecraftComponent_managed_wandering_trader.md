@@ -7,7 +7,7 @@ ms.prod: gaming
 ​
 # minecraft:managed_wandering_trader
 ​
-`minecraft:managed_wandering_trader` manages the entities ability to trade.
+`minecraft:managed_wandering_trader` manages the entity's ability to trade.
 
 > [!NOTE]
 > This behavior can only be used by the `wandering_trader` entity type.

@@ -7,7 +7,7 @@ ms.prod: gaming
 ​
 # minecraft:physics
 ​
-`minecraft:physics` defines physics properties of an actor, including if it is affected by gravity or if it collides with objects.
+`minecraft:physics` defines physics properties of an entity, including if it is affected by gravity or if it collides with objects.
 ​
 ## Parameters
 ​

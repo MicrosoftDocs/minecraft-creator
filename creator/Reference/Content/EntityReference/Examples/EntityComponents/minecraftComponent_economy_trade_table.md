@@ -4,13 +4,13 @@ ms.author: v-jeffreykim
 title: minecraft:economy_trade_table
 ms.prod: gaming
 ---
-​
+
 # minecraft:economy_trade_table
-​
+
 `minecraft:economy_trade_table` defines this entity's ability to trade with players.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | convert_trades_economy| False| Boolean| Determines when the mob transforms, if the trades should be converted when the new mob has a economy_trade_table. When the trades are converted, the mob will generate a new trade list with their new trade table, but then it will try to convert any of the same trades over to have the same enchantments and user data. For example, if the original has a Emerald to Enchanted Iron Sword (Sharpness 1), and the new trade also has an Emerald for Enchanted Iron Sword, then the enchantment will be Sharpness 1. |
@@ -25,9 +25,9 @@ ms.prod: gaming
 | show_trade_screen| True| Boolean| Show an in game trade screen when interacting with the mob. |
 | table| *not set*| String| File path relative to the resource pack root for this entity's trades |
 | use_legacy_price_formula| False| Boolean| Determines whether the legacy formula is used to determines the trade prices. |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:economy_trade_table":{
     "convert_trades_economy": false,
@@ -44,14 +44,14 @@ ms.prod: gaming
     "use_legacy_price_formula": false,
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### wandering_trader
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wandering_trader.json" range="67-71":::
-​
+
 ## Vanilla entities using `minecraft:economy_trade_table`
-​
+
 - [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
 - [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)

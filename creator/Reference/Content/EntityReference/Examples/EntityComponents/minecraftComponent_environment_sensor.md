@@ -14,7 +14,7 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | triggers| *not set*| List| The list of triggers that fire when the environment conditions match the given filter criteria. |
-​
+
 ## Example
 ​
 ```json
