@@ -25,7 +25,7 @@ ms.prod: gaming
 | begin_transform_sound| *not set*| String| Sound to play when the transformation starts |
 | drop_equipment| False| Boolean| Cause the entity to drop all equipment upon transformation |
 | drop_inventory| False| Boolean| Cause the entity to drop all items in inventory upon transformation |
-| into| *not set*| | String| Entity Definition that this entity will transform into |
+| into| *not set*| | String| Entity Definition that this entity will transform into. |
 | keep_level| False| Boolean| If this entity has trades and has leveled up, it should maintain that level after transformation. |
 | keep_owner| False| Boolean| If this entity is owned by another entity, it should remain owned after transformation. |
 | preserve_equipment| False| Boolean| Cause the entity to keep equipment after going through transformation |
@@ -49,8 +49,8 @@ ms.prod: gaming
 
 ```json
 "minecraft:transformation": {
-    "into": ,
-    "transformation_sound": ,
+    "into": "minecraft:drowned<minecraft:as_adult>",
+    "transformation_sound": "convert_to_drowned",
     "drop_equipment": false,
     "drop_inventory": false,
     "keep_level": false,
@@ -58,7 +58,7 @@ ms.prod: gaming
         "block_assist_chance": 0.0,
         "block_radius": 0,
         "block_max": 0,
-        "value": 0
+        "value": 10
     }
 }
 ```

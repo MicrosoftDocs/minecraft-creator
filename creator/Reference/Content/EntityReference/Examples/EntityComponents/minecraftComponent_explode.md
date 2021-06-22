@@ -22,6 +22,9 @@ ms.prod: gaming
 | max_resistance| 3.40282e+38| Decimal| A blocks explosion resistance will be capped at this value when an explosion occurs. |
 | power| 3| Decimal| The radius of the explosion in blocks and the amount of damage the explosion deals. |
 
+> [!TIP]
+> `max_resistance` is set to a default value of 3.40282e+38. An alternative to using this number is the string "infinite" to achieve the same result.
+
 ## Example
 
 ```json
@@ -50,6 +53,5 @@ ms.prod: gaming
 - [fireball](../../../../Source/VanillaBehaviorPack_Snippets/entities/fireball.md)
 - [tnt_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/tnt_minecart.md)
 - [tnt](../../../../Source/VanillaBehaviorPack_Snippets/entities/tnt.md)
-- [wither_skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
 - [wither_skull_dangerous](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skull_dangerous.md)
 - [wither_skull](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skull.md)

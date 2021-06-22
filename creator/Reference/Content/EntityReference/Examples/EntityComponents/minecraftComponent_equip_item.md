@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:equip_item
 
-`minecraft:equip_item` causes the entity to put on the desired equipment.
+`minecraft:equip_item` allows the entity to equip desired equipment.
 
 ## Example
 

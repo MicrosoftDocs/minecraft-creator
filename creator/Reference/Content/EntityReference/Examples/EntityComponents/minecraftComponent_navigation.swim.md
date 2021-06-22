@@ -61,6 +61,8 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
+No entities currently use `minecraft:navigation.swim`.
 
 ## Vanilla entities using `minecraft:navigation.swim`
 
+No entities currently use `minecraft:navigation.swim`.

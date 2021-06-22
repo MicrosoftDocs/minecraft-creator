@@ -26,7 +26,7 @@ ms.prod: gaming
     "looping": true,
     "randomInterval":true,
     "time": [0.0, 0.0],
-    "time_down_event":
+    "time_down_event": "minecraft:times_up"
 }
 ```
 
