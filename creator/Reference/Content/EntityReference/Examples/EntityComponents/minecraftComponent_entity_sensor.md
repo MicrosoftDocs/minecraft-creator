@@ -13,8 +13,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| Minecraft Filter| *not set*| | event_filters |
-| String| *not set*| | event |
+| [event_filters](../FilterList.md)| *not set*|Minecraft Filter |Filters to use for conditions.  |
+| event| *not set*|String |Event to run when conditions are meant |
 | maximum_count| -1| Integer| The maximum number of entities that must pass the filter conditions for the event to send. |
 | minimum_count| 1| Integer| The minimum number of entities that must pass the filter conditions for the event to send. |
 | relative_range| True| Boolean| If true the sensor range is additive on top of the entity's size. |
@@ -25,13 +25,13 @@ ms.prod: gaming
 
 ```json
 "minecraft:entity_sensor":{
-    "Minecraft": ,
-    "String": ,
     "maximum_count": -1,
     "minimum_count": 1,
     "relative_range": true,
     "require_all": false,
-    "sensor_range": 10
+    "sensor_range": 10,
+    "event_filters": {"test": "has_trade_supply"},
+    "event": "minecraft:offer_trade"
 }
 ```
 

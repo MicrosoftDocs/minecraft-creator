@@ -27,9 +27,9 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### ender_dragon
+### ghast
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ender_dragon.json" range="36-39":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ghast.json" range="48-50":::
 
 ## Vanilla entities using `minecraft:shooter`
 

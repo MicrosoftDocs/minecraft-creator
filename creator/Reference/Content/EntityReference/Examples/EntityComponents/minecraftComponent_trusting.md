@@ -22,10 +22,10 @@ ms.prod: gaming
 ```json
 "minecraft:trusting": {
     "probability": 1.00,
-    "trust_items": [ ],
+    "trust_items": ["emerald", "gold" ],
     "trust_event": {
-        "event": ,
-        "target":
+        "event": "minecraft:trust",
+        "target": "self"
     }
 ```
 
@@ -37,5 +37,4 @@ ms.prod: gaming
 
 ## Vanilla entities using `minecraft:trusting`
 
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
 - [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)

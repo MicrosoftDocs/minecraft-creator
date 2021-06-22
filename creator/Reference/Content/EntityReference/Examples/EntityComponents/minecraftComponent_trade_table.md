@@ -24,7 +24,7 @@ ms.prod: gaming
 ```json
 "minecraft:trade_table":{
     "convert_trades_economy": false,
-    "display_name": ,
+    "display_name": "What are you buying?",
     "new_screen": false,
     "persist_trades": false,
     "table":

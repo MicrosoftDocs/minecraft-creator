@@ -27,7 +27,7 @@ ms.prod: gaming
 
 ### drowned
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/drowned.json" range="136":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/drowned.json" range="136-137":::
 
 ## Vanilla entities using `minecraft:movement.generic`
 
