@@ -21,7 +21,7 @@ ms.prod: gaming
 ```json
 "minecraft:shooter":{
     "aux_val": -1,
-    "def": ,
+    "def": "minecraft:small_fireball",
 }
 ```
 

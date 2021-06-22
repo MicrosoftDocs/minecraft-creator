@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:environment_sensor":{
-    "triggers": [],
+    "triggers": []
 }
 ```
 

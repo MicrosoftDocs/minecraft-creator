@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:raid_trigger":{
-    "triggered_event": ,
+    "triggered_event": "minecraft:prepare_for_war",
 }
 ```
 

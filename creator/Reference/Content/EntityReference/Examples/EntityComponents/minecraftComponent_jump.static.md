@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:jump.static":{
-    "jump_power": 0.42,
+    "jump_power": 0.42
 }
 ```
 

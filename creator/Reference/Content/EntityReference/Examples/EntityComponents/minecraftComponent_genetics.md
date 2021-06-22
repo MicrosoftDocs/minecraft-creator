@@ -66,10 +66,10 @@ ms.prod: gaming
                     "main_allele": -1
                 }
             ],
-            "name": ,
+            "name": "gene",
         }
     ],
-    "mutation_rate": 0.03125,
+    "mutation_rate": 0.03125
 }
 ```
 

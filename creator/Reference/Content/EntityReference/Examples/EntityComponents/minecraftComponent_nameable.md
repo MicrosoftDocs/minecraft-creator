@@ -34,10 +34,10 @@ ms.prod: gaming
     "allow_name_tag_renaming": true,
     "always_show": false,
     "default_trigger": ,
-    "name_actions": {
-        "name_filter": ,
-        "on_named": ,
-    },
+    "name_actions": "minecraft:celebrate" {
+        "name_filter": "bacon",
+        "on_named": "minecraft:spawn_child"
+    }
 }
 ```
 

@@ -29,7 +29,7 @@ ms.prod: gaming
     "container_type": ,
     "inventory_size": 5,
     "private": false,
-    "restrict_to_owner": false,
+    "restrict_to_owner": false
 }
 ```
 

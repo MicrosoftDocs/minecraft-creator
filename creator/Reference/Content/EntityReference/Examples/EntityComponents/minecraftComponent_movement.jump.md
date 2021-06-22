@@ -20,8 +20,8 @@ ms.prod: gaming
 
 ```json
 "minecraft:movement.jump":{
-    "jump_delay": [0.0, 0.0]
-    "max_turn": 30.0,
+    "jump_delay": [0.0, 0.0],
+    "max_turn": 30.0
 }
 ```
 

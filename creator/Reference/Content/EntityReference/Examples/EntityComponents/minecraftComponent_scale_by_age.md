@@ -20,8 +20,8 @@ ms.prod: gaming
 
 ```json
 "minecraft:scale_by_age":{
-    "end_scale": 1,
-    "start_scale": 1,
+    "end_scale": 1.0,
+    "start_scale": 1.0
 }
 ```
 

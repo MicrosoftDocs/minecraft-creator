@@ -55,7 +55,7 @@ ms.prod: gaming
     "can_swim": false,
     "can_walk": true,
     "can_walk_in_lava": false,
-    "is_amphibious": false,
+    "is_amphibious": false
 }
 ```
 

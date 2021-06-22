@@ -31,7 +31,7 @@ ms.prod: gaming
     "on_activate": ,
     "on_deactivate": ,
     "tick_command_block_on_activate": true,
-    "tick_command_block_on_deactivate": false,
+    "tick_command_block_on_deactivate": false
 }
 ```
 

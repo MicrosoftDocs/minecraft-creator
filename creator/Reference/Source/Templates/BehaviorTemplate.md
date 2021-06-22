@@ -27,7 +27,7 @@ ms.prod: gaming
 "minecraft:behavior.Name of Behavior":{
     "priority": 2,
     "parameterA": true,
-    "parameterB": 42,
+    "parameterB": 42
 }
 ```
 

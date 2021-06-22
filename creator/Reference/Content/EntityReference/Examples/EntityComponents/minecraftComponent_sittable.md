@@ -20,8 +20,8 @@ ms.prod: gaming
 
 ```json
 "minecraft:sittable":{
-    "sit_event": ,
-    "stand_event": ,
+    "sit_event": "minecraft:taking_a_seat",
+    "stand_event": "minecraft:time_to_go"
 }
 ```
 

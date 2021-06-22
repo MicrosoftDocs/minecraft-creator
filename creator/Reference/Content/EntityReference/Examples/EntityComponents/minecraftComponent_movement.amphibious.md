@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:movement.amphibious":{
-    "max_turn": 30.0,
+    "max_turn": 30.0
 }
 ```
 

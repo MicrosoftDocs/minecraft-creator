@@ -21,7 +21,7 @@ ms.prod: gaming
 ```json
 "minecraft:home":{
     "home_block_list": [],
-    "restriction_radius":  -1,
+    "restriction_radius":  -1
 }
 ```
 

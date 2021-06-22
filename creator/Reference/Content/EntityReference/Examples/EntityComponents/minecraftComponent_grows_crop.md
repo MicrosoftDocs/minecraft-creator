@@ -21,7 +21,7 @@ ms.prod: gaming
 ```json
 "minecraft:grows_crop":{
     "chance": 0,
-    "charges": 10,
+    "charges": 10
 }
 ```
 

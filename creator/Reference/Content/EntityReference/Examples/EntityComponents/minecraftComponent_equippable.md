@@ -39,7 +39,7 @@ ms.prod: gaming
             "item": ,
             "on_equip": ,
             "on_unequip": ,
-            "slot": 0,
+            "slot": 0
         }
     ]
 }

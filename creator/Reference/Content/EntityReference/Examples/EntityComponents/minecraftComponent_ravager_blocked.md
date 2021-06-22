@@ -21,7 +21,7 @@ ms.prod: gaming
 ```json
 "minecraft:ravager_blocked":{
     "knockback_strength": 3.0,
-    "reaction_choices": [],
+    "reaction_choices": []
 }
 ```
 

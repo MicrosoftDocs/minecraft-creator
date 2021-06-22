@@ -35,9 +35,17 @@ ms.prod: gaming
 
 ```json
 "minecraft:despawn":{
-    "priority": 2,
-    "parameterA":true,
-    "parameterB":42,
+    "despawn_from_distance": {
+        "max_distance": 128,
+        "min_distance": 32
+    },
+    "despawn_from_chance": false,
+    "despawn_from_inactivity": false,
+    "despawn_from_simulation_edge": true,
+    "min_range_inactivity_timer": 30 ,
+    "min_range_random_chance": 800,
+    "remove_child_entities": false,
+    "filters":{"test": "has_damage", "target": "self"}
 }
 ```
 

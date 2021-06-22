@@ -35,7 +35,7 @@ ms.prod: gaming
     "generates_bubbles": true,
     "inhale_time": 0.0,
     "suffocate_time": -20,
-    "total_supply": 15,
+    "total_supply": 15
 }
 ```
 

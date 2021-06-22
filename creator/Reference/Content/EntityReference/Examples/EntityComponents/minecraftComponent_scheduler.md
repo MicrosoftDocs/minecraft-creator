@@ -19,7 +19,13 @@ ms.prod: gaming
 
 ```json
 "minecraft:scheduler":{
-    "scheduled_events": [],
+    "scheduled_events": [
+        {
+            "filters": [{"test": "has_damage", "value": false},
+            {"test":"is_daytime", "value": false}],
+            "event": "minecraft:sleepy_time"
+        }
+    ]
 }
 ```
 

@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:rail_movement":{
-    "max_speed": 0.4,
+    "max_speed": 0.4
 }
 ```
 

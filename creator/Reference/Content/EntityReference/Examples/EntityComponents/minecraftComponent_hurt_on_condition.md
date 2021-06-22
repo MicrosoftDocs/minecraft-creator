@@ -13,38 +13,29 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| *not set*| *not set*| Array| damage_conditions<br/>
+|damage_conditions| *not set*| Array|An array of conditions used to compare the event to.  |
 
-Minecraft Filter
+### damage_conditions
 
-filters
+`damage_conditions` is an array defined by three parameters. Each item has the following properties:
 
-
-
-String
-
-cause
-
-****
-```
-none
-```
-
-
-
-damage_per_tick
-
-The amount of damage done each tick that the conditions are met.
-
- |
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|[filters](../FilterList.md)|*not set* | Minecraft Filter| filter used to test for|
+|[cause](../Filters/has_damage.md#list-of-damage-types) |*not set* |String|cause of damage|
+|damange_per_tick |*not set*| Integer| Amount of damage done each tick that the conditions are met.|
 
 ## Example
 
 ```json
 "minecraft:hurt_on_condition":{
-    "priority": 2,
-    "parameterA": true,
-    "parameterB": 42,
+    "damage_conditions": [
+        {
+            "filters": {"test": "in_water", "subject": "self", "operator": "==", "value": true},
+            "causes": "drowning",
+            "damage_per_tick": 1
+        }
+    ]
 }
 ```
 

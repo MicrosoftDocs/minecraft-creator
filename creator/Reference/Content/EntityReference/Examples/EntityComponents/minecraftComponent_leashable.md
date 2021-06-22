@@ -27,9 +27,9 @@ ms.prod: gaming
     "can_be_stolen": false,
     "hard_distance": 6,
     "max_distance": 10,
-    "on_leash": ,
-    "on_unleash": ,
-    "soft_distance": 4,
+    "on_leash": "minecraft:leashed",
+    "on_unleash": "minecraft:be_free" ,
+    "soft_distance": 4
 }
 ```
 

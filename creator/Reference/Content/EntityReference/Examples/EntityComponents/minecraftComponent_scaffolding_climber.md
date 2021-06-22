@@ -12,7 +12,8 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:scaffolding_climber":{}
+"minecraft:scaffolding_climber":{
+}
 ```
 
 ## Vanilla entities examples

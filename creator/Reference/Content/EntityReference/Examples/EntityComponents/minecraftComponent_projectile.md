@@ -75,7 +75,7 @@ ms.prod: gaming
     "splash_potion": false,
     "splash_range": 4,
     "uncertainty_base": 0,
-    "uncertainty_multiplier": 0,
+    "uncertainty_multiplier": 0
 }
 ```
 

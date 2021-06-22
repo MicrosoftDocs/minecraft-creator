@@ -31,7 +31,7 @@ ms.prod: gaming
     "minimum_count": 1,
     "relative_range": true,
     "require_all": false,
-    "sensor_range": 10,
+    "sensor_range": 10
 }
 ```
 

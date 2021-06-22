@@ -21,7 +21,7 @@ ms.prod: gaming
 ```json
 "minecraft:experience_reward":{
     "on_bred": 0,
-    "on_death": 0,
+    "on_death": 0
 }
 ```
 
