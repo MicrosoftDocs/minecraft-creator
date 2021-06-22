@@ -53,7 +53,7 @@ ms.prod: gaming
     "min_height": 0,
     "separation_threshold": 2,
     "separation_weight": 2,
-    "use_center_of_mass": false,
+    "use_center_of_mass": false
 }
 ```
 

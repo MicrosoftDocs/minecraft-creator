@@ -33,7 +33,7 @@ ms.prod: gaming
     "fuse_length": [0.0, 0.0],
     "fuse_lit": false,
     "max_resistance": 3.40282e+38,
-    "power": 3,
+    "power": 3
 }
 ```
 

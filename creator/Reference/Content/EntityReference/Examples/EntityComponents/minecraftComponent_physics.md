@@ -21,7 +21,7 @@ ms.prod: gaming
 ```json
 "minecraft:physics":{
     "has_collision": true,
-    "has_gravity": true,
+    "has_gravity": true
 }
 ```
 

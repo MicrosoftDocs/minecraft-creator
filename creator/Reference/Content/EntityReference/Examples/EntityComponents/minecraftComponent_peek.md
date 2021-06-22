@@ -21,9 +21,9 @@ ms.prod: gaming
 
 ```json
 "minecraft:peek":{
-    "on_close": ,
-    "on_open": ,
-    "on_target_open": ,
+    "on_close": {"event": "minecraft:stop_peeping"},
+    "on_open": {"event": "minecraft:start_peeping"},
+    "on_target_open": {"event": "minecraft:ive_been_spotted"}
 }
 ```
 

@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:instant_despawn":{
-    "remove_child_entities": false,
+    "remove_child_entities": false
 }
 ```
 

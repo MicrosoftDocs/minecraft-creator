@@ -23,7 +23,7 @@ ms.prod: gaming
 "minecraft:combat_regeneration":{
     "regeneration_duration": 7,
     "apply_to_self": true,
-    "apply_to_family": false,
+    "apply_to_family": false
 }
 ```
 

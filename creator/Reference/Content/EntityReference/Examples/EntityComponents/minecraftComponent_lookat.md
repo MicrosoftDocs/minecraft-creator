@@ -25,9 +25,9 @@ ms.prod: gaming
 ```json
 "minecraft:lookat":{
     "allow_invulnerable": false,
-    "filters": ,
+    "filters": {"test": "has_target"}  ,
     "look_cooldown": [0, 0],
-    "look_event": ,
+    "look_event": "minecraft:get_angry" ,
     "search_radius": 10,
     "set_target": true,
 }

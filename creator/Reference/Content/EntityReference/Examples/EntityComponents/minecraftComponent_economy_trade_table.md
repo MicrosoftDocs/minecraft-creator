@@ -41,7 +41,7 @@ ms.prod: gaming
     "persist_trades": false,
     "show_trade_screen": true,
     "table": ,
-    "use_legacy_price_formula": false,
+    "use_legacy_price_formula": false
 }
 ```
 

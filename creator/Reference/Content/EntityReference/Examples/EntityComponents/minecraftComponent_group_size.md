@@ -20,7 +20,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:group_size":{
-    "filters": ,
+    "filters": {"test": "has_ranged_weapon"} ,
     "radius": 16,
 }
 ```

@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:inside_block_notifier":{
-    "block_list": [],
+    "block_list": []
 }
 ```
 

@@ -22,10 +22,10 @@ ms.prod: gaming
 
 ```json
 "minecraft:preferred_path":{
-    "default_block_cost": 2,
+    "default_block_cost": 2.0,
     "jump_cost": 0,
     "max_fall_blocks": 3,
-    "preferred_path_blocks": [],
+    "preferred_path_blocks": []
 }
 ```
 

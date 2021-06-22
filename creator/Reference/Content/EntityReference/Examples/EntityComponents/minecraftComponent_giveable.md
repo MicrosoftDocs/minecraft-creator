@@ -23,7 +23,7 @@ ms.prod: gaming
 "minecraft:giveable":{
     "cooldown": 0.0,
     "items": ,
-    "on_give": ,
+    "on_give": "minecraft:give_thanks"
 }
 ```
 

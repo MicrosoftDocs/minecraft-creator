@@ -30,12 +30,14 @@ ms.prod: gaming
 
 ```json
 "minecraft:healable":{
-    "filters": ,
+    "filters": {"test": "has_damage", "value": "fatal"} ,
     "force_use": false,
     "items": [
+        {
         "heal_amount": 1,
-        "item": ,
-    ],
+        "item": "carrot"
+        }
+    ]
 }
 ```
 

@@ -49,10 +49,10 @@ ms.prod: gaming
     "seat_count": 1,
     "seats": {
         "lock_rider_rotation": 181,
-        "max_rider_count": seat_count,
+        "max_rider_count": "seat_count",
         "min_rider_count": 0,
         "position": [0, 0, 0],
-        "rotate_rider_by": 0,
+        "rotate_rider_by": 0
     },
 }
 ```

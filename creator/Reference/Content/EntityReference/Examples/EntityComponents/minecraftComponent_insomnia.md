@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:insomnia":{
-    "days_until_insomnia": 3.0,
+    "days_until_insomnia": 3.0
 }
 ```
 

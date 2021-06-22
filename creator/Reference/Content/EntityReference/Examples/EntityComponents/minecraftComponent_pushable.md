@@ -9,13 +9,6 @@ ms.prod: gaming
 
 `minecraft:pushable` defines what can push an entity between other entities and pistons.
 
-
-> [!NOTE]
-> This behavior is a requirement for the following behaviors:
-
->[!IMPORTANT]
-> `minecraft:pushable` requires
-
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
@@ -28,7 +21,7 @@ ms.prod: gaming
 ```json
 "minecraft:pushable":{
     "is_pushable": true,
-    "is_pushable_by_piston": true,
+    "is_pushable_by_piston": true
 }
 ```
 
