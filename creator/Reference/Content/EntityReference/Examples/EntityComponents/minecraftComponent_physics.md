@@ -4,35 +4,35 @@ ms.author: v-jeffreykim
 title: minecraft:physics
 ms.prod: gaming
 ---
-​
+
 # minecraft:physics
-​
-`minecraft:physics` defines physics properties of an actor, including if it is affected by gravity or if it collides with objects.
-​
+
+`minecraft:physics` defines physics properties of an entity, including if it is affected by gravity or if it collides with objects.
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | has_collision| True| Boolean| Whether or not the object collides with things. |
 | has_gravity| True| Boolean| Whether or not the entity is affected by gravity. |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:physics":{
     "has_collision": true,
-    "has_gravity": true,
+    "has_gravity": true
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### player
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/player.json" range="106-107":::
-​
+
 ## Vanilla entities using `minecraft:physics`
-​
+
 - [area_effect_cloud](../../../../Source/VanillaBehaviorPack_Snippets/entities/area_effect_cloud.md)
 - [armor_stand](../../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)
 - [arrow](../../../../Source/VanillaBehaviorPack_Snippets/entities/arrow.md)

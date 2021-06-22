@@ -1,8 +1,8 @@
  - name: Attributes List
    href: ../AttributeList.md
- - name: minecraft:attack 
+ - name: attack
    href: minecraftAttribute_attack.md
- - name: minecraft:spell_effects
+ - name: spell_effects
    href: minecraftAttribute_spell_effects.md
- - name: minecraft:strength
+ - name: strength
    href: minecraftAttribute_strength.md

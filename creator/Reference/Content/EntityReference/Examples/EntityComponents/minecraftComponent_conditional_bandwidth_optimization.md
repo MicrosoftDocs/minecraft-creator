@@ -40,9 +40,16 @@ ms.prod: gaming
 
 ```json
 "minecraft:conditional_bandwidth_optimization":{
-    "priority": 2,
-    "parameterA":true,
-    "parameterB":42,
+    "conditional_values" : {
+        "max_dropped_ticks": 20,
+        "max_optimized_distance": 200,
+        "use_motion_prediction_hints": false
+    },
+    "default_values" : {
+        "max_dropped_ticks": 10,
+        "max_optimized_distance": 100,
+        "use_motion_prediction_hints": false
+    }
 }
 ```
 

@@ -4,11 +4,11 @@ ms.author: v-jeffreykim
 title: minecraft:shareables
 ms.prod: gaming
 ---
-​
+
 # minecraft:shareables
-​
+
 `minecraft:shareables` defines a list of items the mob wants to share or pick up.
-​
+
 ## Parameters
 
 > [!IMPORTANT]
@@ -43,7 +43,7 @@ ms.prod: gaming
 ## Example
 
 In this example, an entity wants to be able to make `bread` from `wheat`. Since bread requires 3 total wheat, the entity will want a total of 3 and will consider 4 or more as surplus.
-​
+
 ```json
 "minecraft:shareables":{
     "all_items": true,
@@ -55,9 +55,9 @@ In this example, an entity wants to be able to make `bread` from `wheat`. Since 
             "item": "minecraft:wheat",
             "admire": false,
             "barter": false,
-            "consume_item": false, 
-            "craft_into": "minecraft:bread", 
-            "priority": 0, 
+            "consume_item": false,
+            "craft_into": "minecraft:bread",
+            "priority": 0,
             "max_amount": 3,
             "pickup_limit": -1, //no limit
             "store_in_inventory": true,
@@ -67,15 +67,15 @@ In this example, an entity wants to be able to make `bread` from `wheat`. Since 
     ],
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### wither_skeleton
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither_skeleton.json" range="59-410":::
-​
+
 ## Vanilla entities using `minecraft:shareables`
-​
+
 - [area_effect_cloud](../../../../Source/VanillaBehaviorPack_Snippets/entities/area_effect_cloud.md)
 - [armor_stand](../../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)
 - [arrow](../../../../Source/VanillaBehaviorPack_Snippets/entities/arrow.md)

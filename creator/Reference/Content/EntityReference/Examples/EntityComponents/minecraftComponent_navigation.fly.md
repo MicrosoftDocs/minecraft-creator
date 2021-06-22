@@ -4,13 +4,13 @@ ms.author: v-jeffreykim
 title: minecraft:navigation.fly
 ms.prod: gaming
 ---
-​
+
 # minecraft:navigation.fly
-​
+
 `minecraft:navigation.fly` allows this entity to generate paths in the air like the vanilla Parrots do.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | avoid_damage_blocks| False| Boolean| Tells the pathfinder to avoid blocks that cause damage when finding a path |
@@ -32,9 +32,9 @@ ms.prod: gaming
 | can_walk| True| Boolean| Tells the pathfinder whether or not it can walk on the ground outside water |
 | can_walk_in_lava| False| Boolean| Tells the pathfinder whether or not it can travel in lava like walking on ground |
 | is_amphibious| False| Boolean| Tells the pathfinder whether or not it can walk on the ground underwater |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:navigation.fly":{
     "avoid_damage_blocks": false,
@@ -55,16 +55,16 @@ ms.prod: gaming
     "can_swim": false,
     "can_walk": true,
     "can_walk_in_lava": false,
-    "is_amphibious": false,
+    "is_amphibious": false
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### parrot
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/parrot.json" range="138-141":::
-​
+
 ## Vanilla entities using `minecraft:navigation.fly`
-​
+
 - [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)

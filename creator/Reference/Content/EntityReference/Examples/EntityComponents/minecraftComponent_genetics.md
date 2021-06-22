@@ -4,13 +4,13 @@ ms.author: v-jeffreykim
 title: minecraft:genetics
 ms.prod: gaming
 ---
-​
+
 # minecraft:genetics
-​
+
 `minecraft:genetics` defines the way a mob's genes and alleles are passed on to it's offspring, and how those traits manifest in the child. Compatible parent genes are crossed together, the alleles are handed down from the parents to the child, and any matching genetic variants fire off JSON events to modify the child and express the traits.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | genes| *not set*| List| The list of genes that this entity has and will cross with a partner during breeding.|
@@ -46,9 +46,9 @@ ms.prod: gaming
 | either_allele| -1| Integer| If this value is non-negative, compare both the mob's main and hidden alleles with this value for a match with either. Can also be a range of integers. |
 | hidden_allele| -1| Integer| If this value is non-negative, compare the mob's hidden allele with this value for a match. Can also be a range of integers. |
 | main_allele| -1| Integer| If this value is non-negative, compare the mob's main allele with this value for a match. Can also be a range of integers. |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:genetics":{
     "genes": [
@@ -66,20 +66,20 @@ ms.prod: gaming
                     "main_allele": -1
                 }
             ],
-            "name": ,
+            "name": "gene",
         }
     ],
-    "mutation_rate": 0.03125,
+    "mutation_rate": 0.03125
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### panda
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/panda.json" range="471-532":::
-​
+
 ## Vanilla entities using `minecraft:genetics`
-​
+
 - [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
 - [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)

@@ -1,7 +1,7 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: squid
+title: stray
 ms.prod: gaming
 ---
 

@@ -4,13 +4,13 @@ ms.author: v-jeffreykim
 title: minecraft:rideable
 ms.prod: gaming
 ---
-​
+
 # minecraft:rideable
-​
+
 `minecraft:rideable` determines whether this entity can be ridden. Allows specifying the different seat positions and quantity.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | controlling_seat| 0| Integer| The seat that designates the driver of the entity |
@@ -34,9 +34,9 @@ ms.prod: gaming
 | min_rider_count| 0| Integer| Defines the minimum number of riders that need to be riding this entity before this seat can be used |
 | position| [0, 0, 0]| Vector [a, b, c]| Position of this seat relative to this entity's position |
 | rotate_rider_by| 0| MoLang| Offset to rotate riders by |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:rideable":{
     "controlling_seat": 0,
@@ -49,20 +49,20 @@ ms.prod: gaming
     "seat_count": 1,
     "seats": {
         "lock_rider_rotation": 181,
-        "max_rider_count": seat_count,
+        "max_rider_count": "seat_count",
         "min_rider_count": 0,
         "position": [0, 0, 0],
-        "rotate_rider_by": 0,
+        "rotate_rider_by": 0
     },
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### boat
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/boat.json" range="26-56":::
-​
+
 ## Vanilla entities using `minecraft:rideable`
 
 - [boat](../../../../Source/VanillaBehaviorPack_Snippets/entities/boat.md)

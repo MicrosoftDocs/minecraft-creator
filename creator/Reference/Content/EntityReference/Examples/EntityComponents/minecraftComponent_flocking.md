@@ -4,13 +4,13 @@ ms.author: v-jeffreykim
 title: minecraft:flocking
 ms.prod: gaming
 ---
-​
+
 # minecraft:flocking
-​
+
 `minecraft:flocking` allows entities to flock in groups in water or not.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | block_distance| 0| Decimal| The amount of blocks away the entity will look at to push away from. |
@@ -31,9 +31,9 @@ ms.prod: gaming
 | separation_threshold| 2| Decimal| The distance that is determined to be to close to another flocking and to start applying separation. |
 | separation_weight| 1| Decimal| The weight applied to the separation of the flock. |
 | use_center_of_mass| False| Boolean| Tells the flockers that they will follow flocks based on the center of mass. |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:flocking":{
     "block_distance": 0,
@@ -53,18 +53,18 @@ ms.prod: gaming
     "min_height": 0,
     "separation_threshold": 2,
     "separation_weight": 2,
-    "use_center_of_mass": false,
+    "use_center_of_mass": false
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### fish
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fish.json" range="112-131":::
-​
+
 ## Vanilla entities using `minecraft:flocking`
-​
+
 - [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
 - [fish](../../../../Source/VanillaBehaviorPack_Snippets/entities/fish.md)
 - [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)

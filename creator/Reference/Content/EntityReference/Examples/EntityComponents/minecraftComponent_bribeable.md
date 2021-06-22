@@ -21,7 +21,7 @@ ms.prod: gaming
 ```json
 "minecraft:bribeable":{
     "bribe_cooldown": 2.0,
-    "bribe_items": "stick",
+    "bribe_items": "stick"
 }
 ```
 

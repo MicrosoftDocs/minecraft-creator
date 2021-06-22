@@ -4,13 +4,13 @@ ms.author: v-jeffreykim
 title: minecraft:leashable
 ms.prod: gaming
 ---
-​
+
 # minecraft:leashable
-​
+
 `minecraft:leashable` allows this entity to be leashed and defines the conditions and events for this entity when is leashed.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | can_be_stolen| False| Boolean| If true, players can leash this entity even if it is already leashed to another mob. |
@@ -19,28 +19,28 @@ ms.prod: gaming
 | on_leash| *not set*| String| Event to call when this entity is leashed. |
 | on_unleash| *not set*| String| Event to call when this entity is unleashed. |
 | soft_distance| 4| Decimal| Distance in blocks at which the 'spring' effect starts acting to keep this entity close to the entity that leashed it. |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:leashable":{
     "can_be_stolen": false,
     "hard_distance": 6,
     "max_distance": 10,
-    "on_leash": ,
-    "on_unleash": ,
-    "soft_distance": 4,
+    "on_leash": "minecraft:leashed",
+    "on_unleash": "minecraft:be_free" ,
+    "soft_distance": 4
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### wolf
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wolf.json" range="237-249":::
-​
+
 ## Vanilla entities using `minecraft:leashable`
-​
+
 - [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [boat](../../../../Source/VanillaBehaviorPack_Snippets/entities/boat.md)

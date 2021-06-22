@@ -4,13 +4,13 @@ ms.author: v-jeffreykim
 title: minecraft:navigation.swim
 ms.prod: gaming
 ---
-​
+
 # minecraft:navigation.swim
-​
+
 `minecraft:navigation.swim` allows this entity to generate paths that include water.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | avoid_damage_blocks| False| Boolean| Tells the pathfinder to avoid blocks that cause damage when finding a path |
@@ -32,9 +32,9 @@ ms.prod: gaming
 | can_walk| True| Boolean| Tells the pathfinder whether or not it can walk on the ground outside water |
 | can_walk_in_lava| False| Boolean| Tells the pathfinder whether or not it can travel in lava like walking on ground |
 | is_amphibious| False| Boolean| Tells the pathfinder whether or not it can walk on the ground underwater |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:navigation.swim":{
     "avoid_damage_blocks": false,
@@ -55,12 +55,12 @@ ms.prod: gaming
     "can_swim": false,
     "can_walk": true,
     "can_walk_in_lava": false,
-    "is_amphibious": false,
+    "is_amphibious": false
 }
 ```
-​
+
 ## Vanilla entities examples
-​
-​
+
+
 ## Vanilla entities using `minecraft:navigation.swim`
-​
+

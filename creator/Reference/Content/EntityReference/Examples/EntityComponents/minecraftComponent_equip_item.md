@@ -4,26 +4,26 @@ ms.author: v-jeffreykim
 title: minecraft:equip_item
 ms.prod: gaming
 ---
-​
+
 # minecraft:equip_item
-​
+
 `minecraft:equip_item` causes the entity to put on the desired equipment.
-​
+
 ## Example
-​
+
 ```json
 "minecraft:equip_item":{
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### skeleton
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/skeleton.json" range="186-187":::
-​
+
 ## Vanilla entities using `minecraft:equip_item`
-​
+
 - [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
 - [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)

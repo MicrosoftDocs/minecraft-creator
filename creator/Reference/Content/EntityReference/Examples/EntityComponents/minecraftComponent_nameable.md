@@ -4,13 +4,13 @@ ms.author: v-jeffreykim
 title: minecraft:nameable
 ms.prod: gaming
 ---
-​
+
 # minecraft:nameable
-​
+
 `minecraft:nameable` allows this entity to be named (e.g. using a name tag).
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | allow_name_tag_renaming| True| Boolean| If true, this entity can be renamed with name tags |
@@ -26,29 +26,29 @@ ms.prod: gaming
 |:-----------|:-----------|:-----------|:-----------|
 | name_filter| *not set*| String| List of special names that will cause the events defined in 'on_named' to fire |
 | on_named| *not set*| String| Event to be called when this entity acquires the name specified in 'name_filter' |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:nameable":{
     "allow_name_tag_renaming": true,
     "always_show": false,
     "default_trigger": ,
-    "name_actions": {
-        "name_filter": ,
-        "on_named": ,
-    },
+    "name_actions": "minecraft:celebrate" {
+        "name_filter": "bacon",
+        "on_named": "minecraft:spawn_child"
+    }
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### cat
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/cat.json" range="288-289":::
-​
+
 ## Vanilla entities using `minecraft:nameable`
-​
+
 - [armor_stand](../../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)
 - [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)

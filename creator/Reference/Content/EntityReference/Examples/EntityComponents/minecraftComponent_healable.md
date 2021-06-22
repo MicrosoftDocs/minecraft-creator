@@ -4,13 +4,13 @@ ms.author: v-jeffreykim
 title: minecraft:healable
 ms.prod: gaming
 ---
-​
+
 # minecraft:healable
-​
+
 `minecraft:healable` defines the interactions with this entity for healing it.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | filters| *not set*| Minecraft Filter| The filter group that defines the conditions for using this item to heal the entity. |
@@ -25,28 +25,30 @@ ms.prod: gaming
 |:-----------|:-----------|:-----------|:-----------|
 | heal_amount| 1| Integer| The amount of health this entity gains when fed this item. |
 | item| *not set*| String| Item identifier that can be used to heal this entity. |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:healable":{
-    "filters": ,
+    "filters": {"test": "has_damage", "value": "fatal"} ,
     "force_use": false,
     "items": [
+        {
         "heal_amount": 1,
-        "item": ,
-    ],
+        "item": "carrot"
+        }
+    ]
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### wolf
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wolf.json" range="299-374":::
-​
+
 ## Vanilla entities using `minecraft:healable`
-​
+
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
 - [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
 - [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)

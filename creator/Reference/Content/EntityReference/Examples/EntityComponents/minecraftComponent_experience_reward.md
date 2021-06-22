@@ -4,35 +4,35 @@ ms.author: v-jeffreykim
 title: minecraft:experience_reward
 ms.prod: gaming
 ---
-​
+
 # minecraft:experience_reward
-​
+
 `minecraft:experience_reward` defines the amount of experience rewarded when the entity dies or is successfully bred.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | on_bred| 0| MoLang| A molang expression defining the amount of experience rewarded when this entity is successfully bred. An array of expressions adds each expression's result together for a final total. |
 | on_death| 0| MoLang| A molang expression defining the amount of experience rewarded when this entity dies. An array of expressions adds each expression's result together for a final total. |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:experience_reward":{
     "on_bred": 0,
-    "on_death": 0,
+    "on_death": 0
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### cow
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/cow.json" range="33-36":::
-​
+
 ## Vanilla entities using `minecraft:experience_reward`
-​
+
 - [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)

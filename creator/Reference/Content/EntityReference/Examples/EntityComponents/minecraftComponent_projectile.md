@@ -4,13 +4,13 @@ ms.author: v-jeffreykim
 title: minecraft:projectile
 ms.prod: gaming
 ---
-​
+
 # minecraft:projectile
-​
+
 `minecraft:projectile` allows the entity to be a thrown entity.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | angle_offset| 0| Decimal| Determines the angle at which the projectile is thrown |
@@ -42,9 +42,9 @@ ms.prod: gaming
 | splash_range| 4| Decimal| Radius in blocks of the 'splash' effect |
 | uncertainty_base| 0| Decimal| The base accuracy. Accuracy is determined by the formula uncertaintyBase - difficultyLevel * uncertaintyMultiplier |
 | uncertainty_multiplier| 0| Decimal| Determines how much difficulty affects accuracy. Accuracy is determined by the formula uncertaintyBase - difficultyLevel * uncertaintyMultiplier |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:projectile":{
     "angle_offset": 0,
@@ -75,18 +75,18 @@ ms.prod: gaming
     "splash_potion": false,
     "splash_range": 4,
     "uncertainty_base": 0,
-    "uncertainty_multiplier": 0,
+    "uncertainty_multiplier": 0
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### arrow
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/arrow.json" range="12-34":::
-​
+
 ## Vanilla entities using `minecraft:projectile`
-​
+
 - [arrow](../../../../Source/VanillaBehaviorPack_Snippets/entities/arrow.md)
 - [dragon_fireball](../../../../Source/VanillaBehaviorPack_Snippets/entities/dragon_fireball.md)
 - [egg](../../../../Source/VanillaBehaviorPack_Snippets/entities/egg.md)

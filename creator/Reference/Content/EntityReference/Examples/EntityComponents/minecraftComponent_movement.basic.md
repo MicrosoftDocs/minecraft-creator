@@ -4,33 +4,33 @@ ms.author: v-jeffreykim
 title: minecraft:movement.basic
 ms.prod: gaming
 ---
-​
+
 # minecraft:movement.basic
-​
+
 `minecraft:movement.basic` defines the movement of an entity.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | max_turn| 30.0| Decimal| The maximum number in degrees the mob can turn per tick. |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:movement.basic":{
-    "max_turn": 30.0,
+    "max_turn": 30.0
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### horse
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/horse.json" range="349-350":::
-​
+
 ## Vanilla entities using `minecraft:movement.basic`
-​
+
 - [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
 - [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)

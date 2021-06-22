@@ -4,13 +4,13 @@ ms.author: v-jeffreykim
 title: minecraft:inventory
 ms.prod: gaming
 ---
-​
+
 # minecraft:inventory
-​
+
 `minecraft:inventory` defines how an entity's inventory is managed.
-​
+
 ## Parameters
-​
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | additional_slots_per_strength| 0| Integer| Number of slots that this entity can gain per extra strength |
@@ -19,9 +19,9 @@ ms.prod: gaming
 | inventory_size| 5| Integer| Number of slots the container has |
 | private| False| Boolean| If true, the entity will not drop it's inventory on death |
 | restrict_to_owner| False| Boolean| If true, the entity's inventory can only be accessed by its owner or itself |
-​
+
 ## Example
-​
+
 ```json
 "minecraft:inventory":{
     "additional_slots_per_strength": 0,
@@ -29,18 +29,18 @@ ms.prod: gaming
     "container_type": ,
     "inventory_size": 5,
     "private": false,
-    "restrict_to_owner": false,
+    "restrict_to_owner": false
 }
 ```
-​
+
 ## Vanilla entities examples
-​
+
 ### chest_minecart
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/chest_minecart.json" range="20-24":::
-​
+
 ## Vanilla entities using `minecraft:inventory`
-​
+
 - [chest_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/chest_minecart.md)
 - [command_block_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/command_block_minecart.md)
 - [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
