@@ -1,6 +1,6 @@
 ---
 name: Creator Portal Bug report
-about: Create a report to help us improve our Creator Portal documentation infrastructure
+about: Create a report to help us address any issues in our Creator Portal documentation infrastructure
 title: ''
 labels: ''
 assignees: ''
