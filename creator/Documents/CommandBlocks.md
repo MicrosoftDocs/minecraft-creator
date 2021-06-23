@@ -107,6 +107,8 @@ If you are following this tutorial, you will be in a flat world. As you walk aro
 
 For the next step, we need to place a chain command block. As mentioned above, chain command blocks execute when a block pointing into them is activated. Make sure you place the block like the image showing the arrows.
 
+### Setting up the `/testforblock` Command Block
+
 1. Place another command block next to the existing block. Make sure that the new block is placed in front of the direction that the arrow is pointing.
 1. Open the command block interface.
 1. Set the **Block Type** to **Chain**.
@@ -115,6 +117,8 @@ For the next step, we need to place a chain command block. As mentioned above, c
 1. Set the **Command Input** to  `/testfor @p[tag=!placed_block]`
 
 Since the second block is set to **Conditional**, this new block will only execute if the first command block succeeds, meaning the diamond block was present. This command checks to see if the player hasn't already received the reward.
+
+### Setting up the Reward Command Block
 
 Let’s add a third block to set a command to reward the player for placing a block in the right spot.
 
@@ -127,6 +131,8 @@ Let’s add a third block to set a command to reward the player for placing a bl
 
 Once again, this command will only activate if the previous command succeeded, meaning both the diamond block was present and the player hasn't received the reward yet.
 
+### Closing the loop
+
 If we stop now, placing the diamond block at `0 4 0` will give the player 20 emeralds per second! That's because we need to do one last step, marking the player as having received the reward.
 
 1. Place another command block next to the existing block. Make sure that the new block is placed in front of the direction that the arrow is pointing.
@@ -138,4 +144,4 @@ If we stop now, placing the diamond block at `0 4 0` will give the player 20 eme
 
 ### Testing the loop
 
-If everything has been set up correctly, you can now place a wool block on location `0, 4, 0` and you will receive a single emerald in your player inventory.
+If everything has been set up correctly, you can now place a diamond block on location `0, 4, 0` and you will receive a single emerald in your player inventory.
