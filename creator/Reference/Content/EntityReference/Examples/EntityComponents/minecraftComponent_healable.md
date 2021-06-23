@@ -55,5 +55,4 @@ ms.prod: gaming
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
 - [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
 - [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)
-- [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)
 - [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)

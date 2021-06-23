@@ -26,10 +26,16 @@ ms.prod: gaming
 "minecraft:target_nearby_sensor":{
     "inside_range": 1,
     "must_see": false,
-    "on_inside_range": ,
-    "on_outside_range": ,
-    "on_vision_lost_inside_range": ,
-    "outside_range": 5,
+    "on_inside_range": {
+        "event": "minecraft:i_see_you", "target": "self"
+        },
+    "on_outside_range": {
+        "event": "minecraft:where_did_you_go", "target": "self"
+        },
+    "on_vision_lost_inside_range": {
+        "event": "minecraft:ill_find_you", "target": "self"
+        },
+    "outside_range": 5
 }
 ```
 

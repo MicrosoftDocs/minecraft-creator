@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:genetics
 
-`minecraft:genetics` defines the way a mob's genes and alleles are passed on to it's offspring, and how those traits manifest in the child. Compatible parent genes are crossed together, the alleles are handed down from the parents to the child, and any matching genetic variants fire off JSON events to modify the child and express the traits.
+`minecraft:genetics` defines the way a mob's genes and alleles are passed on to its offspring, and how those traits manifest in the child. Compatible parent genes are crossed together, the alleles are handed down from the parents to the child, and any matching genetic variants fire off JSON events to modify the child and express the traits.
 
 ## Parameters
 
@@ -59,7 +59,7 @@ ms.prod: gaming
             },
             "genetic_variants": [
                 {
-                    "birth_event": ,
+                    "birth_event": "minecraft:its_alive",
                     "both_allele": -1,
                     "either_allele": -1,
                     "hidden_allele": -1,

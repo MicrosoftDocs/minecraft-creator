@@ -9,7 +9,6 @@ ms.prod: gaming
 
 `minecraft:water_movement` defines the speed with which an entity can move through water.
 
-
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
@@ -21,7 +20,6 @@ ms.prod: gaming
 ```json
 "minecraft:water_movement":{
     "drag_factor": 0.8
-
 }
 ```
 

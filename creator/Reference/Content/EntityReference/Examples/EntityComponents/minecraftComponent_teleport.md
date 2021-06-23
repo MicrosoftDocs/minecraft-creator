@@ -33,7 +33,7 @@ ms.prod: gaming
     "random_teleport_cube": [32, 16, 32],
     "random_teleports": true,
     "target_distance": 16,
-    "target_teleport_chance": 1,
+    "target_teleport_chance": 1
 }
 ```
 

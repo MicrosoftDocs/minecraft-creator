@@ -13,7 +13,7 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| block_distance| 0| Decimal| The amount of blocks away the entity will look at to push away from. |
+| block_distance| 0| Decimal| The distance in blocks that the entity will look at and move from. |
 | block_weight| 0| Decimal| The weight of the push back away from blocks. |
 | breach_influence| 0| Decimal| The amount of push back given to a flocker that breaches out of the water. |
 | cohesion_threshold| 1| Decimal| The threshold in which to start applying cohesion. |

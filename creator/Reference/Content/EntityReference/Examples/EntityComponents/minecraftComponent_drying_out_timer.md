@@ -13,16 +13,17 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
+| total_time| 0.0| Decimal| Amount of time in seconds to dry out fully. |
 |dried_out_event|*not set* | String|  Event to fire when the drying out time runs out. |
 |recover_after_dried_out_event|*not set* | String|  Event to fire when entity was already dried out but received increase in water supply. |
 |stopped_drying_out_event|*not set* | String|  Event to fire when entity stopped drying out, for example got into water or under rain. |
-| total_time| 0.0| Decimal| Amount of time in seconds to dry out fully. |
 |water_bottle_refill_time| 0.0| Decimal|  Optional amount of additional time in seconds given by using splash water bottle on entity. |
 
 ## Example
 
 ```json
 "minecraft:drying_out_timer":{
+    "total_time": 200,
     "dried_out_event": {
         "event": "towel_off"
     },
@@ -32,7 +33,6 @@ ms.prod: gaming
     "stopped_drying_out_event": {
         "event": "fell_into_water"
     },
-    "total_time": 200,
     "water_bottle_refill_time": 100
 }
 ```

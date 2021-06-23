@@ -38,4 +38,4 @@ ms.prod: gaming
 ## Vanilla entities using `minecraft:scheduler`
 
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
+- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)

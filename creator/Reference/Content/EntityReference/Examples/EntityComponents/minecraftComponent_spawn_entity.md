@@ -29,7 +29,9 @@ ms.prod: gaming
 
 ```json
 "minecraft:spawn_entity":{
-    "filters": ,
+    "filters": [
+        {"test":"is_daytime", "value": false}
+    ] ,
     "max_wait_time": 600,
     "min_wait_time": 300,
     "num_to_spawn": 1,
