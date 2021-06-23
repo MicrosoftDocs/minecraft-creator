@@ -16,7 +16,7 @@ ms.prod: gaming
 | convert_trades_economy| False| Boolean| Determines when the mob transforms, if the trades should be converted when the new mob has a economy_trade_table. When the trades are converted, the mob will generate a new trade list with their new trade table, but then it will try to convert any of the same trades over to have the same enchantments and user data. For example, if the original has a Emerald to Enchanted Iron Sword (Sharpness 1), and the new trade also has an Emerald for Enchanted Iron Sword, then the enchantment will be Sharpness 1. |
 | cured_discount| [-5, -20]| Range [a, b]| How much should the discount be modified by when the player has cured the Zombie Villager. Can be specified as a pair of numbers (low-tier trade discount and high-tier trade discount) |
 | display_name| *not set*| String| Name to be displayed while trading with this entity |
-| hero_demand_discount| -4| Integer| Used in legacy prices to determine how much should Demand be modified by when the player has the Hero of the Village mob effect |
+| hero_demand_discount| -4| Integer| Used in legacy prices to determine how much should Demand be modified by when the player has the `Hero of the Village` mob effect |
 | max_cured_discount| [-25, -63]| Range [a, b]| The max the discount can be modified by when the player has cured the Zombie Villager. Can be specified as a pair of numbers (low-tier trade discount and high-tier trade discount) |
 | max_nearby_cured_discount| -200| Integer| The max the discount can be modified by when the player has cured a nearby Zombie Villager |
 | nearby_cured_discount| -25| Integer| How much should the discount be modified by when the player has cured a nearby Zombie Villager |
@@ -32,7 +32,7 @@ ms.prod: gaming
 "minecraft:economy_trade_table":{
     "convert_trades_economy": false,
     "cured_discount": [-5, -20],
-    "display_name": ,
+    "display_name": "Got something that might interest you",
     "hero_demand_discount": -4,
     "max_cured_discount": [-25, -63],
     "max_nearby_cured_discount": -200,

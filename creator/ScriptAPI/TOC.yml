@@ -4,98 +4,94 @@
       items:
       - name: GameTest
         href: GameTest/GameTest.md
-      - name: RegistrationBuilder
-        href: GameTest/RegistrationBuilder.md
-      - name: Helper
-        href: GameTest/Helper.md
       - name: GameTestSequence
         href: GameTest/GameTestSequence.md
+      - name: Helper
+        href: GameTest/Helper.md
+      - name: RegistrationBuilder
+        href: GameTest/RegistrationBuilder.md
       - name: Tags
         href: GameTest/Tags.md
     - name: Minecraft
       items:
-      - name: Minecraft
-        href: Minecraft/Minecraft.md
-      - name: BlockTypes
-        href: Minecraft/BlockTypes.md
+      - name: ActivatePistonEvent
+        href: Minecraft/ActivatePistonEvent.md
+      - name: ActivatePistonEventSignal
+        href: Minecraft/ActivatePistonEventSignal.md
+      - name: ActorAddEffectEvent
+        href: Minecraft/ActorAddEffectEvent.md
+      - name: AddEffectEventSignal
+        href: Minecraft/AddEffectEventSignal.md
+      - name: AddRider
+        href: Minecraft/AddRider.md
+      - name: Ageable
+        href: Minecraft/Ageable.md
+      - name: BeforeActivatePistonEvent
+        href: Minecraft/BeforeActivatePistonEvent.md
+      - name: BeforeActivatePistonEventSignal
+        href: Minecraft/BeforeActivatePistonEventSignal.md
+      - name: BeforeChatEvent
+        href: Minecraft/BeforeChatEvent.md
+      - name: BeforeChatEventSignal
+        href: Minecraft/BeforeChatEventSignal.md
       - name: Block
         href: Minecraft/Block.md
-      - name: BlockType
-        href: Minecraft/BlockType.md
-      - name: BlockPermutation
-        href: Minecraft/BlockPermutation.md
       - name: BlockComponent
         href: Minecraft/BlockComponent.md
       - name: BlockInventoryComponent
         href: Minecraft/BlockInventoryComponent.md
       - name: BlockInventoryComponentContainer
         href: Minecraft/BlockInventoryComponentContainer.md
+      - name: BlockLocation
+        href: Minecraft/BlockLocation.md
+      - name: BlockPermutation
+        href: Minecraft/BlockPermutation.md
       - name: BlockPistonComponent
         href: Minecraft/BlockPistonComponent.md
       - name: BlockProperties
         href: Minecraft/BlockProperties.md
-      - name: StringBlockProperty
-        href: Minecraft/StringBlockProperty.md
-      - name: IntBlockProperty
-        href: Minecraft/IntBlockProperty.md
+      - name: BlockType
+        href: Minecraft/BlockType.md
+      - name: BlockTypes
+        href: Minecraft/BlockTypes.md
       - name: BoolBlockProperty
         href: Minecraft/BoolBlockProperty.md
-      - name: WeatherChangedEvent
-        href: Minecraft/WeatherChangedEvent.md
+      - name: Breathable
+        href: Minecraft/Breathable.md
       - name: ChangeWeatherEventSignal
         href: Minecraft/ChangeWeatherEventSignal.md
-      - name: BeforeChatEvent
-        href: Minecraft/BeforeChatEvent.md
-      - name: BeforeChatEventSignal
-        href: Minecraft/BeforeChatEventSignal.md
       - name: ChatEvent
         href: Minecraft/ChatEvent.md
       - name: ChatEventSignal
         href: Minecraft/ChatEventSignal.md
-      - name: ActorAddEffectEvent
-        href: Minecraft/ActorAddEffectEvent.md
-      - name: AddEffectEventSignal
-        href: Minecraft/AddEffectEventSignal.md
-      - name: EntityEvent
-        href: Minecraft/EntityEvent.md
-      - name: EntityEventSignal
-        href: Minecraft/EntityEventSignal.md
-      - name: BeforeActivatePistonEvent
-        href: Minecraft/BeforeActivatePistonEvent.md
-      - name: BeforeActivatePistonEventSignal
-        href: Minecraft/BeforeActivatePistonEventSignal.md
-      - name: ActivatePistonEvent
-        href: Minecraft/ActivatePistonEvent.md
-      - name: ActivatePistonEventSignal
-        href: Minecraft/ActivatePistonEventSignal.md
+      - name: Color
+        href: Minecraft/Color.md
+      - name: Commands
+        href: Minecraft/Commands.md
+      - name: Container
+        href: Minecraft/Container.md
+      - name: Dimension
+        href: Minecraft/Dimension.md
+      - name: Effect
+        href: Minecraft/Effect.md
+      - name: Effects
+        href: Minecraft/Effects.md
+      - name: EffectType
+        href: Minecraft/EffectType.md
       - name: EmptySignal
         href: Minecraft/EmptySignal.md
       - name: Entity
         href: Minecraft/Entity.md
       - name: EntityDefinitionFeedItem
         href: Minecraft/EntityDefinitionFeedItem.md
-      - name: AddRider
-        href: Minecraft/AddRider.md
-      - name: Ageable
-        href: Minecraft/Ageable.md
-      - name: Breathable
-        href: Minecraft/Breathable.md
-      - name: Color
-        href: Minecraft/Color.md
-      - name: Commands
-        href: Minecraft/Commands.md
-      - name: Trigger
-        href: Minecraft/Trigger.md
-      - name: Dimension
-        href: Minecraft/Dimension.md
-      - name: Effects
-        href: Minecraft/Effects.md
-      - name: EffectType
-        href: Minecraft/EffectType.md
-      - name: ExplosionOptions
-        href: Minecraft/ExplosionOptions.md
+      - name: EntityEvent
+        href: Minecraft/EntityEvent.md
+      - name: EntityEventSignal
+        href: Minecraft/EntityEventSignal.md
       - name: Events
         href: Minecraft/Events.md
+      - name: ExplosionOptions
+        href: Minecraft/ExplosionOptions.md
       - name: FeedItem
         href: Minecraft/FeedItem.md
       - name: FeedItemEffect
@@ -108,12 +104,12 @@
         href: Minecraft/Healable.md
       - name: Health
         href: Minecraft/Health.md
+      - name: IntBlockProperty
+        href: Minecraft/IntBlockProperty.md
       - name: Inventory
         href: Minecraft/Inventory.md
       - name: InventoryComponentContainer
         href: Minecraft/InventoryComponentContainer.md
-      - name: Container
-        href: Minecraft/Container.md
       - name: Items
         href: Minecraft/Items.md
       - name: ItemStack
@@ -124,16 +120,18 @@
         href: Minecraft/LavaMovement.md
       - name: Leashable
         href: Minecraft/Leashable.md
-      - name: Effect
-        href: Minecraft/Effect.md
+      - name: Location
+        href: Minecraft/Location.md
+      - name: Minecraft
+        href: Minecraft/Minecraft.md
       - name: MountTaming
         href: Minecraft/MountTaming.md
+      - name: Movement
+        href: Minecraft/Movement.md
       - name: MovementAmphibious
         href: Minecraft/MovementAmphibious.md
       - name: MovementBasic
         href: Minecraft/MovementBasic.md
-      - name: Movement
-        href: Minecraft/Movement.md
       - name: MovementFly
         href: Minecraft/MovementFly.md
       - name: MovementGeneric
@@ -168,13 +166,15 @@
         href: Minecraft/Seat.md
       - name: Strength
         href: Minecraft/Strength.md
+      - name: StringBlockProperty
+        href: Minecraft/StringBlockProperty.md
       - name: Tameable
         href: Minecraft/Tameable.md
+      - name: Trigger
+        href: Minecraft/Trigger.md
       - name: UnderwaterMovement
         href: Minecraft/UnderwaterMovement.md
-      - name: BlockLocation
-        href: Minecraft/BlockLocation.md
-      - name: Location
-        href: Minecraft/Location.md
+      - name: WeatherChangedEvent
+        href: Minecraft/WeatherChangedEvent.md
       - name: World
         href: Minecraft/World.md

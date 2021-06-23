@@ -34,11 +34,11 @@ ms.prod: gaming
 "minecraft:equippable":{
     "slots": [
         {
-            "accepted_items": [],
-            "interact_text": ,
-            "item": ,
-            "on_equip": ,
-            "on_unequip": ,
+            "accepted_items": ["iron_sword"],
+            "interact_text": "Bring me my sword!" ,
+            "item": "iron_sword" ,
+            "on_equip": "minecraft:celebrate",
+            "on_unequip": "minecraft:become_sad",
             "slot": 0
         }
     ]

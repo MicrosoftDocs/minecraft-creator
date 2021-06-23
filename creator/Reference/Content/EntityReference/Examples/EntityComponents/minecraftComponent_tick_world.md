@@ -29,6 +29,8 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-
+No entities currently use `minecraft:tick_world`
 
 ## Vanilla entities using `minecraft:tick_world`
+
+No entities currently use `minecraft:tick_world`

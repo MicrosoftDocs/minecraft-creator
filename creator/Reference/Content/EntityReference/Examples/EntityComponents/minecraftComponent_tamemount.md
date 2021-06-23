@@ -43,13 +43,13 @@ ms.prod: gaming
 ```json
 "minecraft:tamemount":{
     "attempt_temper_mod": 5,
-    "autoRejectItems": ,
-    "feed_items": ,
-    "feed_text": ,
+    "autoRejectItems": "fish",
+    "feed_items": "carrot" ,
+    "feed_text": "I love carrots!",
     "max_temper": 100,
     "min_temper": 0,
-    "ride_text": ,
-    "tame_event": ,
+    "ride_text": "Thank you for the carrots! Let's go!",
+    "tame_event": "minecraft:celebrate",
 }
 ```
 

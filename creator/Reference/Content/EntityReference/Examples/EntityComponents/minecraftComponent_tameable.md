@@ -7,6 +7,7 @@ ms.prod: gaming
 # minecraft:tameable
 
 `minecraft:tameable` defines the rules for a mob to be tamed by the player.
+
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
@@ -14,6 +15,7 @@ ms.prod: gaming
 | probability| 1| Decimal| The chance of taming the entity with each item use between 0.0 and 1.0, where 1.0 is 100% |
 | tame_event| *not set*| String| Event to run when this entity becomes tamed |
 | tame_items| *not set*| List| The list of items that can be used to tame this entity |
+
 ## Example
 
 ```json
