@@ -14,7 +14,7 @@ A **resource pack** is a folder structure that will contain all of your custom m
 In this tutorial, you will learn the following:
 
 > [!div class="checklist"]
-> - Understand how a **resource pack** is created. 
+> - Understand how a **resource pack** is created.
 > - How a **manifest file** is created.
 > - How custom textures are loaded into Minecraft.
 > - The concept of * pack Stacking** when working with Add-On content.
@@ -59,7 +59,7 @@ Since the file is written in JSON, Minecraft will be able to parse the informati
 ```json
 	{
 	  "format_version": 2,
-	  "header": {    
+	  "header": {
         "description": "My First Add-On!",
 	    "name": "Hello WorldRP",
 	    "uuid":"",
@@ -115,6 +115,11 @@ Now that the folder structure is created, you can now place your custom textures
 1. Set the **Width** and **Height** to **16 pixels** each.
 
 You can now design a pattern or any artwork in the editor. In this example, a simple fill color has been added.
+
+> [!IMPORTANT]
+> While MS Paint is used for this example for it's quick and easy access, there are a few drawbacks as well.
+> - MS Paint does *not* support alpha channels that are commonly used for transparency effects in Minecraft.
+> - MS Paint does *not* support .tga files types.
 
 1. When done with your texture, select **File** and then select **Save As a PNG**.
 1. Navigate to the **blocks** folder.

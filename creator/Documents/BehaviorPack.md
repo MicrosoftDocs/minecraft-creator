@@ -52,7 +52,7 @@ In order to load a behavior pack into Minecraft, a manifest file will need to be
 ```json
 {
   "format_version": 2,
-  "heSader": {
+  "header": {
     "description": "My First Add-On!",
     "name": "HelloWorldBP",
     "uuid":"",
@@ -100,7 +100,7 @@ Below is an example of what the completed Behavior Pack Manifest File will look 
     "version": [1, 0, 0],
     "min_engine_version": [1, 16, 0]
   },
-  "modules": 
+  "modules":
     [
       {
         "description": "My First Add-On!",
@@ -251,7 +251,7 @@ In order for the cow to attack, it will need to find a target that can be attack
 "minecraft:behavior.nearest_attackable_target":{
     "priority": 2,
     "must_see": true,
-    "reselect_targets": true, 
+    "reselect_targets": true,
     "within_radius": 25.0,
     "entity_types": [
     {
@@ -261,7 +261,7 @@ In order for the cow to attack, it will need to find a target that can be attack
     "max_dist":32
     }
   ]
-}, 
+},
 ```
 
 In the sample above, the **`nearest_attackable_target`** is a component that handles the behavior for detecting a potential target. The component has the following flags:
