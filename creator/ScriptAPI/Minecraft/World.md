@@ -20,7 +20,6 @@ Contains a set of events that are applicable to the entirety of the world.
 
 ## Methods
 - [getDimension](#getdimension)
-- [addEventListener](#addeventlistener)
 - [getPlayers](#getplayers)
   
 ### **getDimension**
@@ -37,22 +36,6 @@ Returns [*Dimension*](Dimension.md) - The requested dimension
 
 > [!WARNING]
 > Throws if the given dimension name is invalid
-
-### **addEventListener**
-`
-addEventListener(eventName: string, callback: (arg0: Entity) => undefined): void
-`
-
-#### Arguments
-| Param | Type | Description |
-| :--- | :--- | :---: |
-| **eventName** | *string* | - |
-| **callback** | (arg0: Entity) => undefined | - |
-
-Returns *undefined*
-
-> [!WARNING]
-> This function can throw errors.
 
 ### **getPlayers**
 `

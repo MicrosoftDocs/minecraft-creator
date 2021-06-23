@@ -23,8 +23,9 @@ The type (or template) of a block. Does not contain permutation data (state) oth
 getName(): string
 `
 
+Name of the block type.
 
-Returns *string*
+Returns *string* - Block type name - for example, `minecraft:acacia_stairs`.
 
 
 ### **canBeWaterlogged**
@@ -41,7 +42,7 @@ Returns *boolean*
 createDefaultBlockPermutation(): BlockPermutation
 `
 
-Creates the default [BlockPermutation](BlockPermutation.md) for this type which uses the default values for all properties.
+Creates the default [*Minecraft.BlockPermutation*](../Minecraft/BlockPermutation.md) for this type which uses the default values for all properties.
 
 Returns [*BlockPermutation*](BlockPermutation.md) - Returns created permutation.
 
@@ -55,8 +56,8 @@ import { World, BlockTypes, BlockProperties, BlockLocation } from "Minecraft";
 
 // Create the permutation
 let bottomStoneSlab = BlockTypes.stoneSlab.createDefaultBlockPermutation();
-result.getProperty(BlockProperties.stoneSlabType).value = "stone_brick";
-result.getProperty(BlockProperties.topSlotBit).value = false;
+bottomStoneSlab.getProperty(BlockProperties.stoneSlabType).value = "stone_brick";
+bottomStoneSlab.getProperty(BlockProperties.topSlotBit).value = false;
 
 // Fetch the block
 const block = World.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3));

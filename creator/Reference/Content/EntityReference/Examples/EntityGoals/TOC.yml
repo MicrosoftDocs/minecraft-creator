@@ -1,174 +1,174 @@
 - name: AI Goals List
   href: ../AIGoalList.md
-- name: minecraft:behavior.admire_item
+- name: behavior.admire_item
   href: minecraftBehavior_admire_item.md
-- name: minecraft:behavior.barter
+- name: behavior.barter
   href: minecraftBehavior_barter.md
-- name: minecraft:behavior.beg
+- name: behavior.beg
   href: minecraftBehavior_beg.md
-- name: minecraft:behavior.break_door
+- name: behavior.break_door
   href: minecraftBehavior_break_door.md
-- name: minecraft:behavior.breed
+- name: behavior.breed
   href: minecraftBehavior_breed.md
-- name: minecraft:behavior.defend_trusted_target
+- name: behavior.defend_trusted_target
   href: minecraftBehavior_defend_trusted_target.md
-- name: minecraft:behavior.door_interact
+- name: behavior.door_interact
   href: minecraftBehavior_door_interact.md
-- name: minecraft:behavior.drink_potion
+- name: behavior.drink_potion
   href: minecraftBehavior_drink_potion.md
-- name: minecraft:behavior.eat_carried_item
+- name: behavior.eat_carried_item
   href: minecraftBehavior_eat_carried_item.md
-- name: minecraft:behavior.explore_outskirts
+- name: behavior.explore_outskirts
   href: minecraftBehavior_explore_outskirts.md
-- name: minecraft:behavior.find_cover
+- name: behavior.find_cover
   href: minecraftBehavior_find_cover.md
-- name: minecraft:behavior.flee_sun
+- name: behavior.flee_sun
   href: minecraftBehavior_flee_sun.md
-- name: minecraft:behavior.float
+- name: behavior.float
   href: minecraftBehavior_float.md
-- name: minecraft:behavior.follow_caravan
+- name: behavior.follow_caravan
   href: minecraftBehavior_follow_caravan.md
-- name: minecraft:behavior.follow_mob
+- name: behavior.follow_mob
   href: minecraftBehavior_follow_mob.md
-- name: minecraft:behavior.follow_owner
+- name: behavior.follow_owner
   href: minecraftBehavior_follow_owner.md
-- name: minecraft:behavior.follow_parent
+- name: behavior.follow_parent
   href: minecraftBehavior_follow_parent.md
-- name: minecraft:behavior.follow_target_captain
+- name: behavior.follow_target_captain
   href: minecraftBehavior_follow_target_captain.md
-- name: minecraft:behavior.go_home
+- name: behavior.go_home
   href: minecraftBehavior_go_home.md
-- name: minecraft:behavior.hide
+- name: behavior.hide
   href: minecraftBehavior_hide.md
-- name: minecraft:behavior.hold_ground
+- name: behavior.hold_ground
   href: minecraftBehavior_hold_ground.md
-- name: minecraft:behavior.hurt_by_target
+- name: behavior.hurt_by_target
   href: minecraftBehavior_hurt_by_target.md
-- name: minecraft:behavior.inspect_bookshelf
+- name: behavior.inspect_bookshelf
   href: minecraftBehavior_inspect_bookshelf.md
-- name: minecraft:behavior.jump_to_block
+- name: behavior.jump_to_block
   href: minecraftBehavior_jump_to_block.md
-- name: minecraft:behavior.knockback_roar
+- name: behavior.knockback_roar
   href: minecraftBehavior_knockback_roar.md
-- name: minecraft:behavior.lay_down
+- name: behavior.lay_down
   href: minecraftBehavior_lay_down.md
-- name: minecraft:behavior.lay_egg
+- name: behavior.lay_egg
   href: minecraftBehavior_lay_egg.md
-- name: minecraft:behavior.look_at_entity
+- name: behavior.look_at_entity
   href: minecraftBehavior_look_at_entity.md
-- name: minecraft:behavior.look_at_player
+- name: behavior.look_at_player
   href: minecraftBehavior_look_at_player.md
-- name: minecraft:behavior.look_at_target
+- name: behavior.look_at_target
   href: minecraftBehavior_look_at_target.md
-- name: minecraft:behavior.look_at_trading_player
+- name: behavior.look_at_trading_player
   href: minecraftBehavior_look_at_trading_player.md
-- name: minecraft:behavior.make_love
+- name: behavior.make_love
   href: minecraftBehavior_make_love.md
-- name: minecraft:behavior.melee_attack
+- name: behavior.melee_attack
   href: minecraftBehavior_melee_attack.md
-- name: minecraft:behavior.mount_pathing
+- name: behavior.mount_pathing
   href: minecraftBehavior_mount_pathing.md
-- name: minecraft:behavior.move_indoors
+- name: behavior.move_indoors
   href: minecraftBehavior_move_indoors.md
-- name: minecraft:behavior.move_through_village
+- name: behavior.move_through_village
   href: minecraftBehavior_move_through_village.md
-- name: minecraft:behavior.move_to_land
+- name: behavior.move_to_land
   href: minecraftBehavior_move_to_land.md
-- name: minecraft:behavior.move_to_lava
+- name: behavior.move_to_lava
   href: minecraftBehavior_move_to_lava.md
-- name: minecraft:behavior.move_to_poi
+- name: behavior.move_to_poi
   href: minecraftBehavior_move_to_poi.md
-- name: minecraft:behavior.move_to_random_block
+- name: behavior.move_to_random_block
   href: minecraftBehavior_move_to_random_block.md
-- name: minecraft:behavior.move_to_village
+- name: behavior.move_to_village
   href: minecraftBehavior_move_to_village.md
-- name: minecraft:behavior.move_to_water
+- name: behavior.move_to_water
   href: minecraftBehavior_move_to_water.md
-- name: minecraft:behavior.move_towards_target
+- name: behavior.move_towards_target
   href: minecraftBehavior_move_towards_target.md
-- name: minecraft:behavior.nearest_attackable_target
+- name: behavior.nearest_attackable_target
   href: minecraftBehavior_nearest_attackable_target.md
-- name: minecraft:behavior.nearest_prioritized_attackable_target
+- name: behavior.nearest_prioritized_attackable_target
   href: minecraftBehavior_nearest_prioritized_attackable_target.md
-- name: minecraft:behavior.ocelot_sit_on_block
+- name: behavior.ocelot_sit_on_block
   href: minecraftBehavior_ocelot_sit_on_block.md
-- name: minecraft:behavior.offer_flower
+- name: behavior.offer_flower
   href: minecraftBehavior_offer_flower.md
-- name: minecraft:behavior.open_door
+- name: behavior.open_door
   href: minecraftBehavior_open_door.md
-- name: minecraft:behavior.owner_hurt_by_target
+- name: behavior.owner_hurt_by_target
   href: minecraftBehavior_owner_hurt_by_target.md
-- name: minecraft:behavior.owner_hurt_target
+- name: behavior.owner_hurt_target
   href: minecraftBehavior_owner_hurt_target.md
-- name: minecraft:behavior.panic
+- name: behavior.panic
   href: minecraftBehavior_panic.md
-- name: minecraft:behavior.peek
+- name: behavior.peek
   href: minecraftBehavior_peek.md
-- name: minecraft:behavior.pet_sleep_with_owner
+- name: behavior.pet_sleep_with_owner
   href: minecraftBehavior_pet_sleep_with_owner.md
-- name: minecraft:behavior.pickup_items
+- name: behavior.pickup_items
   href: minecraftBehavior_pickup_items.md
-- name: minecraft:behavior.play_dead
+- name: behavior.play_dead
   href: minecraftBehavior_play_dead.md
-- name: minecraft:behavior.play
+- name: behavior.play
   href: minecraftBehavior_play.md
-- name: minecraft:behavior.player_ride_tamed
+- name: behavior.player_ride_tamed
   href: minecraftBehavior_player_ride_tamed.md
-- name: minecraft:behavior.raid_garden
+- name: behavior.raid_garden
   href: minecraftBehavior_raid_garden.md
-- name: minecraft:behavior.ram_attack
+- name: behavior.ram_attack
   href: minecraftBehavior_ram_attack.md
-- name: minecraft:behavior.random_breach
+- name: behavior.random_breach
   href: minecraftBehavior_random_breach.md
-- name: minecraft:behavior.random_look_around_and_sit
+- name: behavior.random_look_around_and_sit
   href: minecraftBehavior_random_look_around_and_sit.md
-- name: minecraft:behavior.random_look_around
+- name: behavior.random_look_around
   href: minecraftBehavior_random_look_around.md
-- name: minecraft:behavior.random_sitting
+- name: behavior.random_sitting
   href: minecraftBehavior_random_sitting.md
-- name: minecraft:behavior.random_stroll
+- name: behavior.random_stroll
   href: minecraftBehavior_random_stroll.md
-- name: minecraft:behavior.restrict_open_door
+- name: behavior.restrict_open_door
   href: minecraftBehavior_restrict_open_door.md
-- name: minecraft:behavior.restrict_sun
+- name: behavior.restrict_sun
   href: minecraftBehavior_restrict_sun.md
-- name: minecraft:behavior.rise_to_liquid_level
+- name: behavior.rise_to_liquid_level
   href: minecraftBehavior_rise_to_liquid_level.md
-- name: minecraft:behavior.run_around_like_crazy
+- name: behavior.run_around_like_crazy
   href: minecraftBehavior_run_around_like_crazy.md
-- name: minecraft:behavior.scared
+- name: behavior.scared
   href: minecraftBehavior_scared.md
-- name: minecraft:behavior.silverfish_merge_with_stone
+- name: behavior.silverfish_merge_with_stone
   href: minecraftBehavior_silverfish_merge_with_stone.md
-- name: minecraft:behavior.silverfish_wake_up_friends
+- name: behavior.silverfish_wake_up_friends
   href: minecraftBehavior_silverfish_wake_up_friends.md
-- name: minecraft:behavior.snacking
+- name: behavior.snacking
   href: minecraftBehavior_snacking.md
-- name: minecraft:behavior.stay_while_sitting
+- name: behavior.stay_while_sitting
   href: minecraftBehavior_stay_while_sitting.md
-- name: minecraft:behavior.stomp_turtle_egg
+- name: behavior.stomp_turtle_egg
   href: minecraftBehavior_stomp_turtle_egg.md
-- name: minecraft:behavior.stroll_towards_village
+- name: behavior.stroll_towards_village
   href: minecraftBehavior_stroll_towards_village.md
-- name: minecraft:behavior.summon_entity
+- name: behavior.summon_entity
   href: minecraftBehavior_summon_entity.md
-- name: minecraft:behavior.swell
+- name: behavior.swell
   href: minecraftBehavior_swell.md
-- name: minecraft:behavior.take_flower
+- name: behavior.take_flower
   href: minecraftBehavior_take_flower.md
-- name: minecraft:behavior.tempt
+- name: behavior.tempt
   href: minecraftBehavior_tempt.md
-- name: minecraft:behavior.trade_interest
+- name: behavior.trade_interest
   href: minecraftBehavior_trade_interest.md
-- name: minecraft:behavior.trade_with_player
+- name: behavior.trade_with_player
   href: minecraftBehavior_trade_with_player.md
-- name: minecraft:behavior.vex_copy_owner_target
+- name: behavior.vex_copy_owner_target
   href: minecraftBehavior_vex_copy_owner_target.md
-- name: minecraft:behavior.vex_random_move
+- name: behavior.vex_random_move
   href: minecraftBehavior_vex_random_move.md
-- name: minecraft:behavior.wither_random_attack_pos_goal
+- name: behavior.wither_random_attack_pos_goal
   href: minecraftBehavior_wither_random_attack_pos_goal.md
-- name: minecraft:behavior.wither_target_highest_damage
+- name: behavior.wither_target_highest_damage
   href: minecraftBehavior_wither_target_highest_damage.md
-- name: minecraft:behavior.work
+- name: behavior.work
   href: minecraftBehavior_work.md

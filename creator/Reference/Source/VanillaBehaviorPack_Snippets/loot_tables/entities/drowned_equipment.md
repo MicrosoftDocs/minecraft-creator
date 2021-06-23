@@ -1,3 +1,10 @@
-# Drowned Equipment loot_table
+---
+author: v-josjones
+ms.author: v-josjones
+title: drowned_equipment
+ms.prod: gaming
+---
+
+# drowned_equipment
 
 :::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/drowned_equipment.json":::

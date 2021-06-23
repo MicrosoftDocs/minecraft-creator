@@ -17,7 +17,7 @@ Compares the current moon intensity with an Integer value in the range of 0 to 7
 
 ### List of moon phases
 
-Below are a list of moon phases that can be used for the `value` string.
+Below is a list of moon phases that can be used for the `value` string.
 
 |value |moon phase |
 |------|-----------|

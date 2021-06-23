@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # on_ground
 
-Returns true when the subject entity is on ground.
+Returns true when the subject entity is on the ground.
 
 ## Parameters
 

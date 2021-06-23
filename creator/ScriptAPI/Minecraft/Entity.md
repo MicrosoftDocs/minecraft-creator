@@ -29,6 +29,10 @@ Represents the state of an entity (a mob, the player, or other moving objects li
 
 
 
+### **isSneaking** - `boolean`
+
+
+
 
 ## Methods
 - [hasComponent](#hascomponent)
@@ -84,7 +88,6 @@ kill(): void
 
 Kills this entity. The entity will drop loot as normal.
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -118,7 +121,6 @@ Adds an effect, like poison, to the entity.
 | **duration** | *number* | Amount of time, in seconds, for the effect to apply. |
 | **amplifier** | *number* | Optional amplification of the effect to apply. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -139,12 +141,12 @@ villager.addEffect(Effects.poison, duration, 1);
 triggerEvent(eventName: string): void
 `
 
+Triggers an entity type event. For every entity, a number of events are defined in an entities' definition for key entity behaviors; for example, creepers have a minecraft:start_exploding type event.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **eventName** | *string* | - |
+| **eventName** | *string* | Name of the entity type event to trigger. If a namespace is not specified, minecraft: is assumed. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.

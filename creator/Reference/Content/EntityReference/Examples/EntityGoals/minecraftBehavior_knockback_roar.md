@@ -22,6 +22,9 @@ ms.prod: gaming
 |knockback_damage| 6| Integer| The damage dealt by the knockback roar. |
 |knockback_range| 4| Integer| The radius (in blocks) of the knockback effect. |
 |knockback_strength| 4| Integer| The strength of the knockback. |
+|[knockback_filters](../FilterList.md)|*not set*| Minecraft Filter| filters to use to decide what is affected by knockback roar. |
+|[damage_filters](../FilterList.md)|*not set*| Minecraft Filter| filters to use to decide what is damaged by knockback roar.|
+|on_roar_end |*not set*| String| Event to run when knockback roar has finished.|
 
 ## Example
 

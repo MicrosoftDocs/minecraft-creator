@@ -39,7 +39,6 @@ setCurrent(): void
 
 Sets the current value of movement speed on lava for the entity.
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -51,7 +50,6 @@ resetToMinValue(): void
 
 Resets the movement speed on lava speed to the minimum value.
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -63,7 +61,6 @@ resetToMaxValue(): void
 
 Resets the movement speed on lava to the maximum value for the entity.
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -75,7 +72,6 @@ resetToDefaultValue(): void
 
 Resets the current movement speed on lava for the entity to its default value.
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.

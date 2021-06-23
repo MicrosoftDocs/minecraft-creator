@@ -1,3 +1,10 @@
-# Armor Set Iron loot_table
+---
+author: v-josjones
+ms.author: v-josjones
+title: armor_set_iron
+ms.prod: gaming
+---
+
+# armor_set_iron 
 
 :::code language="json" source="../../../VanillaBehaviorPack/loot_tables/entities/armor_set_iron.json":::

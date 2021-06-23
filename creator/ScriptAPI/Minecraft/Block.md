@@ -45,7 +45,7 @@ canBeWaterlogged(): boolean
 `
 
 
-Returns *boolean*
+Returns *boolean* - Whether this particular block, based on its block type, can be waterlogged.
 
 
 ### **getBlockData**
@@ -54,7 +54,7 @@ getBlockData(): BlockPermutation
 `
 
 
-Returns [*BlockPermutation*](BlockPermutation.md)
+Returns [*BlockPermutation*](BlockPermutation.md) - Additional block configuration data that describes the block.
 
 > [!WARNING]
 > This function can throw errors.
@@ -76,7 +76,7 @@ getLocation(): BlockLocation
 `
 
 
-Returns [*BlockLocation*](BlockLocation.md)
+Returns [*BlockLocation*](BlockLocation.md) - Coordinates of the specified block.
 
 > [!WARNING]
 > This function can throw errors.
@@ -96,7 +96,7 @@ isEmpty(): boolean
 `
 
 
-Returns *boolean*
+Returns *boolean* - Whether this particular block is empty (air).
 
 
 ### **isWaterlogged**
@@ -105,7 +105,7 @@ isWaterlogged(): boolean
 `
 
 
-Returns *boolean*
+Returns *boolean* - Whether this particular block is in a waterlogged state.
 
 
 ### **hasTag**
@@ -133,12 +133,15 @@ console.log(`Block is stone: ${block.hasTag("stone")}`);
 ```
 ### **setPermutation**
 `
-setPermutation(): void
+setPermutation(permutation: BlockPermutation): void
 `
 
 Sets the block in the dimension to the state of the permutation.
+#### Arguments
+| Param | Type | Description |
+| :--- | :--- | :---: |
+| **permutation** | [*BlockPermutation*](BlockPermutation.md) | - |
 
-Returns *undefined*
 
 
 #### Examples
@@ -148,8 +151,8 @@ import { World, BlockTypes, BlockProperties, BlockLocation } from "Minecraft";
 
 // Create the permutation
 let bottomStoneSlab = BlockTypes.stoneSlab.createDefaultBlockPermutation();
-result.getProperty(BlockProperties.stoneSlabType).value = "stone_brick";
-result.getProperty(BlockProperties.topSlotBit).value = false;
+bottomStoneSlab.getProperty(BlockProperties.stoneSlabType).value = "stone_brick";
+bottomStoneSlab.getProperty(BlockProperties.topSlotBit).value = false;
 
 // Fetch the block
 const block = World.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3));
@@ -163,8 +166,8 @@ block.setPermutation(bottomStoneSlab);
 setType(): void
 `
 
+Sets the type of block.
 
-Returns *undefined*
 
 
 ### **setWaterlogged**
@@ -172,12 +175,12 @@ Returns *undefined*
 setWaterlogged(setWaterlogged: boolean): void
 `
 
+Sets the waterlogged state of the block.
 #### Arguments
 | Param | Type | Description |
 | :--- | :--- | :---: |
-| **setWaterlogged** | *boolean* | - |
+| **setWaterlogged** | *boolean* | If set to true, and if the block can be waterlogged, then the block becomes waterlogged. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.

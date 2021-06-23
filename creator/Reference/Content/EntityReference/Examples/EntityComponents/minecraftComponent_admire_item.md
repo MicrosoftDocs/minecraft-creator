@@ -21,7 +21,7 @@ ms.prod: gaming
 ```json
 "minecraft:admire_item":{
     "cooldown_after_being_attacked": 5,
-    "duration":10,
+    "duration":10
 }
 ```
 

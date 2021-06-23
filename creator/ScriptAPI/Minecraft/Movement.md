@@ -39,7 +39,6 @@ setCurrent(): void
 
 Sets the current value of default movement speed for the entity.
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -51,7 +50,6 @@ resetToMinValue(): void
 
 Resets the default movement speed to the minimum value.
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -63,7 +61,6 @@ resetToMaxValue(): void
 
 Resets the default movement speed to the maximum value for the entity.
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -75,7 +72,6 @@ resetToDefaultValue(): void
 
 Resets the current default movement speed value for the entity to the default value.
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.

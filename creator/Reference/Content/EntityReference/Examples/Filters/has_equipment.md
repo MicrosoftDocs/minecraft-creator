@@ -16,7 +16,7 @@ Tests for the presence of a named item in the designated slot of the subject ent
 |value |*not set* |String |(Required) The item name to look for |
 
 > [!NOTE]
-> `has_equipment` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
+> `has_equipment` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and domain parameters but they are optional.
 
 ### subject
 

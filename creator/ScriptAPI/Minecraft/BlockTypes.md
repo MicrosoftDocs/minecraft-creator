@@ -172,6 +172,14 @@ description: Contents of the Minecraft.BlockTypes class.
 
 
 
+### **blackCandle** - `BlockType`
+
+
+
+### **blackCandleCake** - `BlockType`
+
+
+
 ### **blackGlazedTerracotta** - `BlockType`
 
 
@@ -197,6 +205,14 @@ description: Contents of the Minecraft.BlockTypes class.
 
 
 ### **blastFurnace** - `BlockType`
+
+
+
+### **blueCandle** - `BlockType`
+
+
+
+### **blueCandleCake** - `BlockType`
 
 
 
@@ -229,6 +245,14 @@ description: Contents of the Minecraft.BlockTypes class.
 
 
 ### **brickStairs** - `BlockType`
+
+
+
+### **brownCandle** - `BlockType`
+
+
+
+### **brownCandleCake** - `BlockType`
 
 
 
@@ -269,6 +293,14 @@ description: Contents of the Minecraft.BlockTypes class.
 
 
 ### **campfire** - `BlockType`
+
+
+
+### **candle** - `BlockType`
+
+
+
+### **candleCake** - `BlockType`
 
 
 
@@ -553,6 +585,14 @@ description: Contents of the Minecraft.BlockTypes class.
 
 
 ### **cutCopperStairs** - `BlockType`
+
+
+
+### **cyanCandle** - `BlockType`
+
+
+
+### **cyanCandleCake** - `BlockType`
 
 
 
@@ -1404,7 +1444,23 @@ description: Contents of the Minecraft.BlockTypes class.
 
 
 
+### **grayCandle** - `BlockType`
+
+
+
+### **grayCandleCake** - `BlockType`
+
+
+
 ### **grayGlazedTerracotta** - `BlockType`
+
+
+
+### **greenCandle** - `BlockType`
+
+
+
+### **greenCandleCake** - `BlockType`
 
 
 
@@ -1592,7 +1648,23 @@ description: Contents of the Minecraft.BlockTypes class.
 
 
 
+### **lightBlueCandle** - `BlockType`
+
+
+
+### **lightBlueCandleCake** - `BlockType`
+
+
+
 ### **lightBlueGlazedTerracotta** - `BlockType`
+
+
+
+### **lightGrayCandle** - `BlockType`
+
+
+
+### **lightGrayCandleCake** - `BlockType`
 
 
 
@@ -1601,6 +1673,14 @@ description: Contents of the Minecraft.BlockTypes class.
 
 
 ### **lightningRod** - `BlockType`
+
+
+
+### **limeCandle** - `BlockType`
+
+
+
+### **limeCandleCake** - `BlockType`
 
 
 
@@ -1649,6 +1729,14 @@ description: Contents of the Minecraft.BlockTypes class.
 
 
 ### **loom** - `BlockType`
+
+
+
+### **magentaCandle** - `BlockType`
+
+
+
+### **magentaCandleCake** - `BlockType`
 
 
 
@@ -1768,6 +1856,14 @@ description: Contents of the Minecraft.BlockTypes class.
 
 
 
+### **orangeCandle** - `BlockType`
+
+
+
+### **orangeCandleCake** - `BlockType`
+
+
+
 ### **orangeGlazedTerracotta** - `BlockType`
 
 
@@ -1793,6 +1889,14 @@ description: Contents of the Minecraft.BlockTypes class.
 
 
 ### **packedIce** - `BlockType`
+
+
+
+### **pinkCandle** - `BlockType`
+
+
+
+### **pinkCandleCake** - `BlockType`
 
 
 
@@ -1944,6 +2048,14 @@ description: Contents of the Minecraft.BlockTypes class.
 
 
 
+### **purpleCandle** - `BlockType`
+
+
+
+### **purpleCandleCake** - `BlockType`
+
+
+
 ### **purpleGlazedTerracotta** - `BlockType`
 
 
@@ -1985,6 +2097,14 @@ description: Contents of the Minecraft.BlockTypes class.
 
 
 ### **rawIronBlock** - `BlockType`
+
+
+
+### **redCandle** - `BlockType`
+
+
+
+### **redCandleCake** - `BlockType`
 
 
 
@@ -2624,6 +2744,14 @@ description: Contents of the Minecraft.BlockTypes class.
 
 
 
+### **whiteCandle** - `BlockType`
+
+
+
+### **whiteCandleCake** - `BlockType`
+
+
+
 ### **whiteGlazedTerracotta** - `BlockType`
 
 
@@ -2653,6 +2781,14 @@ description: Contents of the Minecraft.BlockTypes class.
 
 
 ### **wool** - `BlockType`
+
+
+
+### **yellowCandle** - `BlockType`
+
+
+
+### **yellowCandleCake** - `BlockType`
 
 
 

@@ -17,7 +17,7 @@ Returns true when the subject entity receives the named damage type.
 
 ### List of Damage Types
 
-Below are a list of damage types that can be used for the `value` string.
+Below is a list of damage types that can be used for the `value` string.
 
 | Options| Description |
 |:-----------|:-----------|
