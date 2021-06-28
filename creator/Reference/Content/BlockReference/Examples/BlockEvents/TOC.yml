@@ -1,0 +1,32 @@
+ - name: Block Event Response List
+   href: ../BlockEventList.md
+ - name: add_mob_effect
+   href: minecraftBlock_add_mob_effect.md
+ - name: damage
+   href: minecraftBlock_damage.md
+ - name: decrement_stack
+   href: minecraftBlock_decrement_stack.md
+ - name: die
+   href: minecraftBlock_die.md
+ - name: play_effect
+   href: minecraftBlock_play_effect.md
+ - name: play_sound
+   href: minecraftBlock_play_sound.md
+ - name: remove_mob_effect
+   href: minecraftBlock_remove_mob_effect.md
+ - name: run_command
+   href: minecraftBlock_run_command.md
+ - name: set_block
+   href: minecraftBlock_set_block.md
+ - name: set_block_at_pos
+   href: minecraftBlock_set_block_at_pos.md
+ - name: set_block_property
+   href: minecraftBlock_set_block_property.md
+ - name: spawn_loot
+   href: minecraftBlock_spawn_loot.md
+ - name: swing
+   href: minecraftBlock_swing.md
+ - name: teleport
+   href: minecraftBlock_teleport.md
+ - name: transform_item
+   href: minecraftBlock_transform_item.md

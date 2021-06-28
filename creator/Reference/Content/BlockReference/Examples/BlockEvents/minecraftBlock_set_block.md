@@ -1,0 +1,27 @@
+---
+author: v-josjones
+ms.author: v-josjones
+title: set_block
+ms.prod: gaming
+---
+
+# set_block
+
+`set_block` is an Event Response that will set the block type to another block type.
+
+## Extra Parameters
+
+`set_block` can use the following parameters
+
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|block_type|*not set* |String| The type of block to set. |
+
+## Example
+
+```json
+"set_block":{
+    "origin": [-8.0, 0.0, -8.0],
+    "size": [16.0,16.0,16.0],
+}
+```

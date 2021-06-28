@@ -58,6 +58,8 @@
             href: Reference/Content/blockreference/index.yml
           - name: Block Components
             href: Reference/Content/blockreference/Examples/BlockComponentsList.md
+          - name: Block Event Responses
+            href: Reference/Content/blockreference/Examples/BlockEvents/TOC.yml
         - name: Spawn Rules
           href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/DataDrivenSpawning.md
       - name: Resource Pack
