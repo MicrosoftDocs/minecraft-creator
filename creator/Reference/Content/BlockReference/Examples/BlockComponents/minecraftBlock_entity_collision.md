@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:entity_collision
 
-`minecraft:entity_collision` is a component controlled by a boolean that disables the collision of the block with entities.
+`minecraft:entity_collision` is a component controlled by a `boolean` that disables the collision of the block with entities.
 
 > [!IMPORTANT]
 > `minecraft:entity_collision` can **only** be set to `false`.

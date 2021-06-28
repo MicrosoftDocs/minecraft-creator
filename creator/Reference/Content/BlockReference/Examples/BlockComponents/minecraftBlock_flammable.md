@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:flammable
 
-`minecraft:flammable` is a component controlled by a JSON object that contains the flammable properties for this block.
+`minecraft:flammable` is a component controlled by a `JSON object` that contains the flammable properties for this block.
 
 ## Extra Parameters
 

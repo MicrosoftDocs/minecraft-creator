@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:pick_collision
 
-`minecraft:pick_collision` is a component controlled by a boolean that disables the collision of the block with entities.
+`minecraft:pick_collision` is a component controlled by a `boolean` that disables the collision of the block with entities.
 
 > [!IMPORTANT]
 > `minecraft:pick_collision` can **only** be set to `false`.

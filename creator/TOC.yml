@@ -57,7 +57,7 @@
           - name: Block Documentation Homepage
             href: Reference/Content/blockreference/index.yml
           - name: Block Components
-            href: Reference/Content/blockreference/Examples/BlockComponentsList.md
+            href: Reference/Content/blockreference/Examples/BlockComponents/TOC.yml
           - name: Block Event Responses
             href: Reference/Content/blockreference/Examples/BlockEvents/TOC.yml
         - name: Spawn Rules

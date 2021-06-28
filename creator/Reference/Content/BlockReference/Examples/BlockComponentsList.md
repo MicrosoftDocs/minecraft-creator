@@ -13,10 +13,10 @@ Below is a list of all the available Block Components within Minecraft:Bedrock E
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|minecraft:block_light_absorption| 0| Integer|  The amount of light this block will absorb. |
-| minecraft:breathability| solid| Enumerator|  Property describing the breathability of this block and whether it is treated as a solid or as air. |
-|minecraft:destroy_time| 0.0| Decimal| Sets the destroy time property for the block. Greater numbers result in greater mining times. |
-|minecraft:display_name|*not set* | String|  Specifies the display name id for the block.|
+|[minecraft:block_light_absorption](BlockComponents/minecraftBlock_block_light_absorption.md)| 0| Integer|  The amount of light this block will absorb. |
+|[minecraft:breathability](BlockComponents/minecraftBlock_breathability.md)| solid| Enumerator|  Property describing the breathability of this block and whether it is treated as a solid or as air. |
+|[minecraft:destroy_time](BlockComponents/minecraftBlock_destroy_time.md)| 0.0| Decimal| Sets the destroy time property for the block. Greater numbers result in greater mining times. |
+|[minecraft:display_name](BlockComponents/minecraftBlock_display_name.md)|*not set* | String|  Specifies the display name id for the block.|
 |[minecraft:entity_collision](../BlockComponents/minecratBlocks_entity_collision.md)| false| Boolean|  Can only be set to false, it disables the collision of the block with entities.|
 |minecraft:explosion_resistance| 0.0| Decimal|  Sets the explosion resistance for this block. |
 |[minecraft:flammable](../BlockComponents/minecraftBlocks_flammable.md)|*not set* | JSON Object| Describes the flammable properties for this block.|
