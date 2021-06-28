@@ -38,6 +38,17 @@ landingContent:
           - text: "minecraft:random_ticking"
             url: Examples/BlockComponents/minecraftBlock_random_ticking.md
   # Card (optional)
+  - title: Block Trigger
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Block Trigger List
+            url: Examples/BlockTriggerList.md
+          - text: "minecraft:on_fall_on"
+            url: Examples/BlockTriggers/minecraftBlock_on_fall_on.md
+          - text: "minecraft:on_interact"
+            url: Examples/BlockTriggers/minecraftBlock_on_interact.md
+  # Card (optional)
   - title: Block Event Responses
     linkLists:
       - linkListType: reference
