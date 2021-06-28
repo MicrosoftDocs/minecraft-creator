@@ -32,7 +32,6 @@ Sets this rideable entity as tamed.
 | :--- | :--- | :---: |
 | **showParticles** | *boolean* | Whether to show effect particles when this entity is tamed. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.

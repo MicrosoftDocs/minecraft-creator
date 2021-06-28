@@ -13,10 +13,6 @@ description: Contents of the Minecraft.ChatEvent class.
 An event that fires as players enter chat messages.
 
 ## Properties
-### **canceled** - `boolean`
-If set to true in a beforeChat event handler, this message is not broadcast out.
-
-
 ### **message** - `string`
 Message that is being broadcast. In a beforeChat event handler, _message_ can be updated with edits before the message is displayed to players.
 

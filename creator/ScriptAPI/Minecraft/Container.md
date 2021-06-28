@@ -17,16 +17,6 @@ Represents a container that can hold sets of items. Used with entities such as P
 Represents the size of the container. For example, a standard single-block chest has a size of 27, for the 27 slots in their inventory.
 
 
-#### Examples
-##### ***size.js***
-```javascript
-rightChestBlock.setType(BlockTypes.chest);
-const rightChestInventoryComp = rightChestBlock.getComponent("inventory");
-const rightChestContainer = rightChestInventoryComp.container;
-
-test.assert(rightChestContainer.size === 27, "Unexpected size: " + rightChestContainer.size);
-
-```
 ### **emptySlotsCount** - `number`
 Contains a count of the slots in the container that are empty.
 
@@ -51,7 +41,6 @@ Sets an item stack within a particular slot.
 | **slot** | *number* | Zero-based index of the slot to set an item at. |
 | **itemStack** | [*ItemStack*](ItemStack.md) | Stack of items to place within the specified slot. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -91,7 +80,6 @@ Adds an item to the specified container. Item will be placed in the first availa
 | :--- | :--- | :---: |
 | **itemStack** | [*ItemStack*](ItemStack.md) | The stack of items to add. |
 
-Returns *undefined*
 
 > [!WARNING]
 > This function can throw errors.

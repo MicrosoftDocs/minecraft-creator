@@ -20,7 +20,7 @@ description: Contents of the GameTest module
 ## Functions
 ### **register**
 `
-register(testClassName: string, testName: string, testFunction: (arg0: Helper) => undefined): RegistrationBuilder
+register(testClassName: string, testName: string, testFunction: (arg: Helper) => undefined): RegistrationBuilder
 `
 
 Registers a new GameTest function. This GameTest will become available in Minecraft via /gametest run [testClassName]:[testName].
@@ -29,9 +29,9 @@ Registers a new GameTest function. This GameTest will become available in Minecr
 | :--- | :--- | :---: |
 | **testClassName** | *string* | Name of the class of tests this test should be a part of. |
 | **testName** | *string* | Name of this specific test. |
-| **testFunction** | (arg0: Helper) => undefined | Implementation of the test function. |
+| **testFunction** | (arg: Helper) => undefined | Implementation of the test function. |
 
-Returns [*RegistrationBuilder*](RegistrationBuilder.md) - Returns a [RegistrationBuilder](RegistrationBuilder.md) object where additional options for this test can be specified via builder methods.
+Returns [*RegistrationBuilder*](RegistrationBuilder.md) - Returns a [*GameTest.RegistrationBuilder*](../GameTest/RegistrationBuilder.md) object where additional options for this test can be specified via builder methods.
 
 
 #### Examples

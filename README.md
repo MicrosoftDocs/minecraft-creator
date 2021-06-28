@@ -1,9 +1,10 @@
-Welcome to [Minecraft Bedrock documentation](https://docs.microsoft.com/minecraft/creator). Learn how to customize Minecraft Bedrock Edition through Add-ons.
+Welcome to [Minecraft Bedrock documentation](https://docs.microsoft.com/minecraft/creator). Learn how to customize Minecraft: Bedrock Edition through Add-ons.
 
 ## Contributing
 
 This project welcomes contributions and suggestions. New contributors should check out our more detailed contribution guidelines:
-- Contribution Guidelines
+- [Contributing to Minecraft Bedrock Documentation](https://docs.microsoft.com/minecraft/creator/documents/contributorguide)
+- [Contributor Style Guide](https://docs.microsoft.com/minecraft/creator/documents/styleguide)
 
 For docs-related issues, use the footers at the bottom of each doc, or submit directly to [MicrosoftDocs/minecraft-creator](https://github.com/MicrosoftDocs/minecraft-creator/issues)
 
