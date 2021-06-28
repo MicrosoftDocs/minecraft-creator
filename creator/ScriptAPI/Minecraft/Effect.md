@@ -12,28 +12,17 @@ description: Contents of the Minecraft.Effect class.
 
 Represents an effect - like poison - that has been added to an Entity.
 
-
-## Methods
-- [getAmplifier](#getamplifier)
-- [getDuration](#getduration)
-  
-### **getAmplifier**
-`
-getAmplifier(): number
-`
-
+## Properties
+### **amplifier** - `number`
 Gets an amplifier that may have been applied to this effect. Sample values range typically from 0 to 4. Example: The effect 'Jump Boost II' will have an amplifier value of 1.
 
-Returns *number* - Amplifier amount for this effect.
 
-
-### **getDuration**
-`
-getDuration(): number
-`
-
+### **duration** - `number`
 Gets the entire specified duration, in seconds, of this effect.
 
-Returns *number* - Duration of the effect.
+
+### **displayName** - `string`
+Gets the player-friendly name of this effect.
+
 
 

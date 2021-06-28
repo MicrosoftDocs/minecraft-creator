@@ -10,7 +10,7 @@ description: Contents of the Minecraft.BlockPermutation class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 
-Contains the combination of type [BlockType](BlockType.md) and properties (also sometimes called block state) which describe a block (but does not belong to a specific [Block](Block.md)). This type was introduced as of version 1.17.10.21.
+Contains the combination of type [*Minecraft.BlockType*](../Minecraft/BlockType.md) and properties (also sometimes called block state) which describe a block (but does not belong to a specific [*Minecraft.Block*](../Minecraft/Block.md)). This type was introduced as of version 1.17.10.21.
 
 
 ## Methods
@@ -26,6 +26,7 @@ Contains the combination of type [BlockType](BlockType.md) and properties (also 
 clone(): BlockPermutation
 `
 
+Creates a copy of this permutation.
 
 Returns [*BlockPermutation*](BlockPermutation.md) - A copy of the permutation.
 
@@ -62,8 +63,8 @@ import { World, BlockTypes, BlockProperties, BlockLocation } from "Minecraft";
 
 // Create the permutation
 let bottomStoneSlab = BlockTypes.stoneSlab.createDefaultBlockPermutation();
-result.getProperty(BlockProperties.stoneSlabType).value = "stone_brick";
-result.getProperty(BlockProperties.topSlotBit).value = false;
+bottomStoneSlab.getProperty(BlockProperties.stoneSlabType).value = "stone_brick";
+bottomStoneSlab.getProperty(BlockProperties.topSlotBit).value = false;
 
 // Fetch the block
 const block = World.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3));
@@ -88,7 +89,7 @@ getType(): BlockType
 `
 
 
-Returns [*BlockType*](BlockType.md) - The [BlockType](BlockType.md) that the permutation has.
+Returns [*BlockType*](BlockType.md) - The [*Minecraft.BlockType*](../Minecraft/BlockType.md) that the permutation has.
 
 > [!WARNING]
 > This function can throw errors.

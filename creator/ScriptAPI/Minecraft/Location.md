@@ -10,7 +10,7 @@ description: Contents of the Minecraft.Location class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs.
 
-Contains a location description that is useful for entities and other items. X, Y, and Z can contain decimal fractions. For integer-based locations useful for blocks, see [BlockLocation](BlockLocation.md).
+Contains a location description that is useful for entities and other items. X, Y, and Z can contain decimal fractions. For integer-based locations useful for blocks, see [*Minecraft.BlockLocation*](../Minecraft/BlockLocation.md).
 
 ## Properties
 ### **x** - `number`

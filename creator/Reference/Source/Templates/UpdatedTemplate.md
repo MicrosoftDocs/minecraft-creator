@@ -5,12 +5,7 @@ title: minecraft:behavior.Name of Behavior
 ms.prod: gaming
 ---
 
-:::code language="markdown" source="entity.md" id="minecraft:shooter":::
-
-
 ## Parameters
-
-:::code language="markdown" source="entity.md" id="minecraft:shareables_table":::
 
 ## Example
 

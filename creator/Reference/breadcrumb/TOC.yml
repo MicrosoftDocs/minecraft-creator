@@ -5,3 +5,6 @@
   - name: Entity Documentation
     tocHref: /creator/reference/content/entityreference/
     topicHref: /creator/reference/content/entityreference/index
+  - name: Block Documentation
+    tocHref: /creator/reference/content/blockreference/
+    topicHref: /creator/reference/content/blockreference/index

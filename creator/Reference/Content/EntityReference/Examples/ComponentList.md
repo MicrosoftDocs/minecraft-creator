@@ -2,7 +2,7 @@
 author: v-josjones
 ms.author: v-josjones
 title: Component List
-description: 
+description:
 ms.prod: gaming
 ---
 
@@ -81,6 +81,7 @@ Below is a list of all the available Components within Minecraft:Bedrock Edition
 |[minecraft:navigation.hover](EntityComponents/minecraftComponent_navigation.hover.md) |`minecraft:navigation.hover` allows this entity to generate paths in the air like the vanilla Bees do. Keeps them from falling out of the skies and doing predictive movement.|
 |[minecraft:navigation.swim](EntityComponents/minecraftComponent_navigation.swim.md) |`minecraft:navigation.swim` allows this entity to generate paths that include water.|
 |[minecraft:navigation.walk](EntityComponents/minecraftComponent_navigation.walk.md) |`minecraft:navigation.walk` allows this entity to generate paths by walking around and jumping up and down a block like regular mobs.|
+|[minecraft:out_of_control](EntityComponents/minecraftComponent_out_of_control.md) |`minecraft:out_of_control` defines the entity's 'out of control' state.|
 |[minecraft:peek](EntityComponents/minecraftComponent_peek.md) |`minecraft:peek` defines the entity's `peek` behavior, defining the events that should be called during it.|
 |[minecraft:persistent](EntityComponents/minecraftComponent_persistent.md) |`minecraft:persistent` defines whether an entity should be persistent in the game world.|
 |[minecraft:physics](EntityComponents/minecraftComponent_physics.md) |`minecraft:physics` defines physics properties of an entity, including if it is affected by gravity or if it collides with objects.|

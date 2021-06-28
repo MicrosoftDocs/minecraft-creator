@@ -3,7 +3,7 @@
     - name: "Minecraft: Bedrock Documentation Homepage"
       href: index.yml
     - name: Tutorials
-      items: 
+      items:
         - name: Adding Content
           items:
             - name: Getting Started
@@ -16,7 +16,7 @@
               href: Documents/CustomBlock.md
             - name: Introduction to the Caves & Cliffs Entities
               href: Documents/CavesAndCliffsEntities.md
-        - name: Commands and Command Blocks 
+        - name: Commands and Command Blocks
           items:
           - name: Getting Started with Commands
             href: Documents/CommandBlocks.md
@@ -28,9 +28,9 @@
             href: Documents/GameTestBuildYourFirstGameTest.md
     - name: Reference Documentation
       items:
-      - name: GameTest API 
+      - name: GameTest API
         href: ScriptAPI/TOC.yml
-      - name: Behavior Pack 
+      - name: Behavior Pack
         items:
         - name: Entity JSON
           items:
@@ -52,6 +52,12 @@
             href: Reference/Content/entityreference/Examples/EntityEvents/TOC.yml
           - name: ID Lists
             href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/IDLists.md
+        - name: Block JSON
+          items:
+          - name: Block Documentation Homepage
+            href: Reference/Content/blockreference/index.yml
+          - name: Block Components
+            href: Reference/Content/blockreference/Examples/BlockComponentsList.md
         - name: Spawn Rules
           href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/DataDrivenSpawning.md
       - name: Resource Pack
@@ -59,7 +65,7 @@
         - name: Client Entity JSON
           href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/ClientEntityDocumentationIntroduction.md
     - name: Contribute
-      items: 
+      items:
       - name: "Contributing to Minecraft: Bedrock Documentation"
         href: Documents/ContributorGuide.md
       - name: Contributor Style Guide

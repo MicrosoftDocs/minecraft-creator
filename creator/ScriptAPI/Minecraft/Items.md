@@ -3852,6 +3852,142 @@ description: Contents of the Minecraft.Items class.
 
 
 
+### **minecraft:candle** - `ItemType`
+
+
+
+### **candle** - `ItemType`
+
+
+
+### **minecraft:white_candle** - `ItemType`
+
+
+
+### **whiteCandle** - `ItemType`
+
+
+
+### **minecraft:orange_candle** - `ItemType`
+
+
+
+### **orangeCandle** - `ItemType`
+
+
+
+### **minecraft:magenta_candle** - `ItemType`
+
+
+
+### **magentaCandle** - `ItemType`
+
+
+
+### **minecraft:light_blue_candle** - `ItemType`
+
+
+
+### **lightBlueCandle** - `ItemType`
+
+
+
+### **minecraft:yellow_candle** - `ItemType`
+
+
+
+### **yellowCandle** - `ItemType`
+
+
+
+### **minecraft:lime_candle** - `ItemType`
+
+
+
+### **limeCandle** - `ItemType`
+
+
+
+### **minecraft:pink_candle** - `ItemType`
+
+
+
+### **pinkCandle** - `ItemType`
+
+
+
+### **minecraft:gray_candle** - `ItemType`
+
+
+
+### **grayCandle** - `ItemType`
+
+
+
+### **minecraft:light_gray_candle** - `ItemType`
+
+
+
+### **lightGrayCandle** - `ItemType`
+
+
+
+### **minecraft:cyan_candle** - `ItemType`
+
+
+
+### **cyanCandle** - `ItemType`
+
+
+
+### **minecraft:purple_candle** - `ItemType`
+
+
+
+### **purpleCandle** - `ItemType`
+
+
+
+### **minecraft:blue_candle** - `ItemType`
+
+
+
+### **blueCandle** - `ItemType`
+
+
+
+### **minecraft:brown_candle** - `ItemType`
+
+
+
+### **brownCandle** - `ItemType`
+
+
+
+### **minecraft:green_candle** - `ItemType`
+
+
+
+### **greenCandle** - `ItemType`
+
+
+
+### **minecraft:red_candle** - `ItemType`
+
+
+
+### **redCandle** - `ItemType`
+
+
+
+### **minecraft:black_candle** - `ItemType`
+
+
+
+### **blackCandle** - `ItemType`
+
+
+
 ### **minecraft:element_0** - `ItemType`
 
 
@@ -5140,6 +5276,14 @@ description: Contents of the Minecraft.Items class.
 
 
 
+### **minecraft:black_candle_cake** - `ItemType`
+
+
+
+### **blackCandleCake** - `ItemType`
+
+
+
 ### **minecraft:black_glazed_terracotta** - `ItemType`
 
 
@@ -5177,6 +5321,14 @@ description: Contents of the Minecraft.Items class.
 
 
 ### **blackstoneWall** - `ItemType`
+
+
+
+### **minecraft:blue_candle_cake** - `ItemType`
+
+
+
+### **blueCandleCake** - `ItemType`
 
 
 
@@ -5233,6 +5385,14 @@ description: Contents of the Minecraft.Items class.
 
 
 ### **brickStairs** - `ItemType`
+
+
+
+### **minecraft:brown_candle_cake** - `ItemType`
+
+
+
+### **brownCandleCake** - `ItemType`
 
 
 
@@ -5305,6 +5465,14 @@ description: Contents of the Minecraft.Items class.
 
 
 ### **item.campfire** - `ItemType`
+
+
+
+### **minecraft:candle_cake** - `ItemType`
+
+
+
+### **candleCake** - `ItemType`
 
 
 
@@ -5689,6 +5857,14 @@ description: Contents of the Minecraft.Items class.
 
 
 ### **crimsonWallSign** - `ItemType`
+
+
+
+### **minecraft:cyan_candle_cake** - `ItemType`
+
+
+
+### **cyanCandleCake** - `ItemType`
 
 
 
@@ -6332,11 +6508,27 @@ description: Contents of the Minecraft.Items class.
 
 
 
+### **minecraft:gray_candle_cake** - `ItemType`
+
+
+
+### **grayCandleCake** - `ItemType`
+
+
+
 ### **minecraft:gray_glazed_terracotta** - `ItemType`
 
 
 
 ### **grayGlazedTerracotta** - `ItemType`
+
+
+
+### **minecraft:green_candle_cake** - `ItemType`
+
+
+
+### **greenCandleCake** - `ItemType`
 
 
 
@@ -6652,11 +6844,27 @@ description: Contents of the Minecraft.Items class.
 
 
 
+### **minecraft:light_blue_candle_cake** - `ItemType`
+
+
+
+### **lightBlueCandleCake** - `ItemType`
+
+
+
 ### **minecraft:light_blue_glazed_terracotta** - `ItemType`
 
 
 
 ### **lightBlueGlazedTerracotta** - `ItemType`
+
+
+
+### **minecraft:light_gray_candle_cake** - `ItemType`
+
+
+
+### **lightGrayCandleCake** - `ItemType`
 
 
 
@@ -6673,6 +6881,14 @@ description: Contents of the Minecraft.Items class.
 
 
 ### **lightningRod** - `ItemType`
+
+
+
+### **minecraft:lime_candle_cake** - `ItemType`
+
+
+
+### **limeCandleCake** - `ItemType`
 
 
 
@@ -6737,6 +6953,14 @@ description: Contents of the Minecraft.Items class.
 
 
 ### **lodestone** - `ItemType`
+
+
+
+### **minecraft:magenta_candle_cake** - `ItemType`
+
+
+
+### **magentaCandleCake** - `ItemType`
 
 
 
@@ -6948,6 +7172,14 @@ description: Contents of the Minecraft.Items class.
 
 
 
+### **minecraft:orange_candle_cake** - `ItemType`
+
+
+
+### **orangeCandleCake** - `ItemType`
+
+
+
 ### **minecraft:orange_glazed_terracotta** - `ItemType`
 
 
@@ -6993,6 +7225,14 @@ description: Contents of the Minecraft.Items class.
 
 
 ### **packedIce** - `ItemType`
+
+
+
+### **minecraft:pink_candle_cake** - `ItemType`
+
+
+
+### **pinkCandleCake** - `ItemType`
 
 
 
@@ -7236,6 +7476,14 @@ description: Contents of the Minecraft.Items class.
 
 
 
+### **minecraft:purple_candle_cake** - `ItemType`
+
+
+
+### **purpleCandleCake** - `ItemType`
+
+
+
 ### **minecraft:purple_glazed_terracotta** - `ItemType`
 
 
@@ -7305,6 +7553,14 @@ description: Contents of the Minecraft.Items class.
 
 
 ### **rawIronBlock** - `ItemType`
+
+
+
+### **minecraft:red_candle_cake** - `ItemType`
+
+
+
+### **redCandleCake** - `ItemType`
 
 
 
@@ -8276,6 +8532,14 @@ description: Contents of the Minecraft.Items class.
 
 
 
+### **minecraft:white_candle_cake** - `ItemType`
+
+
+
+### **whiteCandleCake** - `ItemType`
+
+
+
 ### **minecraft:white_glazed_terracotta** - `ItemType`
 
 
@@ -8313,6 +8577,14 @@ description: Contents of the Minecraft.Items class.
 
 
 ### **woodenPressurePlate** - `ItemType`
+
+
+
+### **minecraft:yellow_candle_cake** - `ItemType`
+
+
+
+### **yellowCandleCake** - `ItemType`
 
 
 
