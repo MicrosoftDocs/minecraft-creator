@@ -20,7 +20,7 @@ ms.prod: gaming
 | random_damage_range | [0 , 0] | Integer | The range of damage that may cause the mob to start playing dead. Damage taken below the minimum value will never cause the mob to start playing dead. Damage taken above the maximum value will always cause the mob to start playing dead. |
 | damage_sources | *not set* | String | The list of Entity Damage Sources that will cause this mob to start playing dead. |
 | apply_regeneration | false | Boolean | Whether the mob will receive the effect of CombatRegeneration while playing dead. |
-| filter | *not set* | String | The list of other triggers that are required for the mob to start playing dead. |
+| filters | *not set* | String | The list of other triggers that are required for the mob to start playing dead. |
 
 ## Example
 
