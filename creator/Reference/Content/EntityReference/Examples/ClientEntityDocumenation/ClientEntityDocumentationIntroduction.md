@@ -12,7 +12,7 @@ Client entity definitions are contained within a Resource Pack.
 > [!TIP]
 > If this is your first time learning about Entities within Minecraft: Bedrock Edition, please feel free to check out our tutorial [Introduction to Behavior Packs](../../../../../Documents/BehaviorPack.md) to learn about all the files that go into how an Entity functions within Minecraft.
 
-To start, create a new folder and name it "entity" inside the root of the Resource Pack. In the entity folder create a JSON file and give it a name.The JSON file needs a format version and minecraft:client_entity information.
+To start, create a new folder and name it "entity" inside the root of the Resource Pack. In the entity folder create a JSON file and give it a name. The JSON file needs a format version and minecraft:client_entity information.
 
 The minecraft:client_entity section contains the description for the entity. Under description there are a number of things that you can set for an entity. Generally, this file is defining what resources a mob requires and gives a friendly name to each, that the other definition files can use.
 
@@ -62,7 +62,7 @@ The `identifier` value of the entity(materials, textures, geometry, etc.) The ma
 
 ## Min_engine_version
 
-The `min_engine_version` value is for which the top resource pack was built.If a definition's `min_engine_version` is newer than that pack's engine version then the definition is not parsed.
+The `min_engine_version` value is for which the top resource pack was built. If a definition's `min_engine_version` is newer than that pack's engine version then the definition is not parsed.
 Multiple definition files may use the same identifier, in which case only one of those definitions will be loaded. The definition with the same or closest and not greater `min_engine_version`, as compared to the top resource pack's engine version, will be parsed; all other definitions with the same identifier will not be parsed.
 This can be useful for continuing to support an older version of an entity, when an older resource pack is used at the top of the resource pack stack, while also supporting a newer version of the entity in all other cases.
 
@@ -72,7 +72,7 @@ Players must set user defined names for them. These names are used in the Render
 
 ## Scripts
 
-This value than can be used over and over again without the need to constantly recompute the calculations. Scripts currently support pre - animation and scale.More script types will be added later.
+This value than can be used over and over again without the need to constantly recompute the calculations. Scripts currently support pre-animation and scale. More script types will be added later.
 -Pre-animation scripts are evaluated immediately before animations are processed.
 -Scale sets the scale of the mob's geometry.
 
