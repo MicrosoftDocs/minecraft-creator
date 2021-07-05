@@ -62,6 +62,12 @@
             href: Reference/Content/blockreference/Examples/BlockTriggers/TOC.yml
           - name: Block Event Responses
             href: Reference/Content/blockreference/Examples/BlockEvents/TOC.yml
+        - name: Item JSON
+          items:
+          - name: Item Documentation Homepage
+            href: Reference/Content/itemreference/index.yml
+          - name: Item Components
+            href: Reference/Content/itemreference/Examples/ItemComponents/TOC.yml
         - name: Spawn Rules
           href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/DataDrivenSpawning.md
       - name: Resource Pack

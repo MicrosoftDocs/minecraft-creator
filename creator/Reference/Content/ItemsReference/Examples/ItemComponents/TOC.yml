@@ -1,0 +1,42 @@
+ - name: Item Component List
+   href: ../ItemComponentList.md
+ - name: armor
+   href: minecraft_armor.md
+ - name: block_placer
+   href: minecraft_block_placer.md
+ - name: cooldown
+   href: minecraft_cooldown.md
+ - name: digger
+   href: minecraft_digger.md
+ - name: display_name
+   href: minecraft_display_name.md
+ - name: durability
+   href: minecraft_durability.md
+ - name: dye_powder
+   href: minecraft_dye_powder.md
+ - name: entity_placer
+   href: minecraft_entity_placer.md
+ - name: food
+   href: minecraft_food.md
+ - name: fuel
+   href: minecraft_fuel.md
+ - name: knockback_resistance
+   href: minecraft_knockback_resistance.md
+ - name: on_use
+   href: minecraft_on_use.md
+ - name: on_use_on
+   href: minecraft_on_use_on.md
+ - name: projectile
+   href: minecraft_projectile.md
+ - name: render_offsets
+   href: minecraft_render_offsets.md
+ - name: repairable
+   href: minecraft_repairable.md
+ - name: shooter
+   href: minecraft_shooter.md
+ - name: throwable
+   href: minecraft_throwable.md
+ - name: weapon
+   href: minecraft_weapon.md
+ - name: wearable
+   href: minecraft_wearable.md

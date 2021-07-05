@@ -8,3 +8,6 @@
   - name: Block Documentation
     tocHref: /creator/reference/content/blockreference/
     topicHref: /creator/reference/content/blockreference/index
+  - name: Item Documentation
+    tocHref: /creator/reference/content/itemreference/
+    topicHref: /creator/reference/content/itemreference/index
