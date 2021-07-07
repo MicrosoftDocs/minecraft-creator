@@ -65,9 +65,9 @@
         - name: Item JSON
           items:
           - name: Item Documentation Homepage
-            href: Reference/Content/itemreference/index.yml
+            href: Reference/Content/itemsreference/index.yml
           - name: Item Components
-            href: Reference/Content/itemreference/Examples/ItemComponents/TOC.yml
+            href: Reference/Content/itemsreference/Examples/ItemComponents/TOC.yml
         - name: Spawn Rules
           href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/DataDrivenSpawning.md
       - name: Resource Pack
