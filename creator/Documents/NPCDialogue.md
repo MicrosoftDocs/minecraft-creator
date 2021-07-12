@@ -24,13 +24,6 @@ Example:
     {
         "format_version": "1.17",
         "minecraft:npc_dialogue": {}
-    }  
-    ```
-
-    ```json
-    {
-        "format_version": "1.17",
-        "minecraft:npc_dialogue": {}
     }
     ```
 
