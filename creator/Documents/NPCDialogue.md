@@ -5,6 +5,8 @@ title: NPC Dialogue Command
 ms.prod: gaming
 ---
 
+# NPC Dialogue Command
+
 Branching Dialogue allows you to create a dynamic NPC dialogue script that can provide updated dialogue based on a player’s in-game actions or responses.
 The Branching Dialogue system is comprised of three parts: The NPC entity, the dialogue commands, and the resource scene files.
 
