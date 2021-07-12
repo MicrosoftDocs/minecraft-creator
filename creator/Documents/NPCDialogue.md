@@ -19,13 +19,12 @@ The scene file is a json file located inside the “dialogue” folder in the ro
 The first property is the header which defines this json file as a valid scene file. 
 
 Example:
-
-    ```json
-    {
-        "format_version": "1.17",
-        "minecraft:npc_dialogue": {}
-    }
-    ```
+```json
+{
+    "format_version": "1.17",
+    "minecraft:npc_dialogue": {}
+}
+```
 
 Since this is a json file, we need to include brackets. The next property we will add is the “scenes” property, the place where all our branching dialogue will live.
 
