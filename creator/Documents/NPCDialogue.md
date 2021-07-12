@@ -21,21 +21,21 @@ The first property is the header which defines this json file as a valid scene f
 Example:
 
     ```json
-        {
-            "format_version": "1.17",
-            "minecraft:npc_dialogue": {}
-        }
+    {
+        "format_version": "1.17",
+        "minecraft:npc_dialogue": {}
+    }  
     ```
 
 Since this is a json file, we need to include brackets. The next property we will add is the “scenes” property, the place where all our branching dialogue will live.
 
     ```json
-        {
-            "format_version": "1.17",
-            "minecraft:npc_dialogue": {
-                "scenes": []
-            }
+    {
+        "format_version": "1.17",
+        "minecraft:npc_dialogue": {
+            "scenes": []
         }
+    }
     ```
 
 With the header and scene file properties in place, we can now create our individual scenes for our NPC branching dialogue. Every new instance of NPC dialogue will require a new scene. This is defined in the scene file by creating a scene tag. You will use the scene tag in-game to call the text you supply in the scene file. You can also set up NPC buttons and commands that will behave identically as they would if you had set them up using the in-game NPC editor. 
@@ -43,25 +43,25 @@ With the header and scene file properties in place, we can now create our indivi
 Let’s examine the NPC scene structure:
 
     ```json
-        {
-            "scene_tag": "ducky_intro",
-            "npc_name": "Ducky",
-            "text": "Hello. My name is Ducky. Take this gold!",
-            "on_open_commands": [
-                "/clear @p"
-            ],
-            "on_close_commands": [
-                "/say Enjoy the gold! "
-            ],
-            "buttons": [
-                {
-                    "name": "Take Gold",
-                    "commands": [
-                        "/give @initiator gold_ingot"
-                    ]
-                }
-            ]
-        }
+    {
+        "scene_tag": "ducky_intro",
+        "npc_name": "Ducky",
+        "text": "Hello. My name is Ducky. Take this gold!",
+        "on_open_commands": [
+            "/clear @p"
+        ],
+        "on_close_commands": [
+            "/say Enjoy the gold! "
+        ],
+        "buttons": [
+            {
+                "name": "Take Gold",
+                "commands": [
+                    "/give @initiator gold_ingot"
+                ]
+            }
+        ]
+    }
     ```
 
 ### Scene Properties
@@ -83,21 +83,21 @@ Let’s examine the NPC scene structure:
 All the scene properties listed above support rawtext.
 
     ```json
-        {
-            "scene_tag": "ducky_intro",
-            "npc_name": { "rawtext": [ { "translate": "character.name", "with": ["\n"] } ] },
-            "text": { "rawtext": [ { "translate": "ducky.intro.text", "with": ["\n"] } ] },
-            "on_open_commands": ["/clear @p"],
-            "on_close_commands": ["/say Enjoy the gold! "],
-            "buttons": [
-                {
-                    "name": { "rawtext": [ { "translate": "dialogue.button.name" } ] },
-                    "commands": [
-                        "/give @initiator gold_ingot"
-                    ]
-                }
-            ]
-        }
+    {
+        "scene_tag": "ducky_intro",
+        "npc_name": { "rawtext": [ { "translate": "character.name", "with": ["\n"] } ] },
+        "text": { "rawtext": [ { "translate": "ducky.intro.text", "with": ["\n"] } ] },
+        "on_open_commands": ["/clear @p"],
+        "on_close_commands": ["/say Enjoy the gold! "],
+        "buttons": [
+            {
+                "name": { "rawtext": [ { "translate": "dialogue.button.name" } ] },
+                "commands": [
+                    "/give @initiator gold_ingot"
+                ]
+            }
+        ]
+    }
     ```
 ## Dialogue Command
 
@@ -110,7 +110,7 @@ Dialogue Open is used to force open an NPC dialogue box to the targeted player(s
 The syntax for Dialogue open is as follows:
 
     ```json
-        /dialogue open <npc: target> <player: target> [sceneName:string]
+    /dialogue open <npc: target> <player: target> [sceneName:string]
     ```
 
 `/dialogue`: The initial command.
@@ -137,7 +137,7 @@ Dialogue Change is used to direct an NPC to use the dialogue provided in a speci
 The syntax for Dialogue open is as follows:
 
     ```json
-        /dialogue change <npc: target> <sceneName:string> [player: target]
+    /dialogue change <npc: target> <sceneName:string> [player: target]
     ```
 
 `/dialogue`: The initial command.
@@ -169,40 +169,40 @@ When using the `/dialogue` command, there will be times when you will need to ta
 Example:
 
     ```json
-        @initiator
+    @initiator
     ```
 
 Using this target selector with NPCs allows them to update their dialogue on a per-player basis, meaning that in multiplayer, NPCs can remember each player’s dialogue state and send them unique dialogue accordingly. This is useful for times where a player changing an NPCs dialogue could result in other players missing out on the complete dialogue branch or to ensure each player only receives one item from an NPC, not allowing that same player to return to the NPC for more items or locking out other players from collecting their items.
 
 ## Full Example: 
     ```json
-        {
-            "format_version": "1.17",
-            "minecraft:npc_dialogue": {
-                "scenes": [
-                    {
-                        "scene_tag": "ducky_intro",
-                        "npc_name": { "rawtext": [ { "translate": "character.name", "with": ["\n"] } ] },
-                        "text": { "rawtext": [ { "translate": "ducky.intro.text", "with": ["\n"] } ] },
-                        "on_open_commands": ["/clear @p"],
-                        "on_close_commands": ["/say Enjoy the gold! "],
-                        "buttons": [
-                            {
-                                "name": { "rawtext": [ { "translate": "dialogue.button.name" } ] },
-                                "commands": [
-                                    "/give @initiator gold_ingot"
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
+    {
+        "format_version": "1.17",
+        "minecraft:npc_dialogue": {
+            "scenes": [
+                {
+                    "scene_tag": "ducky_intro",
+                    "npc_name": { "rawtext": [ { "translate": "character.name", "with": ["\n"] } ] },
+                    "text": { "rawtext": [ { "translate": "ducky.intro.text", "with": ["\n"] } ] },
+                    "on_open_commands": ["/clear @p"],
+                    "on_close_commands": ["/say Enjoy the gold! "],
+                    "buttons": [
+                        {
+                            "name": { "rawtext": [ { "translate": "dialogue.button.name" } ] },
+                            "commands": [
+                                "/give @initiator gold_ingot"
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
+    }
     ```
 
 Command to trigger the scene:
 
     ```json
-        /dialogue open @e[tag=ducky] @p ducky_intro
+    /dialogue open @e[tag=ducky] @p ducky_intro
     ```
 
