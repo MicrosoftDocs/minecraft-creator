@@ -62,6 +62,20 @@ The blocks.json file has a similar set up to the manifest.json and has requireme
     }    
     ```
 
+    ```json
+    {
+      "format_version": "1.16.0",
+      "helloworld:canvasblock": {
+        "textures": {
+          "up": "log_oak_top",
+          "down": "log_oak_top",
+          "side": "canvasblock"
+        },
+        "sound":"dirt"
+      }
+    }    
+    ```
+
 1. Save the file
 
 #### Textures and Sub-textures
