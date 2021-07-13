@@ -23,7 +23,8 @@ ms.prod: gaming
 
 ```json
 "minecraft:on_interact":{
-    "origin": [-8.0, 0.0, -8.0],
-    "size": [16.0,16.0,16.0],
+    "condition": "query.block_property(custom:block_light) == true", //custom condition
+    "event" : "light_off", //custom event
+    "target": "self"
 }
 ```

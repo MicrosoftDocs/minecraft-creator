@@ -21,7 +21,6 @@ ms.prod: gaming
 
 ```json
 "set_block_property":{
-    "origin": [-8.0, 0.0, -8.0],
-    "size": [16.0,16.0,16.0],
+    "MoLang":
 }
 ```

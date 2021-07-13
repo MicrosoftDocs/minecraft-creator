@@ -9,6 +9,12 @@ ms.prod: gaming
 
 `minecraft:flammable` is a component controlled by a `JSON object` that contains the flammable properties for this block.
 
+## Default Parameter
+
+|Default Value|Type |
+|:----|:----|
+|*not set*| JSON Object|
+
 ## Extra Parameters
 
 `minecraft:flammable` can use the following parameters:
@@ -23,6 +29,6 @@ ms.prod: gaming
 ```json
 "minecraft:flammable":{
     "burn_odds": 0,
-    "flame_odds": 0,
+    "flame_odds": 0
 }
 ```

@@ -24,7 +24,9 @@ ms.prod: gaming
 
 ```json
 "minecraft:on_fall_on":{
-    "origin": [-8.0, 0.0, -8.0],
-    "size": [16.0,16.0,16.0],
+    "condition": "query.block_property(custom:block_light) == false", //custom condition
+    "event": "light_on", //custom event
+    "min_fall_distance": 0.0,
+    "target" : "self"
 }
 ```

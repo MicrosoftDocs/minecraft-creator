@@ -21,7 +21,6 @@ ms.prod: gaming
 
 ```json
 "spawn_loot":{
-    "origin": [-8.0, 0.0, -8.0],
-    "size": [16.0,16.0,16.0],
+    "table": "path_to/customblock.json"
 }
 ```

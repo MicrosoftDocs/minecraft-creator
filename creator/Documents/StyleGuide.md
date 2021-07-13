@@ -50,7 +50,7 @@ So now that you are ready to write about Minecraft, how should you refer to the 
 
 ### Minecraft
 
-To start simply, Minecraft is just "Minecraft". There is no need to add any trademark, italics, additional capitalization, spaces, or bold letters. Whenever you want to talk about Minecraft, just call it: 
+To start simply, Minecraft is just "Minecraft". There is no need to add any trademark, italics, additional capitalization, spaces, or bold letters. Whenever you want to talk about Minecraft, just call it:
 
 ```Minecraft```
 
@@ -90,7 +90,7 @@ because there are many of these mobs all over the game world. We do capitalize t
 * Redstone Monstrosity
 * Corrupted Cauldron
 
-because there is only one of these mobs in each game world. 
+because there is only one of these mobs in each game world.
 
 > **Note**: One notable exception is the "Enderman". Even though Enderman is not unique, we do capitalize this mob name.
 

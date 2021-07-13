@@ -23,7 +23,8 @@ ms.prod: gaming
 
 ```json
 "run_command":{
-    "origin": [-8.0, 0.0, -8.0],
-    "size": [16.0,16.0,16.0],
-}
+    "command" : "/give @p emerald",
+    "command array": [], //not used
+    "target" : "self"
+
 ```

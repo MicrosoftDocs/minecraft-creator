@@ -7,7 +7,13 @@ ms.prod: gaming
 
 # minecraft:geometry
 
-`minecraft:geometry` is a `String` component that sets the geometry for the block.
+`minecraft:geometry` is a `string` component that sets the geometry model to use for the block.
+
+## Default Parameter
+
+|Default Value|Type |
+|:----|:----|
+|*not set*| String|
 
 ## Extra Parameters
 
@@ -16,5 +22,5 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:geometry":
+"minecraft:geometry": "cube"
 ```

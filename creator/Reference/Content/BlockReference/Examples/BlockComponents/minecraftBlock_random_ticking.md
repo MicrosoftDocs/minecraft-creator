@@ -9,6 +9,12 @@ ms.prod: gaming
 
 `minecraft:random_ticking` is a component controlled by a `JSON object` that describes how the component will trigger an even at a regular interval between two values.
 
+## Default Parameter
+
+|Default Value|Type |
+|:----|:----|
+|*not set*| JSON Object|
+
 ## Triggers
 
 `minecraft:random_ticking` can use the following parameters that are fired on-tick.
@@ -30,4 +36,3 @@ ms.prod: gaming
     "target": "self"
 }
 ```
-

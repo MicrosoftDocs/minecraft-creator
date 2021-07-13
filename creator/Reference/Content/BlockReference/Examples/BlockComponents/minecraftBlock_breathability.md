@@ -9,6 +9,12 @@ ms.prod: gaming
 
 `minecraft:breathability` is a component that sets the breathability of the block, and whether it's treated as a solid block or a block of air.
 
+## Default Parameter
+
+|Default Value|Type |
+|:----|:----|
+|solid| Enumerator|
+
 ## Enumerator
 
 `minecraft:breathability` uses 2 enumerator states.

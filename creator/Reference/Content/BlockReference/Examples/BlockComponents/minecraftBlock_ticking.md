@@ -9,6 +9,12 @@ ms.prod: gaming
 
 `minecraft:ticking` is a component controlled by a `JSON object` that describes how the component will trigger an even at a regular interval between two values.
 
+## Default Parameter
+
+|Default Value|Type |
+|:----|:----|
+|*not set*| JSON Object|
+
 ## Extra Parameters
 
 `minecraft:ticking` can use the following parameters that are fired on-tick.
@@ -21,13 +27,7 @@ ms.prod: gaming
 |event| set_block_property| String|  The type of event executed on the block. |
 |range| [10, 10]| Array|  The Range between which the component will trigger his event. |
 |target| self| String| The target of event executed on the block. |
-
-`minecraft:ticking` can also adjust the range and looping parameters.
-
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|looping| true| Boolean| Does the event loop |
-|range| [10, 10]| Array| The Range between which the component will trigger its event. |
+|looping| true| Boolean| Does the event loop?|
 
 ## Example
 
@@ -35,8 +35,8 @@ ms.prod: gaming
 "minecraft:ticking":{
     "condition": 1,
     "event": "minecraft:redstone_signal", //custom
-    "range": [10,10],
+    "range": [0,10],
     "target": "self",
-    "looping": true,
+    "looping": true
 }
 ```

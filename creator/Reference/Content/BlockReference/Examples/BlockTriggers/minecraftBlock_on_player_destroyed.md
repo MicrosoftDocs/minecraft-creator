@@ -23,7 +23,8 @@ ms.prod: gaming
 
 ```json
 "minecraft:on_player_destroyed":{
-    "origin": [-8.0, 0.0, -8.0],
-    "size": [16.0,16.0,16.0],
+    "condition": "query.block_property(custom:property) == true", //custom condition
+    "event" : "this_is_my_block", //custom event
+    "target": "self"
 }
 ```

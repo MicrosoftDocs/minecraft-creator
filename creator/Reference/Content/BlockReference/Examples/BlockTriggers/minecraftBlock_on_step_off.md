@@ -23,7 +23,8 @@ ms.prod: gaming
 
 ```json
 "minecraft:on_step_off":{
-    "origin": [-8.0, 0.0, -8.0],
-    "size": [16.0,16.0,16.0],
+    "condition": "query.block_property(custom:is_playing_sound) == true", //custom condition
+    "event" : "disable_the_alarm", //custom event
+    "target": "self"
 }
 ```

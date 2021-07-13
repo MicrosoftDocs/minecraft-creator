@@ -9,8 +9,11 @@ ms.prod: gaming
 
 `minecraft:display_name` is a `String` component that sets the display name id for the block.
 
-> [!NOTE]
-> Greater numbers result in greater mining times.
+## Default Parameter
+
+|Default Value|Type |
+|:----|:----|
+|*not set*| String|
 
 ## Extra Parameters
 
