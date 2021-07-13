@@ -12,7 +12,7 @@ ms.prod: gaming
 > [!IMPORTANT]
 > In order for the entity to be able to attack its target, the entity will also need another component that sets its target, such as:
 >
->- [minecraft:behavior.nearest_attackable_target Component](minecraftBehavior_nearest_attackable_target.md)
+>- [minecraft:behavior.nearest_attackable_target](minecraftBehavior_nearest_attackable_target.md)
 >- [minecraft:behavior.hurt_by_target](minecraftBehavior_hurt_by_target.md)
 
 ## Parameters
