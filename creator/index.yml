@@ -25,6 +25,10 @@ highlightedContent:
       itemType: whats-new
       url: Documents/NPCDialogue.md
     #card
+    - title: Caves and Cliffs Entities
+      itemType: whats-new
+      url: Documents/CavesAndCliffsEntities.md
+    #card
     - title: Getting Started with Add-on Development
       itemType: get-started
       url: Documents/GettingStarted.md
