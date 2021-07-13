@@ -12,7 +12,7 @@ The Branching Dialogue system is comprised of three parts: The NPC entity, the d
 
 ## The Scene File
 
-The scene file is a json file located inside the “dialogue” folder in the root directory of your behavior pack that contains all the information needed for your branching dialogue. You can create as many scene files as you need. You can create a scene file for each NPC in your world or create a scene file for each chapter of your narrative, or you can simply have one scene file for the world - the choice is completely up to you as the branching dialogue feature will read all files in the dialogue folder, regardless of how you decided to organize them.
+The scene file is a json file located inside the **dialogue** folder in the root directory of your behavior pack (%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\development_behavior_packs\<your behavior pack folder>) that contains all the information needed for your branching dialogue. You can create as many scene files as you need. You can create a scene file for each NPC in your world or create a scene file for each chapter of your narrative, or you can simply have one scene file for the world - the choice is completely up to you as the branching dialogue feature will read all files in the dialogue folder, regardless of how you decided to organize them.
 
 ### Properties
 
@@ -75,7 +75,7 @@ Let’s examine the NPC scene structure:
 
 **on_close_command**: This is where you can define which commands will fire when the NPC dialogue box closes. Optional property.
 
-**Buttons**: This is where you can create buttons for your NPC. The subset properties include name which allows you to set the displayed text on your button, and commands, which allows you to add the commands that play when the button is pressed. Optional property; required for NPC buttons.
+**Buttons**: This is where you can create buttons for your NPC. The subset includes “name” and “commands” properties. The “name” property allows you to set the text that is going to be displayed on your NPC’s button. The second property - “commands” - allows you to add commands which will be run in-game when the button is pressed. Optional property; required for NPC buttons.
 
 ### Rawtext
 
@@ -143,7 +143,7 @@ The syntax for Dialogue open is as follows:
 `change`: The command variant.
 `<npc: target>`: The NPC that you are targeting.
 `[sceneName:string]`: This is the name used if you want to use dialogue contained in a scene file. The string must be a valid scene tag name, or it will fail.
-`<player: target>`: The player that you are targeting. This the player who will see the NPC dialog box. If omitted in a “dialogue change” command, the NPC dialogue will be updated for all players. This is an optional parameter.
+`<player: target>`: The player that you are targeting (this is the player who will see the dialogue box). If omitted in a “/dialogue change” command, the NPC dialogue will be updated for all players.
 
 ### Practical Usage
 
@@ -162,7 +162,9 @@ Targeting is a vital part of the NPC dialogue branching system. It determines wh
 To use the `/dialogue` command, you must target an NPC. This will act as the NPC the dialogue is showing up from and will use that NPC’s image inside the dialog’s portrait.
 
 The NPC you want to trigger the dialog from must exist inside the world.
-Targeting Players 
+
+### Targeting Players
+
 When using the `/dialogue` command, there will be times when you will need to target players as well. To target players, use player selectors such as @a (all players) or @p (nearest player). Those will typically work well for a single-player experience but if you wish to have per-player scene changes, you will need to use a special target type called @initiator(the player interacting with the NPC).
 
 Example:
