@@ -12,6 +12,12 @@ ms.prod: gaming
 > [!NOTE]
 > Greater numbers result in greater mining times.
 
+## Default Parameter
+
+|Default Value|Type |
+|:----|:----|
+|0.0| Decimal|
+
 ## Extra Parameters
 
 `minecraft:destroy_time` does not use any extra parameters.

@@ -9,6 +9,12 @@ ms.prod: gaming
 
 `minecraft:placement_filter` is a component controlled by a `JSON object` that sets rules for under what conditions the block can be placed/survive
 
+## Default Parameter
+
+|Default Value|Type |
+|:----|:----|
+|*not set*| JSON Object|
+
 ## Conditions
 
 `minecraft:placement_filter` can use the following conditions
@@ -23,6 +29,6 @@ ms.prod: gaming
 ```json
 "minecraft:placement_filter":{
     "allowed_faces": ["up", "down", "side"],
-    "block_filter": ["grass", "dirt"],
+    "block_filter": ["grass", "dirt"]
 }
 ```

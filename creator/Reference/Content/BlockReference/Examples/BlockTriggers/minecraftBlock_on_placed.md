@@ -23,7 +23,8 @@ ms.prod: gaming
 
 ```json
 "minecraft:on_placed":{
-    "origin": [-8.0, 0.0, -8.0],
-    "size": [16.0,16.0,16.0],
+    "condition": "query.block_property(custom:normal_facing_up) == true", //custom condition
+    "event" : "the_thing_has_been_placed", //custom event
+    "target": "self"
 }
 ```

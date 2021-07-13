@@ -12,6 +12,12 @@ ms.prod: gaming
 > [!NOTE]
 > Most mobs will not try to jump over it if the value is set to true
 
+## Default Parameter
+
+|Default Value|Type |
+|:----|:----|
+|*not set*| Boolean|
+
 ## Extra Parameters
 
 `minecraft:unwalkable` does not use any extra parameters.

@@ -23,7 +23,8 @@ ms.prod: gaming
 
 ```json
 "damage":{
-    "origin": [-8.0, 0.0, -8.0],
-    "size": [16.0,16.0,16.0],
+    "amount" : 1,
+    "target" : {"test": "in_lava"},
+    "type" : "lava"
 }
 ```

@@ -26,7 +26,10 @@ ms.prod: gaming
 
 ```json
 "teleport":{
-    "origin": [-8.0, 0.0, -8.0],
-    "size": [16.0,16.0,16.0],
+    "avoid_water" : true,
+    "destination" : [0.0, 0.0, 0.0],
+    "land_on_block" : true,
+    "max_range" : [8.0, 8.0, 8.0],
+    "target" : { "test": "has_damage", "subject": "self", "operator": "equals", "value": "suffocating" }
 }
 ```

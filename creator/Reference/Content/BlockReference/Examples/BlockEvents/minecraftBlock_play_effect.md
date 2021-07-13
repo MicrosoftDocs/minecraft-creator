@@ -23,7 +23,8 @@ ms.prod: gaming
 
 ```json
 "play_effect":{
-    "origin": [-8.0, 0.0, -8.0],
-    "size": [16.0,16.0,16.0],
+    "delta" : 0,
+    "effect" : "particle_sparks",
+    "target" : {"test": "random_chance", "value": "3"} //25%
 }
 ```

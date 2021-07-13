@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "set_block_at_pos":{
-    "origin": [-8.0, 0.0, -8.0],
-    "size": [16.0,16.0,16.0],
+    "block_offset": [0.0, 0.0, 0.0],
+    "block_type" : "bedrock"
 }
 ```

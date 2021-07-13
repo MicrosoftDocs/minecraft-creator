@@ -21,7 +21,6 @@ ms.prod: gaming
 
 ```json
 "die":{
-    "origin": [-8.0, 0.0, -8.0],
-    "size": [16.0,16.0,16.0],
+    "target" : {"test": "random_chance", "value": "1"} //50% chance
 }
 ```

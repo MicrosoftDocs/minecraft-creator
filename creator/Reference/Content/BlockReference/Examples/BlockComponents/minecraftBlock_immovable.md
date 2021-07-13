@@ -1,20 +1,26 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:immoveable
+title: minecraft:immovable
 ms.prod: gaming
 ---
 
-# minecraft:immoveable
+# minecraft:immovable
 
-`minecraft:immoveable` is a `boolean` component that sets the immoveable state for the block, not allowing it to be moved by a piston.
+`minecraft:immovable` is a `boolean` component that sets the immovable state for the block, not allowing it to be moved by a piston.
+
+## Default Parameter
+
+|Default Value|Type |
+|:----|:----|
+|*not set*| Boolean|
 
 ## Extra Parameters
 
-`minecraft:immoveable` does not use any extra parameters.
+`minecraft:immovable` does not use any extra parameters.
 
 ## Example
 
 ```json
-"minecraft:immoveable": true
+"minecraft:immovable": true
 ```

@@ -12,6 +12,12 @@ ms.prod: gaming
 > [!IMPORTANT]
 > `minecraft:entity_collision` can **only** be set to `false`.
 
+## Default Parameter
+
+|Default Value|Type |
+|:----|:----|
+|false| Boolean|
+
 ## Extra Parameters
 
 `minecraft:entity_collision` can use the following parameters to adjust the bounds for collision.
@@ -26,6 +32,6 @@ ms.prod: gaming
 ```json
 "minecraft:entity_collision":{
     "origin": [-8.0, 0.0, -8.0],
-    "size": [16.0,16.0,16.0],
+    "size": [16.0,16.0,16.0]
 }
 ```

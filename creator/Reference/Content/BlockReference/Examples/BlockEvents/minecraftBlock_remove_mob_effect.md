@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "remove_mob_effect":{
-    "origin": [-8.0, 0.0, -8.0],
-    "size": [16.0,16.0,16.0],
+    "effect" : "poison",
+    "target" : "self"
 }
 ```

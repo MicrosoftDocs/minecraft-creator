@@ -9,6 +9,12 @@ ms.prod: gaming
 
 `minecraft:rotation` is a `vector` component that sets the block's rotation around the center of the cube in degrees.
 
+## Default Parameter
+
+|Default Value|Type |
+|:----|:----|
+|[0.0, 0.0, 0.0]| Vector|
+
 ## Extra Parameters
 
 `minecraft:rotation` does not use any extra parameters.
@@ -16,5 +22,5 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:rotation": true
+"minecraft:rotation": [0.0, 0.0, 0.0]
 ```
