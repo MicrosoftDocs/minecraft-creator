@@ -13,15 +13,7 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| add| *not set*| JSON Object| List of components to add to the entity after the transformation
-
-### add
-
-`add` is a JSON Object defined by ten parameters. Each item has the following properties:
-
-| Name| Default Value| Type| Description|
-|:-----------|:-----------|:-----------|:-----------|
-| component_groups| *not set*| List| Names of component groups to add |
+| add| *not set*| JSON Object| List of components to add to the entity after the transformation|
 | begin_transform_sound| *not set*| String| Sound to play when the transformation starts |
 | drop_equipment| False| Boolean| Cause the entity to drop all equipment upon transformation |
 | drop_inventory| False| Boolean| Cause the entity to drop all items in inventory upon transformation |
@@ -31,6 +23,14 @@ ms.prod: gaming
 | preserve_equipment| False| Boolean| Cause the entity to keep equipment after going through transformation |
 | transformation_sound| *not set*| String| Sound to play when the entity is done transforming |
 | delay| *not set*| JSON Object| Defines the properties of the delay for the transformation|
+
+### add
+
+`add` is a JSON Object defined by ten parameters. Each item has the following properties:
+
+| Name| Default Value| Type| Description|
+|:-----------|:-----------|:-----------|:-----------|
+| component_groups| *not set*| List| Names of component groups to add |
 
 ### delay
 
