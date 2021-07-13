@@ -30,7 +30,7 @@ To create a custom NPC, follow these instructions:
 
 ![NPC Editor Interface](Media\NPCs\LearningPortal_NPCEditor.PNG)
 
-You can also add dialog for your NPC to give players more information about the commands they will execute or deliver story details. For more information, see [NPC dialog](/minecraft/creator/Documents/NPCDialogue).
+You can also add dialogue for your NPC to give players more information about the commands they will execute or deliver story details. For more information, see [NPC Dialogue Command](/minecraft/creator/Documents/NPCDialogue).
 
 ## Change NPC skins
 
