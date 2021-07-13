@@ -25,10 +25,6 @@ highlightedContent:
       itemType: whats-new
       url: Documents/NPCDialogue.md
     #card
-    - title: Entity Documentation
-      itemType: whats-new
-      url: Reference/Content/entityreference/index.yml
-    #card
     - title: Getting Started with Add-on Development
       itemType: get-started
       url: Documents/GettingStarted.md
@@ -53,7 +49,7 @@ productDirectory:
       links:
         - url: Documents/CommandBlocks.md
           text: Getting Started with Command Blocks
-    # card
+  # card
     - title: Using GameTest
       imageSrc: images/Firework.png
       links:
@@ -63,5 +59,11 @@ productDirectory:
           text: Build your first GameTest
         - url: ScriptAPI/GameTest/GameTest.md
           text: GameTest API
+  # card
+    - title: Reference Documentation
+      imageSrc: images/Script.png
+      links:
+        - url: Reference/Content/entityreference/index.yml
+          text: Entity JSON Documentation
 
 

@@ -10,6 +10,12 @@ ms.prod: gaming
 Branching Dialogue allows you to create a dynamic NPC dialogue script that can provide updated dialogue based on a player’s in-game actions or responses.
 The Branching Dialogue system is comprised of three parts: The NPC entity, the dialogue commands, and the resource scene files.
 
+### Requirements
+
+It’s recommended that the following be completed before beginning this tutorial.
+
+- [Create a Custom NPC](CreateNPCs.md)
+
 ## The Scene File
 
 The scene file is a json file located inside the **dialogue** folder in the root directory of your behavior pack (%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\development_behavior_packs\<your behavior pack folder>) that contains all the information needed for your branching dialogue. You can create as many scene files as you need. You can create a scene file for each NPC in your world or create a scene file for each chapter of your narrative, or you can simply have one scene file for the world - the choice is completely up to you as the branching dialogue feature will read all files in the dialogue folder, regardless of how you decided to organize them.
