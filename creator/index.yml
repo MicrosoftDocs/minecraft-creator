@@ -17,6 +17,14 @@ highlightedContent:
 # itemType:  architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     #card used to define plugin
+    - title: Create a Custom NPC
+      itemType: whats-new
+      url: Documents/CreateNPCs.md
+    #card
+    - title: NPC Dialogue Command
+      itemType: whats-new
+      url: Documents/NPCDialogue.md
+    #card
     - title: Entity Documentation
       itemType: whats-new
       url: Reference/Content/entityreference/index.yml
@@ -24,10 +32,6 @@ highlightedContent:
     - title: Getting Started with Add-on Development
       itemType: get-started
       url: Documents/GettingStarted.md
-    #card
-    - title: Caves and Cliffs Entities
-      itemType: whats-new
-      url: Documents/CavesAndCliffsEntities.md
       
 # productDirectory section (optional) will outline rows that can contain text and media along with lists. 
 productDirectory:
