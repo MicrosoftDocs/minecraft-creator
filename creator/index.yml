@@ -25,9 +25,12 @@ highlightedContent:
       itemType: get-started
       url: Documents/GettingStarted.md
     #card
-    - title: Caves and Cliffs Entities
+    - title: Create a Custom NPC
       itemType: whats-new
-      url: Documents/CavesAndCliffsEntities.md
+      url: Documents/CreateNPCs.md
+    - title: NPC Dialogue Command
+      itemType: whats-new
+      url: Documents/NPCDialogue.md
       
 # productDirectory section (optional) will outline rows that can contain text and media along with lists. 
 productDirectory:
