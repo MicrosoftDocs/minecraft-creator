@@ -22,7 +22,7 @@ ms.prod: gaming
 ```json
 "minecraft:icon":{
     "frame": 0,
-    "legacy_id": ,
-    "texture": "blaze_powder"
+    "legacy_id": 1,
+    "texture": "oak_slab"
 }
 ```
