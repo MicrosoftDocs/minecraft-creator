@@ -13,7 +13,7 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|destroy_speeds|*not set* |Decimal | Destroy speed per block|
+|destroy_speeds|*not set* |List | Destroy speed per block|
 |on_dig |*not set*  | String| Trigger for when you dig a block that isn't listed in destroy_speeds|
 |use_efficiency |false  | Boolean| Toggles if the item will be used efficiently|
 
@@ -21,7 +21,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:digger":{
-    "destroy_speeds": 0.8,
+    "destroy_speeds": ["dirt", "grass"],
     "on_dig": "minecraft:destroy_block",
     "use_efficiency": false
 }

@@ -20,8 +20,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:cooldown":{
-    "block": "seeds",
-    "use_on" : ["dirt",
-                "grass"]
+    "category" : "attack",
+    "duration" : 0.2
 }
 ```

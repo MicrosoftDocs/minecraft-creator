@@ -20,7 +20,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:durability":{
-    "damage_chance": 0.015,
+    "damage_chance": 0.015, //15%
     "max_durability": 36
 }
 ```
