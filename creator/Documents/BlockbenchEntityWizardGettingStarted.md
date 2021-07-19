@@ -54,7 +54,7 @@ Once the plugin is installed, click the yellow banner on the start screen or nav
 
 Once the plugin is installed, you can now use the Blockbench Entity Wizard to start creating your first Entity with the plugin.
 
-:::image type="content" source="Media/BlockbenchEntityWizardGettingStarted/BlockbenchEntityWizard.png" alt-text="Image showcasing the Blockbench Entity Wizard start up page. Contains a single button marked "Let's Go":::
+:::image type="content" source="Media/BlockbenchEntityWizardGettingStarted/BlockbenchEntityWizard.png" alt-text="Image showcasing the Blockbench Entity Wizard start up page. Contains a single button marked Let's Go":::
 
 1. Click the yellow banner on the start screen to open the wizard.
     1. Alternatively, navigate to **Filter** and select **Create Bedrock Entity** to open the wizard.
