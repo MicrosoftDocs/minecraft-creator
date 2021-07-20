@@ -15,7 +15,7 @@ Tests for the current weather state the entity is experiencing.
 |---------|---------|---------|---------|
 |value |*not set* |String |(Required) The Family name to look for. |
 
-`Name of Filter` can also use `subject` and `operator` parameters but they are optional.
+`Weather` can also use `subject` and `operator` parameters but they are optional.
 
 ### subject
 

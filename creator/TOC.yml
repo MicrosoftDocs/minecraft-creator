@@ -14,6 +14,10 @@
               href: Documents/BehaviorPack.md
             - name: Adding a Custom Block
               href: Documents/CustomBlock.md
+            - name: Create a Custom NPC
+              href: Documents/CreateNPCs.md
+            - name: NPC Dialogue Command
+              href: Documents/NPCDialogue.md
             - name: Introduction to the Caves & Cliffs Entities
               href: Documents/CavesAndCliffsEntities.md
         - name: Commands and Command Blocks
