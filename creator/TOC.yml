@@ -72,6 +72,12 @@
             href: Reference/Content/itemreference/index.yml
           - name: Item Components
             href: Reference/Content/itemreference/Examples/ItemComponents/TOC.yml
+        - name: Recipe JSON
+          items:
+          - name: Recipe Documentation Homepage
+            href: Reference/Content/recipereference/index.yml
+          - name: Recipe Definitions
+            href: Reference/Content/recipereference/Examples/RecipeDefinitions/TOC.yml
         - name: Spawn Rules
           href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/DataDrivenSpawning.md
       - name: Resource Pack

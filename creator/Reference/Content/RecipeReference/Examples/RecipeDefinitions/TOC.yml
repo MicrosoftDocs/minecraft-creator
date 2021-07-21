@@ -1,0 +1,10 @@
+ - name: Recipe Definition List
+   href: ../RecipeComponentList.md
+ - name: Furnace Recipe
+   href: minecraftRecipe_Furnace.md
+ - name: Shaped Recipe
+   href: minecraftRecipe_Shaped.md
+ - name: Shapeless Recipe
+   href: minecraftRecipe_Shapeless.md
+ - name: Potion Brewing
+   href: minecraftRecipe_PotionBrewing.md
