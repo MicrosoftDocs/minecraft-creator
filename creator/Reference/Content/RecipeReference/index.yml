@@ -23,7 +23,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: Recipe Definition List
-            url: Examples/RecipeComponentList.md
+            url: Examples/RecipeDefinitionList.md
           - text: "Furnace Recipe"
             url: Examples/RecipeDefinitions/minecraftRecipe_Furnace.md
           - text: "Shaped Recipe"
