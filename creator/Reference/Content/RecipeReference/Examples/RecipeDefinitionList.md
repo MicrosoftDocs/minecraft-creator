@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Recipe Definition List
 
-Recipes are setup in Json files under the `behavior_packs/'name of pack'/recipes` directory. Recipe JSON files have different structures dependent on their type.
+Recipes are setup in JSON files under the `behavior_packs/'name of pack'/recipes` directory. Recipe JSON files have different structures dependent on their type.
 There are 4 types of recipes:
 
 |Type of Recipe |Description |
