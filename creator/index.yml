@@ -25,13 +25,13 @@ highlightedContent:
       itemType: whats-new
       url: Documents/NPCDialogue.md
     #card
-    - title: Getting Started with Add-on Development
-      itemType: get-started
-      url: Documents/GettingStarted.md
-    #card
     - title: Caves and Cliffs Entities
       itemType: whats-new
       url: Documents/CavesAndCliffsEntities.md
+    #card
+    - title: Getting Started with Add-on Development
+      itemType: get-started
+      url: Documents/GettingStarted.md
 
 # productDirectory section (optional) will outline rows that can contain text and media along with lists.
 productDirectory:
@@ -53,7 +53,7 @@ productDirectory:
       links:
         - url: Documents/CommandBlocks.md
           text: Getting Started with Command Blocks
-    # card
+  # card
     - title: Using GameTest
       imageSrc: images/Firework.png
       links:
@@ -63,7 +63,7 @@ productDirectory:
           text: Build your first GameTest
         - url: ScriptAPI/GameTest/GameTest.md
           text: GameTest API
-    # card
+  # card
     - title: Reference Documentation
       imageSrc: images/Script.png
       links:
