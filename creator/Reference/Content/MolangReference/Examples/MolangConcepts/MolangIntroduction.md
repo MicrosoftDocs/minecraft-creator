@@ -217,12 +217,12 @@ Listed below are the mathematical functions available for use in MoLang.
 |math.hermite_blend(value)| Useful for simple smooth curve interpolation using one of the Hermite Basis functions:`3t^2 - 2t^3`.  Note that while any valid float is a valid input, this function works best in the range [0,1]. |
 |math.lerp(start, end, 0_to_1)| Lerp from start to end via 0_to_1 |
 |math.lerprotate(start, end, 0_to_1)| Lerp the shortest direction around a circle from start degrees to end degrees via 0_to_1 |
-|math.ln(value)`| Natural logarithm of value |
+|math.ln(value)| Natural logarithm of value |
 |`math.max(A, B)| Return highest value of A or B |
 |math.min(A, B)| Return lowest value of A or B |
 |math.mod(value, denominator)| Return the remainder of value / denominator |
 |math.pi| Returns the float representation of the constant pi. |
-|math.pow(base, exponent) | Elevates `base` to the `exponent`'th power |
+|math.pow(base, exponent) | Elevates`base` to the `exponent`'th power |
 |math.random(low, high)| Random value between low and high inclusive |
 |math.random_integer(low, high)| Random integer value between low and high inclusive |
 |math.round(value)| Round value to nearest integral number |
@@ -277,9 +277,9 @@ The example below showcases how a Fibonacci Calculator can be written in MoLang.
 v.x = 1;
 v.y = 1;
 loop(10, {
-	t.x = v.x + v.y;
-	v.x = v.y;
-	v.y = t.x;
+ t.x = v.x + v.y;
+ v.x = v.y;
+ v.y = t.x;
 });
 ```
 
@@ -319,8 +319,8 @@ The following example will result in v.x becoming 6.0, as the increment will be 
 ```C#
 v.x = 0;
 loop(10, {
-	(v.x > 5) ? continue;
-	v.x = v.x + 1;
+ (v.x > 5) ? continue;
+ v.x = v.x + 1;
 });
 ```
 
