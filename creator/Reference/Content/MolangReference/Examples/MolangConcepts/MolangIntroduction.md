@@ -200,35 +200,13 @@ String operations only support `= =` and `! =` at this time.
 
 Listed below are the mathematical functions available for use in MoLang.
 
-| Function| Description |
-|:-----------|:-----------|
-|math.abs(value)| Absolute value of value |
-|math.acos(value)| arccos of value |
-|math.asin(value)| arcsin of value |
-|math.atan(value)| arctan of value |
-|math.atan2(y, x)| arctan of y/x.  NOTE: the order of arguments! |
-|math.ceil(value)| Round value up to nearest integral number |
-|math.clamp(value, min, max)| Clamp value to between min and max inclusive |
-|math.cos(value)| Cosine (in degrees) of value |
-|math.die_roll(num, low, high)| returns the sum of 'num' random numbers, each with a value from low to high.Note: the generated random numbers are not integers like normal dice.  For that, use `math.die_roll_integer`. |
-|math.die_roll_integer(num, low, high)| returns the sum of `num` random integer numbers, each with a value from low to high.  Note: the generated random numbers are integers like normal dice. |
-|math.exp(value)| Calculates e to the value'th power |
-|math.floor(value)| Round value down to nearest integral number |
-|math.hermite_blend(value)| Useful for simple smooth curve interpolation using one of the Hermite Basis functions:`3t^2 - 2t^3`.  Note that while any valid float is a valid input, this function works best in the range [0,1]. |
-|math.lerp(start, end, 0_to_1)| Lerp from start to end via 0_to_1 |
-|math.lerprotate(start, end, 0_to_1)| Lerp the shortest direction around a circle from start degrees to end degrees via 0_to_1 |
-|math.ln(value)| Natural logarithm of value |
-|`math.max(A, B)| Return highest value of A or B |
-|math.min(A, B)| Return lowest value of A or B |
-|math.mod(value, denominator)| Return the remainder of value / denominator |
-|math.pi| Returns the float representation of the constant pi. |
-|math.pow(base, exponent) | Elevates`base` to the `exponent`'th power |
-|math.random(low, high)| Random value between low and high inclusive |
-|math.random_integer(low, high)| Random integer value between low and high inclusive |
-|math.round(value)| Round value to nearest integral number |
-|math.sin(value)| Sine (in degrees) of value |
-|math.sqrt(value)| Square root of value |
-|math.trunc(value)W| Round value towards zero |
+|Function |Description |
+|:--------|:-----------|
+| `math.abs(value)`| Absolute value of value |
+| `math.acos(value)`| arccos of value |
+| `math.asin(value)`| arcsin of value |
+| `math.atan(value)`| arctan of value |
+| `math.atan2(y, x)`| arctan of y/x.  NOTE: the order of arguments! |
 
 ## Arrow Operator `->`
 
