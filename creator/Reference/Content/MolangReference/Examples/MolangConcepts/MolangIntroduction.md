@@ -200,7 +200,6 @@ String operations only support `= =` and `! =` at this time.
 
 Listed below are the mathematical functions available for use in MoLang.
 
-
 | Function| Description |
 |:-----------|:-----------|
 |`math.abs(value)`| Absolute value of value |
@@ -230,7 +229,6 @@ Listed below are the mathematical functions available for use in MoLang.
 |`math.sin(value)`| Sine (in degrees) of value |
 |`math.sqrt(value)`| Square root of value |
 |`math.trunc(value)`| Round value towards zero |
-
 
 ## Arrow Operator `->`
 
