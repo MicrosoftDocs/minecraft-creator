@@ -22,6 +22,9 @@ In simple cases, the terminating `;` is omitted and the expression result is ret
 > [!NOTE]
 > All things in MoLang are **case-INsensitive**, with the exception of strings, which maintain the case provided.
 
+> [!TIP]
+> Code examples below are tagged with `C#` to have a similar syntax highlighting as MoLang.
+
 ## Keywords
 
 All identifiers not in a scope listed below are reserved for future use.
@@ -70,7 +73,7 @@ In general, variables of a mob are considered private to that mob and cannot be 
 
 ### Example
 
-```C#ON
+```JSON
 {
   "format_version": "1.10.0",
   "minecraft:client_entity": {
@@ -207,6 +210,13 @@ Listed below are the mathematical functions available for use in MoLang.
 | `math.asin(value)`| arcsin of value |
 | `math.atan(value)`| arctan of value |
 | `math.atan2(y, x)`| arctan of y/x.  NOTE: the order of arguments! |
+| `math.ceil(value)`| Round value up to nearest integral number |
+| `math.clamp(value, min, max)`| Clamp value to between min and max inclusive |
+| `math.cos(value)`| Cosine (in degrees) of value |
+| `math.die_roll(num, low, high)`| returns the sum of 'num' random numbers, each with a value from low to high. Note: the generated random numbers are not integers like normal dice.  For that, use `math.die_roll_integer`. |
+| `math.die_roll_integer(num, low, high)`| returns the sum of 'num' random integer numbers, each with a value from low to high`.  Note: the generated random numbers are integers like normal dice. |
+| `math.exp(value)`| Calculates e to the value 'th power |
+| `math.floor(value)`| Round value down to nearest integral number |
 
 ## Arrow Operator `->`
 
