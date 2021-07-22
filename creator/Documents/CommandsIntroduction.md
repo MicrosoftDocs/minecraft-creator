@@ -22,29 +22,29 @@ Before getting started with commands, cheats must be enabled. This can be done u
 
 Activating cheats will allow the use of commands in the chat interface. Running commands in the chat is essential for getting the first command block in the newly created world, which must also be enabled (in the same menu) in order to use them. Command blocks will be enabled by default, so you do not have to change that option.
 
-![TODO](Media/Commands/enablecheats.png)
+![Activate cheats and command blocks options](Media/Commands/enablecheats.png)
 
 While not required, it can be helpful to set the default game mode to creative when starting out as command blocks can only be edited in creative mode. Setting the default game mode to creative will also activate cheats.
 
-![TODO](Media/Commands/defaultgamemode.png)
+![Default game mode option](Media/Commands/defaultgamemode.png)
 
 Finally, you may need to enable the “operator commands” permission for yourself in order to run commands in the chat and access command blocks. While this setting is on by default for new worlds you create, you may need to change this on previously created worlds or for other players you would like to grant this permission for. This can be done by opening the pause menu while in the world and clicking the icon to the right of your player.
 
-![TODO](Media/Commands/openpermissions.png)
+![Player permissions icon](Media/Commands/openpermissions.png)
 
 A list of various permissions will be shown. The “operator commands” permission in particular must be enabled in order to use commands in the chat and access command blocks.
 
-![TODO](Media/Commands/enablecommandspermission.png)
+![Operator commands option](Media/Commands/enablecommandspermission.png)
 
 ## Using the chat for commands
 
 The first step to learning commands is learning how to use the chat functionality. This is where you run simple commands, learn syntax, test, and ultimately open the gateway to command blocks. If your settings and permissions are set correctly, typing a forward slash `/` in the chat will display a large number of commands.
 
-![TODO](Media/Commands/chatcommands.png)
+![Chat slash command list](Media/Commands/chatcommands.png)
 
 A quick-action button also becomes available to generate a command for specific situations (such as changing the time of day or the current weather).
 
-![TODO](Media/Commands/quickaction.png)
+![Quick command menu](Media/Commands/quickaction.png)
 
 As you type, the list of commands will shrink to match the characters you input. You can press `tab` to cycle through the list at any time in order to choose the command to run. Once the name of the command has been fully typed out, the list of commands changes to a list of syntaxes for the selected command.
 

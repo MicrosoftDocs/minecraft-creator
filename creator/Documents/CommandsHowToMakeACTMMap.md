@@ -24,7 +24,7 @@ It’s recommended that the following be completed before beginning this tutoria
 
 An incomplete monument should be built at a static location. The 3 empty spaces in front of the stained glass indicates where wool is expected to be placed by the player when they collect it. The coordinates of these empty spaces are used for detection.
 
-![TODO](Media/Commands/monument.png)
+![Monument with 3 empty slots for blocks](Media/Commands/monument.png)
 
 A scoreboard objective needs to be created to silently keep track of which colors of wool have been placed. This information must be stored to prevent the player from simply breaking one of the wool blocks and placing it back down to cheat and earn more rewards.
 
@@ -64,7 +64,7 @@ As well, when the player receives diamonds as a reward, a generic chat message w
 
 Each of the following sets of commands will be placed in their own chains, being a copy of what is shown in the image below for each individual chain. The individual chains are very similar to one another, but each specifically detects the correct color of wool at the expected location. Note that all chain command blocks are set to conditional.
 
-![TODO](Media/Commands/monumentrewardonce.png)
+![A repeating command block followed by 3 conditional chain blocks](Media/Commands/monumentrewardonce.png)
 
 ### Detecting red wool
 
@@ -109,7 +109,7 @@ The exact same process occurs as the red wool, except this time the commands are
 
 Once the monument is complete, the player is rewarded with a stack of diamonds. In this case, some simple math can be used to determine if all wools have been placed. Since each of the fake players have a score of 1 after the wools is detected, if the sum of all fake players is 3, then all wools have been placed. The “+=” scoreboard operator can aid in obtaining the sum of scores.
 
-![TODO](Media/Commands/monumentrewardcomplete.png)
+![A repeating command block followed by 2 chain blocks followed by 2 conditional chain blocks](Media/Commands/monumentrewardcomplete.png)
 
 
 1. The fake player named “#total_wool” first has their score set to 0. Since the `+=` operator adds one score to another, the score will increase more and more each tick. Setting it to 0 first is what will accurately give us the sum.
