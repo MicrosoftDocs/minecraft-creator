@@ -202,16 +202,16 @@ Listed below are the mathematical functions available for use in MoLang.
 
 | Function| Description |
 |:-----------|:-----------|
-| `math.abs(value)`| Absolute value of value |
-| `math.acos(value)`| arccos of value |
-| `math.asin(value)`| arcsin of value |
-| `math.atan(value)`| arctan of value |
-| `math.atan2(y, x)`| arctan of y/x.  NOTE: the order of arguments! |
-| `math.ceil(value)`| Round value up to nearest integral number |
-| `math.clamp(value, min, max)`| Clamp value to between min and max inclusive |
-| `math.cos(value)`| Cosine (in degrees) of value |
-| `math.die_roll(num, low, high)`| returns the sum of 'num' random numbers, each with a value from low to high.Note: the generated random numbers are not integers like normal dice.  For that, use `math.die_roll_integer`. |
-| `math.die_roll_integer(num, low, high)`| returns the sum of 'num' random integer numbers, each with a value from low to high`.  Note: the generated random numbers are integers like normal dice. |
+|`math.abs(value)`| Absolute value of value |
+|`math.acos(value)`| arccos of value |
+|`math.asin(value)`| arcsin of value |
+|`math.atan(value)`| arctan of value |
+|`math.atan2(y, x)`| arctan of y/x.  NOTE: the order of arguments! |
+|`math.ceil(value)`| Round value up to nearest integral number |
+|`math.clamp(value, min, max)`| Clamp value to between min and max inclusive |
+|`math.cos(value)`| Cosine (in degrees) of value |
+|`math.die_roll(num, low, high)`| returns the sum of 'num' random numbers, each with a value from low to high.Note: the generated random numbers are not integers like normal dice.  For that, use `math.die_roll_integer`. |
+|`math.die_roll_integer(num, low, high)`| returns the sum of 'num' random integer numbers, each with a value from low to high`.  Note: the generated random numbers are integers like normal dice. |
 |`math.exp(value)`| Calculates e to the value'th power |
 |`math.floor(value)`| Round value down to nearest integral number |
 |`math.hermite_blend(value)`| Useful for simple smooth curve interpolation using one of the Hermite Basis functions:`3t^2 - 2t^3`.  Note that while any valid float is a valid input, this function works best in the range [0,1]. |
