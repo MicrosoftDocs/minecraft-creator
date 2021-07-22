@@ -11,3 +11,9 @@
   - name: Item Documentation
     tocHref: /creator/reference/content/itemreference/
     topicHref: /creator/reference/content/itemreference/index
+  - name: Recipe Documentation
+    tocHref: /creator/reference/content/recipereference/
+    topicHref: /creator/reference/content/recipereference/index
+  - name: MoLang Documentation
+    tocHref: /creator/reference/content/molangreference/
+    topicHref: /creator/reference/content/molangreference/index
