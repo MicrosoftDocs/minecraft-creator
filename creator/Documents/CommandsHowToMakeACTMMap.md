@@ -1,8 +1,8 @@
 ---
-title: Commands Part 4 - How To Make a Complete the Monument Map
+title: Commands - How To Make a Complete the Monument Map
 author: ReWrite-Media
 ---
-# Commands: Part 4 - How To Make a Complete the Monument Map
+# Commands - How To Make a Complete the Monument Map
 
 Now it’s time to create a complete command system: detecting the completion of a monument for a short “Complete the Monument” map.
 
@@ -16,9 +16,9 @@ In this tutorial you will learn the following:
 
 It’s recommended that the following be completed before beginning this tutorial.
 
-- [Commands: Part 1 - Introduction](CommandsIntroduction.md)
-- [Commands: Part 2 - Command Blocks](CommandBlocks.md)
-- [Commands: Part 3 - Popular Commands](CommandsPopularCommands.md)
+- [Commands - Introduction](CommandsIntroduction.md)
+- [Commands - Getting Started with Command Blocks](CommandBlocks.md)
+- [Commands - Popular Commands](CommandsPopularCommands.md)
 
 ## The setup
 

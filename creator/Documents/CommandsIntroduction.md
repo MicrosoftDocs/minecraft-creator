@@ -1,8 +1,8 @@
 ---
-title: Commands Part 1 - Introduction
+title: Commands - Introduction
 author: ReWrite-Media
 ---
-# Commands: Part 1 - Introduction
+# Commands - Introduction
 
 Commands are specific instructions that Minecraft will carry out. These instructions can be as simple as changing the time of day or as complex as setting up and working with a scoreboard. There are a wide variety of commands, and each have their own utility to improve your content.
 
