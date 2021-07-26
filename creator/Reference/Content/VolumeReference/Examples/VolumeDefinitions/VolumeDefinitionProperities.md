@@ -1,7 +1,7 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Block Properties & Descriptions
+title: Volume Properties & Descriptions
 ms.prod: gaming
 ---
 
