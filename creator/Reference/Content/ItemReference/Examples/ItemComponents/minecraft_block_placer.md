@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:block_placer
 
-`minecraft:block_placer` sets the item as a Planter item component for blocks. planter items are items that can be planted into another block.
+`minecraft:block_placer` sets the item as a Planter item component for blocks. Planter items are items that can be planted into another block.
 
 ## Parameters
 
