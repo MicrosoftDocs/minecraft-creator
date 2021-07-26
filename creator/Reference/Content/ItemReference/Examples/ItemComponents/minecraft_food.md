@@ -78,7 +78,6 @@ ms.prod: gaming
 - [potato](../../../../Source/VanillaBehaviorPack_Snippets/items/potato.md)
 - [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/items/pufferfish.md)
 - [pumpkin_pie](../../../../Source/VanillaBehaviorPack_Snippets/items/pumpkin_pie.md)
-- [pumpkin_seeds](../../../../Source/VanillaBehaviorPack_Snippets/items/pumpkin_seeds.md)
 - [rabbit_stew](../../../../Source/VanillaBehaviorPack_Snippets/items/rabbit_stew.md)
 - [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/items/rabbit.md)
 - [rotten_flesh](../../../../Source/VanillaBehaviorPack_Snippets/items/rotten_flesh.md)
