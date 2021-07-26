@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:ticking
 
-`minecraft:ticking` is a component controlled by a `JSON object` that describes how the component will trigger an even at a regular interval between two values.
+`minecraft:ticking` is a component controlled by a `JSON object` that describes how the component will trigger an event at a regular interval between two values.
 
 ## Default Parameter
 
