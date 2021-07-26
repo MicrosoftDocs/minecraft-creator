@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:placement_filter
 
-`minecraft:placement_filter` is a component controlled by a `JSON object` that sets rules for under what conditions the block can be placed/survive
+`minecraft:placement_filter` is a component controlled by a `JSON object` that sets rules for under what conditions the block can be placed.
 
 ## Default Parameter
 
