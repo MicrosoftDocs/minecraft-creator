@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # minecraft:random_ticking
 
-`minecraft:random_ticking` is a component controlled by a `JSON object` that describes how the component will trigger an even at a regular interval between two values.
+`minecraft:random_ticking` is a component controlled by a `JSON object` that describes how the component will trigger an event at an irregular interval between two values.
 
 ## Default Parameter
 
