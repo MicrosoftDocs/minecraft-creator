@@ -17,7 +17,7 @@ Building sets of GameTests requires building out your GameTests via a behavior P
 >GameTest Framework is still experimental. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.  Check the Minecraft Changelog for details on any changes to GameTest Framework.
 
 >[!IMPORTANT]
->To build and run your own GameTests, you must use the latest Beta versions of Minecraft (version 1.16.230+). See [Minecraft Betas](https://aka.ms/mcbeta) for more information.
+Because GameTest Framework is adding and updating functionality frequently, we recommend using the the latest Beta versions of Minecraft. See [Minecraft Betas](https://aka.ms/mcbeta) for more information. The syntax of this sample is intended to be compatible with the latest beta versions.
 
 ### Requirements
 
@@ -160,7 +160,7 @@ When a GameTest Framework-enabled world opens with this file registered, your Ga
 
 Note that as you make changes to your scripts or structures, you will need to exit out of your world and reload it. If there are any script errors, you will see them displayed as the world is loaded.
 
-To register your GameTest scripts, you'll want to use the RegistrationBuilder class. You can see more information on the Registration Builder class at [Registration Builder](../ScriptAPI/GameTest/RegistrationBuilder.md).
+To register your GameTest scripts, you'll want to use the RegistrationBuilder class. You can see more information on the Registration Builder class at [Registration Builder](../ScriptAPI/mojang-gametest/RegistrationBuilder.md).
 
 An example line of JavaScript that uses RegistrationBuilder looks like:
 
@@ -184,88 +184,56 @@ Test functions are where the actual execution of a test happens.  The test funct
 Sample Test:
 
 ```javascript
-import * as GameTest from "GameTest";
-import { BlockLocation } from "Minecraft";
-        
-function simpleMobTest(test) 
-{  
-        const attackerType = "fox";
-        const victimType = "chicken";
-        
-        test.spawn(attackerType, new BlockLocation(5, 2, 5));
-        test.spawn(victimType, new BlockLocation(2, 2, 2));
-        
-        // wait 20 seconds, then check whether the victim still exists
-        test.runAtTickTime(400, () =>{
-                        assertEntityNotInArea(test, victimType, 1, 1, 1, 10, 9, 10);
-                        test.succeed();
-        });
-}
+import * as GameTest from "mojang-gametest";
+import { BlockLocation } from "mojang-minecraft";
 
-/// Helper Function that will throw an error and stop further execution if it finds a mob
-/// in an area.
-function assertEntityNotInArea(test, entityType, xFrom, yFrom, zFrom, xTo, yTo, zTo)
-{
-        for (let i=xFrom; i<=xTo; i++)
-        {
-                for (let j=yFrom; j<=yTo; j++)
-                {
-                        for (let k=zFrom; k<=zTo; k++)
-                        {
-                                test.assertEntityNotPresent(entityType, new BlockLocation(i, j, k));
-                        }
-                }
-        }
-}
+function simpleMobTest(test) {
+  const attackerId = "fox";
+  const victimId = "chicken";
+
+  test.spawn(attackerId, new BlockLocation(5, 2, 5));
+  test.spawn(victimId, new BlockLocation(2, 2, 2));
+
+  test.assertEntityPresentInArea(victimId, true);
+
+  // Succeed when the victim dies
+  test.succeedWhen(() => {
+    test.assertEntityPresentInArea(victimId, false);
+  });
+};
 ```
 
 Some things to observe in this test function:
 
 - You can use the `spawn` method to create new mobs in your test.
 - Coordinates used in APIs like spawn are relative to within your .MCStructure.
-- `assert` functions cause code execution to stop if the conditions described in the method are not true.  Here, utilizing a helper function, this code asserts that a chicken entity is no longer in the structure. If one is found within any of the blocks in the structure, the `assert` code will throw an error.  However, if no chicken is found, we make our way to the test.succeed line of code, and the test passes.
+- `assert` functions cause code execution to stop if the conditions described in the method are not true.  Here, this code asserts that a chicken entity is no longer in the structure (the `false` in the method assertEntityPresentInArea tells the function to assert that the entity is no longer there). If one is found within any of the blocks in the structure, the `assert` code will throw an error.  However, if no chicken is found, we make our way to the test.succeed line of code, and the test passes.
 
 The full JavaScript StarterTests.js file looks like:
 
 ```javascript
-import * as GameTest from "GameTest";
-import { BlockLocation } from "Minecraft";
-        
-function simpleMobTest(test) 
-{  
-        const attackerType = "fox";
-        const victimType = "chicken";
-        
-        test.spawn(attackerType, new BlockLocation(5, 2, 5));
-        test.spawn(victimType, new BlockLocation(2, 2, 2));
-        
-        // wait 20 seconds, then check whether the victim still exists
-        test.runAtTickTime(400, () =>{
-                        assertEntityNotInArea(test, victimType, 1, 1, 1, 10, 9, 10);
-                        test.succeed();
-        });
-}
+import * as GameTest from "mojang-gametest";
+import { BlockLocation } from "mojang-minecraft";
 
-/// Helper Function that will throw an error and stop further execution if it finds a mob
-/// in an area.
-function assertEntityNotInArea(test, entityType, xFrom, yFrom, zFrom, xTo, yTo, zTo)
-{
-        for (let i=xFrom; i<=xTo; i++)
-        {
-                for (let j=yFrom; j<=yTo; j++)
-                {
-                        for (let k=zFrom; k<=zTo; k++)
-                        {
-                                test.assertEntityNotPresent(entityType, new BlockLocation(i, j, k));
-                        }
-                }
-        }
-}
+function simpleMobTest(test) {
+  const attackerId = "fox";
+  const victimId = "chicken";
 
-/// Registration Code for our test
+  test.spawn(attackerId, new BlockLocation(5, 2, 5));
+  test.spawn(victimId, new BlockLocation(2, 2, 2));
+
+  test.assertEntityPresentInArea(victimId, true);
+
+  // Succeed when the victim dies
+  test.succeedWhen(() => {
+    test.assertEntityPresentInArea(victimId, false);
+  });
+};
+
+// Registration Code for our test
 GameTest.register("StarterTests", "simpleMobTest", simpleMobTest)
         .maxTicks(410)
-        .structureName("startertests:mediumglass");   /* use the mediumglass.mcstructure file */
+        .structureName("startertests:mediumglass"); /* use the mediumglass.mcstructure file */
 ```
 
 To finish the sample, you will want to use a structure block to define the test.
@@ -312,4 +280,4 @@ To run a specific test, use `/gametest run <classname>:<testName>`, like:
 You've created your first GameTest Framework test. GameTests allow you as a Creator to stretch your content, exercise your entities, and validate your gameplay mechanics. You can view the GameTest API below to learn more about what is included in the GameTest Framework.
 
 > [!div class="nextstepaction"]
-> [GameTest API](../ScriptAPI/GameTest/gametest.md)
+> [GameTest API](../ScriptAPI/mojang-gametest/mojang-gametest.md)
