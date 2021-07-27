@@ -2,6 +2,7 @@
 author: v-josjones
 ms.author: v-josjones
 title: Building your first GameTest
+description: Tutorial for building a GameTest using structures and JavaScript.
 ms.prod: gaming
 ---
 
@@ -17,7 +18,7 @@ Building sets of GameTests requires building out your GameTests via a behavior P
 >GameTest Framework is still experimental. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.  Check the Minecraft Changelog for details on any changes to GameTest Framework.
 
 >[!IMPORTANT]
-Because GameTest Framework is adding and updating functionality frequently, we recommend using the the latest Beta versions of Minecraft. See [Minecraft Betas](https://aka.ms/mcbeta) for more information. The syntax of this sample is intended to be compatible with the latest beta versions.
+Because GameTest Framework is adding and updating functionality frequently, we recommend using the latest Beta versions of Minecraft. See [Minecraft Betas](https://aka.ms/mcbeta) for more information. The syntax of this sample is intended to be compatible with the latest beta versions.
 
 ### Requirements
 
