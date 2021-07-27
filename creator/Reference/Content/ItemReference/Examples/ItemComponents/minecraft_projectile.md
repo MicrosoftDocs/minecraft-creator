@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:projectile
+title: minecraft:projectile(Item)
 ms.prod: gaming
 ---
 
-# minecraft:projectile
+# minecraft:projectile (Item)
 
 `minecraft:projectile` sets the projectile item component. Projectile items shoot out, like an arrow.
 

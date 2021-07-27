@@ -20,7 +20,7 @@ The language structure is largely based on simple 'C' language family style synt
 In simple cases, the terminating `;` is omitted and the expression result is returned.  In complex cases (where there are multiple statements terminated with `;`s, `0.0` is returned unless there is a `return` statement, which will exit the current script scope returning the computed value of that return expression (exactly like C).
 
 > [!NOTE]
-> All things in MoLang are **case-INsensitive**, with the exception of strings, which maintain the case provided.
+> All things in MoLang are **case-insensitive**, with the exception of strings, which maintain the case provided.
 
 > [!TIP]
 > Code examples below are tagged with `C#` to have a similar syntax highlighting as MoLang.

@@ -33,8 +33,8 @@ landingContent:
         links:
           - text: AI Goal List
             url: Examples/AIGoalList.md
-          - text: "NEW! minecraft:behavior.jump_to_Entity"
-            url: Examples/EntityGoals/minecraftBehavior_jump_to_Entity.md
+          - text: "NEW! minecraft:behavior.jump_to_block"
+            url: Examples/EntityGoals/minecraftBehavior_jump_to_block.md
           - text: "NEW! minecraft:behavior.play_dead"
             url: Examples/EntityGoals/minecraftBehavior_play_dead.md
           - text: minecraft:behavior.nearest_attackable_target

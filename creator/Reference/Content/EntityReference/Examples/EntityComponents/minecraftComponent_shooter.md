@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:shooter
+title: minecraft:shooter(entity)
 ms.prod: gaming
 ---
 
-# minecraft:shooter
+# minecraft:shooter (Entity)
 
 `minecraft:shooter` defines the entity's ranged attack behavior.
 
