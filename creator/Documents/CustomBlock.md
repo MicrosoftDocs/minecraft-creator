@@ -28,7 +28,7 @@ It’s recommended that the following be completed before beginning this tutoria
 - A Minecraft World with `Holiday Creator Features` enabled.
 
 >[!IMPORTANT]
->Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.  
+>Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
 
 ## Setting up the Resource JSON File
 
@@ -59,7 +59,7 @@ The blocks.json file has a similar set up to the manifest.json and has requireme
             },
         "sound":"dirt"
         }
-    }    
+    }
     ```
 
 1. Save the file

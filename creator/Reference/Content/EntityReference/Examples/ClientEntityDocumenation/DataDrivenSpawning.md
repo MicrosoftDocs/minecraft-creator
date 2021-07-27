@@ -79,3 +79,59 @@ Components
     ]
   }
 ```
+
+## Vanilla Entity Spawn Rules
+
+Below is a list of all the available Spawn Rules that entities within Minecraft:Bedrock Edition located in the Vanilla Behavior Pack.
+
+|Entity Spawn Rules JSON |
+|:-----|
+|**NEW!** &nbsp; [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/axolotl.md)|
+|[bat](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/bat.md)|
+|[bee](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/bee.md)|
+|[blaze](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/blaze.md)|
+|[cat](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/cat.md)|
+|[chicken](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/chicken.md)|
+|[cod](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/cod.md)|
+|[cow](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/cow.md)|
+|[creeper](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/creeper.md)|
+|[dolphin](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/dolphin.md)|
+|[donkey](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/donkey.md)|
+|[drowned](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/drowned.md)|
+|[enderman](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/enderman.md)|
+|[fox](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/fox.md)|
+|[ghast](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/ghast.md)|
+|**NEW!** &nbsp; [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/glow_squid.md)|
+|**NEW!** &nbsp; [goat](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/goat.md)|
+|[guardian](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/guardian.md)|
+|[hoglin](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/hoglin.md)|
+|[horse](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/horse.md)|
+|[husk](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/husk.md)|
+|[llama](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/llama.md)|
+|[magma_cube](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/magma_cube.md)|
+|[mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/mooshroom.md)|
+|[ocelot](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/ocelot.md)|
+|[panda](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/panda.md)|
+|[parrot](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/parrot.md)|
+|[phantom](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/phantom.md)|
+|[pig](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/pig.md)|
+|[piglin](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/piglin.md)|
+|[pillager](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/pillager.md)|
+|[polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/polar_bear.md)|
+|[pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/pufferfish.md)|
+|[rabbit](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/rabbit.md)|
+|[salmon](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/salmon.md)|
+|[sheep](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/sheep.md)|
+|[skeleton](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/skeleton.md)|
+|[slime](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/slime.md)|
+|[spider](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/spider.md)|
+|[squid](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/squid.md)|
+|[stray](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/stray.md)|
+|[strider](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/strider.md)|
+|[tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/tropicalfish.md)|
+|[turtle](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/turtle.md)|
+|[witch](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/witch.md)|
+|[wither_skeleton](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/wither_skeleton.md)|
+|[wolf](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/wolf.md)|
+|[zombie_pigman](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/zombie_pigman.md)|
+|[zombie](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/zombie.md)|

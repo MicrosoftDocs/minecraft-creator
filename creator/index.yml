@@ -6,14 +6,14 @@ metadata:
   title: Minecraft Bedrock documentation # Required; page title shown in search results < 60 chars
   description: Learn how to customize Minecraft Bedrock Edition through Add-ons. # < 160 chars
   service: service
-  ms.service: service # Required; service per approved list. 
+  ms.service: service # Required; service per approved list.
   ms.topic: hub-page # Required
   ms.date: 03/20/2021
   author: v-josjones # Required; Github alias
   ms.author: v-josjones # Required; Microsoft alias; with correct grammar
 
-# highlighted content section (optional), will outlined up to 8 items in a 4x2 grid. 
-highlightedContent: 
+# highlighted content section (optional), will outlined up to 8 items in a 4x2 grid.
+highlightedContent:
 # itemType:  architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     #card used to define plugin
@@ -32,8 +32,8 @@ highlightedContent:
     - title: Getting Started with Add-on Development
       itemType: get-started
       url: Documents/GettingStarted.md
-      
-# productDirectory section (optional) will outline rows that can contain text and media along with lists. 
+
+# productDirectory section (optional) will outline rows that can contain text and media along with lists.
 productDirectory:
   items:
     # card
