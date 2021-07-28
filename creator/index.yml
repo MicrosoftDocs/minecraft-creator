@@ -17,17 +17,17 @@ highlightedContent:
 # itemType:  architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     #card used to define plugin
-    - title: Create a Custom NPC
-      itemType: whats-new
-      url: Documents/CreateNPCs.md
-    #card
-    - title: NPC Dialogue Command
-      itemType: whats-new
-      url: Documents/NPCDialogue.md
-    #card
-    - title: Getting Started with Blockbench Entity Wizard
+    - title: Getting Started with Minecraft Entity Wizard
       itemType: whats-new
       url: Documents/BlockBenchEntityWizardGettingStarted.md
+    #card
+    - title: Blocks JSON Documentation
+      itemType: whats-new
+      url: Reference/Content/blockreference/index.yml
+    #card
+    - title: Items JSON Documentation
+      itemType: whats-new
+      url: Reference/Content/itemreference/index.yml
     #card
     - title: Getting Started with Add-on Development
       itemType: get-started
@@ -47,6 +47,10 @@ productDirectory:
           text: Introduction To Behavior Packs
         - url: Documents/CustomBlock.md
           text: How to add a Custom Block
+        - url: Documents/CreateNPCs.md
+          text: Create a Custom NPC
+        - url: Documents/NPCDialogue.md
+          text: NPC Dialogue Command
   # card
     - title: Working with Commands
       imageSrc: images/Script.png
@@ -78,6 +82,6 @@ productDirectory:
         - url: Reference/Content/volumereference/index.yml
           text: Volume JSON Documentation
         - url: Reference/Content/molangreference/index.yml
-          text: MoLang JSON Documentation
+          text: MoLang Documentation
 
 
