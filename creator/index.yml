@@ -61,7 +61,7 @@ productDirectory:
           text: Getting Started with GameTest
         - url: Documents/GameTestBuildYourFirstGameTest.md
           text: Build your first GameTest
-        - url: ScriptAPI/GameTest/GameTest.md
+        - url: ScriptAPI/mojang-gametest/mojang-gametest.md
           text: GameTest API
   # card
     - title: Reference Documentation
