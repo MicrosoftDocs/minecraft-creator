@@ -25,9 +25,9 @@ highlightedContent:
       itemType: whats-new
       url: Documents/NPCDialogue.md
     #card
-    - title: Caves and Cliffs Entities
+    - title: Getting Started with Blockbench Entity Wizard
       itemType: whats-new
-      url: Documents/CavesAndCliffsEntities.md
+      url: Documents/BlockBenchEntityWizardGettingStarted.md
     #card
     - title: Getting Started with Add-on Development
       itemType: get-started
@@ -61,7 +61,7 @@ productDirectory:
           text: Getting Started with GameTest
         - url: Documents/GameTestBuildYourFirstGameTest.md
           text: Build your first GameTest
-        - url: ScriptAPI/GameTest/GameTest.md
+        - url: ScriptAPI/mojang-gametest/mojang-gametest.md
           text: GameTest API
   # card
     - title: Reference Documentation
@@ -69,5 +69,15 @@ productDirectory:
       links:
         - url: Reference/Content/entityreference/index.yml
           text: Entity JSON Documentation
+        - url: Reference/Content/blockreference/index.yml
+          text: Block JSON Documentation
+        - url: Reference/Content/itemreference/index.yml
+          text: Item JSON Documentation
+        - url: Reference/Content/Recipereference/index.yml
+          text: Recipe JSON Documentation
+        - url: Reference/Content/volumereference/index.yml
+          text: Volume JSON Documentation
+        - url: Reference/Content/molangreference/index.yml
+          text: MoLang JSON Documentation
 
 

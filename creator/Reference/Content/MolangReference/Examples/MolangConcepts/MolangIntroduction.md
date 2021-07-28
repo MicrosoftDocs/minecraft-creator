@@ -9,10 +9,6 @@ ms.prod: gaming
 
 MoLang is a simple expression-based language designed for fast, data-driven calculation of values at run-time, and with a direct connection to in-game values and systems.
 
-### Why Does MoLang Exist?
-
-MoLang's focus is solely to enable script-like capabilities in high-performance systems where languages such as JavaScript are not performant at scale.  We need scripting capabilities in these low-level systems to support end-user modding capabilities, and custom entities, rendering, and animation.
-
 ## Lexical Structure
 
 The language structure is largely based on simple 'C' language family style syntax.  A script is made of either one expression for simple math calculations, or can be made of several statements where more complicated code is required.
@@ -23,7 +19,7 @@ In simple cases, the terminating `;` is omitted and the expression result is ret
 > All things in MoLang are **case-insensitive**, with the exception of strings, which maintain the case provided.
 
 > [!TIP]
-> Code examples below are tagged with `C#` to have a similar syntax highlighting as MoLang.
+> Code examples below are tagged with `C` to have a similar syntax highlighting as MoLang.
 
 ## Keywords
 
@@ -102,7 +98,7 @@ In general, variables of a mob are considered private to that mob and cannot be 
 
 MoLang supports the following value types as well:
 
-```C#
+```C
 Geometry
 Texture
 Material
@@ -124,7 +120,7 @@ Query functions (eg: `query.is_baby` or `query.is_item_equipped('main_hand')`) a
 To reduce typing burden and increase clarity when reading and writing MoLang, the following keyword aliases can make life a bit easier.
 
 > [!NOTE]
-> Note that left and right sides function identically in the Atlas Map.
+> Note that left and right sides function identically in the Alias Map.
 
 ### Alias Mapping
 
@@ -139,17 +135,17 @@ To reduce typing burden and increase clarity when reading and writing MoLang, th
 
 The following example shows how using aliases will keep the code short while functioning the same way.
 
-```C#
+```C
 math.cos(query.anim_time * 38) * variable.rotation_scale + variable.x * variable.x * query.life_time;
 ```
 
-```C#
+```C
 math.cos(q.anim_time * 38) * v.rotation_scale + v.x * v.x * q.life_time
 ```
 
 MoLang will also allow you to use either syntax and intermix as desired as shown in this last example below.
 
-```C#
+```C
 math.cos(q.anim_time * 38) * variable.rotation_scale + v.x * variable.x * query.life_time
 ```
 
@@ -157,7 +153,7 @@ math.cos(q.anim_time * 38) * variable.rotation_scale + v.x * variable.x * query.
 
 One difference between MoLang and the C style syntax is that structures of data are **implicitly** defined by usage.  Their purpose is to more efficiently pass data around, such as passing `v.location` rather than `v.x`, `v.y`, and `v.z`. An example of this is shown below:
 
-```C#
+```C
 v.location.x = 1;
 v.location.y = 2;
 v.location.z = 3;
@@ -168,23 +164,23 @@ v.another_mob_set_elsewhere->v.first_mobs_location = v.location;
 
 For some more usage examples, each of the following scripts return `1.23`
 
-```C#
+```C
 v.cowcow.friend = v.pigpig; v.pigpig->v.test.a.b.c = 1.23; return v.cowcow.friend->v.test.a.b.c;
 ```
 
-```C#
+```C
 v.cowcow.friend = v.pigpig; v.pigpig->v.test.a.b.c = 1.23; v.moo = v.cowcow.friend->v.test; return v.moo.a.b.c;
 ```
 
-```C#
+```C
 v.cowcow.friend = v.pigpig; v.pigpig->v.test.a.b.c = 1.23; v.moo = v.cowcow.friend->v.test.a; return v.moo.b.c;
 ```
 
-```C#
+```C
 v.cowcow.friend = v.pigpig; v.pigpig->v.test.a.b.c = 1.23; v.moo = v.cowcow.friend->v.test.a.b; return v.moo.c;
 ```
 
-```C#
+```C
 v.cowcow.friend = v.pigpig; v.pigpig->v.test.a.b.c = 1.23; v.moo = v.cowcow.friend->v.test.a.b.c; return v.moo;
 ```
 
@@ -244,8 +240,8 @@ Some return values of query function, or values stored in temp/entity/context va
 
 ### Example
 
-```C#
-"v.x = 0;
+```C
+v.x = 0;
 for_each(v.pig, query.get_nearby_entities(4, 'minecraft:pig'), {
     v.x = v.x + v.pig->query.get_relative_block_state(0, 1, 0, 'flammable');
 });
@@ -255,7 +251,7 @@ for_each(v.pig, query.get_nearby_entities(4, 'minecraft:pig'), {
 
 One can group a series of statements into a single group by wrapping them in { and } symbols.  This is used primarily in loops and conditional statements:
 
-```C#
+```C
 (v.moo > 0) ? {
     v.x = math.sin(q.life_time * 45);
     v.x = v.x * v.x + 17.3;
@@ -276,7 +272,7 @@ Sometimes you may want to execute an expression multiple times. Rather than copy
 
 The example below showcases how a Fibonacci Calculator can be written in MoLang.
 
-```C#
+```C
 v.x = 1;
 v.y = 1;
 loop(10, {
@@ -296,7 +292,7 @@ This will exit out of a `loop` or `for_each` early.
 
 ### Example
 
-```C#
+```C
 v.x = 1;
 v.y = 1;
 loop(10, {t.x = v.x + v.y; v.x = v.y; v.y = t.x; (v.y > 20) ? break;});
@@ -304,7 +300,7 @@ loop(10, {t.x = v.x + v.y; v.x = v.y; v.y = t.x; (v.y > 20) ? break;});
 
 This will immediately exit the inner-most active loop, as per C - style language rules.  If you have:
 
-```C#
+```C
 v.x = 0;
 loop(10, {loop(10, {v.x = v.x + 1; (v.x > 5) ? break;});});
 ```
@@ -319,7 +315,7 @@ The `break` statement will terminate the inner loop when `v.x > 5`, and continue
 
 The following example will result in v.x becoming 6.0, as the increment will be skipped once it reaches that value.  Note that it is better to break out of the loop in this contrived example, as it would be more performant than continuing to perform all 10 iterations.
 
-```C#
+```C
 v.x = 0;
 loop(10, {
  (v.x > 5) ? continue;
@@ -329,11 +325,11 @@ loop(10, {
 
 ## Null Coalescing Operator `??`
 
-Similar to how the null-coalescing operator works in C#, you can now reference a variable that may or may not exist without seeing a content error.  If it doesn't, you can now provide a default value to use.  Previously, if a variable didn't exist you would get a content error.  This was to make sure variables were always initialized correctly to avoid uninitialized variable bugs.
+Similar to how the null-coalescing operator works in C, you can now reference a variable that may or may not exist without seeing a content error.  If it doesn't, you can now provide a default value to use.  Previously, if a variable didn't exist you would get a content error.  This was to make sure variables were always initialized correctly to avoid uninitialized variable bugs.
 
 Unfortunately this then required initialize scripts, or in some cases some complex work-arounds to make sure variables were initialized.  Now, if you know a variable won't be initialized in the first run of a script, you can use the following:
 
-```C#
+```C
 variable.x = (variable.x ?? 1.2) + 0.3;
 ```
 
@@ -353,13 +349,13 @@ Note that the `??` operator will work with `variable.`s, `temp.`s, and `context.
 
 A simple expression is a single statement, the value of which is returned to the system that evaluated the expression. This is showcased in the example below.
 
-```C#
+```C
 math.sin(query.anim_time * 1.23)
 ```
 
 A complex expression is one with multiple statements, each ending in a ';'.  Each statement is evaluated in order.  In the current implementation, the last statement requires the use of the return keyword and defines the resulting value of the expression as shown here:
 
-```C#
+```C
 temp.moo = math.sin(query.anim_time * 1.23);
 temp.baa = math.cos(query.life_time + 2.0);
 return temp.moo * temp.moo + temp.baa;

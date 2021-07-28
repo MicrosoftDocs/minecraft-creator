@@ -30,7 +30,11 @@ To create a custom NPC, follow these instructions:
 
 ![NPC Editor Interface](Media\NPCs\LearningPortal_NPCEditor.PNG)
 
-You can also add dialogue for your NPC to give players more information about the commands they will execute or deliver story details. For more information, see [NPC Dialogue Command](/minecraft/creator/Documents/NPCDialogue).
+The NPC editor has a built in dialog feature to give players more information about the commands they will execute or to deliver story details. 
+
+This dialog box has a limit of 307 characters before the text goes off the screen. You can also use color codes to change the color of the text.
+
+You can use behaviour packs and commands to create a more advanced dialogue system for your custom NPCs. See [NPC Dialogue Command](/minecraft/creator/Documents/NPCDialogue) for more information.
 
 ## Change NPC skins
 

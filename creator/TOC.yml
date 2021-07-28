@@ -78,6 +78,14 @@
             href: Reference/Content/recipereference/index.yml
           - name: Recipe Definitions
             href: Reference/Content/recipereference/Examples/RecipeDefinitions/TOC.yml
+        - name: Volume JSON
+          items:
+          - name: Volume Documentation Homepage
+            href: Reference/Content/volumereference/index.yml
+          - name: Volume Components
+            href: Reference/Content/volumereference/Examples/VolumeComponents/TOC.yml
+          - name: Volume Definitions
+            href: Reference/Content/volumereference/Examples/VolumeDefinitions/VolumeDefinitionProperties.md
         - name: MoLang
           items:
           - name: MoLang Documentation Homepage

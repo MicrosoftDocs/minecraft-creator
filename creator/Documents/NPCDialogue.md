@@ -18,7 +18,7 @@ It’s recommended that the following be completed before beginning this tutoria
 
 ## The Scene File
 
-The scene file is a json file located inside the **dialogue** folder in the root directory of your behavior pack (%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\development_behavior_packs\<your behavior pack folder>) that contains all the information needed for your branching dialogue. You can create as many scene files as you need. You can create a scene file for each NPC in your world or create a scene file for each chapter of your narrative, or you can simply have one scene file for the world - the choice is completely up to you as the branching dialogue feature will read all files in the dialogue folder, regardless of how you decided to organize them.
+The scene file is a json file located inside the **dialogue** folder in the root directory of your behavior pack (`%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\development_behavior_packs\<your behavior pack folder>`) that contains all the information needed for your branching dialogue. You can create as many scene files as you need. You can create a scene file for each NPC in your world or create a scene file for each chapter of your narrative, or you can simply have one scene file for the world - the choice is completely up to you as the branching dialogue feature will read all files in the dialogue folder, regardless of how you decided to organize them.
 
 ### Properties
 
@@ -112,16 +112,20 @@ The Dialogue command is what enables NPCs to open or read scene files. The comma
 
 Dialogue Open is used to force open an NPC dialogue box to the targeted player(s). This feature has previously been referred to as Remote Fire, as it simulates the experience of clicking on an NPC. This command can be used on any NPC and doesn’t require a behavior pack unless you want the NPC to use a scene file for its dialogue (which is not a requirement when using dialogue open). 
 
-The syntax for Dialogue open is as follows:
+The syntax for Dialogue Open is as follows:
 
 ```json
     /dialogue open <npc: target> <player: target> [sceneName:string]
 ```
 
 `/dialogue`: The initial command.
+
 `open`: The command variant.
+
 `<npc: target>`: The NPC that you are targeting.
+
 `<player: target>`: The player that you are targeting. This the player who will see the NPC dialog box.
+
 `[sceneName:string]`: This is the name used if you want to use dialogue contained in a scene file. The string must be a valid scene tag name, or it will fail. This is an optional parameter.
 
 >[!NOTE]
@@ -146,10 +150,14 @@ The syntax for Dialogue open is as follows:
 ```
 
 `/dialogue`: The initial command.
+
 `change`: The command variant.
+
 `<npc: target>`: The NPC that you are targeting.
-`[sceneName:string]`: This is the name used if you want to use dialogue contained in a scene file. The string must be a valid scene tag name, or it will fail.
-`<player: target>`: The player that you are targeting (this is the player who will see the dialogue box). If omitted in a “/dialogue change” command, the NPC dialogue will be updated for all players.
+
+`<sceneName:string>`: This is the name used if you want to use dialogue contained in a scene file. The string must be a valid scene tag name, or it will fail.
+
+`[player: target]`: The player that you are targeting (this is the player who will see the dialogue box). If omitted in a “/dialogue change” command, the NPC dialogue will be updated for all players.
 
 ### Practical Usage
 
@@ -176,7 +184,14 @@ When using the `/dialogue` command, there will be times when you will need to ta
 Example:
 
 ```json
-    @initiator
+    "buttons": [
+        {
+            "name": { "rawtext": [ { "translate": "dialogue.button.name" } ] },
+            "commands": [
+                "/give @initiator gold_ingot"
+            ]
+        }
+    ]
 ```
 
 Using this target selector with NPCs allows them to update their dialogue on a per-player basis, meaning that in multiplayer, NPCs can remember each player’s dialogue state and send them unique dialogue accordingly. This is useful for times where a player changing an NPCs dialogue could result in other players missing out on the complete dialogue branch or to ensure each player only receives one item from an NPC, not allowing that same player to return to the NPC for more items or locking out other players from collecting their items.

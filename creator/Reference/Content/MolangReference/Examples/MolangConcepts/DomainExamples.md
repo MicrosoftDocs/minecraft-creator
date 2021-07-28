@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Domain Examples
 
-On this page, there are a few examples of how MoLang can be used in a variety of solutions
+On this page, there are a few examples of how MoLang can be used in a variety of solutions.
 
 ## Entity Definition Scripts
 
