@@ -19,7 +19,7 @@ highlightedContent:
     #card used to define plugin
     - title: Getting Started with Minecraft Entity Wizard
       itemType: whats-new
-      url: Documents/BlockBenchEntityWizardGettingStarted.md
+      url: Documents/MinecraftEntityWizard.md
     #card
     - title: Blocks JSON Documentation
       itemType: whats-new
