@@ -20,6 +20,8 @@
               href: Documents/NPCDialogue.md
             - name: Introduction to the Caves & Cliffs Entities
               href: Documents/CavesAndCliffsEntities.md
+            - name: Minecraft Entity Wizard
+              href: Documents/MinecraftEntityWizard.md
         - name: Commands and Command Blocks
           items:
           - name: Getting Started with Commands
