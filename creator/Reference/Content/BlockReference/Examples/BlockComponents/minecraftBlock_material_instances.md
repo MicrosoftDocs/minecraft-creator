@@ -17,10 +17,17 @@ ms.prod: gaming
 
 ## Extra Parameters
 
-`minecraft:material_instances` does not use any extra parameters.
+`minecraft:material_instances` can use the following to define the JSON object: 
+
+|Name |Default Value |Type |Description |
+|:----|:----|:----|:----|
+|texture |*not set* |String |	Defines what texture the block should have. Can be any texture name defined in your resource pack folder (textures/terrain_texture.json |
+|render_method |opaque |String |Defines what render method the block should use. Can be opaque, alpha_test or blend.|
 
 ## Example
 
 ```json
-"minecraft:material_instances":
+"minecraft:material_instances": {
+    "NewInstance":{"texture":"fancyTexture", "render_method": "alpha_test"}
+}
 ```

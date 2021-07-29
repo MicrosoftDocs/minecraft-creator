@@ -21,6 +21,6 @@ ms.prod: gaming
 
 ```json
 "set_block":{
-    "block_type": "redstone",
+    "block_type": "redstone"
 }
 ```
