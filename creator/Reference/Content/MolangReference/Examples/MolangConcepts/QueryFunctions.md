@@ -29,7 +29,7 @@ Query Functions are boolean expressions that allow you to query for values owned
 | query.anim_time| Returns the time in seconds since the current animation started, else 0.0 if not called within an animation |
 | query.any_animation_finished| Only valid in an animation controller.  Returns 1.0 if any animation in the current animation controller state has played through at least once, else it returns 0.0 |
 | query.any_tag| Returns if the item or block has any of the tags specified |
-| query.approx_eq| Returns 1.0 if all of the arguments are within 0.000000 of each other, else 0.0 |
+| query.approx_eq| Returns 1.0 if all of the arguments are within 0.000001 of each other, else 0.0 |
 | query.armor_color_slot| Takes the armor slot index as a parameter, and returns the color of the armor in the requested slot |
 | query.armor_material_slot| Takes the armor slot index as a parameter, and returns the armor material type in the requested armor slot |
 | query.armor_texture_slot| Takes the armor slot index as a parameter, and returns the texture type of the requested slot |
@@ -55,12 +55,12 @@ Query Functions are boolean expressions that allow you to query for values owned
 | query.combine_entities| Combines any valid entity references from all arguments into a single array.  Note that order is not preserved, and duplicates and invalid values are removed. |
 | query.count| Counts the number of things passed to it (arrays are counted as the number of elements they contain; non-arrays count as 1). |
 | query.current_squish_value| Returns the squish value for the current entity, or 0.0 if this doesn't make sense |
-| query.day| Returns the day of the current level. |
+| query.day| Returns number of in-game days played on the current level |
 | query.debug_output| debug log a value to the output debug window for builds that have one |
 | query.delta_time| Returns the time in seconds since the previous frame |
 | query.distance_from_camera| Returns the distance of the root of this actor or particle emitter from the camera |
-| query.effect_emitter_count| Returns the total number of active emitters of the callee's particle effect type |
-| query.effect_particle_count| Returns the total number of active particles of the callee's particle effect type |
+| query.effect_emitter_count| Returns the total number of active emitters of the caller's particle effect type |
+| query.effect_particle_count| Returns the total number of active particles of the caller's particle effect type |
 | query.equipment_count| returns the equipment count for an actor |
 | query.equipped_item_all_tags| takes a slot name followed by any tag you want to check for in the form of 'tag_name' and returns 1 if all of the tags are on that equipped item, 0 otherwise |
 | query.equipped_item_any_tag| takes a slot name followed by any tag you want to check for in the form of 'tag_name' and returns 0 if none of the tags are on that equipped item or 1 if at least 1 tag exists |
@@ -71,9 +71,9 @@ Query Functions are boolean expressions that allow you to query for values owned
 | query.get_actor_info_id| Returns the integer id of an actor by its string name |
 | query.get_animation_frame| Returns the current texture of the item |
 | query.get_default_bone_pivot| Gets specified axis of the specified bone orientation pivot |
-| query.get_equipped_item_name| takes one optional hand slot as a parameter (0 or 'main_hand' for main hand, 1 or 'off_hand' for off hand), and a second parameter (0=default) if you would like the equipped item or any non-zero number for the currently rendered item, and returns the name of the item in the requested slot (defaulting to the main hand if no parameter is supplied) if there is one, otherwise returns ''. |
+| query.get_equipped_item_name| takes one optional hand slot as a parameter (0 or 'main_hand' for main hand, 1 or 'off_hand' for off hand), and a second parameter (0=default) if you would like the equipped item or any non-zero number for the currently rendered item, and returns the name of the item in the requested slot (defaulting to the main hand if no parameter is supplied) if there is one, otherwise returns `''` (an empty string). |
 | query.get_locator_offset| Gets specified axis of the specified locator offset |
-| query.get_name| get the name of the mob if there is one, otherwise return '' |
+| query.get_name| get the name of the mob if there is one, otherwise return `''` (an empty string). |
 | query.get_root_locator_offset| Gets specified axis of the specified locator offset of the root model |
 | query.ground_speed| Returns the ground speed of the entity in metres/second |
 | query.has_any_family| Returns 1 if the entity has any of the specified families, else 0. |
@@ -90,7 +90,7 @@ Query Functions are boolean expressions that allow you to query for values owned
 | query.head_x_rotation| Takes one argument as a parameter.  Returns the nth head x rotation of the entity if it makes sense, else it returns 0.0 |
 | query.head_y_rotation| Takes one argument as a parameter.  Returns the nth head y rotation of the entity if it makes sense, else it returns 0.0 |
 | query.health| Returns the health of the entity, or 0.0 if it doesn't make sense to call on this entity. |
-| query.heightmap| Queries Height Map |
+| query.heightmap| Returns map's height. |
 | query.hurt_direction| returns the hurt direction for the actor, otherwise returns 0 |
 | query.hurt_time| returns the hurt time for the actor, otherwise returns 0 |
 | query.invulnerable_ticks| Returns the number of ticks of invulnerability the entity has left if it makes sense, else it returns 0.0 |
@@ -145,7 +145,7 @@ Query Functions are boolean expressions that allow you to query for values owned
 | query.is_on_screen| returns 1.0 if this is called on an entity at a time when it is known if it is on screen, else it returns 0.0 |
 | query.is_onfire| Returns 1.0 if the entity is on fire, else it returns 0.0 |
 | query.is_orphaned| Returns 1.0 if the entity is orphaned, else it returns 0.0 |
-| query.is_persona_or_premium_skin| Returns 1.0 if the player has a persona or permium skin, else it returns 0.0 |
+| query.is_persona_or_premium_skin| Returns 1.0 if the player has a persona or premium skin, else it returns 0.0 |
 | query.is_playing_dead| Returns 1.0 if the entity is playing dead, else it returns 0.0 |
 | query.is_powered| Returns 1.0 if the entity is powered, else it returns 0.0 |
 | query.is_pregnant| Returns 1.0 if the entity is pregnant, else it returns 0.0 |

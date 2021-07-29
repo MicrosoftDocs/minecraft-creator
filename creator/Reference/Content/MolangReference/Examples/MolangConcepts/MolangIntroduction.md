@@ -1,32 +1,32 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Introduction to MoLang
+title: Introduction to Molang
 ms.prod: gaming
 ---
 
-# Introduction to MoLang
+# Introduction to Molang
 
-MoLang is a simple expression-based language designed for fast, data-driven calculation of values at run-time, and with a direct connection to in-game values and systems.
+Molang is a simple expression-based language designed for fast, data-driven calculation of values at run-time, and with a direct connection to in-game values and systems.
 
 ## Lexical Structure
 
 The language structure is largely based on simple 'C' language family style syntax.  A script is made of either one expression for simple math calculations, or can be made of several statements where more complicated code is required.
 
-In simple cases, the terminating `;` is omitted and the expression result is returned.  In complex cases (where there are multiple statements terminated with `;`s, `0.0` is returned unless there is a `return` statement, which will exit the current script scope returning the computed value of that return expression (exactly like C).
+In simple cases, the terminating `;` is omitted and the expression result is returned.  In complex cases, where there are multiple statements terminated with `;`, `0.0` is returned unless there is a `return` statement, which will exit the current script scope returning the computed value of that return expression (exactly like C).
 
 > [!NOTE]
-> All things in MoLang are **case-insensitive**, with the exception of strings, which maintain the case provided.
+> All things in Molang are **case-insensitive**, with the exception of strings, which maintain the case provided.
 
 > [!TIP]
-> Code examples below are tagged with `C` to have a similar syntax highlighting as MoLang.
+> Code examples below are tagged with `C` to have a similar syntax highlighting as Molang.
 
 ## Keywords
 
 All identifiers not in a scope listed below are reserved for future use.
 
 > [!CAUTION]
-> Some operators are under `Experimental MoLang Features` at the moment in the list below. We are hoping people will experiment with them and give us feedback, so we can move them into general usage.
+> Some operators are under `Experimental Molang Features` at the moment in the list below. We are hoping people will experiment with them and give us feedback, so we can move them into general usage.
 
 | Keyword| Description |
 |:-----------|:-----------|
@@ -43,7 +43,7 @@ All identifiers not in a scope listed below are reserved for future use.
 | `temp.variable_name`| Read/write temporary storage |
 | `texture.texture_name`| A reference to a texture named in the entity definition |
 | `variable.variable_name`| Read/write storage on an actor |
-| `<test> ? <if true> : <if false>`| Trinary conditional operator |
+| `<test> ? <if true> : <if false>`| Ternary conditional operator |
 | `<test> ? <if true>`| Binary conditional operator |
 | `this`| The current value that this script will ultimately write to (context specific) |
 | `return`| For complex expressions, this evaluates the following statement and stops execution of the script, returns the value computed |
@@ -61,7 +61,7 @@ There are three variable lifetimes a variable may belong to: Temporary, Entity, 
 
 - **Temporary variables** (eg: `temp.moo = 1;`) are read/write and valid for the scope they are defined in, as per C rules.  For performance reasons their lifetime is global to the current script execution and may return a valid value outside of the outermost scope they are defined in for a script.  Be careful in complex scripts.  We will be adding content errors for invalid accesses as soon as possible.
 - **Entity variables** (eg: `variable.moo = 1;`) are read/write and store their value on the entity for the lifetime of that entity.  Note that these are currently not saved, so quitting and reloading the world will re-initialize these.  In the same way, if the entity is despawned, any variables on the entity will be lost.
-- **Context variables** (eg: `context.moo`) are read-only and valid for the script they are run on.  The game defines these, and details on what variables are in each will be available in the documentation of the area where that MoLang script exists (such as behaviors defining what context variables they expose).
+- **Context variables** (eg: `context.moo`) are read-only and valid for the script they are run on.  The game defines these, and details on what variables are in each will be available in the documentation of the area where that Molang script exists (such as behaviors defining what context variables they expose).
 
 ## Public Variables
 
@@ -96,7 +96,7 @@ In general, variables of a mob are considered private to that mob and cannot be 
 - For array indices, floats are C-style-cast to ints, and clamped at zero for negative values or wrapped by the array size for large values.
 - Errors (such as divide by zero, missing variables, null references, etc) generally return a value of 0.0.
 
-MoLang supports the following value types as well:
+Molang supports the following value types as well:
 
 ```C
 Geometry
@@ -109,7 +109,7 @@ Struct
 ```
 
 > [!TIP]
-> See the [Structs](#structs) section below to learn more on how MoLang handles them.
+> See the [Structs](#structs) section below to learn more on how Molang handles them.
 
 ## Query Functions
 
@@ -117,7 +117,7 @@ Query functions (eg: `query.is_baby` or `query.is_item_equipped('main_hand')`) a
 
 ## Aliases
 
-To reduce typing burden and increase clarity when reading and writing MoLang, the following keyword aliases can make life a bit easier.
+To reduce typing burden and increase clarity when reading and writing Molang, the following keyword aliases can make life a bit easier.
 
 > [!NOTE]
 > Note that left and right sides function identically in the Alias Map.
@@ -143,7 +143,7 @@ math.cos(query.anim_time * 38) * variable.rotation_scale + variable.x * variable
 math.cos(q.anim_time * 38) * v.rotation_scale + v.x * v.x * q.life_time
 ```
 
-MoLang will also allow you to use either syntax and intermix as desired as shown in this last example below.
+Molang will also allow you to use either syntax and intermix as desired as shown in this last example below.
 
 ```C
 math.cos(q.anim_time * 38) * variable.rotation_scale + v.x * variable.x * query.life_time
@@ -151,7 +151,7 @@ math.cos(q.anim_time * 38) * variable.rotation_scale + v.x * variable.x * query.
 
 ## Structs
 
-One difference between MoLang and the C style syntax is that structures of data are **implicitly** defined by usage.  Their purpose is to more efficiently pass data around, such as passing `v.location` rather than `v.x`, `v.y`, and `v.z`. An example of this is shown below:
+One difference between Molang and the C style syntax is that structures of data are **implicitly** defined by usage.  Their purpose is to more efficiently pass data around, such as passing `v.location` rather than `v.x`, `v.y`, and `v.z`. An example of this is shown below:
 
 ```C
 v.location.x = 1;
@@ -188,16 +188,16 @@ Note that structures can be arbitrarily deep in their nesting/recursiveness. Wit
 
 ## Strings
 
-Strings in MoLang are surrounded by single - quotes shown here as `'minecraft:pig'` or `'hello world!'`. An empty string is defined as two back - to - back single quotes shown here as `''`.
+Strings in Molang are surrounded by single-quotes shown here as `'minecraft:pig'` or `'hello world!'`. An empty string is defined as two back-to-back single quotes shown here as `''`.
 
-String operations only support `= =` and `! =` at this time.
+String operations only support `==` and `!=` at this time.
 
 > [!NOTE]
 > Strings don't support the ' character as there is no support for escape characters at this time.
 
 ## Math Functions
 
-Listed below are the mathematical functions available for use in MoLang.
+Listed below are the mathematical functions available for use in Molang.
 
 |Function |Description |
 |:--------|:-----------|
@@ -211,7 +211,7 @@ Listed below are the mathematical functions available for use in MoLang.
 | `math.cos(value)`| Cosine (in degrees) of value |
 | `math.die_roll(num, low, high)`| returns the sum of 'num' random numbers, each with a value from low to high. Note: the generated random numbers are not integers like normal dice.  For that, use `math.die_roll_integer`. |
 | `math.die_roll_integer(num, low, high)`| returns the sum of 'num' random integer numbers, each with a value from low to high.  Note: the generated random numbers are integers like normal dice. |
-| `math.exp(value)`| Calculates e to the value 'th power |
+| `math.exp(value)`| Calculates e to the value 'nth' power |
 | `math.floor(value)`| Round value down to nearest integral number |
 | `math.hermite_blend(value)`| Useful for simple smooth curve interpolation using one of the Hermite Basis functions: `3t^2 - 2t^3`.  Note that while any valid float is a valid input, this function works best in the range [0,1]. |
 | `math.lerp(start, end, 0_to_1)`| Lerp from start to end via 0_to_1 |
@@ -234,7 +234,7 @@ Listed below are the mathematical functions available for use in MoLang.
 Some return values of query function, or values stored in temp/entity/context variables can be a reference to another entity.  The `->` operator allows a script to access variables or run queries on that entity.  For example, the example below will find all pigs within four metres of the current entity(including itself if it's a pig), and increment a variable `v.x` on itself if the block immediately above each pig is flammable (such as an oak button).
 
 > [!CAUTION]
-> In the case where the left - hand - side of the `- >` operator has an error(value is null, the entity was killed previously, or some other issue), the expression will not evaluate the right - hand - side and will return 0.
+> In the case where the left-hand-side of the `->` operator has an error (value is null, the entity was killed previously, or some other issue), the expression will not evaluate the right-hand-side and will return 0.
 >
 > This implementation style was a choice between performance and not requiring content creators to overly worry about checking for potentially bad values everywhere.
 
@@ -270,7 +270,7 @@ Sometimes you may want to execute an expression multiple times. Rather than copy
 
 ### Example
 
-The example below showcases how a Fibonacci Calculator can be written in MoLang.
+The example below showcases how a Fibonacci Calculator can be written in Molang.
 
 ```C
 v.x = 1;
@@ -284,7 +284,7 @@ loop(10, {
 
 ## for_each
 
-[`query.get_nearby_entities`](QueryFunctions.md#list-of-entity-queries) returns an array of entities.  In order to iterate through them, you can use the following new built-in function `for_each`.  It takes three parameters: `for_each(<variable>, <array>, <expression>);`  The variable can be any variable, either a `temp.` or `variable.`, although we would recommend using `temp.` to not pollute the entity's variable space.  The expression is any MoLang expression you want to execute for each entry in the array).
+[`query.get_nearby_entities`](QueryFunctions.md#list-of-entity-queries) returns an array of entities.  In order to iterate through them, you can use the following new built-in function `for_each`.  It takes three parameters: `for_each(<variable>, <array>, <expression>);`  The variable can be any variable, either a `temp.` or `variable.`, although we would recommend using `temp.` to not pollute the entity's variable space.  The expression is any Molang expression you want to execute for each entry in the array).
 
 ## break
 
@@ -327,7 +327,7 @@ loop(10, {
 
 Similar to how the null-coalescing operator works in C, you can now reference a variable that may or may not exist without seeing a content error.  If it doesn't, you can now provide a default value to use.  Previously, if a variable didn't exist you would get a content error.  This was to make sure variables were always initialized correctly to avoid uninitialized variable bugs.
 
-Unfortunately this then required initialize scripts, or in some cases some complex work-arounds to make sure variables were initialized.  Now, if you know a variable won't be initialized in the first run of a script, you can use the following:
+Unfortunately this then required initialized scripts, or in some cases some complex work-arounds to make sure variables were initialized.  Now, if you know a variable won't be initialized in the first run of a script, you can use the following:
 
 ```C
 variable.x = (variable.x ?? 1.2) + 0.3;
@@ -343,7 +343,7 @@ This will use the value of `variable.x` if it is valid, or else 1.2 if `variable
 Note that the `??` operator will work with `variable.`s, `temp.`s, and `context.`s that hold numbers or entity references, but not resources such as materials, textures, or geometries (as those must exist and be valid else it's a content error).  If the first argument would result in something that can't be resolved, it will return the second argument.
 
 > [!IMPORTANT]
-> Reminder: the standing rule of thumb in MoLang is that if something would error or be a bad value, it is converted to 0.0 (and generally throw a content error on screen in non-publish builds.  Note that content errors may prevent uploading content to the marketplace, so please ensure expressions aren't going to do bad things such as dividing by zero).
+> Reminder: the standing rule of thumb in Molang is that if something would error or be a bad value, it is converted to 0.0 (and generally throw a content error on screen in non-publish builds.  Note that content errors may prevent uploading content to the marketplace, so please ensure expressions aren't going to do bad things such as dividing by zero).
 
 ## Simple vs Complex Expressions
 
