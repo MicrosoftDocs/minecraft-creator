@@ -82,6 +82,6 @@ productDirectory:
         - url: Reference/Content/volumereference/index.yml
           text: Volume JSON Documentation
         - url: Reference/Content/molangreference/index.yml
-          text: MoLang Documentation
+          text: Molang Documentation
 
 

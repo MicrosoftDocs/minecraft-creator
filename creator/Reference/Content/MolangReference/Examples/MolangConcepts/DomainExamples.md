@@ -105,7 +105,7 @@ For example, in the "geometry" section, you must produce an expression that will
 
 ## Resource Sections
 
-Below are the three resource sections available.
+Below are the two resource sections available.
 
 ### Geometry
 
@@ -113,7 +113,7 @@ The geometry section specifies which geometry to use when rendering.  As you can
 
 ### Materials
 
-The materials section specifies how to map what material to what bone of the geometry.  A single material is mapped to a whole bone.  Material expressions are evaluated in the order listed.  The first part of each statement is the name of the model part to apply the material to, and the second part is the material to use.  The model part name can use * for wild - card matching of characters.
+The materials section specifies how to map what material to what bone of the geometry.  A single material is mapped to a whole bone.  Material expressions are evaluated in the order listed.  The first part of each statement is the name of the model part to apply the material to, and the second part is the material to use.  The model part name can use `*` for wildcard matching of characters.
 
 ### Example
 
