@@ -1,8 +1,8 @@
 ---
-title: Commands - Popular Commands
+title: Popular Commands
 author: ReWrite-Media
 ---
-# Commands - Popular Commands
+# Popular Commands
 
 There are a number of commands that are vital to many command systems. This list will go over the more popular and useful commands that are likely to be used in some fashion.
 
@@ -16,8 +16,8 @@ In this tutorial you will learn the following:
 
 It’s recommended that the following be completed before beginning this tutorial.
 
-- [Commands - Introduction](CommandsIntroduction.md)
-- [Commands - Getting Started with Command Blocks](CommandBlocks.md)
+- [Introduction to Commands](CommandsIntroduction.md)
+- [Getting Started with Command Blocks](CommandBlocks.md)
 
 ## /help
 

@@ -1,5 +1,5 @@
 ---
-title: Commands - How To Make a Complete the Monument Map
+title: How To Make a Complete the Monument Map
 author: ReWrite-Media
 ---
 # Commands - How To Make a Complete the Monument Map
@@ -16,9 +16,9 @@ In this tutorial you will learn the following:
 
 It’s recommended that the following be completed before beginning this tutorial.
 
-- [Commands - Introduction](CommandsIntroduction.md)
-- [Commands - Getting Started with Command Blocks](CommandBlocks.md)
-- [Commands - Popular Commands](CommandsPopularCommands.md)
+- [Introduction to Commands](CommandsIntroduction.md)
+- [Getting Started with Command Blocks](CommandBlocks.md)
+- [Popular Commands](CommandsPopularCommands.md)
 
 ## The setup
 
