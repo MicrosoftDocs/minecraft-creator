@@ -88,18 +88,26 @@
             href: Reference/Content/volumereference/Examples/VolumeComponents/TOC.yml
           - name: Volume Definitions
             href: Reference/Content/volumereference/Examples/VolumeDefinitions/VolumeDefinitionProperties.md
+        - name: Addons Documentation
+          items:
+          - name: Addons Documentation Homepage
+            href: Reference/Content/addonsreference/index.yml
+          - name: List of Addon Content
+            href: Reference/Content/addonesreference/Examples/TOC.yml
         - name: Spawn Rules
           href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/DataDrivenSpawning.md
+        - name: Biomes
+          href: Reference/Content/biomereference/Examples/BiomeOverview.md
       - name: Resource Pack
         items:
         - name: Client Entity JSON
           href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/ClientEntityDocumentationIntroduction.md
-      - name: MoLang Documentation
+      - name: Molang Documentation
         items:
-          - name: MoLang Documentation Homepage
-            href: Reference/Content/molangreference/index.yml
-          - name: MoLang Concepts
-            href: Reference/Content/molangreference/Examples/molangconcepts/TOC.yml
+          - name: Molang Documentation Homepage
+            href: Reference/Content/Molangreference/index.yml
+          - name: Molang Concepts
+            href: Reference/Content/Molangreference/Examples/Molangconcepts/TOC.yml
     - name: Contribute
       items:
       - name: "Contributing to Minecraft: Bedrock Documentation"
