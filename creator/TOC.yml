@@ -94,12 +94,12 @@
         items:
         - name: Client Entity JSON
           href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/ClientEntityDocumentationIntroduction.md
-      - name: MoLang Documentation
+      - name: Molang Documentation
         items:
-          - name: MoLang Documentation Homepage
-            href: Reference/Content/molangreference/index.yml
-          - name: MoLang Concepts
-            href: Reference/Content/molangreference/Examples/molangconcepts/TOC.yml
+          - name: Molang Documentation Homepage
+            href: Reference/Content/Molangreference/index.yml
+          - name: Molang Concepts
+            href: Reference/Content/Molangreference/Examples/Molangconcepts/TOC.yml
     - name: Contribute
       items:
       - name: "Contributing to Minecraft: Bedrock Documentation"

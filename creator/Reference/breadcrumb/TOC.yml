@@ -17,6 +17,9 @@
   - name: Volume Documentation
     tocHref: /creator/reference/content/volumereference/
     topicHref: /creator/reference/content/volumereference/index
-  - name: MoLang Documentation
+  - name: Molang Documentation
     tocHref: /creator/reference/content/molangreference/
     topicHref: /creator/reference/content/molangreference/index
+  - name: Addons Documentation
+    tocHref: /creator/reference/content/addonsreference/
+    topicHref: /creator/reference/content/addonsreference/index
