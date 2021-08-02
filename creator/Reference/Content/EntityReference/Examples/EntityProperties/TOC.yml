@@ -1,0 +1,80 @@
+ - name: Properties List
+   href: ../PropertiesList.md
+ - name: ambient_sound_interval
+   href: minecraftProperty_ambient_sound_interval.md
+ - name: can_climb
+   href: minecraftProperty_can_climb.md
+ - name: can_fly
+   href: minecraftProperty_can_fly.md
+ - name: can_power_jump
+   href: minecraftProperty_can_power_jump.md
+ - name: collision_box
+   href: minecraftProperty_collision_box.md
+ - name: color
+   href: minecraftProperty_color.md
+ - name: color2
+   href: minecraftProperty_color2.md
+ - name: default_look_angle
+   href: minecraftProperty_default_look_angle.md
+ - name: equipment
+   href: minecraftProperty_equipment.md
+ - name: fire_immune
+   href: minecraftProperty_fire_immune.md
+ - name: floats_in_liquid
+   href: minecraftProperty_floats_in_liquid.md
+ - name: flying_speed
+   href: minecraftProperty_flying_speed.md
+ - name: friction_modifier
+   href: minecraftProperty_friction_modifier.md
+ - name: ground_offset
+   href: minecraftProperty_ground_offset.md
+ - name: input_ground_controlled
+   href: minecraftProperty_input_ground_controlled.md
+ - name: is_baby
+   href: minecraftProperty_is_baby.md
+ - name: is_charged
+   href: minecraftProperty_is_charged.md
+ - name: is_chested
+   href: minecraftProperty_is_chested.md
+ - name: is_dyeable
+   href: minecraftProperty_is_dyeable.md
+ - name: is_hidden_when_invisible
+   href: minecraftProperty_is_hidden_when_invisible.md
+ - name: is_ignited
+   href: minecraftProperty_is_ignited.md
+ - name: is_illager_captain
+   href: minecraftProperty_is_illager_captain.md
+ - name: is_saddled
+   href: minecraftProperty_is_saddled.md
+ - name: is_shaking
+   href: minecraftProperty_is_shaking.md
+ - name: is_sheared
+   href: minecraftProperty_is_sheared.md
+ - name: is_stackable
+   href: minecraftProperty_is_stackable.md
+ - name: is_stunned
+   href: minecraftProperty_is_stunned.md
+ - name: is_tamed
+   href: minecraftProperty_is_tamed.md
+ - name: item_controllable
+   href: minecraftProperty_item_controllable.md
+ - name: loot
+   href: minecraftProperty_loot.md
+ - name: mark_variant
+   href: minecraftProperty_mark_variant.md
+ - name: push_through
+   href: minecraftProperty_push_through.md
+ - name: scale
+   href: minecraftProperty_scale.md
+ - name: skin_id
+   href: minecraftProperty_skin_id.md
+ - name: sound_volume
+   href: minecraftProperty_sound_volume.md
+ - name: type_family
+   href: minecraftProperty_type_family.md
+ - name: variant
+   href: minecraftProperty_variant.md
+ - name: walk_animation_speed
+   href: minecraftProperty_walk_animation_speed.md
+ - name: wants_jockey
+   href: minecraftProperty_wants_jockey.md

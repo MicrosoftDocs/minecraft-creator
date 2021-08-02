@@ -9,7 +9,7 @@ ms.prod: gaming
 
 ## What's in a GameTest?
 
-A GameTest is a miniature environment along with a set of starting conditions, such as a set of mobs or items.  After that environment plays out in the Minecraft world for a little while, you can run conditional code to evaluate that your expectations were met.  
+A GameTest is a miniature environment along with a set of starting conditions, such as a set of mobs or items. After that environment plays out in the Minecraft world for a little while, you can run conditional code to evaluate that your expectations were met.
 
 Building sets of GameTests requires building out your GameTests via a behavior Pack, and writing some simple JavaScript code.
 
@@ -30,9 +30,9 @@ It’s recommended that the following be completed before beginning this tutoria
 
 Within a behavior pack, every GameTest consists of a few elements:
 
-- **A structure** which defines the physical environment for the test as well as any starting entities.  Within Minecraft, you can create new structures by designing them out (typically in Creative Mode) and then placing a structure block nearby. You can then use the structure block to save out the results to disk. This creates an .mcstructure file which you can add to your test.  
+- **A structure** which defines the physical environment for the test as well as any starting entities.  Within Minecraft, you can create new structures by designing them out (typically in Creative Mode) and then placing a structure block nearby. You can then use the structure block to save out the results to disk. This creates a .mcstructure file which you can add to your test.  
 
-When GameTests are run in Minecraft, your structure will be loaded and expanded into Minecraft. You should note that this structure will be created and run in a generally flat broader world, so you'll want to ensure that any mobs are penned into the structures you create.
+When GameTests are run in Minecraft, your structure will be loaded and expanded into Minecraft. You should note that this structure will be created and run in a generally flat, broader world, so you'll want to ensure that any mobs are penned into the structures you create.
 
 GameTests then use JavaScript code to define the test, including:
 
@@ -93,7 +93,7 @@ Note several facets of this `module`:
 - The `uuid` needs to be unique and generated for your project.  See the [Introduction To Behavior Packs](BehaviorPack.md) topic for tools for generating new UUIDs.
 - The `entry` attribute points to a JavaScript file that contains your GameTest code.
 
-In addition, you will need to establish dependencies on Minecraft APIs and GameTest Framework.  You can do this with additional dependencies, added beneath the modules section, below:
+In addition, you will need to establish dependencies on Minecraft APIs and GameTest Framework.  You can do this with additional dependencies added beneath the modules section below:
 
 ``` JSON
  "dependencies": [
@@ -223,7 +223,7 @@ Some things to observe in this test function:
 
 - You can use the `spawn` method to create new mobs in your test.
 - Coordinates used in APIs like spawn are relative to within your .MCStructure.
-- `assert` functions cause code execution to stop if the conditions described in the method are not true.  Here, utilizing a helper function, this code asserts that a chicken entity is no longer in the structure. If one is found within any of the blocks in the structure, that `assert` code will throw an error.  However, if no chicken is found, we make our way to the test.succeed line of code, and the test passes.
+- `assert` functions cause code execution to stop if the conditions described in the method are not true.  Here, utilizing a helper function, this code asserts that a chicken entity is no longer in the structure. If one is found within any of the blocks in the structure, the `assert` code will throw an error.  However, if no chicken is found, we make our way to the test.succeed line of code, and the test passes.
 
 The full JavaScript StarterTests.js file looks like:
 
@@ -274,7 +274,7 @@ To do this, open up Minecraft and start a new world in Creative mode to build yo
 
 ![Glass structure within Minecraft](Media/GameTestBuildYourFirstGameTest/glasspen.png)
 
-Next, you will want to export this a structure.  Run the following command in Minecraft:
+Next, you will want to export this as a structure.  Run the following command in Minecraft:
 
 `/give @s structure_block`
 

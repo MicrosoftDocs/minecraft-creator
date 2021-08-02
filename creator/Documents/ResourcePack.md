@@ -14,7 +14,7 @@ A **resource pack** is a folder structure that will contain all of your custom m
 In this tutorial, you will learn the following:
 
 > [!div class="checklist"]
-> - Understand how a **resource pack** is created. 
+> - Understand how a **resource pack** is created.
 > - How a **manifest file** is created.
 > - How custom textures are loaded into Minecraft.
 > - The concept of * pack Stacking** when working with Add-On content.
@@ -59,7 +59,7 @@ Since the file is written in JSON, Minecraft will be able to parse the informati
 ```json
 	{
 	  "format_version": 2,
-	  "header": {    
+	  "header": {
         "description": "My First Add-On!",
 	    "name": "Hello WorldRP",
 	    "uuid":"",
@@ -110,11 +110,16 @@ Now that the folder structure is created, you can now place your custom textures
 ![A PNG file that can be downloaded and used in place of a custom texture made in a photo editor](Media/ResourcePack/dirt.png)
 
 1. Open up an image editor such as Paint3D, MS Paint or Photoshop.
-    1. In this tutorial, Paint 3D will be used.
+    1. In this tutorial, MS Paint will be used.
 1. In the **Toolbar**, select **File**, then select **Properties**.
 1. Set the **Width** and **Height** to **16 pixels** each.
 
 You can now design a pattern or any artwork in the editor. In this example, a simple fill color has been added.
+
+> [!IMPORTANT]
+> While MS Paint is used for this example for it's quick and easy access, there are a few drawbacks as well.
+> - MS Paint does *not* support alpha channels that are commonly used for transparency effects in Minecraft.
+> - MS Paint does *not* support .tga files types.
 
 1. When done with your texture, select **File** and then select **Save As a PNG**.
 1. Navigate to the **blocks** folder.
@@ -125,7 +130,7 @@ You can now design a pattern or any artwork in the editor. In this example, a si
 Now that the pack has both a manifest file and a texture, you can now launch Minecraft and test your new Add-On.
 
 > [!IMPORTANT]
-> **Pack Stacking** is when content is loaded on top of vanilla content causing each object that has the same name in both packs to be overwritten by the *latest* applied pack (in our example, the Dirt texture is overwritten by our custom texture).
+> **Pack Stacking** is when content is loaded on top of vanilla content, causing each object that has the same name in both packs to be overwritten by the *latest* applied pack (in our example, the Dirt texture is overwritten by our custom texture).
 >
 > If another pack that uses the dirt.png file is loaded **after** helloWorldBP, then Minecraft will use the latest dirt.png that was applied.
 
