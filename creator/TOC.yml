@@ -105,7 +105,7 @@
       - name: Molang Documentation
         items:
           - name: Molang Documentation Homepage
-            href: Reference/Content/Molangreference/index.yml
+            href: Reference/Content/molangreference/index.yml
           - name: Molang Concepts
             href: Reference/Content/Molangreference/Examples/Molangconcepts/TOC.yml
     - name: Contribute
