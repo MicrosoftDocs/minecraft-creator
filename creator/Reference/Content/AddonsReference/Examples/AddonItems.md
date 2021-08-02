@@ -12,7 +12,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 > [!NOTE]
 > To learn more about how Items function in Minecraft: Bedrock Edition, please take a look at the [Item JSON Documentation](../../ItemReference/index.yml)
 
-# List of Items
+## List of Items
 
 | ID| Name| Aux Values (if applicable) |
 |:-----------|:-----------|:-----------|
