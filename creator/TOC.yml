@@ -88,8 +88,16 @@
             href: Reference/Content/volumereference/Examples/VolumeComponents/TOC.yml
           - name: Volume Definitions
             href: Reference/Content/volumereference/Examples/VolumeDefinitions/VolumeDefinitionProperties.md
+        - name: Addons Documentation
+          items:
+          - name: Addons Documentation Homepage
+            href: Reference/Content/addonsreference/index.yml
+          - name: List of Addon Content
+            href: Reference/Content/addonesreference/Examples/TOC.yml
         - name: Spawn Rules
           href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/DataDrivenSpawning.md
+        - name: Biomes
+          href: Reference/Content/biomereference/Examples/BiomeOverview.md
       - name: Resource Pack
         items:
         - name: Client Entity JSON

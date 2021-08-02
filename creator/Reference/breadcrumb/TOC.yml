@@ -23,3 +23,6 @@
   - name: Addons Documentation
     tocHref: /creator/reference/content/addonsreference/
     topicHref: /creator/reference/content/addonsreference/index
+  - name: Animations Documentation
+    tocHref: /creator/reference/content/animationsreference/
+    topicHref: /creator/reference/content/animationsreference/index
