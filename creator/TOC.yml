@@ -1,0 +1,120 @@
+- name: "Minecraft: Bedrock Documentation"
+  items:
+    - name: "Minecraft: Bedrock Documentation Homepage"
+      href: index.yml
+    - name: Tutorials
+      items:
+        - name: Adding Content
+          items:
+            - name: Getting Started
+              href: Documents/GettingStarted.md
+            - name: 'Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition'
+              href: Documents/DifferencesBetweenBedrockAndJava.md
+            - name: Introduction to Resource Packs
+              href: Documents/ResourcePack.md
+            - name: Introduction to Behavior Packs
+              href: Documents/BehaviorPack.md
+            - name: Adding a Custom Block
+              href: Documents/CustomBlock.md
+            - name: Create a Custom NPC
+              href: Documents/CreateNPCs.md
+            - name: NPC Dialogue Command
+              href: Documents/NPCDialogue.md
+            - name: Introduction to Loot Tables
+              href: Documents/IntroductionToLootTables.md
+            - name: Loot and Trade Table Functions
+              href: Documents/LootAndTradeTableFunctions.md
+            - name: Introduction to the Caves & Cliffs Entities
+              href: Documents/CavesAndCliffsEntities.md
+            - name: Minecraft Entity Wizard
+              href: Documents/MinecraftEntityWizard.md
+        - name: Commands and Command Blocks
+          items:
+          - name: Introduction to Commands
+            href: Documents/CommandsIntroduction.md
+          - name: Popular Commands
+            href: Documents/CommandsPopularCommands.md
+          - name: Getting Started with Command Blocks
+            href: Documents/CommandBlocks.md
+          - name: How to Make a Complete the Monument Map
+            href: Documents/CommandsHowToMakeACTMMap.md
+        - name: GameTest Framework
+          items:
+          - name: Getting Started with GameTest
+            href: Documents/GameTestGettingStarted.md
+          - name: Build your first GameTest
+            href: Documents/GameTestBuildYourFirstGameTest.md
+    - name: Reference Documentation
+      items:
+      - name: GameTest API
+        href: ScriptAPI/TOC.yml
+      - name: Behavior Pack
+        items:
+        - name: Entity JSON
+          items:
+          - name: Entity Documentation Homepage
+            href: Reference/Content/entityreference/index.yml
+          - name: Filters
+            href: Reference/Content/entityreference/Examples/Filters/TOC.yml
+          - name: Components
+            href: Reference/Content/entityreference/Examples/EntityComponents/TOC.yml
+          - name: AI Goals
+            href: Reference/Content/entityreference/Examples/EntityGoals/TOC.yml
+          - name: Attributes
+            href: Reference/Content/entityreference/Examples/EntityAttributes/TOC.yml
+          - name: Properties
+            href: Reference/Content/entityreference/Examples/EntityProperties/TOC.yml
+          - name: Triggers
+            href: Reference/Content/entityreference/Examples/EntityTriggers/TOC.yml
+          - name: Built-in Events
+            href: Reference/Content/entityreference/Examples/EntityEvents/TOC.yml
+          - name: ID Lists
+            href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/IDLists.md
+        - name: Block JSON
+          items:
+          - name: Block Documentation Homepage
+            href: Reference/Content/blockreference/index.yml
+          - name: Block Components
+            href: Reference/Content/blockreference/Examples/BlockComponents/TOC.yml
+          - name: Block Triggers
+            href: Reference/Content/blockreference/Examples/BlockTriggers/TOC.yml
+          - name: Block Event Responses
+            href: Reference/Content/blockreference/Examples/BlockEvents/TOC.yml
+        - name: Item JSON
+          items:
+          - name: Item Documentation Homepage
+            href: Reference/Content/itemreference/index.yml
+          - name: Item Components
+            href: Reference/Content/itemreference/Examples/ItemComponents/TOC.yml
+        - name: Recipe JSON
+          items:
+          - name: Recipe Documentation Homepage
+            href: Reference/Content/recipereference/index.yml
+          - name: Recipe Definitions
+            href: Reference/Content/recipereference/Examples/RecipeDefinitions/TOC.yml
+        - name: Volume JSON
+          items:
+          - name: Volume Documentation Homepage
+            href: Reference/Content/volumereference/index.yml
+          - name: Volume Components
+            href: Reference/Content/volumereference/Examples/VolumeComponents/TOC.yml
+          - name: Volume Definitions
+            href: Reference/Content/volumereference/Examples/VolumeDefinitions/VolumeDefinitionProperties.md
+        - name: Spawn Rules
+          href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/DataDrivenSpawning.md
+      - name: Resource Pack
+        items:
+        - name: Client Entity JSON
+          href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/ClientEntityDocumentationIntroduction.md
+      - name: Molang Documentation
+        items:
+          - name: Molang Documentation Homepage
+            href: Reference/Content/Molangreference/index.yml
+          - name: Molang Concepts
+            href: Reference/Content/Molangreference/Examples/Molangconcepts/TOC.yml
+    - name: Contribute
+      items:
+      - name: "Contributing to Minecraft: Bedrock Documentation"
+        href: Documents/ContributorGuide.md
+      - name: Contributor Style Guide
+        href: Documents/StyleGuide.md
