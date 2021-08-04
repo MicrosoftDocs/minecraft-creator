@@ -23,7 +23,7 @@ ms.prod: gaming
 }
 ```
 
-### With Features
+### With Functionality
 
 ```json
 "minecraft:hedgehog_baby": {
@@ -45,6 +45,9 @@ ms.prod: gaming
     }
 }
 ```
+
+> [!NOTE]
+> If the Entity will have the ability to toggle between the two states, you can define the property in a Component Group and use the `add` and `remove` capabilities to act as a toggle based on Events.
 
 ## Vanilla entities examples
 
