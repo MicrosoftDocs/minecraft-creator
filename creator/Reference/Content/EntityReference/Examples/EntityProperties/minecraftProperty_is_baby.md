@@ -9,10 +9,40 @@ ms.prod: gaming
 
 `minecraft:is_baby` sets that the entity is a baby.
 
+> [!IMPORTANT]
+> `minecraft:is_baby` is a Boolean that is used to set the value for use in query functions like Molang and Filters. In order for the entity to have the desired affect, it will need to be paired with extra functionality.
+>
+> The examples below will showcase both the property and how it works to create the desired effect on the entity.
+
 ## Example
+
+### Plain
 
 ```json
 "minecraft:is_baby":{
+}
+```
+
+### With Features
+
+```json
+"minecraft:hedgehog_baby": {
+    "minecraft:is_baby": {
+    },
+    "minecraft:scale": {
+        "value": 0.75
+    },
+    "minecraft:ageable": {
+        "duration": 400,
+        "feed_items": [
+            "carrots",
+            "chicken"
+        ],
+        "grow_up": {
+            "event": "minecraft:ageable_grow_up",
+            "target": "self"
+        }
+    }
 }
 ```
 
