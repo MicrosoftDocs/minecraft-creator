@@ -11,14 +11,22 @@ Data-Driven spawning allows you to adjust the spawn conditions of mobs within Mi
 
 ## Spawn Rules
 
-Spawn rules contain description and conditionsAll Spawn Rules JSON need to have an ID (located under the description section). Similar to other identifiers, it follows the convention "namespace:name". The minecraft namespace is reserved for the vanilla Minecraft rules.When changing an existing mob use the ID that appears in the entity JSON for that entity. When creating your own mob, make sure the mobs have the same ID in all the entity's JSON files.
+Spawn rules contain description and conditionsAll Spawn Rules JSON need to have an ID (located under the description section). Similar to other identifiers, it follows the convention "namespace:name". The minecraft namespace is reserved for the vanilla Minecraft rules. When changing an existing mob use the ID that appears in the entity JSON for that entity. When creating your own mob, make sure the mobs have the same ID in all the entity's JSON files.
 
-Spawn Rules also needs to define the pool that is used for population control.Each pool has their own spawn limit, By setting an entity to a pool it will spawn as long as that pool hasn't reached the spawn limit.
+Spawn Rules also needs to define the pool that is used for population control. Each pool has their own spawn limit. By setting an entity to a pool it will spawn as long as that pool hasn't reached the spawn limit.
 
-There are 3 pools that entities can be assigned to:
--animal
--water_animal
--monster
+There are 4 pools that entities can be assigned to:
+
+- animal
+- water_animal
+- monster
+- cat
+
+> [!IMPORTANT]
+> The cat pool functions differently than the other 3 population pools. Cat's spawn rules and limits are based upon the amount within a village.
+
+> [!NOTE]
+> There are 2 more pools located within the game files. `Villager`, and `Pillager`. However, these are not currently used by any Entities within Minecraft due to the entities spawn differently.
 
 ### Conditions
 
