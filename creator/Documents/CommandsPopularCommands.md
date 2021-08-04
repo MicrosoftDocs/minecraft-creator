@@ -1,6 +1,8 @@
 ---
+author: neonerz
+ms.author: v-jeffreykim
 title: Popular Commands
-author: ReWrite-Media
+ms.prod: gaming
 ---
 # Popular Commands
 
