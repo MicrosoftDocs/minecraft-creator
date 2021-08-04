@@ -1,7 +1,10 @@
 ---
+author: neonerz
+ms.author: v-jeffreykim
 title: Differences Between Minecraft Bedrock Edition and Minecraft Java Edition
-author: ReWrite-Media
+ms.prod: gaming
 ---
+
 # Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition
 
 On the surface, Bedrock Edition and Java Edition seem very similar, but under the hood is a completely different story. The different code bases create distinct development environments. This tutorial outlines the major differences you as a content creator should be aware of.
