@@ -4,6 +4,7 @@ ms.author: v-jeffreykim
 title: Popular Commands
 ms.prod: gaming
 ---
+
 # Popular Commands
 
 There are a number of commands that are vital to many command systems. This list will go over the more popular and useful commands that are likely to be used in some fashion.
@@ -203,8 +204,6 @@ The `/say`, `/tell`, and `/title` commands are not ideal when presenting informa
 
 /tellraw @a {"rawtext":[{"text":"Hello World"}]}
 ```
-
-For more information on how to localize your content using rawtext, see the tutorial on [Preparing Raw Text for Localization](PreparingRawTextForLocalization.md).
 
 ## /scoreboard
 
