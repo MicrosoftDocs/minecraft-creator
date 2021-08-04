@@ -1,0 +1,16 @@
+ - name: Block Trigger List
+   href: ../BlockTriggerList.md
+ - name: on_fall_on
+   href: minecraftBlock_on_fall_on.md
+ - name: on_interact
+   href: minecraftBlock_on_interact.md
+ - name: on_placed
+   href: minecraftBlock_on_placed.md
+ - name: on_player_destroyed
+   href: minecraftBlock_on_player_destroyed.md
+ - name: on_player_placing
+   href: minecraftBlock_on_player_placing.md
+ - name: on_step_off
+   href: minecraftBlock_on_step_off.md
+ - name: on_step_on
+   href: minecraftBlock_on_step_on.md

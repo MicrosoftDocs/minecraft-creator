@@ -6,34 +6,34 @@ metadata:
   title: Minecraft Bedrock documentation # Required; page title shown in search results < 60 chars
   description: Learn how to customize Minecraft Bedrock Edition through Add-ons. # < 160 chars
   service: service
-  ms.service: service # Required; service per approved list. 
+  ms.service: service # Required; service per approved list.
   ms.topic: hub-page # Required
   ms.date: 03/20/2021
   author: v-josjones # Required; Github alias
   ms.author: v-josjones # Required; Microsoft alias; with correct grammar
 
-# highlighted content section (optional), will outlined up to 8 items in a 4x2 grid. 
-highlightedContent: 
+# highlighted content section (optional), will outlined up to 8 items in a 4x2 grid.
+highlightedContent:
 # itemType:  architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     #card used to define plugin
-    - title: Create a Custom NPC
+    - title: Getting Started with Minecraft Entity Wizard
       itemType: whats-new
-      url: Documents/CreateNPCs.md
+      url: Documents/MinecraftEntityWizard.md
     #card
-    - title: NPC Dialogue Command
+    - title: Blocks JSON Documentation
       itemType: whats-new
-      url: Documents/NPCDialogue.md
+      url: Reference/Content/blockreference/index.yml
     #card
-    - title: Caves and Cliffs Entities
+    - title: Items JSON Documentation
       itemType: whats-new
-      url: Documents/CavesAndCliffsEntities.md
+      url: Reference/Content/itemreference/index.yml
     #card
     - title: Getting Started with Add-on Development
       itemType: get-started
       url: Documents/GettingStarted.md
-      
-# productDirectory section (optional) will outline rows that can contain text and media along with lists. 
+
+# productDirectory section (optional) will outline rows that can contain text and media along with lists.
 productDirectory:
   items:
     # card
@@ -47,6 +47,10 @@ productDirectory:
           text: Introduction To Behavior Packs
         - url: Documents/CustomBlock.md
           text: How to add a Custom Block
+        - url: Documents/CreateNPCs.md
+          text: Create a Custom NPC
+        - url: Documents/NPCDialogue.md
+          text: NPC Dialogue Command
   # card
     - title: Working with Commands
       imageSrc: images/Script.png
@@ -61,7 +65,7 @@ productDirectory:
           text: Getting Started with GameTest
         - url: Documents/GameTestBuildYourFirstGameTest.md
           text: Build your first GameTest
-        - url: ScriptAPI/GameTest/GameTest.md
+        - url: ScriptAPI/mojang-gametest/mojang-gametest.md
           text: GameTest API
   # card
     - title: Reference Documentation
@@ -69,5 +73,15 @@ productDirectory:
       links:
         - url: Reference/Content/entityreference/index.yml
           text: Entity JSON Documentation
+        - url: Reference/Content/blockreference/index.yml
+          text: Block JSON Documentation
+        - url: Reference/Content/itemreference/index.yml
+          text: Item JSON Documentation
+        - url: Reference/Content/Recipereference/index.yml
+          text: Recipe JSON Documentation
+        - url: Reference/Content/volumereference/index.yml
+          text: Volume JSON Documentation
+        - url: Reference/Content/molangreference/index.yml
+          text: MoLang Documentation
 
 

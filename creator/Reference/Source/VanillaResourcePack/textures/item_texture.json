@@ -1,0 +1,78 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "bucket": {
+      "textures": [
+        "textures/items/bucket_empty",
+        "textures/items/bucket_milk",
+        "textures/items/bucket_water",
+        "textures/items/bucket_lava",
+        "textures/items/bucket_cod",
+        "textures/items/bucket_salmon",
+        "textures/items/bucket_tropical",
+        "textures/items/bucket_pufferfish",
+        "textures/items/bucket_powder_snow",
+        "textures/items/bucket_axolotl"
+      ]
+    },
+    "hanging_roots": {
+      "textures": "textures/items/hanging_roots"
+    },
+    "glow_berries": {
+      "textures": "textures/items/glow_berries"
+    },
+    "amethyst_shard": {
+      "textures": "textures/items/amethyst_shard"
+    },
+    "spyglass": {
+      "textures": "textures/items/spyglass"
+    },
+    "copper_ingot": {
+      "textures": "textures/items/copper_ingot"
+    },
+    "raw_copper": {
+      "textures": "textures/items/raw_copper"
+    },
+    "raw_iron": {
+      "textures": "textures/items/raw_iron"
+    },
+    "raw_gold": {
+      "textures": "textures/items/raw_gold"
+    },
+    "dye_powder": {
+      "textures": [
+        "textures/items/dye_powder_black",
+        "textures/items/dye_powder_red",
+        "textures/items/dye_powder_green",
+        "textures/items/dye_powder_brown",
+        "textures/items/dye_powder_blue",
+        "textures/items/dye_powder_purple",
+        "textures/items/dye_powder_cyan",
+        "textures/items/dye_powder_silver",
+        "textures/items/dye_powder_gray",
+        "textures/items/dye_powder_pink",
+        "textures/items/dye_powder_lime",
+        "textures/items/dye_powder_yellow",
+        "textures/items/dye_powder_light_blue",
+        "textures/items/dye_powder_magenta",
+        "textures/items/dye_powder_orange",
+        "textures/items/dye_powder_white",
+        "textures/items/dye_powder_black_new",
+        "textures/items/dye_powder_brown_new",
+        "textures/items/dye_powder_blue_new",
+        "textures/items/dye_powder_white_new",
+        "textures/items/dye_powder_glow"
+      ]
+    },
+    "glow_item_frame": {
+      "textures": "textures/items/glow_item_frame"
+    },
+    "clock_item": {
+      "textures": "textures/items/clock_item"
+    },
+    "compass_item": {
+      "textures": "textures/items/compass_item"
+    }
+  }
+}

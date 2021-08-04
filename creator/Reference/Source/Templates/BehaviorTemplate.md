@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: v-josjones
+ms.author: v-josjones
 title: minecraft:behavior.Name of Behavior
 ms.prod: gaming
 ---

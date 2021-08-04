@@ -5,3 +5,18 @@
   - name: Entity Documentation
     tocHref: /creator/reference/content/entityreference/
     topicHref: /creator/reference/content/entityreference/index
+  - name: Block Documentation
+    tocHref: /creator/reference/content/blockreference/
+    topicHref: /creator/reference/content/blockreference/index
+  - name: Item Documentation
+    tocHref: /creator/reference/content/itemreference/
+    topicHref: /creator/reference/content/itemreference/index
+  - name: Recipe Documentation
+    tocHref: /creator/reference/content/recipereference/
+    topicHref: /creator/reference/content/recipereference/index
+  - name: Volume Documentation
+    tocHref: /creator/reference/content/volumereference/
+    topicHref: /creator/reference/content/volumereference/index
+  - name: MoLang Documentation
+    tocHref: /creator/reference/content/molangreference/
+    topicHref: /creator/reference/content/molangreference/index
