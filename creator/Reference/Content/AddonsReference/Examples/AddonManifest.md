@@ -80,7 +80,8 @@ Listed below are two examples showcasing how a manifest.json file can be written
         "description": "Example vanilla behavior pack",
         "name": "Vanilla Behavior Pack",
         "uuid": "ee649bcf-256c-4013-9068-6a802b89d756",
-        "version": [0, 0, 1]
+        "version": [0, 0, 1],
+        "min_engine_version": [1, 16, 0]
     },
     "modules": [
         {

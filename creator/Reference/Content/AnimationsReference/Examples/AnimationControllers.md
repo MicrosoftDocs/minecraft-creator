@@ -7,7 +7,9 @@ ms.prod: gaming
 
 # Animation Controllers
 
-**Animation Controller Format:**
+The Animation Controller format is written in JSON and formatted as shown below;
+
+### Animation Controller Format
 
 ```JSON
 {
@@ -39,21 +41,14 @@ ms.prod: gaming
 
 Each state has an optional variables section, listing any number of variables that referenced animations can use.  Each state also has one or more animations, using the name given in the entity's definition json.
 
+### State Variables
 
+Variables have their value set by a Molang Expression.  They can also have their value remapped via a linearly-interpolated curve.
 
-**State Variables**
+#### Example
+Here is the animation controller for a single frame.  It will take the value of `query.ground_speed`, then remap it to between 0.2 and 0.7 based on the value of `query.ground_speed` going from 0.0 to 1.0It will play one animation walk that will blend from 0.0 to 1.0 as the ground speed increases from stopped to 2.3 m/s. The remap curve can have any number of entries. The animation controller will then play the entity-referenced `wiggle_nose` animations, followed by the `walk` animation, scaling the latter by the value of `variable.ground_speed_curve`
 
-  Variables have their value set by a Molang Expression.  They can also have their value remapped via a linearly-interpolated curve.
-
-
-
-For Example:
-
-the animation controller for that frame.  It will take the value of `query.ground_speed`, then remap it to between 0.2 and 0.7 based on the value of `query.ground_speed` going from 0.0 to 1.0It will play one animation walk that will blend from 0.0 to 1.0 as the ground speed increases from stopped to 2.3 m/s.  The remap curve can have any number of entries.  The animation controller will then play the entity-referenced `wiggle_nose` animations, followed by the `walk` animation, scaling the latter by the value of `variable.ground_speed_curve`
-
-****
-```
-```
+```JSON
 {
   "format_version": "1.10.0",
   "animation_controllers": {
@@ -79,20 +74,15 @@ the animation controller for that frame.  It will take the value of `query.groun
   }
 }
 ```
-```
 
+#### User-Defined Script Example
 
-
-**User-Defined Script Example**
-
-Note: "pre_animation" tells the script to figure out the values of those variables once a frame, before animation occurs, so that the animation can use those values in their own formulas. If a variable didn't exist, it will create a new variable and its default value will be 0.0
-
-
+> [!NOTE]
+> "pre_animation" tells the script to figure out the values of those variables once a frame, before animation occurs, so that the animation can use those values in their own formulas. If a variable didn't exist, it will create a new variable and its default value will be 0.0
 
 In definitions\entity\tiger.json:
 
-****
-```
+```JSON
 {
   "custom:tiger":{
     "scripts":{
@@ -104,12 +94,9 @@ In definitions\entity\tiger.json:
 }
 ```
 
+From 0 to -1 to 0 where only "base_pose" will play and then an equal amount of time where Walk will play on top of base_pose as foo goes from 0 to 1 back to 0. Base_pose will have a blend value of 1.0.
 
-
-from 0 to -1 to 0 where only "base_pose" will play and then an equal amount of time where Walk will play on top of base_pose as foo goes from 0 to 1 back to 0.  Base_pose will have a blend value of 1.0.
-
-****
-```
+```JSON
 "controller.animation.tiger.move": {
   "states": {
     "default": {
@@ -125,34 +112,29 @@ from 0 to -1 to 0 where only "base_pose" will play and then an equal amount of t
 }
 ```
 
-
-
-## State Transitions
+### State Transitions
 
 Each transition has a target state to switch to, and a script for whether it should switch or not.  For each transition in order, evaluate the script, and if it returns non-zero, switch to the specified state immediately.  NOTE: Only one transition will be processed per frame.
 
-****
-```
+```JSON
 "<controller_name>": {
   "states": {
     "<state_name>": {
-      ...
       "transitions": [
         // Evaluate the below expressions in order.
         // The first to return non-zero is the state to transition to.
         // If all are zero, then don't transition.
-        { "<target_state_name_A>", "<expression>" },
-        { "<target_state_name_B>", "<expression>" },
-        ...
+        {"<target_state_name_A>", "<expression>" },
+        {"<target_state_name_B>", "<expression>" },
       ]
     }
   },
-  ...
 }
 ```
 
-**For example: **
-```
+#### Example
+
+```JSON
 "controller.animation.tiger.move": {
   "states": {
     "default": {
@@ -178,14 +160,13 @@ Each transition has a target state to switch to, and a script for whether it sho
 }
 ```
 
-
-
-## State Blending
+### State Blending
 
 to the time you would like the system to take in blending between the two states.  This is done as a simple lerp between the two states over the time specified.
 
-**For example: **
-```
+#### Example
+
+```JSON
 "controller.animation.tiger.move": {
   "states": {
     "default": {
@@ -205,20 +186,13 @@ to the time you would like the system to take in blending between the two states
 }
 ```
 
-
-
-# Channels (Rotation, Position, Scale)
+## Channels (Rotation, Position, Scale)
 
 The engine tracks the animation of rotation, position, and scale separately.  Within a channel, one or more key frames are specified at arbitrary times, in seconds, from the start of the animation.  If no key frames are specified, a single key frame is created at t=0.0 and all channel data is stored within that key frame.
 
+## Entity Animation Format Examples
 
-
-# Entity Animation Format Examples
-
-The json format for an animation is as follows.  Note Matching the geometry format, units are in 1/16ths of meters.
-
-****
-```
+Listed below are common examples of how the Animation format is written in JSON.  Note Matching the geometry format, units are in 1/16ths of meters.
 
 ```
 <animation_name>": {
@@ -270,5 +244,4 @@ The json format for an animation is as follows.  Note Matching the geometry form
     }
   ]
 }
-```
 ```
