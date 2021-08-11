@@ -22,13 +22,7 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: Animation Definition List
-            url: Examples/AnimationDefinitionList.md
-          - text: "Furnace Animation"
-            url: Examples/AnimationDefinitions/minecraftAnimation_Furnace.md
-          - text: "Shaped Animation"
-            url: Examples/AnimationDefinitions/minecraftAnimation_Shaped.md
-          - text: "Shapeless Animation"
-            url: Examples/AnimationDefinitions/minecraftAnimation_Shapeless.md
-          - text: "Potion Brewing Animation"
-            url: Examples/AnimationDefinitions/minecraftAnimation_PotionBrewing.md
+          - text: Animation Reference - Getting Started
+            url: Examples/AnimationGettingStarted.md
+          - text: Animation Controllers
+            url: Examples/AnimationControllers.md
