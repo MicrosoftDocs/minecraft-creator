@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Domain Examples
 
-On this page, there are a few examples of how MoLang can be used in a variety of solutions.
+On this page, there are a few examples of how Molang can be used in a variety of solutions.
 
 ## Entity Definition Scripts
 
@@ -29,7 +29,7 @@ In the definition file there is a section for pre-computing values.  These are e
 These are numerical operations to control which animations are playing and how to animate bones.  "variable.variable_name" and "query.function_name" refer to the entity currently being rendered.
 
 > [!CAUTION]
-> Animation and Animation Controller Files have access to everything available in MoLang except `material`, `texture`, and `geometry` types.
+> Animation and Animation Controller Files have access to everything available in Molang except `material`, `texture`, and `geometry` types.
 
 ## Render Controllers
 

@@ -118,7 +118,7 @@ Biomes are read from JSON files in the biomes subfolders of behavior packs. Load
                       int "numerator"<1-*>
                       int "denominator"<1-*>
                   }
-                  molang "scatter_chance" : opt // Probability (0-100] that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.
+                  molang "scatter_chance" : opt // Probability (0-100) that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.
                   enumerated_value "coordinate_eval_order"<"xyz", "xzy", "yxz", "yzx", "zxy", "zyx"> : opt // The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to "xzy".
                   molang "x" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
                   object "x" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.

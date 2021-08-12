@@ -188,7 +188,7 @@ Note that structures can be arbitrarily deep in their nesting/recursiveness. Wit
 
 ## Strings
 
-Strings in Molang are surrounded by single-quotes shown here as `'minecraft:pig'` or `'hello world!'`. An empty string is defined as two back-to-back single quotes shown here as `''`.
+Strings in Molang are surrounded by single - quotes shown here as `'minecraft:pig'` or `'hello world!'`. An empty string is defined as two back - to - back single quotes shown here as `''`.
 
 String operations only support `==` and `!=` at this time.
 
