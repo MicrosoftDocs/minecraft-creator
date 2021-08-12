@@ -1,7 +1,7 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:hell_cave_carver_feature
+title: minecraft:multiface_feature
 ms.prod: gaming
 ---
 
