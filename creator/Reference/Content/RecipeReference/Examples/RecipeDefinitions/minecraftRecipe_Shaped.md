@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Shaped Recipe
 
-Represents a shaped crafting recipe for a crafting table.
+Represents a crafting recipe that is to be used with a crafting table.
 
 ## Parameters
 

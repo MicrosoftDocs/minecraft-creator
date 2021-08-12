@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Furnace Recipe
 
-Represents a furnace recipe for a furnace. `Input` items will burn and transform into items specified in `output`.
+Represents a recipe that is to be used with a furnace. `Input` items will burn and transform into items specified in `output`.
 
 ## Parameters
 

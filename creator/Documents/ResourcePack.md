@@ -91,6 +91,9 @@ Universally Unique Identifier, or UUID for short, is a unique number used to ide
 1. Copy and paste the new UUID into the modules section in-between the quotation marks.
 1. Save the manifest file.
 
+> [!NOTE]
+> To learn more about how a manifest.json file works, you can view the [manifest.json](../Reference/Content/AddonsReference/Examples/AddonManifest.md) page in the Addons documentation by clicking on the link above.
+
 ## Changing the dirt block
 
 With the manifest file completed, you can now start adding custom content to Minecraft. Let’s get started by applying a new texture to the vanilla dirt block.
