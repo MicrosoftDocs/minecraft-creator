@@ -5,7 +5,7 @@ title: minecraft:rect_layout
 ms.prod: gaming
 ---
 
-## minecraft:rect_layout
+# minecraft:rect_layout
 
 `minecraft:rect_layout` scans the surface of a Chunk, calling place() on the surface of each block column.
 

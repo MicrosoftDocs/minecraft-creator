@@ -5,7 +5,7 @@ title: minecraft:aggregate_feature
 ms.prod: gaming
 ---
 
-## minecraft:aggregate_feature
+# minecraft:aggregate_feature
 
 `minecraft:aggregate_feature` places a collection of features in an arbitrary order. All features in the collection use the same input position. Features should not depend on each other, as there is no guarantee in which order the features will be placed.
 

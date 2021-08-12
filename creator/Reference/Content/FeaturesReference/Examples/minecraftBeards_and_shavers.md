@@ -5,7 +5,7 @@ title: minecraft:beards_and_shavers
 ms.prod: gaming
 ---
 
-## minecraft:beards_and_shavers
+# minecraft:beards_and_shavers
 
 `minecraft:beards_and_shavers` will build a 'beard' or 'shave' out space so as to provide a clear space for a feature to place.
 

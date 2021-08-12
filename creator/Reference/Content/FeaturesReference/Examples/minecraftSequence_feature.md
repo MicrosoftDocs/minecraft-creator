@@ -5,7 +5,7 @@ title: minecraft:sequence_feature
 ms.prod: gaming
 ---
 
-## minecraft:sequence_feature
+# minecraft:sequence_feature
 
 `minecraft:sequence_feature` places a collection of features sequentially, in the order they appear in data. The output position of the previous feature is used as the input position for the next. For example, a tree feature is placed at (0, 0, 0) and places blocks up to (0, 10, 0). The next feature in the sequence begins at (0, 10, 0).
 

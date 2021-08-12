@@ -5,7 +5,7 @@ title: Introduction to Features
 ms.prod: gaming
 ---
 
-## Introduction to Features
+# Introduction to Features
 
 Features are decorations scattered throughout the world. Things such as trees, plants, flowers, springs, ore, and coral are all features. Basically, if it isn't the terrain or a mob, it's probably a feature!
 Features can be standalone or composed of multiple sub-features. In practice, most features in Minecraft are defined as a chain of two or more features. These chains typically end with features that place blocks in the world. Other feature types control flow such as conditional, sequential, or random distribution.

@@ -5,7 +5,7 @@ title: minecraft:weighted_random_feature
 ms.prod: gaming
 ---
 
-## minecraft:weighted_random_feature
+# minecraft:weighted_random_feature
 
 `minecraft:weighted_random_feature` randomly selects and places a feature based on a weight value. Weights are relative, with higher values making selection more likely.
 

@@ -5,7 +5,7 @@ title: minecraft:scan_surface
 ms.prod: gaming
 ---
 
-## minecraft:scan_surface
+# minecraft:scan_surface
 
 `minecraft:scan_surface` scans the surface of a Chunk, calling `place()` on the surface of each block column.
 

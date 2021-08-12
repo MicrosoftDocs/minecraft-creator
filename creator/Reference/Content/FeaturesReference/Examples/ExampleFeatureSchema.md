@@ -5,7 +5,7 @@ title: Feature schema
 ms.prod: gaming
 ---
 
-## Feature schema
+# Feature schema
 
 Here is an example of the complete feature schema:
 

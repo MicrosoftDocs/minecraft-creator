@@ -5,7 +5,7 @@ title: minecraft:hell_cave_carver_feature
 ms.prod: gaming
 ---
 
-## minecraft:ore_feature
+# minecraft:ore_feature
 
 `minecraft:ore_feature` places a vein of blocks to simulate ore deposits. Despite the name, any block can be placed by this feature. During placement, existing world blocks are checked to see if they can be replaced by the new ore block based on the list provided in the `may_replace` field of a `replace_rules` entry. If no `may_replace` field is specified in a `replace_rule` entry, the ore block can replace any existing block.
 

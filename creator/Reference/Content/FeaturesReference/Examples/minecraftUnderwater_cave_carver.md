@@ -5,7 +5,7 @@ title: minecraft:underwater_cave_carver_feature
 ms.prod: gaming
 ---
 
-## minecraft:underwater_cave_carver_feature
+# minecraft:underwater_cave_carver_feature
 
 `minecraft:underwater_cave_carver_feature` carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern. This feature will specifically target creating caves only below sea level.
 

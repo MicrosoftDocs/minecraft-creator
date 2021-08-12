@@ -5,7 +5,7 @@ title: minecraft:geode_feature
 ms.prod: gaming
 ---
 
-## minecraft:geode_feature
+# minecraft:geode_feature
 
 `minecraft:geode_feature` generates a rock formation to simulate a geode. Each layer of, and block within, the geode can be replaced. 
 

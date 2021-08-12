@@ -5,7 +5,7 @@ title: minecraft:conditional_list
 ms.prod: gaming
 ---
 
-## minecraft:conditional_list
+# minecraft:conditional_list
 
 `minecraft:conditional_list` Places the first suitable feature within a collection. These conditional features will be evaluated in order.
 

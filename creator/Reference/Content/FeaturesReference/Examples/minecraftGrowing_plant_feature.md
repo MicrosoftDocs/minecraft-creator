@@ -5,7 +5,7 @@ title: minecraft:growing_plant_feature
 ms.prod: gaming
 ---
 
-## minecraft:growing_plant_feature
+# minecraft:growing_plant_feature
 
 `minecraft:growing_plant_feature` places a growing plant in the world. A growing plant is a column that is anchored either to the ceiling or the floor, based on its growth direction. The growing plant has a body and a head, where the head is the tip of the plant, and the body consists of the remainder blocks.
 
