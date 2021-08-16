@@ -106,6 +106,12 @@
             href: Reference/Content/addonsreference/index.yml
           - name: List of Addon Content
             href: Reference/Content/addonesreference/Examples/TOC.yml
+        - name: Animation Documentation
+          items:
+          - name: Animation Documentation Homepage
+            href: Reference/Content/animationsreference/index.yml
+          - name: Animation References
+            href: Reference/Content/animationsreference/Examples/TOC.yml
         - name: Spawn Rules
           href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/DataDrivenSpawning.md
         - name: Biomes
