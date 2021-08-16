@@ -24,5 +24,9 @@ landingContent:
         links:
           - text: Animation Reference - Getting Started
             url: Examples/AnimationGettingStarted.md
+          - text: Animation Reference - Upgrading Animation Scripts
+            url: Examples/AnimationUpgrade.md
           - text: Animation Controllers
-            url: Examples/AnimationControllers.md
+            url: Examples/AnimationController.md
+          - text: Render Controllers
+            url: Examples/AnimationRenderController.md
