@@ -8,24 +8,36 @@
           items:
             - name: Getting Started
               href: Documents/GettingStarted.md
+            - name: 'Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition'
+              href: Documents/DifferencesBetweenBedrockAndJava.md
             - name: Introduction to Resource Packs
               href: Documents/ResourcePack.md
             - name: Introduction to Behavior Packs
               href: Documents/BehaviorPack.md
+            - name: Minecraft Entity Wizard
+              href: Documents/MinecraftEntityWizard.md
             - name: Adding a Custom Block
               href: Documents/CustomBlock.md
             - name: Create a Custom NPC
               href: Documents/CreateNPCs.md
             - name: NPC Dialogue Command
               href: Documents/NPCDialogue.md
+            - name: Introduction to Loot Tables
+              href: Documents/IntroductionToLootTables.md
+            - name: Loot and Trade Table Functions
+              href: Documents/LootAndTradeTableFunctions.md
             - name: Introduction to the Caves & Cliffs Entities
               href: Documents/CavesAndCliffsEntities.md
-            - name: Minecraft Entity Wizard
-              href: Documents/MinecraftEntityWizard.md
         - name: Commands and Command Blocks
           items:
-          - name: Getting Started with Commands
+          - name: Introduction to Commands
+            href: Documents/CommandsIntroduction.md
+          - name: Popular Commands
+            href: Documents/CommandsPopularCommands.md
+          - name: Getting Started with Command Blocks
             href: Documents/CommandBlocks.md
+          - name: How to Make a Complete the Monument Map
+            href: Documents/CommandsHowToMakeACTMMap.md
         - name: GameTest Framework
           items:
           - name: Getting Started with GameTest
