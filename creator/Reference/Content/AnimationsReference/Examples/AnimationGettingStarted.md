@@ -100,7 +100,7 @@ While a lot of this can be managed in the entity definition `scripts/animate` se
 }
 ```
 
-To learn more about Animation Controllers, please visit the [Animation Controllers](AnimationControllers.md) reference page.
+To learn more about Animation Controllers, please visit the [Animation Controllers](AnimationController.md) reference page.
 
 ## Animations
 

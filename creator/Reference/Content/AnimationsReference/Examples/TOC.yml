@@ -5,4 +5,4 @@
  - name: Animation - Animation Controllers
    href: AnimationController.md
  - name: Animation - Render Controllers
-   href: AnimatedRenderController.md
+   href: AnimationRenderController.md

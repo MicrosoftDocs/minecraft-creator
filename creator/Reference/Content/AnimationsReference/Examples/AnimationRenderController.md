@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Animation Reference - Render Controllers
 
-The Render Controller needs an identifier and needs to follow the format of "controller.render.<name>".  This name needs to match the name set in the Client Entity Definitions JSON.
+The Render Controller needs an identifier and needs to follow the format of `"controller.render.<name>"`.  This name needs to match the name set in the Client Entity Definitions JSON.
 
 Render Controllers are a way for the player to determine what renders on the entity.  Players can set the geometry, materials, textures, and part visibility of the entity.  In addition to setting the keys directly, players can use arrays to have the entity choose between different options.
 
