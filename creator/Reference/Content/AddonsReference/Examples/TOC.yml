@@ -1,10 +1,10 @@
- - name: Addon Blocks
+ - name: Addon - Blocks
    href: AddonBlocks.md
- - name: Addon Entities
+ - name: Addon - Entities
    href: addonEntities.md
- - name: Addon Geometry
+ - name: Addon - Geometry
    href: AddonGeometry.md
- - name: Addon Items
+ - name: Addon - Items
    href: AddonItems.md
- - name: Addon Manifest JSON
+ - name: Addon - Manifest JSON
    href: AddonManifest.md
