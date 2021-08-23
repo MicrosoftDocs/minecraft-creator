@@ -57,6 +57,8 @@ productDirectory:
       links:
         - url: Documents/CommandBlocks.md
           text: Getting Started with Command Blocks
+        - url: Reference/Content/molangreference/index.yml
+          text: Molang Documentation
   # card
     - title: Using GameTest
       imageSrc: images/Firework.png
@@ -81,7 +83,7 @@ productDirectory:
           text: Recipe JSON Documentation
         - url: Reference/Content/volumereference/index.yml
           text: Volume JSON Documentation
-        - url: Reference/Content/molangreference/index.yml
-          text: MoLang Documentation
+        - url: Reference/Content/animationsreference/index.yml
+          text: Animation JSON Documentation
 
 

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Introduction to Loot Tables
 
-Loot tables are [JSON](https://www.w3schools.com/whatis/whatis_json.asp) formatted files used to define how items are generated in-game. They can be used to generate the contents of chests, define what items an entity drops upon death, or even what items an entity is equipped with. In some instances, it’s even used in gameplay mechanics such as milking a mooshroom or fishing.
+Loot tables are JSON formatted files used to define how items are generated in-game. They can be used to generate the contents of chests, define what items an entity drops upon death, or even what items an entity is equipped with. In some instances, it’s even used in gameplay mechanics such as milking a mooshroom or fishing.
 
 Loot tables generally consist of three main sections known as a “pool.”
 

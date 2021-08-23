@@ -13,7 +13,7 @@ Molang is a simple expression-based language designed for fast, data-driven calc
 
 The language structure is largely based on simple 'C' language family style syntax.  A script is made of either one expression for simple math calculations, or can be made of several statements where more complicated code is required.
 
-In simple cases, the terminating `;` is omitted and the expression result is returned.  In complex cases (where there are multiple statements terminated with `;`s, `0.0` is returned unless there is a `return` statement, which will exit the current script scope returning the computed value of that return expression (exactly like C).
+In simple cases, the terminating `;` is omitted and the expression result is returned.  In complex cases, where there are multiple statements terminated with `;`, `0.0` is returned unless there is a `return` statement, which will exit the current script scope returning the computed value of that return expression (exactly like C).
 
 > [!NOTE]
 > All things in Molang are **case-insensitive**, with the exception of strings, which maintain the case provided.
@@ -43,7 +43,7 @@ All identifiers not in a scope listed below are reserved for future use.
 | `temp.variable_name`| Read/write temporary storage |
 | `texture.texture_name`| A reference to a texture named in the entity definition |
 | `variable.variable_name`| Read/write storage on an actor |
-| `<test> ? <if true> : <if false>`| Trinary conditional operator |
+| `<test> ? <if true> : <if false>`| Ternary conditional operator |
 | `<test> ? <if true>`| Binary conditional operator |
 | `this`| The current value that this script will ultimately write to (context specific) |
 | `return`| For complex expressions, this evaluates the following statement and stops execution of the script, returns the value computed |
@@ -190,7 +190,7 @@ Note that structures can be arbitrarily deep in their nesting/recursiveness. Wit
 
 Strings in Molang are surrounded by single - quotes shown here as `'minecraft:pig'` or `'hello world!'`. An empty string is defined as two back - to - back single quotes shown here as `''`.
 
-String operations only support `= =` and `! =` at this time.
+String operations only support `==` and `!=` at this time.
 
 > [!NOTE]
 > Strings don't support the ' character as there is no support for escape characters at this time.
@@ -211,7 +211,7 @@ Listed below are the mathematical functions available for use in Molang.
 | `math.cos(value)`| Cosine (in degrees) of value |
 | `math.die_roll(num, low, high)`| returns the sum of 'num' random numbers, each with a value from low to high. Note: the generated random numbers are not integers like normal dice.  For that, use `math.die_roll_integer`. |
 | `math.die_roll_integer(num, low, high)`| returns the sum of 'num' random integer numbers, each with a value from low to high.  Note: the generated random numbers are integers like normal dice. |
-| `math.exp(value)`| Calculates e to the value 'th power |
+| `math.exp(value)`| Calculates e to the value 'nth' power |
 | `math.floor(value)`| Round value down to nearest integral number |
 | `math.hermite_blend(value)`| Useful for simple smooth curve interpolation using one of the Hermite Basis functions: `3t^2 - 2t^3`.  Note that while any valid float is a valid input, this function works best in the range [0,1]. |
 | `math.lerp(start, end, 0_to_1)`| Lerp from start to end via 0_to_1 |
@@ -234,7 +234,7 @@ Listed below are the mathematical functions available for use in Molang.
 Some return values of query function, or values stored in temp/entity/context variables can be a reference to another entity.  The `->` operator allows a script to access variables or run queries on that entity.  For example, the example below will find all pigs within four metres of the current entity(including itself if it's a pig), and increment a variable `v.x` on itself if the block immediately above each pig is flammable (such as an oak button).
 
 > [!CAUTION]
-> In the case where the left - hand - side of the `- >` operator has an error(value is null, the entity was killed previously, or some other issue), the expression will not evaluate the right - hand - side and will return 0.
+> In the case where the left-hand-side of the `->` operator has an error (value is null, the entity was killed previously, or some other issue), the expression will not evaluate the right-hand-side and will return 0.
 >
 > This implementation style was a choice between performance and not requiring content creators to overly worry about checking for potentially bad values everywhere.
 
@@ -327,7 +327,7 @@ loop(10, {
 
 Similar to how the null-coalescing operator works in C, you can now reference a variable that may or may not exist without seeing a content error.  If it doesn't, you can now provide a default value to use.  Previously, if a variable didn't exist you would get a content error.  This was to make sure variables were always initialized correctly to avoid uninitialized variable bugs.
 
-Unfortunately this then required initialize scripts, or in some cases some complex work-arounds to make sure variables were initialized.  Now, if you know a variable won't be initialized in the first run of a script, you can use the following:
+Unfortunately this then required initialized scripts, or in some cases some complex work-arounds to make sure variables were initialized.  Now, if you know a variable won't be initialized in the first run of a script, you can use the following:
 
 ```C
 variable.x = (variable.x ?? 1.2) + 0.3;

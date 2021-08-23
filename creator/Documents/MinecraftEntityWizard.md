@@ -48,7 +48,6 @@ Once you have downloaded and installed [Blockbench](https://blockbench.net), you
 1. Locate the plugin **Bedrock Entity Wizard**, either by scrolling through the list of available plugins, or via the search box.
 1. Click on **Install** to add the plugin to Blockbench.
 
-
 ## The Wizard
 
 Once the plugin is installed, you can now use the Minecraft Entity Wizard to start creating your first Entity with the plugin.
