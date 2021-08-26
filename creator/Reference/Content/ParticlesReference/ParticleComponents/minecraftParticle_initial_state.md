@@ -1,4 +1,11 @@
-Particle Initial State component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Particle Initial State component
+ms.prod: gaming
+---
+
+# Particle Initial State component
 
 ```json
 "minecraft:particle_initial_spin": {

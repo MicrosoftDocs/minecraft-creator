@@ -1,4 +1,11 @@
-Particle Lifetime Events component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Particle Lifetime Events component
+ms.prod: gaming
+---
+
+# Particle Lifetime Events component
 
 ```json
 "minecraft:particle_lifetime_events": {

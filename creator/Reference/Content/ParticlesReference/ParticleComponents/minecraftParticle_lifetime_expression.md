@@ -1,4 +1,11 @@
-Particle Lifetime Expression component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Particle Lifetime Expression component
+ms.prod: gaming
+---
+
+# Particle Lifetime Expression component
 
 ```json
 "minecraft:particle_lifetime_expression": {

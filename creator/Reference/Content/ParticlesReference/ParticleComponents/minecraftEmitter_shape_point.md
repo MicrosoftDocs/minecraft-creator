@@ -1,4 +1,11 @@
-Emitter Shape Point component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Emitter Shape Point component
+ms.prod: gaming
+---
+
+# Emitter Shape Point component
 
 ```json
 "minecraft:emitter_shape_point": {

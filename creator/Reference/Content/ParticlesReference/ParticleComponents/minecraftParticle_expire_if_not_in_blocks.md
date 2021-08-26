@@ -1,4 +1,11 @@
-Particle Expire If Not In Blocks component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Particle Expire If Not In Blocks component
+ms.prod: gaming
+---
+
+# Particle Expire If Not In Blocks component
 
 ```json
 "minecraft:particle_expire_if_not_in_blocks" [

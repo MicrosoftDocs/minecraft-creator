@@ -1,4 +1,11 @@
-Emitter Lifetime Looping component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Emitter Lifetime Looping component
+ms.prod: gaming
+---
+
+# Emitter Lifetime Looping component
 
 ```json
 "minecraft:emitter_lifetime_looping": {

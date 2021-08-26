@@ -1,4 +1,11 @@
-Emitter Shape Box component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Emitter Shape Box component
+ms.prod: gaming
+---
+
+# Emitter Shape Box component
 
 ```json
 

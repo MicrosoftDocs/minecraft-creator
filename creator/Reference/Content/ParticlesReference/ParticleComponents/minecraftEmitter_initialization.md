@@ -1,4 +1,11 @@
-Emitter Initialization component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Emitter Initialization component
+ms.prod: gaming
+---
+
+# Emitter Initialization component
 
 ```json
 

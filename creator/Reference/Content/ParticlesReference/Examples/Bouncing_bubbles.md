@@ -1,4 +1,11 @@
-## Bouncing Bubbles
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Bouncing Bubbles
+ms.prod: gaming
+---
+
+# Bouncing Bubbles
 
 ```json
 

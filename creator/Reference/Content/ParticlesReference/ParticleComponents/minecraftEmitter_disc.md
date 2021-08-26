@@ -1,4 +1,11 @@
-Emitter Disc component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Emitter Disc component
+ms.prod: gaming
+---
+
+# Emitter Disc component
 
 ```json
 "minecraft:emitter_shape_disc": {

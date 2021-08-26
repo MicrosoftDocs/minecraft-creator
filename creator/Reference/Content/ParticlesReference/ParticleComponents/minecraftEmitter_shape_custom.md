@@ -1,4 +1,11 @@
-Emitter Shape Custom component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Emitter Shape Custom component
+ms.prod: gaming
+---
+
+# Emitter Shape Custom component
 
 ```json
 "minecraft:emitter_shape_custom": {

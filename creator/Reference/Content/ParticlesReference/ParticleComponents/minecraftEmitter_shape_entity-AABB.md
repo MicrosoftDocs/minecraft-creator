@@ -1,4 +1,11 @@
-Emitter Shape Entity-AABB component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Emitter Shape Entity-AABB component
+ms.prod: gaming
+---
+
+# Emitter Shape Entity-AABB component
 
 ```json
 

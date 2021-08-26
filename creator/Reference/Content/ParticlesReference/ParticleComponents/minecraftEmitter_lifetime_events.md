@@ -1,4 +1,11 @@
-Emitter Lifetime Events component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Emitter Lifetime Events component
+ms.prod: gaming
+---
+
+# Emitter Lifetime Events component
 
 ```json
 "minecraft:emitter_lifetime_events": {

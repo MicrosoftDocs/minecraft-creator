@@ -1,4 +1,11 @@
-Particle Motion Collision component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Particle Motion Collision component
+ms.prod: gaming
+---
+
+# Particle Motion Collision component
 
 ```json
 

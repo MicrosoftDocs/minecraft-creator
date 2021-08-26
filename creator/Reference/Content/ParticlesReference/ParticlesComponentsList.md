@@ -1,4 +1,11 @@
-# Basic Structure Overview
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Particles Components List
+ms.prod: gaming
+---
+
+# Particles Components List
 
 Particle effects consist of basic render parameters, and a set of components.  Components can be placed in any order.
 

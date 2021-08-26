@@ -1,4 +1,11 @@
-Emitter Lifetime Expression component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Emitter Lifetime Expression component
+ms.prod: gaming
+---
+
+# Emitter Lifetime Expression component
 
 ```json
 "minecraft:emitter_lifetime_expression": {

@@ -1,4 +1,11 @@
-Particle Appearance Tinting component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Particle Appearance Tinting component
+ms.prod: gaming
+---
+
+# Particle Appearance Tinting component
 
 ```json
 

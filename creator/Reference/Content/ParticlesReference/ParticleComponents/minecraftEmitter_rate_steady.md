@@ -1,4 +1,11 @@
-Emitter Rate Steady component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Emitter Rate Steady component
+ms.prod: gaming
+---
+
+# Emitter Rate Steady component
 
 ```json
 "minecraft:emitter_rate_steady": {

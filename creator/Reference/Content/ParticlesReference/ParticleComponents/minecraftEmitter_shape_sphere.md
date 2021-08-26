@@ -1,4 +1,11 @@
-Emitter Shape Sphere component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Emitter Shape Sphere component
+ms.prod: gaming
+---
+
+# Emitter Shape Sphere component
 
 ```json
 "minecraft:emitter_shape_sphere": {

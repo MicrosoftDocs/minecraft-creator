@@ -1,4 +1,11 @@
-Particle Motion Dynamic component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Particle Motion Dynamic component
+ms.prod: gaming
+---
+
+# Particle Motion Dynamic component
 
 ```json
 "minecraft:particle_motion_dynamic": {

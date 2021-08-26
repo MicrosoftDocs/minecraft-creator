@@ -1,4 +1,11 @@
-Particle Appearance Billboard component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Particle Appearance Billboard component
+ms.prod: gaming
+---
+
+# Particle Appearance Billboard component
 
 ```json
 "minecraft:particle_appearance_billboard": {

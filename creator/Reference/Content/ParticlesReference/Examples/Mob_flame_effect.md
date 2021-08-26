@@ -1,4 +1,11 @@
-## Mob Flame effect
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Mob Flame effect
+ms.prod: gaming
+---
+
+# Mob Flame effect
 
 ```json
 

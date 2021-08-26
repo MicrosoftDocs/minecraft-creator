@@ -1,4 +1,11 @@
-## Smoke particle
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Smoke particle
+ms.prod: gaming
+---
+
+# Smoke particle
 
 ```json
 {

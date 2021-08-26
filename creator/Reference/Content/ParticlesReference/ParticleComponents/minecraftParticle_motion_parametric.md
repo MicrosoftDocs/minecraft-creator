@@ -1,4 +1,11 @@
-Particle Motion Parametric component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Particle Motion Parametric component
+ms.prod: gaming
+---
+
+# Particle Motion Parametric component
 
 ```json
 "minecraft:particle_motion_parametric": {

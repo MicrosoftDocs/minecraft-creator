@@ -1,4 +1,11 @@
-Emitter Lifetime Once component
+---
+author: v-jeffreykim
+ms.author: v-jeffreykim
+title: Emitter Lifetime Once component
+ms.prod: gaming
+---
+
+# Emitter Lifetime Once component
 
 ```json
 "minecraft:emitter_lifetime_once": {
