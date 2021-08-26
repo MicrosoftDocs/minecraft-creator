@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Animation Controllers
+title: Animation Documentation - Animation Controllers
 ms.prod: gaming
 ---
 
-# Animation Controllers
+# Animation Documentation - Animation Controllers
 
 The Animation Controller format is written in JSON and formatted as shown below;
 

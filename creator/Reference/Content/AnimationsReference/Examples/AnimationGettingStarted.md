@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Animation Reference - Getting Started
+title: Animation Documentation - Getting Started
 ms.prod: gaming
 ---
 
-# Animation Reference - Getting Started
+# Animation Documentation - Getting Started
 
 ## Overview of Animations in Minecraft: Bedrock Edition
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Biomes Documenation - Overview
+title: Biome Documentation - Overview
 ms.prod: gaming
 ---
 
-# Biomes Overview
+# Biome Documentation - Overview
 
 Biomes describe how a local patch of the world should look and behave. By writing custom biome data you could:
 

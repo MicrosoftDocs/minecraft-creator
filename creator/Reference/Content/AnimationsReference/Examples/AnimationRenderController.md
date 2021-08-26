@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Animation Reference - Render Controllers
+title: Animation Documentation - Render Controllers
 ms.prod: gaming
 ---
 
-# Animation Reference - Render Controllers
+# Animation Documentation - Render Controllers
 
 The Render Controller needs an identifier and needs to follow the format of `"controller.render.<name>"`.  This name needs to match the name set in the Client Entity Definitions JSON.
 

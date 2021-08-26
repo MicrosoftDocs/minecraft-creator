@@ -1,7 +1,7 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Addons - Blocks
+title: Addons Documentation - Blocks
 ms.prod: gaming
 ---
 

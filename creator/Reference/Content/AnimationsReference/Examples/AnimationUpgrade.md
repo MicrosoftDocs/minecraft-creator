@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Animation Reference - Upgrading Animation Scripts
+title: Animation Documentation - Upgrading Animation Scripts
 ms.prod: gaming
 ---
 
-# Animation Reference - Upgrading Animation Scripts
+# Animation Documentation - Upgrading Animation Scripts
 
 If you are updating your Animation scripts to the latest version of Minecraft: Bedrock Edition, there are a few steps needed depending on what version of Minecraft they were written in.
 

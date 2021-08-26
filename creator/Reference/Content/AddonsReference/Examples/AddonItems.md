@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Addons Items
+title: Addons Documentation - Items
 ms.prod: gaming
 ---
 
-# Addon Items
+# Addons Documentation - Items
 
 Listed below are the available Items for use in Minecraft: Bedrock Edition.
 
