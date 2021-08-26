@@ -1,0 +1,42 @@
+### YamlMime:Landing
+
+title: Features JSON Documentation # < 60 chars
+summary: "Landing page containing all Features JSON documentation for Minecraft: Bedrock Edition." # < 160 chars
+
+metadata:
+  title: Features JSON Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: "Landing page containing all Features JSON documentation for Minecraft: Bedrock Edition." # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: v-jeffreykim #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-jeffreykim #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/23/2021 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: Feature Components
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Feature Components List
+            url: Examples/FeatureComponentsList.md
+          - text: "minecraft:bounds"
+            url: Examples/FeatureComponents/minecraftFeature_bounds.md
+          - text: "minecraft:fog"
+            url: Examples/FeatureComponents/minecraftFeature_fog.md
+  # Card (optional)
+  - title: Feature Definitions
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Feature Definitions
+            url: Examples/FeatureDefinitions/FeatureDefinitionProperties.md
+
+
+
+
+

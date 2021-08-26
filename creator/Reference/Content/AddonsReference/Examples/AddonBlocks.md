@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Addons Blocks
+title: Addons - Blocks
 ms.prod: gaming
 ---
 
-# Addon Blocks
+# Addon - Blocks
 
 Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 

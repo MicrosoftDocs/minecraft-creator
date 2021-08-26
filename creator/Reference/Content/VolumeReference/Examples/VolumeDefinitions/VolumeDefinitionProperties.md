@@ -1,15 +1,17 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Volume Properties & Descriptions
+title: Volume Documentation - Properties & Descriptions
 ms.prod: gaming
 ---
 
-# Volume Properties & Descriptions
+# Volume Documentation - Properties & Descriptions
 
 These properties are part of the Volume Definition and Volume Properties that are used within volume JSON files. This helps the system determine how to parse and initialize this volume.
 
-## Code Example of a custom volume's behavior JSON file
+## Example
+
+### Custom volume behavior JSON
 
 ```json
     {
@@ -33,7 +35,7 @@ These properties are part of the Volume Definition and Volume Properties that ar
 ```
 
 | Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
+|:----------|:----------|:----------|:----------|
 | format_version|*not set* | String| Specifies the version of the game this entity was made in. Minimum supported version is 1.17.0. Current supported version is 1.17.0. |
 
 ### Identifier

@@ -1,18 +1,19 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:growing_plant_feature
+title: Features Documentation - minecraft:growing_plant_feature
 ms.prod: gaming
 ---
 
-# minecraft:growing_plant_feature
+# Features Documentation - minecraft:growing_plant_feature
 
 `minecraft:growing_plant_feature` places a growing plant in the world. A growing plant is a column that is anchored either to the ceiling or the floor, based on its growth direction. The growing plant has a body and a head, where the head is the tip of the plant, and the body consists of the remainder blocks.
 
 This feature can be used to define growing plants with variable body and head blocks, e.g. Cave Vines.
 
+## Example
 
-## Example use: Defining a growing plant feature with variable body and head blocks and height distribution
+### Defining a growing plant feature with variable body and head blocks and height distribution
 
 ```json
 {

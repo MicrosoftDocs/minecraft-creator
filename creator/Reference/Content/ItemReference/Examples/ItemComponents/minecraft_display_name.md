@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:display_name(Items)
+title: Item Documentation - minecraft:display_name
 ms.prod: gaming
 ---
 
-# minecraft:display_name (Items)
+# Item Documentation - minecraft:display_name
 
 `minecraft:display_name` sets the item's display name within Minecraft:Bedrock Edition.
 

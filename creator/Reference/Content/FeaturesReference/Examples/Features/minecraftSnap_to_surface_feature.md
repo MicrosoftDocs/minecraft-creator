@@ -1,15 +1,17 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:snap_to_surface_feature
+title: Features Documentation - minecraft:snap_to_surface_feature
 ms.prod: gaming
 ---
 
-# minecraft:snap_to_surface_feature
+# Features Documentation - minecraft:snap_to_surface_feature
 
 `minecraft:snap_to_surface_feature` snaps the y-value of a feature placement pos to the floor or the ceiling within the provided `vertical_search_range`. The placement biome is preserved. If the snap position goes outside of the placement biome, placement will fail.
 
-## Example use: Define a feature that snaps the `cave_vine_feature` to the ceiling
+## Example
+
+### Define a feature that snaps the `cave_vine_feature` to the ceiling
 
 ```json
 {

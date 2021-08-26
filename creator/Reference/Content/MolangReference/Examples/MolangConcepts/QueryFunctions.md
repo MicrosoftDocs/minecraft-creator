@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Query Functions
+title: Molang Documenation - Query Functions
 ms.prod: gaming
 ---
 
-# Query Functions
+# Molang Documenation - Query Functions
 
 Query Functions are boolean expressions that allow you to query for values owned by the engine under different circumstances. Query functions are formatted as `query.is_baby` or `query.is_item_equipped('main_hand')`.They can be used in Molang expressions and allow scripts to read game data. They are useful for controlling things like changing positions, textures, animations, etc if a mob is a baby.
 

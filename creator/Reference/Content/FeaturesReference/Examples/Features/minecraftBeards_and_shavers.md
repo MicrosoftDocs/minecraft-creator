@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:beards_and_shavers
+title: Features Documentation - minecraft:beards_and_shavers
 ms.prod: gaming
 ---
 
-# minecraft:beards_and_shavers
+# Features Documentation - minecraft:beards_and_shavers
 
 `minecraft:beards_and_shavers` will build a 'beard' or 'shave' out space so as to provide a clear space for a feature to place.
 
@@ -15,7 +15,9 @@ A beard/shave is made (this should always happen).
 **Fails if**
 Will always return placement pos, but interior feature placement not guaranteed.
 
-## Example use: Provides an area for interior structure placement
+## Example
+
+### Provides an area for interior structure placement
 
 ```json
 {"code:beards_and_shavers": {

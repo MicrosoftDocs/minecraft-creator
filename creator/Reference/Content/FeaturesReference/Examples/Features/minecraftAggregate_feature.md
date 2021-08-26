@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:aggregate_feature
+title: Features Documentation - minecraft:aggregate_feature
 ms.prod: gaming
 ---
 
-# minecraft:aggregate_feature
+# Features Documentation - minecraft:aggregate_feature
 
 `minecraft:aggregate_feature` places a collection of features in an arbitrary order. All features in the collection use the same input position. Features should not depend on each other, as there is no guarantee in which order the features will be placed.
 
@@ -15,7 +15,9 @@ At lease one feature is placed successfully.
 **Fails if**
 All features fail to be placed.
 
-## Example: Scattering multiple different plants around a monument.
+## Example
+
+### Scattering multiple different plants around a monument
 
 ```json
 {

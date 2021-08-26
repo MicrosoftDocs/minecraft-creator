@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:durability
+title: Item Documentation - minecraft:durability
 ms.prod: gaming
 ---
 
-# minecraft:durability
+# Item Documentation - minecraft:durability
 
 `minecraft:durability` sets how much damage the item can take before breaking.
 

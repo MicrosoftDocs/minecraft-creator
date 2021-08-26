@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:on_use
+title: Item Documentation - minecraft:on_use
 ms.prod: gaming
 ---
 
-# minecraft:on_use
+# Item Documentation - minecraft:on_use
 
 `minecraft:on_use` Allows you to receive an event when the item is used.
 

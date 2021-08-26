@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Shapeless Recipe
+title: Recipe Documentation - Shapeless Recipe
 ms.prod: gaming
 ---
 
-# Shapeless Recipe
+# Recipe Documentation - Shapeless Recipe
 
 Represents a shapeless crafting recipe.
 
@@ -44,5 +44,7 @@ Represents a shapeless crafting recipe.
 ```
 
 ## Vanilla Example
+
+### Blaze Powder
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/recipes/blaze_powder.json":::

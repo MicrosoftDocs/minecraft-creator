@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Item List
+title: Item Documentation - Item List
 ms.prod: gaming
 ---
 
-# Items
+# Item Documentation - Items
 
 Below is a list of all the available Item JSON files within Minecraft:Bedrock Edition.
 

@@ -174,8 +174,8 @@ As such, when interpolating between two key frames, one can define the slope of 
 This example scales the bone "head":
 
 1. From 0 to 0.5 seconds (in the "pre" tag), the head bone is set to its normal scale of 1 in all dimensions [X, Y, Z]
-2. At 0.5 seconds, the bone will instantly scale up to 2 times its normal size
-3. From 0.5 to 1 second ("post"), the bone will re-scale back to its normal size of scale of 1 in all dimensions
+1. At 0.5 seconds, the bone will instantly scale up to 2 times its normal size
+1. From 0.5 to 1 second ("post"), the bone will re-scale back to its normal size of scale of 1 in all dimensions
 
 > [!NOTE]
 > In the larger example above of the file format, "pre" and "post" can also be defined by a Molang expression that calculates that value at runtime, allowing you to have a mathematically defined curve instead of being purely linear.

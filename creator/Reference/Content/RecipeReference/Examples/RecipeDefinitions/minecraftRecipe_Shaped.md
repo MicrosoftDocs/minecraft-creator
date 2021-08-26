@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Shaped Recipe
+title: Recipe Documentation -Shaped Recipe
 ms.prod: gaming
 ---
 
-# Shaped Recipe
+# Recipe Documentation - Shaped Recipe
 
 Represents a crafting recipe that is to be used with a crafting table.
 
@@ -55,5 +55,7 @@ The `key` used in the pattern may be any single character except the 'space' cha
 ```
 
 ## Vanilla Example
+
+### Iron Pickaxe
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/recipes/iron_pickaxe.json":::

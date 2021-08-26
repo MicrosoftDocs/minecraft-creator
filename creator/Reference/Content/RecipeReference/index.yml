@@ -24,11 +24,11 @@ landingContent:
         links:
           - text: Recipe Definition List
             url: Examples/RecipeDefinitionList.md
-          - text: "Furnace Recipe"
+          - text: Furnace Recipe
             url: Examples/RecipeDefinitions/minecraftRecipe_Furnace.md
-          - text: "Shaped Recipe"
+          - text: Shaped Recipe
             url: Examples/RecipeDefinitions/minecraftRecipe_Shaped.md
-          - text: "Shapeless Recipe"
+          - text: Shapeless Recipe
             url: Examples/RecipeDefinitions/minecraftRecipe_Shapeless.md
-          - text: "Potion Brewing Recipe"
+          - text: Potion Brewing Recipe
             url: Examples/RecipeDefinitions/minecraftRecipe_PotionBrewing.md

@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Feature schema
+title: Features Documentation - Feature schema
 ms.prod: gaming
 ---
 
-# Feature schema
+# Features Documentation - Feature Schema
 
 Here is an example of the complete feature schema:
 
