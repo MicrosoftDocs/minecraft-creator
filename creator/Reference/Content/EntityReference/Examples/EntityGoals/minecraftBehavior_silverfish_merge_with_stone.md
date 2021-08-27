@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.silverfish_merge_with_stone
+title: Entity Documentation - minecraft:behavior.silverfish_merge_with_stone
 ms.prod: gaming
 ---
 
-# minecraft:behavior.silverfish_merge_with_stone
+# Entity Documentation - minecraft:behavior.silverfish_merge_with_stone
 
 `minecraft:behavior.silverfish_merge_with_stone` allows an entity to enter a stone block.
 

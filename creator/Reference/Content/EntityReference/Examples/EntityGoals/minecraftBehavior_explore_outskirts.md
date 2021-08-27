@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.explore_outskirts
+title: Entity Documentation - minecraft:behavior.explore_outskirts
 ms.prod: gaming
 ---
 
-# minecraft:behavior.explore_outskirts
+# Entity Documentation - minecraft:behavior.explore_outskirts
 
 `minecraft:behavior.explore_outskirts` allows an entity to travel beyond the bounds of a village and wander while looking for any points of interest.
 

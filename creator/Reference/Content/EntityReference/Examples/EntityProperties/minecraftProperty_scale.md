@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:scale
+title: Entity Documentation - minecraft:scale
 ms.prod: gaming
 ---
 
-# minecraft:scale
+# Entity Documentation -  minecraft:scale
 
 `minecraft:scale` sets the entity's visual size by scaling the model size.
 

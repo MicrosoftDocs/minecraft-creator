@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:can_climb
+title: Entity Documentation - minecraft:can_climb
 ms.prod: gaming
 ---
 
-# minecraft:can_climb
+# Entity Documentation -  minecraft:can_climb
 
 `minecraft:can_climb` allows an entity to climb ladders.
 

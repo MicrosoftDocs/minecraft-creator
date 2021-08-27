@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: in_water_or_rain
+title: Entity Documentation - in_water_or_rain
 ms.prod: gaming
 ---
 
-# in_water_or_rain
+# Entity Documentation - in_water_or_rain
 
 Returns true when the subject entity is in water or rain.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.defend_trusted_target
+title: Entity Documentation - minecraft:behavior.defend_trusted_target
 ms.prod: gaming
 ---
 
-# minecraft:behavior.defend_trusted_target
+# Entity Documentation - minecraft:behavior.defend_trusted_target
 
 `minecraft:behavior.defend_trusted_target` allows an entity to react with an event when a trusted target is attacked.
 

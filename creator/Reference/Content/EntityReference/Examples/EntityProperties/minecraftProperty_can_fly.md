@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:can_fly
+title: Entity Documentation - minecraft:can_fly
 ms.prod: gaming
 ---
 
-# minecraft:can_fly
+# Entity Documentation -  minecraft:can_fly
 
 `minecraft:can_fly` allows an entity the ability to fly, the pathfinder won't be restricted to paths where a solid block is required underneath it.
 

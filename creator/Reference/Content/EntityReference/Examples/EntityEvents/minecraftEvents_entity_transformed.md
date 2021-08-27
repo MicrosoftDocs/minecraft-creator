@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:entity_transformed
+title: Entity Documentation - minecraft:entity_transformed
 ms.prod: gaming
 ---
 
-# minecraft:entity_transformed
+# Entity Documentation - minecraft:entity_transformed
 
 `minecraft:entity_transformed` triggers an event call on an entity that transforms into another entity.
 

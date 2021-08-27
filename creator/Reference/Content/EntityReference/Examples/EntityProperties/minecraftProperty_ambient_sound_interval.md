@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:ambient_sound_interval
+title: Entity Documentation -minecraft:ambient_sound_interval
 ms.prod: gaming
 ---
 
-# minecraft:ambient_sound_interval
+# Entity Documentation -  minecraft:ambient_sound_interval
 
 `minecraft:ambient_sound_interval` will set the entity's delay between playing its ambient sound.
 

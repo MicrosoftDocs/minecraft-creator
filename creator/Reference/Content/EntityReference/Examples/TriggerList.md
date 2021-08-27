@@ -1,12 +1,12 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Trigger List
-description: 
+title: Entity Documentation - Trigger List
+description:
 ms.prod: gaming
 ---
 
-# Trigger list
+# Entity Documentation - Trigger list
 
 Below is a list of all the available Triggers within Minecraft:Bedrock Edition for use with Entity JSON files.
 

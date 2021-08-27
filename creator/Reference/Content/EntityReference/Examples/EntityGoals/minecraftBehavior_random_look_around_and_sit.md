@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.random_look_around_and_sit
+title: Entity Documentation - minecraft:behavior.random_look_around_and_sit
 ms.prod: gaming
 ---
 
-# minecraft:behavior.random_look_around_and_sit
+# Entity Documentation - minecraft:behavior.random_look_around_and_sit
 
 `minecraft:behavior.random_look_around_and_sit` allows an entity to sit in place and look around in different directions.
 

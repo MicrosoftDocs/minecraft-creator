@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:on_target_escape
+title: Entity Documentation - minecraft:on_target_escape
 ms.prod: gaming
 ---
 
-# minecraft:on_target_escape
+# Entity Documentation - minecraft:on_target_escape
 
 `minecraft:on_target_escape` adds a trigger to call when this entity loses the target it currently has.
 

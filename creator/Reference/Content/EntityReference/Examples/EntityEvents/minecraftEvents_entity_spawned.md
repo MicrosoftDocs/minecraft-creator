@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:entity_spawned
+title: Entity Documentation - minecraft:entity_spawned
 ms.prod: gaming
 ---
 
-# minecraft:entity_spawned
+# Entity Documentation - minecraft:entity_spawned
 
 `minecraft:entity_spawned` triggers an event calls on an entity when the entity is spawned in the world.
 

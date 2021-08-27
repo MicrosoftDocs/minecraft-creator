@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.random_sitting
+title: Entity Documentation - minecraft:behavior.random_sitting
 ms.prod: gaming
 ---
 
-# minecraft:behavior.random_sitting
+# Entity Documentation - minecraft:behavior.random_sitting
 
 `minecraft:behavior.random_sitting` allows an entity to stop and sit for a random duration of time.
 

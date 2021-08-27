@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_family
+title: Entity Documentation - is_family
 ms.prod: gaming
 ---
 
-# is_family
+# Entity Documentation - is_family
 
 Returns true when the subject entity is a member of the named family.
 

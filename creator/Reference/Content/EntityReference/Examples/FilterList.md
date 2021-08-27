@@ -1,12 +1,12 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: FilterList
-description: 
+title: Entity Documentation - FilterList
+description:
 ms.prod: gaming
 ---
 
-# Filter list
+# Entity Documentation - Filter list
 
 Below is a list of all the available filters within Minecraft:Bedrock Edition for use with Entity JSON files.
 

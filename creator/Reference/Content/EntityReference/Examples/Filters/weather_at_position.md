@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: weather_at_position
+title: Entity Documentation - weather_at_position
 ms.prod: gaming
 ---
 
-# weather_at_position
+# Entity Documentation - weather_at_position
 
 Tests the current weather, at the actor's position, against a provided weather value.
 

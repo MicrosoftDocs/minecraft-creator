@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: has_biome_tag
+title: Entity Documentation - has_biome_tag
 ms.prod: gaming
 ---
 
-# has_biome_tag
+# Entity Documentation - has_biome_tag
 
 Tests whether the biome the subject is in has the specified tag.
 

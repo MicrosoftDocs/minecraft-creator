@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.random_swim
+title: Entity Documentation - minecraft:behavior.random_swim
 ms.prod: gaming
 ---
 
-# minecraft:behavior.random_swim
+# Entity Documentation - minecraft:behavior.random_swim
 
 `minecraft:behavior.random_swim` allows an entity to swim in a random point in water.
 

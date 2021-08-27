@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.squid_idle
+title: Entity Documentation - minecraft:behavior.squid_idle
 ms.prod: gaming
 ---
 
-# minecraft:behavior.squid_idle
+# Entity Documentation - minecraft:behavior.squid_idle
 
 `minecraft:behavior.squid_idle` allows an entity to swim in place.
 

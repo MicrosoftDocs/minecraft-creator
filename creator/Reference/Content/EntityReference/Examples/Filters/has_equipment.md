@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: has_equipment
+title: Entity Documentation - has_equipment
 ms.prod: gaming
 ---
 
-# has_equipment
+# Entity Documentation - has_equipment
 
 Tests for the presence of a named item in the designated slot of the subject entity.
 
@@ -51,20 +51,20 @@ Domain is used to test where the equipment is located.
 
 |Options|
 |:-----------|
-| any|  
-| armor|  
-| feet|  
-| hand|  
-| head|  
-| leg|  
-| torso|  
+| any|
+| armor|
+| feet|
+| hand|
+| head|
+| leg|
+| torso|
 
 ## Example
 
 ### Full
 
 ```json
-{ "test": "has_equipment", "subject": "self", "domain": "any", "operator": "equals", "value": "dirt" 
+{ "test": "has_equipment", "subject": "self", "domain": "any", "operator": "equals", "value": "dirt"
 ```
 
 ### Short (using Defaults)

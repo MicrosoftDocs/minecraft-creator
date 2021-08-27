@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:color
+title: Entity Documentation - minecraft:color
 ms.prod: gaming
 ---
 
-# minecraft:color
+# Entity Documentation -  minecraft:color
 
 `minecraft:color` Defines the entity's main color.
 

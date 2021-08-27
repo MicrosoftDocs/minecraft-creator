@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.lay_down
+title: Entity Documentation - minecraft:behavior.lay_down
 ms.prod: gaming
 ---
 
-# minecraft:behavior.lay_down
+# Entity Documentation - minecraft:behavior.lay_down
 
 `minecraft:behavior.lay_down` allows an entity randomly lay down for a period of time.
 

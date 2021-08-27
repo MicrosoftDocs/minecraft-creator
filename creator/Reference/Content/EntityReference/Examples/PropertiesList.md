@@ -1,12 +1,12 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Properties List
-description: 
+title: Entity Documentation - Properties List
+description:
 ms.prod: gaming
 ---
 
-# Properties list
+# Entity Documentation - Properties list
 
 Below is a list of all the available Properties within Minecraft: Bedrock Edition for use with Entity JSON files.
 

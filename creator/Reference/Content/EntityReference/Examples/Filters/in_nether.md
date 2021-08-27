@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: in_nether
+title: Entity Documentation - in_nether
 ms.prod: gaming
 ---
 
-# in_nether
+# Entity Documentation - in_nether
 
 Returns true when the subject entity is in Nether.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:is_chested
+title: Entity Documentation - minecraft:is_chested
 ms.prod: gaming
 ---
 
-# minecraft:is_chested
+# Entity Documentation -  minecraft:is_chested
 
 `minecraft:is_chested` sets that the entity is currently carrying a chest.
 

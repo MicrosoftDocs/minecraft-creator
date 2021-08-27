@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_mark_variant
+title: Entity Documentation - is_mark_variant
 ms.prod: gaming
 ---
 
-# is_mark_variant
+# Entity Documentation - is_mark_variant
 
 Returns true if the subject entity is the mark variant number provided.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.lay_egg
+title: Entity Documentation - minecraft:behavior.lay_egg
 ms.prod: gaming
 ---
 
-# minecraft:behavior.lay_egg
+# Entity Documentation - minecraft:behavior.lay_egg
 
 `minecraft:behavior.lay_egg` allows an entity to lay eggs.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:on_start_landing
+title: Entity Documentation - minecraft:on_start_landing
 ms.prod: gaming
 ---
 
-# minecraft:on_start_landing
+# Entity Documentation - minecraft:on_start_landing
 
 `minecraft:on_start_landing` adds a trigger to call when this entity lands.
 
