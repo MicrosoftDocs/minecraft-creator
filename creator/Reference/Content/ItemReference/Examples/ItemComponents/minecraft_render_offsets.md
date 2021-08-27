@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:render_offsets
+title: Item Documentation - minecraft:render_offsets
 ms.prod: gaming
 ---
 
-# minecraft:render_offsets
+# Item Documentation - minecraft:render_offsets
 
 `minecraft:render_offsets` sets the render_offsets item component. Optional values can be given to offset the way the item is rendered.
 

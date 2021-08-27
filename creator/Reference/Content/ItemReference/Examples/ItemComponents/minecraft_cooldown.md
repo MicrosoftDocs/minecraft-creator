@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:cooldown
+title: Item Documentation - minecraft:cooldown
 ms.prod: gaming
 ---
 
-# minecraft:cooldown
+# Item Documentation - minecraft:cooldown
 
 `minecraft:cooldown` sets the item's "Cool down" time. After you use an item it becomes unusable for the duration specified by the 'duration' setting in this component.
 

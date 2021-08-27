@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:weapon
+title: Item Documentation - minecraft:weapon
 ms.prod: gaming
 ---
 
-# minecraft:weapon
+# Item Documentation - minecraft:weapon
 
 `minecraft:weapon` sets the weapon item component. Added to every weapon item such as axe, sword, trident, bow, crossbow.
 

@@ -20,7 +20,7 @@ ms.prod: gaming
 
 ### ghast
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ghast.json" range="43-45":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ghast.json" range="43-44":::
 
 ## Vanilla entities using `minecraft:can_fly`
 

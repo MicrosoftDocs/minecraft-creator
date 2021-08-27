@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:fuel
+title: Item Documentation - minecraft:fuel
 ms.prod: gaming
 ---
 
-# minecraft:fuel
+# Item Documentation - minecraft:fuel
 
 `minecraft:fuel` sets the item as a fuel component, allowing this item to be used as fuel in a furnace to 'cook' other items.
 

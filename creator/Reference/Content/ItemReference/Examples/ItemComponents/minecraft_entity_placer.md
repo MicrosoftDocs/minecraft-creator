@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:entity_placer
+title: Item Documentation - minecraft:entity_placer
 ms.prod: gaming
 ---
 
-# minecraft:entity_placer
+# Item Documentation - minecraft:entity_placer
 
 `minecraft:entity_placer` sets the item as a Planter item component for Entities. Planter items are items that can be planted into another block.
 
