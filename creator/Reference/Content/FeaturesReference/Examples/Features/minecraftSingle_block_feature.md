@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:single_block_feature
+title: Features Documentation - minecraft:single_block_feature
 ms.prod: gaming
 ---
 
-# minecraft:single_block_feature
+# Features Documentation - minecraft:single_block_feature
 
 `minecraft:single_block_feature` places a single block in the world. The `may_place_on` and `may_replace` fields are allow lists which specify where the block can be placed. If these fields are omitted, the block can be placed anywhere. The block's internal survivability and placement rules can optionally be enforced with the `enforce_survivability_rules` and `enforce_placement_rules` fields. These rules are specified per-block and are typically designed to produce high quality gameplay or natural behavior. However, enabling this enforcement may make it harder to debug placement failures.
 
@@ -15,7 +15,9 @@ The block is successfully placed in the world.
 **Fails if**
 The block fails to be placed.
 
-## Example use: Placing a single pumpkin block
+## Example
+
+### Placing a single pumpkin block
 
 ```json
 {

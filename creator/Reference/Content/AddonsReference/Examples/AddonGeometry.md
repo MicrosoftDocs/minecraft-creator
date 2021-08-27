@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Addons Geometry
+title: Addons Documentation - Geometry
 ms.prod: gaming
 ---
 
-# Addon Geometry
+# Addons Documentation - Geometry
 
 Blocks and Items commonly use geometry to define how an object will look in Minecraft: Bedrock Edition.
 

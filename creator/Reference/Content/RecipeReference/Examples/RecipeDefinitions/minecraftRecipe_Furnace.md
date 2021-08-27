@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Furnace Recipe
+title: Recipe Documentation - Furnace Recipe
 ms.prod: gaming
 ---
 
-# Furnace Recipe
+# Recipe Documentation - Furnace Recipe
 
 Represents a recipe that is to be used with a furnace. `Input` items will burn and transform into items specified in `output`.
 
@@ -38,5 +38,7 @@ Represents a recipe that is to be used with a furnace. `Input` items will burn a
 ```
 
 ## Vanilla Example
+
+### Cobblestone
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/recipes/furnace_cobblestone.json":::

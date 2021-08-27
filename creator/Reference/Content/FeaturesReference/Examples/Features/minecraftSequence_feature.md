@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:sequence_feature
+title: Features Documentation - minecraft:sequence_feature
 ms.prod: gaming
 ---
 
-# minecraft:sequence_feature
+# Features Documentation - minecraft:sequence_feature
 
 `minecraft:sequence_feature` places a collection of features sequentially, in the order they appear in data. The output position of the previous feature is used as the input position for the next. For example, a tree feature is placed at (0, 0, 0) and places blocks up to (0, 10, 0). The next feature in the sequence begins at (0, 10, 0).
 
@@ -15,7 +15,9 @@ All features in the sequence are successfully placed.
 **Fails if**
 Any feature in the sequence fails to be placed. Features that have not yet been placed at the time of failure are skipped.
 
-## Example use: Scattering fruit throughout the canopy of a tree.
+## Example
+
+### Scattering fruit throughout the canopy of a tree
 
 ```json
 {

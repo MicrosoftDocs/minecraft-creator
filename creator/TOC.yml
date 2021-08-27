@@ -100,6 +100,16 @@
             href: Reference/Content/volumereference/Examples/VolumeComponents/TOC.yml
           - name: Volume Definitions
             href: Reference/Content/volumereference/Examples/VolumeDefinitions/VolumeDefinitionProperties.md
+        - name: Fog JSON
+          items:
+          - name: Introduction to Fogs
+            href: Reference/Content/fogsreference/Examples/FogsIntroduction.md
+        - name: Feature Documentation
+          items:
+          - name: Feature Documentation Homepage
+            href: Reference/Content/featuresreference/index.yml
+          - name: Feature List
+            href: Reference/Content/featurereference/Examples/Features/TOC.yml
         - name: Addons Documentation
           items:
           - name: Addons Documentation Homepage

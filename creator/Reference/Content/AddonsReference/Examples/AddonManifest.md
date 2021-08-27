@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Addons manifest.json
+title: Addons Documentation - manifest.json
 ms.prod: gaming
 ---
 
-# Addon manifest.json
+# Addons Documentation - manifest.json
 
 The manifest file contains all the basic information about the pack that Minecraft needs to identify it. The tables below contain all the components of the manifest, their individual properties, and what they mean.
 

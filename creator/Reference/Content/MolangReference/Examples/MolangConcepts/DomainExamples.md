@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Domain Examples
+title: Molang Documenation - Domain Examples
 ms.prod: gaming
 ---
 
-# Domain Examples
+# Molang Documenation - Domain Examples
 
 On this page, there are a few examples of how Molang can be used in a variety of solutions.
 

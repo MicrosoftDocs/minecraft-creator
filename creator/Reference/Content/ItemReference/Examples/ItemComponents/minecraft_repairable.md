@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:repairable
+title: Item Documentation - minecraft:repairable
 ms.prod: gaming
 ---
 
-# minecraft:repairable
+# Item Documentation - minecraft:repairable
 
 `minecraft:repairable` sets the repairable item component with how much damage can this item repair and what items can repair it.
 

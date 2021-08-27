@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:conditional_list
+title: Features Documentation - minecraft:conditional_list
 ms.prod: gaming
 ---
 
-# minecraft:conditional_list
+# Features Documentation - minecraft:conditional_list
 
 `minecraft:conditional_list` Places the first suitable feature within a collection. These conditional features will be evaluated in order.
 
@@ -15,14 +15,15 @@ A condition is successfully resolved.
 **Fails if**
 No condition is successfully resolved.
 
+## Example
 
-## Example use: Assigning a feature to an expression
+### Assigning a feature to an expression
 
 ```json
 "conditional_features" : [
-  { 
+  {
     "places_feature" : "badger:some_feature_or_other",
-    "condition" : "query.check_some_block_property(),
+    "condition" : "query.check_some_block_property()",
   },
 ],
 "early_out_scheme": "placement_success"

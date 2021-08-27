@@ -1,18 +1,24 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:multiface_feature
+title: Features Documentation - minecraft:multiface_feature
 ms.prod: gaming
 ---
 
-# minecraft:multiface_feature
+# Features Documentation - minecraft:multiface_feature
 
 `minecraft:multiface_feature` places one or a few multiface blocks on floors/walls/ceilings. Despite the name, any block can be placed by this feature. During placement, existing world blocks are checked to see if this feature can be placed on them based on the list provided in the `can_place_on` field. If no `can_replace_on` field is specified, the `place_block` block can be placed on any existing block.
 This feature will also try to spread the `place_block` block around the location in world the feature is placed.
-Succeeds if: At least one block is successfully placed.
-Fails if: All block placements fail.
 
-## Example use: Blue vines in caves
+**Succeeds if:**
+At least one block is successfully placed.
+
+**Fails if:**
+All block placements fail.
+
+## Example
+
+### Blue vines in caves
 
 ```json
 {

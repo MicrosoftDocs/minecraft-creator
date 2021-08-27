@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:wearable
+title: Item Documentation - minecraft:wearable
 ms.prod: gaming
 ---
 
-# minecraft:wearable
+# Item Documentation - minecraft:wearable
 
 `minecraft:wearable` sets the wearable item component.
 

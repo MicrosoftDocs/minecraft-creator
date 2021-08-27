@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:rect_layout
+title: Features Documentation - minecraft:rect_layout
 ms.prod: gaming
 ---
 
-# minecraft:rect_layout
+# Features Documentation - minecraft:rect_layout
 
 `minecraft:rect_layout` scans the surface of a Chunk, calling place() on the surface of each block column.
 
@@ -15,7 +15,9 @@ A Feature is successfully placed within a Chunk.
 **Fails if**
 No Feature could be placed within a Chunk.
 
-## Example use: Scans the surface of a chunk and places a feature if able
+## Example
+
+### Scans the surface of a chunk and places a feature if able
 
 ```json
 {

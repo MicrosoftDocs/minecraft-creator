@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Addons Entity List
+title: Addons Documentation - Entity List
 ms.prod: gaming
 ---
 
-# Addon Entities
+# Addons Documentation - Entity List
 
 An overview of the Entities and Damage Sources that can be used in Addons for Minecraft: Bedrock Edition.
 

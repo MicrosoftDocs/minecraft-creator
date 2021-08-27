@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:weighted_random_feature
+title: Features Documentation - minecraft:weighted_random_feature
 ms.prod: gaming
 ---
 
-# minecraft:weighted_random_feature
+# Features Documentation - minecraft:weighted_random_feature
 
 `minecraft:weighted_random_feature` randomly selects and places a feature based on a weight value. Weights are relative, with higher values making selection more likely.
 
@@ -15,7 +15,9 @@ The selected feature is placed.
 **Fails if**
 The selected feature fails to be placed.
 
-## Example use: Selecting and placing a variant of a flower
+## Example
+
+### Selecting and placing a variant of a flower
 
 ```json
 {

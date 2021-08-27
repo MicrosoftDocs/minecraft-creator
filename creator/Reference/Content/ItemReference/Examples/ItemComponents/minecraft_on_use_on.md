@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:on_use_on
+title: Item Documentation - minecraft:on_use_on
 ms.prod: gaming
 ---
 
-# minecraft:on_use_on
+# Item Documentation - minecraft:on_use_on
 
 `minecraft:on_use_on` Allows you to receive an event when the item is used on a block in the world
 

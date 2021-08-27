@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Introduction to Texture Sets
+title: Texture Set Documentation - Introduction to Texture Sets
 ms.prod: gaming
 ---
 
-# Introduction to Texture Sets
+# Texture Set Documentation - Introduction to Texture Sets
 
 Minecraft supports a Physically Based Rendering (PBR) color pipeline (e.g. used for Ray Tracing). This uses more texture data than just 'color', which enables richer, more realistic visuals. Using PBR, you can have layers for different specular reflections, emissivity, normal maps, and more, which goes beyond the classic color pipeline for Vanilla Minecraft. Texture Sets have been added as the feature for defining multiple PBR layers for a texture resource. Texture Sets are data driven from json files.
 
@@ -76,7 +76,7 @@ This example uses referenced images that exist in the same folder. It uses a nor
 
 You could also specify values of textures using numerical or hexadecimal values.
 
-```
+```json
 {
   "format_version": "1.16.100",
   "minecraft:texture_set": {
@@ -89,6 +89,7 @@ You could also specify values of textures using numerical or hexadecimal values.
 ## Invalid *.texture_set.json
 
 If a Texture Set is invalid, CONTENT_ERROR will be logged and the Texture Set will not be used.
+
 A Texture Set is invalid if:
 
 - JSON data cannot be parsed, or doesn't meet the Texture Set schema.

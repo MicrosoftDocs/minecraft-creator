@@ -1,13 +1,13 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:geode_feature
+title: Features Documentation - minecraft:geode_feature
 ms.prod: gaming
 ---
 
-# minecraft:geode_feature
+# Features Documentation - minecraft:geode_feature
 
-`minecraft:geode_feature` generates a rock formation to simulate a geode. Each layer of, and block within, the geode can be replaced. 
+`minecraft:geode_feature` generates a rock formation to simulate a geode. Each layer of, and block within, the geode can be replaced.
 
 **Succeeds if**
 At least one block within the geode is placed.
@@ -15,7 +15,9 @@ At least one block within the geode is placed.
 **Fails if**
 All blocks within the geode fail to be placed.
 
-## Example use: Diamond geodes with emerald blocks inside and obsidian on the outside
+## Example
+
+### Diamond geodes with emerald blocks inside and obsidian on the outside
 
 ```json
 {

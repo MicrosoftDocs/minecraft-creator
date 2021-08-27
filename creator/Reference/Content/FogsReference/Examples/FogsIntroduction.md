@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Introduction to Fogs
+title: Fog Documentation - Introduction to Fogs
 ms.prod: gaming
 ---
 
-# Introduction to Fogs
+# Fog Documentation - Introduction to Fogs
 
 Fogs are a rendering feature that can be used to obscure the player's view distance. You can use fogs to occlude boundaries, such as unloaded chunks beyond the render distance, or to produce an atmospheric effect. There are several types of fogs that can be used in many different circumstances.
 
@@ -130,17 +130,15 @@ The active fog stack is used to determine which fog setting to use at any given 
 Whenever the game needs to determine the values for the fog, it will start at the top of the fog stack and check down it until it finds a value for the current setting type. If no fog settings on the stack are a match, the game will continue down the stack and check in. If it finds no matching setting, the game will use the defaults defined by the engine, instead.
 
 The fog stack initially is set up as follows. Starting at the bottom:
+
 - Engine Default: hard code values.
 - Data Default: The default data driven settings.
 - Biomes: The settings defined to be on each biome.
 - Command: The settings set on the player by server commands.
 
-
-
-
 ### Engine Default
 
-Hard-coded values in case there are no data driven values; the Engine Default will be loaded if there is no matching fog setting when the game reaches the bottom of the fog stack.
+Hard-coded values are used in case there are no data driven values; the Engine Default will be loaded if there is no matching fog setting when the game reaches the bottom of the fog stack.
 
 ### Data Default
 
@@ -168,13 +166,13 @@ In each biome (including `default`) there is the tag `inherit_from_prior_fog` th
 While set to `false` (or if the tag is not entered), the current resource pack's biome will overwrite the currently stored `fog_identifier` tag with its own.
 If set to `true`, the `fog_identifier` tags from all matching biomes will be added together and create a new merged fog definition for that biome.
 
-## Fog Command
+## The Fog Command
 
 The `/fog` command can be used to manage fog settings in the current layer of the active fog stack for each player.
 
 Fog settings in this layer are ordered via the `push`, `pop`, and `remove` modes of the `/fog` command.
 
-Fog Settings are evaluated top-to bottom in the active fog stack which includes top-to-bottom in the current layer first.
+Fog settings are evaluated top-to bottom in the active fog stack which includes top-to-bottom in the current layer first.
 
 Fog settings in this layer are saved and then restored on world load per player. A fog setting that is pushed before a world save will still apply after a world load and can then be popped.
 
