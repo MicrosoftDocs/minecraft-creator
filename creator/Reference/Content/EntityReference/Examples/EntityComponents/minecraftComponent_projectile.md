@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:projectile(entity)
+title: Entity Documentation - minecraft:projectile
 ms.prod: gaming
 ---
 
-# minecraft:projectile (Entity)
+# Entity Documentation - minecraft:projectile
 
 `minecraft:projectile` allows the entity to be a thrown entity.
 

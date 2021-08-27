@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:persistent
+title: Entity Documentation - minecraft:persistent
 ms.prod: gaming
 ---
 
-# minecraft:persistent
+# Entity Documentation - minecraft:persistent
 
 `minecraft:persistent` defines whether an entity should be persistent in the game world.
 

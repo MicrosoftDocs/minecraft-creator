@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:boss
+title: Entity Documentation - minecraft:boss
 ms.prod: gaming
 ---
 
-# minecraft:boss
+# Entity Documentation - minecraft:boss
 
 `minecraft:boss` defines the current state of the boss for updating the boss HUD.
 

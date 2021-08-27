@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:celebrate_hunt
+title: Entity Documentation - minecraft:celebrate_hunt
 ms.prod: gaming
 ---
 
-# minecraft:celebrate_hunt
+# Entity Documentation - minecraft:celebrate_hunt
 
 `minecraft:celebrate_hunt` allows an entity to celebration when hunting a specific entity.
 

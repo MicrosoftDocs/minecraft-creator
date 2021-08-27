@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:combat_regeneration
+title: Entity Documentation - minecraft:combat_regeneration
 ms.prod: gaming
 ---
 
-# minecraft:combat_regeneration
+# Entity Documentation - minecraft:combat_regeneration
 
 `minecraft:combat_regeneration`gives Regeneration I and removes Mining Fatigue from the mob that kills the Actor's attack target.
 

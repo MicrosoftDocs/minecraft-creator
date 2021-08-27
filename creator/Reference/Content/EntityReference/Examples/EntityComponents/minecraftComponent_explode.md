@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:explode
+title: Entity Documentation - minecraft:explode
 ms.prod: gaming
 ---
 
-# minecraft:explode
+# Entity Documentation - minecraft:explode
 
 `minecraft:explode` defines how the entity explodes.
 

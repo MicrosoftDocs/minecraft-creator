@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:leashable
+title: Entity Documentation - minecraft:leashable
 ms.prod: gaming
 ---
 
-# minecraft:leashable
+# Entity Documentation - minecraft:leashable
 
 `minecraft:leashable` allows this entity to be leashed and defines the conditions and events for this entity when is leashed.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:buoyant
+title: Entity Documentation - minecraft:buoyant
 ms.prod: gaming
 ---
 
-# minecraft:buoyant
+# Entity Documentation - minecraft:buoyant
 
 `minecraft:buoyant` allows an entity to float on the specified liquid blocks.
 

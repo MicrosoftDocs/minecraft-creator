@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:peek
+title: Entity Documentation - minecraft:peek
 ms.prod: gaming
 ---
 
-# minecraft:peek
+# Entity Documentation - minecraft:peek
 
 `minecraft:peek` defines the entity's 'peek' behavior, defining the events that should be called during it.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:ageable
+title: Entity Documentation - minecraft:ageable
 ms.prod: gaming
 ---
 
-# minecraft:ageable
+# Entity Documentation - minecraft:ageable
 
 `minecraft:ageable` will add a timer for the entity to grow up. It can be accelerated by giving the entity the items it likes as defined by `feed_items`.
 

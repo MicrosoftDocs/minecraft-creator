@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:out_of_control
+title: Entity Documentation - minecraft:out_of_control
 ms.prod: gaming
 ---
 
-# minecraft:out_of_control
+# Entity Documentation - minecraft:out_of_control
 
 `minecraft:out_of_control` defines the entity's 'out of control' state.
 

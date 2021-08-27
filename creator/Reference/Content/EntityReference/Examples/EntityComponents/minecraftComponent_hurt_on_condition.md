@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:hurt_on_condition
+title: Entity Documentation - minecraft:hurt_on_condition
 ms.prod: gaming
 ---
 
-# minecraft:hurt_on_condition
+# Entity Documentation - minecraft:hurt_on_condition
 
 `minecraft:hurt_on_condition` defines a set of conditions under which an entity should take damage.
 

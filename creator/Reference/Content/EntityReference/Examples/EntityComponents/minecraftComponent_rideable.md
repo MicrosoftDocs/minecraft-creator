@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:rideable
+title: Entity Documentation - minecraft:rideable
 ms.prod: gaming
 ---
 
-# minecraft:rideable
+# Entity Documentation - minecraft:rideable
 
 `minecraft:rideable` determines whether this entity can be ridden. Allows specifying the different seat positions and quantity.
 

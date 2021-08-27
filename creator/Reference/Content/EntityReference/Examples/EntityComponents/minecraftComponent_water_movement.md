@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:water_movement
+title: Entity Documentation - minecraft:water_movement
 ms.prod: gaming
 ---
 
-# minecraft:water_movement
+# Entity Documentation - minecraft:water_movement
 
 `minecraft:water_movement` defines the speed with which an entity can move through water.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:conditional_bandwidth_optimization
+title: Entity Documentation - minecraft:conditional_bandwidth_optimization
 ms.prod: gaming
 ---
 
-# minecraft:conditional_bandwidth_optimization
+# Entity Documentation - minecraft:conditional_bandwidth_optimization
 
 `minecraft:conditional_bandwidth_optimization` defines the Conditional Spatial Update Bandwidth Optimizations of this entity.
 

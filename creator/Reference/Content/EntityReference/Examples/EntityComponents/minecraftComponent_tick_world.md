@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:tick_world
+title: Entity Documentation - minecraft:tick_world
 ms.prod: gaming
 ---
 
-# minecraft:tick_world
+# Entity Documentation - minecraft:tick_world
 
 `minecraft:tick_world` defines if the entity ticks the world and the radius around it to tick.
 
