@@ -35,6 +35,6 @@
 - name: structure_template_feature
   href: minecraftStructure_template_feature.md
 - name: underwater_cave_carver_feature
-  href: minecraftUnderwater_cave_carver.md)
+  href: minecraftUnderwater_cave_carver.md
 - name: weighted_random_feature
   href: minecraftWeighted_random_feature.md
