@@ -23,7 +23,8 @@ ms.prod: gaming
 |:----|:----|:----|:----|
 |texture |*not set* |String |	Defines what texture the block should have. Can be any texture name defined in your resource pack folder (textures/terrain_texture.json |
 |render_method |opaque |String |Defines what render method the block should use. Can be opaque, alpha_test or blend.|
-
+|ambient_occlusion | true | Boolean |Sets the block faces to have smooth lighting. |
+|face_dimming | true | Boolean | Sets the block faces to be affected by light. |
 ## Example
 
 ```json
