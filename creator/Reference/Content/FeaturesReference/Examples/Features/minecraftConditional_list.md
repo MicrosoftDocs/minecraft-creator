@@ -22,7 +22,7 @@ No condition is successfully resolved.
 ```json
 "conditional_features" : [
   {
-    "places_feature" : "badger:some_feature_or_other",
+    "places_feature" : "example:some_feature_or_other",
     "condition" : "query.check_some_block_property()",
   },
 ],
