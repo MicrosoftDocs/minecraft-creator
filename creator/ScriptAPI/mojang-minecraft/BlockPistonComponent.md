@@ -65,6 +65,8 @@ Type: *boolean*
 ### **location**
 `read-only location: BlockLocation;`
 
+Source location of the block.
+
 Type: [*BlockLocation*](BlockLocation.md)
 
 

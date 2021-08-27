@@ -96,7 +96,7 @@ getDimension(): Dimension
 `
 
 
-Returns [*Dimension*](Dimension.md)
+Returns [*Dimension*](Dimension.md) - Returns the dimension that the block is within.
 
 
 ### **getLocation**
@@ -134,15 +134,12 @@ Returns *boolean* - Returns `true` if the permutation of this block has the tag,
 #### Examples
 ##### ***check_block_tags.js***
 ```javascript
-import { World, BlockTypes, BlockLocation } from "Minecraft";
-
+import { World, BlockLocation } from "mojang-minecraft";
 // Fetch the block
 const block = World.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3));
-
 console.log(`Block is dirt: ${block.hasTag("dirt")}`);
 console.log(`Block is wood: ${block.hasTag("wood")}`);
 console.log(`Block is stone: ${block.hasTag("stone")}`);
-
 ```
 ### **isEmpty**
 `
@@ -179,19 +176,15 @@ Sets the block in the dimension to the state of the permutation.
 #### Examples
 ##### ***place_bottom_stone_slab.js***
 ```javascript
-import { World, BlockTypes, BlockProperties, BlockLocation } from "Minecraft";
-
+import { World, MinecraftBlockTypes, BlockProperties, BlockLocation } from "mojang-minecraft";
 // Create the permutation
-let bottomStoneSlab = BlockTypes.stoneSlab.createDefaultBlockPermutation();
+let bottomStoneSlab = MinecraftBlockTypes.stoneSlab.createDefaultBlockPermutation();
 bottomStoneSlab.getProperty(BlockProperties.stoneSlabType).value = "stone_brick";
 bottomStoneSlab.getProperty(BlockProperties.topSlotBit).value = false;
-
 // Fetch the block
 const block = World.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3));
-
 // Set the permutation
 block.setPermutation(bottomStoneSlab);
-
 ```
 ### **setType**
 `
