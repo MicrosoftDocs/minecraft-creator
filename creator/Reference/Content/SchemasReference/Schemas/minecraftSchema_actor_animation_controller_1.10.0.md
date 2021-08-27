@@ -5,7 +5,7 @@ title: actor_animation_controller Schema
 ms.prod: gaming
 ---
 
-## actor_animation_controller Schema
+# actor_animation_controller Schema
 
 This schema corresponds to the *.animation_controllers.json files in the "animation_controllers" folder of the resource pack.
 

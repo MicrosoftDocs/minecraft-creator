@@ -5,7 +5,7 @@ title: actor_animation Schema
 ms.prod: gaming
 ---
 
-## actor_animation Schema
+# actor_animation Schema
 
 This schema corresponds to the *.animation.json files in the "animations" folder of the resource pack.
 

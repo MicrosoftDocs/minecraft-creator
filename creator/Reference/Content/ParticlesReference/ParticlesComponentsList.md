@@ -63,15 +63,15 @@ Think of components as telling the particle system what you want the emitter or 
 
 > [!NOTE] 
 > For fields in these components, the following shorthand is used:
-
+> 
 > ```
-<float> - field takes a floating point input
-<float/molang> - field takes a floating point input, or a MoLang expression
-<default:val> - specifies the default value used if field isn't specified
-<bool> - "true" or "false"
-<string> - a string ("this is a string"
-<default> - not a part of the particular line, this just says what this field defaults to if not specified
-```
+> <float> - field takes a floating point input
+> <float/molang> - field takes a floating point input, or a MoLang expression
+> <default:val> - specifies the default value used if field isn't specified
+> <bool> - "true" or "false"
+> <string> - a string ("this is a string"
+> <default> - not a part of the particular line, this just says what this field defaults to if not specified
+> ```
 
 ### Emitter Components
 
