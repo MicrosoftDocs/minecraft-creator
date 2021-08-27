@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: set_block_property
+title: Block Documentation - set_block_property
 ms.prod: gaming
 ---
 
-# set_block_property
+# Block Documentation - set_block_property
 
 `set_block_property` is an Event Response that will set the block property.
 

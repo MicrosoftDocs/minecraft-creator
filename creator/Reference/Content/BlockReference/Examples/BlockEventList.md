@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Block Event Responses List
+title: Block Documentation - Block Event Responses List
 ms.prod: gaming
 ---
 
-# Block Event Responses
+# Block Documentation - Block Event Responses
 
 Below is a list of all the available Block Event Responses within Minecraft:Bedrock Edition for use with [Block Triggers](BlockTriggerList.md).
 

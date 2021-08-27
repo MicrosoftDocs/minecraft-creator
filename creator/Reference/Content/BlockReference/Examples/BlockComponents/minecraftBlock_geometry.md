@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:geometry
+title: Block Documentation - minecraft:geometry
 ms.prod: gaming
 ---
 
-# minecraft:geometry
+# Block Documentation - minecraft:geometry
 
 `minecraft:geometry` is a `string` component that sets the geometry model to use for the block.
 

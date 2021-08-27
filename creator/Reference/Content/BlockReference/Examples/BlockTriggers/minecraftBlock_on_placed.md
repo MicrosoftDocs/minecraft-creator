@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:on_placed
+title: Block Documentation -minecraft:on_placed
 ms.prod: gaming
 ---
 
-# minecraft:on_placed
+# Block Documentation - minecraft:on_placed
 
 `minecraft:on_placed` is an Event Trigger for when an actor places a block in the world.
 

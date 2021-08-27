@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: swing
+title: Block Documentation - swing
 ms.prod: gaming
 ---
 
-# swing
+# Block Documentation - swing
 
 `swing` is an Event Response that will cause the actor to swing.
 
