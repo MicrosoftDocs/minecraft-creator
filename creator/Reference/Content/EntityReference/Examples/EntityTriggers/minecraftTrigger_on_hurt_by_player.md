@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:on_hurt_by_player
+title: Entity Documentation - minecraft:on_hurt_by_player
 ms.prod: gaming
 ---
 
-# minecraft:on_hurt_by_player
+# Entity Documentation - minecraft:on_hurt_by_player
 
 `minecraft:on_hurt_by_player` adds a trigger to call when this entity takes damage by a player.
 

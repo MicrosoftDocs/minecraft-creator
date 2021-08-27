@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.wither_random_attack_pos_goal
+title: Entity Documentation - minecraft:behavior.wither_random_attack_pos_goal
 ms.prod: gaming
 ---
 
-# minecraft:behavior.wither_random_attack_pos_goal
+# Entity Documentation - minecraft:behavior.wither_random_attack_pos_goal
 
 `minecraft:behavior.wither_random_attack_pos_goal` allows an entity to attack at random.
 

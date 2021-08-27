@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.restrict_open_door
+title: Entity Documentation - minecraft:behavior.restrict_open_door
 ms.prod: gaming
 ---
 
-# minecraft:behavior.restrict_open_door
+# Entity Documentation - minecraft:behavior.restrict_open_door
 
 `minecraft:behavior.restrict_open_door` allows an entity to stay indoors while the sun is down.
 

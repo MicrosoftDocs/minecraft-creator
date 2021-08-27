@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_block
+title: Entity Documentation - is_block
 ms.prod: gaming
 ---
 
-# is_block
+# Entity Documentation - is_block
 
 Returns true when the block has the given name.
 

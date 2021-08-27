@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.mount_pathing
+title: Entity Documentation - minecraft:behavior.mount_pathing
 ms.prod: gaming
 ---
 
-# minecraft:behavior.mount_pathing
+# Entity Documentation - minecraft:behavior.mount_pathing
 
 `minecraft:behavior.mount_pathing` allows an entity to move around on it's own while mounted. `minecraft:behavior.mount_pathing` also will allow an entity to target another entity for an attack.
 

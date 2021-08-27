@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_avoiding_mobs
+title: Entity Documentation - is_avoiding_mobs
 ms.prod: gaming
 ---
 
-# is_avoiding_mobs
+# Entity Documentation - is_avoiding_mobs
 
 Returns true if the subject entity is fleeing from other mobs.
 

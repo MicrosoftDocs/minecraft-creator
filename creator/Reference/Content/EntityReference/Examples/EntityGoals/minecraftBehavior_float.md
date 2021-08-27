@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.float
+title: Entity Documentation - minecraft:behavior.float
 ms.prod: gaming
 ---
 
-# minecraft:behavior.float
+# Entity Documentation - minecraft:behavior.float
 
 `minecraft:behavior.float` allows an entity to float on water.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.follow_mob
+title: Entity Documentation - minecraft:behavior.follow_mob
 ms.prod: gaming
 ---
 
-# minecraft:behavior.follow_mob
+# Entity Documentation - minecraft:behavior.follow_mob
 
 `minecraft:behavior.follow_mob` allows an entity to follow and gather around other mobs of the same type.
 

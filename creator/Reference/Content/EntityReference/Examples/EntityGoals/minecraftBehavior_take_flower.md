@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.take_flower
+title: Entity Documentation - minecraft:behavior.take_flower
 ms.prod: gaming
 ---
 
-# minecraft:behavior.take_flower
+# Entity Documentation - minecraft:behavior.take_flower
 
 `minecraft:behavior.take_flower` allows an entity to receive flowers when presented from the `iron_golem` entity.
 

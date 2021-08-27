@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.tempt
+title: Entity Documentation - minecraft:behavior.tempt
 ms.prod: gaming
 ---
 
-# minecraft:behavior.tempt
+# Entity Documentation - minecraft:behavior.tempt
 
 `minecraft:behavior.tempt` allows an entity to be tempted by a set item.
 

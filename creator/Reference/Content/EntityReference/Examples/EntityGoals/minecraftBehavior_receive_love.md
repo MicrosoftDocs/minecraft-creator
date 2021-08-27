@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.receive_love
+title: Entity Documentation - minecraft:behavior.receive_love
 ms.prod: gaming
 ---
 
-# minecraft:behavior.receive_love
+# Entity Documentation - minecraft:behavior.receive_love
 
 `minecraft:behavior.receive_love` allows an entity to mate with another similar entity when approached to breed.
 

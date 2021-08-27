@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: weather
+title: Entity Documentation - weather
 ms.prod: gaming
 ---
 
-# weather
+# Entity Documentation - weather
 
 Tests for the current weather state the entity is experiencing.
 

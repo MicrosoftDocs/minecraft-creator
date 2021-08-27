@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: in_caravan
+title: Entity Documentation - in_caravan
 ms.prod: gaming
 ---
 
-# in_caravan
+# Entity Documentation - in_caravan
 
 Returns true if the subject entity is in a caravan.
 

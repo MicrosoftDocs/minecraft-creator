@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_underwater
+title: Entity Documentation - is_underwater
 ms.prod: gaming
 ---
 
-# is_underwater
+# Entity Documentation - is_underwater
 
 Returns true when the subject entity is under water.
 

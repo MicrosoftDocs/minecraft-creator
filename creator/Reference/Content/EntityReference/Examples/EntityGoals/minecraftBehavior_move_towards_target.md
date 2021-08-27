@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.move_towards_target
+title: Entity Documentation - minecraft:behavior.move_towards_target
 ms.prod: gaming
 ---
 
-# minecraft:behavior.move_towards_target
+# Entity Documentation - minecraft:behavior.move_towards_target
 
 `minecraft:behavior.move_towards_target` allows an entity to move towards a target.
 

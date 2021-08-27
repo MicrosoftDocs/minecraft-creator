@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.float_wander
+title: Entity Documentation - minecraft:behavior.float_wander
 ms.prod: gaming
 ---
 
-# minecraft:behavior.float_wander
+# Entity Documentation - minecraft:behavior.float_wander
 
 `minecraft:behavior.float_wander` allows an entity to float around in a random direction, similar to the `ghast` entity.
 

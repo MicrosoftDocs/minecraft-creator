@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_moving
+title: Entity Documentation - is_moving
 ms.prod: gaming
 ---
 
-# is_moving
+# Entity Documentation - is_moving
 
 Returns true if the subject entity is moving.
 

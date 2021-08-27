@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:on_prime
+title: Entity Documentation - minecraft:on_prime
 ms.prod: gaming
 ---
 
-# minecraft:on_prime
+# Entity Documentation - minecraft:on_prime
 
 `minecraft:on_prime` triggers an event calls on an entity when the entity is set to explode.
 

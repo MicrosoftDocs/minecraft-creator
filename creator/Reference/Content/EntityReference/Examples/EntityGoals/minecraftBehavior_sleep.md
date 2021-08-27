@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.sleep
+title: Entity Documentation - minecraft:behavior.sleep
 ms.prod: gaming
 ---
 
-# minecraft:behavior.sleep
+# Entity Documentation - minecraft:behavior.sleep
 
 `minecraft:behavior.sleep` allows an entity to sleep in a bed.
 

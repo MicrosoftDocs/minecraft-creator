@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.stay_while_sitting
+title: Entity Documentation - minecraft:behavior.stay_while_sitting
 ms.prod: gaming
 ---
 
-# minecraft:behavior.stay_while_sitting
+# Entity Documentation - minecraft:behavior.stay_while_sitting
 
 `minecraft:behavior.stay_while_sitting` allows an entity to stay in place while sitting.
 

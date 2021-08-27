@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: on_ladder
+title: Entity Documentation - on_ladder
 ms.prod: gaming
 ---
 
-# on_ladder
+# Entity Documentation - on_ladder
 
 Returns true when the subject entity is on a ladder.
 

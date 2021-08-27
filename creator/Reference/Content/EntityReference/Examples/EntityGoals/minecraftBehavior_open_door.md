@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.open_door
+title: Entity Documentation - minecraft:behavior.open_door
 ms.prod: gaming
 ---
 
-# minecraft:behavior.open_door
+# Entity Documentation - minecraft:behavior.open_door
 
 `minecraft:behavior.open_door` allows an entity to interact and open a door.
 

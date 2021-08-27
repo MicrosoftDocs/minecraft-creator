@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:is_hidden_when_invisible
+title: Entity Documentation - minecraft:is_hidden_when_invisible
 ms.prod: gaming
 ---
 
-# minecraft:is_hidden_when_invisible
+# Entity Documentation -  minecraft:is_hidden_when_invisible
 
 `minecraft:is_hidden_when_invisible` sets that the entity can hide from hostile mobs while invisible.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.send_event
+title: Entity Documentation - minecraft:behavior.send_event
 ms.prod: gaming
 ---
 
-# minecraft:behavior.send_event
+# Entity Documentation - minecraft:behavior.send_event
 
 `minecraft:behavior.send_event` allows an entity to send an event to another entity.
 
@@ -40,7 +40,7 @@ ms.prod: gaming
         "event": "wololo",
         "sound_event": "prepare.wololo"
     }
-    ] 
+    ]
 }
 ```
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.stomp_turtle_egg
+title: Entity Documentation - minecraft:behavior.stomp_turtle_egg
 ms.prod: gaming
 ---
 
-# minecraft:behavior.stomp_turtle_egg
+# Entity Documentation - minecraft:behavior.stomp_turtle_egg
 
 `minecraft:behavior.stomp_turtle_egg` allows an entity to target and stomp on turtle eggs when detected.
 

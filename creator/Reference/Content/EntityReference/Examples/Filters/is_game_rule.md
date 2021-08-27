@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_game_rule
+title: Entity Documentation - is_game_rule
 ms.prod: gaming
 ---
 
-# is_game_rule
+# Entity Documentation - is_game_rule
 
 Tests whether a named game rule is active.
 
