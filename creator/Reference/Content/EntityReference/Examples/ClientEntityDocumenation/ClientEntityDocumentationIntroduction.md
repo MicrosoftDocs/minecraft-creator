@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Client Entity JSON Introduction
+title: Entity Documentation - Client Entity JSON Introduction
 ms.prod: gaming
 ---
 
-# Client Entity JSON Introduction
+# Entity Documentation - Client Entity JSON Introduction
 
 Client entity definitions are contained within a Resource Pack.
 
@@ -142,7 +142,7 @@ When there are more than one texture associated with a texture name you can use 
 
 ```json
 "spawn_egg": {
-  "texture": "spawn_egg", 
+  "texture": "spawn_egg",
   "texture_index": 2
 }
 ```

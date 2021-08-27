@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: teleport
+title: Block Documentation - teleport
 ms.prod: gaming
 ---
 
-# teleport
+# Block Documentation - teleport
 
 `teleport` is an Event Response that will teleport a target randomly around the destination point.
 

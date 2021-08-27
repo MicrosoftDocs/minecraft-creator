@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:block_light_absorption
+title: Block Documentation - minecraft:block_light_absorption
 ms.prod: gaming
 ---
 
-# minecraft:block_light_absorption
+# Block Documentation - minecraft:block_light_absorption
 
 `minecraft:block_light_absorption` is an `integer` component that sets how much light the block will absorb.
 

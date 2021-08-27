@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:experience_reward
+title: Entity Documentation - minecraft:experience_reward
 ms.prod: gaming
 ---
 
-# minecraft:experience_reward
+# Entity Documentation - minecraft:experience_reward
 
 `minecraft:experience_reward` defines the amount of experience rewarded when the entity dies or is successfully bred.
 

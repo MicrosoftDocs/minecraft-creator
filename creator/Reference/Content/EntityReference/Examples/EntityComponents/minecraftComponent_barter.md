@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:barter
+title: Entity Documentation - minecraft:barter
 ms.prod: gaming
 ---
 
-# minecraft:barter
+# Entity Documentation - minecraft:barter
 
 `minecraft:barter` enables the component to drop an item as a barter exchange.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:on_step_off
+title: Block Documentation - minecraft:on_step_off
 ms.prod: gaming
 ---
 
-# minecraft:on_step_off
+# Block Documentation - minecraft:on_step_off
 
 `minecraft:on_step_off` is an Event Trigger for when an actor steps off the block.
 

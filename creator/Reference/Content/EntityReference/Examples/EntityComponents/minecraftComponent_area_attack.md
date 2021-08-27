@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:area_attack
+title: Entity Documentation - minecraft:area_attack
 ms.prod: gaming
 ---
 
-# minecraft:area_attack
+# Entity Documentation - minecraft:area_attack
 
 `minecraft:area_attack` is a component that does damage to entities that get within range.
 

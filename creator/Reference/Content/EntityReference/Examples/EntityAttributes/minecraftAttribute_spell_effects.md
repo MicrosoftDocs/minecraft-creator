@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:spell_effects
+title: Entity Documentation - minecraft:spell_effects
 ms.prod: gaming
 ---
 
-# minecraft:spell_effects
+# Entity Documentation - minecraft:spell_effects
 
 `minecraft:spell_effects` allows an entity to define effects to add and remove to the entity when adding this attribute.
 

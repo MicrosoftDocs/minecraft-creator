@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:movement.fly
+title: Entity Documentation - minecraft:movement.fly
 ms.prod: gaming
 ---
 
-# minecraft:movement.fly
+# Entity Documentation - minecraft:movement.fly
 
 `minecraft:movement.fly` causes the mob to fly.
 

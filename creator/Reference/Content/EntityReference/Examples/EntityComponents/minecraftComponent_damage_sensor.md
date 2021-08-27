@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:damage_sensor
+title: Entity Documentation - minecraft:damage_sensor
 ms.prod: gaming
 ---
 
-# minecraft:damage_sensor
+# Entity Documentation - minecraft:damage_sensor
 
 `minecraft:damage_sensor` defines what events to call when this entity is damaged by specific entities or items.
 

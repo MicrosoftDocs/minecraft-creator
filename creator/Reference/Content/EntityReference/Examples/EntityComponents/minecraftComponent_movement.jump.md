@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:movement.jump
+title: Entity Documentation - minecraft:movement.jump
 ms.prod: gaming
 ---
 
-# minecraft:movement.jump
+# Entity Documentation - minecraft:movement.jump
 
 `minecraft:movement.jump` causes the mob to jump as it moves with a specified delay between jumps.
 

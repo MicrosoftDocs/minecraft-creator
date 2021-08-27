@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:equippable
+title: Entity Documentation - minecraft:equippable
 ms.prod: gaming
 ---
 
-# minecraft:equippable
+# Entity Documentation - minecraft:equippable
 
 `minecraft:equippable` defines an entity's behavior for having items equipped to it.
 

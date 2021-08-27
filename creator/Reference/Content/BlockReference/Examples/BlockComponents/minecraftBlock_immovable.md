@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:immovable
+title: Block Documentation - minecraft:immovable
 ms.prod: gaming
 ---
 
-# minecraft:immovable
+# Block Documentation - minecraft:immovable
 
 `minecraft:immovable` is a `boolean` component that sets the immovable state for the block, not allowing it to be moved by a piston.
 

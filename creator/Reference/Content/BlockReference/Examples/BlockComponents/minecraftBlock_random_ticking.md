@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:random_ticking
+title: Block Documentation - minecraft:random_ticking
 ms.prod: gaming
 ---
 
-# minecraft:random_ticking
+# Block Documentation - minecraft:random_ticking
 
 `minecraft:random_ticking` is a component controlled by a `JSON object` that describes how the component will trigger an event at an irregular interval between two values.
 

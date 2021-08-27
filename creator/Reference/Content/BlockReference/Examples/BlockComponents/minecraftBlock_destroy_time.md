@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:destroy_time
+title: Block Documentation - minecraft:destroy_time
 ms.prod: gaming
 ---
 
-# minecraft:destroy_time
+# Block Documentation - minecraft:destroy_time
 
 `minecraft:destroy_time` is a `decimal` component that sets the destroy time property for the block.
 

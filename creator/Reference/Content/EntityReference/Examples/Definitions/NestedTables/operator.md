@@ -1,13 +1,13 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: operator definition
+title: Entity Documentation - operators
 ms.prod: gaming
 ---
 
-# Operators
+# Entity Documentation - Operators
 
-Certain behaviors and filters within Minecraft: Bedrock Edition can use arithmetic operators in order to compare the values of two given data points.  
+Certain behaviors and filters within Minecraft: Bedrock Edition can use arithmetic operators in order to compare the values of two given data points.
 
 ## Parameters
 

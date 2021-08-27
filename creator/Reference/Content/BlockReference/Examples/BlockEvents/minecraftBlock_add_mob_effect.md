@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: add_mob_effect
+title: Block Documentation - add_mob_effect
 ms.prod: gaming
 ---
 
-# add_mob_effect
+# Block Documentation - add_mob_effect
 
 `add_mob_effect` is an Event Response that applies a mob effect to a target.
 

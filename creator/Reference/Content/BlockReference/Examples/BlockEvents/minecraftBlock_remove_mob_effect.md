@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: remove_mob_effect
+title: Block Documentation - remove_mob_effect
 ms.prod: gaming
 ---
 
-# remove_mob_effect
+# Block Documentation - remove_mob_effect
 
 `remove_mob_effect` is an Event Response that will remove a mob effect from a target.
 

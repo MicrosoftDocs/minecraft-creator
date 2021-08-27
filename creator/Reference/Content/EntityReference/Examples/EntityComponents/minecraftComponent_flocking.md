@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:flocking
+title: Entity Documentation - minecraft:flocking
 ms.prod: gaming
 ---
 
-# minecraft:flocking
+# Entity Documentation - minecraft:flocking
 
 `minecraft:flocking` allows entities to flock in groups in water or not.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:breathable
+title: Entity Documentation - minecraft:breathable
 ms.prod: gaming
 ---
 
-# minecraft:breathable
+# Entity Documentation - minecraft:breathable
 
 `minecraft:breathable` allows an entity to breathe in certain blocks and gives them the ability to suffocate.
 

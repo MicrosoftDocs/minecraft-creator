@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:preventsjumping
+title: Block Documentation - minecraft:preventsjumping
 ms.prod: gaming
 ---
 
-# minecraft:preventsjumping
+# Block Documentation - minecraft:preventsjumping
 
 `minecraft:preventsjumping` is a `boolean` component that prevents actors from jumping when walking on the block.
 

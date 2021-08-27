@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:on_player_destroyed
+title: Block Documentation - minecraft:on_player_destroyed
 ms.prod: gaming
 ---
 
-# minecraft:on_player_destroyed
+# Block Documentation - minecraft:on_player_destroyed
 
 `minecraft:on_player_destroyed` is an Event Trigger for when an actor, that is tagged as a player, destroys a block.
 

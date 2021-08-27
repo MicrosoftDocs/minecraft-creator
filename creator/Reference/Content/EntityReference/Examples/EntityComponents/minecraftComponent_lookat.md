@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:lookat
+title: Entity Documentation - minecraft:lookat
 ms.prod: gaming
 ---
 
-# minecraft:lookat
+# Entity Documentation - minecraft:lookat
 
 `minecraft:lookat` defines the behavior when another entity looks at this entity.
 

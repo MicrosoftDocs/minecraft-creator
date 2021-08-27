@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: die
+title: Block Documentation - die
 ms.prod: gaming
 ---
 
-# die
+# Block Documentation - die
 
 `die` is an Event Response that will kill a target.
 

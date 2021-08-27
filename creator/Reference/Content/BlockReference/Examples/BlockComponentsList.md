@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Block Components List
+title: Block Documentation - Block Components List
 ms.prod: gaming
 ---
 
-# Block Components
+# Block Documentation - Block Components
 
 Below is a list of all the available Block Components within Minecraft:Bedrock Edition for use with Block JSON files.
 

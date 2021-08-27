@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:map_color
+title: Block Documentation - minecraft:map_color
 ms.prod: gaming
 ---
 
-# minecraft:map_color
+# Block Documentation - minecraft:map_color
 
 `minecraft:map_color` is a `String` component that sets the map_color for the block in the form of a hex value. The value will be the color when rendered to a map.
 

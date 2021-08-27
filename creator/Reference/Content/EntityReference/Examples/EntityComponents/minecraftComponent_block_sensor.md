@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:block_sensor
+title: Entity Documentation - minecraft:block_sensor
 ms.prod: gaming
 ---
 
-# minecraft:block_sensor
+# Entity Documentation - minecraft:block_sensor
 
 `minecraft:block_sensor` will fire off a specified event when a block in the block list is broken within the sensor range.
 

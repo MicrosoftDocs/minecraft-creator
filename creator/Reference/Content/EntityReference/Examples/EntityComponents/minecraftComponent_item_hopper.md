@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:item_hopper
+title: Entity Documentation - minecraft:item_hopper
 ms.prod: gaming
 ---
 
-# minecraft:item_hopper
+# Entity Documentation - minecraft:item_hopper
 
 `minecraft:item_hopper` allows an entity to function like a `hopper` block.
 

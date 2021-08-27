@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: transform_item
+title: Block Documentation - transform_item
 ms.prod: gaming
 ---
 
-# transform_item
+# Block Documentation - transform_item
 
 `transform_item` is an Event Response that will transform an item into another item.
 

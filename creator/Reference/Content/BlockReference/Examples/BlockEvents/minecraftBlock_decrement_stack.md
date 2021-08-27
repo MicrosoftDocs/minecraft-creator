@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: decrement_stack
+title: Block Documentation - decrement_stack
 ms.prod: gaming
 ---
 
-# decrement_stack
+# Block Documentation - decrement_stack
 
 `decrement_stack` is an Event Response that will reduce an item stack.
 

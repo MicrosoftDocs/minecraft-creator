@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:rotation
+title: Block Documentation - minecraft:rotation
 ms.prod: gaming
 ---
 
-# minecraft:rotation
+# Block Documentation - minecraft:rotation
 
 `minecraft:rotation` is a `vector` component that sets the block's rotation around the center of the cube in degrees.
 

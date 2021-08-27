@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:on_step_on
+title: Block Documentation - minecraft:on_step_on
 ms.prod: gaming
 ---
 
-# minecraft:on_step_on
+# Block Documentation - minecraft:on_step_on
 
 `minecraft:on_step_on` is an Event Trigger for when an actor steps on the block.
 
