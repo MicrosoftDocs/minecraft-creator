@@ -23,7 +23,7 @@
 - name: rect_layout
   href: minecraftRect_layout.md
 - name: scan_surface
-  href: minecraftScan_surface_feature.md
+  href: minecraftScan_surface.md
 - name: scatter_feature
   href: minecraftScatter_feature.md
 - name: search_feature

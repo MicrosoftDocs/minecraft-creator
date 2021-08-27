@@ -22,19 +22,19 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Feature Components List
-            url: Examples/FeatureComponentsList.md
-          - text: "minecraft:bounds"
-            url: Examples/FeatureComponents/minecraftFeature_bounds.md
-          - text: "minecraft:fog"
-            url: Examples/FeatureComponents/minecraftFeature_fog.md
+          - text: Introduction to Features
+            url: Examples/FeatureIntroduction.md
+          - text: Feature List
+            url: Examples/FeatureList.md
   # Card (optional)
   - title: Feature Definitions
     linkLists:
       - linkListType: reference
         links:
-          - text: Feature Definitions
-            url: Examples/FeatureDefinitions/FeatureDefinitionProperties.md
+          - text: Aggregation
+            url: Examples/Features/minecraftAggregate_feature.md
+          - text: Cave Caver
+            url: Examples/Features/minecraftCave_carver_feature.md
 
 
 
