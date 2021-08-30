@@ -3,6 +3,7 @@ author: v-josjones
 ms.author: v-josjones
 title: Getting Started with Minecraft Entity Wizard
 ms.prod: gaming
+description: A tutorial covering how to create a custom entity model utilizing the Minecraft Entity Wizard tool in Blockbench
 ---
 
 # Getting Started with the Minecraft Entity Wizard

@@ -3,6 +3,7 @@ author: v-jeffreykim
 ms.author: v-jeffreykim
 title: Create a Custom NPC
 ms.prod: gaming
+description: A tutorial covering how to create a Non-Playable Character (NPC) within Minecraft:Bedrock Edition
 ---
 # Create a Custom NPC
 
@@ -30,7 +31,7 @@ To create a custom NPC, follow these instructions:
 
 ![NPC Editor Interface](Media\NPCs\LearningPortal_NPCEditor.PNG)
 
-The NPC editor has a built in dialog feature to give players more information about the commands they will execute or to deliver story details. 
+The NPC editor has a built in dialog feature to give players more information about the commands they will execute or to deliver story details.
 
 This dialog box has a limit of 307 characters before the text goes off the screen. You can also use color codes to change the color of the text.
 
@@ -38,7 +39,7 @@ You can use behaviour packs and commands to create a more advanced dialogue syst
 
 ## Change NPC skins
 
-You can choose from a list of skins to customize the appearance of your NPC. 
+You can choose from a list of skins to customize the appearance of your NPC.
 
 To change an NPC's skin, follow these instructions:
 
