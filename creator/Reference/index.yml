@@ -116,7 +116,7 @@ landingContent:
           - text: Features JSON Documentation Homepage
             url: Content/featuresreference/index.yml
           - text: Introduction to Features
-            url: Content/featuresreference/Examples/FeatureIntroduction.md
+            url: Content/FeaturesReference/Examples/FeaturesIntroduction.md
       - linkListType: reference
         links:
           - text: Feature List
@@ -156,15 +156,15 @@ landingContent:
       - linkListType: reference
         links:
           - text: Recipe Definition List
-            url: Content/recipereferenceExamples/RecipeDefinitionList.md
+            url: Content/recipereference/Examples/RecipeDefinitionList.md
           - text: Furnace Recipe
-            url: Content/recipereferenceExamples/RecipeDefinitions/minecraftRecipe_Furnace.md
+            url: Content/recipereference/Examples/RecipeDefinitions/minecraftRecipe_Furnace.md
           - text: Shaped Recipe
-            url: Content/recipereferenceExamples/RecipeDefinitions/minecraftRecipe_Shaped.md
+            url: Content/recipereference/Examples/RecipeDefinitions/minecraftRecipe_Shaped.md
           - text: Shapeless Recipe
-            url: Content/recipereferenceExamples/RecipeDefinitions/minecraftRecipe_Shapeless.md
+            url: Content/recipereference/Examples/RecipeDefinitions/minecraftRecipe_Shapeless.md
           - text: Potion Brewing Recipe
-            url: Content/recipereferenceExamples/RecipeDefinitions/minecraftRecipe_PotionBrewing.md
+            url: Content/recipereference/Examples/RecipeDefinitions/minecraftRecipe_PotionBrewing.md
   # Card (comment to space cards)
   - title: Texture Sets
     linkLists:
@@ -180,4 +180,4 @@ landingContent:
           - text: Volume Properties & Descriptions
             url: Content/volumeReference/Examples/VolumeDefinitions/VolumeDefinitionProperties.md
           - text: Volume Components List
-            url: Content/volumeSetsReference/Examples/VolumeComponentsList.md
+            url: Content/volumeReference/Examples/VolumeComponentsList.md
