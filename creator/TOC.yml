@@ -48,6 +48,8 @@
       items:
       - name: GameTest API
         href: ScriptAPI/TOC.yml
+      - name: JSON Reference Documentation Homepage
+        href: Reference/index.yml
       - name: Behavior Pack
         items:
         - name: Entity JSON
@@ -122,6 +124,10 @@
             href: Reference/Content/animationsreference/index.yml
           - name: Animation References
             href: Reference/Content/animationsreference/Examples/TOC.yml
+        - name: Texture Set Documentation
+          items:
+          - name: Introduction to Texture Sets
+            href: Reference/Content/texturesetsreference/texturesetsconcepts/texturesetsintroduction.md
         - name: Spawn Rules
           href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/DataDrivenSpawning.md
         - name: Biomes

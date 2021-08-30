@@ -22,7 +22,7 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: Entity Documentation Introduction
+          - text: Entity JSON Introduction
             url: Examples/ClientEntityDocumenation/ClientEntityDocumentationIntroduction.md
           - text: Spawn Rules and Data-Driven Spawning
             url:  Examples/ClientEntityDocumenation/DataDrivenSpawning.md
