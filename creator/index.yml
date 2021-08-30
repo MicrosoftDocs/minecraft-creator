@@ -64,8 +64,7 @@ conceptualContent:
   items:
     # card
     - title: Add-On Pack Tutorials
-      #imageSrc needs to in a square ratio with no whitespace
-      imageSrc: images/Add-Resource-Pack.png
+      summary: "Learn how to develop Add-Ons and Custom Content by following along with a tutorial."
       links:
         - url: Documents/ResourcePack.md
           itemType: get-started
@@ -84,6 +83,7 @@ conceptualContent:
           text: NPC Dialogue Command
   # card
     - title: Working with Commands
+      summary: "Commands are a powerful way to add logic into your experiences."
       imageSrc: images/Script.png
       links:
         - url: Documents/CommandsIntroduction.md
@@ -99,8 +99,8 @@ conceptualContent:
           itemType: reference
           text: Popular Commands
   # card
-    - title: Loot and Trading
-      imageSrc: images/compass64.png
+    - title: Loot and Trading Tables
+      summary: "Discover how Tables allow for Creators to add items to the world in a wide variety of ways."
       links:
         - url: Documents/IntroductionToLootTables.md
           itemType: get-started
@@ -110,7 +110,7 @@ conceptualContent:
           text: Loot and Trade Table Functions
     # card
     - title: Using GameTest
-      imageSrc: images/Firework.png
+      summary: "GameTest Framework is a new toolset available to creators to build and test their custom content. "
       links:
         - url: ScriptAPI/mojang-gametest/mojang-gametest.md
           itemType: reference
@@ -123,7 +123,7 @@ conceptualContent:
           text: Build your first GameTest
   # card
     - title: Reference Documentation
-      imageSrc: images/Script.png
+      summary: "Need a hand creating your content? View the reference documentation to see how things work in-game."
       links:
         - url: Reference/Content/addonsreference/index.yml
           itemType: reference
