@@ -48,6 +48,8 @@
       items:
       - name: GameTest API
         href: ScriptAPI/TOC.yml
+      - name: JSON Reference Documentation Homepage
+        href: Reference/index.yml
       - name: Behavior Pack
         items:
         - name: Entity JSON
