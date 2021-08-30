@@ -3,11 +3,12 @@ author: neonerz
 ms.author: v-jeffreykim
 title: Introduction to Commands
 ms.prod: gaming
+description: A guide covering how Commands work in-game, the syntax that is used and what parameters are available to use.
 ---
 
 # Introduction to Commands
 
-Commands are specific instructions that Minecraft will carry out. These instructions can be as simple as changing the time of day or as complex as setting up and working with a scoreboard. There are a wide variety of commands, and each have their own utility to improve your content.
+Commands are specific instructions that Minecraft: Bedrock Edition will carry out. These instructions can be as simple as changing the time of day or as complex as setting up and working with a scoreboard. There are a wide variety of commands, and each have their own utility to improve your content.
 
 The goal of commands with regards to content creation is to change or react to the environment around the player. Rather than having a static world, the player would be able to perform a task that a command system could detect and respond to in some way. An example of this is detecting if a player has placed a colored wool block at a specific location for a “Complete the Monument” style of map.
 

@@ -3,6 +3,7 @@ author: v-jeffreykim
 ms.author: v-jeffreykim
 title: NPC Dialogue Command
 ms.prod: gaming
+description: A tutorial covering how to create a branching dialogue script for use with NPCs in Minecraft:Bedrock Edition
 ---
 
 # NPC Dialogue Command
@@ -22,7 +23,7 @@ The scene file is a json file located inside the **dialogue** folder in the root
 
 ### Properties
 
-The first property is the header which defines this json file as a valid scene file. 
+The first property is the header which defines this json file as a valid scene file.
 
 Example:
 ```json
@@ -43,7 +44,7 @@ Since this is a json file, we need to include brackets. The next property we wil
     }
  ```
 
-With the header and scene file properties in place, we can now create our individual scenes for our NPC branching dialogue. Every new instance of NPC dialogue will require a new scene. This is defined in the scene file by creating a scene tag. You will use the scene tag in-game to call the text you supply in the scene file. You can also set up NPC buttons and commands that will behave identically as they would if you had set them up using the in-game NPC editor. 
+With the header and scene file properties in place, we can now create our individual scenes for our NPC branching dialogue. Every new instance of NPC dialogue will require a new scene. This is defined in the scene file by creating a scene tag. You will use the scene tag in-game to call the text you supply in the scene file. You can also set up NPC buttons and commands that will behave identically as they would if you had set them up using the in-game NPC editor.
 
 Let’s examine the NPC scene structure:
 
@@ -110,7 +111,7 @@ The Dialogue command is what enables NPCs to open or read scene files. The comma
 
 ### Dialogue Open
 
-Dialogue Open is used to force open an NPC dialogue box to the targeted player(s). This feature has previously been referred to as Remote Fire, as it simulates the experience of clicking on an NPC. This command can be used on any NPC and doesn’t require a behavior pack unless you want the NPC to use a scene file for its dialogue (which is not a requirement when using dialogue open). 
+Dialogue Open is used to force open an NPC dialogue box to the targeted player(s). This feature has previously been referred to as Remote Fire, as it simulates the experience of clicking on an NPC. This command can be used on any NPC and doesn’t require a behavior pack unless you want the NPC to use a scene file for its dialogue (which is not a requirement when using dialogue open).
 
 The syntax for Dialogue Open is as follows:
 
@@ -167,11 +168,11 @@ You may want to change an NPCs dialogue based on a player’s actions in the wor
 
 Dialogue Change does not display the NPC dialog box as Dialogue Open does, it simply points the NPC to the scene file dialogue that you want the player to see during their next interaction with that NPC.
 
-## Targeting 
+## Targeting
 
 Targeting is a vital part of the NPC dialogue branching system. It determines which NPCs receive the commands and which players see the dialogue. It is also used to ensure that each player sees the dialogue you want them to see and does not lose the dialogue in multiplayer scenarios.
 
-### Targeting NPCs 
+### Targeting NPCs
 
 To use the `/dialogue` command, you must target an NPC. This will act as the NPC the dialogue is showing up from and will use that NPC’s image inside the dialog’s portrait.
 
@@ -196,7 +197,7 @@ Example:
 
 Using this target selector with NPCs allows them to update their dialogue on a per-player basis, meaning that in multiplayer, NPCs can remember each player’s dialogue state and send them unique dialogue accordingly. This is useful for times where a player changing an NPCs dialogue could result in other players missing out on the complete dialogue branch or to ensure each player only receives one item from an NPC, not allowing that same player to return to the NPC for more items or locking out other players from collecting their items.
 
-## Full Example: 
+## Full Example:
 
 ```json
     {

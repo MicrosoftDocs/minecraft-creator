@@ -3,6 +3,7 @@ author: v-josjones
 ms.author: v-josjones
 title: How to add a Custom Block
 ms.prod: gaming
+description: A tutorial that introduces a Creator on how to make a custom block within Minecraft:Bedrock Edition
 ---
 
 # How to add a Custom Block

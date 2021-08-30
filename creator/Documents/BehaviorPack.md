@@ -3,6 +3,7 @@ author: v-josjones
 ms.author: v-josjones
 title: Introduction To Behavior Packs
 ms.prod: gaming
+description: A tutorial that is an introduction to Behavior Packs and how to add a series of attacking behaviors to an in-game cow mob.
 ---
 
 # Introduction to Behavior Packs
