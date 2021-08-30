@@ -61,7 +61,7 @@ conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   sections:
     - title: Discover what you can Create # < 60 chars (optional)
-      summary: "Building new Add-Ons, Learning about new Features, or just looking up a reference? The Creator Portal provides a large collection of content to assist Creators." # < 160 chars (optional)
+      summary: "Building new Add-Ons or want to learning about new Features? The Creator Portal provides a collection of written content to assist Creators." # < 160 chars (optional)
       items:
         # card
         - title: Add-On Pack Tutorials
@@ -109,12 +109,12 @@ conceptualContent:
             itemType: overview
             text: Loot and Trade Table Functions
     # Test Section
-    - title: Test # < 60 chars (optional)
-      summary: "Building new Add-Ons, Learning about new Features, or just looking up a reference? The Creator Portal provides a large collection of content to assist Creators." # < 160 chars (optional)
+    - title: Reference and Tools  # < 60 chars (optional)
+      summary: "Learn how content works with Reference documentation and how Tools can empower your workflow." # < 160 chars (optional)
       items:
       # card
       - title: Using GameTest
-        summary: "GameTest Framework is a new toolset available to creators to build and test their custom content. "
+        summary: "Learn how the new GameTest Frameworks can speed up your development time."
         links:
           - url: ScriptAPI/mojang-gametest/mojang-gametest.md
             itemType: reference
