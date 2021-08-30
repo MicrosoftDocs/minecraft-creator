@@ -21,9 +21,9 @@ highlightedContent:
       itemType: whats-new
       url: Documents/MinecraftEntityWizard.md
     #card
-    - title: Blocks JSON Documentation
+    - title: JSON Reference Documentation
       itemType: whats-new
-      url: Reference/Content/blockreference/index.yml
+      url: Reference/index.yml
     #card
     - title: Items JSON Documentation
       itemType: whats-new

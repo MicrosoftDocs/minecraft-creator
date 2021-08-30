@@ -1,0 +1,73 @@
+### YamlMime:Landing
+
+title: JSON Reference Documentation # < 60 chars
+summary: "Landing page containing all JSON documentation for Minecraft: Bedrock Edition." # < 160 chars
+
+metadata:
+  title: JSON Reference Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: "Landing page containing all JSON documentation for Minecraft: Bedrock Edition." # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: v-josjones #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-josjones #Required; microsoft alias of author; optional team alias.
+  ms.date: 08/27/2021 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Addons
+    linkLists:
+      - linkListType: reference
+        links:
+           - text: Addons JSON Documentation
+             url: Reference/Content/addonsreference/index.yml
+           - text: Addon Blocks
+             url: Content/addonsreference/Examples/AddonBlocks.md
+           - text: Addon Entities
+             url: Content/addonsreference/Examples/addonEntities.md
+           - text: Addon Geometry
+             url: Content/Addonsreference/Examples/AddonGeometry.md
+           - text: Addon Items
+             url: Content/Addonsreference/Examples/AddonItems.md
+           - text: Addon Manifest JSON
+             url: Content/addonsreference/Examples/AddonManifest.md
+  # Card (optional)
+  - title: Animation
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Animation JSON Documentation
+            url: Content/animationsreference/index.yml
+          - text: Animation Reference - Getting Started
+            url: Content/animationsreference/Examples/AnimationGettingStarted.md
+          - text: Animation Reference - Upgrading Animation Scripts
+            url: Content/animationsreference/Examples/AnimationUpgrade.md
+          - text: Animation Controllers
+            url: Content/animationsreference/Examples/AnimationController.md
+          - text: Render Controllers
+            url: Content/animationsreference/Examples/AnimationRenderController.md
+  # Card (optional)
+  - title: Biome
+    linkLists:
+      - linkListType: reference
+        links:
+           - text: Biome Overview
+             url: Content/biomereference/Examples/BiomeOverview.md
+  # Card (optional)
+  - title: Blocks
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Blocks JSON Documentation
+            url: Content/blockreference/index.yml
+          - text: Block Definitions and Properties
+            url: Examples/Definitions/BlockDefinitionProperties.md
+          - text: Block Components List
+            url: Content/blockreference/Examples/BlockComponentsList.md
+          - text: Block Trigger List
+            url: Content/blockreference/Examples/BlockTriggerList.md
+          - text: Block Event Responses List
+            url: Content/blockreference/Examples/BlockEventList.md

@@ -26,3 +26,9 @@
   - name: Animations Documentation
     tocHref: /creator/reference/content/animationsreference/
     topicHref: /creator/reference/content/animationsreference/index
+  - name: Features Documentation
+    tocHref: /creator/reference/content/featuresreference/
+    topicHref: /creator/reference/content/featuresreference/index
+  - name: Fogs Documentation
+    tocHref: /creator/reference/content/fogsreference/
+    topicHref: /creator/reference/content/fogsreference/index
