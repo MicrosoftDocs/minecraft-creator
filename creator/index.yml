@@ -108,8 +108,8 @@ conceptualContent:
           - url: Documents/LootAndTradeTableFunctions.md
             itemType: overview
             text: Loot and Trade Table Functions
-  section:
-    - title: Discover what you can Create # < 60 chars (optional)
+    # Test Section
+    - title: Test # < 60 chars (optional)
       summary: "Building new Add-Ons, Learning about new Features, or just looking up a reference? The Creator Portal provides a large collection of content to assist Creators." # < 160 chars (optional)
       items:
       # card
