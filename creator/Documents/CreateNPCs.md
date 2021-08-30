@@ -3,7 +3,7 @@ author: v-jeffreykim
 ms.author: v-jeffreykim
 title: Create a Custom NPC
 ms.prod: gaming
-description: A tutorial covering how to create a Non-Playable Character (NPC) within Minecraft:Bedrock Edition
+description: "A tutorial covering how to create a Non-Playable Character (NPC) within Minecraft: Bedrock Edition"
 ---
 # Create a Custom NPC
 

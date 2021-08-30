@@ -1,4 +1,4 @@
-Welcome to [Minecraft Bedrock documentation](https://docs.microsoft.com/minecraft/creator). Learn how to customize Minecraft: Bedrock Edition through Add-ons.
+Welcome to [Minecraft Bedrock documentation](https://docs.microsoft.com/minecraft/creator). Learn how to customize Minecraft: Bedrock Edition through Add-Ons.
 
 ## Contributing
 

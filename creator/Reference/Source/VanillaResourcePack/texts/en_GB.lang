@@ -6515,7 +6515,7 @@ storageManager.multiselect=Multiselect	#
 storageManager.miscellaneous=Miscellaneous	#
 
 storageManager.groupType=Type	#
-storageManager.groupPack=Add-on	#
+storageManager.groupPack=Add-On	#
 
 storageManager.shareTitle=Export Resources	#
 storageManager.mcpack=Minecraft Pack	#
@@ -7029,7 +7029,7 @@ store.createdBy=By %s	#
 store.seeMoreBy=See more by %s	#
 store.seeMoreBy.multiCreatorBundle=See More by Bundle Creators	#
 store.fetchingItem=Connecting to Marketplace...	#
- 
+
 store.timer.daysAbbreviated=%sd		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
 store.timer.hoursAbbreviated=%shr		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
 store.timer.minutesAbbreviated=%smin		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters

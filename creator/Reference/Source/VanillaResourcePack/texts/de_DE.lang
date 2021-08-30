@@ -5392,7 +5392,7 @@ options.protocolversion.format=Protokollversion: %1%s	#
 options.worldconversion.version=Weltumwandler: %s	#
 options.builddate.format=Erstellungsdatum: %s	#
 options.buttonSize=Tastengröße	#
-options.category.addons=Add-ons	#
+options.category.addons=Add-Ons	#
 options.category.audio=Audio	#
 options.category.game=Spiel	#
 options.category.graphics=Grafik	#
@@ -7029,7 +7029,7 @@ store.createdBy=Von %s	#
 store.seeMoreBy=Mehr von %s	#
 store.seeMoreBy.multiCreatorBundle=Mehr von den Bundle-Erstellern	#
 store.fetchingItem=Verbindung mit Marketplace ...	#
- 
+
 store.timer.daysAbbreviated=%s T		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
 store.timer.hoursAbbreviated=%s S		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
 store.timer.minutesAbbreviated=%s M		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
@@ -8419,7 +8419,7 @@ trial.tabbed_upsell.store.description=Erhalte Zugang zu Minecraft Marketplace, u
 trial.tabbed_upsell.creative.title=GESTALTEN	#
 trial.tabbed_upsell.creative.description=Kaufe Minecraft, und erhalte den Kreativmodus! Greife auf das gesamte Inventar zu und lass deiner Fantasie beim Bauen freien Lauf. Fliege durch deine Welt, bau dein Traumhaus, oder sprenge mit unbegrenztem TNT einen Berg.	#
 trial.tabbed_upsell.addon.title=ADD-ONS	#
-trial.tabbed_upsell.addon.description=Die Wölfe sollen sich wie Häschen benehmen? Alle Bäume sollen sich in Zuckerwatte verwandeln? Im kompletten Minecraft-Erlebnis mit Add-ons ist alles möglich. Außerdem hast du Zugang zu Mehrspielerangeboten, zum Kreativmodus, erhältst Erfolge und vieles mehr. Schalte jetzt den vollen Zugriff auf Minecraft frei.	#
+trial.tabbed_upsell.addon.description=Die Wölfe sollen sich wie Häschen benehmen? Alle Bäume sollen sich in Zuckerwatte verwandeln? Im kompletten Minecraft-Erlebnis mit Add-Ons ist alles möglich. Außerdem hast du Zugang zu Mehrspielerangeboten, zum Kreativmodus, erhältst Erfolge und vieles mehr. Schalte jetzt den vollen Zugriff auf Minecraft frei.	#
 trial.tabbed_upsell.seeds.title=SEEDS	#
 trial.tabbed_upsell.seeds.description=Schalte das komplette Minecraft-Erlebnis frei, und erhalte Zugriff auf Seeds. Mit Seeds kannst du neue Biome entdecken – überlebe in Eisebenen, erklimme extreme Berge, oder wandere durch Wüsten. Nutze einzigartige Vorlagen, oder erkunde neue Zufallswelten. Kaufe Minecraft, um noch heute Seeds, den Kreativmodus, Mehrspielerangebote und mehr zu nutzen.	#
 
