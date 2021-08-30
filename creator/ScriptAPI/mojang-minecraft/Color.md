@@ -55,7 +55,7 @@ Type: *number*
 new Color(red: number, green: number, blue: number, alpha: number)
 `
 
-Represents the size of the container. For example, a standard single-block chest has a size of 27, for the 27 slots in their inventory.
+Creates a new color using the specified color values.
 #### Arguments
 | Parameter | Type | Default Value | Description |
 | :--- | :--- | :--- | :---: |
