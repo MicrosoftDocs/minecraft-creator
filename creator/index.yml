@@ -1,9 +1,9 @@
 ### YamlMime:Hub
 
-title: Minecraft Bedrock Creator Portal # < 60 chars
+title: Minecraft Creator Portal Documentation # < 60 chars
 summary: "Learn how to create and design unique experiences with Add-Ons, discover the latest features and develop your skills as a creator in Minecraft: Bedrock Edition."
 metadata:
-  title: Minecraft Bedrock Creator Portal # Required; page title shown in search results < 60 chars
+  title: Minecraft Creator Portal Documentation # Required; page title shown in search results < 60 chars
   description: "Learn how to create and design unique experiences with Add-Ons, discover the latest features and develop your skills as a creator in Minecraft: Bedrock Edition." # < 160 chars
   service: service
   ms.service: service # Required; service per approved list.
@@ -59,8 +59,8 @@ productDirectory:
 conceptualContent:
 # Supports up to 3 sections
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-  title: Articles and Tutorials # < 60 chars (optional)
-  summary: "Find out how to build and design content for Minecraft: Bedrock Edition by following a tutorial, or learn about the latest features to enhance your content." # < 160 chars (optional)
+  title: Discover what you can Create # < 60 chars (optional)
+  summary: "Building new Add-Ons, Learning about new Features, or just looking up a reference? The Creator Portal provides a large collection of content to assist Creators." # < 160 chars (optional)
   items:
     # card
     - title: Add-On Pack Tutorials
@@ -108,15 +108,7 @@ conceptualContent:
         - url: Documents/LootAndTradeTableFunctions.md
           itemType: overview
           text: Loot and Trade Table Functions
-
-# conceptualContent section (optional)
-conceptualContent:
-# Supports up to 3 sections
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-  title: Reference # < 60 chars (optional)
-  summary: "Dive into how Minecraft: Bedrock Edition works by examining the library of JSON files available, or learn more about the new GameTest API." # < 160 chars (optional)
-  items:
-  # card
+    # card
     - title: Using GameTest
       imageSrc: images/Firework.png
       links:
@@ -176,7 +168,7 @@ additionalContent:
         # Card
         - title: Contributor Style Guide
           summary: Learn more about how to style and tone your content for a wide audience
-          url: file1.md OR https://docs.microsoft.com/file2
+          url: Documents/StyleGuide.md
         # Card
         - title: Creator Portal Github Repo
           summary: View the public repository
