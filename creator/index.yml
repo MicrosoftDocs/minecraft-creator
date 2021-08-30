@@ -59,99 +59,103 @@ productDirectory:
 conceptualContent:
 # Supports up to 3 sections
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-  title: Discover what you can Create # < 60 chars (optional)
-  summary: "Building new Add-Ons, Learning about new Features, or just looking up a reference? The Creator Portal provides a large collection of content to assist Creators." # < 160 chars (optional)
-  items:
-    # card
-    - title: Add-On Pack Tutorials
-      summary: "Learn how to develop Add-Ons and Custom Content by following along with a tutorial."
-      links:
-        - url: Documents/ResourcePack.md
-          itemType: get-started
-          text: Introduction to Resource Packs
-        - url: Documents/BehaviorPack.md
-          itemType: get-started
-          text: Introduction To Behavior Packs
-        - url: Documents/CustomBlock.md
-          itemType: how-to-guide
-          text: How to add a Custom Block
-        - url: Documents/CreateNPCs.md
-          itemType: tutorial
-          text: Create a Custom NPC
-        - url: Documents/NPCDialogue.md
-          itemType: tutorial
-          text: NPC Dialogue Command
-  # card
-    - title: Working with Commands
-      summary: "Commands are a powerful way to add logic into your experiences."
-      imageSrc: images/Script.png
-      links:
-        - url: Documents/CommandsIntroduction.md
-          itemType: concept
-          text: Introduction to Commands
-        - url: Documents/CommandBlocks.md
-          itemType: get-started
-          text: Getting Started with Command Blocks
-        - url: Documents/CommandsHowToMakeACTMMap.md
-          itemType: get-started
-          text: How To Make a Complete the Monument Map
-        - url: Documents/CommandsPopularCommands.md
-          itemType: reference
-          text: Popular Commands
-  # card
-    - title: Loot and Trading Tables
-      summary: "Discover how Tables allow for Creators to add items to the world in a wide variety of ways."
-      links:
-        - url: Documents/IntroductionToLootTables.md
-          itemType: get-started
-          text: Introduction to Loot Tables
-        - url: Documents/LootAndTradeTableFunctions.md
-          itemType: overview
-          text: Loot and Trade Table Functions
-    # card
-    - title: Using GameTest
-      summary: "GameTest Framework is a new toolset available to creators to build and test their custom content. "
-      links:
-        - url: ScriptAPI/mojang-gametest/mojang-gametest.md
-          itemType: reference
-          text: GameTest API
-        - url:  Documents/GameTestGettingStarted.md
-          itemType: get-started
-          text: Getting Started with GameTest
-        - url: Documents/GameTestBuildYourFirstGameTest.md
-          itemType: how-to-guide
-          text: Build your first GameTest
-  # card
-    - title: Reference Documentation
-      summary: "Need a hand creating your content? View the reference documentation to see how things work in-game."
-      links:
-        - url: Reference/Content/addonsreference/index.yml
-          itemType: reference
-          text: Addons JSON Documentation
-        - url: Reference/Content/animationsreference/index.yml
-          itemType: reference
-          text: Animation JSON Documentation
-        - url: Reference/Content/blockreference/index.yml
-          itemType: reference
-          text: Block JSON Documentation
-        - url: Reference/Content/entityreference/index.yml
-          itemType: reference
-          text: Entity JSON Documentation
-        - url: Reference/Content/featuresreference/index.yml
-          itemType: reference
-          text: Features JSON Documentation
-        - url: Reference/Content/itemreference/index.yml
-          itemType: reference
-          text: Item JSON Documentation
-        - url: Reference/Content/molangreference/index.yml
-          itemType: reference
-          text: Molang Documentation
-        - url: Reference/Content/Recipereference/index.yml
-          itemType: reference
-          text: Recipe JSON Documentation
-        - url: Reference/Content/volumereference/index.yml
-          itemType: reference
-          text: Volume JSON Documentation
+  sections:
+    - title: Discover what you can Create # < 60 chars (optional)
+      summary: "Building new Add-Ons, Learning about new Features, or just looking up a reference? The Creator Portal provides a large collection of content to assist Creators." # < 160 chars (optional)
+      items:
+        # card
+        - title: Add-On Pack Tutorials
+          summary: "Learn how to develop Add-Ons and Custom Content by following along with a tutorial."
+          links:
+            - url: Documents/ResourcePack.md
+              itemType: get-started
+              text: Introduction to Resource Packs
+            - url: Documents/BehaviorPack.md
+              itemType: get-started
+              text: Introduction To Behavior Packs
+            - url: Documents/CustomBlock.md
+              itemType: how-to-guide
+              text: How to add a Custom Block
+            - url: Documents/CreateNPCs.md
+              itemType: tutorial
+              text: Create a Custom NPC
+            - url: Documents/NPCDialogue.md
+              itemType: tutorial
+              text: NPC Dialogue Command
+        # card
+        - title: Working with Commands
+          summary: "Commands are a powerful way to add logic into your experiences."
+          links:
+            - url: Documents/CommandsIntroduction.md
+              itemType: concept
+              text: Introduction to Commands
+            - url: Documents/CommandBlocks.md
+              itemType: get-started
+              text: Getting Started with Command Blocks
+            - url: Documents/CommandsHowToMakeACTMMap.md
+              itemType: get-started
+              text: How To Make a Complete the Monument Map
+            - url: Documents/CommandsPopularCommands.md
+              itemType: reference
+              text: Popular Commands
+        # card
+        - title: Loot and Trading Tables
+          summary: "Discover how Tables allow for Creators to add items to the world in a wide variety of ways."
+          links:
+          - url: Documents/IntroductionToLootTables.md
+            itemType: get-started
+            text: Introduction to Loot Tables
+          - url: Documents/LootAndTradeTableFunctions.md
+            itemType: overview
+            text: Loot and Trade Table Functions
+  section:
+    - title: Discover what you can Create # < 60 chars (optional)
+      summary: "Building new Add-Ons, Learning about new Features, or just looking up a reference? The Creator Portal provides a large collection of content to assist Creators." # < 160 chars (optional)
+      items:
+      # card
+      - title: Using GameTest
+        summary: "GameTest Framework is a new toolset available to creators to build and test their custom content. "
+        links:
+          - url: ScriptAPI/mojang-gametest/mojang-gametest.md
+            itemType: reference
+            text: GameTest API
+          - url:  Documents/GameTestGettingStarted.md
+            itemType: get-started
+            text: Getting Started with GameTest
+          - url: Documents/GameTestBuildYourFirstGameTest.md
+            itemType: how-to-guide
+            text: Build your first GameTest
+      # card
+      - title: Reference Documentation
+        summary: "Need a hand creating your content? View the reference documentation to see how things work in-game."
+        links:
+          - url: Reference/Content/addonsreference/index.yml
+            itemType: reference
+            text: Addons JSON Documentation
+          - url: Reference/Content/animationsreference/index.yml
+            itemType: reference
+            text: Animation JSON Documentation
+          - url: Reference/Content/blockreference/index.yml
+            itemType: reference
+            text: Block JSON Documentation
+          - url: Reference/Content/entityreference/index.yml
+            itemType: reference
+            text: Entity JSON Documentation
+          - url: Reference/Content/featuresreference/index.yml
+            itemType: reference
+            text: Features JSON Documentation
+          - url: Reference/Content/itemreference/index.yml
+            itemType: reference
+            text: Item JSON Documentation
+          - url: Reference/Content/molangreference/index.yml
+            itemType: reference
+            text: Molang Documentation
+          - url: Reference/Content/Recipereference/index.yml
+            itemType: reference
+            text: Recipe JSON Documentation
+          - url: Reference/Content/volumereference/index.yml
+            itemType: reference
+            text: Volume JSON Documentation
 
 # additionalContent section (optional)
 # Card with summary style
