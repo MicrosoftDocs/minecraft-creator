@@ -36,7 +36,7 @@ highlightedContent:
 # productDirectory section (optional)
 productDirectory:
   title: Building Custom Content  # < 60 chars (optional)
-  summary: Whether you are creating first Add-On or your one hundredth, we have have content for all types of Creators to help you on your journey! # < 160 chars (optional)
+  summary: Whether you are creating first Add-On or your one-hundredth, there is content for all types of Creators to help you on your journey! # < 160 chars (optional)
   items:
     # Card
     - title: Getting Started with Add-On Development
