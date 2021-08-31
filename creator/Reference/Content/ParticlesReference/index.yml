@@ -30,7 +30,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Particle Component List
-            url: ParticleComponents/ParticleComponentList.md
+            url: ParticleComponentList.md
       - linkListType: reference
         links:
           - text: Emitter Disc Component

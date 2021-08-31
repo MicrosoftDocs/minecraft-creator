@@ -54,12 +54,14 @@ landingContent:
           - text: Render Controllers
             url: Content/animationsreference/Examples/AnimationRenderController.md
   # Card (comment to space cards)
-  - title: Biome
+  - title: Biome and Fogs
     linkLists:
       - linkListType: overview
         links:
            - text: Biome overview
              url: Content/biomereference/Examples/Biomeoverview.md
+           - text: Introduction to Fogs
+             url: Content/FogsReference/Examples/FogsIntroduction.md
   # Card (comment to space cards)
   - title: Blocks
     linkLists:
@@ -121,13 +123,6 @@ landingContent:
         links:
           - text: Feature List
             url: Content/featuresreference/Examples/FeatureList.md
-  # Card (comment to space cards)
-  - title: Fogs
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Introduction to Fogs
-            url: Content/FogsReference/Examples/FogsIntroduction.md
   # Card (comment to space cards)
   - title: Items
     linkLists:

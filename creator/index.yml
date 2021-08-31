@@ -163,7 +163,7 @@ conceptualContent:
       - title: Common Schema Documentation
         summary: "See how Schemas are used to validate JSON files in Minecraft: Bedrock Edition "
         links:
-          - url: Reference/Content/schemeasreference/index.yml
+          - url: Reference/Content/SchemasReference/index.yml
             itemType: reference
             text: Schemas Documentation
           - url: Reference/Content/BiomeReference/Examples/BiomeOverview.md
