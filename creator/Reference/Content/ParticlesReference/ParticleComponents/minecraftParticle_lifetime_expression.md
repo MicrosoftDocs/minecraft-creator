@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Particle Lifetime Expression component
+title: Particle Documentation - Particle Lifetime Expression component
 ms.prod: gaming
 ---
 
-# Particle Lifetime Expression component
+# Particle Documentation - Particle Lifetime Expression component
 
 ```json
 "minecraft:particle_lifetime_expression": {
@@ -13,7 +13,7 @@ ms.prod: gaming
     // The float/expr is evaluated once per particle
     // evaluated every frame
     "expiration_expression": <float/molang> <default:0>
- 
+
     // alternate way to express lifetime
     // particle will expire after this much time
     // evaluated once

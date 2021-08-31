@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Emitter Initialization component
+title: Particle Documentation - Emitter Initialization component
 ms.prod: gaming
 ---
 
-# Emitter Initialization component
+# Particle Documentation - Emitter Initialization component
 
 ```json
 

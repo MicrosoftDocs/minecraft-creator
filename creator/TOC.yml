@@ -134,6 +134,12 @@
           href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/DataDrivenSpawning.md
         - name: Biomes
           href: Reference/Content/biomereference/Examples/BiomeOverview.md
+        - name: Schemas
+          items:
+          - name: Schema Documentation Homepage
+            href: Reference/Content/schemasreference/index.yml
+          - name: Schema List
+            href: Reference/Content/schemasreference/schemas/TOC.yml
       - name: Resource Pack
         items:
         - name: Client Entity JSON

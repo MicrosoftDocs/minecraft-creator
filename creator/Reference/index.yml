@@ -165,6 +165,15 @@ landingContent:
             url: Content/recipereference/Examples/RecipeDefinitions/minecraftRecipe_Shapeless.md
           - text: Potion Brewing Recipe
             url: Content/recipereference/Examples/RecipeDefinitions/minecraftRecipe_PotionBrewing.md
+  # Card (optional)
+  - title: Schemas
+    linkLists:
+      - linkListType: reference
+        links:
+          - name: Schema Documentation Homepage
+            url: Content/schemasreference/index.yml
+          - name: Schema List
+            url: Content/schemasreference/schemas/TOC.yml
   # Card (comment to space cards)
   - title: Texture Sets
     linkLists:

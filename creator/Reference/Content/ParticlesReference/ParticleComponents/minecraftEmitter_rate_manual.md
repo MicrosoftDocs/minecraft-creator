@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Emitter Rate Manual component
+title: Particle Documentation - Emitter Rate Manual component
 ms.prod: gaming
 ---
 
-# Emitter Rate Manual component
+# Particle Documentation - Emitter Rate Manual component
 
 ```json
 "minecraft:emitter_rate_manual": {

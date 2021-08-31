@@ -32,3 +32,6 @@
   - name: Fogs Documentation
     tocHref: /creator/reference/content/fogsreference/
     topicHref: /creator/reference/content/fogsreference/index
+  - name: Schema Documentation
+    tocHref: /creator/reference/content/schemasreference/
+    topicHref: /creator/reference/content/schemasreference/index

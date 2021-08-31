@@ -1,16 +1,17 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Particles Components List
+title: Particle Documentation - Introduction to Particles
 ms.prod: gaming
 ---
 
-# Particles Components List
+# Particle Documentation - Introduction to Particles
 
 Particle effects consist of basic render parameters, and a set of components.  Components can be placed in any order.
 
-**Outline:**
-```
+## Outline
+
+```JSON
 {
   "format_version": "1.10.0",
   "particle_effect": {
@@ -27,7 +28,7 @@ Particle effects consist of basic render parameters, and a set of components.  C
     "events": {
       // events details
     },
-    "components": 
+    "components":
       // emission rate components
 
       // emission lifetime components
@@ -49,8 +50,6 @@ Particle effects consist of basic render parameters, and a set of components.  C
 }
 ```
 
-
-
 ## Component Concept
 
 The particle system is component based.  What this means is that particle effects are composed via a set of components.  In order for an effect to do something, you add a component that handles that aspect of the effect.  For example, an emitter usually needs to have rules for its lifetime, thus the effect should have one or more lifetime components that handle lifetime duties for the emitter and emitted particles.
@@ -59,87 +58,17 @@ The idea is that new components can be added later, and one can combine componen
 
 Think of components as telling the particle system what you want the emitter or particle to do, rather than exposing a list of particle parameters and having to wrangle those parameters to get the desired behavior.
 
-## Current Component List
-
-> [!NOTE] 
-> For fields in these components, the following shorthand is used:
-> 
-> ```
-> <float> - field takes a floating point input
-> <float/molang> - field takes a floating point input, or a MoLang expression
-> <default:val> - specifies the default value used if field isn't specified
-> <bool> - "true" or "false"
-> <string> - a string ("this is a string"
-> <default> - not a part of the particular line, this just says what this field defaults to if not specified
-> ```
-
-### Emitter Components
-
-**Initial State Components**
-
-- [Emitter Local Space component](ParticleComponents\minecraftEmitter_local_space.md)
-- [Emitter Initialization component](ParticleComponents\minecraftEmitter_initialization.md)
-
-**Emitter Rate Components**
-
-- [Emitter Rate Instant component](ParticleComponents\minecraftEmitter_rate_instant.md)
-- [Emitter Rate Steady component](ParticleComponents\minecraftEmitter_rate_steady.md)
-- [Emitter Rate Manual component](ParticleComponents\minecraftEmitter_rate_manual.md)
-
-**Emitter Lifetime Components**
-
-- [Emitter Lifetime Looping component](ParticleComponents\minecraftEmitter_lifetime_looping.md)
-- [Emitter Lifetime Once component](ParticleComponents\minecraftEmitter_lifetime_once.md)
-- [Emitter Lifetime Expression component](ParticleComponents\minecraftEmitter_lifetime_expression.md)
-- [Emitter Lifetime Events component](ParticleComponents\minecraftEmitter_lifetime_events.md)
-
-**Emitter Shape Components**
-
-- [Emitter Shape Point component](ParticleComponents\minecraftEmitter_shape_point.md)
-- [Emitter Shape Sphere component](ParticleComponents\minecraftEmitter_shape_sphere.md)
-- [Emitter Shape Box component](ParticleComponents\minecraftEmitter_shape_box.md)
-- [Emitter Shape Custom component](ParticleComponents\minecraftEmitter_shape_custom.md)
-- [Emitter Shape Entity-AABB component](ParticleComponents\minecraftEmitter_shape_entity-AABB.md)
-- [Emitter Disc component](ParticleComponents\minecraftEmitter_disc.md)
-
-### Particle Components
-
-**Particle Initial State Components**
-
-- [Particle Initial State component](ParticleComponents\minecraftParticle_initial_state.md)
-- [Particle Initial Speed component](ParticleComponents\minecraftParticle_initial_speed.md)
-
-**Particle Motion Components**
-
-- [Particle Motion Dynamic component](ParticleComponents\minecraftParticle_motion_dynamic.md)
-- [Particle Motion Parametric component](ParticleComponents\minecraftParticle_motion_parametric.md)
-- [Particle Motion Collision component](ParticleComponents\minecraftParticle_motion_collision.md)
-
-**Particle Appearance Components**
-
-- [Particle Appearance Billboard component](ParticleComponents\minecraftParticle_appearance_billboard.md)
-- [Particle Appearance Tinting component](ParticleComponents\minecraftParticle_appearance_tinting.md)
-- [Particle Appearance Lighting component](ParticleComponents\minecraftParticle_appearance_lighting.md)
-
-**Particle Lifetime Components**
-
-- [Particle Lifetime Expression component](ParticleComponents\minecraftParticle_lifetime_expression.md)
-- [Particle Lifetime Events component](ParticleComponents\minecraftParticle_lifetime_events.md)
-- [Particle Expire If In Blocks component](ParticleComponents\minecraftParticle_expire_if_in_blocks.md)
-- [Particle Expire If Not In Blocks component](ParticleComponents\minecraftParticle_expire_if_not_in_blocks.md)
-- [Particle Lifetime Kill-Plane component](ParticleComponents\minecraftParticle_lifetime_kill-plane.md)
-
 ## Curves
 
-Curves are interpolation values, with inputs from 0 to 1, and outputs based on the curve.  The result of the curve is a MoLang variable of the same name that can be referenced in MoLang in components.  For each rendering frame for each particle, the curves are evaluated and the result is placed in a MoLang variable of the name of the curve.
+Curves are interpolation values, with inputs from 0 to 1, and outputs based on the curve.  The result of the curve is a Molang variable of the same name that can be referenced in Molang in components.  For each rendering frame for each particle, the curves are evaluated and the result is placed in a Molang variable of the name of the curve.
 
 ```json
 
 "curves": {
-  // "molangvar" is the MoLang variable to be used later in MoLang expressions
+  // "Molangvar" is the Molang variable to be used later in Molang expressions
   // for example "variable.mycurve" here would make the result of the curve
-  // available in MoLang as "variable.mycurve".  Note that all variables must begin with "variable."
-  "molangvar": {
+  // available in Molang as "variable.mycurve".  Note that all variables must begin with "variable."
+  "Molangvar": {
     // type can be "linear", "bezier", "bezier_chain", or "catmull_rom"
     // "linear" is a series of nodes, equally spaced between 0 and 1 (after applying input/horizontal_range)
     // "bezier" is a 4-node bezier spline, with the first and last point being the values at 0 and 1
@@ -148,14 +77,14 @@ Curves are interpolation values, with inputs from 0 to 1, and outputs based on t
     // are used to form the slope of the second/second-last points respectively.  All points are evenly spaced.
     // "bezier_chain" is a chain of bezier splines.  See below for the node configuration.  A series of points are
     //   specified, along with their corresponding slopes, and each segment will use it's pair of points and
-    //   slopes to form a bezier spline.  Each point other than first/last is shared between it's pair of 
+    //   slopes to form a bezier spline.  Each point other than first/last is shared between it's pair of
     //   spline segments.
-    "type": type, 
+    "type": type,
 
     // control nodes for curve.  These are assumed to be equally
     // spaced, e.g. first node is at input value 0, second at 0.25, etc
     // this notation works only for linear, bezier, and catmull_rom
-    "nodes": [<float/molang>, <float/molang>, <float/molang>, <float/molang>],
+    "nodes": [<float/Molang>, <float/Molang>, <float/Molang>, <float/Molang>],
 
     // control nodes for bezier_chain
     // the nodes will be sorted prior to parsing, so if you declare nodes 0.3, 0.6, 0.5, they will be
@@ -176,13 +105,13 @@ Curves are interpolation values, with inputs from 0 to 1, and outputs based on t
     // what is the input value to use
     // for example, "variable.particle_age/variable.particle_lifetime would result in an input from 0 to 1 over
     // the lifetime of the particle, while variable.particle_age would have input of how old the particle is in seconds
-    "input": <float/molang>,
+    "input": <float/Molang>,
 
     // what is the range the input is mapped onto
     // between 0 and this value
     // note: this field is deprecated and optional (default: 1.0)
     // note: this field is ignored for bezier_chain
-    "horizontal_range": <float/molang>
+    "horizontal_range": <float/Molang>
   }
 }
 
@@ -212,15 +141,15 @@ The events themselves consist of an optional node tree and/or an actual event.  
     { /*this node executes first*/ },
     { /*this node executes second*/ },
     { /* etc */},
-    { 
+    {
       "sequence": [
-        { 
+        {
           // nested nodes
         },
         ...
       ]
     },
-    { 
+    {
       "randomize": [
         {
           "weight": <float>
@@ -239,17 +168,17 @@ The events themselves consist of an optional node tree and/or an actual event.  
       "effect": <string>,
       // "emitter", "emitter_bound", "particle" or "particle_with_velocity"
       "type": <string>,
-      // this MoLang is run on the emitter for this event once this
+      // this Molang is run on the emitter for this event once this
       // event fires
       // NOTE: this will not have access to the event
-      // triggering emitter's MoLang data
+      // triggering emitter's Molang data
       "pre_effect_expression": <string>,
     },
     "sound_effect": {
       // name of the level sound event
       "event_name": <string>
     },
-    // Runs this MoLang expression on the event-firing emitter
+    // Runs this Molang expression on the event-firing emitter
     "expression": <string>,
     // for debugging, this will log a message, along with the firing effect's name and event position
     // the log message will show up in the content logger
@@ -267,18 +196,17 @@ The events themselves consist of an optional node tree and/or an actual event.  
 }
 
 ```
-## Examples
+
+### Examples
 
 - [Flame particle](Examples\Flame_particle.md)
 - [Smoke particle](Examples\Smoke_particle.md)
 - [Mob Flame effect](Examples\Mob_flame_effect.md)
 - [Bouncing Bubbles](Examples\Bouncing_bubbles.md)
 
-## MoLang integration
+## Molang integration
 
-Where it makes sense, any field can use a MoLang expression. MoLang expressions are strings, and are defined in the MoLang documentation.  The particle system uses some special MoLang variables that particle MoLang expressions can use.  Additionally, custom MoLang paramaters can be set in various ways and used in MoLang expressions in effects.
-
-
+Where it makes sense, any field can use a Molang expression. Molang expressions are strings, and are defined in the Molang documentation.  The particle system uses some special Molang variables that particle Molang expressions can use.  Additionally, custom Molang parameters can be set in various ways and used in Molang expressions in effects.
 
 | Name| Description |
 |:-----------:|:-----------:|
@@ -296,9 +224,6 @@ Where it makes sense, any field can use a MoLang expression. MoLang expressions 
 | variable.emitter_random_4|  |
 | variable.entity_scale|  |
 
-
-
-
 ## Namespacing
 
 All particle effects should be namespaced (in their name).
@@ -307,15 +232,12 @@ Namespacing involves adding a 'name:' prefix on the effect tag.
 
 Regular Minecraft will use the 'minecraft: prefix.  See the examples for example names.
 
-
-
-
 ## Particles Entity Integration
-
 
 One of the primary uses for emitting particles in the Bedrock engine is particles associated with entities, such as mobs.  Examples can be when the Blaze flames-up during it's attack sequence, or the Evoker's spell effect while summoning Vexes.  The goal is to allow binding and management of particle effects attached to entities.
 
 The following concepts are important for managing particles with entities via .json:
+
 - Effect lists.  These live in the resource definition of the entity's .json, along with textures, etc.  These list the effects available to the entity, with an internal entity name for the effect, and the associated effect to play.
 - Locators.  These live in the geometry files, and specify a location in the geometry.  These locators can be associated with bones, and thus follow the bone as it animates.
 - Animation controller-based particle management.  Using the Animation Controller state machine concept, one can trigger both fire-and-forget and sustained particle effects
@@ -323,15 +245,11 @@ The following concepts are important for managing particles with entities via .j
 
 Particles that are attached to entities are intrinsically tied to those entities.  If the entity ceases to exist, the particle effects cease as well.  Emitters follow either the entity, or a locator on the entity.
 
-
-
-
-time1/time2/etc are numerical time points, e.g. "0.0". 
+time1/time2/etc are numerical time points, e.g. "0.0"
 
 In this example, when the cat sits down, after 3 seconds a smoke puff is generated:
 
-****
-```
+```JSON
 
 {
   "format_version": "1.8.0",
@@ -358,24 +276,23 @@ In this example, when the cat sits down, after 3 seconds a smoke puff is generat
 
 ```
 
-
-
 ### Animation Controller effects
-
 
 Animation controllers can specify effect events for their states.  This allows for a list of particle effects to be started upon state entry, and for those particle effects to be automatically ended when leaving the state.  For particles that don't terminate (or don't terminate prior to state transition), they will be terminated at state exit.
 
 The schema is:
+
+```JSON
 "particle_effects": [
     // array of effect events
 ]
+```
+
 The array syntax allows for more than one effect to be triggered on state entry.
 
-An example is the Blaze's flame-up effect in it's animation controller. This animation controller has two states, "default" and "flaming".  It transitions between the two via the "query.is_charged" entity flag check.  When in the "flaming" state, the "charged_flames" effect is started (with no locator or initialization MoLang expression), and is terminated when the state exits.
+An example is the Blaze's flame-up effect in it's animation controller. This animation controller has two states, "default" and "flaming".  It transitions between the two via the "query.is_charged" entity flag check.  When in the "flaming" state, the "charged_flames" effect is started (with no locator or initialization Molang expression), and is terminated when the state exits.
 
-
-****
-```
+```JSON
 
 {
   "format_version": "1.8.0",
@@ -410,8 +327,6 @@ An example is the Blaze's flame-up effect in it's animation controller. This ani
 
 ```
 
-
-
 ### Animation Timeline effects
 
 Animations can also trigger particle effects.  These are fire-and-forget effects that are tied to a timeline, when the animation hits that time point, the effect(s) are fired.
@@ -430,16 +345,13 @@ Animations can also trigger particle effects.  These are fire-and-forget effects
 }
 ```
 
-
-
 ### Effect Event
-
 
 Particle events in the entity have the following properties:
 
 - "effect" is the effect name specified in the entity's resource definition .json (the particle effect list), this specifies what particle effect to start/play
 - "locator" is an optional parameter that maps to a locator of the same name in the resource definition.  By specifying a locator, the emitter will follow that locator around as the entity animates, including orientation.  If this is not specified, the effect will occur at the origin of the entity.
-- "pre_effect_script" is an optional parameter that is a MoLang expression run at emitter startup time.  This can set up MoLang variables, (for example 'particle color'), which can be then referred to inside the particle effect .json itself.
+- "pre_effect_script" is an optional parameter that is a Molang expression run at emitter startup time.  This can set up Molang variables, (for example 'particle color'), which can be then referred to inside the particle effect .json itself.
 
 ```json
 {
@@ -474,15 +386,15 @@ The effect list is a list of internal effect names to actual particle effects bi
 
 https://aka.ms/MCParticlesPack
 
-Examples of various particles can be found in the link above.  These are examples of various stand-alone particle effects.  The particle effects provided as part of the Minecraft installation are tuned to be used with the Minecraft game, and thus do not serve as good examples.  Please refer to the examples in the pack to see various ways to utilize the particle system. 
+Examples of various particles can be found in the link above.  These are examples of various stand-alone particle effects.  The particle effects provided as part of the Minecraft installation are tuned to be used with the Minecraft game, and thus do not serve as good examples.  Please refer to the examples in the pack to see various ways to utilize the particle system.
 
 To invoke an example particle with the examples particles pack enabled, bring up the console, type "/particle name x y z" where "name" is the name of the particle effect, and x/y/z are the coordinates the particle appears at.
 
-For example, "/particle minecraft:example_smoke_puff 0 5 0" will spawn a smoke puff at the origin of the world, 5 blocks up from the bottom of the world. 
+For example, "/particle minecraft:example_smoke_puff 0 5 0" will spawn a smoke puff at the origin of the world, 5 blocks up from the bottom of the world.
 "/particle minecraft:example_smoke_puff ~ ~1 ~5" will create that smoke puff about 5 blocks away from the player.
 
 
-**<big>Example Effects</big>**
+### Example Effects
 
 | Name| Description |
 |:-----------:|:-----------:|
@@ -508,11 +420,11 @@ For example, "/particle minecraft:example_smoke_puff 0 5 0" will spawn a smoke p
 
 ## Structure In Detail
 
-**Outline:**
+### Outline
 
 ```json
 {
-  // specifies the format version of the particle.  Only particles of a particular set of versions 
+  // specifies the format version of the particle.  Only particles of a particular set of versions
   // will work with the game
   "format_version": "1.10.0",
 
@@ -520,12 +432,12 @@ For example, "/particle minecraft:example_smoke_puff 0 5 0" will spawn a smoke p
     // general data for the particle effect
     "description": {
       // e.g. "minecraft:test_mule", this is the name the particle emitter is referred to as
-      "identifier": <string>, 
+      "identifier": <string>,
 
-      // Basic render parameters are basic rendering 
+      // Basic render parameters are basic rendering
       // properties like the texture used, or the material used.
-      // All particles require a material to render, and a 
-      // texture to draw.  
+      // All particles require a material to render, and a
+      // texture to draw.
       "basic_render_parameters": {
           "material": <string>
           "texture": <string>
@@ -533,7 +445,7 @@ For example, "/particle minecraft:example_smoke_puff 0 5 0" will spawn a smoke p
     },
 
     "curves": {
-	  // curves are described elsewhere in the document
+    // curves are described elsewhere in the document
     },
 
     "events": {
@@ -549,7 +461,7 @@ For example, "/particle minecraft:example_smoke_puff 0 5 0" will spawn a smoke p
         // particular properties
 
         // emitter rate components control when particles get emitted
-        // these will be run every frame for the emitter to determine if any 
+        // these will be run every frame for the emitter to determine if any
         // particles need to be spawned
 
         // emitter lifetime components control the lifetime of the emitter
@@ -560,7 +472,7 @@ For example, "/particle minecraft:example_smoke_puff 0 5 0" will spawn a smoke p
         // and initial shape-driven state such as particle direction
 
         // emitter local space components
-        // this component specifies whether entity-based emitters 
+        // this component specifies whether entity-based emitters
         // simulate in local or global space
 
         /////////////////////////////////////////////////////////////////////
@@ -577,7 +489,7 @@ For example, "/particle minecraft:example_smoke_puff 0 5 0" will spawn a smoke p
         // particle), etc.
         // These are run once per frame per particle
 
-        // particle appearance components control how the particle is rendered 
+        // particle appearance components control how the particle is rendered
         // such as what UV coortinates to use, size of the particle,
         // billboard orientation, color tinting, etc.
         // These are run once per frame for visible particles

@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: actor_animation Schema
+title: Schema Documentation - actor_animation
 ms.prod: gaming
 ---
 
-# actor_animation Schema
+# Schema Documentation - actor_animation
 
 This schema corresponds to the *.animation.json files in the "animations" folder of the resource pack.
 

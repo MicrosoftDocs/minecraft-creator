@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Particle Expire If In Blocks component
+title: Particle Documentation - Particle Expire If In Blocks component
 ms.prod: gaming
 ---
 
-# Particle Expire If In Blocks component
+# Particle Documentation - Particle Expire If In Blocks component
 
 ```json
 "minecraft:particle_expire_if_in_blocks" [
@@ -13,7 +13,7 @@ ms.prod: gaming
     // these are typically the same name as in the /setblock command
     // except for the minecraft: prefix
     "blockname1",
-    "blockname2", 
+    "blockname2",
     ...
 ],
 ```

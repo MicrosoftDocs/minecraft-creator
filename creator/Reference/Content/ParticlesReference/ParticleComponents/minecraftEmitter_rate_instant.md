@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Emitter Rate Instant component
+title: Particle Documentation - Emitter Rate Instant component
 ms.prod: gaming
 ---
 
-# Emitter Rate Instant component
+# Particle Documentation - Emitter Rate Instant component
 
 ```json
 "minecraft:emitter_rate_instant": {

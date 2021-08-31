@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Emitter Shape Sphere component
+title: Particle Documentation - Emitter Shape Sphere component
 ms.prod: gaming
 ---
 
-# Emitter Shape Sphere component
+# Particle Documentation - Emitter Shape Sphere component
 
 ```json
 "minecraft:emitter_shape_sphere": {

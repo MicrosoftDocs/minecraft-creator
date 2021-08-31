@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Emitter Lifetime Expression component
+title: Particle Documentation - Emitter Lifetime Expression component
 ms.prod: gaming
 ---
 
-# Emitter Lifetime Expression component
+# Particle Documentation - Emitter Lifetime Expression component
 
 ```json
 "minecraft:emitter_lifetime_expression": {

@@ -1,18 +1,18 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Particle Lifetime Events component
+title: Particle Documentation - Particle Lifetime Events component
 ms.prod: gaming
 ---
 
-# Particle Lifetime Events component
+# Particle Documentation - Particle Lifetime Events component
 
 ```json
 "minecraft:particle_lifetime_events": {
       // all events use the event names in the event section
       // all events can be either an array or a string
       "creation_event": [<string>, ...] // fires when the particle is created
-      "creation_event": <string> 
+      "creation_event": <string>
       "expiration_event": [<string>, ...] // fires when the particle expires (does not wait for particles to expire too)
       "expiration_event": <string>,
 

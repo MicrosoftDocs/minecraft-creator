@@ -81,7 +81,7 @@ Biomes are read from JSON files in the biomes subfolders of behavior packs. Load
 
 ### Schema
 
-```C
+```json
   {
       object "minecraft:climate"[0,7] : opt // Describes temperature, humidity, precipitation, etc.  Biomes without this component will have default values.
       {

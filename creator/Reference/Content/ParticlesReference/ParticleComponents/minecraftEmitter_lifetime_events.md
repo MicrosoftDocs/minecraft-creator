@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Emitter Lifetime Events component
+title: Particle Documentation - Emitter Lifetime Events component
 ms.prod: gaming
 ---
 
-# Emitter Lifetime Events component
+# Particle Documentation - Emitter Lifetime Events component
 
 ```json
 "minecraft:emitter_lifetime_events": {
@@ -30,7 +30,7 @@ ms.prod: gaming
     // travel_distance_events
     "travel_distance_events: {
         // a series of distances, e.g. 0.0 or 1.0, that trigger the event
-        // these get fired when the emitter has moved by the specified input 
+        // these get fired when the emitter has moved by the specified input
 		    // distance, e.g. one line might be:
         // "0.4": "event"
         "distance": [ <string>, ... ]

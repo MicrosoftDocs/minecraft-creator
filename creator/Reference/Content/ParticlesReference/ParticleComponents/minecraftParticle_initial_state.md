@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Particle Initial State component
+title: Particle Documentation - Particle Initial State component
 ms.prod: gaming
 ---
 
-# Particle Initial State component
+# Particle Documentation - Particle Initial State component
 
 ```json
 "minecraft:particle_initial_spin": {

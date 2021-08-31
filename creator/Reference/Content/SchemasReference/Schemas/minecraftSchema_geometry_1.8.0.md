@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: geometry:1.8.0 Schema
+title: Schema Documentation - geometry:1.8.0
 ms.prod: gaming
 ---
 
-## geometry:1.8.0 Schema
+# Schema Documentation - geometry:1.8.0 Schema
 
 This schema corresponds to the *.geo.json files in the "models/entity" folder of the resource pack.
 

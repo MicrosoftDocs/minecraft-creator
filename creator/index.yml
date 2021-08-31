@@ -153,9 +153,25 @@ conceptualContent:
           - url: Reference/Content/Recipereference/index.yml
             itemType: reference
             text: Recipe JSON Documentation
+          - url: Reference/Content/particlesreference/index.yml
+            itemType: reference
+            text: Particle JSON Documentation
           - url: Reference/Content/volumereference/index.yml
             itemType: reference
             text: Volume JSON Documentation
+      # card
+      - title: Common Schema Documentation
+        summary: "See how Schemas are used to validate JSON files in Minecraft: Bedrock Edition "
+        links:
+          - url: Reference/Content/schemeasreference/index.yml
+            itemType: reference
+            text: Schemas Documentation
+          - url: Reference/Content/BiomeReference/Examples/BiomeOverview.md
+            itemType: overview
+            text: Biome Overview
+          - url: Reference/Content/FogsReference/Examples/FogsIntroduction.md
+            itemType: overview
+            text: Introduction to Fogs
 
 # additionalContent section (optional)
 # Card with summary style

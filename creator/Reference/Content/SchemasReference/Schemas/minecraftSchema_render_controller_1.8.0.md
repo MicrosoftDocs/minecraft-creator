@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: render_controller Schema
+title: Schema Documentation - render_controller
 ms.prod: gaming
 ---
 
-## render_controller Schema
+# Schema Documentation - render_controller
 
 This schema corresponds to the *.render_controllers.json files in the "render_controllers" folder of the resource pack.
 
