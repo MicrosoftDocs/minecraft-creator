@@ -35,3 +35,6 @@
   - name: Schema Documentation
     tocHref: /creator/reference/content/schemasreference/
     topicHref: /creator/reference/content/schemasreference/index
+  - name: Particle Documentation
+    tocHref: /creator/reference/content/particlesreference/
+    topicHref: /creator/reference/content/particlesreference/index
