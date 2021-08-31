@@ -1,9 +1,9 @@
 ### YamlMime:Hub
 
-title: Minecraft Creator Portal Documentation # < 60 chars
+title: "Minecraft: Bedrock Edition Creator Documentation" # < 60 chars
 summary: "Learn how to create and design unique experiences with Add-Ons, discover the latest features and develop your skills as a creator in Minecraft: Bedrock Edition."
 metadata:
-  title: Minecraft Creator Portal Documentation # Required; page title shown in search results < 60 chars
+  title: "Minecraft: Bedrock Edition Creator Documentation" # Required; page title shown in search results < 60 chars
   description: "Learn how to create and design unique experiences with Add-Ons, discover the latest features and develop your skills as a creator in Minecraft: Bedrock Edition." # < 160 chars
   service: service
   ms.service: service # Required; service per approved list.
@@ -36,13 +36,13 @@ highlightedContent:
 # productDirectory section (optional)
 productDirectory:
   title: Building Custom Content  # < 60 chars (optional)
-  summary: Whether you are creating first Add-On or your one-hundredth, there is content for all types of Creators to help you on your journey! # < 160 chars (optional)
+  summary: Whether you are creating first Add-On or your one-hundredth, there is content for all types of creators to help you on your journey! # < 160 chars (optional)
   items:
     # Card
     - title: Getting Started with Add-On Development
       # imageSrc should be square in ratio with no whitespace
       imageSrc: images/Add-Resource-Pack.png
-      summary: Learn how to get started with building Add-Ons in Minecraft:Bedrock Edition
+      summary: Working with Add-Ons in Minecraft:Bedrock Edition is easy! Learn how to get started
       url: Documents/GettingStarted.md
     # Card
     - title: JSON Reference Documentation
@@ -51,7 +51,7 @@ productDirectory:
       url: Reference/index.yml
     # Card
     - title: Getting Started with Minecraft Entity Wizard
-      imageSrc: images/ResourcePack64.png
+      imageSrc: images/Firework.png
       summary: Rapidly design, build and deploy a brand new Entity with the new Minecraft Entity Wizard Tool
       url: Documents/MinecraftEntityWizard.md
 
@@ -61,11 +61,11 @@ conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   sections:
     - title: Discover what you can Create # < 60 chars (optional)
-      summary: "Building new Add-Ons or want to learning about new Features? The Creator Portal provides a collection of written content to assist Creators." # < 160 chars (optional)
+      summary: "Building new Add-Ons or want to learning about new Features? The Creator Documentation provides a collection of written content to assist creators." # < 160 chars (optional)
       items:
         # card
         - title: Add-On Pack Tutorials
-          summary: "Learn how to develop Add-Ons and Custom Content by following along with a tutorial."
+          summary: "Learn how Add-Ons are used to bring custom content into Minecraft"
           links:
             - url: Documents/ResourcePack.md
               itemType: get-started
@@ -76,14 +76,8 @@ conceptualContent:
             - url: Documents/CustomBlock.md
               itemType: how-to-guide
               text: How to add a Custom Block
-            - url: Documents/CreateNPCs.md
-              itemType: tutorial
-              text: Create a Custom NPC
-            - url: Documents/NPCDialogue.md
-              itemType: tutorial
-              text: NPC Dialogue Command
         # card
-        - title: Working with Commands
+        - title: Build a "Complete the Monument" map with Commands
           summary: "Commands are a powerful way to add logic into your experiences."
           links:
             - url: Documents/CommandsIntroduction.md
@@ -99,8 +93,18 @@ conceptualContent:
               itemType: reference
               text: Popular Commands
         # card
+        - title: Adding NPCs
+          summary: "Populate your world with interactive characters to create unique narrative experiences."
+          links:
+            - url: Documents/CreateNPCs.md
+              itemType: tutorial
+              text: Create a Custom NPC
+            - url: Documents/NPCDialogue.md
+              itemType: tutorial
+              text: NPC Dialogue Command
+        # card
         - title: Loot and Trading Tables
-          summary: "Discover how Tables allow for Creators to add items to the world in a wide variety of ways."
+          summary: "Discover how Tables allow creators to add items to the world in a wide variety of ways."
           links:
           - url: Documents/IntroductionToLootTables.md
             itemType: get-started
@@ -109,8 +113,8 @@ conceptualContent:
             itemType: overview
             text: Loot and Trade Table Functions
     # Test Section
-    - title: Reference and Tools  # < 60 chars (optional)
-      summary: "Learn how content works with Reference documentation and how Tools can empower your workflow." # < 160 chars (optional)
+    - title: References  # < 60 chars (optional)
+      summary: "Learn how content works with Reference documentation and how GameTest can empower your workflow." # < 160 chars (optional)
       items:
       # card
       - title: Using GameTest
@@ -172,24 +176,3 @@ conceptualContent:
           - url: Reference/Content/FogsReference/Examples/FogsIntroduction.md
             itemType: overview
             text: Introduction to Fogs
-
-# additionalContent section (optional)
-# Card with summary style
-additionalContent:
-  # Supports up to 4 sections
-  sections:
-    - title: Contribute # < 60 chars (optional)
-      summary: Something missing? Want to share your knowledge with the community? The Creator Portal is now open-sourced! Find out how to contribute below. # < 160 chars (optional)
-      items:
-        # Card
-        - title: Contributing to Minecraft Bedrock Documentation
-          summary: Learn how to contribute to the Creator Portal
-          url: Documents/ContributorGuide.md
-        # Card
-        - title: Contributor Style Guide
-          summary: Learn more about how to style and tone your content for a wide audience
-          url: Documents/StyleGuide.md
-        # Card
-        - title: Creator Portal Github Repo
-          summary: View the public repository
-          url: https://github.com/MicrosoftDocs/minecraft-creator
