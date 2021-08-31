@@ -11,6 +11,7 @@ description: Contents of the mojang-minecraft.BeforeExplosionEventSignal class.
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
 
+Manages callbacks that are connected to before an explosion occurs.
 
 
 ## Methods
@@ -22,6 +23,7 @@ description: Contents of the mojang-minecraft.BeforeExplosionEventSignal class.
 subscribe(callback: (arg: BeforeExplosionEvent) => undefined): (arg: BeforeExplosionEvent) => undefined
 `
 
+Adds a callback that will be called when before an explosion occurs. The callback can optionally change or cancel explosion behavior.
 #### Arguments
 | Parameter | Type | Default Value | Description |
 | :--- | :--- | :--- | :---: |
@@ -35,6 +37,7 @@ Returns (arg: BeforeExplosionEvent) => undefined
 unsubscribe(callback: (arg: BeforeExplosionEvent) => undefined): void
 `
 
+Removes a callback from being called from before when an explosion would occur.
 #### Arguments
 | Parameter | Type | Default Value | Description |
 | :--- | :--- | :--- | :---: |

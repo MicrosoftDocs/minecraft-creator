@@ -55,6 +55,7 @@ Type: [*Entity*](Entity.md)
 new ExplosionOptions()
 `
 
+Creates a new instance of the ExplosionOptions object, for use in the [*mojang-minecraft.Dimension.createExplosion*](../mojang-minecraft/Dimension.md#createexplosion) method.
 
 Returns [*ExplosionOptions*](ExplosionOptions.md)
 

@@ -11,7 +11,7 @@ description: Contents of the mojang-minecraft.Entity class.
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
 
-Represents the state of an entity (a mob, the player, or other moving objects like Minecarts) in the world.
+Represents the state of an entity (a mob, the player, or other moving objects like minecarts) in the world.
 
 ## Properties
 ### **id**
@@ -88,9 +88,7 @@ const villagerId = "minecraft:villager_v2<minecraft:ageable_grow_up>";
 const villagerLoc = new BlockLocation(1, 2, 1);
 const villager = test.spawn(villagerId, villagerLoc);
 const duration = 20;
-
-villager.addEffect(Effects.poison, duration, 1);
-
+villager.addEffect(MinecraftEffectTypes.poison, duration, 1);
 ```
 ### **getComponent**
 `
