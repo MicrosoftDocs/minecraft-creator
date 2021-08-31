@@ -54,12 +54,14 @@ landingContent:
           - text: Render Controllers
             url: Content/animationsreference/Examples/AnimationRenderController.md
   # Card (comment to space cards)
-  - title: Biome
+  - title: Biome and Fogs
     linkLists:
       - linkListType: overview
         links:
            - text: Biome overview
              url: Content/biomereference/Examples/Biomeoverview.md
+           - text: Introduction to Fogs
+             url: Content/FogsReference/Examples/FogsIntroduction.md
   # Card (comment to space cards)
   - title: Blocks
     linkLists:
@@ -122,13 +124,6 @@ landingContent:
           - text: Feature List
             url: Content/featuresreference/Examples/FeatureList.md
   # Card (comment to space cards)
-  - title: Fogs
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Introduction to Fogs
-            url: Content/FogsReference/Examples/FogsIntroduction.md
-  # Card (comment to space cards)
   - title: Items
     linkLists:
       - linkListType: reference
@@ -165,6 +160,15 @@ landingContent:
             url: Content/recipereference/Examples/RecipeDefinitions/minecraftRecipe_Shapeless.md
           - text: Potion Brewing Recipe
             url: Content/recipereference/Examples/RecipeDefinitions/minecraftRecipe_PotionBrewing.md
+  # Card (optional)
+  - title: Schemas
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Schema Documentation Homepage
+            url: Content/schemasreference/index.yml
+          - text: Schema List
+            url: Content/schemasreference/schemas/TOC.yml
   # Card (comment to space cards)
   - title: Texture Sets
     linkLists:

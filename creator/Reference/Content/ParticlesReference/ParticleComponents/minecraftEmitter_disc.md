@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Emitter Disc component
+title: Particle Documentation - Emitter Disc component
 ms.prod: gaming
 ---
 
-# Emitter Disc component
+# Particle Documentation - Emitter Disc component
 
 ```json
 "minecraft:emitter_shape_disc": {

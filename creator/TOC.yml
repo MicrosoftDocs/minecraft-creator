@@ -52,6 +52,30 @@
         href: Reference/index.yml
       - name: Behavior Pack
         items:
+        - name: Addons JSON
+          items:
+          - name: Addons Documentation Homepage
+            href: Reference/Content/addonsreference/index.yml
+          - name: Addon Content
+            href: Reference/Content/AddonsReference/Examples/TOC.yml
+        - name: Animation JSON
+          items:
+          - name: Animation Documentation Homepage
+            href: Reference/Content/animationsreference/index.yml
+          - name: Animation References
+            href: Reference/Content/animationsreference/Examples/TOC.yml
+        - name: Biomes
+          href: Reference/Content/biomereference/Examples/BiomeOverview.md
+        - name: Block JSON
+          items:
+          - name: Block Documentation Homepage
+            href: Reference/Content/blockreference/index.yml
+          - name: Block Components
+            href: Reference/Content/blockreference/Examples/BlockComponents/TOC.yml
+          - name: Block Triggers
+            href: Reference/Content/blockreference/Examples/BlockTriggers/TOC.yml
+          - name: Block Event Responses
+            href: Reference/Content/blockreference/Examples/BlockEvents/TOC.yml
         - name: Entity JSON
           items:
           - name: Entity Documentation Homepage
@@ -72,40 +96,6 @@
             href: Reference/Content/entityreference/Examples/EntityEvents/TOC.yml
           - name: ID Lists
             href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/IDLists.md
-        - name: Block JSON
-          items:
-          - name: Block Documentation Homepage
-            href: Reference/Content/blockreference/index.yml
-          - name: Block Components
-            href: Reference/Content/blockreference/Examples/BlockComponents/TOC.yml
-          - name: Block Triggers
-            href: Reference/Content/blockreference/Examples/BlockTriggers/TOC.yml
-          - name: Block Event Responses
-            href: Reference/Content/blockreference/Examples/BlockEvents/TOC.yml
-        - name: Item JSON
-          items:
-          - name: Item Documentation Homepage
-            href: Reference/Content/itemreference/index.yml
-          - name: Item Components
-            href: Reference/Content/itemreference/Examples/ItemComponents/TOC.yml
-        - name: Recipe JSON
-          items:
-          - name: Recipe Documentation Homepage
-            href: Reference/Content/recipereference/index.yml
-          - name: Recipe Definitions
-            href: Reference/Content/recipereference/Examples/RecipeDefinitions/TOC.yml
-        - name: Volume JSON
-          items:
-          - name: Volume Documentation Homepage
-            href: Reference/Content/volumereference/index.yml
-          - name: Volume Components
-            href: Reference/Content/volumereference/Examples/VolumeComponents/TOC.yml
-          - name: Volume Definitions
-            href: Reference/Content/volumereference/Examples/VolumeDefinitions/VolumeDefinitionProperties.md
-        - name: Fog JSON
-          items:
-          - name: Introduction to Fogs
-            href: Reference/Content/fogsreference/Examples/FogsIntroduction.md
         - name: Feature JSON
           items:
           - name: Feature Documentation Homepage
@@ -114,26 +104,52 @@
             href: Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md
           - name: Feature List
             href: Reference/Content/featuresreference/Examples/Features/TOC.yml
-        - name: Addons JSON
+        - name: Fog JSON
           items:
-          - name: Addons Documentation Homepage
-            href: Reference/Content/addonsreference/index.yml
-          - name: Addon Content
-            href: Reference/Content/AddonsReference/Examples/TOC.yml
-        - name: Animation JSON
+          - name: Introduction to Fogs
+            href: Reference/Content/fogsreference/Examples/FogsIntroduction.md
+        - name: Item JSON
           items:
-          - name: Animation Documentation Homepage
-            href: Reference/Content/animationsreference/index.yml
-          - name: Animation References
-            href: Reference/Content/animationsreference/Examples/TOC.yml
+          - name: Item Documentation Homepage
+            href: Reference/Content/itemreference/index.yml
+          - name: Item Components
+            href: Reference/Content/itemreference/Examples/ItemComponents/TOC.yml
+        - name: Particle JSON
+          items:
+          - name: Particle Documentation Homepage
+            href: Reference/Content/particlesreference/index.yml
+          - name: Introduction to Particles
+            href: Reference/Content/ParticlesReference/ParticlesIntroduction.md
+          - name: Particle Components
+            href: Reference/Content/ParticlesReference/ParticleComponents/TOC.yml
+          - name: Particle Examples
+            href: Reference/Content/ParticlesReference/Examples/TOC.yml
+        - name: Recipe JSON
+          items:
+          - name: Recipe Documentation Homepage
+            href: Reference/Content/recipereference/index.yml
+          - name: Recipe Definitions
+            href: Reference/Content/recipereference/Examples/RecipeDefinitions/TOC.yml
+        - name: Schemas
+          items:
+          - name: Schema Documentation Homepage
+            href: Reference/Content/schemasreference/index.yml
+          - name: Schema List
+            href: Reference/Content/schemasreference/schemas/TOC.yml
+        - name: Volume JSON
+          items:
+          - name: Volume Documentation Homepage
+            href: Reference/Content/volumereference/index.yml
+          - name: Volume Components
+            href: Reference/Content/volumereference/Examples/VolumeComponents/TOC.yml
+          - name: Volume Definitions
+            href: Reference/Content/volumereference/Examples/VolumeDefinitions/VolumeDefinitionProperties.md
         - name: Texture Set JSON
           items:
           - name: Introduction to Texture Sets
             href: Reference/Content/texturesetsreference/texturesetsconcepts/texturesetsintroduction.md
         - name: Spawn Rules
           href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/DataDrivenSpawning.md
-        - name: Biomes
-          href: Reference/Content/biomereference/Examples/BiomeOverview.md
       - name: Resource Pack
         items:
         - name: Client Entity JSON

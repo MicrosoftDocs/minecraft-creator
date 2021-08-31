@@ -1,17 +1,17 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Particle Motion Parametric component
+title: Particle Documentation - Particle Motion Parametric component
 ms.prod: gaming
 ---
 
-# Particle Motion Parametric component
+# Particle Documentation - Particle Motion Parametric component
 
 ```json
 "minecraft:particle_motion_parametric": {
-    // directly set the position relative to the emitter. 
+    // directly set the position relative to the emitter.
     // E.g. a spiral might be:
-    // "relative_position": ["Math.cos(Params.LifeTime)", 1.0, 
+    // "relative_position": ["Math.cos(Params.LifeTime)", 1.0,
     //                       "Math.sin(Params.Lifetime)"]
     // defaults to [0, 0, 0]
     // evaluated every frame

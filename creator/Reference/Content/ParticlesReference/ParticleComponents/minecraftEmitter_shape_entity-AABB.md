@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Emitter Shape Entity-AABB component
+title: Particle Documentation - Emitter Shape Entity-AABB component
 ms.prod: gaming
 ---
 
-# Emitter Shape Entity-AABB component
+# Particle Documentation - Emitter Shape Entity-AABB component
 
 ```json
 
@@ -17,7 +17,7 @@ ms.prod: gaming
     // defaults to outwards
     "direction": "inwards" // particle direction towards center of sphere
     "direction": "outwards" // particle direction away from center of sphere
-    "direction": [<float/molang>, <float/molang>, <float/molang>] <default:[0, 0, 0]    
+    "direction": [<float/molang>, <float/molang>, <float/molang>] <default:[0, 0, 0]
 }
 
 ```

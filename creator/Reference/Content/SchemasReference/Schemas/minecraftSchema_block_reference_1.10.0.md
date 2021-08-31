@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: block_reference Schema
+title: Schema Documentation - block_reference
 ms.prod: gaming
 ---
 
-## block_reference Schema
+# Schema Documentation - block_reference
 
 ```json
 block_reference:1.10.0:{

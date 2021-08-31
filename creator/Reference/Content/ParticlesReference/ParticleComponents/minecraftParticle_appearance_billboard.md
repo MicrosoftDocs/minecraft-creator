@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Particle Appearance Billboard component
+title: Particle Documentation - Particle Appearance Billboard component
 ms.prod: gaming
 ---
 
-# Particle Appearance Billboard component
+# Particle Documentation - Particle Appearance Billboard component
 
 ```json
 "minecraft:particle_appearance_billboard": {
@@ -24,7 +24,7 @@ ms.prod: gaming
 	// emitter_transform_xy, // orient the particles to match the emitter's transform (the billboard plane will match the transform's xy plane).
 	// emitter_transform_xz, // orient the particles to match the emitter's transform (the billboard plane will match the transform's xz plane).
 	// emitter_transform_yz, // orient the particles to match the emitter's transform (the billboard plane will match the transform's yz plane).
-	
+
     //"face_camera_mode": <string>
 
     // Specifies how to calculate the direction of a particle, this will be used by facing modes that require a direction as input (for instance: lookat_direction and direction)
@@ -38,7 +38,7 @@ ms.prod: gaming
         "custom_direction": [ <float/molang>, <float/molang>, <float/molang> ], // only used in "custom_direction" mode. Specifies the direction vector
     }
 
-    // specifies the UVs for the particle.  
+    // specifies the UVs for the particle.
     "uv": {
         // specifies the assumed texture width/height
         // defaults to 1
@@ -47,14 +47,14 @@ ms.prod: gaming
         "texturewidth": <int>,
         "textureheight": <int>,
 
-        // Assuming the specified texture width and height, use these 
-        // uv coordinates.  
+        // Assuming the specified texture width and height, use these
+        // uv coordinates.
         // evaluated every frame
         "uv": [<float/molang>, <float/molang>],
         "uv_size": [<float/molang>, <float/molang>],
 
         // alternate way via specifying a flipbook animation
-        // a flipbook animation uses pieces of the texture to animate, by stepping over time from one 
+        // a flipbook animation uses pieces of the texture to animate, by stepping over time from one
         // "frame" to another
         "flipbook": {
             "base_UV": [ <float/molang>, <float/molang> ], // upper-left corner of starting UV patch

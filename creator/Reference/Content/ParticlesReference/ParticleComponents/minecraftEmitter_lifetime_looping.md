@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Emitter Lifetime Looping component
+title: Particle Documentation - Emitter Lifetime Looping component
 ms.prod: gaming
 ---
 
-# Emitter Lifetime Looping component
+# Particle Documentation - Emitter Lifetime Looping component
 
 ```json
 "minecraft:emitter_lifetime_looping": {

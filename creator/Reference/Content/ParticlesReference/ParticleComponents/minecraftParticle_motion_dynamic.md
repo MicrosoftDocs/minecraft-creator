@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Particle Motion Dynamic component
+title: Particle Documentation - Particle Motion Dynamic component
 ms.prod: gaming
 ---
 
-# Particle Motion Dynamic component
+# Particle Documentation - Particle Motion Dynamic component
 
 ```json
 "minecraft:particle_motion_dynamic": {
@@ -32,7 +32,7 @@ ms.prod: gaming
     // drag applied to retard rotation
     // equation is rotation_acceleration += -rotation_rate*rotation_drag_coefficient
     // useful to slow a rotation, or to limit the rotation acceleration
-    // Think of a disc that speeds up (acceleration) 
+    // Think of a disc that speeds up (acceleration)
     // but reaches a terminal speed (drag)
     // Another use is if you have a particle growing in size, having
     // the rotation slow down due to drag can add "weight" to the particle's

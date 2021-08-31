@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Particle Initial Speed component
+title: Particle Documentation - Particle Initial Speed component
 ms.prod: gaming
 ---
 
-# Particle Initial Speed component
+# Particle Documentation - Particle Initial Speed component
 
 ```json
 

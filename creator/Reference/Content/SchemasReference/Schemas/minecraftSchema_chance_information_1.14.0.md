@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: chance_information Schema
+title: Schema Documentation - chance_information
 ms.prod: gaming
 ---
 
-## chance_information Schema
+# Schema Documentation - chance_information
 
 ```json
 chance_information:1.14.0:{

@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Emitter Shape Custom component
+title: Particle Documentation - Emitter Shape Custom component
 ms.prod: gaming
 ---
 
-# Emitter Shape Custom component
+# Particle Documentation - Emitter Shape Custom component
 
 ```json
 "minecraft:emitter_shape_custom": {
@@ -15,6 +15,6 @@ ms.prod: gaming
 
     // specifies the direciton for the particle
     // evaluated once per particle emitted
-    "direction": [<float/molang>, <float/molang>, <float/molang>] <default:[0, 0, 0]    
+    "direction": [<float/molang>, <float/molang>, <float/molang>] <default:[0, 0, 0]
 }
 ```
