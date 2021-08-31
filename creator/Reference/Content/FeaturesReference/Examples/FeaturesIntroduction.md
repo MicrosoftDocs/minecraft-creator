@@ -53,7 +53,7 @@ Features are read from JSON files in the "features" subfolder of behavior packs.
 | [minecraft:geode_feature](Features\minecraftGeode_feature.md)| Generates a rock formation to simulate a geode.|
 | [minecraft:ore_feature](Features\minecraftOre_feature.md)| Places a vein of blocks to simulate ore deposits.|
 | [minecraft:rect_layout](Features\minecraftRect_layout.md)| Scans the surface of a Chunk, calling place() on the surface of each block column.|
-| [minecraft:scan_surface](minecraftScan_surface.md)| Scans the surface of a Chunk, calling place() on the surface of each block column.|
+| [minecraft:scan_surface](Features\minecraftScan_surface.md)| Scans the surface of a Chunk, calling place() on the surface of each block column.|
 | [minecraft:scatter_feature](Features\minecraftScatter_feature.md)| Scatters a feature throughout a chunk.|
 | [minecraft:search_feature](Features\minecraftSearch_feature.md)| Sweeps a volume searching for a valid placement location for its referenced feature.|
 | [minecraft:single_block_feature](Features\minecraftSingle_block_feature.md)| Places a single block in the world.|
