@@ -1,7 +1,7 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Introduction to resource packs
+title: Introduction to Resource Packs
 ms.prod: gaming
 description: A tutorial that is an introduction to Resource Packs and how to add a custom texture to an in-game block.
 ---
