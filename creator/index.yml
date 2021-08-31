@@ -104,7 +104,7 @@ conceptualContent:
               text: NPC Dialogue Command
         # card
         - title: Loot and Trading Tables
-          summary: "Discover how Tables allow for creators to add items to the world in a wide variety of ways."
+          summary: "Discover how Tables allow creators to add items to the world in a wide variety of ways."
           links:
           - url: Documents/IntroductionToLootTables.md
             itemType: get-started
