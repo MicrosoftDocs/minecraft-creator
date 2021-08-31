@@ -24,7 +24,7 @@ In this tutorial, you will learn the following:
 
 It’s recommended that the following be completed before beginning this tutorial:
 
-- [Getting Started with Add-on Development](GettingStarted.md)
+- [Getting Started with Add-On Development](GettingStarted.md)
 - Download the [Vanilla resource pack](https://aka.ms/resourcepacktemplate)
 
 ## Building the Resource Pack
@@ -143,11 +143,11 @@ Since the custom texture is named dirt.png, the texture will be used on every si
 1. Launch Minecraft.
 1. When Minecraft has launched and reached the main menu, select **Play**.
 1. Select **Create a new world**.
-1. Under **Settings**, scroll down to the **Add-on** section.
+1. Under **Settings**, scroll down to the **Add-On** section.
 1. Click on **resource packs** to see all available packs.
 1. Under all of the packs, select **HelloWorldRP** to add the pack to the world.
 1. **Launch** your world.
-![Image of Minecraft's Settings page with the Add-on menu selected for resource packs. There is a red rectangle outlining the HelloWorldRP in the menu](Media/ResourcePack/addonsettings.png)
+![Image of Minecraft's Settings page with the Add-On menu selected for resource packs. There is a red rectangle outlining the HelloWorldRP in the menu](Media/ResourcePack/addonsettings.png)
 
 ### What's Next?
 

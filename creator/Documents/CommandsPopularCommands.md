@@ -3,7 +3,7 @@ author: neonerz
 ms.author: v-jeffreykim
 title: Popular Commands
 ms.prod: gaming
-description: A guide covering many of the most common commands that are used within Minecraft:Bedrock Edition
+description: "A guide covering many of the most common commands that are used within Minecraft: Bedrock Edition"
 ---
 
 # Popular Commands

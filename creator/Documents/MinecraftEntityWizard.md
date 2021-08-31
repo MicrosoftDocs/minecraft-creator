@@ -33,7 +33,7 @@ In this tutorial, you will learn the following:
 It’s recommended that the following be completed before beginning this tutorial.
 
 - Either have [Blockbench](https://blockbench.net) installed or access to [Blockbench web app](https://web.blockbench.net)
-- [Getting Started with Add-on Development](GettingStarted.md)
+- [Getting Started with Add-On Development](GettingStarted.md)
 
 ## Installation
 
