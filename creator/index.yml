@@ -36,7 +36,7 @@ highlightedContent:
 # productDirectory section (optional)
 productDirectory:
   title: Building Custom Content  # < 60 chars (optional)
-  summary: Whether you are creating first Add-On or your one-hundredth, there is content for all types of Creators to help you on your journey! # < 160 chars (optional)
+  summary: Whether you are creating first Add-On or your one-hundredth, there is content for all types of creators to help you on your journey! # < 160 chars (optional)
   items:
     # Card
     - title: Getting Started with Add-On Development
@@ -61,7 +61,7 @@ conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   sections:
     - title: Discover what you can Create # < 60 chars (optional)
-      summary: "Building new Add-Ons or want to learning about new Features? The Creator Portal provides a collection of written content to assist Creators." # < 160 chars (optional)
+      summary: "Building new Add-Ons or want to learning about new Features? The Creator Documentation provides a collection of written content to assist creators." # < 160 chars (optional)
       items:
         # card
         - title: Add-On Pack Tutorials
@@ -104,7 +104,7 @@ conceptualContent:
               text: NPC Dialogue Command
         # card
         - title: Loot and Trading Tables
-          summary: "Discover how Tables allow for Creators to add items to the world in a wide variety of ways."
+          summary: "Discover how Tables allow for creators to add items to the world in a wide variety of ways."
           links:
           - url: Documents/IntroductionToLootTables.md
             itemType: get-started
