@@ -11,10 +11,10 @@
  - name: geometry:1.8.0
    href: minecraftSchema_geometry_1.8.0.md
  - name: geometry:1.12.0
-   href: minecraftSchema_geometry:1.12.0.md
+   href: minecraftSchema_geometry_1.12.0.md
  - name: geometry:1.14.0
-   href: minecraftSchema_geometry:1.14.0.md
+   href: minecraftSchema_geometry_1.14.0.md
  - name: geometry:1.16.0
-   href: minecraftSchema_geometry:1.16.0.md
+   href: minecraftSchema_geometry_1.16.0.md
  - name: render_controller
    href: minecraftSchema_render_controller_1.8.0.md

@@ -165,9 +165,9 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - name: Schema Documentation Homepage
+          - text: Schema Documentation Homepage
             url: Content/schemasreference/index.yml
-          - name: Schema List
+          - text: Schema List
             url: Content/schemasreference/schemas/TOC.yml
   # Card (comment to space cards)
   - title: Texture Sets
