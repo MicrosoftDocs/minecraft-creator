@@ -16,9 +16,9 @@ Represents a shapeless crafting recipe.
 
 |Name |Type |Description |
 |:-----------|:-----------|:-----------|
-|ingredients| array of item names|  items used as input (without a shape) for the recipe. |
+|ingredients| array of item names|  Items used as input (without a shape) for the recipe. |
 |priority| Integer| Item used as output for the furnace recipe. |
-|result| array of item names| these items are the result. |
+|result| array of item names| These items are the result. |
 
 ## Shapeless Recipe Example
 

@@ -13,8 +13,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|sensor_radius |*not set* | Decimal  |radius from entity in order to check for when block is broken|
-|on_break |*not set* | List| blocks that will trigger the component when broken and what event will trigger.|
+|sensor_radius |*not set* | Decimal  |Radius from entity in order to check for when block is broken|
+|on_break |*not set* | List| Blocks that will trigger the component when broken and what event will trigger.|
 
 ### on_break
 
@@ -22,7 +22,7 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|block_list| *not set* | List| list of blocks that will trigger the senor.|
+|block_list| *not set* | List| List of blocks that will trigger the senor.|
 |on_block_broken|*not set* | String|  Event to run when a block breaks|
 
 ## Example
