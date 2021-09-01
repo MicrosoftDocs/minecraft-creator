@@ -196,7 +196,7 @@ This example scales the bone "head":
 
 Transformations in Animation are made up of three components; location in three dimensional space, rotation, and scale.
 
-Some key things to keep in mind on how Transforms work within Bedrock;
+Some key things to keep in mind on how Transforms work within Bedrock:
 
 - Order of operations: vertices are translated, rotated, then scaled.
 - Animation data is assumed to be hierarchical, and is applied to a bone by name matching the bone name in the animation data to the targeted geometry's skeleton.

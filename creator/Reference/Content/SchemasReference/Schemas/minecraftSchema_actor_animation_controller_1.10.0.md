@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Schema Documentation - actor_animation_controller
+title: "Schema Documentation - actor_animation_controller:1.10.0"
 ms.prod: gaming
 ---
 
-# Schema Documentation - actor_animation_controller
+# Schema Documentation - actor_animation_controller:1.10.0
 
 This schema corresponds to the *.animation_controllers.json files in the "animation_controllers" folder of the resource pack.
 

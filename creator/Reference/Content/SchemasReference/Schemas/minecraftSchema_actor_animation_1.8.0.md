@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Schema Documentation - actor_animation
+title: "Schema Documentation - actor_animation:1.8.0"
 ms.prod: gaming
 ---
 
-# Schema Documentation - actor_animation
+# Schema Documentation - actor_animation:1.8.0
 
 This schema corresponds to the *.animation.json files in the "animations" folder of the resource pack.
 
@@ -16,8 +16,8 @@ actor_animation:1.8.0:{
     {
         object "animation.<identifier>"
         {
-            bool "loop" : opt // should this animation stop, loop, or stay on the last frame when finished (true, false, "hold_on_last_frame"
-            string "loop"<"hold_on_last_frame"> : opt // should this animation stop, loop, or stay on the last frame when finished (true, false, "hold_on_last_frame"
+            bool "loop" : opt // should this animation stop, loop, or stay on the last frame when finished (true, false, "hold_on_last_frame")
+            string "loop"<"hold_on_last_frame"> : opt // should this animation stop, loop, or stay on the last frame when finished (true, false, "hold_on_last_frame")
             molang "start_delay" : opt // How long to wait in seconds before playing this animation.  Note that this expression is evaluated once before playing, and only re-evaluated if asked to play from the beginning again.  A looping animation should use 'loop_delay' if it wants a delay between loops.
             molang "loop_delay" : opt // How long to wait in seconds before looping this animation.  Note that this expression is evaluated after each loop and on looping animation only.
             molang "anim_time_update" : opt // how does time pass when playing the animation.  Defaults to "query.anim_time + query.delta_time" which means advance in seconds.

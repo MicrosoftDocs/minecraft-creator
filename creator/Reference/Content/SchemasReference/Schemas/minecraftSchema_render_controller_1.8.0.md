@@ -1,7 +1,7 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Schema Documentation - render_controller
+title: "Schema Documentation - render_controller"
 ms.prod: gaming
 ---
 

@@ -1,7 +1,7 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Schema Documentation - geometry:1.12.0
+title: "Schema Documentation - geometry:1.12.0"
 ms.prod: gaming
 ---
 
