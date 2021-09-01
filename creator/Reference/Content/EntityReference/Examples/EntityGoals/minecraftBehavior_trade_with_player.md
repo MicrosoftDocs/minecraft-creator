@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.trade_with_player
+title: Entity Documentation - minecraft:behavior.trade_with_player
 ms.prod: gaming
 ---
 
-# minecraft:behavior.trade_with_player
+# Entity Documentation - minecraft:behavior.trade_with_player
 
 `minecraft:behavior.trade_with_player` allows an entity to focus on a player that will initiate a trade.
 

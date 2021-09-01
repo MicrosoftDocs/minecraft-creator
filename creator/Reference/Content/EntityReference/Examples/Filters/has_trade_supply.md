@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: has_trade_supply
+title: Entity Documentation - has_trade_supply
 ms.prod: gaming
 ---
 
-# has_trade_supply
+# Entity Documentation - has_trade_supply
 
 Tests whether the target has any trade supply left. Will return false if the target cannot be traded with.
 

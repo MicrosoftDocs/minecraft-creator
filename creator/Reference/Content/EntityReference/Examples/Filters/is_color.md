@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_color
+title: Entity Documentation - is_color
 ms.prod: gaming
 ---
 
-# is_color
+# Entity Documentation - is_color
 
 Returns true if the subject entity is of the named color.
 

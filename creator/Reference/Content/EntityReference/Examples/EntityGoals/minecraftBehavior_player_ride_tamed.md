@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.player_ride_tamed
+title: Entity Documentation - minecraft:behavior.player_ride_tamed
 ms.prod: gaming
 ---
 
-# minecraft:behavior.player_ride_tamed
+# Entity Documentation - minecraft:behavior.player_ride_tamed
 
 `minecraft:behavior.player_ride_tamed` allows an entity to be rideable after being tamed by a player.
 

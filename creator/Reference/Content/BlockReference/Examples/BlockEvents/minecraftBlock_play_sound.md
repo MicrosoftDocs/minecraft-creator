@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: play_sound
+title: Block Documentation - play_sound
 ms.prod: gaming
 ---
 
-# play_sound
+# Block Documentation - play_sound
 
 `play_sound` is an Event Response that will play a sound effect relative to the target position.
 

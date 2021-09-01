@@ -72,10 +72,11 @@ Returns [*ItemStack*](ItemStack.md)
 #### Examples
 ##### ***getItem.js***
 ```javascript
+const rightInventoryComp = rightChestCart.getComponent("inventory");
+const rightChestContainer = rightInventoryComp.container;
 const itemStack = rightChestContainer.getItem(0);
 test.assert(itemStack.id === "apple", "Expected apple");
 test.assert(itemStack.amount === 10, "Expected 10 apples");
-
 ```
 ### **setItem**
 `
@@ -115,7 +116,6 @@ Returns *boolean*
 ##### ***swapItems.js***
 ```javascript
 rightChestContainer.swapItems(1, 0, leftChestContainer); // swap the cake and emerald
-
 ```
 ### **transferItem**
 `
@@ -139,6 +139,5 @@ Returns *boolean*
 ##### ***transferItem.js***
 ```javascript
 rightChestContainer.transferItem(0, 4, chestCartContainer); // transfer the apple from the right chest to a chest cart
-
 ```
 

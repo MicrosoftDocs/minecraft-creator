@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:movement.skip
+title: Entity Documentation - minecraft:movement.skip
 ms.prod: gaming
 ---
 
-# minecraft:movement.skip
+# Entity Documentation - minecraft:movement.skip
 
 `minecraft:movement.skip` causes the mob to hop as it moves.
 

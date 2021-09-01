@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: light_level
+title: Entity Documentation - light_level
 ms.prod: gaming
 ---
 
-# light_level
+# Entity Documentation - light_level
 
 Tests if the entity is outside of the specified light level range. The range is set between 0 and 16.
 

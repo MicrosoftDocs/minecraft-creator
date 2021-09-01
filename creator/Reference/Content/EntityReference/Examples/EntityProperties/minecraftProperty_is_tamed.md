@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:is_tamed
+title: Entity Documentation - minecraft:is_tamed
 ms.prod: gaming
 ---
 
-# minecraft:is_tamed
+# Entity Documentation -  minecraft:is_tamed
 
 `minecraft:is_tamed` sets that this entity is currently tamed.
 

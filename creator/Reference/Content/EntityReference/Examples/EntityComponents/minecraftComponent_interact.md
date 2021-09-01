@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:interact
+title: Entity Documentation - minecraft:interact
 ms.prod: gaming
 ---
 
-# minecraft:interact
+# Entity Documentation - minecraft:interact
 
 `minecraft:interact` defines interactions with this entity.
 

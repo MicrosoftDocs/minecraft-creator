@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:transformation
+title: Entity Documentation - minecraft:transformation
 ms.prod: gaming
 ---
 
-# minecraft:transformation
+# Entity Documentation - minecraft:transformation
 
 `minecraft:transformation` defines an entity's transformation from the current definition into another.
 

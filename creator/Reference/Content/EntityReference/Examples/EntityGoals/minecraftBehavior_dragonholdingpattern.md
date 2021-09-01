@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.dragonholdingpattern
+title: Entity Documentation - minecraft:behavior.dragonholdingpattern
 ms.prod: gaming
 ---
 
-# minecraft:behavior.dragonholdingpattern
+# Entity Documentation - minecraft:behavior.dragonholdingpattern
 
 `minecraft:behavior.dragonholdingpattern` allows an entity to fly around in a circle around the center podium located in `The End`.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:on_interact
+title: Block Documentation - minecraft:on_interact
 ms.prod: gaming
 ---
 
-# minecraft:on_interact
+# Block Documentation - minecraft:on_interact
 
 `minecraft:on_interact` is an Event Trigger for when an actor interacts with a block.
 

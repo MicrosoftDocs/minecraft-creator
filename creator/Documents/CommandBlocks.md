@@ -3,6 +3,7 @@ author: v-josjones
 ms.author: v-josjones
 title: Getting Started with Command Blocks
 ms.prod: gaming
+description: A tutorial that is an introduction to Command Blocks where you will learn how to access Command Blocks, how to create chains and how to design a gameplay loop with Command Blocks.
 ---
 # Getting Started with Command Blocks
 

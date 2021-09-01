@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_target
+title: Entity Documentation - is_target
 ms.prod: gaming
 ---
 
-# is_target
+# Entity Documentation - is_target
 
 Returns true if the subject entity is the target of the calling entity.
 

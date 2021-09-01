@@ -10,7 +10,7 @@ metadata:
   ms.topic: landing-page # Required
   author: v-josjones #Required; your GitHub user alias, with correct capitalization.
   ms.author: v-josjones #Required; microsoft alias of author; optional team alias.
-  ms.date: 07/20/2021 #Required; mm/dd/yyyy format.
+  ms.date: 07/29/2021 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -24,11 +24,11 @@ landingContent:
         links:
           - text: Recipe Definition List
             url: Examples/RecipeDefinitionList.md
-          - text: "Furnace Recipe"
+          - text: Furnace Recipe
             url: Examples/RecipeDefinitions/minecraftRecipe_Furnace.md
-          - text: "Shaped Recipe"
+          - text: Shaped Recipe
             url: Examples/RecipeDefinitions/minecraftRecipe_Shaped.md
-          - text: "Shapeless Recipe"
+          - text: Shapeless Recipe
             url: Examples/RecipeDefinitions/minecraftRecipe_Shapeless.md
-          - text: "Potion Brewing Recipe"
+          - text: Potion Brewing Recipe
             url: Examples/RecipeDefinitions/minecraftRecipe_PotionBrewing.md

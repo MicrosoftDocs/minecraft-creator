@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: moon_intensity
+title: Entity Documentation - moon_intensity
 ms.prod: gaming
 ---
 
-# moon_intensity
+# Entity Documentation - moon_intensity
 
 Compares the current moon intensity with a float value in the range of 0.0 and 1.0
 

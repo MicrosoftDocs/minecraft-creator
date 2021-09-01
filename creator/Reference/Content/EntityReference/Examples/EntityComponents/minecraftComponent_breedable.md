@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:breedable
+title: Entity Documentation - minecraft:breedable
 ms.prod: gaming
 ---
 
-# minecraft:breedable
+# Entity Documentation - minecraft:breedable
 
 `minecraft:breedable` allows an entity to establish a way to get into the `love` state used for breeding.
 

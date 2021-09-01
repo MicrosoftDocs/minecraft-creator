@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_visible
+title: Entity Documentation - is_visible
 ms.prod: gaming
 ---
 
-# is_visible
+# Entity Documentation - is_visible
 
 Returns true if the subject entity is visible.
 

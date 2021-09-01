@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:inside_block_notifier
+title: Entity Documentation - minecraft:inside_block_notifier
 ms.prod: gaming
 ---
 
-# minecraft:inside_block_notifier
+# Entity Documentation - minecraft:inside_block_notifier
 
 `minecraft:inside_block_notifier` verifies whether the entity is inside any of the listed blocks.
 

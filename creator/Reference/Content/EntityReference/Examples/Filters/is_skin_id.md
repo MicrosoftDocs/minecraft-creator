@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_skin_id
+title: Entity Documentation - is_skin_id
 ms.prod: gaming
 ---
 
-# is_skin_id
+# Entity Documentation - is_skin_id
 
 Returns true if the subject entity uses the skin id number provided.
 

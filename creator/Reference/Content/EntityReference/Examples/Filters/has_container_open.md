@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: has_container_open
+title: Entity Documentation - has_container_open
 ms.prod: gaming
 ---
 
-# has_container_open
+# Entity Documentation - has_container_open
 
 Returns true when the subject Player entity has opened a container.
 

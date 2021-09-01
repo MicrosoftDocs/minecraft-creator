@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_snow_covered
+title: Entity Documentation - is_snow_covered
 ms.prod: gaming
 ---
 
-# is_snow_covered
+# Entity Documentation - is_snow_covered
 
 Tests whether the subject is in an area covered by snow.
 

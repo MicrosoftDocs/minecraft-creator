@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:material_instances
+title: Block Documentation - minecraft:material_instances
 ms.prod: gaming
 ---
 
-# minecraft:material_instances
+# Block Documentation - minecraft:material_instances
 
 `minecraft:material_instances` is a `JSON Object` component that maps the face or the material_instance names in a geometry file to an actual material instance or a name to another already defined instance.
 
@@ -17,13 +17,14 @@ ms.prod: gaming
 
 ## Extra Parameters
 
-`minecraft:material_instances` can use the following to define the JSON object: 
+`minecraft:material_instances` can use the following to define the JSON object:
 
 |Name |Default Value |Type |Description |
 |:----|:----|:----|:----|
 |texture |*not set* |String |	Defines what texture the block should have. Can be any texture name defined in your resource pack folder (textures/terrain_texture.json |
 |render_method |opaque |String |Defines what render method the block should use. Can be opaque, alpha_test or blend.|
-
+|ambient_occlusion | true | Boolean |Sets the block faces to have smooth lighting. |
+|face_dimming | true | Boolean | Sets the block faces to be affected by light. |
 ## Example
 
 ```json

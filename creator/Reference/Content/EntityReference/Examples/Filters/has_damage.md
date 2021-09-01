@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: has_damage
+title: Entity Documentation - has_damage
 ms.prod: gaming
 ---
 
-# has_damage
+# Entity Documentation - has_damage
 
 Returns true when the subject entity receives the named damage type.
 

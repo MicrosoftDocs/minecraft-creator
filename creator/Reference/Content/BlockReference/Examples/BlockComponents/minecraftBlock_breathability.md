@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:breathability
+title: Block Documentation - minecraft:breathability
 ms.prod: gaming
 ---
 
-# minecraft:breathability
+# Block Documentation - minecraft:breathability
 
 `minecraft:breathability` is a component that sets the breathability of the block, and whether it's treated as a solid block or a block of air.
 

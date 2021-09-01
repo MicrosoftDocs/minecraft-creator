@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:push_through
+title: Entity Documentation - minecraft:push_through
 ms.prod: gaming
 ---
 
-# minecraft:push_through
+# Entity Documentation -  minecraft:push_through
 
 `minecraft:push_through` sets the distance through which the entity can push through.
 

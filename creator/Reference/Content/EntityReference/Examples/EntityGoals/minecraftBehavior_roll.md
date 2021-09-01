@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.roll
+title: Entity Documentation - minecraft:behavior.roll
 ms.prod: gaming
 ---
 
-# minecraft:behavior.roll
+# Entity Documentation - minecraft:behavior.roll
 
 `minecraft:behavior.roll` allows an entity roll forward.
 

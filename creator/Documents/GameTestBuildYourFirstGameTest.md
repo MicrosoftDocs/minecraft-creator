@@ -18,7 +18,7 @@ Building sets of GameTests requires building out your GameTests via a behavior P
 >GameTest Framework is still experimental. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.  Check the Minecraft Changelog for details on any changes to GameTest Framework.
 
 >[!IMPORTANT]
-Because GameTest Framework is adding and updating functionality frequently, we recommend using the latest Beta versions of Minecraft. See [Minecraft Betas](https://aka.ms/mcbeta) for more information. The syntax of this sample is intended to be compatible with the latest beta versions.
+>Because GameTest Framework is adding and updating functionality frequently, we recommend using the latest Beta versions of Minecraft. See [Minecraft Betas](https://aka.ms/mcbeta) for more information. The syntax of this sample is intended to be compatible with the latest beta versions.
 
 ### Requirements
 
@@ -207,7 +207,7 @@ function simpleMobTest(test) {
 Some things to observe in this test function:
 
 - You can use the `spawn` method to create new mobs in your test.
-- Coordinates used in APIs like spawn are relative to within your .MCStructure.
+- Coordinates used in APIs like spawn are relative to the structure block of your .MCStructure.
 - `assert` functions cause code execution to stop if the conditions described in the method are not true.  Here, this code asserts that a chicken entity is no longer in the structure (the `false` in the method assertEntityPresentInArea tells the function to assert that the entity is no longer there). If one is found within any of the blocks in the structure, the `assert` code will throw an error.  However, if no chicken is found, we make our way to the test.succeed line of code, and the test passes.
 
 The full JavaScript StarterTests.js file looks like:

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.flee_sun
+title: Entity Documentation - minecraft:behavior.flee_sun
 ms.prod: gaming
 ---
 
-# minecraft:behavior.flee_sun
+# Entity Documentation - minecraft:behavior.flee_sun
 
 `minecraft:behavior.flee_sun` will make the entity actively avoid the sunlight.
 

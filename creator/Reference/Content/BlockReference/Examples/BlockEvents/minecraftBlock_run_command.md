@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: run_command
+title: Block Documentation - run_command
 ms.prod: gaming
 ---
 
-# run_command
+# Block Documentation - run_command
 
 `run_command` is an Event Response that will trigger a slash command or a series of slash commands set in an array.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:shooter
+title: Item Documentation - minecraft:shooter
 ms.prod: gaming
 ---
 
-# minecraft:shooter
+# Item Documentation - minecraft:shooter
 
 `minecraft:shooter` sets the shooter item component.
 

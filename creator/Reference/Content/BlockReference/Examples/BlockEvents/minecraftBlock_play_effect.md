@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: play_effect
+title: Block Documentation - play_effect
 ms.prod: gaming
 ---
 
-# play_effect
+# Block Documentation - play_effect
 
 `play_effect` is an Event Response that will spawn a particle effect relative to the target position.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:throwable
+title: Item Documentation - minecraft:throwable
 ms.prod: gaming
 ---
 
-# minecraft:throwable
+# Item Documentation - minecraft:throwable
 
 `minecraft:throwable` sets the throwable item component.
 

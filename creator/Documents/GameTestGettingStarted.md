@@ -3,13 +3,14 @@ author: v-josjones
 ms.author: v-josjones
 title: Introduction to the GameTest Framework
 ms.prod: gaming
+description: A tutorial covering how to get started with GameTest by setting up your environment and running a series of pre-built GameTest examples
 ---
 
 # Introduction to the GameTest Framework
 
 GameTest Framework is a new toolset available to creators to build and test any new content created by you.  Within the world of Minecraft:Bedrock Edition, you can express infinite forms of gameplay and variability in your content. With all these creative possibilities, sometimes you may need additional tools to help validate that your experiences are running just as you expect it, and assist you as you customize aspects of the broader Minecraft environment.
 
-What happens if you change the behavior of Villagers? Or introduce a new Mob? Small changes can have unexpectedly big impacts that can be really hard to anticipate. With the GameTest Framework - a system for establishing sets of tests - you can track and repeat to ensure everything works the way you intend.  
+What happens if you change the behavior of Villagers? Or introduce a new Mob? Small changes can have unexpectedly big impacts that can be really hard to anticipate. With the GameTest Framework - a system for establishing sets of tests - you can track and repeat to ensure everything works the way you intend.
 
 With these tests, you can express and document your expectations for how things should work - both for your content and games, and for the Minecraft world. You'll be able to save time by using GameTests to take the place of repeatedly needing to manually play through conditions just to validate that all is working as expected.
 
@@ -20,7 +21,7 @@ Submitting and using GameTests can be a great way to establish and communicate t
 To get started, you'll want to begin with understanding how a behavior pack works within Minecraft. To read more about creating behavior packs, see this topic:
 
 > [!div class="checklist"]
-> - [Introduction To Behavior Packs](BehaviorPack.md) 
+> - [Introduction To Behavior Packs](BehaviorPack.md)
 
 ## What's a GameTest?
 
@@ -30,7 +31,7 @@ Let's examine a potential use case for a GameTest. Let's say that we want to val
 
 ## Running tests within game
 
-To run tests within a game, you’ll want to create a new world or start with a copy of your existing adventure and experience.  
+To run tests within a game, you’ll want to create a new world or start with a copy of your existing adventure and experience.
 
 Within this GameTest world, you'll want to ensure that cheats are enabled and that the GameTest Framework experiment is turned on. If you've created GameTest Framework tests within behavior packs, you'll want to add those behavior packs in your world.
 

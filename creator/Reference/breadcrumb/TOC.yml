@@ -17,6 +17,24 @@
   - name: Volume Documentation
     tocHref: /creator/reference/content/volumereference/
     topicHref: /creator/reference/content/volumereference/index
-  - name: MoLang Documentation
+  - name: Molang Documentation
     tocHref: /creator/reference/content/molangreference/
     topicHref: /creator/reference/content/molangreference/index
+  - name: Addons Documentation
+    tocHref: /creator/reference/content/addonsreference/
+    topicHref: /creator/reference/content/addonsreference/index
+  - name: Animations Documentation
+    tocHref: /creator/reference/content/animationsreference/
+    topicHref: /creator/reference/content/animationsreference/index
+  - name: Features Documentation
+    tocHref: /creator/reference/content/featuresreference/
+    topicHref: /creator/reference/content/featuresreference/index
+  - name: Fogs Documentation
+    tocHref: /creator/reference/content/fogsreference/
+    topicHref: /creator/reference/content/fogsreference/index
+  - name: Schema Documentation
+    tocHref: /creator/reference/content/schemasreference/
+    topicHref: /creator/reference/content/schemasreference/index
+  - name: Particle Documentation
+    tocHref: /creator/reference/content/particlesreference/
+    topicHref: /creator/reference/content/particlesreference/index

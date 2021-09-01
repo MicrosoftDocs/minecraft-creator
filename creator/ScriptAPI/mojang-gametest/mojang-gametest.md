@@ -40,9 +40,8 @@ Returns [*RegistrationBuilder*](RegistrationBuilder.md) - Returns a [*mojang-gam
 ##### ***example1.js***
 ```javascript
 GameTest.register("ExampleTests", "alwaysFail", (test) => {
-  test.fail("This test, runnable via '/gametest run ExampleTests:alwaysFail', will always fail");
+test.fail("This test, runnable via '/gametest run ExampleTests:alwaysFail', will always fail");
 });
-
 ```
 
 

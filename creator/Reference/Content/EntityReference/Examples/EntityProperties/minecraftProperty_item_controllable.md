@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:item_controllable
+title: Entity Documentation - minecraft:item_controllable
 ms.prod: gaming
 ---
 
-# minecraft:item_controllable
+# Entity Documentation -  minecraft:item_controllable
 
 `minecraft:item_controllable` allows an entity to be controlled by an item when riding this entity.
 

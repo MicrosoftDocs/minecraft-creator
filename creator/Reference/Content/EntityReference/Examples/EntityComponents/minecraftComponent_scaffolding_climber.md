@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:scaffolding_climber
+title: Entity Documentation - minecraft:scaffolding_climber
 ms.prod: gaming
 ---
 
-# minecraft:scaffolding_climber
+# Entity Documentation - minecraft:scaffolding_climber
 
 `minecraft:scaffolding_climber` allows the player to detect and manuever on the scaffolding block.
 

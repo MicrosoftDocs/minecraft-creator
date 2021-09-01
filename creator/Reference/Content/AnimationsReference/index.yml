@@ -1,0 +1,32 @@
+### YamlMime:Landing
+
+title: Animation JSON Documentation # < 60 chars
+summary: "Landing page containing all Animation JSON documentation for Minecraft: Bedrock Edition." # < 160 chars
+
+metadata:
+  title: Animation JSON Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: "Landing page containing all Animation JSON documentation for Minecraft: Bedrock Edition." # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: v-josjones #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-josjones #Required; microsoft alias of author; optional team alias.
+  ms.date: 08/02/2021 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Animation Definition
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Animation Reference - Getting Started
+            url: Examples/AnimationGettingStarted.md
+          - text: Animation Reference - Upgrading Animation Scripts
+            url: Examples/AnimationUpgrade.md
+          - text: Animation Controllers
+            url: Examples/AnimationController.md
+          - text: Render Controllers
+            url: Examples/AnimationRenderController.md

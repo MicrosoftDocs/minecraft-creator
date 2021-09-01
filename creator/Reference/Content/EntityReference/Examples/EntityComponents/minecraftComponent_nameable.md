@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:nameable
+title: Entity Documentation - minecraft:nameable
 ms.prod: gaming
 ---
 
-# minecraft:nameable
+# Entity Documentation - minecraft:nameable
 
 `minecraft:nameable` allows this entity to be named (e.g. using a name tag).
 

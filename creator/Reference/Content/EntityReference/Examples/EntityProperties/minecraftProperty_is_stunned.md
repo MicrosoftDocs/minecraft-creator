@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:is_stunned
+title: Entity Documentation - minecraft:is_stunned
 ms.prod: gaming
 ---
 
-# minecraft:is_stunned
+# Entity Documentation -  minecraft:is_stunned
 
 `minecraft:is_stunned` sets that this entity is currently stunned.
 

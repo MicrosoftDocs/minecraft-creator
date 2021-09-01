@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.random_look_around
+title: Entity Documentation - minecraft:behavior.random_look_around
 ms.prod: gaming
 ---
 
-# minecraft:behavior.random_look_around
+# Entity Documentation - minecraft:behavior.random_look_around
 
 `minecraft:behavior.random_look_around` allows an entity to choose a random direction to look in for a random duration within a range.
 

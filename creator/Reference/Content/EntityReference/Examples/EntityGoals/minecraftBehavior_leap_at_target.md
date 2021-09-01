@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.leap_at_target
+title: Entity Documentation - minecraft:behavior.leap_at_target
 ms.prod: gaming
 ---
 
-# minecraft:behavior.leap_at_target
+# Entity Documentation - minecraft:behavior.leap_at_target
 
 `minecraft:behavior.leap_at_target` allows an entity to jump towards a target.
 

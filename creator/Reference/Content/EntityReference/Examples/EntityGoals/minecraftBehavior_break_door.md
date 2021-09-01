@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.break_door
+title: Entity Documentation - minecraft:behavior.break_door
 ms.prod: gaming
 ---
 
-# minecraft:behavior.break_door
+# Entity Documentation - minecraft:behavior.break_door
 
 `minecraft:behavior.break_door` allows an entity to break down doors.
 

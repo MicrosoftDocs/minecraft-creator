@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Item Component List
+title: Item Documentation - Item Component List
 ms.prod: gaming
 ---
 
-# Item Components
+# Item Documentation - Item Components
 
 Below is a list of all the available Item Components within Minecraft:Bedrock Edition for use with Item JSON files.
 

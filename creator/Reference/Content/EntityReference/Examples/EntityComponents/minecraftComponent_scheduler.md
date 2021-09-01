@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:scheduler
+title: Entity Documentation - minecraft:scheduler
 ms.prod: gaming
 ---
 
-# minecraft:scheduler
+# Entity Documentation - minecraft:scheduler
 
 `minecraft:scheduler` fires off scheduled mob events at time of day events.
 

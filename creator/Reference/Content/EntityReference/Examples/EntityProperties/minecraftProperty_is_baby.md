@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:is_baby
+title: Entity Documentation - minecraft:is_baby
 ms.prod: gaming
 ---
 
-# minecraft:is_baby
+# Entity Documentation -  minecraft:is_baby
 
 `minecraft:is_baby` sets that the entity is a baby.
 

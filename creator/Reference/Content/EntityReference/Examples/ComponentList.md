@@ -1,12 +1,12 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Component List
+title: Entity Documentation - Component List
 description:
 ms.prod: gaming
 ---
 
-# Component list
+# Entity Documentation - Component list
 
 Below is a list of all the available Components within Minecraft:Bedrock Edition for use with Entity JSON files.
 

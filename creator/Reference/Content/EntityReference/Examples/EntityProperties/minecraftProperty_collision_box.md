@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:collision_box
+title: Entity Documentation - minecraft:collision_box
 ms.prod: gaming
 ---
 
-# minecraft:collision_box
+# Entity Documentation -  minecraft:collision_box
 
 `minecraft:collision_box` sets the width and height of the Entity's collision box.
 

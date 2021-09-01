@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: trusts
+title: Entity Documentation - trusts
 ms.prod: gaming
 ---
 
-# trusts
+# Entity Documentation - trusts
 
 Returns true if the subject is trusted by entity.
 

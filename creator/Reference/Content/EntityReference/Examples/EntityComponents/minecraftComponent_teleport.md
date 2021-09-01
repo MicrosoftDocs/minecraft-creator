@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:teleport
+title: Entity Documentation - minecraft:teleport
 ms.prod: gaming
 ---
 
-# minecraft:teleport
+# Entity Documentation - minecraft:teleport
 
 `minecraft:teleport` defines an entity's teleporting behavior.
 

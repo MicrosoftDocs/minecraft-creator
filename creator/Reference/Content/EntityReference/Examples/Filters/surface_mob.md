@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: surface_mob
+title: Entity Documentation - surface_mob
 ms.prod: gaming
 ---
 
-# surface_mob
+# Entity Documentation - surface_mob
 
 Tests if the subject is a surface mob.
 

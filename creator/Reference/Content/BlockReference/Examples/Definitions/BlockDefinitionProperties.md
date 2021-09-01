@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Block Properties & Descriptions
+title: Block Documentation - Block Properties & Descriptions
 ms.prod: gaming
 ---
 
-# Block Properties & Descriptions
+# Block Documentation - Block Properties & Descriptions
 
 These properties are part of the Block Definition and Block Properties that are used within block JSON files. This helps the system determine how to parse and initialize this block.
 
@@ -26,7 +26,7 @@ These properties are part of the Block Definition and Block Properties that are 
       "minecraft:flammable": {
         "flame_odds": 50,
         "burn_odds": 0
-	  },
+	      },
       "minecraft:block_light_emission": 1.0
     }
   }

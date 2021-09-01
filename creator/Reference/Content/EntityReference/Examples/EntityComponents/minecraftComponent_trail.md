@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:trail
+title: Entity Documentation - minecraft:trail
 ms.prod: gaming
 ---
 
-# minecraft:trail
+# Entity Documentation - minecraft:trail
 
 `minecraft:trail` causes an entity to leave a trail of blocks as it moves about the world.
 

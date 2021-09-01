@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:icon
+title: Item Documentation - minecraft:icon
 ms.prod: gaming
 ---
 
-# minecraft:icon
+# Item Documentation - minecraft:icon
 
 `minecraft:icon` sets the icon item component.Determines the icon to represent the item in the UI and elsewhere
 

@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:movement.basic
+title: Entity Documentation - minecraft:movement.basic
 ms.prod: gaming
 ---
 
-# minecraft:movement.basic
+# Entity Documentation - minecraft:movement.basic
 
 `minecraft:movement.basic` defines the movement of an entity.
 

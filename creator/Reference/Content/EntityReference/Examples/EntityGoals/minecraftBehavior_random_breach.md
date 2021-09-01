@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.random_breach
+title: Entity Documentation - minecraft:behavior.random_breach
 ms.prod: gaming
 ---
 
-# minecraft:behavior.random_breach
+# Entity Documentation - minecraft:behavior.random_breach
 
 `minecraft:behavior.random_breach` allows an entity to breach the surface of the water at a random interval.
 
@@ -29,7 +29,7 @@ ms.prod: gaming
     "speed_multiplier": 1.0,
     "xz_dist": 6,
     "y_dist": 4
-        
+
 }
 ```
 

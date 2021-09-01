@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_difficulty
+title: Entity Documentation - is_difficulty
 ms.prod: gaming
 ---
 
-# is_difficulty
+# Entity Documentation - is_difficulty
 
 Tests the current difficulty level of the game.
 
@@ -21,10 +21,10 @@ Below is a list of difficulty levels that can be used for the `value` string.
 
 | Options|
 |:-----------|
-| easy|  
-| hard|  
-| normal|  
-| peaceful|  
+| easy|
+| hard|
+| normal|
+| peaceful|
 
 >[!Note]
 >`is_difficulty` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.

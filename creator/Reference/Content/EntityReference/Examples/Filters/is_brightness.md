@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_brightness
+title: Entity Documentation - is_brightness
 ms.prod: gaming
 ---
 
-# is_brightness
+# Entity Documentation - is_brightness
 
 Tests the current brightness against a provided value in the range (0.0, 1.0).
 

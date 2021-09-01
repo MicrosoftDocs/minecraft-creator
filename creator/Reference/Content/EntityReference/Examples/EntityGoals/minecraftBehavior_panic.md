@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.panic
+title: Entity Documentation - minecraft:behavior.panic
 ms.prod: gaming
 ---
 
-# minecraft:behavior.panic
+# Entity Documentation - minecraft:behavior.panic
 
 `minecraft:behavior.panic` allows an entity to react when it receives damage.
 

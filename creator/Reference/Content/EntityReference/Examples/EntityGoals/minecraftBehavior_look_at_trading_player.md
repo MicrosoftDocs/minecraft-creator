@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.look_at_trading_player
+title: Entity Documentation - minecraft:behavior.look_at_trading_player
 ms.prod: gaming
 ---
 
-# minecraft:behavior.look_at_trading_player
+# Entity Documentation - minecraft:behavior.look_at_trading_player
 
 `minecraft:behavior.look_at_trading_player` allows an entity to look at the player that is currently trading with the entity.
 

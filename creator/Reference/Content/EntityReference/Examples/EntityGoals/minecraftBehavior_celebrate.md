@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.celebrate
+title: Entity Documentation - minecraft:behavior.celebrate
 ms.prod: gaming
 ---
 
-# minecraft:behavior.celebrate
+# Entity Documentation - minecraft:behavior.celebrate
 
 `minecraft:behavior.celebrate` allows an entity to jump up and down while playing a sound.
 

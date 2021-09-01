@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Potion Brewing Container Recipe
+title: Recipe Documentation - Potion Brewing Container Recipe
 ms.prod: gaming
 ---
 
-# Potion Brewing Container Recipe
+# Recipe Documentation - Potion Brewing Container Recipe
 
 Represents a Potion Brewing Container Recipe.
 
@@ -36,5 +36,7 @@ Represents a Potion Brewing Container Recipe.
 ```
 
 ## Vanilla Example
+
+### Slow-Falling Redstone potion
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack_Snippets/recipes/brew_slow_falling_redstone.json":::

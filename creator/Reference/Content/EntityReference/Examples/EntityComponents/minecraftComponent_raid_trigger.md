@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:raid_trigger
+title: Entity Documentation - minecraft:raid_trigger
 ms.prod: gaming
 ---
 
-# minecraft:raid_trigger
+# Entity Documentation - minecraft:raid_trigger
 
 `minecraft:raid_trigger` attempts to trigger a raid at the entity's location.
 

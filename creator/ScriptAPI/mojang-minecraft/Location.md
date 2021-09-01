@@ -49,12 +49,13 @@ Type: *number*
 new Location(x: number, y: number, z: number)
 `
 
+Creates a new instance of an abstract location.
 #### Arguments
 | Parameter | Type | Default Value | Description |
 | :--- | :--- | :--- | :---: |
-| **x** | *number* | n/a | - |
-| **y** | *number* | n/a | - |
-| **z** | *number* | n/a | - |
+| **x** | *number* | n/a | X position of the location. |
+| **y** | *number* | n/a | Y position of the location. |
+| **z** | *number* | n/a | Z position of the location. |
 
 Returns [*Location*](Location.md)
 

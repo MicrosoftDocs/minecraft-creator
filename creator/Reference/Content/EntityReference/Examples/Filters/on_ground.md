@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: on_ground
+title: Entity Documentation - on_ground
 ms.prod: gaming
 ---
 
-# on_ground
+# Entity Documentation - on_ground
 
 Returns true when the subject entity is on the ground.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:color2
+title: Entity Documentation - minecraft:color2
 ms.prod: gaming
 ---
 
-# minecraft:color2
+# Entity Documentation -  minecraft:color2
 
 `minecraft:color2` Defines the entity's second texture color.
 

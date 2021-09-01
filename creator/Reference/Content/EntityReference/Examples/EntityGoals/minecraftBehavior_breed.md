@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.breed
+title: Entity Documentation - minecraft:behavior.breed
 ms.prod: gaming
 ---
 
-# minecraft:behavior.breed
+# Entity Documentation - minecraft:behavior.breed
 
 `minecraft:behavior.breed` allows an entity to breed with other entities that have been assigned.
 

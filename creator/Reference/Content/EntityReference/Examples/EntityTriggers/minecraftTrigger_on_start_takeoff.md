@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:on_start_takeoff
+title: Entity Documentation - minecraft:on_start_takeoff
 ms.prod: gaming
 ---
 
-# minecraft:on_start_takeoff
+# Entity Documentation - minecraft:on_start_takeoff
 
 `minecraft:on_start_takeoff` adds a trigger to call when this entity starts flying.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:digger
+title: Item Documentation - minecraft:digger
 ms.prod: gaming
 ---
 
-# minecraft:digger
+# Item Documentation - minecraft:digger
 
 `minecraft:digger` sets the item as a "Digger" item. Component put on items that dig.
 

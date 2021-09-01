@@ -3,6 +3,7 @@ author: v-josjones
 ms.author: v-josjones
 title: Getting Started with Minecraft Entity Wizard
 ms.prod: gaming
+description: A tutorial covering how to create a custom entity model utilizing the Minecraft Entity Wizard tool in Blockbench
 ---
 
 # Getting Started with the Minecraft Entity Wizard
@@ -32,7 +33,7 @@ In this tutorial, you will learn the following:
 It’s recommended that the following be completed before beginning this tutorial.
 
 - Either have [Blockbench](https://blockbench.net) installed or access to [Blockbench web app](https://web.blockbench.net)
-- [Getting Started with Add-on Development](GettingStarted.md)
+- [Getting Started with Add-On Development](GettingStarted.md)
 
 ## Installation
 
@@ -47,7 +48,6 @@ Once you have downloaded and installed [Blockbench](https://blockbench.net), you
 1. Switch the tab to the **Available** tab.
 1. Locate the plugin **Bedrock Entity Wizard**, either by scrolling through the list of available plugins, or via the search box.
 1. Click on **Install** to add the plugin to Blockbench.
-
 
 ## The Wizard
 

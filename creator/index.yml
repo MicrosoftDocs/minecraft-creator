@@ -1,14 +1,14 @@
 ### YamlMime:Hub
 
-title: Minecraft Bedrock documentation # < 60 chars
-summary: Learn how to customize Minecraft Bedrock Edition through Add-ons.
+title: "Minecraft: Bedrock Edition Creator Documentation" # < 60 chars
+summary: "Learn how to create and design unique experiences with Add-Ons, discover the latest features and develop your skills as a creator in Minecraft: Bedrock Edition."
 metadata:
-  title: Minecraft Bedrock documentation # Required; page title shown in search results < 60 chars
-  description: Learn how to customize Minecraft Bedrock Edition through Add-ons. # < 160 chars
+  title: "Minecraft: Bedrock Edition Creator Documentation" # Required; page title shown in search results < 60 chars
+  description: "Learn how to create and design unique experiences with Add-Ons, discover the latest features and develop your skills as a creator in Minecraft: Bedrock Edition." # < 160 chars
   service: service
   ms.service: service # Required; service per approved list.
   ms.topic: hub-page # Required
-  ms.date: 03/20/2021
+  ms.date: 08/30/2021
   author: v-josjones # Required; Github alias
   ms.author: v-josjones # Required; Microsoft alias; with correct grammar
 
@@ -21,67 +21,158 @@ highlightedContent:
       itemType: whats-new
       url: Documents/MinecraftEntityWizard.md
     #card
-    - title: Blocks JSON Documentation
+    - title: JSON Reference Documentation
       itemType: whats-new
-      url: Reference/Content/blockreference/index.yml
+      url: Reference/index.yml
     #card
-    - title: Items JSON Documentation
-      itemType: whats-new
-      url: Reference/Content/itemreference/index.yml
+    - title: Introduction to the Caves & Cliffs Entities
+      itemType: overview
+      url: Documents/CavesAndCliffsEntities.md
     #card
-    - title: Getting Started with Add-on Development
-      itemType: get-started
-      url: Documents/GettingStarted.md
+    - title: Differences Between Minecraft Bedrock Edition and Minecraft Java Edition
+      itemType: architecture
+      url: Documents/DifferencesBetweenBedrockAndJava.md
 
-# productDirectory section (optional) will outline rows that can contain text and media along with lists.
+# productDirectory section (optional)
 productDirectory:
+  title: Building Custom Content  # < 60 chars (optional)
+  summary: Whether you are creating first Add-On or your one-hundredth, there is content for all types of creators to help you on your journey! # < 160 chars (optional)
   items:
-    # card
-    - title: Add-on Pack Tutorials
-      #imageSrc needs to in a square ratio with no whitespace
+    # Card
+    - title: Getting Started with Add-On Development
+      # imageSrc should be square in ratio with no whitespace
       imageSrc: images/Add-Resource-Pack.png
-      links:
-        - url: Documents/ResourcePack.md
-          text: Introduction to Resource Packs
-        - url: Documents/BehaviorPack.md
-          text: Introduction To Behavior Packs
-        - url: Documents/CustomBlock.md
-          text: How to add a Custom Block
-        - url: Documents/CreateNPCs.md
-          text: Create a Custom NPC
-        - url: Documents/NPCDialogue.md
-          text: NPC Dialogue Command
-  # card
-    - title: Working with Commands
+      summary: Working with Add-Ons in Minecraft:Bedrock Edition is easy! Learn how to get started
+      url: Documents/GettingStarted.md
+    # Card
+    - title: JSON Reference Documentation
       imageSrc: images/Script.png
-      links:
-        - url: Documents/CommandBlocks.md
-          text: Getting Started with Command Blocks
-  # card
-    - title: Using GameTest
+      summary: Discover the different features and components used within Minecraft
+      url: Reference/index.yml
+    # Card
+    - title: Getting Started with Minecraft Entity Wizard
       imageSrc: images/Firework.png
-      links:
-        - url:  Documents/GameTestGettingStarted.md
-          text: Getting Started with GameTest
-        - url: Documents/GameTestBuildYourFirstGameTest.md
-          text: Build your first GameTest
-        - url: ScriptAPI/mojang-gametest/mojang-gametest.md
-          text: GameTest API
-  # card
-    - title: Reference Documentation
-      imageSrc: images/Script.png
-      links:
-        - url: Reference/Content/entityreference/index.yml
-          text: Entity JSON Documentation
-        - url: Reference/Content/blockreference/index.yml
-          text: Block JSON Documentation
-        - url: Reference/Content/itemreference/index.yml
-          text: Item JSON Documentation
-        - url: Reference/Content/Recipereference/index.yml
-          text: Recipe JSON Documentation
-        - url: Reference/Content/volumereference/index.yml
-          text: Volume JSON Documentation
-        - url: Reference/Content/molangreference/index.yml
-          text: MoLang Documentation
+      summary: Rapidly design, build and deploy a brand new Entity with the new Minecraft Entity Wizard Tool
+      url: Documents/MinecraftEntityWizard.md
 
-
+# conceptualContent section (optional)
+conceptualContent:
+# Supports up to 3 sections
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  sections:
+    - title: Discover what you can Create # < 60 chars (optional)
+      summary: "Building new Add-Ons or want to learning about new Features? The Creator Documentation provides a collection of written content to assist creators." # < 160 chars (optional)
+      items:
+        # card
+        - title: Add-On Pack Tutorials
+          summary: "Learn how Add-Ons are used to bring custom content into Minecraft"
+          links:
+            - url: Documents/ResourcePack.md
+              itemType: get-started
+              text: Introduction to Resource Packs
+            - url: Documents/BehaviorPack.md
+              itemType: get-started
+              text: Introduction To Behavior Packs
+            - url: Documents/CustomBlock.md
+              itemType: how-to-guide
+              text: How to add a Custom Block
+        # card
+        - title: Build a "Complete the Monument" map with Commands
+          summary: "Commands are a powerful way to add logic into your experiences."
+          links:
+            - url: Documents/CommandsIntroduction.md
+              itemType: concept
+              text: Introduction to Commands
+            - url: Documents/CommandBlocks.md
+              itemType: get-started
+              text: Getting Started with Command Blocks
+            - url: Documents/CommandsHowToMakeACTMMap.md
+              itemType: get-started
+              text: How To Make a Complete the Monument Map
+            - url: Documents/CommandsPopularCommands.md
+              itemType: reference
+              text: Popular Commands
+        # card
+        - title: Adding NPCs
+          summary: "Populate your world with interactive characters to create unique narrative experiences."
+          links:
+            - url: Documents/CreateNPCs.md
+              itemType: tutorial
+              text: Create a Custom NPC
+            - url: Documents/NPCDialogue.md
+              itemType: tutorial
+              text: NPC Dialogue Command
+        # card
+        - title: Loot and Trading Tables
+          summary: "Discover how Tables allow creators to add items to the world in a wide variety of ways."
+          links:
+          - url: Documents/IntroductionToLootTables.md
+            itemType: get-started
+            text: Introduction to Loot Tables
+          - url: Documents/LootAndTradeTableFunctions.md
+            itemType: overview
+            text: Loot and Trade Table Functions
+    # Test Section
+    - title: References  # < 60 chars (optional)
+      summary: "Learn how content works with Reference documentation and how GameTest can empower your workflow." # < 160 chars (optional)
+      items:
+      # card
+      - title: Using GameTest
+        summary: "Learn how the new GameTest Frameworks can speed up your development time."
+        links:
+          - url: ScriptAPI/mojang-gametest/mojang-gametest.md
+            itemType: reference
+            text: GameTest API
+          - url:  Documents/GameTestGettingStarted.md
+            itemType: get-started
+            text: Getting Started with GameTest
+          - url: Documents/GameTestBuildYourFirstGameTest.md
+            itemType: how-to-guide
+            text: Build your first GameTest
+      # card
+      - title: Reference Documentation
+        summary: "Need a hand creating your content? View the reference documentation to see how things work in-game."
+        links:
+          - url: Reference/Content/addonsreference/index.yml
+            itemType: reference
+            text: Addons JSON Documentation
+          - url: Reference/Content/animationsreference/index.yml
+            itemType: reference
+            text: Animation JSON Documentation
+          - url: Reference/Content/blockreference/index.yml
+            itemType: reference
+            text: Block JSON Documentation
+          - url: Reference/Content/entityreference/index.yml
+            itemType: reference
+            text: Entity JSON Documentation
+          - url: Reference/Content/featuresreference/index.yml
+            itemType: reference
+            text: Features JSON Documentation
+          - url: Reference/Content/itemreference/index.yml
+            itemType: reference
+            text: Item JSON Documentation
+          - url: Reference/Content/molangreference/index.yml
+            itemType: reference
+            text: Molang Documentation
+          - url: Reference/Content/Recipereference/index.yml
+            itemType: reference
+            text: Recipe JSON Documentation
+          - url: Reference/Content/particlesreference/index.yml
+            itemType: reference
+            text: Particle JSON Documentation
+          - url: Reference/Content/volumereference/index.yml
+            itemType: reference
+            text: Volume JSON Documentation
+      # card
+      - title: Common Schema Documentation
+        summary: "See how Schemas are used to validate JSON files in Minecraft: Bedrock Edition "
+        links:
+          - url: Reference/Content/SchemasReference/index.yml
+            itemType: reference
+            text: Schemas Documentation
+          - url: Reference/Content/BiomeReference/Examples/BiomeOverview.md
+            itemType: overview
+            text: Biome Overview
+          - url: Reference/Content/FogsReference/Examples/FogsIntroduction.md
+            itemType: overview
+            text: Introduction to Fogs

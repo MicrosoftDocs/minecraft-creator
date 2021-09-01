@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: clock_time
+title: Entity Documentation - clock_time
 ms.prod: gaming
 ---
 
-# clock_time
+# Entity Documentation - clock_time
 
 `clock_time` allows a creator to compare the current time with a float value in the range (0.0, 1.0).
 

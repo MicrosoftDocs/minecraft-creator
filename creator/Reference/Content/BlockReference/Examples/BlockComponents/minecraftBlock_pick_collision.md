@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:pick_collision
+title: Block Documentation - minecraft:pick_collision
 ms.prod: gaming
 ---
 
-# minecraft:pick_collision
+# Block Documentation - minecraft:pick_collision
 
 `minecraft:pick_collision` is a component controlled by a `boolean` that disables the collision of the block with entities.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:on_target_acquired
+title: Entity Documentation - minecraft:on_target_acquired
 ms.prod: gaming
 ---
 
-# minecraft:on_target_acquired
+# Entity Documentation - minecraft:on_target_acquired
 
 `minecraft:on_target_acquired` adds a trigger to call when this entity finds a target.
 

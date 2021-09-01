@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:is_stackable
+title: Entity Documentation - minecraft:is_stackable
 ms.prod: gaming
 ---
 
-# minecraft:is_stackable
+# Entity Documentation -  minecraft:is_stackable
 
 `minecraft:is_stackable` sets that this entity can be stacked.
 
@@ -18,7 +18,7 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### minecart
+### Entity Documentation -  minecart
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/minecart.json" range="12-13":::
 

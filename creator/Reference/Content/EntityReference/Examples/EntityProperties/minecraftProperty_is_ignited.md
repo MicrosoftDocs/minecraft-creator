@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:is_ignited
+title: Entity Documentation - minecraft:is_ignited
 ms.prod: gaming
 ---
 
-# minecraft:is_ignited
+# Entity Documentation -  minecraft:is_ignited
 
 `minecraft:is_ignited` sets that the entity is currently on fire.
 
