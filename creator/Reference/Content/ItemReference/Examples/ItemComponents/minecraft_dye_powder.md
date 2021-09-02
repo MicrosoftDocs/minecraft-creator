@@ -32,7 +32,7 @@ There are 16 kinds of dye available to use.
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|color|*not set* |String |color value to use |
+|color|*not set* |String |Color value to use |
 
 ## Example
 

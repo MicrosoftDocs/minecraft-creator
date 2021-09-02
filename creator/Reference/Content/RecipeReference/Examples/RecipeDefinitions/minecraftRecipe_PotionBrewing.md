@@ -13,9 +13,9 @@ Represents a Potion Brewing Container Recipe.
 
 |Name |Type |Description |
 |:-----------|:-----------|:-----------|
-|input| potion| input potion used in the brewing container recipe. |
-|output| potion| output potion from the brewing container recipe. |
-|reagent| item| item used in the brewing container recipe with the input potion. |
+|input| potion| Input potion used in the brewing container recipe. |
+|output| potion| Output potion from the brewing container recipe. |
+|reagent| item| Item used in the brewing container recipe with the input potion. |
 |tags|String array | Item used in a Brewing Container Recipe. |
 
 ## Potion Brewing Container Recipe Example

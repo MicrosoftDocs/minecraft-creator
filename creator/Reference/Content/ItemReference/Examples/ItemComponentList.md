@@ -12,7 +12,7 @@ Below is a list of all the available Item Components within Minecraft:Bedrock Ed
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |[minecraft:armor](ItemComponents/minecraft_armor.md)|*not set* |  JSON Object| The armor item component determines the amount of protection you have in your armor item.|
-|[minecraft:block_placer](ItemComponents/minecraft_block_placer.md)|*not set* | JSON Object|  Planter item component. planter items are items that can be planted.|
+|[minecraft:block_placer](ItemComponents/minecraft_block_placer.md)|*not set* | JSON Object|  Planter item component. Planter items are items that can be planted.|
 |[minecraft:cooldown](ItemComponents/minecraft_cooldown.md)|*not set* | JSON Object|  Cool down time for a component. After you use an item it becomes unusable for the duration specified by the 'cool down time' setting in this component.|
 |[minecraft:digger](ItemComponents/minecraft_digger.md)|*not set* | JSON Object|  Digger item. Component put on items that dig.|
 |[minecraft:display_name](ItemComponents/minecraft_display_name.md)|*not set* | JSON Object|  Display Name item component. Display Names display the name of an item.|
@@ -25,7 +25,7 @@ Below is a list of all the available Item Components within Minecraft:Bedrock Ed
 |[minecraft:knockback_resistance](ItemComponents/minecraft_knockback_resistance.md)|*not set*| JSON Object|  Knockback Resistance Item. Component put on items that provide knockback resistance.|
 |[minecraft:on_use](ItemComponents/minecraft_on_use.md)|*not set* | JSON Object|  The on_use item component allows you to receive an event when the item is used.|
 |[minecraft:on_use_on](ItemComponents/minecraft_on_use_on.md)|*not set*| JSON Object | The on_use_on item component allows you to receive an event when the item is used on a block in the world|
-|[minecraft:projectile](ItemComponents/minecraft_projectile.md)|*not set* | JSON Object| Projectile item component. projectile items shoot out, like an arrow.|
+|[minecraft:projectile](ItemComponents/minecraft_projectile.md)|*not set* | JSON Object| Projectile item component. Projectile items shoot out, like an arrow.|
 |[minecraft:render_offsets](ItemComponents/minecraft_render_offsets.md)|*not set* | JSON Object|  Render offsets component: optional values can be given to offset the way the item is rendered.|
 |[minecraft:repairable](ItemComponents/minecraft_repairable.md)|*not set* | JSON Object|  Repairable item component: how much damage can this item repair, what items can repair it.|
 |[minecraft:shooter](ItemComponents/minecraft_shooter.md)|*not set* | JSON Object|  Shooter Item Component.|

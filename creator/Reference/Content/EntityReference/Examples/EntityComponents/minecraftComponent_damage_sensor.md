@@ -34,7 +34,7 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|[filters](../FilterList.md)|*not set* | Minecraft Filter|  filters to use to define specific tests |
+|[filters](../FilterList.md)|*not set* | Minecraft Filter|  Filters to use to define specific tests |
 |event |*not set* | String | Defines what event to run |
 
 ## Example
