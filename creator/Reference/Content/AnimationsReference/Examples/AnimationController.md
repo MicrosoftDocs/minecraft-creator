@@ -88,7 +88,7 @@ In definitions\entity\tiger.json:
   "custom:tiger":{
     "scripts":{
       "pre_animation": {
-        "variable.foo = math.sin(query.life_time)"
+        "variable.foo = math.sin(query.life_time);"
       }
     }
   }
