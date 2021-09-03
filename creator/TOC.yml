@@ -44,7 +44,7 @@
             href: Documents/GameTestGettingStarted.md
           - name: Build your first GameTest
             href: Documents/GameTestBuildYourFirstGameTest.md
-          - name: Use Visual Studio Code tools to enhance writing script
+          - name: Use Visual Studio Code tools to write script
             href: Documents/ScriptDeveloperTools.md
     - name: Reference Documentation
       items:

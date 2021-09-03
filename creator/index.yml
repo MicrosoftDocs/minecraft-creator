@@ -131,7 +131,7 @@ conceptualContent:
             text: Build your first GameTest
           - url: Documents/ScriptDeveloperTools.md
             itemType: how-to-guide
-            text: Use Visual Studio Code tools to enhance writing script
+            text: Use Visual Studio Code tools to write script
       # card
       - title: Reference Documentation
         summary: "Need a hand creating your content? View the reference documentation to see how things work in-game."

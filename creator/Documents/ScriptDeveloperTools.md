@@ -1,12 +1,12 @@
 ---
 author: mikeam
 ms.author: mikeam
-title: Visual Studio Code tools for building out your Minecraft GameTest scripting experiences
+title: Use Visual Studio Code tools to write script
 ms.prod: gaming
-description: Tools for updated type definitions, and debugging GameTest scripts
+description: Use tools for enhanced editing and debugging of GameTest scripts within Visual Studio Code
 ---
 
-# Tools for building Minecraft GameTest experiences
+# Use Visual Studio Code tools to write script
 
 Two new tools can make the process of writing your GameTest scripts easier - and more fun! - within Visual Studio Code.
 
