@@ -30,6 +30,8 @@ It’s recommended that the following be completed before beginning this tutoria
 
 >[!IMPORTANT]
 >Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
+>
+>To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](ExperimentalFeaturesToggle.md)
 
 ## Setting up the Resource JSON File
 
