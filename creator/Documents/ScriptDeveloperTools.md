@@ -6,6 +6,8 @@ ms.prod: gaming
 description: Tools for updated type definitions, and debugging GameTest scripts
 ---
 
+# Tools for building Minecraft GameTest experiences
+
 Two new tools can make the process of writing your GameTest scripts easier - and more fun! - within Visual Studio Code.
 
 ## Custom Types file for Visual Studio Code Intellisense
