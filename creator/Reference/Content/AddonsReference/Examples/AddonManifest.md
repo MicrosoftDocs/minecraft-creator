@@ -44,6 +44,9 @@ The manifest file contains all the basic information about the pack that Minecra
 |uuid| String| This is a unique identifier for the module in the same format as the pack's UUID in the header. This should be different from the pack's UUID, and different for every module. |
 | version| Vector [a, b, c]| This is the version of the module in the same format as the pack's version in the header. This can be used to further identify changes in your pack. |
 
+> [!IMPORTANT]
+> In order to submit any content to the marketplace, the version `a` value will need to be set to a value greater than 0. e.g `"version": [1, 0, 0]`
+
 ### dependencies
 
 | Name| Type| Description |
@@ -80,7 +83,7 @@ Listed below are two examples showcasing how a manifest.json file can be written
         "description": "Example vanilla behavior pack",
         "name": "Vanilla Behavior Pack",
         "uuid": "ee649bcf-256c-4013-9068-6a802b89d756",
-        "version": [0, 0, 1],
+        "version": [1, 0, 0],
         "min_engine_version": [1, 16, 0]
     },
     "modules": [
@@ -88,19 +91,19 @@ Listed below are two examples showcasing how a manifest.json file can be written
             "description": "Example behavior pack module",
             "type": "data",
             "uuid": "fa6e90c8-c925-460f-8155-c8a60b753caa",
-            "version": [0, 0, 1]
+            "version": [1, 0, 0]
         },
         {
             "description": "Example client scripts module",
             "type": "client_data",
             "uuid": "c05a992e-482a-455f-898c-58bbb4975e47",
-            "version": [0, 0, 1]
+            "version": [1, 0, 0]
         }
     ],
     "dependencies": [
         {
             "uuid": "66c6e9a8-3093-462a-9c36-dbb052165822",
-            "version": [0, 0, 1]
+            "version": [1, 0, 0]
         }
     ]
 }
@@ -117,7 +120,7 @@ Listed below are two examples showcasing how a manifest.json file can be written
         "description": "Example vanilla resource pack",
         "name": "Vanilla Resource Pack",
         "uuid": "66c6e9a8-3093-462a-9c36-dbb052165822",
-        "version": [0, 0, 1],
+        "version": [1, 0, 0],
         "min_engine_version": [1, 2, 6],
         "vanilla": [1, 12, 0]
     },
@@ -126,7 +129,7 @@ Listed below are two examples showcasing how a manifest.json file can be written
             "description": "Example vanilla resource pack",
             "type": "resources",
             "uuid": "743f6949-53be-44b6-b326-398005028819",
-            "version": [0, 0, 1]
+            "version": [1, 0, 0]
         }
     ]
 }
