@@ -19,7 +19,7 @@ Building sets of GameTests requires building out your GameTests via a behavior P
 >
 >To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](ExperimentalFeaturesToggle.md)
 
->[!Cautions]
+>[!Caution]
 >Because GameTest Framework is adding and updating functionality frequently, we recommend using the latest Beta versions of Minecraft. See [Minecraft Betas](https://aka.ms/mcbeta) for more information. The syntax of this sample is intended to be compatible with the latest beta versions.
 
 ### Requirements
