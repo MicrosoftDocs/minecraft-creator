@@ -33,7 +33,7 @@ and inline reference documentation for types:
 
 ![Inline reference documentation in Visual Studio Code](Media/ScriptDeveloperTools/inlinedocumentation.png)
 
->[!Note] 
+>[!Note]
 >We are updating these type definitions to match the latest beta APIs, so be sure to check npm often to see if there are updated type definitions.
 
 ## Get insight into your code with Minecraft script debugging
@@ -51,7 +51,10 @@ To get started, you’ll want to use Visual Studio Code as your editor for the J
 
 #### Step 1: Install the Minecraft Bedrock Edition Debugger within Visual Studio Code
 
-To use debugger capabilities, you’ll want to install the Minecraft Bedrock Edition Debugger within Visual Studio Code. To do this, open up the Marketplace tab in Visual Studio Code, and search for "Minecraft Bedrock Edition Debugger". From there, click the **Install** button to add this extension to Visual Studio Code.
+To use debugger capabilities, you’ll want to install the Minecraft Bedrock Edition Debugger within Visual Studio Code. To do this, please click on the button below to download the **Minecraft Bedrock Edition Debugger** from Visual Studio Code's marketplace.
+
+> [!div class="nextstepaction"]
+> [Minecraft Bedrock Edition Debugger](https://marketplace.visualstudio.com/items?itemName=mojang-studios.minecraft-debugger)
 
 #### Step 2: Ensure that the Minecraft Bedrock Edition client can make "loopback" requests
 
@@ -60,7 +63,7 @@ If you want to connect Minecraft Bedrock Edition client to Visual Studio Code ru
 ```powershell
 CheckNetIsolation.exe LoopbackExempt –a –p=S-1-15-2-1958404141-86561845-1752920682-3514627264-368642714-62675701-733520436
 ```
-  
+
 ![checknetisolation command being run](Media/ScriptDeveloperTools/commandprompt.png)
 
 #### Step 3: Open Visual Studio Code within your development_behavior_packs folder
@@ -78,7 +81,7 @@ To configure the connection, add a .vscode subfolder to your behavior pack folde
 (NOTE: you do not need to edit any lines of this file.)
 
 ```json
-{  
+{
   "version": "0.2.0",
   "configurations": [
     {
@@ -143,7 +146,7 @@ At the root of the behavior pack you want to debug, add a .vscode subfolder. Add
 (NOTE: you do not need to edit any lines of this file.)
 
 ```json
-{  
+{
   "version": "0.2.0",
   "configurations": [
     {
@@ -175,6 +178,6 @@ Now, hit "Start Debugging" inside of Visual Studio Code.
 
 You can run commands in Bedrock Dedicated Server to initiate tests, such as `/gametest run (my test name)`.
 
-You can set breakpoints in your code by clicking on the left-hand side of the editor, on specific lines of code. As you run the tests in the behavior pack, your breakpoints should be hit. You can also view local variables and add watches as necessary.  
+You can set breakpoints in your code by clicking on the left-hand side of the editor, on specific lines of code. As you run the tests in the behavior pack, your breakpoints should be hit. You can also view local variables and add watches as necessary.
 
 That's it! Between updated code helpers as you add lines of JavaScript, and new debugger capabilities within Visual Studio Code, we hope you'll be able to write more extensive tests and script much more quickly.
