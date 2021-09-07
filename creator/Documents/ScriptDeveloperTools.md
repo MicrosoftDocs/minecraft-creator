@@ -54,7 +54,7 @@ To get started, you’ll want to use Visual Studio Code as your editor for the J
 To use debugger capabilities, you’ll want to install the Minecraft Bedrock Edition Debugger within Visual Studio Code. To do this, please click on the button below to download the **Minecraft Bedrock Edition Debugger** from Visual Studio Code's marketplace.
 
 > [!div class="nextstepaction"]
-> [Minecraft Bedrock Edition Debugger](https://marketplace.visualstudio.com/items?itemName=mojang-studios.minecraft-debugger)
+> [Minecraft Bedrock Edition Debugger](https://aka.ms/vscodescriptdebugger)
 
 #### Step 2: Ensure that the Minecraft Bedrock Edition client can make "loopback" requests
 
