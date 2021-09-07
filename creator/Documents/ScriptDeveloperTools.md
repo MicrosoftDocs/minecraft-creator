@@ -14,7 +14,7 @@ Two new tools can make the process of writing your GameTest scripts easier and m
 
 Visual Studio Code can take advantage of libraries of detailed type information for different libraries to provide hints and dropdowns as you type. For the GameTest modules - `mojang-minecraft` and `mojang-gametest` modules – two new modules are available to take advantage of this.
 
-To get started, use the Node Package Manager, or npm. NPM makes it easy to download and install different modules of code within your packages. Install Node.js – which includes NPM - on your development device. More info on installing NPM is available from https://nodejs.org. Install the latest LTS version of Node.js to get started.
+To get started, use the Node Package Manager, or npm. npm makes it easy to download and install different modules of code within your packages. Install Node.js – which includes npm - on your development device. More info on installing npm is available from https://nodejs.org. Install the latest LTS version of Node.js to get started.
 
 Once node.js is installed, getting the latest type definitions is a snap. Within your project folder, and where you commonly edit your behavior packs from, simply run the following commands from the command prompt:
 
