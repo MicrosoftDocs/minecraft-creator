@@ -58,9 +58,12 @@ If you're planning to build content that you want to share with the community, i
 If you are building a new world from scratch to test experimental features, you can toggle which features you want enabled in the **Game** Settings.
 
 1. Under **Game** settings, navigate down to **Experiments** and select a toggle to enable the feature.
-    :::image type="content" source="Media/ExperimentalFeatures/ExperimentalToggle.png" alt-text="Image showcasing 4 toggles for experimental features available in Minecraft":::
+
+   ![Image showcasing 4 toggles for experimental features available in Minecraft](Media/ExperimentalFeatures/ExperimentalToggle.png)
+
 2. When you get the popup asking **Activate Experimental Gameplay?**, select **Activate Experiments**.
-    :::image type="content" source="Media/ExperimentalFeatures/ActivateExperiments.png" alt-text="image showing a pop up to confirm if you want ot activate experimental features in minecraft.":::
+
+   ![image showing a pop up to confirm if you want ot activate experimental features in Minecraft.](Media/ExperimentalFeatures/ActivateExperiments.png)
 
 ### Toggle Experimental Features in an Existing World
 
@@ -70,11 +73,16 @@ If you want to add experimental features to an existing world, you can edit the 
 > While a copy of your world is generated automatically when activating an experimental feature toggle, in the event of something going wrong, you're also able to create copies of your world manually as an extra precaution.
 
 1. Select the world you want to add experimental features to and select the **Edit** button.
-    :::image type="content" source="Media/ExperimentalFeatures/Edit.png" alt-text="image of a beta world with the edit button selected":::
+
+   ![image of a beta world with the edit button selected](Media/ExperimentalFeatures/Edit.png)
+
 2. Under **Game** settings, navigate down to **Experiments** and select a toggle to enable the feature.
-:::image type="content" source="Media/ExperimentalFeatures/ActivateExperiments.png" alt-text="Image showcasing 4 toggles for experimental features available in Minecraft":::
+
+   ![Image showcasing 4 toggles for experimental features available in Minecraft](Media/ExperimentalFeatures/ExperimentalToggle.png)
+
 3. When you get the popup asking **Activate Experimental Gameplay?**, select **Activate Experiments**.
-    :::image type="content" source="Media/ExperimentalFeatures/ActivateExperiments.png" alt-text="image showing a pop up to confirm if you want ot activate experimental features in minecraft.":::
+
+   ![image showing a pop up to confirm if you want ot activate experimental features in Minecraft](Media/ExperimentalFeatures/ActivateExperiments.png)
 
 Once you select **Activate Experiments**, A copy of your existing world will be created that will get the same name as the original world with “Copy of...” added in front of it.
 

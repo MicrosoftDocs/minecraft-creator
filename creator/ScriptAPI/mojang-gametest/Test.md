@@ -6,7 +6,9 @@ ms.prod: gaming
 title: mojang-gametest.Test Class
 description: Contents of the mojang-gametest.Test class.
 ---
+
 # Test Class
+
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
@@ -70,7 +72,7 @@ Main class for GameTest functions, with helpers and data for manipulating the re
 - [walkToLocation](#walktolocation)
 - [worldBlockLocation](#worldblocklocation)
 - [worldLocation](#worldlocation)
-  
+
 ### **assert**
 `
 assert(condition: boolean, message: string): void

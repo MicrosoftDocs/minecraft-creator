@@ -48,8 +48,12 @@
             href: Documents/ScriptDeveloperTools.md
     - name: Reference Documentation
       items:
-      - name: GameTest API
-        href: ScriptAPI/TOC.yml
+      - name: GameTest
+        items:
+          - name: GameTest Documentation Homepage
+            href: ScriptAPI/index.yml
+          - name: GameTest API
+            href: ScriptAPI/TOC.yml
       - name: JSON Reference Documentation Homepage
         href: Reference/index.yml
       - name: Behavior Pack
