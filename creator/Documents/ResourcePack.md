@@ -122,6 +122,7 @@ You can now design a pattern or any artwork in the editor. In this example, a si
 
 > [!IMPORTANT]
 > While MS Paint is used for this example for it's quick and easy access, there are a few drawbacks as well.
+>
 > - MS Paint does *not* support alpha channels that are commonly used for transparency effects in Minecraft.
 > - MS Paint does *not* support .tga files types.
 

@@ -30,8 +30,6 @@ landingContent:
              url: Content/addonsreference/Examples/AddonBlocks.md
            - text: Addon Entities
              url: Content/addonsreference/Examples/addonEntities.md
-           - text: Addon Geometry
-             url: Content/Addonsreference/Examples/AddonGeometry.md
            - text: Addon Items
              url: Content/Addonsreference/Examples/AddonItems.md
            - text: Addon Manifest JSON

@@ -14,8 +14,8 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |liquid_y_offset| 0.0| Decimal| Vertical offset from the liquid |
-|rise_delta | 0.0| Decimal| displacement for how much the entity will move up in the vertical axis|
-|sink_delta | 0.0| Decimal| displacement for how much the entity will move down in the vertical axis|
+|rise_delta | 0.0| Decimal| Displacement for how much the entity will move up in the vertical axis|
+|sink_delta | 0.0| Decimal| Displacement for how much the entity will move down in the vertical axis|
 
 ## Example
 

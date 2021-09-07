@@ -88,7 +88,7 @@ In definitions\entity\tiger.json:
   "custom:tiger":{
     "scripts":{
       "pre_animation": {
-        "variable.foo = math.sin(query.life_time)"
+        "variable.foo = math.sin(query.life_time);"
       }
     }
   }
@@ -195,7 +195,7 @@ The engine tracks the animation of rotation, position, and scale separately.  Wi
 
 Listed below are common examples of how the Animation format is written in JSON.  Note Matching the geometry format, units are in 1/16ths of meters.
 
-```JSON
+```
 <animation_name>": {
   // optional
   "loop": <bool>                                       // default = false.  Should the animation loop back to t=0.0 when it finishes?

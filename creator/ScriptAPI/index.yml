@@ -1,0 +1,66 @@
+### YamlMime:Landing
+
+title: GameTest Reference Documentation # < 60 chars
+summary: "Landing page containing a high-level introduction of GameTest content for Minecraft: Bedrock Edition." # < 160 chars
+
+metadata:
+  title: GameTest Reference Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: "Landing page containing a high-level introduction of GameTest content for Minecraft: Bedrock Edition."  # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: v-josjones #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-josjones #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/07/2021 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Getting Started with GameTest
+    linkLists:
+      - linkListType: concept
+        links:
+           - text: Introduction to the GameTest Framework
+             url: ../Documents/GameTestGettingStarted.md
+      - linkListType: how-to-guide
+        links:
+           - text: Building your first GameTest
+             url: ../Documents/GameTestBuildYourFirstGameTest.md
+           - text: Use Visual Studio Code tools to write script
+             url: ../Documents/ScriptDeveloperTools.md
+  # Card (optional)
+  - title: mojang-gametest
+    linkLists:
+      - linkListType: overview
+        links:
+           - text: mojang-gametest Module
+             url: mojang-gametest/mojang-gametest.md
+      - linkListType: reference
+        links:
+           - text: RegistrationBuilder Class
+             url: mojang-gametest/RegistrationBuilder.md
+           - text: Test  Class
+             url: mojang-gametest/Test.md
+  # Card (optional)
+  - title: mojang-minecraft
+    linkLists:
+      - linkListType: overview
+        links:
+           - text: mojang-minecraft Module
+             url: mojang-minecraft/mojang-minecraft.md
+      - linkListType: reference
+        links:
+           - text: World Class
+             url: mojang-minecraft/World.md
+           - text: Dimension Class
+             url: mojang-minecraft/Dimension.md
+           - text: Commands Class
+             url: mojang-minecraft/Commands.md
+           - text: Block Class
+             url: mojang-minecraft/Block.md
+           - text: Entity Class
+             url: mojang-minecraft/Entity.md
+           - text: ItemStack Class
+             url: mojang-minecraft/ItemStack.md
