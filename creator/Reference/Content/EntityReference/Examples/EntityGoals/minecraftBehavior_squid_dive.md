@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.squid_dive
+title: Entity Documentation - minecraft:behavior.squid_dive
 ms.prod: gaming
 ---
 
-# minecraft:behavior.squid_dive
+# Entity Documentation - minecraft:behavior.squid_dive
 
 `minecraft:behavior.squid_dive` allows an entity to dive underwater.
 

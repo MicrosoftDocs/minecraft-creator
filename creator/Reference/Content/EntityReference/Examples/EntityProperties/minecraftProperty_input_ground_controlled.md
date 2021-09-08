@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:input_ground_controlled
+title: Entity Documentation - minecraft:input_ground_controlled
 ms.prod: gaming
 ---
 
-# minecraft:input_ground_controlled
+# Entity Documentation -  minecraft:input_ground_controlled
 
 `minecraft:input_ground_controlled` allows a ridable entity the ability to be controlled using keyboard controls when ridden by a player.
 

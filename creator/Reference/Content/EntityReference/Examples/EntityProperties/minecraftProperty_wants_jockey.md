@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:wants_jockey
+title: Entity Documentation - minecraft:wants_jockey
 ms.prod: gaming
 ---
 
-# minecraft:wants_jockey
+# Entity Documentation -  minecraft:wants_jockey
 
 `minecraft:wants_jockey` sets that this entity wants to become a jockey.
 

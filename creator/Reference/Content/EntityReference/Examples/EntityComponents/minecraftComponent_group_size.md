@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:group_size
+title: Entity Documentation - minecraft:group_size
 ms.prod: gaming
 ---
 
-# minecraft:group_size
+# Entity Documentation - minecraft:group_size
 
 `minecraft:group_size` keeps track of entity group size in the given radius.
 

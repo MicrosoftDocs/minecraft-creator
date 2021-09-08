@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:boostable
+title: Entity Documentation - minecraft:boostable
 ms.prod: gaming
 ---
 
-# minecraft:boostable
+# Entity Documentation - minecraft:boostable
 
 `minecraft:boostable` defines the conditions and behavior of a rideable entity's boost.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:custom_hit_test
+title: Entity Documentation - minecraft:custom_hit_test
 ms.prod: gaming
 ---
 
-# minecraft:custom_hit_test
+# Entity Documentation - minecraft:custom_hit_test
 
 `minecraft:custom_hit_test` defines a list of hitboxes for melee and ranged hits against the entity.
 

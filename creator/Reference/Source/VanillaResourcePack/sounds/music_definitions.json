@@ -1,0 +1,17 @@
+{
+  "soulsand_valley": {
+    "event_name" : "music.game.soulsand_valley",
+    "min_delay": 60,
+    "max_delay": 180
+  },
+  "hell": {
+    "event_name" : "music.game.nether_wastes",
+    "min_delay": 60,
+    "max_delay": 180
+  },
+  "crimson_forest": {
+    "event_name" : "music.game.crimson_forest",
+    "min_delay": 60,
+    "max_delay": 180
+  }
+}

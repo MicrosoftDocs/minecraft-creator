@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: has_mob_effect
+title: Entity Documentation - has_mob_effect
 ms.prod: gaming
 ---
 
-# has_mob_effect
+# Entity Documentation - has_mob_effect
 
 Tests whether the Subject has the specified mob effect.
 

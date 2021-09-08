@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:navigation.swim
+title: Entity Documentation - minecraft:navigation.swim
 ms.prod: gaming
 ---
 
-# minecraft:navigation.swim
+# Entity Documentation - minecraft:navigation.swim
 
 `minecraft:navigation.swim` allows this entity to generate paths that include water.
 

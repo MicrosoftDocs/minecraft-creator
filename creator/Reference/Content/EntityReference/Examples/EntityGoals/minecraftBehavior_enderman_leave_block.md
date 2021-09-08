@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.enderman_leave_block
+title: Entity Documentation - minecraft:behavior.enderman_leave_block
 ms.prod: gaming
 ---
 
-# minecraft:behavior.enderman_leave_block
+# Entity Documentation - minecraft:behavior.enderman_leave_block
 
 `minecraft:behavior.enderman_leave_block` allows the entity to drop the block they are currently holding.
 

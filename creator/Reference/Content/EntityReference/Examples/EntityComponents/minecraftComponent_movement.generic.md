@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:movement.generic
+title: Entity Documentation - minecraft:movement.generic
 ms.prod: gaming
 ---
 
-# minecraft:movement.generic
+# Entity Documentation - minecraft:movement.generic
 
 `minecraft:movement.generic` allows a mob to fly, swim, climb, etc.
 

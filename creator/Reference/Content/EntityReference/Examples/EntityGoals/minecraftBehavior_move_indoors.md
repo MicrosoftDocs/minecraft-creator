@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.move_indoors
+title: Entity Documentation - minecraft:behavior.move_indoors
 ms.prod: gaming
 ---
 
-# minecraft:behavior.move_indoors
+# Entity Documentation - minecraft:behavior.move_indoors
 
 `minecraft:behavior.move_indoors` allows an entity to seek shelter within a village by entering a building.
 

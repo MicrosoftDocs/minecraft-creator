@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.dragondeath
+title: Entity Documentation - minecraft:behavior.dragondeath
 ms.prod: gaming
 ---
 
-# minecraft:behavior.dragondeath
+# Entity Documentation - minecraft:behavior.dragondeath
 
 `minecraft:behavior.dragondeath` controls the entity's death state and animation.
 

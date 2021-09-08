@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.pickup_items
+title: Entity Documentation - minecraft:behavior.pickup_items
 ms.prod: gaming
 ---
 
-# minecraft:behavior.pickup_items
+# Entity Documentation - minecraft:behavior.pickup_items
 
 `minecraft:behavior.pickup_items` allows an entity to pick up selected items off the ground.
 

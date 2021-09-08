@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:is_shaking
+title: Entity Documentation - minecraft:is_shaking
 ms.prod: gaming
 ---
 
-# minecraft:is_shaking
+# Entity Documentation -  minecraft:is_shaking
 
 `minecraft:is_shaking` sets an entity is currently shaking.
 

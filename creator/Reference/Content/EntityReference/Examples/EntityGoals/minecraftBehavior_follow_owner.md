@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.follow_owner
+title: Entity Documentation - minecraft:behavior.follow_owner
 ms.prod: gaming
 ---
 
-# minecraft:behavior.follow_owner
+# Entity Documentation - minecraft:behavior.follow_owner
 
 `minecraft:behavior.follow_owner` allows an entity to follow a player marked as an owner.
 

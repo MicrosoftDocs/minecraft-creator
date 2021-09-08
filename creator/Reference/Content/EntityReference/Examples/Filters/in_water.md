@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: in_water
+title: Entity Documentation - in_water
 ms.prod: gaming
 ---
 
-# in_water
+# Entity Documentation - in_water
 
 Returns true when the subject entity is in water.
 

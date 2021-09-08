@@ -1,7 +1,11 @@
 ---
+author: neonerz
+ms.author: v-jeffreykim
 title: Differences Between Minecraft Bedrock Edition and Minecraft Java Edition
-author: ReWrite-Media
+ms.prod: gaming
+description: "An article covering the major differences between Minecraft: Bedrock Edition and Minecraft: Java Edition"
 ---
+
 # Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition
 
 On the surface, Bedrock Edition and Java Edition seem very similar, but under the hood is a completely different story. The different code bases create distinct development environments. This tutorial outlines the major differences you as a content creator should be aware of.
@@ -25,11 +29,11 @@ Bedrock Edition was launched on Sept. 20, 2017 and was based on Minecraft: Pocke
 
 ## World Differences
 
-The most obvious difference between both versions is the world format. Bedrock Edition uses the [LevelDB](https://minecraft.fandom.com/wiki/Bedrock_Edition_level_format#LevelDB_based_format) format for world storage while Java Edition uses the [Anvil](https://minecraft.fandom.com/wiki/Anvil_file_format) format. Due to this, most third-party tools created for Java Edition world editing will not work on Bedrock Edition.
+The most obvious difference between both versions is the world format. Bedrock Edition uses the LevelDB format for world storage while Java Edition uses the Anvil format. Due to this, most third-party tools created for Java Edition world editing will not work on Bedrock Edition.
 
-The two versions also use a fairly different block format. Java Edition has flattened its block format using a unique string for each individual block and storing the state of that block separately. Similarly, Bedrock Edition has moved to a string-based system with [block states](https://minecraft.fandom.com/wiki/Block_states), but have kept some blocks grouped together defined by data value. Basically, this means that blocks are named differently between the versions. In Bedrock Edition, granite would be `stone 1` whereas on Java Edition it’s simply `granite`.
+The two versions also use a fairly different block format. Java Edition has flattened its block format using a unique string for each individual block and storing the state of that block separately. Similarly, Bedrock Edition has moved to a string-based system with block states, but have kept some blocks grouped together defined by data value. Basically, this means that blocks are named differently between the versions. In Bedrock Edition, granite would be `stone 1` whereas on Java Edition it’s simply `granite`.
 
-Another key difference is how the world is generated. Even though both versions use a similar process for generating terrain, they use a different random number generator. This means [seeds](https://minecraft.fandom.com/wiki/Seed_(level_generation))) are not cross-compatible between versions. A seed used in Bedrock Edition will generate differently than it would in Java Edition. This makes creating content in Java Edition aimed for Bedrock Edition a bit more difficult. See the [article on creating survival spawns](SurvivalSpawnCreation.md) for more information about the process of working in Java Edition for Bedrock Edition targeted content. You can also view the article about converting between the two versions [here](ChunkerOverview.md).
+Another key difference is how the world is generated. Even though both versions use a similar process for generating terrain, they use a different random number generator. This means seeds are not cross-compatible between versions. A seed used in Bedrock Edition will generate differently than it would in Java Edition. This makes creating content in Java Edition aimed for Bedrock Edition a bit more difficult.
 
 ## Redstone and Command Differences
 
@@ -40,9 +44,9 @@ summon <entityType: EntityType> [spawnPos: x y z] [spawnEvent: String] [named: S
 ```
 Currently, there’s no way to `/give` players custom items in Bedrock Edition as you can in Java Edition. The item will need to be created beforehand and teleported to the player. The most common ways of doing this is either by placing the item in a chest and breaking the chest, or making an entity drop it on death via loot table.
 
-Aside from that, commands should feel very familiar between Bedrock Edition and Java Edition versions prior to 1.13. The [execute format](https://minecraft.fandom.com/wiki/Commands/execute#Java_Edition) introduced in Java Edition 1.13 is not supported in Bedrock Edition.
+Aside from that, commands should feel very familiar between Bedrock Edition and Java Edition versions prior to 1.13. The execute format introduced in Java Edition 1.13 is not supported in Bedrock Edition.
 
-**Scoreboards** function the same way between the two versions, but Bedrock Edition currently doesn't have support for the wide range of criteria that Java Edition does. Currently, the only criteria supported by Bedrock Edition is the `dummy` criteria. None of the other criteria available in Java Edition have been implemented by Bedrock Edition. More information can be found [here](https://minecraft.fandom.com/wiki/Scoreboard). There’s also no support for commands such as `/stats` or `/team`.
+**Scoreboards** function the same way between the two versions, but Bedrock Edition currently doesn't have support for the wide range of criteria that Java Edition does. Currently, the only criteria supported by Bedrock Edition is the `dummy` criteria. None of the other criteria available in Java Edition have been implemented by Bedrock Edition. There’s also no support for commands such as `/stats` or `/team`.
 
 **Schedule** commands differ between editions. In Java Edition, the `/schedule` command has the following syntax:
 
@@ -65,7 +69,7 @@ Rather than running a function after a certain period of time, functions can be 
 
 Multiple functions can be scheduled for the same location or ticking area. Unlike Java Edition however, scheduled functions cannot be cleared.
 
-**Redstone** functions slightly different as well. Unlike Java Edition, Bedrock Edition doesn’t support [quasi-connectivity](https://minecraft.fandom.com/wiki/Tutorials/Quasi-connectivity). Systems that utilize mechanics such as Block Update Detector (BUD) switches won’t work. Pistons also require one tick to retract, and won’t leave blocks behind if given a one-tick pulse. Even the way updates happen is slightly different. While the vast majority of redstone circuits work well between the two versions, more complex circuits might not.
+**Redstone** functions slightly different as well. Unlike Java Edition, Bedrock Edition doesn’t support quasi-connectivity. Systems that utilize mechanics such as Block Update Detector (BUD) switches won’t work. Pistons also require one tick to retract, and won’t leave blocks behind if given a one-tick pulse. Even the way updates happen is slightly different. While the vast majority of redstone circuits work well between the two versions, more complex circuits might not.
 
 **Resource Packs**
 
@@ -73,7 +77,7 @@ There are a lot of similarities between Bedrock Edition and Java Edition when it
 
 **Behavior Packs**
 
-One of the biggest differences between Bedrock Edition and Java Edition is the use of behavior packs. While functionally similar to the [data packs](https://minecraft.fandom.com/wiki/Data_Pack) in Java Edition, the actual implementation and use of behavior packs vary quite a bit.
+One of the biggest differences between Bedrock Edition and Java Edition is the use of behavior packs. While functionally similar to the data packs in Java Edition, the actual implementation and use of behavior packs vary quite a bit.
 
 Behavior packs bring in new functionality whether it be building your own entities from scratch, adding new blocks and items, or access to events using the JavaScript API. It allows for an enormous amount of flexibility and control and is one of the most powerful parts of Bedrock Edition when compared against Java Edition.
 
@@ -85,7 +89,7 @@ Currently, console controls are the most common input method on Bedrock Edition 
 
 That means when designing experiences in Bedrock Edition, you should be aware of the different types of input players will be using. Also, keep in mind *how* your players are playing. While spam clicking might be OK with a mouse or even a controller, it would provide a poor experience for touch players. Keyboard players with a bow might have perfect aim, but it's a lot more difficult when using a controller or touch controls. Complex parkour might even be game-breaking for a mobile player.
 
-Always remember who's playing your content. While the demographic for Java Edition may trend a bit older, on Bedrock Edition your target audience is much younger. Chances are they’ve never played Bedrock Edition on a PC. View more information about how to optimize your content for different platforms [here](DesigningForCrossPlatformPlay.md).
+Always remember who's playing your content. While the demographic for Java Edition may trend a bit older, on Bedrock Edition your target audience is much younger. Chances are they’ve never played Bedrock Edition on a PC.
 
 **Performance**
 
@@ -105,13 +109,3 @@ If you are coming newly from Java Edition, your first steps in Bedrock Edition w
 
 > [!div class="nextstepaction"]
 > [Getting Started with Add-On Development](GettingStarted.md)
-
-Otherwise, conversion between Bedrock Edition and Java Edition worlds may be of interest.
-
-> [!div class="nextstepaction"]
-> [Chunker Overview](ChunkerOverview.md)
-
-On top of that, converting texture packs between editions can be of use.
-
-> [!div class="nextstepaction"]
-> [Converting Texture Packs](ConvertingTexturePacksFromJavaEditionToBedrockEdition.md)

@@ -1,12 +1,12 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Built-in Event List
-description: 
+title: Entity Documentation - Built-in Event List
+description:
 ms.prod: gaming
 ---
 
-# Built-in Event list
+# Entity Documentation - Built-in Event list
 
 Below is a list of all the available Built-in Events within Minecraft:Bedrock Edition for use with Entity JSON files.
 

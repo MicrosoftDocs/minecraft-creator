@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:damage_over_time
+title: Entity Documentation - minecraft:damage_over_time
 ms.prod: gaming
 ---
 
-# minecraft:damage_over_time
+# Entity Documentation - minecraft:damage_over_time
 
 `minecraft:damage_over_time` applies a defined amount of damage to the entity at specified intervals.
 

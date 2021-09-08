@@ -1,7 +1,11 @@
 ---
+author: neonerz
+ms.author: v-jeffreykim
 title: Loot and Trade Table Functions
-author: ReWrite-Media
+ms.prod: gaming
+description: An article showcasing the similarities and differences between Loot Tables and Trade Tables
 ---
+
 # Loot and Trade Table Functions
 
 Both loot and trade tables share a similar same function set. While most work on both, some only work within a specific type. There are limitations to loot/trade tables in general: for instance, there isn't a way to add `can_place_on` or `can_destroy` onto an item through loot or trade tables. See below for the different functions available and an example on how they can be used.
@@ -143,7 +147,7 @@ You can also define the enchantments as objects to specifically define an enchan
                              {
                                 "id": "unbreaking",
                                 "level": 3
-                             }                     
+                             }
                           ]
                        }
                     ]
@@ -170,7 +174,7 @@ This function allows you to modify the count of how many items are returned when
                                 "min": 0,
                                 "max": 1
                             }
-                        }                        
+                        }
                     ]
                 }
 ```
@@ -223,31 +227,31 @@ Similar to `random_block_state`, this allows you to pick a random auxiliary valu
 This function only works with a spawn egg and is used to set the entity ID of that spawn egg.
 
 ```json
-                { 
-                    "type": "item", 
-                    "name": "minecraft:stone", 
-                    "weight": 1, 
-                    "functions": [ 
-                        { 
-                            "function": "set_actor_id", 
-                            "id": "compass:cool_entity" 
-                        } 
-                    ] 
+                {
+                    "type": "item",
+                    "name": "minecraft:stone",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_actor_id",
+                            "id": "compass:cool_entity"
+                        }
+                    ]
                 }
 ```
 
 You can also inherit the entity ID of the entity that's associated with that loot table (i.e., make a rabbit drop a rabbit spawn egg) by omitting the `id`.
 
 ```json
-                { 
-                    "type": "item", 
-                    "name": "minecraft:spawn_egg", 
-                    "weight": 1, 
-                    "functions": [ 
-                        { 
-                            "function": "set_actor_id" 
-                        } 
-                    ] 
+                {
+                    "type": "item",
+                    "name": "minecraft:spawn_egg",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_actor_id"
+                        }
+                    ]
                 }
 ```
 
@@ -268,7 +272,7 @@ This function only works on banners and currently only supports a banner `type` 
                             "type": 1
                         }
                     ]
-                } 
+                }
 ```
 
 ### set_book_contents
@@ -310,7 +314,7 @@ You can also use `rawtext` to localize the content of the book. When using `rawt
                             ]
                         }
                     ]
-                } 
+                }
 ```
 
 Be aware that you can only use `rawtext` on the book’s contents (`pages`) at the timing of writing this — `rawtext` **does not** work for the `author` or `title` tags.
@@ -405,7 +409,7 @@ Sets the data value of a block or item to an exact id. The following example wil
                             "data": 4
                         }
                     ]
-                } 
+                }
 ```
 
 ### set_data_from_color_index

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:admire_item
+title: Entity Documentation - minecraft:admire_item
 ms.prod: gaming
 ---
 
-# minecraft:admire_item
+# Entity Documentation - minecraft:admire_item
 
 `minecraft:admire_item` allows an entity to ignore attackable targets for a given duration.
 

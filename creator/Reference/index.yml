@@ -1,0 +1,185 @@
+### YamlMime:Landing
+
+title: JSON Reference Documentation # < 60 chars
+summary: "Landing page containing all JSON documentation for Minecraft: Bedrock Edition." # < 160 chars
+
+metadata:
+  title: JSON Reference Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: "Landing page containing all JSON documentation for Minecraft: Bedrock Edition." # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: v-josjones #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-josjones #Required; microsoft alias of author; team alias.
+  ms.date: 08/27/2021 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (comment to space cards)
+  - title: Addons
+    linkLists:
+      - linkListType: overview
+        links:
+           - text: Addons JSON Documentation Homepage
+             url: Content/addonsreference/index.yml
+      - linkListType: reference
+        links:
+           - text: Addon Blocks
+             url: Content/addonsreference/Examples/AddonBlocks.md
+           - text: Addon Entities
+             url: Content/addonsreference/Examples/addonEntities.md
+           - text: Addon Items
+             url: Content/Addonsreference/Examples/AddonItems.md
+           - text: Addon Manifest JSON
+             url: Content/addonsreference/Examples/AddonManifest.md
+  # Card (comment to space cards)
+  - title: Animation
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Animation JSON Documentation Homepage
+            url: Content/animationsreference/index.yml
+          - text: Animation Reference - Getting Started
+            url: Content/animationsreference/Examples/AnimationGettingStarted.md
+      - linkListType: reference
+        links:
+          - text: Animation Reference - Upgrading Animation Scripts
+            url: Content/animationsreference/Examples/AnimationUpgrade.md
+          - text: Animation Controllers
+            url: Content/animationsreference/Examples/AnimationController.md
+          - text: Render Controllers
+            url: Content/animationsreference/Examples/AnimationRenderController.md
+  # Card (comment to space cards)
+  - title: Biome and Fogs
+    linkLists:
+      - linkListType: overview
+        links:
+           - text: Biome overview
+             url: Content/biomereference/Examples/Biomeoverview.md
+           - text: Introduction to Fogs
+             url: Content/FogsReference/Examples/FogsIntroduction.md
+  # Card (comment to space cards)
+  - title: Blocks
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Blocks JSON Documentation Homepage
+            url: Content/blockreference/index.yml
+          - text: Block Definitions and Properties
+            url: Content/blockreference/Examples/Definitions/BlockDefinitionProperties.md
+      - linkListType: reference
+        links:
+          - text: Block Components List
+            url: Content/blockreference/Examples/BlockComponentsList.md
+          - text: Block Trigger List
+            url: Content/blockreference/Examples/BlockTriggerList.md
+          - text: Block Event Responses List
+            url: Content/blockreference/Examples/BlockEventList.md
+  # Card (comment to space cards)
+  - title: Entities
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Entity JSON Documentation Homepage
+            url: Content/entityreference/index.yml
+          - text: Entity JSON Introduction
+            url: Content/entityreference/Examples/ClientEntityDocumenation/ClientEntityDocumentationIntroduction.md
+          - text: Spawn Rules and Data-Driven Spawning
+            url:  Content/entityreference/Examples/ClientEntityDocumenation/DataDrivenSpawning.md
+      - linkListType: reference
+        links:
+          - text: AI Goal List
+            url: Content/entityreference/Examples/AIGoalList.md
+          - text: Components List
+            url: Content/entityreference/Examples/ComponentList.md
+          - text: Filters List
+            url: Content/entityreference/Examples/FilterList.md
+          - text: Properties List
+            url: Content/entityreference/Examples/PropertiesList.md
+          - text: Attributes List
+            url: Content/entityreference/Examples/AttributeList.md
+          - text: Events List
+            url: Content/entityreference/Examples/EventList.md
+          - text: Trigger List
+            url: Content/entityreference/Examples/TriggerList.md
+          - text: Entity Behavior List
+            url: Content/entityreference/Examples/EntityList.md
+          - text: Entity JSON ID List
+            url: Content/entityreference/Examples/ClientEntityDocumenation/IDLists.md
+  # Card (comment to space cards)
+  - title: Features
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Features JSON Documentation Homepage
+            url: Content/featuresreference/index.yml
+          - text: Introduction to Features
+            url: Content/FeaturesReference/Examples/FeaturesIntroduction.md
+      - linkListType: reference
+        links:
+          - text: Feature List
+            url: Content/featuresreference/Examples/FeatureList.md
+  # Card (comment to space cards)
+  - title: Items
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Item Components List
+            url: Content/itemreference/Examples/ItemComponentList.md
+  # Card (optional)
+  - title: Molang
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Introduction to Molang
+            url: Content/molangreference/Examples/MolangConcepts/MolangIntroduction.md
+          - text: Domain Examples
+            url: Content/molangreference/Examples/MolangConcepts/DomainExamples.md
+      - linkListType: reference
+        links:
+          - text: Query Functions
+            url: Content/molangreference/Examples/MolangConcepts/QueryFunctions.md
+          - text: Experimental Query Functions
+            url: Content/molangreference/Examples/MolangConcepts/ExperimentalQueryFunctions.md
+  # Card (optional)
+  - title: Recipes
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Recipe Definition List
+            url: Content/recipereference/Examples/RecipeDefinitionList.md
+          - text: Furnace Recipe
+            url: Content/recipereference/Examples/RecipeDefinitions/minecraftRecipe_Furnace.md
+          - text: Shaped Recipe
+            url: Content/recipereference/Examples/RecipeDefinitions/minecraftRecipe_Shaped.md
+          - text: Shapeless Recipe
+            url: Content/recipereference/Examples/RecipeDefinitions/minecraftRecipe_Shapeless.md
+          - text: Potion Brewing Recipe
+            url: Content/recipereference/Examples/RecipeDefinitions/minecraftRecipe_PotionBrewing.md
+  # Card (optional)
+  - title: Schemas
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Schema Documentation Homepage
+            url: Content/schemasreference/index.yml
+          - text: Schema List
+            url: Content/schemasreference/schemas/TOC.yml
+  # Card (comment to space cards)
+  - title: Texture Sets
+    linkLists:
+      - linkListType: overview
+        links:
+           - text: Introduction to Texture Sets
+             url: Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md
+  # Card (comment to space cards)
+  - title: Volumes
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Volume Properties & Descriptions
+            url: Content/volumeReference/Examples/VolumeDefinitions/VolumeDefinitionProperties.md
+          - text: Volume Components List
+            url: Content/volumeReference/Examples/VolumeComponentsList.md

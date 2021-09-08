@@ -1,7 +1,11 @@
 ---
+author: neonerz
+ms.author: v-jeffreykim
 title: Editing NBT Safely
-author: ReWrite-Media
+ms.prod: gaming
+description: An article covering how to utilize NBT to edit data strings for entities, items and blocks
 ---
+
 # Editing NBT Safely
 
 This article introduces you to "NBT editing" -- the use of tools to edit data strings stored in entities, items, and some blocks -- and how to avoid editing it in such a way that's likely to break in the future.

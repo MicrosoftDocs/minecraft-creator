@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: rider_count
+title: Entity Documentation - rider_count
 ms.prod: gaming
 ---
 
-# rider_count
+# Entity Documentation - rider_count
 
 Returns the number of riders on this entity.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.find_mount
+title: Entity Documentation - minecraft:behavior.find_mount
 ms.prod: gaming
 ---
 
-# minecraft:behavior.find_mount
+# Entity Documentation - minecraft:behavior.find_mount
 
 `minecraft:behavior.find_mount` allows an entity to find another entity to mount.
 

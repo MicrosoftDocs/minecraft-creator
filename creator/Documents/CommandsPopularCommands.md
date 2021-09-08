@@ -1,7 +1,11 @@
 ---
+author: neonerz
+ms.author: v-jeffreykim
 title: Popular Commands
-author: ReWrite-Media
+ms.prod: gaming
+description: "A guide covering many of the most common commands that are used within Minecraft: Bedrock Edition"
 ---
+
 # Popular Commands
 
 There are a number of commands that are vital to many command systems. This list will go over the more popular and useful commands that are likely to be used in some fashion.
@@ -201,8 +205,6 @@ The `/say`, `/tell`, and `/title` commands are not ideal when presenting informa
 
 /tellraw @a {"rawtext":[{"text":"Hello World"}]}
 ```
-
-For more information on how to localize your content using rawtext, see the tutorial on [Preparing Raw Text for Localization](PreparingRawTextForLocalization.md).
 
 ## /scoreboard
 

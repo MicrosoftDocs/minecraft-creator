@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:sound_volume
+title: Entity Documentation - minecraft:sound_volume
 ms.prod: gaming
 ---
 
-# minecraft:sound_volume
+# Entity Documentation -  minecraft:sound_volume
 
 `minecraft:sound_volume` sets the entity's base volume for sound effects.
 

@@ -1,0 +1,248 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "powder_snow": {
+      "textures": "textures/blocks/powder_snow"
+    },
+    "glow_item_frame": {
+      "textures": "textures/blocks/glow_item_frame"
+    },
+    "glow_lichen": {
+      "textures": "textures/blocks/glow_lichen"
+    },
+    "amethyst_block": {
+      "textures": "textures/blocks/amethyst_block"
+    },
+    "amethyst_cluster": {
+      "textures": "textures/blocks/amethyst_cluster"
+    },
+    "large_amethyst_bud": {
+      "textures": "textures/blocks/large_amethyst_bud"
+    },
+    "medium_amethyst_bud": {
+      "textures": "textures/blocks/medium_amethyst_bud"
+    },
+    "small_amethyst_bud": {
+      "textures": "textures/blocks/small_amethyst_bud"
+    },
+    "budding_amethyst": {
+      "textures": "textures/blocks/budding_amethyst"
+    },
+    "calcite": {
+      "textures": "textures/blocks/calcite"
+    },
+    "tinted_glass": {
+      "textures": "textures/blocks/tinted_glass"
+    },
+    "tuff": {
+      "textures": "textures/blocks/tuff"
+    },
+    "smooth_basalt": {
+      "textures": "textures/blocks/smooth_basalt"
+    },
+    "chiseled_deepslate": {
+      "textures": "textures/blocks/deepslate/chiseled_deepslate"
+    },
+    "cobbled_deepslate": {
+      "textures": "textures/blocks/deepslate/cobbled_deepslate"
+    },
+    "pointed_dripstone_base": {
+      "textures": [
+        "textures/blocks/pointed_dripstone_down_base",
+        "textures/blocks/pointed_dripstone_up_base"
+      ]
+    },
+    "pointed_dripstone_tip": {
+      "textures": [
+        "textures/blocks/pointed_dripstone_down_tip",
+        "textures/blocks/pointed_dripstone_up_tip"
+      ]
+    },
+    "pointed_dripstone_frustum": {
+      "textures": [
+        "textures/blocks/pointed_dripstone_down_frustum",
+        "textures/blocks/pointed_dripstone_up_frustum"
+      ]
+    },
+    "pointed_dripstone_middle": {
+      "textures": [
+        "textures/blocks/pointed_dripstone_down_middle",
+        "textures/blocks/pointed_dripstone_up_middle"
+      ]
+    },
+    "pointed_dripstone_merge": {
+      "textures": [
+        "textures/blocks/pointed_dripstone_down_merge",
+        "textures/blocks/pointed_dripstone_up_merge"
+      ]
+    },
+    "dripstone_block": {
+      "textures": "textures/blocks/dripstone_block"
+    },
+    "big_dripleaf_side1": {
+      "textures": "textures/blocks/big_dripleaf_side1"
+    },
+    "big_dripleaf_side2": {
+      "textures": "textures/blocks/big_dripleaf_side2"
+    },
+    "big_dripleaf_stem": {
+      "textures": "textures/blocks/big_dripleaf_stem"
+    },
+    "big_dripleaf_top": {
+      "textures": "textures/blocks/big_dripleaf_top"
+    },
+    "small_dripleaf_top": {
+      "textures": "textures/blocks/small_dripleaf_top"
+    },
+    "small_dripleaf_side": {
+      "textures": "textures/blocks/small_dripleaf_side"
+    },
+    "small_dripleaf_stem_top": {
+      "textures": "textures/blocks/small_dripleaf_stem_top"
+    },
+    "small_dripleaf_stem_bottom": {
+      "textures": "textures/blocks/small_dripleaf_stem_bottom"
+    },
+    "dirt_with_roots": {
+      "textures": "textures/blocks/dirt_with_roots"
+    },
+    "hanging_roots": {
+      "textures": "textures/blocks/hanging_roots"
+    },
+    "spore_blossom": {
+      "textures": "textures/blocks/spore_blossom"
+    },
+    "spore_blossom_base": {
+      "textures": "textures/blocks/spore_blossom_base"
+    },
+    "azalea_leaves": {
+      "textures": [
+        "textures/blocks/azalea_leaves",
+        "textures/blocks/azalea_leaves_opaque"
+      ]
+    },
+    "azalea_leaves_flowered": {
+      "textures": [
+        "textures/blocks/azalea_leaves_flowers",
+        "textures/blocks/azalea_leaves_flowers_opaque"
+      ]
+    },
+    "azalea_plant": {
+      "textures": "textures/blocks/azalea_plant"
+    },
+    "azalea_side": {
+      "textures": "textures/blocks/azalea_side"
+    },
+    "azalea_top": {
+      "textures": "textures/blocks/azalea_top"
+    },
+    "flowering_azalea_side": {
+      "textures": "textures/blocks/flowering_azalea_side"
+    },
+    "flowering_azalea_top": {
+      "textures": "textures/blocks/flowering_azalea_top"
+    },
+    "cave_vines_head": {
+      "textures": [
+        "textures/blocks/cave_vines_head",
+        "textures/blocks/cave_vines_head_berries"
+      ]
+    },
+    "cave_vines_body": {
+      "textures": [
+        "textures/blocks/cave_vines_body",
+        "textures/blocks/cave_vines_body_berries"
+      ]
+    },
+    "moss_block": {
+      "textures": "textures/blocks/moss_block"
+    },
+    "deepslate": {
+      "textures": "textures/blocks/deepslate/deepslate"
+    },
+    "deepslate_bricks": {
+      "textures": "textures/blocks/deepslate/deepslate_bricks"
+    },
+    "deepslate_diamond_ore": {
+      "textures": "textures/blocks/deepslate/deepslate_diamond_ore"
+    },
+    "deepslate_gold_ore": {
+      "textures": "textures/blocks/deepslate/deepslate_gold_ore"
+    },
+    "deepslate_iron_ore": {
+      "textures": "textures/blocks/deepslate/deepslate_iron_ore"
+    },
+    "deepslate_lapis_ore": {
+      "textures": "textures/blocks/deepslate/deepslate_lapis_ore"
+    },
+    "deepslate_redstone_ore": {
+      "textures": "textures/blocks/deepslate/deepslate_redstone_ore"
+    },
+    "deepslate_tiles": {
+      "textures": "textures/blocks/deepslate/deepslate_tiles"
+    },
+    "deepslate_top": {
+      "textures": "textures/blocks/deepslate/deepslate_top"
+    },
+    "polished_deepslate": {
+      "textures": "textures/blocks/deepslate/polished_deepslate"
+    },
+    "deepslate_coal_ore": {
+      "textures": "textures/blocks/deepslate/deepslate_coal_ore"
+    },
+    "deepslate_emerald_ore": {
+      "textures": "textures/blocks/deepslate/deepslate_emerald_ore"
+    },
+    "deepslate_copper_ore": {
+      "textures": "textures/blocks/deepslate/deepslate_copper_ore"
+    },
+    "cracked_deepslate_tiles": {
+      "textures": "textures/blocks/deepslate/cracked_deepslate_tiles"
+    },
+    "cracked_deepslate_bricks": {
+      "textures": "textures/blocks/deepslate/cracked_deepslate_bricks"
+    },
+    "copper_ore": {
+      "textures": "textures/blocks/copper_ore"
+    },
+    "copper_block": {
+      "textures": "textures/blocks/copper_block"
+    },
+    "exposed_copper": {
+      "textures": "textures/blocks/exposed_copper"
+    },
+    "weathered_copper": {
+      "textures": "textures/blocks/weathered_copper"
+    },
+    "oxidized_copper": {
+      "textures": "textures/blocks/oxidized_copper"
+    },
+    "cut_copper": {
+      "textures": "textures/blocks/cut_copper"
+    },
+    "exposed_cut_copper": {
+      "textures": "textures/blocks/exposed_cut_copper"
+    },
+    "weathered_cut_copper": {
+      "textures": "textures/blocks/weathered_cut_copper"
+    },
+    "oxidized_cut_copper": {
+      "textures": "textures/blocks/oxidized_cut_copper"
+    },
+    "lightning_rod": {
+      "textures": "textures/blocks/lightning_rod"
+    },
+    "raw_copper_block": {
+      "textures": "textures/blocks/raw_copper_block"
+    },
+    "raw_iron_block": {
+      "textures": "textures/blocks/raw_iron_block"
+    },
+    "raw_gold_block": {
+      "textures": "textures/blocks/raw_gold_block"
+    }
+  }
+}

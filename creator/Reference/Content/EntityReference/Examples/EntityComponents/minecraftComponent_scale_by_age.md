@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:scale_by_age
+title: Entity Documentation - minecraft:scale_by_age
 ms.prod: gaming
 ---
 
-# minecraft:scale_by_age
+# Entity Documentation - minecraft:scale_by_age
 
 `minecraft:scale_by_age` defines the entity's size interpolation based on the entity's age.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.move_to_random_block
+title: Entity Documentation - minecraft:behavior.move_to_random_block
 ms.prod: gaming
 ---
 
-# minecraft:behavior.move_to_random_block
+# Entity Documentation - minecraft:behavior.move_to_random_block
 
 `minecraft:behavior.move_to_random_block` allows an entity to move to a random block within a set radius.
 

@@ -1,10 +1,14 @@
 ---
+author: neonerz
+ms.author: v-jeffreykim
 title: Introduction to Loot Tables
-author: ReWrite-Media
+ms.prod: gaming
+description: "An overview covering what Loot Tables are and how they are used in Minecraft: Bedrock Edition"
 ---
+
 # Introduction to Loot Tables
 
-Loot tables are [JSON](https://www.w3schools.com/whatis/whatis_json.asp) formatted files used to define how items are generated in-game. They can be used to generate the contents of chests, define what items an entity drops upon death, or even what items an entity is equipped with. In some instances, it’s even used in gameplay mechanics such as milking a mooshroom or fishing.
+Loot tables are JSON formatted files used to define how items are generated in-game. They can be used to generate the contents of chests, define what items an entity drops upon death, or even what items an entity is equipped with. In some instances, it’s even used in gameplay mechanics such as milking a mooshroom or fishing.
 
 Loot tables generally consist of three main sections known as a “pool.”
 
@@ -54,9 +58,9 @@ As you can see, we defined a single pool that rolls only once and contains a sin
 Now, what if you wanted to choose from two items? What if we wanted to return a diamond or a piece of coal? That would be achieved by adding a second value to the `entries` object.
 
 ```json
-{ 
-    "pools": [ 
-        { 
+{
+    "pools": [
+        {
             "rolls": 1,
             "entries": [
                 {
@@ -68,16 +72,16 @@ Now, what if you wanted to choose from two items? What if we wanted to return a 
                     "name": "minecraft:coal"
                 }
             ]
-        } 
-    ] 
-} 
+        }
+    ]
+}
 ```
 
 What you’ll notice here is now a diamond is just as likely to drop as a piece of coal. All `entries` have a `weight` assigned to them. If you don’t specify one, it will default to `1` giving all `entries` an equal chance of being rolled. In order to adjust that, we’ll need to define the `weight` value ourselves.
 
 ```json
-{ 
-    "pools": [ 
+{
+    "pools": [
         {
             "rolls": 1,
             "entries": [
@@ -92,9 +96,9 @@ What you’ll notice here is now a diamond is just as likely to drop as a piece 
                     "weight": 7
                 }
             ]
-        } 
-    ] 
-} 
+        }
+    ]
+}
 ```
 
 The best way to understand how `weight` affects the roll is to imagine the above example doesn’t have two entries — it has eight: Seven chances for coal and one chance for diamond. That means it’s seven times more likely for the roll to result in a piece of coal instead of a diamond.
@@ -104,9 +108,9 @@ Even though the `quality` modifier from Java Edition (which adjusts the `weight`
 You can also randomize the amount of times a set of `entries` are rolled. The `rolls` key can be set with a `min` and `max` value that the game will choose randomly from.
 
 ```json
-{ 
-    "pools": [ 
-        { 
+{
+    "pools": [
+        {
             "rolls": {
                 "min": 1,
                 "max": 3
@@ -123,9 +127,9 @@ You can also randomize the amount of times a set of `entries` are rolled. The `r
                     "weight": 7
                 }
             ]
-        } 
-    ] 
-} 
+        }
+    ]
+}
 ```
 
 The above will cause the game to roll the entries one to three times. This results in a minimum of one item and a maximum of three every time this loot table is called.
@@ -133,9 +137,9 @@ The above will cause the game to roll the entries one to three times. This resul
 Here’s another example using a loot table as one of the entries. This will cause the game to call the other loot table and return whatever that results in.
 
 ```json
-{ 
-    "pools": [ 
-        { 
+{
+    "pools": [
+        {
             "rolls": {
                 "min": 1,
                 "max": 3
@@ -155,11 +159,11 @@ Here’s another example using a loot table as one of the entries. This will cau
                     "type": "loot_table",
                     "name": "loot_tables/custom/some_loot_table",
                     "weight": 1
-                }                
+                }
             ]
-        } 
-    ] 
-} 
+        }
+    ]
+}
 ```
 
 Be aware that loot tables cannot refer to itself in any way. If a roll results in a recursive loot table, nothing will be returned.
@@ -266,7 +270,7 @@ You can define the enchantments as objects to also define an enchantment level. 
                              {
                                 "id": "unbreaking",
                                 "level": 3
-                             }                     
+                             }
                           ]
                         }
                     ]
@@ -289,7 +293,7 @@ Multiple functions can be defined. Here’s an example of combining two function
                               "min": 1,
                               "max": 3
                             }
-                        },                        
+                        },
                         {
                             "function": "set_data",
                             "data": 21
@@ -314,7 +318,7 @@ For example, using multiple `set_count` functions, like with the example below, 
                               "min": 1,
                               "max": 3
                             }
-                        },                        
+                        },
                         {
                             "function": "set_count",
                             "count": {
@@ -337,15 +341,15 @@ Applying a condition to a pool allows you execute the entire pool based on the c
 The below example will only trigger if the entity calling it was killed by a skeleton resulting in either a diamond or piece of coal.
 
 ```json
-{ 
-    "pools": [        
-        { 
+{
+    "pools": [
+        {
             "conditions": [
                 {
                     "condition": "killed_by_entity",
                     "entity_type": "minecraft:skeleton"
                 }
-            ],            
+            ],
             "rolls": 1,
             "entries": [
                 {
@@ -359,9 +363,9 @@ The below example will only trigger if the entity calling it was killed by a ske
                     "weight": 1
                 }
             ]
-        } 
-    ] 
-} 
+        }
+    ]
+}
 ```
 
 ### Entry conditions
@@ -369,9 +373,9 @@ The below example will only trigger if the entity calling it was killed by a ske
 You can also apply conditions to specific `entries` within the roll. The following example will only return diamond 50% of the time if the entity that called it was killed by the player. All other times it’s called, it will return coal.
 
 ```json
-{ 
-    "pools": [        
-        {          
+{
+    "pools": [
+        {
             "rolls": 1,
             "entries": [
                 {
@@ -382,17 +386,17 @@ You can also apply conditions to specific `entries` within the roll. The followi
                         {
                             "condition": "killed_by_player"
                         }
-                    ]    
+                    ]
                 },
                 {
                     "type": "item",
                     "name": "minecraft:coal",
-                    "weight": 1                
+                    "weight": 1
                 }
             ]
-        } 
-    ] 
-} 
+        }
+    ]
+}
 ```
 
 Exploring the different [functions](#functions-and-modifying-items) and [conditions](#conditions) available can allow you to really customize your player’s experience. You can name items and give them lore, drop resource crates full of supplies, and even create written books for instructions or information.

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: has_ranged_weapon
+title: Entity Documentation - has_ranged_weapon
 ms.prod: gaming
 ---
 
-# has_ranged_weapon
+# Entity Documentation - has_ranged_weapon
 
 Returns true when the subject entity is holding a ranged weapon like a bow or crossbow.
 

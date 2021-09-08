@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:variant
+title: Entity Documentation - minecraft:variant
 ms.prod: gaming
 ---
 
-# minecraft:variant
+# Entity Documentation -  minecraft:variant
 
 `minecraft:variant` is used to differentiate the component group of a variant of an entity from others, such as `ocelot`, `villager` and `horse`.
 

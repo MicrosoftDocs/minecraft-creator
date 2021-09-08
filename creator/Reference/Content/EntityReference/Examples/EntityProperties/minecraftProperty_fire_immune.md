@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:fire_immune
+title: Entity Documentation - minecraft:fire_immune
 ms.prod: gaming
 ---
 
-# minecraft:fire_immune
+# Entity Documentation -  minecraft:fire_immune
 
 `minecraft:fire_immune` allows an entity to take 0 damage from fire.
 

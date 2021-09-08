@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:genetics
+title: Entity Documentation - minecraft:genetics
 ms.prod: gaming
 ---
 
-# minecraft:genetics
+# Entity Documentation - minecraft:genetics
 
 `minecraft:genetics` defines the way a mob's genes and alleles are passed on to its offspring, and how those traits manifest in the child. Compatible parent genes are crossed together, the alleles are handed down from the parents to the child, and any matching genetic variants fire off JSON events to modify the child and express the traits.
 

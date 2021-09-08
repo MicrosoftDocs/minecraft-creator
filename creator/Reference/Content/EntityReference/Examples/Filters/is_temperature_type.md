@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_temperature_type
+title: Entity Documentation - is_temperature_type
 ms.prod: gaming
 ---
 
-# is_temperature_type
+# Entity Documentation - is_temperature_type
 
 Tests whether the current temperature is a given type.
 

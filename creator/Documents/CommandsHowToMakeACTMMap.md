@@ -1,7 +1,11 @@
 ---
+author: neonerz
+ms.author: v-jeffreykim
 title: How To Make a Complete the Monument Map
-author: ReWrite-Media
+ms.prod: gaming
+description: A tutorial covering how to create a "Complete the Monument" style map utilizing Command Blocks
 ---
+
 # Commands - How To Make a Complete the Monument Map
 
 Now it’s time to create a complete command system: detecting the completion of a monument for a short “Complete the Monument” map.

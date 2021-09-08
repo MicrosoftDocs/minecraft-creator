@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:is_dyeable
+title: Entity Documentation - minecraft:is_dyeable
 ms.prod: gaming
 ---
 
-# minecraft:is_dyeable
+# Entity Documentation -  minecraft:is_dyeable
 
 `minecraft:is_dyeable` allows the entity to be interacted with dyes to change its color.
 

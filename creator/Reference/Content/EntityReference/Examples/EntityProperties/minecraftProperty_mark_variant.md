@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:mark_variant
+title: Entity Documentation - minecraft:mark_variant
 ms.prod: gaming
 ---
 
-# minecraft:mark_variant
+# Entity Documentation -  minecraft:mark_variant
 
 `minecraft:mark_variant` sets the variant for the entity to be used.
 

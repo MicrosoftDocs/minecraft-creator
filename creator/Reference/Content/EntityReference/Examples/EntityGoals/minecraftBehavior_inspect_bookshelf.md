@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.inspect_bookshelf
+title: Entity Documentation - minecraft:behavior.inspect_bookshelf
 ms.prod: gaming
 ---
 
-# minecraft:behavior.inspect_bookshelf
+# Entity Documentation - minecraft:behavior.inspect_bookshelf
 
 `minecraft:behavior.inspect_bookshelf` allows an entity to look at and inspect a bookshelf.
 

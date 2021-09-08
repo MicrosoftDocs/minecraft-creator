@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:break_blocks
+title: Entity Documentation - minecraft:break_blocks
 ms.prod: gaming
 ---
 
-# minecraft:break_blocks
+# Entity Documentation - minecraft:break_blocks
 
 `minecraft:break_blocks` specifies the blocks that the entity can break as it moves around.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:walk_animation_speed
+title: Entity Documentation - minecraft:walk_animation_speed
 ms.prod: gaming
 ---
 
-# minecraft:walk_animation_speed
+# Entity Documentation -  minecraft:walk_animation_speed
 
 `minecraft:walk_animation_speed` sets the speed multiplier for this entity's walk animation speed.
 

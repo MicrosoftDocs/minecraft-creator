@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.random_fly
+title: Entity Documentation - minecraft:behavior.random_fly
 ms.prod: gaming
 ---
 
-# minecraft:behavior.random_fly
+# Entity Documentation - minecraft:behavior.random_fly
 
 `minecraft:behavior.random_fly` allows an entity to fly to a random spot.
 

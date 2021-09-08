@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_biome
+title: Entity Documentation - is_biome
 ms.prod: gaming
 ---
 
-# is_biome
+# Entity Documentation - is_biome
 
 Tests whether the Subject is currently in the named biome.
 

@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:trusting
+title: Entity Documentation - minecraft:trusting
 ms.prod: gaming
 ---
 
-# minecraft:trusting
+# Entity Documentation - minecraft:trusting
 
 `minecraft:trusting` defines the rules for a mob to trust players.
 

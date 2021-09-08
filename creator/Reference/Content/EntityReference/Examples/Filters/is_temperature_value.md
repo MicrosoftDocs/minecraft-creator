@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_temperature_value
+title: Entity Documentation - is_temperature_value
 ms.prod: gaming
 ---
 
-# is_temperature_value
+# Entity Documentation - is_temperature_value
 
 Tests the current temperature against a provided value in the range (0.0, 1.0) where 0.0 is the coldest temp and 1.0 is the hottest.
 

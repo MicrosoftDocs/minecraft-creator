@@ -1,10 +1,10 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:tameable
+title: Entity Documentation - minecraft:tameable
 ms.prod: gaming
 ---
-# minecraft:tameable
+# Entity Documentation - minecraft:tameable
 
 `minecraft:tameable` defines the rules for a mob to be tamed by the player.
 

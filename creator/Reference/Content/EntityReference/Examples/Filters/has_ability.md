@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: has_ability
+title: Entity Documentation - has_ability
 ms.prod: gaming
 ---
 
-# has_ability
+# Entity Documentation - has_ability
 
 Returns true when the subject entity has the named ability.
 

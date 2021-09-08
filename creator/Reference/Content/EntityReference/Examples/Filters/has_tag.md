@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: has_tag
+title: Entity Documentation - has_tag
 ms.prod: gaming
 ---
 
-# has_tag
+# Entity Documentation - has_tag
 
 Returns true if the subject entity has the tag provided.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:can_power_jump
+title: Entity Documentation - minecraft:can_power_jump
 ms.prod: gaming
 ---
 
-# minecraft:can_power_jump
+# Entity Documentation -  minecraft:can_power_jump
 
 `minecraft:can_power_jump` allows an entity to power jump similar to the `horse` entity.
 

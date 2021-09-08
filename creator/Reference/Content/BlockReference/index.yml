@@ -1,0 +1,66 @@
+### YamlMime:Landing
+
+title: Block JSON Documentation # < 60 chars
+summary: "Landing page containing all Block JSON documentation for Minecraft: Bedrock Edition." # < 160 chars
+
+metadata:
+  title: Block JSON Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: "Landing page containing all Block JSON documentation for Minecraft: Bedrock Edition." # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: v-josjones #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-josjones #Required; microsoft alias of author; optional team alias.
+  ms.date: 06/18/2021 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: Getting Started with Blocks
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Adding a Custom Block
+            url:  ../../../Documents/CustomBlock.md
+          - text: Block Definitions and Properties
+            url: Examples/Definitions/BlockDefinitionProperties.md
+  # Card (optional)
+  - title: Block Components
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Block Components List
+            url: Examples/BlockComponentsList.md
+          - text: "minecraft:flammable"
+            url: Examples/BlockComponents/minecraftBlock_flammable.md
+          - text: "minecraft:random_ticking"
+            url: Examples/BlockComponents/minecraftBlock_random_ticking.md
+  # Card (optional)
+  - title: Block Trigger
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Block Trigger List
+            url: Examples/BlockTriggerList.md
+          - text: "minecraft:on_fall_on"
+            url: Examples/BlockTriggers/minecraftBlock_on_fall_on.md
+          - text: "minecraft:on_interact"
+            url: Examples/BlockTriggers/minecraftBlock_on_interact.md
+  # Card (optional)
+  - title: Block Event Responses
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Block Event Responses List
+            url: Examples/BlockEventList.md
+          - text: "add_mob_effect"
+            url: Examples/BlockEvents/minecraftBlock_add_mob_effect.md
+          - text: "damage"
+            url: Examples/BlockEvents/minecraftBlock_damage.md
+
+
+
+
+

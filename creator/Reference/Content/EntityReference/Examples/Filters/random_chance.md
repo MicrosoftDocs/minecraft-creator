@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: random_chance
+title: Entity Documentation - random_chance
 ms.prod: gaming
 ---
 
-# random_chance
+# Entity Documentation - random_chance
 
 Returns true if the random chance rolls 0 out of a specified max range.
 

@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:navigation.float
+title: Entity Documentation - minecraft:navigation.float
 ms.prod: gaming
 ---
 
-# minecraft:navigation.float
+# Entity Documentation - minecraft:navigation.float
 
 `minecraft:navigation.float` allows this entity to generate paths by flying around the air like the regular Ghast.
 

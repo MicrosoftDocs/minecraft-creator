@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: distance_to_nearest_player
+title: Entity Documentation - distance_to_nearest_player
 ms.prod: gaming
 ---
 
-# distance_to_nearest_player
+# Entity Documentation - distance_to_nearest_player
 
 `distance_to_nearest_player` compares the distance to the nearest Player with a float value.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.slime_attack
+title: Entity Documentation - minecraft:behavior.slime_attack
 ms.prod: gaming
 ---
 
-# minecraft:behavior.slime_attack
+# Entity Documentation - minecraft:behavior.slime_attack
 
 `minecraft:behavior.slime_attack` allows an entity to make a melee attack similar to the `slime` and `magma_cube`.
 

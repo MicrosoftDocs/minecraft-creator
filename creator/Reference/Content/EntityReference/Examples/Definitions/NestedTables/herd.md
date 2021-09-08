@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:herd
+title: Entity Documentation - minecraft:herd
 ms.prod: gaming
 ---
 
-# minecraft:herd
+# Entity Documentation - minecraft:herd
 
 This component allows players to determine the herd size of animals.
 

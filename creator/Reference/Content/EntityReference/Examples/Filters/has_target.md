@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: has_target
+title: Entity Documentation - has_target
 ms.prod: gaming
 ---
 
-# has_target
+# Entity Documentation - has_target
 
 Returns true if the subject entity has a valid target.
 

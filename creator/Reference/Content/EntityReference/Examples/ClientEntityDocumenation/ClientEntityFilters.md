@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Filters
+title: Entity Documentation - Filters
 ms.prod: gaming
 ---
 
-# Filters
+# Entity Documentation - Filters
 
 Filters allow data objects to specify test criteria which allows their use.
 
@@ -21,7 +21,7 @@ A typical filter consists of four parameters:
 A typical filter looks like the following:
 
 ```json
- { "test" : "moon_intensity", "subject" : "self", "operator" : "greater", "value" : "0.5" } 
+ { "test" : "moon_intensity", "subject" : "self", "operator" : "greater", "value" : "0.5" }
 ```
 
 Which results in the calling entity (self) calculating the moon_intensity at its location and returning true if the result is greater than 0.5.

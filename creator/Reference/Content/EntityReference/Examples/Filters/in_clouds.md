@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: in_clouds
+title: Entity Documentation - in_clouds
 ms.prod: gaming
 ---
 
-# in_clouds
+# Entity Documentation - in_clouds
 
 Returns true when the subject entity is in the clouds.
 

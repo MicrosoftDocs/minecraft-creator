@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:navigation.fly
+title: Entity Documentation - minecraft:navigation.fly
 ms.prod: gaming
 ---
 
-# minecraft:navigation.fly
+# Entity Documentation - minecraft:navigation.fly
 
 `minecraft:navigation.fly` allows this entity to generate paths in the air like the vanilla Parrots do.
 

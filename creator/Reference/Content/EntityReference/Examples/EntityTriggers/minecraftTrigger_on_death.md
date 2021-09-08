@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:on_death
+title: Entity Documentation - minecraft:on_death
 ms.prod: gaming
 ---
 
-# minecraft:on_death
+# Entity Documentation - minecraft:on_death
 
 `minecraft:on_death` adds a trigger to call on this entity's death.
 

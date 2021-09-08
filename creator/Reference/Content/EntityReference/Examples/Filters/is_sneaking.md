@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_sneaking
+title: Entity Documentation - is_sneaking
 ms.prod: gaming
 ---
 
-# is_sneaking
+# Entity Documentation - is_sneaking
 
 Tests whether the subject is sneaking.
 

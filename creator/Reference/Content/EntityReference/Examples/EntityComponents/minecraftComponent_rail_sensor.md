@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:rail_sensor
+title: Entity Documentation - minecraft:rail_sensor
 ms.prod: gaming
 ---
 
-# minecraft:rail_sensor
+# Entity Documentation - minecraft:rail_sensor
 
 `minecraft:rail_sensor` defines the entity's behavior when passing over an activated or deactivated rail.
 

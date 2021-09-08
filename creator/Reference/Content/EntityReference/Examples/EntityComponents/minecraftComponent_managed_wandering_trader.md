@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:managed_wandering_trader
+title: Entity Documentation - minecraft:managed_wandering_trader
 ms.prod: gaming
 ---
 
-# minecraft:managed_wandering_trader
+# Entity Documentation - minecraft:managed_wandering_trader
 
 `minecraft:managed_wandering_trader` manages the entity's ability to trade.
 

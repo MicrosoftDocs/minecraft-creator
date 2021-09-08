@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.random_stroll
+title: Entity Documentation - minecraft:behavior.random_stroll
 ms.prod: gaming
 ---
 
-# minecraft:behavior.random_stroll
+# Entity Documentation - minecraft:behavior.random_stroll
 
 `minecraft:behavior.random_stroll` allows an entity to choose a random direction to walk towards.
 

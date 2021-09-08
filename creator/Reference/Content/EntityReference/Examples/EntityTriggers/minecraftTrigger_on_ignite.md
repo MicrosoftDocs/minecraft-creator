@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:on_ignite
+title: Entity Documentation - minecraft:on_ignite
 ms.prod: gaming
 ---
 
-# minecraft:on_ignite
+# Entity Documentation - minecraft:on_ignite
 
 `minecraft:on_ignite` adds a trigger to call when this entity is set on fire.
 

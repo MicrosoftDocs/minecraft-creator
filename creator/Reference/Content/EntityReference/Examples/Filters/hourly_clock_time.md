@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: hourly_clock_time
+title: Entity Documentation - hourly_clock_time
 ms.prod: gaming
 ---
 
-# hourly_clock_time
+# Entity Documentation - hourly_clock_time
 
 Compares the current 24 hour time with an int value in the range[0, 24000]
 

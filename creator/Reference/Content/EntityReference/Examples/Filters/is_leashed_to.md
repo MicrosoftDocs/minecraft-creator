@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_leashed_to
+title: Entity Documentation - is_leashed_to
 ms.prod: gaming
 ---
 
-# is_leashed_to
+# Entity Documentation - is_leashed_to
 
 Returns true if the subject entity leashed to the calling entity.
 
