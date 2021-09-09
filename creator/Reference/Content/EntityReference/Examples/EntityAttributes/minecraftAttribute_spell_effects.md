@@ -21,10 +21,10 @@ This is a list of status effect objects. These define which effects should be ad
 
 * `effect`: The string identifier of the status effect to add. These are the same as used in the `/effect` command.
 * `duration`: The amount of time in seconds the effect should last. This allows for fractional numbers. For example, instant effects should be set to 0.05 seconds (one tick).
-* `amplifier`: The level of the effect, same as used in the `/effect` command (0 for level I, 1 for level II, etc).
-* `ambient`: Boolean value that should cause the particles emitted by the entity to be partially transparent. This does not work properly, resulting in this property having no effect.
-* `visible`: Boolean value that determines whether the particles emitted by the entity should appear.
-* `display_on_screen_animation`: Boolean value. When set to true, applying this effect displays an animated graphic on-screen similar to the totem of undying effect. Obviously, this only works for players.
+* `amplifier`: The level of the effect, same as used in the `/effect` command (0 for level I, 1 for level II, etc). Defaults to 0.
+* `ambient`: Boolean value that should cause the particles emitted by the entity to be partially transparent. This does not work properly, resulting in this property having no effect. Defaults to false.
+* `visible`: Boolean value that determines whether the particles emitted by the entity should appear. Defaults to true.
+* `display_on_screen_animation`: Boolean value. When set to true, applying this effect displays an animated graphic on-screen similar to the totem of undying effect. Obviously, this only works for players. Defaults to false.
 
 ### `remove_effects`
 This can either be a single string identifier for a status effect, or a list of them. These define which effects should be removed from the entity, if present, when the component is applied.
