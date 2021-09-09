@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.dragonlanding
+title: Entity Documentation - minecraft:behavior.dragonlanding
 ms.prod: gaming
 ---
 
-# minecraft:behavior.dragonlanding
+# Entity Documentation - minecraft:behavior.dragonlanding
 
 `minecraft:behavior.dragonlanding` allows an entity to stop flying and transition into perching mode.
 

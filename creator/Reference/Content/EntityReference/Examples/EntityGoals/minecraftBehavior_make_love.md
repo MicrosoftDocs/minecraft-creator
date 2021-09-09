@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.make_love
+title: Entity Documentation - minecraft:behavior.make_love
 ms.prod: gaming
 ---
 
-# minecraft:behavior.make_love
+# Entity Documentation - minecraft:behavior.make_love
 
 `minecraft:behavior.make_love` allows an entity to interact with other similar entities to produce an offspring.
 

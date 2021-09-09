@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_in_village
+title: Entity Documentation - is_in_village
 ms.prod: gaming
 ---
 
-# is_in_village
+# Entity Documentation - is_in_village
 
 Tests whether the Subject is inside the bounds of a village.
 

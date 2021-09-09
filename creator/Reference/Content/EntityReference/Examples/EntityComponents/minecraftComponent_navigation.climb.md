@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:navigation.climb
+title: Entity Documentation - minecraft:navigation.climb
 ms.prod: gaming
 ---
 
-# minecraft:navigation.climb
+# Entity Documentation - minecraft:navigation.climb
 
 `minecraft:navigation.climb` allows this entity to generate paths that include vertical walls like the vanilla Spiders do.
 

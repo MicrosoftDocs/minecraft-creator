@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.nearest_prioritized_attackable_target
+title: Entity Documentation - minecraft:behavior.nearest_prioritized_attackable_target
 ms.prod: gaming
 ---
 
-# minecraft:behavior.nearest_prioritized_attackable_target
+# Entity Documentation - minecraft:behavior.nearest_prioritized_attackable_target
 
 `minecraft:behavior.nearest_prioritized_attackable_target` allows an entity to target and prioritize the nearest valid target.
 

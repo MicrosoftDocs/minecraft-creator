@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Shapeless Recipe
+title: Recipe Documentation - Shapeless Recipe
 ms.prod: gaming
 ---
 
-# Shapeless Recipe
+# Recipe Documentation - Shapeless Recipe
 
 Represents a shapeless crafting recipe.
 
@@ -16,9 +16,9 @@ Represents a shapeless crafting recipe.
 
 |Name |Type |Description |
 |:-----------|:-----------|:-----------|
-|ingredients| array of item names|  items used as input (without a shape) for the recipe. |
+|ingredients| array of item names|  Items used as input (without a shape) for the recipe. |
 |priority| Integer| Item used as output for the furnace recipe. |
-|result| array of item names| these items are the result. |
+|result| array of item names| These items are the result. |
 
 ## Shapeless Recipe Example
 
@@ -44,5 +44,7 @@ Represents a shapeless crafting recipe.
 ```
 
 ## Vanilla Example
+
+### Blaze Powder
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/recipes/blaze_powder.json":::

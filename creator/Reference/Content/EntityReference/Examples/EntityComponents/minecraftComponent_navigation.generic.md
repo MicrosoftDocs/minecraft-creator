@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:navigation.generic
+title: Entity Documentation - minecraft:navigation.generic
 ms.prod: gaming
 ---
 
-# minecraft:navigation.generic
+# Entity Documentation - minecraft:navigation.generic
 
 `minecraft:navigation.generic` allows this entity to generate paths by walking, swimming, flying and/or climbing around and jumping up and down a block.
 

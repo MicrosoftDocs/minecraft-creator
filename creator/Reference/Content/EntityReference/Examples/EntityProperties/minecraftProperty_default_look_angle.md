@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:default_look_angle
+title: Entity Documentation - minecraft:default_look_angle
 ms.prod: gaming
 ---
 
-# minecraft:default_look_angle
+# Entity Documentation -  minecraft:default_look_angle
 
 `minecraft:default_look_angle` sets this entity's default head rotation angle.
 

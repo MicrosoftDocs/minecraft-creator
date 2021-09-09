@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.eat_carried_item
+title: Entity Documentation - minecraft:behavior.eat_carried_item
 ms.prod: gaming
 ---
 
-# minecraft:behavior.eat_carried_item
+# Entity Documentation - minecraft:behavior.eat_carried_item
 
 `minecraft:behavior.eat_carried_item` allows an entity to eat any item in its inventory and gain the benefits of the item.
 

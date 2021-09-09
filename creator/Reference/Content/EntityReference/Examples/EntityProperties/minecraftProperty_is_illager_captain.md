@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:is_illager_captain
+title: Entity Documentation - minecraft:is_illager_captain
 ms.prod: gaming
 ---
 
-# minecraft:is_illager_captain
+# Entity Documentation -  minecraft:is_illager_captain
 
 `minecraft:is_illager_captain` sets that the entity is an illager captain.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: has_component
+title: Entity Documentation - has_component
 ms.prod: gaming
 ---
 
-# has_component
+# Entity Documentation - has_component
 
 Returns true when the subject entity contains the named component.
 

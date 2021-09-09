@@ -25,6 +25,8 @@ Type: *number*
 ### **size**
 `read-only size: number;`
 
+Returns the size capacity of the inventory container on this block.
+
 Type: *number*
 
 
@@ -73,7 +75,6 @@ Returns [*ItemStack*](ItemStack.md)
 const itemStack = rightChestContainer.getItem(0);
 test.assert(itemStack.id === "apple", "Expected apple");
 test.assert(itemStack.amount === 10, "Expected 10 apples");
-
 ```
 ### **setItem**
 `
@@ -112,8 +113,7 @@ Returns *boolean*
 #### Examples
 ##### ***swapItems.js***
 ```javascript
-rightChestContainer.swapItems(1, 0, leftChestContainer); // swap the cake and emerald
-
+rightChestContainer.swapItems(1, 0, leftChestContainer); // swap item in slot 1 of rightChestContainer with item in slot 0 of leftChestContainer
 ```
 ### **transferItem**
 `
@@ -137,6 +137,5 @@ Returns *boolean*
 ##### ***transferItem.js***
 ```javascript
 rightChestContainer.transferItem(0, 4, chestCartContainer); // transfer the apple from the right chest to a chest cart
-
 ```
 

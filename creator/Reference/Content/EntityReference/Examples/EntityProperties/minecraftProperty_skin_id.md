@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:skin_id
+title: Entity Documentation - minecraft:skin_id
 ms.prod: gaming
 ---
 
-# minecraft:skin_id
+# Entity Documentation -  minecraft:skin_id
 
 `minecraft:skin_id` sets the entity's Skin ID value. Can be used to differentiate skins, such as base skins for villagers.
 

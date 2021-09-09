@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:inventory
+title: Entity Documentation - minecraft:inventory
 ms.prod: gaming
 ---
 
-# minecraft:inventory
+# Entity Documentation - minecraft:inventory
 
 `minecraft:inventory` defines how an entity's inventory is managed.
 

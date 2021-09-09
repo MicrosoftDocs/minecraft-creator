@@ -1,22 +1,22 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Shaped Recipe
+title: Recipe Documentation -Shaped Recipe
 ms.prod: gaming
 ---
 
-# Shaped Recipe
+# Recipe Documentation - Shaped Recipe
 
-Represents a shaped crafting recipe for a crafting table.
+Represents a crafting recipe that is to be used with a crafting table.
 
 ## Parameters
 
 |Name |Type| Description |
 |:-----------|:-----------|:-----------|
-|key| array of key and item pairs| patten key character mapped to item names. |
-|pattern|String array| characters that represent a pattern to be defined by keys. |
+|key| array of key and item pairs| Patten key character mapped to item names. |
+|pattern|String array| Characters that represent a pattern to be defined by keys. |
 |priority| Integer| Item used as output for the furnace recipe. |
-|result| array of item names| when input items match the pattern then these items are the result. |
+|result| array of item names| When input items match the pattern then these items are the result. |
 |tags |String array| Item used as input for the furnace recipe. |
 
 ### key and pattern
@@ -55,5 +55,7 @@ The `key` used in the pattern may be any single character except the 'space' cha
 ```
 
 ## Vanilla Example
+
+### Iron Pickaxe
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/recipes/iron_pickaxe.json":::

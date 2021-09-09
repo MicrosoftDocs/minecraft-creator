@@ -11,7 +11,7 @@ description: Contents of the mojang-minecraft.InventoryComponentContainer class.
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
 
-Represents a container that can hold stacks of items. Used for entities like Players, Chest Minecarts, Llamas, and more.
+Represents a container that can hold stacks of items. Used for entities like players, chest minecarts, llamas, and more.
 
 ## Properties
 ### **emptySlotsCount**
@@ -75,7 +75,6 @@ Returns [*ItemStack*](ItemStack.md)
 const itemStack = rightChestContainer.getItem(0);
 test.assert(itemStack.id === "apple", "Expected apple");
 test.assert(itemStack.amount === 10, "Expected 10 apples");
-
 ```
 ### **setItem**
 `
@@ -115,7 +114,6 @@ Returns *boolean*
 ##### ***swapItems.js***
 ```javascript
 rightChestContainer.swapItems(1, 0, leftChestContainer); // swap the cake and emerald
-
 ```
 ### **transferItem**
 `
@@ -139,6 +137,5 @@ Returns *boolean*
 ##### ***transferItem.js***
 ```javascript
 rightChestContainer.transferItem(0, 4, chestCartContainer); // transfer the apple from the right chest to a chest cart
-
 ```
 

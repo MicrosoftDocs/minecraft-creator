@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:type_family
+title: Entity Documentation - minecraft:type_family
 ms.prod: gaming
 ---
 
-# minecraft:type_family
+# Entity Documentation -  minecraft:type_family
 
 `minecraft:type_family` defines the families this entity belongs to.
 

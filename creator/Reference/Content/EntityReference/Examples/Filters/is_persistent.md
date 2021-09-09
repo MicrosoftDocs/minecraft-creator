@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_persistent
+title: Entity Documentation - is_persistent
 ms.prod: gaming
 ---
 
-# is_persistent
+# Entity Documentation - is_persistent
 
 Tests if the subject's persistence matches the bool value passed in.
 

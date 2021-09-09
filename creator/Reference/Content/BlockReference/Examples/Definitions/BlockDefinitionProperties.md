@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Block Properties & Descriptions
+title: Block Documentation - Block Properties & Descriptions
 ms.prod: gaming
 ---
 
-# Block Properties & Descriptions
+# Block Documentation - Block Properties & Descriptions
 
 These properties are part of the Block Definition and Block Properties that are used within block JSON files. This helps the system determine how to parse and initialize this block.
 
@@ -26,7 +26,7 @@ These properties are part of the Block Definition and Block Properties that are 
       "minecraft:flammable": {
         "flame_odds": 50,
         "burn_odds": 0
-	  },
+	      },
       "minecraft:block_light_emission": 1.0
     }
   }
@@ -37,7 +37,7 @@ These properties are part of the Block Definition and Block Properties that are 
 |:----------|:----------|:----------|:----------|
 |format_version|*not set* | String| Specifies the version of the game this entity was made in. If the version is lower than the current version, any changes made to the entity in the vanilla version will be applied to it.|
 |minecraft:block|*not set*| JSON Object| JSON container used for descriptions.|
-|[components](../BlockComponentsList.md)|*not set*| List| list of all components that are used in this block.|
+|[components](../BlockComponentsList.md)|*not set*| List| List of all components that are used in this block.|
 
 ### Identifier
 

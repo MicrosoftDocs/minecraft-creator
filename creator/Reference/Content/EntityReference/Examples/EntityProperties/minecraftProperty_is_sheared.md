@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:is_sheared
+title: Entity Documentation - minecraft:is_sheared
 ms.prod: gaming
 ---
 
-# minecraft:is_sheared
+# Entity Documentation -  minecraft:is_sheared
 
 `minecraft:is_sheared` sets that this entity is currently sheared.
 

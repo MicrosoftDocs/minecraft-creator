@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_sleeping
+title: Entity Documentation - is_sleeping
 ms.prod: gaming
 ---
 
-# is_sleeping
+# Entity Documentation - is_sleeping
 
 Tests whether the Subject is sleeping.
 

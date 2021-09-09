@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:display_name(Blocks)
+title: Block Documentation - minecraft:display_name(Blocks)
 ms.prod: gaming
 ---
 
-# minecraft:display_name (Blocks)
+# Block Documentation - minecraft:display_name (Blocks)
 
 `minecraft:display_name` is a `String` component that sets the display name id for the block.
 

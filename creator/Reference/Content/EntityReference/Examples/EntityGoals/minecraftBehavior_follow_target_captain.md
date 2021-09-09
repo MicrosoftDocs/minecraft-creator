@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.follow_target_captain
+title: Entity Documentation - minecraft:behavior.follow_target_captain
 ms.prod: gaming
 ---
 
-# minecraft:behavior.follow_target_captain
+# Entity Documentation - minecraft:behavior.follow_target_captain
 
 `minecraft:behavior.follow_target_captain` allows an entity to follow a targeted captain.
 

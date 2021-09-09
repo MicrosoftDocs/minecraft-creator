@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.random_hover
+title: Entity Documentation - minecraft:behavior.random_hover
 ms.prod: gaming
 ---
 
-# minecraft:behavior.random_hover
+# Entity Documentation - minecraft:behavior.random_hover
 
 `minecraft:behavior.random_hover` allows an entity to hover around in random locations.
 

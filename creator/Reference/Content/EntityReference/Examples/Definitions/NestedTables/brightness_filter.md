@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:brightness_filter
+title: Entity Documentation - minecraft:brightness_filter
 ms.prod: gaming
 ---
 
-# minecraft:brightness_filter
+# Entity Documentation - minecraft:brightness_filter
 
 This component allows players to set the light level range that causes the mob to spawn.
 

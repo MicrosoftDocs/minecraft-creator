@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:jump.static
+title: Entity Documentation - minecraft:jump.static
 ms.prod: gaming
 ---
 
-# minecraft:jump.static
+# Entity Documentation - minecraft:jump.static
 
 `minecraft:jump.static` gives the entity the ability to jump.
 

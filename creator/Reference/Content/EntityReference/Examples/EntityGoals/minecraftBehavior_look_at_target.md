@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.look_at_target
+title: Entity Documentation - minecraft:behavior.look_at_target
 ms.prod: gaming
 ---
 
-# minecraft:behavior.look_at_target
+# Entity Documentation - minecraft:behavior.look_at_target
 
 `minecraft:behavior.look_at_target` allows an entity to look at the target by rotating the head bone pose within a set limit.
 

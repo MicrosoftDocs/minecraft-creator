@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:food
+title: Item Documentation - minecraft:food
 ms.prod: gaming
 ---
 
-# minecraft:food
+# Item Documentation - minecraft:food
 
 `minecraft:food` sets the item as a food component, allowing it to be edible to the player.
 

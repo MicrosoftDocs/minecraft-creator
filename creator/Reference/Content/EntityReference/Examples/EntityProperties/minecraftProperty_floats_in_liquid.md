@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:floats_in_liquid
+title: Entity Documentation - minecraft:floats_in_liquid
 ms.prod: gaming
 ---
 
-# minecraft:floats_in_liquid
+# Entity Documentation -  minecraft:floats_in_liquid
 
 `minecraft:floats_in_liquid` allows the entity the ability to float in liquid blocks.
 

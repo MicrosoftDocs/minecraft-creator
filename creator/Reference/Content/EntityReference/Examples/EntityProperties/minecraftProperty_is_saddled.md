@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:is_saddled
+title: Entity Documentation - minecraft:is_saddled
 ms.prod: gaming
 ---
 
-# minecraft:is_saddled
+# Entity Documentation -  minecraft:is_saddled
 
 `minecraft:is_saddled` sets that the entity is currently saddled.
 

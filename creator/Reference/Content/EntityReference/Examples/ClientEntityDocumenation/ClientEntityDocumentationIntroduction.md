@@ -1,13 +1,13 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Client Entity JSON Introduction
+title: Entity Documentation - Entity JSON Introduction
 ms.prod: gaming
 ---
 
-# Client Entity JSON Introduction
+# Entity Documentation - Entity JSON Introduction
 
-Client entity definitions are contained within a Resource Pack.
+Entity definitions are contained within a Resource Pack.
 
 > [!TIP]
 > If this is your first time learning about Entities within Minecraft: Bedrock Edition, please feel free to check out our tutorial [Introduction to Behavior Packs](../../../../../Documents/BehaviorPack.md) to learn about all the files that go into how an Entity functions within Minecraft.
@@ -142,7 +142,7 @@ When there are more than one texture associated with a texture name you can use 
 
 ```json
 "spawn_egg": {
-  "texture": "spawn_egg", 
+  "texture": "spawn_egg",
   "texture_index": 2
 }
 ```

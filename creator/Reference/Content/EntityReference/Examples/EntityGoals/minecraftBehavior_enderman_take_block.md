@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.enderman_take_block
+title: Entity Documentation - minecraft:behavior.enderman_take_block
 ms.prod: gaming
 ---
 
-# minecraft:behavior.enderman_take_block
+# Entity Documentation - minecraft:behavior.enderman_take_block
 
 `minecraft:behavior.enderman_take_block` allows the entity to pick up a nearby block and carry the block in its hands.
 

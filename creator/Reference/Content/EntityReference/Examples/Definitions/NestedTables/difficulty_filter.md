@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:difficulty_filter
+title: Entity Documentation - minecraft:difficulty_filter
 ms.prod: gaming
 ---
 
-# minecraft:difficulty_filter
+# Entity Documentation - minecraft:difficulty_filter
 
 This component allows players to set mobs spawn with certain difficulty levels.
 

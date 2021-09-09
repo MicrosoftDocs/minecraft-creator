@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:home
+title: Entity Documentation - minecraft:home
 ms.prod: gaming
 ---
 
-# minecraft:home
+# Entity Documentation - minecraft:home
 
 `minecraft:home` saves a home point of interest for when the the entity is spawned.
 

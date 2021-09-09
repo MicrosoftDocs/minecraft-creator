@@ -39,6 +39,5 @@ Returns *any* - For commands that return data, returns a JSON structure with com
 ```javascript
 Commands.run("say You got a new high score!", World.getDimension("overworld"));
 Commands.run("scoreboard players set @p score 10", World.getDimension("overworld"));
-
 ```
 

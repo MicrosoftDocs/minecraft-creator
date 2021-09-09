@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.squid_out_of_water
+title: Entity Documentation - minecraft:behavior.squid_out_of_water
 ms.prod: gaming
 ---
 
-# minecraft:behavior.squid_out_of_water
+# Entity Documentation - minecraft:behavior.squid_out_of_water
 
 `minecraft:behavior.squid_out_of_water` allows an entity to stay close to a ground block when out of water.
 

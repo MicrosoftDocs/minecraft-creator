@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.vex_copy_owner_target
+title: Entity Documentation - minecraft:behavior.vex_copy_owner_target
 ms.prod: gaming
 ---
 
-# minecraft:behavior.vex_copy_owner_target
+# Entity Documentation - minecraft:behavior.vex_copy_owner_target
 
 `minecraft:behavior.vex_copy_owner_target` allows an entity of the`vex` family to target the same entity as it's owner.
 

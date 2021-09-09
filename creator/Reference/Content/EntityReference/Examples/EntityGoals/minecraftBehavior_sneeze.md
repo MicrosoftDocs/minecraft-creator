@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.sneeze
+title: Entity Documentation - minecraft:behavior.sneeze
 ms.prod: gaming
 ---
 
-# minecraft:behavior.sneeze
+# Entity Documentation - minecraft:behavior.sneeze
 
 `minecraft:behavior.sneeze` allows an entity to sneeze and potentially startle other entities. While sneezing, the entity may drop an item.
 

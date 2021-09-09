@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:pushable
+title: Entity Documentation - minecraft:pushable
 ms.prod: gaming
 ---
 
-# minecraft:pushable
+# Entity Documentation - minecraft:pushable
 
 `minecraft:pushable` defines what can push an entity between other entities and pistons.
 

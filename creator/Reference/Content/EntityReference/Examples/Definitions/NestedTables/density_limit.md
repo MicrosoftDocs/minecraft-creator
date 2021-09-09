@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:density_limit
+title: Entity Documentation - minecraft:density_limit
 ms.prod: gaming
 ---
 
-# minecraft:density_limit
+# Entity Documentation - minecraft:density_limit
 
 This component allows the players to specify the amount of mobs to spawn in certain locations.
 

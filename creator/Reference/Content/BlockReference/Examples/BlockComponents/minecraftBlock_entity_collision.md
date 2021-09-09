@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:entity_collision
+title: Block Documentation - minecraft:entity_collision
 ms.prod: gaming
 ---
 
-# minecraft:entity_collision
+# Block Documentation - minecraft:entity_collision
 
 `minecraft:entity_collision` is a component controlled by a `boolean` that disables the collision of the block with entities.
 

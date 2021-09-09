@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:on_wake_with_owner
+title: Entity Documentation - minecraft:on_wake_with_owner
 ms.prod: gaming
 ---
 
-# minecraft:on_wake_with_owner
+# Entity Documentation - minecraft:on_wake_with_owner
 
 `minecraft:on_wake_with_owner` adds a trigger to call when this pet's owner awakes after sleeping with the pet.
 

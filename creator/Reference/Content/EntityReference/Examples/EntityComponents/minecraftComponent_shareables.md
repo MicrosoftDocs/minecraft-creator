@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:shareables
+title: Entity Documentation - minecraft:shareables
 ms.prod: gaming
 ---
 
-# minecraft:shareables
+# Entity Documentation - minecraft:shareables
 
 `minecraft:shareables` defines a list of items the mob wants to share or pick up.
 

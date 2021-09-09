@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.pet_sleep_with_owner
+title: Entity Documentation - minecraft:behavior.pet_sleep_with_owner
 ms.prod: gaming
 ---
 
-# minecraft:behavior.pet_sleep_with_owner
+# Entity Documentation - minecraft:behavior.pet_sleep_with_owner
 
 `minecraft:behavior.pet_sleep_with_owner` allows an entity to sleep on a bed shared with its owner.
 

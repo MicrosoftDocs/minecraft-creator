@@ -3,6 +3,7 @@ author: v-jeffreykim
 ms.author: v-jeffreykim
 title: Contributing to Minecraft Bedrock Documentation
 ms.prod: gaming
+description: A guide covering how Creators can contribute to the Creator Portal public repository and how user-created content is integrated into the Portal.
 ---
 # Contributing to Minecraft Bedrock Documentation
 
@@ -13,11 +14,13 @@ The Minecraft Bedrock docs are on the docs.microsoft.com platform, which uses Gi
 This page covers the basic steps and guidelines for contributing and links to Markdown basics. Thank you for your contribution!
 
 ## Available repos
+
 | Repository name | URL |
 |------ | ----- |
 | Minecraft Bedrock docs | https://github.com/MicrosoftDocs/minecraft-creator |
 
 ## Before you start
+
 If you don't already have one, you'll need to [create a GitHub account.](https://github.com/join)
 
 When setting up your GitHub account, we also recommend these security precautions:
@@ -74,6 +77,7 @@ To add a redirect to .openpublishing.redirection.json, add an entry to the `redi
             "redirect_document_id": false
         },
 ```
+
 - The `source_path` is the relative repository path to the old article that you're removing. Be sure the path starts with `minecraft-creator/creator` and ends with `.md`.
 - The `redirect_url` is the relative public URL from the old article to the new article. Be sure that this URL **doesn't** contain `minecraft-creator/creator` or `.md`, as it refers to the public URL and not the repository path. Linking to a section within the new article using #section is allowed. You can also use an absolute path to another site here if necessary.
 - `redirect_document_id` indicates whether you would like to keep the document ID from the previous file. The default is false. Use true if you want to preserve the ms.documentid attribute value from the redirected article. If you preserve the document ID, data, such as page views and rankings, will be transferred to the target article. Do this if the redirect is primarily a rename, and not a pointer to different article that only covers some of the same content.
@@ -185,13 +189,13 @@ For the reasons listed above, you may prefer using a desktop client to edit docu
 Follow these steps to configure Visual Studio Code to work with this repo:
 
 1. In a web browser:
-    
+
     a. Install Git for your PC.
 
     b. Install Visual Studio Code.
 
     c. Fork MicrosoftDocs/minecraft-creator if you haven't already.
-    
+
     d. In your fork, select Clone or download and copy the URL.
 
 2. Create a local clone of your fork in Visual Studio Code:

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:loot
+title: Entity Documentation - minecraft:loot
 ms.prod: gaming
 ---
 
-# minecraft:loot
+# Entity Documentation -  minecraft:loot
 
 `minecraft:loot` sets the loot table for what items this entity drops upon death.
 

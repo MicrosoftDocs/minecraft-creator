@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:entity_sensor
+title: Entity Documentation - minecraft:entity_sensor
 ms.prod: gaming
 ---
 
-# minecraft:entity_sensor
+# Entity Documentation - minecraft:entity_sensor
 
 `minecraft:entity_sensor` is a component that fires an event when a set of conditions are met by other entities within the defined range.
 

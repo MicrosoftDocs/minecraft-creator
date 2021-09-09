@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:annotation.break_door
+title: Entity Documentation - minecraft:annotation.break_door
 ms.prod: gaming
 ---
 
-# minecraft:annotation.break_door
+# Entity Documentation - minecraft:annotation.break_door
 
 `minecraft:annotation.break_door` allows an entity to break doors, assuming that that flags set up for the component to use in navigation.
 

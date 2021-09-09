@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:insomnia
+title: Entity Documentation - minecraft:insomnia
 ms.prod: gaming
 ---
 
-# minecraft:insomnia
+# Entity Documentation - minecraft:insomnia
 
 `minecraft:insomnia` adds a timer since last rested to see if phantoms should spawn.
 

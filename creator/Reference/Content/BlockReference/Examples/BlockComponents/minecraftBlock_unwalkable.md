@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:unwalkable
+title: Block Documentation - minecraft:unwalkable
 ms.prod: gaming
 ---
 
-# minecraft:unwalkable
+# Block Documentation - minecraft:unwalkable
 
 `minecraft:unwalkable` is a `boolean` component that specifies the block as unwalkable.
 

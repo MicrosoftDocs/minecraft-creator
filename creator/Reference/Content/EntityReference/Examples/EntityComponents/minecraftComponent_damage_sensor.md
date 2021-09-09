@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:damage_sensor
+title: Entity Documentation - minecraft:damage_sensor
 ms.prod: gaming
 ---
 
-# minecraft:damage_sensor
+# Entity Documentation - minecraft:damage_sensor
 
 `minecraft:damage_sensor` defines what events to call when this entity is damaged by specific entities or items.
 
@@ -34,7 +34,7 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|[filters](../FilterList.md)|*not set* | Minecraft Filter|  filters to use to define specific tests |
+|[filters](../FilterList.md)|*not set* | Minecraft Filter|  Filters to use to define specific tests |
 |event |*not set* | String | Defines what event to run |
 
 ## Example

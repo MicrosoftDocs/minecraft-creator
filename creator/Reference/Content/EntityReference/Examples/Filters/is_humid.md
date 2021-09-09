@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_humid
+title: Entity Documentation - is_humid
 ms.prod: gaming
 ---
 
-# is_humid
+# Entity Documentation - is_humid
 
 Tests whether the subject is in an area with humidity.
 

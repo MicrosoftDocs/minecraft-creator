@@ -6515,11 +6515,11 @@ storageManager.multiselect=Pilihan Ganda	#
 storageManager.miscellaneous=Lain-Lain	#
 
 storageManager.groupType=Jenis	#
-storageManager.groupPack=Add-on	#
+storageManager.groupPack=Add-On	#
 
 storageManager.shareTitle=Ekspor Sumber Daya	#
 storageManager.mcpack=Paket Minecraft	#
-storageManager.mcaddon=Add-on Minecraft	#
+storageManager.mcaddon=Add-On Minecraft	#
 storageManager.mcworld=Dunia Minecraft	#
 
 raycasting.purchase.error=Kami mendeteksi bahwa perangkatmu tidak memenuhi persyaratan sistem untuk menjalankan paket ini sehingga kamu tidak bisa mengunduh paket ini. Kamu bisa meninjau persyaratan sistem minimum di bawah ini: %s+ GPU: GPU perangkat keras yang mendukung penelusuran jejak cahaya seperti NVIDIA GeForce RTX 2060 atau yang lebih tinggi. Lihat FAQ kami di minecraft.net untuk lebih jelasnya. %s+ RAM: 8 GB atau lebih %s+ CPU: Intel Core i5 atau yang setara 	###the %s will be turned into linebreaks. Don't reorder.
@@ -7029,7 +7029,7 @@ store.createdBy=Oleh %s	#
 store.seeMoreBy=Lihat lainnya oleh %s	#
 store.seeMoreBy.multiCreatorBundle=Lihat Lainnya dari Pembuat Bundel	#
 store.fetchingItem=Menyambungkan ke Marketplace...	#
- 
+
 store.timer.daysAbbreviated=%sh		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
 store.timer.hoursAbbreviated=%sj		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
 store.timer.minutesAbbreviated=%smnt		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:bribeable
+title: Entity Documentation - minecraft:bribeable
 ms.prod: gaming
 ---
 
-# minecraft:bribeable
+# Entity Documentation - minecraft:bribeable
 
 `minecraft:bribeable` allows an entity to establish a way to get into the `bribed` state.
 

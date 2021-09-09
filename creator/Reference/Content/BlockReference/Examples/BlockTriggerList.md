@@ -1,15 +1,15 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Block Trigger List
+title: Block Documentation - Block Trigger List
 ms.prod: gaming
 ---
 
-# Block Trigger
+# Block Documentation - Block Trigger
 
 Below is a list of all the available Block Trigger within Minecraft:Bedrock Edition for use with Block JSON files.
 
-## Block Trigger
+## Block Trigger List
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|

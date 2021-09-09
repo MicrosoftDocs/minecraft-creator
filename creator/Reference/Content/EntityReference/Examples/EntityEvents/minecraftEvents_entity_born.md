@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:entity_born
+title: Entity Documentation - minecraft:entity_born
 ms.prod: gaming
 ---
 
-# minecraft:entity_born
+# Entity Documentation - minecraft:entity_born
 
 `minecraft:entity_born` triggers an event calls on an entity when the entity is born via `breeding`.
 

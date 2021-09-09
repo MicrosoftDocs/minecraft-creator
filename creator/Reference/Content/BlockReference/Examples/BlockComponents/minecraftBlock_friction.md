@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:friction
+title: Block Documentation - minecraft:friction
 ms.prod: gaming
 ---
 
-# minecraft:friction
+# Block Documentation - minecraft:friction
 
 `minecraft:friction` is a `decimal` component that sets the friction for the block. Friction effects an entities movements when it walks on the block.
 

@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:tamemount
+title: Entity Documentation - minecraft:tamemount
 ms.prod: gaming
 ---
 
-# minecraft:tamemount
+# Entity Documentation - minecraft:tamemount
 
 `minecraft:tamemount` allows the Entity to be tamed by mounting it.
 

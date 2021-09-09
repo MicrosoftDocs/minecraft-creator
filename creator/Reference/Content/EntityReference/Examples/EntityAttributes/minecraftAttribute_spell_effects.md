@@ -1,13 +1,13 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:spell_effects
+title: Entity Documentation - minecraft:spell_effects
 ms.prod: gaming
 ---
 
-# minecraft:spell_effects
+# Entity Documentation - minecraft:spell_effects
 
-`minecraft:spell_effects` allows an entity to define effects to add and remove to the entity when adding this attribute.
+`minecraft:spell_effects` allows an entity to define effects to add and remove to the entity when adding this attribute. Unlike components like `addrider`, this component will be reapplied if the player logs out and logs back into the world.
 
 ## Parameters
 
@@ -20,7 +20,7 @@ ms.prod: gaming
 
 `add_effects` is a list variable that can use the following parameters:
 
-|effect|*not set* | String|  Effect to add to this entity. Includes 'duration' in seconds, 'amplifier' level, 'ambient' if it is to be considered an ambient effect, and 'visible' if the effect should be visible |
+| effect| *not set*| String|  Effect to add to this entity. Includes 'duration' in seconds, 'amplifier' level, 'ambient' if the effect should be partially transparent, and 'visible' if the effect should be visible |
 
 ## Example
 
@@ -28,11 +28,11 @@ ms.prod: gaming
 "minecraft:spell_effects":{
     "add_effects":[
     {
-        "effect": "heal",
+        "effect": "instant_health",
         "duration": 25
     }
     ],
-    "remove_effects": "poison"
+    "remove_effects": ["poison", "instant_health"]
 }
 ```
 

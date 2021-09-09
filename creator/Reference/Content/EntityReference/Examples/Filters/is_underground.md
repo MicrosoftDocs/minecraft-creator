@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_underground
+title: Entity Documentation - is_underground
 ms.prod: gaming
 ---
 
-# is_underground
+# Entity Documentation - is_underground
 
 Returns true when the subject entity is underground. An entity is considered underground if there are non-solid blocks above it.
 

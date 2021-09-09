@@ -1,22 +1,38 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:dye_powder
+title: Item Documentation - minecraft:dye_powder
 ms.prod: gaming
 ---
 
-# minecraft:dye_powder
+# Item Documentation - minecraft:dye_powder
 
-`minecraft:dye_powder` sets the color for an item that is treated as dye.
+`minecraft:dye_powder` sets the color for an item that is defined as a dye.
 
-> [!NOTE]
-> There are 16 kinds of dye.
+There are 16 kinds of dye available to use.
+
+- Black
+- Red
+- Green
+- Brown
+- Blue
+- Purple
+- Cyan
+- Light gray
+- Gray
+- Pink
+- Lime
+- Yellow
+- Light blue
+- Magenta
+- Orange
+- White
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|color|*not set* |String |color value to use |
+|color|*not set* |String |Color value to use |
 
 ## Example
 

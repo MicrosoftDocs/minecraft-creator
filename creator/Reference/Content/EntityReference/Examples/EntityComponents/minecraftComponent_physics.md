@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:physics
+title: Entity Documentation - minecraft:physics
 ms.prod: gaming
 ---
 
-# minecraft:physics
+# Entity Documentation - minecraft:physics
 
 `minecraft:physics` defines physics properties of an entity, including if it is affected by gravity or if it collides with objects.
 

@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:target_nearby_sensor
+title: Entity Documentation - minecraft:target_nearby_sensor
 ms.prod: gaming
 ---
 
-# minecraft:target_nearby_sensor
+# Entity Documentation - minecraft:target_nearby_sensor
 
 `minecraft:target_nearby_sensor` defines the entity's range within which it can see or sense other entities to target them.
 

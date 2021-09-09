@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_daytime
+title: Entity Documentation - is_daytime
 ms.prod: gaming
 ---
 
-# is_daytime
+# Entity Documentation - is_daytime
 
 Returns true during the daylight hours.
 

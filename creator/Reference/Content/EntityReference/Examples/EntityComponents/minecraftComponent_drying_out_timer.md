@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:drying_out_timer
+title: Entity Documentation - minecraft:drying_out_timer
 ms.prod: gaming
 ---
 
-# minecraft:drying_out_timer
+# Entity Documentation - minecraft:drying_out_timer
 
 `minecraft:drying_out_timer` sets a timer for drying out that will count down and fire 'dried_out_event' or will stop as soon as the entity will get under rain or water and fire `stopped_drying_out_event`.
 

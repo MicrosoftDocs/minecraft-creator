@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Query Functions
+title: Molang Documenation - Query Functions
 ms.prod: gaming
 ---
 
-# Query Functions
+# Molang Documenation - Query Functions
 
 Query Functions are boolean expressions that allow you to query for values owned by the engine under different circumstances. Query functions are formatted as `query.is_baby` or `query.is_item_equipped('main_hand')`.They can be used in Molang expressions and allow scripts to read game data. They are useful for controlling things like changing positions, textures, animations, etc if a mob is a baby.
 
@@ -29,7 +29,7 @@ Query Functions are boolean expressions that allow you to query for values owned
 | query.anim_time| Returns the time in seconds since the current animation started, else 0.0 if not called within an animation |
 | query.any_animation_finished| Only valid in an animation controller.  Returns 1.0 if any animation in the current animation controller state has played through at least once, else it returns 0.0 |
 | query.any_tag| Returns if the item or block has any of the tags specified |
-| query.approx_eq| Returns 1.0 if all of the arguments are within 0.000000 of each other, else 0.0 |
+| query.approx_eq| Returns 1.0 if all of the arguments are within 0.000001 of each other, else 0.0 |
 | query.armor_color_slot| Takes the armor slot index as a parameter, and returns the color of the armor in the requested slot |
 | query.armor_material_slot| Takes the armor slot index as a parameter, and returns the armor material type in the requested armor slot |
 | query.armor_texture_slot| Takes the armor slot index as a parameter, and returns the texture type of the requested slot |
@@ -145,7 +145,7 @@ Query Functions are boolean expressions that allow you to query for values owned
 | query.is_on_screen| Returns 1.0 if this is called on an entity at a time when it is known if it is on screen, else it returns 0.0 |
 | query.is_onfire| Returns 1.0 if the entity is on fire, else it returns 0.0 |
 | query.is_orphaned| Returns 1.0 if the entity is orphaned, else it returns 0.0 |
-| query.is_persona_or_premium_skin| Returns 1.0 if the player has a persona or permium skin, else it returns 0.0 |
+| query.is_persona_or_premium_skin| Returns 1.0 if the player has a persona or premium skin, else it returns 0.0 |
 | query.is_playing_dead| Returns 1.0 if the entity is playing dead, else it returns 0.0 |
 | query.is_powered| Returns 1.0 if the entity is powered, else it returns 0.0 |
 | query.is_pregnant| Returns 1.0 if the entity is pregnant, else it returns 0.0 |

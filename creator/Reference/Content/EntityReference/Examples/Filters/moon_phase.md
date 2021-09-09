@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: moon_phase
+title: Entity Documentation - moon_phase
 ms.prod: gaming
 ---
 
-# moon_phase
+# Entity Documentation - moon_phase
 
 Compares the current moon intensity with an Integer value in the range of 0 to 7.
 

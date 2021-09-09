@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:ground_offset
+title: Entity Documentation - minecraft:ground_offset
 ms.prod: gaming
 ---
 
-# minecraft:ground_offset
+# Entity Documentation -  minecraft:ground_offset
 
 `minecraft:ground_offset` sets the offset from the ground that the entity is actually at.
 
@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:ground_offset":{
-    "value": 0.5 
+    "value": 0.5
 }
 ```
 

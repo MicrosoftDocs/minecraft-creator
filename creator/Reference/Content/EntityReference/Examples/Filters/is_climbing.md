@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_climbing
+title: Entity Documentation - is_climbing
 ms.prod: gaming
 ---
 
-# is_climbing
+# Entity Documentation - is_climbing
 
 Returns true if the subject entity is climbing.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.swell
+title: Entity Documentation - minecraft:behavior.swell
 ms.prod: gaming
 ---
 
-# minecraft:behavior.swell
+# Entity Documentation - minecraft:behavior.swell
 
 `minecraft:behavior.swell` allows an entity to grow in size when approached, and scale down back to normal after a certain distance.
 

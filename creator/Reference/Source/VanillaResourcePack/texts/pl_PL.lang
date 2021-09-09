@@ -6515,11 +6515,11 @@ storageManager.multiselect=Wielokrotny wybór	#
 storageManager.miscellaneous=Różne	#
 
 storageManager.groupType=Rodzaj	#
-storageManager.groupPack=Add-on	#
+storageManager.groupPack=Add-On	#
 
 storageManager.shareTitle=Eksportuj zasoby	#
 storageManager.mcpack=Paczka Minecrafta	#
-storageManager.mcaddon=Add-on Minecrafta	#
+storageManager.mcaddon=Add-On Minecrafta	#
 storageManager.mcworld=Świat Minecrafta	#
 
 raycasting.purchase.error=Wykryliśmy, że twoje urządzenie nie spełnia wymagań systemowych koniecznych do uruchomienia tego pakietu, dlatego pobranie go jest niemożliwe. Poniżej możesz sprawdzić minimalne wymagania systemowe: %s+ Karta graficzna: karta ze sprzętową obsługą śledzenia promieni, np. NVIDIA GeForce RTX 2060 lub lepsza. Więcej informacji znajdziesz w naszych odpowiedziach na najczęściej zadawane pytania na stronie minecraft.net. %s+ Pamięć: 8 GB lub więcej %s+ Procesor: Intel Core i5 lub jego odpowiednik	###the %s will be turned into linebreaks. Don't reorder.
@@ -7029,7 +7029,7 @@ store.createdBy=Autor: %s	#
 store.seeMoreBy=Zobacz więcej dzieł, których autorem jest %s	#
 store.seeMoreBy.multiCreatorBundle=Zobacz, co jeszcze przygotowali twórcy zestawów	#
 store.fetchingItem=Łączenie z rynkiem…	#
- 
+
 store.timer.daysAbbreviated=%sd		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
 store.timer.hoursAbbreviated=%sg.		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
 store.timer.minutesAbbreviated=%sm.		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters

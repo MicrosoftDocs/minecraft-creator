@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:armor
+title: Item Documentation - minecraft:armor
 ms.prod: gaming
 ---
 
-# minecraft:armor
+# Item Documentation - minecraft:armor
 
 `minecraft:armor` determines the amount of protection you have in your armor item.
 

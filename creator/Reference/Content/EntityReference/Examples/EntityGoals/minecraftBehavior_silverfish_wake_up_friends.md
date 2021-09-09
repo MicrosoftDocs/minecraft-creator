@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.silverfish_wake_up_friends
+title: Entity Documentation - minecraft:behavior.silverfish_wake_up_friends
 ms.prod: gaming
 ---
 
-# minecraft:behavior.silverfish_wake_up_friends
+# Entity Documentation - minecraft:behavior.silverfish_wake_up_friends
 
 `minecraft:behavior.silverfish_wake_up_friends` allows an entity to alert other entities of the same family to leave a stone block.
 

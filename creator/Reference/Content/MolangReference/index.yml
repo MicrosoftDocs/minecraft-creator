@@ -20,7 +20,7 @@ landingContent:
   # Card (optional)
   - title: Learning about Molang
     linkLists:
-      - linkListType: reference
+      - linkListType: how-to-guide
         links:
           - text: Introduction to Molang
             url: Examples/MolangConcepts/MolangIntroduction.md

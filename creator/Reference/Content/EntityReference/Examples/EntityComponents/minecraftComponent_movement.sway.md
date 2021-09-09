@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:movement.sway
+title: Entity Documentation - minecraft:movement.sway
 ms.prod: gaming
 ---
 
-# minecraft:movement.sway
+# Entity Documentation - minecraft:movement.sway
 
 `minecraft:movement.sway` causes the mob to sway side to side giving the impression it is swimming.
 

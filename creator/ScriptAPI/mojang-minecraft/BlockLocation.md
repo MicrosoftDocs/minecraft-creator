@@ -51,12 +51,13 @@ Type: *number*
 new BlockLocation(x: number, y: number, z: number)
 `
 
+Creates a new instance of an abstract block location.
 #### Arguments
 | Parameter | Type | Default Value | Description |
 | :--- | :--- | :--- | :---: |
-| **x** | *number* | n/a | - |
-| **y** | *number* | n/a | - |
-| **z** | *number* | n/a | - |
+| **x** | *number* | n/a | X position of the block location. This number should be an integer. |
+| **y** | *number* | n/a | Y position of the block location. This number should be an integer. |
+| **z** | *number* | n/a | Z position of the block location. This number should be an integer. |
 
 Returns [*BlockLocation*](BlockLocation.md)
 
@@ -76,12 +77,13 @@ Returns [*BlockLocation*](BlockLocation.md)
 blocksBetween(other: BlockLocation): BlockLocation[]
 `
 
+Returns an array of block locations representing all blocks in the volume (cuboid) between this location and another location.
 #### Arguments
 | Parameter | Type | Default Value | Description |
 | :--- | :--- | :--- | :---: |
-| **other** | [*BlockLocation*](BlockLocation.md) | n/a | - |
+| **other** | [*BlockLocation*](BlockLocation.md) | n/a | Additional BlockLocation used to determine the set of locations in between this location and another point. |
 
-Returns [*BlockLocation*](BlockLocation.md)[]
+Returns [*BlockLocation*](BlockLocation.md)[] - Array of block locations representing the volume between this location and another, inclusive of the start and end points.
 
 
 ### **equals**

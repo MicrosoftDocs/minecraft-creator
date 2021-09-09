@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.work
+title: Entity Documentation - minecraft:behavior.work
 ms.prod: gaming
 ---
 
-# minecraft:behavior.work
+# Entity Documentation - minecraft:behavior.work
 
 `minecraft:behavior.work` allows an entity to navigate and interact with a point of interest that has been assigned as their worksite.
 

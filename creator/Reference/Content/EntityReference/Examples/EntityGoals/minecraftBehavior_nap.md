@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.nap
+title: Entity Documentation - minecraft:behavior.nap
 ms.prod: gaming
 ---
 
-# minecraft:behavior.nap
+# Entity Documentation - minecraft:behavior.nap
 
 `minecraft:behavior.nap` allows an entity to nap in a location when distant from other entities.
 

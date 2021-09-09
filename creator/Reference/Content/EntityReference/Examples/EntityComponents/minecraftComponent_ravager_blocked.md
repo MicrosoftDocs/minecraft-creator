@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:ravager_blocked
+title: Entity Documentation - minecraft:ravager_blocked
 ms.prod: gaming
 ---
 
-# minecraft:ravager_blocked
+# Entity Documentation - minecraft:ravager_blocked
 
 `minecraft:ravager_blocked` defines the ravager's response to their melee attack being blocked.
 

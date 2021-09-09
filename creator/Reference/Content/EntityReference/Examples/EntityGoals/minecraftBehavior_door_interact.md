@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.door_interact
+title: Entity Documentation - minecraft:behavior.door_interact
 ms.prod: gaming
 ---
 
-# minecraft:behavior.door_interact
+# Entity Documentation - minecraft:behavior.door_interact
 
 `minecraft:behavior.door_interact` allows an entity to interact with doors.
 

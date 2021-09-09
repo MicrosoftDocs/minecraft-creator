@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_owner
+title: Entity Documentation - is_owner
 ms.prod: gaming
 ---
 
-# is_owner
+# Entity Documentation - is_owner
 
 Returns true if the subject entity is the owner of the calling entity.
 

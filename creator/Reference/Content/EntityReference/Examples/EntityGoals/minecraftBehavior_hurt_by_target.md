@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.hurt_by_target
+title: Entity Documentation - minecraft:behavior.hurt_by_target
 ms.prod: gaming
 ---
 
-# minecraft:behavior.hurt_by_target
+# Entity Documentation - minecraft:behavior.hurt_by_target
 
 `minecraft:behavior.hurt_by_target` allows an entity to react when hit by set target.
 
