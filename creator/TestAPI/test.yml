@@ -18,8 +18,6 @@
               href:
             - name: Entity Modeling and Animation
               href:
-            - name: Minecraft Entity Wizard
-              href: Documents/MinecraftEntityWizard.md
         - name: Adding NPCs
           items:
             - name: Create a Custom NPC
@@ -42,6 +40,8 @@
             href: Documents/CommandBlocks.md
           - name: How to Make a Complete the Monument Map
             href: Documents/CommandsHowToMakeACTMMap.md
+    - name: Tools and Frameworks
+      items:
         - name: GameTest Framework
           items:
           - name: Getting Started with GameTest
@@ -50,7 +50,11 @@
             href: Documents/GameTestBuildYourFirstGameTest.md
           - name: Use Visual Studio Code tools to write script
             href: Documents/ScriptDeveloperTools.md
-        - name: Working with Chunker
+        - name: Blockbench
+          items:
+            - name: Minecraft Entity Wizard
+              href: Documents/MinecraftEntityWizard.md
+        - name: Chunker
           items:
           - name: Chunker - Overview
             href:
@@ -60,17 +64,21 @@
             href:
           - name: Chunker - The Nether
             href:
+        - name: Creator Tools
+          items:
+          - name: Commonly Used Tools
+            href:
+          - name: Content Error Log
+            href:
     - name: Articles
       items:
         - name: Caves + Cliffs Features
           items:
           - name: Introduction to the Caves & Cliffs Entities
             href: Documents/CavesAndCliffsEntities.md
-        - name: Creator Articles
+        - name: Useful Knowledge for Creators
           items:
           - name: 'Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition'
             href: Documents/DifferencesBetweenBedrockAndJava.md
-          - name: Commonly Used Tools
-            href:
-          - name: Content Error Log
-            href:
+          - name: "Experimental Features in Minecraft: Bedrock Edition"
+            href: Documents/ExperimentalFeaturesToggle.md
