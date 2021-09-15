@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:equip_item
+title: Entity Documentation - minecraft:equip_item
 ms.prod: gaming
 ---
 
-# minecraft:equip_item
+# Entity Documentation - minecraft:equip_item
 
 `minecraft:equip_item` allows the entity to equip desired equipment.
 

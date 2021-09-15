@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:instant_despawn
+title: Entity Documentation - minecraft:instant_despawn
 ms.prod: gaming
 ---
 
-# minecraft:instant_despawn
+# Entity Documentation - minecraft:instant_despawn
 
 `minecraft:instant_despawn` despawns the Actor immediately.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.offer_flower
+title: Entity Documentation - minecraft:behavior.offer_flower
 ms.prod: gaming
 ---
 
-# minecraft:behavior.offer_flower
+# Entity Documentation - minecraft:behavior.offer_flower
 
 `minecraft:behavior.offer_flower` allows an entity to offer a flower to another entity.
 

@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:sittable
+title: Entity Documentation - minecraft:sittable
 ms.prod: gaming
 ---
 
-# minecraft:sittable
+# Entity Documentation - minecraft:sittable
 
 `minecraft:sittable` defines the entity's 'sit' state.
 

@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:behavior.ram_attack
+title: Entity Documentation - minecraft:behavior.ram_attack
 ms.prod: gaming
 ---
 
-# minecraft:behavior.ram_attack
+# Entity Documentation - minecraft:behavior.ram_attack
 
 `minecraft:behavior.ram_attack` allows the mob to search for a random target and, if a direct path exists between the mob and the target, it will perform a charge. If the attack hits, the target will be knocked back based on the mob's speed.
 
@@ -38,7 +38,7 @@ ms.prod: gaming
     "ram_speed": 2.0 ,
     "pre_ram_sound": "pre_ram",
     "ram_impact_sound": "ram_impact" ,
-    "cooldown_range": [10.0, 20.0] 
+    "cooldown_range": [10.0, 20.0]
 }
 ```
 

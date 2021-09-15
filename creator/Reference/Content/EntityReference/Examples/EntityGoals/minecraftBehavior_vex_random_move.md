@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.vex_random_move
+title: Entity Documentation - minecraft:behavior.vex_random_move
 ms.prod: gaming
 ---
 
-# minecraft:behavior.vex_random_move
+# Entity Documentation - minecraft:behavior.vex_random_move
 
 `minecraft:behavior.vex_random_move` allows an entity of the`vex` family to move randomly.
 

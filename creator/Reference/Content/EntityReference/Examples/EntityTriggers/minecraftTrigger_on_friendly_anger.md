@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:on_friendly_anger
+title: Entity Documentation - minecraft:on_friendly_anger
 ms.prod: gaming
 ---
 
-# minecraft:on_friendly_anger
+# Entity Documentation - minecraft:on_friendly_anger
 
 `minecraft:on_friendly_anger` adds a trigger that will run when a nearby entity of the same type as this entity enters an `Angry` state.
 

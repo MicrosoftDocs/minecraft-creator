@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:is_charged
+title: Entity Documentation - minecraft:is_charged
 ms.prod: gaming
 ---
 
-# minecraft:is_charged
+# Entity Documentation -  minecraft:is_charged
 
 `minecraft:is_charged` sets that the entity is charged.
 

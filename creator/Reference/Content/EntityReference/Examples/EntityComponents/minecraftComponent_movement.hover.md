@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:movement.hover
+title: Entity Documentation - minecraft:movement.hover
 ms.prod: gaming
 ---
 
-# minecraft:movement.hover
+# Entity Documentation - minecraft:movement.hover
 
 `minecraft:movement.hover` causes the mob to hover.
 

@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:behavior.play_dead
+title: Entity Documentation - minecraft:behavior.play_dead
 ms.prod: gaming
 ---
 
-# minecraft:behavior.play_dead
+# Entity Documentation - minecraft:behavior.play_dead
 
 `minecraft:behavior.play_dead` allows the mob to play dead when attacked by other entities. When playing dead, other entities will not target this mob.
 

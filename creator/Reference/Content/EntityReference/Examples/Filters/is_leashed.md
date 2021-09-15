@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_leashed
+title: Entity Documentation - is_leashed
 ms.prod: gaming
 ---
 
-# is_leashed
+# Entity Documentation - is_leashed
 
 Returns true if the subject entity is leashed.
 

@@ -16,9 +16,11 @@ Building sets of GameTests requires building out your GameTests via a behavior P
 
 >[!IMPORTANT]
 >GameTest Framework is still experimental. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.  Check the Minecraft Changelog for details on any changes to GameTest Framework.
+>
+>To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](ExperimentalFeaturesToggle.md)
 
->[!IMPORTANT]
-Because GameTest Framework is adding and updating functionality frequently, we recommend using the latest Beta versions of Minecraft. See [Minecraft Betas](https://aka.ms/mcbeta) for more information. The syntax of this sample is intended to be compatible with the latest beta versions.
+>[!Caution]
+>Because GameTest Framework is adding and updating functionality frequently, we recommend using the latest Beta versions of Minecraft. See [Minecraft Betas](https://aka.ms/mcbeta) for more information. The syntax of this sample is intended to be compatible with the latest beta versions.
 
 ### Requirements
 
@@ -31,7 +33,7 @@ It’s recommended that the following be completed before beginning this tutoria
 
 Within a behavior pack, every GameTest consists of a few elements:
 
-- **A structure** which defines the physical environment for the test as well as any starting entities.  Within Minecraft, you can create new structures by designing them out (typically in Creative Mode) and then placing a structure block nearby. You can then use the structure block to save out the results to disk. This creates a .mcstructure file which you can add to your test.  
+- **A structure** which defines the physical environment for the test as well as any starting entities.  Within Minecraft, you can create new structures by designing them out (typically in Creative Mode) and then placing a structure block nearby. You can then use the structure block to save out the results to disk. This creates a .mcstructure file which you can add to your test.
 
 When GameTests are run in Minecraft, your structure will be loaded and expanded into Minecraft. You should note that this structure will be created and run in a generally flat, broader world, so you'll want to ensure that any mobs are penned into the structures you create.
 
@@ -90,7 +92,7 @@ A behavior pack manifest needs to have additional elements to support GameTests.
 
 Note several facets of this `module`:
 
-- This module is of type `javascript`.  
+- This module is of type `javascript`.
 - The `uuid` needs to be unique and generated for your project.  See the [Introduction To Behavior Packs](BehaviorPack.md) topic for tools for generating new UUIDs.
 - The `entry` attribute points to a JavaScript file that contains your GameTest code.
 
@@ -207,7 +209,7 @@ function simpleMobTest(test) {
 Some things to observe in this test function:
 
 - You can use the `spawn` method to create new mobs in your test.
-- Coordinates used in APIs like spawn are relative to within your .MCStructure.
+- Coordinates used in APIs like spawn are relative to the structure block of your .MCStructure.
 - `assert` functions cause code execution to stop if the conditions described in the method are not true.  Here, this code asserts that a chicken entity is no longer in the structure (the `false` in the method assertEntityPresentInArea tells the function to assert that the entity is no longer there). If one is found within any of the blocks in the structure, the `assert` code will throw an error.  However, if no chicken is found, we make our way to the test.succeed line of code, and the test passes.
 
 The full JavaScript StarterTests.js file looks like:
@@ -251,7 +253,7 @@ This will give you a structure block to work with.  Place a structure block next
 
 ![Structure Block interface in Minecraft](Media/GameTestBuildYourFirstGameTest/structureblock.png)
 
-In your behavior pack, go to your structures folder and create a subfolder called startertests.  
+In your behavior pack, go to your structures folder and create a subfolder called startertests.
 
 Place this mediumglass.mcstructure file within a subfolder called startertests. Make sure that you match the casing you specified in your JavaScript code, so make it all lower-case. Copy the mediumglass.mcstructure file to that folder. Your folder should look like this:
 

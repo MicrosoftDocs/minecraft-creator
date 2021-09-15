@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: spawn_loot
+title: Block Documentation - spawn_loot
 ms.prod: gaming
 ---
 
-# spawn_loot
+# Block Documentation - spawn_loot
 
 `spawn_loot` is an Event Response that will spawn the set loot from the block.
 

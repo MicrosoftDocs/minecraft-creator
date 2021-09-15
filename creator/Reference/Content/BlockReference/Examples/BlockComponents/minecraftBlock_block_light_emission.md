@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:block_light_emission
+title: Block Documentation - minecraft:block_light_emission
 ms.prod: gaming
 ---
 
-# minecraft:block_light_emission
+# Block Documentation - minecraft:block_light_emission
 
 `minecraft:block_light_emission` is a `decimal` component that sets how much light the block will emit in a range [0.0, 1.0].
 

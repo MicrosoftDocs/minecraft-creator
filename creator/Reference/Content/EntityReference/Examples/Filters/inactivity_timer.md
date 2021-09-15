@@ -1,13 +1,13 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: inactivity_timer
+title: Entity Documentation - inactivity_timer
 ms.prod: gaming
 ---
 
-# inactivity_timer
+# Entity Documentation - inactivity_timer
 
-Tests if the entity was inactive for specified duration. 
+Tests if the entity was inactive for specified duration.
 
 ## Parameters
 

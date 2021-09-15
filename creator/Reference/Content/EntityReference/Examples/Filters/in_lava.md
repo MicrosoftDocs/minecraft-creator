@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: in_lava
+title: Entity Documentation - in_lava
 ms.prod: gaming
 ---
 
-# in_lava
+# Entity Documentation - in_lava
 
 Returns true when the subject entity is in lava.
 

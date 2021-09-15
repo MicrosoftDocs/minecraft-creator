@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:placement_filter
+title: Block Documentation - minecraft:placement_filter
 ms.prod: gaming
 ---
 
-# minecraft:placement_filter
+# Block Documentation - minecraft:placement_filter
 
 `minecraft:placement_filter` is a component controlled by a `JSON object` that sets rules for under what conditions the block can be placed.
 

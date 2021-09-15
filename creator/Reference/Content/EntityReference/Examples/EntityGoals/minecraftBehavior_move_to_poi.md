@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.move_to_poi
+title: Entity Documentation - minecraft:behavior.move_to_poi
 ms.prod: gaming
 ---
 
-# minecraft:behavior.move_to_poi
+# Entity Documentation - minecraft:behavior.move_to_poi
 
 `minecraft:behavior.move_to_poi` allows an entity to move to a point of interest that has been set.
 

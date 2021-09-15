@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:on_player_placing
+title: Block Documentation - minecraft:on_player_placing
 ms.prod: gaming
 ---
 
-# minecraft:on_player_placing
+# Block Documentation - minecraft:on_player_placing
 
 `minecraft:on_player_placing` is an Event Trigger for when an actor, that is tagged as a player, places a block in the world.
 

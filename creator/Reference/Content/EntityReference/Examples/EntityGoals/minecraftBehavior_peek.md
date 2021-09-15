@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.peek
+title: Entity Documentation - minecraft:behavior.peek
 ms.prod: gaming
 ---
 
-# minecraft:behavior.peek
+# Entity Documentation - minecraft:behavior.peek
 
 `minecraft:behavior.peek` allows an entity to peek out.
 

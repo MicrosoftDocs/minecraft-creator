@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:flammable
+title: Block Documentation - minecraft:flammable
 ms.prod: gaming
 ---
 
-# minecraft:flammable
+# Block Documentation - minecraft:flammable
 
 `minecraft:flammable` is a component controlled by a `JSON object` that contains the flammable properties for this block.
 

@@ -17,11 +17,15 @@ Contains the state of a boolean-based property for a [*mojang-minecraft.BlockPer
 ### **name**
 `read-only name: string;`
 
+The name of this property.
+
 Type: *string*
 
 
 ### **validValues**
 `read-only validValues: boolean[];`
+
+A list of valid values for this property.
 
 Type: *boolean*[]
 

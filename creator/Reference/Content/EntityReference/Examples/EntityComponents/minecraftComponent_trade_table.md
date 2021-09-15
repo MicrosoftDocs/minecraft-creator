@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:trade_table
+title: Entity Documentation - minecraft:trade_table
 ms.prod: gaming
 ---
 
-# minecraft:trade_table
+# Entity Documentation - minecraft:trade_table
 
 `minecraft:trade_table` defines this entity's ability to trade with players.
 

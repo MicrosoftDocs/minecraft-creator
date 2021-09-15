@@ -1,8 +1,9 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Introduction to resource packs
+title: Introduction to Resource Packs
 ms.prod: gaming
+description: A tutorial that is an introduction to Resource Packs and how to add a custom texture to an in-game block.
 ---
 
 # Introduction to Resource Packs
@@ -23,7 +24,7 @@ In this tutorial, you will learn the following:
 
 It’s recommended that the following be completed before beginning this tutorial:
 
-- [Getting Started with Add-on Development](GettingStarted.md)
+- [Getting Started with Add-On Development](GettingStarted.md)
 - Download the [Vanilla resource pack](https://aka.ms/resourcepacktemplate)
 
 ## Building the Resource Pack
@@ -121,6 +122,7 @@ You can now design a pattern or any artwork in the editor. In this example, a si
 
 > [!IMPORTANT]
 > While MS Paint is used for this example for it's quick and easy access, there are a few drawbacks as well.
+>
 > - MS Paint does *not* support alpha channels that are commonly used for transparency effects in Minecraft.
 > - MS Paint does *not* support .tga files types.
 
@@ -142,11 +144,11 @@ Since the custom texture is named dirt.png, the texture will be used on every si
 1. Launch Minecraft.
 1. When Minecraft has launched and reached the main menu, select **Play**.
 1. Select **Create a new world**.
-1. Under **Settings**, scroll down to the **Add-on** section.
+1. Under **Settings**, scroll down to the **Add-On** section.
 1. Click on **resource packs** to see all available packs.
 1. Under all of the packs, select **HelloWorldRP** to add the pack to the world.
 1. **Launch** your world.
-![Image of Minecraft's Settings page with the Add-on menu selected for resource packs. There is a red rectangle outlining the HelloWorldRP in the menu](Media/ResourcePack/addonsettings.png)
+![Image of Minecraft's Settings page with the Add-On menu selected for resource packs. There is a red rectangle outlining the HelloWorldRP in the menu](Media/ResourcePack/addonsettings.png)
 
 ### What's Next?
 

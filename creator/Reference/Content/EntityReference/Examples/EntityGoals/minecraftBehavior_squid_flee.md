@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.squid_flee
+title: Entity Documentation - minecraft:behavior.squid_flee
 ms.prod: gaming
 ---
 
-# minecraft:behavior.squid_flee
+# Entity Documentation - minecraft:behavior.squid_flee
 
 `minecraft:behavior.squid_flee` allows an entity to swim away when attacked.
 

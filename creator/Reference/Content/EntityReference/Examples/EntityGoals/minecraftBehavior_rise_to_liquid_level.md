@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.rise_to_liquid_level
+title: Entity Documentation - minecraft:behavior.rise_to_liquid_level
 ms.prod: gaming
 ---
 
-# minecraft:behavior.rise_to_liquid_level
+# Entity Documentation - minecraft:behavior.rise_to_liquid_level
 
 `minecraft:behavior.rise_to_liquid_level` allows an entity to rise to the top of a liquid block if they are located in one or have spawned under a liquid block.
 
@@ -14,8 +14,8 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |liquid_y_offset| 0.0| Decimal| Vertical offset from the liquid |
-|rise_delta | 0.0| Decimal| displacement for how much the entity will move up in the vertical axis|
-|sink_delta | 0.0| Decimal| displacement for how much the entity will move down in the vertical axis|
+|rise_delta | 0.0| Decimal| Displacement for how much the entity will move up in the vertical axis|
+|sink_delta | 0.0| Decimal| Displacement for how much the entity will move down in the vertical axis|
 
 ## Example
 

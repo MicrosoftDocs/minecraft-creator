@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:hurt_on_condition
+title: Entity Documentation - minecraft:hurt_on_condition
 ms.prod: gaming
 ---
 
-# minecraft:hurt_on_condition
+# Entity Documentation - minecraft:hurt_on_condition
 
 `minecraft:hurt_on_condition` defines a set of conditions under which an entity should take damage.
 
@@ -21,8 +21,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|[filters](../FilterList.md)|*not set* | Minecraft Filter| filter used to test for|
-|[cause](../Filters/has_damage.md#list-of-damage-types) |*not set* |String|cause of damage|
+|[filters](../FilterList.md)|*not set* | Minecraft Filter| Filter used to test for|
+|[cause](../Filters/has_damage.md#list-of-damage-types) |*not set* |String|Cause of damage|
 |damange_per_tick |*not set*| Integer| Amount of damage done each tick that the conditions are met.|
 
 ## Example

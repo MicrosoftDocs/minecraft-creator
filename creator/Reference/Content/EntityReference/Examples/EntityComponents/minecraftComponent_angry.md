@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:angry
+title: Entity Documentation - minecraft:angry
 ms.prod: gaming
 ---
 
-# minecraft:angry
+# Entity Documentation - minecraft:angry
 
 `minecraft:angry` defines the entity's 'angry' state using a timer.
 

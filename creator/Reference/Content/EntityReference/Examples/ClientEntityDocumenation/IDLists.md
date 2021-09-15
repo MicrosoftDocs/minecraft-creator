@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: ID Lists
+title: Entity Documentation - ID Lists
 ms.prod: gaming
 ---
 
-# ID Lists
+# Entity Documentation - ID Lists
 
 Listed below are the ID values for each set of Entity JSON Entries.
 

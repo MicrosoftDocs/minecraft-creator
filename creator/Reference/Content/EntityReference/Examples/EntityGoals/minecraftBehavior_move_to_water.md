@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.move_to_water
+title: Entity Documentation - minecraft:behavior.move_to_water
 ms.prod: gaming
 ---
 
-# minecraft:behavior.move_to_water
+# Entity Documentation - minecraft:behavior.move_to_water
 
 `minecraft:behavior.move_to_water` allows an entity to move to water when on land.
 

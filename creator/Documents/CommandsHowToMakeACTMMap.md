@@ -3,6 +3,7 @@ author: neonerz
 ms.author: v-jeffreykim
 title: How To Make a Complete the Monument Map
 ms.prod: gaming
+description: A tutorial covering how to create a "Complete the Monument" style map utilizing Command Blocks
 ---
 
 # Commands - How To Make a Complete the Monument Map

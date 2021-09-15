@@ -1,16 +1,16 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:fog
+title: Volume Documentation - minecraft:fog
 ms.prod: gaming
 ---
 
-# minecraft:fog
+# Volume Documentation -  minecraft:fog
 
 `minecraft:fog` is a Volume Component that is defined by two parameters. Each item has the following properties:
 
 | Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
+|:----------|:----------|:----------|:----------|
 | fog_identifier| *not set*| String| The identifier of a fog definition. Note that you will not receive any feedback if the definition does not exist. |
 | priority| INT_MAX| Integer| The priority for this fog definition setting. Smaller numbers have higher priority. Fogs with equal priority will be combined together. |
 

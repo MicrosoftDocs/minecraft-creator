@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.mingle
+title: Entity Documentation - minecraft:behavior.mingle
 ms.prod: gaming
 ---
 
-# minecraft:behavior.mingle
+# Entity Documentation - minecraft:behavior.mingle
 
 `minecraft:behavior.mingle` allows an entity to navigate to the village bell point of interest and interact with other entities that have been assigned.
 

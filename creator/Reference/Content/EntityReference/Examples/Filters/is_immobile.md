@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_immobile
+title: Entity Documentation - is_immobile
 ms.prod: gaming
 ---
 
-# is_immobile
+# Entity Documentation - is_immobile
 
 Returns true if the subject entity is immobile. An entity is immobile if it lacks AI goals, has just changed dimensions or if it is a mob and has no health.
 

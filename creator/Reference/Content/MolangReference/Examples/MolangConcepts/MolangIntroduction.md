@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Introduction to Molang
+title: Molang Documenation - Introduction to Molang
 ms.prod: gaming
 ---
 
-# Introduction to Molang
+# Molang Documenation - Introduction to Molang
 
 Molang is a simple expression-based language designed for fast, data-driven calculation of values at run-time, and with a direct connection to in-game values and systems.
 

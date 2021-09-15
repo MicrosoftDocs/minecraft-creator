@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:strength
+title: Entity Documentation - minecraft:strength
 ms.prod: gaming
 ---
 
-# minecraft:strength
+# Entity Documentation - minecraft:strength
 
 `minecraft:strength` defines the entity's ability to carry items.
 

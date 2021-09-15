@@ -42,22 +42,32 @@
         href: mojang-minecraft/BlockInventoryComponent.md
       - name: BlockInventoryComponentContainer
         href: mojang-minecraft/BlockInventoryComponentContainer.md
+      - name: BlockLavaContainerComponent
+        href: mojang-minecraft/BlockLavaContainerComponent.md
       - name: BlockLocation
         href: mojang-minecraft/BlockLocation.md
       - name: BlockPermutation
         href: mojang-minecraft/BlockPermutation.md
       - name: BlockPistonComponent
         href: mojang-minecraft/BlockPistonComponent.md
+      - name: BlockPotionContainerComponent
+        href: mojang-minecraft/BlockPotionContainerComponent.md
       - name: BlockProperties
         href: mojang-minecraft/BlockProperties.md
+      - name: BlockSnowContainerComponent
+        href: mojang-minecraft/BlockSnowContainerComponent.md
       - name: BlockType
         href: mojang-minecraft/BlockType.md
+      - name: BlockWaterContainerComponent
+        href: mojang-minecraft/BlockWaterContainerComponent.md
       - name: BoolBlockProperty
         href: mojang-minecraft/BoolBlockProperty.md
       - name: ChatEvent
         href: mojang-minecraft/ChatEvent.md
       - name: ChatEventSignal
         href: mojang-minecraft/ChatEventSignal.md
+      - name: Color
+        href: mojang-minecraft/Color.md
       - name: Commands
         href: mojang-minecraft/Commands.md
       - name: Container
@@ -158,6 +168,8 @@
         href: mojang-minecraft/FeedItemEffect.md
       - name: FilterGroup
         href: mojang-minecraft/FilterGroup.md
+      - name: FluidContainer
+        href: mojang-minecraft/FluidContainer.md
       - name: IntBlockProperty
         href: mojang-minecraft/IntBlockProperty.md
       - name: InventoryComponentContainer
@@ -180,6 +192,8 @@
         href: mojang-minecraft/PistonActivateEventSignal.md
       - name: Player
         href: mojang-minecraft/Player.md
+      - name: RecordPlayer
+        href: mojang-minecraft/RecordPlayer.md
       - name: Seat
         href: mojang-minecraft/Seat.md
       - name: StringBlockProperty

@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:timer
+title: Entity Documentation - minecraft:timer
 ms.prod: gaming
 ---
 
-# minecraft:timer
+# Entity Documentation - minecraft:timer
 
 `minecraft:timer` adds a timer after which an event will fire.
 

@@ -24,6 +24,7 @@ The type (or template) of a block. Does not contain permutation data (state) oth
 canBeWaterlogged(): boolean
 `
 
+Represents whether this type of block can be waterlogged.
 
 Returns *boolean*
 
@@ -43,19 +44,15 @@ Returns [*BlockPermutation*](BlockPermutation.md) - Returns created permutation.
 #### Examples
 ##### ***place_bottom_stone_slab.js***
 ```javascript
-import { World, BlockTypes, BlockProperties, BlockLocation } from "Minecraft";
-
+import { World, MinecraftBlockTypes, BlockProperties, BlockLocation } from "mojang-minecraft";
 // Create the permutation
-let bottomStoneSlab = BlockTypes.stoneSlab.createDefaultBlockPermutation();
+let bottomStoneSlab = MinecraftBlockTypes.stoneSlab.createDefaultBlockPermutation();
 bottomStoneSlab.getProperty(BlockProperties.stoneSlabType).value = "stone_brick";
 bottomStoneSlab.getProperty(BlockProperties.topSlotBit).value = false;
-
 // Fetch the block
 const block = World.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3));
-
 // Set the permutation
 block.setPermutation(bottomStoneSlab);
-
 ```
 ### **getName**
 `

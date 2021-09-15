@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:unit_cube
+title: Block Documentation - minecraft:unit_cube
 ms.prod: gaming
 ---
 
-# minecraft:unit_cube
+# Block Documentation - minecraft:unit_cube
 
 `minecraft:unit_cube` is a `String` component that specifies that a unite cube is to be used with tessellation.
 

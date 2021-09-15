@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:on_hurt
+title: Entity Documentation - minecraft:on_hurt
 ms.prod: gaming
 ---
 
-# minecraft:on_hurt
+# Entity Documentation - minecraft:on_hurt
 
 `minecraft:on_hurt` adds a trigger to call when this entity takes damage.
 

@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:giveable
+title: Entity Documentation - minecraft:giveable
 ms.prod: gaming
 ---
 
-# minecraft:giveable
+# Entity Documentation - minecraft:giveable
 
 `minecraft:giveable` defines sets of items that can be used to trigger events when used on this entity. The item will also be taken and placed in the entity's inventory.
 

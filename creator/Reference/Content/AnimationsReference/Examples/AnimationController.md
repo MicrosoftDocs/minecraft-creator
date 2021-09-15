@@ -1,13 +1,13 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Animation Controllers
+title: Animation Documentation - Animation Controllers
 ms.prod: gaming
 ---
 
-# Animation Controllers
+# Animation Documentation - Animation Controllers
 
-The Animation Controller format is written in JSON and formatted as shown below;
+The Animation Controller format is written in JSON and formatted as shown below:
 
 ### Animation Controller Format
 
@@ -46,7 +46,8 @@ Each state has an optional variables section, listing any number of variables th
 Variables have their value set by a Molang Expression.  They can also have their value remapped via a linearly-interpolated curve.
 
 #### Example
-Here is the animation controller for a single frame.  It will take the value of `query.ground_speed`, then remap it to between 0.2 and 0.7 based on the value of `query.ground_speed` going from 0.0 to 1.0It will play one animation walk that will blend from 0.0 to 1.0 as the ground speed increases from stopped to 2.3 m/s. The remap curve can have any number of entries. The animation controller will then play the entity-referenced `wiggle_nose` animations, followed by the `walk` animation, scaling the latter by the value of `variable.ground_speed_curve`
+
+Here is the animation controller for a single frame.  It will take the value of `query.ground_speed`, then remap it to between 0.2 and 0.7 based on the value of `query.ground_speed` going from 0.0 to 1.0. It will play one animation walk that will blend from 0.0 to 1.0 as the ground speed increases from stopped to 2.3 m/s. The remap curve can have any number of entries. The animation controller will then play the entity-referenced `wiggle_nose` animations, followed by the `walk` animation, scaling the latter by the value of `variable.ground_speed_curve`
 
 ```JSON
 {
@@ -87,7 +88,7 @@ In definitions\entity\tiger.json:
   "custom:tiger":{
     "scripts":{
       "pre_animation": {
-        "variable.foo = math.sin(query.life_time)"
+        "variable.foo = math.sin(query.life_time);"
       }
     }
   }
@@ -132,7 +133,7 @@ Each transition has a target state to switch to, and a script for whether it sho
 }
 ```
 
-#### Example
+#### Example of a state transitions
 
 ```JSON
 "controller.animation.tiger.move": {
@@ -164,7 +165,7 @@ Each transition has a target state to switch to, and a script for whether it sho
 
 to the time you would like the system to take in blending between the two states.  This is done as a simple lerp between the two states over the time specified.
 
-#### Example
+#### Example of blending between two states
 
 ```JSON
 "controller.animation.tiger.move": {

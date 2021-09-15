@@ -1,13 +1,18 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:biome_filter
+title: Entity Documentation - minecraft:biome_filter
 ms.prod: gaming
 ---
 
-# minecraft:biome_filter
+# Entity Documentation - minecraft:biome_filter
 
-This component allows the players to specify which biomes the mob spawns in. Each biome in the game has one or more tags. These tags are used to determine what biomes mobs spawn in. Below is the list of Biome tags that can be used:
+This component allows the players to specify which biomes the mob spawns in. Each biome in the game has one or more tags. These tags are used to determine what biomes mobs spawn in.
+
+> [!NOTE]
+> To learn more about how Biomes are defined in JSON, please visit [Biome Documentation - Overview](../../../BiomeReference/Examples/BiomeOverview.md)
+
+Below is the list of Biome tags that can be used:
 
 ## Biome Tags
 

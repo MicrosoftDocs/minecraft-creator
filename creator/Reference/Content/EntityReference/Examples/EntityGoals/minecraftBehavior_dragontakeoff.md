@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.dragontakeoff
+title: Entity Documentation - minecraft:behavior.dragontakeoff
 ms.prod: gaming
 ---
 
-# minecraft:behavior.dragontakeoff
+# Entity Documentation - minecraft:behavior.dragontakeoff
 
 `minecraft:behavior.dragontakeoff` allows an entity to leave perch mode and go back to flying around.
 

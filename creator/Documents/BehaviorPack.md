@@ -3,6 +3,7 @@ author: v-josjones
 ms.author: v-josjones
 title: Introduction To Behavior Packs
 ms.prod: gaming
+description: A tutorial that is an introduction to Behavior Packs and how to add a series of attacking behaviors to an in-game cow mob.
 ---
 
 # Introduction to Behavior Packs
@@ -21,7 +22,7 @@ In this tutorial, you will learn the following:
 
 It’s recommended that the following be completed before beginning this tutorial.
 
-- [Getting Started with Add-on Development](GettingStarted.md)
+- [Getting Started with Add-On Development](GettingStarted.md)
 - [Introduction To Resource Packs](ResourcePack.md)
 - Download the [Vanilla Behavior Pack](https://aka.ms/behaviorpacktemplate)
 

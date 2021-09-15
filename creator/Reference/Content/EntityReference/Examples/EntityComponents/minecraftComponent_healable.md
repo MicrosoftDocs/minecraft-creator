@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:healable
+title: Entity Documentation - minecraft:healable
 ms.prod: gaming
 ---
 
-# minecraft:healable
+# Entity Documentation - minecraft:healable
 
 `minecraft:healable` defines the interactions with this entity for healing it.
 

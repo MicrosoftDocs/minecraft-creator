@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: EntityList
+title: Entity Documentation - EntityList
 ms.prod: gaming
 ---
 
-# Entity List
+# Entity Documentation - Entity List
 
 Below is a list of all the available Entities within Minecraft:Bedrock Edition located in the Vanilla Behavior Pack.
 

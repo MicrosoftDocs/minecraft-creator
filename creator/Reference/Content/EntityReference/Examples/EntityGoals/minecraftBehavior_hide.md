@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.hide
+title: Entity Documentation - minecraft:behavior.hide
 ms.prod: gaming
 ---
 
-# minecraft:behavior.hide
+# Entity Documentation - minecraft:behavior.hide
 
 `minecraft:behavior.hide` allows an entity to navigate to a specific point of interest that is tied to the entity.
 

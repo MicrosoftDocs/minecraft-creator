@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:mob_effect
+title: Entity Documentation - minecraft:mob_effect
 ms.prod: gaming
 ---
 
-# minecraft:mob_effect
+# Entity Documentation - minecraft:mob_effect
 
 `minecraft:mob_effect` applies a mob effect to entities that get within range.
 

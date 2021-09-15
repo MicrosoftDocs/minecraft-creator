@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: set_block_at_pos
+title: Block Documentation - set_block_at_pos
 ms.prod: gaming
 ---
 
-# set_block_at_pos
+# Block Documentation - set_block_at_pos
 
 `set_block_at_pos` is an Event Response that will set the block type of another block that is relative.
 

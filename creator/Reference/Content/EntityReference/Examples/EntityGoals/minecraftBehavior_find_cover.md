@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.find_cover
+title: Entity Documentation - minecraft:behavior.find_cover
 ms.prod: gaming
 ---
 
-# minecraft:behavior.find_cover
+# Entity Documentation - minecraft:behavior.find_cover
 
 `minecraft:behavior.find_cover` allows an entity to locate shade in the world.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Animation Reference - Render Controllers
+title: Animation Documentation - Render Controllers
 ms.prod: gaming
 ---
 
-# Animation Reference - Render Controllers
+# Animation Documentation - Render Controllers
 
 The Render Controller needs an identifier and needs to follow the format of `"controller.render.<name>"`.  This name needs to match the name set in the Client Entity Definitions JSON.
 
@@ -17,17 +17,23 @@ To begin, create a new folder named "render_controllers" in the root of the Reso
 
 ### Example render controllers JSON for the ocelot entity
 
-```JSON
+```JSONC
 "format_version": "1.8.0",
 "render_controllers": {
   "controller.render.ocelot": {
+    //Declarations of arrays
     "arrays": {
+      //Declarations of texture arrays
       "textures": {
+        //Property name is the array identifier, followed by a list of textures references (see entity/textures)
         "Array.skins": ["Texture.wild", "Texture.black", "Texture.red", "Texture.siamese"]
       }
     },
+    //Tells the rendering to using geometries references (see entity/geometries)
     "geometry": "Geometry.default",
+    //Tells the rendering what material to use on which bones, * is used for wildcards, using material references (see entity/material)
     "materials": [{ "*": "Material.default" }],
+    //Tells the rendering what textures to use on and in which layer, using textures references (see entity/textures) or in this case a reference to the declared array of textures
     "textures": ["Array.skins[query.variant]"]
   }
 }

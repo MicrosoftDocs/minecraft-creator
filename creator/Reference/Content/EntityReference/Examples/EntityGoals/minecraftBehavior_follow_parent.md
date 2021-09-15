@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.follow_parent
+title: Entity Documentation - minecraft:behavior.follow_parent
 ms.prod: gaming
 ---
 
-# minecraft:behavior.follow_parent
+# Entity Documentation - minecraft:behavior.follow_parent
 
 `minecraft:behavior.follow_parent` allows an entity that has been tagged as a baby to follow their parent around.
 

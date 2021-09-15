@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: set_block
+title: Block Documentation - set_block
 ms.prod: gaming
 ---
 
-# set_block
+# Block Documentation - set_block
 
 `set_block` is an Event Response that will set the block type to another block type.
 

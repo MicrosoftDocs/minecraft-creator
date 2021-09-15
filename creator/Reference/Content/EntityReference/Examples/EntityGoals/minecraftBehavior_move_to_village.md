@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.move_to_village
+title: Entity Documentation - minecraft:behavior.move_to_village
 ms.prod: gaming
 ---
 
-# minecraft:behavior.move_to_village
+# Entity Documentation - minecraft:behavior.move_to_village
 
 `minecraft:behavior.move_to_village` allows an entity to travel to a random x,y,z coordinate in a village.
 

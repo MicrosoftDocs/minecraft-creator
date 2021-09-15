@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: damage
+title: Block Documentation - damage
 ms.prod: gaming
 ---
 
-# damage
+# Block Documentation - damage
 
 `damage` is an Event Response that applies damage to a target.
 

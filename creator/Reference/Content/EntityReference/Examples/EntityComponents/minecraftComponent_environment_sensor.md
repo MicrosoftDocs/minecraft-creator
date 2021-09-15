@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:environment_sensor
+title: Entity Documentation - minecraft:environment_sensor
 ms.prod: gaming
 ---
 
-# minecraft:environment_sensor
+# Entity Documentation - minecraft:environment_sensor
 
 `minecraft:environment_sensor` creates a trigger based on environment conditions.
 

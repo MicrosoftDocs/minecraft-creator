@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.summon_entity
+title: Entity Documentation - minecraft:behavior.summon_entity
 ms.prod: gaming
 ---
 
-# minecraft:behavior.summon_entity
+# Entity Documentation - minecraft:behavior.summon_entity
 
 `minecraft:behavior.summon_entity` allows an entity to attack other entities by summoning new entities.
 
@@ -127,7 +127,7 @@ ms.prod: gaming
               }
             ]
           }
-        ]  
+        ]
 }
 ```
 

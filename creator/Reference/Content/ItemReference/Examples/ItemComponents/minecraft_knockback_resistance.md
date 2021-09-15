@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:knockback_resistance
+title: Item Documentation - minecraft:knockback_resistance
 ms.prod: gaming
 ---
 
-# minecraft:knockback_resistance
+# Item Documentation - minecraft:knockback_resistance
 
 `minecraft:knockback_resistance` sets the knockback resistance item component. Determines the amount of  knockback resistance that the item has.
 

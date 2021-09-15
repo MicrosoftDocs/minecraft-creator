@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.squid_move_away_from_ground
+title: Entity Documentation - minecraft:behavior.squid_move_away_from_ground
 ms.prod: gaming
 ---
 
-# minecraft:behavior.squid_move_away_from_ground
+# Entity Documentation - minecraft:behavior.squid_move_away_from_ground
 
 `minecraft:behavior.squid_move_away_from_ground` allows an entity to swim away from the ground blocks.
 

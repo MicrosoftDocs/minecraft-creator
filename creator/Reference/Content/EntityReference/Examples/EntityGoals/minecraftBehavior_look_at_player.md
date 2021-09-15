@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.look_at_player
+title: Entity Documentation - minecraft:behavior.look_at_player
 ms.prod: gaming
 ---
 
-# minecraft:behavior.look_at_player
+# Entity Documentation - minecraft:behavior.look_at_player
 
 `minecraft:behavior.look_at_player` allows an entity to look at the player by rotating the head bone pose within a set limit.
 

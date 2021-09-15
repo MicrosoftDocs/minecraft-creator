@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:preferred_path
+title: Entity Documentation - minecraft:preferred_path
 ms.prod: gaming
 ---
 
-# minecraft:preferred_path
+# Entity Documentation - minecraft:preferred_path
 
 `minecraft:preferred_path` specifies costing information for mobs that prefer to walk on preferred paths.
 

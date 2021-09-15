@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:explosion_resistance
+title: Block Documentation - minecraft:explosion_resistance
 ms.prod: gaming
 ---
 
-# minecraft:explosion_resistance
+# Block Documentation - minecraft:explosion_resistance
 
 `minecraft:explosion_resistance` is a `decimal` component that sets the explosion resistance for the block.
 

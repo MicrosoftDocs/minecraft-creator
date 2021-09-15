@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:despawn
+title: Entity Documentation - minecraft:despawn
 ms.prod: gaming
 ---
 
-# minecraft:despawn
+# Entity Documentation - minecraft:despawn
 
 `minecraft:despawn` allows an entity despawn when the despawn rules or optional filters evaluate to true.
 
@@ -28,8 +28,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|max_distance| 128| Integer| maximum distance for standard despawn rules to instantly despawn the mob. |
-| min_distance| 32| Integer| minimum distance for standard despawn rules to try to despawn the mob. |
+|max_distance| 128| Integer| Maximum distance for standard despawn rules to instantly despawn the mob. |
+| min_distance| 32| Integer| Minimum distance for standard despawn rules to try to despawn the mob. |
 
 ## Example
 

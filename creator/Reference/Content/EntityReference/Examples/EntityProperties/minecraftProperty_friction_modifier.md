@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:friction_modifier
+title: Entity Documentation - minecraft:friction_modifier
 ms.prod: gaming
 ---
 
-# minecraft:friction_modifier
+# Entity Documentation -  minecraft:friction_modifier
 
 `minecraft:friction_modifier` defines how much friction affects this entity.
 

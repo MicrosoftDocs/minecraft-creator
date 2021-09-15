@@ -2,8 +2,6 @@
    href: AddonBlocks.md
  - name: Addon - Entities
    href: addonEntities.md
- - name: Addon - Geometry
-   href: AddonGeometry.md
  - name: Addon - Items
    href: AddonItems.md
  - name: Addon - Manifest JSON

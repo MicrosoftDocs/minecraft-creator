@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.raid_garden
+title: Entity Documentation - minecraft:behavior.raid_garden
 ms.prod: gaming
 ---
 
-# minecraft:behavior.raid_garden
+# Entity Documentation - minecraft:behavior.raid_garden
 
 `minecraft:behavior.raid_garden` allows an entity to eat crops that have been planted in a farm.
 

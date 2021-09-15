@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:addrider
+title: Entity Documentation - minecraft:addrider
 ms.prod: gaming
 ---
 
-# minecraft:addrider
+# Entity Documentation - minecraft:addrider
 
 `minecraft:addrider` adds a rider to the entity.
 

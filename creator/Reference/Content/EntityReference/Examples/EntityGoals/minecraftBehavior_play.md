@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.play
+title: Entity Documentation - minecraft:behavior.play
 ms.prod: gaming
 ---
 
-# minecraft:behavior.play
+# Entity Documentation - minecraft:behavior.play
 
 `minecraft:behavior.play` allows an entity to play with entities that have been tagged as `baby`.
 

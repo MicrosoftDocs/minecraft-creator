@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:movement.amphibious
+title: Entity Documentation - minecraft:movement.amphibious
 ms.prod: gaming
 ---
 
-# minecraft:movement.amphibious
+# Entity Documentation - minecraft:movement.amphibious
 
 `minecraft:movement.amphibious` allows the mob to swim in water and walk on land.
 

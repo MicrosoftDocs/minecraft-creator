@@ -1,11 +1,11 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: minecraft:interact
+title: Entity Documentation - minecraft:interact
 ms.prod: gaming
 ---
 
-# minecraft:interact
+# Entity Documentation - minecraft:interact
 
 `minecraft:interact` defines interactions with this entity.
 
@@ -42,8 +42,8 @@ ms.prod: gaming
 | Name| Default Value| Type| Description |
 |:-----------|:-----------|:-----------|:-----------|
 |particle_offset_towards_interactor|False |Boolean |Whether or not the particle will appear closer to who performed the interaction. |
-|particle_type|*not set* |String |name of the particle system to run |
-|particle_y_offset|0.0 |Decimal |vertical offset of the particle system |
+|particle_type|*not set* |String |Name of the particle system to run |
+|particle_y_offset|0.0 |Decimal |Vertical offset of the particle system |
 
 ### spawn_items
 

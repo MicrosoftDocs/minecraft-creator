@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_altitude
+title: Entity Documentation - is_altitude
 ms.prod: gaming
 ---
 
-# is_altitude
+# Entity Documentation - is_altitude
 
 Tests the current altitude against a provided value.
 

@@ -5392,7 +5392,7 @@ options.protocolversion.format=Versione di protocollo: %1%s	#
 options.worldconversion.version=Convertitore di mondi: %s	#
 options.builddate.format=Data build: %s	#
 options.buttonSize=Dimensione pulsanti	#
-options.category.addons=Add-on	#
+options.category.addons=Add-On	#
 options.category.audio=Suoni	#
 options.category.game=Gioco	#
 options.category.graphics=Grafica	#
@@ -7029,7 +7029,7 @@ store.createdBy=di %s	#
 store.seeMoreBy=Visualizza altri per %s	#
 store.seeMoreBy.multiCreatorBundle=Vedi altro dai creatori di bundle	#
 store.fetchingItem=Connessione al marketplace in corso...	#
- 
+
 store.timer.daysAbbreviated=%sg		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
 store.timer.hoursAbbreviated=%sh		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
 store.timer.minutesAbbreviated=%smin		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters

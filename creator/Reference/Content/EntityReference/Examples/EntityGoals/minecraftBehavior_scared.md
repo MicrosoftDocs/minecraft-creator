@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:behavior.scared
+title: Entity Documentation - minecraft:behavior.scared
 ms.prod: gaming
 ---
 
-# minecraft:behavior.scared
+# Entity Documentation - minecraft:behavior.scared
 
 `minecraft:behavior.scared` allows an entity to become scared and react when a thunderstorm occurs.
 

@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: minecraft:equipment
+title: Entity Documentation - minecraft:equipment
 ms.prod: gaming
 ---
 
-# minecraft:equipment
+# Entity Documentation -  minecraft:equipment
 
 `minecraft:equipment` sets the equipment table to use for the entity.
 

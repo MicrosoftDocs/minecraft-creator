@@ -35,17 +35,15 @@ Returns (arg: ChatEvent) => undefined
 #### Examples
 ##### ***custom_command.js***
 ```javascript
-// Kills the chatting player if they type "!killme"
 const chatCallback = World.events.beforeChat.subscribe((eventData) => {
-  if (eventData.message.includes("cancel")) {
-    // Cancel event if the message contains "cancel"
-    eventData.canceled = true;
-  } else {
-    // Modify chat message being sent
-    eventData.message = `Modified '${eventData.message}'`;
-  }
+if (eventData.message.includes("cancel")) {
+// Cancel event if the message contains "cancel"
+eventData.canceled = true;
+} else {
+// Modify chat message being sent
+eventData.message = `Modified '${eventData.message}'`;
+}
 });
-
 ```
 ### **unsubscribe**
 `

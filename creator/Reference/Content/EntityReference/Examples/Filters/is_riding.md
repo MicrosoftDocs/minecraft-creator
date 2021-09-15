@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: is_riding
+title: Entity Documentation - is_riding
 ms.prod: gaming
 ---
 
-# is_riding
+# Entity Documentation - is_riding
 
 Returns true if the subject entity is riding on another entity.
 

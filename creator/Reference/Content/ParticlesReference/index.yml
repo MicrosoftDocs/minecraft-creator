@@ -1,0 +1,60 @@
+### YamlMime:Landing
+
+title: Particle JSON Documentation # < 60 chars
+summary: "Landing page containing all Particle JSON documentation for Minecraft: Bedrock Edition." # < 160 chars
+
+metadata:
+  title: Particle JSON Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: "Landing page containing all Particle JSON documentation for Minecraft: Bedrock Edition." # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: v-josjones #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-josjones #Required; microsoft alias of author; optional team alias.
+  ms.date: 08/30/2021 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: Getting Started with Particles
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Introduction to Particles
+            url:  ParticlesIntroduction.md
+  # Card
+  - title: Particle Components
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Particle Component List
+            url: ParticleComponentList.md
+      - linkListType: reference
+        links:
+          - text: Emitter Disc Component
+            url: ParticleComponents/minecraftEmitter_disc.md
+          - text: Emitter Initialization Component
+            url: ParticleComponents/minecraftEmitter_initialization.md
+          - text: Emitter Lifetime Events Component
+            url: ParticleComponents/minecraftEmitter_lifetime_events.md
+          - text: Particle Appearance Billboard Component
+            url: ParticleComponents/minecraftParticle_appearance_billboard.md
+          - text: Particle Initial State Component
+            url: ParticleComponents/minecraftParticle_initial_state.md
+          - text: Particle Lifetime Events Component
+            url: ParticleComponents/minecraftParticle_lifetime_events.md
+  # Card
+  - title: Particle Examples
+    linkLists:
+      - linkListType: sample
+        links:
+          - text: Bouncing Bubbles
+            url:  Examples/Bouncing_bubbles.md
+          - text: Flame Particle
+            url:  Examples/Flame_particle.md
+          - text: Mob Flame Effect
+            url:  Examples/Mob_flame_effect.md
+          - text: Smoke Particle
+            url:  Examples/Smoke_particle.md
