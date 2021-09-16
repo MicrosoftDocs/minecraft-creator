@@ -21,9 +21,9 @@ highlightedContent:
       itemType: whats-new
       url: Documents/MinecraftEntityWizard.md
     #card
-    - title: JSON Reference Documentation
+    - title: "Installing Add-Ons in Minecraft: Bedrock Edition"
       itemType: whats-new
-      url: Reference/index.yml
+      url: Documents/AddonPackInstallation.md
     #card
     - title: Introduction to the Caves & Cliffs Entities
       itemType: overview
