@@ -54,26 +54,26 @@
             href: Documents/GameTestBuildYourFirstGameTest.md
           - name: Use Visual Studio Code tools to write script
             href: Documents/ScriptDeveloperTools.md
-        - name: Blockbench
-          items:
-            - name: Minecraft Entity Wizard
-              href: Documents/MinecraftEntityWizard.md
-        - name: Chunker
-          items:
-          - name: Chunker - Overview
-            href:
-          - name: Chunker - World Settings
-            href:
-          - name: Chunker - Advanced Mode
-            href:
-          - name: Chunker - The Nether
-            href:
         - name: Creator Tools
           items:
           - name: Commonly Used Tools
             href:
-          - name: Content Error Log
-            href:
+          - name: Blockbench
+            items:
+            - name: Minecraft Entity Wizard
+              href: Documents/MinecraftEntityWizard.md
+          - name: Chunker
+            items:
+              - name: Chunker - Overview
+                href:
+              - name: Chunker - World Settings
+                href:
+              - name: Chunker - Advanced Mode
+                href:
+              - name: Chunker - The Nether
+                href:
+              - name: Content Error Log
+                href:
     - name: Articles
       items:
         - name: Caves + Cliffs Features
