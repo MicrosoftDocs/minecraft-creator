@@ -128,7 +128,7 @@ conceptualContent:
             - url: Documents/EntityModelingAndAnimation.md
               itemType: tutorial
               text: Entity Modeling and Animation
-            - url: EntityBehaviorIntroduction.md
+            - url: Documents/EntityBehaviorIntroduction.md
               itemType: tutorial
               text: Entity Behavior Introduction
         # card
