@@ -22,7 +22,7 @@ Executes a set of steps defined via chained .thenXyz methods, sequentially. This
 - [thenIdle](#thenidle)
 - [thenSucceed](#thensucceed)
 - [thenWait](#thenwait)
-- [thenWaitWithDelay](#thenwaitwithdelay)
+- [thenWaitAfter](#thenwaitafter)
   
 ### **thenExecute**
 `
@@ -118,9 +118,9 @@ Executes the given callback every tick until it succeeds. Exceptions thrown with
 Returns [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
 
 
-### **thenWaitWithDelay**
+### **thenWaitAfter**
 `
-thenWaitWithDelay(delayTicks: number, callback: () => undefined): GameTestSequence
+thenWaitAfter(delayTicks: number, callback: () => undefined): GameTestSequence
 `
 
 After a delay from the previous step, executes the given callback every tick until it succeeds. Exceptions thrown within the callback will end sequence execution.

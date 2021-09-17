@@ -13,22 +13,27 @@ description: Contents of the mojang-minecraft.BlockType class.
 
 The type (or template) of a block. Does not contain permutation data (state) other than the type of block it represents. This type was introduced as of version 1.17.10.21.
 
-
-## Methods
-- [canBeWaterlogged](#canbewaterlogged)
-- [createDefaultBlockPermutation](#createdefaultblockpermutation)
-- [getName](#getname)
-  
+## Properties
 ### **canBeWaterlogged**
-`
-canBeWaterlogged(): boolean
-`
+`read-only canBeWaterlogged: boolean;`
 
 Represents whether this type of block can be waterlogged.
 
-Returns *boolean*
+Type: *boolean*
 
 
+### **id**
+`read-only id: string;`
+
+Block type name - for example, `minecraft:acacia_stairs`.
+
+Type: *string*
+
+
+
+## Methods
+- [createDefaultBlockPermutation](#createdefaultblockpermutation)
+  
 ### **createDefaultBlockPermutation**
 `
 createDefaultBlockPermutation(): BlockPermutation
@@ -54,14 +59,4 @@ const block = World.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3
 // Set the permutation
 block.setPermutation(bottomStoneSlab);
 ```
-### **getName**
-`
-getName(): string
-`
-
-Name of the block type.
-
-Returns *string* - Block type name - for example, `minecraft:acacia_stairs`.
-
-
 
