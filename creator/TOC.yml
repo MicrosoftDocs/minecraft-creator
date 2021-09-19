@@ -4,30 +4,16 @@
       href: index.yml
     - name: Tutorials
       items:
-        - name: Adding Content
+        - name: Add-On Pack Tutorials
           items:
             - name: Getting Started
               href: Documents/GettingStarted.md
-            - name: 'Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition'
-              href: Documents/DifferencesBetweenBedrockAndJava.md
             - name: Introduction to Resource Packs
               href: Documents/ResourcePack.md
             - name: Introduction to Behavior Packs
               href: Documents/BehaviorPack.md
-            - name: Minecraft Entity Wizard
-              href: Documents/MinecraftEntityWizard.md
             - name: Adding a Custom Block
               href: Documents/CustomBlock.md
-            - name: Create a Custom NPC
-              href: Documents/CreateNPCs.md
-            - name: NPC Dialogue Command
-              href: Documents/NPCDialogue.md
-            - name: Introduction to Loot Tables
-              href: Documents/IntroductionToLootTables.md
-            - name: Loot and Trade Table Functions
-              href: Documents/LootAndTradeTableFunctions.md
-            - name: Introduction to the Caves & Cliffs Entities
-              href: Documents/CavesAndCliffsEntities.md
         - name: Commands and Command Blocks
           items:
           - name: Introduction to Commands
@@ -38,6 +24,28 @@
             href: Documents/CommandBlocks.md
           - name: How to Make a Complete the Monument Map
             href: Documents/CommandsHowToMakeACTMMap.md
+        - name: Adding NPCs
+          items:
+            - name: Create a Custom NPC
+              href: Documents/CreateNPCs.md
+            - name: NPC Dialogue Command
+              href: Documents/NPCDialogue.md
+        - name: Minecraft Entities
+          items:
+            - name: Introduction to Add Entity
+              href: Documents/IntroductionToAddEntity.md
+            - name: Entity Modeling and Animation
+              href: Documents/EntityModelingAndAnimation.md
+            - name: Entity Behavior Introduction
+              href: Documents/EntityBehaviorIntroduction.md
+        - name: Loot and Trading Tables
+          items:
+            - name: Introduction to Loot Tables
+              href: Documents/IntroductionToLootTables.md
+            - name: Loot and Trade Table Functions
+              href: Documents/LootAndTradeTableFunctions.md
+    - name: Tools and Frameworks
+      items:
         - name: GameTest Framework
           items:
           - name: Getting Started with GameTest
@@ -46,6 +54,38 @@
             href: Documents/GameTestBuildYourFirstGameTest.md
           - name: Use Visual Studio Code tools to write script
             href: Documents/ScriptDeveloperTools.md
+        - name: Creator Tools
+          items:
+          - name: Commonly Used Tools
+            href: Documents/CommonlyUsedTools.md
+          - name: Content Error Log
+            href: Documents/ContentErrorLog.md
+          - name: Blockbench
+            items:
+            - name: Minecraft Entity Wizard
+              href: Documents/MinecraftEntityWizard.md
+          - name: Chunker
+            items:
+              - name: Chunker - Overview
+                href: Documents/ChunkerOverview.md
+              - name: Chunker - World Settings
+                href: Documents/ChunkerWorldSettings.md
+              - name: Chunker - Advanced Mode
+                href: Documents/ChunkerTheNether.md
+              - name: Chunker - The Nether
+                href: Documents/ChunkerTheNether.md
+    - name: Articles
+      items:
+        - name: Caves + Cliffs Features
+          items:
+          - name: Introduction to the Caves & Cliffs Entities
+            href: Documents/CavesAndCliffsEntities.md
+        - name: Useful Knowledge for Creators
+          items:
+          - name: 'Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition'
+            href: Documents/DifferencesBetweenBedrockAndJava.md
+          - name: "Experimental Features in Minecraft: Bedrock Edition"
+            href: Documents/ExperimentalFeaturesToggle.md
     - name: Reference Documentation
       items:
       - name: GameTest
