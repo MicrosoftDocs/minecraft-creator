@@ -25,6 +25,22 @@ highlightedContent:
       itemType: whats-new
       url: Documents/AddonPackInstallation.md
     #card
+    - title: Chunker - Overview
+      itemType: whats-new
+      url: Documents/ChunkerOverview.md
+    #card
+    - title: Commonly Used Tools
+      itemType: whats-new
+      url: Documents/CommonlyUsedTools.md
+    #card
+    - title: Editing NBT Safely
+      itemType: whats-new
+      url: Documents/EditingNBTSafely.md
+    #card
+    - title: Introduction to Add Entity
+      itemType: whats-new
+      url: Documents/IntroductionToAddEntity.md
+    #card
     - title: Introduction to the Caves & Cliffs Entities
       itemType: overview
       url: Documents/CavesAndCliffsEntities.md
@@ -103,6 +119,19 @@ conceptualContent:
               itemType: tutorial
               text: NPC Dialogue Command
         # card
+        - title: Adding new Minecraft Entites
+          summary: "Learn how to create and implement your own custom entities."
+          links:
+            - url: Documents/IntroductionToAddEntity.md
+              itemType: get-started
+              text: Introduction to Add Entity
+            - url: Documents/EntityModelingAndAnimation.md
+              itemType: tutorial
+              text: Entity Modeling and Animation
+            - url: Documents/EntityBehaviorIntroduction.md
+              itemType: tutorial
+              text: Entity Behavior Introduction
+        # card
         - title: Loot and Trading Tables
           summary: "Discover how Tables allow creators to add items to the world in a wide variety of ways."
           links:
@@ -112,6 +141,22 @@ conceptualContent:
           - url: Documents/LootAndTradeTableFunctions.md
             itemType: overview
             text: Loot and Trade Table Functions
+        # card
+        - title: Working with Chunker
+          summary: "Utilize Chunker to convert your existing Minecraft: Java Edition worlds to Minecraft: Bedrock Edition"
+          links:
+          - url: Documents/ChunkerOverview.md
+            itemType: overview
+            text: Chunker - Overview
+          - url: Documents/ChunkerWorldSettings.md
+            itemType: tutorial
+            text: Chunker - World Settings
+          - url: Documents/ChunkerWorldSettings.md
+            itemType: tutorial
+            text: Chunker - World Settings
+          - url: Documents/ChunkerAdvancedMode.md
+            itemType: tutorial
+            text: Chunker - Advance Mode
     # Test Section
     - title: References  # < 60 chars (optional)
       summary: "Learn how content works with Reference documentation and how GameTest can empower your workflow." # < 160 chars (optional)
