@@ -21,29 +21,21 @@ highlightedContent:
       itemType: whats-new
       url: Documents/MinecraftEntityWizard.md
     #card
+    - title: Introduction to Add Entity
+      itemType: whats-new
+      url: Documents/IntroductionToAddEntity.md
+    #card
     - title: "Installing Add-Ons in Minecraft: Bedrock Edition"
       itemType: whats-new
       url: Documents/AddonPackInstallation.md
-    #card
-    - title: Chunker - Overview
-      itemType: whats-new
-      url: Documents/ChunkerOverview.md
     #card
     - title: Commonly Used Tools
       itemType: whats-new
       url: Documents/CommonlyUsedTools.md
     #card
-    - title: Editing NBT Safely
+    - title: Chunker - Overview
       itemType: whats-new
-      url: Documents/EditingNBTSafely.md
-    #card
-    - title: Introduction to Add Entity
-      itemType: whats-new
-      url: Documents/IntroductionToAddEntity.md
-    #card
-    - title: Introduction to the Caves & Cliffs Entities
-      itemType: overview
-      url: Documents/CavesAndCliffsEntities.md
+      url: Documents/ChunkerOverview.md
     #card
     - title: Differences Between Minecraft Bedrock Edition and Minecraft Java Edition
       itemType: architecture
@@ -99,25 +91,15 @@ conceptualContent:
             - url: Documents/CommandsIntroduction.md
               itemType: concept
               text: Introduction to Commands
+            - url: Documents/CommandsPopularCommands.md
+              itemType: reference
+              text: Popular Commands
             - url: Documents/CommandBlocks.md
               itemType: get-started
               text: Getting Started with Command Blocks
             - url: Documents/CommandsHowToMakeACTMMap.md
               itemType: get-started
               text: How To Make a Complete the Monument Map
-            - url: Documents/CommandsPopularCommands.md
-              itemType: reference
-              text: Popular Commands
-        # card
-        - title: Adding NPCs
-          summary: "Populate your world with interactive characters to create unique narrative experiences."
-          links:
-            - url: Documents/CreateNPCs.md
-              itemType: tutorial
-              text: Create a Custom NPC
-            - url: Documents/NPCDialogue.md
-              itemType: tutorial
-              text: NPC Dialogue Command
         # card
         - title: Adding new Minecraft Entites
           summary: "Learn how to create and implement your own custom entities."
@@ -131,6 +113,16 @@ conceptualContent:
             - url: Documents/EntityBehaviorIntroduction.md
               itemType: tutorial
               text: Entity Behavior Introduction
+        # card
+        - title: Adding NPCs
+          summary: "Populate your world with interactive characters to create unique narrative experiences."
+          links:
+            - url: Documents/CreateNPCs.md
+              itemType: tutorial
+              text: Create a Custom NPC
+            - url: Documents/NPCDialogue.md
+              itemType: tutorial
+              text: NPC Dialogue Command
         # card
         - title: Loot and Trading Tables
           summary: "Discover how Tables allow creators to add items to the world in a wide variety of ways."
@@ -151,9 +143,9 @@ conceptualContent:
           - url: Documents/ChunkerWorldSettings.md
             itemType: tutorial
             text: Chunker - World Settings
-          - url: Documents/ChunkerWorldSettings.md
+          - url: Documents/ChunkerTheNether.md
             itemType: tutorial
-            text: Chunker - World Settings
+            text: Chunker - How to Clear The Nether
           - url: Documents/ChunkerAdvancedMode.md
             itemType: tutorial
             text: Chunker - Advance Mode
