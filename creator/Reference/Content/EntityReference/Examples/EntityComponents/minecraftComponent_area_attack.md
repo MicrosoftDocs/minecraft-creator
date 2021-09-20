@@ -18,6 +18,11 @@ ms.prod: gaming
 |damage_per_tick| 2| Integer|  How much damage per tick is applied to entities that enter the damage range. |
 |damage_range| 0.2| Decimal| How close a hostile entity must be to have the damage applied. |
 
+### cause
+
+> [!IMPORTANT]
+> A list of available damage sources can be found at [Entity Damage Source](../../../AddonsReference/Examples/AddonEntities.md#entity-damage-source) located in the Addons Documentation.
+
 ## Example
 
 ```json
