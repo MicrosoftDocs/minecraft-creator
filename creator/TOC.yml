@@ -24,12 +24,6 @@
             href: Documents/CommandBlocks.md
           - name: How to Make a Complete the Monument Map
             href: Documents/CommandsHowToMakeACTMMap.md
-        - name: Adding NPCs
-          items:
-            - name: Create a Custom NPC
-              href: Documents/CreateNPCs.md
-            - name: NPC Dialogue Command
-              href: Documents/NPCDialogue.md
         - name: Minecraft Entities
           items:
             - name: Introduction to Add Entity
@@ -38,6 +32,12 @@
               href: Documents/EntityModelingAndAnimation.md
             - name: Entity Behavior Introduction
               href: Documents/EntityBehaviorIntroduction.md
+        - name: Adding NPCs
+          items:
+            - name: Create a Custom NPC
+              href: Documents/CreateNPCs.md
+            - name: NPC Dialogue Command
+              href: Documents/NPCDialogue.md
         - name: Loot and Trading Tables
           items:
             - name: Introduction to Loot Tables
