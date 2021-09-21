@@ -4,7 +4,7 @@ author: ReWrite-Media
 ---
 # Commonly Used Tools
 
-There exists a wide variety of tools that have been created for the purpose of increasing the efficiency of Minecraft content creation. Tools can help with a variety of things from creating skins, to crafting beautiful custom worlds. This article will explore some of the most commonly used tools currently available and some of there uses.
+There are a wide variety of tools that have been created for the purpose of increasing the efficiency of Minecraft content creation. Tools can help with a variety of things from creating skins, to crafting beautiful custom worlds. This article will explore some of the most commonly used tools currently available and some of there uses.
 
 In this tutorial you will learn the following:
 
@@ -61,7 +61,7 @@ Voxel Sniper Flattened is another in-game Minecraft map editor for Java Edition.
 
 ### [goBrush](https://www.spigotmc.org/resources/gobrush.23118/)
 
-goBrush is a server plugin for Java Edition that adds in-game tools designed for custom terrain editing by using heightmap brushes instead of geometric shapes like tools such as WorldEdit and Voxel Sniper Flattened. 
+goBrush is a server plugin for Java Edition that adds in-game tools designed for custom terrain editing by using heightmap brushes instead of geometric shapes like tools such as WorldEdit and Voxel Sniper Flattened.
 
 ### [goPaint](https://www.spigotmc.org/resources/gopaint.27717/)
 
@@ -97,11 +97,9 @@ McSkin3D is software designed entirely with skin creation in mind. It has many f
 
 LookatMySkin is a skin previewer that allows you to edit a skin in your program of choice and instantly see it previewed on a 3D player model. It has a variety of features, such as limb posing, zoom, and adjustable background color. This can also be useful for taking screenshots of skins or quickly checking skins for oddities when posed in different ways.
 
----
+## What's Next?
 
 While there are many more tools that exist and are constantly being created to make Minecraft content creation easier, this is a great place to start. Creators should check back here often for newly added content and take advantage of all the available tools at their disposal.
-
-### What's Next?
 
 Some of these tools allow you to modify NBT data. Learning about NBT and especially learning what *not* to do when editing it will save you from a world of trouble.
 

@@ -22,7 +22,7 @@ A manifest tells Minecraft general information about your skin pack. Create a JS
 - `name`: the name of the pack, which is always `pack.name`.
 - `version`: the version of the pack. For example, `[1, 0 ,0]` would indicate version 1.0.0.
 - `uuid`: a unique identifier to prevent package conflicts, which can be generated from this site: https://www.uuidgenerator.net/version4 (**two different UUIDs need to be generated**).
-- `type`: set to "skin_pack" to tell the game to treat this pack as a skin pack.
+- `type`: set to `skin_pack` to tell the game to treat this pack as a skin pack.
 
 ### Template manifest.json
 
@@ -133,7 +133,37 @@ skin.TemplateSkinPack.TemplateSkin5=Skin Name 5
 
 This file tells Minecraft what languages your skin pack supports. Only English is required. If you want to support other languages you can make other `xx_YY.lang` files and then edit this to tell the game you support them.
 
-The following locales/languages are currently supported: "en_US", "de_DE", "ru_RU", "zh_CN", "fr_FR", "it_IT", "pt_BR", "fr_CA", "zh_TW", "es_MX", "es_ES", "pt_PT", "en_GB", "ko_KR", "ja_JP", "nl_NL", "bg_BG", "cs_CZ", "da_DK", "el_GR", "fi_FI", "hu_HU", "id_ID", "nb_NO", "pl_PL", "sk_SK", "sv_SE", "tr_TR", "uk_UA".
+The following locales/languages are currently supported: 
+
+- "en_US"
+- "de_DE"
+- "ru_RU"
+- "zh_CN"
+- "fr_FR"
+- "it_IT"
+- "pt_BR"
+- "fr_CA"
+- "zh_TW"
+- "es_MX"
+- "es_ES"
+- "pt_PT"
+- "en_GB"
+- "ko_KR"
+- "ja_JP"
+- "nl_NL"
+- "bg_BG"
+- "cs_CZ"
+- "da_DK"
+- "el_GR"
+- "fi_FI"
+- "hu_HU"
+- "id_ID"
+- "nb_NO"
+- "pl_PL"
+- "sk_SK"
+- "sv_SE"
+- "tr_TR"
+- "uk_UA"
 
 #### Template languages.json
 

@@ -6,10 +6,6 @@ author: ReWrite-Media
 
 In this guide, we'll go through the basics of creating a model and creating animations for Minecraft: Bedrock Edition. As an example, we'll model and animate a small robot, which was started in the [Introduction to Add Entity](IntroductionToAddEntity.md) article.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/x3vL4vMvJM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-**Note:** The process of creating a model and animation will also be shown in this video tutorial. The following text guide will explain the crucial steps and talk about animations and how to play them on specific events in more detail.
-
 In this tutorial you will learn the following:
 
 > [!div class="checklist"]
@@ -47,13 +43,13 @@ The first thing to consider when making a model is the bone structure. Bones are
 
 A good practice is to use a root bone for each model and put everything else inside it. This means that you'll later be able to animate the entire model at once, as well as specific parts of it. Create a new group in Blockbench. “Groups” and “Bones” are essentially the same in this context.
 
-You can right-click the group or press F2 to rename it. The name for a bone should be snake_case (so only including lower case letters, numbers, and underscores). Each bone name has to be unique for future reference through animations.
+You can right-click the group or press **F2** to rename it. The name for a bone should be `snake_case` (so only including lower case letters, numbers, and underscores). Each bone name has to be unique for future reference through animations.
 
 While we build up the model in the following steps, make sure the structure is set up correctly. You can drag around groups to change the order or drop them into other groups. This screenshot shows the correct bone structure of the finished model.
 
 ### Shape
 
-You can now start to create the shape of the model. Create new cubes and use the move, resize, and rotation tools to adjust it. A trick to add cubes faster is to select an already positioned cube and press Ctrl + D (duplicate) to get a copy.
+You can now start to create the shape of the model. Create new cubes and use the move, resize, and rotation tools to adjust it. A trick to add cubes faster is to select an already positioned cube and press **Ctrl + D** (duplicate) to get a copy.
 
 ![Textureless shape of a robot in Blockbench](Media/EntityModeling/shape.png)
 
@@ -63,7 +59,7 @@ Bedrock Edition models use Box UV mapping by default. That means that the textur
 
 If you're working on symmetrical parts like limbs, create them on the right-hand side first and mirror them to the left later. You can either mirror them before or after creating the texture depending on whether you want the same texture on both sides.
 
-When you're creating bones for moving parts of the model, always think about which point the part should rotate around. Select a bone and press P to get the Pivot tool. This tool allows you to move the pivot point of the bone. You can also use this tool on cubes if you want to rotate those around a specific point.
+When you're creating bones for moving parts of the model, always think about which point the part should rotate around. Select a bone and press **P** to get the Pivot tool. This tool allows you to move the pivot point of the bone. You can also use this tool on cubes if you want to rotate those around a specific point.
 
 ## Texturing
 
@@ -73,11 +69,11 @@ Once the shape of the model is done, you can create a texture template. The temp
 
 When creating a texture, enter `robot` as the texture name and check the Template option. In the template dialog, select your resolution. 16x is the default resolution of Minecraft, but you can go higher if you want.
 
-### Base Color 
+### Base Color
 
 Once the template is created, you can move to the Paint tab in Blockbench. This will reveal all the tools you have to modify the texture. Select the Paint Bucket tool and set the fill mode next to the tool to Cube. Select a color in the color panel on the right side. Now you can go over your cubes and color them in individual base colors.
 
-### Details 
+### Details
 
 You can now start to work on the texture. If you're more comfortable with texturing in your image editing program, you can now save the texture by clicking on the save icon next to the texture. Then, you can open it in your image editor. Any changes will appear in Blockbench as soon as you save the texture. But, if you prefer to work directly on the model, you can use the built-in paint tools in Blockbench.
 
@@ -145,7 +141,7 @@ Now move forward in time to about half a second and rotate the root bone to the 
 
 If you now move the cursor to the beginning and press play, you'll see a short sway animation. Now that you know how to animate, you can refine the animation and, for example, let the antenna swing a bit.
 
-Finally, press Ctrl + S to save the model and **animation**. Save the animation in the `animations` folder of the resource pack as `robot.animation.json`.
+Finally, press **Ctrl + S** to save the model and **animation**. Save the animation in the `animations` folder of the resource pack as `robot.animation.json`.
 
 Now reference and play the animation in the client entity file as we've done with the *look at* animation. But now we'll only play the sway animation under the condition that the robot isn't on ground. This will look something like this:
 
@@ -164,7 +160,7 @@ Now reference and play the animation in the client entity file as we've done wit
 
 If you now spawn a robot and push it down an edge, the animation will play. But it will only play once.
 
-The reason for that is the fact that the query in the scripts section is only a blend value for the animation. It defines “how much” the animation plays, not when it plays and when it doesn't. That’s why the animation will start playing once `!query.is_on_ground` is true/1, but it will never stop playing. It will just fade out once the value is false/0 again, and the next time it will fade into the animation again. It won’t play from the start again.
+The reason for that is the fact that the query in the scripts section is only a blend value for the animation. It defines “how much” the animation plays, not when it plays and when it doesn't. That’s why the animation will start playing once `!query.is_on_ground` is `true/1`, but it will never stop playing. It will just fade out once the value is `false/0` again, and the next time it will fade into the animation again. It won’t play from the start again.
 
 We can use this behavior quite well for static or looping animations that have no beginning and no end. But if we want to start the animation every time the query changes, we need a different approach. This is where animation controllers come in.
 

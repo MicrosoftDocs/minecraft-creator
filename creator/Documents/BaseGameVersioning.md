@@ -6,7 +6,10 @@ author: ReWrite-Media
 
 Base game versioning is a way to keep changes in vanilla Minecraft: Bedrock Edition from causing unexpected changes in your content. This will allow you to lock your world template to a specific Minecraft version, assuring future game changes don’t impact your content.
 
-For example, if your world template relies on the behavior of certain entities, or even their spawning mechanics, the world template might break in unexpected ways if Minecraft is updated in a manner that changes those behaviors. With base game versioning, if you are running a version 1.20 client, but the `base_game_version` of a piece of content is set to 1.15, it will load the resources for all versions up to 1.15, skipping any new resources implemented in 1.16 through 1.20. Be aware though that base game versioning was introduced in 1.13, so that’s the earliest version of the game this system supports. Don't try to set your `base_game_version` to anything below 1.13.
+For example, if your world template relies on the behavior of certain entities, or even their spawning mechanics, the world template might break in unexpected ways if Minecraft is updated in a manner that changes those behaviors. With base game versioning, if you are running a version 1.20 client, but the `base_game_version` of a piece of content is set to 1.15, it will load the resources for all versions up to 1.15, skipping any new resources implemented in 1.16 through 1.20. 
+
+> [IMPORTANT!]
+> Base game versioning was introduced in 1.13, so that’s the earliest version of the game this system supports. Don't try to set your `base_game_version` to anything below 1.13.
 
 In this tutorial you will learn the following:
 

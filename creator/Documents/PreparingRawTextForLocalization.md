@@ -10,7 +10,7 @@ In this tutorial you will learn the following:
 
 > [!div class="checklist"]
 >
-> - How to create a properly-formatted language file.
+> - How to create a properly formatted language file.
 > - Best practices for supplying context to each translation.
 
 ### Requirements
@@ -30,7 +30,7 @@ Text that you have created to appear in the game is found in the `en_US.lang` fi
 
 In general, it looks like this:
 
-```
+```json
 StringName=StringValue ###StringComment
 ```
 
@@ -50,13 +50,14 @@ Be sure to create a descriptive string name. A good string name gives clues to t
 
 Each text string must have a *string value*. This value is the text that appears in the game to the player. Each value starts at the first equals `=` sign on the line and ends with a tab character followed by a hashtag character. Example:
 
-```
+```json
 Welcome.Message.1=Welcome to our world! #
 ```
 
 Here, the string name is Welcome.Message.1, and the string value is Welcome to our world!.
 
-**Note:** `<tab>#` is the required terminator for our parser to recognize the string. There’s no harm in adding extra hashtags because that is the start of a comment (see below). Watch out for programs and/or processing that convert tabs to spaces; that won’t work. The tab must be character code `U+0009`. Do **not** use leading or trailing spaces around the equals `=` sign.
+> [!NOTE]
+> `<tab>#` is the required terminator for our parser to recognize the string. There’s no harm in adding extra hashtags because that is the start of a comment (see below). Watch out for programs and/or processing that convert tabs to spaces; that won’t work. The tab must be character code `U+0009`. Do **not** use leading or trailing spaces around the equals `=` sign.
 
 ## Comments
 
@@ -64,7 +65,7 @@ Comments provide key contextual information about a text string for translators.
 
 Associate a comment with a text string by adding two more hashtag characters at the end of the line, and then the comment. The comment is allowed to have a space after the last hashtag character.
 
-```
+```json
 Author.Name.2=Created by <name> ###<name> is the proper name of the map creator, and he is a male person.
 ```
 
@@ -80,15 +81,16 @@ We highly recommended commenting every string to help the translators do the bes
 6. Any parts that should not be translated
 7. The full text of any split or concatenated lines (see below)
 
-Note, however, that comments are per string. If you want a comment to apply to multiple strings, copy and paste it for each line. Translators only see comments that are associated with strings. They do not get the entire `en_US.lang` file. Due to this, best practice would be to try not to split lines or conversations across multiple text strings. If you must, please enter the full text of the sentence or conversation into a comment on each string to help translators. Remember that translators will see each of these lines separately, and not necessarily in order.
+> [!IMPORTANT]
+> Comments are per string. If you want a comment to apply to multiple strings, copy and paste it for each line. Translators only see comments that are associated with strings. They do not get the entire `en_US.lang` file. Due to this, best practice would be to try not to split lines or conversations across multiple text strings. If you must, please enter the full text of the sentence or conversation into a comment on each string to help translators. Remember that translators will see each of these lines separately, and not necessarily in order.
 
 For example, here we include the full text of the sign in each line's comment. This makes it much easier for the translator to correctly translate.
 
-```
-	Welcome.Sign.1=Welcome to	### Welcome to our world! We hope you have fun!
-	Welcome.Sign.2=our world!	### Welcome to our world! We hope you have fun!
-	Welcome.Sign.3=We hope you	### Welcome to our world! We hope you have fun!
-	Welcome.Sign.4=have fun!	### Welcome to our world! We hope you have fun!
+```json
+Welcome.Sign.1=Welcome to ### Welcome to our world! We hope you have fun!
+Welcome.Sign.2=our world! ### Welcome to our world! We hope you have fun!
+Welcome.Sign.3=We hope you ### Welcome to our world! We hope you have fun!
+Welcome.Sign.4=have fun! ### Welcome to our world! We hope you have fun!
 ```
 
 ## Files
