@@ -1,6 +1,8 @@
 ---
+author: neonerz
+ms.author: v-jeffreykim
 title: Preparing Raw Text for Localization
-author: ReWrite-Media
+ms.prod: gaming
 ---
 # Preparing Raw Text for Localization
 

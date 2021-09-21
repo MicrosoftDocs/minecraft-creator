@@ -1,5 +1,5 @@
 ---
-author: ReWrite-Media
+author: neonerz
 ms.author: v-jeffreykim
 title: Introduction to Add Entity
 ms.prod: gaming
