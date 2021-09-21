@@ -15,7 +15,7 @@ Survival spawns should generally contain everything necessary for players to exp
 
 If you're depending on your build blending into natural generation, your first step should be locating an appropriate **Bedrock Edition** seed to base your world on and then generating an area to build on. Because the terrain generator in Java Edition and Bedrock Edition are not the same, creating a survival spawn on Java Edition terrain will result in undesirable terrain blending issues at the edges of the map that are challenging to fix.
 
-The most stable way to build a survival spawn is to build it directly in Bedrock Edition, however most publicly available [tools](CommonlyUsedTools.md) for building in Minecraft exist for Java Edition. Fortunately, tools such as [MCC Toolchest PE](http://mcctoolchest.com/Download) exist that allow converting Bedrock Edition worlds into Java Edition worlds.
+The most stable way to build a survival spawn is to build it directly in Bedrock Edition, however most publicly available [tools](CommonlyUsedTools.md) for building in Minecraft exist for Java Edition. Fortunately, tools such as [Chunker](https://chunker.app) exist that allow converting Bedrock Edition worlds into Java Edition worlds.
 
 ## Generating Bedrock Terrain
 
