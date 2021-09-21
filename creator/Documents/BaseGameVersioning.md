@@ -3,6 +3,7 @@ ms.author: v-jeffreykim
 title: Base Game Versioning
 ms.prod: gaming
 author: ReWrite-Media
+description: "A tutorial to introduce creators to base game versioning"
 ---
 # Base Game Versioning
 
