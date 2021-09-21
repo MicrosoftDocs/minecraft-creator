@@ -1,5 +1,5 @@
 ---
-author: ReWrite-Media
+author: neonerz
 ms.author: v-jeffreykim
 title: Entity Behavior Introduction
 ms.prod: gaming

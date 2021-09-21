@@ -9,6 +9,23 @@ ms.prod: gaming
 
 Molang is a simple expression-based language designed for fast, data-driven calculation of values at run-time, and with a direct connection to in-game values and systems.
 
+## Versioned Changes
+
+Molang uses the `"min_engine_version"` from the `manifest.json` of the resource or behavior pack that contains each Molang expression to determine which version of the rules to apply. This allows for changes to how Molang works without breaking existing content.
+
+Molang Versioned Change versions apply to each expression separately, so it's possible to have different versions active if multiple packs are loaded.
+
+This is a list of the Versioned Changes that have been added, along with the corresponding game version.
+
+To know which Versioned Changes are in effect, look at the `"min_engine_version"` of the `manifest.json` of the resource or behavior pack that contains your Molang expression. Any Versioned Change with a version less than or equal to that version number will be in effect.
+
+### Versioned Change Versions
+
+| Pack min_engine_version| Description |
+|:---|:---|
+| 1.17.0| Initial support for Versioned Changes added. (Not actually a Versioned Change) |
+| 1.17.30| Fixed query.item_remaining_use_duration conversion from ticks to seconds (multiplied by 20 instead of dividing). Also fixed normalization logic in that query to go from 1 down to 0 instead of 0 up to 1. |
+
 ## Lexical Structure
 
 The language structure is largely based on simple 'C' language family style syntax.  A script is made of either one expression for simple math calculations, or can be made of several statements where more complicated code is required.

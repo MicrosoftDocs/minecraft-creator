@@ -1,5 +1,5 @@
 ---
-author: ReWrite-Media
+author: neonerz
 ms.author: v-jeffreykim
 title: Chunker - How to Clear The Nether
 ms.prod: gaming
