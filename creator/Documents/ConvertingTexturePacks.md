@@ -2,7 +2,7 @@
 author: neonerz
 ms.author: v-jeffreykim
 title: Converting Texture Packs from Java Edition to Bedrock Edition
-md.prod: gaming
+ms.prod: gaming
 ---
 
 # Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition
@@ -40,7 +40,7 @@ In general, the differences between texture packs for Java Edition versus Bedroc
 |Potion bottle|Individual potion bottles||
 |Color maps|`.json` file||
 |Transparency or emissive|`.tga` file with alpha channel `.png` for items|Some textures with transparent or emissive pixels need to be saved in Targa (`.tga`) file format with an alpha channel for the mask|
-|Particles|Completely data driven|[Particle Effects guide](ParticleEffects.md)|
+|Particles|Completely data driven| |
 |Geometry|Custom mob geometry, UVs|Geometry can be updated with programs such as [Blockbench](https://www.blockbench.net/) or [Blender](https://www.blender.org/)|
 
 ## Best Practices
