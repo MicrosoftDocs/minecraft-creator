@@ -63,9 +63,9 @@ Inside the `description` tag, a few basic properties define how the game registe
 |:---|:---|:---|
 |`identifier`|String|Identifier of the entity. If this is a custom entity in an add-on, you should use a custom unique namespace as seen in the example.|
 |`runtime_identifier`|String|Identifier that's used internally by the game. This can be used to inherit custom mechanics from vanilla entities that are not yet available as a component. Only one runtime identifier may be specified per entity **Only use this if it is really necessary.** If a vanilla entity's mechanics are turned into components, you may lose functionality if you are relying on those mechanics through a runtime identifier.|
-|`is_spawnable`|Boolean|If true, a spawn egg for the entity is added to the creative inventory.|
-|`is_summonable`|Boolean|If true, the entity can be summoned using the `/summon` command.|
-|`is_experimental`|Boolean|If true, the entity can use experimental features. The entity will only work in experimental worlds. **Marketplace content can not be submitted with this option enabled.**|
+|`is_spawnable`|Boolean|If `true`, a spawn egg for the entity is added to the creative inventory.|
+|`is_summonable`|Boolean|If `true`, the entity can be summoned using the `/summon` command.|
+|`is_experimental`|Boolean|If `true`, the entity can use experimental features. The entity will only work in experimental worlds. **Marketplace content can not be submitted with this option enabled.**|
 |`animations`|Object|A list of behavior animations or animation controllers. These can be used to run commands or events on the entity.|
 |`scripts`|Object|Scripts work similarly to how they work in client entity files, and they can be used to play behavior animations.|
 
@@ -111,7 +111,8 @@ A full list of available components can be found [here](/creator/Reference/Conte
 
 A good way to learn about a component and see how it's used in practice is to look at the behavior files of default Minecraft entities. You can always find the latest default behavior pack at this URL: https://aka.ms/behaviorpacktemplate.
 
-**Note:** The way a component works can sometimes change between versions. So if a component from a vanilla entity is not working on your entity, check if both files are using the same format version. You're encouraged to always use the latest version of the component as it's been refined and can include fixes.
+> [!NOTE]
+> The way a component works can sometimes change between versions. So if a component from a vanilla entity is not working on your entity, check if both files are using the same format version. You're encouraged to always use the latest version of the component as it's been refined and can include fixes.
 
 ### Essential Components
 
@@ -119,7 +120,7 @@ A good way to learn about a component and see how it's used in practice is to lo
 |:---|:---|:---|
 |`minecraft:physics`|`has_collision`<br>`has_gravity`|You'll need this component on 99% of custom entities. It allows the entity to stay on the ground and react to interaction and punches in a way that you would expect.|
 |`minecraft:scale`|`value`|Sets the scale of the entity.|
-|`minecraft:collision_box`|`width`<br>`height`|Sets the collision box of the entity. Only the width and height can be changed. The collision box always has a square base that's aligned to the world axes.|
+|`minecraft:collision_box`|`width` `height`|Sets the collision box of the entity. Only the `width` and `height` can be changed. The collision box always has a square base that's aligned to the world axes.|
 |`minecraft:type_family`|`family`|Sets a list of type families that the entity is in. Type families can be tested by other entities. For example, to test which mobs they are hostile towards.|
 |`minecraft:movement`|`value`|Sets the movement speed of the entity. 0.25 is the regular speed of most animals in Minecraft.|
 |`minecraft:movement.basic`|[See documentation](/creator/Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_movement.basic.md)|Allows the entity to move around on the ground.|
@@ -127,11 +128,12 @@ A good way to learn about a component and see how it's used in practice is to lo
 |`minecraft:is_baby`<br>`minecraft:is_ignited`<br>`minecraft:is_saddled`<br>`minecraft:is_sheared`<br>`minecraft:is_tamed`<br>`minecraft:is_illager_captain`<br>|:---|These components don’t do anything on their own, but they can be queried in animations, animation controllers, or render controllers, allowing you to control animations and other visuals from the entity behavior.|
 |`minecraft:variant`<br>`minecraft:mark_variant`<br>`minecraft:skin_id`|`value`|These components work like the ones above, but instead of only storing an on/off state, they can store an integer value.|
 
+
 ### Priorities
 
 The option `priority` can be used on all behavior components (AI goals). `0` is the highest priority and the default priority of all behavior components. The higher the number, the lower the priority. If the entity is busy doing a low priority behavior and a high priority behavior comes up, the entity will immediately switch to the higher priority behavior.
 
-In the following example, the hurt_by_target component has a higher priority. If the entity gets attacked while strolling, it will immediately target the attacker.
+In the following example, the `hurt_by_target` component has a higher priority. If the entity gets attacked while strolling, it will immediately target the attacker.
 
 ```json
 "minecraft:behavior.random_stroll": {
@@ -205,7 +207,7 @@ Events are used to add and remove component groups from the entity. In this exam
 
 Events can be triggered by many components such as `minecraft:interact` or `minecraft:environment_sensor`, by behavior animations, or by the summon command. The following command will spawn the entity while running the event above.
 
-```
+```json
 /summon compass:example_entity ~ ~ ~ compass:example_event
 ```
 
@@ -250,7 +252,7 @@ Sometimes you need to run multiple event instances one after the other in the sa
 
 Sequences and randomizers can be nested indefinitely.
 
-In this example, the group **initial** will be added when the entity is spawned. After that, the baby component will be randomized like in the previous section.
+In this example, the group `initial` will be added when the entity is spawned. After that, the baby component will be randomized like in the previous section.
 
 ```json
         "events": {
@@ -292,7 +294,8 @@ An event consists of up to five parameters. The parameters `test` and `value` ar
 |`operator`|The way in which the value is compared. This defaults to `equals` but can also test for smaller or greater values (on numeric values) or for inequality.|
 |`domain`|This is only used by a few tests to provide additional context, such as the inventory slot to test in for the `has_equipment` test.|
 
-**Note:** A full list of the filters, and how these parameters interact with them, can be found in the Entities technical document.
+> [!NOTE]
+> A full list of the filters, and how these parameters interact with them, can be found in the Entities technical document.
 
 A minimal example of a filter inside an event could look like this: The component group can only be added if the entity has the tag `event_allowed`.
 

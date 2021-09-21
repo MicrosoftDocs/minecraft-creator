@@ -44,7 +44,7 @@ In the settings you can enable/disable both the file and GUI reporting from the 
 
 ## Looking at previous Content Log messages
 
-There’s two ways to get to the content log history. The first is by clicking the “Content Log History” button in the profile screen:
+There’s two ways to get to the content log history. The first is by clicking the **Content Log History** button in the profile screen:
 
 ![Button to view the error log history](Media/ContentErrorLog/historyaccess.png)
 
@@ -54,28 +54,22 @@ By pressing this button, you will end up at this screen:
 
 Here you can also copy all messages to the clipboard to save for later.
 
-An alternative to get to this screen is to press **Control + H**, and this will only work if the “Enable Content Log GUI” option is enabled.
+An alternative to get to this screen is to press **Control + H**, and this will only work if the **Enable Content Log GUI** option is enabled.
 
 ## Location of the Content Log file
 
-The content log file is stored in the ‘logging’ folder. You can find the exact location of this log file by looking on the profile screen where the path to the current content log is stored.
+The content log file is stored in the `logging` folder. You can find the exact location of this log file by looking on the profile screen where the path to the current content log is stored.
 
 ### Example Paths
 
 **Windows UWP**
 
-```
-%LocalAppData%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe
-```
+`%LocalAppData%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe`
 
 **Android** *(varies whether the app is installed on the phone or SD card)*
 
-```
-*root storage location*/games/com.mojang/logs
-```
+`*root storage location*/games/com.mojang/logs`
 
 **iOS** *(varies based on where the external storage is located for the app)*
 
-```
-*root storage location*/Minecraft/game/com.mojang/logs
-```
+`*root storage location*/Minecraft/game/com.mojang/logs`

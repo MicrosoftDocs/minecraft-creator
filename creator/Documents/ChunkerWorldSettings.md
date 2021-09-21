@@ -8,7 +8,8 @@ ms.prod: gaming
 
 Chunker allows you to change various world settings when converting worlds. This article gives a brief description of these options and how they affect gameplay.
 
-**Warning:** Editing these values can cause unintended behavior, world corruption, or unstable gameplay if incorrectly set. Use caution when changing values.
+> [!IMPORTANT]
+> Editing these values can cause unintended behavior, world corruption, or unstable gameplay if set incorrectly. Use caution when changing values.
 
 In this tutorial you will learn the following:
 
@@ -29,7 +30,7 @@ It’s recommended that the following be completed before beginning this tutoria
 |Difficulty|Difficulty of the world.|
 |Gamemode|Default game mode of the world. Players will default to this game mode on first join.|
 |Generator|Generator used for generating new chunks in this world. Setting to void will automatically create the custom layer rules to generate empty chunks.|
-|World Name|Friendly name of this world. i.e “Steve and Alex Super Survival.”|
+|World Name|Friendly name of this world (i.e “Steve and Alex Super Survival”).|
 |World Seed|Seed provided to the generator to generate the world.|
 |Spawn X|X coordinate of the default spawn for players.|
 |Spawn Y|Y coordinate of the default spawn for players.|
@@ -39,7 +40,7 @@ It’s recommended that the following be completed before beginning this tutoria
 |Bonus Chest Enabled|(Bedrock Edition only) Whether a bonus chest is enabled for this world.|
 |Bonus Chest Spawned|(Bedrock Edition only) Has the bonus chest been spawned in the world? If set to false, the game will attempt to place a bonus chest on next load.|
 |Spawn Mobs|(Bedrock Edition only) Whether this world should spawn mobs.|
-|Nether Scale|(Bedrock Edition only) The scale of The Nether compared to The Overworld, which defaults to 8 in vanilla. If this value is set to 8, then every block moved in The Nether will equate to 8 blocks moved in The Overworld.|
+|Nether Scale|(Bedrock Edition only) The scale of the Nether compared to the Overworld, which defaults to 8 in vanilla. If this value is set to 8, then every block moved in the Nether will equate to 8 blocks moved in the Overworld.|
 
 ## Game Rules
 

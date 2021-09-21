@@ -31,11 +31,11 @@ Type: *boolean*
 
 
 ### **familyTypes**
-`read-only familyTypes: any[];`
+`read-only familyTypes: string[];`
 
 A string-list of entity types that this entity can support as riders.
 
-Type: *any*[]
+Type: *string*[]
 
 
 ### **id**
