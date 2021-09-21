@@ -1,6 +1,9 @@
 ---
+ms.author: v-jeffreykim
 title: Designing Gameplay for Various Devices
 author: ReWrite-Media
+ms.prod: gaming
+description: "An overview covering how to design gameplay content for the many devices used to play Minecraft: Bedrock Edition"
 ---
 # Designing Gameplay for Various Devices
 
