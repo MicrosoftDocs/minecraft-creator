@@ -21,7 +21,14 @@ It is recommended that the following be completed before beginning this tutorial
 
 ## Texture Pack Differences Between Java and Bedrock Editions
 
-In general, the differences between texture packs for Java Edition versus Bedrock Edition are in the directory structure, naming conventions (filenames), file formats (`.png` vs `.tga`), file types (single face vs. UV), the method of defining some features such as animated textures, and the metadata files (`.json`).
+In general, the differences between texture packs for Java Edition versus Bedrock Edition are as follows:
+
+- The directory structure
+- The naming conventions (filenames)
+- The file formats (`.png` vs `.tga`)
+- The file types (single face vs. UV)
+- The method of defining some features such as animated textures
+- The metadata files (`.json`).
 
 |Content|Bedrock Edition|Notes|
 |-|-|-|
@@ -29,7 +36,7 @@ In general, the differences between texture packs for Java Edition versus Bedroc
 |Spawn Egg|Individual spawn egg textures||
 |Potion bottle|Individual potion bottles||
 |Color maps|`.json` file||
-|Transparency or emissive|`.tga` file with alpha channel<br>`.png` for items|Some textures with transparent or emissive pixels need to be saved in Targa (`.tga`) file format with an alpha channel for the mask|
+|Transparency or emissive|`.tga` file with alpha channel `.png` for items|Some textures with transparent or emissive pixels need to be saved in Targa (`.tga`) file format with an alpha channel for the mask|
 |Particles|Completely data driven|[Particle Effects guide](ParticleEffects.md)|
 |Geometry|Custom mob geometry, UVs|Geometry can be updated with programs such as [Blockbench](https://www.blockbench.net/) or [Blender](https://www.blender.org/)|
 
@@ -37,9 +44,8 @@ In general, the differences between texture packs for Java Edition versus Bedroc
 
 Start with a copy of a valid custom Java Edition texture pack and a copy of the vanilla Bedrock Edition texture pack. The conversion process will replace the vanilla Bedrock Edition texture files with custom texture files from the Java Edition pack. There are some required Bedrock Edition texture files that have different file formats and file types, and some that don’t exist in the Java Edition pack that will need to be created. Advanced customizations in the Java Edition pack may or may not be possible to duplicate in the Bedrock Edition pack and aren’t within the scope of this article.
 
-
 - Obtain the most current version of the vanilla Bedrock Edition texture pack for reference.
-    - [Download for the most recent Bedrock Edition resource pack](https://aka.ms/resourcepacktemplate), which contains textures.
+- [Download for the most recent Bedrock Edition resource pack](https://aka.ms/resourcepacktemplate), which contains textures.
 - Setup File Explorer windows side by side -- one with your Java Edition texture pack, and one with the vanilla Bedrock Edition texture pack. This vanilla Bedrock Edition pack will become your custom Bedrock Edition texture pack at the end of this process, as the vanilla texture files are replaced with your custom ones.
 - Obtain and install the latest version of the Minecraft Bedrock Edition game app.
 - Follow the comprehensive [Java Edition vs. Bedrock Edition](https://docs.google.com/spreadsheets/d/1uwoxDjL_rWqTLaMFUbA-Vo8Prsv4lHvge0KBloMi9Go/edit#gid=0) (WIP) texture database for comparison of specific texture files.
