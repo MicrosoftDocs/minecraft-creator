@@ -56,7 +56,7 @@ You will see the test run, and if the test completes successfully, you will see 
 
 ![Image of a command successfully passing.](Media/GameTestGettingStarted/runcommandpassed.png)
 
-To run the default set of tests, use `/gametest runall`.
+To run the default set of tests, use `/gametest runset`.
 
 ## What's Next?
 

@@ -16,6 +16,7 @@ description: Contents of the mojang-gametest module
 - [FenceConnectivity](FenceConnectivity.md)
 - [GameTestSequence](GameTestSequence.md)
 - [RegistrationBuilder](RegistrationBuilder.md)
+- [SimulatedPlayer](SimulatedPlayer.md)
 - [Tags](Tags.md)
 - [Test](Test.md)
 
