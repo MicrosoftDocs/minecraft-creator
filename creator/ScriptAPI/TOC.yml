@@ -10,6 +10,8 @@
         href: mojang-gametest/GameTestSequence.md
       - name: RegistrationBuilder
         href: mojang-gametest/RegistrationBuilder.md
+      - name: SimulatedPlayer
+        href: mojang-gametest/SimulatedPlayer.md
       - name: Tags
         href: mojang-gametest/Tags.md
       - name: Test
@@ -86,8 +88,8 @@
         href: mojang-minecraft/EffectType.md
       - name: Entity
         href: mojang-minecraft/Entity.md
-      - name: EntityAddRiderComponent
-        href: mojang-minecraft/EntityAddRiderComponent.md
+      - name: EntityAddPassengerComponent
+        href: mojang-minecraft/EntityAddPassengerComponent.md
       - name: EntityAgeableComponent
         href: mojang-minecraft/EntityAgeableComponent.md
       - name: EntityBreathableComponent
@@ -192,8 +194,14 @@
         href: mojang-minecraft/PistonActivateEventSignal.md
       - name: Player
         href: mojang-minecraft/Player.md
+      - name: PlayerInventoryComponentContainer
+        href: mojang-minecraft/PlayerInventoryComponentContainer.md
       - name: RecordPlayer
         href: mojang-minecraft/RecordPlayer.md
+      - name: ScriptNavigationResult
+        href: mojang-minecraft/ScriptNavigationResult.md
+      - name: ScriptPlayerHeadRotation
+        href: mojang-minecraft/ScriptPlayerHeadRotation.md
       - name: Seat
         href: mojang-minecraft/Seat.md
       - name: StringBlockProperty
