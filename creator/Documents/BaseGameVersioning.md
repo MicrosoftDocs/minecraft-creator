@@ -1,5 +1,7 @@
 ---
+ms.author: v-jeffreykim
 title: Base Game Versioning
+ms.prod: gaming
 author: ReWrite-Media
 ---
 # Base Game Versioning
