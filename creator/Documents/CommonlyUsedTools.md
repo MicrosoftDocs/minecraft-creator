@@ -76,6 +76,10 @@ goPaint is a server plugin for Java Edition that allows creators to efficiently 
 
 Blockbench is a free entity-modeling application for creating working Bedrock Edition entity models, as well as creating textures and the ability to animate them for Bedrock Edition maps. Blockbench has external plugin support, enabling developers to create additional tools to use within the program. It also has the ability to export models into a standard OBJ format, Java Edition block model, and more.
 
+### [Blockception VSCode Extension](https://marketplace.visualstudio.com/items?itemName=BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension)
+
+An extension that provides support for files such as: .mcfunction, .json and .lang. Features include: completion, validations, formatters, diagnostics, cheat-sheets, code-actions, generation of files, and development tools to help develop Minecraft Bedrock Addons or Minecraft Education Edition. It's recommended you use the Dark+ theme for the best color highlighting.
+
 ### [Cubik Studio](https://cubik.studio/)
 
 Cubik Studio is a purchasable modeling application that supports creating various different types of models, including Bedrock Edition entity models. Cubik Studios has a large number of features and tools, but is one of the few paid applications on this list.
