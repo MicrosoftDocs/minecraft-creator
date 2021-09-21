@@ -1,7 +1,10 @@
 ---
+author: neonerz
+ms.author: v-jeffreykim
 title: Packaging a Skin Pack
-author: ReWrite-Media
+ms.prod: gaming
 ---
+
 # Packaging a Skin Pack
 
 In this tutorial you will learn the following:
@@ -11,7 +14,7 @@ In this tutorial you will learn the following:
 > - The folder and file structure for skin packs in Minecraft: Bedrock Edition.
 > - How to construct the necessary metadata files for a skin pack and how to define skins using them.
 
-# Skin Pack Folder Structure
+### Skin Pack Folder Structure
 
 ![Folder structure of the whole skin pack](Media/PackagingASkinPack/folderstructure.png)
 
@@ -133,7 +136,7 @@ skin.TemplateSkinPack.TemplateSkin5=Skin Name 5
 
 This file tells Minecraft what languages your skin pack supports. Only English is required. If you want to support other languages you can make other `xx_YY.lang` files and then edit this to tell the game you support them.
 
-The following locales/languages are currently supported: 
+The following locales/languages are currently supported:
 
 - "en_US"
 - "de_DE"

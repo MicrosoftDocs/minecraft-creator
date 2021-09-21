@@ -1,5 +1,5 @@
 ---
-author: ReWrite-Media
+author: neonerz
 ms.author: v-jeffreykim
 title: Converting Texture Packs from Java Edition to Bedrock Edition
 md.prod: gaming

@@ -1,6 +1,6 @@
 ---
 title: Preparing Raw Text for Localization
-author: ReWrite-Media
+author: neonerz
 ---
 # Preparing Raw Text for Localization
 

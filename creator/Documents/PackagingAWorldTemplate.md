@@ -1,6 +1,6 @@
 ---
 title: Packaging a World Template
-author: ReWrite-Media
+author: neonerz
 ---
 # Packaging a World Template
 
