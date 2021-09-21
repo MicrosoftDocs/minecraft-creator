@@ -46,9 +46,9 @@ Amulet is a utility designed to edit Minecraft maps. It can be a handy tool for 
 
 Image Map is a small application for both Bedrock Edition and Java Edition that can convert images to Minecraft maps. This can be used to add custom banners and art inside of Minecraft worlds.
 
-### [Bridge.](https://github.com/solvedDev/bridge.)
+### [bridge.](https://bridge-core.app/)
 
-Bridge. is an add-on tool for Bedrock Edition that enables creators to create behavior packs and resource packs with automatically generating `manifest.json` files, as well as a robust editor with a wide variety of features designed to make Minecraft JSON editing more streamlined.
+bridge. is an add-on editor for Bedrock Edition that enables creators to create behavior packs, resource packs, skin packs and world templates with automatically generating `manifest.json` files. It includes a wide variety of features designed to make Minecraft add-on editing more streamlined for both experienced and new creators.
 
 ## Server Based Tools
 
