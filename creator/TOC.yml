@@ -60,6 +60,10 @@
             href: Documents/CommonlyUsedTools.md
           - name: Content Error Log
             href: Documents/ContentErrorLog.md
+          - name: Base Game Versioning
+            href: Documents/BaseGameVersioning.md
+          - name: Designing Gameplay for Various Devices
+            href: Documents/DesigningGameplayForVariousDevices.md
           - name: Blockbench
             items:
             - name: Minecraft Entity Wizard
@@ -86,6 +90,12 @@
             href: Documents/DifferencesBetweenBedrockAndJava.md
           - name: "Experimental Features in Minecraft: Bedrock Edition"
             href: Documents/ExperimentalFeaturesToggle.md
+        - name: Packaging Content
+          items:
+          - name: Packaging a Skin Pack
+            href: Documents/PackagingASkinPack.md
+          - name: Packaging a WorldTemplate
+            href: Documents/PackagingAWorldTemplate.md
     - name: Reference Documentation
       items:
       - name: GameTest
