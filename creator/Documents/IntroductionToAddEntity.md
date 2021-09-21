@@ -45,7 +45,7 @@ Server and client entity are synced using the entity ID. This ID consists of a n
 Most files that define the entity will be JSON files. To avoid confusion between these files, it's recommended to use an extended file extension. The game ignores file names in most cases, but while working on an addon, messy file names can be confusing. The extensions are:
 
 |File Type|File Name|
-|-|-|
+|:---|:---|
 |Client Entity Files|*entity_name*.entity.json|
 |Model Files|*entity_name*.geo.json
 |Animation Files|*entity_name*.animation.json
@@ -207,7 +207,7 @@ Components tell the entity how to act in game. Let’s add a few components and 
 ```
 
 |Component Name|Description|
-|-|-|
+|:---|:---|
 |`minecraft:nameable`|Allows the player to name the entity with a name tag.|
 |`minecraft:movement`|Tells the entity how fast to move. 0.25 is the regular speed of most animals in Minecraft.|
 |`minecraft:movement.basic`|Gives the entity the ability to move on the ground.|
@@ -471,7 +471,7 @@ For a basic spawn rule, one condition is enough. For the robot, we will use this
 
 
 |Component Name|Description|
-|-|-|
+|:---|:---|
 |`minecraft:spawns_on_surface`|The mob spawns on the surface|
 |`minecraft:brightness_filter`|Only spawn the entity at a certain brightness. Accepts three options, min, max, and adjust_for_weather.<br><br>Light levels range from 0 to 15.<br><br>If adjust_for_weather is set to true, the light level decrease due to rain and thunderstorms will be taken into account.|
 |`minecraft:weight`|The weight of the entity in spawning. The higher the number, the more often the mob will spawn.|

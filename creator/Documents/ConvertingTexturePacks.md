@@ -71,13 +71,13 @@ Start with a copy of a valid custom Java Edition texture pack and a copy of the 
 ## Packaging Changes
 
 |Java Edition textures folder subdirectories|Bedrock Edition textures folder subdirectories|
-|-|-|
+|:---|:---|
 |block|blocks|
 |colormap|colormap|
-|effect|-|
+|effect|:---|
 |entity|entity|
 |environment|environment|
-|font|-|
+|font|:---|
 |gui|gui|
 |item|items|
 |map|map|
@@ -85,10 +85,10 @@ Start with a copy of a valid custom Java Edition texture pack and a copy of the 
 |models|models|
 |painting|painting|
 |particle|particle|
-|-|persona_thumbnails|
+|:---|persona_thumbnails|
 
 |Sample Java Edition texture filenames|Sample Bedrock Edition texture filenames|
-|-|-|
+|:---|:---|
 |beehive_end.png|beehive_top.png|
 |honeycomb_block.png|honeycomb.png|
 |honey_block_bottom.png|honey_bottom.png|

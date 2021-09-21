@@ -124,7 +124,7 @@ A good way to learn about a component and see how it's used in practice is to lo
 |`minecraft:movement`|`value`|Sets the movement speed of the entity. 0.25 is the regular speed of most animals in Minecraft.|
 |`minecraft:movement.basic`|[See documentation](/creator/Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_movement.basic.md)|Allows the entity to move around on the ground.|
 |`minecraft:navigation.walk`|[See documentation](/creator/Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_navigation.walk.md)|Allows the entity to navigate through the world by walking. There are other types of navigation as well, like hovering.|
-|`minecraft:is_baby`<br>`minecraft:is_ignited`<br>`minecraft:is_saddled`<br>`minecraft:is_sheared`<br>`minecraft:is_tamed`<br>`minecraft:is_illager_captain`<br>|-|These components don’t do anything on their own, but they can be queried in animations, animation controllers, or render controllers, allowing you to control animations and other visuals from the entity behavior.|
+|`minecraft:is_baby`<br>`minecraft:is_ignited`<br>`minecraft:is_saddled`<br>`minecraft:is_sheared`<br>`minecraft:is_tamed`<br>`minecraft:is_illager_captain`<br>|:---|These components don’t do anything on their own, but they can be queried in animations, animation controllers, or render controllers, allowing you to control animations and other visuals from the entity behavior.|
 |`minecraft:variant`<br>`minecraft:mark_variant`<br>`minecraft:skin_id`|`value`|These components work like the ones above, but instead of only storing an on/off state, they can store an integer value.|
 
 ### Priorities
@@ -214,7 +214,7 @@ Events can be triggered by many components such as `minecraft:interact` or `mine
 A few events are built into Minecraft and run if the entity is spawned under certain conditions.
 
 |Event Name|Description|
-|-|-|
+|:---|:---|
 |`minecraft:entity_born`|The event runs when the entity is spawned by breeding.|
 |`minecraft:entity_spawned`|The event runs whenever the entity spawns. Note that it won’t run if you manually `/summon` it.|
 |`minecraft:entity_transformed`|The event runs when another entity transforms into this entity.|
@@ -286,7 +286,7 @@ Filters condition an event or a part of an event by testing for a specific prope
 An event consists of up to five parameters. The parameters `test` and `value` are required — the others are optional:
 
 |Test Type|The property to test for|
-|-|-|
+|:---|:---|
 |`value`|The value to test for. This can be a string when testing for strings, a number when testing for numeric values, or a boolean.|
 |`subject`|The entity that the test runs on. By default this is `self`, but it can also target the other entity involved in an interaction.|
 |`operator`|The way in which the value is compared. This defaults to `equals` but can also test for smaller or greater values (on numeric values) or for inequality.|

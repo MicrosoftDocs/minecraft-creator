@@ -78,7 +78,7 @@ Your converted world will not include chunks outside of the region. Minecraft wi
 Converter settings allow you to enable/disable features of Chunker. It’s recommended to leave these as the default values.
 
 |Setting|Description|
-|-|-|
+|:---|:---|
 |Identifier Validation|Experimental. Whether Chunker should ensure all block identifiers are valid Minecraft blocks. Do not enable this if you are using custom blocks.|
 |Calculate Block Connections|Whether Chunker should emulate block connections. Disabling this may result in blocks, such as fences, not connecting to surrounding blocks.|
 |Convert Items|Whether Chunker should convert the items in the world. If disabled, items in chests, block inventories, and item frames will not be converted.|
