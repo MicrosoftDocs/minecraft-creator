@@ -1,7 +1,10 @@
 ---
-title: Entity Behavior Introduction
 author: ReWrite-Media
+ms.author: v-jeffreykim
+title: Entity Behavior Introduction
+ms.prod: gaming
 ---
+
 # Entity Behavior Introduction
 
 In this tutorial you will learn the following:
@@ -57,7 +60,7 @@ The files are written in JSON and the basic structure looks like this:
 Inside the `description` tag, a few basic properties define how the game registers the entity:
 
 |Parameter Name|Type|Description|
-|-|-|-|
+|:---|:---|:---|
 |`identifier`|String|Identifier of the entity. If this is a custom entity in an add-on, you should use a custom unique namespace as seen in the example.|
 |`runtime_identifier`|String|Identifier that's used internally by the game. This can be used to inherit custom mechanics from vanilla entities that are not yet available as a component. Only one runtime identifier may be specified per entity **Only use this if it is really necessary.** If a vanilla entity's mechanics are turned into components, you may lose functionality if you are relying on those mechanics through a runtime identifier.|
 |`is_spawnable`|Boolean|If true, a spawn egg for the entity is added to the creative inventory.|
@@ -113,7 +116,7 @@ A good way to learn about a component and see how it's used in practice is to lo
 ### Essential Components
 
 |Component Name|Options|Description|
-|-|-|-|
+|:---|:---|:---|
 |`minecraft:physics`|`has_collision`<br>`has_gravity`|You'll need this component on 99% of custom entities. It allows the entity to stay on the ground and react to interaction and punches in a way that you would expect.|
 |`minecraft:scale`|`value`|Sets the scale of the entity.|
 |`minecraft:collision_box`|`width`<br>`height`|Sets the collision box of the entity. Only the width and height can be changed. The collision box always has a square base that's aligned to the world axes.|
@@ -297,7 +300,7 @@ A minimal example of a filter inside an event could look like this: The componen
 "events": {
     "compass:example_event": {
         "filters": {
-            "test": "has_tag", 
+            "test": "has_tag",
             "value":"event_allowed"
         },
         "add": {
@@ -327,11 +330,11 @@ In the following example, we're adding a second condition to the filter. The eve
 }
 ```
 
-## What's Next? 
+## What's Next?
 
 If you ever get stuck or want a better understanding on how a component works, checking the vanilla behavior files will allow you to see working examples. Deconstructing a vanilla entity and applying it to a different entity is a great way to get started. Take the `minecraft:teleport` component from an Endermen and apply it to a creeper. Make a zombie rideable by the player. Make baby creepers.
 
-The component system allows you to customize what your entity does and how it interacts with the world. If you want to learn more about designing how your entity looks and moves, check out the entity modeling and animation tutorial. 
+The component system allows you to customize what your entity does and how it interacts with the world. If you want to learn more about designing how your entity looks and moves, check out the entity modeling and animation tutorial.
 
 > [!div class="nextstepaction"]
 > [Entity Modeling and Animation](EntityModelingAndAnimation.md)

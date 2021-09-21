@@ -173,7 +173,7 @@ Any argument that isn’t a literal argument will specify the expected input typ
 There are a large number of input types. The most common ones are primitive numeric values, but there are many that are exclusive to one command. The table below details the most common input types and some popular commands they belong to. Most unique input types, such as “GameMode” from the `/gamemode` command, can easily have their input checked by using the auto-complete feature in the chat.
 
 |Type|Description|Common commands
-|-|-|-|
+|:---|:---|:---|
 |Boolean|true or false.|`/effect`, `/gamerule`|
 |int|An integer (1, 2, 3).|`/give`, `/scoreboard`, `/time`, `/weather`, `/xp`|
 |float|A decimal number (1, 2.3, 4, 5.6).|`/spreadplayers`|
@@ -225,7 +225,7 @@ A potential target must match all specified parameters before being selected. Th
 #### List of parameters
 
 |Parameter|Description|Example|
-|-|-|-|
+|:---|:---|:---|
 |`x, y, z`|Specifies the coordinates to find players from. Not all axes have to be specified.|Using `@p[x=0,y=64,z=0]` will select the player closest to those coordinates, rather than the player closest to the execution origin.|
 |`r, rm`|Selects targets within a radius around the execution origin, unless changed by the “x, y, z” parameters.<br><br>`r` is the maximum number of blocks away from the origin to select, while `rm` is the minimum blocks away from the origin.<br><br>One may be specified without specifying the other.|`@p[x=0,y=64,z=0,r=1]` will select a player that is 1 block away from the specified coordinates.<br><br>`@a[rm=3]` will select all players 3 blocks away from the execution origin.<br><br>`@e[rm=3,r=10]` will select all entities that are between 3 and 10 blocks of the execution origin.|
 |`dx, dy, dz`|Selects targets in a rectangular cuboid. The execution origin will be one corner while each of these parameters specifies the distance away from the origin to the other corner.<br><br>If any one of these parameters are specified, the others that are not specified will default to 0.|`@a[x=60,y=64,z=60,dx=5,dy=3,dz=5]` will select players that are 5 blocks within the X and Z directions and 3 blocks within the Y direction of the specified coordinates.<br><br>`@a[dy=50]` will select players that are within 50 blocks of the execution origin in the Y direction, while also being within 0 blocks in the X and Z directions. This means the player must be at the same horizontal position of the origin, but up to 50 blocks above it.|

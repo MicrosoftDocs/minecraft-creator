@@ -1,6 +1,9 @@
 ---
-title: Chunker - Advanced Mode
 author: ReWrite-Media
+ms.author: v-jeffreykim
+title: Chunker - Advanced Mode
+ms.prod: gaming
+description: "Working with Clunker"
 ---
 # Chunker - Advanced Mode
 
@@ -83,7 +86,7 @@ Converter settings allow you to enable/disable features of Chunker. It’s recom
 |In-Game Map Conversion|Whether Chunker should convert the held maps to the new world.|
 |Enable Compact (Bedrock Edition only)|Whether Chunker should run LevelDB compact after the conversion. This will reduce file-size but may cause the conversion to take longer.|
 
-## What's Next? 
+## What's Next?
 
 The World Settings article covers a wide variety of world settings. If you have a Nether dimension that you want to reset in order to have up-to-date generation features, Chunker can be used to do that with Advanced Mode.
 

@@ -1,7 +1,10 @@
 ---
-title: Entity Modeling and Animation
 author: ReWrite-Media
+ms.author: v-jeffreykim
+title: Entity Modeling and Animation
+ms.prod: gaming
 ---
+
 # Entity Modeling and Animation
 
 In this guide, we'll go through the basics of creating a model and creating animations for Minecraft: Bedrock Edition. As an example, we'll model and animate a small robot, which was started in the [Introduction to Add Entity](IntroductionToAddEntity.md) article.
@@ -73,11 +76,11 @@ Once the shape of the model is done, you can create a texture template. The temp
 
 When creating a texture, enter `robot` as the texture name and check the Template option. In the template dialog, select your resolution. 16x is the default resolution of Minecraft, but you can go higher if you want.
 
-### Base Color 
+### Base Color
 
 Once the template is created, you can move to the Paint tab in Blockbench. This will reveal all the tools you have to modify the texture. Select the Paint Bucket tool and set the fill mode next to the tool to Cube. Select a color in the color panel on the right side. Now you can go over your cubes and color them in individual base colors.
 
-### Details 
+### Details
 
 You can now start to work on the texture. If you're more comfortable with texturing in your image editing program, you can now save the texture by clicking on the save icon next to the texture. Then, you can open it in your image editor. Any changes will appear in Blockbench as soon as you save the texture. But, if you prefer to work directly on the model, you can use the built-in paint tools in Blockbench.
 

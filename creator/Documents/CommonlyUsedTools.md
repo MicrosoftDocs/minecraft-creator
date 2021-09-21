@@ -1,7 +1,10 @@
 ---
-title: Commonly Used Tools
 author: ReWrite-Media
+ms.author: v-jeffreykim
+title: Commonly Used Tools
+ms.prod: gaming
 ---
+
 # Commonly Used Tools
 
 There exists a wide variety of tools that have been created for the purpose of increasing the efficiency of Minecraft content creation. Tools can help with a variety of things from creating skins, to crafting beautiful custom worlds. This article will explore some of the most commonly used tools currently available and some of there uses.
@@ -61,7 +64,7 @@ Voxel Sniper Flattened is another in-game Minecraft map editor for Java Edition.
 
 ### [goBrush](https://www.spigotmc.org/resources/gobrush.23118/)
 
-goBrush is a server plugin for Java Edition that adds in-game tools designed for custom terrain editing by using heightmap brushes instead of geometric shapes like tools such as WorldEdit and Voxel Sniper Flattened. 
+goBrush is a server plugin for Java Edition that adds in-game tools designed for custom terrain editing by using heightmap brushes instead of geometric shapes like tools such as WorldEdit and Voxel Sniper Flattened.
 
 ### [goPaint](https://www.spigotmc.org/resources/gopaint.27717/)
 

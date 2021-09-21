@@ -1,7 +1,10 @@
 ---
-title: Survival Spawn Creation
 author: ReWrite-Media
+ms.author: v-jeffreykim
+title: Survival Spawn Creation
+ms.prod: gaming
 ---
+
 # Survival Spawn Creation
 
 Survival spawns take on many shapes and forms, all with their own considerations. This article's focus is on creating a survival spawn that represents the starting of a player's journey in survival Minecraft. Whether it exists in a naturally generated terrain or a custom-crafted one, the player should be able to experience the normal Minecraft survival loop.

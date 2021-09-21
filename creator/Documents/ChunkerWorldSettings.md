@@ -1,6 +1,8 @@
 ---
-title: Chunker - World Settings
 author: ReWrite-Media
+ms.author: v-jeffreykim
+title: Chunker - World Settings
+ms.prod: gaming
 ---
 # Chunker - World Settings
 
@@ -110,7 +112,7 @@ Game rules are settings that can be modified in-game by operators using the `/ga
 |Start With Map Enabled|(Bedrock Edition only) Whether new players start with a map.|
 |World Start Count|(Bedrock Edition only) The number of times the world has been started. This is used to generate entity (actor) ids.|
 
-## What's Next? 
+## What's Next?
 
 If you have a Nether dimension that you want to reset in order to have up-to-date generation features, Chunker can be used to do that with Advanced Mode.
 
