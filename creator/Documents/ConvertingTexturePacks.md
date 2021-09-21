@@ -1,7 +1,10 @@
 ---
-title: Converting Texture Packs from Java Edition to Bedrock Edition
 author: ReWrite-Media
+ms.author: v-jeffreykim
+title: Converting Texture Packs from Java Edition to Bedrock Edition
+md.prod: gaming
 ---
+
 # Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition
 
 This article discusses the general tasks required to manually convert a resource pack made for Java Edition to a texture pack for Bedrock Edition. The actual creation of custom textures and features for a custom texture pack is not within the scope of this article. It’s assumed that the creator has sufficient knowledge and experience with a raster graphics editor, such as [Adobe Photoshop](https://www.adobe.com/products/photoshop.html), [Paint 3D](https://www.microsoft.com/p/paint-3d/9nblggh5fv99), [Corel Painter](https://www.painterartist.com), or [Paint.NET](https://getpaint.net) to create and edit the texture files as necessary. Note that not all tools may support the required file formats or alpha channels.
@@ -31,7 +34,7 @@ In general, the differences between texture packs for Java Edition versus Bedroc
 - The metadata files (`.json`).
 
 |Content|Bedrock Edition|Notes|
-|-|-|-|
+|:---|:---|:---|
 |Animation|Block animations controlled by `flipbook_textures.json`, can be customized|External site: [Block Animations](https://minecraft.fandom.com/wiki/Bedrock_Edition_animation_documentation)|
 |Spawn Egg|Individual spawn egg textures||
 |Potion bottle|Individual potion bottles||
@@ -74,13 +77,13 @@ Start with a copy of a valid custom Java Edition texture pack and a copy of the 
 ## Packaging Changes
 
 |Java Edition textures folder subdirectories|Bedrock Edition textures folder subdirectories|
-|-|-|
+|:---|:---|
 |block|blocks|
 |colormap|colormap|
-|effect|-|
+|effect|:---|
 |entity|entity|
 |environment|environment|
-|font|-|
+|font|:---|
 |gui|gui|
 |item|items|
 |map|map|
@@ -88,10 +91,10 @@ Start with a copy of a valid custom Java Edition texture pack and a copy of the 
 |models|models|
 |painting|painting|
 |particle|particle|
-|-|persona_thumbnails|
+|:---|persona_thumbnails|
 
 |Sample Java Edition texture filenames|Sample Bedrock Edition texture filenames|
-|-|-|
+|:---|:---|
 |beehive_end.png|beehive_top.png|
 |honeycomb_block.png|honeycomb.png|
 |honey_block_bottom.png|honey_bottom.png|

@@ -1,7 +1,10 @@
 ---
-title: Content Error Log
 author: ReWrite-Media
+ms.author: v-jeffreykim
+title: Content Error Log
+ms.prod: gaming
 ---
+
 # Content Error Log
 
 While playing Minecraft: Bedrock Edition, the game is constantly processing content to produce the game experience we all know and love. This content can be anything from textures for character skins, configuration files describing how a torches fire looks, or a behavior for mob. While this is going on, Minecraft logs information related to this in a separate content specific log. Some of these messages are just noting normal game operation, but some of the messages denote problems detected in content that can either lead to instability or unpredictable behavior.

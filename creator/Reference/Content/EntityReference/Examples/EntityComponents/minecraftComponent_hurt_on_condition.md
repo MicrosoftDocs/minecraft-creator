@@ -22,8 +22,13 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |[filters](../FilterList.md)|*not set* | Minecraft Filter| Filter used to test for|
-|[cause](../Filters/has_damage.md#list-of-damage-types) |*not set* |String|Cause of damage|
+|cause|*not set* |String|Cause of damage|
 |damange_per_tick |*not set*| Integer| Amount of damage done each tick that the conditions are met.|
+
+### cause
+
+> [!IMPORTANT]
+> A list of available damage sources can be found at [Entity Damage Source](../../../AddonsReference/Examples/AddonEntities.md#entity-damage-source) located in the Addons Documentation.
 
 ## Example
 

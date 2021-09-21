@@ -1,6 +1,8 @@
 ---
-title: Chunker - World Settings
 author: ReWrite-Media
+ms.author: v-jeffreykim
+title: Chunker - World Settings
+ms.prod: gaming
 ---
 # Chunker - World Settings
 
@@ -24,7 +26,7 @@ It’s recommended that the following be completed before beginning this tutoria
 ## World Settings
 
 |Settings|Description|
-|-|-|
+|:---|:---|
 |Difficulty|Difficulty of the world.|
 |Gamemode|Default game mode of the world. Players will default to this game mode on first join.|
 |Generator|Generator used for generating new chunks in this world. Setting to void will automatically create the custom layer rules to generate empty chunks.|
@@ -45,7 +47,7 @@ It’s recommended that the following be completed before beginning this tutoria
 Game rules are settings that can be modified in-game by operators using the `/gamerule` command or in-game menu.
 
 |Setting|Description|
-|-|-|
+|:---|:---|
 |Command Block Output|Whether command blocks should output to chat for online operators.|
 |Command Blocks Enabled|(Bedrock Edition only) Whether command blocks are enabled in this world. Setting to false will cause command blocks to not execute.|
 |Commands Enabled|Whether commands (commonly referred to as cheats) should be allowed in this world.|
@@ -77,7 +79,7 @@ Game rules are settings that can be modified in-game by operators using the `/ga
 ## Restrictions
 
 |Setting|Description|
-|-|-|
+|:---|:---|
 |Confirmed Platform Locked Content|(Bedrock Edition only) Whether this content is platform locked.|
 |Has Been Loaded In Creative|(Bedrock Edition only) Whether this world has been loaded in creative mode.|
 |Has Locked Behavior Pack|(Bedrock Edition only) Whether the behavior pack is locked.|
@@ -94,7 +96,7 @@ Game rules are settings that can be modified in-game by operators using the `/ga
 ## Weather
 
 |Setting|Description|
-|-|-|
+|:---|:---|
 |Lightning Level|Determines how heavy the lightning is.|
 |Lightning Time|Number of ticks until lightning will be triggered.|
 |Rain Level|Determines how heavy the rain is.|
@@ -103,7 +105,7 @@ Game rules are settings that can be modified in-game by operators using the `/ga
 ## Misc
 
 |Setting|Description|
-|-|-|
+|:---|:---|
 |Center Maps To Origin|(Bedrock Edition only) Whether maps (items) should be centered to the origin of the map.|
 |Education Features|(Bedrock Edition only) Whether this world has Minecraft: Education Edition features enabled.|
 |EDU Level|(Bedrock Edition only) The level of the EDU features to use.|
@@ -111,7 +113,7 @@ Game rules are settings that can be modified in-game by operators using the `/ga
 |Start With Map Enabled|(Bedrock Edition only) Whether new players start with a map.|
 |World Start Count|(Bedrock Edition only) The number of times the world has been started. This is used to generate entity (actor) ids.|
 
-## What's Next? 
+## What's Next?
 
 If you have a Nether dimension that you want to reset in order to have up-to-date generation features, Chunker can be used to do that with Advanced Mode.
 

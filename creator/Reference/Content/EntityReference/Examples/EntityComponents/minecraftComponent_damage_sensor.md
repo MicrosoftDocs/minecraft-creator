@@ -37,6 +37,11 @@ ms.prod: gaming
 |[filters](../FilterList.md)|*not set* | Minecraft Filter|  Filters to use to define specific tests |
 |event |*not set* | String | Defines what event to run |
 
+### cause
+
+> [!IMPORTANT]
+> A list of available damage sources can be found at [Entity Damage Source](../../../AddonsReference/Examples/AddonEntities.md#entity-damage-source) located in the Addons Documentation.
+
 ## Example
 
 ```json
