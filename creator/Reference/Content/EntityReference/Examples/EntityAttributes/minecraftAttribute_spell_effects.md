@@ -11,7 +11,8 @@ ms.prod: gaming
 
 Similarly to [`addrider`](../EntityComponents/minecraftComponent_addrider.md), this component performs a one-time operation on the entity when added. Removing the component will not change the entity's current effects. Adding different versions of the component multiple times will perform each one in turn. Once the component has been added, it will not provide any further functionality.
 
-There is one exception to this. If this component is present on a player, its effects will be re-applied every time the player enters the world. To avoid this, simply remove the component shortly after adding it, or add an empty component to replace it.
+> [!NOTE]
+> There is one exception to this behavior: if this component is present on a player, its effects will be re-applied every time the player enters the world. To avoid this, remove the component shortly after adding it, or add an empty component to replace it.
 
 ## Parameters
 
