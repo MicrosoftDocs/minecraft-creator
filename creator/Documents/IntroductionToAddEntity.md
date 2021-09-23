@@ -1,10 +1,14 @@
 ---
+author: neonerz
+ms.author: v-jeffreykim
 title: Introduction to Add Entity
-author: ReWrite-Media
+ms.prod: gaming
+description: "Building upon the knowledge learned in the Resource Pack Tutorial, Introduction to Add Entity goes over the steps needed to start creating your own custom Entity"
 ---
+
 # Introduction to Add Entity
 
-Add Entity refers to a set of features inside Minecraft: Bedrock Edition that allow addons to add custom entities to the game. The behavior of entities can be changed with a behavior pack and the appearance with a resource pack. Both are required to add a working entity to the game. This guide will go through the basic steps to create a working entity. In the second part, it will show you how to breathe life into the entity by using behavior components, animations, etc.
+Add Entity refers to a set of features inside Minecraft: Bedrock Edition that allow add-ons to add custom entities to the game. The behavior of entities can be changed with a behavior pack and the appearance with a resource pack. Both are required to add a working entity to the game. This guide will go through the basic steps to create a working entity. In the second part, it will show you how to breathe life into the entity by using behavior components, animations, etc.
 
 In this tutorial you will learn the following:
 
@@ -26,37 +30,37 @@ It’s recommended that the following be completed before beginning this tutoria
 Knowledge of the following is also recommended to help better understand this article.
 
 - Familiarity with how the [JSON](https://www.w3schools.com/whatis/whatis_json.asp) format works.
-- Some kind of code editor ([VSCode](https://code.visualstudio.com/download), [Notepad++](https://notepad-plus-plus.org/downloads/), [Sublime](https://www.sublimetext.com/), etc)
+- A code editor like [VSCode](https://code.visualstudio.com/download)
 
 ## File Structure
 
-In the behavior pack, an entity file is responsible for defining the entity server side. In the resource pack, a client entity file is responsible to tell the game how the entity will look. The following graphic shows how different files can interact to create a custom entity:
+In the behavior pack, an entity file is responsible for defining the entity server side. In the resource pack, a client entity file is responsible for telling the game how the entity will look. The following graphic shows how different files can interact to create a custom entity:
 
 ![Relationships between resource packs and behavior packs](Media/AddEntity/filestructure.png)
 
 ## Naming
 
-Server and client entity are synced using the entity ID. This ID consists of a namespace and a name separated by a colon. For the namespace, you can use a short version of your team name or product name. The ID should only include lower case letters, digits, and underscores. Do not use "minecraft" as the namespace for custom content as it is meant for vanilla resources. You should only use "minecraft" if you are overwriting vanilla content.
+Server and client entity are synced using the entity ID. This ID consists of a namespace and a name separated by a colon. For the namespace, you can use a short version of your team name or product name. The ID should only include lower case letters, digits, and underscores. Do not use "minecraft" as the namespace for custom content. The "minecraft" namespace is reserved for vanilla resources, so you should only use "minecraft" if you are overwriting vanilla content.
 
-Most files that define the entity will be JSON files. To avoid confusion between these files, it's recommended to use an extended file extension. The game ignores file names in most cases, but while working on an addon, messy file names can be confusing. The extensions are:
+Most files that define the entity will be JSON files. To avoid confusion between these files, it's recommended to use an extended file extension. The game ignores file names in most cases, but while working on an add-on, messy file names can be confusing. The extensions are:
 
 |File Type|File Name|
-|-|-|
+|:---|:---|
 |Client Entity Files|*entity_name*.entity.json|
 |Model Files|*entity_name*.geo.json
 |Animation Files|*entity_name*.animation.json
 |Animation Controllers|*entity_name*.animation_controllers.json|
 |Render Controllers|*entity_name*.render_controllers.json|
 
-...where `entity_name` is replaced by the name of your entity, **not** including the namespace.
+`entity_name` should be replaced by the name of your entity, not including the namespace.
 
 ## Format Versions
 
-Each JSON file should have a format_version tag. This tag is important for the game to correctly read the file. It's important to know that files made in older formats will still work in newer versions of the game, but only if the format version is set correctly. Incorrect format versions are a **frequent** source of errors.
+Each JSON file should have a `format_version` tag. This tag is important for the game to correctly read the file. It's important to know that files made in older formats will still work in newer versions of the game, but only if the format version is set correctly. Incorrect format versions are a *frequent* source of errors.
 
 ## Behavior Pack Definition
 
-For this example, we will add a little robot into the game. Let’s start in the behavior pack. We create a new file in the "entities" folder of the behavior pack named `robot.json`.
+For this example, we will add a little robot into the game. Let’s start in the behavior pack. We create a new file in the `entities` folder of the behavior pack named `robot.json`.
 
 ```json
 {
@@ -72,7 +76,7 @@ For this example, we will add a little robot into the game. Let’s start in the
 }
 ```
 
-Inside the description tag, we define basic attributes of the entity. "identifier" sets the ID for the entity. "is spawnable" will later add a spawn egg into the game that allows the player to spawn this mob. "is_summonable" will make the entity work with the `/summon` command.
+Inside the description tag, we define basic attributes of the entity. `identifier` sets the ID for the entity. `is_spawnable` will later add a spawn egg into the game that allows the player to spawn this mob. `is_summonable` will make the entity work with the `/summon` command.
 
 Inside components, we can add components to change the behavior of the entity. For now, we'll only add one component: the physics component. This will give the entity gravity and regular collision behavior.
 
@@ -84,7 +88,7 @@ Inside components, we can add components to change the behavior of the entity. F
 
 ## Client Entity Definition
 
-Now, we need to add the entity to the resource pack to give it a visual appearance. In the "entity" folder of the resource pack, we'll create a new JSON file called `robot.entity.json`.
+Now, we need to add the entity to the resource pack to give it a visual appearance. In the `entity` folder of the resource pack, we'll create a new JSON file called `robot.entity.json`.
 
 ```json
 {
@@ -101,9 +105,9 @@ Now, we need to add the entity to the resource pack to give it a visual appearan
 }
 ```
 
-This is the basic structure of the file. So far, it's similar to the behavior-side file. Note that we now use client_entity instead of just entity. At the time of writing this article, 1.10.0 is the latest format version for this file.
+This is the basic structure of the file. So far, it's similar to the behavior-side file. Note that we now use `client_entity` instead of just entity. At the time of writing this article, 1.10.0 is the latest format version for this file.
 
-The spawn egg tag defines how the spawn egg will look in the inventory. Using this method, it will look like a vanilla spawn egg, but with customized colors.
+The `spawn_egg` tag defines how the spawn egg will look in the inventory. Using this method, it will look like a vanilla spawn egg, but with customized colors.
 
 ## Visuals
 
@@ -148,9 +152,9 @@ In most cases, a custom material is not required. Instead, you can use a default
 
 ## Translation Strings
 
-Right now, neither the entity itself nor the spawn egg have a proper name in game. To define a name, we need a language file. Create a new folder called "texts" inside your resource pack and create a new file called `en_US.lang`. For custom entities, we only need to change this language file, as all other languages will default to American English. Inside this file, add these two lines:
+Right now, neither the entity itself nor the spawn egg have a proper name in game. To define a name, we need a language file. Create a new folder called `texts` inside your resource pack and create a new file called `en_US.lang`. For custom entities, we only need to change this language file, as all other languages will default to American English. Inside this file, add these two lines:
 
-```
+```json
 entity.compass:robot.name=Robot
 item.spawn_egg.entity.compass:robot.name=Spawn Robot
 ```
@@ -171,7 +175,7 @@ You should now be able to spawn your entity in game using the spawn egg or the s
 
 ## Components
 
-Components tell the entity how to act in game. Let’s add a few components and I'll explain in detail what they do.
+Components tell the entity how to act in game. Let’s add a few components and explain in detail what they do.
 
 ```json
    "components": {
@@ -203,7 +207,7 @@ Components tell the entity how to act in game. Let’s add a few components and 
 ```
 
 |Component Name|Description|
-|-|-|
+|:---|:---|
 |`minecraft:nameable`|Allows the player to name the entity with a name tag.|
 |`minecraft:movement`|Tells the entity how fast to move. 0.25 is the regular speed of most animals in Minecraft.|
 |`minecraft:movement.basic`|Gives the entity the ability to move on the ground.|
@@ -292,13 +296,13 @@ Our render controller is named using the following scheme: `controller.render.<e
 
 Inside the render controller tag, the different resources are specified, but you'll notice each one uses a different JSON formatting.
 
-### Geometry 
+### Geometry
 
 One render controller can only display one geometry at a time. That’s why it is linked directly as one string. This string can be a MoLang expression and should always return a geometry. In this case, it's calling `Geometry.default`, which means that it'll return the geometry that's linked as `default` by whatever entity using the render controller.
 
 You can render multiple geometries on one entity by using multiple render controllers. This can be tricky though, and can lead to unexpected behavior. Therefore, it's only recommended for experienced creators.
 
-### Materials 
+### Materials
 
 Unlike geometry, materials is written as an array of objects. The purpose being that we can assign each bone a separate material. Each object in the array can have one key-value pair. The key selects a set of bones. An asterisk is used as a wildcard. This means that all bones, no matter the name, will have the default material assigned. Note that materials are assigned in order, meaning that materials further down in the list can overwrite previous materials.
 
@@ -309,14 +313,13 @@ Unlike geometry, materials is written as an array of objects. The purpose being 
         ],
 ```
 
-
 In this example, we first apply the default material to all bones. Then, we overwrite the material with the transparent material on all bones that end in `_arm`. That way, all arm bones would support transparency.
 
-### Textures 
+### Textures
 
 Textures are specified in an array. In most cases, only one texture will be linked here since entities don’t support separate textures. There is one exception though: materials can support multiple textures layered on top of each other, such as the material `entity_multitexture`. For example, this is used by llamas to overlay the décor.
 
-### Arrays 
+### Arrays
 
 When working with multiple resources of one type, it can be useful to use an array. An array is a list of resource links that are defined in the render controller, and that you can pick one resource from using MoLang.
 
@@ -419,17 +422,17 @@ Inside `minecraft:spawn_rules`, there are two tags that we need to consider. `de
 
 `population_control` defines how the game knows how many mobs to spawn.
 
-### Population Control 
+### Population Control
 
 There are different pools of entities. Once the pool defined here is considered full, the game will no longer spawn mobs of this pool. There are three different options:
 
-- **"animal"** - Passive mobs such as cows and pigs
-- **"water_animal"** - Water-based mobs such as tropical fish and dolphins
-- **"monster"** - Hostile mobs such as skeletons and zombies
+- **"animal"**: Passive mobs such as cows and pigs
+- **"water_animal"**: Water-based mobs such as tropical fish and dolphins
+- **"monster"**: Hostile mobs such as skeletons and zombies
 
 For the robot, we're using the animal pool.
 
-### Conditions 
+### Conditions
 
 `conditions` is an array of possible conditions that would allow a mob to spawn in the world. Each of the conditions separately tries to spawn mobs into the world. Each consists of a group of components that define when and when not to spawn the mob.
 
@@ -464,20 +467,18 @@ For a basic spawn rule, one condition is enough. For the robot, we will use this
 }
 ```
 
-
-
 |Component Name|Description|
-|-|-|
+|:---|:---|
 |`minecraft:spawns_on_surface`|The mob spawns on the surface|
-|`minecraft:brightness_filter`|Only spawn the entity at a certain brightness. Accepts three options, min, max, and adjust_for_weather.<br><br>Light levels range from 0 to 15.<br><br>If adjust_for_weather is set to true, the light level decrease due to rain and thunderstorms will be taken into account.|
+|`minecraft:brightness_filter`|Only spawn the entity at a certain brightness. Accepts three options, `min`, `max`, and `adjust_for_weather`. Light levels range from 0 to 15. If `adjust_for_weather` is set to `true`, the light level decrease due to rain and thunderstorms will be taken into account.|
 |`minecraft:weight`|The weight of the entity in spawning. The higher the number, the more often the mob will spawn.|
-|`minecraft:biome_filter`|Filters the biome the mob is allowed to spawn in. Biome filters work similarly to filters in behavior, which means that operators like all_of and any_of are allowed. Biomes have different tags that indicate the biome type, variant, dimension, and features like monster and animal.|
+|`minecraft:biome_filter`|Filters the biome the mob is allowed to spawn in. Biome filters work similarly to filters in behavior, which means that operators like `all_of` and `any_of` are allowed. Biomes have different tags that indicate the biome type, variant, dimension, and features like monster and animal.|
 
 Robots will now spawn anywhere on the surface where animals can spawn and where there is sufficient light. With a weight of 40, they'll also spawn quite frequently.
 
 ## Behavior Animations
 
-Behavior animations work similarly to regular animations but run in the behavior pack. While regular animations animate the movement of the model as well as sounds and particles, behavior animations can run regular commands, trigger entity events, or run MoLang expressions. Behavior animations are also often referred to as "Entity Events"; although, that name tends to be a bit confusing.
+Behavior animations work similarly to regular animations but run in the behavior pack. While regular animations animate the movement of the model as well as sounds and particles, behavior animations can run regular commands, trigger entity events, or run MoLang expressions. Behavior animations are also often referred to as **Entity Events**, although that name tends to be a bit confusing.
 
 Since robots don’t like water, we'll add a mechanic to damage robots in water or rain. First, we're going to create an animation controller to test when the entity is in water using a MoLang query. Create a new folder in the behavior pack called `animation_controllers` and create the file `robot.animation_controllers.json` inside it:
 
@@ -583,7 +584,9 @@ To summarize the relationship between controllers and animations: an animation c
 
 ## What's Next?
 
-In this guide we have added a complete custom entity to the game. The robot spawns randomly in the world, has three random textures, a wheel animation, various components, and a custom water mechanic. If you want to play around with the addon created in this article, you can download the packs [here](https://drive.google.com/file/d/14w3UCJ4sA9IwvY3fBiP2L5uQJDmbC6A9/view?usp=sharing). If you want to learn more about custom entities, you can read on about modeling and animating for the client or read further about entity behavior for the server. 
+
+In this guide we have added a complete custom entity to the game. The robot spawns randomly in the world, has three random textures, a wheel animation, various components, and a custom water mechanic. If you want to play around with the add-on created in this article, you can download the packs [here](https://drive.google.com/file/d/14w3UCJ4sA9IwvY3fBiP2L5uQJDmbC6A9/view?usp=sharing). If you want to learn more about custom entities, you can read on about modeling and animating for the client or read further about entity behavior for the server.
+
 
 > [!div class="nextstepaction"]
 > [Entity Modeling and Animation](EntityModelingAndAnimation.md)

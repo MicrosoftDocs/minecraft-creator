@@ -14,6 +14,62 @@ description: Contents of the mojang-minecraft.Block class.
 Represents a block in a dimension. A block represents a unique X, Y, and Z within a dimension and get/sets the state of the block at that location. This type was significantly updated in version 1.17.10.21.
 
 ## Properties
+### **dimension**
+`read-only dimension: Dimension;`
+
+Returns the dimension that the block is within.
+
+Type: [*Dimension*](Dimension.md)
+
+
+### **id**
+`read-only id: string;`
+
+Identifier of the type of block for this block.
+
+Type: *string*
+
+
+### **isEmpty**
+`read-only isEmpty: boolean;`
+
+Whether this particular block is empty (air).
+
+Type: *boolean*
+
+
+### **isWaterlogged**
+`isWaterlogged: boolean;`
+
+Returns or sets whether this block has a liquid on it.
+
+Type: *boolean*
+
+
+### **location**
+`read-only location: BlockLocation;`
+
+Coordinates of the specified block.
+
+Type: [*BlockLocation*](BlockLocation.md)
+
+
+### **permutation**
+`read-only permutation: BlockPermutation;`
+
+Additional block configuration data that describes the block.
+
+Type: [*BlockPermutation*](BlockPermutation.md)
+
+
+### **type**
+`read-only type: BlockType;`
+
+Gets the type of block.
+
+Type: [*BlockType*](BlockType.md)
+
+
 ### **x**
 `read-only x: number;`
 
@@ -40,40 +96,12 @@ Type: *number*
 
 
 ## Methods
-- [canBeWaterlogged](#canbewaterlogged)
-- [getBlockData](#getblockdata)
 - [getComponent](#getcomponent)
-- [getDimension](#getdimension)
-- [getLocation](#getlocation)
 - [getTags](#gettags)
 - [hasTag](#hastag)
-- [isEmpty](#isempty)
-- [isWaterlogged](#iswaterlogged)
 - [setPermutation](#setpermutation)
 - [setType](#settype)
-- [setWaterlogged](#setwaterlogged)
   
-### **canBeWaterlogged**
-`
-canBeWaterlogged(): boolean
-`
-
-Whether this block can potentially be waterlogged. For example, a block of Andesite cannot be waterlogged (as it is a completely solid block), but a door component can be.
-
-Returns *boolean* - Whether this particular block, based on its block type, can be waterlogged.
-
-
-### **getBlockData**
-`
-getBlockData(): BlockPermutation
-`
-
-
-Returns [*BlockPermutation*](BlockPermutation.md) - Additional block configuration data that describes the block.
-
-> [!WARNING]
-> This function can throw errors.
-
 ### **getComponent**
 `
 getComponent(componentName: string): any
@@ -90,31 +118,13 @@ Returns *any* - Returns the component object if it is present on the particular 
 > [!WARNING]
 > This function can throw errors.
 
-### **getDimension**
-`
-getDimension(): Dimension
-`
-
-
-Returns [*Dimension*](Dimension.md) - Returns the dimension that the block is within.
-
-
-### **getLocation**
-`
-getLocation(): BlockLocation
-`
-
-
-Returns [*BlockLocation*](BlockLocation.md) - Coordinates of the specified block.
-
-
 ### **getTags**
 `
-getTags(): any[]
+getTags(): string[]
 `
 
 
-Returns *any*[] - The list of tags that the block has.
+Returns *string*[] - The list of tags that the block has.
 
 
 ### **hasTag**
@@ -141,25 +151,6 @@ console.log(`Block is dirt: ${block.hasTag("dirt")}`);
 console.log(`Block is wood: ${block.hasTag("wood")}`);
 console.log(`Block is stone: ${block.hasTag("stone")}`);
 ```
-### **isEmpty**
-`
-isEmpty(): boolean
-`
-
-
-Returns *boolean* - Whether this particular block is empty (air).
-
-
-### **isWaterlogged**
-`
-isWaterlogged(): boolean
-`
-
-Returns whether this block has a liquid on it.
-
-Returns *boolean* - Whether this particular block is in a waterlogged state.
-
-
 ### **setPermutation**
 `
 setPermutation(permutation: BlockPermutation): void
@@ -198,20 +189,5 @@ Sets the type of block.
 | **blockType** | [*BlockType*](BlockType.md) | n/a | Identifier of the type of block to apply - for example, minecraft:powered_repeater. |
 
 
-
-### **setWaterlogged**
-`
-setWaterlogged(setWaterlogged: boolean): void
-`
-
-Sets the waterlogged state of the block.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **setWaterlogged** | *boolean* | n/a | If set to true, and if the block can be waterlogged, then the block becomes waterlogged. |
-
-
-> [!WARNING]
-> This function can throw errors.
 
 

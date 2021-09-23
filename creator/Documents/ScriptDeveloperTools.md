@@ -10,13 +10,13 @@ description: Use tools for enhanced editing and debugging of GameTest scripts wi
 
 Two new tools can make the process of writing your GameTest scripts easier and more fun within Visual Studio Code.
 
-## Custom Types file for Visual Studio Code Intellisense
+## Custom type definition files for Visual Studio Code Intellisense
 
-Visual Studio Code can take advantage of libraries of detailed type information for different libraries to provide hints and dropdowns as you type. For the GameTest modules - `mojang-minecraft` and `mojang-gametest` modules – two new modules are available to take advantage of this.
+Visual Studio Code can display detailed type information for different libraries to provide hints and code-completion dropdowns as you type. Type information has been made available for GameTest modules `mojang-minecraft` and `mojang-gametest`.
 
 To get started, use the Node Package Manager, or npm. npm makes it easy to download and install different modules of code within your packages. Install Node.js – which includes npm - on your development device. More info on installing npm is available from https://nodejs.org. Install the latest LTS version of Node.js to get started.
 
-Once node.js is installed, getting the latest type definitions is a snap. Within your project folder, and where you commonly edit your behavior packs from, simply run the following commands from the command prompt:
+Once Node.js is installed, getting the latest type definitions is a snap. From Visual Studio Code, open the folder where your behavior pack folder is located and simply run the following commands from a terminal console window:
 
 ```powershell
 npm i @types/mojang-minecraft
@@ -46,6 +46,9 @@ To get started, you’ll want to use Visual Studio Code as your editor for the J
 2. Open Visual Studio Code within your development_behavior_packs folder
 3. Depending on your testing client - either in Bedrock Dedicated Server or within Minecraft Bedrock clients -- connect Minecraft Bedrock Edition and Visual Studio Code
 4. Set break points and add watch variables in your code as you go, and then connect Minecraft to Visual Studio Code
+
+>[!IMPORTANT]
+>The Minecraft debugger and GameTest Framework experiment are optimized to work with the latest Beta versions of Minecraft. See [Minecraft Betas](https://aka.ms/mcbeta) for more information.
 
 ### Debugging with Minecraft Bedrock Edition
 

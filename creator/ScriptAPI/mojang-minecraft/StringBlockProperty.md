@@ -23,11 +23,11 @@ Type: *string*
 
 
 ### **validValues**
-`read-only validValues: any[];`
+`read-only validValues: string[];`
 
 A list of allowed values for this string property.
 
-Type: *any*[]
+Type: *string*[]
 
 
 ### **value**

@@ -67,6 +67,7 @@ Query Functions are boolean expressions that allow you to query for values owned
 | query.equipped_item_is_attachable| Takes the desired hand slot as a parameter (0 or 'main_hand' for main hand, 1 or 'off_hand' for off hand), and returns whether the item is an attachable or not. |
 | query.eye_target_x_rotation| Returns the X eye rotation of the entity if it makes sense, else it returns 0.0 |
 | query.eye_target_y_rotation| Returns the Y eye rotation of the entity if it makes sense, else it returns 0.0 |
+| query.facing_target_to_range_attack| Returns 1.0 if the entity is attacking from range (i.e. minecraft:behavior.ranged_attack), else it returns 0.0 |
 | query.frame_alpha| Returns the ratio (from 0 to 1) of how much between AI ticks this frame is being rendered |
 | query.get_actor_info_id| Returns the integer id of an actor by its string name |
 | query.get_animation_frame| Returns the current texture of the item |

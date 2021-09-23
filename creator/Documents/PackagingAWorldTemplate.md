@@ -1,6 +1,8 @@
 ---
+author: neonerz
+ms.author: v-jeffreykim
 title: Packaging a World Template
-author: ReWrite-Media
+ms.prod: gaming
 ---
 # Packaging a World Template
 
@@ -97,7 +99,7 @@ This is where the name and description of your world are defined. You are requir
 
 The names after the `=` are what will show up in the UI of the game.
 
-```
+```json
 pack.name=Western World
 pack.description=Howdy partner
 ```
