@@ -55,8 +55,6 @@ This can either be a single string identifier for a status effect, or a list of 
 
 ### `zombie_villager_v2`
 
-Note that the use of `heal` in this example is incorrect and does nothing, since `instant_health` is the correct name for that effect.
-
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie_villager_v2.json" range="86-98":::
 
 ## Vanilla entities using `minecraft:spell_effects`
