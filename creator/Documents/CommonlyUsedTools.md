@@ -46,9 +46,9 @@ Amulet is a utility designed to edit Minecraft maps. It can be a handy tool for 
 
 Image Map is a small application for both Bedrock Edition and Java Edition that can convert images to Minecraft maps. This can be used to add custom banners and art inside of Minecraft worlds.
 
-### [Bridge.](https://github.com/solvedDev/bridge.)
+### [bridge.](https://bridge-core.app/)
 
-Bridge. is an add-on tool for Bedrock Edition that enables creators to create behavior packs and resource packs with automatically generating `manifest.json` files, as well as a robust editor with a wide variety of features designed to make Minecraft JSON editing more streamlined.
+bridge. is a powerful add-on editor designed to speed up your development process. It provides a rich editing experience for all files inside behavior packs, resource packs, skin packs and world templates and provides a powerful work environment for JavaScript, JSON, functions and more. bridge. also allows you to choose between the tree editor or raw text editor for JSON files. A summary of bridge.'s most notable features can be found [here](https://github.com/bridge-core/editor/blob/main/README.md). Unleash the full power of add-ons with [bridge. extensions](https://bridge-core.app/extension-docs/) and make use of rich auto-completions provided as you navigate through a file.
 
 ## Server Based Tools
 
@@ -75,6 +75,10 @@ goPaint is a server plugin for Java Edition that allows creators to efficiently 
 ### [Blockbench](https://blockbench.net/)
 
 Blockbench is a free entity-modeling application for creating working Bedrock Edition entity models, as well as creating textures and the ability to animate them for Bedrock Edition maps. Blockbench has external plugin support, enabling developers to create additional tools to use within the program. It also has the ability to export models into a standard OBJ format, Java Edition block model, and more.
+
+### [Blockception VSCode Extension](https://marketplace.visualstudio.com/items?itemName=BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension)
+
+An extension that provides support for files such as .mcfunction, .json and .lang. This extension adds features like completion, validations, formatters, diagnostics, cheat-sheets, code-actions, generation of files, and development tools to help develop Minecraft Bedrock Addons or Minecraft Education Edition. It's recommended that you use the Dark+ theme for the best color highlighting.
 
 ### [Cubik Studio](https://cubik.studio/)
 
