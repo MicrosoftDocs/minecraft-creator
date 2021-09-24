@@ -15,11 +15,11 @@ Adds a timer for the entity to grow up. It can be accelerated by giving the enti
 
 ## Properties
 ### **dropItems**
-`read-only dropItems: any[];`
+`read-only dropItems: string[];`
 
 List of items that the entity drops when it grows up.
 
-Type: *any*[]
+Type: *string*[]
 
 
 ### **duration**

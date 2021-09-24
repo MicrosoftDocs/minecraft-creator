@@ -6,9 +6,7 @@ ms.prod: gaming
 title: mojang-gametest.Test Class
 description: Contents of the mojang-gametest.Test class.
 ---
-
 # Test Class
-
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
@@ -46,6 +44,7 @@ Main class for GameTest functions, with helpers and data for manipulating the re
 - [pulseRedstone](#pulseredstone)
 - [relativeBlockLocation](#relativeblocklocation)
 - [relativeLocation](#relativelocation)
+- [removeSimulatedPlayer](#removesimulatedplayer)
 - [rotateDirection](#rotatedirection)
 - [runAfterDelay](#runafterdelay)
 - [runAtTickTime](#runatticktime)
@@ -56,6 +55,7 @@ Main class for GameTest functions, with helpers and data for manipulating the re
 - [spawn](#spawn)
 - [spawnAtLocation](#spawnatlocation)
 - [spawnItem](#spawnitem)
+- [spawnSimulatedPlayer](#spawnsimulatedplayer)
 - [spawnWithoutBehaviors](#spawnwithoutbehaviors)
 - [spawnWithoutBehaviorsAtLocation](#spawnwithoutbehaviorsatlocation)
 - [spreadFromFaceTowardDirection](#spreadfromfacetowarddirection)
@@ -65,14 +65,14 @@ Main class for GameTest functions, with helpers and data for manipulating the re
 - [succeedOnTick](#succeedontick)
 - [succeedOnTickWhen](#succeedontickwhen)
 - [succeedWhen](#succeedwhen)
-- [succeedWhenBlockTypePresent](#succeedwhenblocktypepresent)
+- [succeedWhenBlockPresent](#succeedwhenblockpresent)
 - [succeedWhenEntityHasComponent](#succeedwhenentityhascomponent)
 - [succeedWhenEntityPresent](#succeedwhenentitypresent)
 - [walkTo](#walkto)
 - [walkToLocation](#walktolocation)
 - [worldBlockLocation](#worldblocklocation)
 - [worldLocation](#worldlocation)
-
+  
 ### **assert**
 `
 assert(condition: boolean, message: string): void
@@ -91,7 +91,7 @@ Tests that the condition specified in _condition_ is true. If not, an error with
 
 ### **assertBlockPresent**
 `
-assertBlockPresent(blockType: mojang-minecraft.BlockType, blockLocation: mojang-minecraft.BlockLocation, isPresent?: true): void
+assertBlockPresent(blockType: mojang-minecraft.BlockType, blockLocation: mojang-minecraft.BlockLocation, isPresent: boolean): void
 `
 
 Tests that a block of the specified type is present at the specified location. If it is not, an exception is thrown.
@@ -100,7 +100,7 @@ Tests that a block of the specified type is present at the specified location. I
 | :--- | :--- | :--- | :---: |
 | **blockType** | [*mojang-minecraft.BlockType*](../mojang-minecraft/BlockType.md) | n/a | Expected block type. |
 | **blockLocation** | [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md) | n/a | Location of the block to test at. |
-| **isPresent** | *boolean* | `true` | If true, this function tests whether a block of the specified type is at the location. If false, tests that a block of the specified type is not present. |
+| **isPresent** | *boolean* | n/a | If true, this function tests whether a block of the specified type is at the location. If false, tests that a block of the specified type is not present. |
 
 
 > [!WARNING]
@@ -131,7 +131,7 @@ return block.getBlockData().getProperty("button_pressed_bit") == 0;
 ```
 ### **assertCanReachLocation**
 `
-assertCanReachLocation(mob: mojang-minecraft.Entity, blockLocation: mojang-minecraft.BlockLocation, canReach?: true): void
+assertCanReachLocation(mob: mojang-minecraft.Entity, blockLocation: mojang-minecraft.BlockLocation, canReach: boolean): void
 `
 
 Tests that an entity can reach a particular location. Depending on the value of canReach, throws an exception if the condition is not met.
@@ -140,7 +140,7 @@ Tests that an entity can reach a particular location. Depending on the value of 
 | :--- | :--- | :--- | :---: |
 | **mob** | [*mojang-minecraft.Entity*](../mojang-minecraft/Entity.md) | n/a | Entity that you wish to test the location against. |
 | **blockLocation** | [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md) | n/a | Structure-relative location to test whether the specified mob can reach. |
-| **canReach** | *boolean* | `true` | If true, tests whether the mob can reach the location. If false, tests whether the mob is not able to reach the location. |
+| **canReach** | *boolean* | n/a | If true, tests whether the mob can reach the location. If false, tests whether the mob is not able to reach the location. |
 
 
 > [!WARNING]
@@ -179,7 +179,7 @@ Tests that a container (e.g., a chest) at the specified location is empty. If no
 
 ### **assertEntityHasArmor**
 `
-assertEntityHasArmor(entityTypeIdentifier: string, armorSlot: number, armorName: string, armorData: number, blockLocation: mojang-minecraft.BlockLocation, hasArmor?: true): void
+assertEntityHasArmor(entityTypeIdentifier: string, armorSlot: number, armorName: string, armorData: number, blockLocation: mojang-minecraft.BlockLocation, hasArmor: boolean): void
 `
 
 Tests that an entity has a specific piece of armor equipped. If not, an error is thrown.
@@ -191,7 +191,7 @@ Tests that an entity has a specific piece of armor equipped. If not, an error is
 | **armorName** | *string* | n/a | Name of the armor to look for. |
 | **armorData** | *number* | n/a | Data value integer to look for. |
 | **blockLocation** | [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md) | n/a | Location of the entity with armor to test for. |
-| **hasArmor** | *boolean* | `true` | Whether or not the entity is expected to have the specified armor equipped. |
+| **hasArmor** | *boolean* | n/a | Whether or not the entity is expected to have the specified armor equipped. |
 
 
 > [!WARNING]
@@ -204,7 +204,7 @@ test.assertEntityHasArmor("minecraft:horse", armorSlotTorso, "diamond_horse_armo
 ```
 ### **assertEntityHasComponent**
 `
-assertEntityHasComponent(entityTypeIdentifier: string, componentIdentifier: string, blockLocation: mojang-minecraft.BlockLocation, hasComponent?: true): void
+assertEntityHasComponent(entityTypeIdentifier: string, componentIdentifier: string, blockLocation: mojang-minecraft.BlockLocation, hasComponent: boolean): void
 `
 
 Tests that an entity has a particular component. If not, an exception is thrown.
@@ -214,7 +214,7 @@ Tests that an entity has a particular component. If not, an exception is thrown.
 | **entityTypeIdentifier** | *string* | n/a | Identifier of the specified entity (e.g., 'minecraft:skeleton'). If the namespace is not specified, 'minecraft:' is assumed. |
 | **componentIdentifier** | *string* | n/a | Identifier of the component to check for. If the namespace is not specified, 'minecraft:' is assumed. |
 | **blockLocation** | [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md) | n/a | Location of the block with a container (for example, a chest.) |
-| **hasComponent** | *boolean* | `true` | Determines whether to test that the component exists, or does not. |
+| **hasComponent** | *boolean* | n/a | Determines whether to test that the component exists, or does not. |
 
 
 > [!WARNING]
@@ -227,15 +227,16 @@ test.assertEntityHasComponent("minecraft:sheep", "minecraft:is_sheared", entityL
 ```
 ### **assertEntityInstancePresent**
 `
-assertEntityInstancePresent(entity: mojang-minecraft.Entity, blockLocation: mojang-minecraft.BlockLocation): void
+assertEntityInstancePresent(entity: mojang-minecraft.Entity, blockLocation: mojang-minecraft.BlockLocation, isPresent: boolean): void
 `
 
-Tests that a particular entity is still present and alive within the GameTest area. If not, an error is thrown.
+Depending on the value for isPresent, tests that a particular entity is present or not present at the specified location. Depending on the value of isPresent, if the entity is found or not found, an error is thrown.
 #### Arguments
 | Parameter | Type | Default Value | Description |
 | :--- | :--- | :--- | :---: |
 | **entity** | [*mojang-minecraft.Entity*](../mojang-minecraft/Entity.md) | n/a | Specific entity to test for. |
 | **blockLocation** | [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md) | n/a | Location of the entity to test for. |
+| **isPresent** | *boolean* | n/a | Whether to test that an entity is present or not present at the specified location. |
 
 
 > [!WARNING]
@@ -243,7 +244,7 @@ Tests that a particular entity is still present and alive within the GameTest ar
 
 ### **assertEntityPresent**
 `
-assertEntityPresent(entityTypeIdentifier: string, blockLocation: mojang-minecraft.BlockLocation, isPresent?: true): void
+assertEntityPresent(entityTypeIdentifier: string, blockLocation: mojang-minecraft.BlockLocation, isPresent: boolean): void
 `
 
 Depending on the value of isPresent, tests for the presence or non-presence of entity of a specified type at a particular location. If the condition is not met, an exception is thrown.
@@ -252,7 +253,7 @@ Depending on the value of isPresent, tests for the presence or non-presence of e
 | :--- | :--- | :--- | :---: |
 | **entityTypeIdentifier** | *string* | n/a | Type of entity to test for (e.g., 'minecraft:skeleton'). If an entity namespace is not specified, 'minecraft:' is assumed. |
 | **blockLocation** | [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md) | n/a | Location of the entity to test for. |
-| **isPresent** | *boolean* | `true` | If true, this function tests whether an entity of the specified type is present. If false, tests that an entity of the specified type is not present. |
+| **isPresent** | *boolean* | n/a | If true, this function tests whether an entity of the specified type is present. If false, tests that an entity of the specified type is not present. |
 
 
 > [!WARNING]
@@ -260,7 +261,7 @@ Depending on the value of isPresent, tests for the presence or non-presence of e
 
 ### **assertEntityPresentInArea**
 `
-assertEntityPresentInArea(entityTypeIdentifier: string, isPresent?: true): void
+assertEntityPresentInArea(entityTypeIdentifier: string, isPresent: boolean): void
 `
 
 Tests that an entity of a specified type is present within the GameTest area. If not, an exception is thrown.
@@ -268,7 +269,7 @@ Tests that an entity of a specified type is present within the GameTest area. If
 | Parameter | Type | Default Value | Description |
 | :--- | :--- | :--- | :---: |
 | **entityTypeIdentifier** | *string* | n/a | Type of entity to test for (e.g., 'minecraft:skeleton'). If an entity namespace is not specified, 'minecraft:' is assumed. |
-| **isPresent** | *boolean* | `true` | If true, this function tests whether an entity of the specified type is present in the GameTest area. If false, tests that an entity of the specified type is not present. |
+| **isPresent** | *boolean* | n/a | If true, this function tests whether an entity of the specified type is present in the GameTest area. If false, tests that an entity of the specified type is not present. |
 
 
 > [!WARNING]
@@ -302,7 +303,7 @@ villagerPos,
 ```
 ### **assertEntityTouching**
 `
-assertEntityTouching(entityTypeIdentifier: string, location: mojang-minecraft.Location, isTouching?: true): void
+assertEntityTouching(entityTypeIdentifier: string, location: mojang-minecraft.Location, isTouching: boolean): void
 `
 
 Depending on the value of isTouching, tests that an entity of a specified type is touching or connected to another entity. If the condition is not met, an exception is thrown.
@@ -311,7 +312,7 @@ Depending on the value of isTouching, tests that an entity of a specified type i
 | :--- | :--- | :--- | :---: |
 | **entityTypeIdentifier** | *string* | n/a | Type of entity to test for (e.g., 'minecraft:skeleton'). If an entity namespace is not specified, 'minecraft:' is assumed. |
 | **location** | [*mojang-minecraft.Location*](../mojang-minecraft/Location.md) | n/a | Location of the entity to test for. |
-| **isTouching** | *boolean* | `true` | If true, this function tests whether the entity is touching the specified location. If false, tests that an entity is not testing the specified location. |
+| **isTouching** | *boolean* | n/a | If true, this function tests whether the entity is touching the specified location. If false, tests that an entity is not testing the specified location. |
 
 
 > [!WARNING]
@@ -319,7 +320,7 @@ Depending on the value of isTouching, tests that an entity of a specified type i
 
 ### **assertIsWaterlogged**
 `
-assertIsWaterlogged(blockLocation: mojang-minecraft.BlockLocation, isWaterlogged?: true): void
+assertIsWaterlogged(blockLocation: mojang-minecraft.BlockLocation, isWaterlogged: boolean): void
 `
 
 Depending on the value of isWaterlogged, tests that a block at a location contains water. If the condition is not met, an error is thrown. Pure water blocks are not considered to be waterlogged.
@@ -327,7 +328,7 @@ Depending on the value of isWaterlogged, tests that a block at a location contai
 | Parameter | Type | Default Value | Description |
 | :--- | :--- | :--- | :---: |
 | **blockLocation** | [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md) | n/a | Location of the block to test for. |
-| **isWaterlogged** | *boolean* | `true` | Whether to test that the block at _position_ is expected to be waterlogged. |
+| **isWaterlogged** | *boolean* | n/a | Whether to test that the block at _position_ is expected to be waterlogged. |
 
 
 > [!WARNING]
@@ -358,7 +359,7 @@ test.assertItemEntityCountIs(Items.feather, expectedFeatherLoc, 0, 1);
 ```
 ### **assertItemEntityPresent**
 `
-assertItemEntityPresent(itemType: mojang-minecraft.ItemType, blockLocation: mojang-minecraft.BlockLocation, searchDistance: number, isPresent?: true): void
+assertItemEntityPresent(itemType: mojang-minecraft.ItemType, blockLocation: mojang-minecraft.BlockLocation, searchDistance: number, isPresent: boolean): void
 `
 
 Depending on the value of isPresent, tests whether a particular item entity is present or not at a particular location. If the condition is not met, an exception is thrown.
@@ -368,7 +369,7 @@ Depending on the value of isPresent, tests whether a particular item entity is p
 | **itemType** | [*mojang-minecraft.ItemType*](../mojang-minecraft/ItemType.md) | n/a | Type of item to test for. |
 | **blockLocation** | [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md) | n/a | Location of the item entity to test for. |
 | **searchDistance** | *number* | n/a | Radius in blocks to look for the item entity. |
-| **isPresent** | *boolean* | `true` | If true, this function tests whether an item entity of the specified type is present. If false, tests that an item entity of the specified type is not present. |
+| **isPresent** | *boolean* | n/a | If true, this function tests whether an item entity of the specified type is present. If false, tests that an item entity of the specified type is not present. |
 
 
 > [!WARNING]
@@ -566,6 +567,19 @@ Returns [*mojang-minecraft.Location*](../mojang-minecraft/Location.md) - A locat
 > [!WARNING]
 > This function can throw errors.
 
+### **removeSimulatedPlayer**
+`
+removeSimulatedPlayer(simulatedPlayer: SimulatedPlayer): void
+`
+
+Removes a simulated player from the world.
+#### Arguments
+| Parameter | Type | Default Value | Description |
+| :--- | :--- | :--- | :---: |
+| **simulatedPlayer** | [*SimulatedPlayer*](SimulatedPlayer.md) | n/a | Simulated player to remove. |
+
+
+
 ### **rotateDirection**
 `
 rotateDirection(direction: number): number
@@ -747,6 +761,23 @@ const fiveEmeralds = new ItemStack(MinecraftItemTypes.emerald, 5, 0);
 test.spawnItem(oneEmerald, new Location(3.5, 3, 1.5));
 test.spawnItem(fiveEmeralds, new Location(1.5, 3, 1.5));
 ```
+### **spawnSimulatedPlayer**
+`
+spawnSimulatedPlayer(blockLocation: mojang-minecraft.BlockLocation, name: string): SimulatedPlayer
+`
+
+Creates a new simulated player within the world.
+#### Arguments
+| Parameter | Type | Default Value | Description |
+| :--- | :--- | :--- | :---: |
+| **blockLocation** | [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md) | n/a | Location where to spawn the simulated player. |
+| **name** | *string* | n/a | Name to give the new simulated player. |
+
+Returns [*SimulatedPlayer*](SimulatedPlayer.md)
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **spawnWithoutBehaviors**
 `
 spawnWithoutBehaviors(entityTypeIdentifier: string, blockLocation: mojang-minecraft.BlockLocation): mojang-minecraft.Entity
@@ -885,9 +916,9 @@ Runs the given callback every tick. When the callback successfully executes, the
 > [!WARNING]
 > This function can throw errors.
 
-### **succeedWhenBlockTypePresent**
+### **succeedWhenBlockPresent**
 `
-succeedWhenBlockTypePresent(blockType: mojang-minecraft.BlockType, blockLocation: mojang-minecraft.BlockLocation, isPresent: boolean): void
+succeedWhenBlockPresent(blockType: mojang-minecraft.BlockType, blockLocation: mojang-minecraft.BlockLocation, isPresent: boolean): void
 `
 
 Depending on the condition of isPresent, tests for the presence of a block of a particular type on every tick. When the specified block of a type is found or not found (depending on isPresent), the test is marked as a success.

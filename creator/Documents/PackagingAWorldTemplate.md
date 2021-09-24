@@ -1,6 +1,8 @@
 ---
+author: neonerz
+ms.author: v-jeffreykim
 title: Packaging a World Template
-author: ReWrite-Media
+ms.prod: gaming
 ---
 # Packaging a World Template
 

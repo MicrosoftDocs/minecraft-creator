@@ -13,13 +13,21 @@ description: Contents of the mojang-minecraft.BlockPermutation class.
 
 Contains the combination of type [*mojang-minecraft.BlockType*](../mojang-minecraft/BlockType.md) and properties (also sometimes called block state) which describe a block (but does not belong to a specific [*mojang-minecraft.Block*](../mojang-minecraft/Block.md)). This type was introduced as of version 1.17.10.21.
 
+## Properties
+### **type**
+`read-only type: BlockType;`
+
+The [*mojang-minecraft.BlockType*](../mojang-minecraft/BlockType.md) that the permutation has.
+
+Type: [*BlockType*](BlockType.md)
+
+
 
 ## Methods
 - [clone](#clone)
 - [getAllProperties](#getallproperties)
 - [getProperty](#getproperty)
 - [getTags](#gettags)
-- [getType](#gettype)
 - [hasTag](#hastag)
   
 ### **clone**
@@ -72,24 +80,13 @@ block.setPermutation(bottomStoneSlab);
 ```
 ### **getTags**
 `
-getTags(): any[]
+getTags(): string[]
 `
 
 Creates a copy of the permutation.
 
-Returns *any*[]
+Returns *string*[]
 
-
-### **getType**
-`
-getType(): BlockType
-`
-
-
-Returns [*BlockType*](BlockType.md) - The [*mojang-minecraft.BlockType*](../mojang-minecraft/BlockType.md) that the permutation has.
-
-> [!WARNING]
-> This function can throw errors.
 
 ### **hasTag**
 `

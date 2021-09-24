@@ -29,7 +29,7 @@ ms.prod: gaming
     // acceleration is in degrees/sec/sec
     "rotation_acceleration" <float/molang> <default:0>
 
-    // drag applied to retard rotation
+    // drag applied to slow down rotation
     // equation is rotation_acceleration += -rotation_rate*rotation_drag_coefficient
     // useful to slow a rotation, or to limit the rotation acceleration
     // Think of a disc that speeds up (acceleration)

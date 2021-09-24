@@ -39,11 +39,11 @@ Type: [*Trigger*](Trigger.md)
 
 
 ### **tameItems**
-`read-only tameItems: any[];`
+`read-only tameItems: string[];`
 
 The list of items that can be used to tame this entity.
 
-Type: *any*[]
+Type: *string*[]
 
 
 
