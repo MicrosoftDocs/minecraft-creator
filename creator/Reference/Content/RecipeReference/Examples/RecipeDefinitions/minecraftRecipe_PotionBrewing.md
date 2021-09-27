@@ -16,7 +16,7 @@ Represents a Potion Brewing Container Recipe.
 |input| potion| Input potion used in the brewing container recipe. |
 |output| potion| Output potion from the brewing container recipe. |
 |reagent| item| Item used in the brewing container recipe with the input potion. |
-|tags|String array | Item used in a Brewing Container Recipe. |
+|tags|String array | Item that can create the Brewing Container Recipe, such as "brewing_stand". |
 
 ## Potion Brewing Container Recipe Example
 

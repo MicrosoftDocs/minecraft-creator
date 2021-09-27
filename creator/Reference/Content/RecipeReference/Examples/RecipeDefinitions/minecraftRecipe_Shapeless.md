@@ -16,9 +16,10 @@ Represents a shapeless crafting recipe.
 
 |Name |Type |Description |
 |:-----------|:-----------|:-----------|
-|ingredients| array of item names|  Items used as input (without a shape) for the recipe. |
-|priority| Integer| Item used as output for the furnace recipe. |
-|result| array of item names| These items are the result. |
+|ingredients| Array of item names|  Items used as input (without a shape) for the recipe. |
+|priority| Integer| Sets the priority order of the recipe. Lower numbers represent a higher priority.|
+|result| Array of item names| These items are the result. |
+|tags|String array |(*optional*) Item that can create the shapeless recipe such as "stonecutter". |
 
 ## Shapeless Recipe Example
 
@@ -48,3 +49,7 @@ Represents a shapeless crafting recipe.
 ### Blaze Powder
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/recipes/blaze_powder.json":::
+
+### Stonecutter Andesite Wall (with optional tag parameter)
+
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/recipes/stonecutter_andesite_wall.json":::
