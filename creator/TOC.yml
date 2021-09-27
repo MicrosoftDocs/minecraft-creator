@@ -168,6 +168,8 @@
           items:
           - name: Item Documentation Homepage
             href: Reference/Content/itemreference/index.yml
+          - name: Item Definition
+            href: Reference/Content/ItemReference/Examples/ItemDefinition.md
           - name: Item Components
             href: Reference/Content/itemreference/Examples/ItemComponents/TOC.yml
         - name: Particle JSON
