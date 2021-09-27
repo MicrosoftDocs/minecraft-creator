@@ -148,7 +148,7 @@ conceptualContent:
             text: Chunker - How to Clear The Nether
           - url: Documents/ChunkerAdvancedMode.md
             itemType: tutorial
-            text: Chunker - Advance Mode
+            text: Chunker - Advanced Mode
     # Test Section
     - title: References  # < 60 chars (optional)
       summary: "Learn how content works with Reference documentation and how GameTest can empower your workflow." # < 160 chars (optional)
