@@ -27,7 +27,7 @@ landingContent:
           - text: minecraft:armor
             url: Examples/ItemComponents/minecraft_armor.md
           - text: minecraft:block_placer
-            url: Examples/ItemComponents/minecraft_block_placer.m
+            url: Examples/ItemComponents/minecraft_block_placer.md
   - title: Item Definitions
     linkLists:
       - linkListType: overview
