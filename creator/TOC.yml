@@ -90,6 +90,8 @@
             href: Documents/DifferencesBetweenBedrockAndJava.md
           - name: "Experimental Features in Minecraft: Bedrock Edition"
             href: Documents/ExperimentalFeaturesToggle.md
+          - name: Survival Spawn Creation
+            href: Documents/SurvivalSpawnCreation.md
         - name: Packaging Content
           items:
           - name: Packaging a Skin Pack
