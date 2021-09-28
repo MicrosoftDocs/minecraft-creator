@@ -82,10 +82,6 @@ Blockbench is a free entity-modeling application for creating working Bedrock Ed
 
 An extension that provides support for files such as .mcfunction, .json and .lang. This extension adds features like completion, validations, formatters, diagnostics, cheat-sheets, code-actions, generation of files, and development tools to help develop Minecraft Bedrock Addons or Minecraft Education Edition. It's recommended that you use the Dark+ theme for the best color highlighting.
 
-### [Cubik Studio](https://cubik.studio/)
-
-Cubik Studio is a purchasable modeling application that supports creating various different types of models, including Bedrock Edition entity models. Cubik Studios has a large number of features and tools, but is one of the few paid applications on this list.
-
 ### [Snowstorm](https://jannisx11.github.io/snowstorm/)
 
 Snowstorm is a small application for Bedrock Edition created by the developer of Blockbench that can be used to create custom particle effects that are usable in-game.
@@ -93,6 +89,10 @@ Snowstorm is a small application for Bedrock Edition created by the developer of
 ## Creating Skins and Resource Packs
 
 Skin and resource pack creation can be done primarily within any image-editing software, but there are also a few helpful applications that can make this process easier.
+
+### [Blockbench](https://blockbench.net/)
+
+Blockbench is also used in many character skin workflows alongside applications like Photoshop or Aseprite. 
 
 ### [Aseprite](https://www.aseprite.org/)
 
