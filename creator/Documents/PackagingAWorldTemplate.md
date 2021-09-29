@@ -1,6 +1,8 @@
 ---
+author: neonerz
+ms.author: v-jeffreykim
 title: Packaging a World Template
-author: ReWrite-Media
+ms.prod: gaming
 ---
 # Packaging a World Template
 
@@ -11,11 +13,11 @@ In this tutorial you will learn the following:
 > - What a world template is and how it can be used.
 > - The folder and file structure necessary for creating world templates.
 
-A world template is a framework that can be used to create new worlds based on the template. Each world created by the template are the same, which is particularly useful for [survival spawns](SurvivalSpawnCreation.md). All worlds in the marketplace are world templates. A world template has the file extension `.mctemplate` and has a slightly different structure compared to a regular (`.mcworld`) world file.
+A world template is a framework that can be used to create new worlds based on the template. Each world created by the template is the same, which is particularly useful for [survival spawns](SurvivalSpawnCreation.md). All worlds in the marketplace are world templates. A world template has the file extension `.mctemplate` and has a slightly different structure compared to a regular (`.mcworld`) world file.
 
-To package a world template you create a `world_template` folder that contains the world files (`db` folder, `level.dat`, etc.) a `manifest.json`, `world_behavior_packs.json`, and `world_resource_packs.json`, your key art as the `world_icon.jpeg`. If you have a behavior pack, place the packaged behavior pack in the `world_template` folder (see [Introduction to Behavior Packs](BehaviorPack.md) for creating behavior packs).
+To package a world template you create a `world_template` folder that contains the world files (a `db` folder with a manifest.json, `level.dat`, etc.), `world_behavior_packs.json`, `world_resource_packs.json`, and your key art as the `world_icon.jpeg`. If you have a behavior pack, place the packaged behavior pack in the `world_template` folder (see [Introduction to Behavior Packs](BehaviorPack.md) for creating behavior packs).
 
-Lastly, you must keep your resource pack and behavior pack folders names to **10 characters or less**, this is due to an issue on Xbox where long paths may cause your resource or behavior pack to not load correctly. We recommend using an acronym of the title of your content for your pack's folder names.
+Lastly, you must keep your resource pack and behavior pack folders names to **10 characters or less**. This is due to an issue on Xbox where long paths may cause your resource or behavior pack to not load correctly. We recommend using an acronym of the title of your content for your pack's folder names.
 
 ## World template folder structure
 
@@ -56,9 +58,8 @@ Create a JSON file named `manifest.json` that defines your content as a world te
 
 If your world requires a resource and/or behavior pack, you have to explicitly define them here using the `uuid` of the pack(s). Both of these JSON files use the same format, but you must be sure you are entering the correct `uuid` in each of the files.
 
-
 - `pack_id` the uuid of the required resource or behavior pack.
-    - Ensure `world_resource_packs.json` only contains required resource packs and `world_behavior_packs.json` only contains required behavior packs.
+- Ensure `world_resource_packs.json` only contains required resource packs and `world_behavior_packs.json` only contains required behavior packs.
 - `version` the version of the resource or behavior pack, defined in the packs' `manifest.json`.
 
 **Template world_behavior/resource_packs.json:**

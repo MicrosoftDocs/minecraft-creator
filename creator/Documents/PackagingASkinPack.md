@@ -1,7 +1,10 @@
 ---
+author: neonerz
+ms.author: v-jeffreykim
 title: Packaging a Skin Pack
-author: ReWrite-Media
+ms.prod: gaming
 ---
+
 # Packaging a Skin Pack
 
 In this tutorial you will learn the following:
@@ -11,7 +14,7 @@ In this tutorial you will learn the following:
 > - The folder and file structure for skin packs in Minecraft: Bedrock Edition.
 > - How to construct the necessary metadata files for a skin pack and how to define skins using them.
 
-# Skin Pack Folder Structure
+### Skin Pack Folder Structure
 
 ![Folder structure of the whole skin pack](Media/PackagingASkinPack/folderstructure.png)
 
@@ -48,7 +51,11 @@ A manifest tells Minecraft general information about your skin pack. Create a JS
 
 A `skins.json` file will define the skins that come with your skin pack. Create a JSON file named `skins.json` at the root of the skin pack. Within it contains the following:
 
+<<<<<<< HEAD
 - `localization_name` and `serialize_name`: these will be the same and are the localization keys whose value will be defined later in [`en_US.lang`](#en_US.lang) with the full key being `skinpack.<localization_name>`. That value will be the title of the pack. The key will also always be prepended to each individual skin's localization key.
+=======
+- `localization_name` and `serialize_name`: these will be the same and are the localization keys whose value will be defined later in [`en_US.lang`](#texts-folder) with the full key being `skinpack.<localization_name>`. That value will be the title of the pack. The key will also always be prepended to each individual skin's localization key.
+>>>>>>> ad0baeec9410643bf9c6dcaf2e22fad96a6295d5
 - `skins`: a collection of definitions, each defining a single skin.
 
 Each individual skin definition will then contain the following:
@@ -101,7 +108,7 @@ Each individual skin definition will then contain the following:
 
 ## Skin Textures
 
-The actual skin textures are PNGs. The file names are referred to in the `skins.json` metadata file. They can only used be at the root of the skin pack. You can use [Blockbench](https://blockbench.net/) to create a usable skin PNG for your skin pack.
+The actual skin textures are PNGs. The file names are referred to in the `skins.json` metadata file. They can be used only at the root of the skin pack. You can use [Blockbench](https://blockbench.net/) to create a usable skin PNG for your skin pack.
 
 ## Texts folder
 
@@ -133,7 +140,7 @@ skin.TemplateSkinPack.TemplateSkin5=Skin Name 5
 
 This file tells Minecraft what languages your skin pack supports. Only English is required. If you want to support other languages you can make other `xx_YY.lang` files and then edit this to tell the game you support them.
 
-The following locales/languages are currently supported: 
+The following locales/languages are currently supported:
 
 - "en_US"
 - "de_DE"

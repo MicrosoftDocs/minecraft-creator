@@ -1,6 +1,9 @@
 ---
+ms.author: v-jeffreykim
 title: Designing Gameplay for Various Devices
-author: ReWrite-Media
+author: neonerz
+ms.prod: gaming
+description: "An overview covering how to design gameplay content for the many devices used to play Minecraft: Bedrock Edition"
 ---
 # Designing Gameplay for Various Devices
 
@@ -40,7 +43,7 @@ If a feature simply *must* rely on a sound that cannot be captioned with a chat 
 
 One striking difference in the way different control schemes interact with the world is when interacting with entities. On touchscreen devices, mob interactions like breeding, feeding, and trading all use a secondary button that appears on the screen when the player looks at the entity. This raises a few special concerns.
 
-First, a map creator should use the `interact_text` or equivalent parameter on any [interaction components](/creator/Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_interact.md) in custom [entity behaviors](EntityBehaviorIntroduction.md) to set the text that appears on the interaction button when touchscreen players look at the entity. This is vital for allowing your players to know that an entity can be interacted with, and allows you to clearly communicate what will happen when they do interact with it.
+First, a map creator should use the `interact_text` or equivalent parameter on any [interaction components](creator/Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_interact.md) in custom [entity behaviors](EntityBehaviorIntroduction.md) to set the text that appears on the interaction button when touchscreen players look at the entity. This is vital for allowing your players to know that an entity can be interacted with, and allows you to clearly communicate what will happen when they do interact with it.
 
 Second, consider building your custom entities with touch-friendly behaviors in mind. For example, if a mob can be interacted with using a certain item, consider giving the mob a high-priority goal to move towards the player when they are holding that item type. This keeps them from unexpectedly walking away while the player is reaching for the interact button and accidentally punching the mob.
 

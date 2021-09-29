@@ -44,7 +44,7 @@ Type: *string*
   
 ### **constructor**
 `
-new ItemStack(itemType: ItemType, amount: number, data?: 0)
+new ItemStack(itemType: ItemType, amount: number, data: number)
 `
 
 Creates a new instance of a stack of items for use in the world.
@@ -53,7 +53,7 @@ Creates a new instance of a stack of items for use in the world.
 | :--- | :--- | :--- | :---: |
 | **itemType** | [*ItemType*](ItemType.md) | n/a | Type of item to create. See the [*mojang-minecraft.MinecraftItemTypes*](../mojang-minecraft/MinecraftItemTypes.md) enumeration for a list of standard item types in Minecraft experiences. |
 | **amount** | *number* | n/a | Number of items to place in the stack, between 1 and 64. Note that certain items can only have one item in the stack. |
-| **data** | *number* | `0` | Optional data value used for creating the item, or 0 if no data value is specified. |
+| **data** | *number* | n/a | Optional data value used for creating the item, or 0 if no data value is specified. |
 
 Returns [*ItemStack*](ItemStack.md)
 

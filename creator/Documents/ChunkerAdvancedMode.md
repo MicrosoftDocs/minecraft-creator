@@ -1,6 +1,9 @@
 ---
+author: neonerz
+ms.author: v-jeffreykim
 title: Chunker - Advanced Mode
-author: ReWrite-Media
+ms.prod: gaming
+description: "Working with Clunker"
 ---
 # Chunker - Advanced Mode
 
@@ -55,11 +58,11 @@ Check out the [survival spawn creation](SurvivalSpawnCreation.md) article for an
 
 To prune a chunk, follow these instructions:
 
-1. Enable Prune chunks outside of a region.
+1. Enable Prune chunks outside of a region. <br/>
 ![List of pruning options in Chunker](Media/Chunker/pruningoptions.png)
-2. Enter the region coordinates of the chunks you want to keep. Any chunks outside of these coordinates will be excluded from the output world.
+2. Enter the region coordinates of the chunks you want to keep. Any chunks outside of these coordinates will be excluded from the output world. <br/>
 ![Coordinates at the bottom-left of the world preview in Chunker](Media/Chunker/pruningcoordinates.png)
-3. After you have input the coordinates, the world preview screen will visually show the region you have selected.
+3. After you have input the coordinates, the world preview screen will visually show the region you have selected. <br/>
 ![Preview of pruning in Chunker](Media/Chunker/pruningpreview.png)
 Convert the world once you’ve finished with your conversion settings.
 
@@ -71,7 +74,7 @@ Convert the world once you’ve finished with your conversion settings.
 Converter settings allow you to enable/disable features of Chunker. It’s recommended to leave these as the default values.
 
 |Setting|Description|
-|-|-|
+|:---|:---|
 |Identifier Validation|Experimental. Whether Chunker should ensure all block identifiers are valid Minecraft blocks. Do not enable this if you are using custom blocks.|
 |Calculate Block Connections|Whether Chunker should emulate block connections. Disabling this may result in blocks, such as fences, not connecting to surrounding blocks.|
 |Convert Items|Whether Chunker should convert the items in the world. If disabled, items in chests, block inventories, and item frames will not be converted.|
@@ -79,7 +82,7 @@ Converter settings allow you to enable/disable features of Chunker. It’s recom
 |In-Game Map Conversion|Whether Chunker should convert the held maps to the new world.|
 |Enable Compact (Bedrock Edition only)|Whether Chunker should run LevelDB compact after the conversion. This will reduce file-size but may cause the conversion to take longer.|
 
-## What's Next? 
+## What's Next?
 
 The [Chunker - World Settings](ChunkerWorldSettings.md) article covers a wide variety of world settings. If you have a Nether dimension that you want to reset in order to have up-to-date generation features, Chunker can be used to do that with Advanced Mode.
 
