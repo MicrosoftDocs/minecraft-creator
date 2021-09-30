@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Commonly Used Tools
 
-There are a wide variety of tools that have been created for the purpose of increasing the efficiency of Minecraft content creation. Tools can help with a variety of things from creating skins, to crafting beautiful custom worlds. This article will explore some of the most commonly used tools currently available and some of there uses.
+There are a wide variety of tools that have been created for the purpose of increasing the efficiency of Minecraft content creation. Tools can help with a variety of things from creating skins, to crafting beautiful custom worlds. This article will explore some of the most commonly used tools currently available and some of their uses.
 
 In this tutorial you will learn the following:
 
@@ -35,7 +35,7 @@ World Painter is an application for Java Edition that allows creators to create 
 
 ### [Amulet](https://www.amuletmc.com/)
 
-Amulet is a utility designed to edit Minecraft maps. It can be a handy tool for world development, having helpful abilities such as replacing blocks in a selected area and the ability to create and remove chunks within a world. There's also a massive variety of community-made custom plugins referred to as "operations" that allow creators to perform a wide variety of tasks. Included below is a list of operations that can be useful for map creation:
+Amulet is a utility tool designed to edit Minecraft maps. It can come in handy for world development, having helpful abilities such as replacing blocks in a selected area and the ability to create and remove chunks within a world. There's also a massive variety of community-made custom plugins referred to as "operations" that allow creators to perform a wide variety of tasks. Included below is a list of operations that can be useful for map creation:
 
 - [Abrightmore's Amulet operations](https://github.com/abrightmoore/Amulet-Editor-Operations)
 - [PREMIEREHELL's Amulet operations](https://github.com/PREMIEREHELL/Amulet-Plugins)

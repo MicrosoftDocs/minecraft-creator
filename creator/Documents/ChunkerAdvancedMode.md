@@ -58,11 +58,11 @@ Check out the [survival spawn creation](SurvivalSpawnCreation.md) article for an
 
 To prune a chunk, follow these instructions:
 
-1. Enable Prune chunks outside of a region.
+1. Enable Prune chunks outside of a region. <br/>
 ![List of pruning options in Chunker](Media/Chunker/pruningoptions.png)
-2. Enter the region coordinates of the chunks you want to keep. Any chunks outside of these coordinates will be excluded from the output world.
+2. Enter the region coordinates of the chunks you want to keep. Any chunks outside of these coordinates will be excluded from the output world. <br/>
 ![Coordinates at the bottom-left of the world preview in Chunker](Media/Chunker/pruningcoordinates.png)
-3. After you have input the coordinates, the world preview screen will visually show the region you have selected.
+3. After you have input the coordinates, the world preview screen will visually show the region you have selected. <br/>
 ![Preview of pruning in Chunker](Media/Chunker/pruningpreview.png)
 Convert the world once you’ve finished with your conversion settings.
 

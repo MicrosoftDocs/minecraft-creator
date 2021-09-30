@@ -197,12 +197,12 @@ You can have one of each type as needed, though they are all optional.
     }
 ```
 
-If you do not set it, it will instead use the value for the fog setting lower priority then it. Described more in detail later in the ["Active Fog Stack"](#active-fog-stack) section.
+If you do not set a value, it will instead use the one set for the fog setting with lower priority than the former. Described more in detail later in the ["Active Fog Stack"](#active-fog-stack) section.
 
 In each coefficient setting type, you can set the following variables:
 
-- `scattering`: how much of will the fog spread the RGB of the light. Either can be set as an array of 3 multipliers from [0.0, 1.0] or a Hex color value.
-- `absorption`: how much of will the fog absorb the RGB of the light. Either can be set as an array of 3 multipliers from [0.0, 1.0] or a Hex color value.
+- `scattering`: how much of the RGB of the light the fog will spread. Either can be set as an array of 3 multipliers from [0.0, 1.0] or a Hex color value.
+- `absorption`: how much of the RGB of the light the fog will absorb. Either can be set as an array of 3 multipliers from [0.0, 1.0] or a Hex color value.
 
 ## Active Fog Stack
 
