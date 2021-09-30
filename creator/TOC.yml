@@ -72,10 +72,10 @@
             items:
               - name: Chunker - Overview
                 href: Documents/ChunkerOverview.md
-              - name: Chunker - World Settings
-                href: Documents/ChunkerWorldSettings.md
               - name: Chunker - Advanced Mode
                 href: Documents/ChunkerAdvancedMode.md
+              - name: Chunker - World Settings
+                href: Documents/ChunkerWorldSettings.md
               - name: Chunker - The Nether
                 href: Documents/ChunkerTheNether.md
     - name: Articles

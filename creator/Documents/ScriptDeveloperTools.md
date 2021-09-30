@@ -133,9 +133,9 @@ By default, Bedrock Dedicated Servers are not configured to allow debug connecti
 
 These settings configure debugging on Bedrock Dedicated Server:
 
- * `allow-outbound-script-debugging` (true/false) - enables the /script debugger connect command. Defaults to false.
- * `allow-inbound-script-debugging` (true false) - enables the /script debugger listen command (and the opening of ports on a server).  Defaults to false.
- * `force-inbound-debug-port` (number) - Locks the inbound debug port to a particular port. This will set the default script debugging port and prevent a user of the /script debugger listen command from specifying an alternate port.
+* `allow-outbound-script-debugging` (true/false) - enables the /script debugger connect command. Defaults to false.
+* `allow-inbound-script-debugging` (true false) - enables the /script debugger listen command (and the opening of ports on a server).  Defaults to false.
+* `force-inbound-debug-port` (number) - Locks the inbound debug port to a particular port. This will set the default script debugging port and prevent a user of the /script debugger listen command from specifying an alternate port.
 
 For this project, we can simply set allow-inbound-script-debugging to true.
 
