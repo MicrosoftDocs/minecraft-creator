@@ -1,7 +1,10 @@
 ---
+author: neonerz
+ms.author: v-jeffreykim
 title: Particle Effects
-author: ReWrite-Media
+ms.prod: gaming
 ---
+
 # Particle Effects
 
 In this tutorial you will learn the following:
