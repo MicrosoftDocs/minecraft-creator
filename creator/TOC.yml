@@ -16,6 +16,8 @@
               href: Documents/CustomBlock.md
             - name: Fog in Resource Packs
               href: Documents/FogInResourcePacks.md
+            - name: Particle Effects
+              href: Documents/ParticleEffects.md
         - name: Commands and Command Blocks
           items:
           - name: Introduction to Commands
