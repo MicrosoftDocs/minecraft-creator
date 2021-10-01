@@ -14,6 +14,8 @@
               href: Documents/BehaviorPack.md
             - name: Adding a Custom Block
               href: Documents/CustomBlock.md
+            - name: Fog in Resource Packs
+              href: Documents/FogInResourcePacks.md
         - name: Commands and Command Blocks
           items:
           - name: Introduction to Commands
@@ -92,12 +94,16 @@
             href: Documents/ExperimentalFeaturesToggle.md
           - name: Survival Spawn Creation
             href: Documents/SurvivalSpawnCreation.md
+          - name: Preparing Raw Text for Localization
+            href: PreparingRawTextForLocalization.md
         - name: Packaging Content
           items:
           - name: Packaging a Skin Pack
             href: Documents/PackagingASkinPack.md
           - name: Packaging a WorldTemplate
             href: Documents/PackagingAWorldTemplate.md
+          - name: 'Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition'
+            href: Documents/ConvertingTexturePacks.md
     - name: Reference Documentation
       items:
       - name: GameTest
