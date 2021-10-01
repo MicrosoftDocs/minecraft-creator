@@ -51,7 +51,11 @@ A manifest tells Minecraft general information about your skin pack. Create a JS
 
 A `skins.json` file will define the skins that come with your skin pack. Create a JSON file named `skins.json` at the root of the skin pack. Within it contains the following:
 
+<<<<<<< HEAD
+- `localization_name` and `serialize_name`: these will be the same and are the localization keys whose value will be defined later in [`en_US.lang`](#en_US.lang) with the full key being `skinpack.<localization_name>`. That value will be the title of the pack. The key will also always be prepended to each individual skin's localization key.
+=======
 - `localization_name` and `serialize_name`: these will be the same and are the localization keys whose value will be defined later in [`en_US.lang`](#texts-folder) with the full key being `skinpack.<localization_name>`. That value will be the title of the pack. The key will also always be prepended to each individual skin's localization key.
+>>>>>>> ad0baeec9410643bf9c6dcaf2e22fad96a6295d5
 - `skins`: a collection of definitions, each defining a single skin.
 
 Each individual skin definition will then contain the following:
@@ -104,7 +108,7 @@ Each individual skin definition will then contain the following:
 
 ## Skin Textures
 
-The actual skin textures are PNGs. The file names are referred to in the `skins.json` metadata file. They can only used be at the root of the skin pack. You can use [Blockbench](https://blockbench.net/) to create a usable skin PNG for your skin pack.
+The actual skin textures are PNGs. The file names are referred to in the `skins.json` metadata file. They can be used only at the root of the skin pack. You can use [Blockbench](https://blockbench.net/) to create a usable skin PNG for your skin pack.
 
 ## Texts folder
 

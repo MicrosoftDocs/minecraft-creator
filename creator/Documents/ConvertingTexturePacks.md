@@ -24,7 +24,7 @@ It is recommended that the following be completed before beginning this tutorial
 
 ## Texture Pack Differences Between Java and Bedrock Editions
 
-In general, the differences between texture packs for Java Edition versus Bedrock Edition are as follows:
+In general, the differences between texture packs for Java Edition and Bedrock Edition are as follows:
 
 - The directory structure
 - The naming conventions (filenames)
@@ -45,7 +45,7 @@ In general, the differences between texture packs for Java Edition versus Bedroc
 
 ## Best Practices
 
-Start with a copy of a valid custom Java Edition texture pack and a copy of the vanilla Bedrock Edition texture pack. The conversion process will replace the vanilla Bedrock Edition texture files with custom texture files from the Java Edition pack. There are some required Bedrock Edition texture files that have different file formats and file types, and some that don’t exist in the Java Edition pack that will need to be created. Advanced customizations in the Java Edition pack may or may not be possible to duplicate in the Bedrock Edition pack and aren’t within the scope of this article.
+Start with a copy of a valid custom Java Edition texture pack and a copy of the vanilla Bedrock Edition texture pack. The conversion process will replace the vanilla Bedrock Edition texture files with custom texture files from the Java Edition pack. There are some required Bedrock Edition texture files that have different file formats and file types, and some that don’t exist in the Java Edition pack will need to be created. Advanced customizations in the Java Edition pack may or may not be possible to duplicate in the Bedrock Edition pack and aren’t within the scope of this article.
 
 - Obtain the most current version of the vanilla Bedrock Edition texture pack for reference.
 - [Download for the most recent Bedrock Edition resource pack](https://aka.ms/resourcepacktemplate), which contains textures.

@@ -49,22 +49,22 @@ Game rules are settings that can be modified in-game by operators using the `/ga
 |Setting|Description|
 |:---|:---|
 |Command Block Output|Whether command blocks should output to chat for online operators.|
-|Command Blocks Enabled|(Bedrock Edition only) Whether command blocks are enabled in this world. Setting to false will cause command blocks to not execute.|
+|Command Blocks Enabled|Whether command blocks are enabled in this world. Setting to false will cause command blocks to not execute.|
 |Commands Enabled|Whether commands (commonly referred to as cheats) should be allowed in this world.|
 |Do Daylight Cycle|Whether the time of day should cycle. If disabled, the time of day will not change.|
 |Do Entity Drops|Whether items can be removed from an entity. For example, if disabled, players will not be able to remove items from an item frame.|
 |Do Fire Tick|Whether fire should spread within this world. If disabled, fire will not spread to nearby flammable materials.|
-|Do Immediate Respawn|(Bedrock Edition only) If enabled, players will instantly respawn without seeing the traditional respawn screen.|
-|Do Insomnia|(Bedrock Edition only) If disabled, phantoms will not spawn during the night.|
+|Do Immediate Respawn|If enabled, players will instantly respawn without seeing the traditional respawn screen.|
+|Do Insomnia|If disabled, phantoms will not spawn during the night.|
 |Do Mob Loot|Whether mobs should drop their loot when killed.|
 |Do Mob Spawning|Whether mobs should spawn naturally in the world.|
 |Do Tile Drops|Whether tiles (blocks) should drop their items when destroyed.|
 |Do Weather Cycle|Whether the world should cycle weather. If disabled, the weather in the world will not change.|
-|Drowning Damage|(Bedrock Edition only) Whether entities can take damage from running out of air (drowning).|
-|Fall Damage|(Bedrock Edition only) Whether entities will take damage from falling from heights.|
+|Drowning Damage|Whether entities can take damage from running out of air (drowning).|
+|Fall Damage|Whether entities will take damage from falling from heights.|
 |Fire Damage|(Bedrock Edition only) Whether entities will be damaged when ignited.|
-|Force Gamemode|(Bedrock only) If enabled, all players will be forced to remain in the worlds default game mode.|
-|Function Command Limit|(Bedrock Edition only) The maximum number of simultaneous commands that can be executed by a function file.|
+|Force Gamemode|If enabled, all players will be forced to remain in the worlds default game mode.|
+|Function Command Limit|The maximum number of simultaneous commands that can be executed by a function file.|
 |Keep Inventory|Whether players should keep their inventory on death.|
 |Mob Griefing|Whether mobs can grief the world (destroy/place blocks).|
 |Natural Regeneration|Whether a player will naturally regenerate health when hunger is full.|

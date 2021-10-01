@@ -72,10 +72,10 @@
             items:
               - name: Chunker - Overview
                 href: Documents/ChunkerOverview.md
-              - name: Chunker - World Settings
-                href: Documents/ChunkerWorldSettings.md
               - name: Chunker - Advanced Mode
                 href: Documents/ChunkerAdvancedMode.md
+              - name: Chunker - World Settings
+                href: Documents/ChunkerWorldSettings.md
               - name: Chunker - The Nether
                 href: Documents/ChunkerTheNether.md
     - name: Articles
@@ -90,6 +90,8 @@
             href: Documents/DifferencesBetweenBedrockAndJava.md
           - name: "Experimental Features in Minecraft: Bedrock Edition"
             href: Documents/ExperimentalFeaturesToggle.md
+          - name: Survival Spawn Creation
+            href: Documents/SurvivalSpawnCreation.md
         - name: Packaging Content
           items:
           - name: Packaging a Skin Pack
@@ -168,6 +170,8 @@
           items:
           - name: Item Documentation Homepage
             href: Reference/Content/itemreference/index.yml
+          - name: Item Definition
+            href: Reference/Content/ItemReference/Examples/ItemDefinition.md
           - name: Item Components
             href: Reference/Content/itemreference/Examples/ItemComponents/TOC.yml
         - name: Particle JSON
