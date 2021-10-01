@@ -15,7 +15,7 @@ Represents a recipe that is to be used with a furnace. `Input` items will burn a
 |:-----------|:-----------|:-----------|
 |input| item names| Items used as input for the furnace recipe. |
 |output| item names| Items used as output for the furnace recipe. |
-|tags |String array| Item used as input for the furnace recipe. |
+|tags |String array|  Item that can create the furnace recipe, such as "furnace". |
 
 ## Furnace Recipe Example
 

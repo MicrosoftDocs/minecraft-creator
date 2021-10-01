@@ -64,7 +64,7 @@ To use debugger capabilities, you’ll want to install the Minecraft Bedrock Edi
 If you want to connect Minecraft Bedrock Edition client to Visual Studio Code running on the same machine (this is the most common scenario), you will need to exempt the Minecraft client from UWP loopback restrictions. To do this, run the following from a command prompt or the Start | Run app.
 
 ```powershell
-CheckNetIsolation.exe LoopbackExempt –a –p=S-1-15-2-1958404141-86561845-1752920682-3514627264-368642714-62675701-733520436
+CheckNetIsolation.exe LoopbackExempt -a -p=S-1-15-2-1958404141-86561845-1752920682-3514627264-368642714-62675701-733520436
 ```
 
 ![checknetisolation command being run](Media/ScriptDeveloperTools/commandprompt.png)
@@ -133,9 +133,9 @@ By default, Bedrock Dedicated Servers are not configured to allow debug connecti
 
 These settings configure debugging on Bedrock Dedicated Server:
 
- * `allow-outbound-script-debugging` (true/false) - enables the /script debugger connect command. Defaults to false.
- * `allow-inbound-script-debugging` (true false) - enables the /script debugger listen command (and the opening of ports on a server).  Defaults to false.
- * `force-inbound-debug-port` (number) - Locks the inbound debug port to a particular port. This will set the default script debugging port and prevent a user of the /script debugger listen command from specifying an alternate port.
+* `allow-outbound-script-debugging` (true/false) - enables the /script debugger connect command. Defaults to false.
+* `allow-inbound-script-debugging` (true false) - enables the /script debugger listen command (and the opening of ports on a server).  Defaults to false.
+* `force-inbound-debug-port` (number) - Locks the inbound debug port to a particular port. This will set the default script debugging port and prevent a user of the /script debugger listen command from specifying an alternate port.
 
 For this project, we can simply set allow-inbound-script-debugging to true.
 

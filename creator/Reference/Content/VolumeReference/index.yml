@@ -28,6 +28,10 @@ landingContent:
             url: Examples/VolumeComponents/minecraftVolume_bounds.md
           - text: "minecraft:fog"
             url: Examples/VolumeComponents/minecraftVolume_fog.md
+          - text: "minecraft:on_actor_enter"
+            url: Examples/VolumeComponents/minecraftVolume_on_actor_enter.md
+          - text: "minecraft:on_actor_leave"
+            url: Examples/VolumeComponents/minecraftVolume_on_actor_leave.md
   # Card (optional)
   - title: Volume Definitions
     linkLists:

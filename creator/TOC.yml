@@ -14,6 +14,8 @@
               href: Documents/BehaviorPack.md
             - name: Adding a Custom Block
               href: Documents/CustomBlock.md
+            - name: Fog in Resource Packs
+              href: Documents/FogInResourcePacks.md
         - name: Commands and Command Blocks
           items:
           - name: Introduction to Commands
@@ -72,10 +74,10 @@
             items:
               - name: Chunker - Overview
                 href: Documents/ChunkerOverview.md
-              - name: Chunker - World Settings
-                href: Documents/ChunkerWorldSettings.md
               - name: Chunker - Advanced Mode
                 href: Documents/ChunkerAdvancedMode.md
+              - name: Chunker - World Settings
+                href: Documents/ChunkerWorldSettings.md
               - name: Chunker - The Nether
                 href: Documents/ChunkerTheNether.md
     - name: Articles
@@ -90,12 +92,18 @@
             href: Documents/DifferencesBetweenBedrockAndJava.md
           - name: "Experimental Features in Minecraft: Bedrock Edition"
             href: Documents/ExperimentalFeaturesToggle.md
+          - name: Survival Spawn Creation
+            href: Documents/SurvivalSpawnCreation.md
         - name: Packaging Content
           items:
           - name: Packaging a Skin Pack
             href: Documents/PackagingASkinPack.md
           - name: Packaging a WorldTemplate
             href: Documents/PackagingAWorldTemplate.md
+          - name: 'Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition'
+            href: Documents/ConvertingTexturePacks.md
+          - name: Preparing Raw Text for Localization
+            href: Documents/PreparingRawTextForLocalization.md
     - name: Reference Documentation
       items:
       - name: GameTest
@@ -168,6 +176,8 @@
           items:
           - name: Item Documentation Homepage
             href: Reference/Content/itemreference/index.yml
+          - name: Item Definition
+            href: Reference/Content/ItemReference/Examples/ItemDefinition.md
           - name: Item Components
             href: Reference/Content/itemreference/Examples/ItemComponents/TOC.yml
         - name: Particle JSON
