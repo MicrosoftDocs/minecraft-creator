@@ -10,6 +10,8 @@ description: A tutorial covering how to create a custom entity model utilizing t
 
 If you are new to Minecraft Add-On development, creating your first working behavior pack and custom entity can take a lot of time and research. The Minecraft Entity Wizard for Blockbench aims to make it as easy as possible to do these first steps, to create a custom entity and to add it to your world. From there, you can step by step build on your entity, change the model, or add your own behavior.
 
+### Building a Grizzly Bear with the Minecraft Entity Wizard
+
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMmJb]
 
 Blockbench itself is a 3D modeling program with native support for many Minecraft 3D model formats. The Entity Wizard is a plugin for Blockbench that can be installed through the built-in plugin store. Once you have created your basic entity in the Entity Wizard, you can continue to use Blockbench to modify the model, and you can edit the behavior in an external program (more on that later).
