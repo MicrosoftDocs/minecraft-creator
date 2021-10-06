@@ -24,7 +24,7 @@ Query Functions are boolean expressions that allow you to query for values owned
 |:-----------|:-----------|
 | query.above_top_solid| Returns the height of the block immediately above the highest solid block at the input (x,z) position |
 | query.actor_count| Returns the number of actors rendered in the last frame |
-| query.all_animations_finished| Only valid in an animation controller.  Returns 1.0 if all a.nimations in the current animation controller state have played through at least once, else it returns 0.0 |
+| query.all_animations_finished| Only valid in an animation controller. Returns 1.0 if all animations in the current animation controller state have played through at least once, else it returns 0.0 |
 | query.all_tags| Returns if the item or block has all of the tags specified |
 | query.anim_time| Returns the time in seconds since the current animation started, else 0.0 if not called within an animation |
 | query.any_animation_finished| Only valid in an animation controller.  Returns 1.0 if any animation in the current animation controller state has played through at least once, else it returns 0.0 |
