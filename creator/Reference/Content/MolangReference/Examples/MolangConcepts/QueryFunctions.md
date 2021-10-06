@@ -24,7 +24,7 @@ Query Functions are boolean expressions that allow you to query for values owned
 |:-----------|:-----------|
 | query.above_top_solid| Returns the height of the block immediately above the highest solid block at the input (x,z) position |
 | query.actor_count| Returns the number of actors rendered in the last frame |
-| query.all_animations_finished| Only valid in an animation controller.  Returns 1.0 if all animations in the current animation controller state have played through at least once, else it returns 0.0 |
+| query.all_animations_finished| Only valid in an animation controller.  Returns 1.0 if all a.nimations in the current animation controller state have played through at least once, else it returns 0.0 |
 | query.all_tags| Returns if the item or block has all of the tags specified |
 | query.anim_time| Returns the time in seconds since the current animation started, else 0.0 if not called within an animation |
 | query.any_animation_finished| Only valid in an animation controller.  Returns 1.0 if any animation in the current animation controller state has played through at least once, else it returns 0.0 |
@@ -108,8 +108,8 @@ Query Functions are boolean expressions that allow you to query for values owned
 | query.is_casting| Returns 1.0 if the entity is casting, else it returns 0.0 |
 | query.is_celebrating| Returns 1.0 if the entity is celebrating, else it returns 0.0 |
 | query.is_celebrating_special| Returns 1.0 if the entity is doing a special celebration, else it returns 0.0 |
-| query.is_charged| Returns 1.0 if the entity is charged, else it returns 0.0 |
-| query.is_charging| Returns 1.0 if the entity is charging, else it returns 0.0 |
+| query.is_charged| This query looks for data coming from `"minecraft.behavior.ranged_attack"`. Returns 1.0 if the entity is charged, else it returns 0.0 |
+| query.is_charging| This query looks for data coming from `"minecraft.behavior.charge_attack"`. Returns 1.0 if the entity is charging, else it returns 0.0 |
 | query.is_chested| Returns 1.0 if the entity has chests attached to it, else it returns 0.0 |
 | query.is_critical| Returns 1.0 if the entity is critical, else it returns 0.0 |
 | query.is_dancing| Returns 1.0 if the entity is dancing, else it returns 0.0 |
@@ -180,7 +180,7 @@ Query Functions are boolean expressions that allow you to query for values owned
 | query.item_in_use_duration| Returns the amount of time an item has been in use in seconds up to the maximum duration, else 0.0 if it doesn't make sense |
 | query.item_is_charged| Takes one optional hand slot as a parameter (0 or 'main_hand' for main hand, 1 or 'off_hand' for off hand), and returns 1.0 if the item is charged in the requested slot (defaulting to the main hand if no parameter is supplied), otherwise returns 0.0. |
 | query.item_max_use_duration| Returns the maximum amount of time the item can be used, else 0.0 if it doesn't make sense |
-| query.item_remaining_use_duration| Returns the amount of time an item has left to use, else 0.0 if it doesn't make sense. Item queried is specified by the slot name 'main_hand' or 'off_hand'. Time remaining is normalized using the normalization value, only if one is given, else it is returned in seconds. |
+| query.item_remaining_use_duration| Returns the amount of time an item has left to use, else 0.0 if it doesn't make sense. Item queried is specified by the slot name 'main_hand' or 'off_hand'. Time remaining is normalized using the normalization value, only if one is given, else it is returned in seconds. For example: How far back a crossbow is pulled |
 | query.item_slot_to_bone_name| Query.item_slot_to_bone_name requires one parameter: the name of the equipment slot.  This function returns the name of the bone this entity has mapped to that slot. |
 | query.key_frame_lerp_time| Returns the ratio between the previous and next key frames |
 | query.last_frame_time| Returns the time in *seconds* of the last frame.  If an argument is passed, it is assumed to be the number of frames in the past that you wish to query.  `query.last_frame_time` (or the equivalent `query.last_frame_time(0)`) will return the frame time of the frame before the current one.  `query.last_frame_time(1)` will return the frame time of two frames ago.  Currently we store the history of the last 30 frames, although note that this may change in the future.  Passing an index more than the available data will return the oldest frame stored. |
