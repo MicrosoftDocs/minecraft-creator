@@ -2,6 +2,7 @@
 
 title: "Minecraft: Bedrock Edition Creator Documentation" # < 60 chars
 summary: "Learn how to create and design unique experiences with Add-Ons, discover the latest features and develop your skills as a creator in Minecraft: Bedrock Edition."
+
 metadata:
   title: "Minecraft: Bedrock Edition Creator Documentation" # Required; page title shown in search results < 60 chars
   description: "Learn how to create and design unique experiences with Add-Ons, discover the latest features and develop your skills as a creator in Minecraft: Bedrock Edition." # < 160 chars
@@ -216,7 +217,8 @@ conceptualContent:
           - url: Reference/Content/FogsReference/Examples/FogsIntroduction.md
             itemType: overview
             text: Introduction to Fogs
-  # tools section (optional)
+
+# tools section (optional)
 tools:
   title: Tools and Vanilla Packs # < 60 chars (optional)
   summary: Get started with some of the most commonly used tools for creating content. # < 160 chars (optional)
