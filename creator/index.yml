@@ -218,23 +218,10 @@ conceptualContent:
             itemType: overview
             text: Introduction to Fogs
 
-# tools section (optional)
+# Tools Section
 tools:
-  title: Tools and Vanilla Packs # < 60 chars (optional)
-  summary: Get started with some of the most commonly used tools for creating content. # < 160 chars (optional)
+  title: Tools and Vanilla Packs
+  summary: Get started with some of the most commonly used tools for creating content.
   items:
-    # Card
     - title: Visual Studio Code
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc:
       url: "https://code.visualstudio.com/Download"
-    # Card
-    - title: Vanilla Behavior Pack
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc:
-      url: "https://aka.ms/behaviorpacktemplate"
-    # Card
-    - title: Vanilla Resource Pack
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc:
-      url: "https://aka.ms/resourcepacktemplate"
