@@ -49,7 +49,6 @@ productDirectory:
   items:
     # Card
     - title: Getting Started with Add-On Development
-      # imageSrc should be square in ratio with no whitespace
       imageSrc: images/Add-Resource-Pack.png
       summary: Working with Add-Ons in Minecraft:Bedrock Edition is easy! Learn how to get started
       url: Documents/GettingStarted.md
@@ -226,3 +225,9 @@ tools:
     - title: Visual Studio Code
       imageSrc: images/VSCode.png
       url: "https://code.visualstudio.com/Download"
+    - title: Vanilla Behavior Pack
+      imageSrc: images/ResourcePack64.png
+      url: "https://aka.ms/behaviorpacktemplate"
+    - title: Vanilla Resource Pack
+      imageSrc: images/ResourcePack64.png
+      url: "https://aka.ms/resourcepacktemplate"
