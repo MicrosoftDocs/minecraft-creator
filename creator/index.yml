@@ -224,4 +224,5 @@ tools:
   summary: Get started with some of the most commonly used tools for creating content.
   items:
     - title: Visual Studio Code
+      imageSrc: images/VSCode.png
       url: "https://code.visualstudio.com/Download"
