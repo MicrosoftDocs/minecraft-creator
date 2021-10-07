@@ -218,7 +218,7 @@ conceptualContent:
             text: Introduction to Fogs
   # tools section (optional)
   tools:
-  - title: Tools and Vanilla Packs # < 60 chars (optional)
+    title: Tools and Vanilla Packs # < 60 chars (optional)
     summary: Get started with some of the most commonly used tools for creating content. # < 160 chars (optional)
     items:
     # Card
