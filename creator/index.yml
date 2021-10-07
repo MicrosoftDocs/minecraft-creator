@@ -223,15 +223,17 @@ tools:
   title: Tools and Vanilla Packs # < 60 chars (optional)
   summary: Get started with some of the most commonly used tools for creating content. # < 160 chars (optional)
   items:
-  # Card
+    # Card
     - title: Visual Studio Code
       # imageSrc should be square in ratio with no whitespace
       imageSrc:
       url: "https://code.visualstudio.com/Download"
+    # Card
     - title: Vanilla Behavior Pack
       # imageSrc should be square in ratio with no whitespace
       imageSrc:
       url: "https://aka.ms/behaviorpacktemplate"
+    # Card
     - title: Vanilla Resource Pack
       # imageSrc should be square in ratio with no whitespace
       imageSrc:
