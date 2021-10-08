@@ -42,11 +42,11 @@ Once you have downloaded and installed [Blockbench](https://blockbench.net), you
 > [!TIP]
 > If you do not want to install the app, or you are using a mobile device like a tablet, you can also use the plugin in the [Blockbench web app](https://web.blockbench.net). Most parts of the program work the same in the web app, but saving files requires a few extra steps.
 
-### Adding the Bedrock Entity Wizard
+### Adding the Minecraft Entity Wizard
 
 1. In Blockbench, navigate to **File** and select **Plugins**.
 1. Switch the tab to the **Available** tab.
-1. Locate the plugin **Bedrock Entity Wizard**, either by scrolling through the list of available plugins, or via the search box.
+1. Locate the plugin **Minecraft Entity Wizard**, either by scrolling through the list of available plugins, or via the search box.
 1. Click on **Install** to add the plugin to Blockbench.
 
 ## The Wizard
