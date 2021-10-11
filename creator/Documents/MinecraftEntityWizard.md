@@ -44,7 +44,7 @@ Once you have downloaded and installed [Blockbench](https://blockbench.net), you
 > [!TIP]
 > If you do not want to install the app, or you are using a mobile device like a tablet, you can also use the plugin in the [Blockbench web app](https://web.blockbench.net). Most parts of the program work the same in the web app, but saving files requires a few extra steps.
 
-### Adding the Bedrock Entity Wizard
+### Adding the Minecraft Entity Wizard
 
 1. In Blockbench, navigate to **File** and select **Plugins**.
 1. Switch the tab to the **Available** tab.
@@ -111,7 +111,7 @@ There are three ways to define the spawn egg:
 
 You have now entered all the information that is necessary to create the entity. The Next Steps tab allows you to select an export method to create a resource and behavior pack to load the entity into your world.
 
-:::image type="content" source="Media/MinecraftEntityWizard/MinecraftEntityWizard_export.png" alt-text="Blockbench Entity Wizard showcasing the Next Steps tab":::
+:::image type="content" source="Media/MinecraftEntityWizard/MinecraftEntityWizard_export.png" alt-text="Minecraft Entity Wizard showcasing the Next Steps tab":::
 
 In the Blockbench desktop app, there are up to three methods available to save your pack;
 
