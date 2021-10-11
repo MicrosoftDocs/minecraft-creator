@@ -40,7 +40,7 @@ The manifest file contains all the basic information about the pack that Minecra
 | Name| Type| Description |
 |:-----------|:-----------|:-----------|
 |description| String| This is a short description of the module. This is not user-facing at the moment but is a good place to remind yourself why the module is defined. |
-|type| String|  This is the type of the module. Can be any of the following: resources, data, client_data, interface, world_template. |
+|type| String|  This is the type of the module. Can be any of the following: `resources`, `data`, `client_data`, `interface`, `world_template` or `javascript`. |
 |uuid| String| This is a unique identifier for the module in the same format as the pack's UUID in the header. This should be different from the pack's UUID, and different for every module. |
 | version| Vector [a, b, c]| This is the version of the module in the same format as the pack's version in the header. This can be used to further identify changes in your pack. |
 
