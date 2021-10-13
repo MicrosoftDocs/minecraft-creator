@@ -12,6 +12,8 @@ Commands are specific instructions that Minecraft: Bedrock Edition will carry ou
 
 The goal of commands with regards to content creation is to change or react to the environment around the player. Rather than having a static world, the player would be able to perform a task that a command system could detect and respond to in some way. An example of this is detecting if a player has placed a colored wool block at a specific location for a “Complete the Monument” style of map.
 
+:::image type="content" source="Media/Commands/Introduction-to-Commands.jpg" alt-text="Image showcasing four different time of day settings":::
+
 In this tutorial you will learn the following:
 
 > [!div class="checklist"]

@@ -7,6 +7,10 @@ ms.prod: gaming
 
 # Particle Effects
 
+From firework rockets leaving smoke behind, to bubbles coming out of a fish's mouth, Particles are a great way to add special effects to content within Minecraft: Bedrock Edition.
+
+:::image type="content" source="Media/ParticleEffects/Particle-Effects.jpg" alt-text="Image showing Alex holding a wand with an array of sparks and flairs emitting from it":::
+
 In this tutorial you will learn the following:
 
 > [!div class="checklist"]
@@ -156,9 +160,9 @@ There are three main ways to play particle effects in-game:
 
 ### Commands
 
-This is the simplest way to test an effect. Use the `/particle` command to summon a particle emitter into the world. 
+This is the simplest way to test an effect. Use the `/particle` command to summon a particle emitter into the world.
 
-> [!NOTE] 
+> [!NOTE]
 > Because particle effects are entirely client-side and Commands are run server-side, the server is not aware of particle effects. This means that you won’t get an error message if you try to play a particle effect that doesn’t exist.
 
 Here is an example command: The three tildes at the end of the command indicate the position, in this case the exact position where the command was executed, so the feet position of the player or the center of the command block running the command.
@@ -181,9 +185,9 @@ Add this to your client entity file inside the description object:
 
 Particle effect keyframes can be added to an animation in Blockbench. Click the **Animate Effects** button above the timeline and add a keyframe to the **Particle** channel. Now enter the short name (as defined in the client entity file) into the **Effect** input of the keyframe panel.
 
-You can also specify a locator in the entity file where the particle effect will appear. You can also assign a variable in the **Script** input that can later be used inside the particle effect. 
+You can also specify a locator in the entity file where the particle effect will appear. You can also assign a variable in the **Script** input that can later be used inside the particle effect.
 
-Example: 
+Example:
 
 ```json
 variable.custom_size = 3.14;

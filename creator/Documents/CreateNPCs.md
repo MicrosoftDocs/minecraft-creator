@@ -9,6 +9,8 @@ description: "A tutorial covering how to create a Non-Playable Character (NPC) w
 
 Non-Player Characters (NPCs) are characters in Minecraft that are not controlled by the player. NPCs can perform commands and deliver dialog when players interact with them, making them excellent tools for creating amazing narrative and gameplay experiences in Minecraft.
 
+:::image type="content" source="Media/NPCs/Create-a-Custom-NPC.jpg" alt-text="Image showing a custom NPC and dialogue box":::
+
 In this tutorial, you will learn the following:
 
 > [!div class="checklist"]

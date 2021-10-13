@@ -10,6 +10,8 @@ description: A tutorial covering how to create a custom entity model utilizing t
 
 If you are new to Minecraft Add-On development, creating your first working behavior pack and custom entity can take a lot of time and research. The Minecraft Entity Wizard for Blockbench aims to make it as easy as possible to do these first steps, to create a custom entity and to add it to your world. From there, you can step by step build on your entity, change the model, or add your own behavior.
 
+### Building a Grizzly Bear with the Minecraft Entity Wizard
+
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMmJb]
 
 Blockbench itself is a 3D modeling program with native support for many Minecraft 3D model formats. The Entity Wizard is a plugin for Blockbench that can be installed through the built-in plugin store. Once you have created your basic entity in the Entity Wizard, you can continue to use Blockbench to modify the model, and you can edit the behavior in an external program (more on that later).
@@ -42,7 +44,7 @@ Once you have downloaded and installed [Blockbench](https://blockbench.net), you
 > [!TIP]
 > If you do not want to install the app, or you are using a mobile device like a tablet, you can also use the plugin in the [Blockbench web app](https://web.blockbench.net). Most parts of the program work the same in the web app, but saving files requires a few extra steps.
 
-### Adding the Bedrock Entity Wizard
+### Adding the Minecraft Entity Wizard
 
 1. In Blockbench, navigate to **File** and select **Plugins**.
 1. Switch the tab to the **Available** tab.
@@ -109,7 +111,7 @@ There are three ways to define the spawn egg:
 
 You have now entered all the information that is necessary to create the entity. The Next Steps tab allows you to select an export method to create a resource and behavior pack to load the entity into your world.
 
-:::image type="content" source="Media/MinecraftEntityWizard/MinecraftEntityWizard_export.png" alt-text="Blockbench Entity Wizard showcasing the Next Steps tab":::
+:::image type="content" source="Media/MinecraftEntityWizard/MinecraftEntityWizard_export.png" alt-text="Minecraft Entity Wizard showcasing the Next Steps tab":::
 
 In the Blockbench desktop app, there are up to three methods available to save your pack;
 

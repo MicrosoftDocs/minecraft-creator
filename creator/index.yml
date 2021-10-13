@@ -2,6 +2,7 @@
 
 title: "Minecraft: Bedrock Edition Creator Documentation" # < 60 chars
 summary: "Learn how to create and design unique experiences with Add-Ons, discover the latest features and develop your skills as a creator in Minecraft: Bedrock Edition."
+
 metadata:
   title: "Minecraft: Bedrock Edition Creator Documentation" # Required; page title shown in search results < 60 chars
   description: "Learn how to create and design unique experiences with Add-Ons, discover the latest features and develop your skills as a creator in Minecraft: Bedrock Edition." # < 160 chars
@@ -48,7 +49,6 @@ productDirectory:
   items:
     # Card
     - title: Getting Started with Add-On Development
-      # imageSrc should be square in ratio with no whitespace
       imageSrc: images/Add-Resource-Pack.png
       summary: Working with Add-Ons in Minecraft:Bedrock Edition is easy! Learn how to get started
       url: Documents/GettingStarted.md
@@ -149,7 +149,7 @@ conceptualContent:
           - url: Documents/ChunkerAdvancedMode.md
             itemType: tutorial
             text: Chunker - Advanced Mode
-    # Test Section
+    # Reference Section
     - title: References  # < 60 chars (optional)
       summary: "Learn how content works with Reference documentation and how GameTest can empower your workflow." # < 160 chars (optional)
       items:
@@ -216,3 +216,18 @@ conceptualContent:
           - url: Reference/Content/FogsReference/Examples/FogsIntroduction.md
             itemType: overview
             text: Introduction to Fogs
+
+# Tools Section
+tools:
+  title: Tools and Vanilla Packs
+  summary: Get started with some of the most commonly used tools for creating content.
+  items:
+    - title: Visual Studio Code
+      imageSrc: images/VSCode.png
+      url: "https://code.visualstudio.com/Download"
+    - title: Vanilla Behavior Pack
+      imageSrc: images/ResourcePack64.png
+      url: "https://aka.ms/behaviorpacktemplate"
+    - title: Vanilla Resource Pack
+      imageSrc: images/ResourcePack64.png
+      url: "https://aka.ms/resourcepacktemplate"

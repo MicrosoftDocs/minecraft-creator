@@ -10,6 +10,8 @@ description: A tutorial that is an introduction to Behavior Packs and how to add
 
 Before building your first Add-On, you will need to create a pack in order to add any custom content in Minecraft: Bedrock Edition. There are two types of packs that a creator can make; resource and behavior packs. This tutorial will go over how behavior packs are created and how to add a series of attacking behaviors to an in-game cow mob.
 
+:::image type="content" source="Media/BehaviorPack/Introduction-to-Behavior-Packs.jpg" alt-text="Image of a cow chasing Steve":::
+
 In this tutorial, you will learn the following:
 
 > [!div class="checklist"]
