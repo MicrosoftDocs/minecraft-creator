@@ -18,7 +18,7 @@ Similarly to [`addrider`](../EntityComponents/minecraftComponent_addrider.md), t
 
 ### `add_effects`
 
-`add_effects` is a list variable that can use status effect objects to define which effects should be added to the entity when the component is applied. Each object contains the following properties:
+This is a list of status effect objects. These define which effects should be added to the entity when the component is applied. Each object contains the following properties:
 
 * `effect`: The string identifier of the status effect to add. These are the same as used in the `/effect` command.
 * `duration`: The amount of time in seconds the effect should last. This allows for fractional numbers. For example, instant effects should be set to 0.05 seconds (one tick).
@@ -54,6 +54,8 @@ This can either be a single string identifier for a status effect, or a list of 
 ## Vanilla entities examples
 
 ### `zombie_villager_v2`
+
+Note that the use of `heal` in this example is incorrect and does nothing, since `instant_health` is the correct name for that effect.
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie_villager_v2.json" range="86-98":::
 
