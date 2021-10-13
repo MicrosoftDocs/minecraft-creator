@@ -9,7 +9,7 @@ ms.prod: gaming
 
 `minecraft:spell_effects` allows an entity to add or remove status effects from itself.
 
-Similarly to [`addrider`](../EntityComponents/minecraftComponent_addrider.md), this component performs a one-time operation on the entity when added. Removing the component will not change the entity's current effects. Adding different versions of the component multiple times will perform each one in turn. Once the component has been added, it will not provide any further functionality.
+Similarly to [`minecraft:addrider`](../EntityComponents/minecraftComponent_addrider.md), this component performs a one-time operation on the entity when added. Removing the component will not change the entity's current effects. Adding different versions of the component multiple times will perform each one in turn. Once the component has been added, it will not provide any further functionality.
 
 > [!NOTE]
 > There is one exception to this behavior: if this component is present on a player, its effects will be re-applied every time the player enters the world. To avoid this, remove the component shortly after adding it, or add an empty component to replace it.
@@ -55,7 +55,8 @@ This can either be a single string identifier for a status effect, or a list of 
 
 ### `zombie_villager_v2`
 
-Note that the use of `heal` in this example is incorrect and does nothing, since `instant_health` is the correct name for that effect.
+> [!NOTE]
+> The use of `heal` in this example is incorrect and does nothing, since there is no status effect with that name. `instant_health` is the correct name for the effect that heals damage.
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie_villager_v2.json" range="86-98":::
 
