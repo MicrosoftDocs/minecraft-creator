@@ -10,6 +10,8 @@ description: "A tutorial that introduces a Creator on how to make a custom block
 
 Minecraft's behavior and resource packs allow for you to create custom content for their audience. Custom blocks are a great way for creators to start adding in interactive content that Players can interact with. Through this tutorial, you will build a new block that will be called **canvas block** that you can set up with different textures and can be placed by a Player.
 
+:::image type="content" source="Media/CustomBlocks/Adding-a-Custom-Block.jpg" alt-text="Image of Alex holding the completed custom block":::
+
 In this tutorial you will learn the following:
 
 > [!div class="checklist"]

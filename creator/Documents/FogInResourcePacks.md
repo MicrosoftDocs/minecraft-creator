@@ -9,6 +9,8 @@ ms.prod: gaming
 
 Fogs in Minecraft: Bedrock Edition use [JSON](https://www.w3schools.com/whatis/whatis_json.asp) files to determine their values. Creators can define their own sets of fog values in their resource packs. A new folder can be made at the root of a resource pack called `fogs`. Any JSON files within this folder will be registered as new fog definitions that can be used by the game.
 
+:::image type="content" source="Media/FogResourcePack/Fog-in-Resource-Packs.jpg" alt-text="Image showing Steve running from spiders hiding in a fog":::
+
 In this tutorial you will learn the following:
 
 > [!div class="checklist"]

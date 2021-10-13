@@ -10,6 +10,8 @@ description: "Building upon the knowledge learned in the Resource Pack Tutorial,
 
 Add Entity refers to a set of features inside Minecraft: Bedrock Edition that allow add-ons to add custom entities to the game. The behavior of entities can be changed with a behavior pack and the appearance with a resource pack. Both are required to add a working entity to the game. This guide will go through the basic steps to create a working entity. In the second part, it will show you how to breathe life into the entity by using behavior components, animations, etc.
 
+:::image type="content" source="Media/AddEntity/Introduction-to-Add-Entity.jpg" alt-text="Image of a Blue Whale that has been created in a modeling package.":::
+
 In this tutorial you will learn the following:
 
 > [!div class="checklist"]
