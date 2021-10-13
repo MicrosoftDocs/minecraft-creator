@@ -5,6 +5,7 @@ title: ARTICLE TITLE
 ms.prod: gaming
 description: BRIEF SUMMARY OF WHAT THE TUTORIAL WILL TEACH THE AUDIENCE
 ---
+
 # [ARTICLE TITLE]
 
 [INTRO TEXT]
@@ -15,6 +16,7 @@ description: BRIEF SUMMARY OF WHAT THE TUTORIAL WILL TEACH THE AUDIENCE
 > - What feature, tool, or process you will be teaching the audience to use.
 > - Why they would want to use the feature/tool/process/etc.
 > - What kinds of things they can accomplish using your feature/tool/process/etc.
+> - If available, You can use media such as videos, screenshots, gifs to showcase the final project.
 
 In this tutorial, you will learn the following;
 
@@ -49,7 +51,7 @@ It’s recommended that the following be completed before beginning this tutoria
 [SUBSECTION TEXT]
 
 > [!NOTE]
-> Subsections (H3's and lower) will not be listed or linked in the article Table of Contents on MS Docs. You can manually link to subsections, but keep this in mind as it can make navigating your tutorial difficult if subsections are overly long.
+> Subsections (H3's and lower) **will not** be listed or linked in the article Table of Contents on MSDocs. You can manually link to subsections, but keep this in mind as it can make navigating your tutorial difficult if subsections are overly long.
 
 > [!IMPORTANT]
 > Use as many sections and subsections as you need to complete your tutorial, but do not drill down further than H4's (####), and try to use those sparingly.
