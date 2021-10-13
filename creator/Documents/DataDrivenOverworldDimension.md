@@ -9,13 +9,6 @@ description: How creators can make use of the new data driven dimensions feature
 
 Data driven dimensions is an experimental feature introduced in the Caves and Cliffs: Part II update. This feature allows creators to modify the minimum and maximum height of the overworld and introduces the `void` generator type.
 
-> [!NOTE]
-> Write a brief introduction for your tutorial here. There is no set length for this section, but try to keep it brief; what creators should get from this section is:
->
-> - What feature, tool, or process you will be teaching the audience to use.
-> - Why they would want to use the feature/tool/process/etc.
-> - What kinds of things they can accomplish using your feature/tool/process/etc.
-
 In this tutorial, you will learn the following;
 
 > [!div class="checklist"]
