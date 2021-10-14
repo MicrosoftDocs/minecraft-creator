@@ -21,7 +21,7 @@ Similarly to [`minecraft:addrider`](../EntityComponents/minecraftComponent_addri
 This is a list of status effect objects. These define which effects should be added to the entity when the component is applied. Each object contains the following properties:
 
 * `effect`: The string identifier of the status effect to add. These are the same as used in the `/effect` command.
-* `duration`: The amount of time in seconds the effect should last. This allows for fractional numbers. For example, instant effects should be set to 0.05 seconds (one tick).
+* `duration`: The amount of time in seconds the effect should last. Decimals are allowed. For example, instant effects should be set to 0.05 seconds (one tick).
 * `amplifier`: The level of the effect, same as used in the `/effect` command (0 for level I, 1 for level II, etc). Defaults to 0.
 * `ambient`: Boolean value that should cause the particles emitted by the entity to be partially transparent. This does not work properly, resulting in this property having no effect. Defaults to false.
 * `visible`: Boolean value that determines whether the particles emitted by the entity should appear. Defaults to true.

@@ -18,7 +18,7 @@ ms.prod: gaming
 
 This can either be a single decimal value, or a range of the form `[min, max]`. When using a range, a random value is chosen between the two values for every hit. This defines how much damage is dealt when the entity attacks, measured in half-hearts.
 
-Fractional values are always rounded down, and values below 0 are treated as 0. Attacks that deal 0 damage still cause knockback, but don't reduce the target's health. Defaults to 0.
+Decimal values are always rounded down, and values below 0 are treated as 0. Attacks that deal 0 damage still cause knockback, but don't reduce the target's health. Defaults to 0.
 
 ### `effect_name` and `effect_duration`
 
