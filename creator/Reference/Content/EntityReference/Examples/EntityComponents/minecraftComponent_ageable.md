@@ -21,7 +21,7 @@ If the component is replaced, the timer resets to the new `duration`.
 
 ### `duration`
 
-This is amount of time in seconds the timer should last. Decimals are allowed. The progress of the timer is preserved when the entity is unloaded. Defaults to 1200.
+This is amount of time in seconds the timer should last. Decimals are allowed. The progress of the timer is preserved when the entity is unloaded. Defaults to 1200. If set to exactly -1, the timer will never advance, and items will have no effect when used.
 
 ### `feed_items`
 
