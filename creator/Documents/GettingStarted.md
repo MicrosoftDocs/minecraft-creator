@@ -15,6 +15,7 @@ Add-Ons are the first step on our journey towards bringing even greater levels o
 In this tutorial, you will learn the following.
 
 >[!div class="checklist"]
+>
 > - The File Structure used for Minecraft
 > - Software is used for editing JSON files.
 > - Extensions that are available to help with Add-On development.
@@ -77,7 +78,7 @@ Visual Studio Code supports extensions created by the Visual Studio Code develop
 1. Click on the link provided to download [Bedrock Definitions](https://marketplace.visualstudio.com/items?itemName=destruc7i0n.vscode-bedrock-definitions) for Visual Studio Code.
 1. Click on the link provided to download [Blockception's Minecraft Bedrock Development](https://marketplace.visualstudio.com/items?itemName=BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension) for Visual Studio Code.
 
-### What's Next?
+## What's Next?
 
 Now that your development environment is set up, you can start creating your first Add-On by learning more about resource packs.
 

@@ -75,7 +75,7 @@ Converter settings allow you to enable/disable features of Chunker. It’s recom
 
 |Setting|Description|
 |:---|:---|
-|Identifier Validation|Experimental. Whether Chunker should ensure all block identifiers are valid Minecraft blocks. Do not enable this if you are using custom blocks.|
+|Identifier Validation|**Experimental.** Whether Chunker should ensure all block identifiers are valid Minecraft blocks. Do not enable this if you are using custom blocks.|
 |Calculate Block Connections|Whether Chunker should emulate block connections. Disabling this may result in blocks, such as fences, not connecting to surrounding blocks.|
 |Convert Items|Whether Chunker should convert the items in the world. If disabled, items in chests, block inventories, and item frames will not be converted.|
 |Convert Structure Loot Tables|Whether Chunker should attempt to remap loot tables.|

@@ -27,8 +27,8 @@ It’s recommended that *at least one* the following be completed before beginni
 Text that you have created to appear in the game is found in the `en_US.lang` file. Each text string appears on a single line, specially formatted to include certain data:
 
 1. String Name (required)
-2. String Value (required)
-3. String Comment (highly recommended)
+1. String Value (required)
+1. String Comment (highly recommended)
 
 In general, it looks like this:
 
@@ -40,9 +40,11 @@ StringName=StringValue ###StringComment
 
 Each text string must have a *string name* (or *ID*, or *key*). This name is used to identify the text string within our translation system.
 
-The string name (key/ID) starts at the beginning of a line and end with an equals `=` sign. It must also be unique when compared with all other names within the file. Example:
+The string name (key/ID) starts at the beginning of a line and end with an equals `=` sign. It must also be unique when compared with all other names within the file.
 
-```
+### String Names Example
+
+```json
 Welcome.Message.1=
 ```
 
@@ -50,7 +52,9 @@ Be sure to create a descriptive string name. A good string name gives clues to t
 
 ## String Values
 
-Each text string must have a *string value*. This value is the text that appears in the game to the player. Each value starts at the first equals `=` sign on the line and ends with a tab character followed by a hashtag character. Example:
+Each text string must have a *string value*. This value is the text that appears in the game to the player. Each value starts at the first equals `=` sign on the line and ends with a tab character followed by a hashtag character.
+
+### String Values Example
 
 ```json
 Welcome.Message.1=Welcome to our world! #
@@ -76,17 +80,19 @@ The comment, `<name> is the proper name of the map creator, and he is a male per
 We highly recommended commenting every string to help the translators do the best possible work. Make sure to detail anything that will be helpful for translators, including:
 
 1. Context and parts-of-speech
-2. Proper names (with descriptions)
-3. Subject/object gender, number, and whether it's a place/location
-4. Meanings of characters and items
-5. The intent of color codes
-6. Any parts that should not be translated
-7. The full text of any split or concatenated lines (see below)
+1. Proper names (with descriptions)
+1. Subject/object gender, number, and whether it's a place/location
+1. Meanings of characters and items
+1. The intent of color codes
+1. Any parts that should not be translated
+1. The full text of any split or concatenated lines (see below)
 
 > [!IMPORTANT]
 > Comments are per string. If you want a comment to apply to multiple strings, copy and paste it for each line. Translators only see comments that are associated with strings. They do not get the entire `en_US.lang` file. Due to this, best practice would be to try not to split lines or conversations across multiple text strings. If you must, please enter the full text of the sentence or conversation into a comment on each string to help translators. Remember that translators will see each of these lines separately, and not necessarily in order.
 
-For example, here we include the full text of the sign in each line's comment. This makes it much easier for the translator to correctly translate.
+### Comments Example
+
+Here we include the full text of the sign in each line's comment. This makes it much easier for the translator to correctly translate.
 
 ```json
 Welcome.Sign.1=Welcome to ### Welcome to our world! We hope you have fun!

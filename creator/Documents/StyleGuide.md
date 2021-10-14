@@ -67,6 +67,8 @@ After you have introduced a Minecraft edition, you can just refer to it by the e
 
 ```Bedrock Edition```
 
+Alternatively, after an edition has been established early on, you can use Minecraft as well.
+
 ### Updates
 
 When you want to refer to an update to Minecraft, just use the name of the update and don't include the word "Minecraft", at all. For example:

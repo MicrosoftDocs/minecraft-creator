@@ -22,6 +22,7 @@ In this guide, we will set up a command block chain to look for a certain type o
 
 ### Requirements
 
+- [Introduction to Commands](CommandsIntroduction.md)
 - A Minecraft world with cheats enabled.
 
 #### Setting the map up

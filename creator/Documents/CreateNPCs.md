@@ -79,3 +79,10 @@ To add buttons to an NPC, follow these instructions:
 Once you have added your button commands, your NPC will display the command buttons in order after their dialog when players interact with them.
 
 ![NPC Interaction](Media\NPCs\LearningPortal_NPCInteraction.PNG)
+
+## What's Next?
+
+With the NPC created and the first dialogue box has been created, you can learn how to create branching dialogue boxes to design your own custom narrative driven content.
+
+> [!div class="nextstepaction"]
+> [NPC Dialogue Command](NPCDialogue.md)

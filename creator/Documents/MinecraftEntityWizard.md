@@ -174,7 +174,7 @@ To view all of the available behaviors, properties, and AI Goals that an entity 
 > [!div class="nextstepaction"]
 > [Entity JSON Documentation](../Reference/Content/EntityReference/index.yml)
 
-### What's Next?
+## What's Next?
 
 Want to learn more about building with Blockbench? The Blockbench Wiki has step by step guides and reference documentation for modeling, texturing, and animating any custom creation you can imagine.
 
