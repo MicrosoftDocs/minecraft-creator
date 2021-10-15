@@ -28,7 +28,8 @@ For years, it's been a common practice for Minecraft map makers to use [external
 
 However, there are cases where NBT editing has led to problems when Minecraft updates in a way that changes how a particular tag is written or read by the game. Most features in Minecraft are built to be *played*, not edited with external tools. Those tools *simulate* playing the game. You could change a chest's content in game, and a tool such as MCCToolChest writes data to the NBT as if you had done just that. However, problems often arise when map makers use tools to edit NBT in a way that couldn't theoretically be accomplished in-game.
 
-The golden rule is this: **If you change things in a way that the game could never have written itself, you're at risk.** If the game can't tell the difference between whether an NBT value was saved by the game itself or if it was hand-edited, you're generally safe.
+> [!IMPORTANT]
+> The golden rule is this: **If you change things in a way that the game could never have written itself, you're at risk.** If the game can't tell the difference between whether an NBT value was saved by the game itself or if it was hand-edited, you're generally safe.
 
 Editing the NBT of a written book to change its text is fine; editing the NBT to exceed a book's in-game character limit isn't. Changing a cat's `CatType` to `5` makes it a Calico; Changing it to `5000` is probably a bad idea.
 

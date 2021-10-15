@@ -9,6 +9,8 @@ description: "A tutorial covering how to create a Non-Playable Character (NPC) w
 
 Non-Player Characters (NPCs) are characters in Minecraft that are not controlled by the player. NPCs can perform commands and deliver dialog when players interact with them, making them excellent tools for creating amazing narrative and gameplay experiences in Minecraft.
 
+:::image type="content" source="Media/NPCs/Create-a-Custom-NPC.jpg" alt-text="Image showing a custom NPC and dialogue box":::
+
 In this tutorial, you will learn the following:
 
 > [!div class="checklist"]
@@ -77,3 +79,10 @@ To add buttons to an NPC, follow these instructions:
 Once you have added your button commands, your NPC will display the command buttons in order after their dialog when players interact with them.
 
 ![NPC Interaction](Media\NPCs\LearningPortal_NPCInteraction.PNG)
+
+## What's Next?
+
+With the NPC created and the first dialogue box has been created, you can learn how to create branching dialogue boxes to design your own custom narrative driven content.
+
+> [!div class="nextstepaction"]
+> [NPC Dialogue Command](NPCDialogue.md)

@@ -88,8 +88,6 @@ Chunker will tell you when your world is ready to download. If any errors were e
 
 Download links are valid for 30 minutes after conversion. After this time, they’re permanently deleted from Chunker's backend servers. Links are tied to your session, and as such, giving the download link to other people will not work. If you want to distribute your converted world, we’d recommend you upload it to a service such as [OneDrive](https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage).
 
-## You did it!
-
 You can now enjoy your freshly converted world. If you have converted to a Bedrock Edition format, it’s as simple as opening the mcworld file - Minecraft will do the rest. To open a Java Edition world, you’ll have to copy the folder to the saves directory.
 
 ## What's Next?

@@ -8,15 +8,17 @@ description: A tutorial that is an introduction to Behavior Packs and how to add
 
 # Introduction to Behavior Packs
 
-Before building your first Add-On, you will need to create a pack in order to add any custom content in Minecraft: Bedrock Edition. There are two types of packs that a creator can make; resource and behavior packs. This tutorial will go over how behavior packs are created and how to add a series of attacking behaviors to an in-game cow mob.
+Before building your first Add-On, you will need to create a pack in order to add any custom content in Minecraft: Bedrock Edition. There are two types of packs that a creator can make; resource and behavior packs. A **behavior* pack** is a folder structure that contains files that drive entity behaviors, loot drops, spawn rules, items, recipes and trade tables. This tutorial will go over how behavior packs are created and how to add a series of behaviors to an in-game cow entity to make it an aggressive enemy.
+
+:::image type="content" source="Media/BehaviorPack/Introduction-to-Behavior-Packs.jpg" alt-text="Image of a cow chasing Steve":::
 
 In this tutorial, you will learn the following:
 
 > [!div class="checklist"]
 >
-> - **Dependency** links between Resource Packs and Behavior Packs.
-> - What components are and how they are used to define Minecraft mobs.
-> - How to add behaviors to an existing mob.
+> - How to link Resource Packs and Behavior Packs utilizing **Dependency**.
+> - What are **Components** and how they are used to define Minecraft entities.
+> - How to add behaviors to an existing entity to alter its gameplay.
 
 ### Requirements
 
@@ -28,7 +30,7 @@ It’s recommended that the following be completed before beginning this tutoria
 
 ## Building the Behavior Pack
 
-A behavior pack is a type of pack that allows creators to add, remove or alter gameplay behavior of entities within Minecraft: Bedrock Edition. Within those entity files, behaviors are what drive each entity to perform certain actions, such as a flock of chickens following a feather or whether a zombie will attack a player or another entity.
+A behavior pack is a type of pack that allows creators to add, remove or alter gameplay behavior of entities within Minecraft. Within those entity files, behaviors are what drive each entity to perform certain actions, such as a flock of chickens following a feather or whether a zombie will attack a player or another entity.
 
 Behaviors give creators the ability to change the way entities can act in the world. In this section, you will set up a folder for a new Behavior Pack called **HelloWorldBP**.
 
@@ -331,9 +333,9 @@ Now that the pack has both a manifest file and a modification for the cow entity
 1. Under all of the packs, select **HelloWorldBP** to add the pack to the world.
 1. Launch your world.
 
-### What's Next?
+## What's Next?
 
-Now that you have learned how to augment existing Minecraft features such as textures and behaviors, it's recommended that you learn how to add new items to Minecraft, starting with a custom block component.
+Now that you have learned how behaviors work, you can view the Entity JSON Reference documentation to learn more about the different behaviors are available in Minecraft.
 
 > [!div class="nextstepaction"]
-> [Custom Block](CustomBlock.md)
+> [Entity JSON Documentation](../Reference/Content/EntityReference/index.yml)

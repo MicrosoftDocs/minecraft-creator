@@ -30,14 +30,22 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:nameable":{
-    "allow_name_tag_renaming": true,
-    "always_show": false,
-    "default_trigger": ,
-    "name_actions": "minecraft:celebrate" {
-        "name_filter": "bacon",
-        "on_named": "minecraft:spawn_child"
+"minecraft:nameable": {
+  "allow_name_tag_renaming": true,
+  "always_show": false,
+  "default_trigger": {
+    "event": "minecraft:celebrate",
+    "target": "self"
+  },
+  "name_actions": [
+    {
+      "name_filter": "bacon",
+      "on_named": {
+        "event": "minecraft:spawn_child",
+        "target": "self"
+      }
     }
+  ]
 }
 ```
 

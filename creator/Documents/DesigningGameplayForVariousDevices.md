@@ -65,6 +65,12 @@ With all this in mind, there are many next steps towards making maps, ranging fr
 
 > [!div class="nextstepaction"]
 > [Introduction to Command Blocks](CommandsIntroduction.md)
+
+> [!div class="nextstepaction"]
 > [Introduction to Resource Packs](ResourcePack.md)
+
+> [!div class="nextstepaction"]
 > [Introduction to Behavior Packs](BehaviorPack.md)
+
+> [!div class="nextstepaction"]
 > [Commonly Used Tools](CommonlyUsedTools.md)

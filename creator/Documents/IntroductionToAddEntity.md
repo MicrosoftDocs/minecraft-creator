@@ -10,6 +10,8 @@ description: "Building upon the knowledge learned in the Resource Pack Tutorial,
 
 Add Entity refers to a set of features inside Minecraft: Bedrock Edition that allow add-ons to add custom entities to the game. The behavior of entities can be changed with a behavior pack and the appearance with a resource pack. Both are required to add a working entity to the game. This guide will go through the basic steps to create a working entity. In the second part, it will show you how to breathe life into the entity by using behavior components, animations, etc.
 
+:::image type="content" source="Media/AddEntity/Introduction-to-Add-Entity.jpg" alt-text="Image of a Blue Whale that has been created in a modeling package.":::
+
 In this tutorial you will learn the following:
 
 > [!div class="checklist"]
@@ -584,9 +586,9 @@ To summarize the relationship between controllers and animations: an animation c
 
 ## What's Next?
 
+In this guide we have added a complete custom entity to the game. The robot spawns randomly in the world, has three random textures, a wheel animation, various components, and a custom water mechanic. If you want to play around with the add-on created in this article, you can download the packs [here](https://drive.google.com/file/d/14w3UCJ4sA9IwvY3fBiP2L5uQJDmbC6A9/view?usp=sharing).
 
-In this guide we have added a complete custom entity to the game. The robot spawns randomly in the world, has three random textures, a wheel animation, various components, and a custom water mechanic. If you want to play around with the add-on created in this article, you can download the packs [here](https://drive.google.com/file/d/14w3UCJ4sA9IwvY3fBiP2L5uQJDmbC6A9/view?usp=sharing). If you want to learn more about custom entities, you can read on about modeling and animating for the client or read further about entity behavior for the server.
-
+If you want to learn more about custom entities, you can read on about modeling and animating for the client or read further about entity behavior for the server.
 
 > [!div class="nextstepaction"]
 > [Entity Modeling and Animation](EntityModelingAndAnimation.md)

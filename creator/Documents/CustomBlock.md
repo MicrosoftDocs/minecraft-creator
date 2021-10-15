@@ -10,21 +10,27 @@ description: "A tutorial that introduces a Creator on how to make a custom block
 
 Minecraft's behavior and resource packs allow for you to create custom content for their audience. Custom blocks are a great way for creators to start adding in interactive content that Players can interact with. Through this tutorial, you will build a new block that will be called **canvas block** that you can set up with different textures and can be placed by a Player.
 
+:::image type="content" source="Media/CustomBlocks/Adding-a-Custom-Block.jpg" alt-text="Image of Alex holding the completed custom block":::
+
 In this tutorial you will learn the following:
 
 > [!div class="checklist"]
 >
 > - Using JSON to define a new block.
 > - Assigning textures to a new block.
-> - What are some of the behaviors and components that blocks have access to.
+> - What are some of the behaviors and components that blocks can access.
 > - A quick look at **.lang** and how it's used for in-game text.
 
 ### Requirements
-It’s recommended that the following be completed before beginning this tutorial.
+
+It’s recommended that the following be completed before beginning this tutorial:
 
 - [Getting Started with Add-On Development](GettingStarted.md)
 - [Introduction To Resource Packs](ResourcePack.md)
 - [Introduction To Behavior Packs](BehaviorPack.md)
+
+You will also need the following:
+
 - Download the [Vanilla resource pack](https://aka.ms/resourcepacktemplate)
 - A Minecraft World with `Holiday Creator Features` enabled.
 
@@ -108,7 +114,10 @@ With the block defined in the **blocks.json** file, the next step is to associat
 
 ![A PNG file that can be downloaded and used in place of a custom texture made in a photo editor](Media/CustomBlocks/canvasblock.png)
 
-The canvas block texture will need to be generated and placed in the Resource Pack. There is an image that will be provided for the `canvasblock.png` but feel free to use a different texture.
+The canvas block texture will need to be created and placed in the Resource Pack.
+
+> [!NOTE]
+> The image above has been provided for the `canvasblock.png` but feel free to use a different texture.
 
 If you are using the one provided:
 
@@ -224,3 +233,10 @@ With the canvas block defined in both the behavior pack and resource pack, you c
 
 1. Open up the chat dialogue box (T or Enter on Windows 10 OS).
 1. Type the following command: `/give @p helloworld:canvasblock`
+
+## What's Next?
+
+With your first custom block completed, it is recommended to view the Block JSON reference documentation to learn more about how blocks are defined within Minecraft.
+
+> [!div class="nextstepaction"]
+> [Block JSON Documentation](../Reference/Content/BlockReference/index.yml)
