@@ -32,7 +32,7 @@ Below is a list of all the available Components within Minecraft:Bedrock Edition
 |[minecraft:buoyant](EntityComponents/minecraftComponent_buoyant.md) |`minecraft:buoyant` allows an entity to float on the specified liquid blocks. |
 |[minecraft:burns_in_daylight](EntityComponents/minecraftComponent_burns_in_daylight.md) |`minecraft:burns_in_daylight` allows an entity to burn when it's daylight. |
 |[minecraft:celebrate_hunt](EntityComponents/minecraftComponent_celebrate_hunt.md) |`minecraft:celebrate_hunt` allows an entity to celebration when hunting a specific entity. |
-|**NEW!** [minecraft:combat_regeneration](EntityComponents/minecraftComponent_combat_regeneration.md) |`minecraft:combat_regeneration` gives Regeneration I and removes Mining Fatigue from the mob that kills the Actor's attack target. |
+|[minecraft:combat_regeneration](EntityComponents/minecraftComponent_combat_regeneration.md) |`minecraft:combat_regeneration` gives Regeneration I and removes Mining Fatigue from the mob that kills the Actor's attack target. |
 |[minecraft:conditional_bandwidth_optimization](EntityComponents/minecraftComponent_conditional_bandwidth_optimization.md) |`minecraft:conditional_bandwidth_optimization` defines the Conditional Spatial Update Bandwidth Optimizations of this entity. |
 |[minecraft:custom_hit_test](EntityComponents/minecraftComponent_custom_hit_test.md) |`minecraft:custom_hit_test` defines a list of hitboxes for melee and ranged hits against the entity.|
 |[minecraft:damage_over_time](EntityComponents/minecraftComponent_damage_over_time.md) |`minecraft:damage_over_time` applies a defined amount of damage to the entity at specified intervals.|

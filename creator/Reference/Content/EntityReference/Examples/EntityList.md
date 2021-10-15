@@ -14,7 +14,7 @@ Below is a list of all the available Entities within Minecraft:Bedrock Edition l
 |[area_effect_cloud](../../../Source/VanillaBehaviorPack_Snippets/entities/area_effect_cloud.md)|
 |[armor_stand](../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)|
 |[arrow](../../../Source/VanillaBehaviorPack_Snippets/entities/arrow.md)|
-|**NEW!** &nbsp; [axolotl](../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)|
+|&nbsp; [axolotl](../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)|
 |[bat](../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)|
 |[bee](../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)|
 |[blaze](../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)|
@@ -45,8 +45,8 @@ Below is a list of all the available Entities within Minecraft:Bedrock Edition l
 |[fishing_hook](../../../Source/VanillaBehaviorPack_Snippets/entities/fishing_hook.md)|
 |[fox](../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)|
 |[ghast](../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)|
-|**NEW!** &nbsp; [glow_squid](../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)|
-|**NEW!** &nbsp; [goat](../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)|
+|&nbsp; [glow_squid](../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)|
+|&nbsp; [goat](../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)|
 |[guardian](../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)|
 |[hoglin](../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)|
 |[hopper_minecart](../../../Source/VanillaBehaviorPack_Snippets/entities/hopper_minecart.md)|

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Block Documentation - minecraft:creative_category
 
-`minecraft:creative_category` is a `string` component that sets the destroy time property for the block.
+`minecraft:creative_category` is a component that specifies the creative group for the block.
 
 >[!IMPORTANT]
 > `minecraft:creative_category` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
