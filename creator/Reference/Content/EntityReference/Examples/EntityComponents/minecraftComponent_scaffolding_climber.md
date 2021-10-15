@@ -9,6 +9,9 @@ ms.prod: gaming
 
 `minecraft:scaffolding_climber` allows the player to detect and manuever on the scaffolding block.
 
+> [!IMPORTANT]
+> `minecraft:scaffolding_climber` has been deprecated and replaced for [minecraft:block_climber](minecraftComponent_block_climber.md)
+
 ## Example
 
 ```json
@@ -18,10 +21,8 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### player
-
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/player.json" range="138":::
+No entities currently use `minecraft:scaffolding_climber`
 
 ## Vanilla entities using `minecraft:scaffolding_climber`
 
-- [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
+No entities currently use `minecraft:scaffolding_climber`

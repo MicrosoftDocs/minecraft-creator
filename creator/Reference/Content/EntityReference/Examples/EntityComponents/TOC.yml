@@ -18,6 +18,8 @@
   href: minecraftComponent_attack_cooldown.md
 - name: barter
   href: minecraftComponent_barter.md
+- name: block_climber
+  href: minecraftComponent_block_climber.md
 - name: block_sensor
   href: minecraftComponent_block_sensor.md
 - name: boostable

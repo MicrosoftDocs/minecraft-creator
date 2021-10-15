@@ -21,6 +21,7 @@ Below is a list of all the available Components within Minecraft:Bedrock Edition
 |[minecraft:area_attack](EntityComponents/minecraftComponent_area_attack.md) |`minecraft:area_attack` is a component that does damage to entities that get within range. |
 |[minecraft:attack_cooldown](EntityComponents/minecraftComponent_attack_cooldown.md) |`minecraft:attack_cooldown` adds a cooldown to an entity. The intention of this cooldown is to be used to prevent the entity from attempting to acquire new attack targets.|
 |[minecraft:barter](EntityComponents/minecraftComponent_barter.md) |`minecraft:barter` enables the component to drop an item as a barter exchange. |
+|[minecraft:block_climber](EntityComponents/minecraftComponent_block_climber.md) |`minecraft:block_climber` allows the player to detect and maneuver on the scaffolding block. |
 |[minecraft:block_sensor](EntityComponents/minecraftComponent_block_sensor.md) |`minecraft:block_sensor` will fire off a specified event when a block in the block list is broken within the sensor range. |
 |[minecraft:boostable](EntityComponents/minecraftComponent_boostable.md) |`minecraft:boostable` defines the conditions and behavior of a rideable entity's boost. |
 |[minecraft:boss](EntityComponents/minecraftComponent_boss.md) |`minecraft:boss` defines the current state of the boss for updating the boss HUD. |
