@@ -586,9 +586,9 @@ To summarize the relationship between controllers and animations: an animation c
 
 ## What's Next?
 
+In this guide we have added a complete custom entity to the game. The robot spawns randomly in the world, has three random textures, a wheel animation, various components, and a custom water mechanic. If you want to play around with the add-on created in this article, you can download the packs [here](https://drive.google.com/file/d/14w3UCJ4sA9IwvY3fBiP2L5uQJDmbC6A9/view?usp=sharing).
 
-In this guide we have added a complete custom entity to the game. The robot spawns randomly in the world, has three random textures, a wheel animation, various components, and a custom water mechanic. If you want to play around with the add-on created in this article, you can download the packs [here](https://drive.google.com/file/d/14w3UCJ4sA9IwvY3fBiP2L5uQJDmbC6A9/view?usp=sharing). If you want to learn more about custom entities, you can read on about modeling and animating for the client or read further about entity behavior for the server.
-
+If you want to learn more about custom entities, you can read on about modeling and animating for the client or read further about entity behavior for the server.
 
 > [!div class="nextstepaction"]
 > [Entity Modeling and Animation](EntityModelingAndAnimation.md)

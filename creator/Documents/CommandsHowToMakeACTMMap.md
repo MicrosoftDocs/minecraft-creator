@@ -115,7 +115,6 @@ Once the monument is complete, the player is rewarded with a stack of diamonds. 
 
 ![A repeating command block followed by 2 chain blocks followed by 2 conditional chain blocks](Media/Commands/monumentrewardcomplete.png)
 
-
 1. The fake player named “#total_wool” first has their score set to 0. Since the `+=` operator adds one score to another, the score will increase more and more each tick. Setting it to 0 first is what will accurately give us the sum.
 2. The += operator is used to tally up the scores of all players in the “wool_placed” objective (denoted by the asterisk `*`), and the result is stored as the score of the fake player “#total_wool” in the “totals” objective. If it were the same objective, then the value of “total_wool” might be added after the other scores have been added to it, giving an incorrect result.
 3. The score of “#total_wool” is checked to see if it’s exactly 3. If so, this means all wools have been placed.
@@ -130,7 +129,7 @@ Once the monument is complete, the player is rewarded with a stack of diamonds. 
 /scoreboard players set #red wool_placed 2
 ```
 
-### What's Next?
+## What's Next?
 
 Now that you have the hang of command systems, mixing them in with behavior packs can greatly increase the interaction between your players and your custom content. Learning about behavior packs is the next step.
 

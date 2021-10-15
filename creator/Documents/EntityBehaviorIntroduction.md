@@ -148,7 +148,7 @@ In the following example, the `hurt_by_target` component has a higher priority. 
 
 When a component group is removed from an entity, the effect of the components will be removed as well. This won’t cause any problems in most cases. But in some cases, it's important to consider that components **overwrite** each other. Therefore, removing a component won’t make it go back to the previous state of that component, and it won’t use the same component from another component group or the base components. Instead, the component will be **removed completely** and reset to its default values.
 
-Here's an example: Let’s say you have an entity with a scale of `2` defined in the base `components` tag. You add a baby component group with a scale component that sets the scale to` 1.5`. This will correctly update the scale to `1.5`. Now, you remove that component group again. Instead of going back to `2`, the scale will now be reset to `1`. This happens because removing the component group will also remove the scale component entirely. The scale will be reset to the default value of `1`.
+Here's an example: Let’s say you have an entity with a scale of `2` defined in the base `components` tag. You add a baby component group with a scale component that sets the scale to `1.5`. This will correctly update the scale to `1.5`. Now, you remove that component group again. Instead of going back to `2`, the scale will now be reset to `1`. This happens because removing the component group will also remove the scale component entirely. The scale will be reset to the default value of `1`.
 
 There are a few components where this is important to consider:
 

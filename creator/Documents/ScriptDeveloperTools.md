@@ -14,7 +14,7 @@ Two new tools can make the process of writing your GameTest scripts easier and m
 
 Visual Studio Code can display detailed type information for different libraries to provide hints and code-completion dropdowns as you type. Type information has been made available for GameTest modules `mojang-minecraft` and `mojang-gametest`.
 
-To get started, use the Node Package Manager, or npm. npm makes it easy to download and install different modules of code within your packages. Install Node.js – which includes npm - on your development device. More info on installing npm is available from https://nodejs.org. Install the latest LTS version of Node.js to get started.
+To get started, use the Node Package Manager, or npm. npm makes it easy to download and install different modules of code within your packages. Install Node.js – which includes npm - on your development device. More info on installing npm is available from [nodejs.org](https://nodejs.org). Install the latest LTS version of Node.js to get started.
 
 Once Node.js is installed, getting the latest type definitions is a snap. From Visual Studio Code, open the folder where your behavior pack folder is located and simply run the following commands from a terminal console window:
 
@@ -43,9 +43,9 @@ As you build more of a codebase in script, you’ll want to inspect your code at
 To get started, you’ll want to use Visual Studio Code as your editor for the JavaScript files you’ve been developing. Steps from there include:
 
 1. Install the Minecraft Bedrock Edition Debugger within Visual Studio Code – you’ll need to do this once
-2. Open Visual Studio Code within your development_behavior_packs folder
-3. Depending on your testing client - either in Bedrock Dedicated Server or within Minecraft Bedrock clients -- connect Minecraft Bedrock Edition and Visual Studio Code
-4. Set break points and add watch variables in your code as you go, and then connect Minecraft to Visual Studio Code
+1. Open Visual Studio Code within your development_behavior_packs folder
+1. Depending on your testing client - either in Bedrock Dedicated Server or within Minecraft Bedrock clients -- connect Minecraft Bedrock Edition and Visual Studio Code
+1. Set break points and add watch variables in your code as you go, and then connect Minecraft to Visual Studio Code
 
 >[!IMPORTANT]
 >The Minecraft debugger and GameTest Framework experiment are optimized to work with the latest Beta versions of Minecraft. See [Minecraft Betas](https://aka.ms/mcbeta) for more information.
@@ -133,9 +133,9 @@ By default, Bedrock Dedicated Servers are not configured to allow debug connecti
 
 These settings configure debugging on Bedrock Dedicated Server:
 
-* `allow-outbound-script-debugging` (true/false) - enables the /script debugger connect command. Defaults to false.
-* `allow-inbound-script-debugging` (true false) - enables the /script debugger listen command (and the opening of ports on a server).  Defaults to false.
-* `force-inbound-debug-port` (number) - Locks the inbound debug port to a particular port. This will set the default script debugging port and prevent a user of the /script debugger listen command from specifying an alternate port.
+- `allow-outbound-script-debugging` (true/false): enables the /script debugger connect command. Defaults to false.
+- `allow-inbound-script-debugging` (true false): enables the /script debugger listen command (and the opening of ports on a server).  Defaults to false.
+- `force-inbound-debug-port` (number): Locks the inbound debug port to a particular port. This will set the default script debugging port and prevent a user of the /script debugger listen command from specifying an alternate port.
 
 For this project, we can simply set allow-inbound-script-debugging to true.
 

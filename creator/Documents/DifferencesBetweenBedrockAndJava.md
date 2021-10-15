@@ -42,6 +42,7 @@ The structure and implementation of commands between the two versions have diver
 ```
 summon <entityType: EntityType> [spawnPos: x y z] [spawnEvent: String] [named: String]
 ```
+
 Currently, there’s no way to `/give` players custom items in Bedrock Edition as you can in Java Edition. The item will need to be created beforehand and teleported to the player. The most common ways of doing this is either by placing the item in a chest and breaking the chest, or making an entity drop it on death via loot table.
 
 Aside from that, commands should feel very familiar between Bedrock Edition and Java Edition versions prior to 1.13. The execute format introduced in Java Edition 1.13 is not supported in Bedrock Edition.
@@ -103,7 +104,7 @@ To combat a lot of these performance issues, Bedrock Edition has split up the re
 
 Overall, the move from Java Edition to Bedrock Edition is pretty painless if you are adequately prepared and understand the differences. A lot of features Java Edition creators used to rely upon through commands have been moved to behavior packs. Most aspects of the game are being remade to be data-driven with a huge focus on flexibility. As the game continues to evolve, the gameplay experience will feel the same, but what drives that experience will function very differently.
 
-### What's Next?
+## What's Next?
 
 If you are coming newly from Java Edition, your first steps in Bedrock Edition will be Add-On development. This will open many doors necessary for content creation on Bedrock.
 

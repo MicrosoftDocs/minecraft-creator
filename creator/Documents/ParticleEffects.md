@@ -205,8 +205,11 @@ Particle effects can also be played by animation controllers. To do this, first 
 ]
 ```
 
-## Conclusion
+## What's Next?
 
 Congratulations, you’ve made it to the end of the (p)article! You’ve learned how to create a custom particle effect, how to configure the emitter, change the physics, how to use an animated texture, and how to color it.
 
 Creating particle effects is all about trial and error, combining different settings, and using MoLang expressions to power parameters. To learn more, we encourage you to check out the example particles and look through the configuration to learn how different values and expressions can be used to create effects. And, most importantly, to just play around with all parameters, have fun, and to see what you can come up with.
+
+> [!div class="nextstepaction"]
+> [Particle JSON Documentation](../Reference/Content/ParticlesReference/index.yml)

@@ -403,7 +403,7 @@ You can also apply conditions to specific `entries` within the roll. The followi
 
 Exploring the different [functions](#functions-and-modifying-items) and [conditions](#conditions) available can allow you to really customize your player’s experience. You can name items and give them lore, drop resource crates full of supplies, and even create written books for instructions or information.
 
-### What's Next?
+## What's Next?
 
 There are plenty of other functions that can modify the selected item. The next tutorial will go over them.
 

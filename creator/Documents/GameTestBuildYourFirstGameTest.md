@@ -27,6 +27,7 @@ Building sets of GameTests requires building out your GameTests via a behavior P
 It’s recommended that the following be completed before beginning this tutorial.
 
 > [!div class="checklist"]
+>
 > - [Introduction to Behavior Packs](BehaviorPack.md)
 
 ### GameTest Elements
@@ -39,11 +40,11 @@ When GameTests are run in Minecraft, your structure will be loaded and expanded 
 
 GameTests then use JavaScript code to define the test, including:
 
-- **Test registration** - a small amount of code to establish a test in the environment.
+- **Test registration**: a small amount of code to establish a test in the environment.
 
-- **Test setup** - additional code that sets up conditions within the Structure environment that has been created. Typically, this will be the creation of additional mobs.
+- **Test setup**: additional code that sets up conditions within the Structure environment that has been created. Typically, this will be the creation of additional mobs.
 
-- **Test validation** are additional code snippets written in JavaScript that evaluates whether a test has completed successfully or has failed.
+- **Test validation**: additional code snippets written in JavaScript that evaluates whether a test has completed successfully or has failed.
 
 With this simple foundation, GameTests can be created with a few lines of JavaScript code plus a Minecraft structure.
 
