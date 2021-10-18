@@ -132,7 +132,7 @@ If you now test the robot in-game, you'll see that it will turn its head and loo
 
 ### Creating an Animation
 
-In the [add entity guide](IntroductionToAddEntity.md), we created a small driving animation for the robot. Let’s now create an animation that plays when the robot loses the ground under its feet (wheel). Before creating an animation, always check if there's a way to trigger it. We can easily trigger a lose-balance animation for this because we can just use the MoLang query `query.is_on_ground` to test when the robot no longer touches the ground.
+In the [add entity guide](IntroductionToAddEntity.md), we created a small driving animation for the robot. Let’s now create an animation that plays when the robot loses the ground under its feet (wheel). Before creating an animation, always check if there's a way to trigger it. We can easily trigger a lose-balance animation for this because we can just use the Molang query `query.is_on_ground` to test when the robot no longer touches the ground.
 
 ![Animation controls in Blockbench](Media/EntityModeling/animation.png)
 
@@ -169,7 +169,7 @@ We can use this behavior quite well for static or looping animations that have n
 
 ### Animation Controllers
 
-Animation controllers work with states. An animation controller can have an unlimited number of states. Only one of these states is active at a time. The controller can transition to other states through MoLang expressions. Each state can play a distinct set of animations, sounds, and particle effects.
+Animation controllers work with states. An animation controller can have an unlimited number of states. Only one of these states is active at a time. The controller can transition to other states through Molang expressions. Each state can play a distinct set of animations, sounds, and particle effects.
 
 Each time the entity is loaded by the client, for example, when joining a world, the animation controller starts in an initial state. This state is called `default` by default.
 

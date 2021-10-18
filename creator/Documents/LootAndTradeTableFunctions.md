@@ -255,7 +255,7 @@ You can also inherit the entity ID of the entity that's associated with that loo
                 }
 ```
 
-Be aware that if you use `set_actor_id` on a chest’s loot table and omit the `id` value, it will generate the spawn egg of whatever opens the chest (the player). A player spawn egg will spawn a “player” that just stands around and throws up MoLang errors (since it’s trying to use the player’s behavior file as well as the player’s controllers). If you break a chest containing a loot table that uses an inherited id from `set_actor_id`, it drops a default spawn egg that doesn’t spawn anything.
+Be aware that if you use `set_actor_id` on a chest’s loot table and omit the `id` value, it will generate the spawn egg of whatever opens the chest (the player). A player spawn egg will spawn a “player” that just stands around and throws up Molang errors (since it’s trying to use the player’s behavior file as well as the player’s controllers). If you break a chest containing a loot table that uses an inherited id from `set_actor_id`, it drops a default spawn egg that doesn’t spawn anything.
 
 ### set_banner_details
 

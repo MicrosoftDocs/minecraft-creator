@@ -19,7 +19,7 @@ ms.prod: gaming
 
 | Name| Default Value| Type| Description |
 |:----------|:----------|:----------|:----------|
-| condition| *not set*| MoLang expression| Molang expression to test against the actor. The given event will be triggered if the expression evaluates to true.|
+| condition| *not set*| Molang expression| Molang expression to test against the actor. The given event will be triggered if the expression evaluates to true.|
 | event| *not set*| String| Name of the event to run.|
 | target| *not set* | String| One of "self" or "other". Self means the event is attached to the volume. Other means the event is attached to the actor.|
 

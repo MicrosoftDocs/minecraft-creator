@@ -14,7 +14,8 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |can_pickup_any_item| false| Boolean| If true, the mob can pickup any item |
-| can_pickup_to_hand_or_equipment| true| Boolean| If true, the mob can pickup items to its hand or armor slots |
+|can_pickup_to_hand_or_equipment| true| Boolean| If true, the mob can pickup items to its hand or armor slots |
+|excluded_items|*not set* | List| List of items this mob will not pick up |
 |goal_radius| 0.5| Decimal| Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot |
 |max_dist| 0.0| Decimal|  Maximum distance this mob will look for items to pick up |
 | pickup_based_on_chance| false|Boolean|  If true, depending on the difficulty, there is a random chance that the mob may not be able to pickup items |
@@ -28,6 +29,7 @@ ms.prod: gaming
     "priority": 2,
     "can_pickup_any_item":true,
     "can_pickup_to_hand_or_equipment": true,
+    "excluded_items":["sword"],
     "goal_radius": 0.5,
     "max_dist": 0.0,
     "speed_multiplayer": 1.0,
