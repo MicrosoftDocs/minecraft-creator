@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Block Documentation - minecraft:destroy_time
 
-`minecraft:destroy_time` is a `decimal` component that sets the destroy time property for the block.
+`minecraft:destroy_time` is a `decimal` component that sets the destroy time property for the block. Time is measured in seconds with base equipment.
 
 > [!NOTE]
 > Greater numbers result in greater mining times.
