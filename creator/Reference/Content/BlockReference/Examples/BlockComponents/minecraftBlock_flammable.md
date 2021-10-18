@@ -21,8 +21,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|burn_odds| 0| Integer| How likely the block will be destroyed by flames when on fire. |
-|flame_odds| 0| Integer| How likely the block will catch flame when next to a fire. |
+|burn_odds| 0| Integer| How likely the block will be destroyed by flames when on fire. Value must be greater than or equal to 0.|
+|flame_odds| 0| Integer| How likely the block will catch flame when next to a fire. Value must be greater than or equal to 0.|
 
 ## Example
 

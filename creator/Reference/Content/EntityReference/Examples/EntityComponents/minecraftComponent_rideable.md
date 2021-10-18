@@ -33,7 +33,7 @@ ms.prod: gaming
 | max_rider_count| seat_count| Integer| Defines the maximum number of riders that can be riding this entity for this seat to be valid |
 | min_rider_count| 0| Integer| Defines the minimum number of riders that need to be riding this entity before this seat can be used |
 | position| [0, 0, 0]| Vector [a, b, c]| Position of this seat relative to this entity's position |
-| rotate_rider_by| 0| MoLang| Offset to rotate riders by |
+| rotate_rider_by| 0| Molang| Offset to rotate riders by |
 
 ## Example
 

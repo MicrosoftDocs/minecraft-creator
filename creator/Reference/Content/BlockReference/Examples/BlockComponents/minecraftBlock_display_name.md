@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Block Documentation - minecraft:display_name (Blocks)
 
-`minecraft:display_name` is a `String` component that sets the display name id for the block.
+`minecraft:display_name` is a `String` component that specifies the language file key that maps to what text will be displayed when you hover over the block.
 
 ## Default Parameter
 

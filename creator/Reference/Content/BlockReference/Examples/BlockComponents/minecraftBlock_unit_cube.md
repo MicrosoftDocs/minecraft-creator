@@ -7,13 +7,13 @@ ms.prod: gaming
 
 # Block Documentation - minecraft:unit_cube
 
-`minecraft:unit_cube` is a `String` component that specifies that a unite cube is to be used with tessellation.
+`minecraft:unit_cube` is a `JSON Object` component that specifies that a unite cube is to be used with tessellation.
 
 ## Default Parameter
 
 |Default Value|Type |
 |:----|:----|
-|*not set*| String|
+|*not set*| JSON Object|
 
 ## Extra Parameters
 

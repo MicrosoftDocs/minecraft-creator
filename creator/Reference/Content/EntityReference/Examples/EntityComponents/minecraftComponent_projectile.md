@@ -28,7 +28,7 @@ ms.prod: gaming
 | lightning| False| Boolean| If true, the entity hit will be struck by lightning |
 | liquid_inertia| 0.6| Decimal| The fraction of the projectile's speed maintained every frame while traveling in water |
 | multiple_targets| True| Boolean| If true, the projectile can hit multiple entities per flight |
-| offset| [0, 0.5, 0]| Vector [a, b, c]| The offset from the entity's anchor where the projectile will spawn |
+| offset| [0, 0, 0]| Vector [a, b, c]| The offset from the entity's anchor where the projectile will spawn |
 | on_fire_time| 5| Decimal| Time in seconds that the entity hit will be on fire for |
 | particle| iconcrack| String| Particle to use upon collision |
 | potion_effect| -1| Integer| Defines the effect the arrow will apply to the entity it hits |

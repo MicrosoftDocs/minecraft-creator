@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Molang Documenation - Query Functions
 
-Query Functions are boolean expressions that allow you to query for values owned by the engine under different circumstances. Query functions are formatted as `query.is_baby` or `query.is_item_equipped('main_hand')`.They can be used in Molang expressions and allow scripts to read game data. They are useful for controlling things like changing positions, textures, animations, etc if a mob is a baby.
+Query Functions are operators that access a wide variety of information. They can return simple true or false values (1.0 or 0.0) or more complex data. See the list of functions below for per-query documentation. Query Functions might not take any parameters. In that case, just `query.function_name` is used. Otherwise parentheses with commas separating arguments should be used, ie `query.function_name(1, 2, 'three')`.
 
 ### Example
 
@@ -33,14 +33,17 @@ Query Functions are boolean expressions that allow you to query for values owned
 | query.armor_color_slot| Takes the armor slot index as a parameter, and returns the color of the armor in the requested slot. |
 | query.armor_material_slot| Takes the armor slot index as a parameter, and returns the armor material type in the requested armor slot. |
 | query.armor_texture_slot| Takes the armor slot index as a parameter, and returns the texture type of the requested slot. |
-| query.average_frame_time| Returns the time in *seconds* of the average frame time over the last 'n' frames.  If an argument is passed, it is assumed to be the number of frames in the past that you wish to query.  `query.average_frame_time` (or the equivalent `query.average_frame_time(0)`) will return the frame time of the frame before the current one.  `query.average_frame_time(1)` will return the average frame time of the previous two frames.  Currently we store the history of the last 30 frames, although note that this may change in the future.  Asking for more frames will result in only sampling the number of frames stored. |
+| query.average_frame_time|  Returns the time in **seconds** of the average frame time over the last 'n' frames.  If an argument is passed, it is assumed to be the number of frames in the past that you wish to query. `query.average_frame_time` (or the equivalent `query.average_frame_time(0)`) will return the frame time of the frame before the current one. `query.average_frame_time(1)` will return the average frame time of the previous two frames.  Currently we store the history of the last 30 frames, although note that this may change in the future.  Asking for more frames will result in only sampling the number of frames stored|
 | query.block_face| Returns the block face for this (only valid for certain triggers such as placing blocks, or interacting with block) (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
 | query.block_property| Returns the value of the associated Blocks Block State. |
 | query.blocking| Returns 1.0 if the entity is blocking, else it returns 0.0. |
 | query.body_x_rotation| Returns the body pitch rotation if called on an actor, else it returns 0.0. |
 | query.body_y_rotation| Returns the body yaw rotation if called on an actor, else it returns 0.0. |
+| query.bone_aabb| Returns the axis aligned bounding box of a bone as a struct with members `.min`, `.max`, along with `.x`, `.y`, and `.z` values for each. |
+| query.bone_origin| Returns the initial (from the .geo) pivot of a bone as a struct with members `.x`, `.y`, and `.z`. |
+| query.bone_rotation| Returns the initial (from the .geo) rotation of a bone as a struct with members `.x`, `.y`, and `.z` in degrees. |
 | query.camera_distance_range_lerp| Takes two distances (any order) and return a number from 0 to 1 based on the camera distance between the two ranges clamped to that range.  For example, `query.camera_distance_range_lerp(10, 20)` will return 0 for any distance less than or equal to 10, 0.2 for a distance of 12, 0.5 for 15, and 1 for 20 or greater.  If you pass in (20, 10), a distance of 20 will return 0.0. |
-| query.camera_rotation| Returns the rotation of the camera.  Requires one argument representing the rotation axis you would like (`0==x`, `1==y`). |
+| query.camera_rotation| Returns the rotation of the camera.  Requires one argument representing the rotation axis you would like (0 for x, 1 for y). |
 | query.can_climb| Returns 1.0 if the entity can climb, else it returns 0.0. |
 | query.can_damage_nearby_mobs| Returns 1.0 if the entity can damage nearby mobs, else it returns 0.0. |
 | query.can_fly| Returns 1.0 if the entity can fly, else it returns 0.0. |
@@ -56,6 +59,7 @@ Query Functions are boolean expressions that allow you to query for values owned
 | query.count| Counts the number of things passed to it (arrays are counted as the number of elements they contain; non-arrays count as 1). |
 | query.current_squish_value| Returns the squish value for the current entity, or 0.0 if this doesn't make sense. |
 | query.day| Returns the day of the current level. |
+| query.death_ticks| Returns the elapsed ticks since the mob started dying. |
 | query.debug_output| Debug log a value to the output debug window for builds that have one. |
 | query.delta_time| Returns the time in seconds since the previous frame. |
 | query.distance_from_camera| Returns the distance of the root of this actor or particle emitter from the camera. |
@@ -215,10 +219,11 @@ Query Functions are boolean expressions that allow you to query for values owned
 | query.previous_squish_value| Returns the previous squish value for the current entity, or 0.0 if this doesn't make sense. |
 | query.remaining_durability| Returns the how much durability an item has remaining. |
 | query.roll_counter| Returns the roll counter of the entity. |
-| query.rotation_to_camera| Returns the rotation required to aim at the camera.  Requires one argument representing the rotation axis you would like (`0==x`, `1==y`). |
+| query.rotation_to_camera| Returns the rotation required to aim at the camera.  Requires one argument representing the rotation axis you would like (0 for x, 1 for y). |
 | query.shake_angle| Returns the shaking angle of the entity if it makes sense, else it returns 0.0. |
 | query.shake_time| Returns the shake time of the entity. |
 | query.shield_blocking_bob| Returns the how much the offhand shield should translate down when blocking and being hit. |
+| query.show_bottom| Returns 1.0 if we render the entity's bottom, else it returns 0.0 |
 | query.sit_amount| Returns the current sit amount of the entity. |
 | query.skin_id| Returns the entity's skin ID. |
 | query.sleep_rotation| Returns the rotation of the bed the player is sleeping on. |
