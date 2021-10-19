@@ -111,7 +111,7 @@ Keys are required and need to be unique from all other keys in the animation con
 
 Players can reference Render Controllers from the vanilla Minecraft Resource Pack or create their own. Custom Render Controllers should be in the textures folder at the root of the Resource Pack.
 
-## locators
+### locators
 
 ```json
 "locators": {
@@ -119,11 +119,16 @@ Players can reference Render Controllers from the vanilla Minecraft Resource Pac
 }
 ```
 
-## enable_attachables
+### enable_attachables
 
-****
 ```json
 "enable_attachables": true
+```
+
+### hide_armor
+
+```json
+"hide_armor": true
 ```
 
 ## Spawn Egg
