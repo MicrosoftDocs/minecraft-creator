@@ -123,7 +123,7 @@ In the Blockbench desktop app, there are up to three methods available to save y
 > In the web app, only the option to export your pack as an MCAddon is available.
 
 > [!IMPORTANT]
-> Available export options are based upon if a connection between Blockbench and Minecraft has been established. Upon launching Blockbench for the first time, you may not see all available export options. To quickly set up a connection you can use the following steps.
+> The **Integrate into Pack** option is only available if you have a behavior pack and a resource pack already imported in Minecraft. Upon launching Blockbench for the first time, you may not see all available export options. To quickly enable this, you can use the following steps.
 >
 > 1. Create an entity.
 > 1. Export to .mcaddon.
