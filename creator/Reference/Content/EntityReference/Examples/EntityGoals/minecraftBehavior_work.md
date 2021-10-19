@@ -16,7 +16,7 @@ ms.prod: gaming
 |active_time| 0| Integer| The amount of ticks the NPC will stay in their the work location |
 |can_work_in_rain| false| Boolean| If true, this entity can work when their worksite POI is being rained on. |
 |goal_cooldown| 0| Integer| The amount of ticks the goal will be on cooldown before it can be used again |
-|on_arrival|*not set* | String|  Event to run when the mob reaches their worksite and finishes working. |
+|on_arrival|*not set* | String| Event to run when the mob reaches their worksite and finishes working. (Can also use a JSON Object type to give the event filters and target) |
 |sound_delay_max| 0| Integer| The max interval in which a sound will play |
 |sound_delay_min| 0| Integer| The min interval in which a sound will play |
 |speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |

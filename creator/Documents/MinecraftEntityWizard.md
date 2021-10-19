@@ -122,6 +122,18 @@ In the Blockbench desktop app, there are up to three methods available to save y
 > [!TIP]
 > In the web app, only the option to export your pack as an MCAddon is available.
 
+> [!IMPORTANT]
+> Available export options are based upon if a connection between Blockbench and Minecraft has been established. Upon launching Blockbench for the first time, you may not see all available export options. To quickly set up a connection you can use the following steps.
+>
+> 1. Create an entity.
+> 1. Export to .mcaddon.
+> 1. double-click the .mcaddon to import it.
+>    1. If Minecraft is open when import has started you will need to relaunch it.
+>    1. If it was closed it will launch as part of the export process.
+> 1. Minecraft recognizes the pack exists.
+> 1. create another entity.
+> After this, the third option will be accessible.
+
 Depending on the export option you have selected, you may need to enter some information about the Add-On that the wizard is about to create.
 
 ### Pack Name

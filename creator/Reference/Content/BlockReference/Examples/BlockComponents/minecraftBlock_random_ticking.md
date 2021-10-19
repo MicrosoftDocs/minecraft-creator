@@ -32,7 +32,7 @@ ms.prod: gaming
 "minecraft:random_ticking":{
     "condition": 1,
     "event": "minecraft:redstone_signal", //custom
-    "range": [10,10],
+    "range": [5,10],
     "target": "self"
 }
 ```
