@@ -25,6 +25,7 @@ To know which Versioned Changes are in effect, look at the `"min_engine_version"
 |:---|:---|
 | 1.17.0| Initial support for Versioned Changes added. (Not actually a Versioned Change) |
 | 1.17.30| Fixed query.item_remaining_use_duration conversion from ticks to seconds (multiplied by 20 instead of dividing). Also fixed normalization logic in that query to go from 1 down to 0 instead of 0 up to 1. |
+| 1.17.40| Added some new error messages for invalid expressions which previously ran with probably unexpected results. For example "'text' + 1" will now cause a content error. |
 
 ## Lexical Structure
 

@@ -29,7 +29,7 @@ ms.prod: gaming
     "priority": 2,
     "can_pickup_any_item":true,
     "can_pickup_to_hand_or_equipment": true,
-    "excluded_items":["sword"],
+    "excluded_items":["iron_sword"],
     "goal_radius": 0.5,
     "max_dist": 0.0,
     "speed_multiplayer": 1.0,

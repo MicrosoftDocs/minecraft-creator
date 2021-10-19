@@ -9,6 +9,14 @@ ms.prod: gaming
 
 Below is a list of all the available Item Components within Minecraft:Bedrock Edition for use with Item JSON files.
 
+>[!IMPORTANT]
+> Item Components requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
+>
+>Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
+>
+>To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md)
+
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |[minecraft:armor](ItemComponents/minecraft_armor.md)|*not set* |  JSON Object| The armor item component determines the amount of protection you have in your armor item.|
