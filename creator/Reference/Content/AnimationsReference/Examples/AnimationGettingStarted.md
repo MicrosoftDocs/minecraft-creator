@@ -73,7 +73,7 @@ While a lot of this can be managed in the entity definition `scripts/animate` se
 
 ```JSON
 {
-  "format_version": "1.10.0",
+  "format_version": "1.17.30",
   "animation_controllers": {
     "controller.animation.my_mob.move": {
       "initial_state": "moving",
