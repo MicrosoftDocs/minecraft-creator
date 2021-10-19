@@ -13,7 +13,7 @@ The Animation Controller format is written in JSON and formatted as shown below:
 
 ```JSON
 {
-  "format_version": "1.10.0",
+  "format_version": "1.17.30",
   "animation_controllers": {
     "controller.animation.sheep.move": {
       "states": {
@@ -51,7 +51,7 @@ Here is the animation controller for a single frame.  It will take the value of 
 
 ```JSON
 {
-  "format_version": "1.10.0",
+  "format_version": "1.17.30",
   "animation_controllers": {
     "controller.animation.sheep.move": {
       "states": {

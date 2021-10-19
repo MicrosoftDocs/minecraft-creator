@@ -22,6 +22,8 @@
    href: minecraftBlock_geometry.md
  - name: immovable
    href: minecraftBlock_immovable.md
+ - name: loot
+   href: minecraftBlock_loot.md
  - name: map_color
    href: minecraftBlock_map_color.md
  - name: material_instances

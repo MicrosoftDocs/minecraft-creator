@@ -64,6 +64,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:birch_standing_sign |
 | minecraft:birch_trapdoor |
 | minecraft:birch_wall_sign |
+| minecraft:black_candle |
+| minecraft:black_candle_cake |
 | minecraft:black_glazed_terracotta |
 | minecraft:blackstone |
 | minecraft:blackstone_double_slab |
@@ -71,6 +73,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:blackstone_stairs |
 | minecraft:blackstone_wall |
 | minecraft:blast_furnace |
+| minecraft:blue_candle |
+| minecraft:blue_candle_cake |
 | minecraft:blue_glazed_terracotta |
 | minecraft:blue_ice |
 | minecraft:bone_block |
@@ -79,6 +83,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:brewing_stand |
 | minecraft:brick_block |
 | minecraft:brick_stairs |
+| minecraft:brown_candle |
+| minecraft:brown_candle_cake |
 | minecraft:brown_glazed_terracotta |
 | minecraft:brown_mushroom |
 | minecraft:brown_mushroom_block |
@@ -89,6 +95,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:calcite |
 | minecraft:camera |
 | minecraft:campfire |
+| minecraft:candle |
+| minecraft:candle_cake |
 | minecraft:carpet |
 | minecraft:carrots |
 | minecraft:cartography_table |
@@ -108,6 +116,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:chorus_flower |
 | minecraft:chorus_plant |
 | minecraft:clay |
+| minecraft:client_request_placeholder_block |
 | minecraft:coal_block |
 | minecraft:coal_ore |
 | minecraft:cobbled_deepslate |
@@ -160,6 +169,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:cut_copper |
 | minecraft:cut_copper_slab |
 | minecraft:cut_copper_stairs |
+| minecraft:cyan_candle |
+| minecraft:cyan_candle_cake |
 | minecraft:cyan_glazed_terracotta |
 | minecraft:dark_oak_button |
 | minecraft:dark_oak_door |
@@ -372,7 +383,11 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:grass |
 | minecraft:grass_path |
 | minecraft:gravel |
+| minecraft:gray_candle |
+| minecraft:gray_candle_cake |
 | minecraft:gray_glazed_terracotta |
+| minecraft:green_candle |
+| minecraft:green_candle_cake |
 | minecraft:green_glazed_terracotta |
 | minecraft:grindstone |
 | minecraft:hanging_roots |
@@ -419,9 +434,15 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:lectern |
 | minecraft:lever |
 | minecraft:light_block |
+| minecraft:light_blue_candle |
+| minecraft:light_blue_candle_cake |
 | minecraft:light_blue_glazed_terracotta |
+| minecraft:light_gray_candle |
+| minecraft:light_gray_candle_cake |
 | minecraft:light_weighted_pressure_plate |
 | minecraft:lightning_rod |
+| minecraft:lime_candle |
+| minecraft:lime_candle_cake |
 | minecraft:lime_glazed_terracotta |
 | minecraft:lit_blast_furnace |
 | minecraft:lit_deepslate_redstone_ore |
@@ -434,6 +455,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:log |
 | minecraft:log2 |
 | minecraft:loom |
+| minecraft:magenta_candle |
+| minecraft:magenta_candle_cake |
 | minecraft:magenta_glazed_terracotta |
 | minecraft:magma |
 | minecraft:medium_amethyst_bud |
@@ -448,6 +471,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:mossy_stone_brick_stairs |
 | minecraft:movingBlock |
 | minecraft:mycelium |
+| minecraft:mysterious_frame |
+| minecraft:mysterious_frame_slot |
 | minecraft:nether_brick |
 | minecraft:nether_brick_fence |
 | minecraft:nether_brick_stairs |
@@ -463,6 +488,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:oak_stairs |
 | minecraft:observer |
 | minecraft:obsidian |
+| minecraft:orange_candle |
+| minecraft:orange_candle_cake |
 | minecraft:orange_glazed_terracotta |
 | minecraft:oxidized_copper |
 | minecraft:oxidized_cut_copper |
@@ -470,6 +497,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:oxidized_cut_copper_stairs |
 | minecraft:oxidized_double_cut_copper_slab |
 | minecraft:packed_ice |
+| minecraft:pink_candle |
+| minecraft:pink_candle_cake |
 | minecraft:pink_glazed_terracotta |
 | minecraft:piston |
 | minecraft:pistonArmCollision |
@@ -507,6 +536,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:prismarine_stairs |
 | minecraft:pumpkin |
 | minecraft:pumpkin_stem |
+| minecraft:purple_candle |
+| minecraft:purple_candle_cake |
 | minecraft:purple_glazed_terracotta |
 | minecraft:purpur_block |
 | minecraft:purpur_stairs |
@@ -518,6 +549,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:raw_copper_block |
 | minecraft:raw_gold_block |
 | minecraft:raw_iron_block |
+| minecraft:red_candle |
+| minecraft:red_candle_cake |
 | minecraft:red_flower |
 | minecraft:red_glazed_terracotta |
 | minecraft:red_mushroom |
@@ -540,7 +573,11 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:sandstone_stairs |
 | minecraft:sapling |
 | minecraft:scaffolding |
+| minecraft:sculk |
+| minecraft:sculk_catalyst |
 | minecraft:sculk_sensor |
+| minecraft:sculk_shrieker |
+| minecraft:sculk_vein |
 | minecraft:sea_pickle |
 | minecraft:seagrass |
 | minecraft:seaLantern |
@@ -677,6 +714,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:web |
 | minecraft:weeping_vines |
 | minecraft:wheat |
+| minecraft:white_candle |
+| minecraft:white_candle_cake |
 | minecraft:white_glazed_terracotta |
 | minecraft:wither_rose |
 | minecraft:wood |
@@ -685,5 +724,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:wooden_pressure_plate |
 | minecraft:wooden_slab |
 | minecraft:wool |
+| minecraft:yellow_candle |
+| minecraft:yellow_candle_cake |
 | minecraft:yellow_flower |
 | minecraft:yellow_glazed_terracotta |
+

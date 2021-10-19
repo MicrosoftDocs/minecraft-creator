@@ -94,7 +94,7 @@ Below is a list of all the available Spawn Rules that entities within Minecraft:
 
 |Entity Spawn Rules JSON |
 |:-----|
-|&nbsp; [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/axolotl.md)|
+|[axolotl](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/axolotl.md)|
 |[bat](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/bat.md)|
 |[bee](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/bee.md)|
 |[blaze](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/blaze.md)|
@@ -109,8 +109,8 @@ Below is a list of all the available Spawn Rules that entities within Minecraft:
 |[enderman](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/enderman.md)|
 |[fox](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/fox.md)|
 |[ghast](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/ghast.md)|
-|&nbsp; [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/glow_squid.md)|
-|&nbsp; [goat](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/goat.md)|
+|[glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/glow_squid.md)|
+|[goat](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/goat.md)|
 |[guardian](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/guardian.md)|
 |[hoglin](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/hoglin.md)|
 |[horse](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/horse.md)|

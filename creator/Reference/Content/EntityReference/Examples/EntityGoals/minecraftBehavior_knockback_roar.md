@@ -21,7 +21,8 @@ ms.prod: gaming
 |duration| 1.0| Decimal| The duration of the roar (in seconds). |
 |knockback_damage| 6| Integer| The damage dealt by the knockback roar. |
 |knockback_range| 4| Integer| The radius (in blocks) of the knockback effect. |
-|knockback_strength| 4| Integer| The strength of the knockback. |
+|knockback_horizontal_strength| 4| Integer|The strength of the horizontal knockback. |
+|knockback_vertical_strength| 4| Integer|The strength of the vertical knockback. |
 |[knockback_filters](../FilterList.md)|*not set*| Minecraft Filter| Filters to use to decide what is affected by knockback roar. |
 |[damage_filters](../FilterList.md)|*not set*| Minecraft Filter| Filters to use to decide what is damaged by knockback roar.|
 |on_roar_end |*not set*| String| Event to run when knockback roar has finished.|
@@ -36,7 +37,8 @@ ms.prod: gaming
     "duration": 2.5,
     "knockback_damage": 3,
     "knockback_range": 4,
-    "knockback_strength": 1
+    "knockback_vertical_strength": 1,
+    "knockback_horizontal_strength": 3
 }
 ```
 

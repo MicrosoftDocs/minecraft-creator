@@ -24,7 +24,7 @@ Will always return placement pos, but interior feature placement not guaranteed.
   "description": {
     "identifier": "..."
   },
-  "places_feature": "example:feature_that_places_a_structure",
+  "places_feature": "minecraft:feature_that_places_a_structure",
   "bounding_box_min": [ -2, 0, -2 ],
   "bounding_box_max": [ 2, 8, 2 ],
   "y_delta": 2.0,

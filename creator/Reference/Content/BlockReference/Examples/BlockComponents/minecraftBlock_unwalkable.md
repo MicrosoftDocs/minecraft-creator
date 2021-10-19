@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:unwalkable` is a `boolean` component that specifies the block as unwalkable.
 
 > [!NOTE]
-> Most mobs will not try to jump over it if the value is set to true
+> Mobs would not attempt to path over top of it when the value is set to true.
 
 ## Default Parameter
 

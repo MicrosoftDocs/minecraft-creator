@@ -15,12 +15,12 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|property|*not set* | MoLang| Block property to set on the block. |
+|property|*not set* | Molang| Block property to set on the block. |
 
 ## Example
 
 ```json
 "set_block_property":{
-    "MoLang":
+    "Molang":
 }
 ```
