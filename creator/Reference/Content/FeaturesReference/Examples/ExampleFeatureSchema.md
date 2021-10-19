@@ -202,7 +202,7 @@ Here is an example of the complete feature schema:
               string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
           }
           float "ratio_of_empty_space" : opt // Ratio of a Chunk to be filled with empty space rather than features.
-          array "feature_areas"[1,*]
+          array "feature_areas"[1,4294967295]
           {
               object "<any array element>" : opt
               {
@@ -368,7 +368,8 @@ Here is an example of the complete feature schema:
           }
           feature_reference "feature_to_snap" // Named reference of feature to be snapped
           int "vertical_search_range" // Range to search for a floor or ceiling for snaping the feature.
-          string "surface" : opt // Defines the surface that the y-value of the placement position will be snapped to. Valid values: 'ceiling' and 'floor'
+          string "surface" : opt // Defines the surface that the y-value of the placement position will be snapped to. Valid values: 'ceiling', 'floor' and 'random_horizontal'
+          bool "allow_underwater_placement" : opt // Features can be snapped through water as well as air.
       }
       object "minecraft:structure_template_feature" : opt
       {
@@ -835,6 +836,45 @@ Here is an example of the complete feature schema:
                   float "[1..1]" // Weight used in random selection. Value is relative to other weights in the collection.
               }
           }
+      }
+      object "minecraft:sculk_patch_feature" : opt
+      {
+          object "description"
+          {
+              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+          }
+          array "replaceable_blocks"
+          {
+               "<any array element>" : opt
+          }
+          array "cant_place_sculk_vein_on"
+          {
+               "<any array element>" : opt
+          }
+           "ground_block"
+          feature_reference "growth_feature" : opt
+          string "surface" : opt
+          int "vertical_range"
+          float "growth_chance" : opt
+           "horizontal_radius"
+      }
+      object "minecraft:catalyst_feature" : opt
+      {
+          object "description"
+          {
+              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+          }
+          array "can_place_sculk_catalyst_on"
+          {
+               "<any array element>" : opt
+          }
+           "central_block"
+          feature_reference "patch_feature" : opt
+          feature_reference "central_patch_feature" : opt
+          int "vertical_range"
+          int "pathes_count_min"
+          int "pathes_count_max"
+          int "max_patch_distance"
       }
   }
 
