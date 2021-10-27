@@ -15,7 +15,7 @@ For example, if your world template relies on the behavior of certain entities, 
 > Base game versioning was introduced in 1.13, so that’s the earliest version of the game this system supports. **Do not** try to set your `base_game_version` to anything below 1.13.
 
 > [!CAUTION]
-> When setting up your content for base versioning, please note that your content will only be able to access content relative to the version used. For example, if you set `"base_game_version": [1, 16, 0]`, you **can not** utilize any Caves and Cliffs content in your Add-Ons that introduced in `[1,17,0]`
+> When setting up your content for base versioning, please note that your content will only be able to access content relative to the version used. For example, if you set `"base_game_version": [1, 16, 0]`, you **can not** utilize any Caves and Cliffs content in your Add-Ons that were introduced in `[1,17,0]`
 
 In this tutorial you will learn the following:
 
