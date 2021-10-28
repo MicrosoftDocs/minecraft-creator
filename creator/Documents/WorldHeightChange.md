@@ -3,7 +3,7 @@ author: v-jeffreykim
 ms.author: v-jeffreykim
 title: World Height Changes
 ms.prod: gaming
-description: Effects of world height changes in Caves & Cliffs: Part II on creators
+description: "Effects of world height changes in Caves & Cliffs: Part II on creators"
 ---
 # World Height Changes
 
@@ -58,4 +58,15 @@ Choosing this option will fill the area below all explored chunks with air and c
 
 ### Updating Flat Worlds
 
-Flat worlds will automatically be updated to reflect the new world height values by shifting the entire world down so that the bottom of the world remains the lowest point in the overworld bounds. This means that the previous bottom of the Flat world (row 0) will now be at a height of row -64 and the new area above the previous world height will be filled with air blocks.
+Similar to Infinite Worlds, Flat Worlds has two scenarios based upon if it's an existing flat world created before 1.18, or if it's a newly generated flat worlds.
+
+> [!NOTE]
+> The `Blocks and Caves` option is not available for flat worlds.
+
+#### Upgrading Existing Flat Worlds
+
+Launching an existing Flat World in 1.18 will adjust the world height to the new values of -64,320  However, block placements and chunks will remain in their original location, with the newly added spaces being filled with air.
+
+#### New Flat World
+
+When creating a new Flat world, the map will automatically be updated to reflect the new world height values by shifting the entire world down so that the bottom of the world remains the lowest point in the overworld bounds. This means that the previous bottom of the Flat world (row 0) will now be at a height of row -64 and the new area above the previous world height will be filled with air blocks.
