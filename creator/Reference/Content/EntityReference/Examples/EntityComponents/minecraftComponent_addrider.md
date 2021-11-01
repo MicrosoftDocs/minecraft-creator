@@ -20,6 +20,11 @@ Reasons a passenger entity cannot be spawned include:
 
 ## Parameters
 
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|entity_type|*not set* | String| The entity identifier of the passenger entity to be spawned. |
+|spawn_event|*not set* | String| *Optional* The string entity event that will be run on the passenger when spawning. |
+
 ### `entity_type`
 
 This is the string identifier of the passenger entity to be spawned.
@@ -29,10 +34,6 @@ This is the string identifier of the passenger entity to be spawned.
 This is the optional string entity event that will be run on the passenger when spawning it. These can be found in the `events` section of the entity's behavior file.
 
 If unspecified, the default `minecraft:entity_spawned` event will be run.
-
->[!NOTE]
-> You can also specify the event in `entity_type`, after the identifier in between angle brackets, like `minecraft:sheep<spawn_adult>`. This event is ignored if `spawn_event` is included. Specifying an event in this manner is not recommended.
-
 
 ## Example
 
@@ -45,13 +46,13 @@ If unspecified, the default `minecraft:entity_spawned` event will be run.
 
 ## Vanilla entities examples
 
-### `spider`
+### spider
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/spider.json" range="14-16":::
 
 ## Vanilla entities using `minecraft:addrider`
 
-- [`cave_spider`](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
-- [`ravager`](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
-- [`spider`](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
-- [`strider`](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
+- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
+- [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
+- [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
+- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
