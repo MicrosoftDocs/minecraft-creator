@@ -22,17 +22,17 @@ highlightedContent:
       itemType: whats-new
       url: Documents/MinecraftEntityWizard.md
     #card
-    - title: Introduction to Add Entity
+    - title: "Experimental Features in Minecraft: Bedrock Edition"
       itemType: whats-new
-      url: Documents/IntroductionToAddEntity.md
+      url: Documents/ExperimentalFeaturesToggle.md
     #card
-    - title: "Installing Add-Ons in Minecraft: Bedrock Edition"
+    - title: World Height Change
       itemType: whats-new
-      url: Documents/AddonPackInstallation.md
+      url: Documents/WorldHeightChange.md
     #card
-    - title: Commonly Used Tools
+    - title: Particle Effects
       itemType: whats-new
-      url: Documents/CommonlyUsedTools.md
+      url: Documents/ParticleEffects.md
     #card
     - title: Chunker - Overview
       itemType: whats-new
