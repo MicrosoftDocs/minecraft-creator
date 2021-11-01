@@ -58,7 +58,7 @@ This can either be a single string identifier for a status effect, or a list of 
 
 ## Vanilla entities examples
 
-### `zombie_villager_v2`
+### zombie_villager_v2
 
 > [!IMPORTANT]
 > The use of `heal` in this example is incorrect and does nothing, since there is no status effect with that name. `instant_health` is the correct name for the effect that heals damage.
