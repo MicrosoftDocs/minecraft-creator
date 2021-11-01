@@ -16,6 +16,11 @@ Similarly to [`minecraft:addrider`](../EntityComponents/minecraftComponent_addri
 
 ## Parameters
 
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|add_effects | *not set*| String| Identifier of the status effect to add. Can set the `durration`, `amplifier`, `ambient`, `visible`, and `display_on_screen_animation`|
+|remove_effects| *not set*| String| Identifier of the status effect to remove if present. | 
+
 ### `add_effects`
 
 This is a list of status effect objects. These define which effects should be added to the entity when the component is applied. Each object contains the following properties:
@@ -55,13 +60,13 @@ This can either be a single string identifier for a status effect, or a list of 
 
 ### `zombie_villager_v2`
 
-> [!NOTE]
+> [!IMPORTANT]
 > The use of `heal` in this example is incorrect and does nothing, since there is no status effect with that name. `instant_health` is the correct name for the effect that heals damage.
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie_villager_v2.json" range="86-98":::
 
 ## Vanilla entities using `minecraft:spell_effects`
 
-- [`player`](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
-- [`zombie_villager_v2`](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-- [`zombie_villager`](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
+- [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
+- [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
+- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
