@@ -30,6 +30,9 @@ Before you load your existing world, you will need to edit it and choose one of 
 Depending on which option you choose, the area below your existing world can be filled with blocks and caves based on the new world generation rules, or it can be filled with air surrounded by bedrock walls.
 This setting will only apply to previously explored and saved chunks - new chunks will be generated with caves and blocks in the new area (rows -64 to -1), regardless of the option chosen.*
 
+> [!WARNING]
+> In order for world generation to work properly, you will need to have a layer of bedrock located on the `0` y coordinate plane. Without the bedrock layer, the maps will not generate new chunks upon updating to `1.18`.
+
 > [!NOTE]
 > If you do not choose an option before loading your world or setting a base game version, your world will automatically be updated with blocks and caves in the area below your existing world.
 
