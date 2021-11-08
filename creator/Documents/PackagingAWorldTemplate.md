@@ -23,7 +23,7 @@ Lastly, you must keep your resource pack and behavior pack folders names to **10
 > [!WARNING]
 > With the upcoming `1.18` release, templates created with Base Game Version `1.17.4` or earlier will be updated with the new world generation tool and may break content when building new maps based upon that template.
 >
-> To learn more about this scenario, please visit [Updating a Template's Base Game Version to 1.18](BaseGameVersioning.md#updating-templates-base-game-version-to-118)
+> To learn more about this scenario, please visit [Updating a World Template's Base Game Version to 1.18](BaseGameVersioning.md#updating-a-world-templates-base-game-version-to-118)
 
 ## World template folder structure
 

@@ -67,7 +67,7 @@ Below, you’ll find an example `manifest.json` for a world template that uses a
 
 Being able to specify what version your world is verified against makes it far less likely to break in future versions of Minecraft. Base game versioning doesn't replace diligent testing and maintenance of your content, but it does allow you to spend more time focusing on creating cool new things instead of fixing old content.
 
-## Updating a Template's Base Game Version to 1.18
+## Updating a World Template's Base Game Version to 1.18
 
 With the upcoming `1.18` release for Caves + Cliffs Part 2, there is a potential for content to break when working with existing templates.
 
