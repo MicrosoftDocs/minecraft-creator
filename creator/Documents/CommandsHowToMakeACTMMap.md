@@ -122,9 +122,9 @@ Once the monument is complete, the player is rewarded with a stack of diamonds. 
 5. A command is needed in order to prevent the command block chain from constantly succeeding, since the sum will always be the same each tick. Setting the score of any wool color to be anything higher than 1 will cause the sum to be higher than 3, preventing the system from flooding the player’s inventory with diamonds. There are plenty of other ways to go about this, including disabling the command block chain in some manner.
 
 ```
-/scoreboard players set ##total_wool totals 0
-/scoreboard players operation ##total_wool totals += * wool_placed
-/scoreboard players test ##total_wool totals 3 3
+/scoreboard players set #total_wool totals 0
+/scoreboard players operation #total_wool totals += * wool_placed
+/scoreboard players test #total_wool totals 3 3
 /give @a diamond 64
 /scoreboard players set #red wool_placed 2
 ```
