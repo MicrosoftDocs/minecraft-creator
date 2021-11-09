@@ -33,9 +33,9 @@ It’s recommended that the following be completed before beginning this tutoria
 
 In the header of your world template’s manifest, you will need to specify the Minecraft version your world template was created for. This is done through a new field called `base_game_version`.
 
-The value you enter should always be the same as the latest version of the game without the third octet. For example, if the latest version of the game was `[1, 14, 2]`, you would use the version `[1, 14, 0]`.
+The value you enter should always be the same as the latest version of the game with a `0` for the third octet. For example, if the latest version of the game was `[1, 14, 2]`, you would use the version `[1, 14, 0]`.
 
-If your content is version agnostic (a simple survival spawn, for instance, which is unlikely to break from future updates), you can forgo locking your content to a specific version by using a "wildcard": `"base_game_version": "*"`.
+If your content is version agnostic (such as a simple survival spawn which is unlikely to break from future updates), you can forgo locking your content to a specific version by using a "wildcard": `"base_game_version": "*"`.
 
 ## Example
 
@@ -65,7 +65,7 @@ Below, you’ll find an example `manifest.json` for a world template that uses a
 }
 ```
 
-Being able to specify what version your world is verified against makes it far less likely to break in future versions of Minecraft. Base game versioning doesn't replace diligent testing and maintenance of your content, but it does allow you to spend more time focusing on creating cool new things instead of fixing old content.
+Specifying what version your world is verified against makes it far less likely to break in future versions of Minecraft. Base game versioning doesn't replace diligent testing and maintenance of your content, but it does allow you to spend more time focusing on creating cool new things instead of fixing old content.
 
 ## Updating a World Template's Base Game Version to 1.18
 
@@ -74,14 +74,14 @@ With the upcoming `1.18` release for Caves + Cliffs Part 2, there is a potential
 > [!IMPORTANT]
 > To learn more about world templates and how creators can use them to create worlds based upon an existing set of rules, visit [Packaging a World Template](PackagingAWorldTemplate.md)
 
- Let's take a look at a potential scenario;
+ Let's take a look at a scenario:
 
-1. A Creator creates a template called **TemplateA** and sets the `base_game_version` to `1.17.4` or previous version.
-1. A player opens Minecraft: Bedrock Edition v1.18, and downloads **TemplateA**
-1. Creator instantiates a new world utilizing **TemplateA** called **WorldA**.
-1. The Creator updates **TemplateA's** `base_game_version` to `1.18`.
+1. A Creator creates a world template called **TemplateA** and sets the `base_game_version` to `[1, 17, 0]`.
+1. A player opens Minecraft: Bedrock Edition v1.18, and downloads **TemplateA**.
+1. Creator instantiates a new world utilizing **TemplateA** and calls it **WorldA**.
+1. The Creator updates **TemplateA's** `base_game_version` to `[1, 18, 0]`.
 1. The Player opens **WorldA**.
 
-In this scenario mentioned above. A creator creates a world template for a version of Minecraft that does not utilize the updated world height changes and is released for others to use. Then, the creator updates the existing template to `1.18`, causing all worlds created by the template to update to the new world generation, causing content to shift in the world.
+In this scenario, a Creator creates and releases a world template for a version of Minecraft that does not utilize the updated world height changes. If the Creator updates the existing template to `[1, 18, 0]` (which does use the new world height), then worlds that players have generated using that template will automatically update to the new world height. This can potentially shift the layout of the worlds and break existing content. 
 
-In order to prevent any loss of information, it is recommended to create a copy of the existing template, **TemplateB** from our scenario, that has the base_game_version set to `1.18` and use this new template for distributing to players.
+In order to prevent any loss of information, it is recommended to create a copy of the existing template, **TemplateB** from our scenario, that has the `base_game_version` set to `1.18` and use this new template for distributing to players.
