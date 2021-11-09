@@ -39,7 +39,7 @@ If your content is version agnostic (such as a simple survival spawn which is un
 
 ## Example
 
-Below, you’ll find an example `manifest.json` for a world template that uses a `base_game_version` of 1.13.0. Remember to update the header and module UUIDs.
+Below, you’ll find an example `manifest.json` for a world template that uses a `base_game_version` of `[1, 13, 0]`. Remember to update the header and module UUIDs.
 
 ```json
 {
@@ -84,4 +84,4 @@ With the upcoming `1.18` release for Caves + Cliffs Part 2, there is a potential
 
 In this scenario, a Creator creates and releases a world template for a version of Minecraft that does not utilize the updated world height changes. If the Creator updates the existing template to `[1, 18, 0]` (which does use the new world height), then worlds that players have generated using that template will automatically update to the new world height. This can potentially shift the layout of the worlds and break existing content. 
 
-In order to prevent any loss of information, it is recommended to create a copy of the existing template, **TemplateB** from our scenario, that has the `base_game_version` set to `1.18` and use this new template for distributing to players.
+In order to prevent any loss of information, it is recommended to create a copy of the existing template, **TemplateB** from our scenario, that has the `base_game_version` set to `[1, 18, 0]` and use this new template for distributing to players.
