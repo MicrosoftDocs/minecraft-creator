@@ -1,5 +1,5 @@
 ---
-ms.author: v-jeffreykim
+ms.author: v-josjones
 title: Base Game Versioning
 ms.prod: gaming
 author: neonerz
@@ -67,3 +67,21 @@ Below, you’ll find an example `manifest.json` for a world template that uses a
 
 Being able to specify what version your world is verified against makes it far less likely to break in future versions of Minecraft. Base game versioning doesn't replace diligent testing and maintenance of your content, but it does allow you to spend more time focusing on creating cool new things instead of fixing old content.
 
+## Updating a World Template's Base Game Version to 1.18
+
+With the upcoming `1.18` release for Caves + Cliffs Part 2, there is a potential for content to break when working with existing templates.
+
+> [!IMPORTANT]
+> To learn more about world templates and how creators can use them to create worlds based upon an existing set of rules, visit [Packaging a World Template](PackagingAWorldTemplate.md)
+
+ Let's take a look at a potential scenario;
+
+1. A Creator creates a template called **TemplateA** and sets the `base_game_version` to `1.17.4` or previous version.
+1. A player opens Minecraft: Bedrock Edition v1.18, and downloads **TemplateA**
+1. Creator instantiates a new world utilizing **TemplateA** called **WorldA**.
+1. The Creator updates **TemplateA's** `base_game_version` to `1.18`.
+1. The Player opens **WorldA**.
+
+In this scenario mentioned above. A creator creates a world template for a version of Minecraft that does not utilize the updated world height changes and is released for others to use. Then, the creator updates the existing template to `1.18`, causing all worlds created by the template to update to the new world generation, causing content to shift in the world.
+
+In order to prevent any loss of information, it is recommended to create a copy of the existing template, **TemplateB** from our scenario, that has the base_game_version set to `1.18` and use this new template for distributing to players.

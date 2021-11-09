@@ -3,16 +3,17 @@ author: v-jeffreykim
 ms.author: v-jeffreykim
 title: World Height Changes
 ms.prod: gaming
-description: "Effects of world height changes in Caves & Cliffs: Part II on creators"
+description: "Effects of world height changes in Caves & Cliffs: Part 2 on creators"
 ---
-# World Height Changes
 
-With the Caves and Cliffs: Part II update, world height will change to add more area above and below existing Minecraft worlds. Prior to the update, world height had a range of `y` values from `0` to `256`. With the update, world height now has a range of `y` values from `-64` to `320`.
+# World Height Changes in Caves & Cliffs Part 2
+
+With the Caves and Cliffs: Part 2 update, world height will change to add more area above and below existing Minecraft worlds. Prior to the update, world height had a range of `y` values from `0` to `256`. With the update, world height now has a range of `y` values from `-64` to `320`.
 
 All existing worlds will be automatically updated to reflect the new world height values when launching version 1.18. The new area above your world (rows `257` to `320`) will be filled with air blocks and you can edit your world to choose how to generate blocks for the new area below your world (rows `-64` to `-1`).
 
 > [!IMPORTANT]
-> You can force your Minecraft worlds to keep the old world height values (0 to 256) by [setting a base game version](BaseGameVersioning.md) of **less than 1.18**. All worlds with no base game version or base game versions of 1.18 or later will be automatically updated to use the new world height values.
+> You can force your Minecraft worlds to keep the old world height values (`0` to `256`) by [setting a base game version](BaseGameVersioning.md) of **less than 1.18**. All worlds with no base game version or base game versions of 1.18 or later will be automatically updated to use the new world height values.
 >
 > You may want to set a base game version if players will encounter issues with your world or gameplay experience with the new world height values.
 
@@ -28,6 +29,9 @@ Before you load your existing world, you will need to edit it and choose one of 
 
 Depending on which option you choose, the area below your existing world can be filled with blocks and caves based on the new world generation rules, or it can be filled with air surrounded by bedrock walls.
 This setting will only apply to previously explored and saved chunks - new chunks will be generated with caves and blocks in the new area (rows -64 to -1), regardless of the option chosen.*
+
+> [!WARNING]
+> In order for world generation to work properly, you will need to have a layer of bedrock located on the `0` y coordinate plane. Without the bedrock layer, the maps will not generate new chunks upon updating to `1.18`.
 
 > [!NOTE]
 > If you do not choose an option before loading your world or setting a base game version, your world will automatically be updated with blocks and caves in the area below your existing world.
