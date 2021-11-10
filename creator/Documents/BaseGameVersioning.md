@@ -22,6 +22,8 @@ In this tutorial you will learn the following:
 > [!div class="checklist"]
 >
 > - How to apply base game versioning to restrict the versions that your Minecraft: Bedrock Edition world templates may be used in.
+> - How to update an existing world template that has been released to the Marketplace.
+> - How to deal with potential issues when updating a world template to 1.18.
 
 ### Requirements
 
@@ -79,9 +81,6 @@ This behavior enables Marketplace creators to update their products at any time 
 ## Updating a World Template's Base Game Version to 1.18
 
 With the upcoming 1.18 release for Caves and Cliffs Part 2, we are making significant changes to world generation. There is a potential for content to break when working with existing templates.
-
-> [!IMPORTANT]
-> To learn more about world templates and how creators can use them to create worlds based upon an existing set of rules, visit [Packaging a World Template](PackagingAWorldTemplate.md).
 
 To ensure that content continues to operate as intended, Minecraft Marketplace Creators will be unable to update the base game version of their content to v1.18+ after the release of client v1.18. This is a temporary measure to ensure that content continues to operate as designed after this large update.  
 
