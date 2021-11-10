@@ -3,10 +3,10 @@ author: v-jeffreykim
 ms.author: v-jeffreykim
 title: World Height Changes
 ms.prod: gaming
-description: "Effects of world height changes in Caves & Cliffs: Part 2 on creators"
+description: "Effects of world height changes in Caves and Cliffs: Part 2 on creators"
 ---
 
-# World Height Changes in Caves & Cliffs Part 2
+# World Height Changes in Caves and Cliffs Part 2
 
 With the Caves and Cliffs: Part 2 update, world height will change to add more area above and below existing Minecraft worlds. Prior to the update, world height had a range of `y` values from `0` to `256`. With the update, world height now has a range of `y` values from `-64` to `320`.
 

@@ -108,4 +108,3 @@ To learn more about the GameTest Framework and how to get started, you can selec
 
 > [!div class="nextstepaction"]
 > [Introduction to the GameTest Framework](GameTestGettingStarted.md)
- 
