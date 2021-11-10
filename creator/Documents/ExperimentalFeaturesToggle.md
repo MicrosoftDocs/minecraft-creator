@@ -8,11 +8,11 @@ description: "An overview of experimental content available to creators in Minec
 
 # Experimental Features in Minecraft: Bedrock Edition
 
-With each retail versions of Minecraft: Bedrock Edition, there are a few features that are currently in an experimental state. Experimental Features can be toggled on for creators who are interested in testing the latest features offered in both the beta and retail versions of Minecraft.
+With each retail version of Minecraft: Bedrock Edition, there are a few features that are currently in an experimental state. Experimental Features can be toggled on for creators who are interested in testing the latest features offered in both the beta and retail versions of Minecraft.
 
-## Experimental Features available in Minecraft Bedrock Edition
+## Experimental Features available in Minecraft: Bedrock Edition
 
-There are two sets of experimental features available to use depending on if you are using a stable (retail) version of Minecraft, or a beta version of Minecraft.
+There are two sets of experimental features available, depending on whether you are using a stable (retail) version of Minecraft or a beta version of Minecraft.
 
 ### Retail
 
@@ -31,7 +31,7 @@ Listed below are the currently available Experimental Features in the latest ret
 Listed below are the currently available Experimental Features in the latest beta build.
 
 > [!NOTE]
-> Difference between available features are marked in **Bold**.
+> Differences between available features are marked in **Bold**.
 
 | Experimental Toggle |Features |
 |:------|:------|
@@ -44,7 +44,7 @@ Listed below are the currently available Experimental Features in the latest bet
 
 ## How do I activate an Experimental Features toggle for my world?
 
-You can activate an experimental toggle for any new world you create and for existing worlds.
+You can activate an experimental toggle for any of your new or existing worlds.
 
 > [!WARNING]
 > Activating experimental features that are still under development means that your world might crash, break, or not work with future updates.
@@ -65,10 +65,10 @@ If you are building a new world from scratch to test experimental features, you 
 
 ### Toggle Experimental Features in an Existing World
 
-If you want to add experimental features to an existing world, you can edit the game settings to similarly to the steps taken when adding experimental features in a new world.
+If you want to add experimental features to an existing world, open that world's game settings and activate the toggles just like you would for a new world.
 
 > [!NOTE]
-> While a copy of your world is generated automatically when activating an experimental feature toggle, in the event of something going wrong, you're also able to create copies of your world manually as an extra precaution.
+> A copy of your world will be generated automatically after you activate an experimental feature toggle. You can also manually create copies of your world as an extra precaution, in case something goes wrong.
 
 1. Select the world you want to add experimental features to and select the **Edit** button.
 
@@ -82,20 +82,20 @@ If you want to add experimental features to an existing world, you can edit the 
 
    ![image showing a pop up to confirm if you want ot activate experimental features in Minecraft](Media/ExperimentalFeatures/ActivateExperiments.png)
 
-Once you select **Activate Experiments**, A copy of your existing world will be created that will get the same name as the original world with “Copy of...” added in front of it.
+After you select **Activate Experiments**, a copy of your existing world will be created. The copy will have the same name as the original world with “Copy of...” added in front of it.
 
 :::image type="content" source="Media/ExperimentalFeatures/CopyOfWorld.png" alt-text="Image showing a duplicated world":::
 
 ### Verify that the World has Experimental Features Enabled
 
-Once you’ve created a world that has an experimental feature toggle enabled, your world will get a **tag** next to the game mode in your Worlds list that says **Experimental**.
+After you’ve created a world that has an experimental feature toggle enabled, your world will get a **tag** next to the game mode in your Worlds list that says **Experimental**.
 
 :::image type="content" source="Media/ExperimentalFeatures/SurvivalExperimental.png" alt-text="image showcasing a survival world that has the Experimental tag applied":::
 
-Another way to identify if your world is using experimental toggles is to visit the settings for your world. On the **Game** world settings, scroll down to the **Experiments** section to see which experiments are enabled.
+Another way to identify if your world is using experimental toggles is to visit the settings for your world. In the **Game** world settings, scroll down to the **Experiments** section to see which experiments are enabled.
 
 > [!IMPORTANT]
-> Worlds that use the experimental features toggle cannot be restored to a non-experimental state.
+> Worlds that use experimental features cannot be restored to a non-experimental state.
 
 ## What's Next?
 
@@ -108,3 +108,4 @@ To learn more about the GameTest Framework and how to get started, you can selec
 
 > [!div class="nextstepaction"]
 > [Introduction to the GameTest Framework](GameTestGettingStarted.md)
+ 
