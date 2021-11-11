@@ -19,34 +19,31 @@ If the component is replaced, the timer resets to the new `duration`.
 
 ## Parameters
 
-### `duration`
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|drop_items|*not set* | List|*(optional)*  List of items will be spawned at the entity. You can increase the count by specifying the same item multiple times. |
+|duration| 1200.0| Decimal| This is amount of time in seconds the timer should last. The progress of the timer is preserved when the entity is unloaded. If set to `-1`, the timer will never advance, and items will have no effect when used.|
+|feed_items|*not set* | List| List of items that can be fed to the entity. Includes 'item' for the item name and 'growth' to define how much time it grows up by |
+|grow_up|*not set* | String|  Event to run when this entity grows up. |
+|transform_to_item|*not set* | String| *(optional)*  defines an item that will be given to the player to replace the item that was consumed. In creative mode, the item is not consumed, so this item will not be received.|
 
-This is amount of time in seconds the timer should last. Decimals are allowed. The progress of the timer is preserved when the entity is unloaded. Defaults to 1200. If set to exactly -1, the timer will never advance, and items will have no effect when used.
-
-### `feed_items`
+### feed_items
 
 This optional field can either be a single item, or a list of them. These define which items can be used on the entity, with a "Feed" prompt, to advance the timer, consuming the item.
 
 An item can either be specified as a string identifier, or as an object with the following properties:
-* `item`: The string identifier.
-* `growth`: An optional decimal number. This defines the proportion of `duration` that the timer will be advanced by when using this item. If unspecified, defaults to 0.1, so 10%. If negative, the timer will advance backwards, and can even cause the timer to take longer than it originally did.
+- `item`: The string identifier.
+- `growth`: An optional decimal number. This defines the proportion of `duration` that the timer will be advanced by when using this item. If unspecified, defaults to `0.1`, so 10%. If negative, the timer will advance backwards, and can even cause the timer to take longer than it originally did.
 
 > [!NOTE]
 > When referencing vanilla items, the `minecraft` namespace is optional. You can also include a legacy damage value in the item name following a colon, such as `dye:4` instead of `lapis_lazuli`.
 
-### `transform_to_item`
 
-This optional string item identifier defines an item that will be given to the player to replace the item that was consumed. In creative mode, the item is not consumed, so this item will not be received.
-
-### `drop_items`
-
-This optional field can either be a single string item identifier, or a list of them. When the timer elapses, these items will be spawned at the entity. You can increase the count by specifying the same item multiple times.
-
-### `grow_up`
+### grow_up
 
 This is the event that runs when the timer elapses. with two fields:
-* `target`: Which entity to run the event on. In this context, it can either be `self` for this entity, or `target` for this entity's target. Defaults to `self`.
-* `event`: The entity event to run. These can be found in the `events` section of the entity's behavior file.
+- `target`: Which entity to run the event on. In this context, it can either be `self` for this entity, or `target` for this entity's target. Defaults to `self`.
+- `event`: The entity event to run. These can be found in the `events` section of the entity's behavior file.
 
 
 ## Example
@@ -75,40 +72,40 @@ This is the event that runs when the timer elapses. with two fields:
 
 ## Vanilla entities examples
 
-### `pig`
+### pig
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/pig.json" range="17-24":::
 
-### `mule`
+### mule
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/mule.json" range="19-55":::
 
 ## Vanilla entities using `minecraft:ageable`
 
-- [`axolotl`](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
-- [`bat`](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
-- [`bee`](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [`chicken`](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
-- [`cow`](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
-- [`dolphin`](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
-- [`donkey`](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [`fox`](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [`goat`](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
-- [`hoglin`](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [`horse`](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [`llama`](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [`mooshroom`](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [`mule`](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [`ocelot`](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
-- [`panda`](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [`pig`](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [`polar_bear`](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
-- [`rabbit`](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
-- [`sheep`](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
-- [`skeleton_horse`](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)
-- [`strider`](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
-- [`turtle`](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
-- [`villager_v2`](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [`villager`](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
-- [`wolf`](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
-- [`zombie_horse`](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_horse.md)
+- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
+- [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
+- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
+- [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
+- [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
+- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
+- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
+- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
+- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
+- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
+- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
+- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
+- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
+- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
+- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
+- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
+- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
+- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
+- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
+- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
+- [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)
+- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
+- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
+- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
+- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
+- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
+- [zombie_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_horse.md)
