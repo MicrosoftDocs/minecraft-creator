@@ -7,13 +7,20 @@ ms.prod: gaming
 
 # Block Documentation - minecraft:unit_cube
 
-`minecraft:unit_cube` is a `String` component that specifies that a unite cube is to be used with tessellation.
+`minecraft:unit_cube` is a `JSON Object` component that specifies that a unite cube is to be used with tessellation.
+
+>[!IMPORTANT]
+> `minecraft:unit_cube` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
+>
+>Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
+>
+>To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md)
 
 ## Default Parameter
 
 |Default Value|Type |
 |:----|:----|
-|*not set*| String|
+|*not set*| JSON Object|
 
 ## Extra Parameters
 

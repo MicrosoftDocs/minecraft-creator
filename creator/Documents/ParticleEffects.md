@@ -1,8 +1,15 @@
 ---
+author: neonerz
+ms.author: v-jeffreykim
 title: Particle Effects
-author: ReWrite-Media
+ms.prod: gaming
 ---
+
 # Particle Effects
+
+From firework rockets leaving smoke behind, to bubbles coming out of a fish's mouth, Particles are a great way to add special effects to content within Minecraft: Bedrock Edition.
+
+:::image type="content" source="Media/ParticleEffects/Particle-Effects.jpg" alt-text="Image showing Alex holding a wand with an array of sparks and flairs emitting from it":::
 
 In this tutorial you will learn the following:
 
@@ -49,9 +56,9 @@ When you open Snowstorm, you’ll see a 3D preview section, a sidebar, the menu 
 
 ![Snowstorm interface](Media/ParticleEffects/snowstorminterface.png)
 
-The sidebar is a list of all the different parameters and settings that make up your particle. Many of the fields support MoLang. This means that you can input static numbers, but if you want to have more control over the value, you can also use mathematical expressions using the MoLang language. Hover over each field to view a description of what it does.
+The sidebar is a list of all the different parameters and settings that make up your particle. Many of the fields support Molang. This means that you can input static numbers, but if you want to have more control over the value, you can also use mathematical expressions using the Molang language. Hover over each field to view a description of what it does.
 
-If you end up with a very complex MoLang expression, you can also edit it in the expression bar right below the menu.
+If you end up with a very complex Molang expression, you can also edit it in the expression bar right below the menu.
 
 ![Expression bar in Snowstorm](Media/ParticleEffects/snowstormexpressionbar.png)
 
@@ -153,9 +160,9 @@ There are three main ways to play particle effects in-game:
 
 ### Commands
 
-This is the simplest way to test an effect. Use the `/particle` command to summon a particle emitter into the world. 
+This is the simplest way to test an effect. Use the `/particle` command to summon a particle emitter into the world.
 
-> [!NOTE] 
+> [!NOTE]
 > Because particle effects are entirely client-side and Commands are run server-side, the server is not aware of particle effects. This means that you won’t get an error message if you try to play a particle effect that doesn’t exist.
 
 Here is an example command: The three tildes at the end of the command indicate the position, in this case the exact position where the command was executed, so the feet position of the player or the center of the command block running the command.
@@ -178,9 +185,9 @@ Add this to your client entity file inside the description object:
 
 Particle effect keyframes can be added to an animation in Blockbench. Click the **Animate Effects** button above the timeline and add a keyframe to the **Particle** channel. Now enter the short name (as defined in the client entity file) into the **Effect** input of the keyframe panel.
 
-You can also specify a locator in the entity file where the particle effect will appear. You can also assign a variable in the **Script** input that can later be used inside the particle effect. 
+You can also specify a locator in the entity file where the particle effect will appear. You can also assign a variable in the **Script** input that can later be used inside the particle effect.
 
-Example: 
+Example:
 
 ```json
 variable.custom_size = 3.14;
@@ -198,8 +205,11 @@ Particle effects can also be played by animation controllers. To do this, first 
 ]
 ```
 
-## Conclusion
+## What's Next?
 
 Congratulations, you’ve made it to the end of the (p)article! You’ve learned how to create a custom particle effect, how to configure the emitter, change the physics, how to use an animated texture, and how to color it.
 
-Creating particle effects is all about trial and error, combining different settings, and using MoLang expressions to power parameters. To learn more, we encourage you to check out the example particles and look through the configuration to learn how different values and expressions can be used to create effects. And, most importantly, to just play around with all parameters, have fun, and to see what you can come up with.
+Creating particle effects is all about trial and error, combining different settings, and using Molang expressions to power parameters. To learn more, we encourage you to check out the example particles and look through the configuration to learn how different values and expressions can be used to create effects. And, most importantly, to just play around with all parameters, have fun, and to see what you can come up with.
+
+> [!div class="nextstepaction"]
+> [Particle JSON Documentation](../Reference/Content/ParticlesReference/index.yml)

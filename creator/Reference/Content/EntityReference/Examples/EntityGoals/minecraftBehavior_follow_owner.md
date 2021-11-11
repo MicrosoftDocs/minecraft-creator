@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.follow_owner` allows an entity to follow a player marked as an owner.
 
 > [!IMPORTANT]
-> `minecraft:behavior.follow_owner` requires the entity to be marked as an owner either via *taming* or setting a console command.
+> `minecraft:behavior.follow_owner` requires the entity to be marked as an owner through taming.
 
 ## Parameters
 

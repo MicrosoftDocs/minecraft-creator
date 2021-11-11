@@ -4,6 +4,8 @@
    href: minecraftBlock_block_light_absorption.md
  - name: breathability
    href: minecraftBlock_breathability.md
+ - name: creative_category
+   href: minecraftBlock_creative_category.md
  - name: destroy_time
    href: minecraftBlock_destroy_time.md
  - name: display_name
@@ -20,12 +22,16 @@
    href: minecraftBlock_geometry.md
  - name: immovable
    href: minecraftBlock_immovable.md
+ - name: loot
+   href: minecraftBlock_loot.md
  - name: map_color
    href: minecraftBlock_map_color.md
  - name: material_instances
    href: minecraftBlock_material_instances.md
  - name: onlypistonpush
    href: minecraftBlock_onlypistonpush.md
+ - name: part_visibility
+   href: minecraftBlock_part_visibility.md
  - name: pick_collision
    href: minecraftBlock_pick_collision.md
  - name: placement_filter

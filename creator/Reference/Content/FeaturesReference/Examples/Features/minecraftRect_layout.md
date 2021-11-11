@@ -24,11 +24,11 @@ No Feature could be placed within a Chunk.
   "ratio_of_empty_space": 0.5,
   "feature_areas":[
     {
-      "feature": "example:tree",
+      "feature": "minecraft:tree",
       "area_dimensions": [Width,Height]
     },
     {
-      "feature": "example:tree2",
+      "feature": "minecraft:tree2",
       "area_dimensions": [Width,Height]
     }
   ]

@@ -13,6 +13,12 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
+| entities | *not set*|List of entities | A list of entities to spawn in |
+
+## Entities
+
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
 | filters| *not set*| Minecraft Filter| If present, the specified entity will only spawn if the filter evaluates to true. |
 | max_wait_time| 600| Integer| Maximum amount of time to randomly wait in seconds before another entity is spawned. |
 | min_wait_time| 300| Integer| Minimum amount of time to randomly wait in seconds before another entity is spawned. |
@@ -29,19 +35,22 @@ ms.prod: gaming
 
 ```json
 "minecraft:spawn_entity":{
-    "filters": [
-        {"test":"is_daytime", "value": false}
-    ] ,
-    "max_wait_time": 600,
-    "min_wait_time": 300,
-    "num_to_spawn": 1,
-    "should_leash": false,
-    "single_use": false,
-    "spawn_entity": ,
-    "spawn_event": "minecraft:entity_born",
-    "spawn_item": "egg",
-    "spawn_method": "born",
-    "spawn_sound": "plop",
+    "entities": [{
+        "filters": [
+            {"test":"is_daytime", "value": false}
+        ] ,
+        "max_wait_time": 600,
+        "min_wait_time": 300,
+        "num_to_spawn": 1,
+        "should_leash": false,
+        "single_use": false,
+        "spawn_entity": ,
+        "spawn_event": "minecraft:entity_born",
+        "spawn_item": "egg",
+        "spawn_method": "born",
+        "spawn_sound": "plop",
+        }
+    ]
 }
 ```
 

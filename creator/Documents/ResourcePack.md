@@ -8,23 +8,27 @@ description: A tutorial that is an introduction to Resource Packs and how to add
 
 # Introduction to Resource Packs
 
-Before building your first Add-On, you will need to create a pack in order to add any custom content in Minecraft: Bedrock Edition. There are two types of packs that a creator can make: resource and behavior packs. In this tutorial, you will learn about resource packs.
+Before building your first Add-On, you will need to create a pack in order to add any custom content in Minecraft: Bedrock Edition. There are two types of packs that a creator can make: resource and behavior packs. A **resource pack** is a folder structure that will contain all of your custom models, sounds, textures and any custom content that is made. resource packs are commonly used to add user generated content to Minecraft in order to augment a player's experience.
 
-A **resource pack** is a folder structure that will contain all of your custom models, sounds, textures and any custom content that is made. resource packs are commonly used to add user generated content to Minecraft in order to augment a player's experience.
+:::image type="content" source="Media/ResourcePack/Introduction-to-Resource-Packs.jpg" alt-text="Image showing a pig deeply confused by its environment containing green dirt blocks":::
 
 In this tutorial, you will learn the following:
 
 > [!div class="checklist"]
+>
 > - Understand how a **resource pack** is created.
 > - How a **manifest file** is created.
 > - How custom textures are loaded into Minecraft.
-> - The concept of * pack Stacking** when working with Add-On content.
+> - The concept of **Pack Stacking** when working with Add-On content.
 
 ### Requirements
 
 It’s recommended that the following be completed before beginning this tutorial:
 
 - [Getting Started with Add-On Development](GettingStarted.md)
+
+You will also need the following:
+
 - Download the [Vanilla resource pack](https://aka.ms/resourcepacktemplate)
 
 ## Building the Resource Pack
@@ -42,11 +46,11 @@ In order to create a new resource pack, you will need to create a new folder to 
 
 In order to load a resource pack into Minecraft, a manifest file will need to be generated. The manifest file is a JSON file that contains the following information;
 
-- **Description** – In-game description of what the resource pack does.
-- **Name** – In-game name of the resource pack.
-- **UUID** - Universally Unique Identifier.
-- **Version** – Version of the resource pack.
-- **Minimum Engine Version** – Required version of Minecraft that this pack will work in.
+- **Description**: In-game description of what the resource pack does.
+- **Name**: In-game name of the resource pack.
+- **UUID**: Universally Unique Identifier.
+- **Version**: Version of the resource pack.
+- **Minimum Engine Version**: Required version of Minecraft that this pack will work in.
 
 Since the file is written in JSON, Minecraft will be able to parse the information from the file and display it in the Add-On section. Inside the file, the information will be split into two separate sections; header and modules. The header section will contain the overall information for the pack, while modules will contain the dedicated packages information.
 
@@ -150,7 +154,7 @@ Since the custom texture is named dirt.png, the texture will be used on every si
 1. **Launch** your world.
 ![Image of Minecraft's Settings page with the Add-On menu selected for resource packs. There is a red rectangle outlining the HelloWorldRP in the menu](Media/ResourcePack/addonsettings.png)
 
-### What's Next?
+## What's Next?
 
 With a custom texture now a part of your Minecraft world, its now time to look at behavior packs and how you can alter existing entity behaviors. In the next section, you will learn how to add an aggressive behavior to a normally peaceful cow entity.
 

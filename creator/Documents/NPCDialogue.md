@@ -25,7 +25,8 @@ The scene file is a json file located inside the **dialogue** folder in the root
 
 The first property is the header which defines this json file as a valid scene file.
 
-Example:
+#### Example:
+
 ```json
 {
     "format_version": "1.17",
@@ -105,6 +106,7 @@ All the scene properties listed above support rawtext.
         ]
     }
 ```
+
 ## Dialogue Command
 
 The Dialogue command is what enables NPCs to open or read scene files. The command has two distinct modes, each with their own unique purpose and syntax.
@@ -229,4 +231,3 @@ Command to trigger the scene:
 ```json
     /dialogue open @e[tag=ducky] @p ducky_intro
 ```
-

@@ -38,7 +38,7 @@ In the settings you can enable/disable both the file and GUI reporting from the 
 
 ![Options to enable error log](Media/ContentErrorLog/enablecontentlog.png)
 
-## What the Content Log GUI looks like
+### What the Content Log GUI looks like
 
 ![Error log GUI when an error occurs](Media/ContentErrorLog/gui.png)
 

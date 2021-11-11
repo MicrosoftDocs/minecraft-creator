@@ -12,6 +12,8 @@ Commands are specific instructions that Minecraft: Bedrock Edition will carry ou
 
 The goal of commands with regards to content creation is to change or react to the environment around the player. Rather than having a static world, the player would be able to perform a task that a command system could detect and respond to in some way. An example of this is detecting if a player has placed a colored wool block at a specific location for a “Complete the Monument” style of map.
 
+:::image type="content" source="Media/Commands/Introduction-to-Commands.jpg" alt-text="Image showcasing four different time of day settings":::
+
 In this tutorial you will learn the following:
 
 > [!div class="checklist"]
@@ -240,7 +242,7 @@ A potential target must match all specified parameters before being selected. Th
 |`scores`|Selects targets that have a particular score in an objective.<br><br>The parameter can specify multiple objectives within a set of curly brackets, with each objective separated by a comma.<br><br>A range between two inclusive values can be specified using “..” notation, such that “3..7” would check for a value between 3 and 7.<br><br>The value of a given objective can be negated to select targets who do not have a matching score value. Note that a null value is not equal to a negated value.|`@e[scores={objectiveA=3}]` will select all entities that have a score of 3 in the “objectiveA” objective.<br><br>`@a[scores={points=4,deaths=!5}]` will select all players that have a “points” score of 4, and do not have a “deaths” score of 5.<br><br>`@a[scores={points=10..50}]` will select all players who have a “points” score between 10 and 50.<br><br>`@a[scores={deaths=10..,points=..2}]` will select all players who have a “deaths” score of 10 or higher and a “points” score of 2 or lower.|
 |`family`|Selects targets who belong to the family type, as defined in an entity's `minecraft:type_family` component.<br><br>The value can be negated to select targets that do not belong to the family type.<br><br> Multiple of this parameter can be used to further restrict targets.|`@e[family=skeleton]` will select all entities who belong to the “skeleton” family.<br><br>`@e[family=!monster]` will select all entities that do not belong to the “monster” family.|
 
-### What's Next?
+## What's Next?
 
 Now that you've learned about commands, the next step is learning about command blocks, which can run commands at will.
 

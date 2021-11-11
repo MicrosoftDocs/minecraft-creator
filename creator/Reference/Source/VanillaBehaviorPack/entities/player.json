@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.17.10",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:player",
@@ -135,7 +135,7 @@
       },
       "minecraft:conditional_bandwidth_optimization": {
       },
-      "minecraft:scaffolding_climber": {},
+      "minecraft:block_climber": {},
       "minecraft:environment_sensor": {
         "triggers": {
           "filters": {

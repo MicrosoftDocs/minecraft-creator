@@ -10,6 +10,8 @@ description: "Building upon the knowledge learned in the Resource Pack Tutorial,
 
 Add Entity refers to a set of features inside Minecraft: Bedrock Edition that allow add-ons to add custom entities to the game. The behavior of entities can be changed with a behavior pack and the appearance with a resource pack. Both are required to add a working entity to the game. This guide will go through the basic steps to create a working entity. In the second part, it will show you how to breathe life into the entity by using behavior components, animations, etc.
 
+:::image type="content" source="Media/AddEntity/Introduction-to-Add-Entity.jpg" alt-text="Image of a Blue Whale that has been created in a modeling package.":::
+
 In this tutorial you will learn the following:
 
 > [!div class="checklist"]
@@ -234,9 +236,9 @@ Animations are stored in animation files. So the first thing we need to do is cr
 }
 ```
 
-Animations allow us to animate the position, rotation, and scale of each bone. Animations can be done with keyframes or MoLang expressions. In some cases, a combination of both. In this example, we'll just use MoLang expressions.
+Animations allow us to animate the position, rotation, and scale of each bone. Animations can be done with keyframes or Molang expressions. In some cases, a combination of both. In this example, we'll just use Molang expressions.
 
-MoLang is a language just for resource and behavior packs. It allows us to get various numbers from the entity using a **query** and calculate a result out of these numbers using math expressions. For example, the query `query.modified_distance_moved` will return the distance the entity has moved. We can use it to calculate the rotation of the robot wheel on the X-axis, which will result in an animation that makes the robot look like it is driving. You have to play around with the numbers, but for this model 60 worked quite well.
+Molang is a language just for resource and behavior packs. It allows us to get various numbers from the entity using a **query** and calculate a result out of these numbers using math expressions. For example, the query `query.modified_distance_moved` will return the distance the entity has moved. We can use it to calculate the rotation of the robot wheel on the X-axis, which will result in an animation that makes the robot look like it is driving. You have to play around with the numbers, but for this model 60 worked quite well.
 
 ```json
 {
@@ -271,7 +273,7 @@ With these two tags added in the description tag of the client entity file, the 
 
 ## Render Controllers
 
-Render controllers allow us to change the geometry, textures, and materials of the entity using MoLang. The following example shows how to use the geometry, material, and texture that have been linked in the client entity file as `default`:
+Render controllers allow us to change the geometry, textures, and materials of the entity using Molang. The following example shows how to use the geometry, material, and texture that have been linked in the client entity file as `default`:
 
 ```json
 {
@@ -298,7 +300,7 @@ Inside the render controller tag, the different resources are specified, but you
 
 ### Geometry
 
-One render controller can only display one geometry at a time. That’s why it is linked directly as one string. This string can be a MoLang expression and should always return a geometry. In this case, it's calling `Geometry.default`, which means that it'll return the geometry that's linked as `default` by whatever entity using the render controller.
+One render controller can only display one geometry at a time. That’s why it is linked directly as one string. This string can be a Molang expression and should always return a geometry. In this case, it's calling `Geometry.default`, which means that it'll return the geometry that's linked as `default` by whatever entity using the render controller.
 
 You can render multiple geometries on one entity by using multiple render controllers. This can be tricky though, and can lead to unexpected behavior. Therefore, it's only recommended for experienced creators.
 
@@ -321,7 +323,7 @@ Textures are specified in an array. In most cases, only one texture will be link
 
 ### Arrays
 
-When working with multiple resources of one type, it can be useful to use an array. An array is a list of resource links that are defined in the render controller, and that you can pick one resource from using MoLang.
+When working with multiple resources of one type, it can be useful to use an array. An array is a list of resource links that are defined in the render controller, and that you can pick one resource from using Molang.
 
 We can define an array for the robot like this:
 
@@ -340,7 +342,7 @@ We can define an array for the robot like this:
 
 In the arrays section we can define arrays for each of the three categories: `textures`, `materials`, and `geometries`. Inside the category, you can define arrays using `Array.<array name>` as the name. Each line inside the array links one texture that's defined in the client entity file.
 
-You can access the array using MoLang. Arrays are 0-based, so the first texture in this array can be accessed through `Array.variant[0]`.
+You can access the array using Molang. Arrays are 0-based, so the first texture in this array can be accessed through `Array.variant[0]`.
 
 In this example, we're using the variant query to pick a texture from the array. The variant of a mob can be changed through the `minecraft:variant` component in the behavior file.
 
@@ -478,9 +480,9 @@ Robots will now spawn anywhere on the surface where animals can spawn and where 
 
 ## Behavior Animations
 
-Behavior animations work similarly to regular animations but run in the behavior pack. While regular animations animate the movement of the model as well as sounds and particles, behavior animations can run regular commands, trigger entity events, or run MoLang expressions. Behavior animations are also often referred to as **Entity Events**, although that name tends to be a bit confusing.
+Behavior animations work similarly to regular animations but run in the behavior pack. While regular animations animate the movement of the model as well as sounds and particles, behavior animations can run regular commands, trigger entity events, or run Molang expressions. Behavior animations are also often referred to as **Entity Events**, although that name tends to be a bit confusing.
 
-Since robots don’t like water, we'll add a mechanic to damage robots in water or rain. First, we're going to create an animation controller to test when the entity is in water using a MoLang query. Create a new folder in the behavior pack called `animation_controllers` and create the file `robot.animation_controllers.json` inside it:
+Since robots don’t like water, we'll add a mechanic to damage robots in water or rain. First, we're going to create an animation controller to test when the entity is in water using a Molang query. Create a new folder in the behavior pack called `animation_controllers` and create the file `robot.animation_controllers.json` inside it:
 
 ```json
 {
@@ -525,7 +527,7 @@ Now, let’s add an animation to give a poison effect to the robot. Create the f
 }
 ```
 
-Instead of using the bone tag here to animate bones, we're using the timeline tag. In resource packs, timelines can only be used to run MoLang code. In behavior animations, you can use this to run MoLang code, commands, or trigger entity events. Note that all these are provided as a string. The game will figure out the type of the string from its content. If the string starts with a slash, it will run as a command. If it fits this scheme: `@s namespace:event`, it will run as an entity event. If it looks like MoLang, it will run as MoLang.
+Instead of using the bone tag here to animate bones, we're using the timeline tag. In resource packs, timelines can only be used to run Molang code. In behavior animations, you can use this to run Molang code, commands, or trigger entity events. Note that all these are provided as a string. The game will figure out the type of the string from its content. If the string starts with a slash, it will run as a command. If it fits this scheme: `@s namespace:event`, it will run as an entity event. If it looks like Molang, it will run as Molang.
 
 For that reason, it's important to start commands with a slash in behavior animations. Also, note that we're applying poison for two seconds because one would not be enough to actually apply damage. The `true` at the end of the command will make the status effect ambient, meaning that there won’t be any particles.
 
@@ -584,9 +586,9 @@ To summarize the relationship between controllers and animations: an animation c
 
 ## What's Next?
 
+In this guide we have added a complete custom entity to the game. The robot spawns randomly in the world, has three random textures, a wheel animation, various components, and a custom water mechanic. If you want to play around with the add-on created in this article, you can download the packs [here](https://drive.google.com/file/d/14w3UCJ4sA9IwvY3fBiP2L5uQJDmbC6A9/view?usp=sharing).
 
-In this guide we have added a complete custom entity to the game. The robot spawns randomly in the world, has three random textures, a wheel animation, various components, and a custom water mechanic. If you want to play around with the add-on created in this article, you can download the packs [here](https://drive.google.com/file/d/14w3UCJ4sA9IwvY3fBiP2L5uQJDmbC6A9/view?usp=sharing). If you want to learn more about custom entities, you can read on about modeling and animating for the client or read further about entity behavior for the server.
-
+If you want to learn more about custom entities, you can read on about modeling and animating for the client or read further about entity behavior for the server.
 
 > [!div class="nextstepaction"]
 > [Entity Modeling and Animation](EntityModelingAndAnimation.md)

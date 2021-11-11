@@ -37,6 +37,7 @@ Within this GameTest world, you'll want to ensure that cheats are enabled and th
 
 >[!IMPORTANT]
 >You’ll also likely want to specify some additional changes in your environment:
+>
 > - Selecting a Creative game mode
 > - Selecting a Flat world
 > - You will want to retain Normal difficulty (mobs work differently compared to Peaceful worlds)

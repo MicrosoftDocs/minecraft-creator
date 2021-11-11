@@ -263,7 +263,7 @@ For example, to detect if there’s a specific block beneath the player and run 
 /execute @a ~ ~ ~ detect ~ ~-1 ~ grass 0 say Player is standing on top of grass.
 ```
 
-### What's Next?
+## What's Next?
 
 After learning about commands and target selectors, command blocks, and a variety of useful commands, it's time to put them together and create a small project in the form of a Complete the Monument system.
 

@@ -149,6 +149,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:area_attack| 1169114880 |
 | minecraft:attack_cooldown| -1439360398 |
 | minecraft:barter| -1660828566 |
+| minecraft:block_climber| -505801518 |
 | minecraft:block_sensor| 1944169706 |
 | minecraft:boostable| -8316315 |
 | minecraft:boss| -1309638025 |
@@ -159,11 +160,13 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:buoyant| -467213736 |
 | minecraft:burns_in_daylight| 1256874605 |
 | minecraft:celebrate_hunt| -789611239 |
+| minecraft:combat_regeneration| -315365016 |
 | minecraft:conditional_bandwidth_optimization| 1333085468 |
 | minecraft:custom_hit_test| 2035968892 |
 | minecraft:damage_over_time| -656420526 |
 | minecraft:damage_sensor| -82616534 |
 | minecraft:despawn| 1674909940 |
+| minecraft:drying_out_timer| 2113510784 |
 | minecraft:economy_trade_table| 1705466896 |
 | minecraft:entity_sensor| -406052184 |
 | minecraft:environment_sensor| 687748970 |
@@ -220,7 +223,6 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:rail_sensor| 1273161273 |
 | minecraft:ravager_blocked| -1417579541 |
 | minecraft:rideable| 1656173828 |
-| minecraft:scaffolding_climber| 169799877 |
 | minecraft:scale_by_age| 64881972 |
 | minecraft:scheduler| -684492525 |
 | minecraft:shareables| 1301057082 |

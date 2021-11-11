@@ -45,12 +45,6 @@ Returns true when the subject entity is a member of the named family.
 | equals| Test for equality. |
 | not| Test for inequality. |
 
-### value
-
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |true |Boolean |(Optional) true or false. |
-
 ## Example
 
 ### Full
