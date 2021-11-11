@@ -20,17 +20,15 @@ ms.prod: gaming
 |effect_duration| 0.0| Decimal|  Duration in seconds of the status ailment applied to the damaged entity |
 |effect_name|*not set* | String|  Identifier of the status ailment to apply to an entity attacked by this entity's melee attack |
 
-
 ![TIP]
 >Decimal values are always rounded down, and values below 0 are treated as 0. Attacks that deal 0 damage still cause knockback, but don't reduce the target's health.
 
-### `effect_name` and `effect_duration`
+### effect_name and effect_duration
 
 These two optional fields define a status effect that should be applied to the target when the entity attacks it. Both must be used together to work properly.
 
-* `effect_name`: The string identifier of the status effect to add. These are the same as used in the `/effect` command.
-* `effect_duration`: The amount of time in seconds the effect should last. This allows for fractional numbers. For example, instant effects should be set to 0.05 seconds (one tick).
-
+- `effect_name`: The string identifier of the status effect to add. These are the same as used in the `/effect` command.
+- `effect_duration`: The amount of time in seconds the effect should last. This allows for fractional numbers. For example, instant effects should be set to 0.05 seconds (one tick).
 
 ## Example
 
