@@ -22,9 +22,9 @@ highlightedContent:
       itemType: whats-new
       url: Documents/MinecraftEntityWizard.md
     #card
-    - title: Introduction to Add Entity
+    - title: Base Game Versioning
       itemType: whats-new
-      url: Documents/IntroductionToAddEntity.md
+      url: Documents/BaseGameVersioning.md
     #card
     - title: "Installing Add-Ons in Minecraft: Bedrock Edition"
       itemType: whats-new
