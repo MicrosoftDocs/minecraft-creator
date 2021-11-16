@@ -12,16 +12,14 @@ description: Contents of the mojang-minecraft.BlockProperties class.
 
 
 
-
-
 ## Constants
-### **active** = `"active"`
+### **active**
 `static read-only active = "active";`
 
 Type: *string*
 
 
-### **age** = `"age"`
+### **age**
 `static read-only age = "age";`
 
 Integer property that represents the age of the block. Valid values are between 0 and 15 inclusive.
@@ -29,7 +27,7 @@ Integer property that represents the age of the block. Valid values are between 
 Type: *string*
 
 
-### **ageBit** = `"age_bit"`
+### **ageBit**
 `static read-only ageBit = "age_bit";`
 
 Boolean property that determines if saplings should grow.
@@ -37,7 +35,7 @@ Boolean property that determines if saplings should grow.
 Type: *string*
 
 
-### **allowUnderwaterBit** = `"allow_underwater_bit"`
+### **allowUnderwaterBit**
 `static read-only allowUnderwaterBit = "allow_underwater_bit";`
 
 Boolean property that determines if an explosion propagates underwater.
@@ -45,7 +43,7 @@ Boolean property that determines if an explosion propagates underwater.
 Type: *string*
 
 
-### **attachedBit** = `"attached_bit"`
+### **attachedBit**
 `static read-only attachedBit = "attached_bit";`
 
 Boolean property that determines if a tripwire is attached to another tripwire.
@@ -53,7 +51,7 @@ Boolean property that determines if a tripwire is attached to another tripwire.
 Type: *string*
 
 
-### **attachment** = `"attachment"`
+### **attachment**
 `static read-only attachment = "attachment";`
 
 String property that represents the type of attachment used by a bell or grindstone block. Valid values are 'standing', 'hanging', 'side' and 'multiple'.
@@ -61,7 +59,7 @@ String property that represents the type of attachment used by a bell or grindst
 Type: *string*
 
 
-### **bambooLeafSize** = `"bamboo_leaf_size"`
+### **bambooLeafSize**
 `static read-only bambooLeafSize = "bamboo_leaf_size";`
 
 String property that determines the thickness of a bamboo stalk. Valid values are 'thin' and 'thick'.
@@ -69,7 +67,7 @@ String property that determines the thickness of a bamboo stalk. Valid values ar
 Type: *string*
 
 
-### **bambooStalkThickness** = `"bamboo_stalk_thickness"`
+### **bambooStalkThickness**
 `static read-only bambooStalkThickness = "bamboo_stalk_thickness";`
 
 String property that determines the size of bamboo leaves. Valid values are 'no_leaves', 'small_leaves', and 'large_leaves'.
@@ -77,13 +75,13 @@ String property that determines the size of bamboo leaves. Valid values are 'no_
 Type: *string*
 
 
-### **bigDripleafHead** = `"big_dripleaf_head"`
+### **bigDripleafHead**
 `static read-only bigDripleafHead = "big_dripleaf_head";`
 
 Type: *string*
 
 
-### **bigDripleafTilt** = `"big_dripleaf_tilt"`
+### **bigDripleafTilt**
 `static read-only bigDripleafTilt = "big_dripleaf_tilt";`
 
 String property that represents the tilt state of big dripleaf block. Valid values are 'none', 'unstable', 'partial_tilt' and 'full_tilt'.
@@ -91,7 +89,7 @@ String property that represents the tilt state of big dripleaf block. Valid valu
 Type: *string*
 
 
-### **biteCounter** = `"bite_counter"`
+### **biteCounter**
 `static read-only biteCounter = "bite_counter";`
 
 Integer property that tracks how many bites of cake have been taken. Valid values are between 0 and 6 inclusive.
@@ -99,19 +97,19 @@ Integer property that tracks how many bites of cake have been taken. Valid value
 Type: *string*
 
 
-### **blockLightLevel** = `"block_light_level"`
+### **blockLightLevel**
 `static read-only blockLightLevel = "block_light_level";`
 
 Type: *string*
 
 
-### **bloom** = `"bloom"`
+### **bloom**
 `static read-only bloom = "bloom";`
 
 Type: *string*
 
 
-### **brewingStandSlotABit** = `"brewing_stand_slot_a_bit"`
+### **brewingStandSlotABit**
 `static read-only brewingStandSlotABit = "brewing_stand_slot_a_bit";`
 
 Boolean property that determines if a bottle is shown in the first slot of the brewing stand.
@@ -119,7 +117,7 @@ Boolean property that determines if a bottle is shown in the first slot of the b
 Type: *string*
 
 
-### **brewingStandSlotBBit** = `"brewing_stand_slot_b_bit"`
+### **brewingStandSlotBBit**
 `static read-only brewingStandSlotBBit = "brewing_stand_slot_b_bit";`
 
 Boolean property that determines if a bottle is shown in the second slot of the brewing stand.
@@ -127,7 +125,7 @@ Boolean property that determines if a bottle is shown in the second slot of the 
 Type: *string*
 
 
-### **brewingStandSlotCBit** = `"brewing_stand_slot_c_bit"`
+### **brewingStandSlotCBit**
 `static read-only brewingStandSlotCBit = "brewing_stand_slot_c_bit";`
 
 Boolean property that determines if a bottle is shown in the third slot of the brewing stand.
@@ -135,7 +133,7 @@ Boolean property that determines if a bottle is shown in the third slot of the b
 Type: *string*
 
 
-### **buttonPressedBit** = `"button_pressed_bit"`
+### **buttonPressedBit**
 `static read-only buttonPressedBit = "button_pressed_bit";`
 
 Boolean property that determines if a button is in a pressed state or not.
@@ -143,7 +141,7 @@ Boolean property that determines if a button is in a pressed state or not.
 Type: *string*
 
 
-### **candles** = `"candles"`
+### **candles**
 `static read-only candles = "candles";`
 
 Integer property that describes how many extra candles are in the same block space. Valid values are between 0 and 3 inclusive.
@@ -151,7 +149,7 @@ Integer property that describes how many extra candles are in the same block spa
 Type: *string*
 
 
-### **cauldronLiquid** = `"cauldron_liquid"`
+### **cauldronLiquid**
 `static read-only cauldronLiquid = "cauldron_liquid";`
 
 String property that represents the type of liquid in a cauldron. Valid values are 'water', 'powder_snow', and 'lava'.
@@ -159,7 +157,7 @@ String property that represents the type of liquid in a cauldron. Valid values a
 Type: *string*
 
 
-### **chemistryTableType** = `"chemistry_table_type"`
+### **chemistryTableType**
 `static read-only chemistryTableType = "chemistry_table_type";`
 
 String property that represents the type of work benches that are within Minecraft Education experiences. Valid values are 'compound_creator', 'material_reducer', 'element_constructor' and 'lab_table'.
@@ -167,7 +165,7 @@ String property that represents the type of work benches that are within Minecra
 Type: *string*
 
 
-### **chiselType** = `"chisel_type"`
+### **chiselType**
 `static read-only chiselType = "chisel_type";`
 
 String property determines the pattern of quartz and purpur blocks. Valid values are 'default', 'chiseled', 'lines', 'smooth'.
@@ -175,7 +173,7 @@ String property determines the pattern of quartz and purpur blocks. Valid values
 Type: *string*
 
 
-### **clusterCount** = `"cluster_count"`
+### **clusterCount**
 `static read-only clusterCount = "cluster_count";`
 
 Integer property that describes how many sea pickles are in a cluster. Valid values are between 0 and 3 inclusive.
@@ -183,7 +181,7 @@ Integer property that describes how many sea pickles are in a cluster. Valid val
 Type: *string*
 
 
-### **color** = `"color"`
+### **color**
 `static read-only color = "color";`
 
 String property that represents the color of a block, like wool. Valid values are 'white', 'orange', 'magenta', 'light_blue', 'yellow', 'lime', 'pink', 'gray', 'silver', 'cyan', 'purple', 'blue', 'brown', 'green', 'red' and 'black'.
@@ -191,7 +189,7 @@ String property that represents the color of a block, like wool. Valid values ar
 Type: *string*
 
 
-### **colorBit** = `"color_bit"`
+### **colorBit**
 `static read-only colorBit = "color_bit";`
 
 Boolean property that determines if a torch has a particular color.
@@ -199,13 +197,13 @@ Boolean property that determines if a torch has a particular color.
 Type: *string*
 
 
-### **composterFillLevel** = `"composter_fill_level"`
+### **composterFillLevel**
 `static read-only composterFillLevel = "composter_fill_level";`
 
 Type: *string*
 
 
-### **conditionalBit** = `"conditional_bit"`
+### **conditionalBit**
 `static read-only conditionalBit = "conditional_bit";`
 
 Boolean property that determines if a command block is conditional or not.
@@ -213,7 +211,7 @@ Boolean property that determines if a command block is conditional or not.
 Type: *string*
 
 
-### **coralColor** = `"coral_color"`
+### **coralColor**
 `static read-only coralColor = "coral_color";`
 
 String property that represents the color of a coral block. Valid values are 'blue', 'pink', 'purple', 'red', 'yellow', 'blue dead', 'pink dead', 'red dead', and 'yellow dead'.
@@ -221,7 +219,7 @@ String property that represents the color of a coral block. Valid values are 'bl
 Type: *string*
 
 
-### **coralDirection** = `"coral_direction"`
+### **coralDirection**
 `static read-only coralDirection = "coral_direction";`
 
 Integer property that describes the rotation of coral fans. Valid values are between 0 and 3 inclusive.
@@ -229,13 +227,13 @@ Integer property that describes the rotation of coral fans. Valid values are bet
 Type: *string*
 
 
-### **coralFanDirection** = `"coral_fan_direction"`
+### **coralFanDirection**
 `static read-only coralFanDirection = "coral_fan_direction";`
 
 Type: *string*
 
 
-### **coralHangTypeBit** = `"coral_hang_type_bit"`
+### **coralHangTypeBit**
 `static read-only coralHangTypeBit = "coral_hang_type_bit";`
 
 Boolean property that represents the type of hanging for coral fan.
@@ -243,7 +241,7 @@ Boolean property that represents the type of hanging for coral fan.
 Type: *string*
 
 
-### **coveredBit** = `"covered_bit"`
+### **coveredBit**
 `static read-only coveredBit = "covered_bit";`
 
 Boolean property that describes if a top snow block is covering another block.
@@ -251,7 +249,7 @@ Boolean property that describes if a top snow block is covering another block.
 Type: *string*
 
 
-### **crackedState** = `"cracked_state"`
+### **crackedState**
 `static read-only crackedState = "cracked_state";`
 
 String property that determines the cracked state of turtle eggs. Valid values are 'no_cracks', 'cracked', and 'max_cracked'.
@@ -259,7 +257,7 @@ String property that determines the cracked state of turtle eggs. Valid values a
 Type: *string*
 
 
-### **damage** = `"damage"`
+### **damage**
 `static read-only damage = "damage";`
 
 String property that determines the damage state of an anvil. Valid values are 'undamaged', 'slightly_damaged', 'very_damaged', and 'broken'
@@ -267,7 +265,7 @@ String property that determines the damage state of an anvil. Valid values are '
 Type: *string*
 
 
-### **deadBit** = `"dead_bit"`
+### **deadBit**
 `static read-only deadBit = "dead_bit";`
 
 Boolean property that determines if coral, coral fans, or sea pickles are dead.
@@ -275,13 +273,13 @@ Boolean property that determines if coral, coral fans, or sea pickles are dead.
 Type: *string*
 
 
-### **deprecated** = `"deprecated"`
+### **deprecated**
 `static read-only deprecated = "deprecated";`
 
 Type: *string*
 
 
-### **direction** = `"direction"`
+### **direction**
 `static read-only direction = "direction";`
 
 Integer property determines the north, south, east, or west direction of a block. Valid values include are south = 0, west = 1, north = 2, east = 3.
@@ -289,7 +287,7 @@ Integer property determines the north, south, east, or west direction of a block
 Type: *string*
 
 
-### **dirtType** = `"dirt_type"`
+### **dirtType**
 `static read-only dirtType = "dirt_type";`
 
 String property that determines the dirt type of a block. Valid values are 'normal' and 'coarse'.
@@ -297,7 +295,7 @@ String property that determines the dirt type of a block. Valid values are 'norm
 Type: *string*
 
 
-### **disarmedBit** = `"disarmed_bit"`
+### **disarmedBit**
 `static read-only disarmedBit = "disarmed_bit";`
 
 Boolean property that determines if a tripwire is disarmed or not.
@@ -305,7 +303,7 @@ Boolean property that determines if a tripwire is disarmed or not.
 Type: *string*
 
 
-### **doorHingeBit** = `"door_hinge_bit"`
+### **doorHingeBit**
 `static read-only doorHingeBit = "door_hinge_bit";`
 
 Boolean property that determines if a door's hinge is mirrored or not.
@@ -313,7 +311,7 @@ Boolean property that determines if a door's hinge is mirrored or not.
 Type: *string*
 
 
-### **doublePlantType** = `"double_plant_type"`
+### **doublePlantType**
 `static read-only doublePlantType = "double_plant_type";`
 
 String property that represents the type of a double plant block. Valid values are 'sunflower', 'syringa', 'grass', 'fern', 'rose', and 'paeonia'.
@@ -321,7 +319,7 @@ String property that represents the type of a double plant block. Valid values a
 Type: *string*
 
 
-### **dragDown** = `"drag_down"`
+### **dragDown**
 `static read-only dragDown = "drag_down";`
 
 Boolean property that describes if bubble columns drag entities down or push them up.
@@ -329,7 +327,7 @@ Boolean property that describes if bubble columns drag entities down or push the
 Type: *string*
 
 
-### **dripstoneThickness** = `"dripstone_thickness"`
+### **dripstoneThickness**
 `static read-only dripstoneThickness = "dripstone_thickness";`
 
 String property that represents the type of a pointed dripstone block. Valid values are 'tip', 'frustum', 'base', 'middle' and 'merge'.
@@ -337,7 +335,7 @@ String property that represents the type of a pointed dripstone block. Valid val
 Type: *string*
 
 
-### **endPortalEyeBit** = `"end_portal_eye_bit"`
+### **endPortalEyeBit**
 `static read-only endPortalEyeBit = "end_portal_eye_bit";`
 
 Boolean property that determines if an end portal block has an Eye of Ender in it.
@@ -345,7 +343,7 @@ Boolean property that determines if an end portal block has an Eye of Ender in i
 Type: *string*
 
 
-### **explodeBit** = `"explode_bit"`
+### **explodeBit**
 `static read-only explodeBit = "explode_bit";`
 
 Boolean property that determines if a TNT block should start its explode sequence.
@@ -353,13 +351,13 @@ Boolean property that determines if a TNT block should start its explode sequenc
 Type: *string*
 
 
-### **extinguished** = `"extinguished"`
+### **extinguished**
 `static read-only extinguished = "extinguished";`
 
 Type: *string*
 
 
-### **facingDirection** = `"facing_direction"`
+### **facingDirection**
 `static read-only facingDirection = "facing_direction";`
 
 Integer property that determines the facing direction of some types of blocks. Valid values include down = 0, up = 1, north = 2, south = 3, west = 4, east = 5.
@@ -367,7 +365,7 @@ Integer property that determines the facing direction of some types of blocks. V
 Type: *string*
 
 
-### **fillLevel** = `"fill_level"`
+### **fillLevel**
 `static read-only fillLevel = "fill_level";`
 
 Integer property that determines the fill level of a cauldron block. Valid values are between 0 and 6 inclusive.
@@ -375,7 +373,7 @@ Integer property that determines the fill level of a cauldron block. Valid value
 Type: *string*
 
 
-### **flowerType** = `"flower_type"`
+### **flowerType**
 `static read-only flowerType = "flower_type";`
 
 String property that represents the type of flow. Valid values are 'poppy', 'orchid', 'allium', 'houstonia', 'tulip_red', 'tulip_orange', 'tulip_white', 'tulip_pink', 'oxeye', 'cornflower' and 'lily_of_the_valley'.
@@ -383,7 +381,7 @@ String property that represents the type of flow. Valid values are 'poppy', 'orc
 Type: *string*
 
 
-### **groundSignDirection** = `"ground_sign_direction"`
+### **groundSignDirection**
 `static read-only groundSignDirection = "ground_sign_direction";`
 
 Integer property that represents the rotation of signs and standing banners. Valid values are between 0 and 15 inclusive.
@@ -391,13 +389,13 @@ Integer property that represents the rotation of signs and standing banners. Val
 Type: *string*
 
 
-### **growingPlantAge** = `"growing_plant_age"`
+### **growingPlantAge**
 `static read-only growingPlantAge = "growing_plant_age";`
 
 Type: *string*
 
 
-### **growth** = `"growth"`
+### **growth**
 `static read-only growth = "growth";`
 
 Integer property that determines the growth level of crops. Valid values are between 0 and 7 inclusive.
@@ -405,7 +403,7 @@ Integer property that determines the growth level of crops. Valid values are bet
 Type: *string*
 
 
-### **hanging** = `"hanging"`
+### **hanging**
 `static read-only hanging = "hanging";`
 
 Boolean property that represents if a lantern block is hanging or not.
@@ -413,7 +411,7 @@ Boolean property that represents if a lantern block is hanging or not.
 Type: *string*
 
 
-### **headPieceBit** = `"head_piece_bit"`
+### **headPieceBit**
 `static read-only headPieceBit = "head_piece_bit";`
 
 Boolean property that determines if a block is the pillow side of a bed.
@@ -421,7 +419,7 @@ Boolean property that determines if a block is the pillow side of a bed.
 Type: *string*
 
 
-### **height** = `"height"`
+### **height**
 `static read-only height = "height";`
 
 Integer property that determines the height of a top snow block. Valid values are between 0 and 7 inclusive.
@@ -429,13 +427,13 @@ Integer property that determines the height of a top snow block. Valid values ar
 Type: *string*
 
 
-### **honeyLevel** = `"honey_level"`
+### **honeyLevel**
 `static read-only honeyLevel = "honey_level";`
 
 Type: *string*
 
 
-### **hugeMushroomBits** = `"huge_mushroom_bits"`
+### **hugeMushroomBits**
 `static read-only hugeMushroomBits = "huge_mushroom_bits";`
 
 Integer property that determines which huge mushroom block should be displayed. Valid values are between 0 and 15 inclusive.
@@ -443,7 +441,7 @@ Integer property that determines which huge mushroom block should be displayed. 
 Type: *string*
 
 
-### **infiniburnBit** = `"infiniburn_bit"`
+### **infiniburnBit**
 `static read-only infiniburnBit = "infiniburn_bit";`
 
 Boolean property that determines if a block should burn infinitely.
@@ -451,7 +449,7 @@ Boolean property that determines if a block should burn infinitely.
 Type: *string*
 
 
-### **inWallBit** = `"in_wall_bit"`
+### **inWallBit**
 `static read-only inWallBit = "in_wall_bit";`
 
 Boolean property that determines if a fence block is connected to a wall block.
@@ -459,7 +457,7 @@ Boolean property that determines if a fence block is connected to a wall block.
 Type: *string*
 
 
-### **itemFrameMapBit** = `"item_frame_map_bit"`
+### **itemFrameMapBit**
 `static read-only itemFrameMapBit = "item_frame_map_bit";`
 
 Boolean property that describes if an item frame block has a map in it.
@@ -467,25 +465,25 @@ Boolean property that describes if an item frame block has a map in it.
 Type: *string*
 
 
-### **itemFramePhotoBit** = `"item_frame_photo_bit"`
+### **itemFramePhotoBit**
 `static read-only itemFramePhotoBit = "item_frame_photo_bit";`
 
 Type: *string*
 
 
-### **kelpAge** = `"kelp_age"`
+### **kelpAge**
 `static read-only kelpAge = "kelp_age";`
 
 Type: *string*
 
 
-### **leverDirection** = `"lever_direction"`
+### **leverDirection**
 `static read-only leverDirection = "lever_direction";`
 
 Type: *string*
 
 
-### **liquidDepth** = `"liquid_depth"`
+### **liquidDepth**
 `static read-only liquidDepth = "liquid_depth";`
 
 Integer property that represents the level of liquid blocks. Valid values are between 0 and 15 inclusive.
@@ -493,7 +491,7 @@ Integer property that represents the level of liquid blocks. Valid values are be
 Type: *string*
 
 
-### **lit** = `"lit"`
+### **lit**
 `static read-only lit = "lit";`
 
 Boolean property that determines if a block is lit or not.
@@ -501,7 +499,7 @@ Boolean property that determines if a block is lit or not.
 Type: *string*
 
 
-### **moisturizedAmount** = `"moisturized_amount"`
+### **moisturizedAmount**
 `static read-only moisturizedAmount = "moisturized_amount";`
 
 Integer property that represents the moisture level of crop. Valid values are between 0 and 7 inclusive.
@@ -509,7 +507,7 @@ Integer property that represents the moisture level of crop. Valid values are be
 Type: *string*
 
 
-### **monsterEggStoneType** = `"monster_egg_stone_type"`
+### **monsterEggStoneType**
 `static read-only monsterEggStoneType = "monster_egg_stone_type";`
 
 String property that represents the stone type of an Infested Stone block. Valid values are 'stone', 'cobblestone', 'stone_brick', 'mossy_stone_brick', 'cracked_stone_brick' and 'chiseled_stone_brick'.
@@ -517,13 +515,13 @@ String property that represents the stone type of an Infested Stone block. Valid
 Type: *string*
 
 
-### **multiFaceDirectionBits** = `"multi_face_direction_bits"`
+### **multiFaceDirectionBits**
 `static read-only multiFaceDirectionBits = "multi_face_direction_bits";`
 
 Type: *string*
 
 
-### **newLeafType** = `"new_leaf_type"`
+### **newLeafType**
 `static read-only newLeafType = "new_leaf_type";`
 
 String property that represents the leaf type of some block types. Valid values are 'acacia' and 'dark_oak'.
@@ -531,7 +529,7 @@ String property that represents the leaf type of some block types. Valid values 
 Type: *string*
 
 
-### **newLogType** = `"new_log_type"`
+### **newLogType**
 `static read-only newLogType = "new_log_type";`
 
 String property that represents the wood type of certain types of blocks. Valid values are 'acacia' and 'dark_oak'.
@@ -539,7 +537,7 @@ String property that represents the wood type of certain types of blocks. Valid 
 Type: *string*
 
 
-### **noDropBit** = `"no_drop_bit"`
+### **noDropBit**
 `static read-only noDropBit = "no_drop_bit";`
 
 Boolean property that determines if a skull block should drop loot.
@@ -547,7 +545,7 @@ Boolean property that determines if a skull block should drop loot.
 Type: *string*
 
 
-### **occupiedBit** = `"occupied_bit"`
+### **occupiedBit**
 `static read-only occupiedBit = "occupied_bit";`
 
 Boolean property that determines if a bed block is occupied.
@@ -555,7 +553,7 @@ Boolean property that determines if a bed block is occupied.
 Type: *string*
 
 
-### **oldLeafType** = `"old_leaf_type"`
+### **oldLeafType**
 `static read-only oldLeafType = "old_leaf_type";`
 
 String property that represents the leaf type of some block types. Valid values are 'oak', 'spruce', 'birch', and 'jungle'.
@@ -563,7 +561,7 @@ String property that represents the leaf type of some block types. Valid values 
 Type: *string*
 
 
-### **oldLogType** = `"old_log_type"`
+### **oldLogType**
 `static read-only oldLogType = "old_log_type";`
 
 String property that determines the wood type of certain types of blocks. Valid values are 'oak', 'spruce', 'birch' and 'jungle'.
@@ -571,7 +569,7 @@ String property that determines the wood type of certain types of blocks. Valid 
 Type: *string*
 
 
-### **openBit** = `"open_bit"`
+### **openBit**
 `static read-only openBit = "open_bit";`
 
 Boolean property that determines if a door, gate, or trapdoor is open.
@@ -579,7 +577,7 @@ Boolean property that determines if a door, gate, or trapdoor is open.
 Type: *string*
 
 
-### **outputLitBit** = `"output_lit_bit"`
+### **outputLitBit**
 `static read-only outputLitBit = "output_lit_bit";`
 
 Boolean property that determines if a comparator's output is lit.
@@ -587,7 +585,7 @@ Boolean property that determines if a comparator's output is lit.
 Type: *string*
 
 
-### **outputSubtractBit** = `"output_subtract_bit"`
+### **outputSubtractBit**
 `static read-only outputSubtractBit = "output_subtract_bit";`
 
 Boolean property that determines if a comparator is set to subtract output.
@@ -595,7 +593,7 @@ Boolean property that determines if a comparator is set to subtract output.
 Type: *string*
 
 
-### **persistentBit** = `"persistent_bit"`
+### **persistentBit**
 `static read-only persistentBit = "persistent_bit";`
 
 Boolean property that determines if a leaf block is persistent.
@@ -603,13 +601,13 @@ Boolean property that determines if a leaf block is persistent.
 Type: *string*
 
 
-### **pillarAxis** = `"pillar_axis"`
+### **pillarAxis**
 `static read-only pillarAxis = "pillar_axis";`
 
 Type: *string*
 
 
-### **portalAxis** = `"portal_axis"`
+### **portalAxis**
 `static read-only portalAxis = "portal_axis";`
 
 String property that determines the orientation of portal blocks. Valid values include 'unknown', 'x', and 'z'.
@@ -617,7 +615,7 @@ String property that determines the orientation of portal blocks. Valid values i
 Type: *string*
 
 
-### **poweredBit** = `"powered_bit"`
+### **poweredBit**
 `static read-only poweredBit = "powered_bit";`
 
 Boolean property that is true when an observer or tripwire sends a redstone signal.
@@ -625,13 +623,13 @@ Boolean property that is true when an observer or tripwire sends a redstone sign
 Type: *string*
 
 
-### **prismarineBlockType** = `"prismarine_block_type"`
+### **prismarineBlockType**
 `static read-only prismarineBlockType = "prismarine_block_type";`
 
 Type: *string*
 
 
-### **railDataBit** = `"rail_data_bit"`
+### **railDataBit**
 `static read-only railDataBit = "rail_data_bit";`
 
 Boolean property that returns true if a rail has a redstone signal.
@@ -639,7 +637,7 @@ Boolean property that returns true if a rail has a redstone signal.
 Type: *string*
 
 
-### **railDirection** = `"rail_direction"`
+### **railDirection**
 `static read-only railDirection = "rail_direction";`
 
 Integer property determines the orientation of a placed rail block. Valid values are between 0 and 8 inclusive.
@@ -647,7 +645,7 @@ Integer property determines the orientation of a placed rail block. Valid values
 Type: *string*
 
 
-### **redstoneSignal** = `"redstone_signal"`
+### **redstoneSignal**
 `static read-only redstoneSignal = "redstone_signal";`
 
 Integer property that determines the signal strength of a redstone signal. Valid values are between 0 and 15 inclusive.
@@ -655,7 +653,7 @@ Integer property that determines the signal strength of a redstone signal. Valid
 Type: *string*
 
 
-### **repeaterDelay** = `"repeater_delay"`
+### **repeaterDelay**
 `static read-only repeaterDelay = "repeater_delay";`
 
 Integer property that represents the amount of delay of a repeater. Valid values are between 0 and 3 inclusive.
@@ -663,19 +661,19 @@ Integer property that represents the amount of delay of a repeater. Valid values
 Type: *string*
 
 
-### **respawnAnchorCharge** = `"respawn_anchor_charge"`
+### **respawnAnchorCharge**
 `static read-only respawnAnchorCharge = "respawn_anchor_charge";`
 
 Type: *string*
 
 
-### **rotation** = `"rotation"`
+### **rotation**
 `static read-only rotation = "rotation";`
 
 Type: *string*
 
 
-### **sandStoneType** = `"sand_stone_type"`
+### **sandStoneType**
 `static read-only sandStoneType = "sand_stone_type";`
 
 String property that represents the pattern of a sandstone block. Valid values are 'default', 'heiroglyphs', 'cut', and 'smooth'.
@@ -683,7 +681,7 @@ String property that represents the pattern of a sandstone block. Valid values a
 Type: *string*
 
 
-### **sandType** = `"sand_type"`
+### **sandType**
 `static read-only sandType = "sand_type";`
 
 String property that represents the sand type of a block. Valid values are 'normal' and 'red'.
@@ -691,7 +689,7 @@ String property that represents the sand type of a block. Valid values are 'norm
 Type: *string*
 
 
-### **saplingType** = `"sapling_type"`
+### **saplingType**
 `static read-only saplingType = "sapling_type";`
 
 String property that determines the type of the sapling block. Valid values are 'evergreen', 'birch', 'jungle', 'acacia', and 'roofed_oak'.
@@ -699,7 +697,7 @@ String property that determines the type of the sapling block. Valid values are 
 Type: *string*
 
 
-### **seaGrassType** = `"sea_grass_type"`
+### **seaGrassType**
 `static read-only seaGrassType = "sea_grass_type";`
 
 String property that determines the type of a sea grass block. Valid values are 'default', 'double_top' and 'double_bot'.
@@ -707,7 +705,7 @@ String property that determines the type of a sea grass block. Valid values are 
 Type: *string*
 
 
-### **spongeType** = `"sponge_type"`
+### **spongeType**
 `static read-only spongeType = "sponge_type";`
 
 String property that represents the type of a sponge block. Valid values are 'dry' and 'wet'.
@@ -715,7 +713,7 @@ String property that represents the type of a sponge block. Valid values are 'dr
 Type: *string*
 
 
-### **stability** = `"stability"`
+### **stability**
 `static read-only stability = "stability";`
 
 Integer property that determines the stability of a scaffolding block. Valid values are between 0 and 5 inclusive.
@@ -723,7 +721,7 @@ Integer property that determines the stability of a scaffolding block. Valid val
 Type: *string*
 
 
-### **stabilityCheck** = `"stability_check"`
+### **stabilityCheck**
 `static read-only stabilityCheck = "stability_check";`
 
 Boolean property that describes if a scaffolding block has been checked for stability.
@@ -731,7 +729,7 @@ Boolean property that describes if a scaffolding block has been checked for stab
 Type: *string*
 
 
-### **stoneBrickType** = `"stone_brick_type"`
+### **stoneBrickType**
 `static read-only stoneBrickType = "stone_brick_type";`
 
 String property that determines the type of a stone brick block. Valid values are 'default', 'mossy', 'cracked', 'chiseled' and 'smooth'.
@@ -739,7 +737,7 @@ String property that determines the type of a stone brick block. Valid values ar
 Type: *string*
 
 
-### **stoneSlabType** = `"stone_slab_type"`
+### **stoneSlabType**
 `static read-only stoneSlabType = "stone_slab_type";`
 
 String property that represents the type of certain types of stone slab blocks. Valid values are 'smooth_stone', 'sandstone', 'wood', 'cobblestone', 'brick', 'stone_brick', 'quartz' and 'nether_brick'.
@@ -747,7 +745,7 @@ String property that represents the type of certain types of stone slab blocks. 
 Type: *string*
 
 
-### **stoneSlabType2** = `"stone_slab_type_2"`
+### **stoneSlabType2**
 `static read-only stoneSlabType2 = "stone_slab_type_2";`
 
 String property that represents the type of certain types of stone slab blocks. Valid values are 'red_sandstone', 'purpur', 'prismarine_rough', 'prismarine_dark', 'prismarine_brick', 'mossy_cobblestone', 'smooth_sandstone' and 'red_nether_brick'.
@@ -755,7 +753,7 @@ String property that represents the type of certain types of stone slab blocks. 
 Type: *string*
 
 
-### **stoneSlabType3** = `"stone_slab_type_3"`
+### **stoneSlabType3**
 `static read-only stoneSlabType3 = "stone_slab_type_3";`
 
 String property that represents the type of certain types of stone slab blocks. Valid values are 'end_stone_brick', 'smooth_red_sandstone', 'polished_andesite', 'andesite', 'diorite', 'polished_diorite', 'granite', and 'polished_granite'.
@@ -763,7 +761,7 @@ String property that represents the type of certain types of stone slab blocks. 
 Type: *string*
 
 
-### **stoneSlabType4** = `"stone_slab_type_4"`
+### **stoneSlabType4**
 `static read-only stoneSlabType4 = "stone_slab_type_4";`
 
 String property that represents the type of certain types of stone slab blocks. Valid values are 'mossy_stone_brick', 'smooth_quartz', 'stone', 'cut_sandstone', and 'cut_red_sandstone'.
@@ -771,7 +769,7 @@ String property that represents the type of certain types of stone slab blocks. 
 Type: *string*
 
 
-### **stoneType** = `"stone_type"`
+### **stoneType**
 `static read-only stoneType = "stone_type";`
 
 String property that determines the type of a stone block. Valid values are 'stone', 'granite', 'granite_smooth', 'diorite', 'diorite_smooth', 'andesite', and 'andesite_smooth'.
@@ -779,7 +777,7 @@ String property that determines the type of a stone block. Valid values are 'sto
 Type: *string*
 
 
-### **strippedBit** = `"stripped_bit"`
+### **strippedBit**
 `static read-only strippedBit = "stripped_bit";`
 
 Boolean property that represents if a wood log has been stripped of bark.
@@ -787,7 +785,7 @@ Boolean property that represents if a wood log has been stripped of bark.
 Type: *string*
 
 
-### **structureBlockType** = `"structure_block_type"`
+### **structureBlockType**
 `static read-only structureBlockType = "structure_block_type";`
 
 String property that represents the state of a structure block. Valid values are 'data', 'save', 'load', 'corner', 'invalid' and 'export'.
@@ -795,7 +793,7 @@ String property that represents the state of a structure block. Valid values are
 Type: *string*
 
 
-### **structureVoidType** = `"structure_void_type"`
+### **structureVoidType**
 `static read-only structureVoidType = "structure_void_type";`
 
 String property that determines which void mode to draw for structure blocks. Valid values are 'void' and 'air'.
@@ -803,7 +801,7 @@ String property that determines which void mode to draw for structure blocks. Va
 Type: *string*
 
 
-### **suspendedBit** = `"suspended_bit"`
+### **suspendedBit**
 `static read-only suspendedBit = "suspended_bit";`
 
 Boolean property that indicates if a tripwire block is suspended.
@@ -811,7 +809,7 @@ Boolean property that indicates if a tripwire block is suspended.
 Type: *string*
 
 
-### **tallGrassType** = `"tall_grass_type"`
+### **tallGrassType**
 `static read-only tallGrassType = "tall_grass_type";`
 
 String property that represents the type of a tall grass block. Valid values are 'default', 'tall', 'fern', and 'snow'.
@@ -819,7 +817,7 @@ String property that represents the type of a tall grass block. Valid values are
 Type: *string*
 
 
-### **toggleBit** = `"toggle_bit"`
+### **toggleBit**
 `static read-only toggleBit = "toggle_bit";`
 
 Boolean property that determines if a hopper block is active or not.
@@ -827,7 +825,7 @@ Boolean property that determines if a hopper block is active or not.
 Type: *string*
 
 
-### **topSlotBit** = `"top_slot_bit"`
+### **topSlotBit**
 `static read-only topSlotBit = "top_slot_bit";`
 
 Boolean property that determines if a slab is the top half of the block or not
@@ -835,7 +833,7 @@ Boolean property that determines if a slab is the top half of the block or not
 Type: *string*
 
 
-### **torchFacingDirection** = `"torch_facing_direction"`
+### **torchFacingDirection**
 `static read-only torchFacingDirection = "torch_facing_direction";`
 
 String property that determines the direction of a torch in relation to the block it is attached to. Valid values are 'unknown', 'west', 'east', 'north', 'south', 'top'.
@@ -843,7 +841,7 @@ String property that determines the direction of a torch in relation to the bloc
 Type: *string*
 
 
-### **triggeredBit** = `"triggered_bit"`
+### **triggeredBit**
 `static read-only triggeredBit = "triggered_bit";`
 
 Boolean property that determines if a dispenser is triggered.
@@ -851,7 +849,7 @@ Boolean property that determines if a dispenser is triggered.
 Type: *string*
 
 
-### **turtleEggCount** = `"turtle_egg_count"`
+### **turtleEggCount**
 `static read-only turtleEggCount = "turtle_egg_count";`
 
 String property that represents the amount of turtle eggs in an egg block. Valid values are 'one_egg', 'two_egg', 'three_egg' and 'four_egg'.
@@ -859,13 +857,13 @@ String property that represents the amount of turtle eggs in an egg block. Valid
 Type: *string*
 
 
-### **twistingVinesAge** = `"twisting_vines_age"`
+### **twistingVinesAge**
 `static read-only twistingVinesAge = "twisting_vines_age";`
 
 Type: *string*
 
 
-### **updateBit** = `"update_bit"`
+### **updateBit**
 `static read-only updateBit = "update_bit";`
 
 Boolean property that determines if a leaf block or flower block should be updated.
@@ -873,7 +871,7 @@ Boolean property that determines if a leaf block or flower block should be updat
 Type: *string*
 
 
-### **upperBlockBit** = `"upper_block_bit"`
+### **upperBlockBit**
 `static read-only upperBlockBit = "upper_block_bit";`
 
 Boolean property that determines if a block is the upper half of an object like a door or a tall plant.
@@ -881,7 +879,7 @@ Boolean property that determines if a block is the upper half of an object like 
 Type: *string*
 
 
-### **upsideDownBit** = `"upside_down_bit"`
+### **upsideDownBit**
 `static read-only upsideDownBit = "upside_down_bit";`
 
 Boolean property that determines if a stair block or trapdoor block is upside-down.
@@ -889,7 +887,7 @@ Boolean property that determines if a stair block or trapdoor block is upside-do
 Type: *string*
 
 
-### **vineDirectionBits** = `"vine_direction_bits"`
+### **vineDirectionBits**
 `static read-only vineDirectionBits = "vine_direction_bits";`
 
 Integer property that represents the facing direction for vines. Valid values are between 0 and 15 inclusive.
@@ -897,7 +895,7 @@ Integer property that represents the facing direction for vines. Valid values ar
 Type: *string*
 
 
-### **wallBlockType** = `"wall_block_type"`
+### **wallBlockType**
 `static read-only wallBlockType = "wall_block_type";`
 
 String property that represents the type of stone used in a wall block. Valid values are 'cobblestone', 'mossy_cobblestone', 'granite', 'diorite', 'andesite', 'sandstone', 'brick', 'stone_brick', 'mossy_stone_brick', 'nether_brick', 'end_brick', 'prismarine', 'red_sandstone' and 'red_nether_brick'.
@@ -905,7 +903,7 @@ String property that represents the type of stone used in a wall block. Valid va
 Type: *string*
 
 
-### **wallConnectionTypeEast** = `"wall_connection_type_east"`
+### **wallConnectionTypeEast**
 `static read-only wallConnectionTypeEast = "wall_connection_type_east";`
 
 String property that determines what kind of connection a wall has to the east. Valid values are 'none', 'short' and 'tall'.
@@ -913,7 +911,7 @@ String property that determines what kind of connection a wall has to the east. 
 Type: *string*
 
 
-### **wallConnectionTypeNorth** = `"wall_connection_type_north"`
+### **wallConnectionTypeNorth**
 `static read-only wallConnectionTypeNorth = "wall_connection_type_north";`
 
 String property that determines what kind of connection a wall has to the north. Valid values are 'none', 'short' and 'tall'.
@@ -921,7 +919,7 @@ String property that determines what kind of connection a wall has to the north.
 Type: *string*
 
 
-### **wallConnectionTypeSouth** = `"wall_connection_type_south"`
+### **wallConnectionTypeSouth**
 `static read-only wallConnectionTypeSouth = "wall_connection_type_south";`
 
 String property that determines what kind of connection a wall has to the south. Valid values are 'none', 'short' and 'tall'.
@@ -929,7 +927,7 @@ String property that determines what kind of connection a wall has to the south.
 Type: *string*
 
 
-### **wallConnectionTypeWest** = `"wall_connection_type_west"`
+### **wallConnectionTypeWest**
 `static read-only wallConnectionTypeWest = "wall_connection_type_west";`
 
 String property that determines what kind of connection a wall has to the west. Valid values are 'none', 'short' and 'tall'.
@@ -937,7 +935,7 @@ String property that determines what kind of connection a wall has to the west. 
 Type: *string*
 
 
-### **wallPostBit** = `"wall_post_bit"`
+### **wallPostBit**
 `static read-only wallPostBit = "wall_post_bit";`
 
 Boolean property that determines if a wall should contain a post.
@@ -945,13 +943,13 @@ Boolean property that determines if a wall should contain a post.
 Type: *string*
 
 
-### **weepingVinesAge** = `"weeping_vines_age"`
+### **weepingVinesAge**
 `static read-only weepingVinesAge = "weeping_vines_age";`
 
 Type: *string*
 
 
-### **weirdoDirection** = `"weirdo_direction"`
+### **weirdoDirection**
 `static read-only weirdoDirection = "weirdo_direction";`
 
 Integer property that represents the rotation of stairs. Valid values are between 0 and 3 inclusive.
@@ -959,7 +957,7 @@ Integer property that represents the rotation of stairs. Valid values are betwee
 Type: *string*
 
 
-### **woodType** = `"wood_type"`
+### **woodType**
 `static read-only woodType = "wood_type";`
 
 String property that determines the wood type of a block. Valid values are 'oak', 'spruce', 'birch', 'jungle', 'acacia', and 'dark_oak'.

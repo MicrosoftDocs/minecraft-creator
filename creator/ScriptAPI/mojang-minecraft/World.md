@@ -10,7 +10,6 @@ description: Contents of the mojang-minecraft.World class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-
 A class that wraps the state of a world - a set of dimensions and the environment of Minecraft.
 
 ## Properties
@@ -29,15 +28,15 @@ Type: [*Events*](Events.md)
   
 ### **getDimension**
 `
-getDimension(dimensionName: ('overworld'|'nether'|'the end')): Dimension
+getDimension(dimensionName:('overworld'|'nether'|'the end')): Dimension
 `
 
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **dimensionName** | `'overworld'`, `'nether'`, `'the end'` | n/a | The name of the Dimension |
+#### **Parameters**
+- **dimensionName**: `'overworld'`, `'nether'`, `'the end'`
+  
+  The name of the Dimension
 
-Returns [*Dimension*](Dimension.md) - The requested dimension
+#### **Returns** [*Dimension*](Dimension.md) - The requested dimension
 
 > [!WARNING]
 > Throws if the given dimension name is invalid
@@ -49,7 +48,7 @@ getPlayers(): Player[]
 
 Returns all players currently in the world.
 
-Returns [*Player*](Player.md)[] - All players currently in the world.
+#### **Returns** [*Player*](Player.md)[] - All players currently in the world.
 
 
 

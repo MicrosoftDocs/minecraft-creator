@@ -10,6 +10,8 @@ description: Contents of the mojang-minecraft.EntityRideableComponent class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
+## Base Types
+- [*IEntityComponent*](IEntityComponent.md)
 
 When added, this component adds the capability that an entity can be ridden by another entity.
 
@@ -94,30 +96,30 @@ Type: [*Seat*](Seat.md)[]
   
 ### **addRider**
 `
-addRider(rider: Entity): boolean
+addRider(rider:Entity): boolean
 `
 
 Adds an entity to this entity as a rider.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **rider** | [*Entity*](Entity.md) | n/a | Entity that will become the rider of this entity. |
+#### **Parameters**
+- **rider**: [*Entity*](Entity.md)
+  
+  Entity that will become the rider of this entity.
 
-Returns *boolean* - True if the rider entity was successfully added.
+#### **Returns** *boolean* - True if the rider entity was successfully added.
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **ejectRider**
 `
-ejectRider(rider: Entity): void
+ejectRider(rider:Entity): void
 `
 
 Ejects the specified rider of this entity.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **rider** | [*Entity*](Entity.md) | n/a | Entity that should be ejected from this entity. |
+#### **Parameters**
+- **rider**: [*Entity*](Entity.md)
+  
+  Entity that should be ejected from this entity.
 
 
 > [!WARNING]
