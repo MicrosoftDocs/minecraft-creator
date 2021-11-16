@@ -56,8 +56,6 @@ landingContent:
              url: mojang-minecraft/World.md
            - text: Dimension Class
              url: mojang-minecraft/Dimension.md
-           - text: Commands Class
-             url: mojang-minecraft/Commands.md
            - text: Block Class
              url: mojang-minecraft/Block.md
            - text: Entity Class
