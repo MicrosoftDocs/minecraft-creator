@@ -10,7 +10,6 @@ description: Contents of the mojang-minecraft.MinecraftItemTypes class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-
 Contains definitions of standard Minecraft and Minecraft Education Edition block types.
 
 
@@ -1064,6 +1063,12 @@ Type: [*ItemType*](ItemType.md)
 
 ### **clayBall**
 `static read-only clayBall: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **clientRequestPlaceholderBlock**
+`static read-only clientRequestPlaceholderBlock: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -5004,6 +5009,12 @@ Type: [*ItemType*](ItemType.md)
 Type: [*ItemType*](ItemType.md)
 
 
+### **musicDiscOtherside**
+`static read-only musicDiscOtherside: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
 ### **musicDiscPigstep**
 `static read-only musicDiscPigstep: ItemType;`
 
@@ -5044,6 +5055,18 @@ Type: [*ItemType*](ItemType.md)
 `static read-only mycelium: ItemType;`
 
 Represents an item that can place a mycelium plant within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mysteriousFrame**
+`static read-only mysteriousFrame: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mysteriousFrameSlot**
+`static read-only mysteriousFrameSlot: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 

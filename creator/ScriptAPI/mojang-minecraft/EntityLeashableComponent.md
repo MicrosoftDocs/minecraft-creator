@@ -10,6 +10,8 @@ description: Contents of the mojang-minecraft.EntityLeashableComponent class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
+## Base Types
+- [*IEntityComponent*](IEntityComponent.md)
 
 Allows this entity to be leashed and defines the conditions and events for this entity when is leashed.
 
@@ -37,14 +39,14 @@ Type: *number*
   
 ### **leash**
 `
-leash(leashHolder: Entity): void
+leash(leashHolder:Entity): void
 `
 
 Leashes this entity to another entity.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **leashHolder** | [*Entity*](Entity.md) | n/a | The entity to leash this entity to. |
+#### **Parameters**
+- **leashHolder**: [*Entity*](Entity.md)
+  
+  The entity to leash this entity to.
 
 
 > [!WARNING]

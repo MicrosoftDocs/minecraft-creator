@@ -3,32 +3,44 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: mojang-minecraft.ScriptPlayerHeadRotation Class
-description: Contents of the mojang-minecraft.ScriptPlayerHeadRotation class.
+title: mojang-minecraft.NumberRange Class
+description: Contents of the mojang-minecraft.NumberRange class.
 ---
-# ScriptPlayerHeadRotation Class
+# NumberRange Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-
-Contains orientation information for items that can change on pitch and yaw angles.
+Represents a min/max structure for expressing a potential range of numbers.
 
 ## Properties
-### **pitch**
-`pitch: number;`
+### **max**
+`max: number;`
 
-Pitch value of this orientation. For example, for a head, whether the head is looking up or down. The pitch of a head facing straight up is -90.
+Maximum value within a range.
+
+Type: *number*
+
+
+### **min**
+`min: number;`
+
+Minimum value within a range.
 
 Type: *number*
 
 
-### **yaw**
-`yaw: number;`
 
-Yaw value of this orientation. For example, for a head, whether the head is looking left or right. The yaw of a head facing west is 90.
+## Methods
+- [next](#next)
+  
+### **next**
+`
+next(): number
+`
 
-Type: *number*
+Returns a random number between the minimum and maximum of the range.
 
+#### **Returns** *number*
 
 
 

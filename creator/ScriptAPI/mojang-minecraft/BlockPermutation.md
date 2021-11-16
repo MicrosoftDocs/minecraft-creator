@@ -10,7 +10,6 @@ description: Contents of the mojang-minecraft.BlockPermutation class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-
 Contains the combination of type [*mojang-minecraft.BlockType*](../mojang-minecraft/BlockType.md) and properties (also sometimes called block state) which describe a block (but does not belong to a specific [*mojang-minecraft.Block*](../mojang-minecraft/Block.md)). This type was introduced as of version 1.17.10.21.
 
 ## Properties
@@ -37,7 +36,7 @@ clone(): BlockPermutation
 
 Creates a copy of this permutation.
 
-Returns [*BlockPermutation*](BlockPermutation.md) - A copy of the permutation.
+#### **Returns** [*BlockPermutation*](BlockPermutation.md) - A copy of the permutation.
 
 
 ### **getAllProperties**
@@ -46,35 +45,33 @@ getAllProperties(): any[]
 `
 
 
-Returns *any*[] - Returns the list of all of the properties that the permutation has.
+#### **Returns** *any*[] - Returns the list of all of the properties that the permutation has.
 
 
 ### **getProperty**
 `
-getProperty(propertyName: string): any
+getProperty(propertyName:string): any
 `
 
 Gets a property for the permutation.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **propertyName** | *string* | n/a | - |
+#### **Parameters**
+- **propertyName**: *string*
 
-Returns *any* - Returns the property if the permutation has it, else `null`.
+#### **Returns** *any* - Returns the property if the permutation has it, else `null`.
 
 > [!WARNING]
 > This function can throw errors.
 
-#### Examples
-##### ***place_bottom_stone_slab.js***
+#### **Examples**
+##### *place_bottom_stone_slab.js*
 ```javascript
-import { World, MinecraftBlockTypes, BlockProperties, BlockLocation } from "mojang-minecraft";
+import { world, MinecraftBlockTypes, BlockProperties, BlockLocation } from "mojang-minecraft";
 // Create the permutation
 let bottomStoneSlab = MinecraftBlockTypes.stoneSlab.createDefaultBlockPermutation();
 bottomStoneSlab.getProperty(BlockProperties.stoneSlabType).value = "stone_brick";
 bottomStoneSlab.getProperty(BlockProperties.topSlotBit).value = false;
 // Fetch the block
-const block = World.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3));
+const block = world.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3));
 // Set the permutation
 block.setPermutation(bottomStoneSlab);
 ```
@@ -85,29 +82,27 @@ getTags(): string[]
 
 Creates a copy of the permutation.
 
-Returns *string*[]
+#### **Returns** *string*[]
 
 
 ### **hasTag**
 `
-hasTag(tag: string): boolean
+hasTag(tag:string): boolean
 `
 
 Checks to see if the permutation has a specific tag.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **tag** | *string* | n/a | - |
+#### **Parameters**
+- **tag**: *string*
 
-Returns *boolean* - Returns `true` if the permutation has the tag, else `false`.
+#### **Returns** *boolean* - Returns `true` if the permutation has the tag, else `false`.
 
 
-#### Examples
-##### ***check_block_tags.js***
+#### **Examples**
+##### *check_block_tags.js*
 ```javascript
-import { World, BlockLocation } from "mojang-minecraft";
+import { world, BlockLocation } from "mojang-minecraft";
 // Fetch the block
-const block = World.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3));
+const block = world.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3));
 const blockPerm = block.getPermutation();
 console.log(`Block is dirt: ${blockPerm.hasTag("dirt")}`);
 console.log(`Block is wood: ${blockPerm.hasTag("wood")}`);
