@@ -8,7 +8,7 @@ description: "A tutorial covering how to start developing Add-Ons for Minecraft:
 
 # Getting Started with Add-On Development for Bedrock Edition
 
-Add-Ons are the first step on our journey towards bringing even greater levels of customization to Minecraft: Bedrock Edition. Add-Ons allow players to transform the look of their worlds and even change the behavior of mobs. For example, you can change the blast radius of a creeper or the texture it’s wearing.
+Add-Ons are the first step on our journey towards bringing even greater levels of customization to Minecraft: Bedrock Edition. Add-Ons allow players to transform the look of their worlds and even change the behavior of mobs. For example, you can change the blast radius of a creeper and the texture it’s wearing.
 
 :::image type="content" source="Media/GettingStarted/Getting-Started.jpg" alt-text="A creeper mob that has been re-textured to look like TNT":::
 
@@ -16,31 +16,34 @@ In this tutorial, you will learn the following.
 
 >[!div class="checklist"]
 >
-> - The File Structure used for Minecraft
-> - Software is used for editing JSON files.
+> - The file structure used by Minecraft Add-Ons.
+> - Software used for editing JSON files.
 > - Extensions that are available to help with Add-On development.
 
 ## com.mojang
 
-When Minecraft is installed to your computer, there is a folder directory called **com.mojang** that is generated in the AppData folder. To access this folder, you can use the following solution to locate within Windows 10 OS.
+When Minecraft is installed on your computer, there is a folder called **com.mojang** that is generated in the AppData folder. You will need to find this folder so you can add your content to it.
 
-In order to locate the **com.mojang** folder in Windows, You will need to have **Hidden items** set to **true** by selecting the **Checkbox** as shown below.
+To locate the **com.mojang** folder on your computer, you will need to have **Hidden items** checkbox set to **true**, as shown below.
 
-To enable **View Hidden Items**
+### Showing hidden items ###
 
 1. Open **File Explorer** from the taskbar.
-1. Select **View** > **Options** > **Change folder and search options**.
-1. Select the **View** tab and, in **Advanced settings**, select **Show hidden files, folders, and drives** and **OK**.
+1. Select the **View** tab.
+1. In the **Show/hide** section, select the checkbox for **Hidden items**.
 
-:::image type="content" source="Media/GettingStarted/viewHiddenFolders.png" alt-text="Image of Windows 10 File Explorer window's view options. Here the Hidden items item is checked to indicate that its set to true":::
+:::image type="content" source="Media/GettingStarted/viewHiddenFolders.png" alt-text="Image of Windows 10 File Explorer window's view options. The Hidden items box is checked to indicate that it's set to true":::
 
 ### Locating com.mojang
 
-1. Press **Win+R** to open **Run**. Alternatively, you can launch **Run** in the start menu.
-1. Copy and paste the following: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
-1. Press **OK**.
+1. Press **Win+R** to open **Run**. 
+1. Copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
+1. Click **OK**.
 
-As shown in the image below, there are multiple subdirectories located within the com.mojang folder.
+>[!TIP]
+> Now would be a good time to save a shortcut to this folder on your desktop.
+
+As shown in the image below, there are multiple subdirectories located within the **com.mojang** folder.
 
 ![Image of com.mojang on a Windows Explorer environment.](Media/GettingStarted/comMojang.png)
 
@@ -49,25 +52,26 @@ As shown in the image below, there are multiple subdirectories located within th
 
 ### Behavior, Skin, and Resource Packs
 
-There are 3 folders called **behavior_packs**, **resource_packs**, and **skin_packs**. Any custom content that will be added to Minecraft: Bedrock Edition will come in the form of one of these 3 packs.
+There are three folders called **behavior_packs**, **resource_packs**, and **skin_packs** that will store finalized custom content that will be added to Minecraft: Bedrock Edition. Don't worry about these folders right now - you are going to be developing content, so you will be working in the development versions of these folders, as discussed in the next section.
 
 ### Development Packs
 
-Along with the 3 pack folders, there are also development versions of those folders. Development packs are packs that are updated every time Minecraft is launched, allowing you to quickly load and test changes they have made to their packs.
+You will use the **development_resource_packs** and **development_behavior_packs** folders for the [Resource Pack](ResourcePack.md) and [Behavior pack](BehaviorPack.md) tutorials. **development_skin_packs** is used for developing skin packs. Development pack folders are updated each time Minecraft is launched so you can quickly load and test the changes you made to their contents.
 
 ### minecraftWorlds
 
 **minecraftWorlds** contains each world that has been generated within the current build of Minecraft. Each folder will also contain resource and behavior pack folders to contain any packs that may be in use within the world.
+
 > [!TIP]
-> It's recommended that when installing a new build of Minecraft, you should save a copy of this folder to use as a back up in order to prevent any potential loss of Minecraft Worlds that you may have.
+> It's recommended that when installing a new build of Minecraft, you should save a copy of this folder to use as a back up to prevent any potential loss of Minecraft Worlds that you may have.
 
 ## Visual Studio Code
 
-JSON is a popular text file format that is used by Minecraft Bedrock Edition in order to interact with content within. JSON can be edited in any text editor such as Notepad or Word. However, Visual Studio Code is a free to use text based editor that supports 3rd party extensions, including some built for Bedrock development.
+JSON is a popular text file format that is used by Minecraft: Bedrock Edition to interact with content. JSON can be edited in any text editor such as Notepad or Word. However, Visual Studio Code is a free to use text-based editor that supports third party extensions, including some built specifically for Bedrock development.
 
 ### Installing Visual Studio Code
 
-1. Follow the link here to [Install Visual Studio Code](https://code.visualstudio.com/Download)
+Follow the link here to [install Visual Studio Code](https://code.visualstudio.com/Download).
 
 ## Visual Studio Code Extensions
 
@@ -75,12 +79,12 @@ Visual Studio Code supports extensions created by the Visual Studio Code develop
 
 ### Installing Extensions
 
-1. Click on the link provided to download [Bedrock Definitions](https://marketplace.visualstudio.com/items?itemName=destruc7i0n.vscode-bedrock-definitions) for Visual Studio Code.
-1. Click on the link provided to download [Blockception's Minecraft Bedrock Development](https://marketplace.visualstudio.com/items?itemName=BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension) for Visual Studio Code.
+1. Click on this link to download [Bedrock Definitions](https://marketplace.visualstudio.com/items?itemName=destruc7i0n.vscode-bedrock-definitions) for Visual Studio Code.
+1. Click on this link to download [Blockception's Minecraft Bedrock Development](https://marketplace.visualstudio.com/items?itemName=BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension) for Visual Studio Code.
 
 ## What's Next?
 
-Now that your development environment is set up, you can start creating your first Add-On by learning more about resource packs.
+Now that your development environment is set up, you can start creating your first Add-On and learn more about resource packs.
 
 > [!div class="nextstepaction"]
 > [Resource Pack](ResourcePack.md)
