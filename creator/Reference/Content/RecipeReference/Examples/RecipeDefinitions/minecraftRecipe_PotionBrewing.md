@@ -37,6 +37,6 @@ Represents a Potion Brewing Container Recipe.
 
 ## Vanilla Example
 
-### Slow-Falling Redstone potion
+### Brew Potion Sulphur
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack_Snippets/recipes/brew_slow_falling_redstone.json":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack_Snippets/recipes/brew_potion_sulphur.json":::
