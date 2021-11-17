@@ -10,13 +10,12 @@ description: Contents of the mojang-gametest.Tags class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-
 These well-known tags can be used to classify different tests into suites to run.
 
 
 
 ## Constants
-### **suiteAll** = `"suite:all"`
+### **suiteAll**
 `static read-only suiteAll = "suite:all";`
 
 Indicates that the tagged test should be a part of all suites.
@@ -24,7 +23,7 @@ Indicates that the tagged test should be a part of all suites.
 Type: *string*
 
 
-### **suiteDebug** = `"suite:debug"`
+### **suiteDebug**
 `static read-only suiteDebug = "suite:debug";`
 
 Indicates that the tagged test should be a part of an internal (debug) test suite.
@@ -32,7 +31,7 @@ Indicates that the tagged test should be a part of an internal (debug) test suit
 Type: *string*
 
 
-### **suiteDefault** = `"suite:default"`
+### **suiteDefault**
 `static read-only suiteDefault = "suite:default";`
 
 Indicates that the tagged test should be a part of the default test suite.
@@ -40,7 +39,7 @@ Indicates that the tagged test should be a part of the default test suite.
 Type: *string*
 
 
-### **suiteDisabled** = `"suite:disabled"`
+### **suiteDisabled**
 `static read-only suiteDisabled = "suite:disabled";`
 
 Indicates that the tagged test should be a part of a suite of disabled tests.

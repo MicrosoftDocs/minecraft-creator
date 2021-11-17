@@ -10,6 +10,8 @@ description: Contents of the mojang-minecraft.EntityBreathableComponent class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
+## Base Types
+- [*IEntityComponent*](IEntityComponent.md)
 
 Defines what blocks this entity can breathe in and gives them the ability to suffocate.
 
@@ -108,14 +110,14 @@ Type: *number*
   
 ### **setAirSupply**
 `
-setAirSupply(value: number): void
+setAirSupply(value:number): void
 `
 
 Sets the current air supply of the entity.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **value** | *number* | n/a | New air supply for the entity. |
+#### **Parameters**
+- **value**: *number*
+  
+  New air supply for the entity.
 
 
 > [!WARNING]

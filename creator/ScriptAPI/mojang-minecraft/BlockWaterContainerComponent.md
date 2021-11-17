@@ -10,7 +10,6 @@ description: Contents of the mojang-minecraft.BlockWaterContainerComponent class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-
 Represents a fluid container block that currently contains water.
 
 ## Properties
@@ -44,14 +43,12 @@ Type: [*BlockLocation*](BlockLocation.md)
   
 ### **addDye**
 `
-addDye(itemType: ItemType): void
+addDye(itemType:ItemType): void
 `
 
 Adds an item and colors the water based on a dye item type.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **itemType** | [*ItemType*](ItemType.md) | n/a | - |
+#### **Parameters**
+- **itemType**: [*ItemType*](ItemType.md)
 
 
 > [!WARNING]

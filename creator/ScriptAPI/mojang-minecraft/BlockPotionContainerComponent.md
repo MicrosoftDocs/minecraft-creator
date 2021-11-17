@@ -10,7 +10,6 @@ description: Contents of the mojang-minecraft.BlockPotionContainerComponent clas
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-
 Represents a fluid container block that currently contains a potion.
 
 ## Properties
@@ -36,14 +35,14 @@ Type: [*BlockLocation*](BlockLocation.md)
   
 ### **setPotionType**
 `
-setPotionType(item: ItemStack): void
+setPotionType(item:ItemStack): void
 `
 
 Sets the potion type based on an item stack.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **item** | [*ItemStack*](ItemStack.md) | n/a | Potion to use as the type of potion for this potion container. |
+#### **Parameters**
+- **item**: [*ItemStack*](ItemStack.md)
+  
+  Potion to use as the type of potion for this potion container.
 
 
 > [!WARNING]

@@ -3,13 +3,15 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: mojang-minecraft.EntityAddPassengerComponent Class
-description: Contents of the mojang-minecraft.EntityAddPassengerComponent class.
+title: mojang-minecraft.EntityAddRiderComponent Class
+description: Contents of the mojang-minecraft.EntityAddRiderComponent class.
 ---
-# EntityAddPassengerComponent Class
+# EntityAddRiderComponent Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
+## Base Types
+- [*IEntityComponent*](IEntityComponent.md)
 
 When added, this component makes the entity spawn with a rider of the specified entityType.
 

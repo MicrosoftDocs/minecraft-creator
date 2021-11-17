@@ -12,8 +12,6 @@ description: Contents of the mojang-minecraft.MinecraftEffectTypes class.
 
 
 
-
-
 ## Constants
 ### **absorption**
 `static read-only absorption: EffectType;`

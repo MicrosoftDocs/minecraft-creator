@@ -12,6 +12,9 @@ description: Contents of the mojang-gametest module
 
 
 
+## Enumerations
+- [FluidType](FluidType.md)
+
 ## Classes
 - [FenceConnectivity](FenceConnectivity.md)
 - [GameTestSequence](GameTestSequence.md)
@@ -23,22 +26,26 @@ description: Contents of the mojang-gametest module
 ## Functions
 ### **register**
 `
-register(testClassName: string, testName: string, testFunction: (arg: Test) => undefined): RegistrationBuilder
+register(testClassName:string, testName:string, testFunction:(arg: Test) => undefined): RegistrationBuilder
 `
 
 Registers a new GameTest function. This GameTest will become available in Minecraft via /gametest run [testClassName]:[testName].
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **testClassName** | *string* | n/a | Name of the class of tests this test should be a part of. |
-| **testName** | *string* | n/a | Name of this specific test. |
-| **testFunction** | (arg: Test) => undefined | n/a | Implementation of the test function. |
+#### **Parameters**
+- **testClassName**: *string*
+  
+  Name of the class of tests this test should be a part of.
+- **testName**: *string*
+  
+  Name of this specific test.
+- **testFunction**: (arg: Test) => undefined
+  
+  Implementation of the test function.
 
-Returns [*RegistrationBuilder*](RegistrationBuilder.md) - Returns a [*mojang-gametest.RegistrationBuilder*](../mojang-gametest/RegistrationBuilder.md) object where additional options for this test can be specified via builder methods.
+#### **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - Returns a [*mojang-gametest.RegistrationBuilder*](../mojang-gametest/RegistrationBuilder.md) object where additional options for this test can be specified via builder methods.
 
 
-#### Examples
-##### ***example1.js***
+#### **Examples**
+##### *example1.js*
 ```javascript
 GameTest.register("ExampleTests", "alwaysFail", (test) => {
 test.fail("This test, runnable via '/gametest run ExampleTests:alwaysFail', will always fail");
