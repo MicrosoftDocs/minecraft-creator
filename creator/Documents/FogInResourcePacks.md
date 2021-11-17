@@ -28,7 +28,7 @@ It’s recommended that the following be completed before beginning this tutoria
 
 ### Example
 
-The vanilla resource pack template (found [here](https://aka.ms/resourcepacktemplate)) contains all of the fog files used in the game. These files can serve as examples for creating your own fog definitions. A completed fog file will look similar to the following:
+The Vanilla Resource Pack template (found [here](https://aka.ms/resourcepacktemplate)) contains all of the fog files used in the game. These files can serve as examples for creating your own fog definitions. A completed fog file will look similar to the following:
 
 ```json
 {
