@@ -82,6 +82,8 @@ This behavior enables Marketplace creators to update their products at any time 
 
 With the upcoming 1.18 release for Caves and Cliffs Part 2, we are making significant changes to world generation. There is a potential for content to break when working with existing templates.
 
+To ensure that content continues to operate as intended, Minecraft Marketplace Creators will be unable to update the base game version of their content to v1.18+ after the release of client v1.18. This is a temporary measure to ensure that content continues to operate as designed after this large update.  
+
 Creators in the community should be aware of a potential scenario:
 
 1. A Creator creates a world template called **TemplateA** and sets the `base_game_version` to `[1, 17, 0]`.

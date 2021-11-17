@@ -7,10 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation -  minecraft:default_look_angle
 
-`minecraft:default_look_angle` sets the entity's default head rotation angle. 
-
->[!WARNING]
-> This component is currently broken and will not work as intended.
+`minecraft:default_look_angle` sets this entity's default head rotation angle.
 
 ## Parameters
 

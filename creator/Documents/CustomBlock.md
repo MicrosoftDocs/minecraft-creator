@@ -53,7 +53,7 @@ Block entity definitions are handled differently in the resource pack. Blocks ar
 
 ### blocks.json
 
-The blocks.json file has a similar set up to the manifest.json and has requirements in order to work correctly. The canvas block will use a custom texture for each of the side, except for the top and bottom. Those sides will be using a vanilla texture that will be brought over to the pack for use.
+The blocks.json file has a similar set up to the manifest.json and has requirements in order to work correctly. The canvas block will use a custom texture for each of the size, except for the top and bottom. Those sides will be using a vanilla texture that will be brought over to the pack for use.
 
 1. Copy/Paste the following text into your text editor.
 
