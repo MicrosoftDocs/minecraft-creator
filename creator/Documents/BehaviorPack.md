@@ -8,7 +8,7 @@ description: A tutorial that is an introduction to Behavior Packs and how to add
 
 # Introduction to Behavior Packs
 
-Before building your first Add-On for Minecraft: Bedrock Edition, you will need to create a pack to hold your custom content. There are two types of packs that a creator can make: resource packs and behavior packs. A **behavior* pack** is a folder structure that contains files that drive entity behaviors, loot drops, spawn rules, items, recipes, and trade tables. This tutorial will go over how behavior packs are created and how to add a series of behaviors to an in-game cow entity to make it an aggressive enemy.
+Before building your first Add-On for Minecraft: Bedrock Edition, you will need to create a pack to hold your custom content. There are two types of packs that a creator can make: resource packs and behavior packs. A **behavior pack** is a folder structure that contains files that drive entity behaviors, loot drops, spawn rules, items, recipes, and trade tables. This tutorial will go over how behavior packs are created and how to add a series of behaviors to an in-game cow entity to make it an aggressive enemy.
 
 :::image type="content" source="Media/BehaviorPack/Introduction-to-Behavior-Packs.jpg" alt-text="Image of a cow chasing Steve":::
 
@@ -83,11 +83,11 @@ To load a behavior pack into Minecraft, a manifest file will need to be created.
 Similar to the resource pack manifest file, you will need to generate two different UUIDs for the header and module sections of your manifest file. You can get UUIDs from an online generator such as https://www.uuidgenerator.net/.
 
 ![Image of UUIDGenerator.net home screen with a custom UUID generated](Media/BehaviorPack/UUID.png)
- 
+
 1. Copy and paste a UUID into the header section. The UUID will need to be pasted in the `"uuid"` field between the quotation ("") marks in order to be read correctly.
 1. Refresh the webpage to generate a new UUID for use in the modules section.
 1. Copy and paste the new UUID into the modules section in the `"uuid"` field between the quotation marks.
- 
+
 ### Dependencies
 
 There is a third section in the behavior pack's manifest.json file called 'dependencies' that is used to create a link between a resource pack and a behavior pack. This link is created when the UUID located in the header section of the resource pack's manifest.json file is the same as the UUID in the dependencies section of the behavior pack's manifest.json file.
@@ -300,7 +300,7 @@ Now that you know each behavior that is needed to make a cow attack a player, yo
 
 1. Navigate to the `components` container in the **cow.json** file.
 1. Below the behavior `minecraft:conditional_bandwidth_optimization`, after the comma ending the behavior, press Enter to add a new line.
-1. Paste the code on the new line. 
+1. Paste the code on the new line.
 1. Save the cow.json file.
 
 > [!IMPORTANT]
@@ -445,7 +445,7 @@ Shown below is the entire `components` section with the attack behavior added at
       "minecraft:attack":{
         "damage": 3
       }
-    }, 
+    },
 ```
 
 ### Testing the Pack
