@@ -20,7 +20,6 @@ The manifest file contains all the basic information about the pack that Minecra
 | header| Section containing information regarding the name of the pack, description, and other features that are public facing. |
 | modules| Section containing information regarding the type of content that is being brought in.|
 | dependencies| Section containing definitions for any other packs that are required in order for this manifest.json file to work. |
-| capabilities| |
 | metadata| Section containing the metadata about the file such as authors and licensing information. |
 
 ### header
@@ -58,9 +57,9 @@ The manifest file contains all the basic information about the pack that Minecra
 
 | Name| Description |
 |:-----------|:-----------|
-| experimental_custom_ui|  |
-| chemistry|  |
-| raytraced|  |
+| experimental_custom_ui| Allows HTML files in the pack to be used for custom UI, and scripts in the pack to call and manipulate custom UI   |
+| chemistry| Allows the pack to add, change or replace Chemistry functionality|
+| raytraced| Indicates that this pack contains Raytracing Enhanced or Physical Based Materials for rendering  |
 
 ### metadata
 
