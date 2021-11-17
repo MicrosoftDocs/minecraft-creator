@@ -20,7 +20,6 @@ The manifest file contains all the basic information about the pack that Minecra
 | header| Section containing information regarding the name of the pack, description, and other features that are public facing. |
 | modules| Section containing information regarding the type of content that is being brought in.|
 | dependencies| Section containing definitions for any other packs that are required in order for this manifest.json file to work. |
-| capabilities| |
 | metadata| Section containing the metadata about the file such as authors and licensing information. |
 
 ### header
@@ -30,7 +29,7 @@ The manifest file contains all the basic information about the pack that Minecra
 | base_game_version|Vector [a, b, c]| This is the version of the base game your world template requires, specified as [majorVersion, minorVersion, revision]. We use this to determine what version of the base game resource and behavior packs to apply when your content is used. |
 | description| String| This is a short description of the pack. It will appear in the game below the name of the pack. We recommend keeping it to 1-2 lines. |
 | lock_template_options| Boolean| This option is required for any world templates. This will lock the player from modifying the options of the world. |
-| min_engine_version| String| This is the minimum version of the game that this pack was written for.  This is a required field for resource and behavior packs. This helps the game identify whether any backwards compatibility is needed for your pack. You should always use the highest version currently available when creating packs. |
+| min_engine_version| Vector [major, minor, patch]| This is the minimum version of the game that this pack was written for.  This is a required field for resource and behavior packs. This helps the game identify whether any backwards compatibility is needed for your pack. You should always use the highest version currently available when creating packs. |
 | name| String| This is the name of the pack as it appears within Minecraft. This is a required field. |
 | uuid| String| This is a special type of identifier that uniquely identifies this pack from any other pack. UUIDs are written in the format xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx where each x is a hexadecimal value (0-9 or a-f). We recommend using an online service to generate this and guarantee their uniqueness,|
 | version|Vector [a, b, c]| This is the version of your pack in the format [majorVersion, minorVersion, revision]. The version number is used when importing a pack that has been imported before. The new pack will replace the old one if the version is higher, and ignored if it's the same or lower. |
@@ -58,9 +57,9 @@ The manifest file contains all the basic information about the pack that Minecra
 
 | Name| Description |
 |:-----------|:-----------|
-| experimental_custom_ui|  |
-| chemistry|  |
-| raytraced|  |
+| experimental_custom_ui| Allows HTML files in the pack to be used for custom UI, and scripts in the pack to call and manipulate custom UI   |
+| chemistry| Allows the pack to add, change or replace Chemistry functionality|
+| raytraced| Indicates that this pack contains Raytracing Enhanced or Physical Based Materials for rendering  |
 
 ### metadata
 

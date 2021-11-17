@@ -578,9 +578,9 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:sculk_sensor |
 | minecraft:sculk_shrieker |
 | minecraft:sculk_vein |
+| minecraft:seaLantern |
 | minecraft:sea_pickle |
 | minecraft:seagrass |
-| minecraft:seaLantern |
 | minecraft:shroomlight |
 | minecraft:shulker_box |
 | minecraft:silver_glazed_terracotta |
