@@ -10,7 +10,6 @@ description: Contents of the mojang-minecraft.Color class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-
 Represents a fully customizable color within Minecraft.
 
 ## Properties
@@ -52,19 +51,17 @@ Type: *number*
   
 ### **constructor**
 `
-new Color(red: number, green: number, blue: number, alpha: number)
+new Color(red:number, green:number, blue:number, alpha:number)
 `
 
 Creates a new color using the specified color values.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **red** | *number* | n/a | - |
-| **green** | *number* | n/a | - |
-| **blue** | *number* | n/a | - |
-| **alpha** | *number* | n/a | - |
+#### **Parameters**
+- **red**: *number*
+- **green**: *number*
+- **blue**: *number*
+- **alpha**: *number*
 
-Returns [*Color*](Color.md)
+#### **Returns** [*Color*](Color.md)
 
 
 

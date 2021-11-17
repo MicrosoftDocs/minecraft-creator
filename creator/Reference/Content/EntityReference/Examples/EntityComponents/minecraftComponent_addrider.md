@@ -7,24 +7,31 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:addrider
 
-`minecraft:addrider` adds a rider to the entity.
+`minecraft:addrider` allows an entity to spawn an additional entity as a passenger.
 
->[!IMPORTANT]
-> `minecraft:addrider` requires `minecraft:rideable` in order to work properly.
+Similar to [`minecraft:spell_effects`](../EntityAttributes/minecraftAttribute_spell_effects.md), this component performs a one-time operation on the entity when added. Removing the component will not remove or dismount any passenger. Adding different versions of the component multiple times will add each passenger in turn. Once the component has been added, it will not provide any further functionality.
+
+If the passenger entity cannot be added for any reason, no entity will be spawned. The failed passenger's ambient sound will play once.
+
+Potential reasons a passenger entity cannot be spawned include:
+
+- The [`minecraft:rideable`](../EntityComponents/minecraftComponent_rideable.md) component is missing.
+- The `rideable` component specifies `family_types`, and the passenger has none of them in its [`minecraft:type_family`](../EntityProperties/minecraftProperty_type_family.md) component.
+- The entity is already being ridden by its max number of passengers, as specified in the `rideable` component's `seat_count` property.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|entity_type|*not set* | String| The entity type that will be riding this entity. |
-|spawn_event|*not set* | String| The spawn event that will be used when the riding entity is created. |
+|entity_type|*not set* | String| The entity identifier of the passenger entity to be spawned. |
+|spawn_event|*not set* | String| *Optional* The string entity event that will be run on the passenger when spawning. If unspecified, the default `minecraft:entity_spawned` event will be run.|
 
 ## Example
 
 ```json
-"minecraft:addrider":{
-   "spawn_event": "minecraft:spawn_as_illager",
-    "entity_type": "minecraft:villager"
+"minecraft:addrider": {
+    "entity_type": "minecraft:cat",
+    "spawn_event": "minecraft:spawn_midnight_cat"
 }
 ```
 

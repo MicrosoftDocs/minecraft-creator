@@ -7,26 +7,36 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:attack
 
-`minecraft:attack` allows an entity to define an entity's melee attack and any additional effects on it's attack.
+`minecraft:attack` defines an entity's melee attack damage and any additional effects on its attack.
 
 >[!IMPORTANT]
-> `minecraft:attack` is *required* for an entity to attack another entity.
+> This component will only set the value and effect for when the entity makes an attack. `minecraft:attack` requires a target to be set as well in order for it to attack another entity.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| damage|*not set* | Range [a, b]| Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it |
+| damage|[0.0,0.0] | Range [min, max]| This can either be a single decimal value, or a range of the form `[min, max]`. When using a range, a random value is chosen between the two values for every hit. This defines how much damage is dealt when the entity attacks, measured in half-hearts. |
 |effect_duration| 0.0| Decimal|  Duration in seconds of the status ailment applied to the damaged entity |
 |effect_name|*not set* | String|  Identifier of the status ailment to apply to an entity attacked by this entity's melee attack |
+
+![TIP]
+>Decimal values are always rounded down, and values below 0 are treated as 0. Attacks that deal 0 damage still cause knockback, but don't reduce the target's health.
+
+### effect_name and effect_duration
+
+These two optional fields define a status effect that should be applied to the target when the entity attacks it. Both must be used together to work properly.
+
+- `effect_name`: The string identifier of the status effect to add. These are the same as used in the `/effect` command.
+- `effect_duration`: The amount of time in seconds the effect should last. This allows for fractional numbers. For example, instant effects should be set to 0.05 seconds (one tick).
 
 ## Example
 
 ```json
-"minecraft:attack":{
+"minecraft:attack": {
     "damage": 2,
-    "effect_duration": 10.0,
-    "effect_name": "poison"
+    "effect_name": "poison",
+    "effect_duration": 10.0
 }
 ```
 
