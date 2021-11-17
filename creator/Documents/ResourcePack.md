@@ -64,7 +64,7 @@ To load a resource pack into Minecraft, a manifest file will need to be created.
 	{
 	  "format_version": 2,
 	  "header": {
-        "description": "My first resource pack Add-On!",
+      "description": "My first resource pack Add-On!",
 	    "name": "My Resource Pack",
 	    "uuid":"",
 	    "version": [1, 0, 0],

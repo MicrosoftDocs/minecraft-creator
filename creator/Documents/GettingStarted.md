@@ -40,7 +40,8 @@ To locate the **com.mojang** folder on your computer, you will need to have **Hi
 1. Copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
 1. Click **OK**.
 
-Now would be a good time to save a shortcut to this folder on your desktop.
+>[!TIP]
+> Now would be a good time to save a shortcut to this folder on your desktop.
 
 As shown in the image below, there are multiple subdirectories located within the **com.mojang** folder.
 

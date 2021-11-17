@@ -20,6 +20,7 @@ Listed below are the currently available Experimental Features in the latest ret
 
 | Experimental Toggle |Features |
 |:------|:------|
+|Caves & Cliffs Experimental |Features that are under development and intended to release in Caves & Cliffs Part 2.|
 |Holiday Creator Features |Data-driven block and item features. We are receiving feedback on these features from Marketplace creators and map-makers.|
 |Creation of Custom Biomes|Exposing parameters for biome generation to creators, enabling them to create their own unique biome configurations. |
 |Additional Modding Capabilities |Enables an early version of an API for creators. A newer version is in development. This toggle remains to support those who are currently using it. |
@@ -35,6 +36,7 @@ Listed below are the currently available Experimental Features in the latest bet
 
 | Experimental Toggle |Features |
 |:------|:------|
+|Caves & Cliffs Experimental |Features that are under development and intended to release in Caves and Cliffs Part 2, **including new and improved terrain generation and 3D biomes.**|
 |Holiday Creator Features |Data-driven block and item features. We are receiving feedback on these features from Marketplace creators and map-makers.|
 |Creation of Custom Biomes|Exposing parameters for biome generation to creators, enabling them to create their own unique biome configurations. |
 |Additional Modding Capabilities |Enables an early version of an API for creators. A newer version is in development. This toggle remains to support those who are currently using it. |

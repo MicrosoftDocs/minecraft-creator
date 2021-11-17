@@ -10,6 +10,8 @@ description: Contents of the mojang-gametest.SimulatedPlayer class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
+## Base Types
+- [*mojang-minecraft.Player*](../mojang-minecraft/Player.md)
 
 A simulated player can be used within GameTests to represent how a player moves throughout the world and to support testing of how entities and the environment will react to a player. This type derives much of its structure and methods from the [*mojang-minecraft.Player*](../mojang-minecraft/Player.md) type.
 
@@ -22,12 +24,20 @@ Rotation of the body in degrees. Range is between -180 and 180 degrees.
 Type: *number*
 
 
+### **dimension**
+`read-only dimension: mojang-minecraft.Dimension;`
+
+Dimension that the simulated player is currently within.
+
+Type: [*mojang-minecraft.Dimension*](../mojang-minecraft/Dimension.md)
+
+
 ### **headRotation**
-`read-only headRotation: mojang-minecraft.ScriptPlayerHeadRotation;`
+`read-only headRotation: mojang-minecraft.PitchYawRotation;`
 
 Rotation of the head across pitch and yaw angles.
 
-Type: [*mojang-minecraft.ScriptPlayerHeadRotation*](../mojang-minecraft/ScriptPlayerHeadRotation.md)
+Type: [*mojang-minecraft.PitchYawRotation*](../mojang-minecraft/PitchYawRotation.md)
 
 
 ### **id**
@@ -70,6 +80,14 @@ Optional name tag of the player.
 Type: *string*
 
 
+### **target**
+`target: mojang-minecraft.Entity;`
+
+Retrieves or sets an entity that is used as the target of AI-related behaviors, like attacking.
+
+Type: [*mojang-minecraft.Entity*](../mojang-minecraft/Entity.md)
+
+
 ### **velocity**
 `read-only velocity: mojang-minecraft.Location;`
 
@@ -81,13 +99,16 @@ Type: [*mojang-minecraft.Location*](../mojang-minecraft/Location.md)
 
 ## Methods
 - [addEffect](#addeffect)
+- [addTag](#addtag)
 - [attack](#attack)
 - [attackEntity](#attackentity)
 - [destroyBlock](#destroyblock)
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
 - [getEffect](#geteffect)
+- [getTags](#gettags)
 - [hasComponent](#hascomponent)
+- [hasTag](#hastag)
 - [interact](#interact)
 - [interactWithBlock](#interactwithblock)
 - [interactWithEntity](#interactwithentity)
@@ -104,7 +125,9 @@ Type: [*mojang-minecraft.Location*](../mojang-minecraft/Location.md)
 - [navigateToEntity](#navigatetoentity)
 - [navigateToLocation](#navigatetolocation)
 - [navigateToLocations](#navigatetolocations)
+- [removeTag](#removetag)
 - [rotateBody](#rotatebody)
+- [runCommand](#runcommand)
 - [selectSlot](#selectslot)
 - [setBodyRotation](#setbodyrotation)
 - [stopDestroyingBlock](#stopdestroyingblock)
@@ -119,17 +142,37 @@ Type: [*mojang-minecraft.Location*](../mojang-minecraft/Location.md)
   
 ### **addEffect**
 `
-addEffect(effectType: mojang-minecraft.EffectType, duration: number, amplifier: number): void
+addEffect(effectType:mojang-minecraft.EffectType, duration:number, amplifier:number): void
 `
 
 Adds an effect, like poison, to the entity.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **effectType** | [*mojang-minecraft.EffectType*](../mojang-minecraft/EffectType.md) | n/a | Type of effect to add to the entity. |
-| **duration** | *number* | n/a | Amount of time, in seconds, for the effect to apply. |
-| **amplifier** | *number* | n/a | Optional amplification of the effect to apply. |
+#### **Parameters**
+- **effectType**: [*mojang-minecraft.EffectType*](../mojang-minecraft/EffectType.md)
+  
+  Type of effect to add to the entity.
+- **duration**: *number*
+  
+  Amount of time, in seconds, for the effect to apply.
+- **amplifier**: *number*
+  
+  Optional amplification of the effect to apply.
 
+
+> [!WARNING]
+> This function can throw errors.
+
+### **addTag**
+`
+addTag(tag:string): boolean
+`
+
+Adds a specified tag to a simulated player.
+#### **Parameters**
+- **tag**: *string*
+  
+  Content of the tag to add.
+
+#### **Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.
@@ -141,97 +184,123 @@ attack(): boolean
 
 Causes the simulated player to make an attack 'swipe'. Returns true if the attack was performed - for example, the player was not on cooldown and had a valid target. Target selection is performed by raycasting from the player's head.
 
-Returns *boolean*
+#### **Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **attackEntity**
 `
-attackEntity(entity: mojang-minecraft.Entity): boolean
+attackEntity(entity:mojang-minecraft.Entity): boolean
 `
 
 Causes the simulated player to attack the provided target. Returns true if the attack was performed - for example, the player was not on cooldown and had a valid target. The attack can be performed at any distance and does not require line of sight to the target entity.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **entity** | [*mojang-minecraft.Entity*](../mojang-minecraft/Entity.md) | n/a | - |
+#### **Parameters**
+- **entity**: [*mojang-minecraft.Entity*](../mojang-minecraft/Entity.md)
 
-Returns *boolean*
+#### **Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **destroyBlock**
 `
-destroyBlock(blockLocation: mojang-minecraft.BlockLocation, direction: number): boolean
+destroyBlock(blockLocation:mojang-minecraft.BlockLocation, direction:number): boolean
 `
 
 Destroys the block at blockLocation, respecting the rules of the server player's game mode. The block will be hit until broken, an item is used or stopDestroyBlock is called. Returns true if the block at blockLocation is solid.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **blockLocation** | [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md) | n/a | Location of the block to interact with. |
-| **direction** | *number* | n/a | Direction to place the specified item within. |
+#### **Parameters**
+- **blockLocation**: [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md)
+  
+  Location of the block to interact with.
+- **direction**: *number* = `1`
+  
+  Direction to place the specified item within.
 
-Returns *boolean*
+#### **Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **getComponent**
 `
-getComponent(componentId: string): any
+getComponent(componentId:string): mojang-minecraft.IEntityComponent
 `
 
 Gets a component (that represents additional capabilities) for an entity.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **componentId** | *string* | n/a | The identifier of the component (e.g., 'minecraft:rideable') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed. If the component is not present on the entity, undefined is returned. |
+#### **Parameters**
+- **componentId**: *string*
+  
+  The identifier of the component (e.g., 'minecraft:rideable') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed. If the component is not present on the entity, undefined is returned.
 
-Returns *any*
+#### **Returns** [*mojang-minecraft.IEntityComponent*](../mojang-minecraft/IEntityComponent.md)
 
 
 ### **getComponents**
 `
-getComponents(): any[]
+getComponents(): mojang-minecraft.IEntityComponent[]
 `
 
 Returns all components that are both present on this entity and supported by the API.
 
-Returns *any*[]
+#### **Returns** [*mojang-minecraft.IEntityComponent*](../mojang-minecraft/IEntityComponent.md)[]
 
 
 ### **getEffect**
 `
-getEffect(effectType: mojang-minecraft.EffectType): mojang-minecraft.Effect
+getEffect(effectType:mojang-minecraft.EffectType): mojang-minecraft.Effect
 `
 
 Returns the effect for the specified EffectType on the entity, or undefined if the effect is not present.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **effectType** | [*mojang-minecraft.EffectType*](../mojang-minecraft/EffectType.md) | n/a | - |
+#### **Parameters**
+- **effectType**: [*mojang-minecraft.EffectType*](../mojang-minecraft/EffectType.md)
 
-Returns [*mojang-minecraft.Effect*](../mojang-minecraft/Effect.md) - Effect object for the specified effect, or undefined if the effect is not present.
+#### **Returns** [*mojang-minecraft.Effect*](../mojang-minecraft/Effect.md) - Effect object for the specified effect, or undefined if the effect is not present.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getTags**
+`
+getTags(): string[]
+`
+
+Returns all tags associated with this simulated player.
+
+#### **Returns** *string*[]
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **hasComponent**
 `
-hasComponent(componentId: string): boolean
+hasComponent(componentId:string): boolean
 `
 
 Returns true if the specified component is present on this entity.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **componentId** | *string* | n/a | The identifier of the component (e.g., 'minecraft:rideable') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed. |
+#### **Parameters**
+- **componentId**: *string*
+  
+  The identifier of the component (e.g., 'minecraft:rideable') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed.
 
-Returns *boolean*
+#### **Returns** *boolean*
 
+
+### **hasTag**
+`
+hasTag(tag:string): boolean
+`
+
+Tests whether a simulated player has a particular tag.
+#### **Parameters**
+- **tag**: *string*
+  
+  Identifier of the tag to test for.
+
+#### **Returns** *boolean*
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **interact**
 `
@@ -240,40 +309,42 @@ interact(): boolean
 
 Performs a raycast from the player’s head and interacts with the first intersected block or entity. Returns true if the interaction was successful. Maximum range is 6 blocks.
 
-Returns *boolean*
+#### **Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **interactWithBlock**
 `
-interactWithBlock(blockLocation: mojang-minecraft.BlockLocation, direction: number): boolean
+interactWithBlock(blockLocation:mojang-minecraft.BlockLocation, direction:number): boolean
 `
 
 Causes the simulated player to interact with a block. The block at the specified block location must be solid. Returns true if the interaction was performed.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **blockLocation** | [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md) | n/a | Location of the block to interact with. |
-| **direction** | *number* | n/a | Direction to place the specified item within. |
+#### **Parameters**
+- **blockLocation**: [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md)
+  
+  Location of the block to interact with.
+- **direction**: *number* = `1`
+  
+  Direction to place the specified item within.
 
-Returns *boolean*
+#### **Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **interactWithEntity**
 `
-interactWithEntity(entity: mojang-minecraft.Entity): boolean
+interactWithEntity(entity:mojang-minecraft.Entity): boolean
 `
 
 Causes the simulated player to interact with a mob. Returns true if the interaction was performed.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **entity** | [*mojang-minecraft.Entity*](../mojang-minecraft/Entity.md) | n/a | Entity to interact with. |
+#### **Parameters**
+- **entity**: [*mojang-minecraft.Entity*](../mojang-minecraft/Entity.md)
+  
+  Entity to interact with.
 
-Returns *boolean*
+#### **Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.
@@ -285,7 +356,7 @@ jump(): boolean
 
 Causes the simulated player to jump.
 
-Returns *boolean* - True if a jump was performed.
+#### **Returns** *boolean* - True if a jump was performed.
 
 > [!WARNING]
 > This function can throw errors.
@@ -303,14 +374,12 @@ Kills this entity. The entity will drop loot as normal.
 
 ### **lookAtBlock**
 `
-lookAtBlock(blockLocation: mojang-minecraft.BlockLocation): void
+lookAtBlock(blockLocation:mojang-minecraft.BlockLocation): void
 `
 
 Rotates the simulated player's head/body to look at the given block location.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **blockLocation** | [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md) | n/a | - |
+#### **Parameters**
+- **blockLocation**: [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md)
 
 
 > [!WARNING]
@@ -318,14 +387,12 @@ Rotates the simulated player's head/body to look at the given block location.
 
 ### **lookAtEntity**
 `
-lookAtEntity(entity: mojang-minecraft.Entity): void
+lookAtEntity(entity:mojang-minecraft.Entity): void
 `
 
 Rotates the simulated player's head/body to look at the given entity.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **entity** | [*mojang-minecraft.Entity*](../mojang-minecraft/Entity.md) | n/a | - |
+#### **Parameters**
+- **entity**: [*mojang-minecraft.Entity*](../mojang-minecraft/Entity.md)
 
 
 > [!WARNING]
@@ -333,14 +400,12 @@ Rotates the simulated player's head/body to look at the given entity.
 
 ### **lookAtLocation**
 `
-lookAtLocation(location: mojang-minecraft.Location): void
+lookAtLocation(location:mojang-minecraft.Location): void
 `
 
 Rotates the simulated player's head/body to look at the given location.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **location** | [*mojang-minecraft.Location*](../mojang-minecraft/Location.md) | n/a | - |
+#### **Parameters**
+- **location**: [*mojang-minecraft.Location*](../mojang-minecraft/Location.md)
 
 
 > [!WARNING]
@@ -348,16 +413,14 @@ Rotates the simulated player's head/body to look at the given location.
 
 ### **move**
 `
-move(westEast: number, northSouth: number, speed: number): void
+move(westEast:number, northSouth:number, speed:number): void
 `
 
 Orders the simulated player to walk in the given direction relative to the GameTest.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **westEast** | *number* | n/a | - |
-| **northSouth** | *number* | n/a | - |
-| **speed** | *number* | n/a | - |
+#### **Parameters**
+- **westEast**: *number*
+- **northSouth**: *number*
+- **speed**: *number* = `1`
 
 
 > [!WARNING]
@@ -365,16 +428,14 @@ Orders the simulated player to walk in the given direction relative to the GameT
 
 ### **moveRelative**
 `
-moveRelative(leftRight: number, backwardForward: number, speed: number): void
+moveRelative(leftRight:number, backwardForward:number, speed:number): void
 `
 
 Orders the simulated player to walk in the given direction relative to the player's current rotation.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **leftRight** | *number* | n/a | - |
-| **backwardForward** | *number* | n/a | - |
-| **speed** | *number* | n/a | - |
+#### **Parameters**
+- **leftRight**: *number*
+- **backwardForward**: *number*
+- **speed**: *number* = `1`
 
 
 > [!WARNING]
@@ -382,15 +443,13 @@ Orders the simulated player to walk in the given direction relative to the playe
 
 ### **moveToBlock**
 `
-moveToBlock(blockLocation: mojang-minecraft.BlockLocation, speed: number): void
+moveToBlock(blockLocation:mojang-minecraft.BlockLocation, speed:number): void
 `
 
 Orders the simulated player to move to the given block location in a straight line. If a move or navigation is already playing, this will override the last move/navigation.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **blockLocation** | [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md) | n/a | - |
-| **speed** | *number* | n/a | - |
+#### **Parameters**
+- **blockLocation**: [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md)
+- **speed**: *number* = `1`
 
 
 > [!WARNING]
@@ -398,15 +457,13 @@ Orders the simulated player to move to the given block location in a straight li
 
 ### **moveToLocation**
 `
-moveToLocation(location: mojang-minecraft.Location, speed: number): void
+moveToLocation(location:mojang-minecraft.Location, speed:number): void
 `
 
 Orders the simulated player to move to the given location in a straight line. If a move or navigation is already playing, this will override the last move/navigation.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **location** | [*mojang-minecraft.Location*](../mojang-minecraft/Location.md) | n/a | - |
-| **speed** | *number* | n/a | - |
+#### **Parameters**
+- **location**: [*mojang-minecraft.Location*](../mojang-minecraft/Location.md)
+- **speed**: *number* = `1`
 
 
 > [!WARNING]
@@ -414,96 +471,128 @@ Orders the simulated player to move to the given location in a straight line. If
 
 ### **navigateToBlock**
 `
-navigateToBlock(blockLocation: mojang-minecraft.BlockLocation, speed: number): mojang-minecraft.ScriptNavigationResult
+navigateToBlock(blockLocation:mojang-minecraft.BlockLocation, speed:number): mojang-minecraft.NavigationResult
 `
 
 Orders the simulated player to move to a specific block location using navigation. If a move or navigation is already playing, this will override the last move/walk. Note that if the simulated player gets stuck, that simulated player will stop. The player must be touching the ground in order to start navigation.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **blockLocation** | [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md) | n/a | - |
-| **speed** | *number* | n/a | - |
+#### **Parameters**
+- **blockLocation**: [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md)
+- **speed**: *number* = `1`
 
-Returns [*mojang-minecraft.ScriptNavigationResult*](../mojang-minecraft/ScriptNavigationResult.md)
+#### **Returns** [*mojang-minecraft.NavigationResult*](../mojang-minecraft/NavigationResult.md)
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **navigateToEntity**
 `
-navigateToEntity(entity: mojang-minecraft.Entity, speed: number): mojang-minecraft.ScriptNavigationResult
+navigateToEntity(entity:mojang-minecraft.Entity, speed:number): mojang-minecraft.NavigationResult
 `
 
 Will use navigation to follow the selected entity to within a one block radius. If a move or navigation is already playing, this will override the last move/navigation.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **entity** | [*mojang-minecraft.Entity*](../mojang-minecraft/Entity.md) | n/a | - |
-| **speed** | *number* | n/a | - |
+#### **Parameters**
+- **entity**: [*mojang-minecraft.Entity*](../mojang-minecraft/Entity.md)
+- **speed**: *number* = `1`
 
-Returns [*mojang-minecraft.ScriptNavigationResult*](../mojang-minecraft/ScriptNavigationResult.md)
+#### **Returns** [*mojang-minecraft.NavigationResult*](../mojang-minecraft/NavigationResult.md)
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **navigateToLocation**
 `
-navigateToLocation(location: mojang-minecraft.Location, speed: number): mojang-minecraft.ScriptNavigationResult
+navigateToLocation(location:mojang-minecraft.Location, speed:number): mojang-minecraft.NavigationResult
 `
 
 Orders the simulated player to move to a specific location using navigation. If a move or navigation is already playing, this will override the last move/walk. Note that if the simulated player gets stuck, that simulated player will stop. The player must be touching the ground in order to start navigation.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **location** | [*mojang-minecraft.Location*](../mojang-minecraft/Location.md) | n/a | - |
-| **speed** | *number* | n/a | - |
+#### **Parameters**
+- **location**: [*mojang-minecraft.Location*](../mojang-minecraft/Location.md)
+- **speed**: *number* = `1`
 
-Returns [*mojang-minecraft.ScriptNavigationResult*](../mojang-minecraft/ScriptNavigationResult.md)
+#### **Returns** [*mojang-minecraft.NavigationResult*](../mojang-minecraft/NavigationResult.md)
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **navigateToLocations**
 `
-navigateToLocations(locations: mojang-minecraft.Location[], speed: number): void
+navigateToLocations(locations:mojang-minecraft.Location[], speed:number): void
 `
 
 Use navigation to follow the route provided via the locations parameter. If a move or navigation is already playing, this will override the last move/navigation. 
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **locations** | [*mojang-minecraft.Location*](../mojang-minecraft/Location.md)[] | n/a | A list of locations to use for routing. |
-| **speed** | *number* | n/a | Net speed to use for doing the navigation. |
+#### **Parameters**
+- **locations**: [*mojang-minecraft.Location*](../mojang-minecraft/Location.md)[]
+  
+  A list of locations to use for routing.
+- **speed**: *number* = `1`
+  
+  Net speed to use for doing the navigation.
 
+
+> [!WARNING]
+> This function can throw errors.
+
+### **removeTag**
+`
+removeTag(tag:string): boolean
+`
+
+Removes a specified tag from a simulated player.
+#### **Parameters**
+- **tag**: *string*
+  
+  Content of the tag to remove.
+
+#### **Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **rotateBody**
 `
-rotateBody(angleInDegrees: number): void
+rotateBody(angleInDegrees:number): void
 `
 
 Causes the simulated player to turn by the provided angle, relative to the player's current rotation.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **angleInDegrees** | *number* | n/a | - |
+#### **Parameters**
+- **angleInDegrees**: *number*
 
 
 > [!WARNING]
 > This function can throw errors.
 
+### **runCommand**
+`
+runCommand(commandString:string): any
+`
+
+Runs a particular command from the context of this simulated player.
+#### **Parameters**
+- **commandString**: *string*
+  
+  Command to run. Note that command strings should not start with slash.
+
+#### **Returns** *any* - For commands that return data, returns a JSON structure with command response values.
+
+> [!WARNING]
+> This function can throw errors.
+
+#### **Examples**
+##### *commands.js*
+```javascript
+player.runCommand("say You got a new high score!");
+player.runCommand("scoreboard players set @s score 10");
+```
 ### **selectSlot**
 `
-selectSlot(slot: number): void
+selectSlot(slot:number): void
 `
 
 Selects the provided slot in the player's hotbar.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **slot** | *number* | n/a | Index of the hotbar slot, ranging from 0 through 8. |
+#### **Parameters**
+- **slot**: *number*
+  
+  Index of the hotbar slot, ranging from 0 through 8.
 
 
 > [!WARNING]
@@ -511,14 +600,12 @@ Selects the provided slot in the player's hotbar.
 
 ### **setBodyRotation**
 `
-setBodyRotation(angleInDegrees: number): void
+setBodyRotation(angleInDegrees:number): void
 `
 
 Causes the simulated player to turn to face the provided angle, relative to the GameTest.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **angleInDegrees** | *number* | n/a | - |
+#### **Parameters**
+- **angleInDegrees**: *number*
 
 
 > [!WARNING]
@@ -570,14 +657,14 @@ Stops using the currently active item.
 
 ### **triggerEvent**
 `
-triggerEvent(eventName: string): void
+triggerEvent(eventName:string): void
 `
 
 Triggers an entity type event. For every entity, a number of events are defined in an entities' definition for key entity behaviors; for example, creepers have a minecraft:start_exploding type event.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **eventName** | *string* | n/a | Name of the entity type event to trigger. If a namespace is not specified, minecraft: is assumed. |
+#### **Parameters**
+- **eventName**: *string*
+  
+  Name of the entity type event to trigger. If a namespace is not specified, minecraft: is assumed.
 
 
 > [!WARNING]
@@ -585,72 +672,88 @@ Triggers an entity type event. For every entity, a number of events are defined 
 
 ### **useItem**
 `
-useItem(itemStack: mojang-minecraft.ItemStack): boolean
+useItem(itemStack:mojang-minecraft.ItemStack): boolean
 `
 
 Causes the simulated player to use an item. Does not consume the item. Returns false if the item is on cooldown.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **itemStack** | [*mojang-minecraft.ItemStack*](../mojang-minecraft/ItemStack.md) | n/a | Item to use. |
+#### **Parameters**
+- **itemStack**: [*mojang-minecraft.ItemStack*](../mojang-minecraft/ItemStack.md)
+  
+  Item to use.
 
-Returns *boolean*
+#### **Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **useItemInSlot**
 `
-useItemInSlot(slot: number): boolean
+useItemInSlot(slot:number): boolean
 `
 
 Causes the simulated player to hold and use an item in their inventory.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **slot** | *number* | n/a | Index of the inventory slot. |
+#### **Parameters**
+- **slot**: *number*
+  
+  Index of the inventory slot.
 
-Returns *boolean*
+#### **Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **useItemInSlotOnBlock**
 `
-useItemInSlotOnBlock(slot: number, blockLocation: mojang-minecraft.BlockLocation, direction: number, faceLocationX: number, faceLocationY: number): boolean
+useItemInSlotOnBlock(slot:number, blockLocation:mojang-minecraft.BlockLocation, direction:number, faceLocationX:number, faceLocationY:number): boolean
 `
 
 Causes the simulated player to use an item in their inventory on a block. The block at the specified block location must be solid. Returns true if the item was used.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **slot** | *number* | n/a | Index of the slot to use. |
-| **blockLocation** | [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md) | n/a | Location to use the item upon. |
-| **direction** | *number* | n/a | Direction to place the specified item within. |
-| **faceLocationX** | *number* | n/a | Block-face-relative X position where to place the item. |
-| **faceLocationY** | *number* | n/a | Block-face-relative Y position where to place the item. |
+#### **Parameters**
+- **slot**: *number*
+  
+  Index of the slot to use.
+- **blockLocation**: [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md)
+  
+  Location to use the item upon.
+- **direction**: *number* = `1`
+  
+  Direction to place the specified item within.
+- **faceLocationX**: *number* = `0.5`
+  
+  Block-face-relative X position where to place the item.
+- **faceLocationY**: *number* = `0.5`
+  
+  Block-face-relative Y position where to place the item.
 
-Returns *boolean*
+#### **Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **useItemOnBlock**
 `
-useItemOnBlock(itemStack: mojang-minecraft.ItemStack, blockLocation: mojang-minecraft.BlockLocation, direction: number, faceLocationX: number, faceLocationY: number): boolean
+useItemOnBlock(itemStack:mojang-minecraft.ItemStack, blockLocation:mojang-minecraft.BlockLocation, direction:number, faceLocationX:number, faceLocationY:number): boolean
 `
 
 Causes the simulated player to use an item on a block. The block at the specified block location must be solid. Returns true if the item was used.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **itemStack** | [*mojang-minecraft.ItemStack*](../mojang-minecraft/ItemStack.md) | n/a | Item to use. |
-| **blockLocation** | [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md) | n/a | Location to use the item upon. |
-| **direction** | *number* | n/a | Direction to place the specified item within. |
-| **faceLocationX** | *number* | n/a | Block-face-relative X position where to place the item. |
-| **faceLocationY** | *number* | n/a | Block-face-relative Y position where to place the item. |
+#### **Parameters**
+- **itemStack**: [*mojang-minecraft.ItemStack*](../mojang-minecraft/ItemStack.md)
+  
+  Item to use.
+- **blockLocation**: [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md)
+  
+  Location to use the item upon.
+- **direction**: *number* = `1`
+  
+  Direction to place the specified item within.
+- **faceLocationX**: *number* = `0.5`
+  
+  Block-face-relative X position where to place the item.
+- **faceLocationY**: *number* = `0.5`
+  
+  Block-face-relative Y position where to place the item.
 
-Returns *boolean*
+#### **Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.

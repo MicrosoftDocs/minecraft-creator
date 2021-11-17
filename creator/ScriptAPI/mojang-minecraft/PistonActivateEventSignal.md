@@ -10,7 +10,6 @@ description: Contents of the mojang-minecraft.PistonActivateEventSignal class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-
 Manages callbacks that are connected to piston activations.
 
 
@@ -20,28 +19,24 @@ Manages callbacks that are connected to piston activations.
   
 ### **subscribe**
 `
-subscribe(callback: (arg: PistonActivateEvent) => undefined): (arg: PistonActivateEvent) => undefined
+subscribe(callback:(arg: PistonActivateEvent) => undefined): (arg: PistonActivateEvent) => undefined
 `
 
 Adds a callback that will be called when a piston expands or retracts.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **callback** | (arg: PistonActivateEvent) => undefined | n/a | - |
+#### **Parameters**
+- **callback**: (arg: PistonActivateEvent) => undefined
 
-Returns (arg: PistonActivateEvent) => undefined
+#### **Returns** (arg: PistonActivateEvent) => undefined
 
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: PistonActivateEvent) => undefined): void
+unsubscribe(callback:(arg: PistonActivateEvent) => undefined): void
 `
 
 Removes a callback from being called when a piston expands or retracts.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **callback** | (arg: PistonActivateEvent) => undefined | n/a | - |
+#### **Parameters**
+- **callback**: (arg: PistonActivateEvent) => undefined
 
 
 > [!WARNING]

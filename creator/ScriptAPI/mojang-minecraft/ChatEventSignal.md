@@ -10,7 +10,6 @@ description: Contents of the mojang-minecraft.ChatEventSignal class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-
 Manages callbacks that are connected to chat messages being sent.
 
 
@@ -20,20 +19,18 @@ Manages callbacks that are connected to chat messages being sent.
   
 ### **subscribe**
 `
-subscribe(callback: (arg: ChatEvent) => undefined): (arg: ChatEvent) => undefined
+subscribe(callback:(arg: ChatEvent) => undefined): (arg: ChatEvent) => undefined
 `
 
 Adds a callback that will be called when new chat messages are sent.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **callback** | (arg: ChatEvent) => undefined | n/a | - |
+#### **Parameters**
+- **callback**: (arg: ChatEvent) => undefined
 
-Returns (arg: ChatEvent) => undefined
+#### **Returns** (arg: ChatEvent) => undefined
 
 
-#### Examples
-##### ***custom_command.js***
+#### **Examples**
+##### *custom_command.js*
 ```javascript
 const chatCallback = World.events.beforeChat.subscribe((eventData) => {
 if (eventData.message.includes("cancel")) {
@@ -47,14 +44,12 @@ eventData.message = `Modified '${eventData.message}'`;
 ```
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ChatEvent) => undefined): void
+unsubscribe(callback:(arg: ChatEvent) => undefined): void
 `
 
 Removes a callback from being called when new chat messages are sent.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **callback** | (arg: ChatEvent) => undefined | n/a | - |
+#### **Parameters**
+- **callback**: (arg: ChatEvent) => undefined
 
 
 > [!WARNING]

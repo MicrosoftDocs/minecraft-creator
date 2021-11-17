@@ -1,14 +1,14 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: Introduction to the Caves & Cliffs Entities
+title: Introduction to the Caves and Cliffs Entities
 ms.prod: gaming
-description: An introduction to the new Entities that are included in the Caves & Cliffs update
+description: An introduction to the new Entities that are included in the Caves and Cliffs update
 ---
 
-# Introduction to the Caves & Cliffs Entities
+# Introduction to the Caves and Cliffs Entities
 
-The Caves & Cliffs update brings three brand-new entities to Minecraft: Bedrock Edition: the glow squid, the goat, and the axolotl. These new entities have some fun, new behaviors that you can tweak and use to create even more customized Minecraft experiences.
+The Caves and Cliffs update brings three brand-new entities to Minecraft: Bedrock Edition: the glow squid, the goat, and the axolotl. These new entities have some fun, new behaviors that you can tweak and use to create even more customized Minecraft experiences.
 
 ## Axolotl
 
