@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: v-josjones
+ms.author: v-josjones
 title: World Height Changes
 ms.prod: gaming
 description: "Effects of world height changes in Caves and Cliffs: Part 2 on creators"
@@ -30,7 +30,7 @@ This will only apply to previously explored and saved chunks - new chunks will b
 > [!WARNING]
 > In order for world generation to work properly, you will need to have a layer of bedrock located on the `0` y coordinate plane. Without the bedrock layer, the maps will not generate new chunks when updating to `1.18`.
 
-To c update your existing Minecraft world to reflect the new world height values, follow these instructions:
+To update your existing Minecraft world to reflect the new world height values, follow these instructions:
 
 1. On the main menu, select **Play**.
 1. Select the world that you want to update.
