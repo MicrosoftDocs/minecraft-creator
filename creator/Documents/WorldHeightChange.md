@@ -1,7 +1,7 @@
 ---
 author: v-jeffreykim
 ms.author: v-jeffreykim
-title: World Height Changes
+title: World Height Changes in Caves and Cliffs Part 2
 ms.prod: gaming
 description: "Effects of world height changes in Caves and Cliffs: Part 2 on creators"
 ---
@@ -16,6 +16,9 @@ All existing worlds will be automatically updated to reflect the new world heigh
 > You can force your Minecraft worlds to keep the old world height values (`0` to `256`) by [setting a base game version](BaseGameVersioning.md) of **less than 1.18**. All worlds with no base game version or base game versions of 1.18 or later will be automatically updated to use the new world height values.
 >
 > You may want to set a base game version if players will encounter issues with your world or gameplay experience with the new world height values.
+
+> [!TIP]
+> To learn more about old world types, please visit [Old Worlds Types in Minecraft: Bedrock Edition](https://feedback.minecraft.net/hc/en-us/articles/4411688594317-Old-Worlds-Types-in-Minecraft-Bedrock-Edition-FAQ-)
 
 ## Updating Your Minecraft World
 
