@@ -34,9 +34,9 @@ highlightedContent:
       itemType: whats-new
       url: Documents/AddonPackInstallation.md
     #card
-    - title: Commonly Used Tools
-      itemType: whats-new
-      url: Documents/CommonlyUsedTools.md
+    - title: GameTest Reference Documentation
+      itemType: learn
+      url: ScriptAPI/index.yml
     #card
     - title: Differences Between Minecraft Bedrock Edition and Minecraft Java Edition
       itemType: architecture
