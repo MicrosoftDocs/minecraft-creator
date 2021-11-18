@@ -89,7 +89,7 @@
           - name: Introduction to the Caves and Cliffs Entities
             href: Documents/CavesAndCliffsEntities.md
           - name: World Height Changes in Caves and Cliffs Part 2
-            href: Documentation/WorldHeightChange.md
+            href: Documents/WorldHeightChange.md
         - name: Useful Knowledge for Creators
           items:
           - name: 'Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition'
