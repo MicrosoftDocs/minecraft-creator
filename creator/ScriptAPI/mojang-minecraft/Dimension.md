@@ -16,7 +16,9 @@ A class that represents a particular dimension (e.g., The End) within a world.
 ## Methods
 - [createExplosion](#createexplosion)
 - [getBlock](#getblock)
+- [getBlockFromRay](#getblockfromray)
 - [getEntitiesAtBlockLocation](#getentitiesatblocklocation)
+- [getEntitiesFromRay](#getentitiesfromray)
 - [isEmpty](#isempty)
 - [runCommand](#runcommand)
 - [spawnEntity](#spawnentity)
@@ -56,6 +58,24 @@ Returns a block instance at the given location. This method was introduced as of
 #### **Returns** [*Block*](Block.md) - Block at the specified location.
 
 
+### **getBlockFromRay**
+`
+getBlockFromRay(location:Location, direction:Location, options:optional): Block
+`
+
+Gets the first block that intersects with a vector emanating from a location.
+#### **Parameters**
+- **location**: [*Location*](Location.md)
+- **direction**: [*Location*](Location.md)
+- **options**: *optional*
+  
+  Additional options for processing this raycast query.
+
+#### **Returns** [*Block*](Block.md)
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **getEntitiesAtBlockLocation**
 `
 getEntitiesAtBlockLocation(location:BlockLocation): Entity[]
@@ -69,6 +89,24 @@ Returns a set of entities at a particular location.
 
 #### **Returns** [*Entity*](Entity.md)[] - Zero or more entities at the specified location.
 
+
+### **getEntitiesFromRay**
+`
+getEntitiesFromRay(location:Location, direction:Location, options:optional): Entity[]
+`
+
+Gets entities that intersect with a specified vector emanating from a location.
+#### **Parameters**
+- **location**: [*Location*](Location.md)
+- **direction**: [*Location*](Location.md)
+- **options**: *optional*
+  
+  Additional options for processing this raycast query.
+
+#### **Returns** [*Entity*](Entity.md)[]
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **isEmpty**
 `

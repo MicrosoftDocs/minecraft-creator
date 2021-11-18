@@ -68,6 +68,10 @@
         href: mojang-minecraft/BlockPotionContainerComponent.md
       - name: BlockProperties
         href: mojang-minecraft/BlockProperties.md
+      - name: BlockRaycastOptions
+        href: mojang-minecraft/BlockRaycastOptions.md
+      - name: BlockRecordPlayerComponent
+        href: mojang-minecraft/BlockRecordPlayerComponent.md
       - name: BlockSnowContainerComponent
         href: mojang-minecraft/BlockSnowContainerComponent.md
       - name: BlockType
@@ -156,6 +160,8 @@
         href: mojang-minecraft/EntityNavigationHoverComponent.md
       - name: EntityNavigationWalkComponent
         href: mojang-minecraft/EntityNavigationWalkComponent.md
+      - name: EntityRaycastOptions
+        href: mojang-minecraft/EntityRaycastOptions.md
       - name: EntityRideableComponent
         href: mojang-minecraft/EntityRideableComponent.md
       - name: EntityStrengthComponent
@@ -238,8 +244,6 @@
         href: mojang-minecraft/PlayerLeaveEvent.md
       - name: PlayerLeaveEventSignal
         href: mojang-minecraft/PlayerLeaveEventSignal.md
-      - name: RecordPlayer
-        href: mojang-minecraft/RecordPlayer.md
       - name: Seat
         href: mojang-minecraft/Seat.md
       - name: StringBlockProperty
