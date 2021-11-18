@@ -136,14 +136,6 @@ The fog stack initially is set up as follows. Starting at the bottom:
 - Biomes: The settings defined to be on each biome.
 - Command: The settings set on the player by server commands.
 
-### Engine Default
-
-Hard-coded values are used in case there are no data driven values; the Engine Default will be loaded if there is no matching fog setting when the game reaches the bottom of the fog stack.
-
-### Data Default
-
-Defined in **biomes_client.json** under `default` if it references a fog definition via `fog_identifier`.
-
 ### Biomes
 
 The biome layer is an average of all the settings defined by the biomes around the player's position. The biome settings are defined in **biomes_client.json** as well for each individual biome.
@@ -151,6 +143,14 @@ The biome layer is an average of all the settings defined by the biomes around t
 ### Command
 
 The command layer is all the settings set by the **/fog** command and evaluated it as one stack from top to bottom. For more information, see the **Fog Command** section.
+
+### Data Default
+
+Defined in **biomes_client.json** under `default` if it references a fog definition via `fog_identifier`.
+
+### Engine Default
+
+Hard-coded values are used in case there are no data driven values; the Engine Default will be loaded if there is no matching fog setting when the game reaches the bottom of the fog stack.
 
 ## Biomes
 
@@ -176,14 +176,15 @@ Fog settings are evaluated top-to bottom in the active fog stack which includes 
 
 Fog settings in this layer are saved and then restored on world load per player. A fog setting that is pushed before a world save will still apply after a world load and can then be popped.
 
+
 ### Push
 
-Pushes a new fog setting with a user provided ID to specified players onto the top of the Fog Command layers of the players' active fog stacks.
+Pushes a new fog setting onto the top of the Fog Command layers for a player's active fog stack, given that player's specified ID.
 
 ### Pop
 
-Removes the top-most fog setting from selected players that matches the user provided ID.
+Removes the top-most fog setting from a selected player, given that player's specified ID.
 
 ### Remove
 
-Removes all matching fog settings, from the selected players that matches the user-provided ID.
+Removes all matching fog settings (provided previously through one or more "/fog push" commands) from a selected player, given that player's specified ID.
