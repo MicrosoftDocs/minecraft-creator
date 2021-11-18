@@ -51,7 +51,7 @@ Block entity definitions are handled differently in the resource pack. Blocks ar
 
 ### blocks.json
 
-The blocks.json file has a similar set up to the manifest.json file and has requirements in order to work correctly. The canvas block will use a custom texture for four of the sides, and a different texture for the top and bottom that you are going to bring over from the Vanilla Resource Pack.
+The blocks.json file has a similar set up to the manifest.json file and has requirements that need to be met in order for it to work correctly. The canvas block will use a custom texture for four of the sides, and a different texture for the top and bottom that you are going to bring over from the Vanilla Resource Pack.
 
 1. Copy the following text and paste it into your **blocks.json** file.
 
@@ -73,7 +73,7 @@ The blocks.json file has a similar set up to the manifest.json file and has requ
 
 #### Textures and Sub-textures
 
-As shown in the JSON code above, the canvas block is using two textures. The top and bottom are using the existing **log_oak_top.png** while the other side is using a custom texture. Blocks can also be assigned a single texture to cover every side of a block with the same texture.
+As shown in the JSON code above, the canvas block is using two textures. The top and bottom are using the existing **log_oak_top.png** while the other sides are using a custom texture. Blocks can also be assigned a single texture to cover every side of a block with the same texture.
 
 `"textures": "canvasblock"`
 
@@ -180,7 +180,7 @@ The identifier that was used in the resource pack is defined here. The block is 
 
 - **`destroy_time`** is how many player hits does it take to destroy this block.
 - **`explosion_resistance`** is how resistent the block is to explosions. Higher values mean the block is less likely to break.
-- **`friction`** is used to drive player and entity speeds while stepping on this block. wood and dirt are set to a friction of `0.6` while ice is set to `0.1`.
+- **`friction`** is used to drive player and entity speeds while stepping on this block. Wood and dirt are set to a friction of `0.6` while ice is set to `0.1`.
 - **`flammable`** is used to contain properties on how the block handles fire events.
     - **`flame_odds`** is how likely the block is to catch fire.
     - **`burn_odds`** is how likely the block is to be destroyed when on fire.
