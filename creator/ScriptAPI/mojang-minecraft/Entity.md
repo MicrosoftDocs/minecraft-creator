@@ -76,9 +76,11 @@ Type: [*Location*](Location.md)
 ## Methods
 - [addEffect](#addeffect)
 - [addTag](#addtag)
+- [getBlockFromViewVector](#getblockfromviewvector)
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
 - [getEffect](#geteffect)
+- [getEntitiesFromViewVector](#getentitiesfromviewvector)
 - [getTags](#gettags)
 - [hasComponent](#hascomponent)
 - [hasTag](#hastag)
@@ -133,6 +135,22 @@ Adds a specified tag to an entity.
 > [!WARNING]
 > This function can throw errors.
 
+### **getBlockFromViewVector**
+`
+getBlockFromViewVector(options:optional): Block
+`
+
+Gets the first block that intersects with the vector of the view of this entity.
+#### **Parameters**
+- **options**: *optional*
+  
+  Additional options for processing this raycast query.
+
+#### **Returns** [*Block*](Block.md)
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **getComponent**
 `
 getComponent(componentId:string): IEntityComponent
@@ -167,6 +185,22 @@ Returns the effect for the specified EffectType on the entity, or undefined if t
 - **effectType**: [*EffectType*](EffectType.md)
 
 #### **Returns** [*Effect*](Effect.md) - Effect object for the specified effect, or undefined if the effect is not present.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getEntitiesFromViewVector**
+`
+getEntitiesFromViewVector(options:optional): Entity[]
+`
+
+Gets the first entity that intersects with the vector of the view of this entity.
+#### **Parameters**
+- **options**: *optional*
+  
+  Additional options for processing this raycast query.
+
+#### **Returns** [*Entity*](Entity.md)[]
 
 > [!WARNING]
 > This function can throw errors.

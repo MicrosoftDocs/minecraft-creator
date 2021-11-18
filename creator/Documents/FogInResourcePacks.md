@@ -28,7 +28,7 @@ It’s recommended that the following be completed before beginning this tutoria
 
 ### Example
 
-The vanilla resource pack template (found [here](https://aka.ms/resourcepacktemplate)) contains all of the fog files used in the game. These files can serve as examples for creating your own fog definitions. A completed fog file will look similar to the following:
+The Vanilla Resource Pack template (found [here](https://aka.ms/resourcepacktemplate)) contains all of the fog files used in the game. These files can serve as examples for creating your own fog definitions. A completed fog file will look similar to the following:
 
 ```json
 {
@@ -66,19 +66,19 @@ The vanilla resource pack template (found [here](https://aka.ms/resourcepacktemp
 
 ### Variables
 
-#### `format_version`
+#### format_version
 
 The resource pack version that this fog setting was built for. This is used for determining upgrade paths and backwards compatibility in newer versions of the game. The minimum version is 1.16.100.
 
-#### `minecraft:fog_settings`
+#### minecraft:fog_settings
 
 Contains the definitions and options of the fog.
 
-#### `description`
+#### description
 
 Holds the description for this fog setting, which primarily contains an identifier.
 
-##### `identifier`
+##### identifier
 
 Held within the `description` object.
 
@@ -96,7 +96,7 @@ The unique name to refer to this fog setting. Each identifier requires a namespa
 }
 ```
 
-#### `distance`
+#### distance
 
 This object contains the values for distance-based fog. This is the fog that limits the player from seeing anything beyond a specific distance from them. Each field within this object contains one type of distance value.
 
@@ -132,11 +132,11 @@ In each distance setting type, you can set the following variables:
 - `render`: The distance is multiplied against the current render distance.
 - `fog_color`: The color that the fog will take on.
 
-#### `volumetric`
+#### volumetric
 
 This object contains the values for volumetric fog. This fog will be displayed as a calculation from light passing through blocks. Currently this is only used for PBR (Ray Tracing) and is planned to be added to non-PBR later.
 
-##### `density`
+##### density
 
 Held within the `volumetric` object. Each field within it contains one type of density value.
 
@@ -172,7 +172,7 @@ In each density setting type, you can set the following variables:
 - `zero_density_height`: the height in blocks that the fog will begin to appear. This can only be set if `uniform` is set to false.
 - `max_density_height`: the height in blocks that the fog will become its `max_density`. This can be set only if `uniform` is set to false.
 
-#### `media_coefficients`
+#### media_coefficients
 
 Held within the `volumetric` object.
 
