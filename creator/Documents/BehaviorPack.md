@@ -112,7 +112,7 @@ Before you start editing your cow behavior, let's get more familiar with the par
 
 ### minecraft:entity
 
-Like other Minecraft entity JSON files, cow.json contains a series of sections. The first section, `minecraft:entity`, is used as a container for information about what the entity is. Description, Components Groups, Components, and Events are contained in the `minecraft:entity` container. In the cow.json file, you can see the following content in its description section:
+Like other Minecraft entity JSON files, cow.json is made up of a series of sections. The first section, `minecraft:entity`, contains information about what the entity is. Description, Components Groups, Components, and Events are held in the `minecraft:entity` container. In the cow.json file, you can see the following content in its description section:
 
 ```json
 "minecraft:entity": {
