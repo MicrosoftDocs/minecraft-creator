@@ -10,7 +10,6 @@ description: Contents of the mojang-minecraft.BlockType class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-
 The type (or template) of a block. Does not contain permutation data (state) other than the type of block it represents. This type was introduced as of version 1.17.10.21.
 
 ## Properties
@@ -41,21 +40,21 @@ createDefaultBlockPermutation(): BlockPermutation
 
 Creates the default [*mojang-minecraft.BlockPermutation*](../mojang-minecraft/BlockPermutation.md) for this type which uses the default values for all properties.
 
-Returns [*BlockPermutation*](BlockPermutation.md) - Returns created permutation.
+#### **Returns** [*BlockPermutation*](BlockPermutation.md) - Returns created permutation.
 
 > [!WARNING]
 > This function can throw errors.
 
-#### Examples
-##### ***place_bottom_stone_slab.js***
+#### **Examples**
+##### *place_bottom_stone_slab.js*
 ```javascript
-import { World, MinecraftBlockTypes, BlockProperties, BlockLocation } from "mojang-minecraft";
+import { world, MinecraftBlockTypes, BlockProperties, BlockLocation } from "mojang-minecraft";
 // Create the permutation
 let bottomStoneSlab = MinecraftBlockTypes.stoneSlab.createDefaultBlockPermutation();
 bottomStoneSlab.getProperty(BlockProperties.stoneSlabType).value = "stone_brick";
 bottomStoneSlab.getProperty(BlockProperties.topSlotBit).value = false;
 // Fetch the block
-const block = World.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3));
+const block = world.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3));
 // Set the permutation
 block.setPermutation(bottomStoneSlab);
 ```

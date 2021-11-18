@@ -10,6 +10,8 @@ description: Contents of the mojang-minecraft.EntityMountTamingComponent class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
+## Base Types
+- [*IEntityComponent*](IEntityComponent.md)
 
 Contains options for taming a rideable entity based on the entity that mounts it.
 
@@ -28,14 +30,14 @@ Type: *string*
   
 ### **setTamed**
 `
-setTamed(showParticles: boolean): void
+setTamed(showParticles:boolean): void
 `
 
 Sets this rideable entity as tamed.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **showParticles** | *boolean* | n/a | Whether to show effect particles when this entity is tamed. |
+#### **Parameters**
+- **showParticles**: *boolean*
+  
+  Whether to show effect particles when this entity is tamed.
 
 
 > [!WARNING]

@@ -8,7 +8,7 @@ description: A tutorial that is an introduction to Resource Packs and how to add
 
 # Introduction to Resource Packs
 
-Before building your first Add-On, you will need to create a pack in order to add any custom content in Minecraft: Bedrock Edition. There are two types of packs that a creator can make: resource and behavior packs. A **resource pack** is a folder structure that will contain all of your custom models, sounds, textures and any custom content that is made. resource packs are commonly used to add user generated content to Minecraft in order to augment a player's experience.
+Before building your first Add-On for Minecraft: Bedrock Edition, you will need to create a pack to hold your custom content. There are two types of packs that a creator can make: resource packs and behavior packs. A **resource pack** is a folder structure that will contain all of your custom models, sounds, textures and other custom content. 
 
 :::image type="content" source="Media/ResourcePack/Introduction-to-Resource-Packs.jpg" alt-text="Image showing a pig deeply confused by its environment containing green dirt blocks":::
 
@@ -16,7 +16,7 @@ In this tutorial, you will learn the following:
 
 > [!div class="checklist"]
 >
-> - Understand how a **resource pack** is created.
+> - How a **resource pack** is created.
 > - How a **manifest file** is created.
 > - How custom textures are loaded into Minecraft.
 > - The concept of **Pack Stacking** when working with Add-On content.
@@ -33,18 +33,17 @@ You will also need the following:
 
 ## Building the Resource Pack
 
-In order to create a new resource pack, you will need to create a new folder to contain a manifest file that can be read by Minecraft, and the custom content that will be loaded into the game.
+The first part of creating a resource pack is to create the folder that will hold your custom content. It will need to be placed in a location where Minecraft can find it so your changes can be loaded into the game.
 
-1. Open up your game location folder **com.mojang**
-1. Double-click on the folder **development_resource_packs**.
-1. Right-click in the File Explorer window and select **New** and then **Folder** to create a new folder.
-1. Name the new folder **HelloWorldRP**.
-1. Double-click on **HelloWorldRP** to open the folder.
-   	![image of newly created folder with a single Folder called HelloWorldRP located within](Media/ResourcePack/helloworldrp.png)
+1. Open your **com.mojang** folder.
+1. Double-click the **development_resource_packs** folder to open it.
+1. Add a new folder and name it **My_RESOURCE_Pack**.
+1. Double-click the ***My_RESOURCE_Pack** folder to open it.
+   	![image of newly created folder with a single Folder called My_RESOURCE_Pack located in the development resource packs folder](Media/ResourcePack/myresourcepack.png)
 
-### The Manifest File
+### Creating a Manifest File
 
-In order to load a resource pack into Minecraft, a manifest file will need to be generated. The manifest file is a JSON file that contains the following information;
+To load a resource pack into Minecraft, a manifest file will need to be created. The manifest file is a JSON file that contains the following information:
 
 - **Description**: In-game description of what the resource pack does.
 - **Name**: In-game name of the resource pack.
@@ -52,22 +51,22 @@ In order to load a resource pack into Minecraft, a manifest file will need to be
 - **Version**: Version of the resource pack.
 - **Minimum Engine Version**: Required version of Minecraft that this pack will work in.
 
-Since the file is written in JSON, Minecraft will be able to parse the information from the file and display it in the Add-On section. Inside the file, the information will be split into two separate sections; header and modules. The header section will contain the overall information for the pack, while modules will contain the dedicated packages information.
+ Minecraft will parse the information from the manifest file and display it in the Add-On section of the game. Inside the file, the information will be split into two separate sections: header and modules. The header section will contain the overall information for the pack, and the modules section will contain the dedicated packages information.
 
-1. Right-click in the Explorer window and select **New**, then select **Text Document**.
-1. Set the name to **manifest.json**.
+1. Right-click in the Explorer window, select **New > Text Document**.
+1. Name it **manifest.json**.
     1. You will need to change the file extension from .txt to .json. If your Explorer window does not show file extensions, you can enable **File Name Extensions** under the **View** tab.
-    ![image of newly created JSON file named Manifest located within the HelloWorldRP folder](Media/ResourcePack/manifest_file.png)
-1. Double-click on **manifest.json** to open it in a Text Editor.
-1. Copy/Paste the following code snippet into your text editor.
+    ![image of newly created file named manifest.json file located within the My_RESOURCE_Pack folder](Media/ResourcePack/manifest_file.png)
+1. Double-click the **manifest.json** file to open it in a text editor.
+1. Copy and paste the following code into your file.
 
 ```json
 	{
 	  "format_version": 2,
 	  "header": {
-        "description": "My First Add-On!",
-	    "name": "Hello WorldRP",
-	    "uuid": "",
+      "description": "My first resource pack Add-On!",
+	    "name": "My Resource Pack",
+	    "uuid":"",
 	    "version": [1, 0, 0],
 	    "min_engine_version": [1, 16, 0]
 	  },
@@ -82,81 +81,76 @@ Since the file is written in JSON, Minecraft will be able to parse the informati
 	}
 ```
 
-> [!NOTE]
-> For `format_version`, `2` is used as the value for the manifest.json file. While `"1.16.0` or `[1.16.0]` are used in vanilla manifest files, it is recommended to use the latest `"format_version": 2` for custom content.
-
 ### UUID
 
-Universally Unique Identifier, or UUID for short, is a unique number used to identify different software. For Minecraft, the UUID is used to define a specific pack and prevent any duplicate software from causing issues. For both header and modules, there will need to be 2 different UUID numbers entered between the quotes. You can use an online UUID Generator such as [UUID Generator](https://www.uuidgenerator.net/).
+Universally Unique Identifier, or UUID for short, is a unique number used to identify different software. For Minecraft, the UUID is used to define a specific pack and to prevent any duplicate software from causing issues. For the header and modules, there will need to be two different UUID numbers entered in each of the `"uuid"` fields between the quotes. You can get UUIDs from an online UUID Generator such as https://www.uuidgenerator.net/.
 
-![Image of UUIDGenerator.net home screen with a custom UUID generated out](\Media\BehaviorPack\UUID.png)
+![Image of UUIDGenerator.net home screen with a custom UUID generated](Media/BehaviorPack/UUID.png)
 
-1. Copy and paste a UUID into the header section. The UUID will need to be pasted between the quotation ("") marks in order to be read correctly.
-1. Reload the webpage in order to generate a new UUID for use in the Modules section.
-1. Copy and paste the new UUID into the modules section in-between the quotation marks.
-1. Save the manifest file.
+1. Copy and paste a UUID into the header section. The UUID will need to be pasted in the `"uuid":""` field between the quotation ("") marks in order to be read correctly.
+1. Refresh the webpage to generate a new UUID for use in the Modules section.
+1. Copy and paste the new UUID into the modules section in the `"uuid"` field between the quotation marks.
+1. Save the manifest.json file.
 
 > [!NOTE]
-> To learn more about how a manifest.json file works, you can view the [manifest.json](../Reference/Content/AddonsReference/Examples/AddonManifest.md) page in the Addons documentation by clicking on the link above.
+> To learn more about how a manifest.json file works, you can click this link to see the page in the Addons documentation: [manifest.json](../Reference/Content/AddonsReference/Examples/AddonManifest.md).
 
 ## Changing the dirt block
 
-With the manifest file completed, you can now start adding custom content to Minecraft. Let’s get started by applying a new texture to the vanilla dirt block.
+With the manifest file completed, you can now start adding custom content to Minecraft. Let’s get started by applying a new texture to the vanilla dirt block. The first part of the process involves creating a folder structure to hold the texture.
 
-1. In File Explorer, in the **HelloWorldRP** folder, right-click and select **New**, then select **Folder**.
-1. Rename the folder to **textures**.
-1. Double-click on the **textures** folder.
-1. Right-click and select **New**, then select **Folder**.
-1. Rename the folder to **blocks**.
-1. Double-click on the **blocks** folder.
+1. In File Explorer, in the **My_RESOURCE_Pack** folder, create a folder and name it **textures**.
+1. Double-click the **textures** folder to open it.
+1. Inside the textures folder, create a folder and name it **blocks**.
+1. Double-click the **blocks** folder to open it.
 	![image of the Windows Explorer Address Bar showcasing the 2 new folders named textures and blocks](Media/ResourcePack/blocks_folder.png)
 
 ### Creating the texture
 
-Now that the folder structure is created, you can now place your custom textures here. A png file is also provided that you can download and place in your folder.
+Now that the folder structure is created, you can place your custom textures there. This little, green square is an example of the type of file created by the following steps. 
 
 ![A PNG file that can be downloaded and used in place of a custom texture made in a photo editor](Media/ResourcePack/dirt.png)
 
-1. Open up an image editor such as Paint3D, MS Paint or Photoshop.
-    1. In this tutorial, MS Paint will be used.
-1. In the **Toolbar**, select **File**, then select **Properties**.
+You can download it and save it in your **blocks** folder or follow these steps to create your own texture:
+
+1. Open up an image editor such as MS Paint.
+1. Go to the **File** menu and select **Properties**.
 1. Set the **Width** and **Height** to **16 pixels** each.
+1. Click **OK**.
 
-You can now design a pattern or any artwork in the editor. In this example, a simple fill color has been added.
+You can now design a pattern or any artwork in the editor. To make the green square, a simple fill color was added.
 
-> [!IMPORTANT]
-> While MS Paint is used for this example for it's quick and easy access, there are a few drawbacks as well.
->
-> - MS Paint does *not* support alpha channels that are commonly used for transparency effects in Minecraft.
-> - MS Paint does *not* support .tga files types.
+> [!NOTE]
+> MS Paint is used in this example for quick and easy access, but you will need to use a different graphics editor for more advanced graphic features like transparency effects or .tga file support.
 
-1. When done with your texture, select **File** and then select **Save As a PNG**.
-1. Navigate to the **blocks** folder.
+1. When you're done editing your texture, go to the **File** menu and select **Save As**.
+1. Chose the **PNG picture** option.
+1. In the **Save As** dialog box, navigate to the **blocks** folder you created.
 1. Save the file as **dirt.png**.
 
 ### Testing the pack
 
-Now that the pack has both a manifest file and a texture, you can now launch Minecraft and test your new Add-On.
+Now that the pack has both a manifest file and a texture, you can launch Minecraft and test your new resource Add-On.
 
 > [!IMPORTANT]
-> **Pack Stacking** is when content is loaded on top of vanilla content, causing each object that has the same name in both packs to be overwritten by the *latest* applied pack (in our example, the Dirt texture is overwritten by our custom texture).
+> **Pack Stacking** is how content is loaded on top of vanilla content, causing each object that has the same name in both packs to be overwritten by the *latest* applied pack. In our example, the original dirt texture is overwritten by our custom texture.
 >
-> If another pack that uses the dirt.png file is loaded **after** helloWorldBP, then Minecraft will use the latest dirt.png that was applied.
+> If another pack that uses the dirt.png file is loaded **after** My_RESOURCE_Pack, then Minecraft will use that one instead and you won't see that change.
 
-Since the custom texture is named dirt.png, the texture will be used on every single dirt block in game.
+Your custom texture will be used on every dirt.png block in the world, but it will not be used on blocks of dirt with grass on them because those block have a different name.
 
-1. Launch Minecraft.
-1. When Minecraft has launched and reached the main menu, select **Play**.
-1. Select **Create a new world**.
-1. Under **Settings**, scroll down to the **Add-On** section.
-1. Click on **resource packs** to see all available packs.
-1. Under all of the packs, select **HelloWorldRP** to add the pack to the world.
-1. **Launch** your world.
-![Image of Minecraft's Settings page with the Add-On menu selected for resource packs. There is a red rectangle outlining the HelloWorldRP in the menu](Media/ResourcePack/addonsettings.png)
+1. Launch Minecraft and select **Play**.
+1. Select **Create New World**.
+1. Under **Settings**, scroll down to the **Add-Ons** section.
+1. Click on **Resource Packs** to see all available packs.
+1. Click the **MY PACKS** drop-down to open it.
+1. Select **My RESOURCE Pack** and click **Activate** to add the resource pack to the world.
+1. Click **Create** to create your world.
+![Image of Minecraft's Settings page with the Add-On menu selected for resource packs. There is a red rectangle outlining My Resource Pack and the Activate button.](Media/ResourcePack/addonsettings.png)
 
 ## What's Next?
 
-With a custom texture now a part of your Minecraft world, its now time to look at behavior packs and how you can alter existing entity behaviors. In the next section, you will learn how to add an aggressive behavior to a normally peaceful cow entity.
+With a custom texture now a part of your Minecraft world, it's time to look at behavior packs and how you can alter existing entity behaviors. In the next section, you will learn how to add an aggressive behavior to a normally peaceful cow entity.
 
 > [!div class="nextstepaction"]
 > [Behavior pack](BehaviorPack.md)

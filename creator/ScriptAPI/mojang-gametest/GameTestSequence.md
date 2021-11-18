@@ -10,7 +10,6 @@ description: Contents of the mojang-gametest.GameTestSequence class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-
 Executes a set of steps defined via chained .thenXyz methods, sequentially. This facilitates a 'script' of GameTest setup methods and assertions over time.
 
 
@@ -26,73 +25,75 @@ Executes a set of steps defined via chained .thenXyz methods, sequentially. This
   
 ### **thenExecute**
 `
-thenExecute(callback: () => undefined): GameTestSequence
+thenExecute(callback:() => undefined): GameTestSequence
 `
 
 Runs the given callback as a step within a GameTest sequence. Exceptions thrown within the callback will end sequence execution.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **callback** | () => undefined | n/a | Callback function to execute. |
+#### **Parameters**
+- **callback**: () => undefined
+  
+  Callback function to execute.
 
-Returns [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
+#### **Returns** [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
 
 
 ### **thenExecuteAfter**
 `
-thenExecuteAfter(delayTicks: number, callback: () => undefined): GameTestSequence
+thenExecuteAfter(delayTicks:number, callback:() => undefined): GameTestSequence
 `
 
 After a delay, runs the given callback as a step within a GameTest sequence. Exceptions thrown within the callback will end sequence execution.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **delayTicks** | *number* | n/a | Number of ticks to wait before executing the callback. |
-| **callback** | () => undefined | n/a | Callback function to execute. |
+#### **Parameters**
+- **delayTicks**: *number*
+  
+  Number of ticks to wait before executing the callback.
+- **callback**: () => undefined
+  
+  Callback function to execute.
 
-Returns [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
+#### **Returns** [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
 
 
 ### **thenExecuteFor**
 `
-thenExecuteFor(tickCount: number, callback: () => undefined): GameTestSequence
+thenExecuteFor(tickCount:number, callback:() => undefined): GameTestSequence
 `
 
 Runs the given callback every tick for the given number of ticks.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **tickCount** | *number* | n/a | - |
-| **callback** | () => undefined | n/a | Callback function to execute. |
+#### **Parameters**
+- **tickCount**: *number*
+- **callback**: () => undefined
+  
+  Callback function to execute.
 
-Returns [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
+#### **Returns** [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
 
 
 ### **thenFail**
 `
-thenFail(errorMessage: string): void
+thenFail(errorMessage:string): void
 `
 
 Causes the test to fail if this step in the GameTest sequence is reached.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **errorMessage** | *string* | n/a | Error message summarizing the failure condition. |
+#### **Parameters**
+- **errorMessage**: *string*
+  
+  Error message summarizing the failure condition.
 
 
 
 ### **thenIdle**
 `
-thenIdle(delayTicks: number): GameTestSequence
+thenIdle(delayTicks:number): GameTestSequence
 `
 
 Idles the GameTest sequence for the specified delayTicks.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **delayTicks** | *number* | n/a | Number of ticks to delay for this step in the GameTest sequence. |
+#### **Parameters**
+- **delayTicks**: *number*
+  
+  Number of ticks to delay for this step in the GameTest sequence.
 
-Returns [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
+#### **Returns** [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
 
 
 ### **thenSucceed**
@@ -106,31 +107,33 @@ Marks the GameTest a success if this step is reached in the GameTest sequence.
 
 ### **thenWait**
 `
-thenWait(callback: () => undefined): GameTestSequence
+thenWait(callback:() => undefined): GameTestSequence
 `
 
 Executes the given callback every tick until it succeeds. Exceptions thrown within the callback will end sequence execution.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **callback** | () => undefined | n/a | Testing callback function to execute. Typically, this function will have .assertXyz functions within it. |
+#### **Parameters**
+- **callback**: () => undefined
+  
+  Testing callback function to execute. Typically, this function will have .assertXyz functions within it.
 
-Returns [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
+#### **Returns** [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
 
 
 ### **thenWaitAfter**
 `
-thenWaitAfter(delayTicks: number, callback: () => undefined): GameTestSequence
+thenWaitAfter(delayTicks:number, callback:() => undefined): GameTestSequence
 `
 
 After a delay from the previous step, executes the given callback every tick until it succeeds. Exceptions thrown within the callback will end sequence execution.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **delayTicks** | *number* | n/a | Tick (after the previous step in the GameTest sequence) to run the callback at. |
-| **callback** | () => undefined | n/a | Testing callback function to execute. Typically, this function will have .assertXyz functions within it. |
+#### **Parameters**
+- **delayTicks**: *number*
+  
+  Tick (after the previous step in the GameTest sequence) to run the callback at.
+- **callback**: () => undefined
+  
+  Testing callback function to execute. Typically, this function will have .assertXyz functions within it.
 
-Returns [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
+#### **Returns** [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
 
 
 

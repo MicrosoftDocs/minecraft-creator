@@ -10,12 +10,11 @@ description: Contents of the mojang-minecraft.ItemStack class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-
 Defines a collection of items.
 
 ## Properties
 ### **amount**
-`read-only amount: number;`
+`amount: number;`
 
 Number of the items in the stack. Valid values range between 0 and 64.
 
@@ -23,7 +22,7 @@ Type: *number*
 
 
 ### **data**
-`read-only data: number;`
+`data: number;`
 
 A data value used to configure alternate states of the item.
 
@@ -41,21 +40,80 @@ Type: *string*
 
 ## Methods
 - [constructor](#constructor)
+- [getComponent](#getcomponent)
+- [getComponents](#getcomponents)
+- [hasComponent](#hascomponent)
+- [triggerEvent](#triggerevent)
   
 ### **constructor**
 `
-new ItemStack(itemType: ItemType, amount: number, data: number)
+new ItemStack(itemType:ItemType, amount:number, data:number)
 `
 
 Creates a new instance of a stack of items for use in the world.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **itemType** | [*ItemType*](ItemType.md) | n/a | Type of item to create. See the [*mojang-minecraft.MinecraftItemTypes*](../mojang-minecraft/MinecraftItemTypes.md) enumeration for a list of standard item types in Minecraft experiences. |
-| **amount** | *number* | n/a | Number of items to place in the stack, between 1 and 64. Note that certain items can only have one item in the stack. |
-| **data** | *number* | n/a | Optional data value used for creating the item, or 0 if no data value is specified. |
+#### **Parameters**
+- **itemType**: [*ItemType*](ItemType.md)
+  
+  Type of item to create. See the [*mojang-minecraft.MinecraftItemTypes*](../mojang-minecraft/MinecraftItemTypes.md) enumeration for a list of standard item types in Minecraft experiences.
+- **amount**: *number* = `1`
+  
+  Number of items to place in the stack, between 1 and 64. Note that certain items can only have one item in the stack.
+- **data**: *number* = `0`
+  
+  Optional data value used for creating the item, or 0 if no data value is specified.
 
-Returns [*ItemStack*](ItemStack.md)
+#### **Returns** [*ItemStack*](ItemStack.md)
+
+
+### **getComponent**
+`
+getComponent(componentId:string): any
+`
+
+Gets a component (that represents additional capabilities) for an item stack.
+#### **Parameters**
+- **componentId**: *string*
+  
+  The identifier of the component (e.g., 'minecraft:food') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed. If the component is not present on the item stack, undefined is returned.
+
+#### **Returns** *any*
+
+
+### **getComponents**
+`
+getComponents(): any[]
+`
+
+Returns all components that are both present on this item stack and supported by the API.
+
+#### **Returns** *any*[]
+
+
+### **hasComponent**
+`
+hasComponent(componentId:string): boolean
+`
+
+Returns true if the specified component is present on this item stack.
+#### **Parameters**
+- **componentId**: *string*
+  
+  The identifier of the component (e.g., 'minecraft:food') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed.
+
+#### **Returns** *boolean*
+
+
+### **triggerEvent**
+`
+triggerEvent(eventName:string): void
+`
+
+Triggers an item type event. For custom items, a number of events are defined in an items' definition for key item behaviors.
+#### **Parameters**
+- **eventName**: *string*
+  
+  Name of the item type event to trigger. If a namespace is not specified, minecraft: is assumed.
+
 
 
 

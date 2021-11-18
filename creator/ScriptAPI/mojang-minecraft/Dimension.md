@@ -10,29 +10,35 @@ description: Contents of the mojang-minecraft.Dimension class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-
 A class that represents a particular dimension (e.g., The End) within a world.
 
 
 ## Methods
 - [createExplosion](#createexplosion)
 - [getBlock](#getblock)
+- [getBlockFromRay](#getblockfromray)
 - [getEntitiesAtBlockLocation](#getentitiesatblocklocation)
+- [getEntitiesFromRay](#getentitiesfromray)
 - [isEmpty](#isempty)
+- [runCommand](#runcommand)
 - [spawnEntity](#spawnentity)
   
 ### **createExplosion**
 `
-createExplosion(location: Location, radius: number, explosionOptions: ExplosionOptions): void
+createExplosion(location:Location, radius:number, explosionOptions:ExplosionOptions): void
 `
 
 Creates an explosion at the specified location.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **location** | [*Location*](Location.md) | n/a | The location of the explosion. |
-| **radius** | *number* | n/a | Radius, in blocks, of the explosion to create. |
-| **explosionOptions** | [*ExplosionOptions*](ExplosionOptions.md) | n/a | Additional configurable options for the explosion. |
+#### **Parameters**
+- **location**: [*Location*](Location.md)
+  
+  The location of the explosion.
+- **radius**: *number*
+  
+  Radius, in blocks, of the explosion to create.
+- **explosionOptions**: [*ExplosionOptions*](ExplosionOptions.md)
+  
+  Additional configurable options for the explosion.
 
 
 > [!WARNING]
@@ -40,59 +46,119 @@ Creates an explosion at the specified location.
 
 ### **getBlock**
 `
-getBlock(location: BlockLocation): Block
+getBlock(location:BlockLocation): Block
 `
 
 Returns a block instance at the given location. This method was introduced as of version 1.17.10.21.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **location** | [*BlockLocation*](BlockLocation.md) | n/a | The location at which to return a block. |
+#### **Parameters**
+- **location**: [*BlockLocation*](BlockLocation.md)
+  
+  The location at which to return a block.
 
-Returns [*Block*](Block.md) - Block at the specified location.
+#### **Returns** [*Block*](Block.md) - Block at the specified location.
 
+
+### **getBlockFromRay**
+`
+getBlockFromRay(location:Location, direction:Location, options:optional): Block
+`
+
+Gets the first block that intersects with a vector emanating from a location.
+#### **Parameters**
+- **location**: [*Location*](Location.md)
+- **direction**: [*Location*](Location.md)
+- **options**: *optional*
+  
+  Additional options for processing this raycast query.
+
+#### **Returns** [*Block*](Block.md)
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **getEntitiesAtBlockLocation**
 `
-getEntitiesAtBlockLocation(location: BlockLocation): Entity[]
+getEntitiesAtBlockLocation(location:BlockLocation): Entity[]
 `
 
 Returns a set of entities at a particular location.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **location** | [*BlockLocation*](BlockLocation.md) | n/a | The location at which to return entities. |
+#### **Parameters**
+- **location**: [*BlockLocation*](BlockLocation.md)
+  
+  The location at which to return entities.
 
-Returns [*Entity*](Entity.md)[] - Zero or more entities at the specified location.
+#### **Returns** [*Entity*](Entity.md)[] - Zero or more entities at the specified location.
 
+
+### **getEntitiesFromRay**
+`
+getEntitiesFromRay(location:Location, direction:Location, options:optional): Entity[]
+`
+
+Gets entities that intersect with a specified vector emanating from a location.
+#### **Parameters**
+- **location**: [*Location*](Location.md)
+- **direction**: [*Location*](Location.md)
+- **options**: *optional*
+  
+  Additional options for processing this raycast query.
+
+#### **Returns** [*Entity*](Entity.md)[]
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **isEmpty**
 `
-isEmpty(location: BlockLocation): boolean
+isEmpty(location:BlockLocation): boolean
 `
 
 Tests whether a particular location contains an Air (empty) block.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **location** | [*BlockLocation*](BlockLocation.md) | n/a | The location at which to check for emptiness |
+#### **Parameters**
+- **location**: [*BlockLocation*](BlockLocation.md)
+  
+  The location at which to check for emptiness
 
-Returns *boolean* - True if the block at the location is air (empty)
+#### **Returns** *boolean* - True if the block at the location is air (empty)
 
 
+### **runCommand**
+`
+runCommand(commandString:string): any
+`
+
+Runs a particular command from the context of this entity.
+#### **Parameters**
+- **commandString**: *string*
+  
+  Command to run. Note that command strings should not start with slash.
+
+#### **Returns** *any* - For commands that return data, returns a JSON structure with command response values.
+
+> [!WARNING]
+> This function can throw errors.
+
+#### **Examples**
+##### *commands.js*
+```javascript
+world.getDimension("overworld").runCommand("say You got a new high score!");
+world.getDimension("overworld").runCommand("scoreboard players set @p score 10");
+```
 ### **spawnEntity**
 `
-spawnEntity(identifier: string, location: BlockLocation): Entity
+spawnEntity(identifier:string, location:BlockLocation): Entity
 `
 
 Creates a new entity (e.g., a mob) at the specified location. This method was introduced as of version 1.17.10.21.
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **identifier** | *string* | n/a | Identifier of the type of entity to spawn. If no namespace is specified, 'minecraft:' is assumed. |
-| **location** | [*BlockLocation*](BlockLocation.md) | n/a | The location at which to create the entity. |
+#### **Parameters**
+- **identifier**: *string*
+  
+  Identifier of the type of entity to spawn. If no namespace is specified, 'minecraft:' is assumed.
+- **location**: [*BlockLocation*](BlockLocation.md)
+  
+  The location at which to create the entity.
 
-Returns [*Entity*](Entity.md) - Newly created entity at the specified location.
+#### **Returns** [*Entity*](Entity.md) - Newly created entity at the specified location.
 
 > [!WARNING]
 > This function can throw errors.
