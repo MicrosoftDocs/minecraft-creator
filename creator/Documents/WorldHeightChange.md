@@ -1,9 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
-title: World Height Changes
+author: v-josjones
+ms.author: v-josjones
+title: World Height Changes in Caves and Cliffs Part 2
 ms.prod: gaming
-description: "Effects of world height changes in Caves and Cliffs: Part 2 on creators"
+description: "Effects of world height changes in Caves and Cliffs: Part 2 on creators."
 ---
 
 # World Height Changes in Caves and Cliffs Part 2
@@ -17,56 +17,37 @@ All existing worlds will be automatically updated to reflect the new world heigh
 >
 > You may want to set a base game version if players will encounter issues with your world or gameplay experience with the new world height values.
 
+> [!TIP]
+> To learn more about old world types, please visit [Old Worlds Types in Minecraft: Bedrock Edition](https://feedback.minecraft.net/hc/en-us/articles/4411688594317-Old-Worlds-Types-in-Minecraft-Bedrock-Edition-FAQ-)
+
 ## Updating Your Minecraft World
 
 Existing Minecraft worlds that use the **Infinite** World Type will be updated differently than **Flat** worlds.
 
 ### Updating Infinite Worlds
 
-Before you load your existing world, you will need to edit it and choose one of two options to use when updating the world height values.
+Before you load your existing world, you will be prompted to update your world when launching it in 1.18.
 
-![Mock-up representation of existing Minecraft chunks versus unexplored chunks and what area will need to be filled](Media/WorldHeightChange/WorldHeightChange_ExistingChunks.png)
-
-Depending on which option you choose, the area below your existing world can be filled with blocks and caves based on the new world generation rules, or it can be filled with air surrounded by bedrock walls.
-This setting will only apply to previously explored and saved chunks - new chunks will be generated with caves and blocks in the new area (rows -64 to -1), regardless of the option chosen.
+This will only apply to previously explored and saved chunks - new chunks will be generated with caves and blocks in the new area (rows `-64` to `-1`)
 
 > [!WARNING]
 > In order for world generation to work properly, you will need to have a layer of bedrock located on the `0` y coordinate plane. Without the bedrock layer, the maps will not generate new chunks when updating to `1.18`.
 
-> [!NOTE]
-> If you do not choose an option before loading your world or setting a base game version, your world will automatically be updated with blocks and caves in the area below your existing world.
-
-To choose how to update your existing Minecraft world to reflect the new world height values, follow these instructions:
+To update your existing Minecraft world to reflect the new world height values, follow these instructions:
 
 1. On the main menu, select **Play**.
-1. Select the **Edit** button next to the world you want to update.
-1. In the **1.18 Update settings** [NAME NOT FINAL] section, choose one of the following options under **Fill added space under explored areas with:**
-    1. Blocks and caves (recommended)
-      ![Mock-up representation of option to fill existing chunks with blocks and caves](Media/WorldHeightChange/WorldHeightChange_Update1.png)
-    1. Air surrounded by bedrock
-      ![Mock-up representation of option to fill existing chunks with air blocks](Media/WorldHeightChange/WorldHeightChange_Update2.png)
+1. Select the world that you want to update.
 1. Select **Play**.
+1. A pop-up called **World Update** will appear, prompting you to update your world.
+    :::image type="content" source="Media/WorldHeightChange/UpdateWorldPopUp.png" alt-text="Image alerting Creators about updating to the new world generation and a prompt to make a backup copy of the world":::
 
-For more information on these options, see below.
+Included in the the pop up is a checkbox that will also create a back up of your world that will still be tied to a version of Minecraft before 1.18.
 
-#### Blocks and Caves
-
-Choosing this option will fill the area below all explored and unexplored chunks with blocks and caves according to the new world generation rules. This option is recommended as it will provide the most seamless transition between all chunks, whether they were explored and saved prior to the update or not.
-
-![Mock-up representation of chunks that are filled with blocks and caves](Media/WorldHeightChange/WorldHeightChange_BlockFill.png)
-
-#### Air Surrounded by Bedrock
-
-Choosing this option will fill the area below all explored chunks with air and create a layer of bedrock surrounding this area between explored chunks and unexplored chunks. Unexplored chunks *will still generate blocks and caves* in the new area (rows `-64` to `-1`) according to the new world generation rules and bedrock walls will be generated between explored and unexplored chunks from rows `-64` to `-1`.
-
-![Mock-up representation of chunks that are filled with air blocks](Media/WorldHeightChange/WorldHeightChange_AirFill.png)
+5. Select **Update and Play**
 
 ### Updating Flat Worlds
 
 Similar to an Infinite World, a Flat World has two update scenarios based on whether it's an existing flat world created before 1.18 or if it's a newly generated flat world.
-
-> [!NOTE]
-> The `Blocks and caves` option is not available for flat worlds.
 
 #### Upgrading Existing Flat Worlds
 

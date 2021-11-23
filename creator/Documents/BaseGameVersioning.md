@@ -9,7 +9,7 @@ description: "A tutorial to introduce creators to the concept of base game versi
 
 Base game versioning is a way to keep changes in vanilla Minecraft: Bedrock Edition from causing unexpected changes in your world files. This will allow you to lock your world template to a specific Minecraft version, assuring future game changes don’t impact your .mcworld files. Base game versioning will not affect your texture packs or skin packs.
 
-For example, if your world template relies on the behavior of certain entities, or even their spawning mechanics, the world template might break in unexpected ways if Minecraft is updated in a manner that changes those behaviors. An example with base game versioning, if you are running a version 1.18 client, but the `base_game_version` of a world template is set to 1.15, it will load the resources for all versions up to 1.15, skipping any new resources implemented in 1.16 through 1.18.
+For example, if your world template relies on the behavior of certain entities, or even their spawning mechanics, the world template might break in unexpected ways if Minecraft is updated in a manner that changes those behaviors. For example, if you are running a version 1.18 client but the `base_game_version` of a world template is set to 1.15, it will load the resources for all versions up to 1.15, skipping any new resources implemented in 1.16 through 1.18.
 
 > [!IMPORTANT]
 > Base game versioning was introduced in 1.13, so that’s the earliest version of the game this system supports. **Do not** try to set your `base_game_version` to anything below 1.13.
@@ -39,7 +39,7 @@ If your content is version agnostic (such as a simple survival spawn which is un
 
 ### Example
 
-Below, you’ll find an example `manifest.json` for a world template that uses a `base_game_version` of `[1, 13, 0]`. Remember to update the header and module UUIDs.
+Below, you’ll find an example `manifest.json` for a world template that uses a `base_game_version` of `[1, 13, 0]`. If you use it, remember to update the header and module UUIDs.
 
 ```json
 {
@@ -87,17 +87,17 @@ To ensure that content continues to operate as intended, Minecraft Marketplace C
 Creators in the community should be aware of a potential scenario:
 
 1. A Creator creates a world template called **TemplateA** and sets the `base_game_version` to `[1, 17, 0]`.
-1. A player opens Minecraft: Bedrock Edition v1.18, and downloads **TemplateA**.
+1. A Player opens Minecraft: Bedrock Edition v1.18, and downloads **TemplateA**.
 1. Creator instantiates a new world utilizing **TemplateA** and calls it **WorldA**.
 1. The Creator updates **TemplateA's** `base_game_version` to `[1, 18, 0]`.
 1. The Player opens **WorldA**.
 
 In this scenario, a Creator creates and releases a world template for a version of Minecraft that does not utilize the updated world height changes. If the Creator updates the existing template to `[1, 18, 0]` (which does use the new world height), then worlds that players have generated using that template will automatically update to the new world height. This can potentially shift the layout of the worlds and break existing content.
 
-In order to prevent any loss of information, it is recommended to create a copy of the existing template, **TemplateB** from our scenario, that has the `base_game_version` set to `[1, 18, 0]` and use this new template for distributing to players.
+In order to prevent any loss of information, it is recommended to create a copy of the existing template, **TemplateB** from our scenario, that has the `base_game_version` set to `[1, 18, 0]` and to use this new template for distributing to players.
 
 1. A Creator creates a template called **TemplateA** and sets the `base_game_version` to `[1.17.4]` or previous version.
-1. A player opens Minecraft: Bedrock Edition in a version older than 1.18, and downloads **TemplateA**.
+1. A Player opens Minecraft: Bedrock Edition in a version older than 1.18, and downloads **TemplateA**.
 1. The Creator instantiates a new world utilizing **TemplateA** called **WorldA**.
 1. Minecraft: Bedrock Edition client is updated to v1.18+.
 1. The Creator copies **TemplateA** and creates a **TemplateB** with `base_game_version` set to `[1, 18, 0]`.

@@ -21,7 +21,7 @@ ms.prod: gaming
 |on_interact|*not set* | String|  Event to fire when the interaction occurs. |
 |particle_on_start|*not set* | JSON Object|  Particle effect that will be triggered at the start of the interaction.|
 |play_sounds|*not set* | String|  List of sounds to play when the interaction occurs. |
-| spawn_entities|*not set* | String| List of entities to spawn when the interaction occurs. |
+|spawn_entities|*not set* | String| List of entities to spawn when the interaction occurs. |
 |spawn_items|*not set* |JSON Object|  Loot table with items to drop on the ground upon successful interaction.|
 |swing| false| Boolean| If true, the player will do the 'swing' animation when interacting with this entity. |
 |transform_to_item|*not set* | String|  The item used will transform to this item upon successful interaction. Format: `itemName:auxValue` |
@@ -56,25 +56,48 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:interact":{
-    "add_items": {
+"minecraft:interact": {
+    "interactions": [
+        {
+            "on_interact": {
+                "filters": {
+                    "all_of": [
+                        {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "player"
+                        },
+                        {
+                            "test": "has_equipment",
+                            "domain": "hand",
+                            "subject": "other",
+                            "value": "bucket:0"
+                        }
+                    ]
+                }
+            },
+            "add_items": {
                 "table": "loot_tables/gameplay/entities/cow_milking.json"
-              },
-    "cooldown": 25.0,
-    "cooldown_after_being_attacked": 0.0,
-    "hurt_item": 0,
-    "interact_text": "got milk?",
-    "on_interact": {
-        "event":"minecraft:produce_milk",
-        "target": "self"
-    },
-    "particle_on_start": {
-        "particle_type": "smoke", "particle_y_offset": 0.25, "particle_offset_towards_interactor": true
-    },
-    "play_sound": "moo",
-    "transform_to_item": "bucket:1",
-    "swing": true,
-    "use_item": true
+            },
+            "cooldown": 0.0,
+            "cooldown_after_being_attacked": 0.0,
+            "hurt_item": 0,
+            "particle_on_start": {
+                "particle_type": "smoke",
+                "particle_y_offset": 0.25,
+                "particle_offset_towards_interactor": true
+            },
+            "swing": true,
+            "use_item": true,
+            "transform_to_item": "bucket:1",
+            "play_sounds": "milk",
+            "interact_text": "action.interact.milk",
+            "spawn_entities": "minecraft:cow_adult",
+            "spawn_items": {
+                "table": "loot_tables/entities/cow.json"
+            }
+        }
+    ]
 }
 ```
 

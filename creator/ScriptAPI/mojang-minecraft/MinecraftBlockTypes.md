@@ -10,7 +10,6 @@ description: Contents of the mojang-minecraft.MinecraftBlockTypes class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-
 Contains definitions of standard Minecraft and Minecraft Education Edition block types.
 
 
@@ -20,15 +19,13 @@ Contains definitions of standard Minecraft and Minecraft Education Edition block
   
 ### **get**
 `
-get(typeName: string): BlockType
+get(typeName:string): BlockType
 `
 
-#### Arguments
-| Parameter | Type | Default Value | Description |
-| :--- | :--- | :--- | :---: |
-| **typeName** | *string* | n/a | - |
+#### **Parameters**
+- **typeName**: *string*
 
-Returns [*BlockType*](BlockType.md)
+#### **Returns** [*BlockType*](BlockType.md)
 
 
 ### **getAllBlockTypes**
@@ -38,7 +35,7 @@ getAllBlockTypes(): BlockType[]
 
 Returns an array of all block types within Minecraft.
 
-Returns [*BlockType*](BlockType.md)[]
+#### **Returns** [*BlockType*](BlockType.md)[]
 
 
 
@@ -775,6 +772,12 @@ Type: [*BlockType*](BlockType.md)
 `static read-only clay: BlockType;`
 
 Represents a block of clay within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **clientRequestPlaceholderBlock**
+`static read-only clientRequestPlaceholderBlock: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3607,6 +3610,18 @@ Type: [*BlockType*](BlockType.md)
 `static read-only mycelium: BlockType;`
 
 Represents a mycelium plant within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mysteriousFrame**
+`static read-only mysteriousFrame: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mysteriousFrameSlot**
+`static read-only mysteriousFrameSlot: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 

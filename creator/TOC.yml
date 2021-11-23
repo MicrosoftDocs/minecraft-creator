@@ -88,7 +88,7 @@
           items:
           - name: Introduction to the Caves & Cliffs Entities
             href: Documents/CavesAndCliffsEntities.md
-          - name: World Height Changes in Caves & Cliffs Part 2
+          - name: World Height Changes in Caves and Cliffs Part 2
             href: Documents/WorldHeightChange.md
         - name: Useful Knowledge for Creators
           items:

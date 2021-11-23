@@ -26,17 +26,17 @@ highlightedContent:
       itemType: whats-new
       url: Documents/ExperimentalFeaturesToggle.md
     #card
-    - title: World Height Change
+    - title: World Height Changes in Caves and Cliffs Part 2
       itemType: whats-new
       url: Documents/WorldHeightChange.md
     #card
-    - title: Particle Effects
+    - title: "Installing Add-Ons in Minecraft: Bedrock Edition"
       itemType: whats-new
-      url: Documents/ParticleEffects.md
+      url: Documents/AddonPackInstallation.md
     #card
-    - title: Chunker - Overview
-      itemType: whats-new
-      url: Documents/ChunkerOverview.md
+    - title: GameTest Reference Documentation
+      itemType: learn
+      url: ScriptAPI/index.yml
     #card
     - title: Differences Between Minecraft Bedrock Edition and Minecraft Java Edition
       itemType: architecture

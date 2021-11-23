@@ -1,0 +1,1516 @@
+<big>Version: 1.17.40.6</big>
+
+[[_TOC_]]
+
+# Basic Structure Overview
+
+Particle effects consist of basic render parameters, and a set of components.  Components can be placed in any order.
+
+**Outline:**
+```
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": <string>, // e.g. "minecraft:test_effect", this is the name the particle emitter is referred to as
+      "basic_render_parameters": {
+          "material": <string> // Minecraft material to use for emitter
+          "texture": <string> // Minecraft texture to use for emitter
+      }
+    },
+    "curves": {
+      // curve details
+    },
+    "events": {
+      // events details
+    },
+    "components": 
+      // emission rate components
+
+      // emission lifetime components
+
+      // emission shape components, or the shape of the effect as defined
+      // by particle emission position and directions
+
+      // emitter local space components
+
+      // components that control initial state of particles
+
+      // components that control/direct motion of particles
+
+      // components that affect how the particle is drawn
+
+      // components that affect particle lifetime
+    }
+  }
+}
+```
+
+
+
+# Component Concept
+
+The particle system is component based.  What this means is that particle effects are composed via a set of components.  In order for an effect to do something, you add a component that handles that aspect of the effect.  For example, an emitter usually needs to have rules for its lifetime, thus the effect should have one or more lifetime components that handle lifetime duties for the emitter and emitted particles.
+
+The idea is that new components can be added later, and one can combine components (where it makes sense) to get different behaviors. A particle might have a Dynamic component for moving around, and a Collision component for handling interaction with the terrain, for example.
+
+Think of components as telling the particle system what you want the emitter or particle to do, rather than exposing a list of particle parameters and having to wrangle those parameters to get the desired behavior.
+
+
+
+
+# Current Component List
+
+**For fields in these components, the following shorthand is used:**
+```
+<float> - field takes a floating point input
+<float/molang> - field takes a floating point input, or a Molang expression
+<default:val> - specifies the default value used if field isn't specified
+<bool> - "true" or "false"
+<string> - a string ("this is a string"
+<default> - not a part of the particular line, this just says what this field defaults to if not specified
+```
+
+
+
+## Emitter Components
+
+
+
+**Initial State Components**
+
+
+
+Emitter Local Space component
+
+****
+```
+"minecraft:emitter_local_space": {
+    "position": <bool>
+    "rotation": <bool>
+    "velocity": <bool>
+}
+```
+
+
+
+Emitter Initialization component
+
+****
+```
+
+"minecraft:emitter_initialization": {
+  "creation_expression": <molang>, // this is run once at emitter startup
+  "per_update_expression": <molang> // this is run once per emitter update
+}
+
+```
+
+
+
+**Emitter Rate Components**
+
+
+
+Emitter Rate Instant component
+
+****
+```
+"minecraft:emitter_rate_instant": {
+    // this many particles are emitted at once
+    // evaluated once per particle emitter loop
+    "num_particles": <float/molang> <default:10>
+}
+```
+
+
+
+Emitter Rate Steady component
+
+****
+```
+"minecraft:emitter_rate_steady": {
+    // how often a particle is emitted, in particles/sec
+    // evaluated once per particle emitted
+    "spawn_rate": <float/molang> <default:1>
+
+    // maximum number of particles that can be active at once for this emitter
+    // evaluated once per particle emitter loop
+    "max_particles": <float/molang> <default:50>
+}
+```
+
+
+
+Emitter Rate Manual component
+
+****
+```
+"minecraft:emitter_rate_manual": {
+    // evaluated once per particle emitted
+    "max_particles": <float/molang> <default:50>
+}
+```
+
+
+
+**Emitter Lifetime Components**
+
+
+
+Emitter Lifetime Looping component
+
+****
+```
+"minecraft:emitter_lifetime_looping": {
+
+    // emitter will emit particles for this time per loop
+    // evaluated once per particle emitter loop
+    "active_time": <float/molang> <default:10>
+
+    // emitter will pause emitting particles for this time per loop
+    // evaluated once per particle emitter loop
+    "sleep_time": <float/molang> <default:0>
+}
+```
+
+
+
+Emitter Lifetime Once component
+
+****
+```
+"minecraft:emitter_lifetime_once": {
+    // how long the particles emit for
+    // evaluated once
+    "active_time": <float/molang> <default:10>
+}
+```
+
+
+
+Emitter Lifetime Expression component
+
+****
+```
+"minecraft:emitter_lifetime_expression": {
+    // When the expression is non-zero, the emitter will emit particles.
+    // Evaluated every frame
+    "activation_expression": <float/molang> <default:1>
+
+    // Emitter will expire if the expression is non-zero.
+    // Evaluated every frame
+    "expiration_expression": <float/molang> <default:0>
+}
+```
+
+
+
+Emitter Lifetime Events component
+
+****
+```
+"minecraft:emitter_lifetime_events": {
+      // all events use the event names in the event section
+      // all events can be an array or a string
+      "creation_event": [ <string>, ...] // fires when the emitter is created
+      "creation_event": <string>
+      "expiration_event": [ <string>, ...] // fires when the emitter expires (does not wait for particles to expire too)
+      "expiration_event": <string>
+
+      // event timeline
+      "timeline: {
+        // a series of times, e.g. 0.0 or 1.0, that trigger the event
+        // these get fired on every loop the emitter goes through
+        // "time" is the time, e.g. one line might be:
+        // "0.4": "event"
+        "time": [ <string>, ... ]
+        "time": <string>
+      }
+    }
+
+    // travel_distance_events
+    "travel_distance_events: {
+        // a series of distances, e.g. 0.0 or 1.0, that trigger the event
+        // these get fired when the emitter has moved by the specified input 
+		// distance, e.g. one line might be:
+        // "0.4": "event"
+        "distance": [ <string>, ... ]
+        "distance": <string>
+    }
+
+    // looping_travel_distance_events
+    "looping_travel_distance_events: [
+        // a series of events that occur at set intervals
+		// these get fired every time the emitter has moved the specified input
+		// distance from the last time it was fired.
+		// An example for how to format these events would be:
+        // {
+        //   "distance": 1.0,
+        //   "effects": [ "effect_one" ]
+        // },
+        // {
+        //   "distance": 2.0,
+        //   "effects": [ "effect_two" ]
+        // }
+		//
+		// Note that "effect_one" and "effect_two" must be defined events within the particle_effect
+    ]
+
+}
+```
+
+
+
+**Emitter Shape Components**
+
+
+
+Emitter Shape Point component
+
+****
+```
+"minecraft:emitter_shape_point": {
+    // specifies the offset from the emitter to emit the particles
+    // evaluated once per particle emitted
+    "offset": [<float/molang>, <float/molang>, <float/molang>] <default:[0, 0, 0]>
+
+    // specifies the direciton of particles.  
+    // evaluated once per particle emitted
+    "direction": [<float/molang>, <float/molang>, <float/molang>]
+}
+```
+
+
+
+Emitter Shape Sphere component
+
+****
+```
+"minecraft:emitter_shape_sphere": {
+    // specifies the offset from the emitter to emit the particles
+    // evaluated once per particle emitted
+    "offset": [<float/molang>, <float/molang>, <float/molang>] <default:[0, 0, 0]>
+
+    // sphere radius
+    // evaluated once per particle emitted
+    "radius": <float/molang> <default:1>
+
+    // emit only from the surface of the sphere
+    "surface_only": <bool> <default:false>
+
+    // specifies the direction of particles.  Defaults to "outwards"
+    "direction": "inwards" // particle direction towards center of sphere
+    "direction": "outwards" // particle direction away from center of sphere
+    // evaluated once per particle emitted
+    "direction": [<float/molang>, <float/molang>, <float/molang>]
+}
+```
+
+
+
+Emitter Shape Box component
+
+****
+```
+
+"minecraft:emitter_shape_box": {
+    // specifies the offset from the emitter to emit the particles
+    // evaluated once per particle emitted
+    "offset": [<float/molang>, <float/molang>, <float/molang>] <default:[0, 0, 0]>
+
+    // box dimensions
+    // these are the half dimensions, the box is formed centered on the emitter
+    // with the box extending in the 3 principal x/y/z axes by these values
+    "half_dimensions": [ <float/molang>, <float/molang> <float/molang ],
+
+    // emit only from the surface of the sphere
+    "surface_only": <bool> <default:false>
+
+    // specifies the direction of particles.  Defaults to "outwards"
+    // evaluated once per particle emitted
+    "direction": "inwards" // particle direction towards center of sphere
+    "direction": "outwards" // particle direction away from center of sphere
+    "direction": [<float/molang>, <float/molang>, <float/molang>]
+}
+
+```
+
+
+
+Emitter Shape Custom component
+
+****
+```
+"minecraft:emitter_shape_custom": {
+    // specifies the offset from the emitter to emit the particles
+    // evaluated once per particle emitted
+    "offset": [<float/molang>, <float/molang>, <float/molang>] <default:[0, 0, 0]>
+
+    // specifies the direciton for the particle
+    // evaluated once per particle emitted
+    "direction": [<float/molang>, <float/molang>, <float/molang>] <default:[0, 0, 0]    
+}
+```
+
+
+
+Emitter Shape Entity-AABB component
+
+****
+```
+
+"minecraft:emitter_shape_entity_aabb": {
+    // emit only from the surface of the sphere
+    "surface_only": <bool> <default:false>
+
+    // evaluated once per particle emitted
+    // defaults to outwards
+    "direction": "inwards" // particle direction towards center of sphere
+    "direction": "outwards" // particle direction away from center of sphere
+    "direction": [<float/molang>, <float/molang>, <float/molang>] <default:[0, 0, 0]    
+}
+
+```
+
+
+
+Emitter Disc component
+
+****
+```
+"minecraft:emitter_shape_disc": {
+    // specifies the normal of the disc plane, the disc will be perpendicular to this direction
+    // defaults to [ 0, 1, 0 ]
+    "plane_normal": "x", // this variant has the normal in the x axis
+    "plane_normal": "y", // this variant has the normal in the y axis
+    "plane_normal": "z", // this variant has the normal in the z axis
+    "plane_normal": [ <float/molang>, <float/molang>, <float/molang> ], // custom direction for the normal
+
+    // specifies the offset from the emitter to emit the particles
+    // evaluated once per particle emitted
+    "offset": [<float/molang>, <float/molang>, <float/molang>] <default:[0, 0, 0]>
+
+    // disc radius
+    // evaluated once per particle emitted
+    "radius": <float/molang> <default:1>
+
+    // emit only from the edge of the disc
+    "surface_only": <bool> <default:false>
+
+    // specifies the direction of particles.  Defaults to "outwards"
+    "direction": "inwards" // particle direction towards center of disc
+    "direction": "outwards" // particle direction away from center of disc
+    // evaluated once per particle emitted
+    "direction": [<float/molang>, <float/molang>, <float/molang>]
+}
+```
+
+
+
+## Particle Components
+
+
+
+**Particle Initial State Components**
+
+
+
+Particle Initial State component
+
+****
+```
+"minecraft:particle_initial_spin": {
+    // specifies the initial rotation in degrees
+    // evaluated once
+    "rotation": <float/molang> <default:0>
+
+    // specifies the spin rate in degrees/second
+    // evaluated once
+    "rotation_rate": <float/molang> <default:0>
+}
+```
+
+
+
+Particle Initial Speed component
+
+****
+```
+
+// evaluated once
+"minecraft:particle_initial_speed": <float/molang> <default:0>
+
+"minecraft:particle_initial_speed" [<float/molang>, <float/molang>, <float/molang>],
+
+```
+
+
+
+**Particle Motion Components**
+
+
+
+Particle Motion Dynamic component
+
+****
+```
+"minecraft:particle_motion_dynamic": {
+    // the linear acceleration applied to the particle, defaults to [0, 0, 0].
+    // Units are blocks/sec/sec
+    // An example would be gravity which is [0, -9.8, 0]
+    // evaluated every frame
+    "linear_acceleration": [<float/molang>, <float/molang>, <float/molang>],
+
+    // using the equation:
+    // acceleration = -linear_drag_coefficient*velocity
+    // where velocity is the current direction times speed
+    // Think of this as air-drag.  The higher the value, the more drag
+    // evaluated every frame
+    "linear_drag_coefficient": <float/molang> <default:0>
+
+    // acceleration applies to the rotation speed of the particle
+    // think of a disc spinning up or a smoke puff that starts rotating
+    // but slows down over time
+    // evaluated every frame
+    // acceleration is in degrees/sec/sec
+    "rotation_acceleration" <float/molang> <default:0>
+
+    // drag applied to retard rotation
+    // equation is rotation_acceleration += -rotation_rate*rotation_drag_coefficient
+    // useful to slow a rotation, or to limit the rotation acceleration
+    // Think of a disc that speeds up (acceleration) 
+    // but reaches a terminal speed (drag)
+    // Another use is if you have a particle growing in size, having
+    // the rotation slow down due to drag can add "weight" to the particle's
+    // motion
+    "rotation_drag_coefficient" <float/molang> <default:0>
+}
+```
+
+
+
+Particle Motion Parametric component
+
+****
+```
+"minecraft:particle_motion_parametric": {
+    // directly set the position relative to the emitter. 
+    // E.g. a spiral might be:
+    // "relative_position": ["Math.cos(Params.LifeTime)", 1.0, 
+    //                       "Math.sin(Params.Lifetime)"]
+    // defaults to [0, 0, 0]
+    // evaluated every frame
+    "relative_position": [<float/molang> <float/molang> <float/molang>]
+
+    // directly set the 3d direction of the particle
+    // doesn't affect direction if not specified
+    // evaluated every frame
+    "direction": [<float/molang> <float/molang> <float/molang]
+
+    // directly set the rotation of the particle
+    // evaluated every frame
+    "rotation": <float/molang> <default:0>
+}}
+```
+
+
+
+Particle Motion Collision component
+
+****
+```
+
+"minecraft:particle_motion_collision": {
+    // enables collision when true/non-zero.
+    // evaluated every frame
+    "enabled": <bool/molang> <default:true>
+
+    // alters the speed of the particle when it has collided
+    // useful for emulating friction/drag when colliding, e.g a particle
+    // that hits the ground would slow to a stop.
+    // This drag slows down the particle by this amount in blocks/sec
+    // when in contact
+    "collision_drag": <float>
+
+    // used for bouncing/not-bouncing
+    // Set to 0.0 to not bounce, 1.0 to bounce back up to original hight
+    // and in-between to lose speed after bouncing.  Set to >1.0 to gain energy on each bounce
+    "coefficient_of_restitution": <float>
+
+    // used to minimize interpenetration of particles with the environment
+    // note that this must be less than or equal to 1/2 block
+    "collision_radius": <float>
+
+    // triggers expiration on contact if true
+    "expire_on_contact": <bool>
+
+    // triggers an event
+    // array of individual events
+    "events": [
+        {
+          // triggers the specified event if the conditions are met
+          "event": <string>
+          // optional minimum speed for event triggering
+          "min_speed": <float> // default/minimum is 2 blocks/sec
+        },
+    ],
+    "events": { // can be an individual event as well
+        // triggers the specified event if the conditions are met
+        "event": <string>
+        // optional minimum speed for event triggering
+        "min_speed": <float> // default/minimum is 2 blocks/sec
+    }
+}
+
+```
+
+
+
+**Particle Appearance Components**
+
+
+
+Particle Appearance Billboard component
+
+****
+```
+"minecraft:particle_appearance_billboard": {
+    // specifies the x/y size of the billboard
+    // evaluated every frame
+    "size": [<float/molang>, <float/molang>],
+
+    // used to orient the billboard.  Options are:
+    // "rotate_xyz" - aligned to the camera, perpendicular to the view axis
+    // "rotate_y" - aligned to camera, but rotating around world y axis
+    // "lookat_xyz" - aimed at the camera, biased towards world y up
+    // "lookat_y" - aimed at the camera, but rotating around world y axis
+    // "direction_x" - unrotated particle x axis is along the direction vector, unrotated y axis attempts to aim upwards
+    // "direction_y" - unrotated particle y axis is along the direction vector, unrotated x axis attempts to aim upwards
+    // "direction_z" - billboard face is along the direction vector, unrotated y axis attempts to aim upwards
+	// emitter_transform_xy, // orient the particles to match the emitter's transform (the billboard plane will match the transform's xy plane).
+	// emitter_transform_xz, // orient the particles to match the emitter's transform (the billboard plane will match the transform's xz plane).
+	// emitter_transform_yz, // orient the particles to match the emitter's transform (the billboard plane will match the transform's yz plane).
+	
+    //"face_camera_mode": <string>
+
+    // Specifies how to calculate the direction of a particle, this will be used by facing modes that require a direction as input (for instance: lookat_direction and direction)
+    // Options are:
+    // "derive_from_velocity" - The direction matches the direction of the velocity.
+    // "custom_direction" - The direction is specified in the json definition using a vector of floats or molang expressions.
+    // If the direction subsection is not defined, the default will be "derive_from_velocity" mode with a "min_speed_threshold" of 0.01.
+    "direction": {
+        "mode": "derive_from_velocity" or "custom_direction",
+        "min_speed_threshold": <float> // only used in "derive_from_velocity" mode. The direction is set if the speed of the particle is above the threshold. The default is 0.01
+        "custom_direction": [ <float/molang>, <float/molang>, <float/molang> ], // only used in "custom_direction" mode. Specifies the direction vector
+    }
+
+    // specifies the UVs for the particle.  
+    "uv": {
+        // specifies the assumed texture width/height
+        // defaults to 1
+        // when set to 1, UV's work just like normalized UV's
+        // when set to the texture width/height, this works like texels
+        "texturewidth": <int>,
+        "textureheight": <int>,
+
+        // Assuming the specified texture width and height, use these 
+        // uv coordinates.  
+        // evaluated every frame
+        "uv": [<float/molang>, <float/molang>],
+        "uv_size": [<float/molang>, <float/molang>],
+
+        // alternate way via specifying a flipbook animation
+        // a flipbook animation uses pieces of the texture to animate, by stepping over time from one 
+        // "frame" to another
+        "flipbook": {
+            "base_UV": [ <float/molang>, <float/molang> ], // upper-left corner of starting UV patch
+            "size_UV": [ <float>, <float> ], // size of UV patch
+            "step_UV": [ <float>, <float> ], // how far to move the UV patch each frame
+            "frames_per_second": <float>, // default frames per second
+            "max_frame": <float/molang>, // maximum frame number, with first frame being frame 1
+            "stretch_to_lifetime": <bool>, // optional, adjust fps to match lifetime of particle. default=false
+            "loop":  <bool> // optional, makes the animation loop when it reaches the end? default=false
+        }
+    }
+}
+```
+
+
+
+Particle Appearance Tinting component
+
+****
+```
+
+// color fields are special, they can be either an RGB, or a "#RRGGBB"
+// field (or RGBA or "AARRGGBB").  If RGB(A), the channels are
+// from 0 to 1.  If the string "#AARRGGBB", then the values are
+// hex from 00 to ff.
+//
+// this pseudo-type will be denoted by <color>
+"minecraft:particle_appearance_tinting": {
+    // interpolation based color
+    "color": {
+        // an array of colors
+        // there are two ways to specify the array of colors
+        // the first method is to just have an array of colors
+        // these will be interpreted to be equally spaced, with the entire
+        // range going from 0 to 1
+        //
+        // the second option is to specify a value/color pair list
+        // this will cause the colors to appear when their specified value
+        // occurs in the interpolant, and interpolated in between.  Note
+        // that this will be sorted
+        "gradient": [ <color>, <color>, ...],
+        "gradient": {
+        <float>: <color>,
+        <float>: <color>,
+        ...
+        }
+        "interpolant": <float/molang> // hint: use a curve here!
+    }
+
+    // directly set the color
+    "color": <color>
+    // examples of direct color field:
+    "color": "#ff0000"
+    "color": [1, 0, 0]
+},
+
+```
+
+
+
+Particle Appearance Lighting
+
+****
+```
+"minecraft:particle_appearance_lighting": {}
+```
+
+
+
+**Particle Lifetime Components**
+
+
+
+Particle Lifetime Expression component
+
+****
+```
+"minecraft:particle_lifetime_expression": {
+    // this expression makes the particle expire when true (non-zero)
+    // The float/expr is evaluated once per particle
+    // evaluated every frame
+    "expiration_expression": <float/molang> <default:0>
+ 
+	// alternate way to express lifetime
+    // particle will expire after this much time
+    // evaluated once
+    "max_lifetime": <float/molang>
+}
+```
+
+
+
+Particle Lifetime Events component
+
+****
+```
+"minecraft:particle_lifetime_events": {
+      // all events use the event names in the event section
+      // all events can be either an array or a string
+      "creation_event": [<string>, ...] // fires when the particle is created
+      "creation_event": <string> 
+      "expiration_event": [<string>, ...] // fires when the particle expires (does not wait for particles to expire too)
+      "expiration_event": <string>,
+
+      "custom_events: {
+        {
+          "eventtrigger" molang,
+          "eventname": event
+        },
+        ...
+      }
+
+      // event timeline
+      "timeline": {
+        // a series of times, e.g. 0.0 or 1.0, that trigger the event
+        // "time" is the time, e.g. one line might be:
+        // "0.4": "event"
+        "time": [<string>", ...]
+        "time": <string>
+      }
+}
+```
+
+
+
+Particle Expire If In Blocks component
+
+****
+```
+"minecraft:particle_expire_if_in_blocks" [
+    // minecraft block names, e.g. 'minecraft:water', 'minecraft:air'
+    // these are typically the same name as in the /setblock command
+    // except for the minecraft: prefix
+    "blockname1",
+    "blockname2", 
+    ...
+],
+```
+
+
+
+Particle Expire If Not In Blocks component
+
+****
+```
+"minecraft:particle_expire_if_not_in_blocks" [
+    // minecraft block names, e.g. 'minecraft:water', 'minecraft:air'
+    // these are typically the same name as in the /setblock command
+    // except for the minecraft: prefix
+    "blockname1",
+    "blockname2", 
+    ...
+],
+```
+
+
+
+Particle Lifetime Kill-Plane component
+
+****
+```
+// A*x + B*y + C*z + D = 0
+// with the parameters being [ A, B, C, D ]
+"minecraft:particle_kill_plane": [ <float>, <float>, <float>, <float> ]
+
+```
+
+
+
+# Curves
+
+Curves are interpolation values, with inputs from 0 to 1, and outputs based on the curve.  The result of the curve is a Molang variable of the same name that can be referenced in Molang in components.  For each rendering frame for each particle, the curves are evaluated and the result is placed in a Molang variable of the name of the curve.
+
+****
+```
+
+    "curves": {
+      // "molangvar" is the Molang variable to be used later in Molang expressions
+      // for example "variable.mycurve" here would make the result of the curve
+      // available in Molang as "variable.mycurve".  Note that all variables must begin with "variable."
+      "molangvar": {
+        // type can be "linear", "bezier", "bezier_chain", or "catmull_rom"
+        // "linear" is a series of nodes, equally spaced between 0 and 1 (after applying input/horizontal_range)
+        // "bezier" is a 4-node bezier spline, with the first and last point being the values at 0 and 1
+        //   and the middle two points forming the slope lines at 0.33 for the first point and 0.66 for the second
+        // "catmull_rom" is a series of curves which pass through all but the last/first node.  The first/last nodes
+        // are used to form the slope of the second/second-last points respectively.  All points are evenly spaced.
+        // "bezier_chain" is a chain of bezier splines.  See below for the node configuration.  A series of points are
+        //   specified, along with their corresponding slopes, and each segment will use it's pair of points and
+        //   slopes to form a bezier spline.  Each point other than first/last is shared between it's pair of 
+        //   spline segments.
+        "type": type, 
+
+        // control nodes for curve.  These are assumed to be equally
+        // spaced, e.g. first node is at input value 0, second at 0.25, etc
+        // this notation works only for linear, bezier, and catmull_rom
+        "nodes": [<float/molang>, <float/molang>, <float/molang>, <float/molang>],
+
+        // control nodes for bezier_chain
+        // the nodes will be sorted prior to parsing, so if you declare nodes 0.3, 0.6, 0.5, they will be
+        // re-ordered to 0.3, 0.5, 0.6
+        "nodes": {
+            // the key values map to the "input" field
+            "0.3": {
+                "value": "5", // the output of the curve
+                "left_value": "2", // when curve comes from the left of the node, what point does it use?
+                "right_value": "3", // when curve comes from the right side of the node, what point does it use?
+                "slope": "3", // the slope of the node, both sides
+                "left_slope: "0.4", // the left slope of the node
+                "right_slope": "2", // the right slope of the node
+            },
+            ... // more nodes
+        },
+
+        // what is the input value to use
+		// for example, "variable.particle_age/variable.particle_lifetime would result in an input from 0 to 1 over
+		// the lifetime of the particle, while variable.particle_age would have input of how old the particle is in seconds
+        "input": <float/molang>,
+
+        // what is the range the input is mapped onto
+        // between 0 and this value
+		// note: this field is deprecated and optional (default: 1.0)
+		// note: this field is ignored for bezier_chain
+        "horizontal_range": <float/molang>
+      }
+    }
+
+```
+
+
+
+# Events
+
+Events can be triggered elsewhere in the .json and fire off new particle and sound effects.
+
+Particle effects have different types. If the type is "emitter", this will create an emitter of "effect" type at the event's world position, in a fire-and-forget way.  "emitter_bound" works similarly, except if the spawning emitter is bound to an actor/locator, the new emitter will be bound to the same actor/locator.  If the type is "particle", then the event will manually emit a particle on an emitter of "effect" type at the event location, creating the emitter if it doesn't already exist (be sure to use "minecraft:emitter_rate_manual" for the spawned emitter effect). "particle_with_velocity" will do the same as "particle" except the new particle will inherit the spawning particle's velocity.
+
+Sound effects specify the specific "level sound event" to be played when the event fires.
+
+The events themselves consist of an optional node tree and/or an actual event.  When "sequence" is specified, that array will execute in order, with every element executing when that event fires.  When using "random", one element will be picked from the array based on the weight.
+
+****
+```
+
+	// events block:
+	"events": {
+		"event_name1",
+		"event_name2",
+		...
+	}
+
+	// structure of an event, note that nesting can be any combination of "sequence", or "randomize"
+      "event_name": {
+        "sequence": [
+          { /*this node executes first*/ },
+          { /*this node executes second*/ },
+          { /* etc */},
+          { 
+            "sequence": [
+              { 
+                // nested nodes
+              },
+              ...
+            ]
+          },
+          { 
+            "randomize": [
+              {
+                "weight": <float>
+                /* data for this option, including other sequences/randoms */
+              },
+              ...
+            ]
+          }
+        ]
+      },
+
+      // Fields for a particlar event.  Note that any of the above nodes can have events inserted into their blocks.
+      "event_subpart": {
+          "particle_effect": {
+            // identifier of the effect
+            "effect": <string>,
+            // "emitter", "emitter_bound", "particle" or "particle_with_velocity"
+            "type": <string>,
+            // this Molang is run on the emitter for this event once this
+            // event fires
+            // NOTE: this will not have access to the event
+            // triggering emitter's Molang data
+            "pre_effect_expression": <string>,
+          },
+          "sound_effect": {
+            // name of the level sound event
+            "event_name": <string>
+          },
+          // Runs this Molang expression on the event-firing emitter
+          "expression": <string>,
+          // for debugging, this will log a message, along with the firing effect's name and event position
+          // the log message will show up in the content logger
+          "log": <string>
+      }
+
+    // simple example:
+    "events": {
+        "event_name1": {
+            "particle_effect": {
+                "effect": "a_particle_effect",
+                "type": "emitter"
+            }
+        }
+    }
+
+```
+
+
+
+# Examples
+
+
+
+## Flame particle
+
+****
+```
+
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "minecraft:basic_flame_particle",
+      "basic_render_parameters": {
+        "material": "particles_alpha",
+        "texture": "textures/particle/particles"
+      }
+    },
+    "components": {
+      "minecraft:emitter_rate_instant": {
+        "num_particles": 1
+      },
+      "minecraft:emitter_lifetime_expression": {
+        "activation_expression": 1,
+        "expiration_expression": 0
+      },
+      "minecraft:emitter_shape_sphere": {
+        "radius": 0.025,
+        "direction": [ 0, 0, 0 ]
+      },
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": "Math.random(0.6, 2.0)"
+      },
+      "minecraft:particle_appearance_billboard": {
+        "size": [
+          "(0.1 + variable.ParticleRandom1*0.1) - (0.1 * variable.ParticleAge)",
+          "(0.1 + variable.ParticleRandom1*0.1) - (0.1 * variable.ParticleAge)"
+        ],
+        "facing_camera_mode": "lookat_xyz",
+        "uv": {
+          "texture_width": 128,
+          "texture_height": 128,
+          "uv": [ 0, 24 ],
+          "uv_size": [ 8, 8 ]
+        }
+      }
+    }
+  }
+}
+
+```
+
+
+
+## Smoke particle
+
+****
+```
+
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "minecraft:basic_smoke_particle",
+      "basic_render_parameters": {
+        "material": "particles_alpha",
+        "texture": "textures/particle/particles"
+      }
+    },
+    "components": {
+      "minecraft:emitter_rate_instant": {
+        "num_particles": 1
+      },
+      "minecraft:emitter_lifetime_expression": {
+        "activation_expression": 1,
+        "expiration_expression": 0
+      },
+      "minecraft:emitter_shape_custom": {
+        "offset": [ 0, 0, 0 ],
+        "direction": [ "Math.random(-0.1, 0.1)", 1.0, "Math.random(-0.1, 0.1)" ]
+      },
+      "minecraft:particle_initial_speed": 1.0,
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": "Math.random(0.4, 1.4)"
+      },
+      "minecraft:particle_motion_dynamic": {
+        "linear_acceleration": [ 0, 0.4, 0 ]
+      },
+      "minecraft:particle_appearance_billboard": {
+        "size": [ 0.1, 0.1 ],
+        "facing_camera_mode": "lookat_xyz",
+        "uv": {
+          "texture_width": 128,
+          "texture_height": 128,
+          "flipbook": {
+            "base_UV": [ 56, 0 ],
+            "size_UV": [ 8, 8 ],
+            "step_UV": [ -8, 0 ],
+            "frames_per_second": 8,
+            "max_frame": 8,
+            "stretch_to_lifetime": true,
+            "loop": false
+          }
+        }
+      },
+      "minecraft:particle_appearance_tinting": {
+        "color": [ "variable.ParticleRandom1*0.5", "variable.ParticleRandom1*0.5", "variable.ParticleRandom1*0.5", 1.0 ]
+      },
+      "minecraft:particle_appearance_lighting": {}
+    }
+  }
+}
+
+```
+
+
+
+## Mob Flame effect
+
+****
+```
+
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "minecraft:mobflame_emitter",
+      "basic_render_parameters": {
+        "material": "particles_alpha",
+        "texture": "textures/flame_atlas"
+      }
+    },
+    "components": {
+      "minecraft:emitter_local_space": {
+        "position": true,
+        "rotation": true
+      },
+      "minecraft:emitter_rate_steady": {
+        "spawn_rate": "Math.random(15, 25)",
+        "max_particles": 50
+      },
+      "minecraft:emitter_lifetime_expression": {
+        "activation_expression": 1,
+        "expiration_expression": 0
+      },
+      "minecraft:emitter_shape_entity_aabb": {
+        "direction": [ 0, 1, 0 ]
+      },
+      "minecraft:particle_initial_speed": "Math.random(0, 1)",
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": 1.25
+      },
+      "minecraft:particle_motion_dynamic": {
+        "linear_acceleration": [ 0, 1.0, 0 ],
+        "linear_drag_coefficient": 0.0
+      },
+      "minecraft:particle_appearance_billboard": {
+        "size": [ 0.5, 0.5 ],
+        "facing_camera_mode": "lookat_xyz",
+        "uv": {
+          "texture_width": 1,
+          "texture_height": 32,
+          "flipbook": {
+            "base_UV": [ 0, 0 ],
+            "size_UV": [ 1, 1 ],
+            "step_UV": [ 0, 1 ],
+            "frames_per_second": 32,
+            "max_frame": 32,
+            "stretch_to_lifetime": true,
+            "loop": false
+          }
+        }
+      }
+    }
+  }
+}
+
+```
+
+
+
+## Bouncing Bubbles
+
+****
+```
+
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "minecraft:test_bounce",
+      "basic_render_parameters": {
+        "material": "particles_alpha",
+        "texture": "textures/particle/particles"
+      }
+    },  
+    "components": {
+      "minecraft:emitter_rate_instant": {
+        "num_particles": 100
+      },
+      "minecraft:emitter_lifetime_once": {
+        "active_time": 2
+      },
+      "minecraft:emitter_shape_sphere": {
+        "offset": [ "Math.random(-0.5, 0.5)", "Math.random(-0.5, 0.5)", "Math.random(-0.5, 0.5)" ],
+        "direction": "outwards",
+        "radius": 1
+      },
+      "minecraft:particle_initial_speed": 5.0,
+      "minecraft:particle_initial_spin": {
+        "rotation": "Math.random(0, 360)",
+        "rotation_rate": 0
+      },
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": "5"
+      },
+      "minecraft:particle_motion_dynamic": {
+        "linear_acceleration": [ 0, -9.8, 0 ]
+      },
+      "minecraft:particle_motion_collision": {
+        "coefficient_of_restitution": 0.5,
+        "collision_drag": 4,
+        "collision_radius": 0.1
+      },
+      "minecraft:particle_appearance_billboard": {
+        "size": [ "0.1", "0.1" ],
+        "facing_camera_mode": "lookat_xyz",
+        "uv": {
+          "texture_width": 128,
+          "texture_height": 128,
+          "uv": [ 0, 16 ],
+          "uv_size": [ 8, 8 ]
+        }
+      },
+      "minecraft:particle_appearance_lighting": {}
+    }
+  }
+}
+
+```
+
+
+
+# Molang integration
+
+Where it makes sense, any field can use a Molang expression. Molang expressions are strings, and are defined in the Molang documentation.  The particle system uses some special Molang variables that particle Molang expressions can use.  Additionally, custom Molang paramaters can be set in various ways and used in Molang expressions in effects.
+
+
+
+| Name| Description |
+|:-----------:|:-----------:|
+| variable.particle_lifetime|  |
+| variable.particle_age|  |
+| variable.particle_random_1|  |
+| variable.particle_random_2|  |
+| variable.particle_random_3|  |
+| variable.particle_random_4|  |
+| variable.emitter_lifetime|  |
+| variable.emitter_age|  |
+| variable.emitter_random_1|  |
+| variable.emitter_random_2|  |
+| variable.emitter_random_3|  |
+| variable.emitter_random_4|  |
+| variable.entity_scale|  |
+
+
+
+
+# Namespacing
+
+All particle effects should be namespaced (in their name).
+
+Namespacing involves adding a 'name:' prefix on the effect tag.
+
+Regular Minecraft will use the 'minecraft: prefix.  See the examples for example names.
+
+
+
+
+# Particles Entity Integration
+
+
+One of the primary uses for emitting particles in the Bedrock engine is particles associated with entities, such as mobs.  Examples can be when the Blaze flames-up during it's attack sequence, or the Evoker's spell effect while summoning Vexes.  The goal is to allow binding and management of particle effects attached to entities.
+
+The following concepts are important for managing particles with entities via .json:
+- Effect lists.  These live in the resource definition of the entity's .json, along with textures, etc.  These list the effects available to the entity, with an internal entity name for the effect, and the associated effect to play.
+- Locators.  These live in the geometry files, and specify a location in the geometry.  These locators can be associated with bones, and thus follow the bone as it animates.
+- Animation controller-based particle management.  Using the Animation Controller state machine concept, one can trigger both fire-and-forget and sustained particle effects
+- Animation timeline particle management.  As part of an animation .json for the entity, one can set up a timeline that triggers particle effects at specified times while the animation is playing.  Note that an actual physical animation is not needed, just the animation .json structure.
+
+Particles that are attached to entities are intrinsically tied to those entities.  If the entity ceases to exist, the particle effects cease as well.  Emitters follow either the entity, or a locator on the entity.
+
+
+
+
+time1/time2/etc are numerical time points, e.g. "0.0". 
+
+In this example, when the cat sits down, after 3 seconds a smoke puff is generated:
+
+****
+```
+
+{
+  "format_version": "1.8.0",
+  "animations": {
+    ...
+    "animation.cat.sit": {
+      "loop": true,
+      "animation_length": 5.0,
+      "bones": {
+          // bone animation stuff
+       },
+      "particle_effects": {
+        "3.0": [
+          {
+            "effect": "smoke_puff"
+          }
+        ]
+      }
+    },
+    ...
+    }
+  }
+}
+
+```
+
+
+
+## Animation Controller effects
+
+
+Animation controllers can specify effect events for their states.  This allows for a list of particle effects to be started upon state entry, and for those particle effects to be automatically ended when leaving the state.  For particles that don't terminate (or don't terminate prior to state transition), they will be terminated at state exit.
+
+The schema is:
+"particle_effects": [
+    // array of effect events
+]
+The array syntax allows for more than one effect to be triggered on state entry.
+
+An example is the Blaze's flame-up effect in it's animation controller. This animation controller has two states, "default" and "flaming".  It transitions between the two via the "query.is_charged" entity flag check.  When in the "flaming" state, the "charged_flames" effect is started (with no locator or initialization Molang expression), and is terminated when the state exits.
+
+
+****
+```
+
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+
+    ...
+
+    "controller.animation.blaze.flame": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "flaming": "query.is_charged" }
+          ]
+        },
+        "flaming": {
+          "particle_effects": [
+            {
+              "effect": "charged_flames"
+            }
+          ],
+          "transitions": [
+            { "default": "!query.is_charged" }
+          ]
+        }
+      }
+    },
+
+    ...
+
+  }
+}
+
+```
+
+
+
+## Animation Timeline effects
+
+Animations can also trigger particle effects.  These are fire-and-forget effects that are tied to a timeline, when the animation hits that time point, the effect(s) are fired.
+
+****
+```
+
+"particle_effects": {
+    "time1" : [
+        // array of effect events
+    ],
+    "time2" : [
+        // array of effect events
+    ],
+    "time3" : {
+      // single effect
+    }
+}
+
+```
+
+
+
+## Effect Event
+
+
+Particle events in the entity have the following properties:
+- "effect" is the effect name specified in the entity's resource definition .json (the particle effect list), this specifies what particle effect to start/play
+- "locator" is an optional parameter that maps to a locator of the same name in the resource definition.  By specifying a locator, the emitter will follow that locator around as the entity animates, including orientation.  If this is not specified, the effect will occur at the origin of the entity.
+- "pre_effect_script" is an optional parameter that is a Molang expression run at emitter startup time.  This can set up Molang variables, (for example 'particle color'), which can be then referred to inside the particle effect .json itself.
+
+
+****
+```
+
+{
+    "effect": "internal_name",
+    "locator": "locator_name", // optional
+    "pre_effect_script" // optional
+}
+
+```
+
+
+
+## Effect List
+
+The effect list is a list of internal effect names to actual particle effects bindings. This is the general form for adding particle effects to an entity.  The effect list consists of a list of shorthand names to actual effects.  All references to effects will use the shorthand name in animations and animation controllers.  Note that this by itself will not cause the particle effect to appear.
+
+****
+```
+
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:entity_name",
+      ...
+       "particle_effects": {
+            "shorthand_name1": "effect_name1",
+            "shorthand_name2": "effect_name2",
+        },
+        ...
+    }
+  }
+}
+
+```
+
+
+
+# Particles Examples Pack
+
+https://aka.ms/MCParticlesPack
+
+Examples of various particles can be found in the link above.  These are examples of various stand-alone particle effects.  The particle effects provided as part of the Minecraft installation are tuned to be used with the Minecraft game, and thus do not serve as good examples.  Please refer to the examples in the pack to see various ways to utilize the particle system. 
+
+To invoke an example particle with the examples particles pack enabled, bring up the console, type "/particle name x y z" where "name" is the name of the particle effect, and x/y/z are the coordinates the particle appears at.
+
+For example, "/particle minecraft:example_smoke_puff 0 5 0" will spawn a smoke puff at the origin of the world, 5 blocks up from the bottom of the world. 
+"/particle minecraft:example_smoke_puff ~ ~1 ~5" will create that smoke puff about 5 blocks away from the player.
+
+
+
+
+**<big>Example Effects</big>**
+
+| Name| Description |
+|:-----------:|:-----------:|
+| minecraft:example_bezier_chaincurve|  |
+| minecraft:example_beziercurve|  |
+| minecraft:example_bounce|  |
+| minecraft:example_catmullromcurve|  |
+| minecraft:example_colorcurve|  |
+| minecraft:example_colorcurve2|  |
+| minecraft:example_combocurve|  |
+| minecraft:example_directional_sphere|  |
+| minecraft:example_entity_sparkle_box|  |
+| minecraft:example_entity_sparkle_aabb|  |
+| minecraft:example_expire_on_contact|  |
+| minecraft:example_flipbook|  |
+| minecraft:example_highrestitution|  |
+| minecraft:example_linearcurve|  |
+| minecraft:example_particle_event_system|  |
+| minecraft:example_smoke_puff|  |
+| minecraft:example_spiral|  |
+| minecraft:example_watertest|  |
+| minecraft:fireworks_events_demo|  |
+
+
+
+
+# Structure In Detail
+
+**Outline:**
+```
+
+{
+  // specifies the format version of the particle.  Only particles of a particular set of versions 
+  // will work with the game
+  "format_version": "1.10.0",
+
+  "particle_effect": {
+    // general data for the particle effect
+    "description": {
+      // e.g. "minecraft:test_mule", this is the name the particle emitter is referred to as
+      "identifier": <string>, 
+
+      // Basic render parameters are basic rendering 
+      // properties like the texture used, or the material used.
+      // All particles require a material to render, and a 
+      // texture to draw.  
+      "basic_render_parameters": {
+          "material": <string>
+          "texture": <string>
+      },
+    },
+
+    "curves": {
+	  // curves are described elsewhere in the document
+    },
+
+    "events": {
+      // events are described elsewhere in the document
+    },
+
+    "components: {
+        /////////////////////////////////////////////////////////////////////
+        // Emitter related components
+        // these components primarily affect the emitter bevahior
+
+        // emitter initial state components set up the emitter with
+        // particular properties
+
+        // emitter rate components control when particles get emitted
+        // these will be run every frame for the emitter to determine if any 
+        // particles need to be spawned
+
+        // emitter lifetime components control the lifetime of the emitter
+        // and the "enabled/disabled" state of the emitter.
+        // Emitters can only spawn particles if enabled.
+
+        // emitter shapecomponents control where a particle gets emitted
+        // and initial shape-driven state such as particle direction
+
+        // emitter local space components
+        // this component specifies whether entity-based emitters 
+        // simulate in local or global space
+
+        /////////////////////////////////////////////////////////////////////
+        // Particle related components
+        // these components primarily affect the particle behavior
+
+        // particle initial condition components control what the initial state
+        // of the particles is, such as initial speed, rotation, etc.
+        // These are run once at particle creation
+
+        // particle motion components control what happens to the particle
+        // on frames after creation, such as it's position (for
+        // a parametric particle), drag/acceleration (for a dynamic
+        // particle), etc.
+        // These are run once per frame per particle
+
+        // particle appearance components control how the particle is rendered 
+        // such as what UV coortinates to use, size of the particle,
+        // billboard orientation, color tinting, etc.
+        // These are run once per frame for visible particles
+
+        // these components handle when the particle expires
+    }
+  }
+}
+
+```
+

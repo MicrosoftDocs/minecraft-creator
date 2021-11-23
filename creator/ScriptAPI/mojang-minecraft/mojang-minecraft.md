@@ -12,11 +12,20 @@ description: Contents of the mojang-minecraft module
 
 
 
+## Enumerations
+- [Direction](Direction.md)
+
 ## Classes
 - [BeforeChatEvent](BeforeChatEvent.md)
 - [BeforeChatEventSignal](BeforeChatEventSignal.md)
 - [BeforeExplosionEvent](BeforeExplosionEvent.md)
 - [BeforeExplosionEventSignal](BeforeExplosionEventSignal.md)
+- [BeforeItemDefinitionEventSignal](BeforeItemDefinitionEventSignal.md)
+- [BeforeItemDefinitionTriggeredEvent](BeforeItemDefinitionTriggeredEvent.md)
+- [BeforeItemUseEvent](BeforeItemUseEvent.md)
+- [BeforeItemUseEventSignal](BeforeItemUseEventSignal.md)
+- [BeforeItemUseOnEvent](BeforeItemUseOnEvent.md)
+- [BeforeItemUseOnEventSignal](BeforeItemUseOnEventSignal.md)
 - [BeforePistonActivateEvent](BeforePistonActivateEvent.md)
 - [BeforePistonActivateEventSignal](BeforePistonActivateEventSignal.md)
 - [Block](Block.md)
@@ -31,6 +40,8 @@ description: Contents of the mojang-minecraft module
 - [BlockPistonComponent](BlockPistonComponent.md)
 - [BlockPotionContainerComponent](BlockPotionContainerComponent.md)
 - [BlockProperties](BlockProperties.md)
+- [BlockRaycastOptions](BlockRaycastOptions.md)
+- [BlockRecordPlayerComponent](BlockRecordPlayerComponent.md)
 - [BlockSnowContainerComponent](BlockSnowContainerComponent.md)
 - [BlockType](BlockType.md)
 - [BlockWaterContainerComponent](BlockWaterContainerComponent.md)
@@ -38,16 +49,14 @@ description: Contents of the mojang-minecraft module
 - [ChatEvent](ChatEvent.md)
 - [ChatEventSignal](ChatEventSignal.md)
 - [Color](Color.md)
-- [Commands](Commands.md)
 - [Container](Container.md)
 - [Dimension](Dimension.md)
-- [Direction](Direction.md)
 - [Effect](Effect.md)
 - [EffectAddEvent](EffectAddEvent.md)
 - [EffectAddEventSignal](EffectAddEventSignal.md)
 - [EffectType](EffectType.md)
 - [Entity](Entity.md)
-- [EntityAddPassengerComponent](EntityAddPassengerComponent.md)
+- [EntityAddRiderComponent](EntityAddRiderComponent.md)
 - [EntityAgeableComponent](EntityAgeableComponent.md)
 - [EntityBreathableComponent](EntityBreathableComponent.md)
 - [EntityColorComponent](EntityColorComponent.md)
@@ -77,6 +86,7 @@ description: Contents of the mojang-minecraft module
 - [EntityNavigationGenericComponent](EntityNavigationGenericComponent.md)
 - [EntityNavigationHoverComponent](EntityNavigationHoverComponent.md)
 - [EntityNavigationWalkComponent](EntityNavigationWalkComponent.md)
+- [EntityRaycastOptions](EntityRaycastOptions.md)
 - [EntityRideableComponent](EntityRideableComponent.md)
 - [EntityStrengthComponent](EntityStrengthComponent.md)
 - [EntityTameableComponent](EntityTameableComponent.md)
@@ -89,21 +99,35 @@ description: Contents of the mojang-minecraft module
 - [FeedItemEffect](FeedItemEffect.md)
 - [FilterGroup](FilterGroup.md)
 - [FluidContainer](FluidContainer.md)
+- [IEntityComponent](IEntityComponent.md)
 - [IntBlockProperty](IntBlockProperty.md)
 - [InventoryComponentContainer](InventoryComponentContainer.md)
+- [ItemDefinitionEventSignal](ItemDefinitionEventSignal.md)
+- [ItemDefinitionTriggeredEvent](ItemDefinitionTriggeredEvent.md)
+- [ItemDurabilityComponent](ItemDurabilityComponent.md)
+- [ItemFoodComponent](ItemFoodComponent.md)
+- [Items](Items.md)
 - [ItemStack](ItemStack.md)
 - [ItemType](ItemType.md)
+- [ItemUseEvent](ItemUseEvent.md)
+- [ItemUseEventSignal](ItemUseEventSignal.md)
+- [ItemUseOnEvent](ItemUseOnEvent.md)
+- [ItemUseOnEventSignal](ItemUseOnEventSignal.md)
 - [Location](Location.md)
 - [MinecraftBlockTypes](MinecraftBlockTypes.md)
 - [MinecraftEffectTypes](MinecraftEffectTypes.md)
 - [MinecraftItemTypes](MinecraftItemTypes.md)
+- [NavigationResult](NavigationResult.md)
+- [NumberRange](NumberRange.md)
 - [PistonActivateEvent](PistonActivateEvent.md)
 - [PistonActivateEventSignal](PistonActivateEventSignal.md)
+- [PitchYawRotation](PitchYawRotation.md)
 - [Player](Player.md)
 - [PlayerInventoryComponentContainer](PlayerInventoryComponentContainer.md)
-- [RecordPlayer](RecordPlayer.md)
-- [ScriptNavigationResult](ScriptNavigationResult.md)
-- [ScriptPlayerHeadRotation](ScriptPlayerHeadRotation.md)
+- [PlayerJoinEvent](PlayerJoinEvent.md)
+- [PlayerJoinEventSignal](PlayerJoinEventSignal.md)
+- [PlayerLeaveEvent](PlayerLeaveEvent.md)
+- [PlayerLeaveEventSignal](PlayerLeaveEventSignal.md)
 - [Seat](Seat.md)
 - [StringBlockProperty](StringBlockProperty.md)
 - [TickEvent](TickEvent.md)
@@ -115,10 +139,21 @@ description: Contents of the mojang-minecraft module
 
 
 ## Constants
-### **TicksPerSecond** = `20`
+### **TicksPerSecond**
 `static read-only TicksPerSecond = 20;`
+
+How many times the server ticks per second of real time.
 
 Type: *number*
 
+
+
+## Objects
+### **world**
+`static read-only world: World;`
+
+A class that wraps the state of a world - a set of dimensions and the environment of Minecraft.
+
+Type: [*World*](World.md)
 
 
