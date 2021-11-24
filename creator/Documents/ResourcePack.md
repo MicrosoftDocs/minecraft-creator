@@ -106,7 +106,7 @@ With the manifest file completed, you can now start adding custom content to Min
 
 ### Creating the texture
 
-Now that the folder structure is created, you can place your custom textures there. This little, green square is an example of the type of file created by the following steps. 
+Now that the folder structure is created, you can place your custom textures there. This little, green square is an example of the type of file created by the following steps.
 
 ![A PNG file that can be downloaded and used in place of a custom texture made in a photo editor](Media/ResourcePack/dirt.png)
 
