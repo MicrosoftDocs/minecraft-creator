@@ -102,7 +102,7 @@ There is a third section in the behavior pack's manifest.json file called 'depen
 
 ![Image of resource pack manifest.json header UUID duplicated in behavior pack dependencies section](Media/BehaviorPack/manifest_UUID_dependency.png)
 
-## Create the Entities Folder and Have a Cow
+## Create the Entities Folder and Make it Have a Cow
 
 Every entity's behaviors are defined in its own JSON file that lives inside the code that makes Minecraft work. You're going to create a new cow behavior file that Minecraft will use instead of its usual "vanilla" one.
 
@@ -110,8 +110,8 @@ Every entity's behaviors are defined in its own JSON file that lives inside the 
 1. Create a text file in the **entities** folder and name it **cow.json**.
 1. Copy and paste the following code into your **cow.json** file. After you save the file, you're ready to go!
  
->[!Note] 
-> This is the entire edited cow.json file and it's big because cows do a lot!
+>[!Note]
+> This is the entire edited cow.json file. It's big because cows do a lot!
 
 ```json
 {
