@@ -30,7 +30,7 @@ ms.prod: gaming
 ```json
 "minecraft:bounds": {
   "dimension": "overworld",
-  "min": [-50, 0, -50],
-  "max": [50, 256, 50],
+  "min": [-50, -64, -50],
+  "max": [50, 320, 50],
 },
 ```
