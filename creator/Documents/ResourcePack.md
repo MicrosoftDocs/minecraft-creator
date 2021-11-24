@@ -8,7 +8,7 @@ description: A tutorial that is an introduction to Resource Packs and how to add
 
 # Introduction to Resource Packs
 
-Before building your first Add-On for Minecraft: Bedrock Edition, you will need to create a pack to hold your custom content. There are two types of packs that a creator can make: resource packs and behavior packs. A **resource pack** is a folder structure that will contain all of your custom models, sounds, textures and other custom content. 
+Before building your first Add-On for Minecraft: Bedrock Edition, you will need to create a pack to hold your custom content. There are two types of packs that a creator can make: resource packs and behavior packs. A **resource pack** is a folder structure that will contain all of your custom models, sounds, textures and other custom content.
 
 :::image type="content" source="Media/ResourcePack/Introduction-to-Resource-Packs.jpg" alt-text="Image showing a pig deeply confused by its environment containing green dirt blocks":::
 
@@ -27,13 +27,13 @@ It’s recommended that the following be completed before beginning this tutoria
 
 - [Getting Started with Add-On Development](GettingStarted.md)
 
-You will also need the following:
-
-- Download the [Vanilla resource pack](https://aka.ms/resourcepacktemplate)
-
 ## Building the Resource Pack
 
-The first part of creating a resource pack is to create the folder that will hold your custom content. It will need to be placed in a location where Minecraft can find it so your changes can be loaded into the game.
+For Minecraft to find and use your resource files, you have to set up the folders and files in a particular structure. This tutorial will guide you through creating that folder and file structure.
+
+### Create a folder
+
+In this section, you will start by creating a folder called **My_RESOURCE_Pack**. Well, actually you don't have to call it that. In fact, you can name this folder anything you want, but the other folders have to be named exactly like this tutorial says so that Minecraft knows where to look.
 
 1. Open your **com.mojang** folder.
 1. Double-click the **development_resource_packs** folder to open it.
@@ -41,7 +41,7 @@ The first part of creating a resource pack is to create the folder that will hol
 1. Double-click the ***My_RESOURCE_Pack** folder to open it.
    	![image of newly created folder with a single Folder called My_RESOURCE_Pack located in the development resource packs folder](Media/ResourcePack/myresourcepack.png)
 
-### Creating a Manifest File
+### Create a Manifest File
 
 To load a resource pack into Minecraft, a manifest file will need to be created. The manifest file is a JSON file that contains the following information:
 
@@ -61,24 +61,24 @@ To load a resource pack into Minecraft, a manifest file will need to be created.
 1. Copy and paste the following code into your file.
 
 ```json
-	{
-	  "format_version": 2,
-	  "header": {
-      "description": "My first resource pack Add-On!",
-	    "name": "My Resource Pack",
-	    "uuid":"",
-	    "version": [1, 0, 0],
-	    "min_engine_version": [1, 16, 0]
-	  },
-	  "modules": [
-	    {
-	      "description": "My First Add-On!",
-	      "type": "resources",
-	      "uuid": "",
-	      "version": [1, 0, 0]
-	    }
-	  ]
-	}
+{
+ "format_version": 2,
+ "header": {
+   "description": "My dirt resource pack Add-On!",
+   "name": "My Resource Pack",
+   "uuid":"",
+   "version": [1, 0, 0],
+   "min_engine_version": [1, 16, 0]
+  },
+ "modules": [
+   {
+     "description": "My First Add-On!",
+     "type": "resources",
+     "uuid": "",
+     "version": [1, 0, 0]
+   }
+ ]
+}
 ```
 
 ### UUID
@@ -103,7 +103,6 @@ With the manifest file completed, you can now start adding custom content to Min
 1. Double-click the **textures** folder to open it.
 1. Inside the textures folder, create a folder and name it **blocks**.
 1. Double-click the **blocks** folder to open it.
-	![image of the Windows Explorer Address Bar showcasing the 2 new folders named textures and blocks](Media/ResourcePack/blocks_folder.png)
 
 ### Creating the texture
 
@@ -124,13 +123,13 @@ You can now design a pattern or any artwork in the editor. To make the green squ
 > MS Paint is used in this example for quick and easy access, but you will need to use a different graphics editor for more advanced graphic features like transparency effects or .tga file support.
 
 1. When you're done editing your texture, go to the **File** menu and select **Save As**.
-1. Chose the **PNG picture** option.
+1. Choose the **PNG picture** option.
 1. In the **Save As** dialog box, navigate to the **blocks** folder you created.
 1. Save the file as **dirt.png**.
 
 ### Testing the pack
 
-Now that the pack has both a manifest file and a texture, you can launch Minecraft and test your new resource Add-On.
+Now that the pack has both a manifest file and a texture file, you can launch Minecraft and test your new resource Add-On.
 
 > [!IMPORTANT]
 > **Pack Stacking** is how content is loaded on top of vanilla content, causing each object that has the same name in both packs to be overwritten by the *latest* applied pack. In our example, the original dirt texture is overwritten by our custom texture.
@@ -150,7 +149,9 @@ Your custom texture will be used on every dirt.png block in the world, but it wi
 
 ## What's Next?
 
-With a custom texture now a part of your Minecraft world, it's time to look at behavior packs and how you can alter existing entity behaviors. In the next section, you will learn how to add an aggressive behavior to a normally peaceful cow entity.
+With a custom texture now a part of your Minecraft world, it's time to see how behavior packs alter existing entity behaviors. In the next section, you will add an aggressive behavior to a normally peaceful cow entity.
 
 > [!div class="nextstepaction"]
 > [Behavior pack](BehaviorPack.md)
+
+To see examples of unchanged resource and behavior files, check out the Minecraft [Vanilla resource pack](https://aka.ms/resourcepacktemplate) and [Vanilla behavior Pack](https://aka.ms/behaviorpacktemplate).
