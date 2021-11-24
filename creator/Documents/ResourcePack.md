@@ -8,7 +8,7 @@ description: A tutorial that is an introduction to Resource Packs and how to add
 
 # Introduction to Resource Packs
 
-Before building your first Add-On for Minecraft: Bedrock Edition, you will need to create a pack to hold your custom content. There are two types of packs that a creator can make: resource packs and behavior packs. A **resource pack** is a folder structure that will contain all of your custom models, sounds, textures and other custom content. 
+Before building your first Add-On for Minecraft: Bedrock Edition, you will need to create a pack to hold your custom content. There are two types of packs that a creator can make: resource packs and behavior packs. A **resource pack** is a folder structure that will contain all of your custom models, sounds, textures and other custom content.
 
 :::image type="content" source="Media/ResourcePack/Introduction-to-Resource-Packs.jpg" alt-text="Image showing a pig deeply confused by its environment containing green dirt blocks":::
 
@@ -107,7 +107,7 @@ With the manifest file completed, you can now start adding custom content to Min
 
 ### Creating the texture
 
-Now that the folder structure is created, you can place your custom textures there. This little, green square is an example of the type of file created by the following steps. 
+Now that the folder structure is created, you can place your custom textures there. This little, green square is an example of the type of file created by the following steps.
 
 ![A PNG file that can be downloaded and used in place of a custom texture made in a photo editor](Media/ResourcePack/dirt.png)
 

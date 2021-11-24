@@ -84,9 +84,9 @@
                 href: Documents/ChunkerTheNether.md
     - name: Articles
       items:
-        - name: Caves and Cliffs Features
+        - name: Caves + Cliffs Features
           items:
-          - name: Introduction to the Caves and Cliffs Entities
+          - name: Introduction to the Caves & Cliffs Entities
             href: Documents/CavesAndCliffsEntities.md
           - name: World Height Changes in Caves and Cliffs Part 2
             href: Documents/WorldHeightChange.md

@@ -22,9 +22,9 @@ highlightedContent:
       itemType: whats-new
       url: Documents/MinecraftEntityWizard.md
     #card
-    - title: Base Game Versioning
+    - title: "Experimental Features in Minecraft: Bedrock Edition"
       itemType: whats-new
-      url: Documents/BaseGameVersioning.md
+      url: Documents/ExperimentalFeaturesToggle.md
     #card
     - title: World Height Changes in Caves and Cliffs Part 2
       itemType: whats-new
