@@ -82,7 +82,7 @@ Biomes are read from JSON files in the biomes subfolders of behavior packs. Load
 ### Schema
 
 ```json
-  {
+ {
       object "minecraft:climate"[0,7] : opt // Describes temperature, humidity, precipitation, etc.  Biomes without this component will have default values.
       {
           float "temperature" : opt
@@ -118,12 +118,12 @@ Biomes are read from JSON files in the biomes subfolders of behavior packs. Load
                       int "numerator"<1-*>
                       int "denominator"<1-*>
                   }
-                  molang "scatter_chance" : opt // Probability (0-100) that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.
+                  molang "scatter_chance" : opt // Probability (0-100] that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.
                   enumerated_value "coordinate_eval_order"<"xyz", "xzy", "yxz", "yzx", "zxy", "zyx"> : opt // The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to "xzy".
                   molang "x" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
                   object "x" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
                   {
-                      enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered)
+                      enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
                       int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
                       int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
                       array "extent"[2]
@@ -135,7 +135,7 @@ Biomes are read from JSON files in the biomes subfolders of behavior packs. Load
                   molang "z" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
                   object "z" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
                   {
-                      enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered)
+                      enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
                       int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
                       int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
                       array "extent"[2]
@@ -147,7 +147,7 @@ Biomes are read from JSON files in the biomes subfolders of behavior packs. Load
                   molang "y" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
                   object "y" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
                   {
-                      enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered)
+                      enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
                       int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
                       int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
                       array "extent"[2]
