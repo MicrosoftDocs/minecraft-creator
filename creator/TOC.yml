@@ -12,6 +12,8 @@
               href: Documents/ResourcePack.md
             - name: Introduction to Behavior Packs
               href: Documents/BehaviorPack.md
+            - name: "Installing Add-Ons in Minecraft: Bedrock"
+              href: Documents/AddonPackInstallation.md
             - name: Adding a Custom Block
               href: Documents/CustomBlock.md
             - name: Fog in Resource Packs

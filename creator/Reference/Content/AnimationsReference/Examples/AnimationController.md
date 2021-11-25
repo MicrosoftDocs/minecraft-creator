@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Animation Documentation - Animation Controllers
 
-The Animation Controller format is written in JSON and formatted as shown below:
+Animation controllers decide which animations to play when.  Each controller contains a list of states that play one or more animations, each of which can be blended by a Molang expression if so desired.  Controller files are stored as JSON in the animation_controllers folder
 
 ### Animation Controller Format
 
@@ -39,15 +39,92 @@ The Animation Controller format is written in JSON and formatted as shown below:
 
 ## States
 
-Each state has an optional variables section, listing any number of variables that referenced animations can use.  Each state also has one or more animations, using the name given in the entity's definition json.
+A state defines a group of animations to process (each of which can have it's own blend value). Each state has an optional variables section, listing any number of variables that referenced animations can use.  Each state also has one or more animations, using the name given in the entity's definition json.
+
+## State Blending
+
+If you would like there to be a cross-fade between states when transitioning, simply set "blend_transition" to the time you would like the system to take in blending between the two states.  This is done as a simple lerp between the two states over the time specified.
+
+### Example of State Blending
+
+```JSON
+"controller.animation.tiger.move": {
+  "states": {
+    "default": {
+      "animations": [ "base_pose", "walk" ],
+      "transitions": [
+        { "angry": "query.is_angry" } // transition to angry state if query.is_angry returns true
+      ],
+      "blend_transition": 0.2          // when transitioning away from this state, cross-fade over 0.2 seconds
+    },
+    "angry": {
+      "animations": [ "roar", "extend_claws" ],
+      "transitions": [
+        { "default": "query.any_animation_finished" } // transition back to default state when either the roar animation or extend_claws animation finishes
+      ]
+    }
+  }
+}
+```
+
+## State Transitions
+
+A state can specify any number of transition scripts, listed in order.  Each transition has a target state to switch to, and a script for whether it should switch or not.  For each transition in order, evaluate the script, and if it returns non-zero, switch to the specified state immediately.  NOTE: Only one transition will be processed per frame.
+
+```JSON
+"<controller_name>": {
+  "states": {
+    "<state_name>": {
+      ...
+      "transitions": [
+        // Evaluate the below expressions in order.
+        // The first to return non-zero is the state to transition to.
+        // If all are zero, then don't transition.
+        { "<target_state_name_A>", "<expression>" },
+        { "<target_state_name_B>", "<expression>" },
+        ...
+      ]
+    }
+  },
+  ...
+}
+```
+
+### Example of State Transitions
+
+```JSON
+"controller.animation.tiger.move": {
+  "states": {
+    "default": {
+      "animations": [ "base_pose", "walk" ],
+      "transitions": [
+        { "angry": "query.is_angry" }, // transition to angry state if query.is_angry returns true
+        { "tired": "variable.is_tired" } // transition to tired state if variable.is_tired returns true
+      ]
+    },
+    "angry": {
+      "animations": [ "roar", "extend_claws" ],
+      "transitions": [
+        { "default": "query.any_animation_finished" } // transition back to default state when either the roar animation or extend_claws animation finishes
+      ]
+    },
+    "tired": {
+      "animations": [ "yawn", "stretch" ],
+      "transitions": [
+        { "default": "query.all_animation_finished" } // transition back to default state when the yawn and stretch animations have both finished
+      ]
+    }
+  }
+}
+```
 
 ### State Variables
 
-Variables have their value set by a Molang Expression.  They can also have their value remapped via a linearly-interpolated curve.
+Variables are either set by the game or by a user defined script that can be found in the entity definition json found in definitions/entity/<entity_name>.json. Variables have their value set by a Molang Expression.  They can also have their value remapped via a linearly-interpolated curve.
 
 #### Example
 
-Here is the animation controller for a single frame.  It will take the value of `query.ground_speed`, then remap it to between 0.2 and 0.7 based on the value of `query.ground_speed` going from 0.0 to 1.0. It will play one animation walk that will blend from 0.0 to 1.0 as the ground speed increases from stopped to 2.3 m/s. The remap curve can have any number of entries. The animation controller will then play the entity-referenced `wiggle_nose` animations, followed by the `walk` animation, scaling the latter by the value of `variable.ground_speed_curve`
+This defines a controller with a single state.  It will create a variable `variable.ground_speed_curve` that lives on the entity only while processing the animation controller for that frame.  It will take the value of `query.ground_speed`, then remap it to between 0.2 and 0.7 based on the value of `query.ground_speed` going from 0.0 to 1.0It will play one animation walk that will blend from 0.0 to 1.0 as the ground speed increases from stopped to 2.3 m/s.  The remap curve can have any number of entries.  The animation controller will then play the entity-referenced `wiggle_nose` animations, followed by the `walk` animation, scaling the latter by the value of `variable.ground_speed_curve`.
 
 ```JSON
 {
@@ -78,6 +155,8 @@ Here is the animation controller for a single frame.  It will take the value of 
 
 #### User-Defined Script Example
 
+This script will set foo to the result of the sine of query.life_time to later be used in the animation or animation controller.
+
 > [!NOTE]
 > "pre_animation" tells the script to figure out the values of those variables once a frame, before animation occurs, so that the animation can use those values in their own formulas. If a variable didn't exist, it will create a new variable and its default value will be 0.0
 
@@ -95,7 +174,7 @@ In definitions\entity\tiger.json:
 }
 ```
 
-From 0 to -1 to 0 where only "base_pose" will play and then an equal amount of time where Walk will play on top of base_pose as foo goes from 0 to 1 back to 0. Base_pose will have a blend value of 1.0.
+In this example that because foo is equal to a sin wave, that its values will range from -1 to 1.  This means that you will have a period from 0 to -1 to 0 where only "base_pose" will play and then an equal amount of time where Walk will play on top of base_pose as foo goes from 0 to 1 back to 0.  Base_pose will have a blend value of 1.0.
 
 ```JSON
 "controller.animation.tiger.move": {
