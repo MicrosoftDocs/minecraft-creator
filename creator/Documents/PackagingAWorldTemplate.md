@@ -31,6 +31,9 @@ Shown below in the following image is how a World Template folder structure may 
 
 ![Folder structure of the whole world template](Media/PackagingAWorldTemplate/folderstructure.png)
 
+> [!IMPORTANT]
+> The default max file path allowed within Windows 10 is 260 characters. Please be mindful when setting up your folder directory and to use shorthand naming conventions if you are close to the character limit.
+
 ## manifest.json
 
 Create a JSON file named `manifest.json` that defines your content as a world template.
