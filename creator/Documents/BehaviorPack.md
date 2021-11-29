@@ -40,7 +40,7 @@ In this section, you will create a folder called **My_BEHAVIOR_Pack**. Well, act
 1. Open the **development_behavior_packs** folder.
 1. Inside the development_behavior_packs folder, create a new folder and name it **My_BEHAVIOR_Pack**.
 1. Open the **My_BEHAVIOR_Pack** folder.
-    :::image type="content" source="Media/BehaviorPack/my_behavior_pack.png" alt-text="":::
+    :::image type="content" source="Media/BehaviorPack/my_behavior_pack.png" alt-text="Image of My_BEHAVIOR_Pack folder located in the com.mojang development_behavior_packs folder":::
 
 ### Create the manifest file
 
