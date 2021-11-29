@@ -20,6 +20,8 @@
   href: minecraftGeode_feature.md
 - name: ore_feature
   href: minecraftOre_feature.md
+- name: partially_exposed_blob
+  href: minecraftPartially_Exposed_blob_feature.md
 - name: rect_layout
   href: minecraftRect_layout.md
 - name: scan_surface
@@ -34,6 +36,8 @@
   href: minecraftSnap_to_surface_feature.md
 - name: structure_template_feature
   href: minecraftStructure_template_feature.md
+- name: surface_relative_threshold
+  href: minecraftSurface_Relative_threshold_feature.md
 - name: underwater_cave_carver_feature
   href: minecraftUnderwater_cave_carver.md
 - name: weighted_random_feature
