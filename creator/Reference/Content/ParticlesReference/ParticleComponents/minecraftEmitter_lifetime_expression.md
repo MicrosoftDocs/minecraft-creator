@@ -7,6 +7,8 @@ ms.prod: gaming
 
 # Particle Documentation - Emitter Lifetime Expression component
 
+Emitter will turn 'on' when the activation expression is non-zero, and will turn 'off' when it's zero.  This is useful for situations like driving an entity-attached emitter from an entity variable.
+
 ```json
 "minecraft:emitter_lifetime_expression": {
     // When the expression is non-zero, the emitter will emit particles.

@@ -7,6 +7,8 @@ ms.prod: gaming
 
 # Particle Documentation - Emitter Rate Steady component
 
+Particles come out at a steady or Molang rate over time.
+
 ```json
 "minecraft:emitter_rate_steady": {
     // how often a particle is emitted, in particles/sec

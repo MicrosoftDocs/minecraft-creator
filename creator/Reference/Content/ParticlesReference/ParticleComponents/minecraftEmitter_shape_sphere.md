@@ -7,6 +7,8 @@ ms.prod: gaming
 
 # Particle Documentation - Emitter Shape Sphere component
 
+All particles come out of a sphere offset from the emitter.
+
 ```json
 "minecraft:emitter_shape_sphere": {
     // specifies the offset from the emitter to emit the particles

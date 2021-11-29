@@ -7,6 +7,8 @@ ms.prod: gaming
 
 # Bouncing Bubbles
 
+This particle effect generates a bunch of bubbles that bounce around.
+
 ```json
 
 {
@@ -18,7 +20,7 @@ ms.prod: gaming
         "material": "particles_alpha",
         "texture": "textures/particle/particles"
       }
-    },  
+    },
     "components": {
       "minecraft:emitter_rate_instant": {
         "num_particles": 100

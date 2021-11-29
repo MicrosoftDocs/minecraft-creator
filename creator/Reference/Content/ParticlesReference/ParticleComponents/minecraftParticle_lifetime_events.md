@@ -7,6 +7,8 @@ ms.prod: gaming
 
 # Particle Documentation - Particle Lifetime Events component
 
+This component allows for triggering events based on various lifetime events.
+
 ```json
 "minecraft:particle_lifetime_events": {
       // all events use the event names in the event section

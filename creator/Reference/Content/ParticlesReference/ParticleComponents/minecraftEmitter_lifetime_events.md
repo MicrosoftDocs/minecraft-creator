@@ -7,6 +7,8 @@ ms.prod: gaming
 
 # Particle Documentation - Emitter Lifetime Events component
 
+Allows for lifetime events on the emitter to trigger certain events.
+
 ```json
 "minecraft:emitter_lifetime_events": {
       // all events use the event names in the event section

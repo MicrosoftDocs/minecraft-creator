@@ -7,6 +7,11 @@ ms.prod: gaming
 
 # Particle Documentation - Particle Motion Parametric component
 
+This component directly controls the particle.
+
+>![NOTE]
+> This component won't work for either manually-emitted particles, or entity-based particle emitters that aren't in local space.
+
 ```json
 "minecraft:particle_motion_parametric": {
     // directly set the position relative to the emitter.

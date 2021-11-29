@@ -7,6 +7,8 @@ ms.prod: gaming
 
 # Particle Documentation - Particle Appearance Tinting component
 
+This component sets the color tinting of the particle.
+
 ```json
 
 // color fields are special, they can be either an RGB, or a "#RRGGBB"

@@ -7,6 +7,8 @@ ms.prod: gaming
 
 # Particle Documentation - Emitter Shape Point component
 
+All particles come out of a point offset from the emitter.
+
 ```json
 "minecraft:emitter_shape_point": {
     // specifies the offset from the emitter to emit the particles
