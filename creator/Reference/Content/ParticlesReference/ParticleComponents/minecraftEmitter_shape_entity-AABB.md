@@ -7,6 +7,9 @@ ms.prod: gaming
 
 # Particle Documentation - Emitter Shape Entity-AABB component
 
+All particles come out of the axis-aligned bounding box (AABB) for the entity the emitter is attached to, or the emitter point if no entity.
+
+
 ```json
 
 "minecraft:emitter_shape_entity_aabb": {

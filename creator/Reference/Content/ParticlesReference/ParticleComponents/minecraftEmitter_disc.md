@@ -7,6 +7,8 @@ ms.prod: gaming
 
 # Particle Documentation - Emitter Disc component
 
+This component spawns particles using a disc shape, particles can be spawned inside the shape or on its outer perimeter.
+
 ```json
 "minecraft:emitter_shape_disc": {
     // specifies the normal of the disc plane, the disc will be perpendicular to this direction

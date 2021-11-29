@@ -7,6 +7,8 @@ ms.prod: gaming
 
 # Particle Documentation - Particle Initial State component
 
+Starts the particle with a specified orientation and rotation rate.
+
 ```json
 "minecraft:particle_initial_spin": {
     // specifies the initial rotation in degrees

@@ -7,6 +7,8 @@ ms.prod: gaming
 
 # Particle Documentation - Emitter Initialization component
 
+This component allows the emitter to run some Molang at creation, primarily to populate any Molang variables that get used later.
+
 ```json
 
 "minecraft:emitter_initialization": {

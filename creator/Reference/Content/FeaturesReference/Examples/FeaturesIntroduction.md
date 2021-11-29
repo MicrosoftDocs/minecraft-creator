@@ -151,7 +151,7 @@ Feature rules are separate JSON definition files found in the "feature_rules" su
               molang "x" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
               object "x" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
               {
-                  enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered)
+                  enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
                   int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
                   int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
                   array "extent"[2]
@@ -163,7 +163,7 @@ Feature rules are separate JSON definition files found in the "feature_rules" su
               molang "z" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
               object "z" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
               {
-                  enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered)
+                  enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
                   int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
                   int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
                   array "extent"[2]
@@ -175,7 +175,7 @@ Feature rules are separate JSON definition files found in the "feature_rules" su
               molang "y" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
               object "y" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
               {
-                  enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered)
+                  enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
                   int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
                   int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
                   array "extent"[2]
@@ -187,7 +187,6 @@ Feature rules are separate JSON definition files found in the "feature_rules" su
           }
       }
   }
-
 ```
 
 ## Forced features

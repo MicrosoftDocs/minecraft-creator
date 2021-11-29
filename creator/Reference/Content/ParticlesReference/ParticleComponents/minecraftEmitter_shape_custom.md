@@ -7,6 +7,8 @@ ms.prod: gaming
 
 # Particle Documentation - Emitter Shape Custom component
 
+All particles are emitted  based on a specified set of Molang expressions.
+
 ```json
 "minecraft:emitter_shape_custom": {
     // specifies the offset from the emitter to emit the particles

@@ -7,6 +7,8 @@ ms.prod: gaming
 
 # Particle Documentation - Particle Appearance Billboard component
 
+This component tells the particle system to render the particle as a billboard, a rectangle in the world facing a particular direction.
+
 ```json
 "minecraft:particle_appearance_billboard": {
     // specifies the x/y size of the billboard

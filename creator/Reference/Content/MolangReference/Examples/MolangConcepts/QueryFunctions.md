@@ -228,7 +228,7 @@ Query Functions are operators that access a wide variety of information. They ca
 | query.skin_id| Returns the entity's skin ID. |
 | query.sleep_rotation| Returns the rotation of the bed the player is sleeping on. |
 | query.sneeze_counter| Returns the sneeze counter of the entity. |
-| query.spellcolor| Returns the entity spell colour if it makes sense, else it returns 0.0. |
+| query.spellcolor| Returns a struct representing the entity spell colour for the specified entity. The struct contains `.r` `.g` `.b` and `.a` members, each 0.0 to 1.0. If no actor is specified, each member value will be 0.0 |
 | query.standing_scale| Returns the scale of how standing up the entity is. |
 | query.structural_integrity| Returns the structural integrity for the actor, otherwise returns 0. |
 | query.swell_amount| Returns how swollen the entity is. |
