@@ -60,72 +60,71 @@ Listed below are all of the available biomes within Minecraft:Bedrock Edition an
 
 | Biome| Tags |
 |:-----------|:-----------|
-| Plains|animal, monster, plains  |
-| Desert|monster, desert  |
-| Mountain|animal, monster, extreme_hills  |
-| Forest|animal, monster, forest  |
-| Taiga|animal, monster, taiga  |
-| Swamp|animal, monster, swamp  |
-| River|river  |
-| Nether|nether  |
-| The End|the_end  |
-| Frozen Ocean|ocean, frozen  |
-| Frozen River|river, frozen  |
-| Snowy Tundra|frozen, ice_plain, ice  |
-| Snowy Mountains|frozen, ice, mountain  |
-| Mushroom Fields|mooshroom_island  |
-| Mushroom Fields Shore|mooshroom_island, shore  |
-| Beach|monster, beach, warm  |
-| Desert Hills|monster, desert, hills  |
-| Forest Hills|animal, monster, hills  |
-| Taiga Hills|animal, monster, taiga, hills  |
-| Mountain Edge|animal, monster, extreme_hills, edge, mountain  |
-| Jungle|animal, monster, jungle  |
-| Jungle Hills|animal, monster, jungle, hills  |
-| Jungle Edge|animal, monster, jungle, edge  |
-| Snowy Beach|monster, beach, cold  |
-| Stone Shore|monster, beach, stone  |
-| Birch Forest|animal, monster, birch, forest  |
-| Birch Forest Hills|animal, monster, birch, forest, hills  |
-| Dark Forest|animal, monster, forest, roofed  |
-| Snowy Taiga|animal, monster, taiga, cold  |
-| Snowy Taiga Hills|animal, monster, taiga, cold, hills  |
-| Giant Tree Taiga|animal, monster, taiga, mega  |
-| Giant Tree Taiga Hills|animal, monster, taiga, mega, hills  |
-| Wooded Mountain|animal, monster, extreme_hills, forest, mountain  |
-| Savanna|animal, monster, savanna  |
-| Savanna Plateau|animal, monster, savanna  |
-| Mesa|monster  |
-| Mesa Plateau Stone|monster, plataeu  |
-| Mesa Plateau|monster, mesa  |
-| Ocean|ocean, monster  |
-| Deep Ocean|ocean, monster, deep  |
-| Warm Ocean|ocean, warm, monster  |
-| Deep Warm Ocean|ocean, warm, monster, deep  |
-| Lukewarm Ocean|ocean, lukewarm, monster  |
-| Deep Lukewarm Ocean|ocean, lukewarm, monster, deep  |
-| Cold Ocean|ocean, cold, monster  |
-| Deep Cold Ocean|ocean, cold, monster, deep  |
-| Frozen Ocean|ocean, frozen, monster  |
-| Deep Frozen Ocean|ocean, frozen, monster, deep  |
-| Plains M|animal, monster, plains, mutated  |
-| Swamp M|animal, monster, swamp, mutated    |
-| Snowy Tundra M|monster, frozen, ice_plains, mutated  |
-| Cold Taiga M|animal, monster, taiga, cold, mutated  |
-| Savanna M|animal, monster, savanna, mutated  |
-| Savanna Plateau M|animal, monster, savanna, plateau, mutated  |
-| Dark Forest M |animal, monster, roofed, forest, mutated |
-| Desert M|monster, desert, mutated  |
-| Forest M|monster, flower_forest, forest, mutated  |
-| Taiga M|animal, monster, taiga, mutated  |
-| Jungle M|animal, monster, jungle, mutated  |
-| Jungle Edge M|animal, monster, jungle, edge, mutated  |
-| Mesa M|animal, monster, mesa, mutated  |
-| Mesa Plateau M|monster, mesa, plateau, mutated  |
-| Mesa Plateau Stone M|monster, mesa, plateau, mutated, stone  |
-| Birch Forest M|animal, monster, forest, birch, mutated  |
-| Birch Forest Hills M|animal, monster, forest, birch, mutated, hills  |
-| Giant Trees Taiga M|animal, monster, mutated, mega  |
-| Mountain M|animal, monster, extreme_hills, mutated  |
-| Mountain + M|animal, monster, extreme_hills, mutated, forest  |
-| Giant Tree Taiga Hills M|animal, monster, taiga, mega, hills, mutated  |
+| Beach| monster, beach, warm |
+| Birch Forest| animal, monster, birch, forest |
+| Birch Forest Hills| animal, monster, birch, forest, hills |
+| Birch Forest Hills M| animal, monster, forest, birch, mutated, hills |
+| Birch Forest M| animal, monster, forest, birch, mutated |
+| Cold Ocean| ocean, cold, monster |
+| Cold Taiga M| animal, monster, taiga, cold, mutated |
+| Dark Forest| animal, monster, forest, roofed |
+| Dark Forest M| animal, monster, roofed, forest, mutated |
+| Deep Cold Ocean| ocean, cold, monster, deep |
+| Deep Frozen Ocean| ocean, frozen, monster, deep |
+| Deep Lukewarm Ocean| ocean, lukewarm, monster, deep |
+| Deep Ocean| ocean, monster, deep |
+| Deep Warm Ocean| ocean, warm, monster, deep |
+| Desert| monster, desert |
+| Desert Hills| monster, desert, hills |
+| Desert M| monster, desert, mutated |
+| Forest| animal, monster, forest |
+| Forest Hills| animal, monster, hills |
+| Forest M| monster, flower_forest, forest, mutated |
+| Frozen Ocean| ocean, frozen |
+| Frozen River| river, frozen |
+| Giant Tree Taiga| animal, monster, taiga, mega |
+| Giant Tree Taiga Hills| animal, monster, taiga, mega, hills |
+| Giant Tree Taiga Hills M| animal, monster, taiga, mega, hills, mutated |
+| Giant Trees Taiga M| animal, monster, mutated, mega |
+| Jungle| animal, monster, jungle |
+| Jungle Edge| animal, monster, jungle, edge |
+| Jungle Edge M| animal, monster, jungle, edge, mutated |
+| Jungle Hills| animal, monster, jungle, hills |
+| Jungle M| animal, monster, jungle, mutated |
+| Lukewarm Ocean| ocean, lukewarm, monster |
+| Mesa| monster |
+| Mesa M| animal, monster, mesa, mutated |
+| Mesa Plateau| monster, mesa |
+| Mesa Plateau M| monster, mesa, plateau, mutated |
+| Mesa Plateau Stone| monster, plataeu |
+| Mesa Plateau Stone M| monster, mesa, plateau, mutated, stone |
+| Mountain| animal, monster, extreme_hills |
+| Mountain + M| animal, monster, extreme_hills, mutated, forest |
+| Mountain Edge| animal, monster, extreme_hills, edge, mountain |
+| Mountain M| animal, monster, extreme_hills, mutated |
+| Mushroom Fields| mooshroom_island |
+| Mushroom Fields Shore| mooshroom_island, shore |
+| Nether| nether |
+| Ocean| ocean, monster |
+| Plains| animal, monster, plains |
+| Plains M| animal, monster, plains, mutated |
+| River| river |
+| Savanna| animal, monster, savanna |
+| Savanna M| animal, monster, savanna, mutated |
+| Savanna Plateau| animal, monster, savanna |
+| Savanna Plateau M| animal, monster, savanna, plateau, mutated |
+| Snowy Beach| monster, beach, cold |
+| Snowy Mountains| frozen, ice, mountain |
+| Snowy Taiga| animal, monster, taiga, cold |
+| Snowy Taiga Hills| animal, monster, taiga, cold, hills |
+| Snowy Tundra| frozen, ice_plain, ice |
+| Snowy Tundra M| monster, frozen, ice_plains, mutated |
+| Stone Shore| monster, beach, stone |
+| Swamp| animal, monster, swamp |
+| Swamp M| animal, monster, swamp, mutated |
+| Taiga| animal, monster, taiga |
+| Taiga Hills| animal, monster, taiga, hills |
+| Taiga M| animal, monster, taiga, mutated |
+| The End| the_end |
+| Warm Ocean| ocean, warm, monster |
+| Wooded Mountain| animal, monster, extreme_hills, forest, mountain |

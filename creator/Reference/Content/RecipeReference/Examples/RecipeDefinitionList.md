@@ -17,3 +17,4 @@ Recipes are setup in JSON files under the `behavior_packs/'name of pack'/recipes
 |[Shaped](RecipeDefinitions/minecraftRecipe_Shaped.md) |Represents a recipe that requires a dedicated pattern when using a Crafting Table. |
 |[Shapeless](RecipeDefinitions/minecraftRecipe_Shapeless.md) |Represents a recipe that does not require a dedicated pattern.|
 |[Potion Brewing](RecipeDefinitions/minecraftRecipe_PotionBrewing.md) |Represents a recipe that for use with a Potion Brewing station.|
+|[Potion Brewing Mix](RecipeDefinitions/minecraftRecipe_PotionBrewingMix.md) |Represents a Potion Brewing Mix.|

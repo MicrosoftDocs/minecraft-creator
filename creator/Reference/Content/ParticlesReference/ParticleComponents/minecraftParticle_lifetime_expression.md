@@ -7,6 +7,8 @@ ms.prod: gaming
 
 # Particle Documentation - Particle Lifetime Expression component
 
+Standard lifetime component.  These expressions control the lifetime of the particle.
+
 ```json
 "minecraft:particle_lifetime_expression": {
     // this expression makes the particle expire when true (non-zero)

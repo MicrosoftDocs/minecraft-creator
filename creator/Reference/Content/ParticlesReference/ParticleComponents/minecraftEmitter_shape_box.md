@@ -7,6 +7,8 @@ ms.prod: gaming
 
 # Particle Documentation - Emitter Shape Box component
 
+All particles come out of a box of the specified size from the emitter.
+
 ```json
 
 "minecraft:emitter_shape_box": {

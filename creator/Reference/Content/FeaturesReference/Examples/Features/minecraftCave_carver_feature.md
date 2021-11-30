@@ -21,7 +21,8 @@ ms.prod: gaming
       "identifier": "minecraft:underground_cave_carver_feature"
     },
     "fill_with": "minecraft:air",
-    "width_modifier": 0.0
+    "width_modifier": 0.0,
+		"skip_carve_chance": 15
   }
 }
 ```

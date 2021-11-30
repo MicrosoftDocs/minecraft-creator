@@ -7,6 +7,10 @@ ms.prod: gaming
 
 # Flame particle
 
+This particle is the little flame that appears on torches and furnaces to indicate fire.  It is a simple particle, consisting of a non-moving flame, with some variations.  Note the use of Molang to create variations in the particle behavior.
+
+In addition, the use of texturewidth/height in the UV section of the billboard component allows referencing of UVs via texels:
+
 ```json
 
 {

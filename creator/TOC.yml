@@ -12,6 +12,8 @@
               href: Documents/ResourcePack.md
             - name: Introduction to Behavior Packs
               href: Documents/BehaviorPack.md
+            - name: "Installing Add-Ons in Minecraft: Bedrock"
+              href: Documents/AddonPackInstallation.md
             - name: Adding a Custom Block
               href: Documents/CustomBlock.md
             - name: Fog in Resource Packs
@@ -84,9 +86,9 @@
                 href: Documents/ChunkerTheNether.md
     - name: Articles
       items:
-        - name: Caves and Cliffs Features
+        - name: Caves + Cliffs Features
           items:
-          - name: Introduction to the Caves and Cliffs Entities
+          - name: Introduction to the Caves & Cliffs Entities
             href: Documents/CavesAndCliffsEntities.md
           - name: World Height Changes in Caves and Cliffs Part 2
             href: Documents/WorldHeightChange.md

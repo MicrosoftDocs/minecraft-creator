@@ -7,6 +7,8 @@ ms.prod: gaming
 
 # Particle Documentation - Particle Initial Speed component
 
+Starts the particle with a specified speed, using the direction specified by the emitter shape.
+
 ```json
 
 // evaluated once

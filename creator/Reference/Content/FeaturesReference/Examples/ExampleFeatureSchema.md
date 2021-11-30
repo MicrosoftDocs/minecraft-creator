@@ -68,6 +68,12 @@ Here is an example of the complete feature schema:
           }
           block_reference "fill_with" : opt // Reference to the block to fill the cave with.
           molang "width_modifier" : opt // How many blocks to increase the cave radius by, from the center point of the cave.
+          int "skip_carve_chance"<1-*> : opt // The chance to skip doing the carve (1 / value).
+          int "height_limit" : opt // The height limit where we attempt to carve.
+          float_range "y_scale" : opt // The scaling in y.
+          float_range "horizontal_radius_multiplier" : opt // Horizontal radius multiplier.
+          float_range "vertical_radius_multiplier" : opt // Vertical radius multiplier.
+          float_range "floor_level" : opt // Floor Level.
       }
       object "minecraft:conditional_list" : opt
       {
@@ -127,6 +133,12 @@ Here is an example of the complete feature schema:
           }
           block_reference "fill_with" : opt // Reference to the block to fill the cave with.
           molang "width_modifier" : opt // How many blocks to increase the cave radius by, from the center point of the cave.
+          int "skip_carve_chance"<1-*> : opt // The chance to skip doing the carve (1 / value).
+          int "height_limit" : opt // The height limit where we attempt to carve.
+          float_range "y_scale" : opt // The scaling in y.
+          float_range "horizontal_radius_multiplier" : opt // Horizontal radius multiplier.
+          float_range "vertical_radius_multiplier" : opt // Vertical radius multiplier.
+          float_range "floor_level" : opt // Floor Level.
       }
       object "minecraft:multiface_feature" : opt
       {
@@ -183,6 +195,7 @@ Here is an example of the complete feature schema:
               string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
           }
           int "count"<1-*> // The number of blocks to be placed.
+          float "discard_chance_on_air_exposure"<0.000000-1.000000> : opt // Chance of discarding placement if neighboring block is Air.
           array "replace_rules"[1,*] : opt
           {
               object "<any array element>" // Collection of replace rules that will be checked in order of definition. If a rule is resolved, the rest will not be resolved for that block position.
@@ -242,7 +255,7 @@ Here is an example of the complete feature schema:
           molang "x" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
           object "x" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
           {
-              enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered)
+              enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
               int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
               int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
               array "extent"[2]
@@ -254,7 +267,7 @@ Here is an example of the complete feature schema:
           molang "z" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
           object "z" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
           {
-              enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered)
+              enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
               int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
               int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
               array "extent"[2]
@@ -266,7 +279,7 @@ Here is an example of the complete feature schema:
           molang "y" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
           object "y" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
           {
-              enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered)
+              enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
               int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
               int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
               array "extent"[2]
@@ -369,7 +382,8 @@ Here is an example of the complete feature schema:
           feature_reference "feature_to_snap" // Named reference of feature to be snapped
           int "vertical_search_range" // Range to search for a floor or ceiling for snaping the feature.
           string "surface" : opt // Defines the surface that the y-value of the placement position will be snapped to. Valid values: 'ceiling', 'floor' and 'random_horizontal'
-          bool "allow_underwater_placement" : opt // Features can be snapped through water as well as air.
+          bool "allow_air_placement" : opt // Determines whether the feature can snap through air blocks. Defaults to true.
+          bool "allow_underwater_placement" : opt // Determines whether the feature can snap through water blocks. Defaults to false.
       }
       object "minecraft:structure_template_feature" : opt
       {
@@ -401,6 +415,12 @@ Here is an example of the complete feature schema:
           }
           block_reference "fill_with" : opt // Reference to the block to fill the cave with.
           molang "width_modifier" : opt // How many blocks to increase the cave radius by, from the center point of the cave.
+          int "skip_carve_chance"<1-*> : opt // The chance to skip doing the carve (1 / value).
+          int "height_limit" : opt // The height limit where we attempt to carve.
+          float_range "y_scale" : opt // The scaling in y.
+          float_range "horizontal_radius_multiplier" : opt // Horizontal radius multiplier.
+          float_range "vertical_radius_multiplier" : opt // Vertical radius multiplier.
+          float_range "floor_level" : opt // Floor Level.
           block_reference "replace_air_with" : opt // Reference to the block to replace air blocks with.
       }
       object "minecraft:tree_feature" : opt
@@ -876,6 +896,25 @@ Here is an example of the complete feature schema:
           int "pathes_count_max"
           int "max_patch_distance"
       }
+      object "minecraft:partially_exposed_blob_feature" : opt
+      {
+          object "description"
+          {
+              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+          }
+          int "placement_radius_around_floor"<1-8> // Defines the cubic radius of the blob. [1, 8]
+          float "placement_probability_per_valid_position"<0.000000-1.000000> // The probability of trying to place a block at each position within the placement bounds. [0,1]
+          string "exposed_face" : opt // Defines a block face that is allowed to be exposed to air and/or water. Other faces need to be embedded for blocks to be placed by this feature. Defaults to upwards face.
+           "places_block" // Reference to the block to be placed.
+      }
+      object "minecraft:surface_relative_threshold_feature" : opt
+      {
+          object "description"
+          {
+              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+          }
+          feature_reference "feature_to_place" // Named reference of feature to be placed
+          int "minimum_distance_below_surface" : opt // The minimum number of blocks required to be between the estimated surface level and a valid place for this feature. Defaults to zero.
+      }
   }
-
 ```

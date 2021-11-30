@@ -7,6 +7,8 @@ ms.prod: gaming
 
 # Particle Documentation - Particle Motion Dynamic component
 
+This component specifies the dynamic properties of the particle, from a simulation standpoint what forces act upon the particle? These dynamics alter the velocity of the particle, which is a combination of the direction of the particle and the speed. Particle direction will always be in the direction of the velocity of the particle.
+
 ```json
 "minecraft:particle_motion_dynamic": {
     // the linear acceleration applied to the particle, defaults to [0, 0, 0].

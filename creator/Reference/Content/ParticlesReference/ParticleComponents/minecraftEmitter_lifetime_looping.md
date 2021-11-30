@@ -7,6 +7,8 @@ ms.prod: gaming
 
 # Particle Documentation - Emitter Lifetime Looping component
 
+Emitter will loop until it is removed.
+
 ```json
 "minecraft:emitter_lifetime_looping": {
 

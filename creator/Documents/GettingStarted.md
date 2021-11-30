@@ -24,15 +24,15 @@ In this tutorial, you will learn the following.
 
 When Minecraft is installed on your computer, there is a folder called **com.mojang** that is generated in the AppData folder. You will need to find this folder so you can add your content to it.
 
-To locate the **com.mojang** folder on your computer, you will need to have **Hidden items** checkbox set to **true**, as shown below.
+To locate the **com.mojang** folder on your computer, you will need to have **Hidden items** checkbox set to **true**, as shown below. while you're at it, go ahead and check the box for **File name extensions**, too.
 
 ### Showing hidden items ###
 
 1. Open **File Explorer** from the taskbar.
 1. Select the **View** tab.
-1. In the **Show/hide** section, select the checkbox for **Hidden items**.
+1. In the **Show/hide** section, select the checkboxes for **File name extensions** and **Hidden items**.
 
-:::image type="content" source="Media/GettingStarted/viewHiddenFolders.png" alt-text="Image of Windows 10 File Explorer window's view options. The Hidden items box is checked to indicate that it's set to true":::
+:::image type="content" source="Media/GettingStarted/viewHiddenFolders.png" alt-text="Image of Windows 10 File Explorer window's view options. The File name extensions and Hidden items boxes are checked to indicate that they are set to true":::
 
 ### Locating com.mojang
 

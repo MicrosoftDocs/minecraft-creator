@@ -209,20 +209,21 @@ The events themselves consist of an optional node tree and/or an actual event.  
 Where it makes sense, any field can use a Molang expression. Molang expressions are strings, and are defined in the Molang documentation.  The particle system uses some special Molang variables that particle Molang expressions can use.  Additionally, custom Molang parameters can be set in various ways and used in Molang expressions in effects.
 
 | Name| Description |
-|:-----------:|:-----------:|
-| variable.particle_lifetime|  |
-| variable.particle_age|  |
-| variable.particle_random_1|  |
-| variable.particle_random_2|  |
-| variable.particle_random_3|  |
-| variable.particle_random_4|  |
-| variable.emitter_lifetime|  |
-| variable.emitter_age|  |
-| variable.emitter_random_1|  |
-| variable.emitter_random_2|  |
-| variable.emitter_random_3|  |
-| variable.emitter_random_4|  |
-| variable.entity_scale|  |
+|:-----------|:-----------|
+| variable.emitter_age| Age since the current loop started for the emitter |
+| variable.emitter_lifetime| How long the current loop lasts for the emitter |
+| variable.emitter_random_1| A random from 0.0 to 1.0 that is constant for the current loop of the emitter |
+| variable.emitter_random_2| Another random from 0.0 to 1.0 that is constant for the current loop of the emitter |
+| variable.emitter_random_3| A third random from 0.0 to 1.0 that is constant for the current loop of the emitter |
+| variable.emitter_random_4| A fourth random from 0.0 to 1.0 that is constant for the current loop of the emitter |
+| variable.entity_scale| When the effect is attached to an entity, this value is the scale of the entity |
+| variable.particle_age| How long the particle has lived |
+| variable.particle_lifetime| How long the particle lives for |
+| variable.particle_random_1| A random from 0.0 to 1.0 that is constant for the lifetime of the particle |
+| variable.particle_random_2| Another random from 0.0 to 1.0 that is constant for the lifetime of the particle |
+| variable.particle_random_3| A third random from 0.0 to 1.0 that is constant for the lifetime of the particle |
+| variable.particle_random_4| A fourth random from 0.0 to 1.0 that is constant for the lifetime of the particle |
+
 
 ## Namespacing
 
@@ -384,7 +385,8 @@ The effect list is a list of internal effect names to actual particle effects bi
 
 ## Particles Examples Pack
 
-https://aka.ms/MCParticlesPack
+> [!div class="nextstepaction"]
+> [Particle Examples Pack](https://aka.ms/MCParticlesPack)
 
 Examples of various particles can be found in the link above.  These are examples of various stand-alone particle effects.  The particle effects provided as part of the Minecraft installation are tuned to be used with the Minecraft game, and thus do not serve as good examples.  Please refer to the examples in the pack to see various ways to utilize the particle system.
 
@@ -393,30 +395,29 @@ To invoke an example particle with the examples particles pack enabled, bring up
 For example, "/particle minecraft:example_smoke_puff 0 5 0" will spawn a smoke puff at the origin of the world, 5 blocks up from the bottom of the world.
 "/particle minecraft:example_smoke_puff ~ ~1 ~5" will create that smoke puff about 5 blocks away from the player.
 
-
 ### Example Effects
 
 | Name| Description |
-|:-----------:|:-----------:|
-| minecraft:example_bezier_chaincurve|  |
-| minecraft:example_beziercurve|  |
-| minecraft:example_bounce|  |
-| minecraft:example_catmullromcurve|  |
-| minecraft:example_colorcurve|  |
-| minecraft:example_colorcurve2|  |
-| minecraft:example_combocurve|  |
-| minecraft:example_directional_sphere|  |
-| minecraft:example_entity_sparkle_box|  |
-| minecraft:example_entity_sparkle_aabb|  |
-| minecraft:example_expire_on_contact|  |
-| minecraft:example_flipbook|  |
-| minecraft:example_highrestitution|  |
-| minecraft:example_linearcurve|  |
-| minecraft:example_particle_event_system|  |
-| minecraft:example_smoke_puff|  |
-| minecraft:example_spiral|  |
-| minecraft:example_watertest|  |
-| minecraft:fireworks_events_demo|  |
+|:-----------|:-----------|
+| minecraft:example_bezier_chaincurve| Demonstrates the use of a bezier chain curve in an effect |
+| minecraft:example_beziercurve| Demonstrates the use of a bezier curve in an effect |
+| minecraft:example_bounce| Demonstrates collision detection and bouncing for particles |
+| minecraft:example_catmullromcurve| Demonstrates the use of a catmull-rom curve in an effect |
+| minecraft:example_colorcurve| Demonstrates the use of a color-gradient approach to color variation in an effect |
+| minecraft:example_colorcurve2| Demonstrates the use of a color-gradient approach with variable spacing in an effect |
+| minecraft:example_combocurve| Demonstrates the use of a variety of curves in an effect |
+| minecraft:example_directional_sphere| Demonstrates the use of directional billboard facing in an effect |
+| minecraft:example_entity_sparkle_aabb| When attached to an entity, this effect creates a sparkle effect with the rough axis-aligned bounding box around the entity |
+| minecraft:example_entity_sparkle_box| When attached to an entity, this effect creates a sparkle effect in a box around the entity |
+| minecraft:example_expire_on_contact| Demonstrates particles disappearing when colliding with the terrain |
+| minecraft:example_flipbook| Demonstrates texture uv flipbook technique, of applying successive frames of a texture for visual animation |
+| minecraft:example_highrestitution| Demonstrates particle collision with particles gaining energy on each bounce |
+| minecraft:example_linearcurve| Demonstrates a piecewise linear curve in an effect |
+| minecraft:example_particle_event_system| Demonstrates various particle events executing |
+| minecraft:example_smoke_puff| Demonstrates a general smoke puff effect |
+| minecraft:example_spiral| Demonstrates a parametric motion spiral effect |
+| minecraft:example_watertest| Demonstrates excluding particles from various block types, in this case, particles only survive in water |
+| minecraft:fireworks_events_demo| Demonstrates sequencing various particle effects together via events to create a fireworks effect |
 
 ## Structure In Detail
 

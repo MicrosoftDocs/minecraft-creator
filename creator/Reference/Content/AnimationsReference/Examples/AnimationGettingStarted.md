@@ -18,6 +18,16 @@ Animation follows the current Minecraft JSON paradigms:
 
 Before diving into how animation is defined in addons, let's take a look at an example of an Entity definition file that showcases how animations are assigned to an entity.
 
+## Entity Definition
+
+In order to define what animations an entity has, you must add both an `animations` and a `scripts/animate` section to an entity's entity definition file.
+
+Here you can see the entity definition for pig.json:This means you will not see the move animation in the pig.json animation file either.  If you would like to make a custom pig walk you can change this line to point to your custom animation.
+
+Animations are specified as a short name, followed by their full resource name.  The short name is used in animation controllers and the `scripts/animate` list, while the long name is used in the animations file.
+
+In the `scripts/animate` section, you list the animations to play and in which order.  You can either specify an animation directly, or specify a blend expression.
+
 ### Entity Definition Example
 
 ```json
@@ -65,9 +75,20 @@ Animations are specified as a short name, followed by their full resource name. 
 
 In the `scripts/animate` section, you list the animations to play and in which order.  You can either specify an animation directly, or specify a blend expression.
 
+## Animation Hierarchy
+
+Animations are channel based (rotation, position, or scale), and within that, they are key-framed:
+
+EntityAnimation: animation name
+__BoneAnimation[]: bone name to animation for this animation
+____AnimationChannel[]: rotation, scale, or translation to animate
+______KeyFrame[]: the value for the channel to be at, at a specific time
+
+All of the above concepts are described in a detailed, bottom-up approach below
+
 ## Animation Controller
 
-While a lot of this can be managed in the entity definition `scripts/animate` section, animation controllers give you the functionality of a state machine into states and control them as a block.  Animations in an animation controller state can be animation controllers themselves, allowing for arbitrarily complex animation hierarchies.
+One needs to be able to control how animations are played, when, and how they interact with other animations.  to group animations While a lot of this can be managed in the entity definition `scripts/animate` section, animation controllers give you the functionality of a state machine into states and control them as a block.  Animations in an animation controller state can be animation controllers themselves, allowing for arbitrarily complex animation hierarchies.
 
 ### Example of Animation Controller
 
@@ -104,7 +125,7 @@ To learn more about Animation Controllers, please visit the [Animation Controlle
 
 ## Animations
 
-Please note that the channels (x, y, and z) are added separately across animations **first!** After, they are then converted to a transform once all animations have been cumulatively applied.
+At the beginning of each frame, the skeleton is reset to its default pose from its geometry definition and then animations are applied per-channel-additively in order. Please note that the channels (x, y, and z) are added separately across animations **first!** After, they are then converted to a transform once all animations have been cumulatively applied.
 
 Animation data can be either raw data:
 

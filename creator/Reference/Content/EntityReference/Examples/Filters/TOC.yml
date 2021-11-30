@@ -1,6 +1,6 @@
 - name: Filters List
   href: ../FilterList.md
-- name: clock_time 
+- name: clock_time
   href: clock_time.md
 - name: distance_to_nearest_player
   href: distance_to_nearest_player.md
@@ -18,6 +18,8 @@
   href: has_equipment.md
 - name: has_mob_effect
   href: has_mob_effect.md
+- name: has_nametag
+  href: has_nametag.md
 - name: has_ranged_weapon
   href: has_ranged_weapon.md
 - name: has_tag
