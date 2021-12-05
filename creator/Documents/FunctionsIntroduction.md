@@ -8,10 +8,10 @@ description: "A tutorial that introduces a Creator on how to use functions"
 
 # Introduction to Functions
 
-Function files can be used to group together multiple commands. This makes it easier to run multiple commands at once by calling the function file in the chat box.
+Function files can be used to group together multiple commands. This makes it easier to run multiple commands at once by executing the function through the chat box.
 
 >[!Tip]
-> Minecraft **cannot** run more than 10,000 lines of functions in one function file. This includes any other function files that are executed inside of the original file.
+> Minecraft **cannot** run more than 10,000 commands in one function file. This includes function commands being executed by the original function. Not that we recommend running that many commands in one go, because that would affect the game's performance. 
 
 In this tutorial you will learn the following:
 
@@ -48,12 +48,21 @@ Function files have a .mcfunction extension and they live in the **functions** f
     ```
 1. Save the file.
 
-Notice, you don't have to start the commands with `/`.
+Don't start the commands with `/`. 
 
 ## Testing the function
 
-1. Launch Minecraft and press `/` to open chat.
-1. Enter `/function ouch`.
+1. Launch Minecraft.
+2. Open w world with cheats enabled and the bahavior -pack you created applied to it.
+3. Enter `/function ouch`.
+
+## Advanced function feature
+
+You can place functions inside directories to organize them and to avoid conflicts with functions in other behavior packs.
+
+So, if you have another folder inside your **functions** folder called **init** and you put 'ouch.mcfunction` in there, you would run it like this:
+`/function init/ouch`
+ 
 
 ## What's Next?
 
