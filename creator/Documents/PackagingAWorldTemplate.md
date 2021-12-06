@@ -21,7 +21,7 @@ To package a world template you create a `world_template` folder that contains t
 Lastly, you must keep your resource pack and behavior pack folders names to **10 characters or less**. This is due to an issue on Xbox where long paths may cause your resource or behavior pack to not load correctly. We recommend using an acronym of the title of your content for your pack's folder names.
 
 > [!WARNING]
-> With the upcoming `1.18` release, templates created with Base Game Version `1.17.4` or earlier will be updated with the new world generation tool and may break content when building new maps based upon that template.
+> With the release of `1.18`, templates created with Base Game Version `1.17.4` or earlier will be updated with the new world generation tool and may break content when building new maps based upon that template.
 >
 > To learn more about this scenario, please visit [Updating a World Template's Base Game Version to 1.18](BaseGameVersioning.md#updating-a-world-templates-base-game-version-to-118)
 
