@@ -48,7 +48,8 @@ Function files have a .mcfunction extension and they live in the **functions** f
     ```
 1. Save the file.
 
-Don't start the commands with `/`. 
+>[!IMPORTANT]
+> When working with commands in an .mcfunction file, you do not need to start commands with `/`.
 
 ## Testing the function
 
