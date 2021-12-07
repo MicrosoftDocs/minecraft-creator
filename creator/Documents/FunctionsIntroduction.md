@@ -63,6 +63,11 @@ You can place functions inside directories to organize them and to avoid conflic
 
 For example, if you have another folder inside your functions folder called **init** and you put 'ouch.mcfunction` in there, you would run it like this:
 `/function init/ouch`
+
+Now that you have an overview of how a function file works, you can learn how to utilize the in-game tick function and tick.json files in order to fire off custom functions on repeat.
+
+[!div class="nextstepaction"]
+>[Tick.json Introduction](TickJsonIntroduction.md)
  
 ## What's Next?
 
