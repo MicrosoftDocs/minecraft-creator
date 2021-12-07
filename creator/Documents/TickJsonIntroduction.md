@@ -8,7 +8,7 @@ description: "A tutorial that introduces a Creator on how to use tick.json to re
 
 # Introduction to tick.json
 
-If you want to execute function files continuously without the need for command blocks or entities, you can create a **tick.json** file. This file is stored in the **functions** folder of a behavior pack next to the files containing the functions you want to run.
+While command blocks are invaluable for running a series of commands based on in-game events, Minecraft: Bedrock Edition offers the ability to utilize the in-game tick function to run a series of commands or function files on a continuous loop. By using a **tick.json** file, you can set up functions to be run on each game tick. This file is stored in the **functions** folder of a behavior pack next to the files containing the functions you want to run. 
 
 >[!Important]
 > While this is a valuable file when you're trying to stay away from using repeating command blocks in-game, it's known for executing functions before the world has fully loaded in.  This might cause unintended behavior if you do not plan function usage carefully.
