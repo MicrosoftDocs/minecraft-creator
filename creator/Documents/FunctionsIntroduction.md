@@ -8,7 +8,7 @@ description: "A tutorial that introduces a Creator on how to use functions"
 
 # Introduction to Functions
 
-Function files can be used to group together multiple commands. This makes it easier to run multiple commands at once by executing the function through the chat box.
+While commands in Minecraft: Bedrock Edition allow creators to add logic and gameplay features to their Add-Ons, commands require a user to either manually enter commands arguments or set up elaborate chains of command blocks to execute properly. However, with function files, you can group together multiple commands into a single file allowing you to run a series of commands with a single execute. With functions, you can set up ways to generate buildings and structures around a select player, set up a reward system to gift items to a player, or teleport players to relative locations. 
 
 >[!Tip]
 > Minecraft **cannot** run more than 10,000 commands in one function file. This includes function commands being executed by the original function. Not that we recommend running that many commands in one go, because that would affect the game's performance. 
