@@ -8,11 +8,14 @@ description: "A tutorial that introduces a Creator on how to use tick.json to re
 
 # Introduction to tick.json
 
-If you want to execute function files continuously without the need for command blocks or entities, you can create a **tick.json** file. This file is stored in the **functions** folder of a behavior pack next to the files containing the functions you want to run.
+While command blocks are great for running a series of commands based on in-game events, Minecraft: Bedrock Edition offers the ability to use the in-game tick function to repeatedly run a series of commands or function files by using a file called **tick.json**. Tick.json is stored in the **functions** folder of a behavior pack next to the files containing the functions you want to run. 
+
+>[!Note]
+>Tick.json uses the gameplay tick which is 20 ticks per second, as opposed to the redstone tick which is 10 ticks per second. In other words, the functions you set up to run in tick.json will be executed 20 times every second of gameplay.
 
 >[!Important]
-> While this is a valuable file when you're trying to stay away from using repeating command blocks in-game, it's known for executing functions before the world has fully loaded in.  This might cause unintended behavior if you do not plan function usage carefully.
-> Also, including a lot of commands to be run every tick will severely affect performance, especially in low-end devices.
+> Using tick.json is valuable when you're trying to stay away from using repeating command blocks in-game, it's known for executing functions before the world has fully loaded in. This might cause unintended behavior if you do not plan function usage carefully.
+> Also, including a lot of commands to be run every tick of the game will severely affect performance, especially in low-end devices.
 
 In this tutorial you will learn the following:
 
@@ -27,6 +30,7 @@ It’s recommended that the following be completed before beginning this tutoria
 
 - [Introduction To Behavior Packs](BehaviorPack.md)
 - [Introduction to Commands](CommandsIntroduction.md)
+- [Introduction to Functions](FunctionIntroduction.md)
 
 You will also need the following:
 
