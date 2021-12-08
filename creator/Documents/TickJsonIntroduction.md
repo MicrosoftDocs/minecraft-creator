@@ -30,7 +30,7 @@ It’s recommended that the following be completed before beginning this tutoria
 
 - [Introduction To Behavior Packs](BehaviorPack.md)
 - [Introduction to Commands](CommandsIntroduction.md)
-- [Introduction to Functions](FunctionIntroduction.md)
+- [Introduction to Functions](FunctionsIntroduction.md)
 
 You will also need the following:
 
