@@ -30,6 +30,10 @@
             href: Documents/CommandBlocks.md
           - name: How to Make a Complete the Monument Map
             href: Documents/CommandsHowToMakeACTMMap.md
+          - name: Introduction to Functions
+            href: Documents/FunctionsIntroduction.md
+          - name: How to use tick.json
+            href: Documents/TickJsonIntroduction.md
         - name: Minecraft Entities
           items:
             - name: Introduction to Add Entity
