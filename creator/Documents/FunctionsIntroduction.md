@@ -61,15 +61,12 @@ Function files have a .mcfunction extension and they live in the **functions** f
 
 You can place functions inside directories to organize them and to avoid conflicts with functions in other behavior packs.
 
-For example, if you have another folder inside your functions folder called **init** and you put 'ouch.mcfunction` in there, you would run it like this:
+For example, if you have another folder inside your functions folder called **init** and you put `ouch.mcfunction` in there, you would run it like this:
 `/function init/ouch`
+ 
+## What's Next?
 
 Now that you have an overview of how a function file works, you can learn how to utilize the in-game tick function and tick.json files in order to fire off custom functions on repeat.
 
 [!div class="nextstepaction"]
 >[Tick.json Introduction](TickJsonIntroduction.md)
- 
-## What's Next?
-
-> [!div class="nextstepaction"]
-> [Block JSON Documentation](../Reference/Content/BlockReference/index.yml)
