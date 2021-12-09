@@ -8,7 +8,7 @@ description: "A tutorial that introduces a Creator on how to use tick.json to re
 
 # Introduction to tick.json
 
-While command blocks are great for running a series of commands based on in-game events, Minecraft: Bedrock Edition offers the ability to use the in-game tick function to repeatedly run a series of commands or function files by using a file called **tick.json**. Tick.json is stored in the **functions** folder of a behavior pack next to the files containing the functions you want to run. 
+While command blocks are great for running a series of commands based on in-game events, Minecraft: Bedrock Edition offers the ability to use the in-game tick function to repeatedly run a series of functions by using a file called **tick.json**. Tick.json is stored in the **functions** folder of a behavior pack next to the files containing the functions you want to run.
 
 >[!Note]
 >Tick.json uses the gameplay tick which is 20 ticks per second, as opposed to the redstone tick which is 10 ticks per second. In other words, the functions you set up to run in tick.json will be executed 20 times every second of gameplay.
@@ -52,6 +52,8 @@ The **tick.json** file contains the names of functions that you want to run ever
 
 Now there are two files for tick.json to call.
 
+![image of behavior pack function folder and file structure](Media/Commands/function_behavior_pack_structure.png)
+
 ## Creating tick.json
 
 The tick.json file contains a list of the functions that you want to execute on every tick of the game. You can also set the order that the functions will be called.
@@ -76,7 +78,7 @@ When the world loads, there will be repeated messages displayed on the screen fr
 
 :::image type="content" source="Media/TickJson/tickjson_displays_one_two.png" alt-text="Chat area of screen displays repeated messages [Server] one [Server] two":::
 
->[!Note] 
+>[!Note]
 > If the behavior pack stack has multiple behavior packs, all functions in tick.json will be run every tick. That is, they are additive.
 
 ## What's Next?

@@ -8,7 +8,7 @@ description: "A tutorial that introduces a Creator on how to use functions"
 
 # Introduction to Functions
 
-While commands in Minecraft: Bedrock Edition allow creators to add logic and gameplay features to their Add-Ons, commands require a user to either manually enter commands arguments or set up elaborate chains of command blocks to execute properly. However, with function files, you can group together multiple commands into a single file allowing you to run a series of commands with a single execute. With functions, you can set up ways to generate buildings and structures around a select player, set up a reward system to gift items to a player, or teleport players to relative locations. 
+While commands in Minecraft: Bedrock Edition allow creators to add logic and gameplay features to their Add-Ons, commands require a user to either manually enter commands arguments or set up elaborate chains of command blocks to execute properly. However, with function files, you can group together multiple commands into a single file allowing you to run a series of commands with a single execute. With functions, you can set up ways to generate buildings and structures around a select player, set up a reward system to gift items to a player, or teleport players to relative locations.
 
 >[!Tip]
 > Minecraft **cannot** run more than 10,000 commands in one function file. This includes function commands being executed by the original function. Not that we recommend running that many commands in one go, because that would affect the game's performance. 
@@ -35,8 +35,6 @@ You will also need the following:
 ## Setting up the Functions Folder
 
 Function files have a .mcfunction extension and they live in the **functions** folder of your behavior pack.
-
-![image of behavior pack function folder and file structure](Media/Commands/function_behavior_pack_structure.png)
 
 1. Start by creating a folder inside your behavior pack and name it **functions**. This folder should be on the same level as your `manifest.json` file.
 1. Open the **functions** folder and create a text file.
