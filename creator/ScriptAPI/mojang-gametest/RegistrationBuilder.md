@@ -27,7 +27,7 @@ A utility class to set GameTest parameters for a test. Methods can be chained to
   
 ### **batch**
 `
-batch(batchName:('night'|'day')): RegistrationBuilder
+batch(batchName: ('night'|'day')): RegistrationBuilder
 `
 
 Sets the batch for the test to run in.
@@ -41,7 +41,7 @@ Sets the batch for the test to run in.
 
 ### **maxAttempts**
 `
-maxAttempts(attemptCount:number): RegistrationBuilder
+maxAttempts(attemptCount: number): RegistrationBuilder
 `
 
 Sets the maximum number of times a test will try to rerun if it fails.
@@ -53,7 +53,7 @@ Sets the maximum number of times a test will try to rerun if it fails.
 
 ### **maxTicks**
 `
-maxTicks(tickCount:number): RegistrationBuilder
+maxTicks(tickCount: number): RegistrationBuilder
 `
 
 Sets the maximum number of ticks a test will run for before timing out and failing.
@@ -65,7 +65,7 @@ Sets the maximum number of ticks a test will run for before timing out and faili
 
 ### **padding**
 `
-padding(paddingBlocks:number): RegistrationBuilder
+padding(paddingBlocks: number): RegistrationBuilder
 `
 
 Size around the GameTest, in blocks, that should be reserved for the test when running multiple tests together.
@@ -79,7 +79,7 @@ Size around the GameTest, in blocks, that should be reserved for the test when r
 
 ### **required**
 `
-required(isRequired:boolean): RegistrationBuilder
+required(isRequired: boolean): RegistrationBuilder
 `
 
 Whether this test is required to pass as part of its broader set of tests.
@@ -93,7 +93,7 @@ Whether this test is required to pass as part of its broader set of tests.
 
 ### **requiredSuccessfulAttempts**
 `
-requiredSuccessfulAttempts(attemptCount:number): RegistrationBuilder
+requiredSuccessfulAttempts(attemptCount: number): RegistrationBuilder
 `
 
 Sets the number of successful test runs to be considered successful.
@@ -105,7 +105,7 @@ Sets the number of successful test runs to be considered successful.
 
 ### **rotateTest**
 `
-rotateTest(rotate:boolean): RegistrationBuilder
+rotateTest(rotate: boolean): RegistrationBuilder
 `
 
 If true, runs the test in all four rotations when run via /gametest runset.
@@ -117,7 +117,7 @@ If true, runs the test in all four rotations when run via /gametest runset.
 
 ### **setupTicks**
 `
-setupTicks(tickCount:number): RegistrationBuilder
+setupTicks(tickCount: number): RegistrationBuilder
 `
 
 Sets the number of ticks for a test to wait before executing when the structure is spawned.
@@ -129,7 +129,7 @@ Sets the number of ticks for a test to wait before executing when the structure 
 
 ### **structureName**
 `
-structureName(structureName:string): RegistrationBuilder
+structureName(structureName: string): RegistrationBuilder
 `
 
 Sets the name of the structure for a test to use. "xyz:bar" will load `/structures/xyz/bar.mcstructure` from the behavior pack stack.
@@ -141,7 +141,7 @@ Sets the name of the structure for a test to use. "xyz:bar" will load `/structur
 
 ### **tag**
 `
-tag(tag:string): RegistrationBuilder
+tag(tag: string): RegistrationBuilder
 `
 
 Adds a tag to a test. You can run all tests with a given tag with `/gametest runset <tag>`.

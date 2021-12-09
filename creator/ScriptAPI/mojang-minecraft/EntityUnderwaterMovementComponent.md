@@ -82,7 +82,7 @@ Resets the movement speed underwater to the minimum value as defined by the comp
 
 ### **setCurrent**
 `
-setCurrent(value:number): void
+setCurrent(value: number): void
 `
 
 Sets the current value of movement speed underwater for the entity.

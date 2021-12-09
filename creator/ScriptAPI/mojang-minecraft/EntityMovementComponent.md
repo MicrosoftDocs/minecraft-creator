@@ -82,7 +82,7 @@ Resets the default movement speed to the minimum value.
 
 ### **setCurrent**
 `
-setCurrent(value:number): void
+setCurrent(value: number): void
 `
 
 Sets the current value of default movement speed for the entity.

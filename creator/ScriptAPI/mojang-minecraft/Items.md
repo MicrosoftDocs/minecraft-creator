@@ -18,7 +18,7 @@ Represents a collection of all of the available item types in Minecraft.
   
 ### **get**
 `
-get(itemId:string): ItemType
+get(itemId: string): ItemType
 `
 
 Returns an item type given an item type identifier.

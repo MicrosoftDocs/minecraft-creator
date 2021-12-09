@@ -110,7 +110,7 @@ Type: *number*
   
 ### **setAirSupply**
 `
-setAirSupply(value:number): void
+setAirSupply(value: number): void
 `
 
 Sets the current air supply of the entity.

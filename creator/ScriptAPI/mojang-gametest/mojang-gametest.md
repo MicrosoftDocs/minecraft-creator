@@ -26,7 +26,7 @@ description: Contents of the mojang-gametest module
 ## Functions
 ### **register**
 `
-register(testClassName:string, testName:string, testFunction:(arg: Test) => undefined): RegistrationBuilder
+register(testClassName: string, testName: string, testFunction: (arg: Test) => undefined): RegistrationBuilder
 `
 
 Registers a new GameTest function. This GameTest will become available in Minecraft via /gametest run [testClassName]:[testName].

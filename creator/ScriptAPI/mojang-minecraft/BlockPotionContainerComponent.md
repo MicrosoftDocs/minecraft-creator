@@ -35,7 +35,7 @@ Type: [*BlockLocation*](BlockLocation.md)
   
 ### **setPotionType**
 `
-setPotionType(item:ItemStack): void
+setPotionType(item: ItemStack): void
 `
 
 Sets the potion type based on an item stack.

@@ -19,7 +19,7 @@ Manages callbacks that are connected to an event that fires before a piston is a
   
 ### **subscribe**
 `
-subscribe(callback:(arg: BeforePistonActivateEvent) => undefined): (arg: BeforePistonActivateEvent) => undefined
+subscribe(callback: (arg: BeforePistonActivateEvent) => undefined): (arg: BeforePistonActivateEvent) => undefined
 `
 
 Adds a callback that will be called before a piston expands or retracts.
@@ -31,7 +31,7 @@ Adds a callback that will be called before a piston expands or retracts.
 
 ### **unsubscribe**
 `
-unsubscribe(callback:(arg: BeforePistonActivateEvent) => undefined): void
+unsubscribe(callback: (arg: BeforePistonActivateEvent) => undefined): void
 `
 
 Removes a callback from being called before a piston expands or retracts.

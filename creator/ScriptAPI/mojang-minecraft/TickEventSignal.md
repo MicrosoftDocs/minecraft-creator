@@ -19,7 +19,7 @@ Manages callbacks that are connected to a tick event.
   
 ### **subscribe**
 `
-subscribe(callback:(arg: TickEvent) => undefined): (arg: TickEvent) => undefined
+subscribe(callback: (arg: TickEvent) => undefined): (arg: TickEvent) => undefined
 `
 
 Adds a callback that will be called on every tick.
@@ -31,7 +31,7 @@ Adds a callback that will be called on every tick.
 
 ### **unsubscribe**
 `
-unsubscribe(callback:(arg: TickEvent) => undefined): void
+unsubscribe(callback: (arg: TickEvent) => undefined): void
 `
 
 Removes a callback from being called every tick.

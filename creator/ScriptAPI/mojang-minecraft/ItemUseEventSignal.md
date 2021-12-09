@@ -19,7 +19,7 @@ Manages callbacks that are connected to an item use event.
   
 ### **subscribe**
 `
-subscribe(callback:(arg: ItemUseEvent) => undefined): (arg: ItemUseEvent) => undefined
+subscribe(callback: (arg: ItemUseEvent) => undefined): (arg: ItemUseEvent) => undefined
 `
 
 Adds a callback that will be called when an item is used.
@@ -31,7 +31,7 @@ Adds a callback that will be called when an item is used.
 
 ### **unsubscribe**
 `
-unsubscribe(callback:(arg: ItemUseEvent) => undefined): void
+unsubscribe(callback: (arg: ItemUseEvent) => undefined): void
 `
 
 Removes a callback from being called when an item is used.

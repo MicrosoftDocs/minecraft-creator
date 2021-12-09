@@ -18,24 +18,24 @@ highlightedContent:
 # itemType:  architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     #card used to define plugin
-    - title: Getting Started with Minecraft Entity Wizard
-      itemType: whats-new
-      url: Documents/MinecraftEntityWizard.md
-    #card
-    - title: "Experimental Features in Minecraft: Bedrock Edition"
-      itemType: whats-new
-      url: Documents/ExperimentalFeaturesToggle.md
-    #card
     - title: World Height Changes in Caves and Cliffs Part 2
-      itemType: whats-new
+      itemType: overview
       url: Documents/WorldHeightChange.md
     #card
     - title: "Installing Add-Ons in Minecraft: Bedrock Edition"
-      itemType: whats-new
+      itemType: deploy
       url: Documents/AddonPackInstallation.md
     #card
+    - title: "Introduction to Functions"
+      itemType: whats-new
+      url: Documents/FunctionsIntroduction.md
+    #card
+    - title: "Experimental Features in Minecraft: Bedrock Edition"
+      itemType: architecture
+      url: Documents/ExperimentalFeaturesToggle.md
+    #card
     - title: GameTest Reference Documentation
-      itemType: learn
+      itemType: reference
       url: ScriptAPI/index.yml
     #card
     - title: Differences Between Minecraft Bedrock Edition and Minecraft Java Edition

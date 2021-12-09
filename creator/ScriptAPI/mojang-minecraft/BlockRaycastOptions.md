@@ -16,7 +16,7 @@ Contains additional options for configuring a block raycast query.
 ### **includeLiquidBlocks**
 `includeLiquidBlocks: boolean;`
 
-If true, passable blocks like vines and flowers will be considered as blocks that 'stop' the raycast.
+If true, liquid blocks will be considered as blocks that 'stop' the raycast.
 
 Type: *boolean*
 
@@ -24,7 +24,7 @@ Type: *boolean*
 ### **includePassableBlocks**
 `includePassableBlocks: boolean;`
 
-If true, liquid blocks will be considered as blocks that 'stop' the raycast.
+If true, passable blocks like vines and flowers will be considered as blocks that 'stop' the raycast.
 
 Type: *boolean*
 

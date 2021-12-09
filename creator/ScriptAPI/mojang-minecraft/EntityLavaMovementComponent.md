@@ -82,7 +82,7 @@ Resets the movement speed on lava speed to the minimum value.
 
 ### **setCurrent**
 `
-setCurrent(value:number): void
+setCurrent(value: number): void
 `
 
 Sets the current value of movement speed on lava for the entity.

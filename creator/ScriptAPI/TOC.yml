@@ -46,8 +46,16 @@
         href: mojang-minecraft/BeforePistonActivateEventSignal.md
       - name: Block
         href: mojang-minecraft/Block.md
+      - name: BlockAreaSize
+        href: mojang-minecraft/BlockAreaSize.md
+      - name: BlockBreakEvent
+        href: mojang-minecraft/BlockBreakEvent.md
+      - name: BlockBreakEventSignal
+        href: mojang-minecraft/BlockBreakEventSignal.md
       - name: BlockComponent
         href: mojang-minecraft/BlockComponent.md
+      - name: BlockEvent
+        href: mojang-minecraft/BlockEvent.md
       - name: BlockExplodeEvent
         href: mojang-minecraft/BlockExplodeEvent.md
       - name: BlockExplodeEventSignal
@@ -64,6 +72,10 @@
         href: mojang-minecraft/BlockPermutation.md
       - name: BlockPistonComponent
         href: mojang-minecraft/BlockPistonComponent.md
+      - name: BlockPlaceEvent
+        href: mojang-minecraft/BlockPlaceEvent.md
+      - name: BlockPlaceEventSignal
+        href: mojang-minecraft/BlockPlaceEventSignal.md
       - name: BlockPotionContainerComponent
         href: mojang-minecraft/BlockPotionContainerComponent.md
       - name: BlockProperties
@@ -114,6 +126,8 @@
         href: mojang-minecraft/EntityCreateEventSignal.md
       - name: EntityDefinitionFeedItem
         href: mojang-minecraft/EntityDefinitionFeedItem.md
+      - name: EntityEventOptions
+        href: mojang-minecraft/EntityEventOptions.md
       - name: EntityFlyingSpeedComponent
         href: mojang-minecraft/EntityFlyingSpeedComponent.md
       - name: EntityHealableComponent
@@ -122,6 +136,8 @@
         href: mojang-minecraft/EntityHealthComponent.md
       - name: EntityInventoryComponent
         href: mojang-minecraft/EntityInventoryComponent.md
+      - name: EntityIterator
+        href: mojang-minecraft/EntityIterator.md
       - name: EntityLavaMovementComponent
         href: mojang-minecraft/EntityLavaMovementComponent.md
       - name: EntityLeashableComponent
@@ -160,6 +176,10 @@
         href: mojang-minecraft/EntityNavigationHoverComponent.md
       - name: EntityNavigationWalkComponent
         href: mojang-minecraft/EntityNavigationWalkComponent.md
+      - name: EntityQueryOptions
+        href: mojang-minecraft/EntityQueryOptions.md
+      - name: EntityQueryScoreOptions
+        href: mojang-minecraft/EntityQueryScoreOptions.md
       - name: EntityRaycastOptions
         href: mojang-minecraft/EntityRaycastOptions.md
       - name: EntityRideableComponent
@@ -192,6 +212,8 @@
         href: mojang-minecraft/IntBlockProperty.md
       - name: InventoryComponentContainer
         href: mojang-minecraft/InventoryComponentContainer.md
+      - name: ItemCooldownComponent
+        href: mojang-minecraft/ItemCooldownComponent.md
       - name: ItemDefinitionEventSignal
         href: mojang-minecraft/ItemDefinitionEventSignal.md
       - name: ItemDefinitionTriggeredEvent
