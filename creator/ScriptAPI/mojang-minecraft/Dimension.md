@@ -17,15 +17,17 @@ A class that represents a particular dimension (e.g., The End) within a world.
 - [createExplosion](#createexplosion)
 - [getBlock](#getblock)
 - [getBlockFromRay](#getblockfromray)
+- [getEntities](#getentities)
 - [getEntitiesAtBlockLocation](#getentitiesatblocklocation)
 - [getEntitiesFromRay](#getentitiesfromray)
+- [getPlayers](#getplayers)
 - [isEmpty](#isempty)
 - [runCommand](#runcommand)
 - [spawnEntity](#spawnentity)
   
 ### **createExplosion**
 `
-createExplosion(location:Location, radius:number, explosionOptions:ExplosionOptions): void
+createExplosion(location: Location, radius: number, explosionOptions: ExplosionOptions): void
 `
 
 Creates an explosion at the specified location.
@@ -46,7 +48,7 @@ Creates an explosion at the specified location.
 
 ### **getBlock**
 `
-getBlock(location:BlockLocation): Block
+getBlock(location: BlockLocation): Block
 `
 
 Returns a block instance at the given location. This method was introduced as of version 1.17.10.21.
@@ -60,14 +62,14 @@ Returns a block instance at the given location. This method was introduced as of
 
 ### **getBlockFromRay**
 `
-getBlockFromRay(location:Location, direction:Location, options:optional): Block
+getBlockFromRay(location: Location, direction: Location, options?: BlockRaycastOptions): Block
 `
 
 Gets the first block that intersects with a vector emanating from a location.
 #### **Parameters**
 - **location**: [*Location*](Location.md)
 - **direction**: [*Location*](Location.md)
-- **options**: *optional*
+- **options**?: [*BlockRaycastOptions*](BlockRaycastOptions.md) = `null`
   
   Additional options for processing this raycast query.
 
@@ -76,9 +78,23 @@ Gets the first block that intersects with a vector emanating from a location.
 > [!WARNING]
 > This function can throw errors.
 
+### **getEntities**
+`
+getEntities(getEntities?: EntityQueryOptions): EntityIterator
+`
+
+Returns a set of entities based on a set of conditions defined via the EntityQueryOptions set of filter criteria.
+#### **Parameters**
+- **getEntities**?: [*EntityQueryOptions*](EntityQueryOptions.md) = `null`
+
+#### **Returns** [*EntityIterator*](EntityIterator.md) - An entity iterator that can be used to loop over the returned entities.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **getEntitiesAtBlockLocation**
 `
-getEntitiesAtBlockLocation(location:BlockLocation): Entity[]
+getEntitiesAtBlockLocation(location: BlockLocation): Entity[]
 `
 
 Returns a set of entities at a particular location.
@@ -92,14 +108,14 @@ Returns a set of entities at a particular location.
 
 ### **getEntitiesFromRay**
 `
-getEntitiesFromRay(location:Location, direction:Location, options:optional): Entity[]
+getEntitiesFromRay(location: Location, direction: Location, options?: EntityRaycastOptions): Entity[]
 `
 
 Gets entities that intersect with a specified vector emanating from a location.
 #### **Parameters**
 - **location**: [*Location*](Location.md)
 - **direction**: [*Location*](Location.md)
-- **options**: *optional*
+- **options**?: [*EntityRaycastOptions*](EntityRaycastOptions.md) = `null`
   
   Additional options for processing this raycast query.
 
@@ -108,9 +124,23 @@ Gets entities that intersect with a specified vector emanating from a location.
 > [!WARNING]
 > This function can throw errors.
 
+### **getPlayers**
+`
+getPlayers(getPlayers?: EntityQueryOptions): EntityIterator
+`
+
+Returns a set of players based on a set of conditions defined via the EntityQueryOptions set of filter criteria.
+#### **Parameters**
+- **getPlayers**?: [*EntityQueryOptions*](EntityQueryOptions.md) = `null`
+
+#### **Returns** [*EntityIterator*](EntityIterator.md) - An entity iterator that can be used to loop over the returned players.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **isEmpty**
 `
-isEmpty(location:BlockLocation): boolean
+isEmpty(location: BlockLocation): boolean
 `
 
 Tests whether a particular location contains an Air (empty) block.
@@ -124,7 +154,7 @@ Tests whether a particular location contains an Air (empty) block.
 
 ### **runCommand**
 `
-runCommand(commandString:string): any
+runCommand(commandString: string): any
 `
 
 Runs a particular command from the context of this entity.
@@ -146,7 +176,7 @@ world.getDimension("overworld").runCommand("scoreboard players set @p score 10")
 ```
 ### **spawnEntity**
 `
-spawnEntity(identifier:string, location:BlockLocation): Entity
+spawnEntity(identifier: string, location: BlockLocation): Entity
 `
 
 Creates a new entity (e.g., a mob) at the specified location. This method was introduced as of version 1.17.10.21.

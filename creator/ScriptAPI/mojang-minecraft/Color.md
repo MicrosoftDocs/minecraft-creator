@@ -51,7 +51,7 @@ Type: *number*
   
 ### **constructor**
 `
-new Color(red:number, green:number, blue:number, alpha:number)
+new Color(red: number, green: number, blue: number, alpha: number)
 `
 
 Creates a new color using the specified color values.

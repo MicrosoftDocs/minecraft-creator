@@ -19,7 +19,7 @@ Manages callbacks that are connected to a player joining the world.
   
 ### **subscribe**
 `
-subscribe(callback:(arg: PlayerJoinEvent) => undefined): (arg: PlayerJoinEvent) => undefined
+subscribe(callback: (arg: PlayerJoinEvent) => undefined): (arg: PlayerJoinEvent) => undefined
 `
 
 Adds a callback that will be called when a player joins the world.
@@ -31,7 +31,7 @@ Adds a callback that will be called when a player joins the world.
 
 ### **unsubscribe**
 `
-unsubscribe(callback:(arg: PlayerJoinEvent) => undefined): void
+unsubscribe(callback: (arg: PlayerJoinEvent) => undefined): void
 `
 
 Removes a callback from being called when a player joins the world.

@@ -47,7 +47,7 @@ Type: *number*
   
 ### **constructor**
 `
-new BlockLocation(x:number, y:number, z:number)
+new BlockLocation(x: number, y: number, z: number)
 `
 
 Creates a new instance of an abstract block location.
@@ -77,7 +77,7 @@ Returns a BlockLocation for a block above this BlockLocation (that is, y - 1).
 
 ### **blocksBetween**
 `
-blocksBetween(other:BlockLocation): BlockLocation[]
+blocksBetween(other: BlockLocation): BlockLocation[]
 `
 
 Returns an array of block locations representing all blocks in the volume (cuboid) between this location and another location.
@@ -91,7 +91,7 @@ Returns an array of block locations representing all blocks in the volume (cuboi
 
 ### **equals**
 `
-equals(other:BlockLocation): boolean
+equals(other: BlockLocation): boolean
 `
 
 Compares this BlockLocation and another BlockLocation to one another.
@@ -105,7 +105,7 @@ Compares this BlockLocation and another BlockLocation to one another.
 
 ### **offset**
 `
-offset(x:number, y:number, z:number): BlockLocation
+offset(x: number, y: number, z: number): BlockLocation
 `
 
 Returns a block location using a position relative to this block location

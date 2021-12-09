@@ -19,7 +19,7 @@ Manages callbacks that are connected to when an explosion occurs, as it impacts 
   
 ### **subscribe**
 `
-subscribe(callback:(arg: BlockExplodeEvent) => undefined): (arg: BlockExplodeEvent) => undefined
+subscribe(callback: (arg: BlockExplodeEvent) => undefined): (arg: BlockExplodeEvent) => undefined
 `
 
 Adds a callback that will be called when an explosion occurs, as it impacts individual blocks.
@@ -31,7 +31,7 @@ Adds a callback that will be called when an explosion occurs, as it impacts indi
 
 ### **unsubscribe**
 `
-unsubscribe(callback:(arg: BlockExplodeEvent) => undefined): void
+unsubscribe(callback: (arg: BlockExplodeEvent) => undefined): void
 `
 
 Removes a callback from being called when an explosion occurs, as it impacts individual blocks.

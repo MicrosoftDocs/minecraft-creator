@@ -28,7 +28,7 @@ Type: [*Events*](Events.md)
   
 ### **getDimension**
 `
-getDimension(dimensionName:('overworld'|'nether'|'the end')): Dimension
+getDimension(dimensionName: ('overworld'|'nether'|'the end')): Dimension
 `
 
 #### **Parameters**
@@ -43,12 +43,16 @@ getDimension(dimensionName:('overworld'|'nether'|'the end')): Dimension
 
 ### **getPlayers**
 `
-getPlayers(): Player[]
+getPlayers(options?: EntityQueryOptions): EntityIterator
 `
 
 Returns all players currently in the world.
+#### **Parameters**
+- **options**?: [*EntityQueryOptions*](EntityQueryOptions.md) = `null`
 
-#### **Returns** [*Player*](Player.md)[] - All players currently in the world.
+#### **Returns** [*EntityIterator*](EntityIterator.md) - All players currently in the world.
 
+> [!WARNING]
+> This function can throw errors.
 
 

@@ -12,18 +12,14 @@ description: Contents of the mojang-minecraft.ItemType class.
 
 Represents the type of an item - for example, Wool.
 
+## Properties
+### **id**
+`read-only id: string;`
 
-## Methods
-- [getName](#getname)
-  
-### **getName**
-`
-getName(): string
-`
+Returns the identifier of the item type - for example, 'minecraft:apple'.
 
-Returns the identifier of the item type - for example, 'apple'.
+Type: *string*
 
-#### **Returns** *string* - Identifier of the item type.
 
 
 

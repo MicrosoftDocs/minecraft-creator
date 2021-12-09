@@ -43,7 +43,7 @@ Type: [*BlockLocation*](BlockLocation.md)
   
 ### **addDye**
 `
-addDye(itemType:ItemType): void
+addDye(itemType: ItemType): void
 `
 
 Adds an item and colors the water based on a dye item type.

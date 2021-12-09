@@ -30,7 +30,7 @@ Type: *string*
   
 ### **setTamed**
 `
-setTamed(showParticles:boolean): void
+setTamed(showParticles: boolean): void
 `
 
 Sets this rideable entity as tamed.

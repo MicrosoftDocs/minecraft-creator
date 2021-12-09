@@ -50,7 +50,7 @@ getAllProperties(): any[]
 
 ### **getProperty**
 `
-getProperty(propertyName:string): any
+getProperty(propertyName: string): any
 `
 
 Gets a property for the permutation.
@@ -87,7 +87,7 @@ Creates a copy of the permutation.
 
 ### **hasTag**
 `
-hasTag(tag:string): boolean
+hasTag(tag: string): boolean
 `
 
 Checks to see if the permutation has a specific tag.

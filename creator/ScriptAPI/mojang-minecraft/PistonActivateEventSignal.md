@@ -19,7 +19,7 @@ Manages callbacks that are connected to piston activations.
   
 ### **subscribe**
 `
-subscribe(callback:(arg: PistonActivateEvent) => undefined): (arg: PistonActivateEvent) => undefined
+subscribe(callback: (arg: PistonActivateEvent) => undefined): (arg: PistonActivateEvent) => undefined
 `
 
 Adds a callback that will be called when a piston expands or retracts.
@@ -31,7 +31,7 @@ Adds a callback that will be called when a piston expands or retracts.
 
 ### **unsubscribe**
 `
-unsubscribe(callback:(arg: PistonActivateEvent) => undefined): void
+unsubscribe(callback: (arg: PistonActivateEvent) => undefined): void
 `
 
 Removes a callback from being called when a piston expands or retracts.

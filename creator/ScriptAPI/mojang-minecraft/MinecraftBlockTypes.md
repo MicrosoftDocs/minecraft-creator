@@ -19,7 +19,7 @@ Contains definitions of standard Minecraft and Minecraft Education Edition block
   
 ### **get**
 `
-get(typeName:string): BlockType
+get(typeName: string): BlockType
 `
 
 #### **Parameters**
