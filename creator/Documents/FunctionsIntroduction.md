@@ -50,12 +50,12 @@ Function files have a .mcfunction extension and they live in the **functions** f
 1. Save the file.
 
 >[!IMPORTANT]
-> When working with commands in an .mcfunction file, you do not need to start commands with `/`.
+> When working with commands in a .mcfunction file, you do not need to start commands with `/`.
 
 ## Testing the function
 
 1. Launch Minecraft.
-2. Open w world with cheats enabled and the bahavior -pack you created applied to it.
+2. Open a world with cheats enabled and the behavior pack you created applied to it.
 3. Enter `/function ouch`.
 
 ## Advanced function feature
