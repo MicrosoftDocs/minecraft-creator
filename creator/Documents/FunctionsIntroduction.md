@@ -67,7 +67,7 @@ For example, if you have another folder inside your functions folder called **in
 
 ## What's Next?
 
-Now that you have an overview of how a function file works, you can learn how to utilize the in-game tick function and tick.json files in order to fire off custom functions on repeat.
+Now that you have an overview of how a function file works, you can learn how to utilize the in-game tick function and a tick.json file in order to fire off custom functions on repeat.
 
 >[!div class="nextstepaction"]
 >[Tick.json Introduction](TickJsonIntroduction.md)
