@@ -8,7 +8,7 @@ description: "A tutorial that introduces a Creator on how to use tick.json to re
 
 # Introduction to tick.json
 
-While command blocks are great for running a series of commands based on in-game events, Minecraft: Bedrock Edition offers the ability to use the in-game tick function to repeatedly run a series of commands or function files by using a file called **tick.json**. Tick.json is stored in the **functions** folder of a behavior pack next to the files containing the functions you want to run.
+While command blocks are great for running a series of commands based on in-game events, Minecraft: Bedrock Edition offers the ability to use the in-game tick function to repeatedly run a series of functions by using a file called **tick.json**. Tick.json is stored in the **functions** folder of a behavior pack next to the files containing the functions you want to run.
 
 >[!Note]
 >Tick.json uses the gameplay tick which is 20 ticks per second, as opposed to the redstone tick which is 10 ticks per second. In other words, the functions you set up to run in tick.json will be executed 20 times every second of gameplay.
