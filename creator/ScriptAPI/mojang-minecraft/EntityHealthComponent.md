@@ -82,7 +82,7 @@ Resets the current health to the minimum value.
 
 ### **setCurrent**
 `
-setCurrent(value:number): void
+setCurrent(value: number): void
 `
 
 Sets the current health of the entity.

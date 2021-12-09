@@ -19,7 +19,7 @@ Manages callbacks that are connected to weather changing.
   
 ### **subscribe**
 `
-subscribe(callback:(arg: WeatherChangeEvent) => undefined): (arg: WeatherChangeEvent) => undefined
+subscribe(callback: (arg: WeatherChangeEvent) => undefined): (arg: WeatherChangeEvent) => undefined
 `
 
 Adds a callback that will be called when weather changes.
@@ -31,7 +31,7 @@ Adds a callback that will be called when weather changes.
 
 ### **unsubscribe**
 `
-unsubscribe(callback:(arg: WeatherChangeEvent) => undefined): void
+unsubscribe(callback: (arg: WeatherChangeEvent) => undefined): void
 `
 
 Removes a callback from being called when weather changes.

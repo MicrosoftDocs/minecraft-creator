@@ -67,6 +67,14 @@ Optional name tag of the player.
 Type: *string*
 
 
+### **selectedSlot**
+`selectedSlot: number;`
+
+Manages the selected slot in the player's hotbar.
+
+Type: *number*
+
+
 ### **target**
 `target: Entity;`
 
@@ -92,17 +100,19 @@ Type: [*Location*](Location.md)
 - [getComponents](#getcomponents)
 - [getEffect](#geteffect)
 - [getEntitiesFromViewVector](#getentitiesfromviewvector)
+- [getItemCooldown](#getitemcooldown)
 - [getTags](#gettags)
 - [hasComponent](#hascomponent)
 - [hasTag](#hastag)
 - [kill](#kill)
 - [removeTag](#removetag)
 - [runCommand](#runcommand)
+- [startItemCooldown](#startitemcooldown)
 - [triggerEvent](#triggerevent)
   
 ### **addEffect**
 `
-addEffect(effectType:EffectType, duration:number, amplifier:number): void
+addEffect(effectType: EffectType, duration: number, amplifier: number): void
 `
 
 Adds an effect, like poison, to the entity.
@@ -123,7 +133,7 @@ Adds an effect, like poison, to the entity.
 
 ### **addTag**
 `
-addTag(tag:string): boolean
+addTag(tag: string): boolean
 `
 
 Adds a specified tag to an entity.
@@ -139,12 +149,12 @@ Adds a specified tag to an entity.
 
 ### **getBlockFromViewVector**
 `
-getBlockFromViewVector(options:optional): Block
+getBlockFromViewVector(options?: BlockRaycastOptions): Block
 `
 
 Gets the first block that intersects with the vector of the view of this entity.
 #### **Parameters**
-- **options**: *optional*
+- **options**?: [*BlockRaycastOptions*](BlockRaycastOptions.md) = `null`
   
   Additional options for processing this raycast query.
 
@@ -155,7 +165,7 @@ Gets the first block that intersects with the vector of the view of this entity.
 
 ### **getComponent**
 `
-getComponent(componentId:string): IEntityComponent
+getComponent(componentId: string): IEntityComponent
 `
 
 Gets a component (that represents additional capabilities) for an entity.
@@ -179,7 +189,7 @@ Returns all components that are both present on this entity and supported by the
 
 ### **getEffect**
 `
-getEffect(effectType:EffectType): Effect
+getEffect(effectType: EffectType): Effect
 `
 
 Returns the effect for the specified EffectType on the entity, or undefined if the effect is not present.
@@ -193,16 +203,32 @@ Returns the effect for the specified EffectType on the entity, or undefined if t
 
 ### **getEntitiesFromViewVector**
 `
-getEntitiesFromViewVector(options:optional): Entity[]
+getEntitiesFromViewVector(options?: EntityRaycastOptions): Entity[]
 `
 
 Gets the first entity that intersects with the vector of the view of this entity.
 #### **Parameters**
-- **options**: *optional*
+- **options**?: [*EntityRaycastOptions*](EntityRaycastOptions.md) = `null`
   
   Additional options for processing this raycast query.
 
 #### **Returns** [*Entity*](Entity.md)[]
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getItemCooldown**
+`
+getItemCooldown(itemCategory: string): number
+`
+
+Gets the current item cooldown time for a particular cooldown category.
+#### **Parameters**
+- **itemCategory**: *string*
+  
+  Specifies the cooldown category to retrieve the current cooldown for.
+
+#### **Returns** *number*
 
 > [!WARNING]
 > This function can throw errors.
@@ -221,7 +247,7 @@ Returns all tags associated with an entity.
 
 ### **hasComponent**
 `
-hasComponent(componentId:string): boolean
+hasComponent(componentId: string): boolean
 `
 
 Returns true if the specified component is present on this entity.
@@ -235,7 +261,7 @@ Returns true if the specified component is present on this entity.
 
 ### **hasTag**
 `
-hasTag(tag:string): boolean
+hasTag(tag: string): boolean
 `
 
 Tests whether an entity has a particular tag.
@@ -262,7 +288,7 @@ Kills this entity. The entity will drop loot as normal.
 
 ### **removeTag**
 `
-removeTag(tag:string): boolean
+removeTag(tag: string): boolean
 `
 
 Removes a specified tag from an entity.
@@ -278,7 +304,7 @@ Removes a specified tag from an entity.
 
 ### **runCommand**
 `
-runCommand(commandString:string): any
+runCommand(commandString: string): any
 `
 
 Runs a particular command from the context of this player.
@@ -298,9 +324,27 @@ Runs a particular command from the context of this player.
 player.runCommand("say You got a new high score!");
 player.runCommand("scoreboard players set @s score 10");
 ```
+### **startItemCooldown**
+`
+startItemCooldown(itemCategory: string, tickDuration: number): void
+`
+
+Sets the item cooldown time for a particular cooldown category.
+#### **Parameters**
+- **itemCategory**: *string*
+  
+  Specifies the cooldown category to retrieve the current cooldown for.
+- **tickDuration**: *number*
+  
+  Duration in ticks of the item cooldown.
+
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **triggerEvent**
 `
-triggerEvent(eventName:string): void
+triggerEvent(eventName: string): void
 `
 
 Triggers an entity type event. For every entity, a number of events are defined in an entities' definition for key entity behaviors; for example, creepers have a minecraft:start_exploding type event.

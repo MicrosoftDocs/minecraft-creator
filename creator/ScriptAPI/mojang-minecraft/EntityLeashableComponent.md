@@ -39,7 +39,7 @@ Type: *number*
   
 ### **leash**
 `
-leash(leashHolder:Entity): void
+leash(leashHolder: Entity): void
 `
 
 Leashes this entity to another entity.

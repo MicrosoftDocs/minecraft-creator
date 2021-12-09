@@ -25,7 +25,7 @@ Executes a set of steps defined via chained .thenXyz methods, sequentially. This
   
 ### **thenExecute**
 `
-thenExecute(callback:() => undefined): GameTestSequence
+thenExecute(callback: () => undefined): GameTestSequence
 `
 
 Runs the given callback as a step within a GameTest sequence. Exceptions thrown within the callback will end sequence execution.
@@ -39,7 +39,7 @@ Runs the given callback as a step within a GameTest sequence. Exceptions thrown 
 
 ### **thenExecuteAfter**
 `
-thenExecuteAfter(delayTicks:number, callback:() => undefined): GameTestSequence
+thenExecuteAfter(delayTicks: number, callback: () => undefined): GameTestSequence
 `
 
 After a delay, runs the given callback as a step within a GameTest sequence. Exceptions thrown within the callback will end sequence execution.
@@ -56,7 +56,7 @@ After a delay, runs the given callback as a step within a GameTest sequence. Exc
 
 ### **thenExecuteFor**
 `
-thenExecuteFor(tickCount:number, callback:() => undefined): GameTestSequence
+thenExecuteFor(tickCount: number, callback: () => undefined): GameTestSequence
 `
 
 Runs the given callback every tick for the given number of ticks.
@@ -71,7 +71,7 @@ Runs the given callback every tick for the given number of ticks.
 
 ### **thenFail**
 `
-thenFail(errorMessage:string): void
+thenFail(errorMessage: string): void
 `
 
 Causes the test to fail if this step in the GameTest sequence is reached.
@@ -84,7 +84,7 @@ Causes the test to fail if this step in the GameTest sequence is reached.
 
 ### **thenIdle**
 `
-thenIdle(delayTicks:number): GameTestSequence
+thenIdle(delayTicks: number): GameTestSequence
 `
 
 Idles the GameTest sequence for the specified delayTicks.
@@ -107,7 +107,7 @@ Marks the GameTest a success if this step is reached in the GameTest sequence.
 
 ### **thenWait**
 `
-thenWait(callback:() => undefined): GameTestSequence
+thenWait(callback: () => undefined): GameTestSequence
 `
 
 Executes the given callback every tick until it succeeds. Exceptions thrown within the callback will end sequence execution.
@@ -121,7 +121,7 @@ Executes the given callback every tick until it succeeds. Exceptions thrown with
 
 ### **thenWaitAfter**
 `
-thenWaitAfter(delayTicks:number, callback:() => undefined): GameTestSequence
+thenWaitAfter(delayTicks: number, callback: () => undefined): GameTestSequence
 `
 
 After a delay from the previous step, executes the given callback every tick until it succeeds. Exceptions thrown within the callback will end sequence execution.

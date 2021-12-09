@@ -103,7 +103,7 @@ Type: *number*
   
 ### **getComponent**
 `
-getComponent(componentName:string): any
+getComponent(componentName: string): any
 `
 
 Gets additional configuration properties (a component) for specific capabilities of particular blocks - for example, an inventory component of a chest block.
@@ -128,7 +128,7 @@ getTags(): string[]
 
 ### **hasTag**
 `
-hasTag(tag:string): boolean
+hasTag(tag: string): boolean
 `
 
 Checks to see if the permutation of this block has a specific tag.
@@ -152,7 +152,7 @@ console.log(`Block is stone: ${block.hasTag("stone")}`);
 ```
 ### **setPermutation**
 `
-setPermutation(permutation:BlockPermutation): void
+setPermutation(permutation: BlockPermutation): void
 `
 
 Sets the block in the dimension to the state of the permutation.
@@ -178,7 +178,7 @@ block.setPermutation(bottomStoneSlab);
 ```
 ### **setType**
 `
-setType(blockType:BlockType): void
+setType(blockType: BlockType): void
 `
 
 Sets the type of block.

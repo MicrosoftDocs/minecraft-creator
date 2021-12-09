@@ -51,12 +51,12 @@ Type: *number*
   
 ### **getDamageChance**
 `
-getDamageChance(unbreaking:number): number
+getDamageChance(unbreaking?: number): number
 `
 
 Returns the maximum chance that this item would be damaged using the damageRange property, given an unbreaking level.
 #### **Parameters**
-- **unbreaking**: *number* = `0`
+- **unbreaking**?: *number* = `0`
   
   Unbreaking factor to consider in factoring the damage chance. Incoming unbreaking parameter must be greater than 0.
 

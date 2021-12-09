@@ -45,7 +45,7 @@ Type: *number*
   
 ### **constructor**
 `
-new Location(x:number, y:number, z:number)
+new Location(x: number, y: number, z: number)
 `
 
 Creates a new instance of an abstract location.
@@ -65,7 +65,7 @@ Creates a new instance of an abstract location.
 
 ### **equals**
 `
-equals(other:Location): boolean
+equals(other: Location): boolean
 `
 
 Compares this Location and another Location to one another.
@@ -79,7 +79,7 @@ Compares this Location and another Location to one another.
 
 ### **isNear**
 `
-isNear(other:Location, epsilon:number): boolean
+isNear(other: Location, epsilon: number): boolean
 `
 
 Determines whether or not two Locations are considered to be near each other.

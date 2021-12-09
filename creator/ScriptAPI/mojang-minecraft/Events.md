@@ -61,12 +61,28 @@ Fires before a piston is activated.
 Type: [*BeforePistonActivateEventSignal*](BeforePistonActivateEventSignal.md)
 
 
+### **blockBreak**
+`blockBreak: BlockBreakEventSignal;`
+
+This event fires for a block that is broken by a player.
+
+Type: [*BlockBreakEventSignal*](BlockBreakEventSignal.md)
+
+
 ### **blockExplode**
 `blockExplode: BlockExplodeEventSignal;`
 
 This event fires for each BlockLocation destroyed by an explosion. It is fired after the blocks have already been destroyed.
 
 Type: [*BlockExplodeEventSignal*](BlockExplodeEventSignal.md)
+
+
+### **blockPlace**
+`blockPlace: BlockPlaceEventSignal;`
+
+This event fires for a block that is placed by a player.
+
+Type: [*BlockPlaceEventSignal*](BlockPlaceEventSignal.md)
 
 
 ### **chat**

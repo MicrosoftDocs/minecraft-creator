@@ -45,7 +45,7 @@ Type: *number*
   
 ### **addItem**
 `
-addItem(itemStack:ItemStack): void
+addItem(itemStack: ItemStack): void
 `
 
 Adds an item to the specified container. Items will be placed in the first available empty slot. (Use [*mojang-minecraft.InventoryComponentContainer.setItem*](../mojang-minecraft/InventoryComponentContainer.md#setitem) if you wish to set items in a particular slot.)
@@ -60,7 +60,7 @@ Adds an item to the specified container. Items will be placed in the first avail
 
 ### **getItem**
 `
-getItem(slot:number): ItemStack
+getItem(slot: number): ItemStack
 `
 
 Gets the item stack for the set of items at the specified slot. If the slot is empty, returns undefined. This method does not change or clear the contents of the specified slot.
@@ -83,7 +83,7 @@ test.assert(itemStack.amount === 10, "Expected 10 apples");
 ```
 ### **setItem**
 `
-setItem(slot:number, itemStack:ItemStack): void
+setItem(slot: number, itemStack: ItemStack): void
 `
 
 Sets an item stack within a particular slot.
@@ -101,7 +101,7 @@ Sets an item stack within a particular slot.
 
 ### **swapItems**
 `
-swapItems(slot:number, otherSlot:number, otherContainer:Container): boolean
+swapItems(slot: number, otherSlot: number, otherContainer: Container): boolean
 `
 
 Swaps items between two different slots within containers.
@@ -128,7 +128,7 @@ rightChestContainer.swapItems(1, 0, leftChestContainer); // swap the cake and em
 ```
 ### **transferItem**
 `
-transferItem(fromSlot:number, toSlot:number, toContainer:Container): boolean
+transferItem(fromSlot: number, toSlot: number, toContainer: Container): boolean
 `
 
 Moves an item from one slot to another, potentially across containers.

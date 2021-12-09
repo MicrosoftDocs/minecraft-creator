@@ -47,7 +47,7 @@ Type: *string*
   
 ### **constructor**
 `
-new ItemStack(itemType:ItemType, amount:number, data:number)
+new ItemStack(itemType: ItemType, amount?: number, data?: number)
 `
 
 Creates a new instance of a stack of items for use in the world.
@@ -55,10 +55,10 @@ Creates a new instance of a stack of items for use in the world.
 - **itemType**: [*ItemType*](ItemType.md)
   
   Type of item to create. See the [*mojang-minecraft.MinecraftItemTypes*](../mojang-minecraft/MinecraftItemTypes.md) enumeration for a list of standard item types in Minecraft experiences.
-- **amount**: *number* = `1`
+- **amount**?: *number* = `1`
   
   Number of items to place in the stack, between 1 and 64. Note that certain items can only have one item in the stack.
-- **data**: *number* = `0`
+- **data**?: *number* = `0`
   
   Optional data value used for creating the item, or 0 if no data value is specified.
 
@@ -67,7 +67,7 @@ Creates a new instance of a stack of items for use in the world.
 
 ### **getComponent**
 `
-getComponent(componentId:string): any
+getComponent(componentId: string): any
 `
 
 Gets a component (that represents additional capabilities) for an item stack.
@@ -91,7 +91,7 @@ Returns all components that are both present on this item stack and supported by
 
 ### **hasComponent**
 `
-hasComponent(componentId:string): boolean
+hasComponent(componentId: string): boolean
 `
 
 Returns true if the specified component is present on this item stack.
@@ -105,7 +105,7 @@ Returns true if the specified component is present on this item stack.
 
 ### **triggerEvent**
 `
-triggerEvent(eventName:string): void
+triggerEvent(eventName: string): void
 `
 
 Triggers an item type event. For custom items, a number of events are defined in an items' definition for key item behaviors.

@@ -43,7 +43,7 @@ Returns true if the record-playing block is currently playing a record.
 
 ### **setRecord**
 `
-setRecord(recordItemType:ItemType): void
+setRecord(recordItemType: ItemType): void
 `
 
 Sets and plays a record based on an item type.

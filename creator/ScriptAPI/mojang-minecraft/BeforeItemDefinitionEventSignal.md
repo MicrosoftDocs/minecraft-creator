@@ -19,7 +19,7 @@ Manages callbacks that are connected to an item's definition and components chan
   
 ### **subscribe**
 `
-subscribe(callback:(arg: BeforeItemDefinitionTriggeredEvent) => undefined): (arg: BeforeItemDefinitionTriggeredEvent) => undefined
+subscribe(callback: (arg: BeforeItemDefinitionTriggeredEvent) => undefined): (arg: BeforeItemDefinitionTriggeredEvent) => undefined
 `
 
 Adds a callback that will be called when an item's definition and components change.
@@ -31,7 +31,7 @@ Adds a callback that will be called when an item's definition and components cha
 
 ### **unsubscribe**
 `
-unsubscribe(callback:(arg: BeforeItemDefinitionTriggeredEvent) => undefined): void
+unsubscribe(callback: (arg: BeforeItemDefinitionTriggeredEvent) => undefined): void
 `
 
 Removes a callback from being called when an item's definition and components change.

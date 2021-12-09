@@ -19,7 +19,7 @@ Manages callbacks that fire before an item being used on a block event.
   
 ### **subscribe**
 `
-subscribe(callback:(arg: BeforeItemUseOnEvent) => undefined): (arg: BeforeItemUseOnEvent) => undefined
+subscribe(callback: (arg: BeforeItemUseOnEvent) => undefined): (arg: BeforeItemUseOnEvent) => undefined
 `
 
 Adds a callback that will be called before an item is used on a block.
@@ -31,7 +31,7 @@ Adds a callback that will be called before an item is used on a block.
 
 ### **unsubscribe**
 `
-unsubscribe(callback:(arg: BeforeItemUseOnEvent) => undefined): void
+unsubscribe(callback: (arg: BeforeItemUseOnEvent) => undefined): void
 `
 
 Removes a callback from being called before an item is used on a block.

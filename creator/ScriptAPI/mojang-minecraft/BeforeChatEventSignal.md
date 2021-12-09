@@ -19,7 +19,7 @@ Manages callbacks that are connected to an event that fires before chat messages
   
 ### **subscribe**
 `
-subscribe(callback:(arg: BeforeChatEvent) => undefined): (arg: BeforeChatEvent) => undefined
+subscribe(callback: (arg: BeforeChatEvent) => undefined): (arg: BeforeChatEvent) => undefined
 `
 
 Adds a callback that will be called before new chat messages are sent.
@@ -31,7 +31,7 @@ Adds a callback that will be called before new chat messages are sent.
 
 ### **unsubscribe**
 `
-unsubscribe(callback:(arg: BeforeChatEvent) => undefined): void
+unsubscribe(callback: (arg: BeforeChatEvent) => undefined): void
 `
 
 Removes a callback from being called before new chat messages are sent.

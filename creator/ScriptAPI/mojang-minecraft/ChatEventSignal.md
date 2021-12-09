@@ -19,7 +19,7 @@ Manages callbacks that are connected to chat messages being sent.
   
 ### **subscribe**
 `
-subscribe(callback:(arg: ChatEvent) => undefined): (arg: ChatEvent) => undefined
+subscribe(callback: (arg: ChatEvent) => undefined): (arg: ChatEvent) => undefined
 `
 
 Adds a callback that will be called when new chat messages are sent.
@@ -44,7 +44,7 @@ eventData.message = `Modified '${eventData.message}'`;
 ```
 ### **unsubscribe**
 `
-unsubscribe(callback:(arg: ChatEvent) => undefined): void
+unsubscribe(callback: (arg: ChatEvent) => undefined): void
 `
 
 Removes a callback from being called when new chat messages are sent.

@@ -96,7 +96,7 @@ Type: [*Seat*](Seat.md)[]
   
 ### **addRider**
 `
-addRider(rider:Entity): boolean
+addRider(rider: Entity): boolean
 `
 
 Adds an entity to this entity as a rider.
@@ -112,7 +112,7 @@ Adds an entity to this entity as a rider.
 
 ### **ejectRider**
 `
-ejectRider(rider:Entity): void
+ejectRider(rider: Entity): void
 `
 
 Ejects the specified rider of this entity.

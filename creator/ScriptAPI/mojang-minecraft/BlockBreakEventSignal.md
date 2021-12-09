@@ -3,14 +3,14 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: mojang-minecraft.ItemUseOnEventSignal Class
-description: Contents of the mojang-minecraft.ItemUseOnEventSignal class.
+title: mojang-minecraft.BlockBreakEventSignal Class
+description: Contents of the mojang-minecraft.BlockBreakEventSignal class.
 ---
-# ItemUseOnEventSignal Class
+# BlockBreakEventSignal Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-Manages callbacks that are connected to an item being used on a block event.
+Manages callbacks that are connected to when a block is broken.
 
 
 ## Methods
@@ -19,24 +19,24 @@ Manages callbacks that are connected to an item being used on a block event.
   
 ### **subscribe**
 `
-subscribe(callback: (arg: ItemUseOnEvent) => undefined): (arg: ItemUseOnEvent) => undefined
+subscribe(callback: (arg: BlockBreakEvent) => undefined): (arg: BlockBreakEvent) => undefined
 `
 
-Adds a callback that will be called when an item is used on a block.
+Adds a callback that will be called when a block is broken by a player.
 #### **Parameters**
-- **callback**: (arg: ItemUseOnEvent) => undefined
+- **callback**: (arg: BlockBreakEvent) => undefined
 
-#### **Returns** (arg: ItemUseOnEvent) => undefined
+#### **Returns** (arg: BlockBreakEvent) => undefined
 
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ItemUseOnEvent) => undefined): void
+unsubscribe(callback: (arg: BlockBreakEvent) => undefined): void
 `
 
-Removes a callback from being called when an item is used on a block.
+Removes a callback from being called when an block is broken.
 #### **Parameters**
-- **callback**: (arg: ItemUseOnEvent) => undefined
+- **callback**: (arg: BlockBreakEvent) => undefined
 
 
 > [!WARNING]
