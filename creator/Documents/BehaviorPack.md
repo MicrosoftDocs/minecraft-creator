@@ -30,7 +30,10 @@ It’s recommended that the following be completed before beginning this tutoria
 
 A behavior pack contains files that creators (like you!) use to add, remove, or alter gameplay behavior of entities within Minecraft. An entity's behavior file is what makes each entity do certain actions, like how a chicken follows a player who's holding seeds.
 
-For Minecraft to find and use your behavior files, you have to set up the folders and files in a particular structure. This tutorial will guide you through creating that folder and file structure.
+For Minecraft to find and use your behavior files, you have to set up the folders and files in a particular structure. This tutorial will guide you through creating this folder and file structure.
+
+![image of behavior pack folder and file structure](Media/BehaviorPack/behavior_pack_folder_and_file_structure.png)
+
 
 ### Create a folder
 
