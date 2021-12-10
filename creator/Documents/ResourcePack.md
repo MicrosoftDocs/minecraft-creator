@@ -29,7 +29,9 @@ It’s recommended that the following be completed before beginning this tutoria
 
 ## Building the Resource Pack
 
-For Minecraft to find and use your resource files, you have to set up the folders and files in a particular structure. This tutorial will guide you through creating that folder and file structure.
+For Minecraft to find and use your resource files, you have to set up the folders and files in a particular structure. This tutorial will guide you through creating this folder and file structure.
+
+<insert image here>
 
 ### Create a folder
 
