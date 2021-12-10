@@ -101,7 +101,7 @@ conceptualContent:
               itemType: get-started
               text: How To Make a Complete the Monument Map
         # card
-        - title: Adding new Minecraft Entites
+        - title: Adding new Minecraft Entities
           summary: "Learn how to create and implement your own custom entities."
           links:
             - url: Documents/IntroductionToAddEntity.md
