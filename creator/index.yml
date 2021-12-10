@@ -26,7 +26,7 @@ highlightedContent:
       itemType: whats-new
       url: Documents/ExperimentalFeaturesToggle.md
     #card
-    - title: World Height Changes in Caves and Cliffs Part 2
+    - title: World Height Changes in Caves & Cliffs Part 2
       itemType: whats-new
       url: Documents/WorldHeightChange.md
     #card
@@ -80,7 +80,7 @@ conceptualContent:
               text: Introduction to Resource Packs
             - url: Documents/BehaviorPack.md
               itemType: get-started
-              text: Introduction To Behavior Packs
+              text: Introduction to Behavior Packs
             - url: Documents/CustomBlock.md
               itemType: how-to-guide
               text: How to add a Custom Block
