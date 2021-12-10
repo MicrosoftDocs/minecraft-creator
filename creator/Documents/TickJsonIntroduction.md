@@ -52,6 +52,8 @@ The **tick.json** file contains the names of functions that you want to run ever
 
 Now there are two files for tick.json to call.
 
+![image of behavior pack function folder and file structure](Media/Commands/function_behavior_pack_structure.png)
+
 ## Creating tick.json
 
 The tick.json file contains a list of the functions that you want to execute on every tick of the game. You can also set the order that the functions will be called.

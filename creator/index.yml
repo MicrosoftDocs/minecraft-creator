@@ -18,8 +18,8 @@ highlightedContent:
 # itemType:  architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     #card used to define plugin
-    - title: World Height Changes in Caves and Cliffs Part 2
-      itemType: overview
+    - title: World Height Changes in Caves & Cliffs Part 2
+      itemType: whats-new
       url: Documents/WorldHeightChange.md
     #card
     - title: "Installing Add-Ons in Minecraft: Bedrock Edition"
@@ -80,7 +80,7 @@ conceptualContent:
               text: Introduction to Resource Packs
             - url: Documents/BehaviorPack.md
               itemType: get-started
-              text: Introduction To Behavior Packs
+              text: Introduction to Behavior Packs
             - url: Documents/CustomBlock.md
               itemType: how-to-guide
               text: How to add a Custom Block
@@ -101,7 +101,7 @@ conceptualContent:
               itemType: get-started
               text: How To Make a Complete the Monument Map
         # card
-        - title: Adding new Minecraft Entites
+        - title: Adding new Minecraft Entities
           summary: "Learn how to create and implement your own custom entities."
           links:
             - url: Documents/IntroductionToAddEntity.md
