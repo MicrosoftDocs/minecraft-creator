@@ -24,9 +24,9 @@ subscribe(callback: (arg: PlayerJoinEvent) => undefined): (arg: PlayerJoinEvent)
 
 Adds a callback that will be called when a player joins the world.
 #### **Parameters**
-- **callback**: (arg: PlayerJoinEvent) => undefined
+- **callback**: (arg: [*PlayerJoinEvent*](PlayerJoinEvent.md)) => undefined
 
-#### **Returns** (arg: PlayerJoinEvent) => undefined
+#### **Returns** (arg: [*PlayerJoinEvent*](PlayerJoinEvent.md)) => undefined
 
 
 ### **unsubscribe**
@@ -36,7 +36,7 @@ unsubscribe(callback: (arg: PlayerJoinEvent) => undefined): void
 
 Removes a callback from being called when a player joins the world.
 #### **Parameters**
-- **callback**: (arg: PlayerJoinEvent) => undefined
+- **callback**: (arg: [*PlayerJoinEvent*](PlayerJoinEvent.md)) => undefined
 
 
 > [!WARNING]

@@ -24,9 +24,9 @@ subscribe(callback: (arg: BlockPlaceEvent) => undefined): (arg: BlockPlaceEvent)
 
 Adds a callback that will be called when a block is placed by a player.
 #### **Parameters**
-- **callback**: (arg: BlockPlaceEvent) => undefined
+- **callback**: (arg: [*BlockPlaceEvent*](BlockPlaceEvent.md)) => undefined
 
-#### **Returns** (arg: BlockPlaceEvent) => undefined
+#### **Returns** (arg: [*BlockPlaceEvent*](BlockPlaceEvent.md)) => undefined
 
 
 ### **unsubscribe**
@@ -36,7 +36,7 @@ unsubscribe(callback: (arg: BlockPlaceEvent) => undefined): void
 
 Removes a callback from being called when an block is placed.
 #### **Parameters**
-- **callback**: (arg: BlockPlaceEvent) => undefined
+- **callback**: (arg: [*BlockPlaceEvent*](BlockPlaceEvent.md)) => undefined
 
 
 > [!WARNING]

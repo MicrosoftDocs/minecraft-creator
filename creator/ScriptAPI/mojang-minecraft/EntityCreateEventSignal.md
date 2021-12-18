@@ -24,9 +24,9 @@ subscribe(callback: (arg: EntityCreateEvent) => undefined): (arg: EntityCreateEv
 
 Adds a callback that will be called when a new entity is created.
 #### **Parameters**
-- **callback**: (arg: EntityCreateEvent) => undefined
+- **callback**: (arg: [*EntityCreateEvent*](EntityCreateEvent.md)) => undefined
 
-#### **Returns** (arg: EntityCreateEvent) => undefined
+#### **Returns** (arg: [*EntityCreateEvent*](EntityCreateEvent.md)) => undefined
 
 
 ### **unsubscribe**
@@ -36,7 +36,7 @@ unsubscribe(callback: (arg: EntityCreateEvent) => undefined): void
 
 Removes a callback from being called when a new entity is created.
 #### **Parameters**
-- **callback**: (arg: EntityCreateEvent) => undefined
+- **callback**: (arg: [*EntityCreateEvent*](EntityCreateEvent.md)) => undefined
 
 
 > [!WARNING]

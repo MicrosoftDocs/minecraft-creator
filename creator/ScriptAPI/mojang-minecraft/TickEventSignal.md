@@ -24,9 +24,9 @@ subscribe(callback: (arg: TickEvent) => undefined): (arg: TickEvent) => undefine
 
 Adds a callback that will be called on every tick.
 #### **Parameters**
-- **callback**: (arg: TickEvent) => undefined
+- **callback**: (arg: [*TickEvent*](TickEvent.md)) => undefined
 
-#### **Returns** (arg: TickEvent) => undefined
+#### **Returns** (arg: [*TickEvent*](TickEvent.md)) => undefined
 
 
 ### **unsubscribe**
@@ -36,7 +36,7 @@ unsubscribe(callback: (arg: TickEvent) => undefined): void
 
 Removes a callback from being called every tick.
 #### **Parameters**
-- **callback**: (arg: TickEvent) => undefined
+- **callback**: (arg: [*TickEvent*](TickEvent.md)) => undefined
 
 
 > [!WARNING]

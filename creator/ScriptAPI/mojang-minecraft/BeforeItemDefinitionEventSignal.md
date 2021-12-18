@@ -24,9 +24,9 @@ subscribe(callback: (arg: BeforeItemDefinitionTriggeredEvent) => undefined): (ar
 
 Adds a callback that will be called when an item's definition and components change.
 #### **Parameters**
-- **callback**: (arg: BeforeItemDefinitionTriggeredEvent) => undefined
+- **callback**: (arg: [*BeforeItemDefinitionTriggeredEvent*](BeforeItemDefinitionTriggeredEvent.md)) => undefined
 
-#### **Returns** (arg: BeforeItemDefinitionTriggeredEvent) => undefined
+#### **Returns** (arg: [*BeforeItemDefinitionTriggeredEvent*](BeforeItemDefinitionTriggeredEvent.md)) => undefined
 
 
 ### **unsubscribe**
@@ -36,7 +36,7 @@ unsubscribe(callback: (arg: BeforeItemDefinitionTriggeredEvent) => undefined): v
 
 Removes a callback from being called when an item's definition and components change.
 #### **Parameters**
-- **callback**: (arg: BeforeItemDefinitionTriggeredEvent) => undefined
+- **callback**: (arg: [*BeforeItemDefinitionTriggeredEvent*](BeforeItemDefinitionTriggeredEvent.md)) => undefined
 
 
 > [!WARNING]

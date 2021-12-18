@@ -24,9 +24,9 @@ subscribe(callback: (arg: WeatherChangeEvent) => undefined): (arg: WeatherChange
 
 Adds a callback that will be called when weather changes.
 #### **Parameters**
-- **callback**: (arg: WeatherChangeEvent) => undefined
+- **callback**: (arg: [*WeatherChangeEvent*](WeatherChangeEvent.md)) => undefined
 
-#### **Returns** (arg: WeatherChangeEvent) => undefined
+#### **Returns** (arg: [*WeatherChangeEvent*](WeatherChangeEvent.md)) => undefined
 
 
 ### **unsubscribe**
@@ -36,7 +36,7 @@ unsubscribe(callback: (arg: WeatherChangeEvent) => undefined): void
 
 Removes a callback from being called when weather changes.
 #### **Parameters**
-- **callback**: (arg: WeatherChangeEvent) => undefined
+- **callback**: (arg: [*WeatherChangeEvent*](WeatherChangeEvent.md)) => undefined
 
 
 > [!WARNING]

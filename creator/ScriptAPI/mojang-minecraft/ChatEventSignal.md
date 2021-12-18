@@ -24,9 +24,9 @@ subscribe(callback: (arg: ChatEvent) => undefined): (arg: ChatEvent) => undefine
 
 Adds a callback that will be called when new chat messages are sent.
 #### **Parameters**
-- **callback**: (arg: ChatEvent) => undefined
+- **callback**: (arg: [*ChatEvent*](ChatEvent.md)) => undefined
 
-#### **Returns** (arg: ChatEvent) => undefined
+#### **Returns** (arg: [*ChatEvent*](ChatEvent.md)) => undefined
 
 
 #### **Examples**
@@ -49,7 +49,7 @@ unsubscribe(callback: (arg: ChatEvent) => undefined): void
 
 Removes a callback from being called when new chat messages are sent.
 #### **Parameters**
-- **callback**: (arg: ChatEvent) => undefined
+- **callback**: (arg: [*ChatEvent*](ChatEvent.md)) => undefined
 
 
 > [!WARNING]

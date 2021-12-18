@@ -24,9 +24,9 @@ subscribe(callback: (arg: BlockBreakEvent) => undefined): (arg: BlockBreakEvent)
 
 Adds a callback that will be called when a block is broken by a player.
 #### **Parameters**
-- **callback**: (arg: BlockBreakEvent) => undefined
+- **callback**: (arg: [*BlockBreakEvent*](BlockBreakEvent.md)) => undefined
 
-#### **Returns** (arg: BlockBreakEvent) => undefined
+#### **Returns** (arg: [*BlockBreakEvent*](BlockBreakEvent.md)) => undefined
 
 
 ### **unsubscribe**
@@ -36,7 +36,7 @@ unsubscribe(callback: (arg: BlockBreakEvent) => undefined): void
 
 Removes a callback from being called when an block is broken.
 #### **Parameters**
-- **callback**: (arg: BlockBreakEvent) => undefined
+- **callback**: (arg: [*BlockBreakEvent*](BlockBreakEvent.md)) => undefined
 
 
 > [!WARNING]

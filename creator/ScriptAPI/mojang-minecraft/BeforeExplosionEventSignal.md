@@ -24,9 +24,9 @@ subscribe(callback: (arg: BeforeExplosionEvent) => undefined): (arg: BeforeExplo
 
 Adds a callback that will be called when before an explosion occurs. The callback can optionally change or cancel explosion behavior.
 #### **Parameters**
-- **callback**: (arg: BeforeExplosionEvent) => undefined
+- **callback**: (arg: [*BeforeExplosionEvent*](BeforeExplosionEvent.md)) => undefined
 
-#### **Returns** (arg: BeforeExplosionEvent) => undefined
+#### **Returns** (arg: [*BeforeExplosionEvent*](BeforeExplosionEvent.md)) => undefined
 
 
 ### **unsubscribe**
@@ -36,7 +36,7 @@ unsubscribe(callback: (arg: BeforeExplosionEvent) => undefined): void
 
 Removes a callback from being called from before when an explosion would occur.
 #### **Parameters**
-- **callback**: (arg: BeforeExplosionEvent) => undefined
+- **callback**: (arg: [*BeforeExplosionEvent*](BeforeExplosionEvent.md)) => undefined
 
 
 > [!WARNING]

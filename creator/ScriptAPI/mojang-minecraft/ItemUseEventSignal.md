@@ -24,9 +24,9 @@ subscribe(callback: (arg: ItemUseEvent) => undefined): (arg: ItemUseEvent) => un
 
 Adds a callback that will be called when an item is used.
 #### **Parameters**
-- **callback**: (arg: ItemUseEvent) => undefined
+- **callback**: (arg: [*ItemUseEvent*](ItemUseEvent.md)) => undefined
 
-#### **Returns** (arg: ItemUseEvent) => undefined
+#### **Returns** (arg: [*ItemUseEvent*](ItemUseEvent.md)) => undefined
 
 
 ### **unsubscribe**
@@ -36,7 +36,7 @@ unsubscribe(callback: (arg: ItemUseEvent) => undefined): void
 
 Removes a callback from being called when an item is used.
 #### **Parameters**
-- **callback**: (arg: ItemUseEvent) => undefined
+- **callback**: (arg: [*ItemUseEvent*](ItemUseEvent.md)) => undefined
 
 
 > [!WARNING]

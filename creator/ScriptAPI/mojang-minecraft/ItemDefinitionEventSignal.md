@@ -24,9 +24,9 @@ subscribe(callback: (arg: ItemDefinitionTriggeredEvent) => undefined): (arg: Ite
 
 Adds a callback that will be called when an item's definition and components change.
 #### **Parameters**
-- **callback**: (arg: ItemDefinitionTriggeredEvent) => undefined
+- **callback**: (arg: [*ItemDefinitionTriggeredEvent*](ItemDefinitionTriggeredEvent.md)) => undefined
 
-#### **Returns** (arg: ItemDefinitionTriggeredEvent) => undefined
+#### **Returns** (arg: [*ItemDefinitionTriggeredEvent*](ItemDefinitionTriggeredEvent.md)) => undefined
 
 
 ### **unsubscribe**
@@ -36,7 +36,7 @@ unsubscribe(callback: (arg: ItemDefinitionTriggeredEvent) => undefined): void
 
 Removes a callback from being called when an item's definition and components change.
 #### **Parameters**
-- **callback**: (arg: ItemDefinitionTriggeredEvent) => undefined
+- **callback**: (arg: [*ItemDefinitionTriggeredEvent*](ItemDefinitionTriggeredEvent.md)) => undefined
 
 
 > [!WARNING]

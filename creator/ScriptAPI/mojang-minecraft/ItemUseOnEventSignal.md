@@ -24,9 +24,9 @@ subscribe(callback: (arg: ItemUseOnEvent) => undefined): (arg: ItemUseOnEvent) =
 
 Adds a callback that will be called when an item is used on a block.
 #### **Parameters**
-- **callback**: (arg: ItemUseOnEvent) => undefined
+- **callback**: (arg: [*ItemUseOnEvent*](ItemUseOnEvent.md)) => undefined
 
-#### **Returns** (arg: ItemUseOnEvent) => undefined
+#### **Returns** (arg: [*ItemUseOnEvent*](ItemUseOnEvent.md)) => undefined
 
 
 ### **unsubscribe**
@@ -36,7 +36,7 @@ unsubscribe(callback: (arg: ItemUseOnEvent) => undefined): void
 
 Removes a callback from being called when an item is used on a block.
 #### **Parameters**
-- **callback**: (arg: ItemUseOnEvent) => undefined
+- **callback**: (arg: [*ItemUseOnEvent*](ItemUseOnEvent.md)) => undefined
 
 
 > [!WARNING]

@@ -24,9 +24,9 @@ subscribe(callback: (arg: BlockExplodeEvent) => undefined): (arg: BlockExplodeEv
 
 Adds a callback that will be called when an explosion occurs, as it impacts individual blocks.
 #### **Parameters**
-- **callback**: (arg: BlockExplodeEvent) => undefined
+- **callback**: (arg: [*BlockExplodeEvent*](BlockExplodeEvent.md)) => undefined
 
-#### **Returns** (arg: BlockExplodeEvent) => undefined
+#### **Returns** (arg: [*BlockExplodeEvent*](BlockExplodeEvent.md)) => undefined
 
 
 ### **unsubscribe**
@@ -36,7 +36,7 @@ unsubscribe(callback: (arg: BlockExplodeEvent) => undefined): void
 
 Removes a callback from being called when an explosion occurs, as it impacts individual blocks.
 #### **Parameters**
-- **callback**: (arg: BlockExplodeEvent) => undefined
+- **callback**: (arg: [*BlockExplodeEvent*](BlockExplodeEvent.md)) => undefined
 
 
 > [!WARNING]

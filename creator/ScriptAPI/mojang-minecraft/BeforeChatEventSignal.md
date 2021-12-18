@@ -24,9 +24,9 @@ subscribe(callback: (arg: BeforeChatEvent) => undefined): (arg: BeforeChatEvent)
 
 Adds a callback that will be called before new chat messages are sent.
 #### **Parameters**
-- **callback**: (arg: BeforeChatEvent) => undefined
+- **callback**: (arg: [*BeforeChatEvent*](BeforeChatEvent.md)) => undefined
 
-#### **Returns** (arg: BeforeChatEvent) => undefined
+#### **Returns** (arg: [*BeforeChatEvent*](BeforeChatEvent.md)) => undefined
 
 
 ### **unsubscribe**
@@ -36,7 +36,7 @@ unsubscribe(callback: (arg: BeforeChatEvent) => undefined): void
 
 Removes a callback from being called before new chat messages are sent.
 #### **Parameters**
-- **callback**: (arg: BeforeChatEvent) => undefined
+- **callback**: (arg: [*BeforeChatEvent*](BeforeChatEvent.md)) => undefined
 
 
 > [!WARNING]

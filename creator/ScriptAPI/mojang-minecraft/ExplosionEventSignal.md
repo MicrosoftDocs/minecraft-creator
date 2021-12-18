@@ -24,9 +24,9 @@ subscribe(callback: (arg: ExplosionEvent) => undefined): (arg: ExplosionEvent) =
 
 Adds a callback that will be called when an explosion occurs.
 #### **Parameters**
-- **callback**: (arg: ExplosionEvent) => undefined
+- **callback**: (arg: [*ExplosionEvent*](ExplosionEvent.md)) => undefined
 
-#### **Returns** (arg: ExplosionEvent) => undefined
+#### **Returns** (arg: [*ExplosionEvent*](ExplosionEvent.md)) => undefined
 
 
 ### **unsubscribe**
@@ -36,7 +36,7 @@ unsubscribe(callback: (arg: ExplosionEvent) => undefined): void
 
 Removes a callback from being called when an explosion occurs.
 #### **Parameters**
-- **callback**: (arg: ExplosionEvent) => undefined
+- **callback**: (arg: [*ExplosionEvent*](ExplosionEvent.md)) => undefined
 
 
 > [!WARNING]

@@ -24,9 +24,9 @@ subscribe(callback: (arg: BeforeItemUseOnEvent) => undefined): (arg: BeforeItemU
 
 Adds a callback that will be called before an item is used on a block.
 #### **Parameters**
-- **callback**: (arg: BeforeItemUseOnEvent) => undefined
+- **callback**: (arg: [*BeforeItemUseOnEvent*](BeforeItemUseOnEvent.md)) => undefined
 
-#### **Returns** (arg: BeforeItemUseOnEvent) => undefined
+#### **Returns** (arg: [*BeforeItemUseOnEvent*](BeforeItemUseOnEvent.md)) => undefined
 
 
 ### **unsubscribe**
@@ -36,7 +36,7 @@ unsubscribe(callback: (arg: BeforeItemUseOnEvent) => undefined): void
 
 Removes a callback from being called before an item is used on a block.
 #### **Parameters**
-- **callback**: (arg: BeforeItemUseOnEvent) => undefined
+- **callback**: (arg: [*BeforeItemUseOnEvent*](BeforeItemUseOnEvent.md)) => undefined
 
 
 > [!WARNING]

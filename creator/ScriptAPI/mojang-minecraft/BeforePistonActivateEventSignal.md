@@ -24,9 +24,9 @@ subscribe(callback: (arg: BeforePistonActivateEvent) => undefined): (arg: Before
 
 Adds a callback that will be called before a piston expands or retracts.
 #### **Parameters**
-- **callback**: (arg: BeforePistonActivateEvent) => undefined
+- **callback**: (arg: [*BeforePistonActivateEvent*](BeforePistonActivateEvent.md)) => undefined
 
-#### **Returns** (arg: BeforePistonActivateEvent) => undefined
+#### **Returns** (arg: [*BeforePistonActivateEvent*](BeforePistonActivateEvent.md)) => undefined
 
 
 ### **unsubscribe**
@@ -36,7 +36,7 @@ unsubscribe(callback: (arg: BeforePistonActivateEvent) => undefined): void
 
 Removes a callback from being called before a piston expands or retracts.
 #### **Parameters**
-- **callback**: (arg: BeforePistonActivateEvent) => undefined
+- **callback**: (arg: [*BeforePistonActivateEvent*](BeforePistonActivateEvent.md)) => undefined
 
 
 > [!WARNING]
