@@ -15,7 +15,7 @@ In this tutorial you will learn the following:
 
 > [!div class="checklist"]
 >
-> - How to apply what you've learned about commands to make a simple command system using some popular commands.
+> - How to apply what you've learned about commands and scoreboards to make a simple game mechanic.
 
 ### Requirements
 
