@@ -54,6 +54,9 @@ Enter the relative path to the reference doc you want to sample into `source` an
 
 ## Vanilla entities using [REFERENCE SUBJECT]
 
-[For Entity JSON only] list any and all vanilla entities that use this reference.
+>[!IMPORTANT]
+> For Entity JSON reference documentation only!
+
+List any and all vanilla entities that use this reference.
 
 - [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
