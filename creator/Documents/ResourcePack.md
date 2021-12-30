@@ -31,7 +31,7 @@ It’s recommended that the following be completed before beginning this tutoria
 
 For Minecraft to find and use your resource files, you have to set up the folders and files in a particular structure. This tutorial will guide you through creating this folder and file structure.
 
-<insert image here>
+![Image of resource pack folder and file structure](Media/ResourcePack/resource-pack-structure.png)
 
 ### Create a folder
 
