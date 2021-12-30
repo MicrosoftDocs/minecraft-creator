@@ -52,7 +52,7 @@ The **tick.json** file contains the names of functions that you want to run ever
 
 Now there are two files for tick.json to call.
 
-![image of behavior pack function folder and file structure](Media/Commands/function_behavior_pack_structure.png)
+<insert image here>
 
 ## Creating tick.json
 

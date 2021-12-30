@@ -26,5 +26,5 @@ ms.prod: gaming
     "command" : "/give @p emerald",
     "command array": [], //not used
     "target" : "self"
-
+}
 ```
