@@ -1,6 +1,6 @@
 ---
 author: JDHeaden
-ms.author: JDHeaden
+ms.author: v-jillheaden
 title: Introduction to tick.json
 ms.prod: gaming
 description: "A tutorial that introduces a Creator on how to use tick.json to repeatedly execute functions"
