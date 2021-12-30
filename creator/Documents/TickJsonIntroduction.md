@@ -59,13 +59,13 @@ The tick.json file contains a list of the functions that you want to execute on 
 1. Inside the **functions** folder, create a text file and name it **tick.json**.
 1. Copy the following text and paste it into your **tick.json** file. Save the file.
 
-  ```json
-   {
-      "values": [
-          "function_say_one", "function_say_two"
-      ]
-    }
- ```
+```json
+ {
+    "values": [
+        "function_say_one", "function_say_two"
+    ]
+  }
+```
 
 The tick.json file uses only the `values` key, and the values are the names of the functions to run, without the .mcfunction extension.
 
