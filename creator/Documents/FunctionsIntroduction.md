@@ -1,5 +1,5 @@
 ---
-author: v-jillheaden
+author: JDHeaden
 ms.author: v-jillheaden
 title: Introduction to Functions
 ms.prod: gaming
@@ -36,6 +36,8 @@ You will also need the following:
 
 Function files have a .mcfunction extension and they live in the **functions** folder of your behavior pack.
 
+![image of function folder and file structure](Media/Commands/function-folder-structure.png)
+
 1. Start by creating a folder inside your behavior pack and name it **functions**. This folder should be on the same level as your `manifest.json` file.
 1. Open the **functions** folder and create a text file.
 1. Name the file **ouch.mcfunction**.
@@ -67,7 +69,7 @@ For example, if you have another folder inside your functions folder called **in
 
 ## What's Next?
 
-Now that you have an overview of how a function file works, you can learn how to utilize the in-game tick function and tick.json file in order to fire off custom functions on repeat.
+Now that you have an overview of how a function file works, you can learn how to utilize the in-game tick function and a tick.json file in order to fire off custom functions on repeat.
 
 >[!div class="nextstepaction"]
 >[Tick.json Introduction](TickJsonIntroduction.md)

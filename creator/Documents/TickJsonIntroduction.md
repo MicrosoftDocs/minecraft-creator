@@ -1,5 +1,5 @@
 ---
-author: v-jillheaden
+author: JDHeaden
 ms.author: v-jillheaden
 title: Introduction to tick.json
 ms.prod: gaming
@@ -52,8 +52,6 @@ The **tick.json** file contains the names of functions that you want to run ever
 
 Now there are two files for tick.json to call.
 
-![image of behavior pack function folder and file structure](Media/Commands/function_behavior_pack_structure.png)
-
 ## Creating tick.json
 
 The tick.json file contains a list of the functions that you want to execute on every tick of the game. You can also set the order that the functions will be called.
@@ -61,13 +59,13 @@ The tick.json file contains a list of the functions that you want to execute on 
 1. Inside the **functions** folder, create a text file and name it **tick.json**.
 1. Copy the following text and paste it into your **tick.json** file. Save the file.
 
-  ```json
-   {
-      "values": [
-          "function_say_one", "function_say_two"
-      ]
-    }
- ```
+```json
+ {
+    "values": [
+        "function_say_one", "function_say_two"
+    ]
+  }
+```
 
 The tick.json file uses only the `values` key, and the values are the names of the functions to run, without the .mcfunction extension.
 
