@@ -51,5 +51,10 @@ You will learn about how player speed and collision works in-game by designing s
 > [!div class="nextstepaction"]
 > [Physically Based Texture Guide](Documents/RTX_PBRTexturingGuide.md)
 
-### Part 3 - Fog and Ray Tracing
+### Part 3 - Fog In Resources
+
+Along with Ray Tracing, Fogs in Minecraft have been updated to utilize a similar JSON structure to allow you to create and control the appearance of in-game fog.
+
+> [!div class="nextstepaction"]
+> [Fog in Resource Packs](../../FogInResourcePacks.md)
 

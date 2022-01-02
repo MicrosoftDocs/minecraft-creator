@@ -1,17 +1,16 @@
 ---
 author: v-jillheaden
 ms.author: v-jillheaden
-title: RTX PBR Texturing Guide
+title: Physically Based Texturing Guide
 ms.prod: gaming
 description: A guide to creating textures using RTX Physically-Based Rendering
 ---
 
-# Minecraft with RTX PBR Texturing Guide
+# Physically Based Texturing Guide
 
 In this guide, we’ll walk you through the steps of creating your own Minecraft PBR textures, or upgrading your existing textures and texture packs, so that your ray-traced Minecraft worlds take full advantage of everything that Bedrock Minecraft brings to the table.
 
 In addition, we’ll demonstrate how you can create your own high-resolution textures for worlds made of lifelike high definition blocks, and offer an alternative, simpler, easier workflow using the premium Substance Painter application.
-
 
 ## Minecraft Texturing Overview
 
@@ -69,10 +68,8 @@ For example, for a PBR version of the “gold_ore” block:
 To create your own PBR texture sets, you will need a photo-editing/digital painting application. Here are a few excellent options:
 
 - Adobe Photoshop
-- GIMP
+- Paint3D
 - Paint.net
-- Pixlr.com
-- GraphicsGale
 
 You will also need a quick plaintext file editor to write your texture set JSON. The default text editor for your operating system will work, but Sublime Text is a good alternative as it supports syntax coloring.
 
@@ -386,15 +383,15 @@ Using PBR maps like metalness and roughness along with ray tracing, you can crea
 
 However, for perfectly reflective objects like mirrors, you’ll want to configure your PBR maps to enable a perfect mirror.  If you use a solid black roughness map (0.0) and a solid white (1.0) metalness map, the game will interpret your material as a perfect mirror. This means that the ray tracing code can take some shorter paths during its calculations since it knows that the material will fully reflect the environment without any additional details to take into account.
 
-## Creating Mirrors
+## Creating Mirrors utilizing Adobe Substance Painter
 
 ### How to Create PBR Textures in Substance by Adobe
 
 If you have access to the Substance Painter app, you can create higher resolution PBR texture sets in a much more intuitive manner. This software lets you see all of the maps of your PBR texture set displayed in real-time on mesh geometry. This allows you to tune your texture maps as you work without having to launch the game, move any files around, or modify channels.
 
-1. Launch the application and select New Project from the File menu.
+#### Start a new project in Substance, using these specs
 
-**Start a new project in Substance, using these specs**
+1. Launch the application and select New Project from the File menu.
 
 2. Template = Unreal Engine 4 - This will automatically set a variety of application and viewer settings. Feel free to try other options or make your own template!
 
