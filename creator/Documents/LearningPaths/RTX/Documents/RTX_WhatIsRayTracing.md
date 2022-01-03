@@ -73,4 +73,4 @@ If you meet the minimum requirements and you are on the Windows version of the g
 Now that you know how Ray Tracing can enhance your Minecraft experience, you can view a list of Ray Tracing Worlds provided by NVIDIA by visiting their website here. Alternatively, if you are ready to learn more about how to create your own Physically Based Rendered Texture Pack, click on the button below to learn more.
 
 > [!div class="nextstepaction"]
-> [Physically Based Texture Guide](Documents/RTX_PBRTexturingGuide.md)
+> [Physically Based Texture Guide](RTX_PBRTexturingGuide.md)
