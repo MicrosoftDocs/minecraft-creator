@@ -9,9 +9,18 @@ description: "An introduction to the Ray Tracing features in Minecraft: Bedrock 
 
 # Getting Started - Ray Tracing
 
-Minecraft: Bedrock Edition for Windows 10/11 has been upgraded with cutting-edge path-traced ray tracing, enabling gamers and world builders to craft incredible new sights and immersive environments. To take full advantage of the new possibilities ray tracing introduced in the free 1.16.200 update for Minecraft, physically-based textures have also been introduced, featuring extra surface detail, the ability to emit light, and more. To further enhance the visual experience of RTX, creators can also define their own settings for the fog.
+Minecraft: Bedrock Edition for Windows 10/11 has been upgraded with cutting-edge path-traced ray tracing, enabling gamers and world builders to craft incredible new sights and immersive environments. To take full advantage of the new possibilities ray tracing introduced in the free 1.16.200 update for Minecraft, physically-based textures have also been introduced, featuring extra surface detail, the ability to emit light, and more. To further enhance the visual experience of RTX, creators can also define their own settings for the fog via resource packs.
 
-<insert Video here>
+:::row:::
+    :::column:::
+        :::image type="content" source="Media/RT - Not Emissive-850px.jpg" alt-text="Image showcasing a standard Minecraft world with no ray tracing enabled":::
+        Ray Tracing Off with Physically Based Textures
+    :::column-end:::
+    :::column:::
+        :::image type="content" source="Media/RT - Emissive-850px.jpg" alt-text="Image showcasing a standard Minecraft world with Ray Tracing enabled":::
+        Ray Tracing On with Physically Based Textures
+    :::column-end:::
+:::row-end:::
 
 By the end of this series, you will learn:
 
@@ -49,7 +58,7 @@ Ray tracing is a series of computer rendering techniques that bring more realist
 You will learn about how player speed and collision works in-game by designing specific jumps around what a player is capable of.
 
 > [!div class="nextstepaction"]
-> [Physically Based Texture Guide](Documents/RTX_PBRTexturingGuide.md)
+> [Physically Based Texturing Guide](Documents/RTX_PBRTexturingGuide.md)
 
 ### Part 3 - Fog In Resources
 
@@ -57,4 +66,3 @@ Along with Ray Tracing, Fogs in Minecraft have been updated to utilize a similar
 
 > [!div class="nextstepaction"]
 > [Fog in Resource Packs](../../FogInResourcePacks.md)
-
