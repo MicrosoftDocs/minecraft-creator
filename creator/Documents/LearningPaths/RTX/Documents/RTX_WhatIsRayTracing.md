@@ -49,7 +49,7 @@ In contrast, ray tracing behaves more like lighting in the real world – rays o
 
 |Features  |Example  |
 |:---------|:---------|
-|**Sunbeams and atmospherics**  - Directional shafts of light typically occur at sunrise and sunset when sunlight passes through particles in the atmosphere or underwater.|:::image type="content" source="../Media/RT_Sunbeams.jpg" alt-text="Image showcasing sunbeans shining through a shadowy rocky cavern":::         |
+|**Sunbeams and atmospherics**  - Directional shafts of light typically occur at sunrise and sunset when sunlight passes through particles in the atmosphere or underwater.|:::image type="content" source="../Media/RT_Sunbeams.jpg" alt-text="Image showcasing sunbeams shining through a shadowy rocky cavern":::         |
 |**Dynamic shadows** - More realistic shadows that change as lighting conditions change.   |:::image type="content" source="../Media/RT_blobid3.png" alt-text="Image showcasing a sunset and a series of structures casting long and dramatic shadows":::         |
 |**Ambient Occlusion** - shadows cast in corners or crevices where light rays cannot escape |:::image type="content" source="../Media/RT_blobid4.png" alt-text="Image showcasing various metal blocks and how Ambient Occlusion allows for a more realistic lighting and shadow effect":::         |
 |**Reflections**  - Light bounces off surfaces, both casting and picking up color as it travels. Bouncing light hits smooth surfaces and maintains a spread depending on the material. This can create diffuse reflections or very sharp ones.           |:::image type="content" source="../Media/RT_blobid5.png" alt-text="Image showcasing a tunnel made of gold blocks and how a single source of emitting light reflects upon the surface":::         |
@@ -65,7 +65,8 @@ If you meet the minimum requirements and you are on the Windows version of the g
    :::image type="content" source="../Media/RT_blobid14.png" alt-text="image showing the minecraft marketplace where an RTX world is enabled":::
    :::image type="content" source="../Media/RT_blobid15.png" alt-text="Image showcasing the blue icon on the marketplace downloads":::
 1. Create your own PBR textures and sideload them into the game.
-   1. This will be covered in the PBR guide listed below.
+   1. The .mcpack located in the Requirements section is a PBR texture pack that will enable Ray Tracing when added to a world.
+   1. Creating a PBR texture will be covered in the PBR guide listed below.
 
 ## What's Next
 
