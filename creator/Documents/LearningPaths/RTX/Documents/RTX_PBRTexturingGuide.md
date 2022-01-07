@@ -83,9 +83,22 @@ A Roughness map is a greyscale texture that will drive the 'roughness' look and 
 
 A Normal map is a RGB texture that controls depth and how light will behave when a light ray hits the texture.
 
-- Since Normal maps use RGB, you can create surface details that gives the texture the appearence of a sculpted 3D object.
+- Since Normal maps use RGB, you can create surface details that gives the texture the appearance of a sculpted 3D object.
+- Setting the RGB values to `128`,`128`, `255` respectively will result in a flat appearance of the the pixel.
+
+> [!CAUTION]
+> Unless you have had previous experience with creating normal maps, it is recommended that you do not create normal maps by hand. There are third party software available to assist with creating normal maps.
 
 ### Height Map
 
+A Height map is a greyscale texture that controls depth. Height maps act as an alternative to Normal maps but has limitations.
+
+- A pixel that is set to black is considered a value of `0` and will cause the pixel to extrude inward.
+- A pixel that is set to white is considered a value of `1` and will cause the pixel to extrude outward.
+- A pixel that is set to `0.5` will be considered as the default height and will not extrude in or out.
+
 ## Making a Mirror
 
+### Texture Set JSON
+
+### Adding the Textures
