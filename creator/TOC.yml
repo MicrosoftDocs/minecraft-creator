@@ -190,6 +190,12 @@
             href: Reference/Content/ItemReference/Examples/ItemDefinition.md
           - name: Item Components
             href: Reference/Content/itemreference/Examples/ItemComponents/TOC.yml
+        - name: Materials Documentation Homepage
+          items:
+           - name: Materials - Getting Started
+            href: MaterialsGettingStarted.md
+          - name: Shaders and Inputs List
+            href: RenderDragonShaderList.md
         - name: Particle JSON
           items:
           - name: Particle Documentation Homepage
