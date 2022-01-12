@@ -1,0 +1,68 @@
+---
+author: v-josjones
+ms.author: v-josjones
+title: Getting Started - Ray Tracing
+ms.prod: gaming
+ms.topic: tutorial
+description: "An introduction to the Ray Tracing features in Minecraft: Bedrock Edition"
+---
+
+# Getting Started - Ray Tracing
+
+Minecraft: Bedrock Edition for Windows 10/11 has been upgraded with cutting-edge path-traced ray tracing, enabling gamers and world builders to craft incredible new sights and immersive environments. To take full advantage of the new possibilities ray tracing introduced in the free 1.16.200 update for Minecraft, physically-based textures have also been introduced, featuring extra surface detail, the ability to emit light, and more. To further enhance the visual experience of RTX, creators can also define their own settings for the fog via resource packs.
+
+:::row:::
+    :::column:::
+        :::image type="content" source="Media/RT - Not Emissive-850px.jpg" alt-text="Image showcasing a standard Minecraft world with no ray tracing enabled":::
+        Ray Tracing Off with Physically Based Textures
+    :::column-end:::
+    :::column:::
+        :::image type="content" source="Media/RT - Emissive-850px.jpg" alt-text="Image showcasing a standard Minecraft world with Ray Tracing enabled":::
+        Ray Tracing On with Physically Based Textures
+    :::column-end:::
+:::row-end:::
+
+By the end of this series, you will learn:
+
+> [!div class="checklist"]
+>
+> - What is Ray Tracing and how it affects Minecraft.
+> - How to create a physically-based texture resource pack.
+> - How Ray Tracing affects fog
+
+### Requirements
+
+It’s recommended that you have the following on hand when working with Ray Tracing in Minecraft: Bedrock Edition
+
+- OS (Operation Systems): Windows 64-bit.
+- GPU: DirectX hardware ray tracing capable GPU like NVIDIA GeForce® RTX 20 Series and higher, and AMD Radeon RX 6000 Series and higher.
+- Hardware: PC.
+- CPU: Intel Core i5 or equivalent.
+- RAM: At least 8 GB of RAM.
+- A version of Minecraft: 1.16.200 or higher.
+
+> [!IMPORTANT]
+> Virtual reality headsets and Mixed Reality (MR) headsets are not supported.
+
+## Overview
+
+### Part 1 - What is Ray Tracing
+
+Ray tracing is a series of computer rendering techniques that bring more realistic lighting to scenes. In this section, you will learn more about the different types of Ray Tracing techniques used by Minecraft and also go over some of the more commonly asked questions.
+
+> [!div class="nextstepaction"]
+> [Ray Tracing in Minecraft: Bedrock Edition](Documents/RTX_WhatIsRayTracing.md)
+
+### Part 2 - Physically Based Texturing Guide
+
+You will learn about how player speed and collision works in-game by designing specific jumps around what a player is capable of.
+
+> [!div class="nextstepaction"]
+> [Physically Based Texturing Guide](Documents/RTX_PBRTexturingGuide.md)
+
+### Part 3 - Fog In Resources
+
+Along with Ray Tracing, Fogs in Minecraft have been updated to utilize a similar JSON structure to allow you to create and control the appearance of in-game fog.
+
+> [!div class="nextstepaction"]
+> [Fog in Resource Packs](../../FogInResourcePacks.md)
