@@ -229,7 +229,7 @@ This function only works with a spawn egg and is used to set the entity ID of th
 ```json
                 {
                     "type": "item",
-                    "name": "minecraft:stone",
+                    "name": "minecraft:spawn_egg",
                     "weight": 1,
                     "functions": [
                         {
