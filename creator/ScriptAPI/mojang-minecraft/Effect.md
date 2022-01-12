@@ -32,7 +32,7 @@ Type: *string*
 ### **duration**
 `read-only duration: number;`
 
-Gets the entire specified duration, in seconds, of this effect.
+Gets the entire specified duration, in ticks, of this effect.
 
 Type: *number*
 
