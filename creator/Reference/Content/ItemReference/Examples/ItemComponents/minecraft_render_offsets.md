@@ -20,8 +20,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|main_hand|*not set* |Vector [x,y,z]|Right hand transform data.|
-|off_hand|*not set* |Vector [x,y,z]|Left hand transform data.|
+|main_hand|[0,0,0] |Vector [x,y,z]|Right hand transform data.|
+|off_hand|[0,0,0] |Vector [x,y,z]|Left hand transform data.|
 
 ## Example
 

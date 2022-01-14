@@ -32,7 +32,7 @@ A behavior pack contains files that creators (like you!) use to add, remove, or 
 
 For Minecraft to find and use your behavior files, you have to set up the folders and files in a particular structure. This tutorial will guide you through creating this folder and file structure.
 
-<insert image here>
+![Image of behavior pack folder and file structure](Media/BehaviorPack/behavior-pack-structure.png)
 
 ### Create a folder
 
@@ -408,7 +408,7 @@ Now that the behavior pack has both a manifest file and a cow entity, it is time
 Now that you have seen a behavior pack in action, you can learn more about how they work and what else you can do with them.
 
 > [!div class="nextstepaction"]
-> [Introduction to Add Entity] (introductiontoaddentity.md)
+> [Introduction to Add Entity](introductiontoaddentity.md)
 > [Entity JSON Documentation](../Reference/Content/EntityReference/index.yml)
 
 To see examples of unchanged resource and behavior files, check out the Minecraft [Vanilla resource pack](https://aka.ms/resourcepacktemplate) and [Vanilla behavior Pack](https://aka.ms/behaviorpacktemplate).

@@ -25,12 +25,12 @@ Executes a set of steps defined via chained .thenXyz methods, sequentially. This
   
 ### **thenExecute**
 `
-thenExecute(callback: () => undefined): GameTestSequence
+thenExecute(callback: () => void): GameTestSequence
 `
 
 Runs the given callback as a step within a GameTest sequence. Exceptions thrown within the callback will end sequence execution.
 #### **Parameters**
-- **callback**: () => undefined
+- **callback**: () => *void*
   
   Callback function to execute.
 
@@ -39,7 +39,7 @@ Runs the given callback as a step within a GameTest sequence. Exceptions thrown 
 
 ### **thenExecuteAfter**
 `
-thenExecuteAfter(delayTicks: number, callback: () => undefined): GameTestSequence
+thenExecuteAfter(delayTicks: number, callback: () => void): GameTestSequence
 `
 
 After a delay, runs the given callback as a step within a GameTest sequence. Exceptions thrown within the callback will end sequence execution.
@@ -47,7 +47,7 @@ After a delay, runs the given callback as a step within a GameTest sequence. Exc
 - **delayTicks**: *number*
   
   Number of ticks to wait before executing the callback.
-- **callback**: () => undefined
+- **callback**: () => *void*
   
   Callback function to execute.
 
@@ -56,13 +56,13 @@ After a delay, runs the given callback as a step within a GameTest sequence. Exc
 
 ### **thenExecuteFor**
 `
-thenExecuteFor(tickCount: number, callback: () => undefined): GameTestSequence
+thenExecuteFor(tickCount: number, callback: () => void): GameTestSequence
 `
 
 Runs the given callback every tick for the given number of ticks.
 #### **Parameters**
 - **tickCount**: *number*
-- **callback**: () => undefined
+- **callback**: () => *void*
   
   Callback function to execute.
 
@@ -107,12 +107,12 @@ Marks the GameTest a success if this step is reached in the GameTest sequence.
 
 ### **thenWait**
 `
-thenWait(callback: () => undefined): GameTestSequence
+thenWait(callback: () => void): GameTestSequence
 `
 
 Executes the given callback every tick until it succeeds. Exceptions thrown within the callback will end sequence execution.
 #### **Parameters**
-- **callback**: () => undefined
+- **callback**: () => *void*
   
   Testing callback function to execute. Typically, this function will have .assertXyz functions within it.
 
@@ -121,7 +121,7 @@ Executes the given callback every tick until it succeeds. Exceptions thrown with
 
 ### **thenWaitAfter**
 `
-thenWaitAfter(delayTicks: number, callback: () => undefined): GameTestSequence
+thenWaitAfter(delayTicks: number, callback: () => void): GameTestSequence
 `
 
 After a delay from the previous step, executes the given callback every tick until it succeeds. Exceptions thrown within the callback will end sequence execution.
@@ -129,7 +129,7 @@ After a delay from the previous step, executes the given callback every tick unt
 - **delayTicks**: *number*
   
   Tick (after the previous step in the GameTest sequence) to run the callback at.
-- **callback**: () => undefined
+- **callback**: () => *void*
   
   Testing callback function to execute. Typically, this function will have .assertXyz functions within it.
 

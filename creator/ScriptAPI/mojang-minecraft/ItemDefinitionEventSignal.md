@@ -19,24 +19,24 @@ Manages callbacks that are connected to an item's definition and components chan
   
 ### **subscribe**
 `
-subscribe(callback: (arg: ItemDefinitionTriggeredEvent) => undefined): (arg: ItemDefinitionTriggeredEvent) => undefined
+subscribe(callback: (arg: ItemDefinitionTriggeredEvent) => void): (arg: ItemDefinitionTriggeredEvent) => void
 `
 
 Adds a callback that will be called when an item's definition and components change.
 #### **Parameters**
-- **callback**: (arg: ItemDefinitionTriggeredEvent) => undefined
+- **callback**: (arg: [*ItemDefinitionTriggeredEvent*](ItemDefinitionTriggeredEvent.md)) => *void*
 
-#### **Returns** (arg: ItemDefinitionTriggeredEvent) => undefined
+#### **Returns** (arg: [*ItemDefinitionTriggeredEvent*](ItemDefinitionTriggeredEvent.md)) => *void*
 
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ItemDefinitionTriggeredEvent) => undefined): void
+unsubscribe(callback: (arg: ItemDefinitionTriggeredEvent) => void): void
 `
 
 Removes a callback from being called when an item's definition and components change.
 #### **Parameters**
-- **callback**: (arg: ItemDefinitionTriggeredEvent) => undefined
+- **callback**: (arg: [*ItemDefinitionTriggeredEvent*](ItemDefinitionTriggeredEvent.md)) => *void*
 
 
 > [!WARNING]

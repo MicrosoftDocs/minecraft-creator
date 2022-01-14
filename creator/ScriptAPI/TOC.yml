@@ -206,6 +206,8 @@
         href: mojang-minecraft/FilterGroup.md
       - name: FluidContainer
         href: mojang-minecraft/FluidContainer.md
+      - name: IBlockProperty
+        href: mojang-minecraft/IBlockProperty.md
       - name: IEntityComponent
         href: mojang-minecraft/IEntityComponent.md
       - name: IntBlockProperty
@@ -276,6 +278,8 @@
         href: mojang-minecraft/TickEventSignal.md
       - name: Trigger
         href: mojang-minecraft/Trigger.md
+      - name: Vector
+        href: mojang-minecraft/Vector.md
       - name: WeatherChangeEvent
         href: mojang-minecraft/WeatherChangeEvent.md
       - name: WeatherChangeEventSignal
