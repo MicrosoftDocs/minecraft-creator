@@ -30,13 +30,21 @@ Here is a sample table for a JSON object reference:
 
 ### [SUBSECTION HEADER]
 
-[SUBSECTION TEXT]
+Subsections are used as needed for when content may require further information. The subsection is also commonly used for when the parameters of a given entry contain a nested table. Since MSDocs does not natively support nested tables, content will get pulled out and placed in a dedicated subsection.
 
 > [!NOTE]
 > Subsections (H3's and lower) will not be listed or linked in the article Table of Contents on MS Docs. You can manually link to subsections, but keep this in mind as it can make navigating your tutorial difficult if subsections are overly long.
 
 > [!IMPORTANT]
 > Use as many sections and subsections as you need to complete your tutorial, but do not drill down further than H4's (####), and try to use those sparingly.
+
+## [CODE EXAMPLE]
+
+Hand written example utilizing each parameter. This showcases how each parameter can be used when writing custom content
+
+## [VANILLA CODE EXAMPLE]
+
+A code snippet that showcases how the referenced content is used by a vanilla entity.
 
 Here is how you can sample code from other reference docs:
 
@@ -45,5 +53,10 @@ Here is how you can sample code from other reference docs:
 Enter the relative path to the reference doc you want to sample into `source` and enter the line numbers you want to display in `range`.
 
 ## Vanilla entities using [REFERENCE SUBJECT]
+
+>[!IMPORTANT]
+> For Entity JSON reference documentation only!
+
+List any and all vanilla entities that use this reference.
 
 - [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)

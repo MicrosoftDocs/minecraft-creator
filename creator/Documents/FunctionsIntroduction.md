@@ -1,5 +1,5 @@
 ---
-author: v-jillheaden
+author: JDHeaden
 ms.author: v-jillheaden
 title: Introduction to Functions
 ms.prod: gaming
@@ -35,6 +35,8 @@ You will also need the following:
 ## Setting up the Functions Folder
 
 Function files have a .mcfunction extension and they live in the **functions** folder of your behavior pack.
+
+![image of function folder and file structure](Media/Commands/function-folder-structure.png)
 
 1. Start by creating a folder inside your behavior pack and name it **functions**. This folder should be on the same level as your `manifest.json` file.
 1. Open the **functions** folder and create a text file.

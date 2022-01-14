@@ -125,7 +125,7 @@ Tests that a block has a particular state value at the specified location. If it
 - **blockLocation**: [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md)
   
   Location of the block to test at.
-- **callback**: (arg: mojang-minecraft.Block) => boolean
+- **callback**: (arg: [*mojang-minecraft.Block*](../mojang-minecraft/Block.md)) => *boolean*
   
   Callback function that contains additional tests based on the block at the specified location.
 
@@ -331,7 +331,7 @@ Tests that an entity (e.g., a skeleton) at the specified location has a particul
 - **entityTypeIdentifier**: *string*
   
   Identifier of the entity (e.g., 'minecraft:skeleton') to look for. Note if no namespace is specified, 'minecraft:' is assumed.
-- **callback**: (arg: mojang-minecraft.Entity) => boolean
+- **callback**: (arg: [*mojang-minecraft.Entity*](../mojang-minecraft/Entity.md)) => *boolean*
   
   Callback function where facets of the selected entity can be tested for. If this callback function returns false or no entity with the specified identifier is found, an exception is thrown.
 
@@ -475,12 +475,12 @@ Marks the current test as a failure case.
 
 ### **failIf**
 `
-failIf(callback: () => undefined): void
+failIf(callback: () => void): void
 `
 
 Runs the given callback. If the callback does not throw an exception, the test is marked as a failure.
 #### **Parameters**
-- **callback**: () => undefined
+- **callback**: () => *void*
   
   Callback function that runs. If the function runs successfully, the test is marked as a failure. Typically, this function will have .assertXyz method calls within it.
 
@@ -553,7 +553,7 @@ This asynchronous function will wait for the specified time in ticks before cont
   
   Amount of time to wait, in ticks.
 
-#### **Returns** Promise&lt;void&gt;
+#### **Returns** Promise&lt;*void*&gt;
 
 
 ### **killAllEntities**
@@ -693,7 +693,7 @@ Returns a relative direction given the current rotation of the current test. Pas
 
 ### **runAfterDelay**
 `
-runAfterDelay(delayTicks: number, callback: () => undefined): void
+runAfterDelay(delayTicks: number, callback: () => void): void
 `
 
 Runs a specific callback after a specified delay of ticks
@@ -701,7 +701,7 @@ Runs a specific callback after a specified delay of ticks
 - **delayTicks**: *number*
   
   Number of ticks to delay before running the specified callback.
-- **callback**: () => undefined
+- **callback**: () => *void*
   
   Callback function to execute.
 
@@ -711,7 +711,7 @@ Runs a specific callback after a specified delay of ticks
 
 ### **runAtTickTime**
 `
-runAtTickTime(tick: number, callback: () => undefined): void
+runAtTickTime(tick: number, callback: () => void): void
 `
 
 Runs the given callback after a delay of _tick_ ticks from the start of the GameTest.
@@ -719,7 +719,7 @@ Runs the given callback after a delay of _tick_ ticks from the start of the Game
 - **tick**: *number*
   
   Tick (after the start of the GameTest) to run the callback at.
-- **callback**: () => undefined
+- **callback**: () => *void*
   
   Callback function to execute.
 
@@ -973,12 +973,12 @@ Marks the current test as a success case.
 
 ### **succeedIf**
 `
-succeedIf(callback: () => undefined): void
+succeedIf(callback: () => void): void
 `
 
 Runs the given callback. If the callback does not throw an exception, the test is marked as a success.
 #### **Parameters**
-- **callback**: () => undefined
+- **callback**: () => *void*
   
   Callback function that runs. If the function runs successfully, the test is marked as a success. Typically, this function will have .assertXyz method calls within it.
 
@@ -1003,7 +1003,7 @@ Marks the test as a success at the specified tick.
 
 ### **succeedOnTickWhen**
 `
-succeedOnTickWhen(tick: number, callback: () => undefined): void
+succeedOnTickWhen(tick: number, callback: () => void): void
 `
 
 Runs the given callback at _tick_ ticks after the start of the test. If the callback does not throw an exception, the test is marked as a failure.
@@ -1011,7 +1011,7 @@ Runs the given callback at _tick_ ticks after the start of the test. If the call
 - **tick**: *number*
   
   Tick after the start of the GameTest to run the testing callback at.
-- **callback**: () => undefined
+- **callback**: () => *void*
   
   Callback function that runs. If the function runs successfully, the test is marked as a success.
 
@@ -1021,12 +1021,12 @@ Runs the given callback at _tick_ ticks after the start of the test. If the call
 
 ### **succeedWhen**
 `
-succeedWhen(callback: () => undefined): void
+succeedWhen(callback: () => void): void
 `
 
 Runs the given callback every tick. When the callback successfully executes, the test is marked as a success. Specifically, the test will succeed when the callback does not throw an exception.
 #### **Parameters**
-- **callback**: () => undefined
+- **callback**: () => *void*
   
   Testing callback function that runs. If the function runs successfully, the test is marked as a success.
 
@@ -1119,21 +1119,21 @@ Triggers a block event from a fixed list of available block events.
 
 ### **until**
 `
-until(callback: () => undefined): Promise<void>
+until(callback: () => void): Promise<void>
 `
 
 This asynchronous function will wait until the code in the specified callback successfully completes. until can be used in conjunction with .assert functions to evaluate that a condition is true.
 #### **Parameters**
-- **callback**: () => undefined
+- **callback**: () => *void*
   
   Function with code to evaluate.
 
-#### **Returns** Promise&lt;void&gt;
+#### **Returns** Promise&lt;*void*&gt;
 
 
 ### **walkTo**
 `
-walkTo(mob: mojang-minecraft.Entity, blockLocation: mojang-minecraft.BlockLocation, speedModifier: number): void
+walkTo(mob: mojang-minecraft.Entity, blockLocation: mojang-minecraft.BlockLocation, speedModifier?: number): void
 `
 
 Forces a mob to walk to a particular location. Usually used in conjunction with methods like .spawnWithoutBehaviors to have more predictable mob behaviors. Mobs will stop navigation as soon as they intersect the target location.
@@ -1144,7 +1144,7 @@ Forces a mob to walk to a particular location. Usually used in conjunction with 
 - **blockLocation**: [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md)
   
   Location where the entity should be walk to.
-- **speedModifier**: *number*
+- **speedModifier**?: *number* = `1`
   
   Adjustable modifier to the mob's walking speed.
 
@@ -1154,7 +1154,7 @@ Forces a mob to walk to a particular location. Usually used in conjunction with 
 
 ### **walkToLocation**
 `
-walkToLocation(mob: mojang-minecraft.Entity, location: mojang-minecraft.Location, speedModifier: number): void
+walkToLocation(mob: mojang-minecraft.Entity, location: mojang-minecraft.Location, speedModifier?: number): void
 `
 
 Forces a mob to walk to a particular location. Usually used in conjunction with methods like .spawnWithoutBehaviors to have more predictable mob behaviors. Mobs will stop navigation as soon as they intersect the target location.
@@ -1165,7 +1165,7 @@ Forces a mob to walk to a particular location. Usually used in conjunction with 
 - **location**: [*mojang-minecraft.Location*](../mojang-minecraft/Location.md)
   
   Location where the entity should be walk to.
-- **speedModifier**: *number*
+- **speedModifier**?: *number* = `1`
   
   Adjustable modifier to the mob's walking speed.
 

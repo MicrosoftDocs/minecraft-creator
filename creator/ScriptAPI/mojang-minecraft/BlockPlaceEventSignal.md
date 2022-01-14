@@ -19,24 +19,24 @@ Manages callbacks that are connected to when a block is broken.
   
 ### **subscribe**
 `
-subscribe(callback: (arg: BlockPlaceEvent) => undefined): (arg: BlockPlaceEvent) => undefined
+subscribe(callback: (arg: BlockPlaceEvent) => void): (arg: BlockPlaceEvent) => void
 `
 
 Adds a callback that will be called when a block is placed by a player.
 #### **Parameters**
-- **callback**: (arg: BlockPlaceEvent) => undefined
+- **callback**: (arg: [*BlockPlaceEvent*](BlockPlaceEvent.md)) => *void*
 
-#### **Returns** (arg: BlockPlaceEvent) => undefined
+#### **Returns** (arg: [*BlockPlaceEvent*](BlockPlaceEvent.md)) => *void*
 
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: BlockPlaceEvent) => undefined): void
+unsubscribe(callback: (arg: BlockPlaceEvent) => void): void
 `
 
 Removes a callback from being called when an block is placed.
 #### **Parameters**
-- **callback**: (arg: BlockPlaceEvent) => undefined
+- **callback**: (arg: [*BlockPlaceEvent*](BlockPlaceEvent.md)) => *void*
 
 
 > [!WARNING]

@@ -19,25 +19,25 @@ Manages callbacks that are connected to when an effect is added to an entity.
   
 ### **subscribe**
 `
-subscribe(callback: (arg: EffectAddEvent) => undefined, options?: EntityEventOptions): (arg: EffectAddEvent) => undefined
+subscribe(callback: (arg: EffectAddEvent) => void, options?: EntityEventOptions): (arg: EffectAddEvent) => void
 `
 
 Adds a callback that will be called when an effect is added to an entity.
 #### **Parameters**
-- **callback**: (arg: EffectAddEvent) => undefined
+- **callback**: (arg: [*EffectAddEvent*](EffectAddEvent.md)) => *void*
 - **options**?: [*EntityEventOptions*](EntityEventOptions.md) = `null`
 
-#### **Returns** (arg: EffectAddEvent) => undefined
+#### **Returns** (arg: [*EffectAddEvent*](EffectAddEvent.md)) => *void*
 
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: EffectAddEvent) => undefined): void
+unsubscribe(callback: (arg: EffectAddEvent) => void): void
 `
 
 Removes a callback from being called when an effect is added to an entity.
 #### **Parameters**
-- **callback**: (arg: EffectAddEvent) => undefined
+- **callback**: (arg: [*EffectAddEvent*](EffectAddEvent.md)) => *void*
 
 
 > [!WARNING]

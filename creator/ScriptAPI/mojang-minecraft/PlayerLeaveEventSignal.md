@@ -19,24 +19,24 @@ Manages callbacks that are connected to a player leaving the world.
   
 ### **subscribe**
 `
-subscribe(callback: (arg: PlayerLeaveEvent) => undefined): (arg: PlayerLeaveEvent) => undefined
+subscribe(callback: (arg: PlayerLeaveEvent) => void): (arg: PlayerLeaveEvent) => void
 `
 
 Adds a callback that will be called when a player leaves the world.
 #### **Parameters**
-- **callback**: (arg: PlayerLeaveEvent) => undefined
+- **callback**: (arg: [*PlayerLeaveEvent*](PlayerLeaveEvent.md)) => *void*
 
-#### **Returns** (arg: PlayerLeaveEvent) => undefined
+#### **Returns** (arg: [*PlayerLeaveEvent*](PlayerLeaveEvent.md)) => *void*
 
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: PlayerLeaveEvent) => undefined): void
+unsubscribe(callback: (arg: PlayerLeaveEvent) => void): void
 `
 
 Removes a callback from being called when a player leaves the world.
 #### **Parameters**
-- **callback**: (arg: PlayerLeaveEvent) => undefined
+- **callback**: (arg: [*PlayerLeaveEvent*](PlayerLeaveEvent.md)) => *void*
 
 
 > [!WARNING]

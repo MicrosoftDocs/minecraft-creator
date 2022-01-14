@@ -10,13 +10,13 @@ description: Contents of the mojang-minecraft.ItemCooldownComponent class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-When present on an item, this item is edible by entities.
+When present on an item, this item has a cooldown effect when used by entities.
 
 ## Properties
 ### **cooldownCategory**
 `read-only cooldownCategory: string;`
 
-Represents the cooldown category - a string - that this item is associated with.
+Represents the cooldown category that this item is associated with.
 
 Type: *string*
 
