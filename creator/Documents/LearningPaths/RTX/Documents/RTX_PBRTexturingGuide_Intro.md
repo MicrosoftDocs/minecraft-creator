@@ -1,7 +1,7 @@
 ---
 author: v-jillheaden
 ms.author: v-jillheaden
-title: Physically Based Texturing Guide
+title: Physically Based Texturing Guide - Introduction
 ms.prod: gaming
 description: A guide to creating textures using RTX Physically-Based Rendering
 ---
@@ -18,18 +18,15 @@ By the end of this guide, you will learn:
 >
 > What are the new Texture Maps available for textures in Minecraft.
 > How to create a Mirror Texture Set using roughness and metallic maps.
-> How to create a PBR Texture Set for an existing vanilla block.
 
 ### Requirements
 
 You will need to complete the following tutorials;
 
 - [Introduction to Resource Packs](../../../ResourcePack.md)
+- A Resource Pack with a `textures/blocks` folder structure setup.
 
 While textures will be provided, you will also need to have a digital painting software in order to create your own textures.
-
-- Adobe Photoshop
-- Paint.net
 
 ## What makes a PBR Texture?
 
@@ -48,9 +45,6 @@ With the introduction of PBR to Minecraft, Textures can now use five additonal m
 - [Height Map](#height-map)
 
 Each map will be apart of the texture set for the block, each one layered one on top of the other to drive different values in the texture. This process allows a creator to have a strong control over how a block will render when placed in the world.
-
-> [!TIP]
-> To learn more about texture sets, please visit [Texture Set Documentation - Introduction to Texture Sets](../../../../Reference/Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md)
 
 > [!IMPORTANT]
 > Not all PBR texture sets require all six maps. Leaving empty maps will cause the Texture set to use the default value that is used by the Vanilla texture set information.
@@ -99,6 +93,55 @@ A Height map is a greyscale texture that controls depth. Height maps act as an a
 
 ## Making a Mirror
 
+Now that you know about each of the different types of texture maps that are supported with the new PBR workflow, you will learn how to create a mirror texture for an existing vanilla glass block with creating a Texture Set JSON and a provided texture file.
+
 ### Texture Set JSON
 
+In order for the Texture Set to work properly, you will need to define a .JSON file in order to load the textures. The example below showcases the mirror example working with the **glass_black** block.
+
+> [!TIP]
+> To learn more about texture sets, please visit [Texture Set Documentation - Introduction to Texture Sets](../../../../Reference/Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md)
+
+1. In your behavior pack, navigate to the `textures/blocks` folder.
+1. Create a new .JSON file titled `glass_black.texture_set.json.
+1. Double-click on `glass_black.texture_set.json` to edit the contents.
+1. Copy the following example.
+
+#### glass_black.texture_set.json
+
+```JSON
+{
+  "format_version": "1.16.100",
+  "minecraft:texture_set": {
+    "color": "glass_black",
+    "metalness_emissive_roughness": "glass_black_mer",
+}
+```
+
+5. Save the file and close.
+
+With the JSON file now set up, you can now set up the textures for the `color` value and the `metalness_emissive_roughness` value.
+
 ### Adding the Textures
+
+To create a mirror in a PBR workflow, you only require two maps; a roughness map and a metalness map. When you set a roughness map to a value of `0.0` or solid black, you will create a smooth surface for light to bounce directly off of. With a metalness map set to a value of `1.0` or solid white, the object will be rendered as per metal and reflective. With this mirror set up, the Render Dragon engine will be able to ray trace with less time handling calculations for these objects.
+
+<insert file>
+
+1. Click and download the `glass_black_mer.png` file.
+1. Click and download the `glass_black.png` file.
+1. Copy and paste both .png files in the `textures/blocks` folder.
+
+## Running the Texture Pack
+
+With the JSON file properly set up, and both textures are in place, you can now load in your texture pack to test in Minecraft.
+
+> [!IMPORTANT]
+> Before packaging up your texture pack, there is an additonal step that will need to be done in order to properly load the textures and ray tracing features.
+>
+> - The `manifest.json` file for the pack requires the value `"raytraced"` to be added in the `capabilities` section.
+
+
+## What's Next?
+
+Now that you have created a Mirror in
