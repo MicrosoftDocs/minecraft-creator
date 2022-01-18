@@ -98,6 +98,8 @@ Since the Redstone block is a bit of a polished stone, we are going to create a 
 1. Under **Advanced Blending**, un-check the Red and Green channels so that Blue is the only one with a checkbox.
 1. Select **Ok** to close the **Blending Options** window.
 
+<insert image>
+
 With the maps being grouped together in a single Layer Group called Roughness, you can combine multiple layers to paint multiple values without having to worry about any overlapping or interrupting work.
 
 ### Emissive
@@ -115,6 +117,8 @@ While the Redstone block doesn't natively emit any light, we are going to add a 
 1. Under **Advanced Blending**, un-check the Red and Blue channels so that Green is the only one with a checkbox.
 1. Select **Ok** to close the **Blending Options** window.
 
+<insert image>
+
 ### Metallic
 
 Finally, for the metallic map, we are going to use an inverse of the emissive map so that the more emissive portions will have a more metallic look compared to the edges.
@@ -127,3 +131,14 @@ Finally, for the metallic map, we are going to use an inverse of the emissive ma
 1. Right-click on the **Metallic** layer group and select **Blending Options**.
 1. Under **Advanced Blending**, un-check the Green and Blue channels so that Red is the only one with a checkbox.
 1. Select **Ok** to close the **Blending Options** window.
+
+<insert image>
+
+### Exporting the file
+
+With all three texture maps set up and assigned correctly, you can now export the file out.
+
+1. Select **File...Save As...** and save the file as `redstone_block_mer.png`.
+
+<insert image>
+
