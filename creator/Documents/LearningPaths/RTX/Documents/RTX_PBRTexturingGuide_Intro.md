@@ -3,7 +3,7 @@ author: v-jillheaden
 ms.author: v-jillheaden
 title: Physically Based Texturing Guide - Introduction
 ms.prod: gaming
-description: A guide to creating textures using RTX Physically-Based Rendering
+description: An introduction to the Physically Based Rendering solutions
 ---
 
 # Physically Based Texturing Guide - Introduction

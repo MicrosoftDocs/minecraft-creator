@@ -3,7 +3,7 @@ author: v-jillheaden
 ms.author: v-jillheaden
 title: Physically Based Texturing Guide - Workflow
 ms.prod: gaming
-description: A guide to creating textures using RTX Physically-Based Rendering
+description: A guide to creating textures using RTX Physically-Based Rendering with Adobe Photoshop
 ---
 
 # Physically Based Texturing Guide - Workflow
