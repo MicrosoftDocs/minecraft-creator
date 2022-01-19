@@ -6,7 +6,7 @@ ms.prod: gaming
 description: A guide to creating textures using RTX Physically-Based Rendering
 ---
 
-# Physically Based Texturing Guide
+# Physically Based Texturing Guide - Introduction
 
 Physically Based Rendering, also known as PBR, is a type of render solution that simulates how materials would react to realistic light behavior. Examples of this includes how certain metallic properties will cast reflections or how light bends and refracts through different types of glass.
 
@@ -36,7 +36,7 @@ An example of this is shown in the water lily plant texture (need to scale up)
 
 :::image type="content" source="../../../../Reference/Source/VanillaResourcePack/textures/blocks/waterlily.png" alt-text="Texture used in minecraft to drive the appearance of a water lily":::
 
-With the introduction of PBR to Minecraft, Textures can now use five additonal maps in order to help creators create realistic materials.
+With the introduction of PBR to Minecraft, Textures can now use five additional maps in order to help creators create realistic materials.
 
 - [Metallic Map](#metallic-map)
 - [Emissive Map](#emissive-map)
@@ -137,11 +137,13 @@ To create a mirror in a PBR workflow, you only require two maps; a roughness map
 With the JSON file properly set up, and both textures are in place, you can now load in your texture pack to test in Minecraft.
 
 > [!IMPORTANT]
-> Before packaging up your texture pack, there is an additonal step that will need to be done in order to properly load the textures and ray tracing features.
+> Before packaging up your texture pack, there is an additional step that will need to be done in order to properly load the textures and ray tracing features.
 >
 > - The `manifest.json` file for the pack requires the value `"raytraced"` to be added in the `capabilities` section.
 
-
 ## What's Next?
 
-Now that you have created a Mirror in
+Now that you have created a Mirror utilizing the roughness and metalness map, you can take a look at the next part of this guide that covers how to create custom textures in Adobe Photoshop and create your own texture set.
+
+> [!div class="nextstepaction"]
+> [Physically Based Texturing Guide - Workflow](Documents/RTX_PBRTexturingGuide_Workflow.md)
