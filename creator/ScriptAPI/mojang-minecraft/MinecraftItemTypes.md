@@ -3499,6 +3499,18 @@ Represents an item that can place a frame within Minecraft.
 Type: [*ItemType*](ItemType.md)
 
 
+### **frogEgg**
+`static read-only frogEgg: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **frogSpawnEgg**
+`static read-only frogSpawnEgg: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
 ### **frostedIce**
 `static read-only frostedIce: ItemType;`
 
@@ -3559,6 +3571,12 @@ Type: [*ItemType*](ItemType.md)
 
 ### **glisteringMelonSlice**
 `static read-only glisteringMelonSlice: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **globeBannerPattern**
+`static read-only globeBannerPattern: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -5307,6 +5325,12 @@ Type: [*ItemType*](ItemType.md)
 Type: [*ItemType*](ItemType.md)
 
 
+### **ochreFroglight**
+`static read-only ochreFroglight: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
 ### **orangeCandle**
 `static read-only orangeCandle: ItemType;`
 
@@ -5405,6 +5429,12 @@ Type: [*ItemType*](ItemType.md)
 
 ### **parrotSpawnEgg**
 `static read-only parrotSpawnEgg: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **pearlescentFroglight**
+`static read-only pearlescentFroglight: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -7033,6 +7063,12 @@ Represents an item that can place a sweet berry bush within Minecraft.
 Type: [*ItemType*](ItemType.md)
 
 
+### **tadpoleSpawnEgg**
+`static read-only tadpoleSpawnEgg: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
 ### **tallgrass**
 `static read-only tallgrass: ItemType;`
 
@@ -7221,6 +7257,12 @@ Type: [*ItemType*](ItemType.md)
 `static read-only unpoweredRepeater: ItemType;`
 
 Represents an item that can place an unpowered repeater within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **verdantFroglight**
+`static read-only verdantFroglight: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 

@@ -19,6 +19,9 @@ ms.prod: gaming
 
 `minecraft:placement_filter` can use the following conditions
 
+> [!NOTE]
+> `allowed_faces` and `block_filter` will need to be placed in the "conditions":[] array in order to work properly.
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |allowed_faces|*not set* | Array| List of any of the following strings: up, down, north, south, east, west, side, all |
@@ -28,7 +31,11 @@ ms.prod: gaming
 
 ```json
 "minecraft:placement_filter":{
-    "allowed_faces": ["up", "down", "side"],
-    "block_filter": ["grass", "dirt"]
+    "conditions": [
+    {
+        "allowed_faces": ["up", "down", "side"],
+        "block_filter": ["grass", "dirt"]
+    }
+    ]
 }
 ```

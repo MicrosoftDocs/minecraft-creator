@@ -19,14 +19,14 @@ Manages callbacks that are connected to chat messages being sent.
   
 ### **subscribe**
 `
-subscribe(callback: (arg: ChatEvent) => undefined): (arg: ChatEvent) => undefined
+subscribe(callback: (arg: ChatEvent) => void): (arg: ChatEvent) => void
 `
 
 Adds a callback that will be called when new chat messages are sent.
 #### **Parameters**
-- **callback**: (arg: ChatEvent) => undefined
+- **callback**: (arg: [*ChatEvent*](ChatEvent.md)) => *void*
 
-#### **Returns** (arg: ChatEvent) => undefined
+#### **Returns** (arg: [*ChatEvent*](ChatEvent.md)) => *void*
 
 
 #### **Examples**
@@ -44,12 +44,12 @@ eventData.message = `Modified '${eventData.message}'`;
 ```
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ChatEvent) => undefined): void
+unsubscribe(callback: (arg: ChatEvent) => void): void
 `
 
 Removes a callback from being called when new chat messages are sent.
 #### **Parameters**
-- **callback**: (arg: ChatEvent) => undefined
+- **callback**: (arg: [*ChatEvent*](ChatEvent.md)) => *void*
 
 
 > [!WARNING]
