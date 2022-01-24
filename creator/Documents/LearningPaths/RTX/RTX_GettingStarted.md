@@ -53,14 +53,21 @@ Ray tracing is a series of computer rendering techniques that bring more realist
 > [!div class="nextstepaction"]
 > [Ray Tracing in Minecraft: Bedrock Edition](Documents/RTX_WhatIsRayTracing.md)
 
-### Part 2 - Physically Based Texturing Guide
+### Part 2 - Physically Based Texturing Guide - Introduction
 
-You will learn about how player speed and collision works in-game by designing specific jumps around what a player is capable of.
+You will learn what each new texture map can enable Creators to build and design photorealistic materials and lighting effects, and how to utilize texture maps to create a mirror in-game.
 
 > [!div class="nextstepaction"]
-> [Physically Based Texturing Guide](Documents/RTX_PBRTexturingGuide.md)
+> [Physically Based Texturing Guide - Introduction](Documents/RTX_PBRTexturingGuide_Intro.md)
 
-### Part 3 - Fog In Resources
+### Part 3 - Physically Based Texturing Guide - Workflow
+
+In this part, you will learn how to create physically based textures by creating a series of texture maps to create your own texture set for use on the Redstone block.
+
+> [!div class="nextstepaction"]
+> [Physically Based Texturing Guide - Workflow](Documents/RTX_PBRTexturingGuide_Workflow.md)
+
+### Part 4 - Fog In Resources
 
 Along with Ray Tracing, Fogs in Minecraft have been updated to utilize a similar JSON structure to allow you to create and control the appearance of in-game fog.
 
