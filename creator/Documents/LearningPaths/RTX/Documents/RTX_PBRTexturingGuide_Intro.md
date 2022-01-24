@@ -1,6 +1,6 @@
 ---
-author: v-jillheaden
-ms.author: v-jillheaden
+author: v-josjones
+ms.author: v-josjones
 title: Physically Based Texturing Guide - Introduction
 ms.prod: gaming
 description: An introduction to the Physically Based Rendering solutions
