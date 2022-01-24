@@ -2782,6 +2782,12 @@ Represents a frame within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
+### **frogEgg**
+`static read-only frogEgg: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
 ### **frostedIce**
 `static read-only frostedIce: BlockType;`
 
@@ -3746,6 +3752,12 @@ Represents an obsidian block within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
+### **ochreFroglight**
+`static read-only ochreFroglight: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
 ### **orangeCandle**
 `static read-only orangeCandle: BlockType;`
 
@@ -3814,6 +3826,12 @@ Type: [*BlockType*](BlockType.md)
 `static read-only packedIce: BlockType;`
 
 Represents a block of packed ice within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **pearlescentFroglight**
+`static read-only pearlescentFroglight: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -5134,6 +5152,12 @@ Type: [*BlockType*](BlockType.md)
 `static read-only unpoweredRepeater: BlockType;`
 
 Represents an unpowered repeater within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **verdantFroglight**
+`static read-only verdantFroglight: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 

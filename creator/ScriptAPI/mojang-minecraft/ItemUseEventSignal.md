@@ -19,24 +19,24 @@ Manages callbacks that are connected to an item use event.
   
 ### **subscribe**
 `
-subscribe(callback: (arg: ItemUseEvent) => undefined): (arg: ItemUseEvent) => undefined
+subscribe(callback: (arg: ItemUseEvent) => void): (arg: ItemUseEvent) => void
 `
 
 Adds a callback that will be called when an item is used.
 #### **Parameters**
-- **callback**: (arg: ItemUseEvent) => undefined
+- **callback**: (arg: [*ItemUseEvent*](ItemUseEvent.md)) => *void*
 
-#### **Returns** (arg: ItemUseEvent) => undefined
+#### **Returns** (arg: [*ItemUseEvent*](ItemUseEvent.md)) => *void*
 
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ItemUseEvent) => undefined): void
+unsubscribe(callback: (arg: ItemUseEvent) => void): void
 `
 
 Removes a callback from being called when an item is used.
 #### **Parameters**
-- **callback**: (arg: ItemUseEvent) => undefined
+- **callback**: (arg: [*ItemUseEvent*](ItemUseEvent.md)) => *void*
 
 
 > [!WARNING]

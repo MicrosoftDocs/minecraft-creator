@@ -45,6 +45,7 @@
       "extendBreadcrumb": true,
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/minecraft-creator",
+      "ms.topic": "reference",
       "uhfHeaderId": "minecraft-creator"
     },
     "fileMetadata": {

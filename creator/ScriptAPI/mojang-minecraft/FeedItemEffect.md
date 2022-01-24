@@ -32,7 +32,7 @@ Type: *number*
 ### **duration**
 `read-only duration: number;`
 
-Gets the duration, in seconds, of this effect.
+Gets the duration, in ticks, of this effect.
 
 Type: *number*
 

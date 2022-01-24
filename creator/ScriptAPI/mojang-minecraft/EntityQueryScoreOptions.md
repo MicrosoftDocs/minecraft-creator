@@ -24,7 +24,7 @@ Type: *boolean*
 ### **maxScore**
 `maxScore: number;`
 
-If defined, only players that have a score under maxScore are included.
+If defined, only players that have a score equal to or under maxScore are included.
 
 Type: *number*
 
@@ -32,7 +32,7 @@ Type: *number*
 ### **minScore**
 `minScore: number;`
 
-If defined, only players that have a score over minScore are included.
+If defined, only players that have a score equal to or over minScore are included.
 
 Type: *number*
 

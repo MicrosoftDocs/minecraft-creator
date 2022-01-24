@@ -10,6 +10,9 @@ description: Contents of the mojang-minecraft.StringBlockProperty class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
+## Base Types
+- [*IBlockProperty*](IBlockProperty.md)
+
 Contains the state of a string-based property for a [*mojang-minecraft.BlockPermutation*](../mojang-minecraft/BlockPermutation.md).
 
 ## Properties

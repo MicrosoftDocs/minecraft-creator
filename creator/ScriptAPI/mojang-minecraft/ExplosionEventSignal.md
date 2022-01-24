@@ -19,24 +19,24 @@ Manages callbacks that are connected to when an explosion occurs.
   
 ### **subscribe**
 `
-subscribe(callback: (arg: ExplosionEvent) => undefined): (arg: ExplosionEvent) => undefined
+subscribe(callback: (arg: ExplosionEvent) => void): (arg: ExplosionEvent) => void
 `
 
 Adds a callback that will be called when an explosion occurs.
 #### **Parameters**
-- **callback**: (arg: ExplosionEvent) => undefined
+- **callback**: (arg: [*ExplosionEvent*](ExplosionEvent.md)) => *void*
 
-#### **Returns** (arg: ExplosionEvent) => undefined
+#### **Returns** (arg: [*ExplosionEvent*](ExplosionEvent.md)) => *void*
 
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ExplosionEvent) => undefined): void
+unsubscribe(callback: (arg: ExplosionEvent) => void): void
 `
 
 Removes a callback from being called when an explosion occurs.
 #### **Parameters**
-- **callback**: (arg: ExplosionEvent) => undefined
+- **callback**: (arg: [*ExplosionEvent*](ExplosionEvent.md)) => *void*
 
 
 > [!WARNING]

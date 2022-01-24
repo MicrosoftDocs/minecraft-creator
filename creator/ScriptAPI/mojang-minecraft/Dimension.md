@@ -62,13 +62,13 @@ Returns a block instance at the given location. This method was introduced as of
 
 ### **getBlockFromRay**
 `
-getBlockFromRay(location: Location, direction: Location, options?: BlockRaycastOptions): Block
+getBlockFromRay(location: Location, direction: Vector, options?: BlockRaycastOptions): Block
 `
 
 Gets the first block that intersects with a vector emanating from a location.
 #### **Parameters**
 - **location**: [*Location*](Location.md)
-- **direction**: [*Location*](Location.md)
+- **direction**: [*Vector*](Vector.md)
 - **options**?: [*BlockRaycastOptions*](BlockRaycastOptions.md) = `null`
   
   Additional options for processing this raycast query.
@@ -108,13 +108,13 @@ Returns a set of entities at a particular location.
 
 ### **getEntitiesFromRay**
 `
-getEntitiesFromRay(location: Location, direction: Location, options?: EntityRaycastOptions): Entity[]
+getEntitiesFromRay(location: Location, direction: Vector, options?: EntityRaycastOptions): Entity[]
 `
 
 Gets entities that intersect with a specified vector emanating from a location.
 #### **Parameters**
 - **location**: [*Location*](Location.md)
-- **direction**: [*Location*](Location.md)
+- **direction**: [*Vector*](Vector.md)
 - **options**?: [*EntityRaycastOptions*](EntityRaycastOptions.md) = `null`
   
   Additional options for processing this raycast query.
@@ -176,7 +176,7 @@ world.getDimension("overworld").runCommand("scoreboard players set @p score 10")
 ```
 ### **spawnEntity**
 `
-spawnEntity(identifier: string, location: BlockLocation): Entity
+spawnEntity(identifier: string, location: BlockLocation | Location): Entity
 `
 
 Creates a new entity (e.g., a mob) at the specified location. This method was introduced as of version 1.17.10.21.
@@ -184,7 +184,7 @@ Creates a new entity (e.g., a mob) at the specified location. This method was in
 - **identifier**: *string*
   
   Identifier of the type of entity to spawn. If no namespace is specified, 'minecraft:' is assumed.
-- **location**: [*BlockLocation*](BlockLocation.md)
+- **location**: [*BlockLocation*](BlockLocation.md) | [*Location*](Location.md)
   
   The location at which to create the entity.
 
