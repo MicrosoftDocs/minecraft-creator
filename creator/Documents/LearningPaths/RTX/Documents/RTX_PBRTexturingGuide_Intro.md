@@ -30,13 +30,13 @@ While textures will be provided, you will also need to have a digital painting s
 
 ## What makes a PBR Texture?
 
-Textures within Minecraft a common method of rendering called Texture Mapping. Texture maps allows for creators to layer multiple images to create highly detailed 3D objects. Vanilla Minecraft textures uses a single map called **color**. Color maps are made up of four color channels; Red, Blue, Green, Alpha, (collectively known as RGBA). The first three channels will control how the texture will render, while alpha will control transparency of the texture.
+Textures within Minecraft use a common method of rendering called **Texture Mapping**. Texture maps allow creators to layer multiple images to create highly-detailed 3D objects. Vanilla Minecraft textures use a single map called **color**. Color maps are made up of four color channels: Red, Blue, Green, and Alpha, (collectively known as RGBA). The first three channels control how the texture will render, while alpha controls the transparency of the texture.
 
 An example of this is shown in the water lily plant texture (need to scale up)
 
 :::image type="content" source="../../../../Reference/Source/VanillaResourcePack/textures/blocks/waterlily.png" alt-text="Texture used in minecraft to drive the appearance of a water lily":::
 
-With the introduction of PBR to Minecraft, Textures can now use five additional maps in order to help creators create realistic materials.
+With the introduction of PBR to Minecraft, textures can now use five additional maps to help creators create realistic materials.
 
 - [Metallic Map](#metallic-map)
 - [Emissive Map](#emissive-map)
@@ -44,48 +44,48 @@ With the introduction of PBR to Minecraft, Textures can now use five additional 
 - [Normal Map](#normal-map)
 - [Height Map](#height-map)
 
-Each map will be apart of the texture set for the block, each one layered one on top of the other to drive different values in the texture. This process allows a creator to have a strong control over how a block will render when placed in the world.
+Each map will be part of the texture set for the block, with each one layered on top of the other to drive different values in the texture. This process allows a creator to have strong control over how a block will render when placed in the world.
 
 > [!IMPORTANT]
-> Not all PBR texture sets require all six maps. Leaving empty maps will cause the Texture set to use the default value that is used by the Vanilla texture set information.
+> Not all PBR texture sets require all maps. Leaving empty maps will cause the texture set to use the default value used by the Vanilla texture set information.
 
 ### Metallic Map
 
-A Metallic map is a greyscale texture that will drive how metallic the texture will look.
+A Metallic map is a grayscale texture that will drive how metallic the texture will look.
 
-- A pixel that is set to black is considered a value of `0` and will treat the pixel as non-metallic. Examples of non-metallic objects would be grass, dirt, tree bark.
-- A pixel that is set to white is considered a value of `1` and will treat the pixel as 100% metal. Examples of metallic objects would be iron, gold, copper.
-- Since the map is in greyscale, you can set values in-between `0` and `1`.
+- A pixel that is set to black is considered a value of `0` and the pixel is non-metallic. Examples of non-metallic objects would be grass, dirt, or tree bark.
+- A pixel that is set to white is considered a value of `1` and will treat the pixel as 100% metal. Examples of metallic objects would be iron, gold, or copper.
+- Because the map is in grayscale, you can set values between `0` and `1`.
 
 ### Emissive Map
 
-An Emissive map is a greyscale texture that will drive how much the texture will glow.
+An Emissive map is a grayscale texture that will drive how much the texture will glow, or emit light.
 
-- A pixel that is set to black is considered a value of `0` and will treat the pixel not glowing.
-- A pixel that is set to white is considered a value of `1` and will treat the pixel glowing at it's brightest.
-- Since the map is in greyscale, you can set values in-between `0` and `1`.
+- A pixel that is set to black is considered a value of `0` and is not glowing.
+- A pixel that is set to white is considered a value of `1` and is glowing at its brightest.
+- Because the map is in grayscale, you can set values between `0` and `1`.
 
 ### Roughness Map
 
-A Roughness map is a greyscale texture that will drive the 'roughness' look and feel of the texture.
+A Roughness map is a grayscale texture that will drive the 'roughness' look of the texture.
 
-- A pixel that is set to black is considered a value of `0` and will treat the pixel as very smooth. Examples of this would be objects like smooth marble, glass, smooth plastic.
-- A pixel that is set to white is considered a value of `1` and will treat the pixel as very rough. Examples of this would include brick, tree bark, stones.
-- Since the map is in greyscale, you can set values in-between `0` and `1`.
+- A pixel that is set to black is considered a value of `0` and will treat the pixel as very smooth. Examples of this would be objects like smooth marble, glass, or smooth plastic.
+- A pixel that is set to white is considered a value of `1` and will treat the pixel as very rough. Examples of this would include brick, tree bark, or stones.
+- Because the map is in grayscale, you can set values between `0` and `1`.
 
 ### Normal Map
 
-A Normal map is a RGB texture that controls depth and how light will behave when a light ray hits the texture.
+A Normal map is a RGB texture that controls depth and how light behaves when a light ray hits the texture.
 
-- Since Normal maps use RGB, you can create surface details that gives the texture the appearance of a sculpted 3D object.
-- Setting the RGB values to `128`,`128`, `255` respectively will result in a flat appearance of the the pixel.
+- Because Normal maps use RGB, you can create surface details that give the texture the appearance of a sculpted 3D object.
+- Setting the RGB values to `128`,`128`,`255` respectively will result in a flat appearance of the the pixel.
 
 > [!CAUTION]
-> Unless you have had previous experience with creating normal maps, it is recommended that you do not create normal maps by hand. There are third party software available to assist with creating normal maps.
+> Unless you have had previous experience with creating Normal maps, it is recommended that you do not create Normal maps by hand. Third party software is available to assist with creating Normal maps.
 
 ### Height Map
 
-A Height map is a greyscale texture that controls depth. Height maps act as an alternative to Normal maps but has limitations.
+A Height map is a grayscale texture that controls depth. Height maps act as an alternative to Normal maps, but have limitations.
 
 - A pixel that is set to black is considered a value of `0` and will cause the pixel to extrude inward.
 - A pixel that is set to white is considered a value of `1` and will cause the pixel to extrude outward.
@@ -93,17 +93,17 @@ A Height map is a greyscale texture that controls depth. Height maps act as an a
 
 ## Making a Mirror
 
-Now that you know about each of the different types of texture maps that are supported with the new PBR workflow, you will learn how to create a mirror texture for an existing vanilla glass block with creating a Texture Set JSON and a provided texture file.
+Now that you know about each of the different types of texture maps that are supported with the new PBR workflow, you will learn how to create a mirror texture for an existing vanilla glass block by creating a Texture Set JSON file and using a provided texture file.
 
 ### Texture Set JSON
 
-In order for the Texture Set to work properly, you will need to define a .JSON file in order to load the textures. The example below showcases the mirror example working with the **glass_black** block.
+For the Texture Set to work properly, you will need to define a JSON file to load the textures. The example below showcases the mirror example working with the **glass_black** block.
 
 > [!TIP]
 > To learn more about texture sets, please visit [Texture Set Documentation - Introduction to Texture Sets](../../../../Reference/Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md)
 
 1. In your behavior pack, navigate to the `textures/blocks` folder.
-1. Create a new .JSON file titled `glass_black.texture_set.json.
+1. Create a new .JSON file and name it `glass_black.texture_set.json.
 1. Double-click on `glass_black.texture_set.json` to edit the contents.
 1. Copy the following example.
 
@@ -118,23 +118,23 @@ In order for the Texture Set to work properly, you will need to define a .JSON f
 }
 ```
 
-5. Save the file and close.
+5. Save and close the file.
 
-With the JSON file now set up, you can now set up the textures for the `color` value and the `metalness_emissive_roughness` value.
+With the JSON file set up, you can now configure the textures for the `color` value and the `metalness_emissive_roughness` value.
 
 ### Adding the Textures
 
-To create a mirror in a PBR workflow, you only require two maps; a roughness map and a metalness map. When you set a roughness map to a value of `0.0` or solid black, you will create a smooth surface for light to bounce directly off of. With a metalness map set to a value of `1.0` or solid white, the object will be rendered as per metal and reflective. With this mirror set up, the Render Dragon engine will be able to ray trace with less time handling calculations for these objects.
+To create a mirror in a PBR workflow, you require two maps; a roughness map and a metalness map. When you set a roughness map to a value of `0.0`, or solid black, you will create a smooth surface for light to bounce directly off of. With a metalness map set to a value of `1.0`, or solid white, the object will be rendered like reflective metal. With this mirror set up, the Render Dragon engine will be able to ray trace with less time handling calculations for these objects.
 
 <insert file>
 
 1. Click and download the `glass_black_mer.png` file.
 1. Click and download the `glass_black.png` file.
-1. Copy and paste both .png files in the `textures/blocks` folder.
+1. Copy and paste both .png files into the `textures/blocks` folder.
 
 ## Running the Texture Pack
 
-With the JSON file properly set up, and both textures are in place, you can now load in your texture pack to test in Minecraft.
+With the JSON file properly set up and both textures in place, you can now load in your texture pack to test in Minecraft.
 
 > [!IMPORTANT]
 > Before packaging up your texture pack, there is an additional step that will need to be done in order to properly load the textures and ray tracing features.
@@ -143,7 +143,7 @@ With the JSON file properly set up, and both textures are in place, you can now 
 
 ## What's Next?
 
-Now that you have created a Mirror utilizing the roughness and metalness map, you can take a look at the next part of this guide that covers how to create custom textures in Adobe Photoshop and create your own texture set.
+Now that you have created a Mirror utilizing the roughness and metalness maps, you can take a look at the next part of this guide that covers how to create custom textures in Adobe Photoshop and create your own texture set.
 
 > [!div class="nextstepaction"]
 > [Physically Based Texturing Guide - Workflow](Documents/RTX_PBRTexturingGuide_Workflow.md)
