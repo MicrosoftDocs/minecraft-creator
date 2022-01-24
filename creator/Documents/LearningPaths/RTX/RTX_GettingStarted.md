@@ -34,12 +34,12 @@ By the end of this series, you will learn:
 
 It’s recommended that you have the following on hand when working with Ray Tracing in Minecraft: Bedrock Edition
 
-- OS (Operation Systems): Windows 64-bit.
-- GPU: DirectX hardware ray tracing capable GPU like NVIDIA GeForce® RTX 20 Series and higher, and AMD Radeon RX 6000 Series and higher.
-- Hardware: PC.
-- CPU: Intel Core i5 or equivalent.
-- RAM: At least 8 GB of RAM.
-- A version of Minecraft: 1.16.200 or higher.
+- Operating System (OS): Windows 64-bit
+- GPU: DirectX hardware ray tracing capable GPU like NVIDIA GeForce® RTX 20 Series and higher, and AMD Radeon RX 6000 Series and higher
+- Hardware: PC
+- CPU: Intel Core i5 or equivalent
+- RAM: At least 8 GB of RAM
+- Minecraft: version 1.16.200 or higher
 
 > [!IMPORTANT]
 > Virtual reality headsets and Mixed Reality (MR) headsets are not supported.
@@ -48,28 +48,28 @@ It’s recommended that you have the following on hand when working with Ray Tra
 
 ### Part 1 - What is Ray Tracing
 
-Ray tracing is a series of computer rendering techniques that bring more realistic lighting to scenes. In this section, you will learn more about the different types of Ray Tracing techniques used by Minecraft and also go over some of the more commonly asked questions.
+Ray Tracing is a series of computer rendering techniques that brings more realistic lighting to scenes. In this section, you will learn more about the different types of Ray Tracing techniques used by Minecraft and also go over some of the more commonly asked questions.
 
 > [!div class="nextstepaction"]
 > [Ray Tracing in Minecraft: Bedrock Edition](Documents/RTX_WhatIsRayTracing.md)
 
 ### Part 2 - Physically Based Texturing Guide - Introduction
 
-You will learn what each new texture map can enable Creators to build and design photorealistic materials and lighting effects, and how to utilize texture maps to create a mirror in-game.
+You will learn what each new texture map Creators can use to build and design photorealistic materials and lighting effects, and how to use texture maps to create a mirror in-game.
 
 > [!div class="nextstepaction"]
 > [Physically Based Texturing Guide - Introduction](Documents/RTX_PBRTexturingGuide_Intro.md)
 
 ### Part 3 - Physically Based Texturing Guide - Workflow
 
-In this part, you will learn how to create physically based textures by creating a series of texture maps to create your own texture set for use on the Redstone block.
+In this part, you will learn how to create physically based textures by creating a series of texture maps for your own texture set to use on the Redstone block.
 
 > [!div class="nextstepaction"]
 > [Physically Based Texturing Guide - Workflow](Documents/RTX_PBRTexturingGuide_Workflow.md)
 
 ### Part 4 - Fog In Resources
 
-Along with Ray Tracing, Fogs in Minecraft have been updated to utilize a similar JSON structure to allow you to create and control the appearance of in-game fog.
+Along with Ray Tracing, fog in Minecraft has been updated to use a similar JSON structure that allows you to create and control the appearance of in-game fog.
 
 > [!div class="nextstepaction"]
 > [Fog in Resource Packs](../../FogInResourcePacks.md)
