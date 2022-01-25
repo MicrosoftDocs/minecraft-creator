@@ -156,4 +156,4 @@ With the JSON file properly set up and both textures in place, you can now load 
 Now that you have created a Mirror utilizing the roughness and metalness maps, you can take a look at the next part of this guide that covers how to create custom textures in Adobe Photoshop and create your own texture set.
 
 > [!div class="nextstepaction"]
-> [Physically Based Texturing Guide - Workflow](Documents/RTX_PBRTexturingGuide_Workflow.md)
+> [Physically Based Texturing Guide - Workflow](RTX_PBRTexturingGuide_Workflow.md)

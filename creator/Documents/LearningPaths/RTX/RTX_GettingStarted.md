@@ -14,19 +14,11 @@ Minecraft: Bedrock Edition for Windows 10/11 has been upgraded with cutting-edge
 :::row:::
     :::column:::
         :::image type="content" source="Media/RT - Not Emissive-850px.jpg" alt-text="Image showcasing a standard Minecraft world with no ray tracing enabled":::
-<<<<<<< HEAD
-        **Ray Tracing Off with Physically Based Textures**
+        **Ray Tracing Off with Physically-Based Textures**
     :::column-end:::
     :::column:::
         :::image type="content" source="Media/RT - Emissive-850px.jpg" alt-text="Image showcasing a standard Minecraft world with Ray Tracing enabled":::
-        **Ray Tracing On with Physically Based Textures**
-=======
-        Ray Tracing Off with Physically-Based Textures
-    :::column-end:::
-    :::column:::
-        :::image type="content" source="Media/RT - Emissive-850px.jpg" alt-text="Image showcasing a standard Minecraft world with Ray Tracing enabled":::
-        Ray Tracing On with Physically-Based Textures
->>>>>>> 867e03c245f45b99600bac6c4e62da245dcb7c4c
+        **Ray Tracing On with Physically-Based Textures**
     :::column-end:::
 :::row-end:::
 
