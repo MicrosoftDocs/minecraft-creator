@@ -1,24 +1,24 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Getting Started - Ray Tracing
+title: Ray Tracing - Getting Started
 ms.prod: gaming
 ms.topic: tutorial
 description: "An introduction to the Ray Tracing features in Minecraft: Bedrock Edition"
 ---
 
-# Getting Started - Ray Tracing
+# Ray Tracing - Getting Started
 
 Minecraft: Bedrock Edition for Windows 10/11 has been upgraded with cutting-edge path-traced ray tracing, enabling gamers and world builders to craft incredible new sights and immersive environments. To take full advantage of the new possibilities ray tracing introduced in the free 1.16.200 update for Minecraft, physically-based textures have also been introduced, featuring extra surface detail, the ability to emit light, and more. To further enhance the visual experience of RTX, creators can also define their own settings for the fog via resource packs.
 
 :::row:::
     :::column:::
         :::image type="content" source="Media/RT - Not Emissive-850px.jpg" alt-text="Image showcasing a standard Minecraft world with no ray tracing enabled":::
-        Ray Tracing Off with Physically Based Textures
+        **Ray Tracing Off with Physically Based Textures**
     :::column-end:::
     :::column:::
         :::image type="content" source="Media/RT - Emissive-850px.jpg" alt-text="Image showcasing a standard Minecraft world with Ray Tracing enabled":::
-        Ray Tracing On with Physically Based Textures
+        **Ray Tracing On with Physically Based Textures**
     :::column-end:::
 :::row-end:::
 

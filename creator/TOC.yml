@@ -54,6 +54,12 @@
               href: Documents/IntroductionToLootTables.md
             - name: Loot and Trade Table Functions
               href: Documents/LootAndTradeTableFunctions.md
+        - name: Physically Based Rendering
+          items:
+            - name: Ray Tracing - Getting Started
+              href: Documents/LearningPaths/RTX/RTX_GettingStarted.md
+            - name: Ray Tracing - Learning Path
+              href: Documents/LearningPaths/RTX/TOC.yml
     - name: Tools and Frameworks
       items:
         - name: GameTest Framework
