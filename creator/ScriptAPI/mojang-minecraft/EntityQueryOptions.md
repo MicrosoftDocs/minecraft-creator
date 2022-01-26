@@ -64,7 +64,7 @@ Type: *string*[]
 ### **families**
 `families: string[];`
 
-If specified, includes entities that match one of the specified families.
+If specified, includes entities that match all of the specified families.
 
 Type: *string*[]
 
@@ -176,7 +176,7 @@ Type: [*EntityQueryScoreOptions*](EntityQueryScoreOptions.md)[]
 ### **tags**
 `tags: string[];`
 
-Includes entities that match one or more of the specified tags.
+Includes entities that match all of the specified tags.
 
 Type: *string*[]
 

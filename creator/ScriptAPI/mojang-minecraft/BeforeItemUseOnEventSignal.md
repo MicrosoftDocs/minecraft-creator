@@ -19,24 +19,24 @@ Manages callbacks that fire before an item being used on a block event.
   
 ### **subscribe**
 `
-subscribe(callback: (arg: BeforeItemUseOnEvent) => undefined): (arg: BeforeItemUseOnEvent) => undefined
+subscribe(callback: (arg: BeforeItemUseOnEvent) => void): (arg: BeforeItemUseOnEvent) => void
 `
 
 Adds a callback that will be called before an item is used on a block.
 #### **Parameters**
-- **callback**: (arg: BeforeItemUseOnEvent) => undefined
+- **callback**: (arg: [*BeforeItemUseOnEvent*](BeforeItemUseOnEvent.md)) => *void*
 
-#### **Returns** (arg: BeforeItemUseOnEvent) => undefined
+#### **Returns** (arg: [*BeforeItemUseOnEvent*](BeforeItemUseOnEvent.md)) => *void*
 
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: BeforeItemUseOnEvent) => undefined): void
+unsubscribe(callback: (arg: BeforeItemUseOnEvent) => void): void
 `
 
 Removes a callback from being called before an item is used on a block.
 #### **Parameters**
-- **callback**: (arg: BeforeItemUseOnEvent) => undefined
+- **callback**: (arg: [*BeforeItemUseOnEvent*](BeforeItemUseOnEvent.md)) => *void*
 
 
 > [!WARNING]

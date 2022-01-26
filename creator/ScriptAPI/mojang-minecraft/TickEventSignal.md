@@ -19,24 +19,24 @@ Manages callbacks that are connected to a tick event.
   
 ### **subscribe**
 `
-subscribe(callback: (arg: TickEvent) => undefined): (arg: TickEvent) => undefined
+subscribe(callback: (arg: TickEvent) => void): (arg: TickEvent) => void
 `
 
 Adds a callback that will be called on every tick.
 #### **Parameters**
-- **callback**: (arg: TickEvent) => undefined
+- **callback**: (arg: [*TickEvent*](TickEvent.md)) => *void*
 
-#### **Returns** (arg: TickEvent) => undefined
+#### **Returns** (arg: [*TickEvent*](TickEvent.md)) => *void*
 
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: TickEvent) => undefined): void
+unsubscribe(callback: (arg: TickEvent) => void): void
 `
 
 Removes a callback from being called every tick.
 #### **Parameters**
-- **callback**: (arg: TickEvent) => undefined
+- **callback**: (arg: [*TickEvent*](TickEvent.md)) => *void*
 
 
 > [!WARNING]

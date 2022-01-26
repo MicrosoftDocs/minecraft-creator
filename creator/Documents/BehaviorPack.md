@@ -408,7 +408,7 @@ Now that the behavior pack has both a manifest file and a cow entity, it is time
 Now that you have seen a behavior pack in action, you can learn more about how they work and what else you can do with them.
 
 > [!div class="nextstepaction"]
-> [Introduction to Add Entity] (introductiontoaddentity.md)
+> [Introduction to Add Entity](introductiontoaddentity.md)
 > [Entity JSON Documentation](../Reference/Content/EntityReference/index.yml)
 
 To see examples of unchanged resource and behavior files, check out the Minecraft [Vanilla resource pack](https://aka.ms/resourcepacktemplate) and [Vanilla behavior Pack](https://aka.ms/behaviorpacktemplate).
