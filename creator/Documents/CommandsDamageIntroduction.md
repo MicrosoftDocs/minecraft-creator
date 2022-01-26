@@ -3,10 +3,10 @@ author: rileymanns
 ms.author: v-rileymanns
 title: Introduction to the Damage Command
 ms.prod: gaming
-description: "An introduction to how to use the damage command and some special use cases for it."
+description: "An introduction to the damage command and some special use cases for it."
 ---
 
-# Introduction to the `/damage` Command
+# Introduction to the Damage Command
 
 The damage command is a brand new command in Minecraft: Bedrock Edition. This command allows users to apply a specific type of damage to a specified entity from a specified source. For example, dealing fire damage to a creeper or fall damage to a zombie. This feature provides a simpler and more direct way to apply damage when compared to other methods, such as spawning in arrows or splash damage potions.
 

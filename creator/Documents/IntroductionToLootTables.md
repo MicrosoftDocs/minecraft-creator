@@ -338,7 +338,7 @@ Conditions are a list of requirements that must be met before either a pool can 
 
 ### match_tool condition
 
-`match_tool` is a condition that checks whether the tool or weapon (or whatever item the player is using) used to make the loot drop matches the set of modifier conditions provided.
+`match_tool` is a condition that checks whether the tool (or weapon or whatever item the player is using) used to make the loot drop matches the set of modifier conditions provided.
 The predicates used are: count, durability, enchantments, and item.
 
 >- **count:** amount of the item
