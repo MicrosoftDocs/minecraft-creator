@@ -3,37 +3,32 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: mojang-minecraft.Trigger Class
-description: Contents of the mojang-minecraft.Trigger class.
+title: mojang-minecraft-ui.FormResponse Class
+description: Contents of the mojang-minecraft-ui.FormResponse class.
 ---
-# Trigger Class
+# FormResponse Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-Represents a trigger for firing an event.
+## Base Types
+- [*FormResponse*](FormResponse.md)
+
+## Directly Derived Types
+- [*FormResponse*](FormResponse.md)
+- [*ActionFormResponse*](ActionFormResponse.md)
+- [*MessageFormResponse*](MessageFormResponse.md)
+- [*ModalFormResponse*](ModalFormResponse.md)
+  
+Base type for a form response.
 
 ## Properties
-### **eventName**
-`eventName: string;`
+### **isCanceled**
+`read-only isCanceled: boolean;`
 
-Event name of the trigger.
+If true, the form was canceled by the player (e.g., they selected the pop-up X close button).
 
-Type: *string*
+Type: *boolean*
 
-
-
-## Methods
-- [constructor](#constructor)
-  
-### **constructor**
-`
-new Trigger(eventName: string)
-`
-
-#### **Parameters**
-- **eventName**: *string*
-
-#### **Returns** [*Trigger*](Trigger.md)
 
 
 

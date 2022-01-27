@@ -3,28 +3,30 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: mojang-minecraft.EntityEventOptions Class
-description: Contents of the mojang-minecraft.EntityEventOptions class.
+title: mojang-minecraft.Enchantment Class
+description: Contents of the mojang-minecraft.Enchantment class.
 ---
-# EntityEventOptions Class
+# Enchantment Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-Contains optional parameters for registering an entity event.
+This class represents a specific leveled enchantment that is applied to an item.
 
 ## Properties
-### **entities**
-`entities: Entity[];`
+### **level**
+`level: number;`
 
-Type: [*Entity*](Entity.md)[]
+The level of this enchantment instance.
+
+Type: *number*
 
 
-### **entityTypes**
-`entityTypes: string[];`
+### **type**
+`read-only type: EnchantmentType;`
 
-If this value is set, this event will only fire if the impacted entity matches this parameter.
+The enchantment type of this instance.
 
-Type: *string*[]
+Type: [*EnchantmentType*](EnchantmentType.md)
 
 
 
@@ -33,11 +35,14 @@ Type: *string*[]
   
 ### **constructor**
 `
-new EntityEventOptions()
+new Enchantment(enchantmentType: EnchantmentType, level?: number)
 `
 
+#### **Parameters**
+- **enchantmentType**: [*EnchantmentType*](EnchantmentType.md)
+- **level**?: *number* = `1`
 
-#### **Returns** [*EntityEventOptions*](EntityEventOptions.md)
+#### **Returns** [*Enchantment*](Enchantment.md)
 
 
 

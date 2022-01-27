@@ -3,14 +3,14 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: mojang-minecraft.EntityEventOptions Class
-description: Contents of the mojang-minecraft.EntityEventOptions class.
+title: mojang-minecraft.EntityDataDrivenTriggerEventOptions Class
+description: Contents of the mojang-minecraft.EntityDataDrivenTriggerEventOptions class.
 ---
-# EntityEventOptions Class
+# EntityDataDrivenTriggerEventOptions Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-Contains optional parameters for registering an entity event.
+Specifies additional filters that are used in registering a data driven event for entities.
 
 ## Properties
 ### **entities**
@@ -22,7 +22,11 @@ Type: [*Entity*](Entity.md)[]
 ### **entityTypes**
 `entityTypes: string[];`
 
-If this value is set, this event will only fire if the impacted entity matches this parameter.
+Type: *string*[]
+
+
+### **eventTypes**
+`eventTypes: string[];`
 
 Type: *string*[]
 
@@ -33,11 +37,11 @@ Type: *string*[]
   
 ### **constructor**
 `
-new EntityEventOptions()
+new EntityDataDrivenTriggerEventOptions()
 `
 
 
-#### **Returns** [*EntityEventOptions*](EntityEventOptions.md)
+#### **Returns** [*EntityDataDrivenTriggerEventOptions*](EntityDataDrivenTriggerEventOptions.md)
 
 
 
