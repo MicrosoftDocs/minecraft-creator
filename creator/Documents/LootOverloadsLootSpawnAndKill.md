@@ -1,12 +1,12 @@
 ---
 author: rileymanns
 ms.author: v-rileymanns
-title: Loot Overloads: Spawn Loot and Spawn Kill
+title: Loot Overloads: Loot Spawn and Kill
 ms.prod: gaming
 description: "An overview covering Loot Table Overloads: `/loot spawn` and `/kill`"
 ---
 
-# Introduction to Two Loot Overloads: */loot* and */kill*
+# Introduction to Two Loot Overloads: */loot spawn* and */kill*
 
 After you have an understanding of how loot tables work and how to customize them to your liking, it's time to learn about `/loot spawn` and `/kill`.
 
