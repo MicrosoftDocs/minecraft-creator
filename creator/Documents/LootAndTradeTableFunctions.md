@@ -516,17 +516,18 @@ You could currently choose from the following destinations:
 
 |Destination|
 |:---|
+|buriedtreasure|
 |endcity|
 |fortress|
+|mansion|
 |mineshaft|
 |monument|
-|ruins|
-|stronghold|
-|village|
-|mansion|
-|shipwreck|
-|buriedtreasure|
 |pillageroutpost|
+|ruins|
+|shipwreck|
+|stronghold|
+|temple|
+|village|
 
 ### furnace_smelt (loot table only)
 
