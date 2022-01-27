@@ -229,7 +229,7 @@ This function only works with a spawn egg and is used to set the entity ID of th
 ```json
                 {
                     "type": "item",
-                    "name": "minecraft:spawn_egg",
+                    "name": "minecraft:stone",
                     "weight": 1,
                     "functions": [
                         {
@@ -516,18 +516,17 @@ You could currently choose from the following destinations:
 
 |Destination|
 |:---|
-|buriedtreasure|
 |endcity|
 |fortress|
-|mansion|
 |mineshaft|
 |monument|
-|pillageroutpost|
 |ruins|
-|shipwreck|
 |stronghold|
-|temple|
 |village|
+|mansion|
+|shipwreck|
+|buriedtreasure|
+|pillageroutpost|
 
 ### furnace_smelt (loot table only)
 
