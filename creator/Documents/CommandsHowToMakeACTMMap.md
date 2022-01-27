@@ -24,7 +24,6 @@ It’s recommended that the following be completed before beginning this tutoria
 - [Introduction to Commands](CommandsIntroduction.md)
 - [Getting Started with Command Blocks](CommandBlocks.md)
 - [Popular Commands](CommandsPopularCommands.md)
-- [Introduction to Scoreboards](ScoreboardIntroduction.md)
 
 ## The setup
 
