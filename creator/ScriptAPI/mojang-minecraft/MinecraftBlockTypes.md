@@ -2782,8 +2782,8 @@ Represents a frame within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
-### **frogEgg**
-`static read-only frogEgg: BlockType;`
+### **frogSpawn**
+`static read-only frogSpawn: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 

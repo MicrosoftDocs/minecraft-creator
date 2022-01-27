@@ -16,6 +16,24 @@
         href: mojang-gametest/Tags.md
       - name: Test
         href: mojang-gametest/Test.md
+    - name: mojang-minecraft-ui
+      items:
+      - name: mojang-minecraft-ui
+        href: mojang-minecraft-ui/mojang-minecraft-ui.md
+      - name: ActionFormData
+        href: mojang-minecraft-ui/ActionFormData.md
+      - name: ActionFormResponse
+        href: mojang-minecraft-ui/ActionFormResponse.md
+      - name: FormResponse
+        href: mojang-minecraft-ui/FormResponse.md
+      - name: MessageFormData
+        href: mojang-minecraft-ui/MessageFormData.md
+      - name: MessageFormResponse
+        href: mojang-minecraft-ui/MessageFormResponse.md
+      - name: ModalFormData
+        href: mojang-minecraft-ui/ModalFormData.md
+      - name: ModalFormResponse
+        href: mojang-minecraft-ui/ModalFormResponse.md
     - name: mojang-minecraft
       items:
       - name: mojang-minecraft
@@ -24,6 +42,10 @@
         href: mojang-minecraft/BeforeChatEvent.md
       - name: BeforeChatEventSignal
         href: mojang-minecraft/BeforeChatEventSignal.md
+      - name: BeforeDataDrivenEntityTriggerEvent
+        href: mojang-minecraft/BeforeDataDrivenEntityTriggerEvent.md
+      - name: BeforeDataDrivenEntityTriggerEvent
+        href: mojang-minecraft/BeforeDataDrivenEntityTriggerEvent.md
       - name: BeforeExplosionEvent
         href: mojang-minecraft/BeforeExplosionEvent.md
       - name: BeforeExplosionEventSignal
@@ -100,6 +122,12 @@
         href: mojang-minecraft/Color.md
       - name: Container
         href: mojang-minecraft/Container.md
+      - name: DataDrivenEntityTriggerEvent
+        href: mojang-minecraft/DataDrivenEntityTriggerEvent.md
+      - name: DataDrivenEntityTriggerEvent
+        href: mojang-minecraft/DataDrivenEntityTriggerEvent.md
+      - name: DefinitionModifier
+        href: mojang-minecraft/DefinitionModifier.md
       - name: Dimension
         href: mojang-minecraft/Dimension.md
       - name: Effect
@@ -110,6 +138,14 @@
         href: mojang-minecraft/EffectAddEventSignal.md
       - name: EffectType
         href: mojang-minecraft/EffectType.md
+      - name: Enchantment
+        href: mojang-minecraft/Enchantment.md
+      - name: EnchantmentList
+        href: mojang-minecraft/EnchantmentList.md
+      - name: EnchantmentSlot
+        href: mojang-minecraft/EnchantmentSlot.md
+      - name: EnchantmentType
+        href: mojang-minecraft/EnchantmentType.md
       - name: Entity
         href: mojang-minecraft/Entity.md
       - name: EntityAddRiderComponent
@@ -124,6 +160,8 @@
         href: mojang-minecraft/EntityCreateEvent.md
       - name: EntityCreateEventSignal
         href: mojang-minecraft/EntityCreateEventSignal.md
+      - name: EntityDataDrivenTriggerEventOptions
+        href: mojang-minecraft/EntityDataDrivenTriggerEventOptions.md
       - name: EntityDefinitionFeedItem
         href: mojang-minecraft/EntityDefinitionFeedItem.md
       - name: EntityEventOptions
@@ -222,6 +260,8 @@
         href: mojang-minecraft/ItemDefinitionTriggeredEvent.md
       - name: ItemDurabilityComponent
         href: mojang-minecraft/ItemDurabilityComponent.md
+      - name: ItemEnchantsComponent
+        href: mojang-minecraft/ItemEnchantsComponent.md
       - name: ItemFoodComponent
         href: mojang-minecraft/ItemFoodComponent.md
       - name: Items
@@ -244,8 +284,12 @@
         href: mojang-minecraft/MinecraftBlockTypes.md
       - name: MinecraftEffectTypes
         href: mojang-minecraft/MinecraftEffectTypes.md
+      - name: MinecraftEnchantmentTypes
+        href: mojang-minecraft/MinecraftEnchantmentTypes.md
       - name: MinecraftItemTypes
         href: mojang-minecraft/MinecraftItemTypes.md
+      - name: MolangVariableMap
+        href: mojang-minecraft/MolangVariableMap.md
       - name: NavigationResult
         href: mojang-minecraft/NavigationResult.md
       - name: NumberRange
@@ -260,6 +304,8 @@
         href: mojang-minecraft/Player.md
       - name: PlayerInventoryComponentContainer
         href: mojang-minecraft/PlayerInventoryComponentContainer.md
+      - name: PlayerIterator
+        href: mojang-minecraft/PlayerIterator.md
       - name: PlayerJoinEvent
         href: mojang-minecraft/PlayerJoinEvent.md
       - name: PlayerJoinEventSignal

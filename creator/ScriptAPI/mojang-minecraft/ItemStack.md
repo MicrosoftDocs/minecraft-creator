@@ -42,7 +42,9 @@ Type: *string*
 - [constructor](#constructor)
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
+- [getLore](#getlore)
 - [hasComponent](#hascomponent)
+- [setLore](#setlore)
 - [triggerEvent](#triggerevent)
   
 ### **constructor**
@@ -89,6 +91,16 @@ Returns all components that are both present on this item stack and supported by
 #### **Returns** *any*[]
 
 
+### **getLore**
+`
+getLore(): string[]
+`
+
+Returns the lore value - a secondary display string - for an ItemStack.
+
+#### **Returns** *string*[]
+
+
 ### **hasComponent**
 `
 hasComponent(componentId: string): boolean
@@ -101,6 +113,17 @@ Returns true if the specified component is present on this item stack.
   The identifier of the component (e.g., 'minecraft:food') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed.
 
 #### **Returns** *boolean*
+
+
+### **setLore**
+`
+setLore(loreList: string[]): void
+`
+
+Sets the lore value - a secondary display string - for an ItemStack.
+#### **Parameters**
+- **loreList**: *string*[]
+
 
 
 ### **triggerEvent**

@@ -21,6 +21,12 @@ This event fires before a chat message is broadcast or delivered. The event can 
 Type: [*BeforeChatEventSignal*](BeforeChatEventSignal.md)
 
 
+### **beforeDataDrivenEntityTriggerEvent**
+`beforeDataDrivenEntityTriggerEvent: BeforeDataDrivenEntityTriggerEvent;`
+
+Type: [*BeforeDataDrivenEntityTriggerEvent*](BeforeDataDrivenEntityTriggerEvent.md)
+
+
 ### **beforeExplosion**
 `beforeExplosion: BeforeExplosionEventSignal;`
 
@@ -91,6 +97,12 @@ Type: [*BlockPlaceEventSignal*](BlockPlaceEventSignal.md)
 This event is triggered after a chat message has been broadcast or sent to players.
 
 Type: [*ChatEventSignal*](ChatEventSignal.md)
+
+
+### **dataDrivenEntityTriggerEvent**
+`dataDrivenEntityTriggerEvent: DataDrivenEntityTriggerEvent;`
+
+Type: [*DataDrivenEntityTriggerEvent*](DataDrivenEntityTriggerEvent.md)
 
 
 ### **effectAdd**
