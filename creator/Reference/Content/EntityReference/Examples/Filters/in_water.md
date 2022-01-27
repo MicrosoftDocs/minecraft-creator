@@ -54,7 +54,7 @@ Returns true when the subject entity is in water.
 ### Full
 
 ```json
-{ "test": "in_water", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "in_water", "subject": "self", "operator": "equals", "value": true }
 ```
 
 ### Short (using Defaults)

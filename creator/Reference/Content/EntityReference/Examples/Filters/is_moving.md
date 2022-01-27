@@ -54,7 +54,7 @@ Returns true if the subject entity is moving.
 ### Full
 
 ```json
-{ "test": "is_moving", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "is_moving", "subject": "self", "operator": "equals", "value": true }
 ```
 
 ### Short (using Defaults)

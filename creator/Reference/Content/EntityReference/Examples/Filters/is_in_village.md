@@ -54,7 +54,7 @@ Tests whether the Subject is inside the bounds of a village.
 ### Full
 
 ```json
-{ "test": "is_in_village", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "is_in_village", "subject": "self", "operator": "equals", "value": true }
 ```
 
 ### Short (using Defaults)

@@ -54,7 +54,7 @@ Returns true when the subject entity is holding a ranged weapon like a bow or cr
 ### Full
 
 ```json
-{ "test": "has_ranged_weapon", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "has_ranged_weapon", "subject": "self", "operator": "equals", "value": true }
 ```
 
 ### Short (using Defaults)

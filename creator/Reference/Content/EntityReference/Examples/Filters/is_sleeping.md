@@ -54,7 +54,7 @@ Tests whether the Subject is sleeping.
 ### Full
 
 ```json
-{ "test": "is_sleeping", "subject": "self", "operator": "equals", "value": "true"}
+{ "test": "is_sleeping", "subject": "self", "operator": "equals", "value": true}
 ```
 
 ### Short (using Defaults)

@@ -54,7 +54,7 @@ Returns true if the subject entity has a valid target.
 ### Full
 
 ```json
-{ "test": "has_target", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "has_target", "subject": "self", "operator": "equals", "value": true }
 ```
 
 ### Short (using Defaults)
