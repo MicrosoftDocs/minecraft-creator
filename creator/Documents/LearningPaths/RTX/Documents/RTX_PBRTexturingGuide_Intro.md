@@ -126,9 +126,19 @@ With the JSON file set up, you can now configure the textures for the `color` va
 
 To create a mirror in a PBR workflow, you require two maps; a roughness map and a metalness map. When you set a roughness map to a value of `0.0`, or solid black, you will create a smooth surface for light to bounce directly off of. With a metalness map set to a value of `1.0`, or solid white, the object will be rendered like reflective metal. With this mirror set up, the Render Dragon engine will be able to ray trace with less time handling calculations for these objects.
 
-<insert file>
+:::row:::
+    :::column:::
+        **Main Color Texture**
+        :::image type="content" source="../../../../Reference/Source/VanillaResourcePack/textures/blocks/glass_black.png" alt-text="image of the glass black texture":::
+    :::column-end:::
+    :::column:::
+        **PBR Texture**
+        :::image type="content" source="../Media/Texture/glass_black_mer.png" alt-text="image of the glass black mer texture":::
+    :::column-end:::
+:::row-end:::
 
 1. Click and download the `glass_black_mer.png` file.
+    1. You can right-click on the image and select **Save As...** to download.
 1. Click and download the `glass_black.png` file.
 1. Copy and paste both .png files into the `textures/blocks` folder.
 
@@ -146,4 +156,4 @@ With the JSON file properly set up and both textures in place, you can now load 
 Now that you have created a Mirror utilizing the roughness and metalness maps, you can take a look at the next part of this guide that covers how to create custom textures in Adobe Photoshop and create your own texture set.
 
 > [!div class="nextstepaction"]
-> [Physically Based Texturing Guide - Workflow](Documents/RTX_PBRTexturingGuide_Workflow.md)
+> [Physically Based Texturing Guide - Workflow](RTX_PBRTexturingGuide_Workflow.md)

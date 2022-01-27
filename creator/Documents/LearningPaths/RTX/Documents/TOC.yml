@@ -1,4 +1,6 @@
  - name: "Ray Tracing in Minecraft: Bedrock Edition"
    href: RTX_WhatIsRayTracing.md
- - name: Physically Based Texturing Guide
-   href: RTX_PBRTexturingGuide.md
+ - name: Physically Based Texturing Guide - Introduction
+   href: RTX_PBRTexturingGuide_Intro.md
+ - name: Physically Based Texturing Guide - Workflow
+   href: RTX_PBRTexturingGuide_Workflow.md
