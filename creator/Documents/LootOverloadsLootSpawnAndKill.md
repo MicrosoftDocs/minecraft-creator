@@ -52,7 +52,7 @@ The `/loot spawn` command allows creators to drop the loot tables of any entity 
 
 **Output** - Command returns an error message if the given loot table does not exist.
 
-## /kill
+## Kill
 
 `/kill` is a command that simulates the loot drop of the selected entity as you would kill it normally. This differs from `/loot spawn` in that some loot_tables specify a condition of "condition": "killed_by_player" for specific loot to be dropped.  
 
@@ -70,7 +70,7 @@ The `/loot spawn` command allows creators to drop the loot tables of any entity 
 
 ## What's Next?
 
-There are more commands out there for you to use to unleash mayhem upon your world - or to use to make things nice. It's up to you.
+Now that you know about *loot spawn* and *kill*, you might want to try the *damage* command.
 
 > [!div class="nextstepaction"]
-> [Popular Commands](CommandsPopularCommands.md)
+> [Introduction to Damage](CommandsDamageIntroduction.md)
