@@ -54,7 +54,7 @@ Returns true when the subject entity is in lava.
 ### Full
 
 ```json
-{ "test": "in_lava", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "in_lava", "subject": "self", "operator": "equals", "value": true }
 ```
 
 ### Short (using Defaults)

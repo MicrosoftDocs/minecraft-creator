@@ -54,7 +54,7 @@ Returns true if the subject entity is riding on another entity.
 ### Full
 
 ```json
-{ "test": "is_riding", "subject": "self", "operator": "equals", "value": "true"}
+{ "test": "is_riding", "subject": "self", "operator": "equals", "value": true}
 ```
 
 ### Short (using Defaults)

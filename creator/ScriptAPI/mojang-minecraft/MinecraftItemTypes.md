@@ -115,6 +115,12 @@ Represents an item that can place an empty space (air) within Minecraft.
 Type: [*ItemType*](ItemType.md)
 
 
+### **allaySpawnEgg**
+`static read-only allaySpawnEgg: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
 ### **allow**
 `static read-only allow: ItemType;`
 
@@ -3409,6 +3415,12 @@ Type: [*ItemType*](ItemType.md)
 Type: [*ItemType*](ItemType.md)
 
 
+### **fireflySpawnEgg**
+`static read-only fireflySpawnEgg: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
 ### **fireworkRocket**
 `static read-only fireworkRocket: ItemType;`
 
@@ -3499,8 +3511,8 @@ Represents an item that can place a frame within Minecraft.
 Type: [*ItemType*](ItemType.md)
 
 
-### **frogEgg**
-`static read-only frogEgg: ItemType;`
+### **frogSpawn**
+`static read-only frogSpawn: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -7059,6 +7071,12 @@ Type: [*ItemType*](ItemType.md)
 `static read-only sweetBerryBush: ItemType;`
 
 Represents an item that can place a sweet berry bush within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **tadpoleBucket**
+`static read-only tadpoleBucket: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 

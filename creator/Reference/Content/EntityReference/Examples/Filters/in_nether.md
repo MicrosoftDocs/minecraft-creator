@@ -54,7 +54,7 @@ Returns true when the subject entity is in Nether.
 ### Full
 
 ```json
-{ "test": "in_nether", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "in_nether", "subject": "self", "operator": "equals", "value": true }
 ```
 
 ### Short (using Defaults)

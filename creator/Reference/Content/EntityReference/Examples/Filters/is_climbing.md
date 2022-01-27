@@ -54,7 +54,7 @@ Returns true if the subject entity is climbing.
 ### Full
 
 ```json
-{ "test": "is_climbing", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "is_climbing", "subject": "self", "operator": "equals", "value": true }
 ```
 
 ### Short (using Defaults)

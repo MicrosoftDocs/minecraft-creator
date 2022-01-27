@@ -54,7 +54,7 @@ Tests whether the subject is in an area covered by snow.
 ### Full
 
 ```json
-{ "test": "is_snow_covered", "subject": "self", "operator": "equals", "value": "true"}
+{ "test": "is_snow_covered", "subject": "self", "operator": "equals", "value": true}
 ```
 
 ### Short (using Defaults)
