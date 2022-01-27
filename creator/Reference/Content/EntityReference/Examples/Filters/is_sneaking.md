@@ -54,7 +54,7 @@ Tests whether the subject is sneaking.
 ### Full
 
 ```json
-{ "test": "is_sneaking", "subject": "self", "operator": "equals", "value": "true"}
+{ "test": "is_sneaking", "subject": "self", "operator": "equals", "value": true}
 ```
 
 ### Short (using Defaults)

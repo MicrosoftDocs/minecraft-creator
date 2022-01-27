@@ -54,7 +54,7 @@ Tests if the subject is a surface mob.
 ### Full
 
 ```json
-{ "test": "surface_mob", "subject": "self", "operator": "equals", "value": "true"}
+{ "test": "surface_mob", "subject": "self", "operator": "equals", "value": true}
 ```
 
 ### Short (using Defaults)

@@ -54,7 +54,7 @@ Returns true if the subject entity is leashed.
 ### Full
 
 ```json
-{ "test": "is_leashed", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "is_leashed", "subject": "self", "operator": "equals", "value": true }
 ```
 
 ### Short (using Defaults)

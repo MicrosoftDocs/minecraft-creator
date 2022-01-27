@@ -54,7 +54,7 @@ Returns true when the subject entity is on a ladder.
 ### Full
 
 ```json
-{ "test": "on_ladder", "subject": "self", "operator": "equals", "value": "true"}
+{ "test": "on_ladder", "subject": "self", "operator": "equals", "value": true}
 ```
 
 ### Short (using Defaults)

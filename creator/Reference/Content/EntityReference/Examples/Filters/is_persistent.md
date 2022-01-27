@@ -54,7 +54,7 @@ Tests if the subject's persistence matches the bool value passed in.
 ### Full
 
 ```json
-{ "test": "is_persistent", "subject": "self", "operator": "equals", "value": "true"}
+{ "test": "is_persistent", "subject": "self", "operator": "equals", "value": true}
 ```
 
 ### Short (using Defaults)

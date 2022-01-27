@@ -54,7 +54,7 @@ Tests whether the target has any trade supply left. Will return false if the tar
 ### Full
 
 ```json
-{ "test": "has_trade_supply", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "has_trade_supply", "subject": "self", "operator": "equals", "value": true }
 ```
 
 ### Short (using Defaults)

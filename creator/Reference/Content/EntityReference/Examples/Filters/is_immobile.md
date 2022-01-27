@@ -54,7 +54,7 @@ Returns true if the subject entity is immobile. An entity is immobile if it lack
 ### Full
 
 ```json
-{ "test": "is_immobile", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "is_immobile", "subject": "self", "operator": "equals", "value": true }
 ```
 
 ### Short (using Defaults)

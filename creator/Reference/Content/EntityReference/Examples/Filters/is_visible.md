@@ -54,7 +54,7 @@ Returns true if the subject entity is visible.
 ### Full
 
 ```json
-{ "test": "is_visible", "subject": "self", "operator": "equals", "value": "true"}
+{ "test": "is_visible", "subject": "self", "operator": "equals", "value": true}
 ```
 
 ### Short (using Defaults)
