@@ -25,7 +25,7 @@ It’s recommended that the following be completed before beginning this tutoria
 
 ## Syntax of the Damage Command
 
-Use this commands to harm an entity with a set amount of damage of the specified type.
+Use this command to harm an entity with a set amount of damage of the specified type.
 
 ```
 /damage <target> <amount> [cause]
