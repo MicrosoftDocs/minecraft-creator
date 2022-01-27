@@ -12,5 +12,28 @@ description: Contents of the mojang-minecraft.Trigger class.
 
 Represents a trigger for firing an event.
 
+## Properties
+### **eventName**
+`eventName: string;`
+
+Event name of the trigger.
+
+Type: *string*
+
+
+
+## Methods
+- [constructor](#constructor)
+  
+### **constructor**
+`
+new Trigger(eventName: string)
+`
+
+#### **Parameters**
+- **eventName**: *string*
+
+#### **Returns** [*Trigger*](Trigger.md)
+
 
 

@@ -54,7 +54,7 @@ Returns true if the subject is trusted by entity.
 ### Full
 
 ```json
-{ "test": "trusts", "subject": "self", "operator": "equals", "value": "true"}
+{ "test": "trusts", "subject": "self", "operator": "equals", "value": true}
 ```
 
 ### Short (using Defaults)
