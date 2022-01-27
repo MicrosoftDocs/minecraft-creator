@@ -24,6 +24,7 @@ A class that represents a particular dimension (e.g., The End) within a world.
 - [isEmpty](#isempty)
 - [runCommand](#runcommand)
 - [spawnEntity](#spawnentity)
+- [spawnParticle](#spawnparticle)
   
 ### **createExplosion**
 `
@@ -126,14 +127,14 @@ Gets entities that intersect with a specified vector emanating from a location.
 
 ### **getPlayers**
 `
-getPlayers(getPlayers?: EntityQueryOptions): EntityIterator
+getPlayers(getPlayers?: EntityQueryOptions): PlayerIterator
 `
 
 Returns a set of players based on a set of conditions defined via the EntityQueryOptions set of filter criteria.
 #### **Parameters**
 - **getPlayers**?: [*EntityQueryOptions*](EntityQueryOptions.md) = `null`
 
-#### **Returns** [*EntityIterator*](EntityIterator.md) - An entity iterator that can be used to loop over the returned players.
+#### **Returns** [*PlayerIterator*](PlayerIterator.md) - An entity iterator that can be used to loop over the returned players.
 
 > [!WARNING]
 > This function can throw errors.
@@ -192,5 +193,24 @@ Creates a new entity (e.g., a mob) at the specified location. This method was in
 
 > [!WARNING]
 > This function can throw errors.
+
+### **spawnParticle**
+`
+spawnParticle(effectName: string, location: Location, molangVariables: MolangVariableMap): void
+`
+
+Creates a new particle emitter at a specified location in the world
+#### **Parameters**
+- **effectName**: *string*
+  
+  Identifier of the particle to create.
+- **location**: [*Location*](Location.md)
+  
+  The location at which to create the particle emitter.
+- **molangVariables**: [*MolangVariableMap*](MolangVariableMap.md)
+  
+  A set of additional, customizable variables that can be adjusted for this particle emitter.
+
+
 
 
