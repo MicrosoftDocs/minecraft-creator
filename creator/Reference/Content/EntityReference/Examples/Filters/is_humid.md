@@ -54,7 +54,7 @@ Tests whether the subject is in an area with humidity.
 ### Full
 
 ```json
-{ "test": "is_humid", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "is_humid", "subject": "self", "operator": "equals", "value": true }
 ```
 
 ### Short (using Defaults)

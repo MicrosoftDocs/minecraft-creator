@@ -41,7 +41,7 @@ landingContent:
         links:
            - text: RegistrationBuilder Class
              url: mojang-gametest/RegistrationBuilder.md
-           - text: Test  Class
+           - text: Test Class
              url: mojang-gametest/Test.md
   # Card (optional)
   - title: mojang-minecraft
@@ -62,3 +62,18 @@ landingContent:
              url: mojang-minecraft/Entity.md
            - text: ItemStack Class
              url: mojang-minecraft/ItemStack.md
+  # Card (optional)
+  - title: mojang-minecraft-ui
+    linkLists:
+      - linkListType: overview
+        links:
+           - text: mojang-minecraft-ui Module
+             url: mojang-minecraft-ui/mojang-minecraft-ui.md
+      - linkListType: reference
+        links:
+           - text: ActionFormData Class
+             url: mojang-minecraft-ui/ActionFormData.md
+           - text: MessageFormData Class
+             url: mojang-minecraft-ui/MessageFormData.md             
+           - text: ModalFormData Class
+             url: mojang-minecraft-ui/ModalFormData.md

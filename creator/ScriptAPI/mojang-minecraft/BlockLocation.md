@@ -70,7 +70,7 @@ Creates a new instance of an abstract block location.
 above(): BlockLocation
 `
 
-Returns a BlockLocation for a block above this BlockLocation (that is, y - 1).
+Returns a BlockLocation for a block above this BlockLocation (that is, y + 1).
 
 #### **Returns** [*BlockLocation*](BlockLocation.md)
 

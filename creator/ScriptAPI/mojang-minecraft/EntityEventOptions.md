@@ -13,12 +13,10 @@ description: Contents of the mojang-minecraft.EntityEventOptions class.
 Contains optional parameters for registering an entity event.
 
 ## Properties
-### **entity**
-`entity: Entity;`
+### **entities**
+`entities: Entity[];`
 
-If this value is set, this event will only fire for entities that are of the specified types.
-
-Type: [*Entity*](Entity.md)
+Type: [*Entity*](Entity.md)[]
 
 
 ### **entityTypes**

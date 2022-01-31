@@ -13,20 +13,20 @@ description: Contents of the mojang-minecraft.ItemUseOnEvent class.
 Contains information related to an item being used on a block.
 
 ## Properties
+### **blockFace**
+`read-only blockFace: Direction;`
+
+The face of the block that an item is being used on.
+
+Type: [*Direction*](Direction.md)
+
+
 ### **blockLocation**
 `read-only blockLocation: BlockLocation;`
 
 Location of the block being impacted.
 
 Type: [*BlockLocation*](BlockLocation.md)
-
-
-### **direction**
-`read-only direction: number;`
-
-The face of the block that an item is being used on.
-
-Type: *number*
 
 
 ### **faceLocationX**
