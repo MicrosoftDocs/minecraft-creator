@@ -21,8 +21,6 @@ In this tutorial you will learn the following:
 > - How to apply various features to the entity, including components and animations.
 > - Make use of translations for entity names.
 
-You can download the two different sets of resource and behavior packs created in this article . 
-
 ### Requirements
 
 It’s recommended that the following be completed before beginning this tutorial.
@@ -30,6 +28,8 @@ It’s recommended that the following be completed before beginning this tutoria
 - [Introduction to Behavior Packs](BehaviorPack.md)
 - [Introduction to Resource Packs](ResourcePack.md)
 - [Download (and unzip) the **min robot** and **full robot** resource and behavior packs](Media/AddEntity/robot_min_and_full.zip)
+- 
+- [test?](aka.ms/robot_min_and_full.zip)
 
 Knowledge of the following is also recommended to help better understand this article.
 
