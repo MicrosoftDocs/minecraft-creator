@@ -57,7 +57,7 @@
             - name: Loot and Trade Table Functions
               href: Documents/LootAndTradeTableFunctions.md
             - name: Loot Spawn and Kill
-              href: Documents/LootOverloadsLootSpawnAndKill.md
+              href: Documents/LootSpawnAndKill.md
     - name: Tools and Frameworks
       items:
         - name: GameTest Framework
