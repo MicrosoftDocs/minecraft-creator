@@ -26,6 +26,8 @@
             href: Documents/CommandsIntroduction.md
           - name: Popular Commands
             href: Documents/CommandsPopularCommands.md
+          - name: The Damage Command
+            href: Documents/CommandsDamageIntroduction.md
           - name: Getting Started with Command Blocks
             href: Documents/CommandBlocks.md
           - name: How to Make a Complete the Monument Map
@@ -54,6 +56,8 @@
               href: Documents/IntroductionToLootTables.md
             - name: Loot and Trade Table Functions
               href: Documents/LootAndTradeTableFunctions.md
+            - name: Loot Spawn and Kill
+              href: Documents/LootOverloadsLootSpawnAndKill.md
     - name: Tools and Frameworks
       items:
         - name: GameTest Framework
