@@ -43,7 +43,7 @@ Use this command to harm an entity with a set amount of damage of the specified 
 Because both the damage and source follow the damage rules specified in behavior packs, there are some unique use cases that may not deal damage, or may deal damage when it would be expected they shouldn’t. We want to make sure to call those cases out.
 
 
-### Downing damage
+### Drowning damage
 
 Drowning damage can be applied to aquatic and undead mobs. This is because while they can *breathe* underwater, they are not immune to drowning damage itself.
 
