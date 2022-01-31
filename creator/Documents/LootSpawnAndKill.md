@@ -8,7 +8,7 @@ description: "An overview covering loot table overloads: `/loot spawn` and `/kil
 
 # Introduction to Two Loot Overloads: */loot spawn* and */kill*
 
-After you have an understanding of how loot tables work and how to customize them to your liking, it's time to learn about `/loot spawn` and `/kill`.
+After you understand how loot tables work and how to customize them to your liking, it's time to learn about `/loot spawn` and `/kill`.
 
 In this tutorial you will learn the following:
 
