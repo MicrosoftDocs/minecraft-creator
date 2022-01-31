@@ -26,7 +26,7 @@ It’s recommended that the following be completed before beginning this tutoria
 
 ## Loot spawn
 
-The `/loot spawn` command allows creators to drop the loot tables of any entity with a defined loot table into the world. This can be done with custom loot tables as well. The command follows the "standard" rules of loot tables, so they go through all the conditions and pools. For example, using `/loot spawn` on a cave spider will not drop spider eyes because the condition for spider eyes to drop is “killed by player.”  
+The `/loot spawn` command allows creators to drop the loot of any entity that has a defined loot table into the world. This can be done with custom loot tables as well. The command follows the "standard" rules of loot tables, so they go through all the conditions and pools. For example, using `/loot spawn` on a cave spider will not drop spider eyes because the condition for spider eyes to drop is “killed by player.”  
 
 ### Syntax
 
