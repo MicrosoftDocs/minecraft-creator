@@ -31,11 +31,11 @@ Use this command to harm an entity with a set amount of damage of the specified 
 /damage <target> <amount> [cause]
 ```
 
-- Target (Actor sSelector) - The entity who will receive the damage.
+- Target (actor selector) - The entity who will receive the damage.
 
-- Amount (Integer) - The amount of damage to be taken.
+- Amount (integer) - The amount of damage to be taken.
 
-- Cause (Actor Damage Cause) - The type of damage that the entity will take. (Default: ActorDamageCause::None)
+- Cause (actor damage cause) - The type of damage that the entity will take. (Default: ActorDamageCause::None)
 
 
 ## Special use cases
