@@ -3,7 +3,7 @@ author: rileymanns
 ms.author: v-rileymanns
 title: Loot Spawn and Kill
 ms.prod: gaming
-description: "An overview covering Loot Table Overloads: `/loot spawn` and `/kill`"
+description: "An overview covering loot table overloads: `/loot spawn` and `/kill`"
 ---
 
 # Introduction to Two Loot Overloads: */loot spawn* and */kill*
