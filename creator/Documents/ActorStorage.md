@@ -38,7 +38,7 @@ These are the smallest keys used by pushing them together contiguously on disk. 
 
 ### Non-Actor Data Chunk Key IDs
 
-```json
+```
 
 enum class LevelChunkTag : char {
   Data3D = 43,
