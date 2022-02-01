@@ -29,6 +29,7 @@ It’s recommended that the following be completed before beginning this tutoria
 - [Introduction to Resource Packs](ResourcePack.md)
 - Download the [**min robot** and **full robot** resource and behavior packs](../../Utilities/Downloads/robot_min_and_full.zip)
 
+
 Knowledge of the following is also recommended to help better understand this article.
 
 - Familiarity with how the [JSON](https://www.w3schools.com/whatis/whatis_json.asp) format works.
@@ -42,7 +43,7 @@ In the behavior pack, an entity file is responsible for defining the entity on t
 
 ## Robot Entity Example - min robot
 
-To give you a point of reference for this tutorial, we are providing two versions of the same entity: a robot that can spawn randomly in the world and has three random textures, a wheel animation, various components, and a custom water mechanic.  You can download the packs [here](https://drive.google.com/file/d/14w3UCJ4sA9IwvY3fBiP2L5uQJDmbC6A9/view?usp=sharing).
+To give you a point of reference for this tutorial, we are providing two versions of the same entity: a robot that can spawn randomly in the world and has three random textures, a wheel animation, various components, and a custom water mechanic. The download link is in the **Requirements** section above.
 
 To see the robot in action, pick one of the sets of resource and behavior packs you just downloaded. (We recommend trying the minimum one for now.) Put the resource and behavior packs in their respective com.mojang sub-folders, launch a world with cheats enabled, and use `/summon compass:robot`.
 
