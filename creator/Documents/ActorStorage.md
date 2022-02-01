@@ -19,7 +19,7 @@ Before R18U2, actor data was stored per chunk as a blob of all actors in that ch
 
 ## Why are we moving actor data?
 
-- The legacy actor data storage format meant if one actor in a chunk is changed you have to save them all, even if only one actually changed. This resulted in a lot of unnecessary operations and made handling the transfer of entities between chunks an expensive and fragile system.
+The legacy actor data storage format meant if one actor in a chunk is changed you have to save them all, even if only one actually changed. This resulted in a lot of unnecessary operations and made handling the transfer of entities between chunks an expensive and fragile system.
 
 ## How is modern actor data stored on disk?
 
@@ -29,7 +29,7 @@ Instead, we use data from the chunk to deterministically generate a key that is 
 
 Let's take a look at how this appears on disk:
 
-![LevelDB diagram showing actor storage chunks.](Media/ActorStorage/leveldbdiagram.png)
+:::image type="content" source="Media/ActorStorage/leveldbdiagram.png" alt-text="LevelBD diagram showing chuck key space, actor digest key space, and actor key space":::
 
 On the left of the diagram, we can see the chunk key space. These keys take the legacy chunk key form of `<Chunk Position><DimensionID>`. 
 There is a very old legacy chunk format in which there is no dimension ID, so it is possible to load a really old world in which chunk keys do not have a dimension ID. They will be saved out under a new key with the dimension ID. This is old behavior that still exists.
