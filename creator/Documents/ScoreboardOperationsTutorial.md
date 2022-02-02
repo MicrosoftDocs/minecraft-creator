@@ -12,8 +12,9 @@ The purpose of this tutorial is to show you how to use each of the scoreboard pl
 
 The concept is to create one objective with six players to represent digits 0, 1, 2, 3, 5, and 10, and another objective to hold two players whose scores will be changed when you do the operations.
 
-Numbers: 0, 1, 2, 3, 5, 10
-Friends: Alex, Toast
+> Numbers: 0, 1, 2, 3, 5, 10
+
+> Friends: Alex, Toast
 
 ## Setup
 
