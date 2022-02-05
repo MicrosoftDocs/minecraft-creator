@@ -13,8 +13,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|despawn_from_distance |*not set* |JSON Object|Defines the minimum and maximum distance for despawn to occur |
-|despawn_from_chance| true| Boolean|  Determines if "min_range_random_chance" is used in the standard despawn rules |
+|despawn_from_distance |*not set* |JSON Object| Specifies if the "min_distance" and "max_distance" are used in the standard despawn rules. |
+|despawn_from_chance| true| Boolean|  Determines if "min_range_random_chance" is used in the standard despawn rules. |
 |despawn_from_inactivity| true| Boolean|  Determines if the "min_range_inactivity_timer" is used in the standard despawn rules. |
 |despawn_from_simulation_edge| true|  Boolean| Determines if the mob is instantly despawned at the edge of simulation distance in the standard despawn rules. |
 |[filters](../FilterList.md)|*not set* | Minecraft Filter|  The list of conditions that must be satisfied before the Actor is despawned. If a filter is defined then standard despawn rules are ignored. |

@@ -41,11 +41,12 @@ ms.prod: gaming
 
 | Name| Default Value| Type| Description |
 |:-----------|:-----------|:-----------|:-----------|
-| birth_event| *not set*| String| Event to run when this mob is created and matches the above allele conditions. |
+| birth_event| *not set*| String| Event to run when this mob is created and matches the allele conditions. |
 | both_allele| -1| Integer| If this value is non-negative, compare both the mob's main and hidden alleles with this value for a match with both. Can also be a range of integers. |
 | either_allele| -1| Integer| If this value is non-negative, compare both the mob's main and hidden alleles with this value for a match with either. Can also be a range of integers. |
 | hidden_allele| -1| Integer| If this value is non-negative, compare the mob's hidden allele with this value for a match. Can also be a range of integers. |
 | main_allele| -1| Integer| If this value is non-negative, compare the mob's main allele with this value for a match. Can also be a range of integers. |
+| mutation_rate| -1| Decimal| If this value is non-negative, overrides the chance for this gene that an allele will be replaced with a random one instead of the parent's allele during birth. Non-negative values greater than `1` will be the same as the value `1`. |
 
 ## Example
 

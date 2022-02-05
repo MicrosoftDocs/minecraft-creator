@@ -13,10 +13,14 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|can_get_scared| false| Boolean|  If true, the mob can stop being tempted if the player moves too fast while close to this mob |
-|items|*not set* | List|  List of items this mob is tempted by |
-|speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |
-|within_radius| 0.0| Decimal| Distance in blocks this mob can get tempted by a player holding an item they like |
+| can_get_scared| false| Boolean| If true, the mob can stop being tempted if the player moves too fast while close to this mob |
+| can_tempt_vertically| false| Boolean| If true, vertical distance to the player will be considered when tempting. |
+| can_tempt_while_ridden| false| Boolean| If true, the mob can be tempted even if it has a passenger (i.e. if being ridden). |
+| items| | List| List of items this mob is tempted by |
+| sound_interval| [0.0, 0.0]| Range [a, b] |Range of random ticks to wait between tempt sounds. |
+| speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |
+| tempt_sound| | String | Sound to play while the mob is being tempted. |
+| within_radius| 0.0| Decimal| Distance in blocks this mob can get tempted by a player holding an item they like |
 
 ## Example
 
@@ -24,6 +28,8 @@ ms.prod: gaming
 "minecraft:behavior.tempt":{
     "priority": 2,
     "can_get_scared":true,
+    "can_tempt_vertically": false,
+    "can_tempt_while_ridden": true,
     "speed_multiplier": 1.3,
     "within_radius": 5.0,
     "items":["carrot"]

@@ -367,6 +367,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:flowing_lava |
 | minecraft:flowing_water |
 | minecraft:frame |
+| minecraft:frog_egg |
 | minecraft:frosted_ice |
 | minecraft:furnace |
 | minecraft:gilded_blackstone |
@@ -488,6 +489,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:oak_stairs |
 | minecraft:observer |
 | minecraft:obsidian |
+| minecraft:ochre_froglight |
 | minecraft:orange_candle |
 | minecraft:orange_candle_cake |
 | minecraft:orange_glazed_terracotta |
@@ -497,6 +499,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:oxidized_cut_copper_stairs |
 | minecraft:oxidized_double_cut_copper_slab |
 | minecraft:packed_ice |
+| minecraft:pearlescent_froglight |
 | minecraft:pink_candle |
 | minecraft:pink_candle_cake |
 | minecraft:pink_glazed_terracotta |
@@ -578,9 +581,9 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:sculk_sensor |
 | minecraft:sculk_shrieker |
 | minecraft:sculk_vein |
+| minecraft:seaLantern |
 | minecraft:sea_pickle |
 | minecraft:seagrass |
-| minecraft:seaLantern |
 | minecraft:shroomlight |
 | minecraft:shulker_box |
 | minecraft:silver_glazed_terracotta |
@@ -618,8 +621,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:stained_hardened_clay |
 | minecraft:standing_banner |
 | minecraft:standing_sign |
-| minecraft:sticky_piston |
 | minecraft:stickyPistonArmCollision |
+| minecraft:sticky_piston |
 | minecraft:stone |
 | minecraft:stone_brick_stairs |
 | minecraft:stone_button |
@@ -663,6 +666,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:unlit_redstone_torch |
 | minecraft:unpowered_comparator |
 | minecraft:unpowered_repeater |
+| minecraft:verdant_froglight |
 | minecraft:vine |
 | minecraft:wall_banner |
 | minecraft:wall_sign |
@@ -728,4 +732,3 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:yellow_candle_cake |
 | minecraft:yellow_flower |
 | minecraft:yellow_glazed_terracotta |
-

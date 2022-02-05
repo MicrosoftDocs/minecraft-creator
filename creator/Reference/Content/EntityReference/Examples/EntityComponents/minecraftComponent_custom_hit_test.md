@@ -13,7 +13,7 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|hitboxes |*not set* | Array| Defines a hitbox size and pivot to test against. |
+|hitboxes |*not set* | Array| Comma-separated array of hitboxes. |
 
 ### hitboxes
 
