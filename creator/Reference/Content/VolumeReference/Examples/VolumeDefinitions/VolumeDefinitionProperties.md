@@ -36,7 +36,7 @@ These properties are part of the Volume Definition and Volume Properties that ar
 
 | Name| Default Value| Type| Description |
 |:----------|:----------|:----------|:----------|
-| format_version|*not set* | String| Specifies the version of the game this entity was made in. Minimum supported version is 1.17.0. Current supported version is 1.17.0. |
+| format_version|*not set* | String| Specifies the version of the game this entity was made in. Minimum supported version is 1.17.0. Current supported version is 1.18.10. |
 
 ### Identifier
 

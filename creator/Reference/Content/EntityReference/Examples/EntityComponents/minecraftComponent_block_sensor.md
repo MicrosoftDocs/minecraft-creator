@@ -13,8 +13,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|sensor_radius |*not set* | Decimal  |Radius from entity in order to check for when block is broken|
-|on_break |*not set* | List| Blocks that will trigger the component when broken and what event will trigger.|
+|on_break |*not set* | List| List of blocks to watch for being broken to fire off a specified event. If a block is in multiple lists, multiple events will fire.|
+|sensor_radius |16.0 | Decimal | The maximum radial distance in which a specified block can be detected. The biggest radius is 32.0. |
 
 ### on_break
 

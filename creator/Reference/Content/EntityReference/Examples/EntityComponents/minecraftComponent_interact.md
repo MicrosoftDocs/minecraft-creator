@@ -16,6 +16,7 @@ ms.prod: gaming
 |add_items| | JSON Object|  Loot table with items to add to the player's inventory upon successful interaction.|
 |cooldown| 0.0| Decimal|  Time in seconds before this entity can be interacted with again. |
 |cooldown_after_being_attacked| 0.0| Decimal|  Time in seconds before this entity can be interacted with after being attacked. |
+|health_amount| 0| Integer | The amount of health this entity will recover or hurt when interacting with this item. Negative values will harm the entity. |
 |hurt_item| 0| Integer|  The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability. |
 |interact_text|*not set* | String|  Text to show when the player is able to interact in this way with this entity when playing with Touch-screen controls. |
 |on_interact|*not set* | String|  Event to fire when the interaction occurs. |

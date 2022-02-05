@@ -13,7 +13,7 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| controlling_seat| 0| Integer| The seat that designates the driver of the entity |
+| controlling_seat| 0| Integer| The seat that designates the driver of the entity. This is only observed by the horse/boat styles of riding; minecarts/entities with "minecraft:controlled_by_player" give control to any player in any seat.  |
 | crouching_skip_interact| True| Boolean| If true, this entity can't be interacted with if the entity interacting with it is crouching |
 | family_types| *not set*| List| List of entities that can ride this entity |
 | interact_text| *not set*| String| The text to display when the player can interact with the entity when playing with Touch-screen controls |

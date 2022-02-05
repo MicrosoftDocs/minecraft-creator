@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.hide
 
-`minecraft:behavior.hide` allows an entity to navigate to a specific point of interest that is tied to the entity.
+`minecraft:behavior.hide` allows a mob with the hide component to attempt to move to - and hide at - an owned or nearby POI.
 
 >[!IMPORTANT]
 > `minecraft:behavior.hide` requires a point of interest to be set in order to work properly.

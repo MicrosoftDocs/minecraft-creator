@@ -27,18 +27,18 @@ ms.prod: gaming
 
 Listed below are the accepted values that can be used for texture_typeL
 
-- gold
 - none
 - leather
 - chain
 - iron
 - diamond
+- gold
 - elytra
 - turtle
 - netherite
 
 > [!NOTE]
-> When making Horse armor, you are restricted to leather, iron, gold, or diamond.
+> When making horse armor, you are restricted to leather, iron, gold, or diamond.
 
 ## Example
 

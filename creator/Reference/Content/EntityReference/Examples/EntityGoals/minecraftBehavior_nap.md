@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.nap
 
-`minecraft:behavior.nap` allows an entity to nap in a location when distant from other entities.
+`minecraft:behavior.nap` allows mobs to occasionally stop and take a nap under certain conditions.
 
 ## Parameters
 

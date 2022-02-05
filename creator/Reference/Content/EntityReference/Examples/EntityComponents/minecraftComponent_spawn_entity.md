@@ -25,7 +25,7 @@ ms.prod: gaming
 | num_to_spawn| 1| Integer| The number of entities of this type to spawn each time that this triggers. |
 | should_leash| false| Boolean| If true, this the spawned entity will be leashed to the parent. |
 | single_use| false| Boolean| If true, this component will only ever spawn the specified entity once. |
-| spawn_entity| *not set*| String| Identifier of the entity to spawn, leave empty to spawn the item defined above instead. |
+| spawn_entity| *not set*| String| Identifier of the entity to spawn, leave empty to spawn the item defined by "spawn_item" instead. |
 | spawn_event| minecraft:entity_born| String| Event to call when the entity is spawned. |
 | spawn_item| egg| String| Item identifier of the item to spawn. |
 | spawn_method| born| String| Method to use to spawn the entity. |

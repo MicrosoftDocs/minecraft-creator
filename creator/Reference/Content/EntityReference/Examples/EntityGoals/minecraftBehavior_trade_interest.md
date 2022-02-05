@@ -15,7 +15,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 |carried_item_switch_time| 2.0| Decimal| The max time in seconds that the trader will hold an item before attempting to switch for a different item that takes the same trade |
 |cooldown | 2.0| Decimal| The time in seconds before the trader can use this goal again |
-|interest_time | 45.0| Decimal|  The max time in seconds that the trader will be interested with showing it's trade items |
+|interest_time | 45.0| Decimal|  The max time in seconds that the trader will be interested with showing its trade items |
 |remove_item_time | 1.0| Decimal| The max time in seconds that the trader will wait when you no longer have items to trade |
 |within_radius| 0.0| Decimal| Distance in blocks this mob can be interested by a player holding an item they like |
 

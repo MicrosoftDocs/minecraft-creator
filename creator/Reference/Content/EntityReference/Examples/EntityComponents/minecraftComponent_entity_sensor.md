@@ -13,8 +13,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| [event_filters](../FilterList.md)| *not set*|Minecraft Filter |Filters to use for conditions.  |
-| event| *not set*|String |Event to run when conditions are meant |
+| [event_filters](../FilterList.md)| *not set*|Minecraft Filter | The set of conditions that must be satisfied to fire the event.  |
+| event| *not set*|String | Event to fire when the conditions are met.|
 | maximum_count| -1| Integer| The maximum number of entities that must pass the filter conditions for the event to send. |
 | minimum_count| 1| Integer| The minimum number of entities that must pass the filter conditions for the event to send. |
 | relative_range| True| Boolean| If true the sensor range is additive on top of the entity's size. |
