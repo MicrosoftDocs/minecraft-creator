@@ -207,4 +207,4 @@ Now that you have learned about scoreboard operations, you could learn more abou
 
 > [!div class="nextstepaction"]
 > [Command Blocks](CommandBlocks.md)
-> [Introduction to Functions](FunctionsIntro.md)
+> [Introduction to Functions](FunctionsIntroduction.md)
