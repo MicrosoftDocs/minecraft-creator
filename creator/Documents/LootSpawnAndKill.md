@@ -48,7 +48,7 @@ The `/loot spawn` command allows creators to drop the loot of any entity that ha
 
 **loot_table** - Mandatory path of the loot table to use.
 
-**[<tool>|mainhand|offhand]** - Optional tool with which to simulate mining the given loot table. Default is an empty hand.
+**[tool|mainhand|offhand]** - Optional tool with which to simulate mining the given loot table. Default is an empty hand.
 
 **Output** - Command returns an error message if the given loot table does not exist.
 
@@ -64,7 +64,7 @@ The `/loot spawn` command allows creators to drop the loot of any entity that ha
 
 **entity** - Mandatory target specifying the entity whose loot table will be used.
 
-**[<tool>|mainhand|offhand]** - Optional tool with which to simulate killing the given entity. Default is an empty hand.
+**[tool|mainhand|offhand]** - Optional tool with which to simulate killing the given entity. Default is an empty hand.
 
 **Output** - Command returns an error message if no entity is found or if more than one entity is specified.
 

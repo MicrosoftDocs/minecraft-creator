@@ -36,13 +36,13 @@ Because the objectives we are tracking do not already exist in the game, you wil
 
 1. In chat, enter `/scoreboard objectives add shearedSheep dummy "Top Shearers"`. You should get the message "Added new objective 'shearedSheep' successfully."
 
-    ![Image of a scoreboard objective displayed in a sidebar](Media/Commands/scoreboard_shearedSheep_added.png)
+    ![Image of a new scoreboard objective displayed in a sidebar](Media/Commands/scoreboard_shearedSheep_added.png)
 
 1. Your objective exists, but we can't see it until we display it on the screen. Your options are to display the information in a sidebar, on the pause screen, or below the player's name.
 
     Enter `/scoreboard objectives setdisplay sidebar shearedSheep`. You should now see a sidebar on the screen with the header Top Shearers.
 
-    ![Image of a scoreboard objective displayed in a sidebar](Media/Commands/scoreboard_setdisplay_sidebar.png)
+    ![Image of a scoreboard objective successfully displayed in a sidebar](Media/Commands/scoreboard_setdisplay_sidebar.png)
 
 1. Now that our objective exists, add a player named "SomeRandomPlayer" and give them a score of 0. Enter `/scoreboard players add SomeRandomPlayer shearedSheep 0`. The player's name will be displayed on the sidebar under Top Shearers.
 
@@ -50,7 +50,7 @@ Because the objectives we are tracking do not already exist in the game, you wil
 
 1. Add yourself and give yourself a score of 50: `/scoreboard players add @s shearedSheep 50`. Your own name will be displayed on the list.
 
-    ![Image of a player name displayed in a sidebar](Media/Commands/scoreboard_player2_sidebar.png)
+    ![Image of a player name displayed in a different sidebar](Media/Commands/scoreboard_player2_sidebar.png)
 
 
 ## Scoreboard Objectives Commands

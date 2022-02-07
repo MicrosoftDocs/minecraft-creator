@@ -5,9 +5,9 @@ title: Features Documentation - minecraft:fossil_feature
 ms.prod: gaming
 ---
 
-# Features Documentation - minecraft:geode_feature
+# Features Documentation - minecraft:fossil_feature
 
-`minecraft:geode_feature` generates a skeletal structure composed of bone blocks and parametric ore blocks.
+`minecraft:fossil_feature` generates a skeletal structure composed of bone blocks and parametric ore blocks.
 
 **Succeeds if**
 The fossil is placed.
