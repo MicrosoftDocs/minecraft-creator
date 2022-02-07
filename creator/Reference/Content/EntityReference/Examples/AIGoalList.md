@@ -63,7 +63,6 @@ Below is a list of all the available AI Goals within Minecraft:Bedrock Edition f
 |[minecraft:behavior.move_to_land](EntityGoals/minecraftBehavior_move_to_land.md)|`minecraft:behavior.move_to_land` allows an entity to move to land when in a non-land medium such as lava or water. |
 |[minecraft:behavior.move_to_lava](EntityGoals/minecraftBehavior_move_to_lava.md)|`minecraft:behavior.move_to_lava` allows an entity to move to lava when on land. |
 |[minecraft:behavior.move_to_liquid](EntityGoals/minecraftBehavior_move_to_liquid.md)|`minecraft:behavior.move_to_liquid` allows the mob to move into a liquid when on land. |
-|[minecraft:behavior.move_to_poi](EntityGoals/minecraftBehavior_move_to_poi.md)|`minecraft:behavior.move_to_poi` allows an entity to move to a point of interest that has been set. |
 |[minecraft:behavior.move_to_random_block](EntityGoals/minecraftBehavior_move_to_random_block.md)|`minecraft:behavior.move_to_random_block` allows an entity to move to a random block within a set radius. |
 |[minecraft:behavior.move_to_village](EntityGoals/minecraftBehavior_move_to_village.md)|`minecraft:behavior.move_to_village` allows an entity to travel to a random x,y,z coordinate in a village. |
 |[minecraft:behavior.move_to_water](EntityGoals/minecraftBehavior_move_to_water.md)|`minecraft:behavior.move_to_water` allows an entity to move to water when on land. |
