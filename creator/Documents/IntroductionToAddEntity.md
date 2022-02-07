@@ -27,7 +27,7 @@ It’s recommended that the following be completed before beginning this tutoria
 
 - [Introduction to Behavior Packs](BehaviorPack.md)
 - [Introduction to Resource Packs](ResourcePack.md)
-- Download the [**min robot** and **full robot** resource and behavior packs](Downloads/AddEntity/robot_min_and_full.zip)
+- Download the [**min robot** and **full robot** resource and behavior packs](https://drive.google.com/drive/folders/1UMANLzCnGmAMdaosnLkXyJoM6pcbsS5J?usp=sharing)
 
 
 Knowledge of the following is also recommended to help better understand this article.
