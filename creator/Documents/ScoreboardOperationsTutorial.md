@@ -148,7 +148,7 @@ Divide Alex's score by 5.
 
 Result: Alex now has a score of 6. The remainder is ignored.
 
-![Image of objective named Friends with scores - Alex 34 and Toast 5](Media/Commands/scoreboard_ops_friends_6_5.png)
+![Image of objective named Friends with scores - Alex 6 and Toast 5](Media/Commands/scoreboard_ops_friends_5_6.png)
 
 **What if I divide by zero?**
 
@@ -160,7 +160,7 @@ Divide Toast's score by 0.
 
 Result: Nothing happens. (Whew!)
 
-![Image of objective named Friends with scores - Alex 6 and Toast 5](Media/Commands/scoreboard_ops_friends_5_6.png)
+![Image of objective named Friends with scores where nothing happened - Alex 6 and Toast 5](Media/Commands/scoreboard_ops_friends_5_6.png)
 
 ### 7. `>` Compare - Greater Than
 
