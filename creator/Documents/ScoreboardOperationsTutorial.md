@@ -136,7 +136,7 @@ Divide Toast's score by 5.
 /scoreboard players operation Toast Friends /= Five Numbers
 ```
 
-![Image of objective named Friends with scores - Alex 34 and Toast 25](Media/Commands/scoreboard_ops_friends_34_5.png)
+![Image of objective named Friends with scores - Alex 34 and Toast 5](Media/Commands/scoreboard_ops_friends_34_5.png)
 
 **More Complicated - Has remainder** 
 
@@ -148,7 +148,7 @@ Divide Alex's score by 5.
 
 Result: Alex now has a score of 6. The remainder is ignored.
 
-![Image of objective named Friends with scores - Alex 34 and Toast 25](Media/Commands/scoreboard_ops_friends_6_5.png)
+![Image of objective named Friends with scores - Alex 34 and Toast 5](Media/Commands/scoreboard_ops_friends_6_5.png)
 
 **What if I divide by zero?**
 
@@ -160,7 +160,7 @@ Divide Toast's score by 0.
 
 Result: Nothing happens. (Whew!)
 
-![Image of objective named Friends with scores - Alex 34 and Toast 25](Media/Commands/scoreboard_ops_friends_5_6.png)
+![Image of objective named Friends with scores - Alex 6 and Toast 5](Media/Commands/scoreboard_ops_friends_5_6.png)
 
 ### 7. `>` Compare - Greater Than
 
@@ -173,7 +173,7 @@ Compare Toast's score to Alex's score. Toast's score will be set to
 
 Result: Toast's score was set to 6, Alex's score is not affected.
 
-![Image of objective named Friends with scores - Alex 34 and Toast 25](Media/Commands/scoreboard_ops_friends_6_6.png)
+![Image of objective named Friends with scores - Alex 6 and Toast 6](Media/Commands/scoreboard_ops_friends_6_6.png)
 
 If you try the operation again with both scores being equal, you get the same message.
 
@@ -187,7 +187,7 @@ Compare Toast's score to Three's score of 3. Toast's score will be set to whiche
 
 Result: Toast's score is set to 3.
 
-![Image of objective named Friends with scores - Alex 34 and Toast 25](Media/Commands/scoreboard_ops_friends_6_3.png)
+![Image of objective named Friends with scores - Alex 6 and Toast 3](Media/Commands/scoreboard_ops_friends_6_3.png)
 
 
 ### 9. `%=` Modulo
