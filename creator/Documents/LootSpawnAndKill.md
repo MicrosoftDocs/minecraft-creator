@@ -42,7 +42,7 @@ The `/loot spawn` command allows creators to drop the loot of any entity that ha
 
 **Output** - If successful, the command returns a message saying how many items were dropped. Command returns an error message if the position is out of the world or if the position is not loaded.
 
-`loot <loot_table> [<tool>|mainhand|offhand]` - Pulls items from the specified loot table as if you used the specified tool to obtain them or no tool if none is specified.
+`loot <loot_table> [tool|mainhand|offhand]` - Pulls items from the specified loot table as if you used the specified tool to obtain them or no tool if none is specified.
 
 **loot** - Mandatory keyword to identify overload.
 
@@ -58,7 +58,7 @@ The `/loot spawn` command allows creators to drop the loot of any entity that ha
 
 ### Syntax
 
-`kill <entity: target> [<tool>|mainhand|offhand]` - Pulls items from the specified entity’s loot table, as if you killed it with the specified tool, or no tool if none is specified.
+`kill <entity: target> [tool|mainhand|offhand]` - Pulls items from the specified entity’s loot table, as if you killed it with the specified tool, or no tool if none is specified.
 
 **kill** - Mandatory keyword to identify overload.
 
