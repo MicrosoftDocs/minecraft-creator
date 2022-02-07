@@ -18,9 +18,9 @@ highlightedContent:
 # itemType:  architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     #card used to define plugin
-    - title: World Height Changes in Caves & Cliffs Part 2
+    - title: Meet the /Damage Command
       itemType: whats-new
-      url: Documents/WorldHeightChange.md
+      url: Documents/CommandsDamageIntroduction.md
     #card
     - title: "Installing Add-Ons in Minecraft: Bedrock Edition"
       itemType: deploy
@@ -85,7 +85,7 @@ conceptualContent:
               itemType: how-to-guide
               text: How to add a Custom Block
         # card
-        - title: Build a "Complete the Monument" map with Commands - UPDATED Feb 2022!
+        - title: Build a "Complete the Monument" map with Commands
           summary: "Commands are a powerful way to add logic into your experiences."
           links:
             - url: Documents/CommandsIntroduction.md
