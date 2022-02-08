@@ -13,7 +13,6 @@ Below is a list of all the available Block Components within Minecraft:Bedrock E
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|[minecraft:block_light_absorption](BlockComponents/minecraftBlock_block_light_absorption.md)| 0| Integer|  The amount of light this block will absorb. |
 |[minecraft:block_light_emission](BlockComponents/minecraftBlock_block_light_emission.md)| 0.0| Decimal| The amount of light this block will emit in a range [0.0, 1.0].|
 |[minecraft:breathability](BlockComponents/minecraftBlock_breathability.md)| solid| Enumerator|  Property describing the breathability of this block and whether it is treated as a solid or as air. |
 |[minecraft:creative_category](BlockComponents/minecraftBlock_creative_category.md) |Specifies the creative group for the block. |

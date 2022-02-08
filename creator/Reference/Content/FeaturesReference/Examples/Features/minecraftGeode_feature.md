@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: v-jillheaden
+ms.author: v-jillheaden
 title: Features Documentation - minecraft:geode_feature
 ms.prod: gaming
 ---

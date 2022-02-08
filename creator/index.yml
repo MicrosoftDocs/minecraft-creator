@@ -10,25 +10,25 @@ metadata:
   ms.service: service # Required; service per approved list.
   ms.topic: hub-page # Required
   ms.date: 08/30/2021
-  author: v-josjones # Required; Github alias
-  ms.author: v-josjones # Required; Microsoft alias; with correct grammar
+  author: JDHeaden # Required; Github alias
+  ms.author: v-jillheaden # Required; Microsoft alias; with correct grammar
 
 # highlighted content section (optional), will outlined up to 8 items in a 4x2 grid.
 highlightedContent:
 # itemType:  architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     #card used to define plugin
-    - title: World Height Changes in Caves & Cliffs Part 2
+    - title: Meet the /Damage Command
       itemType: whats-new
-      url: Documents/WorldHeightChange.md
+      url: Documents/CommandsDamageIntroduction.md
     #card
     - title: "Installing Add-Ons in Minecraft: Bedrock Edition"
       itemType: deploy
       url: Documents/AddonPackInstallation.md
     #card
-    - title: "Introduction to Functions"
+    - title: "Introduction to Scoreboard"
       itemType: whats-new
-      url: Documents/FunctionsIntroduction.md
+      url: Documents/ScoreboardIntroduction.md
     #card
     - title: "Experimental Features in Minecraft: Bedrock Edition"
       itemType: architecture
@@ -133,6 +133,9 @@ conceptualContent:
           - url: Documents/LootAndTradeTableFunctions.md
             itemType: overview
             text: Loot and Trade Table Functions
+          - url: Documents/LootSpawnAndKill.md
+            itemType: overview
+            text: Learn about Loot Spawn and Kill
         # card
         - title: Working with Chunker
           summary: "Utilize Chunker to convert your existing Minecraft: Java Edition worlds to Minecraft: Bedrock Edition"

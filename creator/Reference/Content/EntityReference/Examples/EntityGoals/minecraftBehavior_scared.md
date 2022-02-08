@@ -1,35 +1,24 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: v-jillheaden
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.scared
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.scared
 
-`minecraft:behavior.scared` allows an entity to become scared and react when a thunderstorm occurs.
+`minecraft:behavior.scared` allows the a mob to become scared when the weather outside is thundering.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|sound_interval| 0| Integer| The interval in which a sound will play when active in a 1/delay chance to kick off |
+| sound_interval| 0| Integer| The interval in which a sound will play when active in a 1/delay chance to kick off |
 
 ## Example
 
 ```json
 "minecraft:behavior.scared":{
-    "priority": 2,
-    "sound_interval": 50
+    "sound_interval": 0
 }
 ```
-
-## Vanilla entities examples
-
-### panda
-
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/panda.json" range="171-174":::
-
-## Vanilla entities using `minecraft:behavior.scared`
-
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)

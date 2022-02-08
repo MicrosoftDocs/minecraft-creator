@@ -20,11 +20,12 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|can_always_eat|false |Boolean |If true, you can always eat this item (even when not hungry).|
-|nutrition |*not set* | Integer| How much nutrition does this food item give the player when eaten.|
+|can_always_eat|false |Boolean | If `true` you can always eat this item (even when not hungry). |
 |effects |*not set* | List| List of Events to fire off when consumed|
-|saturation_modifier|*not set* |String| Saturation Modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff. Which happens when you eat the item.|
-|using_converts_to| *not set* |String| When used, convert the *this* item to the one specified by 'using_converts_to'.|
+|nutrition | 0 | Integer| The value that is added to the actor's nutrition when the item is used. |
+|on_consume| *not set* | Trigger | Event trigger for when the item is consumed. |
+|saturation_modifier| 0.6 |String| Saturation Modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff.|
+|using_converts_to| Not used by default. |String| When used, converts to the item specified by the string in this field. |
 
 ## Example
 

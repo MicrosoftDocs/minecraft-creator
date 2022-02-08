@@ -17,7 +17,6 @@ Below is a list of all the available AI Goals within Minecraft:Bedrock Edition f
 |[minecraft:behavior.beg](EntityGoals/minecraftBehavior_beg.md)|`minecraft:behavior.beg` allows an entity to react by tilting its head when a player is holding select items nearby. |
 |[minecraft:behavior.break_door](EntityGoals/minecraftBehavior_break_door.md)|`minecraft:behavior.break_door` allows an entity to break down doors. |
 |[minecraft:behavior.breed](EntityGoals/minecraftBehavior_breed.md)|`minecraft:behavior.breed` allows an entity to breed with other entities that have been assigned. |
-|[minecraft:behavior.celebrate](EntityGoals/minecraftBehavior_celebrate.md)|`minecraft:behavior.celebrate` allows an entity to jump up and down while playing a sound |
 |[minecraft:behavior.defend_trusted_target](EntityGoals/minecraftBehavior_defend_trusted_target.md)|`minecraft:behavior.defend_trusted_target` allows an entity to react with an event when a trusted target is attacked. |
 |[minecraft:behavior.door_interact](EntityGoals/minecraftBehavior_door_interact.md)|`minecraft:behavior.door_interact` allows an entity to interact with doors. |
 |[minecraft:behavior.dragondeath](EntityGoals/minecraftBehavior_dragondeath.md)|`minecraft:behavior.dragondeath` controls the entity's death state and animation. |
@@ -59,11 +58,11 @@ Below is a list of all the available AI Goals within Minecraft:Bedrock Edition f
 |[minecraft:behavior.melee_attack](EntityGoals/minecraftBehavior_melee_attack.md)|`minecraft:behavior.melee_attack` allows entities to make close combat melee attacks. |
 |[minecraft:behavior.mingle](EntityGoals/minecraftBehavior_mingle.md)|`minecraft:behavior.mingle` allows an entity to navigate to the village bell point of interest and interact with other entities that have been assigned. |
 |[minecraft:behavior.mount_pathing](EntityGoals/minecraftBehavior_mount_pathing.md)|`minecraft:behavior.mount_pathing` allows an entity to move around on it's own while mounted. `minecraft:behavior.mount_pathing` also will allow an entity to target another entity for an attack. |
-|[minecraft:behavior.move_indoors](EntityGoals/minecraftBehavior_move_indoors.md)|`minecraft:behavior.move_indoors` allows an entity to seek shelter within a village by entering a building. |
-|[minecraft:behavior.move_through_village](EntityGoals/minecraftBehavior_move_through_village.md)|`minecraft:behavior.move_through_village` allows an entity to navigate around a village by creating a path to patrol. |
+|[minecraft:behavior.move_through_village](EntityGoals/minecraftBehavior_move_through_village.md)|`minecraft:behavior.move_through_village` can only be used by villagers. Allows the villagers to create paths around the village. |
+|[minecraft:behavior.block](EntityGoals/minecraftBehavior_move_to_block.md)|`minecraft:behavior.move_to_block` allows mob to move towards a block. |
 |[minecraft:behavior.move_to_land](EntityGoals/minecraftBehavior_move_to_land.md)|`minecraft:behavior.move_to_land` allows an entity to move to land when in a non-land medium such as lava or water. |
 |[minecraft:behavior.move_to_lava](EntityGoals/minecraftBehavior_move_to_lava.md)|`minecraft:behavior.move_to_lava` allows an entity to move to lava when on land. |
-|[minecraft:behavior.move_to_poi](EntityGoals/minecraftBehavior_move_to_poi.md)|`minecraft:behavior.move_to_poi` allows an entity to move to a point of interest that has been set. |
+|[minecraft:behavior.move_to_liquid](EntityGoals/minecraftBehavior_move_to_liquid.md)|`minecraft:behavior.move_to_liquid` allows the mob to move into a liquid when on land. |
 |[minecraft:behavior.move_to_random_block](EntityGoals/minecraftBehavior_move_to_random_block.md)|`minecraft:behavior.move_to_random_block` allows an entity to move to a random block within a set radius. |
 |[minecraft:behavior.move_to_village](EntityGoals/minecraftBehavior_move_to_village.md)|`minecraft:behavior.move_to_village` allows an entity to travel to a random x,y,z coordinate in a village. |
 |[minecraft:behavior.move_to_water](EntityGoals/minecraftBehavior_move_to_water.md)|`minecraft:behavior.move_to_water` allows an entity to move to water when on land. |
@@ -96,10 +95,10 @@ Below is a list of all the available AI Goals within Minecraft:Bedrock Edition f
 |[minecraft:behavior.receive_love](EntityGoals/minecraftBehavior_receive_love.md)|`minecraft:behavior.receive_love` allows an entity to mate with another similar entity when approached to breed. |
 |[minecraft:behavior.restrict_open_door](EntityGoals/minecraftBehavior_restrict_open_door.md)|`minecraft:behavior.restrict_open_door` allows an entity to stay indoors while the sun is down.|
 |[minecraft:behavior.restrict_sun](EntityGoals/minecraftBehavior_restrict_sun.md)|`minecraft:behavior.restrict_sun` allows an entity to actively avoid direct sunlight. |
-|[minecraft:behavior.rise_to_liquid_level](EntityGoals/minecraftBehavior_rise_to_liquid_level.md)|`minecraft:behavior.rise_to_liquid_level` allows an entity to rise to the top of lava if they are located or have spawned under lava. |
+|[minecraft:behavior.rise_to_liquid_level](EntityGoals/minecraftBehavior_rise_to_liquid_level.md)|`minecraft:behavior.rise_to_liquid_level` allows the mob to stay at a certain level when in liquid. |
 |[minecraft:behavior.roll](EntityGoals/minecraftBehavior_roll.md)|`minecraft:behavior.roll` allows an entity roll forward. |
 |[minecraft:behavior.run_around_like_crazy](EntityGoals/minecraftBehavior_run_around_like_crazy.md)|`minecraft:behavior.run_around_like_crazy` allows an entity to run around without a set goal. |
-|[minecraft:behavior.scared](EntityGoals/minecraftBehavior_scared.md)|`minecraft:behavior.scared` allows an entity to react and scared when a thunderstorm occurs. |
+|[minecraft:behavior.scared](EntityGoals/minecraftBehavior_scared.md)|`minecraft:behavior.scared` allows the a mob to become scared when the weather outside is thundering. |
 |[minecraft:behavior.send_event](EntityGoals/minecraftBehavior_send_event.md)|`minecraft:behavior.send_event` allows an entity to send an event to another entity. |
 |[minecraft:behavior.share_items](EntityGoals/minecraftBehavior_share_items.md)|`minecraft:behavior.share_items` allows an entity to share items they have in their inventory with other specific entities that have been defined. |
 |[minecraft:behavior.silverfish_wake_up_friends](EntityGoals/minecraftBehavior_silverfish_wake_up_friends.md)|`minecraft:behavior.silverfish_wake_up_friends` allows an entity to alert other entities of the same family to leave a stone block. |
@@ -128,4 +127,4 @@ Below is a list of all the available AI Goals within Minecraft:Bedrock Edition f
 |[minecraft:behavior.vex_random_move](EntityGoals/minecraftBehavior_vex_random_move.md)|`minecraft:behavior.vex_random_move` allows an entity of the`vex` family to move randomly.|
 |[minecraft:behavior.wither_random_attack_pos_goal](EntityGoals/minecraftBehavior_wither_random_attack_pos_goal.md)|`minecraft:behavior.wither_random_attack_pos_goal` allows an entity to attack at random.|
 |[minecraft:behavior.wither_target_highest_damage](EntityGoals/minecraftBehavior_wither_target_highest_damage.md)|`minecraft:behavior.wither_target_highest_damage` allows an entity to focus its attacks on whichever hostile mob has dealt the most damage to it. |
-|[minecraft:behavior.work](EntityGoals/minecraftBehavior_work.md)|`minecraft:behavior.work` allows an entity to navigate and interact with a point of interest that has been assigned as their worksite. |
+|[minecraft:behavior.work](EntityGoals/minecraftBehavior_work.md)|`minecraft:behavior.work` allows the NPC to use their jobsite POI. |

@@ -7,13 +7,13 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.random_hover
 
-`minecraft:behavior.random_hover` allows an entity to hover around in random locations.
+`minecraft:behavior.random_hover` allows the mob to hover around randomly, close to the surface
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|hover_height| [0.0, 0.0]| Range [a, b]|Range of the distance that the entity will hover between. |
+|hover_height| [0.0, 0.0]| Range [a, b]|The height above the surface which the mob will try to maintain |
 |interval| 120| Integer|  A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal |
 |speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |
 |xz_dist| 10| Integer|  Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1 |

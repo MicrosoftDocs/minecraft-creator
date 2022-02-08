@@ -1,7 +1,7 @@
  - name: Block Component List
    href: ../BlockComponentsList.md
- - name: block_light_absorption
-   href: minecraftBlock_block_light_absorption.md
+ - name: aim_collision
+   href: minecraftBlock_aim_collision.md
  - name: breathability
    href: minecraftBlock_breathability.md
  - name: creative_category

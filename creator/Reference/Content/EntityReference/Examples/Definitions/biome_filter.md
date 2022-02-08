@@ -96,7 +96,7 @@ Listed below are all of the available biomes within Minecraft:Bedrock Edition an
 | Mesa M| animal, monster, mesa, mutated |
 | Mesa Plateau| monster, mesa |
 | Mesa Plateau M| monster, mesa, plateau, mutated |
-| Mesa Plateau Stone| monster, plataeu |
+| Mesa Plateau Stone| monster, plateau |
 | Mesa Plateau Stone M| monster, mesa, plateau, mutated, stone |
 | Mountain| animal, monster, extreme_hills |
 | Mountain + M| animal, monster, extreme_hills, mutated, forest |
