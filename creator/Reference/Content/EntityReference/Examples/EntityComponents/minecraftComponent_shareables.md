@@ -28,7 +28,7 @@ ms.prod: gaming
 | admire| False| Boolean| Mob will admire the item after picking up by looking at it. For this to happen the mob needs to have an [Admire](minecraftComponent_admire_item.md) component and an [Admire](../EntityGoals/minecraftBehavior_admire_item.md) goal.|
 | barter| False| Boolean| Mob will barter for the item after picking it up. For this to work the mob needs to have a [Barter](minecraftComponent_barter.md) component and a [Barter](../EntityGoals/minecraftBehavior_barter.md) goal.|
 | consume_item|False|Boolean|Determines whether the mob will consume the item or not.|
-| craft_into|*not set*|String| Defines the item this entity wants to craft with the item defined above. Should be an item name.|
+| craft_into|*not set*|String| Defines the item this entity wants to craft with the item defined by "item". Should be an item name.|
 |item |*not set* | String| The name of the item. Aux value can be specified, for instance `minecraft:skull:1`.|
 | max_amount| *not set*| Integer| Maximum number of this item the mob will hold.|
 | pickup_limit| *not set*| Integer| Maximum number of this item the mob will pick up during a single goal tick.|

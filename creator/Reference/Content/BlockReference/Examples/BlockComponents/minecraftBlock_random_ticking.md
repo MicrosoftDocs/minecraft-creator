@@ -11,13 +11,14 @@ ms.prod: gaming
 
 ## Default Parameter
 
-|Default Value|Type |
-|:----|:----|
-|*not set*| JSON Object|
+|Default Value|Type | Description |
+|:----|:----|:----|
+|on_tick| trigger |The event that will be triggered on ticks |
 
 ## Triggers
 
 `minecraft:random_ticking` can use the following parameters that are fired on-tick.
+
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|

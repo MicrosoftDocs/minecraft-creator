@@ -17,7 +17,7 @@ ms.prod: gaming
 | can_be_siphoned_from| False| Boolean| If true, the contents of this inventory can be removed by a hopper |
 | container_type| *not set*| String| Type of container this entity has. Can be horse, minecart_chest, minecart_hopper, inventory, container or hopper |
 | inventory_size| 5| Integer| Number of slots the container has |
-| private| False| Boolean| If true, the entity will not drop it's inventory on death |
+| private| False| Boolean| If true, the entity will not drop its inventory on death |
 | restrict_to_owner| False| Boolean| If true, the entity's inventory can only be accessed by its owner or itself |
 
 ## Example

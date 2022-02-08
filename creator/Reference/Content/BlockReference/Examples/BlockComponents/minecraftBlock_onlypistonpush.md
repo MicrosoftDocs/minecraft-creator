@@ -7,13 +7,7 @@ ms.prod: gaming
 
 # Block Documentation - minecraft:onlypistonpush
 
-`minecraft:onlypistonpush` is a `boolean` component that sets that the block can only be pushed by a piston but cannot be attached to a sticky piston
-
-## Default Parameter
-
-|Default Value|Type |
-|:----|:----|
-|*not set*| Boolean|
+`minecraft:onlypistonpush` is a `boolean` component that designates whether blocks with those components won't stick to stickyPistons.
 
 ## Extra Parameters
 

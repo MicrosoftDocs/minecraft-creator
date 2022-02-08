@@ -13,7 +13,7 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| [entity_filter](../FilterList.md)| *not set*|Minecraft Filter |Filter to use for conditions  |
+| [entity_filter](../FilterList.md)| *not set*| Minecraft Filter | The set of entities that are valid to apply the mob effect to.  |
 | effect_range| 0.2| Decimal| How close a hostile entity must be to have the mob effect applied. |
 | effect_time| 10| Integer| How long the applied mob effect lasts in seconds. |
 | mob_effect| *not set*| String| The mob effect that is applied to entities that enter this entities effect range. |

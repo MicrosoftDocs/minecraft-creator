@@ -19,6 +19,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | Identifier| Full ID| Short ID |
 |:-----------|:-----------|:-----------|
 | agent| 312| 56 |
+| allay| 390| 134 |
 | area_effect_cloud| 95| 95 |
 | armor_stand| 317| 61 |
 | arrow| 12582992| 80 |
@@ -54,9 +55,11 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | eye_of_ender_signal| 70| 70 |
 | falling_block| 66| 66 |
 | fireball| 4194389| 85 |
+| firefly| 4999| 135 |
 | fireworks_rocket| 72| 72 |
 | fishing_hook| 77| 77 |
 | fox| 4985| 121 |
+| frog| 4996| 132 |
 | ghast| 2857| 41 |
 | glow_squid| 9089| 129 |
 | goat| 4992| 128 |
@@ -110,6 +113,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | squid| 8977| 17 |
 | stray| 1116974| 46 |
 | strider| 4989| 125 |
+| tadpole| 9093| 133 |
 | thrown_trident| 12582985| 73 |
 | tnt| 65| 65 |
 | tnt_minecart| 524385| 97 |

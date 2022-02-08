@@ -13,8 +13,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|cause |*not set* | String| what causes the attack to occur  |
-|[entity_filter](../FilterList.md) |*not set*  |Minecraft Filter|Filter to see which entities can be affected by the attack   |
+|cause |*not set* | String| The type of damage that is applied to entities that enter the damage range. |
+|[entity_filter](../FilterList.md) |*not set*  |Minecraft Filter|The set of entities that are valid to apply the damage to when within range.    |
 |damage_per_tick| 2| Integer|  How much damage per tick is applied to entities that enter the damage range. |
 |damage_range| 0.2| Decimal| How close a hostile entity must be to have the damage applied. |
 

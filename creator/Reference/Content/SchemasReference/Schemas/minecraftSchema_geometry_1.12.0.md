@@ -70,6 +70,10 @@ geometry:1.12.0:{
                             }
                             float "inflate" : opt // Grow this box by this additive amount in all directions (in model space units), this field overrides the bone's inflate field for this cube only.
                             bool "mirror" : opt // Mirrors this cube about the unrotated x axis (effectively flipping the east / west faces), overriding the bone's 'mirror' setting for this cube.
+                            array "uv"[2] : opt
+                            {
+                                float "<any array element>" // Specifies the upper-left corner on the texture for the start of the texture mapping for this box.
+                            }
                             object "uv" : opt // This is an alternate per-face uv mapping which specifies each face of the cube.  Omitting a face will cause that face to not get drawn.
                             {
                                 object "north" : opt // Specifies the UV's for the face that stretches along the x and y axes, and faces the -z axis.
@@ -145,14 +149,14 @@ geometry:1.12.0:{
                                     string "material_instance" : opt
                                 }
                             }
-                            array "uv"[2] : opt
-                            {
-                                float "<any array element>" // Specifies the upper-left corner on the texture for the start of the texture mapping for this box.
-                            }
                         }
                     }
                     object "locators" : opt
                     {
+                        array "<identifier>" : opt // This is a list of locators associated with this bone.  A locator is a point in model space that tracks a particular bone as the bone animates (by maintaining it's relationship to the bone through the animation).
+                        {
+                            float "<any array element>" : opt // Position of the locator in model space.
+                        }
                         object "<identifier>" : opt // This is a list of locators associated with this bone.  A locator is a point in model space that tracks a particular bone as the bone animates (by maintaining it's relationship to the bone through the animation).
                         {
                             array "offset"
@@ -164,10 +168,6 @@ geometry:1.12.0:{
                                 float "<any array element>" : opt // Rotation of the locator in model space.
                             }
                             bool "ignore_inherited_scale" : opt // Discard scale inherited from parent bone.
-                        }
-                        array "<identifier>" : opt // This is a list of locators associated with this bone.  A locator is a point in model space that tracks a particular bone as the bone animates (by maintaining it's relationship to the bone through the animation).
-                        {
-                            float "<any array element>" : opt // Position of the locator in model space.
                         }
                     }
                     object "poly_mesh" : opt // ***EXPERIMENTAL*** A triangle or quad mesh object.  Can be used in conjunction with cubes and texture geometry.

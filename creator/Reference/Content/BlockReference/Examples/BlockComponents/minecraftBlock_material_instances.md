@@ -7,24 +7,28 @@ ms.prod: gaming
 
 # Block Documentation - minecraft:material_instances
 
-`minecraft:material_instances` is a `JSON Object` component that maps the face or the material_instance names in a geometry file to an actual material instance or a name to another already defined instance.
+`minecraft:material_instances` is a `JSON Object` component that specifies the material instances for a block.
 
-## Default Parameter
+>[!IMPORTANT]
+> `minecraft:material_instances` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
+>
+>Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
+>
+>To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md)
 
-|Default Value|Type |
-|:----|:----|
-|*not set*| JSON Object|
+## Material Instance
 
+A material instance definition to map to a material instance in a geometry file. The material instance '*' will be used for any materials that don't have a match.
 ## Extra Parameters
 
 `minecraft:material_instances` can use the following to define the JSON object:
 
-|Name |Default Value |Type |Description |
+|Type | Name |Default Value |Description |
 |:----|:----|:----|:----|
-|texture |*not set* |String |	Defines what texture the block should have. Can be any texture name defined in your resource pack folder (textures/terrain_texture.json |
-|render_method |opaque |String |Defines what render method the block should use. Can be opaque, alpha_test or blend.|
-|ambient_occlusion | true | Boolean |Sets the block faces to have smooth lighting. |
-|face_dimming | true | Boolean | Sets the block faces to be affected by light. |
+| Boolean| ambient_occlusion| true| Should this material have ambient occlusion applied when lighting. |
+| Boolean| face_dimming| true| Should this material be dimmed by the direction it's facing. |
+| String| render_method| opaque| The render method to use. Must be one of 'opaque', 'double_sided', 'blend', or 'alpha_test'. |
+| String| texture| | Texture name for the material. |
 ## Example
 
 ```json

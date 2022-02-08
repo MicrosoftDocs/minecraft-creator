@@ -13,7 +13,7 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|damage_conditions| *not set*| Array|An array of conditions used to compare the event to.  |
+|damage_conditions| *not set*| Array | List of damage conditions that, when met, can cause damage to the entity.  |
 
 ### damage_conditions
 
@@ -22,7 +22,7 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |[filters](../FilterList.md)|*not set* | Minecraft Filter| Filter used to test for|
-|cause|*not set* |String|Cause of damage|
+|cause|*not set* |String| The kind of damage that is caused to the entity. Various armors and spells use this to determine if the entity is immune. |
 |damange_per_tick |*not set*| Integer| Amount of damage done each tick that the conditions are met.|
 
 ### cause

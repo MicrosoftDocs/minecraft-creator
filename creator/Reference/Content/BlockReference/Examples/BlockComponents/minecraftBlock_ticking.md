@@ -27,7 +27,7 @@ ms.prod: gaming
 |event| set_block_property| String|  The type of event executed on the block. |
 |range| [10, 10]| Array|  The Range between which the component will trigger his event. |
 |target| self| String| The target of event executed on the block. |
-|looping| true| Boolean| Does the event loop?|
+|looping| true| Boolean| Does the event loop |
 
 ## Example
 

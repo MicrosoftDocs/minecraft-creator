@@ -39,6 +39,7 @@ Here are the following equipment slots that can be set for the value of `slot`.
 - slot.saddle
 - slot.armor
 - slot.chest
+- slot.equippable
 
 ## Example
 
