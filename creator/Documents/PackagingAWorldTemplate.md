@@ -1,13 +1,14 @@
 ---
 author: neonerz
-ms.author: v-jeffreykim
+ms.author: v-jillheaden
 title: Packaging a World Template
 ms.prod: gaming
+description: An article covering how to package a world template
 ---
 
 # Packaging a World Template
 
-In this tutorial you will learn the following:
+In this article, you will learn the following:
 
 > [!div class="checklist"]
 >
