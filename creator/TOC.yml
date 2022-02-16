@@ -126,7 +126,7 @@
           items:
           - name: Actor Storage
             href: Documents/ActorStorage.md
-          - name: Editing NBT Safely
+          - name: Editing NBTs Safely
             href: Documents/EditingNBTSafely.md
     - name: Reference Documentation
       items:
