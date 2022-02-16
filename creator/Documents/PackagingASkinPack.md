@@ -18,7 +18,6 @@ In this article, you will learn the following:
 ### Skin Pack Folder Structure
 
 
-
 ## manifest.json
 
 A manifest tells Minecraft general information about your skin pack. Create a JSON file named `manifest.json` at the root of the skin pack and make sure it contains the following:
