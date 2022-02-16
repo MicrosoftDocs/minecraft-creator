@@ -43,4 +43,3 @@ Returns a random number between the minimum and maximum of the range.
 #### **Returns** *number*
 
 
-

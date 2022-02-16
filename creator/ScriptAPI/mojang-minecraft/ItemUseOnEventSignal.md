@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.ItemUseOnEventSignal class.
 
 Manages callbacks that are connected to an item being used on a block event.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -41,5 +40,4 @@ Removes a callback from being called when an item is used on a block.
 
 > [!WARNING]
 > This function can throw errors.
-
 

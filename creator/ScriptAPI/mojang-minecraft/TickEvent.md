@@ -29,5 +29,3 @@ Time since the last tick was fired.
 Type: *number*
 
 
-
-

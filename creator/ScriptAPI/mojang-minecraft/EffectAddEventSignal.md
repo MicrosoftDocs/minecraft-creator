@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.EffectAddEventSignal class.
 
 Manages callbacks that are connected to when an effect is added to an entity.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -42,5 +41,4 @@ Removes a callback from being called when an effect is added to an entity.
 
 > [!WARNING]
 > This function can throw errors.
-
 

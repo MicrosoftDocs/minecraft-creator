@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.BeforeItemUseEventSignal class.
 
 Manages callbacks that fire before an item is used.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -41,5 +40,4 @@ Removes a callback from being called before an item is used.
 
 > [!WARNING]
 > This function can throw errors.
-
 

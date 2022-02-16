@@ -37,5 +37,3 @@ Whether it is raining after the change in weather.
 Type: *boolean*
 
 
-
-
