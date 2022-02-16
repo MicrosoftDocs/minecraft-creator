@@ -12,8 +12,6 @@ description: Contents of the mojang-gametest.Tags class.
 
 These well-known tags can be used to classify different tests into suites to run.
 
-
-
 ## Constants
 ### **suiteAll**
 `static read-only suiteAll = "suite:all";`

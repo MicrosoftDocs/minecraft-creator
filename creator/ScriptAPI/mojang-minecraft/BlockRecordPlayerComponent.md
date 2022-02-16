@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.BlockRecordPlayerComponent class.
 
 Represents a block that can play a record.
 
-
 ## Methods
 - [clearRecord](#clearrecord)
 - [isPlaying](#isplaying)
@@ -53,5 +52,4 @@ Sets and plays a record based on an item type.
 
 > [!WARNING]
 > This function can throw errors.
-
 

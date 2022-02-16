@@ -123,4 +123,3 @@ Returns a block location using a position relative to this block location
 #### **Returns** [*BlockLocation*](BlockLocation.md) - BlockLocation that is positioned relative to this BlockLocation.
 
 
-

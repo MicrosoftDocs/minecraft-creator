@@ -211,4 +211,3 @@ Creates a new EntityQueryOptions query object, for use in getEntities/getPlayers
 #### **Returns** [*EntityQueryOptions*](EntityQueryOptions.md)
 
 
-

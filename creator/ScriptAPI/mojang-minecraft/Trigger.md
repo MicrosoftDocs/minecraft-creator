@@ -36,4 +36,3 @@ new Trigger(eventName: string)
 #### **Returns** [*Trigger*](Trigger.md)
 
 
-

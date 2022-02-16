@@ -59,4 +59,3 @@ Creates a new EntityQueryScoreOptions query object, for use in an entity query.
 #### **Returns** [*EntityQueryScoreOptions*](EntityQueryScoreOptions.md)
 
 
-

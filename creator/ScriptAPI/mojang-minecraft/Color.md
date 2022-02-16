@@ -64,4 +64,3 @@ Creates a new color using the specified color values.
 #### **Returns** [*Color*](Color.md)
 
 
-
