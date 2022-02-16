@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Packaging a World Template
 
-In this tutorial you will learn the following:
+In this article, you will learn the following:
 
 > [!div class="checklist"]
 >

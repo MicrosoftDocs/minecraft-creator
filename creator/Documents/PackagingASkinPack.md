@@ -3,11 +3,13 @@ author: neonerz
 ms.author: v-jeffreykim
 title: Packaging a Skin Pack
 ms.prod: gaming
+description: An article covering how to package a skin pack
+
 ---
 
 # Packaging a Skin Pack
 
-In this tutorial you will learn the following:
+In this article, you will learn the following:
 
 > [!div class="checklist"]
 >
@@ -16,7 +18,7 @@ In this tutorial you will learn the following:
 
 ### Skin Pack Folder Structure
 
-![Folder structure of the whole skin pack](Media/PackagingASkinPack/folderstructure.png)
+:::image type="content" source="Media/PackagingASkinPack/folderstructure.png" alt-text="Folder structure of the whole skin pack":::
 
 ## manifest.json
 
@@ -50,7 +52,6 @@ A manifest tells Minecraft general information about your skin pack. Create a JS
 ## skins.json
 
 A `skins.json` file will define the skins that come with your skin pack. Create a JSON file named `skins.json` at the root of the skin pack. Within it contains the following:
-
 
 - `localization_name` and `serialize_name`: these will be the same and are the localization keys whose value will be defined later in [`en_US.lang`](#texts-folder) with the full key being `skinpack.<localization_name>`. That value will be the title of the pack. The key will also always be prepended to each individual skin's localization key.
 - `skins`: a collection of definitions, each defining a single skin.
@@ -111,7 +112,7 @@ The actual skin textures are PNGs. The file names are referred to in the `skins.
 
 Inside this folder are the `en_US.lang` and `languages.json` files, which define the actual names of your pack and skins and the supported languages of your pack. The names after the `=` are what show up in-game, such as in the skin picker.
 
-![File structure of the "texts" folder](Media/PackagingASkinPack/textsstructure.png)
+:::image type="content" source="Media/PackagingASkinPack/textsstructure.png" alt-text="File structure of the "texts" folder":::
 
 ### en_US.lang
 
