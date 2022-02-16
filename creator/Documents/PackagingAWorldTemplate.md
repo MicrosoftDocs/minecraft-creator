@@ -1,6 +1,6 @@
 ---
 author: neonerz
-ms.author: v-jeffreykim
+ms.author: v-jillheaden
 title: Packaging a World Template
 ms.prod: gaming
 description: An article covering how to package a world template

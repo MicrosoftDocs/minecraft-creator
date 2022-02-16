@@ -1,6 +1,6 @@
 ---
 author: neonerz
-ms.author: v-jeffreykim
+ms.author: v-jillheaden
 title: Packaging a Skin Pack
 ms.prod: gaming
 description: An article covering how to package a skin pack
