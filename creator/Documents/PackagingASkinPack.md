@@ -4,7 +4,6 @@ ms.author: v-jeffreykim
 title: Packaging a Skin Pack
 ms.prod: gaming
 description: An article covering how to package a skin pack
-
 ---
 
 # Packaging a Skin Pack
@@ -22,11 +21,11 @@ In this article, you will learn the following:
 
 ## manifest.json
 
-A manifest tells Minecraft general information about your skin pack. Create a JSON file named `manifest.json` at the root of the skin pack. Within it contains the following:
+A manifest tells Minecraft general information about your skin pack. Create a JSON file named `manifest.json` at the root of the skin pack and make sure it contains the following:
 
 - `name`: the name of the pack, which is always `pack.name`.
 - `version`: the version of the pack. For example, `[1, 0 ,0]` would indicate version 1.0.0.
-- `uuid`: a unique identifier to prevent package conflicts, which can be generated from this site: https://www.uuidgenerator.net/version4 (**two different UUIDs need to be generated**).
+- `uuid`: a unique identifier used to prevent package conflicts.
 - `type`: set to `skin_pack` to tell the game to treat this pack as a skin pack.
 
 ### Template manifest.json
@@ -121,7 +120,7 @@ This is the file where you name your pack and the skins.
 - Pack name: `skinpack.[skins.json localization_name]=[name of pack]`
 - Skin names: `skin.[skins.json localization_name].[skins.json single skin localization_name]=[name of skin]`
 
-The below template uses the "localization keys" from the template `skin.json` to name the pack "Your Skin Pack Name Here" and to name the individual skins "Skin Name 1-5".
+The below template uses the "localization keys" from the template `skin.json` to name the pack "Your Skin Pack Name Here" and to name the individual skins "Skin Name 1" through "Skin Name 5".
 
 #### Template en_US.lang
 
@@ -170,7 +169,7 @@ The following locales/languages are currently supported:
 - "tr_TR"
 - "uk_UA"
 
-#### Template languages.json
+### Template languages.json
 
 ```json
 [
