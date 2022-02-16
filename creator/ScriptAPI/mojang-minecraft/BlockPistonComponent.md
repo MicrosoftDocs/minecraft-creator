@@ -69,5 +69,3 @@ Source location of the block.
 Type: [*BlockLocation*](BlockLocation.md)
 
 
-
-

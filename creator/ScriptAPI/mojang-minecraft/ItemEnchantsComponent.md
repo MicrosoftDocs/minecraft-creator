@@ -44,4 +44,3 @@ Removes all enchantments applied to this item stack.
 > [!WARNING]
 > This function can throw errors.
 
-

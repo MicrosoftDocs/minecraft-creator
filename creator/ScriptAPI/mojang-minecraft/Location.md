@@ -94,4 +94,3 @@ Determines whether or not two Locations are considered to be near each other.
 #### **Returns** *boolean* - True if the two Locations are within epsilon distance of each other.
 
 
-

@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.BlockPlaceEventSignal class.
 
 Manages callbacks that are connected to when a block is broken.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -41,5 +40,4 @@ Removes a callback from being called when an block is placed.
 
 > [!WARNING]
 > This function can throw errors.
-
 

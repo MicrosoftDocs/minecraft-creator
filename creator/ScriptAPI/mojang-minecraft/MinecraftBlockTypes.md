@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.MinecraftBlockTypes class.
 
 Contains definitions of standard Minecraft and Minecraft Education Edition block types.
 
-
 ## Methods
 - [get](#get)
 - [getAllBlockTypes](#getallblocktypes)
