@@ -10,7 +10,7 @@ description: Contents of the mojang-gametest.SimulatedPlayer class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-## Base Types
+## Extends
 - [*mojang-minecraft.Player*](../mojang-minecraft/Player.md)
 
 A simulated player can be used within GameTests to represent how a player moves throughout the world and to support testing of how entities and the environment will react to a player. This type derives much of its structure and methods from the [*mojang-minecraft.Player*](../mojang-minecraft/Player.md) type.
@@ -153,6 +153,7 @@ Type: [*mojang-minecraft.Vector*](../mojang-minecraft/Vector.md)
 - [navigateToEntity](#navigatetoentity)
 - [navigateToLocation](#navigatetolocation)
 - [navigateToLocations](#navigatetolocations)
+- [playSound](#playsound)
 - [removeTag](#removetag)
 - [rotateBody](#rotatebody)
 - [runCommand](#runcommand)
@@ -632,6 +633,24 @@ Use navigation to follow the route provided via the locations parameter. If a mo
 > [!WARNING]
 > This function can throw errors.
 
+### **playSound**
+`
+playSound(soundID: string, soundOptions?: mojang-minecraft.SoundOptions): void
+`
+
+Plays a sound that only this particular player can hear.
+#### **Parameters**
+- **soundID**: *string*
+  
+  Identifier of the sound to play.
+- **soundOptions**?: [*mojang-minecraft.SoundOptions*](../mojang-minecraft/SoundOptions.md) = `null`
+  
+  Additional optional options for the sound.
+
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **removeTag**
 `
 removeTag(tag: string): boolean
@@ -957,5 +976,4 @@ Causes the simulated player to use an item on a block. The block at the specifie
 
 > [!WARNING]
 > This function can throw errors.
-
 

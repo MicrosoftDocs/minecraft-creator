@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.EffectType class.
 
 Represents a type of effect - like poison - that can be applied to an entity.
 
-
 ## Methods
 - [getName](#getname)
   
@@ -24,6 +23,5 @@ getName(): string
 Identifier name of this effect type.
 
 #### **Returns** *string* - Identifier of the effect type.
-
 
 

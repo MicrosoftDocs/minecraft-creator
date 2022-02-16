@@ -35,4 +35,3 @@ Creates a new EntityRaycastOptions object, for use in an entity vector query.
 #### **Returns** [*EntityRaycastOptions*](EntityRaycastOptions.md)
 
 
-

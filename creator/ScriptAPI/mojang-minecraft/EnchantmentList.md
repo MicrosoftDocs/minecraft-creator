@@ -10,6 +10,9 @@ description: Contents of the mojang-minecraft.EnchantmentList class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
+## Implements
+- Iterator&lt;[*Enchantment*](Enchantment.md)&gt;
+
 This class represents a collection of enchantments that can be applied to an item.
 
 ## Properties
@@ -28,6 +31,7 @@ Type: *number*
 - [canAddEnchantment](#canaddenchantment)
 - [getEnchantment](#getenchantment)
 - [hasEnchantment](#hasenchantment)
+- [next](#next)
 - [removeEnchantment](#removeenchantment)
   
 ### **constructor**
@@ -89,6 +93,15 @@ If this collection has an EnchantmentInstance with type, returns the level of th
 #### **Returns** *number*
 
 
+### **next**
+`
+next(): IteratorResult<Enchantment>
+`
+
+
+#### **Returns** IteratorResult&lt;[*Enchantment*](Enchantment.md)&gt;
+
+
 ### **removeEnchantment**
 `
 removeEnchantment(enchantmentType: EnchantmentType): void
@@ -97,7 +110,6 @@ removeEnchantment(enchantmentType: EnchantmentType): void
 Removes an EnchantmentInstance with type from this collection if present.
 #### **Parameters**
 - **enchantmentType**: [*EnchantmentType*](EnchantmentType.md)
-
 
 
 

@@ -10,7 +10,7 @@ description: Contents of the mojang-minecraft.PlayerInventoryComponentContainer 
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-## Base Types
+## Extends
 - [*InventoryComponentContainer*](InventoryComponentContainer.md)
 
 Represents the inventory of a [*mojang-minecraft.Player*](../mojang-minecraft/Player.md) in the world.
@@ -130,5 +130,4 @@ Moves an item from one slot to another, potentially across containers.
 
 > [!WARNING]
 > This function can throw errors.
-
 

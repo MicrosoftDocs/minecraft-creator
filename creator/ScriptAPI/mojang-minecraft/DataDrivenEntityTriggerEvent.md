@@ -12,35 +12,28 @@ description: Contents of the mojang-minecraft.DataDrivenEntityTriggerEvent class
 
 Contains information related to firing of a data driven entity event - for example, the minecraft:ageable_grow_up event on a chicken.
 
+## Properties
+### **entity**
+`read-only entity: Entity;`
 
-## Methods
-- [subscribe](#subscribe)
-- [unsubscribe](#unsubscribe)
-  
-### **subscribe**
-`
-subscribe(callback: (arg: DataDrivenEntityTriggerEvent) => void, options?: EntityDataDrivenTriggerEventOptions): (arg: DataDrivenEntityTriggerEvent) => void
-`
+Entity that the event triggered on.
 
-Adds a callback that will be called after a data driven entity event is triggered.
-#### **Parameters**
-- **callback**: (arg: [*DataDrivenEntityTriggerEvent*](DataDrivenEntityTriggerEvent.md)) => *void*
-- **options**?: [*EntityDataDrivenTriggerEventOptions*](EntityDataDrivenTriggerEventOptions.md) = `null`
-
-#### **Returns** (arg: [*DataDrivenEntityTriggerEvent*](DataDrivenEntityTriggerEvent.md)) => *void*
+Type: [*Entity*](Entity.md)
 
 
-### **unsubscribe**
-`
-unsubscribe(callback: (arg: DataDrivenEntityTriggerEvent) => void): void
-`
+### **id**
+`read-only id: string;`
 
-Removes a callback that will be called after a data driven entity event is triggered.
-#### **Parameters**
-- **callback**: (arg: [*DataDrivenEntityTriggerEvent*](DataDrivenEntityTriggerEvent.md)) => *void*
+Name of the data driven event being triggered.
+
+Type: *string*
 
 
-> [!WARNING]
-> This function can throw errors.
+### **modifiers**
+`read-only modifiers: DefinitionModifier[];`
+
+A list of modifications to component state that are the effect of this triggered event.
+
+Type: [*DefinitionModifier*](DefinitionModifier.md)[]
 
 
