@@ -17,7 +17,7 @@ In this article, you will learn the following:
 
 ### Skin Pack Folder Structure
 
-:::image type="content" source="Media/PackagingASkinPack/folderstructure.png" alt-text="Folder structure of the whole skin pack":::
+
 
 ## manifest.json
 
