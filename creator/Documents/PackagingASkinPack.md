@@ -1,14 +1,13 @@
 ---
 author: neonerz
-ms.author: v-jillheaden
+ms.author: v-jeffreykim
 title: Packaging a Skin Pack
 ms.prod: gaming
-description: An article covering how to package a skin pack
 ---
 
 # Packaging a Skin Pack
 
-In this article, you will learn the following:
+In this tutorial you will learn the following:
 
 > [!div class="checklist"]
 >
@@ -17,14 +16,15 @@ In this article, you will learn the following:
 
 ### Skin Pack Folder Structure
 
+![Folder structure of the whole skin pack](Media/PackagingASkinPack/folderstructure.png)
 
 ## manifest.json
 
-A manifest tells Minecraft general information about your skin pack. Create a JSON file named `manifest.json` at the root of the skin pack and make sure it contains the following:
+A manifest tells Minecraft general information about your skin pack. Create a JSON file named `manifest.json` at the root of the skin pack. Within it contains the following:
 
 - `name`: the name of the pack, which is always `pack.name`.
 - `version`: the version of the pack. For example, `[1, 0 ,0]` would indicate version 1.0.0.
-- `uuid`: a unique identifier used to prevent package conflicts.
+- `uuid`: a unique identifier to prevent package conflicts, which can be generated from this site: https://www.uuidgenerator.net/version4 (**two different UUIDs need to be generated**).
 - `type`: set to `skin_pack` to tell the game to treat this pack as a skin pack.
 
 ### Template manifest.json
@@ -50,6 +50,7 @@ A manifest tells Minecraft general information about your skin pack. Create a JS
 ## skins.json
 
 A `skins.json` file will define the skins that come with your skin pack. Create a JSON file named `skins.json` at the root of the skin pack. Within it contains the following:
+
 
 - `localization_name` and `serialize_name`: these will be the same and are the localization keys whose value will be defined later in [`en_US.lang`](#texts-folder) with the full key being `skinpack.<localization_name>`. That value will be the title of the pack. The key will also always be prepended to each individual skin's localization key.
 - `skins`: a collection of definitions, each defining a single skin.
@@ -110,7 +111,7 @@ The actual skin textures are PNGs. The file names are referred to in the `skins.
 
 Inside this folder are the `en_US.lang` and `languages.json` files, which define the actual names of your pack and skins and the supported languages of your pack. The names after the `=` are what show up in-game, such as in the skin picker.
 
-:::image type="content" source="Media/PackagingASkinPack/textsstructure.png" alt-text="File structure of the "texts" folder":::
+![File structure of the "texts" folder](Media/PackagingASkinPack/textsstructure.png)
 
 ### en_US.lang
 
@@ -119,7 +120,7 @@ This is the file where you name your pack and the skins.
 - Pack name: `skinpack.[skins.json localization_name]=[name of pack]`
 - Skin names: `skin.[skins.json localization_name].[skins.json single skin localization_name]=[name of skin]`
 
-The below template uses the "localization keys" from the template `skin.json` to name the pack "Your Skin Pack Name Here" and to name the individual skins "Skin Name 1" through "Skin Name 5".
+The below template uses the "localization keys" from the template `skin.json` to name the pack "Your Skin Pack Name Here" and to name the individual skins "Skin Name 1-5".
 
 #### Template en_US.lang
 
@@ -168,7 +169,7 @@ The following locales/languages are currently supported:
 - "tr_TR"
 - "uk_UA"
 
-### Template languages.json
+#### Template languages.json
 
 ```json
 [
