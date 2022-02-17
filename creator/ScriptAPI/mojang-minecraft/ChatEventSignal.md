@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.ChatEventSignal class.
 
 Manages callbacks that are connected to chat messages being sent.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -54,5 +53,4 @@ Removes a callback from being called when new chat messages are sent.
 
 > [!WARNING]
 > This function can throw errors.
-
 

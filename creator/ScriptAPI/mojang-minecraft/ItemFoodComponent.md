@@ -53,5 +53,3 @@ When specified, converts the active item to the one specified by this property.
 Type: *string*
 
 
-
-

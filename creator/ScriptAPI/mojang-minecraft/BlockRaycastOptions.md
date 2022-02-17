@@ -51,4 +51,3 @@ Creates a new BlockRaycastOptions object, for use in a block vector query.
 #### **Returns** [*BlockRaycastOptions*](BlockRaycastOptions.md)
 
 
-

@@ -12,8 +12,6 @@ description: Contents of the mojang-minecraft.MinecraftItemTypes class.
 
 Contains definitions of standard Minecraft and Minecraft Education Edition block types.
 
-
-
 ## Constants
 ### **acaciaBoat**
 `static read-only acaciaBoat: ItemType;`

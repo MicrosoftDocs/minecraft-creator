@@ -12,6 +12,15 @@ description: Contents of the mojang-minecraft.Dimension class.
 
 A class that represents a particular dimension (e.g., The End) within a world.
 
+## Properties
+### **id**
+`read-only id: string;`
+
+Identifier of the dimension.
+
+Type: *string*
+
+
 
 ## Methods
 - [createExplosion](#createexplosion)
@@ -24,6 +33,7 @@ A class that represents a particular dimension (e.g., The End) within a world.
 - [isEmpty](#isempty)
 - [runCommand](#runcommand)
 - [spawnEntity](#spawnentity)
+- [spawnItem](#spawnitem)
 - [spawnParticle](#spawnparticle)
   
 ### **createExplosion**
@@ -180,7 +190,7 @@ world.getDimension("overworld").runCommand("scoreboard players set @p score 10")
 spawnEntity(identifier: string, location: BlockLocation | Location): Entity
 `
 
-Creates a new entity (e.g., a mob) at the specified location. This method was introduced as of version 1.17.10.21.
+Creates a new entity (e.g., a mob) at the specified location.
 #### **Parameters**
 - **identifier**: *string*
   
@@ -194,12 +204,29 @@ Creates a new entity (e.g., a mob) at the specified location. This method was in
 > [!WARNING]
 > This function can throw errors.
 
+### **spawnItem**
+`
+spawnItem(item: ItemStack, location: BlockLocation | Location): Entity
+`
+
+Creates a new item stack as an entity at the specified location.
+#### **Parameters**
+- **item**: [*ItemStack*](ItemStack.md)
+- **location**: [*BlockLocation*](BlockLocation.md) | [*Location*](Location.md)
+  
+  The location at which to create the item stack.
+
+#### **Returns** [*Entity*](Entity.md) - Newly created item stack entity at the specified location.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **spawnParticle**
 `
 spawnParticle(effectName: string, location: Location, molangVariables: MolangVariableMap): void
 `
 
-Creates a new particle emitter at a specified location in the world
+Creates a new particle emitter at a specified location in the world.
 #### **Parameters**
 - **effectName**: *string*
   
@@ -210,7 +237,6 @@ Creates a new particle emitter at a specified location in the world
 - **molangVariables**: [*MolangVariableMap*](MolangVariableMap.md)
   
   A set of additional, customizable variables that can be adjusted for this particle emitter.
-
 
 
 

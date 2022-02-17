@@ -122,6 +122,12 @@
             href: Documents/ConvertingTexturePacks.md
           - name: Preparing Raw Text for Localization
             href: Documents/PreparingRawTextForLocalization.md
+        - name: Advanced Topics
+          items:
+          - name: Actor Storage
+            href: Documents/ActorStorage.md
+          - name: Editing NBTs Safely
+            href: Documents/EditingNBTSafely.md
     - name: Reference Documentation
       items:
       - name: GameTest

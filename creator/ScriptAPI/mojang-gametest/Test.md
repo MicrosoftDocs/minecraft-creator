@@ -12,7 +12,6 @@ description: Contents of the mojang-gametest.Test class.
 
 Main class for GameTest functions, with helpers and data for manipulating the respective test. Note that all methods of this class expect BlockLocations and Locations relative to the GameTest structure block.
 
-
 ## Methods
 - [assert](#assert)
 - [assertBlockPresent](#assertblockpresent)
@@ -1204,5 +1203,4 @@ From a location with coordinates relative to the GameTest structure block, retur
 
 > [!WARNING]
 > This function can throw errors.
-
 
