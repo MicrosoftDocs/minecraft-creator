@@ -1,10 +1,12 @@
 ---
-author: v-jillheaden
-ms.author: v-jillheaden
+author: docsbryce
+ms.author: v-bbortree
 title: Physically Based Texturing Guide - Workflow
 ms.prod: gaming
 description: A guide to creating textures using RTX Physically-Based Rendering with Adobe Photoshop
 ---
+
+<!-- !! Include samples in multiple lighting scenarios -->
 
 # Physically-Based Texturing Guide - Workflow
 
@@ -62,7 +64,7 @@ Before diving into creating the texture, you will need to create a .JSON file to
 
 With the JSON file set up, let's take a look at how to set up Adobe Photoshop for working with Minecraft Textures. For your `"color"` value, we will be using the existing vanilla texture that is included in the Vanilla Resource Pack.
 
-:::image type="content" source="../../../../Reference/Source/VanillaResourcePack/textures/blocks/redstone_block.png" alt-text="image of the redstone block texture":::
+:::image type="content" source="..//../Reference/Source/VanillaResourcePack/textures/blocks/redstone_block.png" alt-text="image of the redstone block texture":::
 
 1. Locate the `redstone_block.png` file in the Vanilla Resource Pack, or just right-click on the image above and download it.
 1. Right-click on the file, select **Open with**, and select **Adobe Photoshop**.
@@ -96,7 +98,7 @@ The redstone block is a bit of a polished stone, so we are going to create a sin
 1. Under **Advanced Blending**, un-check the Red and Green channels so that Blue is the only one with a checkbox.
 1. Select **OK** to close the **Blending Options** window.
 
-:::image type="content" source="../Media/RTX_Roughness.png" alt-text="Image showcase the final output for the roughness set up in photoshop":::
+:::image type="content" source="./Media/RTX/RTX_Roughness.png" alt-text="Image showcase the final output for the roughness set up in photoshop":::
 
 With the maps being grouped together in a single layer gGroup called Roughness, you can combine multiple layers to paint multiple values without having to worry about any overlapping or interrupting work.
 
@@ -115,7 +117,7 @@ While the redstone block does not natively emit any light, we are going to add a
 1. Under **Advanced Blending**, un-check the Red and Blue channels so that Green is the only one with a checkbox.
 1. Select **OK** to close the **Blending Options** window.
 
-:::image type="content" source="../Media/RTX_Emissive.png" alt-text="Image showcase the final output for the emissive map set up in photoshop":::
+:::image type="content" source="./Media/RTX/RTX_Emissive.png" alt-text="Image showcase the final output for the emissive map set up in photoshop":::
 
 ### Metallic
 
@@ -130,7 +132,7 @@ Finally, for the metallic map, we are going to use an inverse of the emissive ma
 1. Under **Advanced Blending**, un-check the Green and Blue channels so that Red is the only one with a checkbox.
 1. Select **OK** to close the **Blending Options** window.
 
-:::image type="content" source="../Media/RTX_Metalness.png" alt-text="Image showcase the final output for the metallic map set up in photoshop":::
+:::image type="content" source="./Media/RTX/RTX_Metalness.png" alt-text="Image showcase the final output for the metallic map set up in photoshop":::
 
 ### Exporting the File
 
@@ -140,7 +142,7 @@ With all three texture maps set up and assigned correctly, you can now export th
 
 Alternatively, you can download the file below;
 
-:::image type="content" source="../Media/Texture/redstone_block_mer.png" alt-text="full redstone_block_mer png file":::
+:::image type="content" source="./Media/RTX/Texture/redstone_block_mer.png" alt-text="full redstone_block_mer png file":::
 
 ## What's Next?
 
@@ -148,3 +150,9 @@ Now that you have learned how to create your own custom physically based renderi
 
 > [!div class="nextstepaction"]
 > [Fog in Resource Packs](../../../FogInResourcePacks.md)
+
+
+
+<!-- !!! 1. Create your PBR textures and sideload them into the game.
+   1. The .mcpack located in the Requirements section is a PBR texture pack that will enable ray tracing when added to a world.
+   1. Creating a PBR texture will be covered in the PBR guide listed below. -->

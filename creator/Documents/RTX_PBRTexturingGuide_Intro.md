@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: docsbryce
+ms.author: v-bbortree
 title: Physically Based Texturing Guide - Introduction
 ms.prod: gaming
 description: An introduction to the Physically Based Rendering solutions
@@ -10,7 +10,7 @@ description: An introduction to the Physically Based Rendering solutions
 
 Physically Based Rendering, also known as PBR, is a type of render solution that simulates how materials would react to realistic light behavior. Examples of this includes how certain metallic properties will cast reflections or how light bends and refracts through different types of glass.
 
-In this guide, you will learn some of the basic workflows when designing PBR textures in Minecraft:Bedrock Edition and create a series of textures that showcases each new Texture Map type.
+In this guide, you will learn some of the basic workflows when designing PBR textures in Minecraft: Bedrock Edition and create a series of textures that showcases each new Texture Map type.
 
 By the end of this guide, you will learn:
 
@@ -32,9 +32,6 @@ While textures will be provided, you will also need to have a digital painting s
 
 Textures within Minecraft use a common method of rendering called **Texture Mapping**. Texture maps allow creators to layer multiple images to create highly-detailed 3D objects. Vanilla Minecraft textures use a single map called **color**. Color maps are made up of four color channels: Red, Blue, Green, and Alpha, (collectively known as RGBA). The first three channels control how the texture will render, while alpha controls the transparency of the texture.
 
-An example of this is shown in the water lily plant texture (need to scale up)
-
-:::image type="content" source="../../../../Reference/Source/VanillaResourcePack/textures/blocks/waterlily.png" alt-text="Texture used in minecraft to drive the appearance of a water lily":::
 
 With the introduction of PBR to Minecraft, textures can now use five additional maps to help creators create realistic materials.
 
@@ -48,6 +45,8 @@ Each map will be part of the texture set for the block, with each one layered on
 
 > [!IMPORTANT]
 > Not all PBR texture sets require all maps. Leaving empty maps will cause the texture set to use the default value used by the Vanilla texture set information.
+
+<!-- !!! DOUBLE CHECK WITH NVIDIA -->
 
 ### Metallic Map
 
@@ -129,11 +128,11 @@ To create a mirror in a PBR workflow, you require two maps; a roughness map and 
 :::row:::
     :::column:::
         **Main Color Texture**
-        :::image type="content" source="../../../../Reference/Source/VanillaResourcePack/textures/blocks/glass_black.png" alt-text="image of the glass black texture":::
+        :::image type="content" source="../Reference/Source/VanillaResourcePack/textures/blocks/glass_black.png" alt-text="image of the glass black texture":::
     :::column-end:::
     :::column:::
         **PBR Texture**
-        :::image type="content" source="../Media/Texture/glass_black_mer.png" alt-text="image of the glass black mer texture":::
+        :::image type="content" source="./Media/RTX/Texture/glass_black_mer.png" alt-text="image of the glass black mer texture":::
     :::column-end:::
 :::row-end:::
 
