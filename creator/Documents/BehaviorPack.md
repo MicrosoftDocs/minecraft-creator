@@ -417,11 +417,14 @@ If your resource pack does not appear in the Add-Ons section, something is wrong
 - Are there two different UUIDs in the `manifest.json` header and modules section? See the **UUID** section for more information.
 - Have you turned on file extensions and paths? `manifest.json` may not be just `manifest.json`. If your Explorer window does not show file extensions, you can enable **File Name Extensions** under the **View** tab.
 - Double-check JSON curly braces and brackets. Tools like JSON linters can be helpful here.
+- If there's an issue with an active behavior pack, there will be a red exclamation point under Behavior Packs in the Add-Ons section.
+  - The behavior pack will have more information. It may alert a missing dependency, or run diagnostics on other issues.
 
 ### Behavior Pack Shows Up, Content Doesn't Work
 
 - Check that the `entities` folder is in the right place, and spelled correctly. Then check all spellings of `cow`. 
 - Make sure that the UUID in the `dependencies` section matches an existing resource pack (and that it's working too).
+
 
 
 ## What's Next?
