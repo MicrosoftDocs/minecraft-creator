@@ -157,8 +157,7 @@ Resource pack woes? Troubleshooting is a normal part of any development process.
 
 If your resource pack does not appear in the Add-Ons section of a world, that points to a malformed `manifest.json` file. Let's investigate it.
 
-- Are there two different UUIDs in the `manifest.json` header and modules section? See [UUID]{#uuid}
-for more information.
+- Are there two different UUIDs in the `manifest.json` header and modules section? See the **UUID** section for more information.
 - Have you turned on file extensions and paths? `manifest.json` may not be just `manifest.json`. If your Explorer window does not show file extensions, you can enable **File Name Extensions** under the **View** tab.
 - Double-check JSON curly braces and brackets. Tools like JSON linters can be helpful here.
 
