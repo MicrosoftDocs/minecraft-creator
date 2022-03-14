@@ -8,7 +8,7 @@ description: An introduction to the Physically Based Rendering solutions
 
 # Physically Based Texturing Guide - Introduction
 
-Physically Based Rendering, also known as PBR, is a type of render solution that simulates how materials would react to realistic light behavior. Examples of this includes how certain metallic properties will cast reflections or how light bends and refracts through different types of glass.
+Physically Based Rendering, or PBR, simulates how materials would react to realistic light behavior. Certain metallic properties will cast reflections and light will bend and refract through different types of glass.
 
 In this guide, you will learn some of the basic workflows when designing PBR textures in Minecraft: Bedrock Edition and create a series of textures that showcases each new Texture Map type.
 
@@ -19,19 +19,18 @@ By the end of this guide, you will learn:
 > What are the new Texture Maps available for textures in Minecraft.
 > How to create a Mirror Texture Set using roughness and metallic maps.
 
-### Requirements
+## Requirements
 
-You will need to complete the following tutorials;
+You will need to complete the following tutorials:
 
 - [Introduction to Resource Packs](../../../ResourcePack.md)
 - A Resource Pack with a `textures/blocks` folder structure setup.
 
-While textures will be provided, you will also need to have a digital painting software in order to create your own textures.
+While textures will be provided, you will need to have a digital painting software that has layers to create your own textures.
 
 ## What makes a PBR Texture?
 
-Textures within Minecraft use a common method of rendering called **Texture Mapping**. Texture maps allow creators to layer multiple images to create highly-detailed 3D objects. Vanilla Minecraft textures use a single map called **color**. Color maps are made up of four color channels: Red, Blue, Green, and Alpha, (collectively known as RGBA). The first three channels control how the texture will render, while alpha controls the transparency of the texture.
-
+Textures  use a common method of rendering called **Texture Mapping**. Texture maps allow creators to layer multiple images to create highly-detailed 3D objects. Vanilla Minecraft textures use a single map called **color**. Color maps are made up of four color channels: Red, Blue, Green, and Alpha, (collectively known as RGBA). The first three channels control how the texture will render, while alpha controls the transparency of the texture.
 
 With the introduction of PBR to Minecraft, textures can now use five additional maps to help creators create realistic materials.
 
@@ -44,21 +43,20 @@ With the introduction of PBR to Minecraft, textures can now use five additional 
 Each map will be part of the texture set for the block, with each one layered on top of the other to drive different values in the texture. This process allows a creator to have strong control over how a block will render when placed in the world.
 
 > [!IMPORTANT]
-> Not all PBR texture sets require all maps. Leaving empty maps will cause the texture set to use the default value used by the Vanilla texture set information.
+> Not all PBR texture sets require all maps. Leaving empty maps will cause the texture set to use the default value.
 
 <!-- !!! DOUBLE CHECK WITH NVIDIA -->
 
 ### Metallic Map
 
-A Metallic map is a grayscale texture that will drive how metallic the texture will look.
+A Metallic map is a grayscale texture that determines which areas of a texture map look like a metal.
 
 - A pixel that is set to black is considered a value of `0` and the pixel is non-metallic. Examples of non-metallic objects would be grass, dirt, or tree bark.
 - A pixel that is set to white is considered a value of `1` and will treat the pixel as 100% metal. Examples of metallic objects would be iron, gold, or copper.
-- Because the map is in grayscale, you can set values between `0` and `1`.
 
 ### Emissive Map
 
-An Emissive map is a grayscale texture that will drive how much the texture will glow, or emit light.
+An Emissive map is a grayscale texture that determines which areas of a texture map emit light.
 
 - A pixel that is set to black is considered a value of `0` and is not glowing.
 - A pixel that is set to white is considered a value of `1` and is glowing at its brightest.
@@ -66,7 +64,7 @@ An Emissive map is a grayscale texture that will drive how much the texture will
 
 ### Roughness Map
 
-A Roughness map is a grayscale texture that will drive the 'roughness' look of the texture.
+A Roughness map is a grayscale texture that determines which areas of a texture map emit light.
 
 - A pixel that is set to black is considered a value of `0` and will treat the pixel as very smooth. Examples of this would be objects like smooth marble, glass, or smooth plastic.
 - A pixel that is set to white is considered a value of `1` and will treat the pixel as very rough. Examples of this would include brick, tree bark, or stones.
@@ -84,7 +82,7 @@ A Normal map is a RGB texture that controls depth and how light behaves when a l
 
 ### Height Map
 
-A Height map is a grayscale texture that controls depth. Height maps act as an alternative to Normal maps, but have limitations.
+A Height map is a grayscale texture that controls depth. Height maps act as an alternative to Normal maps, but are not as efficient and cannot represent as many textures.
 
 - A pixel that is set to black is considered a value of `0` and will cause the pixel to extrude inward.
 - A pixel that is set to white is considered a value of `1` and will cause the pixel to extrude outward.
@@ -123,7 +121,7 @@ With the JSON file set up, you can now configure the textures for the `color` va
 
 ### Adding the Textures
 
-To create a mirror in a PBR workflow, you require two maps; a roughness map and a metalness map. When you set a roughness map to a value of `0.0`, or solid black, you will create a smooth surface for light to bounce directly off of. With a metalness map set to a value of `1.0`, or solid white, the object will be rendered like reflective metal. With this mirror set up, the Render Dragon engine will be able to ray trace with less time handling calculations for these objects.
+To create a mirror in a PBR workflow, you require a Roughness map and a Metalness map. When you set a roughness map to a value of `0.0`, or solid black, you will create a smooth surface for light to bounce directly off of. With a Metalness map set to a value of `1.0`, or solid white, the object will be rendered like reflective metal. With this mirror set up, the Render Dragon engine will be able to ray trace with less time handling calculations for these objects.
 
 :::row:::
     :::column:::
@@ -150,9 +148,15 @@ With the JSON file properly set up and both textures in place, you can now load 
 >
 > - The `manifest.json` file for the pack requires the value `"raytraced"` to be added in the `capabilities` section.
 
+```json
+    "capabilities" : [
+        "raytraced"
+    ]
+```
+
 ## What's Next?
 
-Now that you have created a Mirror utilizing the roughness and metalness maps, you can take a look at the next part of this guide that covers how to create custom textures in Adobe Photoshop and create your own texture set.
+You created a mirror with roughness and metalness maps. Now you can take a look at the next part of this guide that covers how to create custom textures to create your own texture set.
 
 > [!div class="nextstepaction"]
 > [Physically Based Texturing Guide - Workflow](RTX_PBRTexturingGuide_Workflow.md)
