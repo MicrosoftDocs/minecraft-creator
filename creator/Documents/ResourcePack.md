@@ -23,7 +23,7 @@ In this tutorial, you will learn the following:
 
 ## Requirements
 
-We recommend completing the  following be completed before beginning this tutorial:
+We recommend completing the following be completed before beginning this tutorial:
 
 - [Getting Started with Add-On Development](GettingStarted.md)
 
@@ -62,7 +62,7 @@ To load a resource pack into Minecraft, a manifest file will need to be created.
 1. Double-click the **manifest.json** file to open it in a text editor.
 1. Copy and paste the following code into your file.
 
-```JSON
+```json
 {
  "format_version": 2,
  "header": {
@@ -158,14 +158,14 @@ Resource pack woes? Troubleshooting is a normal part of any development process.
 If your resource pack does not appear in the Add-Ons section of a world, that points to a malformed `manifest.json` file. Let's investigate it.
 
 - Are there two different UUIDs in the `manifest.json` header and modules section? See the **UUID** section for more information.
-- Have you turned on file extensions and paths? `manifest.json` may not be just `manifest.json`. If your Explorer window does not show file extensions, you can enable **File Name Extensions** under the **View** tab.
-- Double-check JSON curly braces and brackets. Tools like JSON linters can be helpful here.
+- Have you turned on file extensions and paths? If your Explorer window does not show file extensions, you can enable **File Name Extensions** under the **View** tab.
+- Double-check JSON curly braces and brackets. JSON linting tools can help.
 
 ### Resource Pack Shows Up, Content Doesn't Work
 
 - Check that the `textures` folder is in the right place, and spelled correctly. Then check the `blocks` folder as well.
 - Download the [Vanilla resource pack](https://aka.ms/resourcepacktemplate) and try adding your block to the existing `textures/blocks` folder.
-- Make sure the texture file is named the same as the vanilla texture you're replacing. 
+- Make sure the new texture file is named the same as the vanilla texture you're replacing.
 - Move your pack above others to ensure your `dirt.png` texture is loaded before other resource packs thanks to pack stacking.
 
 
