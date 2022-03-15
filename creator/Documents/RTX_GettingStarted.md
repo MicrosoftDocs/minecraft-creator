@@ -51,8 +51,6 @@ It’s recommended that you have the following when working with ray tracing in 
 
 Ray tracing makes Minecraft look more like the real world. Rays of light shine into the world and block textures bounce, absorb, and scatter light rays.  The result is a highly realistic depiction of the way light behaves, creating dramatic effects.
 
-<!-- !!! NEW IMAGES; they can be smaller -->
-
 |Features  |Example  |
 |:---------|:---------|
 |**Sunbeams and atmospherics**  - Directional shafts of light typically occur at sunrise and sunset when sunlight passes through particles in the atmosphere or underwater.|:::image type="content" source="././Media/RTX/RT_Sunbeams.jpg" alt-text="Image showcasing sunbeams shining through a shadowy rocky cavern":::         |
@@ -76,8 +74,6 @@ You can find all the content supporting ray tracing in the Marketplace by select
 Next, we will create  PBR textures as a resource pack and you can enable it in the downloaded ray tracing world.
 
 ## Overview
-
-<!-- !! CUT THIS OUT -->
 
 ### Part 1 - Physically Based Texturing Guide - Introduction
 

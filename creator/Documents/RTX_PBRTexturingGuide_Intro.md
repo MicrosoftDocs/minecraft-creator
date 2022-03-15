@@ -10,7 +10,7 @@ description: An introduction to the Physically Based Rendering solutions
 
 Physically Based Rendering, or PBR, simulates how materials would react to realistic light behavior. Certain metallic properties will cast reflections and light will bend and refract through different types of glass.
 
-In this guide, you will learn some of the basic workflows when designing PBR textures in Minecraft: Bedrock Edition and create a series of textures that showcases each new Texture Map type.
+In this guide, you will learn some of the basic workflows when designing PBR textures in Minecraft: Bedrock Edition. You will create a series of textures that showcases each new Texture Map type.
 
 By the end of this guide, you will learn:
 
@@ -30,7 +30,7 @@ While textures will be provided, you will need to have a digital painting softwa
 
 ## What makes a PBR Texture?
 
-Textures  use a common method of rendering called **Texture Mapping**. Texture maps allow creators to layer multiple images to create highly-detailed 3D objects. Vanilla Minecraft textures use a single map called **color**. Color maps are made up of four color channels: Red, Blue, Green, and Alpha, (collectively known as RGBA). The first three channels control how the texture will render, while alpha controls the transparency of the texture.
+Textures  use a common method of rendering called **Texture Mapping**. Texture maps allow creators to layer multiple images to create highly-detailed 3D objects. Vanilla Minecraft textures use a single map called **color**. Color maps are made up of four color channels: Red, Blue, Green, and Alpha (collectively known as RGBA). The first three channels control how the texture will render, while alpha controls the transparency of the texture.
 
 With the introduction of PBR to Minecraft, textures can now use five additional maps to help creators create realistic materials.
 
@@ -40,19 +40,24 @@ With the introduction of PBR to Minecraft, textures can now use five additional 
 - [Normal Map](#normal-map)
 - [Height Map](#height-map)
 
-Each map will be part of the texture set for the block, with each one layered on top of the other to drive different values in the texture. This process allows a creator to have strong control over how a block will render when placed in the world.
+Each map will be part of the texture set for the block, with each one layered on top of the other to set different values in the texture. This process allows a creator to have strong control over how a block will render when placed in the world.
 
 > [!IMPORTANT]
 > Not all PBR texture sets require all maps. Leaving empty maps will cause the texture set to use the default value.
-
-<!-- !!! DOUBLE CHECK WITH NVIDIA -->
 
 ### Metallic Map
 
 A Metallic map is a grayscale texture that determines which areas of a texture map look like a metal.
 
-- A pixel that is set to black is considered a value of `0` and the pixel is non-metallic. Examples of non-metallic objects would be grass, dirt, or tree bark.
-- A pixel that is set to white is considered a value of `1` and will treat the pixel as 100% metal. Examples of metallic objects would be iron, gold, or copper.
+- A pixel that is set to black is considered a value of `0` and the pixel is non-metallic.  Grass, dirt, or tree bark are examples of non-metallic objects.
+- A pixel that is set to white is considered a value of `1` and will treat the pixel as 100% metal. Iron, gold, or copper are examples of metallic objects.
+
+:::image type="content" source="./Media/RTX/concrete_metallic_example.png" alt-text="image of the glass black mer texture":::
+
+The above image uses the following mer: 
+
+:::image type="content" source="./Media/RTX/Texture/metallic_mer.png" alt-text="image of the glass black mer texture":::
+
 
 ### Emissive Map
 
@@ -62,20 +67,32 @@ An Emissive map is a grayscale texture that determines which areas of a texture 
 - A pixel that is set to white is considered a value of `1` and is glowing at its brightest.
 - Because the map is in grayscale, you can set values between `0` and `1`.
 
+:::image type="content" source="./Media/RTX/concrete_emissive_example.png" alt-text="image of the glass black mer texture":::
+
+The above image uses the following mer: 
+
+:::image type="content" source="./Media/RTX/Texture/emissive_mer.png" alt-text="image of the glass black mer texture":::
+
 ### Roughness Map
 
 A Roughness map is a grayscale texture that determines which areas of a texture map emit light.
 
-- A pixel that is set to black is considered a value of `0` and will treat the pixel as very smooth. Examples of this would be objects like smooth marble, glass, or smooth plastic.
-- A pixel that is set to white is considered a value of `1` and will treat the pixel as very rough. Examples of this would include brick, tree bark, or stones.
+- A pixel that is set to black is considered a value of `0` and will treat the pixel as very smooth. Objects like smooth marble, glass, or smooth plastic are very smooth.
+- A pixel that is set to white is considered a value of `1` and will treat the pixel as very rough. Brick, tree bark, or stones are very rough.
 - Because the map is in grayscale, you can set values between `0` and `1`.
+
+:::image type="content" source="./Media/RTX/concrete_rough_example.png" alt-text="image of the glass black mer texture":::
+
+The above image uses the following mer: 
+
+:::image type="content" source="./Media/RTX/Texture/rough_mer.png" alt-text="image of the glass black mer texture":::
 
 ### Normal Map
 
 A Normal map is a RGB texture that controls depth and how light behaves when a light ray hits the texture.
 
 - Because Normal maps use RGB, you can create surface details that give the texture the appearance of a sculpted 3D object.
-- Setting the RGB values to `128`,`128`,`255` respectively will result in a flat appearance of the the pixel.
+- Setting the RGB values to `128`,`128`,`255` respectively will result in a flat appearance of the pixel.
 
 > [!CAUTION]
 > Unless you have had previous experience with creating Normal maps, it is recommended that you do not create Normal maps by hand. Third party software is available to assist with creating Normal maps.
@@ -86,32 +103,39 @@ A Height map is a grayscale texture that controls depth. Height maps act as an a
 
 - A pixel that is set to black is considered a value of `0` and will cause the pixel to extrude inward.
 - A pixel that is set to white is considered a value of `1` and will cause the pixel to extrude outward.
-- A pixel that is set to `0.5` will be considered as the default height and will not extrude in or out.
+- A pixel that is set to `0.5` is considered the default height and will not extrude in or out.
+- 
+- :::image type="content" source="./Media/RTX/height_example.png" alt-text="image of the glass black mer texture":::
 
-## Making a Mirror
+The above image uses the following height map: 
 
-Now that you know about each of the different types of texture maps that are supported with the new PBR workflow, you will learn how to create a mirror texture for an existing vanilla glass block by creating a Texture Set JSON file and using a provided texture file.
+:::image type="content" source="./Media/RTX/Texture/height_map.png" alt-text="image of the glass black mer texture":::
 
-### Texture Set JSON
 
-For the Texture Set to work properly, you will need to define a JSON file to load the textures. The example below showcases the mirror example working with the **glass_black** block.
+## Make a Mirror
+
+Let's create a mirror texture for an existing vanilla glass block by creating a Texture Set JSON file and using a provided texture file.
+
+### Make a Texture Set JSON
+
+For the Texture Set to work properly, you will need to define a JSON file to load the textures. This tutorial is a  mirror example working with the **iron_block** block.
 
 > [!TIP]
-> To learn more about texture sets, please visit [Texture Set Documentation - Introduction to Texture Sets](../../../../Reference/Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md)
+> To learn more about texture sets, please visit [Texture Set Documentation - Introduction to Texture Sets](../../../../Reference/Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md).
 
 1. In your behavior pack, navigate to the `textures/blocks` folder.
-1. Create a new .JSON file and name it `glass_black.texture_set.json.
-1. Double-click on `glass_black.texture_set.json` to edit the contents.
+1. Create a new .JSON file and name it `iron_block.texture_set.json.
+1. Double-click on `iron_block.texture_set.json` to edit the contents.
 1. Copy the following example.
 
-#### glass_black.texture_set.json
+#### iron_block.texture_set.json
 
 ```JSON
 {
   "format_version": "1.16.100",
   "minecraft:texture_set": {
-    "color": "glass_black",
-    "metalness_emissive_roughness": "glass_black_mer",
+    "color": "iron_block",
+    "metalness_emissive_roughness": "iron_block_mer",
 }
 ```
 
@@ -119,40 +143,47 @@ For the Texture Set to work properly, you will need to define a JSON file to loa
 
 With the JSON file set up, you can now configure the textures for the `color` value and the `metalness_emissive_roughness` value.
 
-### Adding the Textures
+### Add the Raytraced Capability
 
-To create a mirror in a PBR workflow, you require a Roughness map and a Metalness map. When you set a roughness map to a value of `0.0`, or solid black, you will create a smooth surface for light to bounce directly off of. With a Metalness map set to a value of `1.0`, or solid white, the object will be rendered like reflective metal. With this mirror set up, the Render Dragon engine will be able to ray trace with less time handling calculations for these objects.
-
-:::row:::
-    :::column:::
-        **Main Color Texture**
-        :::image type="content" source="../Reference/Source/VanillaResourcePack/textures/blocks/glass_black.png" alt-text="image of the glass black texture":::
-    :::column-end:::
-    :::column:::
-        **PBR Texture**
-        :::image type="content" source="./Media/RTX/Texture/glass_black_mer.png" alt-text="image of the glass black mer texture":::
-    :::column-end:::
-:::row-end:::
-
-1. Click and download the `glass_black_mer.png` file.
-    1. You can right-click on the image and select **Save As...** to download.
-1. Click and download the `glass_black.png` file.
-1. Copy and paste both .png files into the `textures/blocks` folder.
-
-## Running the Texture Pack
-
-With the JSON file properly set up and both textures in place, you can now load in your texture pack to test in Minecraft.
-
-> [!IMPORTANT]
-> Before packaging up your texture pack, there is an additional step that will need to be done in order to properly load the textures and ray tracing features.
->
-> - The `manifest.json` file for the pack requires the value `"raytraced"` to be added in the `capabilities` section.
+The `manifest.json` file for the pack requires the value `"raytraced"` to be added in the `capabilities` section.
 
 ```json
     "capabilities" : [
         "raytraced"
     ]
 ```
+
+### Add the Textures
+
+To create a mirror in a PBR workflow, you need a Roughness map and a Metalness map.
+
+A Roughness map with a value of `0.0`, or solid black, will create a smooth surface for light to reflect off.
+
+A Metalness map set to a value of `1.0`, or solid white, will render the block like reflective metal.
+
+With this mirror set up, the Render Dragon engine will be able to ray trace with less time handling calculations for these objects.
+
+:::row:::
+    :::column:::
+        **Main Color Texture**
+        :::image type="content" source="./Media/RTX/Texture/iron_block.png" alt-text="image of the glass black texture":::
+    :::column-end:::
+    :::column:::
+        **PBR Texture**
+        :::image type="content" source="./Media/RTX/Texture/iron_block_mer.png" alt-text="image of the glass black mer texture":::
+    :::column-end:::
+:::row-end:::
+
+1. Click and download the `iron_block_mer.png` file.
+    1. You can right-click on the image and select **Save As...** to download.
+1. Click and download the `iron_block.png` file.
+1. Copy and paste both .png files into the `textures/blocks` folder.
+
+## Running the Texture Pack
+
+With the JSON file properly set up and both textures in place, you can now load in your texture pack to test in Minecraft.
+
+:::image type="content" source="./Media/RTX/mirror.png" alt-text="image of the glass black mer texture":::
 
 ## What's Next?
 
