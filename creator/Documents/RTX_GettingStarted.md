@@ -80,18 +80,18 @@ Next, we will create  PBR textures as a resource pack and you can enable it in t
 You will learn about each new texture map Creators can use to build and design photorealistic materials and lighting effects, and you will learn how to use texture maps to create a mirror in-game.
 
 > [!div class="nextstepaction"]
-> [Physically Based Texturing Guide - Introduction](Documents/RTX_PBRTexturingGuide_Intro.md)
+> [Physically Based Texturing Guide - Introduction](./RTX_PBRTexturingGuide_Intro.md)
 
 ### Part 2 - Physically Based Texturing Guide - Workflow
 
 In this part, you will learn how to create physically-based textures by creating a series of texture maps for your own texture set for use on the Redstone block.
 
 > [!div class="nextstepaction"]
-> [Physically Based Texturing Guide - Workflow](Documents/RTX_PBRTexturingGuide_Workflow.md)
+> [Physically Based Texturing Guide - Workflow](./RTX_PBRTexturingGuide_Workflow.md)
 
 ### Part 3 - Fog in Resources
 
 Along with ray tracing, fog in Minecraft has been updated to use a similar JSON structure that allows you to create and control its in-game appearance.
 
 > [!div class="nextstepaction"]
-> [Fog in Resource Packs](../../FogInResourcePacks.md)
+> [Fog in Resource Packs](../FogInResourcePacks.md)

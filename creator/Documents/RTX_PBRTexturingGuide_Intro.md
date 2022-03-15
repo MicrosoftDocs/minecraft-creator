@@ -121,7 +121,7 @@ Let's create a mirror texture for an existing vanilla glass block by creating a 
 For the Texture Set to work properly, you will need to define a JSON file to load the textures. This tutorial is a  mirror example working with the **iron_block** block.
 
 > [!TIP]
-> To learn more about texture sets, please visit [Texture Set Documentation - Introduction to Texture Sets](../../../../Reference/Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md).
+> To learn more about texture sets, please visit [Texture Set Documentation - Introduction to Texture Sets](../../Reference/Content/TextureSetsReference/TextureSetsConcepts/TextureReferenceSetsIntroduction.md).
 
 1. In your behavior pack, navigate to the `textures/blocks` folder.
 1. Create a new .JSON file and name it `iron_block.texture_set.json.
