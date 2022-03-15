@@ -10,8 +10,6 @@ description: Contents of the mojang-gametest module
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-
-
 ## Enumerations
 - [FluidType](FluidType.md)
 
@@ -26,7 +24,7 @@ description: Contents of the mojang-gametest module
 ## Functions
 ### **register**
 `
-register(testClassName: string, testName: string, testFunction: (arg: Test) => undefined): RegistrationBuilder
+register(testClassName: string, testName: string, testFunction: (arg: Test) => void): RegistrationBuilder
 `
 
 Registers a new GameTest function. This GameTest will become available in Minecraft via /gametest run [testClassName]:[testName].
@@ -37,7 +35,7 @@ Registers a new GameTest function. This GameTest will become available in Minecr
 - **testName**: *string*
   
   Name of this specific test.
-- **testFunction**: (arg: Test) => undefined
+- **testFunction**: (arg: [*Test*](Test.md)) => *void*
   
   Implementation of the test function.
 
@@ -51,5 +49,23 @@ GameTest.register("ExampleTests", "alwaysFail", (test) => {
 test.fail("This test, runnable via '/gametest run ExampleTests:alwaysFail', will always fail");
 });
 ```
+### **registerAsync**
+`
+registerAsync(testClassName: string, testName: string, testFunction: (arg: Test) => Promise<void>): RegistrationBuilder
+`
+
+Registers a new GameTest function that is designed for asynchronous execution. This GameTest will become available in Minecraft via /gametest run [testClassName]:[testName].
+#### **Parameters**
+- **testClassName**: *string*
+  
+  Name of the class of tests this test should be a part of.
+- **testName**: *string*
+  
+  Name of this specific test.
+- **testFunction**: (arg: [*Test*](Test.md)) => Promise&lt;*void*&gt;
+  
+  Implementation of the test function.
+
+#### **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - Returns a [*mojang-gametest.RegistrationBuilder*](../mojang-gametest/RegistrationBuilder.md) object where additional options for this test can be specified via builder methods.
 
 

@@ -21,5 +21,3 @@ New entity that was created.
 Type: [*Entity*](Entity.md)
 
 
-
-

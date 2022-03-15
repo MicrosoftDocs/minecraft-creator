@@ -54,7 +54,7 @@ Returns true when the subject entity is in the clouds.
 ### Full
 
 ```json
-{ "test": "in_clouds", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "in_clouds", "subject": "self", "operator": "equals", "value": true }
 ```
 
 ### Short (using Defaults)

@@ -6,16 +6,16 @@ ms.prod: gaming
 description: A tutorial covering how to create a "Complete the Monument" style map utilizing Command Blocks
 ---
 
-# Commands - How To Make a Complete the Monument Map
+# Commands - How To Make a "Complete the Monument" Map
 
 This guide shows you not only how to create a command system that will detect the placement of certain blocks in particular areas of a map, but also how to give visual clues to players about what they need to do to win. The map will give a player one diamond the first time they place each block of wool in the correct spot, to encourage them. However, to discourage players from placing the same color wool in the same spot over and over and getting a diamond each time (not that anyone would do that) we are going to make it where the system only rewards them the first time they place each color of wool block correctly.
-When all three blocks are placed correctly, the player gets 64 more diamonds.
+When all three blocks are placed correctly, the player gets a diamond block.
 
 In this tutorial you will learn the following:
 
 > [!div class="checklist"]
 >
-> - How to apply what you've learned about commands to make a simple command system using some popular commands.
+> - How to apply what you've learned about commands and scoreboards to make a simple game mechanic.
 
 ### Requirements
 
@@ -47,7 +47,7 @@ Add a **totals** objective to store the total number of wool blocks placed.
 So, this next part might seem a little weird. Scoreboards track information about about objectives and players, remember? But what if we want to track information about something else, like, whether or not a red wool block has been placed? Well, we can tell the scoreboard that "red wool" is a player and that the scoreboard needs to track information about it - *and it will believe us!*
 
 >[!Note]
-In computer science language, we are using the scoreboard to track when the score for "red wool" goes from 0 to 1, sort of like a Boolean value. This concept might come in handy later when you're building your own maps.
+> In computer science language, we are using the scoreboard to track when the score for "red wool" goes from 0 to 1, sort of like a Boolean value. This concept might come in handy later when you're building your own maps.
 
 Anyway, to keep things nice and tidy, we are going to create three fake players so that the scoreboard will track whether red, green, or blue wool is placed. If we name our fake players **#red**, **#green**, and **#blue**, the hash (#) at the start of each name will prevent our fake players from appearing in the list of scores on the sidebar.
 
@@ -91,19 +91,19 @@ Edit each block's settings and command input like this:
 1. Chain, Conditional, Always Active - Command Input: `/scoreboard players set #red wool_placed 1`
 1. Chain, Conditional, Always Active - Command Input: `/setblock X Y Z cake`
 
-![A repeating command block followed by 3 conditional chain blocks](Media/Commands/monumentrewardonce.png)
+![A repeating command block followed by 4 conditional chain blocks](Media/Commands/monumentrewardonce.png)
 
-### What are the commond blocks doing?
+### What are the command blocks doing?
 
-1. A `/testforblock` command checks for the existence of red wool (indicated by the code `wool 14`)at the expected coordinates in the monument.
+1. A `/testforblock` command checks for the existence of red wool (indicated by the aux code `wool 14`) at the expected coordinates in the monument.
 1. If the previous command successfully found the wool block, a `/scoreboard` command will check the score of the fake #red player. If the score is 0, that means the red wool hasn’t been placed before.
-1. Because this is the first time the red wool is being placed, the player will receive a diamond for doing it.
-1. The score for "#red" will be set to 1, indicating that the red wool has been placed correctly at least once.
+1. Because this is the first time the red wool is being placed, the player will receive one diamond for doing it.
+1. The score for "#red" will be set to 1, indicating that the red wool has been placed correctly.
 1. The red wool is replaced with cake. Not only is this another way to grant a reward, but it stops the infinite loop of diamonds.
 
 ### Detecting green wool
 
-Next, set up five more command blocks just like the ones for red, but change every instance of the word "red" to "green" and make sure the X Y Z is the location where you want to detect green wool.
+Next, set up five more command blocks just like the ones for red, but change every instance of the word "red" to "green" and make sure the X Y Z is the location where you want to detect green wool. The aux code for green wool is 13.
 
 Here are the command inputs:
 
@@ -117,7 +117,7 @@ Here are the command inputs:
 
 ### Detecting blue wool
 
-Do the same thing again, but change the color to blue and the X Y Z, etc.
+Do the same thing again, but change the color to blue (aux code 11) and the X Y Z, etc.
 
 ```
 /testforblock X Y Z wool 11
@@ -133,7 +133,7 @@ In the final step, we reward the player with a diamond block. To tell when we're
 
 ### Set up the command blocks like this
 
-![A repeating command block followed by 2 chain blocks followed by 2 conditional chain blocks](Media/Commands/monumentrewardcomplete.png)
+![A repeating command block followed by 2 unconditional chain blocks followed by 2 conditional chain blocks](Media/Commands/monumentrewardcomplete.png)
 
 1. Repeat, Unconditional, Always Active - Command Input: `/scoreboard players set #total_wool totals 0`
 1. Chain, Unconditional, Always Active - Command Input: `/scoreboard players operation #total_wool totals += * wool_placed`
@@ -146,8 +146,8 @@ In the final step, we reward the player with a diamond block. To tell when we're
 1. The fake player named "#total_wool" first has their score set to 0, and then the `+=` adds one to the score when a wool block is correctly placed.
 1. The += operator is used to tally up the scores of all players in the "wool_placed" objective (denoted by the asterisk `*`), and the result is stored as the score of the fake player "#total_wool" in the "totals" objective.
 1. The score of "#total_wool" is checked to see if it’s exactly 3. If so, this means all wools have been placed.
-1. If the score was 3, all players will receive a stack of diamonds.
-1. A command is needed to stop the process. Setting the score of any wool color to be anything higher than 1 will cause the sum to be higher than 3, preventing the system from flooding the player’s inventory with diamonds. There are plenty of other ways to go about this, including disabling the command block chain in some manner.
+1. If the score is 3, all players receive a diamond block.
+1. A command is needed to stop the process. Setting the score of any wool color to be anything higher than 1 will cause the sum to be higher than 3, preventing the system from flooding the player’s inventory with diamond blocks. There are plenty of other ways to go about this, including disabling the command block chain in some manner.
 
 ## What's Next?
 

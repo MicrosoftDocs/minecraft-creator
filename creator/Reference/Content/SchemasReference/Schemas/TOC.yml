@@ -20,5 +20,7 @@
    href: minecraftSchema_geometry_1.14.0.md
  - name: geometry:1.16.0
    href: minecraftSchema_geometry_1.16.0.md
+ - name: persona_actor_animation
+   href: minecraftSchema_persona_actor_animation_1.8.0.md
  - name: render_controller
    href: minecraftSchema_render_controller_1.8.0.md

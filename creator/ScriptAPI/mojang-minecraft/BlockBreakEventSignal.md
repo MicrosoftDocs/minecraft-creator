@@ -12,34 +12,32 @@ description: Contents of the mojang-minecraft.BlockBreakEventSignal class.
 
 Manages callbacks that are connected to when a block is broken.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
   
 ### **subscribe**
 `
-subscribe(callback: (arg: BlockBreakEvent) => undefined): (arg: BlockBreakEvent) => undefined
+subscribe(callback: (arg: BlockBreakEvent) => void): (arg: BlockBreakEvent) => void
 `
 
 Adds a callback that will be called when a block is broken by a player.
 #### **Parameters**
-- **callback**: (arg: BlockBreakEvent) => undefined
+- **callback**: (arg: [*BlockBreakEvent*](BlockBreakEvent.md)) => *void*
 
-#### **Returns** (arg: BlockBreakEvent) => undefined
+#### **Returns** (arg: [*BlockBreakEvent*](BlockBreakEvent.md)) => *void*
 
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: BlockBreakEvent) => undefined): void
+unsubscribe(callback: (arg: BlockBreakEvent) => void): void
 `
 
 Removes a callback from being called when an block is broken.
 #### **Parameters**
-- **callback**: (arg: BlockBreakEvent) => undefined
+- **callback**: (arg: [*BlockBreakEvent*](BlockBreakEvent.md)) => *void*
 
 
 > [!WARNING]
 > This function can throw errors.
-
 

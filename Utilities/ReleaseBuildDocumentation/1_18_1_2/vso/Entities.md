@@ -467,7 +467,11 @@ Tests can be combined into groups using the collections 'all_of', 'any_of', or '
 
 ## clock_time
 
-Compares the current time with a float value in the range (0.0, 1.0).0.0= Noon0.25= Sunset0.5= Midnight0.75= Sunrise
+Compares the current time with a float value in the range (0.0, 1.0).
+0.0= Noon
+0.25= Sunset
+0.5= Midnight
+0.75= Sunrise
 
 | Type| Name| Default| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|

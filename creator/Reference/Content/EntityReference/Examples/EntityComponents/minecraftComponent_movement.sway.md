@@ -14,14 +14,16 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | max_turn| 30.0| Decimal| The maximum number in degrees the mob can turn per tick. |
-|sway_amplitude| *not set*| Decimal| The amount of sway that is allowed for movement.|
+| sway_amplitude| 0.05| Decimal| Strength of the sway movement. |
+| sway_frequency| 0.5 | Decimal| Multiplier for the frequency of the sway movement. |
 
 ## Example
 
 ```json
 "minecraft:movement.sway":{
     "max_turn": 30.0,
-    "sway_amplitude": 0.0
+    "sway_amplitude": 0.05,
+    "sway_frequency": 0.5
 }
 ```
 

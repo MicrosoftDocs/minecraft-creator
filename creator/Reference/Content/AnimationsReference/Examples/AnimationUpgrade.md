@@ -9,6 +9,11 @@ ms.prod: gaming
 
 If you are updating your Animation scripts to the latest version of Minecraft: Bedrock Edition, there are a few steps needed depending on what version of Minecraft they were written in.
 
+## Upgrade from v1.17.30 to v1.18.10
+
+The major change with 1.18.10 is:
+- Fixed an issue where animation controller events defined in the default state would get skipped if the controller immediately transitioned to another state.
+
 ## Upgrade from v1.10 to v1.17.30
 
 - Molang expressions inside transitions that contain capital letters are properly evaluated now. Strings inside such expressions are not forced to lowercase anymore and work as expected.
@@ -21,7 +26,6 @@ Some things to keep in mind when upgrading from 1.8 to 1.10 onward:
 - The parameters section of animation controllers has been replaced with the `variables` section.
 - In the entity definition file, animation controllers are now listed in the `animations` section, and a `scriptAnimate` section has been added to define which root animations to play.
 The v1.8 file format is backwards-compatible with v1.10 so you don't _need_ to change anything (although we recommend refactoring your files in the spirit of v1.10 as there is a slight performance win with the new format, as well as it being simpler to understand.)
-
 
 ## Upgrade from v1.7 Beta to v1.8
 

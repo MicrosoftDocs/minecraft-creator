@@ -13,6 +13,14 @@ description: Contents of the mojang-minecraft.BeforeItemUseOnEvent class.
 Contains information related to an item being used on a block.
 
 ## Properties
+### **blockFace**
+`read-only blockFace: Direction;`
+
+The face of the block that an item is being used on.
+
+Type: [*Direction*](Direction.md)
+
+
 ### **blockLocation**
 `read-only blockLocation: BlockLocation;`
 
@@ -27,14 +35,6 @@ Type: [*BlockLocation*](BlockLocation.md)
 If set to true, this will cancel the item use behavior.
 
 Type: *boolean*
-
-
-### **direction**
-`read-only direction: number;`
-
-The face of the block that an item is being used on.
-
-Type: *number*
 
 
 ### **faceLocationX**
@@ -67,7 +67,5 @@ Type: [*ItemStack*](ItemStack.md)
 Returns the source entity that triggered this item event.
 
 Type: [*Entity*](Entity.md)
-
-
 
 

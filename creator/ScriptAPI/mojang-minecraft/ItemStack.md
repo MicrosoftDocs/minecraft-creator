@@ -37,12 +37,22 @@ Identifier of the type of items for the stack. If a namespace is not specified, 
 Type: *string*
 
 
+### **nameTag**
+`nameTag: string;`
+
+Given name of this stack of items.
+
+Type: *string*
+
+
 
 ## Methods
 - [constructor](#constructor)
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
+- [getLore](#getlore)
 - [hasComponent](#hascomponent)
+- [setLore](#setlore)
 - [triggerEvent](#triggerevent)
   
 ### **constructor**
@@ -89,6 +99,16 @@ Returns all components that are both present on this item stack and supported by
 #### **Returns** *any*[]
 
 
+### **getLore**
+`
+getLore(): string[]
+`
+
+Returns the lore value - a secondary display string - for an ItemStack.
+
+#### **Returns** *string*[]
+
+
 ### **hasComponent**
 `
 hasComponent(componentId: string): boolean
@@ -103,6 +123,17 @@ Returns true if the specified component is present on this item stack.
 #### **Returns** *boolean*
 
 
+### **setLore**
+`
+setLore(loreList: string[]): void
+`
+
+Sets the lore value - a secondary display string - for an ItemStack.
+#### **Parameters**
+- **loreList**: *string*[]
+
+
+
 ### **triggerEvent**
 `
 triggerEvent(eventName: string): void
@@ -113,7 +144,6 @@ Triggers an item type event. For custom items, a number of events are defined in
 - **eventName**: *string*
   
   Name of the item type event to trigger. If a namespace is not specified, minecraft: is assumed.
-
 
 
 

@@ -41,23 +41,23 @@ Creates a copy of this permutation.
 
 ### **getAllProperties**
 `
-getAllProperties(): any[]
+getAllProperties(): IBlockProperty[]
 `
 
 
-#### **Returns** *any*[] - Returns the list of all of the properties that the permutation has.
+#### **Returns** [*IBlockProperty*](IBlockProperty.md)[] - Returns the list of all of the properties that the permutation has.
 
 
 ### **getProperty**
 `
-getProperty(propertyName: string): any
+getProperty(propertyName: string): IBlockProperty
 `
 
 Gets a property for the permutation.
 #### **Parameters**
 - **propertyName**: *string*
 
-#### **Returns** *any* - Returns the property if the permutation has it, else `null`.
+#### **Returns** [*IBlockProperty*](IBlockProperty.md) - Returns the property if the permutation has it, else `null`.
 
 > [!WARNING]
 > This function can throw errors.
@@ -108,4 +108,3 @@ console.log(`Block is dirt: ${blockPerm.hasTag("dirt")}`);
 console.log(`Block is wood: ${blockPerm.hasTag("wood")}`);
 console.log(`Block is stone: ${blockPerm.hasTag("stone")}`);
 ```
-

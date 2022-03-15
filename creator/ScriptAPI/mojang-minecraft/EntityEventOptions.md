@@ -10,21 +10,21 @@ description: Contents of the mojang-minecraft.EntityEventOptions class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-Contains optional paramters for registering an entity event.
+Contains optional parameters for registering an entity event.
 
 ## Properties
-### **entity**
-`entity: Entity;`
+### **entities**
+`entities: Entity[];`
 
-If this value is set, this event will only fire for entities that are of the specified types.
+If this value is set, this event will only fire for entities that match the entities within this collection.
 
-Type: [*Entity*](Entity.md)
+Type: [*Entity*](Entity.md)[]
 
 
 ### **entityTypes**
 `entityTypes: string[];`
 
-If this value is set, this event will only fire if the impacted entity matches this parameter.
+If this value is set, this event will only fire if the impacted entities' type matches this parameter.
 
 Type: *string*[]
 
@@ -40,6 +40,5 @@ new EntityEventOptions()
 
 
 #### **Returns** [*EntityEventOptions*](EntityEventOptions.md)
-
 
 

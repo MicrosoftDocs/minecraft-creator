@@ -50,7 +50,7 @@ Returns true if the subject entity uses the skin id number provided.
 ### Full
 
 ```json
-{ "test": "is_skin_id", "subject": "self", "operator": "equals", "value": "true"}
+{ "test": "is_skin_id", "subject": "self", "operator": "equals", "value": true}
 ```
 
 ### Short (using Defaults)

@@ -12,7 +12,7 @@ Loot tables are JSON formatted files used to define how items are generated in-g
 
 :::image type="content" source="Media/IntroToLootTables/Loot-and-Trading-Tables.jpg" alt-text="Image showing Alex opening a chest to show loot.":::
 
-Loot tables generally consist of three main sections known as a “pool.”
+Loot table files live in the root directory of a behavior pack and they generally consist of three main sections known as a “pool.”
 
 - **Rolls**
     - How many times this pool will be rolled to select an entry. This could be either an integer which will make it a set amount of rolls or a min/max range the number of rolls can be chosen from.
@@ -335,6 +335,48 @@ For example, using multiple `set_count` functions, like with the example below, 
 ## Conditions
 
 Conditions are a list of requirements that must be met before either a pool can be used or an individual entry can be selected. All conditions are stored within the conditions list. Each condition runs one at a time. If any one condition in the list fails, the remainder in the same list will be ignored.
+
+### Match tool condition
+
+`match_tool` is a condition that checks whether the tool (or weapon or whatever item the player is using) used to make the loot drop matches the set of modifier conditions provided.
+The predicates used are: count, durability, enchantments, and item.
+
+>- **count:** amount of the item
+>    * range_max: the maximum value
+>    * range_min: the minimum value
+>- **durability:** the durability of the item
+>    * range_max: the maximum value
+>    * range_min: the minimum value
+>- **enchantments:** list of enchantments
+>    * enchantment: an enchantment ID
+>    * levels: the level of the enchantment
+>    * range_max: the maximum value
+>    * range_min: the minimum value
+>- **item:** an item iID  
+
+Example:
+
+```json
+
+"conditions": [  
+            {  
+              "condition": "match_tool",  
+              "enchantments": [  
+                {  
+                  "enchantment": "sharpness",  
+                  "levels": {  
+                    "range_max": 6  
+                  }  
+                }  
+              ],  
+              "item": "minecraft:diamond_sword",  
+              "count": 1,  
+              "durability": {  
+                "range_min": 1  
+              }  
+            }  
+          ]  
+```
 
 ### Pool conditions
 

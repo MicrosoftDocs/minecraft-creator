@@ -12,34 +12,32 @@ description: Contents of the mojang-minecraft.BeforeItemUseEventSignal class.
 
 Manages callbacks that fire before an item is used.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
   
 ### **subscribe**
 `
-subscribe(callback: (arg: BeforeItemUseEvent) => undefined): (arg: BeforeItemUseEvent) => undefined
+subscribe(callback: (arg: BeforeItemUseEvent) => void): (arg: BeforeItemUseEvent) => void
 `
 
 Adds a callback that will be called before an item is used.
 #### **Parameters**
-- **callback**: (arg: BeforeItemUseEvent) => undefined
+- **callback**: (arg: [*BeforeItemUseEvent*](BeforeItemUseEvent.md)) => *void*
 
-#### **Returns** (arg: BeforeItemUseEvent) => undefined
+#### **Returns** (arg: [*BeforeItemUseEvent*](BeforeItemUseEvent.md)) => *void*
 
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: BeforeItemUseEvent) => undefined): void
+unsubscribe(callback: (arg: BeforeItemUseEvent) => void): void
 `
 
 Removes a callback from being called before an item is used.
 #### **Parameters**
-- **callback**: (arg: BeforeItemUseEvent) => undefined
+- **callback**: (arg: [*BeforeItemUseEvent*](BeforeItemUseEvent.md)) => *void*
 
 
 > [!WARNING]
 > This function can throw errors.
-
 

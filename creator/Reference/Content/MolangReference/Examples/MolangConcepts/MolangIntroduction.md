@@ -26,6 +26,7 @@ To know which Versioned Changes are in effect, look at the `"min_engine_version"
 | 1.17.0| Initial support for Versioned Changes added. (Not actually a Versioned Change) |
 | 1.17.30| Fixed query.item_remaining_use_duration conversion from ticks to seconds (multiplied by 20 instead of dividing). Also fixed normalization logic in that query to go from 1 down to 0 instead of 0 up to 1. |
 | 1.17.40| Added some new error messages for invalid expressions which previously ran with probably unexpected results. For example "'text' + 1" will now cause a content error. |
+| 1.18.10| Fixed conditional (ternary) operator associativity. Previously nested conditional expressions like `A ? B : C ? D : E` would evaluate as `(A ? B : C) ? D : E`. Now they evaluate as `A ? B : (C ? D : E)`. |
 
 ## Lexical Structure
 
@@ -62,7 +63,7 @@ All identifiers not in a scope listed below are reserved for future use.
 | `variable.variable_name`| Read/write storage on an actor |
 | `temp.variable_name`| Read/write temporary storage |
 | `context.variable_name`| Read-only storage provided by the game in certain scenarios |
-| `<test> ? <if true> : <if false>`| Ternary conditional operator |
+| `<test> ? <if true> : <if false>`| Ternary conditional operator. **NOTE: Nested ternary expressions without parentheses were incorrectly parsed before a Versioned Change was made to fix it (see 'Versioned Changes' below).**  |
 | `<test> ? <if true>`| Binary conditional operator |
 | `this`| The current value that this expression will ultimately write to (context specific) |
 | `return`| For complex expressions, this evaluates the following statement and stops execution of the expression, returns the value computed |
@@ -207,7 +208,7 @@ Note that structures can be arbitrarily deep in their nesting/recursiveness. Wit
 
 ## Strings
 
-Strings in Molang are surrounded by single - quotes shown here as `'minecraft:pig'` or `'hello world!'`. An empty string is defined as two consecutive single quotes shown here as `''`.
+Strings in Molang are surrounded by single quotes, shown here as `'minecraft:pig'` or `'hello world!'`. An empty string is defined as two consecutive single quotes shown here as `''`.
 
 String operations only support `==` and `!=` at this time.
 
@@ -251,7 +252,7 @@ Listed below are the mathematical functions available for use in Molang.
 
 ## Arrow Operator `->`
 
-Some return values of query function, or values stored in temp/entity/context variables can be a reference to another entity.  The `->` operator allows an expression to access variables or run queries on that entity.  For example, the example below will find all pigs within four metres of the current entity(including itself if it's a pig), and increment a variable `v.x` on itself if the block immediately above each pig is flammable (such as an oak button).
+Some return values of query function, or values stored in temp/entity/context variables can be a reference to another entity.  The `->` operator allows an expression to access variables or run queries on that entity.  For example, the example below will find all pigs within four meters of the current entity(including itself if it's a pig), and increment a variable `v.x` on itself if the block immediately above each pig is flammable (such as an oak button).
 
 > [!CAUTION]
 > In the case where the left-hand-side of the `->` operator has an error (value is null, the entity was killed previously, or some other issue), the expression will not evaluate the right-hand-side and will return 0.
@@ -286,6 +287,9 @@ One can group a series of statements into a single group by wrapping them in `{`
 The conditional '?' operator allows for two convenient ways to implement simple branching logic.
  The first way is to use '?' by itself to conditionally execute part of an expression, for example `A ? B`. The part after the '?' is only run if the part before it evaluates to a true boolean.
  The second way is to use '?' with a ':' as a 'conditional ternary', for example `A ? B : C`. If the part before the '?' is evaluated as true, the part before the ':' is returned. Otherwise the part after is returned.
+
+>[!Note]
+>Nested ternary expressions without parentheses were incorrectly parsed before a Versioned Change was made to fix it (see 'Versioned Changes' below).
 
 ### Conditional Examples
 

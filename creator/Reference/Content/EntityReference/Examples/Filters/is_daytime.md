@@ -54,7 +54,7 @@ Returns true during the daylight hours.
 ### Full
 
 ```json
-{ "test": "is_daytime", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "is_daytime", "subject": "self", "operator": "equals", "value": true }
 ```
 
 ### Short (using Defaults)

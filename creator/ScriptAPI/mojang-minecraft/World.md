@@ -25,16 +25,15 @@ Type: [*Events*](Events.md)
 ## Methods
 - [getDimension](#getdimension)
 - [getPlayers](#getplayers)
+- [playSound](#playsound)
   
 ### **getDimension**
 `
-getDimension(dimensionName: ('overworld'|'nether'|'the end')): Dimension
+getDimension(dimensionId: string): Dimension
 `
 
 #### **Parameters**
-- **dimensionName**: `'overworld'`, `'nether'`, `'the end'`
-  
-  The name of the Dimension
+- **dimensionId**: *string*
 
 #### **Returns** [*Dimension*](Dimension.md) - The requested dimension
 
@@ -43,16 +42,27 @@ getDimension(dimensionName: ('overworld'|'nether'|'the end')): Dimension
 
 ### **getPlayers**
 `
-getPlayers(options?: EntityQueryOptions): EntityIterator
+getPlayers(options?: EntityQueryOptions): PlayerIterator
 `
 
 Returns all players currently in the world.
 #### **Parameters**
 - **options**?: [*EntityQueryOptions*](EntityQueryOptions.md) = `null`
 
-#### **Returns** [*EntityIterator*](EntityIterator.md) - All players currently in the world.
+#### **Returns** [*PlayerIterator*](PlayerIterator.md) - All players currently in the world.
 
 > [!WARNING]
 > This function can throw errors.
+
+### **playSound**
+`
+playSound(soundID: string, soundOptions?: SoundOptions): void
+`
+
+Plays a sound that all players can hear.
+#### **Parameters**
+- **soundID**: *string*
+- **soundOptions**?: [*SoundOptions*](SoundOptions.md) = `null`
+
 
 

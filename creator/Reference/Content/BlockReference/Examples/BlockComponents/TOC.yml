@@ -1,17 +1,25 @@
  - name: Block Component List
    href: ../BlockComponentsList.md
- - name: block_light_absorption
-   href: minecraftBlock_block_light_absorption.md
+ - name: aim_collision
+   href: minecraftBlock_aim_collision.md
+ - name: block_collision
+   href: minecraftBlock_block_collision.md
+ - name: block_light_emission
+   href: minecraftBlock_block_light_emission.md
+ - name: block_light_filter
+   href: minecraftBlock_block_light_filter.md
+ - name: breakonpush
+   href: minecraftBlock_breakonpush.md
  - name: breathability
    href: minecraftBlock_breathability.md
+ - name: crafting_table
+   href: minecraftBlock_crafting_table.md
  - name: creative_category
    href: minecraftBlock_creative_category.md
  - name: destroy_time
    href: minecraftBlock_destroy_time.md
  - name: display_name
    href: minecraftBlock_display_name.md
- - name: entity_collision
-   href: minecraftBlock_entity_collision.md
  - name: explosion_resistance
    href: minecraftBlock_explosion_resistance.md
  - name: flammable
@@ -32,8 +40,6 @@
    href: minecraftBlock_onlypistonpush.md
  - name: part_visibility
    href: minecraftBlock_part_visibility.md
- - name: pick_collision
-   href: minecraftBlock_pick_collision.md
  - name: placement_filter
    href: minecraftBlock_placement_filter.md
  - name: preventsjumping

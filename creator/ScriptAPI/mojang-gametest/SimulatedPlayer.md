@@ -10,7 +10,7 @@ description: Contents of the mojang-gametest.SimulatedPlayer class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-## Base Types
+## Extends
 - [*mojang-minecraft.Player*](../mojang-minecraft/Player.md)
 
 A simulated player can be used within GameTests to represent how a player moves throughout the world and to support testing of how entities and the environment will react to a player. This type derives much of its structure and methods from the [*mojang-minecraft.Player*](../mojang-minecraft/Player.md) type.
@@ -30,6 +30,14 @@ Type: *number*
 Dimension that the simulated player is currently within.
 
 Type: [*mojang-minecraft.Dimension*](../mojang-minecraft/Dimension.md)
+
+
+### **headLocation**
+`read-only headLocation: mojang-minecraft.Location;`
+
+Location of the center of the head component of the player.
+
+Type: [*mojang-minecraft.Location*](../mojang-minecraft/Location.md)
 
 
 ### **headRotation**
@@ -97,11 +105,19 @@ Type: [*mojang-minecraft.Entity*](../mojang-minecraft/Entity.md)
 
 
 ### **velocity**
-`read-only velocity: mojang-minecraft.Location;`
+`read-only velocity: mojang-minecraft.Vector;`
 
 Current speed of the player across X, Y, and Z dimensions.
 
-Type: [*mojang-minecraft.Location*](../mojang-minecraft/Location.md)
+Type: [*mojang-minecraft.Vector*](../mojang-minecraft/Vector.md)
+
+
+### **viewVector**
+`read-only viewVector: mojang-minecraft.Vector;`
+
+Vector of the current view of the player.
+
+Type: [*mojang-minecraft.Vector*](../mojang-minecraft/Vector.md)
 
 
 
@@ -137,17 +153,21 @@ Type: [*mojang-minecraft.Location*](../mojang-minecraft/Location.md)
 - [navigateToEntity](#navigatetoentity)
 - [navigateToLocation](#navigatetolocation)
 - [navigateToLocations](#navigatetolocations)
+- [playSound](#playsound)
 - [removeTag](#removetag)
 - [rotateBody](#rotatebody)
 - [runCommand](#runcommand)
 - [setBodyRotation](#setbodyrotation)
 - [setGameMode](#setgamemode)
 - [setItem](#setitem)
+- [setVelocity](#setvelocity)
 - [startItemCooldown](#startitemcooldown)
 - [stopBreakingBlock](#stopbreakingblock)
 - [stopInteracting](#stopinteracting)
 - [stopMoving](#stopmoving)
 - [stopUsingItem](#stopusingitem)
+- [teleport](#teleport)
+- [teleportFacing](#teleportfacing)
 - [triggerEvent](#triggerevent)
 - [useItem](#useitem)
 - [useItemInSlot](#useiteminslot)
@@ -222,7 +242,7 @@ Causes the simulated player to attack the provided target. Returns true if the a
 breakBlock(blockLocation: mojang-minecraft.BlockLocation, direction?: number): boolean
 `
 
-Destroys the block at blockLocation, respecting the rules of the server player's game mode. The block will be hit until broken, an item is used or stopDestroyBlock is called. Returns true if the block at blockLocation is solid.
+Destroys the block at blockLocation, respecting the rules of the server player's game mode. The block will be hit until broken, an item is used or stopBreakingBlock is called. Returns true if the block at blockLocation is solid.
 #### **Parameters**
 - **blockLocation**: [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md)
   
@@ -613,6 +633,24 @@ Use navigation to follow the route provided via the locations parameter. If a mo
 > [!WARNING]
 > This function can throw errors.
 
+### **playSound**
+`
+playSound(soundID: string, soundOptions?: mojang-minecraft.SoundOptions): void
+`
+
+Plays a sound that only this particular player can hear.
+#### **Parameters**
+- **soundID**: *string*
+  
+  Identifier of the sound to play.
+- **soundOptions**?: [*mojang-minecraft.SoundOptions*](../mojang-minecraft/SoundOptions.md) = `null`
+  
+  Additional optional options for the sound.
+
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **removeTag**
 `
 removeTag(tag: string): boolean
@@ -714,6 +752,21 @@ Sets a particular item for the simulated player.
 > [!WARNING]
 > This function can throw errors.
 
+### **setVelocity**
+`
+setVelocity(velocity: mojang-minecraft.Vector): void
+`
+
+Sets a velocity for the entity to move with.
+#### **Parameters**
+- **velocity**: [*mojang-minecraft.Vector*](../mojang-minecraft/Vector.md)
+  
+  X/Y/Z components of the velocity.
+
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **startItemCooldown**
 `
 startItemCooldown(itemCategory: string, tickDuration: number): void
@@ -771,6 +824,51 @@ stopUsingItem(): void
 `
 
 Stops using the currently active item.
+
+
+> [!WARNING]
+> This function can throw errors.
+
+### **teleport**
+`
+teleport(location: mojang-minecraft.Location, dimension: mojang-minecraft.Dimension, xRotation: number, yRotation: number): void
+`
+
+Teleports the selected player to a new location
+#### **Parameters**
+- **location**: [*mojang-minecraft.Location*](../mojang-minecraft/Location.md)
+  
+  New location for the player.
+- **dimension**: [*mojang-minecraft.Dimension*](../mojang-minecraft/Dimension.md)
+  
+  Dimension to move the selected player to.
+- **xRotation**: *number*
+  
+  X rotation of the player after teleportation.
+- **yRotation**: *number*
+  
+  Y rotation of the player after teleportation.
+
+
+> [!WARNING]
+> This function can throw errors.
+
+### **teleportFacing**
+`
+teleportFacing(location: mojang-minecraft.Location, dimension: mojang-minecraft.Dimension, facingLocation: mojang-minecraft.Location): void
+`
+
+Teleports the selected player to a new location, and will have the player facing a specified location.
+#### **Parameters**
+- **location**: [*mojang-minecraft.Location*](../mojang-minecraft/Location.md)
+  
+  New location for the player.
+- **dimension**: [*mojang-minecraft.Dimension*](../mojang-minecraft/Dimension.md)
+  
+  Dimension to move the selected player to.
+- **facingLocation**: [*mojang-minecraft.Location*](../mojang-minecraft/Location.md)
+  
+  Location that this player will be facing.
 
 
 > [!WARNING]
@@ -878,5 +976,4 @@ Causes the simulated player to use an item on a block. The block at the specifie
 
 > [!WARNING]
 > This function can throw errors.
-
 

@@ -54,7 +54,7 @@ Returns true if the subject entity is fleeing from other mobs.
 ### Full
 
 ```json
-{ "test": "is_avoiding_mobs", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "is_avoiding_mobs", "subject": "self", "operator": "equals", "value": true }
 ```
 
 ### Short (using Defaults)

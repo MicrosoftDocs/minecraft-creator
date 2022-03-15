@@ -32,7 +32,7 @@ Type: *number*
 ### **duration**
 `read-only duration: number;`
 
-Gets the duration, in seconds, of this effect.
+Gets the duration, in ticks, of this effect.
 
 Type: *number*
 
@@ -43,7 +43,5 @@ Type: *number*
 Gets the identifier of the effect to apply. Example values include 'fire_resistance' or 'regeneration'.
 
 Type: *string*
-
-
 
 

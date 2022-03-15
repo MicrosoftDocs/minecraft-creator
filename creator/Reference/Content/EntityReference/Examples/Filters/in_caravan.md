@@ -54,7 +54,7 @@ Returns true if the subject entity is in a caravan.
 ### Full
 
 ```json
-{ "test": "in_caravan", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "in_caravan", "subject": "self", "operator": "equals", "value": true }
 ```
 
 ### Short (using Defaults)

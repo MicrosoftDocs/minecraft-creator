@@ -45,5 +45,3 @@ Represents whether this fence block is connected to another fence to the west (x
 Type: *boolean*
 
 
-
-

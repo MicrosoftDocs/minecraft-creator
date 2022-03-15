@@ -20,8 +20,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|damage_chance|*not set* |Float |Chance of Damage |
-|max_durability|*not set* |Integer |The amount of damage that this item can take before breaking.|
+|damage_chance|*not set* |Float | Damage chance is the percentage chance of this item losing durability. Default is set to 100. Defined as an int range with min and max value. |
+|max_durability|*not set* |Integer | Max durability is the amount of damage that this item can take before breaking.|
 
 ## Example
 

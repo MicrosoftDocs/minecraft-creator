@@ -54,7 +54,7 @@ Returns true if the subject entity is the owner of the calling entity.
 ### Full
 
 ```json
-{ "test": "is_owner", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "is_owner", "subject": "self", "operator": "equals", "value": true }
 ```
 
 ### Short (using Defaults)

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Features Documentation - minecraft:partially_exposed_blob_feature
 
-`minecraft:partially_exposed_blob_feature` generates a blob of the specified block with the specified dimensions For the most part the blob is embedded in the specified surface, however a single side is allowed to be exposed.
+`minecraft:partially_exposed_blob_feature` generates a blob of the specified block with the specified dimensions. For the most part, the blob is embedded in the specified surface, however a single side is allowed to be exposed.
 
 ## Example
 

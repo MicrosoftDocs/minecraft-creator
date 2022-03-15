@@ -26,12 +26,18 @@
             href: Documents/CommandsIntroduction.md
           - name: Popular Commands
             href: Documents/CommandsPopularCommands.md
+          - name: The Damage Command
+            href: Documents/CommandsDamageIntroduction.md
           - name: Getting Started with Command Blocks
             href: Documents/CommandBlocks.md
           - name: How to Make a Complete the Monument Map
             href: Documents/CommandsHowToMakeACTMMap.md
           - name: Introduction to Functions
             href: Documents/FunctionsIntroduction.md
+          - name: Introduction to Scoreboards
+            href: Documents/ScoreboardIntroduction.md
+          - name: Scoreboard Operations Tutorial
+            href: Documents/ScoreboardOperationsTutorial.md
           - name: How to use tick.json
             href: Documents/TickJsonIntroduction.md
         - name: Minecraft Entities
@@ -54,6 +60,8 @@
               href: Documents/IntroductionToLootTables.md
             - name: Loot and Trade Table Functions
               href: Documents/LootAndTradeTableFunctions.md
+            - name: Loot Spawn and Kill
+              href: Documents/LootSpawnAndKill.md
         - name: Physically Based Rendering
           items:
             - name: Ray Tracing - Getting Started
@@ -122,6 +130,12 @@
             href: Documents/ConvertingTexturePacks.md
           - name: Preparing Raw Text for Localization
             href: Documents/PreparingRawTextForLocalization.md
+        - name: Advanced Topics
+          items:
+          - name: Actor Storage
+            href: Documents/ActorStorage.md
+          - name: Editing NBTs Safely
+            href: Documents/EditingNBTSafely.md
     - name: Reference Documentation
       items:
       - name: GameTest

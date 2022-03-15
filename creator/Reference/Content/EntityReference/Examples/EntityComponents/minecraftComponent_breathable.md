@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:breathable
 
-`minecraft:breathable` allows an entity to breathe in certain blocks and gives them the ability to suffocate.
+`minecraft:breathable` defines what blocks an entity can breathe in and gives them the ability to suffocate.
 
 ## Parameters
 
@@ -20,7 +20,7 @@ ms.prod: gaming
 |breathes_water| false| Boolean|  If true, this entity can breathe in water. |
 |generates_bubbles| true| Boolean|  If true, this entity will have visible bubbles while in water. |
 |inhale_time| 0| Decimal|  Time in seconds to recover breath to maximum. |
-|non_breathe_blocks|*not set* | List| List of blocks this entity can't breathe in, in addition to the above. |
+|non_breathe_blocks|*not set* | List| List of blocks this entity can't breathe in, in addition to the other "breathes" parameters. |
 |suffocate_time| -20| Integer| Time in seconds between suffocation damage. |
 |total_supply| 15| Integer| Time in seconds the entity can hold its breath. |
 

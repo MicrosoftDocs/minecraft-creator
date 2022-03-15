@@ -12,34 +12,32 @@ description: Contents of the mojang-minecraft.ItemUseOnEventSignal class.
 
 Manages callbacks that are connected to an item being used on a block event.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
   
 ### **subscribe**
 `
-subscribe(callback: (arg: ItemUseOnEvent) => undefined): (arg: ItemUseOnEvent) => undefined
+subscribe(callback: (arg: ItemUseOnEvent) => void): (arg: ItemUseOnEvent) => void
 `
 
 Adds a callback that will be called when an item is used on a block.
 #### **Parameters**
-- **callback**: (arg: ItemUseOnEvent) => undefined
+- **callback**: (arg: [*ItemUseOnEvent*](ItemUseOnEvent.md)) => *void*
 
-#### **Returns** (arg: ItemUseOnEvent) => undefined
+#### **Returns** (arg: [*ItemUseOnEvent*](ItemUseOnEvent.md)) => *void*
 
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ItemUseOnEvent) => undefined): void
+unsubscribe(callback: (arg: ItemUseOnEvent) => void): void
 `
 
 Removes a callback from being called when an item is used on a block.
 #### **Parameters**
-- **callback**: (arg: ItemUseOnEvent) => undefined
+- **callback**: (arg: [*ItemUseOnEvent*](ItemUseOnEvent.md)) => *void*
 
 
 > [!WARNING]
 > This function can throw errors.
-
 

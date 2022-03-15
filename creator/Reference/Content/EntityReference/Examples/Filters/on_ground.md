@@ -54,7 +54,7 @@ Returns true when the subject entity is on the ground.
 ### Full
 
 ```json
-{ "test": "on_ground", "subject": "self", "operator": "equals", "value": "true"}
+{ "test": "on_ground", "subject": "self", "operator": "equals", "value": true}
 ```
 
 ### Short (using Defaults)

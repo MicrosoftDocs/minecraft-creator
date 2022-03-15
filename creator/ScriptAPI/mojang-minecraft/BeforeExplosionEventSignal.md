@@ -12,34 +12,32 @@ description: Contents of the mojang-minecraft.BeforeExplosionEventSignal class.
 
 Manages callbacks that are connected to before an explosion occurs.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
   
 ### **subscribe**
 `
-subscribe(callback: (arg: BeforeExplosionEvent) => undefined): (arg: BeforeExplosionEvent) => undefined
+subscribe(callback: (arg: BeforeExplosionEvent) => void): (arg: BeforeExplosionEvent) => void
 `
 
 Adds a callback that will be called when before an explosion occurs. The callback can optionally change or cancel explosion behavior.
 #### **Parameters**
-- **callback**: (arg: BeforeExplosionEvent) => undefined
+- **callback**: (arg: [*BeforeExplosionEvent*](BeforeExplosionEvent.md)) => *void*
 
-#### **Returns** (arg: BeforeExplosionEvent) => undefined
+#### **Returns** (arg: [*BeforeExplosionEvent*](BeforeExplosionEvent.md)) => *void*
 
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: BeforeExplosionEvent) => undefined): void
+unsubscribe(callback: (arg: BeforeExplosionEvent) => void): void
 `
 
 Removes a callback from being called from before when an explosion would occur.
 #### **Parameters**
-- **callback**: (arg: BeforeExplosionEvent) => undefined
+- **callback**: (arg: [*BeforeExplosionEvent*](BeforeExplosionEvent.md)) => *void*
 
 
 > [!WARNING]
 > This function can throw errors.
-
 

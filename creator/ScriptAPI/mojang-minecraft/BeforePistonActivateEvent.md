@@ -10,7 +10,7 @@ description: Contents of the mojang-minecraft.BeforePistonActivateEvent class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-## Base Types
+## Extends
 - [*BlockEvent*](BlockEvent.md)
 
 Contains information related to changes before a piston expands or retracts.
@@ -54,7 +54,5 @@ Type: *boolean*
 Contains additional properties and details of the piston.
 
 Type: [*BlockPistonComponent*](BlockPistonComponent.md)
-
-
 
 

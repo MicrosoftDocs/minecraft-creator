@@ -10,18 +10,34 @@ description: Contents of the mojang-minecraft.Entity class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-## Directly Derived Types
+## Classes that extend Entity
 - [*Player*](Player.md)
-  
+
 Represents the state of an entity (a mob, the player, or other moving objects like minecarts) in the world.
 
 ## Properties
+### **bodyRotation**
+`read-only bodyRotation: number;`
+
+Rotation of the body component of the entity.
+
+Type: *number*
+
+
 ### **dimension**
 `read-only dimension: Dimension;`
 
 Dimension that the entity is currently within.
 
 Type: [*Dimension*](Dimension.md)
+
+
+### **headLocation**
+`read-only headLocation: Location;`
+
+Location of the center of the head component of the entity.
+
+Type: [*Location*](Location.md)
 
 
 ### **id**
@@ -65,11 +81,19 @@ Type: [*Entity*](Entity.md)
 
 
 ### **velocity**
-`read-only velocity: Location;`
+`read-only velocity: Vector;`
 
 Velocity of the entity.
 
-Type: [*Location*](Location.md)
+Type: [*Vector*](Vector.md)
+
+
+### **viewVector**
+`read-only viewVector: Vector;`
+
+Vector of the current view of the entity.
+
+Type: [*Vector*](Vector.md)
 
 
 
@@ -87,6 +111,9 @@ Type: [*Location*](Location.md)
 - [kill](#kill)
 - [removeTag](#removetag)
 - [runCommand](#runcommand)
+- [setVelocity](#setvelocity)
+- [teleport](#teleport)
+- [teleportFacing](#teleportfacing)
 - [triggerEvent](#triggerevent)
   
 ### **addEffect**
@@ -296,6 +323,66 @@ Runs a particular command from the context of this entity.
 entity.runCommand("say You got a new high score!");
 entity.runCommand("scoreboard players set @p score 10");
 ```
+### **setVelocity**
+`
+setVelocity(velocity: Vector): void
+`
+
+Sets a velocity for the entity to move with.
+#### **Parameters**
+- **velocity**: [*Vector*](Vector.md)
+  
+  X/Y/Z components of the velocity.
+
+
+> [!WARNING]
+> This function can throw errors.
+
+### **teleport**
+`
+teleport(location: Location, dimension: Dimension, xRotation: number, yRotation: number): void
+`
+
+Teleports the selected entity to a new location
+#### **Parameters**
+- **location**: [*Location*](Location.md)
+  
+  New location for the entity.
+- **dimension**: [*Dimension*](Dimension.md)
+  
+  Dimension to move the selected entity to.
+- **xRotation**: *number*
+  
+  X rotation of the entity after teleportation.
+- **yRotation**: *number*
+  
+  Y rotation of the entity after teleportation.
+
+
+> [!WARNING]
+> This function can throw errors.
+
+### **teleportFacing**
+`
+teleportFacing(location: Location, dimension: Dimension, facingLocation: Location): void
+`
+
+Teleports the selected entity to a new location, and will have the entity facing a specified location.
+#### **Parameters**
+- **location**: [*Location*](Location.md)
+  
+  New location for the entity.
+- **dimension**: [*Dimension*](Dimension.md)
+  
+  Dimension to move the selected entity to.
+- **facingLocation**: [*Location*](Location.md)
+  
+  Location that this entity will be facing.
+
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **triggerEvent**
 `
 triggerEvent(eventName: string): void
@@ -310,5 +397,4 @@ Triggers an entity type event. For every entity, a number of events are defined 
 
 > [!WARNING]
 > This function can throw errors.
-
 

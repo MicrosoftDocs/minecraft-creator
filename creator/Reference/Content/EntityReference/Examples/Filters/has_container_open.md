@@ -50,7 +50,7 @@ Returns true when the subject Player entity has opened a container.
 ### Full
 
 ```json
-{ "test": "has_container_open", "subject": "self", "operator": "equals", "value": "true" }
+{ "test": "has_container_open", "subject": "self", "operator": "equals", "value": true }
 ```
 
 ### Short (using Defaults)

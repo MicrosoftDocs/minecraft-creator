@@ -12,34 +12,32 @@ description: Contents of the mojang-minecraft.WeatherChangeEventSignal class.
 
 Manages callbacks that are connected to weather changing.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
   
 ### **subscribe**
 `
-subscribe(callback: (arg: WeatherChangeEvent) => undefined): (arg: WeatherChangeEvent) => undefined
+subscribe(callback: (arg: WeatherChangeEvent) => void): (arg: WeatherChangeEvent) => void
 `
 
 Adds a callback that will be called when weather changes.
 #### **Parameters**
-- **callback**: (arg: WeatherChangeEvent) => undefined
+- **callback**: (arg: [*WeatherChangeEvent*](WeatherChangeEvent.md)) => *void*
 
-#### **Returns** (arg: WeatherChangeEvent) => undefined
+#### **Returns** (arg: [*WeatherChangeEvent*](WeatherChangeEvent.md)) => *void*
 
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: WeatherChangeEvent) => undefined): void
+unsubscribe(callback: (arg: WeatherChangeEvent) => void): void
 `
 
 Removes a callback from being called when weather changes.
 #### **Parameters**
-- **callback**: (arg: WeatherChangeEvent) => undefined
+- **callback**: (arg: [*WeatherChangeEvent*](WeatherChangeEvent.md)) => *void*
 
 
 > [!WARNING]
 > This function can throw errors.
-
 

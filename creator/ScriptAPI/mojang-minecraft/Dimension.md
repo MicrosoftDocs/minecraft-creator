@@ -12,6 +12,15 @@ description: Contents of the mojang-minecraft.Dimension class.
 
 A class that represents a particular dimension (e.g., The End) within a world.
 
+## Properties
+### **id**
+`read-only id: string;`
+
+Identifier of the dimension.
+
+Type: *string*
+
+
 
 ## Methods
 - [createExplosion](#createexplosion)
@@ -24,6 +33,8 @@ A class that represents a particular dimension (e.g., The End) within a world.
 - [isEmpty](#isempty)
 - [runCommand](#runcommand)
 - [spawnEntity](#spawnentity)
+- [spawnItem](#spawnitem)
+- [spawnParticle](#spawnparticle)
   
 ### **createExplosion**
 `
@@ -62,13 +73,13 @@ Returns a block instance at the given location. This method was introduced as of
 
 ### **getBlockFromRay**
 `
-getBlockFromRay(location: Location, direction: Location, options?: BlockRaycastOptions): Block
+getBlockFromRay(location: Location, direction: Vector, options?: BlockRaycastOptions): Block
 `
 
 Gets the first block that intersects with a vector emanating from a location.
 #### **Parameters**
 - **location**: [*Location*](Location.md)
-- **direction**: [*Location*](Location.md)
+- **direction**: [*Vector*](Vector.md)
 - **options**?: [*BlockRaycastOptions*](BlockRaycastOptions.md) = `null`
   
   Additional options for processing this raycast query.
@@ -108,13 +119,13 @@ Returns a set of entities at a particular location.
 
 ### **getEntitiesFromRay**
 `
-getEntitiesFromRay(location: Location, direction: Location, options?: EntityRaycastOptions): Entity[]
+getEntitiesFromRay(location: Location, direction: Vector, options?: EntityRaycastOptions): Entity[]
 `
 
 Gets entities that intersect with a specified vector emanating from a location.
 #### **Parameters**
 - **location**: [*Location*](Location.md)
-- **direction**: [*Location*](Location.md)
+- **direction**: [*Vector*](Vector.md)
 - **options**?: [*EntityRaycastOptions*](EntityRaycastOptions.md) = `null`
   
   Additional options for processing this raycast query.
@@ -126,14 +137,14 @@ Gets entities that intersect with a specified vector emanating from a location.
 
 ### **getPlayers**
 `
-getPlayers(getPlayers?: EntityQueryOptions): EntityIterator
+getPlayers(getPlayers?: EntityQueryOptions): PlayerIterator
 `
 
 Returns a set of players based on a set of conditions defined via the EntityQueryOptions set of filter criteria.
 #### **Parameters**
 - **getPlayers**?: [*EntityQueryOptions*](EntityQueryOptions.md) = `null`
 
-#### **Returns** [*EntityIterator*](EntityIterator.md) - An entity iterator that can be used to loop over the returned players.
+#### **Returns** [*PlayerIterator*](PlayerIterator.md) - An entity iterator that can be used to loop over the returned players.
 
 > [!WARNING]
 > This function can throw errors.
@@ -176,15 +187,15 @@ world.getDimension("overworld").runCommand("scoreboard players set @p score 10")
 ```
 ### **spawnEntity**
 `
-spawnEntity(identifier: string, location: BlockLocation): Entity
+spawnEntity(identifier: string, location: BlockLocation | Location): Entity
 `
 
-Creates a new entity (e.g., a mob) at the specified location. This method was introduced as of version 1.17.10.21.
+Creates a new entity (e.g., a mob) at the specified location.
 #### **Parameters**
 - **identifier**: *string*
   
   Identifier of the type of entity to spawn. If no namespace is specified, 'minecraft:' is assumed.
-- **location**: [*BlockLocation*](BlockLocation.md)
+- **location**: [*BlockLocation*](BlockLocation.md) | [*Location*](Location.md)
   
   The location at which to create the entity.
 
@@ -192,5 +203,40 @@ Creates a new entity (e.g., a mob) at the specified location. This method was in
 
 > [!WARNING]
 > This function can throw errors.
+
+### **spawnItem**
+`
+spawnItem(item: ItemStack, location: BlockLocation | Location): Entity
+`
+
+Creates a new item stack as an entity at the specified location.
+#### **Parameters**
+- **item**: [*ItemStack*](ItemStack.md)
+- **location**: [*BlockLocation*](BlockLocation.md) | [*Location*](Location.md)
+  
+  The location at which to create the item stack.
+
+#### **Returns** [*Entity*](Entity.md) - Newly created item stack entity at the specified location.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **spawnParticle**
+`
+spawnParticle(effectName: string, location: Location, molangVariables: MolangVariableMap): void
+`
+
+Creates a new particle emitter at a specified location in the world.
+#### **Parameters**
+- **effectName**: *string*
+  
+  Identifier of the particle to create.
+- **location**: [*Location*](Location.md)
+  
+  The location at which to create the particle emitter.
+- **molangVariables**: [*MolangVariableMap*](MolangVariableMap.md)
+  
+  A set of additional, customizable variables that can be adjusted for this particle emitter.
+
 
 

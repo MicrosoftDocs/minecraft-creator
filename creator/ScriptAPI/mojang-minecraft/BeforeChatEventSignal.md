@@ -12,34 +12,32 @@ description: Contents of the mojang-minecraft.BeforeChatEventSignal class.
 
 Manages callbacks that are connected to an event that fires before chat messages are sent.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
   
 ### **subscribe**
 `
-subscribe(callback: (arg: BeforeChatEvent) => undefined): (arg: BeforeChatEvent) => undefined
+subscribe(callback: (arg: BeforeChatEvent) => void): (arg: BeforeChatEvent) => void
 `
 
 Adds a callback that will be called before new chat messages are sent.
 #### **Parameters**
-- **callback**: (arg: BeforeChatEvent) => undefined
+- **callback**: (arg: [*BeforeChatEvent*](BeforeChatEvent.md)) => *void*
 
-#### **Returns** (arg: BeforeChatEvent) => undefined
+#### **Returns** (arg: [*BeforeChatEvent*](BeforeChatEvent.md)) => *void*
 
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: BeforeChatEvent) => undefined): void
+unsubscribe(callback: (arg: BeforeChatEvent) => void): void
 `
 
 Removes a callback from being called before new chat messages are sent.
 #### **Parameters**
-- **callback**: (arg: BeforeChatEvent) => undefined
+- **callback**: (arg: [*BeforeChatEvent*](BeforeChatEvent.md)) => *void*
 
 
 > [!WARNING]
 > This function can throw errors.
-
 

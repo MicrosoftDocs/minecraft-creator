@@ -1,0 +1,46 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.prod: gaming
+title: mojang-minecraft.ItemEnchantsComponent Class
+description: Contents of the mojang-minecraft.ItemEnchantsComponent class.
+---
+# ItemEnchantsComponent Class
+>[!IMPORTANT]
+>These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
+When present on an item, this item has applied enchantment effects.
+
+## Properties
+### **enchantments**
+`enchantments: EnchantmentList;`
+
+Returns a collection of the enchantments applied to this item stack.
+
+Type: [*EnchantmentList*](EnchantmentList.md)
+
+
+### **id**
+`read-only id: string;`
+
+Identifier of this component.
+
+Type: *string*
+
+
+
+## Methods
+- [removeAllEnchantments](#removeallenchantments)
+  
+### **removeAllEnchantments**
+`
+removeAllEnchantments(): void
+`
+
+Removes all enchantments applied to this item stack.
+
+
+> [!WARNING]
+> This function can throw errors.
+

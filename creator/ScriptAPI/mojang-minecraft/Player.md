@@ -10,21 +10,37 @@ description: Contents of the mojang-minecraft.Player class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-## Base Types
+## Extends
 - [*Entity*](Entity.md)
 
-## Directly Derived Types
+## Classes that extend Player
 - [*mojang-gametest.SimulatedPlayer*](../mojang-gametest/SimulatedPlayer.md)
-  
+
 Represents a player within the world.
 
 ## Properties
+### **bodyRotation**
+`read-only bodyRotation: number;`
+
+Rotation of the body component of the player.
+
+Type: *number*
+
+
 ### **dimension**
 `read-only dimension: Dimension;`
 
 Dimension that the entity is currently within.
 
 Type: [*Dimension*](Dimension.md)
+
+
+### **headLocation**
+`read-only headLocation: Location;`
+
+Location of the center of the head component of the player.
+
+Type: [*Location*](Location.md)
 
 
 ### **id**
@@ -84,11 +100,19 @@ Type: [*Entity*](Entity.md)
 
 
 ### **velocity**
-`read-only velocity: Location;`
+`read-only velocity: Vector;`
 
 Current speed of the player across X, Y, and Z dimensions.
 
-Type: [*Location*](Location.md)
+Type: [*Vector*](Vector.md)
+
+
+### **viewVector**
+`read-only viewVector: Vector;`
+
+Vector of the current view of the player.
+
+Type: [*Vector*](Vector.md)
 
 
 
@@ -105,9 +129,13 @@ Type: [*Location*](Location.md)
 - [hasComponent](#hascomponent)
 - [hasTag](#hastag)
 - [kill](#kill)
+- [playSound](#playsound)
 - [removeTag](#removetag)
 - [runCommand](#runcommand)
+- [setVelocity](#setvelocity)
 - [startItemCooldown](#startitemcooldown)
+- [teleport](#teleport)
+- [teleportFacing](#teleportfacing)
 - [triggerEvent](#triggerevent)
   
 ### **addEffect**
@@ -122,7 +150,7 @@ Adds an effect, like poison, to the entity.
   Type of effect to add to the entity.
 - **duration**: *number*
   
-  Amount of time, in seconds, for the effect to apply.
+  Amount of time, in ticks, for the effect to apply.
 - **amplifier**: *number*
   
   Optional amplification of the effect to apply.
@@ -286,6 +314,24 @@ Kills this entity. The entity will drop loot as normal.
 > [!WARNING]
 > This function can throw errors.
 
+### **playSound**
+`
+playSound(soundID: string, soundOptions?: SoundOptions): void
+`
+
+Plays a sound that only this particular player can hear.
+#### **Parameters**
+- **soundID**: *string*
+  
+  Identifier of the sound to play.
+- **soundOptions**?: [*SoundOptions*](SoundOptions.md) = `null`
+  
+  Additional optional options for the sound.
+
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **removeTag**
 `
 removeTag(tag: string): boolean
@@ -324,6 +370,21 @@ Runs a particular command from the context of this player.
 player.runCommand("say You got a new high score!");
 player.runCommand("scoreboard players set @s score 10");
 ```
+### **setVelocity**
+`
+setVelocity(velocity: Vector): void
+`
+
+Sets a velocity for the entity to move with.
+#### **Parameters**
+- **velocity**: [*Vector*](Vector.md)
+  
+  X/Y/Z components of the velocity.
+
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **startItemCooldown**
 `
 startItemCooldown(itemCategory: string, tickDuration: number): void
@@ -337,6 +398,51 @@ Sets the item cooldown time for a particular cooldown category.
 - **tickDuration**: *number*
   
   Duration in ticks of the item cooldown.
+
+
+> [!WARNING]
+> This function can throw errors.
+
+### **teleport**
+`
+teleport(location: Location, dimension: Dimension, xRotation: number, yRotation: number): void
+`
+
+Teleports the selected player to a new location
+#### **Parameters**
+- **location**: [*Location*](Location.md)
+  
+  New location for the player.
+- **dimension**: [*Dimension*](Dimension.md)
+  
+  Dimension to move the selected player to.
+- **xRotation**: *number*
+  
+  X rotation of the player after teleportation.
+- **yRotation**: *number*
+  
+  Y rotation of the player after teleportation.
+
+
+> [!WARNING]
+> This function can throw errors.
+
+### **teleportFacing**
+`
+teleportFacing(location: Location, dimension: Dimension, facingLocation: Location): void
+`
+
+Teleports the selected player to a new location, and will have the player facing a specified location.
+#### **Parameters**
+- **location**: [*Location*](Location.md)
+  
+  New location for the player.
+- **dimension**: [*Dimension*](Dimension.md)
+  
+  Dimension to move the selected player to.
+- **facingLocation**: [*Location*](Location.md)
+  
+  Location that this player will be facing.
 
 
 > [!WARNING]
@@ -356,5 +462,4 @@ Triggers an entity type event. For every entity, a number of events are defined 
 
 > [!WARNING]
 > This function can throw errors.
-
 
