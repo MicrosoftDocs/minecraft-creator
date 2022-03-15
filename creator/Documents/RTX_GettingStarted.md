@@ -15,11 +15,11 @@ With these new features, creators can dramatically change the look and feel of t
 
 :::row:::
     :::column:::
-        :::image type="content" source="././Media/RTX/RT - Not Emissive-850px.jpg" alt-text="Image showcasing a standard Minecraft world with no ray tracing enabled":::
+        :::image type="content" source="././Media/RTX/Not_Emissive.jpg" alt-text="Image showcasing a standard Minecraft world with no ray tracing enabled":::
         **Ray Tracing Off with Physically-Based Textures**
     :::column-end:::
     :::column:::
-        :::image type="content" source="./Media/RTX/RT - Emissive-850px.jpg" alt-text="Image showcasing a standard Minecraft world with Ray Tracing enabled":::
+        :::image type="content" source="./Media/RTX/Emissive.jpg" alt-text="Image showcasing a standard Minecraft world with Ray Tracing enabled":::
         **Ray Tracing On with Physically-Based Textures**
     :::column-end:::
 :::row-end:::

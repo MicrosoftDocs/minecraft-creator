@@ -112,6 +112,8 @@ While the emerald ore block does not natively emit any light, we are going to ad
 1. Under **Advanced Blending**, un-check the Red and Blue channels so that Green is the only one with a checkbox.
 1. Select **OK** to close the **Blending Options** window.
 
+Here is the output of the emissiveness layer only.
+
 :::image type="content" source="./Media/RTX/Texture/emissive_emerald_ore_mer.png" alt-text="The emissive mer for the emerald ore":::
 
 ### Metallic
@@ -127,6 +129,7 @@ Finally, for the metallic map, we will make the emerald more metallic.
 1. Under **Advanced Blending**, un-check the Red and Blue channels so that Green is the only one with a checkbox.
 1. Select **OK** to close the **Blending Options** window.
 
+Here is the output of the metallic layer only.
 
 :::image type="content" source="./Media/RTX/Texture/metallic_emerald_ore_mer.png" alt-text="Image showcase the final output for the metallic map set up in photoshop":::
 
@@ -136,11 +139,11 @@ With all three texture maps set up and assigned correctly, you can now export th
 
 1. Select **File...Save As...** and save the file as `emerald_ore_mer.png`.
 
-Alternatively, you can download the file below.
+Or, you can download the file below.
 
 :::image type="content" source="./Media/RTX/Texture/emerald_ore_mer.png" alt-text="full emerald_ore_mer png file":::
 
-1. Place the mer file in the `textures/blocks` folder along with the Texture Set JSON file and the block texture.
+2. Place the mer file in the `textures/blocks` folder along with the Texture Set JSON file and the block texture.
 
 :::image type="content" source="./Media/RTX/emerald_ore_night.png" alt-text="an emerald ore block glowing at night in Minecraft":::
 
