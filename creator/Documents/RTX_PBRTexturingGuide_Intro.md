@@ -23,7 +23,7 @@ By the end of this guide, you will learn:
 
 You will need to complete the following tutorials:
 
-- [Introduction to Resource Packs](../../../ResourcePack.md)
+- [Introduction to Resource Packs](./ResourcePack.md)
 - A Resource Pack with a `textures/blocks` folder structure setup.
 
 While textures will be provided, you will need to have a digital painting software that has layers to create your own textures.
@@ -52,12 +52,11 @@ A Metallic map is a grayscale texture that determines which areas of a texture m
 - A pixel that is set to black is considered a value of `0` and the pixel is non-metallic.  Grass, dirt, or tree bark are examples of non-metallic objects.
 - A pixel that is set to white is considered a value of `1` and will treat the pixel as 100% metal. Iron, gold, or copper are examples of metallic objects.
 
-:::image type="content" source="./Media/RTX/concrete_metallic_example.png" alt-text="image of the glass black mer texture":::
+:::image type="content" source="./Media/RTX/concrete_metallic_example.png" alt-text="concrete white block with metallic edges and a matte center":::
 
 The above image uses the following mer: 
 
-:::image type="content" source="./Media/RTX/Texture/metallic_mer.png" alt-text="image of the glass black mer texture":::
-
+:::image type="content" source="./Media/RTX/Texture/metallic_mer.png" alt-text="concrete white block metallic mer texture":::
 
 ### Emissive Map
 
@@ -67,11 +66,11 @@ An Emissive map is a grayscale texture that determines which areas of a texture 
 - A pixel that is set to white is considered a value of `1` and is glowing at its brightest.
 - Because the map is in grayscale, you can set values between `0` and `1`.
 
-:::image type="content" source="./Media/RTX/concrete_emissive_example.png" alt-text="image of the glass black mer texture":::
+:::image type="content" source="./Media/RTX/concrete_emissive_example.png" alt-text="concrete white block with vertical glowing stripes":::
 
 The above image uses the following mer: 
 
-:::image type="content" source="./Media/RTX/Texture/emissive_mer.png" alt-text="image of the glass black mer texture":::
+:::image type="content" source="./Media/RTX/Texture/emissive_mer.png" alt-text="concrete white block emissive mer texture":::
 
 ### Roughness Map
 
@@ -81,11 +80,11 @@ A Roughness map is a grayscale texture that determines which areas of a texture 
 - A pixel that is set to white is considered a value of `1` and will treat the pixel as very rough. Brick, tree bark, or stones are very rough.
 - Because the map is in grayscale, you can set values between `0` and `1`.
 
-:::image type="content" source="./Media/RTX/concrete_rough_example.png" alt-text="image of the glass black mer texture":::
+:::image type="content" source="./Media/RTX/concrete_rough_example.png" alt-text="concrete white block with horizontal rough and smooth stripes":::
 
 The above image uses the following mer: 
 
-:::image type="content" source="./Media/RTX/Texture/rough_mer.png" alt-text="image of the glass black mer texture":::
+:::image type="content" source="./Media/RTX/Texture/rough_mer.png" alt-text="concrete white block roughness mer texture":::
 
 ### Normal Map
 
@@ -105,12 +104,11 @@ A Height map is a grayscale texture that controls depth. Height maps act as an a
 - A pixel that is set to white is considered a value of `1` and will cause the pixel to extrude outward.
 - A pixel that is set to `0.5` is considered the default height and will not extrude in or out.
 - 
-- :::image type="content" source="./Media/RTX/height_example.png" alt-text="image of the glass black mer texture":::
+- :::image type="content" source="./Media/RTX/height_example.png" alt-text="concrete white block that has ridges in a square pattern":::
 
 The above image uses the following height map: 
 
-:::image type="content" source="./Media/RTX/Texture/height_map.png" alt-text="image of the glass black mer texture":::
-
+:::image type="content" source="./Media/RTX/Texture/height_map.png" alt-text="concrete white block height mer texture":::
 
 ## Make a Mirror
 
@@ -121,7 +119,7 @@ Let's create a mirror texture for an existing vanilla glass block by creating a 
 For the Texture Set to work properly, you will need to define a JSON file to load the textures. This tutorial is a  mirror example working with the **iron_block** block.
 
 > [!TIP]
-> To learn more about texture sets, please visit [Texture Set Documentation - Introduction to Texture Sets](../../Reference/Content/TextureSetsReference/TextureSetsConcepts/TextureReferenceSetsIntroduction.md).
+> To learn more about texture sets, please visit [Texture Set Documentation - Introduction to Texture Sets](../Reference/Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md).
 
 1. In your behavior pack, navigate to the `textures/blocks` folder.
 1. Create a new .JSON file and name it `iron_block.texture_set.json.
@@ -166,11 +164,11 @@ With this mirror set up, the Render Dragon engine will be able to ray trace with
 :::row:::
     :::column:::
         **Main Color Texture**
-        :::image type="content" source="./Media/RTX/Texture/iron_block.png" alt-text="image of the glass black texture":::
+        :::image type="content" source="./Media/RTX/Texture/iron_block.png" alt-text="iron block default Minecraft texture":::
     :::column-end:::
     :::column:::
         **PBR Texture**
-        :::image type="content" source="./Media/RTX/Texture/iron_block_mer.png" alt-text="image of the glass black mer texture":::
+        :::image type="content" source="./Media/RTX/Texture/iron_block_mer.png" alt-text="iron block mer texture for mirror effect":::
     :::column-end:::
 :::row-end:::
 
@@ -183,7 +181,7 @@ With this mirror set up, the Render Dragon engine will be able to ray trace with
 
 With the JSON file properly set up and both textures in place, you can now load in your texture pack to test in Minecraft.
 
-:::image type="content" source="./Media/RTX/mirror.png" alt-text="image of the glass black mer texture":::
+:::image type="content" source="./Media/RTX/mirror.png" alt-text="iron block reflecting flowers from the environment":::
 
 ## What's Next?
 

@@ -15,11 +15,11 @@ With these new features, creators can dramatically change the look and feel of t
 
 :::row:::
     :::column:::
-        :::image type="content" source="././Media/RTX/Not_Emissive.jpg" alt-text="Image showcasing a standard Minecraft world with no ray tracing enabled":::
+        :::image type="content" source="././Media/RTX/Not_Emissive.jpg" alt-text="A standard Minecraft world with no ray tracing enabled":::
         **Ray Tracing Off with Physically-Based Textures**
     :::column-end:::
     :::column:::
-        :::image type="content" source="./Media/RTX/Emissive.jpg" alt-text="Image showcasing a standard Minecraft world with Ray Tracing enabled":::
+        :::image type="content" source="./Media/RTX/Emissive.jpg" alt-text="A standard Minecraft world with Ray Tracing enabled":::
         **Ray Tracing On with Physically-Based Textures**
     :::column-end:::
 :::row-end:::
@@ -53,11 +53,11 @@ Ray tracing makes Minecraft look more like the real world. Rays of light shine i
 
 |Features  |Example  |
 |:---------|:---------|
-|**Sunbeams and atmospherics**  - Directional shafts of light typically occur at sunrise and sunset when sunlight passes through particles in the atmosphere or underwater.|:::image type="content" source="././Media/RTX/RT_Sunbeams.jpg" alt-text="Image showcasing sunbeams shining through a shadowy rocky cavern":::         |
-|**Dynamic shadows** - More realistic shadows that change as lighting conditions change.   |:::image type="content" source="././Media/RTX/RT_blobid3.png" alt-text="Image showcasing a sunset and a series of structures casting long and dramatic shadows":::         |
-|**Ambient Occlusion** - shadows cast in corners or crevices where light rays cannot escape |:::image type="content" source="././Media/RTX/RT_blobid4.png" alt-text="Image showcasing various metal blocks and how Ambient Occlusion allows for a more realistic lighting and shadow effect":::         |
-|**Reflections**  - Light bounces off surfaces, both casting and picking up color as it travels. Bouncing light hits smooth surfaces and maintains a spread depending on the material. This can create diffuse reflections or very sharp ones.           |:::image type="content" source="././Media/RTX/RT_blobid5.png" alt-text="Image showcasing a tunnel made of gold blocks and how a single source of emitting light reflects upon the surface":::         |
-|**Refraction**  - As light passes through translucent materials, it bends and bounces. The image you see may be distorted, refracted, and its color will be affected by the translucent material.  |:::image type="content" source="././Media/RTX/RT_blobid6.png" alt-text="Image showing light shining through a series of glass blocks, each with a different result due to light placement":::         |
+|**Sunbeams and atmospherics**  - Directional shafts of light typically occur at sunrise and sunset when sunlight passes through particles in the atmosphere or underwater.|:::image type="content" source="././Media/RTX/RT_Sunbeams.jpg" alt-text="Sunbeams shining through a shadowy rocky cavern":::         |
+|**Dynamic shadows** - More realistic shadows that change as lighting conditions change.   |:::image type="content" source="././Media/RTX/RT_blobid3.png" alt-text="A sunset and a series of structures casting long and dramatic shadows":::         |
+|**Ambient Occlusion** - shadows cast in corners or crevices where light rays cannot escape |:::image type="content" source="././Media/RTX/RT_blobid4.png" alt-text="Various metal blocks and how Ambient Occlusion allows for a more realistic lighting and shadow effect":::         |
+|**Reflections**  - Light bounces off surfaces, both casting and picking up color as it travels. Bouncing light hits smooth surfaces and maintains a spread depending on the material. This can create diffuse reflections or very sharp ones.           |:::image type="content" source="././Media/RTX/RT_blobid5.png" alt-text="A tunnel made of gold blocks and how a single source of emitting light reflects upon the surface":::         |
+|**Refraction**  - As light passes through translucent materials, it bends and bounces. The image you see may be distorted, refracted, and its color will be affected by the translucent material.  |:::image type="content" source="././Media/RTX/RT_blobid6.png" alt-text="Light shining through a series of glass blocks, each with a different result due to light placement":::         |
 
 ## Explore a Ray Tracing World in Minecraft
 
@@ -67,9 +67,9 @@ Many free worlds featuring PBR and ray tracing are available in the Minecraft Ma
 
 You can find all the content supporting ray tracing in the Marketplace by selecting the blue icon.
 
-:::image type="content" source="././Media/RTX/RT_blobid14.png" alt-text="image showing the Minecraft marketplace where an RTX world is enabled":::
+:::image type="content" source="././Media/RTX/RT_blobid14.png" alt-text="The Minecraft marketplace where an RTX world is enabled":::
 
-:::image type="content" source="././Media/RTX/RT_blobid15.png" alt-text="Image showcasing the blue icon on the marketplace downloads":::
+:::image type="content" source="././Media/RTX/RT_blobid15.png" alt-text="The blue icon on the marketplace downloads":::
 
 Next, we will create  PBR textures as a resource pack and you can enable it in the downloaded ray tracing world.
 
@@ -94,4 +94,4 @@ In this part, you will learn how to create physically-based textures by creating
 Along with ray tracing, fog in Minecraft has been updated to use a similar JSON structure that allows you to create and control its in-game appearance.
 
 > [!div class="nextstepaction"]
-> [Fog in Resource Packs](../FogInResourcePacks.md)
+> [Fog in Resource Packs](./FogInResourcePacks.md)

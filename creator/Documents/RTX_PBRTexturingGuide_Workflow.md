@@ -14,7 +14,7 @@ In this guide, you will learn some of the basic workflows when designing PBR tex
 
 We'll make the texture block more metallic on the emerald ore, more rough on the stone, and finally the emerald will glow faintly in the dark.
 
-:::image type="content" source="./Media/RTX/emerald_ore_tutorial.png" alt-text="image of the emerald ore block texture":::
+:::image type="content" source="./Media/RTX/emerald_ore_tutorial.png" alt-text="image of the emerald ore block texture glowing faintly at night":::
 
 By the end of this guide, you will learn:
 
@@ -27,8 +27,8 @@ By the end of this guide, you will learn:
 
 You will need to complete the following tutorials:
 
-- [Introduction to Resource Packs](../../../ResourcePack.md)
-- [Physically-Based Texturing Guide](RTX_PBRTexturingGuide_Intro.md)
+- [Introduction to Resource Packs](./ResourcePack.md)
+- [Physically-Based Texturing Guide](./RTX_PBRTexturingGuide_Intro.md)
 
 While textures will be provided, you will also need to have a digital painting software in order to create your own textures. This tutorial will be using Adobe Photoshop.
 
@@ -61,7 +61,7 @@ Before diving into creating the texture, you will need to create a Texture Set .
 
 With the JSON file set up, let's take a look at how to set up Adobe Photoshop for working with Minecraft Textures. For your `"color"` value, we will be using the existing vanilla texture that is included in the Vanilla Resource Pack.
 
-:::image type="content" source="./Media/RTX/Texture/emerald_ore.png" alt-text="image of the emerald ore block texture":::
+:::image type="content" source="./Media/RTX/Texture/emerald_ore.png" alt-text="image of the emerald ore default block texture":::
 
 1. Right-click on the image above and download it.
 1. Right-click on the file, select **Open with**, and select **Adobe Photoshop**.
@@ -131,7 +131,7 @@ Finally, for the metallic map, we will make the emerald more metallic.
 
 Here is the output of the metallic layer only.
 
-:::image type="content" source="./Media/RTX/Texture/metallic_emerald_ore_mer.png" alt-text="Image showcase the final output for the metallic map set up in photoshop":::
+:::image type="content" source="./Media/RTX/Texture/metallic_emerald_ore_mer.png" alt-text="The metallic mer for the emerald ore":::
 
 ### Exporting the File
 
@@ -153,4 +153,4 @@ Or, you can download the file below.
 Now that you have learned how to create your own custom physically based rendering texture packs, you can take a look at how fog has been adjusted in the Render Dragon engine and customize the settings to your liking.
 
 > [!div class="nextstepaction"]
-> [Fog in Resource Packs](../../../FogInResourcePacks.md)
+> [Fog in Resource Packs](./FogInResourcePacks.md)
