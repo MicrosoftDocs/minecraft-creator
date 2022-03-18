@@ -26,11 +26,11 @@ You will need to complete the following tutorials:
 - [Introduction to Resource Packs](./ResourcePack.md)
 - A Resource Pack with a `textures/blocks` folder structure setup.
 
-While textures will be provided, you will need to have a digital painting software that has layers to create your own textures.
+While textures will be provided, you will need to have digital painting software that has layers to create your textures.
 
 ## What makes a PBR Texture?
 
-Textures  use a common method of rendering called **Texture Mapping**. Texture maps allow creators to layer multiple images to create highly-detailed 3D objects. Vanilla Minecraft textures use a single map called **color**. Color maps are made up of four color channels: Red, Blue, Green, and Alpha (collectively known as RGBA). The first three channels control how the texture will render, while alpha controls the transparency of the texture.
+Textures use a common method of rendering called **Texture Mapping**. Texture maps allow creators to layer multiple images to create highly-detailed 3D objects. Vanilla Minecraft textures use a single map called **color**. Color maps are made up of four-color channels: Red, Blue, Green, and Alpha (collectively known as RGBA). The first three channels control how the texture will render, while alpha controls the transparency of the texture.
 
 With the introduction of PBR to Minecraft, textures can now use five additional maps to help creators create realistic materials.
 
@@ -47,7 +47,7 @@ Each map will be part of the texture set for the block, with each one layered on
 
 ### Metallic Map
 
-A Metallic map is a grayscale texture that determines which areas of a texture map look like a metal.
+A Metallic map is a grayscale texture that determines which areas of a texture map look like metal.
 
 - A pixel that is set to black is considered a value of `0` and the pixel is non-metallic.  Grass, dirt, or tree bark are examples of non-metallic objects.
 - A pixel that is set to white is considered a value of `1` and will treat the pixel as 100% metal. Iron, gold, or copper are examples of metallic objects.
@@ -88,17 +88,17 @@ The above image uses the following mer:
 
 ### Normal Map
 
-A Normal map is a RGB texture that controls depth and how light behaves when a light ray hits the texture.
+A Normal map is an RGB texture that controls the depth and how light behaves when a light ray hits the texture.
 
 - Because Normal maps use RGB, you can create surface details that give the texture the appearance of a sculpted 3D object.
 - Setting the RGB values to `128`,`128`,`255` respectively will result in a flat appearance of the pixel.
 
 > [!CAUTION]
-> Unless you have had previous experience with creating Normal maps, it is recommended that you do not create Normal maps by hand. Third party software is available to assist with creating Normal maps.
+> Unless you have had previous experience with creating Normal maps, it is recommended that you do not create Normal maps by hand. Third-party software is available to assist with creating Normal maps.
 
 ### Height Map
 
-A Height map is a grayscale texture that controls depth. Height maps act as an alternative to Normal maps, but are not as efficient and cannot represent as many textures.
+A Heightmap is a grayscale texture that controls depth of a texture. Height maps act as an alternative to Normal maps, but are not as efficient and cannot represent as many textures.
 
 - A pixel that is set to black is considered a value of `0` and will cause the pixel to extrude inward.
 - A pixel that is set to white is considered a value of `1` and will cause the pixel to extrude outward.
@@ -190,11 +190,10 @@ With this mirror set up, the Render Dragon engine will be able to ray trace with
     :::column-end:::
 :::row-end:::
 
-1. Download the `iron_block.png` file and the `iron_block_mer.png` file.
-i. You can right-click on the image and select **Save As...** to download.
-3. Copy and paste both .png files into the `textures/blocks` folder.
+1. Save the `iron_block.png` file and the `iron_block_mer.png` file. 
+1. Copy and paste both .png files into the `textures/blocks` folder.
 
-## Running the Texture Pack
+## Run the Texture Pack
 
 With the JSON file properly set up and both textures in place, you can now load in your texture pack to test in Minecraft.
 

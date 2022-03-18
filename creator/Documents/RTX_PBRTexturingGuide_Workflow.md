@@ -23,7 +23,7 @@ By the end of this guide, you will learn:
 > How to create a custom Texture Set using Adobe Photoshop.
 > How to utilize color channels to assign multiple maps in a single file.
 
-### Requirements
+## Requirements
 
 You will need to complete the following tutorials:
 
@@ -32,7 +32,7 @@ You will need to complete the following tutorials:
 
 While textures will be provided, you will need to have digital painting software to create your textures. This tutorial will be using Adobe Photoshop.
 
-## Setting up the Texture_Set.JSON file
+## Set up the Texture_Set.JSON file
 
 First, you will need to create a Texture Set .JSON file that will load your new textures into the game.
 
@@ -55,7 +55,7 @@ First, you will need to create a Texture Set .JSON file that will load your new 
 ```
 5. Save and close the file.
 
-## Creating the Textures
+## Create the Textures
 
 With the JSON file set up, let's take a look at how to set up Adobe Photoshop for working with Minecraft Textures. For your `"color"` value, we will be using the existing vanilla texture that is included in the Vanilla Resource Pack.
 
@@ -65,11 +65,11 @@ With the JSON file set up, let's take a look at how to set up Adobe Photoshop fo
 1. Right-click on the file, select **Open with**, and select **Adobe Photoshop**.
 1. When Photoshop opens, select **File... Save As...** and save the file as a **.PSD** file type.
 
-### Creating the 'mer' texture
+### Create the 'mer' texture
 
 In the previous guide, when you set up the Texture Set JSON for the emerald ore block, you may have noticed that there is a file called emerald_ore_mer that is set as the "metalness_emissive_roughness" value. `mer` in this case is an abbreviation for **m**etalness_**e**missive_**r**oughness because it's a single texture file that contains all three maps.
 
-#### emerald_ore_mer.png breakdown
+#### `emerald_ore_mer.png` Overview
 
 Because each texture map functions as a grayscale value, each map can be assigned a color channel:
 
@@ -131,7 +131,7 @@ Here is the output of the metallic layer only.
 
 :::image type="content" source="./Media/RTX/Texture/metallic_emerald_ore_mer.png" alt-text="The metallic mer for the emerald ore":::
 
-### Exporting the File
+### Export the File
 
 With all three texture maps set up and assigned correctly, you can now export the file.
 
