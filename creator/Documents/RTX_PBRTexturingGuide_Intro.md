@@ -163,18 +163,18 @@ With this mirror set up, the Render Dragon engine will be able to ray trace with
 
 :::row:::
     :::column:::
-        **Main Color Texture**
+        **Main Color Texture: iron_block.png**
         :::image type="content" source="./Media/RTX/Texture/iron_block.png" alt-text="iron block default Minecraft texture":::
     :::column-end:::
     :::column:::
-        **PBR Texture**
+        **PBR Texture: iron_block_mer.png**
         :::image type="content" source="./Media/RTX/Texture/iron_block_mer.png" alt-text="iron block mer texture for mirror effect":::
     :::column-end:::
 :::row-end:::
 
+1. Click and download the `iron_block.png` file.
 1. Click and download the `iron_block_mer.png` file.
     1. You can right-click on the image and select **Save As...** to download.
-1. Click and download the `iron_block.png` file.
 1. Copy and paste both .png files into the `textures/blocks` folder.
 
 ## Running the Texture Pack
