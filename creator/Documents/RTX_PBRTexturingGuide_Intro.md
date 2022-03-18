@@ -172,10 +172,9 @@ With this mirror set up, the Render Dragon engine will be able to ray trace with
     :::column-end:::
 :::row-end:::
 
-1. Click and download the `iron_block.png` file.
-1. Click and download the `iron_block_mer.png` file.
-    1. You can right-click on the image and select **Save As...** to download.
-1. Copy and paste both .png files into the `textures/blocks` folder.
+1. Download the `iron_block.png` file and the `iron_block_mer.png` file.
+i. You can right-click on the image and select **Save As...** to download.
+3. Copy and paste both .png files into the `textures/blocks` folder.
 
 ## Running the Texture Pack
 
