@@ -103,8 +103,8 @@ A Height map is a grayscale texture that controls depth. Height maps act as an a
 - A pixel that is set to black is considered a value of `0` and will cause the pixel to extrude inward.
 - A pixel that is set to white is considered a value of `1` and will cause the pixel to extrude outward.
 - A pixel that is set to `0.5` is considered the default height and will not extrude in or out.
-- 
-- :::image type="content" source="./Media/RTX/height_example.png" alt-text="concrete white block that has ridges in a square pattern":::
+
+:::image type="content" source="./Media/RTX/height_example.png" alt-text="concrete white block that has ridges in a square pattern":::
 
 The above image uses the following height map: 
 
@@ -122,7 +122,7 @@ For the Texture Set to work properly, you will need to define a JSON file to loa
 > To learn more about texture sets, please visit [Texture Set Documentation - Introduction to Texture Sets](../Reference/Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md).
 
 1. In your behavior pack, navigate to the `textures/blocks` folder.
-1. Create a new .JSON file and name it `iron_block.texture_set.json.
+1. Create a new .JSON file and name it `iron_block.texture_set.json`.
 1. Double-click on `iron_block.texture_set.json` to edit the contents.
 1. Copy the following example.
 
@@ -143,12 +143,30 @@ With the JSON file set up, you can now configure the textures for the `color` va
 
 ### Add the Raytraced Capability
 
-The `manifest.json` file for the pack requires the value `"raytraced"` to be added in the `capabilities` section.
+The `manifest.json` file for the pack requires the value `"raytraced"` to be added in a `capabilities` section below your existing `header` and `modules`.
 
 ```json
+{
+    "format_version": 1,
+    "header": {
+        "name": "RTX Sample Resources",
+        "description": "",
+        "uuid": "58d4560c-106d-4b0c-9847-eee47417fb05",
+        "min_engine_version": [1, 12, 0],
+        "version": [1, 0, 0]
+    },
+    "modules": [
+        {
+            "description": "",
+            "type": "resources",
+            "uuid": "2d3df25b-856a-406d-9a57-c87b9a4d7af8",
+            "version": [0, 0, 1]
+        }
+    ],
     "capabilities" : [
         "raytraced"
     ]
+}
 ```
 
 ### Add the Textures

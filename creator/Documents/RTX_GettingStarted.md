@@ -49,7 +49,7 @@ It’s recommended that you have the following when working with ray tracing in 
 
 ## Ray Tracing Examples in Minecraft
 
-Ray tracing makes Minecraft look more like the real world. Rays of light shine into the world and block textures bounce, absorb, and scatter light rays.  The result is a highly realistic depiction of the way light behaves, creating dramatic effects.
+Ray tracing makes Minecraft look more like the real world. Rays of light shine from different sources onto block textures that can reflect, absorb, and scatter light in different ways. The result is a highly realistic depiction of the way light behaves, creating dramatic effects.
 
 |Features  |Example  |
 |:---------|:---------|
@@ -61,11 +61,7 @@ Ray tracing makes Minecraft look more like the real world. Rays of light shine i
 
 ## Explore a Ray Tracing World in Minecraft
 
-If you meet the minimum requirements and you are on the Windows version of the game, you can check out a ray tracing world now.
-
-Many free worlds featuring PBR and ray tracing are available in the Minecraft Marketplace, with more to come.
-
-You can find all the content supporting ray tracing in the Marketplace by selecting the blue icon.
+If you meet the minimum requirements and you are on the Windows version of the game, you can check out a ray tracing world now. Many free worlds featuring PBR and ray tracing are available in the Minecraft Marketplace, with more to come. You can find all the content supporting ray tracing in the Marketplace by selecting the blue icon.
 
 :::image type="content" source="././Media/RTX/RT_blobid14.png" alt-text="The Minecraft marketplace where an RTX world is enabled":::
 
