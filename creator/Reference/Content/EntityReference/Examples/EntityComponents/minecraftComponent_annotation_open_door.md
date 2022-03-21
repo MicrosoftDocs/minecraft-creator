@@ -23,7 +23,10 @@ ms.prod: gaming
 
 ### villager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager.json" range="367-368":::
+```json
+"minecraft:annotation.open_door": {
+}
+```
 
 ## Vanilla entities using `minecraft:annotation.open_door`
 

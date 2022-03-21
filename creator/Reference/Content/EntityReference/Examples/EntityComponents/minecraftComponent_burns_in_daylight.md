@@ -12,7 +12,7 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:burns_in_daylight":{
+"minecraft:burns_in_daylight": {
 }
 ```
 
@@ -20,7 +20,10 @@ ms.prod: gaming
 
 ### phantom
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/phantom.json" range="70-71":::
+```json
+"minecraft:burns_in_daylight": {
+}
+```
 
 ## Vanilla entities using `minecraft:burns_in_daylight`
 

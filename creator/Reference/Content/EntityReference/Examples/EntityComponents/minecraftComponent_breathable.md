@@ -43,11 +43,26 @@ ms.prod: gaming
 
 ### dolphin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/dolphin.json" range="191-197":::
+```json
+"minecraft:breathable": {
+    "total_supply": 240,
+    "suffocate_time": 0,
+    "breathes_air": true,
+    "breathes_water": false,
+    "generates_bubbles": false
+}
+```
 
 ### zombie
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="161-166":::
+```json
+"minecraft:breathable": {
+    "total_supply": 15,
+    "suffocate_time": 0,
+    "breathes_air": true,
+    "breathes_water": true
+}
+```
 
 ## Vanilla entities using `minecraft:breathable`
 

@@ -30,9 +30,14 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### zombie_villager
+### vindicator
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie_villager.json" range="219-220":::
+```json
+"minecraft:annotation.break_door": {
+    "break_time": 30,
+    "min_difficulty": "normal"
+}
+```
 
 ## Vanilla entities using `minecraft:annotation.break_door`
 

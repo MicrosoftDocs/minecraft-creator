@@ -33,7 +33,14 @@ ms.prod: gaming
 
 ### pillager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/pillager.json" range="207-213":::
+```json
+"minecraft:behavior.follow_target_captain": {
+    "priority": 5,
+    "speed_multiplier": 0.8,
+    "within_radius": 64,
+    "follow_distance": 5
+}
+```
 
 ## Vanilla entities using `minecraft:behavior.follow_target_captain`
 
