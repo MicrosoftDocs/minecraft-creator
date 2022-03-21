@@ -174,7 +174,7 @@ Type: *string*
 ### **clusterCount**
 `static read-only clusterCount = "cluster_count";`
 
-Integer property that describes how many sea pickles are in a cluster. Valid values are between 0 and 3 inclusive.
+Integer property that describes how many extra sea pickles are in a cluster. Valid values are between 0 and 3 inclusive.
 
 Type: *string*
 
@@ -624,6 +624,8 @@ Type: *string*
 ### **prismarineBlockType**
 `static read-only prismarineBlockType = "prismarine_block_type";`
 
+String property that represents the prismarine type of a block. Valid values are 'default', 'dark', and 'bricks'.
+
 Type: *string*
 
 
@@ -690,7 +692,7 @@ Type: *string*
 ### **saplingType**
 `static read-only saplingType = "sapling_type";`
 
-String property that determines the type of the sapling block. Valid values are 'evergreen', 'birch', 'jungle', 'acacia', and 'roofed_oak'.
+String property that determines the type of the sapling block. Valid values are 'oak', 'spruce', 'birch', 'jungle', 'acacia', and 'dark_oak'.
 
 Type: *string*
 
