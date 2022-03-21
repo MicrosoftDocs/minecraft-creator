@@ -1,5 +1,5 @@
 ---
-author: v-josjones
+author: mammerla
 ms.author: v-josjones
 title: Entity Documentation - minecraft:breathable
 ms.prod: gaming
