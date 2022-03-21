@@ -33,13 +33,16 @@ ms.prod: gaming
 ```json
 "minecraft:equippable":{
     "slots": [
-        {
-            "accepted_items": ["iron_sword"],
-            "interact_text": "Bring me my sword!" ,
-            "item": "iron_sword" ,
-            "on_equip": "minecraft:celebrate",
-            "on_unequip": "minecraft:become_sad",
-            "slot": 0
+        {        
+            "slot": 0,
+            "item": "saddle",
+            "accepted_items": [ "saddle" ],
+            "on_equip": {
+                "event": "minecraft:horse_saddled"
+            },
+            "on_unequip": {
+                "event": "minecraft:horse_unsaddled"
+            }
         }
     ]
 }

@@ -20,7 +20,10 @@ ms.prod: gaming
 
 ```json
 "minecraft:attack_cooldown":{
-    "attack_cooldown_complete_event": "minecraft:cooldown",
+    "attack_cooldown_complete_event": {
+        "event": "attack_cooldown_complete_event",
+        "target": "self"
+    },
     "attack_cooldown_time": [0.1, 1.0]
 }
 ```

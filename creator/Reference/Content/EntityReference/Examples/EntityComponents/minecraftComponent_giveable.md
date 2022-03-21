@@ -20,10 +20,18 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:giveable":{
-    "cooldown": 0.0,
-    "items": ,
-    "on_give": "minecraft:give_thanks"
+"minecraft:giveable": {
+    "triggers": {
+        "cooldown": 3.0,
+        "items": [
+        "bamboo",
+        "cake"
+        ],
+        "on_give": {
+        "event": "minecraft:on_calm",
+        "target": "self"
+        }
+    }
 }
 ```
 

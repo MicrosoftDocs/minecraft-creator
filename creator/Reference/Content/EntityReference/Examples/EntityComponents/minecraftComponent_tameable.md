@@ -19,10 +19,13 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:tameable":{
-    "probability": 1,
-    "tame_event": "minecraft:lets_ride",
-    "tame_items": "carrot",
+"minecraft:tameable": {
+    "probability": 0.33,
+    "tame_items": "bone",
+    "tame_event": {
+    "event": "minecraft:on_tame",
+    "target": "self"
+    }
 }
 ```
 

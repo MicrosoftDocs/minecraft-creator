@@ -23,13 +23,18 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:leashable":{
-    "can_be_stolen": false,
-    "hard_distance": 6,
-    "max_distance": 10,
-    "on_leash": "minecraft:leashed",
-    "on_unleash": "minecraft:be_free" ,
-    "soft_distance": 4
+"minecraft:leashable": {
+    "soft_distance": 4.0,
+    "hard_distance": 6.0,
+    "max_distance": 10.0,
+    "on_leash": {
+    "event": "minecraft:on_leash",
+    "target": "self"
+    },
+    "on_unleash": {
+    "event": "minecraft:on_unleash",
+    "target": "self"
+    }
 }
 ```
 

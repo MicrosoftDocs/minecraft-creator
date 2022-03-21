@@ -41,15 +41,26 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:tamemount":{
-    "attempt_temper_mod": 5,
-    "autoRejectItems": "fish",
-    "feed_items": "carrot" ,
-    "feed_text": "I love carrots!",
-    "max_temper": 100,
+"minecraft:tamemount": {
     "min_temper": 0,
-    "ride_text": "Thank you for the carrots! Let's go!",
-    "tame_event": "minecraft:celebrate",
+    "max_temper": 100,
+    "feed_text": "action.interact.feed",
+    "ride_text": "action.interact.mount",
+    "feed_items": [
+        {
+            "item": "wheat",
+            "temper_mod": 3
+        }
+    ],
+    "auto_reject_items": [
+        {
+            "item": "horsearmorleather"
+        }
+    ],
+    "tame_event": {
+        "event": "minecraft:on_tame",
+        "target": "self"
+    }
 }
 ```
 
