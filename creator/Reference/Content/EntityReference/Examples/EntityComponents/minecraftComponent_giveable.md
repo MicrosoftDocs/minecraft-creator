@@ -24,12 +24,12 @@ ms.prod: gaming
     "triggers": {
         "cooldown": 3.0,
         "items": [
-        "bamboo",
-        "cake"
+            "bamboo",
+            "cake"
         ],
         "on_give": {
-        "event": "minecraft:on_calm",
-        "target": "self"
+            "event": "minecraft:on_calm",
+            "target": "self"
         }
     }
 }

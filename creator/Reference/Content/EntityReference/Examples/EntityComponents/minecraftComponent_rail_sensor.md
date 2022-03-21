@@ -28,8 +28,12 @@ ms.prod: gaming
     "check_block_types": false,
     "eject_on_activate": true,
     "eject_on_deactivate": false,
-    "on_activate": ,
-    "on_deactivate": ,
+    "on_activate": {
+        "event": "minecraft:command_block_activate"
+    }
+    "on_deactivate": {
+        "event": "minecraft:hopper_activate"
+    },
     "tick_command_block_on_activate": true,
     "tick_command_block_on_deactivate": false
 }

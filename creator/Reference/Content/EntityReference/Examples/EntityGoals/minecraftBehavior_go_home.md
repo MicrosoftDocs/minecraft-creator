@@ -26,7 +26,7 @@ ms.prod: gaming
     "goal_radius": 0.5,
     "interval": 60,
     "speed_multiplier": 1.0,
-    "on home": {
+    "on_home": {
         "event": "minecraft:sleep",
         "target": "self"
     }
