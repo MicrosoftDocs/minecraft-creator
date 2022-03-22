@@ -27,6 +27,7 @@ Type: *number*
 
 ## Methods
 - [constructor](#constructor)
+- [[Symbol.iterator]](#[symbol.iterator])
 - [addEnchantment](#addenchantment)
 - [canAddEnchantment](#canaddenchantment)
 - [getEnchantment](#getenchantment)
@@ -43,6 +44,15 @@ new EnchantmentList(enchantmentSlot: number)
 - **enchantmentSlot**: *number*
 
 #### **Returns** [*EnchantmentList*](EnchantmentList.md)
+
+
+### **[Symbol.iterator]**
+`
+[Symbol.iterator](): Iterator<Enchantment>
+`
+
+
+#### **Returns** Iterator&lt;[*Enchantment*](Enchantment.md)&gt;
 
 
 ### **addEnchantment**

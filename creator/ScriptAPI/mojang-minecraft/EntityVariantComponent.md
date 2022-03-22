@@ -25,7 +25,7 @@ Type: *string*
 
 
 ### **value**
-`value: number;`
+`read-only value: number;`
 
 The identifier of the variant. By convention, 0 is the identifier of the base entity.
 

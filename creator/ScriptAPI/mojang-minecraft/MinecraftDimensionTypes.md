@@ -16,7 +16,7 @@ A collection of default Minecraft dimension types.
 ### **nether**
 `static read-only nether = "minecraft:nether";`
 
-The Nether is a collection of biomes separate from the Overworld, including Soul Sand Valleys and Crimson forests. Nether fortresses contain exclusive resources. Mobs such as blaze, hoglins, piglins, and ghasts congregate here.
+The Nether is a collection of biomes separate from the Overworld, including Soul Sand Valleys and Crimson forests. Nether fortresses contain exclusive resources. Mobs such as Blaze, Hoglins, Piglins, and Ghasts congregate here.
 
 Type: *string*
 
@@ -24,7 +24,7 @@ Type: *string*
 ### **overworld**
 `static read-only overworld = "minecraft:overworld";`
 
-The overworld is a collection of biomes, including forests, plains, jungles, mountains, deserts, taiga, and more. This is the default starter dimension for Minecraft. Mobs such as axolotl, cows, creepers, and zombies congregate here.
+The overworld is a collection of biomes, including forests, plains, jungles, mountains, deserts, taiga, and more. This is the default starter dimension for Minecraft. Mobs such as Axolotl, Cows, Creepers, and Zombies congregate here.
 
 Type: *string*
 

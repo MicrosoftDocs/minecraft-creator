@@ -24,14 +24,6 @@ Block impacted by this explosion event.
 Type: [*Block*](Block.md)
 
 
-### **destroyedBlockPermutation**
-`read-only destroyedBlockPermutation: BlockPermutation;`
-
-Contains core information on the state of the block before it was destroyed in an explosion.
-
-Type: [*BlockPermutation*](BlockPermutation.md)
-
-
 ### **dimension**
 `read-only dimension: Dimension;`
 

@@ -3,17 +3,15 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: mojang-minecraft.PlayerIterator Class
-description: Contents of the mojang-minecraft.PlayerIterator class.
+title: mojang-minecraft.EntityTypeIterator Class
+description: Contents of the mojang-minecraft.EntityTypeIterator class.
 ---
-# PlayerIterator Class
+# EntityTypeIterator Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
 ## Implements
-- Iterator&lt;[*Player*](Player.md)&gt;
-
-This type is usable for iterating over a set of players. This means it can be used in statements like for...of statements, Array.from(iterator), and more.
+- Iterator&lt;[*EntityType*](EntityType.md)&gt;
 
 ## Methods
 - [[Symbol.iterator]](#[symbol.iterator])
@@ -21,20 +19,19 @@ This type is usable for iterating over a set of players. This means it can be us
   
 ### **[Symbol.iterator]**
 `
-[Symbol.iterator](): Iterator<Player>
+[Symbol.iterator](): Iterator<EntityType>
 `
 
 
-#### **Returns** Iterator&lt;[*Player*](Player.md)&gt;
+#### **Returns** Iterator&lt;[*EntityType*](EntityType.md)&gt;
 
 
 ### **next**
 `
-next(): IteratorResult<Player>
+next(): IteratorResult<EntityType>
 `
 
-Retrieves the next item in this iteration. The resulting IteratorResult contains .done and .value properties which can be used to see the next Player in the iteration.
 
-#### **Returns** IteratorResult&lt;[*Player*](Player.md)&gt;
+#### **Returns** IteratorResult&lt;[*EntityType*](EntityType.md)&gt;
 
 
