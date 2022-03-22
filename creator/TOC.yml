@@ -62,6 +62,14 @@
               href: Documents/LootAndTradeTableFunctions.md
             - name: Loot Spawn and Kill
               href: Documents/LootSpawnAndKill.md
+        - name: Physically Based Rendering
+          items:
+            - name: Ray Tracing - Getting Started
+              href: Documents/RTX_GettingStarted.md
+            - name: Physically Based Rendering Intro
+              href: Documents/RTX_PBRTexturingGuide_Intro.md
+            - name: Physically Based Rendering Tutorial
+              href: Documents/RTX_PBRTexturingGuide_Workflow.md
     - name: Tools and Frameworks
       items:
         - name: GameTest Framework
