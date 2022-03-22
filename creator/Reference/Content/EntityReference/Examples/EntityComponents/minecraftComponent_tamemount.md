@@ -20,7 +20,7 @@ ms.prod: gaming
 | max_temper| 100| Integer| The maximum value for the entity's random starting temper. |
 | min_temper| 0| Integer| The minimum value for the entity's random starting temper. |
 | ride_text| *not set*| String| The text that shows in the riding interact button. |
-| tame_event| *not set*| String| Event that triggers when the entity becomes tamed. |
+| tame_event| *not set*| JSON Object | Event that triggers when the entity becomes tamed. |
 
 ### autoRejectItems
 

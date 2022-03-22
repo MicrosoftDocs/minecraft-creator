@@ -16,8 +16,8 @@ ms.prod: gaming
 | can_be_stolen| False| Boolean| If true, players can leash this entity even if it is already leashed to another mob. |
 | hard_distance| 6| Decimal| Distance in blocks at which the leash stiffens, restricting movement. |
 | max_distance| 10| Decimal| Distance in blocks at which the leash breaks. |
-| on_leash| *not set*| String| Event to call when this entity is leashed. |
-| on_unleash| *not set*| String| Event to call when this entity is unleashed. |
+| on_leash| *not set*| JSON Object | Event to call when this entity is leashed. |
+| on_unleash| *not set*| JSON Object | Event to call when this entity is unleashed. |
 | soft_distance| 4| Decimal| Distance in blocks at which the 'spring' effect starts acting to keep this entity close to the entity that leashed it. |
 
 ## Example
@@ -28,12 +28,12 @@ ms.prod: gaming
     "hard_distance": 6.0,
     "max_distance": 10.0,
     "on_leash": {
-    "event": "minecraft:on_leash",
-    "target": "self"
+        "event": "minecraft:on_leash",
+        "target": "self"
     },
     "on_unleash": {
-    "event": "minecraft:on_unleash",
-    "target": "self"
+        "event": "minecraft:on_unleash",
+        "target": "self"
     }
 }
 ```

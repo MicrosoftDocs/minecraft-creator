@@ -13,7 +13,7 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | probability| 1| Decimal| The chance of taming the entity with each item use between 0.0 and 1.0, where 1.0 is 100% |
-| tame_event| *not set*| String| Event to run when this entity becomes tamed |
+| tame_event| *not set*| JSON Object | Event to run when this entity becomes tamed |
 | tame_items| *not set*| List| The list of items that can be used to tame this entity |
 
 ## Example
@@ -23,8 +23,8 @@ ms.prod: gaming
     "probability": 0.33,
     "tame_items": "bone",
     "tame_event": {
-    "event": "minecraft:on_tame",
-    "target": "self"
+        "event": "minecraft:on_tame",
+        "target": "self"
     }
 }
 ```
