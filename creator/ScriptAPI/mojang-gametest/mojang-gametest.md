@@ -10,6 +10,17 @@ description: Contents of the mojang-gametest module
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
+GameTest provides scriptable APIs for scaffolding and testing content experiences in Minecraft.
+
+## Manifest Details
+```json
+{
+    // mojang-gametest
+    "uuid": "6f4b6893-1bb6-42fd-b458-7fa3d0c89616",
+    "version": [ 0, 1, 0 ]
+}
+```
+
 ## Enumerations
 - [FluidType](FluidType.md)
 
@@ -46,7 +57,7 @@ Registers a new GameTest function. This GameTest will become available in Minecr
 ##### *example1.js*
 ```javascript
 GameTest.register("ExampleTests", "alwaysFail", (test) => {
-test.fail("This test, runnable via '/gametest run ExampleTests:alwaysFail', will always fail");
+  test.fail("This test, runnable via '/gametest run ExampleTests:alwaysFail', will always fail");
 });
 ```
 ### **registerAsync**

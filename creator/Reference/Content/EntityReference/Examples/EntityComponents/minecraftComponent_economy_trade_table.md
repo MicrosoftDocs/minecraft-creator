@@ -40,7 +40,7 @@ ms.prod: gaming
     "new_screen": false,
     "persist_trades": false,
     "show_trade_screen": true,
-    "table": ,
+    "table": "trading/economy_trades/farmer_trades.json",
     "use_legacy_price_formula": false
 }
 ```

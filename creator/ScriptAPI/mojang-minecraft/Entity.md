@@ -118,7 +118,7 @@ Type: [*Vector*](Vector.md)
   
 ### **addEffect**
 `
-addEffect(effectType: EffectType, duration: number, amplifier: number): void
+addEffect(effectType: EffectType, duration: number, amplifier?: number, showParticles?: boolean): void
 `
 
 Adds an effect, like poison, to the entity.
@@ -129,9 +129,10 @@ Adds an effect, like poison, to the entity.
 - **duration**: *number*
   
   Amount of time, in seconds, for the effect to apply.
-- **amplifier**: *number*
+- **amplifier**?: *number* = `0`
   
   Optional amplification of the effect to apply.
+- **showParticles**?: *boolean* = `true`
 
 
 > [!WARNING]

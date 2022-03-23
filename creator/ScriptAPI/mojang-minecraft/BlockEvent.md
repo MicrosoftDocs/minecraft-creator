@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.BlockEvent class.
 ## Classes that extend BlockEvent
 - [*BeforePistonActivateEvent*](BeforePistonActivateEvent.md)
 - [*PistonActivateEvent*](PistonActivateEvent.md)
+- [*LeverActionEvent*](LeverActionEvent.md)
 - [*BlockExplodeEvent*](BlockExplodeEvent.md)
 - [*BlockPlaceEvent*](BlockPlaceEvent.md)
 - [*BlockBreakEvent*](BlockBreakEvent.md)

@@ -19,7 +19,7 @@ Skin Id value. Can be used to differentiate skins, such as base skins for villag
 ### **id**
 `read-only id: string;`
 
-Identifier of this component. Should always be minecraft:variant.
+Identifier of this component. Should always be minecraft:skin_id.
 
 Type: *string*
 
