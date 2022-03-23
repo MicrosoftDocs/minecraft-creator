@@ -67,7 +67,7 @@ Below is a list of all the available AI Goals within Minecraft:Bedrock Edition f
 |[minecraft:behavior.move_to_village](EntityGoals/minecraftBehavior_move_to_village.md)|`minecraft:behavior.move_to_village` allows an entity to travel to a random x,y,z coordinate in a village. |
 |[minecraft:behavior.move_to_water](EntityGoals/minecraftBehavior_move_to_water.md)|`minecraft:behavior.move_to_water` allows an entity to move to water when on land. |
 |[minecraft:behavior.move_towards_target](EntityGoals/minecraftBehavior_move_towards_target.md)|`minecraft:behavior.move_towards_target` allows an entity to move towards a target. |
-|[minecraft:behavior.nap](EntityGoals/minecraftBehavior_nap.md)|`minecraft:behavior.nap` allows an entity to move to land when in a non-land medium such as lava or water. |
+|[minecraft:behavior.nap](EntityGoals/minecraftBehavior_nap.md)|`minecraft:behavior.nap` allows mobs to occasionally stop and take a nap under certain conditions. |
 |[minecraft:behavior.nearest_attackable_target](EntityGoals/minecraftBehavior_nearest_attackable_target.md)|`minecraft:behavior.nearest_attackable_target` allows an entity to attack the closest target within a given subset of specific target types. |
 |[minecraft:behavior.nearest_prioritized_attackable_target](EntityGoals/minecraftBehavior_nearest_prioritized_attackable_target.md)|`minecraft:behavior.nearest_prioritized_attackable_target` allows an entity to target and prioritize the nearest valid target. |
 |[minecraft:behavior.ocelot_sit_on_block](EntityGoals/minecraftBehavior_ocelot_sit_on_block.md)|`minecraft:behavior.ocelot_sit_on_block` allows an entity to sit in place, similar to the ocelot entity animation pose. |
