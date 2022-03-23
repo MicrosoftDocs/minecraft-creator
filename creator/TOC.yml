@@ -64,12 +64,12 @@
               href: Documents/LootSpawnAndKill.md
         - name: Physically Based Rendering
           items:
-            - name: Ray Tracing - Getting Started
-              href: Documents/RTX_GettingStarted.md
-            - name: Physically Based Rendering Intro
-              href: Documents/RTX_PBRTexturingGuide_Intro.md
+            - name: Getting Started with Ray Tracing
+              href: Documents/RTXGettingStarted.md
+            - name: Introduction to Physically Based Rendering
+              href: Documents/RTXPBRIntro.md
             - name: Physically Based Rendering Tutorial
-              href: Documents/RTX_PBRTexturingGuide_Workflow.md
+              href: Documents/RTXPBRTutorial.md
     - name: Tools and Frameworks
       items:
         - name: GameTest Framework

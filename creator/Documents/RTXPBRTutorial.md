@@ -1,14 +1,14 @@
 ---
 author: docsbryce
 ms.author: v-bbortree
-title: Physically Based Texturing Guide - Workflow
+title: Physically Based Rendering Tutorial
 ms.prod: gaming
-description: A guide to creating textures using RTX Physically-Based Rendering with Adobe Photoshop
+description: A guide to creating textures using RTX Physically Based Rendering with Adobe Photoshop
 ---
 
-# Physically-Based Texturing Guide - Workflow
+# Physically Based Rendering Tutorial
 
-Physically-Based Rendering (PBR) is a type of render solution that simulates how materials react to realistic light behavior. For example, certain metallic properties will cast reflections or change the way light bends and refracts through different types of glass.
+Physically Based Rendering (PBR) is a type of render solution that simulates how materials react to realistic light behavior. For example, certain metallic properties will cast reflections or change the way light bends and refracts through different types of glass.
 
 In this guide, you will learn some of the basic workflows when designing PBR textures in Minecraft: Bedrock Edition and create a custom texture set for the emerald ore block.
 
@@ -20,15 +20,15 @@ By the end of this guide, you will learn:
 
 > [!div class="checklist"]
 >
-> How to create a custom Texture Set using Adobe Photoshop.
-> How to utilize color channels to assign multiple maps in a single file.
+> - How to create a custom Texture Set using Adobe Photoshop.
+> - How to utilize color channels to assign multiple maps in a single file.
 
 ## Requirements
 
 You will need to complete the following tutorials:
 
 - [Introduction to Resource Packs](./ResourcePack.md)
-- [Physically-Based Texturing Guide](./RTX_PBRTexturingGuide_Intro.md)
+- [Introduction to Physically Based Rendering](./RTXPBRIntro.md)
 
 While textures will be provided, you will need to have digital painting software to create your textures. This tutorial will be using Adobe Photoshop.
 
@@ -37,7 +37,7 @@ While textures will be provided, you will need to have digital painting software
 First, you will need to create a Texture Set .JSON file that will load your new textures into the game.
 
 > [!NOTE]
-> This tutorial is a continuation of the [Physically-Based Texturing Guide](RTX_PBRTexturingGuide_Intro.md) and will assume that all setup steps have been completed as mentioned in the previous guide.
+> This tutorial is a continuation of the [Introduction to Physically Based Rendering](RTXPBRIntro.md) and will assume that all setup steps have been completed as mentioned in the previous guide.
 
 1. In your behavior pack, navigate to the `textures/blocks` folder.
 1. Create a file called `emerald_ore.texture_set.json` and add the following code to it.
@@ -147,6 +147,8 @@ Or, you can download the file below.
 
 
 ## What's Next?
+
+### Fog in Resources
 
 Now that you have learned how to create your custom physically based rendering texture packs, you can take a look at how fog has been adjusted in the Render Dragon engine and customize the settings to your liking.
 

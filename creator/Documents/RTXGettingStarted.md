@@ -1,13 +1,13 @@
 ---
 author: docsbryce
 ms.author: v-bbortree
-title: Ray Tracing - Getting Started
+title: Getting Started with Ray Tracing
 ms.prod: gaming
 ms.topic: tutorial
-description: "An introduction to the Ray Tracing features in Minecraft: Bedrock Edition"
+description: "An introduction to the Ray Tracing features in Minecraft: Bedrock Edition."
 ---
 
-# Ray Tracing - Getting Started
+# Getting Started with Ray Tracing
 
 Minecraft: Bedrock Edition has cutting-edge path-traced ray tracing, enabling gamers and world builders to craft incredible new sights and immersive environments. Physically-based textures have been introduced for creating more complex and realistic (or fabulously unrealistic!) block textures. To further enhance the visual experience of RTX, creators can also define their own settings for fog via resource packs.
 
@@ -44,7 +44,7 @@ It’s recommended that you have the following when working with ray tracing in 
 - Minecraft: version 1.16.200 or higher
 
 > [!IMPORTANT]
-> Virtual reality headsets and Mixed Reality (MR) headsets are not supported.
+> Virtual Reality (VR) headsets and Mixed Reality (MR) headsets are not supported.
 
 
 ## Ray Tracing Examples in Minecraft
@@ -69,23 +69,23 @@ If you meet the minimum requirements and you are on the Windows version of the g
 
 Next, we will create  PBR textures as a resource pack and you can enable it in the downloaded ray tracing world.
 
-## Overview
+## What's Next?
 
-### Part 1 - Physically Based Texturing Guide - Introduction
+### Introduction to Physically Based Rendering
 
 You will learn about each new texture map Creators can use to build and design photorealistic materials and lighting effects, and you will learn how to use texture maps to create a mirror in-game.
 
 > [!div class="nextstepaction"]
-> [Physically Based Texturing Guide - Introduction](./RTX_PBRTexturingGuide_Intro.md)
+> [Introduction to Physically Based Rendering](./RTXPBRIntro.md)
 
-### Part 2 - Physically Based Texturing Guide - Workflow
+### Physically Based Rendering Tutorial
 
 In this part, you will learn how to create physically-based textures by creating a series of texture maps for your own texture set for use on the Redstone block.
 
 > [!div class="nextstepaction"]
-> [Physically Based Texturing Guide - Workflow](./RTX_PBRTexturingGuide_Workflow.md)
+> [Physically Based Rendering Tutorial](./RTXPBRTutorial.md)
 
-### Part 3 - Fog in Resources
+### Fog in Resources
 
 Along with ray tracing, fog in Minecraft has been updated to use a similar JSON structure that allows you to create and control its in-game appearance.
 
