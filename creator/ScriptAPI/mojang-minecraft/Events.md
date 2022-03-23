@@ -133,6 +133,14 @@ This event fires when an entity hits (makes a melee attack) and potentially impa
 Type: [*EntityHitEventSignal*](EntityHitEventSignal.md)
 
 
+### **entityHurt**
+`read-only entityHurt: EntityHurtEventSignal;`
+
+This event fires when an entity is hurt (takes damage).
+
+Type: [*EntityHurtEventSignal*](EntityHurtEventSignal.md)
+
+
 ### **explosion**
 `read-only explosion: ExplosionEventSignal;`
 
@@ -163,6 +171,14 @@ Type: [*ItemUseEventSignal*](ItemUseEventSignal.md)
 This event fires when any particular item is used on a block by an entity or player.
 
 Type: [*ItemUseOnEventSignal*](ItemUseOnEventSignal.md)
+
+
+### **leverActivate**
+`read-only leverActivate: LeverActivateEventSignal;`
+
+This event fires when a lever activates or is deactivated.
+
+Type: [*LeverActivateEventSignal*](LeverActivateEventSignal.md)
 
 
 ### **pistonActivate**

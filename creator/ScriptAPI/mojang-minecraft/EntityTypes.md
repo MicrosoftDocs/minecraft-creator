@@ -3,32 +3,34 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: mojang-minecraft.EntitySkinIdComponent Class
-description: Contents of the mojang-minecraft.EntitySkinIdComponent class.
+title: mojang-minecraft.EntityTypes Class
+description: Contents of the mojang-minecraft.EntityTypes class.
 ---
-# EntitySkinIdComponent Class
+# EntityTypes Class
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+## Methods
+- [get](#get)
+- [getAll](#getall)
+  
+### **get**
+`
+get(identifier: string): EntityType
+`
 
-Skin Id value. Can be used to differentiate skins, such as base skins for villagers.
+#### **Parameters**
+- **identifier**: *string*
 
-## Properties
-### **id**
-`read-only id: string;`
-
-Identifier of this component. Should always be minecraft:skin_id.
-
-Type: *string*
+#### **Returns** [*EntityType*](EntityType.md)
 
 
-### **value**
-`value: number;`
+### **getAll**
+`
+getAll(): EntityTypeIterator
+`
 
-The identifier of the skin. By convention, 0 is the identifier of the base skin.
 
-Type: *number*
+#### **Returns** [*EntityTypeIterator*](EntityTypeIterator.md)
 
 
