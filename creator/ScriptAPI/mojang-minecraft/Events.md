@@ -14,7 +14,7 @@ Contains a set of events that are available across the scope of the World.
 
 ## Properties
 ### **beforeChat**
-`beforeChat: BeforeChatEventSignal;`
+`read-only beforeChat: BeforeChatEventSignal;`
 
 This event fires before a chat message is broadcast or delivered. The event can be canceled, and the message can also be updated.
 
@@ -22,13 +22,15 @@ Type: [*BeforeChatEventSignal*](BeforeChatEventSignal.md)
 
 
 ### **beforeDataDrivenEntityTriggerEvent**
-`beforeDataDrivenEntityTriggerEvent: BeforeDataDrivenEntityTriggerEvent;`
+`read-only beforeDataDrivenEntityTriggerEvent: BeforeDataDrivenEntityTriggerEventSignal;`
 
-Type: [*BeforeDataDrivenEntityTriggerEvent*](BeforeDataDrivenEntityTriggerEvent.md)
+This event is fired before the triggering of an entity event that updates the component definition state of an entity. Within this event, you can cancel or shape the impacted components and event triggers.
+
+Type: [*BeforeDataDrivenEntityTriggerEventSignal*](BeforeDataDrivenEntityTriggerEventSignal.md)
 
 
 ### **beforeExplosion**
-`beforeExplosion: BeforeExplosionEventSignal;`
+`read-only beforeExplosion: BeforeExplosionEventSignal;`
 
 This event is fired before an explosion occurs.
 
@@ -36,7 +38,7 @@ Type: [*BeforeExplosionEventSignal*](BeforeExplosionEventSignal.md)
 
 
 ### **beforeItemDefinitionEvent**
-`beforeItemDefinitionEvent: BeforeItemDefinitionEventSignal;`
+`read-only beforeItemDefinitionEvent: BeforeItemDefinitionEventSignal;`
 
 For custom items, this event is triggered before the set of defined components for the item change in response to a triggered event. Note that this event is only fired for custom data-driven items.
 
@@ -44,7 +46,7 @@ Type: [*BeforeItemDefinitionEventSignal*](BeforeItemDefinitionEventSignal.md)
 
 
 ### **beforeItemUse**
-`beforeItemUse: BeforeItemUseEventSignal;`
+`read-only beforeItemUse: BeforeItemUseEventSignal;`
 
 This event fires before an item is used by an entity or player.
 
@@ -52,7 +54,7 @@ Type: [*BeforeItemUseEventSignal*](BeforeItemUseEventSignal.md)
 
 
 ### **beforeItemUseOn**
-`beforeItemUseOn: BeforeItemUseOnEventSignal;`
+`read-only beforeItemUseOn: BeforeItemUseOnEventSignal;`
 
 This event fires before an item is used on a block by an entity or player.
 
@@ -60,7 +62,7 @@ Type: [*BeforeItemUseOnEventSignal*](BeforeItemUseOnEventSignal.md)
 
 
 ### **beforePistonActivate**
-`beforePistonActivate: BeforePistonActivateEventSignal;`
+`read-only beforePistonActivate: BeforePistonActivateEventSignal;`
 
 Fires before a piston is activated.
 
@@ -68,7 +70,7 @@ Type: [*BeforePistonActivateEventSignal*](BeforePistonActivateEventSignal.md)
 
 
 ### **blockBreak**
-`blockBreak: BlockBreakEventSignal;`
+`read-only blockBreak: BlockBreakEventSignal;`
 
 This event fires for a block that is broken by a player.
 
@@ -76,7 +78,7 @@ Type: [*BlockBreakEventSignal*](BlockBreakEventSignal.md)
 
 
 ### **blockExplode**
-`blockExplode: BlockExplodeEventSignal;`
+`read-only blockExplode: BlockExplodeEventSignal;`
 
 This event fires for each BlockLocation destroyed by an explosion. It is fired after the blocks have already been destroyed.
 
@@ -84,7 +86,7 @@ Type: [*BlockExplodeEventSignal*](BlockExplodeEventSignal.md)
 
 
 ### **blockPlace**
-`blockPlace: BlockPlaceEventSignal;`
+`read-only blockPlace: BlockPlaceEventSignal;`
 
 This event fires for a block that is placed by a player.
 
@@ -92,7 +94,7 @@ Type: [*BlockPlaceEventSignal*](BlockPlaceEventSignal.md)
 
 
 ### **chat**
-`chat: ChatEventSignal;`
+`read-only chat: ChatEventSignal;`
 
 This event is triggered after a chat message has been broadcast or sent to players.
 
@@ -100,13 +102,15 @@ Type: [*ChatEventSignal*](ChatEventSignal.md)
 
 
 ### **dataDrivenEntityTriggerEvent**
-`dataDrivenEntityTriggerEvent: DataDrivenEntityTriggerEvent;`
+`read-only dataDrivenEntityTriggerEvent: DataDrivenEntityTriggerEventSignal;`
 
-Type: [*DataDrivenEntityTriggerEvent*](DataDrivenEntityTriggerEvent.md)
+This event is fired when an entity event has been triggered that will update the component definition state of an entity.
+
+Type: [*DataDrivenEntityTriggerEventSignal*](DataDrivenEntityTriggerEventSignal.md)
 
 
 ### **effectAdd**
-`effectAdd: EffectAddEventSignal;`
+`read-only effectAdd: EffectAddEventSignal;`
 
 This event fires when an effect, like poisoning, is added to an entity.
 
@@ -114,15 +118,31 @@ Type: [*EffectAddEventSignal*](EffectAddEventSignal.md)
 
 
 ### **entityCreate**
-`entityCreate: EntityCreateEventSignal;`
+`read-only entityCreate: EntityCreateEventSignal;`
 
 This event fires when a new entity is created.
 
 Type: [*EntityCreateEventSignal*](EntityCreateEventSignal.md)
 
 
+### **entityHit**
+`read-only entityHit: EntityHitEventSignal;`
+
+This event fires when an entity hits (makes a melee attack) and potentially impacts another entity or block.
+
+Type: [*EntityHitEventSignal*](EntityHitEventSignal.md)
+
+
+### **entityHurt**
+`read-only entityHurt: EntityHurtEventSignal;`
+
+This event fires when an entity is hurt (takes damage).
+
+Type: [*EntityHurtEventSignal*](EntityHurtEventSignal.md)
+
+
 ### **explosion**
-`explosion: ExplosionEventSignal;`
+`read-only explosion: ExplosionEventSignal;`
 
 This event is fired after an explosion occurs.
 
@@ -130,7 +150,7 @@ Type: [*ExplosionEventSignal*](ExplosionEventSignal.md)
 
 
 ### **itemDefinitionEvent**
-`itemDefinitionEvent: ItemDefinitionEventSignal;`
+`read-only itemDefinitionEvent: ItemDefinitionEventSignal;`
 
 For custom items, this event is triggered when the fundamental set of defined components for the item change.  Note that this event is only fired for custom data-driven items.
 
@@ -138,7 +158,7 @@ Type: [*ItemDefinitionEventSignal*](ItemDefinitionEventSignal.md)
 
 
 ### **itemUse**
-`itemUse: ItemUseEventSignal;`
+`read-only itemUse: ItemUseEventSignal;`
 
 This event fires when any particular item is used by an entity or player.
 
@@ -146,15 +166,23 @@ Type: [*ItemUseEventSignal*](ItemUseEventSignal.md)
 
 
 ### **itemUseOn**
-`itemUseOn: ItemUseOnEventSignal;`
+`read-only itemUseOn: ItemUseOnEventSignal;`
 
 This event fires when any particular item is used on a block by an entity or player.
 
 Type: [*ItemUseOnEventSignal*](ItemUseOnEventSignal.md)
 
 
+### **leverActivate**
+`read-only leverActivate: LeverActivateEventSignal;`
+
+This event fires when a lever activates or is deactivated.
+
+Type: [*LeverActivateEventSignal*](LeverActivateEventSignal.md)
+
+
 ### **pistonActivate**
-`pistonActivate: PistonActivateEventSignal;`
+`read-only pistonActivate: PistonActivateEventSignal;`
 
 This event fires when a piston expands or retracts.
 
@@ -162,7 +190,7 @@ Type: [*PistonActivateEventSignal*](PistonActivateEventSignal.md)
 
 
 ### **playerJoin**
-`playerJoin: PlayerJoinEventSignal;`
+`read-only playerJoin: PlayerJoinEventSignal;`
 
 This event fires when a player joins a world.
 
@@ -170,7 +198,7 @@ Type: [*PlayerJoinEventSignal*](PlayerJoinEventSignal.md)
 
 
 ### **playerLeave**
-`playerLeave: PlayerLeaveEventSignal;`
+`read-only playerLeave: PlayerLeaveEventSignal;`
 
 This event fires when a player leaves a world.
 
@@ -178,7 +206,7 @@ Type: [*PlayerLeaveEventSignal*](PlayerLeaveEventSignal.md)
 
 
 ### **tick**
-`tick: TickEventSignal;`
+`read-only tick: TickEventSignal;`
 
 This event fires every tick - which is 20 times per second.
 
@@ -186,12 +214,10 @@ Type: [*TickEventSignal*](TickEventSignal.md)
 
 
 ### **weatherChange**
-`weatherChange: WeatherChangeEventSignal;`
+`read-only weatherChange: WeatherChangeEventSignal;`
 
 This event will be triggered when the weather changes within Minecraft.
 
 Type: [*WeatherChangeEventSignal*](WeatherChangeEventSignal.md)
-
-
 
 

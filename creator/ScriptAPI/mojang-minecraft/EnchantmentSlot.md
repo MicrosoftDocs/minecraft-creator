@@ -12,8 +12,6 @@ description: Contents of the mojang-minecraft.EnchantmentSlot class.
 
 This enum represents the item slot or type that an enchantment can be applied to.
 
-
-
 ## Constants
 ### **all**
 `static read-only all = -1;`

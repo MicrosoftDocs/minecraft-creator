@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.PistonActivateEventSignal class.
 
 Manages callbacks that are connected to piston activations.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -41,5 +40,4 @@ Removes a callback from being called when a piston expands or retracts.
 
 > [!WARNING]
 > This function can throw errors.
-
 

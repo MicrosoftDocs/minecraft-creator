@@ -65,4 +65,3 @@ Returns the maximum chance that this item would be damaged using the damageRange
 > [!WARNING]
 > This function can throw errors.
 
-

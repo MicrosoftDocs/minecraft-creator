@@ -58,4 +58,3 @@ const block = world.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3
 // Set the permutation
 block.setPermutation(bottomStoneSlab);
 ```
-

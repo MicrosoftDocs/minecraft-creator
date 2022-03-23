@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: docsbryce
+ms.author: v-bbortree
 title: Introduction To Behavior Packs
 ms.prod: gaming
 description: A tutorial that is an introduction to Behavior Packs and how to add a series of attacking behaviors to an in-game cow mob.
@@ -8,7 +8,7 @@ description: A tutorial that is an introduction to Behavior Packs and how to add
 
 # Introduction to Behavior Packs
 
-Before building your first Add-On for Minecraft: Bedrock Edition, you will need to create a pack to hold your custom content. There are two types of packs that a creator can make: resource packs and behavior packs. A **behavior pack** is a folder structure that contains files that drive entity behaviors, loot drops, spawn rules, items, recipes, and trade tables. This tutorial will go over how behavior packs are created and how to add a series of behaviors to an in-game cow entity to make it an aggressive enemy.
+Before building your first Add-On for Minecraft: Bedrock Edition, you will need to create a pack to hold your custom content. There are two types of packs that a creator can make: resource packs and behavior packs. A **behavior pack** is a folder structure that contains files that drive entity behaviors, loot drops, spawn rules, items, recipes, and trade tables. This tutorial covers how behavior packs are created and how to add  behaviors to an in-game cow entity to make it aggressive.
 
 :::image type="content" source="Media/BehaviorPack/Introduction-to-Behavior-Packs.jpg" alt-text="Image of a cow chasing Steve":::
 
@@ -46,7 +46,10 @@ In this section, you will create a folder called **My_BEHAVIOR_Pack**. Well, act
 
 ### Create the manifest file
 
-To load a behavior pack into Minecraft, you will need to create a manifest file. The behavior pack manifest file is similar to the one created for the resource pack, but it has an additional section.
+To load a behavior pack into Minecraft, you will need to create a manifest file. The behavior pack manifest file is similar to the one created for the resource pack, but it has two additional sections. 
+
+- **modules**: Defines the pack so that Minecraft knows how to apply it to the world. Behavior packs use the **data** type.
+- **dependencies** - Creates a link between behavior packs and resource packs to add custom textures and visuals to Minecraft.
 
 1. Create a new document in your My_BEHAVIOR_Pack folder and name it **manifest.json**.
     1. You will need to change the file extension from .txt to .json. If your Explorer window does not show file extensions, you can enable File Name Extensions under the View tab.
@@ -88,13 +91,15 @@ Similar to the resource pack manifest file, you will need to generate two differ
 
 ![Image of UUIDGenerator.net home screen with a custom UUID generated](Media/BehaviorPack/UUID.png)
 
-1. Copy and paste a UUID into the header section. The UUID will need to be pasted in the `"uuid"` field between the quotation ("") marks in order to be read correctly.
+1. Copy and paste a UUID into the header section. The UUID will need to be pasted in the `"uuid"` field between the quotation ("") marks to be read correctly.
 1. Refresh the webpage to generate a new UUID for use in the modules section.
 1. Copy and paste the new UUID into the modules section in the `"uuid"` field between the quotation marks.
 
 ### Create the dependency
 
-There is a third section in the behavior pack's manifest.json file called 'dependencies' that is used to create a link between a resource pack and a behavior pack. This link is created when the UUID located in the header section of the resource pack's manifest.json file is the same as the UUID in the dependencies section of the behavior pack's manifest.json file. You do not need to have a resource pack in order to use a behavior pack, and you do not need to have a behavior pack in order to use a resource pack. If you do have both, you can use this solution to link them together so that when you load a behavior pack into a world, it automatically loads and activates the linked resource pack.
+There is a third section in the behavior pack's manifest.json file called 'dependencies' that is used to create a link between a resource pack and a behavior pack. This link is created when the UUID located in the header section of the resource pack's manifest.json file is the same as the UUID in the dependencies section of the behavior pack's manifest.json file. You do not need to have a resource pack to use a behavior pack, and you do not need to have a behavior pack to use a resource pack. If you do have both, you can use this solution to link them together so that when you load a behavior pack into a world, it automatically loads and activates the linked resource pack.
+
+![Image of resource pack manifest.json header UUID duplicated in behavior pack dependencies section](Media/BehaviorPack/manifest_UUID_dependency.png)
 
 1. Open the **manifest.json** file located in the **My_RESOURCE_Pack** folder in the **development_resource_packs** folder.
 1. Copy the UUID from the **header** section of the resource pack **manifest.json** file.
@@ -104,9 +109,9 @@ There is a third section in the behavior pack's manifest.json file called 'depen
 
 ![Image of resource pack manifest.json header UUID duplicated in behavior pack dependencies section](Media/BehaviorPack/manifest_UUID_dependency.png)
 
-## Create the Entities Folder and Make it Have a Cow
+## Create the Entities Folder and Add a Cow
 
-Every entity's behaviors are defined in its own JSON file that lives inside the code that makes Minecraft work. You're going to create a new cow behavior file that Minecraft will use instead of its usual "vanilla" one.
+Every entity's behaviors are defined in its JSON file that lives inside the code that makes Minecraft work. You're going to create a new cow behavior file that Minecraft will use instead of its usual "vanilla" one.
 
 1. In the **My_BEHAVIOR_Pack** folder, create a folder and name it **entities**.
 1. Create a text file in the **entities** folder and name it **cow.json**.
@@ -115,7 +120,7 @@ Every entity's behaviors are defined in its own JSON file that lives inside the 
 >[!Note]
 > This is the entire edited cow.json file. It's big because cows do a lot!
 
-```json
+```JSON
 {
     "format_version": "1.16.0",
     "minecraft:entity": {
@@ -402,6 +407,26 @@ Now that the behavior pack has both a manifest file and a cow entity, it is time
 1. Select **My BEHAVIOR Pack** and click **Activate** to add the behavior pack to the world.
 1. Click **Create** to create your world.
 1. Go find a cow.
+
+## Troubleshooting
+
+Behavior pack woes? Troubleshooting is a normal part of any development process. Here are some places to begin troubleshooting a behavior pack.
+
+### Behavior Pack Does Not Appear in Minecraft
+
+If your resource pack does not appear in the Add-Ons section, something is wrong with the `manifest.json` file. Let's start there.
+
+- Are there two different UUIDs in the `manifest.json` header and modules section? See the **UUID** section for more information.
+- Have you turned on file extensions and paths? `manifest.json` may not be just `manifest.json`. If your Explorer window does not show file extensions, you can enable **File Name Extensions** under the **View** tab.
+- Double-check JSON curly braces and brackets. JSON linting tools can help.
+- If there's an issue with an active behavior pack, there will be a red exclamation point under Behavior Packs in the Add-Ons section.
+  - The behavior pack will have more information. It may alert a missing dependency, or run diagnostics on other issues.
+
+### Behavior Pack Shows Up, Content Doesn't Work
+
+- Check that the `entities` folder is in the right place, and spelled correctly. Then check all spellings of `cow`. 
+- Make sure that the UUID in the `dependencies` section matches an existing resource pack (and that it's working too).
+- Move your pack above others to ensure your behavior pack is loaded first. Pack stacking may cause your changes to not appear.
 
 ## What's Next?
 

@@ -35,7 +35,7 @@ ms.prod: gaming
     "speed_multiplier": 1.25,
     "boost_items": [
         {
-            "Item": "carrotOnAStick",
+            "item": "carrotOnAStick",
             "damage": 3,
             "replace_item": "fishing_rod"
         }

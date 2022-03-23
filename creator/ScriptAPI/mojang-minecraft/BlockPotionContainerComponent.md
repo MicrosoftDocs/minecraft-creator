@@ -48,4 +48,3 @@ Sets the potion type based on an item stack.
 > [!WARNING]
 > This function can throw errors.
 
-

@@ -12,8 +12,6 @@ description: Contents of the mojang-minecraft.MinecraftItemTypes class.
 
 Contains definitions of standard Minecraft and Minecraft Education Edition block types.
 
-
-
 ## Constants
 ### **acaciaBoat**
 `static read-only acaciaBoat: ItemType;`
@@ -25,6 +23,12 @@ Type: [*ItemType*](ItemType.md)
 `static read-only acaciaButton: ItemType;`
 
 Represents an item that can place an acacia button within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **acaciaChestBoat**
+`static read-only acaciaChestBoat: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -401,6 +405,12 @@ Represents an item that can place a birch button within Minecraft.
 Type: [*ItemType*](ItemType.md)
 
 
+### **birchChestBoat**
+`static read-only birchChestBoat: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
 ### **birchDoor**
 `static read-only birchDoor: ItemType;`
 
@@ -681,12 +691,6 @@ Type: [*ItemType*](ItemType.md)
 `static read-only brewingStand: ItemType;`
 
 Represents an item that can place a brewing stand within Minecraft.
-
-Type: [*ItemType*](ItemType.md)
-
-
-### **brewingstandblock**
-`static read-only brewingstandblock: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -991,6 +995,12 @@ Type: [*ItemType*](ItemType.md)
 `static read-only chest: ItemType;`
 
 Represents an item that can place a chest within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **chestBoat**
+`static read-only chestBoat: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -1677,6 +1687,12 @@ Type: [*ItemType*](ItemType.md)
 `static read-only darkOakButton: ItemType;`
 
 Represents an item that can place a dark oak button within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **darkOakChestBoat**
+`static read-only darkOakChestBoat: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -3655,12 +3671,6 @@ Type: [*ItemType*](ItemType.md)
 Type: [*ItemType*](ItemType.md)
 
 
-### **goatHorn**
-`static read-only goatHorn: ItemType;`
-
-Type: [*ItemType*](ItemType.md)
-
-
 ### **goatSpawnEgg**
 `static read-only goatSpawnEgg: ItemType;`
 
@@ -4061,8 +4071,8 @@ Type: [*ItemType*](ItemType.md)
 Type: [*ItemType*](ItemType.md)
 
 
-### **invisiblebedrock**
-`static read-only invisiblebedrock: ItemType;`
+### **invisibleBedrock**
+`static read-only invisibleBedrock: ItemType;`
 
 Represents an item that can place an invisible boundary bedrock block within Minecraft.
 
@@ -4201,6 +4211,12 @@ Type: [*ItemType*](ItemType.md)
 
 ### **item.birchDoor**
 `static read-only item.birchDoor: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **item.brewingStand**
+`static read-only item.brewingStand: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -4369,6 +4385,12 @@ Type: [*ItemType*](ItemType.md)
 `static read-only jungleButton: ItemType;`
 
 Represents jungle wood button within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **jungleChestBoat**
+`static read-only jungleChestBoat: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -4849,6 +4871,24 @@ Type: [*ItemType*](ItemType.md)
 Type: [*ItemType*](ItemType.md)
 
 
+### **mangroveLeaves**
+`static read-only mangroveLeaves: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mangrovePropagule**
+`static read-only mangrovePropagule: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mangrovePropaguleHanging**
+`static read-only mangrovePropaguleHanging: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
 ### **medicine**
 `static read-only medicine: ItemType;`
 
@@ -4971,10 +5011,46 @@ Represents an item that can place a set of mossy stone brick stairs within Minec
 Type: [*ItemType*](ItemType.md)
 
 
-### **movingblock**
-`static read-only movingblock: ItemType;`
+### **movingBlock**
+`static read-only movingBlock: ItemType;`
 
 Represents an item that can place a moving block within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mud**
+`static read-only mud: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mudBrickDoubleSlab**
+`static read-only mudBrickDoubleSlab: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mudBricks**
+`static read-only mudBricks: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mudBrickSlab**
+`static read-only mudBrickSlab: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mudBrickStairs**
+`static read-only mudBrickStairs: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mudBrickWall**
+`static read-only mudBrickWall: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -5301,6 +5377,12 @@ Type: [*ItemType*](ItemType.md)
 Type: [*ItemType*](ItemType.md)
 
 
+### **oakChestBoat**
+`static read-only oakChestBoat: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
 ### **oakSign**
 `static read-only oakSign: ItemType;`
 
@@ -5421,6 +5503,12 @@ Represents an item that can place a block of packed ice within Minecraft.
 Type: [*ItemType*](ItemType.md)
 
 
+### **packedMud**
+`static read-only packedMud: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
 ### **painting**
 `static read-only painting: ItemType;`
 
@@ -5531,8 +5619,8 @@ Represents an item that can place a piston within Minecraft.
 Type: [*ItemType*](ItemType.md)
 
 
-### **pistonarmcollision**
-`static read-only pistonarmcollision: ItemType;`
+### **pistonArmCollision**
+`static read-only pistonArmCollision: ItemType;`
 
 Represents an item that can place a piston arm within Minecraft.
 
@@ -6373,8 +6461,8 @@ Represents seagrass within Minecraft.
 Type: [*ItemType*](ItemType.md)
 
 
-### **sealantern**
-`static read-only sealantern: ItemType;`
+### **seaLantern**
+`static read-only seaLantern: ItemType;`
 
 Represents an item that can place a sealantern within Minecraft.
 
@@ -6697,6 +6785,12 @@ Represents an item that can place a spruce wood button within Minecraft.
 Type: [*ItemType*](ItemType.md)
 
 
+### **spruceChestBoat**
+`static read-only spruceChestBoat: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
 ### **spruceDoor**
 `static read-only spruceDoor: ItemType;`
 
@@ -6827,8 +6921,8 @@ Represents an item that can place a piston block with a sticky arm within Minecr
 Type: [*ItemType*](ItemType.md)
 
 
-### **stickypistonarmcollision**
-`static read-only stickypistonarmcollision: ItemType;`
+### **stickyPistonArmCollision**
+`static read-only stickyPistonArmCollision: ItemType;`
 
 Represents an item that can place a sticky piston arm within Minecraft.
 
@@ -7161,8 +7255,8 @@ Type: [*ItemType*](ItemType.md)
 Type: [*ItemType*](ItemType.md)
 
 
-### **tripwire**
-`static read-only tripwire: ItemType;`
+### **tripWire**
+`static read-only tripWire: ItemType;`
 
 Represents an item that can place a tripwire within Minecraft.
 
@@ -7329,6 +7423,12 @@ Type: [*ItemType*](ItemType.md)
 
 ### **wanderingTraderSpawnEgg**
 `static read-only wanderingTraderSpawnEgg: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **wardenSpawnEgg**
+`static read-only wardenSpawnEgg: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
