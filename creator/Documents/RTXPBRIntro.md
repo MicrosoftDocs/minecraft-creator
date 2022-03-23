@@ -1,12 +1,12 @@
 ---
 author: docsbryce
 ms.author: v-bbortree
-title: Physically Based Texturing Guide - Introduction
+title: Introduction to Physically Based Rendering
 ms.prod: gaming
 description: An introduction to the Physically Based Rendering solutions
 ---
 
-# Physically Based Texturing Guide - Introduction
+# Introduction to Physically Based Rendering
 
 Physically Based Rendering, or PBR, simulates how materials would react to realistic light behavior. Certain metallic properties will cast reflections and light will bend and refract through different types of glass.
 
@@ -16,8 +16,8 @@ By the end of this guide, you will learn:
 
 > [!div class="checklist"]
 >
-> What are the new Texture Maps available for textures in Minecraft.
-> How to create a Mirror Texture Set using roughness and metallic maps.
+> - What are the new Texture Maps available for textures in Minecraft.
+> - How to create a Mirror Texture Set using roughness and metallic maps.
 
 ## Requirements
 
@@ -201,7 +201,16 @@ With the JSON file properly set up and both textures in place, you can now load 
 
 ## What's Next?
 
+### Physically Based Rendering Tutorial
+
 You created a mirror with roughness and metalness maps. Now you can take a look at the next part of this guide that covers how to create custom textures to create your own texture set.
 
 > [!div class="nextstepaction"]
-> [Physically Based Texturing Guide - Workflow](RTX_PBRTexturingGuide_Workflow.md)
+> [Physically Based Rendering Tutorial](RTXPBRTutorial.md)
+
+### Fog in Resources
+
+Along with ray tracing, fog in Minecraft has been updated to use a similar JSON structure that allows you to create and control its in-game appearance.
+
+> [!div class="nextstepaction"]
+> [Fog in Resource Packs](./FogInResourcePacks.md)
