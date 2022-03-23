@@ -16,8 +16,18 @@ description: Contents of the mojang-minecraft.EntityIterator class.
 This type is usable for iterating over a set of entities. This means it can be used in statements like for...of statements, Array.from(iterator), and more.
 
 ## Methods
+- [[Symbol.iterator]](#[symbol.iterator])
 - [next](#next)
   
+### **[Symbol.iterator]**
+`
+[Symbol.iterator](): Iterator<Entity>
+`
+
+
+#### **Returns** Iterator&lt;[*Entity*](Entity.md)&gt;
+
+
 ### **next**
 `
 next(): IteratorResult<Entity>
