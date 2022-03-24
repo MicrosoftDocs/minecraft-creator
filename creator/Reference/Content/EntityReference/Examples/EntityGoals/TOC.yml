@@ -68,16 +68,12 @@
   href: minecraftBehavior_melee_attack.md
 - name: behavior.mount_pathing
   href: minecraftBehavior_mount_pathing.md
-- name: behavior.move_indoors
-  href: minecraftBehavior_move_indoors.md
 - name: behavior.move_through_village
   href: minecraftBehavior_move_through_village.md
 - name: behavior.move_to_land
   href: minecraftBehavior_move_to_land.md
 - name: behavior.move_to_lava
   href: minecraftBehavior_move_to_lava.md
-- name: behavior.move_to_poi
-  href: minecraftBehavior_move_to_poi.md
 - name: behavior.move_to_random_block
   href: minecraftBehavior_move_to_random_block.md
 - name: behavior.move_to_village
