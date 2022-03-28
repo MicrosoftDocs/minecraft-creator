@@ -15,15 +15,23 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 | cooldown| 0.0| Decimal| An optional cool down in seconds to prevent spamming interactions. |
 | items| *not set*| List| The list of items that can be given to the entity to place in their inventory. |
-| on_give| *not set*| String| Event to fire when the correct item is given. |
+| on_give| *not set*| JSON Object | Event to fire when the correct item is given. |
 
 ## Example
 
 ```json
-"minecraft:giveable":{
-    "cooldown": 0.0,
-    "items": ,
-    "on_give": "minecraft:give_thanks"
+"minecraft:giveable": {
+    "triggers": {
+        "cooldown": 3.0,
+        "items": [
+            "bamboo",
+            "cake"
+        ],
+        "on_give": {
+            "event": "minecraft:on_calm",
+            "target": "self"
+        }
+    }
 }
 ```
 

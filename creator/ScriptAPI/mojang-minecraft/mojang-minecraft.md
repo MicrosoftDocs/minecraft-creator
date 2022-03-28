@@ -10,7 +10,30 @@ description: Contents of the mojang-minecraft module
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
+Contains information related to changes to a piston expanding or retracting.
 
+#### **Examples**
+##### *place_bottom_stone_slab.js*
+```javascript
+import { world, MinecraftBlockTypes, BlockProperties, BlockLocation } from "mojang-minecraft";
+// Create the permutation
+let bottomStoneSlab = MinecraftBlockTypes.stoneSlab.createDefaultBlockPermutation();
+bottomStoneSlab.getProperty(BlockProperties.stoneSlabType).value = "stone_brick";
+bottomStoneSlab.getProperty(BlockProperties.topSlotBit).value = false;
+// Fetch the block
+const block = world.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3));
+// Set the permutation
+block.setPermutation(bottomStoneSlab);
+```
+
+## Manifest Details
+```json
+{
+    // mojang-minecraft
+    "uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
+    "version": [ 0, 1, 0 ]
+}
+```
 
 ## Enumerations
 - [Direction](Direction.md)
@@ -20,7 +43,7 @@ description: Contents of the mojang-minecraft module
 - [BeforeChatEvent](BeforeChatEvent.md)
 - [BeforeChatEventSignal](BeforeChatEventSignal.md)
 - [BeforeDataDrivenEntityTriggerEvent](BeforeDataDrivenEntityTriggerEvent.md)
-- [BeforeDataDrivenEntityTriggerEvent](BeforeDataDrivenEntityTriggerEvent.md)
+- [BeforeDataDrivenEntityTriggerEventSignal](BeforeDataDrivenEntityTriggerEventSignal.md)
 - [BeforeExplosionEvent](BeforeExplosionEvent.md)
 - [BeforeExplosionEventSignal](BeforeExplosionEventSignal.md)
 - [BeforeItemDefinitionEventSignal](BeforeItemDefinitionEventSignal.md)
@@ -60,7 +83,7 @@ description: Contents of the mojang-minecraft module
 - [Color](Color.md)
 - [Container](Container.md)
 - [DataDrivenEntityTriggerEvent](DataDrivenEntityTriggerEvent.md)
-- [DataDrivenEntityTriggerEvent](DataDrivenEntityTriggerEvent.md)
+- [DataDrivenEntityTriggerEventSignal](DataDrivenEntityTriggerEventSignal.md)
 - [DefinitionModifier](DefinitionModifier.md)
 - [Dimension](Dimension.md)
 - [Effect](Effect.md)
@@ -75,19 +98,45 @@ description: Contents of the mojang-minecraft module
 - [EntityAddRiderComponent](EntityAddRiderComponent.md)
 - [EntityAgeableComponent](EntityAgeableComponent.md)
 - [EntityBreathableComponent](EntityBreathableComponent.md)
+- [EntityCanClimbComponent](EntityCanClimbComponent.md)
+- [EntityCanFlyComponent](EntityCanFlyComponent.md)
+- [EntityCanPowerJumpComponent](EntityCanPowerJumpComponent.md)
 - [EntityColorComponent](EntityColorComponent.md)
 - [EntityCreateEvent](EntityCreateEvent.md)
 - [EntityCreateEventSignal](EntityCreateEventSignal.md)
 - [EntityDataDrivenTriggerEventOptions](EntityDataDrivenTriggerEventOptions.md)
 - [EntityDefinitionFeedItem](EntityDefinitionFeedItem.md)
 - [EntityEventOptions](EntityEventOptions.md)
+- [EntityFireImmuneComponent](EntityFireImmuneComponent.md)
+- [EntityFloatsInLiquidComponent](EntityFloatsInLiquidComponent.md)
 - [EntityFlyingSpeedComponent](EntityFlyingSpeedComponent.md)
+- [EntityFrictionModifierComponent](EntityFrictionModifierComponent.md)
+- [EntityGroundOffsetComponent](EntityGroundOffsetComponent.md)
 - [EntityHealableComponent](EntityHealableComponent.md)
 - [EntityHealthComponent](EntityHealthComponent.md)
+- [EntityHitEvent](EntityHitEvent.md)
+- [EntityHitEventSignal](EntityHitEventSignal.md)
+- [EntityHurtEvent](EntityHurtEvent.md)
+- [EntityHurtEventSignal](EntityHurtEventSignal.md)
 - [EntityInventoryComponent](EntityInventoryComponent.md)
+- [EntityIsBabyComponent](EntityIsBabyComponent.md)
+- [EntityIsChargedComponent](EntityIsChargedComponent.md)
+- [EntityIsChestedComponent](EntityIsChestedComponent.md)
+- [EntityIsDyableComponent](EntityIsDyableComponent.md)
+- [EntityIsHiddenWhenInvisibleComponent](EntityIsHiddenWhenInvisibleComponent.md)
+- [EntityIsIgnitedComponent](EntityIsIgnitedComponent.md)
+- [EntityIsIllagerCaptainComponent](EntityIsIllagerCaptainComponent.md)
+- [EntityIsSaddledComponent](EntityIsSaddledComponent.md)
+- [EntityIsShakingComponent](EntityIsShakingComponent.md)
+- [EntityIsShearedComponent](EntityIsShearedComponent.md)
+- [EntityIsStackableComponent](EntityIsStackableComponent.md)
+- [EntityIsStunnedComponent](EntityIsStunnedComponent.md)
+- [EntityIsTamedComponent](EntityIsTamedComponent.md)
+- [EntityItemComponent](EntityItemComponent.md)
 - [EntityIterator](EntityIterator.md)
 - [EntityLavaMovementComponent](EntityLavaMovementComponent.md)
 - [EntityLeashableComponent](EntityLeashableComponent.md)
+- [EntityMarkVariantComponent](EntityMarkVariantComponent.md)
 - [EntityMountTamingComponent](EntityMountTamingComponent.md)
 - [EntityMovementAmphibiousComponent](EntityMovementAmphibiousComponent.md)
 - [EntityMovementBasicComponent](EntityMovementBasicComponent.md)
@@ -105,13 +154,21 @@ description: Contents of the mojang-minecraft module
 - [EntityNavigationGenericComponent](EntityNavigationGenericComponent.md)
 - [EntityNavigationHoverComponent](EntityNavigationHoverComponent.md)
 - [EntityNavigationWalkComponent](EntityNavigationWalkComponent.md)
+- [EntityPushThroughComponent](EntityPushThroughComponent.md)
 - [EntityQueryOptions](EntityQueryOptions.md)
 - [EntityQueryScoreOptions](EntityQueryScoreOptions.md)
 - [EntityRaycastOptions](EntityRaycastOptions.md)
 - [EntityRideableComponent](EntityRideableComponent.md)
+- [EntityScaleComponent](EntityScaleComponent.md)
+- [EntitySkinIdComponent](EntitySkinIdComponent.md)
 - [EntityStrengthComponent](EntityStrengthComponent.md)
 - [EntityTameableComponent](EntityTameableComponent.md)
+- [EntityType](EntityType.md)
+- [EntityTypeIterator](EntityTypeIterator.md)
+- [EntityTypes](EntityTypes.md)
 - [EntityUnderwaterMovementComponent](EntityUnderwaterMovementComponent.md)
+- [EntityVariantComponent](EntityVariantComponent.md)
+- [EntityWantsJockeyComponent](EntityWantsJockeyComponent.md)
 - [Events](Events.md)
 - [ExplosionEvent](ExplosionEvent.md)
 - [ExplosionEventSignal](ExplosionEventSignal.md)
@@ -137,12 +194,17 @@ description: Contents of the mojang-minecraft module
 - [ItemUseEventSignal](ItemUseEventSignal.md)
 - [ItemUseOnEvent](ItemUseOnEvent.md)
 - [ItemUseOnEventSignal](ItemUseOnEventSignal.md)
+- [LeverActionEvent](LeverActionEvent.md)
+- [LeverActivateEventSignal](LeverActivateEventSignal.md)
 - [Location](Location.md)
 - [MinecraftBlockTypes](MinecraftBlockTypes.md)
+- [MinecraftDimensionTypes](MinecraftDimensionTypes.md)
 - [MinecraftEffectTypes](MinecraftEffectTypes.md)
 - [MinecraftEnchantmentTypes](MinecraftEnchantmentTypes.md)
+- [MinecraftEntityTypes](MinecraftEntityTypes.md)
 - [MinecraftItemTypes](MinecraftItemTypes.md)
 - [MolangVariableMap](MolangVariableMap.md)
+- [MusicOptions](MusicOptions.md)
 - [NavigationResult](NavigationResult.md)
 - [NumberRange](NumberRange.md)
 - [PistonActivateEvent](PistonActivateEvent.md)
@@ -155,7 +217,9 @@ description: Contents of the mojang-minecraft module
 - [PlayerJoinEventSignal](PlayerJoinEventSignal.md)
 - [PlayerLeaveEvent](PlayerLeaveEvent.md)
 - [PlayerLeaveEventSignal](PlayerLeaveEventSignal.md)
+- [SculkSpreader](SculkSpreader.md)
 - [Seat](Seat.md)
+- [SoundOptions](SoundOptions.md)
 - [StringBlockProperty](StringBlockProperty.md)
 - [TickEvent](TickEvent.md)
 - [TickEventSignal](TickEventSignal.md)
@@ -164,7 +228,6 @@ description: Contents of the mojang-minecraft module
 - [WeatherChangeEvent](WeatherChangeEvent.md)
 - [WeatherChangeEventSignal](WeatherChangeEventSignal.md)
 - [World](World.md)
-
 
 ## Constants
 ### **TicksPerSecond**

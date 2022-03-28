@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.MolangVariableMap class.
 
 Contains a set of additional variable values for further defining how rendering and animations function.
 
-
 ## Methods
 - [constructor](#constructor)
 - [setColorRGB](#setcolorrgb)
@@ -80,6 +79,5 @@ Sets a vector value for a Molang (rendering and animation) variable.
 - **vector**: [*Vector*](Vector.md)
 
 #### **Returns** [*MolangVariableMap*](MolangVariableMap.md)
-
 
 

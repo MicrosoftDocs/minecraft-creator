@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft-ui.MessageFormData class.
 
 Builds a simple two-button modal dialog.
 
-
 ## Methods
 - [constructor](#constructor)
 - [body](#body)
@@ -93,6 +92,5 @@ This builder method sets the title for the modal dialog.
 - **titleText**: *string*
 
 #### **Returns** [*MessageFormData*](MessageFormData.md)
-
 
 

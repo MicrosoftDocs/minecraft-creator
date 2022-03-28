@@ -20,10 +20,13 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:on_ignite":{
-    "event": "minecraft:on_fire",
-    "filters": {"test": "has_damage", "value": "fire"},
-    "target": "self",
+"minecraft:on_ignite": {
+  "event": "minecraft:on_fire",
+  "filters": {
+    "test": "has_damage",
+    "value": "fire"
+  },
+  "target": "self"
 }
 ```
 

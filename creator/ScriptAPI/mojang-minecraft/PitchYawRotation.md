@@ -29,5 +29,3 @@ Yaw component (left-to-right) of this position.
 Type: *number*
 
 
-
-

@@ -37,5 +37,3 @@ Entity that the effect is being added to.
 Type: [*Entity*](Entity.md)
 
 
-
-

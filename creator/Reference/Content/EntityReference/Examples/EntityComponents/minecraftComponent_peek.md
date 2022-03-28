@@ -13,17 +13,23 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| on_close| *not set*| String| Event to call when the entity is done peeking. |
-| on_open| *not set*| String| Event to call when the entity starts peeking. |
-| on_target_open| *not set*| String| Event to call when the entity's target entity starts peeking. |
+| on_close| *not set*| JSON Object | Event to call when the entity is done peeking. |
+| on_open| *not set*| JSON Object | Event to call when the entity starts peeking. |
+| on_target_open| *not set*| JSON Object | Event to call when the entity's target entity starts peeking. |
 
 ## Example
 
 ```json
-"minecraft:peek":{
-    "on_close": {"event": "minecraft:stop_peeping"},
-    "on_open": {"event": "minecraft:start_peeping"},
-    "on_target_open": {"event": "minecraft:ive_been_spotted"}
+"minecraft:peek": {
+  "on_close": {
+    "event": "minecraft:stop_peeping"
+  },
+  "on_open": {
+    "event": "minecraft:start_peeping"
+  },
+  "on_target_open": {
+    "event": "minecraft:ive_been_spotted"
+  }
 }
 ```
 

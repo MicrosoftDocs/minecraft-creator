@@ -60,11 +60,14 @@ ms.prod: gaming
             },
             "genetic_variants": [
                 {
-                    "birth_event": "minecraft:its_alive",
-                    "both_allele": -1,
-                    "either_allele": -1,
-                    "hidden_allele": -1,
-                    "main_allele": -1
+                    "birth_event": {
+                      "event": "minecraft:born_screamer",
+                      "target": "self"
+                    },                    
+                    "main_allele": {
+                      "range_min": 1,
+                      "range_max": 2
+                    }
                 }
             ],
             "name": "gene",

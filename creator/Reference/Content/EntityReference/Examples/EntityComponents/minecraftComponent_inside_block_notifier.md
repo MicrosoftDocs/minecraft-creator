@@ -18,9 +18,27 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:inside_block_notifier":{
-    "block_list": []
-}
+ "minecraft:inside_block_notifier": {
+        "block_list": [
+          {
+            "block": {
+              "name": "minecraft:bubble_column",
+              "states": {
+                "drag_down": true
+              }
+            },
+            "entered_block_event": {
+              "event": "minecraft:entered_bubble_column_down",
+              "target": "self"
+            },
+            "exited_block_event": {
+              "event": "minecraft:exited_bubble_column",
+              "target": "self"
+            }
+          }
+        ]
+      }
+    }
 ```
 
 ## Vanilla entities examples
