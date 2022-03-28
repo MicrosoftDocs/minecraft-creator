@@ -32,8 +32,12 @@
   href: hourly_clock_time.md
 - name: in_caravan
   href: in_caravan.md
+- name: in_block
+  href: in_block.md
 - name: in_clouds
   href: in_clouds.md
+- name: in_contact_with_water
+  href: in_contact_with_water.md
 - name: in_lava
   href: in_lava.md
 - name: in_nether
