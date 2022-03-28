@@ -29,5 +29,3 @@ A set of block locations that comprise the navigation route.
 Type: [*BlockLocation*](BlockLocation.md)[]
 
 
-
-

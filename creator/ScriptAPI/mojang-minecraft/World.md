@@ -25,16 +25,18 @@ Type: [*Events*](Events.md)
 ## Methods
 - [getDimension](#getdimension)
 - [getPlayers](#getplayers)
+- [playMusic](#playmusic)
+- [playSound](#playsound)
+- [queueMusic](#queuemusic)
+- [stopMusic](#stopmusic)
   
 ### **getDimension**
 `
-getDimension(dimensionName: ('overworld'|'nether'|'the end')): Dimension
+getDimension(dimensionId: string): Dimension
 `
 
 #### **Parameters**
-- **dimensionName**: `'overworld'`, `'nether'`, `'the end'`
-  
-  The name of the Dimension
+- **dimensionId**: *string*
 
 #### **Returns** [*Dimension*](Dimension.md) - The requested dimension
 
@@ -54,5 +56,49 @@ Returns all players currently in the world.
 
 > [!WARNING]
 > This function can throw errors.
+
+### **playMusic**
+`
+playMusic(trackID: string, musicOptions?: MusicOptions): void
+`
+
+Plays a particular music track for all players.
+#### **Parameters**
+- **trackID**: *string*
+- **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
+
+
+
+### **playSound**
+`
+playSound(soundID: string, soundOptions?: SoundOptions): void
+`
+
+Plays a sound for all players.
+#### **Parameters**
+- **soundID**: *string*
+- **soundOptions**?: [*SoundOptions*](SoundOptions.md) = `null`
+
+
+
+### **queueMusic**
+`
+queueMusic(trackID: string, musicOptions?: MusicOptions): void
+`
+
+Queues an additional music track for players. If a track is not playing, a music track will play.
+#### **Parameters**
+- **trackID**: *string*
+- **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
+
+
+
+### **stopMusic**
+`
+stopMusic(): void
+`
+
+Stops any music tracks from playing.
+
 
 

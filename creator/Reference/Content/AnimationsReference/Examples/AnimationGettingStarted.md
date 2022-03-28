@@ -22,11 +22,13 @@ Before diving into how animation is defined in addons, let's take a look at an e
 
 In order to define what animations an entity has, you must add both an `animations` and a `scripts/animate` section to an entity's entity definition file.
 
-Here you can see the entity definition for pig.json:This means you will not see the move animation in the pig.json animation file either.  If you would like to make a custom pig walk you can change this line to point to your custom animation.
+This means you will not see the move animation in the pig.json animation file.  If you would like to make a custom pig walk, you can change this line to point to your custom animation.
 
 Animations are specified as a short name, followed by their full resource name.  The short name is used in animation controllers and the `scripts/animate` list, while the long name is used in the animations file.
 
 In the `scripts/animate` section, you list the animations to play and in which order.  You can either specify an animation directly, or specify a blend expression.
+
+This means you will not see the move animation in the pig.json animation file either.  If you would like to make a custom pig walk you can change this line to point to your custom animation.
 
 ### Entity Definition Example
 
@@ -68,12 +70,6 @@ In the `scripts/animate` section, you list the animations to play and in which o
   }
 }
 ```
-
-This means you will not see the move animation in the pig.json animation file either.  If you would like to make a custom pig walk you can change this line to point to your custom animation.
-
-Animations are specified as a short name, followed by their full resource name.  The short name is used in animation controllers and the `scripts/animate` list, while the long name is used in the animations file.
-
-In the `scripts/animate` section, you list the animations to play and in which order.  You can either specify an animation directly, or specify a blend expression.
 
 ## Animation Hierarchy
 

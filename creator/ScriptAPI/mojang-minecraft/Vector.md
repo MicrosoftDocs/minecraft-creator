@@ -41,7 +41,18 @@ Type: *number*
 ## Methods
 - [constructor](#constructor)
 - [equals](#equals)
-- [isNear](#isnear)
+- [length](#length)
+- [normalized](#normalized)
+- [add](#add)
+- [cross](#cross)
+- [distance](#distance)
+- [divide](#divide)
+- [lerp](#lerp)
+- [max](#max)
+- [min](#min)
+- [multiply](#multiply)
+- [slerp](#slerp)
+- [subtract](#subtract)
   
 ### **constructor**
 `
@@ -77,17 +88,221 @@ Compares this vector and another vector to one another.
 #### **Returns** *boolean* - True if the two vectors are equal.
 
 
-### **isNear**
+### **length**
 `
-isNear(other: Vector, epsilon: number): boolean
+length(): number
 `
 
-To be removed.
+Returns the length of this vector.
+
+#### **Returns** *number*
+
+
+### **normalized**
+`
+normalized(): Vector
+`
+
+Returns this vector as a normalized vector.
+
+#### **Returns** [*Vector*](Vector.md)
+
+
+### **add**
+`
+add(a: Vector, b: Vector): Vector
+`
+
+Returns the addition of these vectors.
 #### **Parameters**
-- **other**: [*Vector*](Vector.md)
-- **epsilon**: *number*
+- **a**: [*Vector*](Vector.md)
+- **b**: [*Vector*](Vector.md)
 
-#### **Returns** *boolean*
+#### **Returns** [*Vector*](Vector.md)
 
+
+### **cross**
+`
+cross(a: Vector, b: Vector): Vector
+`
+
+Returns the cross product of these two vectors.
+#### **Parameters**
+- **a**: [*Vector*](Vector.md)
+- **b**: [*Vector*](Vector.md)
+
+#### **Returns** [*Vector*](Vector.md)
+
+
+### **distance**
+`
+distance(a: Vector, b: Vector): number
+`
+
+Returns the distance between two vectors.
+#### **Parameters**
+- **a**: [*Vector*](Vector.md)
+- **b**: [*Vector*](Vector.md)
+
+#### **Returns** *number*
+
+
+### **divide**
+`
+divide(a: Vector, b: number | Vector): Vector
+`
+
+Returns the component-wise division of these vectors.
+#### **Parameters**
+- **a**: [*Vector*](Vector.md)
+- **b**: *number* | [*Vector*](Vector.md)
+
+#### **Returns** [*Vector*](Vector.md)
+
+
+### **lerp**
+`
+lerp(a: Vector, b: Vector, t: number): Vector
+`
+
+Returns the linear interpolation between a and b using t as the control.
+#### **Parameters**
+- **a**: [*Vector*](Vector.md)
+- **b**: [*Vector*](Vector.md)
+- **t**: *number*
+
+#### **Returns** [*Vector*](Vector.md)
+
+
+### **max**
+`
+max(a: Vector, b: Vector): Vector
+`
+
+Returns a vector that is made from the largest components of two vectors.
+#### **Parameters**
+- **a**: [*Vector*](Vector.md)
+- **b**: [*Vector*](Vector.md)
+
+#### **Returns** [*Vector*](Vector.md)
+
+
+### **min**
+`
+min(a: Vector, b: Vector): Vector
+`
+
+Returns a vector that is made from the smallest components of two vectors.
+#### **Parameters**
+- **a**: [*Vector*](Vector.md)
+- **b**: [*Vector*](Vector.md)
+
+#### **Returns** [*Vector*](Vector.md)
+
+
+### **multiply**
+`
+multiply(a: Vector, b: number | Vector): Vector
+`
+
+Returns the component-wise product of these vectors.
+#### **Parameters**
+- **a**: [*Vector*](Vector.md)
+- **b**: *number* | [*Vector*](Vector.md)
+
+#### **Returns** [*Vector*](Vector.md)
+
+
+### **slerp**
+`
+slerp(a: Vector, b: Vector, s: number): Vector
+`
+
+Returns the spherical linear interpolation between a and b using s as the control.
+#### **Parameters**
+- **a**: [*Vector*](Vector.md)
+- **b**: [*Vector*](Vector.md)
+- **s**: *number*
+
+#### **Returns** [*Vector*](Vector.md)
+
+
+### **subtract**
+`
+subtract(a: Vector, b: Vector): Vector
+`
+
+Returns the subtraction of these vectors.
+#### **Parameters**
+- **a**: [*Vector*](Vector.md)
+- **b**: [*Vector*](Vector.md)
+
+#### **Returns** [*Vector*](Vector.md)
+
+
+
+## Constants
+### **back**
+`static read-only back: Vector;`
+
+A constant vector that represents (0, 0, -1).
+
+Type: [*Vector*](Vector.md)
+
+
+### **down**
+`static read-only down: Vector;`
+
+A constant vector that represents (0, -1, 0).
+
+Type: [*Vector*](Vector.md)
+
+
+### **forward**
+`static read-only forward: Vector;`
+
+A constant vector that represents (0, 0, 1).
+
+Type: [*Vector*](Vector.md)
+
+
+### **left**
+`static read-only left: Vector;`
+
+A constant vector that represents (-1, 0, 0).
+
+Type: [*Vector*](Vector.md)
+
+
+### **one**
+`static read-only one: Vector;`
+
+A constant vector that represents (1, 1, 1).
+
+Type: [*Vector*](Vector.md)
+
+
+### **right**
+`static read-only right: Vector;`
+
+A constant vector that represents (1, 0, 0).
+
+Type: [*Vector*](Vector.md)
+
+
+### **up**
+`static read-only up: Vector;`
+
+A constant vector that represents (0, 1, 0).
+
+Type: [*Vector*](Vector.md)
+
+
+### **zero**
+`static read-only zero: Vector;`
+
+A constant vector that represents (0, 0, 0).
+
+Type: [*Vector*](Vector.md)
 
 
