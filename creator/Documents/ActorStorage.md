@@ -8,14 +8,15 @@ description: "How actor data is organized in the LevelDB on disk"
 
 # Actor Storage in Minecraft: Bedrock Edition
 
-Minecraft has inspired many third parties to create useful world file viewing and editing tools that exist outside the client. Tools like the [Universal Minecraft Editor](https://www.universalminecrafteditor.com/) and [MCEdit](http://www.mcedit.net/) are community favorites and are dependent upon knowing where to find each piece of the level's data on disk in the LevelDB files. With the upgrade from legacy actor storage to modern actor storage in R18U2, the locations in the LevelDB files which the data for actors is stored has changed and these third party developers need to be aware.
+Minecraft has inspired many third parties to create useful world file viewing and editing tools that exist outside the client. Tools like the Universal Minecraft Editor and MCEdit are community favorites and are dependent upon knowing where to find each piece of the level's data on disk in the LevelDB files. With the upgrade from legacy actor storage to modern actor storage in R18U2, the locations in the LevelDB files which the data for actors is stored has changed and these third party developers need to be aware.
 
 ## What did legacy actor data look like?
 
 Before R18U2, actor data was stored per chunk as a blob of all actors in that chunk. This meant that whenever a single actor changed, we would:
->- collect the data from every individual actor in the chunk
->- append the data for each actor into a single buffer/blob
->- write that grouped data to the chunk
+
+>- Collect the data from every individual actor in the chunk
+>- Append the data for each actor into a single buffer/blob
+>- Write that grouped data to the chunk
 
 ## Why are we moving actor data?
 
