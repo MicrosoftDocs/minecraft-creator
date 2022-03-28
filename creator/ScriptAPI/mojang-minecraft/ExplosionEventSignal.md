@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.ExplosionEventSignal class.
 
 Manages callbacks that are connected to when an explosion occurs.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -41,5 +40,4 @@ Removes a callback from being called when an explosion occurs.
 
 > [!WARNING]
 > This function can throw errors.
-
 

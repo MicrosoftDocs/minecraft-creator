@@ -10,12 +10,12 @@ description: Contents of the mojang-minecraft.Player class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-## Base Types
+## Extends
 - [*Entity*](Entity.md)
 
-## Directly Derived Types
+## Classes that extend Player
 - [*mojang-gametest.SimulatedPlayer*](../mojang-gametest/SimulatedPlayer.md)
-  
+
 Represents a player within the world.
 
 ## Properties
@@ -129,6 +129,7 @@ Type: [*Vector*](Vector.md)
 - [hasComponent](#hascomponent)
 - [hasTag](#hastag)
 - [kill](#kill)
+- [playSound](#playsound)
 - [removeTag](#removetag)
 - [runCommand](#runcommand)
 - [setVelocity](#setvelocity)
@@ -139,7 +140,7 @@ Type: [*Vector*](Vector.md)
   
 ### **addEffect**
 `
-addEffect(effectType: EffectType, duration: number, amplifier: number): void
+addEffect(effectType: EffectType, duration: number, amplifier?: number, showParticles?: boolean): void
 `
 
 Adds an effect, like poison, to the entity.
@@ -150,9 +151,10 @@ Adds an effect, like poison, to the entity.
 - **duration**: *number*
   
   Amount of time, in ticks, for the effect to apply.
-- **amplifier**: *number*
+- **amplifier**?: *number* = `0`
   
   Optional amplification of the effect to apply.
+- **showParticles**?: *boolean* = `true`
 
 
 > [!WARNING]
@@ -313,6 +315,24 @@ Kills this entity. The entity will drop loot as normal.
 > [!WARNING]
 > This function can throw errors.
 
+### **playSound**
+`
+playSound(soundID: string, soundOptions?: SoundOptions): void
+`
+
+Plays a sound that only this particular player can hear.
+#### **Parameters**
+- **soundID**: *string*
+  
+  Identifier of the sound to play.
+- **soundOptions**?: [*SoundOptions*](SoundOptions.md) = `null`
+  
+  Additional optional options for the sound.
+
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **removeTag**
 `
 removeTag(tag: string): boolean
@@ -443,5 +463,4 @@ Triggers an entity type event. For every entity, a number of events are defined 
 
 > [!WARNING]
 > This function can throw errors.
-
 

@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.MinecraftBlockTypes class.
 
 Contains definitions of standard Minecraft and Minecraft Education Edition block types.
 
-
 ## Methods
 - [get](#get)
 - [getAllBlockTypes](#getallblocktypes)
@@ -902,8 +901,8 @@ Represents a block of concrete powder within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
-### **concretepowder**
-`static read-only concretepowder: BlockType;`
+### **concretePowder**
+`static read-only concretePowder: BlockType;`
 
 Represents a block of concrete powder within Minecraft.
 
@@ -3092,8 +3091,8 @@ Represents an information update block within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
-### **invisiblebedrock**
-`static read-only invisiblebedrock: BlockType;`
+### **invisibleBedrock**
+`static read-only invisibleBedrock: BlockType;`
 
 Represents an invisible boundary bedrock block within Minecraft.
 
@@ -3524,6 +3523,24 @@ Represents magma within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
+### **mangroveLeaves**
+`static read-only mangroveLeaves: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mangrovePropagule**
+`static read-only mangrovePropagule: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mangrovePropaguleHanging**
+`static read-only mangrovePropaguleHanging: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
 ### **mediumAmethystBud**
 `static read-only mediumAmethystBud: BlockType;`
 
@@ -3604,10 +3621,46 @@ Represents a set of mossy stone brick stairs within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
-### **movingblock**
-`static read-only movingblock: BlockType;`
+### **movingBlock**
+`static read-only movingBlock: BlockType;`
 
 Represents a moving block within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mud**
+`static read-only mud: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mudBrickDoubleSlab**
+`static read-only mudBrickDoubleSlab: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mudBricks**
+`static read-only mudBricks: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mudBrickSlab**
+`static read-only mudBrickSlab: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mudBrickStairs**
+`static read-only mudBrickStairs: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mudBrickWall**
+`static read-only mudBrickWall: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3830,6 +3883,12 @@ Represents a block of packed ice within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
+### **packedMud**
+`static read-only packedMud: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
 ### **pearlescentFroglight**
 `static read-only pearlescentFroglight: BlockType;`
 
@@ -3868,8 +3927,8 @@ Represents a piston within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
-### **pistonarmcollision**
-`static read-only pistonarmcollision: BlockType;`
+### **pistonArmCollision**
+`static read-only pistonArmCollision: BlockType;`
 
 Represents a piston arm within Minecraft.
 
@@ -4484,8 +4543,8 @@ Represents seagrass within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
-### **sealantern**
-`static read-only sealantern: BlockType;`
+### **seaLantern**
+`static read-only seaLantern: BlockType;`
 
 Represents a sealantern within Minecraft.
 
@@ -4804,8 +4863,8 @@ Represents a piston block with a sticky arm within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
-### **stickypistonarmcollision**
-`static read-only stickypistonarmcollision: BlockType;`
+### **stickyPistonArmCollision**
+`static read-only stickyPistonArmCollision: BlockType;`
 
 Represents a sticky piston arm within Minecraft.
 
@@ -5068,8 +5127,8 @@ Represents a trapped chest within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
-### **tripwire**
-`static read-only tripwire: BlockType;`
+### **tripWire**
+`static read-only tripWire: BlockType;`
 
 Represents a tripwire within Minecraft.
 

@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.WeatherChangeEventSignal class.
 
 Manages callbacks that are connected to weather changing.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -41,5 +40,4 @@ Removes a callback from being called when weather changes.
 
 > [!WARNING]
 > This function can throw errors.
-
 

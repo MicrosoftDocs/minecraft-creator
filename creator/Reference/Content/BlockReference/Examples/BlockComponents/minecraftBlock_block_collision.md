@@ -1,5 +1,5 @@
 ---
-author: v-jillheaden
+author: JDHeaden
 ms.author: v-jillheaden
 title: Block Documentation - minecraft:block_collision
 ms.prod: gaming

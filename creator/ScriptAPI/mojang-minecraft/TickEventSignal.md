@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.TickEventSignal class.
 
 Manages callbacks that are connected to a tick event.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -41,5 +40,4 @@ Removes a callback from being called every tick.
 
 > [!WARNING]
 > This function can throw errors.
-
 

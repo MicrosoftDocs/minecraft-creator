@@ -37,5 +37,3 @@ Optional source of the explosion.
 Type: [*Entity*](Entity.md)
 
 
-
-

@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft-ui.ActionFormData class.
 
 Builds a simple player form with buttons that let the player take action.
 
-
 ## Methods
 - [constructor](#constructor)
 - [body](#body)
@@ -81,6 +80,5 @@ This builder method sets the title for the modal dialog.
 - **titleText**: *string*
 
 #### **Returns** [*ActionFormData*](ActionFormData.md)
-
 
 

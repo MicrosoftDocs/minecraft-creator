@@ -12,8 +12,6 @@ description: Contents of the mojang-minecraft.FluidContainer class.
 
 Represents constants related to fluid containers.
 
-
-
 ## Constants
 ### **maxFillLevel**
 `static read-only maxFillLevel = 6;`

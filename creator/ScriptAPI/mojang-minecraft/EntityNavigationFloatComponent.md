@@ -10,7 +10,7 @@ description: Contents of the mojang-minecraft.EntityNavigationFloatComponent cla
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-## Base Types
+## Extends
 - [*IEntityComponent*](IEntityComponent.md)
 
 Allows this entity to generate paths by flying around the air like the regular Ghast.
@@ -174,7 +174,5 @@ Type: *string*
 Tells the pathfinder whether or not it can walk on the ground or go underwater.
 
 Type: *boolean*
-
-
 
 

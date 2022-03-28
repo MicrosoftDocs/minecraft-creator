@@ -45,4 +45,3 @@ new Enchantment(enchantmentType: EnchantmentType, level?: number)
 #### **Returns** [*Enchantment*](Enchantment.md)
 
 
-
