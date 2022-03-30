@@ -8,26 +8,15 @@ description: "How actor data is organized in the LevelDB on disk"
 
 # Actor Storage in Minecraft: Bedrock Edition
 
-<<<<<<< HEAD
 Minecraft has inspired many third parties to create useful world file viewing and editing tools that exist outside the client. Tools like the Universal Minecraft Editor and MCEdit are community favorites and are dependent upon knowing where to find each piece of the level's data on disk in the LevelDB files. With the upgrade from legacy actor storage to modern actor storage in R18U2, the locations in the LevelDB files which the data for actors is stored has changed and these third party developers need to be aware.
-=======
-Minecraft has inspired many third parties to create useful world file viewing and editing tools that exist outside the client. Tools like the [Universal Minecraft Editor](https://www.universalminecrafteditor.com/) and [MCEdit](http://www.mcedit.net/) are community favorites and are dependent upon knowing where to find each piece of the level's data on disk in the LevelDB files. With the upgrade from legacy actor storage to modern actor storage in version 1.18.3, the locations in the LevelDB files which the data for actors is stored has changed and these third party developers need to be aware.
->>>>>>> 977823fd6bbdba479c512d37ab60de7eb884f02b
 
 ### What did legacy actor data look like?
 
-<<<<<<< HEAD
-Before R18U2, actor data was stored per chunk as a blob of all actors in that chunk. This meant that whenever a single actor changed, we would:
+Before version 1.18.3, actor data was stored per chunk as a blob of all actors in that chunk. This meant that whenever a single actor changed, we would:
 
 >- Collect the data from every individual actor in the chunk
 >- Append the data for each actor into a single buffer/blob
 >- Write that grouped data to the chunk
-=======
-Before version 1.18.3, actor data was stored per chunk as a blob of all actors in that chunk. This meant that whenever a single actor changed, we would:
->- collect the data from every individual actor in the chunk
->- append the data for each actor into a single buffer/blob
->- write that grouped data to the chunk
->>>>>>> 977823fd6bbdba479c512d37ab60de7eb884f02b
 
 ### Why are we moving actor data?
 
@@ -52,8 +41,7 @@ These are the smallest keys used by pushing them together contiguously on disk. 
 
 ### Non-Actor Data Chunk Key IDs
 
-```
-
+```json
 enum class LevelChunkTag : char {
   Data3D = 43,
   Version, // This was moved to the front as needed for the extended heights feature. Old chunks will not have this data.
