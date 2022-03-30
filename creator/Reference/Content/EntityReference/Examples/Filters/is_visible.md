@@ -1,5 +1,5 @@
 ---
-author: v-josjones
+author: mammerla
 ms.author: v-josjones
 title: Entity Documentation - is_visible
 ms.prod: gaming
@@ -67,7 +67,9 @@ Returns true if the subject entity is visible.
 
 ### wandering trader
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wandering_trader.json" range="170-218":::
+```json
+  { "test": "is_visible", "subject": "self", "value": true }
+```
 
 ## Vanilla entities using `is_visible`
 

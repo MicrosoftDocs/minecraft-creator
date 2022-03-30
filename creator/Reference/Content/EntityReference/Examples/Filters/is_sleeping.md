@@ -1,5 +1,5 @@
 ---
-author: v-josjones
+author: mammerla
 ms.author: v-josjones
 title: Entity Documentation - is_sleeping
 ms.prod: gaming
@@ -67,7 +67,9 @@ Tests whether the Subject is sleeping.
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="663-669":::
+```json
+{ "test": "is_sleeping", "value": true }
+``````
 
 ## Vanilla entities using `is_sleeping`
 

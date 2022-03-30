@@ -1,5 +1,5 @@
 ---
-author: v-josjones
+author: mammerla
 ms.author: v-josjones
 title: Item Documentation - minecraft:food
 ms.prod: gaming
@@ -49,8 +49,39 @@ ms.prod: gaming
 ## Vanilla entities examples
 
 ### appleEnchanted
-
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/items/appleEnchanted.json" range="13-43":::
+```json
+"minecraft:food": {
+  "nutrition": 4,
+  "saturation_modifier": "supernatural",
+  "can_always_eat": true,
+  "effects": [
+    {
+      "name": "regeneration",
+      "chance": 1.0,
+      "duration": 30,
+      "amplifier": 4
+    },
+    {
+      "name": "absorption",
+      "chance": 1.0,
+      "duration": 120, // 2 * 60
+      "amplifier": 3
+    },
+    {
+      "name": "resistance", // damage resistance
+      "chance": 1.0,
+      "duration": 300,
+      "amplifier": 0
+    },
+    {
+      "name": "fire_resistance",
+      "chance": 1.0,
+      "duration": 300,
+      "amplifier": 0
+    }
+  ]
+}
+```
 
 ## Vanilla entities using `minecraft:food`
 

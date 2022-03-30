@@ -1,5 +1,5 @@
 ---
-author: v-josjones
+author: mammerla
 ms.author: v-josjones
 title: Entity Documentation - is_underground
 ms.prod: gaming
@@ -67,7 +67,14 @@ Returns true when the subject entity is underground. An entity is considered und
 
 ### spider
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/spider.json" range="246-259":::
+```json
+{
+    "test": "is_underwater",
+    "subject": "self",
+    "operator": "==",
+    "value": true
+}
+```
 
 ## Vanilla entities using `is_underground`
 

@@ -1,5 +1,5 @@
 ---
-author: v-josjones
+author: mammerla
 ms.author: v-josjones
 title: Entity Documentation - rider_count
 ms.prod: gaming
@@ -63,7 +63,9 @@ Returns the number of riders on this entity.
 
 ### chicken
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/chicken.json" range="74-84":::
+```json
+{ "test": "rider_count", "subject": "self", "operator": "==", "value": 0 } 
+```
 
 ## Vanilla entities using `rider_count`
 
