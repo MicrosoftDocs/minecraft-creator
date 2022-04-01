@@ -1,5 +1,5 @@
 ---
-author: v-josjones
+author: mammerla
 ms.author: v-josjones
 title: Entity Documentation - random_chance
 ms.prod: gaming
@@ -63,7 +63,9 @@ An example is if a `value` of 5 is set, a random number in the range of 0 - 5 wi
 
 ## Vanilla entities examples
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zoglin.json" range="158-177":::
+```json
+{ "test": "random_chance", "value": 800 }
+```
 
 ## Vanilla entities examples using `random_chance`
 

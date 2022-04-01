@@ -1,5 +1,5 @@
 ---
-author: v-josjones
+author: mammerla
 ms.author: v-josjones
 title: Entity Documentation - minecraft:area_attack
 ms.prod: gaming
@@ -40,7 +40,20 @@ ms.prod: gaming
 
 ### pufferfish
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/pufferfish.json" range="80-90":::
+```json
+"minecraft:area_attack" : {
+    "damage_range": 0.2,
+    "damage_per_tick": 2,
+    "cause": "contact",
+    "entity_filter": {
+        "any_of": [
+            { "test": "is_family", "subject": "other", "value": "player" },
+            { "test": "is_family", "subject": "other", "value": "monster" }
+        ]    
+    }
+}
+```
+
 
 ## Vanilla entities using `minecraft:area_attack`
 
