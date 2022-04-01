@@ -53,6 +53,9 @@ To load a resource pack into Minecraft, a manifest file will need to be created.
 - **Version**: Version of the resource pack.
 - **Minimum Engine Version**: Required version of Minecraft that this pack will work in.
 
+> [!NOTE]
+> To learn more about how a manifest.json file works, see the the Addons Reference [manifest.json](../Reference/Content/AddonsReference/Examples/AddonManifest.md) documentation.
+
  Minecraft will parse the information from the manifest file and display it in the Add-On section of the game. Inside the file, the information will be split into two separate sections: header and modules. The header section will contain the overall information for the pack, and the modules section will contain the dedicated packages information.
 
 1. Right-click in the Explorer window, select **New > Text Document**.
@@ -93,9 +96,6 @@ Universally Unique Identifier, or UUID for short, is a unique number used to ide
 1. Refresh the webpage to generate a new UUID for use in the Modules section.
 1. Copy and paste the new UUID into the modules section in the `"uuid"` field between the quotation marks.
 1. Save the manifest.json file.
-
-> [!NOTE]
-> To learn more about how a manifest.json file works, you can click this link to see the page in the Addons documentation: [manifest.json](../Reference/Content/AddonsReference/Examples/AddonManifest.md).
 
 ## Changing the dirt block
 
