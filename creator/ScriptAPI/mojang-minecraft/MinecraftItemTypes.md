@@ -4305,6 +4305,12 @@ Type: [*ItemType*](ItemType.md)
 Type: [*ItemType*](ItemType.md)
 
 
+### **item.mangroveDoor**
+`static read-only item.mangroveDoor: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
 ### **item.netherSprouts**
 `static read-only item.netherSprouts: ItemType;`
 
@@ -4871,8 +4877,68 @@ Type: [*ItemType*](ItemType.md)
 Type: [*ItemType*](ItemType.md)
 
 
+### **mangroveBoat**
+`static read-only mangroveBoat: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mangroveButton**
+`static read-only mangroveButton: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mangroveChestBoat**
+`static read-only mangroveChestBoat: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mangroveDoor**
+`static read-only mangroveDoor: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mangroveDoubleSlab**
+`static read-only mangroveDoubleSlab: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mangroveFence**
+`static read-only mangroveFence: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mangroveFenceGate**
+`static read-only mangroveFenceGate: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
 ### **mangroveLeaves**
 `static read-only mangroveLeaves: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mangroveLog**
+`static read-only mangroveLog: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mangrovePlanks**
+`static read-only mangrovePlanks: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mangrovePressurePlate**
+`static read-only mangrovePressurePlate: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -4885,6 +4951,54 @@ Type: [*ItemType*](ItemType.md)
 
 ### **mangrovePropaguleHanging**
 `static read-only mangrovePropaguleHanging: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mangroveRoots**
+`static read-only mangroveRoots: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mangroveSign**
+`static read-only mangroveSign: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mangroveSlab**
+`static read-only mangroveSlab: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mangroveStairs**
+`static read-only mangroveStairs: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mangroveStandingSign**
+`static read-only mangroveStandingSign: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mangroveTrapdoor**
+`static read-only mangroveTrapdoor: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mangroveWallSign**
+`static read-only mangroveWallSign: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **mangroveWood**
+`static read-only mangroveWood: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -5014,8 +5128,6 @@ Type: [*ItemType*](ItemType.md)
 ### **movingBlock**
 `static read-only movingBlock: ItemType;`
 
-Represents an item that can place a moving block within Minecraft.
-
 Type: [*ItemType*](ItemType.md)
 
 
@@ -5051,6 +5163,12 @@ Type: [*ItemType*](ItemType.md)
 
 ### **mudBrickWall**
 `static read-only mudBrickWall: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **muddyMangroveRoots**
+`static read-only muddyMangroveRoots: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -5161,18 +5279,6 @@ Type: [*ItemType*](ItemType.md)
 `static read-only mycelium: ItemType;`
 
 Represents an item that can place a mycelium plant within Minecraft.
-
-Type: [*ItemType*](ItemType.md)
-
-
-### **mysteriousFrame**
-`static read-only mysteriousFrame: ItemType;`
-
-Type: [*ItemType*](ItemType.md)
-
-
-### **mysteriousFrameSlot**
-`static read-only mysteriousFrameSlot: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -5621,8 +5727,6 @@ Type: [*ItemType*](ItemType.md)
 
 ### **pistonArmCollision**
 `static read-only pistonArmCollision: ItemType;`
-
-Represents an item that can place a piston arm within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
@@ -6315,6 +6419,12 @@ Represents an item that can place a redstone wire within Minecraft.
 Type: [*ItemType*](ItemType.md)
 
 
+### **reinforcedDeepslate**
+`static read-only reinforcedDeepslate: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
 ### **repeater**
 `static read-only repeater: ItemType;`
 
@@ -6463,8 +6573,6 @@ Type: [*ItemType*](ItemType.md)
 
 ### **seaLantern**
 `static read-only seaLantern: ItemType;`
-
-Represents an item that can place a sealantern within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
@@ -6924,8 +7032,6 @@ Type: [*ItemType*](ItemType.md)
 ### **stickyPistonArmCollision**
 `static read-only stickyPistonArmCollision: ItemType;`
 
-Represents an item that can place a sticky piston arm within Minecraft.
-
 Type: [*ItemType*](ItemType.md)
 
 
@@ -7085,6 +7191,18 @@ Type: [*ItemType*](ItemType.md)
 `static read-only strippedJungleLog: ItemType;`
 
 Represents an item that can place a stripped jungle log within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **strippedMangroveLog**
+`static read-only strippedMangroveLog: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+
+### **strippedMangroveWood**
+`static read-only strippedMangroveWood: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -7257,8 +7375,6 @@ Type: [*ItemType*](ItemType.md)
 
 ### **tripWire**
 `static read-only tripWire: ItemType;`
-
-Represents an item that can place a tripwire within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 

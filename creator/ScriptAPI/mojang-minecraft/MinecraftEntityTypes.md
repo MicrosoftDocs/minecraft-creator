@@ -17,6 +17,12 @@ description: Contents of the mojang-minecraft.MinecraftEntityTypes class.
 Type: [*EntityType*](EntityType.md)
 
 
+### **allay**
+`static read-only allay: EntityType;`
+
+Type: [*EntityType*](EntityType.md)
+
+
 ### **areaEffectCloud**
 `static read-only areaEffectCloud: EntityType;`
 
@@ -73,6 +79,12 @@ Type: [*EntityType*](EntityType.md)
 
 ### **caveSpider**
 `static read-only caveSpider: EntityType;`
+
+Type: [*EntityType*](EntityType.md)
+
+
+### **chestBoat**
+`static read-only chestBoat: EntityType;`
 
 Type: [*EntityType*](EntityType.md)
 
@@ -211,6 +223,12 @@ Type: [*EntityType*](EntityType.md)
 
 ### **fox**
 `static read-only fox: EntityType;`
+
+Type: [*EntityType*](EntityType.md)
+
+
+### **frog**
+`static read-only frog: EntityType;`
 
 Type: [*EntityType*](EntityType.md)
 
@@ -497,6 +515,12 @@ Type: [*EntityType*](EntityType.md)
 Type: [*EntityType*](EntityType.md)
 
 
+### **tadpole**
+`static read-only tadpole: EntityType;`
+
+Type: [*EntityType*](EntityType.md)
+
+
 ### **thrownTrident**
 `static read-only thrownTrident: EntityType;`
 
@@ -559,6 +583,12 @@ Type: [*EntityType*](EntityType.md)
 
 ### **wanderingTrader**
 `static read-only wanderingTrader: EntityType;`
+
+Type: [*EntityType*](EntityType.md)
+
+
+### **warden**
+`static read-only warden: EntityType;`
 
 Type: [*EntityType*](EntityType.md)
 
