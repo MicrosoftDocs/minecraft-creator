@@ -1,6 +1,6 @@
 ---
-author: neonerz
-ms.author: v-jeffreykim
+author: docsbryce
+ms.author: v-bbortree
 title: Differences Between Minecraft Bedrock Edition and Minecraft Java Edition
 ms.prod: gaming
 description: "An article covering the major differences between Minecraft: Bedrock Edition and Minecraft: Java Edition"
@@ -32,8 +32,6 @@ Bedrock Edition was launched on Sept. 20, 2017 and was based on Minecraft: Pocke
 The most obvious difference between both versions is the world format. Bedrock Edition uses the LevelDB format for world storage while Java Edition uses the Anvil format. Due to this, most third-party tools created for Java Edition world editing will not work on Bedrock Edition.
 
 The two versions also use a fairly different block format. Java Edition has flattened its block format using a unique string for each individual block and storing the state of that block separately. Similarly, Bedrock Edition has moved to a string-based system with block states, but have kept some blocks grouped together defined by data value. Basically, this means that blocks are named differently between the versions. In Bedrock Edition, granite would be `stone 1` whereas on Java Edition it’s simply `granite`.
-
-Another key difference is how the world is generated. Even though both versions use a similar process for generating terrain, they use a different random number generator. This means seeds are not cross-compatible between versions. A seed used in Bedrock Edition will generate differently than it would in Java Edition. This makes creating content in Java Edition aimed for Bedrock Edition a bit more difficult.
 
 ## Redstone and Command Differences
 

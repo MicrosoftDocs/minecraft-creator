@@ -10,7 +10,7 @@ description: Contents of the mojang-minecraft.MusicOptions class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-Additional configuration options for [*mojang-minecraft.Player*](../mojang-minecraft/Player.md).playMusic/[*mojang-minecraft*](../mojang-minecraft/mojang-minecraft.md).Player.queueMusic methods.
+Additional configuration options for [*mojang-minecraft.World.playMusic*](../mojang-minecraft/World.md#playmusic)/[*mojang-minecraft.World.queueMusic*](../mojang-minecraft/World.md#queuemusic) methods.
 
 ## Properties
 ### **fade**
@@ -19,14 +19,6 @@ Additional configuration options for [*mojang-minecraft.Player*](../mojang-minec
 Specifies a fade overlap for music at the end of play.
 
 Type: *number*
-
-
-### **location**
-`location: Location;`
-
-(to be removed in a future update.)
-
-Type: [*Location*](Location.md)
 
 
 ### **loop**

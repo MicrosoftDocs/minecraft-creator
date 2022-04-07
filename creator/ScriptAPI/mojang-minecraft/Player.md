@@ -83,6 +83,14 @@ Optional name tag of the player.
 Type: *string*
 
 
+### **onScreenDisplay**
+`read-only onScreenDisplay: ScreenDisplay;`
+
+Contains methods for manipulating the on-screen display of a Player.
+
+Type: [*ScreenDisplay*](ScreenDisplay.md)
+
+
 ### **selectedSlot**
 `selectedSlot: number;`
 
@@ -122,6 +130,7 @@ Type: [*Vector*](Vector.md)
 - [getBlockFromViewVector](#getblockfromviewvector)
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
+- [getDynamicProperty](#getdynamicproperty)
 - [getEffect](#geteffect)
 - [getEntitiesFromViewVector](#getentitiesfromviewvector)
 - [getItemCooldown](#getitemcooldown)
@@ -130,8 +139,10 @@ Type: [*Vector*](Vector.md)
 - [hasTag](#hastag)
 - [kill](#kill)
 - [playSound](#playsound)
+- [removeDynamicProperty](#removedynamicproperty)
 - [removeTag](#removetag)
 - [runCommand](#runcommand)
+- [setDynamicProperty](#setdynamicproperty)
 - [setVelocity](#setvelocity)
 - [startItemCooldown](#startitemcooldown)
 - [teleport](#teleport)
@@ -215,6 +226,20 @@ Returns all components that are both present on this entity and supported by the
 
 #### **Returns** [*IEntityComponent*](IEntityComponent.md)[]
 
+
+### **getDynamicProperty**
+`
+getDynamicProperty(identifier: string): boolean | number | string
+`
+
+Returns a property value.
+#### **Parameters**
+- **identifier**: *string*
+
+#### **Returns** *boolean* | *number* | *string* - Returns the value for the property, or undefined if the property has not been set.
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **getEffect**
 `
@@ -333,6 +358,20 @@ Plays a sound that only this particular player can hear.
 > [!WARNING]
 > This function can throw errors.
 
+### **removeDynamicProperty**
+`
+removeDynamicProperty(identifier: string): boolean
+`
+
+Removes a specified property.
+#### **Parameters**
+- **identifier**: *string*
+
+#### **Returns** *boolean*
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **removeTag**
 `
 removeTag(tag: string): boolean
@@ -371,6 +410,22 @@ Runs a particular command from the context of this player.
 player.runCommand("say You got a new high score!");
 player.runCommand("scoreboard players set @s score 10");
 ```
+### **setDynamicProperty**
+`
+setDynamicProperty(identifier: string, value: boolean | number | string): void
+`
+
+Sets a specified property to a value.
+#### **Parameters**
+- **identifier**: *string*
+- **value**: *boolean* | *number* | *string*
+  
+  Data value of the property to set.
+
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **setVelocity**
 `
 setVelocity(velocity: Vector): void

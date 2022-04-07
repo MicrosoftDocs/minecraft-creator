@@ -1,5 +1,5 @@
 ---
-author: v-josjones
+author: JDHeaden
 ms.author: v-josjones
 title: Entity Documentation - minecraft:behavior.follow_owner
 ms.prod: gaming
@@ -35,7 +35,14 @@ ms.prod: gaming
 
 ### cat
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/cat.json" range="170-175":::
+```json
+"minecraft:behavior.follow_owner": {
+  "priority": 4,
+  "speed_multiplier": 1.0,
+  "start_distance": 10,
+  "stop_distance": 2
+}
+```
 
 ## Vanilla entities using `minecraft:behavior.follow_owner`
 

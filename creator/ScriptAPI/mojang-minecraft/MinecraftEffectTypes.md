@@ -35,6 +35,12 @@ Type: [*EffectType*](EffectType.md)
 Type: [*EffectType*](EffectType.md)
 
 
+### **darkness**
+`static read-only darkness: EffectType;`
+
+Type: [*EffectType*](EffectType.md)
+
+
 ### **empty**
 `static read-only empty: EffectType;`
 
