@@ -24,10 +24,13 @@ Type: [*Events*](Events.md)
 
 ## Methods
 - [getDimension](#getdimension)
+- [getDynamicProperty](#getdynamicproperty)
 - [getPlayers](#getplayers)
 - [playMusic](#playmusic)
 - [playSound](#playsound)
 - [queueMusic](#queuemusic)
+- [removeDynamicProperty](#removedynamicproperty)
+- [setDynamicProperty](#setdynamicproperty)
 - [stopMusic](#stopmusic)
   
 ### **getDimension**
@@ -42,6 +45,20 @@ getDimension(dimensionId: string): Dimension
 
 > [!WARNING]
 > Throws if the given dimension name is invalid
+
+### **getDynamicProperty**
+`
+getDynamicProperty(identifier: string): boolean | number | string
+`
+
+Returns a property value.
+#### **Parameters**
+- **identifier**: *string*
+
+#### **Returns** *boolean* | *number* | *string* - Returns the value for the property, or undefined if the property has not been set.
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **getPlayers**
 `
@@ -92,6 +109,36 @@ Queues an additional music track for players. If a track is not playing, a music
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
 
 
+
+### **removeDynamicProperty**
+`
+removeDynamicProperty(identifier: string): boolean
+`
+
+Removes a specified property.
+#### **Parameters**
+- **identifier**: *string*
+
+#### **Returns** *boolean*
+
+> [!WARNING]
+> This function can throw errors.
+
+### **setDynamicProperty**
+`
+setDynamicProperty(identifier: string, value: boolean | number | string): void
+`
+
+Sets a specified property to a value.
+#### **Parameters**
+- **identifier**: *string*
+- **value**: *boolean* | *number* | *string*
+  
+  Data value of the property to set.
+
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **stopMusic**
 `

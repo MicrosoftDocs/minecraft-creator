@@ -103,14 +103,17 @@ Type: [*Vector*](Vector.md)
 - [getBlockFromViewVector](#getblockfromviewvector)
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
+- [getDynamicProperty](#getdynamicproperty)
 - [getEffect](#geteffect)
 - [getEntitiesFromViewVector](#getentitiesfromviewvector)
 - [getTags](#gettags)
 - [hasComponent](#hascomponent)
 - [hasTag](#hastag)
 - [kill](#kill)
+- [removeDynamicProperty](#removedynamicproperty)
 - [removeTag](#removetag)
 - [runCommand](#runcommand)
+- [setDynamicProperty](#setdynamicproperty)
 - [setVelocity](#setvelocity)
 - [teleport](#teleport)
 - [teleportFacing](#teleportfacing)
@@ -203,6 +206,20 @@ Returns all components that are both present on this entity and supported by the
 #### **Returns** [*IEntityComponent*](IEntityComponent.md)[]
 
 
+### **getDynamicProperty**
+`
+getDynamicProperty(identifier: string): boolean | number | string
+`
+
+Returns a property value.
+#### **Parameters**
+- **identifier**: *string*
+
+#### **Returns** *boolean* | *number* | *string* - Returns the value for the property, or undefined if the property has not been set.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **getEffect**
 `
 getEffect(effectType: EffectType): Effect
@@ -286,6 +303,20 @@ Kills this entity. The entity will drop loot as normal.
 > [!WARNING]
 > This function can throw errors.
 
+### **removeDynamicProperty**
+`
+removeDynamicProperty(identifier: string): boolean
+`
+
+Removes a specified property.
+#### **Parameters**
+- **identifier**: *string*
+
+#### **Returns** *boolean*
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **removeTag**
 `
 removeTag(tag: string): boolean
@@ -324,6 +355,22 @@ Runs a particular command from the context of this entity.
 entity.runCommand("say You got a new high score!");
 entity.runCommand("scoreboard players set @p score 10");
 ```
+### **setDynamicProperty**
+`
+setDynamicProperty(identifier: string, value: boolean | number | string): void
+`
+
+Sets a specified property to a value.
+#### **Parameters**
+- **identifier**: *string*
+- **value**: *boolean* | *number* | *string*
+  
+  Data value of the property to set.
+
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **setVelocity**
 `
 setVelocity(velocity: Vector): void

@@ -40,3 +40,11 @@ True if the lever is activated (that is, transmitting power).
 Type: *boolean*
 
 
+### **player**
+`read-only player: Player;`
+
+Optional player that triggered the lever activation.
+
+Type: [*Player*](Player.md)
+
+
