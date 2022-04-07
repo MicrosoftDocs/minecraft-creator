@@ -10,6 +10,8 @@ description: Contents of the mojang-minecraft.EntityTypes class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
+Used for accessing all entity types currently available for use within the world.
+
 ## Methods
 - [get](#get)
 - [getAll](#getall)
@@ -19,6 +21,7 @@ description: Contents of the mojang-minecraft.EntityTypes class.
 get(identifier: string): EntityType
 `
 
+Retrieves an entity type using a string-based identifier.
 #### **Parameters**
 - **identifier**: *string*
 
@@ -30,6 +33,7 @@ get(identifier: string): EntityType
 getAll(): EntityTypeIterator
 `
 
+Retrieves an iterator of all entity types within this world.
 
 #### **Returns** [*EntityTypeIterator*](EntityTypeIterator.md)
 
