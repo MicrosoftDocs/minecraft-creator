@@ -1,5 +1,5 @@
 ---
-author: v-josjones
+author: mammerla
 ms.author: v-josjones
 title: Block Documentation - set_block_property
 ms.prod: gaming
@@ -20,7 +20,7 @@ ms.prod: gaming
 ## Example
 
 ```json
-"set_block_property":{
-    "Molang":
+"set_block_property": {
+  "property name here": "Molang expression here"
 }
 ```
