@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.ItemDefinitionEventSignal class.
 
 Manages callbacks that are connected to an item's definition and components changing.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -41,5 +40,4 @@ Removes a callback from being called when an item's definition and components ch
 
 > [!WARNING]
 > This function can throw errors.
-
 

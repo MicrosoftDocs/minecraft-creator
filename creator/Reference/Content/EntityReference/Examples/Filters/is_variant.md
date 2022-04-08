@@ -1,5 +1,5 @@
 ---
-author: v-josjones
+author: mammerla
 ms.author: v-josjones
 title: Entity Documentation - is_variant
 ms.prod: gaming
@@ -63,7 +63,14 @@ Returns true if the subject entity is the variant number provided.
 
 ### panda
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/panda.json" range="565-608":::
+```json
+{
+    "test": "is_variant",
+    "subject": "self",
+    "operator": "==",
+    "value": 3
+}
+```
 
 ## Vanilla entities using `is_variant`
 

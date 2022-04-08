@@ -10,12 +10,12 @@ description: Contents of the mojang-minecraft.InventoryComponentContainer class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-## Base Types
+## Extends
 - [*Container*](Container.md)
 
-## Directly Derived Types
+## Classes that extend InventoryComponentContainer
 - [*PlayerInventoryComponentContainer*](PlayerInventoryComponentContainer.md)
-  
+
 Represents a container that can hold stacks of items. Used for entities like players, chest minecarts, llamas, and more.
 
 ## Properties
@@ -151,4 +151,3 @@ Moves an item from one slot to another, potentially across containers.
 ```javascript
 rightChestContainer.transferItem(0, 4, chestCartContainer); // transfer the apple from the right chest to a chest cart
 ```
-

@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.BeforeChatEventSignal class.
 
 Manages callbacks that are connected to an event that fires before chat messages are sent.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -41,5 +40,4 @@ Removes a callback from being called before new chat messages are sent.
 
 > [!WARNING]
 > This function can throw errors.
-
 

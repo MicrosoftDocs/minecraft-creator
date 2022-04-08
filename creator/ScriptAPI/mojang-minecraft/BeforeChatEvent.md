@@ -53,5 +53,3 @@ List of players that will receive this message.
 Type: [*Player*](Player.md)[]
 
 
-
-
