@@ -61,5 +61,3 @@ Returns the source entity that triggered this item event.
 Type: [*Entity*](Entity.md)
 
 
-
-

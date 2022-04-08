@@ -20,10 +20,17 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:on_hurt":{
-    "event": "minecraft:you_hit_me",
-    "filters": {"test": "has_damage", "value": "contact"},
-    "target": "self",
+"minecraft:on_hurt": {
+    "priority": 2,
+    "cast_duration": 2.5,
+    "look_at_target": true,
+    "sequence": [
+        {
+            "base_delay": 1.25,
+            "event": "wololo",
+            "sound_event": "prepare.wololo"
+        }
+    ]
 }
 ```
 

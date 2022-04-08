@@ -1,5 +1,5 @@
 ---
-author: v-josjones
+author: mammerla
 ms.author: v-josjones
 title: Entity Documentation - weather
 ms.prod: gaming
@@ -49,7 +49,7 @@ Tests for the current weather state the entity is experiencing.
 ### Full
 
 ```json
-{ "test": "weather", "subject": "self", "operator": "equals", "value": "player" }
+{ "test": "weather", "subject": "self", "operator": "==", "value": "player" }
 ```
 
 ### Short (using Defaults)
@@ -62,7 +62,13 @@ Tests for the current weather state the entity is experiencing.
 
 ### bee
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/bee.json" range="334-344":::
+```json
+{
+    "test": "weather",
+    "operator": "==",
+    "value": "precipitation"
+}
+```
 
 ## Vanilla Mobs using `weather`
 

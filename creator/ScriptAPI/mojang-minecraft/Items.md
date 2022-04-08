@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.Items class.
 
 Represents a collection of all of the available item types in Minecraft.
 
-
 ## Methods
 - [get](#get)
   
@@ -28,6 +27,5 @@ Returns an item type given an item type identifier.
   Type of the item to return.
 
 #### **Returns** [*ItemType*](ItemType.md)
-
 
 

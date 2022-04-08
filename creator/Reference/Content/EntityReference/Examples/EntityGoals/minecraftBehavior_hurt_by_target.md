@@ -13,23 +13,23 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|alert_same_type| false| Boolean| If true, nearby mobs of the same type will be alerted about the damage |
-|[entity_types](../Definitions/NestedTables/entity_types.md)|*not set* | JSON Object| List of entity types that this mob can target if they hurt their owner|
-|hurt_owner| false| Boolean|  If true, the mob will hurt its owner and other mobs with the same owner as itself |
+| alert_same_type | false | Boolean| If true, nearby mobs of the same type will be alerted about the damage |
+| [entity_types](../Definitions/NestedTables/entity_types.md) | *not set* | JSON Object | List of entity types that this mob can target if they hurt their owner|
+| hurt_owner | false | Boolean |  If true, the mob will hurt its owner and other mobs with the same owner as itself |
 
 ## Example
 
 ```json
-"minecraft:behavior.hurt_by_target":{
-    "priority": 1,
-    "alert_same_type":true,
-    "hurt_owner": false,
-        "entity_types": {
-            "filters":{
-              "test": "is_family", "subject": "other", "value": "player"
-            },
-            "max_dist":32
-          }
+"minecraft:behavior.hurt_by_target":  {
+    "priority": 2,
+    "entity_types": {
+        "filters": {
+            "test": "is_family",
+            "subject": "other",
+            "operator": "!=",
+            "value": "goat"
+        }
+    }
 }
 ```
 

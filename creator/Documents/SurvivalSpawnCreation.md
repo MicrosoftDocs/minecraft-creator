@@ -16,7 +16,7 @@ Survival spawns take on many shapes and forms, all with their own considerations
 
 Survival spawns should generally contain everything necessary for players to experience the Minecraft survival loop. That means access to ores and materials for crafting, as well as access to the End and the Nether. It should also contain substantial edits to the base seed world.
 
-If you're depending on your build blending into natural generation, your first step should be locating an appropriate **Bedrock Edition** seed to base your world on and then generating an area to build on. Because the terrain generator in Java Edition and Bedrock Edition are not the same, creating a survival spawn on Java Edition terrain will result in undesirable terrain blending issues at the edges of the map that are challenging to fix.
+If you're depending on your build blending into natural generation, your first step should be locating an appropriate **Bedrock Edition** seed to base your world on and then generating an area to build on. As of 1.18, Bedrock and Java have seed parity so long as the seed number is 9 or fewer characters.
 
 The most stable way to build a survival spawn is to build it directly in Bedrock Edition, however most publicly available [tools](CommonlyUsedTools.md) for building in Minecraft exist for Java Edition. Fortunately, tools such as [Chunker](https://chunker.app) that allow converting Bedrock Edition worlds into Java Edition worlds exist.
 

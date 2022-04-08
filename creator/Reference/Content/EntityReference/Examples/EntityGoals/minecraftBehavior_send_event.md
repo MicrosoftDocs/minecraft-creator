@@ -30,16 +30,16 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:behavior.send_event":{
+"minecraft:behavior.send_event": {
     "priority": 2,
     "cast_duration": 2.5,
     "look_at_target": true,
     "sequence": [
-    {
-        "base_delay": 1.25,
-        "event": "wololo",
-        "sound_event": "prepare.wololo"
-    }
+        {
+            "base_delay": 1.25,
+            "event": "wololo",
+            "sound_event": "prepare.wololo"
+        }
     ]
 }
 ```

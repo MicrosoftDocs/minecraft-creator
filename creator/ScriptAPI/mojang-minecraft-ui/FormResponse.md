@@ -10,15 +10,11 @@ description: Contents of the mojang-minecraft-ui.FormResponse class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-## Base Types
-- [*FormResponse*](FormResponse.md)
-
-## Directly Derived Types
-- [*FormResponse*](FormResponse.md)
+## Classes that extend FormResponse
 - [*ActionFormResponse*](ActionFormResponse.md)
 - [*MessageFormResponse*](MessageFormResponse.md)
 - [*ModalFormResponse*](ModalFormResponse.md)
-  
+
 Base type for a form response.
 
 ## Properties
@@ -28,7 +24,5 @@ Base type for a form response.
 If true, the form was canceled by the player (e.g., they selected the pop-up X close button).
 
 Type: *boolean*
-
-
 
 

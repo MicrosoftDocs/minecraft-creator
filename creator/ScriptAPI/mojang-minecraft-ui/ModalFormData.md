@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft-ui.ModalFormData class.
 
 Used to create a fully customizable pop-up form for a player.
 
-
 ## Methods
 - [constructor](#constructor)
 - [dropdown](#dropdown)
@@ -128,6 +127,5 @@ Adds a toggle checkbox button to the form.
 - **defaultValue**?: *boolean* = `null`
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
-
 
 

@@ -16,13 +16,15 @@ Contains optional parameters for registering an entity event.
 ### **entities**
 `entities: Entity[];`
 
+If this value is set, this event will only fire for entities that match the entities within this collection.
+
 Type: [*Entity*](Entity.md)[]
 
 
 ### **entityTypes**
 `entityTypes: string[];`
 
-If this value is set, this event will only fire if the impacted entity matches this parameter.
+If this value is set, this event will only fire if the impacted entities' type matches this parameter.
 
 Type: *string*[]
 
@@ -38,6 +40,5 @@ new EntityEventOptions()
 
 
 #### **Returns** [*EntityEventOptions*](EntityEventOptions.md)
-
 
 

@@ -26,7 +26,7 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.admire_item":{
     "priority": 4,
-    "admire_item_sound":"admire",
+    "admire_item_sound": "admire",
     "sound_interval": {
         "range_min": 0.0,
         "range_max": 5.0
