@@ -8,7 +8,7 @@ description: A guide about ticking areas.
 
 # Introduction to Ticking Areas
 
-Minecraft time passes in ticks and (typically) only in the chunks of the world where there is a player. The chunk of area around a player is where time ticks by - so we call this a "ticking area." In this area, crops grow, mobs spawn, and command blocks function as intended. But when the player leaves the ticking area, time stops. Crops don't grow, mobs won't spawn, and command blocks stop functioning. If you want command block to work all the time, no matter where players are, you can use the `/tickingarea` command.
+Minecraft time passes (typically) only in the chunks of the world where there is a player. The chunk of area around a player is where time passes in ticks, so we call this a "ticking area." In this area, crops grow, mobs spawn, and command blocks function as intended. But when the player leaves the ticking area, time stops. Crops don't grow, mobs won't spawn, and command blocks stop functioning. If you want command block to work all the time, no matter where players are, you can use the `/tickingarea` command.
 
 In this tutorial you will learn the following:
 
