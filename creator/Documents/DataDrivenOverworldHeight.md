@@ -3,19 +3,19 @@ author: JDHeaden
 ms.author: v-jillheaden
 title: Data Driven Overworld Height
 ms.prod: gaming
-description: A tutorial that demonstrates how to use a behavior pack to constrain the dimensions of a world.
+description: A tutorial that demonstrates how to use a behavior pack to constrain the height and depth of a world.
 ---
 
 # Data-Driven Dimensions
 
-Creators can use this feature to change the dimensions of an existing world or to create a void map. This will improve performance by reducing memory and enabling more creative flexibility.
+Creators can use this feature to change the height and depth of an existing world or to create a void map. This will improve performance by reducing memory and enabling more creative flexibility.
 
 In this tutorial, you will learn the following:
 
 > [!div class="checklist"]
 >
 > - How to create a void world in Minecraft: Bedrock Edition.
-> - How to change the dimensions of an existing world.
+> - How to change the height and depth of an existing world.
 
 ### Requirements
 
@@ -43,11 +43,11 @@ The scope of this feature is to introduce a void generator with modifiable heigh
 
 1. Create the behavior pack folder with the usual manifest.json file.
 
-1. Create a folder on the same level as the manifest file and name it dimensions.
+1. Create a folder on the same level as the manifest file and name it **dimensions**.
 
 1. Create a file inside the dimensions folder and name it **overworld.json**.
 
-1. Put this code into the file and save it. Note that the only mutable values in this code for now are the `min` and `max` dimension bounds. You cannot modify the generator type or the dimension identifier.
+1. Put this code into the file and save it. Note that the only mutable values in this code for now are the `min` and `max` values. You cannot modify the generator type or the dimension identifier.
 
     ```json
     {
