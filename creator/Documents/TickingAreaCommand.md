@@ -29,11 +29,11 @@ You will need a Minecraft world with cheats enabled and coordinates shown.
 
 ## add
 
-Ticking areas are not made up of blocks - they are made up of the chunks Minecraft uses to create worlds. To add a ticking area, the command uses the parameters you give it to draw an imaginary shape. Any chunks that are touched by this shape are included in the ticking area. This chunk, or collection of chunks, is then saved with a name that you give it as a ticking area.
+Ticking areas are not made up of blocks - they are made up of the chunks Minecraft uses to create worlds. 
+
+When you use the `/tickingarea add ...` command, it uses the parameters you give it to draw a shape that extends all the way up and all the way down from where you place it - like a column. But, you won't actually see the shape in the game, so it's like an imaginary column. Any chunks that are touched by this column are included in the ticking area. This chunk, or collection of chunks, is then saved with a name that you give it as a ticking area.
 
 You can have up to 10 ticking areas in one world and you can keep track of them by name or by their coordinates.
-
-After you use the `/tickingarea add ...` command, you won't actually see the shape, which is why you might consider it "imaginary." Also, the shape extends all the way up and all the way down from where you place it - like a column.
 
 There are two ways to draw the shapes used to add a ticking area:
 
