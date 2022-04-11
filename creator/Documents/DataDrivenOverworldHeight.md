@@ -3,19 +3,19 @@ author: JDHeaden
 ms.author: v-jillheaden
 title: Data Driven Overworld Height
 ms.prod: gaming
-description: A tutorial that demonstrates how to use a behavior pack to constrain the height and depth of a world.
+description: A tutorial that demonstrates how to use a behavior pack to constrain the height of a world.
 ---
 
 # Data-Driven Dimensions
 
-Creators can use this feature to change the height and depth of an existing world or to create a void map. This will improve performance by reducing memory and enabling more creative flexibility.
+Creators can use this feature to change the height of an existing world or to create a void map. This will improve performance by reducing memory and enabling more creative flexibility.
 
 In this tutorial, you will learn the following:
 
 > [!div class="checklist"]
 >
 > - How to create a void world in Minecraft: Bedrock Edition.
-> - How to change the height and depth of an existing world.
+> - How to change the height of an existing world.
 
 ### Requirements
 
@@ -89,11 +89,11 @@ In this section, we will see what happens if we apply the data pack to a “vani
 
 1. Make a vanilla creative world with Show Coordinates active but do not apply the behavior pack to it yet.
 
-2. Go into the world so that it generates and saves terrain at the usual height and depth.
+2. Go into the world so that it generates and saves terrain at the usual height.
 
-3. Save and Quit the world and shut down Minecraft.
+3. Save and Quit the world, then shut down Minecraft.
 
-4. Open the overworld.json file you created in the previous section and set the min and max to values that you know are smaller than the generated world. (Smaller is just for the purpose of demo, you can of course set it larger too!) Remember, they have to be multiples of 16. To really see a drastic difference, you could set them to min: -16 and max: 16.
+4. Open the **overworld.json** file you created in the previous section and set the min and max to values that you know are smaller than the generated world. (We're using smaller values just for the purpose of this demo, of course you can set it larger, too!) Remember, they have to be multiples of 16. To really see a drastic difference, you could set them to `min: -16` and `max: 16`.
 
 5. Launch Minecraft and activate the behavior pack for the world.
 
