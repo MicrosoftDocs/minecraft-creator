@@ -83,7 +83,7 @@ To remove all of the ticking areas from the game use:
 
 ## Preloaded ticking areas
 
-Ticking areas typically load after the world containing them is launched, unless you use the `preload` overload.
+Ticking areas typically load after the world containing them is launched, unless you use the `preload` overload. This could be a useful tool for you if you're having problems with the order things are loading into a world.
 
 :::image type="content" source="Media/TickingArea/loading_ticking_areas.png" alt-text="Image of the loading ticking areas message as Minecraft launches":::
 
@@ -111,12 +111,12 @@ Creators can use the `/schedule` command to make the game wait for chunks and en
 
 ### Syntax of the /schedule command
 
-```json
-schedule on_area_loaded add <from: x y z> <to: x y z> <function:filepath> 
+```
+/schedule on_area_loaded add <from: x y z> <to: x y z> <function:filepath> 
 
-schedule on_area_loaded add circle <center: x y z> <radius: int> <function: filepath> 
+/schedule on_area_loaded add circle <center: x y z> <radius: int> <function: filepath> 
 
-schedule on_area_loaded add tickingarea <name: string> <function: filepath>
+/schedule on_area_loaded add tickingarea <name: string> <function: filepath>
 ```
 
 ## What's Next?
