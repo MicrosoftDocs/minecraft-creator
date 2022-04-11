@@ -6,7 +6,7 @@ ms.prod: gaming
 description: A tutorial that demonstrates how to use a behavior pack to constrain the height of a world.
 ---
 
-# Data-Driven Dimensions
+# Data-Driven Overworld Height
 
 Creators can use this feature to change the height of an existing world or to create a void map. This will improve performance by reducing memory and enabling more creative flexibility.
 
@@ -35,7 +35,7 @@ This feature will not impact existing and saved custom biomes as it just slices 
 
 The scope of this feature is to introduce a void generator with modifiable heights to reduce memory usage and make this functionality easier for creators.
 
-## Here is how to use the Data Driven Dimension Behavior Pack
+## Here is how to use the Data Driven Overworld Height behavior pack
 
 ### First, use it to create a void world
 
