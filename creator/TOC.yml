@@ -70,6 +70,12 @@
               href: Documents/RTXPBRIntro.md
             - name: Physically Based Rendering Tutorial
               href: Documents/RTXPBRTutorial.md
+        - name: Structure Blocks
+          items:
+          - name: Introduction to Structure Blocks
+            href: Documents/IntroductionToStructureBlocks.md
+          - name: Structure Blocks Tutorial
+            href: Documents/StructureBlocksTutorial.md
     - name: Tools and Frameworks
       items:
         - name: GameTest Framework
