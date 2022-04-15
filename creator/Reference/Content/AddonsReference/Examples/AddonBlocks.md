@@ -132,7 +132,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:command_block |
 | minecraft:composter |
 | minecraft:concrete |
-| minecraft:concretePowder |
+| minecraft:concrete_powder |
 | minecraft:conduit |
 | minecraft:copper_block |
 | minecraft:copper_ore |
@@ -367,7 +367,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:flowing_lava |
 | minecraft:flowing_water |
 | minecraft:frame |
-| minecraft:frog_egg |
+| minecraft:frog_spawn |
 | minecraft:frosted_ice |
 | minecraft:furnace |
 | minecraft:gilded_blackstone |
@@ -406,7 +406,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:infested_deepslate |
 | minecraft:info_update |
 | minecraft:info_update2 |
-| minecraft:invisibleBedrock |
+| minecraft:invisible_bedrock |
 | minecraft:iron_bars |
 | minecraft:iron_block |
 | minecraft:iron_door |
@@ -460,6 +460,9 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:magenta_candle_cake |
 | minecraft:magenta_glazed_terracotta |
 | minecraft:magma |
+| minecraft:mangrove_leaves |
+| minecraft:mangrove_propagule |
+| minecraft:mangrove_propagule_hanging |
 | minecraft:medium_amethyst_bud |
 | minecraft:melon_block |
 | minecraft:melon_stem |
@@ -470,10 +473,14 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:mossy_cobblestone |
 | minecraft:mossy_cobblestone_stairs |
 | minecraft:mossy_stone_brick_stairs |
-| minecraft:movingBlock |
+| minecraft:moving_block |
+| minecraft:mud |
+| minecraft:mud_brick_double_slab |
+| minecraft:mud_brick_slab |
+| minecraft:mud_brick_stairs |
+| minecraft:mud_brick_wall |
+| minecraft:mud_bricks |
 | minecraft:mycelium |
-| minecraft:mysterious_frame |
-| minecraft:mysterious_frame_slot |
 | minecraft:nether_brick |
 | minecraft:nether_brick_fence |
 | minecraft:nether_brick_stairs |
@@ -499,12 +506,13 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:oxidized_cut_copper_stairs |
 | minecraft:oxidized_double_cut_copper_slab |
 | minecraft:packed_ice |
+| minecraft:packed_mud |
 | minecraft:pearlescent_froglight |
 | minecraft:pink_candle |
 | minecraft:pink_candle_cake |
 | minecraft:pink_glazed_terracotta |
 | minecraft:piston |
-| minecraft:pistonArmCollision |
+| minecraft:piston_arm_collision |
 | minecraft:planks |
 | minecraft:podzol |
 | minecraft:pointed_dripstone |
@@ -568,6 +576,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:redstone_torch |
 | minecraft:redstone_wire |
 | minecraft:reeds |
+| minecraft:reinforced_deepslate |
 | minecraft:repeating_command_block |
 | minecraft:reserved6 |
 | minecraft:respawn_anchor |
@@ -581,7 +590,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:sculk_sensor |
 | minecraft:sculk_shrieker |
 | minecraft:sculk_vein |
-| minecraft:seaLantern |
+| minecraft:sea_lantern |
 | minecraft:sea_pickle |
 | minecraft:seagrass |
 | minecraft:shroomlight |
@@ -621,8 +630,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:stained_hardened_clay |
 | minecraft:standing_banner |
 | minecraft:standing_sign |
-| minecraft:stickyPistonArmCollision |
 | minecraft:sticky_piston |
+| minecraft:sticky_piston_arm_collision |
 | minecraft:stone |
 | minecraft:stone_brick_stairs |
 | minecraft:stone_button |
@@ -655,7 +664,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:torch |
 | minecraft:trapdoor |
 | minecraft:trapped_chest |
-| minecraft:tripWire |
+| minecraft:trip_wire |
 | minecraft:tripwire_hook |
 | minecraft:tuff |
 | minecraft:turtle_egg |

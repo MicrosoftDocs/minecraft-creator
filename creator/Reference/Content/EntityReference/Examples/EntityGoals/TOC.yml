@@ -2,6 +2,10 @@
   href: ../AIGoalList.md
 - name: behavior.admire_item
   href: minecraftBehavior_admire_item.md
+- name: behavior.avoid_block
+  href: minecraftBehavior_avoid_block.md
+- name: behavior.avoid_mob_type
+  href: minecraftBehavior_avoid_mob_type.md
 - name: behavior.barter
   href: minecraftBehavior_barter.md
 - name: behavior.beg
@@ -11,15 +15,40 @@
 - name: behavior.breed
   href: minecraftBehavior_breed.md
 - name: behavior.defend_trusted_target
+- name: behavior.celebrate
+  href: minecraftBehavior_celebrate.md
+- name: behavior.celebrate_survive
+  href: minecraftBehavior_celebrate_survive.md
+- name: behavior.charge_attack
+  href: minecraftBehavior_charge_attack.md
+- name: behavior.charge_held_item
+  href: minecraftBehavior_charge_held_item.md
+- name: behavior.circle_around_anchor
+  href: minecraftBehavior_circle_around_anchor.md
+- name: behavior.controlled_by_player
+  href: minecraftBehavior_controlled_by_player.md
+- name: behavior.defend_trusted_target
   href: minecraftBehavior_defend_trusted_target.md
+- name: behavior.defend_village_target
+  href: minecraftBehavior_defend_village_target.md
+- name: behavior.delayed_attack
+  href: minecraftBehavior_delayed_attack.md
 - name: behavior.door_interact
   href: minecraftBehavior_door_interact.md
 - name: behavior.drink_potion
   href: minecraftBehavior_drink_potion.md
+- name: behavior.drop_item_for
+  href: minecraftBehavior_drop_item_for.md
+- name: behavior.eat_block
+  href: minecraftBehavior_eat_block.md
 - name: behavior.eat_carried_item
   href: minecraftBehavior_eat_carried_item.md
+- name: behavior.equip_item
+  href: minecraftBehavior_equip_item.md
 - name: behavior.explore_outskirts
   href: minecraftBehavior_explore_outskirts.md
+- name: behavior.fertilize_farm_block
+  href: minecraftBehavior_fertilize_farm_block.md
 - name: behavior.find_cover
   href: minecraftBehavior_find_cover.md
 - name: behavior.flee_sun
@@ -38,6 +67,10 @@
   href: minecraftBehavior_follow_target_captain.md
 - name: behavior.go_home
   href: minecraftBehavior_go_home.md
+- name: behavior.guardian_attack
+  href: minecraftBehavior_guardian_attack.md
+- name: behavior.harvest_farm_block
+  href: minecraftBehavior_harvest_farm_block.md
 - name: behavior.hide
   href: minecraftBehavior_hide.md
 - name: behavior.hold_ground
@@ -68,6 +101,10 @@
   href: minecraftBehavior_melee_attack.md
 - name: behavior.mount_pathing
   href: minecraftBehavior_mount_pathing.md
+- name: behavior.move_indoors
+  href: minecraftBehavior_move_indoors.md
+- name: behavior.move_outdoors
+  href: minecraftBehavior_move_outdoors.md
 - name: behavior.move_through_village
   href: minecraftBehavior_move_through_village.md
 - name: behavior.move_to_land
@@ -78,6 +115,10 @@
   href: minecraftBehavior_move_to_random_block.md
 - name: behavior.move_to_village
   href: minecraftBehavior_move_to_village.md
+- name: behavior.move_towards_dwelling_restriction
+  href: minecraftBehavior_move_towards_dwelling_restriction.md
+- name: behavior.move_towards_home_restriction
+  href: minecraftBehavior_move_towards_home_restriction.md
 - name: behavior.move_to_water
   href: minecraftBehavior_move_to_water.md
 - name: behavior.move_towards_target
@@ -88,6 +129,8 @@
   href: minecraftBehavior_nearest_prioritized_attackable_target.md
 - name: behavior.ocelot_sit_on_block
   href: minecraftBehavior_ocelot_sit_on_block.md
+- name: behavior.ocelotattack
+  href: minecraftBehavior_ocelotattack.md
 - name: behavior.offer_flower
   href: minecraftBehavior_offer_flower.md
 - name: behavior.open_door
@@ -126,6 +169,8 @@
   href: minecraftBehavior_random_stroll.md
 - name: behavior.restrict_open_door
   href: minecraftBehavior_restrict_open_door.md
+- name: behavior.ranged_attack
+  href: minecraftBehavior_ranged_attack.md
 - name: behavior.restrict_sun
   href: minecraftBehavior_restrict_sun.md
 - name: behavior.rise_to_liquid_level
@@ -138,10 +183,20 @@
   href: minecraftBehavior_silverfish_merge_with_stone.md
 - name: behavior.silverfish_wake_up_friends
   href: minecraftBehavior_silverfish_wake_up_friends.md
+- name: behavior.slime_attack
+  href: minecraftBehavior_slime_attack.md
+- name: behavior.slime_float
+  href: minecraftBehavior_slime_float.md
+- name: behavior.slime_keep_on_jumping
+  href: minecraftBehavior_slime_keep_on_jumping.md
+- name: behavior.slime_random_direction
+  href: minecraftBehavior_slime_random_direction.md
 - name: behavior.snacking
   href: minecraftBehavior_snacking.md
 - name: behavior.stay_while_sitting
   href: minecraftBehavior_stay_while_sitting.md
+- name: behavior.stomp_attack
+  href: minecraftBehavior_stomp_attack.md
 - name: behavior.stomp_turtle_egg
   href: minecraftBehavior_stomp_turtle_egg.md
 - name: behavior.stroll_towards_village
@@ -150,6 +205,14 @@
   href: minecraftBehavior_summon_entity.md
 - name: behavior.swell
   href: minecraftBehavior_swell.md
+- name: behavior.swim_idle
+  href: minecraftBehavior_swim_idle.md
+- name: behavior.swim_wander
+  href: minecraftBehavior_swim_wander.md
+- name: behavior.swim_with_entity
+  href: minecraftBehavior_swim_with_entity.md
+- name: behavior.swoop_attack
+  href: minecraftBehavior_swoop_attack.md
 - name: behavior.take_flower
   href: minecraftBehavior_take_flower.md
 - name: behavior.tempt
@@ -168,3 +231,5 @@
   href: minecraftBehavior_wither_target_highest_damage.md
 - name: behavior.work
   href: minecraftBehavior_work.md
+- name: behavior.work_composter
+  href: minecraftBehavior_work_composter.md

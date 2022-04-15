@@ -309,24 +309,6 @@ Here is an example of the complete feature schema:
               }
           }
       }
-      object "minecraft:catalyst_feature" : opt
-      {
-          object "description"
-          {
-              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
-          }
-          array "can_place_sculk_catalyst_on"
-          {
-               "<any array element>" : opt
-          }
-           "central_block"
-          feature_reference "patch_feature" : opt
-          feature_reference "central_patch_feature" : opt
-          int "vertical_range"
-          int "pathes_count_min"
-          int "pathes_count_max"
-          int "max_patch_distance"
-      }
       object "minecraft:sculk_patch_feature" : opt
       {
           object "description"

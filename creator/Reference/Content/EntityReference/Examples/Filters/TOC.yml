@@ -22,6 +22,8 @@
   href: has_nametag.md
 - name: has_ranged_weapon
   href: has_ranged_weapon.md
+- name: has_silk_touch
+  href: has_silk_touch.md
 - name: has_tag
   href: has_tag.md
 - name: has_target

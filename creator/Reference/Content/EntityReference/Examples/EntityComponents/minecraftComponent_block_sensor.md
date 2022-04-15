@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: docsbryce
+ms.author: v-bbortree
 title: Entity Documentation - minecraft:block_sensor
 ms.prod: gaming
 ---
@@ -15,6 +15,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 |on_break |*not set* | List| List of blocks to watch for being broken to fire off a specified event. If a block is in multiple lists, multiple events will fire.|
 |sensor_radius |16.0 | Decimal | The maximum radial distance in which a specified block can be detected. The biggest radius is 32.0. |
+| sources| []| List | List of sources that break the block to listen for. If none are specified, all block breaks will be detected. |
 
 ### on_break
 
@@ -28,16 +29,16 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:block_sensor":{
-    "sensor_radius": 25.0,
+"minecraft:block_sensor": {
+    "sensor_radius": 16,
     "on_break": [
-                {
-                    "block_list": [
-                        "minecraft:wool", "minecraft:dirt"
-                        ],
-                    "on_block_broken": "minecraft:block_broken"
-                }
-                ]
+        {
+            "block_list": [
+                "minecraft:gold_block"
+            ],
+            "on_block_broken": "important_block_destroyed_event"
+        }
+    ]
 }
 ```
 
@@ -45,8 +46,32 @@ ms.prod: gaming
 
 ### piglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="212-231":::
+```json
+"minecraft:block_sensor": {
+    "sensor_radius": 16,
+    "on_break": [
+        {
+            "block_list": [
+                "minecraft:gold_block",
+                "minecraft:gilded_blackstone",
+                "minecraft:nether_gold_ore",
+                "minecraft:deepslate_gold_ore",
+                "minecraft:raw_gold_block",
+                "minecraft:gold_ore",
+                "minecraft:chest",
+                "minecraft:trapped_chest",
+                "minecraft:ender_chest",
+                "minecraft:barrel",
+                "minecraft:shulker_box",
+                "minecraft:undyed_shulker_box"
+            ],
+            "on_block_broken": "important_block_destroyed_event"
+        }
+    ]
+}
+```
 
 ## Vanilla entities using `minecraft:block_sensor`
 
+- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)

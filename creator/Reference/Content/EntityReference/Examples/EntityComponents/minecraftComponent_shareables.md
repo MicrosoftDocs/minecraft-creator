@@ -32,6 +32,7 @@ ms.prod: gaming
 |item |*not set* | String| The name of the item. Aux value can be specified, for instance `minecraft:skull:1`.|
 | max_amount| *not set*| Integer| Maximum number of this item the mob will hold.|
 | pickup_limit| *not set*| Integer| Maximum number of this item the mob will pick up during a single goal tick.|
+| pickup_only | false | Boolean | Determines whether the mob can only pickup the item and not drop it. |
 | priority| *not set*| Integer| Prioritizes which items the entity prefers. 0 is the highest priority.|
 | stored_in_inventory| *not set*| Boolean| Determines whether the mob will try to put the item in its inventory if it has the inventory component and if it can't be equipped.|
 | surplus_amount| *not set*| Integer| Number of this item considered extra that the entity wants to share.|
@@ -57,6 +58,7 @@ In this example, an entity wants to be able to make `bread` from `wheat`. Since 
             "priority": 0,
             "max_amount": 3,
             "pickup_limit": -1, //no limit
+            "pickup_only": true,
             "store_in_inventory": true,
             "surplus_amount": 4,
             "want_amount": 3
