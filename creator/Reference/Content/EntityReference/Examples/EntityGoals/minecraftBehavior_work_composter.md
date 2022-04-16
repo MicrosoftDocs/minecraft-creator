@@ -1,7 +1,8 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: docsbryce
+ms.author: v-bbortree
 title: Entity Documentation - minecraft:behavior.work_composter
+description:
 ms.prod: gaming
 ---
 
@@ -75,5 +76,5 @@ ms.prod: gaming
 
 ## Vanilla entities using `minecraft:behavior.work_composter`
 
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphinvillager_v2.md)
+- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
 

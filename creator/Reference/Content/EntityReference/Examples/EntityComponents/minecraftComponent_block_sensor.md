@@ -2,6 +2,7 @@
 author: docsbryce
 ms.author: v-bbortree
 title: Entity Documentation - minecraft:block_sensor
+description: 
 ms.prod: gaming
 ---
 

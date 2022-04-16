@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: docsbryce
+ms.author: v-bbortree
 title: Block Documentation - minecraft:crafting_table
 ms.prod: gaming
 ---

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.celebrate_survive
 
-`minecraft:behavior.celebrate_survive` allows this entity to celebrate_survive surviving a raid by making celebration sounds and jumping.
+`minecraft:behavior.celebrate_survive` allows this entity to celebrate_survive surviving a raid by shooting fireworks.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: docsbyrce
+ms.author: v-bbortree
 title: Animation Documentation - Upgrading Animation Scripts
+description:
 ms.prod: gaming
 ---
 
@@ -13,12 +14,6 @@ If you are updating your Animation scripts to the latest version of Minecraft: B
 
 The major change with 1.18.10 is:
 - Fixed an issue where animation controller events defined in the default state would get skipped if the controller immediately transitioned to another state.
-
-
-## Upgrade from v1.18.10 to v1.18.20
-
-The major change with 1.18.20 is:
-- Molang expressions inside animation scripts for actor resource definition (pre_animation and initialize) that contain capital letters are properly evaluated now. Strings inside such expressions are not forced to lowercase anymore and work as expected.
 
 ## Upgrade from v1.10 to v1.17.30
 

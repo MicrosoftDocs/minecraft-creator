@@ -1,7 +1,8 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: docsbryce
+ms.author: v-bbortree
 title: Block Documentation - Block Components List
+description:
 ms.prod: gaming
 ---
 

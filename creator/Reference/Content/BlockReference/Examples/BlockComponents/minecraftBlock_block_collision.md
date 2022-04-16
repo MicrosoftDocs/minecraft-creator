@@ -2,6 +2,7 @@
 author: JDHeaden
 ms.author: v-jillheaden
 title: Block Documentation - minecraft:block_collision
+description:
 ms.prod: gaming
 ---
 

@@ -1,7 +1,8 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: docsbryce
+ms.author: v-bbortree
 title: Addons Documentation - Entity List
+description:
 ms.prod: gaming
 ---
 
