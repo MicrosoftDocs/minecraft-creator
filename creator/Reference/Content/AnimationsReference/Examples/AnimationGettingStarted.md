@@ -84,7 +84,7 @@ All of the above concepts are described in a detailed, bottom-up approach below
 
 ## Animation Controller
 
-One needs to be able to control how animations are played, when, and how they interact with other animations.  to group animations While a lot of this can be managed in the entity definition `scripts/animate` section, animation controllers give you the functionality of a state machine into states and control them as a block.  Animations in an animation controller state can be animation controllers themselves, allowing for arbitrarily complex animation hierarchies.
+One needs to be able to control how animations are played, when, and how they interact with other animations. While a lot of this can be managed in the entity definition `scripts/animate` section, animation controllers give you the functionality of a state machine into states and control them as a block.  Animations in an animation controller state can be animation controllers themselves, allowing for arbitrarily complex animation hierarchies.
 
 ### Example of Animation Controller
 
