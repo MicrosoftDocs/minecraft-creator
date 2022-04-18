@@ -84,6 +84,8 @@
             href: Documents/GameTestGettingStarted.md
           - name: Build your first GameTest
             href: Documents/GameTestBuildYourFirstGameTest.md
+          - name: Create a simple gameplay experience with TypeScript
+            href: Documents/ScriptingGettingStarted.md
           - name: Use Visual Studio Code tools to write script
             href: Documents/ScriptDeveloperTools.md
         - name: Creator Tools
