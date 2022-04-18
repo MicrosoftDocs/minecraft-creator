@@ -2,7 +2,6 @@
 author: JDHeaden
 ms.author: v-jillheaden
 title: Block Documentation - minecraft:aim_collision
-description:
 ms.prod: gaming
 ---
 

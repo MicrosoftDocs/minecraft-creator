@@ -2,7 +2,6 @@
 author: docsbryce
 ms.author: v-bbortree
 title: Features Documentation - Feature schema
-description:
 ms.prod: gaming
 ---
 

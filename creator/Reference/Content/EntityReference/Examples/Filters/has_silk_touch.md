@@ -2,7 +2,6 @@
 author: docsbryce
 ms.author: v-bbortree
 title: Entity Documentation - has_silk_touch
-description:
 ms.prod: gaming
 ---
 

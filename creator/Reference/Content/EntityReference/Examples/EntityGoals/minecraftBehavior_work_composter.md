@@ -2,7 +2,6 @@
 author: docsbryce
 ms.author: v-bbortree
 title: Entity Documentation - minecraft:behavior.work_composter
-description:
 ms.prod: gaming
 ---
 

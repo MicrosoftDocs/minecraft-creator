@@ -2,7 +2,6 @@
 author: docsbryce
 ms.author: v-bbortree
 title: Addons Documentation - Blocks
-description:
 ms.prod: gaming
 ---
 

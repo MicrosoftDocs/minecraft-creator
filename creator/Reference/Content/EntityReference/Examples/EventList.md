@@ -2,7 +2,6 @@
 author: v-josjones
 ms.author: v-josjones
 title: Entity Documentation - Built-in Event List
-description:
 ms.prod: gaming
 ---
 

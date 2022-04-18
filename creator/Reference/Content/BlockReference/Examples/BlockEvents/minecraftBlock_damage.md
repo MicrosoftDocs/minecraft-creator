@@ -2,7 +2,6 @@
 author: docsbryce
 ms.author: v-bbortree
 title: Block Documentation - damage
-description:
 ms.prod: gaming
 ---
 
