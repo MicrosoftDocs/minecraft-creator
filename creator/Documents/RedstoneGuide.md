@@ -60,7 +60,7 @@ Let's do an experiment to test this:
 
 1. Place another piston next to the glowing part of the redstone. It should extend.
 
-    :::image type="content" source="Media/Redstone/active_pistons.png" alt-text="Image of 3 inactive pistons":::
+    :::image type="content" source="Media/Redstone/active_pistons.png" alt-text="Image of 3 active pistons":::
 
 1. You could also add another redstone torch to boost the power.
 
