@@ -120,4 +120,4 @@ Now we have seen a behavior pack in action, you can learn more about how they wo
 > [!div class="nextstepaction"]
 > [Structure Blocks Tutorial](structureblockstutorial.md)
 
-To see examples of structures, check out the Minecraft [Structure Blocks Behavior Pack Samples](https://aka.ms/resourcepacktemplate)).
+To see examples of structures, check out the Minecraft [Structure Blocks Behavior Pack Samples](https://github.com/microsoft/minecraft-samples/blob/main/structure_blocks_sample_behavior_pack/README.md).
