@@ -40,7 +40,7 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### cat
+### sheep
 
 ```json
 "minecraft:behavior.eat_block": {

@@ -41,9 +41,9 @@ ms.prod: gaming
     "offering_distance": 1.0,
     "minimum_teleport_distance": 2.0,
     "max_head_look_at_height": 10.0,
-    "target_range": [ 5.0, 5.0, 5.0 ],
+    "target_range": [ 1.0, 1.0, 1.0 ],
     "teleport_offset": [ 0.0, 1.0, 0.0],
-    "time_of_day_range": [ 0.74999, 0.80 ],
+    "time_of_day_range": [ 0, 1 ],
     "seconds_before_pickup": 0.0,
     "search_range": 5,
     "search_height": 2,
@@ -51,10 +51,10 @@ ms.prod: gaming
     "speed_multiplier": 1.0,
     "goal_radius": 1.0,
     "entity_types": [
-    {
-        "filters": { "test": "is_family", "subject": "other", "value": "player" },
-        "max_dist": 6
-    }
+        {
+            "filters": { "test": "is_family", "subject": "other", "value": "player" },
+            "max_dist": 6
+        }
     ],
     "loot_table": "loot_tables/entities/cat_gift.json",
     "on_drop_attempt": {
@@ -86,10 +86,10 @@ ms.prod: gaming
     "search_count": 0,
     "goal_radius": 1.0,
     "entity_types": [
-    {
-        "filters": { "test": "is_family", "subject": "other", "value": "player" },
-        "max_dist": 6
-    }
+        {
+            "filters": { "test": "is_family", "subject": "other", "value": "player" },
+            "max_dist": 6
+        }
     ],
     "loot_table": "loot_tables/entities/cat_gift.json",
     "on_drop_attempt": {

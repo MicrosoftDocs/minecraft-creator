@@ -14,7 +14,6 @@
   href: minecraftBehavior_break_door.md
 - name: behavior.breed
   href: minecraftBehavior_breed.md
-- name: behavior.defend_trusted_target
 - name: behavior.celebrate
   href: minecraftBehavior_celebrate.md
 - name: behavior.celebrate_survive

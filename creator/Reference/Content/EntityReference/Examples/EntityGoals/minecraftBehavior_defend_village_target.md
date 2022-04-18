@@ -31,7 +31,7 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### strider
+### iron golem
 
 ```json
 "minecraft:behavior.defend_village_target": {
