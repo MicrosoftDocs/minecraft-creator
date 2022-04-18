@@ -11,12 +11,8 @@ ms.prod: gaming
 
 ## Parameters
 
-
-
 | Name| Default Value | Type | Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
-
-
 
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
@@ -34,6 +30,16 @@ ms.prod: gaming
     "speed_multiplier": 1,
     "success_rate": 0.25
 
+}
+```
+
+## Vanilla entities examples
+
+### vex
+
+```json
+"minecraft:behavior.charge_attack": {
+    "priority": 4
 }
 ```
 

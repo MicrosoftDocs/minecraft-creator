@@ -62,8 +62,8 @@ In this example, an entity wants to be able to make `bread` from `wheat`. Since 
             "store_in_inventory": true,
             "surplus_amount": 4,
             "want_amount": 3
-        },
-    ],
+        }
+    ]
 }
 ```
 
