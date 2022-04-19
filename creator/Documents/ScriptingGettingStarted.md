@@ -1,12 +1,12 @@
 ---
 author: mikeam
 ms.author: mikeam
-title: Build your first gameplay experience with TypeScript.
+title: Build a gameplay experience with TypeScript
 ms.prod: gaming
 description: Use TypeScript to build a simple gameplay experience in Minecraft using the experimental GameTest Framework feature.
 ---
 
-# Minecraft TypeScript Starter Project
+# Build a gameplay experience with TypeScript
 
 This leverages a starter sample available from https://github.com/microsoft/minecraft-scripting-samples/ with a simple build process and TypeScript compilation for Minecraft. From it, you can build out and expand simple gameplay styles. You can use this project as a starter for your own scripting projects.
 
@@ -72,13 +72,13 @@ In Visual Studio Code, expand the `behavior_packs` node in the treeview to the l
 
 Use the Find/Replace command (Ctrl-Shift-F) to search for "starterbp" and replace the instance in **gulpfile.js** and the instance in **launch.json** with "cotta."
 
-![Initial Visual Studio Code window](Media/ScriptingGettingStarted/400-CottaGulp.png)
+![Changing instances of starterbp to cotta](Media/ScriptingGettingStarted/400-CottaGulp.png)
 
 Go back the Files tree view and open `behavior_packs\cotta\manifest.json`
 
 Update the name and description properties to something like "Cotta Behavior Pack" and "My TypeScript Project".
 
-Update the first (and only the first) UUID property to make it unique to your project. See [this article](https://docs.microsoft.com/minecraft/creator/documents/behaviorpack) for tips on working with behavior packs and creating your own unique UUIDs.
+Update the first (and only the first) UUID property to make it unique to your project. See [this article](BehaviorPack.md) for tips on working with behavior packs and creating your own unique UUIDs.
 
 ![Editing Manifest JSON](Media/ScriptingGettingStarted/500-ManifestJson.png)
 
@@ -101,7 +101,7 @@ This uses a build tool called GulpJS and automatically compiles your TypeScript 
 
 You may hear a little tone through your speakers when it has successfully completed deployment.
 
-![Initial Gulp Run](Media/ScriptingGettingStarted/600-InitialGulpRun.png)
+![Initial Gulp run](Media/ScriptingGettingStarted/600-InitialGulpRun.png)
 
 Launch Minecraft and create a new world:
 
@@ -395,13 +395,13 @@ function checkForTerracotta() {
 }
 ```
 
-![Arena building code](Media/ScriptingGettingStarted/1400-SpawnTerracotta.png)
+![Spawn terracotta code](Media/ScriptingGettingStarted/1400-SpawnTerracotta.png)
 
 Congratulations! You've just created a very basic and very easy game where you can run around and break terracotta with your sword.
 
 To play, you will need to run the command `/gamemode s` to put Minecraft into survival mode so that you can break the terracotta.
 
-![Arena building code](Media/ScriptingGettingStarted/1500-NewTerracotta.png)
+![New terracotta within Minecraft](Media/ScriptingGettingStarted/1500-NewTerracotta.png)
 
 After the terracotta is broken, your score will increment, and a new block is spawned.
 
