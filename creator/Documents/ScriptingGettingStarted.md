@@ -18,7 +18,7 @@ We're going to use the Node Package Manager (or NPM) to get more tools to make t
 
 Visit [https://nodejs.org/](https://nodejs.org).
 
-Download the version with "LTS" next to the number and install it. (LTS stands for Long Term Support, if you're curious.) In the Node.js Windows installer, accept the installation defaults. You do not need to install any additional tools for Native compilation.
+Download the version with "LTS" next to the number and install it. (LTS stands for Long Term Support, if you're curious.) You do not need to install any additional tools for Native compilation.
 
 **Install Visual Studio Code, if you haven't already**
 
@@ -26,7 +26,7 @@ Visit the [Visual Studio Code website](https://code.visualstudio.com) and instal
 
 ## Getting Started
 
-1. Download a copy of the starter project from GitHub by visiting https://github.com/microsoft/minecraft-scripting-samples/ and, under the Code button, selecting Download ZIP.
+1. Download a copy of the starter project from GitHub by visiting https://github.com/microsoft/minecraft-scripting-samples/ and, under the Code button, selecting `Download ZIP`.
 
 1. The `ts-starter` folder contains a starter TypeScript project for Minecraft.
 
@@ -115,7 +115,6 @@ Launch Minecraft and create a new world:
 Now you're in. Great!
 
 ![Create a new world](Media/ScriptingGettingStarted/700-StartNewWorld.png)
-![Behavior packs screen](Media/ScriptingGettingStarted/750-StartNewWorld2.png)
 
 By default, this starter pack comes with a simple script that will display a message:
 
