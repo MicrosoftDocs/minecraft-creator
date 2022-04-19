@@ -12,35 +12,36 @@ description: Contents of the mojang-minecraft.BeforeDataDrivenEntityTriggerEvent
 
 Contains information related to firing of a data driven entity event - for example, the minecraft:ageable_grow_up event on a chicken.
 
+## Properties
+### **cancel**
+`cancel: boolean;`
 
-## Methods
-- [subscribe](#subscribe)
-- [unsubscribe](#unsubscribe)
-  
-### **subscribe**
-`
-subscribe(callback: (arg: BeforeDataDrivenEntityTriggerEvent) => void, options?: EntityDataDrivenTriggerEventOptions): (arg: BeforeDataDrivenEntityTriggerEvent) => void
-`
+If set to true, this entity event is not triggered.
 
-Adds a callback that will be called before a data driven entity event is triggered.
-#### **Parameters**
-- **callback**: (arg: [*BeforeDataDrivenEntityTriggerEvent*](BeforeDataDrivenEntityTriggerEvent.md)) => *void*
-- **options**?: [*EntityDataDrivenTriggerEventOptions*](EntityDataDrivenTriggerEventOptions.md) = `null`
-
-#### **Returns** (arg: [*BeforeDataDrivenEntityTriggerEvent*](BeforeDataDrivenEntityTriggerEvent.md)) => *void*
+Type: *boolean*
 
 
-### **unsubscribe**
-`
-unsubscribe(callback: (arg: BeforeDataDrivenEntityTriggerEvent) => void): void
-`
+### **entity**
+`read-only entity: Entity;`
 
-Removes a callback that will be called before a data driven entity event is triggered.
-#### **Parameters**
-- **callback**: (arg: [*BeforeDataDrivenEntityTriggerEvent*](BeforeDataDrivenEntityTriggerEvent.md)) => *void*
+Entity that the event triggered on.
+
+Type: [*Entity*](Entity.md)
 
 
-> [!WARNING]
-> This function can throw errors.
+### **id**
+`read-only id: string;`
+
+Name of the data driven event being triggered.
+
+Type: *string*
+
+
+### **modifiers**
+`modifiers: DefinitionModifier[];`
+
+An updateable list of modifications to component state that are the effect of this triggered event.
+
+Type: [*DefinitionModifier*](DefinitionModifier.md)[]
 
 

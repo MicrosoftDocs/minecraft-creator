@@ -24,22 +24,41 @@ Type: [*Events*](Events.md)
 
 ## Methods
 - [getDimension](#getdimension)
+- [getDynamicProperty](#getdynamicproperty)
 - [getPlayers](#getplayers)
+- [playMusic](#playmusic)
+- [playSound](#playsound)
+- [queueMusic](#queuemusic)
+- [removeDynamicProperty](#removedynamicproperty)
+- [setDynamicProperty](#setdynamicproperty)
+- [stopMusic](#stopmusic)
   
 ### **getDimension**
 `
-getDimension(dimensionName: ('overworld'|'nether'|'the end')): Dimension
+getDimension(dimensionId: string): Dimension
 `
 
 #### **Parameters**
-- **dimensionName**: `'overworld'`, `'nether'`, `'the end'`
-  
-  The name of the Dimension
+- **dimensionId**: *string*
 
 #### **Returns** [*Dimension*](Dimension.md) - The requested dimension
 
 > [!WARNING]
 > Throws if the given dimension name is invalid
+
+### **getDynamicProperty**
+`
+getDynamicProperty(identifier: string): boolean | number | string
+`
+
+Returns a property value.
+#### **Parameters**
+- **identifier**: *string*
+
+#### **Returns** *boolean* | *number* | *string* - Returns the value for the property, or undefined if the property has not been set.
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **getPlayers**
 `
@@ -54,5 +73,79 @@ Returns all players currently in the world.
 
 > [!WARNING]
 > This function can throw errors.
+
+### **playMusic**
+`
+playMusic(trackID: string, musicOptions?: MusicOptions): void
+`
+
+Plays a particular music track for all players.
+#### **Parameters**
+- **trackID**: *string*
+- **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
+
+
+
+### **playSound**
+`
+playSound(soundID: string, soundOptions?: SoundOptions): void
+`
+
+Plays a sound for all players.
+#### **Parameters**
+- **soundID**: *string*
+- **soundOptions**?: [*SoundOptions*](SoundOptions.md) = `null`
+
+
+
+### **queueMusic**
+`
+queueMusic(trackID: string, musicOptions?: MusicOptions): void
+`
+
+Queues an additional music track for players. If a track is not playing, a music track will play.
+#### **Parameters**
+- **trackID**: *string*
+- **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
+
+
+
+### **removeDynamicProperty**
+`
+removeDynamicProperty(identifier: string): boolean
+`
+
+Removes a specified property.
+#### **Parameters**
+- **identifier**: *string*
+
+#### **Returns** *boolean*
+
+> [!WARNING]
+> This function can throw errors.
+
+### **setDynamicProperty**
+`
+setDynamicProperty(identifier: string, value: boolean | number | string): void
+`
+
+Sets a specified property to a value.
+#### **Parameters**
+- **identifier**: *string*
+- **value**: *boolean* | *number* | *string*
+  
+  Data value of the property to set.
+
+
+> [!WARNING]
+> This function can throw errors.
+
+### **stopMusic**
+`
+stopMusic(): void
+`
+
+Stops any music tracks from playing.
+
 
 

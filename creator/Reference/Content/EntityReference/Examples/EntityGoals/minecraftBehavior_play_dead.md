@@ -11,16 +11,15 @@ ms.prod: gaming
 
 ## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-| play_dead | True | Boolean | Allows this mob to pretend to be dead to avoid being targeted by attackers. |
-| duration | 1.0 | Decimal | The amount of time in seconds that the mob will remain playing dead. |
-| random_start_chance | 1.0 | Decimal | The likelihood that the mob will start to play dead upon taking damage. |
-| force_below_heath | 0 | Integer | The amount of health at which the mob will start to play dead. |
-| random_damage_range | [0 , 0] | Integer | The range of damage that may cause the mob to start playing dead. Damage taken below the minimum value will never cause the mob to start playing dead. Damage taken above the maximum value will always cause the mob to start playing dead. |
-| damage_sources | *not set* | List | The list of Entity Damage Sources that will cause this mob to start playing dead. |
-| apply_regeneration | false | Boolean | Whether the mob will receive the effect of CombatRegeneration while playing dead. |
-| filters | *not set* | String | The list of other triggers that are required for the mob to start playing dead. |
+| Name| Default Value| Type| Description |
+|:-----------:|:-----------:|:-----------:|:-----------:|
+| apply_regeneration| true| Boolean| Whether the mob will receive the regeneration effect while playing dead. |
+| damage_sources| all| Array| The list of Entity Damage Sources that will cause this mob to play dead. |
+| duration| 1.000000| Decimal| The amount of time the mob will remain playing dead (in seconds). |
+| filters| | Minecraft Filter| The list of other triggers that are required for the mob to activate play dead |
+| force_below_health| 0| Integer| The amount of health at which damage will cause the mob to play dead. |
+| random_damage_range| [0, 0]| Range [a, b]| The range of damage that may cause the goal to start depending on randomness. Damage taken below the min will never cause the goal to start. Damage taken above the max will always cause the goal to start. |
+| random_start_chance| 1.000000| Decimal| The likelihood of this goal starting upon taking damage. |
 
 ## Example
 
@@ -40,7 +39,26 @@ ms.prod: gaming
 
 ### axolotl
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/axolotl.json" range="211-228":::
+```json
+"minecraft:behavior.play_dead": {
+    "priority": 0,
+    "duration": 10,
+    "force_below_health": 8,
+    "random_start_chance": 0.33,
+    "random_damage_range": [ 0, 2 ],
+    "damage_sources": [
+        "contact",
+        "entity_attack",
+        "entity_explosion",
+        "magic",
+        "projectile",
+        "thorns",
+        "wither"
+    ],
+    "apply_regeneration": true,
+    "filters": { "test": "in_water", "operator": "==", "value": true }
+}
+```
 
 ## Vanilla Mobs using `minecraft:behavior.play_dead`
 

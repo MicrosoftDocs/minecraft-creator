@@ -12,7 +12,6 @@ description: Contents of the mojang-gametest.RegistrationBuilder class.
 
 A utility class to set GameTest parameters for a test. Methods can be chained together to set multiple properties.
 
-
 ## Methods
 - [batch](#batch)
 - [maxAttempts](#maxattempts)
@@ -149,6 +148,5 @@ Adds a tag to a test. You can run all tests with a given tag with `/gametest run
 - **tag**: *string*
 
 #### **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
-
 
 

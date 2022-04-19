@@ -37,5 +37,3 @@ Gets the entire specified duration, in ticks, of this effect.
 Type: *number*
 
 
-
-

@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.EntityCreateEventSignal class.
 
 Manages callbacks that are connected to when a new entity is created.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -41,5 +40,4 @@ Removes a callback from being called when a new entity is created.
 
 > [!WARNING]
 > This function can throw errors.
-
 

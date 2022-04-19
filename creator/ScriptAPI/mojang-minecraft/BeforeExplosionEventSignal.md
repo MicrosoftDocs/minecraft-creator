@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.BeforeExplosionEventSignal class.
 
 Manages callbacks that are connected to before an explosion occurs.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -41,5 +40,4 @@ Removes a callback from being called from before when an explosion would occur.
 
 > [!WARNING]
 > This function can throw errors.
-
 

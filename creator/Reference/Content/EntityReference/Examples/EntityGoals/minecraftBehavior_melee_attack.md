@@ -17,40 +17,65 @@ ms.prod: gaming
 
 ## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|melee_fov |90.0       |Decimal   |The allowable FOV the actor will use to determine if it can make a valid melee attack|
-|speed_multiplier     |1.0         |Decimal         |Movement speed multiplier of the mob when using this AI Goal|
-|track_target     |false         |Boolean         |If true, this mob will chase after the target as long as it's a valid target|
-|attack_types     |         |String         |Defines the entity types this mob will attack|
-|random_stop_interval    |0         |Integer        |Defines the probability the mob will stop fighting. A value of 0 disables randomly stopping, while a value of 1 defines a 50% chance|
-|reach_multiplier   |2.0         |Decimal         |Multiplier for how far outside its box the mob can reach its target (this can be used to simulate a mob with longer arms by making this bigger)|
-|attack_once     |false         |Boolean       |If true, this mob will attack only one time.|
-|require_complete_path    |false         |Boolean         |If true, this goal will only trigger if the mob can reach its target.|
+| Name| Default Value| Type| Description |
+|:-----------:|:-----------:|:-----------:|:-----------:|
+| attack_once| false| Boolean| Allows the entity to use this attack behavior, only once EVER. |
+| attack_types| N/A| String| Defines the entity types this entity will attack. |
+| cooldown_time| 1| Decimal| Cooldown time (in seconds) between attacks. |
+| inner_boundary_time_increase| 0.25| Decimal| Time (in seconds) to add to attack path recalculation when the target is beyond the "path_inner_boundary". |
+| max_dist| N/A| Decimal| Unused. No effect on "minecraft:behavior.melee_attack". |
+| max_path_time| 0.55| Decimal| Maximum base time (in seconds) to recalculate new attack path to target (before increases applied). |
+| melee_fov| 90| Decimal| Field of view (in degrees) when using the sensing component to detect an attack target. |
+| min_path_time| 0.2| Decimal| Minimum base time (in seconds) to recalculate new attack path to target (before increases applied). |
+| on_attack| N/A| Trigger| Defines the event to trigger when this entity successfully attacks. |
+| outer_boundary_time_increase| 0.5| Decimal| Time (in seconds) to add to attack path recalculation when the target is beyond the "path_outer_boundary". |
+| path_fail_time_increase| 0.75| Decimal| Time (in seconds) to add to attack path recalculation when this entity cannot move along the current path. |
+| path_inner_boundary| 16| Decimal| Distance at which to increase attack path recalculation by "inner_boundary_tick_increase". |
+| path_outer_boundary| 32| Decimal| Distance at which to increase attack path recalculation by "outer_boundary_tick_increase". |
+| random_stop_interval| 0| Integer| This entity will have a 1 in N chance to stop it's current attack, where N = "random_stop_interval". |
+| reach_multiplier| 2| Decimal| Used with the base size of the entity to determine minimum target-distance before trying to deal attack damage. |
+| require_complete_path| false| Boolean| Toggles (on/off) the need to have a full path from the entity to the target when using this melee attack behavior. |
+| set_persistent| false| Boolean| Allows the actor to be set to persist upon targeting a player |
+| speed_multiplier| 1| Decimal| This multiplier modifies the attacking entity's speed when moving toward the target. |
+| target_dist| N/a| Decimal| Unused. No effect on "minecraft:behavior.melee_attack". |
+| track_target| false| Boolean| Allows the entity to track the attack target, even if the entity has no sensing. |
+| x_max_rotation| 30| Decimal| Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target. |
+| y_max_head_rotation| 30| Decimal| Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target. |
 
 ## Example
 
 ```json
 "minecraft:behavior.melee_attack": {
-        "priority": 3,
-        "melee_fov": 90,
-        "speed_multiplier": 1,
-        "track_target":false,
-        "attack_types": "minecraft:sheep",
-        "reach_multiplier": 2,
-        "attack_once": false
-      }
+    "priority": 3,
+    "melee_fov": 90,
+    "speed_multiplier": 1,
+    "track_target":false,
+    "attack_types": "minecraft:sheep",
+    "reach_multiplier": 2,
+    "attack_once": false
+}
 ```
 
 ## Vanilla mob examples
 
 ### Zombie
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="403-405":::
+```json
+"minecraft:behavior.melee_attack": {
+    "priority": 3
+}
+```
 
 ### Cave Spider
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/cave_spider.json" range="98-103":::
+```json
+"minecraft:behavior.melee_attack": {
+    "priority": 3,
+    "track_target": true,
+    "random_stop_interval": 100,
+    "reach_multiplier": 0.8
+}
+```
 
 ### Vanilla mobs using `melee_attack`
 

@@ -12,7 +12,6 @@ description: Contents of the mojang-gametest.GameTestSequence class.
 
 Executes a set of steps defined via chained .thenXyz methods, sequentially. This facilitates a 'script' of GameTest setup methods and assertions over time.
 
-
 ## Methods
 - [thenExecute](#thenexecute)
 - [thenExecuteAfter](#thenexecuteafter)
@@ -134,6 +133,5 @@ After a delay from the previous step, executes the given callback every tick unt
   Testing callback function to execute. Typically, this function will have .assertXyz functions within it.
 
 #### **Returns** [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
-
 
 

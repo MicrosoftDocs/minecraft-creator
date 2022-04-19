@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.PlayerJoinEventSignal class.
 
 Manages callbacks that are connected to a player joining the world.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -41,5 +40,4 @@ Removes a callback from being called when a player joins the world.
 
 > [!WARNING]
 > This function can throw errors.
-
 
