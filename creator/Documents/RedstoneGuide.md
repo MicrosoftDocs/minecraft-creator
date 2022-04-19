@@ -119,7 +119,7 @@ In normal mode (when the light is NOT switched on) then it will not output a sig
 
 - Dropper: Spits out a random item from its inventory when powered directly or powered by an adjacent block. For example, if loaded with a horse spawn egg, when activated, it drops a horse spawn egg. If loaded with arrows, it spits out an arrow.
 
-- Dispenser: Works like the dropper, but has special powers. If loaded with a horse spawn egg, it dispenses a horse. If loaded with arrows, it will fire the arrow.
+- Dispenser: Works like the dropper, but has special powers depending on what items are loaded into it. For example, if it is loaded with a horse spawn egg, it dispenses a horse. If loaded with arrows, it will fire the arrow. Other items with special behavior include armor stands, boats, bone meal, potions, and buckets.
 
 - Observer: When it detects block updates with its face, it sends a one-tick pulse through the red spot on the back. Observers will emit a pulse when they are moved by pistons.
 
