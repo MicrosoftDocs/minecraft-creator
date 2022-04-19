@@ -26,8 +26,10 @@ Below is a list of all the available filters within Minecraft:Bedrock Edition fo
 |[has_target](Filters/has_target.md)|Returns true if the subject entity has a valid target. |
 |[has_trade_supply](Filters/has_trade_supply.md)|Tests whether the target has any trade supply left. Will return false if the target cannot be traded with. |
 |[hourly_clock_time](Filters/hourly_clock_time.md)|Compares the current 24 hour time with an int value in the range[0, 24000] |
+|[in_block](Filters/in_block.md)|Returns true when the subject entity is inside a specified Block type. |
 |[in_caravan](Filters/in_caravan.md)|Returns true if the subject entity is in a caravan. |
 |[in_clouds](Filters/in_clouds.md)|Returns true when the subject entity is in the clouds. |
+|[in_contact_with_water](Filters/in_contact_with_water.md)|Returns true when the subject entity in contact with any water: water, rain, splash water bottle. |
 |[in_lava](Filters/in_lava.md)|Returns true when the subject entity is in lava. |
 |[in_nether](Filters/in_nether.md)|Returns true when the subject entity is in Nether. |
 |[in_water_or_rain](Filters/in_water_or_rain.md)|Returns true when the subject entity is in water or rain. |

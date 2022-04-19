@@ -37,6 +37,14 @@ Identifier of the type of items for the stack. If a namespace is not specified, 
 Type: *string*
 
 
+### **nameTag**
+`nameTag: string;`
+
+Given name of this stack of items.
+
+Type: *string*
+
+
 
 ## Methods
 - [constructor](#constructor)
@@ -136,7 +144,6 @@ Triggers an item type event. For custom items, a number of events are defined in
 - **eventName**: *string*
   
   Name of the item type event to trigger. If a namespace is not specified, minecraft: is assumed.
-
 
 
 

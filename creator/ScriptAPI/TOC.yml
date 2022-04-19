@@ -44,8 +44,8 @@
         href: mojang-minecraft/BeforeChatEventSignal.md
       - name: BeforeDataDrivenEntityTriggerEvent
         href: mojang-minecraft/BeforeDataDrivenEntityTriggerEvent.md
-      - name: BeforeDataDrivenEntityTriggerEvent
-        href: mojang-minecraft/BeforeDataDrivenEntityTriggerEvent.md
+      - name: BeforeDataDrivenEntityTriggerEventSignal
+        href: mojang-minecraft/BeforeDataDrivenEntityTriggerEventSignal.md
       - name: BeforeExplosionEvent
         href: mojang-minecraft/BeforeExplosionEvent.md
       - name: BeforeExplosionEventSignal
@@ -82,6 +82,8 @@
         href: mojang-minecraft/BlockExplodeEvent.md
       - name: BlockExplodeEventSignal
         href: mojang-minecraft/BlockExplodeEventSignal.md
+      - name: BlockHitInformation
+        href: mojang-minecraft/BlockHitInformation.md
       - name: BlockInventoryComponent
         href: mojang-minecraft/BlockInventoryComponent.md
       - name: BlockInventoryComponentContainer
@@ -124,12 +126,14 @@
         href: mojang-minecraft/Container.md
       - name: DataDrivenEntityTriggerEvent
         href: mojang-minecraft/DataDrivenEntityTriggerEvent.md
-      - name: DataDrivenEntityTriggerEvent
-        href: mojang-minecraft/DataDrivenEntityTriggerEvent.md
+      - name: DataDrivenEntityTriggerEventSignal
+        href: mojang-minecraft/DataDrivenEntityTriggerEventSignal.md
       - name: DefinitionModifier
         href: mojang-minecraft/DefinitionModifier.md
       - name: Dimension
         href: mojang-minecraft/Dimension.md
+      - name: DynamicPropertiesDefinition
+        href: mojang-minecraft/DynamicPropertiesDefinition.md
       - name: Effect
         href: mojang-minecraft/Effect.md
       - name: EffectAddEvent
@@ -154,6 +158,12 @@
         href: mojang-minecraft/EntityAgeableComponent.md
       - name: EntityBreathableComponent
         href: mojang-minecraft/EntityBreathableComponent.md
+      - name: EntityCanClimbComponent
+        href: mojang-minecraft/EntityCanClimbComponent.md
+      - name: EntityCanFlyComponent
+        href: mojang-minecraft/EntityCanFlyComponent.md
+      - name: EntityCanPowerJumpComponent
+        href: mojang-minecraft/EntityCanPowerJumpComponent.md
       - name: EntityColorComponent
         href: mojang-minecraft/EntityColorComponent.md
       - name: EntityCreateEvent
@@ -166,20 +176,68 @@
         href: mojang-minecraft/EntityDefinitionFeedItem.md
       - name: EntityEventOptions
         href: mojang-minecraft/EntityEventOptions.md
+      - name: EntityFireImmuneComponent
+        href: mojang-minecraft/EntityFireImmuneComponent.md
+      - name: EntityFloatsInLiquidComponent
+        href: mojang-minecraft/EntityFloatsInLiquidComponent.md
       - name: EntityFlyingSpeedComponent
         href: mojang-minecraft/EntityFlyingSpeedComponent.md
+      - name: EntityFrictionModifierComponent
+        href: mojang-minecraft/EntityFrictionModifierComponent.md
+      - name: EntityGroundOffsetComponent
+        href: mojang-minecraft/EntityGroundOffsetComponent.md
       - name: EntityHealableComponent
         href: mojang-minecraft/EntityHealableComponent.md
       - name: EntityHealthComponent
         href: mojang-minecraft/EntityHealthComponent.md
+      - name: EntityHitEvent
+        href: mojang-minecraft/EntityHitEvent.md
+      - name: EntityHitEventSignal
+        href: mojang-minecraft/EntityHitEventSignal.md
+      - name: EntityHitInformation
+        href: mojang-minecraft/EntityHitInformation.md
+      - name: EntityHurtEvent
+        href: mojang-minecraft/EntityHurtEvent.md
+      - name: EntityHurtEventSignal
+        href: mojang-minecraft/EntityHurtEventSignal.md
       - name: EntityInventoryComponent
         href: mojang-minecraft/EntityInventoryComponent.md
+      - name: EntityIsBabyComponent
+        href: mojang-minecraft/EntityIsBabyComponent.md
+      - name: EntityIsChargedComponent
+        href: mojang-minecraft/EntityIsChargedComponent.md
+      - name: EntityIsChestedComponent
+        href: mojang-minecraft/EntityIsChestedComponent.md
+      - name: EntityIsDyableComponent
+        href: mojang-minecraft/EntityIsDyableComponent.md
+      - name: EntityIsHiddenWhenInvisibleComponent
+        href: mojang-minecraft/EntityIsHiddenWhenInvisibleComponent.md
+      - name: EntityIsIgnitedComponent
+        href: mojang-minecraft/EntityIsIgnitedComponent.md
+      - name: EntityIsIllagerCaptainComponent
+        href: mojang-minecraft/EntityIsIllagerCaptainComponent.md
+      - name: EntityIsSaddledComponent
+        href: mojang-minecraft/EntityIsSaddledComponent.md
+      - name: EntityIsShakingComponent
+        href: mojang-minecraft/EntityIsShakingComponent.md
+      - name: EntityIsShearedComponent
+        href: mojang-minecraft/EntityIsShearedComponent.md
+      - name: EntityIsStackableComponent
+        href: mojang-minecraft/EntityIsStackableComponent.md
+      - name: EntityIsStunnedComponent
+        href: mojang-minecraft/EntityIsStunnedComponent.md
+      - name: EntityIsTamedComponent
+        href: mojang-minecraft/EntityIsTamedComponent.md
+      - name: EntityItemComponent
+        href: mojang-minecraft/EntityItemComponent.md
       - name: EntityIterator
         href: mojang-minecraft/EntityIterator.md
       - name: EntityLavaMovementComponent
         href: mojang-minecraft/EntityLavaMovementComponent.md
       - name: EntityLeashableComponent
         href: mojang-minecraft/EntityLeashableComponent.md
+      - name: EntityMarkVariantComponent
+        href: mojang-minecraft/EntityMarkVariantComponent.md
       - name: EntityMountTamingComponent
         href: mojang-minecraft/EntityMountTamingComponent.md
       - name: EntityMovementAmphibiousComponent
@@ -214,6 +272,8 @@
         href: mojang-minecraft/EntityNavigationHoverComponent.md
       - name: EntityNavigationWalkComponent
         href: mojang-minecraft/EntityNavigationWalkComponent.md
+      - name: EntityPushThroughComponent
+        href: mojang-minecraft/EntityPushThroughComponent.md
       - name: EntityQueryOptions
         href: mojang-minecraft/EntityQueryOptions.md
       - name: EntityQueryScoreOptions
@@ -222,12 +282,26 @@
         href: mojang-minecraft/EntityRaycastOptions.md
       - name: EntityRideableComponent
         href: mojang-minecraft/EntityRideableComponent.md
+      - name: EntityScaleComponent
+        href: mojang-minecraft/EntityScaleComponent.md
+      - name: EntitySkinIdComponent
+        href: mojang-minecraft/EntitySkinIdComponent.md
       - name: EntityStrengthComponent
         href: mojang-minecraft/EntityStrengthComponent.md
       - name: EntityTameableComponent
         href: mojang-minecraft/EntityTameableComponent.md
+      - name: EntityType
+        href: mojang-minecraft/EntityType.md
+      - name: EntityTypeIterator
+        href: mojang-minecraft/EntityTypeIterator.md
+      - name: EntityTypes
+        href: mojang-minecraft/EntityTypes.md
       - name: EntityUnderwaterMovementComponent
         href: mojang-minecraft/EntityUnderwaterMovementComponent.md
+      - name: EntityVariantComponent
+        href: mojang-minecraft/EntityVariantComponent.md
+      - name: EntityWantsJockeyComponent
+        href: mojang-minecraft/EntityWantsJockeyComponent.md
       - name: Events
         href: mojang-minecraft/Events.md
       - name: ExplosionEvent
@@ -252,6 +326,10 @@
         href: mojang-minecraft/IntBlockProperty.md
       - name: InventoryComponentContainer
         href: mojang-minecraft/InventoryComponentContainer.md
+      - name: ItemCompleteChargeEvent
+        href: mojang-minecraft/ItemCompleteChargeEvent.md
+      - name: ItemCompleteChargeEventSignal
+        href: mojang-minecraft/ItemCompleteChargeEventSignal.md
       - name: ItemCooldownComponent
         href: mojang-minecraft/ItemCooldownComponent.md
       - name: ItemDefinitionEventSignal
@@ -264,10 +342,30 @@
         href: mojang-minecraft/ItemEnchantsComponent.md
       - name: ItemFoodComponent
         href: mojang-minecraft/ItemFoodComponent.md
+      - name: ItemReleaseChargeEvent
+        href: mojang-minecraft/ItemReleaseChargeEvent.md
+      - name: ItemReleaseChargeEventSignal
+        href: mojang-minecraft/ItemReleaseChargeEventSignal.md
       - name: Items
         href: mojang-minecraft/Items.md
       - name: ItemStack
         href: mojang-minecraft/ItemStack.md
+      - name: ItemStartChargeEvent
+        href: mojang-minecraft/ItemStartChargeEvent.md
+      - name: ItemStartChargeEventSignal
+        href: mojang-minecraft/ItemStartChargeEventSignal.md
+      - name: ItemStartUseOnEvent
+        href: mojang-minecraft/ItemStartUseOnEvent.md
+      - name: ItemStartUseOnEventSignal
+        href: mojang-minecraft/ItemStartUseOnEventSignal.md
+      - name: ItemStopChargeEvent
+        href: mojang-minecraft/ItemStopChargeEvent.md
+      - name: ItemStopChargeEventSignal
+        href: mojang-minecraft/ItemStopChargeEventSignal.md
+      - name: ItemStopUseOnEvent
+        href: mojang-minecraft/ItemStopUseOnEvent.md
+      - name: ItemStopUseOnEventSignal
+        href: mojang-minecraft/ItemStopUseOnEventSignal.md
       - name: ItemType
         href: mojang-minecraft/ItemType.md
       - name: ItemUseEvent
@@ -278,18 +376,28 @@
         href: mojang-minecraft/ItemUseOnEvent.md
       - name: ItemUseOnEventSignal
         href: mojang-minecraft/ItemUseOnEventSignal.md
+      - name: LeverActionEvent
+        href: mojang-minecraft/LeverActionEvent.md
+      - name: LeverActivateEventSignal
+        href: mojang-minecraft/LeverActivateEventSignal.md
       - name: Location
         href: mojang-minecraft/Location.md
       - name: MinecraftBlockTypes
         href: mojang-minecraft/MinecraftBlockTypes.md
+      - name: MinecraftDimensionTypes
+        href: mojang-minecraft/MinecraftDimensionTypes.md
       - name: MinecraftEffectTypes
         href: mojang-minecraft/MinecraftEffectTypes.md
       - name: MinecraftEnchantmentTypes
         href: mojang-minecraft/MinecraftEnchantmentTypes.md
+      - name: MinecraftEntityTypes
+        href: mojang-minecraft/MinecraftEntityTypes.md
       - name: MinecraftItemTypes
         href: mojang-minecraft/MinecraftItemTypes.md
       - name: MolangVariableMap
         href: mojang-minecraft/MolangVariableMap.md
+      - name: MusicOptions
+        href: mojang-minecraft/MusicOptions.md
       - name: NavigationResult
         href: mojang-minecraft/NavigationResult.md
       - name: NumberRange
@@ -314,14 +422,28 @@
         href: mojang-minecraft/PlayerLeaveEvent.md
       - name: PlayerLeaveEventSignal
         href: mojang-minecraft/PlayerLeaveEventSignal.md
+      - name: ProjectileHitEvent
+        href: mojang-minecraft/ProjectileHitEvent.md
+      - name: ProjectileHitEventSignal
+        href: mojang-minecraft/ProjectileHitEventSignal.md
+      - name: PropertyRegistry
+        href: mojang-minecraft/PropertyRegistry.md
+      - name: ScreenDisplay
+        href: mojang-minecraft/ScreenDisplay.md
+      - name: SculkSpreader
+        href: mojang-minecraft/SculkSpreader.md
       - name: Seat
         href: mojang-minecraft/Seat.md
+      - name: SoundOptions
+        href: mojang-minecraft/SoundOptions.md
       - name: StringBlockProperty
         href: mojang-minecraft/StringBlockProperty.md
       - name: TickEvent
         href: mojang-minecraft/TickEvent.md
       - name: TickEventSignal
         href: mojang-minecraft/TickEventSignal.md
+      - name: TitleDisplayOptions
+        href: mojang-minecraft/TitleDisplayOptions.md
       - name: Trigger
         href: mojang-minecraft/Trigger.md
       - name: Vector
@@ -332,3 +454,7 @@
         href: mojang-minecraft/WeatherChangeEventSignal.md
       - name: World
         href: mojang-minecraft/World.md
+      - name: WorldInitializeEvent
+        href: mojang-minecraft/WorldInitializeEvent.md
+      - name: WorldInitializeEventSignal
+        href: mojang-minecraft/WorldInitializeEventSignal.md

@@ -59,4 +59,3 @@ Creates a new instance of the ExplosionOptions object, for use in the [*mojang-m
 #### **Returns** [*ExplosionOptions*](ExplosionOptions.md)
 
 
-

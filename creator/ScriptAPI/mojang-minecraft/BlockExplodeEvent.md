@@ -10,7 +10,7 @@ description: Contents of the mojang-minecraft.BlockExplodeEvent class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-## Base Types
+## Extends
 - [*BlockEvent*](BlockEvent.md)
 
 Contains information regarding an explosion that has occurred for a specific block.
@@ -22,14 +22,6 @@ Contains information regarding an explosion that has occurred for a specific blo
 Block impacted by this explosion event.
 
 Type: [*Block*](Block.md)
-
-
-### **destroyedBlockPermutation**
-`read-only destroyedBlockPermutation: BlockPermutation;`
-
-Contains core information on the state of the block before it was destroyed in an explosion.
-
-Type: [*BlockPermutation*](BlockPermutation.md)
 
 
 ### **dimension**
@@ -46,7 +38,5 @@ Type: [*Dimension*](Dimension.md)
 Optional source of the explosion.
 
 Type: [*Entity*](Entity.md)
-
-
 
 

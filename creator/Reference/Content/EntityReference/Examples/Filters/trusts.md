@@ -1,5 +1,5 @@
 ---
-author: v-josjones
+author: mammerla
 ms.author: v-josjones
 title: Entity Documentation - trusts
 ms.prod: gaming
@@ -67,7 +67,14 @@ Returns true if the subject is trusted by entity.
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="375-394":::
+```json
+{
+    "test": "trusts",
+    "subject": "other",
+    "operator": "==",
+    "value": true
+}
+```
 
 ## Vanilla entities using `trusts`
 

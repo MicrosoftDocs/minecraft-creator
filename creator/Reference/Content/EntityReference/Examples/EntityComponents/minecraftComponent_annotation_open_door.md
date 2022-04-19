@@ -1,5 +1,5 @@
 ---
-author: v-josjones
+author: mammerla
 ms.author: v-josjones
 title: Entity Documentation - minecraft:annotation.open_door
 ms.prod: gaming
@@ -23,7 +23,10 @@ ms.prod: gaming
 
 ### villager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager.json" range="367-368":::
+```json
+"minecraft:annotation.open_door": {
+}
+```
 
 ## Vanilla entities using `minecraft:annotation.open_door`
 

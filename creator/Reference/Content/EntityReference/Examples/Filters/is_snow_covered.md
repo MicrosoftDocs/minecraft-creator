@@ -1,5 +1,5 @@
 ---
-author: v-josjones
+author: mammerla
 ms.author: v-josjones
 title: Entity Documentation - is_snow_covered
 ms.prod: gaming
@@ -67,7 +67,9 @@ Tests whether the subject is in an area covered by snow.
 
 ### rabbit
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/spawn_rules/rabbit.json" range="29-40":::
+```json
+{ "test": "is_snow_covered", "value": true }
+```
 
 ## Vanilla entities using `is_snow_covered`
 

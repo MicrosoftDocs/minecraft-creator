@@ -22,11 +22,13 @@ Before diving into how animation is defined in addons, let's take a look at an e
 
 In order to define what animations an entity has, you must add both an `animations` and a `scripts/animate` section to an entity's entity definition file.
 
-Here you can see the entity definition for pig.json:This means you will not see the move animation in the pig.json animation file either.  If you would like to make a custom pig walk you can change this line to point to your custom animation.
+This means you will not see the move animation in the pig.json animation file.  If you would like to make a custom pig walk, you can change this line to point to your custom animation.
 
 Animations are specified as a short name, followed by their full resource name.  The short name is used in animation controllers and the `scripts/animate` list, while the long name is used in the animations file.
 
 In the `scripts/animate` section, you list the animations to play and in which order.  You can either specify an animation directly, or specify a blend expression.
+
+This means you will not see the move animation in the pig.json animation file either.  If you would like to make a custom pig walk you can change this line to point to your custom animation.
 
 ### Entity Definition Example
 
@@ -69,12 +71,6 @@ In the `scripts/animate` section, you list the animations to play and in which o
 }
 ```
 
-This means you will not see the move animation in the pig.json animation file either.  If you would like to make a custom pig walk you can change this line to point to your custom animation.
-
-Animations are specified as a short name, followed by their full resource name.  The short name is used in animation controllers and the `scripts/animate` list, while the long name is used in the animations file.
-
-In the `scripts/animate` section, you list the animations to play and in which order.  You can either specify an animation directly, or specify a blend expression.
-
 ## Animation Hierarchy
 
 Animations are channel based (rotation, position, or scale), and within that, they are key-framed:
@@ -88,7 +84,7 @@ All of the above concepts are described in a detailed, bottom-up approach below
 
 ## Animation Controller
 
-One needs to be able to control how animations are played, when, and how they interact with other animations.  to group animations While a lot of this can be managed in the entity definition `scripts/animate` section, animation controllers give you the functionality of a state machine into states and control them as a block.  Animations in an animation controller state can be animation controllers themselves, allowing for arbitrarily complex animation hierarchies.
+One needs to be able to control how animations are played, when, and how they interact with other animations.  While a lot of this can be managed in the entity definition `scripts/animate` section, animation controllers give you the functionality of a state machine into states and control them as a block.  Animations in an animation controller state can be animation controllers themselves, allowing for arbitrarily complex animation hierarchies.
 
 ### Example of Animation Controller
 

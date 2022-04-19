@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: docsbryce
+ms.author: v-bbortree
 title: Getting Started With Minecraft Add-Ons
 ms.prod: gaming
 description: "A tutorial covering how to start developing Add-Ons for Minecraft: Bedrock Edition by learning about the common tools used by Creators and how content is added into Minecraft"
@@ -26,7 +26,7 @@ When Minecraft is installed on your computer, there is a folder called **com.moj
 
 To locate the **com.mojang** folder on your computer, you will need to have **Hidden items** checkbox set to **true**, as shown below. while you're at it, go ahead and check the box for **File name extensions**, too.
 
-### Showing hidden items ###
+### Showing hidden items
 
 1. Open **File Explorer** from the taskbar.
 1. Select the **View** tab.

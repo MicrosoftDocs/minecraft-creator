@@ -10,11 +10,11 @@ description: Contents of the mojang-minecraft.IBlockProperty class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-## Directly Derived Types
+## Classes that extend IBlockProperty
 - [*StringBlockProperty*](StringBlockProperty.md)
 - [*IntBlockProperty*](IntBlockProperty.md)
 - [*BoolBlockProperty*](BoolBlockProperty.md)
-  
+
 Contains an interface for defining the state of a property for a [*mojang-minecraft.BlockPermutation*](../mojang-minecraft/BlockPermutation.md).
 
 ## Properties
@@ -24,7 +24,5 @@ Contains an interface for defining the state of a property for a [*mojang-minecr
 The name of this property.
 
 Type: *string*
-
-
 
 

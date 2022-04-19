@@ -17,33 +17,33 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| event| *not set*| string |The event to run when the conditions for this trigger are met.|
-| filters|*not set*|List / Filter|The list of conditions for this trigger to execute.|
+| event| *not set* | string |The event to run when the conditions for this trigger are met.|
+| filters|*not set* |List / Filter| The list of conditions for this trigger to execute.|
 | target| self|string|The target of the event. |
 
 ## Example
 
-```jsonc
+```json
 "minecraft:environment_sensor":{
-    "triggers": [
-      {
-        //List of conditions that need to be met
-        "filters": {
-          //All of these conditions need to be true
-          "all_of": [
-            //Tests if this entity is in lava
-            { "test": "in_lava", "value": true },
-            //Tests if this entity has the variant component value set to 2
-            { "test": "is_variant", "value": 2 }
-          ]
-        },
-        //The event to call if all conditions evualate to `true`
-        "event": "minecraft:transform",
-        //The target entity, in this case, targeting this entity
-        "target": "self"
-      }
+    "triggers":[
+       {
+          "filters":{
+             "all_of":[
+                {
+                   "test":"is_daytime",
+                   "value":true
+                },
+                {
+                   "test":"has_target",
+                   "operator":"==",
+                   "value":false
+                }
+             ]
+          },
+          "event":"minecraft:fox_configure_docile_day"
+       }
     ]
-}
+ }
 ```
 
 ## Vanilla entities examples

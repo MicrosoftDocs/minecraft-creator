@@ -12,7 +12,6 @@ description: Contents of the mojang-minecraft.BeforePistonActivateEventSignal cl
 
 Manages callbacks that are connected to an event that fires before a piston is activated.
 
-
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -41,5 +40,4 @@ Removes a callback from being called before a piston expands or retracts.
 
 > [!WARNING]
 > This function can throw errors.
-
 

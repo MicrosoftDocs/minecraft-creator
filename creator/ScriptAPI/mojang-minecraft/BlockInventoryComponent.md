@@ -29,5 +29,3 @@ Coordinates of the specified block.
 Type: [*BlockLocation*](BlockLocation.md)
 
 
-
-

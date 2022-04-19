@@ -10,13 +10,14 @@ description: Contents of the mojang-minecraft.BlockEvent class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-## Directly Derived Types
+## Classes that extend BlockEvent
 - [*BeforePistonActivateEvent*](BeforePistonActivateEvent.md)
 - [*PistonActivateEvent*](PistonActivateEvent.md)
+- [*LeverActionEvent*](LeverActionEvent.md)
 - [*BlockExplodeEvent*](BlockExplodeEvent.md)
 - [*BlockPlaceEvent*](BlockPlaceEvent.md)
 - [*BlockBreakEvent*](BlockBreakEvent.md)
-  
+
 Contains information regarding an event that impacts a specific block.
 
 ## Properties
@@ -34,7 +35,5 @@ Type: [*Block*](Block.md)
 Dimension that contains the block that is the subject of this event.
 
 Type: [*Dimension*](Dimension.md)
-
-
 
 

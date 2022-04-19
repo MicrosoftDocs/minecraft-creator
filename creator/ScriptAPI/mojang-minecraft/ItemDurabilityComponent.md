@@ -10,7 +10,7 @@ description: Contents of the mojang-minecraft.ItemDurabilityComponent class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-When present on an item, this item can take damage in the process of being used.
+When present on an item, this item can take damage in the process of being used. Note that this component only applies to data-driven items.
 
 ## Properties
 ### **damage**
@@ -64,5 +64,4 @@ Returns the maximum chance that this item would be damaged using the damageRange
 
 > [!WARNING]
 > This function can throw errors.
-
 

@@ -10,12 +10,12 @@ description: Contents of the mojang-minecraft.Player class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-## Base Types
+## Extends
 - [*Entity*](Entity.md)
 
-## Directly Derived Types
+## Classes that extend Player
 - [*mojang-gametest.SimulatedPlayer*](../mojang-gametest/SimulatedPlayer.md)
-  
+
 Represents a player within the world.
 
 ## Properties
@@ -83,6 +83,14 @@ Optional name tag of the player.
 Type: *string*
 
 
+### **onScreenDisplay**
+`read-only onScreenDisplay: ScreenDisplay;`
+
+Contains methods for manipulating the on-screen display of a Player.
+
+Type: [*ScreenDisplay*](ScreenDisplay.md)
+
+
 ### **selectedSlot**
 `selectedSlot: number;`
 
@@ -122,6 +130,7 @@ Type: [*Vector*](Vector.md)
 - [getBlockFromViewVector](#getblockfromviewvector)
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
+- [getDynamicProperty](#getdynamicproperty)
 - [getEffect](#geteffect)
 - [getEntitiesFromViewVector](#getentitiesfromviewvector)
 - [getItemCooldown](#getitemcooldown)
@@ -129,8 +138,11 @@ Type: [*Vector*](Vector.md)
 - [hasComponent](#hascomponent)
 - [hasTag](#hastag)
 - [kill](#kill)
+- [playSound](#playsound)
+- [removeDynamicProperty](#removedynamicproperty)
 - [removeTag](#removetag)
 - [runCommand](#runcommand)
+- [setDynamicProperty](#setdynamicproperty)
 - [setVelocity](#setvelocity)
 - [startItemCooldown](#startitemcooldown)
 - [teleport](#teleport)
@@ -139,7 +151,7 @@ Type: [*Vector*](Vector.md)
   
 ### **addEffect**
 `
-addEffect(effectType: EffectType, duration: number, amplifier: number): void
+addEffect(effectType: EffectType, duration: number, amplifier?: number, showParticles?: boolean): void
 `
 
 Adds an effect, like poison, to the entity.
@@ -150,9 +162,10 @@ Adds an effect, like poison, to the entity.
 - **duration**: *number*
   
   Amount of time, in ticks, for the effect to apply.
-- **amplifier**: *number*
+- **amplifier**?: *number* = `0`
   
   Optional amplification of the effect to apply.
+- **showParticles**?: *boolean* = `true`
 
 
 > [!WARNING]
@@ -213,6 +226,20 @@ Returns all components that are both present on this entity and supported by the
 
 #### **Returns** [*IEntityComponent*](IEntityComponent.md)[]
 
+
+### **getDynamicProperty**
+`
+getDynamicProperty(identifier: string): boolean | number | string
+`
+
+Returns a property value.
+#### **Parameters**
+- **identifier**: *string*
+
+#### **Returns** *boolean* | *number* | *string* - Returns the value for the property, or undefined if the property has not been set.
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **getEffect**
 `
@@ -313,6 +340,38 @@ Kills this entity. The entity will drop loot as normal.
 > [!WARNING]
 > This function can throw errors.
 
+### **playSound**
+`
+playSound(soundID: string, soundOptions?: SoundOptions): void
+`
+
+Plays a sound that only this particular player can hear.
+#### **Parameters**
+- **soundID**: *string*
+  
+  Identifier of the sound to play.
+- **soundOptions**?: [*SoundOptions*](SoundOptions.md) = `null`
+  
+  Additional optional options for the sound.
+
+
+> [!WARNING]
+> This function can throw errors.
+
+### **removeDynamicProperty**
+`
+removeDynamicProperty(identifier: string): boolean
+`
+
+Removes a specified property.
+#### **Parameters**
+- **identifier**: *string*
+
+#### **Returns** *boolean*
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **removeTag**
 `
 removeTag(tag: string): boolean
@@ -351,6 +410,22 @@ Runs a particular command from the context of this player.
 player.runCommand("say You got a new high score!");
 player.runCommand("scoreboard players set @s score 10");
 ```
+### **setDynamicProperty**
+`
+setDynamicProperty(identifier: string, value: boolean | number | string): void
+`
+
+Sets a specified property to a value.
+#### **Parameters**
+- **identifier**: *string*
+- **value**: *boolean* | *number* | *string*
+  
+  Data value of the property to set.
+
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **setVelocity**
 `
 setVelocity(velocity: Vector): void
@@ -443,5 +518,4 @@ Triggers an entity type event. For every entity, a number of events are defined 
 
 > [!WARNING]
 > This function can throw errors.
-
 

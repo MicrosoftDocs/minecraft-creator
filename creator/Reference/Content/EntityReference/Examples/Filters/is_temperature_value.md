@@ -1,5 +1,5 @@
 ---
-author: v-josjones
+author: mammerla
 ms.author: v-josjones
 title: Entity Documentation - is_temperature_value
 ms.prod: gaming
@@ -63,7 +63,9 @@ Tests the current temperature against a provided value in the range (0.0, 1.0) w
 
 ### snow_golem
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/snow_golem.json" range="62-80":::
+```json
+{ "test": "is_temperature_value", "operator": ">", "value": 1.0 }
+```
 
 ## Vanilla entities using `is_temperature_value`
 

@@ -1,5 +1,5 @@
 ---
-author: v-josjones
+author: mammerla
 ms.author: v-josjones
 title: Entity Documentation - on_ground
 ms.prod: gaming
@@ -67,7 +67,13 @@ Returns true when the subject entity is on the ground.
 
 ### dolphin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/dolphin.json" range="81-101":::
+```json
+{
+     "test": "on_ground",
+    "operator": "==",
+    "value": true
+}
+```
 
 ## Vanilla entities using `on_ground`
 
