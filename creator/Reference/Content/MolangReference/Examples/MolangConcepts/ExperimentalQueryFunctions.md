@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Molang Documenation - Experimental Query Functions
+title: Molang Documentation - Experimental Query Functions
 ms.prod: gaming
 ---
 
-# Molang Documenation - Experimental Query Functions
+# Molang Documentation - Experimental Query Functions
 
 Listed below are the available Experimental Entity Query Functions.
 
