@@ -171,7 +171,7 @@
           - name: Built-in Events
             href: Reference/Content/entityreference/Examples/EntityEvents/TOC.yml
           - name: ID Lists
-            href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/IDLists.md
+            href: Reference/Content/entityreference/Examples/ClientEntityDocumentation/IDLists.md
         - name: Feature JSON
           items:
           - name: Feature Documentation Homepage
