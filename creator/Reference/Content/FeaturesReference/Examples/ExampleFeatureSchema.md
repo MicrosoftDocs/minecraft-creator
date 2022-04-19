@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: docsbryce
+ms.author: v-bbortree
 title: Features Documentation - Feature schema
 ms.prod: gaming
 ---
@@ -308,24 +308,6 @@ Here is an example of the complete feature schema:
                   molang "[1..1]" : opt // Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around
               }
           }
-      }
-      object "minecraft:catalyst_feature" : opt
-      {
-          object "description"
-          {
-              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
-          }
-          array "can_place_sculk_catalyst_on"
-          {
-               "<any array element>" : opt
-          }
-           "central_block"
-          feature_reference "patch_feature" : opt
-          feature_reference "central_patch_feature" : opt
-          int "vertical_range"
-          int "pathes_count_min"
-          int "pathes_count_max"
-          int "max_patch_distance"
       }
       object "minecraft:sculk_patch_feature" : opt
       {

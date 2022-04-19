@@ -14,11 +14,14 @@ ms.prod: gaming
 
 ## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |
-|start_distance| 10.0| Decimal| The distance in blocks that the owner can be away from this mob before it starts following it |
-|stop_distance| 2.0| Decimal| The distance in blocks this mob will stop from its owner while following it |
+| Name| Default Value| Type| Description |
+|:-----------:|:-----------:|:-----------:|:-----------:|
+| can_teleport| true| Boolean| Specify if the mob can teleport to the player if it is too far away |
+| ignore_vibration| true| Boolean| Specify if the mob will follow the owner if it has heard a vibration lately |
+| max_distance| 60.0| Decimal| The maximum distance in blocks this mob can be from its owner to start following, only used when canTeleport is false |
+| speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |
+| start_distance| 10.0| Decimal| The distance in blocks that the owner can be away from this mob before it starts following it |
+| stop_distance| 2.0| Decimal| The distance in blocks this mob will stop from its owner while following it |
 
 ## Example
 
