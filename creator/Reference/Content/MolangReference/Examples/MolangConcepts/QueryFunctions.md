@@ -1,11 +1,11 @@
 ---
 author: v-josjones
 ms.author: v-josjones
-title: Molang Documenation - Query Functions
+title: Molang Documentation - Query Functions
 ms.prod: gaming
 ---
 
-# Molang Documenation - Query Functions
+# Molang Documentation - Query Functions
 
 Query Functions are operators that access a wide variety of information. They can return simple true or false values (1.0 or 0.0) or more complex data. See the list of functions below for per-query documentation. Query Functions might not take any parameters. In that case, just `query.function_name` is used. Otherwise parentheses with commas separating arguments should be used, ie `query.function_name(1, 2, 'three')`.
 
