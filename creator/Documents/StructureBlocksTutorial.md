@@ -12,7 +12,7 @@ For this tutorial, we're going to use structure blocks and the command `/structu
 
 We recommend you read the following sections first:
 
-- [Getting Started with Commands](CommandsIntroduction.md)
+- [Introduction to Commands](CommandsIntroduction.md)
 - [Introduction to Structure Blocks](IntroductionToStructureBlocks.md)
 
 You should also download the structure blocks sample if you'd like to follow along with these buildings. But feel free to find some in your world or to design your own.
@@ -30,7 +30,7 @@ In this tutorial, you will learn the following:
 
 In creative mode, build a structure smaller than 64 blocks x 384 blocks x 64 blocks.
 
-I made a log cabin that is included in the Minecraft-samples structure_blocks sample as `mystructure:house2`.
+I made a log cabin that is included in the [Structure Blocks Samples Behavior Pack](https://github.com/microsoft/minecraft-samples/blob/main/structure_blocks_sample_behavior_pack/README.md) as `mystructure:house2`.
 
 :::image type="content" source="Media/StructureBlock/house2.png" alt-text="A structure built to look like a log cabin":::
 
@@ -51,9 +51,11 @@ Great! We saved the structure. Now we can use it all over the world.
 
 Let's add another log cabin nearby, to begin building a village. I'm adding it to a nearby small hill.
 
+:::image type="content" source="Media/StructureBlock/loadscreen.png" alt-text="The log cabin on a small hill":::
+
 1. Put a structure block on the ground.
 1. Load your structure name. I'm using `mystructure:house2`.
-   - Adjust the offset if you'd like to. I'm using 1 so that I don't cut off part of a hill.
+   - Adjust the offset.
    - Leave Include Entities since this building has no entities.
    - We won't be using Remove Blocks, Integrity, or Seed since we want to make a usable village.
    - I rotated the building 180 degrees.
@@ -118,7 +120,7 @@ Let's get started.
 3. Type `/give @s acacia_button` to give yourself a acacia button.
 4. Place the command block and acacia button on two adjacent blocks.
 5. Right click the command block. 
-6. Enter `/structure load statue ~ ~ ~ 0_degrees none block_by_block10` into the command input.
+6. Enter `/structure load statue ~ ~ ~ 0_degrees none block_by_block 10` into the command input.
     - This loads in the structure called statue at the current location, does not rotate or mirror it, and animates it in one block at a time over ten seconds.
 7. Go to your world settings and change it from Creative to Adventure.
 8. Click the acacia button and watch the statue load in. 
@@ -131,4 +133,4 @@ Now you're familiar with structure blocks and the `/structure` command. You coul
 > [Popular Commands](CommandsPopularCommands.md)
 > [How to Make a Complete the Monument Map](CommandsHowToMakeACTMMap.md)
 
-To see examples of structures, check out the Minecraft [Structure Blocks Behavior Pack Samples](https://aka.ms/resourcepacktemplate)).
+To see examples of structures, check out the Minecraft [Structure Blocks Behavior Pack Samples](https://github.com/microsoft/minecraft-samples/blob/main/structure_blocks_sample_behavior_pack/README.md).
