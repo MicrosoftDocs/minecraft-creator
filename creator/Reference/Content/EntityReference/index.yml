@@ -23,9 +23,9 @@ landingContent:
       - linkListType: get-started
         links:
           - text: Entity JSON Introduction
-            url: Examples/ClientEntityDocumenation/ClientEntityDocumentationIntroduction.md
+            url: Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md
           - text: Spawn Rules and Data-Driven Spawning
-            url:  Examples/ClientEntityDocumenation/DataDrivenSpawning.md
+            url:  Examples/ClientEntityDocumentation/DataDrivenSpawning.md
   # Card (optional)
   - title: AI Goals
     linkLists:
@@ -121,7 +121,7 @@ landingContent:
           - text: Entity Behavior List
             url: Examples/EntityList.md
           - text: Entity JSON ID List
-            url: Examples/ClientEntityDocumenation/IDLists.md
+            url: Examples/ClientEntityDocumentation/IDLists.md
 
 
 
