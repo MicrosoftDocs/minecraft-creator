@@ -22,6 +22,14 @@
             href: Documents/ConvertingTexturePacks.md
           - name: Preparing Raw Text for Localization
             href: Documents/PreparingRawTextForLocalization.md
+        - name: Advanced Topics
+          items:
+          - name: Actor Storage
+            href: Documents/ActorStorage.md
+          - name: Data-Driven Overworld Height
+            href: Documents/DataDrivenOverworldHeight.md
+          - name: Editing NBTs Safely
+            href: Documents/EditingNBTSafely.md
     - name: Tutorials
       items:
         - name: Add-On Pack Tutorials
@@ -73,7 +81,7 @@
             - name: Create a Custom NPC
               href: Documents/CreateNPCs.md
             - name: NPC Dialogue Command
-              href: Documents/NPCDialogue.md
+              href: Documents/NPCDialogue.md        
         - name: Loot and Trading Tables
           items:
             - name: Introduction to Loot Tables
@@ -82,15 +90,31 @@
               href: Documents/LootAndTradeTableFunctions.md
             - name: Loot Spawn and Kill
               href: Documents/LootSpawnAndKill.md
+        - name: Physically Based Rendering
+          items:
+            - name: Getting Started with Ray Tracing
+              href: Documents/RTXGettingStarted.md
+            - name: Introduction to Physically Based Rendering
+              href: Documents/RTXPBRIntro.md
+            - name: Physically Based Rendering Tutorial
+              href: Documents/RTXPBRTutorial.md
+        - name: Structure Blocks
+          items:
+          - name: Introduction to Structure Blocks
+            href: Documents/IntroductionToStructureBlocks.md
+          - name: Structure Blocks Tutorial
+            href: Documents/StructureBlocksTutorial.md
     - name: Tools and Frameworks
       items:
         - name: GameTest Framework
           items:
           - name: Getting Started with GameTest
             href: Documents/GameTestGettingStarted.md
-          - name: Build your first GameTest
+          - name: Build your First GameTest
             href: Documents/GameTestBuildYourFirstGameTest.md
-          - name: Use Visual Studio Code tools to write script
+          - name: Build Gameplay with TypeScript
+            href: Documents/ScriptingGettingStarted.md
+          - name: Use Visual Studio Code Tools to Write Script
             href: Documents/ScriptDeveloperTools.md
         - name: Creator Tools
           items:
