@@ -64,6 +64,8 @@
   href: minecraftComponent_equip_item.md
 - name: equippable
   href: minecraftComponent_equippable.md
+- name: exhaustion_values
+  href: minecraftComponent_exhaustion_values.md
 - name: experience_reward
   href: minecraftComponent_experience_reward.md
 - name: explode

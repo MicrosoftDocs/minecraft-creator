@@ -14,10 +14,11 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 
 ## List of Items
 
-| ID| Name| Aux Values (if applicable) |
+| ID| Name | Aux Values (if applicable) |
 |:-----------|:-----------|:-----------|
 | 379| acacia_boat|  |
 | -140| acacia_button|  |
+| 638| acacia_chest_boat|  |
 | 556| acacia_door|  |
 | 187| acacia_fence_gate|  |
 | -150| acacia_pressure_plate|  |
@@ -29,11 +30,11 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 126| activator_rail|  |
 | 487| agent_spawn_egg|  |
 | -158| air|  |
-| 632| allay_spawn_egg|  |
+| 631 | allay_spawn_egg|  |
 | 210| allow|  |
 | -327| amethyst_block|  |
 | -329| amethyst_cluster|  |
-| 626| amethyst_shard|  |
+| 625| amethyst_shard|  |
 | -271| ancient_debris|  |
 | -171| andesite_stairs|  |
 | 145| anvil|  |
@@ -50,7 +51,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -163| bamboo|  |
 | -164| bamboo_sapling|  |
 | 567| banner|  |
-| 636| banner_pattern|  |
+| 643| banner_pattern|  |
 | -203| barrel|  |
 | -161| barrier|  |
 | -234| basalt|  |
@@ -69,6 +70,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -323| big_dripleaf|  |
 | 376| birch_boat|  |
 | -141| birch_button|  |
+| 635| birch_chest_boat|  |
 | 554| birch_door|  |
 | 184| birch_fence_gate|  |
 | -151| birch_pressure_plate|  |
@@ -96,7 +98,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 399| blue_dye|  |
 | 231| blue_glazed_terracotta|  |
 | -11| blue_ice|  |
-| 634| boat|  |
+| 641| boat|  |
 | 415| bone|  |
 | 216| bone_block|  |
 | 411| bone_meal|  |
@@ -108,7 +110,6 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 321| bowl|  |
 | 261| bread|  |
 | 431| brewing_stand|  |
-| 117| brewingstandblock|  |
 | 383| brick|  |
 | 45| brick_block|  |
 | 108| brick_stairs|  |
@@ -150,6 +151,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 192| chemical_heat|  |
 | 238| chemistry_table|  |
 | 54| chest|  |
+| 640| chest_boat|  |
 | 389| chest_minecart|  |
 | 275| chicken|  |
 | 435| chicken_spawn_egg|  |
@@ -244,6 +246,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 229| cyan_glazed_terracotta|  |
 | 380| dark_oak_boat|  |
 | -142| dark_oak_button|  |
+| 639| dark_oak_chest_boat|  |
 | 557| dark_oak_door|  |
 | 186| dark_oak_fence_gate|  |
 | -152| dark_oak_pressure_plate|  |
@@ -311,7 +314,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -317| dripstone_block|  |
 | 125| dropper|  |
 | 483| drowned_spawn_egg|  |
-| 635| dye|  |
+| 642| dye|  |
 | 390| egg|  |
 | 471| elder_guardian_spawn_egg|  |
 | 36| element_0|  |
@@ -484,8 +487,8 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 8| flowing_water|  |
 | 490| fox_spawn_egg|  |
 | 513| frame|  |
-| -468| frog_egg|  |
-| 629| frog_spawn_egg|  |
+| -468| frog_spawn|  |
+| 628| frog_spawn_egg|  |
 | 207| frosted_ice|  |
 | 61| furnace|  |
 | 454| ghast_spawn_egg|  |
@@ -504,7 +507,6 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 246| glowingobsidian|  |
 | 89| glowstone|  |
 | 394| glowstone_dust|  |
-| 625| goat_horn|  |
 | 501| goat_spawn_egg|  |
 | 41| gold_block|  |
 | 306| gold_ingot|  |
@@ -562,7 +564,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 248| info_update|  |
 | 249| info_update2|  |
 | 413| ink_sac|  |
-| 95| invisiblebedrock|  |
+| 95| invisible_bedrock|  |
 | 298| iron_axe|  |
 | 101| iron_bars|  |
 | 42| iron_block|  |
@@ -584,6 +586,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 26| item.bed|  |
 | 244| item.beetroot|  |
 | 194| item.birch_door|  |
+| 117| item.brewing_stand|  |
 | 92| item.cake|  |
 | 242| item.camera|  |
 | -209| item.campfire|  |
@@ -611,6 +614,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 84| jukebox|  |
 | 377| jungle_boat|  |
 | -143| jungle_button|  |
+| 636| jungle_chest_boat|  |
 | 555| jungle_door|  |
 | 185| jungle_fence_gate|  |
 | -153| jungle_pressure_plate|  |
@@ -675,6 +679,9 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 213| magma|  |
 | 430| magma_cream|  |
 | 455| magma_cube_spawn_egg|  |
+| -472| mangrove_leaves|  |
+| -474| mangrove_propagule|  |
+| -476| mangrove_propagule_hanging|  |
 | 600| medicine|  |
 | -331| medium_amethyst_bud|  |
 | 103| melon_block|  |
@@ -692,7 +699,13 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 48| mossy_cobblestone|  |
 | -179| mossy_cobblestone_stairs|  |
 | -175| mossy_stone_brick_stairs|  |
-| 250| movingblock|  |
+| 250| moving_block|  |
+| -473| mud|  |
+| -479| mud_brick_double_slab|  |
+| -478| mud_brick_slab|  |
+| -480| mud_brick_stairs|  |
+| -481| mud_brick_wall|  |
+| -475| mud_bricks|  |
 | 466| mule_spawn_egg|  |
 | 260| mushroom_stew|  |
 | 544| music_disc_11|  |
@@ -703,7 +716,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 538| music_disc_far|  |
 | 539| music_disc_mall|  |
 | 540| music_disc_mellohi|  |
-| 628| music_disc_otherside|  |
+| 627| music_disc_otherside|  |
 | 621| music_disc_pigstep|  |
 | 541| music_disc_stal|  |
 | 542| music_disc_strad|  |
@@ -711,8 +724,6 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 543| music_disc_ward|  |
 | 550| mutton|  |
 | 110| mycelium|  |
-| -466| mysterious_frame|  |
-| -467| mysterious_frame_slot|  |
 | 548| name_tag|  |
 | 570| nautilus_shell|  |
 | 112| nether_brick|  |
@@ -742,6 +753,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 25| noteblock|  |
 | 470| npc_spawn_egg|  |
 | 375| oak_boat|  |
+| 634| oak_chest_boat|  |
 | 358| oak_sign|  |
 | 53| oak_stairs|  |
 | 251| observer|  |
@@ -758,6 +770,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -357| oxidized_cut_copper_stairs|  |
 | -371| oxidized_double_cut_copper_slab|  |
 | 174| packed_ice|  |
+| -477| packed_mud|  |
 | 357| painting|  |
 | 489| panda_spawn_egg|  |
 | 386| paper|  |
@@ -775,7 +788,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 404| pink_dye|  |
 | 226| pink_glazed_terracotta|  |
 | 33| piston|  |
-| 34| pistonarmcollision|  |
+| 34| piston_arm_collision|  |
 | 5| planks|  |
 | 243| podzol|  |
 | -308| pointed_dripstone|  |
@@ -870,6 +883,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 73| redstone_ore|  |
 | 76| redstone_torch|  |
 | 55| redstone_wire|  |
+| -466| reinforced_deepslate|  |
 | 419| repeater|  |
 | 188| repeating_command_block|  |
 | 255| reserved6|  |
@@ -890,6 +904,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -461| sculk_shrieker|  |
 | -459| sculk_vein|  |
 | 572| scute|  |
+| 169| sea_lantern|  |
 | -156| sea_pickle|  |
 | -130| seagrass|  |
 | 169| sealantern|  |
@@ -928,7 +943,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -236| soul_soil|  |
 | -268| soul_torch|  |
 | 601| sparkler|  |
-| 637| spawn_egg|  |
+| 644| spawn_egg|  |
 | 278| spider_eye|  |
 | 446| spider_spawn_egg|  |
 | 561| splash_potion|  |
@@ -936,6 +951,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -321| spore_blossom|  |
 | 378| spruce_boat|  |
 | -144| spruce_button|  |
+| 637| spruce_chest_boat|  |
 | 553| spruce_door|  |
 | 183| spruce_fence_gate|  |
 | -154| spruce_pressure_plate|  |
@@ -944,7 +960,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -181| spruce_standing_sign|  |
 | -149| spruce_trapdoor|  |
 | -182| spruce_wall_sign|  |
-| 627| spyglass|  |
+| 626| spyglass|  |
 | 450| squid_spawn_egg|  |
 | 241| stained_glass|  |
 | 160| stained_glass_pane|  |
@@ -953,7 +969,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 63| standing_sign|  |
 | 320| stick|  |
 | 29| sticky_piston|  |
-| -217| stickypistonarmcollision|  |
+| -217| sticky_piston_arm_collision|  |
 | 1| stone|  |
 | 315| stone_axe|  |
 | 109| stone_brick_stairs|  |
@@ -987,8 +1003,8 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 590| suspicious_stew|  |
 | 287| sweet_berries|  |
 | -207| sweet_berry_bush|  |
-| 631| tadpole_bucket|  |
-| 630| tadpole_spawn_egg|  |
+| 630| tadpole_bucket|  |
+| 629| tadpole_spawn_egg|  |
 | 31| tallgrass|  |
 | -239| target|  |
 | -334| tinted_glass|  |
@@ -999,7 +1015,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 96| trapdoor|  |
 | 146| trapped_chest|  |
 | 546| trident|  |
-| 132| tripwire|  |
+| 132| trip_wire|  |
 | 131| tripwire_hook|  |
 | 266| tropical_fish|  |
 | 366| tropical_fish_bucket|  |
@@ -1023,6 +1039,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 177| wall_banner|  |
 | 68| wall_sign|  |
 | 492| wandering_trader_spawn_egg|  |
+| 632| warden_spawn_egg|  |
 | -261| warped_button|  |
 | 618| warped_door|  |
 | -267| warped_double_slab|  |

@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: docsbryce
+ms.author: v-bbortree
 title: Entity Documentation - minecraft:behavior.ram_attack
 ms.prod: gaming
 ---
@@ -11,19 +11,19 @@ ms.prod: gaming
 
 ## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-| ram_distance | 7 | Integer | The distance in blocks at which the mob will start to ram its target. |
-| min_ram_distance | 4 | Integer | The minimum distance in blocks at which the mob can start a ram attack. |
-| knockback_force | 5.0 | Decimal | The force of the knockback of the ram's attack. |
-| baby_knockback_modifier | 4 | Integer | The modifier to knockback for baby mobs. |
-| knockback_height | 0.1 | Decimal | The height in blocks of the knockback of the ram attack. |
-| run_speed | 1.0 | Decimal | Sets the mob's speed when running toward the target. |
-| ram_speed | 2.0 | Decimal | Sets the mob's speed when performing a ram attack toward the target. |
-| pre_ram_sound | *not set* | String | The sound to play when the mob is about to perform a ram attack. |
-| ram_impact_sound | *not set* | String | The sound to play when the mob hits the target with a ram attack .|
-| trigger | *not set* | String | The event to trigger when attacking. |
-| cooldown_range | [10.0, 20.0] | Decimal | The minimum and maximum cooldown time-range in seconds between each attempted ram attack. |
+| Name| Default Value| Type| Description |
+|:-----------:|:-----------:|:-----------:|:-----------:|
+| baby_knockback_modifier| 0.333333| Decimal| The modifier to knockback that babies have. |
+| cooldown_range| [10, 20]| Range [a, b]| Minimum and maximum cooldown time-range (positive, in seconds) between each attempted ram attack. |
+| knockback_force| 5.000000| Decimal| The force of the knockback of the ram attack. |
+| knockback_height| 0.100000| Decimal| The height of the knockback of the ram attack. |
+| min_ram_distance| 0.000000| Decimal| The minimum distance at which the mob can start a ram attack. |
+| on_start| | Trigger| The event to trigger when attacking |
+| pre_ram_sound| | String| The sound to play when an entity is about to perform a ram attack. |
+| ram_distance| 0.000000| Decimal| The distance at which the mob start to run with ram speed. |
+| ram_impact_sound| | String| The sound to play when an entity is impacting on a ram attack. |
+| ram_speed| 2.000000| Decimal| Sets the entity's speed when charging toward the target. |
+| run_speed| 1.000000| Decimal| Sets the entity's speed when running toward the target. |
 
 ## Example
 
@@ -46,7 +46,29 @@ ms.prod: gaming
 
 ### goat
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/goat.json" range="144-164":::
+```json
+"minecraft:behavior.ram_attack": {
+    "priority": 5,
+    "run_speed": 0.7,
+    "ram_speed": 1.8,
+    "min_ram_distance": 4,
+    "ram_distance": 7,
+    "knockback_force": 2.5,
+    "knockback_height": 0.04,
+    "pre_ram_sound": "pre_ram",
+    "ram_impact_sound": "ram_impact",
+    "cooldown_range": [
+        30,
+        300
+    ],
+    "on_start": [
+        {
+            "event": "start_event",
+            "target": "self"
+        }
+    ]
+}
+```
 
 ## Vanilla Mobs using `minecraft:behavior.ram_attack`
 

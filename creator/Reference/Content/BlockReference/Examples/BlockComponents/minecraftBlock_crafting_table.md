@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: docsbryce
+ms.author: v-bbortree
 title: Block Documentation - minecraft:crafting_table
 ms.prod: gaming
 ---
@@ -18,8 +18,8 @@ ms.prod: gaming
 
 ## Crafting Tags
 
-Defines the tags recipes should define to be crafted on this table.
+Defines the tags recipes should define to be crafted on this table. Limited to 64 tags.
 
 ## Custom Description
 
-Defines the name in the UI of this table. If not specified, the name of the block will be used.
+Defines the language file key that maps what text will be displayed in the UI of this table. If not specified, the name of the block will be used.

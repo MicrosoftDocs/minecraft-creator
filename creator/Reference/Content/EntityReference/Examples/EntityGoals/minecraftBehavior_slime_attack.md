@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: docsbryce
+ms.author: v-bbortree
 title: Entity Documentation - minecraft:behavior.slime_attack
 ms.prod: gaming
 ---
@@ -22,9 +22,12 @@ ms.prod: gaming
 
 ## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| Boolean| set_persistent| false| Allows the actor to be set to persist upon targeting a player |
+| Name| Default Value| Type| Description |
+|:-----------:|:-----------:|:-----------:|:-----------:|
+| set_persistent| false| Boolean| Allows the actor to be set to persist upon targeting a player |
+| speed_multiplier| 1| Decimal| During attack behavior, this multiplier modifies the entity's speed when moving toward the target. |
+| x_max_rotation| 10| Decimal| Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target. |
+| y_max_rotation| 10| Decimal| Maximum rotation (in degrees), on the Y-axis, this entity can rotate while trying to look at the target. |
 
 ## Example
 
@@ -38,7 +41,7 @@ ms.prod: gaming
     "pounce_max_dist": 5.0,
     "interest_time": 4.0,
     "stuck_time": 2.0,
-    "strike_dist": 2.0,
+    "strike_dist": 2.0
 }
 ```
 
@@ -46,7 +49,11 @@ ms.prod: gaming
 
 ### slime
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/slime.json" range="128-130":::
+```json
+"minecraft:behavior.slime_attack": {
+    "priority": 3
+}
+```
 
 ## Vanilla entities using `minecraft:behavior.slime_attack`
 
