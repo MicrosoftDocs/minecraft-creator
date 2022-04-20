@@ -22,16 +22,6 @@
             href: Documents/ConvertingTexturePacks.md
           - name: Preparing Raw Text for Localization
             href: Documents/PreparingRawTextForLocalization.md
-        - name: Advanced Topics
-          items:
-          - name: Actor Storage
-            href: Documents/ActorStorage.md
-          - name: The Upgrade Actor Storage Command
-            href: Documents/UpgradeActorStorageCommand.md
-          - name: Data Driven Overworld Height
-            href: Documents/DataDrivenOverworldHeight.md
-          - name: Editing NBTs Safely
-            href: Documents/EditingNBTSafely.md
     - name: Tutorials
       items:
         - name: Add-On Pack Tutorials
