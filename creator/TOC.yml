@@ -26,6 +26,11 @@
           items:
           - name: Actor Storage
             href: Documents/ActorStorage.md
+<<<<<<< HEAD
+=======
+          - name: The Upgrade Actor Storage Command
+            href: Documents/UpgradeActorStorageCommand.md
+>>>>>>> 4e04c8f3dec5e844ebb491108405ccb6099ca59e
           - name: Data-Driven Overworld Height
             href: Documents/DataDrivenOverworldHeight.md
           - name: Editing NBTs Safely

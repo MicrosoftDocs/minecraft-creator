@@ -36,13 +36,13 @@ Let's start with saving a structure into a structure block's memory. This exampl
 
 
 >[!Note]
-> Any block with a state will have its saved state. Command blocks will have command information, chests will have their inventory, and even structure blocks will have their structure information.
+> Any block with a state will have its state saved. Command blocks will have command information, chests will have their inventory, and even structure blocks will have their structure information.
 
 
 :::image type="content" source="Media/StructureBlock/saveui.png" alt-text="The UI for saving with a structure block":::
 
 1. Start in creative mode with a structure (or some chunk of the ground you particularly like).
-1. Open the chat using /and give yourself a structure block by typing /give @s structure_block.
+1. Open the chat using the " / " key and give yourself a structure block by typing `/give @s structure_block`.
 1. Right click the structure block.
 1. Input the following information about the structure you are saving:
     - Structure Name: Input a name for the structure that will be used to load it later.
@@ -90,7 +90,7 @@ Enjoy your new structure in a new place.
 
 Corner mode makes it simpler to select a structure by surrounding the structure and then selecting the volume within the corner mode structure blocks. You can use two or more structure blocks to define a shape that encapsulates the blocks you wish to save.
 
-1. Place a structure block in corner mode outside one side of the structure. Remember the name you use to save it.
+1. Place a structure block in corner mode outside of one of the structure's sides. Remember the name you use to save it.
 1. Place another structure block in corner mode on the opposite side of the structure with the same name.
 1. Place a third structure block and select Save Mode.
 1. Enter the name used in the two corner mode structure blocks.
@@ -107,10 +107,10 @@ Export mode can be used to create a .glb file that will be usable in behavior pa
 
 To export a 3D file, follow these steps:
 
-1. Structure Name: Enter a name. No caps.
-1. Relative Position: Select the origin of the structure outline. You can select portions into the ground.
-1. Structure size: set distance from relative position to build that cube in space in Minecraft.
-1. Remove blocks: Don't use inner blocks.
+1. Structure Name: Enter a name for the structure using only lowercase characters.
+2. Relative Position: Select the origin of the structure outline. You can select portions into the ground.
+3. Structure size: set distance from relative position to build that cube in space in Minecraft.
+4. Remove blocks: Don't use inner blocks.
   - This is what you'd choose for a 3D printed item or when creating 3D visuals in the classroom.
 
 ## What's Next?

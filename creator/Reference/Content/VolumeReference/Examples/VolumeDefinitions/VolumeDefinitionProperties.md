@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: docsbryce
+ms.author: v-bbortree
 title: Volume Documentation - Properties & Descriptions
 ms.prod: gaming
 ---
