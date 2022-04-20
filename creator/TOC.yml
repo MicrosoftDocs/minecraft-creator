@@ -66,6 +66,8 @@
             href: Documents/ScoreboardIntroduction.md
           - name: Scoreboard Operations Tutorial
             href: Documents/ScoreboardOperationsTutorial.md
+          - name: The Tickingarea Command
+            href: Documents/TickingAreaCommand.md
           - name: How to use tick.json
             href: Documents/TickJsonIntroduction.md
         - name: Minecraft Entities
