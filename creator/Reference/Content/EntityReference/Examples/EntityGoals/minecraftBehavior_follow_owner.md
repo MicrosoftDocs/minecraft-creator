@@ -1,6 +1,6 @@
 ---
-author: JDHeaden
-ms.author: v-josjones
+author: docsbryce
+ms.author: v-bbortree
 title: Entity Documentation - minecraft:behavior.follow_owner
 ms.prod: gaming
 ---

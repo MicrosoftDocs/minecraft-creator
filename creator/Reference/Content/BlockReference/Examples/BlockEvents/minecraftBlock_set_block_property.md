@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: v-josjones
+author: docsbryce
+ms.author: v-bbortree
 title: Block Documentation - set_block_property
 ms.prod: gaming
 ---

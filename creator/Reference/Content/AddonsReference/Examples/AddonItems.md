@@ -14,7 +14,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 
 ## List of Items
 
-| ID| Name| Aux Values (if applicable) |
+| ID| Name | Aux Values (if applicable) |
 |:-----------|:-----------|:-----------|
 | 379| acacia_boat|  |
 | -140| acacia_button|  |
@@ -705,7 +705,8 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -478| mud_brick_slab|  |
 | -480| mud_brick_stairs|  |
 | -481| mud_brick_wall|  |
-| -475| mud_bricks|  || 466| mule_spawn_egg|  |
+| -475| mud_bricks|  |
+| 466| mule_spawn_egg|  |
 | 260| mushroom_stew|  |
 | 544| music_disc_11|  |
 | 534| music_disc_13|  |

@@ -51,7 +51,7 @@ Great! We saved the structure. Now we can use it all over the world.
 
 Let's add another log cabin nearby, to begin building a village. I'm adding it to a nearby small hill.
 
-:::image type="content" source="Media/StructureBlock/loadscreen.png" alt-text="The log cabin on a small hill":::
+:::image type="content" source="Media/StructureBlock/loadscreen.png" alt-text="The structure block load screen with a log cabin":::
 
 1. Put a structure block on the ground.
 1. Load your structure name. I'm using `mystructure:house2`.
