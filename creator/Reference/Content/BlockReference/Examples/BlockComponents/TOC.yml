@@ -8,8 +8,6 @@
    href: minecraftBlock_block_light_emission.md
  - name: block_light_filter
    href: minecraftBlock_block_light_filter.md
- - name: breakonpush
-   href: minecraftBlock_breakonpush.md
  - name: breathability
    href: minecraftBlock_breathability.md
  - name: crafting_table
@@ -28,22 +26,16 @@
    href: minecraftBlock_friction.md
  - name: geometry
    href: minecraftBlock_geometry.md
- - name: immovable
-   href: minecraftBlock_immovable.md
  - name: loot
    href: minecraftBlock_loot.md
  - name: map_color
    href: minecraftBlock_map_color.md
  - name: material_instances
    href: minecraftBlock_material_instances.md
- - name: onlypistonpush
-   href: minecraftBlock_onlypistonpush.md
  - name: part_visibility
    href: minecraftBlock_part_visibility.md
  - name: placement_filter
    href: minecraftBlock_placement_filter.md
- - name: preventsjumping
-   href: minecraftBlock_preventsjumping.md
  - name: random_ticking
    href: minecraftBlock_random_ticking.md
  - name: rotation

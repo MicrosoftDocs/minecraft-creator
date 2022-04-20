@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: docsbryce
+ms.author: v-bbortree
 title: Addons Documentation - Entity List
 ms.prod: gaming
 ---
@@ -32,6 +32,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | cat| 21323| 75 |
 | cave_spider| 265000| 40 |
 | chalkboard| 78| 78 |
+| chest_boat| 218| 218 |
 | chest_minecart| 524386| 98 |
 | chicken| 4874| 10 |
 | cod| 9072| 112 |
@@ -125,6 +126,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | villager_v2| 16778099| 115 |
 | vindicator| 2873| 57 |
 | wandering_trader| 886| 118 |
+| warden| 387| 131 |
 | witch| 2861| 45 |
 | wither| 68404| 52 |
 | wither_skeleton| 1116976| 48 |

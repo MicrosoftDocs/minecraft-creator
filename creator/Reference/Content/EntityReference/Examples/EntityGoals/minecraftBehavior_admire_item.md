@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: docsbryce
+ms.author: v-bbortree
 title: Entity Documentation - minecraft:behavior.admire_item
 ms.prod: gaming
 ---
@@ -18,6 +18,8 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 |admire_item_sound|*not set* |String |The sound event to play when admiring the item |
 |sound_interval|0 |Range ["range_min", "range_max"] |The range of time in seconds to randomly wait before playing the sound again. |
+|on_admire_item_start|*not set* | ["event", "target"] |What happens when the entity starts admiring an item |
+|on_admire_item_stop|*not set* | ["event", "target"] |What happens when the entity stops admiring an item |
 
 ## Example
 
@@ -28,6 +30,14 @@ ms.prod: gaming
     "sound_interval": {
         "range_min": 0.0,
         "range_max": 5.0
+    },
+    "on_admire_item_start": {
+        "event": "admire_item_started_event",
+        "target": "self"
+    },
+    "on_admire_item_stop": {
+        "event": "admire_item_stopped_event",
+        "target": "self"
     }
 }
 ```
@@ -36,7 +46,24 @@ ms.prod: gaming
 
 ### piglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="483-498":::
+```json
+      "minecraft:behavior.admire_item": {
+        "priority": 2,
+        "admire_item_sound": "admire",
+        "sound_interval": {
+          "range_min": 2.0,
+          "range_max": 5.0
+        },
+        "on_admire_item_start": {
+          "event": "admire_item_started_event",
+          "target": "self"
+        },
+        "on_admire_item_stop": {
+          "event": "admire_item_stopped_event",
+          "target": "self"
+        }
+      }
+```
 
 ## Vanilla entities using `admire_item`
 

@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:item_storage` is used for storing items within an item's user data.
 
 >[!IMPORTANT]
-> `minecraft:item_storage` requires the Holiday Creator Features or Caves & Cliffs experimental toggle to be set to `true` in order to function properly.
+> `minecraft:item_storage` requires the Holiday Creator Features to be set to `true` in order to function properly.
 >
 >Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
 >

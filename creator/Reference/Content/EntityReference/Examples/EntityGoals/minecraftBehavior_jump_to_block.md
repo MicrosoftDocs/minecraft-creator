@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: docsbryce
+ms.author: v-bbortree
 title: Entity Documentation - minecraft:behavior.jump_to_block
 ms.prod: gaming
 ---
@@ -9,29 +9,34 @@ ms.prod: gaming
 
 `minecraft:behavior.jump_to_block` allows the mob to search around for a block to jump to and then jump to that block.
 
+
 ## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-| searchWidth | 8 | Integer | The maximum width in blocks that the mob will search. Range [2, 15]. |
-| searchHeight | 10 | Integer | The maximum height in blocks that the mob will search. Range [2, 15]. |
-| scaleFactor | 0.7 | Decimal | The scale factor of the bounding box of the mob while it is jumping. |
-| maxVelocity | 1.5 | Decimal | The maximum velocity with which the mob can jump. |
-| minPathLength | 5 | Integer | The minimum length in blocks of the mob's path to a block in order to consider jumping to it. |
-| minDistance | 2 | Integer | The minimum distance in blocks from the mob to a block in order to consider jumping to it. |
-| coolDownTimeRange | [10.0, 20.0] | Decimal | The minimum and maximum cooldown time-range in seconds between each attempted jump.
+| Name| Default Value| Type| Description |
+|:-----------:|:-----------:|:-----------:|:-----------:|
+| cooldown_range| [10, 20]| Range [a, b]| Minimum and maximum cooldown time-range (positive, in seconds) between each attempted jump. |
+| forbidden_blocks| | Array| Blocks that the mob can't jump to. |
+| max_velocity| 1.500000| Decimal| The maximum velocity with which the mob can jump. |
+| minimum_distance| 2| Integer| The minimum distance (in blocks) from the mob to a block, in order to consider jumping to it. |
+| minimum_path_length| 5| Integer| The minimum length (in blocks) of the mobs path to a block, in order to consider jumping to it. |
+| preferred_blocks| | Array| Blocks that the mob prefers jumping to. |
+| preferred_blocks_chance| 1.000000| Decimal| Chance (between 0.0 and 1.0) that the mob will jump to a preferred block, if in range. Only matters if preferred blocks are defined. |
+| scale_factor| 0.700000| Decimal| The scalefactor of the bounding box of the mob while it is jumping. |
+| search_height| 10| Integer| The height (in blocks, in range [2, 15]) of the search box, centered around the mob. |
+| search_width| 8| Integer| The width (in blocks, in range [2, 15]) of the search box, centered around the mob. |
+
 
 ## Example
 
 ```json
 "minecraft:behavior.jump_to_block":{
-    "searchWidth": 9,
-    "searchHeight": 5,
-    "scaleFactor": 2.0,
-    "maxVelocity": 10.0,
-    "minPathLength": 4,
-    "minDistance": 6,
-    "coolDownTimeRange": [5, 10],
+    "search_width": 9,
+    "search_height": 5,
+    "scale_factor": 2.0,
+    "max_velocity": 10.0,
+    "minimum_path_length": 4,
+    "minimum_distance": 6,
+    "cooldown_range": [5, 10],
 }
 ```
 
@@ -39,8 +44,20 @@ ms.prod: gaming
 
 ### Goat
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/goat.json" range="205-216":::
-
+```json
+"minecraft:behavior.jump_to_block": {
+    "priority": 8,
+    "search_width": 10,
+    "search_height": 10,
+    "minimum_path_length": 8,
+    "minimum_distance": 1,
+    "scale_factor": 0.6,
+    "cooldown_range": [
+        30,
+        60
+    ]
+}
+```
 ## Vanilla Mobs using `minecraft:behavior.jump_to_block`
 
 - [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
