@@ -13,8 +13,8 @@ Below is a list of all the available Block Components within Minecraft:Bedrock E
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|[minecraft:aim_collision](BlockComponents/minecraftBlock_aim_collision.md)| 0.0| Decimal| The amount of light this block will emit in a range [0.0, 1.0].|
-|[minecraft:block_collision](BlockComponents/minecraftBlock_block_collision.md)| 0.0| Decimal| The amount of light this block will emit in a range [0.0, 1.0].|
+|[minecraft:aim_collision](BlockComponents/minecraftBlock_aim_collision.md)| true| Boolean| The existence of the block's aim collision, if set to true, it's size could be set by a extra parameter.|
+|[minecraft:block_collision](BlockComponents/minecraftBlock_block_collision.md)| true| Boolean| The existence of the block's collision, if set to true, it's size could be set by a extra parameter.|
 |[minecraft:block_light_emission](BlockComponents/minecraftBlock_block_light_emission.md)| 0.0| Decimal| The amount of light this block will emit in a range [0.0, 1.0].|
 |[minecraft:breathability](BlockComponents/minecraftBlock_breathability.md)| solid| Enumerator|  Property describing the breathability of this block and whether it is treated as a solid or as air. |
 |[minecraft:creative_category](BlockComponents/minecraftBlock_creative_category.md) |Specifies the creative group for the block. |
