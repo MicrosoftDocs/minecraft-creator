@@ -111,12 +111,11 @@ Listed below are two examples showcasing how a manifest.json file can be written
         "authors": ["exampleAuthor"],
         "license": "MIT",
         "url": "http://www.exampleurl.com",
-        "generated_with:" [
+        "generated_with": {
             "example_tool": ["1.0.0", "1.1.0"]
-        ]
+        }
     }
 }
-
 ```
 
 ### Resource Pack
@@ -142,5 +141,4 @@ Listed below are two examples showcasing how a manifest.json file can be written
         }
     ]
 }
-
 ```
