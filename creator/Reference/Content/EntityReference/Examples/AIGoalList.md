@@ -9,8 +9,8 @@ ms.prod: gaming
 
 Below is a list of all the available AI Goals within Minecraft:Bedrock Edition for use with Entity JSON files.
 
-AI Goal |Description
-:-----|:----------
+|AI Goal |Description
+|:-----|:----------|
 [minecraft:behavior.admire_item](EntityGoals/minecraftBehavior_admire_item.md)|`minecraft:behavior.admire_item` allows an entity to admire an object they are holding.
 [minecraft:behavior.avoid_block](EntityGoals/minecraftBehavior_avoid_block.md)|`minecraft:behavior.avoid_block` allows an entity to avoid certain blocks.
 [minecraft:behavior.avoid_block](EntityGoals/minecraftBehavior_avoid_block.md)|`minecraft:behavior.avoid_block` allows an entity to avoid certain blocks.
