@@ -36,11 +36,58 @@ ms.prod: gaming
 
 ### pig
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/pig.json" range="17-24":::
+```json
+"minecraft:ageable": {
+    "duration": 1200,
+    "feed_items": [ "carrot", "beetroot", "potato" ],
+    "grow_up": {
+        "event": "minecraft:ageable_grow_up",
+        "target": "self"
+    }
+}
+```
 
 ### mule
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/mule.json" range="19-55":::
+```json
+"minecraft:ageable": {
+    "duration": 1200,
+    "feed_items": [
+        {
+            "item": "wheat",
+            "growth": 0.016667
+        },
+        {
+            "item": "sugar",
+            "growth": 0.025
+        },
+        {
+            "item": "hay_block",
+            "growth": 0.15
+        },
+        {
+            "item": "apple",
+            "growth": 0.05
+        },
+        {
+            "item": "golden_carrot",
+            "growth": 0.05
+        },
+        {
+            "item": "golden_apple",
+            "growth": 0.2
+        },
+        {
+            "item": "appleEnchanted",
+            "growth": 0.2
+        }
+    ],
+    "grow_up": {
+        "event": "minecraft:ageable_grow_up",
+        "target": "self"
+    }
+}
+```
 
 ## Vanilla entities using `minecraft:ageable`
 

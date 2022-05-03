@@ -12,13 +12,15 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:block_climber":{
-}
+"minecraft:block_climber":{}
 ```
 
 ## Vanilla entities examples
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/player.json" range="138":::
+```json
+"minecraft:block_climber": {}
+```
+
 
 ## Vanilla entities using `minecraft:block_climber`
 

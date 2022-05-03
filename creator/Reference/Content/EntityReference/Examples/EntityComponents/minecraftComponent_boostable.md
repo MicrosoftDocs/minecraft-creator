@@ -47,7 +47,19 @@ ms.prod: gaming
 
 ### pig
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/pig.json" range="96-106":::
+```json
+"minecraft:boostable": {
+    "speed_multiplier": 2.0,
+    "duration": 3.0,
+    "boost_items": [
+        {
+            "item": "carrotOnAStick",
+            "damage": 2,
+            "replace_item": "fishing_rod"
+        }
+    ]
+}
+```
 
 ## Vanilla entities using `minecraft:boostable`
 

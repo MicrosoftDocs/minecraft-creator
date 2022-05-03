@@ -43,7 +43,17 @@ ms.prod: gaming
 
 ### hoglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/hoglin.json" range="107-115":::
+```json
+"minecraft:custom_hit_test": {
+    "hitboxes": [
+        {
+            "width": 1.0,
+            "height": 0.85,
+            "pivot": [ 0, 0.5, 0 ]
+        }
+    ]
+}
+```
 
 ## Vanilla entities using `minecraft:custom_hit_test`
 

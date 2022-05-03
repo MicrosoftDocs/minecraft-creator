@@ -29,7 +29,12 @@ ms.prod: gaming
 
 ### piglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="428-431":::
+```json
+"minecraft:admire_item": {
+    "duration": 8,
+    "cooldown_after_being_attacked": 20
+}
+```
 
 ## Vanilla entities using `minecraft:admire_item`
 

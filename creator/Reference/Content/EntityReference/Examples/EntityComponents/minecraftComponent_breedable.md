@@ -118,11 +118,55 @@ ms.prod: gaming
 
 ### horse
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/horse.json" range="173-199":::
+```json
+"minecraft:breedable":{
+    "require_tame":true,
+    "inherit_tamed":false,
+    "breeds_with":[
+        {
+            "mate_type":"minecraft:horse",
+            "baby_type":"minecraft:horse",
+            "breed_event":{
+                "event":"minecraft:entity_born",
+                "target":"baby"
+            }
+        },
+        {
+            "mate_type":"minecraft:donkey",
+            "baby_type":"minecraft:mule",
+            "breed_event":{
+                "event":"minecraft:entity_born",
+                "target":"baby"
+            }
+        }
+    ],
+    "breed_items":[
+        "golden_carrot",
+        "golden_apple",
+        "appleEnchanted"
+    ]
+}
+```
 
 ### rabbit
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/rabbit.json" range="51-65":::
+```json
+"minecraft:breedable": {
+    "breed_items": [
+        "golden_carrot",
+        "carrot",
+        "yellow_flower"
+    ],
+    "breeds_with": {
+        "mate_type": "minecraft:rabbit",
+        "baby_type": "minecraft:rabbit"
+    },
+    "require_tame": false,
+    "mutation_factor": {
+        "variant": 0.2
+    }
+}
+```
 
 ## Vanilla entities using `minecraft:breedable`
 

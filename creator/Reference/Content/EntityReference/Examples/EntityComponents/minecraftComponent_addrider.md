@@ -32,7 +32,11 @@ ms.prod: gaming
 
 ### spider
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/spider.json" range="14-16":::
+```json
+"minecraft:addrider": {
+    "entity_type": "minecraft:skeleton"
+}
+```
 
 ## Vanilla entities using `minecraft:addrider`
 
