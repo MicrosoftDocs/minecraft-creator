@@ -25,7 +25,7 @@ This is the original version of Minecraft, first released in May 2009. In Septem
 
 ### Minecraft: Bedrock Edition
 
-Bedrock Edition was fully launched in September, 2017, based on Minecraft: Pocket Edition, which was released in 2011. It brought together nine of the major device platforms under a singular codebase called the Bedrock Engine. This was a rewrite of Minecraft from the ground up using the [C++ programming language](https://en.wikipedia.org/wiki/C%2B%2B). It's available on Windows 10 PCs, Xbox, PlayStation, Nintendo Switch, Android, and iOS. This edition is commonly referred to as simply ***Bedrock***.
+Bedrock Edition was fully launched in September 2017, based on Minecraft: Pocket Edition, which was released in 2011. It brought together nine of the major device platforms under a singular codebase called the Bedrock Engine. This was a rewrite of Minecraft from the ground up using the [C++ programming language](https://en.wikipedia.org/wiki/C%2B%2B). It's available on Windows 10 PCs, Xbox, PlayStation, Nintendo Switch, Android, and iOS. This edition is commonly referred to as simply ***Bedrock***.
 
 ## World Format Differences
 
