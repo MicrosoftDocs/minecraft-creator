@@ -85,9 +85,9 @@ landingContent:
           - text: Entity JSON Documentation Homepage
             url: Content/entityreference/index.yml
           - text: Entity JSON Introduction
-            url: Content/entityreference/Examples/ClientEntityDocumenation/ClientEntityDocumentationIntroduction.md
+            url: Content/entityreference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md
           - text: Spawn Rules and Data-Driven Spawning
-            url:  Content/entityreference/Examples/ClientEntityDocumenation/DataDrivenSpawning.md
+            url:  Content/entityreference/Examples/ClientEntityDocumentation/DataDrivenSpawning.md
       - linkListType: reference
         links:
           - text: AI Goal List
@@ -107,7 +107,7 @@ landingContent:
           - text: Entity Behavior List
             url: Content/entityreference/Examples/EntityList.md
           - text: Entity JSON ID List
-            url: Content/entityreference/Examples/ClientEntityDocumenation/IDLists.md
+            url: Content/entityreference/Examples/ClientEntityDocumentation/IDLists.md
   # Card (comment to space cards)
   - title: Features
     linkLists:

@@ -1,5 +1,5 @@
 ---
-author: v-josjones
+author: mammerla
 ms.author: v-josjones
 title: Entity Documentation - is_underwater
 ms.prod: gaming
@@ -70,11 +70,25 @@ Returns true when the subject entity is under water.
 
 ### stray
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/stray.json" range="29-50":::
+```json
+{
+    "test": "is_underwater",
+    "subject": "self",
+    "operator": "==",
+    "value": true
+}
+```
 
 ### wolf
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wolf.json" range="156-170":::
+```json
+{
+    "test": "is_underwater",
+    "subject": "other",
+    "operator": "!=",
+    "value": true
+}
+```
 
 ## Vanilla entities using `is_underwater`
 

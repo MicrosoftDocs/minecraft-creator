@@ -901,8 +901,8 @@ Represents a block of concrete powder within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
-### **concretepowder**
-`static read-only concretepowder: BlockType;`
+### **concretePowder**
+`static read-only concretePowder: BlockType;`
 
 Represents a block of concrete powder within Minecraft.
 
@@ -3091,8 +3091,8 @@ Represents an information update block within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
-### **invisiblebedrock**
-`static read-only invisiblebedrock: BlockType;`
+### **invisibleBedrock**
+`static read-only invisibleBedrock: BlockType;`
 
 Represents an invisible boundary bedrock block within Minecraft.
 
@@ -3523,6 +3523,114 @@ Represents magma within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
+### **mangroveButton**
+`static read-only mangroveButton: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mangroveDoor**
+`static read-only mangroveDoor: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mangroveDoubleSlab**
+`static read-only mangroveDoubleSlab: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mangroveFence**
+`static read-only mangroveFence: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mangroveFenceGate**
+`static read-only mangroveFenceGate: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mangroveLeaves**
+`static read-only mangroveLeaves: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mangroveLog**
+`static read-only mangroveLog: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mangrovePlanks**
+`static read-only mangrovePlanks: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mangrovePressurePlate**
+`static read-only mangrovePressurePlate: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mangrovePropagule**
+`static read-only mangrovePropagule: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mangrovePropaguleHanging**
+`static read-only mangrovePropaguleHanging: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mangroveRoots**
+`static read-only mangroveRoots: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mangroveSlab**
+`static read-only mangroveSlab: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mangroveStairs**
+`static read-only mangroveStairs: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mangroveStandingSign**
+`static read-only mangroveStandingSign: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mangroveTrapdoor**
+`static read-only mangroveTrapdoor: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mangroveWallSign**
+`static read-only mangroveWallSign: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mangroveWood**
+`static read-only mangroveWood: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
 ### **mediumAmethystBud**
 `static read-only mediumAmethystBud: BlockType;`
 
@@ -3603,10 +3711,50 @@ Represents a set of mossy stone brick stairs within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
-### **movingblock**
-`static read-only movingblock: BlockType;`
+### **movingBlock**
+`static read-only movingBlock: BlockType;`
 
-Represents a moving block within Minecraft.
+Type: [*BlockType*](BlockType.md)
+
+
+### **mud**
+`static read-only mud: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mudBrickDoubleSlab**
+`static read-only mudBrickDoubleSlab: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mudBricks**
+`static read-only mudBricks: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mudBrickSlab**
+`static read-only mudBrickSlab: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mudBrickStairs**
+`static read-only mudBrickStairs: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **mudBrickWall**
+`static read-only mudBrickWall: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **muddyMangroveRoots**
+`static read-only muddyMangroveRoots: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3615,18 +3763,6 @@ Type: [*BlockType*](BlockType.md)
 `static read-only mycelium: BlockType;`
 
 Represents a mycelium plant within Minecraft.
-
-Type: [*BlockType*](BlockType.md)
-
-
-### **mysteriousFrame**
-`static read-only mysteriousFrame: BlockType;`
-
-Type: [*BlockType*](BlockType.md)
-
-
-### **mysteriousFrameSlot**
-`static read-only mysteriousFrameSlot: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3829,6 +3965,12 @@ Represents a block of packed ice within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
+### **packedMud**
+`static read-only packedMud: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
 ### **pearlescentFroglight**
 `static read-only pearlescentFroglight: BlockType;`
 
@@ -3867,10 +4009,8 @@ Represents a piston within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
-### **pistonarmcollision**
-`static read-only pistonarmcollision: BlockType;`
-
-Represents a piston arm within Minecraft.
+### **pistonArmCollision**
+`static read-only pistonArmCollision: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -4379,6 +4519,12 @@ Represents reeds within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
+### **reinforcedDeepslate**
+`static read-only reinforcedDeepslate: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
 ### **repeatingCommandBlock**
 `static read-only repeatingCommandBlock: BlockType;`
 
@@ -4483,8 +4629,8 @@ Represents seagrass within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
-### **sealantern**
-`static read-only sealantern: BlockType;`
+### **seaLantern**
+`static read-only seaLantern: BlockType;`
 
 Represents a sealantern within Minecraft.
 
@@ -4803,10 +4949,8 @@ Represents a piston block with a sticky arm within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
-### **stickypistonarmcollision**
-`static read-only stickypistonarmcollision: BlockType;`
-
-Represents a sticky piston arm within Minecraft.
+### **stickyPistonArmCollision**
+`static read-only stickyPistonArmCollision: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -4955,6 +5099,18 @@ Represents a stripped jungle log within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
+### **strippedMangroveLog**
+`static read-only strippedMangroveLog: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
+### **strippedMangroveWood**
+`static read-only strippedMangroveWood: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+
 ### **strippedOakLog**
 `static read-only strippedOakLog: BlockType;`
 
@@ -5067,10 +5223,8 @@ Represents a trapped chest within Minecraft.
 Type: [*BlockType*](BlockType.md)
 
 
-### **tripwire**
-`static read-only tripwire: BlockType;`
-
-Represents a tripwire within Minecraft.
+### **tripWire**
+`static read-only tripWire: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 

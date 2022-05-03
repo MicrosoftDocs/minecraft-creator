@@ -20,7 +20,7 @@ ms.prod: gaming
 | max_temper| 100| Integer| The maximum value for the entity's random starting temper. |
 | min_temper| 0| Integer| The minimum value for the entity's random starting temper. |
 | ride_text| *not set*| String| The text that shows in the riding interact button. |
-| tame_event| *not set*| String| Event that triggers when the entity becomes tamed. |
+| tame_event| *not set*| JSON Object | Event that triggers when the entity becomes tamed. |
 
 ### autoRejectItems
 
@@ -41,15 +41,26 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:tamemount":{
-    "attempt_temper_mod": 5,
-    "autoRejectItems": "fish",
-    "feed_items": "carrot" ,
-    "feed_text": "I love carrots!",
-    "max_temper": 100,
+"minecraft:tamemount": {
     "min_temper": 0,
-    "ride_text": "Thank you for the carrots! Let's go!",
-    "tame_event": "minecraft:celebrate",
+    "max_temper": 100,
+    "feed_text": "action.interact.feed",
+    "ride_text": "action.interact.mount",
+    "feed_items": [
+        {
+            "item": "wheat",
+            "temper_mod": 3
+        }
+    ],
+    "auto_reject_items": [
+        {
+            "item": "horsearmorleather"
+        }
+    ],
+    "tame_event": {
+        "event": "minecraft:on_tame",
+        "target": "self"
+    }
 }
 ```
 

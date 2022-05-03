@@ -18,10 +18,10 @@ ms.prod: gaming
 
 ## Extra Parameters
 
-| Type| Name| Default Value| Description |
-|:-----------:|:-----------:|:-----------|:-----------|
-| Array| origin| [-8.0, 0.0, -8.0]| Minimal position Bounds of the collision box |
-| Array| size| [16.0, 16.0, 16.0]| Size of each side of the box of the component |
+| Name| Default Value| Type| Description |
+|:-----------:|:-----------|:-----------:|:-----------|
+| origin| [-8.0, 0.0, -8.0]| Vector [a, b, c]| Minimal position Bounds of the collision box |
+| size| [16.0, 16.0, 16.0]| Vector [a, b, c]| Size of each side of the box of the component |
 
 ## Example
 

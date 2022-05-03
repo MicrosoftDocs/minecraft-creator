@@ -16,8 +16,18 @@ description: Contents of the mojang-minecraft.PlayerIterator class.
 This type is usable for iterating over a set of players. This means it can be used in statements like for...of statements, Array.from(iterator), and more.
 
 ## Methods
+- [[Symbol.iterator]](#[symbol.iterator])
 - [next](#next)
   
+### **[Symbol.iterator]**
+`
+[Symbol.iterator](): Iterator<Player>
+`
+
+
+#### **Returns** Iterator&lt;[*Player*](Player.md)&gt;
+
+
 ### **next**
 `
 next(): IteratorResult<Player>

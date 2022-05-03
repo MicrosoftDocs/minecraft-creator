@@ -133,6 +133,14 @@ This event fires when an entity hits (makes a melee attack) and potentially impa
 Type: [*EntityHitEventSignal*](EntityHitEventSignal.md)
 
 
+### **entityHurt**
+`read-only entityHurt: EntityHurtEventSignal;`
+
+This event fires when an entity is hurt (takes damage).
+
+Type: [*EntityHurtEventSignal*](EntityHurtEventSignal.md)
+
+
 ### **explosion**
 `read-only explosion: ExplosionEventSignal;`
 
@@ -141,12 +149,60 @@ This event is fired after an explosion occurs.
 Type: [*ExplosionEventSignal*](ExplosionEventSignal.md)
 
 
+### **itemCompleteCharge**
+`read-only itemCompleteCharge: ItemCompleteChargeEventSignal;`
+
+This event fires when a chargeable item completes charging.
+
+Type: [*ItemCompleteChargeEventSignal*](ItemCompleteChargeEventSignal.md)
+
+
 ### **itemDefinitionEvent**
 `read-only itemDefinitionEvent: ItemDefinitionEventSignal;`
 
 For custom items, this event is triggered when the fundamental set of defined components for the item change.  Note that this event is only fired for custom data-driven items.
 
 Type: [*ItemDefinitionEventSignal*](ItemDefinitionEventSignal.md)
+
+
+### **itemReleaseCharge**
+`read-only itemReleaseCharge: ItemReleaseChargeEventSignal;`
+
+This event fires when a chargeable item is released from charging.
+
+Type: [*ItemReleaseChargeEventSignal*](ItemReleaseChargeEventSignal.md)
+
+
+### **itemStartCharge**
+`read-only itemStartCharge: ItemStartChargeEventSignal;`
+
+This event fires when a chargeable item starts charging.
+
+Type: [*ItemStartChargeEventSignal*](ItemStartChargeEventSignal.md)
+
+
+### **itemStartUseOn**
+`read-only itemStartUseOn: ItemStartUseOnEventSignal;`
+
+This event fires when any particular item is starting to be used by an entity or player.
+
+Type: [*ItemStartUseOnEventSignal*](ItemStartUseOnEventSignal.md)
+
+
+### **itemStopCharge**
+`read-only itemStopCharge: ItemStopChargeEventSignal;`
+
+This event fires when a chargeable item stops charging.
+
+Type: [*ItemStopChargeEventSignal*](ItemStopChargeEventSignal.md)
+
+
+### **itemStopUseOn**
+`read-only itemStopUseOn: ItemStopUseOnEventSignal;`
+
+This event fires when any particular item is ending being used by an entity or player.
+
+Type: [*ItemStopUseOnEventSignal*](ItemStopUseOnEventSignal.md)
 
 
 ### **itemUse**
@@ -163,6 +219,14 @@ Type: [*ItemUseEventSignal*](ItemUseEventSignal.md)
 This event fires when any particular item is used on a block by an entity or player.
 
 Type: [*ItemUseOnEventSignal*](ItemUseOnEventSignal.md)
+
+
+### **leverActivate**
+`read-only leverActivate: LeverActivateEventSignal;`
+
+This event fires when a lever activates or is deactivated.
+
+Type: [*LeverActivateEventSignal*](LeverActivateEventSignal.md)
 
 
 ### **pistonActivate**
@@ -189,6 +253,14 @@ This event fires when a player leaves a world.
 Type: [*PlayerLeaveEventSignal*](PlayerLeaveEventSignal.md)
 
 
+### **projectileHit**
+`projectileHit: ProjectileHitEventSignal;`
+
+This event fires when a projectile hits an entity or block.
+
+Type: [*ProjectileHitEventSignal*](ProjectileHitEventSignal.md)
+
+
 ### **tick**
 `read-only tick: TickEventSignal;`
 
@@ -203,5 +275,13 @@ Type: [*TickEventSignal*](TickEventSignal.md)
 This event will be triggered when the weather changes within Minecraft.
 
 Type: [*WeatherChangeEventSignal*](WeatherChangeEventSignal.md)
+
+
+### **worldInitialize**
+`read-only worldInitialize: WorldInitializeEventSignal;`
+
+This event fires when the script environment is initialized on a World. In addition, you can register dynamic properties within the scope of a world Initialize event.
+
+Type: [*WorldInitializeEventSignal*](WorldInitializeEventSignal.md)
 
 

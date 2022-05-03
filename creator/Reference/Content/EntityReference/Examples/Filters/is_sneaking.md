@@ -1,5 +1,5 @@
 ---
-author: v-josjones
+author: mammerla
 ms.author: v-josjones
 title: Entity Documentation - is_sneaking
 ms.prod: gaming
@@ -67,7 +67,14 @@ Tests whether the subject is sneaking.
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="562-566":::
+```json
+{
+    "test": "is_sneaking",
+    "subject": "other",
+    "operator": "==",
+    "value": true
+}
+```
 
 ## Vanilla entities using `is_sneaking`
 

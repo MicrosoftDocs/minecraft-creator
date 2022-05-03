@@ -2,6 +2,34 @@
   items:
     - name: "Minecraft: Bedrock Documentation Homepage"
       href: index.yml
+    - name: Useful Knowledge for Creators
+      items:
+        - name: 'Redstone Guide'
+          href: Documents/RedstoneGuide.md
+        - name: 'Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition'
+          href: Documents/DifferencesBetweenBedrockAndJava.md
+        - name: "Experimental Features in Minecraft: Bedrock Edition"
+          href: Documents/ExperimentalFeaturesToggle.md
+        - name: Survival Spawn Creation
+          href: Documents/SurvivalSpawnCreation.md
+        - name: Packaging Content
+          items:
+          - name: Packaging a Skin Pack
+            href: Documents/PackagingASkinPack.md
+          - name: Packaging a WorldTemplate
+            href: Documents/PackagingAWorldTemplate.md
+          - name: 'Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition'
+            href: Documents/ConvertingTexturePacks.md
+          - name: Preparing Raw Text for Localization
+            href: Documents/PreparingRawTextForLocalization.md
+        - name: Advanced Topics
+          items:
+          - name: Actor Storage
+            href: Documents/ActorStorage.md
+          - name: Data-Driven Overworld Height
+            href: Documents/DataDrivenOverworldHeight.md
+          - name: Editing NBTs Safely
+            href: Documents/EditingNBTSafely.md
     - name: Tutorials
       items:
         - name: Add-On Pack Tutorials
@@ -38,6 +66,8 @@
             href: Documents/ScoreboardIntroduction.md
           - name: Scoreboard Operations Tutorial
             href: Documents/ScoreboardOperationsTutorial.md
+          - name: The Tickingarea Command
+            href: Documents/TickingAreaCommand.md
           - name: How to use tick.json
             href: Documents/TickJsonIntroduction.md
         - name: Minecraft Entities
@@ -53,7 +83,7 @@
             - name: Create a Custom NPC
               href: Documents/CreateNPCs.md
             - name: NPC Dialogue Command
-              href: Documents/NPCDialogue.md
+              href: Documents/NPCDialogue.md        
         - name: Loot and Trading Tables
           items:
             - name: Introduction to Loot Tables
@@ -62,15 +92,31 @@
               href: Documents/LootAndTradeTableFunctions.md
             - name: Loot Spawn and Kill
               href: Documents/LootSpawnAndKill.md
+        - name: Physically Based Rendering
+          items:
+            - name: Getting Started with Ray Tracing
+              href: Documents/RTXGettingStarted.md
+            - name: Introduction to Physically Based Rendering
+              href: Documents/RTXPBRIntro.md
+            - name: Physically Based Rendering Tutorial
+              href: Documents/RTXPBRTutorial.md
+        - name: Structure Blocks
+          items:
+          - name: Introduction to Structure Blocks
+            href: Documents/IntroductionToStructureBlocks.md
+          - name: Structure Blocks Tutorial
+            href: Documents/StructureBlocksTutorial.md
     - name: Tools and Frameworks
       items:
         - name: GameTest Framework
           items:
           - name: Getting Started with GameTest
             href: Documents/GameTestGettingStarted.md
-          - name: Build your first GameTest
+          - name: Build your First GameTest
             href: Documents/GameTestBuildYourFirstGameTest.md
-          - name: Use Visual Studio Code tools to write script
+          - name: Build Gameplay with TypeScript
+            href: Documents/ScriptingGettingStarted.md
+          - name: Use Visual Studio Code Tools to Write Script
             href: Documents/ScriptDeveloperTools.md
         - name: Creator Tools
           items:
@@ -96,38 +142,6 @@
                 href: Documents/ChunkerWorldSettings.md
               - name: Chunker - The Nether
                 href: Documents/ChunkerTheNether.md
-    - name: Articles
-      items:
-        - name: Caves + Cliffs Features
-          items:
-          - name: Introduction to the Caves & Cliffs Entities
-            href: Documents/CavesAndCliffsEntities.md
-          - name: World Height Changes in Caves and Cliffs Part 2
-            href: Documents/WorldHeightChange.md
-        - name: Useful Knowledge for Creators
-          items:
-          - name: 'Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition'
-            href: Documents/DifferencesBetweenBedrockAndJava.md
-          - name: "Experimental Features in Minecraft: Bedrock Edition"
-            href: Documents/ExperimentalFeaturesToggle.md
-          - name: Survival Spawn Creation
-            href: Documents/SurvivalSpawnCreation.md
-        - name: Packaging Content
-          items:
-          - name: Packaging a Skin Pack
-            href: Documents/PackagingASkinPack.md
-          - name: Packaging a WorldTemplate
-            href: Documents/PackagingAWorldTemplate.md
-          - name: 'Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition'
-            href: Documents/ConvertingTexturePacks.md
-          - name: Preparing Raw Text for Localization
-            href: Documents/PreparingRawTextForLocalization.md
-        - name: Advanced Topics
-          items:
-          - name: Actor Storage
-            href: Documents/ActorStorage.md
-          - name: Editing NBTs Safely
-            href: Documents/EditingNBTSafely.md
     - name: Reference Documentation
       items:
       - name: GameTest
@@ -183,7 +197,7 @@
           - name: Built-in Events
             href: Reference/Content/entityreference/Examples/EntityEvents/TOC.yml
           - name: ID Lists
-            href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/IDLists.md
+            href: Reference/Content/entityreference/Examples/ClientEntityDocumentation/IDLists.md
         - name: Feature JSON
           items:
           - name: Feature Documentation Homepage
@@ -245,17 +259,25 @@
           - name: Introduction to Texture Sets
             href: Reference/Content/texturesetsreference/texturesetsconcepts/texturesetsintroduction.md
         - name: Spawn Rules
-          href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/DataDrivenSpawning.md
+          href: Reference/Content/entityreference/Examples/ClientEntityDocumentation/DataDrivenSpawning.md
       - name: Resource Pack
         items:
         - name: Client Entity JSON
-          href: Reference/Content/entityreference/Examples/ClientEntityDocumenation/ClientEntityDocumentationIntroduction.md
+          href: Reference/Content/entityreference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md
       - name: Molang Documentation
         items:
           - name: Molang Documentation Homepage
             href: Reference/Content/molangreference/index.yml
           - name: Molang Concepts
             href: Reference/Content/Molangreference/Examples/Molangconcepts/TOC.yml
+    - name: Articles
+      items:
+        - name: Caves + Cliffs Features
+          items:
+          - name: Introduction to the Caves & Cliffs Entities
+            href: Documents/CavesAndCliffsEntities.md
+          - name: World Height Changes in Caves and Cliffs Part 2
+            href: Documents/WorldHeightChange.md
     - name: Contribute
       items:
       - name: "Contributing to Minecraft: Bedrock Documentation"

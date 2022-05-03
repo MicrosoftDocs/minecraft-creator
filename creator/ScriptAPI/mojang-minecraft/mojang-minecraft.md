@@ -10,6 +10,31 @@ description: Contents of the mojang-minecraft module
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
+Contains information related to changes to a piston expanding or retracting.
+
+#### **Examples**
+##### *place_bottom_stone_slab.js*
+```javascript
+import { world, MinecraftBlockTypes, BlockProperties, BlockLocation } from "mojang-minecraft";
+// Create the permutation
+let bottomStoneSlab = MinecraftBlockTypes.stoneSlab.createDefaultBlockPermutation();
+bottomStoneSlab.getProperty(BlockProperties.stoneSlabType).value = "stone_brick";
+bottomStoneSlab.getProperty(BlockProperties.topSlotBit).value = false;
+// Fetch the block
+const block = world.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3));
+// Set the permutation
+block.setPermutation(bottomStoneSlab);
+```
+
+## Manifest Details
+```json
+{
+    // mojang-minecraft
+    "uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
+    "version": [ 0, 1, 0 ]
+}
+```
+
 ## Enumerations
 - [Direction](Direction.md)
 - [GameMode](GameMode.md)
@@ -37,6 +62,7 @@ description: Contents of the mojang-minecraft module
 - [BlockEvent](BlockEvent.md)
 - [BlockExplodeEvent](BlockExplodeEvent.md)
 - [BlockExplodeEventSignal](BlockExplodeEventSignal.md)
+- [BlockHitInformation](BlockHitInformation.md)
 - [BlockInventoryComponent](BlockInventoryComponent.md)
 - [BlockInventoryComponentContainer](BlockInventoryComponentContainer.md)
 - [BlockLavaContainerComponent](BlockLavaContainerComponent.md)
@@ -61,6 +87,7 @@ description: Contents of the mojang-minecraft module
 - [DataDrivenEntityTriggerEventSignal](DataDrivenEntityTriggerEventSignal.md)
 - [DefinitionModifier](DefinitionModifier.md)
 - [Dimension](Dimension.md)
+- [DynamicPropertiesDefinition](DynamicPropertiesDefinition.md)
 - [Effect](Effect.md)
 - [EffectAddEvent](EffectAddEvent.md)
 - [EffectAddEventSignal](EffectAddEventSignal.md)
@@ -91,6 +118,9 @@ description: Contents of the mojang-minecraft module
 - [EntityHealthComponent](EntityHealthComponent.md)
 - [EntityHitEvent](EntityHitEvent.md)
 - [EntityHitEventSignal](EntityHitEventSignal.md)
+- [EntityHitInformation](EntityHitInformation.md)
+- [EntityHurtEvent](EntityHurtEvent.md)
+- [EntityHurtEventSignal](EntityHurtEventSignal.md)
 - [EntityInventoryComponent](EntityInventoryComponent.md)
 - [EntityIsBabyComponent](EntityIsBabyComponent.md)
 - [EntityIsChargedComponent](EntityIsChargedComponent.md)
@@ -136,6 +166,9 @@ description: Contents of the mojang-minecraft module
 - [EntitySkinIdComponent](EntitySkinIdComponent.md)
 - [EntityStrengthComponent](EntityStrengthComponent.md)
 - [EntityTameableComponent](EntityTameableComponent.md)
+- [EntityType](EntityType.md)
+- [EntityTypeIterator](EntityTypeIterator.md)
+- [EntityTypes](EntityTypes.md)
 - [EntityUnderwaterMovementComponent](EntityUnderwaterMovementComponent.md)
 - [EntityVariantComponent](EntityVariantComponent.md)
 - [EntityWantsJockeyComponent](EntityWantsJockeyComponent.md)
@@ -151,26 +184,42 @@ description: Contents of the mojang-minecraft module
 - [IEntityComponent](IEntityComponent.md)
 - [IntBlockProperty](IntBlockProperty.md)
 - [InventoryComponentContainer](InventoryComponentContainer.md)
+- [ItemCompleteChargeEvent](ItemCompleteChargeEvent.md)
+- [ItemCompleteChargeEventSignal](ItemCompleteChargeEventSignal.md)
 - [ItemCooldownComponent](ItemCooldownComponent.md)
 - [ItemDefinitionEventSignal](ItemDefinitionEventSignal.md)
 - [ItemDefinitionTriggeredEvent](ItemDefinitionTriggeredEvent.md)
 - [ItemDurabilityComponent](ItemDurabilityComponent.md)
 - [ItemEnchantsComponent](ItemEnchantsComponent.md)
 - [ItemFoodComponent](ItemFoodComponent.md)
+- [ItemReleaseChargeEvent](ItemReleaseChargeEvent.md)
+- [ItemReleaseChargeEventSignal](ItemReleaseChargeEventSignal.md)
 - [Items](Items.md)
 - [ItemStack](ItemStack.md)
+- [ItemStartChargeEvent](ItemStartChargeEvent.md)
+- [ItemStartChargeEventSignal](ItemStartChargeEventSignal.md)
+- [ItemStartUseOnEvent](ItemStartUseOnEvent.md)
+- [ItemStartUseOnEventSignal](ItemStartUseOnEventSignal.md)
+- [ItemStopChargeEvent](ItemStopChargeEvent.md)
+- [ItemStopChargeEventSignal](ItemStopChargeEventSignal.md)
+- [ItemStopUseOnEvent](ItemStopUseOnEvent.md)
+- [ItemStopUseOnEventSignal](ItemStopUseOnEventSignal.md)
 - [ItemType](ItemType.md)
 - [ItemUseEvent](ItemUseEvent.md)
 - [ItemUseEventSignal](ItemUseEventSignal.md)
 - [ItemUseOnEvent](ItemUseOnEvent.md)
 - [ItemUseOnEventSignal](ItemUseOnEventSignal.md)
+- [LeverActionEvent](LeverActionEvent.md)
+- [LeverActivateEventSignal](LeverActivateEventSignal.md)
 - [Location](Location.md)
 - [MinecraftBlockTypes](MinecraftBlockTypes.md)
 - [MinecraftDimensionTypes](MinecraftDimensionTypes.md)
 - [MinecraftEffectTypes](MinecraftEffectTypes.md)
 - [MinecraftEnchantmentTypes](MinecraftEnchantmentTypes.md)
+- [MinecraftEntityTypes](MinecraftEntityTypes.md)
 - [MinecraftItemTypes](MinecraftItemTypes.md)
 - [MolangVariableMap](MolangVariableMap.md)
+- [MusicOptions](MusicOptions.md)
 - [NavigationResult](NavigationResult.md)
 - [NumberRange](NumberRange.md)
 - [PistonActivateEvent](PistonActivateEvent.md)
@@ -183,16 +232,24 @@ description: Contents of the mojang-minecraft module
 - [PlayerJoinEventSignal](PlayerJoinEventSignal.md)
 - [PlayerLeaveEvent](PlayerLeaveEvent.md)
 - [PlayerLeaveEventSignal](PlayerLeaveEventSignal.md)
+- [ProjectileHitEvent](ProjectileHitEvent.md)
+- [ProjectileHitEventSignal](ProjectileHitEventSignal.md)
+- [PropertyRegistry](PropertyRegistry.md)
+- [ScreenDisplay](ScreenDisplay.md)
+- [SculkSpreader](SculkSpreader.md)
 - [Seat](Seat.md)
 - [SoundOptions](SoundOptions.md)
 - [StringBlockProperty](StringBlockProperty.md)
 - [TickEvent](TickEvent.md)
 - [TickEventSignal](TickEventSignal.md)
+- [TitleDisplayOptions](TitleDisplayOptions.md)
 - [Trigger](Trigger.md)
 - [Vector](Vector.md)
 - [WeatherChangeEvent](WeatherChangeEvent.md)
 - [WeatherChangeEventSignal](WeatherChangeEventSignal.md)
 - [World](World.md)
+- [WorldInitializeEvent](WorldInitializeEvent.md)
+- [WorldInitializeEventSignal](WorldInitializeEventSignal.md)
 
 ## Constants
 ### **TicksPerSecond**

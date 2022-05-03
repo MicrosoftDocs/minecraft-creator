@@ -176,7 +176,7 @@ Type: [*mojang-minecraft.Vector*](../mojang-minecraft/Vector.md)
   
 ### **addEffect**
 `
-addEffect(effectType: mojang-minecraft.EffectType, duration: number, amplifier: number): void
+addEffect(effectType: mojang-minecraft.EffectType, duration: number, amplifier?: number, showParticles?: boolean): void
 `
 
 Adds an effect, like poison, to the entity.
@@ -187,9 +187,10 @@ Adds an effect, like poison, to the entity.
 - **duration**: *number*
   
   Amount of time, in seconds, for the effect to apply.
-- **amplifier**: *number*
+- **amplifier**?: *number* = `0`
   
   Optional amplification of the effect to apply.
+- **showParticles**?: *boolean* = `true`
 
 
 > [!WARNING]
@@ -638,7 +639,7 @@ Use navigation to follow the route provided via the locations parameter. If a mo
 playSound(soundID: string, soundOptions?: mojang-minecraft.SoundOptions): void
 `
 
-Plays a sound that only this particular player can hear.
+This method is inherited from Player, but is inoperative in the case of a SimulatedPlayer.
 #### **Parameters**
 - **soundID**: *string*
   

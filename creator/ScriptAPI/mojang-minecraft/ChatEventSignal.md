@@ -32,13 +32,13 @@ Adds a callback that will be called when new chat messages are sent.
 ##### *custom_command.js*
 ```javascript
 const chatCallback = World.events.beforeChat.subscribe((eventData) => {
-if (eventData.message.includes("cancel")) {
-// Cancel event if the message contains "cancel"
-eventData.canceled = true;
-} else {
-// Modify chat message being sent
-eventData.message = `Modified '${eventData.message}'`;
-}
+  if (eventData.message.includes("cancel")) {
+    // Cancel event if the message contains "cancel"
+    eventData.canceled = true;
+  } else {
+    // Modify chat message being sent
+    eventData.message = `Modified '${eventData.message}'`;
+  }
 });
 ```
 ### **unsubscribe**

@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: docsbryce
+ms.author: v-bbortree
 title: Addons Documentation - manifest.json
 ms.prod: gaming
 ---
@@ -16,11 +16,11 @@ The manifest file contains all the basic information about the pack that Minecra
 
 | Name| Description |
 |:-----------|:-----------|
-| format_version| What version of Minecraft is required in order to run the manifest file. |
+| format_version| The syntax version used in the manifest file. This may be 1 for skin packs or 2 for resource, behavior, and world packs. |
 | header| Section containing information regarding the name of the pack, description, and other features that are public facing. |
 | modules| Section containing information regarding the type of content that is being brought in.|
 | dependencies| Section containing definitions for any other packs that are required in order for this manifest.json file to work. |
-| capabilities| |
+| capabilities| Section containing optional features that can be enabled in Minecraft. |
 | metadata| Section containing the metadata about the file such as authors and licensing information. |
 
 ### header
@@ -58,9 +58,9 @@ The manifest file contains all the basic information about the pack that Minecra
 
 | Name| Description |
 |:-----------|:-----------|
-| experimental_custom_ui|  |
-| chemistry|  |
-| raytraced|  |
+| experimental_custom_ui| The pack can use HTML files to create custom UI, as well as use or modify the custom UI. |
+| chemistry| The pack can add, remove, or modify chemistry behavior. |
+| raytraced| The pack uses Ray Tracking functionality and may use custom shaders. |
 
 ### metadata
 
@@ -68,6 +68,7 @@ The manifest file contains all the basic information about the pack that Minecra
 |:-----------|:-----------|:-----------|
 | authors| Array| Name of the author(s) of the pack |
 | license| String| The license of the pack |
+| generated_with | JSON Object | This is the tools used to generate a manifest.json file. The tool names are strings that must be [a-zA-Z0-9_-] and 32 characters maximum. The tool version number are semver strings for each version that modified the manifest.json file. |
 | url| String| The home website of your pack |
 
 ## Examples
@@ -105,9 +106,16 @@ Listed below are two examples showcasing how a manifest.json file can be written
             "uuid": "66c6e9a8-3093-462a-9c36-dbb052165822",
             "version": [1, 0, 0]
         }
-    ]
+    ],
+    "metadata": {
+        "authors": ["exampleAuthor"],
+        "license": "MIT",
+        "url": "http://www.exampleurl.com",
+        "generated_with": {
+            "example_tool": ["1.0.0", "1.1.0"]
+        }
+    }
 }
-
 ```
 
 ### Resource Pack
@@ -133,5 +141,4 @@ Listed below are two examples showcasing how a manifest.json file can be written
         }
     ]
 }
-
 ```

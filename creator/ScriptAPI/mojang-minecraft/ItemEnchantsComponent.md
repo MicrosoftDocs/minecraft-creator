@@ -10,7 +10,7 @@ description: Contents of the mojang-minecraft.ItemEnchantsComponent class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-When present on an item, this item has applied enchantment effects.
+When present on an item, this item has applied enchantment effects. Note that this component only applies to data-driven items.
 
 ## Properties
 ### **enchantments**

@@ -35,6 +35,7 @@ Main class for GameTest functions, with helpers and data for manipulating the re
 - [getBlock](#getblock)
 - [getDimension](#getdimension)
 - [getFenceConnectivity](#getfenceconnectivity)
+- [getSculkSpreader](#getsculkspreader)
 - [getTestDirection](#gettestdirection)
 - [idle](#idle)
 - [killAllEntities](#killallentities)
@@ -136,7 +137,7 @@ Tests that a block has a particular state value at the specified location. If it
 ##### *testIfButtonNotPressed.js*
 ```javascript
 test.assertBlockState(buttonPos, (block) => {
-return block.getBlockData().getProperty("button_pressed_bit") == 0;
+  return block.getBlockData().getProperty("button_pressed_bit") == 0;
 });
 ```
 ### **assertCanReachLocation**
@@ -342,9 +343,9 @@ Tests that an entity (e.g., a skeleton) at the specified location has a particul
 ##### *villagerEffectTest.js*
 ```javascript
 test.assertEntityState(
-villagerPos,
-"minecraft:villager_v2",
-(entity) => entity.getEffect(MinecraftEffectTypes.regeneration).duration > 120
+  villagerPos,
+  "minecraft:villager_v2",
+  (entity) => entity.getEffect(MinecraftEffectTypes.regeneration).duration > 120
 ); // At least 6 seconds remaining in the villagers' effect
 ```
 ### **assertEntityTouching**
@@ -527,6 +528,22 @@ If the block at the specified block location is a fence, this returns a helper o
   Location of the block to retrieve.
 
 #### **Returns** [*FenceConnectivity*](FenceConnectivity.md)
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getSculkSpreader**
+`
+getSculkSpreader(blockLocation: mojang-minecraft.BlockLocation): mojang-minecraft.SculkSpreader
+`
+
+Retrieves a sculk spreader object that can be used to control and manage how sculk grows from a block.
+#### **Parameters**
+- **blockLocation**: [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md)
+  
+  Location of the block to retrieve a sculk spreader from.
+
+#### **Returns** [*mojang-minecraft.SculkSpreader*](../mojang-minecraft/SculkSpreader.md)
 
 > [!WARNING]
 > This function can throw errors.
