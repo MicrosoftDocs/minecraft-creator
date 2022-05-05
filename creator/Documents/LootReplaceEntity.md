@@ -41,17 +41,17 @@ The `/loot replace entity` overload of the loot command allows users to directly
 
 - **slotType** - Mandatory `EntityEquipmentSlot` to place the first item in. Different slot types have different valid slot numbers.
 
--	**slotId** - Mandatory slot number in which to place the first item. Different slot types have different slot numbers. If there is only a single slot, then the slotId does not matter. Single slots include: mainhand, offhand, player armor slots (head, chest, legs, feet), saddle, and armor (used by the horse and llama entities).
+- **slotId** - Mandatory slot number in which to place the first item. Different slot types have different slot numbers. If there is only a single slot, then the `slotId` does not matter. Single slots include: mainhand, offhand, player armor slots (head, chest, legs, feet), saddle, and armor (used by the horse and llama entities).
 
-- **count** - Optional number of consecutive slots to be filled. If count is 0. then no items are dropped. If count is not specified, then as many slots as possible are filled.
+- **count** - Optional number of consecutive slots to be filled. If count is 0, then no items are dropped. If count is not specified, then as many slots as possible are filled.
 
-- **source** - loot (path to a loot chest) or kill (loot that drops from a killed entity)
+- **source** - `loot` (path to a loot chest) or `kill` (loot that drops from a killed entity)
 
 ## More about the `<source parameter>` variations
 
 ### loot
 
-`loot` is used to specify that the source is a defined loot table (or even a custom loot table) that can be found at a given path. The path to the loot table must be surrounded by quotes.
+`loot` is used to specify that the source is a defined loot table (or even a custom loot table) that can be found at a given path.
 
 `/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> [<count: int>] loot <loot_table: string> [<tool>|mainhand|offhand]`
 
@@ -74,7 +74,7 @@ Examples:
 ### kill
 
 > [!NOTE]
-> The `kill` variation of the `/loot replace entity` command is different from the `/kill` command. In the context of the `/loot` command, the loot drop from `/kill` will end up in the target entity's specified slot. You can read more about the `/kill` command in the [LootSpawn and Kill](LootSpawnAndKill.md) document.
+> The `kill` variation of the `/loot replace entity` command is different from the `/kill` command. In the context of the `/loot` command, using the`kill` variation means that the dropped loot will end up in the target entity's specified slot. You can read more about the `/kill` command in the [LootSpawn and Kill](LootSpawnAndKill.md) document.
 
 Using the `kill` variation specifies that the user wants to simulate killing a specific entity in the world and use the loot table attached to it as the source for the loot to be dropped.
 
