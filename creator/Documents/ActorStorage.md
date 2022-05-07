@@ -12,7 +12,7 @@ Minecraft has inspired many third parties to create useful world file viewing an
 
 ### What did legacy actor data look like?
 
-Before version 1.18.3, actor data was stored per chunk as a blob of all actors in that chunk. This meant that whenever a single actor changed, we would:
+Before version 1.18.30, actor data was stored per chunk as a blob of all actors in that chunk. This meant that whenever a single actor changed, we would:
 
 >- Collect the data from every individual actor in the chunk
 >- Append the data for each actor into a single buffer/blob
@@ -50,36 +50,39 @@ enum class LevelChunkTag : char {
   SubChunkPrefix,
   LegacyTerrain,
   BlockEntity,
-  Entity, // Legacy actor storage which will be deleted from LevelDB upon upgrading the chunk to use modern actor storage
+  Entity,
   PendingTicks,
   LegacyBlockExtraData,
   BiomeState,
   FinalizedState,
-  ConversionData, // Data that the converter provides that are used at runtime for things like blending
+  ConversionData, // data that the converter provides, that are used at runtime for things like blending
   BorderBlocks,
   HardcodedSpawners,
   RandomTicks,
   CheckSums,
   GenerationSeed,
-  GeneratedPreCavesAndCliffsBlending,
-  BlendingBiomeHeight,
-  LegacyVersion = 118
+  GeneratedPreCavesAndCliffsBlending = 61, // not used, DON'T REMOVE
+  BlendingBiomeHeight = 62, // not used, DON'T REMOVE
+  MetaDataHash,
+  BlendingData,
+  ActorDigestVersion,
+  LegacyVersion = 118,
 };
 
 ```
 
 **Actor Digest Key Space**
 
-In the middle, we have the digest key space. Each digest key takes the form `dg<Chunk Key>`.
+In the middle, we have the digest key space. Each digest key takes the form `digp<Chunk Key>`.
 
-- `dg` is a hardcoded prefix for all digest keys. This forces all digests to be contiguous on disk and increases the size of all digest keys such that they are placed ahead of the non-actor chunk data in the LevelDB.
+- `digp` is a hardcoded prefix for all digest keys. This forces all digests to be contiguous on disk and increases the size of all digest keys such that they are placed ahead of the non-actor chunk data in the LevelDB.
 
 - `<Chunk Key>` is the same key string used by the chunk the data is associated with.
 
 **Actor Key Space**
 
-On the right, we have the actor key space. Each actor key takes the form `actorpref<ActorUniqueID>`.
+On the right, we have the actor key space. Each actor key takes the form `actorprefix<ActorUniqueID>`.
 
-- `actorpref` is a hardcoded prefix used for all actor keys. This forces all actor data to be contiguous on disk and increases the size of all actor keys such that they are placed ahead of the non-actor chunk data and all digests in the LevelDB.
+- `actorprefix` is a hardcoded prefix used for all actor keys. This forces all actor data to be contiguous on disk and increases the size of all actor keys such that they are placed ahead of the non-actor chunk data and all digests in the LevelDB.
 
 - `<ActorUniqueID>` is a unique ID that is generated for each actor when it is added to the level. This ID is consistent between play sessions and is only unique to this world. Other actors in other worlds may have the same ID, but no actor in the same world will have the same ID.
