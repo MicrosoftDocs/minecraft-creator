@@ -1,6 +1,6 @@
 ---
 author: neonerz
-ms.author: v-mammerla
+ms.author: v-JDHeaden
 title: Introduction to Loot Tables
 ms.prod: gaming
 description: "An overview covering what Loot Tables are and how they are used in Minecraft: Bedrock Edition"
