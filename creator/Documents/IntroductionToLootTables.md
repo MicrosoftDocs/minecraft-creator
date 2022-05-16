@@ -1,6 +1,6 @@
 ---
 author: neonerz
-ms.author: v-jeffreykim
+ms.author: v-JDHeaden
 title: Introduction to Loot Tables
 ms.prod: gaming
 description: "An overview covering what Loot Tables are and how they are used in Minecraft: Bedrock Edition"
@@ -174,6 +174,27 @@ Be aware that loot tables cannot refer to itself in any way. If a roll results i
 
 Functions are optional operations that can be added to an entry that modifies an item. It could allow you to define how many of an item is returned, modify that item’s attributes, or any number of other operations. In this article, we’ll cover some of the more common uses of functions, but you could get an in-depth explanation of all available functions in the [Loot and Trade Table Functions tutorial](LootAndTradeTableFunctions.md).
 
+### random_dye
+
+This function affects the colors of the random leather items supplied by a leather worker.
+
+Example:
+
+```json
+"gives": [
+           {
+            "item": "minecraft:leather_helmet",
+            "quantity": 1,
+            "functions": [
+                {
+                    "function": "random_dye"
+                }
+              ]
+            }
+]
+
+```
+
 ### set_count
 
 This allows you to set a minimum and maximum quantity of items returned with this entry:
@@ -279,6 +300,25 @@ You can define the enchantments as objects to also define an enchantment level. 
                 }
 ```
 
+### trader_material_type
+
+This function affects the type of items a fisherman wants to trade for other items, such as a boat.
+
+```json
+"wants": [
+            {
+                "item": "minecraft:boat",
+                "quantity": 1,
+                "price_multiplier": 0.05,
+                "functions": [
+                    {
+                      "function": "trader_material_type"
+                    }
+                ]
+            }
+
+```
+
 ### Multiple functions
 
 Multiple functions can be defined. Here’s an example of combining two functions together. In this example, this entry will return between one and three Potions of Healing.
@@ -336,7 +376,129 @@ For example, using multiple `set_count` functions, like with the example below, 
 
 Conditions are a list of requirements that must be met before either a pool can be used or an individual entry can be selected. All conditions are stored within the conditions list. Each condition runs one at a time. If any one condition in the list fails, the remainder in the same list will be ignored.
 
-### Match tool condition
+### entity_properties
+
+`entity_properties` applies the given properties to the returned loot.
+
+Example:
+
+```json
+
+"conditions": [
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "properties": {
+                        "on_fire": true
+                     }
+                }
+               ]
+
+```
+
+### has_mark_variant
+
+`has_mark_variant` specifies that there are different variations for the loot.
+
+Example:
+
+```json
+ "conditions": [
+        {
+          "condition": "has_mark_variant",
+          "value": 0
+        }
+      ]
+
+```
+
+### killed_by_player_or_pets
+
+The `killed_by_player_or_pets`condition can supply another way to customize a loot drop, depending on how the entity was killed. 
+
+Example:
+
+```json
+ "conditions": [
+        {
+         "condition": "killed_by_player_or_pets"
+         },
+
+```
+
+### random_chance
+
+`random_chance` is a condition that applies a given value to the chances that loot will drop.
+
+Example:
+
+```json
+"conditions": [
+    {
+        "condition": "random_chance",
+        "chance": 0.2
+    }
+]
+
+```
+
+
+### random_chance_with_looting
+
+The `random_chance_with_looting` condition is similar to the `random_chance` condition, but it also supplies a multiplier value.
+
+Example:
+
+```json
+"conditions": [
+    {
+        "condition": "killed_by_player"
+    },
+    {
+        "condition": "random_chance_with_looting",
+        "chance": 0.11,
+        "looting_multiplier": 0.02
+    }
+],
+
+```
+
+### random_difficulty_chance
+
+`random_difficulty_chance` is a condition that can control loot drops according to a given difficulty level.
+
+Example:
+
+```json
+
+"conditions": [
+    {
+        "condition": "random_difficulty_chance",
+        "default_chance": 0.5,
+        "peaceful": 0,
+        "hard": 0.6
+    }
+],
+
+```
+
+### random_regional_difficulty_chance
+
+The `random_regional_difficulty_chance` condition controls loot probability according to the region.
+
+Example:
+
+```json
+"conditions": [
+        {
+          "condition": "random_regional_difficulty_chance",
+          "max_chance": 0.15
+        }
+      ]
+
+```
+
+### match_tool
 
 `match_tool` is a condition that checks whether the tool (or weapon or whatever item the player is using) used to make the loot drop matches the set of modifier conditions provided.
 The predicates used are: count, durability, enchantments, and item.
