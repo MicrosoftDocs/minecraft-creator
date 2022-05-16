@@ -73,7 +73,7 @@ The blocks.json file has a similar set up to the manifest.json file and has requ
 
 #### Textures and Sub-textures
 
-As shown in the JSON code above, the canvas block is using two textures. The top and bottom are using the existing **log_oak_top.png** while the other sides are using a custom texture. Blocks can also be assigned a single texture to cover every side of a block with the same texture.
+As shown in the JSON code, the canvas block is using two textures. The top and bottom are using the existing **log_top.png** while the other sides are using a custom texture. Blocks can also be assigned a single texture to cover every side of a block with the same texture.
 
 `"textures": "canvasblock"`
 
@@ -98,8 +98,8 @@ With the block defined in the **blocks.json** file, the next step is to associat
         "canvasblock": {
           "textures": "textures/blocks/canvasblock"
         },
-        "log_oak_top":{
-          "textures": "textures/blocks/log_oak_top"
+        "log_top":{
+          "textures": "textures/blocks/log_top"
         }
       }
     }
@@ -126,12 +126,12 @@ If you are creating a custom one:
 1. Check that the **Width** and **Height** to are set **16** each.
 1. Save the file as `canvasblock.png` in the `My_RESOURCE_Pack/textures/blocks` folder.
 
-#### Adding the log_oak_top.png
+#### Adding the log_top.png
 
-The `log_oak_top.png` file will also need to be added to the texture folder in the behavior pack because the `terrain_texture.json` file will look for both textures in the My_RESOURCE_Pack folder.
+The `log_top.png` file will also need to be added to the texture folder in the behavior pack because the `terrain_texture.json` file will look for both textures in the My_RESOURCE_Pack folder.
 
-1. Navigate to the `Vanilla_Resource_Pack\textures\blocks` folder and copy `log_oak_top.png`.
-1. Navigate to `My_RESOURCE_Pack/textures/blocks` and paste a copy of `log_oak_top.png`.
+1. Navigate to the `Vanilla_Resource_Pack\textures\blocks` folder and copy `log_top.png`.
+1. Navigate to `My_RESOURCE_Pack/textures/blocks` and paste a copy of `log_top.png`.
 
 ## Setting up the Behavior JSON file
 
