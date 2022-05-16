@@ -60,11 +60,11 @@ The blocks.json file has a similar set up to the manifest.json file and has requ
     "format_version": "1.16.0",
       "helloworld:canvasblock": {
         "textures": {
-            "up": "log_oak_top",
-            "down": "log_oak_top",
+            "up": "log_top",
+            "down": "log_top",
             "side": "canvasblock"
             },
-        "sound":"dirt"
+        "sound":"grass"
         }
     }
     ```
