@@ -28,8 +28,6 @@ new MessageFormData()
 Creates a new modal form builder.
 
 #### **Returns** [*MessageFormData*](MessageFormData.md)
-
-
 ### **body**
 `
 body(bodyText: string): MessageFormData
@@ -40,8 +38,6 @@ Method that sets the body text for the modal form.
 - **bodyText**: *string*
 
 #### **Returns** [*MessageFormData*](MessageFormData.md)
-
-
 ### **button1**
 `
 button1(text: string): MessageFormData
@@ -52,8 +48,6 @@ Method that sets the text for the first button of the dialog.
 - **text**: *string*
 
 #### **Returns** [*MessageFormData*](MessageFormData.md)
-
-
 ### **button2**
 `
 button2(text: string): MessageFormData
@@ -64,8 +58,6 @@ This method sets the text for the second button on the dialog.
 - **text**: *string*
 
 #### **Returns** [*MessageFormData*](MessageFormData.md)
-
-
 ### **show**
 `
 show(player: mojang-minecraft.Player): Promise<MessageFormResponse>
@@ -78,10 +70,8 @@ Creates and shows this modal popup form. Returns asynchronously when the player 
   Player to show this dialog to.
 
 #### **Returns** Promise&lt;[*MessageFormResponse*](MessageFormResponse.md)&gt;
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **title**
 `
 title(titleText: string): MessageFormData
@@ -92,5 +82,3 @@ This builder method sets the title for the modal dialog.
 - **titleText**: *string*
 
 #### **Returns** [*MessageFormData*](MessageFormData.md)
-
-

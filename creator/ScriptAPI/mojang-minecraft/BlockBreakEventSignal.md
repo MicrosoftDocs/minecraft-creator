@@ -26,8 +26,6 @@ Adds a callback that will be called when a block is broken by a player.
 - **callback**: (arg: [*BlockBreakEvent*](BlockBreakEvent.md)) => *void*
 
 #### **Returns** (arg: [*BlockBreakEvent*](BlockBreakEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: BlockBreakEvent) => void): void
@@ -36,8 +34,5 @@ unsubscribe(callback: (arg: BlockBreakEvent) => void): void
 Removes a callback from being called when an block is broken.
 #### **Parameters**
 - **callback**: (arg: [*BlockBreakEvent*](BlockBreakEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

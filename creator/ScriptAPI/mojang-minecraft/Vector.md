@@ -20,7 +20,6 @@ X component of this vector.
 
 Type: *number*
 
-
 ### **y**
 `y: number;`
 
@@ -28,14 +27,12 @@ Y component of this vector.
 
 Type: *number*
 
-
 ### **z**
 `z: number;`
 
 Z component of this vector.
 
 Type: *number*
-
 
 
 ## Methods
@@ -72,8 +69,6 @@ Creates a new instance of an abstract vector.
   Z component of the vector.
 
 #### **Returns** [*Vector*](Vector.md)
-
-
 ### **equals**
 `
 equals(other: Vector): boolean
@@ -86,8 +81,6 @@ Compares this vector and another vector to one another.
   Other vector to compare this vector to.
 
 #### **Returns** *boolean* - True if the two vectors are equal.
-
-
 ### **length**
 `
 length(): number
@@ -96,8 +89,6 @@ length(): number
 Returns the length of this vector.
 
 #### **Returns** *number*
-
-
 ### **normalized**
 `
 normalized(): Vector
@@ -106,8 +97,6 @@ normalized(): Vector
 Returns this vector as a normalized vector.
 
 #### **Returns** [*Vector*](Vector.md)
-
-
 ### **add**
 `
 add(a: Vector, b: Vector): Vector
@@ -119,8 +108,6 @@ Returns the addition of these vectors.
 - **b**: [*Vector*](Vector.md)
 
 #### **Returns** [*Vector*](Vector.md)
-
-
 ### **cross**
 `
 cross(a: Vector, b: Vector): Vector
@@ -132,8 +119,6 @@ Returns the cross product of these two vectors.
 - **b**: [*Vector*](Vector.md)
 
 #### **Returns** [*Vector*](Vector.md)
-
-
 ### **distance**
 `
 distance(a: Vector, b: Vector): number
@@ -145,8 +130,6 @@ Returns the distance between two vectors.
 - **b**: [*Vector*](Vector.md)
 
 #### **Returns** *number*
-
-
 ### **divide**
 `
 divide(a: Vector, b: number | Vector): Vector
@@ -158,8 +141,6 @@ Returns the component-wise division of these vectors.
 - **b**: *number* | [*Vector*](Vector.md)
 
 #### **Returns** [*Vector*](Vector.md)
-
-
 ### **lerp**
 `
 lerp(a: Vector, b: Vector, t: number): Vector
@@ -172,8 +153,6 @@ Returns the linear interpolation between a and b using t as the control.
 - **t**: *number*
 
 #### **Returns** [*Vector*](Vector.md)
-
-
 ### **max**
 `
 max(a: Vector, b: Vector): Vector
@@ -185,8 +164,6 @@ Returns a vector that is made from the largest components of two vectors.
 - **b**: [*Vector*](Vector.md)
 
 #### **Returns** [*Vector*](Vector.md)
-
-
 ### **min**
 `
 min(a: Vector, b: Vector): Vector
@@ -198,8 +175,6 @@ Returns a vector that is made from the smallest components of two vectors.
 - **b**: [*Vector*](Vector.md)
 
 #### **Returns** [*Vector*](Vector.md)
-
-
 ### **multiply**
 `
 multiply(a: Vector, b: number | Vector): Vector
@@ -211,8 +186,6 @@ Returns the component-wise product of these vectors.
 - **b**: *number* | [*Vector*](Vector.md)
 
 #### **Returns** [*Vector*](Vector.md)
-
-
 ### **slerp**
 `
 slerp(a: Vector, b: Vector, s: number): Vector
@@ -225,8 +198,6 @@ Returns the spherical linear interpolation between a and b using s as the contro
 - **s**: *number*
 
 #### **Returns** [*Vector*](Vector.md)
-
-
 ### **subtract**
 `
 subtract(a: Vector, b: Vector): Vector
@@ -239,8 +210,6 @@ Returns the subtraction of these vectors.
 
 #### **Returns** [*Vector*](Vector.md)
 
-
-
 ## Constants
 ### **back**
 `static read-only back: Vector;`
@@ -249,14 +218,12 @@ A constant vector that represents (0, 0, -1).
 
 Type: [*Vector*](Vector.md)
 
-
 ### **down**
 `static read-only down: Vector;`
 
 A constant vector that represents (0, -1, 0).
 
 Type: [*Vector*](Vector.md)
-
 
 ### **forward**
 `static read-only forward: Vector;`
@@ -265,14 +232,12 @@ A constant vector that represents (0, 0, 1).
 
 Type: [*Vector*](Vector.md)
 
-
 ### **left**
 `static read-only left: Vector;`
 
 A constant vector that represents (-1, 0, 0).
 
 Type: [*Vector*](Vector.md)
-
 
 ### **one**
 `static read-only one: Vector;`
@@ -281,14 +246,12 @@ A constant vector that represents (1, 1, 1).
 
 Type: [*Vector*](Vector.md)
 
-
 ### **right**
 `static read-only right: Vector;`
 
 A constant vector that represents (1, 0, 0).
 
 Type: [*Vector*](Vector.md)
-
 
 ### **up**
 `static read-only up: Vector;`
@@ -297,12 +260,10 @@ A constant vector that represents (0, 1, 0).
 
 Type: [*Vector*](Vector.md)
 
-
 ### **zero**
 `static read-only zero: Vector;`
 
 A constant vector that represents (0, 0, 0).
 
 Type: [*Vector*](Vector.md)
-
 

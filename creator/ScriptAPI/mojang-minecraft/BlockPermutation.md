@@ -21,7 +21,6 @@ The [*mojang-minecraft.BlockType*](../mojang-minecraft/BlockType.md) that the pe
 Type: [*BlockType*](BlockType.md)
 
 
-
 ## Methods
 - [clone](#clone)
 - [getAllProperties](#getallproperties)
@@ -37,8 +36,6 @@ clone(): BlockPermutation
 Creates a copy of this permutation.
 
 #### **Returns** [*BlockPermutation*](BlockPermutation.md) - A copy of the permutation.
-
-
 ### **getAllProperties**
 `
 getAllProperties(): IBlockProperty[]
@@ -46,8 +43,6 @@ getAllProperties(): IBlockProperty[]
 
 
 #### **Returns** [*IBlockProperty*](IBlockProperty.md)[] - Returns the list of all of the properties that the permutation has.
-
-
 ### **getProperty**
 `
 getProperty(propertyName: string): IBlockProperty
@@ -58,23 +53,8 @@ Gets a property for the permutation.
 - **propertyName**: *string*
 
 #### **Returns** [*IBlockProperty*](IBlockProperty.md) - Returns the property if the permutation has it, else `null`.
-
 > [!WARNING]
 > This function can throw errors.
-
-#### **Examples**
-##### *place_bottom_stone_slab.js*
-```javascript
-import { world, MinecraftBlockTypes, BlockProperties, BlockLocation } from "mojang-minecraft";
-// Create the permutation
-let bottomStoneSlab = MinecraftBlockTypes.stoneSlab.createDefaultBlockPermutation();
-bottomStoneSlab.getProperty(BlockProperties.stoneSlabType).value = "stone_brick";
-bottomStoneSlab.getProperty(BlockProperties.topSlotBit).value = false;
-// Fetch the block
-const block = world.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3));
-// Set the permutation
-block.setPermutation(bottomStoneSlab);
-```
 ### **getTags**
 `
 getTags(): string[]
@@ -83,8 +63,6 @@ getTags(): string[]
 Creates a copy of the permutation.
 
 #### **Returns** *string*[]
-
-
 ### **hasTag**
 `
 hasTag(tag: string): boolean
@@ -95,7 +73,6 @@ Checks to see if the permutation has a specific tag.
 - **tag**: *string*
 
 #### **Returns** *boolean* - Returns `true` if the permutation has the tag, else `false`.
-
 
 #### **Examples**
 ##### *check_block_tags.js*

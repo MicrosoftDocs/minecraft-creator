@@ -20,14 +20,12 @@ Gets an amplifier that may have been applied to this effect. Valid values are in
 
 Type: *number*
 
-
 ### **chance**
 `read-only chance: number;`
 
 Chance that this effect is applied as a result of the entity being fed this item. Valid values range between 0 and 1.
 
 Type: *number*
-
 
 ### **duration**
 `read-only duration: number;`
@@ -36,12 +34,10 @@ Gets the duration, in ticks, of this effect.
 
 Type: *number*
 
-
 ### **name**
 `read-only name: string;`
 
 Gets the identifier of the effect to apply. Example values include 'fire_resistance' or 'regeneration'.
 
 Type: *string*
-
 

@@ -20,14 +20,12 @@ Block that was hit.
 
 Type: [*Block*](Block.md)
 
-
 ### **face**
 `read-only face: Direction;`
 
 Face of the block that was hit.
 
 Type: [*Direction*](Direction.md)
-
 
 ### **faceLocationX**
 `read-only faceLocationX: number;`
@@ -36,12 +34,10 @@ X coordinate on the face that was hit.
 
 Type: *number*
 
-
 ### **faceLocationY**
 `read-only faceLocationY: number;`
 
 Y coordinate on the face that was hit.
 
 Type: *number*
-
 

@@ -20,7 +20,6 @@ X size (west to east) component of this block area.
 
 Type: *number*
 
-
 ### **y**
 `y: number;`
 
@@ -28,14 +27,12 @@ Y size (down to up) of this block area size.
 
 Type: *number*
 
-
 ### **z**
 `z: number;`
 
 Z size (south to north) of this block area size.
 
 Type: *number*
-
 
 
 ## Methods
@@ -54,8 +51,6 @@ Creates a new BlockAreaSize object.
 - **z**: *number*
 
 #### **Returns** [*BlockAreaSize*](BlockAreaSize.md)
-
-
 ### **equals**
 `
 equals(other: BlockAreaSize): boolean
@@ -66,5 +61,3 @@ Tests whether this block area size is equal to another BlockAreaSize object.
 - **other**: [*BlockAreaSize*](BlockAreaSize.md)
 
 #### **Returns** *boolean*
-
-

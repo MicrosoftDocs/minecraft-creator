@@ -26,8 +26,6 @@ Adds a callback that will be called when an item's definition and components cha
 - **callback**: (arg: [*ItemDefinitionTriggeredEvent*](ItemDefinitionTriggeredEvent.md)) => *void*
 
 #### **Returns** (arg: [*ItemDefinitionTriggeredEvent*](ItemDefinitionTriggeredEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ItemDefinitionTriggeredEvent) => void): void
@@ -36,8 +34,5 @@ unsubscribe(callback: (arg: ItemDefinitionTriggeredEvent) => void): void
 Removes a callback from being called when an item's definition and components change.
 #### **Parameters**
 - **callback**: (arg: [*ItemDefinitionTriggeredEvent*](ItemDefinitionTriggeredEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

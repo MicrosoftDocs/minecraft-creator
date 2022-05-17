@@ -23,14 +23,12 @@ A set of filters for when these Healable items would apply.
 
 Type: [*FilterGroup*](FilterGroup.md)
 
-
 ### **forceUse**
 `read-only forceUse: boolean;`
 
 Determines if an item can be used regardless of the entity being at full health.
 
 Type: *boolean*
-
 
 ### **id**
 `read-only id: string;`
@@ -39,12 +37,10 @@ Identifier of this component. Should always be minecraft:healable.
 
 Type: *string*
 
-
 ### **items**
 `read-only items: FeedItem[];`
 
 A set of items that can specifically heal this entity.
 
 Type: [*FeedItem*](FeedItem.md)[]
-
 

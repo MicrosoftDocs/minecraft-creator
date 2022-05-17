@@ -26,8 +26,6 @@ Adds a callback that will be called when a chargeable item is released from char
 - **callback**: (arg: [*ItemReleaseChargeEvent*](ItemReleaseChargeEvent.md)) => *void*
 
 #### **Returns** (arg: [*ItemReleaseChargeEvent*](ItemReleaseChargeEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ItemReleaseChargeEvent) => void): void
@@ -36,8 +34,5 @@ unsubscribe(callback: (arg: ItemReleaseChargeEvent) => void): void
 Removes a callback from being called when a chargeable item is released from charging.
 #### **Parameters**
 - **callback**: (arg: [*ItemReleaseChargeEvent*](ItemReleaseChargeEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

@@ -21,7 +21,6 @@ Maximum distance, in blocks, to process the raycast.
 Type: *number*
 
 
-
 ## Methods
 - [constructor](#constructor)
   
@@ -33,5 +32,3 @@ new EntityRaycastOptions()
 Creates a new EntityRaycastOptions object, for use in an entity vector query.
 
 #### **Returns** [*EntityRaycastOptions*](EntityRaycastOptions.md)
-
-

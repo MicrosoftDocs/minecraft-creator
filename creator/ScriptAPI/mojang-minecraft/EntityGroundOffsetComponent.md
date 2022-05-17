@@ -23,12 +23,10 @@ Identifier of this component. Should always be minecraft:ground_offset.
 
 Type: *string*
 
-
 ### **value**
 `value: number;`
 
 The value of the entity's offset from the terrain, in blocks.
 
 Type: *number*
-
 

@@ -10,12 +10,24 @@
         href: mojang-gametest/GameTestSequence.md
       - name: RegistrationBuilder
         href: mojang-gametest/RegistrationBuilder.md
+      - name: SculkSpreader
+        href: mojang-gametest/SculkSpreader.md
       - name: SimulatedPlayer
         href: mojang-gametest/SimulatedPlayer.md
       - name: Tags
         href: mojang-gametest/Tags.md
       - name: Test
         href: mojang-gametest/Test.md
+    - name: mojang-minecraft-server-admin
+      items:
+      - name: mojang-minecraft-server-admin
+        href: mojang-minecraft-server-admin/mojang-minecraft-server-admin.md
+      - name: SecretString
+        href: mojang-minecraft-server-admin/SecretString.md
+      - name: ServerSecrets
+        href: mojang-minecraft-server-admin/ServerSecrets.md
+      - name: ServerVariables
+        href: mojang-minecraft-server-admin/ServerVariables.md
     - name: mojang-minecraft-ui
       items:
       - name: mojang-minecraft-ui
@@ -116,12 +128,18 @@
         href: mojang-minecraft/BlockWaterContainerComponent.md
       - name: BoolBlockProperty
         href: mojang-minecraft/BoolBlockProperty.md
+      - name: ButtonPushEvent
+        href: mojang-minecraft/ButtonPushEvent.md
+      - name: ButtonPushEventSignal
+        href: mojang-minecraft/ButtonPushEventSignal.md
       - name: ChatEvent
         href: mojang-minecraft/ChatEvent.md
       - name: ChatEventSignal
         href: mojang-minecraft/ChatEventSignal.md
       - name: Color
         href: mojang-minecraft/Color.md
+      - name: CommandResult
+        href: mojang-minecraft/CommandResult.md
       - name: Container
         href: mojang-minecraft/Container.md
       - name: DataDrivenEntityTriggerEvent
@@ -378,8 +396,8 @@
         href: mojang-minecraft/ItemUseOnEventSignal.md
       - name: LeverActionEvent
         href: mojang-minecraft/LeverActionEvent.md
-      - name: LeverActivateEventSignal
-        href: mojang-minecraft/LeverActivateEventSignal.md
+      - name: LeverActionEventSignal
+        href: mojang-minecraft/LeverActionEventSignal.md
       - name: Location
         href: mojang-minecraft/Location.md
       - name: MinecraftBlockTypes
@@ -406,8 +424,6 @@
         href: mojang-minecraft/PistonActivateEvent.md
       - name: PistonActivateEventSignal
         href: mojang-minecraft/PistonActivateEventSignal.md
-      - name: PitchYawRotation
-        href: mojang-minecraft/PitchYawRotation.md
       - name: Player
         href: mojang-minecraft/Player.md
       - name: PlayerInventoryComponentContainer
@@ -428,10 +444,16 @@
         href: mojang-minecraft/ProjectileHitEventSignal.md
       - name: PropertyRegistry
         href: mojang-minecraft/PropertyRegistry.md
+      - name: Scoreboard
+        href: mojang-minecraft/Scoreboard.md
+      - name: ScoreboardIdentity
+        href: mojang-minecraft/ScoreboardIdentity.md
+      - name: ScoreboardObjective
+        href: mojang-minecraft/ScoreboardObjective.md
+      - name: ScoreboardScoreInfo
+        href: mojang-minecraft/ScoreboardScoreInfo.md
       - name: ScreenDisplay
         href: mojang-minecraft/ScreenDisplay.md
-      - name: SculkSpreader
-        href: mojang-minecraft/SculkSpreader.md
       - name: Seat
         href: mojang-minecraft/Seat.md
       - name: SoundOptions
@@ -458,3 +480,17 @@
         href: mojang-minecraft/WorldInitializeEvent.md
       - name: WorldInitializeEventSignal
         href: mojang-minecraft/WorldInitializeEventSignal.md
+      - name: XYRotation
+        href: mojang-minecraft/XYRotation.md
+    - name: mojang-net
+      items:
+      - name: mojang-net
+        href: mojang-net/mojang-net.md
+      - name: HttpClient
+        href: mojang-net/HttpClient.md
+      - name: HttpHeader
+        href: mojang-net/HttpHeader.md
+      - name: HttpRequest
+        href: mojang-net/HttpRequest.md
+      - name: HttpResponse
+        href: mojang-net/HttpResponse.md

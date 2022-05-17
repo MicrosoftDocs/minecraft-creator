@@ -24,7 +24,6 @@ The item slot/type that this collection is applied to.
 Type: *number*
 
 
-
 ## Methods
 - [constructor](#constructor)
 - [[Symbol.iterator]](#[symbol.iterator])
@@ -44,8 +43,6 @@ new EnchantmentList(enchantmentSlot: number)
 - **enchantmentSlot**: *number*
 
 #### **Returns** [*EnchantmentList*](EnchantmentList.md)
-
-
 ### **[Symbol.iterator]**
 `
 [Symbol.iterator](): Iterator<Enchantment>
@@ -53,8 +50,6 @@ new EnchantmentList(enchantmentSlot: number)
 
 
 #### **Returns** Iterator&lt;[*Enchantment*](Enchantment.md)&gt;
-
-
 ### **addEnchantment**
 `
 addEnchantment(enchantment: Enchantment): boolean
@@ -65,8 +60,6 @@ Attempts to add the enchantment to this collection. Returns true if successful.
 - **enchantment**: [*Enchantment*](Enchantment.md)
 
 #### **Returns** *boolean*
-
-
 ### **canAddEnchantment**
 `
 canAddEnchantment(enchantment: Enchantment): boolean
@@ -77,8 +70,6 @@ Returns whether or not the provided EnchantmentInstance can be added to this col
 - **enchantment**: [*Enchantment*](Enchantment.md)
 
 #### **Returns** *boolean*
-
-
 ### **getEnchantment**
 `
 getEnchantment(enchantmentType: EnchantmentType): Enchantment
@@ -89,8 +80,6 @@ Returns an enchantment associated with a type.
 - **enchantmentType**: [*EnchantmentType*](EnchantmentType.md)
 
 #### **Returns** [*Enchantment*](Enchantment.md)
-
-
 ### **hasEnchantment**
 `
 hasEnchantment(enchantmentType: EnchantmentType): number
@@ -101,8 +90,6 @@ If this collection has an EnchantmentInstance with type, returns the level of th
 - **enchantmentType**: [*EnchantmentType*](EnchantmentType.md)
 
 #### **Returns** *number*
-
-
 ### **next**
 `
 next(): IteratorResult<Enchantment>
@@ -110,8 +97,6 @@ next(): IteratorResult<Enchantment>
 
 
 #### **Returns** IteratorResult&lt;[*Enchantment*](Enchantment.md)&gt;
-
-
 ### **removeEnchantment**
 `
 removeEnchantment(enchantmentType: EnchantmentType): void
@@ -120,6 +105,3 @@ removeEnchantment(enchantmentType: EnchantmentType): void
 Removes an EnchantmentInstance with type from this collection if present.
 #### **Parameters**
 - **enchantmentType**: [*EnchantmentType*](EnchantmentType.md)
-
-
-

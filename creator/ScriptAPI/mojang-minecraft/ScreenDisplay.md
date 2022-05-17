@@ -24,11 +24,8 @@ clearTitle(): void
 `
 
 Clears the title and subtitle, if currently displayed.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **setActionBar**
 `
 setActionBar(text: string): void
@@ -37,11 +34,8 @@ setActionBar(text: string): void
 Set the action bar text - a piece of text that displays beneath the title and above the hot-bar.
 #### **Parameters**
 - **text**: *string*
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **setTitle**
 `
 setTitle(title: string, options?: TitleDisplayOptions): void
@@ -51,11 +45,8 @@ Will cause a title to show up on the player's on screen display. You can optiona
 #### **Parameters**
 - **title**: *string*
 - **options**?: [*TitleDisplayOptions*](TitleDisplayOptions.md) = `null`
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **updateSubtitle**
 `
 updateSubtitle(subtitle: string): void
@@ -64,8 +55,5 @@ updateSubtitle(subtitle: string): void
 Updates the subtitle if the subtitle was previously displayed via the setTitle method.
 #### **Parameters**
 - **subtitle**: *string*
-
-
 > [!WARNING]
 > This function can throw errors.
-

@@ -23,14 +23,12 @@ Contains a count of the slots in the container that are empty.
 
 Type: *number*
 
-
 ### **size**
 `read-only size: number;`
 
 Returns the size capacity of the inventory container on this block.
 
 Type: *number*
-
 
 
 ## Methods
@@ -50,11 +48,8 @@ Adds an item to the specified container. Item will be placed in the first availa
 - **itemStack**: [*ItemStack*](ItemStack.md)
   
   The stack of items to add.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **getItem**
 `
 getItem(slot: number): ItemStack
@@ -67,10 +62,8 @@ Gets the item stack for the set of items at the specified slot. If the slot is e
   Zero-based index of the slot to retrieve items from.
 
 #### **Returns** [*ItemStack*](ItemStack.md)
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **setItem**
 `
 setItem(slot: number, itemStack: ItemStack): void
@@ -84,11 +77,8 @@ Sets an item stack within a particular slot.
 - **itemStack**: [*ItemStack*](ItemStack.md)
   
   Stack of items to place within the specified slot.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **swapItems**
 `
 swapItems(slot: number, otherSlot: number, otherContainer: Container): boolean
@@ -107,10 +97,8 @@ Swaps items between two different slots within containers.
   Target container to swap with. Note this can be the same container as this source.
 
 #### **Returns** *boolean*
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **transferItem**
 `
 transferItem(fromSlot: number, toSlot: number, toContainer: Container): boolean
@@ -127,7 +115,5 @@ Moves an item from one slot to another, potentially across containers.
   Target container to transfer to. Note this can be the same container as the source.
 
 #### **Returns** *boolean*
-
 > [!WARNING]
 > This function can throw errors.
-

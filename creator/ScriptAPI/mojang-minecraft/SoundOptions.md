@@ -20,7 +20,6 @@ Specifies a location of where to play a particular sound.
 
 Type: [*Location*](Location.md)
 
-
 ### **pitch**
 `pitch: number;`
 
@@ -28,14 +27,12 @@ Pitch adjustment level for the sound.
 
 Type: *number*
 
-
 ### **volume**
 `volume: number;`
 
 Relative volume level of the sound.
 
 Type: *number*
-
 
 
 ## Methods
@@ -49,5 +46,3 @@ new SoundOptions()
 Creates a new instance of the SoundOptions object.
 
 #### **Returns** [*SoundOptions*](SoundOptions.md)
-
-

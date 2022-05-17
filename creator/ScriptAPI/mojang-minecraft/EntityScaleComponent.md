@@ -23,12 +23,10 @@ Identifier of this component. Should always be minecraft:scale.
 
 Type: *string*
 
-
 ### **value**
 `value: number;`
 
 The value of the scale. 1.0 means the entity will appear at the scale they are defined in their model. Higher numbers make the entity bigger.
 
 Type: *number*
-
 

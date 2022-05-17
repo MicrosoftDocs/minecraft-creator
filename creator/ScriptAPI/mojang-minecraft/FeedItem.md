@@ -20,7 +20,6 @@ As part of the Healable component, an optional collection of side effects that c
 
 Type: [*FeedItemEffect*](FeedItemEffect.md)[]
 
-
 ### **healAmount**
 `read-only healAmount: number;`
 
@@ -28,12 +27,10 @@ The amount of health this entity gains when fed this item. This number is an int
 
 Type: *number*
 
-
 ### **item**
 `read-only item: string;`
 
 Identifier of type of item that can be fed. If a namespace is not specified, 'minecraft:' is assumed. Example values include 'wheat' or 'golden_apple'.
 
 Type: *string*
-
 

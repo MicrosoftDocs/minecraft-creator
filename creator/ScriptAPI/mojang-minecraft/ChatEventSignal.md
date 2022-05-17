@@ -27,7 +27,6 @@ Adds a callback that will be called when new chat messages are sent.
 
 #### **Returns** (arg: [*ChatEvent*](ChatEvent.md)) => *void*
 
-
 #### **Examples**
 ##### *custom_command.js*
 ```javascript
@@ -49,8 +48,5 @@ unsubscribe(callback: (arg: ChatEvent) => void): void
 Removes a callback from being called when new chat messages are sent.
 #### **Parameters**
 - **callback**: (arg: [*ChatEvent*](ChatEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

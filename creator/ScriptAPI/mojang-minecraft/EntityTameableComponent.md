@@ -23,14 +23,12 @@ Identifier of this component. Should always be minecraft:tameable.
 
 Type: *string*
 
-
 ### **probability**
 `read-only probability: number;`
 
 The chance of taming the entity with each item use between 0.0 and 1.0, where 1.0 is 100%
 
 Type: *number*
-
 
 ### **tameEvent**
 `read-only tameEvent: Trigger;`
@@ -39,14 +37,12 @@ Event to run when this entity becomes tamed.
 
 Type: [*Trigger*](Trigger.md)
 
-
 ### **tameItems**
 `read-only tameItems: string[];`
 
 The list of items that can be used to tame this entity.
 
 Type: *string*[]
-
 
 
 ## Methods
@@ -60,7 +56,5 @@ tame(): boolean
 Tames this entity.
 
 #### **Returns** *boolean* - Returns true if the entity was tamed.
-
 > [!WARNING]
 > This function can throw errors.
-

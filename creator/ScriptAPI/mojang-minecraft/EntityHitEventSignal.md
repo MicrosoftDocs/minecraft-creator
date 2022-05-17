@@ -27,8 +27,6 @@ Adds a callback that will be called when an entity hits another entity.
 - **options**?: [*EntityEventOptions*](EntityEventOptions.md) = `null`
 
 #### **Returns** (arg: [*EntityHitEvent*](EntityHitEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: EntityHitEvent) => void): void
@@ -37,8 +35,5 @@ unsubscribe(callback: (arg: EntityHitEvent) => void): void
 Removes a callback from being called when an entity makes a melee attack on another entity.
 #### **Parameters**
 - **callback**: (arg: [*EntityHitEvent*](EntityHitEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

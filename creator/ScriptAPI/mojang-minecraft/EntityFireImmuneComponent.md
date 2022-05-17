@@ -23,4 +23,3 @@ Identifier of this component. Should always be minecraft:fire_immune.
 
 Type: *string*
 
-

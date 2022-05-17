@@ -26,8 +26,6 @@ Retrieves an entity type using a string-based identifier.
 - **identifier**: *string*
 
 #### **Returns** [*EntityType*](EntityType.md)
-
-
 ### **getAll**
 `
 getAll(): EntityTypeIterator
@@ -36,5 +34,3 @@ getAll(): EntityTypeIterator
 Retrieves an iterator of all entity types within this world.
 
 #### **Returns** [*EntityTypeIterator*](EntityTypeIterator.md)
-
-

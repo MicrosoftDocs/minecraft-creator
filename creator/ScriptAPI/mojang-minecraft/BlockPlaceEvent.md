@@ -23,7 +23,6 @@ Block placed in this event.
 
 Type: [*Block*](Block.md)
 
-
 ### **dimension**
 `read-only dimension: Dimension;`
 
@@ -31,12 +30,10 @@ Dimension that contains the block that has been placed in this event.
 
 Type: [*Dimension*](Dimension.md)
 
-
 ### **player**
 `read-only player: Player;`
 
 Player that placed the block for this event.
 
 Type: [*Player*](Player.md)
-
 

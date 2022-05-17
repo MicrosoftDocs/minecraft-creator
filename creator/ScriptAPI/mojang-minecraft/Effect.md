@@ -20,7 +20,6 @@ Gets an amplifier that may have been applied to this effect. Sample values range
 
 Type: *number*
 
-
 ### **displayName**
 `read-only displayName: string;`
 
@@ -28,12 +27,10 @@ Gets the player-friendly name of this effect.
 
 Type: *string*
 
-
 ### **duration**
 `read-only duration: number;`
 
 Gets the entire specified duration, in ticks, of this effect.
 
 Type: *number*
-
 
