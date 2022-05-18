@@ -26,8 +26,6 @@ Adds a callback that will be called when a player leaves the world.
 - **callback**: (arg: [*PlayerLeaveEvent*](PlayerLeaveEvent.md)) => *void*
 
 #### **Returns** (arg: [*PlayerLeaveEvent*](PlayerLeaveEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: PlayerLeaveEvent) => void): void
@@ -36,8 +34,5 @@ unsubscribe(callback: (arg: PlayerLeaveEvent) => void): void
 Removes a callback from being called when a player leaves the world.
 #### **Parameters**
 - **callback**: (arg: [*PlayerLeaveEvent*](PlayerLeaveEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

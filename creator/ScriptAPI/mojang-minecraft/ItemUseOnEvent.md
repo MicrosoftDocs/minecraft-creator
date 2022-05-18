@@ -20,14 +20,12 @@ The face of the block that an item is being used on.
 
 Type: [*Direction*](Direction.md)
 
-
 ### **blockLocation**
 `read-only blockLocation: BlockLocation;`
 
 Location of the block being impacted.
 
 Type: [*BlockLocation*](BlockLocation.md)
-
 
 ### **faceLocationX**
 `read-only faceLocationX: number;`
@@ -36,14 +34,12 @@ X coordinate of the item-use impact location on the face of the target block.
 
 Type: *number*
 
-
 ### **faceLocationY**
 `read-only faceLocationY: number;`
 
 Y coordinate of the item-use impact location on the face of the target block.
 
 Type: *number*
-
 
 ### **item**
 `item: ItemStack;`
@@ -52,12 +48,10 @@ The impacted item stack that is being used on a block.
 
 Type: [*ItemStack*](ItemStack.md)
 
-
 ### **source**
 `read-only source: Entity;`
 
 Returns the source entity that triggered this item event.
 
 Type: [*Entity*](Entity.md)
-
 

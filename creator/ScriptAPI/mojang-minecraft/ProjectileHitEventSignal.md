@@ -26,8 +26,6 @@ Adds a callback that will be called when a projectile hits an entity or block.
 - **callback**: (arg: [*ProjectileHitEvent*](ProjectileHitEvent.md)) => *void*
 
 #### **Returns** (arg: [*ProjectileHitEvent*](ProjectileHitEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ProjectileHitEvent) => void): void
@@ -36,8 +34,5 @@ unsubscribe(callback: (arg: ProjectileHitEvent) => void): void
 Removes a callback from being called when a projectile hits an entity or block.
 #### **Parameters**
 - **callback**: (arg: [*ProjectileHitEvent*](ProjectileHitEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

@@ -23,14 +23,12 @@ List of items that the entity drops when it grows up.
 
 Type: *string*[]
 
-
 ### **duration**
 `read-only duration: number;`
 
 Amount of time before the entity grows up, -1 for always a baby.
 
 Type: *number*
-
 
 ### **feedItems**
 `read-only feedItems: EntityDefinitionFeedItem[];`
@@ -39,7 +37,6 @@ List of items that can be fed to the entity. Includes 'item' for the item name a
 
 Type: [*EntityDefinitionFeedItem*](EntityDefinitionFeedItem.md)[]
 
-
 ### **growUp**
 `read-only growUp: Trigger;`
 
@@ -47,12 +44,10 @@ Event to run when this entity grows up.
 
 Type: [*Trigger*](Trigger.md)
 
-
 ### **id**
 `read-only id: string;`
 
 Identifier of this component. Should always be minecraft:ageable.
 
 Type: *string*
-
 

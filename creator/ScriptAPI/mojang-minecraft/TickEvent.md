@@ -20,12 +20,10 @@ Current tick at the time this event was fired.
 
 Type: *number*
 
-
 ### **deltaTime**
 `read-only deltaTime: number;`
 
 Time since the last tick was fired.
 
 Type: *number*
-
 

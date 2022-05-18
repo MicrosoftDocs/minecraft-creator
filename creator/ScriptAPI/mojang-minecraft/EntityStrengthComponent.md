@@ -23,7 +23,6 @@ Identifier of this component. Should always be minecraft:strength.
 
 Type: *string*
 
-
 ### **max**
 `read-only max: number;`
 
@@ -31,12 +30,10 @@ Maximum strength of this entity, as defined in the entity type definition.
 
 Type: *number*
 
-
 ### **value**
 `read-only value: number;`
 
 Current strength value of this entity, after any effects or component updates are applied.
 
 Type: *number*
-
 

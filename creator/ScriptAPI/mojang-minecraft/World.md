@@ -20,6 +20,12 @@ Contains a set of events that are applicable to the entirety of the world.
 
 Type: [*Events*](Events.md)
 
+### **scoreboard**
+`read-only scoreboard: Scoreboard;`
+
+Returns the general global scoreboard that applies to the world.
+
+Type: [*Scoreboard*](Scoreboard.md)
 
 
 ## Methods
@@ -45,7 +51,6 @@ getDimension(dimensionId: string): Dimension
 
 > [!WARNING]
 > Throws if the given dimension name is invalid
-
 ### **getDynamicProperty**
 `
 getDynamicProperty(identifier: string): boolean | number | string
@@ -56,10 +61,8 @@ Returns a property value.
 - **identifier**: *string*
 
 #### **Returns** *boolean* | *number* | *string* - Returns the value for the property, or undefined if the property has not been set.
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **getPlayers**
 `
 getPlayers(options?: EntityQueryOptions): PlayerIterator
@@ -70,10 +73,8 @@ Returns all players currently in the world.
 - **options**?: [*EntityQueryOptions*](EntityQueryOptions.md) = `null`
 
 #### **Returns** [*PlayerIterator*](PlayerIterator.md) - All players currently in the world.
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **playMusic**
 `
 playMusic(trackID: string, musicOptions?: MusicOptions): void
@@ -83,9 +84,6 @@ Plays a particular music track for all players.
 #### **Parameters**
 - **trackID**: *string*
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
-
-
-
 ### **playSound**
 `
 playSound(soundID: string, soundOptions?: SoundOptions): void
@@ -95,9 +93,6 @@ Plays a sound for all players.
 #### **Parameters**
 - **soundID**: *string*
 - **soundOptions**?: [*SoundOptions*](SoundOptions.md) = `null`
-
-
-
 ### **queueMusic**
 `
 queueMusic(trackID: string, musicOptions?: MusicOptions): void
@@ -107,9 +102,6 @@ Queues an additional music track for players. If a track is not playing, a music
 #### **Parameters**
 - **trackID**: *string*
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
-
-
-
 ### **removeDynamicProperty**
 `
 removeDynamicProperty(identifier: string): boolean
@@ -120,10 +112,8 @@ Removes a specified property.
 - **identifier**: *string*
 
 #### **Returns** *boolean*
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **setDynamicProperty**
 `
 setDynamicProperty(identifier: string, value: boolean | number | string): void
@@ -135,17 +125,11 @@ Sets a specified property to a value.
 - **value**: *boolean* | *number* | *string*
   
   Data value of the property to set.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **stopMusic**
 `
 stopMusic(): void
 `
 
 Stops any music tracks from playing.
-
-
-

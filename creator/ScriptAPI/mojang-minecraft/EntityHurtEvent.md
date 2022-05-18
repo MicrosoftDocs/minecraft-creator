@@ -20,14 +20,12 @@ A summary of the reason that damage was caused.
 
 Type: *string*
 
-
 ### **damage**
 `read-only damage: number;`
 
 Describes the amount of damage caused.
 
 Type: *number*
-
 
 ### **damagingEntity**
 `read-only damagingEntity: Entity;`
@@ -36,7 +34,6 @@ Optional entity that caused the damaging attack, or undefined if the hurt reason
 
 Type: [*Entity*](Entity.md)
 
-
 ### **hurtEntity**
 `read-only hurtEntity: Entity;`
 
@@ -44,12 +41,10 @@ Entity that was hurt.
 
 Type: [*Entity*](Entity.md)
 
-
 ### **projectile**
 `read-only projectile: Entity;`
 
 Optional entity for a projectile that potentially hurt an entity.
 
 Type: [*Entity*](Entity.md)
-
 

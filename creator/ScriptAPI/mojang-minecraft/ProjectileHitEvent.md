@@ -20,14 +20,12 @@ Contains additional information about the block that was hit by the projectile, 
 
 Type: [*BlockHitInformation*](BlockHitInformation.md)
 
-
 ### **dimension**
 `read-only dimension: Dimension;`
 
 Dimension where this projectile hit took place.
 
 Type: [*Dimension*](Dimension.md)
-
 
 ### **entityHit**
 `read-only entityHit: EntityHitInformation;`
@@ -36,14 +34,12 @@ Contains additional information about a block that was hit.
 
 Type: [*EntityHitInformation*](EntityHitInformation.md)
 
-
 ### **hitVector**
 `read-only hitVector: Vector;`
 
-Vector of the projectile as it hit a block/entity.
+Direction vector of the projectile as it hit a block/entity.
 
 Type: [*Vector*](Vector.md)
-
 
 ### **location**
 `read-only location: Location;`
@@ -52,7 +48,6 @@ Location where the projectile hit occurred.
 
 Type: [*Location*](Location.md)
 
-
 ### **projectile**
 `read-only projectile: Entity;`
 
@@ -60,12 +55,10 @@ Entity for the projectile that hit a block/entity.
 
 Type: [*Entity*](Entity.md)
 
-
 ### **source**
 `read-only source: Entity;`
 
 Optional source entity that fired the projectile.
 
 Type: [*Entity*](Entity.md)
-
 

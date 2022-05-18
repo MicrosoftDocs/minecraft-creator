@@ -20,7 +20,6 @@ X component of this location.
 
 Type: *number*
 
-
 ### **y**
 `y: number;`
 
@@ -28,14 +27,12 @@ Y component of this location.
 
 Type: *number*
 
-
 ### **z**
 `z: number;`
 
 Z component of this location.
 
 Type: *number*
-
 
 
 ## Methods
@@ -61,8 +58,6 @@ Creates a new instance of an abstract location.
   Z position of the location.
 
 #### **Returns** [*Location*](Location.md)
-
-
 ### **equals**
 `
 equals(other: Location): boolean
@@ -75,8 +70,6 @@ Compares this Location and another Location to one another.
   Other location to compare this Location to.
 
 #### **Returns** *boolean* - True if the two locations are equal.
-
-
 ### **isNear**
 `
 isNear(other: Location, epsilon: number): boolean
@@ -92,5 +85,3 @@ Determines whether or not two Locations are considered to be near each other.
   Maximum distance that the Locations can be from each other to be considered nearby.
 
 #### **Returns** *boolean* - True if the two Locations are within epsilon distance of each other.
-
-

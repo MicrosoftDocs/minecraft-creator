@@ -23,12 +23,10 @@ If true, the form was canceled by the player (e.g., they selected the pop-up X c
 
 Type: *boolean*
 
-
 ### **selection**
 `read-only selection: number;`
 
 Returns the index of the button that was pushed.
 
 Type: *number*
-
 

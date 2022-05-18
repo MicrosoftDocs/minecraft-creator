@@ -23,12 +23,10 @@ Identifier of this component. Should always be minecraft:color.
 
 Type: *string*
 
-
 ### **value**
 `value: number;`
 
 The palette color value of the entity.
 
 Type: *number*
-
 

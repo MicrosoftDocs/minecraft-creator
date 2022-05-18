@@ -23,14 +23,12 @@ Zero-based index of the seat that can used to control this entity.
 
 Type: *number*
 
-
 ### **crouchingSkipInteract**
 `read-only crouchingSkipInteract: boolean;`
 
 Determines whether interactions are not supported if the entity is crouching.
 
 Type: *boolean*
-
 
 ### **familyTypes**
 `read-only familyTypes: string[];`
@@ -39,14 +37,12 @@ A string-list of entity types that this entity can support as riders.
 
 Type: *string*[]
 
-
 ### **id**
 `read-only id: string;`
 
 Identifier of this component. Should always be minecraft:rideable.
 
 Type: *string*
-
 
 ### **interactText**
 `read-only interactText: string;`
@@ -55,14 +51,12 @@ Set of text that should be displayed when a player is looking to ride on this en
 
 Type: *string*
 
-
 ### **pullInEntities**
 `read-only pullInEntities: boolean;`
 
 If true, this entity will pull in entities that are in the correct family_types into any available seat.
 
 Type: *boolean*
-
 
 ### **riderCanInteract**
 `read-only riderCanInteract: boolean;`
@@ -71,7 +65,6 @@ If true, this entity will be picked when looked at by the rider.
 
 Type: *boolean*
 
-
 ### **seatCount**
 `read-only seatCount: number;`
 
@@ -79,14 +72,12 @@ Number of seats for riders defined for this entity.
 
 Type: *number*
 
-
 ### **seats**
 `read-only seats: Seat[];`
 
 The list of positions and number of riders for each position for entities riding this entity.
 
 Type: [*Seat*](Seat.md)[]
-
 
 
 ## Methods
@@ -106,10 +97,8 @@ Adds an entity to this entity as a rider.
   Entity that will become the rider of this entity.
 
 #### **Returns** *boolean* - True if the rider entity was successfully added.
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **ejectRider**
 `
 ejectRider(rider: Entity): void
@@ -120,19 +109,13 @@ Ejects the specified rider of this entity.
 - **rider**: [*Entity*](Entity.md)
   
   Entity that should be ejected from this entity.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **ejectRiders**
 `
 ejectRiders(): void
 `
 
 Ejects all riders of this entity.
-
-
 > [!WARNING]
 > This function can throw errors.
-

@@ -26,8 +26,6 @@ This type is usable for iterating over a set of entities. This means it can be u
 
 
 #### **Returns** Iterator&lt;[*Entity*](Entity.md)&gt;
-
-
 ### **next**
 `
 next(): IteratorResult<Entity>
@@ -36,5 +34,3 @@ next(): IteratorResult<Entity>
 Retrieves the next item in this iteration. The resulting IteratorResult contains .done and .value properties which can be used to see the next Entity in the iteration.
 
 #### **Returns** IteratorResult&lt;[*Entity*](Entity.md)&gt;
-
-

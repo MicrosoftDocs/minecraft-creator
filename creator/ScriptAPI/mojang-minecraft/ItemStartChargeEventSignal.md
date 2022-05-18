@@ -26,8 +26,6 @@ Adds a callback that will be called when a chargeable item starts charging.
 - **callback**: (arg: [*ItemStartChargeEvent*](ItemStartChargeEvent.md)) => *void*
 
 #### **Returns** (arg: [*ItemStartChargeEvent*](ItemStartChargeEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ItemStartChargeEvent) => void): void
@@ -36,8 +34,5 @@ unsubscribe(callback: (arg: ItemStartChargeEvent) => void): void
 Removes a callback from being called when a chargeable item starts charging.
 #### **Parameters**
 - **callback**: (arg: [*ItemStartChargeEvent*](ItemStartChargeEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

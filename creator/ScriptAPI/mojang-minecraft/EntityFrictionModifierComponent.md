@@ -23,12 +23,10 @@ Identifier of this component. Should always be minecraft:friction_modifier.
 
 Type: *string*
 
-
 ### **value**
 `value: number;`
 
 The higher the number, the more the friction affects this entity. A value of 1.0 means regular friction, while 2.0 means twice as much.
 
 Type: *number*
-
 

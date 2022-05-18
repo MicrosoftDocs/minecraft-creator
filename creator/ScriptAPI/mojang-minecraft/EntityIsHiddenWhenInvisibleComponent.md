@@ -23,4 +23,3 @@ Identifier of this component. Should always be minecraft:is_hidden_when_invisibl
 
 Type: *string*
 
-

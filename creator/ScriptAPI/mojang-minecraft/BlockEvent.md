@@ -14,6 +14,7 @@ description: Contents of the mojang-minecraft.BlockEvent class.
 - [*BeforePistonActivateEvent*](BeforePistonActivateEvent.md)
 - [*PistonActivateEvent*](PistonActivateEvent.md)
 - [*LeverActionEvent*](LeverActionEvent.md)
+- [*ButtonPushEvent*](ButtonPushEvent.md)
 - [*BlockExplodeEvent*](BlockExplodeEvent.md)
 - [*BlockPlaceEvent*](BlockPlaceEvent.md)
 - [*BlockBreakEvent*](BlockBreakEvent.md)
@@ -28,12 +29,10 @@ Block impacted by this event.
 
 Type: [*Block*](Block.md)
 
-
 ### **dimension**
 `read-only dimension: Dimension;`
 
 Dimension that contains the block that is the subject of this event.
 
 Type: [*Dimension*](Dimension.md)
-
 

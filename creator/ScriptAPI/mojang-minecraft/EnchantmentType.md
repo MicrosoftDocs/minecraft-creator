@@ -20,12 +20,10 @@ The name of the enchantment type.
 
 Type: *string*
 
-
 ### **maxLevel**
 `read-only maxLevel: number;`
 
 The maximum level this type of enchantment can have.
 
 Type: *number*
-
 

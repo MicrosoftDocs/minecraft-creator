@@ -18,22 +18,18 @@ Represents the type of fluid for use within a fluid containing block, like a cau
 
 Represents water as a type of fluida.
 
-
 ### **lava**
 `lava = 1`
 
 Represents lava as a type of fluid.
-
 
 ### **powderSnow**
 `powderSnow = 2`
 
 Represents powder snow as a type of fluid.
 
-
 ### **potion**
 `potion = 3`
 
 Represents a potion as a type of fluid.
-
 

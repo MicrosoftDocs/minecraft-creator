@@ -23,7 +23,6 @@ Block impacted by this event.
 
 Type: [*Block*](Block.md)
 
-
 ### **dimension**
 `read-only dimension: Dimension;`
 
@@ -31,14 +30,12 @@ Dimension that contains the block that is the subject of this event.
 
 Type: [*Dimension*](Dimension.md)
 
-
 ### **isExpanding**
 `read-only isExpanding: boolean;`
 
 True if the piston is the process of expanding.
 
 Type: *boolean*
-
 
 ### **piston**
 `read-only piston: BlockPistonComponent;`
@@ -48,3 +45,20 @@ Contains additional properties and details of the piston.
 Type: [*BlockPistonComponent*](BlockPistonComponent.md)
 
 
+#### **Examples**
+##### *pistonEvent.ts*
+```javascript
+  let canceled = false;
+  const pistonLoc = new mc.BlockLocation(
+    Math.floor(targetLocation.x) + 1,
+    Math.floor(targetLocation.y) + 2,
+    Math.floor(targetLocation.z) + 1
+  );
+  const pistonCallback = mc.world.events.beforePistonActivate.subscribe((pistonEvent: mc.BeforePistonActivateEvent) => {
+    if (pistonEvent.piston.location.equals(pistonLoc)) {
+      log("Cancelling piston event");
+      pistonEvent.cancel = true;
+      canceled = true;
+    }
+  });
+```

@@ -23,4 +23,3 @@ Identifier of this component. Should always be minecraft:can_power_jump.
 
 Type: *string*
 
-

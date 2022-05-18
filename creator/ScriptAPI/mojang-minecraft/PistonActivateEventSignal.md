@@ -27,7 +27,23 @@ Adds a callback that will be called when a piston expands or retracts.
 
 #### **Returns** (arg: [*PistonActivateEvent*](PistonActivateEvent.md)) => *void*
 
-
+#### **Examples**
+##### *pistonEvent.ts*
+```javascript
+  let canceled = false;
+  const pistonLoc = new mc.BlockLocation(
+    Math.floor(targetLocation.x) + 1,
+    Math.floor(targetLocation.y) + 2,
+    Math.floor(targetLocation.z) + 1
+  );
+  const pistonCallback = mc.world.events.beforePistonActivate.subscribe((pistonEvent: mc.BeforePistonActivateEvent) => {
+    if (pistonEvent.piston.location.equals(pistonLoc)) {
+      log("Cancelling piston event");
+      pistonEvent.cancel = true;
+      canceled = true;
+    }
+  });
+```
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: PistonActivateEvent) => void): void
@@ -36,8 +52,5 @@ unsubscribe(callback: (arg: PistonActivateEvent) => void): void
 Removes a callback from being called when a piston expands or retracts.
 #### **Parameters**
 - **callback**: (arg: [*PistonActivateEvent*](PistonActivateEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

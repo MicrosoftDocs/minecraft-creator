@@ -25,8 +25,6 @@ new DynamicPropertiesDefinition()
 
 
 #### **Returns** [*DynamicPropertiesDefinition*](DynamicPropertiesDefinition.md)
-
-
 ### **defineBoolean**
 `
 defineBoolean(identifier: string): void
@@ -35,11 +33,8 @@ defineBoolean(identifier: string): void
 Defines a new boolean dynamic property.
 #### **Parameters**
 - **identifier**: *string*
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **defineNumber**
 `
 defineNumber(identifier: string): void
@@ -48,11 +43,8 @@ defineNumber(identifier: string): void
 Defines a new number dynamic property.
 #### **Parameters**
 - **identifier**: *string*
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **defineString**
 `
 defineString(identifier: string, maxLength: number): void
@@ -62,8 +54,5 @@ Defines a new string dynamic property.
 #### **Parameters**
 - **identifier**: *string*
 - **maxLength**: *number*
-
-
 > [!WARNING]
 > This function can throw errors.
-

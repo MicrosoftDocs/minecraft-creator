@@ -10,7 +10,7 @@ description: Contents of the mojang-minecraft.ItemStopUseOnEventSignal class.
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-Manages callbacks that are connected to an item stopping being used on a block event.
+Manages callbacks that are connected to an item stops used on a block event.
 
 ## Methods
 - [subscribe](#subscribe)
@@ -21,13 +21,11 @@ Manages callbacks that are connected to an item stopping being used on a block e
 subscribe(callback: (arg: ItemStopUseOnEvent) => void): (arg: ItemStopUseOnEvent) => void
 `
 
-Adds a callback that will be called when an item is used on a block.
+Adds a callback that will be called when an item stops being used on a block.
 #### **Parameters**
 - **callback**: (arg: [*ItemStopUseOnEvent*](ItemStopUseOnEvent.md)) => *void*
 
 #### **Returns** (arg: [*ItemStopUseOnEvent*](ItemStopUseOnEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ItemStopUseOnEvent) => void): void
@@ -36,8 +34,5 @@ unsubscribe(callback: (arg: ItemStopUseOnEvent) => void): void
 Removes a callback from being called when an item is used on a block.
 #### **Parameters**
 - **callback**: (arg: [*ItemStopUseOnEvent*](ItemStopUseOnEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

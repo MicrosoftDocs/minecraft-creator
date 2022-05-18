@@ -23,14 +23,12 @@ Block impacted by this event.
 
 Type: [*Block*](Block.md)
 
-
 ### **cancel**
 `cancel: boolean;`
 
 If this is set to true within an event handler, the piston activation is canceled.
 
 Type: *boolean*
-
 
 ### **dimension**
 `read-only dimension: Dimension;`
@@ -39,7 +37,6 @@ Dimension that contains the block that is the subject of this event.
 
 Type: [*Dimension*](Dimension.md)
 
-
 ### **isExpanding**
 `read-only isExpanding: boolean;`
 
@@ -47,12 +44,10 @@ True if the piston is the process of expanding.
 
 Type: *boolean*
 
-
 ### **piston**
 `read-only piston: BlockPistonComponent;`
 
 Contains additional properties and details of the piston.
 
 Type: [*BlockPistonComponent*](BlockPistonComponent.md)
-
 

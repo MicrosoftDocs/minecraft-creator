@@ -26,8 +26,6 @@ Adds a callback that will be called when a player joins the world.
 - **callback**: (arg: [*PlayerJoinEvent*](PlayerJoinEvent.md)) => *void*
 
 #### **Returns** (arg: [*PlayerJoinEvent*](PlayerJoinEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: PlayerJoinEvent) => void): void
@@ -36,8 +34,5 @@ unsubscribe(callback: (arg: PlayerJoinEvent) => void): void
 Removes a callback from being called when a player joins the world.
 #### **Parameters**
 - **callback**: (arg: [*PlayerJoinEvent*](PlayerJoinEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

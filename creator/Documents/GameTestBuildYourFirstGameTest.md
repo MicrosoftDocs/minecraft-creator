@@ -83,13 +83,17 @@ A behavior pack manifest needs to have additional elements to support GameTests.
     "modules": [
         {
             "description": "Script that implements basic starter tests.",
-            "type": "javascript",
+            "type": "script",
+            "language": "javascript",
             "uuid": "1A1B53FC-5653-4A75-91B7-9CDF027674AE",
             "version": [0, 0, 1],
             "entry": "scripts/StarterTests.js"
         }
     ]
 ```
+
+>[!Caution]
+>This sample now represents the manifest format for registering JavaScript for version 1.19. Prior to version 1.19, the `type` attribute should be set to "javascript", and the language attribute should be omittted.
 
 Note several facets of this `module`:
 
@@ -133,7 +137,8 @@ A full manifest file for a Behavior Pack with a GameTest looks like:
     "modules": [
         {
             "description": "Script that implements basic starter tests.",
-            "type": "javascript",
+            "type": "script",
+            "language": "javascript",
             "uuid": "1A1B53FC-5653-4A75-91B7-9CDF027674AE",
             "version": [0, 0, 1],
             "entry": "scripts/StarterTests.js"
@@ -151,6 +156,9 @@ A full manifest file for a Behavior Pack with a GameTest looks like:
     ]
 }
 ```
+
+>[!Caution]
+>This sample now represents the manifest format for registering JavaScript for version 1.19. Prior to version 1.19, the `type` attribute should be set to "javascript", and the language attribute should be omittted.
 
 ### GameTest Registration
 

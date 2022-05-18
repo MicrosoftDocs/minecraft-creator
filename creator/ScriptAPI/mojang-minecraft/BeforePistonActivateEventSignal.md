@@ -26,8 +26,6 @@ Adds a callback that will be called before a piston expands or retracts.
 - **callback**: (arg: [*BeforePistonActivateEvent*](BeforePistonActivateEvent.md)) => *void*
 
 #### **Returns** (arg: [*BeforePistonActivateEvent*](BeforePistonActivateEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: BeforePistonActivateEvent) => void): void
@@ -36,8 +34,5 @@ unsubscribe(callback: (arg: BeforePistonActivateEvent) => void): void
 Removes a callback from being called before a piston expands or retracts.
 #### **Parameters**
 - **callback**: (arg: [*BeforePistonActivateEvent*](BeforePistonActivateEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

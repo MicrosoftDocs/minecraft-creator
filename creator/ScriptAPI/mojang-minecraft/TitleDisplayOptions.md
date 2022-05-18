@@ -20,14 +20,12 @@ Fade-in time for the title and subtitle, in seconds.
 
 Type: *number*
 
-
 ### **fadeOutSeconds**
 `fadeOutSeconds: number;`
 
 Fade-out time for the title and subtitle, in seconds.
 
 Type: *number*
-
 
 ### **staySeconds**
 `staySeconds: number;`
@@ -36,14 +34,12 @@ Amount of time for the title and subtitle to stay in place.
 
 Type: *number*
 
-
 ### **subtitle**
 `subtitle: string;`
 
-Optional sub-title text.
+Optional subtitle text.
 
 Type: *string*
-
 
 
 ## Methods
@@ -56,5 +52,3 @@ new TitleDisplayOptions()
 
 
 #### **Returns** [*TitleDisplayOptions*](TitleDisplayOptions.md)
-
-

@@ -20,7 +20,6 @@ Dimension in which the weather has changed.
 
 Type: *string*
 
-
 ### **lightning**
 `read-only lightning: boolean;`
 
@@ -28,12 +27,10 @@ Whether it is lightning after the change in weather.
 
 Type: *boolean*
 
-
 ### **raining**
 `read-only raining: boolean;`
 
 Whether it is raining after the change in weather.
 
 Type: *boolean*
-
 
