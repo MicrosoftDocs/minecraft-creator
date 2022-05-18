@@ -27,8 +27,6 @@ Adds a callback that will be called when an effect is added to an entity.
 - **options**?: [*EntityEventOptions*](EntityEventOptions.md) = `null`
 
 #### **Returns** (arg: [*EffectAddEvent*](EffectAddEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: EffectAddEvent) => void): void
@@ -37,8 +35,5 @@ unsubscribe(callback: (arg: EffectAddEvent) => void): void
 Removes a callback from being called when an effect is added to an entity.
 #### **Parameters**
 - **callback**: (arg: [*EffectAddEvent*](EffectAddEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

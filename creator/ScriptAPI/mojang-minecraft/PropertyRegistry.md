@@ -25,11 +25,8 @@ Registers a dynamic property for a particular entity type (e.g., a minecraft:ske
 #### **Parameters**
 - **propertiesDefinition**: [*DynamicPropertiesDefinition*](DynamicPropertiesDefinition.md)
 - **entityType**: [*EntityType*](EntityType.md)
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **registerWorldDynamicProperties**
 `
 registerWorldDynamicProperties(propertiesDefinition: DynamicPropertiesDefinition): void
@@ -38,8 +35,5 @@ registerWorldDynamicProperties(propertiesDefinition: DynamicPropertiesDefinition
 Registers a globally available dynamic property for a world.
 #### **Parameters**
 - **propertiesDefinition**: [*DynamicPropertiesDefinition*](DynamicPropertiesDefinition.md)
-
-
 > [!WARNING]
 > This function can throw errors.
-

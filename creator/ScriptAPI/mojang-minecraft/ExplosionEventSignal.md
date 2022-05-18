@@ -26,8 +26,6 @@ Adds a callback that will be called when an explosion occurs.
 - **callback**: (arg: [*ExplosionEvent*](ExplosionEvent.md)) => *void*
 
 #### **Returns** (arg: [*ExplosionEvent*](ExplosionEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ExplosionEvent) => void): void
@@ -36,8 +34,5 @@ unsubscribe(callback: (arg: ExplosionEvent) => void): void
 Removes a callback from being called when an explosion occurs.
 #### **Parameters**
 - **callback**: (arg: [*ExplosionEvent*](ExplosionEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

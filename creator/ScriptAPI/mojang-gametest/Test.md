@@ -30,6 +30,7 @@ Main class for GameTest functions, with helpers and data for manipulating the re
 - [assertItemEntityCountIs](#assertitementitycountis)
 - [assertItemEntityPresent](#assertitementitypresent)
 - [assertRedstonePower](#assertredstonepower)
+- [destroyBlock](#destroyblock)
 - [fail](#fail)
 - [failIf](#failif)
 - [getBlock](#getblock)
@@ -47,6 +48,7 @@ Main class for GameTest functions, with helpers and data for manipulating the re
 - [relativeLocation](#relativelocation)
 - [removeSimulatedPlayer](#removesimulatedplayer)
 - [rotateDirection](#rotatedirection)
+- [rotateVector](#rotatevector)
 - [runAfterDelay](#runafterdelay)
 - [runAtTickTime](#runatticktime)
 - [setBlockPermutation](#setblockpermutation)
@@ -89,11 +91,8 @@ Tests that the condition specified in _condition_ is true. If not, an error with
 - **message**: *string*
   
   Message that is passed if the _condition_ does not evaluate to true.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **assertBlockPresent**
 `
 assertBlockPresent(blockType: mojang-minecraft.BlockType, blockLocation: mojang-minecraft.BlockLocation, isPresent?: boolean): void
@@ -110,11 +109,8 @@ Tests that a block of the specified type is present at the specified location. I
 - **isPresent**?: *boolean* = `true`
   
   If true, this function tests whether a block of the specified type is at the location. If false, tests that a block of the specified type is not present.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **assertBlockState**
 `
 assertBlockState(blockLocation: mojang-minecraft.BlockLocation, callback: (arg: mojang-minecraft.Block) => boolean): void
@@ -128,8 +124,6 @@ Tests that a block has a particular state value at the specified location. If it
 - **callback**: (arg: [*mojang-minecraft.Block*](../mojang-minecraft/Block.md)) => *boolean*
   
   Callback function that contains additional tests based on the block at the specified location.
-
-
 > [!WARNING]
 > This function can throw errors.
 
@@ -156,11 +150,8 @@ Tests that an entity can reach a particular location. Depending on the value of 
 - **canReach**?: *boolean* = `true`
   
   If true, tests whether the mob can reach the location. If false, tests whether the mob is not able to reach the location.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **assertContainerContains**
 `
 assertContainerContains(itemStack: mojang-minecraft.ItemStack, blockLocation: mojang-minecraft.BlockLocation): void
@@ -174,11 +165,8 @@ Tests that a container (e.g., a chest) at the specified location contains a spec
 - **blockLocation**: [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md)
   
   Location of the block with a container (for example, a chest) to test the contents of.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **assertContainerEmpty**
 `
 assertContainerEmpty(blockLocation: mojang-minecraft.BlockLocation): void
@@ -189,11 +177,8 @@ Tests that a container (e.g., a chest) at the specified location is empty. If no
 - **blockLocation**: [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md)
   
   Location of the block with a container (for example, a chest) to test is empty of contents.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **assertEntityHasArmor**
 `
 assertEntityHasArmor(entityTypeIdentifier: string, armorSlot: number, armorName: string, armorData: number, blockLocation: mojang-minecraft.BlockLocation, hasArmor?: boolean): void
@@ -219,8 +204,6 @@ Tests that an entity has a specific piece of armor equipped. If not, an error is
 - **hasArmor**?: *boolean* = `true`
   
   Whether or not the entity is expected to have the specified armor equipped.
-
-
 > [!WARNING]
 > This function can throw errors.
 
@@ -248,8 +231,6 @@ Tests that an entity has a particular component. If not, an exception is thrown.
 - **hasComponent**?: *boolean* = `true`
   
   Determines whether to test that the component exists, or does not.
-
-
 > [!WARNING]
 > This function can throw errors.
 
@@ -274,11 +255,8 @@ Depending on the value for isPresent, tests that a particular entity is present 
 - **isPresent**?: *boolean* = `true`
   
   Whether to test that an entity is present or not present at the specified location.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **assertEntityPresent**
 `
 assertEntityPresent(entityTypeIdentifier: string, blockLocation: mojang-minecraft.BlockLocation, isPresent?: boolean): void
@@ -295,11 +273,8 @@ Depending on the value of isPresent, tests for the presence or non-presence of e
 - **isPresent**?: *boolean* = `true`
   
   If true, this function tests whether an entity of the specified type is present. If false, tests that an entity of the specified type is not present.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **assertEntityPresentInArea**
 `
 assertEntityPresentInArea(entityTypeIdentifier: string, isPresent?: boolean): void
@@ -313,11 +288,25 @@ Tests that an entity of a specified type is present within the GameTest area. If
 - **isPresent**?: *boolean* = `true`
   
   If true, this function tests whether an entity of the specified type is present in the GameTest area. If false, tests that an entity of the specified type is not present.
-
-
 > [!WARNING]
 > This function can throw errors.
 
+#### **Examples**
+##### *simpleMobTest.ts*
+```javascript
+  gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
+    const attackerId = "fox";
+    const victimId = "chicken";
+    test.spawn(attackerId, new mc.BlockLocation(5, 2, 5));
+    test.spawn(victimId, new mc.BlockLocation(2, 2, 2));
+    test.assertEntityPresentInArea(victimId, true);
+    test.succeedWhen(() => {
+      test.assertEntityPresentInArea(victimId, false);
+    });
+  })
+    .maxTicks(400)
+    .structureName("gametests:mediumglass");
+```
 ### **assertEntityState**
 `
 assertEntityState(blockLocation: mojang-minecraft.BlockLocation, entityTypeIdentifier: string, callback: (arg: mojang-minecraft.Entity) => boolean): void
@@ -334,8 +323,6 @@ Tests that an entity (e.g., a skeleton) at the specified location has a particul
 - **callback**: (arg: [*mojang-minecraft.Entity*](../mojang-minecraft/Entity.md)) => *boolean*
   
   Callback function where facets of the selected entity can be tested for. If this callback function returns false or no entity with the specified identifier is found, an exception is thrown.
-
-
 > [!WARNING]
 > This function can throw errors.
 
@@ -364,11 +351,8 @@ Depending on the value of isTouching, tests that an entity of a specified type i
 - **isTouching**?: *boolean* = `true`
   
   If true, this function tests whether the entity is touching the specified location. If false, tests that an entity is not testing the specified location.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **assertIsWaterlogged**
 `
 assertIsWaterlogged(blockLocation: mojang-minecraft.BlockLocation, isWaterlogged?: boolean): void
@@ -382,11 +366,8 @@ Depending on the value of isWaterlogged, tests that a block at a location contai
 - **isWaterlogged**?: *boolean* = `true`
   
   Whether to test that the block at _position_ is expected to be waterlogged.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **assertItemEntityCountIs**
 `
 assertItemEntityCountIs(itemType: mojang-minecraft.ItemType, blockLocation: mojang-minecraft.BlockLocation, searchDistance: number, count: number): void
@@ -406,8 +387,6 @@ Tests that items of a particular type and count are present within an area. If n
 - **count**: *number*
   
   Number of items, at minimum, to look and test for.
-
-
 > [!WARNING]
 > This function can throw errors.
 
@@ -435,11 +414,8 @@ Depending on the value of isPresent, tests whether a particular item entity is p
 - **isPresent**?: *boolean* = `true`
   
   If true, this function tests whether an item entity of the specified type is present. If false, tests that an item entity of the specified type is not present.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **assertRedstonePower**
 `
 assertRedstonePower(blockLocation: mojang-minecraft.BlockLocation, power: number): void
@@ -453,11 +429,18 @@ Tests that Redstone power at a particular location matches a particular value. I
 - **power**: *number*
   
   Expected power level.
-
-
 > [!WARNING]
 > This function can throw errors.
+### **destroyBlock**
+`
+destroyBlock(blockLocation: mojang-minecraft.BlockLocation, dropResources?: boolean): void
+`
 
+#### **Parameters**
+- **blockLocation**: [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md)
+- **dropResources**?: *boolean* = `false`
+> [!WARNING]
+> This function can throw errors.
 ### **fail**
 `
 fail(errorMessage: string): void
@@ -468,11 +451,8 @@ Marks the current test as a failure case.
 - **errorMessage**: *string*
   
   Error message summarizing the failure condition.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **failIf**
 `
 failIf(callback: () => void): void
@@ -483,11 +463,8 @@ Runs the given callback. If the callback does not throw an exception, the test i
 - **callback**: () => *void*
   
   Callback function that runs. If the function runs successfully, the test is marked as a failure. Typically, this function will have .assertXyz method calls within it.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **getBlock**
 `
 getBlock(blockLocation: mojang-minecraft.BlockLocation): mojang-minecraft.Block
@@ -500,10 +477,8 @@ Gets a block at the specified block location.
   Location of the block to retrieve.
 
 #### **Returns** [*mojang-minecraft.Block*](../mojang-minecraft/Block.md)
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **getDimension**
 `
 getDimension(): mojang-minecraft.Dimension
@@ -512,10 +487,8 @@ getDimension(): mojang-minecraft.Dimension
 Gets the dimension of this test.
 
 #### **Returns** [*mojang-minecraft.Dimension*](../mojang-minecraft/Dimension.md)
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **getFenceConnectivity**
 `
 getFenceConnectivity(blockLocation: mojang-minecraft.BlockLocation): FenceConnectivity
@@ -528,13 +501,11 @@ If the block at the specified block location is a fence, this returns a helper o
   Location of the block to retrieve.
 
 #### **Returns** [*FenceConnectivity*](FenceConnectivity.md)
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **getSculkSpreader**
 `
-getSculkSpreader(blockLocation: mojang-minecraft.BlockLocation): mojang-minecraft.SculkSpreader
+getSculkSpreader(blockLocation: mojang-minecraft.BlockLocation): SculkSpreader
 `
 
 Retrieves a sculk spreader object that can be used to control and manage how sculk grows from a block.
@@ -543,11 +514,9 @@ Retrieves a sculk spreader object that can be used to control and manage how scu
   
   Location of the block to retrieve a sculk spreader from.
 
-#### **Returns** [*mojang-minecraft.SculkSpreader*](../mojang-minecraft/SculkSpreader.md)
-
+#### **Returns** [*SculkSpreader*](SculkSpreader.md)
 > [!WARNING]
 > This function can throw errors.
-
 ### **getTestDirection**
 `
 getTestDirection(): mojang-minecraft.Direction
@@ -556,8 +525,6 @@ getTestDirection(): mojang-minecraft.Direction
 Returns the direction of the current test - see the [*mojang-minecraft*](../mojang-minecraft/mojang-minecraft.md).Direction enum for more information on potential values (north, east, south, west - values 2-5).
 
 #### **Returns** [*mojang-minecraft.Direction*](../mojang-minecraft/Direction.md)
-
-
 ### **idle**
 `
 idle(tickDelay: number): Promise<void>
@@ -570,19 +537,14 @@ This asynchronous function will wait for the specified time in ticks before cont
   Amount of time to wait, in ticks.
 
 #### **Returns** Promise&lt;*void*&gt;
-
-
 ### **killAllEntities**
 `
 killAllEntities(): void
 `
 
 Kills all entities within the GameTest structure.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **pressButton**
 `
 pressButton(blockLocation: mojang-minecraft.BlockLocation): void
@@ -594,10 +556,8 @@ Presses a button at a block location.
   
   Location to push the button at.
 
-
 > [!WARNING]
 > Will throw an error if a button is not present at the specified position.
-
 ### **print**
 `
 print(text: string): void
@@ -608,11 +568,8 @@ Displays the specified message to all players.
 - **text**: *string*
   
   Message to display.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **pullLever**
 `
 pullLever(blockLocation: mojang-minecraft.BlockLocation): void
@@ -624,10 +581,8 @@ Pulls a lever at a block location.
   
   Location to pull the lever at.
 
-
 > [!WARNING]
 > Will throw an error if a lever is not present at the specified position.
-
 ### **pulseRedstone**
 `
 pulseRedstone(blockLocation: mojang-minecraft.BlockLocation, duration: number): void
@@ -641,11 +596,8 @@ Sends a Redstone pulse at a particular location by creating a temporary Redstone
 - **duration**: *number*
   
   Number of ticks to pulse Redstone.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **relativeBlockLocation**
 `
 relativeBlockLocation(worldBlockLocation: mojang-minecraft.BlockLocation): mojang-minecraft.BlockLocation
@@ -658,10 +610,8 @@ From a BlockLocation, returns a new BlockLocation with coordinates relative to t
   Absolute location in the world to convert to a relative location.
 
 #### **Returns** [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md) - A location relative to the GameTest command block.
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **relativeLocation**
 `
 relativeLocation(worldLocation: mojang-minecraft.Location): mojang-minecraft.Location
@@ -674,10 +624,8 @@ From a location, returns a new location with coordinates relative to the current
   Absolute location in the world to convert to a relative location.
 
 #### **Returns** [*mojang-minecraft.Location*](../mojang-minecraft/Location.md) - A location relative to the GameTest command block.
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **removeSimulatedPlayer**
 `
 removeSimulatedPlayer(simulatedPlayer: SimulatedPlayer): void
@@ -688,9 +636,6 @@ Removes a simulated player from the world.
 - **simulatedPlayer**: [*SimulatedPlayer*](SimulatedPlayer.md)
   
   Simulated player to remove.
-
-
-
 ### **rotateDirection**
 `
 rotateDirection(direction: mojang-minecraft.Direction): mojang-minecraft.Direction
@@ -703,10 +648,19 @@ Returns a relative direction given the current rotation of the current test. Pas
   Direction to translate into a direction relative to the GameTest facing. Passing in Direction.south will return the test direction; Passing in Direction.north will return the opposite of the test direction, and so on.
 
 #### **Returns** [*mojang-minecraft.Direction*](../mojang-minecraft/Direction.md)
-
 > [!WARNING]
 > This function can throw errors.
+### **rotateVector**
+`
+rotateVector(vector: mojang-minecraft.Vector): mojang-minecraft.Vector
+`
 
+#### **Parameters**
+- **vector**: [*mojang-minecraft.Vector*](../mojang-minecraft/Vector.md)
+
+#### **Returns** [*mojang-minecraft.Vector*](../mojang-minecraft/Vector.md)
+> [!WARNING]
+> This function can throw errors.
 ### **runAfterDelay**
 `
 runAfterDelay(delayTicks: number, callback: () => void): void
@@ -720,11 +674,8 @@ Runs a specific callback after a specified delay of ticks
 - **callback**: () => *void*
   
   Callback function to execute.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **runAtTickTime**
 `
 runAtTickTime(tick: number, callback: () => void): void
@@ -738,11 +689,8 @@ Runs the given callback after a delay of _tick_ ticks from the start of the Game
 - **callback**: () => *void*
   
   Callback function to execute.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **setBlockPermutation**
 `
 setBlockPermutation(blockData: mojang-minecraft.BlockPermutation, blockLocation: mojang-minecraft.BlockLocation): void
@@ -756,11 +704,8 @@ Sets a block to a particular configuration (a BlockPermutation) at the specified
 - **blockLocation**: [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md)
   
   Location of the block to set.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **setBlockType**
 `
 setBlockType(blockType: mojang-minecraft.BlockType, blockLocation: mojang-minecraft.BlockLocation): void
@@ -774,11 +719,8 @@ Sets a block to a particular type at the specified block location.
 - **blockLocation**: [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md)
   
   Location of the block to set.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **setFluidContainer**
 `
 setFluidContainer(location: mojang-minecraft.BlockLocation, type: number): void
@@ -792,11 +734,8 @@ For blocks that are fluid containers - like a cauldron - changes the type of flu
 - **type**: *number*
   
   Type of fluid to set. See [*mojang-gametest*](../mojang-gametest/mojang-gametest.md).FluidType for a list of values.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **setTntFuse**
 `
 setTntFuse(entity: mojang-minecraft.Entity, fuseLength: number): void
@@ -810,11 +749,8 @@ Sets the fuse of an explodable entity.
 - **fuseLength**: *number*
   
   Length of time, in ticks, before the entity explodes.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **spawn**
 `
 spawn(entityTypeIdentifier: string, blockLocation: mojang-minecraft.BlockLocation): mojang-minecraft.Entity
@@ -828,11 +764,25 @@ Spawns an entity at a location.
 - **blockLocation**: [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md)
 
 #### **Returns** [*mojang-minecraft.Entity*](../mojang-minecraft/Entity.md) - The spawned entity. If the entity cannot be spawned, returns undefined.
-
 > [!WARNING]
 > This function can throw errors.
 
 #### **Examples**
+##### *simpleMobTest.ts*
+```javascript
+  gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
+    const attackerId = "fox";
+    const victimId = "chicken";
+    test.spawn(attackerId, new mc.BlockLocation(5, 2, 5));
+    test.spawn(victimId, new mc.BlockLocation(2, 2, 2));
+    test.assertEntityPresentInArea(victimId, true);
+    test.succeedWhen(() => {
+      test.assertEntityPresentInArea(victimId, false);
+    });
+  })
+    .maxTicks(400)
+    .structureName("gametests:mediumglass");
+```
 ##### *spawnAdultPig.js*
 ```javascript
 test.spawn("minecraft:pig<minecraft:ageable_grow_up>", new BlockLocation(1, 2, 1));
@@ -850,7 +800,6 @@ Spawns an entity at a location.
 - **location**: [*mojang-minecraft.Location*](../mojang-minecraft/Location.md)
 
 #### **Returns** [*mojang-minecraft.Entity*](../mojang-minecraft/Entity.md) - The spawned entity. If the entity cannot be spawned, returns undefined.
-
 > [!WARNING]
 > This function can throw errors.
 
@@ -874,7 +823,6 @@ Spawns an item entity at a specified location.
   Location to create the item entity at.
 
 #### **Returns** [*mojang-minecraft.Entity*](../mojang-minecraft/Entity.md)
-
 > [!WARNING]
 > This function can throw errors.
 
@@ -902,10 +850,8 @@ Creates a new simulated player within the world.
 - **gameMode**?: [*mojang-minecraft.GameMode*](../mojang-minecraft/GameMode.md) = `0`
 
 #### **Returns** [*SimulatedPlayer*](SimulatedPlayer.md)
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **spawnWithoutBehaviors**
 `
 spawnWithoutBehaviors(entityTypeIdentifier: string, blockLocation: mojang-minecraft.BlockLocation): mojang-minecraft.Entity
@@ -919,10 +865,8 @@ Spawns an entity at a location without any AI behaviors. This method is frequent
   Location where the entity should be spawned.
 
 #### **Returns** [*mojang-minecraft.Entity*](../mojang-minecraft/Entity.md)
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **spawnWithoutBehaviorsAtLocation**
 `
 spawnWithoutBehaviorsAtLocation(entityTypeIdentifier: string, location: mojang-minecraft.Location): mojang-minecraft.Entity
@@ -936,10 +880,8 @@ Spawns an entity at a location without any AI behaviors. This method is frequent
   Location where the entity should be spawned.
 
 #### **Returns** [*mojang-minecraft.Entity*](../mojang-minecraft/Entity.md)
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **spreadFromFaceTowardDirection**
 `
 spreadFromFaceTowardDirection(blockLocation: mojang-minecraft.BlockLocation, fromFace: mojang-minecraft.Direction, direction: mojang-minecraft.Direction): void
@@ -956,8 +898,6 @@ Tests that a particular item entity is present at a particular location. If not,
 - **direction**: [*mojang-minecraft.Direction*](../mojang-minecraft/Direction.md)
   
   Direction to spread. Use the Minecraft.Direction enum to specify a direction.
-
-
 > [!WARNING]
 > This function can throw errors.
 
@@ -974,19 +914,14 @@ startSequence(): GameTestSequence
 Creates a new GameTestSequence - A set of steps that play out sequentially within a GameTest.
 
 #### **Returns** [*GameTestSequence*](GameTestSequence.md) - A new GameTestSequence with chaining methods that facilitate creating a set of steps.
-
-
 ### **succeed**
 `
 succeed(): void
 `
 
 Marks the current test as a success case.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **succeedIf**
 `
 succeedIf(callback: () => void): void
@@ -997,11 +932,8 @@ Runs the given callback. If the callback does not throw an exception, the test i
 - **callback**: () => *void*
   
   Callback function that runs. If the function runs successfully, the test is marked as a success. Typically, this function will have .assertXyz method calls within it.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **succeedOnTick**
 `
 succeedOnTick(tick: number): void
@@ -1012,11 +944,8 @@ Marks the test as a success at the specified tick.
 - **tick**: *number*
   
   Tick after the start of the GameTest to mark the test as successful.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **succeedOnTickWhen**
 `
 succeedOnTickWhen(tick: number, callback: () => void): void
@@ -1030,11 +959,8 @@ Runs the given callback at _tick_ ticks after the start of the test. If the call
 - **callback**: () => *void*
   
   Callback function that runs. If the function runs successfully, the test is marked as a success.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **succeedWhen**
 `
 succeedWhen(callback: () => void): void
@@ -1045,11 +971,25 @@ Runs the given callback every tick. When the callback successfully executes, the
 - **callback**: () => *void*
   
   Testing callback function that runs. If the function runs successfully, the test is marked as a success.
-
-
 > [!WARNING]
 > This function can throw errors.
 
+#### **Examples**
+##### *simpleMobTest.ts*
+```javascript
+  gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
+    const attackerId = "fox";
+    const victimId = "chicken";
+    test.spawn(attackerId, new mc.BlockLocation(5, 2, 5));
+    test.spawn(victimId, new mc.BlockLocation(2, 2, 2));
+    test.assertEntityPresentInArea(victimId, true);
+    test.succeedWhen(() => {
+      test.assertEntityPresentInArea(victimId, false);
+    });
+  })
+    .maxTicks(400)
+    .structureName("gametests:mediumglass");
+```
 ### **succeedWhenBlockPresent**
 `
 succeedWhenBlockPresent(blockType: mojang-minecraft.BlockType, blockLocation: mojang-minecraft.BlockLocation, isPresent?: boolean): void
@@ -1066,11 +1006,8 @@ Depending on the condition of isPresent, tests for the presence of a block of a 
 - **isPresent**?: *boolean* = `true`
   
   If true, this function tests whether a block of the specified type is present. If false, tests that a block of the specified type is not present.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **succeedWhenEntityHasComponent**
 `
 succeedWhenEntityHasComponent(entityTypeIdentifier: string, componentIdentifier: string, blockLocation: mojang-minecraft.BlockLocation, hasComponent: boolean): void
@@ -1090,11 +1027,8 @@ Tests for the presence of a component on every tick. Depending on the value of h
 - **hasComponent**: *boolean*
   
   If true, this function tests for the presence of a component. If false, this function tests for the lack of a component.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **succeedWhenEntityPresent**
 `
 succeedWhenEntityPresent(entityTypeIdentifier: string, blockLocation: mojang-minecraft.BlockLocation, isPresent?: boolean): void
@@ -1111,11 +1045,8 @@ Depending on the value of isPresent, tests for the presence of an entity on ever
 - **isPresent**?: *boolean* = `true`
   
   If true, this function tests whether an entity of the specified type is present. If false, tests that an entity of the specified type is not present.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **triggerInternalBlockEvent**
 `
 triggerInternalBlockEvent(blockLocation: mojang-minecraft.BlockLocation, event: string, eventParameters?: number[]): void
@@ -1128,11 +1059,8 @@ Triggers a block event from a fixed list of available block events.
   
   Event to trigger. Valid values include minecraft:drip, minecraft:grow_stalagtite, minecraft:grow_stalagmite, minecraft:grow_up, minecraft:grow_down and minecraft:grow_sideways.
 - **eventParameters**?: *number*[] = `[]`
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **until**
 `
 until(callback: () => void): Promise<void>
@@ -1145,8 +1073,6 @@ This asynchronous function will wait until the code in the specified callback su
   Function with code to evaluate.
 
 #### **Returns** Promise&lt;*void*&gt;
-
-
 ### **walkTo**
 `
 walkTo(mob: mojang-minecraft.Entity, blockLocation: mojang-minecraft.BlockLocation, speedModifier?: number): void
@@ -1163,11 +1089,8 @@ Forces a mob to walk to a particular location. Usually used in conjunction with 
 - **speedModifier**?: *number* = `1`
   
   Adjustable modifier to the mob's walking speed.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **walkToLocation**
 `
 walkToLocation(mob: mojang-minecraft.Entity, location: mojang-minecraft.Location, speedModifier?: number): void
@@ -1184,11 +1107,8 @@ Forces a mob to walk to a particular location. Usually used in conjunction with 
 - **speedModifier**?: *number* = `1`
   
   Adjustable modifier to the mob's walking speed.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **worldBlockLocation**
 `
 worldBlockLocation(relativeBlockLocation: mojang-minecraft.BlockLocation): mojang-minecraft.BlockLocation
@@ -1201,10 +1121,8 @@ From a BlockLocation with coordinates relative to the GameTest structure block, 
   Location relative to the GameTest command block.
 
 #### **Returns** [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md) - An absolute location relative to the GameTest command block.
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **worldLocation**
 `
 worldLocation(relativeLocation: mojang-minecraft.Location): mojang-minecraft.Location
@@ -1217,7 +1135,5 @@ From a location with coordinates relative to the GameTest structure block, retur
   Location relative to the GameTest command block.
 
 #### **Returns** [*mojang-minecraft.Location*](../mojang-minecraft/Location.md) - An absolute location relative to the GameTest command block.
-
 > [!WARNING]
 > This function can throw errors.
-

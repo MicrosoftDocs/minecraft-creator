@@ -26,8 +26,6 @@ Adds a callback that will be called when the scripting environment is initialize
 - **callback**: (arg: [*WorldInitializeEvent*](WorldInitializeEvent.md)) => *void*
 
 #### **Returns** (arg: [*WorldInitializeEvent*](WorldInitializeEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: WorldInitializeEvent) => void): void
@@ -36,8 +34,5 @@ unsubscribe(callback: (arg: WorldInitializeEvent) => void): void
 Removes a callback from being called the scripting environment is initialized for a World.
 #### **Parameters**
 - **callback**: (arg: [*WorldInitializeEvent*](WorldInitializeEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

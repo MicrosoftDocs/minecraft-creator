@@ -23,12 +23,10 @@ Identifier of this component. Should always be minecraft:variant.
 
 Type: *string*
 
-
 ### **value**
 `read-only value: number;`
 
 The identifier of the variant. By convention, 0 is the identifier of the base entity.
 
 Type: *number*
-
 

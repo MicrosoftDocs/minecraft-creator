@@ -26,8 +26,6 @@ Adds a callback that will be called on every tick.
 - **callback**: (arg: [*TickEvent*](TickEvent.md)) => *void*
 
 #### **Returns** (arg: [*TickEvent*](TickEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: TickEvent) => void): void
@@ -36,8 +34,5 @@ unsubscribe(callback: (arg: TickEvent) => void): void
 Removes a callback from being called every tick.
 #### **Parameters**
 - **callback**: (arg: [*TickEvent*](TickEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

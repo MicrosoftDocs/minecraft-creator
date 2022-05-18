@@ -29,7 +29,12 @@ ms.prod: gaming
 
 ### axolotl
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/axolotl.json" range="95-98":::
+```json
+"minecraft:damage_over_time": {
+    "damage_per_hurt": 1,
+    "time_between_hurt": 0
+}
+```
 
 ## Vanilla entities using `minecraft:damage_over_time`
 

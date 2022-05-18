@@ -30,7 +30,44 @@ ms.prod: gaming
 
 ### ravager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ravager.json" range="298-333":::
+```json
+"minecraft:break_blocks": {
+    "breakable_blocks": [
+        "bamboo",
+        "bamboo_sapling",
+        "beetroot",
+        "brown_mushroom",
+        "carrots",
+        "carved_pumpkin",
+        "chorus_flower",
+        "chorus_plant",
+        "deadbush",
+        "double_plant",
+        "leaves",
+        "leaves2",
+        "lit_pumpkin",
+        "melon_block",
+        "melon_stem",
+        "potatoes",
+        "pumpkin",
+        "pumpkin_stem",
+        "red_flower",
+        "red_mushroom",
+        "crimson_fungus",
+        "warped_fungus",
+        "reeds",
+        "sapling",
+        "snow_layer",
+        "sweet_berry_bush",
+        "tallgrass",
+        "turtle_egg",
+        "vine",
+        "waterlily",
+        "wheat",
+        "yellow_flower"
+    ]
+}
+```
 
 ## Vanilla entities using `minecraft:break_blocks`
 

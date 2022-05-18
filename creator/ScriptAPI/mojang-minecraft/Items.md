@@ -27,5 +27,3 @@ Returns an item type given an item type identifier.
   Type of the item to return.
 
 #### **Returns** [*ItemType*](ItemType.md)
-
-

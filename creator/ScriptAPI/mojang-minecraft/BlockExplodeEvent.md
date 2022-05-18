@@ -23,7 +23,6 @@ Block impacted by this explosion event.
 
 Type: [*Block*](Block.md)
 
-
 ### **dimension**
 `read-only dimension: Dimension;`
 
@@ -31,12 +30,10 @@ Dimension that contains the block that is the subject of this explosion event.
 
 Type: [*Dimension*](Dimension.md)
 
-
 ### **source**
 `read-only source: Entity;`
 
 Optional source of the explosion.
 
 Type: [*Entity*](Entity.md)
-
 

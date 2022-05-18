@@ -20,14 +20,12 @@ If set to true in a beforeChat event handler, this message is not broadcast out.
 
 Type: *boolean*
 
-
 ### **message**
 `message: string;`
 
 Message that is being broadcast. In a beforeChat event handler, _message_ can be updated with edits before the message is displayed to players.
 
 Type: *string*
-
 
 ### **sender**
 `sender: Player;`
@@ -36,7 +34,6 @@ Player that sent the chat message.
 
 Type: [*Player*](Player.md)
 
-
 ### **sendToTargets**
 `sendToTargets: boolean;`
 
@@ -44,12 +41,10 @@ If true, this message is directly targeted to one or more players (i.e., is not 
 
 Type: *boolean*
 
-
 ### **targets**
 `targets: Player[];`
 
 List of players that will receive this message.
 
 Type: [*Player*](Player.md)[]
-
 

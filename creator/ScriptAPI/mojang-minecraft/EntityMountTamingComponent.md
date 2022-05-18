@@ -24,7 +24,6 @@ Identifier of this component. Should always be minecraft:mount_taming.
 Type: *string*
 
 
-
 ## Methods
 - [setTamed](#settamed)
   
@@ -38,8 +37,5 @@ Sets this rideable entity as tamed.
 - **showParticles**: *boolean*
   
   Whether to show effect particles when this entity is tamed.
-
-
 > [!WARNING]
 > This function can throw errors.
-

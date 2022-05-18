@@ -45,7 +45,16 @@ ms.prod: gaming
 
 ### spider
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/spider.json" range="120-127":::
+```json
+"minecraft:angry": {
+    "duration": 10,
+    "duration_delta": 3,
+    "calm_event": {
+        "event": "minecraft:become_calm",
+        "target": "self"
+    }
+}
+```
 
 ## Vanilla entities using `minecraft:angry`
 

@@ -55,7 +55,21 @@ This can either be a single string identifier for a status effect, or a list of 
 
 ### `zombie_villager_v2`
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie_villager_v2.json" range="86-98":::
+```json
+"minecraft:spell_effects": {
+    "add_effects": [
+        {
+            "effect": "strength",
+            "duration": 100
+        },
+        {
+            "effect": "heal",
+            "duration": 100
+        }
+    ],
+    "remove_effects": "weakness"    
+}
+```
 
 ## Vanilla entities using `minecraft:spell_effects`
 

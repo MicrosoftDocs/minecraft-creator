@@ -63,7 +63,15 @@ ms.prod: gaming
 
 ### goat
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/goat.json" range="344-350":::
+```json
+"minecraft:damage_sensor": {
+    "triggers": {
+        "cause": "fall",
+        "deals_damage": true,
+        "damage_modifier": -20
+    }
+}
+```
 
 ### pillager
 

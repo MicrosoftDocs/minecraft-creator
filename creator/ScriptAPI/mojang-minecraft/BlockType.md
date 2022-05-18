@@ -20,14 +20,12 @@ Represents whether this type of block can be waterlogged.
 
 Type: *boolean*
 
-
 ### **id**
 `read-only id: string;`
 
 Block type name - for example, `minecraft:acacia_stairs`.
 
 Type: *string*
-
 
 
 ## Methods
@@ -41,20 +39,5 @@ createDefaultBlockPermutation(): BlockPermutation
 Creates the default [*mojang-minecraft.BlockPermutation*](../mojang-minecraft/BlockPermutation.md) for this type which uses the default values for all properties.
 
 #### **Returns** [*BlockPermutation*](BlockPermutation.md) - Returns created permutation.
-
 > [!WARNING]
 > This function can throw errors.
-
-#### **Examples**
-##### *place_bottom_stone_slab.js*
-```javascript
-import { world, MinecraftBlockTypes, BlockProperties, BlockLocation } from "mojang-minecraft";
-// Create the permutation
-let bottomStoneSlab = MinecraftBlockTypes.stoneSlab.createDefaultBlockPermutation();
-bottomStoneSlab.getProperty(BlockProperties.stoneSlabType).value = "stone_brick";
-bottomStoneSlab.getProperty(BlockProperties.topSlotBit).value = false;
-// Fetch the block
-const block = world.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3));
-// Set the permutation
-block.setPermutation(bottomStoneSlab);
-```

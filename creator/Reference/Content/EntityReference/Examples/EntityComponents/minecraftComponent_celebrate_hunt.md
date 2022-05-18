@@ -47,7 +47,26 @@ ms.prod: gaming
 
 ### piglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="194-211":::
+```json
+"minecraft:celebrate_hunt": {
+    "celebration_targets": {
+    "all_of": [
+        {
+        "test": "is_family",
+        "value": "hoglin"
+        }
+    ]
+    },
+    "broadcast": true,
+    "duration": 10,
+    "celebrate_sound": "celebrate",
+    "sound_interval": {
+        "range_min": 2.0,
+        "range_max": 5.0
+    },
+    "radius": 16
+}
+```
 
 ## Vanilla entities using `minecraft:celebrate_hunt`
 

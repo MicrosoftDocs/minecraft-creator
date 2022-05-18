@@ -26,8 +26,6 @@ Adds a callback that will be called when a block is placed by a player.
 - **callback**: (arg: [*BlockPlaceEvent*](BlockPlaceEvent.md)) => *void*
 
 #### **Returns** (arg: [*BlockPlaceEvent*](BlockPlaceEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: BlockPlaceEvent) => void): void
@@ -36,8 +34,5 @@ unsubscribe(callback: (arg: BlockPlaceEvent) => void): void
 Removes a callback from being called when an block is placed.
 #### **Parameters**
 - **callback**: (arg: [*BlockPlaceEvent*](BlockPlaceEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

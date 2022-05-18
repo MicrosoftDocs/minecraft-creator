@@ -30,8 +30,6 @@ new ModalFormData()
 Creates a new modal form builder.
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
-
-
 ### **dropdown**
 `
 dropdown(label: string, options: string[], defaultValueIndex?: number): ModalFormData
@@ -44,8 +42,6 @@ Adds a dropdown with choices to the form.
 - **defaultValueIndex**?: *number* = `null`
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
-
-
 ### **icon**
 `
 icon(iconPath: string): ModalFormData
@@ -56,8 +52,6 @@ Adds an icon to the form using a graphic resource from a resource pack.
 - **iconPath**: *string*
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
-
-
 ### **show**
 `
 show(player: mojang-minecraft.Player): Promise<ModalFormResponse>
@@ -70,10 +64,8 @@ Creates and shows this modal popup form. Returns asynchronously when the player 
   Player to show this dialog to.
 
 #### **Returns** Promise&lt;[*ModalFormResponse*](ModalFormResponse.md)&gt;
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **slider**
 `
 slider(label: string, minimumValue: number, maximumValue: number, valueStep: number, defaultValue?: number): ModalFormData
@@ -88,8 +80,6 @@ Adds a numeric slider to the form.
 - **defaultValue**?: *number* = `null`
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
-
-
 ### **textField**
 `
 textField(label: string, placeholderText: string, defaultValue?: string): ModalFormData
@@ -102,8 +92,6 @@ Adds a textbox to the form.
 - **defaultValue**?: *string* = `null`
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
-
-
 ### **title**
 `
 title(titleText: string): ModalFormData
@@ -114,8 +102,6 @@ This builder method sets the title for the modal dialog.
 - **titleText**: *string*
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
-
-
 ### **toggle**
 `
 toggle(label: string, defaultValue?: boolean): ModalFormData
@@ -127,5 +113,3 @@ Adds a toggle checkbox button to the form.
 - **defaultValue**?: *boolean* = `null`
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
-
-

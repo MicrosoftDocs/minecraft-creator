@@ -20,4 +20,3 @@ Entity that was hit.
 
 Type: [*Entity*](Entity.md)
 
-

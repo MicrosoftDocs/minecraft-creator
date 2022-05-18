@@ -20,12 +20,10 @@ Whether the navigation result contains a full path, including to the requested d
 
 Type: *boolean*
 
-
 ### **path**
 `read-only path: BlockLocation[];`
 
 A set of block locations that comprise the navigation route.
 
 Type: [*BlockLocation*](BlockLocation.md)[]
-
 

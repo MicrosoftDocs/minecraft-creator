@@ -24,8 +24,6 @@ description: Contents of the mojang-minecraft.EntityTypeIterator class.
 
 
 #### **Returns** Iterator&lt;[*EntityType*](EntityType.md)&gt;
-
-
 ### **next**
 `
 next(): IteratorResult<EntityType>
@@ -33,5 +31,3 @@ next(): IteratorResult<EntityType>
 
 
 #### **Returns** IteratorResult&lt;[*EntityType*](EntityType.md)&gt;
-
-

@@ -23,12 +23,10 @@ Identifier of this component. Should always be minecraft:push_through.
 
 Type: *string*
 
-
 ### **value**
 `value: number;`
 
 The value of the entity's push-through, in blocks.
 
 Type: *number*
-
 

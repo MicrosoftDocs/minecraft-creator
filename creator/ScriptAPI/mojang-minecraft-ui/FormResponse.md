@@ -25,4 +25,3 @@ If true, the form was canceled by the player (e.g., they selected the pop-up X c
 
 Type: *boolean*
 
-

@@ -20,14 +20,12 @@ If true, the player can always eat this item (even when not hungry).
 
 Type: *boolean*
 
-
 ### **id**
 `read-only id: string;`
 
 Identifier of this component. Should always be 'minecraft:food'.
 
 Type: *string*
-
 
 ### **nutrition**
 `read-only nutrition: number;`
@@ -36,7 +34,6 @@ Represents how much nutrition this food item will give an entity when eaten.
 
 Type: *number*
 
-
 ### **saturationModifier**
 `read-only saturationModifier: number;`
 
@@ -44,12 +41,10 @@ When an item is eaten, this value is used according to this formula (nutrition *
 
 Type: *number*
 
-
 ### **usingConvertsTo**
 `read-only usingConvertsTo: string;`
 
 When specified, converts the active item to the one specified by this property.
 
 Type: *string*
-
 

@@ -23,7 +23,6 @@ Read-only. Returns the current value of health for the entity.
 
 Type: *number*
 
-
 ### **id**
 `read-only id: string;`
 
@@ -31,14 +30,12 @@ Identifier of this component. Should always be minecraft:health.
 
 Type: *string*
 
-
 ### **value**
 `read-only value: number;`
 
 Value for health as defined through entity components.
 
 Type: *number*
-
 
 
 ## Methods
@@ -53,33 +50,24 @@ resetToDefaultValue(): void
 `
 
 Resets the current health value of the entity to its default value.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **resetToMaxValue**
 `
 resetToMaxValue(): void
 `
 
 Resets the current health of the entity to its maximum value.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **resetToMinValue**
 `
 resetToMinValue(): void
 `
 
 Resets the current health to the minimum value.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **setCurrent**
 `
 setCurrent(value: number): void
@@ -88,8 +76,5 @@ setCurrent(value: number): void
 Sets the current health of the entity.
 #### **Parameters**
 - **value**: *number*
-
-
 > [!WARNING]
 > This function can throw errors.
-

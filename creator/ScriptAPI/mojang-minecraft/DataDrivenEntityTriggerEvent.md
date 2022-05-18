@@ -20,7 +20,6 @@ Entity that the event triggered on.
 
 Type: [*Entity*](Entity.md)
 
-
 ### **id**
 `read-only id: string;`
 
@@ -28,12 +27,10 @@ Name of the data driven event being triggered.
 
 Type: *string*
 
-
 ### **modifiers**
 `read-only modifiers: DefinitionModifier[];`
 
 A list of modifications to component state that are the effect of this triggered event.
 
 Type: [*DefinitionModifier*](DefinitionModifier.md)[]
-
 

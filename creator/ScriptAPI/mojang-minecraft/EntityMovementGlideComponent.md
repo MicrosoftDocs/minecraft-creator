@@ -23,14 +23,12 @@ Identifier of this component. Should always be minecraft:movement.glide.
 
 Type: *string*
 
-
 ### **maxTurn**
 `read-only maxTurn: number;`
 
 The maximum number in degrees the mob can turn per tick.
 
 Type: *number*
-
 
 ### **speedWhenTurning**
 `read-only speedWhenTurning: number;`
@@ -39,12 +37,10 @@ Speed in effect when the entity is turning.
 
 Type: *number*
 
-
 ### **startSpeed**
 `read-only startSpeed: number;`
 
 Start speed during a glide.
 
 Type: *number*
-
 

@@ -27,7 +27,18 @@ Adds a callback that will be called when a new entity is created.
 
 #### **Returns** (arg: [*EntityCreateEvent*](EntityCreateEvent.md)) => *void*
 
-
+#### **Examples**
+##### *runEntityCreatedEvent.ts*
+```javascript
+  // register a new function that is called when a new entity is created.
+  const entityCreatedCallback = mc.world.events.entityCreate.subscribe((entityEvent: mc.EntityCreateEvent) => {
+    if (entityEvent && entityEvent.entity) {
+      log("New entity of type '" + +entityEvent.entity + "' created!", 1);
+    } else {
+      log("The entity event didn't work as expected.", -1);
+    }
+  });
+```
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: EntityCreateEvent) => void): void
@@ -36,8 +47,16 @@ unsubscribe(callback: (arg: EntityCreateEvent) => void): void
 Removes a callback from being called when a new entity is created.
 #### **Parameters**
 - **callback**: (arg: [*EntityCreateEvent*](EntityCreateEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
 
+#### **Examples**
+##### *unsubscribeEntityCreatedEvent.ts*
+```javascript
+  if (entityCreatedCallbacks.length > 0) {
+    let callback = entityCreatedCallbacks.pop();
+    if (callback) {
+      mc.world.events.entityCreate.unsubscribe(callback);
+    }
+  }
+```

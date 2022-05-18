@@ -23,4 +23,3 @@ Identifier of this component. Should always be minecraft:floats_in_liquid.
 
 Type: *string*
 
-

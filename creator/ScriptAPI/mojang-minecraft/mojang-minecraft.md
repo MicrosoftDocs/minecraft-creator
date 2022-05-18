@@ -10,21 +10,7 @@ description: Contents of the mojang-minecraft module
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
-Contains information related to changes to a piston expanding or retracting.
-
-#### **Examples**
-##### *place_bottom_stone_slab.js*
-```javascript
-import { world, MinecraftBlockTypes, BlockProperties, BlockLocation } from "mojang-minecraft";
-// Create the permutation
-let bottomStoneSlab = MinecraftBlockTypes.stoneSlab.createDefaultBlockPermutation();
-bottomStoneSlab.getProperty(BlockProperties.stoneSlabType).value = "stone_brick";
-bottomStoneSlab.getProperty(BlockProperties.topSlotBit).value = false;
-// Fetch the block
-const block = world.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3));
-// Set the permutation
-block.setPermutation(bottomStoneSlab);
-```
+Contains many types related to manipulating a Minecraft world, including entities, blocks, dimensions, and more.
 
 ## Manifest Details
 ```json
@@ -38,6 +24,7 @@ block.setPermutation(bottomStoneSlab);
 ## Enumerations
 - [Direction](Direction.md)
 - [GameMode](GameMode.md)
+- [ScoreboardIdentityType](ScoreboardIdentityType.md)
 
 ## Classes
 - [BeforeChatEvent](BeforeChatEvent.md)
@@ -79,9 +66,12 @@ block.setPermutation(bottomStoneSlab);
 - [BlockType](BlockType.md)
 - [BlockWaterContainerComponent](BlockWaterContainerComponent.md)
 - [BoolBlockProperty](BoolBlockProperty.md)
+- [ButtonPushEvent](ButtonPushEvent.md)
+- [ButtonPushEventSignal](ButtonPushEventSignal.md)
 - [ChatEvent](ChatEvent.md)
 - [ChatEventSignal](ChatEventSignal.md)
 - [Color](Color.md)
+- [CommandResult](CommandResult.md)
 - [Container](Container.md)
 - [DataDrivenEntityTriggerEvent](DataDrivenEntityTriggerEvent.md)
 - [DataDrivenEntityTriggerEventSignal](DataDrivenEntityTriggerEventSignal.md)
@@ -210,7 +200,7 @@ block.setPermutation(bottomStoneSlab);
 - [ItemUseOnEvent](ItemUseOnEvent.md)
 - [ItemUseOnEventSignal](ItemUseOnEventSignal.md)
 - [LeverActionEvent](LeverActionEvent.md)
-- [LeverActivateEventSignal](LeverActivateEventSignal.md)
+- [LeverActionEventSignal](LeverActionEventSignal.md)
 - [Location](Location.md)
 - [MinecraftBlockTypes](MinecraftBlockTypes.md)
 - [MinecraftDimensionTypes](MinecraftDimensionTypes.md)
@@ -224,7 +214,6 @@ block.setPermutation(bottomStoneSlab);
 - [NumberRange](NumberRange.md)
 - [PistonActivateEvent](PistonActivateEvent.md)
 - [PistonActivateEventSignal](PistonActivateEventSignal.md)
-- [PitchYawRotation](PitchYawRotation.md)
 - [Player](Player.md)
 - [PlayerInventoryComponentContainer](PlayerInventoryComponentContainer.md)
 - [PlayerIterator](PlayerIterator.md)
@@ -235,8 +224,11 @@ block.setPermutation(bottomStoneSlab);
 - [ProjectileHitEvent](ProjectileHitEvent.md)
 - [ProjectileHitEventSignal](ProjectileHitEventSignal.md)
 - [PropertyRegistry](PropertyRegistry.md)
+- [Scoreboard](Scoreboard.md)
+- [ScoreboardIdentity](ScoreboardIdentity.md)
+- [ScoreboardObjective](ScoreboardObjective.md)
+- [ScoreboardScoreInfo](ScoreboardScoreInfo.md)
 - [ScreenDisplay](ScreenDisplay.md)
-- [SculkSpreader](SculkSpreader.md)
 - [Seat](Seat.md)
 - [SoundOptions](SoundOptions.md)
 - [StringBlockProperty](StringBlockProperty.md)
@@ -250,6 +242,7 @@ block.setPermutation(bottomStoneSlab);
 - [World](World.md)
 - [WorldInitializeEvent](WorldInitializeEvent.md)
 - [WorldInitializeEventSignal](WorldInitializeEventSignal.md)
+- [XYRotation](XYRotation.md)
 
 ## Constants
 ### **TicksPerSecond**
@@ -260,7 +253,6 @@ How many times the server ticks per second of real time.
 Type: *number*
 
 
-
 ## Objects
 ### **world**
 `static read-only world: World;`
@@ -268,5 +260,4 @@ Type: *number*
 A class that wraps the state of a world - a set of dimensions and the environment of Minecraft.
 
 Type: [*World*](World.md)
-
 
