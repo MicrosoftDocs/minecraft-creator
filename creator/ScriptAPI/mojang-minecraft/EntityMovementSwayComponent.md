@@ -23,14 +23,12 @@ Identifier of this component. Should always be minecraft:movement.sway.
 
 Type: *string*
 
-
 ### **maxTurn**
 `read-only maxTurn: number;`
 
 The maximum number in degrees the mob can turn per tick.
 
 Type: *number*
-
 
 ### **swayAmplitude**
 `read-only swayAmplitude: number;`
@@ -39,12 +37,10 @@ Amplitude of the sway motion.
 
 Type: *number*
 
-
 ### **swayFrequency**
 `read-only swayFrequency: number;`
 
 Amount of sway frequency.
 
 Type: *number*
-
 

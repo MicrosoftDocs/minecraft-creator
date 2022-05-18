@@ -21,3 +21,19 @@ Item stack represented by this entity in the world.
 Type: [*ItemStack*](ItemStack.md)
 
 
+#### **Examples**
+##### *testThatEntityIsFeatherItem.ts*
+```javascript
+  const query = new mc.EntityQueryOptions();
+  query.type = "item";
+  query.location = targetLocation;
+  const items = overworld.getEntities(query);
+  for (const item of items) {
+    const itemComp = item.getComponent("item") as any;
+    if (itemComp) {
+      if (itemComp.itemStack.id.endsWith("feather")) {
+        console.log("Success! Found a feather", 1);
+      }
+    }
+  }
+```

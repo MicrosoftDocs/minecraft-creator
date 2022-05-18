@@ -21,7 +21,6 @@ Event name of the trigger.
 Type: *string*
 
 
-
 ## Methods
 - [constructor](#constructor)
   
@@ -34,5 +33,3 @@ new Trigger(eventName: string)
 - **eventName**: *string*
 
 #### **Returns** [*Trigger*](Trigger.md)
-
-

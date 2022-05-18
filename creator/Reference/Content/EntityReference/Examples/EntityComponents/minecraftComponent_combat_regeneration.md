@@ -31,7 +31,9 @@ ms.prod: gaming
 
 ### axolotl
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/axolotl.json" range="209":::
+```json
+"minecraft:combat_regeneration": {}
+```
 
 ## Vanilla Mobs using `minecraft:combat_regeneration`
 

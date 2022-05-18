@@ -23,7 +23,6 @@ If true, the form was canceled by the player (e.g., they selected the pop-up X c
 
 Type: *boolean*
 
-
 ### **selection**
 `read-only selection: number;`
 
@@ -32,3 +31,45 @@ Returns the index of the button that was pushed.
 Type: *number*
 
 
+#### **Examples**
+##### *showActionForm.ts*
+```javascript
+  const players = mc.world.getPlayers();
+  const playerList = Array.from(players);
+  if (playerList.length >= 1) {
+    const form = new mcui.ActionFormData()
+      .title("Test Title")
+      .body("Body text here!")
+      .button("btn 1")
+      .button("btn 2")
+      .button("btn 3")
+      .button("btn 4")
+      .button("btn 5");
+    const result = await form.show(playerList[0]);
+    if (result.isCanceled) {
+      log("Player exited out of the dialog.");
+    } else {
+      log("Your result was: " + result.selection);
+    }
+  }
+```
+##### *showFavoriteMonth.ts*
+```javascript
+  const players = mc.world.getPlayers();
+  const playerList = Array.from(players);
+  if (playerList.length >= 1) {
+    const form = new mcui.ActionFormData()
+      .title("Months")
+      .body("Choose your favorite month!")
+      .button("January")
+      .button("February")
+      .button("March")
+      .button("April")
+      .button("May");
+    form.show(playerList[0]).then((response: mcui.ActionFormResponse) => {
+      if (response.selection === 3) {
+        log("I like April too!");
+      }
+    });
+  }
+```

@@ -20,14 +20,12 @@ Message that is being broadcast. In a beforeChat event handler, _message_ can be
 
 Type: *string*
 
-
 ### **sender**
 `sender: Player;`
 
 Player that sent the chat message.
 
 Type: [*Player*](Player.md)
-
 
 ### **sendToTargets**
 `sendToTargets: boolean;`
@@ -36,12 +34,10 @@ If true, this message is directly targeted to one or more players (i.e., is not 
 
 Type: *boolean*
 
-
 ### **targets**
 `targets: Player[];`
 
 List of players that will receive this message.
 
 Type: [*Player*](Player.md)[]
-
 

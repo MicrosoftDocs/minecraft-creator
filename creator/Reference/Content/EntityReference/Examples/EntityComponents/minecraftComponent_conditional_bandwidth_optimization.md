@@ -57,7 +57,15 @@ ms.prod: gaming
 
 ### fireworks_rocket
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fireworks_rocket.json" range="21-27":::
+```json
+"minecraft:conditional_bandwidth_optimization": {
+    "default_values": {
+        "max_optimized_distance": 80.0,
+        "max_dropped_ticks": 10,
+        "use_motion_prediction_hints": true
+    }
+}
+```
 
 ## Vanilla entities using `minecraft:conditional_bandwidth_optimization`
 

@@ -32,9 +32,9 @@ ms.prod: gaming
     "big_wave_speed": 10.0,
     "drag_down_on_buoyancy_removed": 0.0,
     "liquid_blocks": [
-            "minecraft:water",
-            "minecraft:flowing_water"
-          ]
+        "minecraft:water",
+        "minecraft:flowing_water"
+    ]
 }
 ```
 
@@ -42,7 +42,19 @@ ms.prod: gaming
 
 ### boat
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/boat.json" range="13-23":::
+```json
+"minecraft:buoyant": {
+    "base_buoyancy": 1.0,
+    "apply_gravity": true,
+    "simulate_waves": true,
+    "big_wave_probability": 0.03,
+    "big_wave_speed": 10.0,
+    "liquid_blocks": [
+        "minecraft:water",
+        "minecraft:flowing_water"
+    ]
+}
+```
 
 ## Vanilla entities using `minecraft:buoyant`
 

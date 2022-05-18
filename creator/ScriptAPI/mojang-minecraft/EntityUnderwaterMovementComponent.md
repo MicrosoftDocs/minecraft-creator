@@ -23,7 +23,6 @@ Read-only. Returns the current value of movement speed underwater for the entity
 
 Type: *number*
 
-
 ### **id**
 `read-only id: string;`
 
@@ -31,14 +30,12 @@ Identifier of this component. Should always be minecraft:underwater_movement.
 
 Type: *string*
 
-
 ### **value**
 `read-only value: number;`
 
 Value for movement speed underwater as defined through entity components.
 
 Type: *number*
-
 
 
 ## Methods
@@ -53,33 +50,24 @@ resetToDefaultValue(): void
 `
 
 Resets the current movement speed underwater for the entity to the default value implied by the current component state of the entity.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **resetToMaxValue**
 `
 resetToMaxValue(): void
 `
 
 Resets the movement speed underwater to the maximum value for the entity, as determined by the set of components that are on the entity.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **resetToMinValue**
 `
 resetToMinValue(): void
 `
 
 Resets the movement speed underwater to the minimum value as defined by the component state of this entity.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **setCurrent**
 `
 setCurrent(value: number): void
@@ -88,8 +76,5 @@ setCurrent(value: number): void
 Sets the current value of movement speed underwater for the entity.
 #### **Parameters**
 - **value**: *number*
-
-
 > [!WARNING]
 > This function can throw errors.
-

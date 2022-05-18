@@ -20,14 +20,12 @@ Returns a collection of the enchantments applied to this item stack.
 
 Type: [*EnchantmentList*](EnchantmentList.md)
 
-
 ### **id**
 `read-only id: string;`
 
 Identifier of this component.
 
 Type: *string*
-
 
 
 ## Methods
@@ -39,8 +37,5 @@ removeAllEnchantments(): void
 `
 
 Removes all enchantments applied to this item stack.
-
-
 > [!WARNING]
 > This function can throw errors.
-

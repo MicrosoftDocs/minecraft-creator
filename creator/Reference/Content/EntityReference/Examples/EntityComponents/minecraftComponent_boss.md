@@ -31,7 +31,12 @@ ms.prod: gaming
 
 ### wither
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither.json" range="21-24":::
+```json
+"minecraft:boss": {
+    "should_darken_sky": true,
+    "hud_range": 55
+}
+```
 
 ## Vanilla entities using `minecraft:boss`
 

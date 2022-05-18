@@ -23,7 +23,6 @@ Read-only. Returns the current value of movement speed on lava for the entity.
 
 Type: *number*
 
-
 ### **id**
 `read-only id: string;`
 
@@ -31,14 +30,12 @@ Identifier of this component. Should always be minecraft:lava_movement.
 
 Type: *string*
 
-
 ### **value**
 `read-only value: number;`
 
 Value for movement speed on lava as defined through entity components.
 
 Type: *number*
-
 
 
 ## Methods
@@ -53,33 +50,24 @@ resetToDefaultValue(): void
 `
 
 Resets the current movement speed on lava for the entity to its default value.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **resetToMaxValue**
 `
 resetToMaxValue(): void
 `
 
 Resets the movement speed on lava to the maximum value for the entity.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **resetToMinValue**
 `
 resetToMinValue(): void
 `
 
 Resets the movement speed on lava speed to the minimum value.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **setCurrent**
 `
 setCurrent(value: number): void
@@ -88,8 +76,5 @@ setCurrent(value: number): void
 Sets the current value of movement speed on lava for the entity.
 #### **Parameters**
 - **value**: *number*
-
-
 > [!WARNING]
 > This function can throw errors.
-

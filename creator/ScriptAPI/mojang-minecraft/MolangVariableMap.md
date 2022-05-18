@@ -26,8 +26,6 @@ new MolangVariableMap()
 
 
 #### **Returns** [*MolangVariableMap*](MolangVariableMap.md)
-
-
 ### **setColorRGB**
 `
 setColorRGB(variableName: string, color: Color): MolangVariableMap
@@ -39,8 +37,6 @@ Sets a Molang rendering/animation variable with the value of a Red/Green/Blue co
 - **color**: [*Color*](Color.md)
 
 #### **Returns** [*MolangVariableMap*](MolangVariableMap.md)
-
-
 ### **setColorRGBA**
 `
 setColorRGBA(variableName: string, color: Color): MolangVariableMap
@@ -52,8 +48,6 @@ Sets a Molang rendering/animation variable with the value of a Red/Green/Blue co
 - **color**: [*Color*](Color.md)
 
 #### **Returns** [*MolangVariableMap*](MolangVariableMap.md)
-
-
 ### **setSpeedAndDirection**
 `
 setSpeedAndDirection(variableName: string, speed: number, direction: Vector): MolangVariableMap
@@ -66,8 +60,6 @@ Sets the speed and direction for a Molang (rendering and animation) variable.
 - **direction**: [*Vector*](Vector.md)
 
 #### **Returns** [*MolangVariableMap*](MolangVariableMap.md)
-
-
 ### **setVector3**
 `
 setVector3(variableName: string, vector: Vector): MolangVariableMap
@@ -79,5 +71,3 @@ Sets a vector value for a Molang (rendering and animation) variable.
 - **vector**: [*Vector*](Vector.md)
 
 #### **Returns** [*MolangVariableMap*](MolangVariableMap.md)
-
-

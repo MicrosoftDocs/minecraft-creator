@@ -20,7 +20,6 @@ Specifies a fade overlap for music at the end of play.
 
 Type: *number*
 
-
 ### **loop**
 `loop: boolean;`
 
@@ -28,14 +27,12 @@ If set to true, this music track will play repeatedly.
 
 Type: *boolean*
 
-
 ### **volume**
 `volume: number;`
 
 Relative volume level of the music.
 
 Type: *number*
-
 
 
 ## Methods
@@ -49,5 +46,3 @@ new MusicOptions()
 Creates a new instance of the SoundOptions object.
 
 #### **Returns** [*MusicOptions*](MusicOptions.md)
-
-

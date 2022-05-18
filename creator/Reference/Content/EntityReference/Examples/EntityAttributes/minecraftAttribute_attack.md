@@ -34,11 +34,21 @@ ms.prod: gaming
 
 ### zombie
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="169-171":::
+```json
+"minecraft:attack": {
+    "damage": 3
+}
+```
 
 ### wither_skeleton
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither_skeleton.json" range="34-38":::
+```json
+"minecraft:attack": {
+    "damage": 4,
+    "effect_name": "wither",
+    "effect_duration": 10
+}
+```
 
 ## Vanilla entities using `minecraft:attack`
 

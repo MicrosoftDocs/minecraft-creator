@@ -20,7 +20,6 @@ Represents the cooldown category that this item is associated with.
 
 Type: *string*
 
-
 ### **cooldownTicks**
 `read-only cooldownTicks: number;`
 
@@ -28,14 +27,12 @@ Amount of time, in ticks, that remain for this item cooldown.
 
 Type: *number*
 
-
 ### **id**
 `read-only id: string;`
 
 Identifier of this component. Should always be 'minecraft:cooldown'.
 
 Type: *string*
-
 
 
 ## Methods
@@ -49,8 +46,5 @@ startCooldown(player: Player): void
 Starts a new cooldown period for this item.
 #### **Parameters**
 - **player**: [*Player*](Player.md)
-
-
 > [!WARNING]
 > This function can throw errors.
-

@@ -26,8 +26,6 @@ Adds a callback that will be called when weather changes.
 - **callback**: (arg: [*WeatherChangeEvent*](WeatherChangeEvent.md)) => *void*
 
 #### **Returns** (arg: [*WeatherChangeEvent*](WeatherChangeEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: WeatherChangeEvent) => void): void
@@ -36,8 +34,5 @@ unsubscribe(callback: (arg: WeatherChangeEvent) => void): void
 Removes a callback from being called when weather changes.
 #### **Parameters**
 - **callback**: (arg: [*WeatherChangeEvent*](WeatherChangeEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

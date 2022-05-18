@@ -18,34 +18,28 @@ Represents a direction for expressing relative position or facing.
 
 Represents an object located or facing in the down (z - 1) direction.
 
-
 ### **up**
 `up = 1`
 
 Represents an object located or facing in the up (z + 1) direction.
-
 
 ### **north**
 `north = 2`
 
 Represents an object located or facing in the north (z - 1) direction.
 
-
 ### **south**
 `south = 3`
 
 Represents an object located or facing in the south (z + 1) direction.
-
 
 ### **west**
 `west = 4`
 
 Represents an object located or facing in the west (x - 1) direction.
 
-
 ### **east**
 `east = 5`
 
 Represents an object located or facing in the east (x + 1) direction.
-
 

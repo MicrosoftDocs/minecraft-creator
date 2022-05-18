@@ -23,12 +23,10 @@ Identifier of this component. Should always be minecraft:flying_speed.
 
 Type: *string*
 
-
 ### **value**
 `value: number;`
 
 Speed while flying value of the entity.
 
 Type: *number*
-
 

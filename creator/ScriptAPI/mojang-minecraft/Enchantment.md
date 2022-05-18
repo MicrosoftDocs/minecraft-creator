@@ -20,14 +20,12 @@ The level of this enchantment instance.
 
 Type: *number*
 
-
 ### **type**
 `read-only type: EnchantmentType;`
 
 The enchantment type of this instance.
 
 Type: [*EnchantmentType*](EnchantmentType.md)
-
 
 
 ## Methods
@@ -43,5 +41,3 @@ new Enchantment(enchantmentType: EnchantmentType, level?: number)
 - **level**?: *number* = `1`
 
 #### **Returns** [*Enchantment*](Enchantment.md)
-
-

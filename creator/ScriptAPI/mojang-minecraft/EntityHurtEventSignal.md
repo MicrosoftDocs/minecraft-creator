@@ -27,8 +27,6 @@ Adds a callback that will be called when an entity is hurt.
 - **options**?: [*EntityEventOptions*](EntityEventOptions.md) = `null`
 
 #### **Returns** (arg: [*EntityHurtEvent*](EntityHurtEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: EntityHurtEvent) => void): void
@@ -37,8 +35,5 @@ unsubscribe(callback: (arg: EntityHurtEvent) => void): void
 Removes a callback from being called when an entity is hurt.
 #### **Parameters**
 - **callback**: (arg: [*EntityHurtEvent*](EntityHurtEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

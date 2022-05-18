@@ -29,7 +29,11 @@ ms.prod: gaming
 
 ### dolphin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/dolphin.json" range="18-20":::
+```json
+"minecraft:bribeable": {
+    "bribe_items": [ "fish", "salmon" ]
+}
+```
 
 ## Vanilla entities using `minecraft:bribeable`
 

@@ -32,7 +32,17 @@ ms.prod: gaming
 
 ### hoglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/hoglin.json" range="73-79":::
+```json
+"attack_cooldown": {
+    "minecraft:attack_cooldown": {
+        "attack_cooldown_time": [ 10.0, 15.0 ],
+        "attack_cooldown_complete_event": {
+            "event": "attack_cooldown_complete_event",
+            "target": "self"
+        }
+    }
+}
+```
 
 ## Vanilla entities using `minecraft:attack_cooldown`
 

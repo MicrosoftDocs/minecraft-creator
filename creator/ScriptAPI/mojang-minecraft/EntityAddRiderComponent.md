@@ -23,7 +23,6 @@ The type of entity that is added as a rider for this entity when spawned under c
 
 Type: *string*
 
-
 ### **id**
 `read-only id: string;`
 
@@ -31,12 +30,10 @@ Identifier of this component. Should always be minecraft:addrider.
 
 Type: *string*
 
-
 ### **spawnEvent**
 `read-only spawnEvent: string;`
 
 Optional spawn event to trigger on the rider when that rider is spawned for this entity.
 
 Type: *string*
-
 

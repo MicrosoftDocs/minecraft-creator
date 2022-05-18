@@ -20,14 +20,12 @@ Maximum value within a range.
 
 Type: *number*
 
-
 ### **min**
 `min: number;`
 
 Minimum value within a range.
 
 Type: *number*
-
 
 
 ## Methods
@@ -41,5 +39,3 @@ next(): number
 Returns a random number between the minimum and maximum of the range.
 
 #### **Returns** *number*
-
-

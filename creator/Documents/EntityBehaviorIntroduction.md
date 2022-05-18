@@ -107,7 +107,7 @@ Almost all components are defined as a JSON object. Most components have options
 
 ### How to Learn Components
 
-A full list of available components can be found [here](/creator/Reference/Content/EntityReference/Examples/ComponentList.md).
+A full list of available components can be found [here](/minecraft/creator/reference/content/entityreference/examples/componentlist).
 
 A good way to learn about a component and see how it's used in practice is to look at the behavior files of default Minecraft entities. You can always find the latest default behavior pack at this URL: https://aka.ms/behaviorpacktemplate.
 
@@ -123,8 +123,8 @@ A good way to learn about a component and see how it's used in practice is to lo
 |`minecraft:collision_box`|`width` `height`|Sets the collision box of the entity. Only the `width` and `height` can be changed. The collision box always has a square base that's aligned to the world axes.|
 |`minecraft:type_family`|`family`|Sets a list of type families that the entity is in. Type families can be tested by other entities. For example, to test which mobs they are hostile towards.|
 |`minecraft:movement`|`value`|Sets the movement speed of the entity. 0.25 is the regular speed of most animals in Minecraft.|
-|`minecraft:movement.basic`|[See documentation](/creator/Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_movement.basic.md)|Allows the entity to move around on the ground.|
-|`minecraft:navigation.walk`|[See documentation](/creator/Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_navigation.walk.md)|Allows the entity to navigate through the world by walking. There are other types of navigation as well, like hovering.|
+|`minecraft:movement.basic`|[See documentation](/minecraft/creator/reference/content/entityreference/examples/entitycomponents/minecraftcomponent_movement.basic)|Allows the entity to move around on the ground.|
+|`minecraft:navigation.walk`|[See documentation](/minecraft/creator/reference/content/entityreference/examples/entitycomponents/minecraftcomponent_navigation.walk)|Allows the entity to navigate through the world by walking. There are other types of navigation as well, like hovering.|
 |`minecraft:is_baby`<br>`minecraft:is_ignited`<br>`minecraft:is_saddled`<br>`minecraft:is_sheared`<br>`minecraft:is_tamed`<br>`minecraft:is_illager_captain`<br>|:---|These components don’t do anything on their own, but they can be queried in animations, animation controllers, or render controllers, allowing you to control animations and other visuals from the entity behavior.|
 |`minecraft:variant`<br>`minecraft:mark_variant`<br>`minecraft:skin_id`|`value`|These components work like the ones above, but instead of only storing an on/off state, they can store an integer value.|
 

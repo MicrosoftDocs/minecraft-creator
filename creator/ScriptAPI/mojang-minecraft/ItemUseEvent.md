@@ -20,12 +20,10 @@ The impacted item stack that is being used.
 
 Type: [*ItemStack*](ItemStack.md)
 
-
 ### **source**
 `read-only source: Entity;`
 
 Returns the source entity that triggered this item event.
 
 Type: [*Entity*](Entity.md)
-
 

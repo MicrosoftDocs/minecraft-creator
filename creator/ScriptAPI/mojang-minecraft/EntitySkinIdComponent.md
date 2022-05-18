@@ -23,12 +23,10 @@ Identifier of this component. Should always be minecraft:skin_id.
 
 Type: *string*
 
-
 ### **value**
 `value: number;`
 
 The identifier of the skin. By convention, 0 is the identifier of the base skin.
 
 Type: *number*
-
 

@@ -20,4 +20,3 @@ Player that has joined the world.
 
 Type: [*Player*](Player.md)
 
-

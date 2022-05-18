@@ -20,14 +20,12 @@ If set to true, cancels the explosion event.
 
 Type: *boolean*
 
-
 ### **dimension**
 `read-only dimension: Dimension;`
 
 Dimension where the explosion has occurred.
 
 Type: [*Dimension*](Dimension.md)
-
 
 ### **impactedBlocks**
 `impactedBlocks: BlockLocation[];`
@@ -36,12 +34,10 @@ A collection of blocks impacted by this explosion event. Note that this property
 
 Type: [*BlockLocation*](BlockLocation.md)[]
 
-
 ### **source**
 `read-only source: Entity;`
 
 Optional source of the explosion.
 
 Type: [*Entity*](Entity.md)
-
 

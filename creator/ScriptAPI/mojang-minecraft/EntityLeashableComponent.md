@@ -23,14 +23,12 @@ Identifier of this component. Should always be minecraft:leashable.
 
 Type: *string*
 
-
 ### **softDistance**
 `read-only softDistance: number;`
 
 Distance in blocks at which the 'spring' effect starts acting to keep this entity close to the entity that leashed it.
 
 Type: *number*
-
 
 
 ## Methods
@@ -47,19 +45,13 @@ Leashes this entity to another entity.
 - **leashHolder**: [*Entity*](Entity.md)
   
   The entity to leash this entity to.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **unleash**
 `
 unleash(): void
 `
 
 Unleashes this entity if it is leashed to another entity.
-
-
 > [!WARNING]
 > This function can throw errors.
-
