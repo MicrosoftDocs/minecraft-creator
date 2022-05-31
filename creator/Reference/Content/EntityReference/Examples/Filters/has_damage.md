@@ -39,6 +39,7 @@ Below is a list of damage types that can be used for the `value` string.
 | override|  |
 | piston|  |
 | projectile|  |
+| sonic_boom|  |
 | stalactite|  |
 | stalagmite|  |
 | starve|  |

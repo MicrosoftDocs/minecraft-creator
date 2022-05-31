@@ -27,6 +27,7 @@ ms.prod: gaming
 |swing| false| Boolean| If true, the player will do the 'swing' animation when interacting with this entity. |
 |transform_to_item|*not set* | String|  The item used will transform to this item upon successful interaction. Format: `itemName:auxValue` |
 |use_item| false| Boolean| If true, the interaction will use an item. |
+| vibration| entity_interact |String| Vibration to emit when the interaction occurs. Admitted values are entity_interact (used by default), shear, and none (no vibration emitted). |
 
 ### add_items
 

@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: JDHeaden
+ms.author: v-jillheaden
 title: Biome Documentation - Overview
 ms.prod: gaming
 ---
@@ -243,7 +243,7 @@ Biomes are read from JSON files in the biomes subfolders of behavior packs. Load
               block_reference "<any array element>"
           }
           block_reference "sea_material" // Material used to replace air blocks below sea level.
-          block_reference "foundation_material" // Material used to repalce solid blocks that are not surface blocks.
+          block_reference "foundation_material" // Material used to replace solid blocks that are not surface blocks.
           block_reference "beach_material" : opt // Material used to decorate surface near sea level.
       }
       object "minecraft:mountain_parameters"[0,3] : opt // Noise parameters used to drive mountain terrain generation in Overworld

@@ -1,6 +1,6 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: JDHeaden
+ms.author: v-jillheaden
 title: Molang Documentation - Query Functions
 ms.prod: gaming
 ---
@@ -27,6 +27,7 @@ Query Functions are operators that access a wide variety of information. They ca
 | query.all| Requires at least 3 arguments. Evaluates the first argument, then returns 1.0 if all of the following arguments evaluate to the same value as the first. Otherwise it returns 0.0. |
 | query.all_animations_finished| Only valid in an animation controller.  Returns 1.0 if all animations in the current animation controller state have played through at least once, else it returns 0.0 |
 | query.all_tags| Returns if the item or block has all of the tags specified |
+| query.anger_level| Returns the anger level of the actor [0,n). On errors or if the actor has no anger level, returns 0. Available on the Server only. |
 | query.anim_time| Returns the time in seconds since the current animation started, else 0.0 if not called within an animation |
 | query.any| Requires at least 3 arguments. Evaluates the first argument, then returns 1.0 if any of the following arguments evaluate to the same value as the first. Otherwise it returns 0.0. |
 | query.any_animation_finished| Only valid in an animation controller.  Returns 1.0 if any animation in the current animation controller state has played through at least once, else it returns 0.0 |
@@ -97,6 +98,8 @@ Query Functions are operators that access a wide variety of information. They ca
 | query.head_x_rotation| Takes one argument as a parameter.  Returns the nth head x rotation of the entity if it makes sense, else it returns 0.0 |
 | query.head_y_rotation| Takes one argument as a parameter.  Returns the nth head y rotation of the entity if it makes sense, else it returns 0.0 |
 | query.health| Returns the health of the entity, or 0.0 if it doesn't make sense to call on this entity. |
+| query.heartbeat_interval| Returns the heartbeat interval of the actor in seconds. Returns 0 when the actor has no heartbeat. |
+| query.heartbeat_phase| Returns the heartbeat phase of the actor. 0.0 if at start of current heartbeat, 1.0 if at the end. Returns 0 on errors or when the actor has no heartbeat. Available on the Client (Resource Packs) only. |
 | query.heightmap| Queries Height Map |
 | query.hurt_direction| returns the hurt direction for the actor, otherwise returns 0 |
 | query.hurt_time| returns the hurt time for the actor, otherwise returns 0 |
@@ -179,6 +182,8 @@ Query Functions are operators that access a wide variety of information. They ca
 | query.is_sleeping| Returns 1.0 if the entity is sleeping, else it returns 0.0 |
 | query.is_sneaking| Returns 1.0 if the entity is sneaking, else it returns 0.0 |
 | query.is_sneezing| Returns 1.0 if the entity is sneezing, else it returns 0.0 |
+| query.is_sniffing| Returns 1.0 if the entity is sniffing, else it returns 0.0 |
+| query.is_sonic_boom| Returns 1.0 if the entity is using sonic boom, else it returns 0.0 |
 | query.is_sprinting| Returns 1.0 if the entity is sprinting, else it returns 0.0 |
 | query.is_stackable| Returns 1.0 if the entity is stackable, else it returns 0.0 |
 | query.is_stalking| Returns 1.0 if the entity is stalking, else it returns 0.0 |
@@ -239,6 +244,9 @@ Query Functions are operators that access a wide variety of information. They ca
 | query.spellcolor| Returns a struct representing the entity spell color for the specified entity. The struct contains '.r' '.g' '.b' and '.a' members, each 0.0 to 1.0. If no actor is specified, each member value will be 0.0 |
 | query.standing_scale| Returns the scale of how standing up the entity is |
 | query.structural_integrity| returns the structural integrity for the actor, otherwise returns 0 |
+| query.surface_particle_color| Returns the particle color for the block located in the surface below the actor (scanned up to 10 blocks down). The struct contains '.r' '.g' '.b' and '.a' members, each 0.0 to 1.0. If no actor is specified or if no surface is found, each member value is set to 0.0. Available on the Client (Resource Packs) only. |
+| query.surface_particle_texture_coordinate| Returns the texture coordinate for generating particles for the block located in the surface below the actor (scanned up to 10 blocks down) in a struct with 'u' and 'v' keys. If no actor is specified or if no surface is found, u and v will be 0.0. Available on the Client (Resource Packs) only. |
+| query.surface_particle_texture_size| Returns the texture size for generating particles for the block located in the surface below the actor (scanned up to 10 blocks down). If no actor is specified or if no surface is found, each member value will be 0.0. Available on the Client (Resource Packs) only. |
 | query.swell_amount| Returns how swollen the entity is |
 | query.swelling_dir| Returns the swelling direction of the entity if it makes sense, else it returns 0.0 |
 | query.swim_amount| Returns the amount the current entity is swimming |
@@ -247,6 +255,7 @@ Query Functions are operators that access a wide variety of information. They ca
 | query.target_y_rotation| Returns the y rotation required to aim at the entity's current target if it has one, else it returns 0.0 |
 | query.texture_frame_index| Returns the icon index of the experience orb |
 | query.time_of_day| Returns the time of day (midnight=0.0, sunrise=0.25, noon=0.5, sunset=0.75) of the dimension the entity is in. |
+| query.time_since_last_vibration_detection| Returns the time in seconds since the last vibration detected by the actor. On errors or if no vibration has been detected yet, returns -1. Available on the Client (Resource Packs) only. |
 | query.time_stamp| Returns the current time stamp of the level |
 | query.total_emitter_count| Returns the total number of active emitters in the world |
 | query.total_particle_count| Returns the total number of active particles in the world |
