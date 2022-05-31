@@ -14,6 +14,7 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |event_name| ambient| String|  Level sound event to be played as the ambient sound. |
+|event_names| none | Array|  List of dynamic level sound events, with conditions for choosing among them. Evaluated in order, first one wins. If none evaluate to true, 'event_name' will take precedence. |
 |range| 16.000000|  Decimal| Maximum time in seconds to randomly add to the ambient sound delay time. |
 |value| 8.000000| Decimal|  Minimum time in seconds before the entity plays its ambient sound again. |
 

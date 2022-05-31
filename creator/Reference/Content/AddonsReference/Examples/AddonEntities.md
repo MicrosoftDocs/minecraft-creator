@@ -56,7 +56,6 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | eye_of_ender_signal| 70| 70 |
 | falling_block| 66| 66 |
 | fireball| 4194389| 85 |
-| firefly| 4999| 135 |
 | fireworks_rocket| 72| 72 |
 | fishing_hook| 77| 77 |
 | fox| 4985| 121 |
@@ -126,7 +125,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | villager_v2| 16778099| 115 |
 | vindicator| 2873| 57 |
 | wandering_trader| 886| 118 |
-| warden| 387| 131 |
+| warden| 2947| 131 |
 | witch| 2861| 45 |
 | wither| 68404| 52 |
 | wither_skeleton| 1116976| 48 |
