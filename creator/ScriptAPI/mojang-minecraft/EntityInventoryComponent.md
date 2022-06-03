@@ -33,7 +33,7 @@ Type: *boolean*
 ### **container**
 `read-only container: InventoryComponentContainer;`
 
-Defines the interactions with this entity for healing it.
+Defines the container for this entity.
 
 Type: [*InventoryComponentContainer*](InventoryComponentContainer.md)
 
@@ -47,7 +47,7 @@ Type: *string*
 ### **id**
 `read-only id: string;`
 
-Identifier of this component. Should always be minecraft:healable.
+Identifier of this component. Should always be minecraft:inventory.
 
 Type: *string*
 
