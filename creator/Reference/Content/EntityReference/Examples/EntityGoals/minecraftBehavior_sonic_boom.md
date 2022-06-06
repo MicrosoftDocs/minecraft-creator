@@ -5,7 +5,7 @@ title: Entity Documentation - minecraft:behavior.sonic_boom
 ms.prod: gaming
 ---
 
-# Entity Documentation - minecraft:behavior.sniff
+# Entity Documentation - minecraft:behavior.sonic_boom
 
 `minecraft:behavior.sonic_boom` [EXPERIMENTAL BEHAVIOR] plays the provided sounds and activates the "SONIC BOOM" actor flag during the specified duration.
 
