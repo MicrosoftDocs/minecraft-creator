@@ -1,6 +1,6 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: JDHeaden
+ms.author: v-jillheaden
 title: Molang Documentation - Introduction to Molang
 ms.prod: gaming
 ---
