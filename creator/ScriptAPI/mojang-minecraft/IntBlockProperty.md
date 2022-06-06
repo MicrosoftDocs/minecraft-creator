@@ -23,14 +23,12 @@ The name of this property.
 
 Type: *string*
 
-
 ### **validValues**
 `read-only validValues: number[];`
 
 A list of valid values for this particular property.
 
 Type: *number*[]
-
 
 ### **value**
 `value: number;`

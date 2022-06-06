@@ -20,7 +20,6 @@ The impacted item stack that is stopping being charged.
 
 Type: [*ItemStack*](ItemStack.md)
 
-
 ### **source**
 `read-only source: Entity;`
 
@@ -28,12 +27,10 @@ Returns the source entity that triggered this item event.
 
 Type: [*Entity*](Entity.md)
 
-
 ### **useDuration**
 `read-only useDuration: number;`
 
 Returns the time, in ticks, for the remaining duration left before the charge completes its cycle.
 
 Type: *number*
-
 

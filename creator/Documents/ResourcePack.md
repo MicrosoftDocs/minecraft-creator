@@ -21,6 +21,10 @@ In this tutorial, you will learn the following:
 > - How custom textures are loaded into Minecraft.
 > - The concept of **Pack Stacking** when working with Add-On content.
 
+## Sample Resource Pack
+
+There is a [sample resource pack](https://github.com/microsoft/minecraft-samples/tree/main/resource_pack_sample) available on the Minecraft samples Github. it may be used to understand the structure of resource packs and to check your work after the tutorial.
+
 ## Requirements
 
 We recommend completing the following be completed before beginning this tutorial:
@@ -152,6 +156,8 @@ Your custom texture will be used on every dirt.png block in the world, but it wi
 ## Troubleshooting
 
 Resource pack woes? Troubleshooting is a normal part of any development process. Here are some places to start troubleshooting a missing resource pack.
+
+You can use the [sample resource pack](https://github.com/microsoft/minecraft-samples/tree/main/resource_pack_sample) on the Minecraft samples Github site to check the structure of your resource pack.
 
 ### Your Resource Pack Does Not Appear in Minecraft
 

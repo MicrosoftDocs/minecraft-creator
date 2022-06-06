@@ -26,8 +26,6 @@ Adds a callback that will be called when an item is used on a block.
 - **callback**: (arg: [*ItemStartUseOnEvent*](ItemStartUseOnEvent.md)) => *void*
 
 #### **Returns** (arg: [*ItemStartUseOnEvent*](ItemStartUseOnEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ItemStartUseOnEvent) => void): void
@@ -36,8 +34,5 @@ unsubscribe(callback: (arg: ItemStartUseOnEvent) => void): void
 Removes a callback from being called when an item is used on a block.
 #### **Parameters**
 - **callback**: (arg: [*ItemStartUseOnEvent*](ItemStartUseOnEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

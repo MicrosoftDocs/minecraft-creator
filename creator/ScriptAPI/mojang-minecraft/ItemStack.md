@@ -20,14 +20,12 @@ Number of the items in the stack. Valid values range between 0 and 64.
 
 Type: *number*
 
-
 ### **data**
 `data: number;`
 
 A data value used to configure alternate states of the item.
 
 Type: *number*
-
 
 ### **id**
 `read-only id: string;`
@@ -36,14 +34,12 @@ Identifier of the type of items for the stack. If a namespace is not specified, 
 
 Type: *string*
 
-
 ### **nameTag**
 `nameTag: string;`
 
 Given name of this stack of items.
 
 Type: *string*
-
 
 
 ## Methods
@@ -73,8 +69,6 @@ Creates a new instance of a stack of items for use in the world.
   Optional data value used for creating the item, or 0 if no data value is specified.
 
 #### **Returns** [*ItemStack*](ItemStack.md)
-
-
 ### **getComponent**
 `
 getComponent(componentId: string): any
@@ -87,8 +81,6 @@ Gets a component (that represents additional capabilities) for an item stack.
   The identifier of the component (e.g., 'minecraft:food') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed. If the component is not present on the item stack, undefined is returned.
 
 #### **Returns** *any*
-
-
 ### **getComponents**
 `
 getComponents(): any[]
@@ -97,8 +89,6 @@ getComponents(): any[]
 Returns all components that are both present on this item stack and supported by the API.
 
 #### **Returns** *any*[]
-
-
 ### **getLore**
 `
 getLore(): string[]
@@ -107,8 +97,6 @@ getLore(): string[]
 Returns the lore value - a secondary display string - for an ItemStack.
 
 #### **Returns** *string*[]
-
-
 ### **hasComponent**
 `
 hasComponent(componentId: string): boolean
@@ -121,8 +109,6 @@ Returns true if the specified component is present on this item stack.
   The identifier of the component (e.g., 'minecraft:food') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed.
 
 #### **Returns** *boolean*
-
-
 ### **setLore**
 `
 setLore(loreList: string[]): void
@@ -131,9 +117,6 @@ setLore(loreList: string[]): void
 Sets the lore value - a secondary display string - for an ItemStack.
 #### **Parameters**
 - **loreList**: *string*[]
-
-
-
 ### **triggerEvent**
 `
 triggerEvent(eventName: string): void
@@ -145,5 +128,22 @@ Triggers an item type event. For custom items, a number of events are defined in
   
   Name of the item type event to trigger. If a namespace is not specified, minecraft: is assumed.
 
-
-
+#### **Examples**
+##### *itemStacks.ts*
+```javascript
+  const oneItemLoc = new mc.BlockLocation(3, 2, 1);
+  const fiveItemsLoc = new mc.BlockLocation(1, 2, 1);
+  const diamondPickaxeLoc = new mc.BlockLocation(2, 2, 4);
+  const oneEmerald = new mc.ItemStack(mc.MinecraftItemTypes.emerald, 1, 0);
+  const onePickaxe = new mc.ItemStack(mc.MinecraftItemTypes.diamondPickaxe, 1, 0);
+  const fiveEmeralds = new mc.ItemStack(mc.MinecraftItemTypes.emerald, 5, 0);
+  overworld.spawnItem(oneEmerald, oneItemLoc);
+  overworld.spawnItem(fiveEmeralds, fiveItemsLoc);
+  overworld.spawnItem(onePickaxe, diamondPickaxeLoc);
+```
+##### *spawnItem.ts*
+```javascript
+  const featherItem = new mc.ItemStack(mc.MinecraftItemTypes.feather, 1, 0);
+  overworld.spawnItem(featherItem, targetLocation);
+  log("New feather created!");
+```

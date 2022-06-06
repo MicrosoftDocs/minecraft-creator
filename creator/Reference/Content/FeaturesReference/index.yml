@@ -23,7 +23,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Introduction to Features
-            url: Examples/FeatureIntroduction.md
+            url: Examples/FeaturesIntroduction.md
           - text: Feature List
             url: Examples/FeatureList.md
   # Card (optional)

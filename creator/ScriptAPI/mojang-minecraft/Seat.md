@@ -20,14 +20,12 @@ If specified, contains a forced rotation that the riders in this seat are facing
 
 Type: *number*
 
-
 ### **maxRiderCount**
 `maxRiderCount: number;`
 
 A maximum number of riders that this seat can support.
 
 Type: *number*
-
 
 ### **minRiderCount**
 `minRiderCount: number;`
@@ -36,12 +34,10 @@ A minimum number of riders that can be placed in this seat position, if this sea
 
 Type: *number*
 
-
 ### **position**
 `position: Location;`
 
 Physical location of this seat, relative to the entity's location.
 
 Type: [*Location*](Location.md)
-
 

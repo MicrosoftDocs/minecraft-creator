@@ -20,7 +20,6 @@ If this value is set, this event will only fire for entities that match the enti
 
 Type: [*Entity*](Entity.md)[]
 
-
 ### **entityTypes**
 `entityTypes: string[];`
 
@@ -28,14 +27,12 @@ If this value is set, this event will only fire if the impacted entities' type m
 
 Type: *string*[]
 
-
 ### **eventTypes**
 `eventTypes: string[];`
 
 If this value is set, this event will only fire if the impacted triggered event matches one of the events listed in this parameter.
 
 Type: *string*[]
-
 
 
 ## Methods
@@ -48,5 +45,3 @@ new EntityDataDrivenTriggerEventOptions()
 
 
 #### **Returns** [*EntityDataDrivenTriggerEventOptions*](EntityDataDrivenTriggerEventOptions.md)
-
-

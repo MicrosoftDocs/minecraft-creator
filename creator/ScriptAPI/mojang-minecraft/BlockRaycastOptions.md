@@ -20,7 +20,6 @@ If true, liquid blocks will be considered as blocks that 'stop' the raycast.
 
 Type: *boolean*
 
-
 ### **includePassableBlocks**
 `includePassableBlocks: boolean;`
 
@@ -28,14 +27,12 @@ If true, passable blocks like vines and flowers will be considered as blocks tha
 
 Type: *boolean*
 
-
 ### **maxDistance**
 `maxDistance: number;`
 
 Maximum distance, in blocks, to process the raycast.
 
 Type: *number*
-
 
 
 ## Methods
@@ -49,5 +46,3 @@ new BlockRaycastOptions()
 Creates a new BlockRaycastOptions object, for use in a block vector query.
 
 #### **Returns** [*BlockRaycastOptions*](BlockRaycastOptions.md)
-
-

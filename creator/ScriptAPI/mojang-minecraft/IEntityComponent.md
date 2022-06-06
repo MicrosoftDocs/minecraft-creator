@@ -79,4 +79,3 @@ Identifier of this component.
 
 Type: *string*
 
-

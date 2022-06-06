@@ -26,8 +26,6 @@ Adds a callback that will be called before new chat messages are sent.
 - **callback**: (arg: [*BeforeChatEvent*](BeforeChatEvent.md)) => *void*
 
 #### **Returns** (arg: [*BeforeChatEvent*](BeforeChatEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: BeforeChatEvent) => void): void
@@ -36,8 +34,5 @@ unsubscribe(callback: (arg: BeforeChatEvent) => void): void
 Removes a callback from being called before new chat messages are sent.
 #### **Parameters**
 - **callback**: (arg: [*BeforeChatEvent*](BeforeChatEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

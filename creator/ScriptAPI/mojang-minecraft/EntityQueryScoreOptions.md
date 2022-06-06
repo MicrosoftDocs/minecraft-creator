@@ -20,14 +20,12 @@ If set to true, entities and players within this score range are excluded from q
 
 Type: *boolean*
 
-
 ### **maxScore**
 `maxScore: number;`
 
 If defined, only players that have a score equal to or under maxScore are included.
 
 Type: *number*
-
 
 ### **minScore**
 `minScore: number;`
@@ -36,14 +34,12 @@ If defined, only players that have a score equal to or over minScore are include
 
 Type: *number*
 
-
 ### **objective**
 `objective: string;`
 
 Identifier of the scoreboard objective to filter on.
 
 Type: *string*
-
 
 
 ## Methods
@@ -57,5 +53,3 @@ new EntityQueryScoreOptions()
 Creates a new EntityQueryScoreOptions query object, for use in an entity query.
 
 #### **Returns** [*EntityQueryScoreOptions*](EntityQueryScoreOptions.md)
-
-

@@ -26,8 +26,6 @@ Adds a callback that will be called when before an explosion occurs. The callbac
 - **callback**: (arg: [*BeforeExplosionEvent*](BeforeExplosionEvent.md)) => *void*
 
 #### **Returns** (arg: [*BeforeExplosionEvent*](BeforeExplosionEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: BeforeExplosionEvent) => void): void
@@ -36,8 +34,5 @@ unsubscribe(callback: (arg: BeforeExplosionEvent) => void): void
 Removes a callback from being called from before when an explosion would occur.
 #### **Parameters**
 - **callback**: (arg: [*BeforeExplosionEvent*](BeforeExplosionEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

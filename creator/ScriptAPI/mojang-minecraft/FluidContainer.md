@@ -20,12 +20,10 @@ Constant that represents the maximum fill level of a fluid container.
 
 Type: *number*
 
-
 ### **minFillLevel**
 `static read-only minFillLevel = 0;`
 
 Constant that represents the minimum fill level of a fluid container.
 
 Type: *number*
-
 

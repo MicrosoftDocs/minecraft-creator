@@ -34,8 +34,6 @@ Runs the given callback as a step within a GameTest sequence. Exceptions thrown 
   Callback function to execute.
 
 #### **Returns** [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
-
-
 ### **thenExecuteAfter**
 `
 thenExecuteAfter(delayTicks: number, callback: () => void): GameTestSequence
@@ -51,8 +49,6 @@ After a delay, runs the given callback as a step within a GameTest sequence. Exc
   Callback function to execute.
 
 #### **Returns** [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
-
-
 ### **thenExecuteFor**
 `
 thenExecuteFor(tickCount: number, callback: () => void): GameTestSequence
@@ -66,8 +62,6 @@ Runs the given callback every tick for the given number of ticks.
   Callback function to execute.
 
 #### **Returns** [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
-
-
 ### **thenFail**
 `
 thenFail(errorMessage: string): void
@@ -78,9 +72,6 @@ Causes the test to fail if this step in the GameTest sequence is reached.
 - **errorMessage**: *string*
   
   Error message summarizing the failure condition.
-
-
-
 ### **thenIdle**
 `
 thenIdle(delayTicks: number): GameTestSequence
@@ -93,17 +84,12 @@ Idles the GameTest sequence for the specified delayTicks.
   Number of ticks to delay for this step in the GameTest sequence.
 
 #### **Returns** [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
-
-
 ### **thenSucceed**
 `
 thenSucceed(): void
 `
 
 Marks the GameTest a success if this step is reached in the GameTest sequence.
-
-
-
 ### **thenWait**
 `
 thenWait(callback: () => void): GameTestSequence
@@ -116,8 +102,6 @@ Executes the given callback every tick until it succeeds. Exceptions thrown with
   Testing callback function to execute. Typically, this function will have .assertXyz functions within it.
 
 #### **Returns** [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
-
-
 ### **thenWaitAfter**
 `
 thenWaitAfter(delayTicks: number, callback: () => void): GameTestSequence
@@ -133,5 +117,3 @@ After a delay from the previous step, executes the given callback every tick unt
   Testing callback function to execute. Typically, this function will have .assertXyz functions within it.
 
 #### **Returns** [*GameTestSequence*](GameTestSequence.md) - Returns a GameTestSequence object where additional .thenXyz method steps can be added.
-
-

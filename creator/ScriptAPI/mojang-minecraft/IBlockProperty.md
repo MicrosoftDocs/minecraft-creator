@@ -25,4 +25,3 @@ The name of this property.
 
 Type: *string*
 
-

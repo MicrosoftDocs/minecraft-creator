@@ -23,14 +23,12 @@ Number of slots that this entity can gain per extra strength.
 
 Type: *number*
 
-
 ### **canBeSiphonedFrom**
 `read-only canBeSiphonedFrom: boolean;`
 
 If true, the contents of this inventory can be removed by a hopper.
 
 Type: *boolean*
-
 
 ### **container**
 `read-only container: InventoryComponentContainer;`
@@ -39,14 +37,12 @@ Defines the interactions with this entity for healing it.
 
 Type: [*InventoryComponentContainer*](InventoryComponentContainer.md)
 
-
 ### **containerType**
 `read-only containerType: string;`
 
 Type of container this entity has.
 
 Type: *string*
-
 
 ### **id**
 `read-only id: string;`
@@ -55,14 +51,12 @@ Identifier of this component. Should always be minecraft:healable.
 
 Type: *string*
 
-
 ### **inventorySize**
 `read-only inventorySize: number;`
 
 Number of slots the container has.
 
 Type: *number*
-
 
 ### **private**
 `read-only private: boolean;`
@@ -71,12 +65,10 @@ If true, the entity will not drop it's inventory on death.
 
 Type: *boolean*
 
-
 ### **restrictToOwner**
 `read-only restrictToOwner: boolean;`
 
 If true, the entity's inventory can only be accessed by its owner or itself.
 
 Type: *boolean*
-
 

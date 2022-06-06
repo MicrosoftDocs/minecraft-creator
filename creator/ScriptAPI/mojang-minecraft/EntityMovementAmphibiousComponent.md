@@ -23,12 +23,10 @@ Identifier of this component. Should always be minecraft:movement.amphibious.
 
 Type: *string*
 
-
 ### **maxTurn**
 `read-only maxTurn: number;`
 
 The maximum number in degrees the mob can turn per tick.
 
 Type: *number*
-
 

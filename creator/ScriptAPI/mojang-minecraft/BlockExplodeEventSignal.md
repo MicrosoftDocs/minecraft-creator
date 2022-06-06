@@ -26,8 +26,6 @@ Adds a callback that will be called when an explosion occurs, as it impacts indi
 - **callback**: (arg: [*BlockExplodeEvent*](BlockExplodeEvent.md)) => *void*
 
 #### **Returns** (arg: [*BlockExplodeEvent*](BlockExplodeEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: BlockExplodeEvent) => void): void
@@ -36,8 +34,5 @@ unsubscribe(callback: (arg: BlockExplodeEvent) => void): void
 Removes a callback from being called when an explosion occurs, as it impacts individual blocks.
 #### **Parameters**
 - **callback**: (arg: [*BlockExplodeEvent*](BlockExplodeEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

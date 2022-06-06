@@ -26,8 +26,6 @@ Adds a callback that will be called before an item is used.
 - **callback**: (arg: [*BeforeItemUseEvent*](BeforeItemUseEvent.md)) => *void*
 
 #### **Returns** (arg: [*BeforeItemUseEvent*](BeforeItemUseEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: BeforeItemUseEvent) => void): void
@@ -36,8 +34,5 @@ unsubscribe(callback: (arg: BeforeItemUseEvent) => void): void
 Removes a callback from being called before an item is used.
 #### **Parameters**
 - **callback**: (arg: [*BeforeItemUseEvent*](BeforeItemUseEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

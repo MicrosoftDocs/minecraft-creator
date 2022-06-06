@@ -23,11 +23,8 @@ clearRecord(): void
 `
 
 Clears the currently playing record of this record-playing block.
-
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **isPlaying**
 `
 isPlaying(): boolean
@@ -36,10 +33,8 @@ isPlaying(): boolean
 Returns true if the record-playing block is currently playing a record.
 
 #### **Returns** *boolean*
-
 > [!WARNING]
 > This function can throw errors.
-
 ### **setRecord**
 `
 setRecord(recordItemType: ItemType): void
@@ -48,8 +43,5 @@ setRecord(recordItemType: ItemType): void
 Sets and plays a record based on an item type.
 #### **Parameters**
 - **recordItemType**: [*ItemType*](ItemType.md)
-
-
 > [!WARNING]
 > This function can throw errors.
-

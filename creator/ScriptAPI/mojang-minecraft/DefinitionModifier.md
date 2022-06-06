@@ -20,7 +20,6 @@ A list of components that will be added via this definition modification.
 
 Type: *string*[]
 
-
 ### **componentGroupsToRemove**
 `read-only componentGroupsToRemove: string[];`
 
@@ -28,14 +27,12 @@ A list of components that will be removed via this definition modification.
 
 Type: *string*[]
 
-
 ### **triggers**
 `triggers: Trigger[];`
 
 A list of entity definition events that will be fired via this update.
 
 Type: [*Trigger*](Trigger.md)[]
-
 
 
 ## Methods
@@ -48,5 +45,3 @@ new DefinitionModifier()
 
 
 #### **Returns** [*DefinitionModifier*](DefinitionModifier.md)
-
-

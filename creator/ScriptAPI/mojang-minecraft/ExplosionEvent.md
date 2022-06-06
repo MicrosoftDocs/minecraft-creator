@@ -20,7 +20,6 @@ Dimension where the explosion has occurred.
 
 Type: [*Dimension*](Dimension.md)
 
-
 ### **impactedBlocks**
 `read-only impactedBlocks: BlockLocation[];`
 
@@ -28,12 +27,10 @@ A collection of blocks impacted by this explosion event.
 
 Type: [*BlockLocation*](BlockLocation.md)[]
 
-
 ### **source**
 `read-only source: Entity;`
 
 Optional source of the explosion.
 
 Type: [*Entity*](Entity.md)
-
 

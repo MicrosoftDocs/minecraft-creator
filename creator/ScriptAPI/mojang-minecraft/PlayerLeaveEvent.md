@@ -20,4 +20,3 @@ Player that has left the world.
 
 Type: *string*
 
-

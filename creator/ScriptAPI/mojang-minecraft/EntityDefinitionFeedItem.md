@@ -20,12 +20,10 @@ The amount by which an entity's age will increase when fed this item. Values usu
 
 Type: *number*
 
-
 ### **item**
 `read-only item: string;`
 
 Identifier of type of item that can be fed. If a namespace is not specified, 'minecraft:' is assumed. Example values include 'wheat' or 'golden_apple'.
 
 Type: *string*
-
 

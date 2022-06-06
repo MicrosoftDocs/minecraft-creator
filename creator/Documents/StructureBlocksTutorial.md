@@ -26,6 +26,10 @@ In this tutorial, you will learn the following:
 > - How to use the `/structure` command to place structures.
 > - How to animate a structure into Adventure or Survival mode using a command block and the /structure command.
 
+## Structure Block Sample Behavior Pack
+
+There is a [sample Structure Blocks behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/structure_blocks_sample_behavior_pack) available at the Minecraft samples Github. You can download it to use the same structures used in the tutorial, or to get a sense of the structure of behavior packs.
+
 ## Create a structure
 
 In creative mode, build a structure smaller than 64 blocks x 384 blocks x 64 blocks.

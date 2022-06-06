@@ -20,14 +20,12 @@ Returns the current damage level of this particular item.
 
 Type: *number*
 
-
 ### **damageRange**
 `read-only damageRange: NumberRange;`
 
 A range of numbers that describes the chance of the item losing durability.
 
 Type: [*NumberRange*](NumberRange.md)
-
 
 ### **id**
 `read-only id: string;`
@@ -36,14 +34,12 @@ Identifier of this component. Should always be 'minecraft:durability'.
 
 Type: *string*
 
-
 ### **maxDurability**
 `read-only maxDurability: number;`
 
 Represents the amount of damage that this item can take before breaking.
 
 Type: *number*
-
 
 
 ## Methods
@@ -61,7 +57,5 @@ Returns the maximum chance that this item would be damaged using the damageRange
   Unbreaking factor to consider in factoring the damage chance. Incoming unbreaking parameter must be greater than 0.
 
 #### **Returns** *number*
-
 > [!WARNING]
 > This function can throw errors.
-

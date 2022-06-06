@@ -27,8 +27,6 @@ Adds a callback that will be called after a data driven entity event is triggere
 - **options**?: [*EntityDataDrivenTriggerEventOptions*](EntityDataDrivenTriggerEventOptions.md) = `null`
 
 #### **Returns** (arg: [*DataDrivenEntityTriggerEvent*](DataDrivenEntityTriggerEvent.md)) => *void*
-
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: DataDrivenEntityTriggerEvent) => void): void
@@ -37,8 +35,5 @@ unsubscribe(callback: (arg: DataDrivenEntityTriggerEvent) => void): void
 Removes a callback that will be called after a data driven entity event is triggered.
 #### **Parameters**
 - **callback**: (arg: [*DataDrivenEntityTriggerEvent*](DataDrivenEntityTriggerEvent.md)) => *void*
-
-
 > [!WARNING]
 > This function can throw errors.
-

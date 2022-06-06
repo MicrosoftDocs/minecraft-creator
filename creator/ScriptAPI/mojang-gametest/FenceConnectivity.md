@@ -20,14 +20,12 @@ Represents whether this fence block is connected to another fence to the east (x
 
 Type: *boolean*
 
-
 ### **north**
 `read-only north: boolean;`
 
 Represents whether this fence block is connected to another fence to the north (z - 1).
 
 Type: *boolean*
-
 
 ### **south**
 `read-only south: boolean;`
@@ -36,12 +34,10 @@ Represents whether this fence block is connected to another fence to the south (
 
 Type: *boolean*
 
-
 ### **west**
 `read-only west: boolean;`
 
 Represents whether this fence block is connected to another fence to the west (x - 1).
 
 Type: *boolean*
-
 

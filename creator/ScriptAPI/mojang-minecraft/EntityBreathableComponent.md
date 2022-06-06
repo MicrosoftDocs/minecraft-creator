@@ -23,14 +23,12 @@ List of blocks this entity can breathe in, in addition to the separate propertie
 
 Type: [*BlockPermutation*](BlockPermutation.md)[]
 
-
 ### **breathesAir**
 `read-only breathesAir: boolean;`
 
 If true, this entity can breathe in air.
 
 Type: *boolean*
-
 
 ### **breathesLava**
 `read-only breathesLava: boolean;`
@@ -39,14 +37,12 @@ If true, this entity can breathe in lava.
 
 Type: *boolean*
 
-
 ### **breathesSolids**
 `read-only breathesSolids: boolean;`
 
 If true, this entity can breathe in solid blocks.
 
 Type: *boolean*
-
 
 ### **breathesWater**
 `read-only breathesWater: boolean;`
@@ -55,14 +51,12 @@ If true, this entity can breathe in water.
 
 Type: *boolean*
 
-
 ### **generatesBubbles**
 `read-only generatesBubbles: boolean;`
 
 If true, this entity will have visible bubbles while in water.
 
 Type: *boolean*
-
 
 ### **id**
 `read-only id: string;`
@@ -71,14 +65,12 @@ Identifier of this component. Should always be minecraft:breathable.
 
 Type: *string*
 
-
 ### **inhaleTime**
 `read-only inhaleTime: number;`
 
 Time in seconds to recover breath to maximum.
 
 Type: *number*
-
 
 ### **nonBreatheBlocks**
 `read-only nonBreatheBlocks: BlockPermutation[];`
@@ -87,7 +79,6 @@ List of blocks this entity can't breathe in.
 
 Type: [*BlockPermutation*](BlockPermutation.md)[]
 
-
 ### **suffocateTime**
 `read-only suffocateTime: number;`
 
@@ -95,14 +86,12 @@ Time in seconds between suffocation damage.
 
 Type: *number*
 
-
 ### **totalSupply**
 `read-only totalSupply: number;`
 
 Time in seconds the entity can hold its breath.
 
 Type: *number*
-
 
 
 ## Methods
@@ -118,8 +107,5 @@ Sets the current air supply of the entity.
 - **value**: *number*
   
   New air supply for the entity.
-
-
 > [!WARNING]
 > This function can throw errors.
-

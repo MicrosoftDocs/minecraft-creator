@@ -20,7 +20,6 @@ Additional properties and details of the effect.
 
 Type: [*Effect*](Effect.md)
 
-
 ### **effectState**
 `effectState: number;`
 
@@ -28,12 +27,10 @@ Additional variant number for the effect.
 
 Type: *number*
 
-
 ### **entity**
 `entity: Entity;`
 
 Entity that the effect is being added to.
 
 Type: [*Entity*](Entity.md)
-
 

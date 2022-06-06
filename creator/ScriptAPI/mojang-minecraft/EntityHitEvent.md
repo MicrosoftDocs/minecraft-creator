@@ -20,7 +20,6 @@ Entity that made a hit/melee attack.
 
 Type: [*Entity*](Entity.md)
 
-
 ### **hitBlock**
 `read-only hitBlock: Block;`
 
@@ -28,12 +27,10 @@ Block that was hit by the attack, or undefined if the hit attack did not hit a b
 
 Type: [*Block*](Block.md)
 
-
 ### **hitEntity**
 `read-only hitEntity: Entity;`
 
 Entity that was hit by the attack, or undefined if the hit attack did not hit an entity. If both hitEntity and hitBlock are undefined, then the entity basically swiped into the air.
 
 Type: [*Entity*](Entity.md)
-
 

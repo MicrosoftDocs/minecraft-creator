@@ -20,7 +20,6 @@ The X coordinate.
 
 Type: *number*
 
-
 ### **y**
 `y: number;`
 
@@ -28,14 +27,12 @@ The integer-based Y position.
 
 Type: *number*
 
-
 ### **z**
 `z: number;`
 
 The integer-based Z position.
 
 Type: *number*
-
 
 
 ## Methods
@@ -63,8 +60,6 @@ Creates a new instance of an abstract block location.
   Z position of the block location. This number should be an integer.
 
 #### **Returns** [*BlockLocation*](BlockLocation.md)
-
-
 ### **above**
 `
 above(): BlockLocation
@@ -73,8 +68,6 @@ above(): BlockLocation
 Returns a BlockLocation for a block above this BlockLocation (that is, y + 1).
 
 #### **Returns** [*BlockLocation*](BlockLocation.md)
-
-
 ### **blocksBetween**
 `
 blocksBetween(other: BlockLocation): BlockLocation[]
@@ -87,8 +80,6 @@ Returns an array of block locations representing all blocks in the volume (cuboi
   Additional BlockLocation used to determine the set of locations in between this location and another point.
 
 #### **Returns** [*BlockLocation*](BlockLocation.md)[] - Array of block locations representing the volume between this location and another, inclusive of the start and end points.
-
-
 ### **equals**
 `
 equals(other: BlockLocation): boolean
@@ -101,8 +92,6 @@ Compares this BlockLocation and another BlockLocation to one another.
   Other block location to compare this BlockLocation to.
 
 #### **Returns** *boolean* - True if the two block locations are equal.
-
-
 ### **offset**
 `
 offset(x: number, y: number, z: number): BlockLocation
@@ -121,5 +110,3 @@ Returns a block location using a position relative to this block location
   Z offset relative to this BlockLocation.
 
 #### **Returns** [*BlockLocation*](BlockLocation.md) - BlockLocation that is positioned relative to this BlockLocation.
-
-
