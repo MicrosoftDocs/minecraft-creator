@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - Attribute list
 
-Below is a list of all the available Attributes within Minecraft:Bedrock Edition for use with Entity JSON files.
+Below is a list of all the available Attributes within Minecraft: Bedrock Edition for use with Entity JSON files.
 
 |Attribute |Description|
 |:-----|:----------|

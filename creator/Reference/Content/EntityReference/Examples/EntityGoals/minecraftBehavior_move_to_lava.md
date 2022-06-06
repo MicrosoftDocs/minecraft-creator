@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.move_to_lava` allows an entity to move to lava when on land.
 
 > [!CAUTION]
-> `minecraft:behavior.move_to_lava` is not currently used by any entities within Minecraft:Bedrock Edition.
+> `minecraft:behavior.move_to_lava` is not currently used by any entities within Minecraft: Bedrock Edition.
 
 ## Parameters
 

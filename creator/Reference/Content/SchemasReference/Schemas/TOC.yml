@@ -2,12 +2,6 @@
    href: ../SchemasList.md
  - name: actor_animation
    href: minecraftSchema_actor_animation_1.8.0.md
- - name: actor_animation_controller
-   href: minecraftSchema_actor_animation_controller_1.10.0.md
- - name: actor_resource:1.8.0
-   href: minecraftSchema_actor_resource_1.8.0.md
- - name: actor_resource:1.10.0
-   href: minecraftSchema_actor_resource_1.10.0.md
  - name: block_reference
    href: minecraftSchema_block_reference_1.10.0.md
  - name: chance_information
@@ -22,5 +16,3 @@
    href: minecraftSchema_geometry_1.16.0.md
  - name: persona_actor_animation
    href: minecraftSchema_persona_actor_animation_1.8.0.md
- - name: render_controller
-   href: minecraftSchema_render_controller_1.8.0.md

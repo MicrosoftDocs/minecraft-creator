@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-bbortree
 title: How to add a Custom Block
 ms.prod: gaming
 description: "A tutorial that introduces a Creator on how to make a custom block within Minecraft: Bedrock Edition"
@@ -37,7 +37,7 @@ You will also need the following:
 >[!IMPORTANT]
 >Holiday Creator Features contain experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
 >
->To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](ExperimentalFeaturesToggle.md)
+>To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](ExperimentalFeaturesToggle.md).
 
 ## Setting up the Resource JSON File
 

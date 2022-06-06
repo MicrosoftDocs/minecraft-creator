@@ -1,26 +1,26 @@
 ---
-author: v-josjones
-ms.author: v-josjones
-title: Block Documentation - minecraft:display_name(Blocks)
+author: mammerla
+ms.author: v-bbortree
+title: Block Documentation - minecraft:display_name
 ms.prod: gaming
 ---
 
-# Block Documentation - minecraft:display_name (Blocks)
+# Block Documentation - minecraft:display_name
 
-`minecraft:display_name` is a `String` component that specifies the language file key that maps to what text will be displayed when you hover over the block.
+`minecraft:display_name` specifies the language file key that maps to what text will be displayed when you hover over the block. Key is limited to 256 characters.
 
 >[!IMPORTANT]
 > `minecraft:display_name` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
 >
 >Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
 >
->To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md)
+>To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md).
 
 ## Default Parameter
 
 |Default Value|Type |
 |:----|:----|
-|*not set*| String|
+|*not set*| Localization string|
 
 ## Extra Parameters
 

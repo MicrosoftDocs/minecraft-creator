@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-bbortree
 title: Fog Documentation - Introduction to Fogs
 ms.prod: gaming
 ---
@@ -27,44 +27,128 @@ Fogs are set up in individual JSON files in your resource pack under the **fogs*
             object "air" : opt // The fog settings when the camera is in the air.
             {
                 color "fog_color" // The color that the fog will take on.
-                float "fog_start"<0.000000-*> // The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.
+                float "fog_start" // The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.
                 float "fog_end"<0.000000-*> // The distance from the player that the fog will become fully opaque. 'fog_end' must be greater than or equal to 'fog_start'.
                 string "render_distance_type"<"fixed", "render"> // Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.
+                object "transition_fog" : opt // Additional fog data which will slowly transition to the distance fog of current biome.
+                {
+                    object "init_fog" // Initial fog that will slowly transition into water distance fog of the biome when player goes into water.
+                    {
+                        color "fog_color" // The color that the fog will take on.
+                        float "fog_start" // The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.
+                        float "fog_end"<0.000000-*> // The distance from the player that the fog will become fully opaque. 'fog_end' must be greater than or equal to 'fog_start'.
+                        string "render_distance_type"<"fixed", "render"> // Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.
+                    }
+                    float "min_percent"<0.000000-1.000000> // The minimum progress of fog transition.
+                    float "mid_seconds"<0.000000-*> // The time takes to reach certain progress('mid_percent') of fog transition.
+                    float "mid_percent"<0.000000-1.000000> // The progress of fog transition after 'mid_seconds' seconds.
+                    float "max_seconds"<0.000000-*> // Total amount of time takes to complete fog transition.
+                }
             }
             object "weather" : opt // The fog settings for when the camera is in the air with active weather (rain, snow, etc..).
             {
                 color "fog_color" // The color that the fog will take on.
-                float "fog_start"<0.000000-*> // The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.
+                float "fog_start" // The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.
                 float "fog_end"<0.000000-*> // The distance from the player that the fog will become fully opaque. 'fog_end' must be greater than or equal to 'fog_start'.
                 string "render_distance_type"<"fixed", "render"> // Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.
+                object "transition_fog" : opt // Additional fog data which will slowly transition to the distance fog of current biome.
+                {
+                    object "init_fog" // Initial fog that will slowly transition into water distance fog of the biome when player goes into water.
+                    {
+                        color "fog_color" // The color that the fog will take on.
+                        float "fog_start" // The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.
+                        float "fog_end"<0.000000-*> // The distance from the player that the fog will become fully opaque. 'fog_end' must be greater than or equal to 'fog_start'.
+                        string "render_distance_type"<"fixed", "render"> // Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.
+                    }
+                    float "min_percent"<0.000000-1.000000> // The minimum progress of fog transition.
+                    float "mid_seconds"<0.000000-*> // The time takes to reach certain progress('mid_percent') of fog transition.
+                    float "mid_percent"<0.000000-1.000000> // The progress of fog transition after 'mid_seconds' seconds.
+                    float "max_seconds"<0.000000-*> // Total amount of time takes to complete fog transition.
+                }
             }
             object "water" : opt // The fog settings when the camera is in water.
             {
                 color "fog_color" // The color that the fog will take on.
-                float "fog_start"<0.000000-*> // The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.
+                float "fog_start" // The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.
                 float "fog_end"<0.000000-*> // The distance from the player that the fog will become fully opaque. 'fog_end' must be greater than or equal to 'fog_start'.
                 string "render_distance_type"<"fixed", "render"> // Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.
+                object "transition_fog" : opt // Additional fog data which will slowly transition to the distance fog of current biome.
+                {
+                    object "init_fog" // Initial fog that will slowly transition into water distance fog of the biome when player goes into water.
+                    {
+                        color "fog_color" // The color that the fog will take on.
+                        float "fog_start" // The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.
+                        float "fog_end"<0.000000-*> // The distance from the player that the fog will become fully opaque. 'fog_end' must be greater than or equal to 'fog_start'.
+                        string "render_distance_type"<"fixed", "render"> // Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.
+                    }
+                    float "min_percent"<0.000000-1.000000> // The minimum progress of fog transition.
+                    float "mid_seconds"<0.000000-*> // The time takes to reach certain progress('mid_percent') of fog transition.
+                    float "mid_percent"<0.000000-1.000000> // The progress of fog transition after 'mid_seconds' seconds.
+                    float "max_seconds"<0.000000-*> // Total amount of time takes to complete fog transition.
+                }
             }
             object "lava" : opt // The fog settings when the camera is in lava.
             {
                 color "fog_color" // The color that the fog will take on.
-                float "fog_start"<0.000000-*> // The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.
+                float "fog_start" // The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.
                 float "fog_end"<0.000000-*> // The distance from the player that the fog will become fully opaque. 'fog_end' must be greater than or equal to 'fog_start'.
                 string "render_distance_type"<"fixed", "render"> // Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.
+                object "transition_fog" : opt // Additional fog data which will slowly transition to the distance fog of current biome.
+                {
+                    object "init_fog" // Initial fog that will slowly transition into water distance fog of the biome when player goes into water.
+                    {
+                        color "fog_color" // The color that the fog will take on.
+                        float "fog_start" // The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.
+                        float "fog_end"<0.000000-*> // The distance from the player that the fog will become fully opaque. 'fog_end' must be greater than or equal to 'fog_start'.
+                        string "render_distance_type"<"fixed", "render"> // Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.
+                    }
+                    float "min_percent"<0.000000-1.000000> // The minimum progress of fog transition.
+                    float "mid_seconds"<0.000000-*> // The time takes to reach certain progress('mid_percent') of fog transition.
+                    float "mid_percent"<0.000000-1.000000> // The progress of fog transition after 'mid_seconds' seconds.
+                    float "max_seconds"<0.000000-*> // Total amount of time takes to complete fog transition.
+                }
             }
             object "lava_resistance" : opt // The fog settings when the camera is in lava and the player has the lava resistance effect active.
             {
                 color "fog_color" // The color that the fog will take on.
-                float "fog_start"<0.000000-*> // The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.
+                float "fog_start" // The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.
                 float "fog_end"<0.000000-*> // The distance from the player that the fog will become fully opaque. 'fog_end' must be greater than or equal to 'fog_start'.
                 string "render_distance_type"<"fixed", "render"> // Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.
+                object "transition_fog" : opt // Additional fog data which will slowly transition to the distance fog of current biome.
+                {
+                    object "init_fog" // Initial fog that will slowly transition into water distance fog of the biome when player goes into water.
+                    {
+                        color "fog_color" // The color that the fog will take on.
+                        float "fog_start" // The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.
+                        float "fog_end"<0.000000-*> // The distance from the player that the fog will become fully opaque. 'fog_end' must be greater than or equal to 'fog_start'.
+                        string "render_distance_type"<"fixed", "render"> // Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.
+                    }
+                    float "min_percent"<0.000000-1.000000> // The minimum progress of fog transition.
+                    float "mid_seconds"<0.000000-*> // The time takes to reach certain progress('mid_percent') of fog transition.
+                    float "mid_percent"<0.000000-1.000000> // The progress of fog transition after 'mid_seconds' seconds.
+                    float "max_seconds"<0.000000-*> // Total amount of time takes to complete fog transition.
+                }
             }
             object "powder_snow" : opt // The fog settings when the camera is inside a Powder Snow block.
             {
                 color "fog_color" // The color that the fog will take on.
-                float "fog_start"<0.000000-*> // The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.
+                float "fog_start" // The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.
                 float "fog_end"<0.000000-*> // The distance from the player that the fog will become fully opaque. 'fog_end' must be greater than or equal to 'fog_start'.
                 string "render_distance_type"<"fixed", "render"> // Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.
+                object "transition_fog" : opt // Additional fog data which will slowly transition to the distance fog of current biome.
+                {
+                    object "init_fog" // Initial fog that will slowly transition into water distance fog of the biome when player goes into water.
+                    {
+                        color "fog_color" // The color that the fog will take on.
+                        float "fog_start" // The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.
+                        float "fog_end"<0.000000-*> // The distance from the player that the fog will become fully opaque. 'fog_end' must be greater than or equal to 'fog_start'.
+                        string "render_distance_type"<"fixed", "render"> // Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.
+                    }
+                    float "min_percent"<0.000000-1.000000> // The minimum progress of fog transition.
+                    float "mid_seconds"<0.000000-*> // The time takes to reach certain progress('mid_percent') of fog transition.
+                    float "mid_percent"<0.000000-1.000000> // The progress of fog transition after 'mid_seconds' seconds.
+                    float "max_seconds"<0.000000-*> // Total amount of time takes to complete fog transition.
+                }
             }
         }
         object "volumetric" : opt // The volumetric fog settings.

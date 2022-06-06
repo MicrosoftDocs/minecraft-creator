@@ -1,27 +1,27 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-bbortree
 title: Block Documentation - minecraft:creative_category
 ms.prod: gaming
 ---
 
 # Block Documentation - minecraft:creative_category
 
-`minecraft:creative_category` is a component that specifies the creative group for the block.
+`minecraft:creative_category` specifies the menu category and group for the block, which determine where this block is placed in the inventory and crafting table container screens. If this component is omitted, the block will not appear in the inventory or crafting table container screens.
 
 >[!IMPORTANT]
 > `minecraft:creative_category` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
 >
 >Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
 >
->To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md)
+>To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md).
 
 ## Default Parameter
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|category |all |String |Used to define the type of category the block will be organized under.|
-|group |*not set* |String |Used to define the group that the block will be considered apart of.|
+|category |all |String |Determines which category this block will be placed under in the inventory and crafting table container screens. Options are "construction", "nature", "equipment", "items", and "none". If omitted or "none" is specified, the block will not appear in the inventory or crafting table container screens.|
+|group |*not set* |String |Specifies the language file key that maps to which expandable/collapsible group this block will be a part of within a category. If the string given can not be resolved as a loc string, then we will check if there is an existing group whose name matches the raw string. If this field is omitted, or there is no group whose name matches the loc string or the raw string, this block will be placed standalone in the given category.|
 
 ### categories
 

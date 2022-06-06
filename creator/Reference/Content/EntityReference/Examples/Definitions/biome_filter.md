@@ -56,7 +56,7 @@ Below is the list of Biome tags that can be used:
 
 ## Tagged Biomes
 
-Listed below are all of the available biomes within Minecraft:Bedrock Edition and each of the tags that are assigned to it.
+Listed below are all of the available biomes within Minecraft: Bedrock Edition and each of the tags that are assigned to it.
 
 | Biome| Tags |
 |:-----------|:-----------|

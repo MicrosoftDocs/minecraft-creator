@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Volume Components
 
-Below is a list of all the available Volume Components within Minecraft:Bedrock Edition for use with Volume JSON files.
+Below is a list of all the available Volume Components within Minecraft: Bedrock Edition for use with Volume JSON files.
 
 
 | Name| Default Value| Type| Description |

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - AI Goal list
 
-Below is a list of all the available AI Goals within Minecraft:Bedrock Edition for use with Entity JSON files.
+Below is a list of all the available AI Goals within Minecraft: Bedrock Edition for use with Entity JSON files.
 
 AI Goal |Description
 :-----|:----------
