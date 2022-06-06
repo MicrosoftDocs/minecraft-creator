@@ -50,5 +50,4 @@ ms.prod: gaming
 
 ## Vanilla entities using `minecraft:angry`
 
-- [warden](../../../../Source/VanillaBehaviorPack_Snippets/entities/warden.md)
-
+- [warden](../../../../Source/VanillaBehaviorPack/entities/warden.md)
