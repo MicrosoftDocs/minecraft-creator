@@ -12,7 +12,7 @@ Below is a list of all the available Triggers within Minecraft: Bedrock Edition 
 |Trigger |Description|
 |:------|:----------|
 |[minecraft:on_death](EntityTriggers/minecraftTrigger_on_death.md) |`minecraft:on_death` adds a trigger to call on this entity's death. |
-|[minecraft:on_friendly_anger](EntityTriggers/minecraftTrigger_on_friendly_anger.md) |`minecraft:on_friendly_anger` adds a trigger to call on this entity's death. |
+|[minecraft:on_friendly_anger](EntityTriggers/minecraftTrigger_on_friendly_anger.md) |`minecraft:on_friendly_anger` adds a trigger that will run when a nearby entity of the same type as this entity enters an `Angry` state. |
 |[minecraft:on_hurt_by_player](EntityTriggers/minecraftTrigger_on_hurt_by_player.md) |`minecraft:on_hurt_by_player` adds a trigger to call when this entity takes damage by a player.|
 |[minecraft:on_hurt](EntityTriggers/minecraftTrigger_on_hurt.md) |`minecraft:on_hurt` adds a trigger to call when this entity takes damage.|
 |[minecraft:on_ignite](EntityTriggers/minecraftTrigger_on_ignite.md) |`minecraft:on_ignite` adds a trigger to call when this entity is set on fire. |
