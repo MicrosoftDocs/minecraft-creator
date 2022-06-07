@@ -1,6 +1,6 @@
 ---
-author: neonerz
-ms.author: v-jeffreykim
+author: docsbryce
+ms.author: v-bbortree
 title: Introduction to Commands
 ms.prod: gaming
 description: A guide covering how Commands work in-game, the syntax that is used and what parameters are available to use.

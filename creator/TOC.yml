@@ -22,6 +22,14 @@
             href: Documents/ConvertingTexturePacks.md
           - name: Preparing Raw Text for Localization
             href: Documents/PreparingRawTextForLocalization.md
+        - name: World Creation and Gameplay with Parkour Map
+          items:
+          - name: Parkour Introduction
+            href: Documents/ParkourIntro.md
+          - name: Parkour Map Walkthrough
+            href: Documents/ParkourMapWalkthrough.md
+          - name: Parkour Map Creation Guide
+            href: Documents/ParkourMapGuide.md                        
         - name: Advanced Topics
           items:
           - name: Actor Storage
