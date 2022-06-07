@@ -38,6 +38,8 @@
             href: Documents/DataDrivenOverworldHeight.md
           - name: Editing NBTs Safely
             href: Documents/EditingNBTSafely.md
+          - name: Molang Beginner's Guide
+            href: Documents/MolangBeginnerGuide.md
     - name: Tutorials
       items:
         - name: Add-On Pack Tutorials
