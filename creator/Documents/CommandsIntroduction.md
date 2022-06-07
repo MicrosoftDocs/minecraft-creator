@@ -1,6 +1,6 @@
 ---
-author: neonerz
-ms.author: v-jeffreykim
+author: docsbryce
+ms.author: v-bbortree
 title: Introduction to Commands
 ms.prod: gaming
 description: A guide covering how Commands work in-game, the syntax that is used and what parameters are available to use.
@@ -195,13 +195,14 @@ There are a large number of input types. The most common ones are primitive nume
 
 Using player names as values for arguments isn’t ideal for a command system that’s intended to work for anyone. It’s not possible to know the names of the players who will be making use of your content ahead of time. Target selectors, which can target players and other entities arbitrarily, fixes this issue.
 
-There are 5 base selectors to pick from: `@p`, `@a`, `@r`, `@e`, and `@s`. The selector to choose depends on who or what the intended target is.
+There are 6 base selectors to pick from: `@p`, `@a`, `@r`, `@e`, `@s`, and `@initiator`. The selector to choose depends on who or what the intended target is.
 
 - `@p`: selects the single closest living player unless the execution origin is changed with the `x`, `y`, and `z` selector parameters. If the executor was a command block, the player closest to the command block would be selected since the command block’s coordinates are the execution origin.
 - `@a`: selects all online players, alive or not.
 - `@r`: selects one random living player unless the `type` parameter is specified.
 - `@e`: selects all entities (players, cows, dropped items, etc.)
 - `@s`: selects the executing entity, which can be changed with the `/execute` command.
+- `@initiator`: selects the player that initiates an NPC dialogue interaction.
 
 Selectors replace a player name where possible. For example, instead of specifying a player name in the `/gamemode` command, a selector can be used in its place. The following would change the game mode of all players to creative mode:
 

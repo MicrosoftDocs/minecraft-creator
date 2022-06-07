@@ -19,6 +19,10 @@ In this tutorial, you will learn the following:
 > - That it's possible to change an entity's behavior in Minecraft: Bedrock Edition.
 > - How to link a Behavior Pack to a Resource Pack.
 
+## Sample Behavior Pack
+
+There is a [sample behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/behavior_pack_sample) available at the Microsoft samples Github. it may be used to understand the structure of behavior packs and to check your work after the tutorial.
+
 ### Requirements
 
 It’s recommended that the following be completed before beginning this tutorial.
@@ -414,6 +418,8 @@ Now that the behavior pack has both a manifest file and a cow entity, it is time
 ## Troubleshooting
 
 Behavior pack woes? Troubleshooting is a normal part of any development process. Here are some places to begin troubleshooting a behavior pack.
+
+You can use the [sample behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/behavior_pack_sample) on the Minecraft samples Github to check the structure of your behavior pack.
 
 ### Behavior Pack Does Not Appear in Minecraft
 

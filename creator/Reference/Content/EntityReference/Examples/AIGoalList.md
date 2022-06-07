@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - AI Goal list
 
-Below is a list of all the available AI Goals within Minecraft:Bedrock Edition for use with Entity JSON files.
+Below is a list of all the available AI Goals within Minecraft: Bedrock Edition for use with Entity JSON files.
 
 AI Goal |Description
 :-----|:----------
@@ -27,9 +27,11 @@ AI Goal |Description
 [minecraft:behavior.charge_held_item](EntityGoals/minecraftBehavior_charge_held_item.md)|`minecraft:behavior.charge_held_item` allows an entity to charge and use their held item.
 [minecraft:behavior.circle_around_anchor](EntityGoals/minecraftBehavior_circle_around_anchor.md)|`minecraft:behavior.circle_around_anchor` causes an entity to circle around an anchor point placed near a point or target.
 [minecraft:behavior.controlled_by_player](EntityGoals/minecraftBehavior_controlled_by_player.md)|`minecraft:behavior.controlled_by_player` allows the entity to be controlled by the player using an item in the item_controllable property. On every tick, the entity will attempt to rotate towards where the player is facing with the control item whilst simultaneously moving forward.
+[minecraft:behavior.croak](EntityGoals/minecraftBehavior_croak.md)|`minecraft:behavior.croak` allows the entity to croak at a random time interval with configurable conditions.
 [minecraft:behavior.defend_trusted_target](EntityGoals/minecraftBehavior_defend_trusted_target.md)|`minecraft:behavior.defend_trusted_target` allows an entity to react with an event when a trusted target is attacked.
 [minecraft:behavior.defend_village_target](EntityGoals/minecraftBehavior_defend_village_target.md)|`minecraft:behavior.defend_village_target` allows the entity to stay in a village and defend the village from aggressors. If a player is in bad standing with the village, this goal will cause the entity to attack the player regardless of filter conditions.
 [minecraft:behavior.delayed_attack](EntityGoals/minecraftBehavior_delayed_attack.md)|`minecraft:behavior.delayed_attack` allows the entity to stay in a village and defend the village from aggressors. If a player is in bad standing with the village, this goal will cause the entity to attack the player regardless of filter conditions.
+[minecraft:behavior.dig](EntityGoals/minecraftBehavior_dig.md)|`minecraft:behavior.dig` activates the "DIGGING" actor flag during the specified duration. Currently only Warden can use the dig goal.
 [minecraft:behavior.door_interact](EntityGoals/minecraftBehavior_door_interact.md)|`minecraft:behavior.door_interact` allows an entity to interact with doors.
 [minecraft:behavior.dragonchargeplayer](EntityGoals/minecraftBehavior_dragonchargeplayer.md)|`minecraft:behavior.dragonchargeplayer`  allows this entity to attack a player by charging at them. The player is chosen by the `minecraft:behavior.dragonscanning`. Can only be used by the Ender Dragon.
 [minecraft:behavior.dragondeath](EntityGoals/minecraftBehavior_dragondeath.md)|`minecraft:behavior.dragondeath` controls the entity's death state and animation.
@@ -43,6 +45,8 @@ AI Goal |Description
 [minecraft:behavior.drop_item_for](EntityGoals/minecraftBehavior_drop_item_for.md)|`minecraft:behavior.drop_item_for` allows the entity to move toward a target, and drop an item near the target. This goal requires a `minecraft:navigation` to execute.
 [minecraft:behavior.eat_block](EntityGoals/minecraftBehavior_eat_block.md)|`minecraft:behavior.eat_block` allows the entity to consume a block, replace the eaten block with another block, and trigger an event as a result.
 [minecraft:behavior.eat_carried_item](EntityGoals/minecraftBehavior_eat_carried_item.md)|`minecraft:behavior.eat_carried_item` allows an entity to eat any item in its inventory and gain the benefits of the item.
+[minecraft:behavior.eat_mob](EntityGoals/minecraftBehavior_eat_mob.md)|`minecraft:behavior.eat_mob` allows the entity to eat a specified mob.
+[minecraft:behavior.emerge](EntityGoals/minecraftBehavior_emerge.md)|`minecraft:behavior.emerge` activates the "EMERGING" actor flag during the specified duration and triggers "on_done" at the end.
 [minecraft:behavior.enderman_leave_block](EntityGoals/minecraftBehavior_enderman_leave_block.md)|`minecraft:behavior.enderman_leave_block` allows the entity to drop the block they are currently holding.
 [minecraft:behavior.enderman_take_block](EntityGoals/minecraftBehavior_enderman_take_block.md)|`minecraft:behavior.enderman_take_block` allows the entity to pick up a nearby block and carry the block in it's hands.
 [minecraft:behavior.equip_item](EntityGoals/minecraftBehavior_equip_item.md)|`minecraft:behavior.equip_item` causes an entity to equip an item.
@@ -59,6 +63,8 @@ AI Goal |Description
 [minecraft:behavior.follow_owner](EntityGoals/minecraftBehavior_follow_owner.md)|`minecraft:behavior.follow_owner` allows an entity to follow a player marked as an owner.
 [minecraft:behavior.follow_parent](EntityGoals/minecraftBehavior_follow_parent.md)|`minecraft:behavior.follow_parent` allows an entity that has been tagged as a baby to follow their parent around.
 [minecraft:behavior.follow_target_captain](EntityGoals/minecraftBehavior_follow_target_captain.md)|`minecraft:behavior.follow_target_captain` allows an entity to follow a targeted captain.
+[minecraft:behavior.go_and_give_items_to_noteblock](EntityGoals/minecraftBehavior_go_and_give_items_to_noteblock.md)|`minecraft:behavior.go_and_give_items_to_noteblock` means the entity will attempt to toss the items from its inventory to a nearby recently played noteblock.
+[minecraft:behavior.go_and_give_items_to_owner](EntityGoals/minecraftBehavior_go_and_give_items_to_owner.md)|`minecraft:behavior.go_and_give_items_to_owner` means the entity will attempt to toss the items from its inventory to its owner.
 [minecraft:behavior.go_home](EntityGoals/minecraftBehavior_go_home.md)|`minecraft:behavior.go_home` allows an entity to travel back to where it was spawned at and trigger events upon arrival.
 [minecraft:behavior.guardian_attack](EntityGoals/minecraftBehavior_guardian_attack.md)|`minecraft:behavior.guardian_attack` allows this entity to use a laser beam attack. Can only be used by Guardians and Elder Guardians.
 [minecraft:behavior.harvest_farm_block](EntityGoals/minecraftBehavior_harvest_farm_block.md)|`minecraft:behavior.harvest_farm_block` `minecraft:behavior.harvest_farm_block` allows the entity to search within an area for farmland with air above it. If found, the entity will replace the air block by planting a seed item from its inventory on the farmland block. This goal requires `minecraft:inventory` and `minecraft:navigation` to execute. This goal will not execute if the entity does not have an item in its inventory.
@@ -66,6 +72,7 @@ AI Goal |Description
 [minecraft:behavior.hold_ground](EntityGoals/minecraftBehavior_hold_ground.md)|`minecraft:behavior.hold_ground` allows an entity to stop in their current location, turn to face a mob they are targeting and react with an event.
 [minecraft:behavior.hurt_by_target](EntityGoals/minecraftBehavior_hurt_by_target.md)|`minecraft:behavior.hurt_by_target` allows an entity to react when hit by set target.
 [minecraft:behavior.inspect_bookshelf](EntityGoals/minecraftBehavior_inspect_bookshelf.md)|`minecraft:behavior.inspect_bookshelf` allows an entity to look at and inspect a bookshelf.
+[minecraft:behavior.investigate_suspicious_location](EntityGoals/minecraftBehavior_investigate_suspicious_location.md)|`minecraft:behavior.investigate_suspicious_location` allows the entity to move towards a "suspicious" position based on data gathered in minecraft:suspect_tracking.
 [minecraft:behavior.jump_to_block](EntityGoals/minecraftBehavior_jump_to_block.md) |`minecraft:behavior.jump_to_block` allows the mob to search around for a block to jump to and then jump to that block.
 [minecraft:behavior.knockback_roar](EntityGoals/minecraftBehavior_knockback_roar.md)|`minecraft:behavior.knockback_roar` allows an entity to emit a roar effect that knocks back other entities in a set radius from where the roar was emitted.
 [minecraft:behavior.lay_down](EntityGoals/minecraftBehavior_lay_down.md)|`minecraft:behavior.lay_down` allows an entity randomly lay down for a period of time.
@@ -122,6 +129,7 @@ AI Goal |Description
 [minecraft:behavior.restrict_open_door](EntityGoals/minecraftBehavior_restrict_open_door.md)|`minecraft:behavior.restrict_open_door` allows an entity to stay indoors while the sun is down.
 [minecraft:behavior.restrict_sun](EntityGoals/minecraftBehavior_restrict_sun.md)|`minecraft:behavior.restrict_sun` allows an entity to actively avoid direct sunlight.
 [minecraft:behavior.rise_to_liquid_level](EntityGoals/minecraftBehavior_rise_to_liquid_level.md)|`minecraft:behavior.rise_to_liquid_level` allows the mob to stay at a certain level when in liquid.
+[minecraft:behavior.roar](EntityGoals/minecraftBehavior_roar.md)|`minecraft:behavior.roar` plays the provided sound and activates the "ROARING" actor flag during the specified duration.
 [minecraft:behavior.roll](EntityGoals/minecraftBehavior_roll.md)|`minecraft:behavior.roll` allows an entity roll forward.
 [minecraft:behavior.run_around_like_crazy](EntityGoals/minecraftBehavior_run_around_like_crazy.md)|`minecraft:behavior.run_around_like_crazy` allows an entity to run around without a set goal.
 [minecraft:behavior.scared](EntityGoals/minecraftBehavior_scared.md)|`minecraft:behavior.scared` allows the a mob to become scared when the weather outside is thundering.
@@ -137,12 +145,15 @@ AI Goal |Description
 [minecraft:behavior.slime_random_direction](EntityGoals/minecraftBehavior_slime_random_direction.md)|`minecraft:behavior.slime_random_direction` allows the entity to move in random directions like a slime.
 [minecraft:behavior.snacking](EntityGoals/minecraftBehavior_snacking.md)|`minecraft:behavior.snacking` allows an entity to stop and interact with select food items that are nearby.
 [minecraft:behavior.sneeze](EntityGoals/minecraftBehavior_sneeze.md)|`minecraft:behavior.sneeze` allows an entity to sneeze and potentially started other entities. While sneezing, the entity may drop an item.
+[minecraft:behavior.sniff](EntityGoals/minecraftBehavior_sniff.md)|`minecraft:behavior.sniff` means the entity detects the nearest player within "sniffing_radius" and updates its "minecraft:suspect_tracking" component state.
+[minecraft:behavior.sonic_boom](EntityGoals/minecraftBehavior_sonic_boom.md)|`minecraft:behavior.sonic_boom` plays the provided sounds and activates the "SONIC BOOM" actor flag during the specified duration.
 [minecraft:behavior.squid_dive](EntityGoals/minecraftBehavior_squid_dive.md)|`minecraft:behavior.squid_dive` allows an entity to dive underwater.
 [minecraft:behavior.squid_flee](EntityGoals/minecraftBehavior_squid_flee.md)|`minecraft:behavior.squid_flee` allows an entity to swim away when attacked.
 [minecraft:behavior.squid_idle](EntityGoals/minecraftBehavior_squid_idle.md)|`minecraft:behavior.squid_idle` allows an entity to swim in place.
 [minecraft:behavior.squid_move_away_from_ground](EntityGoals/minecraftBehavior_squid_move_away_from_ground.md)|`minecraft:behavior.squid_move_away_from_ground` allows an entity to swim away from the ground blocks.
 [minecraft:behavior.squid_out_of_water](EntityGoals/minecraftBehavior_squid_out_of_water.md)|`minecraft:behavior.squid_out_of_water` allows an entity to stay close to a ground block when out of water.
 [minecraft:behavior.stalk_and_pounce_on_target](EntityGoals/minecraftBehavior_stalk_and_pounce_on_target.md)|`minecraft:behavior.stalk_and_pounce_on_target` allows an entity to stalk a specific target. Once within range of the target, the entity will then leap at the target and deal damage based upon its attack attribute.
+[minecraft:behavior.stay_near_noteblock](EntityGoals/minecraftBehavior_stay_near_noteblock.md)|`minecraft:behavior.stay_near_noteblock` means the entity will attempt to stay near a recently played noteblock.
 [minecraft:behavior.stay_while_sitting](EntityGoals/minecraftBehavior_stay_while_sitting.md)|`minecraft:behavior.stay_while_sitting` allows an entity to stay in place while sitting.
 [minecraft:behavior.stomp_attack](EntityGoals/minecraftBehavior_stomp_attack.md)|`minecraft:behavior.stomp_attack` allows an entity to attack using stomp AoE damage behavior.
 [minecraft:behavior.stomp_turtle_egg](EntityGoals/minecraftBehavior_stomp_turtle_egg.md)|`minecraft:behavior.stomp_turtle_egg` allows an entity to target and stomp on turtle eggs when detected.

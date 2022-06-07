@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.door_interact` allows an entity to interact with doors.
 
 > [!CAUTION]
-> `minecraft:behavior.door_interact` is not currently used by any entities within Minecraft:Bedrock Edition.
+> `minecraft:behavior.door_interact` is not currently used by any entities within Minecraft: Bedrock Edition.
 
 ## Example
 

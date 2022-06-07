@@ -7,10 +7,10 @@ ms.prod: gaming
 
 # Features Documentation - Feature List
 
-Below is a list of all the available Features within Minecraft:Bedrock Edition for use within JSON files.
+Below is a list of all the available Features within Minecraft: Bedrock Edition for use within JSON files.
 
 > [!NOTE]
-> To learn more about Features within Minecraft:Bedrock Edition, please visit [Introduction to Features](FeaturesIntroduction.md)
+> To learn more about Features within Minecraft: Bedrock Edition, please visit [Introduction to Features](FeaturesIntroduction.md)
 
 ## List of Features
 

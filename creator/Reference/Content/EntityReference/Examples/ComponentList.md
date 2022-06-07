@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - Component list
 
-Below is a list of all the available Components within Minecraft:Bedrock Edition for use with Entity JSON files.
+Below is a list of all the available Components within Minecraft: Bedrock Edition for use with Entity JSON files.
 
 |Component |Description|
 |:-----|:----------|

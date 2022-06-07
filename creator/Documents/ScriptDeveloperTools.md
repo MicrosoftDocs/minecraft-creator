@@ -3,12 +3,12 @@ author: mikeam
 ms.author: mikeam
 title: Use Visual Studio Code tools to write script
 ms.prod: gaming
-description: Use tools for enhanced editing and debugging of GameTest scripts within Visual Studio Code
+description: Use tools for enhanced editing, debugging and profiling of GameTest scripts within Visual Studio Code
 ---
 
 # Use Visual Studio Code tools to write script
 
-Two new tools can make the process of writing your GameTest scripts easier and more fun within Visual Studio Code.
+Two new tools can make the process of writing your GameTest scripts easier and more fun within Visual Studio Code. In this article, we'll discuss how you can install custom type definitions for Minecraft to provide autocomplete as you work, the Minecraft Script Debugger, and the Minecraft Script Profiler.
 
 ## Custom type definition files for Visual Studio Code Intellisense
 
@@ -183,4 +183,61 @@ You can run commands in Bedrock Dedicated Server to initiate tests, such as `/ga
 
 You can set breakpoints in your code by clicking on the left-hand side of the editor, on specific lines of code. As you run the tests in the behavior pack, your breakpoints should be hit. You can also view local variables and add watches as necessary.
 
-That's it! Between updated code helpers as you add lines of JavaScript, and new debugger capabilities within Visual Studio Code, we hope you'll be able to write more extensive tests and script much more quickly.
+### Using the Minecraft Scripting Profiler
+
+A profiler is a set of monitoring code that measures the amount of time spent running various functions. With it, you can identify where most of your time is spent within your GameTest scripts. This may then lead you to discovering unexpected function calling patterns that may consume a lot of time.
+
+#### Run the profiler during a typical session for your script
+
+To get started, ensure you have a world with the GameTest Framework experiment enabled, and a behavior pack with JavaScript within it. Your first step is to create a profile session, or in other words, log the performance characteristics of your script as you play through the game.
+
+To run the script profiler and start a new profile session, run the following command:
+
+``` 
+/script profiler start
+```
+
+Then, exercise your code by running through and playing Minecraft. You’ll want to go through normal gameplay or testing patterns to have your GameTest code exercised in representative ways of how players might encounter your experience.
+
+After a while – many minutes, perhaps, end your profiler session by running the following command:
+
+```
+/script profiler stop
+```
+
+This will create a .cpuprofile with a timestamp within your Minecraft log folder.
+
+![Results after saving a new profile](Media/ScriptDeveloperTools/profilerstop.png)
+
+
+If you are using the retail version of Minecraft, the log folder is located at:
+
+`%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\logs\`
+
+If you are using Minecraft Preview, that log folder is located at:
+
+`%localappdata%\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\logs`
+
+To view a CPUProfile, simply open it within Visual Studio Code. The first time you open a CPUProfile file, your operating system will ask you how you wish to open the file. Select Open in [Visual Studio Code](https://code.visualstudio.com):
+
+![Open CPU profile files in Visual Studio Code](Media/ScriptDeveloperTools/profileropeninvsc.png)
+
+(Note that if you wish to have source links from the profile resolve to your source files correctly, start Visual Studio Code (or set its working directory) within the root of your behavior pack.)
+
+By default, this will give you a simple visual listing of the functions that were called during your CPU Profile session, and the cumulative time that they have taken:
+
+![Profiler results](Media/ScriptDeveloperTools/profilerresults.png)
+
+As a developer, you can start to optimize your code to adjust for performance - in this case, perhaps organizing code to share instances of a dimension object rather than repeatedly calling world.getDimension.
+
+Note that within Visual Studio Code, you can install an optional "Flame Chart" plugin by clicking the little flame icon in the upper right of your screen (circled in red, below):
+
+![Profiler showing flame icon in upper right hand corner](Media/ScriptDeveloperTools/profilerflame.png)
+
+Note: In versions 1.19.10 and beyond, the script profiler has been expanded to support coverage of core Bedrock API calls in addition to overall function calls.
+
+With this profiler capability, you can quickly identify hotspots and where server time is spent, and spend your time optimizing your code where it matters.
+
+### Summary
+
+That's it! Between updated code helpers as you add lines of JavaScript, debugger capabilities within Visual Studio Code, and profiler support we hope you'll be able to write more extensive tests and script much more quickly.

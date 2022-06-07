@@ -50,7 +50,7 @@ productDirectory:
     # Card
     - title: Getting Started with Add-On Development
       imageSrc: images/Add-Resource-Pack.png
-      summary: Working with Add-Ons in Minecraft:Bedrock Edition is easy! Learn how to get started
+      summary: "Working with Add-Ons in Minecraft: Bedrock Edition is easy! Learn how to get started"
       url: Documents/GettingStarted.md
     # Card
     - title: JSON Reference Documentation

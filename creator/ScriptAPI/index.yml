@@ -30,6 +30,8 @@ landingContent:
              url: ../Documents/GameTestBuildYourFirstGameTest.md
            - text: Creating a simple gameplay experience
              url: ../Documents/ScriptingGettingStarted.md
+           - text: Use scripting with dedicated servers
+             url: ../Documents/ScriptingServers.md
            - text: Use Visual Studio Code tools to write script
              url: ../Documents/ScriptDeveloperTools.md
   # Card (optional)
