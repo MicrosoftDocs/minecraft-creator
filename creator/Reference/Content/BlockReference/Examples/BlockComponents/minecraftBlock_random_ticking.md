@@ -1,19 +1,22 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-bbortree
 title: Block Documentation - minecraft:random_ticking
 ms.prod: gaming
 ---
 
 # Block Documentation - minecraft:random_ticking
 
-`minecraft:random_ticking` is a component controlled by a `JSON object` that describes how the component will trigger an event at an irregular interval between two values.
+`minecraft:random_ticking`  triggers the specified event randomly based on the random tick speed gamerule. The random tick speed determines how often blocks are updated.
+
+>[!IMPORTANT]
+> `minecraft:random_ticking` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
 
 ## Default Parameter
 
 |Default Value|Type | Description |
 |:----|:----|:----|
-|on_tick| trigger |The event that will be triggered on ticks |
+|on_tick| trigger | The event that will be triggered on random ticks. |
 
 ## Triggers
 
@@ -22,10 +25,9 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|condition| 1| String| The condition of event to be executed on the block. |
-|event| set_block_property| String|  The type of event executed on the block. |
-|range| [10, 10]| Array|  The Range between which the component will trigger his event. |
-|target| self| String| The target of event executed on the block. |
+|condition| 1| String|  A condition using Molang queries that results to true/false. If true on the random tick, the event will be triggered. If false on the random tick, the event will not be triggered. |
+|event| set_block_property| String|  The event that will be triggered. |
+|target| self| String| The target of the event executed by the block |
 
 ## Example
 

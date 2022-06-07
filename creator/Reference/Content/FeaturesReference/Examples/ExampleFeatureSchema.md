@@ -3,6 +3,7 @@ author: docsbryce
 ms.author: v-bbortree
 title: Features Documentation - Feature schema
 ms.prod: gaming
+description: "Examples of feature schemas available in Minecraft: Bedrock Edition."
 ---
 
 # Features Documentation - Feature Schema
@@ -235,7 +236,7 @@ Here is an example of the complete feature schema:
               string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
           }
           float "ratio_of_empty_space" : opt // Ratio of a Chunk to be filled with empty space rather than features.
-          array "feature_areas"[1,4294967295]
+          array "feature_areas"[1,*]
           {
               object "<any array element>" : opt
               {
@@ -571,6 +572,29 @@ Here is an example of the complete feature schema:
                           int "radius"<0-*>
                            "leaf_block"
                       }
+                      object "mangrove_canopy" : opt
+                      {
+                           "canopy_height"
+                           "canopy_radius"
+                          int "leaf_placement_attempts"<1-*>
+                          array "leaf_blocks"
+                          {
+                              array "<any array element>"[2]
+                              {
+                                   "[0..0]"
+                                  float "[1..1]"
+                              }
+                          }
+                          object "canopy_decoration" : opt
+                          {
+                              chance_information "decoration_chance"
+                               "decoration_block" : opt
+                              int "num_steps" : opt
+                              enumerated_value "step_direction"<"down", "up", "out", "away"> : opt
+                          }
+                           "hanging_block"
+                          chance_information "hanging_block_placement_chance"
+                      }
                       object "mega_canopy" : opt
                       {
                            "canopy_height"
@@ -652,6 +676,30 @@ Here is an example of the complete feature schema:
               float "width_scale"<0.000000-*>
               float "foliage_altitude_factor"<0.000000-1.000000>
           }
+          object "mangrove_trunk" : opt
+          {
+              int "trunk_width"
+              object "trunk_height"
+              {
+                  int "base"<1-*>
+                  int "height_rand_a"<1-*>
+                  int "height_rand_b"<1-*>
+              }
+               "trunk_block"
+              object "branches" : opt
+              {
+                   "branch_length"
+                   "branch_steps"
+                  chance_information "branch_chance"
+              }
+              object "trunk_decoration" : opt
+              {
+                  chance_information "decoration_chance"
+                   "decoration_block" : opt
+                  int "num_steps" : opt
+                  enumerated_value "step_direction"<"down", "up", "out", "away"> : opt
+              }
+          }
           object "mega_trunk" : opt
           {
               int "trunk_width"
@@ -721,6 +769,29 @@ Here is an example of the complete feature schema:
                           int "height"<1-*>
                           int "radius"<0-*>
                            "leaf_block"
+                      }
+                      object "mangrove_canopy" : opt
+                      {
+                           "canopy_height"
+                           "canopy_radius"
+                          int "leaf_placement_attempts"<1-*>
+                          array "leaf_blocks"
+                          {
+                              array "<any array element>"[2]
+                              {
+                                   "[0..0]"
+                                  float "[1..1]"
+                              }
+                          }
+                          object "canopy_decoration" : opt
+                          {
+                              chance_information "decoration_chance"
+                               "decoration_block" : opt
+                              int "num_steps" : opt
+                              enumerated_value "step_direction"<"down", "up", "out", "away"> : opt
+                          }
+                           "hanging_block"
+                          chance_information "hanging_block_placement_chance"
                       }
                       object "mega_canopy" : opt
                       {
@@ -819,6 +890,29 @@ Here is an example of the complete feature schema:
               int "radius"<0-*>
                "leaf_block"
           }
+          object "mangrove_canopy" : opt
+          {
+               "canopy_height"
+               "canopy_radius"
+              int "leaf_placement_attempts"<1-*>
+              array "leaf_blocks"
+              {
+                  array "<any array element>"[2]
+                  {
+                       "[0..0]"
+                      float "[1..1]"
+                  }
+              }
+              object "canopy_decoration" : opt
+              {
+                  chance_information "decoration_chance"
+                   "decoration_block" : opt
+                  int "num_steps" : opt
+                  enumerated_value "step_direction"<"down", "up", "out", "away"> : opt
+              }
+               "hanging_block"
+              chance_information "hanging_block_placement_chance"
+          }
           object "mega_canopy" : opt
           {
                "canopy_height"
@@ -868,6 +962,31 @@ Here is an example of the complete feature schema:
                        "[0..0]"
                       float "[1..1]"
                   }
+              }
+          }
+          object "mangrove_roots" : opt
+          {
+              int "max_root_width"<1-*>
+              int "max_root_length"<1-*>
+               "root_block"
+              object "above_root" : opt
+              {
+                  chance_information "above_root_chance" : opt
+                   "above_root_block" : opt
+              }
+               "muddy_root_block"
+               "mud_block"
+               "y_offset"
+              array "roots_may_grow_through"
+              {
+                   "<any array element>"
+              }
+              object "root_decoration" : opt
+              {
+                  chance_information "decoration_chance"
+                   "decoration_block" : opt
+                  int "num_steps" : opt
+                  enumerated_value "step_direction"<"down", "up", "out", "away"> : opt
               }
           }
       }

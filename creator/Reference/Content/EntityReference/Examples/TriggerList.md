@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - Trigger list
 
-Below is a list of all the available Triggers within Minecraft:Bedrock Edition for use with Entity JSON files.
+Below is a list of all the available Triggers within Minecraft: Bedrock Edition for use with Entity JSON files.
 
 |Trigger |Description|
 |:------|:----------|

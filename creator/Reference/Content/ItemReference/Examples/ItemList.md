@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Item Documentation - Items
 
-Below is a list of all the available Item JSON files within Minecraft:Bedrock Edition.
+Below is a list of all the available Item JSON files within Minecraft: Bedrock Edition.
 
 - [apple](../../../Source/VanillaBehaviorPack_Snippets/items/apple.md)
 - [appleEnchanted](../../../Source/VanillaBehaviorPack_Snippets/items/appleEnchanted.md)

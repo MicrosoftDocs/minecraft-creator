@@ -90,7 +90,7 @@ Components
 
 ## Vanilla Entity Spawn Rules
 
-Below is a list of all the available Spawn Rules that entities within Minecraft:Bedrock Edition located in the Vanilla Behavior Pack.
+Below is a list of all the available Spawn Rules that entities within Minecraft: Bedrock Edition located in the Vanilla Behavior Pack.
 
 |Entity Spawn Rules JSON |
 |:-----|

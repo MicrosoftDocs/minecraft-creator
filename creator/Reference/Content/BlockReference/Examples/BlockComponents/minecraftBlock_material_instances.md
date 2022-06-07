@@ -1,20 +1,20 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-bbortree
 title: Block Documentation - minecraft:material_instances
 ms.prod: gaming
 ---
 
 # Block Documentation - minecraft:material_instances
 
-`minecraft:material_instances` is a `JSON Object` component that specifies the material instances for a block.
+`minecraft:material_instances` is a `JSON Object` component that specifies the material instances for a block. Maps face or material_instance names in a geometry file to an actual material instance. Material instance can either be a full material instance or a name to another already defined instance. Limited to 64 instances. 
 
 >[!IMPORTANT]
 > `minecraft:material_instances` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
 >
 >Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
 >
->To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md)
+>To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md).
 
 ## Material Instance
 

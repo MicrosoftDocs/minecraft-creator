@@ -22,6 +22,14 @@
             href: Documents/ConvertingTexturePacks.md
           - name: Preparing Raw Text for Localization
             href: Documents/PreparingRawTextForLocalization.md
+        - name: World Creation and Gameplay with Parkour Map
+          items:
+          - name: Parkour Introduction
+            href: Documents/ParkourIntro.md
+          - name: Parkour Map Walkthrough
+            href: Documents/ParkourMapWalkthrough.md
+          - name: Parkour Map Creation Guide
+            href: Documents/ParkourMapGuide.md                        
         - name: Advanced Topics
           items:
           - name: Actor Storage
@@ -68,6 +76,8 @@
             href: Documents/ScoreboardOperationsTutorial.md
           - name: The Tickingarea Command
             href: Documents/TickingAreaCommand.md
+          - name: New /execute command syntax
+            href: Documents/CommandsNewExecute.md
           - name: How to use tick.json
             href: Documents/TickJsonIntroduction.md
         - name: Minecraft Entities
@@ -116,6 +126,8 @@
             href: Documents/GameTestBuildYourFirstGameTest.md
           - name: Build Gameplay with TypeScript
             href: Documents/ScriptingGettingStarted.md
+          - name: Use Script Along with Dedicated Servers
+            href: Documents/ScriptingServers.md
           - name: Use Visual Studio Code Tools to Write Script
             href: Documents/ScriptDeveloperTools.md
         - name: Creator Tools

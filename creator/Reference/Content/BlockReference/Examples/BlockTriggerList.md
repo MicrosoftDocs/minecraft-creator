@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Block Documentation - Block Trigger
 
-Below is a list of all the available Block Trigger within Minecraft:Bedrock Edition for use with Block JSON files.
+Below is a list of all the available Block Trigger within Minecraft: Bedrock Edition for use with Block JSON files.
 
 ## Block Trigger List
 

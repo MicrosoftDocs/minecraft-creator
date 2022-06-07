@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: JDHeaden
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.sleep
 ms.prod: gaming
 ---
@@ -16,11 +16,12 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|cooldown_time| 0.0| Decimal| Time in seconds the mob has to wait before using the goal again |
-|sleep_collider_height| 1.0| Decimal|  The height of the mob's collider while sleeping |
-|sleep_collider_width| 1.0| Decimal|  The width of the mob's collider while sleeping |
-|sleep_y_offset| 1.0| Decimal|  The y offset of the mob's collider while sleeping |
-|speed_multiplier| 1.0| Decimal|  Movement speed multiplier of the mob when using this AI Goal |
+| can_sleep_while_riding| false| Boolean|  If true, the mob will be able to use the sleep goal if riding something |
+| cooldown_time| 0.0| Decimal| Time in seconds the mob has to wait before using the goal again |
+| sleep_collider_height| 1.0| Decimal|  The height of the mob's collider while sleeping |
+| sleep_collider_width| 1.0| Decimal|  The width of the mob's collider while sleeping |
+| sleep_y_offset| 1.0| Decimal|  The y offset of the mob's collider while sleeping |
+| speed_multiplier| 1.0| Decimal|  Movement speed multiplier of the mob when using this AI Goal |
 | timeout_cooldown| 8.0| Decimal| The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition |
 
 ## Example

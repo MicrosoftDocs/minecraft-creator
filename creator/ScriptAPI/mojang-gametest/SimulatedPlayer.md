@@ -193,7 +193,7 @@ Adds an effect, like poison, to the entity.
   Type of effect to add to the entity.
 - **duration**: *number*
   
-  Amount of time, in seconds, for the effect to apply.
+  Amount of time, in ticks, for the effect to apply.
 - **amplifier**?: *number* = `0`
   
   Optional amplification of the effect to apply.
