@@ -131,7 +131,7 @@ Tests that a block has a particular state value at the specified location. If it
 ##### *testIfButtonNotPressed.js*
 ```javascript
 test.assertBlockState(buttonPos, (block) => {
-  return block.getBlockData().getProperty("button_pressed_bit") == 0;
+  return block.permutation.getProperty("button_pressed_bit") == 0;
 });
 ```
 ### **assertCanReachLocation**
