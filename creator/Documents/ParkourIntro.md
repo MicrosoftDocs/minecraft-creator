@@ -6,7 +6,7 @@ ms.prod: gaming
 description: "An introduction to creating a world using a parkour map"
 ---
 
-# Creating Maps and Game Development -- Parkour Map
+# Creating Maps and Game Development - Parkour Map
 
 This series will cover how to build an obstacle course, commonly known as a parkour map, from the ground up. We'll reverse engineer an existing map, talk through the various challenges, touch on player mechanics, and finally build and share our own map.
 
@@ -37,4 +37,5 @@ Check out the Parkour Map Walkthrough to see how a fun gameplay loop was develop
 
 > [!div class="nextstepaction"]
 > [Parkour Map Walkthrough](ParkourMapWalkthrough.md)
+
 
