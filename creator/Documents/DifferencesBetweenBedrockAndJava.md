@@ -51,11 +51,9 @@ One major difference that tends to be forgotten is the type of platform players 
 
 That means when designing experiences in Bedrock Edition, you should be aware of the different types of input players will be using. Also, keep in mind *how* your players are playing. While spam clicking might be OK with a mouse or even a controller, it would provide a poor experience for touch players. Keyboard players with a bow might have perfect aim, but it's a lot more difficult when using a controller or touch controls. Complex parkour might even be game-breaking for a mobile player.
 
-**Performance**
+**Considerations**
 
-That means when designing experiences in Bedrock Edition, you should be aware of the different types of input players will be using. Also, keep in mind *how* your players are playing. While spam-clicking might be OK with a mouse or even a controller, it would provide a poor experience for touch players. Keyboard players with a bow might have perfect aim, but it's a lot more difficult when using a controller or touch controls. Complex parkour might even be game-breaking for a mobile player.
-
-## Summary
+That means when designing experiences in Bedrock Edition, you should be aware of the different types of input players will be using and what their experience might be like on PC and console. Also, keep in mind *how* your players are playing. While spam-clicking might be OK with a mouse or even a controller, it would provide a poor experience for touch players. Keyboard players with a bow might have perfect aim, but it's a lot more difficult when using a controller or touch controls. Complex parkour might even be game-breaking for a mobile player.
 
 Besides normal bugs causing issues, the advanced features the platform provides also means there are more ways to break the game. Lots of entities with complicated behaviors can slow down some devices. Custom entities that use overly complex models can eat up RAM. Even the amount of chunks that can be loaded at once may be dramatically less on lower-end devices like mobile.
 
