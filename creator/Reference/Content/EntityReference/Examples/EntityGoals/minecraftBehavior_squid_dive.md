@@ -1,5 +1,5 @@
 ---
-author:mammerla
+author: mammerla
 ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.squid_dive
 ms.prod: gaming

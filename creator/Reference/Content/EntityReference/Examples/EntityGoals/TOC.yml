@@ -284,8 +284,8 @@
   href: minecraftBehavior_squid_out_of_water.md 
 - name: behavior.stalk_and_pounce_on_target
   href: minecraftBehavior_stalk_and_pounce_on_target.md
-- name: behavior.stay_near_notebook
-  href: minecraftBehavior_stay_near_notebook.md
+- name: behavior.stay_near_noteblock
+  href: minecraftBehavior_stay_near_noteblock.md
 - name: behavior.stay_while_sitting
   href: minecraftBehavior_stay_while_sitting.md
 - name: behavior.stomp_attack
