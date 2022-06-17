@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.random_fly
 ms.prod: gaming
 ---
@@ -35,7 +35,18 @@ ms.prod: gaming
 
 ### parrot
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/parrot.json" range="54-62":::
+```json
+"minecraft:behavior.random_fly": {
+          "priority": 2,
+          "xz_dist": 15,
+          "y_dist": 1,
+          "y_offset": 0,
+          "speed_multiplier": 1.0,
+          "can_land_on_trees": true,
+          "avoid_damage_blocks": true
+        },
+
+``````
 
 ## Vanilla entities using `minecraft:behavior.random_fly`
 

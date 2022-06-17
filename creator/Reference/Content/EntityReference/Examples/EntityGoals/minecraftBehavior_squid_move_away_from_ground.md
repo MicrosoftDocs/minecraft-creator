@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.squid_move_away_from_ground
 ms.prod: gaming
 ---
@@ -24,7 +24,12 @@ ms.prod: gaming
 
 ### squid
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/squid.json" range="80-82":::
+```json
+"minecraft:behavior.squid_move_away_from_ground": {
+        "priority": 1
+      },
+
+```
 
 ## Vanilla entities using `minecraft:behavior.squid_move_away_from_ground`
 

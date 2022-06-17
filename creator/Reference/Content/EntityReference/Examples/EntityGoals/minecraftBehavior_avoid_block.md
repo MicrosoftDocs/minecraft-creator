@@ -1,6 +1,6 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.avoid_block
 ms.prod: gaming
 ---
@@ -23,7 +23,6 @@ ms.prod: gaming
 | target_selection_method| nearest | String| Block search method. |
 | tick_interval| 1 | Integer | Should start tick interval. |
 | walk_speed_modifier| 1.0 | Decimal| Modifier for walking speed. 1.0 means keep the regular speed, while higher numbers make the walking speed faster. |
-
 
 ## Example
 
@@ -85,4 +84,3 @@ ms.prod: gaming
 
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
 - [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
-

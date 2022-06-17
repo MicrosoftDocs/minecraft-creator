@@ -1,6 +1,6 @@
 ---
 author: docsbryce
-ms.author: v-bbortree
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.defend_village_target
 ms.prod: gaming
 ---
@@ -8,8 +8,6 @@ ms.prod: gaming
 # Entity Documentation - minecraft:behavior.defend_village_target
 
 `minecraft:behavior.defend_village_target` allows the entity to stay in a village and defend the village from aggressors. If a player is in bad standing with the village, this goal will cause the entity to attack the player regardless of filter conditions.
-
-
 
 ## Parameters
 | Name| Default Value| Type| Description |
@@ -52,4 +50,3 @@ ms.prod: gaming
 ## Vanilla entities using `defend_village_target`
 
 - [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
-

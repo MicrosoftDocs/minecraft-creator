@@ -1,6 +1,6 @@
 ---
 author: docsbryce
-ms.author: v-bbortree
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.stomp_attack
 ms.prod: gaming
 ---
@@ -9,9 +9,7 @@ ms.prod: gaming
 
 `minecraft:behavior.stomp_attack` allows an entity to attack using stomp AoE damage behavior.
 
-
 ## Parameters
-
 
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|

@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.receive_love
 ms.prod: gaming
 ---
@@ -31,7 +31,12 @@ ms.prod: gaming
 
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="1241-1243":::
+```json
+"minecraft:behavior.receive_love": {
+          "priority": 6
+        },
+
+```
 
 ## Vanilla entities using `minecraft:behavior.receive_love`
 

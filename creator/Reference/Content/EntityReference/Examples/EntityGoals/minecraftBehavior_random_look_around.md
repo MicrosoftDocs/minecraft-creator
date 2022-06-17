@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: Mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.random_look_around
 ms.prod: gaming
 ---
@@ -28,9 +28,14 @@ ms.prod: gaming
 
 ### blaze
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/blaze.json" range="136-138":::
+```json
+"minecraft:behavior.random_look_around": {
+        "priority": 5
+      },
 
-## Vanilla entities using `minecraft:behavior.random_look_around`
+```
+
+### Vanilla entities using `minecraft:behavior.random_look_around`
 
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)

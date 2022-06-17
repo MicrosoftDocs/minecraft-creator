@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.defend_trusted_target
 ms.prod: gaming
 ---
@@ -23,6 +23,8 @@ ms.prod: gaming
 |[entity_types](../Definitions/NestedTables/entity_types.md)|*not set* | JSON Object| List of entity types that this mob considers valid targets|
 |must_see| false| Boolean| If true, only entities in this mob's viewing range can be selected as targets |
 |must_see_forget_duration| 3.0| Decimal| Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more |
+|on_defend_start | *not set* | Array | Event that can occur with Target when defense event begins. |
+|sound_chance| 0.05| Decimal | Probability that a sound will play. |
 |within_radius| 0.0| Decimal| Distance in blocks that the target can be within to launch an attack|
 
 ## Example
@@ -45,7 +47,20 @@ ms.prod: gaming
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="79-89":::
+```json
+"minecraft:behavior.defend_trusted_target": {
+          "priority": 0,
+          "within_radius": 25,
+          "must_see": false,
+          "aggro_sound": "mad",
+          "sound_chance": 0.05,
+          "on_defend_start": {
+            "event": "minecraft:fox_configure_defending",
+            "target": "self"
+          }
+}
+
+```
 
 ## Vanilla entities using `minecraft:behavior.defend_trusted_target`
 
