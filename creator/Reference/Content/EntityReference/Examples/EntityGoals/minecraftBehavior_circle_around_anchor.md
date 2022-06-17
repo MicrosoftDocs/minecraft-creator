@@ -1,6 +1,6 @@
 ---
 author: docsbryce
-ms.author: v-jillhedaen
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.circle_around_anchor
 ms.prod: gaming
 ---
