@@ -1,5 +1,5 @@
 ---
-author: v-jillheaden
+author: mammerla
 ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.move_to_liquid
 ms.prod: gaming

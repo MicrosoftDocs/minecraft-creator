@@ -9,13 +9,11 @@ ms.prod: gaming
 
 `minecraft:behavior.move_towards_dwelling_restriction` allows mobs with the dweller component to move toward their Village area that the mob should be restricted to.
 
-
 ## Parameter
-
 
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
-| speed_multiplier| 1.0| Decimal| This multiplier modifies the entity's speed when moving towards it's restriction. |
+| speed_multiplier| 1.0| Decimal| This multiplier modifies the entity's speed when moving towards its restriction. |
 
 ## Example
 
@@ -24,6 +22,7 @@ ms.prod: gaming
     "priority": 4,
     "speed_multiplier": 1.0
 }
+
 ```
 
 ## Vanilla mob examples
@@ -42,4 +41,3 @@ ms.prod: gaming
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
 - [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
 - [villager_v2](../../../../source/vanillabehaviorpack_snippets/entities/villager_v2.md)
-

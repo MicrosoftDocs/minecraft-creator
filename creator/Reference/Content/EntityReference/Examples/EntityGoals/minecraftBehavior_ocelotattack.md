@@ -1,6 +1,6 @@
 ---
 author: docsbryce
-ms.author: v-bbortree
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.ocelotattack
 ms.prod: gaming
 ---
@@ -10,7 +10,6 @@ ms.prod: gaming
 `minecraft:behavior.ocelotattack` allows an entity to attack by sneaking and pouncing.
 
 ## Parameter
-
 
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
@@ -67,4 +66,3 @@ ms.prod: gaming
 
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
 - [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
-

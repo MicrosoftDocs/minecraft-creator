@@ -1,6 +1,6 @@
 ---
 author: docsbryce
-ms.author: v-bbortree
+ms.author: v-jillhedaen
 title: Entity Documentation - minecraft:behavior.circle_around_anchor
 ms.prod: gaming
 ---
@@ -9,9 +9,7 @@ ms.prod: gaming
 
 `minecraft:behavior.circle_around_anchor` causes an entity to circle around an anchor point placed near a point or target.
 
-
 ## Parameters
-
 
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
@@ -24,9 +22,6 @@ ms.prod: gaming
 | radius_change| 1.0| Decimal| The number of blocks to increase the current movement radius by, upon successful "radius_adjustment_chance". If the current radius increases over the range maximum, the current radius will be set back to the range minimum and the entity will change between clockwise and counter-clockwise movement.. |
 | radius_range| [ 5.0, 15.0 ]| Range [a, b]| Horizontal distance from the anchor point this entity must stay within upon a successful radius adjustment. |
 | speed_multiplier| 1.0| Decimal| Multiplies the speed at which this entity travels to its next desired position. |
-
-
-
 
 ## Example
 

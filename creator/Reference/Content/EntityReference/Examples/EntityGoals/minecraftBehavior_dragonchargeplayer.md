@@ -1,6 +1,6 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.dragonchargeplayer
 ms.prod: gaming
 ---
@@ -43,4 +43,3 @@ ms.prod: gaming
 ## Vanilla entities using `dragonchargeplayer`
 
 - [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)
-

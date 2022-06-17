@@ -1,7 +1,7 @@
 ---
 author: docsbryce
 ms.author: v-bbortree
-title: Entity Documentation - minecraft:behavior
+title: Entity Documentation - minecraft:behavior.move_towards_home_restriction
 ms.prod: gaming
 ---
 
@@ -9,13 +9,11 @@ ms.prod: gaming
 
 `minecraft:behavior.move_towards_home_restriction` allows mobs with the home component to move toward their pre-defined area that the mob should be restricted to.
 
-
 ## Parameter
-
 
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
-| speed_multiplier| 1.0| Decimal| This multiplier modifies the entity's speed when moving towards it's restriction. |
+| speed_multiplier| 1.0| Decimal| This multiplier modifies the entity's speed when moving towards its restriction. |
 
 ## Example
 
@@ -35,6 +33,7 @@ ms.prod: gaming
     "priority": 5,
     "speed_multiplier": 1.0
 }
+
 ```
 
 ### Vanilla mobs using `move_towards_home_restriction`
@@ -42,4 +41,3 @@ ms.prod: gaming
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
 - [guardian](../../../../source/vanillabehaviorpack_snippets/entities/guardian.md)
-

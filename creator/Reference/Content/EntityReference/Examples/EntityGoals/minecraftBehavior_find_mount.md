@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.find_mount
 ms.prod: gaming
 ---
@@ -36,7 +36,12 @@ ms.prod: gaming
 
 ### husk
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/husk.json" range="108-111":::
+```json
+"minecraft:behavior.find_mount": {
+          "priority": 1,
+          "within_radius": 16
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.find_mount`
 

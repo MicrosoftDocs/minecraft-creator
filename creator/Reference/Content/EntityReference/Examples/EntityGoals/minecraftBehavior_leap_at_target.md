@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.leap_at_target
 ms.prod: gaming
 ---
@@ -21,7 +21,8 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 |must_be_on_ground| true| Boolean|  If true, the mob will only jump at its target if its on the ground. Setting it to false will allow it to jump even if its already in the air |
 |set_persistent| false| Boolean|  Allows the actor to be set to persist upon targeting a player |
-|yd| 0.0| Decimal| The height in blocks the mob jumps when leaping at its target |
+|target_dist| 0.3| Decimal| Distance in blocks the mob jumps when leaping at its target.|
+|yd| 0.0| Decimal| Height in blocks the mob jumps when leaping at its target. |
 
 ## Example
 
@@ -38,7 +39,14 @@ ms.prod: gaming
 
 ### spider
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/spider.json" range="128-132":::
+```json
+"minecraft:behavior.leap_at_target": {
+          "priority": 4,
+          "yd": 0.4,
+          "must_be_on_ground": false
+        },
+
+```
 
 ## Vanilla entities using `minecraft:behavior.leap_at_target`
 

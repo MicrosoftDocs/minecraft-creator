@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author:mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.squid_dive
 ms.prod: gaming
 ---
@@ -24,7 +24,12 @@ ms.prod: gaming
 
 ### squid
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/squid.json" range="89-91":::
+```json
+"minecraft:behavior.squid_dive": {
+        "priority": 2
+      },
+
+```
 
 ## Vanilla entities using `minecraft:behavior.squid_dive`
 

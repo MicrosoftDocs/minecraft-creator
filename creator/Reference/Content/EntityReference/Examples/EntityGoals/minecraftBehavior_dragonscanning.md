@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.dragonscanning
 ms.prod: gaming
 ---
@@ -24,7 +24,11 @@ ms.prod: gaming
 
 ### ender_dragon
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ender_dragon.json" range="19-21":::
+```json
+"minecraft:behavior.dragonscanning": {
+          "priority": 2
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.dragonscanning`
 

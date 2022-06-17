@@ -43,4 +43,3 @@ ms.prod: gaming
 ## Vanilla entities using `minecraft:behavior.swoop_attack`
 
 - [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)
-

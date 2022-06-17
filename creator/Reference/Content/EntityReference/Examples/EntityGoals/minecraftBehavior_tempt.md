@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.tempt
 ms.prod: gaming
 ---
@@ -15,7 +15,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 | can_get_scared| false| Boolean| If true, the mob can stop being tempted if the player moves too fast while close to this mob |
 | can_tempt_vertically| false| Boolean| If true, vertical distance to the player will be considered when tempting. |
-| can_tempt_while_ridden| false| Boolean| If true, the mob can be tempted even if it has a passenger (i.e. if being ridden). |
+| can_tempt_while_ridden| false| Boolean| If true, the mob can be tempted even if it has a passenger riding it. |
 | items| | List| List of items this mob is tempted by |
 | sound_interval| [0.0, 0.0]| Range [a, b] |Range of random ticks to wait between tempt sounds. |
 | speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |
@@ -38,9 +38,25 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### mooshroom
+### strider
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/mooshroom.json" range="490-496":::
+```json
+"minecraft:behavior.tempt": {
+        "priority": 5,
+        "speed_multiplier": 1.2,
+        "items": [
+          "warped_fungus",
+          "warped_fungus_on_a_stick"
+        ],
+        "can_tempt_while_ridden": true,
+        "tempt_sound": "tempt",
+        "sound_interval": {
+          "range_min": 2.0,
+          "range_max": 5.0
+        }
+      },
+
+```
 
 ## Vanilla entities using `minecraft:behavior.tempt`
 
