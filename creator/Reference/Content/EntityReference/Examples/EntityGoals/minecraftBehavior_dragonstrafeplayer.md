@@ -1,6 +1,6 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.dragonstrafeplayer
 ms.prod: gaming
 ---
@@ -20,8 +20,6 @@ ms.prod: gaming
 | target_zone| [10, 150]| Range [a, b]| Minimum and maximum distance, from the target, this entity can use this behavior. |
 | turn_speed| 0.7| Decimal| The speed at which this entity turns while using this behavior. |
 | view_angle| 10| Decimal| The target must be within "view_angle" degrees of the dragon's current rotation before a fireball can be shot. |
-
-
 
 ## Example
 
@@ -51,4 +49,3 @@ ms.prod: gaming
 ## Vanilla entities using `dragonstrafeplayer`
 
 - [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)
-

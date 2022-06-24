@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.random_swim
 ms.prod: gaming
 ---
@@ -36,7 +36,15 @@ ms.prod: gaming
 
 ### guardian
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/guardian.json" range="157-162":::
+```json
+"minecraft:behavior.random_swim": {
+        "priority": 7,
+        "speed_multiplier": 1.0,
+        "interval": 80,
+        "avoid_surface": false
+      },
+
+```
 
 ## Vanilla entities using `minecraft:behavior.random_swim`
 

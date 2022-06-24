@@ -30,9 +30,9 @@ You’re going to want to feel comfortable using resource packs and behavior pac
 
 ## Using Molang in a Behavior Pack
 
-This tutorial starts with the completed attack cow behavior pack created from the behavior pack tutorial. 
+This tutorial starts with the completed attack cow behavior pack created from the behavior pack tutorial.
 
-We are going to use Molang to make the attack cow drop more experience points and fancy End City loot instead of the usual leather and beef when you unalive it. 
+We are going to use Molang to make the attack cow drop more experience points and fancy End City loot instead of the usual leather and beef when you unalive it.
 
 Open **cow.json** and find the `minecraft:cow_adult` line of code.
 
@@ -49,7 +49,7 @@ The original code looks like this:
         },
 ```
 
-The first line we care about is “on_death” inside the “Minecraft:experience_reward” section. This is the line of code that gives you a modest amount of experience when you unalive a cow.
+The first line we care about is “on_death” inside the “Minecraft:experience_reward” section. This is the line of code that gives you those little green and yellow jinglies of experience.
 
 This code:
 
@@ -62,7 +62,7 @@ This code:
 
 ... translates to this:
 
-“In the context of how a cow can reward experience points to a player, there are two ways; when you feed wheat to two cows so they breed a baby cow (“on_bred”) or when you unalive a cow (“on_death”).
+“In the context of how a cow can reward experience points to a player, there are two ways; when you feed wheat to two cows so they breed a baby cow (“on_bred”) or when you kill a cow (“on_death”).
 
 This line of code:
 
@@ -95,14 +95,14 @@ Woohoo!
 Here is a summary of what we just did:
 
 ```json
-         "minecraft:cow_adult": {
-             "minecraft:experience_reward": {
-                 "on_bred": "Math.Random(1,7)",
-                 "on_death": "query.last_hit_by_player ? 300 * Math.Random(1,1) : 0"
-             },
-             "minecraft:loot": {
-                 "table": "loot_tables/chests/end_city_treasure.json"
-             },
+"minecraft:cow_adult": {
+  "minecraft:experience_reward": {
+      "on_bred": "Math.Random(1,7)",
+      "on_death": "query.last_hit_by_player ? 300 * Math.Random(1,1) : 0"
+  },
+      "minecraft:loot": {
+      "table": "loot_tables/chests/end_city_treasure.json"
+  },
 ```
 
 Save it. Play it. Enjoy your diamond armor.
@@ -162,6 +162,7 @@ If you compare this code to the Vanilla animations/cow.animation.json file in th
 "head": {
        "rotation": [0, 0, "math.sin(query.life_time*360) * 40"]
       }
+
 ```
 
 The code in brackets is Molang and it is using a sine function to control how the head rotates. Yay trigonometry!

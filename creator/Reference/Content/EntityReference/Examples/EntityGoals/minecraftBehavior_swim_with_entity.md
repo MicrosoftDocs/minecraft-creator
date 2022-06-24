@@ -73,4 +73,3 @@ ms.prod: gaming
 ## Vanilla entities using `minecraft:behavior.swim_with_entity`
 
 - [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
-

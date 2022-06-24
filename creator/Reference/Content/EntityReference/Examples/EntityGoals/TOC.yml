@@ -26,14 +26,34 @@
   href: minecraftBehavior_circle_around_anchor.md
 - name: behavior.controlled_by_player
   href: minecraftBehavior_controlled_by_player.md
+- name: behavior.croak
+  href: minecraftBehavior_croak.md
 - name: behavior.defend_trusted_target
   href: minecraftBehavior_defend_trusted_target.md
 - name: behavior.defend_village_target
   href: minecraftBehavior_defend_village_target.md
 - name: behavior.delayed_attack
   href: minecraftBehavior_delayed_attack.md
+- name: behavior.dig
+  href: minecraftBehavior_dig.md
 - name: behavior.door_interact
   href: minecraftBehavior_door_interact.md
+- name: behavior.dragonchargeplayer
+  href: minecraftBehavior_dragonchargeplayer.md
+- name: behavior.dragondeath
+  href: minecraftBehavior_dragondeath.md
+- name: behavior.dragonflaming
+  href: minecraftBehavior_dragonflaming.md
+- name: behavior.dragonholdingpattern
+  href: minecraftBehavior_dragonholdingpattern.md
+- name: behavior.dragonlanding
+  href: minecraftBehavior_dragonlanding.md
+- name: behavior.dragonscanning
+  href: minecraftBehavior_dragonscanning.md
+- name: behavior.dragonstrafeplayer
+  href: minecraftBehavior_dragonstrafeplayer.md
+- name: behavior.dragontakeoff
+  href: minecraftBehavior_dragontakeoff.md  
 - name: behavior.drink_potion
   href: minecraftBehavior_drink_potion.md
 - name: behavior.drop_item_for
@@ -42,6 +62,14 @@
   href: minecraftBehavior_eat_block.md
 - name: behavior.eat_carried_item
   href: minecraftBehavior_eat_carried_item.md
+- name: behavior.eat_mob
+  href: minecraftBehavior_eat_mob.md
+- name: behavior.emerge
+  href: minecraftBehavior_emerge.md
+- name: behavior.enderman_leave_block
+  href: minecraftBehavior_enderman_leave_block.md
+- name: behavior.enderman_take_block
+  href: minecraftBehavior_enderman_take_block.md
 - name: behavior.equip_item
   href: minecraftBehavior_equip_item.md
 - name: behavior.explore_outskirts
@@ -50,10 +78,16 @@
   href: minecraftBehavior_fertilize_farm_block.md
 - name: behavior.find_cover
   href: minecraftBehavior_find_cover.md
+- name: behavior.find_mount
+  href: minecraftBehavior_find_mount.md
+- name: behavior.find_underwater_treasure
+  href: minecraftBehavior_find_underwater_treasure.md
 - name: behavior.flee_sun
   href: minecraftBehavior_flee_sun.md
 - name: behavior.float
   href: minecraftBehavior_float.md
+- name: behavior.float_wander
+  href: minecraftBehavior_float_wander.md
 - name: behavior.follow_caravan
   href: minecraftBehavior_follow_caravan.md
 - name: behavior.follow_mob
@@ -64,6 +98,10 @@
   href: minecraftBehavior_follow_parent.md
 - name: behavior.follow_target_captain
   href: minecraftBehavior_follow_target_captain.md
+- name: behavior.go_and_give_items_to_noteblock
+  href: minecraftBehavior_go_and_give_items_to_noteblock.md
+- name: behavior.go_and_give_items_to_owner
+  href: minecraftBehavior_go_and_give_items_to_owner.md
 - name: behavior.go_home
   href: minecraftBehavior_go_home.md
 - name: behavior.guardian_attack
@@ -78,6 +116,8 @@
   href: minecraftBehavior_hurt_by_target.md
 - name: behavior.inspect_bookshelf
   href: minecraftBehavior_inspect_bookshelf.md
+- name: behavior.investigate_suspicious_location
+  href: minecraftBehavior_investigate_suspicious_location.md
 - name: behavior.jump_to_block
   href: minecraftBehavior_jump_to_block.md
 - name: behavior.knockback_roar
@@ -86,6 +126,8 @@
   href: minecraftBehavior_lay_down.md
 - name: behavior.lay_egg
   href: minecraftBehavior_lay_egg.md
+- name: behavior.leap_at_target
+  href: minecraftBehavior_leap_at_target.md
 - name: behavior.look_at_entity
   href: minecraftBehavior_look_at_entity.md
 - name: behavior.look_at_player
@@ -98,6 +140,8 @@
   href: minecraftBehavior_make_love.md
 - name: behavior.melee_attack
   href: minecraftBehavior_melee_attack.md
+- name: behavior.mingle
+  href: minecraftBehavior_mingle.md
 - name: behavior.mount_pathing
   href: minecraftBehavior_mount_pathing.md
 - name: behavior.move_indoors
@@ -106,22 +150,28 @@
   href: minecraftBehavior_move_outdoors.md
 - name: behavior.move_through_village
   href: minecraftBehavior_move_through_village.md
+- name: behavior.move_to_block
+  href: minecraftBehavior_move_to_block.md
 - name: behavior.move_to_land
   href: minecraftBehavior_move_to_land.md
 - name: behavior.move_to_lava
   href: minecraftBehavior_move_to_lava.md
+- name: behavior.move_to_liquid
+  href: minecraftBehavior_move_to_liquid.md
 - name: behavior.move_to_random_block
   href: minecraftBehavior_move_to_random_block.md
 - name: behavior.move_to_village
   href: minecraftBehavior_move_to_village.md
+- name: behavior.move_to_water
+  href: minecraftBehavior_move_to_water.md
 - name: behavior.move_towards_dwelling_restriction
   href: minecraftBehavior_move_towards_dwelling_restriction.md
 - name: behavior.move_towards_home_restriction
   href: minecraftBehavior_move_towards_home_restriction.md
-- name: behavior.move_to_water
-  href: minecraftBehavior_move_to_water.md
 - name: behavior.move_towards_target
   href: minecraftBehavior_move_towards_target.md
+- name: behavior.nap
+  href: minecraftBehavior_nap.md
 - name: behavior.nearest_attackable_target
   href: minecraftBehavior_nearest_attackable_target.md
 - name: behavior.nearest_prioritized_attackable_target
@@ -146,10 +196,10 @@
   href: minecraftBehavior_pet_sleep_with_owner.md
 - name: behavior.pickup_items
   href: minecraftBehavior_pickup_items.md
-- name: behavior.play_dead
-  href: minecraftBehavior_play_dead.md
 - name: behavior.play
   href: minecraftBehavior_play.md
+- name: behavior.play_dead
+  href: minecraftBehavior_play_dead.md
 - name: behavior.player_ride_tamed
   href: minecraftBehavior_player_ride_tamed.md
 - name: behavior.raid_garden
@@ -158,6 +208,10 @@
   href: minecraftBehavior_ram_attack.md
 - name: behavior.random_breach
   href: minecraftBehavior_random_breach.md
+- name: behavior.random_fly
+  href: minecraftBehavior_random_fly.md
+- name: behavior.random_hover
+  href: minecraftBehavior_random_hover.md
 - name: behavior.random_look_around_and_sit
   href: minecraftBehavior_random_look_around_and_sit.md
 - name: behavior.random_look_around
@@ -166,24 +220,42 @@
   href: minecraftBehavior_random_sitting.md
 - name: behavior.random_stroll
   href: minecraftBehavior_random_stroll.md
+- name: behavior.random_swim
+  href: minecraftBehavior_random_swim.md
+- name: behavior.ranged_attack
+  href: minecraftBehavior_ranged_attack.md
+- name: behavior.receive_love
+  href: minecraftBehavior_receive_love.md
 - name: behavior.restrict_open_door
   href: minecraftBehavior_restrict_open_door.md
+- name: behavior.restrict_sun
+  href: minecraftBehavior_restrict_sun.md
 - name: behavior.ranged_attack
   href: minecraftBehavior_ranged_attack.md
 - name: behavior.restrict_sun
   href: minecraftBehavior_restrict_sun.md
 - name: behavior.rise_to_liquid_level
   href: minecraftBehavior_rise_to_liquid_level.md
+- name: behavior.roar
+  href: minecraftBehavior_roar.md
+- name: behavior.roll
+  href: minecraftBehavior_roll.md
 - name: behavior.run_around_like_crazy
   href: minecraftBehavior_run_around_like_crazy.md
 - name: behavior.scared
   href: minecraftBehavior_scared.md
 - name: behavior.send_event
   href: minecraftBehavior_send_event.md
+- name: behavior.share_items
+  href: minecraftBehavior_share_items.md
 - name: behavior.silverfish_merge_with_stone
   href: minecraftBehavior_silverfish_merge_with_stone.md
 - name: behavior.silverfish_wake_up_friends
   href: minecraftBehavior_silverfish_wake_up_friends.md
+- name: behavior.skeleton_horse_trap
+  href: minecraftBehavior_skeleton_horse_trap.md
+- name: behavior.sleep
+  href: minecraftBehavior_sleep.md
 - name: behavior.slime_attack
   href: minecraftBehavior_slime_attack.md
 - name: behavior.slime_float
@@ -194,6 +266,26 @@
   href: minecraftBehavior_slime_random_direction.md
 - name: behavior.snacking
   href: minecraftBehavior_snacking.md
+- name: behavior.sneeze
+  href: minecraftBehavior_sneeze.md
+- name: behavior.sniff
+  href: minecraftBehavior_sniff.md
+- name: behavior.sonic_boom
+  href: minecraftBehavior_sonic_boom.md
+- name: behavior.squid_dive
+  href: minecraftBehavior_squid_dive.md
+- name: behavior.squid_flee
+  href: minecraftBehavior_squid_flee.md
+- name: behavior.squid_idle
+  href: minecraftBehavior_squid_idle.md
+- name: behavior.squid_move_away_from_ground
+  href: minecraftBehavior_squid_move_away_from_ground.md
+- name: behavior.squid_out_of_water
+  href: minecraftBehavior_squid_out_of_water.md 
+- name: behavior.stalk_and_pounce_on_target
+  href: minecraftBehavior_stalk_and_pounce_on_target.md
+- name: behavior.stay_near_noteblock
+  href: minecraftBehavior_stay_near_noteblock.md
 - name: behavior.stay_while_sitting
   href: minecraftBehavior_stay_while_sitting.md
 - name: behavior.stomp_attack
@@ -216,6 +308,8 @@
   href: minecraftBehavior_swoop_attack.md
 - name: behavior.take_flower
   href: minecraftBehavior_take_flower.md
+- name: behavior.target_when_pushed
+  href: minecraftBehavior_target_when_pushed.md
 - name: behavior.tempt
   href: minecraftBehavior_tempt.md
 - name: behavior.trade_interest

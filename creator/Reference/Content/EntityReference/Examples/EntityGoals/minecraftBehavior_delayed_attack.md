@@ -1,6 +1,6 @@
 ---
 author: docsbryce
-ms.author: v-bbortree
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.delayed_attack
 ms.prod: gaming
 ---
@@ -75,4 +75,3 @@ ms.prod: gaming
 ## Vanilla entities using `delayed_attack`
 
 - [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
-

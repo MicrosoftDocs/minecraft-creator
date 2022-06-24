@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.enderman_leave_block
 ms.prod: gaming
 ---
@@ -24,7 +24,12 @@ ms.prod: gaming
 
 ### enderman
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/enderman.json" range="161-163":::
+```json
+"minecraft:behavior.enderman_leave_block": {
+        "priority": 10
+      },
+
+``````
 
 ## Vanilla entities using `minecraft:behavior.enderman_leave_block`
 

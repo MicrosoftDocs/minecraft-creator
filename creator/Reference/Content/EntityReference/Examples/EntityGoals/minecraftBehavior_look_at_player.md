@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.look_at_player
 ms.prod: gaming
 ---
@@ -18,6 +18,7 @@ ms.prod: gaming
 |look_distance| 8.0| Decimal| The distance in blocks from which the entity will look at |
 |look_time| [2, 4]| Range [a, b]| Time range to look at the entity |
 |probability| 0.02|  Decimal| The probability of looking at the target. A value of 1.00 is 100% |
+|target_distance| 6.0 | Decimal| The distance in blocks from which the entity will choose a target |
 
 ## Example
 
@@ -34,13 +35,16 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### enderman
+### axolotl
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/enderman.json" range="150-154":::
+```json
+"minecraft:behavior.look_at_player": {
+        "priority": 10,
+        "target_distance": 6.0,
+        "probability": 0.02
+      }
 
-### rabbit
-
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/rabbit.json" range="201-203":::
+```
 
 ## Vanilla entities using `minecraft:behavior.look_at_player`
 
