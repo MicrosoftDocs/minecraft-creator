@@ -1,17 +1,15 @@
 ---
 author: mammerla
 ms.author: v-jillheaden
-title: Mashup Pak Overview
+title: Mash-up Pack Overview
 ms.prod: gaming
 ---
 
-# Overview of a Mashup Pack
+# Overview of a Mash-up Pack
 
-Mashup packs are the most complex type of content partners can create. Mashups include a world, a skin pack, and a texture pack. Each element of a mashup pack is subject to all guidelines for each different type of content.
+Mash-ups are pre-built worlds that come with a resource pack and a skin pack. The resource pack is automatically applied to the mash-up world and can be added to any other world that you want to enhance.
 
-Mashup texture packs must be a complete overhaul. Mashups must also include a full skin pack with the same number and guideline requirements as standalone skin packs.
-
-Mashups are occasionally featured on the Marketplace homepage and can be located within the Mashup Packs category.
+Creators should consider making the mash-up into a template, so creators can create new worlds from the beginning (which is a lot of the fun of mash-ups) as opposed to having to re-import the world every time.
 
 ## What's Next?
 
