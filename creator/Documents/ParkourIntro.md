@@ -12,7 +12,6 @@ This series will cover how to build an obstacle course, commonly known as a park
 
 By the end of this series, you will learn:
 
-
 > [!div class="checklist"]
 >
 > - What goes into planning and building a world in Minecraft.
@@ -37,5 +36,3 @@ Check out the Parkour Map Walkthrough to see how a fun gameplay loop was develop
 
 > [!div class="nextstepaction"]
 > [Parkour Map Walkthrough](ParkourMapWalkthrough.md)
-
-

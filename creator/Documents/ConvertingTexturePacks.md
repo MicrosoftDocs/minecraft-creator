@@ -1,13 +1,13 @@
 ---
-author: neonerz
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Converting Texture Packs from Java Edition to Bedrock Edition
 ms.prod: gaming
 ---
 
 # Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition
 
-This article discusses the general tasks required to manually convert a resource pack made for Java Edition to a texture pack for Bedrock Edition. The actual creation of custom textures and features for a custom texture pack is not within the scope of this article. It’s assumed that the creator has sufficient knowledge and experience with a raster graphics editor, such as [Adobe Photoshop](https://www.adobe.com/products/photoshop.html), [Paint 3D](https://www.microsoft.com/p/paint-3d/9nblggh5fv99), [Corel Painter](https://www.painterartist.com), or [Paint.NET](https://getpaint.net) to create and edit the texture files as necessary. Note that not all tools may support the required file formats or alpha channels.
+This article discusses the general tasks required to manually convert a resource pack made for Java Edition to a texture pack for Bedrock Edition. The actual creation of custom textures and features for a custom texture pack is not within the scope of this article. It’s assumed that the creator has sufficient knowledge and experience with a raster graphics editor, such as Adobe Photoshop, to create and edit the texture files as necessary. Note that not all tools may support the required file formats or alpha channels.
 
 In this tutorial you will learn the following:
 
