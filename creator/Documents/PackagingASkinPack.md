@@ -22,7 +22,7 @@ In this tutorial you will learn the following:
 
 A manifest tells Minecraft general information about your skin pack. Create a JSON file named `manifest.json` at the root of the skin pack. Within it contains the following:
 
-- `name`: the name of the pack, which is always `pack.name`.
+- `name`: the name of the pack, which is a custom name.
 - `version`: the version of the pack. For example, `[1, 0 ,0]` would indicate version 1.0.0.
 - `uuid`: a unique identifier to prevent package conflicts, which can be generated from this site: https://www.uuidgenerator.net/version4 (**two different UUIDs need to be generated**).
 - `type`: set to `skin_pack` to tell the game to treat this pack as a skin pack.
@@ -32,7 +32,7 @@ A manifest tells Minecraft general information about your skin pack. Create a JS
 ```json
 {
   "header": {
-    "name": "pack.name",
+    "name": "TemplateSkinPack",
     "version": [1, 0, 0],
     "uuid": "<FIRST GENERATED UUID>"
   },
