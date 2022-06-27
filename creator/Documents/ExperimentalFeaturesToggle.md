@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: "Experimental Features in Minecraft: Bedrock Edition"
 ms.prod: gaming
 description: "An overview of experimental content available to creators in Minecraft: Bedrock Edition"
@@ -22,7 +22,6 @@ Listed below are the currently available Experimental Features in the latest ret
 |:------|:------|
 |Holiday Creator Features |Data-driven block and item features. We are receiving feedback on these features from Marketplace creators and map-makers.|
 |Creation of Custom Biomes|Exposing parameters for biome generation to creators, enabling them to create their own unique biome configurations. |
-|Additional Modding Capabilities |Enables an early version of an API for creators. A newer version is in development. This toggle remains to support those who are currently using it. |
 |Upcoming Creator Features |Experimental features including actor properties and fog volumes. We are receiving feedback on these features from Marketplace creators and map-makers.|
 |Enable GameTest Framework |Provides capabilities for creators to validate their worlds and add-ons in Minecraft through a series of contained tests. |
 
@@ -37,7 +36,6 @@ Listed below are the currently available Experimental Features in the latest bet
 |:------|:------|
 |Holiday Creator Features |Data-driven block and item features. We are receiving feedback on these features from Marketplace creators and map-makers.|
 |Creation of Custom Biomes|Exposing parameters for biome generation to creators, enabling them to create their own unique biome configurations. |
-|Additional Modding Capabilities |Enables an early version of an API for creators. A newer version is in development. This toggle remains to support those who are currently using it. |
 |Upcoming Creator Features |Experimental features including actor properties and fog volumes. We are receiving feedback on these features from Marketplace creators and map-makers.|
 |Enable GameTest Framework |Provides capabilities for creators to validate their worlds and add-ons in Minecraft through a series of contained tests. |
 |**Experimental Molang Features** |**New container for Molang experimental queries and language features that aren't tied to other experimental toggles.** |
