@@ -1,6 +1,6 @@
 ---
-author: neonerz
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Popular Commands
 ms.prod: gaming
 description: "A guide covering many of the most common commands that are used within Minecraft: Bedrock Edition"
@@ -109,6 +109,22 @@ You can also change the game mode of a specific player using target selectors, w
 
 ```
 /gamemode adventure @a[tag=sometag]
+```
+
+## /locate
+
+Finds the nearest specified biome or structure if it exists in the current dimension. Prints an error if it does not.
+
+```
+/locate biome <biome name>
+/locate structure <structure name>
+```
+
+The locate command takes two arguments: the first argument specifies whether to locate a biome or a structure, the second argument specifies the name of the biome or structure to be located.
+
+```
+/locate biome beach
+/locate structure village
 ```
 
 ## /time set
