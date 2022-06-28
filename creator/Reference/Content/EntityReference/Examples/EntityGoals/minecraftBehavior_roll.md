@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.roll
 ms.prod: gaming
 ---
@@ -28,7 +28,12 @@ ms.prod: gaming
 
 ### panda
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/panda.json" range="197-200":::
+```json"minecraft:behavior.roll": {
+          "priority": 12,
+          "probability": 0.0016
+        },
+
+```
 
 ## Vanilla entities using `minecraft:behavior.roll`
 

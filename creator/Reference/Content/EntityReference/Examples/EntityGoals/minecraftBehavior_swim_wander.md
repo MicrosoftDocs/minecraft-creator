@@ -18,7 +18,6 @@ ms.prod: gaming
 | speed_multiplier| 1| Decimal| This multiplier modifies the entity's speed when wandering. |
 | wander_time| 5| Decimal| Amount of time (in seconds) to wander after wandering behavior was successfully started. |
 
-
 ## Example
 
 ```json

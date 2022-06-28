@@ -1,6 +1,6 @@
 ---
 author: docsbryce
-ms.author: v-bbortree
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.jump_to_block
 ms.prod: gaming
 ---
@@ -8,7 +8,6 @@ ms.prod: gaming
 # Entity Documentation - minecraft:behavior.jump_to_block
 
 `minecraft:behavior.jump_to_block` allows the mob to search around for a block to jump to and then jump to that block.
-
 
 ## Parameters
 
@@ -24,7 +23,6 @@ ms.prod: gaming
 | scale_factor| 0.700000| Decimal| The scalefactor of the bounding box of the mob while it is jumping. |
 | search_height| 10| Integer| The height (in blocks, in range [2, 15]) of the search box, centered around the mob. |
 | search_width| 8| Integer| The width (in blocks, in range [2, 15]) of the search box, centered around the mob. |
-
 
 ## Example
 
@@ -58,6 +56,7 @@ ms.prod: gaming
     ]
 }
 ```
+
 ## Vanilla Mobs using `minecraft:behavior.jump_to_block`
 
 - [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)

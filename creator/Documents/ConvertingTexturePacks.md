@@ -51,9 +51,7 @@ Start with a copy of a valid custom Java Edition texture pack and a copy of the 
 - [Download for the most recent Bedrock Edition resource pack](https://aka.ms/resourcepacktemplate), which contains textures.
 - Setup File Explorer windows side by side -- one with your Java Edition texture pack, and one with the vanilla Bedrock Edition texture pack. This vanilla Bedrock Edition pack will become your custom Bedrock Edition texture pack at the end of this process, as the vanilla texture files are replaced with your custom ones.
 - Obtain and install the latest version of the Minecraft Bedrock Edition game app.
-- Follow the comprehensive [Java Edition vs. Bedrock Edition](https://docs.google.com/spreadsheets/d/1uwoxDjL_rWqTLaMFUbA-Vo8Prsv4lHvge0KBloMi9Go/edit#gid=0) (WIP) texture database for comparison of specific texture files.
 - In general, copy over your Java Edition texture files to the copy of the vanilla Bedrock Edition texture pack. Make sure that every Java Edition file copied over is replacing an existing Bedrock Edition file. If there is no corresponding Bedrock Edition file, it’s not needed and shouldn’t be present in the Bedrock Edition pack.
-- Conversely, some textures in Bedrock Edition don’t exist in Java Edition or are of a different type or format.
 
 **Nonexistent:** Don’t copy over any Java Edition files that don’t exist in the Bedrock Edition vanilla texture pack. This includes `.mcmeta` files.
 

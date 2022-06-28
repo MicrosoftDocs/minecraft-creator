@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.skeleton_horse_trap
 ms.prod: gaming
 ---
@@ -33,7 +33,16 @@ ms.prod: gaming
 
 ### skeleton_horse
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/skeleton_horse.json" range="60-64":::
+```json
+"minecraft:skeleton_trap": {
+        "minecraft:behavior.skeleton_horse_trap": {
+          "within_radius": 10.0,
+          "duration": 900.0,
+          "priority": 2
+        }
+      },
+
+```
 
 ## Vanilla entities using `minecraft:behavior.skeleton_horse_trap`
 

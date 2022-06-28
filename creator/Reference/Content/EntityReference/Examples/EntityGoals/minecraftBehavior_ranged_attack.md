@@ -73,5 +73,3 @@ ms.prod: gaming
 - [snow_golem](../../../../source/vanillabehaviorpack_snippets/entities/snow_golem.md)
 - [stray](../../../../source/vanillabehaviorpack_snippets/entities/stray.md)
 - [witch](../../../../source/vanillabehaviorpack_snippets/entities/witch.md)
-
-

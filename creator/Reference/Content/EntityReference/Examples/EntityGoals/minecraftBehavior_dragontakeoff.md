@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.dragontakeoff
 ms.prod: gaming
 ---
@@ -24,7 +24,12 @@ ms.prod: gaming
 
 ### ender_dragon
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ender_dragon.json" range="24-26":::
+```json
+"minecraft:behavior.dragontakeoff": {
+          "priority": 0
+    },
+
+``````
 
 ## Vanilla entities using `minecraft:behavior.dragontakeoff`
 
