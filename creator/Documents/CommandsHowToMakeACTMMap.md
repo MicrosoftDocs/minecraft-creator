@@ -1,9 +1,9 @@
 ---
-author: neonerz
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: How To Make a Complete the Monument Map
 ms.prod: gaming
-description: A tutorial covering how to create a "Complete the Monument" style map utilizing Command Blocks
+description: A tutorial covering how to create a "Complete the Monument" style map using Command Blocks
 ---
 
 # Commands - How To Make a "Complete the Monument" Map
@@ -82,6 +82,7 @@ When the player receives diamonds as a reward, a generic chat message will appea
 Start by placing five command blocks all next to each other and all pointing in the same direction.
 
 Edit each block's settings and command input like this:
+
 1. Repeat, Unconditional, Always Active - Command Input: `/testforblock X Y Z wool 14`
     >[!Important]
     > Be sure to replace `X Y Z` with the coordinates of where the wool will be placed in your own world.
