@@ -290,4 +290,4 @@ For example, to detect if there’s a specific block beneath the player and run 
 After learning about commands and target selectors, command blocks, and a variety of useful commands, it's time to put them together and create a small project in the form of a Complete the Monument system.
 
 > [!div class="nextstepaction"]
-> [How to Make a Complete the Monument Map](CommandsHowToMakeACTMMap.md)
+> [How to Make a Complete the Monument World](CommandsHowToMakeACTMWorld.md)

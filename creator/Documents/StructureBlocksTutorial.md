@@ -135,6 +135,6 @@ Now you're familiar with structure blocks and the `/structure` command. You coul
 
 > [!div class="nextstepaction"]
 > [Popular Commands](CommandsPopularCommands.md)
-> [How to Make a Complete the Monument Map](CommandsHowToMakeACTMMap.md)
+> [How to Make a Complete the Monument World](CommandsHowToMakeACTMWorld.md)
 
 To see examples of structures, check out the Minecraft [Structure Blocks Behavior Pack Samples](https://github.com/microsoft/minecraft-samples/blob/main/structure_blocks_sample_behavior_pack/README.md).

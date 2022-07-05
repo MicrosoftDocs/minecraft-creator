@@ -85,7 +85,7 @@ conceptualContent:
               itemType: how-to-guide
               text: How to add a Custom Block
         # card
-        - title: Build a "Complete the Monument" map with Commands
+        - title: Build a "Complete the Monument" world with Commands
           summary: "Commands are a powerful way to add logic into your experiences."
           links:
             - url: Documents/CommandsIntroduction.md
@@ -97,9 +97,9 @@ conceptualContent:
             - url: Documents/CommandBlocks.md
               itemType: get-started
               text: Getting Started with Command Blocks
-            - url: Documents/CommandsHowToMakeACTMMap.md
+            - url: Documents/CommandsHowToMakeACTMWorld.md
               itemType: get-started
-              text: How To Make a Complete the Monument Map
+              text: How To Make a Complete the Monument World
         # card
         - title: Adding new Minecraft Entities
           summary: "Learn how to create and implement your own custom entities."

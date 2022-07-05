@@ -229,4 +229,4 @@ In this sample world, we can see all three.
 Get some guidance on how best to use gameplay development to create a parkour world you can share with your friends.
 
 > [!div class="nextstepaction"]
-> [Parkour Map Creation Guide](ParkourMapGuide.md)
+> [Parkour World Creation Guide](ParkourWorldGuide.md)
