@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: docsbryce
+ms.author: v-bbortree
 title: Entity Documentation - entity_type
 ms.prod: gaming
 ---

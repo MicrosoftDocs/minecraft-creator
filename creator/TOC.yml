@@ -39,7 +39,7 @@
           - name: Editing NBTs Safely
             href: Documents/EditingNBTSafely.md
           - name: Molang Beginner's Guide
-            href: Documents/MolangBeginnersGuide.md
+            href: Documents/MolangBeginnerGuide.md
     - name: Tutorials
       items:
         - name: Add-On Pack Tutorials
@@ -202,8 +202,6 @@
             href: Reference/Content/entityreference/Examples/EntityComponents/TOC.yml
           - name: AI Goals
             href: Reference/Content/entityreference/Examples/EntityGoals/TOC.yml
-          - name: Attributes
-            href: Reference/Content/entityreference/Examples/EntityAttributes/TOC.yml
           - name: Properties
             href: Reference/Content/entityreference/Examples/EntityProperties/TOC.yml
           - name: Triggers
@@ -267,7 +265,23 @@
           - name: Introduction to Texture Sets
             href: Reference/Content/texturesetsreference/texturesetsconcepts/texturesetsintroduction.md
         - name: Spawn Rules
-          href: Reference/Content/entityreference/Examples/ClientEntityDocumentation/DataDrivenSpawning.md
+          items: 
+          - name: Data-Driven Spawning Rules
+            href: Reference/Content/entityreference/Examples/ClientEntityDocumentation/DataDrivenSpawning.md
+          - name: Brightness Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/brightness_filter.md
+          - name: Density Limit
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/density_limit.md
+          - name: Difficulty Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/difficulty_filter.md
+          - name: Entity Types
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/entity_types.md
+          - name: Herd
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/herd.md
+          - name: Operator
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/operator.md
+          - name: Weight
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/weight.md
       - name: Resource Pack
         items:
         - name: Client Entity JSON

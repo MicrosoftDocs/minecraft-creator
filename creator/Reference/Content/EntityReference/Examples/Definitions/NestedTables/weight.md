@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: docsbryce
+ms.author: v-bbortree
 title: Entity Documentation - minecraft:weight
 ms.prod: gaming
 ---
@@ -13,4 +13,4 @@ This component allows players to set a priority for how often that mob should sp
 
 |Name |Default Value |Type |Description |
 |:-----------|:-----------|:-----------|:-----------|
-|default |0.0 |Decimal| This is the priority of the mob spawning |
+|default |*not set*|Decimal| This is the priority of the mob spawning out of 100. |

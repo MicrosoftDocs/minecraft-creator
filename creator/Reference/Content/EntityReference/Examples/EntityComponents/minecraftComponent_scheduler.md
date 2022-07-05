@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: docsbryce
+ms.author: v-bbortree
 title: Entity Documentation - minecraft:scheduler
 ms.prod: gaming
 ---
@@ -14,6 +14,9 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | scheduled_events| *not set*| List| The list of triggers that fire when the conditions match the given filter criteria. If any filter criteria overlap the first defined event will be picked. |
+|min_delay_secs|0.0||Decimal| The minimum the scheduler will be delayed.|
+|max_delay_secs|0.0||Decimal| The maximum the scheduler will be delayed.|
+
 
 ## Example
 
@@ -33,7 +36,43 @@ ms.prod: gaming
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="660-694":::
+```json
+"minecraft:scheduler": {
+    "min_delay_secs": 0,
+    "max_delay_secs": 0,
+    "scheduled_events": [
+        {
+        "filters": [
+            { "test": "is_sleeping", "value": true }
+        ],
+        "event": "minecraft:ambient_sleep"
+        },
+        {
+        "filters": {
+            "all_of":[
+            { "test" : "is_daytime", "value" : false },
+            { "test": "distance_to_nearest_player", "operator": ">", "value": 16 }
+            ]
+        },
+        "event": "minecraft:ambient_night"
+        },
+        {
+        "filters": {
+            "all_of":[
+            { "test" : "is_sleeping", "value" : false },
+            {
+                "any_of":[
+                { "test" : "is_daytime", "value" : true },
+                { "test": "distance_to_nearest_player", "operator": "<=", "value": 16 }
+                ]
+            }
+            ]
+        },
+        "event": "minecraft:ambient_normal"
+        }
+    ]
+}
+```
 
 ## Vanilla entities using `minecraft:scheduler`
 

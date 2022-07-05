@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: docsbryce
+ms.author: v-bbortree
 title: Entity Documentation - minecraft:movement.fly
 ms.prod: gaming
 ---
@@ -13,7 +13,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| max_turn| 30.0| Decimal| The maximum number in degrees the mob can turn per tick. |
+| start_speed| 0.1| Decimal|Initial speed of the mob when it starts gliding. |
+| speed_when_turning| 0.2| Decimal|Speed that the mob adjusts to when it has to turn quickly. |
 
 ## Example
 

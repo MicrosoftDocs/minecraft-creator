@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: docsbryce
+ms.author: v-bbortree
 title: Entity Documentation - minecraft:navigation.walk
 ms.prod: gaming
 ---
@@ -20,6 +20,7 @@ ms.prod: gaming
 | blocks_to_avoid| *not set*| List| Tells the pathfinder which blocks to avoid when creating a path |
 | can_breach| False| Boolean| Tells the pathfinder whether or not it can jump out of water (like a dolphin) |
 | can_break_doors| False| Boolean| Tells the pathfinder that it can path through a closed door and break it |
+| can_float| False| Boolean| Tells the pathfinder that it can path through through the air |
 | can_jump| True| Boolean| Tells the pathfinder whether or not it can jump up blocks |
 | can_open_doors| False| Boolean| Tells the pathfinder that it can path through a closed door assuming the AI will open the door |
 | can_open_iron_doors| False| Boolean| Tells the pathfinder that it can path through a closed iron door assuming the AI will open the door |
@@ -63,7 +64,16 @@ ms.prod: gaming
 
 ### villager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager.json" range="361-368":::
+```json
+"minecraft:navigation.walk": {
+    "is_amphibious": true,
+    "can_path_over_water": true,
+    "can_pass_doors": true,
+    "can_open_doors": true,
+    "can_walk": true,
+    "avoid_water": true
+}
+```
 
 ## Vanilla entities using `minecraft:navigation.walk`
 

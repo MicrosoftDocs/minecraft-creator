@@ -14,8 +14,12 @@
   href: minecraftComponent_annotation_open_door.md
 - name: area_attack
   href: minecraftComponent_area_attack.md
+- name: attack
+  href: minecraftComponent_attack.md
 - name: attack_cooldown
   href: minecraftComponent_attack_cooldown.md
+- name: balloonable
+  href: minecraftComponent_balloonable.md
 - name: barter
   href: minecraftComponent_barter.md
 - name: block_climber
@@ -50,6 +54,8 @@
   href: minecraftComponent_damage_over_time.md
 - name: damage_sensor
   href: minecraftComponent_damage_sensor.md
+- name: dweller
+  href: minecraftComponent_dweller.md
 - name: despawn
   href: minecraftComponent_despawn.md
 - name: drying_out_timer
@@ -82,6 +88,8 @@
   href: minecraftComponent_grows_crop.md
 - name: healable
   href: minecraftComponent_healable.md
+- name: hide
+  href: minecraftComponent_hide.md
 - name: home
   href: minecraftComponent_home.md
 - name: hurt_on_condition
@@ -114,10 +122,14 @@
   href: minecraftComponent_movement.amphibious.md
 - name: movement.basic
   href: minecraftComponent_movement.basic.md
+- name: movement.dolphin
+  href: minecraftComponent_movement.dolphin.md
 - name: movement.fly
   href: minecraftComponent_movement.fly.md
 - name: movement.generic
   href: minecraftComponent_movement.generic.md
+- name: movement.glide
+  href: minecraftComponent_movement.glide.md 
 - name: movement.hover
   href: minecraftComponent_movement.hover.md
 - name: movement.jump
@@ -180,6 +192,8 @@
   href: minecraftComponent_sittable.md
 - name: spawn_entity
   href: minecraftComponent_spawn_entity.md
+- name: strength
+  href: minecraftComponent_strength.md
 - name: tameable
   href: minecraftComponent_tameable.md
 - name: tamemount
@@ -192,12 +206,16 @@
   href: minecraftComponent_tick_world.md
 - name: timer
   href: minecraftComponent_timer.md
+- name: trade_resupply
+  href: minecraftComponent_trade_resupply.md
 - name: trade_table
   href: minecraftComponent_trade_table.md
 - name: trail
   href: minecraftComponent_trail.md
 - name: transformation
   href: minecraftComponent_transformation.md
+- name: trust
+  href: minecraftComponent_trust.md
 - name: trusting
   href: minecraftComponent_trusting.md
 - name: water_movement
