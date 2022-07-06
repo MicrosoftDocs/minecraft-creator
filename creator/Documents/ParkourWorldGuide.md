@@ -112,7 +112,8 @@ It's super important to test all your jumps before beginning to add decorations.
 We'll talk about sharing a world with others. There are several approaches possible:
 
 - Create a realm to invite other players to
-- Host a game with your friends
+- Host a game with your friends in your world
+- [Packaging a World Template](PackagingAWorldTemplate.md) with our handy guide
 
 ## What's Next?
 
