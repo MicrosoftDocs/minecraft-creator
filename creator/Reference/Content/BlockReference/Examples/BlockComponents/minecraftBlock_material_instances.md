@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Block Documentation - minecraft:material_instances
 
-`minecraft:material_instances` is a `JSON Object` component that specifies the material instances for a block. Maps face or material_instance names in a geometry file to an actual material instance. Material instance can either be a full material instance or a name to another already defined instance. Limited to 64 instances. 
+`minecraft:material_instances` is a `JSON Object` component that specifies the material instances for a block. Maps **face** or **material_instance** names in a geometry file to an actual material instance. You can assign a material instance object to any of these faces: 'up', 'down', 'north', 'south', 'east', 'west', or '*'. You can also give an instance the name of your choosing such as 'my_instance', and then assign it to a face by doing 'north':'my_instance'
 
 >[!IMPORTANT]
 > `minecraft:material_instances` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
@@ -25,10 +25,11 @@ A material instance definition to map to a material instance in a geometry file.
 
 |Type | Name |Default Value |Description |
 |:----|:----|:----|:----|
-| Boolean| ambient_occlusion| true| Should this material have ambient occlusion applied when lighting. |
-| Boolean| face_dimming| true| Should this material be dimmed by the direction it's facing. |
-| String| render_method| opaque| The render method to use. Must be one of 'opaque', 'double_sided', 'blend', or 'alpha_test'. |
+| Boolean| ambient_occlusion| true| Should this material have ambient occlusion applied when lighting? If true, shadows will be created around and underneath the block. |
+| Boolean| face_dimming| true| Should this material be dimmed by the direction it's facing? |
+| String| render_method| opaque| The render method to use. Must be one of these options: 'opaque' - Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency. 'double_sided' - Used for completely disabling backface culling. 'blend' - Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures). 'alpha_test' - Used for a block like the vanilla (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also disables backface culling. |
 | String| texture| | Texture name for the material. |
+
 ## Example
 
 ```json

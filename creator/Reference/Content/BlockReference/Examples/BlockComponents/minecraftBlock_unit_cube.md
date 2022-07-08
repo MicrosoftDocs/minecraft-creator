@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Block Documentation - minecraft:unit_cube
 ms.prod: gaming
 ---
 
 # Block Documentation - minecraft:unit_cube
 
-`minecraft:unit_cube` is a `JSON Object` component that specifies that a unite cube is to be used with tessellation.
+`minecraft:unit_cube` is a `JSON Object` component that specifies that a unit cube is to be used with tessellation.
 
 >[!IMPORTANT]
 > `minecraft:unit_cube` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
