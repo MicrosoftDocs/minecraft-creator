@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-bbortree
 title: Block Documentation - minecraft:crafting_table
 ms.prod: gaming
@@ -20,6 +20,6 @@ ms.prod: gaming
 
 Defines the tags recipes to be crafted on this table. Limited to 64 tags. Each tag is limited to 64 characters.
 
-## Custom Description
+## Table Name
 
-Defines the language file key that maps what text will be displayed in the UI of this table. If not specified, the name of the block will be used.
+Specifies the language file key that maps to what text will be displayed in the UI of this table. If the string given can not be resolved as a loc string, the raw string given will be displayed. If this field is omitted, the name displayed will default to the name specified in the display_name component. If this block has no display_name component, the name displayed will default to the name of the block.

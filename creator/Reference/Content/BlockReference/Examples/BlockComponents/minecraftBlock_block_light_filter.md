@@ -1,5 +1,5 @@
 ---
-author: v-jillheaden
+author: mammerla
 ms.author: v-jillheaden
 title: Block Documentation - minecraft:block_light_filter
 ms.prod: gaming
@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Block Documentation - minecraft:block_light_filter
 
-`minecraft:block_light_filter` is an `integer` component that sets the amount of light this block will filter out. Higher value means more light will be filtered out (0 - 15).
+`minecraft:block_light_filter` is an `integer` component that sets the amount that light will be dampened when it passes through the block, in a range (0-15). Higher value means the light will be dampened more.
 
 ## Extra Parameters
 
@@ -16,5 +16,5 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:block_light_filter": 7
+"minecraft:block_light_filter": 15
 ```

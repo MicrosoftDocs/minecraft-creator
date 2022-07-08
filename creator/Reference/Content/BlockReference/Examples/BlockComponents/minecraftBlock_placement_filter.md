@@ -25,7 +25,7 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |allowed_faces|*not set* | Array| List of any of the following strings: up, down, north, south, east, west, side, all. Limited to 6 faces. |
-| block_filter|*not set* |Array| List of blocks (can use tags to specify them) that this block can be placed against in the allowed_faces direction. Limited to 64 blocks. |
+|block_filter|*not set* |Array| List of blocks (can use tags to specify them) that this block can be placed against in the allowed_faces direction. Limited to 64 blocks. |
 
 ## Example
 
