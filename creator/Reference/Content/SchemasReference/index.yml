@@ -26,6 +26,8 @@ landingContent:
             url:  SchemasList.md
           - text: actor_animation
             url: "Schemas/minecraftSchema_actor_animation_1.8.0.md"
+          - text: actor_animation_controller
+            url: "Schemas/minecraftSchema_actor_animation_controller_1.10.0.md"
           - text: block_reference
             url: "Schemas/minecraftSchema_block_reference_1.10.0.md"
           - text: chance_information

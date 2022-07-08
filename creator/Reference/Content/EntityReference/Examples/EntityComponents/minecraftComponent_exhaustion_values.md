@@ -13,15 +13,16 @@ ms.prod: gaming
 
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
-| attack| 0.3| Decimal| Amount of exhaustion applied when attacking. |
+| attack|0.1| Decimal| Amount of exhaustion applied when attacking. |
 | damage| 0.1| Decimal| Amount of exhaustion applied when taking damage. |
-| heal| 3| Decimal| Amount of exhaustion applied when healed through food regeneration. |
-| jump| 0.2| Decimal| Amount of exhaustion applied when jumping. |
-| mine| 0.025| Decimal| Amount of exhaustion applied when mining. |
+| heal| 6| Decimal| Amount of exhaustion applied when healed through food regeneration. |
+| jump|| Decimal| Amount of exhaustion applied when jumping. |
+| mine| 0.005| Decimal| Amount of exhaustion applied when mining. |
 | sprint| 0.01| Decimal| Amount of exhaustion applied when sprinting. |
-| sprint_jump| 0.8| Decimal| Amount of exhaustion applied when sprint jumping. |
-| swim| 0.015| Decimal| Amount of exhaustion applied when swimming. |
-| walk| 0.01| Decimal| Amount of exhaustion applied when walking. |
+| sprint_jump| 0.2| Decimal| Amount of exhaustion applied when sprint jumping. |
+| swim| 0.01| Decimal| Amount of exhaustion applied when swimming. |
+| walk| 0| Decimal| Amount of exhaustion applied when walking. |
+
 ## Example
 
 ```json

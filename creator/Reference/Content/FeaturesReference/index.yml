@@ -35,6 +35,12 @@ landingContent:
             url: Examples/Features/minecraftAggregate_feature.md
           - text: Cave Caver
             url: Examples/Features/minecraftCave_carver_feature.md
+  - title: Example Feature Schema
+    linkLists:
+      - linkListType: reference
+        links: 
+          - text: Example Feature Schema
+            url: Examples/ExampleFeatureSchema.md
 
 
 

@@ -1,16 +1,692 @@
----
-author: docsbryce
-ms.author: v-bbortree
-title: Features Documentation - Feature schema
-ms.prod: gaming
-description: "Examples of feature schemas available in Minecraft: Bedrock Edition."
----
+<big>Version: 1.19.10.1</big>
 
-# Features Documentation - Feature Schema
+[[_TOC_]]
 
-Here is an example of the complete feature schema:
+# Overview
 
-```json
+Features are decorations scattered throughout the world. Things such as trees, plants, flowers, springs, ore, and coral are all features. Basically, if it isn't the terrain or a mob, it's probably a feature!
+Features can be standalone or composed of multiple sub-features. In practice, most features in Minecraft are defined as a chain of two or more features. These chains typically end with features that place blocks in the world. Other feature types control flow such as conditional, sequential, or random distribution.
+
+
+
+# JSON format
+
+All features must specify the version that they target via the "format_version" field. The remainder of the data is contained in independet JSON sub-objects for each supported feature type. These feature types define the behavior of the feature and include properties specific to that behavior. To be valid, a definition must include exactly one of these type objects. See the full feature schema below for additional details and the full list of supported feature types.
+
+**Here is a sample feature**
+```
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "minecraft:coal_ore_feature"
+    },
+    "count": 17,
+    "places_block": "minecraft:coal_ore",
+    "may_replace": [
+      {
+        "name": "minecraft:stone"
+      }
+    ]
+  }
+}
+```
+
+
+
+# Adding features
+
+Features are read from JSON files in the "features" subfolder of behavior packs. Loading enforces one feature per file; the file name and the name of the feature must match. Feature names can include a namespace of the form "namespace:feature_name" to help distinguish them from features that may be in other behavior packs. This namespace is not considered when matching the filename to the feature name. For example, in a file called "my_tree_feature.json" both "my_tree_feature" and "my_pack_name:my_tree_feature" would be valid identifiers. If two behavior packs define the same feature name (including namespace), then the feature from the highest pack in the stack will be used. This allows users to override base features if desired.
+
+
+
+# Supported features
+
+
+
+## minecraft:aggregate_feature
+
+'minecraft:aggregate_feature' places a collection of features in an arbitary order. All features in the collection use the same input position. Features should not depend on each other, as there is no guarantee on the order the features will be placed.
+Succeeds if: At lease one feature is placed successfully.
+Fails if: All features fail to be placed.
+
+
+**Example use: scattering multiple different plants around a monument.**
+```
+{
+  "format_version": 1.3.0,
+  "minecraft:aggregate_feature": {
+    "description": {
+      "identifier": "example:monument_with_flowers_feature"
+    },
+    "features": [
+      "monument_feature",
+      "scatter_white_flowers_feature",
+      "scatter_yellow_flower_feature"
+    ]
+  }
+}
+```
+
+
+
+## minecraft:sequence_feature
+
+'minecraft:sequence_feature' places a collection of features sequentially, in the order they appear in data. The output position of the previous feature is used as the input position for the next. For example, a tree feature is placed at (0, 0, 0) and places blocks up to (0, 10, 0). The next feature in the sequence begins at (0, 10, 0).
+Succeeds if: All features in the sequence are successfully placed.
+Fails if: Any feature in the sequence fails to be placed. Features that have not yet been placed at the time of failure are skipped.
+
+
+**Example use: Scattering fruit throughout the canopy of a tree.**
+```
+{
+  "format_version": 1.3.0,
+  "minecraft:sequence_feature": {
+    "description": {
+      "identifier": "example:oak_tree_then_apples_feature"
+    },
+    "features": [
+      "oak_tree_feature",
+      "scatter_apples_feature"
+    ]
+  }
+}
+```
+
+
+
+## minecraft:beards_and_shavers
+
+'minecraft:beards_and_shavers' will build a 'beard' or 'shave' out space so as to provide a clear space for a feature to place.
+Succeeds if: a beard/shave is made (this should always happen).
+Fails if: will always return placement pos, but interior feature placement not guaranteed.
+
+
+**Example use: provides an area for interior structure placement**
+```
+{"code:beards_and_shavers": {
+					"description": {
+					  "identifier": "..."
+					},
+					"places_feature": "minecraft:feature_that_places_a_structure",
+					"bounding_box_min": [ -2, 0, -2 ],
+					"bounding_box_max": [ 2, 8, 2 ],
+					"y_delta": 2.0,
+					"surface_block_type": "minecraft:grass",
+					"subsurface_block_type": "minecraft:dirt",
+					"beard_raggedness_min": 0.1,
+					"beard_raggedness_max": 0.3
+				}}
+```
+
+
+
+## minecraft:cave_carver_feature
+
+'minecraft:cave_carver_feature' carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.This feature will also only work when placed specifically in the pass "pregeneration_pass".
+
+
+**Example use: Carve caves normally.**
+```
+{
+			"format_version": "1.16.100",
+				"minecraft:cave_feature": {
+					"description": {
+						"identifier": "minecraft:underground_cave_carver_feature"
+					},
+					"fill_with": "minecraft:air",
+					"width_modifier": 0.0,
+					"skip_carve_chance": 15
+				}
+			}
+```
+
+
+
+## minecraft:conditional_list
+
+'minecraft:conditional_list' Places the first suitable feature within a collection.
+These conditional features will be evaluated in order.
+Succeeds if: A condition is successfully resolved.
+Fails if: No condition is successfully resolved.
+
+
+**Example use: assigning a feature to an expression**
+```
+"conditional_features" : [
+						{ 
+							"places_feature" : "minecraft:some_feature_or_other",
+							"condition" : "query.check_some_block_property(),
+						},
+					],
+					"early_out_scheme": "placement_success"
+				
+```
+
+
+
+## minecraft:fossil_feature
+
+'minecraft:fossil_feature' generates a skeletal structure composed of bone blocks and parametric ore blocks.Succeeds if: The fossil is placed.
+Fails if: The fossil is not placed because it overlaps with another structure or because its bounding box has too many corners occupied by air or fluid.
+
+
+**Example use: Fossil composed of bone blocks and coal ore blocks.**
+```
+{
+					"format_version": "1.16.0",
+					"minecraft:fossil_feature": {
+						"description": {
+							"identifier": "minecraft:fossil_feature"
+						},
+						"ore_block": "minecraft:coal_ore",
+						"max_empty_corners": 4
+					}
+				}
+```
+
+
+
+## minecraft:geode_feature
+
+'minecraft:geode_feature' generates a rock formation to simulate a geode. Each layer of, and block within, the geode can be replaced. Succeeds if: At least one block within the geode is placed.
+Fails if: All blocks within the geode fail to be placed.
+
+
+**Example use: Diamond geodes with emerald blocks inside and obsidian on the outside.**
+```
+{
+  "format_version": "1.13.0",
+  "minecraft:geode_feature": {
+	"description": {
+	  "identifier": "minecraft:diamond_geode_feature"
+	},
+	"filler": "minecraft:air",
+	"inner_layer": "minecraft:diamond_block",
+	"alternate_inner_layer": "minecraft:emerald_block",
+	"middle_layer": "minecraft:calcite",
+	"outer_layer": "minecraft:obsidian",
+	"inner_placements": [
+	  {
+		"name": "minecraft:amethyst_cluster",
+		"states": {
+		  "amethyst_cluster_type": "small"
+		}
+	  }
+	],
+	"min_outer_wall_distance": 4,
+	"max_outer_wall_distance": 7,
+	"min_distribution_points": 3,
+	"max_distribution_points": 5,
+	"min_point_offset": 1,
+	"max_point_offset": 3,
+	"max_radius": 16,
+	"crack_point_offset": 2.0,
+	"generate_crack_chance": 0.95,
+	"base_crack_size": 2.0,
+	"noise_multiplier": 0.025,
+	"use_potential_placements_chance": 0.35,
+	"use_alternate_layer0_chance": 0.083,
+	"placements_require_layer0_alternate": true,
+	"invalid_blocks_threshold": 1
+  }
+}
+```
+
+
+
+## minecraft:growing_plant_feature
+
+'minecraft:growing_plant_feature' places a growing plant in the world. A growing plant is a column that is anchored either to the ceiling or the floor, based on its growth direction.
+The growing plant has a body and a head, where the head is the tip of the plant, and the body consists of the remainder blocks.
+This feature can be used to define growing plants with variable body and head blocks, e.g. Cave Vines.
+
+
+**Example use: Defining a growing plant feature with variable body and head blocks and height distribution.**
+```
+{
+  "format_version": "1.16.0",
+  "minecraft:growing_plant_feature": {
+    "description": {
+      "identifier": "minecraft:cave_vine_feature"
+    },
+    "height_distribution":  [
+      [{"range_min": 1, "range_max": 13}, 2],
+      [{"range_min": 1, "range_max": 2}, 3],
+      [{"range_min": 1, "range_max": 7}, 10]
+    ],
+    "growth_direction": "DOWN",
+    "age" : {"range_min": 17, "range_max": 26},
+    "body_blocks" : [
+      ["minecraft:cave_vines", 4],
+      ["minecraft:cave_vines_body_with_berries", 1 ]
+    ],
+    "head_blocks" : [
+      ["minecraft:cave_vines", 4],
+      ["minecraft:cave_vines_head_with_berries", 1 ]
+    ],
+	"allow_water": true
+  }
+}
+```
+
+
+
+## minecraft:hell_cave_carver_feature
+
+'minecraft:hell_cave_carver_feature' carves a cave through the Nether in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.This feature will also only work when placed specifically in the pass "pregeneration_pass".
+
+
+**Example use: Carve nether caves normally.**
+```
+{
+			"format_version": "1.16.100",
+				"minecraft:cave_feature": {
+					"description": {
+						"identifier": "minecraft:hell_cave_carver_feature"
+					},
+					"fill_with": "minecraft:air"
+					"width_modifier": 0.0
+				}
+			}
+```
+
+
+
+## minecraft:multiface_feature
+
+'minecraft:multiface_feature' places one or a few multiface blocks on floors/walls/ceilings. Despite the name, any block can be placed by this feature. During placement, existing world blocks are checked to see if this feature can be placed on them based on the list provided in the 'can_place_on' field. If no 'can_replace_on' field is specified, the 'place_block' block can be placed on any existing block.
+This feature will also try to spread the 'place_block' block around the location in world the feature is placed.
+Succeeds if: At least one block is successfully placed.
+Fails if: All block placements fail.
+
+
+**Example use: Blue vines in caves.**
+```
+{
+  "format_version": 1.13.0,
+  "minecraft:multiface_feature": {
+    "description": {
+      "identifier": "example:blue_vines_feature"
+    },
+    "places_block": "example:blue_vine",
+    "search_range": 64,
+	"can_place_on_floor": true,
+	"can_place_on_ceiling": true,
+	"can_place_on_wall": true,
+	"chance_of_spreading": 0.5,
+    "can_place_on": [
+      "minecraft:stone"
+    ]
+  }
+}
+```
+
+
+
+## minecraft:ore_feature
+
+'minecraft:ore_feature' places a vein of blocks to simulate ore deposits. Despite the name, any block can be placed by this feature. During placement, existing world blocks are checked to see if they can be replaced by the new ore block based on the list provided in the 'may_replace' field of a 'replace_rules' entry. If no 'may_replace' field is specified in a 'replace_rule' entry, the ore block can replace any existing block.
+Succeeds if: At least one ore block is successfully placed.
+Fails if: All ore block placements fail.
+
+
+**Example use: Malachite ore in different materials.**
+```
+{
+  "format_version": 1.13.0,
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "example:malachite_ore_feature"
+    },
+	"count": 12,
+	"replace_rules": [
+		{
+			"places_block": "example:malachite_ore",
+			"may_replace": [
+				"minecraft:stone"
+			]
+		},
+		{
+			"places_block": "example:granite_malachite_ore",
+			"may_replace": [
+				"minecraft:granite"
+			]
+		},
+		{
+			"places_block": "example:andesite_malachite_ore",
+			"may_replace": [
+				"minecraft:andesite"
+			]
+		}
+	]
+  }
+}
+```
+
+**Example use: Oil deposits in the sand.**
+```
+{
+  "format_version": 1.13.0,
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "example:oil_deposit_feature"
+    },
+	"count": 12,
+	"replace_rules": [
+		{
+			"places_block": "example:oil_block",
+			"may_replace": [
+			  "minecraft:sand"
+			]
+		}
+	]
+  }
+}
+```
+
+
+
+## minecraft:partially_exposed_blob_feature
+
+'minecraft:partially_exposed_blob_feature' generates a blob of the specified block with the specified dimensions For the most part the blob is embedded in the specified surface, however a single side is allowed to be exposed.
+
+**Example use: Blobs of Magma blocks partially embedded in the floors of flooded caves.**
+```
+{
+    "format_version": "1.13.0",
+    "minecraft:partially_exposed_blob_feature": {
+      "description": {
+        "identifier": "minecraft:underwater_magma_feature"
+      },
+      "places_block": "minecraft:magma",
+      "placement_radius_around_floor": 1,
+      "placement_probability_per_valid_position": 0.5,
+      "exposed_face": "up"
+    }
+  }
+}
+```
+
+
+
+## minecraft:rect_layout
+
+'minecraft:rect_layout' scans the surface of a Chunk, calling place() on the surface of each block column.
+Succeeds if: A Feature is successfully placed within a Chunk.
+Fails if: No Feature could be placed within a Chunk.
+
+
+**Example use: Scans the surface of a chunk and places a feature if able**
+```
+
+			{
+				"ratio_of_empty_space": 0.5,
+				"feature_areas":[
+					{
+						"feature": "minecraft:tree",
+						"area_dimensions": [Width,Height]
+					},
+					{
+						"feature": "minecraft:tree2",
+						"area_dimensions": [Width,Height]
+					}
+				]
+			}
+		
+```
+
+
+
+## minecraft:scan_surface
+
+'minecraft:scan_surface' scans the surface of a Chunk, calling place() on the surface of each block column.
+Succeeds if: A Feature was successfully placed during the scan.
+Fails if: No Feature was placed during the course of the scan.
+
+
+**Example use: Scans the surface of a chunk and places a feature if able**
+```
+{"scan_surface_feature": "example:apple_feature"}
+```
+
+
+
+## minecraft:scatter_feature
+
+'minecraft:scatter_feature' scatters a feature throughout a chunk. The 'x', 'y', and 'z' fields are per-coordinate parameters. Note that coordinates represent an offset from the input position, not an absolute position. Coordinates may be a single value, a random distribution, or Molang expression that resolves to a numeric value. The 'coordinate_eval_order' field is provided for finer control of coordinate resolution (particularly when using the 'grid' distribution). 'iterations' controls how many individual placements should occur if the 'scatter_chance' check succeeds. The 'scatter_chance' check happens once, so either all placements will run or none will.
+Succeeds if: At least one feature placement succeeds.
+Fails if: All feature placements fail.
+
+
+**Example use: Scattering flowers at sea level across half the chunks in a biome.**
+```
+{
+  "format_version": 1.13.0,
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "example:scatter_flowers_feature"
+    },
+    "places_feature": "example:flower_feature",
+    "iterations": 10,
+    "scatter_chance": 50.0,
+    "x": {
+      "distribution": "uniform",
+      "extent": [ 0, 15 ]
+    },
+    "y": 64,
+    "z": {
+      "distribution": "uniform",
+      "extent": [ 0, 15 ]
+    }
+  }
+}
+```
+
+
+
+## minecraft:sculk_patch_feature
+
+Feature type 'minecraft:sculk_patch_feature' has not yet been documented.
+
+
+
+## minecraft:search_feature
+
+'minecraft:search_feature' sweeps a volume searching for a valid placement location for its referenced feature. The 'search_volume' field specifies the axis-aligned bounding box that defines the boundaries of the search. The search sweeps along the axis defined by the 'search_axis' field, layer by layer. For example, if 'search_axis' = '-x', blocks with greater x values will be checked before blocks with lower x values. Each layer is searched from the bottom-left to the top-right before moving to the next layer along the axis. By default, only one valid position must be found, but this can be altered by specifying the 'required_successes' field. If fewer than the required successes are found, no placement will occur.
+Succeeds if: The number of valid positions is equal to the value specified by 'required_successes'.
+Fails if: The number of valid positions is less than the value specified by 'required_successes'.
+
+
+**Example use: Attaching apples to a tree canopy**
+```
+{
+  "format_version": 1.13.0,
+  "minecraft:search_feature": {
+    "description": {
+      "identifier": "example:find_valid_apples_feature"
+    },
+    "places_feature": "example:apple_feature",
+    "search_volume": {
+      "min": [ -3, -3, -3 ],
+      "max": [ 3, 3, 3 ]
+    },
+    "search_axis": "-y",
+    "required_successes": 3
+}
+```
+
+
+
+## minecraft:single_block_feature
+
+'minecraft:single_block_feature' places a single block in the world. The 'may_place_on' and 'may_replace' fields are allowlists which specify where the block can be placed. If these fields are omitted, the block can be placed anywhere. The block's internal survivability and placement rules can optionally be enforced with the 'enforce_survivability_rules' and 'enforce_placement_rules' fields. These rules are specified per-block and are typically designed to produce high quality gameplay or natural behavior. However, enabling this enforcement may make it harder to debug placement failures.
+Succeeds if: The block is successfully placed in the world.
+Fails if: The block fails to be placed.
+
+
+**Example use: Placing a single pumpkin block.**
+```
+{
+  "format_version": 1.13.0,
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "example:single_pumpkin_feature"
+    },
+    "places_block": "example:pumpkin",
+    "enforce_placement_rules": true,
+    "enforce_survivability_rules": true,
+    "may_place_on": [
+      "example:grass"
+    ],
+    "may_replace": [
+      "example:air"
+    ]
+  }
+}
+```
+
+
+
+## minecraft:snap_to_surface_feature
+
+'minecraft:snap_to_surface_feature' snaps the y-value of a feature placement pos to the floor or the ceiling within the provided 'vertical_search_range'. The placement biome is preserved. If the snap position goes outside of the placement biome, placement will fail.
+
+
+**Example use: Define a feature that snaps the 'cave_vine_feature' to the ceiling.**
+```
+{
+  "format_version": "1.16.0",
+  "minecraft:snap_to_surface_feature": {
+    "description": {
+      "identifier": "minecraft:cave_vine_snapped_to_ceiling_feature"
+    },
+    "feature_to_snap":  "minecraft:cave_vine_feature",
+    "vertical_search_range":  12,
+    "surface": "ceiling"
+  }
+}
+```
+
+
+
+## minecraft:structure_template_feature
+
+'minecraft:structure_template_feature' places a structure in the world. The structure must be stored as a .mcstructure file in the "structures" subdirectory of a behavior pack. It is possible to reference structures that are part of other behavior packs, they do not need to come from the same behavior pack as this feature. Constraints can be defined to specify where the structure is allowed to be placed. During placement, the feature will search for a position within the 'adjustment_radius' that satisfies all constraints. If none are found, the structure will not be placed.
+Succeeds if: The structure is placed in the world.
+Fails if: The structure fails to be placed within the world.
+
+
+**Example use: Place a hot air balloon structure that "floats" in the air.**
+```
+{
+  "format_version": 1.13.0,
+  "minecraft:structure_template_feature": {
+    "description": {
+      "identifier": "example:hot_air_balloon_feature"
+    },
+    "structure_name": "example:hot_air_balloon",
+    "adjustment_radius": 8,
+    "facing_direction": "random",
+    "constraints": {
+      "unburied": {},
+      "block_intersection": {
+        "block_allowlist": [
+          "example:air"
+        ]
+      }
+    }
+  }
+}
+```
+
+
+
+## minecraft:surface_relative_threshold_feature
+
+'minecraft:surface_relative_threshold_feature' determines whether the provided position is below the estimated surface level of the world, and places a feature if so.If the provided position is above configured surface or the surface is not available, placement will fail. This feature only works for Overworld generators using world generation 1.18 or later.
+
+
+**Example use: Define a feature that places the 'underwater_magma_snap_to_surface_feature', if the given position is at least two blocks below estimated surface level.**
+```
+{
+	"format_version": "1.16.0",
+	"minecraft:surface_relative_threshold_feature": {
+	"description": {
+	  "identifier": "minecraft:underwater_magma_underground_feature"
+	},
+	"feature_to_snap": "minecraft:underwater_magma_snap_to_surface_feature",
+	"minimum_distance_below_surface": 2
+  }
+}
+```
+
+
+
+## minecraft:underwater_cave_carver_feature
+
+'minecraft:underwater_cave_carver_feature' carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.This feature will specifically target creating caves only below sea level.
+This feature will also only work when placed specifically in the pass "pregeneration_pass".
+
+
+**Example use: Carve caves normally.**
+```
+{
+			"format_version": "1.16.100",
+				"minecraft:underwater_cave_carver_feature": {
+					"description": {
+						"identifier": "minecraft:underground_cave_carver_feature"
+					},
+					"fill_with": "minecraft:water"
+					"width_modifier": 0.0,
+					"replace_air_with": "minecraft:flowing_water"
+				}
+			}
+```
+
+
+
+## minecraft:tree_feature
+
+Feature type 'minecraft:tree_feature' has not yet been documented.
+
+
+
+## minecraft:vegetation_patch_feature
+
+Feature type 'minecraft:vegetation_patch_feature' has not yet been documented.
+
+
+
+## minecraft:weighted_random_feature
+
+'minecraft:weighted_random_feature' randomly selects and places a feature based on a weight value. Weights are relative, with higher values making selection more likely.
+Succeeds if: The selected feature is placed.
+Fails if: The selected feature fails to be placed.
+
+
+**Example use: Selecting and placing a variant of a flower.**
+```
+{
+  "format_version": 1.13.0,
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "example:select_flower_feature"
+    },
+    "features": [
+      [ "example:white_flower_feature", 1 ],
+      [ "example:red_flower_feature", 2 ],
+      [ "example:blue_flower_feature", 1 ],
+      [ "example:yellow_flower_feature", 4 ]
+    ]
+  }
+}
+```
+
+**Feature schema**
+
+**Here is the complete feature schema**
+```
   {
       version "format_version"
       object "minecraft:aggregate_feature" : opt
@@ -316,20 +992,18 @@ Here is an example of the complete feature schema:
           {
               string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
           }
-          array "replaceable_blocks"
+          array "can_place_sculk_patch_on"
           {
                "<any array element>" : opt
           }
-          array "cant_place_sculk_vein_on"
-          {
-               "<any array element>" : opt
-          }
-           "ground_block"
-          feature_reference "growth_feature" : opt
-          string "surface" : opt
-          int "vertical_range"
-          float "growth_chance" : opt
-           "horizontal_radius"
+           "central_block" : opt
+          float "central_block_placement_chance"<0.000000-1.000000> : opt
+          int "cursor_count"<0-32>
+          int "charge_amount"<1-1000>
+          int "spread_attempts"<1-64>
+          int "growth_rounds"<0-8>
+          int "spread_rounds"<0-8>
+           "extra_growth_chance" : opt
       }
       object "minecraft:search_feature" : opt
       {
@@ -1027,4 +1701,142 @@ Here is an example of the complete feature schema:
           }
       }
   }
+
 ```
+
+
+
+# Attaching features
+
+Features must be attached to at least one biome in order to show up in the world. During world generation, biomes attempt to place their attached features chunk-by-chunk. Features can be attached in two ways:
+1) Via a feature rule definition
+2) Via the "minecraft:forced_features" biome component
+
+
+
+
+# Feature rules
+
+Feature rules are separate JSON definition files found in the "feature_rules" subfolder of behavior packs. Feature rules follow the same filename rules as features. Each feature rule controls exactly one feature and serves as the root of a chain of feature data. To attach a feature to a biome with a feature rule, the "conditions" object must include the "minecraft:biome_filter" field. This is a list of filter tests that are performed on each biome to determine if the feature should be attached. Most relevant is the "has_biome_tag" test.
+
+**Here is a sample feature rule**
+```
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "minecraft:birch_forest_surface_trees_feature",
+      "places_feature": "minecraft:legacy:birch_forest_tree_feature"
+    },
+    "conditions": {
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "forest"
+        },
+        {
+          "all_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "birch"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "mutated"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 1,
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  }
+}
+```
+
+
+
+# Feature rule schema
+
+****
+```
+  {
+      version "format_version"
+      object "minecraft:feature_rules"
+      {
+          object "description"
+          {
+              string "identifier" // The name of this feature rule in the format 'namespace_name:rule_name'. 'rule_name' must match the filename.
+              feature_reference "places_feature" // Named reference to the feature controlled by this rule.
+          }
+          object "conditions" // Parameters to control where and when the feature will be placed.
+          {
+              string "placement_pass" // When the feature should be placed relative to others. Earlier passes in the list are guaranteed to occur before later passes. Order is not guaranteed within each pass.
+              biome_filter_group "minecraft:biome_filter" : opt // List of filter tests to determine which biomes this rule will attach to.
+          }
+          object "distribution" : opt // Parameters controlling the initial scatter of the feature.
+          {
+              molang "iterations" // Number of scattered positions to generate
+              object "scatter_chance" : opt // Probability numerator / denominator that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.
+              {
+                  int "numerator"<1-*>
+                  int "denominator"<1-*>
+              }
+              molang "scatter_chance" : opt // Probability (0-100] that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.
+              enumerated_value "coordinate_eval_order"<"xyz", "xzy", "yxz", "yzx", "zxy", "zyx"> : opt // The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to "xzy".
+              molang "x" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
+              object "x" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
+              {
+                  enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
+                  int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
+                  int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
+                  array "extent"[2]
+                  {
+                      molang "[0..0]" : opt // Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around
+                      molang "[1..1]" : opt // Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around
+                  }
+              }
+              molang "z" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
+              object "z" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
+              {
+                  enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
+                  int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
+                  int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
+                  array "extent"[2]
+                  {
+                      molang "[0..0]" : opt // Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around
+                      molang "[1..1]" : opt // Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around
+                  }
+              }
+              molang "y" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
+              object "y" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
+              {
+                  enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
+                  int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
+                  int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
+                  array "extent"[2]
+                  {
+                      molang "[0..0]" : opt // Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around
+                      molang "[1..1]" : opt // Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around
+                  }
+              }
+          }
+      }
+  }
+
+```
+
+
+
+# Forced features
+
+Features attached with the second method are called "forced" or "explicit" features. Unlike feature rules, forced features are not defined in separate JSON files. Instead, they are specified in the existing biome JSON definitions via the "minecraft:forced_features" component. Like feature rules, this component includes fields that define when features should be placed ("placement_pass") and how they should be scattered ("distribution"). For more information about biome components (including the complete JSON schema), consult the biome documentation.
+

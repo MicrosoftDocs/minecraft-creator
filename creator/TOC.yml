@@ -218,6 +218,8 @@
             href: Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md
           - name: Feature List
             href: Reference/Content/featuresreference/Examples/Features/TOC.yml
+          - name: Feature Example Schema
+            href: Reference/Content/FeaturesReference/Examples/ExampleFeatureSchema.md
         - name: Fog JSON
           items:
           - name: Introduction to Fogs
@@ -251,7 +253,7 @@
           - name: Schema Documentation Homepage
             href: Reference/Content/schemasreference/index.yml
           - name: Schema List
-            href: Reference/Content/schemasreference/schemas/TOC.yml
+            href: Reference/Content/schemasreference/SchemasList.md
         - name: Volume JSON
           items:
           - name: Volume Documentation Homepage

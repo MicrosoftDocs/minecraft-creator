@@ -130,6 +130,14 @@ This determines if the entity can equip attachables when this is set to true. Th
 "enable_attachables": true
 ```
 
+## held_item_ignores_lighting
+
+This determines if the item held by an entity should render fully lit up (if true), or depending on surrounding lighting.
+
+```
+"held_item_ignores_lighting": true
+```
+
 ### hide_armor
 
 This determines if the armor attached to an entity should be hidden when set to true. This overrides the rendering settings specified by `enable_attachables`

@@ -36,6 +36,8 @@
   href: minecraftBehavior_delayed_attack.md
 - name: behavior.dig
   href: minecraftBehavior_dig.md
+- name: behavior.drink_milk
+  href: minecraftBehavior_drink_milk.md
 - name: behavior.door_interact
   href: minecraftBehavior_door_interact.md
 - name: behavior.dragonchargeplayer

@@ -6,6 +6,8 @@
    href: minecraft_block_placer.md
  - name: cooldown
    href: minecraft_cooldown.md
+ - name: chargeable
+   href: minecraft_chargeable.md
  - name: digger
    href: minecraft_digger.md
  - name: display_name
@@ -20,6 +22,10 @@
    href: minecraft_food.md
  - name: fuel
    href: minecraft_fuel.md
+ - name: icon
+   href: minecraft_icon.md
+ - name: item_storage
+   href: minecraft_item_storage.md
  - name: knockback_resistance
    href: minecraft_knockback_resistance.md
  - name: on_use
@@ -28,6 +34,8 @@
    href: minecraft_on_use_on.md
  - name: projectile
    href: minecraft_projectile.md
+ - name: record
+   href: minecraft_record.md
  - name: render_offsets
    href: minecraft_render_offsets.md
  - name: repairable

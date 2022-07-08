@@ -1,6 +1,6 @@
 ---
-author: JDHeaden
-ms.author: v-jillheaden
+author: docsbryce
+ms.author: v-bbortree
 title: Entity Documentation - minecraft:behavior.dig
 ms.prod: gaming
 ---
@@ -9,8 +9,6 @@ ms.prod: gaming
 
 `minecraft:behavior.dig` [EXPERIMENTAL BEHAVIOR] activates the "DIGGING" actor flag during the specified duration. Currently only Warden can use the dig goal.
 
-| Type| Name| Default Value| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
 
 
 ## Parameters
@@ -23,6 +21,7 @@ ms.prod: gaming
 | idle_time| | Decimal| The minimum idle time in seconds between the last detected disturbance to the start of digging. |
 | suspicion_is_disturbance| false| Boolean| If true, finding new suspicious locations count as disturbances that may delay the start of this goal. |
 | vibration_is_disturbance| false| Boolean| If true, vibrations count as disturbances that may delay the start of this goal. |
+| on_start| *not set* | Trigger| Event(s) to run when the goal starts. |
 
 
 ## Vanilla entities examples
