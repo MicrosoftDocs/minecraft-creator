@@ -2976,11 +2976,6 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
-### **fireflySpawnEgg**
-`static read-only fireflySpawnEgg: ItemType;`
-
-Type: [*ItemType*](ItemType.md)
-
 ### **fireworkRocket**
 `static read-only fireworkRocket: ItemType;`
 
@@ -6342,6 +6337,11 @@ Type: [*ItemType*](ItemType.md)
 
 ### **totemOfUndying**
 `static read-only totemOfUndying: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **traderLlamaSpawnEgg**
+`static read-only traderLlamaSpawnEgg: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 

@@ -68,13 +68,13 @@ new HttpRequest(uri: string)
 #### **Returns** [*HttpRequest*](HttpRequest.md)
 ### **addHeader**
 `
-addHeader(key: string, value: string): HttpRequest
+addHeader(key: string, value: mojang-minecraft-server-admin.SecretString | string): HttpRequest
 `
 
 Adds an additional header to the overall list of headers used in the corresponding HTTP request.
 #### **Parameters**
 - **key**: *string*
-- **value**: *string*
+- **value**: [*mojang-minecraft-server-admin.SecretString*](../mojang-minecraft-server-admin/SecretString.md) | *string*
 
 #### **Returns** [*HttpRequest*](HttpRequest.md)
 ### **setBody**

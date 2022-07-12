@@ -3,8 +3,8 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: mojang-minecraft.ScoreboardIdentityType Enumeration
-description: Contents of the mojang-minecraft.ScoreboardIdentityType enumeration.
+title: ScoreboardIdentityType Enumeration
+description: Contents of the ScoreboardIdentityType enumeration.
 ---
 # ScoreboardIdentityType Enumeration
 >[!IMPORTANT]

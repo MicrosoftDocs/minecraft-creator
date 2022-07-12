@@ -12,12 +12,12 @@ description: Contents of the mojang-minecraft.BlockEvent class.
 
 ## Classes that extend BlockEvent
 - [*BeforePistonActivateEvent*](BeforePistonActivateEvent.md)
-- [*PistonActivateEvent*](PistonActivateEvent.md)
-- [*LeverActionEvent*](LeverActionEvent.md)
-- [*ButtonPushEvent*](ButtonPushEvent.md)
+- [*BlockBreakEvent*](BlockBreakEvent.md)
 - [*BlockExplodeEvent*](BlockExplodeEvent.md)
 - [*BlockPlaceEvent*](BlockPlaceEvent.md)
-- [*BlockBreakEvent*](BlockBreakEvent.md)
+- [*ButtonPushEvent*](ButtonPushEvent.md)
+- [*LeverActionEvent*](LeverActionEvent.md)
+- [*PistonActivateEvent*](PistonActivateEvent.md)
 
 Contains information regarding an event that impacts a specific block.
 

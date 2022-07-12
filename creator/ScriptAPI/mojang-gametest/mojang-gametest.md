@@ -17,7 +17,7 @@ The mojang-gametest module provides scriptable APIs for scaffolding and testing 
 {
     // mojang-gametest
     "uuid": "6f4b6893-1bb6-42fd-b458-7fa3d0c89616",
-    "version": [ 0, 1, 0 ]
+    "version": "0.1.0"
 }
 ```
 
