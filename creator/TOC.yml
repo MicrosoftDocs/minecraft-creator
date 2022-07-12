@@ -39,7 +39,7 @@
           - name: Editing NBTs Safely
             href: Documents/EditingNBTSafely.md
           - name: Molang Beginner's Guide
-            href: Documents/MolangBeginnerGuide.md
+            href: Documents/MolangBeginnersGuide.md
     - name: Tutorials
       items:
         - name: Add-On Pack Tutorials
