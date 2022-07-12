@@ -41,7 +41,7 @@ ms.prod: gaming
 
 | Name| Default Value| Type| Description |
 |:-----------|:-----------|:-----------|:-----------|
-| birth_event| *not set*| String| Event to run when this mob is created and matches the allele conditions. |
+| birth_event| *not set*| JSON Object| Event to run when this mob is created and matches the allele conditions. |
 | both_allele| -1| Integer| If this value is non-negative, compare both the mob's main and hidden alleles with this value for a match with both. Can also be a range of integers. |
 | either_allele| -1| Integer| If this value is non-negative, compare both the mob's main and hidden alleles with this value for a match with either. Can also be a range of integers. |
 | hidden_allele| -1| Integer| If this value is non-negative, compare the mob's hidden allele with this value for a match. Can also be a range of integers. |
