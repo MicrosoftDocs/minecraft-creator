@@ -63,6 +63,9 @@ Each individual skin definition will then contain the following:
 
 ### Template skins.json
 
+> [!NOTE]
+> Unfortunately, it's not possible to add custom models to skin packs at this time using the skin pack JSON capability.
+
 ```json
 {
   "serialize_name": "TemplateSkinPack",
@@ -106,7 +109,7 @@ Each individual skin definition will then contain the following:
 
 The actual skin textures are PNGs. The file names are referred to in the `skins.json` metadata file. They can be used only at the root of the skin pack. You can use Blockbench to create a usable skin PNG for your skin pack.
 
-## Texts folder
+## Texts Folder
 
 Inside this folder are the `en_US.lang` and `languages.json` files, which define the actual names of your pack and skins and the supported languages of your pack. The names after the `=` are what show up in-game, such as in the skin picker.
 
@@ -123,7 +126,7 @@ The below template uses the "localization keys" from the template `skin.json` to
 
 #### Template en_US.lang
 
-```
+```json
 skinpack.TemplateSkinPack=Your Skin Pack Name Here
 skin.TemplateSkinPack.TemplateSkin1=Skin Name 1
 skin.TemplateSkinPack.TemplateSkin2=Skin Name 2
