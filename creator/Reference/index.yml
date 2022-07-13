@@ -98,8 +98,6 @@ landingContent:
             url: Content/entityreference/Examples/FilterList.md
           - text: Properties List
             url: Content/entityreference/Examples/PropertiesList.md
-          - text: Attributes List
-            url: Content/entityreference/Examples/AttributeList.md
           - text: Events List
             url: Content/entityreference/Examples/EventList.md
           - text: Trigger List

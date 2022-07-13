@@ -28,6 +28,7 @@ ms.prod: gaming
 | melee_fov| 90| Decimal| Field of view (in degrees) when using the sensing component to detect an attack target. |
 | min_path_time| 0.2| Decimal| Minimum base time (in seconds) to recalculate new attack path to target (before increases applied). |
 | on_attack| N/A| Trigger| Defines the event to trigger when this entity successfully attacks. |
+| on_kill| N/A| Trigger| Defines the event to trigger when this entity successfully kills. |
 | outer_boundary_time_increase| 0.5| Decimal| Time (in seconds) to add to attack path recalculation when the target is beyond the "path_outer_boundary". |
 | path_fail_time_increase| 0.75| Decimal| Time (in seconds) to add to attack path recalculation when this entity cannot move along the current path. |
 | path_inner_boundary| 16| Decimal| Distance at which to increase attack path recalculation by "inner_boundary_tick_increase". |

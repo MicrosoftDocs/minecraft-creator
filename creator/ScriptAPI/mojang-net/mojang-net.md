@@ -17,7 +17,7 @@ The `mojang-net` module contains types for executing HTTP-based requests. This m
 {
     // mojang-net
     "uuid": "777b1798-13a6-401c-9cba-0cf17e31a81b",
-    "version": [ 0, 1, 0 ]
+    "version": "1.0.0-beta"
 }
 ```
 

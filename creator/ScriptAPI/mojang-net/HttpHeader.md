@@ -21,11 +21,11 @@ Key of the HTTP header.
 Type: *string*
 
 ### **value**
-`value: string;`
+`value: mojang-minecraft-server-admin.SecretString | string;`
 
 Value of the HTTP header.
 
-Type: *string*
+Type: [*mojang-minecraft-server-admin.SecretString*](../mojang-minecraft-server-admin/SecretString.md) | *string*
 
 
 ## Methods

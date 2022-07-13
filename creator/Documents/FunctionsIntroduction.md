@@ -8,10 +8,10 @@ description: "A tutorial that introduces a Creator on how to use functions"
 
 # Introduction to Functions
 
-While commands in Minecraft: Bedrock Edition allow creators to add logic and gameplay features to their Add-Ons, commands require a user to either manually enter commands arguments or set up elaborate chains of command blocks to execute properly. However, with function files, you can group together multiple commands into a single file allowing you to run a series of commands with a single execute. With functions, you can set up ways to generate buildings and structures around a select player, set up a reward system to gift items to a player, or teleport players to relative locations.
+Commands are powerful tools for adding logic and gameplay features. However, redstone and command blocks can be cumbersome. With function files, you can group together multiple commands into a single file and execute all of them with a single command.
 
 >[!Tip]
-> Minecraft **cannot** run more than 10,000 commands in one function file. This includes function commands being executed by the original function. Not that we recommend running that many commands in one go, because that would affect the game's performance.
+> Minecraft: Bedrock Edition **cannot** run more than 10,000 commands in one function call.
 
 In this tutorial you will learn the following:
 
@@ -45,6 +45,7 @@ Function files have a .mcfunction extension and they live in the **functions** f
 
     ```json
     say Bye...
+    playsound random.explode
     teleport @s ~10 ~10 ~10 true
     say OUCH!
     ```
@@ -52,7 +53,7 @@ Function files have a .mcfunction extension and they live in the **functions** f
 1. Save the file.
 
 >[!IMPORTANT]
-> When working with commands in a .mcfunction file, you do not need to start commands with `/`.
+> When working with commands in a .mcfunction file, you do not need to start commands with the leading slash `/`.
 
 ## Testing the function
 
@@ -69,7 +70,7 @@ For example, if you have another folder inside your functions folder called **in
 
 ## What's Next?
 
-Now that you have an overview of how a function file works, you can learn how to utilize the in-game tick function and a tick.json file in order to fire off custom functions on repeat.
+Now that you have an overview of how a function file works, you can learn how to use the in-game tick function and a `tick.json` file to fire off custom functions on repeat.
 
 >[!div class="nextstepaction"]
 >[Tick.json Introduction](TickJsonIntroduction.md)

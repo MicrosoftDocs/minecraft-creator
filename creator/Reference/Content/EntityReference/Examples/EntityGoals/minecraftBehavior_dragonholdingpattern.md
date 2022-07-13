@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.dragonholdingpattern
 ms.prod: gaming
 ---
@@ -20,11 +20,13 @@ ms.prod: gaming
 }
 ```
 
-## Vanilla entities examples
+## Vanilla entities example
 
 ### ender_dragon
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ender_dragon.json" range="33-35":::
+"minecraft:behavior.dragonholdingpattern": {
+          "priority": 3
+        },
 
 ## Vanilla entities using `minecraft:behavior.dragonholdingpattern`
 

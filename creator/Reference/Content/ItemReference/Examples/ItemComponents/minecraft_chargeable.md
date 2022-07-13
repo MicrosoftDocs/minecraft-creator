@@ -20,7 +20,7 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|movement_modifier|*not set* |Float | Modifier value to scale the players movement speed when item is in use. Minimum is 0.00 and maximum is 5.00.|
+|movement_modifier|*not set* |Float | Modifier value to scale the players movement speed when item is in use.|
 |on_complete  |*not set*  | Event| Event trigger for when the item has completed its use duration.|
 
 ## Example

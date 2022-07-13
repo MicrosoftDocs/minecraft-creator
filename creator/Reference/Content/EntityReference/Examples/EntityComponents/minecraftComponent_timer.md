@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: docsbryce
+ms.author: v-bbortree
 title: Entity Documentation - minecraft:timer
 ms.prod: gaming
 ---
@@ -26,7 +26,7 @@ ms.prod: gaming
     "looping": true,
     "randomInterval":true,
     "time": [0.0, 0.0],
-    "time_down_event":{
+    "time_down_event": {
         "event":"minecraft:times_up"
     }
 }

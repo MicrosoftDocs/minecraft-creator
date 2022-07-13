@@ -1,9 +1,9 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: docsbryce
+ms.author: v-bbortree
 title: Getting Started with Command Blocks
 ms.prod: gaming
-description: A tutorial that is an introduction to Command Blocks where you will learn how to access Command Blocks, how to create chains and how to design a gameplay loop with Command Blocks.
+description: A tutorial that is an introduction to Minecraft Bedrock Edition Command Blocks where you will learn how to access Command Blocks, how to create chains and how to design a gameplay loop with Command Blocks.
 ---
 # Getting Started with Command Blocks
 
@@ -25,7 +25,7 @@ In this guide, we will set up a command block chain to look for a certain type o
 - [Introduction to Commands](CommandsIntroduction.md)
 - A Minecraft world with cheats enabled.
 
-#### Setting the map up
+#### Setting the world up
 
 While command blocks can be used in any Minecraft world, we will be using a flat world for a simple and clean environment.
 
@@ -147,3 +147,7 @@ If we stop now, placing the diamond block at `0 4 0` will give the player 20 eme
 ### Testing the loop
 
 If everything has been set up correctly, you can now place a diamond block on location `0, 4, 0` and you will receive a single emerald in your player inventory.
+
+> [!div class="nextstepaction"]
+> [Commands Introduction](CommandsIntroduction.md)
+> [Popular Commands](CommandsPopularCommands.md)

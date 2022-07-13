@@ -22,7 +22,6 @@ ms.prod: gaming
 
 `minecraft:random_ticking` can use the following parameters that are fired on-tick.
 
-
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |condition| 1| String|  A condition using Molang queries that results to true/false. If true on the random tick, the event will be triggered. If false on the random tick, the event will not be triggered. |

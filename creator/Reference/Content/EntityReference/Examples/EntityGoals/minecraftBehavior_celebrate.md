@@ -1,6 +1,6 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.celebrate
 ms.prod: gaming
 ---
@@ -10,7 +10,6 @@ ms.prod: gaming
 `minecraft:behavior.celebrate` allows this entity to celebrate surviving a raid by making celebration sounds and jumping.
 
 ## Parameters
-
 
 | Name| Default Value | Type | Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
@@ -76,4 +75,3 @@ ms.prod: gaming
 - [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
 - [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)
 - [witch](../../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)
-

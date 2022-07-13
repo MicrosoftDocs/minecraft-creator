@@ -125,4 +125,4 @@ Now that you have learned more about ticking areas, you could learn more about s
 
 > [!div class="nextstepaction"]
 > [Scoreboard Operations Tutorial](ScoreboardOperationsTutorial.md)
-> [Complete the Monument](CommandsHowToMakeACTMMap.md)
+> [Complete the Monument](CommandsHowToMakeACTMWorld.md)

@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.sneeze
 ms.prod: gaming
 ---
@@ -73,7 +73,51 @@ ms.prod: gaming
 
 ### panda
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/panda.json" range="217-258":::
+```json
+"minecraft:behavior.sneeze": {
+          "priority": 7,
+          "probability": 0.0001666,
+          "cooldown_time": 1.0,
+          "within_radius": 10.0,
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_component",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "minecraft:is_baby"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "panda"
+                  },
+                  {
+                    "test": "in_water",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": true
+                  },
+                  {
+                    "test": "on_ground",
+                    "operator": "==",
+                    "value": true
+                  }
+                ]
+              },
+              "max_dist": 10
+            }
+          ],
+          "drop_item_chance": 0.001,
+          "loot_table": "loot_tables/entities/panda_sneeze.json",
+          "prepare_sound": "presneeze",
+          "prepare_time": 1.0,
+          "sound": "sneeze"
+        }
+
+```
 
 ## Vanilla entities using `minecraft:behavior.sneeze`
 

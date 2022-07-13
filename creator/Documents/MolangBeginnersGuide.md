@@ -1,16 +1,16 @@
 ---
 author: JDHeaden
 ms.author: v-jillheaden
-title: Molang - A Beginner Guide
+title: Molang - A Beginner's Guide
 ms.prod: gaming
 description: "A first look at Molang"
 ---
 
-# Molang: a Beginner Guide
+# Molang: a Beginner's Guide
 
 Molang (sometimes written as “MoLang”) is a scripting language that can be used to enhance Minecraft functionality. It's typically used one or two lines at a time, although there have been creators who have written pages and pages of the stuff to do incredible things ... because of course they did.
 
-Molang can be used in pretty much any Minecraft JSON file a creator can access, including resource packs, behavior packs, animation files, and animation controller files.
+Molang can be used in pretty much any Minecraft JSON file a creator can access, usually in behavior packs and resource packs.
 
 In this tutorial you will learn the following:
 
@@ -30,9 +30,9 @@ You’re going to want to feel comfortable using resource packs and behavior pac
 
 ## Using Molang in a Behavior Pack
 
-This tutorial starts with the completed attack cow behavior pack created from the behavior pack tutorial. 
+This tutorial starts with the completed attack cow behavior pack created from the behavior pack tutorial.
 
-We are going to use Molang to make the attack cow drop more experience points and fancy End City loot instead of the usual leather and beef when you unalive it. 
+We are going to use Molang to make the attack cow drop more experience points. We are also going to edit a non-Molang line of code so the cow drops fancy End City loot instead of the usual leather and beef when you unalive it.
 
 Open **cow.json** and find the `minecraft:cow_adult` line of code.
 
@@ -49,7 +49,7 @@ The original code looks like this:
         },
 ```
 
-The first line we care about is “on_death” inside the “Minecraft:experience_reward” section. This is the line of code that gives you a modest amount of experience when you unalive a cow.
+The first line we care about is “on_death” inside the “Minecraft:experience_reward” section. This is the line of code that gives you those little green and yellow jinglies of experience.
 
 This code:
 
@@ -62,7 +62,7 @@ This code:
 
 ... translates to this:
 
-“In the context of how a cow can reward experience points to a player, there are two ways; when you feed wheat to two cows so they breed a baby cow (“on_bred”) or when you unalive a cow (“on_death”).
+“In the context of how a cow can reward experience points to a player, there are two ways; when you feed wheat to two cows so they breed a baby cow (“on_bred”) or when you kill a cow (“on_death”).
 
 This line of code:
 
@@ -81,8 +81,9 @@ Edit the “on_death” line to look like this:
 
 This multiplies the returned number of experience points by 300.
 
-Now, let’s make the cow drop End City loot.
-In the conveniently close “minecraft:loot” section of the cow.json code, change the “table” line from this:
+Now, let’s make the cow drop End City loot. Note: THIS IS NOT MOLANG! It's just simple JSON code editing. But, since we're here anyway...
+
+In the conveniently close “minecraft:loot” section of the cow.json code, change the `“table”` line from this:
 
 `"table": "loot_tables/entities/cow.json"`
 
@@ -95,14 +96,14 @@ Woohoo!
 Here is a summary of what we just did:
 
 ```json
-         "minecraft:cow_adult": {
-             "minecraft:experience_reward": {
-                 "on_bred": "Math.Random(1,7)",
-                 "on_death": "query.last_hit_by_player ? 300 * Math.Random(1,1) : 0"
-             },
-             "minecraft:loot": {
-                 "table": "loot_tables/chests/end_city_treasure.json"
-             },
+"minecraft:cow_adult": {
+  "minecraft:experience_reward": {
+      "on_bred": "Math.Random(1,7)",
+      "on_death": "query.last_hit_by_player ? 300 * Math.Random(1,1) : 0"
+  },
+      "minecraft:loot": {
+      "table": "loot_tables/chests/end_city_treasure.json"
+  },
 ```
 
 Save it. Play it. Enjoy your diamond armor.
@@ -162,11 +163,12 @@ If you compare this code to the Vanilla animations/cow.animation.json file in th
 "head": {
        "rotation": [0, 0, "math.sin(query.life_time*360) * 40"]
       }
+
 ```
 
-The code in brackets is Molang and it is using a sine function to control how the head rotates. Yay trigonometry!
+The code in brackets is Molang and it is using a sine function to control how the head rotates. Yay, trigonometry!
 
-After you reload Minecraft and find an "enhanced" cow, you can experiment with different values and functions in that expression to do different things.
+After you reload Minecraft and find (or summon) an "enhanced" cow, you can experiment with different values and functions in that expression to do different things.
 
 Extra credit: Use the resource pack to edit the cow's skin to make it even more terrifying.
 

@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: Mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.random_look_around
 ms.prod: gaming
 ---
@@ -13,7 +13,12 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|look_time| [2, 4]| Range [a, b]|  The range of time in seconds the mob will stay looking in a random direction before looking elsewhere |
+|look_time| [2, 4]| Range [a, b]|  The range of time in seconds the mob will stay looking in a random direction before looking elsewhere. |
+|look_distance|8.0|Float|The distance in blocks from which the entity will look at.|
+|probability|0.2|Float|The probability of looking at the target. A value of 1.00 is 100%.|
+|look_distance|8.0|Float|The distance in blocks from which the entity will look at.|
+|angle_of_view_vertical|360|Integer|The angle in degrees that the mob can see in the X-axis (left-right).|
+|angle_of_view_horizontal|360|Integer|The angle in degrees that the mob can see in the Y-axis (up-down).|
 
 ## Example
 
@@ -28,9 +33,14 @@ ms.prod: gaming
 
 ### blaze
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/blaze.json" range="136-138":::
+```json
+"minecraft:behavior.random_look_around": {
+        "priority": 5
+      },
 
-## Vanilla entities using `minecraft:behavior.random_look_around`
+```
+
+### Vanilla entities using `minecraft:behavior.random_look_around`
 
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)

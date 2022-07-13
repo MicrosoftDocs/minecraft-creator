@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.dragondeath
 ms.prod: gaming
 ---
@@ -24,7 +24,14 @@ ms.prod: gaming
 
 ### ender_dragon
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ender_dragon.json" range="42-44":::
+```json
+"dragon_death": {
+        "minecraft:behavior.dragondeath": {
+          "priority": 0
+        }
+}
+
+``````
 
 ## Vanilla entities using `minecraft:behavior.dragondeath`
 

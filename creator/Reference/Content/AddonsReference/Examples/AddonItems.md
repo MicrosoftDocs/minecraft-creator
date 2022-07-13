@@ -51,7 +51,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -163| bamboo|  |
 | -164| bamboo_sapling|  |
 | 567| banner|  |
-| 651| banner_pattern|  |
+| 652| banner_pattern|  |
 | -203| barrel|  |
 | -161| barrier|  |
 | -234| basalt|  |
@@ -98,7 +98,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 399| blue_dye|  |
 | 231| blue_glazed_terracotta|  |
 | -11| blue_ice|  |
-| 649| boat|  |
+| 650| boat|  |
 | 415| bone|  |
 | 216| bone_block|  |
 | 411| bone_meal|  |
@@ -315,7 +315,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -317| dripstone_block|  |
 | 125| dropper|  |
 | 483| drowned_spawn_egg|  |
-| 642| dye|  |
+| 651| dye|  |
 | 390| egg|  |
 | 471| elder_guardian_spawn_egg|  |
 | 36| element_0|  |
@@ -447,7 +447,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 116| enchanting_table|  |
 | -178| end_brick_stairs|  |
 | 206| end_bricks|  |
-| 653| end_crystal|  |
+| 654| end_crystal|  |
 | 209| end_gateway|  |
 | 119| end_portal|  |
 | 120| end_portal_frame|  |
@@ -961,7 +961,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -236| soul_soil|  |
 | -268| soul_torch|  |
 | 601| sparkler|  |
-| 652| spawn_egg|  |
+| 653| spawn_egg|  |
 | 278| spider_eye|  |
 | 446| spider_spawn_egg|  |
 | 561| splash_potion|  |
@@ -1036,6 +1036,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 525| tnt_minecart|  |
 | 50| torch|  |
 | 568| totem_of_undying|  |
+| 649| trader_llama_spawn_egg|  |
 | 96| trapdoor|  |
 | 146| trapped_chest|  |
 | 546| trident|  |

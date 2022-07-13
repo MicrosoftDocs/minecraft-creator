@@ -14,7 +14,6 @@ This represents a placeholder object that represents a secret string. The conten
 
 ## Methods
 - [constructor](#constructor)
-- [equals](#equals)
   
 ### **constructor**
 `
@@ -25,12 +24,3 @@ new SecretString(value: string)
 - **value**: *string*
 
 #### **Returns** [*SecretString*](SecretString.md)
-### **equals**
-`
-equals(other: SecretString): boolean
-`
-
-#### **Parameters**
-- **other**: [*SecretString*](SecretString.md)
-
-#### **Returns** *boolean*

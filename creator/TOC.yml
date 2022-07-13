@@ -22,14 +22,14 @@
             href: Documents/ConvertingTexturePacks.md
           - name: Preparing Raw Text for Localization
             href: Documents/PreparingRawTextForLocalization.md
-        - name: World Creation and Gameplay with Parkour Map
+        - name: World Creation and Gameplay with Parkour World
           items:
           - name: Parkour Introduction
             href: Documents/ParkourIntro.md
-          - name: Parkour Map Walkthrough
-            href: Documents/ParkourMapWalkthrough.md
-          - name: Parkour Map Creation Guide
-            href: Documents/ParkourMapGuide.md                        
+          - name: Parkour World Walkthrough
+            href: Documents/ParkourWorldWalkthrough.md
+          - name: Parkour World Creation Guide
+            href: Documents/ParkourWorldGuide.md                        
         - name: Advanced Topics
           items:
           - name: Actor Storage
@@ -39,7 +39,7 @@
           - name: Editing NBTs Safely
             href: Documents/EditingNBTSafely.md
           - name: Molang Beginner's Guide
-            href: Documents/MolangBeginnerGuide.md
+            href: Documents/MolangBeginnersGuide.md
     - name: Tutorials
       items:
         - name: Add-On Pack Tutorials
@@ -68,8 +68,8 @@
             href: Documents/CommandsDamageIntroduction.md
           - name: Getting Started with Command Blocks
             href: Documents/CommandBlocks.md
-          - name: How to Make a Complete the Monument Map
-            href: Documents/CommandsHowToMakeACTMMap.md
+          - name: How to Make a Complete the Monument World
+            href: Documents/CommandsHowToMakeACTMWorld.md
           - name: Introduction to Functions
             href: Documents/FunctionsIntroduction.md
           - name: Introduction to Scoreboards
@@ -202,8 +202,6 @@
             href: Reference/Content/entityreference/Examples/EntityComponents/TOC.yml
           - name: AI Goals
             href: Reference/Content/entityreference/Examples/EntityGoals/TOC.yml
-          - name: Attributes
-            href: Reference/Content/entityreference/Examples/EntityAttributes/TOC.yml
           - name: Properties
             href: Reference/Content/entityreference/Examples/EntityProperties/TOC.yml
           - name: Triggers
@@ -220,6 +218,8 @@
             href: Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md
           - name: Feature List
             href: Reference/Content/featuresreference/Examples/Features/TOC.yml
+          - name: Feature Example Schema
+            href: Reference/Content/FeaturesReference/Examples/ExampleFeatureSchema.md
         - name: Fog JSON
           items:
           - name: Introduction to Fogs
@@ -259,7 +259,7 @@
           - name: Schema Documentation Homepage
             href: Reference/Content/schemasreference/index.yml
           - name: Schema List
-            href: Reference/Content/schemasreference/schemas/TOC.yml
+            href: Reference/Content/schemasreference/SchemasList.md
         - name: Volume JSON
           items:
           - name: Volume Documentation Homepage
@@ -273,7 +273,23 @@
           - name: Introduction to Texture Sets
             href: Reference/Content/texturesetsreference/texturesetsconcepts/texturesetsintroduction.md
         - name: Spawn Rules
-          href: Reference/Content/entityreference/Examples/ClientEntityDocumentation/DataDrivenSpawning.md
+          items: 
+          - name: Data-Driven Spawning Rules
+            href: Reference/Content/entityreference/Examples/ClientEntityDocumentation/DataDrivenSpawning.md
+          - name: Brightness Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/brightness_filter.md
+          - name: Density Limit
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/density_limit.md
+          - name: Difficulty Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/difficulty_filter.md
+          - name: Entity Types
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/entity_types.md
+          - name: Herd
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/herd.md
+          - name: Operator
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/operator.md
+          - name: Weight
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/weight.md
       - name: Resource Pack
         items:
         - name: Client Entity JSON

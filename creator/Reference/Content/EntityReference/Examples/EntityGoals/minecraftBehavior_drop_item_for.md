@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-bbortree
 title: Entity Documentation - minecraft:behavior.drop_item_for
 ms.prod: gaming
@@ -102,4 +102,3 @@ ms.prod: gaming
 ## Vanilla entities using `drop_item_for`
 
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-

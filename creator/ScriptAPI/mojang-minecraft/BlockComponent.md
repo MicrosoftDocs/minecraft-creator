@@ -12,8 +12,8 @@ description: Contents of the mojang-minecraft.BlockComponent class.
 
 ## Classes that extend BlockComponent
 - [*BlockInventoryComponent*](BlockInventoryComponent.md)
-- [*BlockPistonComponent*](BlockPistonComponent.md)
 - [*BlockLavaContainerComponent*](BlockLavaContainerComponent.md)
+- [*BlockPistonComponent*](BlockPistonComponent.md)
 - [*BlockPotionContainerComponent*](BlockPotionContainerComponent.md)
 - [*BlockSnowContainerComponent*](BlockSnowContainerComponent.md)
 - [*BlockWaterContainerComponent*](BlockWaterContainerComponent.md)
