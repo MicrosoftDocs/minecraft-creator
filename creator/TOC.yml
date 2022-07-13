@@ -18,6 +18,8 @@
             href: Documents/PackagingASkinPack.md
           - name: Packaging a WorldTemplate
             href: Documents/PackagingAWorldTemplate.md
+          - name: Mash-up Pack Overview
+            href: Documents/MashupPackOverview.md
           - name: 'Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition'
             href: Documents/ConvertingTexturePacks.md
           - name: Preparing Raw Text for Localization
