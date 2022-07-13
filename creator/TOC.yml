@@ -254,8 +254,26 @@
           items:
           - name: Schema Documentation Homepage
             href: Reference/Content/schemasreference/index.yml
-          - name: Schema List
+          - name: Schemas List
             href: Reference/Content/schemasreference/SchemasList.md
+          - name: actor_animation
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_actor_animation_1.8.0.md
+          - name: actor_animation_controller
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_actor_animation_controller_1.10.0.md
+          - name: block_reference
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_block_reference_1.10.0.md
+          - name: chance_information
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_chance_information_1.14.0.md
+          - name: geometry:1.8.0
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.8.0.md
+          - name: geometry:1.12.0
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.12.0.md
+          - name: geometry:1.14.0
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.14.0.md
+          - name: geometry:1.16.0
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.16.0.md
+          - name: persona_actor_animation
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_persona_actor_animation_1.8.0.md
         - name: Volume JSON
           items:
           - name: Volume Documentation Homepage
