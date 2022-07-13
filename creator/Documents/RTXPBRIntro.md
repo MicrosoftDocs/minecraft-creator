@@ -74,7 +74,7 @@ The above image uses the following mer:
 
 ### Roughness Map
 
-A Roughness map is a grayscale texture that determines which areas of a texture map emit light.
+A Roughness map is a grayscale texture that determines which areas of the texture map are smooth and which are rough.
 
 - A pixel that is set to black is considered a value of `0` and will treat the pixel as very smooth. Objects like smooth marble, glass, or smooth plastic are very smooth.
 - A pixel that is set to white is considered a value of `1` and will treat the pixel as very rough. Brick, tree bark, or stones are very rough.
