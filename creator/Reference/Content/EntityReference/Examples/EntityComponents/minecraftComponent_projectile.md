@@ -51,7 +51,7 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description|
 :----------|:----------|:----------|:----------
 |catch_fire| false | Boolean| Determines if the struck object is set on fire.|
-|definition_event| *not set* | event | The event that is triggered on a hit. See the [table below for all definition event parameters](#definition_event-parameters).|
+|definition_event| *not set* | JSON Object | The event that is triggered on a hit. See the [table below for all definition event parameters](#definition_event-parameters).|
 |douse_fire| false|Boolean| If the target is on fire, then douse hte fire.|
 |freeze_on_hit|*not set*|JSON Object| An area of entities that is frozen to block on hits. Has shape of either sphere or cube, snap_to_block boolean ,and size decimal properties.|
 |grant_xp|*not set*|JSON Object|Grants XP on hit. Has minXP for minimum XP granted, maxXp for maximum, or simply flat xp properties.|
@@ -63,7 +63,7 @@ ms.prod: gaming
 |particle_on_hit|*not set*|JSON Object|The particles that spawn on hit. See [the table below for all particle_on_hit parameters](#particle_on_hit-parameters).|
 | potion_effect| -1| Integer| Defines the effect the arrow will apply to the entity it hits. |
 |remove_on_hit|*not set*|JSON Object|Removes the projectile.|
-|spawn_aoe_cloud|false|Boolean|Potion spawns an area of effect cloud. See [the table below for all spawn_aoe_cloud parameters](#spawn_aoe_cloud-parameters).|
+|spawn_aoe_cloud|false|JSON Object|Potion spawns an area of effect cloud. See [the table below for all spawn_aoe_cloud parameters](#spawn_aoe_cloud-parameters).|
 |spawn_chance|*not set*|JSON Ojbect|Contains information on the chance of spawning an entity on hit. See parameters below.|
 |stick_in_ground|*not set*| Object| Decides if the object sticks in ground and contains `shake_time` integer parameter to determine how long it will shake.|
 |teleport_owner | false | Boolean | Determines if the owner is transported on hit.|
