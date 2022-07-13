@@ -451,6 +451,11 @@ Type: [*EntityType*](EntityType.md)
 
 Type: [*EntityType*](EntityType.md)
 
+### **traderLlama**
+`static read-only traderLlama: EntityType;`
+
+Type: [*EntityType*](EntityType.md)
+
 ### **tripodCamera**
 `static read-only tripodCamera: EntityType;`
 

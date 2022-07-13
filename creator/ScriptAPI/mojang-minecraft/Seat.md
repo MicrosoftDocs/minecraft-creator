@@ -14,28 +14,28 @@ Describes a particular seating position on this rideable entity.
 
 ## Properties
 ### **lockRiderRotation**
-`lockRiderRotation: number;`
+`read-only lockRiderRotation: number;`
 
 If specified, contains a forced rotation that the riders in this seat are facing.
 
 Type: *number*
 
 ### **maxRiderCount**
-`maxRiderCount: number;`
+`read-only maxRiderCount: number;`
 
 A maximum number of riders that this seat can support.
 
 Type: *number*
 
 ### **minRiderCount**
-`minRiderCount: number;`
+`read-only minRiderCount: number;`
 
 A minimum number of riders that can be placed in this seat position, if this seat is to be filled.
 
 Type: *number*
 
 ### **position**
-`position: Location;`
+`read-only position: Location;`
 
 Physical location of this seat, relative to the entity's location.
 

@@ -1,6 +1,6 @@
 ---
-author: neonerz
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Packaging a Skin Pack
 ms.prod: gaming
 ---
@@ -51,7 +51,6 @@ A manifest tells Minecraft general information about your skin pack. Create a JS
 
 A `skins.json` file will define the skins that come with your skin pack. Create a JSON file named `skins.json` at the root of the skin pack. Within it contains the following:
 
-
 - `localization_name` and `serialize_name`: these will be the same and are the localization keys whose value will be defined later in [`en_US.lang`](#texts-folder) with the full key being `skinpack.<localization_name>`. That value will be the title of the pack. The key will also always be prepended to each individual skin's localization key.
 - `skins`: a collection of definitions, each defining a single skin.
 
@@ -63,6 +62,9 @@ Each individual skin definition will then contain the following:
 - `type`: either `free` or `paid`. Non-marketplace partners may have any number of free skins but no paid skins, while marketplace partners may have up to 2 free skins and are able to add paid skins.
 
 ### Template skins.json
+
+> [!NOTE]
+> Unfortunately, it's not possible to add custom models to skin packs at this time using the skin pack JSON capability.
 
 ```json
 {
@@ -105,9 +107,9 @@ Each individual skin definition will then contain the following:
 
 ## Skin Textures
 
-The actual skin textures are PNGs. The file names are referred to in the `skins.json` metadata file. They can be used only at the root of the skin pack. You can use [Blockbench](https://blockbench.net/) to create a usable skin PNG for your skin pack.
+The actual skin textures are PNGs. The file names are referred to in the `skins.json` metadata file. They can be used only at the root of the skin pack. You can use Blockbench to create a usable skin PNG for your skin pack.
 
-## Texts folder
+## Texts Folder
 
 Inside this folder are the `en_US.lang` and `languages.json` files, which define the actual names of your pack and skins and the supported languages of your pack. The names after the `=` are what show up in-game, such as in the skin picker.
 
@@ -124,7 +126,7 @@ The below template uses the "localization keys" from the template `skin.json` to
 
 #### Template en_US.lang
 
-```
+```json
 skinpack.TemplateSkinPack=Your Skin Pack Name Here
 skin.TemplateSkinPack.TemplateSkin1=Skin Name 1
 skin.TemplateSkinPack.TemplateSkin2=Skin Name 2

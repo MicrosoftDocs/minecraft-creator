@@ -3,8 +3,8 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: mojang-minecraft.GameMode Enumeration
-description: Contents of the mojang-minecraft.GameMode enumeration.
+title: GameMode Enumeration
+description: Contents of the GameMode enumeration.
 ---
 # GameMode Enumeration
 >[!IMPORTANT]

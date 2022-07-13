@@ -75,19 +75,6 @@ landingContent:
           - text: minecraft:can_climb
             url: Examples/EntityProperties/minecraftProperty_can_climb.md
 # Card
-  - title: Attributes
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Attributes List
-            url: Examples/AttributeList.md
-          - text: minecraft:attack
-            url: Examples/EntityAttributes/minecraftAttribute_attack.md
-          - text: minecraft:spell_effects
-            url: Examples/EntityAttributes/minecraftAttribute_spell_effects.md
-          - text: minecraft:strength
-            url: Examples/EntityAttributes/minecraftAttribute_strength.md
-# Card
   - title: Built-in Events
     linkLists:
       - linkListType: reference

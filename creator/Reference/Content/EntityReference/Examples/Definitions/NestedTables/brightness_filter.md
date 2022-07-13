@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: docsbryce
+ms.author: v-bbortree
 title: Entity Documentation - minecraft:brightness_filter
 ms.prod: gaming
 ---
@@ -14,5 +14,5 @@ This component allows players to set the light level range that causes the mob t
 |Name |Default Value |Type | Description |
 |:-----------|:-----------|:-----------|:-----------|
 |adjust_for_weather |false |Boolean |This determines if weather can affect the light level conditions that cause the mob to spawn (e.g. Allowing hostile mobs to spawn during the day when it rains.) |
-|max |15.0 |Decimal | This is the maximum light level value that allows the mob to spawn |
-|min |0.0 |Decimal |This is the minimum light level value that allows the mob to spawn |
+|max |15.0 |Decimal | This is the maximum light level value that allows the mob to spawn. |
+|min |0.0 |Decimal |This is the minimum light level value that allows the mob to spawn.|

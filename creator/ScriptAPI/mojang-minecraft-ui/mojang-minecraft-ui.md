@@ -43,7 +43,7 @@ form.show(players[0]).then((response) => {
 {
     // mojang-minecraft-ui
     "uuid": "2bd50a27-ab5f-4f40-a596-3641627c635e",
-    "version": [ 0, 1, 0 ]
+    "version": "0.1.0"
 }
 ```
 

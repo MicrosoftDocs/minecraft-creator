@@ -236,7 +236,7 @@ Here is an example of the complete feature schema:
               string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
           }
           float "ratio_of_empty_space" : opt // Ratio of a Chunk to be filled with empty space rather than features.
-          array "feature_areas"[1,*]
+          array "feature_areas"[1,4294967295]
           {
               object "<any array element>" : opt
               {

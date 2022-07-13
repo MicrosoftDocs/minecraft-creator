@@ -117,6 +117,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | thrown_trident| 12582985| 73 |
 | tnt| 65| 65 |
 | tnt_minecart| 524385| 97 |
+| trader_llama| 5021| 157 |
 | tripod_camera| 318| 62 |
 | tropicalfish| 9071| 111 |
 | turtle| 4938| 74 |

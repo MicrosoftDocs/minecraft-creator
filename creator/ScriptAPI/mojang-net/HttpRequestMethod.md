@@ -3,8 +3,8 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: mojang-net.HttpRequestMethod Enumeration
-description: Contents of the mojang-net.HttpRequestMethod enumeration.
+title: HttpRequestMethod Enumeration
+description: Contents of the HttpRequestMethod enumeration.
 ---
 # HttpRequestMethod Enumeration
 >[!IMPORTANT]

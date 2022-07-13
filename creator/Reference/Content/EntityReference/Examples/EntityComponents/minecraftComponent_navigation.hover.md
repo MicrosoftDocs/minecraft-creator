@@ -63,7 +63,17 @@ ms.prod: gaming
 
 ### bee
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/bee.json" range="469-477":::
+```json
+"minecraft:navigation.hover": {
+    "can_path_over_water": true,
+    "can_sink": false,
+    "can_pass_doors": false,
+    "can_path_from_air": true,
+    "avoid_water": true,
+    "avoid_damage_blocks": true,
+    "avoid_sun": false
+}
+```
 
 ## Vanilla entities using `minecraft:navigation.hover`
 

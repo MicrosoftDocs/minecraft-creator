@@ -1,6 +1,6 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.avoid_mob_type
 ms.prod: gaming
 ---
@@ -10,8 +10,6 @@ ms.prod: gaming
 `minecraft:behavior.avoid_mob_type` allows the entity to run away from other entities that meet the criteria specified.
 
 ## Parameters
-
-
 
 | Name| Default Value | Type | Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
@@ -121,4 +119,3 @@ ms.prod: gaming
 - [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
 - [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
 - [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
-

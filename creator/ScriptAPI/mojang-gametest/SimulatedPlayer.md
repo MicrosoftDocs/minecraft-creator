@@ -805,7 +805,7 @@ Stops using the currently active item.
 > This function can throw errors.
 ### **teleport**
 `
-teleport(location: mojang-minecraft.Location, dimension: mojang-minecraft.Dimension, xRotation: number, yRotation: number): void
+teleport(location: mojang-minecraft.Location, dimension: mojang-minecraft.Dimension, xRotation: number, yRotation: number, keepVelocity?: boolean): void
 `
 
 Teleports the selected player to a new location
@@ -822,11 +822,12 @@ Teleports the selected player to a new location
 - **yRotation**: *number*
   
   Y rotation of the player after teleportation.
+- **keepVelocity**?: *boolean* = `false`
 > [!WARNING]
 > This function can throw errors.
 ### **teleportFacing**
 `
-teleportFacing(location: mojang-minecraft.Location, dimension: mojang-minecraft.Dimension, facingLocation: mojang-minecraft.Location): void
+teleportFacing(location: mojang-minecraft.Location, dimension: mojang-minecraft.Dimension, facingLocation: mojang-minecraft.Location, keepVelocity?: boolean): void
 `
 
 Teleports the selected player to a new location, and will have the player facing a specified location.
@@ -840,6 +841,7 @@ Teleports the selected player to a new location, and will have the player facing
 - **facingLocation**: [*mojang-minecraft.Location*](../mojang-minecraft/Location.md)
   
   Location that this player will be facing.
+- **keepVelocity**?: *boolean* = `false`
 > [!WARNING]
 > This function can throw errors.
 ### **triggerEvent**

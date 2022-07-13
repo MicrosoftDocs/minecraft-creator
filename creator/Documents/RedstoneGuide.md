@@ -136,4 +136,4 @@ In normal mode (when the light is NOT switched on) then it will not output a sig
 Now that you know more about redstone, you could use it to enhance a "Complete the Monument" map.
 
 > [!div class="nextstepaction"]
-> [How to make a Complete the Monument Map](CommandsHowToMakeACTMMap.md)
+> [How to make a Complete the Monument World](CommandsHowToMakeACTMWorld.md)

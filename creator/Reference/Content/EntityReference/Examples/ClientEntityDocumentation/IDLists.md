@@ -323,6 +323,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:item_controllable| 1868311069 |
 | minecraft:loot| 1775814032 |
 | minecraft:mark_variant| 663621689 |
+| minecraft:movement_sound_distance_offset| 124679519 |
 | minecraft:push_through| -138030768 |
 | minecraft:scale| 77854436 |
 | minecraft:skin_id| 1838729593 |

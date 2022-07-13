@@ -2,14 +2,14 @@
    href: ../BlockComponentsList.md
  - name: aim_collision
    href: minecraftBlock_aim_collision.md
- - name: block_collision
-   href: minecraftBlock_block_collision.md
  - name: block_light_emission
    href: minecraftBlock_block_light_emission.md
  - name: block_light_filter
    href: minecraftBlock_block_light_filter.md
  - name: breathability
    href: minecraftBlock_breathability.md
+ - name: collision_box
+   href: minecraftBlock_collision_box.md
  - name: crafting_table
    href: minecraftBlock_crafting_table.md
  - name: creative_category
@@ -36,12 +36,12 @@
    href: minecraftBlock_part_visibility.md
  - name: placement_filter
    href: minecraftBlock_placement_filter.md
+ - name: queued_ticking
+   href: minecraftBlock_queued_ticking.md
  - name: random_ticking
    href: minecraftBlock_random_ticking.md
  - name: rotation
    href: minecraftBlock_rotation.md
- - name: ticking
-   href: minecraftBlock_ticking.md
  - name: unit_cube
    href: minecraftBlock_unit_cube.md
  - name: unwalkable

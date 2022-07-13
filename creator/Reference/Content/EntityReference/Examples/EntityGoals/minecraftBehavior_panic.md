@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: Mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.panic
 ms.prod: gaming
 ---
@@ -13,11 +13,13 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|damage_sources| all| List| The list of Entity Damage Sources that will cause this mob to panic |
-|force| false| Boolean| If true, this mob will not stop panicking until it can't move anymore or the goal is removed from it |
-|ignore_mob_damage| false| Boolean| If true, the mob will not panic in response to damage from other mobs. This overrides the damage types in "damage_sources" |
-|prefer_water| false| Boolean| If true, the mob will prefer water over land |
-|speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |
+|damage_sources| all| List| The list of Entity Damage Sources that will cause this mob to panic. |
+|force| false| Boolean| If true, this mob will not stop panicking until it can't move anymore or the goal is removed from it. |
+|ignore_mob_damage| false| Boolean| If true, the mob will not panic in response to damage from other mobs. This overrides the damage types in "damage_sources." |
+|panic_sound| *not set*| String| Sound to play when event occurs. |
+|prefer_water| false| Boolean| If true, the mob will prefer water over land. |
+|speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal. |
+| sound_interval| 0| Range [a, b]| The range of time in seconds to randomly wait before playing the sound again |
 
 ## Example
 
@@ -33,9 +35,16 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### turtle
+### chicken
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/turtle.json" range="191-195":::
+```json
+"minecraft:behavior.panic": {
+        "priority": 0,
+        "prefer_water": true,
+        "speed_multiplier": 1.2
+},
+
+``````
 
 ## Vanilla entities using `minecraft:behavior.panic`
 

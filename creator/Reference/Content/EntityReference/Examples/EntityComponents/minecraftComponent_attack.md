@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: docsbryce
+ms.author: v-bbortree
 title: Entity Documentation - minecraft:attack
 ms.prod: gaming
 ---
@@ -9,16 +9,13 @@ ms.prod: gaming
 
 `minecraft:attack` allows an entity to define an entity's melee attack and any additional effects on it's attack.
 
->[!IMPORTANT]
-> `minecraft:attack` is *required* for an entity to attack another entity.
-
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| damage|*not set* | Range [a, b]| Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it |
-|effect_duration| 0.0| Decimal|  Duration in seconds of the status ailment applied to the damaged entity |
-|effect_name|*not set* | String|  Identifier of the status ailment to apply to an entity attacked by this entity's melee attack |
+| damage|*not set* | Range [a, b]| Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it. |
+|effect_duration| 0.0| Decimal|  Duration in seconds of the status ailment applied to the damaged entity. |
+|effect_name|*not set* | String|  Identifier of the status ailment to apply to an entity attacked by this entity's melee attack. |
 
 ## Example
 

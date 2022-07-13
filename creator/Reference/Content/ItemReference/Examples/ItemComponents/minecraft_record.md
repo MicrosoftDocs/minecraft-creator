@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Item Documentation -  minecraft:record
 
-`minecraft:record` used by record items to play music. 
+`minecraft:record` used by record items to play music.
 
 >[!IMPORTANT]
 > `minecraft:record` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
@@ -15,34 +15,35 @@ ms.prod: gaming
 >Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
 >
 >To learn more about Experimental Features
-- please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md)
 
+- please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md)
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:------------|:------------|:------------|:------------|
 |comparator_signal|1 | integer |Signal strength for comparator blocks to use
+
 - from 1 -  13.|
 |duration|*not set* | float | Duration of sound event in seconds
 - float value.|
 |sound_event|*not set* | String | Sound event types:  13, cat, blocks, chirp, far, mall, mellohi, stal, strad, ward, 11, wait, pigstep, otherside, 5. The value may be one listed below. |
 
-
 ### sound_event
 
 Listed below are the available sounds:
 
-- `explode`
+- `death.to.zombie`
 - `jump.prevent`
 - `item.use.on`
 - `hit`
 - `step`
 - `break`
 - `swim`
-- `irongolem.repair`
+- `mob.player.hurt_drown`
 - `step.baby`
 - `fly`
+- `horn_call4`
 - `jump`
 - `place`
 - `heavy.step`
@@ -50,23 +51,21 @@ Listed below are the available sounds:
 - `fall`
 - `hurt`
 - `fizz`
-- `charge.sculk`
+- `ambient.screamer`
 - `hurt.baby`
 - `hurt.in.water`
 - `death`
 - `flap`
 - `death.baby`
-- `death.min.volume`
-- `ambient.pollinate`
 - `death.in.water`
-- `death.to.zombie`
 - `ambient`
 - `ambient.baby`
 - `ambient.in.water`
 - `ignite`
 - `ambient.tame`
-- `purr`
-- `drink.honey`
+- `thunder`
+- `random.anvil_use`
+- `ambient.pollinate`
 - `breathe`
 - `mad`
 - `boost`
@@ -75,44 +74,53 @@ Listed below are the available sounds:
 - `squish.small`
 - `fall.big`
 - `fall.small`
-- `horn_call2`
 - `splash`
-- `horn_call6`
 - `drink`
-- `nearby_closer`
+- `shear`
+- `block.end_portal_frame.fill`
+- `drink.honey`
+- `drink.milk`
+- `pick_berries.cave_vines`
 - `born`
 - `eat`
+- `reappeared`
 - `takeoff`
 - `shake`
 - `plop`
 - `land`
-- `horn_call4`
 - `saddle`
 - `armor`
+- `item_taken`
 - `mob.armor_stand.place`
 - `add.chest`
+- `record.5`
 - `throw`
 - `attack`
+- `block.frog_spawn.hatch`
 - `attack.nodamage`
 - `attack.strong`
+- `listening_angry`
 - `warn`
-- `shear`
+- `sonic_charge`
 - `milk`
-- `thunder`
+- `explode`
 - `fire`
 - `fuse`
+- `block.frog_spawn.break`
 - `stare`
 - `spawn`
 - `shoot`
 - `break.block`
 - `launch`
 - `blast`
+- `horn_call2`
 - `large.blast`
 - `twinkle`
 - `remedy`
 - `unfect`
-- `tongue`
+- `copper.wax.off`
 - `convert_to_drowned`
+- `horn_call6`
 - `levelup`
 - `bow.hit`
 - `bullet.hit`
@@ -140,25 +148,25 @@ Listed below are the available sounds:
 - `water`
 - `lava.pop`
 - `lava`
-- `block.sculk_shrieker.place`
+- `celebrate`
 - `beacon.activate`
 - `beacon.ambient`
-- `heartbeat`
+- `block.smithing_table.use`
 - `beacon.deactivate`
 - `beacon.power`
-- `block.bell.hit`
+- `pre_ram.screamer`
 - `conduit.activate`
 - `conduit.ambient`
-- `block.composter.fill_success`
+- `block.click.fail`
 - `conduit.attack`
 - `conduit.deactivate`
-- `block.sweet_berry_bush.hurt`
+- `glow_squid.ink_squirt`
 - `conduit.short`
 - `bubble.pop`
 - `bubble.up`
-- `agitated`
+- `tilt_up.big_dripleaf`
 - `bubble.upinside`
-- `cake.add_candle`
+- `power.on.sculk_sensor`
 - `bubble.down`
 - `bubble.downinside`
 - `burp`
@@ -167,7 +175,7 @@ Listed below are the available sounds:
 - `bucket.fill.lava`
 - `bucket.empty.lava`
 - `bucket.fill.fish`
-- `block.sculk_shrieker.shriek`
+- `drip.water.pointed_dripstone`
 - `bucket.empty.fish`
 - `armor.equip_chain`
 - `armor.equip_diamond`
@@ -189,10 +197,9 @@ Listed below are the available sounds:
 - `record.ward`
 - `record.11`
 - `record.wait`
-- `imitate.slime`
+- `cast.spell`
 - `record.pigstep`
 - `record.otherside`
-- `record.5`
 - `flop`
 - `elderguardian.curse`
 - `teleport`
@@ -205,146 +212,152 @@ Listed below are the available sounds:
 - `haggle.no`
 - `haggle.idle`
 - `disappeared`
-- `reappeared`
 - `chorusgrow`
 - `chorusdeath`
 - `glass`
 - `potion.brewed`
-- `sleep`
-- `cast.spell`
 - `prepare.attack`
-- `block.beehive.work`
+- `roar`
 - `prepare.summon`
 - `prepare.wololo`
-- `celebrate`
+- `ambient.warped_forest.loop`
 - `fang`
 - `charge`
-- `block.smithing_table.use`
+- `particle.soul_escape.quiet`
 - `camera.take_picture`
-- `block.beehive.enter`
+- `block.bell.hit`
 - `leashknot.break`
 - `leashknot.place`
 - `growl`
-- `tempt`
+- `block.composter.fill_success`
 - `whine`
 - `pant`
+- `block.sweet_berry_bush.hurt`
+- `purr`
 - `purreow`
+- `item.book.put`
+- `death.min.volume`
 - `death.mid.volume`
-- `admire`
+- `block.composter.empty`
 - `imitate.blaze`
 - `imitate.cave_spider`
-- `respawn_anchor.charge`
+- `ui.stonecutter.take_result`
 - `imitate.creeper`
 - `imitate.elder_guardian`
-- `angry`
+- `block.barrel.open`
 - `imitate.ender_dragon`
 - `imitate.enderman`
 - `imitate.evocation_illager`
-- `respawn_anchor.basalt_deltas.mood`
+- `ambient.in.raid`
 - `imitate.ghast`
 - `imitate.husk`
-- `smithing_table.use`
+- `convert_mooshroom`
 - `imitate.illusion_illager`
 - `imitate.magma_cube`
-- `respawn_anchor.set_spawn`
+- `block.smoker.smoke`
 - `imitate.polar_bear`
 - `imitate.shulker`
-- `ambient.soulsand_valley.mood`
+- `raid.horn`
 - `imitate.silverfish`
 - `imitate.skeleton`
+- `imitate.slime`
 - `imitate.spider`
+- `block.beehive.work`
 - `imitate.stray`
 - `imitate.vex`
-- `ambient.warped_forest.loop`
 - `imitate.vindication_illager`
 - `imitate.witch`
-- `particle.soul_escape.quiet`
 - `imitate.wither`
 - `imitate.wither_skeleton`
+- `block.beehive.enter`
 - `imitate.wolf`
 - `imitate.zombie`
+- `tempt`
 - `imitate.zombie_pigman`
 - `imitate.zombie_villager`
-- `block.end_portal_frame.fill`
 - `block.end_portal.spawn`
-- `random.anvil_use`
 - `bottle.dragonbreath`
 - `balloonpop`
 - `sparkler.active`
 - `item.trident.hit`
+- `respawn_anchor.basalt_deltas.mood`
 - `item.trident.hit_ground`
+- `respawn_anchor.charge`
 - `item.trident.return`
 - `item.trident.riptide_1`
+- `angry`
 - `item.trident.riptide_2`
 - `item.trident.riptide_3`
+- `retreat`
 - `item.trident.throw`
 - `item.trident.thunder`
+- `smithing_table.use`
 - `block.fletching_table.use`
 - `elemconstruct.open`
+- `respawn_anchor.set_spawn`
 - `icebomb.hit`
+- `ambient.soulsand_valley.mood`
 - `lt.reaction.icebomb`
 - `lt.reaction.bleach`
-- `item.spyglass.stop_using`
 - `lt.reaction.epaste`
 - `lt.reaction.epaste2`
-- `mob.player.hurt_freeze`
+- `heartbeat`
 - `lt.reaction.fertilizer`
 - `lt.reaction.fireball`
-- `pre_ram.screamer`
+- `ambient.crimson_forest.loop`
 - `lt.reaction.mgsalt`
 - `lt.reaction.miscfire`
-- `block.click.fail`
+- `cauldron_drip.water.pointed_dripstone`
 - `lt.reaction.fire`
 - `lt.reaction.miscexplosion`
-- `glow_squid.ink_squirt`
+- `ambient.basalt_deltas.additions`
 - `lt.reaction.miscmystical`
 - `lt.reaction.miscmystical2`
-- `jump_to_block`
+- `ambient.nether_wastes.loop`
 - `lt.reaction.product`
 - `sparkler.use`
-- `ambient.candle`
+- `bucket.fill.powder_snow`
 - `glowstick.use`
 - `block.turtle_egg.break`
+- `sleep`
 - `block.turtle_egg.crack`
 - `block.turtle_egg.hatch`
 - `block.turtle_egg.attack`
-- `block.frog_spawn.hatch`
-- `block.frog_spawn.break`
 - `swoop`
 - `presneeze`
-- `block.composter.empty`
+- `ambient.candle`
 - `sneeze`
-- `ui.stonecutter.take_result`
+- `tongue`
 - `scared`
 - `ambient.aggressive`
-- `block.smoker.smoke`
+- `irongolem.repair`
 - `ambient.worried`
 - `cant_breed`
 - `block.scaffolding.climb`
-- `item.book.put`
+- `jump_to_block`
 - `block.bamboo_sapling.place`
-- `block.barrel.open`
+- `block.sculk_shrieker.shriek`
 - `crossbow.loading.start`
 - `crossbow.loading.middle`
-- `block.cartography_table.use`
+- `cake.add_candle`
 - `crossbow.loading.end`
 - `crossbow.shoot`
-- `ambient.in.raid`
+- `agitated`
 - `crossbow.quick_charge.start`
 - `crossbow.quick_charge.middle`
-- `convert_mooshroom`
+- `charge.sculk`
 - `crossbow.quick_charge.end`
-- `raid.horn`
+- `nearby_closer`
 - `item.shield.block`
+- `admire`
 - `portal.travel`
 - `block.grindstone.use`
 - `block.campfire.crackle`
 - `block.sweet_berry_bush.pick`
 - `block.stonecutter.use`
+- `block.cartography_table.use`
 - `block.composter.fill`
 - `block.composter.ready`
-- `lay_egg`
-- `roar`
 - `stun`
 - `block.barrel.close`
 - `ui.cartography_table.take_result`
@@ -358,7 +371,6 @@ Listed below are the available sounds:
 - `block.beehive.shear`
 - `block.beehive.drip`
 - `ambient.cave`
-- `retreat`
 - `converted_to_zombified`
 - `step_lava`
 - `panic`
@@ -372,39 +384,30 @@ Listed below are the available sounds:
 - `ambient.warped_forest.additions`
 - `ambient.soulsand_valley.additions`
 - `ambient.nether_wastes.additions`
-- `ambient.basalt_deltas.additions`
-- `ambient.crimson_forest.loop`
 - `ambient.soulsand_valley.loop`
-- `ambient.nether_wastes.loop`
 - `ambient.basalt_deltas.loop`
 - `lodestone_compass.link_compass_to_lodestone`
-- `power.on.sculk_sensor`
 - `power.off.sculk_sensor`
 - `default`
+- `ram_impact.screamer`
+- `lay_egg`
 - `lay_spawn`
-- `bucket.fill.powder_snow`
 - `bucket.empty.powder_snow`
-- `cauldron_drip.water.pointed_dripstone`
 - `cauldron_drip.lava.pointed_dripstone`
 - `tilt_down.big_dripleaf`
-- `tilt_up.big_dripleaf`
-- `drip.water.pointed_dripstone`
-- `pick_berries.cave_vines`
 - `drip.lava.pointed_dripstone`
 - `copper.wax.on`
-- `copper.wax.off`
 - `scrape`
 - `item.spyglass.use`
+- `item.spyglass.stop_using`
 - `chime.amethyst_block`
-- `mob.player.hurt_drown`
 - `mob.player.hurt_on_fire`
-- `ambient.screamer`
+- `mob.player.hurt_freeze`
 - `hurt.screamer`
 - `death.screamer`
 - `milk.screamer`
 - `pre_ram`
 - `ram_impact`
-- `ram_impact.screamer`
 - `squid.ink_squirt`
 - `convert_to_stray`
 - `extinguish.candle`
@@ -414,7 +417,6 @@ Listed below are the available sounds:
 - `nearby_closest`
 - `listening`
 - `item_given`
-- `item_taken`
 - `item_thrown`
 - `irongolem.crack`
 - `horn_break`
@@ -424,14 +426,12 @@ Listed below are the available sounds:
 - `horn_call5`
 - `horn_call7`
 - `imitate.warden`
-- `listening_angry`
 - `sonic_boom`
-- `sonic_charge`
 - `convert_to_frog`
 - `block.sculk.spread`
 - `block.sculk_sensor.place`
+- `block.sculk_shrieker.place`
 - `undefined`
-
 
 ## Example
 
@@ -442,4 +442,3 @@ Listed below are the available sounds:
     "sound_event": "ambient.tame"
 }
 ```
-

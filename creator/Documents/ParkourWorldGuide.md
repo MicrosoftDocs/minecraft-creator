@@ -1,7 +1,7 @@
 ---
 author: mammerla
 ms.author: v-bbortree
-title: Parkour World Creation Guide
+title: Parkour Map Creation Guide
 ms.prod: gaming
 description: "Steps to creating a gameplay loop using a Parkour map."
 ---
@@ -18,13 +18,13 @@ In this tutorial, you will learn the following:
 > - How gameplay development uses planning, development, testing and release process to release games.
 
 
-## Design the map
+## Design the Map
 
 First things first: think about a theme you'd like to create for your map. Themes could be anything, from existing biomes to water worlds to a volcanic map.
 
 Having a sense of decorations or design in mind before getting started can help you create a unique gameplay experience.
 
-## Planning Challenges
+## Plan Challenges
 
 We'll plan parkour content that gets players excited. We'll start off with themes and concepts as well as think about what our gameplay should be like.  Planning includes lots of information, like deciding on a theme and which types of challenges we want players to experience.
 
@@ -77,7 +77,7 @@ using a flat world for a simple and clean environment.
 1. In the world settings, enable **Activate Cheats**.
 1. Select **Create**.
 
-Alright! Now you have a clear, flat plane to start developing on.
+Alright! Now you have a clear, flat plane to start developing on. Time to build and iterate on your map.
 
 ## Test
 
@@ -91,21 +91,29 @@ Here are some things to test in a parkour map
 - Do players have enough food to survive treacherous challenges in their way?
 - Are there checkpoints so that players can save progress if you want them to?
 - If a player falls off the map you laid out, will they die?
+- Do all your jumps work as anticipated? Now is the time to ensure the parkour path works as expected, before decorating or completing the ending of the map.
 
-### Release
+## Decorate Based On Theme
 
-#### Final Details
+It's super important to test all your jumps before beginning to add decorations. You'll more than double your work if you're moving a bunch of awesome decorations on top of tweaking your jumps.
 
-- Make sure the player begins at the right place on your map
+## Release
+
+### Prepare World for Release
+
+- Turn on `Keep Inventory` in Settings so that players will not lose items you expect them to have in the map.
+- Make sure the player begins at the right place on your map by using `/setworldspawn` in the right location and facing the right direction.
 - Players will receive anything you have in your inventory.
 - Change the gameplay mode to Adventure so players can't punch through your walls.
+- Export the world to ensure you can share a copy with people and so that you have a clean copy of the world that doesn't have any items removed or puzzles triggered.
 
-#### Release Methods
+### Release Methods
 
 We'll talk about sharing a world with others. There are several approaches possible:
 
 - Create a realm to invite other players to
-- Host a game with your friends
+- Host a game with your friends in your world
+- [Packaging a World Template](PackagingAWorldTemplate.md) with our handy guide
 
 ## What's Next?
 

@@ -226,4 +226,4 @@ Now that you have learned more about scoreboards, you could learn more about sco
 
 > [!div class="nextstepaction"]
 > [Scoreboard Operations Tutorial](ScoreboardOperationsTutorial.md)
-> [Complete the Monument](CommandsHowToMakeACTMMap.md)
+> [Complete the Monument](CommandsHowToMakeACTMWorld.md)

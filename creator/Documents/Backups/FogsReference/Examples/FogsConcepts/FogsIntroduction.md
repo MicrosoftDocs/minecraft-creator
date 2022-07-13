@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Introduction to Fogs
 ms.prod: gaming
 ---
@@ -123,38 +123,36 @@ Fogs are set up in individual JSON files in your resource pack under the **fogs*
 }
 ```
 
-# Active Fog Stack
+## Active Fog Stack
 
 The active fog stack is used to determine which fog setting to use at any given time in the game. Each player has a unique fog stack.
 
 Whenever the game needs to determine the values for the fog, it will start at the top of the fog stack and check down it until it finds a value for the current setting type. If no fog settings on the stack are a match, the game will continue down the stack and check in. If it finds no matching setting, the game will use the defaults defined by the engine, instead.
 
 The fog stack initially is set up as follows. Starting at the bottom:
+
 - Engine Default: hard code values.
 - Data Default: The default data driven settings.
 - Biomes: The settings defined to be on each biome.
 - Command: The settings set on the player by server commands.
 
-
-
-
-## Engine Default
+### Engine Default
 
 Hard-coded values in case there are no data driven values; the Engine Default will be loaded if there is no matching fog setting when the game reaches the bottom of the fog stack.
 
-## Data Default
+### Data Default
 
 Defined in **biomes_client.json** under `default` if it references a fog definition via `fog_identifier`.
 
-## Biomes
+### Biomes
 
 The biome layer is an average of all the settings defined by the biomes around the player's position. The biome settings are defined in **biomes_client.json** as well for each individual biome.
 
-## Command
+### Command
 
 The command layer is all the settings set by the **/fog** command and evaluated it as one stack from top to bottom. For more information, see the **Fog Command** section.
 
-# Biomes
+## biomes_client.json
 
 Fog settings can be determined for the biomes with **biomes_client.json**. In each biome entry, you can have a variable called `fog_identifier` and set a name that matches the fog setting you want to use with this biome.
 
@@ -168,7 +166,7 @@ In each biome (including `default`) there is the tag `inherit_from_prior_fog` th
 While set to `false` (or if the tag is not entered), the current resource pack's biome will overwrite the currently stored `fog_identifier` tag with its own.
 If set to `true`, the `fog_identifier` tags from all matching biomes will be added together and create a new merged fog definition for that biome.
 
-# Fog Command
+## Fog Command
 
 The `/fog` command can be used to manage fog settings in the current layer of the active fog stack for each player.
 
@@ -178,14 +176,14 @@ Fog Settings are evaluated top-to bottom in the active fog stack which includes 
 
 Fog settings in this layer are saved and then restored on world load per player. A fog setting that is pushed before a world save will still apply after a world load and can then be popped.
 
-## Push
+### Push
 
 Pushes a new fog setting with a user provided ID to specified players onto the top of the Fog Command layers of the players' active fog stacks.
 
-## Pop
+### Pop
 
 Removes the top-most fog setting from selected players that matches the user provided ID.
 
-## Remove
+### Remove
 
 Removes all matching fog settings, from the selected players that matches the user-provided ID.

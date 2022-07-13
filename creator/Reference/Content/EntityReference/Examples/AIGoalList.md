@@ -13,12 +13,9 @@ AI Goal |Description
 :-----|:----------
 [minecraft:behavior.admire_item](EntityGoals/minecraftBehavior_admire_item.md)|`minecraft:behavior.admire_item` allows an entity to admire an object they are holding.
 [minecraft:behavior.avoid_block](EntityGoals/minecraftBehavior_avoid_block.md)|`minecraft:behavior.avoid_block` allows an entity to avoid certain blocks.
-[minecraft:behavior.avoid_block](EntityGoals/minecraftBehavior_avoid_block.md)|`minecraft:behavior.avoid_block` allows an entity to avoid certain blocks.
-[minecraft:behavior.avoid_mob_type](EntityGoals/minecraftBehavior_avoid_mob_type.md)|`minecraft:behavior.avoid_mob_type` allows the entity to run away from other entities that meet the criteria specified.
 [minecraft:behavior.avoid_mob_type](EntityGoals/minecraftBehavior_avoid_mob_type.md)|`minecraft:behavior.avoid_mob_type` allows the entity to run away from other entities that meet the criteria specified.
 [minecraft:behavior.barter](EntityGoals/minecraftBehavior_barter.md)|`minecraft:behavior.barter` allows an entity to drop an item in return after a player offers a trade by dropping a specific item near the entity.
 [minecraft:behavior.beg](EntityGoals/minecraftBehavior_beg.md)|`minecraft:behavior.beg` allows an entity to react by tilting its head when a player is holding select items nearby.
-[minecraft:behavior.block](EntityGoals/minecraftBehavior_move_to_block.md)|`minecraft:behavior.move_to_block` allows mob to move towards a block.
 [minecraft:behavior.break_door](EntityGoals/minecraftBehavior_break_door.md)|`minecraft:behavior.break_door` allows an entity to break down doors.
 [minecraft:behavior.breed](EntityGoals/minecraftBehavior_breed.md)|`minecraft:behavior.breed` allows an entity to breed with other entities that have been assigned.
 [minecraft:behavior.celebrate](EntityGoals/minecraftBehavior_celebrate.md)|`minecraft:behavior.celebrate` allows this entity to celebrate surviving a raid by making celebration sounds and jumping.
@@ -32,6 +29,7 @@ AI Goal |Description
 [minecraft:behavior.defend_village_target](EntityGoals/minecraftBehavior_defend_village_target.md)|`minecraft:behavior.defend_village_target` allows the entity to stay in a village and defend the village from aggressors. If a player is in bad standing with the village, this goal will cause the entity to attack the player regardless of filter conditions.
 [minecraft:behavior.delayed_attack](EntityGoals/minecraftBehavior_delayed_attack.md)|`minecraft:behavior.delayed_attack` allows the entity to stay in a village and defend the village from aggressors. If a player is in bad standing with the village, this goal will cause the entity to attack the player regardless of filter conditions.
 [minecraft:behavior.dig](EntityGoals/minecraftBehavior_dig.md)|`minecraft:behavior.dig` activates the "DIGGING" actor flag during the specified duration. Currently only Warden can use the dig goal.
+[minecraft:behavior.drink_milk](EntityGoals/minecraftBehavior_drink_milk.md)|`minecraft:behavior.drink_milk` allows the mob to drink milk based on specified environment conditions.
 [minecraft:behavior.door_interact](EntityGoals/minecraftBehavior_door_interact.md)|`minecraft:behavior.door_interact` allows an entity to interact with doors.
 [minecraft:behavior.dragonchargeplayer](EntityGoals/minecraftBehavior_dragonchargeplayer.md)|`minecraft:behavior.dragonchargeplayer`  allows this entity to attack a player by charging at them. The player is chosen by the `minecraft:behavior.dragonscanning`. Can only be used by the Ender Dragon.
 [minecraft:behavior.dragondeath](EntityGoals/minecraftBehavior_dragondeath.md)|`minecraft:behavior.dragondeath` controls the entity's death state and animation.
@@ -97,6 +95,7 @@ AI Goal |Description
 [minecraft:behavior.move_to_water](EntityGoals/minecraftBehavior_move_to_water.md)|`minecraft:behavior.move_to_water` allows an entity to move to water when on land.
 [minecraft:behavior.move_towards_dwelling_restriction](EntityGoals/minecraftBehavior_move_towards_dwelling_restriction.md)|`minecraft:behavior.move_towards_dwelling_restriction` allows mobs with the dweller component to move toward their Village area that the mob should be restricted to.
 [minecraft:behavior.move_towards_home_restriction](EntityGoals/minecraftBehavior_move_towards_home_restriction.md)|`minecraft:behavior.move_towards_home_restriction` allows mobs with the home component to move toward their pre-defined area that the mob should be restricted to.
+[minecraft:behavior.move_towards_restriction](EntityGoals/minecraftBehavior_move_towards_restriction.md)|`minecraft:behavior.move_towards_restriction` allows mobs to move toward their pre-defined area that the mob should be restricted to.
 [minecraft:behavior.move_towards_target](EntityGoals/minecraftBehavior_move_towards_target.md)|`minecraft:behavior.move_towards_target` allows an entity to move towards a target.
 [minecraft:behavior.nap](EntityGoals/minecraftBehavior_nap.md)|`minecraft:behavior.nap` allows mobs to occasionally stop and take a nap under certain conditions.
 [minecraft:behavior.nearest_attackable_target](EntityGoals/minecraftBehavior_nearest_attackable_target.md)|`minecraft:behavior.nearest_attackable_target` allows an entity to attack the closest target within a given subset of specific target types.
@@ -165,6 +164,7 @@ AI Goal |Description
 [minecraft:behavior.swim_with_entity](EntityGoals/minecraftBehavior_swim_with_entity.md)|`minecraft:behavior.swim_with_entity` allows the entity follow another entity. Both entities must be swimming and in water.
 [minecraft:behavior.swoop_attack](EntityGoals/minecraftBehavior_swoop_attack.md)|`minecraft:behavior.swoop_attack` allows an entity to attack using swoop attack behavior. Ideal for use with flying mobs. The behavior ends if the entity has a horizontal collision or gets hit.
 [minecraft:behavior.take_flower](EntityGoals/minecraftBehavior_take_flower.md)|`minecraft:behavior.take_flower` allows an entity to receive flowers when presented from the `iron_golem` entity.
+[minecraft:behavior.target_when_pushed](EntityGoals/minecraftBehavior_target_when_pushed.md)|`minecraft:behavior.target_when_pushed` allows an entity to target an entity when pushed.
 [minecraft:behavior.tempt](EntityGoals/minecraftBehavior_tempt.md)|`minecraft:behavior.tempt` allows an entity to be tempted by a set item.
 [minecraft:behavior.trade_interest](EntityGoals/minecraftBehavior_trade_interest.md)|`minecraft:behavior.trade_interest` allows an entity to focus on a player that will initiate a trade.
 [minecraft:behavior.trade_with_player](EntityGoals/minecraftBehavior_trade_with_player.md)|`minecraft:behavior.trade_with_player` allows an entity to focus on a player that will initiate a trade.

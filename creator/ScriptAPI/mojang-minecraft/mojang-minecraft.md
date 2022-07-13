@@ -17,7 +17,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 {
     // mojang-minecraft
     "uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
-    "version": [ 0, 1, 0 ]
+    "version": "0.1.0"
 }
 ```
 

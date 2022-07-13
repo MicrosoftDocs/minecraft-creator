@@ -10,6 +10,7 @@ ms.prod: gaming
 Biomes describe how a local patch of the world should look and behave. By writing custom biome data you could:
 
 > [!div class="checklist"]
+
 > * Change the general shape of terrain for a biome.
 > * Change the ratio of frequency of biome types.
 > * Change the blocks that make up the biome, both at the surface and below.
