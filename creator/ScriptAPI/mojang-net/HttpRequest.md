@@ -30,7 +30,7 @@ Type: [*HttpHeader*](HttpHeader.md)[]
 ### **method**
 `method: HttpRequestMethod;`
 
-HTTP method (e.g., GET or PUT or PATCH) to use for making the request.
+HTTP method (e.g., GET or PUT or POST) to use for making the request.
 
 Type: [*HttpRequestMethod*](HttpRequestMethod.md)
 
