@@ -176,12 +176,6 @@
             href: Reference/Content/addonsreference/index.yml
           - name: Addon Content
             href: Reference/Content/AddonsReference/Examples/TOC.yml
-        - name: Animation JSON
-          items:
-          - name: Animation Documentation Homepage
-            href: Reference/Content/animationsreference/index.yml
-          - name: Animation References
-            href: Reference/Content/animationsreference/Examples/TOC.yml
         - name: Biomes
           href: Reference/Content/biomereference/Examples/BiomeOverview.md
         - name: Block JSON
@@ -222,10 +216,6 @@
             href: Reference/Content/featuresreference/Examples/Features/TOC.yml
           - name: Feature Example Schema
             href: Reference/Content/FeaturesReference/Examples/ExampleFeatureSchema.md
-        - name: Fog JSON
-          items:
-          - name: Introduction to Fogs
-            href: Reference/Content/fogsreference/Examples/FogsIntroduction.md
         - name: Item JSON
           items:
           - name: Item Documentation Homepage
@@ -234,16 +224,6 @@
             href: Reference/Content/ItemReference/Examples/ItemDefinition.md
           - name: Item Components
             href: Reference/Content/itemreference/Examples/ItemComponents/TOC.yml
-        - name: Particle JSON
-          items:
-          - name: Particle Documentation Homepage
-            href: Reference/Content/particlesreference/index.yml
-          - name: Introduction to Particles
-            href: Reference/Content/ParticlesReference/ParticlesIntroduction.md
-          - name: Particle Components
-            href: Reference/Content/ParticlesReference/ParticleComponents/TOC.yml
-          - name: Particle Examples
-            href: Reference/Content/ParticlesReference/Examples/TOC.yml
         - name: Recipe JSON
           items:
           - name: Recipe Documentation Homepage
@@ -282,10 +262,6 @@
             href: Reference/Content/volumereference/Examples/VolumeComponents/TOC.yml
           - name: Volume Definitions
             href: Reference/Content/volumereference/Examples/VolumeDefinitions/VolumeDefinitionProperties.md
-        - name: Texture Set JSON
-          items:
-          - name: Introduction to Texture Sets
-            href: Reference/Content/texturesetsreference/texturesetsconcepts/texturesetsintroduction.md
         - name: Spawn Rules
           items: 
           - name: Data-Driven Spawning Rules
@@ -308,6 +284,30 @@
         items:
         - name: Client Entity JSON
           href: Reference/Content/entityreference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md
+        - name: Animation JSON
+          items:
+          - name: Animation Documentation Homepage
+            href: Reference/Content/animationsreference/index.yml
+          - name: Animation References
+            href: Reference/Content/animationsreference/Examples/TOC.yml
+        - name: Fog JSON
+          items:
+          - name: Introduction to Fogs
+            href: Reference/Content/fogsreference/Examples/FogsIntroduction.md
+        - name: Particle JSON
+          items:
+          - name: Particle Documentation Homepage
+            href: Reference/Content/particlesreference/index.yml
+          - name: Introduction to Particles
+            href: Reference/Content/ParticlesReference/ParticlesIntroduction.md
+          - name: Particle Components
+            href: Reference/Content/ParticlesReference/ParticleComponents/TOC.yml
+          - name: Particle Examples
+            href: Reference/Content/ParticlesReference/Examples/TOC.yml
+        - name: Texture Set JSON
+          items:
+          - name: Introduction to Texture Sets
+            href: Reference/Content/texturesetsreference/texturesetsconcepts/texturesetsintroduction.md
       - name: Molang Documentation
         items:
           - name: Molang Documentation Homepage
