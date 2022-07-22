@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:item_controllable
 ms.prod: gaming
 ---
@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:item_controllable":{
-    "control_item:":"iron_sword"
+    "control_items:":"iron_sword"
 }
 ```
 
@@ -27,7 +27,9 @@ ms.prod: gaming
 
 ### pig
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/pig.json" range="117-119":::
+"minecraft:item_controllable": {
+    "control_items": "carrotOnAStick"
+},
 
 ## Vanilla entities using `minecraft:item_controllable`
 
