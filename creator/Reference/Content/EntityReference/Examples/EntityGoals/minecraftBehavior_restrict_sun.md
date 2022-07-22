@@ -9,6 +9,12 @@ ms.prod: gaming
 
 `minecraft:behavior.restrict_sun` allows an entity to actively avoid direct sunlight.
 
+## Parameters
+
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+
 ## Example
 
 ```json

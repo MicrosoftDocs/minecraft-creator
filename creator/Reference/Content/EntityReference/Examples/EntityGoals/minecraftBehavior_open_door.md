@@ -13,7 +13,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|close_door_after| true| Boolean| If true, the mob will close the door after opening it and going through it |
+|close_door_after| true| Boolean| If true, the mob will close the door after opening it and going through it. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 
 ## Example
 

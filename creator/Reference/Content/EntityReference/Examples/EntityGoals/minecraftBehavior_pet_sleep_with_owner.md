@@ -16,7 +16,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|goal_radius| 0.5| Decimal| Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot |
+|goal_radius| 0.5| Decimal| Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 |search_height| 1| Integer| Height in blocks from the owner the pet can be to sleep with owner. |
 |search_radius| 10| Integer| The radius that the mob will search for an owner to curl up with. |
 |search_range| 10| Integer| The range that the mob will search for an owner to curl up with. |

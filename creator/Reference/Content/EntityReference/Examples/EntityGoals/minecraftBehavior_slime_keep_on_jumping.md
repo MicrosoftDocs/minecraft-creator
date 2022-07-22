@@ -13,6 +13,7 @@ ms.prod: gaming
 
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | speed_multiplier| 1| Decimal| Determines the multiplier this entity's speed is modified by when jumping around. |
 
 ## Example

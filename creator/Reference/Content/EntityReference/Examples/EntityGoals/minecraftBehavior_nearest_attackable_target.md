@@ -20,12 +20,13 @@ Allows an entity to attack the closest target within a given subset of specific 
 |:----------|:----------|:----------|:----------|
 |attack_interval |0 |Integer |Time range (in seconds) between searching for an attack target, range is in (0, "attack_interval"]. Only used if "attack_interval" is greater than 0, otherwise "scan_interval" is used. |
 |attack_interval_min |0 |Integer |Alias for "attack_interval"; provides the same functionality as "attack_interval". |
-|attack_owner |false |Boolean |If true, this entity can attack its owner |
-|[entity_types](../Definitions/NestedTables/entity_types.md) | |JSON Object |Filters which types of targets are valid for this entity (Please see entity_types' definition page)|
+|attack_owner |false |Boolean |If true, this entity can attack its owner. |
+|entity_types | *not set* |JSON Object |Filters which types of targets are valid for this entity. See [entity_types' definition page](../Definitions/NestedTables/entity_types.md).|
 |must_reach |false |Boolean |If true, this entity requires a path to the target.|
-|must_see |false |Boolean |Determines if target-validity requires this entity to be in range only, or both in range and in sight |
+|must_see |false |Boolean |Determines if target-validity requires this entity to be in range only, or both in range and in sight. |
 |must_see_forget_duration |3.0 |Decimal |Time (in seconds) the target must not be seen by this entity to become invalid. Used only if "must_see" is true.|
 |persist_time |0.0 |Decimal |Time (in seconds) this entity can continue attacking the target after the target is no longer valid. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 |reselect_targets |false |Boolean |Allows the attacking entity to update the nearest target, otherwise a target is only reselected after each "scan_interval" or "attack_interval". |
 |scan_interval |10 |Integer |If "attack_interval" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to "scan_interval", minimum value is 1. Values under 10 can affect performance. |
 |set_persistent |false |Boolean |Allows the actor to be set to persist upon targeting a player. |

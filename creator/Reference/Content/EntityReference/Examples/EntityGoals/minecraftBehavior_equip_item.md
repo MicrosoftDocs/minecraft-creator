@@ -9,6 +9,12 @@ ms.prod: gaming
 
 `minecraft:behavior.equip_item` causes an entity to equip an item.
 
+## Parameters
+
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+
 ## Vanilla entities examples
 
 ### zombie

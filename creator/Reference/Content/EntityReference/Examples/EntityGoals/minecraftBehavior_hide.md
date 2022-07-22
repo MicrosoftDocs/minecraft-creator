@@ -18,6 +18,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 |duration| 1.0| Decimal| Amount of time in seconds that the mob reacts. |
 |poi_type|*not set* | String| Defines what POI type to hide at. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 |speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |
 |timeout_cooldown| 8.0| Decimal| The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition. |
 

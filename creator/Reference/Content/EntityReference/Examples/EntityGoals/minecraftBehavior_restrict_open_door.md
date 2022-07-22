@@ -9,6 +9,12 @@ ms.prod: gaming
 
 `minecraft:behavior.restrict_open_door` allows an entity to stay indoors while the sun is down.
 
+## Parameters
+
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+
 ## Example
 
 ```json

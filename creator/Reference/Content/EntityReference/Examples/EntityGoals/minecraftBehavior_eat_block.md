@@ -9,16 +9,15 @@ ms.prod: gaming
 
 `minecraft:behavior.eat_block` allows the entity to consume a block, replace the eaten block with another block, and trigger an event as a result.
 
-
 ## Parameters
 
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
 | eat_and_replace_block_pairs| N/A| List| A collection of pairs of blocks; the first ("eat_block") is the block the entity should eat, the second ("replace_block") is the block that should replace the eaten block. |
 | on_eat| N/A| Trigger| The event to trigger when the block eating animation has completed. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | success_chance| 0.02| Molang| A molang expression defining the success chance the entity has to consume a block. |
 | time_until_eat| 1.8| Decimal| The amount of time (in seconds) it takes for the block to be eaten upon a successful eat attempt. |
-
 
 ## Example
 
@@ -61,4 +60,3 @@ ms.prod: gaming
 ## Vanilla entities using `eat_block`
 
 - [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
-

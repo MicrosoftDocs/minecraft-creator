@@ -13,10 +13,11 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|cooldown_max| 0.0| Decimal|  Maximum time in seconds the mob has to wait before using the goal again |
-|cooldown_min| 0.0| Decimal|  Minimum time in seconds the mob has to wait before using the goal again |
-|mob_detect_dist| 6.0| Decimal|  The block distance in x and z that will be checked for mobs that this mob detects |
-|mob_detect_height| 6.0| Decimal|  The block distance in y that will be checked for mobs that this mob detects |
+|cooldown_max| 0.0| Decimal|  Maximum time in seconds the mob has to wait before using the goal again. |
+|cooldown_min| 0.0| Decimal|  Minimum time in seconds the mob has to wait before using the goal again. |
+|mob_detect_dist| 6.0| Decimal|  The block distance in x and z that will be checked for mobs that this mob detects. |
+|mob_detect_height| 6.0| Decimal|  The block distance in y that will be checked for mobs that this mob detects. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 
 ## Example
 

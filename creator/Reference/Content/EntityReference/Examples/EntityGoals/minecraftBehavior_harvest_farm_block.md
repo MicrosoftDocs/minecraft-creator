@@ -21,7 +21,7 @@ ms.prod: gaming
 | search_range| 16| Integer| The distance in blocks the entity will search within to find a valid target position. |
 | seconds_until_new_task| 0.5| Decimal| The amount of time in seconds that the goal will cooldown after a successful reap/sow, before it can start again. |
 | speed_multiplier| 0.50| Decimal| Movement speed multiplier of the entity when using this Goal. |
-
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 
 ## Example
 
@@ -56,4 +56,3 @@ ms.prod: gaming
 
 - [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
 - [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
-

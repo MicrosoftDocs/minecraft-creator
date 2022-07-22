@@ -18,14 +18,15 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
+|[entity_types](../Definitions/NestedTables/entity_types.md)|*not set* | JSON Object| List of entity types that this mob considers valid targets.|
 |aggro_sound|*not set* | String| Sound to occasionally play while defending. |
 |attack_interval| 0| Integer| Time in seconds between attacks |
-|[entity_types](../Definitions/NestedTables/entity_types.md)|*not set* | JSON Object| List of entity types that this mob considers valid targets|
-|must_see| false| Boolean| If true, only entities in this mob's viewing range can be selected as targets |
-|must_see_forget_duration| 3.0| Decimal| Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more |
+|must_see| false| Boolean| If true, only entities in this mob's viewing range can be selected as targets. |
+|must_see_forget_duration| 3.0| Decimal| Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more. |
 |on_defend_start | *not set* | Array | Event that can occur with Target when defense event begins. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 |sound_chance| 0.05| Decimal | Probability that a sound will play. |
-|within_radius| 0.0| Decimal| Distance in blocks that the target can be within to launch an attack|
+|within_radius| 0.0| Decimal| Distance in blocks that the target can be within to launch an attack.|
 
 ## Example
 

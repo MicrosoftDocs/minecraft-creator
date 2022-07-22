@@ -24,6 +24,7 @@ ms.prod: gaming
 
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | set_persistent| false| Boolean| Allows the actor to be set to persist upon targeting a player |
 | speed_multiplier| 1| Decimal| During attack behavior, this multiplier modifies the entity's speed when moving toward the target. |
 | x_max_rotation| 10| Decimal| Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target. |

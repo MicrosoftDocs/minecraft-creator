@@ -24,15 +24,16 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|interest_time| 2.0| Decimal|  The amount of time the mob will be interested before pouncing. This happens when the mob is within range of pouncing |
-|leap_distance| 0.8| Decimal| The distance in blocks the mob jumps in the direction of its target |
-|leap_height| 0.9| Decimal|  The height in blocks the mob jumps when leaping at its target |
-|max_stalk_dist| 10.0| Decimal|  The maximum distance away a target can be before the mob gives up on stalking |
-|pounce_max_dist| 5.0| Decimal|  The maximum distance away from the target in blocks to begin pouncing at the target |
-|set_persistent| false| Boolean|  Allows the actor to be set to persist upon targeting a player |
-|stalk_speed| 1.2| Decimal| The movement speed in which you stalk your target |
-|strike_dist| 2.0| Decimal|  The max distance away from the target when landing from the pounce that will still result in damaging the target |
-|stuck_time| 2.0| Decimal|  The amount of time the mob will be stuck if they fail and land on a block they can be stuck on |
+|interest_time| 2.0| Decimal|  The amount of time the mob will be interested before pouncing. This happens when the mob is within range of pouncing. |
+|leap_distance| 0.8| Decimal| The distance in blocks the mob jumps in the direction of its target. |
+|leap_height| 0.9| Decimal|  The height in blocks the mob jumps when leaping at its target. |
+|max_stalk_dist| 10.0| Decimal|  The maximum distance away a target can be before the mob gives up on stalking. |
+|pounce_max_dist| 5.0| Decimal|  The maximum distance away from the target in blocks to begin pouncing at the target. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+|set_persistent| false| Boolean|  Allows the actor to be set to persist upon targeting a player. |
+|stalk_speed| 1.2| Decimal| The movement speed in which you stalk your target. |
+|strike_dist| 2.0| Decimal|  The max distance away from the target when landing from the pounce that will still result in damaging the target. |
+|stuck_time| 2.0| Decimal|  The amount of time the mob will be stuck if they fail and land on a block they can be stuck on. |
 
 ## Example
 

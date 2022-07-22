@@ -19,6 +19,7 @@ ms.prod: gaming
 | lay_egg_sound|  lay_egg| String| [EXPERIMENTAL] Sound event name for laying egg. Defaulted to lay_egg which is used for Turtles. |
 | lay_seconds| 10.0f| Decimal| [EXPERIMENTAL] Duration of the laying egg process in seconds. |
 | on_lay| | Trigger| Event to run when this mob lays the egg. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | search_height| 1| Integer|Height in blocks the mob will look for a target block to move towards |
 | search_range| 0| Integer| The distance in blocks it will look for a target block to move towards |
 | speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |

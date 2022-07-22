@@ -13,6 +13,12 @@ ms.prod: gaming
 > `minecraft:behavior.offer_flower` requires a flower item to be held by the entity.
 > This behavior can only be used by the `villager` entity types.
 
+## Parameters
+
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+
 ## Example
 
 ```json

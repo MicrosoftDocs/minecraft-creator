@@ -18,8 +18,9 @@ ms.prod: gaming
 |ignore_mob_damage| false| Boolean| If true, the mob will not panic in response to damage from other mobs. This overrides the damage types in "damage_sources." |
 |panic_sound| *not set*| String| Sound to play when event occurs. |
 |prefer_water| false| Boolean| If true, the mob will prefer water over land. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| sound_interval| 0| Range [a, b]| The range of time in seconds to randomly wait before playing the sound again. |
 |speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal. |
-| sound_interval| 0| Range [a, b]| The range of time in seconds to randomly wait before playing the sound again |
 
 ## Example
 
