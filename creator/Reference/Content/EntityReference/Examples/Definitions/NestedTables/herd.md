@@ -9,7 +9,7 @@ ms.prod: gaming
 
 This component allows players to determine the herd size of animals.
 
-### Parameters
+## Parameters
 
 |Name |Default Value |Type |Description |
 |:-----------|:----------|:-----------|:-----------|

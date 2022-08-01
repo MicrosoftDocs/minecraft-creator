@@ -34,13 +34,25 @@ Components
 
 | Name| Description |
 |:-----------|:-----------|
+| [minecraft:biome_filter](../Definitions/NestedTables/biome_filter.md)| This component allows the players to specify which biomes the mob spawns in. Check on **minecraft:biome_filter** to see which Biome Tags exist, and what each biome is tagged as.|
 | [minecraft:brightness_filter](../Definitions/NestedTables/brightness_filter.md)|This component allows players to set the light level range that causes the mob to spawn.  |
+| [minecraft:delay_filter](../Definitions/NestedTables/delay_filter.md) |This component allows players to set mobs spawn with certain time delays before they will spawn.|
 | [minecraft:density_limit](../Definitions/NestedTables/density_limit.md)|This component allows the players to specify the amount of mobs to spawn in certain locations. |
 | [minecraft:difficulty_filter](../Definitions/NestedTables/difficulty_filter.md)| This component allows players to set mobs spawn with certain difficulty levels. |
 | [minecraft:entity_types](../Definitions/NestedTables/entity_types.md) |This component is a specific type of JSON object used by Minecraft: Bedrock Edition in order to encapsulate entity data that can be used in certain behaviors and components. |
+| [minecraft:height_filter](../Definitions/NestedTables/height_filter.md) |This component allows players to set mobs spawn within certain heights of their map. |
 | [minecraft:herd](../Definitions/NestedTables/herd.md)| This component allows players to determine the herd size of animals.|
+| [minecraft:mob_event_filter](../Definitions/NestedTables/mob_event_filter.md) |This component allows players to spawn mobs on a pillager, wandering trader, or ender dragon event. 
 | [minecraft:operator](../Definitions/NestedTables/operator.md) | This component defines arithmetic operators in order to compare the values of two given data points. |
+| [minecraft:permute_type](../Definitions/NestedTables/permute_type.md) |This component allows the players to specify the permutations of a mob that will spawn. |
+| [minecraft:player_in_village_filter](../Definitions/NestedTables/player_in_village_filter.md) |This component lets players be filtered by whether they are in a village or not, using distance and the village border definitions. |
+| [minecraft:spawns_lava](../Definitions/NestedTables/spawns_lava.md) |This component determines if an entity spawns lava. |
+| [minecraft:spawns_on_block_filter](../Definitions/NestedTables/spawns_on_block_filter.md) |This component allows an entity to spawn on a particular block. It includes a string or array of strings for the block they may spawn on. |
+| [minecraft:spawns_on_block_prevented_filter](../Definitions/NestedTables/spawns_on_block_prevented_filter.md) |This component allows an entity to not spawn on a particular block. It includes a string or array of strings for the block they may not spawn on. |
+| [minecraft:spawns_on_surface](../Definitions/NestedTables/spawns_on_surface.md) |This component allows an entity to spawn on the surface. |
+| [minecraft:spawns_underwater](../Definitions/NestedTables/spawns_underwater.md)|This component allows the mob to spawn underwater. Adding the component sets the value of it to be true, removing it causes the mob to stop spawning underwater.  |
 | [minecraft:weight](../Definitions/NestedTables/weight.md)|This component allows players to set a priority for how often that mob should spawn. Mobs with lower weight values will have a lower chance to spawn than mobs with higher weight values. |
+| [minecraft:world_age_filter](../Definitions/NestedTables/world_age_filter.md) |This component allows players to set mobs spawn after a certain amount of time has passed within a world.|
 
 
 ### Example Spawn Rules for the zombie

@@ -266,20 +266,50 @@
           items: 
           - name: Data-Driven Spawning Rules
             href: Reference/Content/entityreference/Examples/ClientEntityDocumentation/DataDrivenSpawning.md
+          - name: Biome Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/biome_filter.md
           - name: Brightness Filter
             href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/brightness_filter.md
+          - name: Delay Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/delay_filter.md
           - name: Density Limit
             href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/density_limit.md
+          - name: Distance Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/distance_filter.md
           - name: Difficulty Filter
             href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/difficulty_filter.md
           - name: Entity Types
             href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/entity_types.md
+          - name: Height Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/height_filter.md
           - name: Herd
             href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/herd.md
+          - name: Mob Event Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/mob_event_filter.md
           - name: Operator
             href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/operator.md
+          - name: Permute Type
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/permute_type.md
+          - name: Player In Village Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/player_in_village_filter.md
+          - name: Spawns Lava
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/spawns_lava.md
+          - name: Spawns on Block Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/spawns_on_block_filter.md
+          - name: Spawns on Block Prevented Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/spawns_on_block_prevented_filter.md
+          - name: Spawns On Surface
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/spawns_on_surface.md
+          - name: Spawns Lava
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/spawns_lava.md
+          - name: Spawns Underground
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/spawns_underground.md
+          - name: Spawns Underwater
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/spawns_underwater.md
           - name: Weight
             href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/weight.md
+          - name: World Age Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/world_age_filter.md
       - name: Resource Pack
         items:
         - name: Client Entity JSON
