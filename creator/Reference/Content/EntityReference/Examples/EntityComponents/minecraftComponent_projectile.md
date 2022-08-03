@@ -52,7 +52,7 @@ ms.prod: gaming
 :----------|:----------|:----------|:----------
 |catch_fire| false | Boolean| Determines if the struck object is set on fire.|
 |definition_event| *not set* | event | The event that is triggered on a hit. See the [table below for all definition event parameters](#definition_event-parameters).|
-|douse_fire| false|Boolean| If the target is on fire, then douse hte fire.|
+|douse_fire| false|Boolean| If the target is on fire, then douse the fire.|
 |freeze_on_hit|*not set*|JSON Object| An area of entities that is frozen to block on hits. Has shape of either sphere or cube, snap_to_block boolean ,and size decimal properties.|
 |grant_xp|*not set*|JSON Object|Grants XP on hit. Has minXP for minimum XP granted, maxXp for maximum, or simply flat xp properties.|
 |hurt_owner|*not set* |JSON Object| Determines if the owner of the entity is hurt on hit. Contains decimal owner_damage, knockback boolean, and ignite boolean.|
@@ -75,7 +75,7 @@ ms.prod: gaming
 Name |Default Value  |Type  |Description  |
 :----------|:----------|:----------|:----------|
 |catch_fire| false | Boolean| Determines if the struck object is set on fire.|
-|channeling | True | Boolean | Whether lightning can be channeled through hte weapon.|
+|channeling | True | Boolean | Whether lightning can be channeled through the weapon.|
 |damage|1|Decimal|The damage dealt on impact.|
 |destroy_on_hit|false|Boolean|Projectile is removed on hit.|
 |destroy_on_hit_requires_damage | true | Boolean| If true, then the hit must cause damage to destroy the projectile.|
