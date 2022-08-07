@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.hurt_by_target
 ms.prod: gaming
 ---
@@ -15,8 +15,15 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 | alert_same_type | false | Boolean| If true, nearby mobs of the same type will be alerted about the damage. |
 | [entity_types](../Definitions/NestedTables/entity_types.md) | *not set* | JSON Object | List of entity types that this mob can target if they hurt their owner.|
+| filters|*not set*| Minecraft Filter| Conditions that make this entry in the list valid |
+| max_dist| 16| Decimal| Maximum distance this mob can be away to be a valid choice |
+| must_see| false| Boolean| If true, the mob has to be visible to be a valid choice |
+| must_see_forget_duration| 3.0| Decimal | Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more |
+| reevaluate_description| false| Boolean| If true, the mob will stop being targeted if it stops meeting any conditions. |
+| sprint_speed_multiplier| Decimal| 1.0| Multiplier for the running speed. A value of 1.0 means the speed is unchanged |
+| walk_speed_multiplier| Decimal| 1.0| Multiplier for the walking speed. A value of 1.0 means the speed is unchanged |
 | hurt_owner | false | Boolean |  If true, the mob will hurt its owner and other mobs with the same owner as itself. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 
 ## Example
 
@@ -38,11 +45,11 @@ ms.prod: gaming
 
 ### piglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="480-482":::
-
-### iron_golem
-
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/iron_golem.json" range="308-313":::
+```json
+"minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+```
 
 ## Vanilla entities using `minecraft:behavior.hurt_by_target`
 
