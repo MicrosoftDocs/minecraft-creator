@@ -46,6 +46,7 @@ Below is a list of all the available Components within Minecraft: Bedrock Editio
 |[minecraft:experience_reward](EntityComponents/minecraftComponent_experience_reward.md) |`minecraft:experience_reward` defines the amount of experience rewarded when the entity dies or is successfully bred.|
 |[minecraft:explode](EntityComponents/minecraftComponent_explode.md) |`minecraft:explode` defines how the entity explodes.|
 |[minecraft:flocking](EntityComponents/minecraftComponent_flocking.md) |`minecraft:flocking` allows entities to flock in groups in water or not.|
+|[minecraft:game_event_movement_tracking](EntityComponents/minecraftComponent_game_event_movement_tracking.md) |`minecraft:game_event_movement_tracking` allows an entity to emit `entityMove`, `swim` and `flap` game events, depending on the block the entity is moving through. It is added by default to every mob. Add it again to override its behavior.|
 |[minecraft:genetics](EntityComponents/minecraftComponent_genetics.md) |`minecraft:genetics` defines the way a mob's genes and alleles are passed on to it's offspring, and how those traits manifest in the child. |
 |[minecraft:giveable](EntityComponents/minecraftComponent_giveable.md) |`minecraft:giveable` defines sets of items that can be used to trigger events when used on this entity. The item will also be taken and placed in the entity's inventory.|
 |[minecraft:group_size](EntityComponents/minecraftComponent_group_size.md) |`minecraft:group_size` keeps track of entity group size in the given radius.|
