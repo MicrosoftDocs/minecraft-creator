@@ -1,35 +1,31 @@
----
-author: JDHeaden
-ms.author: v-jillheaden
-title: Biome Documentation - Overview
-ms.prod: gaming
----
+<big>Version: 1.19.20.2</big>
 
-# Biome Documentation - Overview
+[[_TOC_]]
+
+# Overview
 
 Biomes describe how a local patch of the world should look and behave. By writing custom biome data you could:
+1) Change the general shape of terrain for a biome.
+2) Change the ratio of frequency of biome types.
+3) Change the blocks that make up the biome, both at the surface and below.
+4) Change the distribution of decorative features (e.g. trees, grass, etc.) for a biome.
+5) Change the mobs that spawn for a biome.
+6) Change the climate for a biome.
+7) ...and more!
 
-> [!div class="checklist"]
 
-> * Change the general shape of terrain for a biome.
-> * Change the ratio of frequency of biome types.
-> * Change the blocks that make up the biome, both at the surface and below.
-> * Change the distribution of decorative features (e.g. trees, grass, etc.) for a biome.
-> * Change the mobs that spawn for a biome.
-> * Change the climate for a biome.
 
-## JSON format
 
-All biomes should specify the version that they target via the `format_version` field. The remainder of the biome data is divided up into independent JSON sub-objects, or components. In general you can think of the presence of a component as defining what game behaviors a biome participates in with the component fields defining how it participates. Broadly there are two categories of components:
+# JSON format
 
-1. Namespaced components (i.e. those with a `name:` prefix) map to specific behaviors in-game; they may have member fields that parameterize that behavior; only names that have a valid mapping are supported
-1. Components with no namespace are treated as 'tags': any name consisting of alphanumeric characters, '.' and '_' is permitted; the tag is attached to the biome so that either code or data may check for its existence; tag components may not have member fields.
+All biomes should specify the version that they target via the "format_version" field. The remainder of the biome data is divided up into independent JSON sub-objects, or components. In general you can think of the presence of a component as defining what game behaviors a biome participates in with the component fields defining how it participates. Broadly there are two categories of components:
+1) Namespaced components (i.e. those with a 'name:' prefix) map to specific behaviors in-game; they may have member fields that parameterize that behavior; only names that have a valid mapping are supported.
+2) Components with no namespace are treated as 'tags': any name consisting of alphanumeric characters, '.' and '_' is permitted; the tag is attached to the biome so that either code or data may check for its existence; tag components may not have member fields.
 
 See the full biome schema below for additional details and the full list of namespaced components.
 
-### Example
-
-```JSON
+**Here is a sample biome**
+```
 {
   "plains": {
     "format_version": "1.12.0",
@@ -70,20 +66,19 @@ See the full biome schema below for additional details and the full list of name
 }
 ```
 
-## Adding New Biomes
 
-Biomes are read from JSON files in the biomes subfolders of behavior packs. Loading enforces one biome per file; the file name and the actual biome name must match. Adding a file with a new name to the biome data location will make it available for the game to use, while existing biomes can be overwritten via files that match their existing name.
 
-> [!IMPORTANT]
-> If you add a new biome, you will need to write component data that allows it to participate in world generation (see full schema below), or else it will not show up in your worlds.
+# Adding biomes
 
-> [!TIP]
-> Code examples below are tagged with the `C` programing language to have a similar syntax highlighting as Molang and the schema being used.
+Biomes are read from JSON files in the biomes subfolders of behavior packs. Loading enforces one biome per file; the file name and the actual biome name must match. Adding a file with a new name to the biome data location will make it available for the game to use, while existing biomes can be overriden via files that match their existing name. Note that if you add a new biome you'll need to write component data that allows it to participate in world generation (see full schema below), or else it won't show up in your worlds!
 
-### Schema
 
-```json
- {
+
+# Schema
+
+****
+```
+  {
       object "minecraft:climate"[0,7] : opt // Describes temperature, humidity, precipitation, etc.  Biomes without this component will have default values.
       {
           float "temperature" : opt
@@ -245,7 +240,7 @@ Biomes are read from JSON files in the biomes subfolders of behavior packs. Load
               block_reference "<any array element>"
           }
           block_reference "sea_material" // Material used to replace air blocks below sea level.
-          block_reference "foundation_material" // Material used to replace solid blocks that are not surface blocks.
+          block_reference "foundation_material" // Material used to repalce solid blocks that are not surface blocks.
           block_reference "beach_material" : opt // Material used to decorate surface near sea level.
       }
       object "minecraft:mountain_parameters"[0,3] : opt // Noise parameters used to drive mountain terrain generation in Overworld
@@ -328,3 +323,4 @@ Biomes are read from JSON files in the biomes subfolders of behavior packs. Load
   }
 
 ```
+

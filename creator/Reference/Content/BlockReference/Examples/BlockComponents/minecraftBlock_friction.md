@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Block Documentation - minecraft:friction
 
-`minecraft:friction` is a `decimal` property describes the friction for this block in a range of [0.1, 1.0]. Friction affects an entity's movement speed when it travels on the block. Greater value results in less friction.
+`minecraft:friction` is a `decimal` property describes the friction for this block in a range of 0.0 to 0.9. Friction affects an entity's movement speed when it travels on the block. Greater value results in more friction. Wood and dirt are set to a friction of 0.4 while ice is set to 0.02.
 
 ## Example
 

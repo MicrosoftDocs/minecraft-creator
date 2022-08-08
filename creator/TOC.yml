@@ -188,6 +188,8 @@
             href: Reference/Content/blockreference/Examples/BlockTriggers/TOC.yml
           - name: Block Event Responses
             href: Reference/Content/blockreference/Examples/BlockEvents/TOC.yml
+          - name: Block Properties and Descriptions
+            href: Reference/Content/BlockReference/Examples/Definitions/BlockDefinitionProperties.md
         - name: Entity JSON
           items:
           - name: Entity Documentation Homepage
