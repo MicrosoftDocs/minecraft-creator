@@ -3,8 +3,8 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: .ScoreboardIdentityType Enumeration
-description: Contents of the .ScoreboardIdentityType enumeration.
+title: ScoreboardIdentityType Enumeration
+description: Contents of the ScoreboardIdentityType enumeration.
 ---
 # ScoreboardIdentityType Enumeration
 >[!IMPORTANT]

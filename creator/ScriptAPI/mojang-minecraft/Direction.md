@@ -3,8 +3,8 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: .Direction Enumeration
-description: Contents of the .Direction enumeration.
+title: Direction Enumeration
+description: Contents of the Direction enumeration.
 ---
 # Direction Enumeration
 >[!IMPORTANT]

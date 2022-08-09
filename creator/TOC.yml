@@ -218,6 +218,10 @@
             href: Reference/Content/featuresreference/Examples/Features/TOC.yml
           - name: Feature Example Schema
             href: Reference/Content/FeaturesReference/Examples/ExampleFeatureSchema.md
+        - name: Fog JSON
+          items:
+          - name: Introduction to Fogs
+            href: Reference/Content/fogsreference/Examples/FogsIntroduction.md
         - name: Item JSON
           items:
           - name: Item Documentation Homepage

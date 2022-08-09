@@ -14,7 +14,7 @@ This represents a placeholder object that represents a secret string. The conten
 
 ## Methods
 - [constructor](#constructor)
-
+  
 ### **constructor**
 `
 new SecretString(value: string)

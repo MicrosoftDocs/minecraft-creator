@@ -3,8 +3,8 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: .GameMode Enumeration
-description: Contents of the .GameMode enumeration.
+title: GameMode Enumeration
+description: Contents of the GameMode enumeration.
 ---
 # GameMode Enumeration
 >[!IMPORTANT]

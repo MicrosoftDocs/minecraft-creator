@@ -21,6 +21,7 @@ ms.prod: gaming
 |priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | suspicion_is_disturbance| false| Boolean| If true, finding new suspicious locations count as disturbances that may delay the start of this goal. |
 | vibration_is_disturbance| false| Boolean| If true, vibrations count as disturbances that may delay the start of this goal. |
+| on_start| *not set* | Trigger| Event(s) to run when the goal starts. |
 
 ## Vanilla entities examples
 

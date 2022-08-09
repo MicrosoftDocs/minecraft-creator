@@ -45,6 +45,13 @@ Type of container this entity has.
 
 Type: *string*
 
+### **id**
+`read-only id: string;`
+
+Identifier of this component. Should always be minecraft:inventory.
+
+Type: *string*
+
 ### **inventorySize**
 `read-only inventorySize: number;`
 

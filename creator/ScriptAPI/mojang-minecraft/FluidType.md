@@ -3,8 +3,8 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: .FluidType Enumeration
-description: Contents of the .FluidType enumeration.
+title: FluidType Enumeration
+description: Contents of the FluidType enumeration.
 ---
 # FluidType Enumeration
 >[!IMPORTANT]

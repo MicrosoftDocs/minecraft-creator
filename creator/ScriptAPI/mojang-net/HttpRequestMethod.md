@@ -3,8 +3,8 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: .HttpRequestMethod Enumeration
-description: Contents of the .HttpRequestMethod enumeration.
+title: HttpRequestMethod Enumeration
+description: Contents of the HttpRequestMethod enumeration.
 ---
 # HttpRequestMethod Enumeration
 >[!IMPORTANT]
