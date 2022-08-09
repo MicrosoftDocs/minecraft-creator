@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,12 +16,6 @@ description: Contents of the mojang-minecraft.EntityMovementGlideComponent class
 When added, this movement control allows the mob to glide.
 
 ## Properties
-### **id**
-`read-only id: string;`
-
-Identifier of this component. Should always be minecraft:movement.glide.
-
-Type: *string*
 
 ### **maxTurn**
 `read-only maxTurn: number;`
@@ -44,3 +38,11 @@ Start speed during a glide.
 
 Type: *number*
 
+## Constants
+
+### **id**
+`static read-only id = "minecraft:movement.glide";`
+
+Identifier of this component. Should always be minecraft:movement.glide.
+
+Type: *string*

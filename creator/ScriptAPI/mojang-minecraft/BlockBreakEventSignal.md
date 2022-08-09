@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,23 +15,24 @@ Manages callbacks that are connected to when a block is broken.
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
-  
+
 ### **subscribe**
 `
 subscribe(callback: (arg: BlockBreakEvent) => void): (arg: BlockBreakEvent) => void
 `
-
 Adds a callback that will be called when a block is broken by a player.
+
 #### **Parameters**
 - **callback**: (arg: [*BlockBreakEvent*](BlockBreakEvent.md)) => *void*
 
 #### **Returns** (arg: [*BlockBreakEvent*](BlockBreakEvent.md)) => *void*
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: BlockBreakEvent) => void): void
 `
-
 Removes a callback from being called when an block is broken.
+
 #### **Parameters**
 - **callback**: (arg: [*BlockBreakEvent*](BlockBreakEvent.md)) => *void*
 > [!WARNING]

@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,23 +15,24 @@ Manages callbacks that are connected to a player joining the world.
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
-  
+
 ### **subscribe**
 `
 subscribe(callback: (arg: PlayerJoinEvent) => void): (arg: PlayerJoinEvent) => void
 `
-
 Adds a callback that will be called when a player joins the world.
+
 #### **Parameters**
 - **callback**: (arg: [*PlayerJoinEvent*](PlayerJoinEvent.md)) => *void*
 
 #### **Returns** (arg: [*PlayerJoinEvent*](PlayerJoinEvent.md)) => *void*
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: PlayerJoinEvent) => void): void
 `
-
 Removes a callback from being called when a player joins the world.
+
 #### **Parameters**
 - **callback**: (arg: [*PlayerJoinEvent*](PlayerJoinEvent.md)) => *void*
 > [!WARNING]

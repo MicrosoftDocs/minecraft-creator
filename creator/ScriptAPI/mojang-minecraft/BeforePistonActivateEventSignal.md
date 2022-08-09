@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,23 +15,24 @@ Manages callbacks that are connected to an event that fires before a piston is a
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
-  
+
 ### **subscribe**
 `
 subscribe(callback: (arg: BeforePistonActivateEvent) => void): (arg: BeforePistonActivateEvent) => void
 `
-
 Adds a callback that will be called before a piston expands or retracts.
+
 #### **Parameters**
 - **callback**: (arg: [*BeforePistonActivateEvent*](BeforePistonActivateEvent.md)) => *void*
 
 #### **Returns** (arg: [*BeforePistonActivateEvent*](BeforePistonActivateEvent.md)) => *void*
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: BeforePistonActivateEvent) => void): void
 `
-
 Removes a callback from being called before a piston expands or retracts.
+
 #### **Parameters**
 - **callback**: (arg: [*BeforePistonActivateEvent*](BeforePistonActivateEvent.md)) => *void*
 > [!WARNING]

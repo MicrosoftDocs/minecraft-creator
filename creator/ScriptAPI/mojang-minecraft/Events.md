@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.Events class.
 Contains a set of events that are available across the scope of the World.
 
 ## Properties
+
 ### **beforeChat**
 `read-only beforeChat: BeforeChatEventSignal;`
 
@@ -257,4 +258,3 @@ Type: [*WeatherChangeEventSignal*](WeatherChangeEventSignal.md)
 This event fires when the script environment is initialized on a World. In addition, you can register dynamic properties within the scope of a world Initialize event.
 
 Type: [*WorldInitializeEventSignal*](WorldInitializeEventSignal.md)
-

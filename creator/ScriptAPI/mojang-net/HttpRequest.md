@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-net.HttpRequest class.
 Main object for structuring a request.
 
 ## Properties
+
 ### **body**
 `body: string;`
 
@@ -48,7 +49,6 @@ The HTTP resource to access.
 
 Type: *string*
 
-
 ## Methods
 - [constructor](#constructor)
 - [addHeader](#addheader)
@@ -56,7 +56,7 @@ Type: *string*
 - [setHeaders](#setheaders)
 - [setMethod](#setmethod)
 - [setTimeout](#settimeout)
-  
+
 ### **constructor**
 `
 new HttpRequest(uri: string)
@@ -66,17 +66,19 @@ new HttpRequest(uri: string)
 - **uri**: *string*
 
 #### **Returns** [*HttpRequest*](HttpRequest.md)
+
 ### **addHeader**
 `
 addHeader(key: string, value: mojang-minecraft-server-admin.SecretString | string): HttpRequest
 `
-
 Adds an additional header to the overall list of headers used in the corresponding HTTP request.
+
 #### **Parameters**
 - **key**: *string*
 - **value**: [*mojang-minecraft-server-admin.SecretString*](../mojang-minecraft-server-admin/SecretString.md) | *string*
 
 #### **Returns** [*HttpRequest*](HttpRequest.md)
+
 ### **setBody**
 `
 setBody(body: string): HttpRequest
@@ -86,16 +88,18 @@ setBody(body: string): HttpRequest
 - **body**: *string*
 
 #### **Returns** [*HttpRequest*](HttpRequest.md)
+
 ### **setHeaders**
 `
 setHeaders(headers: HttpHeader[]): HttpRequest
 `
-
 Replaces and applies a set of HTTP Headers for the request.
+
 #### **Parameters**
 - **headers**: [*HttpHeader*](HttpHeader.md)[]
 
 #### **Returns** [*HttpRequest*](HttpRequest.md)
+
 ### **setMethod**
 `
 setMethod(method: HttpRequestMethod): HttpRequest
@@ -105,6 +109,7 @@ setMethod(method: HttpRequestMethod): HttpRequest
 - **method**: [*HttpRequestMethod*](HttpRequestMethod.md)
 
 #### **Returns** [*HttpRequest*](HttpRequest.md)
+
 ### **setTimeout**
 `
 setTimeout(timeout: number): HttpRequest

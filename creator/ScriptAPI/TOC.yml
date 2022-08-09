@@ -78,6 +78,10 @@
         href: mojang-minecraft/BeforePistonActivateEvent.md
       - name: BeforePistonActivateEventSignal
         href: mojang-minecraft/BeforePistonActivateEventSignal.md
+      - name: BeforeWatchdogTerminateEvent
+        href: mojang-minecraft/BeforeWatchdogTerminateEvent.md
+      - name: BeforeWatchdogTerminateEventSignal
+        href: mojang-minecraft/BeforeWatchdogTerminateEventSignal.md
       - name: Block
         href: mojang-minecraft/Block.md
       - name: BlockAreaSize
@@ -120,6 +124,8 @@
         href: mojang-minecraft/BlockRaycastOptions.md
       - name: BlockRecordPlayerComponent
         href: mojang-minecraft/BlockRecordPlayerComponent.md
+      - name: BlockSignComponent
+        href: mojang-minecraft/BlockSignComponent.md
       - name: BlockSnowContainerComponent
         href: mojang-minecraft/BlockSnowContainerComponent.md
       - name: BlockType
@@ -150,6 +156,8 @@
         href: mojang-minecraft/DefinitionModifier.md
       - name: Dimension
         href: mojang-minecraft/Dimension.md
+      - name: DirectionBlockProperty
+        href: mojang-minecraft/DirectionBlockProperty.md
       - name: DynamicPropertiesDefinition
         href: mojang-minecraft/DynamicPropertiesDefinition.md
       - name: Effect
@@ -292,8 +300,6 @@
         href: mojang-minecraft/EntityNavigationWalkComponent.md
       - name: EntityPushThroughComponent
         href: mojang-minecraft/EntityPushThroughComponent.md
-      - name: EntityQueryOptions
-        href: mojang-minecraft/EntityQueryOptions.md
       - name: EntityQueryScoreOptions
         href: mojang-minecraft/EntityQueryScoreOptions.md
       - name: EntityRaycastOptions
@@ -450,6 +456,8 @@
         href: mojang-minecraft/ScoreboardIdentity.md
       - name: ScoreboardObjective
         href: mojang-minecraft/ScoreboardObjective.md
+      - name: ScoreboardObjectiveDisplayOptions
+        href: mojang-minecraft/ScoreboardObjectiveDisplayOptions.md
       - name: ScoreboardScoreInfo
         href: mojang-minecraft/ScoreboardScoreInfo.md
       - name: ScreenDisplay
@@ -460,12 +468,14 @@
         href: mojang-minecraft/SoundOptions.md
       - name: StringBlockProperty
         href: mojang-minecraft/StringBlockProperty.md
+      - name: System
+        href: mojang-minecraft/System.md
+      - name: SystemEvents
+        href: mojang-minecraft/SystemEvents.md
       - name: TickEvent
         href: mojang-minecraft/TickEvent.md
       - name: TickEventSignal
         href: mojang-minecraft/TickEventSignal.md
-      - name: TitleDisplayOptions
-        href: mojang-minecraft/TitleDisplayOptions.md
       - name: Trigger
         href: mojang-minecraft/Trigger.md
       - name: Vector
@@ -482,6 +492,12 @@
         href: mojang-minecraft/WorldInitializeEventSignal.md
       - name: XYRotation
         href: mojang-minecraft/XYRotation.md
+      - name: EntityQueryOptions
+        href: mojang-minecraft/EntityQueryOptions.md
+      - name: IRawMessage
+        href: mojang-minecraft/IRawMessage.md
+      - name: IVec3
+        href: mojang-minecraft/IVec3.md
     - name: mojang-net
       items:
       - name: mojang-net

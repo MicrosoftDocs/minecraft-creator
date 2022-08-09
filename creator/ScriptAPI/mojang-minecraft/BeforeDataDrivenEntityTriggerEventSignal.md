@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,24 +15,25 @@ Contains information related to firing of a data driven entity event - for examp
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
-  
+
 ### **subscribe**
 `
 subscribe(callback: (arg: BeforeDataDrivenEntityTriggerEvent) => void, options?: EntityDataDrivenTriggerEventOptions): (arg: BeforeDataDrivenEntityTriggerEvent) => void
 `
-
 Adds a callback that will be called before a data driven entity event is triggered.
+
 #### **Parameters**
 - **callback**: (arg: [*BeforeDataDrivenEntityTriggerEvent*](BeforeDataDrivenEntityTriggerEvent.md)) => *void*
 - **options**?: [*EntityDataDrivenTriggerEventOptions*](EntityDataDrivenTriggerEventOptions.md) = `null`
 
 #### **Returns** (arg: [*BeforeDataDrivenEntityTriggerEvent*](BeforeDataDrivenEntityTriggerEvent.md)) => *void*
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: BeforeDataDrivenEntityTriggerEvent) => void): void
 `
-
 Removes a callback that will be called before a data driven entity event is triggered.
+
 #### **Parameters**
 - **callback**: (arg: [*BeforeDataDrivenEntityTriggerEvent*](BeforeDataDrivenEntityTriggerEvent.md)) => *void*
 > [!WARNING]

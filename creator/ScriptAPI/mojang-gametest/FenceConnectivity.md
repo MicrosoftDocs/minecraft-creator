@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-gametest.FenceConnectivity class.
 Returns information about whether this fence is connected to other fences in several directions.
 
 ## Properties
+
 ### **east**
 `read-only east: boolean;`
 
@@ -40,4 +41,3 @@ Type: *boolean*
 Represents whether this fence block is connected to another fence to the west (x - 1).
 
 Type: *boolean*
-

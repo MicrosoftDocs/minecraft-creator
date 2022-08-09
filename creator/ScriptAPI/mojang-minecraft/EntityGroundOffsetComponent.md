@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,12 +16,6 @@ description: Contents of the mojang-minecraft.EntityGroundOffsetComponent class.
 Sets the offset from the ground that the entity is actually at.
 
 ## Properties
-### **id**
-`read-only id: string;`
-
-Identifier of this component. Should always be minecraft:ground_offset.
-
-Type: *string*
 
 ### **value**
 `value: number;`
@@ -30,3 +24,11 @@ The value of the entity's offset from the terrain, in blocks.
 
 Type: *number*
 
+## Constants
+
+### **id**
+`static read-only id = "minecraft:ground_offset";`
+
+Identifier of this component. Should always be minecraft:ground_offset.
+
+Type: *string*

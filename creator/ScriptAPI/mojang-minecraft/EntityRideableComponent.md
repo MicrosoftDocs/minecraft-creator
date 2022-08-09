@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,6 +16,7 @@ description: Contents of the mojang-minecraft.EntityRideableComponent class.
 When added, this component adds the capability that an entity can be ridden by another entity.
 
 ## Properties
+
 ### **controllingSeat**
 `read-only controllingSeat: number;`
 
@@ -36,13 +37,6 @@ Type: *boolean*
 A string-list of entity types that this entity can support as riders.
 
 Type: *string*[]
-
-### **id**
-`read-only id: string;`
-
-Identifier of this component. Should always be minecraft:rideable.
-
-Type: *string*
 
 ### **interactText**
 `read-only interactText: string;`
@@ -79,18 +73,17 @@ The list of positions and number of riders for each position for entities riding
 
 Type: [*Seat*](Seat.md)[]
 
-
 ## Methods
 - [addRider](#addrider)
 - [ejectRider](#ejectrider)
 - [ejectRiders](#ejectriders)
-  
+
 ### **addRider**
 `
 addRider(rider: Entity): boolean
 `
-
 Adds an entity to this entity as a rider.
+
 #### **Parameters**
 - **rider**: [*Entity*](Entity.md)
   
@@ -99,23 +92,33 @@ Adds an entity to this entity as a rider.
 #### **Returns** *boolean* - True if the rider entity was successfully added.
 > [!WARNING]
 > This function can throw errors.
+
 ### **ejectRider**
 `
 ejectRider(rider: Entity): void
 `
-
 Ejects the specified rider of this entity.
+
 #### **Parameters**
 - **rider**: [*Entity*](Entity.md)
   
   Entity that should be ejected from this entity.
 > [!WARNING]
 > This function can throw errors.
+
 ### **ejectRiders**
 `
 ejectRiders(): void
 `
-
 Ejects all riders of this entity.
 > [!WARNING]
 > This function can throw errors.
+
+## Constants
+
+### **id**
+`static read-only id = "minecraft:rideable";`
+
+Identifier of this component. Should always be minecraft:rideable.
+
+Type: *string*

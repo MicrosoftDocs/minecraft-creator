@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -14,33 +14,35 @@ description: Contents of the mojang-net.HttpClient class.
 - [cancelAll](#cancelall)
 - [get](#get)
 - [request](#request)
-  
+
 ### **cancelAll**
 `
 cancelAll(reason: string): void
 `
-
 Cancels all pending requests.
+
 #### **Parameters**
 - **reason**: *string*
+
 ### **get**
 `
 get(uri: string): Promise<HttpResponse>
 `
-
 Performs a simple HTTP get request.
+
 #### **Parameters**
 - **uri**: *string*
   
   URL to make an HTTP Request to.
 
 #### **Returns** Promise&lt;[*HttpResponse*](HttpResponse.md)&gt; - An awaitable promise that contains the HTTP response.
+
 ### **request**
 `
 request(config: HttpRequest): Promise<HttpResponse>
 `
-
 Performs an HTTP request.
+
 #### **Parameters**
 - **config**: [*HttpRequest*](HttpRequest.md)
   

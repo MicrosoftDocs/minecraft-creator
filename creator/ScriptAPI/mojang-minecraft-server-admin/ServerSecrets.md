@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft-server-admin.ServerSecrets class.
 A collection of server secrets defined in dedicated server configuration.
 
 ## Properties
+
 ### **names**
 `read-only names: string[];`
 
@@ -20,16 +21,15 @@ A list of available, configured server secrets.
 
 Type: *string*[]
 
-
 ## Methods
 - [get](#get)
-  
+
 ### **get**
 `
 get(name: string): SecretString
 `
-
 Returns a SecretString that is a placeholder for a secret configured in a JSON file. In certain objects, like an HttpHeader, this Secret is resolved at the time of execution but is not made available to the script environment.
+
 #### **Parameters**
 - **name**: *string*
 

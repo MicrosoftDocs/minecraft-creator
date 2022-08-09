@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,23 +15,24 @@ Manages callbacks that fire before an item is used.
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
-  
+
 ### **subscribe**
 `
 subscribe(callback: (arg: BeforeItemUseEvent) => void): (arg: BeforeItemUseEvent) => void
 `
-
 Adds a callback that will be called before an item is used.
+
 #### **Parameters**
 - **callback**: (arg: [*BeforeItemUseEvent*](BeforeItemUseEvent.md)) => *void*
 
 #### **Returns** (arg: [*BeforeItemUseEvent*](BeforeItemUseEvent.md)) => *void*
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: BeforeItemUseEvent) => void): void
 `
-
 Removes a callback from being called before an item is used.
+
 #### **Parameters**
 - **callback**: (arg: [*BeforeItemUseEvent*](BeforeItemUseEvent.md)) => *void*
 > [!WARNING]

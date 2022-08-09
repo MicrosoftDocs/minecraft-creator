@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,23 +15,24 @@ Manages callbacks that are connected to when a projectile hits an entity or bloc
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
-  
+
 ### **subscribe**
 `
 subscribe(callback: (arg: ProjectileHitEvent) => void): (arg: ProjectileHitEvent) => void
 `
-
 Adds a callback that will be called when a projectile hits an entity or block.
+
 #### **Parameters**
 - **callback**: (arg: [*ProjectileHitEvent*](ProjectileHitEvent.md)) => *void*
 
 #### **Returns** (arg: [*ProjectileHitEvent*](ProjectileHitEvent.md)) => *void*
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ProjectileHitEvent) => void): void
 `
-
 Removes a callback from being called when a projectile hits an entity or block.
+
 #### **Parameters**
 - **callback**: (arg: [*ProjectileHitEvent*](ProjectileHitEvent.md)) => *void*
 > [!WARNING]

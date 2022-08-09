@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,6 +16,7 @@ description: Contents of the mojang-minecraft.EntityBreathableComponent class.
 Defines what blocks this entity can breathe in and gives them the ability to suffocate.
 
 ## Properties
+
 ### **breatheBlocks**
 `read-only breatheBlocks: BlockPermutation[];`
 
@@ -58,13 +59,6 @@ If true, this entity will have visible bubbles while in water.
 
 Type: *boolean*
 
-### **id**
-`read-only id: string;`
-
-Identifier of this component. Should always be minecraft:breathable.
-
-Type: *string*
-
 ### **inhaleTime**
 `read-only inhaleTime: number;`
 
@@ -93,19 +87,27 @@ Time in seconds the entity can hold its breath.
 
 Type: *number*
 
-
 ## Methods
 - [setAirSupply](#setairsupply)
-  
+
 ### **setAirSupply**
 `
 setAirSupply(value: number): void
 `
-
 Sets the current air supply of the entity.
+
 #### **Parameters**
 - **value**: *number*
   
   New air supply for the entity.
 > [!WARNING]
 > This function can throw errors.
+
+## Constants
+
+### **id**
+`static read-only id = "minecraft:breathable";`
+
+Identifier of this component. Should always be minecraft:breathable.
+
+Type: *string*

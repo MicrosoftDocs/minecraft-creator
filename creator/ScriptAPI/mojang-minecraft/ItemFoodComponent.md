@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,19 +13,13 @@ description: Contents of the mojang-minecraft.ItemFoodComponent class.
 When present on an item, this item is consumable by entities. Note that this component only applies to data-driven items.
 
 ## Properties
+
 ### **canAlwaysEat**
 `read-only canAlwaysEat: boolean;`
 
 If true, the player can always eat this item (even when not hungry).
 
 Type: *boolean*
-
-### **id**
-`read-only id: string;`
-
-Identifier of this component. Should always be 'minecraft:food'.
-
-Type: *string*
 
 ### **nutrition**
 `read-only nutrition: number;`
@@ -48,3 +42,11 @@ When specified, converts the active item to the one specified by this property.
 
 Type: *string*
 
+## Constants
+
+### **id**
+`static read-only id = "minecraft:food";`
+
+Identifier of this component. Should always be 'minecraft:food'.
+
+Type: *string*

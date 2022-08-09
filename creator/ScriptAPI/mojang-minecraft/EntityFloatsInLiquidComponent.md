@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,11 +15,11 @@ description: Contents of the mojang-minecraft.EntityFloatsInLiquidComponent clas
 
 When added, this component signifies that this entity can float in liquid blocks.
 
-## Properties
+## Constants
+
 ### **id**
-`read-only id: string;`
+`static read-only id = "minecraft:floats_in_liquid";`
 
 Identifier of this component. Should always be minecraft:floats_in_liquid.
 
 Type: *string*
-

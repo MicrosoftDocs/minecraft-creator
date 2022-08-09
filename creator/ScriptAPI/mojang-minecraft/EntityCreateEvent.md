@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,13 +13,13 @@ description: Contents of the mojang-minecraft.EntityCreateEvent class.
 Contains information related to the creation of a new entity.
 
 ## Properties
+
 ### **entity**
 `entity: Entity;`
 
 New entity that was created.
 
 Type: [*Entity*](Entity.md)
-
 
 #### **Examples**
 ##### *runEntityCreatedEvent.ts*

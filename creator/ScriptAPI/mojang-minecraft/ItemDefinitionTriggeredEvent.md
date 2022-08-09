@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.ItemDefinitionTriggeredEvent class
 Contains information related to a custom item having a data definition change being triggered.
 
 ## Properties
+
 ### **eventName**
 `read-only eventName: string;`
 
@@ -33,4 +34,3 @@ Type: [*ItemStack*](ItemStack.md)
 Returns the source entity that triggered this item event.
 
 Type: [*Entity*](Entity.md)
-

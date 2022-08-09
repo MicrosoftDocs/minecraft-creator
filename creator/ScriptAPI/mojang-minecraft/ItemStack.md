@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.ItemStack class.
 Defines a collection of items.
 
 ## Properties
+
 ### **amount**
 `amount: number;`
 
@@ -41,7 +42,6 @@ Given name of this stack of items.
 
 Type: *string*
 
-
 ## Methods
 - [constructor](#constructor)
 - [getComponent](#getcomponent)
@@ -50,13 +50,13 @@ Type: *string*
 - [hasComponent](#hascomponent)
 - [setLore](#setlore)
 - [triggerEvent](#triggerevent)
-  
+
 ### **constructor**
 `
 new ItemStack(itemType: ItemType, amount?: number, data?: number)
 `
-
 Creates a new instance of a stack of items for use in the world.
+
 #### **Parameters**
 - **itemType**: [*ItemType*](ItemType.md)
   
@@ -69,60 +69,64 @@ Creates a new instance of a stack of items for use in the world.
   Optional data value used for creating the item, or 0 if no data value is specified.
 
 #### **Returns** [*ItemStack*](ItemStack.md)
+
 ### **getComponent**
 `
 getComponent(componentId: string): any
 `
-
 Gets a component (that represents additional capabilities) for an item stack.
+
 #### **Parameters**
 - **componentId**: *string*
   
   The identifier of the component (e.g., 'minecraft:food') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed. If the component is not present on the item stack, undefined is returned.
 
 #### **Returns** *any*
+
 ### **getComponents**
 `
 getComponents(): any[]
 `
-
 Returns all components that are both present on this item stack and supported by the API.
 
 #### **Returns** *any*[]
+
 ### **getLore**
 `
 getLore(): string[]
 `
-
 Returns the lore value - a secondary display string - for an ItemStack.
 
 #### **Returns** *string*[]
+
 ### **hasComponent**
 `
 hasComponent(componentId: string): boolean
 `
-
 Returns true if the specified component is present on this item stack.
+
 #### **Parameters**
 - **componentId**: *string*
   
   The identifier of the component (e.g., 'minecraft:food') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed.
 
 #### **Returns** *boolean*
+
 ### **setLore**
 `
 setLore(loreList: string[]): void
 `
-
 Sets the lore value - a secondary display string - for an ItemStack.
+
 #### **Parameters**
 - **loreList**: *string*[]
+
 ### **triggerEvent**
 `
 triggerEvent(eventName: string): void
 `
-
 Triggers an item type event. For custom items, a number of events are defined in an items' definition for key item behaviors.
+
 #### **Parameters**
 - **eventName**: *string*
   

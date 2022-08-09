@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,6 +16,7 @@ description: Contents of the mojang-minecraft.EntityAgeableComponent class.
 Adds a timer for the entity to grow up. It can be accelerated by giving the entity the items it likes as defined by feedItems.
 
 ## Properties
+
 ### **dropItems**
 `read-only dropItems: string[];`
 
@@ -44,10 +45,11 @@ Event to run when this entity grows up.
 
 Type: [*Trigger*](Trigger.md)
 
+## Constants
+
 ### **id**
-`read-only id: string;`
+`static read-only id = "minecraft:ageable";`
 
 Identifier of this component. Should always be minecraft:ageable.
 
 Type: *string*
-

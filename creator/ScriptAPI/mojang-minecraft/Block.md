@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.Block class.
 Represents a block in a dimension. A block represents a unique X, Y, and Z within a dimension and get/sets the state of the block at that location. This type was significantly updated in version 1.17.10.21.
 
 ## Properties
+
 ### **dimension**
 `read-only dimension: Dimension;`
 
@@ -26,13 +27,6 @@ Type: [*Dimension*](Dimension.md)
 Identifier of the type of block for this block.
 
 Type: *string*
-
-### **isEmpty**
-`read-only isEmpty: boolean;`
-
-Whether this particular block is empty (air).
-
-Type: *boolean*
 
 ### **isWaterlogged**
 `isWaterlogged: boolean;`
@@ -83,20 +77,19 @@ Z coordinate of the block.
 
 Type: *number*
 
-
 ## Methods
 - [getComponent](#getcomponent)
 - [getTags](#gettags)
 - [hasTag](#hastag)
 - [setPermutation](#setpermutation)
 - [setType](#settype)
-  
+
 ### **getComponent**
 `
 getComponent(componentName: string): any
 `
-
 Gets additional configuration properties (a component) for specific capabilities of particular blocks - for example, an inventory component of a chest block.
+
 #### **Parameters**
 - **componentName**: *string*
   
@@ -105,25 +98,30 @@ Gets additional configuration properties (a component) for specific capabilities
 #### **Returns** *any* - Returns the component object if it is present on the particular block.
 > [!WARNING]
 > This function can throw errors.
+
 ### **getTags**
 `
 getTags(): string[]
 `
 
-
 #### **Returns** *string*[] - The list of tags that the block has.
+> [!WARNING]
+> This function can throw errors.
+
 ### **hasTag**
 `
 hasTag(tag: string): boolean
 `
-
 Checks to see if the permutation of this block has a specific tag.
+
 #### **Parameters**
 - **tag**: *string*
   
   Tag to check for.
 
 #### **Returns** *boolean* - Returns `true` if the permutation of this block has the tag, else `false`.
+> [!WARNING]
+> This function can throw errors.
 
 #### **Examples**
 ##### *check_block_tags.js*
@@ -135,23 +133,29 @@ console.log(`Block is dirt: ${block.hasTag("dirt")}`);
 console.log(`Block is wood: ${block.hasTag("wood")}`);
 console.log(`Block is stone: ${block.hasTag("stone")}`);
 ```
+
 ### **setPermutation**
 `
 setPermutation(permutation: BlockPermutation): void
 `
-
 Sets the block in the dimension to the state of the permutation.
+
 #### **Parameters**
 - **permutation**: [*BlockPermutation*](BlockPermutation.md)
   
   Permutation that contains a set of property states for the Block.
+> [!WARNING]
+> This function can throw errors.
+
 ### **setType**
 `
 setType(blockType: BlockType): void
 `
-
 Sets the type of block.
+
 #### **Parameters**
 - **blockType**: [*BlockType*](BlockType.md)
   
   Identifier of the type of block to apply - for example, minecraft:powered_repeater.
+> [!WARNING]
+> This function can throw errors.

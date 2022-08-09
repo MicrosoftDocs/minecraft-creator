@@ -1,10 +1,10 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: Direction Enumeration
-description: Contents of the Direction enumeration.
+title: .Direction Enumeration
+description: Contents of the .Direction enumeration.
 ---
 # Direction Enumeration
 >[!IMPORTANT]
@@ -14,32 +14,26 @@ Represents a direction for expressing relative position or facing.
 
 ## Constants
 ### **down**
-`down = 0`
+`down = "down"`
 
 Represents an object located or facing in the down (z - 1) direction.
-
-### **up**
-`up = 1`
-
-Represents an object located or facing in the up (z + 1) direction.
-
-### **north**
-`north = 2`
-
-Represents an object located or facing in the north (z - 1) direction.
-
-### **south**
-`south = 3`
-
-Represents an object located or facing in the south (z + 1) direction.
-
-### **west**
-`west = 4`
-
-Represents an object located or facing in the west (x - 1) direction.
-
 ### **east**
-`east = 5`
+`east = "east"`
 
 Represents an object located or facing in the east (x + 1) direction.
+### **north**
+`north = "north"`
 
+Represents an object located or facing in the north (z - 1) direction.
+### **south**
+`south = "south"`
+
+Represents an object located or facing in the south (z + 1) direction.
+### **up**
+`up = "up"`
+
+Represents an object located or facing in the up (z + 1) direction.
+### **west**
+`west = "west"`
+
+Represents an object located or facing in the west (x - 1) direction.

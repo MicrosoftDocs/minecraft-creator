@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.NumberRange class.
 Represents a min/max structure for expressing a potential range of numbers.
 
 ## Properties
+
 ### **max**
 `max: number;`
 
@@ -27,15 +28,13 @@ Minimum value within a range.
 
 Type: *number*
 
-
 ## Methods
 - [next](#next)
-  
+
 ### **next**
 `
 next(): number
 `
-
 Returns a random number between the minimum and maximum of the range.
 
 #### **Returns** *number*

@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,10 +13,10 @@ description: Contents of the mojang-minecraft.PlayerLeaveEvent class.
 Contains information regarding a player that has left the world.
 
 ## Properties
+
 ### **playerName**
 `read-only playerName: string;`
 
 Player that has left the world.
 
 Type: *string*
-

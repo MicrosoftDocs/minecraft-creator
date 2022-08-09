@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,17 +16,11 @@ description: Contents of the mojang-minecraft.EntityAddRiderComponent class.
 When added, this component makes the entity spawn with a rider of the specified entityType.
 
 ## Properties
+
 ### **entityType**
 `read-only entityType: string;`
 
 The type of entity that is added as a rider for this entity when spawned under certain conditions.
-
-Type: *string*
-
-### **id**
-`read-only id: string;`
-
-Identifier of this component. Should always be minecraft:addrider.
 
 Type: *string*
 
@@ -37,3 +31,11 @@ Optional spawn event to trigger on the rider when that rider is spawned for this
 
 Type: *string*
 
+## Constants
+
+### **id**
+`static read-only id = "minecraft:addrider";`
+
+Identifier of this component. Should always be minecraft:addrider.
+
+Type: *string*

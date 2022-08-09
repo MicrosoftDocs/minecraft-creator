@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.ExplosionOptions class.
 Additional configuration options for the [*mojang-minecraft.Dimension.createExplosion*](../mojang-minecraft/Dimension.md#createexplosion) method.
 
 ## Properties
+
 ### **allowUnderwater**
 `allowUnderwater: boolean;`
 
@@ -41,15 +42,13 @@ Optional source of the explosion.
 
 Type: [*Entity*](Entity.md)
 
-
 ## Methods
 - [constructor](#constructor)
-  
+
 ### **constructor**
 `
 new ExplosionOptions()
 `
-
 Creates a new instance of the ExplosionOptions object, for use in the [*mojang-minecraft.Dimension.createExplosion*](../mojang-minecraft/Dimension.md#createexplosion) method.
 
 #### **Returns** [*ExplosionOptions*](ExplosionOptions.md)

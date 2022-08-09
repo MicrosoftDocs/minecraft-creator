@@ -1,10 +1,10 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: FluidType Enumeration
-description: Contents of the FluidType enumeration.
+title: .FluidType Enumeration
+description: Contents of the .FluidType enumeration.
 ---
 # FluidType Enumeration
 >[!IMPORTANT]
@@ -13,23 +13,19 @@ description: Contents of the FluidType enumeration.
 Represents the type of fluid for use within a fluid containing block, like a cauldron.
 
 ## Constants
-### **water**
-`water = 0`
-
-Represents water as a type of fluida.
-
 ### **lava**
-`lava = 1`
+`lava = "lava"`
 
 Represents lava as a type of fluid.
-
-### **powderSnow**
-`powderSnow = 2`
-
-Represents powder snow as a type of fluid.
-
 ### **potion**
-`potion = 3`
+`potion = "potion"`
 
 Represents a potion as a type of fluid.
+### **powderSnow**
+`powderSnow = "powderSnow"`
 
+Represents powder snow as a type of fluid.
+### **water**
+`water = "water"`
+
+Represents water as a type of fluida.

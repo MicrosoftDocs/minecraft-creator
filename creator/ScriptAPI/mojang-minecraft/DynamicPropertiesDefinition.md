@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -17,40 +17,42 @@ Class used in conjunction with [*mojang-minecraft.PropertyRegistry*](../mojang-m
 - [defineBoolean](#defineboolean)
 - [defineNumber](#definenumber)
 - [defineString](#definestring)
-  
+
 ### **constructor**
 `
 new DynamicPropertiesDefinition()
 `
 
-
 #### **Returns** [*DynamicPropertiesDefinition*](DynamicPropertiesDefinition.md)
+
 ### **defineBoolean**
 `
 defineBoolean(identifier: string): void
 `
-
 Defines a new boolean dynamic property.
+
 #### **Parameters**
 - **identifier**: *string*
 > [!WARNING]
 > This function can throw errors.
+
 ### **defineNumber**
 `
 defineNumber(identifier: string): void
 `
-
 Defines a new number dynamic property.
+
 #### **Parameters**
 - **identifier**: *string*
 > [!WARNING]
 > This function can throw errors.
+
 ### **defineString**
 `
 defineString(identifier: string, maxLength: number): void
 `
-
 Defines a new string dynamic property.
+
 #### **Parameters**
 - **identifier**: *string*
 - **maxLength**: *number*

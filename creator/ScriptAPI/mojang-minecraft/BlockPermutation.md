@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.BlockPermutation class.
 Contains the combination of type [*mojang-minecraft.BlockType*](../mojang-minecraft/BlockType.md) and properties (also sometimes called block state) which describe a block (but does not belong to a specific [*mojang-minecraft.Block*](../mojang-minecraft/Block.md)). This type was introduced as of version 1.17.10.21.
 
 ## Properties
+
 ### **type**
 `read-only type: BlockType;`
 
@@ -20,55 +21,55 @@ The [*mojang-minecraft.BlockType*](../mojang-minecraft/BlockType.md) that the pe
 
 Type: [*BlockType*](BlockType.md)
 
-
 ## Methods
 - [clone](#clone)
 - [getAllProperties](#getallproperties)
 - [getProperty](#getproperty)
 - [getTags](#gettags)
 - [hasTag](#hastag)
-  
+
 ### **clone**
 `
 clone(): BlockPermutation
 `
-
 Creates a copy of this permutation.
 
 #### **Returns** [*BlockPermutation*](BlockPermutation.md) - A copy of the permutation.
+
 ### **getAllProperties**
 `
 getAllProperties(): IBlockProperty[]
 `
 
-
 #### **Returns** [*IBlockProperty*](IBlockProperty.md)[] - Returns the list of all of the properties that the permutation has.
+
 ### **getProperty**
 `
 getProperty(propertyName: string): IBlockProperty
 `
-
 Gets a property for the permutation.
+
 #### **Parameters**
 - **propertyName**: *string*
 
 #### **Returns** [*IBlockProperty*](IBlockProperty.md) - Returns the property if the permutation has it, else `null`.
 > [!WARNING]
 > This function can throw errors.
+
 ### **getTags**
 `
 getTags(): string[]
 `
-
 Creates a copy of the permutation.
 
 #### **Returns** *string*[]
+
 ### **hasTag**
 `
 hasTag(tag: string): boolean
 `
-
 Checks to see if the permutation has a specific tag.
+
 #### **Parameters**
 - **tag**: *string*
 

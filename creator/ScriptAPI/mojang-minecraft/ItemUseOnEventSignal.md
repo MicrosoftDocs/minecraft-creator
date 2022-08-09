@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,23 +15,24 @@ Manages callbacks that are connected to an item being used on a block event.
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
-  
+
 ### **subscribe**
 `
 subscribe(callback: (arg: ItemUseOnEvent) => void): (arg: ItemUseOnEvent) => void
 `
-
 Adds a callback that will be called when an item is used on a block.
+
 #### **Parameters**
 - **callback**: (arg: [*ItemUseOnEvent*](ItemUseOnEvent.md)) => *void*
 
 #### **Returns** (arg: [*ItemUseOnEvent*](ItemUseOnEvent.md)) => *void*
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ItemUseOnEvent) => void): void
 `
-
 Removes a callback from being called when an item is used on a block.
+
 #### **Parameters**
 - **callback**: (arg: [*ItemUseOnEvent*](ItemUseOnEvent.md)) => *void*
 > [!WARNING]

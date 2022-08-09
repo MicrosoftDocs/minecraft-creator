@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.EntityQueryScoreOptions class.
 Contains additional options for filtering players based on their score for an objective.
 
 ## Properties
+
 ### **exclude**
 `exclude: boolean;`
 
@@ -41,15 +42,13 @@ Identifier of the scoreboard objective to filter on.
 
 Type: *string*
 
-
 ## Methods
 - [constructor](#constructor)
-  
+
 ### **constructor**
 `
 new EntityQueryScoreOptions()
 `
-
 Creates a new EntityQueryScoreOptions query object, for use in an entity query.
 
 #### **Returns** [*EntityQueryScoreOptions*](EntityQueryScoreOptions.md)

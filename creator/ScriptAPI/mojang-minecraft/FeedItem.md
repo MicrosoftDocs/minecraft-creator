@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.FeedItem class.
 As part of the Healable component, represents a specific item that can be fed to an entity to cause health effects.
 
 ## Properties
+
 ### **effects**
 `read-only effects: FeedItemEffect[];`
 
@@ -33,4 +34,3 @@ Type: *number*
 Identifier of type of item that can be fed. If a namespace is not specified, 'minecraft:' is assumed. Example values include 'wheat' or 'golden_apple'.
 
 Type: *string*
-

@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.Seat class.
 Describes a particular seating position on this rideable entity.
 
 ## Properties
+
 ### **lockRiderRotation**
 `read-only lockRiderRotation: number;`
 
@@ -40,4 +41,3 @@ Type: *number*
 Physical location of this seat, relative to the entity's location.
 
 Type: [*Location*](Location.md)
-

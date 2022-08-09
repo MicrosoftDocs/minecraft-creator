@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.BlockLocation class.
 Contains the integer X, Y, Z coordinates for a block. For decimal locations useful for entities, items, and more, see [*mojang-minecraft.Location*](../mojang-minecraft/Location.md).
 
 ## Properties
+
 ### **x**
 `x: number;`
 
@@ -34,20 +35,19 @@ The integer-based Z position.
 
 Type: *number*
 
-
 ## Methods
 - [constructor](#constructor)
 - [above](#above)
 - [blocksBetween](#blocksbetween)
 - [equals](#equals)
 - [offset](#offset)
-  
+
 ### **constructor**
 `
 new BlockLocation(x: number, y: number, z: number)
 `
-
 Creates a new instance of an abstract block location.
+
 #### **Parameters**
 - **x**: *number*
   
@@ -60,44 +60,47 @@ Creates a new instance of an abstract block location.
   Z position of the block location. This number should be an integer.
 
 #### **Returns** [*BlockLocation*](BlockLocation.md)
+
 ### **above**
 `
 above(): BlockLocation
 `
-
 Returns a BlockLocation for a block above this BlockLocation (that is, y + 1).
 
 #### **Returns** [*BlockLocation*](BlockLocation.md)
+
 ### **blocksBetween**
 `
 blocksBetween(other: BlockLocation): BlockLocation[]
 `
-
 Returns an array of block locations representing all blocks in the volume (cuboid) between this location and another location.
+
 #### **Parameters**
 - **other**: [*BlockLocation*](BlockLocation.md)
   
   Additional BlockLocation used to determine the set of locations in between this location and another point.
 
 #### **Returns** [*BlockLocation*](BlockLocation.md)[] - Array of block locations representing the volume between this location and another, inclusive of the start and end points.
+
 ### **equals**
 `
 equals(other: BlockLocation): boolean
 `
-
 Compares this BlockLocation and another BlockLocation to one another.
+
 #### **Parameters**
 - **other**: [*BlockLocation*](BlockLocation.md)
   
   Other block location to compare this BlockLocation to.
 
 #### **Returns** *boolean* - True if the two block locations are equal.
+
 ### **offset**
 `
 offset(x: number, y: number, z: number): BlockLocation
 `
-
 Returns a block location using a position relative to this block location
+
 #### **Parameters**
 - **x**: *number*
   

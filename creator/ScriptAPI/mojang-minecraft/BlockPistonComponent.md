@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,6 +16,7 @@ description: Contents of the mojang-minecraft.BlockPistonComponent class.
 When present, this block has piston-like behavior. Contains additional properties for discovering block piston state.
 
 ## Properties
+
 ### **attachedBlocks**
 `read-only attachedBlocks: BlockLocation[];`
 
@@ -65,3 +66,9 @@ Source location of the block.
 
 Type: [*BlockLocation*](BlockLocation.md)
 
+## Constants
+
+### **id**
+`static read-only id = "piston";`
+
+Type: *string*

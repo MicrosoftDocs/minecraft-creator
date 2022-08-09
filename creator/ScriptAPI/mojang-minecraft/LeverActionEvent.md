@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,6 +16,7 @@ description: Contents of the mojang-minecraft.LeverActionEvent class.
 Contains information related to changes to a lever activating or deactivating.
 
 ## Properties
+
 ### **block**
 `read-only block: Block;`
 
@@ -43,4 +44,3 @@ Type: *boolean*
 Optional player that triggered the lever activation.
 
 Type: [*Player*](Player.md)
-

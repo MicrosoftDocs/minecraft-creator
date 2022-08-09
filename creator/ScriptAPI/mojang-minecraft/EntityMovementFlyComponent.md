@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,12 +16,6 @@ description: Contents of the mojang-minecraft.EntityMovementFlyComponent class.
 When added, this move control causes the mob to fly.
 
 ## Properties
-### **id**
-`read-only id: string;`
-
-Identifier of this component. Should always be minecraft:movement.fly.
-
-Type: *string*
 
 ### **maxTurn**
 `read-only maxTurn: number;`
@@ -30,3 +24,11 @@ The maximum number in degrees the mob can turn per tick.
 
 Type: *number*
 
+## Constants
+
+### **id**
+`static read-only id = "minecraft:movement.fly";`
+
+Identifier of this component. Should always be minecraft:movement.fly.
+
+Type: *string*

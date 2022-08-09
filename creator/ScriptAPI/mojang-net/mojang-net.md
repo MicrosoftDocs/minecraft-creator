@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -21,6 +21,9 @@ The `mojang-net` module contains types for executing HTTP-based requests. This m
 }
 ```
 
+## Available Versions
+- 1.0.0-beta
+
 ## Enumerations
 - [HttpRequestMethod](HttpRequestMethod.md)
 
@@ -31,8 +34,8 @@ The `mojang-net` module contains types for executing HTTP-based requests. This m
 - [HttpResponse](HttpResponse.md)
 
 ## Objects
+  
 ### **http**
 `static read-only http: HttpClient;`
 
 Type: [*HttpClient*](HttpClient.md)
-

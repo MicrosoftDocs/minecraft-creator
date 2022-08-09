@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,12 +16,6 @@ description: Contents of the mojang-minecraft.EntityScaleComponent class.
 Sets the entity's visual size.
 
 ## Properties
-### **id**
-`read-only id: string;`
-
-Identifier of this component. Should always be minecraft:scale.
-
-Type: *string*
 
 ### **value**
 `value: number;`
@@ -30,3 +24,11 @@ The value of the scale. 1.0 means the entity will appear at the scale they are d
 
 Type: *number*
 
+## Constants
+
+### **id**
+`static read-only id = "minecraft:scale";`
+
+Identifier of this component. Should always be minecraft:scale.
+
+Type: *string*

@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.EntityHitEvent class.
 Contains information related to an entity hitting (melee attacking) another entity.
 
 ## Properties
+
 ### **entity**
 `read-only entity: Entity;`
 
@@ -33,4 +34,3 @@ Type: [*Block*](Block.md)
 Entity that was hit by the attack, or undefined if the hit attack did not hit an entity. If both hitEntity and hitBlock are undefined, then the entity basically swiped into the air.
 
 Type: [*Entity*](Entity.md)
-

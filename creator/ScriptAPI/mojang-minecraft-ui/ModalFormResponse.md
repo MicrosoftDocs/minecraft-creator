@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,17 +16,24 @@ description: Contents of the mojang-minecraft-ui.ModalFormResponse class.
 Returns data about player responses to a modal form.
 
 ## Properties
+
+### **cancelationReason**
+`read-only cancelationReason: FormCancelationReason;`
+
+Contains additional details as to why a form was canceled.
+
+Type: [*FormCancelationReason*](FormCancelationReason.md)
+
+### **canceled**
+`read-only canceled: boolean;`
+
+If true, the form was canceled by the player (e.g., they selected the pop-up X close button).
+
+Type: *boolean*
+
 ### **formValues**
 `read-only formValues: any[];`
 
 An ordered set of values based on the order of controls specified by ModalFormData.
 
 Type: *any*[]
-
-### **isCanceled**
-`read-only isCanceled: boolean;`
-
-If true, the form was canceled by the player (e.g., they selected the pop-up X close button).
-
-Type: *boolean*
-

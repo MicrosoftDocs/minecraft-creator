@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,11 +15,11 @@ description: Contents of the mojang-minecraft.EntityIsShakingComponent class.
 
 When added, this component signifies that this entity is currently shaking.
 
-## Properties
+## Constants
+
 ### **id**
-`read-only id: string;`
+`static read-only id = "minecraft:is_shaking";`
 
 Identifier of this component. Should always be minecraft:is_shaking.
 
 Type: *string*
-

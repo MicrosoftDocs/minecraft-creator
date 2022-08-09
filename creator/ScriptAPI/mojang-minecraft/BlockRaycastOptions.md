@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.BlockRaycastOptions class.
 Contains additional options for configuring a block raycast query.
 
 ## Properties
+
 ### **includeLiquidBlocks**
 `includeLiquidBlocks: boolean;`
 
@@ -34,15 +35,13 @@ Maximum distance, in blocks, to process the raycast.
 
 Type: *number*
 
-
 ## Methods
 - [constructor](#constructor)
-  
+
 ### **constructor**
 `
 new BlockRaycastOptions()
 `
-
 Creates a new BlockRaycastOptions object, for use in a block vector query.
 
 #### **Returns** [*BlockRaycastOptions*](BlockRaycastOptions.md)

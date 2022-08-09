@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,23 +15,24 @@ Manages callbacks that are connected to the releasing of charging for a chargeab
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
-  
+
 ### **subscribe**
 `
 subscribe(callback: (arg: ItemReleaseChargeEvent) => void): (arg: ItemReleaseChargeEvent) => void
 `
-
 Adds a callback that will be called when a chargeable item is released from charging.
+
 #### **Parameters**
 - **callback**: (arg: [*ItemReleaseChargeEvent*](ItemReleaseChargeEvent.md)) => *void*
 
 #### **Returns** (arg: [*ItemReleaseChargeEvent*](ItemReleaseChargeEvent.md)) => *void*
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ItemReleaseChargeEvent) => void): void
 `
-
 Removes a callback from being called when a chargeable item is released from charging.
+
 #### **Parameters**
 - **callback**: (arg: [*ItemReleaseChargeEvent*](ItemReleaseChargeEvent.md)) => *void*
 > [!WARNING]

@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -14,7 +14,7 @@ This represents a placeholder object that represents a secret string. The conten
 
 ## Methods
 - [constructor](#constructor)
-  
+
 ### **constructor**
 `
 new SecretString(value: string)
