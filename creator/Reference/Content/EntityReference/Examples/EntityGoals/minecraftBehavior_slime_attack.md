@@ -7,7 +7,10 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.slime_attack
 
-`minecraft:behavior.slime_attack` allows an entity to make a melee attack similar to the `slime` and `magma_cube`.
+`minecraft:behavior.slime_attack` enables mobs with `minecraft:movement.jump` to path towards their target like a `slime` or `magma_cube` does to attack.
+
+> [!IMPORTANT]
+> In order to attack, the entity must have a `runtime_identifier` set to `minecraft:slime` and a variant component with a value greater than 1. Otherwise it will still path towards a target but it will not cause damage.
 
 > [!IMPORTANT]
 > `minecraft:behavior.slime_attack` requires a target in order to work properly. Target can be determined by using one of the following behaviors:

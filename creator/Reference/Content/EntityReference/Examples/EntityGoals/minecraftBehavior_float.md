@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.float":{
-    "priority": 0,
+    "priority": 0
 }
 ```
 
@@ -27,7 +27,11 @@ ms.prod: gaming
 
 ### creeper
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/creeper.json" range="161-163":::
+```json
+"minecraft:behavior.float": {
+    "priority": 0
+}
+```
 
 ## Vanilla entities using `minecraft:behavior.float`
 
