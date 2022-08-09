@@ -151,7 +151,7 @@ In the file, you will need to define what the block is, similar to the `manifest
 
 ```json
 {
-    "format_version": "1.16.0",
+    "format_version": "1.19.20",
     "minecraft:block": {
         "description": {
             "identifier": "helloworld:canvasblock",
@@ -159,16 +159,15 @@ In the file, you will need to define what the block is, similar to the `manifest
             "register_to_creative_menu": true
         },
         "components": {
-            "minecraft:destroy_time": 1,
-            "minecraft:explosion_resistance": 5,
-            "minecraft:friction": 0.6,
-            "minecraft:flammable": {
-                "flame_odds": 0,
-                "burn_odds": 0
+            "minecraft:destructible_by_explosion": {
+              "explosion_resistance": 0
             },
-            "minecraft:map_color": "#FFFFFF",
-            "minecraft:block_light_absorption": 0,
-            "minecraft:block_light_emission": 0.250
+            "minecraft:friction": 0.4,
+            "minecraft:flammable": {
+              "catch_chance_modifier": 5,
+              "destroy_chance_modifier": 20
+            },
+            "minecraft:light_emission": 1
         }
     }
 }
@@ -178,15 +177,13 @@ In the file, you will need to define what the block is, similar to the `manifest
 
 The identifier that was used in the resource pack is defined here. The block is also set to appear in the creative menu and is not set as an experimental piece of content.
 
-- **`destroy_time`** is how many player hits does it take to destroy this block.
-- **`explosion_resistance`** is how resistent the block is to explosions. Higher values mean the block is less likely to break.
-- **`friction`** is used to drive player and entity speeds while stepping on this block. Wood and dirt are set to a friction of `0.6` while ice is set to `0.1`.
+- **`destructible_by_explosion`** determines whether this block can be destroyed by explosions, and can be specified as either a boolean or an object. In object form as shown above, the field explosion_resistance describes how resistant the block is to explosions. Higher values mean the block is less likely to break when near an explosion
+- **`friction`** is used to drive player and entity speeds while walking on this block, in a range of 0.0 to 0.9. Wood and dirt are set to a friction of 0.4 while ice is set to 0.02.
 - **`flammable`** is used to contain properties on how the block handles fire events.
-    - **`flame_odds`** is how likely the block is to catch fire.
-    - **`burn_odds`** is how likely the block is to be destroyed when on fire.
+  - **`catch_chance_modifier`** is a modifier to the chance that the block will catch on fire from its neighbors. Values are greater than or equal to 0, with a higher number meaning more likely to catch on fire. The default value of 5 is the same as that of Planks.
+  - **`destroy_chance_modifier`**  is a modifier to the chance that the block will be destroyed when on fire. Values are greater than or equal to 0, with a higher number meaning more likely to be destroyed when on fire. The default value of 20 is the same as that of Planks.
 - **`map_color`** is the color, in hex format, that is used by the map in order to symbolize the block.
-- **`block_light_absorption`** is how much light the block absorbs. Value uses a range of `0` to `1` as an input.
-- **`block_light_emission`** is how much light the block produces. Value uses a range of `0` to `1` as an input.
+- **`light_emission`** is how much light the block emits, in a range of 0 to 15. Higher value means more light will be emitted.
 
 ## Setting the block name with .lang
 

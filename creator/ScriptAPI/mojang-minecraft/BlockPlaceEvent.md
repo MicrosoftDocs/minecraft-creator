@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,6 +16,7 @@ description: Contents of the mojang-minecraft.BlockPlaceEvent class.
 Contains information regarding an event where a player places a block.
 
 ## Properties
+
 ### **block**
 `read-only block: Block;`
 
@@ -36,4 +37,3 @@ Type: [*Dimension*](Dimension.md)
 Player that placed the block for this event.
 
 Type: [*Player*](Player.md)
-

@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.ProjectileHitEvent class.
 Contains information related to a projectile hitting an entity or block.
 
 ## Properties
+
 ### **blockHit**
 `read-only blockHit: BlockHitInformation;`
 
@@ -61,4 +62,3 @@ Type: [*Entity*](Entity.md)
 Optional source entity that fired the projectile.
 
 Type: [*Entity*](Entity.md)
-

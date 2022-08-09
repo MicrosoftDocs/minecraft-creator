@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,12 +16,6 @@ description: Contents of the mojang-minecraft.EntitySkinIdComponent class.
 Skin Id value. Can be used to differentiate skins, such as base skins for villagers.
 
 ## Properties
-### **id**
-`read-only id: string;`
-
-Identifier of this component. Should always be minecraft:skin_id.
-
-Type: *string*
 
 ### **value**
 `value: number;`
@@ -30,3 +24,11 @@ The identifier of the skin. By convention, 0 is the identifier of the base skin.
 
 Type: *number*
 
+## Constants
+
+### **id**
+`static read-only id = "minecraft:skin_id";`
+
+Identifier of this component. Should always be minecraft:skin_id.
+
+Type: *string*

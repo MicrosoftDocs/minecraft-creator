@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.share_items
 ms.prod: gaming
 ---
@@ -13,10 +13,11 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|[entity_types](../Definitions/NestedTables/entity_types.md)|*not set* | JSON Object| List of entities this mob will share items with|
-|goal_radius| 0.5| Decimal|  Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot |
-|max_dist| 0.0| Decimal|  Maximum distance in blocks this mob will look for entities to share items with |
-|speed_multiplier| 1.0| Decimal|  Movement speed multiplier of the mob when using this AI Goal |
+|[entity_types](../Definitions/NestedTables/entity_types.md)|*not set* | JSON Object| List of entities this mob will share items with.|
+|goal_radius| 0.5| Decimal|  Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot. |
+|max_dist| 0.0| Decimal|  Maximum distance in blocks this mob will look for entities to share items with. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+|speed_multiplier| 1.0| Decimal|  Movement speed multiplier of the mob when using this AI Goal. |
 
 ### entity_types
 
@@ -28,6 +29,7 @@ ms.prod: gaming
 |max_dist |16 |Decimal |Maximum distance this mob can be away to be a valid choice. |
 |must_see |false |Boolean |If true, the mob has to be visible to be a valid choice. |
 |must_see_forget_duration |3.0 | Boolean |Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more. |
+|reevaluate_description| false| Boolean| If true, the mob will stop being targeted if it stops meeting any conditions. |
 |sprint_speed_multiplier |1.0 |Decimal |Multiplier for the running speed. A value of 1.0 means the speed is unchanged. |
 |walk_speed_multiplier |1.0 |Decimal |Multiplier for the walking speed. A value of 1.0 means the speed is unchanged. |
 
@@ -51,7 +53,19 @@ ms.prod: gaming
 
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="1564-1574":::
+```json
+"minecraft:behavior.share_items": {
+        "priority": 9,
+        "max_dist": 3,
+        "goal_radius":  2.0,
+        "speed_multiplier": 0.5,
+        "entity_types": [
+          {
+            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "villager"}
+          }
+        ]
+      },
+```
 
 ## Vanilla entities using `minecraft:behavior.share_items`
 

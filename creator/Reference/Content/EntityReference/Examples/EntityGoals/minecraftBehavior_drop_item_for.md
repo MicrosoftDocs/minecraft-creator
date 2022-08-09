@@ -22,6 +22,7 @@ ms.prod: gaming
 | minimum_teleport_distance| 2.0| Decimal| If the target position is farther away than this distance on any tick, the entity will teleport to the target position. |
 | offering_distance| 1.0| Decimal| The preferred distance the entity tries to be from the target it is dropping an item for. |
 | on_drop_attempt| | Trigger| The event to trigger when the entity attempts to drop an item. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | search_count| 0| Integer| The number of blocks each tick that the entity will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick. |
 | search_height| 1| Integer| The Height in blocks the entity will search within to find a valid target position. |
 | search_range| 0| Integer| The distance in blocks the entity will search within to find a valid target position. |

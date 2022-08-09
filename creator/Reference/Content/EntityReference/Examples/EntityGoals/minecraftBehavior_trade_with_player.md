@@ -9,6 +9,12 @@ ms.prod: gaming
 
 `minecraft:behavior.trade_with_player` allows an entity to focus on a player that will initiate a trade.
 
+## Parameters
+
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+
 ## Example
 
 ```json

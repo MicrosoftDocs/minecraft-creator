@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,12 +16,6 @@ description: Contents of the mojang-minecraft.EntityColorComponent class.
 Defines the entity's color. Only works on certain entities that have predefined color values (sheep, llama, shulker).
 
 ## Properties
-### **id**
-`read-only id: string;`
-
-Identifier of this component. Should always be minecraft:color.
-
-Type: *string*
 
 ### **value**
 `value: number;`
@@ -30,3 +24,11 @@ The palette color value of the entity.
 
 Type: *number*
 
+## Constants
+
+### **id**
+`static read-only id = "minecraft:color";`
+
+Identifier of this component. Should always be minecraft:color.
+
+Type: *string*

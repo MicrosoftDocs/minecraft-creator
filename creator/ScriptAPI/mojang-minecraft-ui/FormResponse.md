@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -18,10 +18,17 @@ description: Contents of the mojang-minecraft-ui.FormResponse class.
 Base type for a form response.
 
 ## Properties
-### **isCanceled**
-`read-only isCanceled: boolean;`
+
+### **cancelationReason**
+`read-only cancelationReason: FormCancelationReason;`
+
+Contains additional details as to why a form was canceled.
+
+Type: [*FormCancelationReason*](FormCancelationReason.md)
+
+### **canceled**
+`read-only canceled: boolean;`
 
 If true, the form was canceled by the player (e.g., they selected the pop-up X close button).
 
 Type: *boolean*
-

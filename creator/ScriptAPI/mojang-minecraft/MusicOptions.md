@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.MusicOptions class.
 Additional configuration options for [*mojang-minecraft.World.playMusic*](../mojang-minecraft/World.md#playmusic)/[*mojang-minecraft.World.queueMusic*](../mojang-minecraft/World.md#queuemusic) methods.
 
 ## Properties
+
 ### **fade**
 `fade: number;`
 
@@ -34,15 +35,13 @@ Relative volume level of the music.
 
 Type: *number*
 
-
 ## Methods
 - [constructor](#constructor)
-  
+
 ### **constructor**
 `
 new MusicOptions()
 `
-
 Creates a new instance of the SoundOptions object.
 
 #### **Returns** [*MusicOptions*](MusicOptions.md)

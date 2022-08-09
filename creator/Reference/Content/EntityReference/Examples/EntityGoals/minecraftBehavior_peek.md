@@ -9,6 +9,13 @@ ms.prod: gaming
 
 `minecraft:behavior.peek` allows an entity to peek out.
 
+
+## Parameters
+
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+
 ## Example
 
 ```json

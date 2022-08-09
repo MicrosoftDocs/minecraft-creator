@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.DefinitionModifier class.
 Contains a set of updates to the component definition state of an entity.
 
 ## Properties
+
 ### **componentGroupsToAdd**
 `read-only componentGroupsToAdd: string[];`
 
@@ -34,14 +35,12 @@ A list of entity definition events that will be fired via this update.
 
 Type: [*Trigger*](Trigger.md)[]
 
-
 ## Methods
 - [constructor](#constructor)
-  
+
 ### **constructor**
 `
 new DefinitionModifier()
 `
-
 
 #### **Returns** [*DefinitionModifier*](DefinitionModifier.md)

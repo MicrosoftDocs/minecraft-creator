@@ -15,8 +15,8 @@ ms.prod: gaming
 |:-----------:|:-----------:|:-----------:|:-----------:|
 | cooldown_time| 0.50| Integer| Time in seconds the mob has to wait before using the goal again |
 | duration| 5.00| Decimal| Goal duration in seconds |
-| Trigger| on_done| | Trigger to be executed when the goal execution is about to end |
-
+| on_done| *not set* | Trigger to be executed when the goal execution is about to end |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 
 ## Vanilla entities examples
 

@@ -7,9 +7,9 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:difficulty_filter
 
-This component allows players to set mobs spawn with certain difficulty levels.
+This component allows players to set mobs spawn at certain difficulty levels. The min is for Peaceful difficulty and the max is for Hard difficulty.
 
-### Parameters
+## Parameters
 
 |Name |Default Value|Type |Description |
 |:-----------|:-----------|:-----------|:-----------|

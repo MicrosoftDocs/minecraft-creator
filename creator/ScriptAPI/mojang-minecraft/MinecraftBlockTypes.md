@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,7 +15,7 @@ Contains definitions of standard Minecraft and Minecraft Education Edition block
 ## Methods
 - [get](#get)
 - [getAllBlockTypes](#getallblocktypes)
-  
+
 ### **get**
 `
 get(typeName: string): BlockType
@@ -25,16 +25,17 @@ get(typeName: string): BlockType
 - **typeName**: *string*
 
 #### **Returns** [*BlockType*](BlockType.md)
+
 ### **getAllBlockTypes**
 `
 getAllBlockTypes(): BlockType[]
 `
-
 Returns an array of all block types within Minecraft.
 
 #### **Returns** [*BlockType*](BlockType.md)[]
 
 ## Constants
+
 ### **acaciaButton**
 `static read-only acaciaButton: BlockType;`
 
@@ -5130,4 +5131,3 @@ Type: [*BlockType*](BlockType.md)
 Represents a yellow block of glazed terracotta within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
-

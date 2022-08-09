@@ -18,6 +18,8 @@
             href: Documents/PackagingASkinPack.md
           - name: Packaging a WorldTemplate
             href: Documents/PackagingAWorldTemplate.md
+          - name: Mash-up Pack Overview
+            href: Documents/MashupPackOverview.md
           - name: 'Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition'
             href: Documents/ConvertingTexturePacks.md
           - name: Preparing Raw Text for Localization
@@ -174,12 +176,6 @@
             href: Reference/Content/addonsreference/index.yml
           - name: Addon Content
             href: Reference/Content/AddonsReference/Examples/TOC.yml
-        - name: Animation JSON
-          items:
-          - name: Animation Documentation Homepage
-            href: Reference/Content/animationsreference/index.yml
-          - name: Animation References
-            href: Reference/Content/animationsreference/Examples/TOC.yml
         - name: Biomes
           href: Reference/Content/biomereference/Examples/BiomeOverview.md
         - name: Block JSON
@@ -192,6 +188,8 @@
             href: Reference/Content/blockreference/Examples/BlockTriggers/TOC.yml
           - name: Block Event Responses
             href: Reference/Content/blockreference/Examples/BlockEvents/TOC.yml
+          - name: Block Properties and Descriptions
+            href: Reference/Content/BlockReference/Examples/Definitions/BlockDefinitionProperties.md
         - name: Entity JSON
           items:
           - name: Entity Documentation Homepage
@@ -232,16 +230,6 @@
             href: Reference/Content/ItemReference/Examples/ItemDefinition.md
           - name: Item Components
             href: Reference/Content/itemreference/Examples/ItemComponents/TOC.yml
-        - name: Particle JSON
-          items:
-          - name: Particle Documentation Homepage
-            href: Reference/Content/particlesreference/index.yml
-          - name: Introduction to Particles
-            href: Reference/Content/ParticlesReference/ParticlesIntroduction.md
-          - name: Particle Components
-            href: Reference/Content/ParticlesReference/ParticleComponents/TOC.yml
-          - name: Particle Examples
-            href: Reference/Content/ParticlesReference/Examples/TOC.yml
         - name: Recipe JSON
           items:
           - name: Recipe Documentation Homepage
@@ -252,8 +240,26 @@
           items:
           - name: Schema Documentation Homepage
             href: Reference/Content/schemasreference/index.yml
-          - name: Schema List
+          - name: Schemas List
             href: Reference/Content/schemasreference/SchemasList.md
+          - name: actor_animation
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_actor_animation_1.8.0.md
+          - name: actor_animation_controller
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_actor_animation_controller_1.10.0.md
+          - name: block_reference
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_block_reference_1.10.0.md
+          - name: chance_information
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_chance_information_1.14.0.md
+          - name: geometry:1.8.0
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.8.0.md
+          - name: geometry:1.12.0
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.12.0.md
+          - name: geometry:1.14.0
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.14.0.md
+          - name: geometry:1.16.0
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.16.0.md
+          - name: persona_actor_animation
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_persona_actor_animation_1.8.0.md
         - name: Volume JSON
           items:
           - name: Volume Documentation Homepage
@@ -262,32 +268,82 @@
             href: Reference/Content/volumereference/Examples/VolumeComponents/TOC.yml
           - name: Volume Definitions
             href: Reference/Content/volumereference/Examples/VolumeDefinitions/VolumeDefinitionProperties.md
-        - name: Texture Set JSON
-          items:
-          - name: Introduction to Texture Sets
-            href: Reference/Content/texturesetsreference/texturesetsconcepts/texturesetsintroduction.md
         - name: Spawn Rules
           items: 
           - name: Data-Driven Spawning Rules
             href: Reference/Content/entityreference/Examples/ClientEntityDocumentation/DataDrivenSpawning.md
+          - name: Biome Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/biome_filter.md
           - name: Brightness Filter
             href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/brightness_filter.md
+          - name: Delay Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/delay_filter.md
           - name: Density Limit
             href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/density_limit.md
+          - name: Distance Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/distance_filter.md
           - name: Difficulty Filter
             href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/difficulty_filter.md
           - name: Entity Types
             href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/entity_types.md
+          - name: Height Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/height_filter.md
           - name: Herd
             href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/herd.md
+          - name: Mob Event Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/mob_event_filter.md
           - name: Operator
             href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/operator.md
+          - name: Permute Type
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/permute_type.md
+          - name: Player In Village Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/player_in_village_filter.md
+          - name: Spawns Lava
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/spawns_lava.md
+          - name: Spawns on Block Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/spawns_on_block_filter.md
+          - name: Spawns on Block Prevented Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/spawns_on_block_prevented_filter.md
+          - name: Spawns On Surface
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/spawns_on_surface.md
+          - name: Spawns Lava
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/spawns_lava.md
+          - name: Spawns Underground
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/spawns_underground.md
+          - name: Spawns Underwater
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/spawns_underwater.md
           - name: Weight
             href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/weight.md
+          - name: World Age Filter
+            href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/world_age_filter.md
       - name: Resource Pack
         items:
         - name: Client Entity JSON
           href: Reference/Content/entityreference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md
+        - name: Animation JSON
+          items:
+          - name: Animation Documentation Homepage
+            href: Reference/Content/animationsreference/index.yml
+          - name: Animation References
+            href: Reference/Content/animationsreference/Examples/TOC.yml
+        - name: Fog JSON
+          items:
+          - name: Introduction to Fogs
+            href: Reference/Content/fogsreference/Examples/FogsIntroduction.md
+        - name: Particle JSON
+          items:
+          - name: Particle Documentation Homepage
+            href: Reference/Content/particlesreference/index.yml
+          - name: Introduction to Particles
+            href: Reference/Content/ParticlesReference/ParticlesIntroduction.md
+          - name: Particle Components
+            href: Reference/Content/ParticlesReference/ParticleComponents/TOC.yml
+          - name: Particle Examples
+            href: Reference/Content/ParticlesReference/Examples/TOC.yml
+        - name: Texture Set JSON
+          items:
+          - name: Introduction to Texture Sets
+            href: Reference/Content/texturesetsreference/texturesetsconcepts/texturesetsintroduction.md
       - name: Molang Documentation
         items:
           - name: Molang Documentation Homepage

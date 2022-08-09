@@ -17,6 +17,7 @@ ms.prod: gaming
 | duration| 30.000000 | Decimal | The duration in seconds that the celebration lasts for. |
 | jump_interval| [1, 3.5] | Range [a, b]| Minimum and maximum time between jumping (positive, in seconds). |
 | on_celebration_end_event| | Trigger | The event to trigger when the goal's duration expires. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | sound_interval| [2, 7] | Range [a, b] | Minimum and maximum time between sound events (positive, in seconds). |
 
 ## Example

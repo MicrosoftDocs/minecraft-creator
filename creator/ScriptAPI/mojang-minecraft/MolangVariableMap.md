@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -18,54 +18,57 @@ Contains a set of additional variable values for further defining how rendering 
 - [setColorRGBA](#setcolorrgba)
 - [setSpeedAndDirection](#setspeedanddirection)
 - [setVector3](#setvector3)
-  
+
 ### **constructor**
 `
 new MolangVariableMap()
 `
 
-
 #### **Returns** [*MolangVariableMap*](MolangVariableMap.md)
+
 ### **setColorRGB**
 `
 setColorRGB(variableName: string, color: Color): MolangVariableMap
 `
-
 Sets a Molang rendering/animation variable with the value of a Red/Green/Blue color.
+
 #### **Parameters**
 - **variableName**: *string*
 - **color**: [*Color*](Color.md)
 
 #### **Returns** [*MolangVariableMap*](MolangVariableMap.md)
+
 ### **setColorRGBA**
 `
 setColorRGBA(variableName: string, color: Color): MolangVariableMap
 `
-
 Sets a Molang rendering/animation variable with the value of a Red/Green/Blue color + Alpha (transparency) value.
+
 #### **Parameters**
 - **variableName**: *string*
 - **color**: [*Color*](Color.md)
 
 #### **Returns** [*MolangVariableMap*](MolangVariableMap.md)
+
 ### **setSpeedAndDirection**
 `
 setSpeedAndDirection(variableName: string, speed: number, direction: Vector): MolangVariableMap
 `
-
 Sets the speed and direction for a Molang (rendering and animation) variable.
+
 #### **Parameters**
 - **variableName**: *string*
 - **speed**: *number*
 - **direction**: [*Vector*](Vector.md)
 
 #### **Returns** [*MolangVariableMap*](MolangVariableMap.md)
+
 ### **setVector3**
 `
 setVector3(variableName: string, vector: Vector): MolangVariableMap
 `
-
 Sets a vector value for a Molang (rendering and animation) variable.
+
 #### **Parameters**
 - **variableName**: *string*
 - **vector**: [*Vector*](Vector.md)

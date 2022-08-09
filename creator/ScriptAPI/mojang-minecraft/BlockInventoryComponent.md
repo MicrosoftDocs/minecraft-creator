@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,6 +16,7 @@ description: Contents of the mojang-minecraft.BlockInventoryComponent class.
 Represents the inventory of a block in the world. Used with blocks like chests.
 
 ## Properties
+
 ### **container**
 `read-only container: BlockInventoryComponentContainer;`
 
@@ -30,6 +31,12 @@ Coordinates of the specified block.
 
 Type: [*BlockLocation*](BlockLocation.md)
 
+## Constants
+
+### **id**
+`static read-only id = "inventory";`
+
+Type: *string*
 
 #### **Examples**
 ##### *place_items_in_chest.js*

@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-gametest.Tags class.
 These well-known tags can be used to classify different tests into suites to run.
 
 ## Constants
+
 ### **suiteAll**
 `static read-only suiteAll = "suite:all";`
 
@@ -40,4 +41,3 @@ Type: *string*
 Indicates that the tagged test should be a part of a suite of disabled tests.
 
 Type: *string*
-

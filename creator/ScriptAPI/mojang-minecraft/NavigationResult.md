@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.NavigationResult class.
 Contains data resulting from a navigation operation, including whether the navigation is possible and the path of navigation.
 
 ## Properties
+
 ### **isFullPath**
 `read-only isFullPath: boolean;`
 
@@ -26,4 +27,3 @@ Type: *boolean*
 A set of block locations that comprise the navigation route.
 
 Type: [*BlockLocation*](BlockLocation.md)[]
-

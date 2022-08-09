@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,23 +15,24 @@ Manages callbacks that are connected to when an explosion occurs.
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
-  
+
 ### **subscribe**
 `
 subscribe(callback: (arg: ExplosionEvent) => void): (arg: ExplosionEvent) => void
 `
-
 Adds a callback that will be called when an explosion occurs.
+
 #### **Parameters**
 - **callback**: (arg: [*ExplosionEvent*](ExplosionEvent.md)) => *void*
 
 #### **Returns** (arg: [*ExplosionEvent*](ExplosionEvent.md)) => *void*
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ExplosionEvent) => void): void
 `
-
 Removes a callback from being called when an explosion occurs.
+
 #### **Parameters**
 - **callback**: (arg: [*ExplosionEvent*](ExplosionEvent.md)) => *void*
 > [!WARNING]

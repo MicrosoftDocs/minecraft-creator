@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.EntityEventOptions class.
 Contains optional parameters for registering an entity event.
 
 ## Properties
+
 ### **entities**
 `entities: Entity[];`
 
@@ -27,14 +28,12 @@ If this value is set, this event will only fire if the impacted entities' type m
 
 Type: *string*[]
 
-
 ## Methods
 - [constructor](#constructor)
-  
+
 ### **constructor**
 `
 new EntityEventOptions()
 `
-
 
 #### **Returns** [*EntityEventOptions*](EntityEventOptions.md)

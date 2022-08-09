@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -43,9 +43,15 @@ form.show(players[0]).then((response) => {
 {
     // mojang-minecraft-ui
     "uuid": "2bd50a27-ab5f-4f40-a596-3641627c635e",
-    "version": "0.1.0"
+    "version": "1.0.0-beta"
 }
 ```
+
+## Available Versions
+- 1.0.0-beta
+
+## Enumerations
+- [FormCancelationReason](FormCancelationReason.md)
 
 ## Classes
 - [ActionFormData](ActionFormData.md)

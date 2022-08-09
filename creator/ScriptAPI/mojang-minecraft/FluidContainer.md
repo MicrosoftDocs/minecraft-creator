@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.FluidContainer class.
 Represents constants related to fluid containers.
 
 ## Constants
+
 ### **maxFillLevel**
 `static read-only maxFillLevel = 6;`
 
@@ -26,4 +27,3 @@ Type: *number*
 Constant that represents the minimum fill level of a fluid container.
 
 Type: *number*
-

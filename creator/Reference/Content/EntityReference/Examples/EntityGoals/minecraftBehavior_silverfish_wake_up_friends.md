@@ -13,6 +13,12 @@ ms.prod: gaming
 > This behavior can only be used by the `silverfish` entity type.
 > This behavior requires `minecraft:behavior.silverfish_merge_with_stone` to be set.
 
+## Parameters
+
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+
 ## Example
 
 ```json

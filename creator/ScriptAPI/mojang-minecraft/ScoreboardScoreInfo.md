@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.ScoreboardScoreInfo class.
 Contains a pair of a scoreboard participant and its respective score.
 
 ## Properties
+
 ### **participant**
 `read-only participant: ScoreboardIdentity;`
 
@@ -26,4 +27,3 @@ Type: [*ScoreboardIdentity*](ScoreboardIdentity.md)
 Score value of the identity for this objective.
 
 Type: *number*
-

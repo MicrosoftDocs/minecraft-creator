@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.BeforeChatEvent class.
 An event that fires as players enter chat messages.
 
 ## Properties
+
 ### **cancel**
 `cancel: boolean;`
 
@@ -47,4 +48,3 @@ Type: *boolean*
 List of players that will receive this message.
 
 Type: [*Player*](Player.md)[]
-

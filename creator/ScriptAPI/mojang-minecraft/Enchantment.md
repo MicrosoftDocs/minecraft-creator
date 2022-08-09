@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.Enchantment class.
 This class represents a specific leveled enchantment that is applied to an item.
 
 ## Properties
+
 ### **level**
 `level: number;`
 
@@ -27,10 +28,9 @@ The enchantment type of this instance.
 
 Type: [*EnchantmentType*](EnchantmentType.md)
 
-
 ## Methods
 - [constructor](#constructor)
-  
+
 ### **constructor**
 `
 new Enchantment(enchantmentType: EnchantmentType, level?: number)

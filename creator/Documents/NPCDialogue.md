@@ -207,6 +207,24 @@ To use the `/dialogue` command, you must target an NPC. This will act as the NPC
 
 The NPC you want to trigger the dialog from must exist inside the world.
 
+#### Tagging
+
+Tags are an efficient way to target NPCs that can be useful for pinpointing which NPC you want to work with. 
+
+Use the `/tag` command to target an NPC in a scene.
+
+```json
+/tag <entity: target> <add or remove> <name: string>
+```
+
+`/tag`: The initial command.
+
+`<entity: target>` The NPC you're targeting.
+
+`<add or remove>` To add or remove the tag.
+
+`<name: string>` The name given to the NPC.
+
 ### Targeting Players
 
 When using the `/dialogue` command, there will be times when you will need to target players as well. To target players, use player selectors such as @a (all players) or @p (nearest player). Those will typically work well for a single-player experience but if you wish to have per-player scene changes, you will need to use a special target type called **@initiator** (the player interacting with the NPC).
@@ -247,7 +265,7 @@ This is useful for times where a player changing an NPCs dialogue could result i
             {
                 "scene_tag":"ducky_intro",
                 "npc_name":"Ducky",
-                "text":"Hello new friend",
+                "text":"Hello, new friend!",
                 "on_open_commands":[
                     "/clear @p"
                 ],
@@ -277,6 +295,11 @@ This is useful for times where a player changing an NPCs dialogue could result i
 ### Run the Scene
 
 1. Change the game mode to Survival in Settings.
-2. Run the following command: `/dialogue open @e[type=NPC] @p ducky_intro`.
+1. Run the dialogue command while targeting the NPC.
+   - You can use the following command: `/dialogue open @e[type=NPC, r=2] @p ducky_intro`.
+     - This command opens the dialogue, calls an entity with type NPC in a 2 block radius, targets the player, and then runs the `ducky_intro` file.
+   - Or you can tag the npc with `/tag @e[type=npc] add dusty` and then run the dialogue command with `/dialogue open @e[tag=dusty] @p ducky_intro`.
+
+See more on [target selectors in the Introduction to Commands](/minecraft/creator/documents/commandsintroduction#target-selectors).
 
 ![NPC Dialogue Outcome](Media\NPCs\NPCDialogueOutcome.PNG)

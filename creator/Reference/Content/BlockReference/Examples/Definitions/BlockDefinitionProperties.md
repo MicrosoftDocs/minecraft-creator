@@ -27,12 +27,12 @@ These properties are part of the Block Definition and Block Properties that are 
         "flame_odds": 50,
         "burn_odds": 0
 	      },
-      "minecraft:block_light_emission": 1.0
+      "minecraft:light_emission": 1
     }
   }
 }
-```
 
+```
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |format_version|*not set* | String| Specifies the version of the game this entity was made in. If the version is lower than the current version, any changes made to the entity in the vanilla version will be applied to it.|

@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,13 +13,13 @@ description: Contents of the mojang-minecraft.Dimension class.
 A class that represents a particular dimension (e.g., The End) within a world.
 
 ## Properties
+
 ### **id**
 `read-only id: string;`
 
 Identifier of the dimension.
 
 Type: *string*
-
 
 ## Methods
 - [createExplosion](#createexplosion)
@@ -29,19 +29,18 @@ Type: *string*
 - [getEntitiesAtBlockLocation](#getentitiesatblocklocation)
 - [getEntitiesFromRay](#getentitiesfromray)
 - [getPlayers](#getplayers)
-- [isEmpty](#isempty)
 - [runCommand](#runcommand)
 - [runCommandAsync](#runcommandasync)
 - [spawnEntity](#spawnentity)
 - [spawnItem](#spawnitem)
 - [spawnParticle](#spawnparticle)
-  
+
 ### **createExplosion**
 `
 createExplosion(location: Location, radius: number, explosionOptions: ExplosionOptions): void
 `
-
 Creates an explosion at the specified location.
+
 #### **Parameters**
 - **location**: [*Location*](Location.md)
   
@@ -85,24 +84,28 @@ Creates an explosion at the specified location.
   );
   overworld.createExplosion(explodeNoBlocksLoc, 15, explosionOptions);
 ```
+
 ### **getBlock**
 `
 getBlock(location: BlockLocation): Block
 `
-
 Returns a block instance at the given location. This method was introduced as of version 1.17.10.21.
+
 #### **Parameters**
 - **location**: [*BlockLocation*](BlockLocation.md)
   
   The location at which to return a block.
 
 #### **Returns** [*Block*](Block.md) - Block at the specified location.
+> [!WARNING]
+> This function can throw errors.
+
 ### **getBlockFromRay**
 `
 getBlockFromRay(location: Location, direction: Vector, options?: BlockRaycastOptions): Block
 `
-
 Gets the first block that intersects with a vector emanating from a location.
+
 #### **Parameters**
 - **location**: [*Location*](Location.md)
 - **direction**: [*Vector*](Vector.md)
@@ -113,12 +116,13 @@ Gets the first block that intersects with a vector emanating from a location.
 #### **Returns** [*Block*](Block.md)
 > [!WARNING]
 > This function can throw errors.
+
 ### **getEntities**
 `
 getEntities(getEntities?: EntityQueryOptions): EntityIterator
 `
-
 Returns a set of entities based on a set of conditions defined via the EntityQueryOptions set of filter criteria.
+
 #### **Parameters**
 - **getEntities**?: [*EntityQueryOptions*](EntityQueryOptions.md) = `null`
 
@@ -142,24 +146,26 @@ Returns a set of entities based on a set of conditions defined via the EntityQue
     }
   }
 ```
+
 ### **getEntitiesAtBlockLocation**
 `
 getEntitiesAtBlockLocation(location: BlockLocation): Entity[]
 `
-
 Returns a set of entities at a particular location.
+
 #### **Parameters**
 - **location**: [*BlockLocation*](BlockLocation.md)
   
   The location at which to return entities.
 
 #### **Returns** [*Entity*](Entity.md)[] - Zero or more entities at the specified location.
+
 ### **getEntitiesFromRay**
 `
 getEntitiesFromRay(location: Location, direction: Vector, options?: EntityRaycastOptions): Entity[]
 `
-
 Gets entities that intersect with a specified vector emanating from a location.
+
 #### **Parameters**
 - **location**: [*Location*](Location.md)
 - **direction**: [*Vector*](Vector.md)
@@ -170,36 +176,26 @@ Gets entities that intersect with a specified vector emanating from a location.
 #### **Returns** [*Entity*](Entity.md)[]
 > [!WARNING]
 > This function can throw errors.
+
 ### **getPlayers**
 `
 getPlayers(getPlayers?: EntityQueryOptions): PlayerIterator
 `
-
 Returns a set of players based on a set of conditions defined via the EntityQueryOptions set of filter criteria.
+
 #### **Parameters**
 - **getPlayers**?: [*EntityQueryOptions*](EntityQueryOptions.md) = `null`
 
 #### **Returns** [*PlayerIterator*](PlayerIterator.md) - An entity iterator that can be used to loop over the returned players.
 > [!WARNING]
 > This function can throw errors.
-### **isEmpty**
-`
-isEmpty(location: BlockLocation): boolean
-`
 
-Tests whether a particular location contains an Air (empty) block.
-#### **Parameters**
-- **location**: [*BlockLocation*](BlockLocation.md)
-  
-  The location at which to check for emptiness
-
-#### **Returns** *boolean* - True if the block at the location is air (empty)
 ### **runCommand**
 `
 runCommand(commandString: string): any
 `
-
 Runs a particular command from the context of the broader dimension.
+
 #### **Parameters**
 - **commandString**: *string*
   
@@ -215,12 +211,13 @@ Runs a particular command from the context of the broader dimension.
 world.getDimension("overworld").runCommand("say You got a new high score!");
 world.getDimension("overworld").runCommand("scoreboard players set @p score 10");
 ```
+
 ### **runCommandAsync**
 `
 runCommandAsync(commandString: string): Promise<CommandResult>
 `
-
 Runs a particular command asynchronously from the context of the broader dimension. Where possible - and especially for long-running operations - you should use runCommandAsync over runCommand.
+
 #### **Parameters**
 - **commandString**: *string*
   
@@ -229,12 +226,13 @@ Runs a particular command asynchronously from the context of the broader dimensi
 #### **Returns** Promise&lt;[*CommandResult*](CommandResult.md)&gt; - For commands that return data, returns a CommandResult with an indicator of command results.
 > [!WARNING]
 > This function can throw errors.
+
 ### **spawnEntity**
 `
 spawnEntity(identifier: string, location: BlockLocation | Location): Entity
 `
-
 Creates a new entity (e.g., a mob) at the specified location.
+
 #### **Parameters**
 - **identifier**: *string*
   
@@ -280,12 +278,13 @@ Creates a new entity (e.g., a mob) at the specified location.
     }
   });
 ```
+
 ### **spawnItem**
 `
 spawnItem(item: ItemStack, location: BlockLocation | Location): Entity
 `
-
 Creates a new item stack as an entity at the specified location.
+
 #### **Parameters**
 - **item**: [*ItemStack*](ItemStack.md)
 - **location**: [*BlockLocation*](BlockLocation.md) | [*Location*](Location.md)
@@ -315,12 +314,13 @@ Creates a new item stack as an entity at the specified location.
   overworld.spawnItem(featherItem, targetLocation);
   log("New feather created!");
 ```
+
 ### **spawnParticle**
 `
 spawnParticle(effectName: string, location: Location, molangVariables: MolangVariableMap): void
 `
-
 Creates a new particle emitter at a specified location in the world.
+
 #### **Parameters**
 - **effectName**: *string*
   

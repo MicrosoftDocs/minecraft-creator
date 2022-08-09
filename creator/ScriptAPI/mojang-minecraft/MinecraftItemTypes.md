@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.MinecraftItemTypes class.
 Contains definitions of standard Minecraft and Minecraft Education Edition block types.
 
 ## Constants
+
 ### **acaciaBoat**
 `static read-only acaciaBoat: ItemType;`
 
@@ -7053,4 +7054,3 @@ Type: [*ItemType*](ItemType.md)
 `static read-only zombieVillagerSpawnEgg: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
-

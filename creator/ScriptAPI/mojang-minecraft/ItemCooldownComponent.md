@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.ItemCooldownComponent class.
 When present on an item, this item has a cooldown effect when used by entities.
 
 ## Properties
+
 ### **cooldownCategory**
 `read-only cooldownCategory: string;`
 
@@ -27,24 +28,25 @@ Amount of time, in ticks, that remain for this item cooldown.
 
 Type: *number*
 
-### **id**
-`read-only id: string;`
-
-Identifier of this component. Should always be 'minecraft:cooldown'.
-
-Type: *string*
-
-
 ## Methods
 - [startCooldown](#startcooldown)
-  
+
 ### **startCooldown**
 `
 startCooldown(player: Player): void
 `
-
 Starts a new cooldown period for this item.
+
 #### **Parameters**
 - **player**: [*Player*](Player.md)
 > [!WARNING]
 > This function can throw errors.
+
+## Constants
+
+### **id**
+`static read-only id = "minecraft:cooldown";`
+
+Identifier of this component. Should always be 'minecraft:cooldown'.
+
+Type: *string*

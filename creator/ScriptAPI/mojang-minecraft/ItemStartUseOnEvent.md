@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.ItemStartUseOnEvent class.
 Contains information related to an item being used on a block.
 
 ## Properties
+
 ### **blockFace**
 `read-only blockFace: Direction;`
 
@@ -47,4 +48,3 @@ Type: [*ItemStack*](ItemStack.md)
 Returns the source entity that triggered this item event.
 
 Type: [*Entity*](Entity.md)
-

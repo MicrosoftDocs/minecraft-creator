@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -11,6 +11,7 @@ description: Contents of the mojang-minecraft.MinecraftEntityTypes class.
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
 ## Constants
+
 ### **agent**
 `static read-only agent: EntityType;`
 
@@ -38,6 +39,11 @@ Type: [*EntityType*](EntityType.md)
 
 ### **axolotl**
 `static read-only axolotl: EntityType;`
+
+Type: [*EntityType*](EntityType.md)
+
+### **balloon**
+`static read-only balloon: EntityType;`
 
 Type: [*EntityType*](EntityType.md)
 
@@ -233,6 +239,11 @@ Type: [*EntityType*](EntityType.md)
 
 ### **husk**
 `static read-only husk: EntityType;`
+
+Type: [*EntityType*](EntityType.md)
+
+### **iceBomb**
+`static read-only iceBomb: EntityType;`
 
 Type: [*EntityType*](EntityType.md)
 
@@ -570,4 +581,3 @@ Type: [*EntityType*](EntityType.md)
 `static read-only zombieVillagerV2: EntityType;`
 
 Type: [*EntityType*](EntityType.md)
-

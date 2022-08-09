@@ -9,6 +9,8 @@ ms.prod: gaming
 
 This component allows the players to specify the amount of mobs to spawn in certain locations.
 
+## Parameters
+
 |Name|Default Value |Type |Description |
 |:-----------|:-----------|:-----------|:-----------|
 |surface| *not set* |Integer | This is the maximum number of mobs of this type spawnable on the surface |

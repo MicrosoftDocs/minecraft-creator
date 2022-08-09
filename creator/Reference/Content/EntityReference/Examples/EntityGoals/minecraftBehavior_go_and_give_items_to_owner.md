@@ -14,6 +14,7 @@ ms.prod: gaming
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
 | on_item_throw| | Trigger| Event(s) to run when this mob throws items. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | reach_mob_distance| 3.000000| Decimal| Sets the desired distance to be reached before giving items to owner. |
 | run_speed| 1.000000| Decimal| Sets the entity's speed when running toward the owner. |
 | throw_force| 0.200000| Decimal| Sets the throw force. |

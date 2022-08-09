@@ -9,11 +9,17 @@ ms.prod: gaming
 
 `minecraft:behavior.float` allows an entity to float on water.
 
+## Parameters
+
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+
 ## Example
 
 ```json
 "minecraft:behavior.float":{
-    "priority": 0,
+    "priority": 0
 }
 ```
 
@@ -21,7 +27,11 @@ ms.prod: gaming
 
 ### creeper
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/creeper.json" range="161-163":::
+```json
+"minecraft:behavior.float": {
+    "priority": 0
+}
+```
 
 ## Vanilla entities using `minecraft:behavior.float`
 

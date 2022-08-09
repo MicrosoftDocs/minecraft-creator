@@ -9,6 +9,9 @@ ms.prod: gaming
 
 `minecraft:movement.jump` causes the mob to jump as it moves with a specified delay between jumps.
 
+> [!IMPORTANT]
+> In order to follow targets, this entity must have `minecraft:behavior.slime_attack`, otherwise the entity will jump in the direction it's looking in.
+
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |

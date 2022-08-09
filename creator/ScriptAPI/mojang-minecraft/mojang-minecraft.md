@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -17,14 +17,22 @@ Contains many types related to manipulating a Minecraft world, including entitie
 {
     // mojang-minecraft
     "uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
-    "version": "0.1.0"
+    "version": "1.0.0-beta"
 }
 ```
 
+## Available Versions
+- 1.0.0-beta
+
 ## Enumerations
 - [Direction](Direction.md)
+- [DisplaySlotId](DisplaySlotId.md)
+- [EntityDamageCause](EntityDamageCause.md)
+- [FluidType](FluidType.md)
 - [GameMode](GameMode.md)
+- [ObjectiveSortOrder](ObjectiveSortOrder.md)
 - [ScoreboardIdentityType](ScoreboardIdentityType.md)
+- [WatchdogTerminateReason](WatchdogTerminateReason.md)
 
 ## Classes
 - [BeforeChatEvent](BeforeChatEvent.md)
@@ -41,6 +49,8 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BeforeItemUseOnEventSignal](BeforeItemUseOnEventSignal.md)
 - [BeforePistonActivateEvent](BeforePistonActivateEvent.md)
 - [BeforePistonActivateEventSignal](BeforePistonActivateEventSignal.md)
+- [BeforeWatchdogTerminateEvent](BeforeWatchdogTerminateEvent.md)
+- [BeforeWatchdogTerminateEventSignal](BeforeWatchdogTerminateEventSignal.md)
 - [Block](Block.md)
 - [BlockAreaSize](BlockAreaSize.md)
 - [BlockBreakEvent](BlockBreakEvent.md)
@@ -62,6 +72,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BlockProperties](BlockProperties.md)
 - [BlockRaycastOptions](BlockRaycastOptions.md)
 - [BlockRecordPlayerComponent](BlockRecordPlayerComponent.md)
+- [BlockSignComponent](BlockSignComponent.md)
 - [BlockSnowContainerComponent](BlockSnowContainerComponent.md)
 - [BlockType](BlockType.md)
 - [BlockWaterContainerComponent](BlockWaterContainerComponent.md)
@@ -77,6 +88,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [DataDrivenEntityTriggerEventSignal](DataDrivenEntityTriggerEventSignal.md)
 - [DefinitionModifier](DefinitionModifier.md)
 - [Dimension](Dimension.md)
+- [DirectionBlockProperty](DirectionBlockProperty.md)
 - [DynamicPropertiesDefinition](DynamicPropertiesDefinition.md)
 - [Effect](Effect.md)
 - [EffectAddEvent](EffectAddEvent.md)
@@ -148,7 +160,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntityNavigationHoverComponent](EntityNavigationHoverComponent.md)
 - [EntityNavigationWalkComponent](EntityNavigationWalkComponent.md)
 - [EntityPushThroughComponent](EntityPushThroughComponent.md)
-- [EntityQueryOptions](EntityQueryOptions.md)
 - [EntityQueryScoreOptions](EntityQueryScoreOptions.md)
 - [EntityRaycastOptions](EntityRaycastOptions.md)
 - [EntityRideableComponent](EntityRideableComponent.md)
@@ -227,14 +238,16 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [Scoreboard](Scoreboard.md)
 - [ScoreboardIdentity](ScoreboardIdentity.md)
 - [ScoreboardObjective](ScoreboardObjective.md)
+- [ScoreboardObjectiveDisplayOptions](ScoreboardObjectiveDisplayOptions.md)
 - [ScoreboardScoreInfo](ScoreboardScoreInfo.md)
 - [ScreenDisplay](ScreenDisplay.md)
 - [Seat](Seat.md)
 - [SoundOptions](SoundOptions.md)
 - [StringBlockProperty](StringBlockProperty.md)
+- [System](System.md)
+- [SystemEvents](SystemEvents.md)
 - [TickEvent](TickEvent.md)
 - [TickEventSignal](TickEventSignal.md)
-- [TitleDisplayOptions](TitleDisplayOptions.md)
 - [Trigger](Trigger.md)
 - [Vector](Vector.md)
 - [WeatherChangeEvent](WeatherChangeEvent.md)
@@ -244,7 +257,13 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [WorldInitializeEventSignal](WorldInitializeEventSignal.md)
 - [XYRotation](XYRotation.md)
 
+## Interfaces
+- [EntityQueryOptions](EntityQueryOptions.md)
+- [IRawMessage](IRawMessage.md)
+- [IVec3](IVec3.md)
+
 ## Constants
+
 ### **TicksPerSecond**
 `static read-only TicksPerSecond = 20;`
 
@@ -252,12 +271,18 @@ How many times the server ticks per second of real time.
 
 Type: *number*
 
-
 ## Objects
+  
+### **system**
+`static read-only system: System;`
+
+A class that provides system-level events and functions.
+
+Type: [*System*](System.md)
+  
 ### **world**
 `static read-only world: World;`
 
 A class that wraps the state of a world - a set of dimensions and the environment of Minecraft.
 
 Type: [*World*](World.md)
-

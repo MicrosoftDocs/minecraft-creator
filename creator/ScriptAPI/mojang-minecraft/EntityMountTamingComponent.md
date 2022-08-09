@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,27 +15,27 @@ description: Contents of the mojang-minecraft.EntityMountTamingComponent class.
 
 Contains options for taming a rideable entity based on the entity that mounts it.
 
-## Properties
-### **id**
-`read-only id: string;`
-
-Identifier of this component. Should always be minecraft:mount_taming.
-
-Type: *string*
-
-
 ## Methods
 - [setTamed](#settamed)
-  
+
 ### **setTamed**
 `
 setTamed(showParticles: boolean): void
 `
-
 Sets this rideable entity as tamed.
+
 #### **Parameters**
 - **showParticles**: *boolean*
   
   Whether to show effect particles when this entity is tamed.
 > [!WARNING]
 > This function can throw errors.
+
+## Constants
+
+### **id**
+`static read-only id = "minecraft:tamemount";`
+
+Identifier of this component. Should always be minecraft:mount_taming.
+
+Type: *string*

@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,24 +15,25 @@ Provides methods that should be used within the World Initialize event to regist
 ## Methods
 - [registerEntityTypeDynamicProperties](#registerentitytypedynamicproperties)
 - [registerWorldDynamicProperties](#registerworlddynamicproperties)
-  
+
 ### **registerEntityTypeDynamicProperties**
 `
 registerEntityTypeDynamicProperties(propertiesDefinition: DynamicPropertiesDefinition, entityType: EntityType): void
 `
-
 Registers a dynamic property for a particular entity type (e.g., a minecraft:skeleton.).
+
 #### **Parameters**
 - **propertiesDefinition**: [*DynamicPropertiesDefinition*](DynamicPropertiesDefinition.md)
 - **entityType**: [*EntityType*](EntityType.md)
 > [!WARNING]
 > This function can throw errors.
+
 ### **registerWorldDynamicProperties**
 `
 registerWorldDynamicProperties(propertiesDefinition: DynamicPropertiesDefinition): void
 `
-
 Registers a globally available dynamic property for a world.
+
 #### **Parameters**
 - **propertiesDefinition**: [*DynamicPropertiesDefinition*](DynamicPropertiesDefinition.md)
 > [!WARNING]

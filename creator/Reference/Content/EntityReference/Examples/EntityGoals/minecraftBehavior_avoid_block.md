@@ -15,6 +15,7 @@ ms.prod: gaming
 |:-----------:|:-----------:|:-----------:|:-----------:|
 | avoid_block_sound| | String | The sound event to play when the mob is avoiding a block. |
 | on_escape| | Trigger| Escape trigger. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | search_height| 0 | Integer | Maximum distance to look for a block in y. |
 | search_range| 0 | Integer | Maximum distance to look for a block in xz. |
 | sound_interval| [3.0, 8.0] | Range [a, b] | The range of time in seconds to randomly wait before playing the sound again. |

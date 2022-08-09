@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,6 +16,7 @@ description: Contents of the mojang-minecraft.BlockWaterContainerComponent class
 Represents a fluid container block that currently contains water.
 
 ## Properties
+
 ### **customColor**
 `customColor: Color;`
 
@@ -37,17 +38,23 @@ Source location of the block.
 
 Type: [*BlockLocation*](BlockLocation.md)
 
-
 ## Methods
 - [addDye](#adddye)
-  
+
 ### **addDye**
 `
 addDye(itemType: ItemType): void
 `
-
 Adds an item and colors the water based on a dye item type.
+
 #### **Parameters**
 - **itemType**: [*ItemType*](ItemType.md)
 > [!WARNING]
 > This function can throw errors.
+
+## Constants
+
+### **id**
+`static read-only id = "waterContainer";`
+
+Type: *string*

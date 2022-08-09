@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.FeedItemEffect class.
 Represents an effect that is applied as a result of a food item being fed to an entity.
 
 ## Properties
+
 ### **amplifier**
 `read-only amplifier: number;`
 
@@ -40,4 +41,3 @@ Type: *number*
 Gets the identifier of the effect to apply. Example values include 'fire_resistance' or 'regeneration'.
 
 Type: *string*
-

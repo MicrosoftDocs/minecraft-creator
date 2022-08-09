@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-bbortree
 title: Create a Custom NPC
 ms.prod: gaming
 description: "A tutorial covering how to create a Non-Playable Character (NPC) within Minecraft: Bedrock Edition"
@@ -20,9 +20,17 @@ In this tutorial, you will learn the following:
 > - How to add commands to an NPC.
 > - How to add buttons to an NPC.
 
-## Create an NPC
+## Prequisites
 
-To create NPCs, make sure that you are playing in Creative mode with cheats enabled and that you have Operator permissions for your world. To interact with your custom NPCs, you will need to switch from Creative mode to Survival mode or Adventure mode.
+To create NPCs, create a world with the following settings:
+
+- Creative mode
+- Cheats enabled
+- Operator permissions
+
+To interact with your custom NPCs, you will need to switch from Creative mode to Survival mode or Adventure mode.
+
+## Create an NPC
 
 To create a custom NPC, follow these instructions:
 
@@ -62,6 +70,28 @@ To add commands to an NPC, follow these instructions:
 ![NPC Command Interface](Media\NPCs\LearningPortal_NPCEditorCommands.PNG)
 
 Your NPC will execute these commands in order whenever a player interacts with them and closes their dialog box. For a list of commands that your NPCs can execute, see [Commands](https://minecraft.fandom.com/wiki/Commands).
+
+### Advanced Command Settings
+
+There are settings to customize the way commands work with NPCs.
+
+#### Button Mode
+
+If Button Mode is toggled on, a text box appears where you can enter text that will appear on a button. This command will only run if the button is pressed.
+
+For example, we could use a combination of the command `/give @p gold_ingot` and a button labelled `Money?` When players click the `Money?` button, they receive one gold ingot into their inventory. 
+
+#### On Enter
+
+If On Enter is toggled, then the command will run when players initiate a conversation with the NPC.
+
+In this case, with On Enter toggled on and the command `/give @p gold_ingot`, players would receive one gold ingot in their inventory when the dialogue box opens on dialogue initiation with the NPC.
+
+#### On Exit
+
+If On Exit is toggled, then the command will trigger when the player ends and interaction and closes the NPC dialogue.
+
+In this case, with On Exit toggled on and the command `/give @p gold_ingot`, players would receive one gold ingot in their inventory when the dialogue box closes and the NPC interaction ends.
 
 ## Add buttons to an NPC
 

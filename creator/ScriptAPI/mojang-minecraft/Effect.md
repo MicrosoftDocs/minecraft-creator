@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.Effect class.
 Represents an effect - like poison - that has been added to an Entity.
 
 ## Properties
+
 ### **amplifier**
 `read-only amplifier: number;`
 
@@ -33,4 +34,3 @@ Type: *string*
 Gets the entire specified duration, in ticks, of this effect.
 
 Type: *number*
-

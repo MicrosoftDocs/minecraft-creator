@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.EntityDataDrivenTriggerEventOption
 Specifies additional filters that are used in registering a data driven trigger event for entities.
 
 ## Properties
+
 ### **entities**
 `entities: Entity[];`
 
@@ -34,14 +35,12 @@ If this value is set, this event will only fire if the impacted triggered event 
 
 Type: *string*[]
 
-
 ## Methods
 - [constructor](#constructor)
-  
+
 ### **constructor**
 `
 new EntityDataDrivenTriggerEventOptions()
 `
-
 
 #### **Returns** [*EntityDataDrivenTriggerEventOptions*](EntityDataDrivenTriggerEventOptions.md)

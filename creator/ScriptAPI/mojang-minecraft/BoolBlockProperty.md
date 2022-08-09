@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,6 +16,7 @@ description: Contents of the mojang-minecraft.BoolBlockProperty class.
 Contains the state of a boolean-based property for a [*mojang-minecraft.BlockPermutation*](../mojang-minecraft/BlockPermutation.md).
 
 ## Properties
+
 ### **name**
 `read-only name: string;`
 
@@ -39,4 +40,3 @@ Type: *boolean*
 
 > [!WARNING]
 > Setting this property can throw if the value passed is not valid for the property. Use [*mojang-minecraft.BoolBlockProperty.validValues*](../mojang-minecraft/BoolBlockProperty.md#validvalues) to check allowed values.
-

@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.EnchantmentType class.
 Contains information on a type of enchantment.
 
 ## Properties
+
 ### **id**
 `read-only id: string;`
 
@@ -26,4 +27,3 @@ Type: *string*
 The maximum level this type of enchantment can have.
 
 Type: *number*
-

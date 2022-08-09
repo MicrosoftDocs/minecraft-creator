@@ -11,17 +11,16 @@ ms.prod: gaming
 
 ## Parameters
 
-
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
 | elder_extra_magic_damage| 2| Integer| Amount of additional damage dealt from an elder guardian's magic attack. |
 | hard_mode_extra_magic_damage| 2| Integer| In hard difficulty, amount of additional damage dealt from a guardian's magic attack. |
 | magic_damage| 1| Integer| Amount of damage dealt from a guardian's magic attack. Magic attack damage is added to the guardian's base attack damage. |
 | min_distance| 3| Decimal| Guardian attack behavior stops if the target is closer than this distance (doesn't apply to elders). |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | sound_delay_time| 0.5| Decimal| Time (in seconds) to wait after starting an attack before playing the guardian attack sound. |
 | x_max_rotation| 90| Decimal| Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target. |
 | y_max_head_rotation| 90| Decimal| Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target. |
-
 
 ## Example
 
@@ -51,4 +50,3 @@ ms.prod: gaming
 
 - [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
 - [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
-

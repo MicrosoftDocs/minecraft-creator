@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.EnchantmentSlot class.
 This enum represents the item slot or type that an enchantment can be applied to.
 
 ## Constants
+
 ### **all**
 `static read-only all = -1;`
 
@@ -132,4 +133,3 @@ Type: *number*
 `static read-only sword = 16;`
 
 Type: *number*
-

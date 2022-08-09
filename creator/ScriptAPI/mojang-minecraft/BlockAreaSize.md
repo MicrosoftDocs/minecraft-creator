@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.BlockAreaSize class.
 Holds information for expressing the net size of a volume of blocks.
 
 ## Properties
+
 ### **x**
 `x: number;`
 
@@ -34,29 +35,29 @@ Z size (south to north) of this block area size.
 
 Type: *number*
 
-
 ## Methods
 - [constructor](#constructor)
 - [equals](#equals)
-  
+
 ### **constructor**
 `
 new BlockAreaSize(x: number, y: number, z: number)
 `
-
 Creates a new BlockAreaSize object.
+
 #### **Parameters**
 - **x**: *number*
 - **y**: *number*
 - **z**: *number*
 
 #### **Returns** [*BlockAreaSize*](BlockAreaSize.md)
+
 ### **equals**
 `
 equals(other: BlockAreaSize): boolean
 `
-
 Tests whether this block area size is equal to another BlockAreaSize object.
+
 #### **Parameters**
 - **other**: [*BlockAreaSize*](BlockAreaSize.md)
 

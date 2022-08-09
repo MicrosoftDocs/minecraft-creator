@@ -7,7 +7,10 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.slime_attack
 
-`minecraft:behavior.slime_attack` allows an entity to make a melee attack similar to the `slime` and `magma_cube`.
+`minecraft:behavior.slime_attack` enables mobs with `minecraft:movement.jump` to path towards their target like a `slime` or `magma_cube` does to attack.
+
+> [!IMPORTANT]
+> In order to attack, the entity must have a `runtime_identifier` set to `minecraft:slime` and a variant component with a value greater than 1. Otherwise it will still path towards a target but it will not cause damage.
 
 > [!IMPORTANT]
 > `minecraft:behavior.slime_attack` requires a target in order to work properly. Target can be determined by using one of the following behaviors:
@@ -24,6 +27,7 @@ ms.prod: gaming
 
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | set_persistent| false| Boolean| Allows the actor to be set to persist upon targeting a player |
 | speed_multiplier| 1| Decimal| During attack behavior, this multiplier modifies the entity's speed when moving toward the target. |
 | x_max_rotation| 10| Decimal| Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target. |

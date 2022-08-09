@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft-server-admin.ServerVariables class
 A collection of server variables defined in dedicated server configuration.
 
 ## Properties
+
 ### **names**
 `read-only names: string[];`
 
@@ -20,16 +21,15 @@ A list of available, configured server variables.
 
 Type: *string*[]
 
-
 ## Methods
 - [get](#get)
-  
+
 ### **get**
 `
 get(name: string): any
 `
-
 Returns the value of variable that has been configured in a dedicated server configuration JSON file.
+
 #### **Parameters**
 - **name**: *string*
 

@@ -13,11 +13,12 @@ ms.prod: gaming
 
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
-| cooldown_range| [3.0, 10.0]| Range [a, b]| Cooldown range between sniffs in seconds |
+| cooldown_range| [3.0, 10.0]| Range [a, b]| Cooldown range between sniffs in seconds. |
 | duration| 1.0| Decimal| Sniffing duration in seconds |
-| sniffing_radius| 5.0| Decimal| Mob detection radius |
-| suspicion_radius_horizontal| 3.0| Decimal| Mob suspicion horizontal radius. When a player is within this radius horizontally, the anger level towards that player is increased |
-| suspicion_radius_vertical| 3.0| Decimal| Mob suspicion vertical radius. When a player is within this radius vertically, the anger level towards that player is increased |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| sniffing_radius| 5.0| Decimal| Mob detection radius. |
+| suspicion_radius_horizontal| 3.0| Decimal| Mob suspicion horizontal radius. When a player is within this radius horizontally, the anger level towards that player is increased. |
+| suspicion_radius_vertical| 3.0| Decimal| Mob suspicion vertical radius. When a player is within this radius vertically, the anger level towards that player is increased. |
 
 ## Vanilla entities examples
 

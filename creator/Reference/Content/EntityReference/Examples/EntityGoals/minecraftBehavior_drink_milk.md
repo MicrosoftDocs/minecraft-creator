@@ -11,12 +11,11 @@ ms.prod: gaming
 
 ## Parameters
 
-
 | Name| Default Value| Type | Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
-| filters| *not set* | Minecraft Filter | Conditions that need to be met for the behavior to start. |
 | cooldown_seconds| 5.00| Decimal | Time (in seconds) that the goal is on cooldown before it can be used again. |
-
+| filters| *not set* | Minecraft Filter | Conditions that need to be met for the behavior to start. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 
 ## Example
 

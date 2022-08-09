@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,23 +15,24 @@ Manages callbacks that are run at the initialization of the scripting environmen
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
-  
+
 ### **subscribe**
 `
 subscribe(callback: (arg: WorldInitializeEvent) => void): (arg: WorldInitializeEvent) => void
 `
-
 Adds a callback that will be called when the scripting environment is initialized for a World.
+
 #### **Parameters**
 - **callback**: (arg: [*WorldInitializeEvent*](WorldInitializeEvent.md)) => *void*
 
 #### **Returns** (arg: [*WorldInitializeEvent*](WorldInitializeEvent.md)) => *void*
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: WorldInitializeEvent) => void): void
 `
-
 Removes a callback from being called the scripting environment is initialized for a World.
+
 #### **Parameters**
 - **callback**: (arg: [*WorldInitializeEvent*](WorldInitializeEvent.md)) => *void*
 > [!WARNING]

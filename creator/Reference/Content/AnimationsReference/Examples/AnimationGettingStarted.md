@@ -203,7 +203,7 @@ This example scales the bone "head":
     "0.5": {
       "pre": [1, 1, 1],
       "post": 2.0
-    }
+    },
     "1.0": [ 1.0 ]
   }
 }

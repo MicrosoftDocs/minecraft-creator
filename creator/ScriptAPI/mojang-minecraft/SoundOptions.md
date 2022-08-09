@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.SoundOptions class.
 Additional configuration options for the [*mojang-minecraft.Player.playSound*](../mojang-minecraft/Player.md#playsound)/[*mojang-minecraft.World.playSound*](../mojang-minecraft/World.md#playsound) method.
 
 ## Properties
+
 ### **location**
 `location: Location;`
 
@@ -34,15 +35,13 @@ Relative volume level of the sound.
 
 Type: *number*
 
-
 ## Methods
 - [constructor](#constructor)
-  
+
 ### **constructor**
 `
 new SoundOptions()
 `
-
 Creates a new instance of the SoundOptions object.
 
 #### **Returns** [*SoundOptions*](SoundOptions.md)

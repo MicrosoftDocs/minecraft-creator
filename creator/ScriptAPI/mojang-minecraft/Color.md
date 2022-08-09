@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.Color class.
 Represents a fully customizable color within Minecraft.
 
 ## Properties
+
 ### **alpha**
 `alpha: number;`
 
@@ -41,16 +42,15 @@ Determines a color's red component. Valid values are between 0 and 1.0.
 
 Type: *number*
 
-
 ## Methods
 - [constructor](#constructor)
-  
+
 ### **constructor**
 `
 new Color(red: number, green: number, blue: number, alpha: number)
 `
-
 Creates a new color using the specified color values.
+
 #### **Parameters**
 - **red**: *number*
 - **green**: *number*
