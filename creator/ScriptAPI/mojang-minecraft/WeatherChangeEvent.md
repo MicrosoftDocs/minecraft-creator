@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.WeatherChangeEvent class.
 Contains information related to changes in weather in the environment.
 
 ## Properties
+
 ### **dimension**
 `read-only dimension: string;`
 
@@ -33,4 +34,3 @@ Type: *boolean*
 Whether it is raining after the change in weather.
 
 Type: *boolean*
-

@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,12 +16,6 @@ description: Contents of the mojang-minecraft.EntityFrictionModifierComponent cl
 Defines how much friction affects this entity.
 
 ## Properties
-### **id**
-`read-only id: string;`
-
-Identifier of this component. Should always be minecraft:friction_modifier.
-
-Type: *string*
 
 ### **value**
 `value: number;`
@@ -30,3 +24,11 @@ The higher the number, the more the friction affects this entity. A value of 1.0
 
 Type: *number*
 
+## Constants
+
+### **id**
+`static read-only id = "minecraft:friction_modifier";`
+
+Identifier of this component. Should always be minecraft:friction_modifier.
+
+Type: *string*

@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -12,16 +12,17 @@ description: Contents of the mojang-minecraft.IBlockProperty class.
 
 ## Classes that extend IBlockProperty
 - [*BoolBlockProperty*](BoolBlockProperty.md)
+- [*DirectionBlockProperty*](DirectionBlockProperty.md)
 - [*IntBlockProperty*](IntBlockProperty.md)
 - [*StringBlockProperty*](StringBlockProperty.md)
 
 Contains an interface for defining the state of a property for a [*mojang-minecraft.BlockPermutation*](../mojang-minecraft/BlockPermutation.md).
 
 ## Properties
+
 ### **name**
 `read-only name: string;`
 
 The name of this property.
 
 Type: *string*
-

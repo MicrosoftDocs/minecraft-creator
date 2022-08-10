@@ -13,11 +13,12 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| goal_radius|0.5| Decimal|  Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot |
-| interval| 120| Integer|  A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal |
-| search_height| 1| Integer|  Height in blocks the mob will look for turtle eggs to move towards |
-| search_range| 0| Integer| The distance in blocks it will look for turtle eggs to move towards |
-| speed_multiplier| 1.0| Decimal|  Movement speed multiplier of the mob when using this AI Goal |
+| goal_radius|0.5| Decimal|  Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot. |
+| interval| 120| Integer|  A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| search_height| 1| Integer|  Height in blocks the mob will look for turtle eggs to move towards. |
+| search_range| 0| Integer| The distance in blocks it will look for turtle eggs to move towards. |
+| speed_multiplier| 1.0| Decimal|  Movement speed multiplier of the mob when using this AI Goal. |
 
 ## Example
 

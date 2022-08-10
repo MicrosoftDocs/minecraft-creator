@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.BeforeDataDrivenEntityTriggerEvent
 Contains information related to firing of a data driven entity event - for example, the minecraft:ageable_grow_up event on a chicken.
 
 ## Properties
+
 ### **cancel**
 `cancel: boolean;`
 
@@ -40,4 +41,3 @@ Type: *string*
 An updateable list of modifications to component state that are the effect of this triggered event.
 
 Type: [*DefinitionModifier*](DefinitionModifier.md)[]
-

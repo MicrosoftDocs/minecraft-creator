@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.XYRotation class.
 Represents a rotation structure with pitch and yaw components.
 
 ## Properties
+
 ### **x**
 `x: number;`
 
@@ -26,4 +27,3 @@ Type: *number*
 Pitch (up-and-down) element of this rotation.
 
 Type: *number*
-

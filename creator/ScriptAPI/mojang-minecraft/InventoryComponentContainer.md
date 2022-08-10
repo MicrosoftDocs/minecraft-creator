@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -19,6 +19,7 @@ description: Contents of the mojang-minecraft.InventoryComponentContainer class.
 Represents a container that can hold stacks of items. Used for entities like players, chest minecarts, llamas, and more.
 
 ## Properties
+
 ### **emptySlotsCount**
 `read-only emptySlotsCount: number;`
 
@@ -33,32 +34,32 @@ Represents the size of the container. For example, a standard single-block chest
 
 Type: *number*
 
-
 ## Methods
 - [addItem](#additem)
 - [getItem](#getitem)
 - [setItem](#setitem)
 - [swapItems](#swapitems)
 - [transferItem](#transferitem)
-  
+
 ### **addItem**
 `
 addItem(itemStack: ItemStack): void
 `
-
 Adds an item to the specified container. Items will be placed in the first available empty slot. (Use [*mojang-minecraft.InventoryComponentContainer.setItem*](../mojang-minecraft/InventoryComponentContainer.md#setitem) if you wish to set items in a particular slot.)
+
 #### **Parameters**
 - **itemStack**: [*ItemStack*](ItemStack.md)
   
   The stack of items to add.
 > [!WARNING]
 > This function can throw errors.
+
 ### **getItem**
 `
 getItem(slot: number): ItemStack
 `
-
 Gets the item stack for the set of items at the specified slot. If the slot is empty, returns undefined. This method does not change or clear the contents of the specified slot.
+
 #### **Parameters**
 - **slot**: *number*
   
@@ -75,12 +76,13 @@ const itemStack = rightChestContainer.getItem(0);
 test.assert(itemStack.id === "apple", "Expected apple");
 test.assert(itemStack.amount === 10, "Expected 10 apples");
 ```
+
 ### **setItem**
 `
 setItem(slot: number, itemStack: ItemStack): void
 `
-
 Sets an item stack within a particular slot.
+
 #### **Parameters**
 - **slot**: *number*
   
@@ -90,12 +92,13 @@ Sets an item stack within a particular slot.
   Stack of items to place within the specified slot.
 > [!WARNING]
 > This function can throw errors.
+
 ### **swapItems**
 `
 swapItems(slot: number, otherSlot: number, otherContainer: Container): boolean
 `
-
 Swaps items between two different slots within containers.
+
 #### **Parameters**
 - **slot**: *number*
   
@@ -116,12 +119,13 @@ Swaps items between two different slots within containers.
 ```javascript
 rightChestContainer.swapItems(1, 0, leftChestContainer); // swap the cake and emerald
 ```
+
 ### **transferItem**
 `
 transferItem(fromSlot: number, toSlot: number, toContainer: Container): boolean
 `
-
 Moves an item from one slot to another, potentially across containers.
+
 #### **Parameters**
 - **fromSlot**: *number*
 - **toSlot**: *number*

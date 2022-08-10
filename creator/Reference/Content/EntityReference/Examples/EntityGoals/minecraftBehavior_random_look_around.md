@@ -13,12 +13,13 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|look_time| [2, 4]| Range [a, b]|  The range of time in seconds the mob will stay looking in a random direction before looking elsewhere. |
-|look_distance|8.0|Float|The distance in blocks from which the entity will look at.|
-|probability|0.2|Float|The probability of looking at the target. A value of 1.00 is 100%.|
-|look_distance|8.0|Float|The distance in blocks from which the entity will look at.|
-|angle_of_view_vertical|360|Integer|The angle in degrees that the mob can see in the X-axis (left-right).|
 |angle_of_view_horizontal|360|Integer|The angle in degrees that the mob can see in the Y-axis (up-down).|
+|angle_of_view_vertical|360|Integer|The angle in degrees that the mob can see in the X-axis (left-right).|
+|look_distance|8.0|Float|The distance in blocks from which the entity will look at.|
+|look_distance|8.0|Float|The distance in blocks from which the entity will look at.|
+|look_time| [2, 4]| Range [a, b]|  The range of time in seconds the mob will stay looking in a random direction before looking elsewhere. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+|probability|0.2|Float|The probability of looking at the target. A value of 1.00 is 100%.|
 
 ## Example
 

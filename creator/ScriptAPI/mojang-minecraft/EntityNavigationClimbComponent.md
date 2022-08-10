@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,6 +16,7 @@ description: Contents of the mojang-minecraft.EntityNavigationClimbComponent cla
 Allows this entity to generate paths that include vertical walls (for example, like Minecraft spiders do.)
 
 ## Properties
+
 ### **avoidDamageBlocks**
 `read-only avoidDamageBlocks: boolean;`
 
@@ -142,13 +143,6 @@ Tells the pathfinder whether or not it can travel in lava like walking on ground
 
 Type: *boolean*
 
-### **id**
-`read-only id: string;`
-
-Identifier of this component. Should always be minecraft:navigation.climb.
-
-Type: *string*
-
 ### **isAmphibious**
 `read-only isAmphibious: boolean;`
 
@@ -156,3 +150,11 @@ Tells the pathfinder whether or not it can walk on the ground or go underwater.
 
 Type: *boolean*
 
+## Constants
+
+### **id**
+`static read-only id = "minecraft:navigation.climb";`
+
+Identifier of this component. Should always be minecraft:navigation.climb.
+
+Type: *string*

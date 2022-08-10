@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,12 +13,13 @@ description: Contents of the mojang-minecraft.EntityHurtEvent class.
 Contains information related to an entity getting hurt by another entity.
 
 ## Properties
+
 ### **cause**
-`read-only cause: string;`
+`read-only cause: EntityDamageCause;`
 
 A summary of the reason that damage was caused.
 
-Type: *string*
+Type: [*EntityDamageCause*](EntityDamageCause.md)
 
 ### **damage**
 `read-only damage: number;`
@@ -47,4 +48,3 @@ Type: [*Entity*](Entity.md)
 Optional entity for a projectile that potentially hurt an entity.
 
 Type: [*Entity*](Entity.md)
-

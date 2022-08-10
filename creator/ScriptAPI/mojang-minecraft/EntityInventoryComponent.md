@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,6 +16,7 @@ description: Contents of the mojang-minecraft.EntityInventoryComponent class.
 Defines this entity's inventory properties.
 
 ## Properties
+
 ### **additionalSlotsPerStrength**
 `read-only additionalSlotsPerStrength: number;`
 
@@ -72,3 +73,11 @@ If true, the entity's inventory can only be accessed by its owner or itself.
 
 Type: *boolean*
 
+## Constants
+
+### **id**
+`static read-only id = "minecraft:inventory";`
+
+Identifier of this component. Should always be minecraft:inventory.
+
+Type: *string*

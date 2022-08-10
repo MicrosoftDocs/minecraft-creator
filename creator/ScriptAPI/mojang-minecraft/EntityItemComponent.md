@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,12 +16,6 @@ description: Contents of the mojang-minecraft.EntityItemComponent class.
 If added onto the entity, this indicates that the entity represents a free-floating item in the world. Lets you retrieve the actual item stack contents via the itemStack property.
 
 ## Properties
-### **id**
-`read-only id: string;`
-
-Identifier of this component.
-
-Type: *string*
 
 ### **itemStack**
 `read-only itemStack: ItemStack;`
@@ -30,6 +24,14 @@ Item stack represented by this entity in the world.
 
 Type: [*ItemStack*](ItemStack.md)
 
+## Constants
+
+### **id**
+`static read-only id = "minecraft:item";`
+
+Identifier of this component.
+
+Type: *string*
 
 #### **Examples**
 ##### *testThatEntityIsFeatherItem.ts*

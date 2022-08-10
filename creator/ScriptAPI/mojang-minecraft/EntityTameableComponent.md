@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,12 +16,6 @@ description: Contents of the mojang-minecraft.EntityTameableComponent class.
 Defines the rules for a mob to be tamed by the player.
 
 ## Properties
-### **id**
-`read-only id: string;`
-
-Identifier of this component. Should always be minecraft:tameable.
-
-Type: *string*
 
 ### **probability**
 `read-only probability: number;`
@@ -44,17 +38,24 @@ The list of items that can be used to tame this entity.
 
 Type: *string*[]
 
-
 ## Methods
 - [tame](#tame)
-  
+
 ### **tame**
 `
 tame(): boolean
 `
-
 Tames this entity.
 
 #### **Returns** *boolean* - Returns true if the entity was tamed.
 > [!WARNING]
 > This function can throw errors.
+
+## Constants
+
+### **id**
+`static read-only id = "minecraft:tameable";`
+
+Identifier of this component. Should always be minecraft:tameable.
+
+Type: *string*

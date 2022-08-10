@@ -12,6 +12,12 @@ ms.prod: gaming
 > [!CAUTION]
 > `minecraft:behavior.break_door` is not currently used by any entities within Minecraft: Bedrock Edition. In it's place, the parameter`"can_break_doors"` has been added to the `"minecraft:navigation` component to allow entities to break down doors.
 
+## Parameters
+
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+
 ## Example
 
 ```json

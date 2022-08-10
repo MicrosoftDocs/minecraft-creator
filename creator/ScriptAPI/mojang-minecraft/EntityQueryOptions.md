@@ -1,18 +1,19 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: mojang-minecraft.EntityQueryOptions Class
+title: mojang-minecraft.EntityQueryOptions Interface
 description: Contents of the mojang-minecraft.EntityQueryOptions class.
 ---
-# EntityQueryOptions Class
+# EntityQueryOptions Interface
 >[!IMPORTANT]
 >These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to GameTest Framework APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 
 Contains options for selecting entities within an area.
 
 ## Properties
+
 ### **closest**
 `closest: number;`
 
@@ -173,19 +174,6 @@ Type: *string*
 In conjunction with location, specified a cuboid volume of entities to include.
 
 Type: [*BlockAreaSize*](BlockAreaSize.md)
-
-
-## Methods
-- [constructor](#constructor)
-  
-### **constructor**
-`
-new EntityQueryOptions()
-`
-
-Creates a new EntityQueryOptions query object, for use in getEntities/getPlayers methods.
-
-#### **Returns** [*EntityQueryOptions*](EntityQueryOptions.md)
 
 #### **Examples**
 ##### *testThatEntityIsFeatherItem.ts*

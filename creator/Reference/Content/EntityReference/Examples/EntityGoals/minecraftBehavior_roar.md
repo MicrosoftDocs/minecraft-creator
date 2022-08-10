@@ -13,7 +13,8 @@ ms.prod: gaming
 
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
-| duration| 0.0| decimal| Goal duration in seconds |
+| duration| 0.0| decimal| Goal duration in seconds. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 
 ## Vanilla entities examples
 

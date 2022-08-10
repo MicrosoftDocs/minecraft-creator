@@ -84,6 +84,7 @@ Query Functions are operators that access a wide variety of information. They ca
 | query.get_name| DEPRECATED (Use query.is_name_any instead if possible so names can be changed later without breaking content.) Get the name of the mob if there is one, otherwise return ''. |
 | query.get_root_locator_offset| Gets specified axis of the specified locator offset of the root model. |
 | query.ground_speed| Returns the ground speed of the entity in meters/second. |
+| query.had_component_group| Usable only in behavior packs when determining the default value for an entity's Property. Requires one string argument. If the entity is being loaded from data that was last saved with a component_group with the specified name, returns 1.0, otherwise returns 0.0. The purpose of this query is to allow entity definitions to change and still be able to load the correct state of entities.  |
 | query.has_any_family| Returns 1 if the entity has any of the specified families, else 0. |
 | query.has_armor_slot| Takes the armor slot index as a parameter and returns 1.0 if the entity has armor in the requested slot, else it returns 0.0. |
 | query.has_biome_tag| Returns whether or not a Block Placement Target has a specific biome tag. |

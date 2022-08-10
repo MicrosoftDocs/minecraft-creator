@@ -10,12 +10,14 @@ ms.prod: gaming
 `minecraft:behavior.defend_village_target` allows the entity to stay in a village and defend the village from aggressors. If a player is in bad standing with the village, this goal will cause the entity to attack the player regardless of filter conditions.
 
 ## Parameters
+
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
 | attack_chance| 0.05| Decimal| The percentage chance that the entity has to attack aggressors of its village, where 1.0 = 100%. |
-| priority | 1 | Decimal| The percentage chance that the entity has to attack aggressors of its village, where 1.0 = 100%. |
-| must_reach | true | Boolean | The entity must be able to reach attacker. |
 | entity_types | {} | JSON Object | Entity filter to determine which targets the behavior affects. |
+| must_reach | true | Boolean | The entity must be able to reach attacker. |
+| priority | 1 | Decimal| The percentage chance that the entity has to attack aggressors of its village, where 1.0 = 100%. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 
 ## Example
 

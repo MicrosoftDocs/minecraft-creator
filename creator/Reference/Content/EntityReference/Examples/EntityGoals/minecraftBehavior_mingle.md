@@ -13,11 +13,12 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|cooldown_time| 0.0| Decimal| Time in seconds the mob has to wait before using the goal again |
-|duration| 1.0| Decimal|  Amount of time in seconds that the entity will chat with another entity |
+|cooldown_time| 0.0| Decimal| Time in seconds the mob has to wait before using the goal again. |
+|duration| 1.0| Decimal|  Amount of time in seconds that the entity will chat with another entity. |
 |mingle_distance| 2.0| Decimal|  The distance from its partner that this entity will mingle. If the entity type is not the same as the entity, this value needs to be identical on both entities. |
-|mingle_partner_type|*not set*| List|  The entity type that this entity is allowed to mingle with |
-| speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |
+|mingle_partner_type|*not set*| List|  The entity type that this entity is allowed to mingle with. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal. |
 
 ## Example
 

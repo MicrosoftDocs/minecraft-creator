@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.ItemDurabilityComponent class.
 When present on an item, this item can take damage in the process of being used. Note that this component only applies to data-driven items.
 
 ## Properties
+
 ### **damage**
 `damage: number;`
 
@@ -27,13 +28,6 @@ A range of numbers that describes the chance of the item losing durability.
 
 Type: [*NumberRange*](NumberRange.md)
 
-### **id**
-`read-only id: string;`
-
-Identifier of this component. Should always be 'minecraft:durability'.
-
-Type: *string*
-
 ### **maxDurability**
 `read-only maxDurability: number;`
 
@@ -41,16 +35,15 @@ Represents the amount of damage that this item can take before breaking.
 
 Type: *number*
 
-
 ## Methods
 - [getDamageChance](#getdamagechance)
-  
+
 ### **getDamageChance**
 `
 getDamageChance(unbreaking?: number): number
 `
-
 Returns the maximum chance that this item would be damaged using the damageRange property, given an unbreaking level.
+
 #### **Parameters**
 - **unbreaking**?: *number* = `0`
   
@@ -59,3 +52,12 @@ Returns the maximum chance that this item would be damaged using the damageRange
 #### **Returns** *number*
 > [!WARNING]
 > This function can throw errors.
+
+## Constants
+
+### **id**
+`static read-only id = "minecraft:durability";`
+
+Identifier of this component. Should always be 'minecraft:durability'.
+
+Type: *string*

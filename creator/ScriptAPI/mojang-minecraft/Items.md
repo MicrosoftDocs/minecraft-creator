@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -14,13 +14,13 @@ Represents a collection of all of the available item types in Minecraft.
 
 ## Methods
 - [get](#get)
-  
+
 ### **get**
 `
 get(itemId: string): ItemType
 `
-
 Returns an item type given an item type identifier.
+
 #### **Parameters**
 - **itemId**: *string*
   

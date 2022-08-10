@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.ItemCompleteChargeEvent class.
 Contains information related to a chargeable item completing being charged.
 
 ## Properties
+
 ### **itemStack**
 `read-only itemStack: ItemStack;`
 
@@ -33,4 +34,3 @@ Type: [*Entity*](Entity.md)
 Returns the time, in ticks, for the remaining duration left before the charge completes its cycle.
 
 Type: *number*
-

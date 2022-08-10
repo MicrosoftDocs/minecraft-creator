@@ -9,7 +9,7 @@ ms.prod: gaming
 
 This component allows players to set the light level range that causes the mob to spawn.
 
-### Parameters
+## Parameters
 
 |Name |Default Value |Type | Description |
 |:-----------|:-----------|:-----------|:-----------|

@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.EntityRaycastOptions class.
 Contains additional options for an entity raycast operation.
 
 ## Properties
+
 ### **maxDistance**
 `maxDistance: number;`
 
@@ -20,15 +21,13 @@ Maximum distance, in blocks, to process the raycast.
 
 Type: *number*
 
-
 ## Methods
 - [constructor](#constructor)
-  
+
 ### **constructor**
 `
 new EntityRaycastOptions()
 `
-
 Creates a new EntityRaycastOptions object, for use in an entity vector query.
 
 #### **Returns** [*EntityRaycastOptions*](EntityRaycastOptions.md)

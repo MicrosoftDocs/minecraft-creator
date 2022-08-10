@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-net.HttpResponse class.
 Main object that contains result information from a request.
 
 ## Properties
+
 ### **body**
 `read-only body: string;`
 
@@ -40,4 +41,3 @@ Type: [*HttpRequest*](HttpRequest.md)
 HTTP response code for the request. For example, 404 represents resource not found, and 500 represents an internal server error.
 
 Type: *number*
-

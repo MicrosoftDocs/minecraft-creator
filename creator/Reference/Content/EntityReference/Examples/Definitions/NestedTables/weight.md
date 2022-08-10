@@ -9,7 +9,7 @@ ms.prod: gaming
 
 This component allows players to set a priority for how often that mob should spawn. Mobs with lower weight values will have a lower chance to spawn than mobs with higher weight values.
 
-### Parameters
+## Parameters
 
 |Name |Default Value |Type |Description |
 |:-----------|:-----------|:-----------|:-----------|

@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-net.HttpHeader class.
 Represents an HTTP header - a key/value pair of meta-information about a request.
 
 ## Properties
+
 ### **key**
 `key: string;`
 
@@ -27,10 +28,9 @@ Value of the HTTP header.
 
 Type: [*mojang-minecraft-server-admin.SecretString*](../mojang-minecraft-server-admin/SecretString.md) | *string*
 
-
 ## Methods
 - [constructor](#constructor)
-  
+
 ### **constructor**
 `
 new HttpHeader(key: string, value: mojang-minecraft-server-admin.SecretString | string)

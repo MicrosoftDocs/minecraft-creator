@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,6 +16,7 @@ description: Contents of the mojang-minecraft.BlockExplodeEvent class.
 Contains information regarding an explosion that has occurred for a specific block.
 
 ## Properties
+
 ### **block**
 `read-only block: Block;`
 
@@ -36,4 +37,3 @@ Type: [*Dimension*](Dimension.md)
 Optional source of the explosion.
 
 Type: [*Entity*](Entity.md)
-

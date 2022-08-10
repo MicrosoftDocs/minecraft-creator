@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -17,12 +17,12 @@ The mojang-gametest module provides scriptable APIs for scaffolding and testing 
 {
     // mojang-gametest
     "uuid": "6f4b6893-1bb6-42fd-b458-7fa3d0c89616",
-    "version": "0.1.0"
+    "version": "1.0.0-beta"
 }
 ```
 
-## Enumerations
-- [FluidType](FluidType.md)
+## Available Versions
+- 1.0.0-beta
 
 ## Classes
 - [FenceConnectivity](FenceConnectivity.md)
@@ -34,12 +34,13 @@ The mojang-gametest module provides scriptable APIs for scaffolding and testing 
 - [Test](Test.md)
 
 ## Functions
+
 ### **register**
 `
 register(testClassName: string, testName: string, testFunction: (arg: Test) => void): RegistrationBuilder
 `
-
 Registers a new GameTest function. This GameTest will become available in Minecraft via /gametest run [testClassName]:[testName].
+
 #### **Parameters**
 - **testClassName**: *string*
   
@@ -75,12 +76,13 @@ GameTest.register("ExampleTests", "alwaysFail", (test) => {
     .maxTicks(400)
     .structureName("gametests:mediumglass");
 ```
+
 ### **registerAsync**
 `
 registerAsync(testClassName: string, testName: string, testFunction: (arg: Test) => Promise<void>): RegistrationBuilder
 `
-
 Registers a new GameTest function that is designed for asynchronous execution. This GameTest will become available in Minecraft via /gametest run [testClassName]:[testName].
+
 #### **Parameters**
 - **testClassName**: *string*
   

@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.BlockHitInformation class.
 Contains more information for events where a block is hit.
 
 ## Properties
+
 ### **block**
 `read-only block: Block;`
 
@@ -40,4 +41,3 @@ Type: *number*
 Y coordinate on the face that was hit.
 
 Type: *number*
-

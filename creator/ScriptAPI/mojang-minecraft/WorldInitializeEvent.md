@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.WorldInitializeEvent class.
 Contains information and methods that can be used at the initialization of the scripting environment for a World. Also, use the supplied propertyRegistry object to register any dynamic properties, within the scope of the World Initialize execution.
 
 ## Properties
+
 ### **propertyRegistry**
 `read-only propertyRegistry: PropertyRegistry;`
 
@@ -32,4 +33,3 @@ world.events.worldInitialize.subscribe((e) => {
   e.propertyRegistry.registerEntityTypeDynamicProperties(def, MinecraftEntityTypes.skeleton);
 });
 ```
-

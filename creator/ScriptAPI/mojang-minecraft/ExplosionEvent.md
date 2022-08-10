@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.ExplosionEvent class.
 Contains information regarding an explosion that has happened.
 
 ## Properties
+
 ### **dimension**
 `read-only dimension: Dimension;`
 
@@ -33,4 +34,3 @@ Type: [*BlockLocation*](BlockLocation.md)[]
 Optional source of the explosion.
 
 Type: [*Entity*](Entity.md)
-

@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -71,12 +71,3 @@ description: Contents of the mojang-minecraft.IEntityComponent class.
 - [*EntityWantsJockeyComponent*](EntityWantsJockeyComponent.md)
 
 Base interface that defines components associated with an entity.
-
-## Properties
-### **id**
-`read-only id: string;`
-
-Identifier of this component.
-
-Type: *string*
-

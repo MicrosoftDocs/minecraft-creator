@@ -214,6 +214,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:experience_reward| -1992597900 |
 | minecraft:explode| -1683058581 |
 | minecraft:flocking| 1967597361 |
+| minecraft:game_event_movement_tracking | 763815151 |
 | minecraft:genetics| -82484670 |
 | minecraft:giveable| 1739199795 |
 | minecraft:group_size| -1997375941 |

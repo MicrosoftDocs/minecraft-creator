@@ -24,6 +24,7 @@ ms.prod: gaming
 | knockback_height_cap| 0.00| Decimal| Height cap of the attack knockback's vertical delta. |
 | knockback_horizontal_strength| 0.00| Decimal| Horizontal strength of the attack's knockback applied to the attack target. |
 | knockback_vertical_strength| 0.00| Decimal| Vertical strength of the attack's knockback applied to the attack target. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | speed_multiplier| 1.00| Decimal| This multiplier modifies the attacking entity's speed when moving toward the target. |
 
 ## Vanilla entities examples

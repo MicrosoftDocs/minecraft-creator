@@ -12,6 +12,12 @@ ms.prod: gaming
 > [!CAUTION]
 > `minecraft:behavior.door_interact` is not currently used by any entities within Minecraft: Bedrock Edition.
 
+## Parameters
+
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+
 ## Example
 
 ```json

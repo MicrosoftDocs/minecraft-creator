@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,11 +15,11 @@ description: Contents of the mojang-minecraft.EntityCanFlyComponent class.
 
 When added, this component signifies that the entity can fly, and the pathfinder won't be restricted to paths where a solid block is required underneath it.
 
-## Properties
+## Constants
+
 ### **id**
-`read-only id: string;`
+`static read-only id = "minecraft:can_fly";`
 
 Identifier of this component. Should always be minecraft:can_fly.
 
 Type: *string*
-

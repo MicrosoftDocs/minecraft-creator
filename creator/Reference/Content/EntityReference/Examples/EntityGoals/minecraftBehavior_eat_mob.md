@@ -16,10 +16,10 @@ ms.prod: gaming
 | eat_animation_time| 1.000000| Decimal| Sets the time in seconds the eat animation should play for. |
 | eat_mob_sound| | String| Sets the sound that should play when eating a mob. |
 | loot_table| | String| The loot table for loot to be dropped when eating a mob. |
+|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | pull_in_force| 1.000000| Decimal| Sets the force which the mob-to-be-eaten is pulled towards the eating mob. |
 | reach_mob_distance| 1.000000| Decimal| Sets the desired distance to be reached before eating the mob. |
 | run_speed| 1.000000| Decimal| Sets the entity's speed when running toward the target. |
-
 
 ## Vanilla entities examples
 

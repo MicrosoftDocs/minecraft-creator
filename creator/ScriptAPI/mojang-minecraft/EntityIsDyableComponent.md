@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,11 +15,11 @@ description: Contents of the mojang-minecraft.EntityIsDyableComponent class.
 
 When added, this component signifies that dyes can be used on this entity to change its color.
 
-## Properties
+## Constants
+
 ### **id**
-`read-only id: string;`
+`static read-only id = "minecraft:is_dyeable";`
 
 Identifier of this component. Should always be minecraft:is_dyeable.
 
 Type: *string*
-

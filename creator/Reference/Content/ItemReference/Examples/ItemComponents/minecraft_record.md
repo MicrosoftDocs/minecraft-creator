@@ -412,7 +412,7 @@ Listed below are the available sounds:
 - `convert_to_stray`
 - `extinguish.candle`
 - `block.click`
-- `bloom.sculk_catalyst`
+- `block.sculk_catalyst.bloom`
 - `nearby_close`
 - `nearby_closest`
 - `listening`

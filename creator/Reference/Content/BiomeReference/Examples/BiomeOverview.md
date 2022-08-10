@@ -163,6 +163,7 @@ Biomes are read from JSON files in the biomes subfolders of behavior packs. Load
           }
       }
       object "minecraft:ignore_automatic_features" : opt // No features will be automatically attached to this Biome, only features specified in the minecraft:forced_features component will appear.
+      object "minecraft:consolidated_features" : opt
       object "minecraft:surface_parameters"[0,6] : opt // Control the blocks used for the default Minecraft Overworld terrain generation.
       {
            "top_material" // Controls the block type used for the surface of this biome.

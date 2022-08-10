@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -19,6 +19,7 @@ description: Contents of the mojang-minecraft.Player class.
 Represents a player within the world.
 
 ## Properties
+
 ### **dimension**
 `read-only dimension: Dimension;`
 
@@ -117,7 +118,6 @@ Vector of the current view of the player.
 
 Type: [*Vector*](Vector.md)
 
-
 ## Methods
 - [addEffect](#addeffect)
 - [addTag](#addtag)
@@ -143,14 +143,15 @@ Type: [*Vector*](Vector.md)
 - [startItemCooldown](#startitemcooldown)
 - [teleport](#teleport)
 - [teleportFacing](#teleportfacing)
+- [tell](#tell)
 - [triggerEvent](#triggerevent)
-  
+
 ### **addEffect**
 `
 addEffect(effectType: EffectType, duration: number, amplifier?: number, showParticles?: boolean): void
 `
-
 Adds an effect, like poison, to the entity.
+
 #### **Parameters**
 - **effectType**: [*EffectType*](EffectType.md)
   
@@ -164,12 +165,13 @@ Adds an effect, like poison, to the entity.
 - **showParticles**?: *boolean* = `true`
 > [!WARNING]
 > This function can throw errors.
+
 ### **addTag**
 `
 addTag(tag: string): boolean
 `
-
 Adds a specified tag to an entity.
+
 #### **Parameters**
 - **tag**: *string*
   
@@ -178,12 +180,13 @@ Adds a specified tag to an entity.
 #### **Returns** *boolean*
 > [!WARNING]
 > This function can throw errors.
+
 ### **getBlockFromViewVector**
 `
 getBlockFromViewVector(options?: BlockRaycastOptions): Block
 `
-
 Gets the first block that intersects with the vector of the view of this entity.
+
 #### **Parameters**
 - **options**?: [*BlockRaycastOptions*](BlockRaycastOptions.md) = `null`
   
@@ -192,56 +195,60 @@ Gets the first block that intersects with the vector of the view of this entity.
 #### **Returns** [*Block*](Block.md)
 > [!WARNING]
 > This function can throw errors.
+
 ### **getComponent**
 `
 getComponent(componentId: string): IEntityComponent
 `
-
 Gets a component (that represents additional capabilities) for an entity.
+
 #### **Parameters**
 - **componentId**: *string*
   
   The identifier of the component (e.g., 'minecraft:rideable') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed. If the component is not present on the entity, undefined is returned.
 
 #### **Returns** [*IEntityComponent*](IEntityComponent.md)
+
 ### **getComponents**
 `
 getComponents(): IEntityComponent[]
 `
-
 Returns all components that are both present on this entity and supported by the API.
 
 #### **Returns** [*IEntityComponent*](IEntityComponent.md)[]
+
 ### **getDynamicProperty**
 `
 getDynamicProperty(identifier: string): boolean | number | string
 `
-
 Returns a property value.
+
 #### **Parameters**
 - **identifier**: *string*
 
 #### **Returns** *boolean* | *number* | *string* - Returns the value for the property, or undefined if the property has not been set.
 > [!WARNING]
 > This function can throw errors.
+
 ### **getEffect**
 `
 getEffect(effectType: EffectType): Effect
 `
-
 Returns the effect for the specified EffectType on the entity, or undefined if the effect is not present.
+
 #### **Parameters**
 - **effectType**: [*EffectType*](EffectType.md)
 
 #### **Returns** [*Effect*](Effect.md) - Effect object for the specified effect, or undefined if the effect is not present.
 > [!WARNING]
 > This function can throw errors.
+
 ### **getEntitiesFromViewVector**
 `
 getEntitiesFromViewVector(options?: EntityRaycastOptions): Entity[]
 `
-
 Gets the first entity that intersects with the vector of the view of this entity.
+
 #### **Parameters**
 - **options**?: [*EntityRaycastOptions*](EntityRaycastOptions.md) = `null`
   
@@ -250,12 +257,13 @@ Gets the first entity that intersects with the vector of the view of this entity
 #### **Returns** [*Entity*](Entity.md)[]
 > [!WARNING]
 > This function can throw errors.
+
 ### **getItemCooldown**
 `
 getItemCooldown(itemCategory: string): number
 `
-
 Gets the current item cooldown time for a particular cooldown category.
+
 #### **Parameters**
 - **itemCategory**: *string*
   
@@ -264,34 +272,36 @@ Gets the current item cooldown time for a particular cooldown category.
 #### **Returns** *number*
 > [!WARNING]
 > This function can throw errors.
+
 ### **getTags**
 `
 getTags(): string[]
 `
-
 Returns all tags associated with an entity.
 
 #### **Returns** *string*[]
 > [!WARNING]
 > This function can throw errors.
+
 ### **hasComponent**
 `
 hasComponent(componentId: string): boolean
 `
-
 Returns true if the specified component is present on this entity.
+
 #### **Parameters**
 - **componentId**: *string*
   
   The identifier of the component (e.g., 'minecraft:rideable') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed.
 
 #### **Returns** *boolean*
+
 ### **hasTag**
 `
 hasTag(tag: string): boolean
 `
-
 Tests whether an entity has a particular tag.
+
 #### **Parameters**
 - **tag**: *string*
   
@@ -300,20 +310,21 @@ Tests whether an entity has a particular tag.
 #### **Returns** *boolean*
 > [!WARNING]
 > This function can throw errors.
+
 ### **kill**
 `
 kill(): void
 `
-
 Kills this entity. The entity will drop loot as normal.
 > [!WARNING]
 > This function can throw errors.
+
 ### **playSound**
 `
 playSound(soundID: string, soundOptions?: SoundOptions): void
 `
-
 Plays a sound that only this particular player can hear.
+
 #### **Parameters**
 - **soundID**: *string*
   
@@ -323,24 +334,26 @@ Plays a sound that only this particular player can hear.
   Additional optional options for the sound.
 > [!WARNING]
 > This function can throw errors.
+
 ### **removeDynamicProperty**
 `
 removeDynamicProperty(identifier: string): boolean
 `
-
 Removes a specified property.
+
 #### **Parameters**
 - **identifier**: *string*
 
 #### **Returns** *boolean*
 > [!WARNING]
 > This function can throw errors.
+
 ### **removeTag**
 `
 removeTag(tag: string): boolean
 `
-
 Removes a specified tag from an entity.
+
 #### **Parameters**
 - **tag**: *string*
   
@@ -349,12 +362,13 @@ Removes a specified tag from an entity.
 #### **Returns** *boolean*
 > [!WARNING]
 > This function can throw errors.
+
 ### **runCommand**
 `
 runCommand(commandString: string): any
 `
-
 Runs a particular command from the context of this player.
+
 #### **Parameters**
 - **commandString**: *string*
   
@@ -370,12 +384,13 @@ Runs a particular command from the context of this player.
 player.runCommand("say You got a new high score!");
 player.runCommand("scoreboard players set @s score 10");
 ```
+
 ### **runCommandAsync**
 `
 runCommandAsync(commandString: string): Promise<CommandResult>
 `
-
 Runs a particular command asynchronously from the context of this entity. Where possible, running a command asynchronously is recommended, especially for long running operations.
+
 #### **Parameters**
 - **commandString**: *string*
   
@@ -384,12 +399,13 @@ Runs a particular command asynchronously from the context of this entity. Where 
 #### **Returns** Promise&lt;[*CommandResult*](CommandResult.md)&gt; - For commands that return data, returns a JSON structure with command response values.
 > [!WARNING]
 > This function can throw errors.
+
 ### **setDynamicProperty**
 `
 setDynamicProperty(identifier: string, value: boolean | number | string): void
 `
-
 Sets a specified property to a value.
+
 #### **Parameters**
 - **identifier**: *string*
 - **value**: *boolean* | *number* | *string*
@@ -397,35 +413,38 @@ Sets a specified property to a value.
   Data value of the property to set.
 > [!WARNING]
 > This function can throw errors.
+
 ### **setRotation**
 `
 setRotation(degreesX: number, degreesY: number): void
 `
-
 Sets the main rotation of the entity.
+
 #### **Parameters**
 - **degreesX**: *number*
 - **degreesY**: *number*
 > [!WARNING]
 > This function can throw errors.
+
 ### **setVelocity**
 `
-setVelocity(velocity: Vector): void
+setVelocity(velocity: IVec3): void
 `
-
 Sets a velocity for the entity to move with.
+
 #### **Parameters**
-- **velocity**: [*Vector*](Vector.md)
+- **velocity**: [*IVec3*](IVec3.md)
   
   X/Y/Z components of the velocity.
 > [!WARNING]
 > This function can throw errors.
+
 ### **startItemCooldown**
 `
 startItemCooldown(itemCategory: string, tickDuration: number): void
 `
-
 Sets the item cooldown time for a particular cooldown category.
+
 #### **Parameters**
 - **itemCategory**: *string*
   
@@ -435,14 +454,15 @@ Sets the item cooldown time for a particular cooldown category.
   Duration in ticks of the item cooldown.
 > [!WARNING]
 > This function can throw errors.
+
 ### **teleport**
 `
-teleport(location: Location, dimension: Dimension, xRotation: number, yRotation: number, keepVelocity?: boolean): void
+teleport(location: IVec3, dimension: Dimension, xRotation: number, yRotation: number, keepVelocity?: boolean): void
 `
-
 Teleports the selected player to a new location
+
 #### **Parameters**
-- **location**: [*Location*](Location.md)
+- **location**: [*IVec3*](IVec3.md)
   
   New location for the player.
 - **dimension**: [*Dimension*](Dimension.md)
@@ -457,31 +477,44 @@ Teleports the selected player to a new location
 - **keepVelocity**?: *boolean* = `false`
 > [!WARNING]
 > This function can throw errors.
+
 ### **teleportFacing**
 `
-teleportFacing(location: Location, dimension: Dimension, facingLocation: Location, keepVelocity?: boolean): void
+teleportFacing(location: IVec3, dimension: Dimension, facingLocation: IVec3, keepVelocity?: boolean): void
 `
-
 Teleports the selected player to a new location, and will have the player facing a specified location.
+
 #### **Parameters**
-- **location**: [*Location*](Location.md)
+- **location**: [*IVec3*](IVec3.md)
   
   New location for the player.
 - **dimension**: [*Dimension*](Dimension.md)
   
   Dimension to move the selected player to.
-- **facingLocation**: [*Location*](Location.md)
+- **facingLocation**: [*IVec3*](IVec3.md)
   
   Location that this player will be facing.
 - **keepVelocity**?: *boolean* = `false`
 > [!WARNING]
 > This function can throw errors.
+
+### **tell**
+`
+tell(message: IRawMessage | string): void
+`
+Sends a message that is displayed on the connected client for this player.
+
+#### **Parameters**
+- **message**: [*IRawMessage*](IRawMessage.md) | *string*
+> [!WARNING]
+> This function can throw errors.
+
 ### **triggerEvent**
 `
 triggerEvent(eventName: string): void
 `
-
 Triggers an entity type event. For every entity, a number of events are defined in an entities' definition for key entity behaviors; for example, creepers have a minecraft:start_exploding type event.
+
 #### **Parameters**
 - **eventName**: *string*
   

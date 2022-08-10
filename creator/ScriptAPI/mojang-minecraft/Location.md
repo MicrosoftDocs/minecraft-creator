@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.Location class.
 Contains a location description that is useful for entities and other items. X, Y, and Z can contain decimal fractions. For integer-based locations useful for blocks, see [*mojang-minecraft.BlockLocation*](../mojang-minecraft/BlockLocation.md).
 
 ## Properties
+
 ### **x**
 `x: number;`
 
@@ -34,18 +35,17 @@ Z component of this location.
 
 Type: *number*
 
-
 ## Methods
 - [constructor](#constructor)
 - [equals](#equals)
 - [isNear](#isnear)
-  
+
 ### **constructor**
 `
 new Location(x: number, y: number, z: number)
 `
-
 Creates a new instance of an abstract location.
+
 #### **Parameters**
 - **x**: *number*
   
@@ -58,24 +58,26 @@ Creates a new instance of an abstract location.
   Z position of the location.
 
 #### **Returns** [*Location*](Location.md)
+
 ### **equals**
 `
 equals(other: Location): boolean
 `
-
 Compares this Location and another Location to one another.
+
 #### **Parameters**
 - **other**: [*Location*](Location.md)
   
   Other location to compare this Location to.
 
 #### **Returns** *boolean* - True if the two locations are equal.
+
 ### **isNear**
 `
 isNear(other: Location, epsilon: number): boolean
 `
-
 Determines whether or not two Locations are considered to be near each other.
+
 #### **Parameters**
 - **other**: [*Location*](Location.md)
   

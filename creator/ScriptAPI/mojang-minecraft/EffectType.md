@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -14,12 +14,11 @@ Represents a type of effect - like poison - that can be applied to an entity.
 
 ## Methods
 - [getName](#getname)
-  
+
 ### **getName**
 `
 getName(): string
 `
-
 Identifier name of this effect type.
 
 #### **Returns** *string* - Identifier of the effect type.

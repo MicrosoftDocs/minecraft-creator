@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.EffectAddEvent class.
 Contains information related to changes to an effect - like poison - being added to an entity.
 
 ## Properties
+
 ### **effect**
 `effect: Effect;`
 
@@ -33,4 +34,3 @@ Type: *number*
 Entity that the effect is being added to.
 
 Type: [*Entity*](Entity.md)
-

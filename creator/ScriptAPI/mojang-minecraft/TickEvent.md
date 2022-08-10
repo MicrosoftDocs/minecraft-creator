@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.TickEvent class.
 An event for handling updates, that fires 20 times every second.
 
 ## Properties
+
 ### **currentTick**
 `read-only currentTick: number;`
 
@@ -26,4 +27,3 @@ Type: *number*
 Time since the last tick was fired.
 
 Type: *number*
-

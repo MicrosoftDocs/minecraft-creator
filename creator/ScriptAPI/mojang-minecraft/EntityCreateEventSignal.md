@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,13 +15,13 @@ Manages callbacks that are connected to when a new entity is created.
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
-  
+
 ### **subscribe**
 `
 subscribe(callback: (arg: EntityCreateEvent) => void): (arg: EntityCreateEvent) => void
 `
-
 Adds a callback that will be called when a new entity is created.
+
 #### **Parameters**
 - **callback**: (arg: [*EntityCreateEvent*](EntityCreateEvent.md)) => *void*
 
@@ -39,12 +39,13 @@ Adds a callback that will be called when a new entity is created.
     }
   });
 ```
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: EntityCreateEvent) => void): void
 `
-
 Removes a callback from being called when a new entity is created.
+
 #### **Parameters**
 - **callback**: (arg: [*EntityCreateEvent*](EntityCreateEvent.md)) => *void*
 > [!WARNING]

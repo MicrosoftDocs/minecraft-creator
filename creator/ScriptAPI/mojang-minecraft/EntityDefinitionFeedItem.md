@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.EntityDefinitionFeedItem class.
 As part of the Ageable component, represents a set of items that can be fed to an entity and the rate at which that causes them to grow.
 
 ## Properties
+
 ### **growth**
 `read-only growth: number;`
 
@@ -26,4 +27,3 @@ Type: *number*
 Identifier of type of item that can be fed. If a namespace is not specified, 'minecraft:' is assumed. Example values include 'wheat' or 'golden_apple'.
 
 Type: *string*
-

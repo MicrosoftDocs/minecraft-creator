@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,13 +15,13 @@ Manages callbacks that are connected to chat messages being sent.
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
-  
+
 ### **subscribe**
 `
 subscribe(callback: (arg: ChatEvent) => void): (arg: ChatEvent) => void
 `
-
 Adds a callback that will be called when new chat messages are sent.
+
 #### **Parameters**
 - **callback**: (arg: [*ChatEvent*](ChatEvent.md)) => *void*
 
@@ -40,12 +40,13 @@ const chatCallback = World.events.beforeChat.subscribe((eventData) => {
   }
 });
 ```
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ChatEvent) => void): void
 `
-
 Removes a callback from being called when new chat messages are sent.
+
 #### **Parameters**
 - **callback**: (arg: [*ChatEvent*](ChatEvent.md)) => *void*
 > [!WARNING]

@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -15,22 +15,22 @@ Used for accessing all entity types currently available for use within the world
 ## Methods
 - [get](#get)
 - [getAll](#getall)
-  
+
 ### **get**
 `
 get(identifier: string): EntityType
 `
-
 Retrieves an entity type using a string-based identifier.
+
 #### **Parameters**
 - **identifier**: *string*
 
 #### **Returns** [*EntityType*](EntityType.md)
+
 ### **getAll**
 `
 getAll(): EntityTypeIterator
 `
-
 Retrieves an iterator of all entity types within this world.
 
 #### **Returns** [*EntityTypeIterator*](EntityTypeIterator.md)

@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -16,12 +16,6 @@ description: Contents of the mojang-minecraft.EntityMovementSwayComponent class.
 When added, this move control causes the mob to sway side to side giving the impression it is swimming.
 
 ## Properties
-### **id**
-`read-only id: string;`
-
-Identifier of this component. Should always be minecraft:movement.sway.
-
-Type: *string*
 
 ### **maxTurn**
 `read-only maxTurn: number;`
@@ -44,3 +38,11 @@ Amount of sway frequency.
 
 Type: *number*
 
+## Constants
+
+### **id**
+`static read-only id = "minecraft:movement.sway";`
+
+Identifier of this component. Should always be minecraft:movement.sway.
+
+Type: *string*

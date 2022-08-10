@@ -1,5 +1,5 @@
 ---
-# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftScriptingApiDocsGenerator to modify descriptions, examples, etc.
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/Mojang/MinecraftApiDocsGenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -13,6 +13,7 @@ description: Contents of the mojang-minecraft.BlockType class.
 The type (or template) of a block. Does not contain permutation data (state) other than the type of block it represents. This type was introduced as of version 1.17.10.21.
 
 ## Properties
+
 ### **canBeWaterlogged**
 `read-only canBeWaterlogged: boolean;`
 
@@ -27,15 +28,13 @@ Block type name - for example, `minecraft:acacia_stairs`.
 
 Type: *string*
 
-
 ## Methods
 - [createDefaultBlockPermutation](#createdefaultblockpermutation)
-  
+
 ### **createDefaultBlockPermutation**
 `
 createDefaultBlockPermutation(): BlockPermutation
 `
-
 Creates the default [*mojang-minecraft.BlockPermutation*](../mojang-minecraft/BlockPermutation.md) for this type which uses the default values for all properties.
 
 #### **Returns** [*BlockPermutation*](BlockPermutation.md) - Returns created permutation.
