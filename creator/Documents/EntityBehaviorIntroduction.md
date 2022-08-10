@@ -1,6 +1,6 @@
 ---
-author: neonerz
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Behavior Introduction
 ms.prod: gaming
 ---
@@ -125,7 +125,7 @@ A good way to learn about a component and see how it's used in practice is to lo
 |`minecraft:movement`|`value`|Sets the movement speed of the entity. 0.25 is the regular speed of most animals in Minecraft.|
 |`minecraft:movement.basic`|[See documentation](/minecraft/creator/reference/content/entityreference/examples/entitycomponents/minecraftcomponent_movement.basic)|Allows the entity to move around on the ground.|
 |`minecraft:navigation.walk`|[See documentation](/minecraft/creator/reference/content/entityreference/examples/entitycomponents/minecraftcomponent_navigation.walk)|Allows the entity to navigate through the world by walking. There are other types of navigation as well, like hovering.|
-|`minecraft:is_baby`<br>`minecraft:is_ignited`<br>`minecraft:is_saddled`<br>`minecraft:is_sheared`<br>`minecraft:is_tamed`<br>`minecraft:is_illager_captain`<br>|:---|These components don’t do anything on their own, but they can be queried in animations, animation controllers, or render controllers, allowing you to control animations and other visuals from the entity behavior.|
+|`minecraft:is_baby`<br>`minecraft:is_ignited`<br>`minecraft:is_saddled`<br>`minecraft:is_sheared`<br>`minecraft:is_tamed`<br>`minecraft:is_illager_captain`<br>|`value`|These components don’t do anything on their own, but they can be queried in animations, animation controllers, or render controllers, allowing you to control animations and other visuals from the entity behavior.|
 |`minecraft:variant`<br>`minecraft:mark_variant`<br>`minecraft:skin_id`|`value`|These components work like the ones above, but instead of only storing an on/off state, they can store an integer value.|
 
 
