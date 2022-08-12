@@ -70,9 +70,9 @@ You can start a behavior pack manifest with a manifest.json file within your sta
     "header": {
         "description": "Introductory tests for Minecraft GameTest Framework.",
         "name": "Starter Hello World Tests",
-        "uuid": "1A2F42BD-98D4-4E0D-8E3F-934AB8A0C05E",
+        "uuid": "1a2f42bd-98d4-4e0d-8e3f-934ab8a0c05e",
         "version": [0, 0, 1],
-        "min_engine_version": [ 1, 14, 0 ]
+        "min_engine_version": [ 1, 19, 0 ]
     }
 }
 ```
@@ -85,7 +85,7 @@ A behavior pack manifest needs to have additional elements to support GameTests.
             "description": "Script that implements basic starter tests.",
             "type": "script",
             "language": "javascript",
-            "uuid": "1A1B53FC-5653-4A75-91B7-9CDF027674AE",
+            "uuid": "1a1b53fc-5653-4a75-91b7-9cdf027674ae",
             "version": [0, 0, 1],
             "entry": "scripts/StarterTests.js"
         }
@@ -107,11 +107,11 @@ In addition, you will need to establish dependencies on Minecraft APIs and GameT
  "dependencies": [
       {
         "uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
-        "version": [ 0, 1, 0 ]
+        "version": "1.0.0-beta"
       },
       {
         "uuid": "6f4b6893-1bb6-42fd-b458-7fa3d0c89616",
-        "version": [ 0, 1, 0 ]
+        "version": "1.0.0-beta"
       }
     ]
 ```
@@ -120,7 +120,7 @@ In addition, you will need to establish dependencies on Minecraft APIs and GameT
 >Note that here `uuid` refers to core Minecraft components. You should **not** change these values within the dependencies section.
 
 >[!IMPORTANT]
->As you can see, GameTest Framework tests dependent on versions "0.1.0" of Minecraft APIs and GameTest Framework.  Version 0 indicates that these features are still **experimental**. As with all experiments, we are improving their capabilities over time, and API signatures may change build over build without advanced notice.  Check the Minecraft Changelog for more changes over time.
+>As you can see, GameTest Framework tests dependent on versions "1.0.0-beta" of Minecraft APIs and GameTest Framework.  Version `-beta` indicates that these features are still **experimental**. As with all experiments, we are improving their capabilities over time, and API signatures may change build over build without advanced notice.  Check the Minecraft Changelog for more changes over time.
 
 A full manifest file for a Behavior Pack with a GameTest looks like:
 
@@ -132,7 +132,7 @@ A full manifest file for a Behavior Pack with a GameTest looks like:
         "name": "Starter Hello World Tests",
         "uuid": "1A2F42BD-98D4-4E0D-8E3F-934AB8A0C05E",
         "version": [0, 0, 1],
-        "min_engine_version": [ 1, 14, 0 ]
+        "min_engine_version": [ 1, 19, 0 ]
     },
     "modules": [
         {
@@ -147,11 +147,11 @@ A full manifest file for a Behavior Pack with a GameTest looks like:
     "dependencies": [
       {
         "uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
-        "version": [ 0, 1, 0 ]
+        "version": "1.0.0-beta"
       },
       {
         "uuid": "6f4b6893-1bb6-42fd-b458-7fa3d0c89616",
-        "version": [ 0, 1, 0 ]
+        "version": "1.0.0-beta"
       }
     ]
 }
