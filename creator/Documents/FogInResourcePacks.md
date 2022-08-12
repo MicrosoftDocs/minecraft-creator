@@ -1,13 +1,13 @@
 ---
-author: neonerz
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Fog in Resource Packs
 ms.prod: gaming
 ---
 
 # Fog in Resource Packs
 
-Fogs in Minecraft: Bedrock Edition use [JSON](https://www.w3schools.com/whatis/whatis_json.asp) files to determine their values. Creators can define their own sets of fog values in their resource packs. A new folder can be made at the root of a resource pack called `fogs`. Any JSON files within this folder will be registered as new fog definitions that can be used by the game.
+Fogs in Minecraft: Bedrock Edition use JSON files to determine their values. Creators can define their own sets of fog values in their resource packs. A new folder can be made at the root of a resource pack called `fogs`. Any JSON files within this folder will be registered as new fog definitions that can be used by the game.
 
 :::image type="content" source="Media/FogResourcePack/Fog-in-Resource-Packs.jpg" alt-text="Image showing Steve running from spiders hiding in a fog":::
 
@@ -35,7 +35,7 @@ The Vanilla Resource Pack template (found [here](https://aka.ms/resourcepacktemp
   "format_version": "1.16.100",
   "minecraft:fog_settings": {
     "description": {
-      "identifier": "custom_pack:example"
+      "identifier": "minecraft:fog_default"
     },
     "distance": {
       "air": {
@@ -43,42 +43,63 @@ The Vanilla Resource Pack template (found [here](https://aka.ms/resourcepacktemp
         "fog_end": 1.0,
         "fog_color": "#ABD2FF",
         "render_distance_type": "render"
-      }
-    },
-    "volumetric": {
-      "density": {
-        "air": {
-          "density": 0.1,
-          "max_density_height": 56,
-          "zero_density_height": 70
+      },
+      "water": {
+        "fog_start": 0,
+        "fog_end": 60.0,
+        "fog_color": "#44AFF5",
+        "render_distance_type": "fixed",
+        "transition_fog": {
+          "init_fog": {
+            "fog_start": 0.0,
+            "fog_end": 0.01,
+            "fog_color": "#44AFF5",
+            "render_distance_type": "fixed"
+          },
+          "min_percent": 0.25,
+          "mid_seconds": 5,
+          "mid_percent": 0.6,
+          "max_seconds": 30
         }
       },
-      "media_coefficients": {
-        "air": {
-          "scattering": [ 0.02, 0.02, 0.02 ],
-          "absorption": [ 0.0, 0.0, 0.0 ]
-        }
+      "weather": {
+        "fog_start": 0.23,
+        "fog_end": 0.7,
+        "fog_color": "#666666",
+        "render_distance_type": "render"
+      },
+      "lava": {
+        "fog_start": 0.0,
+        "fog_end": 0.64,
+        "fog_color": "#991A00",
+        "render_distance_type": "fixed"
+      },
+      "lava_resistance": {
+        "fog_start": 2.0,
+        "fog_end": 4.0,
+        "fog_color": "#991A00",
+        "render_distance_type": "fixed"
       }
     }
   }
 }
 ```
 
-### Variables
+## Variables
 
-#### format_version
+### format_version
 
 The resource pack version that this fog setting was built for. This is used for determining upgrade paths and backwards compatibility in newer versions of the game. The minimum version is 1.16.100.
 
-#### minecraft:fog_settings
+### minecraft:fog_settings
 
 Contains the definitions and options of the fog.
 
-#### description
+### description
 
 Holds the description for this fog setting, which primarily contains an identifier.
 
-##### identifier
+### identifier
 
 Held within the `description` object.
 
@@ -96,7 +117,7 @@ The unique name to refer to this fog setting. Each identifier requires a namespa
 }
 ```
 
-#### distance
+### distance
 
 This object contains the values for distance-based fog. This is the fog that limits the player from seeing anything beyond a specific distance from them. Each field within this object contains one type of distance value.
 
@@ -132,11 +153,26 @@ In each distance setting type, you can set the following variables:
 - `render`: The distance is multiplied against the current render distance.
 - `fog_color`: The color that the fog will take on.
 
-#### volumetric
+#### transition_fog
+
+>[!NOTE]
+>`transition_fog` works only for fog in a **water** setting.
+
+With `transition_fog` specified, players will see a fog transition from `init_fog` setting to the `water` setting when they move into water. The speed of transition can be controlled by `percent` and `second` values.
+
+In each `transition_fog` setting type, you can set the following variables:
+
+- `init_fog`: Initial fog that will slowly transition into water distance fog of the biome when player goes into water.
+- `min_percent`: Minimum progress of fog transition.
+- `mid_seconds`: The time takes to reach certain progress('mid_percent') of fog transition.
+- `mid_percent`: The progress of fog transition after 'mid_seconds' seconds.
+- `max_seconds`: Total amount of time it takes to complete the fog transition.
+
+### volumetric
 
 This object contains the values for volumetric fog. This fog will be displayed as a calculation from light passing through blocks. Currently this is only used for PBR (Ray Tracing) and is planned to be added to non-PBR later.
 
-##### density
+### density
 
 Held within the `volumetric` object. Each field within it contains one type of density value.
 
@@ -172,7 +208,7 @@ In each density setting type, you can set the following variables:
 - `zero_density_height`: the height in blocks that the fog will begin to appear. This can only be set if `uniform` is set to false.
 - `max_density_height`: the height in blocks that the fog will become its `max_density`. This can be set only if `uniform` is set to false.
 
-#### media_coefficients
+### media_coefficients
 
 Held within the `volumetric` object.
 
