@@ -48,7 +48,7 @@ Image Map is a small application for both Bedrock Edition and Java Edition that 
 
 ### [bridge.](https://bridge-core.app)
 
-bridge. is a powerful add-on editor designed to speed up your development process. It provides a rich editing experience for all files inside behavior packs, resource packs, skin packs and world templates and provides a powerful work environment for JavaScript, JSON, functions and more. A summary of bridge.'s most notable features can be found [here](https://bridge-core.app/guide/features/index.html). 
+bridge. is a powerful add-on editor designed to speed up your development process. It provides a rich editing experience for all files inside behavior packs, resource packs, skin packs and world templates and provides a powerful work environment for JavaScript/TypeScript files, JSON files, functions and more. A summary of bridge.'s most notable features can be found [here](https://bridge-core.app/guide/features/index.html). 
 
 Are you wondering why you should use bridge. over other editors? Read [this page](https://bridge-core.app/guide/why-bridge.html) to discover what features are unique to bridge.
 
