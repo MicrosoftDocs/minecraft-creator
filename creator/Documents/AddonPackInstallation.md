@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: "Installing Add-Ons in Minecraft: Bedrock Edition"
 ms.prod: gaming
 description:
@@ -8,21 +8,27 @@ description:
 
 # Installing Add-Ons in Minecraft: Bedrock Edition
 
-Add-Ons give you the ability to change the way things in your game look and behave; Add-Ons help you bring new gameplay ideas to life. They are the first step in your journey towards a fully customizable Minecraft.
+Add-Ons give you the ability to change the way things in your Minecraft world look and behave. Whether you create them yourself or get them from another creator, the next step will be activating them into a world where they can do their magic.
 
 ## Installing Add-On Instructions
 
-Add-Ons can be installed on a variety of platforms running Minecraft. To learn how to install Add-Ons for each device.
+Add-Ons can be installed on a variety of platforms running Minecraft. Here's how:
 
-# [Windows 10](#tab/Windows10)
+# [Windows 10 or Windows 11](#tab/Windows10)
 
-1. Open Minecraft for Windows 10.
-1. Download the world or Add-On file from the provided source (URL, email attachment, etc.). If the file downloads as a .zip file, change the file extension name to ".mcworld" or ".mcpack".
+1. First, you will need a Windows 10 or Windows 11 computer with Minecraft: Bedrock Edition installed.
+1. Download the world or Add-On file from the provided source. If the file downloads as a .zip file, change the file extension name to ".mcworld" or ".mcpack".
 1. Navigate to the directory where you downloaded the file.
-1. Open the file & the Add-On should open in Minecraft.
+1. Open the file and the Add-On should open in Minecraft.
 
  - If you're opening a .mcworld that contains Add-Ons, the game will notify you that you've successfully imported the world. It will then be available from the "Play" menu.
  - If you're opening a .mcpack, a pop-up notification will alert you that you've successfully imported the pack. Depending on the pack type, this will then be available when editing worlds in either the Behavior Pack Tab or Resource Pack Tab.
+
+# [Realms/Console](#tab/realms)
+
+1. You will need a Windows 10 or Windows 11 computer with Minecraft: Bedrock Edition installed, a subscription to Realms, and Minecraft world with Add-Ons activated.
+1. On the computer, launch Minecraft and upload the world with Add-Ons active to your Realm.
+1. Go to your console, launch Minecraft, and open the Add-On enhanced world on the Realm.
 
 # [Android](#tab/android)
 
