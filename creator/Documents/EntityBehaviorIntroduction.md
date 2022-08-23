@@ -47,7 +47,7 @@ The files are written in JSON and the basic structure looks like this:
     "format_version": "1.13.0",
     "minecraft:entity": {
         "description": {
-            "identifier":"compass:example",
+            "identifier":"sample:example",
             "is_spawnable":true,
             "is_summonable":true
         },
@@ -83,7 +83,7 @@ In this example, a component group is used to create a baby variant of the entit
     "format_version": "1.13.0",
     "minecraft:entity": {
         "description": {
-            "identifier":"compass:example",
+            "identifier":"sample:example",
             "is_spawnable":true,
             "is_summonable":true
         },
@@ -194,12 +194,12 @@ Events are used to add and remove component groups from the entity. In this exam
 
 ```json
 "events": {
-    "compass:example_event": {
+    "sample:example_event": {
         "remove": {
-            "component_groups": ["compass:group_a"]
+            "component_groups": ["sample:group_a"]
         },
         "add": {
-            "component_groups": ["compass:group_b","compass:group_c"]
+            "component_groups": ["sample:group_b","sample:group_c"]
         }
     }
 }
@@ -208,7 +208,7 @@ Events are used to add and remove component groups from the entity. In this exam
 Events can be triggered by many components such as `minecraft:interact` or `minecraft:environment_sensor`, by behavior animations, or by the summon command. The following command will spawn the entity while running the event above.
 
 ```json
-/summon compass:example_entity ~ ~ ~ compass:example_event
+/summon sample:example_entity ~ ~ ~ sample:example_event
 ```
 
 ### Built-in Events
@@ -301,7 +301,7 @@ A minimal example of a filter inside an event could look like this: The componen
 
 ```json
 "events": {
-    "compass:example_event": {
+    "sample:example_event": {
         "filters": {
             "test": "has_tag",
             "value":"event_allowed"
@@ -319,7 +319,7 @@ In the following example, we're adding a second condition to the filter. The eve
 
 ```json
 "events": {
-    "compass:example_event": {
+    "sample:example_event": {
         "filters": {
             "all_of":[
                {"test": "has_tag", "value": "event_allowed"},

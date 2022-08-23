@@ -45,7 +45,7 @@ In the behavior pack, an entity file is responsible for defining the entity on t
 
 To give you a point of reference for this tutorial, we are providing two versions of the same entity: a robot that can spawn randomly in the world and has three random textures, a wheel animation, various components, and a custom water mechanic. The download link is in the **Requirements** section above.
 
-To see the robot in action, pick one of the sets of resource and behavior packs you just downloaded. (We recommend trying the minimum one for now.) Put the resource and behavior packs in their respective com.mojang sub-folders, launch a world with cheats enabled, and use `/summon compass:robot`.
+To see the robot in action, pick one of the sets of resource and behavior packs you just downloaded. (We recommend trying the minimum one for now.) Put the resource and behavior packs in their respective com.mojang sub-folders, launch a world with cheats enabled, and use `/summon sample:robot`.
 
 This is the structure of the finished "minimum robot" behavior pack and resource pack:
 
@@ -59,7 +59,7 @@ A good starting point would be to use the resource and behavior packs you create
 
 ## Naming
 
-When you create an entity, one of the first things to consider is what ID you're going to give it. The files in your resource and behavior packs will need to be synced using the entity ID that you give your entity. This ID consists of a namespace and a name separated by a colon. That was the `compass:robot` ID we used previously to summon the robot.
+When you create an entity, one of the first things to consider is what ID you're going to give it. The files in your resource and behavior packs will need to be synced using the entity ID that you give your entity. This ID consists of a namespace and a name separated by a colon. That was the `sample:robot` ID we used previously to summon the robot.
 
 Your own namespace can be a short version of your team name or product name. The ID should only include lower case letters, digits, and underscores. Do not use "minecraft" as the namespace for custom content. The "minecraft" namespace is reserved for vanilla resources, so you should only use "minecraft" if you are overwriting vanilla content.
 
@@ -88,7 +88,7 @@ The first practical step to add a robot into the game starts in the behavior pac
     "format_version": "1.12.0",
     "minecraft:entity": {
         "description": {
-            "identifier": "compass:robot",
+            "identifier": "sample:robot",
             "is_spawnable": true,
             "is_summonable": true
         },
@@ -118,7 +118,7 @@ Now, we need to add the entity to the resource pack to give it a visual appearan
     "format_version": "1.10.0",
     "minecraft:client_entity": {
         "description": {
-            "identifier": "compass:robot",
+            "identifier": "sample:robot",
             "spawn_egg": {
                 "base_color": "#505152",
                 "overlay_color": "#3b9dff"
@@ -150,7 +150,7 @@ For most entities (such as our robot), we can use the default render controller 
     "format_version": "1.10.0",
     "minecraft:client_entity": {
         "description": {
-            "identifier": "compass:robot",
+            "identifier": "sample:robot",
             "materials": {
                 "default": "entity"
             },
@@ -183,8 +183,8 @@ In most cases, a custom material is not required. Instead, you can use a default
 Right now, neither the entity itself nor the spawn egg has a proper name in game. To define a name, we need a language file. Create a new folder called `texts` inside your resource pack and create a new file called `en_US.lang`. For custom entities, we only need to change this language file, as all other languages will default to American English. Inside this file, add these two lines:
 
 ```json
-entity.compass:robot.name=Robot
-item.spawn_egg.entity.compass:robot.name=Spawn Robot
+entity.sample:robot.name=Robot
+item.spawn_egg.entity.sample:robot.name=Spawn Robot
 ```
 
 The first line defines the name of the entity. This will be visible in death messages and in the output of some commands. Key and value are always separated by an equals sign. The first line can be broken down into:
@@ -402,13 +402,13 @@ Now, the textures are linked. The last step is to randomize the variant in the b
             ...
         },
         "component_groups": {
-            "compass:color_0": {
+            "sample:color_0": {
                 "minecraft:variant": {"value": 0}
             },
-            "compass:color_1": {
+            "sample:color_1": {
                 "minecraft:variant": {"value": 1}
             },
-            "compass:color_2": {
+            "sample:color_2": {
                 "minecraft:variant": {"value": 2}
             }
         },
@@ -417,15 +417,15 @@ Now, the textures are linked. The last step is to randomize the variant in the b
                 "randomize": [
                     {
                         "add": {
-                            "component_groups": ["compass:color_0"]
+                            "component_groups": ["sample:color_0"]
                         }
                     }, {
                         "add": {
-                            "component_groups": ["compass:color_1"]
+                            "component_groups": ["sample:color_1"]
                         }
                     }, {
                         "add": {
-                            "component_groups": ["compass:color_2"]
+                            "component_groups": ["sample:color_2"]
                         }
                     }
                 ]
@@ -446,7 +446,7 @@ Inside the folder, create a new text file called `robot.json`. The content of th
     "format_version": "1.8.0",
     "minecraft:spawn_rules": {
         "description": {
-            "identifier": "compass:robot",
+            "identifier": "sample:robot",
             "population_control": "animal"
         },
         "conditions": []
@@ -479,7 +479,7 @@ For a basic spawn rule, one condition is enough. For the robot, we will use this
     "format_version": "1.8.0",
     "minecraft:spawn_rules": {
         "description": {
-            "identifier": "compass:robot",
+            "identifier": "sample:robot",
             "population_control": "animal"
         },
         "conditions": [
@@ -569,7 +569,7 @@ As with animations in resource packs, we need to link all of our animations and 
 
 ```json
         "description": {
-            "identifier": "compass:robot",
+            "identifier": "sample:robot",
             "is_spawnable": true,
             "is_summonable": true,
             "animations": {

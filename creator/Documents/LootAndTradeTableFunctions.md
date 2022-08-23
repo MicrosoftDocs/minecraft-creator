@@ -234,7 +234,7 @@ This function only works with a spawn egg and is used to set the entity ID of th
                     "functions": [
                         {
                             "function": "set_actor_id",
-                            "id": "compass:cool_entity"
+                            "id": "sample:cool_entity"
                         }
                     ]
                 }
