@@ -14,20 +14,15 @@ ms.prod: gaming
 >
 >Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
 >
->To learn more about Experimental Features
-
-- please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md)
+>To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md)
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:------------|:------------|:------------|:------------|
-|comparator_signal|1 | integer |Signal strength for comparator blocks to use
-
-- from 1 -  13.|
-|duration|*not set* | float | Duration of sound event in seconds
-- float value.|
-|sound_event|*not set* | String | Sound event types:  13, cat, blocks, chirp, far, mall, mellohi, stal, strad, ward, 11, wait, pigstep, otherside, 5. The value may be one listed below. |
+|comparator_signal|1 | integer |Signal strength for comparator blocks to use from 1 - 13.|
+|duration|*not set* | float | Duration of sound event in seconds float value.|
+|sound_event|*not set* | String | Sound event types:  `13`, `cat`, `blocks`, `chirp`, `far`, `mall`, `mellohi`, `stal`, `strad`, `ward`, `11`, `wait`, `pigstep`, `otherside`, `5`. The value may be one listed below. |
 
 ### sound_event
 
