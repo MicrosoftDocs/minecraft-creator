@@ -60,6 +60,10 @@
               href: Documents/FogInResourcePacks.md
             - name: Particle Effects
               href: Documents/ParticleEffects.md
+        - name: Maker Series
+          items:
+            - name: Creating a Goblin Chef Entity 
+              href: Documents/MakerSeriesMakingTheGoblinChef.md
         - name: Commands and Command Blocks
           items:
           - name: Introduction to Commands
