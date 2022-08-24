@@ -17,7 +17,7 @@ This first episode features Mojang 3D artist Peter Sheff, as he walks you throug
 
 > [!VIDEO https://www.youtube.com/embed/n13IAIpRpM4]
 
-In this video, Peter will start with the fundamentals of creating a new mob. The initial focus is using the 3D shape tools of Blockbench to focus on getting the 3D shape of the Goblin Chef just right.
+In this video, Peter will start with the fundamentals of creating a new mob. The initial focus is using the 3D shape tools of Blockbench to focus on getting the 3D form of the Goblin Chef just right.
 
 ## Part 2: Texturing
 
@@ -29,4 +29,4 @@ Now that the basic shape of the mob has been determined, it's time to apply a se
 
 > [!VIDEO https://www.youtube.com/embed/u4MkpBJ720k]
 
-In the animating section, you'll see how Peter animates the basic parts of the Goblin Chef, including adding natural animations to the head, arms, and legs. You can see how to adjust the motion of various parts by adding keyframes in the Timeline tool of Blockbench.
+In the animating section, you'll see how Peter animates the basic parts of the Goblin Chef, adding natural animations to the head, arms, and legs to create a walk cycle. You can see how to adjust the motion of various parts by adding keyframes in the Timeline tool of Blockbench.
