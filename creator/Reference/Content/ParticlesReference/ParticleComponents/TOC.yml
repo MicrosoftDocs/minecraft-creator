@@ -30,10 +30,12 @@
   href: minecraftEmitter_shape_entity-AABB.md
 - name: Emitter Disc
   href: minecraftEmitter_disc.md
-- name: Particle Initial State
-  href: minecraftParticle_initial_state.md
 - name: Particle Initial Speed
   href: minecraftParticle_initial_speed.md
+- name: Particle Initial Spin
+  href: minecraftParticle_initial_spin.md
+- name: Particle Initialization
+  href: minecraftParticle_initialization.md
 - name: Particle Motion Dynamic
   href: minecraftParticle_motion_dynamic.md
 - name: Particle Motion Parametric

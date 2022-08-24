@@ -34,11 +34,11 @@ Particles are a powerful tool to augment the visual experience of a map or Add-O
 
 Bedrock uses a custom JSON format for its particle effects. Files are stored in the `particles` folder of your resource pack. Similar to models and entities, particles are referenced by their identifier, so you can save the file in any subfolder inside the `particles` folder without having to worry about referencing it.
 
-The particle identifier is specified at the top of the JSON file. Just like with entities, it should consist of a namespace and name, for example `compass:colored_smoke`.
+The particle identifier is specified at the top of the JSON file. Just like with entities, it should consist of a namespace and name, for example `sample:colored_smoke`.
 
 ```json
     "description": {
-    "identifier": "compass:colored_smoke",
+    "identifier": "sample:colored_smoke",
     },
 ```
 
@@ -80,7 +80,7 @@ If you’re using the VSCode extension, create a new file named `<name>.particle
 
 ## Creating a Particle Effect
 
-In this guide, we’ll create a colored smoke effect step-by-step. First, open Snowstorm and locate the meta section in the sidebar. Type in the identifier of the particle effect – we’ll use **compass:colored_smoke**.
+In this guide, we’ll create a colored smoke effect step-by-step. First, open Snowstorm and locate the meta section in the sidebar. Type in the identifier of the particle effect – we’ll use **sample:colored_smoke**.
 
 ![Identifier in Snowstorm](Media/ParticleEffects/snowstormidentifier.png)
 
@@ -168,7 +168,7 @@ This is the simplest way to test an effect. Use the `/particle` command to summo
 Here is an example command: The three tildes at the end of the command indicate the position, in this case the exact position where the command was executed, so the feet position of the player or the center of the command block running the command.
 
 ```json
-/particle compass:colored_smoke ~ ~ ~
+/particle sample:colored_smoke ~ ~ ~
 ```
 
 ### Animations
@@ -179,7 +179,7 @@ Add this to your client entity file inside the description object:
 
 ```json
 "particle_effects": {
-    "smoke": "compass:colored_smoke"
+    "smoke": "sample:colored_smoke"
 }
 ```
 
