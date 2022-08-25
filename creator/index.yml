@@ -18,29 +18,29 @@ highlightedContent:
 # itemType:  architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     #card used to define plugin
-    - title: "Physically-Based Rendering"
+    - title: "Minecraft Maker Series"
       itemType: whats-new
-      url: Documents/RTXPBRIntro.md
+      url: Documents/MakerSeriesMakingTheGoblinChef.md
     #card
     - title: "Installing Add-Ons in Minecraft: Bedrock Edition"
       itemType: deploy
       url: Documents/AddonPackInstallation.md
     #card
-    - title: A Redstone Guide
+    - title: Structure Blocks
       itemType: whats-new
-      url: Documents/RedstoneGuide.md
+      url: Documents/IntroductionToStructureBlocks.md
     #card
-    - title: "Experimental Features in Minecraft: Bedrock Edition"
-      itemType: architecture
-      url: Documents/ExperimentalFeaturesToggle.md
+    - title: "Create a Custom NPC"
+      itemType: learn
+      url: Documents/CreateNPCs.md
     #card
     - title: GameTest Reference Documentation
       itemType: reference
       url: ScriptAPI/index.yml
     #card
-    - title: Differences Between Minecraft Bedrock Edition and Minecraft Java Edition
-      itemType: architecture
-      url: Documents/DifferencesBetweenBedrockAndJava.md
+    - title: Mash-up Pack Overview
+      itemType: learn
+      url: Documents/MashupPackOverview.md
 
 # productDirectory section (optional)
 productDirectory:
