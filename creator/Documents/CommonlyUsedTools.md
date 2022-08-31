@@ -60,7 +60,7 @@ Here is a list of popular NBT Editors which will help you to edit NBT tags effic
 
 ### [MCC Tool Chest](https://mcctoolchest.weebly.com)
 
-MCC Tool Chest is a powerful and efficient NBT Editor which has many options for editing in a GUI environment. Some of the things it can do is merge maps(worlds), edit maps(items), edit the flat-world layers. You can learn more at the [Tutorials Page](https://mcctoolchest.weebly.com/tutorial.html). It support many world platforms - Bedrock Edition(Windows10, Phones, iOS, Xbox One, Playstation 4/5, etc), Java Edition(Windows, Mac and Linux), Legacy Console Editions(Wii U Edition, Xbox 360 Edition, PS3 Edition.
+MCC Tool Chest is a powerful and efficient NBT Editor which has many options for editing in a GUI environment. Some of the things it can do is merge maps(worlds), edit maps(items), edit the flat-world layers. You can learn more at the [Tutorials Page](https://mcctoolchest.weebly.com/tutorial.html). It supports many world platforms - Bedrock Edition(Windows10, Phones, iOS, Xbox One, Playstation 4/5, etc), Java Edition(Windows, Mac and Linux), Legacy Console Editions(Wii U Edition, Xbox 360 Edition, PS3 Edition.
 
 ### [Universal Minecraft Editor](https://www.universalminecrafteditor.com)
 
