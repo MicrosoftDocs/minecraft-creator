@@ -45,7 +45,7 @@ The `/loot replace block` overload of the loot command allows users to directly 
 
 - **source** - loot (path to a loot chest) or kill (loot that drops from a killed entity)
 
-## More about the <source parameter> variations
+## More about the Source Parameter variations
 
 ### loot
 
@@ -71,12 +71,14 @@ Examples:
 
 ### kill
 
-> [!NOTE] The kill variation of the `/loot replace block` command is different from the `/kill` command.  In the context of the `/loot` command, using the kill variation means that the dropped loot will end up in the target container's specified slot. You can read more about the `/kill` command in the [LootSpawn and Kill](LootSpawnAndKill.md) document.
+> [!NOTE]
+> The kill variation of the `/loot replace block` command is different from the `/kill` command.  In the context of the `/loot` command, using the kill variation means that the dropped loot will end up in the target container's specified slot. You can read more about the `/kill` command in the [LootSpawn and Kill](LootSpawnAndKill.md) document.
 
 Using the `kill` variation specifies that the user wants to simulate killing a specific entity in the world and use the loot table attached to it as the source for the loot to be dropped.
 
 The target entity must be present within the world or the command will return an error saying that no matching targets were found.
-/loot replace block <position: x y z> slot.container <slotId: int> [<count: int>] kill <entity: target> [<tool>|mainhand|offhand]
+
+`/loot replace block <position: x y z> slot.container <slotId: int> [<count: int>] kill <entity: target> [<tool>|mainhand|offhand]`
 
 Examples:
 
