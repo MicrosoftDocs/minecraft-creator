@@ -96,6 +96,8 @@
               href: Documents/EntityModelingAndAnimation.md
             - name: Entity Behavior Introduction
               href: Documents/EntityBehaviorIntroduction.md
+            - name: Entity Events
+              href: Documents/EntityEvents.md
         - name: Adding NPCs
           items:
             - name: Create a Custom NPC

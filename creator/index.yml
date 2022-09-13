@@ -113,6 +113,9 @@ conceptualContent:
             - url: Documents/EntityBehaviorIntroduction.md
               itemType: tutorial
               text: Entity Behavior Introduction
+            - url: Documents/EntityEvents.md
+              itemType: tutorial
+              text: Entity Events
         # card
         - title: Adding NPCs
           summary: "Populate your world with interactive characters to create unique narrative experiences."
