@@ -43,7 +43,7 @@ The `/loot replace entity` overload of the loot command allows users to directly
 
 - **count** - Optional number of consecutive slots to be filled. If count is 0, then no items are dropped. If count is not specified, then as many slots as possible are filled.
 
-- **source** - `loot` (path to a loot chest) or `kill` (loot that drops from a killed entity)
+- **source** - `loot` (path to a loot table) or `kill` (loot that drops from a killed entity)
 
 ## More about the `<source parameter>` variations
 
