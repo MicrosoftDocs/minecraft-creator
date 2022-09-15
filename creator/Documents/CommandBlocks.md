@@ -9,7 +9,7 @@ description: A tutorial that is an introduction to Minecraft Bedrock Edition Com
 
 Command blocks are a specialized type of block within a Minecraft: Bedrock Edition world that allows the use of console commands in-game. The same commands that players can type from chat can be run automatically by command blocks using redstone power.
 
-In this tutorial, you will learn the following;
+In this tutorial, you will learn the following:
 
 > [!div class="checklist"]
 >
