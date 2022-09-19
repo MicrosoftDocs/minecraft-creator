@@ -9,7 +9,7 @@ description: A guide covering how Creators can contribute to the Creator Portal 
 
 Welcome to the public repo for Minecraft Bedrock documentation! Any articles you create or edit in this repo will be visible to the public.
 
-The Minecraft Bedrock docs are on the docs.microsoft.com platform, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo will be formatted into Microsoft Docs stylized pages that show up at [Minecraft Bedrock docs](/minecraft/creator). Content created by you and other members of the Bedrock Community will be released as a part of our content drops and Minecraft: Bedrock Edition updates.
+The Minecraft Bedrock docs are published to Microsoft Learn, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo will be formatted into Microsoft Docs stylized pages that are published to [Minecraft Bedrock documentation](/minecraft/creator). Content created by you and other members of the Bedrock Community will be released as a part of our content drops and Minecraft: Bedrock Edition updates.
 
 This page covers the basic steps and guidelines for contributing and links to Markdown basics. Thank you for your contribution!
 
@@ -68,7 +68,7 @@ If your change will rename or delete an existing article, be sure to add a redir
 
 To add a redirect to .openpublishing.redirection.json, add an entry to the `redirections` array:
 
-```JSON
+```json
 {
     "redirections": [
         {
@@ -76,6 +76,9 @@ To add a redirect to .openpublishing.redirection.json, add an entry to the `redi
             "redirect_url": "new-article#section-about-old-topic",
             "redirect_document_id": false
         },
+        ...
+    ]
+}
 ```
 
 - The `source_path` is the relative repository path to the old article that you're removing. Be sure the path starts with `minecraft-creator/creator` and ends with `.md`.
@@ -133,11 +136,11 @@ The following resources will help you learn how to edit documentation using the 
 
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Markdown-at-a-glance reference poster](media/ContributorGuide/MarkdownPoster.jpg)
-- [Additional resources for writing Markdown for docs.microsoft.com](/contribute/markdown-reference)
+- [Additional resources for writing Markdown for Microsoft Learn content](/contribute/markdown-reference)
 
 ### Adding tables
 
-Because of the way docs.microsoft.com styles tables, they won’t have borders or custom styles even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. Here’s a site that makes Markdown tables easy.
+When tables are styled in Microsoft Learn content, they won't have borders or custom styles even if you try using inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. Here’s a site that makes Markdown tables easy.
 
 The Docs Markdown Extension for Visual Studio Code also makes table generation easy if you're using Visual Studio Code (see below) to edit the documentation.
 
@@ -166,7 +169,7 @@ To learn how to set up your own forked repo, follow the instructions for creatin
 While editing in GitHub via a web browser, you can select the Preview tab near the top of the page to preview your work before committing.
 
 >[!NOTE]
->Previewing your changes on review.docs.microsoft.com is only available to Microsoft employees
+>Previewing your changes on `review.learn.microsoft.com` is only available to Microsoft employees.
 
 Microsoft employees: once your contributions have been merged into the 'main' branch, you can review the content before it goes public at https://github.com/MicrosoftDocs/minecraft-creator/tree/main/creator. Find your article using the table of contents in the left column.
 
