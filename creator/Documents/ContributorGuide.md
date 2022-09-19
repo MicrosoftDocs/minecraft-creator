@@ -68,7 +68,7 @@ If your change will rename or delete an existing article, be sure to add a redir
 
 To add a redirect to .openpublishing.redirection.json, add an entry to the `redirections` array:
 
-```JSON
+```json
 {
     "redirections": [
         {
@@ -76,6 +76,9 @@ To add a redirect to .openpublishing.redirection.json, add an entry to the `redi
             "redirect_url": "new-article#section-about-old-topic",
             "redirect_document_id": false
         },
+        ...
+    ]
+}
 ```
 
 - The `source_path` is the relative repository path to the old article that you're removing. Be sure the path starts with `minecraft-creator/creator` and ends with `.md`.
