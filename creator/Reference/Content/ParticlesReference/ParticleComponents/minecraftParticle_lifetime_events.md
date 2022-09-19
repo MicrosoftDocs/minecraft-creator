@@ -18,14 +18,6 @@ This component allows for triggering events based on various lifetime events.
       "expiration_event": [<string>, ...] // fires when the particle expires (does not wait for particles to expire too)
       "expiration_event": <string>,
 
-      "custom_events: {
-        {
-          "eventtrigger" molang,
-          "eventname": event
-        },
-        ...
-      }
-
       // event timeline
       "timeline": {
         // a series of times, e.g. 0.0 or 1.0, that trigger the event
