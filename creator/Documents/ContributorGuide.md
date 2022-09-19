@@ -84,7 +84,7 @@ To add a redirect to .openpublishing.redirection.json, add an entry to the `redi
 - The `source_path` is the relative repository path to the old article that you're removing. Be sure the path starts with `minecraft-creator/creator` and ends with `.md`.
 - The `redirect_url` is the relative public URL from the old article to the new article. Be sure that this URL **doesn't** contain `minecraft-creator/creator` or `.md`, as it refers to the public URL and not the repository path. Linking to a section within the new article using #section is allowed. You can also use an absolute path to another site here if necessary.
 - `redirect_document_id` indicates whether you would like to keep the document ID from the previous file. The default is false. Use true if you want to preserve the ms.documentid attribute value from the redirected article. If you preserve the document ID, data, such as page views and rankings, will be transferred to the target article. Do this if the redirect is primarily a rename, and not a pointer to different article that only covers some of the same content.
-styles tale
+
 If you add a redirect, be sure to delete the old file as well.
 
 ## Creating a new article
