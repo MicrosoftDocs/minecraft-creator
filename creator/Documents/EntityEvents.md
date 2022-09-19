@@ -20,8 +20,8 @@ In this tutorial you will learn more about events, including sequential events, 
 
 It's recommended that the following be completed before beginning this tutorial.
 
-- [Introduction to Add Entity](/creator/documents/IntroductionToAddEntity.md)
-- [Entity Behavior Introduction](/creator/Documents/EntityBehaviorIntroduction.md)
+- [Introduction to Add Entity](IntroductionToAddEntity.md)
+- [Entity Behavior Introduction](EntityBehaviorIntroduction.md)
 
 ## Events Overview
 
@@ -78,11 +78,13 @@ A few events are built into Minecraft and run if the entity is spawned under cer
 
 ### What are Spawn Events?
 
-The [/summon command](/creator/documents/commandspopularcommands#summon) and a few entity components can take a `spawnEvent` argument. Spawn events have been described in several places as any of the events that can be found in an entity's behavior definition, but this isn't entirely accurate.
+The `/summon` command and a few entity components can take a `spawnEvent` argument. Spawn events have been described in several places as any of the events that can be found in an entity's behavior definition, but this isn't entirely accurate.
 
 The Minecraft engine has a concept of a desired `spawn event` when an entity is created. When an entity is created from a spawn egg for example, the `minecraft:entity_spawned` event is run as the spawn event. When an entity is created, for example from two cows breeding, the spawn event is `minecraft:entity_born`.
 
-Other examples of less common spawn events are `minecraft:entity_transformed`, often used by a `minecraft:transformation` component, and `minecraft:from_wandering_trader` which is a spawn event on the llama, used when the Wandering Trader spawns to create its appropriately decorated llamas.
+Other examples of less common spawn events are:
+- `minecraft:entity_transformed` which is often used by a `minecraft:transformation` component.
+- `minecraft:from_wandering_trader` which is a spawn event on the llama that is used when the Wandering Trader spawns to create its appropriately decorated llamas.
 
 The spawn event that is used when creating an entity, whether the event is specified or automatically selected, is run on the entity as it is being created. You can think of it as a `constructor` in programming language terms. The entity starts with the default-included components list, as specified in its behavior JSON file. Then it also gets the effects of its spawn event, which will probably `add` one or more `component_groups`, possibly based on some random selection.
 
@@ -186,7 +188,7 @@ An event consists of up to five parameters. The parameters test and value are re
 | domain        | This is only used by a few tests to provide additional context, such as the inventory slot to test in for the has_equipment test.                      |
 
 > [!NOTE]  
-> A full list of the filters, and how these parameters interact with them, can be found in [the Entities filter list in the reference documentation](/creator/reference/Content/EntityReference/Examples/FilterList.md).
+> A full list of the filters, and how these parameters interact with them, can be found in [the Entities filter list](../reference/Content/EntityReference/Examples/FilterList.md).
 
 A minimal example of a filter inside an event could look like the sample below. The component group can only be added if the entity has the tag `event_allowed`.
 
@@ -297,4 +299,4 @@ Imagine an entity with the above JSON does not have any component groups added y
 The entity events system allows for component groups and custom functionality to be included in both existing Vanilla entities and new, custom entities. If you want to learn more about designing how your entity looks and moves, check out the entity modeling and animation tutorial.
 
 > [!div class="nextstepaction"]  
-> [Entity Modeling and Animation](/creator/documents/EntityModelingAndAnimation.md)
+> [Entity Modeling and Animation](EntityModelingAndAnimation.md)

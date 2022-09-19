@@ -20,7 +20,7 @@ In this tutorial you will learn the following:
 
 It’s recommended that the following be completed before beginning this tutorial.
 
-- [Introduction to Add Entity](/creator/documents/IntroductionToAddEntity.md)
+- [Introduction to Add Entity](IntroductionToAddEntity.md)
 
 ## Introduction
 
@@ -33,7 +33,7 @@ Entity JSON file structure includes:
 - **Metadata** such as the identifier, spawning and summoning settings.
 - **Components** that define active behavior such as visibility, family, health, and collision box behavior. These behaviors are applied to the entity immediately.
 - **Component groups** are not applied but may be evoked by events. They apply additional Minecraft behavior, including behaviors like aging and herd behavior.
-- **Events** which allow custom behavior to run based on the Minecraft event system. We will discuss events more in the [Entity Events article](/creator/documents/EntityEvents.md).
+- **Events** which allow custom behavior to run based on the Minecraft event system. We will discuss events more in the [Entity Events article](EntityEvents.md).
 
 Components were created to be small units of reusable behaviors to be used by creators to customize entities. For example, the tameable component can make entities like ocelots and wolves tameable.
 
@@ -90,7 +90,7 @@ A full list of available components can be found in the [Component List](/minecr
 A good way to learn about a component and see how it's used in practice is to look at the entity JSON files of default Minecraft entities. You can always find the latest default behavior pack at this URL: <https://aka.ms/behaviorpacktemplate>.
 
 > [!NOTE]
-> The way a component works can sometimes change between versions. Learn more about versions in [the manifest reference documentation](/creator/reference/content/addonsreference/examples/addonmanifest). You're encouraged to always use the latest version of the component as it's been refined and can include fixes.
+> The way a component works can sometimes change between versions. Learn more about versions in [the manifest reference documentation](../reference/content/addonsreference/examples/addonmanifest). You're encouraged to always use the latest version of the component as it's been refined and can include fixes.
 
 ## Essential Components
 
@@ -253,4 +253,4 @@ Here are a few ideas:
 The component system allows you to customize what your entity does and how it interacts with the world. If you want to learn more about entity events and using them to add more component groups with more customized behavior, see the Entity Events documentation.
 
 > [!div class="nextstepaction"]  
-> [Entity Events](/creator/documents/EntityEvents.md)
+> [Entity Events](EntityEvents.md)
