@@ -86,6 +86,8 @@
             href: Documents/TickingAreaCommand.md
           - name: New /execute command syntax
             href: Documents/CommandsNewExecute.md
+          - name: Copy and Paste Coordinates
+            href: Documents/CopyCoordinates.md
           - name: How to use tick.json
             href: Documents/TickJsonIntroduction.md
         - name: Minecraft Entities

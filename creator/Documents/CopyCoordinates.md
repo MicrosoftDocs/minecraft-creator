@@ -5,9 +5,10 @@ title: Copy and Paste Coordinates
 ms.prod: gaming
 description: A tutorial about the copy and paste coordinates feature.
 ---
-# Getting Started with Command Blocks
+# Introduction to Copying and Pasting Coordinates
 
 Minecraft players and creators frequently share and use coordinates through various areas of gameplay. The ability to capture and paste the players’ relative coordinates on any platform allows for faster content creation, command execution, and communication.
+
 The copy coordinates function focuses on commonly visited screens which often require coordinate information. The chat screen contains the majority of the changes; adding a field, dropdown selector, and copy and paste button for viewing and retrieving relative coordinates. The command block screen has a paste button that allows easy data transfer when creating control scenarios.
 
 > [!div class="checklist"]
