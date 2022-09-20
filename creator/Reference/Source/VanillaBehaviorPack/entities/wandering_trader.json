@@ -23,7 +23,8 @@
           "broadcastAnger": true,
           "broadcastRange": 10,
           "broadcast_targets": [
-            "llama"
+            "llama",
+            "trader_llama"
           ],
           "broadcast_filters": { "test": "is_leashed_to", "subject": "other", "value": true },
           "calm_event": {
@@ -56,7 +57,7 @@
           {
             "min_wait_time": 0,
             "max_wait_time": 0,
-            "spawn_entity": "llama",
+            "spawn_entity": "trader_llama",
             "spawn_event": "minecraft:from_wandering_trader",
             "single_use": true,
             "num_to_spawn": 2,
@@ -96,7 +97,7 @@
       "minecraft:navigation.walk": {
         "can_path_over_water": true,
         "can_pass_doors": true,
-        "can_open_doors": true,
+        "can_open_doors": false,
         "avoid_water": true
       },
       "minecraft:movement.basic": {
@@ -104,6 +105,9 @@
       "minecraft:jump.static": {
       },
       "minecraft:can_climb": {
+      },
+      "minecraft:home": {
+        "restriction_radius": 16
       },
       "minecraft:behavior.float": {
         "priority": 0
@@ -226,7 +230,8 @@
                 { "test": "is_family", "subject": "other", "value": "zombie_villager" },
                 { "test": "is_family", "subject": "other", "value": "zombie_pigman" },
                 { "test": "is_family", "subject": "other", "value": "illager" },
-                { "test": "is_family", "subject": "other", "value": "vex" }
+                { "test": "is_family", "subject": "other", "value": "vex" },
+                { "test" : "is_family", "subject" : "other", "value" : "zoglin" }
               ]
             },
             "walk_speed_multiplier": 0.6,
@@ -235,12 +240,23 @@
         ],
         "max_dist": 6
       },
-      "minecraft:behavior.restrict_open_door": {
-        "priority": 5
+      "minecraft:behavior.drink_milk": {
+        "priority": 5,
+        "filters": {
+          "all_of": [
+            { "test": "is_daytime", "value" : true },
+            { "test": "is_visible", "subject": "self", "value": false },
+            { "test": "is_avoiding_mobs", "subject": "self", "value": false }
+          ]
+        }
       },
-      "minecraft:behavior.open_door": {
+      "minecraft:behavior.move_towards_home_restriction": {
         "priority": 6,
-        "close_door_after": true
+        "speed_multiplier": 0.6
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 7,
+        "speed_multiplier": 0.6
       },
       "minecraft:behavior.look_at_player": {
         "priority": 8,
@@ -255,6 +271,8 @@
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
+      },
+      "minecraft:nameable": {
       }
     },
     "events": {

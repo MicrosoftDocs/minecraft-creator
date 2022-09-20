@@ -1,6 +1,6 @@
 ---
 author: neonerz
-ms.author: v-jeffreykim
+ms.author: mikeam
 title: Entity Modeling and Animation
 ms.prod: gaming
 ---

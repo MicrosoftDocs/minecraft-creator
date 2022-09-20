@@ -287,7 +287,8 @@
               "play_sounds": "shear",
               "spawn_items": { "table": "loot_tables/entities/mooshroom_shear.json" },
               "particle_on_start": { "particle_type": "largeexplode", "particle_y_offset": 0.25, "particle_offset_towards_interactor": true },
-              "interact_text": "action.interact.mooshear"
+              "interact_text": "action.interact.mooshear",
+              "vibration": "shear"
             },
             {
               "on_interact": {
@@ -306,7 +307,8 @@
               "play_sounds": "shear",
               "spawn_items": { "table": "loot_tables/entities/brown_mooshroom_shear.json" },
               "particle_on_start": { "particle_type": "largeexplode", "particle_y_offset": 0.25, "particle_offset_towards_interactor": true },
-              "interact_text": "action.interact.mooshear"
+              "interact_text": "action.interact.mooshear",
+              "vibration": "shear"
             },
             {
               "on_interact": {

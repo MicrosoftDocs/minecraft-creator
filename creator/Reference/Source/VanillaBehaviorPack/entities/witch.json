@@ -34,7 +34,7 @@
           "update_interval_base": 60,
           "update_interval_variant": 40,
           "can_find_poi": false,
-          "can_migrate": false,
+          "can_migrate": true,
           "first_founding_reward": 0
         },
         "minecraft:behavior.move_to_village": {
@@ -47,6 +47,9 @@
           "range": 4.0,
           "event_name": "ambient.in.raid"
         }
+      },
+      "minecraft:raid_persistence": {
+        "minecraft:persistent": {}
       }
     },
     "components": {
@@ -169,15 +172,32 @@
       "minecraft:spawn_for_raid": {
         "add": {
           "component_groups": [
-            "minecraft:raid_configuration"
+            "minecraft:raid_configuration",
+            "minecraft:raid_persistence"
           ]
         }
       },
       "minecraft:start_celebrating": { // Event must be called exactly this for village to fire it when a raid is lost
-        "add": { "component_groups": [ "minecraft:celebrate" ] }
+        "sequence": [
+          {
+            "add": { "component_groups": [ "minecraft:celebrate" ] }
+          },
+          {
+            "filters": { "test": "has_nametag", "value": false },
+            "remove": { "component_groups": [ "minecraft:raid_persistence" ] }
+          }
+        ]
       },
       "minecraft:stop_celebrating": {
         "remove": { "component_groups": [ "minecraft:celebrate" ] }
+      },
+      "minecraft:raid_expired": {
+        "sequence": [
+          {
+            "filters": { "test": "has_nametag", "value": false },
+            "remove": { "component_groups": [ "minecraft:raid_persistence" ] }
+          }
+        ]
       }
     }
   }

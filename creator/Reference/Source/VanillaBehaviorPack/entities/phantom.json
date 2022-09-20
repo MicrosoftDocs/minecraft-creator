@@ -49,6 +49,9 @@
       },
       "minecraft:conditional_bandwidth_optimization": {
       },
+      "minecraft:game_event_movement_tracking": {
+        "emit_flap": true
+      },
       "minecraft:attack": {
         "damage": 6
       },

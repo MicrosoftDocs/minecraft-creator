@@ -1,4 +1,5 @@
 {
+  "format_version":"1.18.10",
   "tiers": [
     {
       "total_exp_required": 0,
@@ -279,12 +280,48 @@
             {
               "wants": [
                 {
-                  "item": "minecraft:boat",
-                  "quantity": 1,
-                  "price_multiplier": 0.05,
-                  "functions": [
+                  "choice" : [
                     {
-                      "function": "trader_material_type"
+                      "item": "minecraft:oak_boat",
+                      "quantity": 1,
+                      "price_multiplier": 0.05,
+                      "biomes": [
+                        "plains"
+                      ]
+                    },
+                    {
+                      "item": "minecraft:spruce_boat",
+                      "quantity": 1,
+                      "price_multiplier": 0.05,
+                      "biomes": [
+                        "snow",
+                        "taiga"
+                      ]
+                    },
+                    {
+                      "item": "minecraft:jungle_boat",
+                      "quantity": 1,
+                      "price_multiplier": 0.05,
+                      "biomes": [
+                        "desert",
+                        "jungle"
+                      ]
+                    },
+                    {
+                      "item": "minecraft:acacia_boat",
+                      "quantity": 1,
+                      "price_multiplier": 0.05,
+                      "biomes": [
+                        "savannah"
+                      ]
+                    },
+                    {
+                      "item": "minecraft:dark_oak_boat",
+                      "quantity": 1,
+                      "price_multiplier": 0.05,
+                      "biomes": [
+                        "swamp"
+                      ]
                     }
                   ]
                 }

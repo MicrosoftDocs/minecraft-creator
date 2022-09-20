@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.18.10",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:slime",
@@ -9,6 +9,9 @@
     },
     "component_groups": {
       "minecraft:slime_large": {
+        "minecraft:variant": {
+          "value": 4
+        },
         "minecraft:collision_box": {
           "width": 2.08,
           "height": 2.08
@@ -26,6 +29,9 @@
       },
 
       "minecraft:slime_medium": {
+        "minecraft:variant": {
+          "value": 2
+        },
         "minecraft:collision_box": {
           "width": 1.04,
           "height": 1.04
@@ -43,6 +49,9 @@
       },
 
       "minecraft:slime_small": {
+        "minecraft:variant": {
+          "value": 1
+        },
         "minecraft:collision_box": {
           "width": 0.52,
           "height": 0.52
@@ -178,8 +187,41 @@
 
     "events": {
       "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 1,
+            "trigger": "spawn_small"
+          },
+          {
+            "weight": 1,
+            "trigger": "spawn_medium"
+          },
+          {
+            "weight": 1,
+            "trigger": "spawn_large"
+          }
+        ]
+      },
+      "spawn_small": {
         "add": {
           "component_groups": [
+            "minecraft:slime_small",
+            "minecraft:slime_calm"
+          ]
+        }
+      },
+      "spawn_medium": {
+        "add": {
+          "component_groups": [
+            "minecraft:slime_medium",
+            "minecraft:slime_calm"
+          ]
+        }
+      },
+      "spawn_large": {
+        "add": {
+          "component_groups": [
+            "minecraft:slime_large",
             "minecraft:slime_calm"
           ]
         }
