@@ -94,6 +94,7 @@ A good way to learn about a component and see how it's used in practice is to lo
 
 ## Essential Components
 
+
 | **Component Name**   | **Options**| **Description**  |
 |----|-----------|--------|
 | `minecraft:physics`| `has_collision`  `has_gravity` | You'll need this component on 99% of custom entities. It allows the entity to stay on the ground and react to interaction and punches in a way that you would expect.      |
@@ -170,6 +171,7 @@ In this example, a component group is defined which can cause the entity to beco
                 }
             }
         }   
+
     }
 }
 ```
@@ -215,6 +217,7 @@ In order to avoid this behavior, you need to add a new component group with the 
         "remove":{
             "component_groups":[
                 "adult"
+
             ]
         },
         "add":{
