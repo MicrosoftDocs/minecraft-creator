@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:trail
 ms.prod: gaming
 ---
@@ -31,7 +31,12 @@ ms.prod: gaming
 
 ### snow_golem
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/snow_golem.json" range="120-123":::
+```json
+"minecraft:trail": {
+        "block_type": "minecraft:snow_layer",
+        "spawn_filter": { "test": "is_temperature_value", "operator": "<", "value": 0.81 }
+      }
+```
 
 ## Vanilla entities using `minecraft:trail`
 

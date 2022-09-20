@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:trade_table
 ms.prod: gaming
 ---
@@ -33,13 +33,15 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### villager
+### farmer villager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager.json" range="125-129":::
-
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager.json" range="140-144":::
-
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager.json" range="155-159":::
+```json
+"minecraft:trade_table": {
+          "display_name": "entity.villager.farmer",
+          "table": "trading/farmer_trades.json",
+          "convert_trades_economy": true
+        }
+```
 
 ## Vanilla entities using `minecraft:trade_table`
 

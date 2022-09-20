@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:genetics
 ms.prod: gaming
 ---
@@ -81,7 +81,68 @@ ms.prod: gaming
 
 ### panda
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/panda.json" range="471-532":::
+```json
+"mutation_rate": 0.03125,
+        "genes": [
+          {
+            "name": "panda_variant",
+            "allele_range": {
+              "range_min": 0,
+              "range_max": 15
+            },
+            "genetic_variants": [
+              {
+                "main_allele": 0,
+                "birth_event": {
+                  "event": "minecraft:panda_lazy",
+                  "target": "self"
+                }
+              },
+              {
+                "main_allele": 1,
+                "birth_event": {
+                  "event": "minecraft:panda_worried",
+                  "target": "self"
+                }
+              },
+              {
+                "main_allele": 2,
+                "birth_event": {
+                  "event": "minecraft:panda_playful",
+                  "target": "self"
+                }
+              },
+              {
+                "main_allele": 3,
+                "birth_event": {
+                  "event": "minecraft:panda_aggressive",
+                  "target": "self"
+                }
+              },
+              {
+                "both_allele": {
+                  "range_min": 4,
+                  "range_max": 7
+                },
+                "birth_event": {
+                  "event": "minecraft:panda_weak",
+                  "target": "self"
+                }
+              },
+              {
+                "both_allele": {
+                  "range_min": 8,
+                  "range_max": 9
+                },
+                "birth_event": {
+                  "event": "minecraft:panda_brown",
+                  "target": "self"
+                }
+              }
+            ]
+          }
+        ]
+```
 
 ## Vanilla entities using `minecraft:genetics`
 

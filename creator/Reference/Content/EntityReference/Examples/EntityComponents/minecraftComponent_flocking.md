@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:flocking
 ms.prod: gaming
 ---
@@ -61,7 +61,28 @@ ms.prod: gaming
 
 ### fish
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fish.json" range="112-131":::
+```json
+"minecraft:flocking": {
+        "in_water": true,
+        "match_variants": false,
+        "use_center_of_mass": true,
+        "low_flock_limit": 4,
+        "high_flock_limit": 8,
+        "goal_weight": 2.0,
+        "loner_chance": 0.1,
+        "influence_radius": 3.0,
+        "breach_influence": 7.0,
+        "separation_weight": 1.75,
+        "separation_threshold": 0.95,
+        "cohesion_weight": 2.0,
+        "cohesion_threshold": 1.95,
+        "innner_cohesion_threshold": 1.25,
+        "min_height": 1.5,
+        "max_height": 6.0,
+        "block_distance": 2.0,
+        "block_weight": 0.85
+      }
+```
 
 ## Vanilla entities using `minecraft:flocking`
 

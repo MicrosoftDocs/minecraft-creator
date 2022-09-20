@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:out_of_control
 ms.prod: gaming
 ---
@@ -22,7 +22,25 @@ ms.prod: gaming
 
 In the `boat` entity, `minecraft:out_of_control` is used in conjunction with `minecraft:buoyant`to create a custom event.
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/boat.json" range="80-93":::
+```json
+"minecraft:out_of_control": {
+        }
+      },
+      "minecraft:above_bubble_column_up": {
+        "minecraft:buoyant": {
+          "base_buoyancy": 1.0,
+          "apply_gravity": true,
+          "simulate_waves": false,
+          "liquid_blocks": [
+            "minecraft:water",
+            "minecraft:flowing_water"
+          ],
+          "drag_down_on_buoyancy_removed": 0.7
+        },
+        "minecraft:out_of_control": {
+        }
+      }
+```
 
 ## Vanilla entities using `minecraft:out_of_control`
 

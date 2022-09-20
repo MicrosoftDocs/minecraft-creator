@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:ravager_blocked
 ms.prod: gaming
 ---
@@ -29,7 +29,24 @@ ms.prod: gaming
 
 ### ravager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ravager.json" range="232-247":::
+```json
+"minecraft:ravager_blocked": {
+        "knockback_strength": 3.0,
+        "reaction_choices": [
+          {
+            "weight": 1,
+            "value": {
+              "event": "minecraft:become_stunned",
+              "target": "self"
+            }
+          },
+          {
+            // Default, large knockback case
+            "weight": 1
+          }
+        ]
+      }
+```
 
 ## Vanilla entities using `minecraft:ravager_blocked`
 

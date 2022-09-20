@@ -105,9 +105,43 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### mooshroom
+### goat
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/mooshroom.json" range="67-326":::
+```json
+"minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_component",
+                      "subject": "self",
+                      "operator": "!=",
+                      "value": "minecraft:is_baby"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "bucket:0"
+                    }
+                  ]
+                }
+              },
+              "use_item": true,
+              "transform_to_item": "bucket:1",
+              "play_sounds": "milk_suspiciously",
+              "interact_text": "action.interact.milk"
+            }
+          ]
+        }
+```
 
 ## Vanilla entities using `minecraft:interact`
 

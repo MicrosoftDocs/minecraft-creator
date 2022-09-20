@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:trusting
 ms.prod: gaming
 ---
@@ -33,7 +33,15 @@ ms.prod: gaming
 
 ### ocelot
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ocelot.json" range="41-47":::
+```json
+"minecraft:trusting": {
+          "probability": 0.33,
+          "trust_items": [ "fish", "salmon" ],
+          "trust_event": {
+            "event": "minecraft:on_trust",
+            "target": "self"
+          }
+```
 
 ## Vanilla entities using `minecraft:trusting`
 

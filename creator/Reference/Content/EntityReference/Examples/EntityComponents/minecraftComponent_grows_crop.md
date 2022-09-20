@@ -29,7 +29,12 @@ ms.prod: gaming
 
 ### bee
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/bee.json" range="216-219":::
+```json
+"minecraft:grows_crop": {
+                    "charges": 10,
+                    "chance": 0.03
+                }
+```
 
 ## Vanilla entities using `minecraft:grows_crop`
 

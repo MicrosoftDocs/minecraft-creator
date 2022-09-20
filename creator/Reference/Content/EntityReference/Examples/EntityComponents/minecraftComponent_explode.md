@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:explode
 ms.prod: gaming
 ---
@@ -42,9 +42,17 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### tnt
+### creeper
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/tnt.json" range="34-39":::
+```json
+"minecraft:explode": {
+          "fuse_length": 1.5,
+          "fuse_lit": true,
+          "power": 3,
+          "causes_fire": false,
+          "destroy_affected_by_griefing": true
+        }
+```
 
 ## Vanilla entities using `minecraft:explode`
 
