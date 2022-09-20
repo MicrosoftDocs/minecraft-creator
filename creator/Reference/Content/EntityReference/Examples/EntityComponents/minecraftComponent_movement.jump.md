@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:movement.jump
 ms.prod: gaming
 ---
@@ -32,7 +32,11 @@ ms.prod: gaming
 
 ### slime
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/slime.json" range="66-68":::
+```json
+"minecraft:movement.jump": {
+          "jump_delay": [ 0.5, 1.5 ]
+        }
+```
 
 ## Vanilla entities using `minecraft:movement.jump`
 

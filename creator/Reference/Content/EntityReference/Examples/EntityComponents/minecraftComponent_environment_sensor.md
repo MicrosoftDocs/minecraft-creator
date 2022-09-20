@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:environment_sensor
 ms.prod: gaming
 ---
@@ -50,7 +50,30 @@ ms.prod: gaming
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="116-137":::
+```json
+"minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "weather_at_position", "operator": "!=", "value": "thunderstorm" },
+                  { "test": "is_daytime", "value": true }
+                ]
+              },
+              "event": "minecraft:fox_configure_day"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  { "test": "weather_at_position", "operator": "!=", "value": "thunderstorm" },
+                  { "test": "is_daytime", "value": false }
+                ]
+              },
+              "event": "minecraft:fox_configure_night"
+            }
+          ]
+        }
+```
 
 ## Vanilla entities using `minecraft:environment_sensor`
 

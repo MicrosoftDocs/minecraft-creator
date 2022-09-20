@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:despawn
 ms.prod: gaming
 ---
@@ -53,7 +53,49 @@ ms.prod: gaming
 
 ### zoglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zoglin.json" range="141-181":::
+```json
+"minecraft:despawn": {
+        "filters": {
+          "any_of": [
+            {
+              "all_of": [
+                {
+                  "test": "is_persistent",
+                  "value": false
+                },
+                {
+                  "test": "distance_to_nearest_player",
+                  "operator": ">",
+                  "value": 54
+                }
+              ]
+            },
+            {
+              "all_of": [
+                {
+                  "test": "is_persistent",
+                  "value": false
+                },
+                {
+                  "test": "inactivity_timer",
+                  "subject": "self",
+                  "value": 30
+                },
+                {
+                  "test": "random_chance",
+                  "value": 800
+                },
+                {
+                  "test": "distance_to_nearest_player",
+                  "operator": ">",
+                  "value": 32
+                }
+              ]
+            }
+          ]
+        }
+      }
+```
 
 ## Vanilla entities using `minecraft:despawn`
 

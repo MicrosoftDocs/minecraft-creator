@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:pushable
 ms.prod: gaming
 ---
@@ -29,7 +29,12 @@ ms.prod: gaming
 
 ### minecart
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/minecart.json" range="37-40":::
+```json
+"minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+```
 
 ## Vanilla entities using `minecraft:pushable`
 

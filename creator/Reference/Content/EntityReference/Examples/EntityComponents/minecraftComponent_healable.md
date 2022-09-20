@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:healable
 ms.prod: gaming
 ---
@@ -45,7 +45,84 @@ ms.prod: gaming
 
 ### wolf
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wolf.json" range="299-374":::
+```json
+ "minecraft:healable": {
+        "items": [
+          {
+            "item": "porkchop",
+            "heal_amount": 3
+          },
+          {
+            "item": "cooked_porkchop",
+            "heal_amount": 8
+          },
+          {
+            "item": "fish",
+            "heal_amount": 2
+          },
+          {
+            "item": "salmon",
+            "heal_amount": 2
+          },
+          {
+            "item": "clownfish",
+            "heal_amount": 1
+          },
+          {
+            "item": "pufferfish",
+            "heal_amount": 1
+          },
+          {
+            "item": "cooked_fish",
+            "heal_amount": 5
+          },
+          {
+            "item": "cooked_salmon",
+            "heal_amount": 6
+          },
+          {
+            "item": "beef",
+            "heal_amount": 3
+          },
+          {
+            "item": "cooked_beef",
+            "heal_amount": 8
+          },
+          {
+            "item": "chicken",
+            "heal_amount": 2
+          },
+          {
+            "item": "cooked_chicken",
+            "heal_amount": 6
+          },
+          {
+            "item": "muttonRaw",
+            "heal_amount": 2
+          },
+          {
+            "item": "muttonCooked",
+            "heal_amount": 6
+          },
+          {
+            "item": "rotten_flesh",
+            "heal_amount": 4
+          },
+          {
+            "item": "rabbit",
+            "heal_amount": 3
+          },
+          {
+            "item": "cooked_rabbit",
+            "heal_amount": 5
+          },
+          {
+            "item": "rabbit_stew",
+            "heal_amount": 10
+          }
+        ]
+      }
+```
 
 ## Vanilla entities using `minecraft:healable`
 

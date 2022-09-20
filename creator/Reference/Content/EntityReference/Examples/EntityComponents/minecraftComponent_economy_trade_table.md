@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:economy_trade_table
 ms.prod: gaming
 ---
@@ -49,7 +49,13 @@ ms.prod: gaming
 
 ### wandering_trader
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wandering_trader.json" range="67-71":::
+```json
+"minecraft:economy_trade_table": {
+        "display_name": "entity.wandering_trader.name",
+        "table": "trading/economy_trades/wandering_trader_trades.json",
+        "new_screen": true
+      }
+```
 
 ## Vanilla entities using `minecraft:economy_trade_table`
 

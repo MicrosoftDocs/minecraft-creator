@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:insomnia
 ms.prod: gaming
 ---
@@ -27,7 +27,11 @@ ms.prod: gaming
 
 ### player
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/player.json" range="112-114":::
+```json
+"minecraft:insomnia": {
+        "days_until_insomnia": 3
+      },
+```
 
 ## Vanilla entities using `minecraft:insomnia`
 

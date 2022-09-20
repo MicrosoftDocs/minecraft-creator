@@ -29,7 +29,11 @@ ms.prod: gaming
 
 ### ghast
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ghast.json" range="48-50":::
+```json
+"minecraft:shooter": {
+    "def": "minecraft:fireball"
+}
+```
 
 ## Vanilla entities using `minecraft:shooter`
 

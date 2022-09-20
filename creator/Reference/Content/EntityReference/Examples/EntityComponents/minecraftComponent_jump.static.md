@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:jump.static
 ms.prod: gaming
 ---
@@ -27,7 +27,10 @@ ms.prod: gaming
 
 ### horse
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/horse.json" range="351-352":::
+```json
+"minecraft:jump.static": {
+      }
+```
 
 ## Vanilla entities using `minecraft:jump.static`
 

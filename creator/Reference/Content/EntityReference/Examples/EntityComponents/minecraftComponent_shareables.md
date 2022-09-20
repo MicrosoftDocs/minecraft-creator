@@ -1,6 +1,6 @@
 ---
 author: docsbryce
-ms.author: v-bbortree
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:shareables
 ms.prod: gaming
 ---
@@ -69,9 +69,63 @@ In this example, an entity wants to be able to make `bread` from `wheat`. Since 
 
 ## Vanilla entities examples
 
-### wither_skeleton
+### villager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither_skeleton.json" range="59-410":::
+```json
+"minecraft:shareables": {
+          "items": [
+            {
+              "item": "minecraft:bread",
+              "want_amount": 3,
+              "surplus_amount": 6,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:carrot",
+              "want_amount": 60,
+              "surplus_amount": 4,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:potato",
+              "want_amount": 60,
+              "surplus_amount": 24,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:beetroot",
+              "want_amount": 60,
+              "surplus_amount": 24,
+              "stored_in_inventory": true
+            },
+            {
+              "item": "minecraft:wheat_seeds",
+              "want_amount": 64,
+              "surplus_amount": 64,
+              "stored_in_inventory": true,
+              "pickup_only": true
+            },
+            {
+              "item": "minecraft:beetroot_seeds",
+              "want_amount": 64,
+              "surplus_amount": 64,
+              "stored_in_inventory": true,
+              "pickup_only": true
+            },
+            {
+              "item": "minecraft:wheat",
+              "want_amount": 45,
+              "surplus_amount": 18,
+              "craft_into": "minecraft:bread",
+              "stored_in_inventory": true
+            }
+          ]
+        },
+        "minecraft:behavior.harvest_farm_block": {
+          "priority": 9,
+          "speed_multiplier": 0.5
+        }
+```
 
 ## Vanilla entities using `minecraft:shareables`
 

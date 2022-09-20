@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:persistent
 ms.prod: gaming
 ---
@@ -20,7 +20,10 @@ ms.prod: gaming
 
 ### armor_stand
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/armor_stand.json" range="39-40":::
+```json
+"minecraft:persistent": {
+}
+```
 
 ## Vanilla entities using `minecraft:persistent`
 
