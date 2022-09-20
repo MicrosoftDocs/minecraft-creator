@@ -106,7 +106,9 @@
       },
       "minecraft:breathable": {
         "total_supply": 15,
-        "suffocate_time": 0
+        "suffocate_time": 0,
+        "breathes_lava": false,
+        "breathes_water": false
       },
       "minecraft:nameable": {
       },
@@ -121,15 +123,7 @@
         "value": 30,
         "max": 30
       },
-      "minecraft:hurt_on_condition": {
-        "damage_conditions": [
-          {
-            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
-            "cause": "lava",
-            "damage_per_tick": 4
-          }
-        ]
-      },
+      "minecraft:fire_immune": true,
       "minecraft:movement": {
         "value": 0.0,
         "max": 0.0
@@ -165,7 +159,15 @@
         "attack_radius": 15
       },
       "minecraft:behavior.hurt_by_target": {
-        "priority": 2
+        "priority": 2,
+        "entity_types": {
+          "filters": {
+            "test": "is_family",
+            "subject": "other",
+            "operator": "!=",
+            "value": "shulker"
+          }
+        }
       },
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 3,

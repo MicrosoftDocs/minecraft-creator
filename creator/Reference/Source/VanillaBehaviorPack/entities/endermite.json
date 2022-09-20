@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.17.10",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:endermite",
@@ -103,6 +103,8 @@
         "is_pushable_by_piston": true
       },
       "minecraft:conditional_bandwidth_optimization": {
+      },
+      "minecraft:block_climber": {
       }
     }
   }

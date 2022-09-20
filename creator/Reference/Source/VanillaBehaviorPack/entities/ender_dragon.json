@@ -100,6 +100,9 @@
       "minecraft:physics": {
         "has_gravity": false,
         "has_collision": false
+      },
+      "minecraft:game_event_movement_tracking": {
+        "emit_flap": true
       }
     },
 

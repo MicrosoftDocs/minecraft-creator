@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.18.10",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:iron_golem",
@@ -91,6 +91,37 @@
       },
       "minecraft:can_climb": {
       },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "iron_ingot"
+                  },
+                  {
+                    "test": "is_missing_health",
+                    "value": true
+                  }
+                ]
+              }
+            },
+            "use_item": true,
+            "health_amount": 25,
+            "play_sounds": "irongolem.repair",
+            "interact_text": "action.interact.repair"
+          }
+        ]
+      },
       "minecraft:attack": {
         "damage": {
           "range_min": 7,
@@ -112,23 +143,23 @@
         "max_distance": 10.0
       },
       "minecraft:balloonable": {
-		"mass": 2.0
+        "mass": 2.0
       },
-      "minecraft:preferred_path" : {
-        "max_fall_blocks" : 1,
-        "jump_cost" : 5,
-        "default_block_cost" : 1.5,
-        "preferred_path_blocks" : [
-          { 
-            "cost" : 0,
-            "blocks" : [ 
+      "minecraft:preferred_path": {
+        "max_fall_blocks": 1,
+        "jump_cost": 5,
+        "default_block_cost": 1.5,
+        "preferred_path_blocks": [
+          {
+            "cost": 0,
+            "blocks": [
               "grass_path"
             ]
           },
-          { 
-            "cost" : 1,
-            "blocks" : [ 
-              "cobblestone", 
+          {
+            "cost": 1,
+            "blocks": [
+              "cobblestone",
               "stone",
               "stonebrick",
               "sandstone",
@@ -174,11 +205,11 @@
               "green_glazed_terracotta",
               "red_glazed_terracotta",
               "black_glazed_terracotta"
-             ]
+            ]
           },
-          { 
-            "cost" : 50,
-            "blocks" : [ 
+          {
+            "cost": 50,
+            "blocks": [
               "bed",
               "lectern",
               "composter",
@@ -202,7 +233,7 @@
         "percent_chance": 5.0,
         "entity_types": [
           {
-            "filters": { 
+            "filters": {
               "all_of": [
                 { "test" :  "is_family", "subject" : "other", "value" :  "monster" },
                 { "test" :  "is_family", "subject" : "other", "operator": "!=", "value" :  "creeper" }

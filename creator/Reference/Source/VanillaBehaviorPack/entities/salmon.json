@@ -13,11 +13,6 @@
         "minecraft:scale": {
           "value": 0.5
         },
-
-        "minecraft:health": {
-          "value": 6,
-          "max": 6
-        },
         "minecraft:loot": {
           "table": "loot_tables/entities/salmon_normal.json"
         }
@@ -25,11 +20,6 @@
       "scale_normal": {
         "minecraft:scale": {
           "value": 1
-        },
-
-        "minecraft:health": {
-          "value": 6,
-          "max": 6
         },
         "minecraft:loot": {
           "table": "loot_tables/entities/salmon_normal.json"
@@ -39,10 +29,6 @@
       "scale_large": {
         "minecraft:scale": {
           "value": 1.5
-        },
-        "minecraft:health": {
-          "value": 6,
-          "max": 6
         },
         "minecraft:loot": {
           "table": "loot_tables/entities/salmon_large.json"
@@ -68,6 +54,10 @@
         "suffocate_time": 0,
         "breathes_air": false,
         "breathes_water": true
+      },
+      "minecraft:health": {
+        "value": 3,
+        "max": 3
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -103,7 +93,7 @@
         "is_pushable_by_piston": true
       },
       "minecraft:despawn": {
-        "despawn_from_distance": { 
+        "despawn_from_distance": {
           "min_distance": 32,
           "max_distance": 40
         }
@@ -113,9 +103,14 @@
         "entity_types": [
           {
             "filters": {
-              "test": "is_family",
-              "subject": "other",
-              "value": "player"
+              "any_of": [
+                {
+                  "test": "is_family", "subject": "other", "value": "player"
+                },
+                {
+                  "test": "is_family", "subject": "other", "value": "axolotl"
+                }
+              ]
             },
             "max_dist": 3,
             "max_flee": 10,

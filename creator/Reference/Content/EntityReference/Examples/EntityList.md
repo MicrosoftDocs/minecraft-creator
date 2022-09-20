@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - EntityList
 ms.prod: gaming
 ---
@@ -11,6 +11,7 @@ Below is a list of all the available Entities within Minecraft: Bedrock Edition 
 
 |Entity Behavior JSON |
 |:-----|
+|[allay](../../../Source/VanillaBehaviorPack_Snippets/entities/allay.md)|
 |[area_effect_cloud](../../../Source/VanillaBehaviorPack_Snippets/entities/area_effect_cloud.md)|
 |[armor_stand](../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)|
 |[arrow](../../../Source/VanillaBehaviorPack_Snippets/entities/arrow.md)|
@@ -22,6 +23,7 @@ Below is a list of all the available Entities within Minecraft: Bedrock Edition 
 |[cat](../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)|
 |[spider](../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)|
 |[chest_minecart](../../../Source/VanillaBehaviorPack_Snippets/entities/chest_minecart.md)|
+|[chest_boat](../../../Source/VanillaBehaviorPack_Snippets/entities/chest_boat.md)
 |[chicken](../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)|
 |[command_block_minecart](../../../Source/VanillaBehaviorPack_Snippets/entities/command_block_minecart.md)|
 |[cow](../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)|
@@ -44,6 +46,7 @@ Below is a list of all the available Entities within Minecraft: Bedrock Edition 
 |[fish](../../../Source/VanillaBehaviorPack_Snippets/entities/fish.md)|
 |[fishing_hook](../../../Source/VanillaBehaviorPack_Snippets/entities/fishing_hook.md)|
 |[fox](../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)|
+|[frog](../../../Source/VanillaBehaviorPack_Snippets/entities/frog.md)|
 |[ghast](../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)|
 |&nbsp; [glow_squid](../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)|
 |&nbsp; [goat](../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)|
@@ -91,6 +94,7 @@ Below is a list of all the available Entities within Minecraft: Bedrock Edition 
 |[squid](../../../Source/VanillaBehaviorPack_Snippets/entities/squid.md)|
 |[stray](../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)|
 |[strider](../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)|
+|[tadpole](../../../Source/VanillaBehaviorPack_Snippets/entities/tadpole.md)|
 |[thrown_trident](../../../Source/VanillaBehaviorPack_Snippets/entities/thrown_trident.md)|
 |[tnt_minecart](../../../Source/VanillaBehaviorPack_Snippets/entities/tnt_minecart.md)|
 |[tnt](../../../Source/VanillaBehaviorPack_Snippets/entities/tnt.md)|
@@ -102,6 +106,7 @@ Below is a list of all the available Entities within Minecraft: Bedrock Edition 
 |[villager](../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)|
 |[vindicator](../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)|
 |[wandering_trader](../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)|
+|[warden](../../../Source/VanillaBehaviorPack_Snippets/entities/warden.md)|
 |[witch](../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)|
 |[wither_skeleton](../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)|
 |[wither_skull_dangerous](../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skull_dangerous.md)|

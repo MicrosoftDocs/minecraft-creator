@@ -48,34 +48,6 @@
               "reward_exp": true
             }
           ]
-        }
-      ]
-    },
-    {
-      "total_exp_required": 10,
-      "groups": [
-        {
-          "num_to_select": 1,
-          "trades": [
-            {
-              "wants": [
-                {
-                  "item": "minecraft:iron_ingot",
-                  "quantity": 4,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 1
-                }
-              ],
-              "trader_exp": 10,
-              "max_uses": 12,
-              "reward_exp": true
-            }
-          ]
         },
         {
           "num_to_select": 1,
@@ -113,7 +85,7 @@
       ]
     },
     {
-      "total_exp_required": 70,
+      "total_exp_required": 10,
       "groups": [
         {
           "num_to_select": 1,
@@ -121,8 +93,8 @@
             {
               "wants": [
                 {
-                  "item": "minecraft:flint",
-                  "quantity": 24,
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 4,
                   "price_multiplier": 0.05
                 }
               ],
@@ -132,7 +104,7 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 20,
+              "trader_exp": 10,
               "max_uses": 12,
               "reward_exp": true
             }
@@ -155,7 +127,35 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 10,
+              "trader_exp": 5,
+              "max_uses": 12,
+              "reward_exp": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "total_exp_required": 70,
+      "groups": [
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:flint",
+                  "quantity": 24,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 20,
               "max_uses": 12,
               "reward_exp": true
             }

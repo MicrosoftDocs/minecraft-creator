@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.18.30",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:zoglin",
@@ -16,7 +16,7 @@
         "minecraft:is_baby": {
         },
         "minecraft:attack": {
-          "damage": 1
+          "damage": 0.5
         },
         "minecraft:scale": {
           "value": 0.5
@@ -78,7 +78,7 @@
         "max": 40
       },
       "minecraft:knockback_resistance": {
-        "value": 0.5
+        "value": 0.6
       },
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 3,
@@ -137,6 +137,8 @@
         "soft_distance": 4.0,
         "hard_distance": 6.0,
         "max_distance": 10.0
+      },
+      "minecraft:balloonable": {
       },
       "minecraft:despawn": {
         "filters": {

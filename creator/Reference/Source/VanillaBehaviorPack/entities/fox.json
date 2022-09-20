@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.17.10",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:fox",
@@ -703,6 +703,8 @@
             "event": "minecraft:fox_configure_day"
           }
         ]
+      },
+      "minecraft:block_climber": {
       }
     },
 

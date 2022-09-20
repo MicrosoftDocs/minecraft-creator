@@ -293,7 +293,7 @@
         "minecraft:behavior.nearest_attackable_target": {
           "priority": 7,
           "within_radius": 16.0,
-          "persist_time": 2.0,
+          "persist_time": 0.0,
           "entity_types": [
             {
               "filters": {
@@ -374,7 +374,8 @@
                   }
                 ]
               },
-              "max_dist": 16
+              "max_dist": 16,
+              "reevaluate_description": true
             },
             {
               "filters": {

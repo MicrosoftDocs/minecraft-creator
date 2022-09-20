@@ -426,6 +426,7 @@ Listed below are the available sounds:
 - `block.sculk.spread`
 - `block.sculk_sensor.place`
 - `block.sculk_shrieker.place`
+- `block.enchanting_table.use`
 - `undefined`
 
 ## Example

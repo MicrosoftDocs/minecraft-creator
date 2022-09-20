@@ -18,29 +18,29 @@ highlightedContent:
 # itemType:  architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     #card used to define plugin
-    - title: "Physically-Based Rendering"
+    - title: "Minecraft Maker Series"
       itemType: whats-new
-      url: Documents/RTXPBRIntro.md
+      url: Documents/MakerSeriesMakingTheGoblinChef.md
     #card
     - title: "Installing Add-Ons in Minecraft: Bedrock Edition"
       itemType: deploy
       url: Documents/AddonPackInstallation.md
     #card
-    - title: A Redstone Guide
+    - title: Structure Blocks
       itemType: whats-new
-      url: Documents/RedstoneGuide.md
+      url: Documents/IntroductionToStructureBlocks.md
     #card
-    - title: "Experimental Features in Minecraft: Bedrock Edition"
-      itemType: architecture
-      url: Documents/ExperimentalFeaturesToggle.md
+    - title: "Create a Custom NPC"
+      itemType: learn
+      url: Documents/CreateNPCs.md
     #card
-    - title: GameTest Reference Documentation
+    - title: Scripting
       itemType: reference
       url: ScriptAPI/index.yml
     #card
-    - title: Differences Between Minecraft Bedrock Edition and Minecraft Java Edition
-      itemType: architecture
-      url: Documents/DifferencesBetweenBedrockAndJava.md
+    - title: Mash-up Pack Overview
+      itemType: learn
+      url: Documents/MashupPackOverview.md
 
 # productDirectory section (optional)
 productDirectory:
@@ -113,6 +113,9 @@ conceptualContent:
             - url: Documents/EntityBehaviorIntroduction.md
               itemType: tutorial
               text: Entity Behavior Introduction
+            - url: Documents/EntityEvents.md
+              itemType: tutorial
+              text: Entity Events
         # card
         - title: Adding NPCs
           summary: "Populate your world with interactive characters to create unique narrative experiences."
@@ -157,9 +160,12 @@ conceptualContent:
       summary: "Learn how content works with Reference documentation and how GameTest can empower your workflow." # < 160 chars (optional)
       items:
       # card
-      - title: Using GameTest
-        summary: "Learn how the new GameTest Frameworks can speed up your development time."
+      - title: Using Script APIs
+        summary: "Learn how new experimental Script APIs can speed up your development time."
         links:
+          - url: Documents/ScriptDeveloperTools.md
+            itemType: how-to-guide
+            text: Use Visual Studio Code tools to write script
           - url: ScriptAPI/mojang-gametest/mojang-gametest.md
             itemType: reference
             text: GameTest API
@@ -169,9 +175,6 @@ conceptualContent:
           - url: Documents/GameTestBuildYourFirstGameTest.md
             itemType: how-to-guide
             text: Build your first GameTest
-          - url: Documents/ScriptDeveloperTools.md
-            itemType: how-to-guide
-            text: Use Visual Studio Code tools to write script
       # card
       - title: Reference Documentation
         summary: "Need a hand creating your content? View the reference documentation to see how things work in-game."

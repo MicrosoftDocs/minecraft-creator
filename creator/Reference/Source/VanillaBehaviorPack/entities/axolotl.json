@@ -43,7 +43,7 @@
         "minecraft:ageable": {
           "duration": 1200,
           "feed_items": "tropical_fish_bucket",
-          "transform_to_item": "bucket:0",
+          "transform_to_item": "water_bucket:0",
           "grow_up": {
             "event": "minecraft:ageable_grow_up",
             "target": "self"
@@ -66,7 +66,7 @@
         "minecraft:breedable": {
           "require_tame": false,
           "breed_items": "tropical_fish_bucket",
-          "transform_to_item": "bucket:0",
+          "transform_to_item": "water_bucket:0",
           "breeds_with": {
             "mate_type": "minecraft:axolotl",
             "baby_type": "minecraft:axolotl",
@@ -180,6 +180,7 @@
         "avoid_damage_blocks": true
       },
       "minecraft:movement.amphibious": {
+        "max_turn": 15.0
       },
       "minecraft:movement": {
         "value": 0.1
@@ -249,7 +250,8 @@
                 {
                   "any_of": [
                     { "test": "is_family", "subject": "other", "value": "squid" },
-                    { "test": "is_family", "subject": "other", "value": "fish" }
+                    { "test": "is_family", "subject": "other", "value": "fish" },
+                    { "test": "is_family", "subject": "other", "value": "tadpole" }
                   ]
                 }
               ]

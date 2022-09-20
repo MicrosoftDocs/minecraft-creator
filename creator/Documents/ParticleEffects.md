@@ -1,13 +1,13 @@
 ---
-author: neonerz
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Particle Effects
 ms.prod: gaming
 ---
 
 # Particle Effects
 
-From firework rockets leaving smoke behind, to bubbles coming out of a fish's mouth, Particles are a great way to add special effects to content within Minecraft: Bedrock Edition.
+From firework rockets leaving smoke behind to bubbles coming out of a fish's mouth, Particles are a great way to add special effects to content within Minecraft: Bedrock Edition.
 
 :::image type="content" source="Media/ParticleEffects/Particle-Effects.jpg" alt-text="Image showing Alex holding a wand with an array of sparks and flairs emitting from it":::
 
@@ -28,7 +28,7 @@ It’s recommended that the following be completed before beginning this tutoria
 
 ### Particle Use Cases
 
-Particles are a powerful tool to augment the visual experience of a map or Add-On. They can be used on entities for ambient effects like exhaust smoke, for attacks like magic spells, and for other animations. Particles can also be used for ambient effects in maps like falling leaves. You can also use particles to place simple 2D graphics in your world. Additionally, particles are typically more performant than custom entities because they’re simulated entirely client-side.
+Particles can greatly enhance the visual experience of a map or Add-On. They can be used on entities for effects like exhaust smoke, and for attack effects like magic spells. Particles can be used for ambiance effects like falling leaves. You can even use particles to place simple 2D graphics in your world. Additionally, particles are typically more performant than custom entities because they’re simulated entirely client-side.
 
 ### Naming and Location
 
@@ -44,11 +44,11 @@ The particle identifier is specified at the top of the JSON file. Just like with
 
 #### Units
 
-All values in particle effects use **meters** (blocks) and **seconds** as units. Velocity is stated as meters per second (**m/s**) and acceleration as m/s per second (**m/s²**). Rotations use **degrees**, both for rotations and trigonometric functions.
+All values in particle effects use **meters** (blocks) and **seconds** as units. Velocity is stated as meters per second (**m/s**) and acceleration meters per second squared (**m/s²**). Rotations use **degrees** both for rotations and trigonometric functions.
 
 ## Snowstorm
 
-We’ll be using Snowstorm to create the particle effects in this guide. Snowstorm can be used as a [web app](https://snowstorm.app/) or as an [extension](https://marketplace.visualstudio.com/items?itemName=JannisX11.snowstorm) for VSCode. It allows us to preview the particle effect live while we change parameters. The web app can be useful for beginners, but once you’re working on a project with a bunch of particle effects, the VSCode extension offers a faster workflow.
+We’ll be using Snowstorm to create the particle effects in this guide. Snowstorm can be used as a [web app](https://snowstorm.app/) or as an [extension](https://marketplace.visualstudio.com/items?itemName=JannisX11.snowstorm) for VSCode. It allows us to preview the particle effect live while we change parameters. The web app can be useful for beginners, but after you’re working on a project with multiple particle effects, the VSCode extension offers a faster workflow.
 
 ### Interface
 
@@ -56,9 +56,9 @@ When you open Snowstorm, you’ll see a 3D preview section, a sidebar, the menu 
 
 ![Snowstorm interface](Media/ParticleEffects/snowstorminterface.png)
 
-The sidebar is a list of all the different parameters and settings that make up your particle. Many of the fields support Molang. This means that you can input static numbers, but if you want to have more control over the value, you can also use mathematical expressions using the Molang language. Hover over each field to view a description of what it does.
+The sidebar is a list of all the different parameters and settings that make up your particle. Many of the fields support Molang. This means that you can input static numbers, but if you want to have more control over the value, you can use mathematical expressions that use the Molang language. Hover over each field to view a description of what it does.
 
-If you end up with a very complex Molang expression, you can also edit it in the expression bar right below the menu.
+If you end up with a very complex Molang expression, you can edit it in the expression bar right below the menu.
 
 ![Expression bar in Snowstorm](Media/ParticleEffects/snowstormexpressionbar.png)
 

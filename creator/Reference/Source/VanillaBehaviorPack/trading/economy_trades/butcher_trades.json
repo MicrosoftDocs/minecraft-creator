@@ -126,24 +126,6 @@
               ],
               "gives": [
                 {
-                  "item": "minecraft:cooked_rabbit",
-                  "quantity": 5
-                }
-              ],
-              "trader_exp": 5,
-              "max_uses": 16,
-              "reward_exp": true
-            },
-            {
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 1,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [
-                {
                   "item": "minecraft:cooked_chicken",
                   "quantity": 8
                 }
@@ -164,24 +146,6 @@
                 {
                   "item": "minecraft:cooked_porkchop",
                   "quantity": 5
-                }
-              ],
-              "trader_exp": 5,
-              "max_uses": 16,
-              "reward_exp": true
-            },
-            {
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 1,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [
-                {
-                  "item": "minecraft:muttoncooked",
-                  "quantity": 4
                 }
               ],
               "trader_exp": 5,
@@ -231,29 +195,6 @@
                 }
               ],
               "trader_exp": 20,
-              "max_uses": 16,
-              "reward_exp": true
-            }
-          ]
-        },
-        {
-        "num_to_select": 1,
-          "trades": [
-            {
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 1,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [
-                {
-                  "item": "minecraft:cooked_beef",
-                  "quantity": 3
-                }
-              ],
-              "trader_exp": 10,
               "max_uses": 16,
               "reward_exp": true
             }
