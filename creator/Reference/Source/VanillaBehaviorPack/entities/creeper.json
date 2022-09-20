@@ -214,15 +214,7 @@
         ]
       },
       "minecraft:behavior.hurt_by_target": {
-        "priority": 2,
-        "entity_types": {
-          "filters": {
-            "test": "is_family",
-            "subject": "other",
-            "operator": "!=",
-            "value":  "goat"
-          }
-        }
+        "priority": 2
       },
       "minecraft:physics": {
       },

@@ -1,6 +1,6 @@
 ---
 author: neonerz
-ms.author: v-jeffreykim
+ms.author: mikeam
 title: Preparing Raw Text for Localization
 ms.prod: gaming
 ---

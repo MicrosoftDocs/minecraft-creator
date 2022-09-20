@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Contributing to Minecraft Bedrock Documentation
 ms.prod: gaming
 description: A guide covering how Creators can contribute to the Creator Portal public repository and how user-created content is integrated into the Portal.

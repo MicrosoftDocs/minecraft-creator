@@ -147,12 +147,8 @@
         },
         "minecraft:permute_type": [
           {
-            "weight": 80,
+            "weight": 100,
             "entity_type": "minecraft:pillager<minecraft:spawn_as_patrol_follower>"
-          },
-          {
-            "weight": 20,
-            "entity_type": "minecraft:vindicator"
           }
         ],
         "minecraft:biome_filter": {

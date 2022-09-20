@@ -1,6 +1,6 @@
 ---
 author: neonerz
-ms.author: v-jeffreykim
+ms.author: mikeam
 title: Chunker - How to Clear The Nether
 ms.prod: gaming
 description: "When converting content with Chunker, some extra steps are needed for bringing over The Nether"

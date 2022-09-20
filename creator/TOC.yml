@@ -134,18 +134,18 @@
             href: Documents/StructureBlocksTutorial.md
     - name: Tools and Frameworks
       items:
-        - name: GameTest Framework
+        - name: Scripting
           items:
-          - name: Getting Started with GameTest
-            href: Documents/GameTestGettingStarted.md
-          - name: Build your First GameTest
-            href: Documents/GameTestBuildYourFirstGameTest.md
           - name: Build Gameplay with TypeScript
             href: Documents/ScriptingGettingStarted.md
           - name: Use Script Along with Dedicated Servers
             href: Documents/ScriptingServers.md
           - name: Use Visual Studio Code Tools to Write Script
             href: Documents/ScriptDeveloperTools.md
+          - name: Getting Started with GameTest Framework
+            href: Documents/GameTestGettingStarted.md
+          - name: Build your First GameTest
+            href: Documents/GameTestBuildYourFirstGameTest.md
         - name: Creator Tools
           items:
           - name: Commonly Used Tools
@@ -172,11 +172,11 @@
                 href: Documents/ChunkerTheNether.md
     - name: Reference Documentation
       items:
-      - name: GameTest
+      - name: Scripting
         items:
-          - name: GameTest Documentation Homepage
+          - name: Script API Documentation Homepage
             href: ScriptAPI/index.yml
-          - name: GameTest API
+          - name: API References
             href: ScriptAPI/TOC.yml
       - name: JSON Reference Documentation Homepage
         href: Reference/index.yml

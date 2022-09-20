@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.18.10",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:villager",
@@ -9,6 +9,26 @@
     },
   
     "component_groups": {
+      "minecraft:celebrate": {
+        "minecraft:behavior.celebrate_survive": {
+          "priority": 5,
+          "fireworks_interval": {
+            "range_min": 2.0,
+            "range_max": 7.0
+          },
+          "duration": 30.0,
+          "on_celebration_end_event": {
+            "event": "minecraft:stop_celebrating",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.move_outdoors": {
+          "priority": 2,
+          "speed_multiplier": 0.8,
+          "timeout_cooldown": 8.0
+        }
+      },
+
       "become_witch": {
         "minecraft:transformation": {
           "into": "minecraft:witch",
@@ -60,13 +80,15 @@
               "item": "minecraft:wheat_seeds",
               "want_amount": 64,
               "surplus_amount": 64,
-              "stored_in_inventory": true
+              "stored_in_inventory": true,
+              "pickup_only": true
             },
             {
               "item": "minecraft:beetroot_seeds",
               "want_amount": 64,
               "surplus_amount": 64,
-              "stored_in_inventory": true
+              "stored_in_inventory": true,
+              "pickup_only": true
             },
             {
               "item": "minecraft:wheat",
@@ -427,7 +449,6 @@
                 "any_of": [
                   { "test" : "is_family", "subject" : "other", "value" : "zombie"},
                   { "test" : "is_family", "subject" : "other", "value" : "zombie_villager"},
-                  { "test" : "is_family", "subject" : "other", "value" : "zombie_pigman"},
                   { "test" : "is_family", "subject" : "other", "value" : "illager"},
                   { "test" : "is_family", "subject" : "other", "value" : "vex"}
                 ]
@@ -817,6 +838,14 @@
       "minecraft:become_cleric": {
         "add": { "component_groups": [ "cleric", "adult", "behavior_non_peasant" ] },
         "remove": { "component_groups": [ "baby" ] }
+      },
+      
+      "minecraft:start_celebrating": { // Event must be called exactly this for village to fire it when a raid is won
+        "add": { "component_groups": [ "minecraft:celebrate"] }
+      },
+      
+      "minecraft:stop_celebrating": {
+        "remove": { "component_groups": [ "minecraft:celebrate" ] }
       }
     }
   }

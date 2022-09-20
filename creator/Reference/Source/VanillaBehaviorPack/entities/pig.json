@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.18.10",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:pig",
@@ -106,7 +106,7 @@
         },
         "minecraft:rideable": {
           "seat_count": 1,
-          "interact_text": "action.interact.mount",
+          "interact_text": "action.interact.ride.horse",
           "family_types": [
             "player"
           ],
@@ -194,7 +194,7 @@
         "max_distance": 10.0
       },
       "minecraft:balloonable": {
-        "mass": 0.75
+        "mass": 0.9
       },
       "minecraft:despawn": {
         "despawn_from_distance": {}

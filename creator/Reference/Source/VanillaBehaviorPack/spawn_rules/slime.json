@@ -20,6 +20,7 @@
             "any_of": [
               {"test": "has_biome_tag", "operator": "==", "value": "monster"},
               {"test": "has_biome_tag", "operator": "==", "value": "swamp"},
+              {"test": "has_biome_tag", "operator": "==", "value": "mangrove_swamp"},
               {"test": "has_biome_tag", "operator": "==", "value": "frozen"}
             ]
           }

@@ -224,6 +224,29 @@
             {
               "wants": [
                 {
+                  "item": "minecraft:diamond",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 20,
+              "max_uses": 12,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
                   "item": "minecraft:emerald",
                   "quantity": 1,
                   "price_multiplier": 0.2
@@ -282,29 +305,6 @@
     {
       "total_exp_required": 150,
       "groups": [
-        {
-          "num_to_select": 1,
-          "trades": [
-            {
-              "wants": [
-                {
-                  "item": "minecraft:diamond",
-                  "quantity": 1,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 1
-                }
-              ],
-              "trader_exp": 30,
-              "max_uses": 12,
-              "reward_exp": true
-            }
-          ]
-        },
         {
           "num_to_select": 1,
           "trades": [

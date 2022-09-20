@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Recipe Documentation - Potion Brewing Container Recipe
 ms.prod: gaming
 ---
@@ -39,4 +39,4 @@ Represents a Potion Brewing Container Recipe.
 
 ### Brew Potion Sulphur
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack_Snippets/recipes/brew_potion_sulphur.json":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack/recipes/brew_potion_sulphur.json":::

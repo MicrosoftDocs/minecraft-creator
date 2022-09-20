@@ -1,6 +1,6 @@
 ---
 author: neonerz
-ms.author: v-jeffreykim
+ms.author: mikeam
 title: Loot and Trade Table Functions
 ms.prod: gaming
 description: An article showcasing the similarities and differences between Loot Tables and Trade Tables

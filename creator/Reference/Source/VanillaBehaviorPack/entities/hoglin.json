@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.18.30",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:hoglin",
@@ -252,7 +252,7 @@
         "on_death": "query.last_hit_by_player ? 5 : 0"
       },
       "minecraft:knockback_resistance": {
-        "value": 0.5
+        "value": 0.6
       },
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 4,
@@ -382,6 +382,8 @@
         "priority": 8,
         "look_distance": 6.0,
         "probability": 0.02
+      },
+      "minecraft:balloonable": {
       },
       "minecraft:physics": {
       },

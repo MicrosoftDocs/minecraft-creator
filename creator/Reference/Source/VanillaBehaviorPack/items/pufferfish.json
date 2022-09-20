@@ -17,7 +17,7 @@
           {
             "name": "poison",
             "duration": 60,
-            "amplifier": 3
+            "amplifier": 1
           },
           {
             "name": "nausea", // confusion

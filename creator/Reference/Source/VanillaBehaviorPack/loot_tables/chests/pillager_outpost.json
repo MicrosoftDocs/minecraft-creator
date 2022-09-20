@@ -165,6 +165,27 @@
           "name": "minecraft:book"
         }
       ]
+    },
+    {
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:goat_horn",
+          "functions": [
+            {
+              "function": "set_data",
+              "data": {
+                "min": 0,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 

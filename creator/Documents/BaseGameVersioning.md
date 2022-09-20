@@ -1,5 +1,5 @@
 ---
-ms.author: v-josjones
+ms.author: mikeam
 title: Base Game Versioning
 ms.prod: gaming
 author: neonerz

@@ -1,6 +1,6 @@
 ---
 author: neonerz
-ms.author: v-jeffreykim
+ms.author: mikeam
 title: Introduction to Add Entity
 ms.prod: gaming
 description: "Building upon the knowledge learned in the Resource Pack Tutorial, Introduction to Add Entity goes over the steps needed to start creating your own custom Entity"

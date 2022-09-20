@@ -34,7 +34,7 @@ highlightedContent:
       itemType: learn
       url: Documents/CreateNPCs.md
     #card
-    - title: GameTest Reference Documentation
+    - title: Scripting
       itemType: reference
       url: ScriptAPI/index.yml
     #card
@@ -160,9 +160,12 @@ conceptualContent:
       summary: "Learn how content works with Reference documentation and how GameTest can empower your workflow." # < 160 chars (optional)
       items:
       # card
-      - title: Using GameTest
-        summary: "Learn how the new GameTest Frameworks can speed up your development time."
+      - title: Using Script APIs
+        summary: "Learn how new experimental Script APIs can speed up your development time."
         links:
+          - url: Documents/ScriptDeveloperTools.md
+            itemType: how-to-guide
+            text: Use Visual Studio Code tools to write script
           - url: ScriptAPI/mojang-gametest/mojang-gametest.md
             itemType: reference
             text: GameTest API
@@ -172,9 +175,6 @@ conceptualContent:
           - url: Documents/GameTestBuildYourFirstGameTest.md
             itemType: how-to-guide
             text: Build your first GameTest
-          - url: Documents/ScriptDeveloperTools.md
-            itemType: how-to-guide
-            text: Use Visual Studio Code tools to write script
       # card
       - title: Reference Documentation
         summary: "Need a hand creating your content? View the reference documentation to see how things work in-game."

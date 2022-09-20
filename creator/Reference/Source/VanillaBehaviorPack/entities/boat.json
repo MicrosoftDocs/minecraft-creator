@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.100",
+  "format_version": "1.18.10",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:boat",
@@ -122,6 +122,8 @@
         "soft_distance": 4.0,
         "hard_distance": 6.0,
         "max_distance": 10.0
+      },
+      "minecraft:balloonable": {
       },
       "minecraft:rideable": {
         "seat_count": 2,

@@ -177,6 +177,7 @@
             "spawn_items": { "table": "loot_tables/entities/sheep_shear.json" },
             "play_sounds": "shear",
             "interact_text": "action.interact.shear",
+            "vibration": "shear",
             "on_interact": {
               "filters": {
                 "all_of": [
