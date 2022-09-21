@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:on_death
 ms.prod: gaming
 ---
@@ -34,7 +34,12 @@ ms.prod: gaming
 
 ### ender_dragon
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ender_dragon.json" range="94-97":::
+```json
+"minecraft:on_death": {
+        "event": "minecraft:start_death",
+        "target": "self"
+      }
+```
 
 ## Vanilla entities using `minecraft:on_death`
 
