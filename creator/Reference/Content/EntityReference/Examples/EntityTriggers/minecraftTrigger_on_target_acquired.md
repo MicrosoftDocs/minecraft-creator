@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:on_target_acquired
 ms.prod: gaming
 ---
@@ -36,6 +36,13 @@ ms.prod: gaming
 ## Vanilla entities examples
 
 ### enderman
+
+```json
+"minecraft:on_target_acquired": {
+    "event": "minecraft:become_angry",
+    "target": "self"
+}
+```
 
 :::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/enderman.json" range="12-15":::
 

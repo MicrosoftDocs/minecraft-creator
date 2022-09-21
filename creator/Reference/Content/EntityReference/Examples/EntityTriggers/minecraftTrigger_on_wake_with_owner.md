@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:on_wake_with_owner
 ms.prod: gaming
 ---
@@ -34,7 +34,12 @@ ms.prod: gaming
 
 ### cat
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/cat.json" range="190-193":::
+```json
+"minecraft:on_wake_with_owner": {
+    "event": "minecraft:pet_slept_with_owner",
+    "target": "self"
+}
+```
 
 ## Vanilla entities using `minecraft:on_wake_with_owner`
 
