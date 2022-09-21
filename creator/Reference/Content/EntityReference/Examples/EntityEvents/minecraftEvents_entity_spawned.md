@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:entity_spawned
 ms.prod: gaming
 ---
@@ -23,11 +23,40 @@ ms.prod: gaming
 
 ### goat
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/goat.json" range="375-394":::
+```json
+"minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 95,
+            "add": {
+              "component_groups": [
+                "goat_adult"
+              ]
+            }
+          },
+          {
+            "weight": 5,
+            "add": {
+              "component_groups": [
+                "goat_baby"
+              ]
+            }
+          }
+        ]
+      }
+```
 
 ### command_block_minecart
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/command_block_minecart.json" range="75-81":::
+```json
+"minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "minecraft:command_block_inactive"
+          ]
+        }
+      }
+```
 
 ## Vanilla entities using `minecraft:entity_spawned`
 

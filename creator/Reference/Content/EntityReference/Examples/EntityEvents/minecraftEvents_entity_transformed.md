@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:entity_transformed
 ms.prod: gaming
 ---
@@ -23,7 +23,41 @@ ms.prod: gaming
 
 ### zombie_pigman
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie_pigman.json" range="378-410":::
+```json
+"minecraft:entity_transformed": {
+        "sequence": [
+          // Transform baby pig to baby zombie pigman
+          {
+            "filters": {
+              "test": "has_component",
+              "subject": "other",
+              "value": "minecraft:is_baby"
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:pig_zombie_baby",
+                "minecraft:pig_zombie_calm"
+              ]
+            }
+          },
+          // Transform adult pig to adult zombie pigman
+          {
+            "filters": {
+              "test": "has_component",
+              "subject": "other",
+              "operator": "!=",
+              "value": "minecraft:is_baby"
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:pig_zombie_adult",
+                "minecraft:pig_zombie_calm"
+              ]
+            }
+          }
+        ]
+      }
+```
 
 ## Vanilla entities using `minecraft:entity_transformed`
 
