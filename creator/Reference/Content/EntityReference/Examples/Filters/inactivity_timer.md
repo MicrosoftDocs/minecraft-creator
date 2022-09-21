@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - inactivity_timer
 ms.prod: gaming
 ---
@@ -63,7 +63,9 @@ Tests if the entity was inactive for specified duration.
 
 ### piglin_brute
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin_brute.json" range="250-254":::
+```json
+{ "test": "inactivity_timer", "subject": "self", "value": 30 }
+```
 
 ## Vanilla entities using `inactivity_timer`
 

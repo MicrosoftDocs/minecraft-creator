@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - has_trade_supply
 ms.prod: gaming
 ---
@@ -67,7 +67,9 @@ Tests whether the target has any trade supply left. Will return false if the tar
 
 ### wandering trader
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wandering_trader.json" range="113-126":::
+```json
+{ "test": "has_trade_supply", "subject": "self", "value": false }
+```
 
 ## Vanilla entities using `has_trade_supply`
 

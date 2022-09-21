@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - is_brightness
 ms.prod: gaming
 ---
@@ -63,7 +63,9 @@ Tests the current brightness against a provided value in the range (0.0, 1.0).
 
 ### spider
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/spider.json" range="58-72":::
+```json
+{ "test": "is_brightness", "operator": "<", "value": 0.49 }
+```
 
 ## Vanilla entities using `is_brightness`
 

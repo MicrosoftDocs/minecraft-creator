@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - is_game_rule
 ms.prod: gaming
 ---
@@ -73,7 +73,9 @@ Below is a list of game rules that can be used for the `value` string.
 
 ### ender_pearl
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ender_pearl.json" range="63-72":::
+```json
+{"test": "is_game_rule", "domain": "domobspawning", "value": false}
+```
 
 ## Vanilla entities using `is_game_rule`
 

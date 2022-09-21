@@ -38,8 +38,6 @@ ms.prod: gaming
 }
 ```
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/polar_bear.json" range="74-77":::
-
 ## Vanilla entities using `minecraft:on_friendly_anger`
 
 - [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)

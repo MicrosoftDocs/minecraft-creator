@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Item Documentation - minecraft:on_use_on
 ms.prod: gaming
 ---

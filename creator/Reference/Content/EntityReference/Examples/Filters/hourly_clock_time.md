@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - hourly_clock_time
 ms.prod: gaming
 ---
@@ -63,7 +63,10 @@ Compares the current 24 hour time with an int value in the range[0, 24000]
 
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="34-43":::
+```json
+{ "test": "hourly_clock_time", "operator": ">=", "value": 0 },
+{ "test": "hourly_clock_time", "operator": "<", "value": 8000 }
+```
 
 ## Vanilla entities using `hourly_clock_time`
 

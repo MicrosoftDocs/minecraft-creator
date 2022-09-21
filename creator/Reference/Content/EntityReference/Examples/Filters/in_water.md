@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - in_water
 ms.prod: gaming
 ---
@@ -67,11 +67,9 @@ Returns true when the subject entity is in water.
 
 ### axolotl
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/axolotl.json" range="119":::
-
-### ocelot
-
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ocelot.json" range="200-231":::
+```json
+{ "test": "in_water", "operator": "==", "value": true }
+```
 
 ## Vanilla entities using `in_water`
 

@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - is_avoiding_mobs
 ms.prod: gaming
 ---
@@ -67,7 +67,9 @@ Returns true if the subject entity is fleeing from other mobs.
 
 ### wandering_trader
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wandering_trader.json" range="173-199":::
+```json
+{ "test": "is_avoiding_mobs", "subject": "self", "value": true }
+```
 
 ## Vanilla entities using `is_avoiding_mobs`
 

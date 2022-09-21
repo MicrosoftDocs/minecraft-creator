@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - is_riding
 ms.prod: gaming
 ---
@@ -67,7 +67,9 @@ Returns true if the subject entity is riding on another entity.
 
 ### parrot
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/parrot.json" range="166-183":::
+```json
+{ "test": "is_riding", "subject": "self", "operator": "equals", "value": true }
+```
 
 ## Vanilla entities using `is_riding`
 
