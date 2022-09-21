@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.find_underwater_treasure
 ms.prod: gaming
 ---
@@ -33,7 +33,14 @@ ms.prod: gaming
 
 ### dolphin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/dolphin.json" range="278-283":::
+```json
+"minecraft:behavior.find_underwater_treasure": {
+        "priority": 2,
+        "speed_multiplier": 2.0,
+        "search_range": 30,
+        "stop_distance": 50
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.find_underwater_treasure`
 

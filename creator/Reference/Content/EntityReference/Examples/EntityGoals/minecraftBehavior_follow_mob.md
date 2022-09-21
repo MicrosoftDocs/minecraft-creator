@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.follow_mob
 ms.prod: gaming
 ---
@@ -33,7 +33,14 @@ ms.prod: gaming
 
 ### parrot
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/parrot.json" range="63-68":::
+```json
+"minecraft:behavior.follow_mob": {
+          "priority": 3,
+          "speed_multiplier": 1.0,
+          "stop_distance": 3,
+          "search_range": 20
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.follow_mob`
 

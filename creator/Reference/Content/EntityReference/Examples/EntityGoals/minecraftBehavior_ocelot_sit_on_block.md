@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.ocelot_sit_on_block
 ms.prod: gaming
 ---
@@ -29,7 +29,12 @@ ms.prod: gaming
 
 ### ocelot
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ocelot.json" range="130-133":::
+```json
+"minecraft:behavior.ocelot_sit_on_block": {
+          "priority": 6,
+          "speed_multiplier": 1.0
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.ocelot_sit_on_block`
 

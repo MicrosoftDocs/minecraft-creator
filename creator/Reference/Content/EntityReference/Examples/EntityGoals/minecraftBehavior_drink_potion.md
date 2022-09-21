@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.drink_potion
 ms.prod: gaming
 ---
@@ -31,7 +31,57 @@ Each potion entry has the following parameters:
 
 ### wandering_trader
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wandering_trader.json" range="170-218":::
+```json
+"minecraft:behavior.drink_potion": {
+        "priority": 1,
+        "speed_modifier": -0.2,
+        "potions": [
+          {
+            "id": 7, // Short invisibility
+            "chance": 1.0,
+            "filters": {
+              "all_of": [
+                {
+                  "any_of": [
+                    { "test": "hourly_clock_time", "operator": ">=", "value": 18000 },
+                    { "test": "hourly_clock_time", "operator": "<", "value": 12000 }
+                  ]
+                },
+                { "test": "is_visible", "subject": "self", "value": true },
+                {
+                  "any_of": [
+                    { "test": "is_avoiding_mobs", "subject": "self", "value": true },
+                    {
+                      "all_of": [
+                        { "test": "has_component", "subject": "self", "value": "minecraft:angry" },
+                        { "test": "is_family", "subject": "target", "operator": "!=", "value": "player" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": 8, // Long invisibility
+            "chance": 1.0,
+            "filters": {
+              "all_of": [
+                { "test": "hourly_clock_time", "operator": ">=", "value": 12000 },
+                { "test": "hourly_clock_time", "operator": "<", "value": 18000 },
+                { "test": "is_visible", "subject": "self", "value": true },
+                {
+                  "any_of": [
+                    { "test": "is_avoiding_mobs", "subject": "self", "value": true },
+                    { "test": "has_component", "subject": "self", "value": "minecraft:angry" }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.drink_potion`
 

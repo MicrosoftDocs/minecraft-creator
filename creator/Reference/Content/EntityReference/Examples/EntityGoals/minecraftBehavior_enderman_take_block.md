@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.enderman_take_block
 ms.prod: gaming
 ---
@@ -30,7 +30,11 @@ ms.prod: gaming
 
 ### enderman
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/enderman.json" range="164-166":::
+```json
+"minecraft:behavior.enderman_take_block": {
+        "priority": 11
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.enderman_take_block`
 

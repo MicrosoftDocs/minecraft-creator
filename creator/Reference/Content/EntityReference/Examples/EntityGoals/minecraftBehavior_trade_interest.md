@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.trade_interest
 ms.prod: gaming
 ---
@@ -37,7 +37,16 @@ ms.prod: gaming
 
 ### wandering_trader
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wandering_trader.json" range="155-162":::
+```json
+"minecraft:behavior.trade_interest": {
+          "priority": 3,
+          "within_radius": 6.0,
+          "interest_time": 45.0,
+          "remove_item_time": 1.0,
+          "carried_item_switch_time": 2.0,
+          "cooldown": 2.0
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.trade_interest`
 

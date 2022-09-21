@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.move_through_village
 ms.prod: gaming
 ---
@@ -31,7 +31,13 @@ ms.prod: gaming
 
 ### iron_golem
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/iron_golem.json" range="223-227":::
+```json
+"minecraft:behavior.move_through_village": {
+        "priority": 3,
+        "speed_multiplier": 0.6,
+        "only_at_night": true
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.move_through_village`
 

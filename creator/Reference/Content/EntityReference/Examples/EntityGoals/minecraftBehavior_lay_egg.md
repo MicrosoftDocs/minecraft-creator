@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.lay_egg
 ms.prod: gaming
 ---
@@ -49,7 +49,19 @@ ms.prod: gaming
 
 ### turtle
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/turtle.json" range="112-122":::
+```json
+"minecraft:behavior.lay_egg": {
+          "priority": 1,
+          "speed_multiplier": 1.0,
+          "search_range": 16,
+          "search_height": 4,
+          "goal_radius": 1.5,
+          "on_lay": {
+            "event": "minecraft:laid_egg",
+            "target": "self"
+          }
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.lay_egg`
 

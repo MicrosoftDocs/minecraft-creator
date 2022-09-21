@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.run_around_like_crazy
 ms.prod: gaming
 ---
@@ -29,7 +29,12 @@ ms.prod: gaming
 
 ### llama
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/llama.json" range="394-397":::
+```json
+"minecraft:behavior.run_around_like_crazy": {
+        "priority": 1,
+        "speed_multiplier": 1.2
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.run_around_like_crazy`
 

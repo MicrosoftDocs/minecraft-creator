@@ -37,7 +37,16 @@ ms.prod: gaming
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="417-424":::
+```json
+"minecraft:behavior.stroll_towards_village": {
+          "priority": 11,
+          "speed_multiplier": 1.0,
+          "goal_radius": 3.0,
+          "cooldown_time": 10.0,
+          "search_range": 32,
+          "start_chance": 0.005
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.stroll_towards_village`
 

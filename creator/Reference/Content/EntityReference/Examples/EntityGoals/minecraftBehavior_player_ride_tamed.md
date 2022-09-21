@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.player_ride_tamed
 ms.prod: gaming
 ---
@@ -26,7 +26,10 @@ ms.prod: gaming
 
 ### zombie_horse
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie_horse.json" range="53-55":::
+```json
+"minecraft:behavior.player_ride_tamed": {
+}
+```
 
 ## Vanilla entities using `minecraft:behavior.player_ride_tamed`
 

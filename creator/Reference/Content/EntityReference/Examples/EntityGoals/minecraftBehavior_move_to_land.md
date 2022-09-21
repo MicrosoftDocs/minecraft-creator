@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.move_to_land
 ms.prod: gaming
 ---
@@ -36,7 +36,14 @@ ms.prod: gaming
 
 ### turtle
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/turtle.json" range="86-91":::
+```json
+"minecraft:behavior.move_to_land": {
+          "priority": 6,
+          "search_range": 16,
+          "search_height": 5,
+          "goal_radius": 0.5
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.move_to_land`
 

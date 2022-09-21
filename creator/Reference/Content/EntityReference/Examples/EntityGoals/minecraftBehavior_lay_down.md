@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.lay_down
 ms.prod: gaming
 ---
@@ -31,7 +31,13 @@ ms.prod: gaming
 
 ### panda
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/panda.json" range="135-139":::
+```json
+"minecraft:behavior.lay_down": {
+          "priority": 5,
+          "interval": 400,
+          "random_stop_interval": 2000
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.lay_down`
 

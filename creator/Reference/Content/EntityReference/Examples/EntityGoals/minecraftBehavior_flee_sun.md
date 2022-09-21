@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.flee_sun
 ms.prod: gaming
 ---
@@ -29,7 +29,12 @@ ms.prod: gaming
 
 ### skeleton
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/skeleton.json" range="540-543":::
+```json
+"minecraft:behavior.flee_sun": {
+        "priority": 2,
+        "speed_multiplier": 1
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.flee_sun`
 
