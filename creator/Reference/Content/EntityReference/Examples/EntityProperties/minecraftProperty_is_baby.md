@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:is_baby
 ms.prod: gaming
 ---
@@ -53,7 +53,10 @@ ms.prod: gaming
 
 ### wolf
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wolf.json" range="13-14":::
+```json
+"minecraft:is_baby":{
+}
+```
 
 ## Vanilla entities using `minecraft:is_baby`
 

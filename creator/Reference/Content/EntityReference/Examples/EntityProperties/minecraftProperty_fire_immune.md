@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:fire_immune
 ms.prod: gaming
 ---
@@ -20,7 +20,10 @@ ms.prod: gaming
 
 ### magma_cube
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/magma_cube.json" range="97-98":::
+```json
+"minecraft:fire_immune": {
+}
+```
 
 ## Vanilla entities using `minecraft:fire_immune`
 

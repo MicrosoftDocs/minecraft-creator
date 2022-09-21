@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:is_charged
 ms.prod: gaming
 ---
@@ -51,7 +51,10 @@ ms.prod: gaming
 
 ### creeper
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/creeper.json" range="21-22":::
+```json
+"minecraft:is_charged": {
+}
+```
 
 ## Vanilla entities using `minecraft:is_charged`
 

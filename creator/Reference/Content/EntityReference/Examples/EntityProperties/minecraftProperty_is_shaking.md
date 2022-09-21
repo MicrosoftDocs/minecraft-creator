@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:is_shaking
 ms.prod: gaming
 ---
@@ -20,7 +20,10 @@ ms.prod: gaming
 
 ### piglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="27":::
+```json
+"minecraft:is_shaking":{
+}
+```
 
 ## Vanilla entities using `minecraft:is_shaking`
 

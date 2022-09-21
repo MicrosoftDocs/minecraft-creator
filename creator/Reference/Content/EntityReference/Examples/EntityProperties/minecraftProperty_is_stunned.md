@@ -47,7 +47,10 @@ ms.prod: gaming
 
 ### ravager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ravager.json" range="186-187":::
+```json
+"minecraft:is_stunned":{
+}
+```
 
 ## Vanilla entities using `minecraft:is_stunned`
 

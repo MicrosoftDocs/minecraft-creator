@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:collision_box
 ms.prod: gaming
 ---
@@ -29,11 +29,21 @@ ms.prod: gaming
 
 ### zombie
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="130-133":::
+```json
+"minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.9
+      }
+```
 
 ### small_fireball
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/small_fireball.json" range="11-14":::
+```json
+"minecraft:collision_box": {
+    "width": 0.31,
+    "height": 0.31
+   }
+```
 
 ## Vanilla entities using `minecraft:collision_box`
 
