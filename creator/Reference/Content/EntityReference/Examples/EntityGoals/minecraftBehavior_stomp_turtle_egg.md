@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.stomp_turtle_egg
 ms.prod: gaming
 ---
@@ -37,7 +37,16 @@ ms.prod: gaming
 
 ### drowned
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/drowned.json" range="404-411":::
+```json
+"minecraft:behavior.stomp_turtle_egg": {
+        "priority": 4,
+        "speed_multiplier": 1,
+        "search_range": 10,
+        "search_height": 2,
+        "goal_radius": 1.14,
+        "interval": 20
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.stomp_turtle_egg`
 

@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.play
 ms.prod: gaming
 ---
@@ -32,7 +32,12 @@ ms.prod: gaming
 
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="523-526":::
+```json
+"minecraft:behavior.play": {
+          "priority": 8,
+          "speed_multiplier": 0.32
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.play`
 

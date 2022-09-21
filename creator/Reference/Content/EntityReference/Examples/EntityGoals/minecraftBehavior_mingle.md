@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.mingle
 ms.prod: gaming
 ---
@@ -37,7 +37,16 @@ ms.prod: gaming
 
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="530-537":::
+```json
+"minecraft:behavior.mingle": {
+          "priority": 7,
+          "speed_multiplier": 0.5,
+          "duration": 30,
+          "cooldown_time": 10,
+          "mingle_partner_type": "minecraft:villager_v2",
+          "mingle_distance": 2.0
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.mingle`
 

@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.snacking
 ms.prod: gaming
 ---
@@ -35,7 +35,18 @@ ms.prod: gaming
 
 ### panda
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/panda.json" range="147-156":::
+```json
+"minecraft:behavior.snacking": {
+          "priority": 3,
+          "snacking_cooldown": 17.5,
+          "snacking_cooldown_min": 10,
+          "snacking_stop_chance": 0.0011,
+          "items": [
+            "bamboo",
+            "cake"
+          ]
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.snacking`
 

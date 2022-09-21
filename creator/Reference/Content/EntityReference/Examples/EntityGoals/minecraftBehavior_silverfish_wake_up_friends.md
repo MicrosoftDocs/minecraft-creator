@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.silverfish_wake_up_friends
 ms.prod: gaming
 ---
@@ -31,7 +31,11 @@ ms.prod: gaming
 
 ### silverfish
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/silverfish.json" range="32-34":::
+```json
+"minecraft:behavior.silverfish_wake_up_friends": {
+          "priority": 1
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.silverfish_wake_up_friends`
 

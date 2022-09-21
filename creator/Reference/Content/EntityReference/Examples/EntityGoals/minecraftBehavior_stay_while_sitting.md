@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.stay_while_sitting
 ms.prod: gaming
 ---
@@ -27,7 +27,11 @@ ms.prod: gaming
 
 ### cat
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/cat.json" range="176-178":::
+```json
+"minecraft:behavior.stay_while_sitting": {
+          "priority": 3
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.stay_while_sitting`
 

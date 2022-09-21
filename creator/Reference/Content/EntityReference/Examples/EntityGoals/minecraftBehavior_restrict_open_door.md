@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.restrict_open_door
 ms.prod: gaming
 ---
@@ -25,11 +25,13 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### wandering_trader
+### villager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wandering_trader.json" range="238-240":::
+```json
+"minecraft:annotation.open_door": {
+}
+```
 
 ## Vanilla entities using `minecraft:behavior.restrict_open_door`
 
 - [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)

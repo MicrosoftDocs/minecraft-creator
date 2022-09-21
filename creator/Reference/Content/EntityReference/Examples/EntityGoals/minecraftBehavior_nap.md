@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.nap
 ms.prod: gaming
 ---
@@ -35,7 +35,65 @@ ms.prod: gaming
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="340-396":::
+```json
+"minecraft:behavior.nap": {
+          "priority": 8,
+          "cooldown_min": 2.0,
+          "cooldown_max": 7.0,
+          "mob_detect_dist": 12.0,
+          "mob_detect_height": 6.0,
+          "can_nap_filters": {
+            "all_of": [
+              {
+                "test": "in_water",
+                "subject": "self",
+                "operator": "==",
+                "value": false
+              },
+              {
+                "test": "on_ground",
+                "subject": "self",
+                "operator": "==",
+                "value": true
+              },
+              {
+                "test": "is_underground",
+                "subject": "self",
+                "operator": "==",
+                "value": true
+              },
+              {
+                "test": "weather_at_position",
+                "subject": "self",
+                "operator": "!=",
+                "value": "thunderstorm"
+              }
+            ]
+          },
+          "wake_mob_exceptions": {
+            "any_of": [
+              {
+                "test": "trusts",
+                "subject": "other",
+                "operator": "==",
+                "value": true
+              },
+              {
+                "test": "is_family",
+                "subject": "other",
+                "operator": "==",
+                "value": "fox"
+              },
+              {
+                "test": "is_sneaking",
+                "subject": "other",
+                "operator": "==",
+                "value": true
+              }
+            ]
+          }
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.nap`
 

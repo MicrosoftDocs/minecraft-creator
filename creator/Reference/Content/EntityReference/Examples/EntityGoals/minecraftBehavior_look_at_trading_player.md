@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.look_at_trading_player
 ms.prod: gaming
 ---
@@ -41,7 +41,11 @@ ms.prod: gaming
 
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="1556-1558":::
+```json
+"minecraft:behavior.look_at_trading_player": {
+        "priority": 7
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.look_at_trading_player`
 
