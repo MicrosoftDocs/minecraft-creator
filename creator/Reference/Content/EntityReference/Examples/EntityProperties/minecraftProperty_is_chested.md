@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:is_chested
 ms.prod: gaming
 ---
@@ -60,7 +60,10 @@ ms.prod: gaming
 
 ### llama
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/llama.json" range="255-257":::
+```json
+"minecraft:is_chested": {
+}
+```
 
 ## Vanilla entities using `minecraft:is_chested`
 

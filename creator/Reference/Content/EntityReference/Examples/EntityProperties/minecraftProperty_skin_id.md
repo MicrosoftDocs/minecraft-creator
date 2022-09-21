@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:skin_id
 ms.prod: gaming
 ---
@@ -33,7 +33,11 @@ ms.prod: gaming
 > [!NOTE]
 > In the `villager_v2` example, a component group has been set up for each variant for the villager entity. Here the `skin_id` is being set for the first texture
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="1335-1339":::
+```json
+"minecraft:skin_id": {
+          "value": 1
+        }
+```
 
 ## Vanilla entities using `minecraft:skin_id`
 

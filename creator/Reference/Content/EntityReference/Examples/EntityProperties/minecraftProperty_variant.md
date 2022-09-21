@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:variant
 ms.prod: gaming
 ---
@@ -30,7 +30,12 @@ ms.prod: gaming
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="141-143":::
+```json
+"minecraft:fox_red": {
+        "minecraft:variant": {
+          "value": 0
+        }
+```
 
 ## Vanilla entities using `minecraft:variant`
 

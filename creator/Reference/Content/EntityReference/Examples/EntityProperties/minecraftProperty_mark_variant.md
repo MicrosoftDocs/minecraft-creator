@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:mark_variant
 ms.prod: gaming
 ---
@@ -33,7 +33,11 @@ ms.prod: gaming
 > [!NOTE]
 > In the villager_v2 example, the `desert_villager` has been assigned the `value` of `1`.
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="1365-1369":::
+```json
+"minecraft:mark_variant": {
+    "value": 1
+}
+```
 
 ## Vanilla entities using `minecraft:mark_variant`
 

@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:loot
 ms.prod: gaming
 ---
@@ -30,7 +30,11 @@ ms.prod: gaming
 
 ### zombie
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="172-174":::
+```json
+"minecraft:loot": {
+    "table": "loot_tables/entities/zombie.json"
+}
+```
 
 ## Vanilla entities using `minecraft:loot`
 

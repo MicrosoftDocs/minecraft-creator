@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:is_dyeable
 ms.prod: gaming
 ---
@@ -27,7 +27,11 @@ ms.prod: gaming
 
 ### sheep
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/sheep.json" range="82-84":::
+```json
+"minecraft:is_dyeable": {
+    "interact_text": "action.interact.dye"
+}
+```
 
 ## Vanilla entities using `minecraft:is_dyeable`
 

@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:type_family
 ms.prod: gaming
 ---
@@ -27,22 +27,39 @@ ms.prod: gaming
 
 ### armor_stand
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/armor_stand.json" range="11-13":::
+```json
+"minecraft:type_family": {
+        "family": [ "armor_stand", "inanimate", "mob" ]
+}
+```
 
 ### hopper_minecraft
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/hopper_minecart.json" range="32-34":::
+```json
+"minecraft:type_family": {
+        "family": [ "minecart", "inanimate" ]
+}
+```
 
 ### skeleton
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/skeleton.json" range="97-99":::
+```json
+"minecraft:type_family": {
+        "family": [ "skeleton", "undead", "monster", "mob" ]
+}
+```
 
 ### villager_v2
 
 > [!NOTE]
 > In the `villager_v2` example, the entity has been set up in different roles such as `farmer` and `fisherman`. Below is taken from `farmer`
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="673-675":::
+```json
+"farmer": {
+        "minecraft:type_family": {
+          "family": [ "villager", "peasant", "farmer", "mob" ]
+    }
+```
 
 ## Vanilla entities using `minecraft:type_family`
 

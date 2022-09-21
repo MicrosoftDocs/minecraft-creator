@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:is_illager_captain
 ms.prod: gaming
 ---
@@ -42,7 +42,10 @@ ms.prod: gaming
 
 ### pillager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/pillager.json" range="98-99":::
+```json
+"minecraft:is_illager_captain": {
+}
+```
 
 ## Vanilla entities using `minecraft:is_illager_captain`
 
