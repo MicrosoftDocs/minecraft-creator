@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.find_cover
 ms.prod: gaming
 ---
@@ -31,7 +31,13 @@ ms.prod: gaming
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="320-324":::
+```json
+"minecraft:behavior.find_cover": {
+          "priority": 0,
+          "speed_multiplier": 1,
+          "cooldown_time": 0.0
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.find_cover`
 

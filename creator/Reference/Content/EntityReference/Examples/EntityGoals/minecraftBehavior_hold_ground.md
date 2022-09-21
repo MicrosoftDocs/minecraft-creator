@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.hold_ground
 ms.prod: gaming
 ---
@@ -44,7 +44,18 @@ ms.prod: gaming
 
 ### pillager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/pillager.json" range="190-199":::
+```json
+"minecraft:behavior.hold_ground": {
+          "priority": 5,
+          "min_radius": 10,
+          "broadcast": true,
+          "broadcast_range": 8,
+          "within_radius_event": {
+            "event": "minecraft:ranged_mode",
+            "target": "self"
+          }
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.hold_ground`
 

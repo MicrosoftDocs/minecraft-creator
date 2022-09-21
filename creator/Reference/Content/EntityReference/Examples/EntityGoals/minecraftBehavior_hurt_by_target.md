@@ -49,6 +49,18 @@ ms.prod: gaming
 "minecraft:behavior.hurt_by_target": {
         "priority": 1
       },
+
+```
+
+### iron_golem
+
+```json
+"minecraft:behavior.hurt_by_target": {
+        "priority": 2,
+        "entity_types": {
+          "filters": { "test": "is_family", "subject": "other", "operator": "!=", "value": "creeper" }
+        }
+}
 ```
 
 ## Vanilla entities using `minecraft:behavior.hurt_by_target`
