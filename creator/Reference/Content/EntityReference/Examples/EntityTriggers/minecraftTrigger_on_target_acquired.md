@@ -44,8 +44,6 @@ ms.prod: gaming
 }
 ```
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/enderman.json" range="12-15":::
-
 ## Vanilla entities using `minecraft:on_target_acquired`
 
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)

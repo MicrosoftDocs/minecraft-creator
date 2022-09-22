@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - has_ranged_weapon
 ms.prod: gaming
 ---
@@ -67,7 +67,9 @@ Returns true when the subject entity is holding a ranged weapon like a bow or cr
 
 ### skeleton
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/skeleton.json" range="116-121":::
+```json
+{ "test": "has_ranged_weapon", "subject": "self", "operator": "==", "value": false }
+```
 
 ## Vanilla entities using Filter `has_ranged_weapon`
 

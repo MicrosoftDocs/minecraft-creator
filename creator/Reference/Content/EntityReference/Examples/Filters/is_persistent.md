@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - is_persistent
 ms.prod: gaming
 ---
@@ -67,7 +67,9 @@ Tests if the subject's persistence matches the bool value passed in.
 
 ### zoglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zoglin.json" range="141-181":::
+```json
+{ "test": "is_persistent", "value": false }
+```
 
 ## Vanilla entities using `is_persistent`
 

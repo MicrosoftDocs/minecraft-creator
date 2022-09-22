@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - is_moving
 ms.prod: gaming
 ---
@@ -67,11 +67,9 @@ Returns true if the subject entity is moving.
 
 ### boat
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/boat.json" range="187-194":::
-
-### tnt_minecart
-
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/tnt_minecart.json" range="138-147":::
+```json
+{ "test": "is_moving", "subject": "self", "operator": "==", "value": true }
+```
 
 ## Vanilla entities using `is_moving`
 

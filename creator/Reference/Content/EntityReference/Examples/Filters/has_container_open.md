@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - has_container_open
 ms.prod: gaming
 ---
@@ -63,7 +63,9 @@ Returns true when the subject Player entity has opened a container.
 
 ### piglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="380-389":::
+```json
+{ "test": "has_container_open", "subject": "other", "operator": "==", "value": true }
+```
 
 ## Vanilla entities using `has_container_open`
 

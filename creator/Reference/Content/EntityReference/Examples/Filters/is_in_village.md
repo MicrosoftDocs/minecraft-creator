@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - is_in_village
 ms.prod: gaming
 ---
@@ -67,7 +67,9 @@ Tests whether the Subject is inside the bounds of a village.
 
 ### player
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/player.json" range="148-152":::
+```json
+{ "test": "is_in_village", "subject": "self", "value": true }
+```
 
 ## Vanilla entities using `is_in_village`
 

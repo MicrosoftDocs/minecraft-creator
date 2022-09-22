@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Features Documentation - minecraft:surface_relative_threshold_feature
 ms.prod: gaming
 ---

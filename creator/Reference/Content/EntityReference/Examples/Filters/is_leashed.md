@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - is_leashed
 ms.prod: gaming
 ---
@@ -65,11 +65,12 @@ Returns true if the subject entity is leashed.
 
 ## Vanilla entities examples
 
-### llama
+### trader llama
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/llama.json" range="82-96":::
+```json
+{ "test": "is_leashed", "subject": "self", "value": false }
+```
 
 ## Vanilla entities using `is_leashed`
 
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
+- [trader llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/trader_llama.md)

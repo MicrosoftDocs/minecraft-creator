@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - has_biome_tag
 ms.prod: gaming
 ---
@@ -61,9 +61,13 @@ Tests whether the biome the subject is in has the specified tag.
 
 ## Vanilla entities examples
 
-### Creeper
+### Bee
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/spawn_rules/creeper.json" range="28-30":::
+```json
+{ // Assume we are already going home if we have nectar
+ "test": "has_biome_tag", "value": "overworld"
+}
+```
 
 ## Vanilla entities using `has_biome_tag`
 
@@ -72,12 +76,10 @@ Tests whether the biome the subject is in has the specified tag.
 - [chicken](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/chicken.md)
 - [cod](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/cod.md)
 - [cow](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/cow.md)
-- [creeper](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/creeper.md)
 - [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/dolphin.md)
 - [donkey](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/donkey.md)
 - [drowned](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/drowned.md)
 - [enderman](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/enderman.md)
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/fox.md)
 - [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)
 - [ghast](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/ghast.md)
 - [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/hoglin.md)

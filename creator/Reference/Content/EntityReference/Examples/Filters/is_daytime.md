@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - is_daytime
 ms.prod: gaming
 ---
@@ -67,7 +67,9 @@ Returns true during the daylight hours.
 
 ### drowned
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/drowned.json" range="453-458":::
+```json
+{ "test": "is_daytime", "value": false }
+```
 
 ## Vanilla entities using `is_daytime`
 

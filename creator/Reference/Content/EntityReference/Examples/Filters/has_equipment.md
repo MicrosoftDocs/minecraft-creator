@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - has_equipment
 ms.prod: gaming
 ---
@@ -73,15 +73,13 @@ Domain is used to test where the equipment is located.
 { "test": "has_equipment", "value": "dirt" }
 ```
 
-## Vanilla entities examples
-
-### cow
-
-:::code language="json" source="../../../../../Documents/CodeSnippets/BehaviorPack/cow.json" range="56-73":::
+## Vanilla entities example
 
 ### mule
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/mule.json" range="199-219":::
+```json
+{ "test": "has_equipment", "subject": "other", "domain": "hand", "value": "chest"}
+```
 
 ## Vanilla entities using `has_equipment`
 

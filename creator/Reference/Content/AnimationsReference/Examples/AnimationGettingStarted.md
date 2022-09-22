@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Animation Documentation - Getting Started
 ms.prod: gaming
 ---

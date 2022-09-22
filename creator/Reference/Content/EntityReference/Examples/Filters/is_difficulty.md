@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - is_difficulty
 ms.prod: gaming
 ---
@@ -74,7 +74,9 @@ Below is a list of difficulty levels that can be used for the `value` string.
 
 ### wither_skeleton
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither_skeleton.json" range="436-449":::
+```json
+{ "test": "is_difficulty", "operator": "!=", "value": "peaceful" }
+```
 
 ## Vanilla entities using is_difficulty
 

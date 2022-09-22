@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - has_mob_effect
 ms.prod: gaming
 ---
@@ -67,7 +67,9 @@ Tests whether the Subject has the specified mob effect.
 
 ### player
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/player.json" range="141-154":::
+```json
+{ "test": "has_mob_effect", "subject": "self", "value": "bad_omen" }
+```
 
 ## Vanilla entities using `has_mob_effect`
 

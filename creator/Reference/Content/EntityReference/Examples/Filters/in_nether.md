@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - in_nether
 ms.prod: gaming
 ---
@@ -67,7 +67,9 @@ Returns true when the subject entity is in Nether.
 
 ### hoglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/hoglin.json" range="12-24":::
+```json
+{ "test": "in_nether", "subject": "self", "operator": "==", "value": true }
+```
 
 ## Vanilla entities using `in_nether`
 

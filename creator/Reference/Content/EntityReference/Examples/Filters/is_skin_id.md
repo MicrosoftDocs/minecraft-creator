@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - is_skin_id
 ms.prod: gaming
 ---
@@ -63,7 +63,9 @@ Returns true if the subject entity uses the skin id number provided.
 
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="2013-2066":::
+```json
+{ "test": "is_skin_id", "subject": "other", "value": 0 }
+```
 
 ## Vanilla entities using `is_skin_id`
 
