@@ -87,7 +87,7 @@ On this page you can set the basic properties of your block.
 
     - **Fire Catch Chance**: The chance that the block will catch on fire when it's next to an open fire. For reference, the value for normal wood is 5. Higher chances will make the block catch on fire faster.
 
-    - **Fire Destroy Chance**: The chance that fire on the block will destroy the block itself. For reference, the value for normal wood is 20. Higher values increase the likelyhood of the block being destroyed by fire. If you set the value to 0, the fire on the block will burn forever.
+    - **Fire Destroy Chance**: The chance that fire on the block will destroy the block itself. For reference, the value for normal wood is 20. Higher values increase the likelihood of the block being destroyed by fire. If you set the value to 0, the fire on the block will burn forever.
 
 ## Design
 
