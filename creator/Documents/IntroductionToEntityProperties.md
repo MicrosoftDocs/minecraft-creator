@@ -398,11 +398,11 @@ The Molang query “is_powered” returns true when the “minecraft:is_charged�
 
 The bee’s render controller (also in the Resource Pack) has this line which chooses a texture during rendering based on whether the bee has nectar and some other logic:
 
-    `"textures": [ "array.skins[query.is_powered + query.is_angry * 2]" ]`
+`"textures": [ "array.skins[query.is_powered + query.is_angry * 2]" ]`
 
 Like the above animation transition change, this will be updated to instead read the new Actor Property.
 
-    `"textures": [ "array.skins[query.property('minecraft:has_nectar') + query.is_angry * 2]" ]` 
+`"textures": [ "array.skins[query.property('minecraft:has_nectar') + query.is_angry * 2]" ]` 
 
 ## Conclusion
 
