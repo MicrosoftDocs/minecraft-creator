@@ -131,7 +131,7 @@ Because of this, it's recommended to keep Actor Properties of type "int" between
 
 ### How Are Actor Properties Read?
 
-Actor Properties can be read by several systems to affect how the game behaves: Molang, Filters, and Command Selectors.
+Actor Properties can be read by two systems to affect how the game behaves: Molang and Filters.
 
 ### Reading Properties with Molang
 
@@ -173,9 +173,6 @@ All of these filters assume a `“subject”` of `“self”` if that is not spe
 The `“bool_property”` filter will assume `“value”` is true if not specified, while other filters require a value.
 
 The `“has_property”` filter will assume `“operator”` is `“==”`, while other filters require something to be specified. Using `“!=”` for `“has_property”` will check for a property not existing with that name.
-
-> [!NOTE]
-> **Reading Properties with Command Selectors** - The Bedrock team is currently investigating allowing commands to select their targets based on Actor Properties. When that is available, it will be detailed here.
 
 ## Limitations of Actor Properties
 
