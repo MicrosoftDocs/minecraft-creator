@@ -172,7 +172,7 @@
                 href: Documents/ChunkerTheNether.md
     - name: Reference Documentation
       items:
-      - name: Scripting
+      - name: Scripting and API
         items:
           - name: Script API Documentation Homepage
             href: ScriptAPI/index.yml
