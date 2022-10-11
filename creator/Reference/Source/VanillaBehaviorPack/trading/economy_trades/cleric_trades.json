@@ -141,7 +141,7 @@
               ],
               "gives": [
                 {
-                  "item": "minecraft:glowstone",
+                  "item": "minecraft:glowstone_dust",
                   "quantity": 1
                 }
               ],

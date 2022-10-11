@@ -8,6 +8,8 @@
    href: minecraftBlock_collision_box.md
  - name: crafting_table
    href: minecraftBlock_crafting_table.md
+ - name: creative_category
+   href: minecraftBlock_creative_category.md
  - name: destructible_by_explosion
    href: minecraftBlock_destructible_by_explosion.md
  - name: destructible_by_mining
@@ -40,5 +42,3 @@
    href: minecraftBlock_selection_box.md
  - name: unit_cube
    href: minecraftBlock_unit_cube.md
- - name: unwalkable
-   href: minecraftBlock_unwalkable.md

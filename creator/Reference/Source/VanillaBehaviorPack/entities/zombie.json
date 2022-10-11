@@ -1,5 +1,5 @@
 {
-  "format_version": "1.17.20",
+  "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:zombie",
@@ -112,11 +112,7 @@
         "minecraft:equipment": {
           "table": "loot_tables/entities/zombie_equipment.json"
         }
-      },
-      "minecraft:can_break_doors": {
-        "minecraft:annotation.break_door": {
-        }
-      }
+      } 
     },
 
     "components": {
@@ -144,6 +140,8 @@
         "can_pass_doors": true,
         "can_walk": true,
         "can_break_doors": true
+      },
+      "minecraft:annotation.break_door": {
       },
       "minecraft:jump.static": {
       },
@@ -419,10 +417,7 @@
         "goal_radius": 2,
         "speed_multiplier": 1.0,
         "pickup_based_on_chance": true,
-        "can_pickup_any_item": true,
-        "excluded_items": [
-          "minecraft:glow_ink_sac"
-        ]
+        "can_pickup_any_item": true
       },
       "minecraft:behavior.random_stroll": {
         "priority": 7,
@@ -489,57 +484,40 @@
 
     "events": {
       "minecraft:entity_spawned": {
-        "sequence": [
+        "randomize": [
           {
-            "randomize": [
-              {
-                "weight": 380,
-                "remove": {},
-                "add": {
-                  "component_groups": [
-                    "minecraft:zombie_adult",
-                    "minecraft:can_have_equipment"
-                  ]
-                }
-              },
-              {
-                "weight": 17,
-                "remove": {
-                },
-                "add": {
-                  "component_groups": [
-                    "minecraft:zombie_baby",
-                    "minecraft:can_have_equipment"
-                  ]
-
-                }
-              },
-              {
-                "weight": 3,
-                "remove": {
-                },
-                "add": {
-                  "component_groups": [
-                    "minecraft:zombie_baby",
-                    "minecraft:zombie_jockey",
-                    "minecraft:can_have_equipment"
-                  ]
-                }
-              }
-            ]
+            "weight": 380,
+            "remove": {},
+            "add": {
+              "component_groups": [
+                "minecraft:zombie_adult",
+                "minecraft:can_have_equipment"
+              ]
+            }
           },
           {
-            "randomize": [
-              {
-                "weight": 10,
-                "add": {
-                  "component_groups": [ "minecraft:can_break_doors" ]
-                }
-              },
-              {
-                "weight": 90
-              }
-            ]
+            "weight": 17,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:zombie_baby",
+                "minecraft:can_have_equipment"
+              ]
+
+            }
+          },
+          {
+            "weight": 3,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:zombie_baby",
+                "minecraft:zombie_jockey",
+                "minecraft:can_have_equipment"
+              ]
+            }
           }
         ]
       },

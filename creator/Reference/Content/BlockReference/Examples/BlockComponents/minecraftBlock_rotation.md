@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Block Documentation - minecraft:rotation
 
-`minecraft:rotation` is a `vector` component that sets the block's rotation around the center of the cube in degrees. The rotation is specified as [x, y, z]. Angles need to be in factors of 90.
+`minecraft:rotation` is a `vector` component that sets the block's rotation around the center of the cube in degrees. The rotation order is x-y-z. Angles need to be in factors of 90.
 
 >[!IMPORTANT]
 > `minecraft:random_ticking` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.

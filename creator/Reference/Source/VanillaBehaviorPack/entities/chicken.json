@@ -186,9 +186,6 @@
         "is_pushable_by_piston": true
       },
       "minecraft:conditional_bandwidth_optimization": {
-      },
-      "minecraft:game_event_movement_tracking": {
-        "emit_flap": true
       }
     },
 

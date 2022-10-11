@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: mikeam
+author: v-josjones
+ms.author: v-josjones
 title: Recipe Documentation - Potion Brewing Mix
 ms.prod: gaming
 ---
@@ -42,4 +42,4 @@ Represents a Potion Brewing Mix.
 
 ### Slow-Falling Redstone potion
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/recipes/brew_slow_falling_redstone.json":::
+:::code language="json" source="../../../../Source/VanillaBehaviorPack_Snippets/recipes/brew_slow_falling_redstone.json":::

@@ -1,5 +1,5 @@
 {
-  "format_version": "1.17.10",
+  "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:silverfish",
@@ -121,8 +121,6 @@
         "is_pushable_by_piston": true
       },
       "minecraft:conditional_bandwidth_optimization": {
-      },
-      "minecraft:block_climber": {
       }
     },
     "events": {

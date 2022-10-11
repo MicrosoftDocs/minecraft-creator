@@ -29,7 +29,7 @@
     {
       "conditions": [
         {
-          "condition": "killed_by_player_or_pets"
+          "condition": "killed_by_player"
         },
         {
           "condition": "random_chance_with_looting",
@@ -41,11 +41,10 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:copper_ingot",
+          "name": "minecraft:gold_ingot",
           "weight": 5
         }
       ]
     }
   ]
 }
-

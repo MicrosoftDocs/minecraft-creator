@@ -1,5 +1,5 @@
 {
-  "format_version": "1.18.10",
+  "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:goat",
@@ -310,7 +310,7 @@
       },
       "minecraft:behavior.tempt": {
         "priority": 4,
-        "speed_multiplier": 0.75,
+        "speed_multiplier": 1,
         "items": [
           "wheat"
         ]
@@ -345,7 +345,7 @@
         "triggers": {
           "cause": "fall",
           "deals_damage": true,
-          "damage_modifier": -10
+          "damage_modifier": -20
         }
       },
       "minecraft:behavior.random_stroll": {
@@ -364,8 +364,6 @@
         "soft_distance": 4,
         "hard_distance": 6,
         "max_distance": 10
-      },
-      "minecraft:balloonable": {
       },
       "minecraft:physics": {},
       "minecraft:pushable": {

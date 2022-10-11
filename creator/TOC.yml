@@ -86,8 +86,6 @@
             href: Documents/TickingAreaCommand.md
           - name: New /execute command syntax
             href: Documents/CommandsNewExecute.md
-          - name: Copy and Paste Coordinates
-            href: Documents/CopyCoordinates.md
           - name: How to use tick.json
             href: Documents/TickJsonIntroduction.md
         - name: Minecraft Entities
@@ -98,8 +96,6 @@
               href: Documents/EntityModelingAndAnimation.md
             - name: Entity Behavior Introduction
               href: Documents/EntityBehaviorIntroduction.md
-            - name: Entity Events
-              href: Documents/EntityEvents.md
         - name: Adding NPCs
           items:
             - name: Create a Custom NPC
@@ -112,12 +108,8 @@
               href: Documents/IntroductionToLootTables.md
             - name: Loot and Trade Table Functions
               href: Documents/LootAndTradeTableFunctions.md
-            - name: Loot Overload - loot spawn and kill
+            - name: Loot Spawn and Kill
               href: Documents/LootSpawnAndKill.md
-            - name: Loot Overload - loot replace block
-              href: Documents/LootReplaceBlock.md
-            - name: Loot Overload - loot replace entity
-              href: Documents/LootReplaceEntity.md
         - name: Physically Based Rendering
           items:
             - name: Getting Started with Ray Tracing
@@ -134,18 +126,18 @@
             href: Documents/StructureBlocksTutorial.md
     - name: Tools and Frameworks
       items:
-        - name: Scripting
+        - name: GameTest Framework
           items:
+          - name: Getting Started with GameTest
+            href: Documents/GameTestGettingStarted.md
+          - name: Build your First GameTest
+            href: Documents/GameTestBuildYourFirstGameTest.md
           - name: Build Gameplay with TypeScript
             href: Documents/ScriptingGettingStarted.md
           - name: Use Script Along with Dedicated Servers
             href: Documents/ScriptingServers.md
           - name: Use Visual Studio Code Tools to Write Script
             href: Documents/ScriptDeveloperTools.md
-          - name: Getting Started with GameTest Framework
-            href: Documents/GameTestGettingStarted.md
-          - name: Build your First GameTest
-            href: Documents/GameTestBuildYourFirstGameTest.md
         - name: Creator Tools
           items:
           - name: Commonly Used Tools
@@ -172,11 +164,11 @@
                 href: Documents/ChunkerTheNether.md
     - name: Reference Documentation
       items:
-      - name: Scripting
+      - name: GameTest
         items:
-          - name: Script API Documentation Homepage
+          - name: GameTest Documentation Homepage
             href: ScriptAPI/index.yml
-          - name: API References
+          - name: GameTest API
             href: ScriptAPI/TOC.yml
       - name: JSON Reference Documentation Homepage
         href: Reference/index.yml

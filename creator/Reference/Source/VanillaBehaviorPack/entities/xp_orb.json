@@ -4,16 +4,13 @@
     "description": {
       "identifier": "minecraft:xp_orb",
       "is_spawnable": false,
-      "is_summonable": true,
+      "is_summonable": false,
       "is_experimental": false
     },
     "components": {
       "minecraft:collision_box": {
         "width": 0.25,
         "height": 0.25
-      },
-      "minecraft:type_family": {
-        "family": [ "inanimate" ]
       },
       "minecraft:health": {
         "value": 5,

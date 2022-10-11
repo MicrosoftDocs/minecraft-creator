@@ -1,5 +1,5 @@
 {
-  "format_version": "1.18.10",
+  "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:wolf",
@@ -232,28 +232,26 @@
         },
         "minecraft:is_dyeable": {
           "interact_text": "action.interact.dye"
+        },
+
+        "minecraft:leashable": {
+          "soft_distance": 4.0,
+          "hard_distance": 6.0,
+          "max_distance": 10.0,
+          "on_leash": {
+            "event": "minecraft:on_leash",
+            "target": "self"
+          },
+          "on_unleash": {
+            "event": "minecraft:on_unleash",
+            "target": "self"
+          }
         }
       }
     },
 
 
     "components": {
-      "minecraft:leashable": {
-        "soft_distance": 4.0,
-        "hard_distance": 6.0,
-        "max_distance": 10.0,
-        "on_leash": {
-          "event": "minecraft:on_leash",
-          "target": "self"
-        },
-        "on_unleash": {
-          "event": "minecraft:on_unleash",
-          "target": "self"
-        }
-      }, 
-      "minecraft:balloonable": {
-        "mass": 0.8
-      },
       "minecraft:is_hidden_when_invisible": {
       },
       "minecraft:nameable": {

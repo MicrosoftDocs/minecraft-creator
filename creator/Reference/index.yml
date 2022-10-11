@@ -8,8 +8,8 @@ metadata:
   description: "Landing page containing all JSON documentation for Minecraft: Bedrock Edition." # Required; article description that is displayed in search results. < 160 chars.
   ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
-  author: mammerla #Required; your GitHub user alias, with correct capitalization.
-  ms.author: mikeam #Required; microsoft alias of author; team alias.
+  author: v-josjones #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-josjones #Required; microsoft alias of author; team alias.
   ms.date: 08/27/2021 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -102,7 +102,7 @@ landingContent:
             url: Content/entityreference/Examples/EventList.md
           - text: Trigger List
             url: Content/entityreference/Examples/TriggerList.md
-          - text: Sample Entity JSON List
+          - text: Entity Behavior List
             url: Content/entityreference/Examples/EntityList.md
           - text: Entity JSON ID List
             url: Content/entityreference/Examples/ClientEntityDocumentation/IDLists.md

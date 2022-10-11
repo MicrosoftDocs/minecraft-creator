@@ -33,11 +33,6 @@
         },
         {
           "type": "item",
-          "name": "minecraft:record_otherside",
-          "weight": 2
-        },
-        {
-          "type": "item",
           "name": "minecraft:name_tag",
           "weight": 20
         },

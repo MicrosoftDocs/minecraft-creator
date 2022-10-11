@@ -53,7 +53,6 @@ Let's start with saving a structure into a structure block's memory. This exampl
    - Relative Position: Select portions of the structure starting the input away from the structure block. A wireframe will appear when you input numbers into the XYZ box.
    - Detect structure size and position: Use [corner mode](#corner-mode) to detect the structure's size and position. This is used in place of Structure Size and Relative Position.
    - Remove Blocks: Removes all blocks and only captures the entities within the structure block.
-   - Waterlog Blocks - Allows all blocks in a structure to be properly waterlogged when being placed under water.
    - Include entities – Saves any entities like animals or mobs that may be present in the bounding box.
    - Redstone save mode – Save in memory or Save to disk.
      - Save in Memory is faster, but doesn't permanently save a structure. This is the more common way to save.

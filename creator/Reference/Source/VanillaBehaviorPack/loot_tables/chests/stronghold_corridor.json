@@ -166,11 +166,6 @@
         },
         {
           "type": "item",
-          "name": "minecraft:record_otherside",
-          "weight": 5
-        },
-        {
-          "type": "item",
           "name": "minecraft:book",
           "weight": 6,
           "functions": [

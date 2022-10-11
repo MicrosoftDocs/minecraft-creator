@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Block Documentation - minecraft:display_name
 
-`minecraft:display_name` specifies the language file key that maps to what text will be displayed when you hover over the block in your inventory and hotbar. If the string given can not be resolved as a loc string, the raw string given will be displayed. If this component is omitted, the name of the block will be used as the display name.
+`minecraft:display_name` specifies the language file key that maps to what text will be displayed when you hover over the block. Key is limited to 256 characters.
 
 >[!IMPORTANT]
 > `minecraft:display_name` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.

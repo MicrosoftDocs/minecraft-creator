@@ -17,8 +17,7 @@
               "filters": {  
                 "any_of": [
                   { "test" :  "is_family", "subject" : "other", "value" :  "player"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "squid"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "axolotl"}
+                  { "test" :  "is_family", "subject" : "other", "value" :  "squid"}
                 ] 
               },
               "max_dist": 16
@@ -131,8 +130,7 @@
             "filters": {  
               "any_of": [
                 { "test" :  "is_family", "subject" : "other", "value" :  "player"},
-                { "test" :  "is_family", "subject" : "other", "value" :  "squid"},
-                { "test" :  "is_family", "subject" : "other", "value" :  "axolotl"}
+                { "test" :  "is_family", "subject" : "other", "value" :  "squid"}
               ] 
             },
             "max_dist": 16

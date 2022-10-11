@@ -1,5 +1,5 @@
 {
-  "format_version": "1.18.20",
+  "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:ocelot",
@@ -35,26 +35,6 @@
         },
         "minecraft:scale": {
           "value": 1
-        }
-      },
-      "minecraft:wild_child_ocelot_spawn": {
-        "minecraft:spawn_entity": {
-          "entities": {
-            "filters": [
-              {
-                "test": "random_chance",
-                "value": 7
-              }
-            ],
-            "min_wait_time": 0,
-            "max_wait_time": 0,
-            "num_to_spawn": 2,
-            "single_use": true,
-            "spawn_entity": "minecraft:ocelot",
-            "spawn_event": "minecraft:entity_born",
-            "spawn_method": "born",
-            "spawn_sound": ""
-          }
         }
       },
       "minecraft:ocelot_wild": {
@@ -171,7 +151,7 @@
         ]
       },
       "minecraft:attack_damage": {
-        "value": 3
+        "value": 4
       },
       "minecraft:nameable": {
       },
@@ -292,9 +272,6 @@
           "target": "self"
         }
       },
-      "minecraft:balloonable": {
-        "mass": 0.7
-      },
       "minecraft:physics": {
       },
       "minecraft:pushable": {
@@ -317,8 +294,7 @@
                 "add": {
                   "component_groups": [
                     "minecraft:ocelot_adult",
-                    "minecraft:ocelot_wild",
-                    "minecraft:wild_child_ocelot_spawn"
+                    "minecraft:ocelot_wild"
                   ]
                 }
               },
