@@ -77,7 +77,7 @@
           "update_interval_base": 60,
           "update_interval_variant": 40,
           "can_find_poi": false,
-          "can_migrate": false,
+          "can_migrate": true,
           "first_founding_reward": 0
         },
         "minecraft:behavior.move_to_village": {
@@ -93,6 +93,9 @@
           "range": 4.0,
           "event_name": "ambient.in.raid"
         }
+      },
+      "minecraft:raid_persistence": {
+        "minecraft:persistent": {}
       },
       "minecraft:illager_squad_captain": {
         "minecraft:is_illager_captain": {
@@ -421,13 +424,15 @@
         "add": {
           "component_groups": [
             "minecraft:ranged_attack",
-            "minecraft:raid_configuration"
+            "minecraft:raid_configuration",
+            "minecraft:raid_persistence"
           ]
         }
       },
       "minecraft:spawn_as_patrol_follower": {
         "add": {
           "component_groups": [
+            "minecraft:ranged_attack",
             "minecraft:patrol_follower"
           ]
         }
@@ -443,6 +448,7 @@
       "minecraft:promote_to_illager_captain": {
         "add": {
           "component_groups": [
+            "minecraft:ranged_attack",
             "minecraft:illager_squad_captain"
           ]
         },
@@ -455,6 +461,7 @@
       "minecraft:promote_to_patrol_captain": {
         "add": {
           "component_groups": [
+            "minecraft:ranged_attack",
             "minecraft:patrol_captain"
           ]
         },
@@ -473,10 +480,26 @@
         "add": { "component_groups": [ "minecraft:ranged_attack" ] }
       },
       "minecraft:start_celebrating": { // Event must be called exactly this for village to fire it when a raid is lost
-        "add": { "component_groups": [ "minecraft:celebrate" ] }
+        "sequence": [
+          {
+            "add": { "component_groups": [ "minecraft:celebrate" ] }
+          },
+          {
+            "filters": { "test": "has_nametag", "value": false },
+            "remove": { "component_groups": [ "minecraft:raid_persistence" ] }
+          }
+        ]
       },
       "minecraft:stop_celebrating": {
         "remove": { "component_groups": [ "minecraft:celebrate" ] }
+      },
+      "minecraft:raid_expired": {
+        "sequence": [
+          {
+            "filters": { "test": "has_nametag", "value": false },
+            "remove": { "component_groups": [ "minecraft:raid_persistence" ] }
+          }
+        ]
       },
       "minecraft:calm": {
         "remove": { "component_groups": [ "minecraft:melee_attack", "minecraft:ranged_attack" ] }

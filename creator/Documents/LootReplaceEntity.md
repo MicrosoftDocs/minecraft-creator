@@ -29,9 +29,7 @@ The `/loot replace entity` overload of the loot command allows users to directly
 
 ### Syntax
 
-```
-/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> [<count: int>] <source: loot|kill> <source parameter> [<tool>|mainhand|offhand]
-```
+`/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> [<count: int>] <source: loot|kill> <source parameter> [<tool>|mainhand|offhand]`
 
 ## Parameters
 
@@ -45,7 +43,7 @@ The `/loot replace entity` overload of the loot command allows users to directly
 
 - **count** - Optional number of consecutive slots to be filled. If count is 0, then no items are dropped. If count is not specified, then as many slots as possible are filled.
 
-- **source** - `loot` (path to a loot chest) or `kill` (loot that drops from a killed entity)
+- **source** - `loot` (path to a loot table) or `kill` (loot that drops from a killed entity)
 
 ## More about the `<source parameter>` variations
 
@@ -106,7 +104,8 @@ The command returns errors if:
 
 ## What's Next?
 
-Now that you know about *loot spawn* and *kill*, you might want to try the *damage* command.
+Now that you know about *loot replace entity*, you might want to try some other *loot* overloads.
 
 > [!div class="nextstepaction"]
-> [Introduction to Damage](CommandsDamageIntroduction.md)
+> [Loot Replace Block](LootReplaceBlock.md)
+> [Loot Spawn and Kill](LootSpawnAndKill.md)

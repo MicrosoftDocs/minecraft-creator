@@ -85,7 +85,7 @@
       "minecraft:teleport": {
         "random_teleports": true,
         "max_random_teleport_time": 30,
-        "random_teleport_cube": [ 32, 32, 32 ],
+        "random_teleport_cube": [ 64, 32, 64 ],
         "target_distance": 16,
         "target_teleport_chance": 0.05,
         "light_teleport_chance": 0.05

@@ -1,5 +1,5 @@
 {
-  "format_version": "1.17.10",
+  "format_version": "1.18.20",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:player",
@@ -15,6 +15,7 @@
             {
               "effect": "bad_omen",
               "duration": 6000,
+              "visible": false,
               "display_on_screen_animation": true
             }
           ]
@@ -78,12 +79,24 @@
       "minecraft:attack": {
         "damage": 1
       },
+      "minecraft:exhaustion_values": {
+        "heal": 6,
+        "jump": 0.05,
+        "sprint_jump": 0.2,
+        "mine": 0.005,
+        "attack": 0.1,
+        "damage": 0.1,
+        "walk": 0.0,
+        "sprint": 0.01,
+        "swim": 0.01
+      },
       "minecraft:player.saturation": {
-        "value": 20
+        "value": 5,
+         "max": 20
       },
       "minecraft:player.exhaustion": {
         "value": 0,
-        "max": 4
+        "max": 20
       },
       "minecraft:player.level": {
         "value": 0,

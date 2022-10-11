@@ -27,8 +27,8 @@ ms.prod: gaming
 
 | Name| Type |Default Value| Description
 :-----------:|:-----------:|:-----------:|:-----------:
-| origin| Vector [a, b, c] | [-8.0, 0.0, -8.0]| Minimal position Bounds of the selection box. Origin is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.|
-| size| Vector [a, b, c] | [16.0, 16.0, 16.0]| Size of each side of the selection box. Size is specified as [x, y, z]. Origin + size must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.|
+| origin| Vector [a, b, c] | [-8.0, 0.0, -8.0]| Minimal position of the bounds of the selection box. "origin" is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.|
+| size| Vector [a, b, c] | [16.0, 16.0, 16.0]| Size of each side of the selection box. Size is specified as [x, y, z]. "origin" + "size" must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.|
 
 
 ## Example

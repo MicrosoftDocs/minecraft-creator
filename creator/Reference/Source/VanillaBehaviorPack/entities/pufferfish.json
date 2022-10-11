@@ -162,8 +162,8 @@
         "value": 1.2
       },
       "minecraft:health": {
-        "value": 6,
-        "max": 6
+        "value": 3,
+        "max": 3
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -216,6 +216,26 @@
         "look_ahead": 2.0,
         "speed_multiplier": 1.0,
         "wander_time": 5.0
+      },
+      "minecraft:behavior.avoid_mob_type": {
+        "priority": 1,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family", "subject": "other", "value": "player"
+                },
+                {
+                  "test": "is_family", "subject": "other", "value": "axolotl"
+                }
+              ]
+            },
+            "max_dist": 6,
+            "walk_speed_multiplier": 1.5,
+            "sprint_speed_multiplier": 2.0
+          }
+        ]
       },
       "minecraft:flocking": {
         "in_water": true,

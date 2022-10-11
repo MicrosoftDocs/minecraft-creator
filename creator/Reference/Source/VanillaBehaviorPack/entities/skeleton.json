@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.18.20",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:skeleton",
@@ -12,7 +12,7 @@
         "minecraft:is_shaking": {},
         "minecraft:timer": {
           "looping": false,
-          "time": 45,
+          "time": 20,
           "time_down_event": {
             "event": "become_stray_event"
           }
@@ -140,7 +140,7 @@
           "speed_multiplier": 1.25
         },
         "minecraft:attack": {
-          "damage": 3
+          "damage": 2
         },
         "minecraft:environment_sensor": {
           "triggers": [

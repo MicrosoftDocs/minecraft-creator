@@ -1,5 +1,5 @@
 ---
-ms.author: v-jeffreykim
+ms.author: mikeam
 title: Designing Gameplay for Various Devices
 author: neonerz
 ms.prod: gaming

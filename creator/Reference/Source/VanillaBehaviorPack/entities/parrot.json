@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.19.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:parrot",
@@ -93,6 +93,56 @@
           "target_needed": false,
           "mount_distance": 2.0
         }
+      },
+      "minecraft:parrot_not_riding_player": {
+        "minecraft:entity_sensor": {
+          "sensor_range": 2.0,
+          "relative_range": false,
+          "event_filters": {
+            "all_of": [
+              {
+                "test": "is_riding",
+                "subject": "self",
+                "operator": "equals",
+                "value": true
+              },
+              {
+                "test": "has_component",
+                "subject": "self",
+                "operator": "equals",
+                "value": "minecraft:behavior.look_at_player"
+              }
+            ]
+          },
+          "event": "minecraft:on_riding_player"
+        },
+        "minecraft:behavior.look_at_player": {
+          "priority": 1,
+          "look_distance": 8.0
+        }
+      },
+      "minecraft:parrot_riding_player": {
+        "minecraft:entity_sensor": {
+          "sensor_range": 2.0,
+          "relative_range": false,
+          "event_filters": {
+            "all_of": [
+              {
+                "test": "is_riding",
+                "subject": "self",
+                "operator": "equals",
+                "value": false
+              },
+              {
+                "test": "has_component",
+                "subject": "self",
+                "operator": "not",
+                "value": "minecraft:behavior.look_at_player"
+              }
+            ]
+          },
+          "event": "minecraft:on_not_riding_player"
+        }
       }
     },
 
@@ -116,7 +166,12 @@
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
             "cause": "lava",
             "damage_per_tick": 4
           }
@@ -157,15 +212,18 @@
         "priority": 0,
         "speed_multiplier": 1.25
       },
-      "minecraft:behavior.look_at_player": {
-        "priority": 1,
-        "look_distance": 8.0
-      },
       "minecraft:conditional_bandwidth_optimization": {
+      },
+      "minecraft:game_event_movement_tracking": {
+        "emit_flap": true
       },
       "minecraft:healable": {
         "force_use": true,
-        "filters": { "test": "is_riding", "operator": "!=", "value": true },
+        "filters": {
+          "test": "is_riding",
+          "operator": "!=",
+          "value": true
+        },
         "items": [
           {
             "item": "cookie",
@@ -185,6 +243,8 @@
         "soft_distance": 4.0,
         "hard_distance": 6.0,
         "max_distance": 10.0
+      },
+      "minecraft:balloonable": {
       }
     },
 
@@ -197,7 +257,8 @@
               "component_groups": [
                 "minecraft:parrot_red",
                 "minecraft:parrot_adult",
-                "minecraft:parrot_wild"
+                "minecraft:parrot_wild",
+                "minecraft:parrot_not_riding_player"
               ]
             }
           },
@@ -207,7 +268,8 @@
               "component_groups": [
                 "minecraft:parrot_blue",
                 "minecraft:parrot_adult",
-                "minecraft:parrot_wild"
+                "minecraft:parrot_wild",
+                "minecraft:parrot_not_riding_player"
               ]
             }
           },
@@ -217,7 +279,8 @@
               "component_groups": [
                 "minecraft:parrot_green",
                 "minecraft:parrot_adult",
-                "minecraft:parrot_wild"
+                "minecraft:parrot_wild",
+                "minecraft:parrot_not_riding_player"
               ]
             }
           },
@@ -227,7 +290,8 @@
               "component_groups": [
                 "minecraft:parrot_cyan",
                 "minecraft:parrot_adult",
-                "minecraft:parrot_wild"
+                "minecraft:parrot_wild",
+                "minecraft:parrot_not_riding_player"
               ]
             }
           },
@@ -237,7 +301,8 @@
               "component_groups": [
                 "minecraft:parrot_silver",
                 "minecraft:parrot_adult",
-                "minecraft:parrot_wild"
+                "minecraft:parrot_wild",
+                "minecraft:parrot_not_riding_player"
               ]
             }
           }
@@ -252,6 +317,30 @@
         "add": {
           "component_groups": [
             "minecraft:parrot_tame"
+          ]
+        }
+      },
+      "minecraft:on_riding_player": {
+        "remove": {
+          "component_groups": [
+            "minecraft:parrot_not_riding_player"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:parrot_riding_player"
+          ]
+        }
+      },
+      "minecraft:on_not_riding_player": {
+        "remove": {
+          "component_groups": [
+            "minecraft:parrot_riding_player"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:parrot_not_riding_player"
           ]
         }
       }

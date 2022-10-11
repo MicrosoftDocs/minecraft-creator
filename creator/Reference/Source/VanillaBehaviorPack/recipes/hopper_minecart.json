@@ -1,24 +1,18 @@
 {
-  "format_version": "1.12",
-  "minecraft:recipe_shaped": {
+  "format_version": "1.16",
+  "minecraft:recipe_shapeless": {
     "description": {
-    "identifier": "minecraft:hopper_minecart"
+      "identifier": "minecraft:hopper_minecart"
     },
-
-    
     "tags": [ "crafting_table" ],
-    "pattern": [
-      "A",
-      "B"
-    ],
-    "key": {
-      "A": {
+    "ingredients": [
+      {
         "item": "minecraft:hopper"
       },
-      "B": {
+      {
         "item": "minecraft:minecart"
       }
-    },
+    ],
     "result": {
       "item": "minecraft:hopper_minecart"
     }

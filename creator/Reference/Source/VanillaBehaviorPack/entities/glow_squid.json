@@ -1,5 +1,5 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.18.10",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:glow_squid",
@@ -83,6 +83,7 @@
         "max_distance": 10.0
       },
       "minecraft:balloonable": {
+        "mass": 0.5
       },
       "minecraft:behavior.squid_move_away_from_ground": {
         "priority": 1

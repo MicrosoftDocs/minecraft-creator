@@ -1,24 +1,18 @@
 {
-  "format_version": "1.12",
-  "minecraft:recipe_shaped": {
+  "format_version": "1.16",
+  "minecraft:recipe_shapeless": {
     "description": {
-    "identifier": "minecraft:chest_minecart"
+      "identifier": "minecraft:chest_minecart"
     },
-
-    
     "tags": [ "crafting_table" ],
-    "pattern": [
-      "A",
-      "B"
-    ],
-    "key": {
-      "A": {
+    "ingredients": [
+      {
         "item": "minecraft:chest"
       },
-      "B": {
+      {
         "item": "minecraft:minecart"
       }
-    },
+    ],
     "result": {
       "item": "minecraft:chest_minecart"
     }

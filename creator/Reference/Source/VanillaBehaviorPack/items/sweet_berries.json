@@ -18,7 +18,12 @@
         "plant_at": [
           "grass",
           "dirt",
-          "podzol"
+          "podzol",
+          "moss_block",
+          "mycelium",
+          "mud",
+          "muddy_mangrove_roots",
+          "dirt_with_roots"
         ]
       }
     }
