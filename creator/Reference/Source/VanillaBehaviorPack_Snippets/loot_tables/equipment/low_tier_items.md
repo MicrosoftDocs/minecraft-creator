@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: mikeam
+author: v-josjones
+ms.author: v-josjones
 title: low_tier_items
 ms.prod: gaming
 ---

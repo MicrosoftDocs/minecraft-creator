@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: mikeam
+author: v-josjones
+ms.author: v-josjones
 title: horse
 ms.prod: gaming
 ---

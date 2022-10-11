@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: mikeam
+author: v-josjones
+ms.author: v-josjones
 title: woodland_mansion
 ms.prod: gaming
 ---

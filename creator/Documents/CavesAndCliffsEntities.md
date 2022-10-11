@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: mikeam
+author: v-jeffreykim
+ms.author: v-jeffreykim
 title: Introduction to the Caves & Cliffs Entities
 ms.prod: gaming
 description: An introduction to the new Entities that are included in the Caves & Cliffs update

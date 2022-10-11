@@ -1,6 +1,6 @@
 ---
 author: neonerz
-ms.author: mikeam
+ms.author: v-jeffreykim
 title: Chunker - Advanced Mode
 ms.prod: gaming
 description: "Working with Clunker"

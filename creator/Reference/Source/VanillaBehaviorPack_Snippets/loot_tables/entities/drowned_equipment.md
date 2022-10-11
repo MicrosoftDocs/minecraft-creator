@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: mikeam
+author: v-josjones
+ms.author: v-josjones
 title: drowned_equipment
 ms.prod: gaming
 ---

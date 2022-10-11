@@ -13,7 +13,7 @@ These properties are part of the Block Definition and Block Properties that are 
 
 ```json
 {
-  "format_version": "1.19.30",
+  "format_version": "1.16.0",
   "minecraft:block": {
     "description": {
       "identifier": "design:lavenderstone"

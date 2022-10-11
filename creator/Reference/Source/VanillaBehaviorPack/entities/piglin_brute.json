@@ -1,5 +1,5 @@
 {
-  "format_version": "1.18.20",
+  "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:piglin_brute",
@@ -153,12 +153,10 @@
           "interval": 200,
           "speed_multiplier": 0.6,
           "goal_radius": 4.0,
-          "on_failed": [
-            {
+          "on_failed": {
               "event": "go_back_to_spawn_failed",
               "target": "self"
-            }
-          ]
+          }
         }
       }
     },

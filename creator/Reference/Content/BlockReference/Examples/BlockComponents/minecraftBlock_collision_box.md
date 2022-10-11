@@ -16,14 +16,7 @@ ms.prod: gaming
 >
 >To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md).
 
-## Parameters
-
-| Name| Default Value | Type|  Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| `origin`| [-8.0, 0.0, -8.0]| Vector [a, b, c]| Minimal position of the bounds of the collision box. `origin` is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive. |
-| `size`| [16.0, 16.0, 16.0]| Vector [a, b, c]| Size of each side of the collision box. Size is specified as [x, y, z]. `origin` + `size` must be in the range (-8, 0, -8) to (8, 16, 8), inclusive. |
-
-git ## Example
+## Example
 
 ```json
 "minecraft:collision_box": false

@@ -1,6 +1,6 @@
 ---
 author: neonerz
-ms.author: mikeam
+ms.author: v-jeffreykim
 title: Content Error Log
 ms.prod: gaming
 ---

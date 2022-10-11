@@ -1,5 +1,5 @@
 {
-  "format_version": "1.18.20",
+  "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:spider",
@@ -186,7 +186,7 @@
       "minecraft:can_climb": {
       },
       "minecraft:attack": {
-        "damage": 2
+        "damage": 3
       },
       "minecraft:despawn": {
         "despawn_from_distance": {}

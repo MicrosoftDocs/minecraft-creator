@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: mikeam
+author: v-jeffreykim
+ms.author: v-jeffreykim
 title: Introduction to Texture Sets
 ms.prod: gaming
 ---

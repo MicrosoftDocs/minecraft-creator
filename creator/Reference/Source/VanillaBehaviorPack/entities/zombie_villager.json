@@ -1,5 +1,5 @@
 {
-  "format_version": "1.17.20",
+  "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:zombie_villager",
@@ -55,11 +55,6 @@
         "minecraft:behavior.find_mount": {
           "priority": 1,
           "within_radius": 16
-        }
-      },
-
-      "can_break_doors": {
-        "minecraft:annotation.break_door": {
         }
       },
 
@@ -222,6 +217,8 @@
         "can_pass_doors": true,
         "can_break_doors": true,
         "avoid_sun": false
+      },
+      "minecraft:annotation.break_door": {
       },
       "minecraft:movement.basic": {
       },
@@ -527,10 +524,7 @@
         "goal_radius": 2,
         "speed_multiplier": 1.0,
         "pickup_based_on_chance": true,
-        "can_pickup_any_item": true,
-        "excluded_items": [
-          "minecraft:glow_ink_sac"
-        ]
+        "can_pickup_any_item": true
       },
       "minecraft:behavior.random_stroll": {
         "priority": 9,
@@ -723,19 +717,6 @@
               {
                 "weight": 10,
                 "add": { "component_groups": [ "leatherworker" ] }
-              }
-            ]
-          },
-          {
-            "randomize": [
-              {
-                "weight": 10,
-                "add": {
-                  "component_groups": [ "can_break_doors" ]
-                }
-              },
-              {
-                "weight": 90
               }
             ]
           }

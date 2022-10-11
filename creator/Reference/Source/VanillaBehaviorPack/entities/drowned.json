@@ -1,5 +1,5 @@
 {
-  "format_version": "1.17.20",
+  "format_version": "1.16.210",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:drowned",
@@ -111,11 +111,6 @@
           "can_walk": true,
           "avoid_sun": true
         }
-      },
-
-      "minecraft:can_break_doors": {
-        "minecraft:annotation.break_door": {
-        }
       }
     },
 
@@ -132,6 +127,8 @@
       "minecraft:collision_box": {
         "width": 0.6,
         "height": 1.9
+      },
+      "minecraft:annotation.break_door": {
       },
       "minecraft:underwater_movement": {
         "value": 0.06
@@ -418,10 +415,7 @@
         "goal_radius": 2,
         "speed_multiplier": 1.0,
         "pickup_based_on_chance": true,
-        "can_pickup_any_item": true,
-        "excluded_items": [
-          "minecraft:glow_ink_sac"
-        ]
+        "can_pickup_any_item": true
       },
       "minecraft:behavior.random_stroll": {
         "priority": 7,
@@ -453,8 +447,7 @@
                   "any_of": [
                     { "test": "is_family", "subject": "other", "value": "player" },
                     { "test": "is_family", "subject": "other", "value": "snowgolem" },
-                    { "test": "is_family", "subject": "other", "value": "irongolem" },
-                    { "test": "is_family", "subject": "other", "value": "axolotl" }
+                    { "test": "is_family", "subject": "other", "value": "irongolem" }
                   ]
                 },
                 {
@@ -518,60 +511,43 @@
 
     "events": {
       "minecraft:entity_spawned": {
-        "sequence": [
+        "randomize": [
           {
+            "weight": 15,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:mode_switcher",
+                "minecraft:ranged_mode",
+                "minecraft:adult_drowned"
+              ]
+            }
+          },
+          {
+            "weight": 85,
             "randomize": [
               {
-                "weight": 15,
+                "weight": 95,
                 "remove": {
                 },
                 "add": {
                   "component_groups": [
-                    "minecraft:mode_switcher",
-                    "minecraft:ranged_mode",
+                    "minecraft:melee_mode",
                     "minecraft:adult_drowned"
                   ]
                 }
               },
               {
-                "weight": 85,
-                "randomize": [
-                  {
-                    "weight": 95,
-                    "remove": {
-                    },
-                    "add": {
-                      "component_groups": [
-                        "minecraft:melee_mode",
-                        "minecraft:adult_drowned"
-                      ]
-                    }
-                  },
-                  {
-                    "weight": 5,
-                    "remove": {
-                    },
-                    "add": {
-                      "component_groups": [
-                        "minecraft:melee_mode",
-                        "minecraft:baby_drowned"
-                      ]
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "randomize": [
-              {
-                "weight": 10,
+                "weight": 5,
+                "remove": {
+                },
                 "add": {
-                  "component_groups": [ "minecraft:can_break_doors" ]
+                  "component_groups": [
+                    "minecraft:melee_mode",
+                    "minecraft:baby_drowned"
+                  ]
                 }
-              },
-              {
-                "weight": 90
               }
             ]
           }

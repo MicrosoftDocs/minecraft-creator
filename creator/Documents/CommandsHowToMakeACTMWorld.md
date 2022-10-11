@@ -1,14 +1,14 @@
 ---
 author: mammerla
 ms.author: v-jillheaden
-title: How To Make a Complete the Monument World
+title: How To Make a Complete the Monument Map
 ms.prod: gaming
-description: A tutorial covering how to create a "Complete the Monument" style world using Command Blocks
+description: A tutorial covering how to create a "Complete the Monument" style map using Command Blocks
 ---
 
-# Commands - How To Make a "Complete the Monument" World
+# Commands - How To Make a "Complete the Monument" Map
 
-This guide shows you not only how to create a command system that will detect the placement of certain blocks in particular areas of a world, but also how to give visual clues to players about what they need to do to win. The world will give a player one diamond the first time they place each block of wool in the correct spot, to encourage them. However, to discourage players from placing the same color wool in the same spot over and over and getting a diamond each time (not that anyone would do that) we are going to make it where the system only rewards them the first time they place each color of wool block correctly.
+This guide shows you not only how to create a command system that will detect the placement of certain blocks in particular areas of a map, but also how to give visual clues to players about what they need to do to win. The map will give a player one diamond the first time they place each block of wool in the correct spot, to encourage them. However, to discourage players from placing the same color wool in the same spot over and over and getting a diamond each time (not that anyone would do that) we are going to make it where the system only rewards them the first time they place each color of wool block correctly.
 When all three blocks are placed correctly, the player gets a diamond block.
 
 In this tutorial you will learn the following:
@@ -47,7 +47,7 @@ Add a **totals** objective to store the total number of wool blocks placed.
 So, this next part might seem a little weird. Scoreboards track information about about objectives and players, remember? But what if we want to track information about something else, like, whether or not a red wool block has been placed? Well, we can tell the scoreboard that "red wool" is a player and that the scoreboard needs to track information about it - *and it will believe us!*
 
 >[!Note]
-> In computer science language, we are using the scoreboard to track when the score for "red wool" goes from 0 to 1, sort of like a Boolean value. This concept might come in handy later when you're building your own worlds.
+> In computer science language, we are using the scoreboard to track when the score for "red wool" goes from 0 to 1, sort of like a Boolean value. This concept might come in handy later when you're building your own maps.
 
 Anyway, to keep things nice and tidy, we are going to create three fake players so that the scoreboard will track whether red, green, or blue wool is placed. If we name our fake players **#red**, **#green**, and **#blue**, the hash (#) at the start of each name will prevent our fake players from appearing in the list of scores on the sidebar.
 

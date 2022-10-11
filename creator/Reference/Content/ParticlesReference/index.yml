@@ -41,8 +41,8 @@ landingContent:
             url: ParticleComponents/minecraftEmitter_lifetime_events.md
           - text: Particle Appearance Billboard Component
             url: ParticleComponents/minecraftParticle_appearance_billboard.md
-          - text: Particle Initial Spin Component
-            url: ParticleComponents/minecraftParticle_initial_spin.md
+          - text: Particle Initial State Component
+            url: ParticleComponents/minecraftParticle_initial_state.md
           - text: Particle Lifetime Events Component
             url: ParticleComponents/minecraftParticle_lifetime_events.md
   # Card

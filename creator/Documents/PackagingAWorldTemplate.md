@@ -1,6 +1,6 @@
 ---
 author: neonerz
-ms.author: mikeam
+ms.author: v-jeffreykim
 title: Packaging a World Template
 ms.prod: gaming
 ---

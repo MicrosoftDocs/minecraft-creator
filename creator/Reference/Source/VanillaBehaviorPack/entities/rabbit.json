@@ -1,5 +1,5 @@
 {
-  "format_version": "1.17.20",
+  "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:rabbit",
@@ -99,12 +99,10 @@
       },
       "minecraft:nameable": {
       },
+
       "minecraft:health": {
         "value": 3,
         "max": 3
-      },
-      "minecraft:scale": {
-        "value": 0.6
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -210,8 +208,6 @@
         "is_pushable_by_piston": true
       },
       "minecraft:conditional_bandwidth_optimization": {
-      },
-      "minecraft:block_climber": {
       }
     },
 

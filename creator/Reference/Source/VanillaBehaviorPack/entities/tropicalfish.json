@@ -531,8 +531,8 @@
         "height": 0.4
       },
       "minecraft:health": {
-        "value": 3,
-        "max": 3
+        "value": 6,
+        "max": 6
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -602,14 +602,9 @@
         "entity_types": [
           {
             "filters": {
-              "any_of": [
-                {
-                  "test": "is_family", "subject": "other", "value": "player"
-                },
-                {
-                  "test": "is_family", "subject": "other", "value": "axolotl"
-                }
-              ]
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
             },
             "max_dist": 6,
             "walk_speed_multiplier": 1.5,

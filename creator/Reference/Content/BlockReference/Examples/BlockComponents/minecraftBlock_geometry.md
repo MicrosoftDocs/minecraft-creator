@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Block Documentation - minecraft:geometry
 
-`minecraft:geometry` is the geometry description identifier to use, this identifier must match an existing geometry identifier in any of the currently loaded resource packs.The description identifier of the geometry file to use to render this block. This identifier must match an existing geometry identifier in any of the currently loaded resource packs.
+`minecraft:geometry` is the geometry description identifier to use, this identifier must match an existing geometry identifier in any of the currently loaded resource packs.
 
 >[!IMPORTANT]
 > `minecraft:geometry` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.

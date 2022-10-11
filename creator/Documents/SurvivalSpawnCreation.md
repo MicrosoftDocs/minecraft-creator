@@ -1,6 +1,6 @@
 ---
 author: neonerz
-ms.author: mikeam
+ms.author: v-jeffreykim
 title: Survival Spawn Creation
 ms.prod: gaming
 ---
