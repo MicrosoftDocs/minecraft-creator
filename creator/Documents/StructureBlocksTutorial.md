@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: docsbryce
+ms.author: v-bbortree
 title: Structure Blocks Tutorial
 ms.prod: gaming
 description: "A tutorial on using Structure Blocks for Minecraft: Bedrock Edition"
