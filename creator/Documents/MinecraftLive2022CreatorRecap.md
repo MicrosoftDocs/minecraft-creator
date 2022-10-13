@@ -16,7 +16,7 @@ This year’s Minecraft Live was packed with a lot of announcements! The focus o
 
 Coming soon, we will also be releasing the Minecraft Block Wizard in Blockbench: a feature that will make it easier to make custom blocks. Customize your block without needing to touch the code: Destroy time, explosion resistance, friction, flammability, light, sound, and more. If you can dream it, you can make it!
 
-When it comes to creator tools, Blockbench is just one of many tools available to you. If you’re curious about other resources, check out the creator [home page](https://learn.microsoft.com/en-us/minecraft/creator/) or jump right to a directory of [commonly used tools](CommonlyUsedTools.md).
+When it comes to creator tools, Blockbench is just one of many tools available to you. If you’re curious about other resources, check out the creator [home page](https://learn.microsoft.com/minecraft/creator/) or jump right to a directory of [commonly used tools](CommonlyUsedTools.md).
 
 ### [Video Description Header]
 
