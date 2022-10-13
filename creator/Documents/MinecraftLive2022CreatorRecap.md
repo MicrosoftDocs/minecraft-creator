@@ -8,21 +8,19 @@ description: Minecraft Live 2022 Creator Recap
 
 # Minecraft Live 2022 Creator Recap
 
-Have a creation you’d like to share with the Minecraft Creator team? Post on Twitter with #MinecraftCreator!
-
-## Summary
-
 This year’s Minecraft Live was packed with a lot of announcements! The focus of this year’s Minecraft: Bedrock Edition creator segment was the [Minecraft Entity Wizard](MinecraftEntityWizard.md) for the model editor Blockbench.  
 
 Coming soon, we will also be releasing the Minecraft Block Wizard in Blockbench: a feature that will make it easier to make custom blocks. Customize your block without needing to touch the code: Destroy time, explosion resistance, friction, flammability, light, sound, and more. If you can dream it, you can make it!
 
 When it comes to creator tools, Blockbench is just one of many tools available to you. If you’re curious about other resources, check out the creator [home page](https://learn.microsoft.com/minecraft/creator/) or jump right to a directory of [commonly used tools](CommonlyUsedTools.md).
 
-### [Video Description Header]
+Have a creation you’d like to share with the Minecraft Creator team? Post on Twitter with #MinecraftCreator!
+
+### Creator Segment 2022
 
 > [!VIDEO https://www.youtube.com/embed/8KydVx_R4xw]<videoID>]
 
-Description of the video...
+Segment for creator tools during Minecraft Live 2022.
 
 ## Entity Wizard
 
@@ -30,17 +28,19 @@ Create your own mob in less than 30 seconds?! You better believe it! The Minecra
 
 **Prerequisites**
 
-After you have downloaded Blockbench, the Minecraft Entity Wizard is a plugin you can add. Navigate to File --> Plugins --> and search for “Entity Wizard.”
+After you have downloaded Blockbench, the Minecraft Entity Wizard is a plugin you can add.
+
+1. Navigate to **File --> Plugins**.
+1. Search for **Entity Wizard**.
+1. Install the plugin.
 
 < Use this gif: blockbench file plugin flow.gif <-- download this and host it on the learning portal, don’t point directly to this file as only microsoft people would be able to access it, thanks! >  
 
 **Resources**
 
-Download [Blockbench.](https://www.blockbench.net/)
-
-Learn how to use the [Entity Wizard](MinecraftEntityWizard.md).
-
-Maker Series: Step-by-step guide to create a [Goblin Chef from scratch!](MakerSeriesMakingTheGoblinChef.md)
+- Download [Blockbench.](https://www.blockbench.net/)
+- Learn how to use the [Entity Wizard](MinecraftEntityWizard.md).
+- Maker Series: Step-by-step guide to create a [Goblin Chef from scratch!](MakerSeriesMakingTheGoblinChef.md)
 
 ## Minecraft Block Wizard – Coming Soon!  
 
@@ -52,22 +52,22 @@ You will be able to expand your world even further with new materials and object
 
 ## Minecraft Live 2022 Pack
  
-*“I am so excited about the Minecraft Entity Wizard! My students have had so many ideas and the program is easier to use than we thought it would be. In one class, they were able to modify the appearance and behavior of Minecraft mobs to fit their vision. Students created everything from mimic monsters to their family dog. I can’t wait to see what they do with more time using the program.”*
-
--- Beth Bachuss, Austin High School, Minecraft Education Partner
+> *“I am so excited about the Minecraft Entity Wizard! My students have had so many ideas and the program is easier to use than we thought it would be. In one class, they were able to modify the appearance and behavior of Minecraft mobs to fit their vision. Students created everything from mimic monsters to their family dog. I can’t wait to see what they do with more time using the program.”*
+> **-- Beth Bachuss, Austin High School, Minecraft Education Partner**
 
 For fun, we enlisted several individuals of various skills to create contributions for the .mcaddon pack for Bedrock Edition, linked here below. 
 The goal of the Minecraft Live 2022 pack is to celebrate and showcase how easy the Entity Wizard is to use and that it’s possible for anyone to be a creator and make your own mob!  
 
 As a disclaimer, the mobs included in this pack are not indicative towards official Minecraft game design or of what may be added in the future. They were also created with intentional disparity in polish and imagined potential.
 
-Download the .mcaddon: [paste link here – get it from Rob]  
+**Download the .mcaddon pack**
+
+[Download the MCLive2022.mcaddon pack](link goes here)
 
 **How to find the mobs**
 
-- Creative Mode: Spawn eggs in Creative inventory
-
-- Survival Mode: Enable cheats and type `/give @s mcl:` to see the full list.  
+- **Creative Mode:** Spawn eggs in Creative inventory
+- **Survival Mode:** Enable cheats and type `/give @s mcl:` to see the full list.  
 
 < video with all mobs to appear ahead of the table below: MCL Addon Video Final4.mp4 > <-- download this and host it on the learning portal, don’t point directly to this file as only microsoft people would be able to access it, thanks! >
 
