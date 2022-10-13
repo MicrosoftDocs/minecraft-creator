@@ -20,7 +20,7 @@ When it comes to creator tools, Blockbench is just one of many tools available t
 
 ### [Video Description Header]
 
->[!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/><videoID>]
+> [!VIDEO https://www.youtube.com/embed/8KydVx_R4xw]<videoID>]
 
 Description of the video...
 
