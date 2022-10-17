@@ -43,7 +43,7 @@ Imagine that the behavior pack contains all of the information about a block's b
 
 >***Note:*** *If components are given in the behavior pack to control the visual properties of a block, they will override the visual properties specified for that block in the blocks.json file. That's why blocks.json becomes optional once you start relying on behavior packs more heavily.*
 
-In this tutorial, however, we will be making the simplest custom block possible. We will be using blocks.json to specify the visual properties of this block, and we will not be using any components yet. While it is recommended to complete this tutorial before moving forward, the tutorial on using components can be found [here](Link to sushi doc)
+In this tutorial, however, we will be making the simplest custom block possible. We will be using blocks.json to specify the visual properties of this block, and we will not be using any components yet. While it is recommended to complete this tutorial before moving forward, the tutorial on using components can be found [here](AdvancedCustomBlocks.md).
 
 Let's create a custom die block with six different sides, that rotates the side faces and is a different color in hand. Small customizations to a block like this can make it feel more unique to players.
 
@@ -226,19 +226,19 @@ The die block texture will need to be created and placed in the Resource Pack. W
 
 These were made in paint and are 16x16 pixels. There are 7 images because it’s a die block plus red for the in-hand texture.
 
-:::image type="content" source="Media/AddCustomDieBlock/dieblock1.png" alt-text="Side 1 of 7 die sides.":::
+:::image type="content" source="Media/AddCustomDieBlock/AddCustomBlock3.png" alt-text="Side 1 of 7 die sides.":::
 
-:::image type="content" source="Media/AddCustomDieBlock/dieblock2.png" alt-text="Side 2 of 7 die sides.":::
+:::image type="content" source="Media/AddCustomDieBlock/AddCustomBlock4.png" alt-text="Side 2 of 7 die sides.":::
 
-:::image type="content" source="Media/AddCustomDieBlock/dieblock3.png" alt-text="Side 3 of 7 die sides.":::
+:::image type="content" source="Media/AddCustomDieBlock/AddCustomBlock5.png" alt-text="Side 3 of 7 die sides.":::
 
-:::image type="content" source="Media/AddCustomDieBlock/dieblock4.png" alt-text="Side 4 of 7 die sides.":::
+:::image type="content" source="Media/AddCustomDieBlock/AddCustomBlock6.png" alt-text="Side 4 of 7 die sides.":::
 
-:::image type="content" source="Media/AddCustomDieBlock/dieblock5.png" alt-text="Side 5 of 7 die sides.":::
+:::image type="content" source="Media/AddCustomDieBlock/AddCustomBlock7.png" alt-text="Side 5 of 7 die sides.":::
 
-:::image type="content" source="Media/AddCustomDieBlock/dieblock6.png" alt-text="Side 6 of 7 die sides.":::
+:::image type="content" source="Media/AddCustomDieBlock/AddCustomBlock8.png" alt-text="Side 6 of 7 die sides.":::
 
-:::image type="content" source="Media/AddCustomDieBlock/dieblock7.png" alt-text="Side 7 of 7 die sides.":::
+:::image type="content" source="Media/AddCustomDieBlock/AddCustomBlock9.png" alt-text="Side 7 of 7 die sides.":::
 
 >***Note:*** The images above have been provided for the die block, but feel free to use a different texture. If you do, just remember to be very careful about naming throughout the tutorial.
 
