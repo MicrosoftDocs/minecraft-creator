@@ -34,8 +34,6 @@ After you have downloaded Blockbench, the Minecraft Entity Wizard is a plugin yo
 1. Search for **Entity Wizard**.
 1. Install the plugin.
 
-< Use this gif: blockbench file plugin flow.gif <-- download this and host it on the learning portal, don’t point directly to this file as only microsoft people would be able to access it, thanks! >  
-
 **Resources**
 
 - Download [Blockbench.](https://www.blockbench.net/)
