@@ -46,9 +46,7 @@ After you have downloaded Blockbench, the Minecraft Entity Wizard is a plugin yo
 
 Inspired by and fueled by the excitement we’ve seen for Minecraft Entity Wizard, we’ve partnered with Blockbench’s creator, Jannis, to make it equally easy to create custom blocks!  
 
-You will be able to expand your world even further with new materials and objects. Upon release, a tutorial will be created. Until then, here is a sneak peek!  
-
-< video preview of the block wizard: BlockWizard_Audio.mov > <-- download this and host it on the learning portal, don’t point directly to this file as only microsoft people would be able to access it, thanks! >
+You will be able to expand your world even further with new materials and objects. Upon release, a tutorial will be created. 
 
 ## Minecraft Live 2022 Pack
  
