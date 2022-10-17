@@ -1,139 +1,377 @@
 ---
-author: JDHeaden
-ms.author: v-jillheaden
-title: Guide to Redstone
+author: mammerla
+ms.author: v-jimseaman
+title: Advanced Custom Blocks, Part 1
 ms.prod: gaming
-description: "A guide to using Redstone in Minecraft: Bedrock Edition"
+description: "A guide to using the Geometry and Material instances to create custom blocks in Minecraft: Bedrock Edition"
 ---
 
-# A Guide to Redstone
+# Advanced Custom Blocks: Geometry and Material Instances
 
-This guide is intended to show you some basic ways to use redstone components so that you might feel inspired to try your own projects and feel more prepared to go learn from other redstone creators.
-
-In this tutorial you will learn the following:
+In this tutorial, you will learn much more about custom block components. We will cover the following:
 
 > [!div class="checklist"]
 >
-> - Basic redstone components and how they work.
+> - Using Blockbench to design custom geometries and textures.
+> - Adding block geometries that are different shapes/sizes than 16x16x16.
+> - Using the `minecraft:geometry` component to reference your custom geometry.
+> - Using the `minecraft:material_instances` component to set the texture(s) for your custom geometry.
 
-### Requirements
+### Prerequisites
 
 It’s recommended that the following be completed before beginning this tutorial:
 
-- [Introduction to Commands](CommandsIntroduction.md)
+- [How to Add a Simple Custom Block](AddCustomDieBlock.md)
 
-This guide assumes that you know how to make a flat, creative-mode world and how to give yourself the things you need, like redstone dust and pistons.
+We’ve already created a cool die block that you can make with the fewest number of files and json, so let’s explore the exciting possibilities that are offered by the behavior pack json components: ***geometry*** and ***material_instances***! 
 
-## Redstone Fundamentals
+## Creating custom blocks with resource and behavior packs
 
-What is redstone? Redstone is kind of like electrical circuits within Minecraft. As with electrical circuits, it's possible to build incredibly sophisticated machines based on the combination of simple connections and switches among components.
+This tutorial builds from the 'How to Add a Simple Custom Block' tutorial and uses the same file structure, with one major difference: For these blocks, we will be using custom geometry models, so we will be adding a ***models*** folder to the `custom_block_resource_pack`. Here is the updated file structure we’ll follow for this tutorial:
 
-### Using redstone torches, redstone blocks, and redstone dust
+:::image type="content" source="Media/AdvancedCustomBlocks/advancedblock.png" alt-text="Visual hierarchy of the project file structure.":::
 
-You can power most redstone devices, like a redstone lamp, by putting a redstone torch on an adjacent block.
+## Sushi blocks - Custom block with geometry and material instances
 
-Putting the torch on the lamp itself will not power it.
+:::image type="content" source="Media/AdvancedCustomBlocks/advancedblock1.png" alt-text="Picture of sushi blocks in Minecraft: Bedrock Edition.":::
 
-Placing a redstone block on the lamp will power it.
+***Blockbench***
+[Blockbench](https://blockbench.net/)
 
-:::image type="content" source="Media/Redstone/torch_block_basics.png" alt-text="Image of lamps being powered by a torch next to it, not being powered by a torch placed on it, and being powered by being placed on a redstone block.":::
+Blockbench is a free entity-modeling application for creating entity models in Minecraft: Bedrock Edition. Additionally, user have the ability to create textures, and the ability to animate them for Bedrock Edition maps. Blockbench has external plugin support, enabling developers to create additional tools to use within the program. It also has the ability to export models into a standard OBJ format, Java Edition block model, and more.
 
-Redstone dust acts like a conduit between a power source and a component. As the power signal travels farther from the power source, it gets weaker at a predictable rate. The redstone signal coming out of a power source starts at 15 and decreases by 1 for each block the line of redstone dust is extended.
+We will use Blockbench in these tutorials to create custom geometries for the more advanced blocks we’ll create for sushi, fish in a bubble, and a giant umbrella.
 
-Let's do an experiment to test this:
+***Create geometry in Blockbench***
 
-1. Give yourself redstone dust and a redstone torch.
+Each custom block has a different UV for the various textures of the sushi sides. The UV defines how the geometry maps to each texture. For this tutorial, we can share the texture for the sushi wrap.
 
-1. Place one handful of redstone dust dust on the ground. It makes a dark red blob.
+As a bonus, the seaweed will be the same for all three rolls, so you can reuse the same geometries!
 
-1. Place a redstone torch next to the blob. The redstone blob will glow and align itself to point towards the torch. Neat!
+:::image type="content" source="Media/AdvancedCustomBlocks/advancedblock2.png" alt-text="Overall view of seaweed sushi wrap .":::
 
-1. Place more redstone dust to continue the line in one direction. Notice that the glow gets fainter as you get farther from the torch.
+:::image type="content" source="Media/AdvancedCustomBlocks/advancedblock3.png" alt-text="Detailed view of seaweed sushi wrap.":::
 
-1. Extend the line at least 15 blocks.
+The textures for the individual rolls, however, will be different depending on the type of roll. Here is the salmon roll:
 
-    :::image type="content" source="Media/Redstone/signal_strength_line.png" alt-text="Image of a line showing diminishing signal strength":::
+:::image type="content" source="Media/AdvancedCustomBlocks/advancedblock4.png" alt-text="Picture of salmon roll in 3d.":::
 
-1. Give yourself a piston and place it anywhere around the dark end of the redstone line. The pistons won't do anything if the signal is too weak to make the redstone touching the piston glow.
+:::image type="content" source="Media/AdvancedCustomBlocks/advancedblock5.png" alt-text="Flat picture of salmon roll.":::
 
-    :::image type="content" source="Media/Redstone/inactive_pistons.png" alt-text="Image of 3 inactive pistons":::
+***Export the file from Blockbench***
 
-1. Place another piston next to the glowing part of the redstone. It should extend.
+Navigate to ***File > Export > Export Bedrock Geometry*** to save the geo file to your computer.
 
-    :::image type="content" source="Media/Redstone/active_pistons.png" alt-text="Image of 3 active pistons":::
+```json
+{ 
 
-1. You could also add another redstone torch to boost the power.
+    "format_version": "1.12.0", 
 
-    :::image type="content" source="Media/Redstone/booster_torch.png" alt-text="Image of a redstone torch boosting the signal and activating pistons":::
+    "minecraft:geometry": [ 
 
-### Random redstone dust, torch, and block facts, in no particular order
+        { 
 
-- A blob of redstone dust will power all the blocks around it and the block it is placed on.
-- Redstone blocks and redstone torches each have a signal strength of 15.
-- Power radiates out from a redstone torch in all directions, as shown in this grid that is powered by one redstone torch.
+            "description": { 
 
-:::image type="content" source="Media/Redstone/signal_strength_grid.png" alt-text="Image of a grid showing diminishing signal strength":::
+                "identifier": "geometry.sushi", 
 
-- A redstone torch powers the block above it, takes redstone signal from it, and powers all adjacent redstone components including above and below the torch.
-- A redstone torch will not power the is block it is placed on. Placing a redstone torch on a powered block will deactivate the block.
-- The redstone torch or redstone block must be next to or below the piston to power it. Placing the torch or block in front of the piston will not power it.
-- Redstone torches don't power the block they're on. For example, putting a redstone torch on top of a piston will not power it, but placing a redstone block on top of a piston will power it.
-- A redstone torch can be deactivated by powering the block it is placed on.
+                "texture_width": 36, 
 
-- Power from a redstone torch is continuous. Power can also travel in pulses called "ticks" and there are ways to vary the rate.
+                "texture_height": 18, 
 
-## Time Tick and Redstone Tick
+                "visible_bounds_width": 2, 
 
-In Minecraft, the term for time passing is "ticks" and time passes at 20 ticks per second. Redstone signals pass at the rate of 10 ticks per second.
-By controlling the speed of the ticks, you can control the speed at which a component does something. So, as you experiment with how different components are powered, keep in mind that the power does not have to be continuous.
+                "visible_bounds_height": 2.5, 
 
-### Components that emit redstone power
+                "visible_bounds_offset": [0, 0.75, 0] 
 
-These are things that can power redstone components even though there is no redstone in their recipes.
+            }, 
 
-- Button: press to get a short pulse of power.
-- Lever: toggles full signal strength on or off.
-- Pressure plate, wood or stone: sends a pulse of power when you press or step on it. They can be activated by mobs stepping on them, too. Different mobs may activate the pressure plates at different strengths. For example, the signal strength emitted when a creeper steps on the plate is lower than the strength emitted when an iron golem steps on it. When the player or mob leaves the plate, it will deactivate after 5 redstone ticks. A wooden pressure plate also activates if an item is dropped on it.
-- Weighted pressure plate, iron ("heavy") or gold ("light"): signal strength grows as the number of entities (players, mobs, or items) on top of it increases. Light plate requires fewer items for maximum signal strength than heavy plate needs.
-- Tripwire: emits signal strength when wire is activated (tripped).
-- Lectern with a book on it: emits a pulse of power as you turn the pages.
+            "bones": [ 
 
-## Common redstone components
+                { 
 
-- Piston and sticky piston: These stay extended for as long as they are powered. A piston can push up to 12 blocks. Sticky pistons can pull the block stuck to it back again. Pistons take one tick to extend, zero ticks to retract.
+                    "name": "bb_main", 
 
-- Repeater: Place along a line of redstone dust to continue the signal. As long as a signal strength of 1 or higher is going into the repeater, it will output the maximum level of 15. Redstone repeaters only power the dust or component directly in front of them. They have a built-in delay of 1 tick and can be toggled to extend the delay to 4 ticks. If the input pulse delay is shorter than the delay toggled on the repeater, it will extend the pulse. For example, if you route a 1-tick pulse into a 4-tick repeater, the pulse gets extended to 4 ticks.
+                    "pivot": [0, 0, 0], 
 
-  :::image type="content" source="Media/Redstone/repeater.png" alt-text="Image of a repeater extending a redstone signal.":::
+                    "cubes": [ 
 
-- Comparator: Unlike a repeater, the comparator outputs the same signal strength that comes into the back of it. Comparators also take in a signal running into the side and compare it to the strength of the signal coming into the back.
-In normal mode (when the light is NOT switched on) then it will not output a signal if the strength of the signal running into the side is stronger than the signal strength running into the back. If the redstone comparator is in subtract mode (meaning the light is on), it will subtract the signal strength that comes into the side from the signal strength that comes into the back and output the result. So, if a signal strength of 10 is running through a comparator that is in subtract mode (light ON) and we put in a signal strength of 7, the it will output a signal strength of 3.
+                        {"origin": [-6, 0, -3], "size": [12, 12, 6], "uv": [0, 0]} 
 
-  :::image type="content" source="Media/Redstone/comparator1.png" alt-text="Image of a comparator comparing 2 redstone signals.":::
+                    ] 
 
-(Remember, the signal starts at 15 and then goes down by one for each segment of redstone dust.)
+                } 
 
-- Observer: Has two sides - observer face and output face. When the face detects a block update, it emits a signal out of the back.
+            ] 
 
-- Daylight sensor: produces different levels of power depending on the level of light it detects. It can be inverted to emit light when it detects darkness. To invert it, place one and left-click on it. It will turn blue.
+        } 
 
-- Dropper: Spits out a random item from its inventory when powered directly or powered by an adjacent block. For example, if loaded with a horse spawn egg, when activated, it drops a horse spawn egg. If loaded with arrows, it spits out an arrow.
+    ] 
 
-- Dispenser: Works like the dropper, but has special powers depending on what items are loaded into it. For example, if it is loaded with a horse spawn egg, it dispenses a horse. If loaded with arrows, it will fire the arrow. Other items with special behavior include armor stands, boats, bone meal, potions, and buckets.
+} 
+```
 
-- Observer: When it detects block updates with its face, it sends a one-tick pulse through the red spot on the back. Observers will emit a pulse when they are moved by pistons.
+Now you can create textures in Blockbench, or create textures in a separate paint or photo editing application (assuring that it matches the size and UV of the geometry).
 
-- Trapped chest: activates when opened. Signal varies according to how many players are viewing the contents.
+## Resource Pack
 
-- Noteblock: plays a note when it receives a signal.
+***Add geometry to resource pack***
 
-- Redstone lamp: produces light when powered.
+Let’s start by adding the sushi blocks’ files to the resource pack.
 
-- TNT: activates when powered directly or by an adjacent powered block. Fuse time is 40 redstone ticks.
+1. In ***File Explorer***, navigate to the folder ***custom_block_resource_pack***, located in the ***development_resource_packs*** folder. 
+1. Inside the ***custom_block_resource_pack*** folder, create a folder and name it ***models***.
+1. Open the ***models*** folder.
+1. Inside the ***models*** folder, create a folder and name it ***blocks***.
+1. Open the ***blocks*** folder. 
+1. Inside the ***blocks*** folder, copy in the downloaded geo files from Blockbench.
 
-## What's Next?
+***Create custom block localization***
 
-Now that you know more about redstone, you could use it to enhance a "Complete the Monument" map.
+Just like we did for the die block, we’ll add custom block localization. In ***texts/en_US.lang***, you’ll add the following for the sushi blocks:
 
-> [!div class="nextstepaction"]
-> [How to make a Complete the Monument World](CommandsHowToMakeACTMWorld.md)
+`tile.demo:salmon_roll.name=Salmon Roll`
+
+`tile.demo:tuna_roll.name=Tuna Roll`
+
+`tile.demo:california_roll.name=California Roll`
+
+These lines set the name of the sushi blocks in the game. Make sure not to add extra spaces after the equal sign because they will display in Minecraft.
+
+***Add textures for blocks***
+
+Place the following images in the ***textures/blocks*** folder:
+
+:::image type="content" source="Media/AdvancedCustomBlocks/advancedblock6.png" alt-text="Sushi texture image 1 of 4.":::
+
+:::image type="content" source="Media/AdvancedCustomBlocks/advancedblock7.png" alt-text="Sushi texture image 2 of 4.":::
+
+:::image type="content" source="Media/AdvancedCustomBlocks/advancedblock8.png" alt-text="Sushi texture image 3 of 4.":::
+
+:::image type="content" source="Media/AdvancedCustomBlocks/advancedblock9.png" alt-text="Sushi texture image 4 of 4.":::
+
+As always, feel free to create your own textures!
+
+***Add friendly name in terrain_texture.json***
+
+The next step is to associate the texture names with a texture file path. This is done in a `terrain_texture.json` file.
+
+- In ***File Explorer***, navigate to the ***custom_block_resource_pack*** folder and open the ***textures*** folder.
+- Open ***terrain_texture.json*** in a text editor.
+- Copy and paste the following code into ***terrain_texture.json*** in the ***texture_data*** section:
+
+```json
+{ 
+
+    "texture_data": { 
+
+        "die_1": { 
+
+            "textures": "textures/blocks/die_1" 
+
+}, … 
+
+        "sushi_wrap": { 
+
+            "textures": "textures/blocks/sushi_wrap" 
+
+        }, 
+
+        "salmon_roll": { 
+
+            "textures": "textures/blocks/salmon_roll" 
+
+        }, 
+
+        "tuna_roll": { 
+
+          "textures": "textures/blocks/tuna_roll" 
+
+        }, 
+
+        "california_roll": { 
+
+          "textures": "textures/blocks/california_roll" 
+
+        } 
+
+} 
+```
+
+***Optionally include sounds in blocks.json***
+
+Adding a sound in blocks.json is optional, but you can include it here for fun.
+
+***Important!*** Because you’ll be using advanced geometry and material_instances, any rendering information will be overridden by the custom block file in the behavior pack. So we will only be adding the sound here. We’ll give the sushi blocks the same sound as mud because they are squishy!
+
+1. In the resource pack, navigate to ***blocks.json***.
+1. Add the following sound information below the ***demo:die*** section.
+
+```json
+{ 
+
+"format_version": "1.19.30", 
+
+"demo:die": {…}, 
+
+"demo:salmon_roll": { 
+
+"sound": "mud" 
+
+}, 
+
+"demo:tuna_roll": { 
+
+"sound": "mud" 
+
+}, 
+
+"demo:california_roll": { 
+
+"sound": "mud" 
+
+}	 
+
+} 
+```
+
+## Behavior Pack
+
+***Create individual custom block files for each roll***
+
+Let’s bring all those resource pieces together into one beautiful combination in the behavior pack individual custom block file.
+
+Although the sushi blocks share the same “geometry.sushi” geometry, you will create separate files for each of these rolls so they become their own blocks that display their own unique textures.
+
+1. In ***File Explorer***, navigate to the folder ***custom_block_behavior_pack***, located in the ***development_behavior_packs*** folder.
+1. Double-click on ***blocks*** to open the folder.
+1. Inside the ***blocks*** folder, create a text document and name it ***salmon_roll.json***.
+1. Double-click on ***salmon_roll.json*** to open it in a text editor.
+
+***Create the behavior custom block json file***
+
+In the file, you will need to define what each of the blocks is.
+
+Copy and paste the following code into your ***salmon_roll.json*** file:
+
+```json
+{ 
+
+    "format_version": "1.19.40", 
+
+    "minecraft:block": { 
+
+        "description": { 
+
+            "identifier": "demo:salmon_roll" 
+
+        }, 
+
+      "components": { 
+
+        "minecraft:geometry": "sushi.geo.json", 
+
+        "minecraft:material_instances": { 
+
+          "north": { 
+
+            "texture": "salmon_roll" 
+
+          }, 
+
+          "south": { 
+
+            "texture": "salmon_roll" 
+
+          }, 
+
+          "*": { 
+
+            "texture": "sushi_wrap" 
+
+          } 
+
+        } 
+
+      } 
+
+    } 
+
+} 
+```
+
+***Using custom block components***
+
+All of this has been a set up to the moment you’ve been waiting for: custom block components!  
+
+- `minecraft:geometry` defines the model that will be used in the resource pack for this custom block. You will use the identifier inside the ***geo.json*** file that was created in Blockbench.
+
+- ` minecraft:material_instances` has a ton of goodies. It’s an object that defines the various textures (a single texture, or per-face) and allows you to specify some information about rendering and lighting. We’ll talk more about the specific render methods and lighting options offered by this component later, in the Exploring the Material Instances Render and Lighting Options Tutorial (link to it).
+
+Just like in blocks.json, we can define the various sides of the block that we want to use here. For now, we’re going to define 'north' and 'south' for the salmon roll sides.
+
+The rest can be defined using * to capture any side not previously defined. * is the default texture that will be used if the correct texture for one side cannot be found, and you are required to specify it. For all sides to use the same texture, you could simply use * and define the identifier.
+
+***Name custom instance of materials and use them (Optional)***
+
+There is another cool part of material_instances to show off. We can actually create defined variables within the material instances component. Let’s see an example using salmon_roll:
+
+```json
+{ 
+
+    "format_version": "1.19.40", 
+
+    "minecraft:block": { 
+
+        "description": { 
+
+            "identifier": "demo:salmon_roll" 
+
+        }, 
+
+      "components": { 
+
+        "minecraft:geometry": "geometry.sushi", 
+
+        "minecraft:material_instances": { 
+
+          "north": "sushi_side", 
+
+          "south": "sushi_side", 
+
+          "*": { 
+
+            "texture": "sushi_wrap" 
+
+          }, 
+
+          “sushi_side”:{ 
+
+             “texture”: “salmon_roll” 
+
+        } 
+
+      } 
+
+    } 
+```
+
+Here, we’ve defined ***sushi_side*** as having the ***salmon_roll*** texture.  
+
+Then, for north and south, we can use ***sushi_side*** as a string rather than a whole object specifying the texture as ***salmon_roll***. 
+
+Now it’s your turn to create the Tuna and California rolls. Feel free to copy this ***salmon_roll*** file to start from, making sure to change the identifier and the "***salmon_roll***" texture name to match the corresponding roll.
+
+## Test the Block
+
+Let's head back to the test world.
+
+With the sushi blocks defined in both the behavior pack and resource pack, you can now test them in-game.
+
+1. Open up the chat dialogue box.
+1. Type the following command: `/give @s demo:california_roll`
+
+Now you can place the sushi blocks all over! Note that the smaller geometry means they don't sit exactly side-by-side.
+
+Make sure to test all three sushi blocks to truly appreciate how cute these new blocks really are!
