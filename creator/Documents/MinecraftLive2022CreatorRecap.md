@@ -18,7 +18,7 @@ Have a creation you’d like to share with the Minecraft Creator team? Post on T
 
 ### Creator Segment 2022
 
-> [!VIDEO https://www.youtube.com/embed/8KydVx_R4xw]<videoID>]
+> [!VIDEO https://www.youtube.com/embed/kE0PJJlhDFA]
 
 Segment for creator tools during Minecraft Live 2022.
 
@@ -62,14 +62,12 @@ As a disclaimer, the mobs included in this pack are not indicative towards offic
 
 **Download the .mcaddon pack**
 
-[Download the MCLive2022.mcaddon pack](link goes here)
+[Download the MCLive2022.mcaddon pack](https://github.com/microsoft/minecraft-samples/raw/main/mclive2022_addon/mclive2022.mcaddon)
 
 **How to find the mobs**
 
 - **Creative Mode:** Spawn eggs in Creative inventory
 - **Survival Mode:** Enable cheats and type `/give @s mcl:` to see the full list.  
-
-< video with all mobs to appear ahead of the table below: MCL Addon Video Final4.mp4 > <-- download this and host it on the learning portal, don’t point directly to this file as only microsoft people would be able to access it, thanks! >
 
 ### Contributor statements  
 
