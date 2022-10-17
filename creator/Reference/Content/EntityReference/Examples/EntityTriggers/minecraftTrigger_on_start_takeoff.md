@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:on_start_takeoff
 ms.prod: gaming
 ---
@@ -34,7 +34,12 @@ ms.prod: gaming
 
 ### ender_dragon
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ender_dragon.json" range="90-93":::
+```json
+"minecraft:on_start_takeoff": {
+    "event": "minecraft:start_fly",
+    "target": "self"
+}
+```
 
 ## Vanilla entities using `minecraft:on_start_takeoff`
 

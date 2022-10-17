@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:water_movement
 ms.prod: gaming
 ---
@@ -27,7 +27,11 @@ ms.prod: gaming
 
 ### panda
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/panda.json" range="389-391":::
+```json
+"minecraft:water_movement": {
+        "drag_factor": 0.98
+      }
+```
 
 ## Vanilla entities using `minecraft:water_movement`
 

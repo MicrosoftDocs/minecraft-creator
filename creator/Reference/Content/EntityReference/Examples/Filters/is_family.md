@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - is_family
 ms.prod: gaming
 ---
@@ -61,13 +61,11 @@ Returns true when the subject entity is a member of the named family.
 
 ## Vanilla entities examples
 
-### arrow
-
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/arrow.json" range="154-159":::
-
 ### piglin_brute
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin_brute.json" range="112-131":::
+```json
+{ "test": "is_family", "subject": "other", "operator": "!=", "value": "piglin" }
+```
 
 ## Vanilla entities using is_family
 

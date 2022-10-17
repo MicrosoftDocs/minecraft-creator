@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:movement.basic
 ms.prod: gaming
 ---
@@ -27,7 +27,10 @@ ms.prod: gaming
 
 ### horse
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/horse.json" range="349-350":::
+```json
+"minecraft:movement.basic": {
+      }
+```
 
 ## Vanilla entities using `minecraft:movement.basic`
 

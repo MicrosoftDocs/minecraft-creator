@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.offer_flower
 ms.prod: gaming
 ---
@@ -31,7 +31,11 @@ ms.prod: gaming
 
 ### iron_golem
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/iron_golem.json" range="232-234":::
+```json
+"minecraft:behavior.offer_flower": {
+        "priority": 5
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.offer_flower`
 

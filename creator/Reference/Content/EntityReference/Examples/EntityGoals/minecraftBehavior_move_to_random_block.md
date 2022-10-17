@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.move_to_random_block
 ms.prod: gaming
 ---
@@ -34,7 +34,14 @@ ms.prod: gaming
 
 ### pillager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/pillager.json" range="200-205":::
+```json
+"minecraft:behavior.move_to_random_block": {
+          "priority": 6,
+          "speed_multiplier": 0.55,
+          "within_radius": 8,
+          "block_distance": 512
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.move_to_random_block`
 

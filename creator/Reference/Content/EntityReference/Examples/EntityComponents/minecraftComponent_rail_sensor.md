@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:rail_sensor
 ms.prod: gaming
 ---
@@ -43,7 +43,11 @@ ms.prod: gaming
 
 ### minecart
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/minecart.json" range="32-34":::
+```json
+"minecraft:rail_sensor": {
+    "eject_on_activate": true
+}
+```
 
 ## Vanilla entities using `minecraft:rail_sensor`
 

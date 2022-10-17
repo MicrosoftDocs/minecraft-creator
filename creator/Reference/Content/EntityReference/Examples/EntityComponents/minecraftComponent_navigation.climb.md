@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:navigation.climb
 ms.prod: gaming
 ---
@@ -63,7 +63,11 @@ ms.prod: gaming
 
 ### spider
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/spider.json" range="179-181":::
+```json
+"minecraft:navigation.climb": {
+    "can_path_over_water": true
+}
+```
 
 ## Vanilla entities using `minecraft:navigation.climb`
 

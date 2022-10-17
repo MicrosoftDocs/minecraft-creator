@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Recipe Documentation -Shaped Recipe
 ms.prod: gaming
 ---

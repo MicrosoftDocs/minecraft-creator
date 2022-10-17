@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.inspect_bookshelf
 ms.prod: gaming
 ---
@@ -35,9 +35,18 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### villager_v2
+### villager_v2 librarian
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="512-519":::
+```json
+"minecraft:behavior.inspect_bookshelf": {
+          "priority": 8,
+          "speed_multiplier": 0.6,
+          "search_range": 4,
+          "search_height": 3,
+          "goal_radius": 0.8,
+          "search_count": 0
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.inspect_bookshelf`
 

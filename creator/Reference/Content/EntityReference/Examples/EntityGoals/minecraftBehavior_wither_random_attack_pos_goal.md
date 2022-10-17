@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.wither_random_attack_pos_goal
 ms.prod: gaming
 ---
@@ -30,7 +30,11 @@ ms.prod: gaming
 
 ### wither
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither.json" range="71-73":::
+```json
+"minecraft:behavior.wither_random_attack_pos_goal": {
+        "priority": 3
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.wither_random_attack_pos_goal`
 

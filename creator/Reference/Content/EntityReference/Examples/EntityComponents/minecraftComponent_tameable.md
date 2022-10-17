@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:tameable
 ms.prod: gaming
 ---
@@ -33,7 +33,16 @@ ms.prod: gaming
 
 ### wolf
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wolf.json" range="112-119":::
+```json
+"minecraft:tameable": {
+    "probability": 0.33,
+    "tame_items": "bone",
+    "tame_event": {
+        "event": "minecraft:on_tame",
+        "target": "self"
+    }
+}
+```
 
 ## Vanilla entities using `minecraft:tameable`
 

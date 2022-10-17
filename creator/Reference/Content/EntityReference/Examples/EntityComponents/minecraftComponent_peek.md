@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:peek
 ms.prod: gaming
 ---
@@ -37,7 +37,19 @@ ms.prod: gaming
 
 ### shulker
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/shulker.json" range="140-150":::
+```json
+"minecraft:peek": {
+        "on_open": {
+          "event": "minecraft:on_open"
+        },
+        "on_close": {
+          "event": "minecraft:on_close"
+        },
+        "on_target_open": {
+          "event": "minecraft:on_open"
+        }
+      }
+```
 
 ## Vanilla entities using `minecraft:peek`
 

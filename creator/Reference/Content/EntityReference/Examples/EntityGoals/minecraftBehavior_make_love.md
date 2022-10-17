@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.make_love
 ms.prod: gaming
 ---
@@ -27,7 +27,11 @@ ms.prod: gaming
 
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="1238-1240":::
+```json
+"minecraft:behavior.make_love": {
+          "priority": 5
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.make_love`
 

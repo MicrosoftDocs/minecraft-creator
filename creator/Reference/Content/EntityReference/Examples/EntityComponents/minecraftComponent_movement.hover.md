@@ -1,6 +1,6 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:movement.hover
 ms.prod: gaming
 ---
@@ -27,7 +27,10 @@ ms.prod: gaming
 
 ### bee
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/bee.json" range="478":::
+```json
+"minecraft:movement.hover": {
+}
+```
 
 ## Vanilla entities using `minecraft:movement.hover`
 

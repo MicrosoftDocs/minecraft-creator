@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:sittable
 ms.prod: gaming
 ---
@@ -29,7 +29,10 @@ ms.prod: gaming
 
 ### cat
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/cat.json" range="151-152":::
+```json
+"minecraft:sittable": {
+}
+```
 
 ## Vanilla entities using `minecraft:sittable`
 

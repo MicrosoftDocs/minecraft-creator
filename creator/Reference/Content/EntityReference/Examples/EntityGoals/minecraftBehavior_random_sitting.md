@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.random_sitting
 ms.prod: gaming
 ---
@@ -34,7 +34,15 @@ ms.prod: gaming
 
 ### panda
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/panda.json" range="140-146":::
+```json
+"minecraft:behavior.random_sitting": {
+          "priority": 6,
+          "start_chance": 0.02,
+          "stop_chance": 0.2,
+          "cooldown": 25,
+          "min_sit_time": 15
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.random_sitting`
 

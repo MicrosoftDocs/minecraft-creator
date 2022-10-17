@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:is_hidden_when_invisible
 ms.prod: gaming
 ---
@@ -20,7 +20,10 @@ ms.prod: gaming
 
 ### player
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/player.json" range="55-56":::
+```json
+"minecraft:is_hidden_when_invisible": {
+}
+```
 
 ## Vanilla entities using `minecraft:is_hidden_when_invisible`
 

@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.mount_pathing
 ms.prod: gaming
 ---
@@ -33,7 +33,14 @@ ms.prod: gaming
 
 ### husk
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/husk.json" range="96-101":::
+```json
+"minecraft:behavior.mount_pathing": {
+          "priority": 2,
+          "speed_multiplier": 1.25,
+          "target_dist": 0.0,
+          "track_target": true
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.mount_pathing`
 

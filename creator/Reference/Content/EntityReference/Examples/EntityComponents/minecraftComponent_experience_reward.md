@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:experience_reward
 ms.prod: gaming
 ---
@@ -29,7 +29,12 @@ ms.prod: gaming
 
 ### cow
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/cow.json" range="33-36":::
+```json
+"minecraft:experience_reward": {
+          "on_bred": "Math.Random(1,7)",
+          "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+        }
+```
 
 ## Vanilla entities using `minecraft:experience_reward`
 

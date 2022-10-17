@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:is_sheared
 ms.prod: gaming
 ---
@@ -57,7 +57,10 @@ ms.prod: gaming
 
 ### sheep
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/sheep.json" range="87-88":::
+```json
+"minecraft:is_sheared": {
+}
+```
 
 ## Vanilla entities using `minecraft:is_sheared`
 

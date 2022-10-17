@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.rise_to_liquid_level
 ms.prod: gaming
 ---
@@ -33,7 +33,14 @@ ms.prod: gaming
 
 ### strider
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/strider.json" range="270-275":::
+```json
+"minecraft:behavior.rise_to_liquid_level": {
+        "priority": 0,
+        "liquid_y_offset": 0.25,
+        "rise_delta": 0.01,
+        "sink_delta": 0.01
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.rise_to_liquid_level`
 

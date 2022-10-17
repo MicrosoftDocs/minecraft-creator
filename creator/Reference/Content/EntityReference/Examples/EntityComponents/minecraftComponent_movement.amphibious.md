@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:movement.amphibious
 ms.prod: gaming
 ---
@@ -27,7 +27,11 @@ ms.prod: gaming
 
 ### turtle
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/turtle.json" range="171-173":::
+```json
+"minecraft:movement.amphibious": {
+        "max_turn": 5.0
+      }
+```
 
 ## Vanilla entities using `minecraft:movement.amphibious`
 

@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:input_ground_controlled
 ms.prod: gaming
 ---
@@ -20,7 +20,10 @@ ms.prod: gaming
 
 ### donkey
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/donkey.json" range="264-265":::
+```json
+"minecraft:input_ground_controlled": {
+}
+```
 
 ## Vanilla entities using `minecraft:input_ground_controlled`
 

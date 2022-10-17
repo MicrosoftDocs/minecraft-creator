@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:equipment
 ms.prod: gaming
 ---
@@ -28,7 +28,17 @@ ms.prod: gaming
 
 ### pillager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/pillager.json" range="103-111":::
+```json
+"minecraft:equipment": {
+          "table": "loot_tables/entities/pillager_captain_equipment.json",
+          "slot_drop_chance": [
+            {
+              "slot": "slot.armor.chest",
+              "drop_chance": 1.0
+            }
+          ]
+        }
+```
 
 ## Vanilla entities using `minecraft:equipment`
 

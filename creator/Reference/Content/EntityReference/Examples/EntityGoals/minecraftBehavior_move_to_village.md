@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.move_to_village
 ms.prod: gaming
 ---
@@ -34,7 +34,13 @@ ms.prod: gaming
 
 ### vindicator
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/vindicator.json" range="101-105":::
+```json
+"minecraft:behavior.move_to_village": {
+          "priority": 4,
+          "speed_multiplier": 1.0,
+          "goal_radius": 2.0
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.move_to_village`
 

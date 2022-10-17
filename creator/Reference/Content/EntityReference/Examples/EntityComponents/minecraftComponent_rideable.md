@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:rideable
 ms.prod: gaming
 ---
@@ -61,7 +61,39 @@ ms.prod: gaming
 
 ### boat
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/boat.json" range="26-56":::
+```json
+"minecraft:rideable": {
+        "seat_count": 2,
+        "interact_text": "action.interact.ride.boat",
+        "pull_in_entities": true,
+
+        "seats": [
+          {
+            "position": [ 0.0, -0.2, 0.0 ],
+            "min_rider_count": 0,
+            "max_rider_count": 1,
+
+            "rotate_rider_by": -90,
+            "lock_rider_rotation": 90
+          },
+          {
+            "position": [ 0.2, -0.2, 0.0 ],
+            "min_rider_count": 2,
+            "max_rider_count": 2,
+
+            "rotate_rider_by": "query.has_any_family('blaze', 'creeper', 'enderman', 'illager', 'magmacube', 'piglin', 'player', 'skeleton', 'slime', 'villager', 'wandering_trader', 'witch', 'zombie', 'zombie_pigman') ? -90 : 0",
+            "lock_rider_rotation": 90
+          },
+          {
+            "position": [ -0.6, -0.2, 0.0 ],
+            "min_rider_count": 2,
+            "max_rider_count": 2,
+            "rotate_rider_by": "query.has_any_family('blaze', 'creeper', 'enderman', 'illager', 'magmacube', 'piglin', 'player', 'skeleton', 'slime', 'villager', 'wandering_trader', 'witch', 'zombie', 'zombie_pigman') ? -90 : 0",
+            "lock_rider_rotation": 90
+          }
+        ]
+      }
+```
 
 ## Vanilla entities using `minecraft:rideable`
 

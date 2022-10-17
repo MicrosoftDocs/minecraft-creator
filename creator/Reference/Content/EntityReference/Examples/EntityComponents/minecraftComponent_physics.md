@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:physics
 ms.prod: gaming
 ---
@@ -29,7 +29,10 @@ ms.prod: gaming
 
 ### player
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/player.json" range="106-107":::
+```json
+"minecraft:physics": {
+}
+```
 
 ## Vanilla entities using `minecraft:physics`
 

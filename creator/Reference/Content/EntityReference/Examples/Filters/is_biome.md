@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - is_biome
 ms.prod: gaming
 ---
@@ -88,7 +88,9 @@ Below is a list of biome types that can be used for the `value` string.
 
 ### cave_spider
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/cave_spider.json" range="285-287":::
+```json
+{ "test": "is_biome", "value" : "the_nether" }
+```
 
 ## Vanilla entities using `is_biome`
 

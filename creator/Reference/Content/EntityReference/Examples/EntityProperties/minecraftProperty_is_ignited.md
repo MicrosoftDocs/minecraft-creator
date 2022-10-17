@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:is_ignited
 ms.prod: gaming
 ---
@@ -52,7 +52,10 @@ ms.prod: gaming
 
 ### tnt_minecart
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/tnt_minecart.json" range="23-24":::
+```json
+"minecraft:is_ignited":{
+}
+```
 
 ## Vanilla entities using `minecraft:is_ignited`
 

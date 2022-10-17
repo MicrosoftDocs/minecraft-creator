@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:is_saddled
 ms.prod: gaming
 ---
@@ -57,7 +57,10 @@ ms.prod: gaming
 
 ### donkey
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/donkey.json" range="262-263":::
+```json
+"minecraft:is_saddled":{
+}
+```
 
 ## Vanilla entities using `minecraft:is_saddled`
 

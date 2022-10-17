@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:drying_out_timer
 ms.prod: gaming
 ---
@@ -41,7 +41,21 @@ ms.prod: gaming
 
 ### axolotl
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/axolotl.json" range="101-113":::
+```json
+"minecraft:drying_out_timer": {
+          "total_time": 300,
+          "water_bottle_refill_time": 90,
+          "dried_out_event": {
+            "event": "dried_out"
+          },
+          "stopped_drying_out_event": {
+            "event": "stop_drying_out"
+          },
+          "recover_after_dried_out_event": {
+            "event": "recover_after_dried_out"
+          }
+        }
+```
 
 ## Vanilla entities using `minecraft:drying_out_timer`
 

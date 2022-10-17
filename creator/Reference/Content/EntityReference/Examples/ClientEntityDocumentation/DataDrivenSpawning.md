@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-bbortree
 title: Entity Documentation -  Spawn Rules and Data-Driven Spawning
 ms.prod: gaming
@@ -58,7 +58,8 @@ Components
 ### Example Spawn Rules for the zombie
 
 ```json
-"format_version": "1.8.0",
+{
+  "format_version": "1.8.0",
   "minecraft:spawn_rules": {
     "description": {
       "identifier": "minecraft:zombie",
@@ -67,6 +68,7 @@ Components
     "conditions": [
       {
         "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underground": {},
         "minecraft:brightness_filter": {
           "min": 0,
           "max": 7,
@@ -89,7 +91,7 @@ Components
           },
           {
             "weight": 5,
-            "entity_type": "minecraft:zombie_villager"
+            "entity_type": "minecraft:zombie_villager_v2"
           }
         ],
         "minecraft:biome_filter": {
@@ -98,6 +100,7 @@ Components
       }
     ]
   }
+}
 ```
 
 ## Vanilla Entity Spawn Rules

@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:transformation
 ms.prod: gaming
 ---
@@ -65,13 +65,17 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### husk
-
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/husk.json" range="41-48":::
-
 ### piglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="49-55":::
+```json
+"minecraft:transformation": {
+    "into": "minecraft:zombie_pigman",
+    "transformation_sound" : "converted_to_zombified",
+    "keep_level": true,
+    "drop_inventory": true,
+    "preserve_equipment": true
+}
+```
 
 ## Vanilla entities using `minecraft:transformation`
 

@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:tamemount
 ms.prod: gaming
 ---
@@ -66,9 +66,47 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### horse
+### llama
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/horse.json" range="99-151":::
+```json
+"minecraft:tamemount": {
+          "min_temper": 0,
+          "max_temper": 30,
+          "feed_text": "action.interact.feed",
+          "ride_text": "action.interact.mount",
+          "feed_items": [
+            {
+              "item": "wheat",
+              "temper_mod": 3
+            },
+            {
+              "item": "hay_block",
+              "temper_mod": 6
+            }
+          ],
+          "auto_reject_items": [
+            {
+              "item": "horsearmorleather"
+            },
+            {
+              "item": "horsearmoriron"
+            },
+            {
+              "item": "horsearmorgold"
+            },
+            {
+              "item": "horsearmordiamond"
+            },
+            {
+              "item": "saddle"
+            }
+          ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+```
 
 ## Vanilla entities using `minecraft:tamemount`
 

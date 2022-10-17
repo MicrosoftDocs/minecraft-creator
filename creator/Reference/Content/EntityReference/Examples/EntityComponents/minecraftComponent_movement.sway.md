@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:movement.sway
 ms.prod: gaming
 ---
@@ -31,7 +31,11 @@ ms.prod: gaming
 
 ### fish
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fish.json" range="69-71":::
+```json
+"minecraft:movement.sway": {
+        "sway_amplitude": 0.0
+      }
+```
 
 ## Vanilla entities using `minecraft:movement.sway`
 

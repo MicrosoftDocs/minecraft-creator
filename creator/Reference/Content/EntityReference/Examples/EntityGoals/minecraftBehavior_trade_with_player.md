@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.trade_with_player
 ms.prod: gaming
 ---
@@ -27,7 +27,11 @@ ms.prod: gaming
 
 ### wandering_trader
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wandering_trader.json" range="152-154":::
+```json
+"minecraft:behavior.trade_with_player": {
+        "priority": 1
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.trade_with_player`
 

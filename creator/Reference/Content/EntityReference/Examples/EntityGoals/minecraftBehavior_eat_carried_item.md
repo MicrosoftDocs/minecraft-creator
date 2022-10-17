@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.eat_carried_item
 ms.prod: gaming
 ---
@@ -32,7 +32,12 @@ ms.prod: gaming
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="606-609":::
+```json
+"minecraft:behavior.eat_carried_item": {
+        "priority": 12,
+        "delay_before_eating": 28
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.eat_carried_item`
 

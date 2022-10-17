@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:home
 ms.prod: gaming
 ---
@@ -29,7 +29,42 @@ ms.prod: gaming
 
 ### bee
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/bee.json" range="433-439":::
+```json
+"minecraft:behavior.go_home": {
+                    "priority": 4,
+                    "speed_multiplier": 1.0,
+                    "interval": 1,
+                    "goal_radius": 1.2,
+                    "on_home": [
+                        {
+                            "filters": {
+                                "any_of":[
+                                    { "test": "is_block", "subject": "block", "value": "minecraft:bee_nest" },
+                                    { "test": "is_block", "subject": "block", "value": "minecraft:beehive" }
+                                ]
+                            },
+                            "event": "minecraft:bee_returned_to_hive",
+                            "target": "block"
+                        },
+                        {
+                            "filters": {
+                                "all_of":[
+                                    { "test": "is_block", "subject": "block", "operator": "!=", "value": "minecraft:bee_nest" },
+                                    { "test": "is_block", "subject": "block", "operator": "!=", "value": "minecraft:beehive" }
+                                ]
+                            },
+                            "event": "find_hive_event",
+                            "target": "self"
+                        }
+                    ],
+                    "on_failed": [
+                      {
+                        "event": "find_hive_event",
+                        "target": "self"
+                      }
+                    ]
+                }
+```
 
 ## Vanilla entities using `minecraft:home`
 

@@ -1,6 +1,6 @@
 ---
 author: docsbryce
-ms.author: v-bbortree
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:projectile
 ms.prod: gaming
 ---
@@ -47,7 +47,6 @@ ms.prod: gaming
 
 ## on_hit parameters
 
-
 |Name |Default Value  |Type  |Description|
 :----------|:----------|:----------|:----------
 |catch_fire| false | Boolean| Determines if the struck object is set on fire.|
@@ -69,7 +68,6 @@ ms.prod: gaming
 |teleport_owner | false | Boolean | Determines if the owner is transported on hit.|
 |thrown_potion_effect|"thrown_potion_effect" : {} |JSON Object| Creates a splash area for effects caused by a thrown potion.|
 
-
 ## impact_damage parameters
 
 Name |Default Value  |Type  |Description  |
@@ -87,9 +85,7 @@ Name |Default Value  |Type  |Description  |
 |semi_random_diff_damage| false| Boolean| If true, damage will be randomized based on damage and speed |
 |set_last_hurt_requires_damage | false | Boolean| If true, then the hit must cause damage to update the last hurt property.|
 
-
 ## definition_event parameters
-
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
@@ -101,6 +97,7 @@ Name |Default Value  |Type  |Description  |
 |event_trigger| *not set* | JSON Object | The event triggered. Also has an option `filters` parameter to limit affected targets.|
 
 ## spawn_aoe_cloud parameters
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |affect_owner| true|Boolean| Determines if the projectile shooter is affected.|
@@ -113,6 +110,7 @@ Name |Default Value  |Type  |Description  |
 |reapplication_delay|0|Integer|Delay before the potion can affect the area again.|
 
 ## spawn_chance parameters
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |first_spawn_count|0|Integer|The amount of new entities spawned.|
@@ -122,8 +120,8 @@ Name |Default Value  |Type  |Description  |
 |spawn_definition|*not set*|String|The entity that will spawn.|
 |spawn_baby|False|Boolean|Determines if a baby spawns.|
 
-
 ## particle_on_hit parameters
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |particle_type|*not set*|String|The id of the particle to spawn on hit.|
@@ -184,7 +182,31 @@ Name |Default Value  |Type  |Description  |
 
 ### arrow
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/arrow.json" range="12-34":::
+```json
+"minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": [ 1, 5 ],
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": true
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            }
+          },
+          "hit_sound": "bow.hit",
+          "power": 1.6,
+          "gravity": 0.05,
+          "uncertainty_base": 16,
+          "uncertainty_multiplier": 4,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ]
+        }
+```
 
 ## Vanilla entities using `minecraft:projectile`
 

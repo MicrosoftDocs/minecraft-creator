@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.random_look_around_and_sit
 ms.prod: gaming
 ---
@@ -37,7 +37,16 @@ ms.prod: gaming
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="610-617":::
+```json
+"minecraft:behavior.random_look_around_and_sit": {
+        "priority": 12,
+        "min_look_count": 2,
+        "max_look_count": 5,
+        "min_look_time": 80,
+        "max_look_time": 100,
+        "probability": 0.001
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.random_look_around_and_sit`
 

@@ -2,6 +2,10 @@
   items:
     - name: "Minecraft: Bedrock Documentation Homepage"
       href: index.yml
+    - name: What's New
+      items:
+        - name: Minecraft Live 2022 Creator Recap
+          href: Documents/MinecraftLive2022CreatorRecap.md
     - name: Useful Knowledge for Creators
       items:
         - name: 'Redstone Guide'
@@ -172,7 +176,7 @@
                 href: Documents/ChunkerTheNether.md
     - name: Reference Documentation
       items:
-      - name: Scripting
+      - name: Scripting and API
         items:
           - name: Script API Documentation Homepage
             href: ScriptAPI/index.yml

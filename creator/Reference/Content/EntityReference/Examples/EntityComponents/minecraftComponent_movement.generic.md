@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:movement.generic
 ms.prod: gaming
 ---
@@ -27,7 +27,10 @@ ms.prod: gaming
 
 ### drowned
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/drowned.json" range="136-137":::
+```json
+"minecraft:movement.generic": {
+      }
+```
 
 ## Vanilla entities using `minecraft:movement.generic`
 
