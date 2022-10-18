@@ -20,7 +20,7 @@ This type is usable for iterating over a set of players. This means it can be us
 
 ### **[Symbol.iterator]**
 `
-[Symbol.iterator](): Iterator<Player>
+[Symbol.iterator](): IterableIterator<Player>
 `
 
-#### **Returns** [Iterator](https://microsoft.github.io/PowerBI-JavaScript/interfaces/_node_modules_typedoc_node_modules_typescript_lib_lib_es2015_iterable_d_.iterator.html)&lt;[*Player*](Player.md)&gt;
+#### **Returns** [IterableIterator](https://microsoft.github.io/PowerBI-JavaScript/interfaces/_node_modules_typedoc_node_modules_typescript_lib_lib_es2015_iterable_d_.iterableiterator.html)&lt;[*Player*](Player.md)&gt;
