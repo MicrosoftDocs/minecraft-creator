@@ -46,6 +46,12 @@
             href: Documents/EditingNBTSafely.md
           - name: Molang Beginner's Guide
             href: Documents/MolangBeginnersGuide.md
+          - name: Past Updates
+            items:
+            - name: Introduction to the Caves & Cliffs Entities
+              href: Documents/CavesAndCliffsEntities.md
+            - name: World Height Changes in Caves and Cliffs Part 2
+              href: Documents/WorldHeightChange.md
     - name: Tutorials
       items:
         - name: Add-On Pack Tutorials
@@ -366,14 +372,6 @@
             href: Reference/Content/molangreference/index.yml
           - name: Molang Concepts
             href: Reference/Content/Molangreference/Examples/Molangconcepts/TOC.yml
-    - name: Articles
-      items:
-        - name: Caves + Cliffs Features
-          items:
-          - name: Introduction to the Caves & Cliffs Entities
-            href: Documents/CavesAndCliffsEntities.md
-          - name: World Height Changes in Caves and Cliffs Part 2
-            href: Documents/WorldHeightChange.md
     - name: Contribute
       items:
       - name: "Contributing to Minecraft: Bedrock Documentation"
