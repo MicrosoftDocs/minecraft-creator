@@ -1,12 +1,12 @@
 ---
 author: mammerla
 ms.author: v-jimseaman
-title: Advanced Custom Blocks, Part 1
+title: Custom Blocks Part 2 Geometry and Materials
 ms.prod: gaming
 description: "A guide to using the Geometry and Material instances to create custom blocks in Minecraft: Bedrock Edition"
 ---
 
-# Advanced Custom Blocks: Geometry and Material Instances
+# Custom Blocks Part 2: Geometry and Material Instances
 
 In this tutorial, you will learn much more about custom block components. We will cover the following:
 
@@ -23,7 +23,7 @@ It’s recommended that the following be completed before beginning this tutoria
 
 - [How to Add a Simple Custom Block](AddCustomDieBlock.md)
 
-We’ve already created a cool die block that you can make with the fewest number of files and json, so let’s explore the exciting possibilities that are offered by the behavior pack json components: ***geometry*** and ***material_instances***! 
+We’ve already created a cool die block that you can make with the fewest number of files and json, so let’s explore the exciting possibilities that are offered by the behavior pack json components: ***geometry*** and ***material_instances***!
 
 ## Creating custom blocks with resource and behavior packs
 
@@ -120,11 +120,11 @@ Now you can create textures in Blockbench, or create textures in a separate pain
 
 Let’s start by adding the sushi blocks’ files to the resource pack.
 
-1. In ***File Explorer***, navigate to the folder ***custom_block_resource_pack***, located in the ***development_resource_packs*** folder. 
+1. In ***File Explorer***, navigate to the folder ***custom_block_resource_pack***, located in the ***development_resource_packs*** folder.
 1. Inside the ***custom_block_resource_pack*** folder, create a folder and name it ***models***.
 1. Open the ***models*** folder.
 1. Inside the ***models*** folder, create a folder and name it ***blocks***.
-1. Open the ***blocks*** folder. 
+1. Open the ***blocks*** folder.
 1. Inside the ***blocks*** folder, copy in the downloaded geo files from Blockbench.
 
 ***Create custom block localization***
@@ -231,7 +231,7 @@ Adding a sound in blocks.json is optional, but you can include it here for fun.
 
 "sound": "mud" 
 
-}	 
+}  
 
 } 
 ```
@@ -307,11 +307,11 @@ All of this has been a set up to the moment you’ve been waiting for: custom bl
 
 - `minecraft:geometry` defines the model that will be used in the resource pack for this custom block. You will use the identifier inside the ***geo.json*** file that was created in Blockbench.
 
-- ` minecraft:material_instances` has a ton of goodies. It’s an object that defines the various textures (a single texture, or per-face) and allows you to specify some information about rendering and lighting. We’ll talk more about the specific render methods and lighting options offered by this component later, in the Exploring the Material Instances Render and Lighting Options Tutorial (link to it).
+- `minecraft:material_instances` has a ton of goodies. It’s an object that defines the various textures (a single texture, or per-face) and allows you to specify some information about rendering and lighting. We’ll talk more about the specific render methods and lighting options offered by this component later, in the Exploring the Material Instances Render and Lighting Options Tutorial (link to it).
 
 Just like in blocks.json, we can define the various sides of the block that we want to use here. For now, we’re going to define 'north' and 'south' for the salmon roll sides.
 
-The rest can be defined using * to capture any side not previously defined. * is the default texture that will be used if the correct texture for one side cannot be found, and you are required to specify it. For all sides to use the same texture, you could simply use * and define the identifier.
+The rest can be defined using *to capture any side not previously defined.* is the default texture that will be used if the correct texture for one side cannot be found, and you are required to specify it. For all sides to use the same texture, you could simply use * and define the identifier.
 
 ***Name custom instance of materials and use them (Optional)***
 
@@ -359,7 +359,7 @@ There is another cool part of material_instances to show off. We can actually cr
 
 Here, we’ve defined ***sushi_side*** as having the ***salmon_roll*** texture.  
 
-Then, for north and south, we can use ***sushi_side*** as a string rather than a whole object specifying the texture as ***salmon_roll***. 
+Then, for north and south, we can use ***sushi_side*** as a string rather than a whole object specifying the texture as ***salmon_roll***.
 
 Now it’s your turn to create the Tuna and California rolls. Feel free to copy this ***salmon_roll*** file to start from, making sure to change the identifier and the "***salmon_roll***" texture name to match the corresponding roll.
 

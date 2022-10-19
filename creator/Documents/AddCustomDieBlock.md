@@ -6,7 +6,7 @@ ms.prod: gaming
 description: "A tutorial for creating custom blocks in Minecraft: Bedrock Edition"
 ---
 
-# How to Add a Simple Custom Block
+# Custom Blocks Part 1: The Simplest Block
 
 Minecraft's behavior packs and resource packs allow you to create custom content for the game. Custom blocks are a great way for creators to start adding interactive content for players. Through this tutorial, you will build a custom die block (don't be scared, that just means a singular dice!) that has different textures and can be placed in the world by a player.
 
@@ -155,7 +155,7 @@ Custom block files have several requirements for them to be functional:
 
 There are several components you may choose to use in custom blocks. To learn more, view the [full list of custom block components](https://docs.microsoft.com/en-us/minecraft/creator/reference/content/blockreference/examples/blockcomponentslist) in the reference documentation. For now, we'll leave the die block with only the identifier.
 
-## Resource Pack ##
+## Resource Pack
 
 Now that you've set up the custom block json file in the behavior pack, it's time to include the resources Minecraft will need to create the block: Textures, names, and even a fun sound.
 
@@ -166,7 +166,7 @@ You will also create a resource pack for the custom blocks tutorial!
 1. In ***File Explorer***, navigate to the ***com.mojang*** folder.
 1. Open the ***development_resource_packs*** folder.
 1. Create a new folder named ***custom_block_resource_pack***.
-1. Inside the ***custom_block_resource_pack*** folder, create a ***manifest.json*** file. 
+1. Inside the ***custom_block_resource_pack*** folder, create a ***manifest.json*** file.
 1. Copy the code below into the ***manifest.json*** file.
 1. See the [Introduction to Behavior Packs Tutorial](https://learn.microsoft.com/en-us/minecraft/creator/documents/behaviorpack) to learn how to use UUIDs to create the dependency of this behavior pack on the resource pack, and get any new UUIDs from UUIDgenerator.net.
 
@@ -207,6 +207,7 @@ You will also create a resource pack for the custom blocks tutorial!
 
 } 
 ```
+
 ***Set the block name with .lang***
 
 Let's add the name of the block using a ***.lang*** file. '.lang' is a file type that Minecraft uses to provide in-game text for different languages for concepts within Add-Ons. .lang files are used as a convenient way to organize all custom text within an Add-On in a single location and for localizing creator content.
@@ -222,7 +223,7 @@ This code sets the name of the block to `Die` in the game.
 
 ***Save the custom block textures***
 
-The die block texture will need to be created and placed in the Resource Pack. When creating your own custom textures, make sure they are 16x16 for custom blocks that are not using custom geometries. 
+The die block texture will need to be created and placed in the Resource Pack. When creating your own custom textures, make sure they are 16x16 for custom blocks that are not using custom geometries.
 
 These were made in paint and are 16x16 pixels. There are 7 images because it’s a die block plus red for the in-hand texture.
 
@@ -243,6 +244,7 @@ These were made in paint and are 16x16 pixels. There are 7 images because it’s
 >***Note:*** The images above have been provided for the die block, but feel free to use a different texture. If you do, just remember to be very careful about naming throughout the tutorial.
 
 If you are using the resources provided:
+
 1. Download the files to your computer.
 1. In ***custom_block_resource_pack***, create a folder named ***textures***.
 1. Inside the ***textures*** folder, create a folder named ***blocks***.
@@ -316,7 +318,8 @@ With the block defined in the ***blocks.json*** file, the next step is to associ
 
 } 
 ```
-5. Save the file. 
+
+5. Save the file.
 
 In ***texture_data***, the object with the label "die_1" has created a friendly name we'll reference in other files. Cool!
 
@@ -330,6 +333,7 @@ Block definitions are handled differently in the resource pack. Blocks are store
 1. Open ***blocks.json*** in a text editor.
 
 The ***blocks.json*** file has a similar set up to the ***manifest.json*** file and has requirements that need to be met in order for it to work correctly. Those requirements are:
+
 - A format version
 - A namespaced name for our custom block (here it's 'demo:die')
 - Textures for the custom block
@@ -337,6 +341,7 @@ The ***blocks.json*** file has a similar set up to the ***manifest.json*** file 
 The die block will use a custom texture for four of the sides, and a different texture for the top and bottom that you are going to bring over from the Vanilla Resource Pack. Real-life dice are designed so that the two opposite sides of the die add up to 7.
 
 1. Copy the following text and paste it into your ***blocks.json*** file:
+
 ```json
 { 
 
@@ -370,9 +375,10 @@ The die block will use a custom texture for four of the sides, and a different t
 
 } 
 ```
+
 2. Save the file.
 
-We’re specifying the ***textures*** individually by face, and we’re using the friendly name textures we assigned in terrain_textures.json. The ***textures*** field can be specified as a string, or as an object with the textures broken down into sub-texture groups. 'up', 'down', and 'side' are all sub-textures that allow a creator to define which face gets a certain texture. 'side' can also be broken down into cardinal directions ('north', 'east', 'south', and 'west'). The ***carried_textures*** and ***isotropic*** fields can be specified per-face like this as well, though not demonstrated here. 
+We’re specifying the ***textures*** individually by face, and we’re using the friendly name textures we assigned in terrain_textures.json. The ***textures*** field can be specified as a string, or as an object with the textures broken down into sub-texture groups. 'up', 'down', and 'side' are all sub-textures that allow a creator to define which face gets a certain texture. 'side' can also be broken down into cardinal directions ('north', 'east', 'south', and 'west'). The ***carried_textures*** and ***isotropic*** fields can be specified per-face like this as well, though not demonstrated here.
 
 The ***carried_textures*** property allows you to specify the textures to use when the block is in your hand, hotbar, and inventory. We provided the ***die_red*** texture (as a string) to demonstrate this field.
 
@@ -380,7 +386,8 @@ Because we set ***isotropic*** to 'true', the different die sides will individua
 
 Because this is a hard block, we’re setting the sound to ***stone*** so that this block sounds like stone when you place it down or walk over it.
 
-## Test the Block ##
+## Test the Block
+
 With the die block defined in both the behavior pack and resource pack, you can now test it in-game.
 
 ***Create a test world***
@@ -395,13 +402,14 @@ The following are suggested settings for a test world, but feel free to tweak th
 1. No mob spawning
 1. No weather cycle
 
->***!IMPORTANT*** 
+>***!IMPORTANT***
 >You will need to have a Minecraft world where cheats are enabled in order to add the block to your inventory using the /give command. You will also need to have both ***custom_block_resource_pack*** and ***custom_block_behavior_pack*** enabled in the world so you can get access to the die block.
 
 1. Open the chat box.
 1. Type the following command: `/give @s demo:die`
 
-## Troubleshooting ##
+## Troubleshooting
+
 1. If there's no custom block resource pack or behavior pack - do you have a manifest file?
 1. Does your file structure match the minecraft-samples packs?
 1. Have you created a world with cheats and Holiday Creator enabled?
@@ -411,4 +419,4 @@ The following are suggested settings for a test world, but feel free to tweak th
 
 Now place your block anywhere you'd like. The die is red in hand and in the hotbar because of the ***carried_textures*** using the red die block. The sides will be randomly rotated when the block is placed, and walking on the block will use the ***stone*** sound.
 
-Good luck! 
+Good luck!
