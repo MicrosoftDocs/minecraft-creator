@@ -1,6 +1,6 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - Component List
 ms.prod: gaming
 ---

@@ -85,12 +85,12 @@ Inside the description tag, a few basic properties define how the game registers
 
 ## Components Basics
 
-A full list of available components can be found in the [Component List](/minecraft/creator/reference/content/entityreference/examples/componentlist) documentation.
+A full list of available components can be found in the [Component List](/creator/reference/content/entityreference/examples/ComponentList.md) documentation.
 
 A good way to learn about a component and see how it's used in practice is to look at the entity JSON files of default Minecraft entities. You can always find the latest default behavior pack at this URL: <https://aka.ms/behaviorpacktemplate>.
 
 > [!NOTE]
-> The way a component works can sometimes change between versions. Learn more about versions in [the manifest reference documentation](../reference/content/addonsreference/examples/addonmanifest). You're encouraged to always use the latest version of the component as it's been refined and can include fixes.
+> The way a component works can sometimes change between versions. Learn more about versions in [the manifest reference documentation](../reference/content/addonsreference/examples/AddonManifest.md). You're encouraged to always use the latest version of the component as it's been refined and can include fixes.
 
 ## Essential Components
 
