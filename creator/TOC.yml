@@ -213,7 +213,7 @@
           - name: Block JSON File Structure
             href: Reference/Content/BlockReference/Examples/Definitions/BlockJsonFileStructure.md
           - name: Block Descriptions
-            href: Reference/Content/BlockReference/Examples/Definitions/BlockDescriptions.md
+            href: Reference/Content/BlockReference/Examples/Definitions/BlockDescription.md
           - name: Block Properties and Permutations
             href: Reference/Content/BlockReference/Examples/Definitions/BlockPropertiesAndPermutations.md
         - name: Entity JSON

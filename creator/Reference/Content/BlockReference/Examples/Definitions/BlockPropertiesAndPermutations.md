@@ -12,7 +12,7 @@ Block permutations can be thought of as different variations of the same block. 
 > [!IMPORTANT]
 > Block Properties and Permutations require the Holiday Creator Features experimental toggle to be set to true in order to function properly.
 > Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
-> To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](ExperimentalFeaturesToggle.md).
+> To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md).
 
 ## Block Properties
 
@@ -32,10 +32,7 @@ Each permutation is a JSON Object that consists of 2 parameters, shown below.
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |condition|*not set* | String| A Molang expression that evaluates to true or false to determine if this permutation should be used. For permutation conditions you are limited to using one Molang query: `“query.block_property()”`. |
-|component|*not set* | JSON Object| List of all components that are used in this permutation. View the list of components in the [Block Components List](BlockComponentsList.md). |
-
-
-
+|component|*not set* | JSON Object| List of all components that are used in this permutation. View the list of components in the [Block Components List](\..\BlockComponentsList.md). |
 
 ### Code example of a custom block's behavior JSON file with block properties and permutations
 
