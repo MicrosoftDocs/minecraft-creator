@@ -210,8 +210,12 @@
             href: Reference/Content/blockreference/Examples/BlockTriggers/TOC.yml
           - name: Block Event Responses
             href: Reference/Content/blockreference/Examples/BlockEvents/TOC.yml
-          - name: Block Properties and Descriptions
-            href: Reference/Content/BlockReference/Examples/Definitions/BlockDefinitionProperties.md
+          - name: Block JSON File Structure
+            href: Reference/Content/BlockReference/Examples/Definitions/BlockJsonFileStructure.md
+          - name: Block Descriptions
+            href: Reference/Content/BlockReference/Examples/Definitions/BlockDescriptions.md
+          - name: Block Properties and Permutations
+            href: Reference/Content/BlockReference/Examples/Definitions/BlockPropertiesAndPermutations.md
         - name: Entity JSON
           items:
           - name: Entity Documentation Homepage

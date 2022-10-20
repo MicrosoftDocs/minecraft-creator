@@ -24,8 +24,8 @@ landingContent:
         links:
           - text: Adding a Custom Block
             url:  ../../../Documents/CustomBlock.md
-          - text: Block Definitions and Properties
-            url: Examples/Definitions/BlockDefinitionProperties.md
+          - text: Block Descriptions
+            url: Examples/Definitions/BlockDescriptions.md
   # Card (optional)
   - title: Block Components
     linkLists:
