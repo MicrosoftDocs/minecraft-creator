@@ -212,7 +212,7 @@
             href: Reference/Content/blockreference/Examples/BlockEvents/TOC.yml
           - name: Block JSON File Structure
             href: Reference/Content/BlockReference/Examples/Definitions/BlockJsonFileStructure.md
-          - name: Block Descriptions
+          - name: Block Description
             href: Reference/Content/BlockReference/Examples/Definitions/BlockDescription.md
           - name: Block Properties and Permutations
             href: Reference/Content/BlockReference/Examples/Definitions/BlockPropertiesAndPermutations.md
