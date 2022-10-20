@@ -2,10 +2,6 @@
   items:
     - name: "Minecraft: Bedrock Documentation Homepage"
       href: index.yml
-    - name: What's New
-      items:
-        - name: Minecraft Live 2022 Creator Recap
-          href: Documents/MinecraftLive2022CreatorRecap.md
     - name: Useful Knowledge for Creators
       items:
         - name: 'Redstone Guide'
@@ -46,12 +42,6 @@
             href: Documents/EditingNBTSafely.md
           - name: Molang Beginner's Guide
             href: Documents/MolangBeginnersGuide.md
-          - name: Past Updates
-            items:
-            - name: Introduction to the Caves & Cliffs Entities
-              href: Documents/CavesAndCliffsEntities.md
-            - name: World Height Changes in Caves and Cliffs Part 2
-              href: Documents/WorldHeightChange.md
     - name: Tutorials
       items:
         - name: Add-On Pack Tutorials
@@ -104,6 +94,8 @@
           items:
             - name: Introduction to Add Entity
               href: Documents/IntroductionToAddEntity.md
+            - name: Introduction to Entity Properties
+              href: Documents/IntroductionToEntityProperties.md
             - name: Entity Modeling and Animation
               href: Documents/EntityModelingAndAnimation.md
             - name: Entity Behavior Introduction
@@ -182,7 +174,7 @@
                 href: Documents/ChunkerTheNether.md
     - name: Reference Documentation
       items:
-      - name: Scripting and API
+      - name: Scripting
         items:
           - name: Script API Documentation Homepage
             href: ScriptAPI/index.yml
@@ -210,12 +202,8 @@
             href: Reference/Content/blockreference/Examples/BlockTriggers/TOC.yml
           - name: Block Event Responses
             href: Reference/Content/blockreference/Examples/BlockEvents/TOC.yml
-          - name: Block JSON File Structure
-            href: Reference/Content/BlockReference/Examples/Definitions/BlockJsonFileStructure.md
-          - name: Block Description
-            href: Reference/Content/BlockReference/Examples/Definitions/BlockDescription.md
-          - name: Block Properties and Permutations
-            href: Reference/Content/BlockReference/Examples/Definitions/BlockPropertiesAndPermutations.md
+          - name: Block Properties and Descriptions
+            href: Reference/Content/BlockReference/Examples/Definitions/BlockDefinitionProperties.md
         - name: Entity JSON
           items:
           - name: Entity Documentation Homepage
@@ -376,6 +364,14 @@
             href: Reference/Content/molangreference/index.yml
           - name: Molang Concepts
             href: Reference/Content/Molangreference/Examples/Molangconcepts/TOC.yml
+    - name: Articles
+      items:
+        - name: Caves + Cliffs Features
+          items:
+          - name: Introduction to the Caves & Cliffs Entities
+            href: Documents/CavesAndCliffsEntities.md
+          - name: World Height Changes in Caves and Cliffs Part 2
+            href: Documents/WorldHeightChange.md
     - name: Contribute
       items:
       - name: "Contributing to Minecraft: Bedrock Documentation"
