@@ -26,7 +26,7 @@ ms.prod: gaming
 "minecraft:behavior.follow_target_captain":{
     "priority": 2,
     "within_radius": 5.0,
-    "follow_distance": 10.0,
+    "follow_distance": 10.0
 }
 ```
 

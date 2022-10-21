@@ -45,8 +45,7 @@ ms.prod: gaming
           "priority": 4,
           "yd": 0.4,
           "must_be_on_ground": false
-        },
-
+        }
 ```
 
 ## Vanilla entities using `minecraft:behavior.leap_at_target`

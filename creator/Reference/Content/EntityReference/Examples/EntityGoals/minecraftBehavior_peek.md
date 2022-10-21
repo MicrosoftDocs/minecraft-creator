@@ -20,7 +20,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.peek":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 

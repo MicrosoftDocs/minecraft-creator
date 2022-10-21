@@ -21,7 +21,7 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.open_door":{
     "priority": 2,
-    "close_door_after":true,
+    "close_door_after":true
 }
 ```
 

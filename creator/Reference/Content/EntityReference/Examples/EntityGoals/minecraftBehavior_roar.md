@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.roar
 ms.prod: gaming
@@ -24,7 +24,7 @@ ms.prod: gaming
 "minecraft:behavior.roar": {
   "priority": 2,
   "duration": 4.2
-},
+}
 ```
 
 ## Vanilla entities using `roar`

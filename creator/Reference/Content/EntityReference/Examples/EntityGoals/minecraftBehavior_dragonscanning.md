@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.dragonscanning":{
-    "priority": 3,
+    "priority": 3
 }
 ```
 
@@ -32,8 +32,8 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.dragonscanning": {
-          "priority": 2
-        }
+    "priority": 2
+}
 ```
 
 ## Vanilla entities using `minecraft:behavior.dragonscanning`

@@ -27,7 +27,6 @@ ms.prod: gaming
     "min_distance": 2,
     "speed_multiplier": 1,
     "success_rate": 0.25
-
 }
 ```
 

@@ -24,7 +24,7 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.play":{
     "priority": 2,
-    "speed_multiplier": 1.0,
+    "speed_multiplier": 1.0
 }
 ```
 

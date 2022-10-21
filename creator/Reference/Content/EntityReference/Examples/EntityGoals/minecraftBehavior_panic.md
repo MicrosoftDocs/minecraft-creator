@@ -43,9 +43,9 @@ ms.prod: gaming
         "priority": 0,
         "prefer_water": true,
         "speed_multiplier": 1.2
-},
+}
 
-``````
+```
 
 ## Vanilla entities using `minecraft:behavior.panic`
 

@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.investigate_suspicious_location
 ms.prod: gaming
@@ -25,7 +25,7 @@ ms.prod: gaming
 "minecraft:behavior.investigate_suspicious_location": {
   "priority": 5,
   "speed_multiplier": 0.7
-},
+}
 ```
 
 ## Vanilla entities using `investigate_suspicious_location`
