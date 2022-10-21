@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.break_door":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 

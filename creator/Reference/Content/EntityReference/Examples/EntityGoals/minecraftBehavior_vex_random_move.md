@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.vex_random_move":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 

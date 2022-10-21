@@ -24,7 +24,7 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.breed":{
     "priority": 1,
-    "speed_multiplier": 3.0,
+    "speed_multiplier": 3.0
 }
 ```
 

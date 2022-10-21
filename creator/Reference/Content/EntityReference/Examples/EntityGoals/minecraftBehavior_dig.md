@@ -1,6 +1,6 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.dig
 ms.prod: gaming
 ---
@@ -35,7 +35,7 @@ ms.prod: gaming
     "vibration_is_disturbance": true,
     "suspicion_is_disturbance": true,
     "digs_in_daylight": false
-},
+}
 ```
 
 ## Vanilla entities using `dig`

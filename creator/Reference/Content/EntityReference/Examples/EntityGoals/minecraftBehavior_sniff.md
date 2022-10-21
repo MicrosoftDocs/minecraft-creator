@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.sniff
 ms.prod: gaming
@@ -32,7 +32,7 @@ ms.prod: gaming
   "suspicion_radius_horizontal" : 6.0,
   "suspicion_radius_vertical": 20.0,
   "cooldown_range": [ 5.0, 10.0 ]
-},
+}
 ```
 
 ## Vanilla entities using `sniff`

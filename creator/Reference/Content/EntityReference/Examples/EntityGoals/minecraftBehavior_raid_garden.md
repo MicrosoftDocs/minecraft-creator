@@ -51,8 +51,7 @@ ms.prod: gaming
         ],
         "search_range": 16,
         "goal_radius": 0.8
-      },
-
+      }
 ```
 
 ## Vanilla entities using `minecraft:behavior.raid_garden`

@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: v-jillheaden
 title: Entity Documentation - is_sleeping
 ms.prod: gaming
 ---
@@ -11,7 +11,7 @@ Tests whether the Subject is sleeping.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `is_sleeping` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `is_sleeping` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
@@ -69,7 +69,7 @@ Tests whether the Subject is sleeping.
 
 ```json
 { "test": "is_sleeping", "value": true }
-``````
+```
 
 ## Vanilla entities using `is_sleeping`
 

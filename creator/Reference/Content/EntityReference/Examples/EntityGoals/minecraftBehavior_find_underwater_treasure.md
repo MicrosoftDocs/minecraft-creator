@@ -25,7 +25,7 @@ ms.prod: gaming
     "priority": 2,
     "search_range": 8,
     "cooldown_time":10,
-    "speed_multiplier":3,
+    "speed_multiplier":3
 }
 ```
 

@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.eat_mob
 ms.prod: gaming
@@ -34,7 +34,7 @@ ms.prod: gaming
     "reach_mob_distance": 1.75,
     "eat_mob_sound": "tongue",
     "loot_table": "loot_tables/entities/frog.json"
-},
+}
 ```
 
 ## Vanilla entities using `eat_mob`

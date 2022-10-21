@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.squid_idle":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 
@@ -33,8 +33,7 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.squid_idle": {
         "priority": 2
-      },
-
+      }
 ```
 
 ## Vanilla entities using `minecraft:behavior.squid_idle`

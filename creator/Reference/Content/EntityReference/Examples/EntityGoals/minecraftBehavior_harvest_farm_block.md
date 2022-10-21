@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-bbortree
 title: Entity Documentation - minecraft:behavior.harvest_farm_block
 ms.prod: gaming

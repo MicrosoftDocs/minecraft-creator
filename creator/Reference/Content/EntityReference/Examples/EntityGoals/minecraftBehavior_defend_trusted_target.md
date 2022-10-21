@@ -61,7 +61,6 @@ ms.prod: gaming
             "target": "self"
           }
 }
-
 ```
 
 ## Vanilla entities using `minecraft:behavior.defend_trusted_target`

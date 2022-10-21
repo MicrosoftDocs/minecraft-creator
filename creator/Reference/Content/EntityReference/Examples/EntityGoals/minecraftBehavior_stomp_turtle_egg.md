@@ -39,13 +39,13 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.stomp_turtle_egg": {
-        "priority": 4,
-        "speed_multiplier": 1,
-        "search_range": 10,
-        "search_height": 2,
-        "goal_radius": 1.14,
-        "interval": 20
-      }
+    "priority": 4,
+    "speed_multiplier": 1,
+    "search_range": 10,
+    "search_height": 2,
+    "goal_radius": 1.14,
+    "interval": 20
+}
 ```
 
 ## Vanilla entities using `minecraft:behavior.stomp_turtle_egg`

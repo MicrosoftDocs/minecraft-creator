@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.make_love":{
-    "priority": 8,
+    "priority": 8
 }
 ```
 

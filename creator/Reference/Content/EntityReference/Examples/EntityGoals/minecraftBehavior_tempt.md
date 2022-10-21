@@ -55,8 +55,7 @@ ms.prod: gaming
           "range_min": 2.0,
           "range_max": 5.0
         }
-      },
-
+      }
 ```
 
 ## Vanilla entities using `minecraft:behavior.tempt`

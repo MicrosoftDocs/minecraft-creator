@@ -28,7 +28,7 @@ ms.prod: gaming
     "xz_dist": 10,
     "y_dist": 7,
     "y_offset": -2.0,
-    "hover_height": [ 1, 3 ],
+    "hover_height": [ 1, 3 ]
 }
 ```
 
@@ -38,15 +38,14 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.random_hover": {
-                "priority": 12,
-                "xz_dist": 8,
-                "y_dist": 8,
-                "y_offset": -1,
-                "interval": 1,
-                "hover_height": [1, 4]
-            },
-
-``````
+    "priority": 12,
+    "xz_dist": 8,
+    "y_dist": 8,
+    "y_offset": -1,
+    "interval": 1,
+    "hover_height": [1, 4]
+}
+```
 
 ## Vanilla entities using `minecraft:behavior.random_hover`
 
