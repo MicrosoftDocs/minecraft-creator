@@ -80,6 +80,9 @@ An extension that provides support for files such as .mcfunction, .json and .lan
 
 bridge. is a light-weight, dedicated editor for Minecraft Add-Ons that makes it easy to get started with Add-Ons and later scales with your growing needs. It requires zero setup and provides you with an [instantly bootable development environment](https://editor.bridge-core.app/) with syntax highlighting, [code completions and file diagnostics](https://bridge-core.app/guide/features/index.html#auto-completions-and-validation) all designed to make developing Minecraft Add-Ons more convenient. To read more, please refer to bridge.'s [getting started guide](https://bridge-core.app/guide/index.html) or [learn more about why you should use bridge.](https://bridge-core.app/guide/why-bridge.html)
 
+bridge. is [open source](https://github.com/bridge-core/editor) and freely available to all Add-On creators on desktop and mobile platforms.
+
+
 ### [Snowstorm](https://jannisx11.github.io/snowstorm/)
 
 Snowstorm is a small application for Bedrock Edition created by the developer of Blockbench that can be used to create custom particle effects that are usable in-game.
