@@ -160,6 +160,8 @@
             href: Documents/DesigningGameplayForVariousDevices.md
           - name: Blockbench
             items:
+            - name: Minecraft Block Wizard
+              href: Documents/MinecraftBlockWizard.md
             - name: Minecraft Entity Wizard
               href: Documents/MinecraftEntityWizard.md
           - name: Chunker
@@ -202,8 +204,14 @@
             href: Reference/Content/blockreference/Examples/BlockTriggers/TOC.yml
           - name: Block Event Responses
             href: Reference/Content/blockreference/Examples/BlockEvents/TOC.yml
-          - name: Block Properties and Descriptions
-            href: Reference/Content/BlockReference/Examples/Definitions/BlockDefinitionProperties.md
+          - name: Block Components List
+            href: Reference/Content/BlockReference/Examples/BlockComponentsList.md
+          - name: Block Event List
+            href: Reference/Content/BlockReference/Examples/BlockEventList.md
+          - name: Block Properties List
+            href: Reference/Content/BlockReference/Examples/BlockPropertiesList.md
+          - name: Block Trigger List
+            href: Reference/Content/BlockReference/Examples/BlockTriggerList.md
         - name: Entity JSON
           items:
           - name: Entity Documentation Homepage
