@@ -1,3 +1,5 @@
+ - name: Block Components List
+   href: BlockComponentsList.md 
  - name: collision_box
    href: minecraftBlock_collision_box.md
  - name: crafting_table
