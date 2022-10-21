@@ -25,14 +25,14 @@ landingContent:
           - text: Adding a Custom Block
             url:  ../../../Documents/CustomBlock.md
           - text: Block Description
-            url: Examples/Definitions/BlockDescription.md
+            url: Examples/BlockDescription.md
   # Card (optional)
   - title: Block Components
     linkLists:
       - linkListType: reference
         links:
           - text: Block Components List
-            url: Examples/BlockComponentsList.md
+            url: Examples/BlockComponents/BlockComponentsList.md
           - text: "minecraft:flammable"
             url: Examples/BlockComponents/minecraftBlock_flammable.md
           - text: "minecraft:random_ticking"
@@ -43,7 +43,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: Block Trigger List
-            url: Examples/BlockTriggerList.md
+            url: Examples/BlockTriggers/BlockTriggerList.md
           - text: "minecraft:on_fall_on"
             url: Examples/BlockTriggers/minecraftBlock_on_fall_on.md
           - text: "minecraft:on_interact"
@@ -54,7 +54,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: Block Event Responses List
-            url: Examples/BlockEventList.md
+            url: Examples/BlockEvents/BlockEventList.md
           - text: "add_mob_effect"
             url: Examples/BlockEvents/minecraftBlock_add_mob_effect.md
           - text: "damage"
