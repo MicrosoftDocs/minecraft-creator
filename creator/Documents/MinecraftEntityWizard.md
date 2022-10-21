@@ -138,7 +138,7 @@ Depending on the export option you have selected, you may need to enter some inf
 
 ### Exporting to Minecraft Education Edition
 
-In Blockbench, there is a checkbox for the option to target **Minecraft Education Edition**. Go to File > Preferences > Settings > Export and scroll down to find the **Entity Wizard: Target Education Edition** checkbox.
+In the desktop version of Blockbench, there is a checkbox for the option to target **Minecraft Education Edition**. Go to File > Preferences > Settings > Export and scroll down to find the **Entity Wizard: Target Education Edition** checkbox. (The web-based version does not have this option.)
 
 Not all entities may be supported in Education Edition due to version differences. For example, if Education Edition is version 1.17, then entities from Vanilla Bedrock version 1.19 (such as allay, frog, tadpole and warden) are not supported.
 
