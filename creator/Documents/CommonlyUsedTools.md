@@ -52,6 +52,21 @@ bridge. is a powerful add-on editor designed to speed up your development proces
 
 You can also visit the [github repo](https://github.com/solvedDev/bridge.) by clicking the link provided.
 
+## NBT Editors
+
+NBT tags are the properties of objects like entities, blocks, dimensions and players. They store data about the object - its position, inventory, the dimension it is in, how the game should call it, what it has in his armor slots, if it has a name tag and a lot more. They can be edited for many purposes, for example, giving an entity an item that it can use, or give it a `minecraft:npc` tag to make it interactable. They can be edited for map making purposes, or testing your addons.
+NBT Editors are programs which help you edit the NBT tags of an object in a Minecraft world.
+Here is a list of popular NBT Editors which will help you to edit NBT tags efficiently.
+
+### [MCC Tool Chest](https://mcctoolchest.weebly.com)
+
+MCC Tool Chest is a powerful and efficient NBT Editor which has many options for editing in a GUI environment. Some of the things it can do is merge maps(worlds), edit maps(items), edit the flat-world layers. You can learn more at the [Tutorials Page](https://mcctoolchest.weebly.com/tutorial.html). It supports many world platforms - Bedrock Edition(Windows10, Phones, iOS, Xbox One, Playstation 4/5, etc), Java Edition(Windows, Mac and Linux), Legacy Console Editions(Wii U Edition, Xbox 360 Edition, PS3 Edition.
+
+### [Universal Minecraft Editor](https://www.universalminecrafteditor.com)
+
+Universal Minecraft Editor is a less powerful and efficient NBT Editor in comparision to MCC Tool Chest, and lacks many features like GUI environments, World Conversion, platform support(the only supported world platforms are Java Edition, Windows 10 Edition, Xbox 360 Edition, Android, Playstation 3 Edition, and Wii U),
+and Graphical Layer Editing. The only upside is that it is updated frequently.
+
 ## Server Based Tools
 
 Many commonly used tools are designed to be used on Java Edition servers utilizing a server software known as [Spigot](https://www.spigotmc.org/), which is based on the Craftbukkit API. The following tools are plugins that work on servers running this software.
