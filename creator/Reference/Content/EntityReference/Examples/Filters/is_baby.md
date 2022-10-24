@@ -5,7 +5,7 @@ title: Entity Documentation - is_baby
 ms.prod: gaming
 ---
 
-# Entity Documentation - is_block
+# Entity Documentation - is_baby
 
 Returns `true` when the subject entity is a baby.
 
@@ -44,7 +44,6 @@ Returns `true` when the subject entity is a baby.
 | player| The player involved with the interaction. |
 | self| The entity or object calling the test |
 | target| The caller's current target. |
-
 
 ## Examples
 
