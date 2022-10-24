@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.sonic_boom
 
-`minecraft:behavior.sonic_boom` [EXPERIMENTAL BEHAVIOR] plays the provided sounds and activates the "SONIC BOOM" actor flag during the specified duration.
+`minecraft:behavior.sonic_boom` allows this entity to perform a 'sonic boom' ranged attack.
 
 ## Parameters
 

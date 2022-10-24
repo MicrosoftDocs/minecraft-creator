@@ -28,7 +28,7 @@ The block `"description"` is a section inside the `“minecraft:block”` sectio
 
 ```json
 {
-  "format_version": "1.19.30",
+  "format_version": "1.19.40",
   "minecraft:block": {
     "description": {
       "identifier": "design:lavenderstone"
