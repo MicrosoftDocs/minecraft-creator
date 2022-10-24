@@ -4,6 +4,8 @@
       href: index.yml
     - name: "What's New"
       items: 
+        - name: 1.19.40 Update Summary
+          href: Documents/Update1.19.40.md
         - name: Minecraft Live 2022 Creator Recap
           href: Documents/MinecraftLive2022CreatorRecap.md
     - name: Useful Knowledge for Creators
