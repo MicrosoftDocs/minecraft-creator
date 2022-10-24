@@ -7,14 +7,13 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.roar
 
-`minecraft:behavior.roar` [EXPERIMENTAL BEHAVIOR] plays the provided sound and activates the "ROARING" actor flag during the specified duration.
+`minecraft:behavior.roar` allows this entity to roar at another entity based on data in `minecraft:anger_level`. When the anger threshold specified in `minecraft:anger_level` has been reached, this entity will roar for the specified amount of time, look at the other entity, apply anger boost towards it, and finally target it.
 
 ## Parameters
 
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
-| duration| 0.0| decimal| Goal duration in seconds. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| duration| 0.0| decimal| The amount of time to roar for. |
 
 ## Vanilla entities examples
 

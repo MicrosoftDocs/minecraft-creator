@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.go_and_give_items_to_noteblock
 
-`minecraft:behavior.go_and_give_items_to_noteblock` [EXPERIMENTAL BEHAVIOR] The entity will attempt to toss the items from its inventory to a nearby recently played noteblock.
+`minecraft:behavior.go_and_give_items_to_noteblock` allows an entity to attempt to toss the items from its inventory to a nearby recently played noteblock.
 
 ## Parameters
 
