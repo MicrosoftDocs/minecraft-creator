@@ -41,7 +41,7 @@ This tutorial builds from part one and uses the same file structure, with one ma
 
 For this tutorial, we're going to be doing some work in Blockbench. Blockbench is a free entity-modeling application for creating entity models in Minecraft: Bedrock Edition. Additionally, users have the ability to create textures, and the ability to animate them for Bedrock Edition maps. Blockbench has external plugin support, enabling developers to create additional tools to use within the program. It also has the ability to export models into a standard OBJ format, Java Edition block model, and more.
 
-We will use Blockbench in these tutorials to create custom geometries for the more advanced blocks we’ll create for sushi, fish in a bubble, and a giant umbrella. If this is your first time using Blockbench, we recommend taking a look at our Entity Wizard document [here](https://learn.microsoft.com/en-us/minecraft/creator/documents/minecraftentitywizard).
+We will use Blockbench in these tutorials to create custom geometries for the more advanced blocks we’ll create for sushi, fish in a bubble, and a giant umbrella. If this is your first time using Blockbench, we recommend taking a look at our Entity Wizard document [here](MinecraftEntityWizard.md).
 
 ***Geometry in Blockbench***
 

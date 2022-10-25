@@ -244,7 +244,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
 
 3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/minecraft-creator 'main' (make sure the arrow is pointing the correct way).
 
-    ![GitHub Pull Request](Media\ContributorGuide\LearningPortal_GitHubPR.png)
+    ![Create a GitHub Pull Request](Media\ContributorGuide\LearningPortal_GitHubPR.png)
 
 ### Useful extensions
 

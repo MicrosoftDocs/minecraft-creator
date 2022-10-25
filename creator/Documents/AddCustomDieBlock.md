@@ -155,7 +155,7 @@ Custom block files have several requirements for them to be functional:
 - The ***description*** object requires an identifier with a namespace, separated by a colon. In this case, the namespace is "demo" and the identifier is "die".
 - A ***components*** section will contain the components that describe the block's behavior.
 
-There are several components you may choose to use in custom blocks. To learn more, view the [full list of custom block components](creator\Reference\Content\BlockReference\Examples\BlockComponentsList.md) in the reference documentation. For now, we'll leave the die block with only the identifier.
+There are several components you may choose to use in custom blocks. To learn more, view the [full list of custom block components](creator\Reference\Content\BlockReference\Examples\BlockComponents\BlockComponentsList.md) in the reference documentation. For now, we'll leave the die block with only the identifier.
 
 ## Resource Pack
 

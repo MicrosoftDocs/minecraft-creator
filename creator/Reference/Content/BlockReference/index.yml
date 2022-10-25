@@ -23,7 +23,7 @@ landingContent:
       - linkListType: get-started
         links:
           - text: Adding a Custom Block
-            url:  ../../../Documents/CustomBlock.md
+            url:  ../../../Documents/AddCustomDieBlock.md
           - text: Block Description
             url: Examples/BlockDescription.md
   # Card (optional)
