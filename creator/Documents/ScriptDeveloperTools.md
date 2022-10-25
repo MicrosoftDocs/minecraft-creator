@@ -12,15 +12,15 @@ Two new tools can make the process of writing your GameTest scripts easier and m
 
 ## Custom type definition files for Visual Studio Code Intellisense
 
-Visual Studio Code can display detailed type information for different libraries to provide hints and code-completion dropdowns as you type. Type information has been made available for GameTest modules `mojang-minecraft` and `mojang-gametest`.
+Visual Studio Code can display detailed type information for different libraries to provide hints and code-completion dropdowns as you type. Type information has been made available for scripting modules `@minecraft/server` and `@minecraft/server-gametest`.
 
 To get started, use the Node Package Manager, or npm. npm makes it easy to download and install different modules of code within your packages. Install Node.js – which includes npm - on your development device. More info on installing npm is available from [nodejs.org](https://nodejs.org). Install the latest LTS version of Node.js to get started.
 
 Once Node.js is installed, getting the latest type definitions is a snap. From Visual Studio Code, open the folder where your behavior pack folder is located and simply run the following commands from a terminal console window:
 
 ```powershell
-npm i @types/mojang-minecraft
-npm i @types/mojang-gametest
+npm i @minecraft/server
+npm i @minecraft/server-gametest
 ```
 
 This will install type definitions in the node_modules folder within your project.

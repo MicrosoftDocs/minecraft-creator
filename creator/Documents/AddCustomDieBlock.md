@@ -43,7 +43,7 @@ Imagine that the behavior pack contains all of the information about a block's b
 
 >***Note:*** *If components are given in the behavior pack to control the visual properties of a block, they will override the visual properties specified for that block in the blocks.json file. That's why blocks.json becomes optional once you start relying on behavior packs more heavily.*
 
-In this tutorial, however, we will be making a fairly simple custom block. We will be using blocks.json to specify the visual properties of the block, and we will not be using any components. While it is recommended to complete this tutorial before moving forward, the tutorial on using components can be found [here](AdvancedCustomBlocks.md).
+In this tutorial, however, we will be making a fairly simple custom block. We will be using blocks.json to specify the visual properties of the block, and we will not be using any components. While it is recommended to complete this tutorial before moving forward, there is also a tutorial on using components called [Advanced Custom Blocks](AdvancedCustomBlocks.md).
 
 Let's create a custom die block with six different sides, that rotates the side faces and is a different color in hand. Small customizations to a block like this can make it feel more unique to players.
 
