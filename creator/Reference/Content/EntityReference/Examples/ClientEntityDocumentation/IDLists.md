@@ -105,7 +105,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.peek| 211304085 |
 | minecraft:behavior.pet_sleep_with_owner| 1379392240 |
 | minecraft:behavior.pickup_items| 644287189 |
-| minecraft:behavior.play| -505601580 |
+| minecraft:behavior.play| 9028661884418335188 |
 | minecraft:behavior.play_dead| 15611122012431414539 |
 | minecraft:behavior.player_ride_tamed| 603869698 |
 | minecraft:behavior.raid_garden| -1145687602 |

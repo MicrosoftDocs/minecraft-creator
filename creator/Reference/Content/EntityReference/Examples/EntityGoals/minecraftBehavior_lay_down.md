@@ -23,7 +23,7 @@ ms.prod: gaming
 "minecraft:behavior.lay_down":{
     "priority": 4,
     "interval": 240,
-    "random_stop_interval": 120,
+    "random_stop_interval": 120
 }
 ```
 

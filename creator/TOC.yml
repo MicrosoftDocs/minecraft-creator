@@ -2,8 +2,10 @@
   items:
     - name: "Minecraft: Bedrock Documentation Homepage"
       href: index.yml
-    - name: What's New
-      items:
+    - name: "What's New"
+      items: 
+        - name: 1.19.40 Update Summary
+          href: Documents/Update1.19.40.md
         - name: Minecraft Live 2022 Creator Recap
           href: Documents/MinecraftLive2022CreatorRecap.md
     - name: Useful Knowledge for Creators
@@ -58,12 +60,20 @@
               href: Documents/BehaviorPack.md
             - name: "Installing Add-Ons in Minecraft: Bedrock"
               href: Documents/AddonPackInstallation.md
-            - name: Adding a Custom Block
-              href: Documents/CustomBlock.md
             - name: Fog in Resource Packs
               href: Documents/FogInResourcePacks.md
             - name: Particle Effects
               href: Documents/ParticleEffects.md
+        - name: Adding a Custom Block
+          items:
+           - name: Add a Custom Die Block 
+             href: Documents/AddCustomDieBlock.md
+           - name: Advanced Custom Blocks 
+             href: Documents/AdvancedCustomBlocks.md
+           - name: Custom Block Render Lighting 
+             href: Documents/CustomBlockRenderLighting.md
+           - name: Advanced Custom Block Oversized 
+             href: Documents/CustomBlockOversized.md
         - name: Maker Series
           items:
             - name: Creating a Goblin Chef Entity 
@@ -98,6 +108,8 @@
           items:
             - name: Introduction to Add Entity
               href: Documents/IntroductionToAddEntity.md
+            - name: Introduction to Entity Properties
+              href: Documents/IntroductionToEntityProperties.md
             - name: Entity Modeling and Animation
               href: Documents/EntityModelingAndAnimation.md
             - name: Entity Behavior Introduction
@@ -162,6 +174,8 @@
             href: Documents/DesigningGameplayForVariousDevices.md
           - name: Blockbench
             items:
+            - name: Minecraft Block Wizard
+              href: Documents/MinecraftBlockWizard.md
             - name: Minecraft Entity Wizard
               href: Documents/MinecraftEntityWizard.md
           - name: Chunker
@@ -198,14 +212,18 @@
           items:
           - name: Block Documentation Homepage
             href: Reference/Content/blockreference/index.yml
+          - name: Block JSON File Structure
+            href: /BlockJsonFileStructure.md
+          - name: Block Description
+            href: /BlockDescription.md
+          - name: Block Properties and Permutations
+            href: /BlockPropertiesAndPermutations.md
           - name: Block Components
             href: Reference/Content/blockreference/Examples/BlockComponents/TOC.yml
           - name: Block Triggers
             href: Reference/Content/blockreference/Examples/BlockTriggers/TOC.yml
           - name: Block Event Responses
             href: Reference/Content/blockreference/Examples/BlockEvents/TOC.yml
-          - name: Block Properties and Descriptions
-            href: Reference/Content/BlockReference/Examples/Definitions/BlockDefinitionProperties.md
         - name: Entity JSON
           items:
           - name: Entity Documentation Homepage

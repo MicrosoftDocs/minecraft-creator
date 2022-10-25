@@ -93,7 +93,7 @@ Use the following workflow to create new articles in the documentation repo via 
 
 1. Create a fork off the MicrosoftDocs/minecraft-creator 'main' branch (using the Fork button in the top right).
 
-![GitHub Fork Button](\Media\ContributorGuide\LearningPortal_GitHubFork.png)
+![GitHub Fork Button](Media/ContributorGuide/LearningPortal_GitHubFork.png)
 
 2. In the "creator/Documents" folder, select **Add file** > **Create new file** in the top right.
 
@@ -126,7 +126,7 @@ keywords:
 
 9. Select New pull request and merge your fork's 'main' branch into MicrosoftDocs/minecraft-creator 'main' (make sure the arrow is pointing the correct way).
 
-![GitHub Pull Request](\Media\ContributorGuide\LearningPortal_GitHubPR.png)
+![GitHub Pull Request](Media/ContributorGuide/LearningPortal_GitHubPR.png)
 
 Your pull request will be reviewed by our content team. If it is approved, your changes will go live at our next regular release. If your pull request is not approved, a member of the content team will leave a comment in your pull request letting you know the reason it was not approved.
 
@@ -244,7 +244,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
 
 3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/minecraft-creator 'main' (make sure the arrow is pointing the correct way).
 
-    ![GitHub Pull Request](\Media\ContributorGuide\LearningPortal_GitHubPR.png)
+    ![Create a GitHub Pull Request](Media\ContributorGuide\LearningPortal_GitHubPR.png)
 
 ### Useful extensions
 

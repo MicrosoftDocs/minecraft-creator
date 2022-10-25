@@ -24,7 +24,7 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.receive_love":{
     "priority": 2,
-    "speed_multiplier": 1.0,
+    "speed_multiplier": 1.0
 }
 ```
 
@@ -35,8 +35,7 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.receive_love": {
           "priority": 6
-        },
-
+        }
 ```
 
 ## Vanilla entities using `minecraft:behavior.receive_love`

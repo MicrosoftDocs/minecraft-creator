@@ -97,7 +97,7 @@ Allows an entity to attack the closest target within a given subset of specific 
             "max_dist": 35
           }
         ]
-      },
+      }
 ```
 
 ### Vanilla mobs using `nearest_attackable_target`

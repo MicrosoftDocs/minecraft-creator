@@ -36,8 +36,7 @@ ms.prod: gaming
           "priority": 0
         }
 }
-
-``````
+```
 
 ## Vanilla entities using `minecraft:behavior.dragondeath`
 

@@ -1,5 +1,5 @@
 ---
-author: v-jillheaden
+author: mammerla
 ms.author: v-jillheaden
 title: Entity Documentation - is_missing_health
 ms.prod: gaming

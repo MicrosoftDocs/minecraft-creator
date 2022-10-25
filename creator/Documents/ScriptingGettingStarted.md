@@ -3,7 +3,7 @@ author: mikeam
 ms.author: mikeam
 title: Build a gameplay experience with TypeScript
 ms.prod: gaming
-description: Use TypeScript to build a simple gameplay experience in Minecraft using the experimental GameTest Framework feature.
+description: Use TypeScript to build a simple gameplay experience in Minecraft using the experimental Beta APIs feature.
 ---
 
 # Build a gameplay experience with TypeScript
@@ -135,7 +135,7 @@ Open up `scripts/main.ts` within Visual Studio Code.
 Remove all the existing script code in **main.ts**. Replace it with this to start:
 
 ```typescript
-import { world, BlockLocation, MinecraftBlockTypes } from "mojang-minecraft";
+import { world, BlockLocation, MinecraftBlockTypes } from "@minecraft/server";
 
 const START_TICK = 100;
 
@@ -218,7 +218,7 @@ We're going to start by adding some handy helper utility code functions. This wi
 Add a new file to your `scripts` folder called `Utilities.ts`. Correct capitalization matters, so make sure the `U` is capitalized. Add the following code:
 
 ```typescript
-import { world, BlockLocation, BlockType } from "mojang-minecraft";
+import { world, BlockLocation, BlockType } from "@minecraft/server";
 
 export default class Utilities {
   static fillBlock(

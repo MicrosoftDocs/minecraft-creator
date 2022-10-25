@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.silverfish_merge_with_stone":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 
@@ -32,8 +32,8 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.silverfish_merge_with_stone": {
-        "priority": 5
-      }
+    "priority": 5
+}
 ```
 
 ## Vanilla entities using `minecraft:behavior.silverfish_merge_with_stone`

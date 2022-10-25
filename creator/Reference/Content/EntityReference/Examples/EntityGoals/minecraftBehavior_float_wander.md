@@ -30,7 +30,7 @@ ms.prod: gaming
     "y_offset": -2.0,
     "random_reselect": true,
     "must_reach": false,
-    "float_duration": [ 0.1, 0.35 ],
+    "float_duration": [ 0.1, 0.35 ]
 }
 ```
 

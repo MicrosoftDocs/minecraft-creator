@@ -35,7 +35,7 @@ ms.prod: gaming
     "max_velocity": 10.0,
     "minimum_path_length": 4,
     "minimum_distance": 6,
-    "cooldown_range": [5, 10],
+    "cooldown_range": [5, 10]
 }
 ```
 

@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.enderman_leave_block":{
-    "priority": 8,
+    "priority": 8
 }
 ```
 
@@ -32,10 +32,9 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.enderman_leave_block": {
-        "priority": 10
-      },
-
-``````
+    "priority": 10
+}
+```
 
 ## Vanilla entities using `minecraft:behavior.enderman_leave_block`
 

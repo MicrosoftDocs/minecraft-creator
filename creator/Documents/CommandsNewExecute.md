@@ -103,7 +103,7 @@ This variant of the execute command will only run for foxes (`@e[type=fox]`) tha
 
 With the newer syntax, the execute command is a bit longer, but also more explanatory with room for expansion in the future:
 
-(newer /execute command syntax): `execute @e[type=fox] positioned as @s if block ^ ^-1 ^ stone 0 run summon salmon`
+(newer /execute command syntax): `execute as @e[type=fox] positioned as @s if block ^ ^-1 ^ stone 0 run summon salmon`
 
 This is the same as the command before, but notice the new `if block ^ ^-1 ^ stone 0` subcommand. This new subcommand basically says that if the block underneath (`^ ^-1 ^`) the selected entities (foxes) is the basic variant of stone (stone 0), then only run the command in that condition.
 
