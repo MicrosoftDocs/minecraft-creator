@@ -32,7 +32,7 @@ highlightedContent:
     #card
     - title: "Entity Properties"
       itemType: whats-new
-      url: Documents/CreateNPCs.md
+      url: Documents/IntroductionToEntityProperties.md
     #card
     - title: Scripting
       itemType: reference
@@ -53,14 +53,14 @@ productDirectory:
       summary: "Working with Add-Ons in Minecraft: Bedrock Edition is easy! Learn how to get started"
       url: Documents/GettingStarted.md
     # Card
-    - title: JSON Reference Documentation
-      imageSrc: images/Script.png
-      summary: Discover the different features and components used within Minecraft
-      url: Reference/index.yml
+    - title: Getting Started with Minecraft Block Wizard
+      imageSrc: images/Firework.png
+      summary: Rapidly design, build and deploy a brand new Block with the new Minecraft Block Wizard Tool
+      url: Documents/MinecraftBlockWizard.md
     # Card
     - title: Getting Started with Minecraft Entity Wizard
       imageSrc: images/Firework.png
-      summary: Rapidly design, build and deploy a brand new Entity with the new Minecraft Entity Wizard Tool
+      summary: Rapidly design, build and deploy a brand new Entity with the Minecraft Entity Wizard Tool
       url: Documents/MinecraftEntityWizard.md
 
 # conceptualContent section (optional)
@@ -116,6 +116,9 @@ conceptualContent:
             - url: Documents/EntityEvents.md
               itemType: tutorial
               text: Entity Events
+            - url: Documents/IntroductionToEntityProperties.md
+              itemType: tutorial
+              text: Entity Properties
         # card
         - title: Adding NPCs
           summary: "Populate your world with interactive characters to create unique narrative experiences."
