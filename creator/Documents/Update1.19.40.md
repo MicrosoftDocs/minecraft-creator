@@ -10,7 +10,12 @@ Minecraft Bedrock has been updated to 1.19.40 and there are a number of changes 
 
 **Block Components:**
 
-Two important block components have left experimental today: [*geometry*](../reference/content/blockreference/examples/blockcomponents/minecraftBlock_geometry.md) and [*material_instances*](../reference/content/blockreference/examples/blockcomponents/minecraftBlock_material_instances.md). This means that [custom blocks](CustomBlock.md) is now a non-experimental feature and will have backwards compatibility and support for Marketplace creators. This new capability should allow for a lot more visually diverse maps. Creators who previously used static entities as a work-around will see performance improvements by converting static entities to custom blocks. Check out our [Custom Blocks Part 2](AdvancedCustomBlocks.md) tutorial walking through these new capabilities.
+Two important block components have left experimental today: [*geometry*](../reference/content/blockreference/examples/blockcomponents/minecraftBlock_geometry.md) and [*material_instances*](../reference/content/blockreference/examples/blockcomponents/minecraftBlock_material_instances.md). This means that custom blocks is now a non-experimental feature and will have backwards compatibility and support for Marketplace creators. This new capability should allow for a lot more visually diverse maps. Creators who previously used static entities as a work-around will see performance improvements by converting static entities to custom blocks. Check out our new series of tutorials that cover custom blocks:
+
+- [Custom Blocks Part 1: The Simplest Block](AddCustomDieBlock.md)
+- [Custom Blocks Part 2: Geometry and Material Instances](AdvancedCustomBlocks.md)
+- [Custom Blocks Part 3: Render and Lighting Options](CustomBlockRenderLighting.md)
+- [Custom Blocks Part 4: Oversized Geometry](CustomBlockOversized.md)
 
 Other “Holiday Creator Feature” block components are still under development and will release out of experimental when they are ready.
 
