@@ -60,12 +60,20 @@
               href: Documents/BehaviorPack.md
             - name: "Installing Add-Ons in Minecraft: Bedrock"
               href: Documents/AddonPackInstallation.md
-            - name: Adding a Custom Block
-              href: Documents/CustomBlock.md
             - name: Fog in Resource Packs
               href: Documents/FogInResourcePacks.md
             - name: Particle Effects
               href: Documents/ParticleEffects.md
+        - name: Adding a Custom Block
+          items:
+           - name: Add a Custom Die Block 
+             href: Documents/AddCustomDieBlock.md
+           - name: Advanced Custom Blocks 
+             href: Documents/AdvancedCustomBlocks.md
+           - name: Custom Block Render Lighting 
+             href: Documents/CustomBlockRenderLighting.md
+           - name: Advanced Custom Block Oversized 
+             href: Documents/CustomBlockOversized.md
         - name: Maker Series
           items:
             - name: Creating a Goblin Chef Entity 
