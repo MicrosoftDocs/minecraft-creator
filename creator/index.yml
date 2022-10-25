@@ -24,9 +24,9 @@ highlightedContent:
     #card
     - title: "Minecraft Live 2022 Creator Overview"
       itemType: whats-new
-      url: Documents/AddonPackInstallation.md
+      url: Documents/MinecraftLive2022CreatorRecap.md
     #card
-    - title: 1.19.40 Update
+    - title: 1.19.40 Update Summary
       itemType: whats-new
       url: Documents/Update1.19.40.md
     #card
