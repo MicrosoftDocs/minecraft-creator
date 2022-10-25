@@ -16,7 +16,7 @@ Other “Holiday Creator Feature” block components are still under development
 
 **Minecraft Block Wizard:**
 
-To coincide with the release of custom blocks we partnered with Jannis from [Blockbench](https://www.blockbench.net) to build a Block Wizard plug-in. Check out our tutorial ([Getting started with Minecraft Block Wizard](MinecraftBlockWizard.md)) and see how easy it is to make custom blocks.
+To coincide with the release of custom blocks we partnered with Jannis from [Blockbench](https://www.blockbench.net) to build a Block Wizard plug-in. Check out the tutorial ([Getting started with Minecraft Block Wizard](MinecraftBlockWizard.md)) and see how easy it is to make custom blocks.
 
 **Structure Block Import:**
 
