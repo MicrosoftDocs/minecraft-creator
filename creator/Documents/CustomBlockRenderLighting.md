@@ -23,11 +23,11 @@ In this tutorial, we will focus on understanding how the different render method
 
 :::image type="content" source="Media/RenderAndLighting/ral1.png" alt-text="An image showing a bubble block containing a fish.":::
 
-***Create geometry in Blockbench***
+***Say "Hello" to the bubble fish!***
 
-Bubble fish is made of several cubes.
+Bubble fish is made of several blocks.
 
-The bubble is made up of a 16x16x16 block. Then, there’s an internal fish that’s a 3x4x5 cube with five 1x1x1 blocks added for a tail. The geometry is laid out in the UV map to correctly appear as we want it to in-game.
+The bubble is made up of a 16x16x16 block. Then, there’s an internal fish that’s a 3x4x5 block with five 1x1x1 blocks added for a tail. The geometry is laid out in the UV map to correctly appear as we want it to in-game.
 
 The bubble’s texture was created in Paint3D to be able to create opaque, translucent, and transparent pixels.
 
@@ -35,9 +35,9 @@ You can create your own transparent block, or check out the [minecraft-samples](
 
 ***Complete Setup in Resource Pack***
 
-This isn’t our first time setting up a custom block, so this time it’s up to you to complete shortened steps. If at any point you get lost, refer back to the previous custom block tutorials or the minecraft-samples page noted above.
+This isn’t our first time setting up a custom block, so this time we're giving you shortened steps. If at any point you get lost, please refer back to the previous custom block tutorials or the minecraft-samples page noted above.
 
-1. Export the file in ***Blockbench*** by navigating to ***File > Export > Export to Bedrock***.
+1. Export the file in ***Blockbench*** just as we did for the sushi block.
 1. Add the downloaded geometry file by navigating to ***custom_block_resource_pack/models/blocks*** and copying the file in.
 
 ```json
@@ -120,7 +120,7 @@ This isn’t our first time setting up a custom block, so this time it’s up to
 
 4. Add a friendly name in ***terrain_texture.json*** by navigating to ***custom_block_resource_pack/textures*** and editing the ***terrain_texture.json*** file.
 1. Navigate to ***custom_block_resource_pack/texts/en_US.lang*** and add a localized named for the bubble fish.
-1. Optionally, you can add an entry to blocks.json to give this block a sound. But remember, if you are using custom geometry and materials, an entry in blocks.json is completely optional, so we did not add one for this block.
+1. Finally, you can add an entry to blocks.json to give this block a sound. Remember, if you are using custom geometry and materials an entry in blocks.json is completely optional, so we did not add one for this block.
 
 Whew, that was a lot to cover... Great work!
 
@@ -216,7 +216,7 @@ Double-sided disables backface culling.
 
 The 'opaque' render method does backface culling by default to improve performance, but if you want the backface to render, or make your block "double sided", you can use the "double_sided" render method.  
 
-However, you can really only tell the difference between "opaque" and "double_sided" if your head is inside the block. For "opaque," you will NOT be able to see the inside of the block around you. For "double_sided," you WILL be able to see the inside of the block around you. But from the outside, these two render methods look identical.
+However, you can only tell the difference between "opaque" and "double_sided" if your head is inside the block. For "opaque," you will NOT be able to see the inside of the block around you. For "double_sided," you WILL be able to see the inside of the block around you. But from the outside, these two render methods look identical.
 
 ***Alpha Test***
 

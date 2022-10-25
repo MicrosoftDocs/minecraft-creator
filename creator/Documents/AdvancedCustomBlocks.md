@@ -8,7 +8,7 @@ description: "A guide to using the Geometry and Material instances to create cus
 
 # Custom Blocks Part 2: Geometry and Material Instances
 
-In this tutorial, you will learn much more about custom block components. We will cover the following:
+In this tutorial, you will learn more about custom block components, including:
 
 > [!div class="checklist"]
 >
@@ -27,7 +27,7 @@ We’ve already created a cool die block that you can make with the fewest numbe
 
 ## Creating custom blocks with resource and behavior packs
 
-This tutorial builds from the 'How to Add a Simple Custom Block' tutorial and uses the same file structure, with one major difference: For these blocks, we will be using custom geometry models, so we will be adding a ***models*** folder to the `custom_block_resource_pack`. Here is the updated file structure we’ll follow for this tutorial:
+This tutorial builds from part one and uses the same file structure, with one major difference: For these blocks, we will be using custom geometry models, so we will be adding a ***models*** folder to the `custom_block_resource_pack`. Here is the updated file structure we’ll follow for this tutorial:
 
 :::image type="content" source="Media/AdvancedCustomBlocks/advancedblock.png" alt-text="Visual hierarchy of the project file structure.":::
 
@@ -36,15 +36,16 @@ This tutorial builds from the 'How to Add a Simple Custom Block' tutorial and us
 :::image type="content" source="Media/AdvancedCustomBlocks/advancedblock1.png" alt-text="Picture of sushi blocks in Minecraft: Bedrock Edition.":::
 
 ***Blockbench***
+
 [Blockbench](https://blockbench.net/)
 
-Blockbench is a free entity-modeling application for creating entity models in Minecraft: Bedrock Edition. Additionally, user have the ability to create textures, and the ability to animate them for Bedrock Edition maps. Blockbench has external plugin support, enabling developers to create additional tools to use within the program. It also has the ability to export models into a standard OBJ format, Java Edition block model, and more.
+For this tutorial, we're going to be doing some work in Blockbench. Blockbench is a free entity-modeling application for creating entity models in Minecraft: Bedrock Edition. Additionally, users have the ability to create textures, and the ability to animate them for Bedrock Edition maps. Blockbench has external plugin support, enabling developers to create additional tools to use within the program. It also has the ability to export models into a standard OBJ format, Java Edition block model, and more.
 
-We will use Blockbench in these tutorials to create custom geometries for the more advanced blocks we’ll create for sushi, fish in a bubble, and a giant umbrella.
+We will use Blockbench in these tutorials to create custom geometries for the more advanced blocks we’ll create for sushi, fish in a bubble, and a giant umbrella. If this is your first time using Blockbench, we recommend taking a look at our Entity Wizard document [here](https://learn.microsoft.com/en-us/minecraft/creator/documents/minecraftentitywizard).
 
-***Create geometry in Blockbench***
+***Geometry in Blockbench***
 
-Each custom block has a different UV for the various textures of the sushi sides. The UV defines how the geometry maps to each texture. For this tutorial, we can share the texture for the sushi wrap.
+Each custom block has a different unit vector (UV) for the various textures of the sushi sides. The UV defines how the geometry maps to each texture. For this tutorial, we are sharing the texture for the sushi wrap.
 
 As a bonus, the seaweed will be the same for all three rolls, so you can reuse the same geometries!
 
@@ -57,6 +58,8 @@ The textures for the individual rolls, however, will be different depending on t
 :::image type="content" source="Media/AdvancedCustomBlocks/advancedblock4.png" alt-text="Picture of salmon roll in 3d.":::
 
 :::image type="content" source="Media/AdvancedCustomBlocks/advancedblock5.png" alt-text="Flat picture of salmon roll.":::
+
+We highly recommend learning the ins and outs of Blockbench as you begin to create more complex and personalized custom entities. For this tutorial, however, we will be creating a blank file and exporting it to our pc, where we can copy our sushi block data.
 
 ***Export the file from Blockbench***
 

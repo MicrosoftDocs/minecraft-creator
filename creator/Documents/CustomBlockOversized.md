@@ -277,16 +277,16 @@ For this last tutorial, you’re on your own setting up the rest of the Giant Um
 
 :::image type="content" source="Media/CustomOversized/Picture7.png" alt-text="Image shows the texture image for the Giant Umbrella block.":::
 
-- Remember to add a friendly name for the texture in the terrain testure file, add a display name for the block in `en_US.lang`, and optionally add an entry for this block in `blocks.json` if you want to give the block a sound.
+- Remember to add a friendly name for the texture in the terrain texture file, add a display name for the block in `en_US.lang`, and optionally add an entry for the block in `blocks.json` if you want to give the block a sound.
 
 ***Behavior Pack Step***
 
 Create `umbrella.json` and fill it in using your knowledge from the previous tutorials. If you get lost, that's totally normal. Here are some troubleshooting tips:
 
-- Refer back to the custom sushi block - these steps are the same!
+- Refer back to the custom sushi block - the steps are the same!
 - Check back on your previous blocks
     - Did you forget a file?
-    - Dd you copy a file and not update a name?
+    - Dd you copy a file without updating a name?
 - Double-check your work in minecraft-samples.
 
 Next up, testing!
@@ -306,4 +306,4 @@ Now start dropping those beautiful 'brellas!
 
 ## Next Steps
 
-Your next step is to take this knowledge and go have some fun! We've learned so much about custom blocks during these tutorials, and we can't wait to see what you come up with using these tools and tips. 
+Your next step is to take this knowledge and go have some fun! We've learned so much about custom blocks during these tutorials, and we can't wait to see what you come up with using these tools and tips.
