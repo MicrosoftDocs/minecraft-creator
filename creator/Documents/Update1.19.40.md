@@ -10,7 +10,7 @@ Minecraft Bedrock has been updated to 1.19.40 and there are a number of changes 
 
 **Block Components:**
 
-Two important block components have left experimental today: *geometry* and *material_instances*. This means that custom blocks is now a non-experimental feature and will have backwards compatibility and support for Marketplace creators. Our documentation has been updated ([How to add a Custom Block](CustomBlock.md)) and includes videos of the limitations around custom block geometry. This new capability should allow for a lot more visually diverse maps. Creators who previously used static entities as a work-around will see performance improvements by converting static entities to custom blocks.
+Two important block components have left experimental today: [*geometry*](../reference/content/blockreference/examples/blockcomponents/minecraftBlock_geometry.md) and [*material_instances*](../reference/content/blockreference/examples/blockcomponents/minecraftBlock_material_instances.md). This means that [custom blocks](CustomBlock.md) is now a non-experimental feature and will have backwards compatibility and support for Marketplace creators. This new capability should allow for a lot more visually diverse maps. Creators who previously used static entities as a work-around will see performance improvements by converting static entities to custom blocks. Check out our [Custom Blocks Part 2](AdvancedCustomBlocks.md) tutorial walking through these new capabilities.
 
 Other “Holiday Creator Feature” block components are still under development and will release out of experimental when they are ready.
 
@@ -32,6 +32,6 @@ Recipes can now use item tags directly instead of item names. This should make w
 
 **Entity Properties (*Experimental*):**
 
-Entity Properties (previously known as Actor Properties) has been a feature in experimental for a while. It’s almost ready to release so we’ve uploaded the documentation for it if you want to get an early start. For now, it's accessible by enabling the *Upcoming Creator Features* experimental flag. Documentation is here:[Introduction to Entity Properties](IntroductionToEntityProperties.md).
+Entity Properties (previously known as Actor Properties) has been a feature in experimental for a while. It’s almost ready to release so we’ve uploaded the documentation for it if you want to get an early start. For now, it's accessible by enabling the *Upcoming Creator Features* experimental flag. Documentation is here: [Introduction to Entity Properties](IntroductionToEntityProperties.md).
 
 **APIs (*Experimental*)** The GameTest Framework experimental flag has been renamed “Beta APIs”  to better reflect the general usage of these APIs. This experimental flag is needed to access all Beta APIs, including core Minecraft APIs and GameTest APIs.
