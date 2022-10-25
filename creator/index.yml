@@ -169,7 +169,7 @@ conceptualContent:
           - url: Documents/ScriptDeveloperTools.md
             itemType: how-to-guide
             text: Use Visual Studio Code tools to write script
-          - url: ScriptAPI/mojang-gametest/mojang-gametest.md
+          - url: ScriptAPI/minecraft/server-gametest/minecraft-server-gametest.md
             itemType: reference
             text: GameTest API
           - url:  Documents/GameTestGettingStarted.md
