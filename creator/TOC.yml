@@ -213,11 +213,11 @@
           - name: Block Documentation Homepage
             href: Reference/Content/blockreference/index.yml
           - name: Block JSON File Structure
-            href: Reference/Content/blockreference/BlockJsonFileStructure.md
+            href: Reference/Content/blockreference/Examples/BlockJsonFileStructure.md
           - name: Block Description
-            href: Reference/Content/blockreference/BlockDescription.md
+            href: Reference/Content/blockreference/Examples/BlockDescription.md
           - name: Block Properties and Permutations
-            href: Reference/Content/blockreference/BlockPropertiesAndPermutations.md
+            href: Reference/Content/blockreference/Examples/BlockPropertiesAndPermutations.md
           - name: Block Components
             href: Reference/Content/blockreference/Examples/BlockComponents/TOC.yml
           - name: Block Triggers
