@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: mikeam
 title: Block Documentation - minecraft:friction
 ms.prod: gaming
 ---
