@@ -81,7 +81,7 @@ conceptualContent:
             - url: Documents/BehaviorPack.md
               itemType: get-started
               text: Introduction to Behavior Packs
-            - url: Documents/CustomBlock.md
+            - url: Documents/AddCustomDieBlock.md
               itemType: how-to-guide
               text: How to add a Custom Block
         # card
