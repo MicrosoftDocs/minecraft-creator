@@ -18,29 +18,29 @@ highlightedContent:
 # itemType:  architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     #card used to define plugin
-    - title: "Minecraft Maker Series"
+    - title: "Minecraft Block Wizard"
       itemType: whats-new
-      url: Documents/MakerSeriesMakingTheGoblinChef.md
+      url: Documents/MinecraftBlockWizard.md
     #card
-    - title: "Installing Add-Ons in Minecraft: Bedrock Edition"
-      itemType: deploy
+    - title: "Minecraft Live 2022 Creator Overview"
+      itemType: whats-new
       url: Documents/AddonPackInstallation.md
     #card
-    - title: Structure Blocks
+    - title: 1.19.40 Update
       itemType: whats-new
-      url: Documents/IntroductionToStructureBlocks.md
+      url: Documents/Update1.19.40.md
     #card
-    - title: "Create a Custom NPC"
-      itemType: learn
+    - title: "Entity Properties"
+      itemType: whats-new
       url: Documents/CreateNPCs.md
     #card
     - title: Scripting
       itemType: reference
       url: ScriptAPI/index.yml
     #card
-    - title: Mash-up Pack Overview
-      itemType: learn
-      url: Documents/MashupPackOverview.md
+    - title: Custom Blocks
+      itemType: whats-new
+      url: Documents/CustomBlock.md
 
 # productDirectory section (optional)
 productDirectory:
