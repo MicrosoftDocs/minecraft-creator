@@ -155,7 +155,7 @@ Custom block files have several requirements for them to be functional:
 - The ***description*** object requires an identifier with a namespace, separated by a colon. In this case, the namespace is "demo" and the identifier is "die".
 - A ***components*** section will contain the components that describe the block's behavior.
 
-There are several components you may choose to use in custom blocks. To learn more, view the [full list of custom block components](https://docs.microsoft.com/en-us/minecraft/creator/reference/content/blockreference/examples/blockcomponentslist) in the reference documentation. For now, we'll leave the die block with only the identifier.
+There are several components you may choose to use in custom blocks. To learn more, view the [full list of custom block components](creator\Reference\Content\BlockReference\Examples\BlockComponentsList.md) in the reference documentation. For now, we'll leave the die block with only the identifier.
 
 ## Resource Pack
 
@@ -171,7 +171,7 @@ We will begin by creating a resource pack for the custom block:
 1. Inside the ***custom_block_resource_pack*** folder, create a ***manifest.json*** file.
 1. Open the ***manifest.json*** file in a text editor.
 1. Copy the code below into the ***manifest.json*** file.
-1. See the [Introduction to Behavior Packs Tutorial](https://learn.microsoft.com/en-us/minecraft/creator/documents/behaviorpack) to learn how to use UUIDs to create the dependency of this behavior pack on the resource pack, and get any new UUIDs from UUIDgenerator.net.
+1. See the [Introduction to Behavior Packs Tutorial](BehaviorPack.md) to learn how to use UUIDs to create the dependency of this behavior pack on the resource pack, and get any new UUIDs from UUIDgenerator.net.
 
 ```json
 { 
