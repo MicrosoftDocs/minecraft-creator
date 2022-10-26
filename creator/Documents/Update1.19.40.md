@@ -23,10 +23,6 @@ Other “Holiday Creator Feature” block components are still under development
 
 To coincide with the release of custom blocks we partnered with Jannis from [Blockbench](https://www.blockbench.net) to build a Block Wizard plug-in. Check out the tutorial ([Getting started with Minecraft Block Wizard](MinecraftBlockWizard.md)) and see how easy it is to make custom blocks.
 
-**Structure Block Import:**
-
-Structure blocks can now be imported in-game using the structure block UI. This is supported on the Windows platform (same as Export). Our documentation has been updated [Introduction to Structure Blocks](IntroductionToStructureBlocks.md).
-
 **Item Tags on Recipes:**
 
 Recipes can now use item tags directly instead of item names. This should make working with Recipes a bit easier. Recipes can now take tags as input, which means custom items can be used in Vanilla recipes! This brings us closer to Java parity. We still have a bit more work to do on this feature and improved documentation will come in the future so stay tuned!
