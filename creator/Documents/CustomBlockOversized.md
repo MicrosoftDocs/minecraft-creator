@@ -20,6 +20,9 @@ It’s recommended that the following be completed before beginning this tutoria
 
 :::image type="content" source="Media/CustomOversized/Picture1.png" alt-text="An image showing two bubble blocks containing fish and covered by an umbrella.":::
 
+> [!VIDEO https://www.youtube.com/embed/k9quttGIOJw]
+*These blocks can get tricky, but this video takes you through the whole process!*
+
 ### Resource Pack
 
 ***Create geometry in Blockbench***

@@ -27,6 +27,9 @@ We’ve already created a cool die block that you can make with the fewest numbe
 
 ## Creating custom blocks with resource and behavior packs
 
+> [!VIDEO https://www.youtube.com/embed/eUFuDkyTom8]
+*For extra help, follow along with this video!*
+
 This tutorial builds from part one and uses the same file structure, with one major difference: For these blocks, we will be using custom geometry models, so we will be adding a ***models*** folder to the `custom_block_resource_pack`. Here is the updated file structure we’ll follow for this tutorial:
 
 :::image type="content" source="Media/AdvancedCustomBlocks/advancedblock.png" alt-text="Visual hierarchy of the project file structure.":::

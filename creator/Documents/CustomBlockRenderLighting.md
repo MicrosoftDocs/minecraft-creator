@@ -33,6 +33,9 @@ The bubble’s texture was created in Paint3D to be able to create opaque, trans
 
 You can create your own transparent block, or check out the [minecraft-samples](https://github.com/microsoft/minecraft-samples) page for more information.
 
+> [!VIDEO https://www.youtube.com/embed/TIv-FsWwo8g]
+*Another tutorial, another excellent follow-along video!*
+
 ***Complete Setup in Resource Pack***
 
 This isn’t our first time setting up a custom block, so this time we're giving you shortened steps. If at any point you get lost, please refer back to the previous custom block tutorials or the minecraft-samples page noted above.

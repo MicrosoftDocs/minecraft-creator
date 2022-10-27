@@ -35,6 +35,9 @@ You will also need the following:
 
 ### Creating Custom Blocks with Resource and Behavior Packs
 
+> [!VIDEO https://www.youtube.com/embed/v367NxR2ZsE]
+*We even have a video for you to follow if that's your preference!*
+
 You will be making changes in both a resource pack and a behavior pack to get custom looks and behavior for each custom block you will be creating. Here is the file structure we'll follow for this tutorial:
 
 :::image type="content" source="Media/AddCustomDieBlock/AddCustomBlock2.png" alt-text="Image of file structure for a completed custom block":::
