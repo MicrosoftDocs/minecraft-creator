@@ -16,7 +16,7 @@ The plugin works similarly to the [Minecraft Entity Wizard](https://www.minecraf
 
 ## Demonstration: How to Make a Custom Block
 
-> [!VIDEO https://www.youtube.com/embed/WnxMasZjmIc]
+> [!VIDEO https://www.youtube.com/embed/TWY70T7YANE]
 
 This video shows how to make a custom block with Minecraft Block Wizard.
 
