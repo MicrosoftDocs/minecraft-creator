@@ -25,6 +25,9 @@ In this tutorial you will learn the following:
 
 It's recommended that the following be completed before beginning this tutorial:
 
+> [!VIDEO https://www.youtube.com/embed/95D8cNebCwM]
+*This video is an excellent way to quickly get up to speed*
+
 - [Getting Started with Add-On Development](GettingStarted.md)
 - [Introduction to Resource Packs](ResourcePack.md)
 - [Introduction to Behavior Packs](BehaviorPack.md)
