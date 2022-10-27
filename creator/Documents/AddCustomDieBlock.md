@@ -25,6 +25,9 @@ In this tutorial you will learn the following:
 
 It's recommended that the following be completed before beginning this tutorial:
 
+> [!VIDEO https://www.youtube.com/embed/95D8cNebCwM]
+*This video is an excellent way to quickly get up to speed*
+
 - [Getting Started with Add-On Development](GettingStarted.md)
 - [Introduction to Resource Packs](ResourcePack.md)
 - [Introduction to Behavior Packs](BehaviorPack.md)
@@ -34,6 +37,9 @@ You will also need the following:
 - Download the [Vanilla resource pack](https://aka.ms/resourcepacktemplate)
 
 ### Creating Custom Blocks with Resource and Behavior Packs
+
+> [!VIDEO https://www.youtube.com/embed/v367NxR2ZsE]
+*We even have a video for you to follow if that's your preference!*
 
 You will be making changes in both a resource pack and a behavior pack to get custom looks and behavior for each custom block you will be creating. Here is the file structure we'll follow for this tutorial:
 
