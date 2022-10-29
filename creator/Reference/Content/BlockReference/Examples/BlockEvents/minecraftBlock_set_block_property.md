@@ -21,6 +21,6 @@ ms.prod: gaming
 
 ```json
 "set_block_property": {
-  "property name here": "Molang expression here"
+    "property name here": "Molang expression here"
 }
 ```

@@ -44,7 +44,7 @@ The first thing to consider when making a model is the bone structure. Bones are
 
 ![Bone listing in Blockbench](Media/EntityModeling/bonestructure.png)
 
-A good practice is to use a root bone for each model and put everything else inside it. This means that you'll later be able to animate the entire model at once, as well as specific parts of it. Create a new group in Blockbench. “Groups” and “Bones” are essentially the same in this context.
+A good practice is to use a root bone for each model and put everything else inside it. This means that you'll later be able to animate the entire model at once, as well as specific parts of it. Create a new group in Blockbench. "Groups" and "Bones" are essentially the same in this context.
 
 You can right-click the group or press **F2** to rename it. The name for a bone should be `snake_case` (so only including lower case letters, numbers, and underscores). Each bone name has to be unique for future reference through animations.
 
@@ -95,7 +95,7 @@ Animations can animate the shape of your model, but they can also play sounds an
 
 The vanilla resource pack contains generic animations that you can reference in your own pack without actually copying the files. These animations can be a good starting point for vanilla-like entities, but of course, custom animations are a lot more powerful. You can find all vanilla animations in the vanilla resource pack [here](https://aka.ms/resourcepacktemplate).
 
-In this example, we'll be using the *look at* animation. This animation will rotate the “head” bone. That’s why it's important that the head of the model uses the exact same name.
+In this example, we'll be using the *look at* animation. This animation will rotate the "head" bone. That’s why it's important that the head of the model uses the exact same name.
 
 Also, the entity will need a *look at* component in its behavior file. These are the looking components from the cow. You can play around with the numbers if you like.
 
@@ -163,7 +163,7 @@ Now reference and play the animation in the client entity file as we've done wit
 
 If you now spawn a robot and push it down an edge, the animation will play. But it will only play once.
 
-The reason for that is the fact that the query in the scripts section is only a blend value for the animation. It defines “how much” the animation plays, not when it plays and when it doesn't. That’s why the animation will start playing once `!query.is_on_ground` is `true/1`, but it will never stop playing. It will just fade out once the value is `false/0` again, and the next time it will fade into the animation again. It won’t play from the start again.
+The reason for that is the fact that the query in the scripts section is only a blend value for the animation. It defines "how much" the animation plays, not when it plays and when it doesn't. That’s why the animation will start playing once `!query.is_on_ground` is `true/1`, but it will never stop playing. It will just fade out once the value is `false/0` again, and the next time it will fade into the animation again. It won’t play from the start again.
 
 We can use this behavior quite well for static or looping animations that have no beginning and no end. But if we want to start the animation every time the query changes, we need a different approach. This is where animation controllers come in.
 

@@ -12,7 +12,7 @@ Loot tables are JSON formatted files used to define how items are generated in-g
 
 :::image type="content" source="Media/IntroToLootTables/Loot-and-Trading-Tables.jpg" alt-text="Image showing Alex opening a chest to show loot.":::
 
-Loot table files live in the root directory of a behavior pack and they generally consist of three main sections known as a “pool.”
+Loot table files live in the root directory of a behavior pack and they generally consist of three main sections known as a "pool."
 
 - **Rolls**
     - How many times this pool will be rolled to select an entry. This could be either an integer which will make it a set amount of rolls or a min/max range the number of rolls can be chosen from.

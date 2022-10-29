@@ -26,7 +26,7 @@ These properties are part of the Block Definition and Block Properties that are 
       "minecraft:flammable": {
         "flame_odds": 50,
         "burn_odds": 0
-	      },
+      },
       "minecraft:light_emission": 1
     }
   }

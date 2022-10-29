@@ -165,13 +165,12 @@ In this example, a component group is defined which can cause the entity to beco
         },
         "events": {
             "sample:add_baby": {  
-                "add”: {
-                 “component_groups”: { 
-                    [“baby”]
+                "add": {
+                 "component_groups": { 
+                    ["baby"]
                 }
             }
-        }   
-
+        }  
     }
 }
 ```

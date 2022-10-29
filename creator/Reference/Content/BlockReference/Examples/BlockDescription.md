@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Block Documentation - Block Description
 
-The block `"description"` is a section inside the `“minecraft:block”` section of a custom block’s behavior pack JSON file that contains a list of characteristics of a block that are applicable to all permutations of the block. The description MUST contain an identifier to identify the block by; the other fields are optional.
+The block `"description"` is a section inside the `"minecraft:block"` section of a custom block’s behavior pack JSON file that contains a list of characteristics of a block that are applicable to all permutations of the block. The description MUST contain an identifier to identify the block by; the other fields are optional.
 
 ## Parameters
 
