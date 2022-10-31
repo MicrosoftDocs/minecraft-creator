@@ -20,9 +20,9 @@ Specifies the version of the game this entity was made in. If the version is low
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| String| category| | The category for this item. Categories are used to control high level properties of how the item is integrated into the bedrock engine, such as whether it can be used in slash commands. |
-| String| identifier| | The identifier for this item. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla item. |
-| Boolean| is_experimental| false| If this item is experimental, it will only be registered if the world is marked as experimental. |
+| category| | String| The category for this item. Categories are used to control high level properties of how the item is integrated into the bedrock engine, such as whether it can be used in slash commands. |
+| identifier| | String| The identifier for this item. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla item. |
+| is_experimental| false| Boolean| If this item is experimental, it will only be registered if the world is marked as experimental. |
 
 ### Example
 
