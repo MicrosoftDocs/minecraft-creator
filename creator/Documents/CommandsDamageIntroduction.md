@@ -69,7 +69,7 @@ Dealing `drowning` damage does not turn zombies and husks into Drowned. This is 
 
 A glow squid will stop glowing and emit ink when damaged, but only if there was a damage source. 
 
-This logic also applies to the glow squid and squids inking behavior. If the damage applied has no source, it will not “ink”.
+This logic also applies to the glow squid and squids inking behavior. If the damage applied has no source, it will not "ink".
 
 ### Slow falling
 

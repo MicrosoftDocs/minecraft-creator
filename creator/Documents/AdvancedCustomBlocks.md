@@ -69,52 +69,29 @@ We highly recommend learning the ins and outs of Blockbench as you begin to crea
 Navigate to ***File > Export > Export Bedrock Geometry*** to save the geo file to your computer.
 
 ```json
-{ 
-
-    "format_version": "1.12.0", 
-
-    "minecraft:geometry": [ 
-
-        { 
-
-            "description": { 
-
-                "identifier": "geometry.sushi", 
-
-                "texture_width": 36, 
-
-                "texture_height": 18, 
-
-                "visible_bounds_width": 2, 
-
-                "visible_bounds_height": 2.5, 
-
-                "visible_bounds_offset": [0, 0.75, 0] 
-
-            }, 
-
-            "bones": [ 
-
-                { 
-
-                    "name": "bb_main", 
-
-                    "pivot": [0, 0, 0], 
-
-                    "cubes": [ 
-
-                        {"origin": [-6, 0, -3], "size": [12, 12, 6], "uv": [0, 0]} 
-
-                    ] 
-
-                } 
-
-            ] 
-
-        } 
-
-    ] 
-
+{
+    "format_version": "1.12.0",
+    "minecraft:geometry": [
+        {
+            "description": {
+                "identifier": "geometry.sushi",
+                "texture_width": 36,
+                "texture_height": 18,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [0, 0.75, 0]
+            },
+            "bones": [
+                {
+                    "name": "bb_main",
+                    "pivot": [0, 0, 0],
+                    "cubes": [
+                        {"origin": [-6, 0, -3], "size": [12, 12, 6], "uv": [0, 0]}
+                    ]
+                }
+            ]
+        }
+    ] 
 } 
 ```
 
@@ -161,47 +138,31 @@ As always, feel free to create your own textures!
 
 ***Add friendly name in terrain_texture.json***
 
-The next step is to associate the texture names with a texture file path. This is done in a `terrain_texture.json` file.
+The next step is to associate the texture names with a texture file path. This is done in a `terrain_texture.json` file.
 
 - In ***File Explorer***, navigate to the ***custom_block_resource_pack*** folder and open the ***textures*** folder.
 - Open ***terrain_texture.json*** in a text editor.
 - Copy and paste the following code into ***terrain_texture.json*** in the ***texture_data*** section:
 
 ```json
-{ 
-
-    "texture_data": { 
-
-        "die_1": { 
-
-            "textures": "textures/blocks/die_1" 
-
-}, … 
-
-        "sushi_wrap": { 
-
-            "textures": "textures/blocks/sushi_wrap" 
-
-        }, 
-
-        "salmon_roll": { 
-
-            "textures": "textures/blocks/salmon_roll" 
-
-        }, 
-
-        "tuna_roll": { 
-
-          "textures": "textures/blocks/tuna_roll" 
-
-        }, 
-
-        "california_roll": { 
-
-          "textures": "textures/blocks/california_roll" 
-
-        } 
-
+{
+    "texture_data": {
+        "die_1": {
+            "textures": "textures/blocks/die_1" 
+        },
+        "sushi_wrap": {
+            "textures": "textures/blocks/sushi_wrap"
+        },
+        "salmon_roll": {
+            "textures": "textures/blocks/salmon_roll"
+        },
+        "tuna_roll": {
+          "textures": "textures/blocks/tuna_roll"
+        },
+        "california_roll": {
+          "textures": "textures/blocks/california_roll"
+        } 
+    }
 } 
 ```
 
@@ -216,29 +177,17 @@ Adding a sound in blocks.json is optional, but you can include it here for fun.
 
 ```json
 { 
-
-"format_version": "1.19.30", 
-
-"demo:die": {…}, 
-
-"demo:salmon_roll": { 
-
-"sound": "mud" 
-
-}, 
-
-"demo:tuna_roll": { 
-
-"sound": "mud" 
-
-}, 
-
-"demo:california_roll": { 
-
-"sound": "mud" 
-
-}  
-
+    "format_version": "1.19.30", 
+    "demo:die": {…}, 
+    "demo:salmon_roll": { 
+        "sound": "mud" 
+    }, 
+    "demo:tuna_roll": { 
+        "sound": "mud" 
+    }, 
+    "demo:california_roll": { 
+        "sound": "mud" 
+    }  
 } 
 ```
 
@@ -248,9 +197,9 @@ Adding a sound in blocks.json is optional, but you can include it here for fun.
 
 Let’s bring all those resource pieces together into one beautiful combination in the behavior pack individual custom block file.
 
-Although the sushi blocks share the same “geometry.sushi” geometry, you will create separate files for each of these rolls so they become their own blocks that display their own unique textures.
+Although the sushi blocks share the same "geometry.sushi" geometry, you will create separate files for each of these rolls so they become their own blocks that display their own unique textures.
 
-1. In ***File Explorer***, navigate to the folder ***custom_block_behavior_pack***, located in the ***development_behavior_packs*** folder.
+1. In ***File Explorer***, navigate to the folder ***custom_block_behavior_pack***, located in the ***development_behavior_packs*** folder.
 1. Double-click on ***blocks*** to open the folder.
 1. Inside the ***blocks*** folder, create a text document and name it ***salmon_roll.json***.
 1. Double-click on ***salmon_roll.json*** to open it in a text editor.
@@ -262,48 +211,27 @@ In the file, you will need to define what each of the blocks is.
 Copy and paste the following code into your ***salmon_roll.json*** file:
 
 ```json
-{ 
-
-    "format_version": "1.19.40", 
-
-    "minecraft:block": { 
-
-        "description": { 
-
-            "identifier": "demo:salmon_roll" 
-
-        }, 
-
-      "components": { 
-
-        "minecraft:geometry": "sushi.geo.json", 
-
-        "minecraft:material_instances": { 
-
-          "north": { 
-
-            "texture": "salmon_roll" 
-
-          }, 
-
-          "south": { 
-
-            "texture": "salmon_roll" 
-
-          }, 
-
-          "*": { 
-
-            "texture": "sushi_wrap" 
-
-          } 
-
-        } 
-
-      } 
-
-    } 
-
+{
+    "format_version": "1.19.40",
+    "minecraft:block": {
+        "description": {
+            "identifier": "demo:salmon_roll"
+        },
+        "components": {
+            "minecraft:geometry": "sushi.geo.json",
+            "minecraft:material_instances": {
+                "north": {
+                    "texture": "salmon_roll"
+                },
+                "south": {
+                    "texture": "salmon_roll"
+                },
+                "*": {
+                    "texture": "sushi_wrap"
+                }
+            }
+        }
+    } 
 } 
 ```
 
@@ -324,43 +252,27 @@ The rest can be defined using *to capture any side not previously defined.* is t
 There is another cool part of material_instances to show off. We can actually create defined variables within the material instances component. Let’s see an example using salmon_roll:
 
 ```json
-{ 
-
-    "format_version": "1.19.40", 
-
-    "minecraft:block": { 
-
-        "description": { 
-
-            "identifier": "demo:salmon_roll" 
-
-        }, 
-
-      "components": { 
-
-        "minecraft:geometry": "geometry.sushi", 
-
-        "minecraft:material_instances": { 
-
-          "north": "sushi_side", 
-
-          "south": "sushi_side", 
-
-          "*": { 
-
-            "texture": "sushi_wrap" 
-
-          }, 
-
-          “sushi_side”:{ 
-
-             “texture”: “salmon_roll” 
-
-        } 
-
-      } 
-
-    } 
+{
+    "format_version": "1.19.40",
+    "minecraft:block": {
+        "description": {
+            "identifier": "demo:salmon_roll"
+        },
+        "components": {
+            "minecraft:geometry": "geometry.sushi",
+            "minecraft:material_instances": {
+                "north": "sushi_side",
+                "south": "sushi_side",
+                "*": {
+                    "texture": "sushi_wrap"
+                },
+                "sushi_side":{
+                    "texture": "salmon_roll"
+                }
+            }
+        }
+    }
+}
 ```
 
 Here, we’ve defined ***sushi_side*** as having the ***salmon_roll*** texture.  

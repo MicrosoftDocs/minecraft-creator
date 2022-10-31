@@ -47,14 +47,14 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:behavior.melee_attack": {
-    "priority": 3,
-    "melee_fov": 90,
-    "speed_multiplier": 1,
-    "track_target":false,
-    "attack_types": "minecraft:sheep",
-    "reach_multiplier": 2,
-    "attack_once": false
+"minecraft:behavior.melee_attack": {
+    "priority": 3,
+    "melee_fov": 90,
+    "speed_multiplier": 1,
+    "track_target":false,
+    "attack_types": "minecraft:sheep",
+    "reach_multiplier": 2,
+    "attack_once": false
 }
 ```
 

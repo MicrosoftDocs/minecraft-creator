@@ -85,7 +85,7 @@ You can change the values for min and max to any multiples of 16 between -512 an
 
 ### Next, use it on an existing world
 
-In this section, we will see what happens if we apply the data pack to a “vanilla” generated world. (This can also be done on your existing custom world, but as always, we recommend you make a backup!)
+In this section, we will see what happens if we apply the data pack to a "vanilla" generated world. (This can also be done on your existing custom world, but as always, we recommend you make a backup!)
 
 1. Make a vanilla creative world with Show Coordinates active but do not apply the behavior pack to it yet.
 

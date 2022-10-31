@@ -75,7 +75,7 @@ The first property is the header which defines this JSON file as a valid scene f
 }
 ```
 
-Because this is a json file, we need include brackets. The  “scenes” property is the place where all the branching dialogue will live.
+Because this is a json file, we need include brackets. The  "scenes" property is the place where all the branching dialogue will live.
 
 ### Create an Individual Scene
 

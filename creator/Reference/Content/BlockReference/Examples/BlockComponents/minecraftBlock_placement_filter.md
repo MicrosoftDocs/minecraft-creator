@@ -55,10 +55,10 @@ This example describes a block that can be placed on the top, bottom, or side fa
 ```json
 "minecraft:placement_filter":{
     "conditions": [
-    {
-        "allowed_faces": ["up", "down", "side"],
-        "block_filter": ["grass", "dirt"]
-    }
+        {
+            "allowed_faces": ["up", "down", "side"],
+            "block_filter": ["grass", "dirt"]
+        }
     ]
 }
 ```
@@ -70,20 +70,20 @@ This example describes a block that can only be placed on the top face of either
 ```json
 "minecraft:placement_filter":{
     "conditions": [
-    {
-        "allowed_faces": ["up"],
-        "block_filter": [
-            {
-                “tags”: “query.any_tag(‘stone’)”
-            },
-            {
-                “name”: “minecraft:planks”,
-                “states”: {
-                    “wood_type”: “jungle”
+        {
+            "allowed_faces": ["up"],
+            "block_filter": [
+                {
+                    "tags": "query.any_tag(‘stone’)"
+                },
+                {
+                    "name": "minecraft:planks",
+                    "states": {
+                        "wood_type": "jungle"
+                    }
                 }
-            }
-        ]
-    }
+            ]
+        }
     ]
 }
 ```

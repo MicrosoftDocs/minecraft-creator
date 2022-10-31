@@ -44,7 +44,7 @@ Navigate to https://chunker.app to open Chunker. No login is required, and sessi
 
 ## Upload your world
 
-As we’re using Bedrock Edition on Windows 10, we’re going to utilize the built-in “Export World” functionality. This can be found at the bottom of the “Edit World” screen. After exporting, you’ll be given a `.mcworld` file that Chunker can understand.
+As we’re using Bedrock Edition on Windows 10, we’re going to utilize the built-in "Export World" functionality. This can be found at the bottom of the "Edit World" screen. After exporting, you’ll be given a `.mcworld` file that Chunker can understand.
 
 ![Export world button](Media/Chunker/netherexportworld.png)
 
@@ -54,7 +54,7 @@ For more information on locating your world on other devices/editions, check out
 
 ## Choosing an export version
 
-As we only want to modify our world, we’ll select the version marked as “Source Version”. Selecting an output different to the source will result in Chunker rebuilding the world.
+As we only want to modify our world, we’ll select the version marked as "Source Version". Selecting an output different to the source will result in Chunker rebuilding the world.
 
 ![Chunker export window](Media/Chunker/netherexportchunker.png)
 

@@ -68,52 +68,30 @@ We'll begin by creating a behavior pack for the custom block:
 1. Copy the code below into the ***manifest.json*** file.
 1. Get new UUIDs from UUIDgenerator.net.
 
-```json {
-
-  "format_version": 2, 
-
-  "header": { 
-
-    "description": "This is a behavior pack used to demo components!", 
-
-    "name": "Demo Behavior Pack", 
-
-    "uuid": "<UUID>", 
-
-    "version": [ 1, 0, 0 ], 
-
-    "min_engine_version": [ 1, 19, 20 ] 
-
-  }, 
-
-  "modules": [ 
-
-    { 
-
-      "description": "Demo Behavior Pack", 
-
-      "type": "data", 
-
-      "uuid": "<UUID>”, 
-
-      "version": [ 1, 0, 0 ] 
-
-    } 
-
-  ], 
-
-  "dependencies": [ 
-
-    { 
-
-      "uuid": "<Resource Pack UUID>", 
-
-      "version": [ 1, 0, 0 ] 
-
-    } 
-
-  ] 
-
+```json 
+{
+  "format_version": 2,
+  "header": { 
+    "description": "This is a behavior pack used to demo components!",
+    "name": "Demo Behavior Pack",
+    "uuid": "<UUID>", 
+    "version": [ 1, 0, 0 ], 
+    "min_engine_version": [ 1, 19, 20 ] 
+  }, 
+  "modules": [ 
+    { 
+      "description": "Demo Behavior Pack", 
+      "type": "data", 
+      "uuid": "<UUID>", 
+      "version": [ 1, 0, 0 ] 
+    } 
+  ], 
+  "dependencies": [ 
+    { 
+      "uuid": "<Resource Pack UUID>", 
+      "version": [ 1, 0, 0 ] 
+    } 
+  ] 
 } 
 ```
 
@@ -132,23 +110,14 @@ In the file, you will need to define what the block is, similar to the `manifest
 
 ```json
 { 
-
-    "format_version": "1.19.30", 
-
-    "minecraft:block": { 
-
-        "description": { 
-
-            "identifier": "demo:die" 
-
-        }, 
-
-        "components": { 
-
-        } 
-
-    } 
-
+    "format_version": "1.19.30", 
+    "minecraft:block": { 
+        "description": { 
+            "identifier": "demo:die" 
+        }, 
+        "components": { 
+        } 
+    } 
 } 
 ```
 
@@ -181,39 +150,22 @@ We will begin by creating a resource pack for the custom block:
 
 ```json
 { 
-
-  "format_version": 2, 
-
-  "header": { 
-
-    "description": "This is a resource pack used to demo components!", 
-
-    "name": "Demo Resource Pack", 
-
-    "uuid": "<UUID>", 
-
-    "version": [ 1, 0, 0 ], 
-
-    "min_engine_version": [ 1, 19, 20 ] 
-
-  }, 
-
-  "modules": [ 
-
-    { 
-
-      "description": "Demo Resource Pack", 
-
-      "type": "resources", 
-
-      "uuid": "<UUID>", 
-
-      "version": [ 1, 0, 0 ] 
-
-    } 
-
-  ] 
-
+  "format_version": 2, 
+  "header": { 
+    "description": "This is a resource pack used to demo components!", 
+    "name": "Demo Resource Pack", 
+    "uuid": "<UUID>", 
+    "version": [ 1, 0, 0 ], 
+    "min_engine_version": [ 1, 19, 20 ] 
+  }, 
+  "modules": [ 
+    { 
+      "description": "Demo Resource Pack", 
+      "type": "resources", 
+      "uuid": "<UUID>", 
+      "version": [ 1, 0, 0 ] 
+    } 
+  ] 
 } 
 ```
 
@@ -272,61 +224,33 @@ With the block defined in the ***blocks.json*** file, the next step is to associ
 
 ```json
 { 
-
-    "resource_pack_name": "custom_block_resource_pack", 
-
-    "texture_name": "atlas.terrain", 
-
-    "padding": 8, 
-
-    "num_mip_levels": 4, 
-
-    "texture_data": { 
-
-        "die_1": { 
-
-            "textures": "textures/blocks/die_1" 
-
-        }, 
-
-        "die_2": { 
-
-            "textures": "textures/blocks/die_2" 
-
-        }, 
-
-        "die_3": { 
-
-            "textures": "textures/blocks/die_3" 
-
-        }, 
-
-        "die_4": { 
-
-            "textures": "textures/blocks/die_4" 
-
-        }, 
-
-        "die_5": { 
-
-            "textures": "textures/blocks/die_5" 
-
-        }, 
-
-        "die_6": { 
-
-            "textures": "textures/blocks/die_6" 
-
-        }, 
-
-        "die_red": { 
-
-            "textures": "textures/blocks/die_red" 
-
-        } 
-
-    } 
-
+    "resource_pack_name": "custom_block_resource_pack", 
+    "texture_name": "atlas.terrain", 
+    "padding": 8, 
+    "num_mip_levels": 4, 
+    "texture_data": { 
+        "die_1": { 
+            "textures": "textures/blocks/die_1" 
+        }, 
+        "die_2": { 
+            "textures": "textures/blocks/die_2" 
+        }, 
+        "die_3": { 
+            "textures": "textures/blocks/die_3" 
+        }, 
+        "die_4": { 
+            "textures": "textures/blocks/die_4" 
+        }, 
+        "die_5": { 
+            "textures": "textures/blocks/die_5" 
+        }, 
+        "die_6": { 
+            "textures": "textures/blocks/die_6" 
+        }, 
+        "die_red": { 
+            "textures": "textures/blocks/die_red"
+        } 
+    } 
 } 
 ```
 
@@ -355,41 +279,27 @@ The die block will use a custom texture for four of the sides, and a different t
 
 ```json
 { 
-
-    "format_version": "1.19.30", 
-
-    "demo:die": { 
-
-        "textures": { 
-
-            "up": "die_1", 
-
-            "down": "die_6", 
-
-            "north": "die_3", 
-
-            "south": "die_4", 
-
-            "east": "die_2", 
-
-            "west": "die_5" 
-
-        }, 
-
-        "carried_textures": "die_red", 
-
-        "isotropic": true, 
-
-        "brightness_gamma": 1, 
-
-        "sound": "stone" 
-
-} 
+    "format_version": "1.19.30", 
+    "demo:die": { 
+        "textures": { 
+            "up": "die_1", 
+            "down": "die_6", 
+            "north": "die_3", 
+            "south": "die_4", 
+            "east": "die_2", 
+            "west": "die_5" 
+        }, 
+        "carried_textures": "die_red", 
+        "isotropic": true, 
+        "brightness_gamma": 1, 
+        "sound": "stone" 
+    } 
+}
 ```
 
 2. Save the file.
 
-We’re specifying the ***textures*** individually by face, and we’re using the friendly name textures we assigned in terrain_textures.json. The ***textures*** field can be specified as a string, or as an object with the textures broken down into sub-texture groups. 'up', 'down', and 'side' are all sub-textures that allow a creator to define which face gets a certain texture. 'side' can also be broken down into cardinal directions ('north', 'east', 'south', and 'west'). The ***carried_textures*** and ***isotropic*** fields can be specified per-face like this as well, though not demonstrated here.
+We’re specifying the ***textures*** individually by face, and we’re using the friendly name textures we assigned in terrain_textures.json. The ***textures*** field can be specified as a string, or as an object with the textures broken down into sub-texture groups. 'up', 'down', and 'side' are all sub-textures that allow a creator to define which face gets a certain texture. 'side' can also be broken down into cardinal directions ('north', 'east', 'south', and 'west'). The ***carried_textures*** and ***isotropic*** fields can be specified per-face like this as well, though not demonstrated here.
 
 The ***carried_textures*** property allows you to specify the textures to use when the block is in your hand, hotbar, and inventory. We provided the ***die_red*** texture (as a string) to demonstrate this field.
 

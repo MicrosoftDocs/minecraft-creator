@@ -44,15 +44,11 @@ This isn’t our first time setting up a custom block, so this time we're giving
 1. Add the downloaded geometry file by navigating to ***custom_block_resource_pack/models/blocks*** and copying the file in.
 
 ```json
-{ 
-
-    "format_version": "1.12.0", 
-
-    "minecraft:geometry": [ 
-
-        { 
-
-            "description": { 
+{
+    "format_version": "1.12.0",
+    "minecraft:geometry": [
+        {
+            "description": { 
 
 "identifier": "geometry.bubble_fish", 
 
@@ -134,35 +130,21 @@ Whew, that was a lot to cover... Great work!
 Now it's time to create the behavior pack custom block json file.
 
 ```json
-{ 
-
-    "format_version": "1.19.40", 
-
-    "minecraft:block": { 
-
-        "description": { 
-
-            "identifier": "demo:bubble_fish" 
-
-        }, 
-
-      "components": { 
-
-        "minecraft:geometry": "geometry.bubble_fish", 
-
-        "minecraft:material_instances": { 
-
-          "*": { 
-
-            "texture": "bubble_fish" 
-
-          } 
-
-        } 
-
-      } 
-
-    } 
+{
+    "format_version": "1.19.40",
+    "minecraft:block": {
+        "description": {
+            "identifier": "demo:bubble_fish"
+        },
+      "components": {
+        "minecraft:geometry": "geometry.bubble_fish",
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "bubble_fish"
+          }
+        }
+      }
+    } 
 
 } 
 ```
@@ -178,17 +160,12 @@ We’ll be exploring the render_methods parameter available to textures. The def
 ***Opaque***
 
 ```json
-   "minecraft:material_instances": { 
-
-          "*": { 
-
-            "texture": "bubble_fish", 
-
-            "render_method": "opaque" 
-
-          } 
-
-        } 
+   "minecraft:material_instances": {
+          "*": {
+            "texture": "bubble_fish",
+            "render_method": "opaque"
+          }
+        } 
 ```
 
 :::image type="content" source="Media/RenderAndLighting/ral3.png" alt-text="Screenshot of a bubble block shown with the opaque render.":::
@@ -198,17 +175,12 @@ As you can see, transparency and translucency are not respected. Those colors ar
 ***Double-Sided***
 
 ```json
-  "minecraft:material_instances": { 
-
-          "*": { 
-
-            "texture": "bubble_fish", 
-
-            "render_method": "double_sided" 
-
-          } 
-
-        } 
+  "minecraft:material_instances": {
+          "*": {
+            "texture": "bubble_fish",
+            "render_method": "double_sided"
+          }
+        } 
 ```
 
 :::image type="content" source="Media/RenderAndLighting/ral3.png" alt-text="Screenshot of a bubble block shown with the opaque render.":::
@@ -224,17 +196,12 @@ However, you can only tell the difference between "opaque" and "double_sided" if
 ***Alpha Test***
 
 ```json
-   "minecraft:material_instances": { 
-
-          "*": { 
-
-            "texture": "bubble_fish", 
-
-            "render_method": "alpha_test" 
-
-          } 
-
-        } 
+   "minecraft:material_instances": {
+          "*": {
+            "texture": "bubble_fish",
+            "render_method": "alpha_test"
+          }
+        } 
 ```
 
 :::image type="content" source="Media/RenderAndLighting/ral5.png" alt-text="Screenshot of a bubble block shown with the alpha test render.":::
@@ -244,17 +211,12 @@ Alpha test doesn’t respect translucency, which affects the transparent teal pi
 ***Blend***
 
 ```json
-   "minecraft:material_instances": { 
-
-          "*": { 
-
-            "texture": "bubble_fish", 
-
-            "render_method": "blend" 
-
-          } 
-
-        } 
+   "minecraft:material_instances": {
+          "*": {
+            "texture": "bubble_fish",
+            "render_method": "blend"
+          }
+        } 
 ```
 
 :::image type="content" source="Media/RenderAndLighting/ral6.png" alt-text="Screenshot of a bubble block shown with the blend render.":::
@@ -272,19 +234,13 @@ There are also two different lighting options to explore.
 If true, shadows will be created around and underneath the block.
 
 ```json
-"minecraft:material_instances": { 
-
-          "*": { 
-
-            "texture": "bubble_fish", 
-
-            "render_method": "blend", 
-
-            "ambient_occlusion": true 
-
-          } 
-
-        } 
+"minecraft:material_instances": {
+          "*": {
+            "texture": "bubble_fish",
+            "render_method": "blend",
+            "ambient_occlusion": true
+          }
+        } 
 ```
 
 :::image type="content" source="Media/RenderAndLighting/ral7.png" alt-text="Screenshot of a bubble block shown with the ambient occlusion lighting effect.":::
@@ -296,19 +252,13 @@ Here you can see our block on the left has ambient occlusion set to 'true,' whil
 Should the material be dimmed by the side it's facing?
 
 ```json
-"minecraft:material_instances": { 
-
-          "*": { 
-
-            "texture": "bubble_fish", 
-
-            "render_method": "blend", 
-
-            "face_dimming”: true 
-
-          } 
-
-        } 
+"minecraft:material_instances": {
+          "*": {
+            "texture": "bubble_fish",
+            "render_method": "blend",
+            "face_dimming": true
+          }
+        } 
 ```
 
 Similar to our ambient occlusion example, you can see the block on the left has face dimming set to 'true,' while the right block has the option set to 'false.'

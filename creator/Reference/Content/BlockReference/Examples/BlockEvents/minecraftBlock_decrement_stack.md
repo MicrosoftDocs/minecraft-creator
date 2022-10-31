@@ -16,7 +16,5 @@ ms.prod: gaming
 ## Example
 
 ```json
-"decrement_stack":{
-
-}
+"decrement_stack":{}
 ```
