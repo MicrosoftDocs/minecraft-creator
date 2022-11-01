@@ -8,7 +8,7 @@ description: "A tutorial for creating custom blocks in Minecraft: Bedrock Editio
 
 # Custom Blocks Part 1: The Simplest Block
 
-Minecraft's behavior packs and resource packs allow you to create amazing custom content for the game. Custom blocks are a great way for creators to start adding interactive content. Through this tutorial, you will build a custom die block (don't be scared, that just means a singular dice!) that has different textures and can be placed in the world by a player.
+Minecraft's behavior packs and resource packs allow you to create amazing custom content for the game. Custom blocks are an excellent way for creators to start adding interactive content. Through this tutorial, you will build a custom die block (don't be scared, that just means a singular dice!) that has different textures and can be placed in the world by a player.
 
 :::image type="content" source="Media/AddCustomDieBlock/AddCustomBlock1.png" alt-text="Image of player tossing a custom die block into the air.":::
 
