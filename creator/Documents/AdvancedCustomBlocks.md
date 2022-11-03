@@ -248,7 +248,7 @@ Adding a sound in blocks.json is optional, but you can include it here for fun.
 
 Let's bring all those resource pieces together into one beautiful combination in the behavior pack individual custom block file.
 
-Although the sushi blocks share the same “geometry.sushi" geometry, you will create separate files for each of these rolls so they become their own blocks that display their own unique textures.
+Although the sushi blocks share the same "geometry.sushi" geometry, you will create separate files for each of these rolls so they become their own blocks that display their own unique textures.
 
 1. In ***File Explorer***, navigate to the folder ***custom_block_behavior_pack***, located in the ***development_behavior_packs*** folder.
 1. Double-click on ***blocks*** to open the folder.
@@ -352,9 +352,9 @@ There is another cool part of material_instances to show off. We can actually cr
 
           }, 
 
-          “sushi_side":{ 
+          "sushi_side":{ 
 
-             “texture": “salmon_roll" 
+             "texture": "salmon_roll" 
 
         } 
 

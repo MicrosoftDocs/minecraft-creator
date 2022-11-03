@@ -232,7 +232,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
 "
 2. Create or edit articles in your cloned repo using Visual Studio Code.
 
-    a. Edit one or more articles (add images to “images" folder, if necessary).
+    a. Edit one or more articles (add images to "images" folder, if necessary).
 
     b. **Save** changes in **Explorer**.
 

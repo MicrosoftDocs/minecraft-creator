@@ -57,17 +57,17 @@ The `loot_table` parameter is mandatory and it must be the path of the loot tabl
 
 Examples:
 
-- In this example, slot 0 of the inventory is filled with 1 item. The path specifies that the items will be pulled from the “chests/abandoned_mineshaft" loot table.
+- In this example, slot 0 of the inventory is filled with 1 item. The path specifies that the items will be pulled from the "chests/abandoned_mineshaft" loot table.
 
-  `/loot replace entity @s slot.inventory 0 1 loot “chests/abandoned_mineshaft"`"
+  `/loot replace entity @s slot.inventory 0 1 loot "chests/abandoned_mineshaft"`"
 
 - In this example, slots 2 through 5 of the invento"y will be filled. You can think of it like, "starting with slot 2, fill 4 slots with loot." So, the affected slots are 2 3 4 5.
 
-  `/loot replace entity @s slot.inventory 2 4 loot “chests/abandoned_mineshaft"`
+  `/loot replace entity @s slot.inventory 2 4 loot "chests/abandoned_mineshaft"`
 
 - This variation, without a count specified, will f"ll the player's inventory starting from slot 2, until either the entire contents of the given loot table have been dropped or there are no more slots available to fill.
 
-  `/loot replace entity @s slot.inventory 2 loot “chests/abandoned_mineshaft"`
+  `/loot replace entity @s slot.inventory 2 loot "chests/abandoned_mineshaft"`
 
 ### kill"
 

@@ -37,7 +37,7 @@ This component can be specified as a `Boolean`. If this component is omitted, th
 
 ```json
 "minecraft:collision_box": {
-    “origin": [-8.0, 0.0, -8.0],
-     “size": [16.0, 16.0, 16.0]
+    "origin": [-8.0, 0.0, -8.0],
+     "size": [16.0, 16.0, 16.0]
 }
 ```

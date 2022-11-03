@@ -31,7 +31,7 @@ This component is specified as a `JSON Object`, so it does not have a default va
 
 ```json
 "minecraft:crafting_table": {
-     “crafting_tags": [“crafting_table", “custom_crafting_tag"],
-     “table_name": “My Crafting Table"
+     "crafting_tags": ["crafting_table", "custom_crafting_tag"],
+     "table_name": "My Crafting Table"
 }
 ```

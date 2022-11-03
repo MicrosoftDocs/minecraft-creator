@@ -48,7 +48,7 @@ You will be able to expand your world even further with new materials and object
 
 ## Minecraft Live 2022 Pack
  
-> *“I am so excited about the Minecraft Entity Wizard! My students have had so many ideas and the program is easier to use than we thought it would be. In one class, they were able to modify the appearance and behavior of Minecraft mobs to fit their vision. Students created everything from mimic monsters to their family dog. I can't wait to see what they do with more time using the program."*
+> *"I am so excited about the Minecraft Entity Wizard! My students have had so many ideas and the program is easier to use than we thought it would be. In one class, they were able to modify the appearance and behavior of Minecraft mobs to fit their vision. Students created everything from mimic monsters to their family dog. I can't wait to see what they do with more time using the program."*
 > **-- Beth Bachuss, Austin High School, Minecraft Education Partner**
 
 For fun, we enlisted several individuals of various skills to create contributions for the .mcaddon pack for Bedrock Edition, linked here below. 
