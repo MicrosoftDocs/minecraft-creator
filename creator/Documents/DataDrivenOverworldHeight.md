@@ -19,7 +19,7 @@ In this tutorial, you will learn the following:
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial.
+It's recommended that the following be completed before beginning this tutorial.
 
 - [Introduction To Behavior Packs](ResourcePack.md)
 
@@ -77,7 +77,7 @@ The scope of this feature is to introduce a void generator with modifiable heigh
 
 :::image type="content" source="Media/DataDrivenOverworldHeight/DDOH_void.png" alt-text="Image of a void world":::
 
-The buildable height of the void world is constrained by the min and max bounds. In this case, we set it to (-16, 256). If you try to place a block outside of the min and max values you set in the JSON file, you get a message saying that the block couldn’t be placed.
+The buildable height of the void world is constrained by the min and max bounds. In this case, we set it to (-16, 256). If you try to place a block outside of the min and max values you set in the JSON file, you get a message saying that the block couldn't be placed.
 
 ### About those min and max values...
 
@@ -85,7 +85,7 @@ You can change the values for min and max to any multiples of 16 between -512 an
 
 ### Next, use it on an existing world
 
-In this section, we will see what happens if we apply the data pack to a “vanilla” generated world. (This can also be done on your existing custom world, but as always, we recommend you make a backup!)
+In this section, we will see what happens if we apply the data pack to a "vanilla" generated world. (This can also be done on your existing custom world, but as always, we recommend you make a backup!)
 
 1. Make a vanilla creative world with Show Coordinates active but do not apply the behavior pack to it yet.
 

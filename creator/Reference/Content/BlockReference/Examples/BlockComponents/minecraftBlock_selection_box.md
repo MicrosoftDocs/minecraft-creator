@@ -38,7 +38,7 @@ Parameters
 
 ```json
 "minecraft:selection_box": {
-     “origin”: [-8.0, 0.0, -8.0],
-     “size”: [16.0, 16.0, 16.0]
+     “origin": [-8.0, 0.0, -8.0],
+     “size": [16.0, 16.0, 16.0]
 }
 ```

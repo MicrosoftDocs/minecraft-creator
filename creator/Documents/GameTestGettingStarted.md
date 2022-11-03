@@ -31,12 +31,12 @@ Let's examine a potential use case for a GameTest. Let's say that we want to val
 
 ## Running tests within game
 
-To run tests within a game, you’ll want to create a new world or start with a copy of your existing adventure and experience.
+To run tests within a game, you'll want to create a new world or start with a copy of your existing adventure and experience.
 
 Within this GameTest world, you'll want to ensure that cheats are enabled and that the GameTest Framework experiment is turned on. If you've created GameTest Framework tests within behavior packs, you'll want to add those behavior packs in your world.
 
 >[!IMPORTANT]
->You’ll also likely want to specify some additional changes in your environment:
+>You'll also likely want to specify some additional changes in your environment:
 >
 > - Selecting a Creative game mode
 > - Selecting a Flat world

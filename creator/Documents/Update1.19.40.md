@@ -17,7 +17,7 @@ Two important block components have left experimental today: [*geometry*](../ref
 - [Custom Blocks Part 3: Render and Lighting Options](CustomBlockRenderLighting.md)
 - [Custom Blocks Part 4: Oversized Geometry](CustomBlockOversized.md)
 
-Other “Holiday Creator Feature” block components are still under development and will release out of experimental when they are ready.
+Other “Holiday Creator Feature" block components are still under development and will release out of experimental when they are ready.
 
 **Minecraft Block Wizard:**
 
@@ -29,10 +29,10 @@ Recipes can now use item tags directly instead of item names. This should make w
 
 **Improvements to /loot:**
 
- We’ve added another Java-parity overload to the /loot command. */loot replace block* allows you to directly target containers and populate slots with items from a specified loot source. This source could be a loot table that already exists in Minecraft, a custom loot table, or a loot table associated with an entity. Read up on how to use this new capability: [Loot Replace Block](LootReplaceBlock.md).
+ We've added another Java-parity overload to the /loot command. */loot replace block* allows you to directly target containers and populate slots with items from a specified loot source. This source could be a loot table that already exists in Minecraft, a custom loot table, or a loot table associated with an entity. Read up on how to use this new capability: [Loot Replace Block](LootReplaceBlock.md).
 
 **Entity Properties (*Experimental*):**
 
-Entity Properties (previously known as Actor Properties) has been a feature in experimental for a while. It’s almost ready to release so we’ve uploaded the documentation for it if you want to get an early start. For now, it's accessible by enabling the *Upcoming Creator Features* experimental flag. Documentation is here: [Introduction to Entity Properties](IntroductionToEntityProperties.md).
+Entity Properties (previously known as Actor Properties) has been a feature in experimental for a while. It's almost ready to release so we've uploaded the documentation for it if you want to get an early start. For now, it's accessible by enabling the *Upcoming Creator Features* experimental flag. Documentation is here: [Introduction to Entity Properties](IntroductionToEntityProperties.md).
 
-**APIs (*Experimental*)** The GameTest Framework experimental flag has been renamed “Beta APIs”  to better reflect the general usage of these APIs. This experimental flag is needed to access all Beta APIs, including core Minecraft APIs and GameTest APIs.
+**APIs (*Experimental*)** The GameTest Framework experimental flag has been renamed “Beta APIs"  to better reflect the general usage of these APIs. This experimental flag is needed to access all Beta APIs, including core Minecraft APIs and GameTest APIs.

@@ -19,7 +19,7 @@ In this tutorial you will learn the following:
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial.
+It's recommended that the following be completed before beginning this tutorial.
 
 - [Chunker - Advanced Mode](ChunkerAdvancedMode.md)
 
@@ -30,7 +30,7 @@ It’s recommended that the following be completed before beginning this tutoria
 |Difficulty|Difficulty of the world.|
 |Gamemode|Default game mode of the world. Players will default to this game mode on first join.|
 |Generator|Generator used for generating new chunks in this world. Setting to void will automatically create the custom layer rules to generate empty chunks.|
-|World Name|Friendly name of this world (i.e “Steve and Alex Super Survival”).|
+|World Name|Friendly name of this world (i.e "Steve and Alex Super Survival").|
 |World Seed|Seed provided to the generator to generate the world.|
 |Spawn X|X coordinate of the default spawn for players.|
 |Spawn Y|Y coordinate of the default spawn for players.|

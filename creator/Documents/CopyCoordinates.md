@@ -7,7 +7,7 @@ description: A tutorial about the copy and paste coordinates feature.
 ---
 # Introduction to Copying and Pasting Coordinates
 
-Minecraft players and creators frequently share and use coordinates through various areas of gameplay. The ability to capture and paste the players’ relative coordinates on any platform allows for faster content creation, command execution, and communication.
+Minecraft players and creators frequently share and use coordinates through various areas of gameplay. The ability to capture and paste the players' relative coordinates on any platform allows for faster content creation, command execution, and communication.
 
 The copy coordinates function focuses on commonly visited screens which often require coordinate information. The chat screen contains the majority of the changes; adding a field, dropdown selector, and copy and paste button for viewing and retrieving relative coordinates. The command block screen has a paste button that allows easy data transfer when creating control scenarios.
 
@@ -55,7 +55,7 @@ If you want to use different keys than C or X, you can change the keybindings on
 
 ## Pasting Coordinates
 
-To paste the coordinates, navigate to the area where you want to put the coordinates, such as a command in the chat window or in a command block. Then, you can either select the paste button or press the ‘Y’ button on a controller.
+To paste the coordinates, navigate to the area where you want to put the coordinates, such as a command in the chat window or in a command block. Then, you can either select the paste button or press the 'Y' button on a controller.
 
 ![Image with the paste button highlighted in a command block dialog](Media/CopyCoordinates/paste_command_block.png)
 

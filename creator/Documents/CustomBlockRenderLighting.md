@@ -10,11 +10,11 @@ description: "An Advanced Tutorial Detailing the Use of Render and Lighting Opti
 
 Okay, so we can make blocks that are different shapes, which is awesome! But what if we want more cool options? How does a stained glass block work, anyhow?
 
-Let’s explore some fun effects using the render options available through the ***material_instances*** component.
+Let's explore some fun effects using the render options available through the ***material_instances*** component.
 
 ## Prerequisites
 
-It’s recommended that the following be completed before beginning this tutorial:
+It's recommended that the following be completed before beginning this tutorial:
 
 - [Custom Blocks Part One: The Simplest Block](AddCustomDieBlock.md)
 - [Custom Blocks Part Two: Geometry and Material Instances](AdvancedCustomBlocks.md)
@@ -27,9 +27,9 @@ In this tutorial, we will focus on understanding how the different render method
 
 Bubble fish is made of several blocks.
 
-The bubble is made up of a 16x16x16 block. Then, there’s an internal fish that’s a 3x4x5 block with five 1x1x1 blocks added for a tail. The geometry is laid out in the UV map to correctly appear as we want it to in-game.
+The bubble is made up of a 16x16x16 block. Then, there's an internal fish that's a 3x4x5 block with five 1x1x1 blocks added for a tail. The geometry is laid out in the UV map to correctly appear as we want it to in-game.
 
-The bubble’s texture was created in Paint3D to be able to create opaque, translucent, and transparent pixels.
+The bubble's texture was created in Paint3D to be able to create opaque, translucent, and transparent pixels.
 
 You can create your own transparent block, or check out the [minecraft-samples](https://github.com/microsoft/minecraft-samples) page for more information.
 
@@ -38,7 +38,7 @@ You can create your own transparent block, or check out the [minecraft-samples](
 
 ***Complete Setup in Resource Pack***
 
-This isn’t our first time setting up a custom block, so this time we're giving you shortened steps. If at any point you get lost, please refer back to the previous custom block tutorials or the minecraft-samples page noted above.
+This isn't our first time setting up a custom block, so this time we're giving you shortened steps. If at any point you get lost, please refer back to the previous custom block tutorials or the minecraft-samples page noted above.
 
 1. Export the file in ***Blockbench*** just as we did for the sushi block.
 1. Add the downloaded geometry file by navigating to ***custom_block_resource_pack/models/blocks*** and copying the file in.
@@ -167,13 +167,13 @@ Now it's time to create the behavior pack custom block json file.
 } 
 ```
 
-As always, we identify the block, reference the geometry, and then include the texture. In this case, we’ll use ***bubble_fish*** on all sides.
+As always, we identify the block, reference the geometry, and then include the texture. In this case, we'll use ***bubble_fish*** on all sides.
 
 ***Render methods***
 
-Now we’re onto the good stuff! Render methods using the ***material_instances*** component. 
+Now we're onto the good stuff! Render methods using the ***material_instances*** component. 
 
-We’ll be exploring the render_methods parameter available to textures. The default is opaque, so let’s see how that renders our bubble fish block.
+We'll be exploring the render_methods parameter available to textures. The default is opaque, so let's see how that renders our bubble fish block.
 
 ***Opaque***
 
@@ -239,7 +239,7 @@ However, you can only tell the difference between "opaque" and "double_sided" if
 
 :::image type="content" source="Media/RenderAndLighting/ral5.png" alt-text="Screenshot of a bubble block shown with the alpha test render.":::
 
-Alpha test doesn’t respect translucency, which affects the transparent teal pixels of this block. But it does respect transparent and opaque pixels. This render method also disables backface culling, which is why you can see the back of the bubble through the transparent parts. At least we can see the fish!
+Alpha test doesn't respect translucency, which affects the transparent teal pixels of this block. But it does respect transparent and opaque pixels. This render method also disables backface culling, which is why you can see the back of the bubble through the transparent parts. At least we can see the fish!
 
 ***Blend***
 
@@ -304,7 +304,7 @@ Should the material be dimmed by the side it's facing?
 
             "render_method": "blend", 
 
-            "face_dimming”: true 
+            "face_dimming": true 
 
           } 
 

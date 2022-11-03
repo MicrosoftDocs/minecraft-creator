@@ -62,7 +62,7 @@ Great! Our structure is saved. Let's use a new structure block to load it into a
 
 ## Load Mode
 
-To load a structure, start by placing a structure block and put it in ‘Load’ mode.
+To load a structure, start by placing a structure block and put it in 'Load' mode.
 
 :::image type="content" source="Media/StructureBlock/load.png" alt-text="A structure block using load mode":::
 
@@ -76,7 +76,7 @@ When you click the **Import** button, a file picker opens that allows you to cho
 
 After you have chosen a file, the structure block will then fill out all of the necessary information about the structure into the structure block itself, and ready the structure to load.
 
-For this example, **mystructure:1** was chosen, and the structure block’s name and bounds were automatically updated to reflect the information in the .mcstructure file.
+For this example, **mystructure:1** was chosen, and the structure block's name and bounds were automatically updated to reflect the information in the .mcstructure file.
 
 When a structure is successfully loaded, you will see a message in the structure block UI telling you the structure has been successfully imported.
 
@@ -94,9 +94,9 @@ Here are some other important notes about importing a structure:
 
 - You can import multiple different structures into a world with the Import button.
 
-- The structure will be saved to the world once it is loaded into it by clicking the ‘Load’ button.
+- The structure will be saved to the world once it is loaded into it by clicking the 'Load' button.
 
-- You can only import structures to a world if you are the host of the world. If you are a guest in someone else’s world, the import will fail.
+- You can only import structures to a world if you are the host of the world. If you are a guest in someone else's world, the import will fail.
 
 
 ## Corner Mode

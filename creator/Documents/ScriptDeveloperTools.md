@@ -38,11 +38,11 @@ and inline reference documentation for types:
 
 ## Get insight into your code with Minecraft script debugging
 
-As you build more of a codebase in script, you’ll want to inspect your code at various points to see the state of variables and test your algorithms. In many starter projects, people start by using commands like Console.log or Chat to print various variables as they go – informally, this is called "print debugging". But for developers, there is a better way! With scripting within GameTest in Minecraft Bedrock Edition, you can use script debugging capabilities that make inspecting data in Minecraft script a snap.
+As you build more of a codebase in script, you'll want to inspect your code at various points to see the state of variables and test your algorithms. In many starter projects, people start by using commands like Console.log or Chat to print various variables as they go – informally, this is called "print debugging". But for developers, there is a better way! With scripting within GameTest in Minecraft Bedrock Edition, you can use script debugging capabilities that make inspecting data in Minecraft script a snap.
 
-To get started, you’ll want to use Visual Studio Code as your editor for the JavaScript files you’ve been developing. Steps from there include:
+To get started, you'll want to use Visual Studio Code as your editor for the JavaScript files you've been developing. Steps from there include:
 
-1. Install the Minecraft Bedrock Edition Debugger within Visual Studio Code – you’ll need to do this once
+1. Install the Minecraft Bedrock Edition Debugger within Visual Studio Code – you'll need to do this once
 1. Open Visual Studio Code within your development_behavior_packs folder
 1. Depending on your testing client - either in Bedrock Dedicated Server or within Minecraft Bedrock clients -- connect Minecraft Bedrock Edition and Visual Studio Code
 1. Set break points and add watch variables in your code as you go, and then connect Minecraft to Visual Studio Code
@@ -54,7 +54,7 @@ To get started, you’ll want to use Visual Studio Code as your editor for the J
 
 #### Step 1: Install the Minecraft Bedrock Edition Debugger within Visual Studio Code
 
-To use debugger capabilities, you’ll want to install the Minecraft Bedrock Edition Debugger within Visual Studio Code. To do this, please click on the button below to download the **Minecraft Bedrock Edition Debugger** from Visual Studio Code's marketplace.
+To use debugger capabilities, you'll want to install the Minecraft Bedrock Edition Debugger within Visual Studio Code. To do this, please click on the button below to download the **Minecraft Bedrock Edition Debugger** from Visual Studio Code's marketplace.
 
 > [!div class="nextstepaction"]
 > [Minecraft Bedrock Edition Debugger](https://aka.ms/vscodescriptdebugger)
@@ -71,13 +71,13 @@ CheckNetIsolation.exe LoopbackExempt -a -p=S-1-15-2-1958404141-86561845-17529206
 
 #### Step 3: Open Visual Studio Code within your development_behavior_packs folder
 
-In order for the debugger to know where to find your source JavaScript files, you’ll need to specifically open up a window of Visual Studio Code relative to the behavior pack where your JavaScript source files are.
+In order for the debugger to know where to find your source JavaScript files, you'll need to specifically open up a window of Visual Studio Code relative to the behavior pack where your JavaScript source files are.
 
-While you’re building out gametests, you will most likely deploy them to Minecraft’s development_behavior_packs folder. This is located within `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\development_behavior_packs`. Select the behavior pack you’d like to debug, and open up a Visual Studio Code window pointed at that folder.
+While you're building out gametests, you will most likely deploy them to Minecraft's development_behavior_packs folder. This is located within `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\development_behavior_packs`. Select the behavior pack you'd like to debug, and open up a Visual Studio Code window pointed at that folder.
 
 #### Step 4: Prepare Visual Studio Code for a connection
 
-To debug with Minecraft Bedrock Edition, you’ll need to connect from Minecraft and into Visual Studio Code. This sample assumes you are debugging on the same Windows 10 machine, but you can also debug across machines and across clients if you want to. If you are debugging across devices, you may need to open up a port within your firewall on the machine that you are running Visual Studio Code within.
+To debug with Minecraft Bedrock Edition, you'll need to connect from Minecraft and into Visual Studio Code. This sample assumes you are debugging on the same Windows 10 machine, but you can also debug across machines and across clients if you want to. If you are debugging across devices, you may need to open up a port within your firewall on the machine that you are running Visual Studio Code within.
 
 To configure the connection, add a `.vscode` subfolder to your behavior pack folder.  Within that `.vscode` folder, add the following launch.json configuration file:
 
@@ -103,7 +103,7 @@ To configure the connection, add a `.vscode` subfolder to your behavior pack fol
 
 #### Step 5. Run your Minecraft Behavior Pack
 
-Now that you’ve prepared Visual Studio Code and prepared your Behavior Pack, you’re ready to start debugging!
+Now that you've prepared Visual Studio Code and prepared your Behavior Pack, you're ready to start debugging!
 
 First, click **Start Debugging** inside of Visual Studio Code. This will put Visual Studio Code into *listen for a debugging connection* mode.
 
@@ -125,7 +125,7 @@ You should see your breakpoints get hit. You can also view local variables and a
 
 ### Debugging with Minecraft Bedrock Dedicated Server
 
-The procedure for debugging with Bedrock Dedicated Server is a little different. When debugging with Bedrock Dedicated Server, Bedrock Dedicated Server will listen for debug connections initiated from Visual Studio Code. You’ll want to start by installing the Minecraft Bedrock Edition Debugger for Visual Studio Code as described above.
+The procedure for debugging with Bedrock Dedicated Server is a little different. When debugging with Bedrock Dedicated Server, Bedrock Dedicated Server will listen for debug connections initiated from Visual Studio Code. You'll want to start by installing the Minecraft Bedrock Edition Debugger for Visual Studio Code as described above.
 
 #### Configure your Bedrock Dedicated Server
 
@@ -165,7 +165,7 @@ At the root of the behavior pack you want to debug, add a `.vscode` subfolder. A
 
 #### Run your Minecraft Behavior Pack
 
-Now that you’ve prepared Visual Studio Code and prepared your behavior pack, you’re ready to start debugging!
+Now that you've prepared Visual Studio Code and prepared your behavior pack, you're ready to start debugging!
 
 Start Minecraft and load into a world with your scripting behavior pack.
 
@@ -212,7 +212,7 @@ To run the script profiler and start a new profile session, run the following co
 /script profiler start
 ```
 
-Then, exercise your code by running through and playing Minecraft. You’ll want to go through normal gameplay or testing patterns to have your GameTest code exercised in representative ways of how players might encounter your experience.
+Then, exercise your code by running through and playing Minecraft. You'll want to go through normal gameplay or testing patterns to have your GameTest code exercised in representative ways of how players might encounter your experience.
 
 After a while – many minutes, perhaps, end your profiler session by running the following command:
 

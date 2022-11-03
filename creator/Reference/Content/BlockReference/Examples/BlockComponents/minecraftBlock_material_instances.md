@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Block Documentation - minecraft:material_instances
 
-`minecraft:material_instances` is a `JSON Object` component that specifies the material instances for a block. The object contains a map that maps face or material_instance names in a geometry file to an actual material instance. You can assign a material instance object to any of these faces: `up`, `down`, `north`, `south`, `east`, `west`, or `*`. You can also give an instance the name of your choosing such as `my_instance`, and then assign it to a face by doing `“north”: “my_instance”`.
+`minecraft:material_instances` is a `JSON Object` component that specifies the material instances for a block. The object contains a map that maps face or material_instance names in a geometry file to an actual material instance. You can assign a material instance object to any of these faces: `up`, `down`, `north`, `south`, `east`, `west`, or `*`. You can also give an instance the name of your choosing such as `my_instance`, and then assign it to a face by doing `“north": “my_instance"`.
 
 ## Default Value of the Component
 
@@ -34,8 +34,8 @@ The following are parameters of EACH material instance you provide:
 "minecraft:material_instances": {
     "*": {
         "texture":"custom_texture",
-        “ambient_occlusion”: false,
-        “face_dimming”: false,
+        “ambient_occlusion": false,
+        “face_dimming": false,
         "render_method": "alpha_test"
     }
 }
@@ -48,18 +48,18 @@ The following are parameters of EACH material instance you provide:
     "*": {
         "texture":"backupTexture"
     },
-    “custom_sides”: {
-        “texture”: “side_texture”
+    “custom_sides": {
+        “texture": “side_texture"
     }
-    “up”: {
-        “texture”: “top_texture”
+    “up": {
+        “texture": “top_texture"
     }
-    “down”: {
-        “texture”: “bottom_texture”
+    “down": {
+        “texture": “bottom_texture"
     }
-    “north”: “custom_sides”,
-    “south”: “custom_sides”,
-    “east”: “custom_sides”,
-    “west”: “custom_sides”
+    “north": “custom_sides",
+    “south": “custom_sides",
+    “east": “custom_sides",
+    “west": “custom_sides"
 }
 ```

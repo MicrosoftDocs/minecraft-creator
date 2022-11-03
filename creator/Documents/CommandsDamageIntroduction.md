@@ -49,7 +49,7 @@ The damage command can be called in two ways.
 
 ## Special use cases
 
-Because both the damage and source follow the damage rules specified in behavior packs, there are some unique use cases that may not deal damage, or may deal damage when it would be expected they shouldn’t. 
+Because both the damage and source follow the damage rules specified in behavior packs, there are some unique use cases that may not deal damage, or may deal damage when it would be expected they shouldn't. 
 
 If the affected entity has a [`damage_sensor`](../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_damage_sensor.md) component, the damage dealt by this command will activate it when applicable. The presence or absence of this behavior on vanilla mobs may make some situations unintuitive. Here are a few examples:
 
@@ -69,7 +69,7 @@ Dealing `drowning` damage does not turn zombies and husks into Drowned. This is 
 
 A glow squid will stop glowing and emit ink when damaged, but only if there was a damage source. 
 
-This logic also applies to the glow squid and squids inking behavior. If the damage applied has no source, it will not “ink”.
+This logic also applies to the glow squid and squids inking behavior. If the damage applied has no source, it will not "ink".
 
 ### Slow falling
 
