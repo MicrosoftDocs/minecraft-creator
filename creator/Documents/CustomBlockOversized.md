@@ -289,7 +289,7 @@ Create `umbrella.json` and fill it in using your knowledge from the previous tut
 - Refer back to the custom sushi block - the steps are the same!
 - Check back on your previous blocks
     - Did you forget a file?
-    - Dd you copy a file without updating a name?
+    - Did you copy a file without updating a name?
 - Double-check your work in minecraft-samples.
 
 Next up, testing!
