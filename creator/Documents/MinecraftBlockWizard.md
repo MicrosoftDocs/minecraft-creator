@@ -182,7 +182,7 @@ Want to learn more about building with Blockbench? The Blockbench Wiki has step 
 > [!div class="nextstepaction"]
 > [Blockbench Wiki](https://www.blockbench.net/wiki/)
 
-The Blockbench Quick Start guide can help lead you to the specific document that you’re looking for and is a great way to discover relevant external guides and videos.
+The Blockbench Quick Start guide can help lead you to the specific document that you're looking for and is a great way to discover relevant external guides and videos.
 
 > [!div class="nextstepaction"]
 > [Blockbench Quick Start](https://www.blockbench.net/quickstart)

@@ -34,7 +34,7 @@ By the end of this series, you will learn:
 
 ### Requirements
 
-It’s recommended that you have the following when working with ray tracing in Minecraft: Bedrock Edition:
+It's recommended that you have the following when working with ray tracing in Minecraft: Bedrock Edition:
 
 - Operating System (OS): Windows 64-bit
 - GPU: DirectX hardware ray tracing capable GPU like NVIDIA GeForce® RTX 20 Series and higher, and AMD Radeon RX 6000 Series and higher

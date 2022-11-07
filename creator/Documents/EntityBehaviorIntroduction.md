@@ -18,7 +18,7 @@ In this tutorial you will learn the following:
 
 ## Requirements
 
-It’s recommended that the following be completed before beginning this tutorial.
+It's recommended that the following be completed before beginning this tutorial.
 
 - [Introduction to Add Entity](IntroductionToAddEntity.md)
 
@@ -104,7 +104,7 @@ A good way to learn about a component and see how it's used in practice is to lo
 | `minecraft:movement`      | `value` | Sets the movement speed of the entity. 0.25 is the regular speed of most animals in Minecraft.  |
 | `minecraft:movement.basic`| [See documentation](../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_movement.basic.md)   | Allows the entity to move around on the ground.|
 | `minecraft:navigation.walk `   | [See documentation](../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_navigation.walk.md)   | Allows the entity to navigate through the world by walking. There are other types of navigation as well, like hovering.   |
-| `minecraft:is_baby ` `minecraft:is_ignited`  `minecraft:is_saddled`  `minecraft:is_sheared`  `minecraft:is_tamed`  `minecraft:is_illager_captain` | `value` | These components don’t do anything on their own, but they can be queried in animations, animation controllers, or render controllers, allowing you to control animations and other visuals from the entity behavior. |
+| `minecraft:is_baby ` `minecraft:is_ignited`  `minecraft:is_saddled`  `minecraft:is_sheared`  `minecraft:is_tamed`  `minecraft:is_illager_captain` | `value` | These components don't do anything on their own, but they can be queried in animations, animation controllers, or render controllers, allowing you to control animations and other visuals from the entity behavior. |
 | `minecraft:variant` `minecraft:mark_variant`  `minecraft:skin_id `  | `value` | These components work like the ones above, but instead of only storing an on/off state, they can store an integer value.  |
 
 ## Priorities
@@ -165,9 +165,9 @@ In this example, a component group is defined which can cause the entity to beco
         },
         "events": {
             "sample:add_baby": {  
-                "add”: {
-                 “component_groups”: { 
-                    [“baby”]
+                "add": {
+                 "component_groups": { 
+                    ["baby"]
                 }
             }
         }   
@@ -182,9 +182,9 @@ Almost all components are defined as a JSON object. Most components have options
 
 ### Removing Components
 
-When a component group is removed from an entity, the effect of the components will be removed as well. This won’t cause any problems in most cases. But in some cases, it's important to consider that components **overwrite** each other. Therefore, removing a component won’t make it go back to the previous state of that component, and it won’t use the same component from another component group or the base components. Instead, the component will be **removed completely** and reset to its default values.
+When a component group is removed from an entity, the effect of the components will be removed as well. This won't cause any problems in most cases. But in some cases, it's important to consider that components **overwrite** each other. Therefore, removing a component won't make it go back to the previous state of that component, and it won't use the same component from another component group or the base components. Instead, the component will be **removed completely** and reset to its default values.
 
-Here's an example: Let’s say you have an entity with a scale of 2 defined in the base components tag. You add a baby component group with a scale component that sets the scale to 1.5. This will correctly update the scale to 1.5. Now, you remove that component group again. Instead of going back to 2, the scale will now be reset to 1. This happens because removing the component group will also remove the scale component entirely.
+Here's an example: Let's say you have an entity with a scale of 2 defined in the base components tag. You add a baby component group with a scale component that sets the scale to 1.5. This will correctly update the scale to 1.5. Now, you remove that component group again. Instead of going back to 2, the scale will now be reset to 1. This happens because removing the component group will also remove the scale component entirely.
 
 There are a few components where this is important to consider:
 

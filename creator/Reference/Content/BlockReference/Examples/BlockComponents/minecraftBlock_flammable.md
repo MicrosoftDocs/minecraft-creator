@@ -32,7 +32,7 @@ This component can be specified as a `Boolean`. If this component is omitted, th
 
 ```json
 "minecraft:flammable": {
-     “catch_chance_modifier”: 5,
-     “destroy_chance_modifier”: 20
+     "catch_chance_modifier": 5,
+     "destroy_chance_modifier": 20
 }
 ```

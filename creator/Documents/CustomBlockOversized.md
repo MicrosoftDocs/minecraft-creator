@@ -12,7 +12,7 @@ One of the coolest features around allows for custom block geometries that are l
 
 ## Prerequisites
 
-It’s recommended that the following be completed before beginning this tutorial:
+It's recommended that the following be completed before beginning this tutorial:
 
 - [Custom Blocks Part One: The Simplest Block](AddCustomDieBlock.md)
 - [Custom Blocks Part Two: Geometry and Material Instances](AdvancedCustomBlocks.md)
@@ -29,7 +29,7 @@ It’s recommended that the following be completed before beginning this tutoria
 
 :::image type="content" source="Media/CustomOversized/Picture2.png" alt-text="An image showing a 30x30x30 pixel block construction.":::
 
-Let’s create a 30x30x30 pixel block in Blockbench. First, we have to cover some of the limitations when it comes to creating oversized custom blocks.
+Let's create a 30x30x30 pixel block in Blockbench. First, we have to cover some of the limitations when it comes to creating oversized custom blocks.
 
 ***Custom block limitations***
 
@@ -53,7 +53,7 @@ Next, we have an example of a 30x30x30 custom block that is contained in the abs
 
 ## Implement the Rest of the Giant Umbrella Block
 
-For this last tutorial, you’re on your own setting up the rest of the Giant Umbrella block. Remember, you’ve got this! Here are the steps you’ve followed each time you’ve made a custom block:
+For this last tutorial, you're on your own setting up the rest of the Giant Umbrella block. Remember, you've got this! Here are the steps you've followed each time you've made a custom block:
 
 ***Resource Pack Steps***
 

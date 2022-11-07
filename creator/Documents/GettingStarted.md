@@ -8,7 +8,7 @@ description: "A tutorial covering how to start developing Add-Ons for Minecraft:
 
 # Getting Started with Add-On Development for Bedrock Edition
 
-Add-Ons are the first step on our journey towards bringing even greater levels of customization to Minecraft: Bedrock Edition. Add-Ons allow players to transform the look of their worlds and even change the behavior of mobs. For example, you can change the blast radius of a creeper and the texture it’s wearing.
+Add-Ons are the first step on our journey towards bringing even greater levels of customization to Minecraft: Bedrock Edition. Add-Ons allow players to transform the look of their worlds and even change the behavior of mobs. For example, you can change the blast radius of a creeper and the texture it's wearing.
 
 :::image type="content" source="Media/GettingStarted/Getting-Started.jpg" alt-text="A creeper mob that has been re-textured to look like TNT":::
 

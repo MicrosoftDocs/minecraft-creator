@@ -94,7 +94,7 @@ We'll begin by creating a behavior pack for the custom block:
 
       "type": "data", 
 
-      "uuid": "<UUID>”, 
+      "uuid": "<UUID>", 
 
       "version": [ 1, 0, 0 ] 
 
@@ -234,7 +234,7 @@ This code sets the name of the block to `Die` in the game.
 
 The die block texture will need to be created and placed in the Resource Pack. When creating your own custom textures, make sure they are 16x16 for custom blocks not using custom geometries.
 
-These were made in paint and are 16x16 pixels. There are 7 images because it’s a die block (6 sides) plus red for the in-hand texture. 
+These were made in paint and are 16x16 pixels. There are 7 images because it's a die block (6 sides) plus red for the in-hand texture. 
 
 In terms of naming conventions, the image that shows the '1' side should be named 'die_1' and so on, while the in-hand image should be named 'die_red'
 
@@ -389,13 +389,13 @@ The die block will use a custom texture for four of the sides, and a different t
 
 2. Save the file.
 
-We’re specifying the ***textures*** individually by face, and we’re using the friendly name textures we assigned in terrain_textures.json. The ***textures*** field can be specified as a string, or as an object with the textures broken down into sub-texture groups. 'up', 'down', and 'side' are all sub-textures that allow a creator to define which face gets a certain texture. 'side' can also be broken down into cardinal directions ('north', 'east', 'south', and 'west'). The ***carried_textures*** and ***isotropic*** fields can be specified per-face like this as well, though not demonstrated here.
+We're specifying the ***textures*** individually by face, and we're using the friendly name textures we assigned in terrain_textures.json. The ***textures*** field can be specified as a string, or as an object with the textures broken down into sub-texture groups. 'up', 'down', and 'side' are all sub-textures that allow a creator to define which face gets a certain texture. 'side' can also be broken down into cardinal directions ('north', 'east', 'south', and 'west'). The ***carried_textures*** and ***isotropic*** fields can be specified per-face like this as well, though not demonstrated here.
 
 The ***carried_textures*** property allows you to specify the textures to use when the block is in your hand, hotbar, and inventory. We provided the ***die_red*** texture (as a string) to demonstrate this field.
 
 Because we set ***isotropic*** to 'true', the different die sides will individually rotate on their respective faces.
 
-Because this is a hard block, we’re setting the sound to ***stone*** so that this block sounds like stone when you place it down or walk over it.
+Because this is a hard block, we're setting the sound to ***stone*** so that this block sounds like stone when you place it down or walk over it.
 
 ## Test the Block
 

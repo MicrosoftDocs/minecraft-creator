@@ -74,12 +74,12 @@ This example describes a block that can only be placed on the top face of either
         "allowed_faces": ["up"],
         "block_filter": [
             {
-                “tags”: “query.any_tag(‘stone’)”
+                "tags": "query.any_tag('stone')"
             },
             {
-                “name”: “minecraft:planks”,
-                “states”: {
-                    “wood_type”: “jungle”
+                "name": "minecraft:planks",
+                "states": {
+                    "wood_type": "jungle"
                 }
             }
         ]

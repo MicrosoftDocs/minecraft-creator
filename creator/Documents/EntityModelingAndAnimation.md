@@ -18,7 +18,7 @@ In this tutorial you will learn the following:
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial.
+It's recommended that the following be completed before beginning this tutorial.
 
 - [Introduction to Add Entity](IntroductionToAddEntity.md)
 
@@ -44,7 +44,7 @@ The first thing to consider when making a model is the bone structure. Bones are
 
 ![Bone listing in Blockbench](Media/EntityModeling/bonestructure.png)
 
-A good practice is to use a root bone for each model and put everything else inside it. This means that you'll later be able to animate the entire model at once, as well as specific parts of it. Create a new group in Blockbench. “Groups” and “Bones” are essentially the same in this context.
+A good practice is to use a root bone for each model and put everything else inside it. This means that you'll later be able to animate the entire model at once, as well as specific parts of it. Create a new group in Blockbench. "Groups" and "Bones" are essentially the same in this context.
 
 You can right-click the group or press **F2** to rename it. The name for a bone should be `snake_case` (so only including lower case letters, numbers, and underscores). Each bone name has to be unique for future reference through animations.
 
@@ -68,7 +68,7 @@ When you're creating bones for moving parts of the model, always think about whi
 
 ### Templates
 
-Once the shape of the model is done, you can create a texture template. The template is a texture that has a unique space for every cube and every face of the model. You can also UV map cubes manually, but creating a template does the work for you and finds the most space-efficient layout. Remember that Minecraft doesn’t like high-resolution images.
+Once the shape of the model is done, you can create a texture template. The template is a texture that has a unique space for every cube and every face of the model. You can also UV map cubes manually, but creating a template does the work for you and finds the most space-efficient layout. Remember that Minecraft doesn't like high-resolution images.
 
 When creating a texture, enter `robot` as the texture name and check the Template option. In the template dialog, select your resolution. 16x is the default resolution of Minecraft, but you can go higher if you want.
 
@@ -85,7 +85,7 @@ There are a few tricks to use the paintbrush in Blockbench more efficiently:
 - To paint larger areas, you can increase the brush size.
 - You can paint directly in the 3D preview, or you can paint it in the UV editor on the left side.
 - If you want to create a straight line, click on the beginning of the line, then hold shift on the end of the line.
-- To make sure you don’t miss covered spots that might be revealed through animations, you can hide cubes. Just click on the eye icon in the outliner.
+- To make sure you don't miss covered spots that might be revealed through animations, you can hide cubes. Just click on the eye icon in the outliner.
 
 ## Animations
 
@@ -95,7 +95,7 @@ Animations can animate the shape of your model, but they can also play sounds an
 
 The vanilla resource pack contains generic animations that you can reference in your own pack without actually copying the files. These animations can be a good starting point for vanilla-like entities, but of course, custom animations are a lot more powerful. You can find all vanilla animations in the vanilla resource pack [here](https://aka.ms/resourcepacktemplate).
 
-In this example, we'll be using the *look at* animation. This animation will rotate the “head” bone. That’s why it's important that the head of the model uses the exact same name.
+In this example, we'll be using the *look at* animation. This animation will rotate the "head" bone. That's why it's important that the head of the model uses the exact same name.
 
 Also, the entity will need a *look at* component in its behavior file. These are the looking components from the cow. You can play around with the numbers if you like.
 
@@ -112,7 +112,7 @@ Also, the entity will need a *look at* component in its behavior file. These are
 
 Now that the behavior is set up, we'll head to the client entity file. Make sure that the format version for this file is set to 1.10.0 or higher for this to work.
 
-First, let’s link the animation. This is done in the animations section in the description tag of the entity. The second part here (`animation.common.look_at_target`) is the **global identifier** of the animation. This name is defined in the animation file and is valid anywhere in this pack or any other pack. The first part (`look_at_target`) is the **short name**. This is how we reference the animation within the entity file, and it's only valid in the scope of this entity.
+First, let's link the animation. This is done in the animations section in the description tag of the entity. The second part here (`animation.common.look_at_target`) is the **global identifier** of the animation. This name is defined in the animation file and is valid anywhere in this pack or any other pack. The first part (`look_at_target`) is the **short name**. This is how we reference the animation within the entity file, and it's only valid in the scope of this entity.
 
 ```json
             "animations": {
@@ -132,7 +132,7 @@ If you now test the robot in-game, you'll see that it will turn its head and loo
 
 ### Creating an Animation
 
-In the [add entity guide](IntroductionToAddEntity.md), we created a small driving animation for the robot. Let’s now create an animation that plays when the robot loses the ground under its feet (wheel). Before creating an animation, always check if there's a way to trigger it. We can easily trigger a lose-balance animation for this because we can just use the Molang query `query.is_on_ground` to test when the robot no longer touches the ground.
+In the [add entity guide](IntroductionToAddEntity.md), we created a small driving animation for the robot. Let's now create an animation that plays when the robot loses the ground under its feet (wheel). Before creating an animation, always check if there's a way to trigger it. We can easily trigger a lose-balance animation for this because we can just use the Molang query `query.is_on_ground` to test when the robot no longer touches the ground.
 
 ![Animation controls in Blockbench](Media/EntityModeling/animation.png)
 
@@ -163,7 +163,7 @@ Now reference and play the animation in the client entity file as we've done wit
 
 If you now spawn a robot and push it down an edge, the animation will play. But it will only play once.
 
-The reason for that is the fact that the query in the scripts section is only a blend value for the animation. It defines “how much” the animation plays, not when it plays and when it doesn't. That’s why the animation will start playing once `!query.is_on_ground` is `true/1`, but it will never stop playing. It will just fade out once the value is `false/0` again, and the next time it will fade into the animation again. It won’t play from the start again.
+The reason for that is the fact that the query in the scripts section is only a blend value for the animation. It defines "how much" the animation plays, not when it plays and when it doesn't. That's why the animation will start playing once `!query.is_on_ground` is `true/1`, but it will never stop playing. It will just fade out once the value is `false/0` again, and the next time it will fade into the animation again. It won't play from the start again.
 
 We can use this behavior quite well for static or looping animations that have no beginning and no end. But if we want to start the animation every time the query changes, we need a different approach. This is where animation controllers come in.
 
@@ -205,7 +205,7 @@ The only job of this state is to transition to the swaying state once the entity
 }
 ```
 
-Now, we’ll add the swaying state. This state will play the swaying animation and after that, reset the controller by going back to the default state. We can use the query `query.all_animations_finished` to only transition after the animation has played. This query will only return true once all animations of the current state have finished playing. In addition, we will test if the entity is on the ground again.
+Now, we'll add the swaying state. This state will play the swaying animation and after that, reset the controller by going back to the default state. We can use the query `query.all_animations_finished` to only transition after the animation has played. This query will only return true once all animations of the current state have finished playing. In addition, we will test if the entity is on the ground again.
 
 ```json
 {
@@ -248,7 +248,7 @@ Now we need to link the animation controller to our entity. Animation controller
             }
 ```
 
-If you test this in-game, the animation now works more than once. But, depending on the length of your animation, you might notice that if the robot loses the ground two times with a short interval, the second time it won’t play the animation. That’s because the first animation hasn’t finished yet, so the controller hasn’t been reset to the default state.
+If you test this in-game, the animation now works more than once. But, depending on the length of your animation, you might notice that if the robot loses the ground two times with a short interval, the second time it won't play the animation. That's because the first animation hasn't finished yet, so the controller hasn't been reset to the default state.
 
 We'll take a look at a different solution that would solve this problem. By removing the `all_animations_finished` query, we'll quit the swaying state as soon as the entity lands again. If we test this again, the animation will stop very abruptly.
 

@@ -73,7 +73,7 @@ I'll need another set of stairs but otherwise it's looking good! Now you can pla
 
 ## Creating structures using the /structure command
 
-So now we have a saved structure in a structure block. But what if we want to interact with a structure without using a structure block? Let’s get to know the /structure command. 
+So now we have a saved structure in a structure block. But what if we want to interact with a structure without using a structure block? Let's get to know the /structure command. 
 
 Let's get to know the `/structure` command.
 
