@@ -127,9 +127,9 @@ In normal mode (when the light is NOT switched on) then it will not output a sig
 
 - Noteblock: Plays a note when it receives a signal.
 
-- Redstone lamp: produces light when powered.
+- Redstone lamp: Produces light when powered.
 
-- TNT: activates when powered directly or by an adjacent powered block. Fuse time is 40 redstone ticks.
+- TNT: Activates when powered directly or by an adjacent powered block. Fuse time is 40 redstone ticks.
 
 ## What's Next?
 
