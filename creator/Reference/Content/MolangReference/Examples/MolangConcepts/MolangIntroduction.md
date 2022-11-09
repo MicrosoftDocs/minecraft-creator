@@ -48,7 +48,7 @@ All identifiers not in a scope listed below are reserved for future use.
 | Keyword| Description |
 |:-----------|:-----------|
 | `1.23`| Numerical constant value |
-| `! && < <= >= > == !=`| Logical operators |
+| `! || && < <= >= > == !=`| Logical operators |
 | `* / + -`| Basic math operators |
 | `(` `)`| Parentheses for expression term evaluation control |
 | `{` `}`| Braces for execution scope |
