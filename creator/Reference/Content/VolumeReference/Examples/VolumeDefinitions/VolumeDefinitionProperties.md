@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: v-jillheaden
 title: Volume Documentation - Properties & Descriptions
 ms.prod: gaming
 ---
