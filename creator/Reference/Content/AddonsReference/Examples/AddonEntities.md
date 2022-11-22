@@ -29,6 +29,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | bee| 378| 122 |
 | blaze| 2859| 43 |
 | boat| 90| 90 |
+| camel| 5002| 138 |
 | cat| 21323| 75 |
 | cave_spider| 265000| 40 |
 | chalkboard| 78| 78 |
