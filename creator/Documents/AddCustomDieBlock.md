@@ -389,7 +389,7 @@ The die block will use a custom texture for four of the sides, and a different t
 
 2. Save the file.
 
-We're specifying the ***textures*** individually by face, and we're using the friendly name textures we assigned in terrain_textures.json. The ***textures*** field can be specified as a string, or as an object with the textures broken down into sub-texture groups. 'up', 'down', and 'side' are all sub-textures that allow a creator to define which face gets a certain texture. 'side' can also be broken down into cardinal directions ('north', 'east', 'south', and 'west'). The ***carried_textures*** and ***isotropic*** fields can be specified per-face like this as well, though not demonstrated here.
+We're specifying the ***textures*** individually by face, and we're using the friendly name textures we assigned in terrain_textures.json. The ***textures*** field can be specified as a string, or as an object with the textures broken down into sub-texture groups. 'up', 'down', and 'side' are all sub-textures that allow a creator to define which face gets a certain texture. 'side' can also be broken down into cardinal directions ('north', 'east', 'south', and 'west'). The ***carried_textures*** and ***isotropic*** fields can be specified per face like this as well, though not demonstrated here.
 
 The ***carried_textures*** property allows you to specify the textures to use when the block is in your hand, hotbar, and inventory. We provided the ***die_red*** texture (as a string) to demonstrate this field.
 
