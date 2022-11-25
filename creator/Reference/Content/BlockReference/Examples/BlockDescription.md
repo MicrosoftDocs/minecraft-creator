@@ -28,22 +28,24 @@ The block `"description"` is a section inside the `"minecraft:block"` section of
 
 ```json
 {
-  "format_version": "1.19.40",
-  "minecraft:block": {
-    "description": {
-      "identifier": "design:lavenderstone"
-    },
-    "components": {
-      "minecraft:loot": "loot_tables/chests/simple_dungeon.json",
-      "minecraft:destroy_time": 4.0,
-      "minecraft:friction": 0.6,
-      "minecraft:map_color": "#00ff00",
-      "minecraft:flammable": {
-        "flame_odds": 50,
-        "burn_odds": 0
-        },
-      "minecraft:light_emission": 1
-    }
-  }
+	"format_version": "1.19.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "design:lavenderstone"
+		},
+		"components": {
+			"minecraft:loot": "loot_tables/chests/simple_dungeon.json",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 4
+			},
+			"minecraft:friction": 0.4,
+			"minecraft:map_color": "#00ff00",
+			"minecraft:flammable": {
+				"catch_chance_modifier": 50,
+				"destroy_chance_modifier": 0
+			},
+			"minecraft:light_emission": 15
+		}
+	}
 }
 ```
