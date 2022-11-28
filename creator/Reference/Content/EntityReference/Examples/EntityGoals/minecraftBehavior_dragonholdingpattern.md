@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.dragonholdingpattern":{
-    "priority": 3,
+    "priority": 3
 }
 ```
 
@@ -30,9 +30,11 @@ ms.prod: gaming
 
 ### ender_dragon
 
+```json
 "minecraft:behavior.dragonholdingpattern": {
-          "priority": 3
-        },
+     "priority": 3
+}
+```
 
 ## Vanilla entities using `minecraft:behavior.dragonholdingpattern`
 

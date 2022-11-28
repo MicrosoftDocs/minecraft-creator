@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.take_flower":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 
@@ -32,8 +32,8 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.take_flower":{
-          "priority": 9
-        }
+    "priority": 9
+}
 ```
 
 ## Vanilla entities using `minecraft:behavior.take_flower`

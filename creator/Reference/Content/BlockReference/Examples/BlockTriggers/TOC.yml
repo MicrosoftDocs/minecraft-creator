@@ -1,5 +1,5 @@
  - name: Block Trigger List
-   href: ../BlockTriggerList.md
+   href: BlockTriggerList.md
  - name: on_fall_on
    href: minecraftBlock_on_fall_on.md
  - name: on_interact

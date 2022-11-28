@@ -43,7 +43,7 @@ Remapping allows you to move data to a different dimension or drop the data alto
 
 1. Select the tab of the dimension you want to modify.
 2. Select output dimension or none.
-3. Convert the world once you’ve finished with your conversion settings
+3. Convert the world once you've finished with your conversion settings
 
 Selecting **none** will exclude this dimension from the output world, wiping all data. For example, this can be used to clear The Nether to regenerate chunks with the new 1.16 nether biomes. A tutorial for clearing the Nether can be found [here](ChunkerTheNether.md).
 
@@ -64,14 +64,14 @@ To prune a chunk, follow these instructions:
 ![Coordinates at the bottom-left of the world preview in Chunker](Media/Chunker/pruningcoordinates.png)
 3. After you have input the coordinates, the world preview screen will visually show the region you have selected. <br/>
 ![Preview of pruning in Chunker](Media/Chunker/pruningpreview.png)
-Convert the world once you’ve finished with your conversion settings.
+Convert the world once you've finished with your conversion settings.
 
 > [!NOTE]
 > Chunker expects chunk coordinates. The easiest way to locate chunk coordinates is by using the Chunker world preview. Chunk coordinates are in the bottom left of the preview in brackets.
 
 ## Converter Settings
 
-Converter settings allow you to enable/disable features of Chunker. It’s recommended to leave these as the default values.
+Converter settings allow you to enable/disable features of Chunker. It's recommended to leave these as the default values.
 
 |Setting|Description|
 |:---|:---|

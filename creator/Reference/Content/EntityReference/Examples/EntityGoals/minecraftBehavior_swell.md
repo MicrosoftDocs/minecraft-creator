@@ -33,10 +33,10 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.swell": {
-        "start_distance": 2.5,
-        "stop_distance": 6.0,
-        "priority": 2
-      }
+    "start_distance": 2.5,
+    "stop_distance": 6.0,
+    "priority": 2
+}
 ```
 
 ## Vanilla entities using `minecraft:behavior.swell`

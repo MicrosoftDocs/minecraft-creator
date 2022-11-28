@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.squid_move_away_from_ground":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 
@@ -32,9 +32,8 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.squid_move_away_from_ground": {
-        "priority": 1
-      },
-
+    "priority": 1
+},
 ```
 
 ## Vanilla entities using `minecraft:behavior.squid_move_away_from_ground`

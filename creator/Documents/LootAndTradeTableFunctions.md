@@ -18,7 +18,7 @@ In this tutorial you will learn the following:
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial.
+It's recommended that the following be completed before beginning this tutorial.
 
 - [Introduction to Loot Tables](IntroductionToLootTables.md)
 
@@ -46,7 +46,7 @@ This function enchants a book using the algorithm for enchanting items sold by v
                 }
 ```
 
-At this time, defining these parameters won’t affect the enchantment received. Currently, the default values above are hard-coded. In the future, you’ll be able to tweak these values to help narrow down what enchantments and enchantment levels this function results in.
+At this time, defining these parameters won't affect the enchantment received. Currently, the default values above are hard-coded. In the future, you'll be able to tweak these values to help narrow down what enchantments and enchantment levels this function results in.
 
 ### enchant_random_gear
 
@@ -255,7 +255,7 @@ You can also inherit the entity ID of the entity that's associated with that loo
                 }
 ```
 
-Be aware that if you use `set_actor_id` on a chest’s loot table and omit the `id` value, it will generate the spawn egg of whatever opens the chest (the player). A player spawn egg will spawn a “player” that just stands around and throws up Molang errors (since it’s trying to use the player’s behavior file as well as the player’s controllers). If you break a chest containing a loot table that uses an inherited id from `set_actor_id`, it drops a default spawn egg that doesn’t spawn anything.
+Be aware that if you use `set_actor_id` on a chest's loot table and omit the `id` value, it will generate the spawn egg of whatever opens the chest (the player). A player spawn egg will spawn a "player" that just stands around and throws up Molang errors (since it's trying to use the player's behavior file as well as the player's controllers). If you break a chest containing a loot table that uses an inherited id from `set_actor_id`, it drops a default spawn egg that doesn't spawn anything.
 
 ### set_banner_details
 
@@ -317,7 +317,7 @@ You can also use `rawtext` to localize the content of the book. When using `rawt
                 }
 ```
 
-Be aware that you can only use `rawtext` on the book’s contents (`pages`) at the timing of writing this — `rawtext` **does not** work for the `author` or `title` tags.
+Be aware that you can only use `rawtext` on the book's contents (`pages`) at the timing of writing this — `rawtext` **does not** work for the `author` or `title` tags.
 
 ### set_count
 
@@ -414,7 +414,7 @@ Sets the data value of a block or item to an exact id. The following example wil
 
 ### set_data_from_color_index
 
-Inherits the data value of the resulting item from the associated entity’s color index. An in-game example would be a pink sheep dropping pink wool on death. If the associated entity doesn’t have a color index set (or it’s used inside a chest’s loot table), it will always result in a data value of 0.
+Inherits the data value of the resulting item from the associated entity's color index. An in-game example would be a pink sheep dropping pink wool on death. If the associated entity doesn't have a color index set (or it's used inside a chest's loot table), it will always result in a data value of 0.
 
 ```json
                 {
@@ -431,7 +431,7 @@ Inherits the data value of the resulting item from the associated entity’s col
 
 ### set_lore
 
-This function allows you to set the lore of an item. Each line within the lore object represents a single line of text. There’s currently no support for `rawtext`.
+This function allows you to set the lore of an item. Each line within the lore object represents a single line of text. There's currently no support for `rawtext`.
 
 ```json
                 {
@@ -453,7 +453,7 @@ This function allows you to set the lore of an item. Each line within the lore o
 
 ### set_name
 
-This function allows you to set the name of an item. There’s currently no support for `rawtext`.
+This function allows you to set the name of an item. There's currently no support for `rawtext`.
 
 ```json
                 {
@@ -471,13 +471,13 @@ This function allows you to set the name of an item. There’s currently no supp
 
 ## Miscellaneous
 
-The following contains functions that don’t fit anywhere else.
+The following contains functions that don't fit anywhere else.
 
 ### fill_container
 
 This function allows you to define the loot table for a chest. When the item is generated and the player places it, it will be full of the contents defined inside the referenced loot table.
 
-Loot tables for chests are generated at the time of opening or breaking. Consider it a Schrödinger's box. The content of the chest isn’t decided until you look inside.
+Loot tables for chests are generated at the time of opening or breaking. Consider it a Schrödinger's box. The content of the chest isn't decided until you look inside.
 
 ```json
                   {
@@ -492,7 +492,7 @@ Loot tables for chests are generated at the time of opening or breaking. Conside
                   }
 ```
 
-It’s advisable to always use `set_name` to give the chest a name when using `fill_container`. If you don’t, the resulting chest won’t look any different in the player’s inventory than a normal empty chest would.
+It's advisable to always use `set_name` to give the chest a name when using `fill_container`. If you don't, the resulting chest won't look any different in the player's inventory than a normal empty chest would.
 
 ### exploration_map
 

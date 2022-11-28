@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.sniff
 ms.prod: gaming
@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.sniff
 
-`minecraft:behavior.sniff` [EXPERIMENTAL BEHAVIOR] The entity detects the nearest player within "sniffing_radius" and updates its "minecraft:suspect_tracking" component state.
+`minecraft:behavior.sniff` allows this entity to detect the nearest player within "sniffing_radius" and update its `"minecraft:suspect_tracking"` component state.
 
 ## Parameters
 
@@ -32,7 +32,7 @@ ms.prod: gaming
   "suspicion_radius_horizontal" : 6.0,
   "suspicion_radius_vertical": 20.0,
   "cooldown_range": [ 5.0, 10.0 ]
-},
+}
 ```
 
 ## Vanilla entities using `sniff`

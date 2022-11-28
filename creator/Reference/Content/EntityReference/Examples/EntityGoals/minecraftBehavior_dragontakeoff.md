@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.dragontakeoff":{
-    "priority": 1,
+    "priority": 1
 }
 ```
 
@@ -32,10 +32,9 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.dragontakeoff": {
-          "priority": 0
-    },
-
-``````
+    "priority": 0
+}
+```
 
 ## Vanilla entities using `minecraft:behavior.dragontakeoff`
 

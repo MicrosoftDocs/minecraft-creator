@@ -52,7 +52,7 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.owner_hurt_target": {
           "priority": 2
-        },
+        }
 ```
 
 ## Vanilla entities using `minecraft:behavior.owner_hurt_target`

@@ -1,13 +1,13 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.dig
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.dig
 
-`minecraft:behavior.dig` [EXPERIMENTAL BEHAVIOR] activates the "DIGGING" actor flag during the specified duration. Currently only Warden can use the dig goal.
+`minecraft:behavior.dig` Allows this entity to dig into the ground before despawning.
 
 ## Parameters
 
@@ -35,7 +35,7 @@ ms.prod: gaming
     "vibration_is_disturbance": true,
     "suspicion_is_disturbance": true,
     "digs_in_daylight": false
-},
+}
 ```
 
 ## Vanilla entities using `dig`

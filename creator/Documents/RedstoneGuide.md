@@ -18,7 +18,7 @@ In this tutorial you will learn the following:
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial:
+It's recommended that the following be completed before beginning this tutorial:
 
 - [Introduction to Commands](CommandsIntroduction.md)
 
@@ -115,7 +115,7 @@ In normal mode (when the light is NOT switched on) then it will not output a sig
 
 - Observer: Has two sides - observer face and output face. When the face detects a block update, it emits a signal out of the back.
 
-- Daylight sensor: produces different levels of power depending on the level of light it detects. It can be inverted to emit light when it detects darkness. To invert it, place one and left-click on it. It will turn blue.
+- Daylight sensor: Produces different levels of power depending on the level of light it detects. It can be inverted to emit light when it detects darkness. To invert it, place one and right-click on it. It will turn blue.
 
 - Dropper: Spits out a random item from its inventory when powered directly or powered by an adjacent block. For example, if loaded with a horse spawn egg, when activated, it drops a horse spawn egg. If loaded with arrows, it spits out an arrow.
 
@@ -123,13 +123,13 @@ In normal mode (when the light is NOT switched on) then it will not output a sig
 
 - Observer: When it detects block updates with its face, it sends a one-tick pulse through the red spot on the back. Observers will emit a pulse when they are moved by pistons.
 
-- Trapped chest: activates when opened. Signal varies according to how many players are viewing the contents.
+- Trapped chest: Activates when opened. Signal varies according to how many players are viewing the contents.
 
-- Noteblock: plays a note when it receives a signal.
+- Noteblock: Plays a note when it receives a signal.
 
-- Redstone lamp: produces light when powered.
+- Redstone lamp: Produces light when powered.
 
-- TNT: activates when powered directly or by an adjacent powered block. Fuse time is 40 redstone ticks.
+- TNT: Activates when powered directly or by an adjacent powered block. Fuse time is 40 redstone ticks.
 
 ## What's Next?
 

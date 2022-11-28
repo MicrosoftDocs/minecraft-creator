@@ -23,7 +23,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.offer_flower":{
-    "priority": 4,
+    "priority": 4
 }
 ```
 

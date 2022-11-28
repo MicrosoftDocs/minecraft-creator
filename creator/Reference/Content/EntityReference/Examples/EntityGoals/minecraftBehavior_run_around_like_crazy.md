@@ -21,7 +21,7 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.run_around_like_crazy":{
     "priority": 1,
-    "speed_multiplier": 1.5,
+    "speed_multiplier": 1.5
 }
 ```
 

@@ -37,15 +37,15 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.snacking": {
-          "priority": 3,
-          "snacking_cooldown": 17.5,
-          "snacking_cooldown_min": 10,
-          "snacking_stop_chance": 0.0011,
-          "items": [
-            "bamboo",
-            "cake"
-          ]
-        }
+    "priority": 3,
+    "snacking_cooldown": 17.5,
+    "snacking_cooldown_min": 10,
+    "snacking_stop_chance": 0.0011,
+    "items": [
+        "bamboo",
+        "cake"
+        ]
+}
 ```
 
 ## Vanilla entities using `minecraft:behavior.snacking`

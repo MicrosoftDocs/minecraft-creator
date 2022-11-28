@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.wither_random_attack_pos_goal":{
-    "priority": 3,
+    "priority": 3
 }
 ```
 

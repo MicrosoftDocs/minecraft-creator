@@ -6,6 +6,8 @@
   href: minecraftComponent_admire_item.md
 - name: ageable
   href: minecraftComponent_ageable.md
+- name: anger_level
+  href: minecraftComponent_anger_level.md
 - name: angry
   href: minecraftComponent_angry.md
 - name: annotation_break_door
@@ -18,6 +20,8 @@
   href: minecraftComponent_attack.md
 - name: attack_cooldown
   href: minecraftComponent_attack_cooldown.md
+- name: attack_damage
+  href: minecraftComponent_attack_damage.md
 - name: balloonable
   href: minecraftComponent_balloonable.md
 - name: barter
@@ -54,12 +58,12 @@
   href: minecraftComponent_damage_over_time.md
 - name: damage_sensor
   href: minecraftComponent_damage_sensor.md
-- name: dweller
-  href: minecraftComponent_dweller.md
 - name: despawn
   href: minecraftComponent_despawn.md
 - name: drying_out_timer
   href: minecraftComponent_drying_out_timer.md
+- name: dweller
+  href: minecraftComponent_dweller.md
 - name: economy_trade_table
   href: minecraftComponent_economy_trade_table.md
 - name: entity_sensor
@@ -78,6 +82,10 @@
   href: minecraftComponent_explode.md
 - name: flocking
   href: minecraftComponent_flocking.md
+- name: follow_range
+  href: minecraftComponent_follow_range.md
+- name: game_event_movement_tracking
+  href: minecraftComponent_game_event_movement_tracking.md
 - name: genetics
   href: minecraftComponent_genetics.md
 - name: giveable
@@ -88,10 +96,16 @@
   href: minecraftComponent_grows_crop.md
 - name: healable
   href: minecraftComponent_healable.md
+- name: health
+  href: minecraftComponent_health.md
+- name: heartbeat
+  href: minecraftComponent_heartbeat.md
 - name: hide
   href: minecraftComponent_hide.md
 - name: home
   href: minecraftComponent_home.md
+- name: horse.jump_strength
+  href: minecraftComponent_horse.jump_strength.md
 - name: hurt_on_condition
   href: minecraftComponent_hurt_on_condition.md
 - name: inside_block_notifier
@@ -110,6 +124,10 @@
   href: minecraftComponent_jump.dynamic.md
 - name: jump.static
   href: minecraftComponent_jump.static.md
+- name: knockback_resistance
+  href: minecraftComponent_knockback_resistance.md
+- name: lava_movement
+  href: minecraftComponent_lava_movement.md
 - name: leashable
   href: minecraftComponent_leashable.md
 - name: lookat
@@ -162,6 +180,14 @@
   href: minecraftComponent_persistent.md
 - name: physics
   href: minecraftComponent_physics.md
+- name: player.exhaustion
+  href: minecraftComponent_player.exhaustion.md
+- name: player.experience
+  href: minecraftComponent_player.experience.md
+- name: player.level
+  href: minecraftComponent_player.level.md
+- name: player.saturation
+  href: minecraftComponent_player.saturation.md
 - name: preferred_path
   href: minecraftComponent_preferred_path.md
 - name: projectile
@@ -218,5 +244,7 @@
   href: minecraftComponent_trust.md
 - name: trusting
   href: minecraftComponent_trusting.md
+- name: underwater_movement
+  href: minecraftComponent_underwater_movement.md
 - name: water_movement
   href: minecraftComponent_water_movement.md

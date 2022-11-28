@@ -18,7 +18,7 @@ In this tutorial you will learn the following:
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial.
+It's recommended that the following be completed before beginning this tutorial.
 
 - [Introduction to Commands](CommandsIntroduction.md)
 - [Getting Started with Command Blocks](CommandBlocks.md)
@@ -41,7 +41,7 @@ Whenever you want to know the usage and all of the syntaxes of a command, you ca
 
 ## /gamerule
 
-This `/gamerule` command changes specific gameplay aspects and has options helpful for development. There are a large number of gamerules, which can be listed using the chat’s auto-complete feature.
+This `/gamerule` command changes specific gameplay aspects and has options helpful for development. There are a large number of gamerules, which can be listed using the chat's auto-complete feature.
 
 ```
 /gamerule <rule: BoolGameRule> [value: Boolean]
@@ -204,7 +204,7 @@ This command teleports Steve to coordinates [50, 63, 50] and makes sure there ar
 
 ## /give, /clear, /replaceitem
 
-This trio of commands manipulate the player’s inventory, though `/replaceitem` can also modify non-player entity inventories and blocks with inventories. The `/give` command can provide items, the `/clear` command can remove items, and the `/replaceitem` command can place items in specific slots in the inventory.
+This trio of commands manipulate the player's inventory, though `/replaceitem` can also modify non-player entity inventories and blocks with inventories. The `/give` command can provide items, the `/clear` command can remove items, and the `/replaceitem` command can place items in specific slots in the inventory.
 
 ## /setblock, /fill, /clone
 
@@ -279,7 +279,7 @@ The primary function of the `/execute` command is to modify the executor and exe
 /execute <origin: target> <position: x y z> detect <detectPos: x y z> <block: Block> <data: int> <command: command>
 ```
 
-For example, to detect if there’s a specific block beneath the player and run a command as a result, the "detect" argument can be used instead of having a nested `/testforblock` command.
+For example, to detect if there's a specific block beneath the player and run a command as a result, the "detect" argument can be used instead of having a nested `/testforblock` command.
 
 ```
 /execute @a ~ ~ ~ detect ~ ~-1 ~ grass 0 say Player is standing on top of grass.

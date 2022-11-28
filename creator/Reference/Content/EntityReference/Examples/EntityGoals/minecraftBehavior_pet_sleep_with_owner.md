@@ -30,7 +30,7 @@ ms.prod: gaming
     "priority": 2,
     "search_range": 8,
     "cooldown_time":10,
-    "speed_multiplier":3,
+    "speed_multiplier":3
 }
 ```
 
@@ -45,8 +45,7 @@ ms.prod: gaming
           "search_radius": 10,
           "search_height": 10,
           "goal_radius": 1.0
-        },
-
+        }
 ```
 
 ## Vanilla entities using `minecraft:behavior.pet_sleep_with_owner`

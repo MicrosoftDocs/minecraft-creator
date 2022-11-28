@@ -1,5 +1,5 @@
 ---
-author: v-jillheaden
+author: mammerla
 ms.author: v-jillheaden
 title: Features Documentation - minecraft:geode_feature
 ms.prod: gaming

@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.stay_near_noteblock
 ms.prod: gaming
@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.stay_near_noteblock
 
-`minecraft:behavior.stay_near_noteblock` [EXPERIMENTAL BEHAVIOR] The entity will attempt to stay near a recently played noteblock.
+`minecraft:behavior.stay_near_noteblock` allows the entity to stay near a recently played noteblock.
 
 ## Parameters
 

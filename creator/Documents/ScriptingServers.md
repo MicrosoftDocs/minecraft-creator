@@ -8,13 +8,13 @@ description: Use TypeScript to customize and configure your dedicated server exp
 
 # Using script to add new capabilities to dedicated servers
 
-With version 1.19.0, Bedrock Dedicated Server gains new capabilities in conjunction with experimental GameTest Framework JavaScript. It is now much easier to build deeply customized Bedrock Dedicated Server gameplay experiences by connecting your server to external services and sites. For example, you could use this functionality to connect a dedicated server to back-end infrastructure that powers a website-based leaderboard. Or you can build an advanced administrative console to give server administrators to more flexibility when managing players in a game.
+With version 1.19.0, Bedrock Dedicated Server gains new capabilities in conjunction with experimental JavaScript Beta APIs. It is now much easier to build deeply customized Bedrock Dedicated Server gameplay experiences by connecting your server to external services and sites. For example, you could use this functionality to connect a dedicated server to back-end infrastructure that powers a website-based leaderboard. Or you can build an advanced administrative console to give server administrators to more flexibility when managing players in a game.
 
 In this article, we'll cover the foundation of everything you need to know about building extended experiences with script + dedicated server.
 
 But first! A few warnings and notices on this topic before we get started:
 
-* ***Important:*** These APIs are experimental as part of GameTest Framework. As with all experiments, you may see changes or even removals of functionality in updated Minecraft versions. Check the [the Minecraft changelog](https://aka.ms/mcchanges) for details on any changes to GameTest Framework APIs.
+* ***Important:*** These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes or even removals of functionality in updated Minecraft versions. Check the [the Minecraft changelog](https://aka.ms/mcchanges) for details on any changes to Beta APIs.
 * We'll cover a few more advanced topics in this article, so you should  be familiar with the [basics of GameTest Framework](GameTestGettingStarted.md) and general Minecraft customization concepts.
 * Make sure you back up worlds and files before you get deep into modifying and copying worlds around.
 * These tips work only in conjunction with Bedrock Dedicated Server, available at [Bedrock Server Download](https://www.minecraft.net/download/server/bedrock), that you can host on your own. This article does not apply to gameplay servers provided as part of Minecraft Realms.
@@ -81,7 +81,7 @@ Here are the steps to creating your Minecraft world:
 
 1. Use the Minecraft Client singleplayer to create and customize the world in the way that you like it. You can use whatever general Minecraft builder tips and techniques you'd like to build the world of your dreams.
 1. Enable the GameTest Framework experiment in that world.
-1. Within this world, you will also need to add your behavior packs that use script. For building, those behavior packs should not use dedicated-server only modules like "mojang-net" or "mojang-minecraft-server-admin"
+1. Within this world, you will also need to add your behavior packs that use script. For building, those behavior packs should not use dedicated-server only modules like "@minecraft/server-net" or "@minecraft/server-admin"
 1. Then, when you're ready to use that world on a dedicated server, copy it from your Minecraft client's Worlds folder:
 `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\minecraftWorlds`
 1. Each subfolder is a world. Usually the last world you played in will have the most updated "Date modified." Unfortunately, world subfolders don't have very friendly names (typically, something like "fyqEYmKXAwA=") to help you figure out which world is which.
@@ -103,7 +103,7 @@ Within the "default" folder is a "permissions.json" file, which controls the def
 
 ![Default allowed modules for a server](Media/ScriptingServers/allowedmodules.png)
 
-Note that the [mojang-net](../ScriptAPI/mojang-net/mojang-net.md) module is not enabled by default for scripting maps.
+Note that the [@minecraft/server-net](../ScriptAPI/minecraft/server-net/minecraft-server-net.md) module is not enabled by default for scripting maps.
 
 ## Enable differentiated module permissions
 
@@ -126,7 +126,7 @@ You can set different permissions for different references to scripts that are e
 
 * Next, to customize the set of built in modules your behavior pack's script module can access, you can place a "permissions.json" file within that folder. (Yes, the UUID folder name is a bit clunky, but we hope to improve this in a future update). We strongly recommend keeping `<Bedrock Dedicated Server>/config/default/permissions.json` basic and minimal, while extending additional module permissions on an individual basis.
 
-![Extending permissions by adding mojang-net](Media/ScriptingServers/permissions2.png)
+![Extending permissions by adding @minecraft/minecraft-server-net](Media/ScriptingServers/permissions2.png)
 
 ## Variables and Secrets
 
@@ -139,15 +139,15 @@ json" file within either your `<Bedrock Dedicated Server>config/default/` folder
 }
 ```
 
-Within your script, you can use the 'variables.get' method to retrieve that property using the [mojang-minecraft-server-admin](../ScriptAPI/mojang-minecraft-server-admin/mojang-minecraft-server-admin.md) module:
+Within your script, you can use the 'variables.get' method to retrieve that property using the [@minecraft/server-admin](../ScriptAPI/minecraft/server-admin/minecraft-server-admin.md) module:
 
 ```javascript
 const spawnRate = variables.get("mobSpawnRate");
 ```
 
 There is a similar system for storing "secrets" – that is, more sensitive data that you want to ensure can be used only in very constrained ways. For example, secrets could be data like authentication tokens that you wish to pass to a web service.
-`variables.json`, `secrets.json` can be placed by a server administrator within either your `<Bedrock Dedicated Server>config/default/` folder or within a `<Bedrock Dedicated Server>config/<module UUID>/` folder. What makes `secrets.json` a little different is that it is not designed to let you get at the value of the secret in JavaScript – at least not directly. Instead, it returns an opaque ServerSecrets object that can be used in certain methods, like the "mojang-net" module's HttpHeader object constructor.
-See this sample in the [ServerSecrets object for an example usage](../ScriptAPI/mojang-minecraft-server-admin/ServerSecrets.md).
+`variables.json`, `secrets.json` can be placed by a server administrator within either your `<Bedrock Dedicated Server>config/default/` folder or within a `<Bedrock Dedicated Server>config/<module UUID>/` folder. What makes `secrets.json` a little different is that it is not designed to let you get at the value of the secret in JavaScript – at least not directly. Instead, it returns an opaque ServerSecrets object that can be used in certain methods, like the "@minecraft/server-net" module's HttpHeader object constructor.
+See this sample in the [ServerSecrets object for an example usage](../ScriptAPI/minecraft/server-admin/ServerSecrets.md).
 
 ## Building a process for working with your server
 
@@ -172,7 +172,7 @@ const dedicatedServerPath = "C:/mc/bds/1.19.0/";
 Now you have all the ingredients you need to build powerful dedicated servers that can connect to external web services to give you:
 
 * scripting via the GameTest Framework experiment
-* connections to external web services via the "mojang-net" module
+* connections to external web services via the "@minecraft/server-net" module
 * configurations for your dedicated server to enable additional permissions and server configuration variables
 * build processes for making working with your dedicated server a snap
 
