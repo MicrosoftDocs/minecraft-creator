@@ -1,9 +1,9 @@
 ---
 author: mammerla
-ms.author: JimSeaman42
+ms.author: v-jimseaman
 title: Minecraft File Extensions
 ms.prod: gaming
-description: An overview of the different file extensions unique to Minecraft: Bedrock Edition
+description: An overview of different file extensions
 ---
 
 # Minecraft File Extensions
