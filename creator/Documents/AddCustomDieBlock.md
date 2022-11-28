@@ -225,7 +225,7 @@ Let's add the name of the block using a ***.lang*** file. '.lang' files are used
 1. Open the ***texts*** folder.
 1. Inside the ***texts*** folder, create a new text document and name it ***en_US.lang***.
 1. Open ***en_US.lang*** in a text editor.
-1. Copy and paste the following into ***en_US.lang***: `title.demo:die.name=Die`
+1. Copy and paste the following into ***en_US.lang***: `tile.demo:die.name=Die`
 1. Save and close the file.
 
 This code sets the name of the block to `Die` in the game.
@@ -234,7 +234,7 @@ This code sets the name of the block to `Die` in the game.
 
 The die block texture will need to be created and placed in the Resource Pack. When creating your own custom textures, make sure they are 16x16 for custom blocks not using custom geometries.
 
-These were made in paint and are 16x16 pixels. There are 7 images because it's a die block (6 sides) plus red for the in-hand texture. 
+These were made in paint and are 16x16 pixels. There are 7 images because it's a die block (6 sides) plus red for the in-hand texture.
 
 In terms of naming conventions, the image that shows the '1' side should be named 'die_1' and so on, while the in-hand image should be named 'die_red'
 
@@ -385,6 +385,7 @@ The die block will use a custom texture for four of the sides, and a different t
         "sound": "stone" 
 
 } 
+}
 ```
 
 2. Save the file.
