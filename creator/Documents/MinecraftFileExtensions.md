@@ -35,4 +35,4 @@ Contains a Minecraft structure such as a building or natural feature, saved usin
 A zip archive containing the template of a world used in Minecraft.
 
 ## .mcworld
-A zip archive that contains all the files needed to load a Minecraft: Bedrock Edition or Minecraft: Education Edition world, e.g. .dat and .txt files.
+A zip archive that contains all the files needed to load a Minecraft: Bedrock Edition or Minecraft: Education Edition world, for example .dat and .txt files.
