@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.door_interact":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 

@@ -43,8 +43,7 @@ ms.prod: gaming
         "speed_multiplier": 1.0,
         "interval": 80,
         "avoid_surface": false
-      },
-
+      }
 ```
 
 ## Vanilla entities using `minecraft:behavior.random_swim`

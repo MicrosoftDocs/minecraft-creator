@@ -12,13 +12,13 @@ The Minecraft Block Wizard is a plugin for Blockbench. It allows you to add a cu
 
 After you have created a custom block with the Wizard, you can use Blockbench to design a custom 3D model for it.
 
-The plugin works similarly to the [Minecraft Entity Wizard](https://www.minecraft.net/en-us/creator/article/introduction-minecraft-entity-wizard-blockbench) you can use to create custom entities.
+The plugin works similarly to the [Minecraft Entity Wizard](https://www.minecraft.net/en-us/creator/article/introduction-minecraft-entity-wizard-blockbench), which you can use to create custom entities.
 
-### [Video Description Header]
+## Demonstration: How to Make a Custom Block
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/<videoID>]
+> [!VIDEO https://www.youtube.com/embed/TWY70T7YANE]
 
-Description of the video...
+This video shows how to make a custom block with Minecraft Block Wizard.
 
 --------
 
@@ -95,9 +95,17 @@ On this page, you can change multiple properties related to the design and sound
 
 :::image type="content" source="Media/MinecraftBlockWizard/design.png" alt-text="Minecraft Block Wizard showing where Creators can set the design properties.":::
 
+- **Use current model**: This option appears when you already have a bedrock block model currently opened in Blockbench. You can enable the checkbox to export the current model, instead of using the model of the preset block that you selected.
+
 - **Light Emission**: Use this slider to turn your block into a light source. The brightest possible value is 15, which is the equivalent of glow stone.
 
 - **Light Dampening**: Set how much the block dampens the light that passes through it. A mostly transparent block like a button would have a value of 0, a solid block like stone would have a value of 15 and block all light from coming through. Blocks that let some light through, such as leaves, would be somewhere in between.
+
+- **Transparency**: With this option you can select the material for the block, which will determine how transparent textures are rendered in Minecraft:
+
+    - **Allow Transparency (Alpha Test)**: This option lets you use either fully opaque or fully transparent pixels. The option is great for models like plants.
+    - **Allow Translucency (Blend)**: This option lets you use fully transparent, fully opaque, or partially transparent pixels. Partially transparent pixels can be good for see-through materials like water or slime. However, the material has a slightly larger impact on performance and can in some cases cause unexpected visual glitches, so it is best to only use this option when necessary.
+    - **No Transparency (Opaque)**: With this option, the texture will be rendered as opaque. Transparent pixels will look black instead. This option is good for models with solid elements, like rocks and chairs.
 
 - **Map Color**: Pick the color that your block will have when displayed on a map in Minecraft. This is the map that can be crafted from paper and a compass.
 
@@ -174,7 +182,7 @@ Want to learn more about building with Blockbench? The Blockbench Wiki has step 
 > [!div class="nextstepaction"]
 > [Blockbench Wiki](https://www.blockbench.net/wiki/)
 
-The Blockbench Quick Start guide can help lead you to the specific document that you’re looking for and is a great way to discover relevant external guides and videos.
+The Blockbench Quick Start guide can help lead you to the specific document that you're looking for and is a great way to discover relevant external guides and videos.
 
 > [!div class="nextstepaction"]
 > [Blockbench Quick Start](https://www.blockbench.net/quickstart)

@@ -17,7 +17,7 @@ In this tutorial you will learn the following:
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial.
+It's recommended that the following be completed before beginning this tutorial.
 
 - [Introduction to Loot Tables](IntroductionToLootTables.md)
 - [Loot and Trade Table Functions](LootAndTradeTableFunctions.md)
@@ -57,17 +57,17 @@ The `loot_table` parameter is mandatory and it must be the path of the loot tabl
 
 Examples:
 
-- In this example, slot 0 of the target container is filled with 1 item. The path specifies that the items will be pulled from the “chests/abandoned_mineshaft” loot table.
+- In this example, slot 0 of the target container is filled with 1 item. The path specifies that the items will be pulled from the "chests/abandoned_mineshaft" loot table.
 
-`/loot replace block 0 0 0 slot.container 0 1 loot “chests/abandoned_mineshaft”`
+`/loot replace block 0 0 0 slot.container 0 1 loot "chests/abandoned_mineshaft"`
 
 - In this example, slots 2 through 5 of the target container will be filled. You can think of it like, "starting with slot 2, fill 4 slots with loot." So, the affected slots are 2 3 4 5.
 
-`/loot replace block 0 0 0 slot.container 2 4 loot “chests/abandoned_mineshaft”`
+`/loot replace block 0 0 0 slot.container 2 4 loot "chests/abandoned_mineshaft"`
 
 - This variation, without a count specified, will fill the container starting from slot 2, until either the entire contents of the given loot table have been dropped or there are no more slots available to fill.
 
-`/loot replace block 0 0 0 slot.container 2 loot “chests/abandoned_mineshaft”`
+`/loot replace block 0 0 0 slot.container 2 loot "chests/abandoned_mineshaft"`
 
 ### kill
 

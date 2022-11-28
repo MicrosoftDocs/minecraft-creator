@@ -45,9 +45,8 @@ ms.prod: gaming
           "speed_multiplier": 1.0,
           "can_land_on_trees": true,
           "avoid_damage_blocks": true
-        },
-
-``````
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.random_fly`
 

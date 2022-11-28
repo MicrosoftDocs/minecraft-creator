@@ -23,7 +23,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.silverfish_wake_up_friends":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 
@@ -33,8 +33,8 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.silverfish_wake_up_friends": {
-          "priority": 1
-        }
+    "priority": 1
+}
 ```
 
 ## Vanilla entities using `minecraft:behavior.silverfish_wake_up_friends`

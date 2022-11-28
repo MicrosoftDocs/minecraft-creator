@@ -37,8 +37,7 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.random_look_around": {
         "priority": 5
-      },
-
+      }
 ```
 
 ### Vanilla entities using `minecraft:behavior.random_look_around`

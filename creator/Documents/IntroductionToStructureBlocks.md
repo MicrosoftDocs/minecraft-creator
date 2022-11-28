@@ -1,6 +1,6 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Introduction to Structure Blocks
 ms.prod: gaming
 description: "An overview covering what Structure Blocks are and how they are used in Minecraft: Bedrock Edition"
@@ -34,10 +34,8 @@ There are four structure block modes in Minecraft: Bedrock Edition:
 
 Let's start with saving a structure into a structure block's memory. This example shows how to use the statue in the structure blocks sample and save it under a new name.
 
-
 >[!Note]
 > Any block with a state will have its state saved. Command blocks will have command information, chests will have their inventory, and even structure blocks will have their structure information.
-
 
 :::image type="content" source="Media/StructureBlock/saveui.png" alt-text="The UI for saving with a structure block":::
 
@@ -64,26 +62,42 @@ Great! Our structure is saved. Let's use a new structure block to load it into a
 
 ## Load Mode
 
+To load a structure, start by placing a structure block and put it in 'Load' mode.
+
 :::image type="content" source="Media/StructureBlock/load.png" alt-text="A structure block using load mode":::
 
-Now let's load that statue back in.
+Notice the **Import** button. This button allows you to import a .mcstructure file from anywhere on your computer into your Minecraft world.
 
-1. Place a structure block.
-1. Right click the structure block and change mode to Load.
-1. Input the following information about the structure you are saving:
-   - Structure Name: Enter the saved structure and click the load button to see a preview.
-   - Offset: Move the structure block to where you'd like to load in the structure. Be sure to account for any ground that may have been copied over.
-   - Remove blocks: Loads a structure without its blocks. This can be used to load entities from a saved structure. 
-   - Structure Integrity and Seed: Create a dilapidated effect by removing a percentage of blocks. Copy the seed to always generate a structure dilapidated in the same way. 
-   - Rotation: Rotate the structure 0,  90, 180, or 270 degrees when placing it. 0 degrees is the default. 
-   - Mirror: Mirrors objects across horizontal and vertical axis. Awesome for buildings with symmetry.
-   -  Animation mode: Load the blocks in layer by layer or one block at a time using the structure block. This can be used in gameplay.
-   -  Animation time: Define how quickly the animated structure loads in.
-   -  Show Bounding Box: Shows the volume of the structure that will be loaded. 
-1.  Click Load.
-  
-  
-Enjoy your new structure in a new place.
+:::image type="content" source="Media/StructureBlock/importButton1.png" alt-text="Load Mode page with a highlighted Import button.":::
+
+When you click the **Import** button, a file picker opens that allows you to choose the file you would like to import into your world.
+
+:::image type="content" source="Media/StructureBlock/importButton2.png" alt-text="Load Mode file picker window with potential files to select highlighted.":::
+
+After you have chosen a file, the structure block will then fill out all of the necessary information about the structure into the structure block itself, and ready the structure to load.
+
+For this example, **mystructure:1** was chosen, and the structure block's name and bounds were automatically updated to reflect the information in the .mcstructure file.
+
+When a structure is successfully loaded, you will see a message in the structure block UI telling you the structure has been successfully imported.
+
+:::image type="content" source="Media/StructureBlock/importButton3.png" alt-text="Load Mode file picker window with selected file ready to be imported.":::
+
+After the structure is imported, and the structure block UI looks similar to the UI above, the structure can be loaded into the world.
+
+This is what it will look like when the Load button is clicked:
+
+:::image type="content" source="Media/StructureBlock/importButton4.png" alt-text="Load Mode window with imported file ready to be loaded into the world.":::
+
+Here are some other important notes about importing a structure:
+
+- The import button is limited to the windows version of the game (much like the export button).
+
+- You can import multiple different structures into a world with the Import button.
+
+- The structure will be saved to the world once it is loaded into it by clicking the 'Load' button.
+
+- You can only import structures to a world if you are the host of the world. If you are a guest in someone else's world, the import will fail.
+
 
 ## Corner Mode
 
@@ -95,7 +109,7 @@ Corner mode makes it simpler to select a structure by surrounding the structure 
 1. Place another structure block in corner mode on the opposite side of the structure with the same name.
 1. Place a third structure block and select Save Mode.
 1. Enter the name used in the two corner mode structure blocks.
-1. Then Detect the sizing in save mode. All blocks must have the same name and have at least 1 block between them to detect the structure. 
+1. Then Detect the sizing in save mode. All blocks must have the same name and have at least 1 block between them to detect the structure.
 
 :::image type="content" source="Media/StructureBlock/statueWaterfall.png" alt-text="A statue surrounded in corner mode structure blocks.":::
 

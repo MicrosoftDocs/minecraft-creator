@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.dragonlanding":{
-    "priority": 0,
+    "priority": 0
 }
 ```
 
@@ -30,10 +30,12 @@ ms.prod: gaming
 
 ### ender_dragon
 
+```json
 "minecraft:on_start_landing": {
         "event": "minecraft:start_land",
         "target": "self"
-      },
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.dragonlanding`
 

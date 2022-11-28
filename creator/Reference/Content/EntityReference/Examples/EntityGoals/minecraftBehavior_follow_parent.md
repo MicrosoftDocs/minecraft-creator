@@ -24,7 +24,7 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.follow_parent":{
     "priority": 2,
-    "speed_multiplier":1.10,
+    "speed_multiplier":1.10
 }
 ```
 

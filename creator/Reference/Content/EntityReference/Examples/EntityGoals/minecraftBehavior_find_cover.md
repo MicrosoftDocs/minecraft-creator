@@ -23,7 +23,7 @@ ms.prod: gaming
 "minecraft:behavior.find_cover":{
     "priority": 2,
     "cooldown_time":10,
-    "speed_multiplier":3,
+    "speed_multiplier":3
 }
 ```
 

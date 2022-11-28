@@ -37,7 +37,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.vex_copy_owner_target":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 

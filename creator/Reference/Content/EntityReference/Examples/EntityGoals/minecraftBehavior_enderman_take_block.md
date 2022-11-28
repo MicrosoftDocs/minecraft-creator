@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.enderman_take_block":{
-    "priority": 9,
+    "priority": 9
 }
 ```
 
@@ -32,8 +32,8 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.enderman_take_block": {
-        "priority": 11
-      }
+    "priority": 11
+}
 ```
 
 ## Vanilla entities using `minecraft:behavior.enderman_take_block`

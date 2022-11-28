@@ -19,14 +19,14 @@ In this tutorial you will learn the following:
  
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial.
+It's recommended that the following be completed before beginning this tutorial.
 
 - [Introduction to Loot Tables](IntroductionToLootTables.md)
 - [Loot and Trade Table Functions](LootAndTradeTableFunctions.md)
 
 ## Loot spawn
 
-The `/loot spawn` command allows creators to drop the loot of any entity that has a defined loot table into the world. This can be done with custom loot tables as well. The command follows the "standard" rules of loot tables, so they go through all the conditions and pools. For example, using `/loot spawn` on a cave spider will not drop spider eyes because the condition for spider eyes to drop is “killed by player.”  
+The `/loot spawn` command allows creators to drop the loot of any entity that has a defined loot table into the world. This can be done with custom loot tables as well. The command follows the "standard" rules of loot tables, so they go through all the conditions and pools. For example, using `/loot spawn` on a cave spider will not drop spider eyes because the condition for spider eyes to drop is "killed by player."  
 
 ### Syntax
 
@@ -58,7 +58,7 @@ The `/loot spawn` command allows creators to drop the loot of any entity that ha
 
 ### Syntax
 
-`kill <entity: target> [tool|mainhand|offhand]` - Pulls items from the specified entity’s loot table, as if you killed it with the specified tool, or no tool if none is specified.
+`kill <entity: target> [tool|mainhand|offhand]` - Pulls items from the specified entity's loot table, as if you killed it with the specified tool, or no tool if none is specified.
 
 **kill** - Mandatory keyword to identify overload.
 

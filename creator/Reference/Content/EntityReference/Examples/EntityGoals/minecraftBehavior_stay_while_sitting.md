@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.stay_while_sitting":{
-    "priority": 3,
+    "priority": 3
 }
 ```
 
@@ -29,8 +29,8 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.stay_while_sitting": {
-          "priority": 3
-        }
+    "priority": 3
+}
 ```
 
 ## Vanilla entities using `minecraft:behavior.stay_while_sitting`

@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.restrict_open_door":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 

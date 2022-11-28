@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.delayed_attack
 ms.prod: gaming

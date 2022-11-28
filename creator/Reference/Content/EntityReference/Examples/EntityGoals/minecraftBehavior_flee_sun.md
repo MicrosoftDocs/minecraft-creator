@@ -21,7 +21,7 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.flee_sun":{
     "priority": 2,
-    "speed_multiplier":1.50,
+    "speed_multiplier":1.50
 }
 ```
 

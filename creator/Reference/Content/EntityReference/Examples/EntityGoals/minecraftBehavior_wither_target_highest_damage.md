@@ -30,7 +30,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.wither_target_highest_damage":{
-    "priority": 3,
+    "priority": 3
 }
 ```
 
@@ -41,7 +41,7 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.wither_target_highest_damage": {
         "priority": 1
-      },
+      }
 ```
 
 ## Vanilla entities using `minecraft:behavior.wither_target_highest_damage`

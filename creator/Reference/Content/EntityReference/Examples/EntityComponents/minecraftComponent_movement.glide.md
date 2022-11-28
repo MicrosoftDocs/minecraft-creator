@@ -1,6 +1,6 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:movement.glide
 ms.prod: gaming
 ---
@@ -34,6 +34,5 @@ ms.prod: gaming
 }
 
 ## Vanilla entities using `minecraft:movement.glide`
-
 
 - [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)

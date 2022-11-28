@@ -52,8 +52,7 @@ ms.prod: gaming
         "pickup_based_on_chance": false,
         "can_pickup_any_item": false,
         "cooldown_after_being_attacked": 20.0
-      },
-
+      }
 ```
 
 ## Vanilla entities using `minecraft:behavior.pickup_items`

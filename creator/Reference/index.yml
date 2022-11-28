@@ -67,16 +67,16 @@ landingContent:
         links:
           - text: Blocks JSON Documentation Homepage
             url: Content/blockreference/index.yml
-          - text: Block Definitions and Properties
-            url: Content/blockreference/Examples/Definitions/BlockDefinitionProperties.md
+          - text: Block Properties and Permutations
+            url: Content/blockreference/Examples/BlockPropertiesAndPermutations.md
       - linkListType: reference
         links:
           - text: Block Components List
-            url: Content/blockreference/Examples/BlockComponentsList.md
+            url: Content/blockreference/Examples/BlockComponents/BlockComponentsList.md
           - text: Block Trigger List
-            url: Content/blockreference/Examples/BlockTriggerList.md
+            url: Content/blockreference/Examples/BlockTriggers/BlockTriggerList.md
           - text: Block Event Responses List
-            url: Content/blockreference/Examples/BlockEventList.md
+            url: Content/blockreference/Examples/BlockEvents/BlockEventList.md
   # Card (comment to space cards)
   - title: Entities
     linkLists:

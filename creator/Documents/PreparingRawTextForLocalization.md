@@ -17,7 +17,7 @@ In this tutorial you will learn the following:
 
 ### Requirements
 
-It’s recommended that *at least one* the following be completed before beginning this tutorial, as they make use of translations and can serve as examples for this tutorial.
+It's recommended that *at least one* the following be completed before beginning this tutorial, as they make use of translations and can serve as examples for this tutorial.
 
 - [Packaging a Skin Pack](PackagingASkinPack.md)
 - [Packaging a World Template](PackagingAWorldTemplate.md)
@@ -63,7 +63,7 @@ Welcome.Message.1=Welcome to our world! #
 Here, the string name is Welcome.Message.1, and the string value is Welcome to our world!.
 
 > [!NOTE]
-> `<tab>#` is the required terminator for our parser to recognize the string. There’s no harm in adding extra hashtags because that is the start of a comment (see below). Watch out for programs and/or processing that convert tabs to spaces; that won’t work. The tab must be character code `U+0009`. Do **not** use leading or trailing spaces around the equals `=` sign.
+> `<tab>#` is the required terminator for our parser to recognize the string. There's no harm in adding extra hashtags because that is the start of a comment (see below). Watch out for programs and/or processing that convert tabs to spaces; that won't work. The tab must be character code `U+0009`. Do **not** use leading or trailing spaces around the equals `=` sign.
 
 ## Comments
 

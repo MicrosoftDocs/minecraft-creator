@@ -33,8 +33,7 @@ ms.prod: gaming
             }
           }
         ]
-      },
-
+      }
 ```
 
 ## Vanilla entities examples
@@ -55,9 +54,7 @@ ms.prod: gaming
             }
           }
         ]
-      },
-
-
+      }
 ```
 
 ## Vanilla entities using `minecraft:behavior.target_when_pushed`

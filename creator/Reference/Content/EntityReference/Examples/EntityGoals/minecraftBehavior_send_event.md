@@ -76,8 +76,7 @@ ms.prod: gaming
             ]
           }
         ]
-      },
-
+      }
 ```
 
 ## Vanilla entities using `minecraft:behavior.send_event`

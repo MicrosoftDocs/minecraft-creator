@@ -17,7 +17,7 @@ In this tutorial you will learn the following:
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial before using tools that convert between Minecraft editions.
+It's recommended that the following be completed before beginning this tutorial before using tools that convert between Minecraft editions.
 
 - [Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition](DifferencesBetweenBedrockAndJava.md)
 

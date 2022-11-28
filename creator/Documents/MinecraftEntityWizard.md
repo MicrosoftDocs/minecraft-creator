@@ -32,7 +32,7 @@ In this tutorial, you will learn the following:
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial.
+It's recommended that the following be completed before beginning this tutorial.
 
 - Either have [Blockbench](https://blockbench.net) installed or access to [Blockbench web app](https://web.blockbench.net)
 - [Getting Started with Add-On Development](GettingStarted.md)
@@ -79,7 +79,7 @@ The Display Name is the name that the entity will later be called in Minecraft. 
 
 On this page, you can select the appearance of your entity from a list of presets. The appearance includes model, texture, animations, and sounds. At a later step, you will be able to edit and modify this model in Blockbench.
 
-:::image type="content" source="Media/MinecraftEntityWizard/MinecraftEntityWizard_Appearance.png" alt-text="Minecraft Entity Wizard showcasing the Appearance Tab":::
+:::image type="content" source="Media/MinecraftEntityWizard/MinecraftEntityWizard_appearance.png" alt-text="Minecraft Entity Wizard showcasing the Appearance Tab":::
 
 > [!NOTE]
 > If you currently have a model opened inside Blockbench, you may also pick this model as your starting point.
@@ -138,7 +138,9 @@ Depending on the export option you have selected, you may need to enter some inf
 
 ### Exporting to Minecraft Education Edition
 
-In Blockbench, there is a checkbox for the option to target **Minecraft Education Edition**. Go to File > Preferences > Settings > Export and scroll down to find the **Entity Wizard: Target Education Edition** checkbox.
+In the desktop version of Blockbench, there is a radio button for the option to target **Minecraft Education Edition**. Go to File > Preferences > Settings > Export and scroll down to find the **Entity Wizard: Target Education Edition** option. (The web-based version does not have this option.)
+
+:::image type="content" source="Media/MinecraftEntityWizard/MinecraftEntityWizard_edu_edition.png" alt-text="Image showing how to find the Education Edition export option":::
 
 Not all entities may be supported in Education Edition due to version differences. For example, if Education Edition is version 1.17, then entities from Vanilla Bedrock version 1.19 (such as allay, frog, tadpole and warden) are not supported.
 
@@ -150,7 +152,7 @@ Enter the name of your pack. This name will be used both for the generated file,
 
 The pack icon is optional. You can upload an image as an icon to represent your pack in the pack menu. The image should be a PNG file, the recommended resolution is 64 by 64 pixels.
 
-:::image type="content" source="Media/MinecraftEntityWizard/MinecraftEnityWizard_next_steps.png" alt-text="Image showcasing the next steps section of the last step in the Minecraft Entity Wizard":::
+:::image type="content" source="Media/MinecraftEntityWizard/MinecraftEntityWizard_next_steps.png" alt-text="Image showcasing the next steps section of the last step in the Minecraft Entity Wizard":::
 
 ## Installing the pack
 
@@ -178,7 +180,7 @@ You can learn how to model and animate in this tutorial playlist: [ArtsByKev Blo
 
 More information on Blockbench can be found on the [Blockbench Wiki](https://www.blockbench.net/wiki/).
 
-### Behavior
+### Editing Behavior
 
 If you want to edit the behavior and other aspects of your entity, you need to use a code editor. The wizard will present you with an option to open the packs in Visual Studio Code, a code editor that is popular for addon development for Minecraft: Bedrock Edition. You can learn how to [set up Visual Studio Code for addon development](gettingstarted.md#visual-studio-code) under this link.
 
@@ -199,7 +201,7 @@ Want to learn more about building with Blockbench? The Blockbench Wiki has step 
 > [!div class="nextstepaction"]
 > [Blockbench Wiki](https://www.blockbench.net/wiki/)
 
-The Blockbench Quick Start guide can help lead you to the specific document that you’re looking for and is a great way to discover relevant external guides and videos.
+The Blockbench Quick Start guide can help lead you to the specific document that you're looking for and is a great way to discover relevant external guides and videos.
 
 > [!div class="nextstepaction"]
 > [Blockbench Quick Start](https://www.blockbench.net/quickstart)

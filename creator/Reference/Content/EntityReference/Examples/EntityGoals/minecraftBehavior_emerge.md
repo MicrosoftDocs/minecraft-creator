@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.emerge
 
-`minecraft:behavior.emerge` [EXPERIMENTAL BEHAVIOR] activates the "EMERGING" actor flag during the specified duration and triggers "on_done" at the end.
+`minecraft:behavior.emerge` activates the "EMERGING" actor flag during the specified duration and triggers "on_done" at the end.
 
 ## Parameters
 
