@@ -1,4 +1,5 @@
 ---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -8,7 +9,6 @@ description: Contents of the @minecraft/server-ui.ModalFormData class.
 # ModalFormData Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-
 Used to create a fully customizable pop-up form for a player.
 
 ## Methods
@@ -51,7 +51,7 @@ show(player: @minecraft/server.Player): Promise<ModalFormResponse>
 Creates and shows this modal popup form. Returns asynchronously when the player confirms or cancels the dialog.
 
 #### **Parameters**
-- **player**: [*@minecraft/server.Player*](../server/Player.md)
+- **player**: [*@minecraft/server.Player*](../../minecraft/server/Player.md)
   
   Player to show this dialog to.
 

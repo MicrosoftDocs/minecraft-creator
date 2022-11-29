@@ -1,4 +1,5 @@
 ---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -8,8 +9,8 @@ description: Contents of the @minecraft/server.Entity class.
 # Entity Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-
 ## Classes that extend Entity
+- [*Player*](Player.md)
 - [*Player*](Player.md)
 
 Represents the state of an entity (a mob, the player, or other moving objects like minecarts) in the world.
@@ -22,6 +23,9 @@ Represents the state of an entity (a mob, the player, or other moving objects li
 Dimension that the entity is currently within.
 
 Type: [*Dimension*](Dimension.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **headLocation**
 `read-only headLocation: Location;`
@@ -50,7 +54,6 @@ Type: *boolean*
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-
 ### **location**
 `read-only location: Vector3;`
 
@@ -71,7 +74,6 @@ Type: *string*
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-
 ### **rotation**
 `read-only rotation: XYRotation;`
 
@@ -81,7 +83,6 @@ Type: [*XYRotation*](XYRotation.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 
 ### **scoreboard**
 `read-only scoreboard: ScoreboardIdentity;`
@@ -93,7 +94,6 @@ Type: [*ScoreboardIdentity*](ScoreboardIdentity.md)
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-
 ### **target**
 `read-only target: Entity;`
 
@@ -103,7 +103,6 @@ Type: [*Entity*](Entity.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 
 ### **typeId**
 `read-only typeId: string;`
@@ -122,13 +121,12 @@ Type: [*Vector*](Vector.md)
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+### **viewDirection**
+`read-only viewDirection: Vector3;`
 
-### **viewVector**
-`read-only viewVector: Vector;`
+Direction that this entity is looking out from.
 
-Vector of the current view of the entity.
-
-Type: [*Vector*](Vector.md)
+Type: [*Vector3*](Vector3.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -136,12 +134,12 @@ Type: [*Vector*](Vector.md)
 ## Methods
 - [addEffect](#addeffect)
 - [addTag](#addtag)
-- [getBlockFromViewVector](#getblockfromviewvector)
+- [getBlockFromViewDirection](#getblockfromviewdirection)
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
 - [getDynamicProperty](#getdynamicproperty)
 - [getEffect](#geteffect)
-- [getEntitiesFromViewVector](#getentitiesfromviewvector)
+- [getEntitiesFromViewDirection](#getentitiesfromviewdirection)
 - [getTags](#gettags)
 - [hasComponent](#hascomponent)
 - [hasTag](#hastag)
@@ -207,8 +205,6 @@ villager.addEffect(MinecraftEffectTypes.poison, duration, 1);
   log("Created a sneaking wolf.", 1);
 ```
 
-
-
 ### **addTag**
 `
 addTag(tag: string): boolean
@@ -229,19 +225,15 @@ Adds a specified tag to an entity.
 > [!WARNING]
 > This function can throw errors.
 
-
-
-### **getBlockFromViewVector**
+### **getBlockFromViewDirection**
 `
-getBlockFromViewVector(options?: BlockRaycastOptions): Block
+getBlockFromViewDirection(options?: BlockRaycastOptions): Block
 `
 
-Gets the first block that intersects with the vector of the view of this entity.
+Returns the first intersecting block from the direction that this entity is looking at.
 
 #### **Parameters**
 - **options**?: [*BlockRaycastOptions*](BlockRaycastOptions.md) = `null`
-  
-  Additional options for processing this raycast query.
 
 #### **Returns** [*Block*](Block.md)
 
@@ -250,8 +242,6 @@ Gets the first block that intersects with the vector of the view of this entity.
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **getComponent**
 `
@@ -270,8 +260,6 @@ Gets a component (that represents additional capabilities) for an entity.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-
-
 ### **getComponents**
 `
 getComponents(): IEntityComponent[]
@@ -283,8 +271,6 @@ Returns all components that are both present on this entity and supported by the
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-
 
 ### **getDynamicProperty**
 `
@@ -304,8 +290,6 @@ Returns a property value.
 > [!WARNING]
 > This function can throw errors.
 
-
-
 ### **getEffect**
 `
 getEffect(effectType: EffectType): Effect
@@ -324,19 +308,15 @@ Returns the effect for the specified EffectType on the entity, or undefined if t
 > [!WARNING]
 > This function can throw errors.
 
-
-
-### **getEntitiesFromViewVector**
+### **getEntitiesFromViewDirection**
 `
-getEntitiesFromViewVector(options?: EntityRaycastOptions): Entity[]
+getEntitiesFromViewDirection(options?: EntityRaycastOptions): Entity[]
 `
 
-Gets the first entity that intersects with the vector of the view of this entity.
+Returns a potential set of entities from the direction that this entity is looking at.
 
 #### **Parameters**
 - **options**?: [*EntityRaycastOptions*](EntityRaycastOptions.md) = `null`
-  
-  Additional options for processing this raycast query.
 
 #### **Returns** [*Entity*](Entity.md)[]
 
@@ -345,8 +325,6 @@ Gets the first entity that intersects with the vector of the view of this entity
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **getTags**
 `
@@ -362,8 +340,6 @@ Returns all tags associated with an entity.
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **hasComponent**
 `
@@ -381,8 +357,6 @@ Returns true if the specified component is present on this entity.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-
 
 ### **hasTag**
 `
@@ -404,8 +378,6 @@ Tests whether an entity has a particular tag.
 > [!WARNING]
 > This function can throw errors.
 
-
-
 ### **kill**
 `
 kill(): void
@@ -418,8 +390,6 @@ Kills this entity. The entity will drop loot as normal.
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **removeDynamicProperty**
 `
@@ -438,8 +408,6 @@ Removes a specified property.
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **removeTag**
 `
@@ -460,8 +428,6 @@ Removes a specified tag from an entity.
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **runCommandAsync**
 `
@@ -499,8 +465,6 @@ Sets a specified property to a value.
 > [!WARNING]
 > This function can throw errors.
 
-
-
 ### **setRotation**
 `
 setRotation(degreesX: number, degreesY: number): void
@@ -517,8 +481,6 @@ Sets the main rotation of the entity.
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **setVelocity**
 `
@@ -537,8 +499,6 @@ Sets a velocity for the entity to move with.
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **teleport**
 `
@@ -568,8 +528,6 @@ Teleports the selected entity to a new location
 > [!WARNING]
 > This function can throw errors.
 
-
-
 ### **teleportFacing**
 `
 teleportFacing(location: Vector3, dimension: Dimension, facingLocation: Vector3, keepVelocity?: boolean): void
@@ -594,8 +552,6 @@ Teleports the selected entity to a new location, and will have the entity facing
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **triggerEvent**
 `

@@ -182,6 +182,8 @@
         href: minecraft/server/CommandResult.md
       - name: Container
         href: minecraft/server/Container.md
+      - name: ContainerSlot
+        href: minecraft/server/ContainerSlot.md
       - name: DataDrivenEntityTriggerEvent
         href: minecraft/server/DataDrivenEntityTriggerEvent.md
       - name: DataDrivenEntityTriggerEventSignal
@@ -226,10 +228,6 @@
         href: minecraft/server/EntityCanPowerJumpComponent.md
       - name: EntityColorComponent
         href: minecraft/server/EntityColorComponent.md
-      - name: EntityCreateEvent
-        href: minecraft/server/EntityCreateEvent.md
-      - name: EntityCreateEventSignal
-        href: minecraft/server/EntityCreateEventSignal.md
       - name: EntityDefinitionFeedItem
         href: minecraft/server/EntityDefinitionFeedItem.md
       - name: EntityFireImmuneComponent
@@ -336,6 +334,10 @@
         href: minecraft/server/EntityScaleComponent.md
       - name: EntitySkinIdComponent
         href: minecraft/server/EntitySkinIdComponent.md
+      - name: EntitySpawnEvent
+        href: minecraft/server/EntitySpawnEvent.md
+      - name: EntitySpawnEventSignal
+        href: minecraft/server/EntitySpawnEventSignal.md
       - name: EntityStrengthComponent
         href: minecraft/server/EntityStrengthComponent.md
       - name: EntityTameableComponent
@@ -472,6 +474,10 @@
         href: minecraft/server/PlayerLeaveEvent.md
       - name: PlayerLeaveEventSignal
         href: minecraft/server/PlayerLeaveEventSignal.md
+      - name: PlayerSpawnEvent
+        href: minecraft/server/PlayerSpawnEvent.md
+      - name: PlayerSpawnEventSignal
+        href: minecraft/server/PlayerSpawnEventSignal.md
       - name: ProjectileHitEvent
         href: minecraft/server/ProjectileHitEvent.md
       - name: ProjectileHitEventSignal
@@ -488,6 +494,10 @@
         href: minecraft/server/ScoreboardScoreInfo.md
       - name: ScreenDisplay
         href: minecraft/server/ScreenDisplay.md
+      - name: ScriptEventCommandMessageSignal
+        href: minecraft/server/ScriptEventCommandMessageSignal.md
+      - name: ScriptScriptCommandMessageEvent
+        href: minecraft/server/ScriptScriptCommandMessageEvent.md
       - name: Seat
         href: minecraft/server/Seat.md
       - name: ServerMessageSignal
@@ -532,12 +542,14 @@
         href: minecraft/server/EntityRaycastOptions.md
       - name: ExplosionOptions
         href: minecraft/server/ExplosionOptions.md
-      - name: IRawMessage
-        href: minecraft/server/IRawMessage.md
       - name: MusicOptions
         href: minecraft/server/MusicOptions.md
+      - name: RawMessage
+        href: minecraft/server/RawMessage.md
       - name: ScoreboardObjectiveDisplayOptions
         href: minecraft/server/ScoreboardObjectiveDisplayOptions.md
+      - name: ScriptEventMessageFilterOptions
+        href: minecraft/server/ScriptEventMessageFilterOptions.md
       - name: SoundOptions
         href: minecraft/server/SoundOptions.md
       - name: TitleDisplayOptions

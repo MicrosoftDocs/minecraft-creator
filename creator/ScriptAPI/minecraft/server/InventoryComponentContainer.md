@@ -1,4 +1,5 @@
 ---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -8,7 +9,6 @@ description: Contents of the @minecraft/server.InventoryComponentContainer class
 # InventoryComponentContainer Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
@@ -38,7 +38,10 @@ Type: *number*
 
 ## Methods
 - [addItem](#additem)
+- [clearAll](#clearall)
+- [clearItem](#clearitem)
 - [getItem](#getitem)
+- [getSlot](#getslot)
 - [setItem](#setitem)
 - [swapItems](#swapitems)
 - [transferItem](#transferitem)
@@ -48,12 +51,35 @@ Type: *number*
 addItem(itemStack: ItemStack): void
 `
 
-Adds an item to the specified container. Items will be placed in the first available empty slot. (Use [*@minecraft/server.InventoryComponentContainer.setItem*](../server/InventoryComponentContainer.md#setitem) if you wish to set items in a particular slot.)
+Adds an item to the specified container. Items will be placed in the first available empty slot. (Use [*@minecraft/server.InventoryComponentContainer.setItem*](../../minecraft/server/InventoryComponentContainer.md#setitem) if you wish to set items in a particular slot.)
 
 #### **Parameters**
 - **itemStack**: [*ItemStack*](ItemStack.md)
   
   The stack of items to add.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **clearAll**
+`
+clearAll(): void
+`
+
+Empties all items in this entities' inventory.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **clearItem**
+`
+clearItem(slot: number): void
+`
+
+Clears out a specific item at the specified slot index.
+
+#### **Parameters**
+- **slot**: *number*
 
 > [!WARNING]
 > This function can throw errors.
@@ -83,9 +109,24 @@ test.assert(itemStack.id === "apple", "Expected apple");
 test.assert(itemStack.amount === 10, "Expected 10 apples");
 ```
 
+### **getSlot**
+`
+getSlot(slot: number): ContainerSlot
+`
+
+Returns a slot object for specifically managing a slot within a broader inventory.
+
+#### **Parameters**
+- **slot**: *number*
+
+#### **Returns** [*ContainerSlot*](ContainerSlot.md)
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **setItem**
 `
-setItem(slot: number, itemStack: ItemStack): void
+setItem(slot: number, itemStack?: ItemStack): void
 `
 
 Sets an item stack within a particular slot.
@@ -94,7 +135,7 @@ Sets an item stack within a particular slot.
 - **slot**: *number*
   
   Zero-based index of the slot to set an item at.
-- **itemStack**: [*ItemStack*](ItemStack.md)
+- **itemStack**?: [*ItemStack*](ItemStack.md) = `null`
   
   Stack of items to place within the specified slot.
 
@@ -193,4 +234,3 @@ test.assert(chestCartContainer.getItem(4).id === "apple", "Expected apple in lef
 test.assert(leftChestContainer.getItem(0).id === "emerald", "Expected emerald in left container slot index 0");
 test.assert(rightChestContainer.getItem(1).id === "cake", "Expected cake in right container slot index 1");
 ```
-

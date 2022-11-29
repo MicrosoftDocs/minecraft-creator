@@ -1,4 +1,5 @@
 ---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -8,11 +9,10 @@ description: Contents of the @minecraft/server-gametest.SimulatedPlayer class.
 # SimulatedPlayer Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-
 ## Extends
-- [*@minecraft/server.Player*](../server/Player.md)
+- [*@minecraft/server.Player*](../../minecraft/server/Player.md)
 
-A simulated player can be used within GameTests to represent how a player moves throughout the world and to support testing of how entities and the environment will react to a player. This type derives much of its structure and methods from the [*@minecraft/server.Player*](../server/Player.md) type.
+A simulated player can be used within GameTests to represent how a player moves throughout the world and to support testing of how entities and the environment will react to a player. This type derives much of its structure and methods from the [*@minecraft/server.Player*](../../minecraft/server/Player.md) type.
 
 ## Properties
 
@@ -21,21 +21,21 @@ A simulated player can be used within GameTests to represent how a player moves 
 
 Dimension that the simulated player is currently within.
 
-Type: [*@minecraft/server.Dimension*](../server/Dimension.md)
+Type: [*@minecraft/server.Dimension*](../../minecraft/server/Dimension.md)
 
 ### **headLocation**
 `read-only headLocation: @minecraft/server.Location;`
 
 Location of the center of the head component of the player.
 
-Type: [*@minecraft/server.Location*](../server/Location.md)
+Type: [*@minecraft/server.Location*](../../minecraft/server/Location.md)
 
 ### **headRotation**
 `read-only headRotation: @minecraft/server.XYRotation;`
 
 Rotation of the head across pitch and yaw angles.
 
-Type: [*@minecraft/server.XYRotation*](../server/XYRotation.md)
+Type: [*@minecraft/server.XYRotation*](../../minecraft/server/XYRotation.md)
 
 ### **id**
 `read-only id: string;`
@@ -51,12 +51,17 @@ True if the player is currently using a sneaking movement.
 
 Type: *boolean*
 
+### **isSprinting**
+`isSprinting: boolean;`
+
+Type: *boolean*
+
 ### **location**
 `read-only location: @minecraft/server.Vector3;`
 
 Current location of the player.
 
-Type: [*@minecraft/server.Vector3*](../server/Vector3.md)
+Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
 ### **name**
 `read-only name: string;`
@@ -77,21 +82,21 @@ Type: *string*
 
 Contains methods for manipulating the on-screen display of a Player.
 
-Type: [*@minecraft/server.ScreenDisplay*](../server/ScreenDisplay.md)
+Type: [*@minecraft/server.ScreenDisplay*](../../minecraft/server/ScreenDisplay.md)
 
 ### **rotation**
 `read-only rotation: @minecraft/server.XYRotation;`
 
 Main rotation of the entity.
 
-Type: [*@minecraft/server.XYRotation*](../server/XYRotation.md)
+Type: [*@minecraft/server.XYRotation*](../../minecraft/server/XYRotation.md)
 
 ### **scoreboard**
 `read-only scoreboard: @minecraft/server.ScoreboardIdentity;`
 
 Returns a scoreboard identity that represents this entity.
 
-Type: [*@minecraft/server.ScoreboardIdentity*](../server/ScoreboardIdentity.md)
+Type: [*@minecraft/server.ScoreboardIdentity*](../../minecraft/server/ScoreboardIdentity.md)
 
 ### **selectedSlot**
 `selectedSlot: number;`
@@ -105,7 +110,7 @@ Type: *number*
 
 Retrieves or sets an entity that is used as the target of AI-related behaviors, like attacking.
 
-Type: [*@minecraft/server.Entity*](../server/Entity.md)
+Type: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
 
 ### **typeId**
 `read-only typeId: string;`
@@ -119,14 +124,12 @@ Type: *string*
 
 Current speed of the player across X, Y, and Z dimensions.
 
-Type: [*@minecraft/server.Vector*](../server/Vector.md)
+Type: [*@minecraft/server.Vector*](../../minecraft/server/Vector.md)
 
-### **viewVector**
-`read-only viewVector: @minecraft/server.Vector;`
+### **viewDirection**
+`read-only viewDirection: @minecraft/server.Vector3;`
 
-Vector of the current view of the player.
-
-Type: [*@minecraft/server.Vector*](../server/Vector.md)
+Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
 ## Methods
 - [addEffect](#addeffect)
@@ -135,12 +138,13 @@ Type: [*@minecraft/server.Vector*](../server/Vector.md)
 - [attack](#attack)
 - [attackEntity](#attackentity)
 - [breakBlock](#breakblock)
-- [getBlockFromViewVector](#getblockfromviewvector)
+- [disconnect](#disconnect)
+- [getBlockFromViewDirection](#getblockfromviewdirection)
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
 - [getDynamicProperty](#getdynamicproperty)
 - [getEffect](#geteffect)
-- [getEntitiesFromViewVector](#getentitiesfromviewvector)
+- [getEntitiesFromViewDirection](#getentitiesfromviewdirection)
 - [getItemCooldown](#getitemcooldown)
 - [getTags](#gettags)
 - [giveItem](#giveitem)
@@ -167,6 +171,7 @@ Type: [*@minecraft/server.Vector*](../server/Vector.md)
 - [postClientMessage](#postclientmessage)
 - [removeDynamicProperty](#removedynamicproperty)
 - [removeTag](#removetag)
+- [respawn](#respawn)
 - [rotateBody](#rotatebody)
 - [runCommandAsync](#runcommandasync)
 - [sendTestSkin](#sendtestskin)
@@ -199,7 +204,7 @@ addEffect(effectType: @minecraft/server.EffectType, duration: number, amplifier?
 Adds an effect, like poison, to the entity.
 
 #### **Parameters**
-- **effectType**: [*@minecraft/server.EffectType*](../server/EffectType.md)
+- **effectType**: [*@minecraft/server.EffectType*](../../minecraft/server/EffectType.md)
   
   Type of effect to add to the entity.
 - **duration**: *number*
@@ -218,8 +223,12 @@ Adds an effect, like poison, to the entity.
 addExperience(amount: number): boolean
 `
 
+Adds a set of experience to the simulated player.
+
 #### **Parameters**
 - **amount**: *number*
+  
+  Amount of experience to add.
 
 #### **Returns** *boolean*
 
@@ -263,7 +272,7 @@ attackEntity(entity: @minecraft/server.Entity): boolean
 Causes the simulated player to attack the provided target. Returns true if the attack was performed - for example, the player was not on cooldown and had a valid target. The attack can be performed at any distance and does not require line of sight to the target entity.
 
 #### **Parameters**
-- **entity**: [*@minecraft/server.Entity*](../server/Entity.md)
+- **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
 
 #### **Returns** *boolean*
 
@@ -278,10 +287,10 @@ breakBlock(blockLocation: @minecraft/server.BlockLocation, direction?: @minecraf
 Destroys the block at blockLocation, respecting the rules of the server player's game mode. The block will be hit until broken, an item is used or stopBreakingBlock is called. Returns true if the block at blockLocation is solid.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
   
   Location of the block to interact with.
-- **direction**?: [*@minecraft/server.Direction*](../server/Direction.md) = `1`
+- **direction**?: [*@minecraft/server.Direction*](../../minecraft/server/Direction.md) = `1`
   
   Direction to place the specified item within.
 
@@ -290,19 +299,29 @@ Destroys the block at blockLocation, respecting the rules of the server player's
 > [!WARNING]
 > This function can throw errors.
 
-### **getBlockFromViewVector**
+### **disconnect**
 `
-getBlockFromViewVector(options?: @minecraft/server.BlockRaycastOptions): @minecraft/server.Block
+disconnect(): void
 `
 
-Gets the first block that intersects with the vector of the view of this entity.
+Simulates and performs a disconnection of the simulated player from the world.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getBlockFromViewDirection**
+`
+getBlockFromViewDirection(options?: @minecraft/server.BlockRaycastOptions): @minecraft/server.Block
+`
+
+Gets the first block from the view direction of this player.
 
 #### **Parameters**
-- **options**?: [*@minecraft/server.BlockRaycastOptions*](../server/BlockRaycastOptions.md) = `null`
+- **options**?: [*@minecraft/server.BlockRaycastOptions*](../../minecraft/server/BlockRaycastOptions.md) = `null`
   
-  Additional options for processing this raycast query.
+  A set of additional options for how to consider which block to select.
 
-#### **Returns** [*@minecraft/server.Block*](../server/Block.md)
+#### **Returns** [*@minecraft/server.Block*](../../minecraft/server/Block.md)
 
 > [!WARNING]
 > This function can throw errors.
@@ -319,7 +338,7 @@ Gets a component (that represents additional capabilities) for an entity.
   
   The identifier of the component (e.g., 'minecraft:rideable') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed. If the component is not present on the entity, undefined is returned.
 
-#### **Returns** [*@minecraft/server.IEntityComponent*](../server/IEntityComponent.md)
+#### **Returns** [*@minecraft/server.IEntityComponent*](../../minecraft/server/IEntityComponent.md)
 
 ### **getComponents**
 `
@@ -328,7 +347,7 @@ getComponents(): @minecraft/server.IEntityComponent[]
 
 Returns all components that are both present on this entity and supported by the API.
 
-#### **Returns** [*@minecraft/server.IEntityComponent*](../server/IEntityComponent.md)[]
+#### **Returns** [*@minecraft/server.IEntityComponent*](../../minecraft/server/IEntityComponent.md)[]
 
 ### **getDynamicProperty**
 `
@@ -353,26 +372,26 @@ getEffect(effectType: @minecraft/server.EffectType): @minecraft/server.Effect
 Returns the effect for the specified EffectType on the entity, or undefined if the effect is not present.
 
 #### **Parameters**
-- **effectType**: [*@minecraft/server.EffectType*](../server/EffectType.md)
+- **effectType**: [*@minecraft/server.EffectType*](../../minecraft/server/EffectType.md)
 
-#### **Returns** [*@minecraft/server.Effect*](../server/Effect.md) - Effect object for the specified effect, or undefined if the effect is not present.
+#### **Returns** [*@minecraft/server.Effect*](../../minecraft/server/Effect.md) - Effect object for the specified effect, or undefined if the effect is not present.
 
 > [!WARNING]
 > This function can throw errors.
 
-### **getEntitiesFromViewVector**
+### **getEntitiesFromViewDirection**
 `
-getEntitiesFromViewVector(options?: @minecraft/server.EntityRaycastOptions): @minecraft/server.Entity[]
+getEntitiesFromViewDirection(options?: @minecraft/server.EntityRaycastOptions): @minecraft/server.Entity[]
 `
 
-Gets the first entity that intersects with the vector of the view of this entity.
+Gets a set of entities from the simulated players' view direction.
 
 #### **Parameters**
-- **options**?: [*@minecraft/server.EntityRaycastOptions*](../server/EntityRaycastOptions.md) = `null`
+- **options**?: [*@minecraft/server.EntityRaycastOptions*](../../minecraft/server/EntityRaycastOptions.md) = `null`
   
-  Additional options for processing this raycast query.
+  A set of additional options on how to select the entities.
 
-#### **Returns** [*@minecraft/server.Entity*](../server/Entity.md)[]
+#### **Returns** [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)[]
 
 > [!WARNING]
 > This function can throw errors.
@@ -414,7 +433,7 @@ giveItem(itemStack: @minecraft/server.ItemStack, selectSlot?: boolean): boolean
 Gives the simulated player a particular item stack.
 
 #### **Parameters**
-- **itemStack**: [*@minecraft/server.ItemStack*](../server/ItemStack.md)
+- **itemStack**: [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md)
   
   Item to give.
 - **selectSlot**?: *boolean* = `false`
@@ -462,7 +481,7 @@ Tests whether a simulated player has a particular tag.
 interact(): boolean
 `
 
-Performs a raycast from the player's head and interacts with the first intersected block or entity. Returns true if the interaction was successful. Maximum range is 6 blocks.
+Performs a raycast from the player’s head and interacts with the first intersected block or entity. Returns true if the interaction was successful. Maximum range is 6 blocks.
 
 #### **Returns** *boolean*
 
@@ -477,10 +496,10 @@ interactWithBlock(blockLocation: @minecraft/server.BlockLocation, direction?: @m
 Causes the simulated player to interact with a block. The block at the specified block location must be solid. Returns true if the interaction was performed.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
   
   Location of the block to interact with.
-- **direction**?: [*@minecraft/server.Direction*](../server/Direction.md) = `1`
+- **direction**?: [*@minecraft/server.Direction*](../../minecraft/server/Direction.md) = `1`
   
   Direction to place the specified item within.
 
@@ -497,7 +516,7 @@ interactWithEntity(entity: @minecraft/server.Entity): boolean
 Causes the simulated player to interact with a mob. Returns true if the interaction was performed.
 
 #### **Parameters**
-- **entity**: [*@minecraft/server.Entity*](../server/Entity.md)
+- **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
   
   Entity to interact with.
 
@@ -510,6 +529,8 @@ Causes the simulated player to interact with a mob. Returns true if the interact
 `
 isOp(): boolean
 `
+
+Returns true if the simulated player has operator permissions.
 
 #### **Returns** *boolean*
 
@@ -546,7 +567,7 @@ lookAtBlock(blockLocation: @minecraft/server.BlockLocation): void
 Rotates the simulated player's head/body to look at the given block location.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
 
 > [!WARNING]
 > This function can throw errors.
@@ -559,7 +580,7 @@ lookAtEntity(entity: @minecraft/server.Entity): void
 Rotates the simulated player's head/body to look at the given entity.
 
 #### **Parameters**
-- **entity**: [*@minecraft/server.Entity*](../server/Entity.md)
+- **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
 
 > [!WARNING]
 > This function can throw errors.
@@ -572,7 +593,7 @@ lookAtLocation(location: @minecraft/server.Location): void
 Rotates the simulated player's head/body to look at the given location.
 
 #### **Parameters**
-- **location**: [*@minecraft/server.Location*](../server/Location.md)
+- **location**: [*@minecraft/server.Location*](../../minecraft/server/Location.md)
 
 > [!WARNING]
 > This function can throw errors.
@@ -615,7 +636,7 @@ moveToBlock(blockLocation: @minecraft/server.BlockLocation, speed?: number): voi
 Orders the simulated player to move to the given block location in a straight line. If a move or navigation is already playing, this will override the last move/navigation.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
 - **speed**?: *number* = `1`
 
 > [!WARNING]
@@ -629,7 +650,7 @@ moveToLocation(location: @minecraft/server.Location, speed?: number): void
 Orders the simulated player to move to the given location in a straight line. If a move or navigation is already playing, this will override the last move/navigation.
 
 #### **Parameters**
-- **location**: [*@minecraft/server.Location*](../server/Location.md)
+- **location**: [*@minecraft/server.Location*](../../minecraft/server/Location.md)
 - **speed**?: *number* = `1`
 
 > [!WARNING]
@@ -643,10 +664,10 @@ navigateToBlock(blockLocation: @minecraft/server.BlockLocation, speed?: number):
 Orders the simulated player to move to a specific block location using navigation. If a move or navigation is already playing, this will override the last move/walk. Note that if the simulated player gets stuck, that simulated player will stop. The player must be touching the ground in order to start navigation.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
 - **speed**?: *number* = `1`
 
-#### **Returns** [*@minecraft/server.NavigationResult*](../server/NavigationResult.md)
+#### **Returns** [*@minecraft/server.NavigationResult*](../../minecraft/server/NavigationResult.md)
 
 > [!WARNING]
 > This function can throw errors.
@@ -659,10 +680,10 @@ navigateToEntity(entity: @minecraft/server.Entity, speed?: number): @minecraft/s
 Will use navigation to follow the selected entity to within a one block radius. If a move or navigation is already playing, this will override the last move/navigation.
 
 #### **Parameters**
-- **entity**: [*@minecraft/server.Entity*](../server/Entity.md)
+- **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
 - **speed**?: *number* = `1`
 
-#### **Returns** [*@minecraft/server.NavigationResult*](../server/NavigationResult.md)
+#### **Returns** [*@minecraft/server.NavigationResult*](../../minecraft/server/NavigationResult.md)
 
 > [!WARNING]
 > This function can throw errors.
@@ -675,10 +696,10 @@ navigateToLocation(location: @minecraft/server.Location, speed?: number): @minec
 Orders the simulated player to move to a specific location using navigation. If a move or navigation is already playing, this will override the last move/walk. Note that if the simulated player gets stuck, that simulated player will stop. The player must be touching the ground in order to start navigation.
 
 #### **Parameters**
-- **location**: [*@minecraft/server.Location*](../server/Location.md)
+- **location**: [*@minecraft/server.Location*](../../minecraft/server/Location.md)
 - **speed**?: *number* = `1`
 
-#### **Returns** [*@minecraft/server.NavigationResult*](../server/NavigationResult.md)
+#### **Returns** [*@minecraft/server.NavigationResult*](../../minecraft/server/NavigationResult.md)
 
 > [!WARNING]
 > This function can throw errors.
@@ -691,7 +712,7 @@ navigateToLocations(locations: @minecraft/server.Location[], speed?: number): vo
 Use navigation to follow the route provided via the locations parameter. If a move or navigation is already playing, this will override the last move/navigation. 
 
 #### **Parameters**
-- **locations**: [*@minecraft/server.Location*](../server/Location.md)[]
+- **locations**: [*@minecraft/server.Location*](../../minecraft/server/Location.md)[]
   
   A list of locations to use for routing.
 - **speed**?: *number* = `1`
@@ -712,7 +733,7 @@ This method is inherited from Player, but is inoperative in the case of a Simula
 - **soundID**: *string*
   
   Identifier of the sound to play.
-- **soundOptions**?: [*@minecraft/server.SoundOptions*](../server/SoundOptions.md) = `null`
+- **soundOptions**?: [*@minecraft/server.SoundOptions*](../../minecraft/server/SoundOptions.md) = `null`
   
   Additional optional options for the sound.
 
@@ -724,9 +745,15 @@ This method is inherited from Player, but is inoperative in the case of a Simula
 postClientMessage(id: string, value: string): void
 `
 
+Internal method for posting a message to consuming client scripts.
+
 #### **Parameters**
 - **id**: *string*
+  
+  Identifier of the message.
 - **value**: *string*
+  
+  Value of the message.
 
 > [!WARNING]
 > This function can throw errors.
@@ -763,6 +790,18 @@ Removes a specified tag from a simulated player.
 > [!WARNING]
 > This function can throw errors.
 
+### **respawn**
+`
+respawn(): boolean
+`
+
+Respawns the particular simulated player.
+
+#### **Returns** *boolean*
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **rotateBody**
 `
 rotateBody(angleInDegrees: number): void
@@ -788,7 +827,7 @@ Runs a particular command asynchronously from the context of this entity. Note t
   
   Command to run. Note that command strings should not start with slash.
 
-#### **Returns** Promise&lt;[*@minecraft/server.CommandResult*](../server/CommandResult.md)&gt; - For commands that return data, returns a JSON structure with command response values.
+#### **Returns** Promise&lt;[*@minecraft/server.CommandResult*](../../minecraft/server/CommandResult.md)&gt; - For commands that return data, returns a JSON structure with command response values.
 
 > [!WARNING]
 > This function can throw errors.
@@ -797,6 +836,8 @@ Runs a particular command asynchronously from the context of this entity. Note t
 `
 sendTestSkin(geoData: string, base64ImageData: string, skinResourcePatch: string): void
 `
+
+Applies a test skin to the simulated player.
 
 #### **Parameters**
 - **geoData**: *string*
@@ -843,7 +884,7 @@ setGameMode(gameMode: @minecraft/server.GameMode): void
 Sets the game mode that the simulated player is operating under.
 
 #### **Parameters**
-- **gameMode**: [*@minecraft/server.GameMode*](../server/GameMode.md)
+- **gameMode**: [*@minecraft/server.GameMode*](../../minecraft/server/GameMode.md)
   
   Game mode to set.
 
@@ -858,7 +899,7 @@ setItem(itemStack: @minecraft/server.ItemStack, slot: number, selectSlot?: boole
 Sets a particular item for the simulated player.
 
 #### **Parameters**
-- **itemStack**: [*@minecraft/server.ItemStack*](../server/ItemStack.md)
+- **itemStack**: [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md)
   
   Item to set.
 - **slot**: *number*
@@ -906,7 +947,7 @@ setVelocity(velocity: @minecraft/server.Vector3): void
 Sets a velocity for the entity to move with.
 
 #### **Parameters**
-- **velocity**: [*@minecraft/server.Vector3*](../server/Vector3.md)
+- **velocity**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   X/Y/Z components of the velocity.
 
@@ -979,10 +1020,10 @@ teleport(location: @minecraft/server.Vector3, dimension: @minecraft/server.Dimen
 Teleports the selected player to a new location
 
 #### **Parameters**
-- **location**: [*@minecraft/server.Vector3*](../server/Vector3.md)
+- **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   New location for the player.
-- **dimension**: [*@minecraft/server.Dimension*](../server/Dimension.md)
+- **dimension**: [*@minecraft/server.Dimension*](../../minecraft/server/Dimension.md)
   
   Dimension to move the selected player to.
 - **xRotation**: *number*
@@ -1004,13 +1045,13 @@ teleportFacing(location: @minecraft/server.Vector3, dimension: @minecraft/server
 Teleports the selected player to a new location, and will have the player facing a specified location.
 
 #### **Parameters**
-- **location**: [*@minecraft/server.Vector3*](../server/Vector3.md)
+- **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   New location for the player.
-- **dimension**: [*@minecraft/server.Dimension*](../server/Dimension.md)
+- **dimension**: [*@minecraft/server.Dimension*](../../minecraft/server/Dimension.md)
   
   Dimension to move the selected player to.
-- **facingLocation**: [*@minecraft/server.Vector3*](../server/Vector3.md)
+- **facingLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location that this player will be facing.
 - **keepVelocity**?: *boolean* = `false`
@@ -1020,13 +1061,13 @@ Teleports the selected player to a new location, and will have the player facing
 
 ### **tell**
 `
-tell(message: @minecraft/server.IRawMessage | string): void
+tell(message: @minecraft/server.RawMessage | string): void
 `
 
 For simulated players, this API is effectively a no-op as simulated players do not have a connected client.
 
 #### **Parameters**
-- **message**: [*@minecraft/server.IRawMessage*](../server/IRawMessage.md) | *string*
+- **message**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
 > [!WARNING]
 > This function can throw errors.
@@ -1054,7 +1095,7 @@ useItem(itemStack: @minecraft/server.ItemStack): boolean
 Causes the simulated player to use an item. Does not consume the item. Returns false if the item is on cooldown.
 
 #### **Parameters**
-- **itemStack**: [*@minecraft/server.ItemStack*](../server/ItemStack.md)
+- **itemStack**: [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md)
   
   Item to use.
 
@@ -1091,10 +1132,10 @@ Causes the simulated player to use an item in their inventory on a block. The bl
 - **slot**: *number*
   
   Index of the slot to use.
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
   
   Location to use the item upon.
-- **direction**?: [*@minecraft/server.Direction*](../server/Direction.md) = `1`
+- **direction**?: [*@minecraft/server.Direction*](../../minecraft/server/Direction.md) = `1`
   
   Direction to place the specified item within.
 - **faceLocationX**?: *number* = `0.5`
@@ -1117,13 +1158,13 @@ useItemOnBlock(itemStack: @minecraft/server.ItemStack, blockLocation: @minecraft
 Causes the simulated player to use an item on a block. The block at the specified block location must be solid. Returns true if the item was used.
 
 #### **Parameters**
-- **itemStack**: [*@minecraft/server.ItemStack*](../server/ItemStack.md)
+- **itemStack**: [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md)
   
   Item to use.
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
   
   Location to use the item upon.
-- **direction**?: [*@minecraft/server.Direction*](../server/Direction.md) = `1`
+- **direction**?: [*@minecraft/server.Direction*](../../minecraft/server/Direction.md) = `1`
   
   Direction to place the specified item within.
 - **faceLocationX**?: *number* = `0.5`

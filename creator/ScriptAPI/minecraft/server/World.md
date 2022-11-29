@@ -1,4 +1,5 @@
 ---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -8,7 +9,6 @@ description: Contents of the @minecraft/server.World class.
 # World Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-
 A class that wraps the state of a world - a set of dimensions and the environment of Minecraft.
 
 ## Properties
@@ -55,14 +55,14 @@ Type: [*Scoreboard*](Scoreboard.md)
 broadcastClientMessage(id: string, value: string): void
 `
 
+A method that is internal-only, used for broadcasting specific messages between client and server.
+
 #### **Parameters**
 - **id**: *string*
 - **value**: *string*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-
 
 ### **getAbsoluteTime**
 `
@@ -76,12 +76,12 @@ Returns the absolute time since the start of the world.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-
-
 ### **getAllPlayers**
 `
 getAllPlayers(): Player[]
 `
+
+Returns an array of all active players within the world.
 
 #### **Returns** [*Player*](Player.md)[]
 
@@ -92,6 +92,8 @@ getAllPlayers(): Player[]
 `
 getDimension(dimensionId: string): Dimension
 `
+
+Returns a dimension object.
 
 #### **Parameters**
 - **dimensionId**: *string*
@@ -119,8 +121,6 @@ Returns a property value.
 > [!WARNING]
 > This function can throw errors.
 
-
-
 ### **getPlayers**
 `
 getPlayers(options?: EntityQueryOptions): PlayerIterator
@@ -139,8 +139,6 @@ Returns all players currently in the world.
 > [!WARNING]
 > This function can throw errors.
 
-
-
 ### **getTime**
 `
 getTime(): number
@@ -152,8 +150,6 @@ Sets the current game time of the day.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-
 
 ### **playMusic**
 `
@@ -169,8 +165,6 @@ Plays a particular music track for all players.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-
-
 ### **playSound**
 `
 playSound(soundID: string, soundOptions?: SoundOptions): void
@@ -185,8 +179,6 @@ Plays a sound for all players.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-
-
 ### **queueMusic**
 `
 queueMusic(trackID: string, musicOptions?: MusicOptions): void
@@ -200,8 +192,6 @@ Queues an additional music track for players. If a track is not playing, a music
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-
 
 ### **removeDynamicProperty**
 `
@@ -221,25 +211,21 @@ Removes a specified property.
 > [!WARNING]
 > This function can throw errors.
 
-
-
 ### **say**
 `
-say(message: IRawMessage | string): void
+say(message: RawMessage | string): void
 `
 
 Broadcasts a message that is displayed on all connected clients.
 
 #### **Parameters**
-- **message**: [*IRawMessage*](IRawMessage.md) | *string*
+- **message**: [*RawMessage*](RawMessage.md) | *string*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **setDynamicProperty**
 `
@@ -260,8 +246,6 @@ Sets a specified property to a value.
 > [!WARNING]
 > This function can throw errors.
 
-
-
 ### **setTime**
 `
 setTime(timeOfDay: number): void
@@ -275,8 +259,6 @@ Returns the current game time of the day.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-
-
 ### **stopMusic**
 `
 stopMusic(): void
@@ -286,4 +268,3 @@ Stops any music tracks from playing.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-

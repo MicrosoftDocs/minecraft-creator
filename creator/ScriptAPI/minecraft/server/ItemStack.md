@@ -1,4 +1,5 @@
 ---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -8,7 +9,6 @@ description: Contents of the @minecraft/server.ItemStack class.
 # ItemStack Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
@@ -63,7 +63,7 @@ Creates a new instance of a stack of items for use in the world.
 #### **Parameters**
 - **itemType**: [*ItemType*](ItemType.md)
   
-  Type of item to create. See the [*@minecraft/server.MinecraftItemTypes*](../server/MinecraftItemTypes.md) enumeration for a list of standard item types in Minecraft experiences.
+  Type of item to create. See the [*@minecraft/server.MinecraftItemTypes*](../../minecraft/server/MinecraftItemTypes.md) enumeration for a list of standard item types in Minecraft experiences.
 - **amount**?: *number* = `1`
   
   Number of items to place in the stack, between 1 and 64. Note that certain items can only have one item in the stack.
@@ -160,5 +160,3 @@ Triggers an item type event. For custom items, a number of events are defined in
   overworld.spawnItem(featherItem, targetLocation);
   log("New feather created!");
 ```
-
-
