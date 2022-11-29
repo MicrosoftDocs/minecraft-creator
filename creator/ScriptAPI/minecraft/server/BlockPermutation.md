@@ -1,4 +1,5 @@
 ---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -8,18 +9,17 @@ description: Contents of the @minecraft/server.BlockPermutation class.
 # BlockPermutation Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Contains the combination of type [*@minecraft/server.BlockType*](../server/BlockType.md) and properties (also sometimes called block state) which describe a block (but does not belong to a specific [*@minecraft/server.Block*](../server/Block.md)). This type was introduced as of version 1.17.10.21.
+Contains the combination of type [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) and properties (also sometimes called block state) which describe a block (but does not belong to a specific [*@minecraft/server.Block*](../../minecraft/server/Block.md)). This type was introduced as of version 1.17.10.21.
 
 ## Properties
 
 ### **type**
 `read-only type: BlockType;`
 
-The [*@minecraft/server.BlockType*](../server/BlockType.md) that the permutation has.
+The [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) that the permutation has.
 
 Type: [*BlockType*](BlockType.md)
 
@@ -43,6 +43,8 @@ Creates a copy of this permutation.
 `
 getAllProperties(): IBlockProperty[]
 `
+
+Returns all available properties associated with this block.
 
 #### **Returns** [*IBlockProperty*](IBlockProperty.md)[] - Returns the list of all of the properties that the permutation has.
 
@@ -93,5 +95,3 @@ console.log(`Block is dirt: ${blockPerm.hasTag("dirt")}`);
 console.log(`Block is wood: ${blockPerm.hasTag("wood")}`);
 console.log(`Block is stone: ${blockPerm.hasTag("stone")}`);
 ```
-
-

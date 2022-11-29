@@ -1,4 +1,5 @@
 ---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -8,12 +9,11 @@ description: Contents of the @minecraft/server.Player class.
 # Player Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-
 ## Extends
 - [*Entity*](Entity.md)
 
 ## Classes that extend Player
-- [*SimulatedPlayer*](../server-gametest/SimulatedPlayer.md)
+- [*SimulatedPlayer*](SimulatedPlayer.md)
 
 Represents a player within the world.
 
@@ -26,6 +26,9 @@ Dimension that the entity is currently within.
 
 Type: [*Dimension*](Dimension.md)
 
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **headLocation**
 `read-only headLocation: Location;`
 
@@ -35,7 +38,6 @@ Type: [*Location*](Location.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 
 ### **id**
 `read-only id: string;`
@@ -131,7 +133,6 @@ Type: [*Entity*](Entity.md)
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-
 ### **typeId**
 `read-only typeId: string;`
 
@@ -149,12 +150,12 @@ Type: [*Vector*](Vector.md)
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-### **viewVector**
-`read-only viewVector: Vector;`
+### **viewDirection**
+`read-only viewDirection: Vector3;`
 
-Vector of the current view of the player.
+Direction that the player is looking, from their head.
 
-Type: [*Vector*](Vector.md)
+Type: [*Vector3*](Vector3.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -162,12 +163,12 @@ Type: [*Vector*](Vector.md)
 ## Methods
 - [addEffect](#addeffect)
 - [addTag](#addtag)
-- [getBlockFromViewVector](#getblockfromviewvector)
+- [getBlockFromViewDirection](#getblockfromviewdirection)
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
 - [getDynamicProperty](#getdynamicproperty)
 - [getEffect](#geteffect)
-- [getEntitiesFromViewVector](#getentitiesfromviewvector)
+- [getEntitiesFromViewDirection](#getentitiesfromviewdirection)
 - [getItemCooldown](#getitemcooldown)
 - [getTags](#gettags)
 - [hasComponent](#hascomponent)
@@ -214,8 +215,6 @@ Adds an effect, like poison, to the entity.
 > [!WARNING]
 > This function can throw errors.
 
-
-
 ### **addTag**
 `
 addTag(tag: string): boolean
@@ -236,19 +235,15 @@ Adds a specified tag to an entity.
 > [!WARNING]
 > This function can throw errors.
 
-
-
-### **getBlockFromViewVector**
+### **getBlockFromViewDirection**
 `
-getBlockFromViewVector(options?: BlockRaycastOptions): Block
+getBlockFromViewDirection(options?: BlockRaycastOptions): Block
 `
 
-Gets the first block that intersects with the vector of the view of this entity.
+Returns the first intersecting block from the direction that this player is looking at.
 
 #### **Parameters**
 - **options**?: [*BlockRaycastOptions*](BlockRaycastOptions.md) = `null`
-  
-  Additional options for processing this raycast query.
 
 #### **Returns** [*Block*](Block.md)
 
@@ -257,8 +252,6 @@ Gets the first block that intersects with the vector of the view of this entity.
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **getComponent**
 `
@@ -277,8 +270,6 @@ Gets a component (that represents additional capabilities) for an entity.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-
-
 ### **getComponents**
 `
 getComponents(): IEntityComponent[]
@@ -290,8 +281,6 @@ Returns all components that are both present on this entity and supported by the
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-
 
 ### **getDynamicProperty**
 `
@@ -311,8 +300,6 @@ Returns a property value.
 > [!WARNING]
 > This function can throw errors.
 
-
-
 ### **getEffect**
 `
 getEffect(effectType: EffectType): Effect
@@ -331,19 +318,15 @@ Returns the effect for the specified EffectType on the entity, or undefined if t
 > [!WARNING]
 > This function can throw errors.
 
-
-
-### **getEntitiesFromViewVector**
+### **getEntitiesFromViewDirection**
 `
-getEntitiesFromViewVector(options?: EntityRaycastOptions): Entity[]
+getEntitiesFromViewDirection(options?: EntityRaycastOptions): Entity[]
 `
 
-Gets the first entity that intersects with the vector of the view of this entity.
+Returns a potential set of entities from the direction that this player is looking at.
 
 #### **Parameters**
 - **options**?: [*EntityRaycastOptions*](EntityRaycastOptions.md) = `null`
-  
-  Additional options for processing this raycast query.
 
 #### **Returns** [*Entity*](Entity.md)[]
 
@@ -352,8 +335,6 @@ Gets the first entity that intersects with the vector of the view of this entity
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **getItemCooldown**
 `
@@ -375,8 +356,6 @@ Gets the current item cooldown time for a particular cooldown category.
 > [!WARNING]
 > This function can throw errors.
 
-
-
 ### **getTags**
 `
 getTags(): string[]
@@ -391,8 +370,6 @@ Returns all tags associated with an entity.
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **hasComponent**
 `
@@ -410,8 +387,6 @@ Returns true if the specified component is present on this entity.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-
 
 ### **hasTag**
 `
@@ -433,12 +408,12 @@ Tests whether an entity has a particular tag.
 > [!WARNING]
 > This function can throw errors.
 
-
-
 ### **isOp**
 `
 isOp(): boolean
 `
+
+Returns true if this player has operator-level permissions.
 
 #### **Returns** *boolean*
 
@@ -447,8 +422,6 @@ isOp(): boolean
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **kill**
 `
@@ -462,8 +435,6 @@ Kills this entity. The entity will drop loot as normal.
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **playSound**
 `
@@ -486,12 +457,12 @@ Plays a sound that only this particular player can hear.
 > [!WARNING]
 > This function can throw errors.
 
-
-
 ### **postClientMessage**
 `
 postClientMessage(id: string, value: string): void
 `
+
+This is an internal-facing method for posting a system message to downstream clients.
 
 #### **Parameters**
 - **id**: *string*
@@ -502,8 +473,6 @@ postClientMessage(id: string, value: string): void
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **removeDynamicProperty**
 `
@@ -522,8 +491,6 @@ Removes a specified property.
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **removeTag**
 `
@@ -544,8 +511,6 @@ Removes a specified tag from an entity.
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **runCommandAsync**
 `
@@ -583,12 +548,12 @@ Sets a specified property to a value.
 > [!WARNING]
 > This function can throw errors.
 
-
-
 ### **setOp**
 `
 setOp(isOp: boolean): void
 `
+
+Will change the specified players permissions, and whether they are operator or not.
 
 #### **Parameters**
 - **isOp**: *boolean*
@@ -598,8 +563,6 @@ setOp(isOp: boolean): void
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **setRotation**
 `
@@ -618,8 +581,6 @@ Sets the main rotation of the entity.
 > [!WARNING]
 > This function can throw errors.
 
-
-
 ### **setVelocity**
 `
 setVelocity(velocity: Vector3): void
@@ -637,8 +598,6 @@ Sets a velocity for the entity to move with.
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **startItemCooldown**
 `
@@ -660,8 +619,6 @@ Sets the item cooldown time for a particular cooldown category.
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **teleport**
 `
@@ -691,8 +648,6 @@ Teleports the selected player to a new location
 > [!WARNING]
 > This function can throw errors.
 
-
-
 ### **teleportFacing**
 `
 teleportFacing(location: Vector3, dimension: Dimension, facingLocation: Vector3, keepVelocity?: boolean): void
@@ -718,25 +673,21 @@ Teleports the selected player to a new location, and will have the player facing
 > [!WARNING]
 > This function can throw errors.
 
-
-
 ### **tell**
 `
-tell(message: IRawMessage | string): void
+tell(message: RawMessage | string): void
 `
 
 Sends a message that is displayed on the connected client for this player.
 
 #### **Parameters**
-- **message**: [*IRawMessage*](IRawMessage.md) | *string*
+- **message**: [*RawMessage*](RawMessage.md) | *string*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **triggerEvent**
 `

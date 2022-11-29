@@ -1,4 +1,5 @@
 ---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -8,7 +9,6 @@ description: Contents of the @minecraft/server.Dimension class.
 # Dimension Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-
 A class that represents a particular dimension (e.g., The End) within a world.
 
 ## Properties
@@ -88,8 +88,6 @@ Creates an explosion at the specified location.
   overworld.createExplosion(explodeNoBlocksLoc, 15, explosionOptions);
 ```
 
-
-
 ### **getBlock**
 `
 getBlock(location: BlockLocation): Block
@@ -109,8 +107,6 @@ Returns a block instance at the given location. This method was introduced as of
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **getBlockFromRay**
 `
@@ -133,8 +129,6 @@ Gets the first block that intersects with a vector emanating from a location.
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **getEntities**
 `
@@ -172,8 +166,6 @@ for (const item of items) {
 }
 ```
 
-
-
 ### **getEntitiesAtBlockLocation**
 `
 getEntitiesAtBlockLocation(location: BlockLocation): Entity[]
@@ -190,8 +182,6 @@ Returns a set of entities at a particular location.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-
 
 ### **getEntitiesFromRay**
 `
@@ -215,8 +205,6 @@ Gets entities that intersect with a specified vector emanating from a location.
 > [!WARNING]
 > This function can throw errors.
 
-
-
 ### **getPlayers**
 `
 getPlayers(getPlayers?: EntityQueryOptions): PlayerIterator
@@ -234,8 +222,6 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
 
 > [!WARNING]
 > This function can throw errors.
-
-
 
 ### **runCommandAsync**
 `
@@ -311,8 +297,6 @@ Creates a new entity (e.g., a mob) at the specified location.
   });
 ```
 
-
-
 ### **spawnItem**
 `
 spawnItem(item: ItemStack, location: BlockLocation | Location): Entity
@@ -353,8 +337,6 @@ Creates a new item stack as an entity at the specified location.
   overworld.spawnItem(featherItem, targetLocation);
   log("New feather created!");
 ```
-
-
 
 ### **spawnParticle**
 `

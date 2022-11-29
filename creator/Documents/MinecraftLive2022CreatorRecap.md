@@ -8,13 +8,13 @@ description: Minecraft Live 2022 Creator Recap
 
 # Minecraft Live 2022 Creator Recap
 
-This year’s Minecraft Live was packed with a lot of announcements! The focus of this year’s Minecraft: Bedrock Edition creator segment was the [Minecraft Entity Wizard](MinecraftEntityWizard.md) for the model editor Blockbench.  
+This year's Minecraft Live was packed with a lot of announcements! The focus of this year's Minecraft: Bedrock Edition creator segment was the [Minecraft Entity Wizard](MinecraftEntityWizard.md) for the model editor Blockbench.  
 
 Coming soon, we will also be releasing the Minecraft Block Wizard in Blockbench: a feature that will make it easier to make custom blocks. Customize your block without needing to touch the code: Destroy time, explosion resistance, friction, flammability, light, sound, and more. If you can dream it, you can make it!
 
-When it comes to creator tools, Blockbench is just one of many tools available to you. If you’re curious about other resources, check out the creator [home page](https://learn.microsoft.com/minecraft/creator/) or jump right to a directory of [commonly used tools](CommonlyUsedTools.md).
+When it comes to creator tools, Blockbench is just one of many tools available to you. If you're curious about other resources, check out the creator [home page](https://learn.microsoft.com/minecraft/creator/) or jump right to a directory of [commonly used tools](CommonlyUsedTools.md).
 
-Have a creation you’d like to share with the Minecraft Creator team? Post on Twitter with #MinecraftCreator!
+Have a creation you'd like to share with the Minecraft Creator team? Post on Twitter with #MinecraftCreator!
 
 ### Creator Segment 2022
 
@@ -42,17 +42,17 @@ After you have downloaded Blockbench, the Minecraft Entity Wizard is a plugin yo
 
 ## Minecraft Block Wizard – Coming Soon!  
 
-Inspired by and fueled by the excitement we’ve seen for Minecraft Entity Wizard, we’ve partnered with Blockbench’s creator, Jannis, to make it equally easy to create custom blocks!  
+Inspired by and fueled by the excitement we've seen for Minecraft Entity Wizard, we've partnered with Blockbench's creator, Jannis, to make it equally easy to create custom blocks!  
 
 You will be able to expand your world even further with new materials and objects. Upon release, a tutorial will be created. 
 
 ## Minecraft Live 2022 Pack
  
-> *“I am so excited about the Minecraft Entity Wizard! My students have had so many ideas and the program is easier to use than we thought it would be. In one class, they were able to modify the appearance and behavior of Minecraft mobs to fit their vision. Students created everything from mimic monsters to their family dog. I can’t wait to see what they do with more time using the program.”*
+> *"I am so excited about the Minecraft Entity Wizard! My students have had so many ideas and the program is easier to use than we thought it would be. In one class, they were able to modify the appearance and behavior of Minecraft mobs to fit their vision. Students created everything from mimic monsters to their family dog. I can't wait to see what they do with more time using the program."*
 > **-- Beth Bachuss, Austin High School, Minecraft Education Partner**
 
 For fun, we enlisted several individuals of various skills to create contributions for the .mcaddon pack for Bedrock Edition, linked here below. 
-The goal of the Minecraft Live 2022 pack is to celebrate and showcase how easy the Entity Wizard is to use and that it’s possible for anyone to be a creator and make your own mob!  
+The goal of the Minecraft Live 2022 pack is to celebrate and showcase how easy the Entity Wizard is to use and that it's possible for anyone to be a creator and make your own mob!  
 
 As a disclaimer, the mobs included in this pack are not indicative towards official Minecraft game design or of what may be added in the future. They were also created with intentional disparity in polish and imagined potential.
 
@@ -86,7 +86,7 @@ As a disclaimer, the mobs included in this pack are not indicative towards offic
 |Phoenix | Blake G. | I thought it would be cool to have another attack pet in Minecraft. I also thought it would be cool to have a pet that cannot die. When the phoenix mob is killed it turns back to the baby version of itself. Once tamed, I imagined that it would act as a totem of undying for the player. |
 |Raccoon | Dylan C. | The raccoon is a mob that will spawn in any forest biome and sometimes plains. They will walk around, climb trees, and just be a form of entertainment to the player. |
 |Robot  | Sebastian S. | I made this as a way to introduce a more synthetic mob to the game and with the hope it would create a more challenging mob for the overworld. |
-|Sea Chicken | Chloe @ Minecraft | Literal chicken of the sea! I also think it’s kind of funny how it still drops salmon! |
+|Sea Chicken | Chloe @ Minecraft | Literal chicken of the sea! I also think it's kind of funny how it still drops salmon! |
 |Sheepomelon  | Rob @ Minecraft | A sheep that looks like a watermelon that gives you melon slices when you shear it. |
 |Smick Mimic | Jaylon B. | Smick will be found in a new biome in the end. It is a shulker that has learned to mimic chests. |
 |Snow Wizard | Chloe @ Minecraft | Spreads snow wherever it goes and defends against hostile mobs by throwing snowballs instead of potions! |
@@ -100,7 +100,7 @@ Want to learn more about building with Blockbench? The Blockbench Wiki has step 
 > [!div class="nextstepaction"]
 > [Blockbench Wiki](https://www.blockbench.net/wiki/)
 
-The Blockbench Quick Start guide can help lead you to the specific document that you’re looking for and is a great way to discover relevant external guides and videos.
+The Blockbench Quick Start guide can help lead you to the specific document that you're looking for and is a great way to discover relevant external guides and videos.
 
 > [!div class="nextstepaction"]
 > [Blockbench Quick Start](https://www.blockbench.net/quickstart)

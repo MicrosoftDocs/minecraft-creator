@@ -1,4 +1,5 @@
 ---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -8,7 +9,6 @@ description: Contents of the @minecraft/server.Vector class.
 # Vector Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
@@ -117,7 +117,7 @@ Returns this vector as a normalized vector.
 
 ### **add**
 `
-add(a: Vector3, b: Vector3): Vector
+static add(a: Vector3, b: Vector3): Vector
 `
 
 Returns the addition of these vectors.
@@ -130,7 +130,7 @@ Returns the addition of these vectors.
 
 ### **cross**
 `
-cross(a: Vector3, b: Vector3): Vector
+static cross(a: Vector3, b: Vector3): Vector
 `
 
 Returns the cross product of these two vectors.
@@ -143,7 +143,7 @@ Returns the cross product of these two vectors.
 
 ### **distance**
 `
-distance(a: Vector3, b: Vector3): number
+static distance(a: Vector3, b: Vector3): number
 `
 
 Returns the distance between two vectors.
@@ -156,7 +156,7 @@ Returns the distance between two vectors.
 
 ### **divide**
 `
-divide(a: Vector3, b: number | Vector3): Vector
+static divide(a: Vector3, b: number | Vector3): Vector
 `
 
 Returns the component-wise division of these vectors.
@@ -169,7 +169,7 @@ Returns the component-wise division of these vectors.
 
 ### **lerp**
 `
-lerp(a: Vector3, b: Vector3, t: number): Vector
+static lerp(a: Vector3, b: Vector3, t: number): Vector
 `
 
 Returns the linear interpolation between a and b using t as the control.
@@ -183,7 +183,7 @@ Returns the linear interpolation between a and b using t as the control.
 
 ### **max**
 `
-max(a: Vector3, b: Vector3): Vector
+static max(a: Vector3, b: Vector3): Vector
 `
 
 Returns a vector that is made from the largest components of two vectors.
@@ -196,7 +196,7 @@ Returns a vector that is made from the largest components of two vectors.
 
 ### **min**
 `
-min(a: Vector3, b: Vector3): Vector
+static min(a: Vector3, b: Vector3): Vector
 `
 
 Returns a vector that is made from the smallest components of two vectors.
@@ -209,7 +209,7 @@ Returns a vector that is made from the smallest components of two vectors.
 
 ### **multiply**
 `
-multiply(a: Vector3, b: number | Vector3): Vector
+static multiply(a: Vector3, b: number | Vector3): Vector
 `
 
 Returns the component-wise product of these vectors.
@@ -222,7 +222,7 @@ Returns the component-wise product of these vectors.
 
 ### **slerp**
 `
-slerp(a: Vector3, b: Vector3, s: number): Vector
+static slerp(a: Vector3, b: Vector3, s: number): Vector
 `
 
 Returns the spherical linear interpolation between a and b using s as the control.
@@ -236,7 +236,7 @@ Returns the spherical linear interpolation between a and b using s as the contro
 
 ### **subtract**
 `
-subtract(a: Vector3, b: Vector3): Vector
+static subtract(a: Vector3, b: Vector3): Vector
 `
 
 Returns the subtraction of these vectors.
@@ -304,5 +304,3 @@ Type: [*Vector*](Vector.md)
 A constant vector that represents (0, 0, 0).
 
 Type: [*Vector*](Vector.md)
-
-

@@ -1,4 +1,5 @@
 ---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -8,7 +9,6 @@ description: Contents of the @minecraft/server.MinecraftBlockTypes class.
 # MinecraftBlockTypes Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
@@ -20,8 +20,10 @@ Contains definitions of standard Minecraft and Minecraft Education Edition block
 
 ### **get**
 `
-get(typeName: string): BlockType
+static get(typeName: string): BlockType
 `
+
+Returns a specific Minecraft block type given a type id.
 
 #### **Parameters**
 - **typeName**: *string*
@@ -30,7 +32,7 @@ get(typeName: string): BlockType
 
 ### **getAllBlockTypes**
 `
-getAllBlockTypes(): BlockType[]
+static getAllBlockTypes(): BlockType[]
 `
 
 Returns an array of all block types within Minecraft.
@@ -181,6 +183,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only bamboo: BlockType;`
 
 Represents a bamboo tree within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **bambooBlock**
+`static read-only bambooBlock: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -4587,6 +4594,11 @@ Represents a stripped acacia log within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **strippedBambooBlock**
+`static read-only strippedBambooBlock: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **strippedBirchLog**
 `static read-only strippedBirchLog: BlockType;`
 
@@ -5269,5 +5281,3 @@ Type: [*BlockType*](BlockType.md)
 Represents a yellow block of glazed terracotta within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
-
-

@@ -86,6 +86,8 @@ Update the first and second UUID properties to make it unique to your project. S
 > Versions 1.19.50 feature `1.1.0-beta` APIs
 > Future versions will likely require updated versions of Beta APIs.
 
+[See more information about versioning and script API modules](./ScriptVersioning.md)
+
 ![Editing Manifest JSON](Media/ScriptingGettingStarted/500-ManifestJson.png)
 
 ### Chapter 2. Let's test the parts of our project

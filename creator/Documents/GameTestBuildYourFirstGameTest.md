@@ -24,7 +24,7 @@ Building sets of GameTests requires building out your GameTests via a behavior P
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial.
+It's recommended that the following be completed before beginning this tutorial.
 
 > [!div class="checklist"]
 >
@@ -276,7 +276,7 @@ Once you have completed your GameTest behavior pack, you'll want to try it out w
 Click on the Starter Hello World behavior packs tile to activate it.
 
 >[!IMPORTANT]
->You’ll also likely want to specify some additional changes in your environment:
+>You'll also likely want to specify some additional changes in your environment:
 >- Selecting a Flat world
 >- Retain Normal difficulty (mobs work differently in completely Peaceful worlds)
 

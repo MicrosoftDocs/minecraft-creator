@@ -1,11 +1,26 @@
 {
   "redirections": [    
-      {
+    {
+        "source_path": "minecraft/server/IRawMessage.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/rawmessage",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "minecraft/server/EntityCreateEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityspawnevent",
+        "redirect_document_id": false
+    },
+    {
+      "source_path": "mojang-gametest/EntityCreateEventSignal.md",
+      "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityspawneventsignal",
+      "redirect_document_id": false
+    },
+    {
           "source_path": "mojang-gametest/FenceConnectivity.md",
           "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-gametest/fenceconnectivity",
           "redirect_document_id": false
-      },
-      {
+    },
+    {
         "source_path": "mojang-gametest/GameTestSequence.md",
         "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-gametest/gametestsequence",
         "redirect_document_id": false
@@ -462,12 +477,12 @@
     },
     {
         "source_path": "mojang-minecraft/EntityCreateEvent.md",
-        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitycreateevent",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityspawnevent",
         "redirect_document_id": false
     },
     {
         "source_path": "mojang-minecraft/EntityCreateEventSignal.md",
-        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitycreateeventsignal",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityspawneventsignal",
         "redirect_document_id": false
     },
     {

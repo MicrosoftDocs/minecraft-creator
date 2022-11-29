@@ -11,7 +11,7 @@ ms.prod: gaming
 
 ## Default Value of the Component
 
-This component is specified as an `Integer`. If this component is omitted, the default value for this component is `15` (a full block that doesn’t let any light through).
+This component is specified as an `Integer`. If this component is omitted, the default value for this component is `15` (a full block that doesn't let any light through).
 
 ## Example
 

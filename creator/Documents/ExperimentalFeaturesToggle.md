@@ -10,7 +10,7 @@ description: "An overview of experimental content available to creators in Minec
 
 With each retail version of Minecraft: Bedrock Edition, there are a few features that are currently in an experimental state. Experimental Features can be toggled on for creators who are interested in testing the latest features offered in both the beta and retail versions of Minecraft.
 
-> ![Note]
+> [!NOTE]
 > The Experiments toggle list is subject to frequent changes and could have entirely different options from the ones in your own version of Minecraft.
 
 ## Experimental Features available in Minecraft: Bedrock Edition
@@ -82,15 +82,15 @@ If you want to add experimental features to an existing world, open that world's
 
 3. When you get the popup asking **Activate Experimental Gameplay?**, select **Activate Experiments**.
 
-   ![image showing a pop up to confirm if you want ot activate experimental features in Minecraft](Media/ExperimentalFeatures/ActivateExperiments.png)
+   ![image showing a pop up to confirm if you want ot activate experimental features in Minecraft](Media/ExperimentalFeatures/ActivateExperiments.png)"
 
-After you select **Activate Experiments**, a copy of your existing world will be created. The copy will have the same name as the original world with “Copy of...” added in front of it.
+After you select **Activate Experiments**, a copy of your existing world will be created. The copy will have the same name as the original world with "Copy of..." added in front of it.
 
 :::image type="content" source="Media/ExperimentalFeatures/CopyOfWorld.png" alt-text="Image showing a duplicated world":::
 
 ### Verify that the World has Experimental Features Enabled
 
-After you’ve created a world that has an experimental feature toggle enabled, your world will get a **tag** next to the game mode in your Worlds list that says **Experimental**.
+After you've created a world that has an experimental feature toggle enabled, your world will get a **tag** next to the game mode in your Worlds list that says **Experimental**.
 
 :::image type="content" source="Media/ExperimentalFeatures/SurvivalExperimental.png" alt-text="image showcasing a survival world that has the Experimental tag applied":::
 

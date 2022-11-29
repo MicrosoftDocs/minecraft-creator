@@ -1,4 +1,5 @@
 ---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -8,7 +9,6 @@ description: Contents of the @minecraft/server.Events class.
 # Events Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
@@ -114,13 +114,6 @@ This event fires when an effect, like poisoning, is added to an entity.
 
 Type: [*EffectAddEventSignal*](EffectAddEventSignal.md)
 
-### **entityCreate**
-`read-only entityCreate: EntityCreateEventSignal;`
-
-This event fires when a new entity is created.
-
-Type: [*EntityCreateEventSignal*](EntityCreateEventSignal.md)
-
 ### **entityHit**
 `read-only entityHit: EntityHitEventSignal;`
 
@@ -134,6 +127,13 @@ Type: [*EntityHitEventSignal*](EntityHitEventSignal.md)
 This event fires when an entity is hurt (takes damage).
 
 Type: [*EntityHurtEventSignal*](EntityHurtEventSignal.md)
+
+### **entitySpawn**
+`read-only entitySpawn: EntitySpawnEventSignal;`
+
+This event fires when an entity is spawned.
+
+Type: [*EntitySpawnEventSignal*](EntitySpawnEventSignal.md)
 
 ### **explosion**
 `read-only explosion: ExplosionEventSignal;`
@@ -229,7 +229,7 @@ Type: [*PistonActivateEventSignal*](PistonActivateEventSignal.md)
 ### **playerJoin**
 `read-only playerJoin: PlayerJoinEventSignal;`
 
-This event fires when a player joins a world.
+This event fires when a player joins a world.  See also playerSpawn for another related event you can trap for when a player is spawned the first time within a world.
 
 Type: [*PlayerJoinEventSignal*](PlayerJoinEventSignal.md)
 
@@ -239,6 +239,13 @@ Type: [*PlayerJoinEventSignal*](PlayerJoinEventSignal.md)
 This event fires when a player leaves a world.
 
 Type: [*PlayerLeaveEventSignal*](PlayerLeaveEventSignal.md)
+
+### **playerSpawn**
+`read-only playerSpawn: PlayerSpawnEventSignal;`
+
+This event fires when a player spawns or respawns. Note that an additional flag within this event will tell you whether the player is spawning right after join vs. a respawn.
+
+Type: [*PlayerSpawnEventSignal*](PlayerSpawnEventSignal.md)
 
 ### **projectileHit**
 `projectileHit: ProjectileHitEventSignal;`
@@ -267,5 +274,3 @@ Type: [*WeatherChangeEventSignal*](WeatherChangeEventSignal.md)
 This event fires when the script environment is initialized on a World. In addition, you can register dynamic properties within the scope of a world Initialize event.
 
 Type: [*WorldInitializeEventSignal*](WorldInitializeEventSignal.md)
-
-

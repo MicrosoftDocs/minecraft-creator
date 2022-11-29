@@ -4,6 +4,8 @@
       href: index.yml
     - name: "What's New"
       items: 
+        - name: 1.19.50 Update Summary
+          href: Documents/Update1.19.50.md
         - name: 1.19.40 Update Summary
           href: Documents/Update1.19.40.md
         - name: Minecraft Live 2022 Creator Recap
@@ -40,6 +42,8 @@
             href: Documents/ParkourWorldGuide.md                        
         - name: Advanced Topics
           items:
+          - name: Base Game Versioning
+            href: Documents/BaseGameVersioning.md
           - name: Actor Storage
             href: Documents/ActorStorage.md
           - name: Data-Driven Overworld Height
@@ -162,14 +166,14 @@
             href: Documents/GameTestGettingStarted.md
           - name: Build your First GameTest
             href: Documents/GameTestBuildYourFirstGameTest.md
+          - name: Script Versioning
+            href: Documents/ScriptVersioning.md
         - name: Creator Tools
           items:
           - name: Commonly Used Tools
             href: Documents/CommonlyUsedTools.md
           - name: Content Error Log
             href: Documents/ContentErrorLog.md
-          - name: Base Game Versioning
-            href: Documents/BaseGameVersioning.md
           - name: Designing Gameplay for Various Devices
             href: Documents/DesigningGameplayForVariousDevices.md
           - name: Blockbench

@@ -17,26 +17,26 @@ metadata:
 highlightedContent:
 # itemType:  architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
-    #card used to define plugin
-    - title: "Minecraft Block Wizard"
-      itemType: whats-new
-      url: Documents/MinecraftBlockWizard.md
-    #card
-    - title: "Minecraft Live 2022 Creator Overview"
-      itemType: whats-new
-      url: Documents/MinecraftLive2022CreatorRecap.md
-    #card
-    - title: 1.19.40 Update Summary
-      itemType: whats-new
-      url: Documents/Update1.19.40.md
-    #card
-    - title: "Entity Properties"
-      itemType: whats-new
-      url: Documents/IntroductionToEntityProperties.md
     #card
     - title: Scripting
       itemType: reference
       url: ScriptAPI/index.yml
+    #card
+    - title: "Minecraft Block Wizard"
+      itemType: whats-new
+      url: Documents/MinecraftBlockWizard.md
+    #card
+    - title: "1.19.50 Update Summary"
+      itemType: whats-new
+      url: Documents/Update1.19.40.md
+    #card
+    - title: New /execute Syntax
+      itemType: whats-new
+      url: Documents/CommandsNewExecute.md
+    #card
+    - title: "Entity Properties"
+      itemType: whats-new
+      url: Documents/IntroductionToEntityProperties.md
     #card
     - title: Advanced Custom Blocks
       itemType: whats-new

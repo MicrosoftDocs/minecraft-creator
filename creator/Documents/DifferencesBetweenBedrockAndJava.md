@@ -19,7 +19,7 @@ In this tutorial you will learn the following:
 
 ### Minecraft: Java Edition
 
-This version was originally released in 2009. This version used to be called Minecraft until it was renamed to Minecraft: Java Edition in September 2017. As the name implies, it’s developed in Java and isn’t compatible with the current version of Minecraft for the most part. This edition is commonly referred to as simply "Java".
+This version was originally released in 2009. This version used to be called Minecraft until it was renamed to Minecraft: Java Edition in September 2017. As the name implies, it's developed in Java and isn't compatible with the current version of Minecraft for the most part. This edition is commonly referred to as simply "Java".
 
 ### Minecraft: Bedrock Edition
 
@@ -29,13 +29,13 @@ Bedrock Edition was launched on September 20, 2017 and was based on Minecraft: P
 
 One major technical difference between both versions is the world format. Bedrock Edition uses the LevelDB format for world storage while Java Edition uses the Anvil format. Due to this, most third-party tools created for Java Edition world editing will not work on Bedrock Edition.
 
-The two versions also use a fairly different block format. Java Edition has flattened its block format using a unique string for each individual block and storing the state of that block separately. Similarly, Bedrock Edition has moved to a string-based system with block states, but have kept some blocks grouped together defined by data value. Basically, this means that blocks are named differently between the versions. In Bedrock Edition, granite would be `stone 1` whereas on Java Edition it’s simply `granite`.
+The two versions also use a fairly different block format. Java Edition has flattened its block format using a unique string for each individual block and storing the state of that block separately. Similarly, Bedrock Edition has moved to a string-based system with block states, but have kept some blocks grouped together defined by data value. Basically, this means that blocks are named differently between the versions. In Bedrock Edition, granite would be `stone 1` whereas on Java Edition it's simply `granite`.
 
 ## Redstone and Command Differences
 
-The structure and implementation of commands between the two versions have diverged as well. Bedrock Edition’s command structure is similar to the system used in versions of Java Edition prior to 1.13. It also forgoes raw JSON strings inside commands for a component-based system. Instead of using long complex JSON strings to customize entities, you can summon an entity with an event to fire, and also name it in a single command.
+The structure and implementation of commands between the two versions have diverged as well. Bedrock Edition's command structure is similar to the system used in versions of Java Edition prior to 1.13. It also forgoes raw JSON strings inside commands for a component-based system. Instead of using long complex JSON strings to customize entities, you can summon an entity with an event to fire, and also name it in a single command.
 
-**Redstone** functions slightly different as well. Unlike Java Edition, Bedrock Edition doesn’t support quasi-connectivity. Systems that utilize mechanics such as Block Update Detector (BUD) switches won’t work. Pistons also require one tick to retract, and won’t leave blocks behind if given a one-tick pulse. Even the way updates happen is slightly different. While the vast majority of redstone circuits work well between the two versions, more complex circuits might not.
+**Redstone** functions slightly different as well. Unlike Java Edition, Bedrock Edition doesn't support quasi-connectivity. Systems that utilize mechanics such as Block Update Detector (BUD) switches won't work. Pistons also require one tick to retract, and won't leave blocks behind if given a one-tick pulse. Even the way updates happen is slightly different. While the vast majority of redstone circuits work well between the two versions, more complex circuits might not.
 
 **Resource Packs**
 

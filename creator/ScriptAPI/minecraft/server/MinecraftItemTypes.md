@@ -1,4 +1,5 @@
 ---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
@@ -8,7 +9,6 @@ description: Contents of the @minecraft/server.MinecraftItemTypes class.
 # MinecraftItemTypes Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
@@ -1689,6 +1689,11 @@ Represents an item that can place an ender chest within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **enderDragonSpawnEgg**
+`static read-only enderDragonSpawnEgg: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **enderEye**
 `static read-only enderEye: ItemType;`
 
@@ -2308,6 +2313,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only ironDoor: ItemType;`
 
 Represents an item that can place an iron door within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **ironGolemSpawnEgg**
+`static read-only ironGolemSpawnEgg: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -4155,6 +4165,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **snowGolemSpawnEgg**
+`static read-only snowGolemSpawnEgg: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **snowLayer**
 `static read-only snowLayer: ItemType;`
 
@@ -5061,6 +5076,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **witherSpawnEgg**
+`static read-only witherSpawnEgg: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **wolfSpawnEgg**
 `static read-only wolfSpawnEgg: ItemType;`
 
@@ -5188,5 +5208,3 @@ Type: [*ItemType*](ItemType.md)
 `static read-only zombieVillagerSpawnEgg: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
-
-
