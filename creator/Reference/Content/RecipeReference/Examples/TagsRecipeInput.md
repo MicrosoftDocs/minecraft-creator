@@ -24,4 +24,4 @@ That's right, just one recipe! Not only does this account for all types of plank
 
 Now that you're familiar with the basics of using tags as input, you're ready to start experimenting. Create a recipe that uses both tags and items, set up recipes that use multiple tags, and more! As with most things in Minecraft: Bedrock Edition, the only limit is your imagination.
 
-In order to assist you in the creation process, we have provided [a list of all tags current as of Minecraft:Bedrock Edition Version 1.19.50](creator\Reference\Content\RecipeReference\Examples\RecipeTagList.md).
+In order to assist you in the creation process, we have provided [a list of all tags current as of Minecraft:Bedrock Edition Version 1.19.50](../../RecipeReference/Examples/RecipeTagList.md).
