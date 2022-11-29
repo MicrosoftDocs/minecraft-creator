@@ -92,4 +92,4 @@ But now, this ability is available for custom blocks as well. So for the above e
 
 ### Using events to set a specific block property
 
-You can also use events to set a specific block property. You can use a block event trigger component (LINK TO BLOCK TRIGGER LIST PAGE) to determine when you want an event to fire, and you can use the event response "set_block_property" (as explained in [Set Block Property](\BlockEvents\minecraftBlock_set_block_property.md)) to set your block property to a specific value when the event fires.
+You can also use events to set a specific block property. You can use a [block event trigger component](./BlockTriggers/BlockTriggerList.md) to determine when you want an event to fire, and you can use the event response "set_block_property" (as explained in [Set Block Property](\BlockEvents\minecraftBlock_set_block_property.md)) to set your block property to a specific value when the event fires.

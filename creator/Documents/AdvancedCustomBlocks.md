@@ -313,7 +313,7 @@ All of this has been a set up to the moment you've been waiting for: custom bloc
 
 - `minecraft:geometry` defines the model that will be used in the resource pack for this custom block. You will use the identifier inside the ***geo.json*** file that was created in Blockbench.
 
-- `minecraft:material_instances` has a ton of goodies. It's an object that defines the various textures (a single texture, or per-face) and allows you to specify some information about rendering and lighting. We'll talk more about the specific render methods and lighting options offered by this component later, in the Exploring the Material Instances Render and Lighting Options Tutorial (link to it).
+- `minecraft:material_instances` has a ton of goodies. It's an object that defines the various textures (a single texture, or per-face) and allows you to specify some information about rendering and lighting. We'll talk more about the specific render methods and lighting options offered by this component later, in the [Exploring the Material Instances Render and Lighting Options Tutorial](./CustomBlockRenderLighting.md).
 
 Just like in blocks.json, we can define the various sides of the block that we want to use here. For now, we're going to define 'north' and 'south' for the salmon roll sides.
 
