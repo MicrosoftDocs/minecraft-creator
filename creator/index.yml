@@ -28,7 +28,7 @@ highlightedContent:
     #card
     - title: "1.19.50 Update Summary"
       itemType: whats-new
-      url: Documents/Update1.19.40.md
+      url: Documents/Update1.19.50.md
     #card
     - title: New /execute Syntax
       itemType: whats-new
