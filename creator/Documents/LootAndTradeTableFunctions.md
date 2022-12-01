@@ -32,7 +32,8 @@ This function enchants a book using the algorithm for enchanting items sold by v
 
 ```json
                 {
-                    "item": "minecraft:book",
+                    "type": "item",
+                    "name": "minecraft:book",
                     "quantity": 1,
                     "functions": [
                         {
