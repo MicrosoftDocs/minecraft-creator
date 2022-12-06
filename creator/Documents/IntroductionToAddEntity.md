@@ -1,15 +1,15 @@
 ---
 author: neonerz
 ms.author: mikeam
-title: Introduction to Add Entity
+title: Creating New Entity Types
 ms.prod: gaming
-description: "Building upon the knowledge learned in the Resource Pack Tutorial, Introduction to Add Entity goes over the steps needed to start creating your own custom Entity"
+description: "Building upon the knowledge learned in the Resource Pack Tutorial, Creating New Entity Types goes over the steps needed to start creating your own custom Entity Type"
 ---
 
-# Introduction to Add Entity
+# Creating New Entity Types
 
-You can add an entity to Minecraft: Bedrock Edition using a behavior pack and a resource pack. As you learned from the recommended tutorials, the behavior of entities can be changed with a behavior pack and you can change the appearance with a resource pack. Both are required to add a working entity to the game. 
-This guide has two parts: the first part covers the files and folder structure needed to add a custom entity to Minecraft. The second part shows you how to breathe life into the entity using behavior components and animations.
+You can add new entity types to Minecraft: Bedrock Edition using a behavior pack and a resource pack. As you learned from the recommended tutorials, the behavior of entity types can be changed with a behavior pack and you can change the appearance with a resource pack. Both are required to add a working entity type to the game. 
+This guide has two parts: the first part covers the files and folder structure needed to add a custom entity type to Minecraft. The second part shows you how to breathe life into the entity using behavior components and animations.
 
 :::image type="content" source="Media/AddEntity/Introduction-to-Add-Entity.jpg" alt-text="Image of a Blue Whale that has been created in a modeling package.":::
 
@@ -17,8 +17,8 @@ In this tutorial you will learn the following:
 
 > [!div class="checklist"]
 >
-> - How to create a new custom entity using behavior and resource packs.
-> - How to apply various features to the entity, including components and animations.
+> - How to create a new custom entity type using behavior and resource packs.
+> - How to apply various features to the entity type, including components and animations.
 > - Make use of translations for entity names.
 
 ### Requirements

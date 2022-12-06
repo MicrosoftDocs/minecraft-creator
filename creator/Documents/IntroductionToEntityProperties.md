@@ -8,9 +8,6 @@ description: Entity Properties are data fields defined in the Behavior Pack for 
 
 # Introduction to Entity Properties
 
-> [!IMPORTANT]
-> Entity Properties are experimental. To use Entity Properties, enable BOTH the "Upcoming Creator Features" and "Holiday Creator Features" toggles in world settings.  
-
 Entity Properties are data fields defined in the Behavior Pack for any type of Minecraft entity. Any Entity Property defined on a particular `minecraft:entity` will have separate values for that Property tracked for every instance of the entity type. Entity Property values are always persisted through saving and loading. Entity Properties can be of four different types – `int`, `float`, `enum`, and `bool`, and can be optionally sent to game clients where they can be read by Resource Packs to affect how entities render or animate.
 
 ## One Property Definition but Multiple Values

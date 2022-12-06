@@ -20,7 +20,7 @@ In this tutorial you will learn the following:
 
 It's recommended that the following be completed before beginning this tutorial.
 
-- [Introduction to Add Entity](IntroductionToAddEntity.md)
+- [Creating New Entity Types](IntroductionToAddEntity.md)
 
 ## Model
 
