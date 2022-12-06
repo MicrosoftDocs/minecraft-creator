@@ -106,7 +106,7 @@ conceptualContent:
           links:
             - url: Documents/IntroductionToAddEntity.md
               itemType: get-started
-              text: Introduction to Add Entity
+              text: Creating New Entity Types
             - url: Documents/EntityModelingAndAnimation.md
               itemType: tutorial
               text: Entity Modeling and Animation

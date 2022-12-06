@@ -442,7 +442,7 @@ If your resource pack does not appear in the Add-Ons section, something is wrong
 Now that you have seen a behavior pack in action, you can learn more about how they work and what else you can do with them.
 
 > [!div class="nextstepaction"]
-> [Introduction to Add Entity](introductiontoaddentity.md)
+> [Creating New Entity Types](introductiontoaddentity.md)
 > [Entity JSON Documentation](../Reference/Content/EntityReference/index.yml)
 
 To see examples of unchanged resource and behavior files, check out the Minecraft [Vanilla resource pack](https://aka.ms/resourcepacktemplate) and [Vanilla behavior Pack](https://aka.ms/behaviorpacktemplate).

@@ -20,7 +20,7 @@ In this tutorial you will learn the following:
 
 It's recommended that the following be completed before beginning this tutorial.
 
-- [Introduction to Add Entity](IntroductionToAddEntity.md)
+- [Creating New Entity Types](IntroductionToAddEntity.md)
 
 ## Introduction
 
@@ -37,11 +37,9 @@ Entity JSON file structure includes:
 
 Components were created to be small units of reusable behaviors to be used by creators to customize entities. For example, the tameable component can make entities like ocelots and wolves tameable.
 
-When Add Entity was introduced, entity JSON files became a way to create new entities from scratch using all the components from Vanilla entities.
-
 There are two ways in which entity JSON files can be used:
 
-- Modifying Vanilla entities. Since the introduction of Add Entity, this should only be used for small adjustments to the Vanilla game, not for additional content.
+- Modifying Vanilla entities. This should only be used for small adjustments to the Vanilla game, not for additional content.
 - Creating custom entities. Entity JSON files serve as the base for custom entities.
 
 ## Format Overview
