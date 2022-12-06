@@ -37,7 +37,7 @@ ms.prod: gaming
     "damage_conditions": [
         {
             "filters": {"test": "in_water", "subject": "self", "operator": "==", "value": true},
-            "causes": "drowning",
+            "cause": "drowning",
             "damage_per_tick": 1
         }
     ]
