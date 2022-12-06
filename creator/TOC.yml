@@ -110,7 +110,7 @@
             href: Documents/TickJsonIntroduction.md
         - name: Minecraft Entities
           items:
-            - name: Introduction to Add Entity
+            - name: Creating New Entity Types
               href: Documents/IntroductionToAddEntity.md
             - name: Introduction to Entity Properties
               href: Documents/IntroductionToEntityProperties.md

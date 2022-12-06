@@ -132,7 +132,7 @@ If you now test the robot in-game, you'll see that it will turn its head and loo
 
 ### Creating an Animation
 
-In the [add entity guide](IntroductionToAddEntity.md), we created a small driving animation for the robot. Let's now create an animation that plays when the robot loses the ground under its feet (wheel). Before creating an animation, always check if there's a way to trigger it. We can easily trigger a lose-balance animation for this because we can just use the Molang query `query.is_on_ground` to test when the robot no longer touches the ground.
+In the [guide to creating new entity types](IntroductionToAddEntity.md), we created a small driving animation for the robot. Let's now create an animation that plays when the robot loses the ground under its feet (wheel). Before creating an animation, always check if there's a way to trigger it. We can easily trigger a lose-balance animation for this because we can just use the Molang query `query.is_on_ground` to test when the robot no longer touches the ground.
 
 ![Animation controls in Blockbench](Media/EntityModeling/animation.png)
 

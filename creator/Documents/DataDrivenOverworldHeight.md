@@ -128,5 +128,5 @@ This is why you should always make backups, so you can iterate on your desired c
 Now that you have seen how this behavior pack works, here are some tutorials about doing even more customization to your world.
 
 > [!div class="nextstepaction"]
-> [Introduction to Add Entity](introductiontoaddentity.md)
+> [Creating New Entity Types](introductiontoaddentity.md)
 > [Introduction to Commands](CommandsIntroduction.md)
