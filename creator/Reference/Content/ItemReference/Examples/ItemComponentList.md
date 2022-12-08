@@ -29,6 +29,7 @@ Below is a list of all the available Item Components within Minecraft: Bedrock E
 |[minecraft:durability](ItemComponents/minecraft_durability.md)|*not set* |JSON Object|  Durability item component: how much damage can this item take before breaking.|
 |[minecraft:dye_powder](ItemComponents/minecraft_dye_powder.md)|*not set* | JSON Object|  Dye powder, there are 16 kinds of dye.|
 |[minecraft:entity_placer](ItemComponents/minecraft_entity_placer.md)|*not set* | JSON Object|  Entity placer item component. You can specify allowed blocks that the item is restricted to.|
+|[minecraft:foil](ItemComponents/minecraft_foil.md)|*not set* | JSON Object|  When an item has a foil component, it gains a shimmery glint to its appearance.|
 |[minecraft:food](ItemComponents/minecraft_food.md)|*not set* | JSON Object|  When an item has a food component, it becomes edible to the player.|
 |[minecraft:fuel](ItemComponents/minecraft_fuel.md)|*not set* |  JSON Object| Fuel component. Allows this item to be used as fuel in a furnace to 'cook' other items.|
 |[minecraft:icon](ItemComponents/minecraft_icon.md)|*not set* | JSON Object|  The icon item component determines the icon to represent the item in the UI and elsewhere.|
