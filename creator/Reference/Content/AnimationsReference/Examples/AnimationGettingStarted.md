@@ -18,11 +18,9 @@ Animation follows the current Minecraft JSON paradigms:
 
 In order to define what animations an entity has, both an `animations` and a `scripts/animate` section must be added to the entity definition file.
 
-This means you will not see the move animation in the pig.json animation file. If you would like to make a custom pig walk, you can change this line to point to your custom animation.
-
 Animations are specified as a short name, followed by their full resource name. The short name is used in animation controllers and the `scripts/animate` list, while the long name is used in the animations file.
 
-In the `scripts/animate` section, list the animations to play and in which order. You can either specify an animation directly, or specify a blend expression.
+In the `scripts/animate` section, list the animations to play and in which order. A blend expression may be specified, or an animation may be specified directly.
 
 ### Entity Definition Example
 
@@ -67,12 +65,12 @@ In the `scripts/animate` section, list the animations to play and in which order
 
 ## Animation Hierarchy
 
-Animations are channel based (rotation, position, or scale), and within that they are key-framed:
+Animations are channel based (rotation, position, or scale), and within that are key-framed:
 
 EntityAnimation: animation name
-__BoneAnimation[]: bone name to animation for this animation
+__BoneAnimation[]: bone name for this animation
 ____AnimationChannel[]: rotation, scale, or translation to animate
-______KeyFrame[]: the value for the channel to be at, at a specific time
+______KeyFrame[]: the value for the channel to have at a specific time
 
 ## Animation Controller
 
@@ -113,7 +111,7 @@ To learn more about Animation Controllers, please visit the [Animation Controlle
 
 ## Animations
 
-At the beginning of each frame, the skeleton is reset to its default pose from its geometry definition and then animations are applied per-channel-additively in order. Please note that the channels (x, y, and z) are added separately across animations **first!** They are then converted to a transform once all animations have been cumulatively applied.
+At the beginning of each frame, the skeleton is reset to its default pose from its geometry definition and then animations are applied per-channel additively in order. Please note that the channels (x, y, and z) are added separately across animations **first!** They are then converted to a transform once all animations have been cumulatively applied.
 
 Animation data can be either raw data:
 
@@ -158,7 +156,7 @@ In the key frame examples below, `"head"` is used as the name of the bone.
 
 ## Key Frames
 
-A key frame defines two values for a channel-specific transform to a specific bone at a specified time, one as time approaches the key frame time, and the second from that key frame time onwards.
+A key frame defines two values for a channel-specific transform to a specific bone at a specified time, one as time approaches the key frame time, and the second from the key frame time onwards.
 As such, when interpolating between two key frames, one can define the slope of the animation curve in either a continuous or discontinuous manner.
 
 > [!NOTE]
@@ -184,7 +182,7 @@ To scale the 'head' bone:
 
 1. From 0 to 0.5 seconds (in the "pre" tag), the head bone is set to a scale of 1 in all dimensions [X, Y, Z]
 1. At 0.5 seconds, the bone will instantly scale up to 2 times its normal size
-1. From 0.5 to 1 second ("post"), the bone will re-scale back to its normal scale of 1 in all dimensions
+1. From 0.5 to 1 second ("post"), the bone will re-scale back to the scale of 1 in all dimensions
 
 > [!NOTE]
 >"Pre" and "post" can also be defined by a Molang expression that calculates the value at runtime, allowing for a mathematically defined, as opposed to a purely linear, curve.
