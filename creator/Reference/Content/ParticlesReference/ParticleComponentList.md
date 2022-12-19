@@ -18,7 +18,7 @@ There are two types of components used with particle systems in Minecraft: Bedro
 > <default:val> - specifies the default value used if no value is given
 > <bool> - `true` or `false`
 > <string> - a string of characters like this: "Hello! I'm a string."
-> <default> - not a part of the particular line; this just says what the field defaults to if not otherwise specified
+> <default> - not a part of the particular line, this just says what the field defaults to if not otherwise specified
 > ```
 
 ## Emitter Components
