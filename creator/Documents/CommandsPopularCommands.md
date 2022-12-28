@@ -39,6 +39,47 @@ Whenever you want to know the usage and all of the syntaxes of a command, you ca
 /help [command: CommandName]
 ```
 
+## /effect
+
+Adding and removing status effects is done with the `/effect` command. All status effects on the target can also be cleared.
+
+## /execute
+
+The primary function of the `/execute` command is to modify the executor and execution origin of a nested command. However, its syntax allows for some conditional command execution that would otherwise be missing in functions.
+
+```
+/execute <origin: target> <position: x y z> <command: command>
+
+/execute <origin: target> <position: x y z> detect <detectPos: x y z> <block: Block> <data: int> <command: command>
+```
+
+For example, to detect if there's a specific block beneath the player and run a command as a result, the "detect" argument can be used instead of having a nested `/testforblock` command.
+
+```
+/execute @a ~ ~ ~ detect ~ ~-1 ~ grass 0 say Player is standing on top of grass.
+```
+
+## /gamemode
+
+When developing content, most often you'll be playing in creative mode. However, testing your content may require you to enter survival or adventure mode. The `/gamemode` command allows you to change your current game mode.
+
+```
+/gamemode <gameMode: GameMode> [player: target]
+/gamemode <gameMode: int> [player: target]
+```
+
+You have several options for the game mode: the full name, a single character, or a numeric representation. The accepted values are "survival" ("s" or 0), "creative" ("c" or 1), and "adventure" ("a" or 2). There is also "default" ("d"), which sets your game mode to whatever the world's default game mode is. The following will set your own game mode to creative when you run it in the chat.
+
+```
+/gamemode creative
+```
+
+You can also change the game mode of a specific player using target selectors, which can be helpful when controlling gameplay aspects (such as the inability to mine anything in adventure mode). The following changes the game mode of all players with the "sometag" tag to adventure mode.
+
+```
+/gamemode adventure @a[tag=sometag]
+```
+
 ## /gamerule
 
 This `/gamerule` command changes specific gameplay aspects and has options helpful for development. There are a large number of gamerules, which can be listed using the chat's auto-complete feature.
@@ -90,26 +131,9 @@ As with "dodaylightcycle", you may also want to control the weather cycle. If yo
 /gamerule doweathercycle false
 ```
 
-## /gamemode
+## /give, /clear, /replaceitem
 
-When developing content, most often you'll be playing in creative mode. However, testing your content may require you to enter survival or adventure mode. The `/gamemode` command allows you to change your current game mode.
-
-```
-/gamemode <gameMode: GameMode> [player: target]
-/gamemode <gameMode: int> [player: target]
-```
-
-You have several options for the game mode: the full name, a single character, or a numeric representation. The accepted values are "survival" ("s" or 0), "creative" ("c" or 1), and "adventure" ("a" or 2). There is also "default" ("d"), which sets your game mode to whatever the world's default game mode is. The following will set your own game mode to creative when you run it in the chat.
-
-```
-/gamemode creative
-```
-
-You can also change the game mode of a specific player using target selectors, which can be helpful when controlling gameplay aspects (such as the inability to mine anything in adventure mode). The following changes the game mode of all players with the "sometag" tag to adventure mode.
-
-```
-/gamemode adventure @a[tag=sometag]
-```
+This trio of commands manipulate the player's inventory, though `/replaceitem` can also modify non-player entity inventories and blocks with inventories. The `/give` command can provide items, the `/clear` command can remove items, and the `/replaceitem` command can place items in specific slots in the inventory.
 
 ## /locate
 
@@ -127,6 +151,75 @@ The locate command takes two arguments: the first argument specifies whether to 
 /locate structure village
 ```
 
+## /scoreboard
+
+The `/scoreboard` command is a powerful method of keeping track of numeric values on a per-entity basis, as well as performing mathematical operations with commands. The first step is creating an objective and (optionally) displaying it on the sidebar.
+
+```
+/scoreboard objectives add objectiveA dummy
+
+/scoreboard objectives setdisplay sidebar objectiveA
+```
+
+The simplest course of action would be rewarding the player with a point if they accomplish some task.
+
+```
+/scoreboard players add @p objectiveA 1
+```
+
+Afterwards, target selectors can be used to select players who achieve a certain number of points.
+
+```
+@a[scores={objectiveA=10..}]
+```
+
+## /setblock, /fill, /clone
+
+These commands change the physical blocks in the world. The `/setblock` command can set a single block while the `/fill` command can set multiple of the same block. The `/clone` command, on the other hand, will take a copy of blocks from one area and paste it into another.
+
+## /summon
+
+The `/summon` command is used to spawn a new entity into the world, from cows to sheep to your own custom entities.
+
+## /setworldspawn
+
+If you have a specific location that you want players new to the world or players who die to spawn at, the `/setworldspawn` command provides that ability.
+
+```
+/setworldspawn [spawnPoint: x y z]
+```
+
+Note that players who die after they have set their spawn with a bed will still respawn at their bed.
+
+## /tag
+
+Similar to `/scoreboard`, the `/tag` command allows you to keep track of string values on a per-entity basis. Tags would be used when a numeric value is not needed, such as for "true or false" situations. For example, you could tag entities as being a boss and later target those same entities based on that tag.
+
+```
+/tag @e[type=sheep] add boss
+/tag @e[type=minecart] add boss
+```
+
+```
+/say Bosses: @e[tag=boss]
+```
+
+## /tellraw, /titleraw
+
+The `/say`, `/tell`, and `/title` commands are not ideal when presenting information as they are not open to translation. The `/tellraw` and `/titleraw` commands can be translated using a JSON input for the message. The `/tellraw` command is also clearer in intent as the message is not accompanied with a "whisper" statement.
+
+```
+/tellraw @a {"rawtext":[{"translate":"commands.testfor.success","with":["PlayerName"]}]}
+
+/tellraw @a {"rawtext":[{"text":"Hello World"}]}
+```
+
+## /testfor, /testforblock, /testforblocks
+
+These commands test for the existence of an entity, block, and a copy of a block structure. While these commands can be useful alongside conditional command blocks, they are less useful in functions as there is no equivalent conditional setting in functions.
+
+Both the `/testfor` and `/testforblock` commands can generally be skipped over in favor of `/execute`, which supports running a command based on the existence of an entity and running a command based on the existence of a block.
+
 ## /time set
 
 Changing the gameplay environment can be essential for providing the right atmosphere. Changing the time of day is one method of doing so.
@@ -141,32 +234,6 @@ You can either provide an integer which represents a precise time of the day, or
 ```
 /time set noon
 ```
-
-## /weather
-
-Like [`/time set`](#time-set), the `/weather` command can be used to change the environment. If you want a specific type of weather to occur, this would be the command you would use.
-
-```
-/weather <clear|rain|thunder> [duration: int]
-```
-
-The optional duration is the number of game ticks that the selected weather will last for. 20 game ticks is one second, so for each second you want the weather to last, multiply it by twenty. The following sets the weather to thunder for 30 seconds, which is 600 ticks.
-
-```
-/weather thunder 600
-```
-
-Be sure that the ["doweathercycle" gamerule](#doweathercycle) is false if you intend on making use of the duration. If it is true, the weather cycle will not occur, rendering the duration useless.
-
-## /setworldspawn
-
-If you have a specific location that you want players new to the world or players who die to spawn at, the `/setworldspawn` command provides that ability.
-
-```
-/setworldspawn [spawnPoint: x y z]
-```
-
-Note that players who die after they have set their spawn with a bed will still respawn at their bed.
 
 ## /tp or /teleport
 
@@ -205,88 +272,21 @@ This command teleports Steve to coordinates [50, 63, 50] and makes sure there ar
 > [!NOTE]
 > One of the differences between using commands and commands blocks is that `/tp @s ...` will not work in a command block.
 
-## /give, /clear, /replaceitem
+## /weather
 
-This trio of commands manipulate the player's inventory, though `/replaceitem` can also modify non-player entity inventories and blocks with inventories. The `/give` command can provide items, the `/clear` command can remove items, and the `/replaceitem` command can place items in specific slots in the inventory.
-
-## /setblock, /fill, /clone
-
-These commands change the physical blocks in the world. The `/setblock` command can set a single block while the `/fill` command can set multiple of the same block. The `/clone` command, on the other hand, will take a copy of blocks from one area and paste it into another.
-
-## /effect
-
-Adding and removing status effects is done with the `/effect` command. All status effects on the target can also be cleared.
-
-## /summon
-
-The `/summon` command is used to spawn a new entity into the world, from cows to sheep to your own custom entities.
-
-## /tellraw, /titleraw
-
-The `/say`, `/tell`, and `/title` commands are not ideal when presenting information as they are not open to translation. The `/tellraw` and `/titleraw` commands can be translated using a JSON input for the message. The `/tellraw` command is also clearer in intent as the message is not accompanied with a "whisper" statement.
+Like [`/time set`](#time-set), the `/weather` command can be used to change the environment. If you want a specific type of weather to occur, this would be the command you would use.
 
 ```
-/tellraw @a {"rawtext":[{"translate":"commands.testfor.success","with":["PlayerName"]}]}
-
-/tellraw @a {"rawtext":[{"text":"Hello World"}]}
+/weather <clear|rain|thunder> [duration: int]
 ```
 
-## /scoreboard
-
-The `/scoreboard` command is a powerful method of keeping track of numeric values on a per-entity basis, as well as performing mathematical operations with commands. The first step is creating an objective and (optionally) displaying it on the sidebar.
+The optional duration is the number of game ticks that the selected weather will last for. 20 game ticks is one second, so for each second you want the weather to last, multiply it by twenty. The following sets the weather to thunder for 30 seconds, which is 600 ticks.
 
 ```
-/scoreboard objectives add objectiveA dummy
-
-/scoreboard objectives setdisplay sidebar objectiveA
+/weather thunder 600
 ```
 
-The simplest course of action would be rewarding the player with a point if they accomplish some task.
-
-```
-/scoreboard players add @p objectiveA 1
-```
-
-Afterwards, target selectors can be used to select players who achieve a certain number of points.
-
-```
-@a[scores={objectiveA=10..}]
-```
-
-## /tag
-
-Similar to `/scoreboard`, the `/tag` command allows you to keep track of string values on a per-entity basis. Tags would be used when a numeric value is not needed, such as for "true or false" situations. For example, you could tag entities as being a boss and later target those same entities based on that tag.
-
-```
-/tag @e[type=sheep] add boss
-/tag @e[type=minecart] add boss
-```
-
-```
-/say Bosses: @e[tag=boss]
-```
-
-## /testfor, /testforblock, /testforblocks
-
-These commands test for the existence of an entity, block, and a copy of a block structure. While these commands can be useful alongside conditional command blocks, they are less useful in functions as there is no equivalent conditional setting in functions.
-
-Both the `/testfor` and `/testforblock` commands can generally be skipped over in favor of `/execute`, which supports running a command based on the existence of an entity and running a command based on the existence of a block.
-
-## /execute
-
-The primary function of the `/execute` command is to modify the executor and execution origin of a nested command. However, its syntax allows for some conditional command execution that would otherwise be missing in functions.
-
-```
-/execute <origin: target> <position: x y z> <command: command>
-
-/execute <origin: target> <position: x y z> detect <detectPos: x y z> <block: Block> <data: int> <command: command>
-```
-
-For example, to detect if there's a specific block beneath the player and run a command as a result, the "detect" argument can be used instead of having a nested `/testforblock` command.
-
-```
-/execute @a ~ ~ ~ detect ~ ~-1 ~ grass 0 say Player is standing on top of grass.
-```
+Be sure that the ["doweathercycle" gamerule](#doweathercycle) is false if you intend on making use of the duration. If it is true, the weather cycle will not occur, rendering the duration useless.
 
 ## What's Next?
 
