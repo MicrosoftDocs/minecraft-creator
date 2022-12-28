@@ -202,6 +202,9 @@ This command teleports Steve to coordinates [50, 63, 50] and makes sure there ar
 /tp Steve 50 63 50 true
 ```
 
+> [!NOTE]
+> One of the differences between using commands and commands blocks is that `/tp @s ...` will not work in a command block.
+
 ## /give, /clear, /replaceitem
 
 This trio of commands manipulate the player's inventory, though `/replaceitem` can also modify non-player entity inventories and blocks with inventories. The `/give` command can provide items, the `/clear` command can remove items, and the `/replaceitem` command can place items in specific slots in the inventory.
