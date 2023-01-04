@@ -1,7 +1,7 @@
 ---
 author: mammerla
 ms.author: v-jillheaden
-title: Differences Between Minecraft Bedrock Edition and Minecraft Java Edition
+title: Differences between Minecraft Bedrock Edition and Minecraft Java Edition
 ms.prod: gaming
 description: "An article covering the major differences between Minecraft: Bedrock Edition and Minecraft: Java Edition"
 ---
