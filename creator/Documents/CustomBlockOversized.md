@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-jimseaman
+ms.author: JimSeaman42
 title: Custom Blocks Oversized Geometry
 ms.prod: gaming
 description: "An Advanced Tutorial on Customizing Blocks with Oversized Geometry"
