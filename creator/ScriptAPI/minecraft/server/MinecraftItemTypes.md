@@ -12,7 +12,7 @@ description: Contents of the @minecraft/server.MinecraftItemTypes class.
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Contains definitions of standard Minecraft and Minecraft Education Edition block types.
+Contains definitions of standard Minecraft and Minecraft Education block types.
 
 ## Constants
 
