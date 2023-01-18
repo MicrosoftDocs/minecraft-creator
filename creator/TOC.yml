@@ -222,6 +222,10 @@
             href: Reference/Content/blockreference/Examples/BlockDescription.md
           - name: Block Properties and Permutations
             href: Reference/Content/blockreference/Examples/BlockPropertiesAndPermutations.md
+          - name: Block Properties List
+            href: Reference/Content/blockreference/Examples/BlockPropertiesList.md
+          - name: Block States
+            href: Reference/Content/blockreference/Examples/BlockStatesList.md
           - name: Block Components
             href: Reference/Content/blockreference/Examples/BlockComponents/TOC.yml
           - name: Block Triggers
