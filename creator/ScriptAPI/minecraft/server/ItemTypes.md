@@ -20,7 +20,7 @@ Returns the set of item types registered within Minecraft.
 
 ### **get**
 `
-static get(itemId: string): ItemType
+static "get"(itemId: string): ItemType
 `
 
 Returns a specific item type, if available within Minecraft.

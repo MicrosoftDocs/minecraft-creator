@@ -429,11 +429,6 @@ Type: *string*
 
 Type: *string*
 
-### **lastInteractedSlot**
-`static read-only lastInteractedSlot = "last_interacted_slot";`
-
-Type: *string*
-
 ### **leverDirection**
 `static read-only leverDirection = "lever_direction";`
 

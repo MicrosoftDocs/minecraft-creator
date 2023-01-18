@@ -16,13 +16,6 @@ Contains information related to an entity getting hurt by another entity.
 
 ## Properties
 
-### **cause**
-`read-only cause: EntityDamageCause;`
-
-A summary of the reason that damage was caused.
-
-Type: [*EntityDamageCause*](EntityDamageCause.md)
-
 ### **damage**
 `read-only damage: number;`
 
@@ -30,23 +23,16 @@ Describes the amount of damage caused.
 
 Type: *number*
 
-### **damagingEntity**
-`read-only damagingEntity: Entity;`
+### **damageSource**
+`read-only damageSource: EntityDamageSource;`
 
-Optional entity that caused the damaging attack, or undefined if the hurt reason was not because of another entity.
+Source information on the entity that may have applied this damage.
 
-Type: [*Entity*](Entity.md)
+Type: [*EntityDamageSource*](EntityDamageSource.md)
 
 ### **hurtEntity**
 `read-only hurtEntity: Entity;`
 
 Entity that was hurt.
-
-Type: [*Entity*](Entity.md)
-
-### **projectile**
-`read-only projectile: Entity;`
-
-Optional entity for a projectile that potentially hurt an entity.
 
 Type: [*Entity*](Entity.md)

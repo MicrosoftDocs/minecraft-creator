@@ -105,7 +105,7 @@ Returns a dimension object.
 
 ### **getDynamicProperty**
 `
-getDynamicProperty(identifier: string): boolean | number | string
+getDynamicProperty(identifier: string): boolean | number | string | undefined
 `
 
 Returns a property value.
@@ -113,7 +113,7 @@ Returns a property value.
 #### **Parameters**
 - **identifier**: *string*
 
-#### **Returns** *boolean* | *number* | *string* - Returns the value for the property, or undefined if the property has not been set.
+#### **Returns** *boolean* | *number* | *string* | *undefined* - Returns the value for the property, or undefined if the property has not been set.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -213,13 +213,13 @@ Removes a specified property.
 
 ### **say**
 `
-say(message: RawMessage | string): void
+say(message: (RawMessage | string)[] | RawMessage | string): void
 `
 
 Broadcasts a message that is displayed on all connected clients.
 
 #### **Parameters**
-- **message**: [*RawMessage*](RawMessage.md) | *string*
+- **message**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

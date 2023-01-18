@@ -31,6 +31,8 @@ Type: *string*
 new Trigger(eventName: string)
 `
 
+Creates a new trigger.
+
 #### **Parameters**
 - **eventName**: *string*
 

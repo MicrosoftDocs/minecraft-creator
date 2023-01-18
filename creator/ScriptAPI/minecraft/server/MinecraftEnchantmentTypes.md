@@ -12,6 +12,8 @@ description: Contents of the @minecraft/server.MinecraftEnchantmentTypes class.
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Describes a set of enchantment types.
+
 ## Constants
 
 ### **aquaAffinity**

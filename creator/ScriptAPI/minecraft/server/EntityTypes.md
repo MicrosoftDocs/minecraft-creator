@@ -20,7 +20,7 @@ Used for accessing all entity types currently available for use within the world
 
 ### **get**
 `
-static get(identifier: string): EntityType
+static "get"(identifier: string): EntityType
 `
 
 Retrieves an entity type using a string-based identifier.

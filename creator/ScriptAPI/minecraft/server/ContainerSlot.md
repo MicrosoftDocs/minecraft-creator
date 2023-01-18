@@ -82,12 +82,12 @@ Returns the item stored within the container.
 
 ### **getLore**
 `
-getLore(): string[]
+getLore(): string[] | undefined
 `
 
 Returns the lore value for the item stored within this container slot.
 
-#### **Returns** *string*[]
+#### **Returns** *string*[] | *undefined*
 
 > [!WARNING]
 > This function can throw errors.

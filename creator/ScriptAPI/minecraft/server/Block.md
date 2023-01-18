@@ -128,12 +128,12 @@ Gets additional configuration properties (a component) for specific capabilities
 
 ### **getRedstonePower**
 `
-getRedstonePower(): number
+getRedstonePower(): number | undefined
 `
 
 Returns the net redstone power of this block.
 
-#### **Returns** *number* - Returns undefined if redstone power is not applicable to this block.
+#### **Returns** *number* | *undefined* - Returns undefined if redstone power is not applicable to this block.
 
 > [!WARNING]
 > This function can throw errors.

@@ -3,30 +3,39 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: minecraft/server.Items Class
-description: Contents of the @minecraft/server.Items class.
+title: minecraft/server.EntityOnFireComponent Class
+description: Contents of the @minecraft/server.EntityOnFireComponent class.
 ---
-# Items Class
+# EntityOnFireComponent Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Represents a collection of all of the available item types in Minecraft.
+## Extends
+- [*IEntityComponent*](IEntityComponent.md)
 
-## Methods
-- [get](#get)
+When present on an entity, this entity is on fire.
 
-### **get**
-`
-static "get"(itemId: string): ItemType
-`
+## Properties
 
-Returns an item type given an item type identifier.
+### **onFireTicksRemaining**
+`read-only onFireTicksRemaining: number;`
 
-#### **Parameters**
-- **itemId**: *string*
-  
-  Type of the item to return.
+The number of ticks remaining before the fire goes out.
 
-#### **Returns** [*ItemType*](ItemType.md)
+Type: *number*
+
+### **typeId**
+`read-only typeId: string;`
+
+Should be 'minecraft:onfire'.
+
+Type: *string*
+
+## Constants
+
+### **componentId**
+`static read-only componentId = "minecraft:onfire";`
+
+Type: *string*

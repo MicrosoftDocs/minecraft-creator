@@ -21,8 +21,10 @@ Contains objectives and participants for the scoreboard.
 - [getObjectiveAtDisplaySlot](#getobjectiveatdisplayslot)
 - [getObjectives](#getobjectives)
 - [getParticipants](#getparticipants)
+- [getScore](#getscore)
 - [removeObjective](#removeobjective)
 - [setObjectiveAtDisplaySlot](#setobjectiveatdisplayslot)
+- [setScore](#setscore)
 
 ### **addObjective**
 `
@@ -64,6 +66,8 @@ Returns a specific objective (by id).
 
 #### **Parameters**
 - **objectiveId**: *string*
+  
+  Identifier of the objective.
 
 #### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md)
 
@@ -109,6 +113,26 @@ Returns all defined scoreboard identities.
 > [!WARNING]
 > This function can throw errors.
 
+### **getScore**
+`
+getScore(objective: ScoreboardObjective, participant: ScoreboardIdentity): number
+`
+
+Returns a score given an objective and participant.
+
+#### **Parameters**
+- **objective**: [*ScoreboardObjective*](ScoreboardObjective.md)
+  
+  Objective to retrieve the score for.
+- **participant**: [*ScoreboardIdentity*](ScoreboardIdentity.md)
+  
+  Participant to retrieve the score for.
+
+#### **Returns** *number* - Score value.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **removeObjective**
 `
 removeObjective(objectiveId: ScoreboardObjective | string): boolean
@@ -136,6 +160,27 @@ Sets an objective into a display slot with specified additional display settings
 - **objectiveDisplaySetting**: [*ScoreboardObjectiveDisplayOptions*](ScoreboardObjectiveDisplayOptions.md)
 
 #### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md)
+
+> [!WARNING]
+> This function can throw errors.
+
+### **setScore**
+`
+setScore(objective: ScoreboardObjective, participant: ScoreboardIdentity, score: number): boolean
+`
+
+Sets the score given a participant and objective.
+
+#### **Parameters**
+- **objective**: [*ScoreboardObjective*](ScoreboardObjective.md)
+  
+  Objective to use for the scoreboard.
+- **participant**: [*ScoreboardIdentity*](ScoreboardIdentity.md)
+  
+  Participant to apply the scoreboard value to.
+- **score**: *number*
+
+#### **Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.

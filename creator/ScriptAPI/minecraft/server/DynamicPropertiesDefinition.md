@@ -25,6 +25,8 @@ Class used in conjunction with [*@minecraft/server.PropertyRegistry*](../../mine
 new DynamicPropertiesDefinition()
 `
 
+Creates a new DynamicPropertiesDefinition for use within a WorldInitialize event.
+
 #### **Returns** [*DynamicPropertiesDefinition*](DynamicPropertiesDefinition.md)
 
 ### **defineBoolean**
@@ -32,7 +34,7 @@ new DynamicPropertiesDefinition()
 defineBoolean(identifier: string): void
 `
 
-Defines a new boolean dynamic property.
+Defines a boolean dynamic property.
 
 #### **Parameters**
 - **identifier**: *string*
@@ -45,7 +47,7 @@ Defines a new boolean dynamic property.
 defineNumber(identifier: string): void
 `
 
-Defines a new number dynamic property.
+Defines a number dynamic property.
 
 #### **Parameters**
 - **identifier**: *string*
@@ -58,7 +60,7 @@ Defines a new number dynamic property.
 defineString(identifier: string, maxLength: number): void
 `
 
-Defines a new string dynamic property.
+Defines a string dynamic property.
 
 #### **Parameters**
 - **identifier**: *string*

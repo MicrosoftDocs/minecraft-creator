@@ -41,6 +41,8 @@ Type: *number*
 new EnchantmentList(enchantmentSlot: number)
 `
 
+Creates a new EnchantmentList.
+
 #### **Parameters**
 - **enchantmentSlot**: *number*
 

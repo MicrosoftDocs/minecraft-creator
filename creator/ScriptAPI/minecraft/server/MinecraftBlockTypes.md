@@ -20,7 +20,7 @@ Contains definitions of standard Minecraft and Minecraft Education Edition block
 
 ### **get**
 `
-static get(typeName: string): BlockType
+static "get"(typeName: string): BlockType
 `
 
 Returns a specific Minecraft block type given a type id.
