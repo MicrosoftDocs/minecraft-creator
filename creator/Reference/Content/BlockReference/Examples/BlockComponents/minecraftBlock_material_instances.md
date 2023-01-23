@@ -50,13 +50,13 @@ The following are parameters of EACH material instance you provide:
     },
     "custom_sides": {
         "texture": "side_texture"
-    }
+    },
     "up": {
         "texture": "top_texture"
-    }
+    },
     "down": {
         "texture": "bottom_texture"
-    }
+    },
     "north": "custom_sides",
     "south": "custom_sides",
     "east": "custom_sides",

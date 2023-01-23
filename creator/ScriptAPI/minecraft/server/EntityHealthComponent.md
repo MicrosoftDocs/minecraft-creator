@@ -78,13 +78,15 @@ Resets the current health to the minimum value.
 
 ### **setCurrent**
 `
-setCurrent(value: number): void
+setCurrent(value: number): boolean
 `
 
 Sets the current health of the entity.
 
 #### **Parameters**
 - **value**: *number*
+
+#### **Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.

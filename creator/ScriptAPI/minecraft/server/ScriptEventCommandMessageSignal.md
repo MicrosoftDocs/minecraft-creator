@@ -20,26 +20,26 @@ Allows for registering an event handler that responds to inbound /scriptevent co
 
 ### **subscribe**
 `
-subscribe(callback: (arg: ScriptScriptCommandMessageEvent) => void, options?: ScriptEventMessageFilterOptions): (arg: ScriptScriptCommandMessageEvent) => void
+subscribe(callback: (arg: ScriptEventCommandMessageEvent) => void, options?: ScriptEventMessageFilterOptions): (arg: ScriptEventCommandMessageEvent) => void
 `
 
 Registers a new ScriptEvent handler.
 
 #### **Parameters**
-- **callback**: (arg: [*ScriptScriptCommandMessageEvent*](ScriptScriptCommandMessageEvent.md)) => *void*
+- **callback**: (arg: [*ScriptEventCommandMessageEvent*](ScriptEventCommandMessageEvent.md)) => *void*
 - **options**?: [*ScriptEventMessageFilterOptions*](ScriptEventMessageFilterOptions.md) = `null`
 
-#### **Returns** (arg: [*ScriptScriptCommandMessageEvent*](ScriptScriptCommandMessageEvent.md)) => *void*
+#### **Returns** (arg: [*ScriptEventCommandMessageEvent*](ScriptEventCommandMessageEvent.md)) => *void*
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ScriptScriptCommandMessageEvent) => void): void
+unsubscribe(callback: (arg: ScriptEventCommandMessageEvent) => void): void
 `
 
 Unsubscribes a particular handler for a ScriptEvent event.
 
 #### **Parameters**
-- **callback**: (arg: [*ScriptScriptCommandMessageEvent*](ScriptScriptCommandMessageEvent.md)) => *void*
+- **callback**: (arg: [*ScriptEventCommandMessageEvent*](ScriptEventCommandMessageEvent.md)) => *void*
 
 > [!WARNING]
 > This function can throw errors.

@@ -3,10 +3,10 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: minecraft/server.ScriptScriptCommandMessageEvent Class
-description: Contents of the @minecraft/server.ScriptScriptCommandMessageEvent class.
+title: minecraft/server.ScriptEventCommandMessageEvent Class
+description: Contents of the @minecraft/server.ScriptEventCommandMessageEvent class.
 ---
-# ScriptScriptCommandMessageEvent Class
+# ScriptEventCommandMessageEvent Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 > [!CAUTION]

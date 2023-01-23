@@ -39,6 +39,9 @@ Type: [*ScoreboardIdentityType*](ScoreboardIdentityType.md)
 
 ## Methods
 - [getEntity](#getentity)
+- [getScore](#getscore)
+- [removeFromObjective](#removefromobjective)
+- [setScore](#setscore)
 
 ### **getEntity**
 `
@@ -48,6 +51,60 @@ getEntity(): Entity
 If the scoreboard identity is an entity or player, returns the entity that this scoreboard item corresponds to.
 
 #### **Returns** [*Entity*](Entity.md)
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getScore**
+`
+getScore(objective: ScoreboardObjective): number
+`
+
+Gets the current score for this participant based on an objective.
+
+#### **Parameters**
+- **objective**: [*ScoreboardObjective*](ScoreboardObjective.md)
+  
+  The objective to retrieve the score for.
+
+#### **Returns** *number* - Score value.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **removeFromObjective**
+`
+removeFromObjective(objective: ScoreboardObjective): boolean
+`
+
+Removes this participant from an objective.
+
+#### **Parameters**
+- **objective**: [*ScoreboardObjective*](ScoreboardObjective.md)
+  
+  The objective to remove this participant from.
+
+#### **Returns** *boolean*
+
+> [!WARNING]
+> This function can throw errors.
+
+### **setScore**
+`
+setScore(objective: ScoreboardObjective, score: number): boolean
+`
+
+Sets a score for this participant for a particular objective.
+
+#### **Parameters**
+- **objective**: [*ScoreboardObjective*](ScoreboardObjective.md)
+  
+  Objective to apply the score to.
+- **score**: *number*
+  
+  Score value.
+
+#### **Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.

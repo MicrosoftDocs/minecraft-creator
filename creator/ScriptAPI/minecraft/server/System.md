@@ -35,9 +35,9 @@ Type: [*SystemEvents*](SystemEvents.md)
 
 ## Methods
 - [clearRun](#clearrun)
-- [clearRunSchedule](#clearrunschedule)
 - [run](#run)
-- [runSchedule](#runschedule)
+- [runInterval](#runinterval)
+- [runTimeout](#runtimeout)
 
 ### **clearRun**
 `
@@ -48,19 +48,6 @@ Cancels the execution of a function run that was previously scheduled via the `r
 
 #### **Parameters**
 - **runId**: *number*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-### **clearRunSchedule**
-`
-clearRunSchedule(runScheduleId: number): void
-`
-
-Cancels the execution of a scheduled function run that was previously scheduled via the `runSchedule` function.
-
-#### **Parameters**
-- **runScheduleId**: *number*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -79,22 +66,42 @@ Runs a specified function at a future time. This is frequently used to implement
 
 #### **Returns** *number* - An opaque identifier that can be used with the `clearRun` function to cancel the execution of this run.
 
-### **runSchedule**
+### **runInterval**
 `
-runSchedule(callback: () => void, tickInterval?: number): number
+runInterval(callback: () => void, tickInterval?: number): number
 `
 
-Runs a specified function at a scheduled interval. This is frequently used to implement delayed behaviors and game loops.
+Runs a set of code on an interval.
 
 #### **Parameters**
 - **callback**: () => *void*
   
-  Function callback to run on the specified schedule.
+  Functional code that will run when this interval occurs.
 - **tickInterval**?: *number* = `null`
   
-  The number of ticks to run this function within - run this function every `tickInterval` ticks.
+  An interval of every N ticks that the callback will be called upon.
 
-#### **Returns** *number* - An opaque identifier that can be used with the `clearRunSchedule` function to cancel the execution of this scheduled run.
+#### **Returns** *number* - An opaque handle that can be used with the clearRun method to stop the run of this function on an interval.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **runTimeout**
+`
+runTimeout(callback: () => void, tickDelay?: number): number
+`
+
+Runs a set of code at a future time specified by tickDelay.
+
+#### **Parameters**
+- **callback**: () => *void*
+  
+  Functional code that will run when this timeout occurs.
+- **tickDelay**?: *number* = `null`
+  
+  Amount of time, in ticks, before the interval will be called.
+
+#### **Returns** *number* - An opaque handle that can be used with the clearRun method to stop the run of this function on an interval.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

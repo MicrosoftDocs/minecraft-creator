@@ -34,6 +34,8 @@ Type: *string*
 - [getParticipants](#getparticipants)
 - [getScore](#getscore)
 - [getScores](#getscores)
+- [removeParticipant](#removeparticipant)
+- [setScore](#setscore)
 
 ### **getParticipants**
 `
@@ -56,6 +58,8 @@ Returns a specific score for a participant.
 
 #### **Parameters**
 - **participant**: [*ScoreboardIdentity*](ScoreboardIdentity.md)
+  
+  Identifier of the participant to retrieve a score for.
 
 #### **Returns** *number*
 
@@ -70,6 +74,43 @@ getScores(): ScoreboardScoreInfo[]
 Returns specific scores for this objective for all participants.
 
 #### **Returns** [*ScoreboardScoreInfo*](ScoreboardScoreInfo.md)[]
+
+> [!WARNING]
+> This function can throw errors.
+
+### **removeParticipant**
+`
+removeParticipant(participant: ScoreboardIdentity): boolean
+`
+
+Removes a participant from this scoreboard objective.
+
+#### **Parameters**
+- **participant**: [*ScoreboardIdentity*](ScoreboardIdentity.md)
+  
+  Participant to remove from being tracked with this objective.
+
+#### **Returns** *boolean*
+
+> [!WARNING]
+> This function can throw errors.
+
+### **setScore**
+`
+setScore(participant: ScoreboardIdentity, score: number): boolean
+`
+
+Sets a score for a participant.
+
+#### **Parameters**
+- **participant**: [*ScoreboardIdentity*](ScoreboardIdentity.md)
+  
+  Identity of the participant.
+- **score**: *number*
+  
+  New value of the score.
+
+#### **Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.

@@ -254,13 +254,6 @@ This event fires when a projectile hits an entity or block.
 
 Type: [*ProjectileHitEventSignal*](ProjectileHitEventSignal.md)
 
-### **tick**
-`read-only tick: TickEventSignal;`
-
-This event fires every tick - which is 20 times per second.
-
-Type: [*TickEventSignal*](TickEventSignal.md)
-
 ### **weatherChange**
 `read-only weatherChange: WeatherChangeEventSignal;`
 

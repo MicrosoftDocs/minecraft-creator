@@ -185,13 +185,6 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
-### **bamboo**
-`static read-only bamboo: ItemType;`
-
-Represents an item that can place a bamboo tree within Minecraft.
-
-Type: [*ItemType*](ItemType.md)
-
 ### **banner**
 `static read-only banner: ItemType;`
 

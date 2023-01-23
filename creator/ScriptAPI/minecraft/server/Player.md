@@ -56,6 +56,14 @@ Type: *boolean*
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+### **level**
+`read-only level: number;`
+
+Type: *number*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **location**
 `read-only location: Vector3;`
 
@@ -133,6 +141,14 @@ Type: [*Entity*](Entity.md)
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+### **totalXpNeededForNextLevel**
+`read-only totalXpNeededForNextLevel: number;`
+
+Type: *number*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **typeId**
 `read-only typeId: string;`
 
@@ -160,17 +176,31 @@ Type: [*Vector3*](Vector3.md)
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+### **xpEarnedAtCurrentLevel**
+`read-only xpEarnedAtCurrentLevel: number;`
+
+Type: *number*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ## Methods
 - [addEffect](#addeffect)
+- [addExperience](#addexperience)
+- [addLevels](#addlevels)
 - [addTag](#addtag)
+- [applyDamage](#applydamage)
+- [extinguishFire](#extinguishfire)
 - [getBlockFromViewDirection](#getblockfromviewdirection)
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
 - [getDynamicProperty](#getdynamicproperty)
 - [getEffect](#geteffect)
+- [getEffects](#geteffects)
 - [getEntitiesFromViewDirection](#getentitiesfromviewdirection)
 - [getItemCooldown](#getitemcooldown)
 - [getTags](#gettags)
+- [getTotalXp](#gettotalxp)
 - [hasComponent](#hascomponent)
 - [hasTag](#hastag)
 - [isOp](#isop)
@@ -179,8 +209,10 @@ Type: [*Vector3*](Vector3.md)
 - [postClientMessage](#postclientmessage)
 - [removeDynamicProperty](#removedynamicproperty)
 - [removeTag](#removetag)
+- [resetLevel](#resetlevel)
 - [runCommandAsync](#runcommandasync)
 - [setDynamicProperty](#setdynamicproperty)
+- [setOnFire](#setonfire)
 - [setOp](#setop)
 - [setRotation](#setrotation)
 - [setVelocity](#setvelocity)
@@ -215,6 +247,46 @@ Adds an effect, like poison, to the entity.
 > [!WARNING]
 > This function can throw errors.
 
+### **addExperience**
+`
+addExperience(amount: number): number
+`
+
+Adds/removes experience to/from the Player and returns the current experience of the Player.
+
+#### **Parameters**
+- **amount**: *number*
+  
+  Amount of experience to add. Note that this can be negative.
+
+#### **Returns** *number* - Returns the current experience of the Player.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **addLevels**
+`
+addLevels(amount: number): number
+`
+
+ Adds/removes level to/from the Player and returns the current level of the Player.
+
+#### **Parameters**
+- **amount**: *number*
+  
+  Amount to add to the player.
+
+#### **Returns** *number* - Returns the current level of the Player.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **addTag**
 `
 addTag(tag: string): boolean
@@ -226,6 +298,49 @@ Adds a specified tag to an entity.
 - **tag**: *string*
   
   Content of the tag to add.
+
+#### **Returns** *boolean*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **applyDamage**
+`
+applyDamage(amount: number, source?: EntityDamageSource): boolean
+`
+
+Applies damage to the player.
+
+#### **Parameters**
+- **amount**: *number*
+  
+  Amount of damage to apply.
+- **source**?: [*EntityDamageSource*](EntityDamageSource.md) = `null`
+  
+  Additional information around the source of damage that can apply to the player.
+
+#### **Returns** *boolean*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **extinguishFire**
+`
+extinguishFire(useEffects?: boolean): boolean
+`
+
+Extinguishes the fire if the player is on fire. Note that you can call getComponent('minecraft:onfire') and, if present, the player is on fire."
+
+#### **Parameters**
+- **useEffects**?: *boolean* = `null`
+  
+  Whether to show any visual effects connected to the extinguishing.
 
 #### **Returns** *boolean*
 
@@ -284,7 +399,7 @@ Returns all components that are both present on this entity and supported by the
 
 ### **getDynamicProperty**
 `
-getDynamicProperty(identifier: string): boolean | number | string
+getDynamicProperty(identifier: string): boolean | number | string | undefined
 `
 
 Returns a property value.
@@ -292,7 +407,7 @@ Returns a property value.
 #### **Parameters**
 - **identifier**: *string*
 
-#### **Returns** *boolean* | *number* | *string* - Returns the value for the property, or undefined if the property has not been set.
+#### **Returns** *boolean* | *number* | *string* | *undefined* - Returns the value for the property, or undefined if the property has not been set.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -311,6 +426,21 @@ Returns the effect for the specified EffectType on the entity, or undefined if t
 - **effectType**: [*EffectType*](EffectType.md)
 
 #### **Returns** [*Effect*](Effect.md) - Effect object for the specified effect, or undefined if the effect is not present.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getEffects**
+`
+getEffects(): Effect[]
+`
+
+Returns a set of effects applied to this player.
+
+#### **Returns** [*Effect*](Effect.md)[]
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -364,6 +494,21 @@ getTags(): string[]
 Returns all tags associated with an entity.
 
 #### **Returns** *string*[]
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getTotalXp**
+`
+getTotalXp(): number
+`
+
+ Gets the total experience of the Player.
+
+#### **Returns** *number*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -512,6 +657,19 @@ Removes a specified tag from an entity.
 > [!WARNING]
 > This function can throw errors.
 
+### **resetLevel**
+`
+resetLevel(): void
+`
+
+Resets the level of the player.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **runCommandAsync**
 `
 runCommandAsync(commandString: string): Promise<CommandResult>
@@ -541,6 +699,27 @@ Sets a specified property to a value.
 - **value**: *boolean* | *number* | *string*
   
   Data value of the property to set.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **setOnFire**
+`
+setOnFire(seconds: number, useEffects?: boolean): boolean
+`
+
+Sets a player on fire (if it is not in water or rain). Note that you can call getComponent('minecraft:onfire') and, if present, the player is on fire.
+
+#### **Parameters**
+- **seconds**: *number*
+  
+  Length of time to set the player on fire.
+- **useEffects**?: *boolean* = `null`
+
+#### **Returns** *boolean*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -675,13 +854,13 @@ Teleports the selected player to a new location, and will have the player facing
 
 ### **tell**
 `
-tell(message: RawMessage | string): void
+tell(message: (RawMessage | string)[] | RawMessage | string): void
 `
 
 Sends a message that is displayed on the connected client for this player.
 
 #### **Parameters**
-- **message**: [*RawMessage*](RawMessage.md) | *string*
+- **message**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

@@ -22,6 +22,7 @@ Type: *string*
 
 ## Methods
 - [createExplosion](#createexplosion)
+- [fillBlocks](#fillblocks)
 - [getBlock](#getblock)
 - [getBlockFromRay](#getblockfromray)
 - [getEntities](#getentities)
@@ -87,6 +88,35 @@ Creates an explosion at the specified location.
   );
   overworld.createExplosion(explodeNoBlocksLoc, 15, explosionOptions);
 ```
+
+### **fillBlocks**
+`
+fillBlocks(begin: BlockLocation, end: BlockLocation, block: BlockPermutation | BlockType, options?: BlockFillOptions): number
+`
+
+Fills an area between begin and end with block of type block.
+
+#### **Parameters**
+- **begin**: [*BlockLocation*](BlockLocation.md)
+  
+  The lower northwest starting corner of the area.
+- **end**: [*BlockLocation*](BlockLocation.md)
+  
+  The upper southeast ending corner of the area.
+- **block**: [*BlockPermutation*](BlockPermutation.md) | [*BlockType*](BlockType.md)
+  
+  Type of block to fill the volume with.
+- **options**?: [*BlockFillOptions*](BlockFillOptions.md) = `null`
+  
+  A set of additional options, such as a matching block to potentially replace this fill block with.
+
+#### **Returns** *number* -  Returns number of blocks placed.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **getBlock**
 `

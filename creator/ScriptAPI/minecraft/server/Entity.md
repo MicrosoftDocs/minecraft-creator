@@ -134,11 +134,14 @@ Type: [*Vector3*](Vector3.md)
 ## Methods
 - [addEffect](#addeffect)
 - [addTag](#addtag)
+- [applyDamage](#applydamage)
+- [extinguishFire](#extinguishfire)
 - [getBlockFromViewDirection](#getblockfromviewdirection)
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
 - [getDynamicProperty](#getdynamicproperty)
 - [getEffect](#geteffect)
+- [getEffects](#geteffects)
 - [getEntitiesFromViewDirection](#getentitiesfromviewdirection)
 - [getTags](#gettags)
 - [hasComponent](#hascomponent)
@@ -148,6 +151,7 @@ Type: [*Vector3*](Vector3.md)
 - [removeTag](#removetag)
 - [runCommandAsync](#runcommandasync)
 - [setDynamicProperty](#setdynamicproperty)
+- [setOnFire](#setonfire)
 - [setRotation](#setrotation)
 - [setVelocity](#setvelocity)
 - [teleport](#teleport)
@@ -225,6 +229,49 @@ Adds a specified tag to an entity.
 > [!WARNING]
 > This function can throw errors.
 
+### **applyDamage**
+`
+applyDamage(amount: number, source?: EntityDamageSource): boolean
+`
+
+Applies a set of damage to an entity.
+
+#### **Parameters**
+- **amount**: *number*
+  
+  Amount of damage to apply.
+- **source**?: [*EntityDamageSource*](EntityDamageSource.md) = `null`
+  
+  Additional option about the source of damage, which may add additional effects or spur additional behaviors on this entity.
+
+#### **Returns** *boolean*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **extinguishFire**
+`
+extinguishFire(useEffects?: boolean): boolean
+`
+
+Extinguishes the fire if the entity is on fire. Note that you can call getComponent('minecraft:onfire') and, if present, the entity is on fire.
+
+#### **Parameters**
+- **useEffects**?: *boolean* = `null`
+  
+  Whether to show any visual effects connected to the extinguishing.
+
+#### **Returns** *boolean*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **getBlockFromViewDirection**
 `
 getBlockFromViewDirection(options?: BlockRaycastOptions): Block
@@ -274,7 +321,7 @@ Returns all components that are both present on this entity and supported by the
 
 ### **getDynamicProperty**
 `
-getDynamicProperty(identifier: string): boolean | number | string
+getDynamicProperty(identifier: string): boolean | number | string | undefined
 `
 
 Returns a property value.
@@ -282,7 +329,7 @@ Returns a property value.
 #### **Parameters**
 - **identifier**: *string*
 
-#### **Returns** *boolean* | *number* | *string* - Returns the value for the property, or undefined if the property has not been set.
+#### **Returns** *boolean* | *number* | *string* | *undefined* - Returns the value for the property, or undefined if the property has not been set.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -301,6 +348,21 @@ Returns the effect for the specified EffectType on the entity, or undefined if t
 - **effectType**: [*EffectType*](EffectType.md)
 
 #### **Returns** [*Effect*](Effect.md) - Effect object for the specified effect, or undefined if the effect is not present.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getEffects**
+`
+getEffects(): Effect[]
+`
+
+Returns a set of effects applied to this item.
+
+#### **Returns** [*Effect*](Effect.md)[] - List of effects.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -458,6 +520,27 @@ Sets a specified property to a value.
 - **value**: *boolean* | *number* | *string*
   
   Data value of the property to set.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **setOnFire**
+`
+setOnFire(seconds: number, useEffects?: boolean): boolean
+`
+
+Sets an entity on fire (if it is not in water or rain). Note that you can call getComponent('minecraft:onfire') and, if present, the entity is on fire.
+
+#### **Parameters**
+- **seconds**: *number*
+  
+  Length of time to set the entity on fire.
+- **useEffects**?: *boolean* = `null`
+
+#### **Returns** *boolean*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

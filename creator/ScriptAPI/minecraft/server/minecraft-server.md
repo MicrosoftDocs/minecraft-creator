@@ -22,6 +22,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ## Available Versions
 - `1.1.0-beta`
 - `1.0.0`
+- `0.1.0`
 
 ## Enumerations
 - [Direction](Direction.md)
@@ -156,6 +157,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntityNavigationGenericComponent](EntityNavigationGenericComponent.md)
 - [EntityNavigationHoverComponent](EntityNavigationHoverComponent.md)
 - [EntityNavigationWalkComponent](EntityNavigationWalkComponent.md)
+- [EntityOnFireComponent](EntityOnFireComponent.md)
 - [EntityPushThroughComponent](EntityPushThroughComponent.md)
 - [EntityRideableComponent](EntityRideableComponent.md)
 - [EntityScaleComponent](EntityScaleComponent.md)
@@ -240,8 +242,8 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ScoreboardObjective](ScoreboardObjective.md)
 - [ScoreboardScoreInfo](ScoreboardScoreInfo.md)
 - [ScreenDisplay](ScreenDisplay.md)
+- [ScriptEventCommandMessageEvent](ScriptEventCommandMessageEvent.md)
 - [ScriptEventCommandMessageSignal](ScriptEventCommandMessageSignal.md)
-- [ScriptScriptCommandMessageEvent](ScriptScriptCommandMessageEvent.md)
 - [Seat](Seat.md)
 - [ServerMessageSignal](ServerMessageSignal.md)
 - [StringBlockProperty](StringBlockProperty.md)
@@ -259,7 +261,9 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [XYRotation](XYRotation.md)
 
 ## Interfaces
+- [BlockFillOptions](BlockFillOptions.md)
 - [BlockRaycastOptions](BlockRaycastOptions.md)
+- [EntityDamageSource](EntityDamageSource.md)
 - [EntityDataDrivenTriggerEventOptions](EntityDataDrivenTriggerEventOptions.md)
 - [EntityEventOptions](EntityEventOptions.md)
 - [EntityQueryOptions](EntityQueryOptions.md)
@@ -365,6 +369,7 @@ Type: [*World*](World.md)
 #### Added *[DefinitionModifier](DefinitionModifier.md)*
 #### Changed *[Dimension](Dimension.md)*
 - Added function *[createExplosion](Dimension.md#createexplosion)*
+- Added function *[fillBlocks](Dimension.md#fillblocks)*
 - Added function *[getBlock](Dimension.md#getblock)*
 - Added function *[getBlockFromRay](Dimension.md#getblockfromray)*
 - Added function *[getEntities](Dimension.md#getentities)*
@@ -397,11 +402,14 @@ Type: [*World*](World.md)
 - Added property *[viewDirection](Entity.md#viewdirection)*
 - Added function *[addEffect](Entity.md#addeffect)*
 - Added function *[addTag](Entity.md#addtag)*
+- Added function *[applyDamage](Entity.md#applydamage)*
+- Added function *[extinguishFire](Entity.md#extinguishfire)*
 - Added function *[getBlockFromViewDirection](Entity.md#getblockfromviewdirection)*
 - Added function *[getComponent](Entity.md#getcomponent)*
 - Added function *[getComponents](Entity.md#getcomponents)*
 - Added function *[getDynamicProperty](Entity.md#getdynamicproperty)*
 - Added function *[getEffect](Entity.md#geteffect)*
+- Added function *[getEffects](Entity.md#geteffects)*
 - Added function *[getEntitiesFromViewDirection](Entity.md#getentitiesfromviewdirection)*
 - Added function *[getTags](Entity.md#gettags)*
 - Added function *[hasComponent](Entity.md#hascomponent)*
@@ -410,6 +418,7 @@ Type: [*World*](World.md)
 - Added function *[removeDynamicProperty](Entity.md#removedynamicproperty)*
 - Added function *[removeTag](Entity.md#removetag)*
 - Added function *[setDynamicProperty](Entity.md#setdynamicproperty)*
+- Added function *[setOnFire](Entity.md#setonfire)*
 - Added function *[setRotation](Entity.md#setrotation)*
 - Added function *[setVelocity](Entity.md#setvelocity)*
 - Added function *[teleport](Entity.md#teleport)*
@@ -471,6 +480,7 @@ Type: [*World*](World.md)
 #### Added *[EntityNavigationGenericComponent](EntityNavigationGenericComponent.md)*
 #### Added *[EntityNavigationHoverComponent](EntityNavigationHoverComponent.md)*
 #### Added *[EntityNavigationWalkComponent](EntityNavigationWalkComponent.md)*
+#### Added *[EntityOnFireComponent](EntityOnFireComponent.md)*
 #### Added *[EntityPushThroughComponent](EntityPushThroughComponent.md)*
 #### Added *[EntityRideableComponent](EntityRideableComponent.md)*
 #### Added *[EntityScaleComponent](EntityScaleComponent.md)*
@@ -541,6 +551,7 @@ Type: [*World*](World.md)
 - Added property *[dimension](Player.md#dimension)*
 - Added property *[headLocation](Player.md#headlocation)*
 - Added property *[isSneaking](Player.md#issneaking)*
+- Added property *[level](Player.md#level)*
 - Added property *[location](Player.md#location)*
 - Added property *[nameTag](Player.md#nametag)*
 - Added property *[onScreenDisplay](Player.md#onscreendisplay)*
@@ -548,18 +559,26 @@ Type: [*World*](World.md)
 - Added property *[scoreboard](Player.md#scoreboard)*
 - Added property *[selectedSlot](Player.md#selectedslot)*
 - Added property *[target](Player.md#target)*
+- Added property *[totalXpNeededForNextLevel](Player.md#totalxpneededfornextlevel)*
 - Added property *[velocity](Player.md#velocity)*
 - Added property *[viewDirection](Player.md#viewdirection)*
+- Added property *[xpEarnedAtCurrentLevel](Player.md#xpearnedatcurrentlevel)*
 - Added function *[addEffect](Player.md#addeffect)*
+- Added function *[addExperience](Player.md#addexperience)*
+- Added function *[addLevels](Player.md#addlevels)*
 - Added function *[addTag](Player.md#addtag)*
+- Added function *[applyDamage](Player.md#applydamage)*
+- Added function *[extinguishFire](Player.md#extinguishfire)*
 - Added function *[getBlockFromViewDirection](Player.md#getblockfromviewdirection)*
 - Added function *[getComponent](Player.md#getcomponent)*
 - Added function *[getComponents](Player.md#getcomponents)*
 - Added function *[getDynamicProperty](Player.md#getdynamicproperty)*
 - Added function *[getEffect](Player.md#geteffect)*
+- Added function *[getEffects](Player.md#geteffects)*
 - Added function *[getEntitiesFromViewDirection](Player.md#getentitiesfromviewdirection)*
 - Added function *[getItemCooldown](Player.md#getitemcooldown)*
 - Added function *[getTags](Player.md#gettags)*
+- Added function *[getTotalXp](Player.md#gettotalxp)*
 - Added function *[hasComponent](Player.md#hascomponent)*
 - Added function *[hasTag](Player.md#hastag)*
 - Added function *[isOp](Player.md#isop)*
@@ -568,7 +587,9 @@ Type: [*World*](World.md)
 - Added function *[postClientMessage](Player.md#postclientmessage)*
 - Added function *[removeDynamicProperty](Player.md#removedynamicproperty)*
 - Added function *[removeTag](Player.md#removetag)*
+- Added function *[resetLevel](Player.md#resetlevel)*
 - Added function *[setDynamicProperty](Player.md#setdynamicproperty)*
+- Added function *[setOnFire](Player.md#setonfire)*
 - Added function *[setOp](Player.md#setop)*
 - Added function *[setRotation](Player.md#setrotation)*
 - Added function *[setVelocity](Player.md#setvelocity)*
@@ -593,8 +614,8 @@ Type: [*World*](World.md)
 #### Added *[ScoreboardObjective](ScoreboardObjective.md)*
 #### Added *[ScoreboardScoreInfo](ScoreboardScoreInfo.md)*
 #### Added *[ScreenDisplay](ScreenDisplay.md)*
+#### Added *[ScriptEventCommandMessageEvent](ScriptEventCommandMessageEvent.md)*
 #### Added *[ScriptEventCommandMessageSignal](ScriptEventCommandMessageSignal.md)*
-#### Added *[ScriptScriptCommandMessageEvent](ScriptScriptCommandMessageEvent.md)*
 #### Added *[Seat](Seat.md)*
 #### Added *[ServerMessageSignal](ServerMessageSignal.md)*
 #### Added *[StringBlockProperty](StringBlockProperty.md)*
@@ -602,8 +623,8 @@ Type: [*World*](World.md)
 - Added property *[currentTick](System.md#currenttick)*
 - Added property *[events](System.md#events)*
 - Added function *[clearRun](System.md#clearrun)*
-- Added function *[clearRunSchedule](System.md#clearrunschedule)*
-- Added function *[runSchedule](System.md#runschedule)*
+- Added function *[runInterval](System.md#runinterval)*
+- Added function *[runTimeout](System.md#runtimeout)*
 #### Added *[SystemEvents](SystemEvents.md)*
 #### Added *[TickEvent](TickEvent.md)*
 #### Added *[TickEventSignal](TickEventSignal.md)*

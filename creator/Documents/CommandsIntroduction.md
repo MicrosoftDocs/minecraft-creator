@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-bbortree
 title: Introduction to Commands
 ms.prod: gaming

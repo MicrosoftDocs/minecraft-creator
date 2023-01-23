@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-jimseaman
+ms.author: JimSeaman42
 title: Custom Blocks Oversized Geometry
 ms.prod: gaming
 description: "An Advanced Tutorial on Customizing Blocks with Oversized Geometry"
@@ -8,7 +8,7 @@ description: "An Advanced Tutorial on Customizing Blocks with Oversized Geometry
 
 # Custom Blocks Part 4: Oversized Geometry
 
-One of the coolest features around allows for custom block geometries that are larger than 16x16x16 pixels. We'll dive into how that works in just a moment, but first...
+One of the coolest features allows for custom block geometries that are larger than 16x16x16 pixels. We'll dive into how that works in just a moment, but first...
 
 ## Prerequisites
 
@@ -62,217 +62,111 @@ For this last tutorial, you're on your own setting up the rest of the Giant Umbr
 
 ```json
 { 
-
     "format_version": "1.12.0", 
-
     "minecraft:geometry": [ 
-
         { 
-
             "description": { 
-
                 "identifier": "geometry.umbrella", 
-
                 "texture_width": 128, 
-
                 "texture_height": 128, 
-
                 "visible_bounds_width": 3, 
-
                 "visible_bounds_height": 3.5, 
-
                 "visible_bounds_offset": [0, 1.25, 0] 
-
             }, 
-
             "bones": [ 
-
                 { 
-
                     "name": "umbrella", 
-
                     "pivot": [0, 13, 0], 
-
                     "cubes": [ 
-
                         {"origin": [-3, 28, -5], "size": [6, 1, 2], "uv": [0, 3]}, 
-
                         {"origin": [-5, 27, -7], "size": [10, 1, 2], "uv": [66, 53]}, 
-
                         {"origin": [-5, 27, 5], "size": [10, 1, 2], "uv": [66, 37]}, 
-
                         {"origin": [5, 27, -5], "size": [2, 1, 10], "uv": [66, 42]}, 
-
                         {"origin": [-7, 27, -5], "size": [2, 1, 10], "uv": [36, 64]}, 
-
                         {"origin": [-9, 26, -7], "size": [2, 1, 14], "uv": [18, 64]}, 
-
                         {"origin": [7, 26, -7], "size": [2, 1, 14], "uv": [0, 63]}, 
-
                         {"origin": [9, 25, -9], "size": [2, 1, 18], "uv": [46, 62]}, 
-
                         {"origin": [11, 24, -10], "size": [1, 1, 20], "uv": [44, 21]}, 
-
                         {"origin": [12, 23, -10], "size": [1, 1, 20], "uv": [0, 42]}, 
-
                         {"origin": [13, 22, -10], "size": [1, 1, 20], "uv": [22, 1]}, 
-
                         {"origin": [14, 21, -10], "size": [1, 1, 20], "uv": [0, 21]}, 
-
                         {"origin": [-12, 24, -10], "size": [1, 1, 20], "uv": [44, 0]}, 
-
                         {"origin": [-13, 23, -10], "size": [1, 1, 20], "uv": [22, 43]}, 
-
                         {"origin": [-14, 22, -10], "size": [1, 1, 20], "uv": [22, 22]}, 
-
                         {"origin": [-15, 21, -10], "size": [1, 1, 20], "uv": [0, 0]}, 
-
                         {"origin": [-11, 25, -9], "size": [2, 1, 18], "uv": [44, 43]}, 
-
                         {"origin": [-9, 25, 9], "size": [18, 1, 2], "uv": [66, 21]}, 
-
                         {"origin": [-9, 25, -11], "size": [18, 1, 2], "uv": [66, 16]}, 
-
                         {"origin": [-10, 24, -12], "size": [20, 1, 1], "uv": [66, 14]}, 
-
                         {"origin": [-10, 23, -13], "size": [20, 1, 1], "uv": [66, 10]}, 
-
                         {"origin": [-10, 22, -14], "size": [20, 1, 1], "uv": [66, 6]}, 
-
                         {"origin": [-10, 21, -15], "size": [20, 1, 1], "uv": [66, 2]}, 
-
                         {"origin": [-10, 23, 12], "size": [20, 1, 1], "uv": [66, 8]}, 
-
                         {"origin": [-10, 22, 13], "size": [20, 1, 1], "uv": [66, 4]}, 
-
                         {"origin": [-10, 21, 14], "size": [20, 1, 1], "uv": [66, 0]}, 
-
                         {"origin": [-10, 24, 11], "size": [20, 1, 1], "uv": [66, 12]}, 
-
                         {"origin": [-7, 26, 7], "size": [14, 1, 2], "uv": [66, 34]}, 
-
                         {"origin": [-7, 26, -9], "size": [14, 1, 2], "uv": [66, 31]}, 
-
                         {"origin": [-7, 26, -7], "size": [2, 1, 2], "uv": [6, 16]}, 
-
                         {"origin": [-9, 25, -9], "size": [2, 1, 2], "uv": [12, 12]}, 
-
                         {"origin": [-9, 25, 7], "size": [2, 1, 2], "uv": [12, 9]}, 
-
                         {"origin": [7, 25, 7], "size": [2, 1, 2], "uv": [12, 6]}, 
-
                         {"origin": [9, 24, 9], "size": [2, 1, 2], "uv": [6, 10]}, 
-
                         {"origin": [9, 24, -11], "size": [2, 1, 2], "uv": [0, 9]}, 
-
                         {"origin": [10, 23, -12], "size": [1, 1, 1], "uv": [25, 27]}, 
-
                         {"origin": [10, 22, -13], "size": [1, 1, 1], "uv": [25, 9]}, 
-
                         {"origin": [10, 21, -14], "size": [1, 1, 1], "uv": [0, 24]}, 
-
                         {"origin": [11, 21, -13], "size": [1, 1, 1], "uv": [15, 23]}, 
-
                         {"origin": [12, 21, -12], "size": [1, 1, 1], "uv": [22, 22]}, 
-
                         {"origin": [13, 21, -11], "size": [1, 1, 1], "uv": [22, 18]}, 
-
                         {"origin": [11, 22, -12], "size": [1, 1, 1], "uv": [25, 7]}, 
-
                         {"origin": [12, 22, -11], "size": [1, 1, 1], "uv": [22, 24]}, 
-
                         {"origin": [11, 23, -11], "size": [1, 1, 1], "uv": [15, 27]}, 
-
                         {"origin": [11, 23, 10], "size": [1, 1, 1], "uv": [22, 26]}, 
-
                         {"origin": [12, 22, 10], "size": [1, 1, 1], "uv": [12, 24]}, 
-
                         {"origin": [13, 21, 10], "size": [1, 1, 1], "uv": [22, 16]}, 
-
                         {"origin": [12, 21, 11], "size": [1, 1, 1], "uv": [22, 14]}, 
-
                         {"origin": [11, 21, 12], "size": [1, 1, 1], "uv": [22, 12]}, 
-
                         {"origin": [10, 21, 13], "size": [1, 1, 1], "uv": [22, 10]}, 
-
                         {"origin": [11, 22, 11], "size": [1, 1, 1], "uv": [8, 24]}, 
-
                         {"origin": [10, 22, 12], "size": [1, 1, 1], "uv": [4, 24]}, 
-
                         {"origin": [10, 23, 11], "size": [1, 1, 1], "uv": [12, 26]}, 
-
                         {"origin": [-11, 23, 11], "size": [1, 1, 1], "uv": [8, 26]}, 
-
                         {"origin": [-11, 22, 12], "size": [1, 1, 1], "uv": [25, 23]}, 
-
                         {"origin": [-11, 21, 13], "size": [1, 1, 1], "uv": [22, 8]}, 
-
                         {"origin": [-12, 21, 12], "size": [1, 1, 1], "uv": [22, 6]}, 
-
                         {"origin": [-13, 21, 11], "size": [1, 1, 1], "uv": [14, 21]}, 
-
                         {"origin": [-14, 21, 10], "size": [1, 1, 1], "uv": [6, 21]}, 
-
                         {"origin": [-12, 22, 11], "size": [1, 1, 1], "uv": [25, 17]}, 
-
                         {"origin": [-13, 22, 10], "size": [1, 1, 1], "uv": [25, 15]}, 
-
                         {"origin": [-12, 23, 10], "size": [1, 1, 1], "uv": [4, 26]}, 
-
                         {"origin": [-12, 23, -11], "size": [1, 1, 1], "uv": [0, 26]}, 
-
                         {"origin": [-13, 22, -11], "size": [1, 1, 1], "uv": [15, 25]}, 
-
                         {"origin": [-14, 21, -11], "size": [1, 1, 1], "uv": [13, 18]}, 
-
                         {"origin": [-13, 21, -12], "size": [1, 1, 1], "uv": [0, 18]}, 
-
                         {"origin": [-12, 21, -13], "size": [1, 1, 1], "uv": [14, 3]}, 
-
                         {"origin": [-11, 21, -14], "size": [1, 1, 1], "uv": [14, 0]}, 
-
                         {"origin": [-12, 22, -12], "size": [1, 1, 1], "uv": [25, 13]}, 
-
                         {"origin": [-11, 22, -13], "size": [1, 1, 1], "uv": [25, 11]}, 
-
                         {"origin": [-11, 23, -12], "size": [1, 1, 1], "uv": [25, 25]}, 
-
                         {"origin": [-11, 24, -11], "size": [2, 1, 2], "uv": [6, 7]}, 
-
                         {"origin": [-11, 24, 9], "size": [2, 1, 2], "uv": [0, 6]}, 
-
                         {"origin": [7, 25, -9], "size": [2, 1, 2], "uv": [0, 12]}, 
-
                         {"origin": [-7, 26, 5], "size": [2, 1, 2], "uv": [12, 15]}, 
-
                         {"origin": [5, 26, 5], "size": [2, 1, 2], "uv": [0, 15]}, 
-
                         {"origin": [5, 26, -7], "size": [2, 1, 2], "uv": [6, 13]}, 
-
                         {"origin": [-5, 27, 3], "size": [2, 1, 2], "uv": [22, 3]}, 
-
                         {"origin": [-5, 27, -5], "size": [2, 1, 2], "uv": [22, 0]}, 
-
                         {"origin": [3, 27, -5], "size": [2, 1, 2], "uv": [8, 21]}, 
-
                         {"origin": [3, 27, 3], "size": [2, 1, 2], "uv": [0, 21]}, 
-
                         {"origin": [-3, 28, 3], "size": [6, 1, 2], "uv": [0, 0]}, 
-
                         {"origin": [-5, 28, -3], "size": [10, 1, 6], "uv": [66, 24]}, 
-
                         {"origin": [-1, 0, -1], "size": [2, 30, 2], "uv": [0, 78]} 
-
-                    ] 
-
-                } 
-
-            ] 
-
+                    ]
+                }
+            ]
         } 
-
-    ] 
-
+    ]
 } 
 ```
 

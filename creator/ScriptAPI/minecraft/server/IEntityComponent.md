@@ -62,6 +62,7 @@ description: Contents of the @minecraft/server.IEntityComponent class.
 - [*EntityNavigationGenericComponent*](EntityNavigationGenericComponent.md)
 - [*EntityNavigationHoverComponent*](EntityNavigationHoverComponent.md)
 - [*EntityNavigationWalkComponent*](EntityNavigationWalkComponent.md)
+- [*EntityOnFireComponent*](EntityOnFireComponent.md)
 - [*EntityPushThroughComponent*](EntityPushThroughComponent.md)
 - [*EntityRideableComponent*](EntityRideableComponent.md)
 - [*EntityScaleComponent*](EntityScaleComponent.md)

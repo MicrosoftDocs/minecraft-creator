@@ -32,7 +32,7 @@ Each permutation is a JSON Object that consists of 2 parameters, shown below.
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |condition|*not set* | String| A Molang expression that evaluates to true or false to determine if this permutation should be used. For permutation conditions you are limited to using one Molang query: `"query.block_property()"`. |
-|component|*not set* | JSON Object| List of all components that are used in this permutation. View the list of components in the [Block Components List](\BlockComponents\BlockComponentsList.md). |
+|component|*not set* | JSON Object| List of all components that are used in this permutation. View the list of components in the [Block Components List](..\BlockComponents\BlockComponentsList.md). |
 
 ### Code example of a custom block's behavior JSON file with block properties and permutations
 
@@ -92,4 +92,4 @@ But now, this ability is available for custom blocks as well. So for the above e
 
 ### Using events to set a specific block property
 
-You can also use events to set a specific block property. You can use a [block event trigger component](./BlockTriggers/BlockTriggerList.md) to determine when you want an event to fire, and you can use the event response "set_block_property" (as explained in [Set Block Property](\BlockEvents\minecraftBlock_set_block_property.md)) to set your block property to a specific value when the event fires.
+You can also use events to set a specific block property. You can use a [block event trigger component](./BlockTriggers/BlockTriggerList.md) to determine when you want an event to fire, and you can use the event response "set_block_property" (as explained in [Set Block Property](..\BlockEvents\minecraftBlock_set_block_property.md)) to set your block property to a specific value when the event fires.

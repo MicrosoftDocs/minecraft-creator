@@ -326,6 +326,8 @@
         href: minecraft/server/EntityNavigationHoverComponent.md
       - name: EntityNavigationWalkComponent
         href: minecraft/server/EntityNavigationWalkComponent.md
+      - name: EntityOnFireComponent
+        href: minecraft/server/EntityOnFireComponent.md
       - name: EntityPushThroughComponent
         href: minecraft/server/EntityPushThroughComponent.md
       - name: EntityRideableComponent
@@ -494,10 +496,10 @@
         href: minecraft/server/ScoreboardScoreInfo.md
       - name: ScreenDisplay
         href: minecraft/server/ScreenDisplay.md
+      - name: ScriptEventCommandMessageEvent
+        href: minecraft/server/ScriptEventCommandMessageEvent.md
       - name: ScriptEventCommandMessageSignal
         href: minecraft/server/ScriptEventCommandMessageSignal.md
-      - name: ScriptScriptCommandMessageEvent
-        href: minecraft/server/ScriptScriptCommandMessageEvent.md
       - name: Seat
         href: minecraft/server/Seat.md
       - name: ServerMessageSignal
@@ -528,8 +530,12 @@
         href: minecraft/server/WorldInitializeEventSignal.md
       - name: XYRotation
         href: minecraft/server/XYRotation.md
+      - name: BlockFillOptions
+        href: minecraft/server/BlockFillOptions.md
       - name: BlockRaycastOptions
         href: minecraft/server/BlockRaycastOptions.md
+      - name: EntityDamageSource
+        href: minecraft/server/EntityDamageSource.md
       - name: EntityDataDrivenTriggerEventOptions
         href: minecraft/server/EntityDataDrivenTriggerEventOptions.md
       - name: EntityEventOptions

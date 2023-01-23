@@ -1,6 +1,6 @@
 ---
-author: rileymanns
-ms.author: v-rileymanns
+author: mammerla
+ms.author: v-jillheaden
 title: Introduction to the Damage Command
 ms.prod: gaming
 description: "An introduction to the damage command and some special use cases for it."
@@ -40,7 +40,7 @@ The damage command can be called in two ways.
 - `amount` is an integer. This is the amount of damage that will be dealt.
 
 - `cause` determines what kind of damage will be dealt. This can affect the death message, and some targets may resist or ignore certain damage causes
-  - For example, helmets reduce `stalactite` damage, and cats are immune to fall damage. 
+  - For example, helmets reduce `stalactite` damage, and cats are immune to fall damage.    
   - Cause must be one of `anvil`, `block_explosion`, `charging`, `contact`, `drowning`, `entity_attack`, `entity_explosion`, `fall`, `falling_block`, `fire`, `fire_tick`, `fireworks`, `fly_into_wall`, `freezing`, `lava`, `lightning`, `magic`, `magma`, `none`, `override`, `piston`, `projectile`, `stalactite`, `stalagmite`, `starve`, `suffocation`, `suicide`, `temperature`, `thorns`, `void`, `wither`.
 
 - `damager` is a selector that must evaluate to one entity. It determines which entity will be treated as dealing the damage to the target. For example, a damaged zombified piglin will get angry at this entity.
@@ -74,10 +74,6 @@ This logic also applies to the glow squid and squids inking behavior. If the dam
 ### Slow falling
 
 The player receives fall damage by using the `/damage` command when the Slow Falling status effect is applied. The Slow Falling status effect does not prevent fall damage explicitly, so it would not prevent the Damage Command from applying damage.
-
-### Creeper lightning
-
-A creeper will become charged if it is damaged by an entity of the `lightning` family. Lightning damage from a non lightning entity will not cause a creeper to become charged.
 
 ## What's Next?
 

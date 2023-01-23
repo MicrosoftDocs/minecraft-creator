@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-jimseaman
+ms.author: JimSeaman42
 title: Custom Blocks Part 2 Geometry and Materials
 ms.prod: gaming
 description: "A guide to using the Geometry and Material instances to create custom blocks in Minecraft: Bedrock Edition"
@@ -70,51 +70,28 @@ Navigate to ***File > Export > Export Bedrock Geometry*** to save the geo file t
 
 ```json
 { 
-
     "format_version": "1.12.0", 
-
     "minecraft:geometry": [ 
-
         { 
-
             "description": { 
-
                 "identifier": "geometry.sushi", 
-
                 "texture_width": 36, 
-
                 "texture_height": 18, 
-
                 "visible_bounds_width": 2, 
-
                 "visible_bounds_height": 2.5, 
-
                 "visible_bounds_offset": [0, 0.75, 0] 
-
             }, 
-
             "bones": [ 
-
                 { 
-
                     "name": "bb_main", 
-
                     "pivot": [0, 0, 0], 
-
                     "cubes": [ 
-
                         {"origin": [-6, 0, -3], "size": [12, 12, 6], "uv": [0, 0]} 
-
                     ] 
-
                 } 
-
             ] 
-
         } 
-
     ] 
-
 } 
 ```
 
@@ -169,39 +146,23 @@ The next step is to associate the texture names with a texture file path. This i
 
 ```json
 { 
-
     "texture_data": { 
-
         "die_1": { 
-
             "textures": "textures/blocks/die_1" 
-
 }, … 
-
         "sushi_wrap": { 
-
             "textures": "textures/blocks/sushi_wrap" 
-
         }, 
-
         "salmon_roll": { 
-
             "textures": "textures/blocks/salmon_roll" 
-
         }, 
-
         "tuna_roll": { 
-
           "textures": "textures/blocks/tuna_roll" 
-
         }, 
-
         "california_roll": { 
-
           "textures": "textures/blocks/california_roll" 
-
         } 
-
+    }
 } 
 ```
 
@@ -216,29 +177,17 @@ Adding a sound in blocks.json is optional, but you can include it here for fun.
 
 ```json
 { 
-
-"format_version": "1.19.30", 
-
-"demo:die": {…}, 
-
-"demo:salmon_roll": { 
-
-"sound": "mud" 
-
-}, 
-
-"demo:tuna_roll": { 
-
-"sound": "mud" 
-
-}, 
-
-"demo:california_roll": { 
-
-"sound": "mud" 
-
-}  
-
+  "format_version": "1.19.30", 
+    "demo:die": {…}, 
+    "demo:salmon_roll": { 
+    "sound": "mud" 
+  }, 
+    "demo:tuna_roll": { 
+    "sound": "mud" 
+  }, 
+    "demo:california_roll": { 
+    "sound": "mud" 
+  }
 } 
 ```
 
@@ -263,47 +212,26 @@ Copy and paste the following code into your ***salmon_roll.json*** file:
 
 ```json
 { 
-
     "format_version": "1.19.40", 
-
     "minecraft:block": { 
-
         "description": { 
-
             "identifier": "demo:salmon_roll" 
-
         }, 
-
       "components": { 
-
-        "minecraft:geometry": "sushi.geo.json", 
-
+        "minecraft:geometry": "geometry.sushi", 
         "minecraft:material_instances": { 
-
           "north": { 
-
             "texture": "salmon_roll" 
-
           }, 
-
           "south": { 
-
             "texture": "salmon_roll" 
-
           }, 
-
           "*": { 
-
             "texture": "sushi_wrap" 
-
           } 
-
         } 
-
       } 
-
     } 
-
 } 
 ```
 
@@ -325,42 +253,27 @@ There is another cool part of material_instances to show off. We can actually cr
 
 ```json
 { 
-
     "format_version": "1.19.40", 
-
-    "minecraft:block": { 
-
+    "minecraft:block": 
+    { 
         "description": { 
-
             "identifier": "demo:salmon_roll" 
-
         }, 
-
       "components": { 
-
         "minecraft:geometry": "geometry.sushi", 
-
         "minecraft:material_instances": { 
-
           "north": "sushi_side", 
-
           "south": "sushi_side", 
-
           "*": { 
-
             "texture": "sushi_wrap" 
-
           }, 
-
-          "sushi_side":{ 
-
-             "texture": "salmon_roll" 
-
+      "sushi_side":{ 
+      "texture": "salmon_roll" 
         } 
-
       } 
-
-    } 
+    }
+    }
+}
 ```
 
 Here, we've defined ***sushi_side*** as having the ***salmon_roll*** texture.  
