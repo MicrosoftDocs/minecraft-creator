@@ -10,6 +10,9 @@ description: "Chunker is a widely popular tool used to convert worlds between Mi
 
 Many mapmakers like to create maps using Minecraft: Java Edition because of the wide range of community-made tools and plugins. This article introduces you to Chunker and explains how it can be used to convert worlds between different editions and versions of the game.
 
+>[!IMPORTANT]
+>Chunker is provided by external, third-party contributors and is not a Mojang/Microsoft offering. Users should use at their own discretion.
+
 In this tutorial you will learn the following:
 
 > [!div class="checklist"]

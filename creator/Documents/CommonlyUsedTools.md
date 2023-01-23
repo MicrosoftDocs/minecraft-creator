@@ -9,6 +9,9 @@ ms.prod: gaming
 
 There are a wide variety of tools that have been created for the purpose of increasing the efficiency of Minecraft content creation. Tools can help with a variety of things from creating skins, to crafting beautiful custom worlds. This article will explore some of the most commonly used tools currently available and some of their uses.
 
+>[!IMPORTANT]
+>These tools are provided by external, third-party contributors and are not Mojang/Microsoft offerings. Users should use at their own discretion.
+
 In this tutorial you will learn the following:
 
 > [!div class="checklist"]
@@ -28,10 +31,6 @@ Map creation is one of the largest and most time-consuming components of content
 ### [Chunker](https://chunker.app/)
 
 Chunker is a web tool for Minecraft: Bedrock Edition worlds. It's specifically useful for converting worlds between Minecraft: Java Edition and Bedrock Edition, as well as easily configuring world settings. Conversion includes level settings, chunk data (such as blocks and biomes), dimensions, and more. To learn more about using Chunker, you can begin with the [Chunker Overview](ChunkerOverview.md) guide, which goes over the steps needed to do simple conversions and leads to more advanced features of the tool.
-
-### [WorldPainter](https://www.worldpainter.net/)
-
-World Painter is an application for Java Edition that allows creators to create custom worlds using tools similar to a traditional painting application. It includes features such as sculpting and molding terrain, as well as the ability to paint in materials such as snow and ice, or entire builds like trees and houses. WorldPainter saves custom worlds in the Java Edition world format and would need to be converted to Bedrock Edition-compatible worlds before they can be used in Bedrock Edition.
 
 ### [Amulet](https://www.amuletmc.com/)
 

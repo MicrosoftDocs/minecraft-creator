@@ -40,6 +40,9 @@ To get started, you need the following:
 - Minecraft Bedrock Edition
 - A Windows computer (or an Android device)
 
+>[!IMPORTANT]
+>Blockbench is provided by external, third-party contributors and is not a Mojang/Microsoft offering. Users should use at their own discretion.
+
 ## Getting Started
 
 The first step is to install the Block Wizard plugin.

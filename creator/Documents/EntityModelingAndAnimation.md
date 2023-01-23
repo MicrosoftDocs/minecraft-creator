@@ -28,6 +28,10 @@ Models in Minecraft use a specific format that uses JSON to define the shape. Ea
 
 To create the model and texture, we're going to use [Blockbench](https://blockbench.net/), a 3D modeling program that can create models for the Bedrock Edition of Minecraft.
 
+>[!IMPORTANT]
+>Blockbench is provided by external, third-party contributors and is not a Mojang/Microsoft offering. Users should use at their own discretion.
+
+
 ### Setting Up the Model
 
 When you first open Blockbench, you'll see a list of available model formats. Select **Bedrock Model**. You'll see a dialog about the basic settings for the project.

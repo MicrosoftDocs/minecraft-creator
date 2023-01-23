@@ -37,6 +37,10 @@ It's recommended that the following be completed before beginning this tutorial.
 - Either have [Blockbench](https://blockbench.net) installed or access to [Blockbench web app](https://web.blockbench.net)
 - [Getting Started with Add-On Development](GettingStarted.md)
 
+>[!IMPORTANT]
+>Blockbench is provided by external, third-party contributors and is not a Mojang/Microsoft offering. Users should use at their own discretion.
+
+
 ## Installation
 
 Once you have downloaded and installed [Blockbench](https://blockbench.net), you can directly install the Entity Wizard from within the program.
