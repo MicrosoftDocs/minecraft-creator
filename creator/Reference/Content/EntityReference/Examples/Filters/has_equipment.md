@@ -56,6 +56,7 @@ Domain is used to test where the equipment is located.
 | feet|
 | hand|
 | head|
+| inventory|
 | leg|
 | torso|
 

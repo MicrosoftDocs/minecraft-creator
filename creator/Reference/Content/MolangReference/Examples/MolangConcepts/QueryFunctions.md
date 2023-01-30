@@ -156,6 +156,7 @@ Query Functions are operators that access a wide variety of information. They ca
 | query.is_leashed| Returns 1.0 if the entity is leashed to something, else it returns 0.0. |
 | query.is_levitating| Returns 1.0 if the entity is levitating, else it returns 0.0. |
 | query.is_lingering| Returns 1.0 if the entity is lingering, else it returns 0.0. |
+| query.is_local_player| Takes no arguments. Returns 1.0 if the entity is the local player for the current game window, else it returns 0.0. In splitscreen returns 0.0 for the other local players for other views. Always returns 0.0 if used in a behavior pack. |
 | query.is_moving| Returns 1.0 if the entity is moving, else it returns 0.0. |
 | query.is_name_any| Takes one or more arguments. If the entity's name is any of the specified string values, returns 1.0. Otherwise returns 0.0. A preferred query to query.get_name, as it can be adjusted by Mojang to avoid breaking content if names are changed. |
 | query.is_on_fire| Returns 1.0 if the entity is on fire, else it returns 0.0. |
