@@ -13,7 +13,7 @@ description: Contents of the @minecraft/server.Player class.
 - [*Entity*](Entity.md)
 
 ## Classes that extend Player
-- [*SimulatedPlayer*](SimulatedPlayer.md)
+- [*SimulatedPlayer*](../server-gametest/SimulatedPlayer.md)
 
 Represents a player within the world.
 

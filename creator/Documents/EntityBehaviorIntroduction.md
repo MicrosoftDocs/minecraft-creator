@@ -83,7 +83,7 @@ Inside the description tag, a few basic properties define how the game registers
 
 ## Components Basics
 
-A full list of available components can be found in the [Component List](/creator/reference/content/entityreference/examples/ComponentList.md) documentation.
+A full list of available components can be found in the [Component List](../reference/content/entityreference/examples/ComponentList.md) documentation.
 
 A good way to learn about a component and see how it's used in practice is to look at the entity JSON files of default Minecraft entities. You can always find the latest default behavior pack at this URL: <https://aka.ms/behaviorpacktemplate>.
 

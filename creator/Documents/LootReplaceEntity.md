@@ -3,7 +3,7 @@ author: mammerla
 ms.author: v-jillheaden
 title: Loot Replace Entity
 ms.prod: gaming
-description: "Introduction to the Loot Overload: `/loot replace entity` command"
+description: "Introduction to the Loot Overload: '/loot replace entity' command"
 ---
 
 # Introduction to the Loot Overload */loot replace entity*
