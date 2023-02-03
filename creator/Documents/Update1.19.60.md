@@ -7,7 +7,7 @@ description: Update summary of Creator changes in Bedrock 1.19.60
 ---
 # Minecraft Bedrock 1.19.60 Update Notes for Creators
 
-Minecraft Bedrock has been updated to 1.19.60 and there are a number of changes of note for add-on creators!
+Minecraft Bedrock has been updated to 1.19.60 and there are a number of changes of note for add-on creators.
 
 ## Holiday Creator Features ##
 
@@ -19,18 +19,18 @@ We continue to work on bringing the Holiday Creator Features out of experimental
 
 ## Particle Effects ##
 
-- Added support for mixed color blending on particle effects
+- Added support for mixed color blending on [particle effects](./ParticleEffects.md).
 
 ## Molang ##
 
-- Added new Molang *is_local_player* to allow detection of the current player
+- Added new Molang *is_local_player* to allow detection of the current player.
 
 ## Components ##
 
-Some existing entity components have new capability that may be helpful to creators.
+Some existing entity components have new capability that may be helpful to add-on creators.
 
 - [Minecraft:shooter](../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_shooter.md) component – expanded to define multiple projectiles that can specify different projectile definitions and condition filters. Exposed more fields to shooter component to allow for more projectile customization such as throw power, sounds, and whether the attack is a magic attack.
-- [has_equipment](../Reference/Content/EntityReference/Examples/Filters/has_equipment.md)filter - Added "inventory" as a possible "domain" value which allows to check for items stored in the actor's inventory.
+- [has_equipment](../Reference/Content/EntityReference/Examples/Filters/has_equipment.md) filter - Added "inventory" as a possible "domain" value which allows to check for items stored in the actor's inventory.
 - [interact](../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_interact.md) component - Added an "equip_item_slot" field.
   - If set, an item held by the player will be equipped to the specified slot upon successful interaction.
   - If an item is already present in the specified slot, it will be moved to the player's inventory
@@ -41,7 +41,7 @@ We've added additional reference documentation on commands. [Check it out!](../C
 
 ## Creator API ##
 
-A reminder that a limited number of APIs were released out of experimental in [1.19.50](Update1.19.50.md). There are no new APIs leaving experimental in 1.19.60, but there are a number of new APIs behind experimental.
+A reminder that a limited number of APIs were released out of experimental in [1.19.50](Update1.19.50.md). There are no new APIs leaving experimental in 1.19.60 but there are a number of new APIs behind experimental.
 
 The following APIs have been added to the Beta API experiment. To use these, you need to enable the Beta APIs experimental toggle.
 
@@ -67,7 +67,7 @@ The following APIs have been added to the Beta API experiment. To use these, you
   - Added property [cause](../ScriptAPI/minecraft/server/EntityDamageSource.md#cause): EntityDamageCause - Gets the damage cause
   - Added property [damagingEntity](../ScriptAPI/minecraft/server/EntityDamageSource.md#damagingentity)?: Entity - Gets the damaging Entity
   - Added property [damagingProjectile](../ScriptAPI/minecraft/server/EntityDamageSource.md#damagingprojectile)?: Entity - Gets the damaging projectile Entity
-  - Added function [applyDamage](../ScriptAPI/minecraft/server/Entity#applydamage)(amount: number, source?: EntityDamageSource): boolean - Applies damage to the Entity and returns the result of the operation
+  - Added function [applyDamage](../ScriptAPI/minecraft/server/Entity.md#applydamage)(amount: number, source?: EntityDamageSource): boolean - Applies damage to the Entity and returns the result of the operation
 
 **Fill Blocks APIs**
 
