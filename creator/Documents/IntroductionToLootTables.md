@@ -376,26 +376,6 @@ For example, using multiple `set_count` functions, like with the example below, 
 
 Conditions are a list of requirements that must be met before either a pool can be used or an individual entry can be selected. All conditions are stored within the conditions list. Each condition runs one at a time. If any one condition in the list fails, the remainder in the same list will be ignored.
 
-### entity_properties
-
-`entity_properties` applies the given properties to the returned loot.
-
-Example:
-
-```json
-
-"conditions": [
-                {
-                    "condition": "entity_properties",
-                    "entity": "this",
-                    "properties": {
-                        "on_fire": true
-                     }
-                }
-               ]
-
-```
-
 ### has_mark_variant
 
 `has_mark_variant` specifies that there are different variations for the loot.
@@ -423,6 +403,7 @@ Example:
         {
          "condition": "killed_by_player_or_pets"
          },
+ ]
 
 ```
 
