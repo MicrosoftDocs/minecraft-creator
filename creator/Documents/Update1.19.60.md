@@ -37,7 +37,7 @@ Some existing entity components have new capability that may be helpful to add-o
   - Equipping an item removes it from the player's inventory, unless the player is in Creative Mode.
 
 ## Documentation ##
-We've added additional reference documentation on commands. [Check it out!](../Commands/)
+We've added additional reference documentation on commands. [Check it out!](../Commands/index.yml)
 
 ## Creator API ##
 
