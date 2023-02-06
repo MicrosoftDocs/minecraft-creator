@@ -12,5 +12,9 @@
    href: minecraftRecipe_PotionBrewing.md
  - name: Potion Brewing Mix
    href: minecraftRecipe_PotionBrewingMix.md
-  - name: Utilizing Tags as Recipe Input
+ - name: Smithing Transform Recipe
+   href: minecraftRecipe_SmithingTransform.md
+ - name: Tags as Recipe Input
    href: ../TagsRecipeInput.md
+ - name: Introduction to Recipes 
+   href: RecipeIntroduction.md
