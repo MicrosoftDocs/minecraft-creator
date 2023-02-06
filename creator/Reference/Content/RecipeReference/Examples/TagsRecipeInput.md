@@ -1,5 +1,5 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: v-jimseaman
 title: Utilizing Tags as Recipe Input
 ms.prod: gaming
