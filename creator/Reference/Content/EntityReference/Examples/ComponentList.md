@@ -98,7 +98,7 @@ Below is a list of all the available Components within Minecraft: Bedrock Editio
 |[minecraft:scale_by_age](EntityComponents/minecraftComponent_scale_by_age.md) |`minecraft:scale_by_age` defines the entity's size interpolation based on the entity's age.|
 |[minecraft:scheduler](EntityComponents/minecraftComponent_scheduler.md) |`minecraft:scheduler` fires off scheduled mob events at time of day events.|
 |[minecraft:shareables](EntityComponents/minecraftComponent_shareables.md) |`minecraft:shareables` defines a list of items the mob wants to share or pick up.|
-|[minecraft:shooter](EntityComponents/minecraftComponent_shooter.md) |`minecraft:shooter` defines the entity's ranged attack behavior. |
+|[minecraft:shooter](EntityComponents/minecraftComponent_shooter.md) |`minecraft:shooter` defines the entity's ranged attack behavior.The "minecraft:behavior.ranged_attack" goal uses this component to determine which projectiles to shoot. |
 |[minecraft:sittable](EntityComponents/minecraftComponent_sittable.md) |`minecraft:sittable` defines the entity's `sit` state.|
 |[minecraft:spawn_entity](EntityComponents/minecraftComponent_spawn_entity.md) |`minecraft:spawn_entity` adds a timer after which this entity will spawn another entity or item (similar to vanilla's chicken's egg-laying behavior).|
 |[minecraft:tameable](EntityComponents/minecraftComponent_tameable.md) |`minecraft:tameable` defines the rules for a mob to be tamed by the player.|

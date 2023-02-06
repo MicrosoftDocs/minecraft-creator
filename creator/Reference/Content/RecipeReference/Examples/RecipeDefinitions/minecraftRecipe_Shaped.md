@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Recipe Documentation - Shaped Recipe
 
-Represents a crafting recipe that is to be used with a crafting table.
+Represents a crafting recipe that is to be used with a crafting table. The key used in the pattern may be any single character except the 'space' character, which is reserved for empty slots in a recipe.
 
 ## Parameters
 

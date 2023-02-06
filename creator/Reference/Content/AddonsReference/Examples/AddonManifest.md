@@ -58,8 +58,9 @@ The manifest file contains all the basic information about the pack that Minecra
 
 | Name| Description |
 |:-----------|:-----------|
-| experimental_custom_ui| The pack can use HTML files to create custom UI, as well as use or modify the custom UI. |
 | chemistry| The pack can add, remove, or modify chemistry behavior. |
+| editorExtension| Indicates that this pack contains extensions for editing. |
+| experimental_custom_ui| The pack can use HTML files to create custom UI, as well as use or modify the custom UI. |
 | raytraced| The pack uses Ray Tracking functionality and may use custom shaders. |
 
 ### metadata

@@ -68,7 +68,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | infiniburn_bit| Boolean| True, False| Determines if a block should burn infinitely |
 | item_frame_map_bit| Boolean| True, False| Describes if an item frame block has a map in it |
 | item_frame_photo_bit| Boolean| True, False| Describes if an item frame block has a photo in it |
-| last_interacted_slot| Integer| 0 - 6| Determines the redstone signal that represents the last book interacted in the chiseled bookshelf |
 | liquid_depth| Integer| 0 - 15| Determines the level of liquid blocks |
 | lit| Boolean| True, False| Determines if a block is lit or not |
 | moisturized_amount| Integer| 0 - 7| Determines the moisture level of crops |
@@ -150,6 +149,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:azalea_leaves |
 | minecraft:azalea_leaves_flowered |
 | minecraft:bamboo |
+| minecraft:bamboo_block |
 | minecraft:bamboo_button |
 | minecraft:bamboo_door |
 | minecraft:bamboo_double_slab |
@@ -792,6 +792,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:stonecutter |
 | minecraft:stonecutter_block |
 | minecraft:stripped_acacia_log |
+| minecraft:stripped_bamboo_block |
 | minecraft:stripped_birch_log |
 | minecraft:stripped_crimson_hyphae |
 | minecraft:stripped_crimson_stem |

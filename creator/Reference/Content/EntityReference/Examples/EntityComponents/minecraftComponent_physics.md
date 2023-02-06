@@ -15,6 +15,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 | has_collision| True| Boolean| Whether or not the object collides with things. |
 | has_gravity| True| Boolean| Whether or not the entity is affected by gravity. |
+| push_towards_closest_space| False| Boolean| Whether or not the entity should be pushed towards the nearest open area when stuck inside a block. |
 
 ## Example
 
