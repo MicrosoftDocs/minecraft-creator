@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-jimseaman
+ms.author: JimSeaman42
 title: How to Add a Simple Custom Block
 ms.prod: gaming
 description: "A tutorial for creating custom blocks in Minecraft: Bedrock Edition"
