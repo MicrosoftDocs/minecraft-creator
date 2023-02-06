@@ -32,3 +32,5 @@ landingContent:
             url: Examples/RecipeDefinitions/minecraftRecipe_Shapeless.md
           - text: Potion Brewing Recipe
             url: Examples/RecipeDefinitions/minecraftRecipe_PotionBrewing.md
+          - text: Smithing Transform Recipe
+            url: Examples/RecipeDefinitions/minecraftRecipe_SmithingTransform.md

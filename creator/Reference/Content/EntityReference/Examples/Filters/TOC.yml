@@ -1,5 +1,7 @@
 - name: Filters List
   href: ../FilterList.md
+- name: actor_health
+  href: actor_health.md
 - name: clock_time
   href: clock_time.md
 - name: distance_to_nearest_player
@@ -120,8 +122,12 @@
   href: moon_intensity.md
 - name: moon_phase
   href: moon_phase.md
+- name: on_fire
+  href: on_fire.md
 - name: on_ground
   href: on_ground.md
+- name: on_hot_block
+  href: on_hot_block.md
 - name: on_ladder
   href: on_ladder.md
 - name: random_chance
@@ -130,6 +136,8 @@
   href: rider_count.md
 - name: surface_mob
   href: surface_mob.md
+- name: target_distance
+  href: target_distance.md
 - name: trusts
   href: trusts.md
 - name: weather_at_position
