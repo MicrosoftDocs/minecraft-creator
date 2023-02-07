@@ -1,5 +1,5 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: v-jimseaman
 title: Tags for Recipes
 ms.prod: gaming

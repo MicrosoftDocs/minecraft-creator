@@ -107,7 +107,7 @@ Game rules are settings that can be modified in-game by operators using the `/ga
 |Setting|Description|
 |:---|:---|
 |Center Maps To Origin|**(Bedrock Edition only)** Whether maps (items) should be centered to the origin of the map.|
-|Education Features|**(Bedrock Edition only)** Whether this world has Minecraft: Education Edition features enabled.|
+|Education Features|**(Bedrock Edition only)** Whether this world has Minecraft Education features enabled.|
 |EDU Level|**(Bedrock Edition only)** The level of the EDU features to use.|
 |Server Chunk Tick Range|**(Bedrock Edition only)** The distance of chunks around a player to tick server-side. Setting this to a high number can negatively impact performance.|
 |Start With Map Enabled|**(Bedrock Edition only)** Whether new players start with a map.|

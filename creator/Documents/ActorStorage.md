@@ -41,7 +41,7 @@ These are the smallest keys used by pushing them together contiguously on disk. 
 
 ### Non-Actor Data Chunk Key IDs
 
-```json
+```cpp
 enum class LevelChunkTag : char {
   Data3D = 43,
   Version, // This was moved to the front as needed for the extended heights feature. Old chunks will not have this data.

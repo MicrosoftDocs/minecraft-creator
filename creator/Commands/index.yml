@@ -1,0 +1,56 @@
+### YamlMime:Landing
+
+title: Command Reference Documentation # < 60 chars
+summary: "Landing page containing a high-level introduction of commands for Minecraft: Bedrock Edition." # < 160 chars
+
+metadata:
+  title: Command Reference Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: "Landing page containing a high-level introduction of commands within Minecraft: Bedrock Edition."  # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: mammerla #Required; your GitHub user alias, with correct capitalization.
+  ms.author: mikeam #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/07/2021 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Getting Started with Commands
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+           - text: Introduction to Commands
+             url: ../Documents/CommandsIntroduction.md
+           - text: Getting Started with Command Blocks
+             url: ../Documents/CommandBlocks.md
+           - text: Popular Commands
+             url: ../Documents/CommandsPopularCommands.md
+           - text: Command reference
+             url: ../Commands/commands.md
+      - linkListType: concept
+        links:
+           - text: New execute command
+             url: ../Documents/CommandsNewExecute.md
+  # Card (optional)
+  - title: Common commands
+    linkLists:
+      - linkListType: overview
+        links:
+           - text: Popular Commands
+             url: ../Documents/CommandsPopularCommands.md
+      - linkListType: reference
+        links:
+           - text: Say Command
+             url: commands/say.md
+           - text: Summon Command
+             url: commands/summon.md
+           - text: Execute Command
+             url: commands/execute.md
+           - text: Gamerule Command
+             url: commands/gamerule.md
+           - text: Scoreboard Command
+             url: commands/scoreboard.md
+ 

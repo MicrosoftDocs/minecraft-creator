@@ -8,14 +8,14 @@ description: "An overview of experimental content available to creators in Minec
 
 # Experimental Features in Minecraft: Bedrock Edition
 
-With each retail version of Minecraft: Bedrock Edition, there are a few features that are currently in an experimental state. Experimental Features can be toggled on for creators who are interested in testing the latest features offered in both the beta and retail versions of Minecraft.
+With each retail version of Minecraft: Bedrock Edition, there are a few features that are currently in an experimental state. Experimental Features can be toggled on for creators who are interested in testing the latest features offered in the beta, preview, and retail versions of Minecraft.
 
 > [!NOTE]
 > The Experiments toggle list is subject to frequent changes and could have entirely different options from the ones in your own version of Minecraft.
 
 ## Experimental Features available in Minecraft: Bedrock Edition
 
-There are two sets of experimental features available, depending on whether you are using a stable (retail) version of Minecraft or a beta version of Minecraft.
+There are three sets of experimental features available, depending on whether you are using a stable (retail) version of Minecraft, the latest version of Minecraft Preview, or a beta version of Minecraft.
 
 ### Retail
 
@@ -24,6 +24,16 @@ Listed below are the currently available Experimental Features in the latest ret
 | Experimental Toggle |Features |
 |:------|:------|
 |Holiday Creator Features |Data-driven block and item features. We are receiving feedback on these features from Marketplace creators and map-makers.|
+|Custom Biomes|Exposing parameters for biome generation to creators, enabling them to create their own unique biome configurations. |
+|Upcoming Creator Features |Experimental features including actor properties and fog volumes. We are receiving feedback on these features from Marketplace creators and map-makers.|
+|Beta APIs|Provides "-beta" level script APIs (e.g., @minecraft/server 1.1.0-beta), as well as GameTest Framework APIs. |
+|Molang Features |Container for Molang experimental queries and language features that aren't tied to other experimental toggles. |
+|Next Major Update | Features that will be available after the next major update. |
+
+### Preview
+
+| Experimental Toggle |Features |
+|:------|:------|
 |Custom Biomes|Exposing parameters for biome generation to creators, enabling them to create their own unique biome configurations. |
 |Upcoming Creator Features |Experimental features including actor properties and fog volumes. We are receiving feedback on these features from Marketplace creators and map-makers.|
 |Beta APIs|Provides "-beta" level script APIs (e.g., @minecraft/server 1.1.0-beta), as well as GameTest Framework APIs. |

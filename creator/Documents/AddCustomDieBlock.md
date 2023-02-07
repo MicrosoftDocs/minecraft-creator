@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-jimseaman
+ms.author: JimSeaman42
 title: How to Add a Simple Custom Block
 ms.prod: gaming
 description: "A tutorial for creating custom blocks in Minecraft: Bedrock Edition"
@@ -215,7 +215,7 @@ If you are using the resources provided:
 
 ***Add a friendly name in terrain_texture.json***
 
-With the block defined in the ***blocks.json*** file, the next step is to associate the texture names with a texture file path. This is done in a ***terrain_texture.json*** file.
+The next step is to associate the texture names with a texture file path. This is done in a ***terrain_texture.json*** file.
 
 1. In ***File Explorer***, navigate to the ***custom_block_resource_pack*** folder and open the ***textures*** folder.
 1. Inside the ***textures*** folder, create a text document and name it ***terrain_texture.json***.

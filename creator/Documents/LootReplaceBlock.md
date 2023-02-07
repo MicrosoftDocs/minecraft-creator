@@ -3,7 +3,7 @@ author: mammerla
 ms.author: v-jillheaden
 title: Loot Replace Block
 ms.prod: gaming
-description: "Introduction to the Loot Overload: `/loot replace block` command"
+description: "Introduction to the Loot Overload: '/loot replace block' command"
 ---
 
 # Introduction to the Loot Overload */loot replace block*

@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: mikeam
+ms.author: v-jillheaden
 title: Block Documentation - Block Trigger List
 ms.prod: gaming
 ---
@@ -8,6 +8,13 @@ ms.prod: gaming
 # Block Documentation - Block Trigger
 
 Below is a list of all the available Block Trigger within Minecraft: Bedrock Edition for use with Block JSON files.
+
+>[!IMPORTANT]
+> Block Triggers require the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
+>
+>Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
+>
+>To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md).
 
 ## Block Trigger List
 

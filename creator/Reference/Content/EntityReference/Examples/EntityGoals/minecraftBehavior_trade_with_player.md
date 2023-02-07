@@ -7,13 +7,15 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.trade_with_player
 
-`minecraft:behavior.trade_with_player` allows an entity to focus on a player that will initiate a trade.
+`minecraft:behavior.trade_with_player` Allows the player to trade with this mob. When the goal starts, it will stop the mob's navigation.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+|priority|*not set*|Integer|Conditions that need to be met for the behavior to start.|
+|filters| -- |Minecraft filter|The higher the priority, the sooner this behavior will be executed as a goal.|
+|max_distance_from_player|8.00|Decimal|The max distance that the mob can be from the player before exiting the goal.|
 
 ## Example
 

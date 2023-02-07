@@ -157,7 +157,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.take_flower| 1218648257 |
 | minecraft:behavior.tempt| 422904556 |
 | minecraft:behavior.trade_interest| -574851053 |
-| minecraft:behavior.trade_with_player| -2048563493 |
+| minecraft:behavior.trade_with_player| 13082946109325010651 |
 | minecraft:behavior.vex_copy_owner_target| -643459543 |
 | minecraft:behavior.vex_random_move| -1117822165 |
 | minecraft:behavior.wither_random_attack_pos_goal| -528895885 |

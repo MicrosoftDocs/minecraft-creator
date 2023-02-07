@@ -248,3 +248,5 @@
   href: minecraftComponent_underwater_movement.md
 - name: water_movement
   href: minecraftComponent_water_movement.md
+- name: variable_max_auto_step
+  href: minecraftComponent_variable_max_auto_step.md

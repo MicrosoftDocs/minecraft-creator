@@ -30,7 +30,7 @@ Represents a Potion Brewing Container Recipe.
     "tags": [ "brewing_stand" ],
     "input": "minecraft:potion",
     "reagent": "minecraft:gunpowder",
-    "output": "minecraft:splash_potion",
+    "output": "minecraft:splash_potion"
     }
 }
 ```
