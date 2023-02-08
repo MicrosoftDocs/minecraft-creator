@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.find_cover
 
-`minecraft:behavior.find_cover` allows an entity to locate shade in the world.
+`minecraft:behavior.find_cover` compels an entity to locate shade in the world.
 
 ## Parameters
 

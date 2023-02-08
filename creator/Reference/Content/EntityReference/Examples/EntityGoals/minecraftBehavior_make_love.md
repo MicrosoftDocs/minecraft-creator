@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.make_love
 
-`minecraft:behavior.make_love` allows an entity to interact with other similar entities to produce an offspring.
+`minecraft:behavior.make_love` compels an entity to interact with other similar entities to produce an offspring.
 
 ## Parameters
 

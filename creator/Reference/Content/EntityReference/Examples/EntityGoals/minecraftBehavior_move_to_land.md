@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.move_to_land
 
-`minecraft:behavior.move_to_land` allows an entity to move to land when in a non-land medium such as lava or water.
+`minecraft:behavior.move_to_land` compels an entity to move to land when in a non-land medium such as lava or water.
 
 ## Parameters
 

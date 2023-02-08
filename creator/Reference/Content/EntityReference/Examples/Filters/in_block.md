@@ -1,6 +1,6 @@
 ---
-author: JDHeaden
-ms.author: v-mammerla
+author: mammerla
+ms.author: v-jillhedaen
 title: Entity Documentation - in_block
 ms.prod: gaming
 ---

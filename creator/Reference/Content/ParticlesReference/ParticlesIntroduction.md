@@ -307,7 +307,7 @@ The schema is:
 
 The array syntax allows for more than one effect to be triggered on state entry.
 
-An example is the Blaze's flame-up effect in it's animation controller. This animation controller has two states, "default" and "flaming". It transitions between the two via the "query.is_charged" entity flag check. When in the "flaming" state, the "charged_flames" effect is started (with no locator or initialization Molang expression), and is terminated when the state exits.
+An example is the Blaze's flame-up effect in its animation controller. This animation controller has two states, "default" and "flaming". It transitions between the two via the "query.is_charged" entity flag check. When in the "flaming" state, the "charged_flames" effect is started (with no locator or initialization Molang expression), and is terminated when the state exits.
 
 ```json
 

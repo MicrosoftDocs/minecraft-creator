@@ -1,13 +1,13 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.eat_block
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.eat_block
 
-`minecraft:behavior.eat_block` allows the entity to consume a block, replace the eaten block with another block, and trigger an event as a result.
+`minecraft:behavior.eat_block` compels the entity to consume a block, replace the eaten block with another block, and trigger an event as a result.
 
 ## Parameters
 

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.move_through_village
 
-`minecraft:behavior.move_through_village` allows an entity to navigate around a village by creating a path to patrol.
+`minecraft:behavior.move_through_village` compels an entity to navigate around a village by creating a path to patrol.
 
 ## Parameters
 

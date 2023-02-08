@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.follow_caravan
 
-`minecraft:behavior.follow_caravan` allows an entity to be lead with a `Lead` item. Leading the entity actually signals up to ten nearby entities that have been set in the `entity_types` variable to follow each other, forming a caravan.
+`minecraft:behavior.follow_caravan` compels an entity to be lead with a `lead` item. Leading the entity actually signals up to ten nearby entities that have been set in the `entity_types` variable to follow each other, forming a caravan.
 
 ## Parameters
 

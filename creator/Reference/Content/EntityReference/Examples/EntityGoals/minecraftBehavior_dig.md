@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.dig
 
-`minecraft:behavior.dig` Allows this entity to dig into the ground before despawning.
+`minecraft:behavior.dig` compels the entity to dig into the ground before despawning.
 
 ## Parameters
 

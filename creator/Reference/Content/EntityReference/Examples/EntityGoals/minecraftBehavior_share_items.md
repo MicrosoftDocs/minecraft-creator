@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.share_items
 
-`minecraft:behavior.share_items` allows an entity to share items they have in their inventory with other specific entities that have been defined.
+`minecraft:behavior.share_items` compels an entity to share items they have in their inventory with other specific entities that have been defined.
 
 ## Parameters
 

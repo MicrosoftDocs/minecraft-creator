@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.roll
 
-`minecraft:behavior.roll` allows an entity roll forward.
+`minecraft:behavior.roll` compels an entity to roll forward.
 
 ## Parameters
 

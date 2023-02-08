@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.random_sitting
 
-`minecraft:behavior.random_sitting` allows an entity to stop and sit for a random duration of time.
+`minecraft:behavior.random_sitting` compels an entity to stop and sit for a random duration of time.
 
 ## Parameters
 

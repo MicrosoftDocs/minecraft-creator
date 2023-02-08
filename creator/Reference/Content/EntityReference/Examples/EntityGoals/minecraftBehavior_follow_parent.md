@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.follow_parent
 
-`minecraft:behavior.follow_parent` allows an entity that has been tagged as a baby to follow their parent around.
+`minecraft:behavior.follow_parent` compels an entity that has been tagged as a baby to follow their parent around.
 
 >[!IMPORTANT]
 > `minecraft:behavior.follow_parent` requires the `minecraft:is_baby` component in order to have an adult mob tagged as a parent for the entity.

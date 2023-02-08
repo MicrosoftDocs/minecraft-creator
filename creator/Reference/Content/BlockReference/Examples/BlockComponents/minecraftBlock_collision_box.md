@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: Block Documentation - minecraft:collision_box
 ms.prod: gaming

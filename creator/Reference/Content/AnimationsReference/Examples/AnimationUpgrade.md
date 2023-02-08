@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-bbortree
 title: Animation Documentation - Upgrading Animation Scripts
 ms.prod: gaming

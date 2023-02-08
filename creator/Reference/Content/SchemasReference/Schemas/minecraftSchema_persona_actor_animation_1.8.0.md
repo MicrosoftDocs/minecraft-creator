@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: "Schema Documentation - persona_actor_animation:1.8.0"
 ms.prod: gaming

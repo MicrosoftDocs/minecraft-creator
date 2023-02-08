@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-jillheaden
 title: Entity Documentation - minecraft:shareables
 ms.prod: gaming

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.eat_carried_item
 
-`minecraft:behavior.eat_carried_item` allows an entity to eat any item in its inventory and gain the benefits of the item.
+`minecraft:behavior.eat_carried_item` compels an entity to eat any item in its inventory and gain the benefits of the item.
 
 >[!IMPORTANT]
 > `minecraft:behavior.eat_carried_item` requires food items to be in the entity's inventory in order to eat the food.

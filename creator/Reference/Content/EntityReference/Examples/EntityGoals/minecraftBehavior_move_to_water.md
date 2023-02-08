@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.move_to_water
 
-`minecraft:behavior.move_to_water` allows an entity to move to water when on land.
+`minecraft:behavior.move_to_water` compels an entity to move to water when on land.
 
 ## Parameters
 

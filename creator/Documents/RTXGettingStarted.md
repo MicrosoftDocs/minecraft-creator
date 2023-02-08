@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-bbortree
 title: Getting Started with Ray Tracing
 ms.prod: gaming

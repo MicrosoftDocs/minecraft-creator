@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.dragonlanding
 
-`minecraft:behavior.dragonlanding` allows an entity to stop flying and transition into perching mode.
+`minecraft:behavior.dragonlanding` compels an entity to stop flying and transition into perching mode.
 
 > [!NOTE]
 > This behavior can only be used by the `ender_dragon` entity type.

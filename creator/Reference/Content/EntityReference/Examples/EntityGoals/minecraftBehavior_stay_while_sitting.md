@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.stay_while_sitting
 
-`minecraft:behavior.stay_while_sitting` allows an entity to stay in place while sitting.
+`minecraft:behavior.stay_while_sitting` compels an entity to stay in place while sitting.
 
 ## Parameters
 

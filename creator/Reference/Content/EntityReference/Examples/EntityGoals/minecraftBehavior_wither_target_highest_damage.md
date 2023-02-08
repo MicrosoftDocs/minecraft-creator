@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.wither_target_highest_damage
 
-`minecraft:behavior.wither_target_highest_damage` allows an entity to focus its attacks on whichever hostile mob has dealt the most damage to it.
+`minecraft:behavior.wither_target_highest_damage` compels an entity to focus its attacks on whichever hostile mob has dealt the most damage to it.
 
 > [!NOTE]
 > This behavior can only be used by the `wither` entity type.

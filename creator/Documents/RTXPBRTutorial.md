@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-bbortree
 title: Physically Based Rendering Tutorial
 ms.prod: gaming

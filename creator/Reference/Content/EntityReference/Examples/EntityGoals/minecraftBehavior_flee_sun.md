@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.flee_sun
 
-`minecraft:behavior.flee_sun` will make the entity actively avoid the sunlight.
+`minecraft:behavior.flee_sun` compels the entity to actively avoid the sunlight.
 
 ## Parameters
 

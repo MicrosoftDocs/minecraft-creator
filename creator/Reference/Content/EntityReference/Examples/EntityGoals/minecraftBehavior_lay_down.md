@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.lay_down
 
-`minecraft:behavior.lay_down` allows an entity randomly lay down for a period of time.
+`minecraft:behavior.lay_down` compels an entity randomly lay down for a period of time.
 
 ## Parameters
 

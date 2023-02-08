@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.nearest_prioritized_attackable_target
 
-`minecraft:behavior.nearest_prioritized_attackable_target` allows an entity to target and prioritize the nearest valid target.
+`minecraft:behavior.nearest_prioritized_attackable_target` compels an entity to target and prioritize the nearest valid target.
 
 ## Parameters
 

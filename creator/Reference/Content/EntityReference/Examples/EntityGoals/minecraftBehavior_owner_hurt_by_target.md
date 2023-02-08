@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.owner_hurt_by_target
 
-`minecraft:behavior.owner_hurt_by_target` allows an entity to react when the owner is hit by a target.
+`minecraft:behavior.owner_hurt_by_target` compels an entity to react when the owner is hit by a target.
 
 >[!IMPORTANT]
 > `minecraft:behavior.owner_hurt_by_target` requires a player to be set as the owner via taming or console command in order to work properly.

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.roar
 
-`minecraft:behavior.roar` allows this entity to roar at another entity based on data in `minecraft:anger_level`. When the anger threshold specified in `minecraft:anger_level` has been reached, this entity will roar for the specified amount of time, look at the other entity, apply anger boost towards it, and finally target it.
+`minecraft:behavior.roar` compels this entity to roar at another entity based on data in `minecraft:anger_level`. When the anger threshold specified in `minecraft:anger_level` has been reached, this entity will roar for the specified amount of time, look at the other entity, apply anger boost towards it, and finally target it.
 
 ## Parameters
 

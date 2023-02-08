@@ -1,13 +1,13 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.swim_wander
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.swim_wander
 
-`minecraft:behavior.swim_wander` allows the entity to wander around while swimming, when not path-finding.
+`minecraft:behavior.swim_wander` compels the entity to wander around while swimming, when not path-finding.
 
 ## Parameters
 

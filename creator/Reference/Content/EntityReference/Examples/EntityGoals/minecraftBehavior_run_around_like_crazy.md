@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.run_around_like_crazy
 
-`minecraft:behavior.run_around_like_crazy` allows an entity to run around without a set goal.
+`minecraft:behavior.run_around_like_crazy` compels an entity to run around without a set goal.
 
 ## Parameters
 

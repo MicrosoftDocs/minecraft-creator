@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.squid_dive
 
-`minecraft:behavior.squid_dive` allows an entity to dive underwater.
+`minecraft:behavior.squid_dive` compels an entity to dive underwater.
 
 > [!NOTE]
 > This behavior can only be used by the `squid` entity type.

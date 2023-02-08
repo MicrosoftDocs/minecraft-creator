@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.defend_trusted_target
 
-`minecraft:behavior.defend_trusted_target` allows an entity to react with an event when a trusted target is attacked.
+`minecraft:behavior.defend_trusted_target` compels an entity to react with an event when a trusted target is attacked.
 
 >[!IMPORTANT]
 > `minecraft:behavior.defend_trusted_target` requires a mob to be set to a trusted relationship in order for the behavior to work properly.

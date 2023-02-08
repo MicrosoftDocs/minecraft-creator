@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.follow_target_captain
 
-`minecraft:behavior.follow_target_captain` allows an entity to follow a targeted captain.
+`minecraft:behavior.follow_target_captain` compels an entity to follow a targeted captain.
 
 >[!IMPORTANT]
 > `minecraft:behavior.follow_target_captain` requires a entity to be labeled as a captain in a group. An example of this is the `minecraft:is_illager_captain` component used in the `pillager.json` entity definition.

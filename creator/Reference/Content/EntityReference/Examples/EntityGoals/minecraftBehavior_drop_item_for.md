@@ -1,13 +1,13 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.drop_item_for
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.drop_item_for
 
-`minecraft:behavior.drop_item_for` allows the entity to move toward a target, and drop an item near the target. This goal requires a `minecraft:navigation` to execute.
+`minecraft:behavior.drop_item_for` compels the entity to move toward a target and drop an item near the target. This goal requires a `minecraft:navigation` to execute.
 
 ## Parameters
 
@@ -16,7 +16,7 @@ ms.prod: gaming
 | cooldown| 0.2| Decimal| Total time that the goal is on cooldown before it can be used again. |
 | drop_item_chance| 1.0| Decimal| The percent chance the entity will drop an item when using this goal. |
 | entity_types| | Minecraft Filter| The list of conditions another entity must meet to be a valid target to drop an item for. |
-| goal_radius| 0.50| Decimal| Distance in blocks within the entity considers it has reached it's target position.  |
+| goal_radius| 0.50| Decimal| Distance in blocks within the entity considers it has reached its target position.  |
 | loot_table| | String| The loot table that contains the possible loot the entity can drop with this goal. |
 | max_head_look_at_height| 10.0| Decimal| The maximum height the entities head will look at when dropping the item. The entity will always be looking at its target. |
 | minimum_teleport_distance| 2.0| Decimal| If the target position is farther away than this distance on any tick, the entity will teleport to the target position. |

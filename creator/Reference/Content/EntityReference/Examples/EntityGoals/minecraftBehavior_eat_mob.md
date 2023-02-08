@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.eat_mob
 
-`minecraft:behavior.eat_mob` allows the entity to eat a specified mob.
+`minecraft:behavior.eat_mob` compels the entity to eat a specified mob.
 
 ## Parameters
 
