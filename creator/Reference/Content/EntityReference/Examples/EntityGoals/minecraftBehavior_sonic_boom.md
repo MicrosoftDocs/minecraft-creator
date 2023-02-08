@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.sonic_boom
 
-`minecraft:behavior.sonic_boom` allows this entity to perform a 'sonic boom' ranged attack.
+`minecraft:behavior.sonic_boom` compels this entity to perform a 'sonic boom' ranged attack.
 
 ## Parameters
 

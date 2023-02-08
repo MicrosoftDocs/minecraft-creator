@@ -37,7 +37,7 @@ Let's take a look at how this appears on disk:
 On the left of the diagram, we can see the chunk key space. These keys take the legacy chunk key form of `<Chunk Position><DimensionID>`. 
 There is a very old legacy chunk format in which there is no dimension ID, so it is possible to load a really old world in which chunk keys do not have a dimension ID. They will be saved out under a new key with the dimension ID. This is old behavior that still exists.
 
-These are the smallest keys used by pushing them together contiguously on disk. The chunk key is used as a prefix for keys which store all non-actor data from the chunk. Each type of data from the chunk has it's own key ID that is appended to the chunk key prefix.
+These are the smallest keys used by pushing them together contiguously on disk. The chunk key is used as a prefix for keys which store all non-actor data from the chunk. Each type of data from the chunk has its own key ID that is appended to the chunk key prefix.
 
 ### Non-Actor Data Chunk Key IDs
 

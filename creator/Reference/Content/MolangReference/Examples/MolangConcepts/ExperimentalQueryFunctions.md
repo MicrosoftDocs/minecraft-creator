@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: Molang Documentation - Experimental Query Functions
 ms.prod: gaming

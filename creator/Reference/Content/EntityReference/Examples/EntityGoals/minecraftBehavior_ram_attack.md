@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-bbortree
 title: Entity Documentation - minecraft:behavior.ram_attack
 ms.prod: gaming

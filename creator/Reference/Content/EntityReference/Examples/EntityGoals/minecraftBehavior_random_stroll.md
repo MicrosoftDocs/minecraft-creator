@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.random_stroll
 
-`minecraft:behavior.random_stroll` allows an entity to choose a random direction to walk towards.
+`minecraft:behavior.random_stroll` compels an entity to choose a random direction to walk towards.
 
 ## Parameters
 

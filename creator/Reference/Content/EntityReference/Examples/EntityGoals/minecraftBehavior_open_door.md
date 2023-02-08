@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.open_door
 
-`minecraft:behavior.open_door` allows an entity to interact and open a door.
+`minecraft:behavior.open_door` compels an entity to interact and open a door.
 
 ## Parameters
 

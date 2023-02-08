@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.nap
 
-`minecraft:behavior.nap` allows mobs to occasionally stop and take a nap under certain conditions.
+`minecraft:behavior.nap` compels a mob to occasionally stop and take a nap under certain conditions.
 
 ## Parameters
 

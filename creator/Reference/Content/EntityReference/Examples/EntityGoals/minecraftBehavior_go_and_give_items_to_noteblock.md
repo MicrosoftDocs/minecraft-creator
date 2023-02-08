@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.go_and_give_items_to_noteblock
 
-`minecraft:behavior.go_and_give_items_to_noteblock` allows an entity to attempt to toss the items from its inventory to a nearby recently played noteblock.
+`minecraft:behavior.go_and_give_items_to_noteblock` compels an entity to attempt to toss the items from its inventory to a nearby recently played noteblock.
 
 ## Parameters
 
@@ -31,3 +31,25 @@ ms.prod: gaming
     "reach_block_distance": 10.0
 }
 ```
+
+## Vanilla entities example
+
+### allay
+
+```json
+"minecraft:behavior.go_and_give_items_to_noteblock": {
+        "priority": 3,
+        "run_speed": 8,
+        "throw_sound": "item_thrown",
+        "on_item_throw": [
+          {
+            "event": "pickup_item_delay",
+            "target": "self"
+          }
+        ]
+      }
+```
+
+## Vanilla entities using `minecraft:behavior.go_and_give_items_to_noteblock`
+
+- [allay](../../../../Source/VanillaBehaviorPack_Snippets/entities/allay.md)

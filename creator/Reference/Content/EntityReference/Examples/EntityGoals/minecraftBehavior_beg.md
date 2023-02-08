@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.beg
 
-`minecraft:behavior.beg` allows an entity to react by tilting its head when a player is holding select items nearby.
+`minecraft:behavior.beg` compels an entity to react by tilting its head when a player is holding select items nearby.
 
 ## Parameters
 

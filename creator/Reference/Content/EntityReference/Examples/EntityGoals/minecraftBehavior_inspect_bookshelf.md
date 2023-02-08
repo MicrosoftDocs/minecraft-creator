@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.inspect_bookshelf
 
-`minecraft:behavior.inspect_bookshelf` allows an entity to look at and inspect a bookshelf.
+`minecraft:behavior.inspect_bookshelf` compels an entity to look at and inspect a bookshelf.
 
 ## Parameters
 

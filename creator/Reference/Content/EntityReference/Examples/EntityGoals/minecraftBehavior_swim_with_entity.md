@@ -1,13 +1,13 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.swim_with_entity
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.swim_with_entity
 
-`minecraft:behavior.swim_with_entity` allows the entity follow another entity. Both entities must be swimming and in water.
+`minecraft:behavior.swim_with_entity` compels the entity follow another entity when both entities are swimming in water.
 
 ## Parameters
 

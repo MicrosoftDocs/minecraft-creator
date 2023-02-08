@@ -1,5 +1,5 @@
 ---
-author: Mammerla
+author: mammerla
 ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.panic
 ms.prod: gaming
@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.panic
 
-`minecraft:behavior.panic` allows an entity to react when it receives damage.
+`minecraft:behavior.panic` compels an entity to react when it receives damage.
 
 ## Parameters
 

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.find_underwater_treasure
 
-`minecraft:behavior.find_underwater_treasure` allows an entity to locate and travel to the nearest point of interest labeled as `ruin` or `shipwreck`.
+`minecraft:behavior.find_underwater_treasure` compels an entity to locate and travel to the nearest point of interest labeled as `ruin` or `shipwreck`.
 
 ## Parameters
 

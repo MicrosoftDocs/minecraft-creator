@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.trade_with_player
 
-`minecraft:behavior.trade_with_player` Allows the player to trade with this mob. When the goal starts, it will stop the mob's navigation.
+`minecraft:behavior.trade_with_player` compels the entity to stop moving and trade with the player.
 
 ## Parameters
 

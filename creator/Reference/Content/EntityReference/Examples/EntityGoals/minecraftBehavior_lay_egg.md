@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.lay_egg
 
-`minecraft:behavior.lay_egg` allows the mob to lay an egg block on certain types of blocks if the mob is pregnant.
+`minecraft:behavior.lay_egg` compels the mob to lay an egg block on certain types of blocks if the mob is pregnant.
 
 ## Parameters
 

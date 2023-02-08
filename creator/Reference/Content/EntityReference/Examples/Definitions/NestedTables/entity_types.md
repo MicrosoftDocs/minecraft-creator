@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-bbortree
 title: Entity Documentation - entity_type
 ms.prod: gaming

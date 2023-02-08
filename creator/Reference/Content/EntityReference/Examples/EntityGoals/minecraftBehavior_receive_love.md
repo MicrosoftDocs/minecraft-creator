@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.receive_love
 
-`minecraft:behavior.receive_love` allows an entity to mate with another similar entity when approached to breed.
+`minecraft:behavior.receive_love` inspires an entity to mate with another similar entity when approached to breed.
 
 > [!NOTE]
 > This behavior can only be used by the `villager` entity type.

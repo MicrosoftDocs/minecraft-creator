@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.drink_milk
 
-`minecraft:behavior.drink_milk` allows the mob to drink milk based on specified environment conditions.
+`minecraft:behavior.drink_milk` compels the mob to drink milk based on specified environment conditions.
 
 ## Parameters
 
@@ -27,4 +27,4 @@ ms.prod: gaming
 
 ## Vanilla entities using `drink_milk`
 
-- [warden](../../../../Source/VanillaBehaviorPack_Snippets/entities/warden.md)
+- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)

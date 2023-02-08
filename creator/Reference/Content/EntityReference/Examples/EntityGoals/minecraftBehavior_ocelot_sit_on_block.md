@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.ocelot_sit_on_block
 
-`minecraft:behavior.ocelot_sit_on_block` allows an entity to sit in place, similar to the ocelot entity animation pose.
+`minecraft:behavior.ocelot_sit_on_block` compels an entity to sit in place, similar to the ocelot entity animation pose.
 
 ## Parameters
 

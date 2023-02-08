@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-bbortree
 title: Entity Documentation - AI Goal List
 ms.prod: gaming
@@ -46,7 +46,7 @@ AI Goal |Description
 [minecraft:behavior.eat_mob](EntityGoals/minecraftBehavior_eat_mob.md)|`minecraft:behavior.eat_mob` allows the entity to eat a specified mob.
 [minecraft:behavior.emerge](EntityGoals/minecraftBehavior_emerge.md)|`minecraft:behavior.emerge` activates the "EMERGING" actor flag during the specified duration and triggers "on_done" at the end.
 [minecraft:behavior.enderman_leave_block](EntityGoals/minecraftBehavior_enderman_leave_block.md)|`minecraft:behavior.enderman_leave_block` allows the entity to drop the block they are currently holding.
-[minecraft:behavior.enderman_take_block](EntityGoals/minecraftBehavior_enderman_take_block.md)|`minecraft:behavior.enderman_take_block` allows the entity to pick up a nearby block and carry the block in it's hands.
+[minecraft:behavior.enderman_take_block](EntityGoals/minecraftBehavior_enderman_take_block.md)|`minecraft:behavior.enderman_take_block` allows the entity to pick up a nearby block and carry the block in its hands.
 [minecraft:behavior.equip_item](EntityGoals/minecraftBehavior_equip_item.md)|`minecraft:behavior.equip_item` causes an entity to equip an item.
 [minecraft:behavior.explore_outskirts](EntityGoals/minecraftBehavior_explore_outskirts.md)|`minecraft:behavior.explore_outskirts` allows an entity to travel beyond the bounds of a village and wander while looking for any points of interest.
 [minecraft:behavior.fertilize_farm_block](EntityGoals/minecraftBehavior_fertilize_farm_block.md)|`minecraft:behavior.fertilize_farm_block` allows the mob to search within an area for a growable crop block. If found, the mob will use any available fertilizer in their inventory on the crop. This goal will not execute if the mob does not have a fertilizer item in its inventory.
@@ -83,7 +83,7 @@ AI Goal |Description
 [minecraft:behavior.make_love](EntityGoals/minecraftBehavior_make_love.md)|`minecraft:behavior.make_love` allows an entity to interact with other similar entities to produce an offspring.
 [minecraft:behavior.melee_attack](EntityGoals/minecraftBehavior_melee_attack.md)|`minecraft:behavior.melee_attack` allows entities to make close combat melee attacks.
 [minecraft:behavior.mingle](EntityGoals/minecraftBehavior_mingle.md)|`minecraft:behavior.mingle` allows an entity to navigate to the village bell point of interest and interact with other entities that have been assigned.
-[minecraft:behavior.mount_pathing](EntityGoals/minecraftBehavior_mount_pathing.md)|`minecraft:behavior.mount_pathing` allows an entity to move around on it's own while mounted. `minecraft:behavior.mount_pathing` also will allow an entity to target another entity for an attack.
+[minecraft:behavior.mount_pathing](EntityGoals/minecraftBehavior_mount_pathing.md)|`minecraft:behavior.mount_pathing` allows an entity to move around on its own while mounted. `minecraft:behavior.mount_pathing` also will allow an entity to target another entity for an attack.
 [minecraft:behavior.move_indoors](EntityGoals/minecraftBehavior_move_indoors.md)|`minecraft:behavior.move_indoors` allows an entity to move indoors.
 [minecraft:behavior.move_outdoors](EntityGoals/minecraftBehavior_move_outdoors.md)|`minecraft:behavior.move_outdoors` allows an entity to move outdoors.
 [minecraft:behavior.move_through_village](EntityGoals/minecraftBehavior_move_through_village.md)|`minecraft:behavior.move_through_village` can only be used by villagers. Allows the villagers to create paths around the village.
@@ -168,7 +168,7 @@ AI Goal |Description
 [minecraft:behavior.tempt](EntityGoals/minecraftBehavior_tempt.md)|`minecraft:behavior.tempt` allows an entity to be tempted by a set item.
 [minecraft:behavior.trade_interest](EntityGoals/minecraftBehavior_trade_interest.md)|`minecraft:behavior.trade_interest` allows an entity to focus on a player that will initiate a trade.
 [minecraft:behavior.trade_with_player](EntityGoals/minecraftBehavior_trade_with_player.md)|`minecraft:behavior.trade_with_player` allows an entity to focus on a player that will initiate a trade.
-[minecraft:behavior.vex_copy_owner_target](EntityGoals/minecraftBehavior_vex_copy_owner_target.md)|`minecraft:behavior.vex_copy_owner_target` allows an entity of the`vex` family to target the same entity as it's owner.
+[minecraft:behavior.vex_copy_owner_target](EntityGoals/minecraftBehavior_vex_copy_owner_target.md)|`minecraft:behavior.vex_copy_owner_target` allows an entity of the`vex` family to target the same entity as its owner.
 [minecraft:behavior.vex_random_move](EntityGoals/minecraftBehavior_vex_random_move.md)|`minecraft:behavior.vex_random_move` allows an entity of the`vex` family to move randomly.
 [minecraft:behavior.wither_random_attack_pos_goal](EntityGoals/minecraftBehavior_wither_random_attack_pos_goal.md)|`minecraft:behavior.wither_random_attack_pos_goal` allows an entity to attack at random.
 [minecraft:behavior.wither_target_highest_damage](EntityGoals/minecraftBehavior_wither_target_highest_damage.md)|`minecraft:behavior.wither_target_highest_damage` allows an entity to focus its attacks on whichever hostile mob has dealt the most damage to it.

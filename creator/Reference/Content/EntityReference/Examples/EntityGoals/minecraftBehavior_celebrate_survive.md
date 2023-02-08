@@ -1,13 +1,13 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.celebrate_survive
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.celebrate_survive
 
-`minecraft:behavior.celebrate_survive` allows this entity to celebrate_survive surviving a raid by shooting fireworks.
+`minecraft:behavior.celebrate_survive` compels this entity to celebrate surviving a raid by shooting fireworks.
 
 ## Parameters
 
@@ -17,7 +17,7 @@ ms.prod: gaming
 | duration| 30.000000 | Decimal | The duration in seconds that the celebration lasts for. |
 | jump_interval| [1, 3.5] | Range [a, b]| Minimum and maximum time between jumping (positive, in seconds). |
 | on_celebration_end_event| | Trigger | The event to trigger when the goal's duration expires. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | sound_interval| [2, 7] | Range [a, b] | Minimum and maximum time between sound events (positive, in seconds). |
 
 ## Example
@@ -41,6 +41,7 @@ ms.prod: gaming
             "target": "self"
         }
     }
+ }
 ```
 
 ## Vanilla entities examples
@@ -69,10 +70,5 @@ ms.prod: gaming
 
 ## Vanilla entities using `celebrate_survive`
 
-- [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
-- [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
-- [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
 - [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
 - [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)
-- [witch](../../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)

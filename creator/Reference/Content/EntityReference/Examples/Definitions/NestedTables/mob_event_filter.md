@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-jimseaman
 title: Entity Documentation - minecraft:mob_event_filter
 ms.prod: gaming

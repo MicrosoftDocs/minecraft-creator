@@ -1,13 +1,13 @@
 ---
 author: mammerla
-ms.author: mikeam
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.stroll_towards_village
 ms.prod: gaming
 ---
 
 # vminecraft:behavior.stroll_towards_village
 
-`minecraft:behavior.stroll_towards_village` allows an entity to navigate and search for a nearby village.
+`minecraft:behavior.stroll_towards_village` compels an entity to navigate and search for a nearby village.
 
 ## Parameters
 

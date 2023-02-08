@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.sleep
 ms.prod: gaming

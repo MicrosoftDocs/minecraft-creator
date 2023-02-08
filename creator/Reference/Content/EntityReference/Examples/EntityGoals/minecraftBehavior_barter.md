@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.barter
 
-`minecraft:behavior.barter` allows an entity to drop an item in return after a player offers a trade by dropping a specific item near the entity.
+`minecraft:behavior.barter` compels an entity to drop an item in return after a player offers a trade by dropping a specific item near the entity.
 
 > [!IMPORTANT]
 > `minecraft:behavior.barter` requires the following in order to work properly;

@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: Guide to Redstone
 ms.prod: gaming

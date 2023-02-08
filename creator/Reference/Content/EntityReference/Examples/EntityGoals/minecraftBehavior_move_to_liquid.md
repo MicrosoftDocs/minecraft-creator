@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.move_to_liquid
 
-`minecraft:behavior.move_to_liquid` allows the mob to move into a liquid when on land.
+`minecraft:behavior.move_to_liquid` compels the mob to move into a liquid when on land.
 
 ## Parameters
 

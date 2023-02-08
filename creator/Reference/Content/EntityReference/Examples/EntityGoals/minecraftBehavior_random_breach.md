@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.random_breach
 
-`minecraft:behavior.random_breach` allows an entity to breach the surface of the water at a random interval.
+`minecraft:behavior.random_breach` compels an entity to breach the surface of the water at a random interval.
 
 ## Parameters
 

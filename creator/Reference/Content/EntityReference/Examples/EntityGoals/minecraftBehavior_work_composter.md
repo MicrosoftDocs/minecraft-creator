@@ -1,13 +1,13 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.work_composter
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.work_composter
 
-`minecraft:behavior.work_composter` allows the NPC to use the composter POI to convert excess seeds into bone meal.
+`minecraft:behavior.work_composter` compels the NPC to use the composter POI to convert seeds into bone meal.
 
 ## Parameters
 

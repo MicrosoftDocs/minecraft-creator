@@ -1,13 +1,13 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:attack
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:attack
 
-`minecraft:attack` allows an entity to define an entity's melee attack and any additional effects on it's attack.
+`minecraft:attack` allows an entity to define an entity's melee attack and any additional effects on its attack.
 
 ## Parameters
 

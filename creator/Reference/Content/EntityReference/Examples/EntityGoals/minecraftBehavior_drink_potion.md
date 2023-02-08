@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.drink_potion
 
-`minecraft:behavior.drink_potion` allows an entity to drink a potion as a reaction to an event or when set conditions are met.
+`minecraft:behavior.drink_potion` compels an entity to drink a potion as a reaction to an event or when set conditions are met.
 
 ## Parameters
 

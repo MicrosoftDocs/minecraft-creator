@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.nearest_attackable_target
 
-Allows an entity to attack the closest target within a given subset of specific target types.
+`minecraft:behavior.nearest_attackable_target` compels an entity to attack the closest target within a given subset of specific target types.
 
 > [!NOTE]
 > This behavior is a requirement for the following behaviors:

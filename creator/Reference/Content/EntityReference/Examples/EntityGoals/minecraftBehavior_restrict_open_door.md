@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.restrict_open_door
 
-`minecraft:behavior.restrict_open_door` allows an entity to stay indoors while the sun is down.
+`minecraft:behavior.restrict_open_door` compels an entity to stay indoors while the sun is down.
 
 ## Parameters
 

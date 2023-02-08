@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-bbortree
 title: Entity Documentation - minecraft:dweller
 ms.prod: gaming
