@@ -60,7 +60,7 @@ Looks good? Great. Close Preview and move on to the next step.
 
 ![Windows new shortcut creation](Media/MinecraftEditor/windows_new_shortcut.png)
 
-1. For the location of the item, enter the following:
+2. For the location of the item, enter the following:
 
     **`minecraft:?Editor=true`**
 
