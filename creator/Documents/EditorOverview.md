@@ -260,7 +260,7 @@ The Selection window that you use to configure the selection tool has sections w
 
 **Freeform** mode creates a selection area when you choose the x, z, and y coordinates, in that order. It can select air, but it needs non-air blocks included to create a selection.
 
-There is more than one way to specify the coordinates in Freeform mode, and they will all be explained fully in the Editor Tutorial, along with the helper features called **gizmos**. 
+There is more than one way to specify the coordinates in Freeform mode, and they will all be explained fully in the Editor Tutorial, along with the helper features called **gizmos**.
 
 For now, let's learn one way to create a selection in Freeform mode:
 
@@ -327,10 +327,10 @@ Practice changing the size of the selection:
 1. Make another selection.
 1. Click the Search field and select a different block type.
 1. Click the Fill Selection button to fill the current selection with the different block type.
- 
+
 **Gizmos**
 
-Create a selection and click on a corner of the selection box. You will see a little cube with arrows appear. That's a **Resize Gizmo**! You can click and drag these arrows to adjust the size of your selection box.
+Create a selection and click on a corner of the selection box. You will see a little cube with arrows appear. That's a **Resize Gizmo**! You can click and drag these arrows to adjust the size of your selection box. 
 
 You might also see another box hovering in the center of the selection. That's a **Move Gizmo** and you can drag it around to move your selection.
 

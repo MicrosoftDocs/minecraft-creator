@@ -133,7 +133,7 @@ Copy and paste an igloo onto a beach (uses /locate, /tp, select, copy, paste)
 
 Cut a woodland mansion from one part of the forest to another (uses /locate, /tp, select, cut, paste) 
 
-Make a parkour map (https://docs.microsoft.com/en-us/minecraft/creator/documents/parkourworldwalkthrough)  
+Make a parkour map (https://docs.microsoft.com/minecraft/creator/documents/parkourworldwalkthrough)  
 
 Create an upside-down world. 
 
@@ -315,7 +315,7 @@ Zoom out UI	Ctrl -	Tool only
 
 ## What's Next?
 
-Now that you have tried the Editor, you can learn more about what it can do.
+Now that you have gone through the Tutorial...?
 
 > [!div class="nextstepaction"]
-> [Editor Manual](editormanual.md)
+> [Editor Overview](EditorOverview.md)
