@@ -4,10 +4,10 @@
    href: minecraft_armor.md
  - name: block_placer
    href: minecraft_block_placer.md
- - name: cooldown
-   href: minecraft_cooldown.md
  - name: chargeable
    href: minecraft_chargeable.md
+ - name: cooldown
+   href: minecraft_cooldown.md
  - name: digger
    href: minecraft_digger.md
  - name: display_name
