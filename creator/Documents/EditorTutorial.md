@@ -38,11 +38,41 @@ It's recommended that the following be completed before beginning this tutorial.
 - [How to get Minecraft Bedrock Editor](EditorInstallation.md)
 - [Bedrock Editor Overview](EditorOverview.md)
 
-## Getting Started
+## Editor File Operations
 
-Launch Minecraft Bedrock Editor.
+Here are the steps to create a project, make a quick edit, export the file, and then open that file in Minecraft and then again in Minecraft Editor.
 
-Open the Editor and select "Create New Project."
+1. Launch Minecraft Bedrock Editor.
+1. Select "Create New Project."
+1. Name the project something meaningful like "Editor Test Project" and open it up.
+1. Select the brush tool (`Ctrl B`) and draw something by clicking on the ground a few times.
+1. Go to the **File** menu and select **Export as ... Playable world**.
+1. You will see some messages confirming that the export started and finished, and a temporary chat message will display the path to a folder in your **com.mojang** folder called **projectbackups**.
+1. Close Editor by going to **File ... Pause screen** and then choose **Save & Quit** like you usually do.
+1. Go to the **projectbackups** folder in your **com.mojang** folder. You should find a file with the name you gave it appended to the date, time, and a **.mcworld** extension.
+
+If you need a reminder about how to find the **com.mojang** folder on your computer, there are some steps in the [Getting Started](GettingStarted.md) article. 
+
+The **projectbackups** folder does not exist until the first time you export a project from Editor. 
+
+If you're curious about Minecraft file extensions, there is an article about them called [Minecraft File Extensions](mMinecraftFileExtensions.md) where you can learn more.
+
+1. If Editor is closed, then when you double-click the **.mcworld** file Minecraft will launch like usual and import the .mcworld file. The world you created in Editor will be listed among any other Minecraft worlds you already have. However, if Editor is still running, then double-clicking the file will cause it to be imported into Editor instead.
+1. To send your project file to someone else so they can work with it in Editor, go back to the **projectbackups** file in your com.mojang folder.
+1. Copy and paste the file and change the file extension to **.mcproject**. When you send this file to someone else, they can double-click it to open it directly in Editor (if they have Editor installed.)
+
+### File structure
+
+As you probably know, when you create a world in Minecraft, that world is stored in the **minecraftWorlds** folder in your **com.Mojang** folder.
+When you create a project in Editor, that file is also a world so it is also stored in the **minecraftWorlds** folder, but it is invisible to non-Editor Minecraft.
+The Editor project file goes into the **projectbackups** folder only when you export it.
+
+
+##
+
+
+
+
 
 creative mode, coordinates on, flat world
 World loads
@@ -140,36 +170,10 @@ Create an upside-down world.
 Change dimensions while you’re building.  
 
  
-
- 
-
-Make your first map 
-
-
-ROUGH NOTES (delete after harvesting goodness from them! )
-
-How to use the Editor
-
-Follow
-1
-
-Edit
-
-Chloe Bouxsein
-Feb 1
-Status: Last updated 1-Feb 2023 with latest /main release functionality
-
 How to use the Editor
 The short URL for this page is: aka.ms/EditorHowADO 
 
-Welcome! Välkommen! 🎉 We are so excited you're here and building with Minecraft's Bedrock Editor, where we want to empower and make it possible for Creators of all skillsets to easily create high-quality experiences.
 
-For playtesting guidance, view this page.
-
-And ensure you also join these Slack channels:
-
-#bp_editor_feedback  - Notifications when new builds are ready to Playtest
-#ask_editor  - General questions about the Editor
 Table of contents
 General overview - Editor Modes, Tool Mode Controls, Tool Mode UI
 Ideas of things to do - Use the features!
@@ -315,7 +319,7 @@ Zoom out UI	Ctrl -	Tool only
 
 ## What's Next?
 
-Now that you have gone through the Tutorial...?
+Now that you have gone through the Tutorial, here are some articles about commands and structure blocks.
 
 > [!div class="nextstepaction"]
-> [Editor Overview](EditorOverview.md)
+> [Commands Introduction](CommandsIntroduction.md)
