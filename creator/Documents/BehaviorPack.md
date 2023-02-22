@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: v-jillheaden
 title: Introduction To Behavior Packs
 ms.prod: gaming
 description: A tutorial that is an introduction to Behavior Packs and how to add a series of attacking behaviors to an in-game cow mob.
@@ -123,7 +123,7 @@ Every entity's behaviors are defined in its JSON file that lives inside the code
 1. In the **My_BEHAVIOR_Pack** folder, create a folder and name it **entities**.
 1. Create a text file in the **entities** folder and name it **cow.json**.
 1. Copy and paste the following code into your **cow.json** file. After you save the file, you're ready to go!
- 
+
 >[!Note]
 > This is the entire edited cow.json file. It's big because cows do a lot!
 
@@ -400,6 +400,35 @@ Every entity's behaviors are defined in its JSON file that lives inside the code
         }
     }
 }
+```
+
+### What changed
+
+This is that code that, when added to the `components` section of a `cow.json` file, turns cows into aggressive killing machines:
+
+```json
+            "minecraft:behavior.nearest_attackable_target": {
+                "priority": 2,
+                "must_see": true,
+                "reselect_targets": true,
+                "within_radius": 25.0,
+                "entity_types": [
+                    {
+                        "filters": {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "player"
+                        },
+                        "max_dist": 32
+                    }
+                ]
+            },
+            "minecraft:behavior.melee_attack": {
+                "priority": 3
+            },
+            "minecraft:attack": {
+                "damage": 3
+            }
 ```
 
 ### Testing the Pack
