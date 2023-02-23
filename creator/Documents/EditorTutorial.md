@@ -86,7 +86,7 @@ The Editor project file goes into the **projectbackups** folder only when you ex
 
 Now, let's create a project.
 
-
+![testing gif](Media/MinecraftEditor/click.gif)
 
 creative mode, coordinates on, flat world
 World loads
