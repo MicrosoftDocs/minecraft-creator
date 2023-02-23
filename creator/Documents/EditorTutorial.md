@@ -11,7 +11,7 @@ description: A step-by-step guide for using Minecraft Editor
 This tutorial is intended to guide you through creating an Editor project, using each tool, and then exporting the project as a world that can be opened in Minecraft. It is also meant to familiarize you with the keyboard shortcuts.
 
 > [!IMPORTANT]
-> Just like we add features to the Minecraft game from time to time (like new biomes), Minecraft Editor is still under development.
+> Just like we add features to the Minecraft game from time to time, Minecraft Editor is still under development.
 > It could change from time to time as we get feedback from creators like you.
 
 --------
@@ -30,8 +30,11 @@ In this tutorial, you will learn the following:
 
 To get started, you need the following:
 
-- A Windows computer
+- A Windows 10 (or higher) computer with Minecraft Bedrock Editor installed
 - Keyboard and mouse
+
+> [!IMPORTANT]
+> Editor is not available on mobile.
 
 It's recommended that the following be completed before beginning this tutorial.
 
@@ -61,16 +64,27 @@ If you're curious about Minecraft file extensions, there is an article about the
 1. To send your project file to someone else so they can work with it in Editor, go back to the **projectbackups** file in your com.mojang folder.
 1. Copy and paste the file and change the file extension to **.mcproject**. When you send this file to someone else, they can double-click it to open it directly in Editor (if they have Editor installed.)
 
-### File structure
+### Importing a file into Editor
 
-As you probably know, when you create a world in Minecraft, that world is stored in the **minecraftWorlds** folder in your **com.Mojang** folder.
-When you create a project in Editor, that file is also a world so it is also stored in the **minecraftWorlds** folder, but it is invisible to non-Editor Minecraft.
+1. Launch Editor and click the Play button.
+1. Click the import icon next to the Create New Project button to open the Windows file explorer.
+
+ ![The Editor import button is next to the create new project button](Media/MinecraftEditor/editor_tutorial_import_button.png)
+
+3. In the file explorer, choose the .mcworld, .mctemplate, or .mcproject you want to import.
+4. When the file is imported, a success message is displayed.
+5. The newly imported map will be available in the list.
+6. Open the map. It will load into Editor with default settings, which can be modified within Editor.
+
+### File structure information
+
+As you probably already know, when you create a world in Minecraft, that world is stored in the **minecraftWorlds** folder in your **com.Mojang** folder.
+When you create a project in Editor, that file is also a world, so it is also stored in the **minecraftWorlds** folder but it is invisible to non-Editor Minecraft unless you import it.
 The Editor project file goes into the **projectbackups** folder only when you export it.
 
+## Editing
 
-##
-
-
+Now, let's create a project.
 
 
 

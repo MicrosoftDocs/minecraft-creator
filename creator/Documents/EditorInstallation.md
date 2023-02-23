@@ -28,11 +28,11 @@ In this tutorial, you will learn the following:
 
 --------
 
-### Requirements
+## Requirements
 
 To get started, you need the following:
 
-- A Windows computer
+- A Windows 10 (or higher) computer
 - Keyboard and mouse
 
 > [!IMPORTANT]

@@ -37,8 +37,11 @@ In this manual, you will learn the following:
 
 To get started, you need the following:
 
-- A Windows computer with Minecraft Bedrock Editor installed
+- A Windows 10 (or higher) computer with Minecraft Bedrock Editor installed
 - Keyboard and mouse
+
+> [!IMPORTANT]
+> Editor is not available on mobile.
 
 It's recommended that the following be completed before beginning this tutorial.
 
@@ -48,13 +51,13 @@ It's recommended that the following be completed before beginning this tutorial.
 
 After you launch the Editor from the shortcut, you get a screen that says "Create New Project."
 
-![Image of the Minecraft Editor starting page](Media/MinecraftEditor/editor_opening_page.png)
+![Image of the Minecraft Editor starting page](Media/MinecraftEditor/editor_overview_new_project.png)
 
 While you're creating a project, you can configure the name, export settings, and the usual settings for a Minecraft world.
 
 Export settings will apply when you export as a playable world from the Editor (.mcworld).
 
-![Image of the Minecraft Editor configuration page](Media/MinecraftEditor/editor_new_project_settings.png)
+![Image of the Minecraft Editor configuration page](Media/MinecraftEditor/editor_overview_project_settings.png)
 
 New projects load with a Welcome/Quick Start screen. If you close it and you want it open again, go to the Help menu and select Quick Start.
 
@@ -63,6 +66,8 @@ New projects load with a Welcome/Quick Start screen. If you close it and you wan
 Editor looks like your usual Minecraft game with a User Interface (UI) on top of it. Before we get started, let's make sure that UI looks okay for your monitor resolution and preferences.
 
 Go to the **File** menu and select **UI Settings**.
+
+![Editor User Interface appearance settings showing UI scale, font, and theme drop-down menus](Media/MinecraftEditor/editor_overview_ui_settings.png)
 
 >- UI Scale - Makes the menu bar and windows larger or smaller in relation to the project world.
 >- Font - Changes the size of the text in the windows.
@@ -98,9 +103,9 @@ Click through the tabs above to learn the basics!
 
 Hold down your right mouse button on the viewport to enable movement.
 
-Move horizontally using W A S D.
+Move horizontally using `W A S D`.
 
-Move vertically using Shift or Space.
+Move vertically using `Shift` or `Space`.
 
 **Selection**
 
@@ -122,17 +127,17 @@ Left-click and drag to paint.
 
 **Actions**
 
-Undo (Ctrl-Z) or redo (Ctrl-Y) your edits.
+Undo (`Ctrl Z`) or redo (`Ctrl Y`) your edits.
 
-Cut (Ctrl-X) or copy (Ctrl-C) a selection.
+Cut (`Ctrl X`) or copy (`Ctrl C`) a selection.
 
-Select a single block and quick paste (Ctrl-V) what you cut or copied.
+Select a single block and quick paste (`Ctrl V`) what you cut or copied.
 
-Or, paste preview (Ctrl-Shift-V) and use arrow keys and page-up / page-down for precise placement.
+Or, paste preview (`Ctrl Shift V`) and use arrow keys and page-up / page-down for precise placement.
 
 **Help**
 
-Editor will be exclusively available in Bedrock Preview until the feature set and quality meets our standards to be made visible i teh Launcher.
+Editor will be exclusively available in Bedrock Preview until the feature set and quality meets our standards to be made visible in the Launcher.
 
 - Documentation
 - Log issues and give feedback
@@ -159,7 +164,7 @@ Before we dive into the Tool Mode UI, you might want to take a moment to familia
 
 - Unlock the camera: In Tool mode, hold down the right mouse button to look around. In Crosshair Mode, you do not need to hold down the right mouse button.  
 
-- Moving around in Tool Mode: Hold the right mouse button down while you press W, A, S, D, Space, and Shift keys to move around. You do not need to hold down the right mouse button to use the same keys to move around in Crosshair Mode.
+- Moving around in Tool Mode: Hold the right mouse button down while you press `W`, `A`, `S`, `D`, `Space`, and `Shift` keys to move around. You do not need to hold down the right mouse button to use the same keys to move around in Crosshair Mode.
 
 - Look-to-teleport: In Tool Mode, point your cursor at a block in the distance, and hit `G` on your keyboard. You will be "Grapple teleported" there. This function does not work in Crosshair Mode.
 
@@ -176,6 +181,8 @@ The contents of these containers will change as Editor is developed.
 **Toolrail**: Left side of the screen. Currently holds Selection, Paste Preview, and Brush. You can also select these tools using keyboard shortcuts.
 
 ## Menu bar
+
+~[Editor Overview]
 
 ### File menu
 
