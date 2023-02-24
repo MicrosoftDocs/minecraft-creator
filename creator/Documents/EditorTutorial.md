@@ -8,11 +8,13 @@ description: A step-by-step guide for using Minecraft Editor
 
 # Minecraft Editor Tutorial
 
-This tutorial is intended to guide you through creating an Editor project, using each tool, and then exporting the project as a world that can be opened in Minecraft. It is also meant to familiarize you with the keyboard shortcuts.
+This tutorial is intended to guide you through using Mineraft Bedrock Editor to accomplish a variety of tasks. Before you begin, you should know how to launch Editor, create a project, move around, and switch between the two modes.
+
+There will be some hints about using keyboard shortcuts and which commands should make things easier.
 
 > [!IMPORTANT]
 > Just like we add features to the Minecraft game from time to time, Minecraft Editor is still under development.
-> It could change from time to time as we get feedback from creators like you.
+> It will change from time to time as we get feedback from creators like you.
 
 --------
 
@@ -20,9 +22,7 @@ In this tutorial, you will learn the following:
 
 > [!div class="checklist"]
 >
-> - How to create an Editor project
 > - How to use each tool in Editor, along with its variations and keyboard shortcuts
-> - How to export a world and open it in Minecraft
 
 --------
 
@@ -40,73 +40,24 @@ It's recommended that the following be completed before beginning this tutorial.
 
 - [How to get Minecraft Bedrock Editor](EditorInstallation.md)
 - [Bedrock Editor Overview](EditorOverview.md)
+- [Commands Introduction](CommandsIntroductions.md)
+- [Popular Commands](CommandsPopularCommands.md)
 
-## Editor File Operations
+## Draw a Tree with the Brush Tool
 
-Here are the steps to create a project, make a quick edit, export the file, and then open that file in Minecraft and then again in Minecraft Editor.
+1. Create a flat project world.
+1. Set th
+1. Close the Welcome screen if it is open.
+1. Select the Brush tool. (`Ctrl B`)
+1. Configure the brush to have Brush Size 1, check the box for Face Mode, and set the Block Type to "log".
+1. Click the ground to place a log block.
+1. Click the top of the log block to place another one on top of it. If you make a mistake, you can click `Ctrl Z` any time to undo the most recent thing you did - or, you can change the Block Type to "air" and click blocks you don't like to erase them.
 
-1. Launch Minecraft Bedrock Editor.
-1. Select "Create New Project."
-1. Name the project something meaningful like "Editor Test Project" and open it up.
-1. Select the brush tool (`Ctrl B`) and draw something by clicking on the ground a few times.
-1. Go to the **File** menu and select **Export as ... Playable world**.
-1. You will see some messages confirming that the export started and finished, and a temporary chat message will display the path to a folder in your **com.mojang** folder called **projectbackups**.
-1. Close Editor by going to **File ... Pause screen** and then choose **Save & Quit** like you usually do.
-1. Go to the **projectbackups** folder in your **com.mojang** folder. You should find a file with the name you gave it appended to the date, time, and a **.mcworld** extension.
+## Select, Copy, Paste/Paste Preview
 
-If you need a reminder about how to find the **com.mojang** folder on your computer, there are some steps in the [Getting Started](GettingStarted.md) article. 
+1. Open the Selection tool. (`Ctrl S`)
+1. 
 
-The **projectbackups** folder does not exist until the first time you export a project from Editor. 
-
-If you're curious about Minecraft file extensions, there is an article about them called [Minecraft File Extensions](mMinecraftFileExtensions.md) where you can learn more.
-
-1. If Editor is closed, then when you double-click the **.mcworld** file Minecraft will launch like usual and import the .mcworld file. The world you created in Editor will be listed among any other Minecraft worlds you already have. However, if Editor is still running, then double-clicking the file will cause it to be imported into Editor instead.
-1. To send your project file to someone else so they can work with it in Editor, go back to the **projectbackups** file in your com.mojang folder.
-1. Copy and paste the file and change the file extension to **.mcproject**. When you send this file to someone else, they can double-click it to open it directly in Editor (if they have Editor installed.)
-
-### Importing a file into Editor
-
-1. Launch Editor and click the Play button.
-1. Click the import icon next to the Create New Project button to open the Windows file explorer.
-
- ![The Editor import button is next to the create new project button](Media/MinecraftEditor/editor_tutorial_import_button.png)
-
-3. In the file explorer, choose the .mcworld, .mctemplate, or .mcproject you want to import.
-4. When the file is imported, a success message is displayed.
-5. The newly imported map will be available in the list.
-6. Open the map. It will load into Editor with default settings, which can be modified within Editor.
-
-### File structure information
-
-As you probably already know, when you create a world in Minecraft, that world is stored in the **minecraftWorlds** folder in your **com.Mojang** folder.
-When you create a project in Editor, that file is also a world, so it is also stored in the **minecraftWorlds** folder but it is invisible to non-Editor Minecraft unless you import it.
-The Editor project file goes into the **projectbackups** folder only when you export it.
-
-## Editing
-
-Now, let's create a project.
-
-![testing gif](Media/MinecraftEditor/click.gif)
-
-creative mode, coordinates on, flat world
-World loads
-Tool Mode - switch to Crosshair Mode and back again.
-
-close Welcome panel, 
-minimize selection panel, 
-move to toolbar area
-Verify in Tool mode
-
-Move around
-WASD, need r-click mouse and hold to unlock camera viewport
-THEN WASD shift space to move around
-Go into Crosshair Mode, move around
-Go into Tool mode
-place blocks with tool (block brush), then move around
-Select the blocks you placed.
-copy, paste.
-Cut and paste.
-Different pastes.
 
 Paste Preview Practice:
 Wanted to mention some additional flow options! 
