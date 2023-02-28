@@ -10,7 +10,7 @@ description: An overview of the parts of Minecraft Bedrock Editor
 
 This overview is intended to introduce you to the parts of the Editor interface and the tools. The keyboard shortcuts, also known as keybindings, have been provided with each tool and in the table at the end of this document.
 
-For a more in-depth experience using the tools to accomplish basic tasks, take a look at the Editor Tutorial.
+For a more in-depth experience using the tools to accomplish basic tasks, take a look at the [Editor Tutorial](EditorTutorial.md).
 
 > [!IMPORTANT]
 > Just like we add features to the Minecraft game from time to time (like new blocks), Minecraft Editor is still under active development.
@@ -38,7 +38,7 @@ In this manual, you will learn the following:
 
 To get started, you need the following:
 
-- A Windows 10 (or higher) computer with Minecraft Bedrock Editor installed
+- A Windows 10 (or higher) computer with Minecraft Bedrock Editor
 - Keyboard and mouse
 
 > [!IMPORTANT]
@@ -64,7 +64,7 @@ New projects load with a Welcome/Quick Start screen. If you close it and you wan
 
 ## First Things First: UI Settings
 
-Editor looks like your usual Minecraft game with a User Interface (UI) on top of it. Before we get started, let's make sure that UI looks okay for your monitor resolution and preferences.
+Editor looks like your usual Minecraft game with a user interface (UI) on top of it. Before we get started, let's make sure that UI looks okay for your monitor resolution and preferences.
 
 Go to the **File** menu and select **UI Settings**.
 
@@ -85,7 +85,9 @@ When you're happy with the UI Settings, you can click the X to close the UI Sett
 ## Editor UI Windows: Move, Minimize, Close
 
 You can move Editor windows by clicking and dragging them by the title bar.
+
 Click the double "up arrows" in the corner to collapse the windows upwards so you can tuck them out of the way if you don't want to close them.
+
 If you do want to close the window, click the X in the corner. Some windows can be re-opened with a keyboard shortcut.
 
 ## Welcome/Quick Start
@@ -151,7 +153,11 @@ The two modes within Editor are Tool Mode and Crosshair Mode.
 
 **Tool Mode** has multi-block editing tools and the user interface. When you move the mouse without holding any mouse buttons, your cursor is freely available to use the user interface.
 
+![Tool Mode has the user interface with tools](Media/MinecraftEditor/editor_overview_tool_mode.png)
+
 **Crosshair Mode** has more precise, single-block editing capabilities. It also uses the usual Minecraft keybindings you can see on the Settings > Controls > Keyboard & Mouse screen. When you move the mouse, you look around.
+
+![Crosshair mode has no user interface and looks like the Minecraft game](Media/MinecraftEditor/editor_overview_crosshair_mode.png)
 
 In a new project, before you touch anything, you are in Tool Mode.
 
@@ -165,7 +171,7 @@ Before we dive into the Tool Mode UI, you might want to take a moment to familia
 
 - Unlock the camera: In Tool mode, hold down the right mouse button to look around. In Crosshair Mode, you do not need to hold down the right mouse button.  
 
-- Moving around in Tool Mode: Hold the right mouse button down while you press `W`, `A`, `S`, `D`, `Space`, and `Shift` keys to move around. You do not need to hold down the right mouse button to use the same keys to move around in Crosshair Mode.
+- Moving around: In Tool Mode, hold the right mouse button down while you press `W`, `A`, `S`, `D`, `Space`, and `Shift` keys. You do not need to hold down the right mouse button to use the same keys to move around in Crosshair Mode.
 
 - Look-to-teleport: In Tool Mode, point your cursor at a block in the distance, and hit `G` on your keyboard. You will be "Grapple teleported" there. This function does not work in Crosshair Mode.
 
@@ -177,30 +183,40 @@ The contents of these containers will change as Editor is developed.
 
 **Menu bar**: At the top of the screen. Currently has File, Edit, World Options, and Help.
 
+![Editor UI with menu bar highlighted](Media/MinecraftEditor/editor_overview_menu_bar.png)
+
 **Action bar**: Below the menu bar. Currently has undo and redo buttons that affect the things you do to the world, including some of the actions you do in Crosshair Mode.
 
+![Editor UI with the action bar highlighted](Media/MinecraftEditor/editor_overview_action_bar.png)
+
 **Toolrail**: Left side of the screen. Currently holds Selection, Paste Preview, and Brush. You can also select these tools using keyboard shortcuts.
+
+![Editor UI with the tool rail highlighted](Media/MinecraftEditor/editor_overview_tool_rail.png)
 
 ## Menu bar
 
 ### File menu
 
-**Export Project** - When you're ready to share your project (or just see it in non-Editor Minecraft) selecting File > Export as > Playable world to start the process to create a .mcworld file in the **projectbackups** folder inside the **com.mojang** folder in your computer.
+**Export as** - When you're ready to share your project (or just see it in non-Editor Minecraft) selecting **File > Export as > Playable world** to start the process to create a .mcworld file in the **projectbackups** folder inside the **com.mojang** folder in your computer.
+
 If you don't know how to find your com.mojang folder, there are instructions in the Bedrock [Getting Started](/GettingStarted.md) tutorial.
 
 Editor has its own filetype: .mcproject. These files will always open in Editor, if you have it installed.  
 
-You can export as an .mcproject, .mcworld, or .mctemplate file.
-When you export as an .mcworld or .mctemplate, the file is sanitized to clear player data and exclude files used exclusively for the Editor as it is automatically converted to the .mcproject filetype.
+To **import** projects, go to the Create New Project screen and click the import button to the right of the Create New Project button.
 
-To **import** projects, go to the Create New Project screen and click the [<-] button to the right of the Create New Project button. Navigate to a .mcworld, .mctemplate, or .mcproject files.
+![The import button has an arrow icon on it and is next to the Create New Project button](Media/MinecraftEditor/editor_overview_import_button.png)
+
+Navigate to a .mcworld, .mctemplate, or .mcproject files.
 After the file is imported, it is converted to an .mcproject file.
 
 If you want to learn more about Minecraft file types like .mcproject and .mcworld, there is more information on the [Minecraft File Types](/MinecraftFileExtensions.md) page.
 
-**Pause Screen** - This option brings up the Minecraft pause screen where you can edit game settings (like music volume) or Save & Quit.
+**UI settings** - This is where you can adjust the UI Scale, Font, and Theme color settings of the Editor UI.
 
-**UI Settings** - This is where you can adjust the settings of the Editor UI.
+**Pause screen** - This option brings up the Minecraft pause screen where you can edit game settings (like music volume) or Save & Quit.
+
+![Editor UI Settings screen in Redstone theme](Media/MinecraftEditor/editor_overview_ui_settings_redstone.png)
 
 ### Edit menu
 
@@ -211,7 +227,7 @@ As you work in Tool Mode, these familiar functions (along with their keyboard sh
 | Undo | `Ctrl Z` |
 | Redo | `Ctrl Y` |
 | Quick Fill | Select an area and either `Ctrl F` while in Selection mode or use Fill in the Selection panel |
-| Deselect | `Ctrl D` |
+| Deselect | `Ctrl D` or use the Deselect button in the Selection panel |
 | Cut | `Ctrl X` |
 | Copy | `Ctrl C` |
 | Quick Paste | `Ctrl V` |
@@ -243,6 +259,7 @@ The Action Bar has quick functions like undo and redo that affect the things you
 |:-------|:-------|
 | Undo | `Ctrl Z` |
 | Redo | `Ctrl Y` |
+| Crosshair Mode| `Ctrl Tab` |
 
 ### Toolrail
 
@@ -258,25 +275,29 @@ Practice: Tool window switcheroo
 
 `Ctrl S` opens the Selection tool window.
 
+![Editor selection tool window](Media/MinecraftEditor/editor_overview_selection_tool_window.png)
+
 The selection tool is used to select any of the blocks in the world, including air.
 
 The Selection window that you use to configure the selection tool has sections where you can change the selection mode, transform the selection, fill the selection with blocks, or deselect your selection.
 
 ### Selection Modes
 
-**Freeform** mode creates a selection area when you choose the x, z, and y coordinates, in that order. It can select air, but it needs non-air blocks included to create a selection.
+**Freeform** mode creates a selection area when you choose the x, z, and y coordinates, in that order. It can include air in the selection, but you can only click on a non-air block to choose it as a coordinate.
 
-There is more than one way to specify the coordinates in Freeform mode, and they will all be explained fully in the Editor Tutorial, along with the helper features called **gizmos**.
+There is more than one way to specify the coordinates in Freeform mode, and they will all be explained fully, along with the helper features called **gizmos**.
 
-For now, let's learn one way to create a selection in Freeform mode:
+For now, let's learn one way to create a selection in Freeform mode.
 
 Freeform mode practice:
 
 1. Make sure "Freeform" is showing in the Mode drop-down menu of the Selection window.
 1. Left-click a block on the ground in front of you with your cursor. This chooses the block that will hold the x coordinate.
 1. Hold down the `Shift` key and click another block. This chooses the z coordinate. A square with x and z as opposite corners will be drawn on the ground.
-1. To add the y coordinate, hold down the `Alt` key and click somewhere in the air above the x, z selection square.
+1. To add the y coordinate, hold down the `Alt` key and click somewhere above the x, z selection square.
 1. Click the Deselect button (or `Ctrl D`) before moving on to the next practice.
+
+![Image of a selection made in Freeform Selection mode](Media/MinecraftEditor/editor_overview_selection_freeform.png)
 
 **Fixed Distance** mode can select blocks, air, or a combination of both.
 You can use the scroll wheel on the mouse to increase or decrease the distance between you and the selection cube.
@@ -285,22 +306,27 @@ Like Freeform selection, you build the selection shape by selecting the x, z, an
 
 Fixed Distance mode practice:
 
+![Alt text](Media/MinecraftEditor/editor_overview_selection_fixed_distance_preselect.png)
+
 1. Make sure "Fixed Distance" is showing in the Mode drop-down menu of the Selection window. You should see a thinly-outlined cube shape in front of you.
 1. Hold down the right mouse button and look around the world. Notice how the pre-selection cube moves around.
 1. Next, roll the mouse's scroll wheel back and forth to see how the fixed distance pre-selection cube changes size and position.
 1. Click the ground to set your x coordinate.
 1. Hold the shift key and click the ground a little distance away to choose your z coordinate.
-1. Alt-click in the air above the x z square.
+1. Alt-click above the x z square.
 1. Click the Deselect button (or `Ctrl D`) before moving on to the next practice.
 
-**Adjacent** mode may be best understood by how it's different from the Freeform and Fixed Distance modes. First off, although it does create a cube-shaped selection like Freeform mode does, Adjacent mode selects only the air next to, above, and below solid blocks.
+![A completed fixed distance selection](Media/MinecraftEditor/editor_overview_selection_fixed_distance_selection.png)
+
+**Adjacent** mode selects only the air next to, above, and below solid blocks.
 
 Adjacent mode practice:
 
+![A completed adjacent selection](Media/MinecraftEditor/editor_overview_selection_adjacent.png)
+
 1. Make sure "Adjacent" is showing in the Mode drop-down menu of the Selection window.
 1. If you move the mouse around, you will see the thin, pre-select cube move around on top of the ground.
-1. Left-click to confirm your choice of where to create the selection
-1. Hold down the right mouse button and look around. The selection does not move.
+1. Left-click to confirm your choice of where to create the selection.
 1. Click the Deselect button (or `Ctrl D`) before moving on to the next practice.
 
 **Transform**
@@ -334,11 +360,17 @@ Practice changing the size of the selection:
 1. Click the Search field and select a different block type.
 1. Click the Fill Selection button to fill the current selection with the different block type.
 
+![Image of 1 selection that was filled with stone, and another filled with stone brick stairs](Media/MinecraftEditor/editor_overview_selection_fill_stone_brick_stairs.png)
+
 **Gizmos**
 
-Create a selection and click on a corner of the selection box. You will see a little cube with arrows appear. That's a **Resize Gizmo**! You can click and drag these arrows to adjust the size of your selection box. 
+Create a selection and click on a corner of the selection box. You will see a little cube with arrows appear. That's a **Resize Gizmo**! You can click and drag these arrows to adjust the size of your selection box.
+
+![Selection with a resize gizmo on the corner](Media/MinecraftEditor/editor_overview_gizmo_resize.png)
 
 You might also see another box hovering in the center of the selection. That's a **Move Gizmo** and you can drag it around to move your selection.
+
+![Selection with a move gizmo in the middle](Media/MinecraftEditor/editor_overview_gizmo_move.png)
 
 ### Paste Preview
 
@@ -346,32 +378,43 @@ You might also see another box hovering in the center of the selection. That's a
 
 After you create a selection and copy it (`Ctrl C`) or cut it (`Ctrl X`), you can use the Paste Preview window to change how the selection will appear when you paste it.
 
-1. Create a selection with any of the selection modes.
-1. Copy or cut the selection.
+1. Select something interesting, like a village house, with any of the selection modes.
+![Alt text](Media/MinecraftEditor/editor_overview_paste_preview_selected_house.png)
+1. Copy or cut the selection (`Ctrl C` or `Ctrl X`).
 1. Open the Paste Preview window (`Ctrl Shift V`).
-1. Click the ground where you want the copied blocks to be pasted. The paste preview selection is displayed.
-1. Use the arrow keys and the page up/page down keys to move the paste preview box.
+1. Click the ground where you want the copied or cut blocks to be pasted. The paste preview selection is displayed.
+![Alt text](Media/MinecraftEditor/editor_overview_paste_preview_copied_house_preview.png)
+1. You can use the arrow keys and the page up/page down keys to move the paste preview box to exactly where you want it.
 1. Click Confirm Paste.
+![Alt text](Media/MinecraftEditor/editor_overview_paste_preview_copied_house_paste_confirmed1.png)
 
 You can Transform your copied selection by editing the Origin coordinates, Rotating the selection, or mirroring the selection along the x or z axis.
-You can click Confirm Paste after each transformation to place your selected blocks.
+
+Click Confirm Paste after each transformation to place a selected object.
+![Alt text](Media/MinecraftEditor/editor_overview_paste_preview_copied_house_paste_confirmed3.png)
 
 #### Brush
 
 `Ctrl B` opens the Brush tool window.
 
 The Brush tool is used to draw shapes with a selected Block Type.
+
 You can change the Brush Size, ranging from 1 to 16. Brush sizes are rendered as squares of the selected brush size. This means a brush size of 1 draws a 1x1 block shape. If you select a brush size of 3, you get a 3x3 block shape, or 9 total blocks arranged as a cube.
+
 If you choose a brush size larger than 3, you can select the Hollow checkbox to make the block shape hollow.
+
 If the Face Mode checkbox is selected, the brush cursor acts like the Adjacent selection cursor - meaning you can select the air above a solid block to draw your blocks. This should make it easier to build up shapes from the ground - like mountains!
 
-Practice 1: Looks familiar...
+Practice 1: A humble tree...
 
+1. Move to a clear area.
 1. Set the Brush Size to 1, check the box for Face Mode, and choose 'log' for the Block Type.
 1. Find a clear place on the ground and place one log block.
 1. Draw another log on top of that one.
 1. Draw two more log blocks on top of each other to create a tree trunk.
-1. Change the Block Type to 'leaves' and draw leaves around the top of your tree.
+![Brush tool was used to draw logs stacked up like a tree trunk](Media/MinecraftEditor/editor_overview_brush_log.png)
+1. Change the Block Size to 3 and the Block Type to 'leaves' and click the top of your log blocks to put leaves around the top of your tree.
+![Brush tool was used to draw leaves at the top of the tree trunk](Media/MinecraftEditor/editor_overview_brush_leaves.png)
 
 Practice 2: Is it really Hollow?
 
@@ -380,8 +423,8 @@ Practice 2: Is it really Hollow?
 1. Check the box for Hollow.
 1. The box for Face Mode should be checked, too.  
 1. Set the Block Type to 'glass'.
-1. Click the ground once to draw a 16x16, hollow glass shape.
-1. Change the Block Type to 'air' and click the side of the glass shape. You can see how a "hollow" shape does not affect any existing blocks that might have been in the way when you drew your shape.
+1. Click the ground once to draw a 16x16, hollow glass shape. You should find yourself inside a huge, glass house.
+![Alt text](Media/MinecraftEditor/editor_overview_brush_glass_house.png)
 
 ## Crosshair Mode
 
@@ -394,6 +437,7 @@ Practice:
 1. Place a campfire where it won't hurt the horse.
 1. Go back to Tool Mode and notice that pausing and unpausing actors affects the horse and not the campfire.
 1. Use Undo (`Ctrl Z`) and Redo (`Ctrl Y`) in each mode to make the campfire disappear and reappear. Notice that the horse is unaffected.
+![Scene in crosshair mode showing that pausing actors causes mobs to hold still, but moving items like a campfire continue burning](Media/MinecraftEditor/editor_overview_crosshair_paused.png)
 
 ## Keyboard shortcuts
 
@@ -424,8 +468,8 @@ Practice:
 | Brush | `Ctrl B` | Tool only |
 | Open cmd window | `/` | Tool + Crosshair |
 | Toggle from Tool to Crosshair Mode | Crosshair Mode button or `Ctrl Tab` | Tool only |
-| Toggle from Crosshair Mode to Tool | `Esc` | Tool only
-| Get to Tool Mode from Crosshair Mode | `Esc` | Crosshair only |
+| Toggle from Crosshair Mode to Tool | `Esc` | Crosshair only
+| Get to Tool Mode from Crosshair Mode | `Esc` | Tool only |
 
 ## Editor File Operations - Create, Import, Export
 
