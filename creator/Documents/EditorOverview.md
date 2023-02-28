@@ -94,58 +94,14 @@ If you do want to close the window, click the X in the corner. Some windows can 
 
 ![Editor Quick Start Welcome screen Introduction tab](Media/Editor/editor_overview_quickstart_screen.png)
 
-**Introduction**
-
-Welcome to Minecraft Editor!
-
-Minecraft Editor is a multiblock editing experience that helps you easily craft high-quality worlds in Minecraft Bedrock. We are early in our development and excited for the opportunity to build alongside our creator community!
-
-Click through the tabs above to learn the basics!
-
-**Movement**
-
-Hold down your right mouse button on the viewport to enable movement.
-
-Move horizontally using `W A S D`.
-
-Move vertically using `Shift` or `Space`.
-
-**Selection**
-
-Left-click anywhere in the world to select a single block.
-
-Use the gizmo or hold Shift between left-clicks to place opposite corners of an area.
-
-Press Ctrl to make additional selections.
-
-Move using the gizmo, or hold down Alt and move with arrow keys (horizontal) and page up/page down (vertical).
-
-Resize using corner gizmos, or hold Ctrl (increase) or Shift (decrease) with arrow keys and page up/page down.
-
-**Tools**
-
-Select the brush from the left toolrail.
-
-Left-click and drag to paint.
-
-**Actions**
-
-Undo (`Ctrl Z`) or redo (`Ctrl Y`) your edits.
-
-Cut (`Ctrl X`) or copy (`Ctrl C`) a selection.
-
-Select a single block and quick paste (`Ctrl V`) what you cut or copied.
-
-Or, paste preview (`Ctrl Shift V`) and use arrow keys and page-up / page-down for precise placement.
-
-**Help**
-
-Editor will be exclusively available in Bedrock Preview until the feature set and quality meets our standards to be made visible in the Launcher.
-
-- Documentation
-- Log issues and give feedback
-
-You may close this panel. To reopen at any point, select "QuickStart" from the top "Help" menu.
+|Tab  |Content  |
+|:-------|:---------|
+| Introduction | Welcome to Minecraft Editor!<br>Minecraft Editor is a multiblock editing experience that helps you easily craft high-quality worlds in Minecraft Bedrock. We are early in our development and excited for the opportunity to build alongside our creator community!<br>Click through the tabs above to learn the basics! |
+| Movement | Hold down your right mouse button on the viewport to enable movement.<br>Move horizontally using `W A S D`.<br>Move vertically using `Shift` or `Space`. |
+|Selection|Left-click anywhere in the world to select a single block.<br>Use the gizmo or hold Shift between left-clicks to place opposite corners of an area. Press Ctrl to make additional selections.<br>Move using the gizmo, or hold down Alt and move with arrow keys (horizontal) and page up/page down (vertical).<br>Resize using corner gizmos, or hold Ctrl (increase) or Shift (decrease) with arrow keys and page up/page down.|
+|Tools|Select the brush from the left toolrail.<br>Left-click and drag to paint.|
+|Actions|Undo (`Ctrl Z`) or redo (`Ctrl Y`) your edits.<br>Cut (`Ctrl X`) or copy (`Ctrl C`) a selection.<br>Select a single block and quick paste (`Ctrl V`) what you cut or copied.<br>Or, paste preview (`Ctrl Shift V`) and use arrow keys and page-up / page-down for precise placement.|
+|Help|Editor will be exclusively available in Bedrock Preview until the feature set and quality meets our standards to be made visible in the Launcher.<br>- Documentation<br>- Log issues and give feedback.<br>You may close this panel. To reopen at any point, select "QuickStart" from the top "Help" menu.|
 
 ## Tool Mode and Crosshair Mode
 
@@ -197,7 +153,7 @@ The contents of these containers will change as Editor is developed.
 
 ### File menu
 
-**Export as** - When you're ready to share your project (or just see it in non-Editor Minecraft) selecting **File > Export as > Playable world** to start the process to create a .mcworld file in the **projectbackups** folder inside the **com.mojang** folder in your computer.
+- **Export as** - When you're ready to share your project (or just see it in non-Editor Minecraft) selecting **File > Export as > Playable world** to start the process to create a .mcworld file in the **projectbackups** folder inside the **com.mojang** folder in your computer.
 
 If you don't know how to find your com.mojang folder, there are instructions in the Bedrock [Getting Started](/GettingStarted.md) tutorial.
 
@@ -212,9 +168,9 @@ After the file is imported, it is converted to an .mcproject file.
 
 If you want to learn more about Minecraft file types like .mcproject and .mcworld, there is more information on the [Minecraft File Types](/MinecraftFileExtensions.md) page.
 
-**UI settings** - This is where you can adjust the UI Scale, Font, and Theme color settings of the Editor UI.
+- **UI settings** - This is where you can adjust the UI Scale, Font, and Theme color settings of the Editor UI.
 
-**Pause screen** - This option brings up the Minecraft pause screen where you can edit game settings (like music volume) or Save & Quit.
+- **Pause screen** - This option brings up the Minecraft pause screen where you can edit game settings (like music volume) or Save & Quit.
 
 ![Editor UI Settings screen in Redstone theme](Media/Editor/editor_overview_ui_settings_redstone.png)
 
@@ -237,19 +193,19 @@ This menu is also a good place to go for a reminder about these keyboard shortcu
 
 ### World Options
 
-**Actors** - If you want to pause or unpause actors like mobs.
+- **Actors** - If you want to pause or unpause actors like mobs.
 
-**Change dimension** - You start in the Overworld by default. Go here to change to the Nether or the End.
+- **Change dimension** - You start in the Overworld by default. Go here to change to the Nether or the End.
 
-**Daylight cycle** - Turn off to set the time of day to noon and stop time there. Turn on to start the day/night cycle again.
+- **Daylight cycle** - Turn off to set the time of day to noon and stop time there. Turn on to start the day/night cycle again.
 
 #### Help
 
-**Quick start** - If you want the welcome screen back, select this.
+- **Quick start** - If you want the welcome screen back, select this.
 
-**Documentation** - This is a handy link to the document you are reading right now (among others).
+- **Documentation** - This is a handy link to the document you are reading right now (among others).
 
-**Feedback** - This is the link to the GitHub site where you can share feedback.
+- **Feedback** - This is the link to the GitHub site where you can share feedback.
 
 ### Action bar
 
