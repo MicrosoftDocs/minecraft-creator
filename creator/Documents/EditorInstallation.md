@@ -44,11 +44,11 @@ You will need the latest installation of Minecraft Preview. To learn more about 
 
 If you have the Minecraft Launcher installed, it is also possible to install Preview from there.
 
-![Image of Minecraft Launcher app in the Microsoft Store](Media/MinecraftEditor/editor_install_launcher_microsoft_store.png)
+![Image of Minecraft Launcher app in the Microsoft Store](Media/Editor/editor_install_launcher_microsoft_store.png)
 
 You can get Minecraft Launcher from the Microsoft Store.
 
-![Image of Minecraft Launcher with Minecraft Preview tab displayed](Media/MinecraftEditor/editor_install_preview_through_launcher.png)
+![Image of Minecraft Launcher with Minecraft Preview tab displayed](Media/Editor/editor_install_preview_through_launcher.png)
 
 After you install Preview, launch it normally to make sure everything is successfully installed.
 
@@ -58,7 +58,7 @@ Looks good? Great. Close Preview and move on to the next step.
 
 1. Right-click on your desktop, select **New** from the dropdown, and choose to create a new **Shortcut**.  
 
-![Windows new shortcut creation](Media/MinecraftEditor/editor_install_create_shortcut.png)
+![Windows new shortcut creation](Media/Editor/editor_install_create_shortcut.png)
 
 2. For the location of the item, enter the following:
 
@@ -66,7 +66,7 @@ Looks good? Great. Close Preview and move on to the next step.
 
     This is case-sensitive and needs to match exactly.
 
-![Editor create shortcut path](Media/MinecraftEditor/editor_install_shortcut_path.png)
+![Editor create shortcut path](Media/Editor/editor_install_shortcut_path.png)
 
 3. Click **Next** and give your shortcut a name like **Minecraft Editor**.
 
@@ -74,11 +74,11 @@ Looks good? Great. Close Preview and move on to the next step.
 
 You should see the shortcut created on your desktop and it should automatically have the Minecraft icon if you set it up correctly. If the icon does not populate, don’t worry.
 
-![Image of the Minecraft Editor desktop shortcut](Media/MinecraftEditor/editor_install_shortcut_icon.png)
+![Image of the Minecraft Editor desktop shortcut](Media/Editor/editor_install_shortcut_icon.png)
 
 5. Double-click the shortcut to launch the Editor.
 
-![Image of the Minecraft Editor starting page](Media/MinecraftEditor/editor_install_opening_page.png)
+![Image of the Minecraft Editor starting page](Media/Editor/editor_install_opening_page.png)
 
 You should see Editor launch and display the “Create New Project” screen.
 
@@ -113,11 +113,11 @@ Three things to check:
 
     1. In the pop-up, select **Minecraft** and click **OK**.
 
-![Apps > Default Apps window where you can set Minecraft Preview as the default app.](Media/MinecraftEditor/editor_install_select_default_app.png)
+![Apps > Default Apps window where you can set Minecraft Preview as the default app.](Media/Editor/editor_install_select_default_app.png)
 
 - If you would like to open Editor a different way, you can open a file explorer window and enter **`minecraft:?Editor=true`** into the path:
 
-![File explorer window with the Editor shortcut as the path](Media/MinecraftEditor/editor_install_file_explorer_path.png)
+![File explorer window with the Editor shortcut as the path](Media/Editor/editor_install_file_explorer_path.png)
 
 ## What's Next?
 

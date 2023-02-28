@@ -52,13 +52,13 @@ It's recommended that the following be completed before beginning this tutorial.
 
 After you launch the Editor from the shortcut, you get a screen that says "Create New Project."
 
-![Image of the Minecraft Editor starting page](Media/MinecraftEditor/editor_install_new_project.png)
+![Image of the Minecraft Editor starting page](Media/Editor/editor_install_new_project.png)
 
 While you're creating a project, you can configure the name, export settings, and the usual settings for a Minecraft world.
 
 Export settings will apply when you export as a playable world from the Editor (.mcworld).
 
-![Image of the Minecraft Editor configuration page](Media/MinecraftEditor/editor_overview_project_settings.png)
+![Image of the Minecraft Editor configuration page](Media/Editor/editor_overview_project_settings.png)
 
 New projects load with a Welcome/Quick Start screen. If you close it and you want it open again, go to the Help menu and select Quick Start.
 
@@ -68,7 +68,7 @@ Editor looks like your usual Minecraft game with a user interface (UI) on top of
 
 Go to the **File** menu and select **UI Settings**.
 
-![Editor User Interface appearance settings showing UI scale, font, and theme drop-down menus](Media/MinecraftEditor/editor_overview_ui_settings.png)
+![Editor User Interface appearance settings showing UI scale, font, and theme drop-down menus](Media/Editor/editor_overview_ui_settings.png)
 
 >- UI Scale - Makes the menu bar and windows larger or smaller in relation to the project world.
 >- Font - Changes the size of the text in the windows.
@@ -92,7 +92,7 @@ If you do want to close the window, click the X in the corner. Some windows can 
 
 ## Welcome/Quick Start
 
-![Editor Quick Start Welcome screen Introduction tab](Media/MinecraftEditor/editor_overview_quickstart_screen.png)
+![Editor Quick Start Welcome screen Introduction tab](Media/Editor/editor_overview_quickstart_screen.png)
 
 **Introduction**
 
@@ -153,11 +153,11 @@ The two modes within Editor are Tool Mode and Crosshair Mode.
 
 **Tool Mode** has multi-block editing tools and the user interface. When you move the mouse without holding any mouse buttons, your cursor is freely available to use the user interface.
 
-![Tool Mode has the user interface with tools](Media/MinecraftEditor/editor_overview_tool_mode.png)
+![Tool Mode has the user interface with tools](Media/Editor/editor_overview_tool_mode.png)
 
 **Crosshair Mode** has more precise, single-block editing capabilities. It also uses the usual Minecraft keybindings you can see on the Settings > Controls > Keyboard & Mouse screen. When you move the mouse, you look around.
 
-![Crosshair mode has no user interface and looks like the Minecraft game](Media/MinecraftEditor/editor_overview_crosshair_mode.png)
+![Crosshair mode has no user interface and looks like the Minecraft game](Media/Editor/editor_overview_crosshair_mode.png)
 
 In a new project, before you touch anything, you are in Tool Mode.
 
@@ -183,15 +183,15 @@ The contents of these containers will change as Editor is developed.
 
 **Menu bar**: At the top of the screen. Currently has File, Edit, World Options, and Help.
 
-![Editor UI with menu bar highlighted](Media/MinecraftEditor/editor_overview_menu_bar.png)
+![Editor UI with menu bar highlighted](Media/Editor/editor_overview_menu_bar.png)
 
 **Action bar**: Below the menu bar. Currently has undo and redo buttons that affect the things you do to the world, including some of the actions you do in Crosshair Mode.
 
-![Editor UI with the action bar highlighted](Media/MinecraftEditor/editor_overview_action_bar.png)
+![Editor UI with the action bar highlighted](Media/Editor/editor_overview_action_bar.png)
 
 **Toolrail**: Left side of the screen. Currently holds Selection, Paste Preview, and Brush. You can also select these tools using keyboard shortcuts.
 
-![Editor UI with the tool rail highlighted](Media/MinecraftEditor/editor_overview_tool_rail.png)
+![Editor UI with the tool rail highlighted](Media/Editor/editor_overview_tool_rail.png)
 
 ## Menu bar
 
@@ -205,7 +205,7 @@ Editor has its own filetype: .mcproject. These files will always open in Editor,
 
 To **import** projects, go to the Create New Project screen and click the import button to the right of the Create New Project button.
 
-![The import button has an arrow icon on it and is next to the Create New Project button](Media/MinecraftEditor/editor_overview_import_button.png)
+![The import button has an arrow icon on it and is next to the Create New Project button](Media/Editor/editor_overview_import_button.png)
 
 Navigate to a .mcworld, .mctemplate, or .mcproject files.
 After the file is imported, it is converted to an .mcproject file.
@@ -216,7 +216,7 @@ If you want to learn more about Minecraft file types like .mcproject and .mcworl
 
 **Pause screen** - This option brings up the Minecraft pause screen where you can edit game settings (like music volume) or Save & Quit.
 
-![Editor UI Settings screen in Redstone theme](Media/MinecraftEditor/editor_overview_ui_settings_redstone.png)
+![Editor UI Settings screen in Redstone theme](Media/Editor/editor_overview_ui_settings_redstone.png)
 
 ### Edit menu
 
@@ -275,7 +275,7 @@ Practice: Tool window switcheroo
 
 `Ctrl S` opens the Selection tool window.
 
-![Editor selection tool window](Media/MinecraftEditor/editor_overview_selection_tool_window.png)
+![Editor selection tool window](Media/Editor/editor_overview_selection_tool_window.png)
 
 The selection tool is used to select any of the blocks in the world, including air.
 
@@ -297,7 +297,7 @@ Freeform mode practice:
 1. To add the y coordinate, hold down the `Alt` key and click somewhere above the x, z selection square.
 1. Click the Deselect button (or `Ctrl D`) before moving on to the next practice.
 
-![Image of a selection made in Freeform Selection mode](Media/MinecraftEditor/editor_overview_selection_freeform.png)
+![Image of a selection made in Freeform Selection mode](Media/Editor/editor_overview_selection_freeform.png)
 
 **Fixed Distance** mode can select blocks, air, or a combination of both.
 You can use the scroll wheel on the mouse to increase or decrease the distance between you and the selection cube.
@@ -306,7 +306,7 @@ Like Freeform selection, you build the selection shape by selecting the x, z, an
 
 Fixed Distance mode practice:
 
-![Alt text](Media/MinecraftEditor/editor_overview_selection_fixed_distance_preselect.png)
+![Alt text](Media/Editor/editor_overview_selection_fixed_distance_preselect.png)
 
 1. Make sure "Fixed Distance" is showing in the Mode drop-down menu of the Selection window. You should see a thinly-outlined cube shape in front of you.
 1. Hold down the right mouse button and look around the world. Notice how the pre-selection cube moves around.
@@ -316,13 +316,13 @@ Fixed Distance mode practice:
 1. Alt-click above the x z square.
 1. Click the Deselect button (or `Ctrl D`) before moving on to the next practice.
 
-![A completed fixed distance selection](Media/MinecraftEditor/editor_overview_selection_fixed_distance_selection.png)
+![A completed fixed distance selection](Media/Editor/editor_overview_selection_fixed_distance_selection.png)
 
 **Adjacent** mode selects only the air next to, above, and below solid blocks.
 
 Adjacent mode practice:
 
-![A completed adjacent selection](Media/MinecraftEditor/editor_overview_selection_adjacent.png)
+![A completed adjacent selection](Media/Editor/editor_overview_selection_adjacent.png)
 
 1. Make sure "Adjacent" is showing in the Mode drop-down menu of the Selection window.
 1. If you move the mouse around, you will see the thin, pre-select cube move around on top of the ground.
@@ -360,17 +360,17 @@ Practice changing the size of the selection:
 1. Click the Search field and select a different block type.
 1. Click the Fill Selection button to fill the current selection with the different block type.
 
-![Image of 1 selection that was filled with stone, and another filled with stone brick stairs](Media/MinecraftEditor/editor_overview_selection_fill_stone_brick_stairs.png)
+![Image of 1 selection that was filled with stone, and another filled with stone brick stairs](Media/Editor/editor_overview_selection_fill_stone_brick_stairs.png)
 
 **Gizmos**
 
 Create a selection and click on a corner of the selection box. You will see a little cube with arrows appear. That's a **Resize Gizmo**! You can click and drag these arrows to adjust the size of your selection box.
 
-![Selection with a resize gizmo on the corner](Media/MinecraftEditor/editor_overview_gizmo_resize.png)
+![Selection with a resize gizmo on the corner](Media/Editor/editor_overview_gizmo_resize.png)
 
 You might also see another box hovering in the center of the selection. That's a **Move Gizmo** and you can drag it around to move your selection.
 
-![Selection with a move gizmo in the middle](Media/MinecraftEditor/editor_overview_gizmo_move.png)
+![Selection with a move gizmo in the middle](Media/Editor/editor_overview_gizmo_move.png)
 
 ### Paste Preview
 
@@ -379,19 +379,19 @@ You might also see another box hovering in the center of the selection. That's a
 After you create a selection and copy it (`Ctrl C`) or cut it (`Ctrl X`), you can use the Paste Preview window to change how the selection will appear when you paste it.
 
 1. Select something interesting, like a village house, with any of the selection modes.
-![Alt text](Media/MinecraftEditor/editor_overview_paste_preview_selected_house.png)
+![Alt text](Media/Editor/editor_overview_paste_preview_selected_house.png)
 1. Copy or cut the selection (`Ctrl C` or `Ctrl X`).
 1. Open the Paste Preview window (`Ctrl Shift V`).
 1. Click the ground where you want the copied or cut blocks to be pasted. The paste preview selection is displayed.
-![Alt text](Media/MinecraftEditor/editor_overview_paste_preview_copied_house_preview.png)
+![Alt text](Media/Editor/editor_overview_paste_preview_copied_house_preview.png)
 1. You can use the arrow keys and the page up/page down keys to move the paste preview box to exactly where you want it.
 1. Click Confirm Paste.
-![Alt text](Media/MinecraftEditor/editor_overview_paste_preview_copied_house_paste_confirmed1.png)
+![Alt text](Media/Editor/editor_overview_paste_preview_copied_house_paste_confirmed1.png)
 
 You can Transform your copied selection by editing the Origin coordinates, Rotating the selection, or mirroring the selection along the x or z axis.
 
 Click Confirm Paste after each transformation to place a selected object.
-![Alt text](Media/MinecraftEditor/editor_overview_paste_preview_copied_house_paste_confirmed3.png)
+![Alt text](Media/Editor/editor_overview_paste_preview_copied_house_paste_confirmed3.png)
 
 #### Brush
 
@@ -412,9 +412,9 @@ Practice 1: A humble tree...
 1. Find a clear place on the ground and place one log block.
 1. Draw another log on top of that one.
 1. Draw two more log blocks on top of each other to create a tree trunk.
-![Brush tool was used to draw logs stacked up like a tree trunk](Media/MinecraftEditor/editor_overview_brush_log.png)
+![Brush tool was used to draw logs stacked up like a tree trunk](Media/Editor/editor_overview_brush_log.png)
 1. Change the Block Size to 3 and the Block Type to 'leaves' and click the top of your log blocks to put leaves around the top of your tree.
-![Brush tool was used to draw leaves at the top of the tree trunk](Media/MinecraftEditor/editor_overview_brush_leaves.png)
+![Brush tool was used to draw leaves at the top of the tree trunk](Media/Editor/editor_overview_brush_leaves.png)
 
 Practice 2: Is it really Hollow?
 
@@ -424,7 +424,7 @@ Practice 2: Is it really Hollow?
 1. The box for Face Mode should be checked, too.  
 1. Set the Block Type to 'glass'.
 1. Click the ground once to draw a 16x16, hollow glass shape. You should find yourself inside a huge, glass house.
-![Alt text](Media/MinecraftEditor/editor_overview_brush_glass_house.png)
+![Alt text](Media/Editor/editor_overview_brush_glass_house.png)
 
 ## Crosshair Mode
 
@@ -437,7 +437,7 @@ Practice:
 1. Place a campfire where it won't hurt the horse.
 1. Go back to Tool Mode and notice that pausing and unpausing actors affects the horse and not the campfire.
 1. Use Undo (`Ctrl Z`) and Redo (`Ctrl Y`) in each mode to make the campfire disappear and reappear. Notice that the horse is unaffected.
-![Scene in crosshair mode showing that pausing actors causes mobs to hold still, but moving items like a campfire continue burning](Media/MinecraftEditor/editor_overview_crosshair_paused.png)
+![Scene in crosshair mode showing that pausing actors causes mobs to hold still, but moving items like a campfire continue burning](Media/Editor/editor_overview_crosshair_paused.png)
 
 ## Keyboard shortcuts
 
@@ -499,7 +499,7 @@ If you're curious about Minecraft file extensions, there is an article about the
 1. Launch Editor and click the Play button.
 1. Click the import icon next to the Create New Project button to open the Windows file explorer.
 
- ![The Editor import button is next to the create new project button](Media/MinecraftEditor/editor_overview_import_button.png)
+ ![The Editor import button is next to the create new project button](Media/Editor/editor_overview_import_button.png)
 
 3. In the file explorer, choose the .mcworld, .mctemplate, or .mcproject you want to import.
 4. When the file is imported, a success message is displayed.
