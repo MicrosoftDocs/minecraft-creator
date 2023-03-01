@@ -78,8 +78,6 @@ You should see the shortcut created on your desktop and it should automatically 
 
 5. Double-click the shortcut to launch the Editor.
 
-![Image of the Minecraft Editor starting page](Media/Editor/editor_install_opening_page.png)
-
 You should see Editor launch and display the “Create New Project” screen.
 
 Great job! You're ready to create a project!
