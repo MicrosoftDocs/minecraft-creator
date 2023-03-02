@@ -58,8 +58,7 @@ In this tutorial, we are going to build a glass structure and then copy and past
 ![A hollow glass box is placed on the obsidian](Media/Editor/editor_tutorial_greenhouse_3_glass.png)
 1. Use the Selection tool (`Ctrl S`) to select an entire building and some of the ground around it. Hint: If you don't have a favorite Selection mode yet, try using Freeform to select the ground first and then use the resize gizmos to make the selection big enough.
 ![Image of a selected house](Media/Editor/editor_tutorial_greenhouse_5_house.png)
-1. The selection size should be smaller than 15 blocks so that it can fit inside the glass. Look at the Size section of the Selection tool and confirm that the numbers for x, y, and z are all less than 15.
-![Close up view of the Selection tool with the location of the Size area highlighted](Media/Editor/editor_tutorial_greenhouse_6_selection_size.png)
+1. The selection size should be smaller than 15 blocks so that it can fit inside the glass. To check this, look at the Size section of the Selection tool and confirm that the numbers for x, y, and z are all less than 15.
 1. Copy the selected house (`Ctrl C`) and open the Paste Preview tool (`Ctrl Shift V`).
 ![Image of how the selection box changes when the selection is copied](Media/Editor/editor_tutorial_greenhouse_6_copied.png)
 1. Move back over to the glass structure and go inside.
