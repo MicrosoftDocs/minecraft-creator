@@ -90,7 +90,3 @@ In this tutorial, we are going to build a glass structure and then copy and past
 ## What's Next?
 
 Go into Crosshair Mode and place entities into your greenhouse world just like you would in Creative Mode Minecraft. Then, go back into Tool mode and unpause the mobs by going to **World Options > Actors > Unpause actors**.
-
-## GIF Test
-
- [Testing GIF](https://github.com/microsoft/minecraft-samples/blob/main/gifs/Editor/Adjacent.gif)
