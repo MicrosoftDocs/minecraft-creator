@@ -281,9 +281,9 @@ Fixed Distance mode practice:
 
 ![A completed fixed distance selection](Media/Editor/editor_overview_selection_fixed_distance_selection.png)
 
-## Adjacent Selection Mode
+### Adjacent Selection Mode
 
-### Adjacent mode selects only the air next to, above, and below solid blocks.
+Adjacent mode selects only the air next to, above, and below solid blocks.
 
 ![Animation of Adjacent Selection](Media/Editor/Adjacent.gif)
 
