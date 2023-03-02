@@ -11,8 +11,8 @@ description: How to get Minecraft Bedrock Editor
 Minecraft's Bedrock Editor is a multiblock editing experience that helps you easily craft high-quality worlds in Minecraft Bedrock. The Editor is available in the Preview edition of Minecraft Bedrock, and you get to the user interface through a shortcut you create on your computer desktop.
 
 > [!IMPORTANT]
-> Just like we add features to the Minecraft game from time to time (like new mobs), Minecraft Editor is still under active development.
-> It will change as we get feedback from creators like you.
+> The Editor is in early preview and we're working to add more capabilities.
+> It will change significantly as we get feedback from creators like you.
 
 First, we are going to install Minecraft Preview. Then, we will create the shortcut that launches Editor. After that, we will open Editor and make sure it works.
 

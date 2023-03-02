@@ -11,8 +11,8 @@ description: A step-by-step guide for using Minecraft Editor
 This tutorial is intended to guide you through using Minecraft Bedrock Editor to accomplish a variety of tasks. Before you begin, you should know how to launch Editor, create a project, move around, and switch between the two modes.
 
 > [!IMPORTANT]
-> Just like we add features to the Minecraft game from time to time, Minecraft Editor is still under development.
-> It will change from time to time as we get feedback from creators like you.
+> The Editor is in early preview and we're working to add more capabilities.
+> It will change significantly as we get feedback from creators like you.
 
 --------
 

@@ -13,8 +13,8 @@ This overview is intended to introduce you to the parts of the Editor interface 
 For a more in-depth experience using the tools to accomplish basic tasks, take a look at the [Editor Tutorial](EditorTutorial.md).
 
 > [!IMPORTANT]
-> Just like we add features to the Minecraft game from time to time (like new blocks), Minecraft Editor is still under active development.
-> It will change as we get feedback from creators like you.
+> The Editor is in early preview and we're working to add more capabilities.
+> It will change significantly as we get feedback from creators like you.
 
 --------
 
@@ -92,7 +92,7 @@ If you do want to close the window, click the X in the corner. Some windows can 
 
 ## Welcome/Quick Start
 
-![Editor Quick Start Welcome screen Introduction tab](Media/Editor/editor_overview_quickstart_screen.png)
+![Animation of the parts of the Quick Start Welcome screen](Media/Editor/EditorQuickStartMenu.gif)
 
 |Tab  |Content  |
 |:-------|:---------|
@@ -227,7 +227,7 @@ Practice: Tool window switcheroo
 
 1. Press `Ctrl B`, `Ctrl S`, and `Ctrl Shift V` in any order to get used to switching among the tools.
 
-### Selection
+## Selection Tool
 
 `Ctrl S` opens the Selection tool window.
 
@@ -237,9 +237,11 @@ The selection tool is used to select any of the blocks in the world, including a
 
 The Selection window that you use to configure the selection tool has sections where you can change the selection mode, transform the selection, fill the selection with blocks, or deselect your selection.
 
-### Selection Modes
+### Freeform Selection Mode
 
 **Freeform** mode creates a selection area when you choose the x, z, and y coordinates, in that order. It can include air in the selection, but you can only click on a non-air block to choose it as a coordinate.
+
+![Animation of how to use Freeform Selection](Media/Editor/Freeform.gif)
 
 There is more than one way to specify the coordinates in Freeform mode, and they will all be explained fully, along with the helper features called **gizmos**.
 
@@ -255,14 +257,19 @@ Freeform mode practice:
 
 ![Image of a selection made in Freeform Selection mode](Media/Editor/editor_overview_selection_freeform.png)
 
+### Fixed Distance Selection Mode
+
 **Fixed Distance** mode can select blocks, air, or a combination of both.
+
+![Animation of how to use Fixed Distance Selection](Media/Editor/FixedDistance.gif)
+
 You can use the scroll wheel on the mouse to increase or decrease the distance between you and the selection cube.
 Fixed distance is the easiest mode to use if you want to select only air blocks.
 Like Freeform selection, you build the selection shape by selecting the x, z, and y coordinates (in that order).
 
 Fixed Distance mode practice:
 
-![Alt text](Media/Editor/editor_overview_selection_fixed_distance_preselect.png)
+![Image of the preselect cube ](Media/Editor/editor_overview_selection_fixed_distance_preselect.png)
 
 1. Make sure "Fixed Distance" is showing in the Mode drop-down menu of the Selection window. You should see a thinly-outlined cube shape in front of you.
 1. Hold down the right mouse button and look around the world. Notice how the pre-selection cube moves around.
@@ -274,7 +281,11 @@ Fixed Distance mode practice:
 
 ![A completed fixed distance selection](Media/Editor/editor_overview_selection_fixed_distance_selection.png)
 
-**Adjacent** mode selects only the air next to, above, and below solid blocks.
+## Adjacent Selection Mode
+
+### Adjacent mode selects only the air next to, above, and below solid blocks.
+
+![Animation of Adjacent Selection](Media/Editor/Adjacent.gif)
 
 Adjacent mode practice:
 
@@ -285,7 +296,7 @@ Adjacent mode practice:
 1. Left-click to confirm your choice of where to create the selection.
 1. Click the Deselect button (or `Ctrl D`) before moving on to the next practice.
 
-**Transform**
+### Transform
 
 In the Transform section, you can fine-tune your selection by entering Origin coordinates or changing the Size.
 
@@ -298,7 +309,9 @@ Practice transforming the origin of the selection:
 1. Change the y and z coordinates and notice how the selection is affected.
 1. Click the Deselect button (or `Ctrl D`) before moving on to the next practice.
 
-**Size**
+### Size
+
+![Animation of how to use the Size function on the Selection tool window](Media/Editor/PanelResize.gif)
 
 Practice changing the size of the selection:
 
@@ -306,7 +319,9 @@ Practice changing the size of the selection:
 1. Increase or decrease each coordinate and notice how the size of the selection is affected.
 1. Click the Deselect button (or `Ctrl D`) before moving on to the next practice.
 
-**Fill**
+### Fill
+
+![Animation of using the fill function of the selection tool](Media/Editor/Fill.gif)
 
 1. Create a selection with any of the selection modes.
 1. Notice the Block Type. The default is stone.
@@ -318,7 +333,9 @@ Practice changing the size of the selection:
 
 ![Image of 1 selection that was filled with stone, and another filled with stone brick stairs](Media/Editor/editor_overview_selection_fill_stone_brick_stairs.png)
 
-**Gizmos**
+### Gizmos
+
+![Animation of how to use a resize gizmo](Media/Editor/Gizmo1.gif)
 
 Create a selection and click on a corner of the selection box. You will see a little cube with arrows appear. That's a **Resize Gizmo**! You can click and drag these arrows to adjust the size of your selection box.
 
@@ -332,22 +349,25 @@ You might also see another box hovering in the center of the selection. That's a
 
 `Ctrl Shift V` opens the Paste Preview window.
 
+![Animation of the paste preview function](Media/Editor/PastePreviewPlacement.gif)
+
 After you create a selection and copy it (`Ctrl C`) or cut it (`Ctrl X`), you can use the Paste Preview window to change how the selection will appear when you paste it.
 
 1. Select something interesting, like a village house, with any of the selection modes.
-![Alt text](Media/Editor/editor_overview_paste_preview_selected_house.png)
+![Image of a selected house](Media/Editor/editor_overview_paste_preview_selected_house.png)
 1. Copy or cut the selection (`Ctrl C` or `Ctrl X`).
 1. Open the Paste Preview window (`Ctrl Shift V`).
 1. Click the ground where you want the copied or cut blocks to be pasted. The paste preview selection is displayed.
-![Alt text](Media/Editor/editor_overview_paste_preview_copied_house_preview.png)
+![Image of a paste preview](Media/Editor/editor_overview_paste_preview_copied_house_preview.png)
 1. You can use the arrow keys and the page up/page down keys to move the paste preview box to exactly where you want it.
+![Animation of using the keyboard to adjust the paste preview](Media/Editor/PastePreviewKeyboardPgUpDn.gif)
 1. Click Confirm Paste.
-![Alt text](Media/Editor/editor_overview_paste_preview_copied_house_paste_confirmed1.png)
+![Image of a pasted selection](Media/Editor/editor_overview_paste_preview_copied_house_paste_confirmed1.png)
 
 You can Transform your copied selection by editing the Origin coordinates, Rotating the selection, or mirroring the selection along the x or z axis.
 
 Click Confirm Paste after each transformation to place a selected object.
-![Alt text](Media/Editor/editor_overview_paste_preview_copied_house_paste_confirmed3.png)
+![Image of a pasted house after the paste has been confirmed](Media/Editor/editor_overview_paste_preview_copied_house_paste_confirmed3.png)
 
 #### Brush
 
@@ -380,7 +400,7 @@ Practice 2: Is it really Hollow?
 1. The box for Face Mode should be checked, too.  
 1. Set the Block Type to 'glass'.
 1. Click the ground once to draw a 16x16, hollow glass shape. You should find yourself inside a huge, glass house.
-![Alt text](Media/Editor/editor_overview_brush_glass_house.png)
+![Image of a hollow glass shape created with the brush tool](Media/Editor/editor_overview_brush_glass_house.png)
 
 ## Crosshair Mode
 
@@ -393,7 +413,7 @@ Practice:
 1. Place a campfire where it won't hurt the horse.
 1. Go back to Tool Mode and notice that pausing and unpausing actors affects the horse and not the campfire.
 1. Use Undo (`Ctrl Z`) and Redo (`Ctrl Y`) in each mode to make the campfire disappear and reappear. Notice that the horse is unaffected.
-![Scene in crosshair mode showing that pausing actors causes mobs to hold still, but moving items like a campfire continue burning](Media/Editor/editor_overview_crosshair_paused.png)
+![Animation showing that pausing actors causes mobs to hold still, but moving items like a campfire continue burning](Media/Editor/ActorPausing.gif)
 
 ## Keyboard shortcuts
 
