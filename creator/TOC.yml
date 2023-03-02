@@ -178,7 +178,7 @@
             href: Documents/ContentErrorLog.md
           - name: Designing Gameplay for Various Devices
             href: Documents/DesigningGameplayForVariousDevices.md
-          - name: Minecraft Bedrock Editor
+          - name: Bedrock Editor
             items:
               - name: Editor Installation Guide
                 href: Documents/EditorInstallation.md
