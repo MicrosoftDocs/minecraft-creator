@@ -199,7 +199,7 @@ This menu is also a good place to go for a reminder about these keyboard shortcu
 
 - **Daylight cycle** - Turn off to set the time of day to noon and stop time there. Turn on to start the day/night cycle again.
 
-#### Help
+### Help
 
 - **Quick start** - If you want the welcome screen back, select this.
 
@@ -283,7 +283,7 @@ Fixed Distance mode practice:
 
 ### Adjacent Selection Mode
 
-Adjacent mode selects only the air next to, above, and below solid blocks.
+**Adjacent** mode selects only the air next to, above, and below solid blocks.
 
 ![Animation of Adjacent Selection](Media/Editor/Adjacent.gif)
 
@@ -369,7 +369,7 @@ You can Transform your copied selection by editing the Origin coordinates, Rotat
 Click Confirm Paste after each transformation to place a selected object.
 ![Image of a pasted house after the paste has been confirmed](Media/Editor/editor_overview_paste_preview_copied_house_paste_confirmed3.png)
 
-#### Brush
+### Brush
 
 `Ctrl B` opens the Brush tool window.
 
@@ -377,7 +377,11 @@ The Brush tool is used to draw shapes with a selected Block Type.
 
 You can change the Brush Size, ranging from 1 to 16. Brush sizes are rendered as squares of the selected brush size. This means a brush size of 1 draws a 1x1 block shape. If you select a brush size of 3, you get a 3x3 block shape, or 9 total blocks arranged as a cube.
 
-If you choose a brush size larger than 3, you can select the Hollow checkbox to make the block shape hollow.
+You can click once once to place one block shape, or click and drag to paint blocks everywhere you touch.
+
+![Animation showing how to paint with blocks](Media/Editor/GlowstoneBrush.gif)
+
+If you choose a brush size larger than 3, you can select the Hollow checkbox to make the brush strokes hollow.
 
 If the Face Mode checkbox is selected, the brush cursor acts like the Adjacent selection cursor - meaning you can select the air above a solid block to draw your blocks. This should make it easier to build up shapes from the ground - like mountains!
 
