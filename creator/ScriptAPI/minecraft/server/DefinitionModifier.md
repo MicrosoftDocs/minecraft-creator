@@ -14,31 +14,14 @@ description: Contents of the @minecraft/server.DefinitionModifier class.
 
 Contains a set of updates to the component definition state of an entity.
 
-## Properties
-
-### **componentGroupsToAdd**
-`read-only componentGroupsToAdd: string[];`
-
-A list of components that will be added via this definition modification.
-
-Type: *string*[]
-
-### **componentGroupsToRemove**
-`read-only componentGroupsToRemove: string[];`
-
-A list of components that will be removed via this definition modification.
-
-Type: *string*[]
-
-### **triggers**
-`triggers: Trigger[];`
-
-A list of entity definition events that will be fired via this update.
-
-Type: [*Trigger*](Trigger.md)[]
-
 ## Methods
 - [constructor](#constructor)
+- [getComponentGroupsToAdd](#getcomponentgroupstoadd)
+- [getComponentGroupsToRemove](#getcomponentgroupstoremove)
+- [getTriggers](#gettriggers)
+- [setComponentGroupsToAdd](#setcomponentgroupstoadd)
+- [setComponentGroupsToRemove](#setcomponentgroupstoremove)
+- [setTriggers](#settriggers)
 
 ### **constructor**
 `
@@ -48,3 +31,60 @@ new DefinitionModifier()
 Constructor for a new DefinitionModifier.
 
 #### **Returns** [*DefinitionModifier*](DefinitionModifier.md)
+
+### **getComponentGroupsToAdd**
+`
+getComponentGroupsToAdd(): string[]
+`
+
+Retrieves the list of component groups that will be added via this definition modification.
+
+#### **Returns** *string*[]
+
+### **getComponentGroupsToRemove**
+`
+getComponentGroupsToRemove(): string[]
+`
+
+Retrieves the list of component groups that will be removed via this definition modification.
+
+#### **Returns** *string*[]
+
+### **getTriggers**
+`
+getTriggers(): Trigger[]
+`
+
+Retrieves the list of entity definition events that will be fired via this update.
+
+#### **Returns** [*Trigger*](Trigger.md)[]
+
+### **setComponentGroupsToAdd**
+`
+setComponentGroupsToAdd(newGroups: string[]): void
+`
+
+Updates the list of component groups that will be added via this definition modification.
+
+#### **Parameters**
+- **newGroups**: *string*[]
+
+### **setComponentGroupsToRemove**
+`
+setComponentGroupsToRemove(removedGroups: string[]): void
+`
+
+Updates the list of component groups that will be removed via this definition modification.
+
+#### **Parameters**
+- **removedGroups**: *string*[]
+
+### **setTriggers**
+`
+setTriggers(newTriggers: Trigger[]): void
+`
+
+Updates the list of entity definition events that will be fired via this update.
+
+#### **Parameters**
+- **newTriggers**: [*Trigger*](Trigger.md)[]

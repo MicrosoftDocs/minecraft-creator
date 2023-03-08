@@ -12,7 +12,7 @@ description: Contents of the @minecraft/server.MinecraftItemTypes class.
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Contains definitions of standard Minecraft and Minecraft Education block types.
+Contains definitions of standard Minecraft and Minecraft Education Edition block types.
 
 ## Constants
 
@@ -44,6 +44,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only acaciaFenceGate: ItemType;`
 
 Represents an item that can place an acacia fence gate within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **acaciaLog**
+`static read-only acaciaLog: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -182,6 +187,13 @@ Type: [*ItemType*](ItemType.md)
 
 ### **bakedPotato**
 `static read-only bakedPotato: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **bamboo**
+`static read-only bamboo: ItemType;`
+
+Represents an item that can place a bamboo tree within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
@@ -328,6 +340,11 @@ Represents an item that can place a birch fence gate within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **birchLog**
+`static read-only birchLog: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **birchPressurePlate**
 `static read-only birchPressurePlate: ItemType;`
 
@@ -403,6 +420,11 @@ Represents an item that can place a blackstone wall within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **blackWool**
+`static read-only blackWool: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **blastFurnace**
 `static read-only blastFurnace: ItemType;`
 
@@ -448,6 +470,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only blueIce: ItemType;`
 
 Represents an item that can place a blue ice block within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **blueWool**
+`static read-only blueWool: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -568,6 +595,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only brownMushroomBlock: ItemType;`
 
 Represents an item that can place a block of brown mushroom within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **brownWool**
+`static read-only brownWool: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -1210,6 +1242,11 @@ Represents an item that can place a block of cyan-colored glazed terracotta with
 
 Type: [*ItemType*](ItemType.md)
 
+### **cyanWool**
+`static read-only cyanWool: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **darkOakBoat**
 `static read-only darkOakBoat: ItemType;`
 
@@ -1238,6 +1275,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only darkOakFenceGate: ItemType;`
 
 Represents an item that can place a dark oak fence gate within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **darkOakLog**
+`static read-only darkOakLog: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -1287,11 +1329,6 @@ Type: [*ItemType*](ItemType.md)
 `static read-only deadbush: ItemType;`
 
 Represents an item that can place a dead bush within Minecraft.
-
-Type: [*ItemType*](ItemType.md)
-
-### **debugStick**
-`static read-only debugStick: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -2134,6 +2171,11 @@ Represents an item that can place a gray-colored block of glazed terracotta with
 
 Type: [*ItemType*](ItemType.md)
 
+### **grayWool**
+`static read-only grayWool: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **greenCandle**
 `static read-only greenCandle: ItemType;`
 
@@ -2150,6 +2192,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only greenGlazedTerracotta: ItemType;`
 
 Represents an item that can place a green block of glazed terracotta within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **greenWool**
+`static read-only greenWool: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -2418,6 +2465,11 @@ Represents an item that can place a jungle wood fence gate within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **jungleLog**
+`static read-only jungleLog: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **junglePressurePlate**
 `static read-only junglePressurePlate: ItemType;`
 
@@ -2587,6 +2639,11 @@ Represents an item that can place a light blue block of glazed terracotta within
 
 Type: [*ItemType*](ItemType.md)
 
+### **lightBlueWool**
+`static read-only lightBlueWool: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **lightGrayCandle**
 `static read-only lightGrayCandle: ItemType;`
 
@@ -2596,6 +2653,11 @@ Type: [*ItemType*](ItemType.md)
 
 ### **lightGrayDye**
 `static read-only lightGrayDye: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **lightGrayWool**
+`static read-only lightGrayWool: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -2629,6 +2691,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only limeGlazedTerracotta: ItemType;`
 
 Represents an item that can place a lime-colored block of glazed terracotta within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **limeWool**
+`static read-only limeWool: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -2698,6 +2765,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only magentaGlazedTerracotta: ItemType;`
 
 Represents an item that can place a block of magenta-colored glazed terracotta within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **magentaWool**
+`static read-only magentaWool: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -3187,6 +3259,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **oakLog**
+`static read-only oakLog: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **oakSign**
 `static read-only oakSign: ItemType;`
 
@@ -3239,6 +3316,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only orangeGlazedTerracotta: ItemType;`
 
 Represents an item that can place a block of orange-colored glazed terracotta within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **orangeWool**
+`static read-only orangeWool: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -3358,6 +3440,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only pinkGlazedTerracotta: ItemType;`
 
 Represents an item that can place a pink-colored block of glazed terracotta within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **pinkWool**
+`static read-only pinkWool: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -3632,6 +3719,11 @@ Represents an item that can place a purple-colored block of glazed terracotta wi
 
 Type: [*ItemType*](ItemType.md)
 
+### **purpleWool**
+`static read-only purpleWool: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **purpurBlock**
 `static read-only purpurBlock: ItemType;`
 
@@ -3855,6 +3947,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only redstoneTorch: ItemType;`
 
 Represents an item that can place a redstone torch within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **redWool**
+`static read-only redWool: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -4267,6 +4364,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only spruceFenceGate: ItemType;`
 
 Represents an item that can place a spruce wood fence gate within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **spruceLog**
+`static read-only spruceLog: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -5052,6 +5154,11 @@ Represents an item that can place a block of white glazed terracotta within Mine
 
 Type: [*ItemType*](ItemType.md)
 
+### **whiteWool**
+`static read-only whiteWool: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **witchSpawnEgg**
 `static read-only witchSpawnEgg: ItemType;`
 
@@ -5174,6 +5281,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only yellowGlazedTerracotta: ItemType;`
 
 Represents an item that can place a yellow block of glazed terracotta within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **yellowWool**
+`static read-only yellowWool: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 

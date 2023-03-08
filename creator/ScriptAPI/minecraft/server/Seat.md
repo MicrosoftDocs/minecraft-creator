@@ -38,8 +38,8 @@ A minimum number of riders that can be placed in this seat position, if this sea
 Type: *number*
 
 ### **position**
-`read-only position: Location;`
+`read-only position: Vector3;`
 
 Physical location of this seat, relative to the entity's location.
 
-Type: [*Location*](Location.md)
+Type: [*Vector3*](Vector3.md)

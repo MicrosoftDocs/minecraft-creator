@@ -13,7 +13,7 @@ description: Contents of the @minecraft/server.EntityHealableComponent class.
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 Defines the interactions with this entity for healing it.
 
@@ -33,19 +33,20 @@ Determines if an item can be used regardless of the entity being at full health.
 
 Type: *boolean*
 
-### **items**
-`read-only items: FeedItem[];`
+## Methods
+- [getFeedItems](#getfeeditems)
+
+### **getFeedItems**
+`
+getFeedItems(): FeedItem[]
+`
 
 A set of items that can specifically heal this entity.
 
-Type: [*FeedItem*](FeedItem.md)[]
+#### **Returns** [*FeedItem*](FeedItem.md)[]
 
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:healable.
-
-Type: *string*
+> [!WARNING]
+> This function can throw errors.
 
 ## Constants
 

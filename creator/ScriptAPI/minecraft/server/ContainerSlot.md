@@ -19,61 +19,114 @@ Represents a slot within a broader container (e.g., entity inventory.)
 ### **amount**
 `amount: number;`
 
-Amount of the specified item within the container slot.
+Number of the items in the stack. Valid values range between 1-255. The provided value will be clamped to the item's maximum stack size.
 
 Type: *number*
 
-### **data**
-`data: number;`
+> [!WARNING]
+> Throws if the value is outside the range of 1-255.
 
-Modifier value for the item type stored within the slot.
+### **isStackable**
+`read-only isStackable: boolean;`
 
-Type: *number*
+Returns whether the item is stackable. An item is considered stackable if the item's maximum stack size is greater than 1 and the item does not contain any custom data or properties.
+
+Type: *boolean*
+
+> [!WARNING]
+> Throws if the slot's container is invalid.
 
 ### **isValid**
 `read-only isValid: boolean;`
 
-If true, the state of this container slot is still valid (e.g., the underlying block or entity for this container slot still exists.)
+Type: *boolean*
+
+### **keepOnDeath**
+`keepOnDeath: boolean;`
+
+Gets or sets whether the item is kept on death.
 
 Type: *boolean*
+
+> [!WARNING]
+> Throws if the slot's container is invalid.
+
+### **lockMode**
+`lockMode: ItemLockMode;`
+
+Gets or sets the item's lock mode. The default value is `ItemLockMode.none`.
+
+Type: [*ItemLockMode*](ItemLockMode.md)
+
+> [!WARNING]
+> Throws if the slot's container is invalid.
+
+### **maxAmount**
+`read-only maxAmount: number;`
+
+The maximum stack size. This value varies depending on the type of item. For example, torches have a maximum stack size of 64, while eggs have a maximum stack size of 16.
+
+Type: *number*
+
+> [!WARNING]
+> Throws if the slot's container is invalid.
 
 ### **nameTag**
 `nameTag?: string;`
 
-Returns a name tag for the container slot.
+Given name of this stack of items. The name tag is displayed when hovering over the item. Setting the name tag to an empty string or `undefined` will remove the name tag.
 
 Type: *string*
+
+> [!WARNING]
+> Throws if the slot's container is invalid. Also throws if the length exceeds 255 characters.
+
+### **type**
+`read-only type: ItemType;`
+
+The type of the item.
+
+Type: [*ItemType*](ItemType.md)
+
+> [!WARNING]
+> Throws if the slot's container is invalid.
 
 ### **typeId**
 `read-only typeId?: string;`
 
-Returns a string identifier of the type if item stored in this slot.
+Identifier of the type of items for the stack. If a namespace is not specified, 'minecraft:' is assumed. Examples include 'wheat' or 'apple'.
 
 Type: *string*
 
+> [!WARNING]
+> Throws if the slot's container is invalid.
+
 ## Methods
-- [clearItem](#clearitem)
+- [clone](#clone)
 - [getItem](#getitem)
 - [getLore](#getlore)
+- [isStackableWith](#isstackablewith)
+- [setCanDestroy](#setcandestroy)
+- [setCanPlaceOn](#setcanplaceon)
 - [setItem](#setitem)
 - [setLore](#setlore)
 
-### **clearItem**
+### **clone**
 `
-clearItem(): void
+clone(): ItemStack
 `
 
-Empties the item stored at the specified slot.
+Creates an exact copy of the item stack, including any custom data or properties.
+
+#### **Returns** [*ItemStack*](ItemStack.md)
 
 > [!WARNING]
-> This function can throw errors.
+> Throws if the slot's container is invalid.
 
 ### **getItem**
 `
 getItem(): ItemStack
 `
-
-Returns the item stored within the container.
 
 #### **Returns** [*ItemStack*](ItemStack.md)
 
@@ -82,42 +135,77 @@ Returns the item stored within the container.
 
 ### **getLore**
 `
-getLore(): string[] | undefined
+getLore(): string[]
 `
 
-Returns the lore value for the item stored within this container slot.
+Returns the lore value - a secondary display string - for an ItemStack.
 
-#### **Returns** *string*[] | *undefined*
+#### **Returns** *string*[] - An array of lore strings. If the item does not have lore, returns an empty array.
 
 > [!WARNING]
-> This function can throw errors.
+> Throws if the slot's container is invalid.
+
+### **isStackableWith**
+`
+isStackableWith(itemStack: ItemStack): boolean
+`
+
+Returns whether this item stack can be stacked with the given `itemStack`. This is determined by comparing the item type and any custom data and properties associated with the item stacks. The amount of each item stack is not taken into consideration.
+
+#### **Parameters**
+- **itemStack**: [*ItemStack*](ItemStack.md)
+
+#### **Returns** *boolean*
+
+> [!WARNING]
+> Throws if the slot's container is invalid.
+
+### **setCanDestroy**
+`
+setCanDestroy(blockIdentifiers?: string[]): void
+`
+
+The list of block types this item can break in Adventure mode. The block names are displayed in the item's tooltip. Setting the value to undefined will clear the list.
+
+#### **Parameters**
+- **blockIdentifiers**?: *string*[] = `null`
+
+> [!WARNING]
+> Throws if the slot's container is invalid. Also throws if any of the provided block identifiers are invalid.
+
+### **setCanPlaceOn**
+`
+setCanPlaceOn(blockIdentifiers?: string[]): void
+`
+
+The list of block types this item can be placed on in Adventure mode. This is only applicable to block items. The block names are displayed in the item's tooltip. Setting the value to undefined will clear the list.
+
+#### **Parameters**
+- **blockIdentifiers**?: *string*[] = `null`
+
+> [!WARNING]
+> Throws if the slot's container is invalid. Also throws if any of the provided block identifiers are invalid.
 
 ### **setItem**
 `
 setItem(itemStack?: ItemStack): void
 `
 
-Sets the item within the slot to a new value.
-
 #### **Parameters**
 - **itemStack**?: [*ItemStack*](ItemStack.md) = `null`
-  
-  The item stack to set within this container slot.
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **setLore**
 `
-setLore(loreList: string[]): void
+setLore(loreList?: string[]): void
 `
 
-Sets the lore string for the item at the specified slot.
+Sets the lore value - a secondary display string - for an ItemStack.
 
 #### **Parameters**
-- **loreList**: *string*[]
-  
-  An array of strings for lines of text for this lore.
+- **loreList**?: *string*[] = `null`
 
 > [!WARNING]
-> This function can throw errors.
+> Throws if the slot's container is invalid.

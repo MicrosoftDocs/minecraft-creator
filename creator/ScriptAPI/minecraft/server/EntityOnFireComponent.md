@@ -13,7 +13,7 @@ description: Contents of the @minecraft/server.EntityOnFireComponent class.
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 When present on an entity, this entity is on fire.
 
@@ -25,13 +25,6 @@ When present on an entity, this entity is on fire.
 The number of ticks remaining before the fire goes out.
 
 Type: *number*
-
-### **typeId**
-`read-only typeId: string;`
-
-Should be 'minecraft:onfire'.
-
-Type: *string*
 
 ## Constants
 

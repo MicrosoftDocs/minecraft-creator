@@ -3,14 +3,14 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: minecraft/server.Color Class
+title: minecraft/server.Color Interface
 description: Contents of the @minecraft/server.Color class.
 ---
-# Color Class
+# Color Interface
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 > [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
+> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Represents a fully customizable color within Minecraft.
 
@@ -43,21 +43,3 @@ Type: *number*
 Determines a color's red component. Valid values are between 0 and 1.0.
 
 Type: *number*
-
-## Methods
-- [constructor](#constructor)
-
-### **constructor**
-`
-new Color(red: number, green: number, blue: number, alpha: number)
-`
-
-Creates a new color using the specified color values.
-
-#### **Parameters**
-- **red**: *number*
-- **green**: *number*
-- **blue**: *number*
-- **alpha**: *number*
-
-#### **Returns** [*Color*](Color.md)

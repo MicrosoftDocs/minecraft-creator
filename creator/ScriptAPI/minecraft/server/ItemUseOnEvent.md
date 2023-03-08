@@ -12,6 +12,9 @@ description: Contents of the @minecraft/server.ItemUseOnEvent class.
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+## Classes that extend ItemUseOnEvent
+- [*BeforeItemUseOnEvent*](BeforeItemUseOnEvent.md)
+
 Contains information related to an item being used on a block.
 
 ## Properties
@@ -22,13 +25,6 @@ Contains information related to an item being used on a block.
 The face of the block that an item is being used on.
 
 Type: [*Direction*](Direction.md)
-
-### **blockLocation**
-`read-only blockLocation: BlockLocation;`
-
-Location of the block being impacted.
-
-Type: [*BlockLocation*](BlockLocation.md)
 
 ### **faceLocationX**
 `read-only faceLocationX: number;`
@@ -57,3 +53,16 @@ Type: [*ItemStack*](ItemStack.md)
 Returns the source entity that triggered this item event.
 
 Type: [*Entity*](Entity.md)
+
+## Methods
+- [getBlockLocation](#getblocklocation)
+
+### **getBlockLocation**
+`
+getBlockLocation(): Vector3
+`
+
+#### **Returns** [*Vector3*](Vector3.md)
+
+> [!WARNING]
+> This function can throw errors.

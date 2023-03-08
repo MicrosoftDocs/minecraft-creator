@@ -20,25 +20,11 @@ Represents the inventory of a block in the world. Used with blocks like chests.
 ## Properties
 
 ### **container**
-`read-only container: BlockInventoryComponentContainer;`
+`read-only container: Container;`
 
 The container which holds an [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md).
 
-Type: [*BlockInventoryComponentContainer*](BlockInventoryComponentContainer.md)
-
-### **location**
-`read-only location: BlockLocation;`
-
-Coordinates of the specified block.
-
-Type: [*BlockLocation*](BlockLocation.md)
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:inventory.
-
-Type: *string*
+Type: [*Container*](Container.md)
 
 ## Constants
 
@@ -52,9 +38,9 @@ Type: *string*
 #### **Examples**
 ##### *place_items_in_chest.js*
 ```javascript
-import { world, MinecraftBlockTypes, BlockLocation, Items, ItemStack } from "@minecraft/server";
+import { world, MinecraftBlockTypes, Items, ItemStack } from "@minecraft/server";
 // Fetch block
-const block = world.getDimension("overworld").getBlock(new BlockLocation(1, 2, 3));
+const block = world.getDimension("overworld").getBlock({ x: 1, y: 2, z: 3 });
 // Make it a chest
 block.setType(MinecraftBlockTypes.chest);
 // Get the inventory

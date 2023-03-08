@@ -13,7 +13,7 @@ description: Contents of the @minecraft/server.EntityLeashableComponent class.
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 Allows this entity to be leashed and defines the conditions and events for this entity when is leashed.
 
@@ -25,13 +25,6 @@ Allows this entity to be leashed and defines the conditions and events for this 
 Distance in blocks at which the 'spring' effect starts acting to keep this entity close to the entity that leashed it.
 
 Type: *number*
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:leashable.
-
-Type: *string*
 
 ## Methods
 - [leash](#leash)

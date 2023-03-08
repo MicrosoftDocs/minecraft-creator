@@ -35,7 +35,13 @@ An constructor for creating a new MolangVariableMap object.
 setColorRGB(variableName: string, color: Color): MolangVariableMap
 `
 
-Sets a Molang rendering/animation variable with the value of a Red/Green/Blue color.
+Adds the following variables to Molang:
+
+- `<variable_name>.r` - Red color value [0-1]
+
+- `<variable_name>.g` - Green color value [0-1]
+
+- `<variable_name>.b` - Blue color value [0-1]
 
 #### **Parameters**
 - **variableName**: *string*
@@ -48,7 +54,15 @@ Sets a Molang rendering/animation variable with the value of a Red/Green/Blue co
 setColorRGBA(variableName: string, color: Color): MolangVariableMap
 `
 
-Sets a Molang rendering/animation variable with the value of a Red/Green/Blue color + Alpha (transparency) value.
+Adds the following variables to Molang:
+
+- `<variable_name>.r` - Red color value [0-1]
+
+- `<variable_name>.g` - Green color value [0-1]
+
+- `<variable_name>.b` - Blue color value [0-1]
+
+- `<variable_name>.a` - Alpha (transparency) color value [0-1]
 
 #### **Parameters**
 - **variableName**: *string*
@@ -61,7 +75,15 @@ Sets a Molang rendering/animation variable with the value of a Red/Green/Blue co
 setSpeedAndDirection(variableName: string, speed: number, direction: Vector): MolangVariableMap
 `
 
-Sets the speed and direction for a Molang (rendering and animation) variable.
+Adds the following variables to Molang:
+
+- `<variable_name>.speed` - Speed number provided
+
+- `<variable_name>.direction_x` - X value from the [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) provided
+
+- `<variable_name>.direction_y` - Y value from the [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) provided
+
+- `<variable_name>.direction_z` - Z value from the [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) provided
 
 #### **Parameters**
 - **variableName**: *string*
@@ -75,7 +97,13 @@ Sets the speed and direction for a Molang (rendering and animation) variable.
 setVector3(variableName: string, vector: Vector): MolangVariableMap
 `
 
-Sets a vector value for a Molang (rendering and animation) variable.
+Adds the following variables to Molang:
+
+- `<variable_name>.x` - X value from the [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) provided
+
+- `<variable_name>.y` - Y value from the [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) provided
+
+- `<variable_name>.z` - Z value from the [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) provided
 
 #### **Parameters**
 - **variableName**: *string*

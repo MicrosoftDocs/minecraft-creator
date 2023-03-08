@@ -13,18 +13,11 @@ description: Contents of the @minecraft/server.EntityMarkVariantComponent class.
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 Additional variant value. Can be used to further differentiate variants.
 
 ## Properties
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:mark_variant.
-
-Type: *string*
 
 ### **value**
 `value: number;`

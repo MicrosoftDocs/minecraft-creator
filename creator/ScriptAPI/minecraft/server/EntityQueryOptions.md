@@ -80,11 +80,11 @@ If specified, includes entities with a gamemode that matches the specified gamem
 Type: [*GameMode*](GameMode.md)
 
 ### **location**
-`location?: Location;`
+`location?: Vector3;`
 
 Adds a seed location to the query that is used in conjunction with closest, farthest, limit, volume, and distance properties.
 
-Type: [*Location*](Location.md)
+Type: [*Vector3*](Vector3.md)
 
 ### **maxDistance**
 `maxDistance?: number;`

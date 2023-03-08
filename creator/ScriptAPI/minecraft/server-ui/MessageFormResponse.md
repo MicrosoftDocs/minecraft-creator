@@ -16,20 +16,6 @@ Returns data about the player results from a modal message form.
 
 ## Properties
 
-### **cancelationReason**
-`read-only cancelationReason?: FormCancelationReason;`
-
-Contains additional details as to why a form was canceled.
-
-Type: [*FormCancelationReason*](FormCancelationReason.md)
-
-### **canceled**
-`read-only canceled: boolean;`
-
-If true, the form was canceled by the player (e.g., they selected the pop-up X close button).
-
-Type: *boolean*
-
 ### **selection**
 `read-only selection?: number;`
 

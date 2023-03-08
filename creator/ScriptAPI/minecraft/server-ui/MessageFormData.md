@@ -30,43 +30,43 @@ Creates a new modal form builder.
 
 ### **body**
 `
-body(bodyText: string): MessageFormData
+body(bodyText: minecraftserver.RawMessage | string): MessageFormData
 `
 
 Method that sets the body text for the modal form.
 
 #### **Parameters**
-- **bodyText**: *string*
+- **bodyText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
 #### **Returns** [*MessageFormData*](MessageFormData.md)
 
 ### **button1**
 `
-button1(text: string): MessageFormData
+button1(text: minecraftserver.RawMessage | string): MessageFormData
 `
 
 Method that sets the text for the first button of the dialog.
 
 #### **Parameters**
-- **text**: *string*
+- **text**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
 #### **Returns** [*MessageFormData*](MessageFormData.md)
 
 ### **button2**
 `
-button2(text: string): MessageFormData
+button2(text: minecraftserver.RawMessage | string): MessageFormData
 `
 
 This method sets the text for the second button on the dialog.
 
 #### **Parameters**
-- **text**: *string*
+- **text**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
 #### **Returns** [*MessageFormData*](MessageFormData.md)
 
 ### **show**
 `
-show(player: @minecraft/server.Player): Promise<MessageFormResponse>
+show(player: minecraftserver.Player): Promise<MessageFormResponse>
 `
 
 Creates and shows this modal popup form. Returns asynchronously when the player confirms or cancels the dialog.
@@ -83,12 +83,12 @@ Creates and shows this modal popup form. Returns asynchronously when the player 
 
 ### **title**
 `
-title(titleText: string): MessageFormData
+title(titleText: minecraftserver.RawMessage | string): MessageFormData
 `
 
 This builder method sets the title for the modal dialog.
 
 #### **Parameters**
-- **titleText**: *string*
+- **titleText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
 #### **Returns** [*MessageFormData*](MessageFormData.md)

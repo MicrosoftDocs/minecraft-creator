@@ -68,7 +68,7 @@ new HttpRequest(uri: string)
 
 ### **addHeader**
 `
-addHeader(key: string, value: @minecraft/server-admin.SecretString | string): HttpRequest
+addHeader(key: string, value: minecraftserveradmin.SecretString | string): HttpRequest
 `
 
 Adds an additional header to the overall list of headers used in the corresponding HTTP request.

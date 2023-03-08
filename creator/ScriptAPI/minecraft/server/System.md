@@ -20,9 +20,6 @@ Represents the current world tick of the server.
 
 Type: *number*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **events**
 `read-only events: SystemEvents;`
 
@@ -48,9 +45,6 @@ Cancels the execution of a function run that was previously scheduled via the `r
 
 #### **Parameters**
 - **runId**: *number*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **run**
 `
@@ -83,9 +77,6 @@ Runs a set of code on an interval.
 
 #### **Returns** *number* - An opaque handle that can be used with the clearRun method to stop the run of this function on an interval.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **runTimeout**
 `
 runTimeout(callback: () => void, tickDelay?: number): number
@@ -102,6 +93,3 @@ Runs a set of code at a future time specified by tickDelay.
   Amount of time, in ticks, before the interval will be called.
 
 #### **Returns** *number* - An opaque handle that can be used with the clearRun method to stop the run of this function on an interval.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.

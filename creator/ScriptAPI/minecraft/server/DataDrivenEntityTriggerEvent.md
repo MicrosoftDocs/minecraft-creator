@@ -30,9 +30,14 @@ Name of the data driven event being triggered.
 
 Type: *string*
 
-### **modifiers**
-`read-only modifiers: DefinitionModifier[];`
+## Methods
+- [getModifiers](#getmodifiers)
+
+### **getModifiers**
+`
+getModifiers(): DefinitionModifier[]
+`
 
 A list of modifications to component state that are the effect of this triggered event.
 
-Type: [*DefinitionModifier*](DefinitionModifier.md)[]
+#### **Returns** [*DefinitionModifier*](DefinitionModifier.md)[]

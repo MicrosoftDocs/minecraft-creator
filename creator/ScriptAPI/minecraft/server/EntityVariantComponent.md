@@ -13,18 +13,11 @@ description: Contents of the @minecraft/server.EntityVariantComponent class.
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 Used to differentiate the component group of a variant of an entity from others. (e.g. ocelot, villager).
 
 ## Properties
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:variant.
-
-Type: *string*
 
 ### **value**
 `read-only value: number;`

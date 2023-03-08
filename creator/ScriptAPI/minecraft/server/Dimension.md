@@ -36,13 +36,13 @@ Type: *string*
 
 ### **createExplosion**
 `
-createExplosion(location: Location, radius: number, explosionOptions?: ExplosionOptions): void
+createExplosion(location: Vector3, radius: number, explosionOptions?: ExplosionOptions): void
 `
 
 Creates an explosion at the specified location.
 
 #### **Parameters**
-- **location**: [*Location*](Location.md)
+- **location**: [*Vector3*](Vector3.md)
   
   The location of the explosion.
 - **radius**: *number*
@@ -65,42 +65,42 @@ Creates an explosion at the specified location.
 ```
 ##### *createFireAndWaterExplosions.ts*
 ```javascript
-  const explosionLoc = new mc.Location(targetLocation.x + 0.5, targetLocation.y + 0.5, targetLocation.z + 0.5);
-  const fireExplosionOptions = new mc.ExplosionOptions();
-  // Explode with fire
-  fireExplosionOptions.causesFire = true;
-  overworld.createExplosion(explosionLoc, 15, fireExplosionOptions);
-  const waterExplosionOptions = new mc.ExplosionOptions();
-  // Explode in water
-  waterExplosionOptions.allowUnderwater = true;
-  const belowWaterLoc = new mc.Location(targetLocation.x + 3, targetLocation.y + 1, targetLocation.z + 3);
-  overworld.createExplosion(belowWaterLoc, 10, waterExplosionOptions);
+const explosionLoc: mc.Vector3 = { x: targetLocation.x + 0.5, y: targetLocation.y + 0.5, z: targetLocation.z + 0.5 };
+const fireExplosionOptions = new mc.ExplosionOptions();
+// Explode with fire
+fireExplosionOptions.causesFire = true;
+overworld.createExplosion(explosionLoc, 15, fireExplosionOptions);
+const waterExplosionOptions = new mc.ExplosionOptions();
+// Explode in water
+waterExplosionOptions.allowUnderwater = true;
+const belowWaterLoc: mc.Vector3 = { x: targetLocation.x + 3, y: targetLocation.y + 1, z: targetLocation.z + 3 };
+overworld.createExplosion(belowWaterLoc, 10, waterExplosionOptions);
 ```
 ##### *createNoBlockExplosion.ts*
 ```javascript
-  const explosionOptions = new mc.ExplosionOptions();
-  // Start by exploding without breaking blocks
-  explosionOptions.breaksBlocks = false;
-  const explodeNoBlocksLoc = new mc.Location(
-    Math.floor(targetLocation.x + 1),
-    Math.floor(targetLocation.y + 2),
-    Math.floor(targetLocation.z + 1)
-  );
-  overworld.createExplosion(explodeNoBlocksLoc, 15, explosionOptions);
+const explosionOptions = new mc.ExplosionOptions();
+// Start by exploding without breaking blocks
+explosionOptions.breaksBlocks = false;
+const explodeNoBlocksLoc: mc.Vector3 = {
+  x: Math.floor(targetLocation.x + 1),
+  y: Math.floor(targetLocation.y + 2),
+  z: Math.floor(targetLocation.z + 1),
+};
+overworld.createExplosion(explodeNoBlocksLoc, 15, explosionOptions);
 ```
 
 ### **fillBlocks**
 `
-fillBlocks(begin: BlockLocation, end: BlockLocation, block: BlockPermutation | BlockType, options?: BlockFillOptions): number
+fillBlocks(begin: Vector3, end: Vector3, block: BlockPermutation | BlockType, options?: BlockFillOptions): number
 `
 
 Fills an area between begin and end with block of type block.
 
 #### **Parameters**
-- **begin**: [*BlockLocation*](BlockLocation.md)
+- **begin**: [*Vector3*](Vector3.md)
   
   The lower northwest starting corner of the area.
-- **end**: [*BlockLocation*](BlockLocation.md)
+- **end**: [*Vector3*](Vector3.md)
   
   The upper southeast ending corner of the area.
 - **block**: [*BlockPermutation*](BlockPermutation.md) | [*BlockType*](BlockType.md)
@@ -120,34 +120,31 @@ Fills an area between begin and end with block of type block.
 
 ### **getBlock**
 `
-getBlock(location: BlockLocation): Block
+getBlock(location: Vector3): Block
 `
 
 Returns a block instance at the given location. This method was introduced as of version 1.17.10.21.
 
 #### **Parameters**
-- **location**: [*BlockLocation*](BlockLocation.md)
+- **location**: [*Vector3*](Vector3.md)
   
   The location at which to return a block.
 
 #### **Returns** [*Block*](Block.md) - Block at the specified location.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **getBlockFromRay**
 `
-getBlockFromRay(location: Location, direction: Vector, options?: BlockRaycastOptions): Block
+getBlockFromRay(location: Vector3, direction: Vector3, options?: BlockRaycastOptions): Block
 `
 
 Gets the first block that intersects with a vector emanating from a location.
 
 #### **Parameters**
-- **location**: [*Location*](Location.md)
-- **direction**: [*Vector*](Vector.md)
+- **location**: [*Vector3*](Vector3.md)
+- **direction**: [*Vector3*](Vector3.md)
 - **options**?: [*BlockRaycastOptions*](BlockRaycastOptions.md) = `null`
   
   Additional options for processing this raycast query.
@@ -162,15 +159,17 @@ Gets the first block that intersects with a vector emanating from a location.
 
 ### **getEntities**
 `
-getEntities(getEntities?: EntityQueryOptions): EntityIterator
+getEntities(options?: EntityQueryOptions): Entity[]
 `
 
 Returns a set of entities based on a set of conditions defined via the EntityQueryOptions set of filter criteria.
 
 #### **Parameters**
-- **getEntities**?: [*EntityQueryOptions*](EntityQueryOptions.md) = `null`
+- **options**?: [*EntityQueryOptions*](EntityQueryOptions.md) = `null`
+  
+  Additional options that can be used to filter the set of entities returned.
 
-#### **Returns** [*EntityIterator*](EntityIterator.md) - An entity iterator that can be used to loop over the returned entities.
+#### **Returns** [*Entity*](Entity.md)[] - An entity array.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -198,13 +197,13 @@ for (const item of items) {
 
 ### **getEntitiesAtBlockLocation**
 `
-getEntitiesAtBlockLocation(location: BlockLocation): Entity[]
+getEntitiesAtBlockLocation(location: Vector3): Entity[]
 `
 
 Returns a set of entities at a particular location.
 
 #### **Parameters**
-- **location**: [*BlockLocation*](BlockLocation.md)
+- **location**: [*Vector3*](Vector3.md)
   
   The location at which to return entities.
 
@@ -215,14 +214,14 @@ Returns a set of entities at a particular location.
 
 ### **getEntitiesFromRay**
 `
-getEntitiesFromRay(location: Location, direction: Vector, options?: EntityRaycastOptions): Entity[]
+getEntitiesFromRay(location: Vector3, direction: Vector3, options?: EntityRaycastOptions): Entity[]
 `
 
 Gets entities that intersect with a specified vector emanating from a location.
 
 #### **Parameters**
-- **location**: [*Location*](Location.md)
-- **direction**: [*Vector*](Vector.md)
+- **location**: [*Vector3*](Vector3.md)
+- **direction**: [*Vector3*](Vector3.md)
 - **options**?: [*EntityRaycastOptions*](EntityRaycastOptions.md) = `null`
   
   Additional options for processing this raycast query.
@@ -237,15 +236,17 @@ Gets entities that intersect with a specified vector emanating from a location.
 
 ### **getPlayers**
 `
-getPlayers(getPlayers?: EntityQueryOptions): PlayerIterator
+getPlayers(options?: EntityQueryOptions): Player[]
 `
 
 Returns a set of players based on a set of conditions defined via the EntityQueryOptions set of filter criteria.
 
 #### **Parameters**
-- **getPlayers**?: [*EntityQueryOptions*](EntityQueryOptions.md) = `null`
+- **options**?: [*EntityQueryOptions*](EntityQueryOptions.md) = `null`
+  
+  Additional options that can be used to filter the set of players returned.
 
-#### **Returns** [*PlayerIterator*](PlayerIterator.md) - An entity iterator that can be used to loop over the returned players.
+#### **Returns** [*Player*](Player.md)[] - A player array.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -272,7 +273,7 @@ Runs a particular command asynchronously from the context of the broader dimensi
 
 ### **spawnEntity**
 `
-spawnEntity(identifier: string, location: BlockLocation | Location): Entity
+spawnEntity(identifier: string, location: Vector3): Entity
 `
 
 Creates a new entity (e.g., a mob) at the specified location.
@@ -281,7 +282,7 @@ Creates a new entity (e.g., a mob) at the specified location.
 - **identifier**: *string*
   
   Identifier of the type of entity to spawn. If no namespace is specified, 'minecraft:' is assumed.
-- **location**: [*BlockLocation*](BlockLocation.md) | [*Location*](Location.md)
+- **location**: [*Vector3*](Vector3.md)
   
   The location at which to create the entity.
 
@@ -301,19 +302,21 @@ Creates a new entity (e.g., a mob) at the specified location.
 ```
 ##### *quickFoxLazyDog.ts*
 ```javascript
-  const fox = overworld.spawnEntity(
-    "minecraft:fox",
-    new mc.BlockLocation(targetLocation.x + 1, targetLocation.y + 2, targetLocation.z + 3)
-  );
-  fox.addEffect(mc.MinecraftEffectTypes.speed, 10, 20);
-  log("Created a fox.");
-  const wolf = overworld.spawnEntity(
-    "minecraft:wolf",
-    new mc.BlockLocation(targetLocation.x + 4, targetLocation.y + 2, targetLocation.z + 3)
-  );
-  wolf.addEffect(mc.MinecraftEffectTypes.slowness, 10, 20);
-  wolf.isSneaking = true;
-  log("Created a sneaking wolf.", 1);
+const fox = overworld.spawnEntity("minecraft:fox", {
+  x: targetLocation.x + 1,
+  y: targetLocation.y + 2,
+  z: targetLocation.z + 3,
+});
+fox.addEffect(mc.MinecraftEffectTypes.speed, 10, 20);
+log("Created a fox.");
+const wolf = overworld.spawnEntity("minecraft:wolf", {
+  x: targetLocation.x + 4,
+  y: targetLocation.y + 2,
+  z: targetLocation.z + 3,
+});
+wolf.addEffect(mc.MinecraftEffectTypes.slowness, 10, 20);
+wolf.isSneaking = true;
+log("Created a sneaking wolf.", 1);
 ```
 ##### *trapTick.ts*
 ```javascript
@@ -329,14 +332,14 @@ Creates a new entity (e.g., a mob) at the specified location.
 
 ### **spawnItem**
 `
-spawnItem(item: ItemStack, location: BlockLocation | Location): Entity
+spawnItem(item: ItemStack, location: Vector3): Entity
 `
 
 Creates a new item stack as an entity at the specified location.
 
 #### **Parameters**
 - **item**: [*ItemStack*](ItemStack.md)
-- **location**: [*BlockLocation*](BlockLocation.md) | [*Location*](Location.md)
+- **location**: [*Vector3*](Vector3.md)
   
   The location at which to create the item stack.
 
@@ -351,15 +354,15 @@ Creates a new item stack as an entity at the specified location.
 #### **Examples**
 ##### *itemStacks.ts*
 ```javascript
-  const oneItemLoc = new mc.BlockLocation(3, 2, 1);
-  const fiveItemsLoc = new mc.BlockLocation(1, 2, 1);
-  const diamondPickaxeLoc = new mc.BlockLocation(2, 2, 4);
-  const oneEmerald = new mc.ItemStack(mc.MinecraftItemTypes.emerald, 1, 0);
-  const onePickaxe = new mc.ItemStack(mc.MinecraftItemTypes.diamondPickaxe, 1, 0);
-  const fiveEmeralds = new mc.ItemStack(mc.MinecraftItemTypes.emerald, 5, 0);
-  overworld.spawnItem(oneEmerald, oneItemLoc);
-  overworld.spawnItem(fiveEmeralds, fiveItemsLoc);
-  overworld.spawnItem(onePickaxe, diamondPickaxeLoc);
+const oneItemLoc: mc.Vector3 = { x: 3, y: 2, z: 1 };
+const fiveItemsLoc: mc.Vector3 = { x: 1, y: 2, z: 1 };
+const diamondPickaxeLoc: mc.Vector3 = { x: 2, y: 2, z: 4 };
+const oneEmerald = new mc.ItemStack(mc.MinecraftItemTypes.emerald, 1, 0);
+const onePickaxe = new mc.ItemStack(mc.MinecraftItemTypes.diamondPickaxe, 1, 0);
+const fiveEmeralds = new mc.ItemStack(mc.MinecraftItemTypes.emerald, 5, 0);
+overworld.spawnItem(oneEmerald, oneItemLoc);
+overworld.spawnItem(fiveEmeralds, fiveItemsLoc);
+overworld.spawnItem(onePickaxe, diamondPickaxeLoc);
 ```
 ##### *spawnItem.ts*
 ```javascript
@@ -370,7 +373,7 @@ Creates a new item stack as an entity at the specified location.
 
 ### **spawnParticle**
 `
-spawnParticle(effectName: string, location: Location, molangVariables: MolangVariableMap): void
+spawnParticle(effectName: string, location: Vector3, molangVariables: MolangVariableMap): void
 `
 
 Creates a new particle emitter at a specified location in the world.
@@ -379,7 +382,7 @@ Creates a new particle emitter at a specified location in the world.
 - **effectName**: *string*
   
   Identifier of the particle to create.
-- **location**: [*Location*](Location.md)
+- **location**: [*Vector3*](Vector3.md)
   
   The location at which to create the particle emitter.
 - **molangVariables**: [*MolangVariableMap*](MolangVariableMap.md)

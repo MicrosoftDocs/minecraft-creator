@@ -13,83 +13,9 @@ description: Contents of the @minecraft/server.EntityLavaMovementComponent class
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityAttributeComponent*](EntityAttributeComponent.md)
 
 Defines the base movement speed in lava of this entity.
-
-## Properties
-
-### **current**
-`read-only current: number;`
-
-Read-only. Returns the current value of movement speed on lava for the entity.
-
-Type: *number*
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:lava_movement.
-
-Type: *string*
-
-### **value**
-`read-only value: number;`
-
-Value for movement speed on lava as defined through entity components.
-
-Type: *number*
-
-## Methods
-- [resetToDefaultValue](#resettodefaultvalue)
-- [resetToMaxValue](#resettomaxvalue)
-- [resetToMinValue](#resettominvalue)
-- [setCurrent](#setcurrent)
-
-### **resetToDefaultValue**
-`
-resetToDefaultValue(): void
-`
-
-Resets the current movement speed on lava for the entity to its default value.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **resetToMaxValue**
-`
-resetToMaxValue(): void
-`
-
-Resets the movement speed on lava to the maximum value for the entity.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **resetToMinValue**
-`
-resetToMinValue(): void
-`
-
-Resets the movement speed on lava speed to the minimum value.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **setCurrent**
-`
-setCurrent(value: number): boolean
-`
-
-Sets the current value of movement speed on lava for the entity.
-
-#### **Parameters**
-- **value**: *number*
-
-#### **Returns** *boolean*
-
-> [!WARNING]
-> This function can throw errors.
 
 ## Constants
 

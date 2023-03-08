@@ -13,7 +13,7 @@ description: Contents of the @minecraft/server.EntityItemComponent class.
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 If added onto the entity, this indicates that the entity represents a free-floating item in the world. Lets you retrieve the actual item stack contents via the itemStack property.
 
@@ -25,13 +25,6 @@ If added onto the entity, this indicates that the entity represents a free-float
 Item stack represented by this entity in the world.
 
 Type: [*ItemStack*](ItemStack.md)
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component.
-
-Type: *string*
 
 ## Constants
 

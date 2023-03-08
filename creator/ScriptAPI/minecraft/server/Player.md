@@ -13,63 +13,18 @@ description: Contents of the @minecraft/server.Player class.
 - [*Entity*](Entity.md)
 
 ## Classes that extend Player
-- [*SimulatedPlayer*](../server-gametest/SimulatedPlayer.md)
+- [*SimulatedPlayer*](SimulatedPlayer.md)
 
 Represents a player within the world.
 
 ## Properties
 
-### **dimension**
-`read-only dimension: Dimension;`
-
-Dimension that the entity is currently within.
-
-Type: [*Dimension*](Dimension.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-### **headLocation**
-`read-only headLocation: Location;`
-
-Location of the center of the head component of the player.
-
-Type: [*Location*](Location.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-### **id**
-`read-only id: string;`
-
-Unique identifier of the player. This identifier is intended to be consistent across loads of a world instance. No meaning should be inferred from the value and structure of this unique identifier - do not parse or interpret it.
-
-Type: *string*
-
-### **isSneaking**
-`isSneaking: boolean;`
-
-True if the player is currently using a sneaking movement.
-
-Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **level**
 `read-only level: number;`
 
+The current overall level for the player, based on their experience. 
+
 Type: *number*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-### **location**
-`read-only location: Vector3;`
-
-Current location of the player.
-
-Type: [*Vector3*](Vector3.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -81,42 +36,12 @@ Name of the player.
 
 Type: *string*
 
-### **nameTag**
-`nameTag: string;`
-
-Optional name tag of the player.
-
-Type: *string*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **onScreenDisplay**
 `read-only onScreenDisplay: ScreenDisplay;`
 
 Contains methods for manipulating the on-screen display of a Player.
 
 Type: [*ScreenDisplay*](ScreenDisplay.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-### **rotation**
-`read-only rotation: XYRotation;`
-
-Main rotation of the entity.
-
-Type: [*XYRotation*](XYRotation.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-### **scoreboard**
-`read-only scoreboard: ScoreboardIdentity;`
-
-Returns a scoreboard identity that represents this entity.
-
-Type: [*ScoreboardIdentity*](ScoreboardIdentity.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -131,12 +56,12 @@ Type: *number*
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-### **target**
-`read-only target: Entity;`
+### **spawnDimension**
+`read-only spawnDimension?: Dimension;`
 
-Retrieves or sets an entity that is used as the target of AI-related behaviors, like attacking. For players, which don't use any AI semantics, this property does not do anything.
+If this player has an individual spawn point set, returns the dimension that their spawn point is within.
 
-Type: [*Entity*](Entity.md)
+Type: [*Dimension*](Dimension.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -144,34 +69,9 @@ Type: [*Entity*](Entity.md)
 ### **totalXpNeededForNextLevel**
 `read-only totalXpNeededForNextLevel: number;`
 
+The overall total set of experience needed to achieve the next level for a player.
+
 Type: *number*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-### **typeId**
-`read-only typeId: string;`
-
-Unique identifier of the type of the entity - for example, 'minecraft:player'.
-
-Type: *string*
-
-### **velocity**
-`read-only velocity: Vector;`
-
-Current speed of the player across X, Y, and Z dimensions.
-
-Type: [*Vector*](Vector.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-### **viewDirection**
-`read-only viewDirection: Vector3;`
-
-Direction that the player is looking, from their head.
-
-Type: [*Vector3*](Vector3.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -179,73 +79,28 @@ Type: [*Vector3*](Vector3.md)
 ### **xpEarnedAtCurrentLevel**
 `read-only xpEarnedAtCurrentLevel: number;`
 
+The current set of experience achieved for the player.
+
 Type: *number*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Methods
-- [addEffect](#addeffect)
 - [addExperience](#addexperience)
 - [addLevels](#addlevels)
-- [addTag](#addtag)
-- [applyDamage](#applydamage)
-- [extinguishFire](#extinguishfire)
-- [getBlockFromViewDirection](#getblockfromviewdirection)
-- [getComponent](#getcomponent)
-- [getComponents](#getcomponents)
-- [getDynamicProperty](#getdynamicproperty)
-- [getEffect](#geteffect)
-- [getEffects](#geteffects)
-- [getEntitiesFromViewDirection](#getentitiesfromviewdirection)
+- [clearSpawn](#clearspawn)
 - [getItemCooldown](#getitemcooldown)
-- [getTags](#gettags)
+- [getSpawnPosition](#getspawnposition)
 - [getTotalXp](#gettotalxp)
-- [hasComponent](#hascomponent)
-- [hasTag](#hastag)
 - [isOp](#isop)
-- [kill](#kill)
 - [playSound](#playsound)
 - [postClientMessage](#postclientmessage)
-- [removeDynamicProperty](#removedynamicproperty)
-- [removeTag](#removetag)
 - [resetLevel](#resetlevel)
-- [runCommandAsync](#runcommandasync)
-- [setDynamicProperty](#setdynamicproperty)
-- [setOnFire](#setonfire)
+- [sendMessage](#sendmessage)
 - [setOp](#setop)
-- [setRotation](#setrotation)
-- [setVelocity](#setvelocity)
+- [setSpawn](#setspawn)
 - [startItemCooldown](#startitemcooldown)
-- [teleport](#teleport)
-- [teleportFacing](#teleportfacing)
-- [tell](#tell)
-- [triggerEvent](#triggerevent)
-
-### **addEffect**
-`
-addEffect(effectType: EffectType, duration: number, amplifier?: number, showParticles?: boolean): void
-`
-
-Adds an effect, like poison, to the entity.
-
-#### **Parameters**
-- **effectType**: [*EffectType*](EffectType.md)
-  
-  Type of effect to add to the entity.
-- **duration**: *number*
-  
-  Amount of time, in ticks, for the effect to apply.
-- **amplifier**?: *number* = `0`
-  
-  Optional amplification of the effect to apply.
-- **showParticles**?: *boolean* = `true`
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
 
 ### **addExperience**
 `
@@ -287,178 +142,12 @@ addLevels(amount: number): number
 > [!WARNING]
 > This function can throw errors.
 
-### **addTag**
+### **clearSpawn**
 `
-addTag(tag: string): boolean
-`
-
-Adds a specified tag to an entity.
-
-#### **Parameters**
-- **tag**: *string*
-  
-  Content of the tag to add.
-
-#### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **applyDamage**
-`
-applyDamage(amount: number, source?: EntityDamageSource): boolean
+clearSpawn(): void
 `
 
-Applies damage to the player.
-
-#### **Parameters**
-- **amount**: *number*
-  
-  Amount of damage to apply.
-- **source**?: [*EntityDamageSource*](EntityDamageSource.md) = `null`
-  
-  Additional information around the source of damage that can apply to the player.
-
-#### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **extinguishFire**
-`
-extinguishFire(useEffects?: boolean): boolean
-`
-
-Extinguishes the fire if the player is on fire. Note that you can call getComponent('minecraft:onfire') and, if present, the player is on fire."
-
-#### **Parameters**
-- **useEffects**?: *boolean* = `null`
-  
-  Whether to show any visual effects connected to the extinguishing.
-
-#### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **getBlockFromViewDirection**
-`
-getBlockFromViewDirection(options?: BlockRaycastOptions): Block
-`
-
-Returns the first intersecting block from the direction that this player is looking at.
-
-#### **Parameters**
-- **options**?: [*BlockRaycastOptions*](BlockRaycastOptions.md) = `null`
-
-#### **Returns** [*Block*](Block.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **getComponent**
-`
-getComponent(componentId: string): IEntityComponent
-`
-
-Gets a component (that represents additional capabilities) for an entity.
-
-#### **Parameters**
-- **componentId**: *string*
-  
-  The identifier of the component (e.g., 'minecraft:rideable') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed. If the component is not present on the entity, undefined is returned.
-
-#### **Returns** [*IEntityComponent*](IEntityComponent.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-### **getComponents**
-`
-getComponents(): IEntityComponent[]
-`
-
-Returns all components that are both present on this entity and supported by the API.
-
-#### **Returns** [*IEntityComponent*](IEntityComponent.md)[]
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-### **getDynamicProperty**
-`
-getDynamicProperty(identifier: string): boolean | number | string | undefined
-`
-
-Returns a property value.
-
-#### **Parameters**
-- **identifier**: *string*
-
-#### **Returns** *boolean* | *number* | *string* | *undefined* - Returns the value for the property, or undefined if the property has not been set.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **getEffect**
-`
-getEffect(effectType: EffectType): Effect
-`
-
-Returns the effect for the specified EffectType on the entity, or undefined if the effect is not present.
-
-#### **Parameters**
-- **effectType**: [*EffectType*](EffectType.md)
-
-#### **Returns** [*Effect*](Effect.md) - Effect object for the specified effect, or undefined if the effect is not present.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **getEffects**
-`
-getEffects(): Effect[]
-`
-
-Returns a set of effects applied to this player.
-
-#### **Returns** [*Effect*](Effect.md)[]
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **getEntitiesFromViewDirection**
-`
-getEntitiesFromViewDirection(options?: EntityRaycastOptions): Entity[]
-`
-
-Returns a potential set of entities from the direction that this player is looking at.
-
-#### **Parameters**
-- **options**?: [*EntityRaycastOptions*](EntityRaycastOptions.md) = `null`
-
-#### **Returns** [*Entity*](Entity.md)[]
+Clears the spawn point that has been individually set for a player.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -486,14 +175,14 @@ Gets the current item cooldown time for a particular cooldown category.
 > [!WARNING]
 > This function can throw errors.
 
-### **getTags**
+### **getSpawnPosition**
 `
-getTags(): string[]
+getSpawnPosition(): Vector3 | undefined
 `
 
-Returns all tags associated with an entity.
+Returns an individualized spawn position, if set, for a player.
 
-#### **Returns** *string*[]
+#### **Returns** [*Vector3*](Vector3.md) | *undefined* - The individual spawn position, or undefined if there is no specific spawn position set for a player.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -516,43 +205,6 @@ getTotalXp(): number
 > [!WARNING]
 > This function can throw errors.
 
-### **hasComponent**
-`
-hasComponent(componentId: string): boolean
-`
-
-Returns true if the specified component is present on this entity.
-
-#### **Parameters**
-- **componentId**: *string*
-  
-  The identifier of the component (e.g., 'minecraft:rideable') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed.
-
-#### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-### **hasTag**
-`
-hasTag(tag: string): boolean
-`
-
-Tests whether an entity has a particular tag.
-
-#### **Parameters**
-- **tag**: *string*
-  
-  Identifier of the tag to test for.
-
-#### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
 ### **isOp**
 `
 isOp(): boolean
@@ -561,19 +213,6 @@ isOp(): boolean
 Returns true if this player has operator-level permissions.
 
 #### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **kill**
-`
-kill(): void
-`
-
-Kills this entity. The entity will drop loot as normal.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -619,44 +258,6 @@ This is an internal-facing method for posting a system message to downstream cli
 > [!WARNING]
 > This function can throw errors.
 
-### **removeDynamicProperty**
-`
-removeDynamicProperty(identifier: string): boolean
-`
-
-Removes a specified property.
-
-#### **Parameters**
-- **identifier**: *string*
-
-#### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **removeTag**
-`
-removeTag(tag: string): boolean
-`
-
-Removes a specified tag from an entity.
-
-#### **Parameters**
-- **tag**: *string*
-  
-  Content of the tag to remove.
-
-#### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
 ### **resetLevel**
 `
 resetLevel(): void
@@ -670,62 +271,48 @@ Resets the level of the player.
 > [!WARNING]
 > This function can throw errors.
 
-### **runCommandAsync**
+### **sendMessage**
 `
-runCommandAsync(commandString: string): Promise<CommandResult>
+sendMessage(message: (RawMessage | string)[] | RawMessage | string): void
 `
 
-Runs a particular command asynchronously from the context of this entity.  Note that there is a maximum queue of 128 asynchronous commands that can be run in a given tick.
+Sends a message to the player.
 
 #### **Parameters**
-- **commandString**: *string*
+- **message**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
   
-  Command to run. Note that command strings should not start with slash.
-
-#### **Returns** Promise&lt;[*CommandResult*](CommandResult.md)&gt; - For commands that return data, returns a JSON structure with command response values.
+  The message to be displayed.
 
 > [!WARNING]
-> This function can throw errors.
+> This method can throw if the provided [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) is in an invalid format. For example, if an empty `name` string is provided to `score`.
 
-### **setDynamicProperty**
-`
-setDynamicProperty(identifier: string, value: boolean | number | string): void
-`
-
-Sets a specified property to a value.
-
-#### **Parameters**
-- **identifier**: *string*
-- **value**: *boolean* | *number* | *string*
-  
-  Data value of the property to set.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **setOnFire**
-`
-setOnFire(seconds: number, useEffects?: boolean): boolean
-`
-
-Sets a player on fire (if it is not in water or rain). Note that you can call getComponent('minecraft:onfire') and, if present, the player is on fire.
-
-#### **Parameters**
-- **seconds**: *number*
-  
-  Length of time to set the player on fire.
-- **useEffects**?: *boolean* = `null`
-
-#### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
+#### **Examples**
+##### *nestedTranslation.ts*
+```javascript
+// Displays "Apple or Coal"
+let rawMessage = {
+  translate: "accessibility.list.or.two",
+  with: { rawtext: [{ translate: "item.apple.name" }, { translate: "item.coal.name" }] },
+};
+player.sendMessage(rawMessage);
+```
+##### *scoreWildcard.ts*
+```javascript
+// Displays the player's score for objective "obj". Each player will see their own score.
+const rawMessage = { score: { name: "*", objective: "obj" } };
+world.sendMessage(rawMessage);
+```
+##### *simpleString.ts*
+```javascript
+// Displays "Hello, world!"
+world.sendMessage("Hello, world!");
+```
+##### *translation.ts*
+```javascript
+// Displays "First or Second"
+const rawMessage = { translate: "accessibility.list.or.two", with: ["First", "Second"] };
+player.sendMessage(rawMessage);
+```
 
 ### **setOp**
 `
@@ -743,34 +330,20 @@ Will change the specified players permissions, and whether they are operator or 
 > [!WARNING]
 > This function can throw errors.
 
-### **setRotation**
+### **setSpawn**
 `
-setRotation(degreesX: number, degreesY: number): void
+setSpawn(spawnPosition: Vector3, spawnDimension: Dimension): void
 `
 
-Sets the main rotation of the entity.
+Sets the individual spawn point of this player.
 
 #### **Parameters**
-- **degreesX**: *number*
-- **degreesY**: *number*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **setVelocity**
-`
-setVelocity(velocity: Vector3): void
-`
-
-Sets a velocity for the entity to move with.
-
-#### **Parameters**
-- **velocity**: [*Vector3*](Vector3.md)
+- **spawnPosition**: [*Vector3*](Vector3.md)
   
-  X/Y/Z components of the velocity.
+  Location of the spawn point.
+- **spawnDimension**: [*Dimension*](Dimension.md)
+  
+  Dimension to place the players' individualized spawn point within.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -792,93 +365,6 @@ Sets the item cooldown time for a particular cooldown category.
 - **tickDuration**: *number*
   
   Duration in ticks of the item cooldown.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **teleport**
-`
-teleport(location: Vector3, dimension: Dimension, xRotation: number, yRotation: number, keepVelocity?: boolean): void
-`
-
-Teleports the selected player to a new location
-
-#### **Parameters**
-- **location**: [*Vector3*](Vector3.md)
-  
-  New location for the player.
-- **dimension**: [*Dimension*](Dimension.md)
-  
-  Dimension to move the selected player to.
-- **xRotation**: *number*
-  
-  X rotation of the player after teleportation.
-- **yRotation**: *number*
-  
-  Y rotation of the player after teleportation.
-- **keepVelocity**?: *boolean* = `false`
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **teleportFacing**
-`
-teleportFacing(location: Vector3, dimension: Dimension, facingLocation: Vector3, keepVelocity?: boolean): void
-`
-
-Teleports the selected player to a new location, and will have the player facing a specified location.
-
-#### **Parameters**
-- **location**: [*Vector3*](Vector3.md)
-  
-  New location for the player.
-- **dimension**: [*Dimension*](Dimension.md)
-  
-  Dimension to move the selected player to.
-- **facingLocation**: [*Vector3*](Vector3.md)
-  
-  Location that this player will be facing.
-- **keepVelocity**?: *boolean* = `false`
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **tell**
-`
-tell(message: (RawMessage | string)[] | RawMessage | string): void
-`
-
-Sends a message that is displayed on the connected client for this player.
-
-#### **Parameters**
-- **message**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **triggerEvent**
-`
-triggerEvent(eventName: string): void
-`
-
-Triggers an entity type event. For every entity, a number of events are defined in an entities' definition for key entity behaviors; for example, creepers have a minecraft:start_exploding type event.
-
-#### **Parameters**
-- **eventName**: *string*
-  
-  Name of the entity type event to trigger. If a namespace is not specified, minecraft: is assumed.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

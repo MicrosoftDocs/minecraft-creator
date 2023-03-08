@@ -13,18 +13,11 @@ description: Contents of the @minecraft/server.EntityMovementGlideComponent clas
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityBaseMovementComponent*](EntityBaseMovementComponent.md)
 
 When added, this movement control allows the mob to glide.
 
 ## Properties
-
-### **maxTurn**
-`read-only maxTurn: number;`
-
-The maximum number in degrees the mob can turn per tick.
-
-Type: *number*
 
 ### **speedWhenTurning**
 `read-only speedWhenTurning: number;`
@@ -39,13 +32,6 @@ Type: *number*
 Start speed during a glide.
 
 Type: *number*
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:movement.glide.
-
-Type: *string*
 
 ## Constants
 

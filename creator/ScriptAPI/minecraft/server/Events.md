@@ -114,6 +114,13 @@ This event fires when an effect, like poisoning, is added to an entity.
 
 Type: [*EffectAddEventSignal*](EffectAddEventSignal.md)
 
+### **entityDie**
+`read-only entityDie: EntityDieEventSignal;`
+
+This event fires when an entity dies.
+
+Type: [*EntityDieEventSignal*](EntityDieEventSignal.md)
+
 ### **entityHit**
 `read-only entityHit: EntityHitEventSignal;`
 
@@ -248,7 +255,7 @@ This event fires when a player spawns or respawns. Note that an additional flag 
 Type: [*PlayerSpawnEventSignal*](PlayerSpawnEventSignal.md)
 
 ### **projectileHit**
-`projectileHit: ProjectileHitEventSignal;`
+`read-only projectileHit: ProjectileHitEventSignal;`
 
 This event fires when a projectile hits an entity or block.
 

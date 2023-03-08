@@ -19,26 +19,12 @@ Contains information related to changes before a piston expands or retracts.
 
 ## Properties
 
-### **block**
-`read-only block: Block;`
-
-Block impacted by this event.
-
-Type: [*Block*](Block.md)
-
 ### **cancel**
 `cancel: boolean;`
 
 If this is set to true within an event handler, the piston activation is canceled.
 
 Type: *boolean*
-
-### **dimension**
-`read-only dimension: Dimension;`
-
-Dimension that contains the block that is the subject of this event.
-
-Type: [*Dimension*](Dimension.md)
 
 ### **isExpanding**
 `read-only isExpanding: boolean;`

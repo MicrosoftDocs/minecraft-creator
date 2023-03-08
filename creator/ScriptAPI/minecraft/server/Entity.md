@@ -27,16 +27,6 @@ Type: [*Dimension*](Dimension.md)
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-### **headLocation**
-`read-only headLocation: Location;`
-
-Location of the center of the head component of the entity.
-
-Type: [*Location*](Location.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **id**
 `read-only id: string;`
 
@@ -74,16 +64,6 @@ Type: *string*
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-### **rotation**
-`read-only rotation: XYRotation;`
-
-Main rotation of the entity.
-
-Type: [*XYRotation*](XYRotation.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **scoreboard**
 `read-only scoreboard: ScoreboardIdentity;`
 
@@ -111,30 +91,13 @@ Unique identifier of the type of the entity - for example, 'minecraft:skeleton'.
 
 Type: *string*
 
-### **velocity**
-`read-only velocity: Vector;`
-
-Velocity of the entity.
-
-Type: [*Vector*](Vector.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-### **viewDirection**
-`read-only viewDirection: Vector3;`
-
-Direction that this entity is looking out from.
-
-Type: [*Vector3*](Vector3.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ## Methods
 - [addEffect](#addeffect)
 - [addTag](#addtag)
 - [applyDamage](#applydamage)
+- [applyImpulse](#applyimpulse)
+- [applyKnockback](#applyknockback)
+- [clearVelocity](#clearvelocity)
 - [extinguishFire](#extinguishfire)
 - [getBlockFromViewDirection](#getblockfromviewdirection)
 - [getComponent](#getcomponent)
@@ -143,17 +106,21 @@ Type: [*Vector3*](Vector3.md)
 - [getEffect](#geteffect)
 - [getEffects](#geteffects)
 - [getEntitiesFromViewDirection](#getentitiesfromviewdirection)
+- [getHeadLocation](#getheadlocation)
+- [getRotation](#getrotation)
 - [getTags](#gettags)
+- [getVelocity](#getvelocity)
+- [getViewDirection](#getviewdirection)
 - [hasComponent](#hascomponent)
 - [hasTag](#hastag)
 - [kill](#kill)
+- [playAnimation](#playanimation)
 - [removeDynamicProperty](#removedynamicproperty)
 - [removeTag](#removetag)
 - [runCommandAsync](#runcommandasync)
 - [setDynamicProperty](#setdynamicproperty)
 - [setOnFire](#setonfire)
 - [setRotation](#setrotation)
-- [setVelocity](#setvelocity)
 - [teleport](#teleport)
 - [teleportFacing](#teleportfacing)
 - [triggerEvent](#triggerevent)
@@ -187,26 +154,28 @@ Adds an effect, like poison, to the entity.
 ##### *addEffect.js*
 ```javascript
 const villagerId = "minecraft:villager_v2<minecraft:ageable_grow_up>";
-const villagerLoc = new BlockLocation(1, 2, 1);
+const villagerLoc: mc.Vector3 = { x: 1, y: 2, z: 1 };
 const villager = test.spawn(villagerId, villagerLoc);
 const duration = 20;
 villager.addEffect(MinecraftEffectTypes.poison, duration, 1);
 ```
 ##### *quickFoxLazyDog.ts*
 ```javascript
-  const fox = overworld.spawnEntity(
-    "minecraft:fox",
-    new mc.BlockLocation(targetLocation.x + 1, targetLocation.y + 2, targetLocation.z + 3)
-  );
-  fox.addEffect(mc.MinecraftEffectTypes.speed, 10, 20);
-  log("Created a fox.");
-  const wolf = overworld.spawnEntity(
-    "minecraft:wolf",
-    new mc.BlockLocation(targetLocation.x + 4, targetLocation.y + 2, targetLocation.z + 3)
-  );
-  wolf.addEffect(mc.MinecraftEffectTypes.slowness, 10, 20);
-  wolf.isSneaking = true;
-  log("Created a sneaking wolf.", 1);
+const fox = overworld.spawnEntity("minecraft:fox", {
+  x: targetLocation.x + 1,
+  y: targetLocation.y + 2,
+  z: targetLocation.z + 3,
+});
+fox.addEffect(mc.MinecraftEffectTypes.speed, 10, 20);
+log("Created a fox.");
+const wolf = overworld.spawnEntity("minecraft:wolf", {
+  x: targetLocation.x + 4,
+  y: targetLocation.y + 2,
+  z: targetLocation.z + 3,
+});
+wolf.addEffect(mc.MinecraftEffectTypes.slowness, 10, 20);
+wolf.isSneaking = true;
+log("Created a sneaking wolf.", 1);
 ```
 
 ### **addTag**
@@ -245,6 +214,54 @@ Applies a set of damage to an entity.
   Additional option about the source of damage, which may add additional effects or spur additional behaviors on this entity.
 
 #### **Returns** *boolean*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **applyImpulse**
+`
+applyImpulse(vector: Vector3): void
+`
+
+Applies impulse vector to the current velocity of the entity.
+
+#### **Parameters**
+- **vector**: [*Vector3*](Vector3.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **applyKnockback**
+`
+applyKnockback(directionX: number, directionZ: number, horizontalStrength: number, verticalStrength: number): void
+`
+
+Applies impulse vector to the current velocity of the entity.
+
+#### **Parameters**
+- **directionX**: *number*
+- **directionZ**: *number*
+- **horizontalStrength**: *number*
+- **verticalStrength**: *number*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **clearVelocity**
+`
+clearVelocity(): void
+`
+
+Sets the current velocity of the Entity to zero. Note that this method may not have an impact on Players.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -292,7 +309,7 @@ Returns the first intersecting block from the direction that this entity is look
 
 ### **getComponent**
 `
-getComponent(componentId: string): IEntityComponent
+getComponent(componentId: string): EntityComponent
 `
 
 Gets a component (that represents additional capabilities) for an entity.
@@ -302,19 +319,19 @@ Gets a component (that represents additional capabilities) for an entity.
   
   The identifier of the component (e.g., 'minecraft:rideable') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed. If the component is not present on the entity, undefined is returned.
 
-#### **Returns** [*IEntityComponent*](IEntityComponent.md)
+#### **Returns** [*EntityComponent*](EntityComponent.md)
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **getComponents**
 `
-getComponents(): IEntityComponent[]
+getComponents(): EntityComponent[]
 `
 
 Returns all components that are both present on this entity and supported by the API.
 
-#### **Returns** [*IEntityComponent*](IEntityComponent.md)[]
+#### **Returns** [*EntityComponent*](EntityComponent.md)[]
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -388,6 +405,36 @@ Returns a potential set of entities from the direction that this entity is looki
 > [!WARNING]
 > This function can throw errors.
 
+### **getHeadLocation**
+`
+getHeadLocation(): Vector3
+`
+
+Returns the current location of the head component of this entity.
+
+#### **Returns** [*Vector3*](Vector3.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getRotation**
+`
+getRotation(): XYRotation
+`
+
+Returns the current rotation component of this entity.
+
+#### **Returns** [*XYRotation*](XYRotation.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **getTags**
 `
 getTags(): string[]
@@ -396,6 +443,36 @@ getTags(): string[]
 Returns all tags associated with an entity.
 
 #### **Returns** *string*[]
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getVelocity**
+`
+getVelocity(): Vector3
+`
+
+Returns the current velocity vector of the entity.
+
+#### **Returns** [*Vector3*](Vector3.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getViewDirection**
+`
+getViewDirection(): Vector3
+`
+
+Returns the current view direction of the entity.
+
+#### **Returns** [*Vector3*](Vector3.md)
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -446,6 +523,21 @@ kill(): void
 `
 
 Kills this entity. The entity will drop loot as normal.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **playAnimation**
+`
+playAnimation(animationName: string, options?: PlayAnimationOptions): void
+`
+
+#### **Parameters**
+- **animationName**: *string*
+- **options**?: [*PlayAnimationOptions*](PlayAnimationOptions.md) = `null`
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -558,24 +650,6 @@ Sets the main rotation of the entity.
 #### **Parameters**
 - **degreesX**: *number*
 - **degreesY**: *number*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **setVelocity**
-`
-setVelocity(velocity: Vector3): void
-`
-
-Sets a velocity for the entity to move with.
-
-#### **Parameters**
-- **velocity**: [*Vector3*](Vector3.md)
-  
-  X/Y/Z components of the velocity.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

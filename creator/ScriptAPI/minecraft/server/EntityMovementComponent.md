@@ -13,83 +13,9 @@ description: Contents of the @minecraft/server.EntityMovementComponent class.
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityAttributeComponent*](EntityAttributeComponent.md)
 
 Defines the general movement speed of this entity.
-
-## Properties
-
-### **current**
-`read-only current: number;`
-
-Read-only. Returns the current value of default movement speed for the entity.
-
-Type: *number*
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:movement.
-
-Type: *string*
-
-### **value**
-`read-only value: number;`
-
-Value for default movement speed as defined through entity components.
-
-Type: *number*
-
-## Methods
-- [resetToDefaultValue](#resettodefaultvalue)
-- [resetToMaxValue](#resettomaxvalue)
-- [resetToMinValue](#resettominvalue)
-- [setCurrent](#setcurrent)
-
-### **resetToDefaultValue**
-`
-resetToDefaultValue(): void
-`
-
-Resets the current default movement speed value for the entity to the default value.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **resetToMaxValue**
-`
-resetToMaxValue(): void
-`
-
-Resets the default movement speed to the maximum value for the entity.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **resetToMinValue**
-`
-resetToMinValue(): void
-`
-
-Resets the default movement speed to the minimum value.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **setCurrent**
-`
-setCurrent(value: number): boolean
-`
-
-Sets the current value of default movement speed for the entity.
-
-#### **Parameters**
-- **value**: *number*
-
-#### **Returns** *boolean*
-
-> [!WARNING]
-> This function can throw errors.
 
 ## Constants
 

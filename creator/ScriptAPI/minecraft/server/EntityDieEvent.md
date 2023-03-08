@@ -3,28 +3,29 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: minecraft/server.IBlockProperty Class
-description: Contents of the @minecraft/server.IBlockProperty class.
+title: minecraft/server.EntityDieEvent Class
+description: Contents of the @minecraft/server.EntityDieEvent class.
 ---
-# IBlockProperty Class
+# EntityDieEvent Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-## Classes that extend IBlockProperty
-- [*BoolBlockProperty*](BoolBlockProperty.md)
-- [*DirectionBlockProperty*](DirectionBlockProperty.md)
-- [*IntBlockProperty*](IntBlockProperty.md)
-- [*StringBlockProperty*](StringBlockProperty.md)
-
-Contains an interface for defining the state of a property for a [*@minecraft/server.BlockPermutation*](../../minecraft/server/BlockPermutation.md).
+Contains information related to the death of an entity.
 
 ## Properties
 
-### **name**
-`read-only name: string;`
+### **damageSource**
+`read-only damageSource: EntityDamageSource;`
 
-The name of this property.
+Returns the source of the death-dealing damage.
 
-Type: *string*
+Type: [*EntityDamageSource*](EntityDamageSource.md)
+
+### **deadEntity**
+`read-only deadEntity: Entity;`
+
+Entity that has died.
+
+Type: [*Entity*](Entity.md)

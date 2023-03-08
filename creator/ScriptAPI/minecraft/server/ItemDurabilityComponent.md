@@ -12,6 +12,9 @@ description: Contents of the @minecraft/server.ItemDurabilityComponent class.
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+## Extends
+- [*ItemComponent*](ItemComponent.md)
+
 When present on an item, this item can take damage in the process of being used. Note that this component only applies to data-driven items.
 
 ## Properties
@@ -23,13 +26,6 @@ Returns the current damage level of this particular item.
 
 Type: *number*
 
-### **damageRange**
-`read-only damageRange: NumberRange;`
-
-A range of numbers that describes the chance of the item losing durability.
-
-Type: [*NumberRange*](NumberRange.md)
-
 ### **maxDurability**
 `read-only maxDurability: number;`
 
@@ -39,6 +35,7 @@ Type: *number*
 
 ## Methods
 - [getDamageChance](#getdamagechance)
+- [getDamageRange](#getdamagerange)
 
 ### **getDamageChance**
 `
@@ -53,6 +50,18 @@ Returns the maximum chance that this item would be damaged using the damageRange
   Unbreaking factor to consider in factoring the damage chance. Incoming unbreaking parameter must be greater than 0.
 
 #### **Returns** *number*
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getDamageRange**
+`
+getDamageRange(): NumberRange
+`
+
+A range of numbers that describes the chance of the item losing durability.
+
+#### **Returns** [*NumberRange*](NumberRange.md)
 
 > [!WARNING]
 > This function can throw errors.

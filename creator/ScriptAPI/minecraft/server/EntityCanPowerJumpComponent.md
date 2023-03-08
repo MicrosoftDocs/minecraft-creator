@@ -13,18 +13,9 @@ description: Contents of the @minecraft/server.EntityCanPowerJumpComponent class
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 When added, this component signifies that the entity can power jump like the horse does within Minecraft.
-
-## Properties
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:can_power_jump.
-
-Type: *string*
 
 ## Constants
 

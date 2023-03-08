@@ -30,16 +30,32 @@ Dimension where the explosion has occurred.
 
 Type: [*Dimension*](Dimension.md)
 
-### **impactedBlocks**
-`impactedBlocks: BlockLocation[];`
-
-A collection of blocks impacted by this explosion event. Note that this property can be updated to change the set of blocks impacted.
-
-Type: [*BlockLocation*](BlockLocation.md)[]
-
 ### **source**
 `read-only source: Entity;`
 
 Optional source of the explosion.
 
 Type: [*Entity*](Entity.md)
+
+## Methods
+- [getImpactedBlocks](#getimpactedblocks)
+- [setImpactedBlocks](#setimpactedblocks)
+
+### **getImpactedBlocks**
+`
+getImpactedBlocks(): Vector3[]
+`
+
+Retrieves a collection of blocks impacted by this explosion event.
+
+#### **Returns** [*Vector3*](Vector3.md)[]
+
+### **setImpactedBlocks**
+`
+setImpactedBlocks(blocks: Vector3[]): void
+`
+
+Updates the collection of blocks impacted by this explosion event.
+
+#### **Parameters**
+- **blocks**: [*Vector3*](Vector3.md)[]

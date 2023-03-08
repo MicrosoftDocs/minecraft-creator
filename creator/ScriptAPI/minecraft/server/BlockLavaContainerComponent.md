@@ -13,32 +13,9 @@ description: Contents of the @minecraft/server.BlockLavaContainerComponent class
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*BlockComponent*](BlockComponent.md)
+- [*BlockLiquidContainerComponent*](BlockLiquidContainerComponent.md)
 
 Represents a fluid container block that currently contains lava.
-
-## Properties
-
-### **fillLevel**
-`fillLevel: number;`
-
-Relative level of lava within this block. Valid values are between FluidContainer.minFillLevel (0) and FluidContainer.maxFillLevel (6).
-
-Type: *number*
-
-### **location**
-`read-only location: BlockLocation;`
-
-Source location of the block.
-
-Type: [*BlockLocation*](BlockLocation.md)
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:lavaContainer.
-
-Type: *string*
 
 ## Constants
 

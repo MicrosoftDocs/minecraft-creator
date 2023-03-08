@@ -23,16 +23,21 @@ Dimension where the explosion has occurred.
 
 Type: [*Dimension*](Dimension.md)
 
-### **impactedBlocks**
-`read-only impactedBlocks: BlockLocation[];`
-
-A collection of blocks impacted by this explosion event.
-
-Type: [*BlockLocation*](BlockLocation.md)[]
-
 ### **source**
 `read-only source: Entity;`
 
 Optional source of the explosion.
 
 Type: [*Entity*](Entity.md)
+
+## Methods
+- [getImpactedBlocks](#getimpactedblocks)
+
+### **getImpactedBlocks**
+`
+getImpactedBlocks(): Vector3[]
+`
+
+A collection of blocks impacted by this explosion event.
+
+#### **Returns** [*Vector3*](Vector3.md)[]

@@ -37,15 +37,18 @@ Type: [*Scoreboard*](Scoreboard.md)
 - [broadcastClientMessage](#broadcastclientmessage)
 - [getAbsoluteTime](#getabsolutetime)
 - [getAllPlayers](#getallplayers)
+- [getDefaultSpawnPosition](#getdefaultspawnposition)
 - [getDimension](#getdimension)
 - [getDynamicProperty](#getdynamicproperty)
+- [getEntity](#getentity)
 - [getPlayers](#getplayers)
 - [getTime](#gettime)
 - [playMusic](#playmusic)
 - [playSound](#playsound)
 - [queueMusic](#queuemusic)
 - [removeDynamicProperty](#removedynamicproperty)
-- [say](#say)
+- [sendMessage](#sendmessage)
+- [setDefaultSpawn](#setdefaultspawn)
 - [setDynamicProperty](#setdynamicproperty)
 - [setTime](#settime)
 - [stopMusic](#stopmusic)
@@ -88,6 +91,18 @@ Returns an array of all active players within the world.
 > [!WARNING]
 > This function can throw errors.
 
+### **getDefaultSpawnPosition**
+`
+getDefaultSpawnPosition(): Vector3
+`
+
+Returns the default spawn position within the world where players are spawned if they don't have a specific spawn position set.
+
+#### **Returns** [*Vector3*](Vector3.md) - Returns the default spawn position.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **getDimension**
 `
 getDimension(dimensionId: string): Dimension
@@ -121,17 +136,39 @@ Returns a property value.
 > [!WARNING]
 > This function can throw errors.
 
-### **getPlayers**
+### **getEntity**
 `
-getPlayers(options?: EntityQueryOptions): PlayerIterator
+getEntity(id: string): Entity | undefined
 `
 
-Returns all players currently in the world.
+Returns an entity based on the provided id.
+
+#### **Parameters**
+- **id**: *string*
+  
+  The id of the entity.
+
+#### **Returns** [*Entity*](Entity.md) | *undefined* - The requested entity object.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> Throws if the given entity id is invalid.
+
+### **getPlayers**
+`
+getPlayers(options?: EntityQueryOptions): Player[]
+`
+
+Returns a set of players based on a set of conditions defined via the EntityQueryOptions set of filter criteria.
 
 #### **Parameters**
 - **options**?: [*EntityQueryOptions*](EntityQueryOptions.md) = `null`
+  
+  Additional options that can be used to filter the set of players returned.
 
-#### **Returns** [*PlayerIterator*](PlayerIterator.md) - All players currently in the world.
+#### **Returns** [*Player*](Player.md)[] - A player array.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -211,15 +248,60 @@ Removes a specified property.
 > [!WARNING]
 > This function can throw errors.
 
-### **say**
+### **sendMessage**
 `
-say(message: (RawMessage | string)[] | RawMessage | string): void
+sendMessage(message: (RawMessage | string)[] | RawMessage | string): void
 `
 
-Broadcasts a message that is displayed on all connected clients.
+Sends a message to all players.
 
 #### **Parameters**
 - **message**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
+  
+  The message to be displayed.
+
+> [!WARNING]
+> This method can throw if the provided [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) is in an invalid format. For example, if an empty `name` string is provided to `score`.
+
+#### **Examples**
+##### *nestedTranslation.ts*
+```javascript
+// Displays "Apple or Coal"
+let rawMessage = {
+  translate: "accessibility.list.or.two",
+  with: { rawtext: [{ translate: "item.apple.name" }, { translate: "item.coal.name" }] },
+};
+world.sendMessage(rawMessage);
+```
+##### *scoreWildcard.ts*
+```javascript
+// Displays the player's score for objective "obj". Each player will see their own score.
+const rawMessage = { score: { name: "*", objective: "obj" } };
+world.sendMessage(rawMessage);
+```
+##### *simpleString.ts*
+```javascript
+// Displays "Hello, world!"
+world.sendMessage("Hello, world!");
+```
+##### *translation.ts*
+```javascript
+// Displays "First or Second"
+const rawMessage = { translate: "accessibility.list.or.two", with: ["First", "Second"] };
+world.sendMessage(rawMessage);
+```
+
+### **setDefaultSpawn**
+`
+setDefaultSpawn(spawnPosition: Vector3): void
+`
+
+Sets the default spawn location for players within the world. Note that players can override this with their own spawn position. Note also that the default spawn position must be in the overworld dimension.
+
+#### **Parameters**
+- **spawnPosition**: [*Vector3*](Vector3.md)
+  
+  Location within the overworld where a player will spawn.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

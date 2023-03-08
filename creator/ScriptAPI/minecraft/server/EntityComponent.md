@@ -3,18 +3,23 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: minecraft/server.IEntityComponent Class
-description: Contents of the @minecraft/server.IEntityComponent class.
+title: minecraft/server.EntityComponent Class
+description: Contents of the @minecraft/server.EntityComponent class.
 ---
-# IEntityComponent Class
+# EntityComponent Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-## Classes that extend IEntityComponent
+## Extends
+- [*Component*](Component.md)
+
+## Classes that extend EntityComponent
 - [*EntityAddRiderComponent*](EntityAddRiderComponent.md)
 - [*EntityAgeableComponent*](EntityAgeableComponent.md)
+- [*EntityAttributeComponent*](EntityAttributeComponent.md)
+- [*EntityBaseMovementComponent*](EntityBaseMovementComponent.md)
 - [*EntityBreathableComponent*](EntityBreathableComponent.md)
 - [*EntityCanClimbComponent*](EntityCanClimbComponent.md)
 - [*EntityCanFlyComponent*](EntityCanFlyComponent.md)
@@ -26,7 +31,6 @@ description: Contents of the @minecraft/server.IEntityComponent class.
 - [*EntityFrictionModifierComponent*](EntityFrictionModifierComponent.md)
 - [*EntityGroundOffsetComponent*](EntityGroundOffsetComponent.md)
 - [*EntityHealableComponent*](EntityHealableComponent.md)
-- [*EntityHealthComponent*](EntityHealthComponent.md)
 - [*EntityInventoryComponent*](EntityInventoryComponent.md)
 - [*EntityIsBabyComponent*](EntityIsBabyComponent.md)
 - [*EntityIsChargedComponent*](EntityIsChargedComponent.md)
@@ -42,44 +46,21 @@ description: Contents of the @minecraft/server.IEntityComponent class.
 - [*EntityIsStunnedComponent*](EntityIsStunnedComponent.md)
 - [*EntityIsTamedComponent*](EntityIsTamedComponent.md)
 - [*EntityItemComponent*](EntityItemComponent.md)
-- [*EntityLavaMovementComponent*](EntityLavaMovementComponent.md)
 - [*EntityLeashableComponent*](EntityLeashableComponent.md)
 - [*EntityMarkVariantComponent*](EntityMarkVariantComponent.md)
 - [*EntityMountTamingComponent*](EntityMountTamingComponent.md)
 - [*EntityMovementAmphibiousComponent*](EntityMovementAmphibiousComponent.md)
 - [*EntityMovementBasicComponent*](EntityMovementBasicComponent.md)
-- [*EntityMovementComponent*](EntityMovementComponent.md)
-- [*EntityMovementFlyComponent*](EntityMovementFlyComponent.md)
-- [*EntityMovementGenericComponent*](EntityMovementGenericComponent.md)
-- [*EntityMovementGlideComponent*](EntityMovementGlideComponent.md)
-- [*EntityMovementHoverComponent*](EntityMovementHoverComponent.md)
-- [*EntityMovementJumpComponent*](EntityMovementJumpComponent.md)
-- [*EntityMovementSkipComponent*](EntityMovementSkipComponent.md)
-- [*EntityMovementSwayComponent*](EntityMovementSwayComponent.md)
-- [*EntityNavigationClimbComponent*](EntityNavigationClimbComponent.md)
-- [*EntityNavigationFloatComponent*](EntityNavigationFloatComponent.md)
-- [*EntityNavigationFlyComponent*](EntityNavigationFlyComponent.md)
-- [*EntityNavigationGenericComponent*](EntityNavigationGenericComponent.md)
-- [*EntityNavigationHoverComponent*](EntityNavigationHoverComponent.md)
-- [*EntityNavigationWalkComponent*](EntityNavigationWalkComponent.md)
+- [*EntityNavigationComponent*](EntityNavigationComponent.md)
 - [*EntityOnFireComponent*](EntityOnFireComponent.md)
 - [*EntityPushThroughComponent*](EntityPushThroughComponent.md)
 - [*EntityRideableComponent*](EntityRideableComponent.md)
+- [*EntityRidingComponent*](EntityRidingComponent.md)
 - [*EntityScaleComponent*](EntityScaleComponent.md)
 - [*EntitySkinIdComponent*](EntitySkinIdComponent.md)
 - [*EntityStrengthComponent*](EntityStrengthComponent.md)
 - [*EntityTameableComponent*](EntityTameableComponent.md)
-- [*EntityUnderwaterMovementComponent*](EntityUnderwaterMovementComponent.md)
 - [*EntityVariantComponent*](EntityVariantComponent.md)
 - [*EntityWantsJockeyComponent*](EntityWantsJockeyComponent.md)
 
-Base interface that defines components associated with an entity.
-
-## Properties
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of the type of entity component.
-
-Type: *string*
+Base class for downstream entity components.

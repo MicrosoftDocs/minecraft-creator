@@ -13,25 +13,9 @@ description: Contents of the @minecraft/server.EntityMovementHoverComponent clas
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityBaseMovementComponent*](EntityBaseMovementComponent.md)
 
 When added, this move control causes the mob to hover.
-
-## Properties
-
-### **maxTurn**
-`read-only maxTurn: number;`
-
-The maximum number in degrees the mob can turn per tick.
-
-Type: *number*
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:movement.hover.
-
-Type: *string*
 
 ## Constants
 
