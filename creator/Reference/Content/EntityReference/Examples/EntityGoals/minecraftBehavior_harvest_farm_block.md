@@ -1,19 +1,19 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.harvest_farm_block
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.harvest_farm_block
 
-`minecraft:behavior.harvest_farm_block` allows the entity to search within an area for farmland with air above it. If found, the entity will replace the air block by planting a seed item from its inventory on the farmland block. This goal requires `minecraft:inventory` and `minecraft:navigation` to execute. This goal will not execute if the entity does not have an item in its inventory.
+`minecraft:behavior.harvest_farm_block` compels the entity to search within an area for farmland with air above it. If found, the entity will replace the air block by planting a seed item from its inventory on the farmland block. This goal requires `minecraft:inventory` and `minecraft:navigation` to execute. This goal will not execute if the entity does not have an item in its inventory.
 
 ## Parameters
 
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
-| goal_radius| 1.50| Decimal| Distance in blocks within the entity considers it has reached it's target position.  |
+| goal_radius| 1.50| Decimal| Distance in blocks within the entity considers it has reached its target position.  |
 | max_seconds_before_search| 1.0| Decimal| The maximum amount of time in seconds that the goal can take before searching for the first harvest block. The time is chosen between 0 and this number. |
 | search_cooldown_max_seconds| 8.0| Decimal| The maximum amount of time in seconds that the goal can take before searching again, after failing to find a a harvest block already. The time is chosen between 0 and this number. |
 | search_count| 0| Integer| The number of randomly selected blocks each tick that the entity will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick. |

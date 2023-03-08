@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-jimseaman
+ms.author: v-jillheaden
 title: Minecraft File Extensions
 ms.prod: gaming
 description: An overview of different file extensions
@@ -24,6 +24,12 @@ A custom resource pack configuration file.
 
 ## .mcpack
 A zipped resource or behavior pack that modifies Minecraft: Bedrock Edition, typically used to transfer resources between users.
+
+## .mcproject
+Minecraft Bedrock Editor's filetype. Files of this type only open in Editor and are capable of containing Editor extensions.
+
+- .mcworld files can be imported into Editor, at which point they are converted to an .mcproject.
+- When an .mcproject is exported as an .mcworld, Editor extensions are removed.
 
 ## .mcr
 Contains a 32x32 region of a world; named as r.x.z.mcr, where "x" and "z" specify the region's coordinates; used for saving pieces of a world.

@@ -13,7 +13,7 @@ description: Contents of the @minecraft/server.EntityRideableComponent class.
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 When added, this component adds the capability that an entity can be ridden by another entity.
 
@@ -32,13 +32,6 @@ Type: *number*
 Determines whether interactions are not supported if the entity is crouching.
 
 Type: *boolean*
-
-### **familyTypes**
-`read-only familyTypes: string[];`
-
-A string-list of entity types that this entity can support as riders.
-
-Type: *string*[]
 
 ### **interactText**
 `read-only interactText: string;`
@@ -68,24 +61,13 @@ Number of seats for riders defined for this entity.
 
 Type: *number*
 
-### **seats**
-`read-only seats: Seat[];`
-
-The list of positions and number of riders for each position for entities riding this entity.
-
-Type: [*Seat*](Seat.md)[]
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:rideable.
-
-Type: *string*
-
 ## Methods
 - [addRider](#addrider)
 - [ejectRider](#ejectrider)
 - [ejectRiders](#ejectriders)
+- [getFamilyTypes](#getfamilytypes)
+- [getRiders](#getriders)
+- [getSeats](#getseats)
 
 ### **addRider**
 `
@@ -125,6 +107,42 @@ ejectRiders(): void
 `
 
 Ejects all riders of this entity.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getFamilyTypes**
+`
+getFamilyTypes(): string[]
+`
+
+A string-list of entity types that this entity can support as riders.
+
+#### **Returns** *string*[]
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getRiders**
+`
+getRiders(): Entity[]
+`
+
+Gets a list of the all the entities currently riding this entity.
+
+#### **Returns** [*Entity*](Entity.md)[]
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getSeats**
+`
+getSeats(): Seat[]
+`
+
+Gets a list of positions and number of riders for each position for entities riding this entity.
+
+#### **Returns** [*Seat*](Seat.md)[]
 
 > [!WARNING]
 > This function can throw errors.

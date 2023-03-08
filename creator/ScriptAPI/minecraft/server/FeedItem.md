@@ -16,13 +16,6 @@ As part of the Healable component, represents a specific item that can be fed to
 
 ## Properties
 
-### **effects**
-`read-only effects: FeedItemEffect[];`
-
-As part of the Healable component, an optional collection of side effects that can occur from being fed an item.
-
-Type: [*FeedItemEffect*](FeedItemEffect.md)[]
-
 ### **healAmount**
 `read-only healAmount: number;`
 
@@ -36,3 +29,15 @@ Type: *number*
 Identifier of type of item that can be fed. If a namespace is not specified, 'minecraft:' is assumed. Example values include 'wheat' or 'golden_apple'.
 
 Type: *string*
+
+## Methods
+- [getEffects](#geteffects)
+
+### **getEffects**
+`
+getEffects(): FeedItemEffect[]
+`
+
+As part of the Healable component, an optional collection of side effects that can occur from being fed an item.
+
+#### **Returns** [*FeedItemEffect*](FeedItemEffect.md)[]

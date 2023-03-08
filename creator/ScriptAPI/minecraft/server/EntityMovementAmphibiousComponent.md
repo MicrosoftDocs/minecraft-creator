@@ -13,7 +13,7 @@ description: Contents of the @minecraft/server.EntityMovementAmphibiousComponent
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 When added, this movement control allows the mob to swim in water and walk on land.
 
@@ -25,13 +25,6 @@ When added, this movement control allows the mob to swim in water and walk on la
 The maximum number in degrees the mob can turn per tick.
 
 Type: *number*
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:movement.amphibious.
-
-Type: *string*
 
 ## Constants
 

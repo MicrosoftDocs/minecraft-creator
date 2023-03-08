@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.random_fly
 
-`minecraft:behavior.random_fly` allows an entity to fly to a random spot.
+`minecraft:behavior.random_fly` compels an entity to fly to a random spot.
 
 ## Parameters
 

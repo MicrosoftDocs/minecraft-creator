@@ -178,6 +178,14 @@
             href: Documents/ContentErrorLog.md
           - name: Designing Gameplay for Various Devices
             href: Documents/DesigningGameplayForVariousDevices.md
+          - name: Bedrock Editor
+            items:
+              - name: Editor Installation Guide
+                href: Documents/EditorInstallation.md
+              - name: Editor Overview
+                href: Documents/EditorOverview.md
+              - name: Editor Tutorial
+                href: Documents/EditorTutorial.md
           - name: Blockbench
             items:
             - name: Minecraft Block Wizard

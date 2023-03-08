@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.rise_to_liquid_level
 
-`minecraft:behavior.rise_to_liquid_level` allows an entity to rise to the top of a liquid block if they are located in one or have spawned under a liquid block.
+`minecraft:behavior.rise_to_liquid_level` compels an entity to rise to the top of a liquid block if they are located in one or have spawned under a liquid block.
 
 ## Parameter
 

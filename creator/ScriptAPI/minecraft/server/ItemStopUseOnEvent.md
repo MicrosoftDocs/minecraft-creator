@@ -16,13 +16,6 @@ Contains information related to an item that has stopped being used on a block.
 
 ## Properties
 
-### **blockLocation**
-`read-only blockLocation: BlockLocation;`
-
-Location of the block being impacted.
-
-Type: [*BlockLocation*](BlockLocation.md)
-
 ### **item**
 `item: ItemStack;`
 
@@ -36,3 +29,18 @@ Type: [*ItemStack*](ItemStack.md)
 Returns the source entity that triggered this item event.
 
 Type: [*Entity*](Entity.md)
+
+## Methods
+- [getBlockLocation](#getblocklocation)
+
+### **getBlockLocation**
+`
+getBlockLocation(): Vector3
+`
+
+Location of the block being impacted.
+
+#### **Returns** [*Vector3*](Vector3.md)
+
+> [!WARNING]
+> This function can throw errors.

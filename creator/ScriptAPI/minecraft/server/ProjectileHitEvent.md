@@ -16,26 +16,12 @@ Contains information related to a projectile hitting an entity or block.
 
 ## Properties
 
-### **blockHit**
-`read-only blockHit?: BlockHitInformation;`
-
-Contains additional information about the block that was hit by the projectile, or undefined if the projectile did not hit a block.
-
-Type: [*BlockHitInformation*](BlockHitInformation.md)
-
 ### **dimension**
 `read-only dimension: Dimension;`
 
 Dimension where this projectile hit took place.
 
 Type: [*Dimension*](Dimension.md)
-
-### **entityHit**
-`read-only entityHit?: EntityHitInformation;`
-
-Contains additional information about a block that was hit.
-
-Type: [*EntityHitInformation*](EntityHitInformation.md)
 
 ### **hitVector**
 `read-only hitVector: Vector;`
@@ -45,11 +31,11 @@ Direction vector of the projectile as it hit a block/entity.
 Type: [*Vector*](Vector.md)
 
 ### **location**
-`read-only location: Location;`
+`read-only location: Vector3;`
 
 Location where the projectile hit occurred.
 
-Type: [*Location*](Location.md)
+Type: [*Vector3*](Vector3.md)
 
 ### **projectile**
 `read-only projectile: Entity;`
@@ -64,3 +50,25 @@ Type: [*Entity*](Entity.md)
 Optional source entity that fired the projectile.
 
 Type: [*Entity*](Entity.md)
+
+## Methods
+- [getBlockHit](#getblockhit)
+- [getEntityHit](#getentityhit)
+
+### **getBlockHit**
+`
+getBlockHit(): BlockHitInformation | undefined
+`
+
+Contains additional information about the block that was hit by the projectile, or undefined if the projectile did not hit a block.
+
+#### **Returns** [*BlockHitInformation*](BlockHitInformation.md) | *undefined*
+
+### **getEntityHit**
+`
+getEntityHit(): EntityHitInformation | undefined
+`
+
+Contains additional information about a block that was hit.
+
+#### **Returns** [*EntityHitInformation*](EntityHitInformation.md) | *undefined*

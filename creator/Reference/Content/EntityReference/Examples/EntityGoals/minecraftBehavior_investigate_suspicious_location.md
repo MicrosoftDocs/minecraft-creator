@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.investigate_suspicious_location
 
-`minecraft:behavior.investigate_suspicious_location` allows the entity to move towards a "suspicious" position based on data gathered in `minecraft:suspect_tracking`.
+`minecraft:behavior.investigate_suspicious_location` compels the entity to move towards a "suspicious" position based on data gathered in `minecraft:suspect_tracking`.
 
 ## Parameters
 

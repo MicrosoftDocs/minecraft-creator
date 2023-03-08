@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.play
 
-`minecraft:behavior.play` allows the mob to play with other mobs by chasing each other and moving around randomly.
+`minecraft:behavior.play` compels the mob to play with other mobs by chasing each other and moving around randomly.
 
 > [!NOTE]
 > This behavior can only be used by the `villager` entity type.

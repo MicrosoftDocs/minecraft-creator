@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.stomp_turtle_egg
 
-`minecraft:behavior.stomp_turtle_egg` allows an entity to target and stomp on turtle eggs when detected.
+`minecraft:behavior.stomp_turtle_egg` compels an entity to target and stomp on turtle eggs when detected.
 
 ## Parameters
 

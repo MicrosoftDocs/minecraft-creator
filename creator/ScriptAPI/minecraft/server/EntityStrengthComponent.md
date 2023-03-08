@@ -13,7 +13,7 @@ description: Contents of the @minecraft/server.EntityStrengthComponent class.
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 Defines the entity's strength to carry items.
 
@@ -25,13 +25,6 @@ Defines the entity's strength to carry items.
 Maximum strength of this entity, as defined in the entity type definition.
 
 Type: *number*
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:strength.
-
-Type: *string*
 
 ### **value**
 `read-only value: number;`

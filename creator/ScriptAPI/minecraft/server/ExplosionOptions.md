@@ -47,26 +47,26 @@ Type: [*Entity*](Entity.md)
 #### **Examples**
 ##### *createFireAndWaterExplosions.ts*
 ```javascript
-  const explosionLoc = new mc.Location(targetLocation.x + 0.5, targetLocation.y + 0.5, targetLocation.z + 0.5);
-  const fireExplosionOptions = new mc.ExplosionOptions();
-  // Explode with fire
-  fireExplosionOptions.causesFire = true;
-  overworld.createExplosion(explosionLoc, 15, fireExplosionOptions);
-  const waterExplosionOptions = new mc.ExplosionOptions();
-  // Explode in water
-  waterExplosionOptions.allowUnderwater = true;
-  const belowWaterLoc = new mc.Location(targetLocation.x + 3, targetLocation.y + 1, targetLocation.z + 3);
-  overworld.createExplosion(belowWaterLoc, 10, waterExplosionOptions);
+const explosionLoc: mc.Vector3 = { x: targetLocation.x + 0.5, y: targetLocation.y + 0.5, z: targetLocation.z + 0.5 };
+const fireExplosionOptions = new mc.ExplosionOptions();
+// Explode with fire
+fireExplosionOptions.causesFire = true;
+overworld.createExplosion(explosionLoc, 15, fireExplosionOptions);
+const waterExplosionOptions = new mc.ExplosionOptions();
+// Explode in water
+waterExplosionOptions.allowUnderwater = true;
+const belowWaterLoc: mc.Vector3 = { x: targetLocation.x + 3, y: targetLocation.y + 1, z: targetLocation.z + 3 };
+overworld.createExplosion(belowWaterLoc, 10, waterExplosionOptions);
 ```
 ##### *createNoBlockExplosion.ts*
 ```javascript
-  const explosionOptions = new mc.ExplosionOptions();
-  // Start by exploding without breaking blocks
-  explosionOptions.breaksBlocks = false;
-  const explodeNoBlocksLoc = new mc.Location(
-    Math.floor(targetLocation.x + 1),
-    Math.floor(targetLocation.y + 2),
-    Math.floor(targetLocation.z + 1)
-  );
-  overworld.createExplosion(explodeNoBlocksLoc, 15, explosionOptions);
+const explosionOptions = new mc.ExplosionOptions();
+// Start by exploding without breaking blocks
+explosionOptions.breaksBlocks = false;
+const explodeNoBlocksLoc: mc.Vector3 = {
+  x: Math.floor(targetLocation.x + 1),
+  y: Math.floor(targetLocation.y + 2),
+  z: Math.floor(targetLocation.z + 1),
+};
+overworld.createExplosion(explodeNoBlocksLoc, 15, explosionOptions);
 ```

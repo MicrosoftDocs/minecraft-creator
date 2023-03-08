@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.stalk_and_pounce_on_target
 
-`minecraft:behavior.stalk_and_pounce_on_target` allows an entity to stalk a specific target. Once within range of the target, the entity will then leap at the target and deal damage based upon its attack attribute.
+`minecraft:behavior.stalk_and_pounce_on_target` compels an entity to stalk a specific target. Once within range of the target, the entity will then leap at the target and deal damage based upon its attack attribute.
 
 > [!IMPORTANT]
 > `minecraft:behavior.stalk_and_pounce_on_target` requires a target in order to work properly. Target can be determined by using one of the following behaviors:

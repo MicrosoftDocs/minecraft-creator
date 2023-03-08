@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.offer_flower
 
-`minecraft:behavior.offer_flower` allows an entity to offer a flower to another entity.
+`minecraft:behavior.offer_flower` compels an entity to offer a flower to another entity.
 
 >[!IMPORTANT]
 > `minecraft:behavior.offer_flower` requires a flower item to be held by the entity.

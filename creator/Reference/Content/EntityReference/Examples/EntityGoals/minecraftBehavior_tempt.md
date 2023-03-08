@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.tempt
 
-`minecraft:behavior.tempt` allows an entity to be tempted by a set item.
+`minecraft:behavior.tempt` compels an entity to be tempted by a set item.
 
 ## Parameters
 

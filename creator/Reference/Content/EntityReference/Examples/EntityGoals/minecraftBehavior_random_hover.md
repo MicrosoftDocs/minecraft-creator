@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.random_hover
 
-`minecraft:behavior.random_hover` allows the mob to hover around randomly, close to the surface
+`minecraft:behavior.random_hover` compels the mob to hover around randomly, close to the surface.
 
 ## Parameters
 

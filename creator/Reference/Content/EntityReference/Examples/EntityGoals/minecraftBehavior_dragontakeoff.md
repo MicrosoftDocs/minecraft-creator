@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.dragontakeoff
 
-`minecraft:behavior.dragontakeoff` allows an entity to leave perch mode and go back to flying around.
+`minecraft:behavior.dragontakeoff` compels an entity to leave perch mode and go back to flying around.
 
 > [!NOTE]
 > This behavior can only be used by the `ender_dragon` entity type.
@@ -16,7 +16,7 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 
 ## Example
 

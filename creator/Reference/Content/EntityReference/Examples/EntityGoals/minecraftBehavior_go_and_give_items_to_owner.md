@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.go_and_give_items_to_owner
 
-`minecraft:behavior.go_and_give_items_to_owner` allows the entity to attempt to toss the items from its inventory to its owner.
+`minecraft:behavior.go_and_give_items_to_owner` compels the entity to attempt to toss the items from its inventory to its owner.
 
 ## Parameters
 
@@ -20,3 +20,41 @@ ms.prod: gaming
 | throw_force| 0.200000| Decimal| Sets the throw force. |
 | throw_sound|item_thrown| String| Sound to play when this mob throws an item. |
 | vertical_throw_mul| 1.500000| Decimal| Sets the vertical throw multiplier that is applied on top of the throw force in the vertical direction. |
+
+## Example
+
+```json
+"minecraft:behavior.go_and_give_items_to_owner": {
+        "priority": 4,
+        "run_speed": 8,
+        "throw_sound": "item_thrown",
+        "on_item_throw": [
+          {
+            "event": "pickup_item_delay",
+            "target": "self"
+          }
+        ]
+      }
+```
+
+## Vanilla entities example
+
+### allay
+
+```json
+"minecraft:behavior.go_and_give_items_to_owner": {
+        "priority": 4,
+        "run_speed": 8,
+        "throw_sound": "item_thrown",
+        "on_item_throw": [
+          {
+            "event": "pickup_item_delay",
+            "target": "self"
+          }
+        ]
+      }
+```
+
+## Vanilla entities using `minecraft:behavior.go_and_give_items_to_owner`
+
+- [allay](../../../../Source/VanillaBehaviorPack_Snippets/entities/allay.md)

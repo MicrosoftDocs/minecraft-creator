@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.dragonchargeplayer
 
-`minecraft:behavior.dragonchargeplayer` allows this entity to attack a player by charging at them. The player is chosen by the `minecraft:behavior.dragonscanning`. Can only be used by the Ender Dragon.
+`minecraft:behavior.dragonchargeplayer` compels this entity to attack a player by charging at them. The player is chosen by the `minecraft:behavior.dragonscanning`. Can be used only by the Ender Dragon.
 
 ## Parameters
 

@@ -22,9 +22,9 @@ highlightedContent:
       itemType: reference
       url: ScriptAPI/index.yml
     #card
-    - title: "Minecraft Block Wizard"
+    - title: "Minecraft Bedrock Editor"
       itemType: whats-new
-      url: Documents/MinecraftBlockWizard.md
+      url: Documents/EditorOverview.md
     #card
     - title: "1.19.60 Update Summary"
       itemType: whats-new

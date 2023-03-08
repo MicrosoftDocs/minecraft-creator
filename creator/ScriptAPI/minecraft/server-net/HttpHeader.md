@@ -21,7 +21,7 @@ Key of the HTTP header.
 Type: *string*
 
 ### **value**
-`value: @minecraft/server-admin.SecretString | string;`
+`value: minecraftserveradmin.SecretString | string;`
 
 Value of the HTTP header.
 
@@ -32,7 +32,7 @@ Type: [*@minecraft/server-admin.SecretString*](../../minecraft/server-admin/Secr
 
 ### **constructor**
 `
-new HttpHeader(key: string, value: @minecraft/server-admin.SecretString | string)
+new HttpHeader(key: string, value: minecraftserveradmin.SecretString | string)
 `
 
 #### **Parameters**

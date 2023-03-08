@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.dragonflaming
 
-`minecraft:behavior.dragonflaming` allows this entity to use a flame-breath attack. Can only be used by the Ender Dragon.
+`minecraft:behavior.dragonflaming` compels this entity to use a flame-breath attack. Can only be used by the Ender Dragon.
 
 ## Parameters
 
@@ -16,7 +16,7 @@ ms.prod: gaming
 | cooldown_time| 10| Decimal| Time (in seconds), after roar, to breath flame. |
 | flame_time| 0.5| Decimal| Time (in seconds), after roar, to breath flame. |
 | ground_flame_count| 4| Integer| Number of ground flame-breath attacks to use before flight-takeoff. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | roar_time| 2| Decimal| Time (in seconds) to roar, before breathing flame. |
 
 ## Example

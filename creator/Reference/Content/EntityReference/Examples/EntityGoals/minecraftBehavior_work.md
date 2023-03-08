@@ -1,13 +1,13 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.work
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.work
 
-`minecraft:behavior.work` allows the NPC to use their jobsite POI.
+`minecraft:behavior.work` compels the NPC to use their jobsite point of interest (POI).
 
 ## Parameters
 

@@ -13,18 +13,11 @@ description: Contents of the @minecraft/server.EntityGroundOffsetComponent class
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 Sets the offset from the ground that the entity is actually at.
 
 ## Properties
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:ground_offset.
-
-Type: *string*
 
 ### **value**
 `value: number;`

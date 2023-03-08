@@ -13,18 +13,9 @@ description: Contents of the @minecraft/server.EntityMountTamingComponent class.
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 Contains options for taming a rideable entity based on the entity that mounts it.
-
-## Properties
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:mount_taming.
-
-Type: *string*
 
 ## Methods
 - [setTamed](#settamed)

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.hurt_by_target
 
-`minecraft:behavior.hurt_by_target` allows an entity to react when hit by set target.
+`minecraft:behavior.hurt_by_target` compels an entity to react when hit by set target.
 
 ## Parameters
 

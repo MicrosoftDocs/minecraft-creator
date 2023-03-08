@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.summon_entity
 
-`minecraft:behavior.summon_entity` allows an entity to attack other entities by summoning new entities.
+`minecraft:behavior.summon_entity` compels an entity to attack other entities by summoning new entities.
 
 ## Parameters
 

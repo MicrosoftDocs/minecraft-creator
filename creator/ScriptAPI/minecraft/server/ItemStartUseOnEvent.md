@@ -23,20 +23,6 @@ The face of the block that an item is being used on.
 
 Type: [*Direction*](Direction.md)
 
-### **blockLocation**
-`read-only blockLocation: BlockLocation;`
-
-Location of the block being impacted.
-
-Type: [*BlockLocation*](BlockLocation.md)
-
-### **buildBlockLocation**
-`read-only buildBlockLocation: BlockLocation;`
-
-Location of the resulting build block position. Useful for determining where a block was placed.
-
-Type: [*BlockLocation*](BlockLocation.md)
-
 ### **item**
 `item: ItemStack;`
 
@@ -50,3 +36,31 @@ Type: [*ItemStack*](ItemStack.md)
 Returns the source entity that triggered this item event.
 
 Type: [*Entity*](Entity.md)
+
+## Methods
+- [getBlockLocation](#getblocklocation)
+- [getBuildBlockLocation](#getbuildblocklocation)
+
+### **getBlockLocation**
+`
+getBlockLocation(): Vector3
+`
+
+Location of the block being impacted.
+
+#### **Returns** [*Vector3*](Vector3.md)
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getBuildBlockLocation**
+`
+getBuildBlockLocation(): Vector3
+`
+
+Location of the resulting build block position. Useful for determining where a block was placed.
+
+#### **Returns** [*Vector3*](Vector3.md)
+
+> [!WARNING]
+> This function can throw errors.

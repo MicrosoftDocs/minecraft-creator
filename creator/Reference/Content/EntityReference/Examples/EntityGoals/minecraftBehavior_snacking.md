@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.snacking
 
-`minecraft:behavior.snacking` allows an entity to stop and interact with select food items that are nearby.
+`minecraft:behavior.snacking` compels an entity to stop and interact with select food items that are nearby.
 
 ## Parameters
 

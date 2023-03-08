@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.silverfish_merge_with_stone
 
-`minecraft:behavior.silverfish_merge_with_stone` allows an entity to enter a stone block.
+`minecraft:behavior.silverfish_merge_with_stone` compels an entity to enter a stone block.
 
 > [!NOTE]
 > This behavior can only be used by the `silverfish` entity type.

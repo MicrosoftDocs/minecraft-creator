@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.avoid_mob_type
 
-`minecraft:behavior.avoid_mob_type` allows the entity to run away from other entities that meet the criteria specified.
+`minecraft:behavior.avoid_mob_type` compels the entity to run away from other entities that meet the criteria specified.
 
 ## Parameters
 

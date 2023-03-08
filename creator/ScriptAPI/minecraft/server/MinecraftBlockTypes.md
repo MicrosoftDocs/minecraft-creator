@@ -12,7 +12,7 @@ description: Contents of the @minecraft/server.MinecraftBlockTypes class.
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Contains definitions of standard Minecraft and Minecraft Education block types.
+Contains definitions of standard Minecraft and Minecraft Education Edition block types.
 
 ## Methods
 - [get](#get)
@@ -64,6 +64,11 @@ Type: [*BlockType*](BlockType.md)
 
 ### **acaciaHangingSign**
 `static read-only acaciaHangingSign: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **acaciaLog**
+`static read-only acaciaLog: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -386,6 +391,11 @@ Type: [*BlockType*](BlockType.md)
 
 Type: [*BlockType*](BlockType.md)
 
+### **birchLog**
+`static read-only birchLog: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **birchPressurePlate**
 `static read-only birchPressurePlate: BlockType;`
 
@@ -477,6 +487,11 @@ Represents a blackstone wall within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **blackWool**
+`static read-only blackWool: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **blastFurnace**
 `static read-only blastFurnace: BlockType;`
 
@@ -509,6 +524,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only blueIce: BlockType;`
 
 Represents a blue ice block within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **blueWool**
+`static read-only blueWool: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -586,6 +606,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only brownMushroomBlock: BlockType;`
 
 Represents a block of brown mushroom within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **brownWool**
+`static read-only brownWool: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -733,6 +758,91 @@ Type: [*BlockType*](BlockType.md)
 `static read-only chemistryTable: BlockType;`
 
 Represents a chemistry table within Minecraft Education experiences.
+
+Type: [*BlockType*](BlockType.md)
+
+### **cherryButton**
+`static read-only cherryButton: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **cherryDoor**
+`static read-only cherryDoor: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **cherryDoubleSlab**
+`static read-only cherryDoubleSlab: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **cherryFence**
+`static read-only cherryFence: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **cherryFenceGate**
+`static read-only cherryFenceGate: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **cherryHangingSign**
+`static read-only cherryHangingSign: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **cherryLeaves**
+`static read-only cherryLeaves: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **cherryLog**
+`static read-only cherryLog: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **cherryPlanks**
+`static read-only cherryPlanks: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **cherryPressurePlate**
+`static read-only cherryPressurePlate: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **cherrySapling**
+`static read-only cherrySapling: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **cherrySlab**
+`static read-only cherrySlab: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **cherryStairs**
+`static read-only cherryStairs: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **cherryStandingSign**
+`static read-only cherryStandingSign: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **cherryTrapdoor**
+`static read-only cherryTrapdoor: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **cherryWallSign**
+`static read-only cherryWallSign: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **cherryWood**
+`static read-only cherryWood: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -1185,6 +1295,11 @@ Represents a block of cyan-colored glazed terracotta within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **cyanWool**
+`static read-only cyanWool: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **darkOakButton**
 `static read-only darkOakButton: BlockType;`
 
@@ -1208,6 +1323,11 @@ Type: [*BlockType*](BlockType.md)
 
 ### **darkOakHangingSign**
 `static read-only darkOakHangingSign: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **darkOakLog**
+`static read-only darkOakLog: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -1271,6 +1391,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only deadbush: BlockType;`
 
 Represents a dead bush within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **decoratedPot**
+`static read-only decoratedPot: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -2713,6 +2838,11 @@ Represents a gray-colored block of glazed terracotta within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **grayWool**
+`static read-only grayWool: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **greenCandle**
 `static read-only greenCandle: BlockType;`
 
@@ -2731,6 +2861,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only greenGlazedTerracotta: BlockType;`
 
 Represents a green block of glazed terracotta within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **greenWool**
+`static read-only greenWool: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -2928,6 +3063,11 @@ Type: [*BlockType*](BlockType.md)
 
 Type: [*BlockType*](BlockType.md)
 
+### **jungleLog**
+`static read-only jungleLog: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **junglePressurePlate**
 `static read-only junglePressurePlate: BlockType;`
 
@@ -3075,6 +3215,11 @@ Represents a light blue block of glazed terracotta within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **lightBlueWool**
+`static read-only lightBlueWool: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **lightGrayCandle**
 `static read-only lightGrayCandle: BlockType;`
 
@@ -3086,6 +3231,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only lightGrayCandleCake: BlockType;`
 
 Represents a light gray candle cake within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **lightGrayWool**
+`static read-only lightGrayWool: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3121,6 +3271,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only limeGlazedTerracotta: BlockType;`
 
 Represents a lime-colored block of glazed terracotta within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **limeWool**
+`static read-only limeWool: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3180,20 +3335,6 @@ Represents a lodestone within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
-### **log**
-`static read-only log: BlockType;`
-
-Represents a log within Minecraft.
-
-Type: [*BlockType*](BlockType.md)
-
-### **log2**
-`static read-only log2: BlockType;`
-
-Represents a more updated, customizable log within Minecraft.
-
-Type: [*BlockType*](BlockType.md)
-
 ### **loom**
 `static read-only loom: BlockType;`
 
@@ -3219,6 +3360,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only magentaGlazedTerracotta: BlockType;`
 
 Represents a block of magenta-colored glazed terracotta within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **magentaWool**
+`static read-only magentaWool: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3525,6 +3671,11 @@ Type: [*BlockType*](BlockType.md)
 
 Type: [*BlockType*](BlockType.md)
 
+### **oakLog**
+`static read-only oakLog: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **oakStairs**
 `static read-only oakStairs: BlockType;`
 
@@ -3569,6 +3720,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only orangeGlazedTerracotta: BlockType;`
 
 Represents a block of orange-colored glazed terracotta within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **orangeWool**
+`static read-only orangeWool: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3642,6 +3798,16 @@ Type: [*BlockType*](BlockType.md)
 `static read-only pinkGlazedTerracotta: BlockType;`
 
 Represents a pink-colored block of glazed terracotta within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **pinkPetals**
+`static read-only pinkPetals: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **pinkWool**
+`static read-only pinkWool: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3916,6 +4082,11 @@ Represents a purple-colored block of glazed terracotta within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **purpleWool**
+`static read-only purpleWool: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **purpurBlock**
 `static read-only purpurBlock: BlockType;`
 
@@ -4088,6 +4259,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only redstoneWire: BlockType;`
 
 Represents a redstone wire within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **redWool**
+`static read-only redWool: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -4401,6 +4577,11 @@ Type: [*BlockType*](BlockType.md)
 
 Type: [*BlockType*](BlockType.md)
 
+### **spruceLog**
+`static read-only spruceLog: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **sprucePressurePlate**
 `static read-only sprucePressurePlate: BlockType;`
 
@@ -4606,6 +4787,16 @@ Represents a stripped birch log within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **strippedCherryLog**
+`static read-only strippedCherryLog: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **strippedCherryWood**
+`static read-only strippedCherryWood: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **strippedCrimsonHyphae**
 `static read-only strippedCrimsonHyphae: BlockType;`
 
@@ -4686,6 +4877,11 @@ Represents a structure void within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **suspiciousSand**
+`static read-only suspiciousSand: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **sweetBerryBush**
 `static read-only sweetBerryBush: BlockType;`
 
@@ -4725,6 +4921,16 @@ Type: [*BlockType*](BlockType.md)
 `static read-only torch: BlockType;`
 
 Represents a torch within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **torchflower**
+`static read-only torchflower: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **torchflowerCrop**
+`static read-only torchflowerCrop: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -5205,6 +5411,11 @@ Represents a block of white glazed terracotta within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **whiteWool**
+`static read-only whiteWool: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **witherRose**
 `static read-only witherRose: BlockType;`
 
@@ -5247,13 +5458,6 @@ Represents a wooden slab within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
-### **wool**
-`static read-only wool: BlockType;`
-
-Represents wool within Minecraft.
-
-Type: [*BlockType*](BlockType.md)
-
 ### **yellowCandle**
 `static read-only yellowCandle: BlockType;`
 
@@ -5279,5 +5483,10 @@ Type: [*BlockType*](BlockType.md)
 `static read-only yellowGlazedTerracotta: BlockType;`
 
 Represents a yellow block of glazed terracotta within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **yellowWool**
+`static read-only yellowWool: BlockType;`
 
 Type: [*BlockType*](BlockType.md)

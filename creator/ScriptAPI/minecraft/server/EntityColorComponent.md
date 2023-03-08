@@ -13,18 +13,11 @@ description: Contents of the @minecraft/server.EntityColorComponent class.
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 Defines the entity's color. Only works on certain entities that have predefined color values (sheep, llama, shulker).
 
 ## Properties
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:color.
-
-Type: *string*
 
 ### **value**
 `value: number;`

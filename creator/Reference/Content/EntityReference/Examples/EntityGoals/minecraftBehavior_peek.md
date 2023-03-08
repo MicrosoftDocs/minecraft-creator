@@ -1,14 +1,13 @@
 ---
 author: mammerla
-ms.author: mikeam
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.peek
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.peek
 
-`minecraft:behavior.peek` allows an entity to peek out.
-
+`minecraft:behavior.peek` compels an entity to peek out.
 
 ## Parameters
 
@@ -26,8 +25,22 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-No entities currently use `minecraft:behavior.peek`
+### shulker
+
+```json
+"minecraft:peek": {
+        "on_open": {
+          "event": "minecraft:on_open"
+        },
+        "on_close": {
+          "event": "minecraft:on_close"
+        },
+        "on_target_open": {
+          "event": "minecraft:on_open"
+        }
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.peek`
 
-No entities currently use `minecraft:behavior.peek`
+- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)

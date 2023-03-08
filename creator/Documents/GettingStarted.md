@@ -1,6 +1,6 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Getting Started With Minecraft Add-Ons
 ms.prod: gaming
 description: "A tutorial covering how to start developing Add-Ons for Minecraft: Bedrock Edition by learning about the common tools used by Creators and how content is added into Minecraft"

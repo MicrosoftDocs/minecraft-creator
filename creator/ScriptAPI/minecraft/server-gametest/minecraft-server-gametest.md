@@ -38,7 +38,7 @@ The @minecraft/server-gametest module provides scriptable APIs for scaffolding a
 
 ### **register**
 `
-static register(testClassName: string, testName: string, testFunction: (arg: Test) => void): RegistrationBuilder
+register(testClassName: string, testName: string, testFunction: (arg: Test) => void): RegistrationBuilder
 `
 
 Registers a new GameTest function. This GameTest will become available in Minecraft via /gametest run [testClassName]:[testName].
@@ -65,23 +65,23 @@ GameTest.register("ExampleTests", "alwaysFail", (test) => {
 ```
 ##### *simpleMobTest.ts*
 ```javascript
-  gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
-    const attackerId = "fox";
-    const victimId = "chicken";
-    test.spawn(attackerId, new mc.BlockLocation(5, 2, 5));
-    test.spawn(victimId, new mc.BlockLocation(2, 2, 2));
-    test.assertEntityPresentInArea(victimId, true);
-    test.succeedWhen(() => {
-      test.assertEntityPresentInArea(victimId, false);
-    });
-  })
-    .maxTicks(400)
-    .structureName("gametests:mediumglass");
+gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
+  const attackerId = "fox";
+  const victimId = "chicken";
+  test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+  test.spawn(victimId, { x: 2, y: 2, z: 2 });
+  test.assertEntityPresentInArea(victimId, true);
+  test.succeedWhen(() => {
+    test.assertEntityPresentInArea(victimId, false);
+  });
+})
+  .maxTicks(400)
+  .structureName("gametests:mediumglass");
 ```
 
 ### **registerAsync**
 `
-static registerAsync(testClassName: string, testName: string, testFunction: (arg: Test) => Promise<void>): RegistrationBuilder
+registerAsync(testClassName: string, testName: string, testFunction: (arg: Test) => Promise<void>): RegistrationBuilder
 `
 
 Registers a new GameTest function that is designed for asynchronous execution. This GameTest will become available in Minecraft via /gametest run [testClassName]:[testName].

@@ -13,18 +13,9 @@ description: Contents of the @minecraft/server.EntityFloatsInLiquidComponent cla
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 When added, this component signifies that this entity can float in liquid blocks.
-
-## Properties
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:floats_in_liquid.
-
-Type: *string*
 
 ## Constants
 

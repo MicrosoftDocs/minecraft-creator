@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.avoid_block
 
-`minecraft:behavior.avoid_block` allows an entity to avoid certain blocks.
+`minecraft:behavior.avoid_block` compels an entity to avoid certain blocks.
 
 ## Parameters
 

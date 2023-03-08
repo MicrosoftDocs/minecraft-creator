@@ -17,28 +17,102 @@ description: Contents of the @minecraft/server.BlockSignComponent class.
 
 Represents a block that can display text on it.
 
-## Properties
+## Methods
+- [getRawText](#getrawtext)
+- [getText](#gettext)
+- [getTextDyeColor](#gettextdyecolor)
+- [setText](#settext)
+- [setTextDyeColor](#settextdyecolor)
 
-### **location**
-`read-only location: BlockLocation;`
+### **getRawText**
+`
+getRawText(): RawText | undefined
+`
 
-Location of the sign.
+Returns the RawText of the sign if `setText` was called with a RawMessage or a RawText object
 
-Type: [*BlockLocation*](BlockLocation.md)
+#### **Returns** [*RawText*](RawText.md) | *undefined*
 
-### **text**
-`read-only text: string;`
+> [!WARNING]
+> This function can throw errors.
 
-Text of the sign
+### **getText**
+`
+getText(): string | undefined
+`
 
-Type: *string*
+Returns the text of the sign if `setText` was called with a string
 
-### **typeId**
-`read-only typeId: string;`
+#### **Returns** *string* | *undefined*
 
-Identifier of this component. Should always be minecraft:sign.
+> [!WARNING]
+> This function can throw errors.
 
-Type: *string*
+### **getTextDyeColor**
+`
+getTextDyeColor(): DyeColor | undefined
+`
+
+Gets the dye that is on the text or undefined if the sign has not been dyed
+
+#### **Returns** [*DyeColor*](DyeColor.md) | *undefined*
+
+> [!WARNING]
+> This function can throw errors.
+
+### **setText**
+`
+setText(message: RawMessage | RawText | string): void
+`
+
+Sets the text of the sign component
+
+#### **Parameters**
+- **message**: [*RawMessage*](RawMessage.md) | [*RawText*](RawText.md) | *string*
+  
+  The message to set on the sign. If set to a string, then call `getText` to read that string. If set to a RawMessage, then calling `getRawText` will return a RawText. If set to a RawText, then calling `getRawText` will return the same object that was passed in.
+
+> [!WARNING]
+> This function can throw errors.
+
+#### **Examples**
+##### *SetRawMessage.ts*
+```javascript
+const helloWorldMessage: RawMessage = { text: 'Hello World' };
+sign.setText(helloWorldMessage);
+// Sign text will be saved as a RawText
+const result: RawText = sign.getRawText(); 
+JSON.stringify(result); // { rawtext: [{ text: 'Hello World' }] };
+```
+##### *SetRawText.ts*
+```javascript
+const helloWorldText: RawText = { rawtext: [{ text: 'Hello World' }] };
+sign.setText(helloWorldText);
+// There will be no data transformation unlike calling setText with a RawMessage
+const result: RawText = sign.getRawText(); 
+JSON.stringify(result); // { rawtext: [{ text: 'Hello World' }] };
+```
+##### *SetString.ts*
+```javascript
+// Set sign to say 'Hello'
+sign.setText('Hello');
+sign.getText(); // 'Hello'
+```
+
+### **setTextDyeColor**
+`
+setTextDyeColor(color?: DyeColor): void
+`
+
+Sets the dye color of the text
+
+#### **Parameters**
+- **color**?: [*DyeColor*](DyeColor.md) = `null`
+  
+  The dye color you want or undefined if you want to clear the dye on the sign
+
+> [!WARNING]
+> This function can throw errors.
 
 ## Constants
 

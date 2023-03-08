@@ -25,7 +25,7 @@ Type: *string*[]
 
 ### **get**
 `
-get(name: string): SecretString
+"get"(name: string): SecretString | undefined
 `
 
 Returns a SecretString that is a placeholder for a secret configured in a JSON file. In certain objects, like an HttpHeader, this Secret is resolved at the time of execution but is not made available to the script environment.
@@ -33,7 +33,7 @@ Returns a SecretString that is a placeholder for a secret configured in a JSON f
 #### **Parameters**
 - **name**: *string*
 
-#### **Returns** [*SecretString*](SecretString.md)
+#### **Returns** [*SecretString*](SecretString.md) | *undefined*
 
 #### **Examples**
 ##### *getPlayerProfile.ts*

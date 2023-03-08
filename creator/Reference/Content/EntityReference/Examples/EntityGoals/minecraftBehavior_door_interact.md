@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: mikeam
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.door_interact
 ms.prod: gaming
 ---

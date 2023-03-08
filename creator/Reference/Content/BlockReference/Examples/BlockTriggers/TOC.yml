@@ -14,3 +14,7 @@
    href: minecraftBlock_on_step_off.md
  - name: on_step_on
    href: minecraftBlock_on_step_on.md
+ - name: queued_ticking
+   href: minecraftBlock_queued_ticking.md
+ - name: random_ticking
+   href: minecraftBlock_random_ticking.md

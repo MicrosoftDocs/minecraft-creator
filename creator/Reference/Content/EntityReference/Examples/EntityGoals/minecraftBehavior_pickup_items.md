@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.pickup_items
 
-`minecraft:behavior.pickup_items` allows an entity to pick up selected items off the ground.
+`minecraft:behavior.pickup_items` compels an entity to pick up selected items off the ground.
 
 ## Parameters
 

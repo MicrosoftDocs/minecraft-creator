@@ -12,10 +12,6 @@ description: Contents of the @minecraft/server.Container class.
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-## Classes that extend Container
-- [*BlockInventoryComponentContainer*](BlockInventoryComponentContainer.md)
-- [*InventoryComponentContainer*](InventoryComponentContainer.md)
-
 Represents a container that can hold sets of items. Used with entities such as Players, Chest Minecarts, Llamas, and more.
 
 ## Properties
@@ -23,38 +19,46 @@ Represents a container that can hold sets of items. Used with entities such as P
 ### **emptySlotsCount**
 `read-only emptySlotsCount: number;`
 
-Contains a count of the slots in the container that are empty.
+Count of the slots in the container that are empty.
 
 Type: *number*
+
+> [!WARNING]
+> Throws if the container is invalid.
 
 ### **size**
 `read-only size: number;`
 
-Represents the size of the container. For example, a standard single-block chest has a size of 27, for the 27 slots in their inventory.
+The number of slots in this container. For example, a standard single-block chest has a size of 27. Note, a player's inventory container contains a total of 36 slots, 9 hotbar slots plus 27 inventory slots.
 
 Type: *number*
+
+> [!WARNING]
+> Throws if the container is invalid.
 
 ## Methods
 - [addItem](#additem)
 - [clearAll](#clearall)
-- [clearItem](#clearitem)
 - [getItem](#getitem)
 - [getSlot](#getslot)
+- [moveItem](#moveitem)
 - [setItem](#setitem)
 - [swapItems](#swapitems)
 - [transferItem](#transferitem)
 
 ### **addItem**
 `
-addItem(itemStack: ItemStack): void
+addItem(itemStack: ItemStack): ItemStack
 `
 
-Adds an item to the specified container. Item will be placed in the first available empty slot. (use .setItem if you wish to set items in a particular slot.)
+Adds an item to the container. The item is placed in the first available slot(s) and can be stacked with existing items of the same type. Note, use [*@minecraft/server.Container.setItem*](../../minecraft/server/Container.md#setitem) if you wish to set the item in a particular slot.
 
 #### **Parameters**
 - **itemStack**: [*ItemStack*](ItemStack.md)
   
   The stack of items to add.
+
+#### **Returns** [*ItemStack*](ItemStack.md)
 
 > [!WARNING]
 > This function can throw errors.
@@ -67,27 +71,14 @@ clearAll(): void
 Clears all inventory items in the container.
 
 > [!WARNING]
-> This function can throw errors.
-
-### **clearItem**
-`
-clearItem(slot: number): void
-`
-
-Clears a specific item at a slot within the container.
-
-#### **Parameters**
-- **slot**: *number*
-
-> [!WARNING]
-> This function can throw errors.
+> Throws if the container is invalid.
 
 ### **getItem**
 `
 getItem(slot: number): ItemStack
 `
 
-Gets the item stack for the set of items at the specified slot. If the slot is empty, returns undefined. This method does not change or clear the contents of the specified slot.
+Gets an [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md) of the item at the specified slot. If the slot is empty, returns `undefined`. This method does not change or clear the contents of the specified slot. To get a reference to a particular slot, see [*@minecraft/server.Container.getSlot*](../../minecraft/server/Container.md#getslot).
 
 #### **Parameters**
 - **slot**: *number*
@@ -97,16 +88,14 @@ Gets the item stack for the set of items at the specified slot. If the slot is e
 #### **Returns** [*ItemStack*](ItemStack.md)
 
 > [!WARNING]
-> This function can throw errors.
+> Throws if the container is invalid or if the `slot` index is out of bounds.
 
 #### **Examples**
-##### *getItem.js*
+##### *getItem.ts*
 ```javascript
-const rightInventoryComp = rightChestCart.getComponent("inventory");
-const rightChestContainer = rightInventoryComp.container;
-const itemStack = rightChestContainer.getItem(0);
-test.assert(itemStack.id === "apple", "Expected apple");
-test.assert(itemStack.amount === 10, "Expected 10 apples");
+// Get a copy of the first item in the player's hotbar
+const inventory = player.getComponent("inventory") as EntityInventoryComponent;
+const itemStack = inventory.container.getItem(0);
 ```
 
 ### **getSlot**
@@ -114,15 +103,47 @@ test.assert(itemStack.amount === 10, "Expected 10 apples");
 getSlot(slot: number): ContainerSlot
 `
 
-Returns a container slot item holder within the container.
+Returns a container slot. This acts as a reference to a slot at the given index for this container.
 
 #### **Parameters**
 - **slot**: *number*
+  
+  The index of the slot to return. This index must be within the bounds of the container.
 
 #### **Returns** [*ContainerSlot*](ContainerSlot.md)
 
 > [!WARNING]
-> This function can throw errors.
+> Throws if the container is invalid or if the `slot` index is out of bounds.
+
+### **moveItem**
+`
+moveItem(fromSlot: number, toSlot: number, toContainer: Container): void
+`
+
+Moves an item from one slot to another, potentially across containers.
+
+#### **Parameters**
+- **fromSlot**: *number*
+  
+  Zero-based index of the slot to transfer an item from, on this container.
+- **toSlot**: *number*
+  
+  Zero-based index of the slot to transfer an item to, on `toContainer`.
+- **toContainer**: [*Container*](Container.md)
+  
+  Target container to transfer to. Note this can be the same container as the source.
+
+> [!WARNING]
+> Throws if either this container or `toContainer` are invalid or if the `fromSlot` or `toSlot` indices out of bounds.
+
+#### **Examples**
+##### *moveItem.ts*
+```javascript
+// Move an item from the first slot of fromPlayer's inventory to the fifth slot of toPlayer's inventory
+const fromInventory = fromPlayer.getComponent('inventory') as EntityInventoryComponent;
+const toInventory = toPlayer.getComponent('inventory') as EntityInventoryComponent;
+fromInventory.container.moveItem(0, 4, toInventory.container); 
+```
 
 ### **setItem**
 `
@@ -137,14 +158,14 @@ Sets an item stack within a particular slot.
   Zero-based index of the slot to set an item at.
 - **itemStack**?: [*ItemStack*](ItemStack.md) = `null`
   
-  Stack of items to place within the specified slot.
+  Stack of items to place within the specified slot. Setting `itemStack` to undefined will clear the slot.
 
 > [!WARNING]
-> This function can throw errors.
+> Throws if the container is invalid or if the `slot` index is out of bounds.
 
 ### **swapItems**
 `
-swapItems(slot: number, otherSlot: number, otherContainer: Container): boolean
+swapItems(slot: number, otherSlot: number, otherContainer: Container): void
 `
 
 Swaps items between two different slots within containers.
@@ -160,50 +181,52 @@ Swaps items between two different slots within containers.
   
   Target container to swap with. Note this can be the same container as this source.
 
-#### **Returns** *boolean*
-
 > [!WARNING]
-> This function can throw errors.
+> Throws if either this container or `otherContainer` are invalid or if the `slot` or `otherSlot` are out of bounds.
 
 #### **Examples**
-##### *swapItems.js*
+##### *swapItems.ts*
 ```javascript
-rightChestContainer.swapItems(1, 0, leftChestContainer); // swap the cake and emerald
+// Swaps an item between slots 0 and 4 in the player's inventory
+const inventory = fromPlayer.getComponent('inventory') as EntityInventoryComponent;
+inventory.container.swapItems(0, 4, inventory); 
 ```
 
 ### **transferItem**
 `
-transferItem(fromSlot: number, toSlot: number, toContainer: Container): boolean
+transferItem(fromSlot: number, toContainer: Container): ItemStack
 `
 
-Moves an item from one slot to another, potentially across containers.
+Moves an item from one slot to another container, or to the first available slot in the same container.
 
 #### **Parameters**
 - **fromSlot**: *number*
-- **toSlot**: *number*
   
-  Zero-based index of the slot to move to.
+  Zero-based index of the slot to transfer an item from, on this container.
 - **toContainer**: [*Container*](Container.md)
   
   Target container to transfer to. Note this can be the same container as the source.
 
-#### **Returns** *boolean*
+#### **Returns** [*ItemStack*](ItemStack.md)
 
 > [!WARNING]
-> This function can throw errors.
+> Throws if either this container or `toContainer` are invalid or if the `fromSlot` or `toSlot` indices out of bounds.
 
 #### **Examples**
-##### *transferItem.js*
+##### *transferItem.ts*
 ```javascript
-rightChestContainer.transferItem(0, 4, chestCartContainer); // transfer the apple from the right chest to a chest cart
+// Transfer an item from the first slot of fromPlayer's inventory to toPlayer's inventory
+const fromInventory = fromPlayer.getComponent('inventory') as EntityInventoryComponent;
+const toInventory = toPlayer.getComponent('inventory') as EntityInventoryComponent;
+fromInventory.container.transferItem(0, toInventory.container); 
 ```
 
 #### **Examples**
 ##### *containers.js*
 ```javascript
-let leftLocation = test.worldLocation(new BlockLocation(2, 2, 2)); // left chest location
-let rightLocation = test.worldLocation(new BlockLocation(4, 2, 2)); // right chest location
-const chestCart = test.spawn("chest_minecart", new BlockLocation(6, 2, 2));
+let leftLocation = test.worldLocation({ x: 2, y: 2, z: 2 }); // left chest location
+let rightLocation = test.worldLocation({ x: 4, y: 2, z: 2 }); // right chest location
+const chestCart = test.spawn("chest_minecart", { x: 6, y: 2, z: 2 });
 let leftChestBlock = defaultDimension.getBlock(leftLocation);
 let rightChestBlock = defaultDimension.getBlock(rightLocation);
 leftChestBlock.setType(MinecraftBlockTypes.chest);

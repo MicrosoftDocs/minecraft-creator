@@ -1,13 +1,13 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.swim_idle
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.swim_idle
 
-`minecraft:behavior.swim_idle` allows the entity go idle, if swimming. Entity must be in water.
+`minecraft:behavior.swim_idle` compels an entity swimming in water to go idle.
 
 ## Parameters
 

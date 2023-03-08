@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.trade_interest
 
-`minecraft:behavior.trade_interest` allows an entity to focus on a player that will initiate a trade.
+`minecraft:behavior.trade_interest` compels an entity to focus on a player that will initiate a trade.
 
 ## Parameters
 

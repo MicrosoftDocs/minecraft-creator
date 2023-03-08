@@ -17,11 +17,11 @@ Additional configuration options for the [*@minecraft/server.Player.playSound*](
 ## Properties
 
 ### **location**
-`location?: Location;`
+`location?: Vector3;`
 
 Specifies a location of where to play a particular sound.
 
-Type: [*Location*](Location.md)
+Type: [*Vector3*](Vector3.md)
 
 ### **pitch**
 `pitch?: number;`

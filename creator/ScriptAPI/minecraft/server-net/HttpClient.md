@@ -13,9 +13,6 @@ description: Contents of the @minecraft/server-net.HttpClient class.
 - [cancelAll](#cancelall)
 - [get](#get)
 - [request](#request)
-- [testOnly_fulfillRequest](#testonly_fulfillrequest)
-- [testOnly_getRequests](#testonly_getrequests)
-- [testOnly_rejectRequest](#testonly_rejectrequest)
 
 ### **cancelAll**
 `
@@ -29,7 +26,7 @@ Cancels all pending requests.
 
 ### **get**
 `
-get(uri: string): Promise<HttpResponse>
+"get"(uri: string): Promise<HttpResponse>
 `
 
 Performs a simple HTTP get request.
@@ -54,30 +51,3 @@ Performs an HTTP request.
   Contains an HTTP Request object with configuration data on the HTTP request.
 
 #### **Returns** Promise&lt;[*HttpResponse*](HttpResponse.md)&gt; - An awaitable promise that contains the HTTP response.
-
-### **testOnly_fulfillRequest**
-`
-testOnly_fulfillRequest(requestId: number, headers: HttpHeader[], body: string, status: number): void
-`
-
-#### **Parameters**
-- **requestId**: *number*
-- **headers**: [*HttpHeader*](HttpHeader.md)[]
-- **body**: *string*
-- **status**: *number*
-
-### **testOnly_getRequests**
-`
-testOnly_getRequests(): number[]
-`
-
-#### **Returns** *number*[]
-
-### **testOnly_rejectRequest**
-`
-testOnly_rejectRequest(requestId: number, reason: string): void
-`
-
-#### **Parameters**
-- **requestId**: *number*
-- **reason**: *string*
