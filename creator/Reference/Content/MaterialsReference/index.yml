@@ -1,0 +1,33 @@
+### YamlMime:Landing
+
+title: Materials JSON Documentation # < 60 chars
+summary: "Landing page containing all Upgraded Materials JSON documentation for Minecraft: Bedrock Edition." # < 160 chars
+
+metadata:
+  title: Materials Upgrade JSON Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: "Landing page containing all Upgraded Materials JSON documentation for Minecraft: Bedrock Edition." # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: ryan.edgemon #Required; your GitHub user alias, with correct capitalization.
+  ms.author: ryan.edgemon #Required; microsoft alias of author; optional team alias.
+  ms.date: 10/xx/2021 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: Getting Started with Materials
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Materials Upgrades - Getting Started
+            url: Examples/MaterialsGettingStarted.md
+  # Card (optional)
+  - title: Materials Inputs and Shaders
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Shaders and Inputs List
+            url: Examples/RenderDragonShaderList.md

@@ -59,7 +59,7 @@ Each individual skin definition will then contain the following:
 - `localization_name`: the localization key whose value is defined later in `en_US.lang`. The value will be the name of the individual skin.
 - `geometry`: the base model this skin is for. `geometry.humanoid.customSlim` is the Alex model and `geometry.humanoid.custom` is the Steve model.
 - `texture`: the file name for each of the skin textures as they appear in the root of the skin pack.
-- `type`: either `free` or `paid`. 
+- `type`: either `free` or `paid`.
 
 ### Template skins.json
 

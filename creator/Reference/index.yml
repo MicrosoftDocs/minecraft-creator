@@ -126,6 +126,17 @@ landingContent:
         links:
           - text: Item Components List
             url: Content/itemreference/Examples/ItemComponentList.md
+  # Card (comment to space cards)
+  - title: Materials
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Materials - Getting Started
+            url: Content/materialsreference/Examples/MaterialsGettingStarted.md
+      - linkListType: reference
+        links:
+          - text: Material reference - JSON Shaders and Inputs
+            url: Content/materialsreference/Examples/RenderDragonShaderList.md
   # Card (optional)
   - title: Molang
     linkLists:
