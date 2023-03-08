@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.squid_flee
 
-`minecraft:behavior.squid_flee` allows an entity to swim away when attacked.
+`minecraft:behavior.squid_flee` compels an entity to swim away when attacked.
 
 > [!NOTE]
 > This behavior can only be used by the `squid` entity type.
@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.squid_flee":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 
@@ -32,9 +32,8 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.squid_flee": {
-        "priority": 2
-      },
-
+    "priority": 2
+}
 ```
 
 ## Vanilla entities using `minecraft:behavior.squid_flee`

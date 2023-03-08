@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:scale
 ms.prod: gaming
 ---
@@ -30,7 +30,14 @@ ms.prod: gaming
 > [!NOTE]
 > In the `rabbit` example. A `baby` component group has been set up to establish a "baby" version of the rabbit by manipulating the `value` of `minecraft:scale`.
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/rabbit.json" range="12-37":::
+```json
+"baby": {
+    "minecraft:is_baby": {
+        },
+    "minecraft:scale": {
+          "value":0.4
+    }
+```
 
 ## Vanilla entities using `minecraft:scale`
 

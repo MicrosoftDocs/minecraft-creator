@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.leap_at_target
 
-`minecraft:behavior.leap_at_target` allows an entity to jump towards a target.
+`minecraft:behavior.leap_at_target` compels an entity to jump towards a target.
 
 > [!IMPORTANT]
 > `minecraft:behavior.leap_at_target` requires a target in order to work properly. Target can be determined by using one of the following behaviors:
@@ -45,8 +45,7 @@ ms.prod: gaming
           "priority": 4,
           "yd": 0.4,
           "must_be_on_ground": false
-        },
-
+        }
 ```
 
 ## Vanilla entities using `minecraft:behavior.leap_at_target`

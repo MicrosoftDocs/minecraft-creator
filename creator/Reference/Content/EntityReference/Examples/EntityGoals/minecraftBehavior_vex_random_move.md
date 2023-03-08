@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.vex_random_move
 ms.prod: gaming
 ---
@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.vex_random_move":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 

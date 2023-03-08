@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation -minecraft:ambient_sound_interval
 ms.prod: gaming
 ---
@@ -33,7 +33,13 @@ ms.prod: gaming
 
 ### witch
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/witch.json" range="45-49":::
+```json
+"minecraft:ambient_sound_interval": {
+          "value": 2.0,
+          "range": 4.0,
+          "event_name": "ambient.in.raid"
+        }
+```
 
 ## Vanilla entities using `minecraft:ambient_sound_interval`
 

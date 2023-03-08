@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.move_towards_target
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.move_towards_target
 
-`minecraft:behavior.move_towards_target` allows an entity to move towards a target.
+`minecraft:behavior.move_towards_target` compels an entity to move towards a target.
 
 > [!IMPORTANT]
 > `minecraft:behavior.move_towards_target` requires a target in order to work properly. Target can be determined by using one of the following behaviors:
@@ -36,7 +36,13 @@ ms.prod: gaming
 
 ### iron_golem
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/iron_golem.json" range="218-222":::
+```json
+"minecraft:behavior.move_towards_target": {
+        "priority": 2,
+        "speed_multiplier": 0.9,
+        "within_radius": 32
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.move_towards_target`
 

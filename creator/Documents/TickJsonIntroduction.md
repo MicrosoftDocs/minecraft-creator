@@ -1,9 +1,9 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: Introduction to tick.json
 ms.prod: gaming
-description: "A tutorial that introduces a Creator on how to use`tick.json`to repeatedly execute functions"
+description: "A tutorial that introduces a Creator on how to use 'tick.json' to repeatedly execute functions"
 ---
 
 # Introduction to tick.json
@@ -26,7 +26,7 @@ In this tutorial you will learn the following:
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial:
+It's recommended that the following be completed before beginning this tutorial:
 
 - [Introduction To Behavior Packs](BehaviorPack.md)
 - [Introduction to Commands](CommandsIntroduction.md)

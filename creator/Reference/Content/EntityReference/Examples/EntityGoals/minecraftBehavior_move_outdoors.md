@@ -1,20 +1,20 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.move_outdoors
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.move_outdoors
 
-`minecraft:behavior.move_outdoors` allows an entity to move outdoors.
+`minecraft:behavior.move_outdoors` compels an entity to move outdoors.
 
 ## Parameters
 
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
 | goal_radius| 0.500000| Decimal| The radius away from the target block to count as reaching the goal. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | search_count| 0.000000| Integer| The amount of times to try finding a random outdoors position before failing. |
 | search_height| 0.000000| Integer| The y range to search for an outdoors position for. |
 | search_range| 0.000000| Integer| The x and z range to search for an outdoors position for. |

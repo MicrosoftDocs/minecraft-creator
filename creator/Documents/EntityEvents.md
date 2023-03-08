@@ -20,7 +20,7 @@ In this tutorial you will learn more about events, including sequential events, 
 
 It's recommended that the following be completed before beginning this tutorial.
 
-- [Introduction to Add Entity](IntroductionToAddEntity.md)
+- [Creating New Enity Types](IntroductionToAddEntity.md)
 - [Entity Behavior Introduction](EntityBehaviorIntroduction.md)
 
 ## Events Overview

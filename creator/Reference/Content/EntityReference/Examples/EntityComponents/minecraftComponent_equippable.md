@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:equippable
 ms.prod: gaming
 ---
@@ -52,7 +52,33 @@ ms.prod: gaming
 
 ### horse
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/horse.json" range="287-311":::
+```json
+"minecraft:equippable": {
+        "slots": [
+          {
+            "slot": 0,
+            "item": "saddle",
+            "accepted_items": [ "saddle" ],
+            "on_equip": {
+              "event": "minecraft:horse_saddled"
+            },
+            "on_unequip": {
+              "event": "minecraft:horse_unsaddled"
+            }
+          },
+          {
+            "slot": 1,
+            "item": "horsearmoriron",
+            "accepted_items": [
+              "horsearmorleather",
+              "horsearmoriron",
+              "horsearmorgold",
+              "horsearmordiamond"
+            ]
+          }
+        ]
+      },
+```
 
 ## Vanilla entities using `minecraft:equippable`
 

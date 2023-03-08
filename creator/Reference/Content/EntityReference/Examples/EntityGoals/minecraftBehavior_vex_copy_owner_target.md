@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.vex_copy_owner_target
 
-`minecraft:behavior.vex_copy_owner_target` allows an entity of the`vex` family to target the same entity as it's owner.
+`minecraft:behavior.vex_copy_owner_target` compels an entity of the`vex` family to target the same entity as its owner.
 
 > [!CAUTION]
 > `minecraft:behavior.vex_copy_owner_target` is no longer used for the `vex` entity.
@@ -37,7 +37,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.vex_copy_owner_target":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 

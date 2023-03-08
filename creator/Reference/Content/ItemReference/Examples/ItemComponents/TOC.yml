@@ -4,10 +4,10 @@
    href: minecraft_armor.md
  - name: block_placer
    href: minecraft_block_placer.md
- - name: cooldown
-   href: minecraft_cooldown.md
  - name: chargeable
    href: minecraft_chargeable.md
+ - name: cooldown
+   href: minecraft_cooldown.md
  - name: digger
    href: minecraft_digger.md
  - name: display_name
@@ -18,6 +18,8 @@
    href: minecraft_dye_powder.md
  - name: entity_placer
    href: minecraft_entity_placer.md
+ - name: foil
+   href: minecraft_foil.md
  - name: food
    href: minecraft_food.md
  - name: fuel

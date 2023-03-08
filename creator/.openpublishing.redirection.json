@@ -1,0 +1,19 @@
+{
+  "redirections": [    
+      {
+          "source_path": "Documents/CustomBlock.md",
+          "redirect_url": "/minecraft/creator/documents/addcustomdieblock",
+          "redirect_document_id": false
+      },
+      {
+        "source_path": "Reference/Content/BlockReference/Examples/BlockComponentsList.md",
+        "redirect_url": "/minecraft/creator/reference/content/blockreference/examples/blockcomponents/blockcomponentslist",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Reference/Content/SchemasReference/Schemas/minecraftSchema_actor_animation_controller_1.10.0.md",
+        "redirect_url": "/reference/content/schemasreference/schemas/schemaslist.md",
+        "redirect_document_id": false
+      }
+    ]
+}

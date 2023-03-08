@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-bbortree
 title: Introduction to Resource Packs
 ms.prod: gaming
@@ -103,7 +103,7 @@ Universally Unique Identifier, or UUID for short, is a unique number used to ide
 
 ## Changing the dirt block
 
-With the manifest file completed, you can now start adding custom content to Minecraft. Let’s get started by applying a new texture to the vanilla dirt block. The first part of the process involves creating a folder structure to hold the texture.
+With the manifest file completed, you can now start adding custom content to Minecraft. Let's get started by applying a new texture to the vanilla dirt block. The first part of the process involves creating a folder structure to hold the texture.
 
 1. In File Explorer, in the **My_RESOURCE_Pack** folder, create a folder and name it **textures**.
 1. Double-click the **textures** folder to open it.

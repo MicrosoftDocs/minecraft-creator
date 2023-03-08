@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition
 
-This article discusses the general tasks required to manually convert a resource pack made for Java Edition to a texture pack for Bedrock Edition. The actual creation of custom textures and features for a custom texture pack is not within the scope of this article. It’s assumed that the creator has sufficient knowledge and experience with a raster graphics editor, such as Adobe Photoshop, to create and edit the texture files as necessary. Note that not all tools may support the required file formats or alpha channels.
+This article discusses the general tasks required to manually convert a resource pack made for Java Edition to a texture pack for Bedrock Edition. The actual creation of custom textures and features for a custom texture pack is not within the scope of this article. It's assumed that the creator has sufficient knowledge and experience with a raster graphics editor, such as Adobe Photoshop, to create and edit the texture files as necessary. Note that not all tools may support the required file formats or alpha channels.
 
 In this tutorial you will learn the following:
 
@@ -45,15 +45,15 @@ In general, the differences between texture packs for Java Edition and Bedrock E
 
 ## Best Practices
 
-Start with a copy of a valid custom Java Edition texture pack and a copy of the vanilla Bedrock Edition texture pack. The conversion process will replace the vanilla Bedrock Edition texture files with custom texture files from the Java Edition pack. There are some required Bedrock Edition texture files that have different file formats and file types, and some that don’t exist in the Java Edition pack will need to be created. Advanced customizations in the Java Edition pack may or may not be possible to duplicate in the Bedrock Edition pack and aren’t within the scope of this article.
+Start with a copy of a valid custom Java Edition texture pack and a copy of the vanilla Bedrock Edition texture pack. The conversion process will replace the vanilla Bedrock Edition texture files with custom texture files from the Java Edition pack. There are some required Bedrock Edition texture files that have different file formats and file types, and some that don't exist in the Java Edition pack will need to be created. Advanced customizations in the Java Edition pack may or may not be possible to duplicate in the Bedrock Edition pack and aren't within the scope of this article.
 
 - Obtain the most current version of the vanilla Bedrock Edition texture pack for reference.
 - [Download for the most recent Bedrock Edition resource pack](https://aka.ms/resourcepacktemplate), which contains textures.
 - Setup File Explorer windows side by side -- one with your Java Edition texture pack, and one with the vanilla Bedrock Edition texture pack. This vanilla Bedrock Edition pack will become your custom Bedrock Edition texture pack at the end of this process, as the vanilla texture files are replaced with your custom ones.
 - Obtain and install the latest version of the Minecraft Bedrock Edition game app.
-- In general, copy over your Java Edition texture files to the copy of the vanilla Bedrock Edition texture pack. Make sure that every Java Edition file copied over is replacing an existing Bedrock Edition file. If there is no corresponding Bedrock Edition file, it’s not needed and shouldn’t be present in the Bedrock Edition pack.
+- In general, copy over your Java Edition texture files to the copy of the vanilla Bedrock Edition texture pack. Make sure that every Java Edition file copied over is replacing an existing Bedrock Edition file. If there is no corresponding Bedrock Edition file, it's not needed and shouldn't be present in the Bedrock Edition pack.
 
-**Nonexistent:** Don’t copy over any Java Edition files that don’t exist in the Bedrock Edition vanilla texture pack. This includes `.mcmeta` files.
+**Nonexistent:** Don't copy over any Java Edition files that don't exist in the Bedrock Edition vanilla texture pack. This includes `.mcmeta` files.
 
 **Do Not Replace:** Do not copy over any non-texture Java Edition files including data files.
 

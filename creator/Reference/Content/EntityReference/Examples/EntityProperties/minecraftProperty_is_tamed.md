@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:is_tamed
 ms.prod: gaming
 ---
@@ -52,7 +52,10 @@ ms.prod: gaming
 
 ### horse
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/horse.json" range="155-156":::
+```json
+"minecraft:is_tamed": {
+}
+```
 
 ## Vanilla entities using `minecraft:is_tamed`
 

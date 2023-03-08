@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.restrict_sun
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.restrict_sun
 
-`minecraft:behavior.restrict_sun` allows an entity to actively avoid direct sunlight.
+`minecraft:behavior.restrict_sun` compels an entity to actively avoid direct sunlight.
 
 ## Parameters
 
@@ -19,7 +19,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.restrict_sun":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 

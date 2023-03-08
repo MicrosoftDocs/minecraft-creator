@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.stalk_and_pounce_on_target
 
-`minecraft:behavior.stalk_and_pounce_on_target` allows an entity to stalk a specific target. Once within range of the target, the entity will then leap at the target and deal damage based upon its attack attribute.
+`minecraft:behavior.stalk_and_pounce_on_target` compels an entity to stalk a specific target. Once within range of the target, the entity will then leap at the target and deal damage based upon its attack attribute.
 
 > [!IMPORTANT]
 > `minecraft:behavior.stalk_and_pounce_on_target` requires a target in order to work properly. Target can be determined by using one of the following behaviors:
@@ -47,7 +47,7 @@ ms.prod: gaming
     "pounce_max_dist": 5.0,
     "interest_time": 4.0,
     "stuck_time": 2.0,
-    "strike_dist": 2.0,
+    "strike_dist": 2.0
 }
 ```
 
@@ -57,18 +57,17 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.stalk_and_pounce_on_target": {
-        "priority": 7,
-        "stalk_speed": 1.2,
-        "max_stalk_dist": 12.0,
-        "leap_height": 0.9,
-        "leap_dist": 0.8,
-        "pounce_max_dist": 5.0,
-        "interest_time": 2.0,
-        "stuck_time": 2.0,
-        "strike_dist": 2.0,
-        "stuck_blocks": { "test": "is_block", "subject": "block", "operator": "==", "value": "snow_layer" }
-      },
-
+    "priority": 7,
+    "stalk_speed": 1.2,
+    "max_stalk_dist": 12.0,
+    "leap_height": 0.9,
+    "leap_dist": 0.8,
+    "pounce_max_dist": 5.0,
+    "interest_time": 2.0,
+    "stuck_time": 2.0,
+    "strike_dist": 2.0,
+    "stuck_blocks": { "test": "is_block", "subject": "block", "operator": "==", "value": "snow_layer" }
+}
 ```
 
 ## Vanilla entities using `minecraft:behavior.stalk_and_pounce_on_target`

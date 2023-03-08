@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-bbortree
 title: Entity Documentation - ID Lists
 ms.prod: gaming
@@ -105,7 +105,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.peek| 211304085 |
 | minecraft:behavior.pet_sleep_with_owner| 1379392240 |
 | minecraft:behavior.pickup_items| 644287189 |
-| minecraft:behavior.play| -505601580 |
+| minecraft:behavior.play| 9028661884418335188 |
 | minecraft:behavior.play_dead| 15611122012431414539 |
 | minecraft:behavior.player_ride_tamed| 603869698 |
 | minecraft:behavior.raid_garden| -1145687602 |
@@ -157,7 +157,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.take_flower| 1218648257 |
 | minecraft:behavior.tempt| 422904556 |
 | minecraft:behavior.trade_interest| -574851053 |
-| minecraft:behavior.trade_with_player| -2048563493 |
+| minecraft:behavior.trade_with_player| 13082946109325010651 |
 | minecraft:behavior.vex_copy_owner_target| -643459543 |
 | minecraft:behavior.vex_random_move| -1117822165 |
 | minecraft:behavior.wither_random_attack_pos_goal| -528895885 |

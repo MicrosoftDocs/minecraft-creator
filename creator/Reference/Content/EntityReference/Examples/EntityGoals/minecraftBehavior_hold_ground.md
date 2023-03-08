@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.hold_ground
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.hold_ground
 
-`minecraft:behavior.hold_ground` allows an entity to stop in their current location, turn to face a mob they are targeting and react with an event.
+`minecraft:behavior.hold_ground` compels an entity to stop at their current location, turn to face a mob they are targeting, and react with an event.
 
 > [!IMPORTANT]
 > `minecraft:behavior.hold_ground` requires a target in order to work properly. Target can be determined by using one of the following behaviors:
@@ -44,7 +44,18 @@ ms.prod: gaming
 
 ### pillager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/pillager.json" range="190-199":::
+```json
+"minecraft:behavior.hold_ground": {
+          "priority": 5,
+          "min_radius": 10,
+          "broadcast": true,
+          "broadcast_range": 8,
+          "within_radius_event": {
+            "event": "minecraft:ranged_mode",
+            "target": "self"
+          }
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.hold_ground`
 

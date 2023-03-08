@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Volume Documentation - minecraft:on_actor_leave
 ms.prod: gaming
 ---

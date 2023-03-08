@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:damage_sensor
 ms.prod: gaming
 ---
@@ -75,7 +75,29 @@ ms.prod: gaming
 
 ### pillager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/pillager.json" range="112-132":::
+```json
+"minecraft:damage_sensor": {
+          "triggers": {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_damage",
+                    "value": "fatal"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "minecraft:gain_bad_omen",
+              "target": "other"
+            }
+          }
+        }
+```
 
 ## Vanilla entities using `minecraft:damage_sensor`
 

@@ -98,6 +98,8 @@ Listed below are the available sounds:
 - `warn`
 - `sonic_charge`
 - `milk`
+- `bundle.remove_one`
+- `bundle.drop_contents`
 - `explode`
 - `fire`
 - `fuse`
@@ -427,6 +429,15 @@ Listed below are the available sounds:
 - `block.sculk_sensor.place`
 - `block.sculk_shrieker.place`
 - `block.enchanting_table.use`
+- `bundle.insert`
+- `dash_ready`
+- `pressure_plate.click_off`
+- `button.click_off`
+- `door.open`
+- `trapdoor.open`
+- `fence_gate.open`
+- `insert`
+- `insert_enchanted`
 - `undefined`
 
 ## Example

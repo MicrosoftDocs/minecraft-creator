@@ -1,19 +1,19 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.slime_keep_on_jumping
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.slime_keep_on_jumping
 
-`minecraft:behavior.slime_keep_on_jumping` allows the entity to continuously jump around like a slime.
+`minecraft:behavior.slime_keep_on_jumping` compels the entity to continuously jump around like a slime.
 
 ## Parameters
 
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | speed_multiplier| 1| Decimal| Determines the multiplier this entity's speed is modified by when jumping around. |
 
 ## Example

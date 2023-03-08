@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.silverfish_wake_up_friends
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.silverfish_wake_up_friends
 
-`minecraft:behavior.silverfish_wake_up_friends` allows an entity to alert other entities of the same family to leave a stone block.
+`minecraft:behavior.silverfish_wake_up_friends` compels an entity to alert other entities of the same family to leave a stone block.
 
 > [!NOTE]
 > This behavior can only be used by the `silverfish` entity type.
@@ -23,7 +23,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.silverfish_wake_up_friends":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 
@@ -31,7 +31,11 @@ ms.prod: gaming
 
 ### silverfish
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/silverfish.json" range="32-34":::
+```json
+"minecraft:behavior.silverfish_wake_up_friends": {
+    "priority": 1
+}
+```
 
 ## Vanilla entities using `minecraft:behavior.silverfish_wake_up_friends`
 

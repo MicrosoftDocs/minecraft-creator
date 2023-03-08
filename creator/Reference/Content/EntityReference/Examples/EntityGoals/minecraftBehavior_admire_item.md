@@ -1,13 +1,13 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.admire_item
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.admire_item
 
-`minecraft:behavior.admire_item` allows an entity to admire an object they are holding.
+`minecraft:behavior.admire_item` compels an entity to admire an object they are holding.
 
 >[!IMPORTANT]
 > `minecraft:behavior.admire_item` requires the `minecraft:admire_item` component to be set within the entity definition as well.

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.target_when_pushed
 
-`minecraft:behavior.target_when_pushed` allows an entity to select a valid target entity that pushed it.
+`minecraft:behavior.target_when_pushed` compels an entity to target the entity that pushed it.
 
 ## Parameters
 
@@ -33,8 +33,7 @@ ms.prod: gaming
             }
           }
         ]
-      },
-
+      }
 ```
 
 ## Vanilla entities examples
@@ -55,9 +54,7 @@ ms.prod: gaming
             }
           }
         ]
-      },
-
-
+      }
 ```
 
 ## Vanilla entities using `minecraft:behavior.target_when_pushed`

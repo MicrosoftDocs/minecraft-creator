@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.look_at_target
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.look_at_target
 
-`minecraft:behavior.look_at_target` allows an entity to look at the target by rotating the head bone pose within a set limit.
+`minecraft:behavior.look_at_target` compels an entity to look at the target by rotating the head bone pose within a set limit.
 
 > [!IMPORTANT]
 > `minecraft:behavior.look_at_target` requires a target in order to work properly. Target can be determined by using one of the following behaviors:
@@ -43,7 +43,11 @@ ms.prod: gaming
 
 ### wither
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither.json" range="113-115":::
+```json
+"minecraft:behavior.look_at_target": {
+        "priority": 5
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.look_at_target`
 

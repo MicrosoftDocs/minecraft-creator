@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - in_lava
 ms.prod: gaming
 ---
@@ -67,11 +67,9 @@ Returns true when the subject entity is in lava.
 
 ### zombie
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie.json" range="154-162":::
-
-### turtle
-
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/turtle.json" range="148-154":::
+```json
+{ "test": "in_lava", "subject": "self", "operator": "==", "value": true }
+```
 
 ## Vanilla entities using `in_lava`
 

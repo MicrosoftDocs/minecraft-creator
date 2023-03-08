@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: Features Documentation - minecraft:fossil_feature
 ms.prod: gaming

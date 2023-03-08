@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.wither_random_attack_pos_goal
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.wither_random_attack_pos_goal
 
-`minecraft:behavior.wither_random_attack_pos_goal` allows an entity to attack at random.
+`minecraft:behavior.wither_random_attack_pos_goal` compels an entity to attack at random.
 
 > [!NOTE]
 > This behavior can only be used by the `wither` entity type.
@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.wither_random_attack_pos_goal":{
-    "priority": 3,
+    "priority": 3
 }
 ```
 
@@ -30,7 +30,11 @@ ms.prod: gaming
 
 ### wither
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wither.json" range="71-73":::
+```json
+"minecraft:behavior.wither_random_attack_pos_goal": {
+        "priority": 3
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.wither_random_attack_pos_goal`
 

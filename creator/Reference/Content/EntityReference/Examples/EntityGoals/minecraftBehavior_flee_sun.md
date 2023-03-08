@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.flee_sun
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.flee_sun
 
-`minecraft:behavior.flee_sun` will make the entity actively avoid the sunlight.
+`minecraft:behavior.flee_sun` compels the entity to actively avoid the sunlight.
 
 ## Parameters
 
@@ -21,7 +21,7 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.flee_sun":{
     "priority": 2,
-    "speed_multiplier":1.50,
+    "speed_multiplier":1.50
 }
 ```
 
@@ -29,7 +29,12 @@ ms.prod: gaming
 
 ### skeleton
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/skeleton.json" range="540-543":::
+```json
+"minecraft:behavior.flee_sun": {
+        "priority": 2,
+        "speed_multiplier": 1
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.flee_sun`
 

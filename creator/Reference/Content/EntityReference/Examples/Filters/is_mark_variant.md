@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - is_mark_variant
 ms.prod: gaming
 ---
@@ -61,13 +61,11 @@ Returns true if the subject entity is the mark variant number provided.
 
 ## Vanilla entities examples
 
-### llama
-
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/llama.json" range="58-72":::
-
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="2040-2062":::
+```json
+{ "test": "is_mark_variant", "subject": "other", "value": 1 }
+```
 
 ## Vanilla entities using `is_mark_variant`
 

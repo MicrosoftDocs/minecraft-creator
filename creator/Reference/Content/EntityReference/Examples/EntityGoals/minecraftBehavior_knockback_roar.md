@@ -1,13 +1,13 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.knockback_roar
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.knockback_roar
 
-`minecraft:behavior.knockback_roar` allows an entity to emit a roar effect that knocks back other entities in a set radius from where the roar was emitted.
+`minecraft:behavior.knockback_roar` compels an entity to emit a roar effect that knocks back other entities in a set radius from where the roar was emitted.
 
 >[!IMPORTANT]
 > `minecraft:behavior.knockback_roar` requires a Trigger Event in order to work properly.

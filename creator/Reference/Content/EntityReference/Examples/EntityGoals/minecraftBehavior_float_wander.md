@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.float_wander
 ms.prod: gaming
 ---
@@ -30,7 +30,7 @@ ms.prod: gaming
     "y_offset": -2.0,
     "random_reselect": true,
     "must_reach": false,
-    "float_duration": [ 0.1, 0.35 ],
+    "float_duration": [ 0.1, 0.35 ]
 }
 ```
 
@@ -38,7 +38,12 @@ ms.prod: gaming
 
 ### ghast
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ghast.json" range="39-42":::
+```json
+"minecraft:behavior.float_wander": {
+        "priority": 2,
+        "must_reach": true
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.float_wander`
 

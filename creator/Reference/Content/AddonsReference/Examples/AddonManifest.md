@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-bbortree
 title: Addons Documentation - manifest.json
 ms.prod: gaming
@@ -51,15 +51,16 @@ The manifest file contains all the basic information about the pack that Minecra
 
 | Name| Type| Description |
 |:-----------|:-----------|:-----------|
-|uuid| String| This is the unique identifier of the pack that this pack depends on. It needs to be the exact same UUID that the pack has defined in the header section of it's manifest file. |
+|uuid| String| This is the unique identifier of the pack that this pack depends on. It needs to be the exact same UUID that the pack has defined in the header section of its manifest file. |
 |version| Vector [a, b, c]|  This is the specific version of the pack that your pack depends on. Should match the version the other pack has in its manifest file. |
 
 ### capabilities
 
 | Name| Description |
 |:-----------|:-----------|
-| experimental_custom_ui| The pack can use HTML files to create custom UI, as well as use or modify the custom UI. |
 | chemistry| The pack can add, remove, or modify chemistry behavior. |
+| editorExtension| Indicates that this pack contains extensions for editing. |
+| experimental_custom_ui| The pack can use HTML files to create custom UI, as well as use or modify the custom UI. |
 | raytraced| The pack uses Ray Tracking functionality and may use custom shaders. |
 
 ### metadata

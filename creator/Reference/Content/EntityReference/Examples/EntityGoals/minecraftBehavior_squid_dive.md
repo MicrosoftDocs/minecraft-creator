@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.squid_dive
 
-`minecraft:behavior.squid_dive` allows an entity to dive underwater.
+`minecraft:behavior.squid_dive` compels an entity to dive underwater.
 
 > [!NOTE]
 > This behavior can only be used by the `squid` entity type.
@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.squid_dive":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 
@@ -32,9 +32,8 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.squid_dive": {
-        "priority": 2
-      },
-
+    "priority": 2
+}
 ```
 
 ## Vanilla entities using `minecraft:behavior.squid_dive`

@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - is_color
 ms.prod: gaming
 ---
@@ -86,7 +86,9 @@ Below is a list of color types that can be used for the `value` string.
 
 ### evocation_illager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/evocation_illager.json" range="191-196":::
+```json
+{ "test" :  "is_color", "subject" : "other", "value" :  "blue"}
+```
 
 ## Vanilla entities using is_color
 

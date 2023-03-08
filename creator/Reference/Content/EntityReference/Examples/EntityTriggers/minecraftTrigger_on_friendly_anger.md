@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:on_friendly_anger
 ms.prod: gaming
 ---
@@ -31,7 +31,12 @@ ms.prod: gaming
 
 ### polar_bear
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/polar_bear.json" range="74-77":::
+```json
+"minecraft:on_friendly_anger": {
+    "event": "minecraft:on_anger",
+    "target": "self"
+}
+```
 
 ## Vanilla entities using `minecraft:on_friendly_anger`
 

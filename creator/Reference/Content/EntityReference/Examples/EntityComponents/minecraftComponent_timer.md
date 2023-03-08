@@ -1,6 +1,6 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:timer
 ms.prod: gaming
 ---
@@ -36,7 +36,15 @@ ms.prod: gaming
 
 ### husk
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/husk.json" range="31-37":::
+```json
+"minecraft:timer": {
+          "looping": false,
+          "time": 30,
+          "time_down_event": {
+            "event": "minecraft:convert_to_zombie"
+          }
+}
+```
 
 ## Vanilla entities using `minecraft:timer`
 

@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:rail_movement
 ms.prod: gaming
 ---
@@ -27,7 +27,10 @@ ms.prod: gaming
 
 ### minecart
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/minecart.json" range="21-22":::
+```json
+"minecraft:rail_movement": {
+}
+```
 
 ## Vanilla entities using `minecraft:rail_movement`
 

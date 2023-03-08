@@ -1,6 +1,6 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Addons Documentation - Blocks
 ms.prod: gaming
 ---
@@ -21,11 +21,12 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | age_bit| Boolean| True, False| Determines if saplings should grow |
 | allow_underwater_bit| Boolean|  True, False| Determines if a TNT block works underwater |
 | attached_bit| Boolean| True, False| Determines if a tripwire is attached to another tripwire |
-|  attachment| String|standing, hanging, side, multiple| Determines the type of attachment used by a bell or grindstone block |
+| attachment| String|standing, hanging, side, multiple| Determines the type of attachment used by a bell or grindstone block |
 | bamboo_leaf_size| String| no_leaves, small_leaves, large_leaves| Determines the size of bamboo leaves |
 | bamboo_stalk_thickness| String|thin, thick| Determines the thickness of a bamboo stalk |
 | big_dripleaf_tilt| String| none, unstable, partial_tilt, full_tilt| Determines the tilt state of big dripleaf block |
 | bite_counter| Integer |0 - 6| Tracks how many bites of cake have been taken |
+| books_stored| Integer |0 - 6| Determines how many books are stored in the chiseled bookshelf |
 | brewing_stand_slot_a_bit| Boolean| True, False| Determines if a bottle is shown in slot a of the brewing stand |
 | brewing_stand_slot_b_bit| Boolean| True, False| Determines if a bottle is shown in slot b of the brewing stand |
 | brewing_stand_slot_c_bit| Boolean| True, False| Determines if a bottle is shown in slot c of the brewing stand |
@@ -130,6 +131,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:acacia_button |
 | minecraft:acacia_door |
 | minecraft:acacia_fence_gate |
+| minecraft:acacia_hanging_sign |
 | minecraft:acacia_pressure_plate |
 | minecraft:acacia_stairs |
 | minecraft:acacia_standing_sign |
@@ -147,7 +149,25 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:azalea_leaves |
 | minecraft:azalea_leaves_flowered |
 | minecraft:bamboo |
+| minecraft:bamboo_block |
+| minecraft:bamboo_button |
+| minecraft:bamboo_door |
+| minecraft:bamboo_double_slab |
+| minecraft:bamboo_fence |
+| minecraft:bamboo_fence_gate |
+| minecraft:bamboo_hanging_sign |
+| minecraft:bamboo_mosaic |
+| minecraft:bamboo_mosaic_double_slab |
+| minecraft:bamboo_mosaic_slab |
+| minecraft:bamboo_mosaic_stairs |
+| minecraft:bamboo_planks |
+| minecraft:bamboo_pressure_plate |
 | minecraft:bamboo_sapling |
+| minecraft:bamboo_slab |
+| minecraft:bamboo_stairs |
+| minecraft:bamboo_standing_sign |
+| minecraft:bamboo_trapdoor |
+| minecraft:bamboo_wall_sign |
 | minecraft:barrel |
 | minecraft:barrier |
 | minecraft:basalt |
@@ -162,6 +182,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:birch_button |
 | minecraft:birch_door |
 | minecraft:birch_fence_gate |
+| minecraft:birch_hanging_sign |
 | minecraft:birch_pressure_plate |
 | minecraft:birch_stairs |
 | minecraft:birch_standing_sign |
@@ -213,6 +234,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:chemical_heat |
 | minecraft:chemistry_table |
 | minecraft:chest |
+| minecraft:chiseled_bookshelf |
 | minecraft:chiseled_deepslate |
 | minecraft:chiseled_nether_bricks |
 | minecraft:chiseled_polished_blackstone |
@@ -257,6 +279,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:crimson_fence |
 | minecraft:crimson_fence_gate |
 | minecraft:crimson_fungus |
+| minecraft:crimson_hanging_sign |
 | minecraft:crimson_hyphae |
 | minecraft:crimson_nylium |
 | minecraft:crimson_planks |
@@ -278,6 +301,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:dark_oak_button |
 | minecraft:dark_oak_door |
 | minecraft:dark_oak_fence_gate |
+| minecraft:dark_oak_hanging_sign |
 | minecraft:dark_oak_pressure_plate |
 | minecraft:dark_oak_stairs |
 | minecraft:dark_oak_trapdoor |
@@ -520,6 +544,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:jungle_button |
 | minecraft:jungle_door |
 | minecraft:jungle_fence_gate |
+| minecraft:jungle_hanging_sign |
 | minecraft:jungle_pressure_plate |
 | minecraft:jungle_stairs |
 | minecraft:jungle_standing_sign |
@@ -568,6 +593,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:mangrove_double_slab |
 | minecraft:mangrove_fence |
 | minecraft:mangrove_fence_gate |
+| minecraft:mangrove_hanging_sign |
 | minecraft:mangrove_leaves |
 | minecraft:mangrove_log |
 | minecraft:mangrove_planks |
@@ -612,6 +638,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:netherreactor |
 | minecraft:normal_stone_stairs |
 | minecraft:noteblock |
+| minecraft:oak_hanging_sign |
 | minecraft:oak_stairs |
 | minecraft:observer |
 | minecraft:obsidian |
@@ -739,6 +766,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:spruce_button |
 | minecraft:spruce_door |
 | minecraft:spruce_fence_gate |
+| minecraft:spruce_hanging_sign |
 | minecraft:spruce_pressure_plate |
 | minecraft:spruce_stairs |
 | minecraft:spruce_standing_sign |
@@ -764,6 +792,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:stonecutter |
 | minecraft:stonecutter_block |
 | minecraft:stripped_acacia_log |
+| minecraft:stripped_bamboo_block |
 | minecraft:stripped_birch_log |
 | minecraft:stripped_crimson_hyphae |
 | minecraft:stripped_crimson_stem |
@@ -806,6 +835,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:warped_fence |
 | minecraft:warped_fence_gate |
 | minecraft:warped_fungus |
+| minecraft:warped_hanging_sign |
 | minecraft:warped_hyphae |
 | minecraft:warped_nylium |
 | minecraft:warped_planks |

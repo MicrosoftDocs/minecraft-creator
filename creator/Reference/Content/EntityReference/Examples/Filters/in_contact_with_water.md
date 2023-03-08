@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-mammerla
 title: Entity Documentation - in_contact_with_water
 ms.prod: gaming

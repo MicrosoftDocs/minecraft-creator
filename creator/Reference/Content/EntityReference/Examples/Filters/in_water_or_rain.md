@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - in_water_or_rain
 ms.prod: gaming
 ---
@@ -65,18 +65,13 @@ Returns true when the subject entity is in water or rain.
 
 ## Vanilla entities examples
 
-### enderman
+### axolotl
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/enderman.json" range="60-73":::
-
-### dolphin
-
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/dolphin.json" range="146-150":::
+```json
+{ "test": "in_water_or_rain", "operator": "!=", "value": true }
+```
 
 ## Vanilla entities using `in_water_or_rain`
 
-- [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
+- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
-- [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
-- [snow_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
-- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)

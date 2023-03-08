@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.open_door
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.open_door
 
-`minecraft:behavior.open_door` allows an entity to interact and open a door.
+`minecraft:behavior.open_door` compels an entity to interact and open a door.
 
 ## Parameters
 
@@ -21,17 +21,19 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.open_door":{
     "priority": 2,
-    "close_door_after":true,
+    "close_door_after":true
 }
 ```
 
 ## Vanilla entities examples
 
-### wandering_trader
+### villager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wandering_trader.json" range="241-244":::
+```json
+"minecraft:annotation.open_door": {
+}
+```
 
 ## Vanilla entities using `minecraft:behavior.open_door`
 
 - [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)

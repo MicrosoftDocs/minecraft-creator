@@ -1,27 +1,25 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: v-jillheaden
 title: Block Documentation - minecraft:material_instances
 ms.prod: gaming
 ---
 
 # Block Documentation - minecraft:material_instances
 
-`minecraft:material_instances` is a `JSON Object` component that specifies the material instances for a block. Maps face or material_instance names in a geometry file to an actual material instance. You can assign a material instance object to any of these faces: `up`, `down`, `north`, `south`, `east`, `west`, or `*`. You can also give an instance the name of your choosing such as `my_instance`, and then assign it to a face by doing `north`:`my_instance`.
+`minecraft:material_instances` is a `JSON Object` component that specifies the material instances for a block. The object contains a map that maps face or material_instance names in a geometry file to an actual material instance. You can assign a material instance object to any of these faces: `up`, `down`, `north`, `south`, `east`, `west`, or `*`. You can also give an instance the name of your choosing such as `my_instance`, and then assign it to a face by doing `"north": "my_instance"`.
 
->[!IMPORTANT]
-> `minecraft:material_instances` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
->
->Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
->
->To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md).
+## Default Value of the Component
 
-## Material Instance
+This component is specified as a `JSON Object`, so it does not have a default value. You must provide at least the `*` material instance with a valid texture in order to use this component.
 
-A material instance definition to map to a material instance in a geometry file. The material instance `*` will be used for any materials that don't have a match.
-## Extra Parameters
+### Material Instance
 
-`minecraft:material_instances` can use the following to define the JSON object:
+The `minecraft:material_instances` component contains a map of material instance names/face names to material instance definitions (JSON Objects). The material instance `*` is required and will be used for any materials that don't have a match.
+
+## Material Instance Parameters
+
+The following are parameters of EACH material instance you provide:
 
 | Name |Default Value |Type |Description |
 |:----|:----|:----|:----|
@@ -30,10 +28,38 @@ A material instance definition to map to a material instance in a geometry file.
 | render_method| opaque| String| The render method to use. Must be one of these options: `opaque` - Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency. `double_sided` - Used for completely disabling backface culling. `blend` - Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures). `alpha_test` - Used for a block like the vanilla (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also disables backface culling.  |
 | texture| | String| Texture name for the material. |
 
-## Example
+## Example (using * and all parameters of a material instance)
 
 ```json
 "minecraft:material_instances": {
-    "NewInstance":{"texture":"fancyTexture", "render_method": "alpha_test"}
+    "*": {
+        "texture":"custom_texture",
+        "ambient_occlusion": false,
+        "face_dimming": false,
+        "render_method": "alpha_test"
+    }
+}
+```
+
+## Example (using faces and a custom named material instance)
+
+```json
+"minecraft:material_instances": {
+    "*": {
+        "texture":"backupTexture"
+    },
+    "custom_sides": {
+        "texture": "side_texture"
+    },
+    "up": {
+        "texture": "top_texture"
+    },
+    "down": {
+        "texture": "bottom_texture"
+    },
+    "north": "custom_sides",
+    "south": "custom_sides",
+    "east": "custom_sides",
+    "west": "custom_sides"
 }
 ```

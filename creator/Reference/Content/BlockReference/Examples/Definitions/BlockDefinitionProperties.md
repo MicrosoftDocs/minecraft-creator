@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Block Documentation - Block Properties & Descriptions
 ms.prod: gaming
 ---
@@ -13,7 +13,7 @@ These properties are part of the Block Definition and Block Properties that are 
 
 ```json
 {
-  "format_version": "1.19.30",
+  "format_version": "1.19.60",
   "minecraft:block": {
     "description": {
       "identifier": "design:lavenderstone"

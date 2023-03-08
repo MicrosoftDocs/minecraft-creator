@@ -3,20 +3,20 @@ author: mammerla
 ms.author: v-jillheaden
 title: Getting Started with Minecraft Entity Wizard
 ms.prod: gaming
-description: A tutorial covering how to create a custom entity model utilizing the Minecraft Entity Wizard tool in Blockbench
+description: A tutorial covering how to create a custom entity model using the Minecraft Entity Wizard tool in Blockbench
 ---
 
 # Getting Started with the Minecraft Entity Wizard
 
-If you are new to Minecraft Add-On development, creating your first working behavior pack and custom entity can take a lot of time and research. The Minecraft Entity Wizard for Blockbench aims to make it as easy as possible to do these first steps, to create a custom entity and to add it to your world. From there, you can step by step build on your entity, change the model, or add your own behavior.
+If you are new to Minecraft add-on development, creating your first working behavior pack and custom entity can take a lot of time and research. The Minecraft Entity Wizard for Blockbench aims to make it as easy as possible to create a custom entity and to add it to your world. From there, you can build on your entity, change the model, or add your own behavior.
 
 ### Building a Grizzly Bear with the Minecraft Entity Wizard
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMmJb]
 
-Blockbench itself is a 3D modeling program with native support for many Minecraft 3D model formats. The Entity Wizard is a plugin for Blockbench that can be installed through the built-in plugin store. Once you have created your basic entity in the Entity Wizard, you can continue to use Blockbench to modify the model, and you can edit the behavior in an external program (more on that later).
+Blockbench is a 3D modeling program with native support for many Minecraft 3D model formats. Once you have created your basic entity in the Entity Wizard, you can continue to use Blockbench to modify the model, and you can edit the behavior in an external program (more on that later).
 
-To give you a starting point, the Entity Wizard offers most of Minecraft's vanilla mobs as presets. You can choose the one that is closest to the mob you want to create. For example, if you want to create a shark, choose the dolphin preset. There are also stripped down "basic" presets that you can use if you are a more experienced addon creator and you want to build your behavior from scratch.
+As a starting point, the Entity Wizard offers most of Minecraft's vanilla mobs as presets. For example, if you want to create a shark, you can choose the dolphin preset. There are also stripped down "basic" presets that you can use if you are a more experienced add-on creator and want to create entity behavior from scratch.
 
 --------
 
@@ -24,18 +24,22 @@ In this tutorial, you will learn the following:
 
 > [!div class="checklist"]
 >
-> - How to add the Minecraft Entity Wizard plugin to Blockbench.
-> - Understand the steps taken to create a custom entity with the Wizard.
-> - Export out the entity to use within Minecraft: Bedrock Edition.
+> - How to add the Minecraft Entity Wizard plugin to Blockbench
+> - The steps to creating a custom entity with the Wizard
+> - How to export an entity to use within Minecraft: Bedrock Edition
 
 --------
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial.
+It's recommended that the following be completed before beginning this tutorial.
 
 - Either have [Blockbench](https://blockbench.net) installed or access to [Blockbench web app](https://web.blockbench.net)
 - [Getting Started with Add-On Development](GettingStarted.md)
+
+>[!IMPORTANT]
+>Blockbench is provided by external, third-party contributors and is not a Mojang/Microsoft offering. Users should use at their own discretion.
+
 
 ## Installation
 
@@ -53,7 +57,7 @@ Once you have downloaded and installed [Blockbench](https://blockbench.net), you
 
 ## The Wizard
 
-Once the plugin is installed, you can now use the Minecraft Entity Wizard to start creating your first Entity with the plugin.
+Once the plugin is installed, you can use the Minecraft Entity Wizard to start creating your entity.
 
 1. Click the yellow banner on the start screen to open the wizard.
     1. Alternatively, navigate to **Filter** and select **Create Bedrock Entity** to open the wizard.
@@ -61,7 +65,7 @@ Once the plugin is installed, you can now use the Minecraft Entity Wizard to sta
 
 :::image type="content" source="Media/MinecraftEntityWizard/MinecraftEntityWizard_select_from_filter.png" alt-text="Image showcasing the alternate route of selecting Filter and then selecting Create Bedrock Entity":::
 
-The wizard will guide you through all the steps required to create your custom entity. To navigate the wizard, use the **Back** and **Next** buttons at the bottom of the wizard to navigate between pages.
+The wizard will guide you through the steps required to create your custom entity. To navigate the wizard, use the **Back** and **Next** buttons at the bottom of the screen.
 
 > [!CAUTION]
 > You can also close the dialog and select **Keep** to keep your current state and inputs. However, closing Blockbench entirely **will** discard your input.
@@ -73,13 +77,13 @@ The Display Name is the name that the entity will later be called in Minecraft. 
 :::image type="content" source="Media/MinecraftEntityWizard/MinecraftEntityWizard_naming.png" alt-text="Minecraft Entity Wizard showcasing where Creators can set the Name and Identifier for their new entity.":::
 
 > [!NOTE]
-> The **Identifier** is the internal name used within Minecraft that is commonly used in commands and in other places to identify this type of entity.
+> The **Identifier** is the internal name used within Minecraft that is commonly used in commands and other places to identify this type of entity.
 
 ### Appearance
 
-On this page, you can select the appearance of your entity from a list of presets. The appearance includes model, texture, animations, and sounds. At a later step, you will be able to edit and modify this model in Blockbench.
+Select the appearance of your entity from a list of presets. The appearance includes model, texture, animations, and sounds. At a later step, you will be able to edit and modify this model in Blockbench.
 
-:::image type="content" source="Media/MinecraftEntityWizard/MinecraftEntityWizard_Appearance.png" alt-text="Minecraft Entity Wizard showcasing the Appearance Tab":::
+:::image type="content" source="Media/MinecraftEntityWizard/MinecraftEntityWizard_appearance.png" alt-text="Minecraft Entity Wizard showcasing the Appearance Tab":::
 
 > [!NOTE]
 > If you currently have a model opened inside Blockbench, you may also pick this model as your starting point.
@@ -136,12 +140,6 @@ In the Blockbench desktop app, there are up to three methods available to save y
 
 Depending on the export option you have selected, you may need to enter some information about the Add-On that the wizard is about to create.
 
-### Exporting to Minecraft Education Edition
-
-In Blockbench, there is a checkbox for the option to target **Minecraft Education Edition**. Go to File > Preferences > Settings > Export and scroll down to find the **Entity Wizard: Target Education Edition** checkbox.
-
-Not all entities may be supported in Education Edition due to version differences. For example, if Education Edition is version 1.17, then entities from Vanilla Bedrock version 1.19 (such as allay, frog, tadpole and warden) are not supported.
-
 ### Pack Name
 
 Enter the name of your pack. This name will be used both for the generated file, as well as for the name in the pack menu in Minecraft.
@@ -150,7 +148,7 @@ Enter the name of your pack. This name will be used both for the generated file,
 
 The pack icon is optional. You can upload an image as an icon to represent your pack in the pack menu. The image should be a PNG file, the recommended resolution is 64 by 64 pixels.
 
-:::image type="content" source="Media/MinecraftEntityWizard/MinecraftEnityWizard_next_steps.png" alt-text="Image showcasing the next steps section of the last step in the Minecraft Entity Wizard":::
+:::image type="content" source="Media/MinecraftEntityWizard/MinecraftEntityWizard_next_steps.png" alt-text="Image showcasing the next steps section of the last step in the Minecraft Entity Wizard":::
 
 ## Installing the pack
 
@@ -178,7 +176,7 @@ You can learn how to model and animate in this tutorial playlist: [ArtsByKev Blo
 
 More information on Blockbench can be found on the [Blockbench Wiki](https://www.blockbench.net/wiki/).
 
-### Behavior
+### Editing Behavior
 
 If you want to edit the behavior and other aspects of your entity, you need to use a code editor. The wizard will present you with an option to open the packs in Visual Studio Code, a code editor that is popular for addon development for Minecraft: Bedrock Edition. You can learn how to [set up Visual Studio Code for addon development](gettingstarted.md#visual-studio-code) under this link.
 
@@ -199,7 +197,7 @@ Want to learn more about building with Blockbench? The Blockbench Wiki has step 
 > [!div class="nextstepaction"]
 > [Blockbench Wiki](https://www.blockbench.net/wiki/)
 
-The Blockbench Quick Start guide can help lead you to the specific document that you’re looking for and is a great way to discover relevant external guides and videos.
+The Blockbench Quick Start guide can help lead you to the specific document that you're looking for and is a great way to discover relevant external guides and videos.
 
 > [!div class="nextstepaction"]
 > [Blockbench Quick Start](https://www.blockbench.net/quickstart)

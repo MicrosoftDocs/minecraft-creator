@@ -16,13 +16,13 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*| Integer |The higher the priority, the sooner this behavior will be executed as a goal.|
 
 ## Example
 
 ```json
 "minecraft:behavior.dragonholdingpattern":{
-    "priority": 3,
+    "priority": 3
 }
 ```
 
@@ -30,9 +30,11 @@ ms.prod: gaming
 
 ### ender_dragon
 
+```json
 "minecraft:behavior.dragonholdingpattern": {
-          "priority": 3
-        },
+     "priority": 3
+}
+```
 
 ## Vanilla entities using `minecraft:behavior.dragonholdingpattern`
 

@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.door_interact
 ms.prod: gaming
 ---
@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.door_interact":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 

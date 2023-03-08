@@ -1,13 +1,13 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.explore_outskirts
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.explore_outskirts
 
-`minecraft:behavior.explore_outskirts` allows the entity to first travel to a random point on the outskirts of the village, and then explore random points within a small distance. This goal requires "minecraft:dweller" and "minecraft:navigation" to execute.
+`minecraft:behavior.explore_outskirts` compels the entity to first travel to a random point on the outskirts of the village, and then explore random points within a small distance. This goal requires `minecraft:dweller` and `minecraft:navigation` to execute.
 
 ## Parameters
 

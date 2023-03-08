@@ -10,7 +10,7 @@ description: "When converting content with Chunker, some extra steps are needed 
 
 When Minecraft world generation is updated, only freshly generated chunks will use the updated generator. This tutorial explains how you can use Chunker to reset The Nether in your survival world.
 
-The Nether Update saw The Nether transformed into a world with varying biomes, interesting new blocks, and marvelous new creatures. In this tutorial, we’ll explain how you can bring the new Nether features into your existing survival world.
+The Nether Update saw The Nether transformed into a world with varying biomes, interesting new blocks, and marvelous new creatures. In this tutorial, we'll explain how you can bring the new Nether features into your existing survival world.
 
 In this tutorial you will learn the following:
 
@@ -20,7 +20,7 @@ In this tutorial you will learn the following:
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial.
+It's recommended that the following be completed before beginning this tutorial.
 
 - [Chunker - Overview](ChunkerOverview.md)
 - [Chunker - Advanced Mode](ChunkerAdvancedMode.md)
@@ -28,13 +28,13 @@ It’s recommended that the following be completed before beginning this tutoria
 
 ## Pick the world you want to upgrade
 
-Find the survival world you want to bring up to date with the new Nether. We’ll be using a world from Minecraft: Bedrock Edition.
+Find the survival world you want to bring up to date with the new Nether. We'll be using a world from Minecraft: Bedrock Edition.
 
 ![Old Nether without updated features](Media/Chunker/netherold.png)
 *Our current Nether, originally generated in Bedrock Edition 1.14.*
 
 ## Back up your world
-When you are doing anything potentially destructive to a world, it’s highly recommended you make a backup.
+When you are doing anything potentially destructive to a world, it's highly recommended you make a backup.
 
 Information on how to back up your worlds can be found on the [Mojang support website](https://help.minecraft.net/hc/en-us/articles/360034754912-Backing-up-Minecraft-worlds-).
 
@@ -44,7 +44,7 @@ Navigate to https://chunker.app to open Chunker. No login is required, and sessi
 
 ## Upload your world
 
-As we’re using Bedrock Edition on Windows 10, we’re going to utilize the built-in “Export World” functionality. This can be found at the bottom of the “Edit World” screen. After exporting, you’ll be given a `.mcworld` file that Chunker can understand.
+As we're using Bedrock Edition on Windows 10, we're going to utilize the built-in "Export World" functionality. This can be found at the bottom of the "Edit World" screen. After exporting, you'll be given a `.mcworld` file that Chunker can understand.
 
 ![Export world button](Media/Chunker/netherexportworld.png)
 
@@ -54,11 +54,11 @@ For more information on locating your world on other devices/editions, check out
 
 ## Choosing an export version
 
-As we only want to modify our world, we’ll select the version marked as “Source Version”. Selecting an output different to the source will result in Chunker rebuilding the world.
+As we only want to modify our world, we'll select the version marked as "Source Version". Selecting an output different to the source will result in Chunker rebuilding the world.
 
 ![Chunker export window](Media/Chunker/netherexportchunker.png)
 
-Once you’ve selected your source version, click the **Advanced Mode** button to continue.
+Once you've selected your source version, click the **Advanced Mode** button to continue.
 
 ## Tell Chunker to remove The Nether
 

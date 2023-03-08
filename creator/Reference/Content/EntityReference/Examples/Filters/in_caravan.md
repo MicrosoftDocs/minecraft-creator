@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - in_caravan
 ms.prod: gaming
 ---
@@ -67,7 +67,9 @@ Returns true if the subject entity is in a caravan.
 
 ### llama
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/llama.json" range="439":::
+```json
+{ "test": "in_caravan", "value": false }
+```
 
 ## Vanilla entities using `in_caravan`
 

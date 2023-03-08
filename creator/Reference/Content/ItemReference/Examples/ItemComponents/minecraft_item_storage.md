@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: Item Documentation - minecraft:item_storage
 ms.prod: gaming

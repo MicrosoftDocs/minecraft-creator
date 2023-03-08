@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.break_door
 ms.prod: gaming
 ---
@@ -10,7 +10,7 @@ ms.prod: gaming
 `minecraft:behavior.break_door` allows an entity to break down doors.
 
 > [!CAUTION]
-> `minecraft:behavior.break_door` is not currently used by any entities within Minecraft: Bedrock Edition. In it's place, the parameter`"can_break_doors"` has been added to the `"minecraft:navigation` component to allow entities to break down doors.
+> `minecraft:behavior.break_door` is not currently used by any entities within Minecraft: Bedrock Edition. In its place, the parameter`"can_break_doors"` has been added to the `"minecraft:navigation` component to allow entities to break down doors.
 
 ## Parameters
 
@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.break_door":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 

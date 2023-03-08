@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: Entity Documentation - minecraft:mob_effect
 ms.prod: gaming
@@ -34,7 +34,19 @@ ms.prod: gaming
 
 ### pufferfish
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/pufferfish.json" range="91-101":::
+```json
+"minecraft:mob_effect": {
+          "effect_range": 0.2,
+          "mob_effect": "poison",
+          "effect_time": 10,
+          "entity_filter": {
+            "any_of": [
+              { "test": "is_family", "subject": "other", "value": "player" },
+              { "test": "is_family", "subject": "other", "value": "monster" }
+            ] 
+          }
+        }
+```
 
 ## Vanilla entities using `minecraft:mob_effect`
 

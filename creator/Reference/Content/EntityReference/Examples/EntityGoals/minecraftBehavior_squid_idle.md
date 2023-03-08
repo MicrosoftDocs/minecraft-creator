@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.squid_idle
 
-`minecraft:behavior.squid_idle` allows an entity to swim in place.
+`minecraft:behavior.squid_idle` compels an entity to swim in place.
 
 > [!NOTE]
 > This behavior can only be used by the `squid` entity type.
@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.squid_idle":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 
@@ -33,8 +33,7 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.squid_idle": {
         "priority": 2
-      },
-
+      }
 ```
 
 ## Vanilla entities using `minecraft:behavior.squid_idle`

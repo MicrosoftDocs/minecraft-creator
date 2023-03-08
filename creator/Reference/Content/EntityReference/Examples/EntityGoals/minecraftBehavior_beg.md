@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.beg
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.beg
 
-`minecraft:behavior.beg` allows an entity to react by tilting its head when a player is holding select items nearby.
+`minecraft:behavior.beg` compels an entity to react by tilting its head when a player is holding select items nearby.
 
 ## Parameters
 
@@ -36,7 +36,15 @@ ms.prod: gaming
 
 ### wolf
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wolf.json" range="406-412":::
+```json
+"minecraft:behavior.beg": {
+        "priority": 9,
+        "look_distance": 8,
+        "look_time": [ 2, 4 ],
+        "items": [ "bone", "porkchop", "cooked_porkchop", "chicken", "cooked_chicken", 
+                   "beef", "cooked_beef", "rotten_flesh", "muttonraw", "muttoncooked", "rabbit", "cooked_rabbit" ]
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.beg`
 

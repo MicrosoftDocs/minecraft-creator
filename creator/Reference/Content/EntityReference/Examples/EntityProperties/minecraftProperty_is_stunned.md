@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - minecraft:is_stunned
 ms.prod: gaming
 ---
@@ -47,7 +47,10 @@ ms.prod: gaming
 
 ### ravager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ravager.json" range="186-187":::
+```json
+"minecraft:is_stunned":{
+}
+```
 
 ## Vanilla entities using `minecraft:is_stunned`
 

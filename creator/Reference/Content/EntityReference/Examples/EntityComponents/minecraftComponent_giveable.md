@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:giveable
 ms.prod: gaming
 ---
@@ -39,7 +39,21 @@ ms.prod: gaming
 
 ### panda
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/panda.json" range="346-358":::
+```json
+ "minecraft:giveable": {
+        "triggers": {
+          "cooldown": 3.0,
+          "items": [
+            "bamboo",
+            "cake"
+          ],
+          "on_give": {
+            "event": "minecraft:on_calm",
+            "target": "self"
+          }
+        }
+      }
+```
 
 ## Vanilla entities using `minecraft:giveable`
 

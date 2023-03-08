@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:nameable
 ms.prod: gaming
 ---
@@ -53,7 +53,10 @@ ms.prod: gaming
 
 ### cat
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/cat.json" range="288-289":::
+```json
+"minecraft:nameable": {
+}
+```
 
 ## Vanilla entities using `minecraft:nameable`
 

@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:entity_sensor
 ms.prod: gaming
 ---
@@ -39,7 +39,25 @@ ms.prod: gaming
 
 ### pufferfish
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/pufferfish.json" range="15-31":::
+```json
+"minecraft:entity_sensor": {
+          "sensor_range": 2.5,
+          "relative_range": false,
+          "minimum_count": 1,
+          "event_filters": {
+            "any_of": [
+              { "test": "is_family", "subject": "other", "value": "mob" },
+              { "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "none_of": 
+                  { "test": "has_ability", "subject": "other", "value": "instabuild" } 
+                }
+              ]}
+            ]
+          },
+          "event": "minecraft:start_half_puff"
+        }
+```
 
 ## Vanilla entities using `minecraft:entity_sensor`
 

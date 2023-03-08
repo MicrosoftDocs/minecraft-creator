@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:can_power_jump
 ms.prod: gaming
 ---
@@ -20,7 +20,10 @@ ms.prod: gaming
 
 ### donkey
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/donkey.json" range="266-267":::
+```json
+"minecraft:can_power_jump": {
+}
+```
 
 ## Vanilla entities using `minecraft:can_power_jump`
 

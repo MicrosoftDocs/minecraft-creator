@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Item Documentation - minecraft:cooldown
 ms.prod: gaming
 ---
 
 # Item Documentation - minecraft:cooldown
 
-`minecraft:cooldown` sets the item's "Cool down" time. After you use an item it becomes unusable for the duration specified by the 'duration' setting in this component.
+`minecraft:cooldown` sets an items "Cool down" time. After using an item, it becomes unusable for the duration specified by the 'duration' setting of this component.
 
 >[!IMPORTANT]
 > `minecraft:cooldown` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.

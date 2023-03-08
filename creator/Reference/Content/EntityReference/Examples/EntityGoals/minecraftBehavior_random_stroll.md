@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.random_stroll
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.random_stroll
 
-`minecraft:behavior.random_stroll` allows an entity to choose a random direction to walk towards.
+`minecraft:behavior.random_stroll` compels an entity to choose a random direction to walk towards.
 
 ## Parameters
 
@@ -35,7 +35,12 @@ ms.prod: gaming
 
 ### cat
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/cat.json" range="384-387":::
+```json
+"minecraft:behavior.random_stroll": {
+        "priority": 8,
+        "speed_multiplier": 0.8
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.random_stroll`
 

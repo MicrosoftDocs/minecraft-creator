@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:movement.skip
 ms.prod: gaming
 ---
@@ -27,7 +27,10 @@ ms.prod: gaming
 
 ### rabbit
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/rabbit.json" range="127-128":::
+```json
+"minecraft:movement.skip": {
+      }
+```
 
 ## Vanilla entities using `minecraft:movement.skip`
 

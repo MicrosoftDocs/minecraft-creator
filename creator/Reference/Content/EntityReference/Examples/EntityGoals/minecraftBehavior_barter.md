@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.barter
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.barter
 
-`minecraft:behavior.barter` allows an entity to drop an item in return after a player offers a trade by dropping a specific item near the entity.
+`minecraft:behavior.barter` compels an entity to drop an item in return after a player offers a trade by dropping a specific item near the entity.
 
 > [!IMPORTANT]
 > `minecraft:behavior.barter` requires the following in order to work properly;
@@ -33,7 +33,12 @@ ms.prod: gaming
 
 ### piglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="499-501":::
+```json
+"minecraft:barter": {
+          "barter_table": "loot_tables/entities/piglin_barter.json",
+          "cooldown_after_being_attacked": 20
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.barter`
 

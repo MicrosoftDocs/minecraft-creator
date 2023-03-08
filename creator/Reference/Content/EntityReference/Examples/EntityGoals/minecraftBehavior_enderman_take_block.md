@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.enderman_take_block
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.enderman_take_block
 
-`minecraft:behavior.enderman_take_block` allows the entity to pick up a nearby block and carry the block in its hands.
+`minecraft:behavior.enderman_take_block` compels the entity to pick up a nearby block and carry the block in its hands.
 
 > [!NOTE]
 > This behavior can only be used by the `enderman` entity type.
@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.enderman_take_block":{
-    "priority": 9,
+    "priority": 9
 }
 ```
 
@@ -30,7 +30,11 @@ ms.prod: gaming
 
 ### enderman
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/enderman.json" range="164-166":::
+```json
+"minecraft:behavior.enderman_take_block": {
+    "priority": 11
+}
+```
 
 ## Vanilla entities using `minecraft:behavior.enderman_take_block`
 

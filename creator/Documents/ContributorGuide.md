@@ -93,7 +93,7 @@ Use the following workflow to create new articles in the documentation repo via 
 
 1. Create a fork off the MicrosoftDocs/minecraft-creator 'main' branch (using the Fork button in the top right).
 
-![GitHub Fork Button](\Media\ContributorGuide\LearningPortal_GitHubFork.png)
+![GitHub Fork Button](Media/ContributorGuide/LearningPortal_GitHubFork.png)
 
 2. In the "creator/Documents" folder, select **Add file** > **Create new file** in the top right.
 
@@ -126,7 +126,7 @@ keywords:
 
 9. Select New pull request and merge your fork's 'main' branch into MicrosoftDocs/minecraft-creator 'main' (make sure the arrow is pointing the correct way).
 
-![GitHub Pull Request](\Media\ContributorGuide\LearningPortal_GitHubPR.png)
+![GitHub Pull Request](Media/ContributorGuide/LearningPortal_GitHubPR.png)
 
 Your pull request will be reviewed by our content team. If it is approved, your changes will go live at our next regular release. If your pull request is not approved, a member of the content team will leave a comment in your pull request letting you know the reason it was not approved.
 
@@ -140,7 +140,7 @@ The following resources will help you learn how to edit documentation using the 
 
 ### Adding tables
 
-When tables are styled in Microsoft Learn content, they won't have borders or custom styles even if you try using inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. Here’s a site that makes Markdown tables easy.
+When tables are styled in Microsoft Learn content, they won't have borders or custom styles even if you try using inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. Here's a site that makes Markdown tables easy.
 
 The Docs Markdown Extension for Visual Studio Code also makes table generation easy if you're using Visual Studio Code (see below) to edit the documentation.
 
@@ -152,7 +152,7 @@ The Docs Markdown Extension for Visual Studio Code also makes table generation e
 
 ### Adding images
 
-You’ll need to upload your images to the "minecraft-creator/creator/images" folder in the repo, and then reference them appropriately in the article. Images will automatically show up at full-size, which means large images will fill the entire width of the article. We recommend pre-sizing your images before uploading them. The recommended width is between 600 and 700 pixels, though you should size up or down if it’s a dense screenshot or a fraction of a screenshot, respectively.
+You'll need to upload your images to the "minecraft-creator/creator/images" folder in the repo, and then reference them appropriately in the article. Images will automatically show up at full-size, which means large images will fill the entire width of the article. We recommend pre-sizing your images before uploading them. The recommended width is between 600 and 700 pixels, though you should size up or down if it's a dense screenshot or a fraction of a screenshot, respectively.
 
  >[!IMPORTANT]
  >You can only upload images to your forked repo before merging. So if you plan on adding images to an article, you'll need to use Visual Studio Code to add the images to your fork's "images" folder first or make sure you've done the following in a web browser:
@@ -229,10 +229,10 @@ Use the following workflow to make changes to the documentation with Visual Stud
     b. In Visual Studio Code, select the sync button to sync your freshly updated fork to the local clone.
 
     ![GitHub Sync Button](Media\ContributorGuide\LearningPortal_GitHubSyncButton.png)
-
+"
 2. Create or edit articles in your cloned repo using Visual Studio Code.
 
-    a. Edit one or more articles (add images to “images” folder, if necessary).
+    a. Edit one or more articles (add images to "images" folder, if necessary).
 
     b. **Save** changes in **Explorer**.
 
@@ -244,7 +244,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
 
 3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/minecraft-creator 'main' (make sure the arrow is pointing the correct way).
 
-    ![GitHub Pull Request](\Media\ContributorGuide\LearningPortal_GitHubPR.png)
+    ![Create a GitHub Pull Request](Media\ContributorGuide\LearningPortal_GitHubPR.png)
 
 ### Useful extensions
 

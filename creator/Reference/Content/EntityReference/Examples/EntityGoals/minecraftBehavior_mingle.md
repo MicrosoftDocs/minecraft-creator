@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.mingle
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.mingle
 
-`minecraft:behavior.mingle` allows an entity to navigate to the village bell point of interest and interact with other entities that have been assigned.
+`minecraft:behavior.mingle` compels an entity to navigate to the village bell point of interest and interact with other entities that have been assigned.
 
 ## Parameters
 
@@ -37,7 +37,16 @@ ms.prod: gaming
 
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="530-537":::
+```json
+"minecraft:behavior.mingle": {
+          "priority": 7,
+          "speed_multiplier": 0.5,
+          "duration": 30,
+          "cooldown_time": 10,
+          "mingle_partner_type": "minecraft:villager_v2",
+          "mingle_distance": 2.0
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.mingle`
 

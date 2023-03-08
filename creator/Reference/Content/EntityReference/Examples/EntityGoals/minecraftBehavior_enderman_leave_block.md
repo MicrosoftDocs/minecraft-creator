@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.enderman_leave_block
 
-`minecraft:behavior.enderman_leave_block` allows the entity to drop the block they are currently holding.
+`minecraft:behavior.enderman_leave_block` compels the entity to drop the block they are currently holding.
 
 > [!NOTE]
 > This behavior can only be used by the `enderman` entity type.
@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.enderman_leave_block":{
-    "priority": 8,
+    "priority": 8
 }
 ```
 
@@ -32,10 +32,9 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.enderman_leave_block": {
-        "priority": 10
-      },
-
-``````
+    "priority": 10
+}
+```
 
 ## Vanilla entities using `minecraft:behavior.enderman_leave_block`
 

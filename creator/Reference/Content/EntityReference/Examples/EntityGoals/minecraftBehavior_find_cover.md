@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.find_cover
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.find_cover
 
-`minecraft:behavior.find_cover` allows an entity to locate shade in the world.
+`minecraft:behavior.find_cover` compels an entity to locate shade in the world.
 
 ## Parameters
 
@@ -23,7 +23,7 @@ ms.prod: gaming
 "minecraft:behavior.find_cover":{
     "priority": 2,
     "cooldown_time":10,
-    "speed_multiplier":3,
+    "speed_multiplier":3
 }
 ```
 
@@ -31,7 +31,13 @@ ms.prod: gaming
 
 ### fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="320-324":::
+```json
+"minecraft:behavior.find_cover": {
+          "priority": 0,
+          "speed_multiplier": 1,
+          "cooldown_time": 0.0
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.find_cover`
 

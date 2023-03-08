@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-bbortree
 title: Addons Documentation - Entity List
 ms.prod: gaming
@@ -29,6 +29,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | bee| 378| 122 |
 | blaze| 2859| 43 |
 | boat| 90| 90 |
+| camel| 5002| 138 |
 | cat| 21323| 75 |
 | cave_spider| 265000| 40 |
 | chalkboard| 78| 78 |
@@ -106,6 +107,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | skeleton_horse| 2186010| 26 |
 | slime| 2853| 37 |
 | small_fireball| 4194398| 94 |
+| sniffer| 5003| 139 |
 | snow_golem| 789| 21 |
 | snowball| 4194385| 81 |
 | spider| 264995| 35 |

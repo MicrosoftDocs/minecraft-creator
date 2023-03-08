@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:entity_born
 ms.prod: gaming
 ---
@@ -27,7 +27,15 @@ ms.prod: gaming
 
 ### goat
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/goat.json" range="395-401":::
+```json
+"minecraft:entity_born": {
+        "add": {
+          "component_groups": [
+            "goat_baby"
+          ]
+        }
+      }
+```
 
 ## Vanilla entities using `minecraft:entity_born`
 
