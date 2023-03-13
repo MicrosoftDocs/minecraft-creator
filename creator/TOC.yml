@@ -50,6 +50,8 @@
             href: Documents/BaseGameVersioning.md
           - name: Actor Storage
             href: Documents/ActorStorage.md
+          - name: Minecraft File Extensions
+            href: Documents/MinecraftFileExtensions.md
           - name: Data-Driven Overworld Height
             href: Documents/DataDrivenOverworldHeight.md
           - name: Editing NBTs Safely
