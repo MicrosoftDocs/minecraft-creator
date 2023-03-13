@@ -4,6 +4,8 @@
       href: index.yml
     - name: "What's New"
       items: 
+        - name: 1.19.70 Update Summary
+          href: Documents/Update1.19.70.md
         - name: 1.19.60 Update Summary
           href: Documents/Update1.19.60.md
         - name: 1.19.50 Update Summary
@@ -48,6 +50,8 @@
             href: Documents/BaseGameVersioning.md
           - name: Actor Storage
             href: Documents/ActorStorage.md
+          - name: Minecraft File Extensions
+            href: Documents/MinecraftFileExtensions.md
           - name: Data-Driven Overworld Height
             href: Documents/DataDrivenOverworldHeight.md
           - name: Editing NBTs Safely
@@ -178,6 +182,14 @@
             href: Documents/ContentErrorLog.md
           - name: Designing Gameplay for Various Devices
             href: Documents/DesigningGameplayForVariousDevices.md
+          - name: Bedrock Editor
+            items:
+              - name: Editor Installation Guide
+                href: Documents/EditorInstallation.md
+              - name: Editor Overview
+                href: Documents/EditorOverview.md
+              - name: Editor Tutorial
+                href: Documents/EditorTutorial.md
           - name: Blockbench
             items:
             - name: Minecraft Block Wizard

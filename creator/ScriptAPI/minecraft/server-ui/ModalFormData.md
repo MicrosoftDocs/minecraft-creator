@@ -31,21 +31,21 @@ Creates a new modal form builder.
 
 ### **dropdown**
 `
-dropdown(label: string, options: string[], defaultValueIndex?: number): ModalFormData
+dropdown(label: minecraftserver.RawMessage | string, options: (minecraftserver.RawMessage | string)[], defaultValueIndex?: number): ModalFormData
 `
 
 Adds a dropdown with choices to the form.
 
 #### **Parameters**
-- **label**: *string*
-- **options**: *string*[]
+- **label**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
+- **options**: ([*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*)[]
 - **defaultValueIndex**?: *number* = `null`
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
 
 ### **show**
 `
-show(player: @minecraft/server.Player): Promise<ModalFormResponse>
+show(player: minecraftserver.Player): Promise<ModalFormResponse>
 `
 
 Creates and shows this modal popup form. Returns asynchronously when the player confirms or cancels the dialog.
@@ -62,13 +62,13 @@ Creates and shows this modal popup form. Returns asynchronously when the player 
 
 ### **slider**
 `
-slider(label: string, minimumValue: number, maximumValue: number, valueStep: number, defaultValue?: number): ModalFormData
+slider(label: minecraftserver.RawMessage | string, minimumValue: number, maximumValue: number, valueStep: number, defaultValue?: number): ModalFormData
 `
 
 Adds a numeric slider to the form.
 
 #### **Parameters**
-- **label**: *string*
+- **label**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 - **minimumValue**: *number*
 - **maximumValue**: *number*
 - **valueStep**: *number*
@@ -78,39 +78,39 @@ Adds a numeric slider to the form.
 
 ### **textField**
 `
-textField(label: string, placeholderText: string, defaultValue?: string): ModalFormData
+textField(label: minecraftserver.RawMessage | string, placeholderText: minecraftserver.RawMessage | string, defaultValue?: string): ModalFormData
 `
 
 Adds a textbox to the form.
 
 #### **Parameters**
-- **label**: *string*
-- **placeholderText**: *string*
+- **label**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
+- **placeholderText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 - **defaultValue**?: *string* = `null`
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
 
 ### **title**
 `
-title(titleText: string): ModalFormData
+title(titleText: minecraftserver.RawMessage | string): ModalFormData
 `
 
 This builder method sets the title for the modal dialog.
 
 #### **Parameters**
-- **titleText**: *string*
+- **titleText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
 
 ### **toggle**
 `
-toggle(label: string, defaultValue?: boolean): ModalFormData
+toggle(label: minecraftserver.RawMessage | string, defaultValue?: boolean): ModalFormData
 `
 
 Adds a toggle checkbox button to the form.
 
 #### **Parameters**
-- **label**: *string*
+- **label**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 - **defaultValue**?: *boolean* = `null`
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)

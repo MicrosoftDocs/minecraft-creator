@@ -13,7 +13,7 @@ description: Contents of the @minecraft/server.EntityInventoryComponent class.
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 Defines this entity's inventory properties.
 
@@ -34,11 +34,11 @@ If true, the contents of this inventory can be removed by a hopper.
 Type: *boolean*
 
 ### **container**
-`read-only container: InventoryComponentContainer;`
+`read-only container: Container;`
 
 Defines the container for this entity.
 
-Type: [*InventoryComponentContainer*](InventoryComponentContainer.md)
+Type: [*Container*](Container.md)
 
 ### **containerType**
 `read-only containerType: string;`
@@ -67,13 +67,6 @@ Type: *boolean*
 If true, the entity's inventory can only be accessed by its owner or itself.
 
 Type: *boolean*
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:inventory.
-
-Type: *string*
 
 ## Constants
 

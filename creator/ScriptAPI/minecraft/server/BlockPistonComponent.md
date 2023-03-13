@@ -19,13 +19,6 @@ When present, this block has piston-like behavior. Contains additional propertie
 
 ## Properties
 
-### **attachedBlocks**
-`read-only attachedBlocks: BlockLocation[];`
-
-A set of locations for blocks that are impacted by the activation of this piston.
-
-Type: [*BlockLocation*](BlockLocation.md)[]
-
 ### **isExpanded**
 `read-only isExpanded: boolean;`
 
@@ -61,19 +54,20 @@ Whether the piston is in the process of retracting.
 
 Type: *boolean*
 
-### **location**
-`read-only location: BlockLocation;`
+## Methods
+- [getAttachedBlocks](#getattachedblocks)
 
-Source location of the block.
+### **getAttachedBlocks**
+`
+getAttachedBlocks(): Vector3[]
+`
 
-Type: [*BlockLocation*](BlockLocation.md)
+Retrieves a set of blocks that this piston is connected with.
 
-### **typeId**
-`read-only typeId: string;`
+#### **Returns** [*Vector3*](Vector3.md)[]
 
-Identifier of this component.
-
-Type: *string*
+> [!WARNING]
+> This function can throw errors.
 
 ## Constants
 

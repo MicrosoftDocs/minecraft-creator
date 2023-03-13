@@ -13,9 +13,9 @@ description: Contents of the @minecraft/server.EntityTameableComponent class.
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
-Defines the rules for a mob to be tamed by the player.
+Defines the rules for an entity to be tamed by the player.
 
 ## Properties
 
@@ -33,22 +33,21 @@ Event to run when this entity becomes tamed.
 
 Type: [*Trigger*](Trigger.md)
 
-### **tameItems**
-`read-only tameItems: string[];`
-
-The list of items that can be used to tame this entity.
-
-Type: *string*[]
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:tameable.
-
-Type: *string*
-
 ## Methods
+- [getTameItems](#gettameitems)
 - [tame](#tame)
+
+### **getTameItems**
+`
+getTameItems(): string[]
+`
+
+Returns a set of items that can be used to tame this entity.
+
+#### **Returns** *string*[]
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **tame**
 `

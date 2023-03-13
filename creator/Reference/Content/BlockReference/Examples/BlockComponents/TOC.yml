@@ -16,6 +16,10 @@
    href: minecraftBlock_friction.md
  - name: geometry
    href: minecraftBlock_geometry.md
+ - name: light_dampening
+   href: minecraftBlock_light_dampening.md
+ - name: light_emission
+   href: minecraftBlock_light_emission.md    
  - name: loot
    href: minecraftBlock_loot.md
  - name: map_color

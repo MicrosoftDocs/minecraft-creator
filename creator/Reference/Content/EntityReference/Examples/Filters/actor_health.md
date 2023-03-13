@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - actor_health
 
-Tests the health of an actor.
+Tests the health of the subject.
 
 ### subject
 

@@ -21,6 +21,7 @@ Main class for GameTest functions, with helpers and data for manipulating the re
 - [assertEntityHasArmor](#assertentityhasarmor)
 - [assertEntityHasComponent](#assertentityhascomponent)
 - [assertEntityInstancePresent](#assertentityinstancepresent)
+- [assertEntityInstancePresentInArea](#assertentityinstancepresentinarea)
 - [assertEntityPresent](#assertentitypresent)
 - [assertEntityPresentInArea](#assertentitypresentinarea)
 - [assertEntityState](#assertentitystate)
@@ -98,7 +99,7 @@ Tests that the condition specified in _condition_ is true. If not, an error with
 
 ### **assertBlockPresent**
 `
-assertBlockPresent(blockType: @minecraft/server.BlockType, blockLocation: @minecraft/server.BlockLocation, isPresent?: boolean): void
+assertBlockPresent(blockType: minecraftserver.BlockType, blockLocation: minecraftserver.Vector3, isPresent?: boolean): void
 `
 
 Tests that a block of the specified type is present at the specified location. If it is not, an exception is thrown.
@@ -107,7 +108,7 @@ Tests that a block of the specified type is present at the specified location. I
 - **blockType**: [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md)
   
   Expected block type.
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the block to test at.
 - **isPresent**?: *boolean* = `true`
@@ -119,13 +120,13 @@ Tests that a block of the specified type is present at the specified location. I
 
 ### **assertBlockState**
 `
-assertBlockState(blockLocation: @minecraft/server.BlockLocation, callback: (arg: @minecraft/server.Block) => boolean): void
+assertBlockState(blockLocation: minecraftserver.Vector3, callback: (arg: minecraftserver.Block) => boolean): void
 `
 
 Tests that a block has a particular state value at the specified location. If it does not have that state value, an exception is thrown.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the block to test at.
 - **callback**: (arg: [*@minecraft/server.Block*](../../minecraft/server/Block.md)) => *boolean*
@@ -145,7 +146,7 @@ test.assertBlockState(buttonPos, (block) => {
 
 ### **assertCanReachLocation**
 `
-assertCanReachLocation(mob: @minecraft/server.Entity, blockLocation: @minecraft/server.BlockLocation, canReach?: boolean): void
+assertCanReachLocation(mob: minecraftserver.Entity, blockLocation: minecraftserver.Vector3, canReach?: boolean): void
 `
 
 Tests that an entity can reach a particular location. Depending on the value of canReach, throws an exception if the condition is not met.
@@ -154,7 +155,7 @@ Tests that an entity can reach a particular location. Depending on the value of 
 - **mob**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
   
   Entity that you wish to test the location against.
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Structure-relative location to test whether the specified mob can reach.
 - **canReach**?: *boolean* = `true`
@@ -166,7 +167,7 @@ Tests that an entity can reach a particular location. Depending on the value of 
 
 ### **assertContainerContains**
 `
-assertContainerContains(itemStack: @minecraft/server.ItemStack, blockLocation: @minecraft/server.BlockLocation): void
+assertContainerContains(itemStack: minecraftserver.ItemStack, blockLocation: minecraftserver.Vector3): void
 `
 
 Tests that a container (e.g., a chest) at the specified location contains a specified of item stack. If not, an error is thrown.
@@ -175,7 +176,7 @@ Tests that a container (e.g., a chest) at the specified location contains a spec
 - **itemStack**: [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md)
   
   Represents the type of item to check for. The specified container must contain at least 1 item matching the item type defined in _itemStack_.
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the block with a container (for example, a chest) to test the contents of.
 
@@ -184,13 +185,13 @@ Tests that a container (e.g., a chest) at the specified location contains a spec
 
 ### **assertContainerEmpty**
 `
-assertContainerEmpty(blockLocation: @minecraft/server.BlockLocation): void
+assertContainerEmpty(blockLocation: minecraftserver.Vector3): void
 `
 
 Tests that a container (e.g., a chest) at the specified location is empty. If not, an error is thrown.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the block with a container (for example, a chest) to test is empty of contents.
 
@@ -199,7 +200,7 @@ Tests that a container (e.g., a chest) at the specified location is empty. If no
 
 ### **assertEntityHasArmor**
 `
-assertEntityHasArmor(entityTypeIdentifier: string, armorSlot: number, armorName: string, armorData: number, blockLocation: @minecraft/server.BlockLocation, hasArmor?: boolean): void
+assertEntityHasArmor(entityTypeIdentifier: string, armorSlot: number, armorName: string, armorData: number, blockLocation: minecraftserver.Vector3, hasArmor?: boolean): void
 `
 
 Tests that an entity has a specific piece of armor equipped. If not, an error is thrown.
@@ -217,7 +218,7 @@ Tests that an entity has a specific piece of armor equipped. If not, an error is
 - **armorData**: *number*
   
   Data value integer to look for.
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the entity with armor to test for.
 - **hasArmor**?: *boolean* = `true`
@@ -235,7 +236,7 @@ test.assertEntityHasArmor("minecraft:horse", armorSlotTorso, "diamond_horse_armo
 
 ### **assertEntityHasComponent**
 `
-assertEntityHasComponent(entityTypeIdentifier: string, componentIdentifier: string, blockLocation: @minecraft/server.BlockLocation, hasComponent?: boolean): void
+assertEntityHasComponent(entityTypeIdentifier: string, componentIdentifier: string, blockLocation: minecraftserver.Vector3, hasComponent?: boolean): void
 `
 
 Tests that an entity has a particular component. If not, an exception is thrown.
@@ -247,7 +248,7 @@ Tests that an entity has a particular component. If not, an exception is thrown.
 - **componentIdentifier**: *string*
   
   Identifier of the component to check for. If the namespace is not specified, 'minecraft:' is assumed.
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the block with a container (for example, a chest.)
 - **hasComponent**?: *boolean* = `true`
@@ -265,7 +266,7 @@ test.assertEntityHasComponent("minecraft:sheep", "minecraft:is_sheared", entityL
 
 ### **assertEntityInstancePresent**
 `
-assertEntityInstancePresent(entity: @minecraft/server.Entity, blockLocation: @minecraft/server.BlockLocation, isPresent?: boolean): void
+assertEntityInstancePresent(entity: minecraftserver.Entity, blockLocation: minecraftserver.Vector3, isPresent?: boolean): void
 `
 
 Depending on the value for isPresent, tests that a particular entity is present or not present at the specified location. Depending on the value of isPresent, if the entity is found or not found, an error is thrown.
@@ -274,7 +275,7 @@ Depending on the value for isPresent, tests that a particular entity is present 
 - **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
   
   Specific entity to test for.
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the entity to test for.
 - **isPresent**?: *boolean* = `true`
@@ -284,9 +285,44 @@ Depending on the value for isPresent, tests that a particular entity is present 
 > [!WARNING]
 > This function can throw errors.
 
+### **assertEntityInstancePresentInArea**
+`
+assertEntityInstancePresentInArea(entity: minecraftserver.Entity, isPresent?: boolean): void
+`
+
+Tests that an entity instance is present within the GameTest area. If not, an exception is thrown.
+
+#### **Parameters**
+- **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
+  
+  Entity instance to test for.
+- **isPresent**?: *boolean* = `true`
+  
+  If true, this function tests whether the specified entity is present in the GameTest area. If false, tests that the specified entity is not present.
+
+> [!WARNING]
+> This function can throw errors.
+
+#### **Examples**
+##### *simpleMobTest.ts*
+```javascript
+gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
+  const attackerId = "fox";
+  const victimId = "chicken";
+  test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+  let victim = test.spawn(victimId, { x: 2, y: 2, z: 2 });
+  test.assertEntityInstancePresentInArea(victim, true);
+  test.succeedWhen(() => {
+    test.assertEntityInstancePresentInArea(victim, false);
+  });
+})
+  .maxTicks(400)
+  .structureName("gametests:mediumglass");
+```
+
 ### **assertEntityPresent**
 `
-assertEntityPresent(entityTypeIdentifier: string, blockLocation: @minecraft/server.BlockLocation, isPresent?: boolean): void
+assertEntityPresent(entityTypeIdentifier: string, blockLocation: minecraftserver.Vector3, searchDistance?: number, isPresent?: boolean): void
 `
 
 Depending on the value of isPresent, tests for the presence or non-presence of entity of a specified type at a particular location. If the condition is not met, an exception is thrown.
@@ -295,9 +331,12 @@ Depending on the value of isPresent, tests for the presence or non-presence of e
 - **entityTypeIdentifier**: *string*
   
   Type of entity to test for (e.g., 'minecraft:skeleton'). If an entity namespace is not specified, 'minecraft:' is assumed.
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the entity to test for.
+- **searchDistance**?: *number* = `0`
+  
+  The distance to search for the entity from the blockLocation.
 - **isPresent**?: *boolean* = `true`
   
   If true, this function tests whether an entity of the specified type is present. If false, tests that an entity of the specified type is not present.
@@ -326,29 +365,29 @@ Tests that an entity of a specified type is present within the GameTest area. If
 #### **Examples**
 ##### *simpleMobTest.ts*
 ```javascript
-  gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
-    const attackerId = "fox";
-    const victimId = "chicken";
-    test.spawn(attackerId, new mc.BlockLocation(5, 2, 5));
-    test.spawn(victimId, new mc.BlockLocation(2, 2, 2));
-    test.assertEntityPresentInArea(victimId, true);
-    test.succeedWhen(() => {
-      test.assertEntityPresentInArea(victimId, false);
-    });
-  })
-    .maxTicks(400)
-    .structureName("gametests:mediumglass");
+gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
+  const attackerId = "fox";
+  const victimId = "chicken";
+  test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+  test.spawn(victimId, { x: 2, y: 2, z: 2 });
+  test.assertEntityPresentInArea(victimId, true);
+  test.succeedWhen(() => {
+    test.assertEntityPresentInArea(victimId, false);
+  });
+})
+  .maxTicks(400)
+  .structureName("gametests:mediumglass");
 ```
 
 ### **assertEntityState**
 `
-assertEntityState(blockLocation: @minecraft/server.BlockLocation, entityTypeIdentifier: string, callback: (arg: @minecraft/server.Entity) => boolean): void
+assertEntityState(blockLocation: minecraftserver.Vector3, entityTypeIdentifier: string, callback: (arg: minecraftserver.Entity) => boolean): void
 `
 
 Tests that an entity (e.g., a skeleton) at the specified location has a particular piece of data. If not, an error is thrown.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the entity to look for.
 - **entityTypeIdentifier**: *string*
@@ -373,7 +412,7 @@ test.assertEntityState(
 
 ### **assertEntityTouching**
 `
-assertEntityTouching(entityTypeIdentifier: string, location: @minecraft/server.Location, isTouching?: boolean): void
+assertEntityTouching(entityTypeIdentifier: string, location: minecraftserver.Vector3, isTouching?: boolean): void
 `
 
 Depending on the value of isTouching, tests that an entity of a specified type is touching or connected to another entity. If the condition is not met, an exception is thrown.
@@ -382,7 +421,7 @@ Depending on the value of isTouching, tests that an entity of a specified type i
 - **entityTypeIdentifier**: *string*
   
   Type of entity to test for (e.g., 'minecraft:skeleton'). If an entity namespace is not specified, 'minecraft:' is assumed.
-- **location**: [*@minecraft/server.Location*](../../minecraft/server/Location.md)
+- **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the entity to test for.
 - **isTouching**?: *boolean* = `true`
@@ -394,13 +433,13 @@ Depending on the value of isTouching, tests that an entity of a specified type i
 
 ### **assertIsWaterlogged**
 `
-assertIsWaterlogged(blockLocation: @minecraft/server.BlockLocation, isWaterlogged?: boolean): void
+assertIsWaterlogged(blockLocation: minecraftserver.Vector3, isWaterlogged?: boolean): void
 `
 
 Depending on the value of isWaterlogged, tests that a block at a location contains water. If the condition is not met, an error is thrown. Pure water blocks are not considered to be waterlogged.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the block to test for.
 - **isWaterlogged**?: *boolean* = `true`
@@ -412,7 +451,7 @@ Depending on the value of isWaterlogged, tests that a block at a location contai
 
 ### **assertItemEntityCountIs**
 `
-assertItemEntityCountIs(itemType: @minecraft/server.ItemType, blockLocation: @minecraft/server.BlockLocation, searchDistance: number, count: number): void
+assertItemEntityCountIs(itemType: minecraftserver.ItemType, blockLocation: minecraftserver.Vector3, searchDistance: number, count: number): void
 `
 
 Tests that items of a particular type and count are present within an area. If not, an error is thrown.
@@ -421,7 +460,7 @@ Tests that items of a particular type and count are present within an area. If n
 - **itemType**: [*@minecraft/server.ItemType*](../../minecraft/server/ItemType.md)
   
   Type of item to look for.
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location to search around for the specified set of items.
 - **searchDistance**: *number*
@@ -442,7 +481,7 @@ test.assertItemEntityCountIs(Items.feather, expectedFeatherLoc, 0, 1);
 
 ### **assertItemEntityPresent**
 `
-assertItemEntityPresent(itemType: @minecraft/server.ItemType, blockLocation: @minecraft/server.BlockLocation, searchDistance: number, isPresent?: boolean): void
+assertItemEntityPresent(itemType: minecraftserver.ItemType, blockLocation: minecraftserver.Vector3, searchDistance?: number, isPresent?: boolean): void
 `
 
 Depending on the value of isPresent, tests whether a particular item entity is present or not at a particular location. If the condition is not met, an exception is thrown.
@@ -451,10 +490,10 @@ Depending on the value of isPresent, tests whether a particular item entity is p
 - **itemType**: [*@minecraft/server.ItemType*](../../minecraft/server/ItemType.md)
   
   Type of item to test for.
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the item entity to test for.
-- **searchDistance**: *number*
+- **searchDistance**?: *number* = `0`
   
   Radius in blocks to look for the item entity.
 - **isPresent**?: *boolean* = `true`
@@ -466,13 +505,13 @@ Depending on the value of isPresent, tests whether a particular item entity is p
 
 ### **assertRedstonePower**
 `
-assertRedstonePower(blockLocation: @minecraft/server.BlockLocation, power: number): void
+assertRedstonePower(blockLocation: minecraftserver.Vector3, power: number): void
 `
 
 Tests that Redstone power at a particular location matches a particular value. If not, an exception is thrown.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location to test.
 - **power**: *number*
@@ -484,13 +523,13 @@ Tests that Redstone power at a particular location matches a particular value. I
 
 ### **destroyBlock**
 `
-destroyBlock(blockLocation: @minecraft/server.BlockLocation, dropResources?: boolean): void
+destroyBlock(blockLocation: minecraftserver.Vector3, dropResources?: boolean): void
 `
 
 Destroys a block at a particular location.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the block to destroy.
 - **dropResources**?: *boolean* = `false`
@@ -532,13 +571,13 @@ Runs the given callback. If the callback does not throw an exception, the test i
 
 ### **getBlock**
 `
-getBlock(blockLocation: @minecraft/server.BlockLocation): @minecraft/server.Block
+getBlock(blockLocation: minecraftserver.Vector3): minecraftserver.Block
 `
 
 Gets a block at the specified block location.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the block to retrieve.
 
@@ -549,7 +588,7 @@ Gets a block at the specified block location.
 
 ### **getDimension**
 `
-getDimension(): @minecraft/server.Dimension
+getDimension(): minecraftserver.Dimension
 `
 
 Gets the dimension of this test.
@@ -561,13 +600,13 @@ Gets the dimension of this test.
 
 ### **getFenceConnectivity**
 `
-getFenceConnectivity(blockLocation: @minecraft/server.BlockLocation): FenceConnectivity
+getFenceConnectivity(blockLocation: minecraftserver.Vector3): FenceConnectivity
 `
 
 If the block at the specified block location is a fence, this returns a helper object with details on how a fence is connected.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the block to retrieve.
 
@@ -578,13 +617,13 @@ If the block at the specified block location is a fence, this returns a helper o
 
 ### **getSculkSpreader**
 `
-getSculkSpreader(blockLocation: @minecraft/server.BlockLocation): SculkSpreader
+getSculkSpreader(blockLocation: minecraftserver.Vector3): SculkSpreader
 `
 
 Retrieves a sculk spreader object that can be used to control and manage how sculk grows from a block.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the block to retrieve a sculk spreader from.
 
@@ -595,7 +634,7 @@ Retrieves a sculk spreader object that can be used to control and manage how scu
 
 ### **getTestDirection**
 `
-getTestDirection(): @minecraft/server.Direction
+getTestDirection(): minecraftserver.Direction
 `
 
 Returns the direction of the current test - see the [*@minecraft/server.Direction*](../../minecraft/server/Direction.md) enum for more information on potential values (north, east, south, west - values 2-5).
@@ -628,7 +667,7 @@ Kills all entities within the GameTest structure.
 
 ### **onPlayerJump**
 `
-onPlayerJump(mob: @minecraft/server.Entity, jumpAmount: number): void
+onPlayerJump(mob: minecraftserver.Entity, jumpAmount: number): void
 `
 
 #### **Parameters**
@@ -640,13 +679,13 @@ onPlayerJump(mob: @minecraft/server.Entity, jumpAmount: number): void
 
 ### **pressButton**
 `
-pressButton(blockLocation: @minecraft/server.BlockLocation): void
+pressButton(blockLocation: minecraftserver.Vector3): void
 `
 
 Presses a button at a block location.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location to push the button at.
 
@@ -670,13 +709,13 @@ Displays the specified message to all players.
 
 ### **pullLever**
 `
-pullLever(blockLocation: @minecraft/server.BlockLocation): void
+pullLever(blockLocation: minecraftserver.Vector3): void
 `
 
 Pulls a lever at a block location.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location to pull the lever at.
 
@@ -685,13 +724,13 @@ Pulls a lever at a block location.
 
 ### **pulseRedstone**
 `
-pulseRedstone(blockLocation: @minecraft/server.BlockLocation, duration: number): void
+pulseRedstone(blockLocation: minecraftserver.Vector3, duration: number): void
 `
 
 Sends a Redstone pulse at a particular location by creating a temporary Redstone block.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location to pulse Redstone at.
 - **duration**: *number*
@@ -703,7 +742,7 @@ Sends a Redstone pulse at a particular location by creating a temporary Redstone
 
 ### **relativeBlockLocation**
 `
-relativeBlockLocation(worldBlockLocation: @minecraft/server.Vector3): @minecraft/server.BlockLocation
+relativeBlockLocation(worldBlockLocation: minecraftserver.Vector3): minecraftserver.Vector3
 `
 
 From a BlockLocation, returns a new BlockLocation with coordinates relative to the current GameTest structure block. For example, the relative coordinates for the block above the structure block are (0, 1, 0). Rotation of the GameTest structure is also taken into account.
@@ -713,14 +752,14 @@ From a BlockLocation, returns a new BlockLocation with coordinates relative to t
   
   Absolute location in the world to convert to a relative location.
 
-#### **Returns** [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md) - A location relative to the GameTest command block.
+#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - A location relative to the GameTest command block.
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **relativeLocation**
 `
-relativeLocation(worldLocation: @minecraft/server.Vector3): @minecraft/server.Location
+relativeLocation(worldLocation: minecraftserver.Vector3): minecraftserver.Vector3
 `
 
 From a location, returns a new location with coordinates relative to the current GameTest structure block. For example, the relative coordinates for the block above the structure block are (0, 1, 0). Rotation of the GameTest structure is also taken into account.
@@ -730,7 +769,7 @@ From a location, returns a new location with coordinates relative to the current
   
   Absolute location in the world to convert to a relative location.
 
-#### **Returns** [*@minecraft/server.Location*](../../minecraft/server/Location.md) - A location relative to the GameTest command block.
+#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - A location relative to the GameTest command block.
 
 > [!WARNING]
 > This function can throw errors.
@@ -749,7 +788,7 @@ Removes a simulated player from the world.
 
 ### **rotateDirection**
 `
-rotateDirection(direction: @minecraft/server.Direction): @minecraft/server.Direction
+rotateDirection(direction: minecraftserver.Direction): minecraftserver.Direction
 `
 
 Returns a relative direction given the current rotation of the current test. Passing in Direction.south will return the test direction; Passing in Direction.north will return the opposite of the test direction, and so on.
@@ -766,7 +805,7 @@ Returns a relative direction given the current rotation of the current test. Pas
 
 ### **rotateVector**
 `
-rotateVector(vector: @minecraft/server.Vector): @minecraft/server.Vector
+rotateVector(vector: minecraftserver.Vector): minecraftserver.Vector
 `
 
 #### **Parameters**
@@ -815,7 +854,7 @@ Runs the given callback after a delay of _tick_ ticks from the start of the Game
 
 ### **setBlockPermutation**
 `
-setBlockPermutation(blockData: @minecraft/server.BlockPermutation, blockLocation: @minecraft/server.BlockLocation): void
+setBlockPermutation(blockData: minecraftserver.BlockPermutation, blockLocation: minecraftserver.Vector3): void
 `
 
 Sets a block to a particular configuration (a BlockPermutation) at the specified block location.
@@ -824,7 +863,7 @@ Sets a block to a particular configuration (a BlockPermutation) at the specified
 - **blockData**: [*@minecraft/server.BlockPermutation*](../../minecraft/server/BlockPermutation.md)
   
   Permutation that contains the configuration data for a block.
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the block to set.
 
@@ -833,7 +872,7 @@ Sets a block to a particular configuration (a BlockPermutation) at the specified
 
 ### **setBlockType**
 `
-setBlockType(blockType: @minecraft/server.BlockType, blockLocation: @minecraft/server.BlockLocation): void
+setBlockType(blockType: minecraftserver.BlockType, blockLocation: minecraftserver.Vector3): void
 `
 
 Sets a block to a particular type at the specified block location.
@@ -842,7 +881,7 @@ Sets a block to a particular type at the specified block location.
 - **blockType**: [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md)
   
   Type of block to set.
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the block to set.
 
@@ -851,13 +890,13 @@ Sets a block to a particular type at the specified block location.
 
 ### **setFluidContainer**
 `
-setFluidContainer(location: @minecraft/server.BlockLocation, type: @minecraft/server.FluidType): void
+setFluidContainer(location: minecraftserver.Vector3, type: minecraftserver.FluidType): void
 `
 
 For blocks that are fluid containers - like a cauldron - changes the type of fluid within that container.
 
 #### **Parameters**
-- **location**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the fluid container block.
 - **type**: [*@minecraft/server.FluidType*](../../minecraft/server/FluidType.md)
@@ -869,7 +908,7 @@ For blocks that are fluid containers - like a cauldron - changes the type of flu
 
 ### **setTntFuse**
 `
-setTntFuse(entity: @minecraft/server.Entity, fuseLength: number): void
+setTntFuse(entity: minecraftserver.Entity, fuseLength: number): void
 `
 
 Sets the fuse of an explodable entity.
@@ -887,7 +926,7 @@ Sets the fuse of an explodable entity.
 
 ### **spawn**
 `
-spawn(entityTypeIdentifier: string, blockLocation: @minecraft/server.BlockLocation): @minecraft/server.Entity
+spawn(entityTypeIdentifier: string, blockLocation: minecraftserver.Vector3): minecraftserver.Entity
 `
 
 Spawns an entity at a location.
@@ -896,7 +935,7 @@ Spawns an entity at a location.
 - **entityTypeIdentifier**: *string*
   
   Type of entity to create. If no namespace is provided, 'minecraft:' is assumed. Note that an optional initial spawn event can be specified between less than/greater than signs (e.g., namespace:entityType<spawnEvent>).
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
 #### **Returns** [*@minecraft/server.Entity*](../../minecraft/server/Entity.md) - The spawned entity. If the entity cannot be spawned, returns undefined.
 
@@ -906,27 +945,27 @@ Spawns an entity at a location.
 #### **Examples**
 ##### *simpleMobTest.ts*
 ```javascript
-  gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
-    const attackerId = "fox";
-    const victimId = "chicken";
-    test.spawn(attackerId, new mc.BlockLocation(5, 2, 5));
-    test.spawn(victimId, new mc.BlockLocation(2, 2, 2));
-    test.assertEntityPresentInArea(victimId, true);
-    test.succeedWhen(() => {
-      test.assertEntityPresentInArea(victimId, false);
-    });
-  })
-    .maxTicks(400)
-    .structureName("gametests:mediumglass");
+gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
+  const attackerId = "fox";
+  const victimId = "chicken";
+  test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+  test.spawn(victimId, { x: 2, y: 2, z: 2 });
+  test.assertEntityPresentInArea(victimId, true);
+  test.succeedWhen(() => {
+    test.assertEntityPresentInArea(victimId, false);
+  });
+})
+  .maxTicks(400)
+  .structureName("gametests:mediumglass");
 ```
 ##### *spawnAdultPig.js*
 ```javascript
-test.spawn("minecraft:pig<minecraft:ageable_grow_up>", new BlockLocation(1, 2, 1));
+test.spawn("minecraft:pig<minecraft:ageable_grow_up>", { x: 1, y: 2, z: 1 });
 ```
 
 ### **spawnAtLocation**
 `
-spawnAtLocation(entityTypeIdentifier: string, location: @minecraft/server.Location): @minecraft/server.Entity
+spawnAtLocation(entityTypeIdentifier: string, location: minecraftserver.Vector3): minecraftserver.Entity
 `
 
 Spawns an entity at a location.
@@ -935,7 +974,7 @@ Spawns an entity at a location.
 - **entityTypeIdentifier**: *string*
   
   Type of entity to create. If no namespace is provided, 'minecraft:' is assumed. Note that an optional initial spawn event can be specified between less than/greater than signs (e.g., namespace:entityType<spawnEvent>).
-- **location**: [*@minecraft/server.Location*](../../minecraft/server/Location.md)
+- **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
 #### **Returns** [*@minecraft/server.Entity*](../../minecraft/server/Entity.md) - The spawned entity. If the entity cannot be spawned, returns undefined.
 
@@ -945,12 +984,12 @@ Spawns an entity at a location.
 #### **Examples**
 ##### *spawnAdultPig.js*
 ```javascript
-test.spawn("minecraft:pig<minecraft:ageable_grow_up>", new Location(1.5, 2, 1.5));
+test.spawn("minecraft:pig<minecraft:ageable_grow_up>", { x: 1.5, y: 2, z: 1.5 });
 ```
 
 ### **spawnItem**
 `
-spawnItem(itemStack: @minecraft/server.ItemStack, location: @minecraft/server.Location): @minecraft/server.Entity
+spawnItem(itemStack: minecraftserver.ItemStack, location: minecraftserver.Vector3): minecraftserver.Entity
 `
 
 Spawns an item entity at a specified location.
@@ -959,7 +998,7 @@ Spawns an item entity at a specified location.
 - **itemStack**: [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md)
   
   ItemStack that describes the item entity to create.
-- **location**: [*@minecraft/server.Location*](../../minecraft/server/Location.md)
+- **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location to create the item entity at.
 
@@ -973,19 +1012,19 @@ Spawns an item entity at a specified location.
 ```javascript
 const oneEmerald = new ItemStack(MinecraftItemTypes.emerald, 1, 0);
 const fiveEmeralds = new ItemStack(MinecraftItemTypes.emerald, 5, 0);
-test.spawnItem(oneEmerald, new Location(3.5, 3, 1.5));
-test.spawnItem(fiveEmeralds, new Location(1.5, 3, 1.5));
+test.spawnItem(oneEmerald, { x: 3.5, y: 3, z: 1.5 });
+test.spawnItem(fiveEmeralds, { x: 1.5, y: 3, z: 1.5 });
 ```
 
 ### **spawnSimulatedPlayer**
 `
-spawnSimulatedPlayer(blockLocation: @minecraft/server.BlockLocation, name?: string, gameMode?: @minecraft/server.GameMode): SimulatedPlayer
+spawnSimulatedPlayer(blockLocation: minecraftserver.Vector3, name?: string, gameMode?: minecraftserver.GameMode): SimulatedPlayer
 `
 
 Creates a new simulated player within the world.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location where to spawn the simulated player.
 - **name**?: *string* = `"Simulated Player"`
@@ -1000,14 +1039,14 @@ Creates a new simulated player within the world.
 
 ### **spawnWithoutBehaviors**
 `
-spawnWithoutBehaviors(entityTypeIdentifier: string, blockLocation: @minecraft/server.BlockLocation): @minecraft/server.Entity
+spawnWithoutBehaviors(entityTypeIdentifier: string, blockLocation: minecraftserver.Vector3): minecraftserver.Entity
 `
 
 Spawns an entity at a location without any AI behaviors. This method is frequently used in conjunction with methods like .walkTo to create predictable mob actions.
 
 #### **Parameters**
 - **entityTypeIdentifier**: *string*
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location where the entity should be spawned.
 
@@ -1018,14 +1057,14 @@ Spawns an entity at a location without any AI behaviors. This method is frequent
 
 ### **spawnWithoutBehaviorsAtLocation**
 `
-spawnWithoutBehaviorsAtLocation(entityTypeIdentifier: string, location: @minecraft/server.Location): @minecraft/server.Entity
+spawnWithoutBehaviorsAtLocation(entityTypeIdentifier: string, location: minecraftserver.Vector3): minecraftserver.Entity
 `
 
 Spawns an entity at a location without any AI behaviors. This method is frequently used in conjunction with methods like .walkTo to create predictable mob actions.
 
 #### **Parameters**
 - **entityTypeIdentifier**: *string*
-- **location**: [*@minecraft/server.Location*](../../minecraft/server/Location.md)
+- **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location where the entity should be spawned.
 
@@ -1036,13 +1075,13 @@ Spawns an entity at a location without any AI behaviors. This method is frequent
 
 ### **spreadFromFaceTowardDirection**
 `
-spreadFromFaceTowardDirection(blockLocation: @minecraft/server.BlockLocation, fromFace: @minecraft/server.Direction, direction: @minecraft/server.Direction): void
+spreadFromFaceTowardDirection(blockLocation: minecraftserver.Vector3, fromFace: minecraftserver.Direction, direction: minecraftserver.Direction): void
 `
 
 Tests that a particular item entity is present at a particular location. If not, an exception is thrown.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   BlockLocation containing a multiface block.
 - **fromFace**: [*@minecraft/server.Direction*](../../minecraft/server/Direction.md)
@@ -1058,7 +1097,7 @@ Tests that a particular item entity is present at a particular location. If not,
 #### **Examples**
 ##### *spreadFromFaceTowardDirection.js*
 ```javascript
-test.spreadFromFaceTowardDirection(new BlockLocation(1, 2, 1), Direction.south, Direction.down);
+test.spreadFromFaceTowardDirection({ x: 1, y: 2, z: 1 }, Direction.south, Direction.down);
 ```
 
 ### **startSequence**
@@ -1149,8 +1188,8 @@ Runs the given callback every tick. When the callback successfully executes, the
 gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
   const attackerId = "fox";
   const victimId = "chicken";
-  test.spawn(attackerId, new mc.BlockLocation(5, 2, 5));
-  test.spawn(victimId, new mc.BlockLocation(2, 2, 2));
+  test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+  test.spawn(victimId, { x: 2, y: 2, z: 2 });
   test.assertEntityPresentInArea(victimId, true);
   test.succeedWhen(() => {
     test.assertEntityPresentInArea(victimId, false);
@@ -1162,7 +1201,7 @@ gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
 
 ### **succeedWhenBlockPresent**
 `
-succeedWhenBlockPresent(blockType: @minecraft/server.BlockType, blockLocation: @minecraft/server.BlockLocation, isPresent?: boolean): void
+succeedWhenBlockPresent(blockType: minecraftserver.BlockType, blockLocation: minecraftserver.Vector3, isPresent?: boolean): void
 `
 
 Depending on the condition of isPresent, tests for the presence of a block of a particular type on every tick. When the specified block of a type is found or not found (depending on isPresent), the test is marked as a success.
@@ -1171,7 +1210,7 @@ Depending on the condition of isPresent, tests for the presence of a block of a 
 - **blockType**: [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md)
   
   Type of block to test for.
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the block to test at.
 - **isPresent**?: *boolean* = `true`
@@ -1183,7 +1222,7 @@ Depending on the condition of isPresent, tests for the presence of a block of a 
 
 ### **succeedWhenEntityHasComponent**
 `
-succeedWhenEntityHasComponent(entityTypeIdentifier: string, componentIdentifier: string, blockLocation: @minecraft/server.BlockLocation, hasComponent: boolean): void
+succeedWhenEntityHasComponent(entityTypeIdentifier: string, componentIdentifier: string, blockLocation: minecraftserver.Vector3, hasComponent: boolean): void
 `
 
 Tests for the presence of a component on every tick. Depending on the value of hasComponent, when the specified component is found, the test is marked as a success.
@@ -1195,7 +1234,7 @@ Tests for the presence of a component on every tick. Depending on the value of h
 - **componentIdentifier**: *string*
   
   Type of component to test for the presence of. If no namespace is specified, 'minecraft:' is assumed.
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Block location of the entity to test.
 - **hasComponent**: *boolean*
@@ -1207,7 +1246,7 @@ Tests for the presence of a component on every tick. Depending on the value of h
 
 ### **succeedWhenEntityPresent**
 `
-succeedWhenEntityPresent(entityTypeIdentifier: string, blockLocation: @minecraft/server.BlockLocation, isPresent?: boolean): void
+succeedWhenEntityPresent(entityTypeIdentifier: string, blockLocation: minecraftserver.Vector3, isPresent?: boolean): void
 `
 
 Depending on the value of isPresent, tests for the presence of an entity on every tick. When an entity of the specified type is found or not found (depending on isPresent), the test is marked as a success.
@@ -1216,7 +1255,7 @@ Depending on the value of isPresent, tests for the presence of an entity on ever
 - **entityTypeIdentifier**: *string*
   
   Type of entity to test for (e.g., 'minecraft:skeleton'). If an entity namespace is not specified, 'minecraft:' is assumed.
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the entity to test for.
 - **isPresent**?: *boolean* = `true`
@@ -1228,13 +1267,13 @@ Depending on the value of isPresent, tests for the presence of an entity on ever
 
 ### **triggerInternalBlockEvent**
 `
-triggerInternalBlockEvent(blockLocation: @minecraft/server.BlockLocation, event: string, eventParameters?: number[]): void
+triggerInternalBlockEvent(blockLocation: minecraftserver.Vector3, event: string, eventParameters?: number[]): void
 `
 
 Triggers a block event from a fixed list of available block events.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 - **event**: *string*
   
   Event to trigger. Valid values include minecraft:drip, minecraft:grow_stalagtite, minecraft:grow_stalagmite, minecraft:grow_up, minecraft:grow_down and minecraft:grow_sideways.
@@ -1259,7 +1298,7 @@ This asynchronous function will wait until the code in the specified callback su
 
 ### **walkTo**
 `
-walkTo(mob: @minecraft/server.Entity, blockLocation: @minecraft/server.BlockLocation, speedModifier?: number): void
+walkTo(mob: minecraftserver.Entity, blockLocation: minecraftserver.Vector3, speedModifier?: number): void
 `
 
 Forces a mob to walk to a particular location. Usually used in conjunction with methods like .spawnWithoutBehaviors to have more predictable mob behaviors. Mobs will stop navigation as soon as they intersect the target location.
@@ -1268,7 +1307,7 @@ Forces a mob to walk to a particular location. Usually used in conjunction with 
 - **mob**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
   
   Mob entity to give orders to.
-- **blockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location where the entity should be walk to.
 - **speedModifier**?: *number* = `1`
@@ -1280,7 +1319,7 @@ Forces a mob to walk to a particular location. Usually used in conjunction with 
 
 ### **walkToLocation**
 `
-walkToLocation(mob: @minecraft/server.Entity, location: @minecraft/server.Location, speedModifier?: number): void
+walkToLocation(mob: minecraftserver.Entity, location: minecraftserver.Vector3, speedModifier?: number): void
 `
 
 Forces a mob to walk to a particular location. Usually used in conjunction with methods like .spawnWithoutBehaviors to have more predictable mob behaviors. Mobs will stop navigation as soon as they intersect the target location.
@@ -1289,7 +1328,7 @@ Forces a mob to walk to a particular location. Usually used in conjunction with 
 - **mob**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
   
   Mob entity to give orders to.
-- **location**: [*@minecraft/server.Location*](../../minecraft/server/Location.md)
+- **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location where the entity should be walk to.
 - **speedModifier**?: *number* = `1`
@@ -1301,24 +1340,24 @@ Forces a mob to walk to a particular location. Usually used in conjunction with 
 
 ### **worldBlockLocation**
 `
-worldBlockLocation(relativeBlockLocation: @minecraft/server.BlockLocation): @minecraft/server.BlockLocation
+worldBlockLocation(relativeBlockLocation: minecraftserver.Vector3): minecraftserver.Vector3
 `
 
 From a BlockLocation with coordinates relative to the GameTest structure block, returns a new BlockLocation with coordinates relative to world. Rotation of the GameTest structure is also taken into account.
 
 #### **Parameters**
-- **relativeBlockLocation**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **relativeBlockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location relative to the GameTest command block.
 
-#### **Returns** [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md) - An absolute location relative to the GameTest command block.
+#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - An absolute location relative to the GameTest command block.
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **worldLocation**
 `
-worldLocation(relativeLocation: @minecraft/server.Vector3): @minecraft/server.Location
+worldLocation(relativeLocation: minecraftserver.Vector3): minecraftserver.Vector3
 `
 
 From a location with coordinates relative to the GameTest structure block, returns a new location with coordinates relative to world. Rotation of the GameTest structure is also taken into account.
@@ -1328,7 +1367,7 @@ From a location with coordinates relative to the GameTest structure block, retur
   
   Location relative to the GameTest command block.
 
-#### **Returns** [*@minecraft/server.Location*](../../minecraft/server/Location.md) - An absolute location relative to the GameTest command block.
+#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - An absolute location relative to the GameTest command block.
 
 > [!WARNING]
 > This function can throw errors.

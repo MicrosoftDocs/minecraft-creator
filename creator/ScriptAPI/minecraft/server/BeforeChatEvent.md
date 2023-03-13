@@ -44,9 +44,25 @@ If true, this message is directly targeted to one or more players (i.e., is not 
 
 Type: *boolean*
 
-### **targets**
-`targets: Player[];`
+## Methods
+- [getTargets](#gettargets)
+- [setTargets](#settargets)
 
-List of players that will receive this message.
+### **getTargets**
+`
+getTargets(): Player[]
+`
 
-Type: [*Player*](Player.md)[]
+Returns a list of players that will receive this message.
+
+#### **Returns** [*Player*](Player.md)[]
+
+### **setTargets**
+`
+setTargets(players: Player[]): void
+`
+
+Updates a list of players that will receive this message.
+
+#### **Parameters**
+- **players**: [*Player*](Player.md)[]

@@ -70,12 +70,16 @@
         href: minecraft/server/Direction.md
       - name: DisplaySlotId
         href: minecraft/server/DisplaySlotId.md
+      - name: DyeColor
+        href: minecraft/server/DyeColor.md
       - name: EntityDamageCause
         href: minecraft/server/EntityDamageCause.md
       - name: FluidType
         href: minecraft/server/FluidType.md
       - name: GameMode
         href: minecraft/server/GameMode.md
+      - name: ItemLockMode
+        href: minecraft/server/ItemLockMode.md
       - name: MessageSourceType
         href: minecraft/server/MessageSourceType.md
       - name: ObjectiveSortOrder
@@ -134,16 +138,12 @@
         href: minecraft/server/BlockExplodeEvent.md
       - name: BlockExplodeEventSignal
         href: minecraft/server/BlockExplodeEventSignal.md
-      - name: BlockHitInformation
-        href: minecraft/server/BlockHitInformation.md
       - name: BlockInventoryComponent
         href: minecraft/server/BlockInventoryComponent.md
-      - name: BlockInventoryComponentContainer
-        href: minecraft/server/BlockInventoryComponentContainer.md
       - name: BlockLavaContainerComponent
         href: minecraft/server/BlockLavaContainerComponent.md
-      - name: BlockLocation
-        href: minecraft/server/BlockLocation.md
+      - name: BlockLiquidContainerComponent
+        href: minecraft/server/BlockLiquidContainerComponent.md
       - name: BlockPermutation
         href: minecraft/server/BlockPermutation.md
       - name: BlockPistonComponent
@@ -156,6 +156,10 @@
         href: minecraft/server/BlockPotionContainerComponent.md
       - name: BlockProperties
         href: minecraft/server/BlockProperties.md
+      - name: BlockProperty
+        href: minecraft/server/BlockProperty.md
+      - name: BlockPropertyType
+        href: minecraft/server/BlockPropertyType.md
       - name: BlockRecordPlayerComponent
         href: minecraft/server/BlockRecordPlayerComponent.md
       - name: BlockSignComponent
@@ -166,8 +170,6 @@
         href: minecraft/server/BlockType.md
       - name: BlockWaterContainerComponent
         href: minecraft/server/BlockWaterContainerComponent.md
-      - name: BoolBlockProperty
-        href: minecraft/server/BoolBlockProperty.md
       - name: ButtonPushEvent
         href: minecraft/server/ButtonPushEvent.md
       - name: ButtonPushEventSignal
@@ -176,10 +178,10 @@
         href: minecraft/server/ChatEvent.md
       - name: ChatEventSignal
         href: minecraft/server/ChatEventSignal.md
-      - name: Color
-        href: minecraft/server/Color.md
       - name: CommandResult
         href: minecraft/server/CommandResult.md
+      - name: Component
+        href: minecraft/server/Component.md
       - name: Container
         href: minecraft/server/Container.md
       - name: ContainerSlot
@@ -218,6 +220,10 @@
         href: minecraft/server/EntityAddRiderComponent.md
       - name: EntityAgeableComponent
         href: minecraft/server/EntityAgeableComponent.md
+      - name: EntityAttributeComponent
+        href: minecraft/server/EntityAttributeComponent.md
+      - name: EntityBaseMovementComponent
+        href: minecraft/server/EntityBaseMovementComponent.md
       - name: EntityBreathableComponent
         href: minecraft/server/EntityBreathableComponent.md
       - name: EntityCanClimbComponent
@@ -228,8 +234,14 @@
         href: minecraft/server/EntityCanPowerJumpComponent.md
       - name: EntityColorComponent
         href: minecraft/server/EntityColorComponent.md
+      - name: EntityComponent
+        href: minecraft/server/EntityComponent.md
       - name: EntityDefinitionFeedItem
         href: minecraft/server/EntityDefinitionFeedItem.md
+      - name: EntityDieEvent
+        href: minecraft/server/EntityDieEvent.md
+      - name: EntityDieEventSignal
+        href: minecraft/server/EntityDieEventSignal.md
       - name: EntityFireImmuneComponent
         href: minecraft/server/EntityFireImmuneComponent.md
       - name: EntityFloatsInLiquidComponent
@@ -248,8 +260,6 @@
         href: minecraft/server/EntityHitEvent.md
       - name: EntityHitEventSignal
         href: minecraft/server/EntityHitEventSignal.md
-      - name: EntityHitInformation
-        href: minecraft/server/EntityHitInformation.md
       - name: EntityHurtEvent
         href: minecraft/server/EntityHurtEvent.md
       - name: EntityHurtEventSignal
@@ -316,6 +326,8 @@
         href: minecraft/server/EntityMovementSwayComponent.md
       - name: EntityNavigationClimbComponent
         href: minecraft/server/EntityNavigationClimbComponent.md
+      - name: EntityNavigationComponent
+        href: minecraft/server/EntityNavigationComponent.md
       - name: EntityNavigationFloatComponent
         href: minecraft/server/EntityNavigationFloatComponent.md
       - name: EntityNavigationFlyComponent
@@ -332,6 +344,8 @@
         href: minecraft/server/EntityPushThroughComponent.md
       - name: EntityRideableComponent
         href: minecraft/server/EntityRideableComponent.md
+      - name: EntityRidingComponent
+        href: minecraft/server/EntityRidingComponent.md
       - name: EntityScaleComponent
         href: minecraft/server/EntityScaleComponent.md
       - name: EntitySkinIdComponent
@@ -370,18 +384,12 @@
         href: minecraft/server/FilterGroup.md
       - name: FluidContainer
         href: minecraft/server/FluidContainer.md
-      - name: IBlockProperty
-        href: minecraft/server/IBlockProperty.md
-      - name: IEntityComponent
-        href: minecraft/server/IEntityComponent.md
-      - name: IntBlockProperty
-        href: minecraft/server/IntBlockProperty.md
-      - name: InventoryComponentContainer
-        href: minecraft/server/InventoryComponentContainer.md
       - name: ItemCompleteChargeEvent
         href: minecraft/server/ItemCompleteChargeEvent.md
       - name: ItemCompleteChargeEventSignal
         href: minecraft/server/ItemCompleteChargeEventSignal.md
+      - name: ItemComponent
+        href: minecraft/server/ItemComponent.md
       - name: ItemCooldownComponent
         href: minecraft/server/ItemCooldownComponent.md
       - name: ItemDefinitionEventSignal
@@ -436,8 +444,6 @@
         href: minecraft/server/LeverActionEvent.md
       - name: LeverActionEventSignal
         href: minecraft/server/LeverActionEventSignal.md
-      - name: Location
-        href: minecraft/server/Location.md
       - name: MessageReceiveEvent
         href: minecraft/server/MessageReceiveEvent.md
       - name: MinecraftBlockTypes
@@ -456,16 +462,12 @@
         href: minecraft/server/MolangVariableMap.md
       - name: NavigationResult
         href: minecraft/server/NavigationResult.md
-      - name: NumberRange
-        href: minecraft/server/NumberRange.md
       - name: PistonActivateEvent
         href: minecraft/server/PistonActivateEvent.md
       - name: PistonActivateEventSignal
         href: minecraft/server/PistonActivateEventSignal.md
       - name: Player
         href: minecraft/server/Player.md
-      - name: PlayerInventoryComponentContainer
-        href: minecraft/server/PlayerInventoryComponentContainer.md
       - name: PlayerIterator
         href: minecraft/server/PlayerIterator.md
       - name: PlayerJoinEvent
@@ -504,8 +506,6 @@
         href: minecraft/server/Seat.md
       - name: ServerMessageSignal
         href: minecraft/server/ServerMessageSignal.md
-      - name: StringBlockProperty
-        href: minecraft/server/StringBlockProperty.md
       - name: System
         href: minecraft/server/System.md
       - name: SystemEvents
@@ -532,14 +532,20 @@
         href: minecraft/server/XYRotation.md
       - name: BlockFillOptions
         href: minecraft/server/BlockFillOptions.md
+      - name: BlockHitInformation
+        href: minecraft/server/BlockHitInformation.md
       - name: BlockRaycastOptions
         href: minecraft/server/BlockRaycastOptions.md
+      - name: Color
+        href: minecraft/server/Color.md
       - name: EntityDamageSource
         href: minecraft/server/EntityDamageSource.md
       - name: EntityDataDrivenTriggerEventOptions
         href: minecraft/server/EntityDataDrivenTriggerEventOptions.md
       - name: EntityEventOptions
         href: minecraft/server/EntityEventOptions.md
+      - name: EntityHitInformation
+        href: minecraft/server/EntityHitInformation.md
       - name: EntityQueryOptions
         href: minecraft/server/EntityQueryOptions.md
       - name: EntityQueryScoreOptions
@@ -550,8 +556,16 @@
         href: minecraft/server/ExplosionOptions.md
       - name: MusicOptions
         href: minecraft/server/MusicOptions.md
+      - name: NumberRange
+        href: minecraft/server/NumberRange.md
+      - name: PlayAnimationOptions
+        href: minecraft/server/PlayAnimationOptions.md
       - name: RawMessage
         href: minecraft/server/RawMessage.md
+      - name: RawMessageScore
+        href: minecraft/server/RawMessageScore.md
+      - name: RawText
+        href: minecraft/server/RawText.md
       - name: ScoreboardObjectiveDisplayOptions
         href: minecraft/server/ScoreboardObjectiveDisplayOptions.md
       - name: ScriptEventMessageFilterOptions

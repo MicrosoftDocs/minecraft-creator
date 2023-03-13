@@ -13,18 +13,9 @@ description: Contents of the @minecraft/server.EntityWantsJockeyComponent class.
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 When added, this component signifies that this entity wants to become a jockey.
-
-## Properties
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:wants_jockey.
-
-Type: *string*
 
 ## Constants
 

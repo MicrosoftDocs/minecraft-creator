@@ -13,18 +13,11 @@ description: Contents of the @minecraft/server.EntityBreathableComponent class.
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 Defines what blocks this entity can breathe in and gives them the ability to suffocate.
 
 ## Properties
-
-### **breatheBlocks**
-`read-only breatheBlocks: BlockPermutation[];`
-
-List of blocks this entity can breathe in, in addition to the separate properties for classes of blocks.
-
-Type: [*BlockPermutation*](BlockPermutation.md)[]
 
 ### **breathesAir**
 `read-only breathesAir: boolean;`
@@ -68,13 +61,6 @@ Time in seconds to recover breath to maximum.
 
 Type: *number*
 
-### **nonBreatheBlocks**
-`read-only nonBreatheBlocks: BlockPermutation[];`
-
-List of blocks this entity can't breathe in.
-
-Type: [*BlockPermutation*](BlockPermutation.md)[]
-
 ### **suffocateTime**
 `read-only suffocateTime: number;`
 
@@ -89,15 +75,34 @@ Time in seconds the entity can hold its breath.
 
 Type: *number*
 
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:breathable.
-
-Type: *string*
-
 ## Methods
+- [getBreatheBlocks](#getbreatheblocks)
+- [getNonBreatheBlocks](#getnonbreatheblocks)
 - [setAirSupply](#setairsupply)
+
+### **getBreatheBlocks**
+`
+getBreatheBlocks(): BlockPermutation[]
+`
+
+List of blocks this entity can breathe in, in addition to the separate properties for classes of blocks.
+
+#### **Returns** [*BlockPermutation*](BlockPermutation.md)[]
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getNonBreatheBlocks**
+`
+getNonBreatheBlocks(): BlockPermutation[]
+`
+
+List of blocks this entity can't breathe in.
+
+#### **Returns** [*BlockPermutation*](BlockPermutation.md)[]
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **setAirSupply**
 `

@@ -13,18 +13,11 @@ description: Contents of the @minecraft/server.EntityFrictionModifierComponent c
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 Defines how much friction affects this entity.
 
 ## Properties
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:friction_modifier.
-
-Type: *string*
 
 ### **value**
 `value: number;`

@@ -29,32 +29,32 @@ Creates a new modal form builder.
 
 ### **body**
 `
-body(bodyText: string): ActionFormData
+body(bodyText: minecraftserver.RawMessage | string): ActionFormData
 `
 
 Method that sets the body text for the modal form.
 
 #### **Parameters**
-- **bodyText**: *string*
+- **bodyText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
 #### **Returns** [*ActionFormData*](ActionFormData.md)
 
 ### **button**
 `
-button(text: string, iconPath?: string): ActionFormData
+button(text: minecraftserver.RawMessage | string, iconPath?: string): ActionFormData
 `
 
 Adds a button to this form with an icon from a resource pack.
 
 #### **Parameters**
-- **text**: *string*
+- **text**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 - **iconPath**?: *string* = `null`
 
 #### **Returns** [*ActionFormData*](ActionFormData.md)
 
 ### **show**
 `
-show(player: @minecraft/server.Player): Promise<ActionFormResponse>
+show(player: minecraftserver.Player): Promise<ActionFormResponse>
 `
 
 Creates and shows this modal popup form. Returns asynchronously when the player confirms or cancels the dialog.
@@ -71,13 +71,13 @@ Creates and shows this modal popup form. Returns asynchronously when the player 
 
 ### **title**
 `
-title(titleText: string): ActionFormData
+title(titleText: minecraftserver.RawMessage | string): ActionFormData
 `
 
 This builder method sets the title for the modal dialog.
 
 #### **Parameters**
-- **titleText**: *string*
+- **titleText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
 #### **Returns** [*ActionFormData*](ActionFormData.md)
 

@@ -13,42 +13,14 @@ description: Contents of the @minecraft/server.BlockWaterContainerComponent clas
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*BlockComponent*](BlockComponent.md)
+- [*BlockLiquidContainerComponent*](BlockLiquidContainerComponent.md)
 
 Represents a fluid container block that currently contains water.
 
-## Properties
-
-### **customColor**
-`customColor: Color;`
-
-Represents a color facet of the water.
-
-Type: [*Color*](Color.md)
-
-### **fillLevel**
-`fillLevel: number;`
-
-Relative level of water within this block. Valid values are between FluidContainer.minFillLevel (0) and FluidContainer.maxFillLevel (6).
-
-Type: *number*
-
-### **location**
-`read-only location: BlockLocation;`
-
-Source location of the block.
-
-Type: [*BlockLocation*](BlockLocation.md)
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:waterContainer.
-
-Type: *string*
-
 ## Methods
 - [addDye](#adddye)
+- [getCustomColor](#getcustomcolor)
+- [setCustomColor](#setcustomcolor)
 
 ### **addDye**
 `
@@ -59,6 +31,31 @@ Adds an item and colors the water based on a dye item type.
 
 #### **Parameters**
 - **itemType**: [*ItemType*](ItemType.md)
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getCustomColor**
+`
+getCustomColor(): Color
+`
+
+Retrieves a custom base color used for the sign text.
+
+#### **Returns** [*Color*](Color.md) - Color that is used as the base color for sign text.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **setCustomColor**
+`
+setCustomColor(color: Color): void
+`
+
+Sets a custom base color used for the sign text. 
+
+#### **Parameters**
+- **color**: [*Color*](Color.md)
 
 > [!WARNING]
 > This function can throw errors.

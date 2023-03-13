@@ -25,7 +25,7 @@ Type: *string*[]
 
 ### **get**
 `
-get(name: string): any
+"get"(name: string): any | undefined
 `
 
 Returns the value of variable that has been configured in a dedicated server configuration JSON file.
@@ -33,7 +33,7 @@ Returns the value of variable that has been configured in a dedicated server con
 #### **Parameters**
 - **name**: *string*
 
-#### **Returns** *any*
+#### **Returns** *any* | *undefined*
 
 #### **Examples**
 ##### *getPlayerProfile.ts*

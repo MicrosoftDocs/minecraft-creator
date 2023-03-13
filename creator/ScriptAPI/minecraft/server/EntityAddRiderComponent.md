@@ -13,7 +13,7 @@ description: Contents of the @minecraft/server.EntityAddRiderComponent class.
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 When added, this component makes the entity spawn with a rider of the specified entityType.
 
@@ -30,13 +30,6 @@ Type: *string*
 `read-only spawnEvent: string;`
 
 Optional spawn event to trigger on the rider when that rider is spawned for this entity.
-
-Type: *string*
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:addrider.
 
 Type: *string*
 

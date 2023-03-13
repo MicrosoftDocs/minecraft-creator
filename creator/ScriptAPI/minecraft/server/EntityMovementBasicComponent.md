@@ -13,7 +13,7 @@ description: Contents of the @minecraft/server.EntityMovementBasicComponent clas
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 This component accents the movement of an entity.
 
@@ -25,13 +25,6 @@ This component accents the movement of an entity.
 The maximum number in degrees the mob can turn per tick.
 
 Type: *number*
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:movement.basic.
-
-Type: *string*
 
 ## Constants
 

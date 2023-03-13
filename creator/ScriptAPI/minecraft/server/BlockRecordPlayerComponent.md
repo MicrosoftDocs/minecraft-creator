@@ -17,22 +17,6 @@ description: Contents of the @minecraft/server.BlockRecordPlayerComponent class.
 
 Represents a block that can play a record.
 
-## Properties
-
-### **location**
-`read-only location: BlockLocation;`
-
-Location of this record-playing block.
-
-Type: [*BlockLocation*](BlockLocation.md)
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:recordPlayer.
-
-Type: *string*
-
 ## Methods
 - [clearRecord](#clearrecord)
 - [isPlaying](#isplaying)

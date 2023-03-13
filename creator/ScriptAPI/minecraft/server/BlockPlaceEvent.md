@@ -19,20 +19,6 @@ Contains information regarding an event where a player places a block.
 
 ## Properties
 
-### **block**
-`read-only block: Block;`
-
-Block placed in this event.
-
-Type: [*Block*](Block.md)
-
-### **dimension**
-`read-only dimension: Dimension;`
-
-Dimension that contains the block that has been placed in this event.
-
-Type: [*Dimension*](Dimension.md)
-
 ### **player**
 `read-only player: Player;`
 

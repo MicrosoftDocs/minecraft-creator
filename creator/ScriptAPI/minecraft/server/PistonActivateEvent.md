@@ -19,20 +19,6 @@ Contains information related to changes to a piston expanding or retracting.
 
 ## Properties
 
-### **block**
-`read-only block: Block;`
-
-Block impacted by this event.
-
-Type: [*Block*](Block.md)
-
-### **dimension**
-`read-only dimension: Dimension;`
-
-Dimension that contains the block that is the subject of this event.
-
-Type: [*Dimension*](Dimension.md)
-
 ### **isExpanding**
 `read-only isExpanding: boolean;`
 
@@ -50,17 +36,17 @@ Type: [*BlockPistonComponent*](BlockPistonComponent.md)
 #### **Examples**
 ##### *pistonEvent.ts*
 ```javascript
-  let canceled = false;
-  const pistonLoc = new mc.BlockLocation(
-    Math.floor(targetLocation.x) + 1,
-    Math.floor(targetLocation.y) + 2,
-    Math.floor(targetLocation.z) + 1
-  );
-  const pistonCallback = mc.world.events.beforePistonActivate.subscribe((pistonEvent: mc.BeforePistonActivateEvent) => {
-    if (pistonEvent.piston.location.equals(pistonLoc)) {
-      log("Cancelling piston event");
-      pistonEvent.cancel = true;
-      canceled = true;
-    }
-  });
+let canceled = false;
+const pistonLoc: mc.Vector3 = {
+  x: Math.floor(targetLocation.x) + 1,
+  y: Math.floor(targetLocation.y) + 2,
+  z: Math.floor(targetLocation.z) + 1,
+};
+const pistonCallback = mc.world.events.beforePistonActivate.subscribe((pistonEvent: mc.BeforePistonActivateEvent) => {
+  if (pistonEvent.piston.location.equals(pistonLoc)) {
+    log("Cancelling piston event");
+    pistonEvent.cancel = true;
+    canceled = true;
+  }
+});
 ```

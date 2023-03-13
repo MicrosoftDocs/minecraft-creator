@@ -438,6 +438,8 @@ Listed below are the available sounds:
 - `fence_gate.open`
 - `insert`
 - `insert_enchanted`
+- `shatter_pot`
+- `brush`
 - `undefined`
 
 ## Example

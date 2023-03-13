@@ -28,18 +28,18 @@ Type: *number*
 
 ### **addCursorsWithOffset**
 `
-addCursorsWithOffset(offset: @minecraft/server.BlockLocation, charge: number): void
+addCursorsWithOffset(offset: minecraftserver.Vector3, charge: number): void
 `
 
 Adds a cursor - which is a notional waypoint that the sculk will spread in the direction of.
 
 #### **Parameters**
-- **offset**: [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+- **offset**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 - **charge**: *number*
 
 ### **getCursorPosition**
 `
-getCursorPosition(index: number): @minecraft/server.BlockLocation
+getCursorPosition(index: number): minecraftserver.Vector3
 `
 
 Retrieves the current position of the specified cursor.
@@ -47,7 +47,7 @@ Retrieves the current position of the specified cursor.
 #### **Parameters**
 - **index**: *number*
 
-#### **Returns** [*@minecraft/server.BlockLocation*](../../minecraft/server/BlockLocation.md)
+#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
 > [!WARNING]
 > This function can throw errors.

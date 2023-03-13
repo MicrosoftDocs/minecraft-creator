@@ -13,18 +13,11 @@ description: Contents of the @minecraft/server.EntityScaleComponent class.
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityComponent*](EntityComponent.md)
 
 Sets the entity's visual size.
 
 ## Properties
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:scale.
-
-Type: *string*
 
 ### **value**
 `value: number;`

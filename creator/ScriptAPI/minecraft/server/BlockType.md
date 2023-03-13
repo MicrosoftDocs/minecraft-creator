@@ -29,18 +29,3 @@ Type: *boolean*
 Block type name - for example, `minecraft:acacia_stairs`.
 
 Type: *string*
-
-## Methods
-- [createDefaultBlockPermutation](#createdefaultblockpermutation)
-
-### **createDefaultBlockPermutation**
-`
-createDefaultBlockPermutation(): BlockPermutation
-`
-
-Creates the default [*@minecraft/server.BlockPermutation*](../../minecraft/server/BlockPermutation.md) for this type which uses the default values for all properties.
-
-#### **Returns** [*BlockPermutation*](BlockPermutation.md) - Returns created permutation.
-
-> [!WARNING]
-> This function can throw errors.

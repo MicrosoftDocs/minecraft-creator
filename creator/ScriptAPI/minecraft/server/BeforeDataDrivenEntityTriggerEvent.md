@@ -37,9 +37,25 @@ Name of the data driven event being triggered.
 
 Type: *string*
 
-### **modifiers**
-`modifiers: DefinitionModifier[];`
+## Methods
+- [getModifiers](#getmodifiers)
+- [setModifiers](#setmodifiers)
 
-An updateable list of modifications to component state that are the effect of this triggered event.
+### **getModifiers**
+`
+getModifiers(): DefinitionModifier[]
+`
 
-Type: [*DefinitionModifier*](DefinitionModifier.md)[]
+Retrieves a list of modifications to component state that are the effect of this triggered event.
+
+#### **Returns** [*DefinitionModifier*](DefinitionModifier.md)[]
+
+### **setModifiers**
+`
+setModifiers(modifiers: DefinitionModifier[]): void
+`
+
+Updates a list of modifications to component state that are the effect of this triggered event.
+
+#### **Parameters**
+- **modifiers**: [*DefinitionModifier*](DefinitionModifier.md)[]

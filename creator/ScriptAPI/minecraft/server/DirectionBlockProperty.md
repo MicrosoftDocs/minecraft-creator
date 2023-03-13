@@ -13,25 +13,11 @@ description: Contents of the @minecraft/server.DirectionBlockProperty class.
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IBlockProperty*](IBlockProperty.md)
+- [*BlockProperty*](BlockProperty.md)
 
 For block properties that take a direction, provides a structured way to specify the direction of a block property.
 
 ## Properties
-
-### **name**
-`read-only name: string;`
-
-Name of the property.
-
-Type: *string*
-
-### **validValues**
-`read-only validValues: Direction[];`
-
-A set of acceptable potential values for the direction-based block property.
-
-Type: [*Direction*](Direction.md)[]
 
 ### **value**
 `value: Direction;`
@@ -39,3 +25,15 @@ Type: [*Direction*](Direction.md)[]
 Value of the block property.
 
 Type: [*Direction*](Direction.md)
+
+## Methods
+- [getValidValues](#getvalidvalues)
+
+### **getValidValues**
+`
+getValidValues(): Direction[]
+`
+
+Returns a set of acceptable potential values for the direction-based block property.
+
+#### **Returns** [*Direction*](Direction.md)[]

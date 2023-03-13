@@ -12,14 +12,23 @@ description: Contents of the @minecraft/server.BlockComponent class.
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+## Extends
+- [*Component*](Component.md)
+
 ## Classes that extend BlockComponent
 - [*BlockInventoryComponent*](BlockInventoryComponent.md)
-- [*BlockLavaContainerComponent*](BlockLavaContainerComponent.md)
+- [*BlockLiquidContainerComponent*](BlockLiquidContainerComponent.md)
 - [*BlockPistonComponent*](BlockPistonComponent.md)
-- [*BlockPotionContainerComponent*](BlockPotionContainerComponent.md)
 - [*BlockRecordPlayerComponent*](BlockRecordPlayerComponent.md)
 - [*BlockSignComponent*](BlockSignComponent.md)
-- [*BlockSnowContainerComponent*](BlockSnowContainerComponent.md)
-- [*BlockWaterContainerComponent*](BlockWaterContainerComponent.md)
 
 Base type for components associated with blocks.
+
+## Properties
+
+### **block**
+`read-only block: Block;`
+
+Block instance that this component pertains to.
+
+Type: [*Block*](Block.md)

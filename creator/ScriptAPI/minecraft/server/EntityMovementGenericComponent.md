@@ -13,25 +13,9 @@ description: Contents of the @minecraft/server.EntityMovementGenericComponent cl
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IEntityComponent*](IEntityComponent.md)
+- [*EntityBaseMovementComponent*](EntityBaseMovementComponent.md)
 
 When added, this move control allows a mob to fly, swim, climb, etc.
-
-## Properties
-
-### **maxTurn**
-`read-only maxTurn: number;`
-
-The maximum number in degrees the mob can turn per tick.
-
-Type: *number*
-
-### **typeId**
-`read-only typeId: string;`
-
-Identifier of this component. Should always be minecraft:movement.generic.
-
-Type: *string*
 
 ## Constants
 

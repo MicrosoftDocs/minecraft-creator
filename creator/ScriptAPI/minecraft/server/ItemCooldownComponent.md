@@ -12,6 +12,9 @@ description: Contents of the @minecraft/server.ItemCooldownComponent class.
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+## Extends
+- [*ItemComponent*](ItemComponent.md)
+
 When present on an item, this item has a cooldown effect when used by entities.
 
 ## Properties
