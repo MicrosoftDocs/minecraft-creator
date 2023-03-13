@@ -17,6 +17,7 @@ ms.prod: gaming
 | crouching_skip_interact| True| Boolean| If true, this entity can't be interacted with if the entity interacting with it is crouching |
 | family_types| *not set*| List| List of entities that can ride this entity |
 | interact_text| *not set*| String| The text to display when the player can interact with the entity when playing with Touch-screen controls |
+| passenger_max_width| 0.00| Decimal| The max width a mob can be to be a passenger. A value of 0 ignores this parameter. |
 | priority| 0| Integer| This field may exist in old data but isn't used by minecraft:rideable. |
 | pull_in_entities| False| Boolean| If true, this entity will pull in entities that are in the correct family_types into any available seats |
 | rider_can_interact| False| Boolean| If true, this entity will be picked when looked at by the rider |

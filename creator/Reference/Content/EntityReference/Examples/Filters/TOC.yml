@@ -92,6 +92,8 @@
   href: is_owner.md
 - name: is_persistent
   href: is_persistent.md
+- name: is_raider
+  href: is_raider.md
 - name: is_riding
   href: is_riding.md
 - name: is_skin_id
