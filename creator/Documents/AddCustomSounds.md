@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: JimSeaman42
+ms.author: v-jimseaman
 title: How to Add Custom Sounds 
 ms.prod: gaming
 description: "A tutorial for adding custom sounds to Minecraft: Bedrock Edition"
@@ -61,7 +61,7 @@ For those who like to skip ahead, here's the quick version:
 
 ## Setting up a Sound Directory
 
-Now that the resource pack has been created, it's time to set up a neighborhood for our sound files.
+Now that the resource pack has been created, it's time to set up a figurative neighborhood for our sound files.
 
 1. In **File Explorer**, navigate to the **com.mojang** folder
 1. Open the **development_resource_packs** folder
