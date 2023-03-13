@@ -53,6 +53,7 @@ Most of the basic information we need regarding sound is included in the sample 
 - **Volume:** Volume, in the context of what we see in the example, is interesting. Instead of being used to determine the intensity of the sound, volume is used here to define how far away a sound can be before the game will attempt to play it. By default, a listener must be <= 16 blocks from the source of the sound before the engine will attempt to play it.
 
 ## Playing Sounds
+
 There are multiple ways to play sounds in Minecraft: Bedrock Edition. The most basic method is to use the '/playsound' command, which will allow you to play a chosen sound for a player or players. To cause sounds to play automatically with events, they need to be added to the 'sounds.json' file.
 
 Additionally, with the use of resource packs custom sounds can be added to replace regular sounds. For a more in-depth look at this process, be sure to read our [How to Add Custom Sounds](AddCustomSounds.md) article.
