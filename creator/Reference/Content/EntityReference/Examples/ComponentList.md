@@ -14,11 +14,15 @@ Below is a list of all the available Components within Minecraft: Bedrock Editio
 |[minecraft:addrider](EntityComponents/minecraftComponent_addrider.md)|`minecraft:addrider` adds a rider to the entity. |
 |[minecraft:admire_item](EntityComponents/minecraftComponent_admire_item.md)|`minecraft:admire_item` allows an entity to ignore attackable targets for a given duration. |
 |[minecraft:ageable](EntityComponents/minecraftComponent_ageable.md) |`minecraft:ageable` will add a timer for the entity to grow up. It can be accelerated by giving the entity the items it likes as defined by `feedItems`. |
+|[minecraft:anger_level](EntityComponents/minecraftComponent_anger_level.md) |`minecraft:anger_level` allows the entity to track anger towards a set of nuisances.|
 |[minecraft:angry](EntityComponents/minecraftComponent_angry.md) |`minecraft:angry` defines the entity's 'angry' state using a timer.|
 |[minecraft:annotation_break_door](EntityComponents/minecraftComponent_annotation_break_door.md) |`minecraft:annotation.break_door` allows an entity to break doors, assuming that that flags set up for the component to use in navigation. |
 |[minecraft:annotation_open_door](EntityComponents/minecraftComponent_annotation_open_door.md) |`minecraft:annotation.open_door` allows an entity to to open doors, assuming that that flags set up for the component to use in navigation. |
 |[minecraft:area_attack](EntityComponents/minecraftComponent_area_attack.md) |`minecraft:area_attack` is a component that does damage to entities that get within range. |
+|[minecraft:attack](EntityComponents/minecraftComponent_attack.md) |`minecraft:attack` allows an entity to define melee attacks and any additional effects on said attacks. |
 |[minecraft:attack_cooldown](EntityComponents/minecraftComponent_attack_cooldown.md) |`minecraft:attack_cooldown` adds a cooldown to an entity. The intention of this cooldown is to be used to prevent the entity from attempting to acquire new attack targets.|
+|[minecraft:attack_damage](EntityComponents/minecraftComponent_attack_damage.md) |`minecraft:attack_damage` specifies how much damage is dealt by the entity when it attacks.|
+|[minecraft:balloonable](EntityComponents/minecraftComponent_balloonable.md) |`minecraft:balloonable` allows the entity to have a balloon attached, and defines the conditions and events for the entity when it is ballooned.|
 |[minecraft:barter](EntityComponents/minecraftComponent_barter.md) |`minecraft:barter` enables the component to drop an item as a barter exchange. |
 |[minecraft:block_climber](EntityComponents/minecraftComponent_block_climber.md) |`minecraft:block_climber` allows the player to detect and maneuver on the scaffolding block. |
 |[minecraft:block_sensor](EntityComponents/minecraftComponent_block_sensor.md) |`minecraft:block_sensor` will fire off a specified event when a block in the block list is broken within the sensor range. |
@@ -38,21 +42,28 @@ Below is a list of all the available Components within Minecraft: Bedrock Editio
 |[minecraft:damage_sensor](EntityComponents/minecraftComponent_damage_sensor.md) |`minecraft:damage_sensor` defines what events to call when this entity is damaged by specific entities or items.|
 |[minecraft:despawn](EntityComponents/minecraftComponent_despawn.md) |`minecraft:despawn` allows an entity despawn when the despawn rules or optional filters evaluate to true.|
 |[minecraft:drying_out_timer](EntityComponents/minecraftComponent_drying_out_timer.md) |`minecraft:drying_out_timer` sets a timer for drying out that will count down and fire 'dried_out_event' or will stop as soon as the entity will get under rain or water and fire `stopped_drying_out_event`.|
+|[minecraft:dweller](EntityComponents/minecraftComponent_dweller.md) |`minecraft:dweller` allows a mob to join and migrate between villages and other dwellings.|
 |[minecraft:economy_trade_table](EntityComponents/minecraftComponent_economy_trade_table.md) |`minecraft:economy_trade_table` defines this entity's ability to trade with players.|
 |[minecraft:entity_sensor](EntityComponents/minecraftComponent_entity_sensor.md) |`minecraft:entity_sensor` is a component that fires an event when a set of conditions are met by other entities within the defined range.|
 |[minecraft:environment_sensor](EntityComponents/minecraftComponent_environment_sensor.md) |`minecraft:environment_sensor` creates a trigger based on environment conditions.|
 |[minecraft:equip_item](EntityComponents/minecraftComponent_equip_item.md) |`minecraft:equip_item` causes the entity to put on the desired equipment.|
 |[minecraft:equippable](EntityComponents/minecraftComponent_equippable.md) |`minecraft:equippable` defines an entity's behavior for having items equipped to it.|
+|[minecraft:exhaustion_values](EntityComponents/minecraftComponent_exhaustion_values.md) |`minecraft:exhaustion_values` defines how much exhaustion each player action should take.|
 |[minecraft:experience_reward](EntityComponents/minecraftComponent_experience_reward.md) |`minecraft:experience_reward` defines the amount of experience rewarded when the entity dies or is successfully bred.|
 |[minecraft:explode](EntityComponents/minecraftComponent_explode.md) |`minecraft:explode` defines how the entity explodes.|
 |[minecraft:flocking](EntityComponents/minecraftComponent_flocking.md) |`minecraft:flocking` allows entities to flock in groups in water or not.|
+|[minecraft:follow_range](EntityComponents/minecraftComponent_follow_range.md) |`minecraft:follow_range` defines the range of blocks where a mob will pursue a target.|
 |[minecraft:game_event_movement_tracking](EntityComponents/minecraftComponent_game_event_movement_tracking.md) |`minecraft:game_event_movement_tracking` allows an entity to emit `entityMove`, `swim` and `flap` game events, depending on the block the entity is moving through. It is added by default to every mob. Add it again to override its behavior.|
 |[minecraft:genetics](EntityComponents/minecraftComponent_genetics.md) |`minecraft:genetics` defines the way a mob's genes and alleles are passed on to its offspring, and how those traits manifest in the child. |
 |[minecraft:giveable](EntityComponents/minecraftComponent_giveable.md) |`minecraft:giveable` defines sets of items that can be used to trigger events when used on this entity. The item will also be taken and placed in the entity's inventory.|
 |[minecraft:group_size](EntityComponents/minecraftComponent_group_size.md) |`minecraft:group_size` keeps track of entity group size in the given radius.|
 |[minecraft:grows_crop](EntityComponents/minecraftComponent_grows_crop.md) |`minecraft:grows_crop` could increase crop growth when entity walks over crop.|
 |[minecraft:healable](EntityComponents/minecraftComponent_healable.md) |`minecraft:healable` defines the interactions with this entity for healing it.|
+|[minecraft:health](EntityComponents/minecraftComponent_health.md) |`minecraft:health` specifies how much life an entity has when spawned.|
+|[minecraft:heartbeat](EntityComponents/minecraftComponent_heartbeat.md) |`minecraft:heartbeat` defines the defines the entity heartbeat.|
+|[minecraft:hide](EntityComponents/minecraftComponent_hide.md) |`minecraft:hide` instructs the entity to move to and hide at their owned POI or the closest nearby.|
 |[minecraft:home](EntityComponents/minecraftComponent_home.md) |`minecraft:home` saves a home point of interest for when the the entity is spawned.|
+|[minecraft:horse.jump_strength](EntityComponents/minecraftComponent_homrse.jump_strength.md) |`minecraft:horse.jump_strength` defines the jump height for a horse or similar entity, such as a donkey.|
 |[minecraft:hurt_on_condition](EntityComponents/minecraftComponent_hurt_on_condition.md) |`minecraft:hurt_on_condition` defines a set of conditions under which an entity should take damage.|
 |[minecraft:inside_block_notifier](EntityComponents/minecraftComponent_inside_block_notifier.md) |`minecraft:inside_block_notifier` verifies whether the entity is inside any of the listed blocks.|
 |[minecraft:insomnia](EntityComponents/minecraftComponent_insomnia.md) |`minecraft:insomnia` adds a timer since last rested to see if phantoms should spawn.|
@@ -62,14 +73,18 @@ Below is a list of all the available Components within Minecraft: Bedrock Editio
 |[minecraft:item_hopper](EntityComponents/minecraftComponent_item_hopper.md) |`minecraft:item_hopper` allows an entity to function like a `hopper` block.|
 |[minecraft:jump.dynamic](EntityComponents/minecraftComponent_jump.dynamic.md) |`minecraft:jump.dynamic` defines a dynamic type jump control that will change jump properties based on the speed modifier of the mob.|
 |[minecraft:jump.static](EntityComponents/minecraftComponent_jump.static.md) |`minecraft:jump.static` gives the entity the ability to jump.|
+|[minecraft:knockback_resistance](EntityComponents/minecraftComponent_knockback_resistance.md) |`minecraft:knockback_resistance` allows an entity to resist being knocked backwards by a melee attack.|
+|[minecraft:lava_movement](EntityComponents/minecraftComponent_lava_movement.md) |`minecraft:lava_movement` allows an entity to have a custom movement speed across lava blocks.|
 |[minecraft:leashable](EntityComponents/minecraftComponent_leashable.md) |`minecraft:leashable` allows this entity to be leashed and defines the conditions and events for this entity when is leashed.|
 |[minecraft:lookat](EntityComponents/minecraftComponent_lookat.md) |`minecraft:lookat` defines the behavior when another entity looks at this entity.|
 |[minecraft:managed_wandering_trader](EntityComponents/minecraftComponent_managed_wandering_trader.md) |`minecraft:managed_wandering_trader` manages the entity's ability to trade. |
 |[minecraft:mob_effect](EntityComponents/minecraftComponent_mob_effect.md) |`minecraft:mob_effect` applies a mob effect to entities that get within range.|
 |[minecraft:movement.amphibious](EntityComponents/minecraftComponent_movement.amphibious.md) |`minecraft:movement.amphibious` allows the mob to swim in water and walk on land.|
 |[minecraft:movement.basic](EntityComponents/minecraftComponent_movement.basic.md) |`minecraft:movement.basic` defines the movement of an entity.|
+|[minecraft:movement.dolphin](EntityComponents/minecraftComponent_movement.dolphin.md) |`minecraft:movement.dolphin` defines the movement of a dolphin-like entity.|
 |[minecraft:movement.fly](EntityComponents/minecraftComponent_movement.fly.md) |`minecraft:movement.fly` causes the mob to fly.|
 |[minecraft:movement.generic](EntityComponents/minecraftComponent_movement.generic.md) |`minecraft:movement.generic`allows a mob to fly, swim, climb, etc. |
+|[minecraft:movement.glide](EntityComponents/minecraftComponent_movement.glide.md) |`minecraft:movement.glide`defines the movement control for flying mobs with a gliding movement. |
 |[minecraft:movement.hover](EntityComponents/minecraftComponent_movement.hover.md) |`minecraft:movement.hover` causes the mob to hover.|
 |[minecraft:movement.jump](EntityComponents/minecraftComponent_movement.jump.md) |`minecraft:movement.jump` causes the mob to jump as it moves with a specified delay between jumps.|
 |[minecraft:movement.skip](EntityComponents/minecraftComponent_movement.skip.md) |`minecraft:movement.skip` causes the mob to hop as it moves.|
@@ -86,6 +101,10 @@ Below is a list of all the available Components within Minecraft: Bedrock Editio
 |[minecraft:peek](EntityComponents/minecraftComponent_peek.md) |`minecraft:peek` defines the entity's `peek` behavior, defining the events that should be called during it.|
 |[minecraft:persistent](EntityComponents/minecraftComponent_persistent.md) |`minecraft:persistent` defines whether an entity should be persistent in the game world.|
 |[minecraft:physics](EntityComponents/minecraftComponent_physics.md) |`minecraft:physics` defines physics properties of an entity, including if it is affected by gravity or if it collides with objects.|
+|[minecraft:player.exhaustion](EntityComponents/minecraftComponent_player.exhaustion.md) |`minecraft:player.exhaustion` defines the player's exhaustion level.|
+|[minecraft:player.experience](EntityComponents/minecraftComponent_player.experience.md) |`minecraft:player.experience` defines how much experience each player action should take.|
+|[minecraft:player.level](EntityComponents/minecraftComponent_player.level.md) |`minecraft:player.level` defines the player's level.|
+|[minecraft:player.saturation](EntityComponents/minecraftComponent_player.saturation.md) |`minecraft:player.saturation` defines the player's need for food.|
 |[minecraft:preferred_path](EntityComponents/minecraftComponent_preferred_path.md) |`minecraft:preferred_path` specifies costing information for mobs that prefer to walk on preferred paths.|
 |[minecraft:projectile](EntityComponents/minecraftComponent_projectile.md) |`minecraft:projectile` allows the entity to be a thrown entity.|
 |[minecraft:pushable](EntityComponents/minecraftComponent_pushable.md) |`minecraft:pushable` defines what can push an entity between other entities and pistons.|
@@ -98,9 +117,10 @@ Below is a list of all the available Components within Minecraft: Bedrock Editio
 |[minecraft:scale_by_age](EntityComponents/minecraftComponent_scale_by_age.md) |`minecraft:scale_by_age` defines the entity's size interpolation based on the entity's age.|
 |[minecraft:scheduler](EntityComponents/minecraftComponent_scheduler.md) |`minecraft:scheduler` fires off scheduled mob events at time of day events.|
 |[minecraft:shareables](EntityComponents/minecraftComponent_shareables.md) |`minecraft:shareables` defines a list of items the mob wants to share or pick up.|
-|[minecraft:shooter](EntityComponents/minecraftComponent_shooter.md) |`minecraft:shooter` defines the entity's ranged attack behavior.The "minecraft:behavior.ranged_attack" goal uses this component to determine which projectiles to shoot. |
+|[minecraft:shooter](EntityComponents/minecraftComponent_shooter.md) |`minecraft:shooter` defines the entity's ranged attack behavior. The "minecraft:behavior.ranged_attack" goal uses this component to determine which projectiles to shoot. |
 |[minecraft:sittable](EntityComponents/minecraftComponent_sittable.md) |`minecraft:sittable` defines the entity's `sit` state.|
 |[minecraft:spawn_entity](EntityComponents/minecraftComponent_spawn_entity.md) |`minecraft:spawn_entity` adds a timer after which this entity will spawn another entity or item (similar to vanilla's chicken's egg-laying behavior).|
+|[minecraft:strength](EntityComponents/minecraftComponent_strength.md) |`minecraft:strength` defines the entity's ability to carry items.|
 |[minecraft:tameable](EntityComponents/minecraftComponent_tameable.md) |`minecraft:tameable` defines the rules for a mob to be tamed by the player.|
 |[minecraft:tamemount](EntityComponents/minecraftComponent_tamemount.md) |`minecraft:tamemount` allows the Entity to be tamed by mounting it. |
 |[minecraft:target_nearby_sensor](EntityComponents/minecraftComponent_target_nearby_sensor.md) |`minecraft:target_nearby_sensor` defines the entity's range within which it can see or sense other entities to target them. |
@@ -110,5 +130,8 @@ Below is a list of all the available Components within Minecraft: Bedrock Editio
 |[minecraft:trade_table](EntityComponents/minecraftComponent_trade_table.md) |`minecraft:trade_table` defines this entity's ability to trade with players.|
 |[minecraft:trail](EntityComponents/minecraftComponent_trail.md) |`minecraft:trail` causes an entity to leave a trail of blocks as it moves about the world. |
 |[minecraft:transformation](EntityComponents/minecraftComponent_transformation.md) |`minecraft:transformation` defines an entity's transformation from the current definition into another.|
+|[minecraft:trust](EntityComponents/minecraftComponent_trust.md) |`minecraft:trust` allows the entity to trust one or more players.|
 |[minecraft:trusting](EntityComponents/minecraftComponent_trusting.md) |`minecraft:trusting` defines the rules for a mob to trust players. |
+|[minecraft:underwater_movement](EntityComponents/minecraftComponent_underwater_movement.md) |`minecraft:underwater_movement` defines the speed an entity can move in the water. |
 |[minecraft:water_movement](EntityComponents/minecraftComponent_water_movement.md) |`minecraft:water_movement` defines the speed with which an entity can move through water. |
+|[minecraft:variable_max_auto_step](EntityComponents/minecraftComponent_variable_max_auto_step.md) |`minecraft:variable_max_auto_step` defines a maximum auto step height that is different depending on whether the entity is on a block that prevents jumping. Incompatible with "runtime_identifier":"minecraft:horse" |

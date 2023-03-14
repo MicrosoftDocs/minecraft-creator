@@ -36,6 +36,10 @@ Welcome to the Experimental Entity Query functions.
 | query.has_property| (EXPERIMENTAL. Enable 'Holiday Creator Features' AND 'Upcoming Creator Features' to use.) Takes one argument: the name of the property on the Actor. Returns 1.0 if a property with the given name exists, 0 otherwise.  |
 | query.is_attached| (EXPERIMENTAL. Enable **Molang Features** to use.) Returns 1.0 if the actor is attached to another actor (such as being held or worn), else it will return 0.0. |
 | query.is_cooldown_type| (EXPERIMENTAL. Enable **Molang Features** to use.) Returns 1.0 if the specified held or worn item has the specified cooldown type name, otherwise returns 0.0. First argument is the cooldown name to check for, second argument is the equipment slot name, and optional third argument is the numerical slot id. For second and third arguments, uses the same name and ID that the replaceitem command takes when querying entities. |
+| query.is_feeling_happy| (EXPERIMENTAL. Enable **Sniffer** to use.)Returns 1.0 if the entity is feeling happy, else it returns 0.0. |
+| query.is_rising| (EXPERIMENTAL. Enable **Sniffer** to use.)Returns 1.0 if the entity is rising, else it returns 0.0. |
+| query.is_scenting| (EXPERIMENTAL. Enable **Sniffer** to use.)Returns 1.0 if the entity is scenting, else it returns 0.0. |
+| query.is_searching| (EXPERIMENTAL. Enable **Sniffer** to use.)Returns 1.0 if the entity is searching, else it returns 0.0. |
 | query.is_spectator| (EXPERIMENTAL. Enable 'Spectator Mode' to use.) Returns 1.0 if the entity is spectator, else it returns 0.0. |
 | query.property| (EXPERIMENTAL. Enable 'Holiday Creator Features' AND 'Upcoming Creator Features' to use.) Takes one argument: the name of the property on the entity. Returns the value of that property if it exists, else 0.0 if not. |
 | query.relative_block_has_all_tags| (EXPERIMENTAL. Enable **Molang Features** to use.) Takes an entity-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has all of the tags provided. |

@@ -218,6 +218,8 @@
   href: minecraftBehavior_random_look_around_and_sit.md
 - name: behavior.random_look_around
   href: minecraftBehavior_random_look_around.md
+- name: behavior.random_search_and_dig
+  href: minecraftBehavior_random_search_and_dig.md
 - name: behavior.random_sitting
   href: minecraftBehavior_random_sitting.md
 - name: behavior.random_stroll
