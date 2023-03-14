@@ -115,6 +115,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.random_hover| -1797323808 |
 | minecraft:behavior.random_look_around| 1177762851 |
 | minecraft:behavior.random_look_around_and_sit| -1368070166 |
+| minecraft:behavior.random_search_and_dig| 9274891347700307903 |
 | minecraft:behavior.random_sitting| 1722716662 |
 | minecraft:behavior.random_stroll| -1643504294 |
 | minecraft:behavior.random_swim| -1465281278 |

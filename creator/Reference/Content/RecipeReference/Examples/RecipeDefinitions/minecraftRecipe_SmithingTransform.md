@@ -13,10 +13,11 @@ Represents a smithing transform recipe for the Smithing Table. These recipes tra
 
 |Name |Type |Description |
 |:-----------|:-----------|:-----------|
-|addition| item name or item tag|  The item needed to perform the transform operation. In case of stackable items, only one item is consumed. The only accepted value is "minecraft:netherite_ingot" |
-|base| item name or item tag| The item to transform. base item properties will be copied to "result." The only accepted values are armor and tools.|
+|addition| item name|  The material needed to perform the transform operation. In case of stackable items, only one item is consumed. The only accepted item is "minecraft:netherite_ingot." Items must have the "minecraft:transform_materials" tag to be accepted into the respective UI slot. |
+|base| item name| The item to transform. base item properties will be copied to "result." The only accepted items are armor and tools. Items must have the "minecraft:transformable_items" tag to be accepted into the respective UI slot.|
 |result| item name| The item to transform into. |
 |tags|String array |The crafting station compatible with the recipe. The only accepted value is "smithing_table" |
+|template| item name| The template needed to perform the transform operation. In case of stackable items, only 1 item is consumed. Items must have the "minecraft:transform_templates" tag to be accepted into the respective UI slot. |
 
 ## Smithing Transform Recipe Example
 
@@ -28,6 +29,7 @@ Represents a smithing transform recipe for the Smithing Table. These recipes tra
             "identifier": "minecraft:smithing_netherite_boots"
         },
      "tags": ["smithing_table"],
+     "template": "minecraft:netherite_upgrade_smithing_template",
      "base": "minecraft:diamond_boots",
         "addition": "minecraft:netherite_ingot",
         "result": "minecraft:netherite_boots"

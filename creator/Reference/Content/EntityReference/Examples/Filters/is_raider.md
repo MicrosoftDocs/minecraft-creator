@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: v-jimseaman
-title: Entity Documentation - actor_health
+title: Entity Documentation - is_raider
 ms.prod: gaming
 ---
 
-# Entity Documentation - actor_health
+# Entity Documentation - is_raider
 
-Tests the health of the subject.
+Tests if the subject is a raider.
 
 ### subject
 
@@ -40,18 +40,31 @@ Tests the health of the subject.
 
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
-|value | -- |Integer |(Required) An integer value. |
+|value |true |Boolean |(Optional) true or false. |
 
-## Examples
+## Example
 
 ### Full
 
 ```json
-{ "test": "actor_health", "subject": "self", "operator": "equals", "value": "0" }
+{ "test": "is_raider", "subject": "self", "operator": "equals", "value": true}
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "actor_health", "value": "0" }
+{ "test": "is_raider" }
 ```
+
+## Vanilla entities examples
+
+### zoglin
+
+```json
+{ "test": "is_persistent", "value": false }
+```
+
+## Vanilla entities using `is_persistent`
+
+- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
+- [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)

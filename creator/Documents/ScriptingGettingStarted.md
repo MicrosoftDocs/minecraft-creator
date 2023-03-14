@@ -74,6 +74,15 @@ Use the Find/Replace command (Ctrl-Shift-F) to search for "starterbp" and replac
 
 ![Changing instances of starterbp to cotta](Media/ScriptingGettingStarted/400-CottaGulp.png)
 
+> [!IMPORTANT]
+> You may choose to use either Minecraft or Minecraft Preview to debug and work
+> with your scripts. This article was last updated to work with version 1.19.80
+> Preview, and Preview versions of Minecraft will have the latest versions of
+> scripting APIs, so we recommend using Preview. If you do use Minecraft Preview,
+> open up **gulpfile.js** and, at the top of the file, set
+> `useMinecraftPreview = true;`.
+
+
 Go back the Files tree view and open `behavior_packs\cotta\manifest.json`
 
 Update the name and description properties to something like "Cotta Behavior Pack" and "My TypeScript Project".
@@ -83,7 +92,8 @@ Update the first and second UUID properties to make it unique to your project. S
 > [!IMPORTANT]
 > You may also need to update the version of Beta APIs in your `dependencies` section to match your version of Minecraft.
 > Versions 1.19.40 feature `1.0.0-beta` APIs
-> Versions 1.19.50 feature `1.1.0-beta` APIs
+> Versions 1.19.50, 1.19.60, and 1.19.70 feature `1.1.0-beta` APIs
+> Versions 1.19.80 features `1.2.0-beta` APIs
 > Future versions will likely require updated versions of Beta APIs.
 
 [See more information about versioning and script API modules](./ScriptVersioning.md)
@@ -143,7 +153,7 @@ Open up `scripts/main.ts` within Visual Studio Code.
 Remove all the existing script code in **main.ts**. Replace it with this to start:
 
 ```typescript
-import { world, system, BlockLocation, MinecraftBlockTypes } from "@minecraft/server";
+import { world, system, MinecraftBlockTypes, BlockPermutation } from "@minecraft/server";
 
 const START_TICK = 100;
 
@@ -170,7 +180,7 @@ function initializeBreakTheTerracotta() {
 
   overworld.runCommandAsync("scoreboard players set @p score 0");
 
-  world.say("BREAK THE TERRACOTTA");
+  world.sendMessage("BREAK THE TERRACOTTA");
 }
 
 function gameTick() {
@@ -234,7 +244,7 @@ We're going to start by adding some handy helper utility code functions. This wi
 Add a new file to your `scripts` folder called `Utilities.ts`. Correct capitalization matters, so make sure the `U` is capitalized. Add the following code:
 
 ```typescript
-import { world, BlockLocation, BlockType } from "@minecraft/server";
+import { world, BlockPermutation, BlockType } from "@minecraft/server";
 
 export default class Utilities {
   static fillBlock(
@@ -246,13 +256,13 @@ export default class Utilities {
     yTo: number,
     zTo: number
   ) {
-
     let overworld = world.getDimension("overworld");
+    let perm = BlockPermutation.resolve(blockType.id);
 
     for (let i = xFrom; i <= xTo; i++) {
       for (let j = yFrom; j <= yTo; j++) {
         for (let k = zFrom; k <= zTo; k++) {
-          overworld.getBlock(new BlockLocation(i, j, k)).setType(blockType);
+          overworld.getBlock({ x: i, y: j, z: k }).setPermutation(perm);
         }
       }
     }
@@ -268,17 +278,19 @@ export default class Utilities {
     zTo: number
   ) {
     let overworld = world.getDimension("overworld");
+    let perm = BlockPermutation.resolve(blockType.id);
+
     for (let i = xFrom; i <= xTo; i++) {
       for (let k = yFrom; k <= yTo; k++) {
-        overworld.getBlock(new BlockLocation(i, k, zFrom)).setType(blockType);
-        overworld.getBlock(new BlockLocation(i, k, zTo)).setType(blockType);
+        overworld.getBlock({ x: i, y: k, z: zFrom }).setPermutation(perm);
+        overworld.getBlock({ x: i, y: k, z: zTo }).setPermutation(perm);
       }
     }
 
     for (let j = zFrom + 1; j < zTo; j++) {
       for (let k = yFrom; k <= yTo; k++) {
-        overworld.getBlock(new BlockLocation(xFrom, k, j)).setType(blockType);
-        overworld.getBlock(new BlockLocation(xTo, k, j)).setType(blockType);
+        overworld.getBlock({ x: xFrom, y: k, z: j }).setPermutation(perm);
+        overworld.getBlock({ x: xTo, y: k, z: j }).setPermutation(perm);
       }
     }
   }
@@ -311,7 +323,7 @@ const ARENA_Y_OFFSET = -60;
 const ARENA_Z_OFFSET = 0;
 ```
 
-Finally, within `initializeBreakTheTerracotta`, let's add our arena initialization beneath the `world.say("BREAK THE TERRACOTTA!");` line of code:
+Finally, within `initializeBreakTheTerracotta`, let's add our arena initialization beneath the `world.sendMessage("BREAK THE TERRACOTTA!");` line of code:
 
 ```typescript
 Utilities.fillBlock(
@@ -387,17 +399,17 @@ function spawnNewTerracotta() {
   cottaX = Math.floor(Math.random() * (ARENA_X_SIZE - 1)) - (ARENA_X_SIZE / 2 - 1);
   cottaZ = Math.floor(Math.random() * (ARENA_Z_SIZE - 1)) - (ARENA_Z_SIZE / 2 - 1);
 
-  world.say("Creating new terracotta!");
+  world.sendMessage("Creating new terracotta!");
   overworld
-    .getBlock(new BlockLocation(cottaX + ARENA_X_OFFSET, 1 + ARENA_Y_OFFSET, cottaZ + ARENA_Z_OFFSET))
-    .setType(MinecraftBlockTypes.yellowGlazedTerracotta);
+    .getBlock({ x: cottaX + ARENA_X_OFFSET, y: 1 + ARENA_Y_OFFSET, z: cottaZ + ARENA_Z_OFFSET})
+    .setPermutation(BlockPermutation.resolve("yellow_glazed_terracotta"));
 }
 
 function checkForTerracotta() {
   let overworld = world.getDimension("overworld");
 
   let block = overworld.getBlock(
-    new BlockLocation(cottaX + ARENA_X_OFFSET, 1 + ARENA_Y_OFFSET, cottaZ + ARENA_Z_OFFSET)
+    { x: cottaX + ARENA_X_OFFSET, y: 1 + ARENA_Y_OFFSET, z: cottaZ + ARENA_Z_OFFSET }
   );
 
   if (block.type !== MinecraftBlockTypes.yellowGlazedTerracotta) {
@@ -406,7 +418,7 @@ function checkForTerracotta() {
     spawnCountdown = 2;
     cottaX = -1;
     overworld.runCommandAsync("scoreboard players set @p score " + score);
-    world.say("You broke the terracotta! Creating new terracotta in a few seconds.");
+    world.sendMessage("You broke the terracotta! Creating new terracotta in a few seconds.");
     cottaZ = -1;
   }
 }
@@ -439,7 +451,7 @@ function spawnMobs() {
 
     overworld.spawnEntity(
       "minecraft:zombie",
-      new BlockLocation(zombieX + ARENA_X_OFFSET, 1 + ARENA_Y_OFFSET, zombieZ + ARENA_Z_OFFSET)
+      { x: zombieX + ARENA_X_OFFSET, y: 1 + ARENA_Y_OFFSET, z: zombieZ + ARENA_Z_OFFSET } 
     );
   }
 }
@@ -480,7 +492,7 @@ function addFuzzyLeaves() {
     const leafZ = Math.floor(Math.random() * (ARENA_Z_SIZE - 1)) - (ARENA_Z_SIZE / 2 - 1);
 
     overworld
-      .getBlock(new BlockLocation(leafX + ARENA_X_OFFSET, leafY + ARENA_Y_OFFSET, leafZ + ARENA_Z_OFFSET))
+      .getBlock({ x: leafX + ARENA_X_OFFSET, y: leafY + ARENA_Y_OFFSET, z: leafZ + ARENA_Z_OFFSET})
       .setType(MinecraftBlockTypes.leaves);
   }
 }

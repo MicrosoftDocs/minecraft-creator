@@ -1,5 +1,5 @@
 ---
-author: minecraftchloe
+author: JDHeaden
 ms.author: v-jillheaden
 title: Minecraft Bedrock Editor Overview
 ms.prod: gaming
@@ -166,7 +166,7 @@ To **import** projects, go to the Create New Project screen and click the import
 Navigate to a .mcworld, .mctemplate, or .mcproject files.
 After the file is imported, it is converted to an .mcproject file.
 
-If you want to learn more about Minecraft file types like .mcproject and .mcworld, there is more information on the [Minecraft File Types](/MinecraftFileExtensions.md) page.
+If you want to learn more about Minecraft file types like .mcproject and .mcworld, there is more information on the [Minecraft File Types](MinecraftFileExtensions.md) page.
 
 - **UI settings** - This is where you can adjust the UI Scale, Font, and Theme color settings of the Editor UI.
 

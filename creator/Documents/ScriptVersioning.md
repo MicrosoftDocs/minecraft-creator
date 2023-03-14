@@ -30,7 +30,7 @@ This implies that as minor versions increment, and even if additional "minor rel
 > [!IMPORTANT]
 > As you share or publish behavior packs that use stable APIs, please base your dependencies for APIs on the latest and highest version number that is supported within Minecraft at the time of your release.
 
-As of version 1.19.60, only `@minecraft/server` has APIs that are in the stable track. See the following objects specifically:
+As of version 1.19.70, only `@minecraft/server` has APIs that are in the stable track. See the following objects specifically:
 
 * [World](../ScriptAPI/minecraft/server/World.md)
 * [Dimension](../ScriptAPI/minecraft/server/Dimension.md)
