@@ -196,14 +196,13 @@ Sample Test:
 
 ```javascript
 import * as GameTest from "@minecraft/server-gametest";
-import { BlockLocation } from "@minecraft/server";
 
 function simpleMobTest(test) {
   const attackerId = "fox";
   const victimId = "chicken";
 
-  test.spawn(attackerId, new BlockLocation(5, 2, 5));
-  test.spawn(victimId, new BlockLocation(2, 2, 2));
+  test.spawn(attackerId, { x: 5, y: 2, z: 5});
+  test.spawn(victimId, { x: 2, y: 2, z: 2});
 
   test.assertEntityPresentInArea(victimId, true);
 
@@ -224,14 +223,13 @@ The full JavaScript StarterTests.js file looks like:
 
 ```javascript
 import * as GameTest from "@minecraft/server-gametest";
-import { BlockLocation } from "@minecraft/server";
 
 function simpleMobTest(test) {
   const attackerId = "fox";
   const victimId = "chicken";
 
-  test.spawn(attackerId, new BlockLocation(5, 2, 5));
-  test.spawn(victimId, new BlockLocation(2, 2, 2));
+  test.spawn(attackerId, { x: 5, y: 2, z: 5});
+  test.spawn(victimId, { x: 2, y: 2, z: 2});
 
   test.assertEntityPresentInArea(victimId, true);
 
