@@ -1,5 +1,5 @@
 ---
-author: mammerla
+author: JDHeaden
 ms.author: v-jillheaden
 title: Minecraft Bedrock Editor Overview
 ms.prod: gaming
