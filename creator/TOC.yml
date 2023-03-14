@@ -74,6 +74,10 @@
               href: Documents/FogInResourcePacks.md
             - name: Particle Effects
               href: Documents/ParticleEffects.md
+            - name: Introduction to Sound
+              href: Documents/IntroductionToSound.md
+            - name: Adding Custom Sounds
+              href: Documents/AddCustomSounds.md
         - name: Adding a Custom Block
           items:
            - name: Add a Custom Die Block 
