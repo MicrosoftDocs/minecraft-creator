@@ -105,6 +105,10 @@ McSkin3D is software designed entirely with skin creation in mind. It has many f
 
 LookatMySkin is a skin previewer that allows you to edit a skin in your program of choice and instantly see it previewed on a 3D player model. It has a variety of features, such as limb posing, zoom, and adjustable background color. This can also be useful for taking screenshots of skins or quickly checking skins for oddities when posed in different ways.
 
+### [BedrockExplorer: Skin Assistant](https://skinassistant.bedrockexplorer.com/third-party/skin-assistant)
+
+A web-based visual tool that allows you to preview your skins in 3D, visually see any validation errors, and will even attempt to automatically fix issues for you. Drag your skin onto the 3D preview and Skin Assistant will run numerous checks for you to ensure your skin is ready to submit.
+
 ## What's Next?
 
 While there are many more tools that exist and are constantly being created to make Minecraft content creation easier, this is a great place to start. Creators should check back here often for newly added content and take advantage of all the available tools at their disposal.
