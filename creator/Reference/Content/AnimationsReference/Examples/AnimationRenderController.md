@@ -17,7 +17,7 @@ To begin, create a new folder named "render_controllers" in the root of the Reso
 
 ### Example render controllers JSON for the ocelot entity
 
-```JSONC
+```JSON
 "format_version": "1.8.0",
 "render_controllers": {
   "controller.render.ocelot": {
