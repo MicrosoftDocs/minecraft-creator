@@ -7,13 +7,13 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:movement.generic
 
-`minecraft:movement.generic` allows a mob to fly, swim, climb, etc.
+`minecraft:movement.generic` allows an entity to fly, swim, climb, etc.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| max_turn| 30.0| Decimal| The maximum number in degrees the mob can turn per tick. |
+| max_turn| 30.0| Decimal| The maximum number in degrees the entity can turn per tick. |
 
 ## Example
 

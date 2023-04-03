@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:attack_damage
 ms.prod: gaming
 ---

@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:exhaustion_values
 ms.prod: gaming
 ---

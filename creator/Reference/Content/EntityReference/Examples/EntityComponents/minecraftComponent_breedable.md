@@ -1,39 +1,39 @@
 ---
 author: mammerla
-ms.author: mikeam
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:breedable
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:breedable
 
-`minecraft:breedable` allows an entity to establish a way to get into the `love` state used for breeding.
+`minecraft:breedable` comppels an entity to get into the `love` state used for breeding.
 
 >[!IMPORTANT]
-> `minecraft:breedable`requires the behavior [`minecraft:behavior.breed`](../EntityGoals/minecraftBehavior_breed.md) in order to allow entities to breed.
+> `minecraft:breedable`requires the behavior [`minecraft:behavior.breed`](../EntityGoals/minecraftBehavior_breed.md) in order to breed.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|allow_sitting| false| Boolean| If true, entities can breed while sitting |
-|blend_attributes| true| Boolean| If true, the entities will blend their attributes in the offspring after they breed. |
-|breed_cooldown| 60| Decimal|  Time in seconds before the Entity can breed again. |
+|allow_sitting| false| Boolean| If true, entities can breed while sitting. |
+|blend_attributes| true| Boolean| If true, entities will blend their attributes in their offspring. |
+|breed_cooldown| 60| Decimal|  Time in seconds before the entity can breed again. |
 |breed_items|*not set* | List| The list of items that can be used to get the entity into the 'love' state |
-|[breeds_with](#breeds_with)|*not set* | List| The list of entity definitions that this entity can breed with.|
+|[breeds_with](#breeds_with)|*not set* | List| The list of entity definitions that the entity can breed with.|
 |causes_pregnancy| false| Boolean| If true, the entity will become pregnant instead of spawning a baby. |
-|[deny_parents_variant](#deny_parents_variant)|*not set* | JSON Object|  Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead.|
+|[deny_parents_variant](#deny_parents_variant)|*not set* | JSON Object|  Determines how likely it is that a baby of parents with the same variant will deny that variant and take a random variant within the given range instead.|
 |[environment_requirements](#environment_requirements)|*not set* | List| The list of nearby block requirements to get the entity into the 'love' state.|
-|extra_baby_chance| 0| Decimal| Chance that up to 16 babies will spawn between 0.0 and 1.0, where 1.0 is 100%. |
+|extra_baby_chance| 0| Decimal| Chance between 0.0 and 1.0 that up to 16 babies will spawn, where 1.0 is 100%. |
 |inherit_tamed| true| Boolean|  If true, babies of tamed parents will be automatically tamed. |
-|[love_filters](../FilterList.md)|*not set* | Minecraft Filter|  The filters to run when attempting to fall in love. |
-|[mutation_factor](#mutation_factor)|*not set* | JSON Object|  Determines how likely the babies are to NOT inherit one of their parent's variances. Values are between 0.0 and 1.0, with a higher number meaning more likely to mutate.|
+|[love_filters](../FilterList.md)|*not set* | Minecraft Filter| The filters to run when attempting to fall in love. |
+|[mutation_factor](#mutation_factor)|*not set* | JSON Object|  Determines how likely the babies are to NOT inherit one of their parent's variances. Values are between 0.0 and 1.0, with a higher number corresponding with a higher likelihood of mutation.|
 |mutation_strategy| none| String| Strategy used for mutating variants and extra variants for offspring. Current valid alternatives are 'random' and 'none'.|
 |parent_centric_attribute_blending | -- | List| [EXPERIMENTAL] List of attributes that should benefit from parent centric attribute blending. For example, horses blend their health, movement, and jump_strength in their offspring.|
 |random_extra_variant_mutation_interval| 0| Range [a, b]| Range used to determine a random extra variant.|
 |random_variant_mutation_interval| 0| Range [a, b]| Range used to determine a random variant.|
 |require_full_health| false| Boolean|  If true, the entity needs to be at full health before it can breed. |
-|require_tame| true| Boolean| If true, the entities need to be tamed first before they can breed. |
+|require_tame| true| Boolean| If true, the entity needs to be tamed before it can breed. |
 
 ### breeds_with
 
@@ -41,9 +41,9 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|baby_type|*not set* | String| The entity definition of this entity's babies. |
-|breed_event|*not set* | String| Event to run when this entity breeds. |
-|mate_type|*not set* | String| The entity definition of this entity's mate. |
+|baby_type|*not set* | String| The entity definition of the entity's babies. |
+|breed_event|*not set* | String| Event to run when the entity breeds. |
+|mate_type|*not set* | String| The entity definition of the entity's mate. |
 
 ### deny_parents_variant
 
@@ -72,9 +72,8 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |color| 0| Decimal| The percentage chance of a mutation on the entity's color. |
-|extra_baby_chance| 0| Decimal| Chance that up to 16 babies will spawn between 0.0 and 1.0, where 1.0 is 100%. |
+|extra_baby_chance| 0| Decimal| Chance between 0.0 and 1.0 that up to 16 babies will spawn, where 1.0 is 100%. |
 |extra_variant| 0| Decimal| The percentage chance of a mutation on the entity's extra variant type. |
-|inherit_tamed| true|Boolean| If true, babies of tamed parents will be automatically tamed.|
 |inherit_tamed| true|Boolean| If true, babies of tamed parents will be automatically tamed.|
 |variant| 0| Decimal| The percentage chance of a mutation on the entity's variant type. |
 

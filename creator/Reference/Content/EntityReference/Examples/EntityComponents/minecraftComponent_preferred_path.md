@@ -1,13 +1,13 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:preferred_path
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:preferred_path
 
-`minecraft:preferred_path` specifies costing information for mobs that prefer to walk on preferred paths.
+`minecraft:preferred_path` specifies costing information for entities that prefer to walk on preferred paths.
 
 ## Parameters
 
@@ -15,7 +15,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 | default_block_cost| 0| Decimal| Cost for non-preferred blocks |
 | jump_cost| 0| Integer| Added cost for jumping up a node |
-| max_fall_blocks| 3| Integer| Distance mob can fall without taking damage |
+| max_fall_blocks| 3| Integer| Distance entity can fall without taking damage |
 | preferred_path_blocks| *not set*| List| A list of blocks with their associated cost |
 
 ## Example

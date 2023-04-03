@@ -1,13 +1,13 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:game_event_movement_tracking
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:game_event_movement_tracking
 
-`minecraft:game_event_movement_tracking` allows an entity to emit `entityMove`, `swim` and `flap` game events, depending on the block the entity is moving through. It is added by default to every mob. Add it again to override its behavior.
+`minecraft:game_event_movement_tracking` compels an entity to emit `entityMove`, `swim` and `flap` game events, depending on the block the entity is moving through. It is added by default to every mob. Add it again to override its behavior.
 
 ## Parameters
 

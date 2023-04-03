@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:interact
 ms.prod: gaming
 ---
@@ -19,9 +19,9 @@ ms.prod: gaming
 |equip_item_slot| -1| Integer| The entity's equipment slot to equip the item to, if any, upon successful interaction. |
 |health_amount| 0| Integer | The amount of health this entity will recover or hurt when interacting with this item. Negative values will harm the entity. |
 |hurt_item| 0| Integer|  The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability. |
-|interact_text|*not set* | String|  Text to show when the player is able to interact in this way with this entity when playing with Touch-screen controls. |
-|on_interact|*not set* | JSON object | Events to fire when the interaction occurs. |
-|particle_on_start|*not set* | JSON Object|  Particle effect that will be triggered at the start of the interaction.|
+|interact_text|*not set* | String|  Text to show while playing with touch-screen controls when the player is able to interact in this way with this entity. |
+|on_interact|*not set* | JSON object | Events to initiate when the interaction occurs. |
+|particle_on_start|*not set* | JSON Object|  Particle effect that will be initiated at the start of the interaction.|
 |play_sounds|*not set* | String| One or more sound identifiers to play when the interaction occurs. |
 |spawn_entities|*not set* | String| Entity to spawn when the interaction occurs. |
 |spawn_items|*not set* |JSON Object|  Loot table with items to drop on the ground upon successful interaction.|

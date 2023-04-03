@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: mikeam
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:boss
 ms.prod: gaming
 ---
@@ -13,8 +13,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| hud_range| 55| Integer| The max distance from the boss at which the boss's health bar is present on the players screen. |
-| name|*not set* | String| The name that will be displayed above the boss's health bar. |
+| hud_range| 55| Integer| The max distance from the boss at which the boss's health bar appears on the screen. |
+| name|*not set* | String| The name that displays above the boss's health bar. |
 |should_darken_sky| Boolean| false| Whether the sky should darken in the presence of the boss. |
 
 ## Example

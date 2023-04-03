@@ -1,13 +1,13 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:despawn
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:despawn
 
-`minecraft:despawn` allows an entity despawn when the despawn rules or optional filters evaluate to true.
+`minecraft:despawn` compels an entity despawn when the despawn rules or optional filters evaluate to true.
 
 ## Parameters
 

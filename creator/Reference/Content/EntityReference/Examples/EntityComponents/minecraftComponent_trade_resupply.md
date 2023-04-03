@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:trade_resupply
 
-`minecraft:trade_resupply` resupplies an entity's trade.
+`minecraft:trade_resupply` resupplies the entity's trade.
 
 
 ## Example

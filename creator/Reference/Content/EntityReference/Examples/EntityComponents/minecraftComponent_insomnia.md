@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:insomnia
 ms.prod: gaming
 ---
@@ -13,7 +13,7 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| days_until_insomnia| 3.0| Decimal| Number of days the mob has to stay up until the insomnia effect begins. |
+| days_until_insomnia| 3.0| Decimal| Number of days the entity has to stay up until the insomnia effect begins. |
 
 ## Example
 

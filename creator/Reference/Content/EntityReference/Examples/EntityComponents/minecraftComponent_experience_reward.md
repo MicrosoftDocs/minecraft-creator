@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:experience_reward
 ms.prod: gaming
 ---
@@ -13,8 +13,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| on_bred| 0| Molang| A Molang expression defining the amount of experience rewarded when this entity is successfully bred. An array of expressions adds each expression's result together for a final total. |
-| on_death| 0| Molang| A Molang expression defining the amount of experience rewarded when this entity dies. An array of expressions adds each expression's result together for a final total. |
+| on_bred| 0| Molang| A Molang expression defining the amount of experience rewarded when the entity is successfully bred. An array of expressions adds each expression's result together for a final total. |
+| on_death| 0| Molang| A Molang expression defining the amount of experience rewarded when the entity dies. An array of expressions adds each expression's result together for a final total. |
 
 ## Example
 
