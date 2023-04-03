@@ -50,13 +50,13 @@ Returns true when the block has the given name.
 ### Full
 
 ```json
-{ "test": "is_block", "subject": "self", "operator": "equals", "value": "player" }
+{ "test": "is_block", "subject": "self", "operator": "equals", "value": " " }
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "is_block", "value": "player" }
+{ "test": "is_block", "value": "" }
 ```
 
 ## Vanilla entities examples
