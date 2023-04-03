@@ -48,8 +48,6 @@ Perhaps easiest way to get the symbol is to copy and paste it from another page,
 §
 ```
 
-## Text
-
 This is a text node that will display Hello World! with the word "World!" in red:
 
 `{"text":"Hello §cWorld!"}`
@@ -163,7 +161,7 @@ Here is that same message, reformatted for clarity:
 
 `"rawtext":[{"selector": "@e"}]`
 
-You can find more information about selectors in the [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) section of the Commands Introduction page.
+You can find more information about selectors in the [target selector](../../documents/commandsintroduction#target-selectors) section of the Commands Introduction page.
 
 ## Score
 
@@ -177,4 +175,4 @@ Example:
 
 `/tellraw @a ["",{"text":"Your score is: "},{"score":{"name":"@s","objective":"objective_name"}}]`
 
-You can find more information about scoreboards in the [Scoreboard Introduction](https://learn.microsoft.com/minecraft/creator/documents/scoreboardintroduction).
+You can find more information about scoreboards in the [Scoreboard Introduction](../../documents/scoreboardintroduction).
