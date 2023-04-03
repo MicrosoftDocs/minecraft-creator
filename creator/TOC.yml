@@ -408,6 +408,8 @@
             href: Reference/Content/molangreference/index.yml
           - name: Molang Concepts
             href: Reference/Content/Molangreference/Examples/Molangconcepts/TOC.yml
+      - name: Raw Message JSON
+        href: Reference/Content/RawMessageJson.md
     - name: Articles
       items:
         - name: Caves + Cliffs Features
