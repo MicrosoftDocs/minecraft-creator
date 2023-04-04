@@ -120,7 +120,8 @@ This will remove the red formatting from the exclamation point:
 
 Example:
 
-`"rawtext":[{"translate": "text.example"}]`
+`"{\"rawtext\":[ {\"translate\":\"custom.book.page.1\"}]}",`
+`"{\"rawtext\":[ {\"translate\":\"custom.book.page.2\"}]}"`
 
 ### With
 
@@ -161,7 +162,7 @@ Here is that same message, reformatted for clarity:
 
 `"rawtext":[{"selector": "@e"}]`
 
-You can find more information about selectors in the [target selector](../../documents/commandsintroduction#target-selectors) section of the Commands Introduction page.
+You can find more information about [target selectors here](../../documents/targetselectors.md).
 
 ## Score
 
@@ -175,4 +176,4 @@ Example:
 
 `/tellraw @a ["",{"text":"Your score is: "},{"score":{"name":"@s","objective":"objective_name"}}]`
 
-You can find more information about scoreboards in the [Scoreboard Introduction](../../documents/scoreboardintroduction).
+You can find more information about scoreboards in the [Scoreboard Introduction](../../documents/scoreboardintroduction.md).
