@@ -92,7 +92,7 @@ Here is a list of all the Block States within Minecraft: Bedrock Edition. You ca
 |RedstoneSignal |crimson pressure plate, daylight detector, daylight detector inverted, heavy weighted pressure plate, light weighted pressure plate, mangrove pressure plate, polished blackstone pressure plate, pressure plate acacia, pressure plate birch, pressure plate dark oak, pressure plate jungle, pressure plate spruce, redstone dust, stone pressure plate, warped pressure plate, wood pressure plate |Determines the signal strength of a redstone signal|
 |RepeaterDelay |powered repeater, unpowered repeater |Determines the amount of delay of a repeater|
 |RespawnAnchorCharge | respawn anchor | Determines level of charge (number of respawns remaining) for a respawn anchor |
-|Rotation| | |
+|Rotation|jigsaw |Sets rotation for jigsaw block|
 |SandType |sand |Determines the sand type of a block|
 |SandstoneType |sandstone, red sandstone |Determines the pattern of a sandstone block|
 |SaplingType |bamboo sapling, sapling |Determines the type of the sapling block|
