@@ -192,7 +192,6 @@ Example:
               ]
             }
 ]
-
 ```
 
 ### set_count
@@ -200,20 +199,20 @@ Example:
 This allows you to set a minimum and maximum quantity of items returned with this entry:
 
 ```json
-                {
-                    "type": "item",
-                    "name": "minecraft:diamond",
-                    "weight": 1,
-                    "functions": [
-                        {
-                          "function": "set_count",
-                          "count": {
-                            "min": 1,
-                            "max": 6
-                          }
-                        }
-                    ]
-                }
+{
+    "type": "item",
+    "name": "minecraft:diamond",
+    "weight": 1,
+    "functions": [
+        {
+            "function": "set_count",
+            "count": {
+                "min": 1,
+                "max": 6
+            }
+        }
+    ]
+}
 ```
 
 The above example will return one to six diamonds whenever that entry is rolled.
@@ -223,33 +222,33 @@ The above example will return one to six diamonds whenever that entry is rolled.
 This sets the data value of an item. It's useful for things like returning a specific potion or specific color of dye. It also allows you to return different block values, like a specific color of wool or certain log type.
 
 ```json
-                {
-                    "type": "item",
-                    "name": "minecraft:potion",
-                    "weight": 1,
-                    "functions": [
-                      {
-                        "function": "set_data",
-                        "data": 21
-                      }
-                    ]
-                }
+{
+    "type": "item",
+    "name": "minecraft:potion",
+    "weight": 1,
+    "functions": [
+      {
+        "function": "set_data",
+        "data": 21
+      }
+    ]
+}
 ```
 
 The above example will return a Potion of Healing.
 
 ```json
-                {
-                    "type": "item",
-                    "name": "minecraft:wool",
-                    "weight": 1,
-                    "functions": [
-                      {
-                        "function": "set_data",
-                        "data": 1
-                      }
-                    ]
-                }
+{
+    "type": "item",
+    "name": "minecraft:wool",
+    "weight": 1,
+    "functions": [
+      {
+        "function": "set_data",
+        "data": 1
+      }
+    ]
+}
 ```
 
 This example would return an orange wool.
@@ -259,45 +258,45 @@ This example would return an orange wool.
 This function allows you to set a list of specific enchantments on an item. This allows you to apply enchantments to items that wouldn't normally be enchantable in game.
 
 ```json
-                {
-                    "type": "item",
-                    "name": "minecraft:stick",
-                    "weight": 1,
-                    "functions": [
-                        {
-                          "function": "specific_enchants",
-                          "enchants": [
-                             "knockback",
-                             "fire_aspect"
-                          ]
-                        }
-                    ]
-                }
+{
+    "type": "item",
+    "name": "minecraft:stick",
+    "weight": 1,
+    "functions": [
+        {
+          "function": "specific_enchants",
+          "enchants": [
+             "knockback",
+             "fire_aspect"
+          ]
+        }
+    ]
+}
 ```
 
 You can define the enchantments as objects to also define an enchantment level. Max enchantment levels are hard coded and can't be overwritten.
 
 ```json
-                {
-                    "type": "item",
-                    "name": "minecraft:stick",
-                    "weight": 1,
-                    "functions": [
-                        {
-                          "function": "specific_enchants",
-                          "enchants": [
-                             {
-                                "id": "knockback",
-                                "level": 1
-                             },
-                             {
-                                "id": "unbreaking",
-                                "level": 3
-                             }
-                          ]
-                        }
-                    ]
-                }
+{
+    "type": "item",
+    "name": "minecraft:stick",
+    "weight": 1,
+    "functions": [
+        {
+          "function": "specific_enchants",
+          "enchants": [
+             {
+                "id": "knockback",
+                "level": 1
+             },
+             {
+                "id": "unbreaking",
+                "level": 3
+             }
+          ]
+        }
+    ]
+}
 ```
 
 ### trader_material_type
@@ -324,24 +323,24 @@ This function affects the type of items a fisherman wants to trade for other ite
 Multiple functions can be defined. Here's an example of combining two functions together. In this example, this entry will return between one and three Potions of Healing.
 
 ```json
-                {
-                    "type": "item",
-                    "name": "minecraft:potion",
-                    "weight": 1,
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                              "min": 1,
-                              "max": 3
-                            }
-                        },
-                        {
-                            "function": "set_data",
-                            "data": 21
-                        }
-                    ]
-                }
+{
+    "type": "item",
+    "name": "minecraft:potion",
+    "weight": 1,
+    "functions": [
+        {
+            "function": "set_count",
+            "count": {
+              "min": 1,
+              "max": 3
+            }
+        },
+        {
+            "function": "set_data",
+            "data": 21
+        }
+    ]
+}
 ```
 
 Multiple functions can even be multiple of the same function, but if there's a conflict between those functions, the last to be defined will win.
@@ -349,27 +348,27 @@ Multiple functions can even be multiple of the same function, but if there's a c
 For example, using multiple `set_count` functions, like with the example below, will result in only the last of the duplicates being used, causing the item to have a count between 5 and 7 rather than between 1 and 3.
 
 ```json
-                {
-                    "type": "item",
-                    "name": "minecraft:potion",
-                    "weight": 1,
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                              "min": 1,
-                              "max": 3
-                            }
-                        },
-                        {
-                            "function": "set_count",
-                            "count": {
-                              "min": 5,
-                              "max": 7
-                            }
-                        }
-                    ]
-                }
+{
+    "type": "item",
+    "name": "minecraft:potion",
+    "weight": 1,
+    "functions": [
+        {
+            "function": "set_count",
+            "count": {
+              "min": 1,
+              "max": 3
+            }
+        },
+        {
+            "function": "set_count",
+            "count": {
+              "min": 5,
+              "max": 7
+            }
+        }
+    ]
+}
 ```
 
 ## Conditions
@@ -389,12 +388,11 @@ Example:
           "value": 0
         }
       ]
-
 ```
 
 ### killed_by_player_or_pets
 
-The `killed_by_player_or_pets`condition can supply another way to customize a loot drop, depending on how the entity was killed. 
+The `killed_by_player_or_pets`condition can supply another way to customize a loot drop, depending on how the entity was killed.
 
 Example:
 
@@ -404,7 +402,6 @@ Example:
          "condition": "killed_by_player_or_pets"
          },
  ]
-
 ```
 
 ### random_chance
@@ -420,9 +417,7 @@ Example:
         "chance": 0.2
     }
 ]
-
 ```
-
 
 ### random_chance_with_looting
 
@@ -440,8 +435,7 @@ Example:
         "chance": 0.11,
         "looting_multiplier": 0.02
     }
-],
-
+]
 ```
 
 ### random_difficulty_chance
@@ -451,7 +445,6 @@ Example:
 Example:
 
 ```json
-
 "conditions": [
     {
         "condition": "random_difficulty_chance",
@@ -485,16 +478,16 @@ Example:
 The predicates used are: count, durability, enchantments, and item.
 
 >- **count:** amount of the item
->    * range_max: the maximum value
->    * range_min: the minimum value
+>   - range_max: the maximum value
+>   - range_min: the minimum value
 >- **durability:** the durability of the item
->    * range_max: the maximum value
->    * range_min: the minimum value
+>   - range_max: the maximum value
+>   - range_min: the minimum value
 >- **enchantments:** list of enchantments
->    * enchantment: an enchantment ID
->    * levels: the level of the enchantment
->    * range_max: the maximum value
->    * range_min: the minimum value
+>   - enchantment: an enchantment ID
+>   - levels: the level of the enchantment
+>   - range_max: the maximum value
+>   - range_min: the minimum value
 >- **item:** an item iID  
 
 Example:
@@ -528,31 +521,29 @@ Applying a condition to a pool allows you execute the entire pool based on the c
 The below example will only trigger if the entity calling it was killed by a skeleton resulting in either a diamond or piece of coal.
 
 ```json
-{
-    "pools": [
-        {
-            "conditions": [
-                {
-                    "condition": "killed_by_entity",
-                    "entity_type": "minecraft:skeleton"
-                }
-            ],
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "minecraft:diamond",
-                    "weight": 1
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:coal",
-                    "weight": 1
-                }
-            ]
-        }
-    ]
-}
+"pools": [
+    {
+        "conditions": [
+            {
+                "condition": "killed_by_entity",
+                "entity_type": "minecraft:skeleton"
+            }
+        ],
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "item",
+                "name": "minecraft:diamond",
+                "weight": 1
+            },
+            {
+                "type": "item",
+                "name": "minecraft:coal",
+                "weight": 1
+            }
+        ]
+    }
+]
 ```
 
 ### Entry conditions
@@ -560,30 +551,28 @@ The below example will only trigger if the entity calling it was killed by a ske
 You can also apply conditions to specific `entries` within the roll. The following example will only return diamond 50% of the time if the entity that called it was killed by the player. All other times it's called, it will return coal.
 
 ```json
-{
-    "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "minecraft:diamond",
-                    "weight": 1,
-                    "conditions": [
-                        {
-                            "condition": "killed_by_player"
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:coal",
-                    "weight": 1
-                }
-            ]
-        }
-    ]
-}
+"pools": [
+    {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "item",
+                "name": "minecraft:diamond",
+                "weight": 1,
+                "conditions": [
+                    {
+                        "condition": "killed_by_player"
+                    }
+                ]
+            },
+            {
+                "type": "item",
+                "name": "minecraft:coal",
+                "weight": 1
+            }
+        ]
+    }
+]
 ```
 
 Exploring the different [functions](#functions-and-modifying-items) and [conditions](#conditions) available can allow you to really customize your player's experience. You can name items and give them lore, drop resource crates full of supplies, and even create written books for instructions or information.
