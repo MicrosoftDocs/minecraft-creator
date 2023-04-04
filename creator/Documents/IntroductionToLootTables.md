@@ -15,11 +15,11 @@ Loot tables are JSON formatted files used to define how items are generated in-g
 Loot table files live in the root directory of a behavior pack and they generally consist of three main sections known as a "pool."
 
 - **Rolls**
-    - How many times this pool will be rolled to select an entry. This could be either an integer which will make it a set amount of rolls or a min/max range the number of rolls can be chosen from.
+  - How many times this pool will be rolled to select an entry. This could be either an integer which will make it a set amount of rolls or a min/max range the number of rolls can be chosen from.
 - **Conditions** (optional) [more info](#conditions)
-    - These are the conditions that must be met for this pool to be rolled.
+  - These are the conditions that must be met for this pool to be rolled.
 - **Entries**
-    - This is a list of objects the game will select from in this roll. It can be an `item`, a `loot_table`, or `empty` if you want a chance of nothing happening this roll.
+  - This is a list of objects the game will select from in this roll. It can be an `item`, a `loot_table`, or `empty` if you want a chance of nothing happening this roll.
 
 In this tutorial you will learn the following:
 
