@@ -11,7 +11,11 @@ Raw message JSON is used to customize the look of text. With raw JSON code, you 
 
 ## Rawtext
 
-This is the structure of a simple raw text message:
+This is a simple raw text message:
+
+`{"rawtext":[{"text":"Hello world"}]}`
+
+The combination of square and curly brackets makes more sense with the JSON code indented like this:
 
 ```json
 {
@@ -26,11 +30,7 @@ This is the structure of a simple raw text message:
 
 With it formatted this way, you can see how `{"text":"..."}` is a content tag or "node". Other content tags include `translate`, `with`, `score`, and `scoreboard`, which will be covered later.
 
-In Minecraft, all raw text is entered on one line like this:
-
-`{"rawtext":[{"text":"Hello world"}]}`
-
-This is how to put that message into the `/tellraw` command using the "all players" selector:
+In Minecraft, all raw text is entered on one line. This is how to put that message into the `/tellraw` command using the "all players" selector:
 
 `/tellraw @a {"rawtext":[{"text":"Hello world"}]}`
 
