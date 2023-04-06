@@ -122,11 +122,11 @@ The "fade" option of the camera command causes a full-screen color to fade in, w
 
 ### The "time" sub-option  
 
-This sub-option allows for customizing the timing of the fade effect. If not specified, this will use a 1 second fade in, a 0.5 second hold, and a 1 second fade out. The total combined time of a fade command cannot exceed 60 seconds, and the hold time cannot exceed 10 seconds. If a longer fade (or dynamically timed fade out) is needed, multiple fade commands can be used – see "Combining fades" below.
+This sub-option allows for customizing the timing of the fade effect. If not specified, this will use a 1 second fade in, a 0.5 second hold, and a 1 second fade out. The total combined time of a fade command cannot exceed 60 seconds, and the hold time cannot exceed 10 seconds. If a longer fade (or dynamically timed fade out) is needed, multiple fade commands can be used – see the "Combining fades" section.
 
 ### The "color" sub-option
 
-This sub-option allows for customizing the color of the fade effect. The red, green, and blue values should be a value from 0.0 to 1.0. The target opacity of the fade is always fully opaque. If this is not specified, it will use 0.0 for each value, which causes a fade to black. 
+This sub-option allows for customizing the color of the fade effect. The red, green, and blue values should be a value from 0.0 to 1.0. The target opacity of the fade is always fully opaque. If this is not specified, it will use 0.0 for each value, which causes a fade to black.
 
 ## Fade timing, networked gameplay, and game performance
 
@@ -134,7 +134,7 @@ Because Minecraft content can be played over a network connection or on a device
 
 ### Combining fades
 
-It’s possible (and valid) to issue a camera fade command while a camera fade is already in progress. When that happens, the fades are combined with the following logic. This can be useful for extending fades dynamically until some other event takes place. 
+It’s possible (and valid) to issue a camera fade command while a camera fade is already in progress. When that happens, the fades are combined with the following logic. This can be useful for extending fades dynamically until some other event takes place.
 
 The timing of the fade will combine in a way that will fade in with the faster of either the remaining fade-in time or the new fade’s fade-in time. The fade out will start when both fades are ready to fade out (whichever is later). The fade out will similarly complete when both fades would complete (whichever is later).
 
