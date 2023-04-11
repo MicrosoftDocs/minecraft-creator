@@ -310,8 +310,6 @@
             href: Reference/Content/schemasreference/SchemasList.md
           - name: actor_animation
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_actor_animation_1.8.0.md
-          - name: actor_animation_controller
-            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_actor_animation_controller_1.10.0.md
           - name: block_reference
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_block_reference_1.10.0.md
           - name: chance_information
