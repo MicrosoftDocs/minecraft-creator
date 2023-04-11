@@ -13,7 +13,7 @@ Raw message JSON is used to customize the look of text. With raw JSON code, you 
 
 This is a simple raw text message:
 
-`{"rawtext":[{"text":"Hello world"}]}`
+`{"rawtext":[{"text":"Hello World"}]}`
 
 The combination of square and curly brackets makes more sense with the JSON code indented like this:
 
@@ -32,7 +32,9 @@ With it formatted this way, you can see how `{"text":"..."}` is a content tag or
 
 In Minecraft, all raw text is entered on one line. This is how to put that message into the `/tellraw` command using the "all players" selector:
 
-`/tellraw @a {"rawtext":[{"text":"Hello world"}]}`
+`/tellraw @a {"rawtext":[{"text":"Hello World"}]}`
+
+![Tellraw message saying Hello World!](../Media/RawMessageJson/hello_world.png)
 
 ## Text
 
@@ -60,10 +62,14 @@ And this is how it would fit into the tellraw command, using the "all players" s
 
 `/tellraw @a {"rawtext":[{"text":"Hello §cWorld!"}]}`
 
+![Example of tellraw message with the word World in red](../Media/RawMessageJson/hello_world_red.png)
+
 If you want to reset the formatting, use `§r`.
 This will remove the red formatting from the exclamation point:
 
 `{"rawtext":[{"text":"Hello §cWorld§r!"}]}`
+
+![Tellraw message with red exclamation point reset to white](../Media/RawMessageJson/hello_world_reset.png)
 
 ### Formatting Codes §
 
@@ -142,7 +148,7 @@ You can use a selector node,`{"selector": ...}`, to insert a name that has been 
 
 `/tellraw @a {"rawtext": [{"text": "Hello, my name is "}, {"selector": "@s"}]}`
 
-Here is that same message, reformatted for clarity:
+Here is that same command, reformatted for clarity:
 
 ```json
 {
@@ -158,6 +164,8 @@ Here is that same message, reformatted for clarity:
 }
 ```
 
+![Tellraw message with user's own name selected and displayed](../Media/RawMessageJson/hello_alex.png)
+
 `selector` can also display the entity names found with the selector:
 
 `"rawtext":[{"selector": "@e"}]`
@@ -172,8 +180,16 @@ You can find more information about [target selectors here](../../documents/targ
 
 Example:
 
-`/tellraw @a {"rawtext": [{"text": "The score is, "}, {"score":{"name": "@s","objective": "objective_name"}}]}`
+`/tellraw @s {"rawtext": [{"text": "Your score is "}, {"score":{"name": "@s","objective": "objective_name"}}]}`
 
-`/tellraw @a ["",{"text":"Your score is: "},{"score":{"name":"@s","objective":"objective_name"}}]`
+![Tellraw command using selector and scoreboard data to tell player your score](../Media/RawMessageJson/your_score_is_100.png)
 
 You can find more information about scoreboards in the [Scoreboard Introduction](../../documents/scoreboardintroduction.md).
+
+### Scoreboard objective player name color
+
+If you want to change the color of a player name, when you add their name to the scoreboard objective, put a formatting code like this:
+
+`/scoreboard players add §bBlueName objective 7`
+
+![Scoreboard display with player named BlueName's name colored blue](../Media/RawMessageJson/scoreboard_bluename.png)
