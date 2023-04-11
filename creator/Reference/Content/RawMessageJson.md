@@ -170,8 +170,6 @@ Here is that same command, reformatted for clarity:
 
 `"rawtext":[{"selector": "@e"}]`
 
-You can find more information about [target selectors here](../../documents/targetselectors.md).
-
 ## Score
 
 `score` will display a value from the scoreboard:
