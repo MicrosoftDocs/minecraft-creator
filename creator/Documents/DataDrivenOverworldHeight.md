@@ -1,14 +1,14 @@
 ---
 author: mammerla
 ms.author: v-jillheaden
-title: Data Driven Overworld Height
+title: Data Driven Overworld Height and Void Generation
 ms.prod: gaming
-description: A tutorial that demonstrates how to use a behavior pack to constrain the height of a world.
+description: A tutorial that demonstrates how to use a behavior pack to constrain the height of a world and generate void maps.
 ---
 
-# Data-Driven Overworld Height
+# Data-Driven Overworld Height and Void Generation
 
-Creators can use this feature to change the height of an existing world or to create a void map. This will improve performance by reducing memory and enabling more creative flexibility.
+Creators can use this feature to change the height of an existing world or to create void maps in the Overworld, Nether, and The End. This will improve performance by reducing memory and enabling more creative flexibility.
 
 In this tutorial, you will learn the following:
 
@@ -115,13 +115,41 @@ When you take an existing world and add the data driven dimension behavior pack,
  
 :::image type="content" source="Media/DataDrivenOverworldHeight/DDOH_end_of_the_world.png" alt-text="Image of the end of a generated world":::
 
-## What if I remove the behavior pack?
+## What if I Remove the Behavior Pack?
 
 Your original height range will be restored, along with saved chunks that were hidden from the height restriction.If you go to new (unsaved) areas, regular world generation will occur, but parts that were explored when the behavior pack was active will remain void - because that is how they were generated and saved.
 
 This is why you should always make backups, so you can iterate on your desired changes!
 
 :::image type="content" source="Media/DataDrivenOverworldHeight/DDOH_scary_hole.png" alt-text="Image of a hole created by the behavior pack":::
+
+## Void Generation in Other Dimensions
+
+The Nether and The End both support void generation, but do not support custom height. To add void generation to these dimensions, start by creating a JSON file for the dimensions you want, like `nether.json` or `the_end.json`. Place these inside the **dimensions** folder created for Overworld void.
+
+The format for the JSON is the same as Overworld void - just remove the `"minecraft:dimension_bounds"` section containing custom height.
+
+Here is an example of the `nether.json` document:
+
+```json
+{
+    "format_version": "1.18.0",
+    "minecraft:dimension": {
+      "description": {
+        "identifier": "minecraft:nether"
+      },
+      "components": {
+       "minecraft:generation": {
+          "generator_type": "void"
+        }
+      }
+    }
+}
+```
+
+Changing the identifier field to `"minecraft:the_end"` will generate void in The End.
+
+The same traits apply for void in the Nether and The End, so make sure to create a backup of your worlds!
 
 ## What's Next?
 
