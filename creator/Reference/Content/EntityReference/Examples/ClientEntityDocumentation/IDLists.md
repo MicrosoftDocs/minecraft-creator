@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: v-jimseaman
 title: Entity Documentation - ID Lists
 ms.prod: gaming
 ---
@@ -9,7 +9,7 @@ ms.prod: gaming
 
 Listed below are the ID values for each set of Entity JSON Entries.
 
-## AI Goals
+## AI Goal Components
 
 | JSON Name| ID |
 |:-----------:|:-----------:|
@@ -182,6 +182,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:addrider| -1014528905 |
 | minecraft:admire_item| -1838165406 |
 | minecraft:ageable| 1092934985 |
+| minecraft:ambient_sound_interval| -1314051310 |
 | minecraft:angry| 725411499 |
 | minecraft:annotation.break_door| 2116838963 |
 | minecraft:annotation.open_door| 1004733768 |
@@ -198,42 +199,72 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:bribeable| -2125526908 |
 | minecraft:buoyant| -467213736 |
 | minecraft:burns_in_daylight| 1256874605 |
+| minecraft:can_climb| -550459594 |
+| minecraft:can_fly| 985724318 |
+| minecraft:can_power_jump| -763124853 |
 | minecraft:celebrate_hunt| -789611239 |
+| minecraft:collision_box| -1277663508 |
+| minecraft:color| 1069623177 |
+| minecraft:color2| 1429635777 |
 | minecraft:combat_regeneration| -315365016 |
 | minecraft:conditional_bandwidth_optimization| 1333085468 |
 | minecraft:custom_hit_test| 2035968892 |
 | minecraft:damage_over_time| -656420526 |
 | minecraft:damage_sensor| -82616534 |
+| minecraft:default_look_angle| -815556357 |
 | minecraft:despawn| 1674909940 |
 | minecraft:drying_out_timer| 2113510784 |
 | minecraft:economy_trade_table| 1705466896 |
 | minecraft:entity_sensor| -406052184 |
 | minecraft:environment_sensor| 687748970 |
 | minecraft:equip_item| -1774220620 |
+| minecraft:equipment| 714661022 |
 | minecraft:equippable| -1164142226 |
 | minecraft:exhaustion_values| 1522147793 |
 | minecraft:experience_reward| -1992597900 |
 | minecraft:explode| -1683058581 |
+| minecraft:fire_immune| -1071767182 |
+| minecraft:floats_in_liquid| 179778474 |
 | minecraft:flocking| 1967597361 |
+| minecraft:friction_modifier| -714364556 |
+| minecraft:flying_speed| -570508595 |
 | minecraft:game_event_movement_tracking | 763815151 |
 | minecraft:genetics| -82484670 |
 | minecraft:giveable| 1739199795 |
+| minecraft:ground_offset| -1816881803 |
 | minecraft:group_size| -1997375941 |
 | minecraft:grows_crop| 43636353 |
 | minecraft:healable| -54247424 |
 | minecraft:home| 610829097 |
 | minecraft:hurt_on_condition| 163715083 |
+| minecraft:input_ground_controlled| -646415617 |
 | minecraft:inside_block_notifier| -377593253 |
 | minecraft:insomnia| -300455606 |
 | minecraft:instant_despawn| -634288138 |
 | minecraft:interact| -1996861528 |
 | minecraft:inventory| 1941951218 |
+| minecraft:is_baby| 1853172763 |
+| minecraft:is_charged| 125340337 |
+| minecraft:is_chested| -817599379 |
+| minecraft:is_dyeable| 1381448355 |
+| minecraft:is_hidden_when_invisible| -1553744 |
+| minecraft:is_ignited| 905710223 |
+| minecraft:is_illager_captain| 921912694 |
+| minecraft:is_saddled| 1037901616 |
+| minecraft:is_shaking| 523951884 |
+| minecraft:is_sheared| 1154836813 |
+| minecraft:is_stackable| 1184456737 |
+| minecraft:is_stunned| 1818977510 |
+| minecraft:is_tamed| 1646421078 |
+| minecraft:item_controllable| 1868311069 |
 | minecraft:item_hopper| -447601772 |
 | minecraft:jump.dynamic| 945664737 |
 | minecraft:jump.static| 1064987526 |
 | minecraft:leashable| 893445039 |
 | minecraft:lookat| -1329707008 |
+| minecraft:loot| 1775814032 |
 | minecraft:managed_wandering_trader| 846609640 |
+| minecraft:mark_variant| 663621689 |
 | minecraft:mob_effect| 490430596 |
 | minecraft:movement.amphibious| -500784850 |
 | minecraft:movement.basic| 3354475 |
@@ -242,6 +273,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:movement.hover| 1743805051 |
 | minecraft:movement.jump| 1256268727 |
 | minecraft:movement.skip| -1828832272 |
+| minecraft:movement_sound_distance_offset| 124679519 |
 | minecraft:movement.sway| 2126249079 |
 | minecraft:nameable| -595398763 |
 | minecraft:navigation.climb| -1075360945 |
@@ -258,17 +290,21 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:physics| 1021552959 |
 | minecraft:preferred_path| 1431188951 |
 | minecraft:projectile| 1922456869 |
+| minecraft:push_through| -138030768 |
 | minecraft:pushable| -1784639134 |
 | minecraft:raid_trigger| 2093209329 |
 | minecraft:rail_movement| -78235634 |
 | minecraft:rail_sensor| 1273161273 |
 | minecraft:ravager_blocked| -1417579541 |
 | minecraft:rideable| 1656173828 |
+| minecraft:scale| 77854436 |
 | minecraft:scale_by_age| 64881972 |
 | minecraft:scheduler| -684492525 |
 | minecraft:shareables| 1301057082 |
 | minecraft:shooter| 184150118 |
 | minecraft:sittable| -1376274106 |
+| minecraft:skin_id| 1838729593 |
+| minecraft:sound_volume| 937951776 |
 | minecraft:spawn_entity| 1991964333 |
 | minecraft:tameable| 932870003 |
 | minecraft:tamemount| 1615660288 |
@@ -280,8 +316,11 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:trail| 1632590434 |
 | minecraft:transformation| -457894577 |
 | minecraft:trusting| 936499892 |
+| minecraft:type_family| -255011285 |
+| minecraft:variant| -1789583977 |
+| minecraft:walk_animation_speed| 972393614 |
+| minecraft:wants_jockey| 1832515141 |
 | minecraft:water_movement| -128701925 |
-
 
 ## Entity Description Properties
 
@@ -289,51 +328,6 @@ Listed below are the ID values for each set of Entity JSON Entries.
 |:-----------:|:-----------:|
 | animations| 1232311658 |
 | scripts| -76244517 |
-
-## Properties
-
-| JSON Name| ID |
-|:-----------:|:-----------:|
-| minecraft:ambient_sound_interval| -1314051310 |
-| minecraft:can_climb| -550459594 |
-| minecraft:can_fly| 985724318 |
-| minecraft:can_power_jump| -763124853 |
-| minecraft:collision_box| -1277663508 |
-| minecraft:color| 1069623177 |
-| minecraft:color2| 1429635777 |
-| minecraft:default_look_angle| -815556357 |
-| minecraft:equipment| 714661022 |
-| minecraft:fire_immune| -1071767182 |
-| minecraft:floats_in_liquid| 179778474 |
-| minecraft:flying_speed| -570508595 |
-| minecraft:friction_modifier| -714364556 |
-| minecraft:ground_offset| -1816881803 |
-| minecraft:input_ground_controlled| -646415617 |
-| minecraft:is_baby| 1853172763 |
-| minecraft:is_charged| 125340337 |
-| minecraft:is_chested| -817599379 |
-| minecraft:is_dyeable| 1381448355 |
-| minecraft:is_hidden_when_invisible| -1553744 |
-| minecraft:is_ignited| 905710223 |
-| minecraft:is_illager_captain| 921912694 |
-| minecraft:is_saddled| 1037901616 |
-| minecraft:is_shaking| 523951884 |
-| minecraft:is_sheared| 1154836813 |
-| minecraft:is_stackable| 1184456737 |
-| minecraft:is_stunned| 1818977510 |
-| minecraft:is_tamed| 1646421078 |
-| minecraft:item_controllable| 1868311069 |
-| minecraft:loot| 1775814032 |
-| minecraft:mark_variant| 663621689 |
-| minecraft:movement_sound_distance_offset| 124679519 |
-| minecraft:push_through| -138030768 |
-| minecraft:scale| 77854436 |
-| minecraft:skin_id| 1838729593 |
-| minecraft:sound_volume| 937951776 |
-| minecraft:type_family| -255011285 |
-| minecraft:variant| -1789583977 |
-| minecraft:walk_animation_speed| 972393614 |
-| minecraft:wants_jockey| 1832515141 |
 
 ## Triggers
 
