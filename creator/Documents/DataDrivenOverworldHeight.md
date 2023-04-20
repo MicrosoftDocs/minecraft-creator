@@ -25,7 +25,7 @@ It's recommended that the following be completed before beginning this tutorial.
 
 ## Limitations
 
-This feature will not modify your existing world generation to fit into a new height range. Instead, when you add the behavior pack containing the JSON file to an existing world, the world will be sliced at the given min and max values and the chunks outside the min and max range will be saved in LevelDB, but will not be visible.
+This feature will **not** modify your existing world generation to fit into a new height range. Instead, when you add the behavior pack containing the JSON file to an existing world, the world will be sliced at the given min and max values and the chunks outside the min and max range will be saved in LevelDB, but will not be visible.
 
 Everything outside of the `min` and `max` coordinates will become invisible and above that height will not be buildable. Additionally, there will be no new world generation outside of your saved areas and those areas will generate as `type=void`.
 
@@ -35,7 +35,7 @@ This feature will not impact existing and saved custom biomes as it just slices 
 
 The scope of this feature is to introduce a void generator with modifiable heights to reduce memory usage and make this functionality easier for creators.
 
-## Here is how to use the Data Driven Overworld Height behavior pack
+## How to use the Data Driven Overworld Height Behavior Pack
 
 ### First, use it to create a void world
 
@@ -85,9 +85,9 @@ You can change the values for min and max to any multiples of 16 between -512 an
 
 ### Next, use it on an existing world
 
-In this section, we will see what happens if we apply the data pack to a "vanilla" generated world. (This can also be done on your existing custom world, but as always, we recommend you make a backup!)
+In this section, we will see what happens if we apply the data pack to a "vanilla" generated world. (This can also be done on your existing custom world, but as always, we recommend you make a backup first!)
 
-1. Make a vanilla creative world with Show Coordinates active but do not apply the behavior pack to it yet.
+1. Make a vanilla creative world with Show Coordinates active, but do not apply the behavior pack to it yet.
 
 2. Go into the world so that it generates and saves terrain at the usual height.
 
