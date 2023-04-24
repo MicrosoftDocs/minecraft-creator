@@ -130,6 +130,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 |:-----------|
 | minecraft:acacia_button |
 | minecraft:acacia_door |
+| minecraft:acacia_fence |
 | minecraft:acacia_fence_gate |
 | minecraft:acacia_hanging_sign |
 | minecraft:acacia_log |
@@ -182,6 +183,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:big_dripleaf |
 | minecraft:birch_button |
 | minecraft:birch_door |
+| minecraft:birch_fence |
 | minecraft:birch_fence_gate |
 | minecraft:birch_hanging_sign |
 | minecraft:birch_log |
@@ -222,6 +224,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:cactus |
 | minecraft:cake |
 | minecraft:calcite |
+| minecraft:calibrated_sculk_sensor |
 | minecraft:camera |
 | minecraft:campfire |
 | minecraft:candle |
@@ -323,6 +326,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:cyan_wool |
 | minecraft:dark_oak_button |
 | minecraft:dark_oak_door |
+| minecraft:dark_oak_fence |
 | minecraft:dark_oak_fence_gate |
 | minecraft:dark_oak_hanging_sign |
 | minecraft:dark_oak_log |
@@ -510,7 +514,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:exposed_cut_copper_stairs |
 | minecraft:exposed_double_cut_copper_slab |
 | minecraft:farmland |
-| minecraft:fence |
 | minecraft:fence_gate |
 | minecraft:fire |
 | minecraft:fletching_table |
@@ -570,6 +573,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:jukebox |
 | minecraft:jungle_button |
 | minecraft:jungle_door |
+| minecraft:jungle_fence |
 | minecraft:jungle_fence_gate |
 | minecraft:jungle_hanging_sign |
 | minecraft:jungle_log |
@@ -668,6 +672,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:netherreactor |
 | minecraft:normal_stone_stairs |
 | minecraft:noteblock |
+| minecraft:oak_fence |
 | minecraft:oak_hanging_sign |
 | minecraft:oak_log |
 | minecraft:oak_stairs |
@@ -801,6 +806,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:spore_blossom |
 | minecraft:spruce_button |
 | minecraft:spruce_door |
+| minecraft:spruce_fence |
 | minecraft:spruce_fence_gate |
 | minecraft:spruce_hanging_sign |
 | minecraft:spruce_log |
@@ -845,6 +851,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:stripped_warped_stem |
 | minecraft:structure_block |
 | minecraft:structure_void |
+| minecraft:suspicious_gravel |
 | minecraft:suspicious_sand |
 | minecraft:sweet_berry_bush |
 | minecraft:tallgrass |

@@ -18,7 +18,7 @@ Tests the health of the subject.
 | other| The other member of an interaction, not the caller. |
 | parent| The caller's current parent. |
 | player| The player involved with the interaction. |
-| self| The entity or object calling the test |
+| self| The entity or object calling the test. |
 | target| The caller's current target. |
 
 ### operator
@@ -40,7 +40,7 @@ Tests the health of the subject.
 
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
-|value | -- |Integer |(Required) An integer value. |
+|value | *None* |Integer |(Required) An integer value. |
 
 ## Examples
 

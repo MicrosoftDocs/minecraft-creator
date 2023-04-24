@@ -9,7 +9,6 @@ ms.prod: gaming
 
 Tests if the subject is on a hot block.
 
-
 ### subject
 
 | Options| Description |
