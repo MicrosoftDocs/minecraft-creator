@@ -15,6 +15,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 |[entity_types](../Definitions/NestedTables/entity_types.md)|*not set* | JSON Object| List of entity types that this mob can follow in a caravan.|
 |entity_count| 1| Integer| Number of entities that can be in the caravan. |
+|cooldown | 0.0 | Decimal |The amount of time in seconds that the mob has to wait before selecting a target of the same type again. |
 |priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 |filters|*not set*| Minecraft Filter| Conditions that make this entry in the list valid |
 |max_dist| 16| Decimal| Maximum distance this mob can be away to be a valid choice |

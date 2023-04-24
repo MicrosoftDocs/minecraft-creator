@@ -15,6 +15,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 |attack_interval| 0| Integer| Time in seconds before selecting a target |
 |entity_types | *not set* |JSON Object | List of entity types that this mob considers valid targets. See [entity_types' definition page](../Definitions/NestedTables/entity_types.md).|
+|cooldown | 0.0 | Decimal |The amount of time in seconds that the mob has to wait before selecting a target of the same type again. |
 |must_reach| false| Boolean| If true, only entities that this mob can path to can be selected as targets |
 |must_see| false| Boolean| If true, only entities in this mob's viewing range can be selected as targets. |
 |must_see_forget_duration| 3.0| Decimal| Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more. |

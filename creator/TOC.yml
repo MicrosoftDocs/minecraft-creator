@@ -250,6 +250,8 @@
             href: Reference/Content/blockreference/Examples/BlockPropertiesList.md
           - name: Block States
             href: Reference/Content/blockreference/Examples/BlockStatesList.md
+          - name: Aux Value to Block State Map
+            href: Reference/Content/blockreference/Examples/AuxValueToBlockStateMap.md
           - name: Block Components
             href: Reference/Content/blockreference/Examples/BlockComponents/TOC.yml
           - name: Block Triggers

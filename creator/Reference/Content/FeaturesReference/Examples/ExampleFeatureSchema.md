@@ -790,6 +790,143 @@ Here is an example of the complete feature schema:
                   }
               }
           }
+          object "cherry_trunk" : opt
+          {
+               "trunk_block"
+              object "trunk_height"
+              {
+                  int "base"<2-*>
+                  array "intervals" : opt
+                  {
+                      int "<any array element>"<1-*> : opt
+                  }
+              }
+              object "branches"
+              {
+                  object "tree_type_weights" : opt
+                  {
+                      int "one_branch"<0-*>
+                      int "two_branches"<0-*>
+                      int "two_branches_and_trunk"<0-*>
+                  }
+                   "branch_horizontal_length"
+                   "branch_start_offset_from_top"
+                   "branch_end_offset_from_top"
+                  object "branch_canopy" : opt
+                  {
+                      object "acacia_canopy" : opt
+                      {
+                          int "canopy_size"<1-*>
+                           "leaf_block"
+                          bool "simplify_canopy" : opt
+                      }
+                      object "canopy" : opt
+                      {
+                          object "canopy_offset"
+                          {
+                              int "min"
+                              int "max"
+                          }
+                          int "min_width"<0-*> : opt
+                          object "canopy_slope" : opt
+                          {
+                              int "rise"<1-*> : opt
+                              int "run"<1-*> : opt
+                          }
+                          chance_information "variation_chance" : opt
+                          array "variation_chance" : opt
+                          {
+                              chance_information "<any array element>" : opt
+                          }
+                           "leaf_block"
+                          object "canopy_decoration" : opt
+                          {
+                              chance_information "decoration_chance"
+                               "decoration_block" : opt
+                              int "num_steps" : opt
+                              enumerated_value "step_direction"<"down", "up", "out", "away"> : opt
+                          }
+                      }
+                      object "cherry_canopy" : opt
+                      {
+                           "leaf_block"
+                           "height"
+                           "radius"
+                          int "trunk_width"<1-*> : opt
+                          chance_information "wide_bottom_layer_hole_chance"
+                          chance_information "corner_hole_chance"
+                          chance_information "hanging_leaves_chance"
+                          chance_information "hanging_leaves_extension_chance"
+                      }
+                      object "fancy_canopy" : opt
+                      {
+                          int "height"<1-*>
+                          int "radius"<0-*>
+                           "leaf_block"
+                      }
+                      object "mangrove_canopy" : opt
+                      {
+                           "canopy_height"
+                           "canopy_radius"
+                          int "leaf_placement_attempts"<1-*>
+                          array "leaf_blocks"
+                          {
+                              array "<any array element>"[2]
+                              {
+                                   "[0..0]"
+                                  float "[1..1]"
+                              }
+                          }
+                          object "canopy_decoration" : opt
+                          {
+                              chance_information "decoration_chance"
+                               "decoration_block" : opt
+                              int "num_steps" : opt
+                              enumerated_value "step_direction"<"down", "up", "out", "away"> : opt
+                          }
+                           "hanging_block"
+                          chance_information "hanging_block_placement_chance"
+                      }
+                      object "mega_canopy" : opt
+                      {
+                           "canopy_height"
+                          int "base_radius"<0-*>
+                          int "core_width"<1-*> : opt
+                          bool "simplify_canopy" : opt
+                           "leaf_block"
+                      }
+                      object "mega_pine_canopy" : opt
+                      {
+                           "canopy_height"
+                          int "base_radius"<0-*>
+                          float "radius_step_modifier"<0.000000-*>
+                          int "core_width"<1-*> : opt
+                           "leaf_block"
+                      }
+                      object "pine_canopy" : opt
+                      {
+                           "canopy_height"
+                          int "base_radius"<1-*>
+                           "leaf_block"
+                      }
+                      object "roofed_canopy" : opt
+                      {
+                          int "canopy_height"<3-*>
+                          int "core_width"<1-*>
+                          int "outer_radius"<0-*>
+                          int "inner_radius"<0-*>
+                           "leaf_block"
+                      }
+                      object "spruce_canopy" : opt
+                      {
+                           "lower_offset"
+                           "upper_offset"
+                           "max_radius"
+                           "leaf_block"
+                      }
+                  }
+              }
+          }
           object "fallen_trunk" : opt
           {
                "log_length"
@@ -912,6 +1049,17 @@ Here is an example of the complete feature schema:
                               enumerated_value "step_direction"<"down", "up", "out", "away"> : opt
                           }
                       }
+                      object "cherry_canopy" : opt
+                      {
+                           "leaf_block"
+                           "height"
+                           "radius"
+                          int "trunk_width"<1-*> : opt
+                          chance_information "wide_bottom_layer_hole_chance"
+                          chance_information "corner_hole_chance"
+                          chance_information "hanging_leaves_chance"
+                          chance_information "hanging_leaves_extension_chance"
+                      }
                       object "fancy_canopy" : opt
                       {
                           int "height"<1-*>
@@ -1031,6 +1179,17 @@ Here is an example of the complete feature schema:
                   int "num_steps" : opt
                   enumerated_value "step_direction"<"down", "up", "out", "away"> : opt
               }
+          }
+          object "cherry_canopy" : opt
+          {
+                "leaf_block"
+                "height"
+                "radius"
+                int "trunk_width"<1-*> : opt
+                chance_information "wide_bottom_layer_hole_chance"
+                chance_information "corner_hole_chance"
+                chance_information "hanging_leaves_chance"
+                chance_information "hanging_leaves_extension_chance"
           }
           object "fancy_canopy" : opt
           {
