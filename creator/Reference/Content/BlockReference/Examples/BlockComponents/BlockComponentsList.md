@@ -13,7 +13,6 @@ Below is a list of all the available Block Components within Minecraft: Bedrock 
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|[minecraft:bone_visibility](minecraftBlock_bone_visibility.md)| *not set*| JSON Object| A JSON object that contains a list of key/value pairs mapping from bone names in the specified geometry file (key) to a boolean defining whether the bone should be visible or not (value).|
 |[minecraft:collision_box](minecraftBlock_collision_box.md)| true| Boolean/JSON Object| Defines the area of the block that collides with entities. If set to true, default values are used. If set to false, the block's collision with entities is disabled. If this component is omitted, default values are used.|
 |[minecraft:crafting_table](minecraftBlock_crafting_table.md) |*not set*| JSON Object | Makes your block into a custom crafting table which enables the crafting table UI and the ability to craft recipes. |
 |[minecraft:destructible_by_explosion](minecraftBlock_destructible_by_explosion.md)| true| Boolean/JSON Object| Describes the destructible by explosion properties for this block. If set to true, the block will have the default explosion resistance. If set to false, this block is indestructible by explosion. If the component is omitted, the block will have the default explosion resistance.|
