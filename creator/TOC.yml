@@ -54,7 +54,7 @@
             href: Documents/ActorStorage.md
           - name: Minecraft File Extensions
             href: Documents/MinecraftFileExtensions.md
-          - name: Data-Driven Overworld Height
+          - name: Data-Driven Overworld Height and Void Generation
             href: Documents/DataDrivenOverworldHeight.md
           - name: Editing NBTs Safely
             href: Documents/EditingNBTSafely.md
