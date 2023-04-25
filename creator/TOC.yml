@@ -112,6 +112,8 @@
             href: Documents/ScoreboardIntroduction.md
           - name: Scoreboard Operations Tutorial
             href: Documents/ScoreboardOperationsTutorial.md
+          - name: The Camera Command
+            href: Documents/CameraCommandIntroduction.md
           - name: The Tickingarea Command
             href: Documents/TickingAreaCommand.md
           - name: New /execute command syntax
