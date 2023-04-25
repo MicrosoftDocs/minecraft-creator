@@ -124,7 +124,7 @@ Checks to see whether it is valid to place the specified block type or block per
 
 ### **getComponent**
 `
-getComponent(componentName: string): any
+getComponent(componentName: string): BlockComponent | undefined
 `
 
 Gets additional configuration properties (a component) for specific capabilities of particular blocks - for example, an inventory component of a chest block.
@@ -134,7 +134,7 @@ Gets additional configuration properties (a component) for specific capabilities
   
   Identifier of the component. If a namespace is not specified, minecraft: is assumed.
 
-#### **Returns** *any* - Returns the component object if it is present on the particular block.
+#### **Returns** [*BlockComponent*](BlockComponent.md) | *undefined* - Returns the component object if it is present on the particular block.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -161,6 +161,9 @@ Creates a prototype item stack based on this block that can be used with Contain
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **getRedstonePower**
 `

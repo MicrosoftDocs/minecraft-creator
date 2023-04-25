@@ -44,6 +44,8 @@
   href: commands/give.md
 - name: help
   href: commands/help.md
+- name: inputpermission
+  href: commands/inputpermission.md
 - name: kick
   href: commands/kick.md
 - name: kill
@@ -70,6 +72,8 @@
   href: commands/playanimation.md
 - name: playsound
   href: commands/playsound.md
+- name: project
+  href: commands/project.md
 - name: reload
   href: commands/reload.md
 - name: replaceitem
@@ -92,6 +96,8 @@
   href: commands/setmaxplayers.md
 - name: setworldspawn
   href: commands/setworldspawn.md
+- name: simulationtype
+  href: commands/simulationtype.md
 - name: spawnpoint
   href: commands/spawnpoint.md
 - name: spreadplayers

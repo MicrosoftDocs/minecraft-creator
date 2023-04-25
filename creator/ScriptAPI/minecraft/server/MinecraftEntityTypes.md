@@ -64,6 +64,11 @@ Type: [*EntityType*](EntityType.md)
 
 Type: [*EntityType*](EntityType.md)
 
+### **camel**
+`static read-only camel: EntityType;`
+
+Type: [*EntityType*](EntityType.md)
+
 ### **cat**
 `static read-only cat: EntityType;`
 
@@ -396,6 +401,11 @@ Type: [*EntityType*](EntityType.md)
 
 ### **smallFireball**
 `static read-only smallFireball: EntityType;`
+
+Type: [*EntityType*](EntityType.md)
+
+### **sniffer**
+`static read-only sniffer: EntityType;`
 
 Type: [*EntityType*](EntityType.md)
 

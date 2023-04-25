@@ -17,15 +17,15 @@ Contains a set of events that are available across the scope of the Minecraft ad
 ## Properties
 
 ### **beforeWatchdogTerminate**
-`read-only beforeWatchdogTerminate: BeforeWatchdogTerminateEventSignal;`
+`read-only beforeWatchdogTerminate: WatchdogTerminateBeforeEventSignal;`
 
 This event fires before a the performance watchdog terminates scripting execution due to exceeding a performance boundary. Depending on the configuration of the runtime environment, this event can be canceled. For example, on certain dedicated server environments the ability to override termination events may be disabled.
 
-Type: [*BeforeWatchdogTerminateEventSignal*](BeforeWatchdogTerminateEventSignal.md)
+Type: [*WatchdogTerminateBeforeEventSignal*](WatchdogTerminateBeforeEventSignal.md)
 
 ### **scriptEventReceive**
-`read-only scriptEventReceive: ScriptEventCommandMessageSignal;`
+`read-only scriptEventReceive: ScriptEventCommandMessageAfterEventSignal;`
 
 This event fires if a /scriptevent command is invoked by a player, NPC, or block.
 
-Type: [*ScriptEventCommandMessageSignal*](ScriptEventCommandMessageSignal.md)
+Type: [*ScriptEventCommandMessageAfterEventSignal*](ScriptEventCommandMessageAfterEventSignal.md)

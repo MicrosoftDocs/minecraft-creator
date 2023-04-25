@@ -55,6 +55,11 @@ Represents an acacia door within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **acaciaFence**
+`static read-only acaciaFence: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **acaciaFenceGate**
 `static read-only acaciaFenceGate: BlockType;`
 
@@ -379,6 +384,11 @@ Represents a birch door within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **birchFence**
+`static read-only birchFence: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **birchFenceGate**
 `static read-only birchFenceGate: BlockType;`
 
@@ -442,6 +452,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only blackCandleCake: BlockType;`
 
 Represents a black candle cake within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **blackCarpet**
+`static read-only blackCarpet: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -513,6 +528,11 @@ Represents a blue candle cake within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **blueCarpet**
+`static read-only blueCarpet: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **blueGlazedTerracotta**
 `static read-only blueGlazedTerracotta: BlockType;`
 
@@ -553,6 +573,11 @@ Represents a border block within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **brainCoral**
+`static read-only brainCoral: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **brewingStand**
 `static read-only brewingStand: BlockType;`
 
@@ -585,6 +610,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only brownCandleCake: BlockType;`
 
 Represents a brown candle cake within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **brownCarpet**
+`static read-only brownCarpet: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -621,6 +651,11 @@ Represents a column of bubbles within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **bubbleCoral**
+`static read-only bubbleCoral: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **buddingAmethyst**
 `static read-only buddingAmethyst: BlockType;`
 
@@ -649,6 +684,11 @@ Represents a calcite block within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **calibratedSculkSensor**
+`static read-only calibratedSculkSensor: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **camera**
 `static read-only camera: BlockType;`
 
@@ -674,13 +714,6 @@ Type: [*BlockType*](BlockType.md)
 `static read-only candleCake: BlockType;`
 
 Represents a cake with candles within Minecraft.
-
-Type: [*BlockType*](BlockType.md)
-
-### **carpet**
-`static read-only carpet: BlockType;`
-
-Represents a carpet within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
@@ -1038,13 +1071,6 @@ Represents a block with embedded copper ore within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
-### **coral**
-`static read-only coral: BlockType;`
-
-Represents coral within Minecraft.
-
-Type: [*BlockType*](BlockType.md)
-
 ### **coralBlock**
 `static read-only coralBlock: BlockType;`
 
@@ -1288,6 +1314,11 @@ Represents a cake with a cyan-colored candle within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **cyanCarpet**
+`static read-only cyanCarpet: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **cyanGlazedTerracotta**
 `static read-only cyanGlazedTerracotta: BlockType;`
 
@@ -1311,6 +1342,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only darkOakDoor: BlockType;`
 
 Represents a dark oak door within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **darkOakFence**
+`static read-only darkOakFence: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -1387,10 +1423,35 @@ Represents an inverted daylight detector within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **deadBrainCoral**
+`static read-only deadBrainCoral: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **deadBubbleCoral**
+`static read-only deadBubbleCoral: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **deadbush**
 `static read-only deadbush: BlockType;`
 
 Represents a dead bush within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **deadFireCoral**
+`static read-only deadFireCoral: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **deadHornCoral**
+`static read-only deadHornCoral: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **deadTubeCoral**
+`static read-only deadTubeCoral: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -2637,13 +2698,6 @@ Represents a farmland block within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
-### **fence**
-`static read-only fence: BlockType;`
-
-Represents a fence within Minecraft.
-
-Type: [*BlockType*](BlockType.md)
-
 ### **fenceGate**
 `static read-only fenceGate: BlockType;`
 
@@ -2655,6 +2709,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only fire: BlockType;`
 
 Represents a fire within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **fireCoral**
+`static read-only fireCoral: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -2831,6 +2890,11 @@ Represents a cake with gray-colored candle within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **grayCarpet**
+`static read-only grayCarpet: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **grayGlazedTerracotta**
 `static read-only grayGlazedTerracotta: BlockType;`
 
@@ -2854,6 +2918,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only greenCandleCake: BlockType;`
 
 Represents a green-colored candle cake within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **greenCarpet**
+`static read-only greenCarpet: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -2953,6 +3022,11 @@ Represents a hopper within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **hornCoral**
+`static read-only hornCoral: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **ice**
 `static read-only ice: BlockType;`
 
@@ -3048,6 +3122,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only jungleDoor: BlockType;`
 
 Represents a jungle wood door within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **jungleFence**
+`static read-only jungleFence: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3152,13 +3231,6 @@ Represents lava within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
-### **lavaCauldron**
-`static read-only lavaCauldron: BlockType;`
-
-Represents a cauldron filled with lava within Minecraft.
-
-Type: [*BlockType*](BlockType.md)
-
 ### **leaves**
 `static read-only leaves: BlockType;`
 
@@ -3208,6 +3280,11 @@ Represents a light blue candle cake within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **lightBlueCarpet**
+`static read-only lightBlueCarpet: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **lightBlueGlazedTerracotta**
 `static read-only lightBlueGlazedTerracotta: BlockType;`
 
@@ -3231,6 +3308,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only lightGrayCandleCake: BlockType;`
 
 Represents a light gray candle cake within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **lightGrayCarpet**
+`static read-only lightGrayCarpet: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3264,6 +3346,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only limeCandleCake: BlockType;`
 
 Represents a lime-colored candle cake within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **limeCarpet**
+`static read-only limeCarpet: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3353,6 +3440,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only magentaCandleCake: BlockType;`
 
 Represents a magenta candle cake within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **magentaCarpet**
+`static read-only magentaCarpet: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3666,6 +3758,11 @@ Represents a note block within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **oakFence**
+`static read-only oakFence: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **oakHangingSign**
 `static read-only oakHangingSign: BlockType;`
 
@@ -3713,6 +3810,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only orangeCandleCake: BlockType;`
 
 Represents an orange candle cake within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **orangeCarpet**
+`static read-only orangeCarpet: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3794,6 +3896,11 @@ Represents a pink candle cake within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **pinkCarpet**
+`static read-only pinkCarpet: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **pinkGlazedTerracotta**
 `static read-only pinkGlazedTerracotta: BlockType;`
 
@@ -3820,6 +3927,16 @@ Type: [*BlockType*](BlockType.md)
 
 ### **pistonArmCollision**
 `static read-only pistonArmCollision: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **pitcherCrop**
+`static read-only pitcherCrop: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **pitcherPlant**
+`static read-only pitcherPlant: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -4075,6 +4192,11 @@ Represents a purple colored candle cake within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **purpleCarpet**
+`static read-only purpleCarpet: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **purpleGlazedTerracotta**
 `static read-only purpleGlazedTerracotta: BlockType;`
 
@@ -4168,6 +4290,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only redCandleCake: BlockType;`
 
 Represents a red candle cake within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **redCarpet**
+`static read-only redCarpet: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -4481,6 +4608,11 @@ Represents a smooth stone block within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **snifferEgg**
+`static read-only snifferEgg: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **snow**
 `static read-only snow: BlockType;`
 
@@ -4562,6 +4694,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only spruceDoor: BlockType;`
 
 Represents a spruce wood door within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **spruceFence**
+`static read-only spruceFence: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -4877,6 +5014,11 @@ Represents a structure void within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **suspiciousGravel**
+`static read-only suspiciousGravel: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **suspiciousSand**
 `static read-only suspiciousSand: BlockType;`
 
@@ -4957,6 +5099,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only tripwireHook: BlockType;`
 
 Represents a tripwire hook within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **tubeCoral**
+`static read-only tubeCoral: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -5404,6 +5551,11 @@ Represents a white candle cake within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
+### **whiteCarpet**
+`static read-only whiteCarpet: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **whiteGlazedTerracotta**
 `static read-only whiteGlazedTerracotta: BlockType;`
 
@@ -5469,6 +5621,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only yellowCandleCake: BlockType;`
 
 Represents a yellow candle cake within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **yellowCarpet**
+`static read-only yellowCarpet: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 

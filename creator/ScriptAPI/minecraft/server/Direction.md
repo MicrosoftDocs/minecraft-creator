@@ -12,30 +12,16 @@ description: Contents of the .Direction enumeration.
 > [!CAUTION]
 > This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Represents a direction for expressing relative position or facing.
-
 ## Constants
 ### **down**
 `down = "down"`
-
-Represents an object located or facing in the down (z - 1) direction.
 ### **east**
 `east = "east"`
-
-Represents an object located or facing in the east (x + 1) direction.
 ### **north**
 `north = "north"`
-
-Represents an object located or facing in the north (z - 1) direction.
 ### **south**
 `south = "south"`
-
-Represents an object located or facing in the south (z + 1) direction.
 ### **up**
 `up = "up"`
-
-Represents an object located or facing in the up (z + 1) direction.
 ### **west**
 `west = "west"`
-
-Represents an object located or facing in the west (x - 1) direction.

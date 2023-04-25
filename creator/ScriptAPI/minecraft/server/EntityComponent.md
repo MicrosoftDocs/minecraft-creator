@@ -25,6 +25,7 @@ description: Contents of the @minecraft/server.EntityComponent class.
 - [*EntityCanFlyComponent*](EntityCanFlyComponent.md)
 - [*EntityCanPowerJumpComponent*](EntityCanPowerJumpComponent.md)
 - [*EntityColorComponent*](EntityColorComponent.md)
+- [*EntityEquipmentInventoryComponent*](EntityEquipmentInventoryComponent.md)
 - [*EntityFireImmuneComponent*](EntityFireImmuneComponent.md)
 - [*EntityFloatsInLiquidComponent*](EntityFloatsInLiquidComponent.md)
 - [*EntityFlyingSpeedComponent*](EntityFlyingSpeedComponent.md)
@@ -64,3 +65,12 @@ description: Contents of the @minecraft/server.EntityComponent class.
 - [*EntityWantsJockeyComponent*](EntityWantsJockeyComponent.md)
 
 Base class for downstream entity components.
+
+## Properties
+
+### **entity**
+`read-only entity: Entity;`
+
+The entity that owns this component.
+
+Type: [*Entity*](Entity.md)

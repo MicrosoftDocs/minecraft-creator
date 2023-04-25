@@ -29,7 +29,9 @@ Type: *string*
 - [getEntitiesAtBlockLocation](#getentitiesatblocklocation)
 - [getEntitiesFromRay](#getentitiesfromray)
 - [getPlayers](#getplayers)
+- [runCommand](#runcommand)
 - [runCommandAsync](#runcommandasync)
+- [setWeather](#setweather)
 - [spawnEntity](#spawnentity)
 - [spawnItem](#spawnitem)
 - [spawnParticle](#spawnparticle)
@@ -120,17 +122,17 @@ Fills an area between begin and end with block of type block.
 
 ### **getBlock**
 `
-getBlock(location: Vector3): Block
+getBlock(location: Vector3): Block | undefined
 `
 
-Returns a block instance at the given location. This method was introduced as of version 1.17.10.21.
+Returns a block instance at the given location.
 
 #### **Parameters**
 - **location**: [*Vector3*](Vector3.md)
   
   The location at which to return a block.
 
-#### **Returns** [*Block*](Block.md) - Block at the specified location.
+#### **Returns** [*Block*](Block.md) | *undefined* - Block at the specified location.
 
 > [!WARNING]
 > This function can throw errors.
@@ -144,7 +146,11 @@ Gets the first block that intersects with a vector emanating from a location.
 
 #### **Parameters**
 - **location**: [*Vector3*](Vector3.md)
+  
+  Location from where to initiate the ray check.
 - **direction**: [*Vector3*](Vector3.md)
+  
+  Vector direction to cast the ray.
 - **options**?: [*BlockRaycastOptions*](BlockRaycastOptions.md) = `null`
   
   Additional options for processing this raycast query.
@@ -170,9 +176,6 @@ Returns a set of entities based on a set of conditions defined via the EntityQue
   Additional options that can be used to filter the set of entities returned.
 
 #### **Returns** [*Entity*](Entity.md)[] - An entity array.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.
@@ -208,9 +211,6 @@ Returns a set of entities at a particular location.
   The location at which to return entities.
 
 #### **Returns** [*Entity*](Entity.md)[] - Zero or more entities at the specified location.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **getEntitiesFromRay**
 `
@@ -248,8 +248,18 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
 
 #### **Returns** [*Player*](Player.md)[] - A player array.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+> [!WARNING]
+> This function can throw errors.
+
+### **runCommand**
+`
+runCommand(commandString: string): CommandResult
+`
+
+#### **Parameters**
+- **commandString**: *string*
+
+#### **Returns** [*CommandResult*](CommandResult.md)
 
 > [!WARNING]
 > This function can throw errors.
@@ -270,6 +280,17 @@ Runs a particular command asynchronously from the context of the broader dimensi
 
 > [!WARNING]
 > This function can throw errors.
+
+### **setWeather**
+`
+setWeather(weatherType: WeatherType): void
+`
+
+#### **Parameters**
+- **weatherType**: [*WeatherType*](WeatherType.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **spawnEntity**
 `
@@ -332,13 +353,13 @@ log("Created a sneaking wolf.", 1);
 
 ### **spawnItem**
 `
-spawnItem(item: ItemStack, location: Vector3): Entity
+spawnItem(itemStack: ItemStack, location: Vector3): Entity
 `
 
 Creates a new item stack as an entity at the specified location.
 
 #### **Parameters**
-- **item**: [*ItemStack*](ItemStack.md)
+- **itemStack**: [*ItemStack*](ItemStack.md)
 - **location**: [*Vector3*](Vector3.md)
   
   The location at which to create the item stack.
@@ -391,3 +412,6 @@ Creates a new particle emitter at a specified location in the world.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.

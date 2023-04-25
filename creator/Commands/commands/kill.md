@@ -21,10 +21,10 @@ Kills entities like players and mobs.
 </table>
 
 ## Usage
-### Kill player
+### Kill entity
 `/kill [target: target]`
 
-Kill a `target` player.
+Kill a `target` entity.
 
 ## Arguments
 - `target`: target

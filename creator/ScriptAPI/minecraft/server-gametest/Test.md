@@ -805,13 +805,13 @@ Returns a relative direction given the current rotation of the current test. Pas
 
 ### **rotateVector**
 `
-rotateVector(vector: minecraftserver.Vector): minecraftserver.Vector
+rotateVector(vector: minecraftserver.Vector3): minecraftserver.Vector3
 `
 
 #### **Parameters**
-- **vector**: [*@minecraft/server.Vector*](../../minecraft/server/Vector.md)
+- **vector**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
-#### **Returns** [*@minecraft/server.Vector*](../../minecraft/server/Vector.md)
+#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
 > [!WARNING]
 > This function can throw errors.

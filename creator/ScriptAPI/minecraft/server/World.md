@@ -13,12 +13,30 @@ A class that wraps the state of a world - a set of dimensions and the environmen
 
 ## Properties
 
-### **events**
-`read-only events: Events;`
+### **afterEvents**
+`read-only afterEvents: AfterEvents;`
 
 Contains a set of events that are applicable to the entirety of the world.
 
-Type: [*Events*](Events.md)
+Event callbacks are called in a deferred manner.
+
+Event callbacks are executed in read-write mode.
+
+Type: [*AfterEvents*](AfterEvents.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **beforeEvents**
+`read-only beforeEvents: BeforeEvents;`
+
+Contains a set of events that are applicable to the entirety of the world.
+
+Event callbacks are called immediately.
+
+Event callbacks are executed in read-only mode.
+
+Type: [*BeforeEvents*](BeforeEvents.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -170,9 +188,6 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
 
 #### **Returns** [*Player*](Player.md)[] - A player array.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 
@@ -199,22 +214,23 @@ Plays a particular music track for all players.
 - **trackID**: *string*
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+> [!WARNING]
+> This function can throw errors.
 
 ### **playSound**
 `
-playSound(soundID: string, soundOptions?: SoundOptions): void
+playSound(soundID: string, location: Vector3, soundOptions?: WorldSoundOptions): void
 `
 
 Plays a sound for all players.
 
 #### **Parameters**
 - **soundID**: *string*
-- **soundOptions**?: [*SoundOptions*](SoundOptions.md) = `null`
+- **location**: [*Vector3*](Vector3.md)
+- **soundOptions**?: [*WorldSoundOptions*](WorldSoundOptions.md) = `null`
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+> [!WARNING]
+> This function can throw errors.
 
 ### **queueMusic**
 `
@@ -227,8 +243,8 @@ Queues an additional music track for players. If a track is not playing, a music
 - **trackID**: *string*
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+> [!WARNING]
+> This function can throw errors.
 
 ### **removeDynamicProperty**
 `
@@ -347,6 +363,3 @@ stopMusic(): void
 `
 
 Stops any music tracks from playing.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.

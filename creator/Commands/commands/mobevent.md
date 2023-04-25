@@ -38,11 +38,11 @@ Default: `false`.
 Enum of Mob Events
 
 #### Values
-- `events_enabled`
-Events Enabled
-- `minecraft:ender_dragon_event`
-Ender Dragon Event
 - `minecraft:pillager_patrols_event`
 Pillager Patrols Event
 - `minecraft:wandering_trader_event`
 Wandering Trader Event
+- `minecraft:ender_dragon_event`
+Ender Dragon Event
+- `events_enabled`
+Events Enabled

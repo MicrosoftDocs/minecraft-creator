@@ -46,65 +46,65 @@ Required. The target to damage. A player name or [target selector](https://learn
 When using the Damage command, this specifies the type of damage being dealt.
 
 #### Values
-- `anvil`
-Anvil
-- `block_explosion`
-Block Explosion
-- `charging`
-Charging
-- `contact`
-Contact
-- `drowning`
-Drowning
-- `entity_attack`
-Entity Attack
-- `entity_explosion`
-Entity Explosion
-- `fall`
-Fall
-- `falling_block`
-Falling Block
-- `fire`
-Fire
-- `fire_tick`
-Fire Tick
-- `fireworks`
-Fireworks
-- `fly_into_wall`
-Fly into Wall
-- `freezing`
-Freezing
-- `lava`
-Lava
-- `lightning`
-Lightning
-- `magic`
-Magic
-- `magma`
-Magma
-- `none`
-None
-- `override`
-Override
 - `piston`
 Piston
-- `projectile`
-Projectile
-- `stalactite`
-Stalactite
-- `stalagmite`
-Stalagmite
-- `starve`
-Starve
-- `suffocation`
-Suffocation
-- `suicide`
-Suicide
-- `temperature`
-Temperature
-- `thorns`
-Thorns
-- `void`
-Void
+- `lava`
+Lava
+- `fire`
+Fire
+- `anvil`
+Anvil
+- `magma`
+Magma
 - `wither`
 Wither
+- `falling_block`
+Falling Block
+- `fireworks`
+Fireworks
+- `thorns`
+Thorns
+- `none`
+None
+- `contact`
+Contact
+- `override`
+Override
+- `entity_attack`
+Entity Attack
+- `projectile`
+Projectile
+- `suffocation`
+Suffocation
+- `fall`
+Fall
+- `starve`
+Starve
+- `fire_tick`
+Fire Tick
+- `stalactite`
+Stalactite
+- `drowning`
+Drowning
+- `block_explosion`
+Block Explosion
+- `entity_explosion`
+Entity Explosion
+- `void`
+Void
+- `suicide`
+Suicide
+- `magic`
+Magic
+- `charging`
+Charging
+- `stalagmite`
+Stalagmite
+- `fly_into_wall`
+Fly into Wall
+- `lightning`
+Lightning
+- `freezing`
+Freezing
+- `temperature`
+Temperature

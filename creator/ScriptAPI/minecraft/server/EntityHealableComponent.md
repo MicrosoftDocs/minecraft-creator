@@ -43,7 +43,7 @@ getFeedItems(): FeedItem[]
 
 A set of items that can specifically heal this entity.
 
-#### **Returns** [*FeedItem*](FeedItem.md)[]
+#### **Returns** [*FeedItem*](FeedItem.md)[] - Entity that this component is associated with.
 
 > [!WARNING]
 > This function can throw errors.

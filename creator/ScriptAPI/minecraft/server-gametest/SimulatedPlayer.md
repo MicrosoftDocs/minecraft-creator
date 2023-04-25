@@ -17,11 +17,11 @@ A simulated player can be used within GameTests to represent how a player moves 
 ## Properties
 
 ### **headRotation**
-`read-only headRotation: minecraftserver.XYRotation;`
+`read-only headRotation: minecraftserver.Vector2;`
 
 Rotation of the head across pitch and yaw angles.
 
-Type: [*@minecraft/server.XYRotation*](../../minecraft/server/XYRotation.md)
+Type: [*@minecraft/server.Vector2*](../../minecraft/server/Vector2.md)
 
 ### **isSprinting**
 `isSprinting: boolean;`
@@ -516,7 +516,7 @@ Causes the simulated player to hold and use an item in their inventory.
 
 ### **useItemInSlotOnBlock**
 `
-useItemInSlotOnBlock(slot: number, blockLocation: minecraftserver.Vector3, direction?: minecraftserver.Direction, faceLocationX?: number, faceLocationY?: number): boolean
+useItemInSlotOnBlock(slot: number, blockLocation: minecraftserver.Vector3, direction?: minecraftserver.Direction, faceLocation?: minecraftserver.Vector3): boolean
 `
 
 Causes the simulated player to use an item in their inventory on a block. The block at the specified block location must be solid. Returns true if the item was used.
@@ -531,12 +531,9 @@ Causes the simulated player to use an item in their inventory on a block. The bl
 - **direction**?: [*@minecraft/server.Direction*](../../minecraft/server/Direction.md) = `1`
   
   Direction to place the specified item within.
-- **faceLocationX**?: *number* = `0.5`
+- **faceLocation**?: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) = `null`
   
-  Block-face-relative X position where to place the item.
-- **faceLocationY**?: *number* = `0.5`
-  
-  Block-face-relative Y position where to place the item.
+  Location relative to the bottom north-west corner of the block where the item is placed.
 
 #### **Returns** *boolean*
 
@@ -545,7 +542,7 @@ Causes the simulated player to use an item in their inventory on a block. The bl
 
 ### **useItemOnBlock**
 `
-useItemOnBlock(itemStack: minecraftserver.ItemStack, blockLocation: minecraftserver.Vector3, direction?: minecraftserver.Direction, faceLocationX?: number, faceLocationY?: number): boolean
+useItemOnBlock(itemStack: minecraftserver.ItemStack, blockLocation: minecraftserver.Vector3, direction?: minecraftserver.Direction, faceLocation?: minecraftserver.Vector3): boolean
 `
 
 Causes the simulated player to use an item on a block. The block at the specified block location must be solid. Returns true if the item was used.
@@ -560,12 +557,9 @@ Causes the simulated player to use an item on a block. The block at the specifie
 - **direction**?: [*@minecraft/server.Direction*](../../minecraft/server/Direction.md) = `1`
   
   Direction to place the specified item within.
-- **faceLocationX**?: *number* = `0.5`
+- **faceLocation**?: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) = `null`
   
-  Block-face-relative X position where to place the item.
-- **faceLocationY**?: *number* = `0.5`
-  
-  Block-face-relative Y position where to place the item.
+  Location relative to the bottom north-west corner of the block where the item is placed.
 
 #### **Returns** *boolean*
 

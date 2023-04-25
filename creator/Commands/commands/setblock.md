@@ -22,12 +22,12 @@ Changes a block to another block.
 
 ## Usage
 ### Set block, tile data
-`/setblock <position: x y z> <tileName: Block> [tileData: int] [oldBlockHandling: SetBlockMode]`
+`/setblock <position: x y z> <tileName: Block> <blockStates: block properties> [oldBlockHandling: SetBlockMode]`
 
 Set a `block` in a `position` using `tile name` with optional `tile data` and `old block handling` fill methods.
 
 ### Set block, block states
-`/setblock <position: x y z> <tileName: Block> [blockStates: block properties] [oldBlockHandling: SetBlockMode]`
+`/setblock <position: x y z> <tileName: Block> [oldBlockHandling: SetBlockMode]`
 
 Set a `block` in a `position` using `tile name` with optional `block states` and `old block handling` fill methods.
 
@@ -39,9 +39,6 @@ An `enum` of type `destroy`, `hollow`, `keep`, `outline`, or `replace`.
 Default: `replace`.
 - `position: x y z`: position
 A `vector` [x y z] that defines the position of the block to change.
-- `tileData`: int
-An `integer` that specifies the block data for the new block.
-Default: 0.
 - `tileName`: [Block](../enums/Block.md)
 An block name from the `enum` that specifies the new block.
 
@@ -50,9 +47,9 @@ An block name from the `enum` that specifies the new block.
 Enum of Set Block Modes
 
 #### Values
+- `replace`
+Replace
 - `destroy`
 Destroy
 - `keep`
 Keep
-- `replace`
-Replace

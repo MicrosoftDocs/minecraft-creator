@@ -12,9 +12,13 @@ description: Contents of the @minecraft/server.BlockFillOptions class.
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Contains additional options for a block fill operation.
+
 ## Properties
 
 ### **matchingBlock**
 `matchingBlock?: BlockPermutation;`
+
+When specified, the fill operation will only apply to blocks that match this description.
 
 Type: [*BlockPermutation*](BlockPermutation.md)

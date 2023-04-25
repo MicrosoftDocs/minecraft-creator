@@ -7,7 +7,7 @@ title: dialogue Command
 description: Description and usage of the dialogue command
 ---
 # `/dialogue` Command
-Opens NPC dialogue for a player. See the page on the [Dialogue documentation](https://learn.microsoft.com/minecraft/creator/documents/npcdialogue#dialogue-command) for more information.
+Opens NPC dialogue for a player. See the page on the [Dialogue documentation](https://learn.microsoft.com/en-us/minecraft/creator/documents/npcdialogue#dialogue-command) for more information.
 
 <table>
   <tr>
@@ -33,10 +33,9 @@ Change the dialogue `npc` and `sceneName`, with an optional `player`.
 
 ## Arguments
 - `npc`: target
-Required. The target for the NPC menu. Must be a [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) for an entity with type npc.
+Required. The target for the NPC menu. Must be a [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) for an entity with type NPC.
 - `player`: target
-Target to display menu. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player..
+Target to display menu. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.
 - `players`: target
-Targets to display menu. A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player..
 - `sceneName`: string
 A `string` that specifies the scene file to run from the behavior pack.

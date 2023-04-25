@@ -25,6 +25,9 @@ The @minecraft/server-gametest module provides scriptable APIs for scaffolding a
 ## Available Versions
 - `1.0.0-beta`
 
+## Enumerations
+- [GameTestErrorType](GameTestErrorType.md)
+
 ## Classes
 - [FenceConnectivity](FenceConnectivity.md)
 - [GameTestSequence](GameTestSequence.md)
@@ -33,6 +36,12 @@ The @minecraft/server-gametest module provides scriptable APIs for scaffolding a
 - [SimulatedPlayer](SimulatedPlayer.md)
 - [Tags](Tags.md)
 - [Test](Test.md)
+
+## Interfaces
+- [GameTestErrorContext](GameTestErrorContext.md)
+
+## Errors
+- [GameTestError](GameTestError.md)
 
 ## Functions
 
