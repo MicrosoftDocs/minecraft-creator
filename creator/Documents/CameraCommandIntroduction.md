@@ -94,7 +94,7 @@ Eased transitions to the three standard gameplay perspectives are not allowed, a
 
 ### The "pos" sub-option
 
-This sub-option of the "set" option allows the camera command to specify an override to the position that is defined in the Camera Preset’s JSON file. It supports the "~" and "^" characters like other commands do, allowing the command to set the camera to a dynamically calculated position. 
+This sub-option of the "set" option allows the camera command to specify an override to the position that is defined in the Camera Preset’s JSON file. It supports the "~" and "^" characters like other commands do, allowing the command to set the camera to a dynamically calculated position.
 
 Warning: Setting the position of a camera to an area of the world that isn’t loaded is not a supported scenario, though there is not a plan currently to programmatically prevent it. The chunks of the world will still only load if the player is nearby and the device’s render distance option is high enough. Positioning the camera in ways that look beyond what is loaded is something that may not function consistently in the future. It’s recommended to keep the camera somewhat near the player and to double-check content on lower-end devices or with a lower render distance setting to ensure that things will work for all users.
 
@@ -122,7 +122,7 @@ The "fade" option of the camera command causes a full-screen color to fade in, w
 
 ### The "time" sub-option  
 
-This sub-option allows for customizing the timing of the fade effect. If not specified, this will use a 1 second fade in, a 0.5 second hold, and a 1 second fade out. The total combined time of a fade command cannot exceed 60 seconds, and the hold time cannot exceed 10 seconds. If a longer fade (or dynamically timed fade out) is needed, multiple fade commands can be used – see the "Combining fades" section.
+This sub-option allows for customizing the timing of the fade effect. If not specified, this will use a 1 second fade in, a 0.5 second hold, and a 1 second fade out. Fade in, hold, and fade out are each limited to no more than 10 seconds. If a longer fade (or dynamically timed fade out) is needed, multiple fade commands can be used – see the "Combining fades" section.
 
 ### The "color" sub-option
 
