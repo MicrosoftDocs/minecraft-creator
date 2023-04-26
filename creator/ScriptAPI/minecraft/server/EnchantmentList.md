@@ -81,27 +81,33 @@ Returns whether or not the provided EnchantmentInstance can be added to this col
 
 ### **getEnchantment**
 `
-getEnchantment(enchantmentType: EnchantmentType): Enchantment
+getEnchantment(enchantmentType: EnchantmentType | string): Enchantment | undefined
 `
 
 Returns an enchantment associated with a type.
 
 #### **Parameters**
-- **enchantmentType**: [*EnchantmentType*](EnchantmentType.md)
+- **enchantmentType**: [*EnchantmentType*](EnchantmentType.md) | *string*
 
-#### **Returns** [*Enchantment*](Enchantment.md)
+#### **Returns** [*Enchantment*](Enchantment.md) | *undefined*
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **hasEnchantment**
 `
-hasEnchantment(enchantmentType: EnchantmentType): number
+hasEnchantment(enchantmentType: EnchantmentType | string): number
 `
 
 If this collection has an EnchantmentInstance with type, returns the level of the enchantment. Returns 0 if not present.
 
 #### **Parameters**
-- **enchantmentType**: [*EnchantmentType*](EnchantmentType.md)
+- **enchantmentType**: [*EnchantmentType*](EnchantmentType.md) | *string*
 
 #### **Returns** *number*
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **next**
 `
@@ -112,10 +118,13 @@ next(): IteratorResult<Enchantment>
 
 ### **removeEnchantment**
 `
-removeEnchantment(enchantmentType: EnchantmentType): void
+removeEnchantment(enchantmentType: EnchantmentType | string): void
 `
 
 Removes an EnchantmentInstance with type from this collection if present.
 
 #### **Parameters**
-- **enchantmentType**: [*EnchantmentType*](EnchantmentType.md)
+- **enchantmentType**: [*EnchantmentType*](EnchantmentType.md) | *string*
+
+> [!WARNING]
+> This function can throw errors.

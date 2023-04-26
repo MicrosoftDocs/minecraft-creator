@@ -1,13 +1,13 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:grows_crop
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:grows_crop
 
-`minecraft:grows_crop` could increase crop growth when entity walks over crop.
+`minecraft:grows_crop` allows increased crop growth when the entity walks over crops.
 
 ## Parameters
 

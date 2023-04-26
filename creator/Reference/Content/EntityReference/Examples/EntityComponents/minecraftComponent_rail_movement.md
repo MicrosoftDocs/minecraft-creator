@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:rail_movement
 
-`minecraft:rail_movement` defines the entity's movement on the rails. An entity with this component is only allowed to move on the rail.
+`minecraft:rail_movement` defines the entity's movement on rails. An entity with this component is only allowed to move on the rail.
 
 ## Parameters
 

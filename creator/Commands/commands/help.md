@@ -49,3 +49,158 @@ Default: `1`.
 ## Enums
 ### `CommandName`
 Command name enumeration
+
+#### Values
+- `tag`
+Manages tags stored in entities.
+- `stop`
+- `camerashake`
+Applies shaking to the players' camera with a specified intensity and duration.
+- `clear`
+Clears items from player inventory.
+- `clearspawnpoint`
+Removes the spawn point for a player.
+- `clone`
+Clones blocks from one region to another.
+- `damage`
+Apply damage to the specified entities.
+- `daylock`
+Locks and unlocks the day-night cycle.
+- `alwaysday`
+Locks and unlocks the day-night cycle.
+- `deop`
+Revokes operator status from a player.
+- `dialogue`
+Opens NPC dialogue for a player
+- `difficulty`
+Sets the difficulty level.
+- `effect`
+Add or remove status effects.
+- `event`
+Triggers an event for the specified object(s).
+- `execute`
+Executes a command on behalf of one or more entities.
+- `fill`
+Fills all or parts of a region with a specific block.
+- `fog`
+Add or remove fog settings file.
+- `function`
+Runs commands found in the corresponding functions file.
+- `gamemode`
+Sets a player's game mode.
+- `gamerule`
+Sets or queries a game rule value.
+- `gametest`
+Interacts with game test.
+- `gettopsolidblock`
+- `give`
+Gives an item to a player.
+- `help`
+Provides help/list of commands.
+- `?`
+Provides help/list of commands.
+- `inputpermission`
+- `kick`
+Kicks a player from a server.
+- `kill`
+Kills entities (players, mobs, etc.)
+- `list`
+Lists players on the server.
+- `listd`
+- `structure`
+Saves or loads a structure in the world.
+- `locate`
+Displays the coordinates for the closest structure or biome of a given type.
+- `loot`
+Drops the given loot table into the specified inventory or into the world.
+- `me`
+Displays a message about yourself.
+- `mobevent`
+Controls what mob events are allowed to run.
+- `music`
+Allows you to control playing music tracks.
+- `op`
+Grants operator status to a player.
+- `particle`
+Creates a particle emitter.
+- `reload`
+Reloads all function and script files from all behavior packs.
+- `permission`
+- `ops`
+- `playanimation`
+Makes one or more entities play a one-off animation. Assumes all variables are setup correctly.
+- `playsound`
+Plays a sound.
+- `querytarget`
+- `replaceitem`
+Replaces items in inventories.
+- `ride`
+Makes entities ride other entities, stops entities from riding, makes rides evict their riders, or summons rides or riders.
+- `say`
+Sends a message in the chat to other players.
+- `tickingarea`
+Add, remove, or list ticking areas.
+- `schedule`
+Schedules an action to be executed once an area is loaded, or after a certain amount of time.
+- `scoreboard`
+Tracks and displays scores for various objectives.
+- `setblock`
+Changes a block to another block.
+- `setmaxplayers`
+Sets the maximum number of players for this game session.
+- `setworldspawn`
+Sets the world spawn.
+- `spawnpoint`
+Sets the spawn point for a player.
+- `spreadplayers`
+Teleports entities to random locations.
+- `stopsound`
+Stops a sound.
+- `save`
+Save
+- `summon`
+Summons an entity.
+- `teleport`
+Teleports entities (players, mobs, etc.).
+- `tp`
+Teleports entities (players, mobs, etc.).
+- `tell`
+Sends a private message to one or more players.
+- `w`
+Sends a private message to one or more players.
+- `msg`
+Sends a private message to one or more players.
+- `tellraw`
+Sends a JSON message to players.
+- `testforblock`
+Tests whether a certain block is in a specific location.
+- `testforblocks`
+Tests whether the blocks in two regions match.
+- `testfor`
+Counts entities (players, mobs, items, etc.) matching specified conditions.
+- `time`
+Changes or queries the world's game time.
+- `title`
+Controls screen titles.
+- `titleraw`
+Controls screen titles with JSON messages.
+- `toggledownfall`
+Toggles the weather.
+- `weather`
+Sets the weather.
+- `wsserver`
+Attempts to connect to the websocket server on the provided URL.
+- `connect`
+Attempts to connect to the websocket server on the provided URL.
+- `xp`
+Adds or removes player experience.
+- `project`
+- `simulationtype`
+- `agent`
+- `codebuilder_actorinfo`
+- `enchant`
+Adds an enchantment to a player's selected item.
+- `allowlist`
+- `whitelist`
+- `changesetting`
+- `script`

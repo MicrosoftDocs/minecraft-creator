@@ -1,26 +1,26 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:breathable
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:breathable
 
-`minecraft:breathable` defines what blocks an entity can breathe in and gives them the ability to suffocate.
+`minecraft:breathable` defines which blocks an entity can breathe in and defines the ability to suffocate in those blocks.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|breathe_blocks|*not set* | List|  List of blocks this entity can breathe in, in addition to the above. |
-|breathes_air| true| Boolean| If true, this entity can breathe in air. |
-|breathes_lava| true| Boolean|  If true, this entity can breathe in lava. |
-|breathes_solids| false| Boolean|  If true, this entity can breathe in solid blocks. |
-|breathes_water| false| Boolean|  If true, this entity can breathe in water. |
-|generates_bubbles| true| Boolean|  If true, this entity will have visible bubbles while in water. |
+|breathe_blocks|*not set* | List|  List of blocks the entity can breathe in. |
+|breathes_air| true| Boolean| If true, the entity can breathe in air. |
+|breathes_lava| true| Boolean|  If true, the entity can breathe in lava. |
+|breathes_solids| false| Boolean|  If true, the entity can breathe in solid blocks. |
+|breathes_water| false| Boolean|  If true, the entity can breathe in water. |
+|generates_bubbles| true| Boolean|  If true, the entity will have visible bubbles while in water. |
 |inhale_time| 0| Decimal|  Time in seconds to recover breath to maximum. |
-|non_breathe_blocks|*not set* | List| List of blocks this entity can't breathe in, in addition to the other "breathes" parameters. |
+|non_breathe_blocks|*not set* | List| List of blocks the entity can't breathe in, in addition to the other "breathes" parameters. |
 |suffocate_time| -20| Integer| Time in seconds between suffocation damage. |
 |total_supply| 15| Integer| Time in seconds the entity can hold its breath. |
 

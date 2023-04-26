@@ -1,13 +1,13 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:burns_in_daylight
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:burns_in_daylight
 
-`minecraft:burns_in_daylight` allows an entity to burn when it's daylight.
+`minecraft:burns_in_daylight` compels an entity to burn when it's daylight.
 
 ## Example
 

@@ -55,12 +55,12 @@ Default: `0`.
 Enum of Time Queries
 
 #### Values
-- `day`
-Day
 - `daytime`
 Daytime
 - `gametime`
 Gametime
+- `day`
+Day
 
 ### `TimeSpec`
 Enum of Time Specs
@@ -68,13 +68,13 @@ Enum of Time Specs
 #### Values
 - `day`
 Day
-- `midnight`
-Midnight
-- `night`
-Night
-- `noon`
-Noon
 - `sunrise`
 Sunrise
+- `noon`
+Noon
 - `sunset`
 Sunset
+- `night`
+Night
+- `midnight`
+Midnight

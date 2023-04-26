@@ -12,6 +12,7 @@ description: Contents of the @minecraft/server.Entity class.
 ## Classes that extend Entity
 - [*Player*](Player.md)
 - [*Player*](Player.md)
+- [*Player*](Player.md)
 
 Represents the state of an entity (a mob, the player, or other moving objects like minecarts) in the world.
 
@@ -23,9 +24,6 @@ Represents the state of an entity (a mob, the player, or other moving objects li
 Dimension that the entity is currently within.
 
 Type: [*Dimension*](Dimension.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **id**
 `read-only id: string;`
@@ -44,15 +42,22 @@ Type: *boolean*
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+### **lifetimeState**
+`read-only lifetimeState: EntityLifetimeState;`
+
+Whether the entity reference that you have is valid or not.  For example, an entity may be unloaded if it moves into a chunk that is unloaded, but may be reactivated if the chunk it is within gets reloaded.
+
+Type: [*EntityLifetimeState*](EntityLifetimeState.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **location**
 `read-only location: Vector3;`
 
 Current location of the entity.
 
 Type: [*Vector3*](Vector3.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **nameTag**
 `nameTag: string;`
@@ -61,11 +66,8 @@ Given name of the entity.
 
 Type: *string*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-### **scoreboard**
-`read-only scoreboard: ScoreboardIdentity;`
+### **scoreboardIdentity**
+`read-only scoreboardIdentity?: ScoreboardIdentity;`
 
 Returns a scoreboard identity that represents this entity.
 
@@ -117,31 +119,24 @@ Type: *string*
 - [playAnimation](#playanimation)
 - [removeDynamicProperty](#removedynamicproperty)
 - [removeTag](#removetag)
+- [runCommand](#runcommand)
 - [runCommandAsync](#runcommandasync)
 - [setDynamicProperty](#setdynamicproperty)
 - [setOnFire](#setonfire)
 - [setRotation](#setrotation)
 - [teleport](#teleport)
-- [teleportFacing](#teleportfacing)
 - [triggerEvent](#triggerevent)
+- [tryTeleport](#tryteleport)
 
 ### **addEffect**
 `
 addEffect(effectType: EffectType, duration: number, amplifier?: number, showParticles?: boolean): void
 `
 
-Adds an effect, like poison, to the entity.
-
 #### **Parameters**
 - **effectType**: [*EffectType*](EffectType.md)
-  
-  Type of effect to add to the entity.
 - **duration**: *number*
-  
-  Amount of time, in ticks, for the effect to apply.
 - **amplifier**?: *number* = `0`
-  
-  Optional amplification of the effect to apply.
 - **showParticles**?: *boolean* = `true`
 
 > [!CAUTION]
@@ -192,15 +187,12 @@ Adds a specified tag to an entity.
 
 #### **Returns** *boolean*
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 
 ### **applyDamage**
 `
-applyDamage(amount: number, source?: EntityDamageSource): boolean
+applyDamage(amount: number, options?: EntityApplyDamageByProjectileOptions | EntityApplyDamageOptions): boolean
 `
 
 Applies a set of damage to an entity.
@@ -209,14 +201,11 @@ Applies a set of damage to an entity.
 - **amount**: *number*
   
   Amount of damage to apply.
-- **source**?: [*EntityDamageSource*](EntityDamageSource.md) = `null`
+- **options**?: [*EntityApplyDamageByProjectileOptions*](EntityApplyDamageByProjectileOptions.md) | [*EntityApplyDamageOptions*](EntityApplyDamageOptions.md) = `null`
   
-  Additional option about the source of damage, which may add additional effects or spur additional behaviors on this entity.
+  Additional options about the source of damage, which may add additional effects or spur additional behaviors on this entity.
 
 #### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.
@@ -230,9 +219,8 @@ Applies impulse vector to the current velocity of the entity.
 
 #### **Parameters**
 - **vector**: [*Vector3*](Vector3.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+  Impulse vector.
 
 > [!WARNING]
 > This function can throw errors.
@@ -246,12 +234,17 @@ Applies impulse vector to the current velocity of the entity.
 
 #### **Parameters**
 - **directionX**: *number*
+  
+  X direction in horizontal plane.
 - **directionZ**: *number*
+  
+  Z direction in horizontal plane.
 - **horizontalStrength**: *number*
+  
+  Knockback strength for the horizontal vector.
 - **verticalStrength**: *number*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+  Knockback strength for the vertical vector.
 
 > [!WARNING]
 > This function can throw errors.
@@ -262,9 +255,6 @@ clearVelocity(): void
 `
 
 Sets the current velocity of the Entity to zero. Note that this method may not have an impact on Players.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.
@@ -414,20 +404,17 @@ Returns the current location of the head component of this entity.
 
 #### **Returns** [*Vector3*](Vector3.md)
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 
 ### **getRotation**
 `
-getRotation(): XYRotation
+getRotation(): Vector2
 `
 
 Returns the current rotation component of this entity.
 
-#### **Returns** [*XYRotation*](XYRotation.md)
+#### **Returns** [*Vector2*](Vector2.md)
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -444,9 +431,6 @@ Returns all tags associated with an entity.
 
 #### **Returns** *string*[]
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 
@@ -459,9 +443,6 @@ Returns the current velocity vector of the entity.
 
 #### **Returns** [*Vector3*](Vector3.md)
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 
@@ -473,9 +454,6 @@ getViewDirection(): Vector3
 Returns the current view direction of the entity.
 
 #### **Returns** [*Vector3*](Vector3.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.
@@ -511,21 +489,17 @@ Tests whether an entity has a particular tag.
 
 #### **Returns** *boolean*
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 
 ### **kill**
 `
-kill(): void
+kill(): boolean
 `
 
 Kills this entity. The entity will drop loot as normal.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+#### **Returns** *boolean* - Returns true if entity can be killed (even if it is already dead), otherwise it returns false.
 
 > [!WARNING]
 > This function can throw errors.
@@ -577,8 +551,20 @@ Removes a specified tag from an entity.
 
 #### **Returns** *boolean*
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+> [!WARNING]
+> This function can throw errors.
+
+### **runCommand**
+`
+runCommand(commandString: string): CommandResult
+`
+
+Runs a synchronous command on the entity.
+
+#### **Parameters**
+- **commandString**: *string*
+
+#### **Returns** [*CommandResult*](CommandResult.md)
 
 > [!WARNING]
 > This function can throw errors.
@@ -642,14 +628,13 @@ Sets an entity on fire (if it is not in water or rain). Note that you can call g
 
 ### **setRotation**
 `
-setRotation(degreesX: number, degreesY: number): void
+setRotation(rotation: Vector2): void
 `
 
 Sets the main rotation of the entity.
 
 #### **Parameters**
-- **degreesX**: *number*
-- **degreesY**: *number*
+- **rotation**: [*Vector2*](Vector2.md)
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -659,7 +644,7 @@ Sets the main rotation of the entity.
 
 ### **teleport**
 `
-teleport(location: Vector3, dimension: Dimension, xRotation: number, yRotation: number, keepVelocity?: boolean): void
+teleport(location: Vector3, teleportOptions?: TeleportOptions): void
 `
 
 Teleports the selected entity to a new location
@@ -668,41 +653,7 @@ Teleports the selected entity to a new location
 - **location**: [*Vector3*](Vector3.md)
   
   New location for the entity.
-- **dimension**: [*Dimension*](Dimension.md)
-  
-  Dimension to move the selected entity to.
-- **xRotation**: *number*
-  
-  X rotation of the entity after teleportation.
-- **yRotation**: *number*
-  
-  Y rotation of the entity after teleportation.
-- **keepVelocity**?: *boolean* = `false`
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **teleportFacing**
-`
-teleportFacing(location: Vector3, dimension: Dimension, facingLocation: Vector3, keepVelocity?: boolean): void
-`
-
-Teleports the selected entity to a new location, and will have the entity facing a specified location.
-
-#### **Parameters**
-- **location**: [*Vector3*](Vector3.md)
-  
-  New location for the entity.
-- **dimension**: [*Dimension*](Dimension.md)
-  
-  Dimension to move the selected entity to.
-- **facingLocation**: [*Vector3*](Vector3.md)
-  
-  Location that this entity will be facing.
-- **keepVelocity**?: *boolean* = `false`
+- **teleportOptions**?: [*TeleportOptions*](TeleportOptions.md) = `null`
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -721,6 +672,29 @@ Triggers an entity type event. For every entity, a number of events are defined 
 - **eventName**: *string*
   
   Name of the entity type event to trigger. If a namespace is not specified, minecraft: is assumed.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **tryTeleport**
+`
+tryTeleport(location: Vector3, teleportOptions?: TeleportOptions): boolean
+`
+
+Attempts to try a teleport, but may not complete the teleport operation (for example, if there are blocks at the destination.)
+
+#### **Parameters**
+- **location**: [*Vector3*](Vector3.md)
+  
+  Location to teleport the entity to.
+- **teleportOptions**?: [*TeleportOptions*](TeleportOptions.md) = `null`
+  
+  Options regarding the teleport operation.
+
+#### **Returns** *boolean*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

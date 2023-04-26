@@ -7,7 +7,7 @@ title: difficulty Command
 description: Description and usage of the difficulty command
 ---
 # `/difficulty` Command
-Sets the difficulty level using difficulty enum or integer.
+Sets the difficulty level (Peaceful, Easy, Normal, Hard) using difficulty enum or integer.
 
 <table>
   <tr>
@@ -21,18 +21,18 @@ Sets the difficulty level using difficulty enum or integer.
 </table>
 
 ## Usage
-### Difficulty using difficulty enum: e, easy, h, hard, n, normal, p, peaceful
+### Difficulty using difficulty enum: p, peaceful, e, easy, n, normal, h, hard
 `/difficulty <difficulty: Difficulty>`
 
 Set the difficulty using the `Difficulty` `enum`
 
-### Difficulty using integer: 1 (easy), 2 (hard), 3 (normal), 4 (peaceful)
+### Difficulty using integer: 0 (Peaceful), 1 (Easy), 2 (Normal), 3 (Hard).
 `/difficulty <difficulty: int>`
 
 Set the difficulty using an integer.
 
 ## Arguments
 - `difficulty`: [Difficulty](../enums/Difficulty.md)
-Set the difficulty using the Difficult enum: `e` or `easy`, `h` or `hard`, `n` or `normal`, `p` or `peaceful`.
+Set the difficulty using the Difficult enum: `p` or `peaceful`, `e` or `easy`, `n` or `normal`, `h` or `hard`.
 - `difficulty`: int
-Set the difficulty using an integer.
+Set the difficulty using an integer: 0 (Peaceful), 1 (Easy), 2 (Normal), 3 (Hard).

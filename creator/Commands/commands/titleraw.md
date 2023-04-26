@@ -63,9 +63,9 @@ Default: `0`.
 Enum of Title Raw Set
 
 #### Values
-- `actionbar`
-Action Bar
-- `subtitle`
-Subtitle
 - `title`
 Title
+- `subtitle`
+Subtitle
+- `actionbar`
+Action Bar

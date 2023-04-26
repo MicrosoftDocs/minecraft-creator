@@ -51,63 +51,63 @@ Default: `30`.
 Effect
 
 #### Values
-- `absorption`
-Absorption
-- `bad_omen`
-Bad Omen
-- `blindness`
-Blindness
-- `conduit_power`
-Conduit Power
-- `darkness`
-Darkness
-- `fatal_poison`
-Fatal Poison
-- `fire_resistance`
-Fire Resistance
+- `wither`
+Wither
+- `speed`
+Speed
+- `slowness`
+Slowness
 - `haste`
 Haste
-- `health_boost`
-Health Boost
-- `hunger`
-Hunger
-- `instant_damage`
-Instant Damage
-- `instant_health`
-Instant Health
-- `invisibility`
-Invisibility
-- `jump_boost`
-Jump Boost
-- `levitation`
-Levitation
 - `mining_fatigue`
 Mining Fatigue
+- `strength`
+Strength
+- `instant_health`
+Instant Health
+- `instant_damage`
+Instant Damage
+- `jump_boost`
+Jump Boost
 - `nausea`
 Nausea
-- `night_vision`
-Night Vision
-- `poison`
-Poison
 - `regeneration`
 Regeneration
 - `resistance`
 Resistance
-- `saturation`
-Saturation
-- `slow_falling`
-Slow Falling
-- `slowness`
-Slowness
-- `speed`
-Speed
-- `strength`
-Strength
-- `village_hero`
-Village Hero
+- `fire_resistance`
+Fire Resistance
 - `water_breathing`
 Water Breathing
+- `invisibility`
+Invisibility
+- `blindness`
+Blindness
+- `night_vision`
+Night Vision
+- `hunger`
+Hunger
 - `weakness`
 Weakness
-- `wither`
-Wither
+- `poison`
+Poison
+- `health_boost`
+Health Boost
+- `absorption`
+Absorption
+- `saturation`
+Saturation
+- `levitation`
+Levitation
+- `fatal_poison`
+Fatal Poison
+- `conduit_power`
+Conduit Power
+- `slow_falling`
+Slow Falling
+- `bad_omen`
+Bad Omen
+- `village_hero`
+Village Hero
+- `darkness`
+Darkness

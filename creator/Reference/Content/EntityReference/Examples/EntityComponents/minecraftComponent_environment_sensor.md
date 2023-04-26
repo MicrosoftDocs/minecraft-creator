@@ -13,12 +13,12 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| triggers| *not set*| List| The list of triggers that fire when the environment conditions match the given filter criteria. |
+| triggers| *not set*| List| The list of triggers that initiate when the environment conditions match the given filter criteria. |
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| event| *not set* | string |The event to run when the conditions for this trigger are met.|
-| filters|*not set* |List / Filter| The list of conditions for this trigger to execute.|
+| event| *not set* | string |The event to run when the conditions are met.|
+| filters|*not set* |List / Filter| The list of conditions for this trigger to initiate.|
 | target| self|string|The target of the event. |
 
 ## Example

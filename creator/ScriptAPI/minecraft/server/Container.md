@@ -9,9 +9,6 @@ description: Contents of the @minecraft/server.Container class.
 # Container Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Represents a container that can hold sets of items. Used with entities such as Players, Chest Minecarts, Llamas, and more.
 
 ## Properties
@@ -75,7 +72,7 @@ Clears all inventory items in the container.
 
 ### **getItem**
 `
-getItem(slot: number): ItemStack
+getItem(slot: number): ItemStack | undefined
 `
 
 Gets an [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md) of the item at the specified slot. If the slot is empty, returns `undefined`. This method does not change or clear the contents of the specified slot. To get a reference to a particular slot, see [*@minecraft/server.Container.getSlot*](../../minecraft/server/Container.md#getslot).
@@ -85,7 +82,7 @@ Gets an [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md) of 
   
   Zero-based index of the slot to retrieve items from.
 
-#### **Returns** [*ItemStack*](ItemStack.md)
+#### **Returns** [*ItemStack*](ItemStack.md) | *undefined*
 
 > [!WARNING]
 > Throws if the container is invalid or if the `slot` index is out of bounds.
@@ -111,6 +108,9 @@ Returns a container slot. This acts as a reference to a slot at the given index 
   The index of the slot to return. This index must be within the bounds of the container.
 
 #### **Returns** [*ContainerSlot*](ContainerSlot.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > Throws if the container is invalid or if the `slot` index is out of bounds.

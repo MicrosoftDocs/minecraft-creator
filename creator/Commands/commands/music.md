@@ -56,7 +56,7 @@ A `float` number to specify the volume of the music track.
 Enum of Music Repeat Modes
 
 #### Values
-- `loop`
-Loop
 - `play_once`
 Play Once
+- `loop`
+Loop

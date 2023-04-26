@@ -9,9 +9,6 @@ description: Contents of the @minecraft/server.ItemStack class.
 # ItemStack Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Defines a collection of items.
 
 ## Properties
@@ -84,7 +81,9 @@ Type: *string*
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
 - [getLore](#getlore)
+- [getTags](#gettags)
 - [hasComponent](#hascomponent)
+- [hasTag](#hastag)
 - [isStackableWith](#isstackablewith)
 - [setCanDestroy](#setcandestroy)
 - [setCanPlaceOn](#setcanplaceon)
@@ -118,11 +117,14 @@ clone(): ItemStack
 
 Creates an exact copy of the item stack, including any custom data or properties.
 
-#### **Returns** [*ItemStack*](ItemStack.md)
+#### **Returns** [*ItemStack*](ItemStack.md) - Returns a copy of this item stack.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **getComponent**
 `
-getComponent(componentId: string): any
+getComponent(componentId: string): ItemComponent | undefined
 `
 
 Gets a component (that represents additional capabilities) for an item stack.
@@ -132,7 +134,7 @@ Gets a component (that represents additional capabilities) for an item stack.
   
   The identifier of the component (e.g., 'minecraft:food') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed. If the component is not present on the item stack, undefined is returned.
 
-#### **Returns** *any*
+#### **Returns** [*ItemComponent*](ItemComponent.md) | *undefined*
 
 #### **Examples**
 ##### *durability.ts*
@@ -145,12 +147,12 @@ const maxDurability = durability.maxDurability;
 
 ### **getComponents**
 `
-getComponents(): any[]
+getComponents(): ItemComponent[]
 `
 
 Returns all components that are both present on this item stack and supported by the API.
 
-#### **Returns** *any*[]
+#### **Returns** [*ItemComponent*](ItemComponent.md)[]
 
 ### **getLore**
 `
@@ -160,6 +162,21 @@ getLore(): string[]
 Returns the lore value - a secondary display string - for an ItemStack.
 
 #### **Returns** *string*[] - An array of lore strings. If the item does not have lore, returns an empty array.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **getTags**
+`
+getTags(): string[]
+`
+
+Returns a set of tags associated with this item stack.
+
+#### **Returns** *string*[]
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **hasComponent**
 `
@@ -174,6 +191,23 @@ Returns true if the specified component is present on this item stack.
   The identifier of the component (e.g., 'minecraft:food') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed.
 
 #### **Returns** *boolean*
+
+### **hasTag**
+`
+hasTag(tag: string): boolean
+`
+
+Checks whether this item stack has a particular tag associated with it.
+
+#### **Parameters**
+- **tag**: *string*
+  
+  Tag to search for.
+
+#### **Returns** *boolean* - True if the Item Stack has the tag associated with it, else false.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **isStackableWith**
 `
@@ -197,6 +231,9 @@ The list of block types this item can break in Adventure mode. The block names a
 #### **Parameters**
 - **blockIdentifiers**?: *string*[] = `null`
 
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 > [!WARNING]
 > Throws if any of the provided block identifiers are invalid.
 
@@ -217,6 +254,9 @@ The list of block types this item can be placed on in Adventure mode. This is on
 
 #### **Parameters**
 - **blockIdentifiers**?: *string*[] = `null`
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > Throws if any of the provided block identifiers are invalid.
@@ -239,6 +279,9 @@ Sets the lore value - a secondary display string - for an ItemStack.
 #### **Parameters**
 - **loreList**?: *string*[] = `null`
 
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 #### **Examples**
 ##### *multilineLore.ts*
 ```javascript
@@ -258,6 +301,9 @@ Triggers an item type event. For custom items, a number of events are defined in
 - **eventName**: *string*
   
   Name of the item type event to trigger. If a namespace is not specified, minecraft: is assumed.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 #### **Examples**
 ##### *itemStacks.ts*

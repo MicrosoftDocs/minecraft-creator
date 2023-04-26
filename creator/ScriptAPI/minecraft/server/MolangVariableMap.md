@@ -72,7 +72,7 @@ Adds the following variables to Molang:
 
 ### **setSpeedAndDirection**
 `
-setSpeedAndDirection(variableName: string, speed: number, direction: Vector): MolangVariableMap
+setSpeedAndDirection(variableName: string, speed: number, direction: Vector3): MolangVariableMap
 `
 
 Adds the following variables to Molang:
@@ -88,13 +88,13 @@ Adds the following variables to Molang:
 #### **Parameters**
 - **variableName**: *string*
 - **speed**: *number*
-- **direction**: [*Vector*](Vector.md)
+- **direction**: [*Vector3*](Vector3.md)
 
 #### **Returns** [*MolangVariableMap*](MolangVariableMap.md)
 
 ### **setVector3**
 `
-setVector3(variableName: string, vector: Vector): MolangVariableMap
+setVector3(variableName: string, vector: Vector3): MolangVariableMap
 `
 
 Adds the following variables to Molang:
@@ -107,6 +107,6 @@ Adds the following variables to Molang:
 
 #### **Parameters**
 - **variableName**: *string*
-- **vector**: [*Vector*](Vector.md)
+- **vector**: [*Vector3*](Vector3.md)
 
 #### **Returns** [*MolangVariableMap*](MolangVariableMap.md)

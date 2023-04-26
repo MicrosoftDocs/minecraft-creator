@@ -12,7 +12,7 @@ description: Contents of the @minecraft/server.RawText class.
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-A `RawMessage` with only the `rawtext` property. When a `RawMessage` is serialized the contents are put into a rawtext property, so this is useful when reading saved RawMessages. See `BlockSignComponent.setText` and `BlockSignComponent.getRawText` for examples
+A `RawMessage` with only the `rawtext` property. When a `RawMessage` is serialized the contents are put into a rawtext property, so this is useful when reading saved RawMessages. See `BlockSignComponent.setText` and `BlockSignComponent.getRawText` for examples.
 
 ## Properties
 

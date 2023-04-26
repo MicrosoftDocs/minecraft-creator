@@ -17,8 +17,8 @@ Returns data about player responses to a modal form.
 ## Properties
 
 ### **formValues**
-`read-only formValues?: any[];`
+`read-only formValues?: (boolean | number | string)[];`
 
 An ordered set of values based on the order of controls specified by ModalFormData.
 
-Type: *any*[]
+Type: (*boolean* | *number* | *string*)[]

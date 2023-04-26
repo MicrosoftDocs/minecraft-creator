@@ -7,20 +7,20 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:rideable
 
-`minecraft:rideable` determines whether this entity can be ridden. Allows specifying the different seat positions and quantity.
+`minecraft:rideable` determines whether the entity can be ridden. Allows specifying the different seat positions and quantity.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | controlling_seat| 0| Integer| The seat that designates the driver of the entity. This is only observed by the horse/boat styles of riding; minecarts/entities with "minecraft:controlled_by_player" give control to any player in any seat.  |
-| crouching_skip_interact| True| Boolean| If true, this entity can't be interacted with if the entity interacting with it is crouching |
+| crouching_skip_interact| True| Boolean| If true, the entity can't be interacted with if the entity interacting with it is crouching |
 | family_types| *not set*| List| List of entities that can ride this entity |
-| interact_text| *not set*| String| The text to display when the player can interact with the entity when playing with Touch-screen controls |
+| interact_text| *not set*| String| The text to display while playing with touch-screen controls when the player can interact with the entity |
 | passenger_max_width| 0.00| Decimal| The max width a mob can be to be a passenger. A value of 0 ignores this parameter. |
-| priority| 0| Integer| This field may exist in old data but isn't used by minecraft:rideable. |
-| pull_in_entities| False| Boolean| If true, this entity will pull in entities that are in the correct family_types into any available seats |
-| rider_can_interact| False| Boolean| If true, this entity will be picked when looked at by the rider |
+| priority| 0| Integer| This field may exist in old data but isn't used by `minecraft:rideable`. |
+| pull_in_entities| False| Boolean| If true, the entity will pull in entities that are in the correct family_types into any available seats |
+| rider_can_interact| False| Boolean| If true, the entity will be picked when looked at by the rider |
 | seat_count| 1| Integer| The number of entities that can ride this entity at the same time |
 | seats| *not set*| List| The list of positions and number of riders for each position for entities riding this entity|
 

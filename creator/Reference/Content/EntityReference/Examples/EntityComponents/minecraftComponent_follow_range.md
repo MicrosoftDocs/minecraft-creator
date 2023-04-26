@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:follow_range
 ms.prod: gaming
 ---
@@ -13,9 +13,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|value|*not set* | Integer| Range of the random amount of damage the melee follow_range deals. A negative value can heal the entity instead of hurting it |
-|max| *not set*| Integer|  Duration in seconds of the status ailment applied to the damaged entity |
-
+|value|*not set* | Integer| Range of the amount of damage the melee follow_range deals. A negative value can heal the entity instead of hurting it |
+|max| *not set*| Integer|  Duration, in seconds, of the status ailment applied to the damaged entity |
 
 ## Example
 

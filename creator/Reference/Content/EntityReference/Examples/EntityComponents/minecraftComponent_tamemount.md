@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:tamemount
 
-`minecraft:tamemount` allows the Entity to be tamed by mounting it.
+`minecraft:tamemount` allows the entity to be tamed by mounting it.
 
 ## Parameters
 
@@ -36,7 +36,7 @@ ms.prod: gaming
 
 | Name| Default Value| Type| Description |
 |:-----------|:-----------|:-----------|:-----------|
-| item| *not set*| String| Name of the item this entity likes and can be used to increase this entity's temper. |
+| item| *not set*| String| Name of the item the entity likes and can be used to increase the entity's temper. |
 
 ## Example
 

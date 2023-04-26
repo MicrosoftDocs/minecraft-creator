@@ -19,3 +19,4 @@ Recipes are setup in JSON files under the `behavior_packs/'name of pack'/recipes
 |[Potion Brewing](RecipeDefinitions/minecraftRecipe_PotionBrewing.md) |Represents a recipe that for use with a Potion Brewing station.|
 |[Potion Brewing Mix](RecipeDefinitions/minecraftRecipe_PotionBrewingMix.md) |Represents a Potion Brewing Mix.|
 |[Smithing Transform](RecipeDefinitions/minecraftRecipe_SmithingTransform.md) |Represents a smithing transform recipe for the Smithing Table.|
+|[Smithing Trim](RecipeDefinitions/minecraftRecipe_SmithingTrim.md) |Represents a smithing trim recipe for the Smithing Table.|

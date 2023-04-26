@@ -49,13 +49,13 @@ Tests for the current weather state the entity is experiencing.
 ### Full
 
 ```json
-{ "test": "weather", "subject": "self", "operator": "==", "value": "player" }
+{ "test": "weather", "subject": "self", "operator": "==", "value": "" }
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "weather", "value": "player" }
+{ "test": "weather", "value": "" }
 ```
 
 ## Vanilla Mob examples

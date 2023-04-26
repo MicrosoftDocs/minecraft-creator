@@ -30,16 +30,9 @@ Face of the block that was hit.
 
 Type: [*Direction*](Direction.md)
 
-### **faceLocationX**
-`faceLocationX: number;`
+### **faceLocation**
+`faceLocation: Vector3;`
 
-X coordinate on the face that was hit.
+Location relative to the bottom north-west corner of the block.
 
-Type: *number*
-
-### **faceLocationY**
-`faceLocationY: number;`
-
-Y coordinate on the face that was hit.
-
-Type: *number*
+Type: [*Vector3*](Vector3.md)

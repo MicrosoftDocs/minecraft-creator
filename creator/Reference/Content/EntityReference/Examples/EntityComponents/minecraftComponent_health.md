@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:health
 ms.prod: gaming
 ---
@@ -13,8 +13,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|value|*not set* | Integer| The amount of health an entity to start with by default. |
-|max|*not set* | Integer| The maximum starting health an entity has. |
+|value|*not set* | Integer| The default amount of health the entity starts with. |
+|max|*not set* | Integer| The maximum starting health the entity has. |
 
 ## Example
 

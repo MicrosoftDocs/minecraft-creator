@@ -16,22 +16,22 @@ The game difficulty.
 |Hard| `hard` | h|3|
 
 ## Values
-- `e`
-Difficulty is 'e' for easy
-- `easy`
-Difficulty is easy
-- `h`
-Difficulty is 'h' for hard
-- `hard`
-Difficulty is hard
-- `n`
-Difficulty is 'n' for normal
 - `normal`
 Difficulty is normal
-- `p`
-Difficulty is 'p' for peaceful
 - `peaceful`
 Difficulty is peaceful
+- `easy`
+Difficulty is easy
+- `hard`
+Difficulty is hard
+- `p`
+Difficulty is 'p' for peaceful
+- `e`
+Difficulty is 'e' for easy
+- `n`
+Difficulty is 'n' for normal
+- `h`
+Difficulty is 'h' for hard
 
 ## References
 The following commands reference this enum:

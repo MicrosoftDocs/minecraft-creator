@@ -13,13 +13,13 @@ description: Contents of the @minecraft/server.BlockEvent class.
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Classes that extend BlockEvent
-- [*BeforePistonActivateEvent*](BeforePistonActivateEvent.md)
-- [*BlockBreakEvent*](BlockBreakEvent.md)
-- [*BlockExplodeEvent*](BlockExplodeEvent.md)
-- [*BlockPlaceEvent*](BlockPlaceEvent.md)
-- [*ButtonPushEvent*](ButtonPushEvent.md)
-- [*LeverActionEvent*](LeverActionEvent.md)
-- [*PistonActivateEvent*](PistonActivateEvent.md)
+- [*BlockBreakAfterEvent*](BlockBreakAfterEvent.md)
+- [*BlockExplodeAfterEvent*](BlockExplodeAfterEvent.md)
+- [*BlockPlaceAfterEvent*](BlockPlaceAfterEvent.md)
+- [*ButtonPushAfterEvent*](ButtonPushAfterEvent.md)
+- [*LeverActionAfterEvent*](LeverActionAfterEvent.md)
+- [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)
+- [*PistonActivateBeforeEvent*](PistonActivateBeforeEvent.md)
 
 Contains information regarding an event that impacts a specific block.
 

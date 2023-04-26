@@ -7,16 +7,16 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:nameable
 
-`minecraft:nameable` allows this entity to be named (e.g. using a name tag).
+`minecraft:nameable` allows the entity to be named (e.g. using a name tag).
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| allow_name_tag_renaming| True| Boolean| If true, this entity can be renamed with name tags |
+| allow_name_tag_renaming| True| Boolean| If true, the entity can be renamed with name tags |
 | always_show| False| Boolean| If true, the name will always be shown |
 | default_trigger| *not set*| String| Trigger to run when the entity gets named |
-| name_actions| *not set*| JSON Object| Describes the special names for this entity and the events to call when the entity acquires those names|
+| name_actions| *not set*| JSON Object| Describes the special names for the entity and the events to call when the entity acquires those names|
 
 ### name_actions
 
@@ -24,8 +24,8 @@ ms.prod: gaming
 
 | Name| Default Value| Type| Description |
 |:-----------|:-----------|:-----------|:-----------|
-| name_filter| *not set*| String| List of special names that will cause the events defined in 'on_named' to fire |
-| on_named| *not set*| String| Event to be called when this entity acquires the name specified in 'name_filter' |
+| name_filter| *not set*| String| List of special names that will cause the events defined in 'on_named' to initiate |
+| on_named| *not set*| String| Event to be called when the entity acquires the name specified in 'name_filter' |
 
 ## Example
 

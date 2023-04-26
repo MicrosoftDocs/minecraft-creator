@@ -38,18 +38,18 @@ Optional. The players on the allowlist. Must be a valid player name.
 
 ## Enums
 ### `AllowListAction`
-May be type `list`, `on`, `off`, `add`, `remove`, or `reload.`
+May be type `add`, `list`, `off`, `on`, `reload`, or `remove.`
 
 #### Values
 - `add`
 Adds a player to the allowlist if they are not included.
-- `list`
-List the player names, uuids, or xuids.
-- `off`
-Disables the allowlist.
-- `on`
-Enables the allowlist.
-- `reload`
-Reloads the allowlist file.
 - `remove`
 Removes a player from the allowlist if they are on it.
+- `list`
+List the player names, uuids, or xuids.
+- `reload`
+Reloads the allowlist file.
+- `on`
+Enables the allowlist.
+- `off`
+Disables the allowlist.

@@ -1,19 +1,19 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:knockback_resistance
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:knockback_resistance
 
-`minecraft:knockback_resistance` allows an entity to resist being knocked backwards by a melee attack.
+`minecraft:knockback_resistance` compels an entity to resist being knocked backwards by a melee attack.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| value |*not set* | Float or object with value and max | The amount of knockback resistance that a mob has. |
+| value |*not set* | Float or object with value and max | The amount of knockback resistance that an entity has. |
 
 ## Example
 

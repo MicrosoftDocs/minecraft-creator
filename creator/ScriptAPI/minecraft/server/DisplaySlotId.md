@@ -12,18 +12,10 @@ description: Contents of the .DisplaySlotId enumeration.
 > [!CAUTION]
 > This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-An enumeration for the locations where scoreboard objectives can be displayed.
-
 ## Constants
 ### **belowname**
 `belowname = "belowname"`
-
-Score for an objective is displayed below a player's nametag.
 ### **list**
 `list = "list"`
-
-This objective and respective list of players is shown on the Pause menu.
 ### **sidebar**
 `sidebar = "sidebar"`
-
-The objective is shown on the right-hand side of the screen.

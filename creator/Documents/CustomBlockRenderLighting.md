@@ -127,12 +127,12 @@ We'll be exploring the render_methods parameter available to textures. The defau
 **_Opaque_**
 
 ```json
-   "minecraft:material_instances": {
-          "*": {
-            "texture": "bubble_fish",
-            "render_method": "opaque"
-          }
-        }
+  "minecraft:material_instances": {
+     "*": {
+      "texture": "bubble_fish",
+      "render_method": "opaque"
+     }
+    }
 ```
 
 :::image type="content" source="Media/RenderAndLighting/ral3.png" alt-text="Screenshot of a bubble block shown with the opaque render.":::
@@ -143,10 +143,10 @@ As you can see, transparency and translucency are not respected. Those colors ar
 
 ```json
 "minecraft:material_instances": {
-     "*": {
-            "texture": "bubble_fish",
-            "render_method": "double_sided"
-          }
+  "*": {
+      "texture": "bubble_fish",
+      "render_method": "double_sided"
+     }
 }
 ```
 
@@ -166,7 +166,7 @@ However, you can only tell the difference between "opaque" and "double_sided" if
 "minecraft:material_instances": {
   "*": {
        "texture": "bubble_fish",
-       "render_method": "alpha_test"
+   "render_method": "alpha_test"
   }
 }
 ```
@@ -179,10 +179,10 @@ Alpha test doesn't respect translucency, which affects the transparent teal pixe
 
 ```json
 "minecraft:material_instances": {
-    "*": {
-         "texture": "bubble_fish",
-         "render_method": "blend"
-    }
+  "*": {
+    "texture": "bubble_fish",
+    "render_method": "blend"
+  }
 }
 ```
 
@@ -202,12 +202,12 @@ If true, shadows will be created around and underneath the block.
 
 ```json
 "minecraft:material_instances": {
-          "*": {
-            "texture": "bubble_fish",
-            "render_method": "blend",
-            "ambient_occlusion": true
-          }
-        }
+     "*": {
+      "texture": "bubble_fish",
+      "render_method": "blend",
+      "ambient_occlusion": true
+     }
+    }
 ```
 
 :::image type="content" source="Media/RenderAndLighting/ral7.png" alt-text="Screenshot of a bubble block shown with the ambient occlusion lighting effect.":::
@@ -220,12 +220,12 @@ Should the material be dimmed by the side it's facing?
 
 ```json
 "minecraft:material_instances": {
-          "*": {
-            "texture": "bubble_fish",
-            "render_method": "blend",
-            "face_dimming": true
-          }
-        }
+     "*": {
+      "texture": "bubble_fish",
+      "render_method": "blend",
+      "face_dimming": true
+     }
+    }
 ```
 
 Similar to our ambient occlusion example, you can see the block on the left has face dimming set to 'true,' while the right block has the option set to 'false'.

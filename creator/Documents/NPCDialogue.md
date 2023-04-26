@@ -300,6 +300,6 @@ This is useful for times where a player changing an NPCs dialogue could result i
      - This command opens the dialogue, calls an entity with type NPC in a 2 block radius, targets the player, and then runs the `ducky_intro` file.
    - Or you can tag the npc with `/tag @e[type=npc] add dusty` and then run the dialogue command with `/dialogue open @e[tag=dusty] @p ducky_intro`.
 
-See more on [target selectors in the Introduction to Commands](/minecraft/creator/documents/commandsintroduction#target-selectors).
+See more about [target selectors here](TargetSelectors.md).
 
 ![NPC Dialogue Outcome](Media\NPCs\NPCDialogueOutcome.PNG)

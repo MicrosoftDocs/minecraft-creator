@@ -5,6 +5,8 @@
 - name: admire_item
   href: minecraftComponent_admire_item.md
 - name: ageable
+  href: minecraftComponent_ambient_sound_interval.md
+- name: ambient_sound_interval
   href: minecraftComponent_ageable.md
 - name: anger_level
   href: minecraftComponent_anger_level.md
@@ -46,8 +48,20 @@
   href: minecraftComponent_buoyant.md
 - name: burns_in_daylight
   href: minecraftComponent_burns_in_daylight.md
+- name: can_climb
+  href: minecraftComponent_can_climb.md
+- name: can_fly
+  href: minecraftComponent_can_fly.md
+- name: can_power_jump
+  href: minecraftComponent_can_power_jump.md   
 - name: celebrate_hunt
   href: minecraftComponent_celebrate_hunt.md
+- name: collision_box
+  href: minecraftComponent_collision_box.md
+- name: color
+  href: minecraftComponent_color.md
+- name: color2
+  href: minecraftComponent_color2.md
 - name: combat_regeneration
   href: minecraftComponent_combat_regeneration.md
 - name: conditional_bandwidth_optimization
@@ -58,6 +72,8 @@
   href: minecraftComponent_damage_over_time.md
 - name: damage_sensor
   href: minecraftComponent_damage_sensor.md
+- name: default_look_angle
+  href: minecraftComponent_default_look_angle.md
 - name: despawn
   href: minecraftComponent_despawn.md
 - name: drying_out_timer
@@ -72,6 +88,8 @@
   href: minecraftComponent_environment_sensor.md
 - name: equip_item
   href: minecraftComponent_equip_item.md
+- name: equipment
+  href: minecraftComponent_equipment.md
 - name: equippable
   href: minecraftComponent_equippable.md
 - name: exhaustion_values
@@ -80,16 +98,26 @@
   href: minecraftComponent_experience_reward.md
 - name: explode
   href: minecraftComponent_explode.md
+- name: fire_immune
+  href: minecraftComponent_fire_immune.md
+- name: floats_in_liquid
+  href: minecraftComponent_floats_in_liquid.md
 - name: flocking
   href: minecraftComponent_flocking.md
+- name: flying_speed
+  href: minecraftComponent_flying_speed.md
 - name: follow_range
   href: minecraftComponent_follow_range.md
+- name: friction_modifier
+  href: minecraftComponent_friction_modifier.md
 - name: game_event_movement_tracking
   href: minecraftComponent_game_event_movement_tracking.md
 - name: genetics
   href: minecraftComponent_genetics.md
 - name: giveable
   href: minecraftComponent_giveable.md
+- name: ground_offset
+  href: minecraftComponent_ground_offset.md
 - name: group_size
   href: minecraftComponent_group_size.md
 - name: grows_crop
@@ -108,6 +136,8 @@
   href: minecraftComponent_horse.jump_strength.md
 - name: hurt_on_condition
   href: minecraftComponent_hurt_on_condition.md
+- name: input_ground_controlled
+  href: minecraftComponent_input_ground_controlled.md
 - name: inside_block_notifier
   href: minecraftComponent_inside_block_notifier.md
 - name: insomnia
@@ -118,6 +148,34 @@
   href: minecraftComponent_interact.md
 - name: inventory
   href: minecraftComponent_inventory.md
+- name: is_baby
+  href: minecraftComponent_is_baby.md
+- name: is_charged
+  href: minecraftComponent_is_charged.md
+- name: is_chested
+  href: minecraftComponent_is_chested.md
+- name: is_dyeable
+  href: minecraftComponent_is_dyeable.md
+- name: is_hidden_when_invisible
+  href: minecraftComponent_is_hidden_when_invisible.md
+- name: is_ignited
+  href: minecraftComponent_is_ignited.md
+- name: is_illager_captain
+  href: minecraftComponent_is_illager_captain.md
+- name: is_saddled
+  href: minecraftComponent_is_saddled.md
+- name: is_shaking
+  href: minecraftComponent_is_shaking.md
+- name: is_sheared
+  href: minecraftComponent_is_sheared.md
+- name: is_stackable
+  href: minecraftComponent_is_stackable.md
+- name: is_stunned
+  href: minecraftComponent_is_stunned.md
+- name: is_tamed
+  href: minecraftComponent_is_tamed.md
+- name: item_controllable
+  href: minecraftComponent_item_controllable.md
 - name: item_hopper
   href: minecraftComponent_item_hopper.md
 - name: jump.dynamic
@@ -132,8 +190,12 @@
   href: minecraftComponent_leashable.md
 - name: lookat
   href: minecraftComponent_lookat.md
+- name: loot
+  href: minecraftComponent_loot.md
 - name: managed_wandering_trader
   href: minecraftComponent_managed_wandering_trader.md
+- name: mark_variant
+  href: minecraftComponent_mark_variant.md
 - name: mob_effect
   href: minecraftComponent_mob_effect.md
 - name: movement.amphibious
@@ -154,6 +216,8 @@
   href: minecraftComponent_movement.jump.md
 - name: movement.skip
   href: minecraftComponent_movement.skip.md
+- name: movement_sound_distance_offset
+  href: minecraftComponent_movement_sound_distance_offset.md
 - name: movement.sway
   href: minecraftComponent_movement.sway.md
 - name: nameable
@@ -192,6 +256,8 @@
   href: minecraftComponent_preferred_path.md
 - name: projectile
   href: minecraftComponent_projectile.md
+- name: push_through
+  href: minecraftComponent_push_through.md
 - name: pushable
   href: minecraftComponent_pushable.md
 - name: raid_trigger
@@ -206,6 +272,8 @@
   href: minecraftComponent_rideable.md
 - name: scaffolding_climber
   href: minecraftComponent_scaffolding_climber.md
+- name: scale
+  href: minecraftComponent_scale.md
 - name: scale_by_age
   href: minecraftComponent_scale_by_age.md
 - name: scheduler
@@ -216,6 +284,10 @@
   href: minecraftComponent_shooter.md
 - name: sittable
   href: minecraftComponent_sittable.md
+- name: skin_id
+  href: minecraftComponent_skin_id.md
+- name: sound_volume
+  href: minecraftComponent_sound_volume.md
 - name: spawn_entity
   href: minecraftComponent_spawn_entity.md
 - name: strength
@@ -244,8 +316,16 @@
   href: minecraftComponent_trust.md
 - name: trusting
   href: minecraftComponent_trusting.md
+- name: type_family
+  href: minecraftComponent_type_family.md
 - name: underwater_movement
   href: minecraftComponent_underwater_movement.md
+- name: variant
+  href: minecraftComponent_variant.md
+- name: walk_animation_speed
+  href: minecraftComponent_walk_animation_speed.md
+- name: wants_jockey
+  href: minecraftComponent_wants_jockey.md
 - name: water_movement
   href: minecraftComponent_water_movement.md
 - name: variable_max_auto_step
