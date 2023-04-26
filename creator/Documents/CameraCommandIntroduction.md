@@ -86,7 +86,7 @@ There are several additional options that can be used with the "set" option.
 
 ### The "ease" sub-option
 
-The ease option will cause the transition between the views to be done over some specified number of seconds, rather than instantly. It requires specifying an 'easeType', which is the name of one of the various easing methods available. 32 different options are "linear", "spring", or the thirty other options that can be viewed at on Easing Functions Cheat Sheet (easings.net)  
+The ease option will cause the transition between the views to be done over some specified number of seconds, rather than instantly. It requires specifying an 'easeType', which is the name of one of the various easing methods available. 32 different options are "linear", "spring", or the thirty other options that can be viewed at on [Easing Functions Cheat Sheet](https://easings.net) (easings.net)  
 
 Eased motions always start from where the camera currently is, so an ease from A to B which is interrupted with another ease to C will start from somewhere in between A and B.
 
