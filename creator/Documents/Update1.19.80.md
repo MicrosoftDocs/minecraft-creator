@@ -20,7 +20,7 @@ No existing Holiday Creator Features left experimental this release. But two new
 
 **New Block Transformation Component**
 
-Added a new transformation component for blocks to support rotation, scaling and translation. The component can be added to the whole block, and/or to individual block permutations.
+Added a new [transformation](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_transformation.md) component for blocks to support rotation, scaling and translation. The component can be added to the whole block, and/or to individual [block permutations](../Reference/Content/BlockReference/Examples/BlockPropertiesAndPermutations.md#block-permutations).
 
 ````JSON
 "minecraft:transformation": {
@@ -31,19 +31,20 @@ Added a new transformation component for blocks to support rotation, scaling and
 ````
 
 **bone_visibility**
-Added a new bone_visibility element to the block geometry component.
+
+Added a new [bone_visibility](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_geometry.md#bone_visibility) element to the block geometry component.
 
 ## Commands ##
 
-**New Command! inputpermission**
+**New Command: inputpermission**
 
-Added the "inputpermission" command, which allows for setting the player's camera or movement as enabled or disabled. This will be handy in cutscenes and non-interactive sequences.
+Added the [inputpermission](../Commands/commands/inputpermission.md) command, which allows for setting the player's camera or movement as enabled or disabled. This will be handy in cutscenes and non-interactive sequences.
 
 ```/inputpermission set <target: player> <permission: camera | movement> <state: enabled | disabled>```
 
-**Improved Command! summon**
+**Improved Command: summon**
 
-Added two new overloads to the summon command to make it easier to summon entities at specific rotations.
+Added two new overloads to the [summon](../Commands/commands/summon.md) command to make it easier to summon entities at specific rotations.
 
 ```/summon [spawnPos : x y z] facing <position: x y z> [spawnEvent: string] [nametag: string]```
 
@@ -53,11 +54,11 @@ Added two new overloads to the summon command to make it easier to summon entiti
 
 In 1.19.70, we removed support for field "data" in the following commands:
 
-- /clone
-- /execute
-- /fill
-- /setblock
-- /testforblock
+- [/clone](../Commands/commands/clone.md)
+- [/execute](../Commands/commands/execute.md)
+- [/fill](../Commands/commands/fill.md)
+- [/setblock](../Commands/commands/setblock.md)
+- [/testforblock](../Commands/commands/testforblock.md)
 
 In 1.19.80, we've added auto-complete support for block-states to make it easier to use this syntax.
 
