@@ -107,7 +107,7 @@ For `/tickingarea add...`, there is an option value to specify that the new area
 
 ## Using the Schedule command with a ticking area
 
-Creators can use the `/schedule` command to make the game wait for chunks and entities to be loaded before executing a series of commands, such as those configured in a ticking area. This is important for our creators so that they can know when they can run their commands in each area.
+Creators can use the `/schedule` command to make the game wait for chunks and entities to be loaded before executing a series of commands, such as those configured in a ticking area. This is important for our creators so that they can know when they can run their commands in each area.
 
 ### Syntax of the /schedule command
 

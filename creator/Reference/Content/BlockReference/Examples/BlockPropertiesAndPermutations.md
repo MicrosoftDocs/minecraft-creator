@@ -17,7 +17,7 @@ The "properties" field is contained in the "description" section of a custom blo
 > [!NOTE]
 > Property values can also be json objects, defining a range of numbers:
 >
-> "test:integer_property":{"values":{"min":0,"max":3}} would be the same as " "test:integer_property":[0, 1, 2, 3]
+> "test:integer_property":{"values":{"min":0,"max":3}} would be the same as "test:integer_property":[0, 1, 2, 3]
 
 ## Block Permutations
 

@@ -80,7 +80,7 @@ This behavior enables Marketplace creators to update their products at any time 
 
 ## Updating a World Template's Base Game Version to 1.18
 
-With the upcoming 1.18 release for Caves and Cliffs Part 2, we are making significant changes to world generation. There is a potential for content to break when working with existing templates.
+With the upcoming 1.18 release for Caves and Cliffs Part 2, we are making significant changes to world generation. There is a potential for content to break when working with existing templates.
 
 To ensure that content continues to operate as intended, Minecraft Marketplace Creators will be unable to update the base game version of their content to v1.18+ after the release of client v1.18. This is a temporary measure to ensure that content continues to operate as designed after this large update.  
 
@@ -96,10 +96,10 @@ In this scenario, a Creator creates and releases a world template for a version 
 
 In order to prevent any loss of information, it is recommended to create a copy of the existing template, **TemplateB** from our scenario, that has the `base_game_version` set to `[1, 18, 0]` and to use this new template for distributing to players.
 
-1. A Creator creates a template called **TemplateA** and sets the `base_game_version` to `[1.17.4]` or previous version.
-1. A Player opens Minecraft: Bedrock Edition in a version older than 1.18, and downloads **TemplateA**.
-1. The Creator instantiates a new world utilizing **TemplateA** called **WorldA**.
+1. A Creator creates a template called **TemplateA** and sets the `base_game_version` to `[1.17.4]` or previous version.
+1. A Player opens Minecraft: Bedrock Edition in a version older than 1.18, and downloads **TemplateA**.
+1. The Creator instantiates a new world utilizing **TemplateA** called **WorldA**.
 1. Minecraft: Bedrock Edition client is updated to v1.18+.
-1. The Creator copies **TemplateA** and creates a **TemplateB** with `base_game_version` set to `[1, 18, 0]`.
+1. The Creator copies **TemplateA** and creates a **TemplateB** with `base_game_version` set to `[1, 18, 0]`.
 1. The Creator tests and validates **TemplateB** before publishing.
 1. The Player downloads **TemplateB** and creates a new world, **WorldB**.
