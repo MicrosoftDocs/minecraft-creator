@@ -222,7 +222,7 @@ Returns true if this player has operator-level permissions.
 
 ### **playSound**
 `
-playSound(soundID: string, soundOptions?: SoundOptions): void
+playSound(soundID: string, soundOptions?: PlayerSoundOptions): void
 `
 
 Plays a sound that only this particular player can hear.
@@ -231,12 +231,9 @@ Plays a sound that only this particular player can hear.
 - **soundID**: *string*
   
   Identifier of the sound to play.
-- **soundOptions**?: [*SoundOptions*](SoundOptions.md) = `null`
+- **soundOptions**?: [*PlayerSoundOptions*](PlayerSoundOptions.md) = `null`
   
   Additional optional options for the sound.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.

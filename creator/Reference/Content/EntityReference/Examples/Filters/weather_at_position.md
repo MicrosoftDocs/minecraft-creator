@@ -13,7 +13,12 @@ Tests the current weather, at the actor's position, against a provided weather v
 
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
-|value |*not set* |String |(Required) The Family name to look for. |
+|value |*not set* |String |(Required) The weather type to test against. |
+
+## values
+clear - no precipitation
+rain - precipitation, or snow in cold biomes
+thunder - lightning and sky noises, or blizzard in cold biomes
 
 >[!Note]
 > `weather_at_position` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
@@ -45,24 +50,18 @@ Tests the current weather, at the actor's position, against a provided weather v
 | equals| Test for equality. |
 | not| Test for inequality. |
 
-### value
-
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |true |Boolean |(Optional) true or false. |
-
 ## Example
 
 ### Full
 
 ```json
-{ "test": "weather_at_position", "subject": "self", "operator": "equals", "value": "player" }
+{ "test": "weather_at_position", "subject": "self", "operator": "equals", "value": "rain" }
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "weather_at_position", "value": "player" }
+{ "test": "weather_at_position", "value": "rain" }
 ```
 
 ## Vanilla entities examples

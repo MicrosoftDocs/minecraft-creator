@@ -35,13 +35,13 @@ Type: [*EnchantmentType*](EnchantmentType.md)
 
 ### **constructor**
 `
-new Enchantment(enchantmentType: EnchantmentType, level?: number)
+new Enchantment(enchantmentType: EnchantmentType | string, level?: number)
 `
 
 Creates a new particular type of enchantment configuration.
 
 #### **Parameters**
-- **enchantmentType**: [*EnchantmentType*](EnchantmentType.md)
+- **enchantmentType**: [*EnchantmentType*](EnchantmentType.md) | *string*
   
   Type of the enchantment.
 - **level**?: *number* = `1`
@@ -49,3 +49,6 @@ Creates a new particular type of enchantment configuration.
   Level of the enchantment.
 
 #### **Returns** [*Enchantment*](Enchantment.md)
+
+> [!WARNING]
+> This function can throw errors.

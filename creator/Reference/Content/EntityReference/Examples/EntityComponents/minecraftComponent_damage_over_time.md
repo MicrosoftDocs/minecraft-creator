@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: mikeam
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:damage_over_time
 ms.prod: gaming
 ---

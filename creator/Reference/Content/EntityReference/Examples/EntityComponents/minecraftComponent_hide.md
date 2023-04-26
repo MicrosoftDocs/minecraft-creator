@@ -1,13 +1,13 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:hide
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:hide
 
-`minecraft:hide` moves to and hides at their owned POI or the closest nearby.
+`minecraft:hide` compels an entity to move to and hide at their owned POI or the closest nearby.
 
 
 

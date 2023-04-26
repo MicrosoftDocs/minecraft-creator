@@ -119,7 +119,7 @@ In a new project, before you touch anything, you are in Tool Mode.
 
 If you're ever not sure which mode you are in, press ESC. If you're in Crosshair mode, you'll go back into Tool Mode - if you're in Tool Mode already, nothing will happen.
 
-Practice: In the top right corner of the screen, select the “Crosshair Mode” button or press `Ctrl Tab` to go into Crosshair Mode. Note the differences. To go back to Tool Mode, you can press `Ctrl Tab` again or press `Esc`. You can also go from Tool Mode to Crosshair Mode by clicking the Crosshair Mode button in the upper right corner.
+Practice: In the top right corner of the screen, select the "Crosshair Mode" button or press `Ctrl Tab` to go into Crosshair Mode. Note the differences. To go back to Tool Mode, you can press `Ctrl Tab` again or press `Esc`. You can also go from Tool Mode to Crosshair Mode by clicking the Crosshair Mode button in the upper right corner.
 
 ## Navigation
 
@@ -155,7 +155,7 @@ The contents of these containers will change as Editor is developed.
 
 - **Export as** - When you're ready to share your project (or just see it in non-Editor Minecraft) selecting **File > Export as > Playable world** to start the process to create a .mcworld file in the **projectbackups** folder inside the **com.mojang** folder in your computer.
 
-If you don't know how to find your com.mojang folder, there are instructions in the Bedrock [Getting Started](/GettingStarted.md) tutorial.
+If you don't know how to find your com.mojang folder, there are instructions in the Bedrock [Getting Started](GettingStarted.md) tutorial.
 
 Editor has its own filetype: .mcproject. These files will always open in Editor, if you have it installed.  
 

@@ -25,13 +25,13 @@ Type: [*BlockType*](BlockType.md)
 
 ## Methods
 - [clone](#clone)
-- [getAllProperties](#getallproperties)
+- [getAllStates](#getallstates)
 - [getItemStack](#getitemstack)
-- [getProperty](#getproperty)
+- [getState](#getstate)
 - [getTags](#gettags)
 - [hasTag](#hastag)
 - [matches](#matches)
-- [withProperty](#withproperty)
+- [withState](#withstate)
 - [resolve](#resolve)
 
 ### **clone**
@@ -46,14 +46,14 @@ Creates a copy of this permutation.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-### **getAllProperties**
+### **getAllStates**
 `
-getAllProperties(): Record<string, boolean | number | string>
+getAllStates(): Record<string, boolean | number | string>
 `
 
-Returns all available properties associated with this block.
+Returns all available block states associated with this block.
 
-#### **Returns** Record<*string*, *boolean* | *number* | *string*> - Returns the list of all of the properties that the permutation has.
+#### **Returns** Record<*string*, *boolean* | *number* | *string*> - Returns the list of all of the block states that the permutation has.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -75,17 +75,19 @@ Retrieves a prototype item stack based on this block permutation that can be use
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-### **getProperty**
+### **getState**
 `
-getProperty(propertyName: string): boolean | number | string | undefined
+getState(stateName: string): boolean | number | string | undefined
 `
 
-Gets a property for the permutation.
+Gets a state for the permutation.
 
 #### **Parameters**
-- **propertyName**: *string*
+- **stateName**: *string*
+  
+  Name of the block state who's value is to be returned.
 
-#### **Returns** *boolean* | *number* | *string* | *undefined* - Returns the property if the permutation has it, else `null`.
+#### **Returns** *boolean* | *number* | *string* | *undefined* - Returns the state if the permutation has it, else `undefined`.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -131,24 +133,22 @@ console.log(`Block is stone: ${blockPerm.hasTag("stone")}`);
 
 ### **matches**
 `
-matches(blockName: string, properties?: Record<string, boolean | number | string>): boolean
+matches(blockName: string, states?: Record<string, boolean | number | string>): boolean
 `
 
-Returns a boolean whether a specified permutation matches this permutation. If properties is not specified, matches checks against the set of types more broadly.
+Returns a boolean whether a specified permutation matches this permutation. If states is not specified, matches checks against the set of types more broadly.
 
 #### **Parameters**
 - **blockName**: *string*
   
-  Identifier of the block.
-- **properties**?: Record<*string*, *boolean* | *number* | *string*> = `null`
-  
-  An optional set of properties to compare against.
+  An optional set of states to compare against.
+- **states**?: Record<*string*, *boolean* | *number* | *string*> = `null`
 
 #### **Returns** *boolean*
 
-### **withProperty**
+### **withState**
 `
-withProperty(name: string, value: boolean | number | string): BlockPermutation
+withState(name: string, value: boolean | number | string): BlockPermutation
 `
 
 Returns a derived BlockPermutation with a specific property set.
@@ -171,7 +171,7 @@ Returns a derived BlockPermutation with a specific property set.
 
 ### **resolve**
 `
-static resolve(blockName: string, properties?: Record<string, boolean | number | string>): BlockPermutation
+static resolve(blockName: string, states?: Record<string, boolean | number | string>): BlockPermutation
 `
 
 Given a type identifier and an optional set of properties, will return a BlockPermutation object that is usable in other block APIs (e.g., block.setPermutation)
@@ -180,9 +180,7 @@ Given a type identifier and an optional set of properties, will return a BlockPe
 - **blockName**: *string*
   
   Identifier of the block to check.
-- **properties**?: Record<*string*, *boolean* | *number* | *string*> = `null`
-  
-  Optional additional set of properties to check against.
+- **states**?: Record<*string*, *boolean* | *number* | *string*> = `null`
 
 #### **Returns** [*BlockPermutation*](BlockPermutation.md)
 

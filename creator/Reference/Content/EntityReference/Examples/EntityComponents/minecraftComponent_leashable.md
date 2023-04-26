@@ -7,13 +7,13 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:leashable
 
-`minecraft:leashable` allows this entity to be leashed and defines the conditions and events for this entity when is leashed.
+`minecraft:leashable` allows an entity to be leashed and defines the conditions and events for the entity when is leashed.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| can_be_stolen| False| Boolean| If true, players can leash this entity even if it is already leashed to another mob. |
+| can_be_stolen| False| Boolean| If true, players can leash the entity even if it is already leashed to another mob. |
 | hard_distance| 6| Decimal| Distance in blocks at which the leash stiffens, restricting movement. |
 | max_distance| 10| Decimal| Distance in blocks at which the leash breaks. |
 | on_leash| *not set*| JSON Object | Event to call when this entity is leashed. |

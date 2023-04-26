@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:raid_trigger
 ms.prod: gaming
 ---
@@ -13,7 +13,7 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| triggered_event| *not set*| String | Event to run when a raid is triggered a raid on the village. |
+| triggered_event| *not set*| String | Event to run when a raid is triggered. |
 
 ## Example
 

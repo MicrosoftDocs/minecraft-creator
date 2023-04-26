@@ -10,10 +10,10 @@ description: Description and values of the Boolean enum
 Boolean value
 
 ## Values
-- `false`
-false
 - `true`
 true
+- `false`
+false
 
 ## References
 The following commands reference this enum:

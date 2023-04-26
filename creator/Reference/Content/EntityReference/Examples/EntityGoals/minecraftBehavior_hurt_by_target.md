@@ -15,6 +15,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 | alert_same_type | false | Boolean| If true, nearby mobs of the same type will be alerted about the damage. |
 | [entity_types](../Definitions/NestedTables/entity_types.md) | *not set* | JSON Object | List of entity types that this mob can target if they hurt their owner.|
+|cooldown | 0.0 | Decimal |The amount of time in seconds that the mob has to wait before selecting a target of the same type again. |
 | filters|*not set*| Minecraft Filter| Conditions that make this entry in the list valid |
 | max_dist| 16| Decimal| Maximum distance this mob can be away to be a valid choice |
 | must_see| false| Boolean| If true, the mob has to be visible to be a valid choice |

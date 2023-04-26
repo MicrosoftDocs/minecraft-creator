@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:inside_block_notifier
 ms.prod: gaming
 ---
@@ -13,7 +13,7 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| block_list| *not set*| List| List of blocks, with certain block states, that we are monitoring to see if the entity is inside. |
+| block_list| *not set*| List| List of blocks, with certain block states, that are monitored to see if the entity is inside. |
 
 ## Example
 

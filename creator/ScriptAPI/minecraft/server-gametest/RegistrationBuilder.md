@@ -25,13 +25,13 @@ A utility class to set GameTest parameters for a test. Methods can be chained to
 
 ### **batch**
 `
-batch(batchName: ('night'|'day')): RegistrationBuilder
+batch(batchName: string): RegistrationBuilder
 `
 
 Sets the batch for the test to run in.
 
 #### **Parameters**
-- **batchName**: `'night'`, `'day'`
+- **batchName**: *string*
   
   Name of the batch for the test.
 

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:trust
 
-`minecraft:trust` allows this entity to trust one or more players.
+`minecraft:trust` compels the entity to trust one or more players.
 
 ## Example
 

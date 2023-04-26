@@ -26,13 +26,6 @@ The chance of taming the entity with each item use between 0.0 and 1.0, where 1.
 
 Type: *number*
 
-### **tameEvent**
-`read-only tameEvent: Trigger;`
-
-Event to run when this entity becomes tamed.
-
-Type: [*Trigger*](Trigger.md)
-
 ## Methods
 - [getTameItems](#gettameitems)
 - [tame](#tame)

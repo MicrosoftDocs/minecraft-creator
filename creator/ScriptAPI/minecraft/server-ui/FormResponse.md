@@ -13,6 +13,9 @@ description: Contents of the @minecraft/server-ui.FormResponse class.
 - [*ActionFormResponse*](ActionFormResponse.md)
 - [*MessageFormResponse*](MessageFormResponse.md)
 - [*ModalFormResponse*](ModalFormResponse.md)
+- [*ActionFormResponse*](ActionFormResponse.md)
+- [*MessageFormResponse*](MessageFormResponse.md)
+- [*ModalFormResponse*](ModalFormResponse.md)
 
 Base type for a form response.
 
@@ -25,9 +28,15 @@ Contains additional details as to why a form was canceled.
 
 Type: [*FormCancelationReason*](FormCancelationReason.md)
 
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **canceled**
 `read-only canceled: boolean;`
 
 If true, the form was canceled by the player (e.g., they selected the pop-up X close button).
 
 Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.

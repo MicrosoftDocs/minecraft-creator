@@ -17,9 +17,13 @@ description: Contents of the @minecraft/server.Component class.
 - [*EntityComponent*](EntityComponent.md)
 - [*ItemComponent*](ItemComponent.md)
 
+Base class for downstream Component implementations.
+
 ## Properties
 
 ### **typeId**
 `read-only typeId: string;`
+
+Identifier of the component.
 
 Type: *string*

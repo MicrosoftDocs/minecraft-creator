@@ -14,7 +14,7 @@ ms.prod: gaming
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
 |max| *not set*| Integer| The maximum player saturation value. |
-|value| *not set*| Integer|  The initial value of the player saturation. |
+|value| *not set*| Integer|  The initial value of player saturation. |
 
 ## Example
 

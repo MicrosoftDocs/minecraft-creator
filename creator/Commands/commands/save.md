@@ -36,9 +36,9 @@ An `enum` of either `disk` to save structure to the world database which persist
 Default: `memory`.
 
 #### Values
-- `hold`
-Hold
 - `query`
 Query
+- `hold`
+Hold
 - `resume`
 Resume

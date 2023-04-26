@@ -21,9 +21,13 @@ description: Contents of the @minecraft/server.BlockLiquidContainerComponent cla
 - [*BlockSnowContainerComponent*](BlockSnowContainerComponent.md)
 - [*BlockWaterContainerComponent*](BlockWaterContainerComponent.md)
 
+For blocks that can contain a liquid (e.g., a cauldron), this is a base component for liquid containers. 
+
 ## Properties
 
 ### **fillLevel**
 `fillLevel: number;`
+
+Relative fill level of the liquid container.
 
 Type: *number*

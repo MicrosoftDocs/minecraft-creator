@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: mikeam
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:buoyant
 ms.prod: gaming
 ---
@@ -14,12 +14,12 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |apply_gravity| true| Boolean|  Applies gravity each tick. Causes more of a wave simulation, but will cause more gravity to be applied outside liquids. |
-|base_buoyancy| 1.0| Decimal| Base buoyancy used to calculate how much will a mob float. |
-|big_wave_probability| 0.03| Decimal| Probability for a big wave hitting the entity. Only used if `simulate_waves` is true. |
+|base_buoyancy| 1.0| Decimal| Base buoyancy used to calculate how much the entity will float. |
+|big_wave_probability| 0.03| Decimal| Probability of a big wave hitting the entity. Only used if `simulate_waves` is true. |
 |big_wave_speed| 10.0| Decimal|  Multiplier for the speed to make a big wave. Triggered depending on `big_wave_probability`. |
-|drag_down_on_buoyancy_removed| 0.0| Decimal| How much an actor will be dragged down when the Buoyancy Component is removed. |
+|drag_down_on_buoyancy_removed| 0.0| Decimal| How much an actor will be dragged down when the buoyancy component is removed. |
 |liquid_blocks|*not set* | List| List of blocks this entity can float on. **Must be a liquid block.** |
-|simulate_waves| true| Boolean| Should the movement simulate waves going through. |
+|simulate_waves| true| Boolean| If true, the movement simulates waves going through. |
 
 ## Example
 

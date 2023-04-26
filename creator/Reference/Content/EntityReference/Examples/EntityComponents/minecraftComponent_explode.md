@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:explode
 ms.prod: gaming
 ---
@@ -17,7 +17,7 @@ ms.prod: gaming
 | causes_fire| False| Boolean| If true, blocks in the explosion radius will be set on fire. |
 | destroy_affected_by_griefing| False| Boolean| If true, whether the explosion breaks blocks is affected by the mob griefing game rule. |
 | fire_affected_by_griefing| False| Boolean| If true, whether the explosion causes fire is affected by the mob griefing game rule. |
-| fuse_length| [0.0, 0.0]| Range [a, b]| The range for the random amount of time the fuse will be lit before exploding, a negative value means the explosion will be immediate. |
+| fuse_length| [0.0, 0.0]| Range [a, b]| The range for the random amount of time the fuse will be lit before exploding; a negative value means the explosion will be immediate. |
 | fuse_lit| False| Boolean| If true, the fuse is already lit when this component is added to the entity. |
 | max_resistance| 3.40282e+38| Decimal| A blocks explosion resistance will be capped at this value when an explosion occurs. |
 | power| 3| Decimal| The radius of the explosion in blocks and the amount of damage the explosion deals. |

@@ -12,8 +12,6 @@ description: Contents of the .DyeColor enumeration.
 > [!CAUTION]
 > This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-All the dye types supported by scripting
-
 ## Constants
 ### **black**
 `black = "black"`

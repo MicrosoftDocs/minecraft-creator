@@ -1,19 +1,19 @@
 ---
 author: mammerla
-ms.author: mikeam
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:break_blocks
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:break_blocks
 
-`minecraft:break_blocks` specifies the blocks that the entity can break as it moves around.
+`minecraft:break_blocks` specifies which blocks the entity can break as it moves.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|breakable_blocks|*not set* | List|  A list of the blocks that can be broken as this entity moves around |
+|breakable_blocks|*not set* | List|  A list of the blocks that can be broken as the entity moves |
 
 ## Example
 

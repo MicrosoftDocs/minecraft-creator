@@ -13,7 +13,7 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:-----------|:-----------|:-----------|:-----------|
-| value| *not set*| Decimal| Movement speed of entity under water. |
+| value| *not set*| Decimal| Movement speed of the entity under water. |
 
 ## Example
 

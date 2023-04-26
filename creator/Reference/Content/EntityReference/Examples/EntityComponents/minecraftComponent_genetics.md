@@ -1,13 +1,13 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:genetics
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:genetics
 
-`minecraft:genetics` defines the way a mob's genes and alleles are passed on to its offspring, and how those traits manifest in the child. Compatible parent genes are crossed together, the alleles are handed down from the parents to the child, and any matching genetic variants fire off JSON events to modify the child and express the traits.
+`minecraft:genetics` defines the way a mob's genes and alleles are passed on to its offspring, and how those traits manifest in the child. Compatible parent genes are crossed together, the alleles are handed down from the parents to the child, and any matching genetic variants initiate JSON events to modify the child and express the traits.
 
 ## Parameters
 
@@ -23,7 +23,7 @@ ms.prod: gaming
 | Name| Default Value| Type| Description |
 |:----------|:----------|:----------|:----------|
 | allele_range| *not set*| Integer| The range of positive integer allele values for this gene. Spawned mobs will have a random number in this range assigned to them.|
-| genetic_variants| *not set*| List| The list of genetic variants for this gene. These check for particular allele combinations and fire events when all of them are satisfied.|
+| genetic_variants| *not set*| List| The list of genetic variants for this gene. These check for particular allele combinations and initiate events when all of them are satisfied.|
 | name| *not set*| String| The name of the gene. |
 
 #### allele_range
@@ -37,7 +37,7 @@ ms.prod: gaming
 
 #### genetic_variants
 
-`genetic_variants` is an decimal defined by five parameters. Each item has the following properties:
+`genetic_variants` is a decimal defined by five parameters. Each item has the following properties:
 
 | Name| Default Value| Type| Description |
 |:-----------|:-----------|:-----------|:-----------|

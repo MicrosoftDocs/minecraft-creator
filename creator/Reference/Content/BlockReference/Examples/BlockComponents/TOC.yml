@@ -26,13 +26,11 @@
    href: minecraftBlock_map_color.md
  - name: material_instances
    href: minecraftBlock_material_instances.md
- - name: part_visibility
-   href: minecraftBlock_part_visibility.md
  - name: placement_filter
    href: minecraftBlock_placement_filter.md
- - name: rotation
-   href: minecraftBlock_rotation.md
  - name: selection_box
    href: minecraftBlock_selection_box.md
+ - name: transformation
+   href: minecraftBlock_transformation.md
  - name: unit_cube
    href: minecraftBlock_unit_cube.md

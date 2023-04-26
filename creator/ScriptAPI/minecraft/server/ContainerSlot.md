@@ -105,6 +105,8 @@ Type: *string*
 - [clone](#clone)
 - [getItem](#getitem)
 - [getLore](#getlore)
+- [getTags](#gettags)
+- [hasTag](#hastag)
 - [isStackableWith](#isstackablewith)
 - [setCanDestroy](#setcandestroy)
 - [setCanPlaceOn](#setcanplaceon)
@@ -125,10 +127,10 @@ Creates an exact copy of the item stack, including any custom data or properties
 
 ### **getItem**
 `
-getItem(): ItemStack
+getItem(): ItemStack | undefined
 `
 
-#### **Returns** [*ItemStack*](ItemStack.md)
+#### **Returns** [*ItemStack*](ItemStack.md) | *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -144,6 +146,29 @@ Returns the lore value - a secondary display string - for an ItemStack.
 
 > [!WARNING]
 > Throws if the slot's container is invalid.
+
+### **getTags**
+`
+getTags(): string[]
+`
+
+#### **Returns** *string*[]
+
+> [!WARNING]
+> This function can throw errors.
+
+### **hasTag**
+`
+hasTag(tag: string): boolean
+`
+
+#### **Parameters**
+- **tag**: *string*
+
+#### **Returns** *boolean*
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **isStackableWith**
 `

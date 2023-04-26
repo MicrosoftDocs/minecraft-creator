@@ -22,15 +22,13 @@ Represents a fluid container block that currently contains a potion.
 
 ### **setPotionType**
 `
-setPotionType(item: ItemStack): void
+setPotionType(itemStack: ItemStack): void
 `
 
 Sets the potion type based on an item stack.
 
 #### **Parameters**
-- **item**: [*ItemStack*](ItemStack.md)
-  
-  Potion to use as the type of potion for this potion container.
+- **itemStack**: [*ItemStack*](ItemStack.md)
 
 > [!WARNING]
 > This function can throw errors.

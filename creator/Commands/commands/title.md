@@ -63,9 +63,9 @@ A `plain text` `string`  for the title.
 Enum of Title Sets
 
 #### Values
-- `actionbar`
-Action Bar
-- `subtitle`
-Subtitle
 - `title`
 Title
+- `subtitle`
+Subtitle
+- `actionbar`
+Action Bar

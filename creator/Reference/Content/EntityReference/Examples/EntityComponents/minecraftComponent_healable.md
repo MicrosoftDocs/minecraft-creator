@@ -1,21 +1,21 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:healable
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:healable
 
-`minecraft:healable` defines the interactions with this entity for healing it.
+`minecraft:healable` defines the interactions with the entity for healing it.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| filters| *not set*| Minecraft Filter| The filter group that defines the conditions for using this item to heal the entity. |
-| force_use| False| Boolean| Determines if item can be used regardless of entity being at full health. |
-| items| *not set*| Array| The array of items that can be used to heal this entity.|
+| filters| *not set*| Minecraft Filter| The filter group that defines conditions for using this item to heal the entity. |
+| force_use| False| Boolean| Determines if an item can be used regardless of entity being at full health. |
+| items| *not set*| Array| The array of items that can be used to heal the entity.|
 
 ### items
 
@@ -23,8 +23,8 @@ ms.prod: gaming
 
 | Name| Default Value| Type| Description |
 |:-----------|:-----------|:-----------|:-----------|
-| heal_amount| 1| Integer| The amount of health this entity gains when fed this item. |
-| item| *not set*| String| Item identifier that can be used to heal this entity. |
+| heal_amount| 1| Integer| The amount of health the entity gains when fed this item. |
+| item| *not set*| String| Item identifier that can be used to heal the entity. |
 
 ## Example
 

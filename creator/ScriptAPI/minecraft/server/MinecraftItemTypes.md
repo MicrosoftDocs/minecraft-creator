@@ -40,10 +40,20 @@ Represents an item that can place an acacia door within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **acaciaFence**
+`static read-only acaciaFence: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **acaciaFenceGate**
 `static read-only acaciaFenceGate: ItemType;`
 
 Represents an item that can place an acacia fence gate within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **acaciaHangingSign**
+`static read-only acaciaHangingSign: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -132,6 +142,11 @@ Represents an item that can place andesite stairs within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **anglerPotterySherd**
+`static read-only anglerPotterySherd: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **anvil**
 `static read-only anvil: ItemType;`
 
@@ -144,8 +159,18 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **archerPotterySherd**
+`static read-only archerPotterySherd: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **armorStand**
 `static read-only armorStand: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **armsUpPotterySherd**
+`static read-only armsUpPotterySherd: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -194,6 +219,91 @@ Type: [*ItemType*](ItemType.md)
 `static read-only bamboo: ItemType;`
 
 Represents an item that can place a bamboo tree within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **bambooBlock**
+`static read-only bambooBlock: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **bambooButton**
+`static read-only bambooButton: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **bambooChestRaft**
+`static read-only bambooChestRaft: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **bambooDoor**
+`static read-only bambooDoor: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **bambooFence**
+`static read-only bambooFence: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **bambooFenceGate**
+`static read-only bambooFenceGate: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **bambooHangingSign**
+`static read-only bambooHangingSign: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **bambooMosaic**
+`static read-only bambooMosaic: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **bambooMosaicSlab**
+`static read-only bambooMosaicSlab: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **bambooMosaicStairs**
+`static read-only bambooMosaicStairs: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **bambooPlanks**
+`static read-only bambooPlanks: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **bambooPressurePlate**
+`static read-only bambooPressurePlate: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **bambooRaft**
+`static read-only bambooRaft: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **bambooSign**
+`static read-only bambooSign: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **bambooSlab**
+`static read-only bambooSlab: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **bambooStairs**
+`static read-only bambooStairs: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **bambooTrapdoor**
+`static read-only bambooTrapdoor: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -333,10 +443,20 @@ Represents an item that can place a birch door within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **birchFence**
+`static read-only birchFence: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **birchFenceGate**
 `static read-only birchFenceGate: ItemType;`
 
 Represents an item that can place a birch fence gate within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **birchHangingSign**
+`static read-only birchHangingSign: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -377,6 +497,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only blackCandle: ItemType;`
 
 Represents an item that can place a black candle within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **blackCarpet**
+`static read-only blackCarpet: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -425,6 +550,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **bladePotterySherd**
+`static read-only bladePotterySherd: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **blastFurnace**
 `static read-only blastFurnace: ItemType;`
 
@@ -451,6 +581,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only blueCandle: ItemType;`
 
 Represents an item that can place a blue candle within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **blueCarpet**
+`static read-only blueCarpet: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -534,8 +669,18 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **brainCoral**
+`static read-only brainCoral: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **bread**
 `static read-only bread: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **brewerPotterySherd**
+`static read-only brewerPotterySherd: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -572,6 +717,11 @@ Represents an item that can place a brown candle within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **brownCarpet**
+`static read-only brownCarpet: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **brownDye**
 `static read-only brownDye: ItemType;`
 
@@ -603,6 +753,16 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **brush**
+`static read-only brush: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **bubbleCoral**
+`static read-only bubbleCoral: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **bucket**
 `static read-only bucket: ItemType;`
 
@@ -612,6 +772,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only buddingAmethyst: ItemType;`
 
 Represents an item that can place a block of budding amethyst within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **burnPotterySherd**
+`static read-only burnPotterySherd: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -633,6 +798,16 @@ Type: [*ItemType*](ItemType.md)
 `static read-only calcite: ItemType;`
 
 Represents an item that can place a calcite block within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **calibratedSculkSensor**
+`static read-only calibratedSculkSensor: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **camelSpawnEgg**
+`static read-only camelSpawnEgg: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -737,6 +912,91 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **cherryBoat**
+`static read-only cherryBoat: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **cherryButton**
+`static read-only cherryButton: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **cherryChestBoat**
+`static read-only cherryChestBoat: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **cherryDoor**
+`static read-only cherryDoor: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **cherryFence**
+`static read-only cherryFence: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **cherryFenceGate**
+`static read-only cherryFenceGate: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **cherryHangingSign**
+`static read-only cherryHangingSign: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **cherryLeaves**
+`static read-only cherryLeaves: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **cherryLog**
+`static read-only cherryLog: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **cherryPlanks**
+`static read-only cherryPlanks: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **cherryPressurePlate**
+`static read-only cherryPressurePlate: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **cherrySapling**
+`static read-only cherrySapling: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **cherrySign**
+`static read-only cherrySign: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **cherrySlab**
+`static read-only cherrySlab: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **cherryStairs**
+`static read-only cherryStairs: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **cherryTrapdoor**
+`static read-only cherryTrapdoor: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **cherryWood**
+`static read-only cherryWood: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **chest**
 `static read-only chest: ItemType;`
 
@@ -761,6 +1021,11 @@ Type: [*ItemType*](ItemType.md)
 
 ### **chickenSpawnEgg**
 `static read-only chickenSpawnEgg: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **chiseledBookshelf**
+`static read-only chiseledBookshelf: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -837,6 +1102,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only coalOre: ItemType;`
 
 Represents an item that can place a block with embedded coal ore within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **coastArmorTrimSmithingTemplate**
+`static read-only coastArmorTrimSmithingTemplate: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -1122,6 +1392,11 @@ Represents an item that can place a crimson fungus within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **crimsonHangingSign**
+`static read-only crimsonHangingSign: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **crimsonHyphae**
 `static read-only crimsonHyphae: ItemType;`
 
@@ -1230,6 +1505,11 @@ Represents an item that can place a cyan-colored candle within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **cyanCarpet**
+`static read-only cyanCarpet: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **cyanDye**
 `static read-only cyanDye: ItemType;`
 
@@ -1244,6 +1524,11 @@ Type: [*ItemType*](ItemType.md)
 
 ### **cyanWool**
 `static read-only cyanWool: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **dangerPotterySherd**
+`static read-only dangerPotterySherd: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -1271,10 +1556,20 @@ Represents an item that can place a dark oak door within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **darkOakFence**
+`static read-only darkOakFence: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **darkOakFenceGate**
 `static read-only darkOakFenceGate: ItemType;`
 
 Represents an item that can place a dark oak fence gate within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **darkOakHangingSign**
+`static read-only darkOakHangingSign: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -1325,10 +1620,40 @@ Represents an item that can place a daylight detector within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **deadBrainCoral**
+`static read-only deadBrainCoral: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **deadBubbleCoral**
+`static read-only deadBubbleCoral: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **deadbush**
 `static read-only deadbush: ItemType;`
 
 Represents an item that can place a dead bush within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **deadFireCoral**
+`static read-only deadFireCoral: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **deadHornCoral**
+`static read-only deadHornCoral: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **deadTubeCoral**
+`static read-only deadTubeCoral: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **decoratedPot**
+`static read-only decoratedPot: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -1627,6 +1952,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **duneArmorTrimSmithingTemplate**
+`static read-only duneArmorTrimSmithingTemplate: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **dye**
 `static read-only dye: ItemType;`
 
@@ -1775,6 +2105,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **explorerPotterySherd**
+`static read-only explorerPotterySherd: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **exposedCopper**
 `static read-only exposedCopper: ItemType;`
 
@@ -1800,6 +2135,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only exposedCutCopperStairs: ItemType;`
 
 Represents an item that can place a set of exposed cut copper stairs within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **eyeArmorTrimSmithingTemplate**
+`static read-only eyeArmorTrimSmithingTemplate: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -1846,6 +2186,11 @@ Type: [*ItemType*](ItemType.md)
 
 ### **fireCharge**
 `static read-only fireCharge: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **fireCoral**
+`static read-only fireCoral: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -1909,6 +2254,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only frame: ItemType;`
 
 Represents an item that can place a frame within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **friendPotterySherd**
+`static read-only friendPotterySherd: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -2159,6 +2509,11 @@ Represents an item that can place a gray-colored candle within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **grayCarpet**
+`static read-only grayCarpet: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **grayDye**
 `static read-only grayDye: ItemType;`
 
@@ -2180,6 +2535,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only greenCandle: ItemType;`
 
 Represents an item that can place a green-colored candle within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **greenCarpet**
+`static read-only greenCarpet: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -2238,8 +2598,18 @@ Represents an item that can place a block of hay within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **heartbreakPotterySherd**
+`static read-only heartbreakPotterySherd: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **heartOfTheSea**
 `static read-only heartOfTheSea: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **heartPotterySherd**
+`static read-only heartPotterySherd: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -2291,8 +2661,23 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **hornCoral**
+`static read-only hornCoral: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **horseSpawnEgg**
 `static read-only horseSpawnEgg: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **hostArmorTrimSmithingTemplate**
+`static read-only hostArmorTrimSmithingTemplate: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **howlPotterySherd**
+`static read-only howlPotterySherd: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -2458,10 +2843,20 @@ Represents an item that can place a jungle wood door within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **jungleFence**
+`static read-only jungleFence: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **jungleFenceGate**
 `static read-only jungleFenceGate: ItemType;`
 
 Represents an item that can place a jungle wood fence gate within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **jungleHangingSign**
+`static read-only jungleHangingSign: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -2627,6 +3022,11 @@ Represents an item that can place a light blue candle within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **lightBlueCarpet**
+`static read-only lightBlueCarpet: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **lightBlueDye**
 `static read-only lightBlueDye: ItemType;`
 
@@ -2648,6 +3048,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only lightGrayCandle: ItemType;`
 
 Represents an item that can place a light gray candle within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **lightGrayCarpet**
+`static read-only lightGrayCarpet: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -2679,6 +3084,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only limeCandle: ItemType;`
 
 Represents an item that can place a lime candle within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **limeCarpet**
+`static read-only limeCarpet: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -2756,6 +3166,11 @@ Represents an item that can place a magenta candle within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **magentaCarpet**
+`static read-only magentaCarpet: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **magentaDye**
 `static read-only magentaDye: ItemType;`
 
@@ -2817,6 +3232,11 @@ Type: [*ItemType*](ItemType.md)
 
 ### **mangroveFenceGate**
 `static read-only mangroveFenceGate: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **mangroveHangingSign**
+`static read-only mangroveHangingSign: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -2909,6 +3329,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **minerPotterySherd**
+`static read-only minerPotterySherd: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **mobSpawner**
 `static read-only mobSpawner: ItemType;`
 
@@ -2965,6 +3390,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only mossyStoneBrickStairs: ItemType;`
 
 Represents an item that can place a set of mossy stone brick stairs within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **mournerPotterySherd**
+`static read-only mournerPotterySherd: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -3060,6 +3490,11 @@ Type: [*ItemType*](ItemType.md)
 
 ### **musicDiscPigstep**
 `static read-only musicDiscPigstep: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **musicDiscRelic**
+`static read-only musicDiscRelic: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -3202,6 +3637,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **netheriteUpgradeSmithingTemplate**
+`static read-only netheriteUpgradeSmithingTemplate: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **netherrack**
 `static read-only netherrack: ItemType;`
 
@@ -3259,6 +3699,16 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **oakFence**
+`static read-only oakFence: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **oakHangingSign**
+`static read-only oakHangingSign: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **oakLog**
 `static read-only oakLog: ItemType;`
 
@@ -3304,6 +3754,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only orangeCandle: ItemType;`
 
 Represents an item that can place an orange candle within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **orangeCarpet**
+`static read-only orangeCarpet: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -3431,6 +3886,11 @@ Represents an item that can place a pink candle within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **pinkCarpet**
+`static read-only pinkCarpet: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **pinkDye**
 `static read-only pinkDye: ItemType;`
 
@@ -3440,6 +3900,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only pinkGlazedTerracotta: ItemType;`
 
 Represents an item that can place a pink-colored block of glazed terracotta within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **pinkPetals**
+`static read-only pinkPetals: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -3455,10 +3920,25 @@ Represents an item that can place a piston within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **pitcherPlant**
+`static read-only pitcherPlant: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **pitcherPod**
+`static read-only pitcherPod: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **planks**
 `static read-only planks: ItemType;`
 
 Represents an item that can place a set of planks within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **plentyPotterySherd**
+`static read-only plentyPotterySherd: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -3668,6 +4148,11 @@ Represents an item that can place a set of prismarine stairs within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **prizePotterySherd**
+`static read-only prizePotterySherd: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **pufferfish**
 `static read-only pufferfish: ItemType;`
 
@@ -3704,6 +4189,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only purpleCandle: ItemType;`
 
 Represents an item that can place a purple candle within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **purpleCarpet**
+`static read-only purpleCarpet: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -3803,6 +4293,11 @@ Represents an item that can place a set of rails within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **raiserArmorTrimSmithingTemplate**
+`static read-only raiserArmorTrimSmithingTemplate: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **ravagerSpawnEgg**
 `static read-only ravagerSpawnEgg: ItemType;`
 
@@ -3853,6 +4348,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only redCandle: ItemType;`
 
 Represents an item that can place a red candle within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **redCarpet**
+`static read-only redCarpet: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -3979,6 +4479,11 @@ Represents an item that can place a respawn anchor within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **ribArmorTrimSmithingTemplate**
+`static read-only ribArmorTrimSmithingTemplate: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **rottenFlesh**
 `static read-only rottenFlesh: ItemType;`
 
@@ -4090,6 +4595,21 @@ Represents an item that can place a seapickle within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **sentryArmorTrimSmithingTemplate**
+`static read-only sentryArmorTrimSmithingTemplate: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **shaperArmorTrimSmithingTemplate**
+`static read-only shaperArmorTrimSmithingTemplate: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **sheafPotterySherd**
+`static read-only sheafPotterySherd: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **shears**
 `static read-only shears: ItemType;`
 
@@ -4097,6 +4617,11 @@ Type: [*ItemType*](ItemType.md)
 
 ### **sheepSpawnEgg**
 `static read-only sheepSpawnEgg: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **shelterPotterySherd**
+`static read-only shelterPotterySherd: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -4126,6 +4651,11 @@ Type: [*ItemType*](ItemType.md)
 
 ### **shulkerSpawnEgg**
 `static read-only shulkerSpawnEgg: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **silenceArmorTrimSmithingTemplate**
+`static read-only silenceArmorTrimSmithingTemplate: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -4160,6 +4690,11 @@ Type: [*ItemType*](ItemType.md)
 
 ### **skullBannerPattern**
 `static read-only skullBannerPattern: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **skullPotterySherd**
+`static read-only skullPotterySherd: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -4243,6 +4778,26 @@ Represents an item that can place a smooth stone block within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **snifferEgg**
+`static read-only snifferEgg: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **snifferSpawnEgg**
+`static read-only snifferSpawnEgg: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **snortPotterySherd**
+`static read-only snortPotterySherd: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **snoutArmorTrimSmithingTemplate**
+`static read-only snoutArmorTrimSmithingTemplate: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **snow**
 `static read-only snow: ItemType;`
 
@@ -4317,6 +4872,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **spireArmorTrimSmithingTemplate**
+`static read-only spireArmorTrimSmithingTemplate: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **splashPotion**
 `static read-only splashPotion: ItemType;`
 
@@ -4360,10 +4920,20 @@ Represents an item that can place a spruce wood door within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **spruceFence**
+`static read-only spruceFence: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **spruceFenceGate**
 `static read-only spruceFenceGate: ItemType;`
 
 Represents an item that can place a spruce wood fence gate within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **spruceHangingSign**
+`static read-only spruceHangingSign: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -4559,10 +5129,25 @@ Represents an item that can place a stripped acacia log within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **strippedBambooBlock**
+`static read-only strippedBambooBlock: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **strippedBirchLog**
 `static read-only strippedBirchLog: ItemType;`
 
 Represents an item that can place a stripped birch log within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **strippedCherryLog**
+`static read-only strippedCherryLog: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **strippedCherryWood**
+`static read-only strippedCherryWood: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -4656,6 +5241,16 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **suspiciousGravel**
+`static read-only suspiciousGravel: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **suspiciousSand**
+`static read-only suspiciousSand: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **suspiciousStew**
 `static read-only suspiciousStew: ItemType;`
 
@@ -4690,6 +5285,11 @@ Represents an item that can place a target within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **tideArmorTrimSmithingTemplate**
+`static read-only tideArmorTrimSmithingTemplate: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **tintedGlass**
 `static read-only tintedGlass: ItemType;`
 
@@ -4713,6 +5313,16 @@ Type: [*ItemType*](ItemType.md)
 `static read-only torch: ItemType;`
 
 Represents an item that can place a torch within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **torchflower**
+`static read-only torchflower: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **torchflowerSeeds**
+`static read-only torchflowerSeeds: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -4767,6 +5377,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **tubeCoral**
+`static read-only tubeCoral: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **tuff**
 `static read-only tuff: ItemType;`
 
@@ -4810,6 +5425,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **vexArmorTrimSmithingTemplate**
+`static read-only vexArmorTrimSmithingTemplate: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **vexSpawnEgg**
 `static read-only vexSpawnEgg: ItemType;`
 
@@ -4834,6 +5454,11 @@ Type: [*ItemType*](ItemType.md)
 
 ### **wanderingTraderSpawnEgg**
 `static read-only wanderingTraderSpawnEgg: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **wardArmorTrimSmithingTemplate**
+`static read-only wardArmorTrimSmithingTemplate: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -4879,6 +5504,11 @@ Type: [*ItemType*](ItemType.md)
 
 ### **warpedFungusOnAStick**
 `static read-only warpedFungusOnAStick: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **warpedHangingSign**
+`static read-only warpedHangingSign: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -5081,6 +5711,11 @@ Represents an item that can place a set of waxed weathered cut copper stairs wit
 
 Type: [*ItemType*](ItemType.md)
 
+### **wayfinderArmorTrimSmithingTemplate**
+`static read-only wayfinderArmorTrimSmithingTemplate: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **weatheredCopper**
 `static read-only weatheredCopper: ItemType;`
 
@@ -5142,6 +5777,11 @@ Represents an item that can place a white candle within Minecraft.
 
 Type: [*ItemType*](ItemType.md)
 
+### **whiteCarpet**
+`static read-only whiteCarpet: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **whiteDye**
 `static read-only whiteDye: ItemType;`
 
@@ -5156,6 +5796,11 @@ Type: [*ItemType*](ItemType.md)
 
 ### **whiteWool**
 `static read-only whiteWool: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **wildArmorTrimSmithingTemplate**
+`static read-only wildArmorTrimSmithingTemplate: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -5262,6 +5907,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only yellowCandle: ItemType;`
 
 Represents an item that can place a yellow candle within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **yellowCarpet**
+`static read-only yellowCarpet: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 

@@ -13,7 +13,7 @@ ms.prod: gaming
 
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
-|max| *not set*| Integer| The maximum player level value of this entity. |
+|max| *not set*| Integer| The maximum player level value of the entity. |
 |value| *not set*| Integer|  The initial value of the player level. |
 
 ## Example

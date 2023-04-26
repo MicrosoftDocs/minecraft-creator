@@ -7,15 +7,15 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:peek
 
-`minecraft:peek` defines the entity's 'peek' behavior, defining the events that should be called during it.
+`minecraft:peek` defines the entity's 'peek' behavior, and the events that should be called during it.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| on_close| *not set*| JSON Object | Event to call when the entity is done peeking. |
-| on_open| *not set*| JSON Object | Event to call when the entity starts peeking. |
-| on_target_open| *not set*| JSON Object | Event to call when the entity's target entity starts peeking. |
+| on_close| *not set*| JSON Object | Event to initiate when the entity is done peeking. |
+| on_open| *not set*| JSON Object | Event to initiate when the entity starts peeking. |
+| on_target_open| *not set*| JSON Object | Event to initiate when the entity's target entity starts peeking. |
 
 ## Example
 

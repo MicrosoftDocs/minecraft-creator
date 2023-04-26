@@ -12,9 +12,13 @@ description: Contents of the @minecraft/server.ScriptEventMessageFilterOptions c
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Contains additional options for registering a script event event callback.
+
 ## Properties
 
 ### **namespaces**
 `namespaces: string[];`
+
+Optional list of namespaces to filter inbound script event messages.
 
 Type: *string*[]

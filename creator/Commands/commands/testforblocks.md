@@ -41,7 +41,7 @@ Optional. Either `masked` where air blocks will match any destination, or defaul
 Enum of Test for Blocks Modes
 
 #### Values
-- `all`
-All
 - `masked`
 Masked
+- `all`
+All

@@ -31,7 +31,7 @@ Creates a new DynamicPropertiesDefinition for use within a WorldInitialize event
 
 ### **defineBoolean**
 `
-defineBoolean(identifier: string): void
+defineBoolean(identifier: string): DynamicPropertiesDefinition
 `
 
 Defines a boolean dynamic property.
@@ -39,12 +39,14 @@ Defines a boolean dynamic property.
 #### **Parameters**
 - **identifier**: *string*
 
+#### **Returns** [*DynamicPropertiesDefinition*](DynamicPropertiesDefinition.md)
+
 > [!WARNING]
 > This function can throw errors.
 
 ### **defineNumber**
 `
-defineNumber(identifier: string): void
+defineNumber(identifier: string): DynamicPropertiesDefinition
 `
 
 Defines a number dynamic property.
@@ -52,12 +54,14 @@ Defines a number dynamic property.
 #### **Parameters**
 - **identifier**: *string*
 
+#### **Returns** [*DynamicPropertiesDefinition*](DynamicPropertiesDefinition.md)
+
 > [!WARNING]
 > This function can throw errors.
 
 ### **defineString**
 `
-defineString(identifier: string, maxLength: number): void
+defineString(identifier: string, maxLength: number): DynamicPropertiesDefinition
 `
 
 Defines a string dynamic property.
@@ -65,6 +69,8 @@ Defines a string dynamic property.
 #### **Parameters**
 - **identifier**: *string*
 - **maxLength**: *number*
+
+#### **Returns** [*DynamicPropertiesDefinition*](DynamicPropertiesDefinition.md)
 
 > [!WARNING]
 > This function can throw errors.
