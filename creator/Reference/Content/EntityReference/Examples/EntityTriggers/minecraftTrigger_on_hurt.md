@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:on_hurt
 ms.prod: gaming
 ---
@@ -38,7 +38,12 @@ ms.prod: gaming
 
 ### blaze
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/blaze.json" range="148-151":::
+```json
+"minecraft:on_hurt": {
+    "event": "minecraft:on_hurt_event",
+    "target": "self"
+}
+```
 
 ## Vanilla entities using `minecraft:on_hurt`
 

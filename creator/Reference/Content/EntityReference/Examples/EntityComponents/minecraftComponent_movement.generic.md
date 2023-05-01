@@ -1,19 +1,19 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:movement.generic
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:movement.generic
 
-`minecraft:movement.generic` allows a mob to fly, swim, climb, etc.
+`minecraft:movement.generic` allows an entity to fly, swim, climb, etc.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| max_turn| 30.0| Decimal| The maximum number in degrees the mob can turn per tick. |
+| max_turn| 30.0| Decimal| The maximum number in degrees the entity can turn per tick. |
 
 ## Example
 
@@ -27,7 +27,10 @@ ms.prod: gaming
 
 ### drowned
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/drowned.json" range="136-137":::
+```json
+"minecraft:movement.generic": {
+      }
+```
 
 ## Vanilla entities using `minecraft:movement.generic`
 

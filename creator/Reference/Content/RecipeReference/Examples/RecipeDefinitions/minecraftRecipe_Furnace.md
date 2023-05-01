@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Recipe Documentation - Furnace Recipe
 ms.prod: gaming
 ---

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.wither_target_highest_damage
 
-`minecraft:behavior.wither_target_highest_damage` allows an entity to focus its attacks on whichever hostile mob has dealt the most damage to it.
+`minecraft:behavior.wither_target_highest_damage` compels an entity to focus its attacks on whichever hostile mob has dealt the most damage to it.
 
 > [!NOTE]
 > This behavior can only be used by the `wither` entity type.
@@ -18,6 +18,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 |[entity_types](../Definitions/NestedTables/entity_types.md) | |JSON Object |List of entity types the wither takes into account to find who dealt the most damage to it (Please see entity_types' definition page).|
 |priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+|cooldown | 0.0 | Decimal |The amount of time in seconds that the mob has to wait before selecting a target of the same type again. |
 | filters|*not set* |Minecraft Filter|  Conditions that make this entry in the list valid |
 | max_dist| 16| Decimal| Maximum distance this mob can be away to be a valid choice |
 | must_see| false| Boolean| If true, the mob has to be visible to be a valid choice |
@@ -30,7 +31,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.wither_target_highest_damage":{
-    "priority": 3,
+    "priority": 3
 }
 ```
 
@@ -41,7 +42,7 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.wither_target_highest_damage": {
         "priority": 1
-      },
+      }
 ```
 
 ## Vanilla entities using `minecraft:behavior.wither_target_highest_damage`

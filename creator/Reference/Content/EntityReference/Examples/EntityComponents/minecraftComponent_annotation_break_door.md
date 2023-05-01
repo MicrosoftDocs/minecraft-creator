@@ -1,13 +1,13 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:annotation.break_door
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:annotation.break_door
 
-`minecraft:annotation.break_door` allows an entity to break doors, assuming that that flags set up for the component to use in navigation.
+`minecraft:annotation.break_door` compels an entity to break doors, assuming that flags are set up for the component to use in navigation.
 
 >[!IMPORTANT]
 > `minecraft:annotation.break_door` requires the entity's navigation component to have the parameter `can_break_doors` set to `true`.
@@ -17,7 +17,7 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |break_time| 12.0| Decimal| The time in seconds required to break through doors. |
-|min_difficulty| hard| String| The minimum difficulty that the world must be on for this entity to break doors. |
+|min_difficulty| hard| String| The minimum difficulty that the world must be on for the entity to break doors. |
 
 ## Example
 

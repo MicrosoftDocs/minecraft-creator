@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.controlled_by_player
 ms.prod: gaming
@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.controlled_by_player
 
-`minecraft:behavior.controlled_by_player` allows the entity to be controlled by the player using an item in the item_controllable property. On every tick, the entity will attempt to rotate towards where the player is facing with the control item whilst simultaneously moving forward.
+`minecraft:behavior.controlled_by_player` compels the entity to be controlled by the player using an item in the item_controllable property. On every tick, the entity will attempt to rotate towards where the player is facing with the control item whilst simultaneously moving forward.
 
 > [!NOTE]
 > This requires both an item_controllable quality, the minecraft:movement property and the minecraft:rideable property.

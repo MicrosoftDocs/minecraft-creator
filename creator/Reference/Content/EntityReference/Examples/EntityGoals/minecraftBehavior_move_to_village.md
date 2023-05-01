@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.move_to_village
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.move_to_village
 
-`minecraft:behavior.move_to_village` allows an entity to travel to a random x,y,z coordinate in a village.
+`minecraft:behavior.move_to_village` compels an entity to travel to a random x,y,z coordinate in a village.
 
 ## Parameters
 
@@ -34,7 +34,13 @@ ms.prod: gaming
 
 ### vindicator
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/vindicator.json" range="101-105":::
+```json
+"minecraft:behavior.move_to_village": {
+          "priority": 4,
+          "speed_multiplier": 1.0,
+          "goal_radius": 2.0
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.move_to_village`
 

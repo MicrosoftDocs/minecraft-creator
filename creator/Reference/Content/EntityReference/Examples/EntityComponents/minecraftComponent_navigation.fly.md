@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:navigation.fly
 ms.prod: gaming
 ---
@@ -63,7 +63,10 @@ ms.prod: gaming
 
 ### parrot
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/parrot.json" range="138-141":::
+```json
+"minecraft:movement.fly": {
+      }
+```
 
 ## Vanilla entities using `minecraft:navigation.fly`
 

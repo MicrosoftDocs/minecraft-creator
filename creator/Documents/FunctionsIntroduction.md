@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: Introduction to Functions
 ms.prod: gaming
@@ -22,7 +22,7 @@ In this tutorial you will learn the following:
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial:
+It's recommended that the following be completed before beginning this tutorial:
 
 - [Introduction To Behavior Packs](BehaviorPack.md)
 - [Introduction to Commands](CommandsIntroduction.md)

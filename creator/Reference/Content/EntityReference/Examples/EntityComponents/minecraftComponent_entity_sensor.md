@@ -1,24 +1,24 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:entity_sensor
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:entity_sensor
 
-`minecraft:entity_sensor` is a component that fires an event when a set of conditions are met by other entities within the defined range.
+`minecraft:entity_sensor` is a component that initiates an event when a set of conditions are met by other entities within the defined range.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| [event_filters](../FilterList.md)| *not set*|Minecraft Filter | The set of conditions that must be satisfied to fire the event.  |
-| event| *not set*|String | Event to fire when the conditions are met.|
+| [event_filters](../FilterList.md)| *not set*|Minecraft Filter | The set of conditions that must be satisfied to initiate the event.  |
+| event| *not set*|String | Event to initiate when the conditions are met.|
 | maximum_count| -1| Integer| The maximum number of entities that must pass the filter conditions for the event to send. |
 | minimum_count| 1| Integer| The minimum number of entities that must pass the filter conditions for the event to send. |
-| relative_range| True| Boolean| If true the sensor range is additive on top of the entity's size. |
-| require_all| False| Boolean| If true requires all nearby entities to pass the filter conditions for the event to send. |
+| relative_range| True| Boolean| If true, the sensor range is additive on top of the entity's size. |
+| require_all| False| Boolean| If true, requires all nearby entities to pass the filter conditions for the event to send. |
 | sensor_range| 10| Decimal| The maximum distance another entity can be from this and have the filters checked against it. |
 
 ## Example
@@ -39,7 +39,25 @@ ms.prod: gaming
 
 ### pufferfish
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/pufferfish.json" range="15-31":::
+```json
+"minecraft:entity_sensor": {
+          "sensor_range": 2.5,
+          "relative_range": false,
+          "minimum_count": 1,
+          "event_filters": {
+            "any_of": [
+              { "test": "is_family", "subject": "other", "value": "mob" },
+              { "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "none_of": 
+                  { "test": "has_ability", "subject": "other", "value": "instabuild" } 
+                }
+              ]}
+            ]
+          },
+          "event": "minecraft:start_half_puff"
+        }
+```
 
 ## Vanilla entities using `minecraft:entity_sensor`
 

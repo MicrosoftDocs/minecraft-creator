@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: "Schema Documentation - chance_information:1.14.0"
 ms.prod: gaming
 ---
@@ -11,7 +11,7 @@ This schema corresponds to how chance and probability are calculated in JSON fil
 
 ```json
 chance_information:1.14.0:{
-    int "numerator"<1-*>
+    int "numerator"<0-*>
     int "denominator"<1-*>
 }
 ```

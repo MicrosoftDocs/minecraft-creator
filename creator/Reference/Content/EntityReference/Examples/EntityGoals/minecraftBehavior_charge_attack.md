@@ -1,13 +1,13 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.charge_attack
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.charge_attack
 
-`minecraft:behavior.charge_attack` allows this entity to damage a target by using a running attack.
+`minecraft:behavior.charge_attack` compels an entity to damage a target by using a running attack.
 
 ## Parameters
 
@@ -27,7 +27,6 @@ ms.prod: gaming
     "min_distance": 2,
     "speed_multiplier": 1,
     "success_rate": 0.25
-
 }
 ```
 

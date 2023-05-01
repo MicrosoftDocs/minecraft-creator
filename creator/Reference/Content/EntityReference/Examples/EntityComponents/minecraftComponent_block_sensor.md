@@ -1,21 +1,21 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:block_sensor
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:block_sensor
 
-`minecraft:block_sensor` will fire off a specified event when a block in the block list is broken within the sensor range.
+`minecraft:block_sensor` initiates a specified event when a block in the block list is broken within the sensor range.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|on_break |*not set* | List| List of blocks to watch for being broken to fire off a specified event. If a block is in multiple lists, multiple events will fire.|
-|sensor_radius |16.0 | Decimal | The maximum radial distance in which a specified block can be detected. The biggest radius is 32.0. |
-| sources| []| List | List of sources that break the block to listen for. If none are specified, all block breaks will be detected. |
+|on_break |*not set* | List| List of applicable blocks to initiate a specified event. If a block is in multiple lists, multiple events will occur.|
+|sensor_radius |16.0 | Decimal | The maximum radial distance in which a specified block can be detected. The largest radius is 32.0. |
+| sources| []| List | List of block breaking sources that will initiate the event. If none are specified, all block breaks will initiate. |
 
 ### on_break
 

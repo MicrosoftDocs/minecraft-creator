@@ -1,6 +1,6 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:projectile
 ms.prod: gaming
 ---
@@ -47,12 +47,11 @@ ms.prod: gaming
 
 ## on_hit parameters
 
-
 |Name |Default Value  |Type  |Description|
 :----------|:----------|:----------|:----------
 |catch_fire| false | Boolean| Determines if the struck object is set on fire.|
 |definition_event| *not set* | event | The event that is triggered on a hit. See the [table below for all definition event parameters](#definition_event-parameters).|
-|douse_fire| false|Boolean| If the target is on fire, then douse hte fire.|
+|douse_fire| false|Boolean| If the target is on fire, then douse the fire.|
 |freeze_on_hit|*not set*|JSON Object| An area of entities that is frozen to block on hits. Has shape of either sphere or cube, snap_to_block boolean ,and size decimal properties.|
 |grant_xp|*not set*|JSON Object|Grants XP on hit. Has minXP for minimum XP granted, maxXp for maximum, or simply flat xp properties.|
 |hurt_owner|*not set* |JSON Object| Determines if the owner of the entity is hurt on hit. Contains decimal owner_damage, knockback boolean, and ignite boolean.|
@@ -64,18 +63,17 @@ ms.prod: gaming
 | potion_effect| -1| Integer| Defines the effect the arrow will apply to the entity it hits. |
 |remove_on_hit|*not set*|JSON Object|Removes the projectile.|
 |spawn_aoe_cloud|false|Boolean|Potion spawns an area of effect cloud. See [the table below for all spawn_aoe_cloud parameters](#spawn_aoe_cloud-parameters).|
-|spawn_chance|*not set*|JSON Ojbect|Contains information on the chance of spawning an entity on hit. See parameters below.|
+|spawn_chance|*not set*|JSON Object|Contains information on the chance of spawning an entity on hit. See parameters below.|
 |stick_in_ground|*not set*| Object| Decides if the object sticks in ground and contains `shake_time` integer parameter to determine how long it will shake.|
 |teleport_owner | false | Boolean | Determines if the owner is transported on hit.|
 |thrown_potion_effect|"thrown_potion_effect" : {} |JSON Object| Creates a splash area for effects caused by a thrown potion.|
-
 
 ## impact_damage parameters
 
 Name |Default Value  |Type  |Description  |
 :----------|:----------|:----------|:----------|
 |catch_fire| false | Boolean| Determines if the struck object is set on fire.|
-|channeling | True | Boolean | Whether lightning can be channeled through hte weapon.|
+|channeling | True | Boolean | Whether lightning can be channeled through the weapon.|
 |damage|1|Decimal|The damage dealt on impact.|
 |destroy_on_hit|false|Boolean|Projectile is removed on hit.|
 |destroy_on_hit_requires_damage | true | Boolean| If true, then the hit must cause damage to destroy the projectile.|
@@ -87,9 +85,7 @@ Name |Default Value  |Type  |Description  |
 |semi_random_diff_damage| false| Boolean| If true, damage will be randomized based on damage and speed |
 |set_last_hurt_requires_damage | false | Boolean| If true, then the hit must cause damage to update the last hurt property.|
 
-
 ## definition_event parameters
-
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
@@ -101,6 +97,7 @@ Name |Default Value  |Type  |Description  |
 |event_trigger| *not set* | JSON Object | The event triggered. Also has an option `filters` parameter to limit affected targets.|
 
 ## spawn_aoe_cloud parameters
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |affect_owner| true|Boolean| Determines if the projectile shooter is affected.|
@@ -113,6 +110,7 @@ Name |Default Value  |Type  |Description  |
 |reapplication_delay|0|Integer|Delay before the potion can affect the area again.|
 
 ## spawn_chance parameters
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |first_spawn_count|0|Integer|The amount of new entities spawned.|
@@ -122,8 +120,8 @@ Name |Default Value  |Type  |Description  |
 |spawn_definition|*not set*|String|The entity that will spawn.|
 |spawn_baby|False|Boolean|Determines if a baby spawns.|
 
-
 ## particle_on_hit parameters
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |particle_type|*not set*|String|The id of the particle to spawn on hit.|
@@ -184,7 +182,31 @@ Name |Default Value  |Type  |Description  |
 
 ### arrow
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/arrow.json" range="12-34":::
+```json
+"minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": [ 1, 5 ],
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": true
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            }
+          },
+          "hit_sound": "bow.hit",
+          "power": 1.6,
+          "gravity": 0.05,
+          "uncertainty_base": 16,
+          "uncertainty_multiplier": 4,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ]
+        }
+```
 
 ## Vanilla entities using `minecraft:projectile`
 
@@ -204,3 +226,4 @@ Name |Default Value  |Type  |Description  |
 - [wither_skull_dangerous](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skull_dangerous.md)
 - [wither_skull](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skull.md)
 - [xp_bottle](../../../../Source/VanillaBehaviorPack_Snippets/entities/xp_bottle.md)
+- 

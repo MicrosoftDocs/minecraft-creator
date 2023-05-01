@@ -1,19 +1,19 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:movement.sway
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:movement.sway
 
-`minecraft:movement.sway` causes the mob to sway side to side giving the impression it is swimming.
+`minecraft:movement.sway` compels the entity to sway side to side giving the impression it is swimming.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| max_turn| 30.0| Decimal| The maximum number in degrees the mob can turn per tick. |
+| max_turn| 30.0| Decimal| The maximum number in degrees the entity can turn per tick. |
 | sway_amplitude| 0.05| Decimal| Strength of the sway movement. |
 | sway_frequency| 0.5 | Decimal| Multiplier for the frequency of the sway movement. |
 
@@ -31,7 +31,11 @@ ms.prod: gaming
 
 ### fish
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fish.json" range="69-71":::
+```json
+"minecraft:movement.sway": {
+        "sway_amplitude": 0.0
+      }
+```
 
 ## Vanilla entities using `minecraft:movement.sway`
 

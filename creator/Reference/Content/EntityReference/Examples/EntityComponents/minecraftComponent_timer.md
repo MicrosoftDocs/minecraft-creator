@@ -1,23 +1,23 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:timer
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:timer
 
-`minecraft:timer` adds a timer after which an event will fire.
+`minecraft:timer` adds a timer after which an event will initiate.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| looping| True| Boolean| If true, the timer will restart every time after it fires. |
+| looping| True| Boolean| If true, the timer will restart every time after it initiates. |
 | randomInterval| True| Boolean| If true, the amount of time on the timer will be random between the min and max values specified in time. |
-| random_time_choices| [ ]| List| This is a list of objects, representing one value in seconds that can be picked before firing the event and an optional weight. Incompatible with time. |
+| random_time_choices| [ ]| List| A list of objects, representing one value in seconds that can be picked before initiating the event and an optional weight. Incompatible with time. |
 | time| [0.0, 0.0]| Range [a, b]| Amount of time in seconds for the timer. Can be specified as a number or a pair of numbers (min and max). Incompatible with random_time_choices. |
-| time_down_event| *not set*| JSON Object| Contains any events to fire when the time on the timer runs out. |
+| time_down_event| *not set*| JSON Object| Contains any events to initiate when the time on the timer runs out. |
 
 ## Example
 
@@ -36,7 +36,15 @@ ms.prod: gaming
 
 ### husk
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/husk.json" range="31-37":::
+```json
+"minecraft:timer": {
+          "looping": false,
+          "time": 30,
+          "time_down_event": {
+            "event": "minecraft:convert_to_zombie"
+          }
+}
+```
 
 ## Vanilla entities using `minecraft:timer`
 

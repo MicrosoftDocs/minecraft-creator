@@ -1,26 +1,26 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:dweller
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:dweller
 
-`minecraft:dweller` allows a mob to join and migrate between villages and other dwellings.
+`minecraft:dweller` compels a mob to join and migrate between villages and other dwellings.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| dwelling_type| *not_set*| String| The type of dwelling the mob wishes to join. Current Types: village |
-|dweller_role|*not set* | String |  The role of which the mob plays in the dwelling. Current Roles: inhabitant, defender, hostile, passive. |
-|update_interval_base|*not set* | Decimal| How often the mob checks on their dwelling status in ticks. Positive values only. |
+| dwelling_type| *not_set*| String| The type of dwelling the entity wishes to join. Current Types: village |
+|dweller_role|*not set* | String |  The role of which the entity plays in the dwelling. Current Roles: inhabitant, defender, hostile, passive. |
+|update_interval_base|*not set* | Decimal| How often the entity checks on their dwelling status in ticks. Positive values only. |
 |update_interval_variant|*not set* | Decimal|  The variant value in ticks that will be added to the update_interval_base. |
-|can_find_poi| *not set*| Boolean|  Whether or not the mob can find and add POI's to the dwelling. |
-|first_founding_reward| *not set*| Integer|  How much reputation should the players be rewarded on first founding? |
-|can_migrate| *not set*| Boolean| Can this mob migrate between dwellings? Or does it only have its initial dwelling? |
-|dwelling_bounds_tolerance| *not set*| Float | A padding distance for checking if the mob is within the dwelling. |
+|can_find_poi| *not set*| Boolean|  Whether or not the entity can find and add POIs to the dwelling. |
+|first_founding_reward| *not set*| Integer|  Determines how much reputation players are rewarded on first founding. |
+|can_migrate| *not set*| Boolean| Determines whether the entity can migrate between dwellings, or only have its initial dwelling. |
+|dwelling_bounds_tolerance| *not set*| Float | A padding distance for checking if the entity is within the dwelling. |
 |preferred_profession| *not set*| String| Allows the user to define a starting profession for this particular Dweller, instead of letting them choose organically. (They still need to gain experience from trading before this takes effect.) |
 
 

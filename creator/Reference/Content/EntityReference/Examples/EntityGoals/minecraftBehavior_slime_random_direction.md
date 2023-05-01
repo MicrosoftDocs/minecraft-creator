@@ -1,13 +1,13 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.slime_random_direction
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.slime_random_direction
 
-`minecraft:behavior.slime_random_direction` allows the entity to move in random directions like a slime.
+`minecraft:behavior.slime_random_direction` compels the entity to move in random directions like a slime.
 
 ## Parameters
 

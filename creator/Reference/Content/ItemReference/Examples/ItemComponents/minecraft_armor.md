@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Item Documentation - minecraft:armor
 ms.prod: gaming
 ---
@@ -25,7 +25,7 @@ ms.prod: gaming
 
 ### texture_type
 
-Listed below are the accepted values that can be used for texture_typeL
+Listed below are the accepted values that can be used for texture_type:
 
 - none
 - leather
@@ -38,7 +38,7 @@ Listed below are the accepted values that can be used for texture_typeL
 - netherite
 
 > [!NOTE]
-> When making horse armor, you are restricted to leather, iron, gold, or diamond.
+> When making horse armor you are restricted to leather, iron, gold, or diamond.
 
 ## Example
 

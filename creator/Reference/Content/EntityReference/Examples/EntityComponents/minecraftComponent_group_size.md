@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:group_size
 ms.prod: gaming
 ---
@@ -29,7 +29,24 @@ ms.prod: gaming
 
 ### piglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="168-183":::
+```json
+"minecraft:group_size": {
+          "radius": 32,
+          "filters": {
+            "all_of": [
+              {
+                "test": "has_component",
+                "operator": "!=",
+                "value": "minecraft:is_baby"
+              },
+              {
+                "test": "is_family",
+                "value": "piglin"
+              }
+            ]
+          }
+        }
+```
 
 ## Vanilla entities using `minecraft:group_size`
 

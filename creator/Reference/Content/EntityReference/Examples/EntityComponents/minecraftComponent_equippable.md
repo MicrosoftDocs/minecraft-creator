@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:equippable
 ms.prod: gaming
 ---
@@ -21,11 +21,11 @@ ms.prod: gaming
 
 | Name| Default Value| Type| Description |
 |:-----------|:-----------|:-----------|:-----------|
-| accepted_items| *not set*| List| The list of items that can go in this slot. |
-| interact_text| *not set*| String| Text to be displayed when the entity can be equipped with this item when playing with Touch-screen controls. |
-| item| *not set*| String| Identifier of the item that can be equipped for this slot. |
-| on_equip| *not set*| JSON Object | Event to trigger when this entity is equipped with this item. |
-| on_unequip| *not set*| JSON Object | Event to trigger when this item is removed from this entity. |
+| accepted_items| *not set*| List| The list of items that can fill this slot. |
+| interact_text| *not set*| String| Text to be displayed while playing with touch-screen controls when the entity can be equipped with this item. |
+| item| *not set*| String| Identifier of the item that can be equipped for the slot. |
+| on_equip| *not set*| JSON Object | Event to trigger when the entity is equipped with the item. |
+| on_unequip| *not set*| JSON Object | Event to trigger when the item is removed from the entity. |
 | slot| 0| Integer| The slot number of this slot. |
 
 ## Example
@@ -52,7 +52,33 @@ ms.prod: gaming
 
 ### horse
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/horse.json" range="287-311":::
+```json
+"minecraft:equippable": {
+        "slots": [
+          {
+            "slot": 0,
+            "item": "saddle",
+            "accepted_items": [ "saddle" ],
+            "on_equip": {
+              "event": "minecraft:horse_saddled"
+            },
+            "on_unequip": {
+              "event": "minecraft:horse_unsaddled"
+            }
+          },
+          {
+            "slot": 1,
+            "item": "horsearmoriron",
+            "accepted_items": [
+              "horsearmorleather",
+              "horsearmoriron",
+              "horsearmorgold",
+              "horsearmordiamond"
+            ]
+          }
+        ]
+      },
+```
 
 ## Vanilla entities using `minecraft:equippable`
 

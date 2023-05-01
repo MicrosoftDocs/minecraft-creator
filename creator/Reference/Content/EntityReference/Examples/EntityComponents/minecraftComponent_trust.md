@@ -1,13 +1,13 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:trust
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:trust
 
-`minecraft:trust` allows this entity to trust multiple players.
+`minecraft:trust` compels the entity to trust one or more players.
 
 ## Example
 

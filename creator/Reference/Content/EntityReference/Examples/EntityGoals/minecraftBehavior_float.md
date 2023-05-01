@@ -1,19 +1,20 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.float
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.float
 
-`minecraft:behavior.float` allows an entity to float on water.
+`minecraft:behavior.float` allows an entity to float on water. Passengers will be kicked out the moment the mob's head goes underwater, which may not happen for tall mobs.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+|sink_with_passengers| Boolean|false| If true, the mob will keep sinking as long as it has passengers. |
 
 ## Example
 
@@ -35,6 +36,7 @@ ms.prod: gaming
 
 ## Vanilla entities using `minecraft:behavior.float`
 
+- [allay](../../../../Source/VanillaBehaviorPack_Snippets/entities/allay.md)
 - [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
 - [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)

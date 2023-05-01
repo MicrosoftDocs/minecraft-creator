@@ -1,15 +1,15 @@
 ---
 author: neonerz
 ms.author: mikeam
-title: Introduction to Add Entity
+title: Creating New Entity Types
 ms.prod: gaming
-description: "Building upon the knowledge learned in the Resource Pack Tutorial, Introduction to Add Entity goes over the steps needed to start creating your own custom Entity"
+description: "Building upon the knowledge learned in the Resource Pack Tutorial, Creating New Entity Types goes over the steps needed to start creating your own custom Entity Type"
 ---
 
-# Introduction to Add Entity
+# Creating New Entity Types
 
-You can add an entity to Minecraft: Bedrock Edition using a behavior pack and a resource pack. As you learned from the recommended tutorials, the behavior of entities can be changed with a behavior pack and you can change the appearance with a resource pack. Both are required to add a working entity to the game. 
-This guide has two parts: the first part covers the files and folder structure needed to add a custom entity to Minecraft. The second part shows you how to breathe life into the entity using behavior components and animations.
+You can add new entity types to Minecraft: Bedrock Edition using a behavior pack and a resource pack. As you learned from the recommended tutorials, the behavior of entity types can be changed with a behavior pack and you can change the appearance with a resource pack. Both are required to add a working entity type to the game. 
+This guide has two parts: the first part covers the files and folder structure needed to add a custom entity type to Minecraft. The second part shows you how to breathe life into the entity using behavior components and animations.
 
 :::image type="content" source="Media/AddEntity/Introduction-to-Add-Entity.jpg" alt-text="Image of a Blue Whale that has been created in a modeling package.":::
 
@@ -17,13 +17,13 @@ In this tutorial you will learn the following:
 
 > [!div class="checklist"]
 >
-> - How to create a new custom entity using behavior and resource packs.
-> - How to apply various features to the entity, including components and animations.
+> - How to create a new custom entity type using behavior and resource packs.
+> - How to apply various features to the entity type, including components and animations.
 > - Make use of translations for entity names.
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial.
+It's recommended that the following be completed before beginning this tutorial.
 
 - [Introduction to Behavior Packs](BehaviorPack.md)
 - [Introduction to Resource Packs](ResourcePack.md)
@@ -207,7 +207,7 @@ Now would be a good time to try the **full robot** resource and behavior packs. 
 
 ## Components
 
-Components tell the entity how to act in game. Let’s add a few components and explain in detail what they do.
+Components tell the entity how to act in game. Let's add a few components and explain in detail what they do.
 
 In the **behavior pack/entities/** folder, open `robot.json` and replace the single entry of `"minecraft:physics": {} ` with all of this...
 
@@ -320,7 +320,7 @@ Render controllers allow us to change the geometry, textures, and materials of t
 }
 ```
 
-If we just want to use one default geometry, material, and texture, we can just leave it to point to the default render controller as we did before. But, this is a good time to learn how to add random textures, so let’s break down how render controllers work.
+If we just want to use one default geometry, material, and texture, we can just leave it to point to the default render controller as we did before. But, this is a good time to learn how to add random textures, so let's break down how render controllers work.
 
 ### Render Controller Explanation
 
@@ -332,7 +332,7 @@ Inside the render controller tag, the different resources are specified, but you
 
 ### Geometry
 
-One render controller can display only one geometry at a time. That’s why it is linked directly as one string. This string can be a Molang expression and should always return a geometry. In this case, it's calling `Geometry.default`, which means that it will return the geometry that's linked as `default` by whatever entity using the render controller.
+One render controller can display only one geometry at a time. That's why it is linked directly as one string. This string can be a Molang expression and should always return a geometry. In this case, it's calling `Geometry.default`, which means that it will return the geometry that's linked as `default` by whatever entity using the render controller.
 
 You can render multiple geometries on one entity by using multiple render controllers. This can be tricky though, and can lead to unexpected behavior. Therefore, it's only recommended for experienced creators.
 
@@ -351,7 +351,7 @@ In this example, we first apply the default material to all bones. Then, we over
 
 ### Textures
 
-Textures are specified in an array. In most cases, only one texture will be linked here since entities don’t support separate textures. There is one exception though: materials can support multiple textures layered on top of each other, such as the material `entity_multitexture`. For example, this is used by llamas to overlay the décor.
+Textures are specified in an array. In most cases, only one texture will be linked here since entities don't support separate textures. There is one exception though: materials can support multiple textures layered on top of each other, such as the material `entity_multitexture`. For example, this is used by llamas to overlay the décor.
 
 ### Arrays
 
@@ -437,7 +437,7 @@ Now, when we first spawn the entity, it will randomly choose a component group a
 
 ## Spawning
 
-Spawn rules define how entities randomly spawn in the world. We’ll create a spawn rules file for our robot. 
+Spawn rules define how entities randomly spawn in the world. We'll create a spawn rules file for our robot. 
 First, create a folder called `spawn_rules` in your behavior pack. 
 Inside the folder, create a new text file called `robot.json`. The content of the file should look like this:
 
@@ -516,7 +516,7 @@ Robots will now spawn anywhere on the surface where animals can spawn and where 
 
 Behavior animations work similarly to regular animations but run in the behavior pack. While regular animations animate the movement of the model as well as sounds and particles, behavior animations can run regular commands, trigger entity events, or run Molang expressions. Behavior animations are also often referred to as **Entity Events**, although that name tends to be a bit confusing.
 
-Since robots don’t like water, we'll add a mechanic to damage robots in water or rain. First, we're going to create an animation controller to test when the entity is in water using a Molang query. Create a new folder in the behavior pack called `animation_controllers` and create the file `robot.animation_controllers.json` inside it:
+Since robots don't like water, we'll add a mechanic to damage robots in water or rain. First, we're going to create an animation controller to test when the entity is in water using a Molang query. Create a new folder in the behavior pack called `animation_controllers` and create the file `robot.animation_controllers.json` inside it:
 
 ```json
 {
@@ -542,7 +542,7 @@ Since robots don’t like water, we'll add a mechanic to damage robots in water 
 
 The animation controller looks very similar to regular client-side animation controllers. It has two states that get toggled depending on whether the robot is in water or not.
 
-Now, let’s add an animation to give a poison effect to the robot. Create the folder `animations` inside the behavior pack and create a file called `robot.animation.json`:
+Now, let's add an animation to give a poison effect to the robot. Create the folder `animations` inside the behavior pack and create a file called `robot.animation.json`:
 
 ```json
 {
@@ -563,7 +563,7 @@ Now, let’s add an animation to give a poison effect to the robot. Create the f
 
 Instead of using the bone tag here to animate bones, we're using the timeline tag. In resource packs, timelines can only be used to run Molang code. In behavior animations, you can use this to run Molang code, commands, or trigger entity events. Note that all these are provided as a string. The game will figure out the type of the string from its content. If the string starts with a slash, it will run as a command. If it fits this scheme: `@s namespace:event`, it will run as an entity event. If it looks like Molang, it will run as Molang.
 
-For that reason, it's important to start commands with a slash in behavior animations. Also, note that we're applying poison for two seconds because one would not be enough to actually apply damage. The `true` at the end of the command will make the status effect ambient, meaning that there won’t be any particles.
+For that reason, it's important to start commands with a slash in behavior animations. Also, note that we're applying poison for two seconds because one would not be enough to actually apply damage. The `true` at the end of the command will make the status effect ambient, meaning that there won't be any particles.
 
 As with animations in resource packs, we need to link all of our animations and animation controllers in the description tag of our entity, which will look like this:
 
@@ -586,7 +586,7 @@ As with animations in resource packs, we need to link all of our animations and 
 
 The animations section lists all animations and animation controllers that the entity uses and gives them a short name. In the scripts/animate section, we list the animations that should always run. We want the controller to detect the state to always run, but not the poison effect.
 
-Now, we need to go back to the animation controller and add the poison effect. We’ll also add a little regeneration mechanic along with a sound effect, so the robot won’t die as easily.
+Now, we need to go back to the animation controller and add the poison effect. We'll also add a little regeneration mechanic along with a sound effect, so the robot won't die as easily.
 
 ```json
             "states": {

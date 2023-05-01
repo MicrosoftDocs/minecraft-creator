@@ -32,7 +32,7 @@ Represents a Potion Brewing Mix.
  
     "input": "minecraft:potion_type:awkward",
     "reagent": "minecraft:blaze_powder",
-    "output": "minecraft:potion_type:strength",
+    "output": "minecraft:potion_type:strength"
  
     }
 }

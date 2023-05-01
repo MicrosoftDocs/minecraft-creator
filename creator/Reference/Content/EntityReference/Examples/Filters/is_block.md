@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - is_block
 ms.prod: gaming
 ---
@@ -50,20 +50,22 @@ Returns true when the block has the given name.
 ### Full
 
 ```json
-{ "test": "is_block", "subject": "self", "operator": "equals", "value": "player" }
+{ "test": "is_block", "subject": "self", "operator": "equals", "value": " " }
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "is_block", "value": "player" }
+{ "test": "is_block", "value": "" }
 ```
 
 ## Vanilla entities examples
 
 ### Fox
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fox.json" range="536-540":::
+```json
+{ "test": "is_block", "subject": "block", "value": "minecraft:sweet_berry_bush" }
+```
 
 ## Vanilla entities using `is_block`
 

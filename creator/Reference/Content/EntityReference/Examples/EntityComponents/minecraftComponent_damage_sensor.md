@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:damage_sensor
 ms.prod: gaming
 ---
@@ -21,10 +21,10 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|cause| none| String|  Type of damage that triggers the events. |
-|damage_modifier| 0.0| Decimal|  A modifier that adds to/removes from the base damage from the damage cause. It does not reduce damage to less than 0. |
+|cause| none| String|  Type of damage that triggers an event. |
+|damage_modifier| 0.0| Decimal|  A modifier that adds to/removes the base damage from the damage cause. Does not reduce damage to less than 0. |
 |damage_multiplier| 1.0| Decimal| A multiplier that modifies the base damage from the damage cause. If deals_damage is true the multiplier can only reduce the damage the entity will take to a minimum of 1. |
-|deals_damage| true| Boolean|  If true, the damage dealt to the entity will take away health from it, set to false to make the entity ignore that damage. |
+|deals_damage| true| Boolean|  If true the damage dealt to the entity will remove health, if set to false the entity will ignore the damage. |
 | on_damage|*not set* | JSON Object| Specifies filters for entity definitions and events. |
 |on_damage_sound_event|*not set* | String|  Defines what sound to play, if any, when the on_damage filters are met. |
 
@@ -34,8 +34,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|[filters](../FilterList.md)|*not set* | Minecraft Filter|  Filters to use to define specific tests |
-|event |*not set* | String | Defines what event to run |
+|[filters](../FilterList.md)|*not set* | Minecraft Filter|  Filters to use to define specific tests. |
+|event |*not set* | String | Defines what event to run. |
 
 ### cause
 
@@ -75,7 +75,29 @@ ms.prod: gaming
 
 ### pillager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/pillager.json" range="112-132":::
+```json
+"minecraft:damage_sensor": {
+          "triggers": {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_damage",
+                    "value": "fatal"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "minecraft:gain_bad_omen",
+              "target": "other"
+            }
+          }
+        }
+```
 
 ## Vanilla entities using `minecraft:damage_sensor`
 

@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:hurt_on_condition
 ms.prod: gaming
 ---
@@ -37,7 +37,7 @@ ms.prod: gaming
     "damage_conditions": [
         {
             "filters": {"test": "in_water", "subject": "self", "operator": "==", "value": true},
-            "causes": "drowning",
+            "cause": "drowning",
             "damage_per_tick": 1
         }
     ]
@@ -48,7 +48,17 @@ ms.prod: gaming
 
 ### chicken
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/chicken.json" range="108-116":::
+```json
+"minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      }
+```
 
 ## Vanilla entities using `minecraft:hurt_on_condition`
 

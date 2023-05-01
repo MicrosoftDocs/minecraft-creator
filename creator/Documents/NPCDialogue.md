@@ -10,7 +10,7 @@ description: "A tutorial covering how to create a branching dialogue script for 
 
 ![NPC Dialogue Intro](Media\NPCs\NPCDialogueIntro.PNG)
 
-Branching Dialogue allows you to create a dynamic non-player character (NPC) dialogue script that can provide updated dialogue based on a player’s in-game actions or responses.
+Branching Dialogue allows you to create a dynamic non-player character (NPC) dialogue script that can provide updated dialogue based on a player's in-game actions or responses.
 
 The Branching Dialogue system has three parts: the NPC entity, the dialogue commands, and the resource scene files.
 
@@ -26,7 +26,7 @@ In this tutorial, you will learn the following:
 
 ### Requirements
 
-It’s required that the following be completed before beginning this tutorial. Name them Ducky.
+It's required that the following be completed before beginning this tutorial. Name them Ducky.
 
 - [Create a Custom NPC](CreateNPCs.md)
 
@@ -75,7 +75,7 @@ The first property is the header which defines this JSON file as a valid scene f
 }
 ```
 
-Because this is a json file, we need include brackets. The  “scenes” property is the place where all the branching dialogue will live.
+Because this is a json file, we need include brackets. The  "scenes" property is the place where all the branching dialogue will live.
 
 ### Create an Individual Scene
 
@@ -83,7 +83,7 @@ With the header and scene file properties in place, we can now create our indivi
 
 You will use the scene tag in-game to call the text you supply in the scene file. You can also set up NPC buttons and commands that will behave identically as they would if you had set them up using the in-game NPC editor.
 
-Let’s examine the NPC scene structure:
+Let's examine the NPC scene structure:
 
 ```json
 {
@@ -129,7 +129,7 @@ Let’s examine the NPC scene structure:
 |`text`|String or rawtext|*Optional*. This is where you enter the dialogue you want your NPC to display in-game for this scene. You can type the dialogue text directly here or use raw text if you are using a language file. Without text, this will show an empty dialogue.|
 |`on_open_commands`|Array containing commands|*Optional*. The commands that will fire when the NPC dialogue box opens.|
 |`on_close_commands`|Array containing commands|*Optional*. The commands that will fire when the NPC dialogue box closes.|
-|`buttons`|Object|*Optional*. Include this to create buttons for your NPC. Its properties are `name` and `commands`. The `name` property sets the text that is going to be displayed on your NPC’s button. The `commands` property is the commands which will be run in-game when the button is pressed. These are required for NPC buttons to appear on the dialogue.|
+|`buttons`|Object|*Optional*. Include this to create buttons for your NPC. Its properties are `name` and `commands`. The `name` property sets the text that is going to be displayed on your NPC's button. The `commands` property is the commands which will be run in-game when the button is pressed. These are required for NPC buttons to appear on the dialogue.|
 
 #### Rawtext
 All the scene properties listed above support rawtext for any text to allow for translation.
@@ -140,7 +140,7 @@ The Dialogue command enables NPCs to open or read scene files. The command has t
 
 ### Dialogue Open
 
-`dialogue open` is used to force open an NPC dialogue box to the targeted player(s). This command can be used on any NPC and doesn’t require a behavior pack unless you want the NPC to use an optional scene file for its dialogue.
+`dialogue open` is used to force open an NPC dialogue box to the targeted player(s). This command can be used on any NPC and doesn't require a behavior pack unless you want the NPC to use an optional scene file for its dialogue.
 
 The syntax for `dialogue open` is:
 
@@ -165,7 +165,7 @@ The syntax for `dialogue open` is:
 
 `/dialogue open` is primarily used in two ways.
 
-The first is to initiate an NPC dialogue box without the player interacting directly with the NPC, essentially using the NPC as a ‘pop-up’ window that doesn’t require the player to click the NPC. The NPC in this scenario doesn’t even have to be visible to the player in the world (although they must be in a loaded chunk and within ticking distance of the player receiving the dialogue) and could be stashed underground or in some other inaccessible location.
+The first is to initiate an NPC dialogue box without the player interacting directly with the NPC, essentially using the NPC as a 'pop-up' window that doesn't require the player to click the NPC. The NPC in this scenario doesn't even have to be visible to the player in the world (although they must be in a loaded chunk and within ticking distance of the player receiving the dialogue) and could be stashed underground or in some other inaccessible location.
 
 The second way `/dialogue open` is used is to create branching dialogue trees using the scene file. By using the `/dialogue open` command inside of an NPCs scene file, the NPC can automatically open the next dialogue box for a player, using a `/dialogue close` command or a `button` command. This is the basis for all dialogue tree branching paths.
 
@@ -191,9 +191,9 @@ The syntax for Dialogue open is as follows:
 
 #### Practical Usage of Dialogue Change
 
-`/dialogue change` is primarily used to change an NPC’s dialogue using commands. The command can come from a player-triggered command block in the world, fired by another NPC, or can be run from the targeted NPC itself.
+`/dialogue change` is primarily used to change an NPC's dialogue using commands. The command can come from a player-triggered command block in the world, fired by another NPC, or can be run from the targeted NPC itself.
 
-You may want to change an NPCs dialogue based on a player’s actions in the world, such as entering a particular area, speaking with another NPC, or performing a specific task. If the action can be assessed, it can be used to run the dialogue command and change the NPC’s dialogue.
+You may want to change an NPCs dialogue based on a player's actions in the world, such as entering a particular area, speaking with another NPC, or performing a specific task. If the action can be assessed, it can be used to run the dialogue command and change the NPC's dialogue.
 
 `/dialogue change` does not display the NPC dialog box as Dialogue Open does, it simply points the NPC to the scene file dialogue that you want the player to see during their next interaction with that NPC.
 
@@ -203,7 +203,7 @@ Targeting is a vital part of the NPC dialogue branching system. It determines wh
 
 ### Targeting NPCs
 
-To use the `/dialogue` command, you must target an NPC. This will act as the NPC the dialogue is showing up from and will use that NPC’s image inside the dialog’s portrait.
+To use the `/dialogue` command, you must target an NPC. This will act as the NPC the dialogue is showing up from and will use that NPC's image inside the dialog's portrait.
 
 The NPC you want to trigger the dialog from must exist inside the world.
 
@@ -251,7 +251,7 @@ Example:
 ]
 ```
 
-Using this target selector with NPCs allows them to update their dialogue on a per-player basis, meaning that in multiplayer, NPCs can remember each player’s dialogue state and send them unique dialogue accordingly.
+Using this target selector with NPCs allows them to update their dialogue on a per-player basis, meaning that in multiplayer, NPCs can remember each player's dialogue state and send them unique dialogue accordingly.
 
 This is useful for times where a player changing an NPCs dialogue could result in other players missing out on the complete dialogue branch or to ensure each player only receives one item from an NPC, not allowing that same player to return to the NPC for more items or locking out other players from collecting their items.
 
@@ -300,6 +300,6 @@ This is useful for times where a player changing an NPCs dialogue could result i
      - This command opens the dialogue, calls an entity with type NPC in a 2 block radius, targets the player, and then runs the `ducky_intro` file.
    - Or you can tag the npc with `/tag @e[type=npc] add dusty` and then run the dialogue command with `/dialogue open @e[tag=dusty] @p ducky_intro`.
 
-See more on [target selectors in the Introduction to Commands](/minecraft/creator/documents/commandsintroduction#target-selectors).
+See more about [target selectors here](TargetSelectors.md).
 
 ![NPC Dialogue Outcome](Media\NPCs\NPCDialogueOutcome.PNG)

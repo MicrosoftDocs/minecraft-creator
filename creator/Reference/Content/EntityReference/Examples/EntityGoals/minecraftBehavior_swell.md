@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.swell
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.swell
 
-`minecraft:behavior.swell` allows an entity to grow in size when approached, and scale down back to normal after a certain distance.
+`minecraft:behavior.swell` compels an entity to grow in size when approached and scale down back to normal after a certain distance.
 
 ## Parameters
 
@@ -31,7 +31,13 @@ ms.prod: gaming
 
 ### creeper
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/creeper.json" range="164-168":::
+```json
+"minecraft:behavior.swell": {
+    "start_distance": 2.5,
+    "stop_distance": 6.0,
+    "priority": 2
+}
+```
 
 ## Vanilla entities using `minecraft:behavior.swell`
 

@@ -1,9 +1,5 @@
- - name: Block Component List
-   href: ../BlockComponentsList.md
- - name: block_light_filter
-   href: minecraftBlock_block_light_filter.md
- - name: breathability
-   href: minecraftBlock_breathability.md
+ - name: Block Components List
+   href: BlockComponentsList.md 
  - name: collision_box
    href: minecraftBlock_collision_box.md
  - name: crafting_table
@@ -20,25 +16,21 @@
    href: minecraftBlock_friction.md
  - name: geometry
    href: minecraftBlock_geometry.md
+ - name: light_dampening
+   href: minecraftBlock_light_dampening.md
+ - name: light_emission
+   href: minecraftBlock_light_emission.md    
  - name: loot
    href: minecraftBlock_loot.md
  - name: map_color
    href: minecraftBlock_map_color.md
  - name: material_instances
    href: minecraftBlock_material_instances.md
- - name: part_visibility
-   href: minecraftBlock_part_visibility.md
  - name: placement_filter
    href: minecraftBlock_placement_filter.md
- - name: queued_ticking
-   href: minecraftBlock_queued_ticking.md
- - name: random_ticking
-   href: minecraftBlock_random_ticking.md
- - name: rotation
-   href: minecraftBlock_rotation.md
  - name: selection_box
    href: minecraftBlock_selection_box.md
+ - name: transformation
+   href: minecraftBlock_transformation.md
  - name: unit_cube
    href: minecraftBlock_unit_cube.md
- - name: unwalkable
-   href: minecraftBlock_unwalkable.md

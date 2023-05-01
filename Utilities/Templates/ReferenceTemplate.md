@@ -46,12 +46,6 @@ Hand written example utilizing each parameter. This showcases how each parameter
 
 A code snippet that showcases how the referenced content is used by a vanilla entity.
 
-Here is how you can sample code from other reference docs:
-
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ravager.json" range="298-333":::
-
-Enter the relative path to the reference doc you want to sample into `source` and enter the line numbers you want to display in `range`.
-
 ## Vanilla entities using [REFERENCE SUBJECT]
 
 >[!IMPORTANT]

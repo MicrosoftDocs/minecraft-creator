@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.send_event
 
-`minecraft:behavior.send_event` allows an entity to send an event to another entity.
+`minecraft:behavior.send_event` compels an entity to send an event to another entity.
 
 ## Parameters
 
@@ -18,7 +18,7 @@ ms.prod: gaming
 |priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 |sequence|*not set* | List| List of events to send.|
 
-#### sequence
+### sequence
 
 `sequence` is a list variable that can use the following parameters:
 
@@ -76,8 +76,7 @@ ms.prod: gaming
             ]
           }
         ]
-      },
-
+      }
 ```
 
 ## Vanilla entities using `minecraft:behavior.send_event`

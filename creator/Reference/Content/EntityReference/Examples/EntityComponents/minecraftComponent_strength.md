@@ -1,6 +1,6 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:strength
 ms.prod: gaming
 ---
@@ -13,7 +13,7 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| max| 5| Integer| The maximum strength of this entity |
+| max| 5| Integer| The maximum strength of the entity |
 |value| 1| Integer|  The initial value of the strength |
 
 ## Example

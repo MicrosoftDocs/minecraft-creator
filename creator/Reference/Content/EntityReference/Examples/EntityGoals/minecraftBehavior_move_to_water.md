@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.move_to_water
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.move_to_water
 
-`minecraft:behavior.move_to_water` allows an entity to move to water when on land.
+`minecraft:behavior.move_to_water` compels an entity to move to water when on land.
 
 ## Parameters
 
@@ -36,7 +36,13 @@ ms.prod: gaming
 
 ### dolphin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/dolphin.json" range="284-288":::
+```json
+"minecraft:behavior.move_to_water": {
+        "priority": 1,
+        "search_range": 15,
+        "search_height": 5
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.move_to_water`
 

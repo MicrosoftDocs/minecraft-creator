@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:damage_over_time
 ms.prod: gaming
 ---

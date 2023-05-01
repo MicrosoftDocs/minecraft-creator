@@ -1,6 +1,6 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:spell_effects
 ms.prod: gaming
 ---

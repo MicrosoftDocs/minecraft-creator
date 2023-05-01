@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:attack_cooldown
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:attack_cooldown
 
-`minecraft:attack_cooldown` adds a cooldown to an entity. The intention of this cooldown is to be used to prevent the entity from attempting to acquire new attack targets.
+`minecraft:attack_cooldown` adds a cooldown to an entity. The intention of the cooldown is to prevent the entity from attempting to acquire new attack targets.
 
 ## Parameters
 

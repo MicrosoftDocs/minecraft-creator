@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - has_damage
 ms.prod: gaming
 ---
@@ -97,11 +97,9 @@ Below is a list of damage types that can be used for the `value` string.
 
 ### pillager
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/pillager.json" range="112-127":::
-
-### villager
-
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager.json" range="382-406":::
+```json
+{ "test": "has_damage", "value": "fatal" }
+```
 
 ## Vanilla entities using `has_damage`
 

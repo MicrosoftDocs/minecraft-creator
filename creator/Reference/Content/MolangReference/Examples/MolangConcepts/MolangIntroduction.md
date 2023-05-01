@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: Molang Documentation - Introduction to Molang
 ms.prod: gaming
@@ -27,6 +27,7 @@ To know which Versioned Changes are in effect, look at the `"min_engine_version"
 | 1.17.30| Fixed query.item_remaining_use_duration conversion from ticks to seconds (multiplied by 20 instead of dividing). Also fixed normalization logic in that query to go from 1 down to 0 instead of 0 up to 1. |
 | 1.17.40| Added some new error messages for invalid expressions which previously ran with probably unexpected results. For example "'text' + 1" will now cause a content error. |
 | 1.18.10| Fixed conditional (ternary) operator associativity. Previously nested conditional expressions like `A ? B : C ? D : E` would evaluate as `(A ? B : C) ? D : E`. Now they evaluate as `A ? B : (C ? D : E)`. |
+| 1.19.60| Fixed error where dividing by a dynamically determined negative variable resulted in a division by the absolute (positive) value of the number instead. |
 
 ## Lexical Structure
 
@@ -48,7 +49,7 @@ All identifiers not in a scope listed below are reserved for future use.
 | Keyword| Description |
 |:-----------|:-----------|
 | `1.23`| Numerical constant value |
-| `! && < <= >= > == !=`| Logical operators |
+| `! || && < <= >= > == !=`| Logical operators |
 | `* / + -`| Basic math operators |
 | `(` `)`| Parentheses for expression term evaluation control |
 | `{` `}`| Braces for execution scope |

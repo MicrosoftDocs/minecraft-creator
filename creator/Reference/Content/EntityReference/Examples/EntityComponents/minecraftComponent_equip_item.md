@@ -1,13 +1,13 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:equip_item
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:equip_item
 
-`minecraft:equip_item` allows the entity to equip desired equipment.
+`minecraft:equip_item` compels the entity to equip desired equipment.
 
 ## Example
 
@@ -20,7 +20,10 @@ ms.prod: gaming
 
 ### skeleton
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/skeleton.json" range="186-187":::
+```json
+"minecraft:equip_item": {
+      },
+```
 
 ## Vanilla entities using `minecraft:equip_item`
 

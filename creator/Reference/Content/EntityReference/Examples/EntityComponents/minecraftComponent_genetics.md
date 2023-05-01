@@ -1,13 +1,13 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:genetics
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:genetics
 
-`minecraft:genetics` defines the way a mob's genes and alleles are passed on to its offspring, and how those traits manifest in the child. Compatible parent genes are crossed together, the alleles are handed down from the parents to the child, and any matching genetic variants fire off JSON events to modify the child and express the traits.
+`minecraft:genetics` defines the way a mob's genes and alleles are passed on to its offspring, and how those traits manifest in the child. Compatible parent genes are crossed together, the alleles are handed down from the parents to the child, and any matching genetic variants initiate JSON events to modify the child and express the traits.
 
 ## Parameters
 
@@ -23,7 +23,7 @@ ms.prod: gaming
 | Name| Default Value| Type| Description |
 |:----------|:----------|:----------|:----------|
 | allele_range| *not set*| Integer| The range of positive integer allele values for this gene. Spawned mobs will have a random number in this range assigned to them.|
-| genetic_variants| *not set*| List| The list of genetic variants for this gene. These check for particular allele combinations and fire events when all of them are satisfied.|
+| genetic_variants| *not set*| List| The list of genetic variants for this gene. These check for particular allele combinations and initiate events when all of them are satisfied.|
 | name| *not set*| String| The name of the gene. |
 
 #### allele_range
@@ -37,7 +37,7 @@ ms.prod: gaming
 
 #### genetic_variants
 
-`genetic_variants` is an decimal defined by five parameters. Each item has the following properties:
+`genetic_variants` is a decimal defined by five parameters. Each item has the following properties:
 
 | Name| Default Value| Type| Description |
 |:-----------|:-----------|:-----------|:-----------|
@@ -81,7 +81,68 @@ ms.prod: gaming
 
 ### panda
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/panda.json" range="471-532":::
+```json
+"mutation_rate": 0.03125,
+        "genes": [
+          {
+            "name": "panda_variant",
+            "allele_range": {
+              "range_min": 0,
+              "range_max": 15
+            },
+            "genetic_variants": [
+              {
+                "main_allele": 0,
+                "birth_event": {
+                  "event": "minecraft:panda_lazy",
+                  "target": "self"
+                }
+              },
+              {
+                "main_allele": 1,
+                "birth_event": {
+                  "event": "minecraft:panda_worried",
+                  "target": "self"
+                }
+              },
+              {
+                "main_allele": 2,
+                "birth_event": {
+                  "event": "minecraft:panda_playful",
+                  "target": "self"
+                }
+              },
+              {
+                "main_allele": 3,
+                "birth_event": {
+                  "event": "minecraft:panda_aggressive",
+                  "target": "self"
+                }
+              },
+              {
+                "both_allele": {
+                  "range_min": 4,
+                  "range_max": 7
+                },
+                "birth_event": {
+                  "event": "minecraft:panda_weak",
+                  "target": "self"
+                }
+              },
+              {
+                "both_allele": {
+                  "range_min": 8,
+                  "range_max": 9
+                },
+                "birth_event": {
+                  "event": "minecraft:panda_brown",
+                  "target": "self"
+                }
+              }
+            ]
+          }
+        ]
+```
 
 ## Vanilla entities using `minecraft:genetics`
 

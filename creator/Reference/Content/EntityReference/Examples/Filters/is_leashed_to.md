@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - is_leashed_to
 ms.prod: gaming
 ---
@@ -67,7 +67,9 @@ Returns true if the subject entity leashed to the calling entity.
 
 ### wandering_trader
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/wandering_trader.json" range="21-33":::
+```json
+{ "test": "is_leashed_to", "subject": "other", "value": true }
+```
 
 ## Vanilla entities using `is_leashed_to`
 

@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.sleep
 ms.prod: gaming
@@ -45,15 +45,14 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.sleep": {
-          "priority": 3,
-          "goal_radius": 1.5,
-          "speed_multiplier": 0.6,
-          "sleep_collider_height": 0.3,
-          "sleep_collider_width": 1.0,
-          "sleep_y_offset": 0.6,
-          "timeout_cooldown": 10.0
-        }
-
+    "priority": 3,
+    "goal_radius": 1.5,
+    "speed_multiplier": 0.6,
+    "sleep_collider_height": 0.3,
+    "sleep_collider_width": 1.0,
+    "sleep_y_offset": 0.6,
+    "timeout_cooldown": 10.0
+}
 ```
 
 ## Vanilla entities using `minecraft:behavior.sleep`

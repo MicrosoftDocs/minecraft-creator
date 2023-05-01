@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:physics
 ms.prod: gaming
 ---
@@ -13,8 +13,9 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| has_collision| True| Boolean| Whether or not the object collides with things. |
+| has_collision| True| Boolean| Whether or not the entity collides with things. |
 | has_gravity| True| Boolean| Whether or not the entity is affected by gravity. |
+| push_towards_closest_space| False| Boolean| Whether or not the entity should be pushed towards the nearest open area when stuck inside a block. |
 
 ## Example
 
@@ -29,7 +30,10 @@ ms.prod: gaming
 
 ### player
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/player.json" range="106-107":::
+```json
+"minecraft:physics": {
+}
+```
 
 ## Vanilla entities using `minecraft:physics`
 

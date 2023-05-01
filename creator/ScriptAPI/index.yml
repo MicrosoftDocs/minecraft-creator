@@ -5,7 +5,7 @@ summary: "Landing page containing a high-level introduction of experimental Scri
 
 metadata:
   title: Script API Reference Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: "Landing page containing a high-level introduction of experimental Script APIs for Minecraft: Bedrock Edition."  # Required; article description that is displayed in search results. < 160 chars.
+  description: "Landing page containing a high-level introduction of Script APIs for Minecraft: Bedrock Edition."  # Required; article description that is displayed in search results. < 160 chars.
   ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   author: mammerla #Required; your GitHub user alias, with correct capitalization.
@@ -35,49 +35,49 @@ landingContent:
            - text: Introduction to the GameTest Framework
              url: ../Documents/GameTestGettingStarted.md
   # Card (optional)
-  - title: mojang-minecraft
+  - title: minecraft/server
     linkLists:
       - linkListType: overview
         links:
-           - text: mojang-minecraft Module
-             url: mojang-minecraft/mojang-minecraft.md
+           - text: minecraft/server Module
+             url: minecraft/server/minecraft-server.md
       - linkListType: reference
         links:
            - text: World Class
-             url: mojang-minecraft/World.md
+             url: minecraft/server/World.md
            - text: Dimension Class
-             url: mojang-minecraft/Dimension.md
+             url: minecraft/server/Dimension.md
            - text: Block Class
-             url: mojang-minecraft/Block.md
+             url: minecraft/server/Block.md
            - text: Entity Class
-             url: mojang-minecraft/Entity.md
+             url: minecraft/server/Entity.md
            - text: ItemStack Class
-             url: mojang-minecraft/ItemStack.md
+             url: minecraft/server/ItemStack.md
   # Card (optional)
-  - title: mojang-minecraft-ui
+  - title: minecraft/server-ui
     linkLists:
       - linkListType: overview
         links:
-           - text: mojang-minecraft-ui Module
-             url: mojang-minecraft-ui/mojang-minecraft-ui.md
+           - text: minecraft/server-ui Module
+             url: minecraft/server-ui/minecraft-server-ui.md
       - linkListType: reference
         links:
            - text: ActionFormData Class
-             url: mojang-minecraft-ui/ActionFormData.md
+             url: minecraft/server-ui/ActionFormData.md
            - text: MessageFormData Class
-             url: mojang-minecraft-ui/MessageFormData.md             
+             url: minecraft/server-ui/MessageFormData.md             
            - text: ModalFormData Class
-             url: mojang-minecraft-ui/ModalFormData.md
+             url: minecraft/server-ui/ModalFormData.md
   # Card (optional)
-  - title: mojang-gametest
+  - title: minecraft/server-gametest
     linkLists:
       - linkListType: overview
         links:
-           - text: mojang-gametest Module
-             url: mojang-gametest/mojang-gametest.md
+           - text: minecraft/server-gametest Module
+             url: minecraft/server-gametest/minecraft-server-gametest.md
       - linkListType: reference
         links:
            - text: RegistrationBuilder Class
-             url: mojang-gametest/RegistrationBuilder.md
+             url: minecraft/server-gametest/RegistrationBuilder.md
            - text: Test Class
-             url: mojang-gametest/Test.md
+             url: minecraft/server-gametest/Test.md

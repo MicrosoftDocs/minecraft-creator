@@ -1,23 +1,23 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:balloonable
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:balloonable
 
-`minecraft:balloonable` allows this entity to have a balloon attached and defines the conditions and events for this entity when is ballooned.
+`minecraft:balloonable` allows the entity to have a balloon attached and defines the conditions and events for the entity when is ballooned.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|soft_distance| 2.0 | Decimal | Distance in blocks at which the 'spring' effect that lifts it. |
-|max_distance| 10.0 | Decimal | Distance in blocks at which the balloon breaks |
-|on_balloon| *not set* | String | Event to call when this entity is ballooned. |
-|on_unballoon| *not set* | String | Event to call when this entity is unballooned. |
-|mass| 1.0 | Decimal | Mass that this entity will have when computing balloon pull forces.|
+|soft_distance| 2.0 | Decimal | Distance in blocks where the 'spring' effect lifts the entity. |
+|max_distance| 10.0 | Decimal | Distance in blocks where the balloon breaks. |
+|on_balloon| *not set* | String | Event to call when the entity is ballooned. |
+|on_unballoon| *not set* | String | Event to call when the entity is unballooned. |
+|mass| 1.0 | Decimal | Mass that the entity has when computing balloon pull forces.|
 
 
 ## Example

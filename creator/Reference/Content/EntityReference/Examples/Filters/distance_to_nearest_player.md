@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - distance_to_nearest_player
 ms.prod: gaming
 ---
@@ -62,7 +62,9 @@ ms.prod: gaming
 
 ### zoglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zoglin.json" range="141-181":::
+```json
+{ "test": "distance_to_nearest_player", "operator": ">", "value": 54 }
+```
 
 ## Vanilla entities using `distance_to_nearest_player`
 

@@ -1,6 +1,6 @@
 ---
-author: JDHeaden
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Volume Documentation - Properties & Descriptions
 ms.prod: gaming
 ---
@@ -36,7 +36,7 @@ These properties are part of the Volume Definition and Volume Properties that ar
 
 | Name| Default Value| Type| Description |
 |:----------|:----------|:----------|:----------|
-| format_version|*not set* | String|  Specifies the version of the game this entity was made in. Minimum supported version is 1.17.0. Current supported version is 1.19.30.|
+| format_version|*not set* | String|  Specifies the version of the game this entity was made in. Minimum supported version is 1.17.0. Current supported version is 1.19.80. |
 
 ### Identifier
 

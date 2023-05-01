@@ -63,7 +63,16 @@ ms.prod: gaming
 
 ### fish
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/fish.json" range="54-61":::
+```json
+"minecraft:navigation.generic": { 
+        "is_amphibious": false,
+        "can_path_over_water": false,
+        "can_swim": true,
+        "can_walk": false,
+        "can_breach": false,
+        "can_sink": false
+      }
+```
 
 ## Vanilla entities using `minecraft:navigation.generic`
 

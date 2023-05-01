@@ -1,13 +1,13 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:spawn_entity
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:spawn_entity
 
-`minecraft:spawn_entity` adds a timer after which this entity will spawn another entity or item (similar to vanilla's chicken's egg-laying behavior).
+`minecraft:spawn_entity` adds a timer after which the entity will spawn another entity or item (similar to vanilla's chicken's egg-laying behavior).
 
 ## Parameters
 
@@ -58,7 +58,19 @@ ms.prod: gaming
 
 ### chicken
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/chicken.json" range="74-84":::
+```json
+"minecraft:spawn_entity": {
+    "entities": {
+        "min_wait_time": 300,
+        "max_wait_time": 600,
+        "spawn_sound": "plop",
+            "spawn_item": "egg",
+            "filters": {
+              "test": "rider_count", "subject": "self", "operator": "==", "value": 0
+            }
+    }
+}
+```
 
 ## Vanilla entities using `minecraft:spawn_entity`
 

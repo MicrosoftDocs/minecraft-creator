@@ -1,14 +1,14 @@
 ---
-author: mikeam
-ms.author: mikeam
-title: New execute command support in Minecraft version 1.19.10
+author: mammerla
+ms.author: v-jillheaden
+title: New execute command support in Minecraft version 1.19.70
 ms.prod: gaming
 description: A guide to new execute command syntax
 ---
 
-# New execute command support in Minecraft version 1.19.10
+# New execute command support in Minecraft version 1.19.70
 
-We're working on a new, extended version of Minecraft's `/execute` command. Starting with version 1.19.10 and with experimental capabilities, we're introducing the next step for the `/execute` command, which moves the command in Minecraft: Bedrock Edition towards parity with Java edition. This move also adds new functionality for creators. In this article, you'll see upcoming changes for the experimental `/execute` command, the new powers it will bring, and how you can get started.
+We're working on a new, extended version of Minecraft's `/execute` command. Starting with version 1.19.70, we're introducing the next step for the `/execute` command, which moves the command in Minecraft: Bedrock Edition towards parity with Java edition. This move also adds new functionality for creators. In this article, you'll see upcoming changes for the `/execute` command, the new powers it will bring, and how you can get started.
 
 ## What the /execute command does, today
 
@@ -27,42 +27,32 @@ If you have development experience, it might be helpful to think about the execu
 
 ## How we're updating the execute command
 
-The biggest news is that with the 1.19.10 update, how the command works will fundamentally shift over to adopt Java edition syntax, with new keywords such as `as`, `at`, and `if`.  This also gives the command much more room to add new capabilities moving forward.
+The biggest news is that with the 1.19.70 update, how the command works will fundamentally shift over to adopt Java edition syntax, with new keywords such as `as`, `at`, and `if`.  This also gives the command much more room to add new capabilities moving forward.
 
-With this foundation in place, the new experimental command will have additional capabilities, such as:
+With this foundation in place, the new command will have additional capabilities, such as:
 
 * The ability to use score as a conditional for how commands execute.  For example, you can run commands for players based on what their score might be.
 * New flexibility on how you can test for the state of blocks nearby to an entity through the use of multiple `if` and `unless` statements.
 
-Note that the `/execute` command does not have full parity with Java Edition's `/execute` command, yet. The new Bedrock Edition experimental `/execute` command does not support storing the results of commands or working with conditions based on the rotation of entities, for example. Stay tuned for more to come with the `/execute` command.
+Note that the `/execute` command does not have full parity with Java Edition's `/execute` command, yet. The new Bedrock Edition `/execute` command does not support storing the results of commands or working with conditions based on the rotation of entities, for example. Stay tuned for more to come with the `/execute` command.
 
 ## Getting started with the new execute command
 
 Let's create a world that can use the new /execute syntax and explore some of the new features.
 
-### Use version 1.19.10 or higher
+### Use version 1.19.70 or higher
 
-To get started, you'll want to use version 1.19.10 or higher of Minecraft. One of the best ways to get the latest versions of Minecraft is to download Minecraft Preview, which is available from the Xbox store on Windows as well as available on iOS and Xbox. See more on [Minecraft Preview here](https://help.minecraft.net/hc/articles/4423653831821-Minecraft-Preview-FAQ).
+To get started, you'll want to use version 1.19.70 or higher of Minecraft. One of the best ways to get the latest versions of Minecraft is to download Minecraft Preview, which is available from the Xbox store on Windows as well as available on iOS and Xbox. See more on [Minecraft Preview here](https://help.minecraft.net/hc/articles/4423653831821-Minecraft-Preview-FAQ).
 
-### Create a new world with the "Upcoming Creator Features" experiment
+**IMPORTANT**: If you have commands in command blocks that were written with the older Bedrock-specific syntax, those commands will continue to work like they always have. However, if you decide to edit those command blocks, you will need to rewrite the command to have the newer syntax.
 
-We need the Upcoming Creator Features experiment toggle to use the new execute command.
+### Update a Behavior Pack to version 1.19.70
 
-**IMPORTANT**: By adding experiments to your world, this will likely mean that upcoming changes to Minecraft could fundamentally alter or break how your world works. Only turn on experiments, such as Upcoming Creator Features, on Worlds that you have backed up and/or are comfortable if they get broken.
-
-With a version of Minecraft higher than 1.19.10, and with a world with "Upcoming Creator Features", you can then get started with commands. Within the Minecraft chat/command window, the /execute command will now show the new syntax.
-
-Within Command Blocks within the world, as you edit command blocks, it will take in the new syntax for the execute command.
-
-**IMPORTANT**: If you have commands that were written with the older Bedrock-specific syntax, those commands will continue to work as-is. However, if you decide to edit those command blocks, you will need to rewrite the command to adopt to the newer syntax.
-
-### Update a Behavior Pack to version 1.19.10
-
-Commands are also very commonly used within Behavior Packs. To opt into the new Command Syntax, you'll need a minimum engine version (min_engine_version) of 1.19.10 expressed within your behavior pack's manifest.json file (along with the Upcoming Creator Features experiment turned on within any worlds you use that behavior pack within).  This will, in turn, enable the new execute command syntax in your MCFunctions, tick.json files, and more within your behavior pack.  When the new execute command syntax comes out of experimental, the min_engine_version needed to get the new syntax will be incremented.
+Commands are also very commonly used within Behavior Packs. To opt into the new Command Syntax, you'll need a minimum engine version (min_engine_version) of **1.19.70** expressed within your behavior pack's **manifest.json** file. This will enable the new execute command syntax in your MCFunctions, tick.json files, and more within your behavior pack. 
 
 ## Major syntax changes and their equivalents
 
-Let's dig into the updated new command syntax in 1.19.10, and how you can upgrade existing commands to the new syntax.
+Let's dig into the updated new command syntax in 1.19.70 and how you can upgrade existing commands to the new syntax.
 
 ### Summon a salmon for every fox
 
@@ -70,13 +60,13 @@ In the older Minecraft: Bedrock Edition syntax, commands are expressed in the fo
 
 (earlier /execute command syntax): `execute @e[type=fox] ^ ^ ^ summon salmon ^ ^1 ^`
 
-This command will select entities of type fox (`@e[type=fox]`), and then, at a position above those respective foxes' head (`^ ^1 ^`) will summon salmon for those foxes to consider.
+This command will select entities of type fox (`@e[type=fox]`), and then, at a position above those respective foxes' heads, (`^ ^1 ^`) will summon salmon for those foxes to consider.
 
-![Three summoned salmon](Media/CommandsNewExecute/threesummoned.png)
+![Three summoned salmon next to three foxes](Media/CommandsNewExecute/threesummoned.png)
 
 Note that in this screenshot, three salmon were spawned next to the three nearby foxes.
 
-In the new Minecraft execute command syntax, commands are expressed in a more structured form, but the good news is that the command is more readable.  The equivalent command is:
+In the new Minecraft execute command syntax, commands are expressed in a more structured form and the command is more readable. The equivalent command is:
 
 (new /execute command syntax): `execute as @e[type=fox] positioned as @s run summon salmon ^ ^1 ^`
 
@@ -99,18 +89,18 @@ With this command:
 
 This variant of the execute command will only run for foxes (`@e[type=fox]`) that are stepping on stone (`detect ^ ^-1 ^ stone 0`).  `^ ^-1 ^` in this context will check to see if the block at y=-1 (underneath) the fox is a basic variant of type stone (stone 0).
 
-![Older version of conditionally summoning salmon](Media/CommandsNewExecute/conditionalsummonold.png)
+![Older version of command to conditionally summon salmon](Media/CommandsNewExecute/conditionalsummonold.png)
 
 With the newer syntax, the execute command is a bit longer, but also more explanatory with room for expansion in the future:
 
-(newer /execute command syntax): `execute @e[type=fox] positioned as @s if block ^ ^-1 ^ stone 0 run summon salmon`
+(newer /execute command syntax): `execute as @e[type=fox] positioned as @s if block ^ ^-1 ^ stone 0 run summon salmon`
 
 This is the same as the command before, but notice the new `if block ^ ^-1 ^ stone 0` subcommand. This new subcommand basically says that if the block underneath (`^ ^-1 ^`) the selected entities (foxes) is the basic variant of stone (stone 0), then only run the command in that condition.
 
 And this gives the same result as before:
-![Newer version of conditionally summoning salmon](Media/CommandsNewExecute/conditionalsummonnew.png)
+![Newer version of command to conditionally summon salmon](Media/CommandsNewExecute/conditionalsummonnew.png)
 
-Note that the command summoned the salmon for the fox standing on stone, but the if block test failed for the other two foxes not standing on stone.
+Note that the command summoned the salmon for the fox standing on stone, but the block test failed for the other two foxes not standing on stone. So, no salmon for them!
 
 ## But wait, there's more
 
@@ -133,7 +123,7 @@ The score variant, typically used in conjunction with player selectors, will onl
 
 ## Summing up
 
-With new flexibility in the /execute command, you can now express more sophisticated game logic across your command blocks, MCFunctions, and more.  This capability is still in experimental, but we hope to release it out of experimental soon.  In the meanwhile, we look forward to your feedback!
+With new flexibility in the /execute command, you can now express more sophisticated game logic across your command blocks, MCFunctions, and more!
 
 Please open any bugs or issues via our [Report a Bug tool](https://www.minecraft.net/bugs), or log an issue in our GitHub repository at https://github.com/MicrosoftDocs/minecraft-creator.  
 

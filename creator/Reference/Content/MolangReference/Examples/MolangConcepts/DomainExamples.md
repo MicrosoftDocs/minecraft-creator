@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: Molang Documentation - Domain Examples
 ms.prod: gaming

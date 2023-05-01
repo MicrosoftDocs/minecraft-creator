@@ -1,0 +1,1332 @@
+{
+  "redirections": [    
+    {
+        "source_path": "minecraft/server/IRawMessage.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/rawmessage",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "minecraft/server/EntityCreateEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityspawnevent",
+        "redirect_document_id": false
+    },
+    {
+      "source_path": "mojang-gametest/EntityCreateEventSignal.md",
+      "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityspawneventsignal",
+      "redirect_document_id": false
+    },
+    {
+          "source_path": "mojang-gametest/FenceConnectivity.md",
+          "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-gametest/fenceconnectivity",
+          "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-gametest/GameTestSequence.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-gametest/gametestsequence",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-gametest/mojang-gametest.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-gametest/minecraft-server-gametest",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-gametest/RegistrationBuilder.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-gametest/registrationbuilder",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-gametest/SculkSpreader.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-gametest/sculkspreader",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-gametest/SimulatedPlayer.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-gametest/simulatedplayer",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-gametest/Tags.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-gametest/tags",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-gametest/Test.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-gametest/test",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BeforeChatEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/beforechatevent",
+        "redirect_document_id": false
+    },
+        {
+        "source_path": "mojang-minecraft/BeforeChatEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/beforechateventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/IEntityComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/ientitycomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemType.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemtype",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BeforeDataDrivenEntityTriggerEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/beforedatadrivenentitytriggerevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BeforeDataDrivenEntityTriggerEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/beforedatadrivenentitytriggereventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BeforeExplosionEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/beforeexplosionevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BeforeExplosionEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/beforeexplosioneventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BeforeItemDefinitionEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/beforeitemdefinitioneventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BeforeItemDefinitionTriggeredEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/beforeitemdefinitiontriggeredevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BeforeItemUseEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/beforeitemuseevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BeforeItemUseEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/beforeitemuseeventsignal",
+        "redirect_document_id": false
+    },    {
+        "source_path": "mojang-minecraft/ItemUseEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemuseevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemUseEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemuseeventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BeforeItemUseOnEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/beforeitemuseonevent",
+        "redirect_document_id": false
+    },    {
+        "source_path": "mojang-minecraft/BeforeItemUseOnEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/beforeitemuseoneventsignal",
+        "redirect_document_id": false
+    },    {
+        "source_path": "mojang-minecraft/ItemUseOnEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemuseonevent",
+        "redirect_document_id": false
+    },    {
+        "source_path": "mojang-minecraft/ItemUseOnEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemuseoneventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BeforePistonActivateEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/beforepistonactivateevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BeforePistonActivateEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/beforepistonactivateeventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BeforeWatchdogTerminateEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/beforewatchdogterminateevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BeforeWatchdogTerminateEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/beforewatchdogterminateeventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/Block.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/block",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockAreaSize.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blockareasize",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockBreakEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blockbreakevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockBreakEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blockbreakeventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blockcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blockevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockExplodeEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blockexplodeevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockExplodeEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blockexplodeeventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockHitInformation.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blockhitinformation",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockInventoryComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blockinventorycomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockInventoryComponentContainer.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blockinventorycomponentcontainer",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockLavaContainerComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blocklavacontainercomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockLocation.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blocklocation",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockPermutation.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blockpermutation",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockPistonComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blockpistoncomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockPlaceEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blockplaceevent",
+        "redirect_document_id": false
+    },    {
+        "source_path": "mojang-minecraft/BlockPlaceEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blockplaceeventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockPotionContainerComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blockpotioncontainercomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockProperties.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blockproperties",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockRaycastOptions.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blockraycastoptions",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockRecordPlayerComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blockrecordplayercomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockSignComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blocksigncomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockSnowContainerComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blocksnowcontainercomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockType.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blocktype",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BlockWaterContainerComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/blockwatercontainercomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/BoolBlockProperty.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/boolblockproperty",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ButtonPushEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/buttonpushevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ButtonPushEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/buttonpusheventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ChatEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/chatevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ChatEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/chateventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/Color.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/color",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/CommandResult.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/commandresult",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/Container.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/container",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/DataDrivenEntityTriggerEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/datadrivenentitytriggerevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/DataDrivenEntityTriggerEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/datadrivenentitytriggereventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/DefinitionModifier.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/definitionmodifier",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/Dimension.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/dimension",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/Direction.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/direction",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/DirectionBlockProperty.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/directionblockproperty",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/DisplaySlotId.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/displayslotid",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/DynamicPropertiesDefinition.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/dynamicpropertiesdefinition",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/Effect.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/effect",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EffectAddEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/effectaddevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EffectAddEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/effectaddeventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EffectType.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/effecttype",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/Enchantment.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/enchantment",
+        "redirect_document_id": false
+    },    
+    {
+        "source_path": "mojang-minecraft/EnchantmentList.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/enchantmentlist",
+        "redirect_document_id": false
+    },    
+    {
+        "source_path": "mojang-minecraft/EnchantmentSlot.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/enchantmentslot",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EnchantmentType.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/enchantmenttype",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/Entity.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entity",
+        "redirect_document_id": false
+    },    
+    {
+        "source_path": "mojang-minecraft/EntityNavigationClimbComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitynavigationclimbcomponent",
+        "redirect_document_id": false
+    },    
+    {
+        "source_path": "mojang-minecraft/EntityNavigationFloatComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitynavigationfloatcomponent",
+        "redirect_document_id": false
+    },    
+    {
+        "source_path": "mojang-minecraft/EntityNavigationFlyComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitynavigationflycomponent",
+        "redirect_document_id": false
+    },    
+    {
+        "source_path": "mojang-minecraft/EntityNavigationGenericComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitynavigationgenericcomponent",
+        "redirect_document_id": false
+    },    
+    {
+        "source_path": "mojang-minecraft/EntityNavigationHoverComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitynavigationhovercomponent",
+        "redirect_document_id": false
+    },    
+    {
+        "source_path": "mojang-minecraft/EntityNavigationWalkComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitynavigationwalkcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityAddRiderComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityaddridercomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityAgeableComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityageablecomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityBreathableComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitybreathablecomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityCanClimbComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitycanclimbcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityCanFlyComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitycanflycomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityCanPowerJumpComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitycanpowerjumpcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityColorComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitycolorcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityCreateEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityspawnevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityCreateEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityspawneventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityDamageCause.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitydamagecause",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityDataDrivenTriggerEventOptions.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitydatadriventriggereventoptions",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityDefinitionFeedItem.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitydefinitionfeeditem",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityEventOptions.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityeventoptions",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityFireImmuneComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityfloatsinliquidcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityFloatsInLiquidComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityfloatsinliquidcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityFlyingSpeedComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityflyingspeedcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityFrictionModifierComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityfrictionmodifiercomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityGroundOffsetComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitygroundoffsetcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityHealableComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityhealablecomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityHealthComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityhealthcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityHitEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityhitevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityHitEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityhiteventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityHitInformation.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityhitinformation",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityHurtEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityhurtevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityHurtEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityhurteventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityInventoryComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityinventorycomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityIsBabyComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityisbabycomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityIsChargedComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityischargedcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityIsChestedComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityischestedcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityIsDyableComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityisdyablecomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityIsHiddenWhenInvisibleComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityishiddenwheninvisiblecomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityIsIgnitedComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityisignitedcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityIsIllagerCaptainComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityisillagercaptaincomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityIsSaddledComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityissaddledcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityIsShakingComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityisshakingcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityIsShearedComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityisshearedcomponent",
+        "redirect_document_id": false
+    },    {
+        "source_path": "mojang-minecraft/EntityIsStunnedComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityisstunnedcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityIsStackableComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityisstackablecomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityIsTamedComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityistamedcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityItemComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityitemcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityIterator.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityiterator",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityLavaMovementComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitylavamovementcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityLeashableComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityleashablecomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityMarkVariantComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitymarkvariantcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityMountTamingComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitymounttamingcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityMovementAmphibiousComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitymovementamphibiouscomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityMovementBasicComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitymovementbasiccomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityMovementComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitymovementcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityMovementFlyComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitymovementflycomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityMovementGenericComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitymovementgenericcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityMovementGlideComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitymovementglidecomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityMovementJumpComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitymovementjumpcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityMovementSkipComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitymovementskipcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityMovementSwayComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitymovementswaycomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityMovementClimbComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitymovementclimbcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityMovementFloatComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitymovementfloatcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityMovementHoverComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitymovementhovercomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityMovementWalkComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitymovementwalkcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityPushThroughComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitypushthroughcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityQueryOptions.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityqueryoptions",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityQueryScoreOptions.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityqueryscoreoptions",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityRaycastOptions.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityraycastoptions",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityRideableComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityrideablecomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityScaleComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityscalecomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntitySkinIdComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityskinidcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityStrengthComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitystengthcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityTameableComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitytameablecomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityType.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitytype",
+        "redirect_document_id": false
+    },    
+    {
+        "source_path": "mojang-minecraft/EntityTypeIterator.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitytypeiterator",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityTypes.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitytypes",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityUnderwaterMovementComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityunderwatermovementcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityVariantComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entityvariantcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/EntityWantsJockeyComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/entitywantsjockeycomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/Events.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/events",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ExplosionEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/explosionevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ExplosionEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/explosioneventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ExplosionOptions.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/explosionoptions",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/feeditem.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/feeditem",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/feeditemeffect.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/feeditemeffect",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/FilterGroup.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/filtergroup",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/FluidContainer.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/fluidcontainer",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/FluidType.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/fluidtype",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/GameMode.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/gamemode",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/IBlockProperty.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/iblockproperty",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/IntBlockProperty.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/intblockproperty",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/InventoryComponentContainer.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/inventorycomponentcontainer",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/IRawMessage.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/irawmessage",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemCompleteChargeEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemcompletechargeevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemCompleteChargeEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemcompletechargeeventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemCooldownComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemcooldowncomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemDefinitionEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemdefinitioneventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemDefinitionTriggeredEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemdefinitiontriggeredevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemDurabilityComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemdurabilitycomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemEnchantsComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemenchantscomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemFoodComponent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemfoodcomponent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemReleaseChargeEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemreleasechargeevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemReleaseChargeEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemreleasechargeeventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/Items.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/items",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemStack.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemstack",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemStartChargeEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemstartchargeevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemStartChargeEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemstartchargeeventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemStartUseOnEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemstartuseonevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemStartUseOnEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemstartuseoneventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemStopChargeEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemstopchargeevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemStopChargeEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemstopchargeeventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemStopUseOnEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemstopuseonevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ItemStopUseOnEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/itemstopuseoneventsignal",
+        "redirect_document_id": false
+    }, 
+    {
+        "source_path": "mojang-minecraft/IVec3.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/vector3",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/LeverActionEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/leveractionevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/LeverActionEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/leveractioneventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/Location.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/location",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/MinecraftBlockTypes.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/minecraftblocktypes",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/MinecraftDimensionTypes.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/minecraftdimensiontypes",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/MinecraftEffectTypes.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/minecrafteffecttypes",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/MinecraftEnchantmentTypes.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/minecraftenchantmenttypes",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/MinecraftEntityTypes.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/minecraftentitytypes",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/MinecraftItemTypes.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/minecraftitemtypes",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/mojang-minecraft.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/minecraft-server",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/MolangVariableMap.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/molangvariablemap",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/MusicOptions.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/musicoptions",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/NavigationResult.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/navigationresult",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/NumberRange.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/numberrange",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ObjectiveSortOrder.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/objectivesortorder",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/PistonActivateEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/pistonactivateevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/PistonActivateEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/pistonactivateeventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/Player.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/player",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/PlayerInventoryComponentContainer.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/playerinventorycomponentcontainer",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/PlayerIterator.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/playeriterator",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/PlayerJoinEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/playerjoinevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/PlayerJoinEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/playerjoineventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/PlayerLeaveEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/playerleaveevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/PlayerLeaveEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/playerleaveeventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ProjectileHitEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/projectilehitevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ProjectileHitEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/projectilehiteventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/PropertyRegistry.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/propertyregistry",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/Scoreboard.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/scoreboard",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ScoreboardIdentity.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/scoreboardidentity",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ScoreboardIdentityType.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/scoreboardidentitytype",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ScoreboardObjective.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/scoreboardobjective",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ScoreboardObjectiveDisplayOptions.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/scoreboardobjectivedisplayoptions",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ScoreboardScoreInfo.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/scoreboardscoreinfo",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/ScreenDisplay.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/screendisplay",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/Seat.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/seat",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/SoundOptions.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/soundoptions",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/StringBlockProperty.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/stringblockproperty",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/System.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/system",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/SystemEvents.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/systemevents",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/TickEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/tickevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/TickEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/tickeventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/Trigger.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/trigger",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/Vector.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/vector",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/WatchdogTerminateReason.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/watchdogterminatereason",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/WeatherChangeEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/weatherchangeevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/WeatherChangeEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/weatherchangeeventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/World.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/world",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/WorldInitializeEvent.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/worldinitializeevent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/WorldInitializeEventSignal.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/worldinitializeeventsignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft/XYRotation.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server/xyrotation",
+        "redirect_document_id": false
+    },
+
+    {
+        "source_path": "mojang-minecraft-server-admin/mojang-minecraft-server-admin.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-admin/minecraft-server-admin",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft-server-admin/SecretString.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-admin/secretstring",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft-server-admin/ServerSecrets.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-admin/serversecrets",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft-server-admin/ServerVariables.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-admin/servervariables",
+        "redirect_document_id": false
+    },
+
+    {
+        "source_path": "mojang-net/HttpClient.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-net/httpclient",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-net/HttpHeader.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-net/httpheader",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-net/HttpRequest.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-net/httprequest",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-net/HttpRequestMethod.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-net/httprequestmethod",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-net/HttpResponse.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-net/httpresponse",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-net/mojang-net.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-net/minecraft-server-net",
+        "redirect_document_id": false
+    },
+
+
+    {
+        "source_path": "mojang-minecraft-ui/ActionFormData.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-ui/actionformdata",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft-ui/ActionFormResponse.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-ui/actionformresponse",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft-ui/FormCancelationReason.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-ui/formcancelationreason",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft-ui/FormResponse.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-ui/formresponse",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft-ui/MessageFormData.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-ui/messageformdata",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft-ui/MessageFormResponse.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-ui/messageformresponse",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft-ui/ModalFormData.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-ui/modalformdata",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft-ui/ModalFormResponse.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-ui/modalformresponse",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "mojang-minecraft-ui/mojang-minecraft-ui.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-ui/minecraft-server-ui.md",
+        "redirect_document_id": false
+    }
+  ]
+}

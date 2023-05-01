@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:transformation
 ms.prod: gaming
 ---
@@ -17,20 +17,12 @@ ms.prod: gaming
 | begin_transform_sound| *not set*| String| Sound to play when the transformation starts |
 | drop_equipment| False| Boolean| Cause the entity to drop all equipment upon transformation |
 | drop_inventory| False| Boolean| Cause the entity to drop all items in inventory upon transformation |
-| into| *not set*| | String| Entity Definition that this entity will transform into. |
-| keep_level| False| Boolean| If this entity has trades and has leveled up, it should maintain that level after transformation. |
-| keep_owner| False| Boolean| If this entity is owned by another entity, it should remain owned after transformation. |
-| preserve_equipment| False| Boolean| Cause the entity to keep equipment after going through transformation |
+| into| *not set*| | String| Entity Definition that the entity will transform into. |
+| keep_level| False| Boolean| If the entity has trades and has leveled up, it should maintain that level after transformation. |
+| keep_owner| False| Boolean| If the entity is owned by another entity, it should remain owned after transformation. |
+| preserve_equipment| False| Boolean| Causes the entity to keep equipment after going through transformation |
 | transformation_sound| *not set*| String| Sound to play when the entity is done transforming |
 | delay| *not set*| JSON Object| Defines the properties of the delay for the transformation|
-
-### add
-
-`add` is a JSON Object defined by ten parameters. Each item has the following properties:
-
-| Name| Default Value| Type| Description|
-|:-----------|:-----------|:-----------|:-----------|
-| component_groups| *not set*| List| Names of component groups to add |
 
 ### delay
 
@@ -65,13 +57,17 @@ ms.prod: gaming
 
 ## Vanilla entities examples
 
-### husk
-
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/husk.json" range="41-48":::
-
 ### piglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/piglin.json" range="49-55":::
+```json
+"minecraft:transformation": {
+    "into": "minecraft:zombie_pigman",
+    "transformation_sound" : "converted_to_zombified",
+    "keep_level": true,
+    "drop_inventory": true,
+    "preserve_equipment": true
+}
+```
 
 ## Vanilla entities using `minecraft:transformation`
 

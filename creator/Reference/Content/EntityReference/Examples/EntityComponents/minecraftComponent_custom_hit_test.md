@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:custom_hit_test
 ms.prod: gaming
 ---

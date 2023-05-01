@@ -3,7 +3,7 @@ author: mammerla
 ms.author: v-jillheaden
 title: Loot Replace Entity
 ms.prod: gaming
-description: "Introduction to the Loot Overload: `/loot replace entity` command"
+description: "Introduction to the Loot Overload: '/loot replace entity' command"
 ---
 
 # Introduction to the Loot Overload */loot replace entity*
@@ -17,7 +17,7 @@ In this tutorial you will learn the following:
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial.
+It's recommended that the following be completed before beginning this tutorial.
 
 - [Introduction to Loot Tables](IntroductionToLootTables.md)
 - [Loot and Trade Table Functions](LootAndTradeTableFunctions.md)
@@ -57,19 +57,19 @@ The `loot_table` parameter is mandatory and it must be the path of the loot tabl
 
 Examples:
 
-- In this example, slot 0 of the inventory is filled with 1 item. The path specifies that the items will be pulled from the “chests/abandoned_mineshaft” loot table.
+- In this example, slot 0 of the inventory is filled with 1 item. The path specifies that the items will be pulled from the "chests/abandoned_mineshaft" loot table.
 
-  `/loot replace entity @s slot.inventory 0 1 loot “chests/abandoned_mineshaft”`
+  `/loot replace entity @s slot.inventory 0 1 loot "chests/abandoned_mineshaft"`"
 
-- In this example, slots 2 through 5 of the inventory will be filled. You can think of it like, "starting with slot 2, fill 4 slots with loot." So, the affected slots are 2 3 4 5.
+- In this example, slots 2 through 5 of the invento"y will be filled. You can think of it like, "starting with slot 2, fill 4 slots with loot." So, the affected slots are 2 3 4 5.
 
-  `/loot replace entity @s slot.inventory 2 4 loot “chests/abandoned_mineshaft”`
+  `/loot replace entity @s slot.inventory 2 4 loot "chests/abandoned_mineshaft"`
 
-- This variation, without a count specified, will fill the player’s inventory starting from slot 2, until either the entire contents of the given loot table have been dropped or there are no more slots available to fill.
+- This variation, without a count specified, will f"ll the player's inventory starting from slot 2, until either the entire contents of the given loot table have been dropped or there are no more slots available to fill.
 
-  `/loot replace entity @s slot.inventory 2 loot “chests/abandoned_mineshaft”`
+  `/loot replace entity @s slot.inventory 2 loot "chests/abandoned_mineshaft"`
 
-### kill
+### kill"
 
 > [!NOTE]
 > The `kill` variation of the `/loot replace entity` command is different from the `/kill` command. In the context of the `/loot` command, using the`kill` variation means that the dropped loot will end up in the target entity's specified slot. You can read more about the `/kill` command in the [LootSpawn and Kill](LootSpawnAndKill.md) document.
@@ -84,7 +84,7 @@ Examples:
 
 - `/loot replace entity @s slot.inventory 3 6 kill @e[type=blaze]`
 
-This will fill the player’s inventory slots 3 through 8 with items that the player would get if they killed a blaze.
+This will fill the player's inventory slots 3 through 8 with items that the player would get if they killed a blaze.
 
 The `count` parameter works the same for the kill source variation as it does for the loot source variation.
 

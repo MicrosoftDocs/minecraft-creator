@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:on_prime
 ms.prod: gaming
 ---
@@ -20,7 +20,20 @@ ms.prod: gaming
 
 ### tnt_minecart
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/tnt_minecart.json" range="158-169":::
+```json
+ "minecraft:on_prime": {
+        "remove": {
+          "component_groups": [
+            "minecraft:inactive"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:primed_tnt"
+          ]
+        }
+      }
+```
 
 ## Vanilla entities using `minecraft:on_prime`
 

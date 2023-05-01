@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:trail
 ms.prod: gaming
 ---
@@ -15,7 +15,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 | block_type| "air"| String| The type of block you wish to be spawned by the entity as it move about the world. Solid blocks may not be spawned at an offset of (0,0,0). |
 | [spawn_filter](../FilterList.md)| *not set*| Minecraft Filter| One or more conditions that must be met in order to cause the chosen block type to spawn. |
-| spawn_offset| [0, 0, 0]| Vector [a, b, c]| The distance from the entities current position to spawn the block. Capped at up to 16 blocks away. The X value is left/right(-/+), the Z value is backward/forward(-/+), the Y value is below/above(-/+). |
+| spawn_offset| [0, 0, 0]| Vector [a, b, c]| The distance from the entity's current position to spawn the block. Capped at up to 16 blocks away. The X value is left/right(-/+), the Z value is backward/forward(-/+), the Y value is below/above(-/+). |
 
 ## Example
 
@@ -31,7 +31,12 @@ ms.prod: gaming
 
 ### snow_golem
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/snow_golem.json" range="120-123":::
+```json
+"minecraft:trail": {
+        "block_type": "minecraft:snow_layer",
+        "spawn_filter": { "test": "is_temperature_value", "operator": "<", "value": 0.81 }
+      }
+```
 
 ## Vanilla entities using `minecraft:trail`
 

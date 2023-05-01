@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.find_underwater_treasure
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.find_underwater_treasure
 
-`minecraft:behavior.find_underwater_treasure` allows an entity to locate and travel to the nearest point of interest labeled as `ruin` or `shipwreck`.
+`minecraft:behavior.find_underwater_treasure` compels an entity to locate and travel to the nearest point of interest labeled as `ruin` or `shipwreck`.
 
 ## Parameters
 
@@ -25,7 +25,7 @@ ms.prod: gaming
     "priority": 2,
     "search_range": 8,
     "cooldown_time":10,
-    "speed_multiplier":3,
+    "speed_multiplier":3
 }
 ```
 
@@ -33,7 +33,14 @@ ms.prod: gaming
 
 ### dolphin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/dolphin.json" range="278-283":::
+```json
+"minecraft:behavior.find_underwater_treasure": {
+        "priority": 2,
+        "speed_multiplier": 2.0,
+        "search_range": 30,
+        "stop_distance": 50
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.find_underwater_treasure`
 

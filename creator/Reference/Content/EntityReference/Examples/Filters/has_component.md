@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - has_component
 ms.prod: gaming
 ---
@@ -65,7 +65,11 @@ Returns true when the subject entity contains the named component.
 
 ### zombie pigman
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zombie_pigman.json" range="376-408":::
+```json
+{
+ "test": "has_component", "subject": "other", "value": "minecraft:is_baby"
+}
+```
 
 ## Vanilla entities using `has_component`
 

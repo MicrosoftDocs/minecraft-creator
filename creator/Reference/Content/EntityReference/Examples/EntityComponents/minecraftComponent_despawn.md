@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:despawn
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:despawn
 
-`minecraft:despawn` allows an entity despawn when the despawn rules or optional filters evaluate to true.
+`minecraft:despawn` compels an entity despawn when the despawn rules or optional filters evaluate to true.
 
 ## Parameters
 
@@ -53,7 +53,49 @@ ms.prod: gaming
 
 ### zoglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/zoglin.json" range="141-181":::
+```json
+"minecraft:despawn": {
+        "filters": {
+          "any_of": [
+            {
+              "all_of": [
+                {
+                  "test": "is_persistent",
+                  "value": false
+                },
+                {
+                  "test": "distance_to_nearest_player",
+                  "operator": ">",
+                  "value": 54
+                }
+              ]
+            },
+            {
+              "all_of": [
+                {
+                  "test": "is_persistent",
+                  "value": false
+                },
+                {
+                  "test": "inactivity_timer",
+                  "subject": "self",
+                  "value": 30
+                },
+                {
+                  "test": "random_chance",
+                  "value": 800
+                },
+                {
+                  "test": "distance_to_nearest_player",
+                  "operator": ">",
+                  "value": 32
+                }
+              ]
+            }
+          ]
+        }
+      }
+```
 
 ## Vanilla entities using `minecraft:despawn`
 
@@ -62,7 +104,6 @@ ms.prod: gaming
 - [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
 - [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
-- [chest_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/chest_minecart.md)
 - [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
 - [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
 - [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
@@ -112,7 +153,7 @@ ms.prod: gaming
 - [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
 - [witch](../../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)
 - [wither_skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md))
+- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
 - [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)
 - [zombie_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_horse.md)
 - [zombie_pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.md)

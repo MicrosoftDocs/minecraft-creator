@@ -1,13 +1,13 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.go_home
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.go_home
 
-`minecraft:behavior.go_home` allows an entity to travel back to where it was spawned at and trigger events upon arrival.
+`minecraft:behavior.go_home` compels an entity to travel back to where it was spawned at and trigger events upon arrival.
 
 ## Parameters
 

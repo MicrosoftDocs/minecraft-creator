@@ -1,13 +1,13 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:grows_crop
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:grows_crop
 
-`minecraft:grows_crop` could increase crop growth when entity walks over crop.
+`minecraft:grows_crop` allows increased crop growth when the entity walks over crops.
 
 ## Parameters
 
@@ -29,7 +29,12 @@ ms.prod: gaming
 
 ### bee
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/bee.json" range="216-219":::
+```json
+"minecraft:grows_crop": {
+                    "charges": 10,
+                    "chance": 0.03
+                }
+```
 
 ## Vanilla entities using `minecraft:grows_crop`
 

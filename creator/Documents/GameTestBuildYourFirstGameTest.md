@@ -15,7 +15,7 @@ A GameTest is a miniature environment along with a set of starting conditions, s
 Building sets of GameTests requires building out your GameTests via a behavior Pack, and writing some simple JavaScript code.
 
 >[!IMPORTANT]
->GameTest Framework is still experimental. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.  Check the Minecraft Changelog for details on any changes to GameTest Framework.
+>GameTest Framework is still experimental. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.  Check the Minecraft Changelog for details on any changes to Beta APIs or GameTest Framework.
 >
 >To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](ExperimentalFeaturesToggle.md).
 
@@ -24,7 +24,7 @@ Building sets of GameTests requires building out your GameTests via a behavior P
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial.
+It's recommended that the following be completed before beginning this tutorial.
 
 > [!div class="checklist"]
 >
@@ -107,11 +107,11 @@ In addition, you will need to establish dependencies on Minecraft APIs and GameT
 ``` JSON
     "dependencies": [
       {
-        "module_name": "mojang-minecraft",
+        "module_name": "@minecraft/server",
         "version": "1.0.0-beta"
       },
       {
-        "module_name": "mojang-gametest",
+        "module_name": "@minecraft/server-gametest",
         "version": "1.0.0-beta"
       }
     ]
@@ -144,11 +144,11 @@ A full manifest file for a Behavior Pack with a GameTest looks like:
     ],
     "dependencies": [
       {
-        "module_name": "mojang-minecraft",
+        "module_name": "@minecraft/server",
         "version": "1.0.0-beta"
       },
       {
-        "module_name": "mojang-gametest",
+        "module_name": "@minecraft/server-gametest",
         "version": "1.0.0-beta"
       }
     ]
@@ -171,7 +171,7 @@ When a GameTest Framework-enabled world opens with this file registered, your Ga
 
 Note that as you make changes to your scripts or structures, you will need to exit out of your world and reload it. If there are any script errors, you will see them displayed as the world is loaded.
 
-To register your GameTest scripts, you'll want to use the RegistrationBuilder class. You can see more information on the Registration Builder class at [Registration Builder](../ScriptAPI/mojang-gametest/RegistrationBuilder.md).
+To register your GameTest scripts, you'll want to use the RegistrationBuilder class. You can see more information on the Registration Builder class at [Registration Builder](../ScriptAPI/minecraft/server-gametest/RegistrationBuilder.md).
 
 An example line of JavaScript that uses RegistrationBuilder looks like:
 
@@ -195,15 +195,14 @@ Test functions are where the actual execution of a test happens.  The test funct
 Sample Test:
 
 ```javascript
-import * as GameTest from "mojang-gametest";
-import { BlockLocation } from "mojang-minecraft";
+import * as GameTest from "@minecraft/server-gametest";
 
 function simpleMobTest(test) {
   const attackerId = "fox";
   const victimId = "chicken";
 
-  test.spawn(attackerId, new BlockLocation(5, 2, 5));
-  test.spawn(victimId, new BlockLocation(2, 2, 2));
+  test.spawn(attackerId, { x: 5, y: 2, z: 5});
+  test.spawn(victimId, { x: 2, y: 2, z: 2});
 
   test.assertEntityPresentInArea(victimId, true);
 
@@ -223,15 +222,14 @@ Some things to observe in this test function:
 The full JavaScript StarterTests.js file looks like:
 
 ```javascript
-import * as GameTest from "mojang-gametest";
-import { BlockLocation } from "mojang-minecraft";
+import * as GameTest from "@minecraft/server-gametest";
 
 function simpleMobTest(test) {
   const attackerId = "fox";
   const victimId = "chicken";
 
-  test.spawn(attackerId, new BlockLocation(5, 2, 5));
-  test.spawn(victimId, new BlockLocation(2, 2, 2));
+  test.spawn(attackerId, { x: 5, y: 2, z: 5});
+  test.spawn(victimId, { x: 2, y: 2, z: 2});
 
   test.assertEntityPresentInArea(victimId, true);
 
@@ -276,7 +274,7 @@ Once you have completed your GameTest behavior pack, you'll want to try it out w
 Click on the Starter Hello World behavior packs tile to activate it.
 
 >[!IMPORTANT]
->You’ll also likely want to specify some additional changes in your environment:
+>You'll also likely want to specify some additional changes in your environment:
 >- Selecting a Flat world
 >- Retain Normal difficulty (mobs work differently in completely Peaceful worlds)
 
@@ -291,4 +289,4 @@ To run a specific test, use `/gametest run <classname>:<testName>`, like:
 You've created your first GameTest Framework test. GameTests allow you as a Creator to stretch your content, exercise your entities, and validate your gameplay mechanics. You can view the GameTest API below to learn more about what is included in the GameTest Framework.
 
 > [!div class="nextstepaction"]
-> [GameTest API](../ScriptAPI/mojang-gametest/mojang-gametest.md)
+> [GameTest API](../ScriptAPI/minecraft/server-gametest/minecraft-server-gametest.md)

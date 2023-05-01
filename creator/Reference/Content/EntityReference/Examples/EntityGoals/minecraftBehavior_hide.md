@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.hide
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.hide
 
-`minecraft:behavior.hide` allows a mob with the hide component to attempt to move to - and hide at - an owned or nearby POI.
+`minecraft:behavior.hide` compels a mob with the `hide` component to attempt to move to an owned or nearby point of interest (POI) and hide there.
 
 >[!IMPORTANT]
 > `minecraft:behavior.hide` requires a point of interest to be set in order to work properly.
@@ -38,7 +38,14 @@ ms.prod: gaming
 
 ### villager_v2
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/villager_v2.json" range="1512-1517":::
+```json
+"minecraft:behavior.hide": {
+        "priority": 0,
+        "speed_multiplier": 0.8,
+        "poi_type": "bed",
+        "duration": 30.0
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.hide`
 

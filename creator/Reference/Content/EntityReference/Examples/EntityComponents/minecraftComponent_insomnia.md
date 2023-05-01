@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:insomnia
 ms.prod: gaming
 ---
@@ -13,7 +13,7 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| days_until_insomnia| 3.0| Decimal| Number of days the mob has to stay up until the insomnia effect begins. |
+| days_until_insomnia| 3.0| Decimal| Number of days the entity has to stay up until the insomnia effect begins. |
 
 ## Example
 
@@ -27,7 +27,11 @@ ms.prod: gaming
 
 ### player
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/player.json" range="112-114":::
+```json
+"minecraft:insomnia": {
+        "days_until_insomnia": 3
+      },
+```
 
 ## Vanilla entities using `minecraft:insomnia`
 

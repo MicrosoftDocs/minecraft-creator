@@ -1,13 +1,13 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.equip_item
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.equip_item
 
-`minecraft:behavior.equip_item` causes an entity to equip an item.
+`minecraft:behavior.equip_item` compels an entity to equip an item.
 
 ## Parameters
 

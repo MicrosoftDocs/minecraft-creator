@@ -1,21 +1,21 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:scheduler
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:scheduler
 
-`minecraft:scheduler` fires off scheduled mob events at time of day events.
+`minecraft:scheduler` initiates scheduled mob events during time of day events.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| scheduled_events| *not set*| List| The list of triggers that fire when the conditions match the given filter criteria. If any filter criteria overlap the first defined event will be picked. |
-|min_delay_secs|0.0||Decimal| The minimum the scheduler will be delayed.|
-|max_delay_secs|0.0||Decimal| The maximum the scheduler will be delayed.|
+| scheduled_events| *not set*| List| The list of triggers that initiate when the conditions match the given filter criteria. If any filter criteria overlap, the first defined event will be picked. |
+|min_delay_secs|0.0||Decimal| The minimum amount in seconds the scheduler will be delayed.|
+|max_delay_secs|0.0||Decimal| The maximum amount in seconds the scheduler will be delayed.|
 
 
 ## Example

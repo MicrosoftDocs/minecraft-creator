@@ -1,19 +1,19 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:movement.glide
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:movement.glide
 
-`minecraft:movement.glide` is the move control for a flying mob that has a gliding movement.
+`minecraft:movement.glide` is the move control for a flying entity that has a gliding movement.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| max_turn| 30.0| Decimal| The maximum number in degrees the mob can turn per tick. |
+| max_turn| 30.0| Decimal| The maximum number in degrees the entity can turn per tick. |
 
 ## Example
 
@@ -34,6 +34,5 @@ ms.prod: gaming
 }
 
 ## Vanilla entities using `minecraft:movement.glide`
-
 
 - [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)

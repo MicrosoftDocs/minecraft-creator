@@ -1,22 +1,22 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:ageable
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:ageable
 
-`minecraft:ageable` will add a timer for the entity to grow up. It can be accelerated by giving the entity the items it likes as defined by `feed_items`.
+`minecraft:ageable` adds a timer for the entity to grow up. The timer can be accelerated by giving the entity items it likes as defined by `feed_items`.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| drop_items |*not set* | List|  List of items that the entity drops when it grows up. |
+| drop_items |*not set* | List|  List of items the entity drops when it grows up. |
 | duration | 1200.0| Decimal |  Amount of time before the entity grows up, -1 for always a baby. |
-| feed_items |*not set* | List | List of items that can be fed to the entity. Includes 'item' for the item name and 'growth' to define how much time it grows up by |
-| grow_up | *not set* | JSON Object  |  Event to run when this entity grows up. |
+| feed_items |*not set* | List | List of items that can be fed to the entity. Includes 'item' for the item name and 'growth' to define how much time growth is accelerated. |
+| grow_up | *not set* | JSON Object  |  Event to run when the entity grows up. |
 
 ## Example
 

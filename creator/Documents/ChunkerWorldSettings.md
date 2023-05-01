@@ -19,7 +19,7 @@ In this tutorial you will learn the following:
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial.
+It's recommended that the following be completed before beginning this tutorial.
 
 - [Chunker - Advanced Mode](ChunkerAdvancedMode.md)
 
@@ -30,7 +30,7 @@ It’s recommended that the following be completed before beginning this tutoria
 |Difficulty|Difficulty of the world.|
 |Gamemode|Default game mode of the world. Players will default to this game mode on first join.|
 |Generator|Generator used for generating new chunks in this world. Setting to void will automatically create the custom layer rules to generate empty chunks.|
-|World Name|Friendly name of this world (i.e “Steve and Alex Super Survival”).|
+|World Name|Friendly name of this world (i.e "Steve and Alex Super Survival").|
 |World Seed|Seed provided to the generator to generate the world.|
 |Spawn X|X coordinate of the default spawn for players.|
 |Spawn Y|Y coordinate of the default spawn for players.|
@@ -107,7 +107,7 @@ Game rules are settings that can be modified in-game by operators using the `/ga
 |Setting|Description|
 |:---|:---|
 |Center Maps To Origin|**(Bedrock Edition only)** Whether maps (items) should be centered to the origin of the map.|
-|Education Features|**(Bedrock Edition only)** Whether this world has Minecraft: Education Edition features enabled.|
+|Education Features|**(Bedrock Edition only)** Whether this world has Minecraft Education features enabled.|
 |EDU Level|**(Bedrock Edition only)** The level of the EDU features to use.|
 |Server Chunk Tick Range|**(Bedrock Edition only)** The distance of chunks around a player to tick server-side. Setting this to a high number can negatively impact performance.|
 |Start With Map Enabled|**(Bedrock Edition only)** Whether new players start with a map.|

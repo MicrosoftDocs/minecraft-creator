@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.breed
 ms.prod: gaming
 ---
@@ -24,7 +24,7 @@ ms.prod: gaming
 ```json
 "minecraft:behavior.breed":{
     "priority": 1,
-    "speed_multiplier": 3.0,
+    "speed_multiplier": 3.0
 }
 ```
 
@@ -32,7 +32,12 @@ ms.prod: gaming
 
 ### cow
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/cow.json" range="40-43":::
+```json
+"minecraft:behavior.breed": {
+          "priority": 3,
+          "speed_multiplier": 1.0
+        }
+```
 
 ## Vanilla entities using `minecraft:behavior.breed`
 

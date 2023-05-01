@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.defend_trusted_target
 
-`minecraft:behavior.defend_trusted_target` allows an entity to react with an event when a trusted target is attacked.
+`minecraft:behavior.defend_trusted_target` compels an entity to react with an event when a trusted target is attacked.
 
 >[!IMPORTANT]
 > `minecraft:behavior.defend_trusted_target` requires a mob to be set to a trusted relationship in order for the behavior to work properly.
@@ -21,6 +21,7 @@ ms.prod: gaming
 |[entity_types](../Definitions/NestedTables/entity_types.md)|*not set* | JSON Object| List of entity types that this mob considers valid targets.|
 |aggro_sound|*not set* | String| Sound to occasionally play while defending. |
 |attack_interval| 0| Integer| Time in seconds between attacks |
+|cooldown| 0.0| Decimal | The amount of time in seconds that the mob has to wait before selecting a target of the same type again. |
 |must_see| false| Boolean| If true, only entities in this mob's viewing range can be selected as targets. |
 |must_see_forget_duration| 3.0| Decimal| Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more. |
 |reevaluate_description| false| Boolean| If true, the mob will stop being targeted if it stops meeting any conditions. |
@@ -61,7 +62,6 @@ ms.prod: gaming
             "target": "self"
           }
 }
-
 ```
 
 ## Vanilla entities using `minecraft:behavior.defend_trusted_target`

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.find_mount
 
-`minecraft:behavior.find_mount` allows an entity to find another entity to mount.
+`minecraft:behavior.find_mount` compels an entity to find another entity to mount.
 
 ## Parameters
 

@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - minecraft:behavior.vex_copy_owner_target
 
-`minecraft:behavior.vex_copy_owner_target` allows an entity of the`vex` family to target the same entity as it's owner.
+`minecraft:behavior.vex_copy_owner_target` compels an entity of the`vex` family to target the same entity as its owner.
 
 > [!CAUTION]
 > `minecraft:behavior.vex_copy_owner_target` is no longer used for the `vex` entity.
@@ -25,6 +25,7 @@ ms.prod: gaming
 
 |Name |Default Value |Type |Description |
 |:-----|:--------------|:-----|:------------|
+|cooldown | 0.0 | Decimal |The amount of time in seconds that the mob has to wait before selecting a target of the same type again. |
 |filters | |Minecraft Filter|Conditions that make this entry in the list valid. |
 |max_dist |16 |Decimal |Maximum distance this mob can be away to be a valid choice. |
 |must_see |false |Boolean |If true, the mob has to be visible to be a valid choice. |
@@ -37,7 +38,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.vex_copy_owner_target":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 

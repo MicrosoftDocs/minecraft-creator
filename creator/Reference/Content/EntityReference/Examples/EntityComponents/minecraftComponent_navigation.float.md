@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:navigation.float
 ms.prod: gaming
 ---
@@ -63,7 +63,11 @@ ms.prod: gaming
 
 ### ghast
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/ghast.json" range="36-38":::
+```json
+"minecraft:navigation.float": {
+        "can_path_over_water": true
+      }
+```
 
 ## Vanilla entities using `minecraft:navigation.float`
 

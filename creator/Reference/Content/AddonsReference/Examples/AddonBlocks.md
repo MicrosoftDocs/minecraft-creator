@@ -1,6 +1,6 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Addons Documentation - Blocks
 ms.prod: gaming
 ---
@@ -21,11 +21,12 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | age_bit| Boolean| True, False| Determines if saplings should grow |
 | allow_underwater_bit| Boolean|  True, False| Determines if a TNT block works underwater |
 | attached_bit| Boolean| True, False| Determines if a tripwire is attached to another tripwire |
-|  attachment| String|standing, hanging, side, multiple| Determines the type of attachment used by a bell or grindstone block |
+| attachment| String|standing, hanging, side, multiple| Determines the type of attachment used by a bell or grindstone block |
 | bamboo_leaf_size| String| no_leaves, small_leaves, large_leaves| Determines the size of bamboo leaves |
 | bamboo_stalk_thickness| String|thin, thick| Determines the thickness of a bamboo stalk |
 | big_dripleaf_tilt| String| none, unstable, partial_tilt, full_tilt| Determines the tilt state of big dripleaf block |
 | bite_counter| Integer |0 - 6| Tracks how many bites of cake have been taken |
+| books_stored| Integer |0 - 6| Determines how many books are stored in the chiseled bookshelf |
 | brewing_stand_slot_a_bit| Boolean| True, False| Determines if a bottle is shown in slot a of the brewing stand |
 | brewing_stand_slot_b_bit| Boolean| True, False| Determines if a bottle is shown in slot b of the brewing stand |
 | brewing_stand_slot_c_bit| Boolean| True, False| Determines if a bottle is shown in slot c of the brewing stand |
@@ -129,7 +130,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 |:-----------|
 | minecraft:acacia_button |
 | minecraft:acacia_door |
+| minecraft:acacia_fence |
 | minecraft:acacia_fence_gate |
+| minecraft:acacia_hanging_sign |
+| minecraft:acacia_log |
 | minecraft:acacia_pressure_plate |
 | minecraft:acacia_stairs |
 | minecraft:acacia_standing_sign |
@@ -147,7 +151,25 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:azalea_leaves |
 | minecraft:azalea_leaves_flowered |
 | minecraft:bamboo |
+| minecraft:bamboo_block |
+| minecraft:bamboo_button |
+| minecraft:bamboo_door |
+| minecraft:bamboo_double_slab |
+| minecraft:bamboo_fence |
+| minecraft:bamboo_fence_gate |
+| minecraft:bamboo_hanging_sign |
+| minecraft:bamboo_mosaic |
+| minecraft:bamboo_mosaic_double_slab |
+| minecraft:bamboo_mosaic_slab |
+| minecraft:bamboo_mosaic_stairs |
+| minecraft:bamboo_planks |
+| minecraft:bamboo_pressure_plate |
 | minecraft:bamboo_sapling |
+| minecraft:bamboo_slab |
+| minecraft:bamboo_stairs |
+| minecraft:bamboo_standing_sign |
+| minecraft:bamboo_trapdoor |
+| minecraft:bamboo_wall_sign |
 | minecraft:barrel |
 | minecraft:barrier |
 | minecraft:basalt |
@@ -161,7 +183,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:big_dripleaf |
 | minecraft:birch_button |
 | minecraft:birch_door |
+| minecraft:birch_fence |
 | minecraft:birch_fence_gate |
+| minecraft:birch_hanging_sign |
+| minecraft:birch_log |
 | minecraft:birch_pressure_plate |
 | minecraft:birch_stairs |
 | minecraft:birch_standing_sign |
@@ -170,6 +195,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:black_candle |
 | minecraft:black_candle_cake |
 | minecraft:black_glazed_terracotta |
+| minecraft:black_wool |
 | minecraft:blackstone |
 | minecraft:blackstone_double_slab |
 | minecraft:blackstone_slab |
@@ -180,6 +206,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:blue_candle_cake |
 | minecraft:blue_glazed_terracotta |
 | minecraft:blue_ice |
+| minecraft:blue_wool |
 | minecraft:bone_block |
 | minecraft:bookshelf |
 | minecraft:border_block |
@@ -191,11 +218,13 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:brown_glazed_terracotta |
 | minecraft:brown_mushroom |
 | minecraft:brown_mushroom_block |
+| minecraft:brown_wool |
 | minecraft:bubble_column |
 | minecraft:budding_amethyst |
 | minecraft:cactus |
 | minecraft:cake |
 | minecraft:calcite |
+| minecraft:calibrated_sculk_sensor |
 | minecraft:camera |
 | minecraft:campfire |
 | minecraft:candle |
@@ -212,7 +241,25 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:chain_command_block |
 | minecraft:chemical_heat |
 | minecraft:chemistry_table |
+| minecraft:cherry_button |
+| minecraft:cherry_door |
+| minecraft:cherry_double_slab |
+| minecraft:cherry_fence |
+| minecraft:cherry_fence_gate |
+| minecraft:cherry_hanging_sign |
+| minecraft:cherry_leaves |
+| minecraft:cherry_log |
+| minecraft:cherry_planks |
+| minecraft:cherry_pressure_plate |
+| minecraft:cherry_sapling |
+| minecraft:cherry_slab |
+| minecraft:cherry_stairs |
+| minecraft:cherry_standing_sign |
+| minecraft:cherry_trapdoor |
+| minecraft:cherry_wall_sign |
+| minecraft:cherry_wood |
 | minecraft:chest |
+| minecraft:chiseled_bookshelf |
 | minecraft:chiseled_deepslate |
 | minecraft:chiseled_nether_bricks |
 | minecraft:chiseled_polished_blackstone |
@@ -257,6 +304,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:crimson_fence |
 | minecraft:crimson_fence_gate |
 | minecraft:crimson_fungus |
+| minecraft:crimson_hanging_sign |
 | minecraft:crimson_hyphae |
 | minecraft:crimson_nylium |
 | minecraft:crimson_planks |
@@ -275,9 +323,13 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:cyan_candle |
 | minecraft:cyan_candle_cake |
 | minecraft:cyan_glazed_terracotta |
+| minecraft:cyan_wool |
 | minecraft:dark_oak_button |
 | minecraft:dark_oak_door |
+| minecraft:dark_oak_fence |
 | minecraft:dark_oak_fence_gate |
+| minecraft:dark_oak_hanging_sign |
+| minecraft:dark_oak_log |
 | minecraft:dark_oak_pressure_plate |
 | minecraft:dark_oak_stairs |
 | minecraft:dark_oak_trapdoor |
@@ -287,6 +339,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:daylight_detector |
 | minecraft:daylight_detector_inverted |
 | minecraft:deadbush |
+| minecraft:decorated_pot |
 | minecraft:deepslate |
 | minecraft:deepslate_brick_double_slab |
 | minecraft:deepslate_brick_slab |
@@ -461,7 +514,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:exposed_cut_copper_stairs |
 | minecraft:exposed_double_cut_copper_slab |
 | minecraft:farmland |
-| minecraft:fence |
 | minecraft:fence_gate |
 | minecraft:fire |
 | minecraft:fletching_table |
@@ -490,9 +542,11 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:gray_candle |
 | minecraft:gray_candle_cake |
 | minecraft:gray_glazed_terracotta |
+| minecraft:gray_wool |
 | minecraft:green_candle |
 | minecraft:green_candle_cake |
 | minecraft:green_glazed_terracotta |
+| minecraft:green_wool |
 | minecraft:grindstone |
 | minecraft:hanging_roots |
 | minecraft:hard_glass |
@@ -519,7 +573,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:jukebox |
 | minecraft:jungle_button |
 | minecraft:jungle_door |
+| minecraft:jungle_fence |
 | minecraft:jungle_fence_gate |
+| minecraft:jungle_hanging_sign |
+| minecraft:jungle_log |
 | minecraft:jungle_pressure_plate |
 | minecraft:jungle_stairs |
 | minecraft:jungle_standing_sign |
@@ -541,13 +598,16 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:light_blue_candle |
 | minecraft:light_blue_candle_cake |
 | minecraft:light_blue_glazed_terracotta |
+| minecraft:light_blue_wool|
 | minecraft:light_gray_candle |
 | minecraft:light_gray_candle_cake |
+| minecraft:light_gray_wool |
 | minecraft:light_weighted_pressure_plate |
 | minecraft:lightning_rod |
 | minecraft:lime_candle |
 | minecraft:lime_candle_cake |
 | minecraft:lime_glazed_terracotta |
+| minecraft:lime_wool |
 | minecraft:lit_blast_furnace |
 | minecraft:lit_deepslate_redstone_ore |
 | minecraft:lit_furnace |
@@ -556,18 +616,18 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:lit_redstone_ore |
 | minecraft:lit_smoker |
 | minecraft:lodestone |
-| minecraft:log |
-| minecraft:log2 |
 | minecraft:loom |
 | minecraft:magenta_candle |
 | minecraft:magenta_candle_cake |
 | minecraft:magenta_glazed_terracotta |
+| minecraft:magenta_wool |
 | minecraft:magma |
 | minecraft:mangrove_button |
 | minecraft:mangrove_door |
 | minecraft:mangrove_double_slab |
 | minecraft:mangrove_fence |
 | minecraft:mangrove_fence_gate |
+| minecraft:mangrove_hanging_sign |
 | minecraft:mangrove_leaves |
 | minecraft:mangrove_log |
 | minecraft:mangrove_planks |
@@ -612,6 +672,9 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:netherreactor |
 | minecraft:normal_stone_stairs |
 | minecraft:noteblock |
+| minecraft:oak_fence |
+| minecraft:oak_hanging_sign |
+| minecraft:oak_log |
 | minecraft:oak_stairs |
 | minecraft:observer |
 | minecraft:obsidian |
@@ -619,6 +682,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:orange_candle |
 | minecraft:orange_candle_cake |
 | minecraft:orange_glazed_terracotta |
+| minecraft:orange_wool |
 | minecraft:oxidized_copper |
 | minecraft:oxidized_cut_copper |
 | minecraft:oxidized_cut_copper_slab |
@@ -630,6 +694,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:pink_candle |
 | minecraft:pink_candle_cake |
 | minecraft:pink_glazed_terracotta |
+| minecraft:pink_petals |
+| minecraft:pink_wool |
 | minecraft:piston |
 | minecraft:piston_arm_collision |
 | minecraft:planks |
@@ -669,6 +735,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:purple_candle |
 | minecraft:purple_candle_cake |
 | minecraft:purple_glazed_terracotta |
+| minecraft:purple_wool |
 | minecraft:purpur_block |
 | minecraft:purpur_stairs |
 | minecraft:quartz_block |
@@ -689,6 +756,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:red_nether_brick_stairs |
 | minecraft:red_sandstone |
 | minecraft:red_sandstone_stairs |
+| minecraft:red_wool |
 | minecraft:redstone_block |
 | minecraft:redstone_lamp |
 | minecraft:redstone_ore |
@@ -738,7 +806,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:spore_blossom |
 | minecraft:spruce_button |
 | minecraft:spruce_door |
+| minecraft:spruce_fence |
 | minecraft:spruce_fence_gate |
+| minecraft:spruce_hanging_sign |
+| minecraft:spruce_log |
 | minecraft:spruce_pressure_plate |
 | minecraft:spruce_stairs |
 | minecraft:spruce_standing_sign |
@@ -764,7 +835,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:stonecutter |
 | minecraft:stonecutter_block |
 | minecraft:stripped_acacia_log |
+| minecraft:stripped_bamboo_block |
 | minecraft:stripped_birch_log |
+| minecraft:stripped_cherry_log |
+| minecraft:stripped_cherry_wood |
 | minecraft:stripped_crimson_hyphae |
 | minecraft:stripped_crimson_stem |
 | minecraft:stripped_dark_oak_log |
@@ -777,12 +851,16 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:stripped_warped_stem |
 | minecraft:structure_block |
 | minecraft:structure_void |
+| minecraft:suspicious_gravel |
+| minecraft:suspicious_sand |
 | minecraft:sweet_berry_bush |
 | minecraft:tallgrass |
 | minecraft:target |
 | minecraft:tinted_glass |
 | minecraft:tnt |
 | minecraft:torch |
+| minecraft:torchflower |
+| minecraft:torchflower_crop |
 | minecraft:trapdoor |
 | minecraft:trapped_chest |
 | minecraft:trip_wire |
@@ -806,6 +884,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:warped_fence |
 | minecraft:warped_fence_gate |
 | minecraft:warped_fungus |
+| minecraft:warped_hanging_sign |
 | minecraft:warped_hyphae |
 | minecraft:warped_nylium |
 | minecraft:warped_planks |
@@ -851,14 +930,15 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:white_candle |
 | minecraft:white_candle_cake |
 | minecraft:white_glazed_terracotta |
+| minecraft:white_wool |
 | minecraft:wither_rose |
 | minecraft:wood |
 | minecraft:wooden_button |
 | minecraft:wooden_door |
 | minecraft:wooden_pressure_plate |
 | minecraft:wooden_slab |
-| minecraft:wool |
 | minecraft:yellow_candle |
 | minecraft:yellow_candle_cake |
 | minecraft:yellow_flower |
 | minecraft:yellow_glazed_terracotta |
+| minecraft:yellow_wool |

@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - has_target
 ms.prod: gaming
 ---
@@ -67,7 +67,9 @@ Returns true if the subject entity has a valid target.
 
 ### hoglin
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/hoglin.json" range="305-318":::
+```json
+{ "test": "has_target", "subject": "other", "value": true }
+```
 
 ## Vanilla entities using `has_target`
 

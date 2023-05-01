@@ -1,11 +1,15 @@
 {
     "cSpell.words": [
+        "beforechatevent",
+        "beforechateventsignal",
         "cooldown",
         "Dedicated",
         "despawn",
         "despawned",
         "distance",
+        "fenceconnectivity",
         "from",
+        "gametestsequence",
         "grayscale",
         "illager",
         "knockback",
@@ -13,6 +17,10 @@
         "minecraft",
         "mojang",
         "playername",
+        "registrationbuilder",
+        "scriptapi",
+        "sculkspreader",
+        "simulatedplayer",
         "stackable",
         "zoglin"
     ],

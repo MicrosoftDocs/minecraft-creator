@@ -1,20 +1,20 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:barter
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:barter
 
-`minecraft:barter` enables the component to drop an item as a barter exchange.
+`minecraft:barter` compels the entity to drop an item as a barter exchange.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|barter_table|*not set* | String| Loot table that's used to drop a random item. |
-|cooldown_after_being_attacked| 0| Integer|  Duration, in seconds, for which mob won't barter items if it was hurt |
+|barter_table|*not set* | String| Loot table used to drop a random item |
+|cooldown_after_being_attacked| 0| Integer|  Duration, in seconds, when the entity won't barter items if it was hurt |
 
 ## Example
 

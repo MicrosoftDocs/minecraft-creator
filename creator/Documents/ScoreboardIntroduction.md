@@ -1,5 +1,5 @@
 ---
-author: JDHeaden
+author: mammerla
 ms.author: v-jillheaden
 title: Introduction to Scoreboards
 ms.prod: gaming
@@ -20,7 +20,7 @@ In this tutorial you will learn the following:
 
 ### Requirements
 
-It’s recommended that the following be completed before beginning this tutorial.
+It's recommended that the following be completed before beginning this tutorial.
 
 - [Introduction to Commands](CommandsIntroduction.md)
 
@@ -55,7 +55,7 @@ Because the objectives we are tracking do not already exist in the game, you wil
 
 ## Scoreboard Objectives Commands
 
-The available scoreboard objective commands can be listed using the chat’s auto-complete feature.
+The available scoreboard objective commands can be listed using the chat's auto-complete feature.
 
 ```
 /scoreboard objectives 

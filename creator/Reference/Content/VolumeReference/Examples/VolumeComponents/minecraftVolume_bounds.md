@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-bbortree
 title: Volume Documentation - minecraft:bounds
 ms.prod: gaming

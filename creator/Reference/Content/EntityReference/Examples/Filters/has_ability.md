@@ -1,6 +1,6 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: mikeam
 title: Entity Documentation - has_ability
 ms.prod: gaming
 ---
@@ -74,7 +74,9 @@ Returns true when the subject entity has the named ability.
 
 ### Shulker
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/shulker.json" range="185-199":::
+```json
+{ "test" :  "has_ability","subject" : "other", "value" :  "instabuild"}
+```
 
 ## Vanilla entities using `has_ability`
 

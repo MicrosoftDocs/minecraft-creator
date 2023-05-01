@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.offer_flower
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.offer_flower
 
-`minecraft:behavior.offer_flower` allows an entity to offer a flower to another entity.
+`minecraft:behavior.offer_flower` compels an entity to offer a flower to another entity.
 
 >[!IMPORTANT]
 > `minecraft:behavior.offer_flower` requires a flower item to be held by the entity.
@@ -23,7 +23,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.offer_flower":{
-    "priority": 4,
+    "priority": 4
 }
 ```
 
@@ -31,7 +31,11 @@ ms.prod: gaming
 
 ### iron_golem
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/iron_golem.json" range="232-234":::
+```json
+"minecraft:behavior.offer_flower": {
+        "priority": 5
+      }
+```
 
 ## Vanilla entities using `minecraft:behavior.offer_flower`
 

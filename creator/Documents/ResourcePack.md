@@ -1,5 +1,5 @@
 ---
-author: docsbryce
+author: mammerla
 ms.author: v-bbortree
 title: Introduction to Resource Packs
 ms.prod: gaming
@@ -27,7 +27,7 @@ There is a [sample resource pack](https://github.com/microsoft/minecraft-samples
 
 ## Requirements
 
-We recommend completing the following be completed before beginning this tutorial:
+We recommend completing the following before beginning this tutorial:
 
 - [Getting Started with Add-On Development](GettingStarted.md)
 
@@ -44,7 +44,7 @@ In this section, you will start by creating a folder called **My_RESOURCE_Pack**
 1. Open your **com.mojang** folder.
 1. Double-click the **development_resource_packs** folder to open it.
 1. Add a new folder and name it **My_RESOURCE_Pack**.
-1. Double-click the ***My_RESOURCE_Pack** folder to open it.
+1. Double-click the **My_RESOURCE_Pack** folder to open it.
     ![image of newly created folder with a single Folder called My_RESOURCE_Pack located in the development resource packs folder](Media/ResourcePack/myresourcepack.png)
 
 ### Create a Manifest File
@@ -58,7 +58,7 @@ To load a resource pack into Minecraft, a manifest file will need to be created.
 - **Minimum Engine Version**: Required version of Minecraft that this pack will work in.
 
 > [!NOTE]
-> To learn more about how a manifest.json file works, see the the Addons Reference [manifest.json](../Reference/Content/AddonsReference/Examples/AddonManifest.md) documentation.
+> To learn more about how a manifest.json file works, see the Addons Reference [manifest.json](../Reference/Content/AddonsReference/Examples/AddonManifest.md) documentation.
 
  Minecraft will parse the information from the manifest file and display it in the Add-On section of the game. Inside the file, the information will be split into two separate sections: header and modules. The header section will contain the overall information for the pack, and the modules section will contain the dedicated packages information.
 
@@ -103,7 +103,7 @@ Universally Unique Identifier, or UUID for short, is a unique number used to ide
 
 ## Changing the dirt block
 
-With the manifest file completed, you can now start adding custom content to Minecraft. Let’s get started by applying a new texture to the vanilla dirt block. The first part of the process involves creating a folder structure to hold the texture.
+With the manifest file completed, you can now start adding custom content to Minecraft. Let's get started by applying a new texture to the vanilla dirt block. The first part of the process involves creating a folder structure to hold the texture.
 
 1. In File Explorer, in the **My_RESOURCE_Pack** folder, create a folder and name it **textures**.
 1. Double-click the **textures** folder to open it.

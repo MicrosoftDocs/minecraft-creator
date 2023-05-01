@@ -1,13 +1,13 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:annotation.open_door
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:annotation.open_door
 
-`minecraft:annotation.open_door` allows an entity to to open doors, assuming that that flags set up for the component to use in navigation.
+`minecraft:annotation.open_door` compels an entity to to open doors, assuming that flags have been set up for the component to use in navigation.
 
 >[!IMPORTANT]
 > `minecraft:annotation.open_door` requires the entity's navigation component to have the parameter `can_open_doors` set to `true`.

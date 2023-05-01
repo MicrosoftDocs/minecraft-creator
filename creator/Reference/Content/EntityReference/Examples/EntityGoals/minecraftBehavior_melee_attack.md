@@ -1,13 +1,13 @@
 ---
-author: docsbryce
-ms.author: v-bbortree
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.melee_attack
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.melee_attack
 
-`minecraft:behavior.melee_attack` allows entities to make close combat melee attacks.
+`minecraft:behavior.melee_attack` compels entities to make close combat melee attacks.
 
 > [!IMPORTANT]
 > In order for the entity to be able to attack its target, the entity will also need another component that sets its target, such as:
@@ -47,14 +47,14 @@ ms.prod: gaming
 ## Example
 
 ```json
-"minecraft:behavior.melee_attack": {
-    "priority": 3,
-    "melee_fov": 90,
-    "speed_multiplier": 1,
-    "track_target":false,
-    "attack_types": "minecraft:sheep",
-    "reach_multiplier": 2,
-    "attack_once": false
+"minecraft:behavior.melee_attack":{
+    "priority":3,
+ "melee_fov":90,
+ "speed_multiplier":1,
+ "track_target":false,
+ "attack_types":"minecraft:sheep",
+ "reach_multiplier":2,
+ "attack_once":false
 }
 ```
 

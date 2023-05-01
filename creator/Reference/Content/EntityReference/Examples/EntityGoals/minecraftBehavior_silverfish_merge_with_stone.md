@@ -1,13 +1,13 @@
 ---
-author: v-josjones
-ms.author: v-josjones
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.silverfish_merge_with_stone
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:behavior.silverfish_merge_with_stone
 
-`minecraft:behavior.silverfish_merge_with_stone` allows an entity to enter a stone block.
+`minecraft:behavior.silverfish_merge_with_stone` compels an entity to enter a stone block.
 
 > [!NOTE]
 > This behavior can only be used by the `silverfish` entity type.
@@ -22,7 +22,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:behavior.silverfish_merge_with_stone":{
-    "priority": 2,
+    "priority": 2
 }
 ```
 
@@ -30,7 +30,11 @@ ms.prod: gaming
 
 ### silverfish
 
-:::code language="json" source="../../../../Source/VanillaBehaviorPack/entities/silverfish.json" range="94-96":::
+```json
+"minecraft:behavior.silverfish_merge_with_stone": {
+    "priority": 5
+}
+```
 
 ## Vanilla entities using `minecraft:behavior.silverfish_merge_with_stone`
 
