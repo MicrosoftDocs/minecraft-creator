@@ -31,7 +31,7 @@ Note that all bones default to 'true,' so bones should only be defined if they a
         "identifier": "geometry:bubble_fish", 
         "bone_visibility": { 
           "bone1": true, 
-          "bone2": false, 
+          "bone2": false 
         } 
       }
 ```
