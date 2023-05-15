@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: v-jimseaman
 title: Entity Documentation - FilterList
 ms.prod: gaming
 ---
@@ -88,6 +88,7 @@ Below is a list of all the available filters within Minecraft: Bedrock Edition f
 |[random_chance](Filters/random_chance.md)|Returns true if the random chance rolls 0 out of a specified max range. |
 |[rider_count](Filters/rider_count.md)|Returns the number of riders on this entity. |
 |[surface_mob](Filters/surface_mob.md)|Tests if the subject is a surface mob. |
+|[target_distance](Filters/target_distance.md)|Tests the distance between the calling entity and its target. |
 |[trusts](Filters/trusts.md)|Returns true if the subject is trusted by entity. |
 |[weather_at_position](Filters/weather_at_position.md)|Tests the current weather, at the actor's position, against a provided weather value.|
 |[weather](Filters/weather.md)|Tests for the current weather state the entity is experiencing. |
