@@ -9,7 +9,7 @@ ms.prod: gaming
 
 Listed below are the ID values for each set of Entity JSON Entries.
 
-## AI Goals
+## AI Goal Components
 
 | JSON Name| ID |
 |:-----------:|:-----------:|

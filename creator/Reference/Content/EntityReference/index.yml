@@ -27,11 +27,11 @@ landingContent:
           - text: Spawn Rules and Data-Driven Spawning
             url:  Examples/ClientEntityDocumentation/DataDrivenSpawning.md
   # Card (optional)
-  - title: AI Goals
+  - title: AI Goal Components
     linkLists:
       - linkListType: reference
         links:
-          - text: AI Goal List
+          - text: AI Goal Component List
             url: Examples/AIGoalList.md
           - text: "NEW! minecraft:behavior.jump_to_block"
             url: Examples/EntityGoals/minecraftBehavior_jump_to_block.md
@@ -63,17 +63,6 @@ landingContent:
             url: Examples/Filters/clock_time.md
           - text: distance_to_nearest_player
             url: Examples/Filters/distance_to_nearest_player.md
- # Card (optional)
-  - title: Properties
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Properties List
-            url: Examples/PropertiesList.md
-          - text: minecraft:ambient_sound_interval
-            url: Examples/EntityProperties/minecraftProperty_ambient_sound_interval.md
-          - text: minecraft:can_climb
-            url: Examples/EntityProperties/minecraftProperty_can_climb.md
 # Card
   - title: Built-in Events
     linkLists:

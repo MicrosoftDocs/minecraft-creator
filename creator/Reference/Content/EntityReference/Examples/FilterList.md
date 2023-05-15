@@ -55,7 +55,7 @@ Below is a list of all the available filters within Minecraft: Bedrock Edition f
 |[is_family](Filters/is_family.md)|Returns true when the subject entity is a member of the named family. |
 |[is_game_rule](Filters/is_game_rule.md)|Tests whether a named game rule is active. |
 |[is_humid](Filters/is_humid.md)|Tests whether the subject is in an area with humidity. |
-|[is_immobile](Filters/is_immobile.md)|Returns true if the subject entity is immobile. An entity is immobile if it lacks AI goals, has just changed dimensions or if it is a mob and has no health. |
+|[is_immobile](Filters/is_immobile.md)|Returns true if the subject entity is immobile. An entity is immobile if it lacks AI goal components, has just changed dimensions, or if it is a mob and has no health. |
 |[is_in_village](Filters/is_in_village.md)|Tests whether the Subject is inside the bounds of a village. |
 |[is_leashed](Filters/is_leashed.md)|Returns true if the subject entity is leashed. |
 |[is_leashed_to](Filters/is_leashed_to.md)|Returns true if the subject entity leashed to the calling entity. |

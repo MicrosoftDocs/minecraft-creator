@@ -270,10 +270,8 @@
             href: Reference/Content/entityreference/Examples/Filters/TOC.yml
           - name: Components
             href: Reference/Content/entityreference/Examples/EntityComponents/TOC.yml
-          - name: AI Goals
+          - name: AI Goal Components
             href: Reference/Content/entityreference/Examples/EntityGoals/TOC.yml
-          - name: Properties
-            href: Reference/Content/entityreference/Examples/EntityProperties/TOC.yml
           - name: Triggers
             href: Reference/Content/entityreference/Examples/EntityTriggers/TOC.yml
           - name: Built-in Events

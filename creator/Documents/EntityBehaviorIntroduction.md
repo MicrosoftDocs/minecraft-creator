@@ -107,7 +107,7 @@ A good way to learn about a component and see how it's used in practice is to lo
 
 ## Priorities
 
-The option `priority` can be used on all behavior components that are AI goals. 0 is the highest priority and the default priority of all behavior components. The higher the number, the lower the priority. If the entity is busy doing a low priority behavior and a high priority behavior comes up, the entity will immediately switch to the higher priority behavior.
+The option `priority` can be used on all AI goal behavior components. 0 is the highest priority and the default priority of all behavior components. The higher the number, the lower the priority. If the entity is busy doing a low priority behavior and a high priority behavior comes up, the entity will immediately switch to the higher priority behavior.
 
 In the following example, the `hurt_by_target` component has a higher priority. If the entity gets attacked while strolling, it will immediately target the attacker.
 
