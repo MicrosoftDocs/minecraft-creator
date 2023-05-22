@@ -1,39 +1,51 @@
 ---
 author: mammerla
-ms.author: mikeam
+ms.author: v-jimseaman
 title: Entity Documentation - minecraft:biome_filter
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:biome_filter
 
-This component allows the players to specify which biomes the mob spawns in. Each biome in the game has one or more tags. These tags are used to determine what biomes mobs spawn in.
+The minecraft:biome_filter component allows creators to specify which biomes a mob spawns in. Each biome in the game has one or more tags which are used to determine what biomes mobs spawn in.
 
 > [!NOTE]
-> To learn more about how Biomes are defined in JSON, please visit [Biome Documentation - Overview](/creator/Reference/Content/BiomeReferene/Examples/BiomeOverview.md)
+> To learn more about how biomes are defined in JSON, please visit [Biome Documentation - Overview](/creator/Reference/Content/BiomeReferene/Examples/BiomeOverview.md)
 
 Below is the list of Biome tags that can be used:
 
 ## Biome Tags
 
 - animal
+- basalt_deltas
 - beach
+- bee_habitat
 - birch
+- caves
+- cherry_grove
 - cold
+- crimson_forest
 - dark_oak
 - deep
+- deep_dark
 - desert
+- dripstone_caves
 - edge
 - extreme_hills
 - flower_forest
 - forest
 - frozen
+- frozen_peaks
+- grove
 - hills
 - ice
 - ice_plains
+- jagged_peaks
 - jungle
 - lakes
 - lukewarm
+- lush_caves
+- mangrove_swamp
 - mega
 - mesa
 - monster
@@ -41,18 +53,35 @@ Below is the list of Biome tags that can be used:
 - mountain
 - mutated
 - nether
+- nether_wastes
+- netherwart_forest
+- no_legacy_worldgen
 - ocean
+- overworld
+- overworld_generation
 - plains
 - plateau
+- rare
 - river
 - roofed
 - savanna
 - shore
+- snowy_slopes
+- soulsand_valley
+- spawn_endermen
+- spawn_few_piglins
+- spawn_few_zombified_piglins
+- spawn_ghast
+- spawn_magma_cubes
+- spawn_many_magma_cubes
+- spawn_piglin
+- spawn_zombified_piglin
 - stone
 - swamp
 - taiga
 - the_end
 - warm
+- warped_forest
 
 ## Tagged Biomes
 
@@ -60,71 +89,89 @@ Listed below are all of the available biomes within Minecraft: Bedrock Edition a
 
 | Biome| Tags |
 |:-----------|:-----------|
-| Beach| monster, beach, warm |
-| Birch Forest| animal, monster, birch, forest |
-| Birch Forest Hills| animal, monster, birch, forest, hills |
-| Birch Forest Hills M| animal, monster, forest, birch, mutated, hills |
-| Birch Forest M| animal, monster, forest, birch, mutated |
-| Cold Ocean| ocean, cold, monster |
-| Cold Taiga M| animal, monster, taiga, cold, mutated |
-| Dark Forest| animal, monster, forest, roofed |
-| Dark Forest M| animal, monster, roofed, forest, mutated |
-| Deep Cold Ocean| ocean, cold, monster, deep |
-| Deep Frozen Ocean| ocean, frozen, monster, deep |
-| Deep Lukewarm Ocean| ocean, lukewarm, monster, deep |
-| Deep Ocean| ocean, monster, deep |
-| Deep Warm Ocean| ocean, warm, monster, deep |
-| Desert| monster, desert |
-| Desert Hills| monster, desert, hills |
-| Desert M| monster, desert, mutated |
-| Forest| animal, monster, forest |
-| Forest Hills| animal, monster, hills |
-| Forest M| monster, flower_forest, forest, mutated |
-| Frozen Ocean| ocean, frozen |
-| Frozen River| river, frozen |
-| Giant Tree Taiga| animal, monster, taiga, mega |
-| Giant Tree Taiga Hills| animal, monster, taiga, mega, hills |
-| Giant Tree Taiga Hills M| animal, monster, taiga, mega, hills, mutated |
-| Giant Trees Taiga M| animal, monster, mutated, mega |
-| Jungle| animal, monster, jungle |
-| Jungle Edge| animal, monster, jungle, edge |
-| Jungle Edge M| animal, monster, jungle, edge, mutated |
-| Jungle Hills| animal, monster, jungle, hills |
-| Jungle M| animal, monster, jungle, mutated |
-| Lukewarm Ocean| ocean, lukewarm, monster |
-| Mesa| monster |
-| Mesa M| animal, monster, mesa, mutated |
-| Mesa Plateau| monster, mesa |
-| Mesa Plateau M| monster, mesa, plateau, mutated |
-| Mesa Plateau Stone| monster, plateau |
-| Mesa Plateau Stone M| monster, mesa, plateau, mutated, stone |
-| Mountain| animal, monster, extreme_hills |
-| Mountain + M| animal, monster, extreme_hills, mutated, forest |
-| Mountain Edge| animal, monster, extreme_hills, edge, mountain |
-| Mountain M| animal, monster, extreme_hills, mutated |
-| Mushroom Fields| mooshroom_island |
-| Mushroom Fields Shore| mooshroom_island, shore |
-| Nether| nether |
-| Ocean| ocean, monster |
-| Plains| animal, monster, plains |
-| Plains M| animal, monster, plains, mutated |
-| River| river |
-| Savanna| animal, monster, savanna |
-| Savanna M| animal, monster, savanna, mutated |
-| Savanna Plateau| animal, monster, savanna |
-| Savanna Plateau M| animal, monster, savanna, plateau, mutated |
-| Snowy Beach| monster, beach, cold |
-| Snowy Mountains| frozen, ice, mountain |
-| Snowy Taiga| animal, monster, taiga, cold |
-| Snowy Taiga Hills| animal, monster, taiga, cold, hills |
-| Snowy Tundra| frozen, ice_plain, ice |
-| Snowy Tundra M| monster, frozen, ice_plains, mutated |
-| Stone Shore| monster, beach, stone |
-| Swamp| animal, monster, swamp |
-| Swamp M| animal, monster, swamp, mutated |
-| Taiga| animal, monster, taiga |
-| Taiga Hills| animal, monster, taiga, hills |
-| Taiga M| animal, monster, taiga, mutated |
+| Bamboo Jungle| animal, bamboo, jungle, monster, overworld |
+| Bamboo Jungle Hills| animal, bamboo, hills, jungle, monster, overworld |
+| Basalt Deltas| nether, basalt_deltas, spawn_many_magma_cubes, spawn_ghast |
+| Beach| monster, beach, warm, overworld |
+| Birch Forest| animal, monster, birch, forest, overworld, bee_habitat |
+| Birch Forest Hills| animal, monster, birch, forest, hills, bee_habitat |
+| Birch Forest Hills M| animal, monster, forest, birch, mutated, hills, overworld_generation |
+| Birch Forest M| animal, monster, forest, birch, mutated, bee_habitat, overworld_generation |
+| Cherry Grove| mountains, monster, overworld, cherry_grove, bee_habitat |
+| Cold Beach| beach, cold, monster, overworld |
+| Cold Ocean| ocean, cold, monster, overworld |
+| Cold Taiga| animal, cold, forest, monster, overworld, taiga |
+| Cold Taiga Hills| animal, cold, forest, hills, monster, overworld, taiga |
+| Cold Taiga M| animal, monster, forest, taiga, cold, mutated, overworld_generation |
+| Crimson Forest| nether, netherwart_forest, crimson_forest, spawn_few_zombified_piglins, spawn_piglin |
+| Deep Cold Ocean| ocean, cold, monster, deep, overworld |
+| Deep Dark| caves, deep_dark, overworld |
+| Deep Frozen Ocean| ocean, frozen, monster, deep, overworld |
+| Deep Lukewarm Ocean| ocean, lukewarm, monster, deep, overworld |
+| Deep Ocean| ocean, monster, deep, overworld |
+| Deep Warm Ocean| ocean, warm, monster, deep, overworld |
+| Desert| monster, desert, overworld |
+| Desert Hills| monster, desert, hills, overworld |
+| Desert M| monster, desert, mutated, overworld_generation |
+| Dripstone Caves| caves, overworld, dripstone_caves, monster |
+| Extreme Hills| animal, extreme_hills, monster, overworld |
+| Extreme Hills Edge| animal, edge, extreme_hills, monster, mountain, overworld |
+| Extreme Hills M| animal, extreme_hills, monster, mutated, overworld |
+| Extreme Hills Plus Trees| animal, extreme_hills, forest, monster, mountain, overworld |
+| Extreme Hills Plus Trees M| animal, extreme_hills, forest, monster, mutated, overworld |
+| Flower Forest| flower_forest, monster, mutated, overworld, bee_habitat |
+| Forest| animal, monster, forest, overworld |
+| Forest Hills| animal, monster, hills, forest, overworld, bee_habitat |
+| Frozen Ocean| ocean, frozen, monster, overworld |
+| Frozen Peaks| mountain, monster, overworld, frozen, frozen_peaks |
+| Frozen River| river, frozen, overworld |
+| Grove| mountains, cold, monster, overworld, grove |
+| Hell| nether, nether_wastes, spawn_magma_cubes, spawn_zombified_piglin, spawn_few_piglins, spawn_ghast, spawn_endermen |
+| Ice Mountains| frozen, ice, mountain, overworld |
+| Ice Plains| frozen, ice, ice_plains, overworld |
+| Ice Plains Spikes| frozen, ice_plains, monster, mutated, overworld |
+| Jagged Peaks| mountains, monster, overworld, frozen, jagged_peaks |
+| Jungle| animal, monster, overworld, rare |
+| Jungle Edge| animal, monster, jungle, edge, overworld |
+| Jungle Edge M| animal, monster, jungle, edge, mutated, overworld_generation |
+| Jungle Hills| animal, monster, jungle, hills, overworld |
+| Jungle M| animal, monster, jungle, mutated, overworld_generation |
+| Legacy Frozen Ocean| frozen, ocean, overworld |
+| Lukewarm Ocean| ocean, lukewarm, monster, overworld |
+| Lush Caves| caves, lush_caves, overworld, monster |
+| Mangrove Swamp| overworld, mangrove_swamp |
+| Meadow | mountains, monster, overworld, meadow, bee_habitat |
+| Mega Taiga | animal, forest, mega, monster, overworld, rare, taiga |
+| Mega Taiga Hills | animal, forest, hills, mega, monster, overworld, taiga |
+| Mesa| mesa, monster, overworld |
+| Mesa Bryce| animal, monster, mesa, mutated, overworld |
+| Mesa Plateau| monster, mesa, overworld, plateau |
+| Mesa Plateau M| monster, mesa, plateau, mutated, overworld, stone |
+| Mesa Plateau Stone| mesa, monster, plateau, overworld, rare, stone |
+| Mesa Plateau Stone M| monster, mesa, plateau, mutated |
+| Mushroom Island| mooshroom_island, overworld |
+| Mushroom Island Shore| mooshroom_island, overworld, shore |
+| Ocean| ocean, monster, overworld |
+| Plains| animal, monster, plains, overworld, bee_habitat |
+| Redwood Taiga Hills M| animal, forest, hills, mega, monster, mutated, taiga, overworld_generation |
+| Redwood Taiga M| animal, forest, mega, monster, mutated, overworld, taiga |
+| River| river, overworld |
+| Roofed Forest| animal, forest, monster, no_legacy_worldgen, overworld, roofed |
+| Roofed Forest M| animal, forest, monster, mutated, roofed, overworld_generation |
+| Savanna| animal, monster, savanna, overworld |
+| Savanna M| animal, monster, savanna, mutated, overworld |
+| Savanna Plateau| animal, monster, savanna, plateau, overworld |
+| Savanna Plateau M| animal, monster, savanna, plateau, mutated, overworld |
+| Snowy Slopes| mountain, monster, overworld, snowy_slopes, frozen |
+| Soulsand Valley| nether, soulsand_valley, spawn_ghast, spawn_endermen |
+| Stone Beach| beach, monster, overworld, stone |
+| Stony Peaks| mountains, monster, overworld |
+| Sunflower Plains| animal, monster, mutated, overworld, plains, bee_habitat |
+| Swampland| animal, monster, overworld, swamp |
+| Swampland M| animal, monster, mutated, swamp, overworld_generation |
+| Taiga| animal, monster, taiga, forest, overworld |
+| Taiga Hills| animal, monster, taiga, hills, forest, overworld |
+| Taiga M| animal, monster, taiga, mutated, forest, overworld_generation |
 | The End| the_end |
-| Warm Ocean| ocean, warm, monster |
-| Wooded Mountain| animal, monster, extreme_hills, forest, mountain |
+| Warm Ocean| ocean, warm, monster, overworld |
+| Warped Forest| nether, netherwart_forest, warped_forest, spawn_endermen |
