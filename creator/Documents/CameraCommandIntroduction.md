@@ -34,6 +34,32 @@ The last name is for the new free camera, which just floats in space and does no
 
 Custom content can define its own Camera Presets. For example, an "example:sky" camera might be defined based on the "minecraft:free" camera, but with a custom position and rotation to view the world at a specific angle.
 
+## Adding one or more Camera Presets to a Behavior Pack
+
+Inside the com.mojang folder for the version of Minecraft you want the camera to appear in, open your development_behavior_packs folder and do this:
+
+1. Create a Behavior Pack folder, as shown in the [Behavior Pack tutorial](BehaviorPack.md).
+
+1. Inside the Behavior Pack folder, create another folder and name it **Cameras**.
+
+1. On the same level as the Cameras folder, add a **manifest.json** file. This manifest file should not reference a resource pack.
+
+1. Inside the Cameras folder, create another folder and name it **Presets**.
+
+1. Inside the Presets folder, create a text file and name it **camera.json**. (It does not have to be this name, but it should be different from the built-in preset camera names listed in the Camera Presets section.)
+
+1. Open the camera.json file and paste in the example JSON below. Then, adjust the variables as you like.
+
+Your folder structure should look like this:
+
+![Image showing the folder and file structure created by following the steps.](Media/CameraCommand/camera_cmd_behavior_pack_structure.png)
+
+You should now be able to create a world using this add-on and transition to the camera by using the identifier in the JSON.
+
+You can add multiple camera files to the Presets folder and call to the different cameras in the game by giving each one a unique identifier.
+
+If everything is working, your custom camera preset should show up in the auto-complete list when typing the camera command.
+
 Camera Presets are specified in JSON files in the game’s behavior packs, for example:
 
 ```json
@@ -62,6 +88,9 @@ This defines a new Camera Preset named "example:custom" which inherits settings 
 "pos_x", "pos_y", and "pos_z" specify the default constant x, y, and z positions of the camera. If these are omitted, the value from the "inherit_from" Camera Preset will be used. "minecraft:free" uses a value of zero for all of its position settings. Be sure to set more useful positions here or via the camera command or your camera perspective will be underground.
 
 "rot_x" and "rot_y" specify the default rotations of the camera, around each of those axes. "rot_x" is equivalent to the pitch of the camera, though with positive values looking downward and negative values looking up, which matches the convention of the teleport command. "rot_y" is equivalent to the yaw, or compass direction of the camera, also matching the behavior of the teleport command. Both values are specified in degrees, and "rot_x" must be no lower than –90 and no higher than 90, to prevent the camera from going upside-down.
+
+
+
 
 ## Camera Command Syntax
 
