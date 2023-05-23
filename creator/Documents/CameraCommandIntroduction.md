@@ -50,13 +50,15 @@ Inside the com.mojang folder for the version of Minecraft you want the camera to
 
 1. Open the camera.json file and paste in the example JSON below. Then, adjust the variables as you like.
 
+Your folder structure should look like this:
+
+![Image showing the folder and file structure created by following the steps.](Media/CameraCommand/camera_cmd_behavior_pack_structure.png)
+
 You should now be able to create a world using this add-on and transition to the camera by using the identifier in the JSON.
 
 You can add multiple camera files to the Presets folder and call to the different cameras in the game by giving each one a unique identifier.
 
 If everything is working, your custom camera preset should show up in the auto-complete list when typing the camera command.
-
-![Image showing the folder and file structure created by following the steps.](Media/CameraCommand/camera_cmd_behavior_pack_structure.png)
 
 Camera Presets are specified in JSON files in the game’s behavior packs, for example:
 
