@@ -144,7 +144,7 @@ Note that the colors defined for the sun and moon directional lights in lighting
 
 The "horizon_blend_stops" object contains 4 values that are used to divide up the atmosphere into various regions. These values are all within the range 0-1. The following diagram can be used to help understand how to use these values.
 
-![Image showing the horizon lines of blend demarcation labeled 1, 2 and 3](Media/DeferredLighting/horizon_blend_stops.jpg)
+![Image showing the horizon lines of blend demarcation labeled 1, 2, 3](Media/DeferredLighting/horizon_blend_stops.jpg)
 
 (1) The primary horizon line is determined by "min" and "max", and divides the sky into two general regions: everything below the horizon and everything above it. This dividing line is calculated as:
 
