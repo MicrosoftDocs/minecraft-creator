@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: iconicNurdle
+author: iconicNurdle
+ms.author: mikeam
 title: Deferred Lighting Overview
 ms.prod: gaming
 ms.topic: tutorial
@@ -17,15 +17,15 @@ All newly added lighting capabilities are opt-in, and appropriate defaults will 
 
 ## Opting Into the Deferred Lighting Pipeline
 
-Opting into the Deferred Lighting Pipeline should feel familiar if you have authored an RTX-enabled resource pack before. In fact, any resource pack that was built for use in RTX should "just work” for Deferred Lighting. However, you will likely want to add some additional JSON files (see sections below for more details) to make full use of the pipeline.
+Opting into the Deferred Lighting Pipeline should feel familiar if you have authored an RTX-enabled resource pack before. In fact, any resource pack that was built for use in RTX should "just work" for Deferred Lighting. However, you will likely want to add some additional JSON files (see sections below for more details) to make full use of the pipeline.
 
 ## Enabling Deferred Technical Preview in Settings
 
-If you are on a compatible Preview or Beta build supporting the Deferred Lighting Pipeline, you will find a new toggle under the "Creator” tab in the Settings menu:
+If you are on a compatible Preview or Beta build supporting the Deferred Lighting Pipeline, you will find a new toggle under the "Creator" tab in the Settings menu:
 
 ![Image showing Creator Settings with Enable deferred lighting technical preview toggle on](Media/DeferredLighting/settings_creator_enableDeferredLighting.png)
 
-Once this has been toggled ‘On’, you will see new options in the "Video” settings menu. Under "Graphics Mode,” the UI element will change to a dropdown selection in which you can now see an option for the "Deferred Technical Preview.”
+Once this has been toggled ‘On’, you will see new options in the "Video" settings menu. Under "Graphics Mode," the UI element will change to a dropdown selection in which you can now see an option for the "Deferred Technical Preview."
 
 ![Image showing Video settings, Graphics mode, Deferred technical preview checkbox](Media/DeferredLighting/settings_video_graphicsMode_deferredTechnicalPreview.png)
 
@@ -33,7 +33,7 @@ Selecting this mode will make the pipeline available, however, you will need to 
 
 ## Resource Pack - Manifest.json Capabilities
 
-Specifically, the key thing that communicates to the game client that a resource pack is capable of Deferred Lighting is the presence of a certain string(s) in the capabilities array in your pack’s manifest.json. Since the assets required for RTX are a subset of the assets needed for Deferred Lighting, a pack that broadcasts the "raytraced” capability will also be capable of activating Deferred Lighting. However, it is recommended that a new capability string be used going forward for Deferred/PBR Lighting packs as these packs should be expected to run cross-platform, unlike "raytraced” packs which are restricted to RTX-only devices. The new capability string is "pbr”:
+Specifically, the key thing that communicates to the game client that a resource pack is capable of Deferred Lighting is the presence of a certain string(s) in the capabilities array in your pack’s manifest.json. Since the assets required for RTX are a subset of the assets needed for Deferred Lighting, a pack that broadcasts the "raytraced" capability will also be capable of activating Deferred Lighting. However, it is recommended that a new capability string be used going forward for Deferred/PBR Lighting packs as these packs should be expected to run cross-platform, unlike "raytraced" packs which are restricted to RTX-only devices. The new capability string is "pbr":
 
 ```json
 {
@@ -69,7 +69,7 @@ File location: lighting/global.json
 
 ```json
 {
-  version "format_version"
+  version "format_version",
   object "directional_lights"
     {
       object "sun"
@@ -104,7 +104,7 @@ The "directional_lights" object is where you can configure properties of the sun
 
 The celestial bodies that are the sun and moon are assumed to be opposite of each other in the sky at all times. When both celestial bodies are visible in the sky, both will contribute opposing light to the scene.
 
-Illuminance values that correspond to “real world” values are suitable for use in our pipeline. For instance, the sun at noon on a clear day measures upwards of 100,000 lux, while the moon only registers < 1 lux. Tone mapping and auto-exposure will appropriately rebalance drastic differences in light intensities.
+Illuminance values that correspond to “real world" values are suitable for use in our pipeline. For instance, the sun at noon on a clear day measures upwards of 100,000 lux, while the moon only registers < 1 lux. Tone mapping and auto-exposure will appropriately rebalance drastic differences in light intensities.
 Color values can either be described as an array of 3 or 4 numerical values from the range 0-255 or as a 6 or 8 hexadecimal digit string.
 Any of these values can be individually key framed (see Key Frame Syntax section for more details).
 
@@ -122,16 +122,16 @@ File location: lighting/ atmospherics.json
 {
   object "horizon_blend_stops" // How the atmosphere is divided up
   {
-    float "min" : optkeyframe // The minimum horizon height
-    float "start" : optkeyframe // The height relative to the horizon where the zenith contribution will take over
-    float "mie_start" : optkeyframe // The height relative to the horizon where mie scattering begins
+    float "min" : optkeyframe, // The minimum horizon height
+    float "start" : optkeyframe, // The height relative to the horizon where the zenith contribution will take over
+    float "mie_start" : optkeyframe, // The height relative to the horizon where mie scattering begins
     float "max" : optkeyframe // The maximum horizon height
   }
-  float "rayleigh_strength" : optkeyframe // How strong the atmosphere's rayleigh scattering term is
-  float "sun_mie_strength" : optkeyframe // How strong the sun's mie scattering term is
-  float "moon_mie_strength" : optkeyframe // How strong the moon's mie scattering term is
-  float "sun_glare_shape" : optkeyframe // How the lobe of the mie scattering is shaped
-  color "sky_zenith_color" : optkeyframe // The RGB color of the zenith region of the atmosphere; supports RGB array or HEX string
+  float "rayleigh_strength" : optkeyframe, // How strong the atmosphere's rayleigh scattering term is
+  float "sun_mie_strength" : optkeyframe, // How strong the sun's mie scattering term is
+  float "moon_mie_strength" : optkeyframe, // How strong the moon's mie scattering term is
+  float "sun_glare_shape" : optkeyframe, // How the lobe of the mie scattering is shaped
+  color "sky_zenith_color" : optkeyframe, // The RGB color of the zenith region of the atmosphere; supports RGB array or HEX string
   color "sky_horizon_color" : optkeyframe // The RGB color of the horizon region of the atmosphere; supports RGB array or HEX string
 }
 ```
