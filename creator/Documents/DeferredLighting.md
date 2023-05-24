@@ -23,7 +23,7 @@ Opting into the Deferred Lighting Pipeline should feel familiar if you have auth
 
 If you are on a compatible Preview or Beta build supporting the Deferred Lighting Pipeline, you will find a new toggle under the "Creator” tab in the Settings menu:
 
-![Image showing Creator Settings with Enable deferred lighting technical preview toggle on.](Media/DeferredLighting/settings_creator_enableDeferredLighting.png)
+![Image showing Creator Settings with Enable deferred lighting technical preview toggle on](Media/DeferredLighting/settings_creator_enableDeferredLighting.png)
 
 Once this has been toggled ‘On’, you will see new options in the "Video” settings menu. Under "Graphics Mode,” the UI element will change to a dropdown selection in which you can now see an option for the "Deferred Technical Preview.”
 
