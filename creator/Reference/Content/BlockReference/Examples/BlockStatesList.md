@@ -23,12 +23,14 @@ Here is a list of all the Block States within Minecraft: Bedrock Edition. You ca
 |bamboo_stalk_thickness |String |thin, thick |bamboo |Determines the thickness of a bamboo stalk|
 |big_dripleaf_tilt |String |none, unstable, partial_tilt, full_tilt |big dripleaf |Determines the tilt state of big dripleaf block|
 |bite_counter |Integer |0 - 6 |cake |Tracks how many bites of cake have been taken|
+|block_face | String | down, up, north, south, east, west | *TBD* | Which block face the player placed the block on.|
 |block_light_level |Integer |0 - 15 |light block |Determines the light level for a block that emits light |
 |brewing_stand_slot_a_bit |Boolean |True, False |brewing stand |Determines if a bottle is shown in slot a of the brewing stand|
 |brewing_stand_slot_b_bit |Boolean |True, False |brewing stand |Determines if a bottle is shown in slot b of the brewing stand|
 |brewing_stand_slot_c_bit |Boolean |True, False |brewing stand |Determines if a bottle is shown in slot c of the brewing stand|
 |button_pressed_bit |Boolean |True, False |acacia button, birch button, crimson button, dark oak button, jungle button, mangrove button, polished blackstone button, spruce button, stone button, warped button, wood button |Determines if a button is in the pressed state or not|
 |candles |Integer |0 - 3 |black candle, blue candle, brown candle, candle, cyan candle, gray candle, green candle, light blue candle, light gray candle, lime candle, magenta candle, orange candle, pink candle, purple candle, red candle, white candle, yellow candle |The number of extra candles in the same block space|
+|cardinal_direction | String | north, south, east, west | *TBD* | Defines the cardinal placement direction of a block. |
 |cauldron_liquid |String |water, lava |cauldron, lava cauldron | Determines the type of liquid in a cauldron|
 |chemistry_table_type |String |compound_creator, material_reducer, element_constructor, lab_table |chemistry table |Determines the type of the work benches that are behind the edu features toggle|
 |chisel_type |String |default, chiseled, lines, smooth |purpur block, quartz block |Determines the chisel pattern on quartz and purpur blocks|
@@ -56,7 +58,7 @@ Here is a list of all the Block States within Minecraft: Bedrock Edition. You ca
 |end_portal_eye_bit |Boolean |True, False |end portal frame |Determines if an end portal block has an Eye of Ender in it|
 |explode_bit |Boolean |True, False |Determines if a TNT block should start its explode sequence |
 |extinguished |Boolean |True, False |magma, netherrack | Determines that block with infiniburn is not on ignited|
-|facing_direction |Integer |0 - 5 |acacia button, birch button, crimson button, dark oak button, jungle button, mangrove button, polished blackstone button, spruce button, stone button, warped button, wood button |Determines the Up, Down, North, South, East, and West direction of some blocks. 0 = Down, 1 = Up, 2 = North, 3 = South, 4 = West, 5 = East|
+|facing_direction | String | down, up, north, south, east, west |acacia button, birch button, crimson button, dark oak button, jungle button, mangrove button, polished blackstone button, spruce button, stone button, warped button, wood button | Defines all placement directions of a block.|
 |fill_level |Integer |0 - 6 |cauldron, lava cauldron |Determines fill level of a cauldron block|
 |flower_type |String |poppy, orchid, allium, houstonia, tulip_red, tulip_orange, tulip_white, tulip_pink, oxeye, cornflower, lily_of_the_valley |red flower |Determines the type of a flower block|
 |growth |Integer |0 - 7 |pumpkin stem, beetroot, carrot, crop, potato, sweet berry bush |Determines the growth level of crops|
@@ -98,6 +100,7 @@ Here is a list of all the Block States within Minecraft: Bedrock Edition. You ca
 |sandstone_type |String |default, heiroglyphs, cut, smooth |sandstone, red sandstone |Determines the pattern of a sandstone block|
 |sand_type |String |normal, red |sand |Determines the sand type of a block|
 |sapling_type |String |evergreen, birch, jungle, acacia, roofed_oak |bamboo sapling, sapling |Determines the type of the sapling block|
+|sculk_sensor_phase | String | inactive, active, cooldown | *TBD* |Determines the current phase of a sculk sensor block. |
 |sea_grass_type |String |default, double_top, double_bot |sea grass |Determines the type of a seagrass block|
 |sponge_type |String |dry, wet |sponge |Determines the type of a sponge block|
 |stability |Integer |0 - 7 |scaffolding |Determines the stability of a scaffolding block|
@@ -122,6 +125,7 @@ Here is a list of all the Block States within Minecraft: Bedrock Edition. You ca
 |update_bit |Boolean |True, False |azalea leaves, azalea leaves flowered, leaves, mangrove leaves, flower pot, new leaf, old leaf |Determines if a leaf block or flower block should be updated|
 |upper_block_bit |Boolean |True, False |acacia door, birch door, crimson door, double plant, dark oak door, iron door, jungle door, mangrove door, small dripleaf, spruce door, warped door, wooden door |Determines if a block is the upper half of an object like a door or a tall plant|
 |upside_down_bit |Boolean |True, False |acacia stairs, acacia trapdoor, andesite stairs, blackstone stairs, birch stairs, birch trapdoor, brick stairs, cobbled deepslate stairs, cobblestone stairs, crimson stairs, crimson trapdoor, cut copper stairs, dark oak stairs, dark oak trapdoor, dark prismarine stairs, deepslate brick stairs, deepslate tile stairs, diorite stairs, end brick stairs, exposed cut copper stairs, granite stairs, iron trapdoor, jungle stairs, jungle trapdoor, mangrove stairs, mangrove trapdoor, mossy cobblestone stairs, mossy stone brick stairs, mud brick stairs, nether brick stairs, normal stone stairs, oak stairs, oxidized cut copper stairs, polished andesite stairs, polished blackstone brick stairs, polished blackstone stairs, polished deepslate stairs, polished diorite stairs, polished granite stairs, prismarine bricks stairs, prismarine stairs, purpur stairs, quartz stairs, red sandstone stairs, sandstone stairs, smooth quartz stairs, smooth red sandstone stairs, smooth sandstone stairs, spruce stairs, spruce trapdoor, stone brick stairs, trapdoor, warped stairs, warped trapdoor, waxed cut copper stairs, waxed exposed cut copper stairs, waxed oxidized cut copper stairs, waxed weathered cut copper stairs, weathered cut copper stairs |Determines if a stair block or trapdoor block is upside down|
+|vertical_half |String |bottom, top | *TBD* | Which vertical half of the space the block is placed in. |
 |vine_direction_bits |Integer | 0 - 15 |vine |Determines the facing direction for vines, works like the facing_direction blockstate|
 |wall_block_type |String |cobblestone, mossy_cobblestone, granite, diorite, andesite, sandstone, brick, stone_brick, mossy_stone_brick, nether_brick, end_brick, prismarine, red_sandstone, red_nether_brick |cobblestone, mossy cobblestone, granite, diorite, andesite, sandstone, brick, stone brick, mossy stone brick, nether brick, end brick, prismarine, red sandstone, red nether brick|Determines the type of a stone used in a wall block|
 |wall_connection_type_east |String |none, short, tall |blackstone wall, border, cobbled deepslate wall, cobblestone wall, deepslate brick wall, deepslate tile wall, mud brick wall, polished blackstone brick wall, polished blackstone wall, polished deepslate wall |Determines what kind of connection a wall has to the east|

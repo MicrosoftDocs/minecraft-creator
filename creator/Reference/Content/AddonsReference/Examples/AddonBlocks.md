@@ -124,6 +124,47 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | weirdo_direction| Integer | 0 - 3| Describes the rotation of stairs |
 | wood_type| String| oak, spruce, birch, jungle, acacia, dark_oak| Determines the wood type of a block |
 
+## BlockTraits
+
+List of all Block Traits and the BlockStates they include. 
+Experimental toggles required : Upcoming Creator Features
+
+| Block Trait| Type| Description |
+|:-----------|:-----------|:-----------|
+| "minecraft:placement_direction"| JSON Object| Adds the "minecraft:cardinal_direction" and/or "minecraft:facing_direction" states and setter function to the block. The values of these states are set when the block is placed. `enabled_states` array specifies which states to enable. Must specify at least one.|
+| minecraft:cardinal_direction| String| north, south, east, west| Defines the cardinal placement direction of a block. |
+| minecraft:facing_direction| String| down, up, north, south, east, west| Defines all placement directions of a block. |
+| y_rotation_offset| Decimal |0.0 - 360.0 | The y rotation offset to apply to the block. Must be [0.0, 90.0, 180.0, 270.0]. Default is 0, meaning if the player is facing north, the "minecraft:cardinal_direction" and/or minecraft:facing_direction state will be north. |
+| "minecraft:placement_position"| PlacementPosition| Adds the "minecraft:block_face" and/or "minecraft:vertical_half" BlockStates. The value of these state(s) are set when the block is placed. `enabled_states` array specifies which states to enable. Must specify at least one.|
+| minecraft:block_face| String| down, up, north, south, east, west| Which blockface the player placed the block on. |
+| minecraft:vertical_half| String| bottom, top| Which vertical half of the space the block is placed in. |
+
+
+```json
+{
+  "format_version": "1.20.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "test:placement_direction_trait_block",
+      "traits" : {
+        "minecraft:placement_direction": {
+            "enabled_states": ["minecraft:cardinal_direction"], // 4 permutations
+            "y_rotation_offset": 0.0 // 0.0-360.0
+          }
+      }
+    },
+    "permutations": [
+       {
+          "condition": "query.block_property('minecraft:cardinal_direction') == 1", // west
+          "components": {
+              // ...	
+          }
+        }
+    ]
+  }
+}
+```
+
 ## List of Blocks
 
 | Name |
@@ -194,6 +235,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:birch_wall_sign |
 | minecraft:black_candle |
 | minecraft:black_candle_cake |
+| minecraft:black_carpet |
 | minecraft:black_glazed_terracotta |
 | minecraft:black_wool |
 | minecraft:blackstone |
@@ -204,22 +246,26 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:blast_furnace |
 | minecraft:blue_candle |
 | minecraft:blue_candle_cake |
+| minecraft:blue_carpet |
 | minecraft:blue_glazed_terracotta |
 | minecraft:blue_ice |
 | minecraft:blue_wool |
 | minecraft:bone_block |
 | minecraft:bookshelf |
 | minecraft:border_block |
+| minecraft:brain_coral |
 | minecraft:brewing_stand |
 | minecraft:brick_block |
 | minecraft:brick_stairs |
 | minecraft:brown_candle |
 | minecraft:brown_candle_cake |
+| minecraft:brown_carpet |
 | minecraft:brown_glazed_terracotta |
 | minecraft:brown_mushroom |
 | minecraft:brown_mushroom_block |
 | minecraft:brown_wool |
 | minecraft:bubble_column |
+| minecraft:bubble_coral |
 | minecraft:budding_amethyst |
 | minecraft:cactus |
 | minecraft:cake |
@@ -229,7 +275,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:campfire |
 | minecraft:candle |
 | minecraft:candle_cake |
-| minecraft:carpet |
 | minecraft:carrots |
 | minecraft:cartography_table |
 | minecraft:carved_pumpkin |
@@ -286,7 +331,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:conduit |
 | minecraft:copper_block |
 | minecraft:copper_ore |
-| minecraft:coral |
 | minecraft:coral_block |
 | minecraft:coral_fan |
 | minecraft:coral_fan_dead |
@@ -322,6 +366,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:cut_copper_stairs |
 | minecraft:cyan_candle |
 | minecraft:cyan_candle_cake |
+| minecraft:cyan_carpet |
 | minecraft:cyan_glazed_terracotta |
 | minecraft:cyan_wool |
 | minecraft:dark_oak_button |
@@ -338,6 +383,11 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:darkoak_wall_sign |
 | minecraft:daylight_detector |
 | minecraft:daylight_detector_inverted |
+| minecraft:dead_brain_coral |
+| minecraft:dead_bubble_coral |
+| minecraft:dead_fire_coral |
+| minecraft:dead_horn_coral |
+| minecraft:dead_tube_coral |
 | minecraft:deadbush |
 | minecraft:decorated_pot |
 | minecraft:deepslate |
@@ -516,6 +566,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:farmland |
 | minecraft:fence_gate |
 | minecraft:fire |
+| minecraft:fire_coral |
 | minecraft:fletching_table |
 | minecraft:flower_pot |
 | minecraft:flowering_azalea |
@@ -541,10 +592,12 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:gravel |
 | minecraft:gray_candle |
 | minecraft:gray_candle_cake |
+| minecraft:gray_carpet |
 | minecraft:gray_glazed_terracotta |
 | minecraft:gray_wool |
 | minecraft:green_candle |
 | minecraft:green_candle_cake |
+| minecraft:green_carpet |
 | minecraft:green_glazed_terracotta |
 | minecraft:green_wool |
 | minecraft:grindstone |
@@ -559,6 +612,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:honey_block |
 | minecraft:honeycomb_block |
 | minecraft:hopper |
+| minecraft:horn_coral |
 | minecraft:ice |
 | minecraft:infested_deepslate |
 | minecraft:info_update |
@@ -589,7 +643,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:lapis_ore |
 | minecraft:large_amethyst_bud |
 | minecraft:lava |
-| minecraft:lava_cauldron |
 | minecraft:leaves |
 | minecraft:leaves2 |
 | minecraft:lectern |
@@ -597,15 +650,18 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:light_block |
 | minecraft:light_blue_candle |
 | minecraft:light_blue_candle_cake |
+| minecraft:light_blue_carpet |
 | minecraft:light_blue_glazed_terracotta |
 | minecraft:light_blue_wool|
 | minecraft:light_gray_candle |
 | minecraft:light_gray_candle_cake |
+| minecraft:light_gray_carpet |
 | minecraft:light_gray_wool |
 | minecraft:light_weighted_pressure_plate |
 | minecraft:lightning_rod |
 | minecraft:lime_candle |
 | minecraft:lime_candle_cake |
+| minecraft:lime_carpet |
 | minecraft:lime_glazed_terracotta |
 | minecraft:lime_wool |
 | minecraft:lit_blast_furnace |
@@ -619,6 +675,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:loom |
 | minecraft:magenta_candle |
 | minecraft:magenta_candle_cake |
+| minecraft:magenta_carpet |
 | minecraft:magenta_glazed_terracotta |
 | minecraft:magenta_wool |
 | minecraft:magma |
@@ -681,6 +738,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:ochre_froglight |
 | minecraft:orange_candle |
 | minecraft:orange_candle_cake |
+| minecraft:orange_carpet |
 | minecraft:orange_glazed_terracotta |
 | minecraft:orange_wool |
 | minecraft:oxidized_copper |
@@ -693,11 +751,14 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:pearlescent_froglight |
 | minecraft:pink_candle |
 | minecraft:pink_candle_cake |
+| minecraft:pink_carpet |
 | minecraft:pink_glazed_terracotta |
 | minecraft:pink_petals |
 | minecraft:pink_wool |
 | minecraft:piston |
 | minecraft:piston_arm_collision |
+| minecraft:pitcher_crop |
+| minecraft:pitcher_plant |
 | minecraft:planks |
 | minecraft:podzol |
 | minecraft:pointed_dripstone |
@@ -734,6 +795,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:pumpkin_stem |
 | minecraft:purple_candle |
 | minecraft:purple_candle_cake |
+| minecraft:purple_carpet |
 | minecraft:purple_glazed_terracotta |
 | minecraft:purple_wool |
 | minecraft:purpur_block |
@@ -748,6 +810,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:raw_iron_block |
 | minecraft:red_candle |
 | minecraft:red_candle_cake |
+| minecraft:red_carpet |
 | minecraft:red_flower |
 | minecraft:red_glazed_terracotta |
 | minecraft:red_mushroom |
@@ -794,6 +857,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:smooth_red_sandstone_stairs |
 | minecraft:smooth_sandstone_stairs |
 | minecraft:smooth_stone |
+| minecraft:sniffer_egg |
 | minecraft:snow |
 | minecraft:snow_layer |
 | minecraft:soul_campfire |
@@ -865,6 +929,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:trapped_chest |
 | minecraft:trip_wire |
 | minecraft:tripwire_hook |
+| minecraft:tube_coral |
 | minecraft:tuff |
 | minecraft:turtle_egg |
 | minecraft:twisting_vines |
@@ -929,6 +994,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:wheat |
 | minecraft:white_candle |
 | minecraft:white_candle_cake |
+| minecraft:white_carpet |
 | minecraft:white_glazed_terracotta |
 | minecraft:white_wool |
 | minecraft:wither_rose |
@@ -939,6 +1005,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:wooden_slab |
 | minecraft:yellow_candle |
 | minecraft:yellow_candle_cake |
+| minecraft:yellow_carpet |
 | minecraft:yellow_flower |
 | minecraft:yellow_glazed_terracotta |
 | minecraft:yellow_wool |

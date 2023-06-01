@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: v-bbortree
+author: iconicNurdle
+ms.author: mikeam
 title: Addons Documentation - manifest.json
 ms.prod: gaming
 ---
@@ -27,6 +27,7 @@ The manifest file contains all the basic information about the pack that Minecra
 
 | Name| Type| Description |
 |:-----------|:-----------|:-----------|
+|allow_random_seed| Boolean| This option will generate a random seed every time a template is loaded and allow the player to change the seed before creating a new world.|
 | base_game_version|Vector [a, b, c]| This is the version of the base game your world template requires, specified as [majorVersion, minorVersion, revision]. We use this to determine what version of the base game resource and behavior packs to apply when your content is used. |
 | description| String| This is a short description of the pack. It will appear in the game below the name of the pack. We recommend keeping it to 1-2 lines. |
 | lock_template_options| Boolean| This option is required for any world templates. This will lock the player from modifying the options of the world. |
