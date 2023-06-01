@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Addons Documentation - Blocks
 ms.prod: gaming
 ---
@@ -126,19 +126,20 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 
 ## BlockTraits
 
-List of all Block Traits and the BlockStates they include. 
+List of all Block Traits and the Block States they include. 
 Experimental toggles required : Upcoming Creator Features
 
-| Block Trait| Type| Description |
-|:-----------|:-----------|:-----------|
-| "minecraft:placement_direction"| JSON Object| Adds the "minecraft:cardinal_direction" and/or "minecraft:facing_direction" states and setter function to the block. The values of these states are set when the block is placed. `enabled_states` array specifies which states to enable. Must specify at least one.|
+| Block Trait| Type | Valid Values | Description |
+|:----------|:---------|:----------|:--------|
+| "minecraft:placement_direction"| JSON Object|  |Adds the "minecraft:cardinal_direction" and/or "minecraft:facing_direction" states and setter function to the block. The values of these states are set when the block is placed. `enabled_states` array specifies which states to enable. Must specify at least one.|
 | minecraft:cardinal_direction| String| north, south, east, west| Defines the cardinal placement direction of a block. |
-| minecraft:facing_direction| String| down, up, north, south, east, west| Defines all placement directions of a block. |
+| minecraft:facing_direction| String| down, up, north, south, east, west | Defines all placement directions of a block. |
 | y_rotation_offset| Decimal |0.0 - 360.0 | The y rotation offset to apply to the block. Must be [0.0, 90.0, 180.0, 270.0]. Default is 0, meaning if the player is facing north, the "minecraft:cardinal_direction" and/or minecraft:facing_direction state will be north. |
-| "minecraft:placement_position"| PlacementPosition| Adds the "minecraft:block_face" and/or "minecraft:vertical_half" BlockStates. The value of these state(s) are set when the block is placed. `enabled_states` array specifies which states to enable. Must specify at least one.|
+| "minecraft:placement_position"| PlacementPosition| | Adds the "minecraft:block_face" and/or "minecraft:vertical_half" BlockStates. The value of these state(s) are set when the block is placed. `enabled_states` array specifies which states to enable. Must specify at least one.|
 | minecraft:block_face| String| down, up, north, south, east, west| Which blockface the player placed the block on. |
 | minecraft:vertical_half| String| bottom, top| Which vertical half of the space the block is placed in. |
 
+### Block trait example
 
 ```json
 {
