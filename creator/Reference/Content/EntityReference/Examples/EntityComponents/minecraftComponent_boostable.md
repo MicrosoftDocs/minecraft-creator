@@ -14,8 +14,8 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |boost_items|*not set* | List| List of items that can be used to boost while riding this entity.|
-|duration| 3.0| Decimal| Time in seconds for the boost. |
-|speed_multiplier| 1.0| Decimal| Factor by which the entity's normal speed increases. For example, '2.0' will be twice the normal speed. |
+|duration| 3.00| Decimal| Time in seconds for the boost. |
+|speed_multiplier| 1.35| Decimal| Factor by which the entity's normal speed increases. For example, '2.0' will be twice the normal speed. Requires a format version of 1.20 or above; otherwise, the default value will be used. |
 
 ### boost_items
 

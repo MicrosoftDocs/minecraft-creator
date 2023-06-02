@@ -46,6 +46,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.enderman_take_block| -537294220 |
 | minecraft:behavior.equip_item| 13771509599928214056 |
 | minecraft:behavior.explore_outskirts| -1955198366 |
+| minecraft:behavior.feeling_happy| 8645000647498549987 |
 | minecraft:behavior.fertilize_farm_block| 9206289212958280677 |
 | minecraft:behavior.find_cover| -1231227755 |
 | minecraft:behavior.find_mount| 731306871 |
@@ -124,9 +125,11 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.restrict_open_door| 715583988 |
 | minecraft:behavior.restrict_sun| -382716017 |
 | minecraft:behavior.rise_to_liquid_level| -950950337 |
+| minecraft:behavior.rising| 1216537393397581032 |
 | minecraft:behavior.roll| 817471653 |
 | minecraft:behavior.run_around_like_crazy| -1390363669 |
 | minecraft:behavior.scared| -1643945926 |
+| minecraft:behavior.scenting| 6172150932649653379 |
 | minecraft:behavior.send_event| -823429137 |
 | minecraft:behavior.share_items| 2045906118 |
 | minecraft:behavior.silverfish_merge_with_stone| 321908121 |
@@ -199,6 +202,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:buoyant| -467213736 |
 | minecraft:burns_in_daylight| 1256874605 |
 | minecraft:celebrate_hunt| -789611239 |
+| minecraft:collision_box| -1277663508 |
 | minecraft:combat_regeneration| -315365016 |
 | minecraft:conditional_bandwidth_optimization| 1333085468 |
 | minecraft:custom_hit_test| 2035968892 |
@@ -298,7 +302,6 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:can_climb| -550459594 |
 | minecraft:can_fly| 985724318 |
 | minecraft:can_power_jump| -763124853 |
-| minecraft:collision_box| -1277663508 |
 | minecraft:color| 1069623177 |
 | minecraft:color2| 1429635777 |
 | minecraft:default_look_angle| -815556357 |
@@ -316,6 +319,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:is_hidden_when_invisible| -1553744 |
 | minecraft:is_ignited| 905710223 |
 | minecraft:is_illager_captain| 921912694 |
+| minecraft:is_pregnant| -1253700046 |
 | minecraft:is_saddled| 1037901616 |
 | minecraft:is_shaking| 523951884 |
 | minecraft:is_sheared| 1154836813 |

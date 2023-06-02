@@ -12,6 +12,8 @@ Below is a list of all the available filters within Minecraft: Bedrock Edition f
 |Filter |Description|
 |:------|:----------|
 |[actor_health](Filters/actor_health.md)|`actor_health` allows a creator to test the health of an entity. |
+|[all_slots_empty](Filters/all_slots_empty.md)|Returns true when the designated equipment location for the subject entity is completely empty. |
+|[any_slot_empty](Filters/any_slot_empty.md)|Returns true when the designated equipment location for the subject entity has any empty slot. |
 |[bool_property](Filters/bool_property.md)|`bool_property` allows a creator to compare an actor property to a boolean value. |
 |[clock_time](Filters/clock_time.md)|`clock_time` allows a creator to compare the current time with a float value in the range (0.0, 1.0). |
 |[distance_to_nearest_player](Filters/distance_to_nearest_player.md)|`distance_to_nearest_player` compares the distance to the nearest Player with a float value. |
@@ -68,6 +70,7 @@ Below is a list of all the available filters within Minecraft: Bedrock Edition f
 |[is_riding](Filters/is_riding.md)|Returns true if the subject entity is riding on another entity. |
 |[is_skin_id](Filters/is_skin_id.md)|Returns true if the subject entity uses the skin id number provided. |
 |[is_sleeping](Filters/is_sleeping.md)|Tests whether the subject is sleeping. |
+|[is_sneak_held](Filters/is_sneak_held.md)|Returns true if the subject entity has the sneak input held. |
 |[is_sneaking](Filters/is_sneaking.md)|Tests whether the subject is sneaking. |
 |[is_snow_covered](Filters/is_snow_covered.md)|Tests whether the subject is in an area covered by snow. |
 |[is_target](Filters/is_target.md)|Returns true if the subject entity is the target of the calling entity. |

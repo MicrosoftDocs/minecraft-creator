@@ -39,7 +39,6 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:can_fly](EntityComponents/minecraftComponent_can_fly.md) |`minecraft:can_fly` allows an entity the ability to fly. |
 |[minecraft:can_power_jump](EntityComponents/minecraftComponent_can_power_jump.md) |`minecraft:can_power_jump` allows an entity to power jump similar to the `horse` entity. |
 |[minecraft:celebrate_hunt](EntityComponents/minecraftComponent_celebrate_hunt.md) |`minecraft:celebrate_hunt` compels an entity to celebrate when hunting a specific entity. |
-|[minecraft:collision_box](EntityComponents/minecraftComponent_collision_box.md) |`minecraft:collision_box` sets the width and height of the entity's collision box. |
 |[minecraft:color](EntityComponents/minecraftComponent_color.md) |`minecraft:color` defines the entity's main color. |
 |[minecraft:color2](EntityComponents/minecraftComponent_color2.md) |`minecraft:color2` defines the entity's second texture color. |
 |[minecraft:combat_regeneration](EntityComponents/minecraftComponent_combat_regeneration.md) |`minecraft:combat_regeneration` gives Regeneration I and removes Mining Fatigue from the entity that kills the Actor's attack target. |
@@ -92,6 +91,7 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:is_hidden_when_invisible](EntityComponents/minecraftComponent_is_hidden_when_invisible.md) |`minecraft:is_hidden_when_invisible` sets that the entity can hide from hostile mobs while invisible. |
 |[minecraft:is_ignited](EntityComponents/minecraftComponent_is_ignited.md) |`minecraft:is_ignited` sets that the entity is currently on fire. |
 |[minecraft:is_illager_captain](EntityComponents/minecraftComponent_is_illager_captain.md) |`minecraft:is_illager_captain` sets that the entity is an illager captain. |
+|[minecraft:is_pregnant](EntityComponents/minecraftComponent_is_pregnant.md) |`minecraft:is_pregnant` sets that the entity is currently pregnant. |
 |[minecraft:is_saddled](EntityComponents/minecraftComponent_is_saddled.md) |`minecraft:is_saddled` sets that the entity is currently saddled. |
 |[minecraft:is_shaking](EntityComponents/minecraftComponent_is_shaking.md) |`minecraft:is_shaking` sets an entity is currently shaking. |
 |[minecraft:is_sheared](EntityComponents/minecraftComponent_is_sheared.md) |`minecraft:is_sheared` sets that this entity is currently sheared. |
