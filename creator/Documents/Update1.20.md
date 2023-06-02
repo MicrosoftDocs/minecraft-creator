@@ -57,7 +57,7 @@ A third set of Creator APIs have been released out of beta and into stable (see:
   - [ItemType](../ScriptAPI/minecraft/server/ItemType.md)
   - [ItemLockMode](../ScriptAPI/minecraft/server/ItemLockMode.md)
 - Entity velocity APIs
-  - [applyImpulse](../ScriptAPI/minecraft/server/Entity.md#applyImpulse)
+  - [applyImpulse](../ScriptAPI/minecraft/server/Entity.md#applyimpulse)
   - [applyKnockback](../ScriptAPI/minecraft/server/Entity.md#applyknockback)
   - [clearVelocity](../ScriptAPI/minecraft/server/Entity.md#clearvelocity)
 - Execution Fundamentals
