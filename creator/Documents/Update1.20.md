@@ -26,6 +26,8 @@ A third set of Creator APIs have been released out of beta and into stable (see:
 **APIs included in the @minecraft/server version 1.2.0 release:**
 
 - Entity damage application
+  - (Entity) [kill](../ScriptAPI/minecraft/server/Entity.md#kill)
+  - (Entity) [applyDamage](../ScriptAPI/minecraft/server/Entity.md#applydamage)
   - [EntityApplyDamageOptions](../ScriptAPI/minecraft/server/EntityApplyDamageOptions.md)
   - [EntityApplyDamageByProjectileOptions](../ScriptAPI/minecraft/server/EntityApplyDamageByProjectileOptions.md)
   - [EntityDamageCause](../ScriptAPI/minecraft/server/EntityDamageCause.md)
@@ -40,11 +42,15 @@ A third set of Creator APIs have been released out of beta and into stable (see:
   - [hasComponent](../ScriptAPI/minecraft/server/Entity.md#hascomponent)
 - Entity Inventory
   - [Container](../ScriptAPI/minecraft/server/Container.md)
-  - [BlockInventoryComponent](../ScriptAPI/minecraft/server/BlockInventoryComponent.md)
   - [EntityInventoryComponent](../ScriptAPI/minecraft/server/EntityInventoryComponent.md)
+- Block Inventory
+  - [BlockInventoryComponent](../ScriptAPI/minecraft/server/BlockInventoryComponent.md)
 - Music
   - (World) [playMusic](../ScriptAPI/minecraft/server/World.md#playmusic)
+  - (World) [queueMusic](../ScriptAPI/minecraft/server/World.md#queuemusic)
+  - (World) [stopMusic](../ScriptAPI/minecraft/server/World.md#stopmusic)
   - [MusicOptions](../ScriptAPI/minecraft/server/MusicOptions.md)
+
 - Sound
   - (Player) [playSound](../ScriptAPI/minecraft/server/Player.md#playsound)
   - (World) [playSound](../ScriptAPI/minecraft/server/World.md#playsound)
