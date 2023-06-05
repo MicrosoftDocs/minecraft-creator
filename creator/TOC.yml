@@ -148,12 +148,12 @@
               href: Documents/IntroductionToLootTables.md
             - name: Loot and Trade Table Functions
               href: Documents/LootAndTradeTableFunctions.md
-            - name: Loot Overload - loot spawn and kill
-              href: Documents/LootSpawnAndKill.md
-            - name: Loot Overload - loot replace block
-              href: Documents/LootReplaceBlock.md
-            - name: Loot Overload - loot replace entity
-              href: Documents/LootReplaceEntity.md
+            - name: Loot Overloads
+              href: Documents/LootOverloads.md
+            - name: Loot Table Conditions
+              href: Documents/LootTableConditions.md
+            - name: Creating a Loot Table
+              href: Documents/CreateLootTable.md
         - name: Physically Based Rendering
           items:
             - name: Getting Started with Ray Tracing
