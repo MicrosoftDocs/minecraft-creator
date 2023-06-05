@@ -13,11 +13,13 @@ Below is a list of all the available Item Components within Minecraft: Bedrock E
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
+|[minecraft:cooldown](ItemComponents/minecraft_cooldown.md)|*not set* | JSON Object|  Cool down time for a component. After you use an item, all items with the same cool down category setting become unusable for the duration specified by the 'cool down time' setting in this component.|
 |[minecraft:display_name](ItemComponents/minecraft_display_name.md)|*not set* | JSON Object|  Display Name item component. Display Names display the name of an item.|
 |[minecraft:durability](ItemComponents/minecraft_durability.md)|*not set* |JSON Object|  Durability item component: how much damage can this item take before breaking.|
 |[minecraft:entity_placer](ItemComponents/minecraft_entity_placer.md)|*not set* | JSON Object|  Allows the item to place specified entities into the world.|
 |[minecraft:fuel](ItemComponents/minecraft_fuel.md)|*not set* |  JSON Object| Fuel component. Allows this item to be used as fuel in a furnace to 'cook' other items.|
 |[minecraft:icon](ItemComponents/minecraft_icon.md)|*not set* | JSON Object|  The icon item component determines the icon to represent the item in the UI and elsewhere.|
+|[minecraft:repairable](ItemComponents/minecraft_repairable.md)|*not set* | JSON Object|  Repairable item component: Determines which items can be used to repair a defined item, as well as the amount of durability specified items will repair.|
 
 >[!IMPORTANT]
 > The following Item Components require the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
@@ -32,7 +34,6 @@ Below is a list of all the available Item Components within Minecraft: Bedrock E
 |[minecraft:armor](ItemComponents/minecraft_armor.md)|*not set* |  JSON Object| The armor item component determines the amount of protection you have in your armor item.|
 |[minecraft:block_placer](ItemComponents/minecraft_block_placer.md)|*not set* | JSON Object|  Planter item component. Planter items are items that can be planted.|
 |[minecraft:chargeable](ItemComponents/minecraft_chargeable.md)|*not set* | JSON Object| Allows an item to be used over a duration.|
-|[minecraft:cooldown](ItemComponents/minecraft_cooldown.md)|*not set* | JSON Object|  Cool down time for a component. After you use an item it becomes unusable for the duration specified by the 'cool down time' setting in this component.|
 |[minecraft:digger](ItemComponents/minecraft_digger.md)|*not set* | JSON Object|  Digger item. Component put on items that dig.|
 |[minecraft:foil](ItemComponents/minecraft_foil.md)|*not set* | JSON Object|  When an item has a foil component, it gains a shimmery glint to its appearance.|
 |[minecraft:food](ItemComponents/minecraft_food.md)|*not set* | JSON Object|  When an item has a food component, it becomes edible to the player.|
@@ -41,7 +42,6 @@ Below is a list of all the available Item Components within Minecraft: Bedrock E
 |[minecraft:projectile](ItemComponents/minecraft_projectile.md)|*not set* | JSON Object| Projectile item component. Projectile items shoot out, like an arrow.|
 |[minecraft:record](ItemComponents/minecraft_record.md)|*not set* | JSON Object|  The icon item component determines the icon to represent the item in the UI and elsewhere.|
 |[minecraft:render_offsets](ItemComponents/minecraft_render_offsets.md)|*not set* | JSON Object|  Render offsets component: optional values can be given to offset the way the item is rendered.|
-|[minecraft:repairable](ItemComponents/minecraft_repairable.md)|*not set* | JSON Object|  Repairable item component: how much damage can this item repair, what items can repair it.|
 |[minecraft:shooter](ItemComponents/minecraft_shooter.md)|*not set* | JSON Object|  Shooter Item Component.|
 |[minecraft:throwable](ItemComponents/minecraft_throwable.md)|*not set* | JSON Object|  Throwable item component. Throwable items, such as a snowball.|
 |[minecraft:weapon](ItemComponents/minecraft_weapon.md)|*not set* |  JSON Object| Weapon Item Component. Added to every weapon item such as axe, sword, trident, bow, crossbow.|

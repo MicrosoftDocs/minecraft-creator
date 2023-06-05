@@ -49,7 +49,7 @@ Features are read from JSON files in the "features" subfolder of behavior packs.
 | [minecraft:fossil_feature](Features\minecraftFossil_feature.md)| Generates a skeletal structure composed of bone blocks and parametric ore blocks.
 | [minecraft:geode_feature](Features\minecraftGeode_feature.md)| Generates a rock formation to simulate a geode.|
 | [minecraft:growing_plant_feature](Features\minecraftGrowing_plant_feature.md)| Places a growing plant in the world.|
-| [minecraft:hell_cave_carver_feature](Features\minecraftHell_cave_carver_feature.md)| Carves a cave through the Nether in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.|
+| [minecraft:nether_cave_carver_feature](Features\minecraftNether_cave_carver_feature.md)| Carves a cave through the Nether in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.|
 | [minecraft:multiface_feature](Features\minecraftMultiface_feature.md)| Places one or a few multiface blocks on floors/walls/ceilings.|
 | [minecraft:ore_feature](Features\minecraftOre_feature.md)| Places a vein of blocks to simulate ore deposits.|
 | [minecraft:rect_layout](Features\minecraftRect_layout.md)| Scans the surface of a Chunk, calling place() on the surface of each block column.|

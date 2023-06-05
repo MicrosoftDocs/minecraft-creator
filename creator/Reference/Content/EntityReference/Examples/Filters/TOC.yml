@@ -2,6 +2,10 @@
   href: ../FilterList.md
 - name: actor_health
   href: actor_health.md
+- name: all_slots_empty
+  href: all_slots_empty.md
+- name: any_slot_empty
+  href: any_slot_empty.md
 - name: clock_time
   href: clock_time.md
 - name: distance_to_nearest_player
@@ -100,6 +104,8 @@
   href: is_skin_id.md
 - name: is_sleeping
   href: is_sleeping.md
+- name: is_sneak_held
+  href: is_sneak_held.md
 - name: is_sneaking
   href: is_sneaking.md
 - name: is_snow_covered

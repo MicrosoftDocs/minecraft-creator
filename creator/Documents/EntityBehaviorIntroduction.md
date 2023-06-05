@@ -97,7 +97,6 @@ A good way to learn about a component and see how it's used in practice is to lo
 |----|-----------|--------|
 | `minecraft:physics`| `has_collision`  `has_gravity` | You'll need this component on 99% of custom entities. It allows the entity to stay on the ground and react to interaction and punches in a way that you would expect.      |
 | `minecraft:scale`  | `value` | Sets the relative size of the entity.   |
-| `minecraft:collision_box` | `width` `height` | Specifies the area an entity takes up in the world. Only the width and height can be changed. The collision box always has a square base that's aligned to the world axes. |
 | `minecraft:type_family`   | `family`| Sets a list of type families that the entity is in. Type families can be tested by other entities. For example, to test which mobs they are hostile towards. |
 | `minecraft:movement`      | `value` | Sets the movement speed of the entity. 0.25 is the regular speed of most animals in Minecraft.  |
 | `minecraft:movement.basic`| [See documentation](../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_movement.basic.md)   | Allows the entity to move around on the ground.|

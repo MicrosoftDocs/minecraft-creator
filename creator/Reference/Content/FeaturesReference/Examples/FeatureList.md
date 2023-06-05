@@ -22,7 +22,7 @@ Below is a list of all the available Features within Minecraft: Bedrock Edition 
 | [minecraft:cave_carver_feature](Features/minecraftCave_carver_feature.md)| Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.|
 | [minecraft:conditional_list](Features/minecraftConditional_list.md)| Places the first suitable feature within a collection.|
 | [minecraft:growing_plant_feature](Features/minecraftGrowing_plant_feature.md)| Places a growing plant in the world.|
-| [minecraft:hell_cave_carver_feature](Features/minecraftHell_cave_carver_feature.md)| Carves a cave through the Nether in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.|
+| [minecraft:nether_cave_carver_feature](Features/minecraftnether_cave_carver_feature.md)| Carves a cave through the Nether in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.|
 | [minecraft:multiface_feature](Features/minecraftMultiface_feature.md)| Places one or a few multiface blocks on floors/walls/ceilings.|
 | [minecraft:geode_feature](Features/minecraftGeode_feature.md)| Generates a rock formation to simulate a geode.|
 | [minecraft:ore_feature](Features/minecraftOre_feature.md)| Places a vein of blocks to simulate ore deposits.|
