@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: iconicNurdle
+author: iconicNurdle
+ms.author: mikeam
 title: Camera Command Introduction
 ms.prod: gaming
 description: "An introduction to the `/camera` command"
