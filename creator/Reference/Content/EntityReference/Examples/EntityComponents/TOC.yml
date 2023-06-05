@@ -290,6 +290,8 @@
   href: minecraftComponent_sound_volume.md
 - name: spawn_entity
   href: minecraftComponent_spawn_entity.md
+- name: spell_effects
+  href: minecraftComponent_spell_effects.md
 - name: strength
   href: minecraftComponent_strength.md
 - name: tameable
