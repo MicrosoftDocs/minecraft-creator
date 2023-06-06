@@ -19,7 +19,7 @@ In this tutorial you will learn the following:
 
 ### Minecraft: Java Edition
 
-This version was originally released in 2009. I was called simply "Minecraft" until it was renamed to "Minecraft: Java Edition" in September 2017. As the name implies, it’s developed in Java and isn’t compatible with the current version of Minecraft for the most part. This edition is commonly referred to as "Java".
+This version was originally released in 2009. It was called simply "Minecraft" until it was renamed to "Minecraft: Java Edition" in September 2017. As the name implies, it’s developed in Java and isn’t compatible with the current version of Minecraft for the most part. This edition is commonly referred to as "Java".
 
 ### Minecraft: Bedrock Edition
 
