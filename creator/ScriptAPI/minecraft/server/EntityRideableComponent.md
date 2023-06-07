@@ -83,6 +83,9 @@ Adds an entity to this entity as a rider.
 
 #### **Returns** *boolean* - True if the rider entity was successfully added.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -98,6 +101,9 @@ Ejects the specified rider of this entity.
   
   Entity that should be ejected from this entity.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -107,6 +113,9 @@ ejectRiders(): void
 `
 
 Ejects all riders of this entity.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -151,7 +160,5 @@ Gets a list of positions and number of riders for each position for entities rid
 
 ### **componentId**
 `static read-only componentId = "minecraft:rideable";`
-
-Identifier of this component. Should always be minecraft:rideable.
 
 Type: *string*

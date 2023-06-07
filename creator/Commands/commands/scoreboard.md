@@ -94,7 +94,7 @@ Max int
 Min wildcard int
 - `min`: int
 Min int
-- `objective`: ScoreboardObjectives
+- `objective`: [ScoreboardObjectives](../enums/ScoreboardObjectives.md)
 Objective for the game to track
 - `operation`: operator
 A command operator of the `operation` to be applied. Must be `=`, `+=`, `-=`, `*=`, `/=`, `*/`, `<>`, `<`, or. `>`.
@@ -108,7 +108,7 @@ A [target selector](https://learn.microsoft.com/minecraft/creator/documents/comm
 An `enum` of `ascending` or `descending`.
 - `targetName`: targets
 A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the score havers.
-- `targetObjective`: ScoreboardObjectives
+- `targetObjective`: [ScoreboardObjectives](../enums/ScoreboardObjectives.md)
 
 
 ## Enums
@@ -125,12 +125,12 @@ Sidebar
 Enum of Scoreboard Players Num Actions
 
 #### Values
+- `set`
+Set
 - `add`
 Add
 - `remove`
 Remove
-- `set`
-Set
 
 ### `ScoreboardSortOrder`
 Enum of Scoreboard Sort Order

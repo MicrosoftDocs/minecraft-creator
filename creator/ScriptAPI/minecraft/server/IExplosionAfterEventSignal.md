@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IExplosionAfterEventSignal class.
 
 ## Classes that extend IExplosionAfterEventSignal
 - [*ExplosionAfterEventSignal*](ExplosionAfterEventSignal.md)
+- [*ExplosionAfterEventSignal*](ExplosionAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires after an explosion occurs.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: ExplosionAfterEvent) => void): (arg: ExplosionAfterEve
 
 #### **Returns** (arg: [*ExplosionAfterEvent*](ExplosionAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ExplosionAfterEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: ExplosionAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*ExplosionAfterEvent*](ExplosionAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

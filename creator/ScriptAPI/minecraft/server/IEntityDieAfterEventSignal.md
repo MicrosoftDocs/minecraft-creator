@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IEntityDieAfterEventSignal class.
 
 ## Classes that extend IEntityDieAfterEventSignal
 - [*EntityDieAfterEventSignal*](EntityDieAfterEventSignal.md)
+- [*EntityDieAfterEventSignal*](EntityDieAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires when an entity dies.
 
@@ -32,6 +33,9 @@ subscribe(callback: (arg: EntityDieAfterEvent) => void, options?: EntityEventOpt
 
 #### **Returns** (arg: [*EntityDieAfterEvent*](EntityDieAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: EntityDieAfterEvent) => void): void
@@ -39,6 +43,9 @@ unsubscribe(callback: (arg: EntityDieAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*EntityDieAfterEvent*](EntityDieAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

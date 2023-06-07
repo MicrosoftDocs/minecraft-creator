@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IEntitySpawnAfterEventSignal clas
 
 ## Classes that extend IEntitySpawnAfterEventSignal
 - [*EntitySpawnAfterEventSignal*](EntitySpawnAfterEventSignal.md)
+- [*EntitySpawnAfterEventSignal*](EntitySpawnAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires after an entity is spawned.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: EntitySpawnAfterEvent) => void): (arg: EntitySpawnAfte
 
 #### **Returns** (arg: [*EntitySpawnAfterEvent*](EntitySpawnAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: EntitySpawnAfterEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: EntitySpawnAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*EntitySpawnAfterEvent*](EntitySpawnAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

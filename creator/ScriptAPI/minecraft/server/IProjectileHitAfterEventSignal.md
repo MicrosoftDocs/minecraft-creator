@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IProjectileHitAfterEventSignal cl
 
 ## Classes that extend IProjectileHitAfterEventSignal
 - [*ProjectileHitAfterEventSignal*](ProjectileHitAfterEventSignal.md)
+- [*ProjectileHitAfterEventSignal*](ProjectileHitAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires after a projectile hits a target.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: ProjectileHitAfterEvent) => void): (arg: ProjectileHit
 
 #### **Returns** (arg: [*ProjectileHitAfterEvent*](ProjectileHitAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ProjectileHitAfterEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: ProjectileHitAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*ProjectileHitAfterEvent*](ProjectileHitAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

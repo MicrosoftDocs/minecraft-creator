@@ -15,5 +15,9 @@ description: Contents of the .EntityLifetimeState enumeration.
 ## Constants
 ### **loaded**
 `loaded = "loaded"`
+
+Corresponding object is loaded.
 ### **unloaded**
 `unloaded = "unloaded"`
+
+Corresponding object is now unloaded.

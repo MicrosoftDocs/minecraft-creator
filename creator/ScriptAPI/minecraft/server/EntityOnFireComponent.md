@@ -32,3 +32,32 @@ Type: *number*
 `static read-only componentId = "minecraft:onfire";`
 
 Type: *string*
+
+#### Examples
+##### ***setOnFire.ts***
+```typescript
+  const skelly = overworld.spawnEntity("minecraft:skeleton", targetLocation);
+
+  skelly.setOnFire(20, true);
+
+  mc.system.runTimeout(() => {
+    let onfire = skelly.getComponent("onfire") as mc.EntityOnFireComponent;
+    log(onfire.onFireTicksRemaining + " fire ticks remaining.");
+
+    skelly.extinguishFire(true);
+    log("Never mind. Fire extinguished.");
+  }, 20);
+```
+##### ***teleport.ts***
+```typescript
+  const cow = overworld.spawnEntity("minecraft:cow", targetLocation);
+
+  mc.system.runTimeout(() => {
+    cow.teleport(
+      { x: targetLocation.x + 2, y: targetLocation.y + 2, z: targetLocation.z + 2 },
+      {
+        facingLocation: targetLocation,
+      }
+    );
+  }, 20);
+```

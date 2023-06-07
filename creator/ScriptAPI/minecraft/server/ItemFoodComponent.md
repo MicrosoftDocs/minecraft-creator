@@ -52,6 +52,4 @@ Type: *string*
 ### **componentId**
 `static read-only componentId = "minecraft:food";`
 
-Identifier of this component. Should always be 'minecraft:food'.
-
 Type: *string*

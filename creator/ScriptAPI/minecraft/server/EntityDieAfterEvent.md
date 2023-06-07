@@ -12,14 +12,20 @@ description: Contents of the @minecraft/server.EntityDieAfterEvent class.
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Contains data related to the death of an entity in the game.
+
 ## Properties
 
 ### **damageSource**
 `read-only damageSource: EntityDamageSource;`
 
+If specified, provides more information on the source of damage that caused the death of this entity.
+
 Type: [*EntityDamageSource*](EntityDamageSource.md)
 
 ### **deadEntity**
 `read-only deadEntity: Entity;`
+
+Now-dead entity object.
 
 Type: [*Entity*](Entity.md)

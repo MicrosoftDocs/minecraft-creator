@@ -3,36 +3,39 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: minecraft/server.ItemStartChargeAfterEvent Class
-description: Contents of the @minecraft/server.ItemStartChargeAfterEvent class.
+title: minecraft/server.PressurePlatePushAfterEvent Class
+description: Contents of the @minecraft/server.PressurePlatePushAfterEvent class.
 ---
-# ItemStartChargeAfterEvent Class
+# PressurePlatePushAfterEvent Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Contains information related to a chargeable item starting to be charged.
+## Extends
+- [*BlockEvent*](BlockEvent.md)
+
+Contains information related to changes to a pressure plate push.
 
 ## Properties
 
-### **itemStack**
-`read-only itemStack: ItemStack;`
+### **previousRedstonePower**
+`read-only previousRedstonePower: number;`
 
-The impacted item stack that is starting to be charged.
+The redstone power of the pressure plate before it was pushed.
 
-Type: [*ItemStack*](ItemStack.md)
+Type: *number*
+
+### **redstonePower**
+`read-only redstonePower: number;`
+
+The redstone power of the pressure plate at the time of the push.
+
+Type: *number*
 
 ### **source**
 `read-only source: Entity;`
 
-Returns the source entity that triggered this item event.
+Source that triggered the pressure plate push.
 
 Type: [*Entity*](Entity.md)
-
-### **useDuration**
-`read-only useDuration: number;`
-
-Returns the time, in ticks, for the remaining duration left before the charge completes its cycle.
-
-Type: *number*

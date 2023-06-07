@@ -38,6 +38,4 @@ Type: *number*
 ### **componentId**
 `static read-only componentId = "minecraft:movement.sway";`
 
-Identifier of this component. Should always be minecraft:movement.sway.
-
 Type: *string*

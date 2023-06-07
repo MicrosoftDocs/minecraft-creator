@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IPlayerSpawnAfterEventSignal clas
 
 ## Classes that extend IPlayerSpawnAfterEventSignal
 - [*PlayerSpawnAfterEventSignal*](PlayerSpawnAfterEventSignal.md)
+- [*PlayerSpawnAfterEventSignal*](PlayerSpawnAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires after a player spawns.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: PlayerSpawnAfterEvent) => void): (arg: PlayerSpawnAfte
 
 #### **Returns** (arg: [*PlayerSpawnAfterEvent*](PlayerSpawnAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: PlayerSpawnAfterEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: PlayerSpawnAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerSpawnAfterEvent*](PlayerSpawnAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

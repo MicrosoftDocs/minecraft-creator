@@ -19,6 +19,36 @@ Represents a player within the world.
 
 ## Properties
 
+### **isFlying**
+`read-only isFlying: boolean;`
+
+Whether the player is flying. For example, in Creative or Spectator mode.
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **isGliding**
+`read-only isGliding: boolean;`
+
+Whether the player is gliding with Elytra.
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **isJumping**
+`read-only isJumping: boolean;`
+
+Whether the player is jumping. This will remain true while the player is holding the jump action.
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **level**
 `read-only level: number;`
 
@@ -55,16 +85,9 @@ Type: *number*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-### **spawnDimension**
-`read-only spawnDimension?: Dimension;`
-
-If this player has an individual spawn point set, returns the dimension that their spawn point is within.
-
-Type: [*Dimension*](Dimension.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
 
 ### **totalXpNeededForNextLevel**
 `read-only totalXpNeededForNextLevel: number;`
@@ -89,9 +112,8 @@ Type: *number*
 ## Methods
 - [addExperience](#addexperience)
 - [addLevels](#addlevels)
-- [clearSpawn](#clearspawn)
 - [getItemCooldown](#getitemcooldown)
-- [getSpawnPosition](#getspawnposition)
+- [getSpawnPoint](#getspawnpoint)
 - [getTotalXp](#gettotalxp)
 - [isOp](#isop)
 - [playSound](#playsound)
@@ -99,7 +121,7 @@ Type: *number*
 - [resetLevel](#resetlevel)
 - [sendMessage](#sendmessage)
 - [setOp](#setop)
-- [setSpawn](#setspawn)
+- [setSpawnPoint](#setspawnpoint)
 - [startItemCooldown](#startitemcooldown)
 
 ### **addExperience**
@@ -119,6 +141,9 @@ Adds/removes experience to/from the Player and returns the current experience of
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -127,7 +152,7 @@ Adds/removes experience to/from the Player and returns the current experience of
 addLevels(amount: number): number
 `
 
- Adds/removes level to/from the Player and returns the current level of the Player.
+Adds/removes level to/from the Player and returns the current level of the Player.
 
 #### **Parameters**
 - **amount**: *number*
@@ -139,18 +164,8 @@ addLevels(amount: number): number
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-> [!WARNING]
-> This function can throw errors.
-
-### **clearSpawn**
-`
-clearSpawn(): void
-`
-
-Clears the spawn point that has been individually set for a player.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -175,14 +190,14 @@ Gets the current item cooldown time for a particular cooldown category.
 > [!WARNING]
 > This function can throw errors.
 
-### **getSpawnPosition**
+### **getSpawnPoint**
 `
-getSpawnPosition(): Vector3 | undefined
+getSpawnPoint(): DimensionLocation | undefined
 `
 
-Returns an individualized spawn position, if set, for a player.
+Gets the current spawn point of the player.
 
-#### **Returns** [*Vector3*](Vector3.md) | *undefined* - The individual spawn position, or undefined if there is no specific spawn position set for a player.
+#### **Returns** [*DimensionLocation*](DimensionLocation.md) | *undefined*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -235,8 +250,37 @@ Plays a sound that only this particular player can hear.
   
   Additional optional options for the sound.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+
+#### Examples
+##### ***playMusicAndSound.ts***
+```typescript
+  let players = mc.world.getPlayers();
+
+  const musicOptions: mc.MusicOptions = {
+    fade: 0.5,
+    loop: true,
+    volume: 1.0,
+  };
+  mc.world.playMusic("music.menu", musicOptions);
+
+  const worldSoundOptions: mc.WorldSoundOptions = {
+    pitch: 0.5,
+    volume: 4.0,
+  };
+  mc.world.playSound("ambient.weather.thunder", targetLocation, worldSoundOptions);
+
+  const playerSoundOptions: mc.PlayerSoundOptions = {
+    pitch: 1.0,
+    volume: 1.0,
+  };
+
+  players[0].playSound("bucket.fill_water", playerSoundOptions);
+```
 
 ### **postClientMessage**
 `
@@ -252,6 +296,9 @@ This is an internal-facing method for posting a system message to downstream cli
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -264,6 +311,9 @@ Resets the level of the player.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -283,9 +333,9 @@ Sends a message to the player.
 > [!WARNING]
 > This method can throw if the provided [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) is in an invalid format. For example, if an empty `name` string is provided to `score`.
 
-#### **Examples**
-##### *nestedTranslation.ts*
-```javascript
+#### Examples
+##### ***nestedTranslation.ts***
+```typescript
 // Displays "Apple or Coal"
 let rawMessage = {
   translate: "accessibility.list.or.two",
@@ -293,19 +343,31 @@ let rawMessage = {
 };
 player.sendMessage(rawMessage);
 ```
-##### *scoreWildcard.ts*
-```javascript
+##### ***scoreWildcard.ts***
+```typescript
 // Displays the player's score for objective "obj". Each player will see their own score.
 const rawMessage = { score: { name: "*", objective: "obj" } };
 world.sendMessage(rawMessage);
 ```
-##### *simpleString.ts*
-```javascript
+##### ***sendBasicMessage.ts***
+```typescript
+  let players = mc.world.getPlayers();
+
+  players[0].sendMessage("Hello World!");
+```
+##### ***sendTranslatedMessage.ts***
+```typescript
+  let players = mc.world.getPlayers();
+
+  players[0].sendMessage({ translate: "authentication.welcome", with: ["Amazing Player 1"] });
+```
+##### ***simpleString.ts***
+```typescript
 // Displays "Hello, world!"
 world.sendMessage("Hello, world!");
 ```
-##### *translation.ts*
-```javascript
+##### ***translation.ts***
+```typescript
 // Displays "First or Second"
 const rawMessage = { translate: "accessibility.list.or.two", with: ["First", "Second"] };
 player.sendMessage(rawMessage);
@@ -324,26 +386,27 @@ Will change the specified players permissions, and whether they are operator or 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
-### **setSpawn**
+### **setSpawnPoint**
 `
-setSpawn(spawnPosition: Vector3, spawnDimension: Dimension): void
+setSpawnPoint(spawnPoint?: DimensionLocation): void
 `
 
-Sets the individual spawn point of this player.
+Sets the current starting spawn point for this particular player.
 
 #### **Parameters**
-- **spawnPosition**: [*Vector3*](Vector3.md)
-  
-  Location of the spawn point.
-- **spawnDimension**: [*Dimension*](Dimension.md)
-  
-  Dimension to place the players' individualized spawn point within.
+- **spawnPoint**?: [*DimensionLocation*](DimensionLocation.md) = `null`
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -365,6 +428,9 @@ Sets the item cooldown time for a particular cooldown category.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

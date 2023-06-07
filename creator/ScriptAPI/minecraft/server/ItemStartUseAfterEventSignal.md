@@ -3,16 +3,16 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: minecraft/server.ItemStartChargeAfterEventSignal Class
-description: Contents of the @minecraft/server.ItemStartChargeAfterEventSignal class.
+title: minecraft/server.ItemStartUseAfterEventSignal Class
+description: Contents of the @minecraft/server.ItemStartUseAfterEventSignal class.
 ---
-# ItemStartChargeAfterEventSignal Class
+# ItemStartUseAfterEventSignal Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
-- [*IItemStartChargeAfterEventSignal*](IItemStartChargeAfterEventSignal.md)
+- [*IItemStartUseAfterEventSignal*](IItemStartUseAfterEventSignal.md)
 
 Manages callbacks that are connected to the start of charging for a chargeable item.

@@ -42,6 +42,9 @@ Leashes this entity to another entity.
   
   The entity to leash this entity to.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -52,6 +55,9 @@ unleash(): void
 
 Unleashes this entity if it is leashed to another entity.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -59,7 +65,5 @@ Unleashes this entity if it is leashed to another entity.
 
 ### **componentId**
 `static read-only componentId = "minecraft:leashable";`
-
-Identifier of this component. Should always be minecraft:leashable.
 
 Type: *string*

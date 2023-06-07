@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IWorldInitializeAfterEventSignal 
 
 ## Classes that extend IWorldInitializeAfterEventSignal
 - [*WorldInitializeAfterEventSignal*](WorldInitializeAfterEventSignal.md)
+- [*WorldInitializeAfterEventSignal*](WorldInitializeAfterEventSignal.md)
 
 An event that fires when a world is first initialized or loaded.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: WorldInitializeAfterEvent) => void): (arg: WorldInitia
 
 #### **Returns** (arg: [*WorldInitializeAfterEvent*](WorldInitializeAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: WorldInitializeAfterEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: WorldInitializeAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*WorldInitializeAfterEvent*](WorldInitializeAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

@@ -7,7 +7,7 @@ title: inputpermission Command
 description: Description and usage of the inputpermission command
 ---
 # `/inputpermission` Command
-Sets whether or not a player's input can affect their character.
+Optionally enables or disables input permissions for a player.
 
 <table>
   <tr>
@@ -21,9 +21,15 @@ Sets whether or not a player's input can affect their character.
 </table>
 
 ## Usage
-### `/inputpermission set <targets: target> <permission: permission> <state: state>`
+### Set input permission
+`/inputpermission set <targets: target> <permission: permission> <state: state>`
 
-### `/inputpermission query <targets: target> <permission: permission> [state: state]`
+Sets the input permission for the selection to a state.
+
+### Query input permission
+`/inputpermission query <targets: target> <permission: permission> [state: state]`
+
+Retrieves the permissions of entities that match the selection.
 
 ## Arguments
 - `permission`: permission
@@ -32,12 +38,14 @@ Sets whether or not a player's input can affect their character.
 
 ## Enums
 ### `permission`
+Permission type to set.
 
 #### Values
 - `movement`
 - `camera`
 
 ### `state`
+State value to set for the permission.
 
 #### Values
 - `enabled`

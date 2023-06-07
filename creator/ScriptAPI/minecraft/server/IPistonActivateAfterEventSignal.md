@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IPistonActivateAfterEventSignal c
 
 ## Classes that extend IPistonActivateAfterEventSignal
 - [*PistonActivateAfterEventSignal*](PistonActivateAfterEventSignal.md)
+- [*PistonActivateAfterEventSignal*](PistonActivateAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires after a piston is activated.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: PistonActivateAfterEvent) => void): (arg: PistonActiva
 
 #### **Returns** (arg: [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: PistonActivateAfterEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: PistonActivateAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

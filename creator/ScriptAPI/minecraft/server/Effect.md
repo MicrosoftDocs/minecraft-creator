@@ -33,6 +33,25 @@ Type: *string*
 ### **duration**
 `read-only duration: number;`
 
-Gets the entire specified duration, in ticks, of this effect.
+Gets the entire specified duration, in ticks, of this effect. There are 20 ticks per second. Use [*@minecraft/server.TicksPerSecond*](../../minecraft/server/minecraft-server.md#tickspersecond) constant to convert between ticks and seconds.
 
 Type: *number*
+
+### **typeId**
+`read-only typeId: string;`
+
+Gets the type id of this effect.
+
+Type: *string*
+
+## Methods
+- [isValid](#isvalid)
+
+### **isValid**
+`
+isValid(): boolean
+`
+
+Returns whether an effect instance is available for use in this context.
+
+#### **Returns** *boolean*

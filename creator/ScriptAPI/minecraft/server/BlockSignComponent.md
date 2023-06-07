@@ -100,28 +100,33 @@ Sets the text of the sign component.
   
   The side of the sign the message will be set on. If not provided, the message will be set on the front side of the sign.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
-#### **Examples**
-##### *SetRawMessage.ts*
-```javascript
+#### Examples
+##### ***SetRawMessage.ts***
+```typescript
 const helloWorldMessage: RawMessage = { text: 'Hello World' };
 sign.setText(helloWorldMessage);
+
 // Sign text will be saved as a RawText
 const result: RawText = sign.getRawText(); 
 JSON.stringify(result); // { rawtext: [{ text: 'Hello World' }] };
 ```
-##### *SetRawText.ts*
-```javascript
+##### ***SetRawText.ts***
+```typescript
 const helloWorldText: RawText = { rawtext: [{ text: 'Hello World' }] };
 sign.setText(helloWorldText);
+
 // There will be no data transformation unlike calling setText with a RawMessage
 const result: RawText = sign.getRawText(); 
 JSON.stringify(result); // { rawtext: [{ text: 'Hello World' }] };
 ```
-##### *SetString.ts*
-```javascript
+##### ***SetString.ts***
+```typescript
 // Set sign to say 'Hello'
 sign.setText('Hello');
 sign.getText(); // 'Hello'
@@ -142,6 +147,9 @@ Sets the dye color of the text.
   
   The side of the sign the color will be set on. If not provided, the color will be set on the front side of the sign.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -152,6 +160,9 @@ setWaxed(): void
 
 Makes it so players cannot edit this sign.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -160,6 +171,72 @@ Makes it so players cannot edit this sign.
 ### **componentId**
 `static read-only componentId = "minecraft:sign";`
 
-Identifier of this component. Should always be minecraft:sign.
-
 Type: *string*
+
+#### Examples
+##### ***addSign.ts***
+```typescript
+  const players = mc.world.getPlayers();
+
+  const dim = players[0].dimension;
+
+  const signBlock = dim.getBlock(targetLocation);
+
+  if (!signBlock) {
+    log("Could not find a block at specified location.");
+    return -1;
+  }
+  let signPerm = mc.BlockPermutation.resolve("minecraft:standing_sign", { ground_sign_direction: 8 });
+
+  signBlock.setPermutation(signPerm);
+
+  const signComponent = signBlock.getComponent("minecraft:sign") as mc.BlockSignComponent;
+
+  signComponent.setText(`Basic sign!\nThis is green on the front.`);
+```
+##### ***addTranslatedSign.ts***
+```typescript
+  const players = mc.world.getPlayers();
+
+  const dim = players[0].dimension;
+
+  const signBlock = dim.getBlock(targetLocation);
+
+  if (!signBlock) {
+    log("Could not find a block at specified location.");
+    return -1;
+  }
+  let signPerm = mc.BlockPermutation.resolve("minecraft:standing_sign", { ground_sign_direction: 8 });
+
+  signBlock.setPermutation(signPerm);
+
+  const signComponent = signBlock.getComponent("minecraft:sign") as mc.BlockSignComponent;
+
+  signComponent.setText({ translate: "item.skull.player.name", with: [players[0].name] });
+```
+##### ***addTwoSidedSign.ts***
+```typescript
+  const players = mc.world.getPlayers();
+
+  const dim = players[0].dimension;
+
+  const signBlock = dim.getBlock(targetLocation);
+
+  if (!signBlock) {
+    log("Could not find a block at specified location.");
+    return -1;
+  }
+  let signPerm = mc.BlockPermutation.resolve("minecraft:standing_sign", { ground_sign_direction: 8 });
+
+  signBlock.setPermutation(signPerm);
+
+  const signComponent = signBlock.getComponent("minecraft:sign") as mc.BlockSignComponent;
+
+  signComponent.setText(`Party Sign!\nThis is green on the front.`);
+  signComponent.setText(`Party Sign!\nThis is red on the back.`, mc.SignSide.back);
+  signComponent.setTextDyeColor(mc.DyeColor.green);
+  signComponent.setTextDyeColor(mc.DyeColor.red, mc.SignSide.back);
+
+  // players cannot edit sign!
+  signComponent.setWaxed();
+```

@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IPlayerLeaveAfterEventSignal clas
 
 ## Classes that extend IPlayerLeaveAfterEventSignal
 - [*PlayerLeaveAfterEventSignal*](PlayerLeaveAfterEventSignal.md)
+- [*PlayerLeaveAfterEventSignal*](PlayerLeaveAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires after a player leaves a world.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: PlayerLeaveAfterEvent) => void): (arg: PlayerLeaveAfte
 
 #### **Returns** (arg: [*PlayerLeaveAfterEvent*](PlayerLeaveAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: PlayerLeaveAfterEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: PlayerLeaveAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerLeaveAfterEvent*](PlayerLeaveAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

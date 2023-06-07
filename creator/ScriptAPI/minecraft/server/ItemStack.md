@@ -19,6 +19,9 @@ Defines a collection of items.
 Number of the items in the stack. Valid values range between 1-255. The provided value will be clamped to the item's maximum stack size.
 
 Type: *number*
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
 
 > [!WARNING]
 > Throws if the value is outside the range of 1-255.
@@ -36,6 +39,9 @@ Type: *boolean*
 Gets or sets whether the item is kept on death.
 
 Type: *boolean*
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
 
 ### **lockMode**
 `lockMode: ItemLockMode;`
@@ -43,6 +49,9 @@ Type: *boolean*
 Gets or sets the item's lock mode. The default value is `ItemLockMode.none`.
 
 Type: [*ItemLockMode*](ItemLockMode.md)
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
 
 ### **maxAmount**
 `read-only maxAmount: number;`
@@ -57,6 +66,9 @@ Type: *number*
 Given name of this stack of items. The name tag is displayed when hovering over the item. Setting the name tag to an empty string or `undefined` will remove the name tag.
 
 Type: *string*
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
 
 > [!WARNING]
 > Throws if the length exceeds 255 characters.
@@ -136,9 +148,9 @@ Gets a component (that represents additional capabilities) for an item stack.
 
 #### **Returns** [*ItemComponent*](ItemComponent.md) | *undefined*
 
-#### **Examples**
-##### *durability.ts*
-```javascript
+#### Examples
+##### ***durability.ts***
+```typescript
 // Get the maximum durability of a custom sword item
 const itemStack = new ItemStack("custom:sword");
 const durability = itemStack.getComponent("minecraft:durability") as ItemDurabilityComponent;
@@ -234,12 +246,15 @@ The list of block types this item can break in Adventure mode. The block names a
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > Throws if any of the provided block identifiers are invalid.
 
-#### **Examples**
-##### *example.ts*
-```javascript
+#### Examples
+##### ***example.ts***
+```typescript
 // Creates a diamond pickaxe that can destroy cobblestone and obsidian
 const specialPickaxe = new ItemStack("minecraft:diamond_pickaxe");
 specialPickaxe.setCanDestroy(["minecraft:cobblestone", "minecraft:obsidian"]);
@@ -258,12 +273,15 @@ The list of block types this item can be placed on in Adventure mode. This is on
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > Throws if any of the provided block identifiers are invalid.
 
-#### **Examples**
-##### *example.ts*
-```javascript
+#### Examples
+##### ***example.ts***
+```typescript
 // Creates a gold block that can be placed on grass and dirt
 const specialGoldBlock = new ItemStack("minecraft:gold_block");
 specialPickaxe.setCanPlaceOn(["minecraft:grass", "minecraft:dirt"]);
@@ -282,9 +300,31 @@ Sets the lore value - a secondary display string - for an ItemStack.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-#### **Examples**
-##### *multilineLore.ts*
-```javascript
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+#### Examples
+##### ***diamondAwesomeSword.ts***
+```typescript
+  const diamondAwesomeSword = new mc.ItemStack(mc.MinecraftItemTypes.diamondSword, 1);
+  let players = mc.world.getAllPlayers();
+
+  diamondAwesomeSword.setLore(["§c§lDiamond Sword of Awesome§r", "+10 coolness", "§p+4 shiny§r"]);
+
+  // hover over/select the item in your inventory to see the lore.
+  const inventory = players[0].getComponent("inventory") as mc.EntityInventoryComponent;
+  inventory.container.setItem(0, diamondAwesomeSword);
+
+  let item = inventory.container.getItem(0);
+
+  if (item) {
+    let enchants = item.getComponent("minecraft:enchantments") as mc.ItemEnchantsComponent;
+    let knockbackEnchant = new mc.Enchantment("knockback", 3);
+    enchants.enchantments.addEnchantment(knockbackEnchant);
+  }
+```
+##### ***multilineLore.ts***
+```typescript
 // Set the lore of an item to multiple lines of text
 const itemStack = new ItemStack("minecraft:diamond_sword");
 itemStack.setLore(["Line 1", "Line 2", "Line 3"]);
@@ -305,22 +345,98 @@ Triggers an item type event. For custom items, a number of events are defined in
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-#### **Examples**
-##### *itemStacks.ts*
-```javascript
-const oneItemLoc: mc.Vector3 = { x: 3, y: 2, z: 1 };
-const fiveItemsLoc: mc.Vector3 = { x: 1, y: 2, z: 1 };
-const diamondPickaxeLoc: mc.Vector3 = { x: 2, y: 2, z: 4 };
-const oneEmerald = new mc.ItemStack(mc.MinecraftItemTypes.emerald, 1, 0);
-const onePickaxe = new mc.ItemStack(mc.MinecraftItemTypes.diamondPickaxe, 1, 0);
-const fiveEmeralds = new mc.ItemStack(mc.MinecraftItemTypes.emerald, 5, 0);
-overworld.spawnItem(oneEmerald, oneItemLoc);
-overworld.spawnItem(fiveEmeralds, fiveItemsLoc);
-overworld.spawnItem(onePickaxe, diamondPickaxeLoc);
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+#### Examples
+##### ***diamondAwesomeSword.ts***
+```typescript
+  const diamondAwesomeSword = new mc.ItemStack(mc.MinecraftItemTypes.diamondSword, 1);
+  let players = mc.world.getAllPlayers();
+
+  diamondAwesomeSword.setLore(["§c§lDiamond Sword of Awesome§r", "+10 coolness", "§p+4 shiny§r"]);
+
+  // hover over/select the item in your inventory to see the lore.
+  const inventory = players[0].getComponent("inventory") as mc.EntityInventoryComponent;
+  inventory.container.setItem(0, diamondAwesomeSword);
+
+  let item = inventory.container.getItem(0);
+
+  if (item) {
+    let enchants = item.getComponent("minecraft:enchantments") as mc.ItemEnchantsComponent;
+    let knockbackEnchant = new mc.Enchantment("knockback", 3);
+    enchants.enchantments.addEnchantment(knockbackEnchant);
+  }
 ```
-##### *spawnItem.ts*
-```javascript
-  const featherItem = new mc.ItemStack(mc.MinecraftItemTypes.feather, 1, 0);
+##### ***givePlayerEquipment.ts***
+```typescript
+  let players = mc.world.getAllPlayers();
+
+  const armorStandLoc = { x: targetLocation.x, y: targetLocation.y, z: targetLocation.z + 4 };
+  let armorStand = players[0].dimension.spawnEntity("armor_stand", armorStandLoc);
+
+  const equipmentCompPlayer = players[0].getComponent("equipment_inventory") as mc.EntityEquipmentInventoryComponent;
+  equipmentCompPlayer.setEquipment(mc.EquipmentSlot.head, new mc.ItemStack("minecraft:golden_helmet"));
+  equipmentCompPlayer.setEquipment(mc.EquipmentSlot.chest, new mc.ItemStack("minecraft:iron_chestplate"));
+  equipmentCompPlayer.setEquipment(mc.EquipmentSlot.legs, new mc.ItemStack("minecraft:diamond_leggings"));
+  equipmentCompPlayer.setEquipment(mc.EquipmentSlot.feet, new mc.ItemStack("minecraft:netherite_boots"));
+  equipmentCompPlayer.setEquipment(mc.EquipmentSlot.mainhand, new mc.ItemStack("minecraft:wooden_sword"));
+  equipmentCompPlayer.setEquipment(mc.EquipmentSlot.offhand, new mc.ItemStack("minecraft:shield"));
+
+  const equipmentCompArmorStand = armorStand.getComponent(
+    "equipment_inventory"
+  ) as mc.EntityEquipmentInventoryComponent;
+  equipmentCompArmorStand.setEquipment(mc.EquipmentSlot.head, new mc.ItemStack("minecraft:golden_helmet"));
+  equipmentCompArmorStand.setEquipment(mc.EquipmentSlot.chest, new mc.ItemStack("minecraft:iron_chestplate"));
+  equipmentCompArmorStand.setEquipment(mc.EquipmentSlot.legs, new mc.ItemStack("minecraft:diamond_leggings"));
+  equipmentCompArmorStand.setEquipment(mc.EquipmentSlot.feet, new mc.ItemStack("minecraft:netherite_boots"));
+  equipmentCompArmorStand.setEquipment(mc.EquipmentSlot.mainhand, new mc.ItemStack("minecraft:wooden_sword"));
+  equipmentCompArmorStand.setEquipment(mc.EquipmentSlot.offhand, new mc.ItemStack("minecraft:shield"));
+```
+##### ***ironFireSword.ts***
+```typescript
+  const ironFireSword = new mc.ItemStack(mc.MinecraftItemTypes.diamondSword, 1);
+  let players = mc.world.getAllPlayers();
+
+  let fireAspectEnchant = new mc.Enchantment("fire_aspect", 3);
+  let enchants = ironFireSword.getComponent("minecraft:enchantments") as mc.ItemEnchantsComponent;
+  let addedFire = enchants.enchantments.addEnchantment(fireAspectEnchant);
+
+  if (!addedFire) {
+    log("Could not add fire aspect.");
+    return -1;
+  }
+
+  const inventory = players[0].getComponent("inventory") as mc.EntityInventoryComponent;
+  inventory.container.setItem(0, ironFireSword);
+
+  // hover over/select the item in your inventory to see the lore.
+```
+##### ***itemStacks.ts***
+```typescript
+  const overworld = mc.world.getDimension("overworld");
+
+  const oneItemLoc = { x: targetLocation.x + targetLocation.y + 3, y: 2, z: targetLocation.z + 1 };
+  const fiveItemsLoc = { x: targetLocation.x + 1, y: targetLocation.y + 2, z: targetLocation.z + 1 };
+  const diamondPickaxeLoc = { x: targetLocation.x + 2, y: targetLocation.y + 2, z: targetLocation.z + 4 };
+
+  const oneEmerald = new mc.ItemStack(mc.MinecraftItemTypes.emerald, 1);
+  const onePickaxe = new mc.ItemStack(mc.MinecraftItemTypes.diamondPickaxe, 1);
+  const fiveEmeralds = new mc.ItemStack(mc.MinecraftItemTypes.emerald, 5);
+
+  log(`Spawning an emerald at (${oneItemLoc.x}, ${oneItemLoc.y}, ${oneItemLoc.z})`);
+  overworld.spawnItem(oneEmerald, oneItemLoc);
+
+  log(`Spawning five emeralds at (${fiveItemsLoc.x}, ${fiveItemsLoc.y}, ${fiveItemsLoc.z})`);
+  overworld.spawnItem(fiveEmeralds, fiveItemsLoc);
+
+  log(`Spawning a diamond pickaxe at (${diamondPickaxeLoc.x}, ${diamondPickaxeLoc.y}, ${diamondPickaxeLoc.z})`);
+  overworld.spawnItem(onePickaxe, diamondPickaxeLoc);
+```
+##### ***spawnItem.ts***
+```typescript
+  const featherItem = new mc.ItemStack(mc.MinecraftItemTypes.feather, 1);
+
   overworld.spawnItem(featherItem, targetLocation);
-  log("New feather created!");
+  log(`New feather created at ${targetLocation.x}, ${targetLocation.y}, ${targetLocation.z}!`);
 ```

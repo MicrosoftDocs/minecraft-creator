@@ -20,6 +20,17 @@ description: Contents of the @minecraft/server.BlockEvent class.
 - [*LeverActionAfterEvent*](LeverActionAfterEvent.md)
 - [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)
 - [*PistonActivateBeforeEvent*](PistonActivateBeforeEvent.md)
+- [*BlockBreakAfterEvent*](BlockBreakAfterEvent.md)
+- [*BlockExplodeAfterEvent*](BlockExplodeAfterEvent.md)
+- [*BlockPlaceAfterEvent*](BlockPlaceAfterEvent.md)
+- [*ButtonPushAfterEvent*](ButtonPushAfterEvent.md)
+- [*LeverActionAfterEvent*](LeverActionAfterEvent.md)
+- [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)
+- [*PistonActivateBeforeEvent*](PistonActivateBeforeEvent.md)
+- [*PressurePlatePopAfterEvent*](PressurePlatePopAfterEvent.md)
+- [*PressurePlatePushAfterEvent*](PressurePlatePushAfterEvent.md)
+- [*TargetBlockHitAfterEvent*](TargetBlockHitAfterEvent.md)
+- [*TripWireTripAfterEvent*](TripWireTripAfterEvent.md)
 
 Contains information regarding an event that impacts a specific block.
 

@@ -3,10 +3,10 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: minecraft/server.AfterEvents Class
-description: Contents of the @minecraft/server.AfterEvents class.
+title: minecraft/server.WorldAfterEvents Class
+description: Contents of the @minecraft/server.WorldAfterEvents class.
 ---
-# AfterEvents Class
+# WorldAfterEvents Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 > [!CAUTION]
@@ -72,6 +72,11 @@ This event fires when an entity dies.
 
 Type: [*EntityDieAfterEventSignal*](EntityDieAfterEventSignal.md)
 
+### **entityHealthChanged**
+`read-only entityHealthChanged: EntityHealthChangedAfterEventSignal;`
+
+Type: [*EntityHealthChangedAfterEventSignal*](EntityHealthChangedAfterEventSignal.md)
+
 ### **entityHit**
 `read-only entityHit: EntityHitAfterEventSignal;`
 
@@ -85,6 +90,11 @@ Type: [*EntityHitAfterEventSignal*](EntityHitAfterEventSignal.md)
 This event fires when an entity is hurt (takes damage).
 
 Type: [*EntityHurtAfterEventSignal*](EntityHurtAfterEventSignal.md)
+
+### **entityRemoved**
+`read-only entityRemoved: EntityRemovedAfterEventSignal;`
+
+Type: [*EntityRemovedAfterEventSignal*](EntityRemovedAfterEventSignal.md)
 
 ### **entitySpawn**
 `read-only entitySpawn: EntitySpawnAfterEventSignal;`
@@ -100,12 +110,10 @@ This event is fired after an explosion occurs.
 
 Type: [*ExplosionAfterEventSignal*](ExplosionAfterEventSignal.md)
 
-### **itemCompleteCharge**
-`read-only itemCompleteCharge: ItemCompleteChargeAfterEventSignal;`
+### **itemCompleteUse**
+`read-only itemCompleteUse: ItemCompleteUseAfterEventSignal;`
 
-This event fires when a chargeable item completes charging.
-
-Type: [*ItemCompleteChargeAfterEventSignal*](ItemCompleteChargeAfterEventSignal.md)
+Type: [*ItemCompleteUseAfterEventSignal*](ItemCompleteUseAfterEventSignal.md)
 
 ### **itemDefinitionEvent**
 `read-only itemDefinitionEvent: ItemDefinitionAfterEventSignal;`
@@ -114,19 +122,15 @@ For custom items, this event is triggered when the fundamental set of defined co
 
 Type: [*ItemDefinitionAfterEventSignal*](ItemDefinitionAfterEventSignal.md)
 
-### **itemReleaseCharge**
-`read-only itemReleaseCharge: ItemReleaseChargeAfterEventSignal;`
+### **itemReleaseUse**
+`read-only itemReleaseUse: ItemReleaseUseAfterEventSignal;`
 
-This event fires when a chargeable item is released from charging.
+Type: [*ItemReleaseUseAfterEventSignal*](ItemReleaseUseAfterEventSignal.md)
 
-Type: [*ItemReleaseChargeAfterEventSignal*](ItemReleaseChargeAfterEventSignal.md)
+### **itemStartUse**
+`read-only itemStartUse: ItemStartUseAfterEventSignal;`
 
-### **itemStartCharge**
-`read-only itemStartCharge: ItemStartChargeAfterEventSignal;`
-
-This event fires when a chargeable item starts charging.
-
-Type: [*ItemStartChargeAfterEventSignal*](ItemStartChargeAfterEventSignal.md)
+Type: [*ItemStartUseAfterEventSignal*](ItemStartUseAfterEventSignal.md)
 
 ### **itemStartUseOn**
 `read-only itemStartUseOn: ItemStartUseOnAfterEventSignal;`
@@ -135,12 +139,10 @@ This event fires when a player successfully uses an item or places a block by pr
 
 Type: [*ItemStartUseOnAfterEventSignal*](ItemStartUseOnAfterEventSignal.md)
 
-### **itemStopCharge**
-`read-only itemStopCharge: ItemStopChargeAfterEventSignal;`
+### **itemStopUse**
+`read-only itemStopUse: ItemStopUseAfterEventSignal;`
 
-This event fires when a chargeable item stops charging.
-
-Type: [*ItemStopChargeAfterEventSignal*](ItemStopChargeAfterEventSignal.md)
+Type: [*ItemStopUseAfterEventSignal*](ItemStopUseAfterEventSignal.md)
 
 ### **itemStopUseOn**
 `read-only itemStopUseOn: ItemStopUseOnAfterEventSignal;`
@@ -205,12 +207,32 @@ This event fires when a player spawns or respawns. Note that an additional flag 
 
 Type: [*PlayerSpawnAfterEventSignal*](PlayerSpawnAfterEventSignal.md)
 
+### **pressurePlatePop**
+`read-only pressurePlatePop: PressurePlatePopAfterEventSignal;`
+
+Type: [*PressurePlatePopAfterEventSignal*](PressurePlatePopAfterEventSignal.md)
+
+### **pressurePlatePush**
+`read-only pressurePlatePush: PressurePlatePushAfterEventSignal;`
+
+Type: [*PressurePlatePushAfterEventSignal*](PressurePlatePushAfterEventSignal.md)
+
 ### **projectileHit**
 `read-only projectileHit: ProjectileHitAfterEventSignal;`
 
 This event fires when a projectile hits an entity or block.
 
 Type: [*ProjectileHitAfterEventSignal*](ProjectileHitAfterEventSignal.md)
+
+### **targetBlockHit**
+`read-only targetBlockHit: TargetBlockHitAfterEventSignal;`
+
+Type: [*TargetBlockHitAfterEventSignal*](TargetBlockHitAfterEventSignal.md)
+
+### **tripWireTrip**
+`read-only tripWireTrip: TripWireTripAfterEventSignal;`
+
+Type: [*TripWireTripAfterEventSignal*](TripWireTripAfterEventSignal.md)
 
 ### **weatherChange**
 `read-only weatherChange: WeatherChangeAfterEventSignal;`

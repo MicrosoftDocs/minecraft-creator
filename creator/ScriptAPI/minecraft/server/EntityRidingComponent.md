@@ -31,6 +31,4 @@ Type: [*Entity*](Entity.md)
 ### **componentId**
 `static read-only componentId = "minecraft:riding";`
 
-Identifier of this component. Should always be minecraft:riding.
-
 Type: *string*

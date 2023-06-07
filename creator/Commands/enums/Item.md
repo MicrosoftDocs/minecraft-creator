@@ -48,6 +48,8 @@ Deepslate Copper Ore
 Nether Brick Stairs
 - `nether_brick_stairs`
 Nether Brick Stairs
+- `minecraft:yellow_shulker_box`
+- `yellow_shulker_box`
 - `minecraft:red_wool`
 - `red_wool`
 - `minecraft:jungle_button`
@@ -170,6 +172,8 @@ Oak Stairs
 End Bricks
 - `end_bricks`
 End Bricks
+- `minecraft:magenta_shulker_box`
+- `magenta_shulker_box`
 - `minecraft:packed_ice`
 Packed Ice
 - `packed_ice`
@@ -214,6 +218,8 @@ Polished Deeplate Stairs
 Yellow Flower
 - `yellow_flower`
 Yellow Flower
+- `minecraft:lime_shulker_box`
+- `lime_shulker_box`
 - `minecraft:small_amethyst_bud`
 Small Amethyst Bud
 - `small_amethyst_bud`
@@ -250,6 +256,8 @@ Oxidized Cut Copper Stairs
 Raw Gold Block
 - `raw_gold_block`
 Raw Gold Block
+- `minecraft:white_shulker_box`
+- `white_shulker_box`
 - `minecraft:black_wool`
 - `black_wool`
 - `minecraft:orange_candle`
@@ -322,10 +330,6 @@ Smoker
 Stone
 - `stone`
 Stone
-- `minecraft:concrete`
-Concrete
-- `concrete`
-Concrete
 - `minecraft:birch_log`
 - `birch_log`
 - `minecraft:brain_coral`
@@ -336,6 +340,8 @@ Concrete
 Respawn Anchor
 - `respawn_anchor`
 Respawn Anchor
+- `minecraft:light_gray_concrete`
+- `light_gray_concrete`
 - `minecraft:green_candle`
 Green Candle
 - `green_candle`
@@ -502,6 +508,8 @@ Silver Glazed Terracotta
 Granite Stairs
 - `granite_stairs`
 Granite Stairs
+- `minecraft:pink_concrete`
+- `pink_concrete`
 - `minecraft:dark_oak_hanging_sign`
 - `dark_oak_hanging_sign`
 - `minecraft:brown_mushroom`
@@ -548,6 +556,8 @@ Cobblestone
 Cobblestone
 - `minecraft:horn_coral`
 - `horn_coral`
+- `minecraft:yellow_concrete`
+- `yellow_concrete`
 - `minecraft:cyan_carpet`
 - `cyan_carpet`
 - `minecraft:red_flower`
@@ -724,6 +734,8 @@ Crimson Nylium
 Structure Void
 - `structure_void`
 Structure Void
+- `minecraft:purple_concrete`
+- `purple_concrete`
 - `minecraft:polished_blackstone_brick_slab`
 Polished Blackstone Brick Slab
 - `polished_blackstone_brick_slab`
@@ -836,6 +848,8 @@ Diamond Ore
 Warped Roots
 - `warped_roots`
 Warped Roots
+- `minecraft:magenta_concrete`
+- `magenta_concrete`
 - `minecraft:sticky_piston`
 Sticky Piston
 - `sticky_piston`
@@ -848,6 +862,8 @@ Ender Chest
 Medium Amethyst Bud
 - `medium_amethyst_bud`
 Medium Amethyst Bud
+- `minecraft:pink_shulker_box`
+- `pink_shulker_box`
 - `minecraft:sculk_sensor`
 Sculk Sensor
 - `sculk_sensor`
@@ -864,6 +880,8 @@ Frog Spawn
 Acacia Door
 - `acacia_door`
 Acacia Door
+- `minecraft:red_shulker_box`
+- `red_shulker_box`
 - `minecraft:stripped_cherry_log`
 - `stripped_cherry_log`
 - `minecraft:crimson_button`
@@ -918,6 +936,8 @@ Deepslate Tiles
 Smooth Stone
 - `smooth_stone`
 Smooth Stone
+- `minecraft:lime_concrete`
+- `lime_concrete`
 - `minecraft:red_mushroom`
 Red Mushroom
 - `red_mushroom`
@@ -1120,16 +1140,14 @@ White Candle
 Andesite Stairs
 - `andesite_stairs`
 Andesite Stairs
-- `minecraft:shulker_box`
-Shulker Box
-- `shulker_box`
-Shulker Box
 - `minecraft:golden_rail`
 Golden Rail
 - `golden_rail`
 Golden Rail
 - `minecraft:cyan_wool`
 - `cyan_wool`
+- `minecraft:gray_shulker_box`
+- `gray_shulker_box`
 - `minecraft:red_sandstone_stairs`
 Red Sandstone Stairs
 - `red_sandstone_stairs`
@@ -1342,6 +1360,8 @@ End Rod
 Crimson Stem
 - `crimson_stem`
 Crimson Stem
+- `minecraft:green_concrete`
+- `green_concrete`
 - `minecraft:crimson_slab`
 Crimson Slab
 - `crimson_slab`
@@ -1354,6 +1374,8 @@ Warped Hyphae
 Warped Wart Block
 - `warped_wart_block`
 Warped Wart Block
+- `minecraft:light_gray_shulker_box`
+- `light_gray_shulker_box`
 - `minecraft:yellow_carpet`
 - `yellow_carpet`
 - `minecraft:dead_horn_coral`
@@ -1388,6 +1410,8 @@ Polished Blackstone Slab
 Polished Blackstone Slab
 - `reeds`
 Reeds
+- `minecraft:black_shulker_box`
+- `black_shulker_box`
 - `minecraft:barrier`
 Barrier
 - `barrier`
@@ -1468,10 +1492,14 @@ Acacia Stairs
 Acacia Stairs
 - `minecraft:bamboo_mosaic_stairs`
 - `bamboo_mosaic_stairs`
+- `minecraft:brown_concrete`
+- `brown_concrete`
 - `minecraft:cherry_slab`
 - `cherry_slab`
 - `minecraft:bubble_coral`
 - `bubble_coral`
+- `minecraft:orange_shulker_box`
+- `orange_shulker_box`
 - `minecraft:light_gray_candle`
 Light Gray Candle
 - `light_gray_candle`
@@ -1480,6 +1508,8 @@ Light Gray Candle
 Polished Blackstone Pressure Plate
 - `polished_blackstone_pressure_plate`
 Polished Blackstone Pressure Plate
+- `minecraft:blue_shulker_box`
+- `blue_shulker_box`
 - `minecraft:concrete_powder`
 Concrete Powder
 - `concrete_powder`
@@ -1556,6 +1586,8 @@ Warped Slab
 Warped Stem
 - `warped_stem`
 Warped Stem
+- `minecraft:green_shulker_box`
+- `green_shulker_box`
 - `minecraft:stripped_crimson_hyphae`
 Stripped Crimson Hyphae
 - `stripped_crimson_hyphae`
@@ -1662,6 +1694,8 @@ Air
 Bed
 - `bed`
 Bed
+- `minecraft:black_concrete`
+- `black_concrete`
 - `minecraft:tnt`
 TNT
 - `tnt`
@@ -1674,6 +1708,8 @@ Web
 Polished Diorite Stairs
 - `polished_diorite_stairs`
 Polished Diorite Stairs
+- `minecraft:orange_concrete`
+- `orange_concrete`
 - `minecraft:crying_obsidian`
 Crying Obsidian
 - `crying_obsidian`
@@ -1690,6 +1726,8 @@ Enchanting Table
 Polished Blackstone Wall
 - `polished_blackstone_wall`
 Polished Blackstone Wall
+- `minecraft:brown_shulker_box`
+- `brown_shulker_box`
 - `minecraft:azalea`
 Azalea
 - `azalea`
@@ -1714,6 +1752,8 @@ Lectern
 Stripped Crimson Stem
 - `stripped_crimson_stem`
 Stripped Crimson Stem
+- `minecraft:light_blue_shulker_box`
+- `light_blue_shulker_box`
 - `minecraft:jungle_stairs`
 Jungle Stairs
 - `jungle_stairs`
@@ -1756,6 +1796,8 @@ Blackstone Stairs
 Blue Ice
 - `blue_ice`
 Blue Ice
+- `minecraft:cyan_shulker_box`
+- `cyan_shulker_box`
 - `minecraft:polished_andesite_stairs`
 Polished Andesite Stairs
 - `polished_andesite_stairs`
@@ -1862,10 +1904,14 @@ Prismarine Stairs
 Prismarine Stairs
 - `minecraft:white_carpet`
 - `white_carpet`
+- `minecraft:cyan_concrete`
+- `cyan_concrete`
 - `minecraft:dragon_egg`
 Dragon Egg
 - `dragon_egg`
 Dragon Egg
+- `minecraft:blue_concrete`
+- `blue_concrete`
 - `minecraft:nether_brick`
 Nether Brick
 - `nether_brick`
@@ -1898,10 +1944,14 @@ Emerald Ore
 Brown Mushroom Block
 - `brown_mushroom_block`
 Brown Mushroom Block
+- `minecraft:gray_concrete`
+- `gray_concrete`
 - `minecraft:pink_candle`
 Pink Candle
 - `pink_candle`
 Pink Candle
+- `minecraft:purple_shulker_box`
+- `purple_shulker_box`
 - `minecraft:carved_pumpkin`
 Carved Pumpkin
 - `carved_pumpkin`
@@ -1932,6 +1982,8 @@ Deepslate Brick Stairs
 Dark Prismarine Stairs
 - `dark_prismarine_stairs`
 Dark Prismarine Stairs
+- `minecraft:light_blue_concrete`
+- `light_blue_concrete`
 - `minecraft:cauldron`
 Cauldron
 - `cauldron`
@@ -1980,6 +2032,8 @@ Acacia Fence Gate
 Lapis Ore
 - `lapis_ore`
 Lapis Ore
+- `minecraft:red_concrete`
+- `red_concrete`
 - `minecraft:pink_carpet`
 - `pink_carpet`
 - `minecraft:smooth_quartz_stairs`
@@ -2100,6 +2154,8 @@ Wooden Pressure Plate
 Wooden Pressure Plate
 - `minecraft:birch_fence`
 - `birch_fence`
+- `minecraft:white_concrete`
+- `white_concrete`
 - `minecraft:acacia_fence`
 - `acacia_fence`
 - `minecraft:grass_path`
@@ -2190,6 +2246,10 @@ Coral
 Wool
 - `minecraft:wool`
 Wool
+- `shulker_box`
+Shulker Box
+- `minecraft:shulker_box`
+Shulker Box
 - `log`
 Log
 - `minecraft:log`
@@ -2206,6 +2266,10 @@ Fence
 Carpet
 - `minecraft:carpet`
 Carpet
+- `concrete`
+Concrete
+- `minecraft:concrete`
+Concrete
 - `minecraft:chicken`
 Chicken
 - `chicken`
@@ -3730,6 +3794,10 @@ Lodestone Compass
 - `wither_spawn_egg`
 - `minecraft:ender_dragon_spawn_egg`
 - `ender_dragon_spawn_egg`
+- `minecraft:suspicious_stew`
+Suspicious Stew
+- `suspicious_stew`
+Suspicious Stew
 - `speckled_melon`
 Speckled Melon
 - `real_double_stone_slab4`
@@ -3863,10 +3931,6 @@ Spawn Egg
 Spawn Egg
 - `minecraft:dye`
 Dye
-- `minecraft:suspicious_stew`
-Suspicious Stew
-- `suspicious_stew`
-Suspicious Stew
 - `minecraft:filled_map`
 Filled Map
 - `filled_map`

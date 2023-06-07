@@ -3,23 +3,23 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: minecraft/server.ItemStopChargeAfterEvent Class
-description: Contents of the @minecraft/server.ItemStopChargeAfterEvent class.
+title: minecraft/server.ItemReleaseUseAfterEvent Class
+description: Contents of the @minecraft/server.ItemReleaseUseAfterEvent class.
 ---
-# ItemStopChargeAfterEvent Class
+# ItemReleaseUseAfterEvent Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Contains information related to a chargeable item has finished an items use cycle, or when the player has released the use action with the item.
+Contains information related to a chargeable item when the player has finished using the item and released the build action.
 
 ## Properties
 
 ### **itemStack**
 `read-only itemStack: ItemStack;`
 
-The impacted item stack that is stopping being charged.
+Returns the item stack that triggered this item event.
 
 Type: [*ItemStack*](ItemStack.md)
 

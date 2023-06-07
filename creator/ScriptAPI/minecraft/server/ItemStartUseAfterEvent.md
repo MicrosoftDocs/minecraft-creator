@@ -3,23 +3,23 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: minecraft/server.ItemReleaseChargeAfterEvent Class
-description: Contents of the @minecraft/server.ItemReleaseChargeAfterEvent class.
+title: minecraft/server.ItemStartUseAfterEvent Class
+description: Contents of the @minecraft/server.ItemStartUseAfterEvent class.
 ---
-# ItemReleaseChargeAfterEvent Class
+# ItemStartUseAfterEvent Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Contains information related to a chargeable item when the player has finished using the item and released the build action.
+Contains information related to a chargeable item starting to be charged.
 
 ## Properties
 
 ### **itemStack**
 `read-only itemStack: ItemStack;`
 
-Returns the item stack that triggered this item event.
+The impacted item stack that is starting to be charged.
 
 Type: [*ItemStack*](ItemStack.md)
 

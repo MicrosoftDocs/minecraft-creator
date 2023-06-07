@@ -28,24 +28,24 @@ Type: [*Container*](Container.md)
 ### **componentId**
 `static read-only componentId = "minecraft:inventory";`
 
-Identifier of this component. Should always be minecraft:inventory.
-
 Type: *string*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-#### **Examples**
-##### *place_items_in_chest.js*
-```javascript
+#### Examples
+##### ***place_items_in_chest.js***
+```typescript
 import { world, MinecraftBlockTypes, Items, ItemStack } from "@minecraft/server";
+
 // Fetch block
 const block = world.getDimension("overworld").getBlock({ x: 1, y: 2, z: 3 });
+
 // Make it a chest
 block.setType(MinecraftBlockTypes.chest);
+
 // Get the inventory
 const inventoryComponent = block.getComponent("inventory");
 const inventoryContainer = inventoryComponent.container;
+
 // Set slot 0 to a stack of 10 apples
 inventoryContainer.setItem(0, new ItemStack(Items.apple, 10, 0));
+
 ```

@@ -3,36 +3,32 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: minecraft/server.ItemCompleteChargeAfterEvent Class
-description: Contents of the @minecraft/server.ItemCompleteChargeAfterEvent class.
+title: minecraft/server.PressurePlatePopAfterEvent Class
+description: Contents of the @minecraft/server.PressurePlatePopAfterEvent class.
 ---
-# ItemCompleteChargeAfterEvent Class
+# PressurePlatePopAfterEvent Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Contains information related to a chargeable item completing being charged.
+## Extends
+- [*BlockEvent*](BlockEvent.md)
+
+Contains information related to changes to a pressure plate pop.
 
 ## Properties
 
-### **itemStack**
-`read-only itemStack: ItemStack;`
+### **previousRedstonePower**
+`read-only previousRedstonePower: number;`
 
-Returns the item stack that has completed charging.
+The redstone power of the pressure plate before it was popped.
 
-Type: [*ItemStack*](ItemStack.md)
+Type: *number*
 
-### **source**
-`read-only source: Entity;`
+### **redstonePower**
+`read-only redstonePower: number;`
 
-Returns the source entity that triggered this item event.
-
-Type: [*Entity*](Entity.md)
-
-### **useDuration**
-`read-only useDuration: number;`
-
-Returns the time, in ticks, for the remaining duration left before the charge completes its cycle.
+The redstone power of the pressure plate at the time of the pop.
 
 Type: *number*

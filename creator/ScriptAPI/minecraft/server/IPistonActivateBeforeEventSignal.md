@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IPistonActivateBeforeEventSignal 
 
 ## Classes that extend IPistonActivateBeforeEventSignal
 - [*PistonActivateBeforeEventSignal*](PistonActivateBeforeEventSignal.md)
+- [*PistonActivateBeforeEventSignal*](PistonActivateBeforeEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires before a piston is activated.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: PistonActivateBeforeEvent) => void): (arg: PistonActiv
 
 #### **Returns** (arg: [*PistonActivateBeforeEvent*](PistonActivateBeforeEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: PistonActivateBeforeEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: PistonActivateBeforeEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*PistonActivateBeforeEvent*](PistonActivateBeforeEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

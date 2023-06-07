@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IWeatherChangeAfterEventSignal cl
 
 ## Classes that extend IWeatherChangeAfterEventSignal
 - [*WeatherChangeAfterEventSignal*](WeatherChangeAfterEventSignal.md)
+- [*WeatherChangeAfterEventSignal*](WeatherChangeAfterEventSignal.md)
 
 An event that fires after the weather has changed.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: WeatherChangeAfterEvent) => void): (arg: WeatherChange
 
 #### **Returns** (arg: [*WeatherChangeAfterEvent*](WeatherChangeAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: WeatherChangeAfterEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: WeatherChangeAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*WeatherChangeAfterEvent*](WeatherChangeAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

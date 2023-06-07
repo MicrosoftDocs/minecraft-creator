@@ -16,30 +16,30 @@ Contains additional options for displaying a title and optional subtitle.
 
 ## Properties
 
-### **fadeInSeconds**
-`fadeInSeconds: number;`
+### **fadeInDuration**
+`fadeInDuration: number;`
 
-Fade-in time for the title and subtitle, in seconds.
-
-Type: *number*
-
-### **fadeOutSeconds**
-`fadeOutSeconds: number;`
-
-Fade-out time for the title and subtitle, in seconds.
+Fade-in duration for the title and subtitle, in ticks. There are 20 ticks per second. Use [*@minecraft/server.TicksPerSecond*](../../minecraft/server/minecraft-server.md#tickspersecond) constant to convert between ticks and seconds.
 
 Type: *number*
 
-### **staySeconds**
-`staySeconds: number;`
+### **fadeOutDuration**
+`fadeOutDuration: number;`
 
-Amount of time for the title and subtitle to stay in place.
+Fade-out time for the title and subtitle, in ticks. There are 20 ticks per second. Use [*@minecraft/server.TicksPerSecond*](../../minecraft/server/minecraft-server.md#tickspersecond) constant to convert between ticks and seconds.
+
+Type: *number*
+
+### **stayDuration**
+`stayDuration: number;`
+
+Amount of time for the title and subtitle to stay in place, in ticks. There are 20 ticks per second. Use [*@minecraft/server.TicksPerSecond*](../../minecraft/server/minecraft-server.md#tickspersecond) constant to convert between ticks and seconds.
 
 Type: *number*
 
 ### **subtitle**
-`subtitle?: string;`
+`subtitle?: (RawMessage | string)[] | RawMessage | string;`
 
 Optional subtitle text.
 
-Type: *string*
+Type: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*

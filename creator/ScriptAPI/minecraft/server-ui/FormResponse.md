@@ -16,6 +16,12 @@ description: Contents of the @minecraft/server-ui.FormResponse class.
 - [*ActionFormResponse*](ActionFormResponse.md)
 - [*MessageFormResponse*](MessageFormResponse.md)
 - [*ModalFormResponse*](ModalFormResponse.md)
+- [*ActionFormResponse*](ActionFormResponse.md)
+- [*MessageFormResponse*](MessageFormResponse.md)
+- [*ModalFormResponse*](ModalFormResponse.md)
+- [*ActionFormResponse*](ActionFormResponse.md)
+- [*MessageFormResponse*](MessageFormResponse.md)
+- [*ModalFormResponse*](ModalFormResponse.md)
 
 Base type for a form response.
 

@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IItemStartUseOnAfterEventSignal c
 
 ## Classes that extend IItemStartUseOnAfterEventSignal
 - [*ItemStartUseOnAfterEventSignal*](ItemStartUseOnAfterEventSignal.md)
+- [*ItemStartUseOnAfterEventSignal*](ItemStartUseOnAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires when an item item is starting to be used on a block.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: ItemStartUseOnAfterEvent) => void): (arg: ItemStartUse
 
 #### **Returns** (arg: [*ItemStartUseOnAfterEvent*](ItemStartUseOnAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ItemStartUseOnAfterEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: ItemStartUseOnAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*ItemStartUseOnAfterEvent*](ItemStartUseOnAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
