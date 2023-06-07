@@ -17,7 +17,7 @@ For example:
 The values for states associated with block traits can still be set using events and commands, if an event and a trait are using the same trigger, however the event and trait setters may conflict with each other if the event and trait are using the same trigger, e.g. `on_place`.
 
 >[!IMPORTANT]
-Block traits are currently in development and will be available incrementally.
+>Block traits are currently in development and will be available incrementally.
 
 ## Block Trait List
 
