@@ -66,6 +66,4 @@ List of items that can be fed to the entity. Includes 'item' for the item name a
 ### **componentId**
 `static read-only componentId = "minecraft:ageable";`
 
-Identifier of this component. Should always be minecraft:ageable.
-
 Type: *string*

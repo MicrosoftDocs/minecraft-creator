@@ -51,6 +51,9 @@ Tames this entity.
 
 #### **Returns** *boolean* - Returns true if the entity was tamed.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -58,7 +61,5 @@ Tames this entity.
 
 ### **componentId**
 `static read-only componentId = "minecraft:tameable";`
-
-Identifier of this component. Should always be minecraft:tameable.
 
 Type: *string*

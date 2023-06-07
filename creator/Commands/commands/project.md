@@ -7,7 +7,7 @@ title: project Command
 description: Description and usage of the project command
 ---
 # `/project` Command
-Manipulates project settings while in-game.
+Manipulate the currently loaded project
 
 <table>
   <tr>

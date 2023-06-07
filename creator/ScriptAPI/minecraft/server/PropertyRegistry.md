@@ -29,6 +29,9 @@ Registers a dynamic property for a particular entity type (e.g., a minecraft:ske
 - **propertiesDefinition**: [*DynamicPropertiesDefinition*](DynamicPropertiesDefinition.md)
 - **entityType**: [*EntityType*](EntityType.md)
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -41,6 +44,9 @@ Registers a globally available dynamic property for a world.
 
 #### **Parameters**
 - **propertiesDefinition**: [*DynamicPropertiesDefinition*](DynamicPropertiesDefinition.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

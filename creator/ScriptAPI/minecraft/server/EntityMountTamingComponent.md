@@ -32,6 +32,9 @@ Sets this rideable entity as tamed.
   
   Whether to show effect particles when this entity is tamed.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -39,7 +42,5 @@ Sets this rideable entity as tamed.
 
 ### **componentId**
 `static read-only componentId = "minecraft:tamemount";`
-
-Identifier of this component. Should always be minecraft:mount_taming.
 
 Type: *string*

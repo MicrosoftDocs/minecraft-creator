@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IPlayerJoinAfterEventSignal class
 
 ## Classes that extend IPlayerJoinAfterEventSignal
 - [*PlayerJoinAfterEventSignal*](PlayerJoinAfterEventSignal.md)
+- [*PlayerJoinAfterEventSignal*](PlayerJoinAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires after a player joins a world.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: PlayerJoinAfterEvent) => void): (arg: PlayerJoinAfterE
 
 #### **Returns** (arg: [*PlayerJoinAfterEvent*](PlayerJoinAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: PlayerJoinAfterEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: PlayerJoinAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerJoinAfterEvent*](PlayerJoinAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

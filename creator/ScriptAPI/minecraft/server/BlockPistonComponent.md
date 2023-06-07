@@ -74,6 +74,4 @@ Retrieves a set of blocks that this piston is connected with.
 ### **componentId**
 `static read-only componentId = "minecraft:piston";`
 
-Identifier of this component.
-
 Type: *string*

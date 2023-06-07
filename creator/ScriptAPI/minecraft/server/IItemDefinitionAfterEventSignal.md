@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IItemDefinitionAfterEventSignal c
 
 ## Classes that extend IItemDefinitionAfterEventSignal
 - [*ItemDefinitionAfterEventSignal*](ItemDefinitionAfterEventSignal.md)
+- [*ItemDefinitionAfterEventSignal*](ItemDefinitionAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires after an items' definition has changed.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: ItemDefinitionTriggeredAfterEvent) => void): (arg: Ite
 
 #### **Returns** (arg: [*ItemDefinitionTriggeredAfterEvent*](ItemDefinitionTriggeredAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ItemDefinitionTriggeredAfterEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: ItemDefinitionTriggeredAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*ItemDefinitionTriggeredAfterEvent*](ItemDefinitionTriggeredAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

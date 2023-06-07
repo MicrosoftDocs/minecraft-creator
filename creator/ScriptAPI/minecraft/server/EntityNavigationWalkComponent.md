@@ -22,6 +22,4 @@ Allows this entity to generate paths by walking around and jumping up and down a
 ### **componentId**
 `static read-only componentId = "minecraft:navigation.walk";`
 
-Identifier of this component. Should always be minecraft:navigation.swim.
-
 Type: *string*

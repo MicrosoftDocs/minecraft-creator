@@ -1,15 +1,15 @@
 ---
 author: mammerla
-ms.author: v-bbortree
-title: Entity Documentation - AI Goal List
+ms.author: v-jimseaman
+title: Entity Documentation - AI Goal Component List
 ms.prod: gaming
 ---
 
-# Entity Documentation - AI Goal list
+# Entity Documentation - AI Goal Component list
 
-Below is a list of all the available AI Goals within Minecraft: Bedrock Edition for use with Entity JSON files.
+Below is a list of all the available AI Goal Components within Minecraft: Bedrock Edition for use with Entity JSON files.
 
-AI Goal |Description
+AI Goal Component |Description
 :-----|:----------
 [minecraft:behavior.admire_item](EntityGoals/minecraftBehavior_admire_item.md)|`minecraft:behavior.admire_item` compels an entity to admire an object they are holding.
 [minecraft:behavior.avoid_block](EntityGoals/minecraftBehavior_avoid_block.md)|`minecraft:behavior.avoid_block` compels an entity to avoid certain blocks.

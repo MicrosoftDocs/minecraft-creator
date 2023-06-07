@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IChatSendAfterEventSignal class.
 
 ## Classes that extend IChatSendAfterEventSignal
 - [*ChatSendAfterEventSignal*](ChatSendAfterEventSignal.md)
+- [*ChatSendAfterEventSignal*](ChatSendAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires when a chat message is sent.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: ChatSendAfterEvent) => void): (arg: ChatSendAfterEvent
 
 #### **Returns** (arg: [*ChatSendAfterEvent*](ChatSendAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ChatSendAfterEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: ChatSendAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*ChatSendAfterEvent*](ChatSendAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

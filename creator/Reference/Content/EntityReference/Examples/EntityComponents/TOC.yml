@@ -5,9 +5,9 @@
 - name: admire_item
   href: minecraftComponent_admire_item.md
 - name: ageable
-  href: minecraftComponent_ambient_sound_interval.md
-- name: ambient_sound_interval
   href: minecraftComponent_ageable.md
+- name: ambient_sound_interval
+  href: minecraftComponent_ambient_sound_interval.md
 - name: anger_level
   href: minecraftComponent_anger_level.md
 - name: angry
@@ -290,6 +290,8 @@
   href: minecraftComponent_sound_volume.md
 - name: spawn_entity
   href: minecraftComponent_spawn_entity.md
+- name: spell_effects
+  href: minecraftComponent_spell_effects.md
 - name: strength
   href: minecraftComponent_strength.md
 - name: tameable

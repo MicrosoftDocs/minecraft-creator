@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.ItemDefinitionTriggeredAfterEvent
 
 ## Classes that extend ItemDefinitionTriggeredAfterEvent
 - [*ItemDefinitionTriggeredBeforeEvent*](ItemDefinitionTriggeredBeforeEvent.md)
+- [*ItemDefinitionTriggeredBeforeEvent*](ItemDefinitionTriggeredBeforeEvent.md)
 
 Contains information related to a custom item having a data definition change being triggered.
 

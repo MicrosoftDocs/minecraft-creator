@@ -70,9 +70,4 @@ Type: *boolean*
 ### **componentId**
 `static read-only componentId = "minecraft:inventory";`
 
-Identifier of this component. Should always be minecraft:inventory.
-
 Type: *string*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.

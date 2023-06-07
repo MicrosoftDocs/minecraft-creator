@@ -17,5 +17,22 @@ description: Contents of the @minecraft/server.ItemComponent class.
 - [*ItemDurabilityComponent*](ItemDurabilityComponent.md)
 - [*ItemEnchantsComponent*](ItemEnchantsComponent.md)
 - [*ItemFoodComponent*](ItemFoodComponent.md)
+- [*ItemCooldownComponent*](ItemCooldownComponent.md)
+- [*ItemDurabilityComponent*](ItemDurabilityComponent.md)
+- [*ItemEnchantsComponent*](ItemEnchantsComponent.md)
+- [*ItemFoodComponent*](ItemFoodComponent.md)
 
 Base class for item components.
+
+## Methods
+- [isValid](#isvalid)
+
+### **isValid**
+`
+isValid(): boolean
+`
+
+#### **Returns** *boolean*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.

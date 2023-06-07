@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IEntityHurtAfterEventSignal class
 
 ## Classes that extend IEntityHurtAfterEventSignal
 - [*EntityHurtAfterEventSignal*](EntityHurtAfterEventSignal.md)
+- [*EntityHurtAfterEventSignal*](EntityHurtAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires when an entity is hurt.
 
@@ -32,6 +33,9 @@ subscribe(callback: (arg: EntityHurtAfterEvent) => void, options?: EntityEventOp
 
 #### **Returns** (arg: [*EntityHurtAfterEvent*](EntityHurtAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: EntityHurtAfterEvent) => void): void
@@ -39,6 +43,9 @@ unsubscribe(callback: (arg: EntityHurtAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*EntityHurtAfterEvent*](EntityHurtAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

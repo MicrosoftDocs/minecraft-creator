@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IItemUseAfterEventSignal class.
 
 ## Classes that extend IItemUseAfterEventSignal
 - [*ItemUseAfterEventSignal*](ItemUseAfterEventSignal.md)
+- [*ItemUseAfterEventSignal*](ItemUseAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires after an item is used.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: ItemUseAfterEvent) => void): (arg: ItemUseAfterEvent) 
 
 #### **Returns** (arg: [*ItemUseAfterEvent*](ItemUseAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ItemUseAfterEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: ItemUseAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*ItemUseAfterEvent*](ItemUseAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

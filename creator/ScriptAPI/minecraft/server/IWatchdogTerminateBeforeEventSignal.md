@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IWatchdogTerminateBeforeEventSign
 
 ## Classes that extend IWatchdogTerminateBeforeEventSignal
 - [*WatchdogTerminateBeforeEventSignal*](WatchdogTerminateBeforeEventSignal.md)
+- [*WatchdogTerminateBeforeEventSignal*](WatchdogTerminateBeforeEventSignal.md)
 
 An event that fires before the watchdog is about to terminate a world because various performance metrics for scripting have exceeded a threshold.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: WatchdogTerminateBeforeEvent) => void): (arg: Watchdog
 
 #### **Returns** (arg: [*WatchdogTerminateBeforeEvent*](WatchdogTerminateBeforeEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: WatchdogTerminateBeforeEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: WatchdogTerminateBeforeEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*WatchdogTerminateBeforeEvent*](WatchdogTerminateBeforeEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

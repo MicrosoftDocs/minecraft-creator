@@ -22,6 +22,4 @@ Defines the base movement speed in lava of this entity.
 ### **componentId**
 `static read-only componentId = "minecraft:lava_movement";`
 
-Identifier of this component. Should always be minecraft:lava_movement.
-
 Type: *string*

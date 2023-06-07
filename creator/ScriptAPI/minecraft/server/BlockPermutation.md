@@ -9,7 +9,7 @@ description: Contents of the @minecraft/server.BlockPermutation class.
 # BlockPermutation Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-Contains the combination of type [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) and properties (also sometimes called block state) which describe a block (but does not belong to a specific [*@minecraft/server.Block*](../../minecraft/server/Block.md)). This type was introduced as of version 1.17.10.21.
+Contains the combination of type [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) and properties (also sometimes called block state) which describe a block (but does not belong to a specific [*@minecraft/server.Block*](../../minecraft/server/Block.md)).
 
 ## Properties
 
@@ -119,13 +119,15 @@ Checks to see if the permutation has a specific tag.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-#### **Examples**
-##### *check_block_tags.js*
-```javascript
+#### Examples
+##### ***check_block_tags.js***
+```typescript
 import { world } from "@minecraft/server";
+
 // Fetch the block
 const block = world.getDimension("overworld").getBlock({ x: 1, y: 2, z: 3 });
 const blockPerm = block.getPermutation();
+
 console.log(`Block is dirt: ${blockPerm.hasTag("dirt")}`);
 console.log(`Block is wood: ${blockPerm.hasTag("wood")}`);
 console.log(`Block is stone: ${blockPerm.hasTag("stone")}`);
@@ -186,3 +188,67 @@ Given a type identifier and an optional set of properties, will return a BlockPe
 
 > [!WARNING]
 > This function can throw errors.
+
+#### Examples
+##### ***addBlockColorCube.ts***
+```typescript
+  const allColorNames: string[] = [
+    "white",
+    "orange",
+    "magenta",
+    "light_blue",
+    "yellow",
+    "lime",
+    "pink",
+    "gray",
+    "silver",
+    "cyan",
+    "purple",
+    "blue",
+    "brown",
+    "green",
+    "red",
+    "black",
+  ];
+
+  const cubeDim = 7;
+
+  let colorIndex = 0;
+
+  for (let x = 0; x <= cubeDim; x++) {
+    for (let y = 0; y <= cubeDim; y++) {
+      for (let z = 0; z <= cubeDim; z++) {
+        colorIndex++;
+        overworld
+          .getBlock({ x: targetLocation.x + x, y: targetLocation.y + y, z: targetLocation.z + z })
+          ?.setPermutation(
+            mc.BlockPermutation.resolve("minecraft:wool", {
+              color: allColorNames[colorIndex % allColorNames.length],
+            })
+          );
+      }
+    }
+  }
+```
+
+#### Examples
+##### ***addTranslatedSign.ts***
+```typescript
+  const players = mc.world.getPlayers();
+
+  const dim = players[0].dimension;
+
+  const signBlock = dim.getBlock(targetLocation);
+
+  if (!signBlock) {
+    log("Could not find a block at specified location.");
+    return -1;
+  }
+  let signPerm = mc.BlockPermutation.resolve("minecraft:standing_sign", { ground_sign_direction: 8 });
+
+  signBlock.setPermutation(signPerm);
+
+  const signComponent = signBlock.getComponent("minecraft:sign") as mc.BlockSignComponent;
+
+  signComponent.setText({ translate: "item.skull.player.name", with: [players[0].name] });
+```

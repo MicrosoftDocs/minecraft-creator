@@ -21,6 +21,7 @@ The following commands reference this enum:
 - [daylock](../commands/daylock.md)
 - [effect](../commands/effect.md)
 - [gamerule](../commands/gamerule.md)
+- [gametest](../commands/gametest.md)
 - [locate](../commands/locate.md)
 - [mobevent](../commands/mobevent.md)
 - [structure](../commands/structure.md)

@@ -22,6 +22,9 @@ This class represents a specific leveled enchantment that is applied to an item.
 The level of this enchantment instance.
 
 Type: *number*
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
 
 ### **type**
 `read-only type: EnchantmentType;`
@@ -52,3 +55,43 @@ Creates a new particular type of enchantment configuration.
 
 > [!WARNING]
 > This function can throw errors.
+
+#### Examples
+##### ***diamondAwesomeSword.ts***
+```typescript
+  const diamondAwesomeSword = new mc.ItemStack(mc.MinecraftItemTypes.diamondSword, 1);
+  let players = mc.world.getAllPlayers();
+
+  diamondAwesomeSword.setLore(["§c§lDiamond Sword of Awesome§r", "+10 coolness", "§p+4 shiny§r"]);
+
+  // hover over/select the item in your inventory to see the lore.
+  const inventory = players[0].getComponent("inventory") as mc.EntityInventoryComponent;
+  inventory.container.setItem(0, diamondAwesomeSword);
+
+  let item = inventory.container.getItem(0);
+
+  if (item) {
+    let enchants = item.getComponent("minecraft:enchantments") as mc.ItemEnchantsComponent;
+    let knockbackEnchant = new mc.Enchantment("knockback", 3);
+    enchants.enchantments.addEnchantment(knockbackEnchant);
+  }
+```
+##### ***ironFireSword.ts***
+```typescript
+  const ironFireSword = new mc.ItemStack(mc.MinecraftItemTypes.diamondSword, 1);
+  let players = mc.world.getAllPlayers();
+
+  let fireAspectEnchant = new mc.Enchantment("fire_aspect", 3);
+  let enchants = ironFireSword.getComponent("minecraft:enchantments") as mc.ItemEnchantsComponent;
+  let addedFire = enchants.enchantments.addEnchantment(fireAspectEnchant);
+
+  if (!addedFire) {
+    log("Could not add fire aspect.");
+    return -1;
+  }
+
+  const inventory = players[0].getComponent("inventory") as mc.EntityInventoryComponent;
+  inventory.container.setItem(0, ironFireSword);
+
+  // hover over/select the item in your inventory to see the lore.
+```

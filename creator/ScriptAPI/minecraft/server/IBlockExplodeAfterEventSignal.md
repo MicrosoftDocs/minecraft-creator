@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IBlockExplodeAfterEventSignal cla
 
 ## Classes that extend IBlockExplodeAfterEventSignal
 - [*BlockExplodeAfterEventSignal*](BlockExplodeAfterEventSignal.md)
+- [*BlockExplodeAfterEventSignal*](BlockExplodeAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires when an explosion occurs.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: BlockExplodeAfterEvent) => void): (arg: BlockExplodeAf
 
 #### **Returns** (arg: [*BlockExplodeAfterEvent*](BlockExplodeAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: BlockExplodeAfterEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: BlockExplodeAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*BlockExplodeAfterEvent*](BlockExplodeAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

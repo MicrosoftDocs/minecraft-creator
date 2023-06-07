@@ -153,7 +153,7 @@ Below, we use the `crouch` and `stuck` portions of the fox animation controller 
     "tired": {
       "animations": [ "yawn", "stretch" ],
       "transitions": [
-        { "default": "query.all_animation_finished" } // transition back to default state when the yawn and stretch animations have both finished
+        { "default": "query.all_animations_finished" } // transition back to default state when the yawn and stretch animations have both finished
       ]
     }
   }

@@ -166,7 +166,7 @@ Here is an example of the complete feature schema:
           }
           bool "allow_water" : opt // Plant blocks can be placed in water.
       }
-      object "minecraft:hell_cave_carver_feature" : opt
+      object "minecraft:nether_cave_carver_feature" : opt
       {
           object "description"
           {

@@ -167,6 +167,9 @@ Returns the component-wise division of these vectors.
 
 #### **Returns** [*Vector*](Vector.md)
 
+> [!WARNING]
+> This function can throw errors.
+
 ### **lerp**
 `
 static lerp(a: Vector3, b: Vector3, t: number): Vector

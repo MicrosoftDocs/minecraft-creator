@@ -22,6 +22,4 @@ Allows this entity to generate paths in the air (for example, like the Minecraft
 ### **componentId**
 `static read-only componentId = "minecraft:navigation.hover";`
 
-Identifier of this component. Should always be minecraft:navigation.hover.
-
 Type: *string*

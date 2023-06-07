@@ -460,10 +460,20 @@ Type: [*BlockType*](BlockType.md)
 
 Type: [*BlockType*](BlockType.md)
 
+### **blackConcrete**
+`static read-only blackConcrete: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **blackGlazedTerracotta**
 `static read-only blackGlazedTerracotta: BlockType;`
 
 Represents a black glazed terracotta block within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **blackShulkerBox**
+`static read-only blackShulkerBox: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -533,6 +543,11 @@ Type: [*BlockType*](BlockType.md)
 
 Type: [*BlockType*](BlockType.md)
 
+### **blueConcrete**
+`static read-only blueConcrete: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **blueGlazedTerracotta**
 `static read-only blueGlazedTerracotta: BlockType;`
 
@@ -544,6 +559,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only blueIce: BlockType;`
 
 Represents a blue ice block within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **blueShulkerBox**
+`static read-only blueShulkerBox: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -618,6 +638,11 @@ Type: [*BlockType*](BlockType.md)
 
 Type: [*BlockType*](BlockType.md)
 
+### **brownConcrete**
+`static read-only brownConcrete: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **brownGlazedTerracotta**
 `static read-only brownGlazedTerracotta: BlockType;`
 
@@ -636,6 +661,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only brownMushroomBlock: BlockType;`
 
 Represents a block of brown mushroom within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **brownShulkerBox**
+`static read-only brownShulkerBox: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -1036,13 +1066,6 @@ Represents a composter block within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
-### **concrete**
-`static read-only concrete: BlockType;`
-
-Represents a block of concrete powder within Minecraft.
-
-Type: [*BlockType*](BlockType.md)
-
 ### **concretePowder**
 `static read-only concretePowder: BlockType;`
 
@@ -1319,10 +1342,20 @@ Type: [*BlockType*](BlockType.md)
 
 Type: [*BlockType*](BlockType.md)
 
+### **cyanConcrete**
+`static read-only cyanConcrete: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **cyanGlazedTerracotta**
 `static read-only cyanGlazedTerracotta: BlockType;`
 
 Represents a block of cyan-colored glazed terracotta within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **cyanShulkerBox**
+`static read-only cyanShulkerBox: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -2895,10 +2928,20 @@ Type: [*BlockType*](BlockType.md)
 
 Type: [*BlockType*](BlockType.md)
 
+### **grayConcrete**
+`static read-only grayConcrete: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **grayGlazedTerracotta**
 `static read-only grayGlazedTerracotta: BlockType;`
 
 Represents a gray-colored block of glazed terracotta within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **grayShulkerBox**
+`static read-only grayShulkerBox: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -2926,10 +2969,20 @@ Type: [*BlockType*](BlockType.md)
 
 Type: [*BlockType*](BlockType.md)
 
+### **greenConcrete**
+`static read-only greenConcrete: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **greenGlazedTerracotta**
 `static read-only greenGlazedTerracotta: BlockType;`
 
 Represents a green block of glazed terracotta within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **greenShulkerBox**
+`static read-only greenShulkerBox: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3285,10 +3338,20 @@ Type: [*BlockType*](BlockType.md)
 
 Type: [*BlockType*](BlockType.md)
 
+### **lightBlueConcrete**
+`static read-only lightBlueConcrete: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **lightBlueGlazedTerracotta**
 `static read-only lightBlueGlazedTerracotta: BlockType;`
 
 Represents a light blue block of glazed terracotta within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **lightBlueShulkerBox**
+`static read-only lightBlueShulkerBox: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3313,6 +3376,16 @@ Type: [*BlockType*](BlockType.md)
 
 ### **lightGrayCarpet**
 `static read-only lightGrayCarpet: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **lightGrayConcrete**
+`static read-only lightGrayConcrete: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **lightGrayShulkerBox**
+`static read-only lightGrayShulkerBox: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3354,10 +3427,20 @@ Type: [*BlockType*](BlockType.md)
 
 Type: [*BlockType*](BlockType.md)
 
+### **limeConcrete**
+`static read-only limeConcrete: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **limeGlazedTerracotta**
 `static read-only limeGlazedTerracotta: BlockType;`
 
 Represents a lime-colored block of glazed terracotta within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **limeShulkerBox**
+`static read-only limeShulkerBox: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3448,10 +3531,20 @@ Type: [*BlockType*](BlockType.md)
 
 Type: [*BlockType*](BlockType.md)
 
+### **magentaConcrete**
+`static read-only magentaConcrete: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **magentaGlazedTerracotta**
 `static read-only magentaGlazedTerracotta: BlockType;`
 
 Represents a block of magenta-colored glazed terracotta within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **magentaShulkerBox**
+`static read-only magentaShulkerBox: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3818,10 +3911,20 @@ Type: [*BlockType*](BlockType.md)
 
 Type: [*BlockType*](BlockType.md)
 
+### **orangeConcrete**
+`static read-only orangeConcrete: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **orangeGlazedTerracotta**
 `static read-only orangeGlazedTerracotta: BlockType;`
 
 Represents a block of orange-colored glazed terracotta within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **orangeShulkerBox**
+`static read-only orangeShulkerBox: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -3901,6 +4004,11 @@ Type: [*BlockType*](BlockType.md)
 
 Type: [*BlockType*](BlockType.md)
 
+### **pinkConcrete**
+`static read-only pinkConcrete: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **pinkGlazedTerracotta**
 `static read-only pinkGlazedTerracotta: BlockType;`
 
@@ -3910,6 +4018,11 @@ Type: [*BlockType*](BlockType.md)
 
 ### **pinkPetals**
 `static read-only pinkPetals: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
+### **pinkShulkerBox**
+`static read-only pinkShulkerBox: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -4197,10 +4310,20 @@ Type: [*BlockType*](BlockType.md)
 
 Type: [*BlockType*](BlockType.md)
 
+### **purpleConcrete**
+`static read-only purpleConcrete: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **purpleGlazedTerracotta**
 `static read-only purpleGlazedTerracotta: BlockType;`
 
 Represents a purple-colored block of glazed terracotta within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **purpleShulkerBox**
+`static read-only purpleShulkerBox: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -4298,6 +4421,11 @@ Type: [*BlockType*](BlockType.md)
 
 Type: [*BlockType*](BlockType.md)
 
+### **redConcrete**
+`static read-only redConcrete: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **redFlower**
 `static read-only redFlower: BlockType;`
 
@@ -4351,6 +4479,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only redSandstoneStairs: BlockType;`
 
 Represents a set of red sandstone stairs within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **redShulkerBox**
+`static read-only redShulkerBox: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -4514,13 +4647,6 @@ Type: [*BlockType*](BlockType.md)
 `static read-only shroomlight: BlockType;`
 
 Represents a shroom light within Minecraft.
-
-Type: [*BlockType*](BlockType.md)
-
-### **shulkerBox**
-`static read-only shulkerBox: BlockType;`
-
-Represents a shulker box within Minecraft.
 
 Type: [*BlockType*](BlockType.md)
 
@@ -5556,10 +5682,20 @@ Type: [*BlockType*](BlockType.md)
 
 Type: [*BlockType*](BlockType.md)
 
+### **whiteConcrete**
+`static read-only whiteConcrete: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **whiteGlazedTerracotta**
 `static read-only whiteGlazedTerracotta: BlockType;`
 
 Represents a block of white glazed terracotta within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **whiteShulkerBox**
+`static read-only whiteShulkerBox: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 
@@ -5629,6 +5765,11 @@ Type: [*BlockType*](BlockType.md)
 
 Type: [*BlockType*](BlockType.md)
 
+### **yellowConcrete**
+`static read-only yellowConcrete: BlockType;`
+
+Type: [*BlockType*](BlockType.md)
+
 ### **yellowFlower**
 `static read-only yellowFlower: BlockType;`
 
@@ -5640,6 +5781,11 @@ Type: [*BlockType*](BlockType.md)
 `static read-only yellowGlazedTerracotta: BlockType;`
 
 Represents a yellow block of glazed terracotta within Minecraft.
+
+Type: [*BlockType*](BlockType.md)
+
+### **yellowShulkerBox**
+`static read-only yellowShulkerBox: BlockType;`
 
 Type: [*BlockType*](BlockType.md)
 

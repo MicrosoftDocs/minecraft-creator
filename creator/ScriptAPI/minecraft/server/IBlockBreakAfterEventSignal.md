@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IBlockBreakAfterEventSignal class
 
 ## Classes that extend IBlockBreakAfterEventSignal
 - [*BlockBreakAfterEventSignal*](BlockBreakAfterEventSignal.md)
+- [*BlockBreakAfterEventSignal*](BlockBreakAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires when blocks are broken.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: BlockBreakAfterEvent) => void): (arg: BlockBreakAfterE
 
 #### **Returns** (arg: [*BlockBreakAfterEvent*](BlockBreakAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: BlockBreakAfterEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: BlockBreakAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*BlockBreakAfterEvent*](BlockBreakAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

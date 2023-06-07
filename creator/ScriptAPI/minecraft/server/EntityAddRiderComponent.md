@@ -38,6 +38,4 @@ Type: *string*
 ### **componentId**
 `static read-only componentId = "minecraft:addrider";`
 
-Identifier of this component. Should always be minecraft:addrider.
-
 Type: *string*

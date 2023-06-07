@@ -43,6 +43,9 @@ Adds a dropdown with choices to the form.
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **show**
 `
 show(player: minecraftserver.Player): Promise<ModalFormResponse>
@@ -56,6 +59,9 @@ Creates and shows this modal popup form. Returns asynchronously when the player 
   Player to show this dialog to.
 
 #### **Returns** Promise&lt;[*ModalFormResponse*](ModalFormResponse.md)&gt;
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -76,6 +82,9 @@ Adds a numeric slider to the form.
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **textField**
 `
 textField(label: minecraftserver.RawMessage | string, placeholderText: minecraftserver.RawMessage | string, defaultValue?: string): ModalFormData
@@ -90,6 +99,9 @@ Adds a textbox to the form.
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **title**
 `
 title(titleText: minecraftserver.RawMessage | string): ModalFormData
@@ -101,6 +113,9 @@ This builder method sets the title for the modal dialog.
 - **titleText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 ### **toggle**
 `
@@ -114,3 +129,36 @@ Adds a toggle checkbox button to the form.
 - **defaultValue**?: *boolean* = `null`
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+#### Examples
+##### ***showBasicModalForm.ts***
+```typescript
+  const players = mc.world.getPlayers();
+
+  const modalForm = new mcui.ModalFormData().title("Example Modal Controls for §o§7ModalFormData§r");
+
+  modalForm.toggle("Toggle w/o default");
+  modalForm.toggle("Toggle w/ default", true);
+
+  modalForm.slider("Slider w/o default", 0, 50, 5);
+  modalForm.slider("Slider w/ default", 0, 50, 5, 30);
+
+  modalForm.dropdown("Dropdown w/o default", ["option 1", "option 2", "option 3"]);
+  modalForm.dropdown("Dropdown w/ default", ["option 1", "option 2", "option 3"], 2);
+
+  modalForm.textField("Input w/o default", "type text here");
+  modalForm.textField("Input w/ default", "type text here", "this is default");
+
+  modalForm
+    .show(players[0])
+    .then((formData) => {
+      players[0].sendMessage(`Modal form results: ${JSON.stringify(formData.formValues, undefined, 2)}`);
+    })
+    .catch((error: Error) => {
+      log("Failed to show form: " + error);
+      return -1;
+    });
+```

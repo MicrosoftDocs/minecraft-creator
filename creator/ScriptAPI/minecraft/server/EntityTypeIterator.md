@@ -28,9 +28,15 @@ An iterator that loops through available entity types.
 
 #### **Returns** Iterator&lt;[*EntityType*](EntityType.md)&gt;
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **next**
 `
 next(): IteratorResult<EntityType>
 `
 
 #### **Returns** IteratorResult&lt;[*EntityType*](EntityType.md)&gt;
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.

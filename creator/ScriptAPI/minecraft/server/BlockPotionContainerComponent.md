@@ -30,6 +30,9 @@ Sets the potion type based on an item stack.
 #### **Parameters**
 - **itemStack**: [*ItemStack*](ItemStack.md)
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -37,7 +40,5 @@ Sets the potion type based on an item stack.
 
 ### **componentId**
 `static read-only componentId = "minecraft:potionContainer";`
-
-Identifier of this component. Should always be minecraft:potionContainer.
 
 Type: *string*

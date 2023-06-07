@@ -9,9 +9,6 @@ description: Contents of the @minecraft/server.EntityAttributeComponent class.
 # EntityAttributeComponent Class
 >[!IMPORTANT]
 >These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ## Extends
 - [*EntityComponent*](EntityComponent.md)
 
@@ -20,16 +17,40 @@ description: Contents of the @minecraft/server.EntityAttributeComponent class.
 - [*EntityLavaMovementComponent*](EntityLavaMovementComponent.md)
 - [*EntityMovementComponent*](EntityMovementComponent.md)
 - [*EntityUnderwaterMovementComponent*](EntityUnderwaterMovementComponent.md)
+- [*EntityHealthComponent*](EntityHealthComponent.md)
+- [*EntityLavaMovementComponent*](EntityLavaMovementComponent.md)
+- [*EntityMovementComponent*](EntityMovementComponent.md)
+- [*EntityUnderwaterMovementComponent*](EntityUnderwaterMovementComponent.md)
+
+This is a base abstract class for any entity component that centers around a number and can have a minimum, maximum, and default defined value.
 
 ## Properties
 
-### **current**
-`read-only current: number;`
+### **currentValue**
+`read-only currentValue: number;`
+
+Current value of this attribute for this instance.
 
 Type: *number*
 
-### **value**
-`read-only value: number;`
+### **defaultValue**
+`read-only defaultValue: number;`
+
+Returns the default defined value for this attribute.
+
+Type: *number*
+
+### **effectiveMax**
+`read-only effectiveMax: number;`
+
+Returns the effective max of this attribute given any other ambient components or factors.
+
+Type: *number*
+
+### **effectiveMin**
+`read-only effectiveMin: number;`
+
+Returns the effective min of this attribute given any other ambient components or factors.
 
 Type: *number*
 
@@ -37,12 +58,17 @@ Type: *number*
 - [resetToDefaultValue](#resettodefaultvalue)
 - [resetToMaxValue](#resettomaxvalue)
 - [resetToMinValue](#resettominvalue)
-- [setCurrent](#setcurrent)
+- [setCurrentValue](#setcurrentvalue)
 
 ### **resetToDefaultValue**
 `
 resetToDefaultValue(): void
 `
+
+Resets the current value of this attribute to the defined default value.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -52,6 +78,11 @@ resetToDefaultValue(): void
 resetToMaxValue(): void
 `
 
+Resets the current value of this attribute to the maximum defined value.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -60,18 +91,28 @@ resetToMaxValue(): void
 resetToMinValue(): void
 `
 
+Resets the current value of this attribute to the minimum defined value.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
-### **setCurrent**
+### **setCurrentValue**
 `
-setCurrent(value: number): boolean
+setCurrentValue(value: number): boolean
 `
+
+Sets the current value of this attribute.
 
 #### **Parameters**
 - **value**: *number*
 
 #### **Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

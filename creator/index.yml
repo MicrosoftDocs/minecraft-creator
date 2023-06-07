@@ -26,9 +26,9 @@ highlightedContent:
       itemType: whats-new
       url: Documents/EditorOverview.md
     #card
-    - title: "1.19.80 Update Summary"
+    - title: "1.20 Update Summary"
       itemType: whats-new
-      url: Documents/Update1.19.80.md
+      url: Documents/Update1.20.md
     #card
     - title: New /execute Syntax
       itemType: whats-new
@@ -138,10 +138,10 @@ conceptualContent:
             text: Introduction to Loot Tables
           - url: Documents/LootAndTradeTableFunctions.md
             itemType: overview
-            text: Loot and Trade Table Functions
-          - url: Documents/LootSpawnAndKill.md
+            text: Loot Overloads
+          - url: Documents/LootOverloads.md
             itemType: overview
-            text: Learn about Loot Spawn and Kill
+            text: Learn about Loot Overloads
         # card
         - title: Working with Chunker
           summary: "Utilize Chunker to convert your existing Minecraft: Java Edition worlds to Minecraft: Bedrock Edition"

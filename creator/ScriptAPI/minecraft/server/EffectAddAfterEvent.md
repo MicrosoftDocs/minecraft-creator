@@ -22,6 +22,9 @@ Contains information related to changes to an effect - like poison - being added
 Additional properties and details of the effect.
 
 Type: [*Effect*](Effect.md)
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
 
 ### **effectState**
 `effectState: number;`
@@ -29,6 +32,9 @@ Type: [*Effect*](Effect.md)
 Additional variant number for the effect.
 
 Type: *number*
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
 
 ### **entity**
 `entity: Entity;`
@@ -36,3 +42,6 @@ Type: *number*
 Entity that the effect is being added to.
 
 Type: [*Entity*](Entity.md)
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.

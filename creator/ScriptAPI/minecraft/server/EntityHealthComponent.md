@@ -22,6 +22,19 @@ Defines the health properties of an entity.
 ### **componentId**
 `static read-only componentId = "minecraft:health";`
 
-Identifier of this component. Should always be minecraft:health.
-
 Type: *string*
+
+#### Examples
+##### ***applyDamageThenHeal.ts***
+```typescript
+  const skelly = overworld.spawnEntity("minecraft:skeleton", targetLocation);
+
+  skelly.applyDamage(19); // skeletons have max damage of 20 so this is a near-death skeleton
+
+  mc.system.runTimeout(() => {
+    let health = skelly.getComponent("health") as mc.EntityHealthComponent;
+    log("Skeleton health before heal: " + health.currentValue);
+    health.resetToMaxValue();
+    log("Skeleton health after heal: " + health.currentValue);
+  }, 20);
+```

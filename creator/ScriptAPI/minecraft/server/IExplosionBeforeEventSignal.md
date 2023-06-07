@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IExplosionBeforeEventSignal class
 
 ## Classes that extend IExplosionBeforeEventSignal
 - [*ExplosionBeforeEventSignal*](ExplosionBeforeEventSignal.md)
+- [*ExplosionBeforeEventSignal*](ExplosionBeforeEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires before an explosion begins.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: ExplosionBeforeEvent) => void): (arg: ExplosionBeforeE
 
 #### **Returns** (arg: [*ExplosionBeforeEvent*](ExplosionBeforeEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ExplosionBeforeEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: ExplosionBeforeEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*ExplosionBeforeEvent*](ExplosionBeforeEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

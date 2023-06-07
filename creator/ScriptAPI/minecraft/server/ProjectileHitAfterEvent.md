@@ -64,6 +64,9 @@ Contains additional information about the block that was hit by the projectile, 
 
 #### **Returns** [*BlockHitInformation*](BlockHitInformation.md) | *undefined*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **getEntityHit**
 `
 getEntityHit(): EntityHitInformation | undefined
@@ -72,3 +75,6 @@ getEntityHit(): EntityHitInformation | undefined
 Contains additional information about a block that was hit.
 
 #### **Returns** [*EntityHitInformation*](EntityHitInformation.md) | *undefined*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.

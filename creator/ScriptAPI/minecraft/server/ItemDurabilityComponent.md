@@ -25,6 +25,9 @@ When present on an item, this item can take damage in the process of being used.
 Returns the current damage level of this particular item.
 
 Type: *number*
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
 
 ### **maxDurability**
 `read-only maxDurability: number;`
@@ -51,6 +54,9 @@ Returns the maximum chance that this item would be damaged using the damageRange
 
 #### **Returns** *number*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -63,6 +69,9 @@ A range of numbers that describes the chance of the item losing durability.
 
 #### **Returns** [*NumberRange*](NumberRange.md)
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -70,7 +79,5 @@ A range of numbers that describes the chance of the item losing durability.
 
 ### **componentId**
 `static read-only componentId = "minecraft:durability";`
-
-Identifier of this component. Should always be 'minecraft:durability'.
 
 Type: *string*

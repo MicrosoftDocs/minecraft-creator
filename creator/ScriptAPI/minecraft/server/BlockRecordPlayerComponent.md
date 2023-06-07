@@ -29,6 +29,9 @@ clearRecord(): void
 
 Clears the currently playing record of this record-playing block.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -54,6 +57,9 @@ Sets and plays a record based on an item type.
 #### **Parameters**
 - **recordItemType**: [*ItemType*](ItemType.md)
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -61,7 +67,5 @@ Sets and plays a record based on an item type.
 
 ### **componentId**
 `static read-only componentId = "minecraft:recordPlayer";`
-
-Identifier of this component. Should always be minecraft:recordPlayer.
 
 Type: *string*

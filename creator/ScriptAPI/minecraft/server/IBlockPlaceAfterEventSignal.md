@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IBlockPlaceAfterEventSignal class
 
 ## Classes that extend IBlockPlaceAfterEventSignal
 - [*BlockPlaceAfterEventSignal*](BlockPlaceAfterEventSignal.md)
+- [*BlockPlaceAfterEventSignal*](BlockPlaceAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires after a block is placed.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: BlockPlaceAfterEvent) => void): (arg: BlockPlaceAfterE
 
 #### **Returns** (arg: [*BlockPlaceAfterEvent*](BlockPlaceAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: BlockPlaceAfterEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: BlockPlaceAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*BlockPlaceAfterEvent*](BlockPlaceAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

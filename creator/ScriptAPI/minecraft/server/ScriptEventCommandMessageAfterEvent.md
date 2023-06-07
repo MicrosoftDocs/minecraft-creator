@@ -52,8 +52,8 @@ Source entity if this command was triggered by an entity (e.g., a NPC).
 Type: [*Entity*](Entity.md)
 
 ### **sourceType**
-`read-only sourceType: MessageSourceType;`
+`read-only sourceType: ScriptEventSource;`
 
 Returns the type of source that fired this command.
 
-Type: [*MessageSourceType*](MessageSourceType.md)
+Type: [*ScriptEventSource*](ScriptEventSource.md)
