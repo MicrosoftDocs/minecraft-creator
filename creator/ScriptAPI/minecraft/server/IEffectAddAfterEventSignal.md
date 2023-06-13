@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IEffectAddAfterEventSignal class.
 
 ## Classes that extend IEffectAddAfterEventSignal
 - [*EffectAddAfterEventSignal*](EffectAddAfterEventSignal.md)
+- [*EffectAddAfterEventSignal*](EffectAddAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires when an effect is added to an entity.
 
@@ -32,6 +33,9 @@ subscribe(callback: (arg: EffectAddAfterEvent) => void, options?: EntityEventOpt
 
 #### **Returns** (arg: [*EffectAddAfterEvent*](EffectAddAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: EffectAddAfterEvent) => void): void
@@ -39,6 +43,9 @@ unsubscribe(callback: (arg: EffectAddAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*EffectAddAfterEvent*](EffectAddAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

@@ -22,6 +22,4 @@ Represents a fluid container block that currently contains lava.
 ### **componentId**
 `static read-only componentId = "minecraft:lavaContainer";`
 
-Identifier of this component. Should always be minecraft:lavaContainer.
-
 Type: *string*

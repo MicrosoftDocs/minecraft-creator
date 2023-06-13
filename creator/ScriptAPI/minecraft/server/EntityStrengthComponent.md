@@ -29,7 +29,7 @@ Type: *number*
 ### **value**
 `read-only value: number;`
 
-Current strength value of this entity, after any effects or component updates are applied.
+Current value of the strength component that has been set for entities.
 
 Type: *number*
 
@@ -37,7 +37,5 @@ Type: *number*
 
 ### **componentId**
 `static read-only componentId = "minecraft:strength";`
-
-Identifier of this component. Should always be minecraft:strength.
 
 Type: *string*

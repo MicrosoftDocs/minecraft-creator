@@ -37,6 +37,9 @@ Adds a cursor - which is a notional waypoint that the sculk will spread in the d
 - **offset**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 - **charge**: *number*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **getCursorPosition**
 `
 getCursorPosition(index: number): minecraftserver.Vector3
@@ -48,6 +51,9 @@ Retrieves the current position of the specified cursor.
 - **index**: *number*
 
 #### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -61,6 +67,9 @@ Returns a number of overall cursors for this sculk spreader.
 
 #### **Returns** *number*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -72,6 +81,9 @@ getTotalCharge(): number
 Gets the total current charge of the sculk spreader.
 
 #### **Returns** *number*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

@@ -13,22 +13,32 @@ A class that provides system-level events and functions.
 
 ## Properties
 
+### **afterEvents**
+`read-only afterEvents: SystemAfterEvents;`
+
+Returns a collection of after-events for system-level operations.
+
+Type: [*SystemAfterEvents*](SystemAfterEvents.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **beforeEvents**
+`read-only beforeEvents: SystemBeforeEvents;`
+
+Returns a collection of before-events for system-level operations.
+
+Type: [*SystemBeforeEvents*](SystemBeforeEvents.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **currentTick**
 `read-only currentTick: number;`
 
 Represents the current world tick of the server.
 
 Type: *number*
-
-### **events**
-`read-only events: SystemEvents;`
-
-Contains a set of events that are applicable for the lifecycle of items in the Minecraft system.
-
-Type: [*SystemEvents*](SystemEvents.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Methods
 - [clearRun](#clearrun)
@@ -60,6 +70,23 @@ Runs a specified function at a future time. This is frequently used to implement
 
 #### **Returns** *number* - An opaque identifier that can be used with the `clearRun` function to cancel the execution of this run.
 
+#### Examples
+##### ***trapTick.ts***
+```typescript
+  const overworld = mc.world.getDimension("overworld");
+
+  try {
+    // Minecraft runs at 20 ticks per second.
+    if (mc.system.currentTick % 1200 === 0) {
+      mc.world.sendMessage("Another minute passes...");
+    }
+  } catch (e) {
+    console.warn("Error: " + e);
+  }
+
+  mc.system.run(trapTick);
+```
+
 ### **runInterval**
 `
 runInterval(callback: () => void, tickInterval?: number): number
@@ -76,6 +103,16 @@ Runs a set of code on an interval.
   An interval of every N ticks that the callback will be called upon.
 
 #### **Returns** *number* - An opaque handle that can be used with the clearRun method to stop the run of this function on an interval.
+
+#### Examples
+##### ***every30Seconds.ts***
+```typescript
+  let intervalRunIdentifier = Math.floor(Math.random() * 10000);
+
+  mc.system.runInterval(() => {
+    mc.world.sendMessage("This is an interval run " + intervalRunIdentifier + " sending a message every 30 seconds.");
+  }, 600);
+```
 
 ### **runTimeout**
 `

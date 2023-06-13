@@ -185,7 +185,7 @@ Custom entity behavior is a huge topic, and this article won't attempt to touch 
 > [!div class="nextstepaction"]
 > [Introduction To Behavior Packs](BehaviorPack.md)
 
-To view all of the available behaviors, properties, and AI Goals that an entity can use, you can go to the Entity JSON Reference Documentation.
+To view all of the available behaviors and AI Goal Components that an entity can use, you can go to the Entity JSON Reference Documentation.
 
 > [!div class="nextstepaction"]
 > [Entity JSON Documentation](../Reference/Content/EntityReference/index.yml)

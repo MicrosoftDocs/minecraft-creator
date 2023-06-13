@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IItemStopUseOnAfterEventSignal cl
 
 ## Classes that extend IItemStopUseOnAfterEventSignal
 - [*ItemStopUseOnAfterEventSignal*](ItemStopUseOnAfterEventSignal.md)
+- [*ItemStopUseOnAfterEventSignal*](ItemStopUseOnAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires when an item has stopped being used on a block.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: ItemStopUseOnAfterEvent) => void): (arg: ItemStopUseOn
 
 #### **Returns** (arg: [*ItemStopUseOnAfterEvent*](ItemStopUseOnAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ItemStopUseOnAfterEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: ItemStopUseOnAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*ItemStopUseOnAfterEvent*](ItemStopUseOnAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

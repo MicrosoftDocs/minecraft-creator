@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IServerMessageAfterEventSignal cl
 
 ## Classes that extend IServerMessageAfterEventSignal
 - [*ServerMessageAfterEventSignal*](ServerMessageAfterEventSignal.md)
+- [*ServerMessageAfterEventSignal*](ServerMessageAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires after a server message is sent. Note that this event is for internal use only.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: MessageReceiveAfterEvent) => void): (arg: MessageRecei
 
 #### **Returns** (arg: [*MessageReceiveAfterEvent*](MessageReceiveAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: MessageReceiveAfterEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: MessageReceiveAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*MessageReceiveAfterEvent*](MessageReceiveAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

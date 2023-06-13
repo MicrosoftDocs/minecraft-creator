@@ -12,6 +12,8 @@ description: Contents of the .TimeOfDay enumeration.
 > [!CAUTION]
 > This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Provides numeric values for common periods in the Minecraft day.
+
 ## Constants
 ### **Day**
 `Day = 1000`

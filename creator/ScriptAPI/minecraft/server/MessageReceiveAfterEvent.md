@@ -30,8 +30,3 @@ Type: *string*
 `read-only player: Player;`
 
 Type: [*Player*](Player.md)
-
-### **sourceType**
-`read-only sourceType: MessageSourceType;`
-
-Type: [*MessageSourceType*](MessageSourceType.md)

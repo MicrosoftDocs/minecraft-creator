@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IEntityHitAfterEventSignal class.
 
 ## Classes that extend IEntityHitAfterEventSignal
 - [*EntityHitAfterEventSignal*](EntityHitAfterEventSignal.md)
+- [*EntityHitAfterEventSignal*](EntityHitAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires when an entity hits (melee attacks) another entity.
 
@@ -32,6 +33,9 @@ subscribe(callback: (arg: EntityHitAfterEvent) => void, options?: EntityEventOpt
 
 #### **Returns** (arg: [*EntityHitAfterEvent*](EntityHitAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: EntityHitAfterEvent) => void): void
@@ -39,6 +43,9 @@ unsubscribe(callback: (arg: EntityHitAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*EntityHitAfterEvent*](EntityHitAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

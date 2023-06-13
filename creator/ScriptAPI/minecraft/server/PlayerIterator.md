@@ -28,6 +28,9 @@ This type is usable for iterating over a set of players. This means it can be us
 
 #### **Returns** Iterator&lt;[*Player*](Player.md)&gt;
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **next**
 `
 next(): IteratorResult<Player>
@@ -36,3 +39,6 @@ next(): IteratorResult<Player>
 Retrieves the next item in this iteration. The resulting IteratorResult contains .done and .value properties which can be used to see the next Player in the iteration.
 
 #### **Returns** IteratorResult&lt;[*Player*](Player.md)&gt;
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.

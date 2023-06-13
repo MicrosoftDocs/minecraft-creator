@@ -12,14 +12,26 @@ description: Contents of the @minecraft/server.CompoundBlockVolumeItem class.
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+This interface defines an entry into the {@link @minecraft-server/CompoundBlockVolume} which represents a volume of positive or negative space.
+
+
+
 ## Properties
 
 ### **action**
 `action: CompoundBlockVolumeAction;`
 
+The 'action' defines how the block volume is represented in the compound block volume stack.
+
+'Add' creates a block volume which is positively selected
+
+'Subtract' creates a block volume which represents a hole or negative space in the overall compound block volume.
+
 Type: [*CompoundBlockVolumeAction*](CompoundBlockVolumeAction.md)
 
 ### **volume**
 `volume: BlockVolume;`
+
+The volume of space
 
 Type: [*BlockVolume*](BlockVolume.md)

@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IChatSendBeforeEventSignal class.
 
 ## Classes that extend IChatSendBeforeEventSignal
 - [*ChatSendBeforeEventSignal*](ChatSendBeforeEventSignal.md)
+- [*ChatSendBeforeEventSignal*](ChatSendBeforeEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires before a chat message is sent.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: ChatSendBeforeEvent) => void): (arg: ChatSendBeforeEve
 
 #### **Returns** (arg: [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ChatSendBeforeEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: ChatSendBeforeEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

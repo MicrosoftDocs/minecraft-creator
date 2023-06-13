@@ -46,6 +46,9 @@ Starts a new cooldown period for this item.
 #### **Parameters**
 - **player**: [*Player*](Player.md)
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -53,7 +56,5 @@ Starts a new cooldown period for this item.
 
 ### **componentId**
 `static read-only componentId = "minecraft:cooldown";`
-
-Identifier of this component. Should always be 'minecraft:cooldown'.
 
 Type: *string*

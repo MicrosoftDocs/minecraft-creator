@@ -65,21 +65,27 @@ Registers a new GameTest function. This GameTest will become available in Minecr
 
 #### **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - Returns a [*@minecraft/server-gametest.RegistrationBuilder*](../../minecraft/server-gametest/RegistrationBuilder.md) object where additional options for this test can be specified via builder methods.
 
-#### **Examples**
-##### *example1.js*
-```javascript
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+#### Examples
+##### ***example1.js***
+```typescript
 GameTest.register("ExampleTests", "alwaysFail", (test) => {
   test.fail("This test, runnable via '/gametest run ExampleTests:alwaysFail', will always fail");
 });
 ```
-##### *simpleMobTest.ts*
-```javascript
+##### ***simpleMobTest.ts***
+```typescript
 gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
   const attackerId = "fox";
   const victimId = "chicken";
+
   test.spawn(attackerId, { x: 5, y: 2, z: 5 });
   test.spawn(victimId, { x: 2, y: 2, z: 2 });
+
   test.assertEntityPresentInArea(victimId, true);
+
   test.succeedWhen(() => {
     test.assertEntityPresentInArea(victimId, false);
   });
@@ -107,6 +113,9 @@ Registers a new GameTest function that is designed for asynchronous execution. T
   Implementation of the test function.
 
 #### **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - Returns a [*@minecraft/server-gametest.RegistrationBuilder*](../../minecraft/server-gametest/RegistrationBuilder.md) object where additional options for this test can be specified via builder methods.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 ## Change Log
 ## 1.0.0-beta

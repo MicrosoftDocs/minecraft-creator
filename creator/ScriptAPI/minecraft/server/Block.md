@@ -29,6 +29,9 @@ Type: *boolean*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
 
 ### **location**
 `read-only location: Vector3;`
@@ -95,6 +98,7 @@ Type: *number*
 - [isAir](#isair)
 - [isLiquid](#isliquid)
 - [isSolid](#issolid)
+- [isValid](#isvalid)
 - [setPermutation](#setpermutation)
 - [setType](#settype)
 - [trySetPermutation](#trysetpermutation)
@@ -135,9 +139,6 @@ Gets additional configuration properties (a component) for specific capabilities
   Identifier of the component. If a namespace is not specified, minecraft: is assumed.
 
 #### **Returns** [*BlockComponent*](BlockComponent.md) | *undefined* - Returns the component object if it is present on the particular block.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.
@@ -215,12 +216,14 @@ Checks to see if the permutation of this block has a specific tag.
 > [!WARNING]
 > This function can throw errors.
 
-#### **Examples**
-##### *check_block_tags.js*
-```javascript
+#### Examples
+##### ***check_block_tags.js***
+```typescript
 import { world } from "@minecraft/server";
+
 // Fetch the block
 const block = world.getDimension("overworld").getBlock({ x: 1, y: 2, z: 3 });
+
 console.log(`Block is dirt: ${block.hasTag("dirt")}`);
 console.log(`Block is wood: ${block.hasTag("wood")}`);
 console.log(`Block is stone: ${block.hasTag("stone")}`);
@@ -271,6 +274,18 @@ Returns true if this block is solid and impassible - (e.g., a cobblestone block 
 > [!WARNING]
 > This function can throw errors.
 
+### **isValid**
+`
+isValid(): boolean
+`
+
+Returns true if this reference to a block is still valid (for example, if the block is unloaded, references to that block will no longer be valid.)
+
+#### **Returns** *boolean* - True if this block object is still working and valid.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **setPermutation**
 `
 setPermutation(permutation: BlockPermutation): void
@@ -282,6 +297,9 @@ Sets the block in the dimension to the state of the permutation.
 - **permutation**: [*BlockPermutation*](BlockPermutation.md)
   
   Permutation that contains a set of property states for the Block.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -300,6 +318,9 @@ Sets the type of block.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -320,6 +341,9 @@ Tries to set the block in the dimension to the state of the permutation by first
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

@@ -34,6 +34,8 @@ Type: *string*
 - [getParticipants](#getparticipants)
 - [getScore](#getscore)
 - [getScores](#getscores)
+- [hasParticipant](#hasparticipant)
+- [isValid](#isvalid)
 - [removeParticipant](#removeparticipant)
 - [setScore](#setscore)
 
@@ -51,17 +53,17 @@ Returns all objective participant identities.
 
 ### **getScore**
 `
-getScore(participant: ScoreboardIdentity): number
+getScore(participant: Entity | ScoreboardIdentity | string): number | undefined
 `
 
 Returns a specific score for a participant.
 
 #### **Parameters**
-- **participant**: [*ScoreboardIdentity*](ScoreboardIdentity.md)
+- **participant**: [*Entity*](Entity.md) | [*ScoreboardIdentity*](ScoreboardIdentity.md) | *string*
   
   Identifier of the participant to retrieve a score for.
 
-#### **Returns** *number*
+#### **Returns** *number* | *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -78,39 +80,65 @@ Returns specific scores for this objective for all participants.
 > [!WARNING]
 > This function can throw errors.
 
-### **removeParticipant**
+### **hasParticipant**
 `
-removeParticipant(participant: ScoreboardIdentity): boolean
+hasParticipant(participant: Entity | ScoreboardIdentity | string): boolean
 `
 
-Removes a participant from this scoreboard objective.
+Returns if the specified identity is a participant of the scoreboard objective.
 
 #### **Parameters**
-- **participant**: [*ScoreboardIdentity*](ScoreboardIdentity.md)
-  
-  Participant to remove from being tracked with this objective.
+- **participant**: [*Entity*](Entity.md) | [*ScoreboardIdentity*](ScoreboardIdentity.md) | *string*
 
 #### **Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.
 
+### **isValid**
+`
+isValid(): boolean
+`
+
+#### **Returns** *boolean*
+
+### **removeParticipant**
+`
+removeParticipant(participant: Entity | ScoreboardIdentity | string): boolean
+`
+
+Removes a participant from this scoreboard objective.
+
+#### **Parameters**
+- **participant**: [*Entity*](Entity.md) | [*ScoreboardIdentity*](ScoreboardIdentity.md) | *string*
+  
+  Participant to remove from being tracked with this objective.
+
+#### **Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **setScore**
 `
-setScore(participant: ScoreboardIdentity, score: number): boolean
+setScore(participant: Entity | ScoreboardIdentity | string, score: number): void
 `
 
 Sets a score for a participant.
 
 #### **Parameters**
-- **participant**: [*ScoreboardIdentity*](ScoreboardIdentity.md)
+- **participant**: [*Entity*](Entity.md) | [*ScoreboardIdentity*](ScoreboardIdentity.md) | *string*
   
   Identity of the participant.
 - **score**: *number*
   
   New value of the score.
 
-#### **Returns** *boolean*
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

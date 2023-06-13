@@ -20,6 +20,10 @@ description: Contents of the @minecraft/server.BlockLiquidContainerComponent cla
 - [*BlockPotionContainerComponent*](BlockPotionContainerComponent.md)
 - [*BlockSnowContainerComponent*](BlockSnowContainerComponent.md)
 - [*BlockWaterContainerComponent*](BlockWaterContainerComponent.md)
+- [*BlockLavaContainerComponent*](BlockLavaContainerComponent.md)
+- [*BlockPotionContainerComponent*](BlockPotionContainerComponent.md)
+- [*BlockSnowContainerComponent*](BlockSnowContainerComponent.md)
+- [*BlockWaterContainerComponent*](BlockWaterContainerComponent.md)
 
 For blocks that can contain a liquid (e.g., a cauldron), this is a base component for liquid containers. 
 
@@ -31,3 +35,6 @@ For blocks that can contain a liquid (e.g., a cauldron), this is a base componen
 Relative fill level of the liquid container.
 
 Type: *number*
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.

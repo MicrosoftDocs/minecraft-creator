@@ -25,6 +25,9 @@ When present on an item, this item has applied enchantment effects. Note that th
 Returns a collection of the enchantments applied to this item stack.
 
 Type: [*EnchantmentList*](EnchantmentList.md)
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
 
 ## Methods
 - [removeAllEnchantments](#removeallenchantments)
@@ -36,6 +39,9 @@ removeAllEnchantments(): void
 
 Removes all enchantments applied to this item stack.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -44,6 +50,25 @@ Removes all enchantments applied to this item stack.
 ### **componentId**
 `static read-only componentId = "minecraft:enchantments";`
 
-Identifier of this component.
-
 Type: *string*
+
+#### Examples
+##### ***ironFireSword.ts***
+```typescript
+  const ironFireSword = new mc.ItemStack(mc.MinecraftItemTypes.diamondSword, 1);
+  let players = mc.world.getAllPlayers();
+
+  let fireAspectEnchant = new mc.Enchantment("fire_aspect", 3);
+  let enchants = ironFireSword.getComponent("minecraft:enchantments") as mc.ItemEnchantsComponent;
+  let addedFire = enchants.enchantments.addEnchantment(fireAspectEnchant);
+
+  if (!addedFire) {
+    log("Could not add fire aspect.");
+    return -1;
+  }
+
+  const inventory = players[0].getComponent("inventory") as mc.EntityInventoryComponent;
+  inventory.container.setItem(0, ironFireSword);
+
+  // hover over/select the item in your inventory to see the lore.
+```

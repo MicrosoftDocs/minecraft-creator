@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IDataDrivenEntityTriggerBeforeEve
 
 ## Classes that extend IDataDrivenEntityTriggerBeforeEventSignal
 - [*DataDrivenEntityTriggerBeforeEventSignal*](DataDrivenEntityTriggerBeforeEventSignal.md)
+- [*DataDrivenEntityTriggerBeforeEventSignal*](DataDrivenEntityTriggerBeforeEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires before an entities' definition is scheduled to change via a triggered event.
 
@@ -32,6 +33,9 @@ subscribe(callback: (arg: DataDrivenEntityTriggerBeforeEvent) => void, options?:
 
 #### **Returns** (arg: [*DataDrivenEntityTriggerBeforeEvent*](DataDrivenEntityTriggerBeforeEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: DataDrivenEntityTriggerBeforeEvent) => void): void
@@ -39,6 +43,9 @@ unsubscribe(callback: (arg: DataDrivenEntityTriggerBeforeEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*DataDrivenEntityTriggerBeforeEvent*](DataDrivenEntityTriggerBeforeEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

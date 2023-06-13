@@ -55,6 +55,9 @@ Creates a new EnchantmentList.
 
 #### **Returns** Iterator&lt;[*Enchantment*](Enchantment.md)&gt;
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **addEnchantment**
 `
 addEnchantment(enchantment: Enchantment): boolean
@@ -66,6 +69,9 @@ Attempts to add the enchantment to this collection. Returns true if successful.
 - **enchantment**: [*Enchantment*](Enchantment.md)
 
 #### **Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 ### **canAddEnchantment**
 `
@@ -79,6 +85,9 @@ Returns whether or not the provided EnchantmentInstance can be added to this col
 
 #### **Returns** *boolean*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **getEnchantment**
 `
 getEnchantment(enchantmentType: EnchantmentType | string): Enchantment | undefined
@@ -90,6 +99,9 @@ Returns an enchantment associated with a type.
 - **enchantmentType**: [*EnchantmentType*](EnchantmentType.md) | *string*
 
 #### **Returns** [*Enchantment*](Enchantment.md) | *undefined*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -116,6 +128,9 @@ next(): IteratorResult<Enchantment>
 
 #### **Returns** IteratorResult&lt;[*Enchantment*](Enchantment.md)&gt;
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **removeEnchantment**
 `
 removeEnchantment(enchantmentType: EnchantmentType | string): void
@@ -125,6 +140,9 @@ Removes an EnchantmentInstance with type from this collection if present.
 
 #### **Parameters**
 - **enchantmentType**: [*EnchantmentType*](EnchantmentType.md) | *string*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

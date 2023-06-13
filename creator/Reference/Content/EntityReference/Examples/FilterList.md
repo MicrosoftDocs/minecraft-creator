@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: v-jimseaman
 title: Entity Documentation - FilterList
 ms.prod: gaming
 ---
@@ -12,6 +12,8 @@ Below is a list of all the available filters within Minecraft: Bedrock Edition f
 |Filter |Description|
 |:------|:----------|
 |[actor_health](Filters/actor_health.md)|`actor_health` allows a creator to test the health of an entity. |
+|[all_slots_empty](Filters/all_slots_empty.md)|Returns true when the designated equipment location for the subject entity is completely empty. |
+|[any_slot_empty](Filters/any_slot_empty.md)|Returns true when the designated equipment location for the subject entity has any empty slot. |
 |[bool_property](Filters/bool_property.md)|`bool_property` allows a creator to compare an actor property to a boolean value. |
 |[clock_time](Filters/clock_time.md)|`clock_time` allows a creator to compare the current time with a float value in the range (0.0, 1.0). |
 |[distance_to_nearest_player](Filters/distance_to_nearest_player.md)|`distance_to_nearest_player` compares the distance to the nearest Player with a float value. |
@@ -55,7 +57,7 @@ Below is a list of all the available filters within Minecraft: Bedrock Edition f
 |[is_family](Filters/is_family.md)|Returns true when the subject entity is a member of the named family. |
 |[is_game_rule](Filters/is_game_rule.md)|Tests whether a named game rule is active. |
 |[is_humid](Filters/is_humid.md)|Tests whether the subject is in an area with humidity. |
-|[is_immobile](Filters/is_immobile.md)|Returns true if the subject entity is immobile. An entity is immobile if it lacks AI goals, has just changed dimensions or if it is a mob and has no health. |
+|[is_immobile](Filters/is_immobile.md)|Returns true if the subject entity is immobile. An entity is immobile if it lacks AI goal components, has just changed dimensions, or if it is a mob and has no health. |
 |[is_in_village](Filters/is_in_village.md)|Tests whether the Subject is inside the bounds of a village. |
 |[is_leashed](Filters/is_leashed.md)|Returns true if the subject entity is leashed. |
 |[is_leashed_to](Filters/is_leashed_to.md)|Returns true if the subject entity leashed to the calling entity. |
@@ -68,6 +70,7 @@ Below is a list of all the available filters within Minecraft: Bedrock Edition f
 |[is_riding](Filters/is_riding.md)|Returns true if the subject entity is riding on another entity. |
 |[is_skin_id](Filters/is_skin_id.md)|Returns true if the subject entity uses the skin id number provided. |
 |[is_sleeping](Filters/is_sleeping.md)|Tests whether the subject is sleeping. |
+|[is_sneak_held](Filters/is_sneak_held.md)|Returns true if the subject entity has the sneak input held. |
 |[is_sneaking](Filters/is_sneaking.md)|Tests whether the subject is sneaking. |
 |[is_snow_covered](Filters/is_snow_covered.md)|Tests whether the subject is in an area covered by snow. |
 |[is_target](Filters/is_target.md)|Returns true if the subject entity is the target of the calling entity. |
@@ -88,6 +91,7 @@ Below is a list of all the available filters within Minecraft: Bedrock Edition f
 |[random_chance](Filters/random_chance.md)|Returns true if the random chance rolls 0 out of a specified max range. |
 |[rider_count](Filters/rider_count.md)|Returns the number of riders on this entity. |
 |[surface_mob](Filters/surface_mob.md)|Tests if the subject is a surface mob. |
+|[target_distance](Filters/target_distance.md)|Tests the distance between the calling entity and its target. |
 |[trusts](Filters/trusts.md)|Returns true if the subject is trusted by entity. |
 |[weather_at_position](Filters/weather_at_position.md)|Tests the current weather, at the actor's position, against a provided weather value.|
 |[weather](Filters/weather.md)|Tests for the current weather state the entity is experiencing. |

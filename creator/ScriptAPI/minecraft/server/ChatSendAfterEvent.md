@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.ChatSendAfterEvent class.
 
 ## Classes that extend ChatSendAfterEvent
 - [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)
+- [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)
 
 An event that fires as players enter chat messages.
 

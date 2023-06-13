@@ -22,6 +22,4 @@ Allows this entity to generate paths in the air (for example, like Minecraft par
 ### **componentId**
 `static read-only componentId = "minecraft:navigation.fly";`
 
-Identifier of this component. Should always be minecraft:navigation.fly.
-
 Type: *string*

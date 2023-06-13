@@ -505,6 +505,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **blackConcrete**
+`static read-only blackConcrete: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **blackDye**
 `static read-only blackDye: ItemType;`
 
@@ -514,6 +519,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only blackGlazedTerracotta: ItemType;`
 
 Represents an item that can place a black glazed terracotta block within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **blackShulkerBox**
+`static read-only blackShulkerBox: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -589,6 +599,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **blueConcrete**
+`static read-only blueConcrete: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **blueDye**
 `static read-only blueDye: ItemType;`
 
@@ -605,6 +620,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only blueIce: ItemType;`
 
 Represents an item that can place a blue ice block within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **blueShulkerBox**
+`static read-only blueShulkerBox: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -722,6 +742,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **brownConcrete**
+`static read-only brownConcrete: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **brownDye**
 `static read-only brownDye: ItemType;`
 
@@ -745,6 +770,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only brownMushroomBlock: ItemType;`
 
 Represents an item that can place a block of brown mushroom within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **brownShulkerBox**
+`static read-only brownShulkerBox: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -1510,6 +1540,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **cyanConcrete**
+`static read-only cyanConcrete: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **cyanDye**
 `static read-only cyanDye: ItemType;`
 
@@ -1519,6 +1554,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only cyanGlazedTerracotta: ItemType;`
 
 Represents an item that can place a block of cyan-colored glazed terracotta within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **cyanShulkerBox**
+`static read-only cyanShulkerBox: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -2514,6 +2554,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **grayConcrete**
+`static read-only grayConcrete: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **grayDye**
 `static read-only grayDye: ItemType;`
 
@@ -2523,6 +2568,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only grayGlazedTerracotta: ItemType;`
 
 Represents an item that can place a gray-colored block of glazed terracotta within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **grayShulkerBox**
+`static read-only grayShulkerBox: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -2543,6 +2593,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **greenConcrete**
+`static read-only greenConcrete: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **greenDye**
 `static read-only greenDye: ItemType;`
 
@@ -2552,6 +2607,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only greenGlazedTerracotta: ItemType;`
 
 Represents an item that can place a green block of glazed terracotta within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **greenShulkerBox**
+`static read-only greenShulkerBox: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -3027,6 +3087,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **lightBlueConcrete**
+`static read-only lightBlueConcrete: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **lightBlueDye**
 `static read-only lightBlueDye: ItemType;`
 
@@ -3036,6 +3101,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only lightBlueGlazedTerracotta: ItemType;`
 
 Represents an item that can place a light blue block of glazed terracotta within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **lightBlueShulkerBox**
+`static read-only lightBlueShulkerBox: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -3056,8 +3126,18 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **lightGrayConcrete**
+`static read-only lightGrayConcrete: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **lightGrayDye**
 `static read-only lightGrayDye: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **lightGrayShulkerBox**
+`static read-only lightGrayShulkerBox: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -3092,6 +3172,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **limeConcrete**
+`static read-only limeConcrete: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **limeDye**
 `static read-only limeDye: ItemType;`
 
@@ -3101,6 +3186,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only limeGlazedTerracotta: ItemType;`
 
 Represents an item that can place a lime-colored block of glazed terracotta within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **limeShulkerBox**
+`static read-only limeShulkerBox: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -3171,6 +3261,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **magentaConcrete**
+`static read-only magentaConcrete: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **magentaDye**
 `static read-only magentaDye: ItemType;`
 
@@ -3180,6 +3275,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only magentaGlazedTerracotta: ItemType;`
 
 Represents an item that can place a block of magenta-colored glazed terracotta within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **magentaShulkerBox**
+`static read-only magentaShulkerBox: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -3762,6 +3862,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **orangeConcrete**
+`static read-only orangeConcrete: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **orangeDye**
 `static read-only orangeDye: ItemType;`
 
@@ -3771,6 +3876,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only orangeGlazedTerracotta: ItemType;`
 
 Represents an item that can place a block of orange-colored glazed terracotta within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **orangeShulkerBox**
+`static read-only orangeShulkerBox: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -3891,6 +4001,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **pinkConcrete**
+`static read-only pinkConcrete: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **pinkDye**
 `static read-only pinkDye: ItemType;`
 
@@ -3905,6 +4020,11 @@ Type: [*ItemType*](ItemType.md)
 
 ### **pinkPetals**
 `static read-only pinkPetals: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
+### **pinkShulkerBox**
+`static read-only pinkShulkerBox: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -4197,6 +4317,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **purpleConcrete**
+`static read-only purpleConcrete: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **purpleDye**
 `static read-only purpleDye: ItemType;`
 
@@ -4206,6 +4331,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only purpleGlazedTerracotta: ItemType;`
 
 Represents an item that can place a purple-colored block of glazed terracotta within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **purpleShulkerBox**
+`static read-only purpleShulkerBox: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -4356,6 +4486,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **redConcrete**
+`static read-only redConcrete: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **redDye**
 `static read-only redDye: ItemType;`
 
@@ -4414,6 +4549,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only redSandstoneStairs: ItemType;`
 
 Represents an item that can place a set of red sandstone stairs within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **redShulkerBox**
+`static read-only redShulkerBox: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -5782,6 +5922,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **whiteConcrete**
+`static read-only whiteConcrete: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **whiteDye**
 `static read-only whiteDye: ItemType;`
 
@@ -5791,6 +5936,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only whiteGlazedTerracotta: ItemType;`
 
 Represents an item that can place a block of white glazed terracotta within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **whiteShulkerBox**
+`static read-only whiteShulkerBox: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 
@@ -5915,6 +6065,11 @@ Type: [*ItemType*](ItemType.md)
 
 Type: [*ItemType*](ItemType.md)
 
+### **yellowConcrete**
+`static read-only yellowConcrete: ItemType;`
+
+Type: [*ItemType*](ItemType.md)
+
 ### **yellowDye**
 `static read-only yellowDye: ItemType;`
 
@@ -5931,6 +6086,11 @@ Type: [*ItemType*](ItemType.md)
 `static read-only yellowGlazedTerracotta: ItemType;`
 
 Represents an item that can place a yellow block of glazed terracotta within Minecraft.
+
+Type: [*ItemType*](ItemType.md)
+
+### **yellowShulkerBox**
+`static read-only yellowShulkerBox: ItemType;`
 
 Type: [*ItemType*](ItemType.md)
 

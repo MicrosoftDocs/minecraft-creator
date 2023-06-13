@@ -39,3 +39,51 @@ Type: *boolean*
 Contains additional properties and details of the piston.
 
 Type: [*BlockPistonComponent*](BlockPistonComponent.md)
+
+#### Examples
+##### ***pistonBeforeEvent.ts***
+```typescript
+  // set up a couple of piston blocks
+  let piston = overworld.getBlock(targetLocation);
+  let button = overworld.getBlock({ x: targetLocation.x, y: targetLocation.y + 1, z: targetLocation.z });
+
+  if (piston === undefined || button === undefined) {
+    log("Could not find block at location.");
+    return -1;
+  }
+
+  piston.setPermutation(mc.BlockPermutation.resolve("piston").withState("facing_direction", 3 /* south */));
+  button.setPermutation(mc.BlockPermutation.resolve("acacia_button").withState("facing_direction", 1 /* up */));
+
+  const uncanceledPistonLoc = {
+    x: Math.floor(targetLocation.x) + 2,
+    y: Math.floor(targetLocation.y),
+    z: Math.floor(targetLocation.z) + 2,
+  };
+
+  // this is our control.
+  let uncanceledPiston = overworld.getBlock(uncanceledPistonLoc);
+  let uncanceledButton = overworld.getBlock({
+    x: uncanceledPistonLoc.x,
+    y: uncanceledPistonLoc.y + 1,
+    z: uncanceledPistonLoc.z,
+  });
+
+  if (uncanceledPiston === undefined || uncanceledButton === undefined) {
+    log("Could not find block at location.");
+    return -1;
+  }
+
+  uncanceledPiston.setPermutation(mc.BlockPermutation.resolve("piston").withState("facing_direction", 3 /* south */));
+  uncanceledButton.setPermutation(
+    mc.BlockPermutation.resolve("acacia_button").withState("facing_direction", 1 /* up */)
+  );
+
+  mc.world.beforeEvents.pistonActivate.subscribe((pistonEvent: mc.PistonActivateBeforeEvent) => {
+    let eventLoc = pistonEvent.piston.block.location;
+    if (eventLoc.x === targetLocation.x && eventLoc.y === targetLocation.y && eventLoc.z === targetLocation.z) {
+      log("Cancelling piston event");
+      pistonEvent.cancel = true;
+    }
+  });
+```

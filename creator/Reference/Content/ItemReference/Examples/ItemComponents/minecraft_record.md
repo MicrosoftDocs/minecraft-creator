@@ -22,7 +22,7 @@ ms.prod: gaming
 |:------------|:------------|:------------|:------------|
 |comparator_signal|1 | integer |Signal strength for comparator blocks to use from 1 - 13.|
 |duration|*not set* | float | Duration of sound event in seconds float value.|
-|sound_event|*not set* | String | Sound event types:  `13`, `cat`, `blocks`, `chirp`, `far`, `mall`, `mellohi`, `stal`, `strad`, `ward`, `11`, `wait`, `pigstep`, `otherside`, `5`. The value may be one listed below. |
+|sound_event|*not set* | String | Sound event types:  `13`, `cat`, `blocks`, `chirp`, `far`, `mall`, `mellohi`, `stal`, `strad`, `ward`, `11`, `wait`, `pigstep`, `otherside`, `5`, `relic`. The value may be one listed below. |
 
 ### sound_event
 
@@ -134,6 +134,7 @@ Listed below are the available sounds:
 - `attach`
 - `detach`
 - `deny`
+- `record.relic`
 - `tripod`
 - `pop`
 - `drop.slot`

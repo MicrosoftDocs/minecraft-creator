@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IScriptEventCommandMessageAfterEv
 
 ## Classes that extend IScriptEventCommandMessageAfterEventSignal
 - [*ScriptEventCommandMessageAfterEventSignal*](ScriptEventCommandMessageAfterEventSignal.md)
+- [*ScriptEventCommandMessageAfterEventSignal*](ScriptEventCommandMessageAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires when /script event command is called.
 
@@ -32,6 +33,9 @@ subscribe(callback: (arg: ScriptEventCommandMessageAfterEvent) => void, options?
 
 #### **Returns** (arg: [*ScriptEventCommandMessageAfterEvent*](ScriptEventCommandMessageAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ScriptEventCommandMessageAfterEvent) => void): void
@@ -39,6 +43,9 @@ unsubscribe(callback: (arg: ScriptEventCommandMessageAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*ScriptEventCommandMessageAfterEvent*](ScriptEventCommandMessageAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

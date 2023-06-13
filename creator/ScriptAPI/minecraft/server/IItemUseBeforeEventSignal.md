@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IItemUseBeforeEventSignal class.
 
 ## Classes that extend IItemUseBeforeEventSignal
 - [*ItemUseBeforeEventSignal*](ItemUseBeforeEventSignal.md)
+- [*ItemUseBeforeEventSignal*](ItemUseBeforeEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires before an item is used.
 
@@ -31,6 +32,9 @@ subscribe(callback: (arg: ItemUseBeforeEvent) => void): (arg: ItemUseBeforeEvent
 
 #### **Returns** (arg: [*ItemUseBeforeEvent*](ItemUseBeforeEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ItemUseBeforeEvent) => void): void
@@ -38,6 +42,9 @@ unsubscribe(callback: (arg: ItemUseBeforeEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*ItemUseBeforeEvent*](ItemUseBeforeEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

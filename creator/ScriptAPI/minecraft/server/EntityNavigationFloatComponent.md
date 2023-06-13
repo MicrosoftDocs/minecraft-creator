@@ -22,6 +22,4 @@ Allows this entity to generate paths by flying around the air like the regular G
 ### **componentId**
 `static read-only componentId = "minecraft:navigation.float";`
 
-Identifier of this component. Should always be minecraft:navigation.float.
-
 Type: *string*

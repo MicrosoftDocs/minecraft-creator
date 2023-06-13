@@ -124,6 +124,4 @@ Sets the current air supply of the entity.
 ### **componentId**
 `static read-only componentId = "minecraft:breathable";`
 
-Identifier of this component. Should always be minecraft:breathable.
-
 Type: *string*

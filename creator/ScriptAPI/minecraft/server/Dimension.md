@@ -57,38 +57,46 @@ Creates an explosion at the specified location.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
-#### **Examples**
-##### *createExplosion.ts*
-```javascript
-  overworld.createExplosion(targetLocation, 10, new mc.ExplosionOptions());
+#### Examples
+##### ***createExplosion.ts***
+```typescript
+  const overworld = mc.world.getDimension("overworld");
+
+  log("Creating an explosion of radius 10.");
+  overworld.createExplosion(targetLocation, 10);
 ```
-##### *createFireAndWaterExplosions.ts*
-```javascript
-const explosionLoc: mc.Vector3 = { x: targetLocation.x + 0.5, y: targetLocation.y + 0.5, z: targetLocation.z + 0.5 };
-const fireExplosionOptions = new mc.ExplosionOptions();
-// Explode with fire
-fireExplosionOptions.causesFire = true;
-overworld.createExplosion(explosionLoc, 15, fireExplosionOptions);
-const waterExplosionOptions = new mc.ExplosionOptions();
-// Explode in water
-waterExplosionOptions.allowUnderwater = true;
-const belowWaterLoc: mc.Vector3 = { x: targetLocation.x + 3, y: targetLocation.y + 1, z: targetLocation.z + 3 };
-overworld.createExplosion(belowWaterLoc, 10, waterExplosionOptions);
+##### ***createFireAndWaterExplosions.ts***
+```typescript
+  const overworld = mc.world.getDimension("overworld");
+
+  const explosionLoc = { x: targetLocation.x + 0.5, y: targetLocation.y + 0.5, z: targetLocation.z + 0.5};
+
+  log("Creating an explosion of radius 15 that causes fire.");
+  overworld.createExplosion(explosionLoc, 15, { causesFire: true });
+
+  const belowWaterLoc = { x: targetLocation.x + 3, y: targetLocation.y + 1,z: targetLocation.z + 3};
+
+  log("Creating an explosion of radius 10 that can go underwater.");
+  overworld.createExplosion(belowWaterLoc, 10, { allowUnderwater: true });
 ```
-##### *createNoBlockExplosion.ts*
-```javascript
-const explosionOptions = new mc.ExplosionOptions();
-// Start by exploding without breaking blocks
-explosionOptions.breaksBlocks = false;
-const explodeNoBlocksLoc: mc.Vector3 = {
-  x: Math.floor(targetLocation.x + 1),
-  y: Math.floor(targetLocation.y + 2),
-  z: Math.floor(targetLocation.z + 1),
-};
-overworld.createExplosion(explodeNoBlocksLoc, 15, explosionOptions);
+##### ***createNoBlockExplosion.ts***
+```typescript
+  const overworld = mc.world.getDimension("overworld");
+
+  const explodeNoBlocksLoc = {
+    x: Math.floor(targetLocation.x + 1),
+    y: Math.floor(targetLocation.y + 2),
+    z: Math.floor(targetLocation.z + 1)
+  };
+
+  log("Creating an explosion of radius 15 that does not break blocks.");
+  overworld.createExplosion(explodeNoBlocksLoc, 15, { breaksBlocks: false });
 ```
 
 ### **fillBlocks**
@@ -117,6 +125,9 @@ Fills an area between begin and end with block of type block.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -132,10 +143,19 @@ Returns a block instance at the given location.
   
   The location at which to return a block.
 
-#### **Returns** [*Block*](Block.md) | *undefined* - Block at the specified location.
+#### **Returns** [*Block*](Block.md) | *undefined* - Block at the specified location, or 'undefined' if asking for a block at an unloaded chunk.
 
 > [!WARNING]
-> This function can throw errors.
+> PositionInUnloadedChunkError: Exception thrown when trying to interact with a Block object that isn't in a loaded and ticking chunk anymore,,PositionOutOfWorldBoundariesError: Exception thrown when trying to interact with a position outside of dimension height range,
+
+> [!WARNING]
+> PositionInUnloadedChunkError: Exception thrown when trying to interact with a Block object that isn't in a loaded and ticking chunk anymore,,PositionOutOfWorldBoundariesError: Exception thrown when trying to interact with a position outside of dimension height range,
+
+> [!WARNING]
+> PositionInUnloadedChunkError: Exception thrown when trying to interact with a Block object that isn't in a loaded and ticking chunk anymore,,PositionOutOfWorldBoundariesError: Exception thrown when trying to interact with a position outside of dimension height range,
+
+> [!WARNING]
+> PositionInUnloadedChunkError: Exception thrown when trying to interact with a Block object that isn't in a loaded and ticking chunk anymore,,PositionOutOfWorldBoundariesError: Exception thrown when trying to interact with a position outside of dimension height range,
 
 ### **getBlockFromRay**
 `
@@ -180,22 +200,61 @@ Returns a set of entities based on a set of conditions defined via the EntityQue
 > [!WARNING]
 > This function can throw errors.
 
-#### **Examples**
-##### *testThatEntityIsFeatherItem.ts*
-```javascript
-const query = {
-  type: "item",
-  location: targetLocation,
-};
-const items = overworld.getEntities(query);
-for (const item of items) {
-  const itemComp = item.getComponent("item") as any;
-  if (itemComp) {
-    if (itemComp.itemStack.id.endsWith("feather")) {
-      console.log("Success! Found a feather", 1);
+#### Examples
+##### ***bounceSkeletons.ts***
+```typescript
+  let mobs = ["creeper", "skeleton", "sheep"];
+
+  // create some sample mob data
+  for (let i = 0; i < 10; i++) {
+    overworld.spawnEntity(mobs[i % mobs.length], targetLocation);
+  }
+
+  let eqo: mc.EntityQueryOptions = {
+    type: "skeleton",
+  };
+
+  for (let entity of overworld.getEntities(eqo)) {
+    entity.applyKnockback(0, 0, 0, 1);
+  }
+```
+##### ***tagsQuery.ts***
+```typescript
+  let mobs = ["creeper", "skeleton", "sheep"];
+
+  // create some sample mob data
+  for (let i = 0; i < 10; i++) {
+    let mobTypeId = mobs[i % mobs.length];
+    let entity = overworld.spawnEntity(mobTypeId, targetLocation);
+    entity.addTag("mobparty." + mobTypeId);
+  }
+
+  let eqo: mc.EntityQueryOptions = {
+    tags: ["mobparty.skeleton"],
+  };
+
+  for (let entity of overworld.getEntities(eqo)) {
+    entity.kill();
+  }
+```
+##### ***testThatEntityIsFeatherItem.ts***
+```typescript
+  const overworld = mc.world.getDimension("overworld");
+
+  const items = overworld.getEntities({
+    location: targetLocation,
+    maxDistance: 20,
+  });
+
+  for (const item of items) {
+    const itemComp = item.getComponent("item") as mc.EntityItemComponent;
+
+    if (itemComp) {
+      if (itemComp.itemStack.typeId.endsWith("feather")) {
+        log("Success! Found a feather", 1);
+      }
     }
   }
-}
 ```
 
 ### **getEntitiesAtBlockLocation**
@@ -256,13 +315,20 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
 runCommand(commandString: string): CommandResult
 `
 
+Runs a command synchronously using the context of the broader dimenion.
+
 #### **Parameters**
 - **commandString**: *string*
+  
+  Command to run. Note that command strings should not start with slash.
 
-#### **Returns** [*CommandResult*](CommandResult.md)
+#### **Returns** [*CommandResult*](CommandResult.md) - Returns a command result with a count of successful values from the command.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
-> This function can throw errors.
+> Throws an exception if the command fails due to incorrect parameters or command syntax, or in erroneous cases for the command. Note that in many cases, if the command does not operate (e.g., a target selector found no matches), this method will not throw an exception.
 
 ### **runCommandAsync**
 `
@@ -279,18 +345,25 @@ Runs a particular command asynchronously from the context of the broader dimensi
 #### **Returns** Promise&lt;[*CommandResult*](CommandResult.md)&gt; - For commands that return data, returns a CommandResult with an indicator of command results.
 
 > [!WARNING]
-> This function can throw errors.
+> Throws an exception if the command fails due to incorrect parameters or command syntax, or in erroneous cases for the command. Note that in many cases, if the command does not operate (e.g., a target selector found no matches), this method will not throw an exception.
 
 ### **setWeather**
 `
 setWeather(weatherType: WeatherType): void
 `
 
+Sets the current weather within the dimesion
+
 #### **Parameters**
 - **weatherType**: [*WeatherType*](WeatherType.md)
+  
+  Set of weather to apply.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 ### **spawnEntity**
 `
@@ -312,43 +385,51 @@ Creates a new entity (e.g., a mob) at the specified location.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
-#### **Examples**
-##### *createOldHorse.ts*
-```javascript
-  // create a horse and trigger the 'ageable_grow_up' event, ensuring the horse is created as an adult
+#### Examples
+##### ***createOldHorse.ts***
+```typescript
+  const overworld = mc.world.getDimension("overworld");
+
+  log("Create a horse and triggering the 'ageable_grow_up' event, ensuring the horse is created as an adult");
   overworld.spawnEntity("minecraft:horse<minecraft:ageable_grow_up>", targetLocation);
 ```
-##### *quickFoxLazyDog.ts*
-```javascript
-const fox = overworld.spawnEntity("minecraft:fox", {
-  x: targetLocation.x + 1,
-  y: targetLocation.y + 2,
-  z: targetLocation.z + 3,
-});
-fox.addEffect(mc.MinecraftEffectTypes.speed, 10, 20);
-log("Created a fox.");
-const wolf = overworld.spawnEntity("minecraft:wolf", {
-  x: targetLocation.x + 4,
-  y: targetLocation.y + 2,
-  z: targetLocation.z + 3,
-});
-wolf.addEffect(mc.MinecraftEffectTypes.slowness, 10, 20);
-wolf.isSneaking = true;
-log("Created a sneaking wolf.", 1);
-```
-##### *trapTick.ts*
-```javascript
-  let ticks = 0;
-  mc.world.events.tick.subscribe((event: mc.TickEvent) => {
-    ticks++;
-    // Minecraft runs at 20 ticks per second
-    if (ticks % 1200 === 0) {
-      overworld.runCommand("say Another minute passes...");
-    }
+##### ***quickFoxLazyDog.ts***
+```typescript
+  const overworld = mc.world.getDimension("overworld");
+
+  const fox = overworld.spawnEntity("minecraft:fox", {
+    x: targetLocation.x + 1,
+    y: targetLocation.y + 2,
+    z: targetLocation.z + 3,
   });
+
+  fox.addEffect("speed", 10, {
+    amplifier: 2,
+  });
+  log("Created a fox.");
+
+  const wolf = overworld.spawnEntity("minecraft:wolf", {
+    x: targetLocation.x + 4,
+    y: targetLocation.y + 2,
+    z: targetLocation.z + 3,
+  });
+  wolf.addEffect("slowness", 10, {
+    amplifier: 2,
+  });
+  wolf.isSneaking = true;
+  log("Created a sneaking wolf.", 1);
+```
+##### ***triggerEvent.ts***
+```typescript
+  const creeper = overworld.spawnEntity("minecraft:creeper", targetLocation);
+
+  creeper.triggerEvent("minecraft:start_exploding_forced");
 ```
 
 ### **spawnItem**
@@ -369,27 +450,40 @@ Creates a new item stack as an entity at the specified location.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
-#### **Examples**
-##### *itemStacks.ts*
-```javascript
-const oneItemLoc: mc.Vector3 = { x: 3, y: 2, z: 1 };
-const fiveItemsLoc: mc.Vector3 = { x: 1, y: 2, z: 1 };
-const diamondPickaxeLoc: mc.Vector3 = { x: 2, y: 2, z: 4 };
-const oneEmerald = new mc.ItemStack(mc.MinecraftItemTypes.emerald, 1, 0);
-const onePickaxe = new mc.ItemStack(mc.MinecraftItemTypes.diamondPickaxe, 1, 0);
-const fiveEmeralds = new mc.ItemStack(mc.MinecraftItemTypes.emerald, 5, 0);
-overworld.spawnItem(oneEmerald, oneItemLoc);
-overworld.spawnItem(fiveEmeralds, fiveItemsLoc);
-overworld.spawnItem(onePickaxe, diamondPickaxeLoc);
+#### Examples
+##### ***itemStacks.ts***
+```typescript
+  const overworld = mc.world.getDimension("overworld");
+
+  const oneItemLoc = { x: targetLocation.x + targetLocation.y + 3, y: 2, z: targetLocation.z + 1 };
+  const fiveItemsLoc = { x: targetLocation.x + 1, y: targetLocation.y + 2, z: targetLocation.z + 1 };
+  const diamondPickaxeLoc = { x: targetLocation.x + 2, y: targetLocation.y + 2, z: targetLocation.z + 4 };
+
+  const oneEmerald = new mc.ItemStack(mc.MinecraftItemTypes.emerald, 1);
+  const onePickaxe = new mc.ItemStack(mc.MinecraftItemTypes.diamondPickaxe, 1);
+  const fiveEmeralds = new mc.ItemStack(mc.MinecraftItemTypes.emerald, 5);
+
+  log(`Spawning an emerald at (${oneItemLoc.x}, ${oneItemLoc.y}, ${oneItemLoc.z})`);
+  overworld.spawnItem(oneEmerald, oneItemLoc);
+
+  log(`Spawning five emeralds at (${fiveItemsLoc.x}, ${fiveItemsLoc.y}, ${fiveItemsLoc.z})`);
+  overworld.spawnItem(fiveEmeralds, fiveItemsLoc);
+
+  log(`Spawning a diamond pickaxe at (${diamondPickaxeLoc.x}, ${diamondPickaxeLoc.y}, ${diamondPickaxeLoc.z})`);
+  overworld.spawnItem(onePickaxe, diamondPickaxeLoc);
 ```
-##### *spawnItem.ts*
-```javascript
-  const featherItem = new mc.ItemStack(mc.MinecraftItemTypes.feather, 1, 0);
+##### ***spawnItem.ts***
+```typescript
+  const featherItem = new mc.ItemStack(mc.MinecraftItemTypes.feather, 1);
+
   overworld.spawnItem(featherItem, targetLocation);
-  log("New feather created!");
+  log(`New feather created at ${targetLocation.x}, ${targetLocation.y}, ${targetLocation.z}!`);
 ```
 
 ### **spawnParticle**
@@ -413,5 +507,25 @@ Creates a new particle emitter at a specified location in the world.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+
+#### Examples
+##### ***spawnParticle.ts***
+```typescript
+  for (let i = 0; i < 100; i++) {
+    const molang = new mc.MolangVariableMap();
+
+    molang.setColorRGB("variable.color", { red: Math.random(), green: Math.random(), blue: Math.random(), alpha: 1 });
+
+    let newLocation = {
+      x: targetLocation.x + Math.floor(Math.random() * 8) - 4,
+      y: targetLocation.y + Math.floor(Math.random() * 8) - 4,
+      z: targetLocation.z + Math.floor(Math.random() * 8) - 4,
+    };
+    overworld.spawnParticle("minecraft:colored_flame_particle", newLocation, molang);
+  }
+```

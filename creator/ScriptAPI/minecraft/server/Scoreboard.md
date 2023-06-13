@@ -21,10 +21,8 @@ Contains objectives and participants for the scoreboard.
 - [getObjectiveAtDisplaySlot](#getobjectiveatdisplayslot)
 - [getObjectives](#getobjectives)
 - [getParticipants](#getparticipants)
-- [getScore](#getscore)
 - [removeObjective](#removeobjective)
 - [setObjectiveAtDisplaySlot](#setobjectiveatdisplayslot)
-- [setScore](#setscore)
 
 ### **addObjective**
 `
@@ -39,8 +37,48 @@ Adds a new objective to the scoreboard.
 
 #### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md)
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+
+#### Examples
+##### ***updateScoreboard.ts***
+```typescript
+  const scoreboardObjectiveId = "scoreboard_demo_objective";
+  const scoreboardObjectiveDisplayName = "Demo Objective";
+
+  let players = mc.world.getPlayers();
+
+  // Ensure a new objective.
+  let objective = mc.world.scoreboard.getObjective(scoreboardObjectiveId);
+
+  if (!objective) {
+    objective = mc.world.scoreboard.addObjective(scoreboardObjectiveId, scoreboardObjectiveDisplayName);
+  }
+
+  // get the scoreboard identity for player 0
+  let player0Identity = players[0].scoreboardIdentity;
+
+  if (player0Identity === undefined) {
+    log("Could not get a scoreboard identity for player 0.");
+    return -1;
+  }
+
+  // initialize player score to 100;
+  objective.setScore(player0Identity, 100);
+
+  mc.world.scoreboard.setObjectiveAtDisplaySlot("sidebar", {
+    objective: objective,
+    sortOrder: mc.ObjectiveSortOrder.descending,
+  });
+
+  const playerScore = objective.getScore(player0Identity) ?? 0;
+
+  // score should now be 110.
+  objective.setScore(player0Identity, playerScore + 10);
+```
 
 ### **clearObjectiveAtDisplaySlot**
 `
@@ -53,6 +91,9 @@ Clears the objective that occupies a display slot.
 - **displaySlotId**: *string*
 
 #### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -113,26 +154,6 @@ Returns all defined scoreboard identities.
 > [!WARNING]
 > This function can throw errors.
 
-### **getScore**
-`
-getScore(objective: ScoreboardObjective, participant: ScoreboardIdentity): number
-`
-
-Returns a score given an objective and participant.
-
-#### **Parameters**
-- **objective**: [*ScoreboardObjective*](ScoreboardObjective.md)
-  
-  Objective to retrieve the score for.
-- **participant**: [*ScoreboardIdentity*](ScoreboardIdentity.md)
-  
-  Participant to retrieve the score for.
-
-#### **Returns** *number* - Score value.
-
-> [!WARNING]
-> This function can throw errors.
-
 ### **removeObjective**
 `
 removeObjective(objectiveId: ScoreboardObjective | string): boolean
@@ -144,6 +165,9 @@ Removes an objective from the scoreboard.
 - **objectiveId**: [*ScoreboardObjective*](ScoreboardObjective.md) | *string*
 
 #### **Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -161,26 +185,45 @@ Sets an objective into a display slot with specified additional display settings
 
 #### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md)
 
-> [!WARNING]
-> This function can throw errors.
-
-### **setScore**
-`
-setScore(objective: ScoreboardObjective, participant: ScoreboardIdentity, score: number): boolean
-`
-
-Sets the score given a participant and objective.
-
-#### **Parameters**
-- **objective**: [*ScoreboardObjective*](ScoreboardObjective.md)
-  
-  Objective to use for the scoreboard.
-- **participant**: [*ScoreboardIdentity*](ScoreboardIdentity.md)
-  
-  Participant to apply the scoreboard value to.
-- **score**: *number*
-
-#### **Returns** *boolean*
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
+
+#### Examples
+##### ***updateScoreboard.ts***
+```typescript
+  const scoreboardObjectiveId = "scoreboard_demo_objective";
+  const scoreboardObjectiveDisplayName = "Demo Objective";
+
+  let players = mc.world.getPlayers();
+
+  // Ensure a new objective.
+  let objective = mc.world.scoreboard.getObjective(scoreboardObjectiveId);
+
+  if (!objective) {
+    objective = mc.world.scoreboard.addObjective(scoreboardObjectiveId, scoreboardObjectiveDisplayName);
+  }
+
+  // get the scoreboard identity for player 0
+  let player0Identity = players[0].scoreboardIdentity;
+
+  if (player0Identity === undefined) {
+    log("Could not get a scoreboard identity for player 0.");
+    return -1;
+  }
+
+  // initialize player score to 100;
+  objective.setScore(player0Identity, 100);
+
+  mc.world.scoreboard.setObjectiveAtDisplaySlot("sidebar", {
+    objective: objective,
+    sortOrder: mc.ObjectiveSortOrder.descending,
+  });
+
+  const playerScore = objective.getScore(player0Identity) ?? 0;
+
+  // score should now be 110.
+  objective.setScore(player0Identity, playerScore + 10);
+```

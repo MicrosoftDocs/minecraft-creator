@@ -32,6 +32,9 @@ Adds an item and colors the water based on a dye item type.
 #### **Parameters**
 - **itemType**: [*ItemType*](ItemType.md)
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -57,6 +60,9 @@ Sets a custom base color used for the sign text.
 #### **Parameters**
 - **color**: [*Color*](Color.md)
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -64,7 +70,5 @@ Sets a custom base color used for the sign text.
 
 ### **componentId**
 `static read-only componentId = "minecraft:waterContainer";`
-
-Identifier of this component. Should always be minecraft:waterContainer.
 
 Type: *string*

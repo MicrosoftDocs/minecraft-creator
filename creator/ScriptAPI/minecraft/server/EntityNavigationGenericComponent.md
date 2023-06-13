@@ -22,6 +22,4 @@ Allows this entity to generate paths by walking, swimming, flying and/or climbin
 ### **componentId**
 `static read-only componentId = "minecraft:navigation.generic";`
 
-Identifier of this component. Should always be minecraft:navigation.generic.
-
 Type: *string*

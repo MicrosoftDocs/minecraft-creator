@@ -22,6 +22,4 @@ Allows this entity to generate paths that include vertical walls (for example, l
 ### **componentId**
 `static read-only componentId = "minecraft:navigation.climb";`
 
-Identifier of this component. Should always be minecraft:navigation.climb.
-
 Type: *string*

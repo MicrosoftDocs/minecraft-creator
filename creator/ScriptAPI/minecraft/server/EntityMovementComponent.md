@@ -22,6 +22,4 @@ Defines the general movement speed of this entity.
 ### **componentId**
 `static read-only componentId = "minecraft:movement";`
 
-Identifier of this component. Should always be minecraft:movement.
-
 Type: *string*

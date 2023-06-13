@@ -28,27 +28,25 @@ Type: [*ItemStack*](ItemStack.md)
 ### **componentId**
 `static read-only componentId = "minecraft:item";`
 
-Identifier of this component.
-
 Type: *string*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+#### Examples
+##### ***testThatEntityIsFeatherItem.ts***
+```typescript
+  const overworld = mc.world.getDimension("overworld");
 
-#### **Examples**
-##### *testThatEntityIsFeatherItem.ts*
-```javascript
-const query = {
-  type: "item",
-  location: targetLocation,
-};
-const items = overworld.getEntities(query);
-for (const item of items) {
-  const itemComp = item.getComponent("item") as any;
-  if (itemComp) {
-    if (itemComp.itemStack.id.endsWith("feather")) {
-      console.log("Success! Found a feather", 1);
+  const items = overworld.getEntities({
+    location: targetLocation,
+    maxDistance: 20,
+  });
+
+  for (const item of items) {
+    const itemComp = item.getComponent("item") as mc.EntityItemComponent;
+
+    if (itemComp) {
+      if (itemComp.itemStack.typeId.endsWith("feather")) {
+        log("Success! Found a feather", 1);
+      }
     }
   }
-}
 ```

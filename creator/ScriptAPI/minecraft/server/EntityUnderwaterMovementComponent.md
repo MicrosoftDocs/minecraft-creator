@@ -22,6 +22,4 @@ Defines the general movement speed underwater of this entity.
 ### **componentId**
 `static read-only componentId = "minecraft:underwater_movement";`
 
-Identifier of this component. Should always be minecraft:underwater_movement.
-
 Type: *string*

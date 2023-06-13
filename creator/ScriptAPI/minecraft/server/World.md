@@ -14,29 +14,21 @@ A class that wraps the state of a world - a set of dimensions and the environmen
 ## Properties
 
 ### **afterEvents**
-`read-only afterEvents: AfterEvents;`
+`read-only afterEvents: WorldAfterEvents;`
 
-Contains a set of events that are applicable to the entirety of the world.
+Contains a set of events that are applicable to the entirety of the world.  Event callbacks are called in a deferred manner. Event callbacks are executed in read-write mode.
 
-Event callbacks are called in a deferred manner.
-
-Event callbacks are executed in read-write mode.
-
-Type: [*AfterEvents*](AfterEvents.md)
+Type: [*WorldAfterEvents*](WorldAfterEvents.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **beforeEvents**
-`read-only beforeEvents: BeforeEvents;`
+`read-only beforeEvents: WorldBeforeEvents;`
 
-Contains a set of events that are applicable to the entirety of the world.
+Contains a set of events that are applicable to the entirety of the world. Event callbacks are called immediately. Event callbacks are executed in read-only mode.
 
-Event callbacks are called immediately.
-
-Event callbacks are executed in read-only mode.
-
-Type: [*BeforeEvents*](BeforeEvents.md)
+Type: [*WorldBeforeEvents*](WorldBeforeEvents.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -55,7 +47,7 @@ Type: [*Scoreboard*](Scoreboard.md)
 - [broadcastClientMessage](#broadcastclientmessage)
 - [getAbsoluteTime](#getabsolutetime)
 - [getAllPlayers](#getallplayers)
-- [getDefaultSpawnPosition](#getdefaultspawnposition)
+- [getDefaultSpawnLocation](#getdefaultspawnlocation)
 - [getDimension](#getdimension)
 - [getDynamicProperty](#getdynamicproperty)
 - [getEntity](#getentity)
@@ -66,7 +58,7 @@ Type: [*Scoreboard*](Scoreboard.md)
 - [queueMusic](#queuemusic)
 - [removeDynamicProperty](#removedynamicproperty)
 - [sendMessage](#sendmessage)
-- [setDefaultSpawn](#setdefaultspawn)
+- [setDefaultSpawnLocation](#setdefaultspawnlocation)
 - [setDynamicProperty](#setdynamicproperty)
 - [setTime](#settime)
 - [stopMusic](#stopmusic)
@@ -84,6 +76,9 @@ A method that is internal-only, used for broadcasting specific messages between 
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 ### **getAbsoluteTime**
 `
@@ -109,14 +104,12 @@ Returns an array of all active players within the world.
 > [!WARNING]
 > This function can throw errors.
 
-### **getDefaultSpawnPosition**
+### **getDefaultSpawnLocation**
 `
-getDefaultSpawnPosition(): Vector3
+getDefaultSpawnLocation(): Vector3
 `
 
-Returns the default spawn position within the world where players are spawned if they don't have a specific spawn position set.
-
-#### **Returns** [*Vector3*](Vector3.md) - Returns the default spawn position.
+#### **Returns** [*Vector3*](Vector3.md)
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -153,6 +146,60 @@ Returns a property value.
 
 > [!WARNING]
 > This function can throw errors.
+
+#### Examples
+##### ***incrementProperty.ts***
+```typescript
+  let number = mc.world.getDynamicProperty("samplelibrary:number");
+
+  log("Current value is: " + number);
+
+  if (number === undefined) {
+    number = 0;
+  }
+
+  if (typeof number !== "number") {
+    log("Number is of an unexpected type.");
+    return -1;
+  }
+
+  mc.world.setDynamicProperty("samplelibrary:number", number + 1);
+```
+##### ***incrementPropertyInJsonBlob.ts***
+```typescript
+  let paintStr = mc.world.getDynamicProperty("samplelibrary:longerjson");
+  let paint: { color: string; intensity: number } | undefined = undefined;
+
+  log("Current value is: " + paintStr);
+
+  if (paintStr === undefined) {
+    paint = {
+      color: "purple",
+      intensity: 0,
+    };
+  } else {
+    if (typeof paintStr !== "string") {
+      log("Paint is of an unexpected type.");
+      return -1;
+    }
+
+    try {
+      paint = JSON.parse(paintStr);
+    } catch (e) {
+      log("Error parsing serialized struct.");
+      return -1;
+    }
+  }
+
+  if (!paint) {
+    log("Error parsing serialized struct.");
+    return -1;
+  }
+
+  paint.intensity++;
+  paintStr = JSON.stringify(paint); // be very careful to ensure your serialized JSON str cannot exceed limits
+  mc.world.setDynamicProperty("samplelibrary:longerjson", paintStr);
+```
 
 ### **getEntity**
 `
@@ -214,8 +261,37 @@ Plays a particular music track for all players.
 - **trackID**: *string*
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+
+#### Examples
+##### ***playMusicAndSound.ts***
+```typescript
+  let players = mc.world.getPlayers();
+
+  const musicOptions: mc.MusicOptions = {
+    fade: 0.5,
+    loop: true,
+    volume: 1.0,
+  };
+  mc.world.playMusic("music.menu", musicOptions);
+
+  const worldSoundOptions: mc.WorldSoundOptions = {
+    pitch: 0.5,
+    volume: 4.0,
+  };
+  mc.world.playSound("ambient.weather.thunder", targetLocation, worldSoundOptions);
+
+  const playerSoundOptions: mc.PlayerSoundOptions = {
+    pitch: 1.0,
+    volume: 1.0,
+  };
+
+  players[0].playSound("bucket.fill_water", playerSoundOptions);
+```
 
 ### **playSound**
 `
@@ -229,8 +305,46 @@ Plays a sound for all players.
 - **location**: [*Vector3*](Vector3.md)
 - **soundOptions**?: [*WorldSoundOptions*](WorldSoundOptions.md) = `null`
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
-> This function can throw errors.
+> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,An error will be thrown if pitch is less than 0.01.,An error will be thrown if volume is less than 0.0.
+
+> [!WARNING]
+> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,An error will be thrown if pitch is less than 0.01.,An error will be thrown if volume is less than 0.0.
+
+> [!WARNING]
+> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,An error will be thrown if pitch is less than 0.01.,An error will be thrown if volume is less than 0.0.
+
+> [!WARNING]
+> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,An error will be thrown if pitch is less than 0.01.,An error will be thrown if volume is less than 0.0.
+
+#### Examples
+##### ***playMusicAndSound.ts***
+```typescript
+  let players = mc.world.getPlayers();
+
+  const musicOptions: mc.MusicOptions = {
+    fade: 0.5,
+    loop: true,
+    volume: 1.0,
+  };
+  mc.world.playMusic("music.menu", musicOptions);
+
+  const worldSoundOptions: mc.WorldSoundOptions = {
+    pitch: 0.5,
+    volume: 4.0,
+  };
+  mc.world.playSound("ambient.weather.thunder", targetLocation, worldSoundOptions);
+
+  const playerSoundOptions: mc.PlayerSoundOptions = {
+    pitch: 1.0,
+    volume: 1.0,
+  };
+
+  players[0].playSound("bucket.fill_water", playerSoundOptions);
+```
 
 ### **queueMusic**
 `
@@ -243,8 +357,17 @@ Queues an additional music track for players. If a track is not playing, a music
 - **trackID**: *string*
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
-> This function can throw errors.
+> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,
+
+> [!WARNING]
+> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,
+
+> [!WARNING]
+> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,
 
 ### **removeDynamicProperty**
 `
@@ -260,6 +383,9 @@ Removes a specified property.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -279,9 +405,9 @@ Sends a message to all players.
 > [!WARNING]
 > This method can throw if the provided [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) is in an invalid format. For example, if an empty `name` string is provided to `score`.
 
-#### **Examples**
-##### *nestedTranslation.ts*
-```javascript
+#### Examples
+##### ***nestedTranslation.ts***
+```typescript
 // Displays "Apple or Coal"
 let rawMessage = {
   translate: "accessibility.list.or.two",
@@ -289,38 +415,41 @@ let rawMessage = {
 };
 world.sendMessage(rawMessage);
 ```
-##### *scoreWildcard.ts*
-```javascript
+##### ***scoreWildcard.ts***
+```typescript
 // Displays the player's score for objective "obj". Each player will see their own score.
 const rawMessage = { score: { name: "*", objective: "obj" } };
 world.sendMessage(rawMessage);
 ```
-##### *simpleString.ts*
-```javascript
+##### ***simpleString.ts***
+```typescript
 // Displays "Hello, world!"
 world.sendMessage("Hello, world!");
 ```
-##### *translation.ts*
-```javascript
+##### ***translation.ts***
+```typescript
 // Displays "First or Second"
 const rawMessage = { translate: "accessibility.list.or.two", with: ["First", "Second"] };
 world.sendMessage(rawMessage);
 ```
 
-### **setDefaultSpawn**
+### **setDefaultSpawnLocation**
 `
-setDefaultSpawn(spawnPosition: Vector3): void
+setDefaultSpawnLocation(spawnLocation: Vector3): void
 `
 
-Sets the default spawn location for players within the world. Note that players can override this with their own spawn position. Note also that the default spawn position must be in the overworld dimension.
+Sets a default spawn location for all players.
 
 #### **Parameters**
-- **spawnPosition**: [*Vector3*](Vector3.md)
+- **spawnLocation**: [*Vector3*](Vector3.md)
   
-  Location within the overworld where a player will spawn.
+  Location of the spawn point. Note that this is assumed to be within the overworld dimension.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -341,8 +470,65 @@ Sets a specified property to a value.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+
+#### Examples
+##### ***incrementProperty.ts***
+```typescript
+  let number = mc.world.getDynamicProperty("samplelibrary:number");
+
+  log("Current value is: " + number);
+
+  if (number === undefined) {
+    number = 0;
+  }
+
+  if (typeof number !== "number") {
+    log("Number is of an unexpected type.");
+    return -1;
+  }
+
+  mc.world.setDynamicProperty("samplelibrary:number", number + 1);
+```
+##### ***incrementPropertyInJsonBlob.ts***
+```typescript
+  let paintStr = mc.world.getDynamicProperty("samplelibrary:longerjson");
+  let paint: { color: string; intensity: number } | undefined = undefined;
+
+  log("Current value is: " + paintStr);
+
+  if (paintStr === undefined) {
+    paint = {
+      color: "purple",
+      intensity: 0,
+    };
+  } else {
+    if (typeof paintStr !== "string") {
+      log("Paint is of an unexpected type.");
+      return -1;
+    }
+
+    try {
+      paint = JSON.parse(paintStr);
+    } catch (e) {
+      log("Error parsing serialized struct.");
+      return -1;
+    }
+  }
+
+  if (!paint) {
+    log("Error parsing serialized struct.");
+    return -1;
+  }
+
+  paint.intensity++;
+  paintStr = JSON.stringify(paint); // be very careful to ensure your serialized JSON str cannot exceed limits
+  mc.world.setDynamicProperty("samplelibrary:longerjson", paintStr);
+```
 
 ### **setTime**
 `
@@ -357,9 +543,15 @@ Returns the current game time of the day.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **stopMusic**
 `
 stopMusic(): void
 `
 
 Stops any music tracks from playing.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.

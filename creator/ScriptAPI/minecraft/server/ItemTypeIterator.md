@@ -28,9 +28,15 @@ An iterator over a set of available item types.
 
 #### **Returns** Iterator&lt;[*ItemType*](ItemType.md)&gt;
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **next**
 `
 next(): IteratorResult<ItemType>
 `
 
 #### **Returns** IteratorResult&lt;[*ItemType*](ItemType.md)&gt;
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.

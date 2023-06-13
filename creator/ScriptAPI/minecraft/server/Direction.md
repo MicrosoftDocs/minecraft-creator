@@ -12,16 +12,30 @@ description: Contents of the .Direction enumeration.
 > [!CAUTION]
 > This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+A general purpose relative direction enumeration.
+
 ## Constants
 ### **down**
 `down = "down"`
+
+Returns the block beneath (y - 1) of this item.
 ### **east**
 `east = "east"`
+
+Returns the block to the east (x + 1) of this item.
 ### **north**
 `north = "north"`
+
+Returns the block to the east (z + 1) of this item.
 ### **south**
 `south = "south"`
+
+Returns the block to the south (z - 1) of this item.
 ### **up**
 `up = "up"`
+
+Returns the block above (y + 1) of this item.
 ### **west**
 `west = "west"`
+
+Returns the block to the west (x - 1) of this item.

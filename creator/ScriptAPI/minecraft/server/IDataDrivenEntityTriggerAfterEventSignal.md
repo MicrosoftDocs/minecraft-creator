@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server.IDataDrivenEntityTriggerAfterEven
 
 ## Classes that extend IDataDrivenEntityTriggerAfterEventSignal
 - [*DataDrivenEntityTriggerAfterEventSignal*](DataDrivenEntityTriggerAfterEventSignal.md)
+- [*DataDrivenEntityTriggerAfterEventSignal*](DataDrivenEntityTriggerAfterEventSignal.md)
 
 Provides an adaptable interface for callers to subscribe to an event that fires when an entities' definition is triggered to change.
 
@@ -32,6 +33,9 @@ subscribe(callback: (arg: DataDrivenEntityTriggerAfterEvent) => void, options?: 
 
 #### **Returns** (arg: [*DataDrivenEntityTriggerAfterEvent*](DataDrivenEntityTriggerAfterEvent.md)) => *void*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: DataDrivenEntityTriggerAfterEvent) => void): void
@@ -39,6 +43,9 @@ unsubscribe(callback: (arg: DataDrivenEntityTriggerAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*DataDrivenEntityTriggerAfterEvent*](DataDrivenEntityTriggerAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

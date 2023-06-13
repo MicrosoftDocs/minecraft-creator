@@ -53,11 +53,14 @@ Command name enumeration
 #### Values
 - `tag`
 Manages tags stored in entities.
+- `camera`
+- `clear`
+Clears items from player inventory.
+- `time`
+Changes or queries the world's game time.
 - `stop`
 - `camerashake`
 Applies shaking to the players' camera with a specified intensity and duration.
-- `clear`
-Clears items from player inventory.
 - `clearspawnpoint`
 Removes the spawn point for a player.
 - `clone`
@@ -178,8 +181,6 @@ Tests whether a certain block is in a specific location.
 Tests whether the blocks in two regions match.
 - `testfor`
 Counts entities (players, mobs, items, etc.) matching specified conditions.
-- `time`
-Changes or queries the world's game time.
 - `title`
 Controls screen titles.
 - `titleraw`
@@ -194,6 +195,9 @@ Attempts to connect to the websocket server on the provided URL.
 Attempts to connect to the websocket server on the provided URL.
 - `xp`
 Adds or removes player experience.
+- `recipe`
+- `volumearea`
+- `scriptevent`
 - `project`
 - `simulationtype`
 - `agent`

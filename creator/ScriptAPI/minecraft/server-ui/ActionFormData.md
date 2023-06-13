@@ -39,6 +39,9 @@ Method that sets the body text for the modal form.
 
 #### **Returns** [*ActionFormData*](ActionFormData.md)
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **button**
 `
 button(text: minecraftserver.RawMessage | string, iconPath?: string): ActionFormData
@@ -51,6 +54,9 @@ Adds a button to this form with an icon from a resource pack.
 - **iconPath**?: *string* = `null`
 
 #### **Returns** [*ActionFormData*](ActionFormData.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 ### **show**
 `
@@ -65,6 +71,9 @@ Creates and shows this modal popup form. Returns asynchronously when the player 
   Player to show this dialog to.
 
 #### **Returns** Promise&lt;[*ActionFormResponse*](ActionFormResponse.md)&gt;
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -81,33 +90,39 @@ This builder method sets the title for the modal dialog.
 
 #### **Returns** [*ActionFormData*](ActionFormData.md)
 
-#### **Examples**
-##### *showActionForm.ts*
-```javascript
-const players = mc.world.getPlayers();
-const playerList = Array.from(players);
-if (playerList.length >= 1) {
-  const form = new mcui.ActionFormData()
-    .title("Test Title")
-    .body("Body text here!")
-    .button("btn 1")
-    .button("btn 2")
-    .button("btn 3")
-    .button("btn 4")
-    .button("btn 5");
-  const result = await form.show(playerList[0]);
-  if (result.canceled) {
-    log("Player exited out of the dialog.");
-  } else {
-    log("Your result was: " + result.selection);
-  }
-}
-```
-##### *showFavoriteMonth.ts*
-```javascript
-  const players = mc.world.getPlayers();
-  const playerList = Array.from(players);
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+#### Examples
+##### ***showActionForm.ts***
+```typescript
+  const playerList = mc.world.getPlayers();
+
   if (playerList.length >= 1) {
+    const form = new mcui.ActionFormData()
+      .title("Test Title")
+      .body("Body text here!")
+      .button("btn 1")
+      .button("btn 2")
+      .button("btn 3")
+      .button("btn 4")
+      .button("btn 5");
+
+    const result = await form.show(playerList[0]);
+
+    if (result.canceled) {
+      log("Player exited out of the dialog. Note that if the chat window is up, dialogs are automatically canceled.");
+      return -1;
+    } else {
+      log("Your result was: " + result.selection);
+    }
+  }
+```
+##### ***showFavoriteMonth.ts***
+```typescript
+  const players = mc.world.getPlayers();
+
+  if (players.length >= 1) {
     const form = new mcui.ActionFormData()
       .title("Months")
       .body("Choose your favorite month!")
@@ -116,9 +131,11 @@ if (playerList.length >= 1) {
       .button("March")
       .button("April")
       .button("May");
-    form.show(playerList[0]).then((response: mcui.ActionFormResponse) => {
+
+    form.show(players[0]).then((response: mcui.ActionFormResponse) => {
       if (response.selection === 3) {
         log("I like April too!");
+        return -1;
       }
     });
   }
