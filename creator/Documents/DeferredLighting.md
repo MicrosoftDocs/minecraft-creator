@@ -104,7 +104,8 @@ The "directional_lights" object is where you can configure properties of the sun
 
 The celestial bodies that are the sun and moon are assumed to be opposite of each other in the sky at all times. When both celestial bodies are visible in the sky, both will contribute opposing light to the scene.
 
-Illuminance values that correspond to “real world" values are suitable for use in our pipeline. For instance, the sun at noon on a clear day measures upwards of 100,000 lux, while the moon only registers < 1 lux. Tone mapping and auto-exposure will appropriately rebalance drastic differences in light intensities.
+Illuminance values that correspond to “real world” values are suitable for use in our pipeline. For instance, the sun at noon on a clear day measures upwards of 100,000 lux, while the moon only registers < 1 lux.  Tone mapping and auto-exposure will appropriately rebalance drastic differences in light intensities.
+
 Color values can either be described as an array of 3 or 4 numerical values from the range 0-255 or as a 6 or 8 hexadecimal digit string.
 Any of these values can be individually key framed (see Key Frame Syntax section for more details).
 
@@ -344,14 +345,14 @@ To get you going, we provide the following example JSON files that will give you
     } 
   }, 
   "rayleigh_strength": { 
-    "0.0": 8.208999633789062, 
-    "0.25": 1.299998521804810, 
-    "0.3": 1.299998521804810, 
-    "0.3037499785423279": 1.299998521804810, 
-    "0.3249999880790710": 1.299998521804810, 
-    "0.6": 4.0, 
-    "0.7074999809265137": 1.586028337478638, 
-    "0.75": 1.0 
+    "0.0": 1.026124954, 
+    "0.25": 0.1624998152, 
+    "0.3": 0.1624998152, 
+    "0.3037499785423279": 0.1624998152, 
+    "0.3249999880790710": 0.1624998152, 
+    "0.6": 0.5, 
+    "0.7074999809265137": 0.1982535422, 
+    "0.75": 0.125
   }, 
   "sun_mie_strength": { 
     "0.0": 1.0, 
