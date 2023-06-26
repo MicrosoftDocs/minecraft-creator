@@ -9,7 +9,11 @@ description: Description and usage of the help command
 # `/help` Command
 Running `/help` in the chat by itself will list every command you can run. However, since there are so many, they have been divided up into several pages, where you are shown only one page at a time. Supplying a page number will change which page of commands to show.
 
+
+
 Whenever you want to know the usage and all of the syntaxes of a command, you can use /help followed by the name of the command. This can be helpful if you want an overview of the command.
+
+
 
 See more in the [Popular Commands documentation](https://learn.microsoft.com/minecraft/creator/documents/commandspopularcommands#help).
 
@@ -54,6 +58,7 @@ Command name enumeration
 - `tag`
 Manages tags stored in entities.
 - `camera`
+Experimental camera command.
 - `clear`
 Clears items from player inventory.
 - `time`
@@ -147,6 +152,8 @@ Add, remove, or list ticking areas.
 Schedules an action to be executed once an area is loaded, or after a certain amount of time.
 - `scoreboard`
 Tracks and displays scores for various objectives.
+- `scriptevent`
+Sends a message and additional content that can trigger an event in a backing script implementation.
 - `setblock`
 Changes a block to another block.
 - `setmaxplayers`
@@ -160,7 +167,7 @@ Teleports entities to random locations.
 - `stopsound`
 Stops a sound.
 - `save`
-Save
+Configures the world to go into a save-supporting mode, on dedicated server.
 - `summon`
 Summons an entity.
 - `teleport`
@@ -197,14 +204,17 @@ Attempts to connect to the websocket server on the provided URL.
 Adds or removes player experience.
 - `recipe`
 - `volumearea`
-- `scriptevent`
 - `project`
+A particular command used for managing project settings when in Editor mode.
 - `simulationtype`
 - `agent`
+A particular command used for configuring an Agent in an educational context.
 - `codebuilder_actorinfo`
 - `enchant`
 Adds an enchantment to a player's selected item.
 - `allowlist`
 - `whitelist`
 - `changesetting`
+- `reloadconfig`
 - `script`
+Contains additional tools for managing the runtime of script, including debugger and profiler options.

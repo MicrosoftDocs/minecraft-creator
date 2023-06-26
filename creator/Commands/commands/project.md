@@ -7,7 +7,7 @@ title: project Command
 description: Description and usage of the project command
 ---
 # `/project` Command
-Manipulate the currently loaded project
+This command contains additional tools for managing an Editor project. This command is available in Editor mode only.
 
 <table>
   <tr>

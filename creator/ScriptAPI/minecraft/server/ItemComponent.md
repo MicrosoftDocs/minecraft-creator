@@ -7,8 +7,7 @@ title: minecraft/server.ItemComponent Class
 description: Contents of the @minecraft/server.ItemComponent class.
 ---
 # ItemComponent Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 ## Extends
 - [*Component*](Component.md)
 
@@ -17,22 +16,5 @@ description: Contents of the @minecraft/server.ItemComponent class.
 - [*ItemDurabilityComponent*](ItemDurabilityComponent.md)
 - [*ItemEnchantsComponent*](ItemEnchantsComponent.md)
 - [*ItemFoodComponent*](ItemFoodComponent.md)
-- [*ItemCooldownComponent*](ItemCooldownComponent.md)
-- [*ItemDurabilityComponent*](ItemDurabilityComponent.md)
-- [*ItemEnchantsComponent*](ItemEnchantsComponent.md)
-- [*ItemFoodComponent*](ItemFoodComponent.md)
 
 Base class for item components.
-
-## Methods
-- [isValid](#isvalid)
-
-### **isValid**
-`
-isValid(): boolean
-`
-
-#### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.

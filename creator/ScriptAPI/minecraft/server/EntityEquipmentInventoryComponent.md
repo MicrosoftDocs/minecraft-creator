@@ -7,8 +7,7 @@ title: minecraft/server.EntityEquipmentInventoryComponent Class
 description: Contents of the @minecraft/server.EntityEquipmentInventoryComponent class.
 ---
 # EntityEquipmentInventoryComponent Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
@@ -64,7 +63,7 @@ Gets the ContainerSlot corresponding to the given EquipmentSlot.
 
 ### **setEquipment**
 `
-setEquipment(equipmentSlot: EquipmentSlot, itemStack?: ItemStack): void
+setEquipment(equipmentSlot: EquipmentSlot, itemStack?: ItemStack): boolean
 `
 
 Replaces the item in the given EquipmentSlot.
@@ -76,6 +75,8 @@ Replaces the item in the given EquipmentSlot.
 - **itemStack**?: [*ItemStack*](ItemStack.md) = `null`
   
   The item to equip. If undefined, clears the slot.
+
+#### **Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

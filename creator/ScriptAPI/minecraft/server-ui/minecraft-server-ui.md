@@ -7,8 +7,7 @@ title: minecraft/server-ui Module
 description: Contents of the @minecraft/server-ui module
 ---
 # @minecraft/server-ui Module
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 The `@minecraft/server-ui` module contains types for expressing simple dialog-based user experiences.
 
 
@@ -49,7 +48,6 @@ form.show(players[0]).then((response) => {
 ## Available Versions
 - `1.2.0-beta`
 - `1.1.0`
-- `1.1.0-beta`
 - `1.0.0`
 - `0.1.0`
 
@@ -142,6 +140,11 @@ form.show(players[0]).then((response) => {
   - Changed argument `titleText` type from [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string* to [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 - Changed function *[toggle](ModalFormData.md#toggle)*
   - Changed argument `label` type from [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string* to [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
+#### Changed enum FormCancelationReason
+- Removed value userBusy
+- Added value UserBusy
+- Removed value userClosed
+- Added value UserClosed
 ## 1.1.0-beta
 #### Changed *[ActionFormData](ActionFormData.md)*
 - Changed function *[body](ActionFormData.md#body)*

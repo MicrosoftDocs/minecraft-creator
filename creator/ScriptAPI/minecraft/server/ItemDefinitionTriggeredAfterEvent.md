@@ -7,13 +7,11 @@ title: minecraft/server.ItemDefinitionTriggeredAfterEvent Class
 description: Contents of the @minecraft/server.ItemDefinitionTriggeredAfterEvent class.
 ---
 # ItemDefinitionTriggeredAfterEvent Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Classes that extend ItemDefinitionTriggeredAfterEvent
-- [*ItemDefinitionTriggeredBeforeEvent*](ItemDefinitionTriggeredBeforeEvent.md)
 - [*ItemDefinitionTriggeredBeforeEvent*](ItemDefinitionTriggeredBeforeEvent.md)
 
 Contains information related to a custom item having a data definition change being triggered.
@@ -29,6 +27,8 @@ Type: *string*
 
 ### **itemStack**
 `itemStack: ItemStack;`
+
+Related item stack that the definitional change has been triggered upon.
 
 Type: [*ItemStack*](ItemStack.md)
 

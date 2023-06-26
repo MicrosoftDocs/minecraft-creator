@@ -7,8 +7,7 @@ title: minecraft/server-gametest.RegistrationBuilder Class
 description: Contents of the @minecraft/server-gametest.RegistrationBuilder class.
 ---
 # RegistrationBuilder Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 A utility class to set GameTest parameters for a test. Methods can be chained together to set multiple properties.
 
 ## Methods

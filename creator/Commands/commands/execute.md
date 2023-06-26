@@ -24,63 +24,83 @@ Executes a command on behalf of one or more entities. See more information in th
 ### `/execute as <origin: target> <chainedCommand: executechainedoption_0>`
 
 ### `/execute at <origin: target> <chainedCommand: executechainedoption_0>`
-Execute a given command from a `position` and specified `origin` target.
 
-### Execute from position and origin, check for block, block id
-Execute a given command from a `position` and specified `origin` target, while checking for a specific `block` and block id.
+### As another entity
+`/execute in <dimension: Dimension> <chainedCommand: executechainedoption_0>`
 
-### Execute command in dimension
+Executes a command using the context of an entity returned by the chosen selector.
+
+### At the position of an entity
+`/execute positioned <position: x y z> <chainedCommand: executechainedoption_0>`
+
+Executes a command from the position of an entity returned via the selection.
+
+### In dimension
+`/execute positioned as <origin: target> <chainedCommand: executechainedoption_0>`
 
 Executes a command within a particular dimension.
 
-### Run a command with a custom position
-`/execute positioned as <origin: target> <chainedCommand: executechainedoption_0>`
-Runs a command with an adjusted position
-
-### Execute command positioned as
-`/execute positioned <position: x y z> <chainedCommand: executechainedoption_0>`
-Runs a command with a position relative to a selection
-
-### Execute with alternate rotation
+### Positioned
 `/execute rotated <yaw: rotation> <pitch: rotation> <chainedCommand: executechainedoption_0>`
-Runs a command with an alternate rotation
 
-### Execute a command with a rotation based on selection
+Execute a given command from a `position` and specified `origin` target, while checking for a specific `block` and block id.
+
+### Positioned as a selected entity
 `/execute rotated as <origin: target> <chainedCommand: executechainedoption_0>`
 
-### Runs a command with an alternate facing
+Execute a given command from a `position` and specified `origin` target.
+
+### Rotated with a specific yaw/pitch
 `/execute facing <position: x y z> <chainedCommand: executechainedoption_0>`
-Runs a command with an alternate facing
 
-### Run a command with a facing relative to a selection
+Runs a command with the specified rotation as yaw and pitch.
+
+### Rotated as a another entity
 `/execute facing entity <origin: target> <anchor: ActorLocation> <chainedCommand: executechainedoption_0>`
-Runs a command with a facing based on a selection
 
-### Runs a command with coordinates aligned
-`/execute <subcommand: Option_If_Unless> block <position: x y z> <block: Block> [chainedCommand: executechainedoption_0]`
-Runs a command with coordinates aligned (floored) to a grid
+Runs a command using the rotation from another entity as specified by the selector
 
-### Runs a command with an alternate anchoring
+### Facing a position
+`/execute align <axes: string> <chainedCommand: executechainedoption_0>`
+
+Runs a command with an entity facing a particular direction.
+
+### Facing a selected entity
 `/execute anchored <anchored: ActorLocation> <chainedCommand: executechainedoption_0>`
-Runs a command with an alternate anchoring on an entity (for example, feet or eyes.)
 
-### Runs a command if a block matches a condition
+Runs a command with a contextual facing to another entity that is returned by a selection.
+
+### Align
+`/execute <subcommand: Option_If_Unless> block <position: x y z> <block: Block> [chainedCommand: executechainedoption_0]`
+
+Runs a command where positions are aligned (floored) to block axes
+
+### Anchored
 `/execute <subcommand: Option_If_Unless> block <position: x y z> <block: Block> <blockStates: block properties> [chainedCommand: executechainedoption_0]`
-Runs a command if a particular block matches a set of states
 
-### Runs a command if a set of blocks matches a destination
+Runs a command with a position anchored to a specific location - e.g., the toes or eyes - for an entity
+
+### If/unless block matches type
 `/execute <subcommand: Option_If_Unless> blocks <begin: x y z> <end: x y z> <destination: x y z> <scan mode: BlocksScanMode> [chainedCommand: executechainedoption_0]`
 
-Runs a command if a set of blocks matches a destination based on a scan
+Runs a command if or unless there is a block at a position of a particular type
 
-### Runs a command if an entity is selected
+### If/unless block has block states
 `/execute <subcommand: Option_If_Unless> entity <target: target> [chainedCommand: executechainedoption_0]`
 
-Runs a command if the selector successfully matches an entity
+Runs a command with if or unless there is a block with a set of block states that matches the specified set.
 
 ### `/execute <subcommand: Option_If_Unless> score <target: target> <objective: ScoreboardObjectives> <operation: compareoperator> <source: target> <objective: ScoreboardObjectives> [chainedCommand: executechainedoption_0]`
 
-### `/execute run <command: command>`
+### If unless a set of blocks matches scan criteria
+`/execute <subcommand: Option_If_Unless> score <target: target> <objective: ScoreboardObjectives> matches <range: fullintegerrange> [chainedCommand: executechainedoption_0]`
+
+Runs a command if a particular set of blocks in a volume matches the scan mode criteria
+
+### If/unless an entity matches
+`/execute run <command: command>`
+
+Runs a command if (or unless) a selector returns at least one matching entity.
 
 ## Arguments
 - `anchor`: ActorLocation
@@ -101,6 +121,7 @@ A `string` of the command to run. Must be a valid command.
 - `origin`: target
 The target of the command to execute. Must be a player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors).
 - `pitch`: rotation
+Up-and-down rotation of the command
 - `position: x y z`: position
 A `vector` of where to run the command from.
 - `range`: fullintegerrange
@@ -109,6 +130,7 @@ A `vector` of where to run the command from.
 - `subcommand`: Option_If_Unless
 - `target`: target
 - `yaw`: rotation
+Left-to-right rotation context of the command
 
 ## Enums
 ### `ActorLocation`
