@@ -18,17 +18,17 @@ How do you get started? Well, that depends on what you already know. There are a
 >- You have used Editor to edit a world. If not, you should start with the [Editor Tutorial](EditorTutorial.md).
 >- You would like to change the functionality of one or more of the Editor tools or at least know more about how to do it.
 
-The Minecraft Bedrock Editor is a framework that is built into certain platform versions of Minecraft Bedrock Edition that is designed to allow creators to use more complex tools than the ones found in simple gameplay to build, edit, and test worlds. In fact, the Editor framework lets creators build their own tools to suit their own style of creation. 
+The Minecraft Bedrock Editor is a framework that is built into certain platform versions of Minecraft Bedrock Edition that is designed to allow creators to use more complex tools than the ones found in simple gameplay to build, edit, and test worlds. In fact, the Editor framework lets creators build their own tools to suit their own style of creation.
 
-An Editor Extension is the collective name for a set of Resource and Behavior Packs that contain script and binary assets that get loaded into Editor at start up time. 
+An Editor Extension is the collective name for a set of Resource and Behavior Packs that contain script and binary assets that get loaded into Editor at start up time.
 
 The Extensions are written in TypeScript and are compiled into JavaScript for loading into the game. The compiler tools and various libraries required to do this are supplied in the [Editor Extension Starter Kit](https://github.com/Mojang/minecraft-editor).
 
-Minecraft has a [Scripting API](https://learn.microsoft.com/en-us/minecraft/creator/scriptapi/) that can be used to do some pretty amazing stuff. Editor has an API, too, and these two APIs are connected. Minecraft uses existing server-side scripting APIs (like SetBlock, Spawn, Camera, and slash commands) and enhances them with Editor-Specific APIs.
+Minecraft has a [Scripting API](../ScriptAPI/) that can be used to do some pretty amazing stuff. Editor has an API, too, and these two APIs are connected. Minecraft uses existing server-side scripting APIs (like SetBlock, Spawn, Camera, and slash commands) and enhances them with Editor-Specific APIs. See [server-editor](../ScriptAPI/minecraft/server-editor/minecraft-server-editor) for a full reference of editor-specific APIs.
 
-If you've never worked with an API before, it's worth taking the time to learn about them. It involves scripting (writing small amounts of code), so if you're new to that, you can find some excellent free resources on the Web to learn JavaScript and TypeScript. 
+If you've never worked with an API before, it's worth taking the time to learn about them. It involves scripting (writing small amounts of code), so if you're new to that, you can find some excellent free resources on the Web to learn JavaScript and TypeScript.
 
-Then, you could go through the [Scripting tutorial](https://learn.microsoft.com/minecraft/creator/documents/scriptinggettingstarted).
+Then, you could go through the [Scripting tutorial](./ScriptingGettingStarted.md).
 
 After you get all the prerequisites out of the way, you could take a look at some examples of Extensions - there is a [starter kit and GitHub repo](github.com/mojang/minecraft-editor).
 

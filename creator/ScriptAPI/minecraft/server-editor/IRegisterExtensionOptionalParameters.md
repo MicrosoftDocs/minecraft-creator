@@ -1,0 +1,33 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.prod: gaming
+title: minecraft/server-editor.IRegisterExtensionOptionalParameters Interface
+description: Contents of the @minecraft/server-editor.IRegisterExtensionOptionalParameters class.
+---
+# IRegisterExtensionOptionalParameters Interface
+
+Optional parameter definition for RegisterEditorExtension function Allows the extension registrar to specify optional textual description and notes which would be visible through the extension manager
+
+## Properties
+
+### **description**
+`description: string;`
+
+Description of the extension.
+
+Type: *string*
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
+
+### **notes**
+`notes: string;`
+
+Additional notes and description of the extension.
+
+Type: *string*
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.

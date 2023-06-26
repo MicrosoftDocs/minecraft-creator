@@ -28,4 +28,6 @@ Passes a message with the specified ID and payload.
 
 ## Arguments
 - `message`: message
+Data component of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world.
 - `messageId`: string
+Identifier of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world.

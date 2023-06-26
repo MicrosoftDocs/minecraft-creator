@@ -7,22 +7,21 @@ title: minecraft/server Module
 description: Contents of the @minecraft/server module
 ---
 # @minecraft/server Module
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 Contains many types related to manipulating a Minecraft world, including entities, blocks, dimensions, and more.
 
 ## Manifest Details
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "1.3.0"
+    "version": "1.4.0"
 }
 ```
 
 ## Available Versions
-- `1.4.0-beta`
+- `1.5.0-beta`
+- `1.4.0`
 - `1.3.0`
-- `1.3.0-beta`
 - `1.2.0`
 - `1.1.0`
 - `0.1.0`
@@ -126,8 +125,10 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntityHealthChangedAfterEvent](EntityHealthChangedAfterEvent.md)
 - [EntityHealthChangedAfterEventSignal](EntityHealthChangedAfterEventSignal.md)
 - [EntityHealthComponent](EntityHealthComponent.md)
-- [EntityHitAfterEvent](EntityHitAfterEvent.md)
-- [EntityHitAfterEventSignal](EntityHitAfterEventSignal.md)
+- [EntityHitBlockAfterEvent](EntityHitBlockAfterEvent.md)
+- [EntityHitBlockAfterEventSignal](EntityHitBlockAfterEventSignal.md)
+- [EntityHitEntityAfterEvent](EntityHitEntityAfterEvent.md)
+- [EntityHitEntityAfterEventSignal](EntityHitEntityAfterEventSignal.md)
 - [EntityHurtAfterEvent](EntityHurtAfterEvent.md)
 - [EntityHurtAfterEventSignal](EntityHurtAfterEventSignal.md)
 - [EntityInventoryComponent](EntityInventoryComponent.md)
@@ -204,7 +205,8 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [IEffectAddAfterEventSignal](IEffectAddAfterEventSignal.md)
 - [IEntityDieAfterEventSignal](IEntityDieAfterEventSignal.md)
 - [IEntityHealthChangedAfterEventSignal](IEntityHealthChangedAfterEventSignal.md)
-- [IEntityHitAfterEventSignal](IEntityHitAfterEventSignal.md)
+- [IEntityHitBlockAfterEventSignal](IEntityHitBlockAfterEventSignal.md)
+- [IEntityHitEntityAfterEventSignal](IEntityHitEntityAfterEventSignal.md)
 - [IEntityHurtAfterEventSignal](IEntityHurtAfterEventSignal.md)
 - [IEntityRemovedAfterEventSignal](IEntityRemovedAfterEventSignal.md)
 - [IEntitySpawnAfterEventSignal](IEntitySpawnAfterEventSignal.md)
@@ -330,6 +332,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ## Interfaces
 - [BlockFillOptions](BlockFillOptions.md)
 - [BlockHitInformation](BlockHitInformation.md)
+- [BlockRaycastHit](BlockRaycastHit.md)
 - [BlockRaycastOptions](BlockRaycastOptions.md)
 - [BlockVolume](BlockVolume.md)
 - [BoundingBox](BoundingBox.md)
@@ -345,6 +348,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntityHitInformation](EntityHitInformation.md)
 - [EntityQueryOptions](EntityQueryOptions.md)
 - [EntityQueryScoreOptions](EntityQueryScoreOptions.md)
+- [EntityRaycastHit](EntityRaycastHit.md)
 - [EntityRaycastOptions](EntityRaycastOptions.md)
 - [ExplosionOptions](ExplosionOptions.md)
 - [MusicOptions](MusicOptions.md)
@@ -404,7 +408,7 @@ A class that wraps the state of a world - a set of dimensions and the environmen
 Type: [*World*](World.md)
 
 ## Change Log
-## 1.4.0-beta
+## 1.5.0-beta
 #### Changed *[Block](Block.md)*
 - Added property *[isWaterlogged](Block.md#iswaterlogged)*
 - Added property *[type](Block.md#type)*
@@ -423,7 +427,6 @@ Type: [*World*](World.md)
 #### Added *[BlockAreaSize](BlockAreaSize.md)*
 #### Added *[BlockBreakAfterEvent](BlockBreakAfterEvent.md)*
 #### Added *[BlockBreakAfterEventSignal](BlockBreakAfterEventSignal.md)*
-#### Added *[BlockEvent](BlockEvent.md)*
 #### Added *[BlockExplodeAfterEvent](BlockExplodeAfterEvent.md)*
 #### Added *[BlockExplodeAfterEventSignal](BlockExplodeAfterEventSignal.md)*
 #### Added *[BlockLavaContainerComponent](BlockLavaContainerComponent.md)*
@@ -451,8 +454,728 @@ Type: [*World*](World.md)
 #### Added *[BlockVolumeUtils](BlockVolumeUtils.md)*
 #### Added *[BlockWaterContainerComponent](BlockWaterContainerComponent.md)*
 #### Added *[BoundingBoxUtils](BoundingBoxUtils.md)*
-#### Added *[ButtonPushAfterEvent](ButtonPushAfterEvent.md)*
-#### Added *[ButtonPushAfterEventSignal](ButtonPushAfterEventSignal.md)*
+#### Added *[ChatSendAfterEvent](ChatSendAfterEvent.md)*
+#### Added *[ChatSendAfterEventSignal](ChatSendAfterEventSignal.md)*
+#### Added *[ChatSendBeforeEvent](ChatSendBeforeEvent.md)*
+#### Added *[ChatSendBeforeEventSignal](ChatSendBeforeEventSignal.md)*
+#### Changed *[Component](Component.md)*
+- Added function *[isValid](Component.md#isvalid)*
+#### Added *[CompoundBlockVolume](CompoundBlockVolume.md)*
+#### Changed *[Container](Container.md)*
+- Added function *[getSlot](Container.md#getslot)*
+- Added function *[isValid](Container.md#isvalid)*
+#### Added *[ContainerSlot](ContainerSlot.md)*
+#### Added *[DataDrivenEntityTriggerAfterEvent](DataDrivenEntityTriggerAfterEvent.md)*
+#### Added *[DataDrivenEntityTriggerAfterEventSignal](DataDrivenEntityTriggerAfterEventSignal.md)*
+#### Added *[DataDrivenEntityTriggerBeforeEvent](DataDrivenEntityTriggerBeforeEvent.md)*
+#### Added *[DataDrivenEntityTriggerBeforeEventSignal](DataDrivenEntityTriggerBeforeEventSignal.md)*
+#### Added *[DefinitionModifier](DefinitionModifier.md)*
+#### Changed *[Dimension](Dimension.md)*
+- Added function *[createExplosion](Dimension.md#createexplosion)*
+- Added function *[fillBlocks](Dimension.md#fillblocks)*
+- Added function *[getBlockFromRay](Dimension.md#getblockfromray)*
+- Added function *[getEntitiesFromRay](Dimension.md#getentitiesfromray)*
+- Added function *[setWeather](Dimension.md#setweather)*
+- Added function *[spawnParticle](Dimension.md#spawnparticle)*
+#### Added *[DynamicPropertiesDefinition](DynamicPropertiesDefinition.md)*
+#### Added *[EffectAddAfterEvent](EffectAddAfterEvent.md)*
+#### Added *[EffectAddAfterEventSignal](EffectAddAfterEventSignal.md)*
+#### Added *[EffectTypes](EffectTypes.md)*
+#### Added *[Enchantment](Enchantment.md)*
+#### Added *[EnchantmentList](EnchantmentList.md)*
+#### Added *[EnchantmentSlot](EnchantmentSlot.md)*
+#### Added *[EnchantmentType](EnchantmentType.md)*
+#### Added *[EnchantmentTypes](EnchantmentTypes.md)*
+#### Changed *[Entity](Entity.md)*
+- Added property *[fallDistance](Entity.md#falldistance)*
+- Added property *[isClimbing](Entity.md#isclimbing)*
+- Added property *[isFalling](Entity.md#isfalling)*
+- Added property *[isInWater](Entity.md#isinwater)*
+- Added property *[isOnGround](Entity.md#isonground)*
+- Added property *[isSneaking](Entity.md#issneaking)*
+- Added property *[isSprinting](Entity.md#issprinting)*
+- Added property *[isSwimming](Entity.md#isswimming)*
+- Added property *[lifetimeState](Entity.md#lifetimestate)*
+- Added property *[scoreboardIdentity](Entity.md#scoreboardidentity)*
+- Added property *[target](Entity.md#target)*
+- Added function *[extinguishFire](Entity.md#extinguishfire)*
+- Added function *[getBlockFromViewDirection](Entity.md#getblockfromviewdirection)*
+- Added function *[getDynamicProperty](Entity.md#getdynamicproperty)*
+- Added function *[getEntitiesFromViewDirection](Entity.md#getentitiesfromviewdirection)*
+- Added function *[getRotation](Entity.md#getrotation)*
+- Added function *[isValid](Entity.md#isvalid)*
+- Added function *[playAnimation](Entity.md#playanimation)*
+- Added function *[removeDynamicProperty](Entity.md#removedynamicproperty)*
+- Added function *[setDynamicProperty](Entity.md#setdynamicproperty)*
+- Added function *[setOnFire](Entity.md#setonfire)*
+- Added function *[setRotation](Entity.md#setrotation)*
+- Added function *[triggerEvent](Entity.md#triggerevent)*
+#### Added *[EntityAddRiderComponent](EntityAddRiderComponent.md)*
+#### Added *[EntityAgeableComponent](EntityAgeableComponent.md)*
+#### Added *[EntityBreathableComponent](EntityBreathableComponent.md)*
+#### Changed *[EntityComponent](EntityComponent.md)*
+- Added property *[entity](EntityComponent.md#entity)*
+#### Added *[EntityDefinitionFeedItem](EntityDefinitionFeedItem.md)*
+#### Added *[EntityDieAfterEvent](EntityDieAfterEvent.md)*
+#### Added *[EntityDieAfterEventSignal](EntityDieAfterEventSignal.md)*
+#### Added *[EntityEquipmentInventoryComponent](EntityEquipmentInventoryComponent.md)*
+#### Changed *[EntityHealableComponent](EntityHealableComponent.md)*
+- Added property *[filters](EntityHealableComponent.md#filters)*
+#### Added *[EntityHealthChangedAfterEvent](EntityHealthChangedAfterEvent.md)*
+#### Added *[EntityHealthChangedAfterEventSignal](EntityHealthChangedAfterEventSignal.md)*
+#### Added *[EntityHitBlockAfterEvent](EntityHitBlockAfterEvent.md)*
+#### Added *[EntityHitBlockAfterEventSignal](EntityHitBlockAfterEventSignal.md)*
+#### Added *[EntityHitEntityAfterEvent](EntityHitEntityAfterEvent.md)*
+#### Added *[EntityHitEntityAfterEventSignal](EntityHitEntityAfterEventSignal.md)*
+#### Added *[EntityHurtAfterEvent](EntityHurtAfterEvent.md)*
+#### Added *[EntityHurtAfterEventSignal](EntityHurtAfterEventSignal.md)*
+#### Added *[EntityIterator](EntityIterator.md)*
+#### Added *[EntityLavaMovementComponent](EntityLavaMovementComponent.md)*
+#### Added *[EntityLeashableComponent](EntityLeashableComponent.md)*
+#### Added *[EntityMountTamingComponent](EntityMountTamingComponent.md)*
+#### Added *[EntityMovementComponent](EntityMovementComponent.md)*
+#### Added *[EntityMovementGlideComponent](EntityMovementGlideComponent.md)*
+#### Added *[EntityMovementSwayComponent](EntityMovementSwayComponent.md)*
+#### Added *[EntityNavigationClimbComponent](EntityNavigationClimbComponent.md)*
+#### Added *[EntityNavigationComponent](EntityNavigationComponent.md)*
+#### Added *[EntityNavigationFloatComponent](EntityNavigationFloatComponent.md)*
+#### Added *[EntityNavigationFlyComponent](EntityNavigationFlyComponent.md)*
+#### Added *[EntityNavigationGenericComponent](EntityNavigationGenericComponent.md)*
+#### Added *[EntityNavigationHoverComponent](EntityNavigationHoverComponent.md)*
+#### Added *[EntityNavigationWalkComponent](EntityNavigationWalkComponent.md)*
+#### Added *[EntityOnFireComponent](EntityOnFireComponent.md)*
+#### Added *[EntityRemovedAfterEvent](EntityRemovedAfterEvent.md)*
+#### Added *[EntityRemovedAfterEventSignal](EntityRemovedAfterEventSignal.md)*
+#### Added *[EntityRideableComponent](EntityRideableComponent.md)*
+#### Added *[EntityRidingComponent](EntityRidingComponent.md)*
+#### Added *[EntitySpawnAfterEvent](EntitySpawnAfterEvent.md)*
+#### Added *[EntitySpawnAfterEventSignal](EntitySpawnAfterEventSignal.md)*
+#### Added *[EntityStrengthComponent](EntityStrengthComponent.md)*
+#### Added *[EntityTameableComponent](EntityTameableComponent.md)*
+#### Added *[EntityType](EntityType.md)*
+#### Added *[EntityTypeIterator](EntityTypeIterator.md)*
+#### Added *[EntityTypes](EntityTypes.md)*
+#### Added *[EntityUnderwaterMovementComponent](EntityUnderwaterMovementComponent.md)*
+#### Added *[ExplosionAfterEvent](ExplosionAfterEvent.md)*
+#### Added *[ExplosionAfterEventSignal](ExplosionAfterEventSignal.md)*
+#### Added *[ExplosionBeforeEvent](ExplosionBeforeEvent.md)*
+#### Added *[ExplosionBeforeEventSignal](ExplosionBeforeEventSignal.md)*
+#### Added *[FilterGroup](FilterGroup.md)*
+#### Added *[FluidContainer](FluidContainer.md)*
+#### Added *[IBlockBreakAfterEventSignal](IBlockBreakAfterEventSignal.md)*
+#### Added *[IBlockExplodeAfterEventSignal](IBlockExplodeAfterEventSignal.md)*
+#### Added *[IBlockPlaceAfterEventSignal](IBlockPlaceAfterEventSignal.md)*
+#### Added *[IChatSendAfterEventSignal](IChatSendAfterEventSignal.md)*
+#### Added *[IChatSendBeforeEventSignal](IChatSendBeforeEventSignal.md)*
+#### Added *[IDataDrivenEntityTriggerAfterEventSignal](IDataDrivenEntityTriggerAfterEventSignal.md)*
+#### Added *[IDataDrivenEntityTriggerBeforeEventSignal](IDataDrivenEntityTriggerBeforeEventSignal.md)*
+#### Added *[IEffectAddAfterEventSignal](IEffectAddAfterEventSignal.md)*
+#### Added *[IEntityDieAfterEventSignal](IEntityDieAfterEventSignal.md)*
+#### Added *[IEntityHealthChangedAfterEventSignal](IEntityHealthChangedAfterEventSignal.md)*
+#### Added *[IEntityHitBlockAfterEventSignal](IEntityHitBlockAfterEventSignal.md)*
+#### Added *[IEntityHitEntityAfterEventSignal](IEntityHitEntityAfterEventSignal.md)*
+#### Added *[IEntityHurtAfterEventSignal](IEntityHurtAfterEventSignal.md)*
+#### Added *[IEntityRemovedAfterEventSignal](IEntityRemovedAfterEventSignal.md)*
+#### Added *[IEntitySpawnAfterEventSignal](IEntitySpawnAfterEventSignal.md)*
+#### Added *[IExplosionAfterEventSignal](IExplosionAfterEventSignal.md)*
+#### Added *[IExplosionBeforeEventSignal](IExplosionBeforeEventSignal.md)*
+#### Added *[IItemCompleteUseAfterEventSignal](IItemCompleteUseAfterEventSignal.md)*
+#### Added *[IItemDefinitionAfterEventSignal](IItemDefinitionAfterEventSignal.md)*
+#### Added *[IItemDefinitionBeforeEventSignal](IItemDefinitionBeforeEventSignal.md)*
+#### Added *[IItemReleaseUseAfterEventSignal](IItemReleaseUseAfterEventSignal.md)*
+#### Added *[IItemStartUseAfterEventSignal](IItemStartUseAfterEventSignal.md)*
+#### Added *[IItemStartUseOnAfterEventSignal](IItemStartUseOnAfterEventSignal.md)*
+#### Added *[IItemStopUseAfterEventSignal](IItemStopUseAfterEventSignal.md)*
+#### Added *[IItemStopUseOnAfterEventSignal](IItemStopUseOnAfterEventSignal.md)*
+#### Added *[IItemUseAfterEventSignal](IItemUseAfterEventSignal.md)*
+#### Added *[IItemUseBeforeEventSignal](IItemUseBeforeEventSignal.md)*
+#### Added *[IItemUseOnAfterEventSignal](IItemUseOnAfterEventSignal.md)*
+#### Added *[IItemUseOnBeforeEventSignal](IItemUseOnBeforeEventSignal.md)*
+#### Added *[IPistonActivateAfterEventSignal](IPistonActivateAfterEventSignal.md)*
+#### Added *[IPistonActivateBeforeEventSignal](IPistonActivateBeforeEventSignal.md)*
+#### Added *[IPressurePlatePopAfterEventSignal](IPressurePlatePopAfterEventSignal.md)*
+#### Added *[IPressurePlatePushAfterEventSignal](IPressurePlatePushAfterEventSignal.md)*
+#### Added *[IProjectileHitAfterEventSignal](IProjectileHitAfterEventSignal.md)*
+#### Added *[IServerMessageAfterEventSignal](IServerMessageAfterEventSignal.md)*
+#### Added *[ITargetBlockHitAfterEventSignal](ITargetBlockHitAfterEventSignal.md)*
+#### Added *[ItemCompleteUseAfterEvent](ItemCompleteUseAfterEvent.md)*
+#### Added *[ItemCompleteUseAfterEventSignal](ItemCompleteUseAfterEventSignal.md)*
+#### Added *[ItemCooldownComponent](ItemCooldownComponent.md)*
+#### Added *[ItemDefinitionAfterEventSignal](ItemDefinitionAfterEventSignal.md)*
+#### Added *[ItemDefinitionBeforeEventSignal](ItemDefinitionBeforeEventSignal.md)*
+#### Added *[ItemDefinitionTriggeredAfterEvent](ItemDefinitionTriggeredAfterEvent.md)*
+#### Added *[ItemDefinitionTriggeredBeforeEvent](ItemDefinitionTriggeredBeforeEvent.md)*
+#### Added *[ItemDurabilityComponent](ItemDurabilityComponent.md)*
+#### Added *[ItemEnchantsComponent](ItemEnchantsComponent.md)*
+#### Added *[ItemFoodComponent](ItemFoodComponent.md)*
+#### Added *[ItemReleaseUseAfterEvent](ItemReleaseUseAfterEvent.md)*
+#### Added *[ItemReleaseUseAfterEventSignal](ItemReleaseUseAfterEventSignal.md)*
+#### Changed *[ItemStack](ItemStack.md)*
+- Added property *[amount](ItemStack.md#amount)*
+- Added property *[keepOnDeath](ItemStack.md#keepondeath)*
+- Added property *[lockMode](ItemStack.md#lockmode)*
+- Added property *[nameTag](ItemStack.md#nametag)*
+- Added function *[clone](ItemStack.md#clone)*
+- Added function *[getTags](ItemStack.md#gettags)*
+- Added function *[hasTag](ItemStack.md#hastag)*
+- Added function *[setCanDestroy](ItemStack.md#setcandestroy)*
+- Added function *[setCanPlaceOn](ItemStack.md#setcanplaceon)*
+- Added function *[triggerEvent](ItemStack.md#triggerevent)*
+#### Added *[ItemStartUseAfterEvent](ItemStartUseAfterEvent.md)*
+#### Added *[ItemStartUseAfterEventSignal](ItemStartUseAfterEventSignal.md)*
+#### Added *[ItemStartUseOnAfterEvent](ItemStartUseOnAfterEvent.md)*
+#### Added *[ItemStartUseOnAfterEventSignal](ItemStartUseOnAfterEventSignal.md)*
+#### Added *[ItemStopUseAfterEvent](ItemStopUseAfterEvent.md)*
+#### Added *[ItemStopUseAfterEventSignal](ItemStopUseAfterEventSignal.md)*
+#### Added *[ItemStopUseOnAfterEvent](ItemStopUseOnAfterEvent.md)*
+#### Added *[ItemStopUseOnAfterEventSignal](ItemStopUseOnAfterEventSignal.md)*
+#### Added *[ItemTypeIterator](ItemTypeIterator.md)*
+#### Added *[ItemTypes](ItemTypes.md)*
+#### Added *[ItemUseAfterEvent](ItemUseAfterEvent.md)*
+#### Added *[ItemUseAfterEventSignal](ItemUseAfterEventSignal.md)*
+#### Added *[ItemUseBeforeEvent](ItemUseBeforeEvent.md)*
+#### Added *[ItemUseBeforeEventSignal](ItemUseBeforeEventSignal.md)*
+#### Added *[ItemUseOnAfterEvent](ItemUseOnAfterEvent.md)*
+#### Added *[ItemUseOnAfterEventSignal](ItemUseOnAfterEventSignal.md)*
+#### Added *[ItemUseOnBeforeEvent](ItemUseOnBeforeEvent.md)*
+#### Added *[ItemUseOnBeforeEventSignal](ItemUseOnBeforeEventSignal.md)*
+#### Added *[ITripWireTripAfterEventSignal](ITripWireTripAfterEventSignal.md)*
+#### Added *[IWatchdogTerminateBeforeEventSignal](IWatchdogTerminateBeforeEventSignal.md)*
+#### Added *[IWeatherChangeAfterEventSignal](IWeatherChangeAfterEventSignal.md)*
+#### Added *[IWorldInitializeAfterEventSignal](IWorldInitializeAfterEventSignal.md)*
+#### Added *[MessageReceiveAfterEvent](MessageReceiveAfterEvent.md)*
+#### Added *[MinecraftBlockTypes](MinecraftBlockTypes.md)*
+#### Added *[MinecraftEntityTypes](MinecraftEntityTypes.md)*
+#### Added *[MinecraftItemTypes](MinecraftItemTypes.md)*
+#### Added *[MolangVariableMap](MolangVariableMap.md)*
+#### Added *[NavigationResult](NavigationResult.md)*
+#### Added *[PistonActivateAfterEvent](PistonActivateAfterEvent.md)*
+#### Added *[PistonActivateAfterEventSignal](PistonActivateAfterEventSignal.md)*
+#### Added *[PistonActivateBeforeEvent](PistonActivateBeforeEvent.md)*
+#### Added *[PistonActivateBeforeEventSignal](PistonActivateBeforeEventSignal.md)*
+#### Changed *[Player](Player.md)*
+- Added property *[isFlying](Player.md#isflying)*
+- Added property *[isGliding](Player.md#isgliding)*
+- Added property *[isJumping](Player.md#isjumping)*
+- Added property *[level](Player.md#level)*
+- Added property *[selectedSlot](Player.md#selectedslot)*
+- Added property *[totalXpNeededForNextLevel](Player.md#totalxpneededfornextlevel)*
+- Added property *[xpEarnedAtCurrentLevel](Player.md#xpearnedatcurrentlevel)*
+- Added function *[addExperience](Player.md#addexperience)*
+- Added function *[addLevels](Player.md#addlevels)*
+- Added function *[getItemCooldown](Player.md#getitemcooldown)*
+- Added function *[getSpawnPoint](Player.md#getspawnpoint)*
+- Added function *[getTotalXp](Player.md#gettotalxp)*
+- Added function *[isOp](Player.md#isop)*
+- Added function *[postClientMessage](Player.md#postclientmessage)*
+- Added function *[resetLevel](Player.md#resetlevel)*
+- Added function *[setOp](Player.md#setop)*
+- Added function *[setSpawnPoint](Player.md#setspawnpoint)*
+- Added function *[startItemCooldown](Player.md#startitemcooldown)*
+#### Added *[PlayerIterator](PlayerIterator.md)*
+#### Added *[PressurePlatePopAfterEvent](PressurePlatePopAfterEvent.md)*
+#### Added *[PressurePlatePopAfterEventSignal](PressurePlatePopAfterEventSignal.md)*
+#### Added *[PressurePlatePushAfterEvent](PressurePlatePushAfterEvent.md)*
+#### Added *[PressurePlatePushAfterEventSignal](PressurePlatePushAfterEventSignal.md)*
+#### Added *[ProjectileHitAfterEvent](ProjectileHitAfterEvent.md)*
+#### Added *[ProjectileHitAfterEventSignal](ProjectileHitAfterEventSignal.md)*
+#### Added *[PropertyRegistry](PropertyRegistry.md)*
+#### Added *[Scoreboard](Scoreboard.md)*
+#### Added *[ScoreboardIdentity](ScoreboardIdentity.md)*
+#### Added *[ScoreboardObjective](ScoreboardObjective.md)*
+#### Added *[ScoreboardScoreInfo](ScoreboardScoreInfo.md)*
+#### Added *[Seat](Seat.md)*
+#### Added *[ServerMessageAfterEventSignal](ServerMessageAfterEventSignal.md)*
+#### Changed *[System](System.md)*
+- Added property *[beforeEvents](System.md#beforeevents)*
+#### Added *[SystemBeforeEvents](SystemBeforeEvents.md)*
+#### Added *[TargetBlockHitAfterEvent](TargetBlockHitAfterEvent.md)*
+#### Added *[TargetBlockHitAfterEventSignal](TargetBlockHitAfterEventSignal.md)*
+#### Added *[Trigger](Trigger.md)*
+#### Added *[TripWireTripAfterEvent](TripWireTripAfterEvent.md)*
+#### Added *[TripWireTripAfterEventSignal](TripWireTripAfterEventSignal.md)*
+#### Added *[Vector](Vector.md)*
+#### Added *[WatchdogTerminateBeforeEvent](WatchdogTerminateBeforeEvent.md)*
+#### Added *[WatchdogTerminateBeforeEventSignal](WatchdogTerminateBeforeEventSignal.md)*
+#### Added *[WeatherChangeAfterEvent](WeatherChangeAfterEvent.md)*
+#### Added *[WeatherChangeAfterEventSignal](WeatherChangeAfterEventSignal.md)*
+#### Changed *[World](World.md)*
+- Added property *[afterEvents](World.md#afterevents)*
+- Added property *[beforeEvents](World.md#beforeevents)*
+- Added property *[scoreboard](World.md#scoreboard)*
+- Added function *[broadcastClientMessage](World.md#broadcastclientmessage)*
+- Added function *[getDefaultSpawnLocation](World.md#getdefaultspawnlocation)*
+- Added function *[getDynamicProperty](World.md#getdynamicproperty)*
+- Added function *[getEntity](World.md#getentity)*
+- Added function *[removeDynamicProperty](World.md#removedynamicproperty)*
+- Added function *[setDefaultSpawnLocation](World.md#setdefaultspawnlocation)*
+- Added function *[setDynamicProperty](World.md#setdynamicproperty)*
+#### Changed *[WorldAfterEvents](WorldAfterEvents.md)*
+- Added property *[blockBreak](WorldAfterEvents.md#blockbreak)*
+- Added property *[blockExplode](WorldAfterEvents.md#blockexplode)*
+- Added property *[blockPlace](WorldAfterEvents.md#blockplace)*
+- Added property *[chatSend](WorldAfterEvents.md#chatsend)*
+- Added property *[dataDrivenEntityTriggerEvent](WorldAfterEvents.md#datadrivenentitytriggerevent)*
+- Added property *[effectAdd](WorldAfterEvents.md#effectadd)*
+- Added property *[entityDie](WorldAfterEvents.md#entitydie)*
+- Added property *[entityHealthChanged](WorldAfterEvents.md#entityhealthchanged)*
+- Added property *[entityHitBlock](WorldAfterEvents.md#entityhitblock)*
+- Added property *[entityHitEntity](WorldAfterEvents.md#entityhitentity)*
+- Added property *[entityHurt](WorldAfterEvents.md#entityhurt)*
+- Added property *[entityRemoved](WorldAfterEvents.md#entityremoved)*
+- Added property *[entitySpawn](WorldAfterEvents.md#entityspawn)*
+- Added property *[explosion](WorldAfterEvents.md#explosion)*
+- Added property *[itemCompleteUse](WorldAfterEvents.md#itemcompleteuse)*
+- Added property *[itemDefinitionEvent](WorldAfterEvents.md#itemdefinitionevent)*
+- Added property *[itemReleaseUse](WorldAfterEvents.md#itemreleaseuse)*
+- Added property *[itemStartUse](WorldAfterEvents.md#itemstartuse)*
+- Added property *[itemStartUseOn](WorldAfterEvents.md#itemstartuseon)*
+- Added property *[itemStopUse](WorldAfterEvents.md#itemstopuse)*
+- Added property *[itemStopUseOn](WorldAfterEvents.md#itemstopuseon)*
+- Added property *[itemUse](WorldAfterEvents.md#itemuse)*
+- Added property *[itemUseOn](WorldAfterEvents.md#itemuseon)*
+- Added property *[messageReceive](WorldAfterEvents.md#messagereceive)*
+- Added property *[pistonActivate](WorldAfterEvents.md#pistonactivate)*
+- Added property *[pressurePlatePop](WorldAfterEvents.md#pressureplatepop)*
+- Added property *[pressurePlatePush](WorldAfterEvents.md#pressureplatepush)*
+- Added property *[projectileHit](WorldAfterEvents.md#projectilehit)*
+- Added property *[targetBlockHit](WorldAfterEvents.md#targetblockhit)*
+- Added property *[tripWireTrip](WorldAfterEvents.md#tripwiretrip)*
+- Added property *[weatherChange](WorldAfterEvents.md#weatherchange)*
+- Added property *[worldInitialize](WorldAfterEvents.md#worldinitialize)*
+#### Added *[WorldBeforeEvents](WorldBeforeEvents.md)*
+#### Added *[WorldInitializeAfterEvent](WorldInitializeAfterEvent.md)*
+#### Added *[WorldInitializeAfterEventSignal](WorldInitializeAfterEventSignal.md)*
+#### Added enum [BlockVolumeIntersection](BlockVolumeIntersection.md)
+#### Added enum [CompoundBlockVolumeAction](CompoundBlockVolumeAction.md)
+#### Added enum [Direction](Direction.md)
+#### Added enum [DisplaySlotId](DisplaySlotId.md)
+#### Added enum [DyeColor](DyeColor.md)
+#### Added enum [EntityLifetimeState](EntityLifetimeState.md)
+#### Added enum [EquipmentSlot](EquipmentSlot.md)
+#### Added enum [FluidType](FluidType.md)
+#### Added enum [ObjectiveSortOrder](ObjectiveSortOrder.md)
+#### Added enum [ScoreboardIdentityType](ScoreboardIdentityType.md)
+#### Added enum [SignSide](SignSide.md)
+#### Added enum [WatchdogTerminateReason](WatchdogTerminateReason.md)
+#### Added enum [WeatherType](WeatherType.md)
+#### Added constant [TicksPerDay](#ticksperday)
+#### Added constant [TicksPerSecond](#tickspersecond)
+## 1.4.0
+#### Changed *[Block](Block.md)*
+- Removed property *isWaterlogged*
+- Removed property *type*
+- Removed property *typeId*
+- Removed function *canPlace*
+- Removed function *getItemStack*
+- Removed function *getRedstonePower*
+- Removed function *getTags*
+- Removed function *hasTag*
+- Removed function *isAir*
+- Removed function *isLiquid*
+- Removed function *isSolid*
+- Removed function *isValid*
+- Removed function *setType*
+- Removed function *trySetPermutation*
+#### Removed *BlockAreaSize*
+#### Removed *BlockBreakAfterEvent*
+#### Removed *BlockBreakAfterEventSignal*
+#### Removed *BlockExplodeAfterEvent*
+#### Removed *BlockExplodeAfterEventSignal*
+#### Removed *BlockLavaContainerComponent*
+#### Removed *BlockLiquidContainerComponent*
+#### Removed *BlockLocationIterator*
+#### Changed *[BlockPermutation](BlockPermutation.md)*
+- Removed property *type*
+- Removed function *clone*
+- Removed function *getAllStates*
+- Removed function *getItemStack*
+- Removed function *getState*
+- Removed function *getTags*
+- Removed function *hasTag*
+- Removed function *withState*
+#### Removed *BlockPistonComponent*
+#### Removed *BlockPlaceAfterEvent*
+#### Removed *BlockPlaceAfterEventSignal*
+#### Removed *BlockPotionContainerComponent*
+#### Removed *BlockRecordPlayerComponent*
+#### Removed *BlockSignComponent*
+#### Removed *BlockSnowContainerComponent*
+#### Removed *BlockStates*
+#### Removed *BlockStateType*
+#### Removed *BlockType*
+#### Removed *BlockVolumeUtils*
+#### Removed *BlockWaterContainerComponent*
+#### Removed *BoundingBoxUtils*
+#### Removed *ChatSendAfterEvent*
+#### Removed *ChatSendAfterEventSignal*
+#### Removed *ChatSendBeforeEvent*
+#### Removed *ChatSendBeforeEventSignal*
+#### Removed *CompoundBlockVolume*
+#### Changed *[Container](Container.md)*
+- Removed function *getSlot*
+- Removed function *isValid*
+#### Removed *ContainerSlot*
+#### Removed *DataDrivenEntityTriggerAfterEvent*
+#### Removed *DataDrivenEntityTriggerAfterEventSignal*
+#### Removed *DataDrivenEntityTriggerBeforeEvent*
+#### Removed *DataDrivenEntityTriggerBeforeEventSignal*
+#### Removed *DefinitionModifier*
+#### Changed *[Dimension](Dimension.md)*
+- Removed function *createExplosion*
+- Removed function *fillBlocks*
+- Removed function *getBlockFromRay*
+- Removed function *getEntitiesFromRay*
+- Removed function *setWeather*
+- Removed function *spawnParticle*
+#### Removed *DynamicPropertiesDefinition*
+#### Removed *EffectAddAfterEvent*
+#### Removed *EffectAddAfterEventSignal*
+#### Removed *EffectTypes*
+#### Removed *Enchantment*
+#### Removed *EnchantmentList*
+#### Removed *EnchantmentSlot*
+#### Removed *EnchantmentType*
+#### Removed *EnchantmentTypes*
+#### Changed *[Entity](Entity.md)*
+- Removed property *fallDistance*
+- Removed property *isClimbing*
+- Removed property *isFalling*
+- Removed property *isInWater*
+- Removed property *isOnGround*
+- Removed property *isSneaking*
+- Removed property *isSprinting*
+- Removed property *isSwimming*
+- Removed property *lifetimeState*
+- Removed property *scoreboardIdentity*
+- Removed property *target*
+- Removed function *extinguishFire*
+- Removed function *getBlockFromViewDirection*
+- Removed function *getDynamicProperty*
+- Removed function *getEntitiesFromViewDirection*
+- Removed function *getRotation*
+- Removed function *playAnimation*
+- Removed function *removeDynamicProperty*
+- Removed function *setDynamicProperty*
+- Removed function *setOnFire*
+- Removed function *setRotation*
+- Removed function *triggerEvent*
+#### Removed *EntityAddRiderComponent*
+#### Removed *EntityAgeableComponent*
+#### Removed *EntityBreathableComponent*
+#### Changed *[EntityComponent](EntityComponent.md)*
+- Removed property *entity*
+- Removed function *isValid*
+#### Removed *EntityDefinitionFeedItem*
+#### Removed *EntityDieAfterEvent*
+#### Removed *EntityDieAfterEventSignal*
+#### Removed *EntityEquipmentInventoryComponent*
+#### Removed *EntityHealthChangedAfterEvent*
+#### Removed *EntityHealthChangedAfterEventSignal*
+#### Removed *EntityHitAfterEvent*
+#### Removed *EntityHitAfterEventSignal*
+#### Removed *EntityHurtAfterEvent*
+#### Removed *EntityHurtAfterEventSignal*
+#### Removed *EntityIterator*
+#### Removed *EntityLavaMovementComponent*
+#### Removed *EntityLeashableComponent*
+#### Removed *EntityMountTamingComponent*
+#### Removed *EntityMovementComponent*
+#### Removed *EntityMovementGlideComponent*
+#### Removed *EntityMovementSwayComponent*
+#### Removed *EntityNavigationClimbComponent*
+#### Removed *EntityNavigationComponent*
+#### Removed *EntityNavigationFloatComponent*
+#### Removed *EntityNavigationFlyComponent*
+#### Removed *EntityNavigationGenericComponent*
+#### Removed *EntityNavigationHoverComponent*
+#### Removed *EntityNavigationWalkComponent*
+#### Removed *EntityOnFireComponent*
+#### Removed *EntityRemovedAfterEvent*
+#### Removed *EntityRemovedAfterEventSignal*
+#### Removed *EntityRideableComponent*
+#### Removed *EntityRidingComponent*
+#### Removed *EntitySpawnAfterEvent*
+#### Removed *EntitySpawnAfterEventSignal*
+#### Removed *EntityStrengthComponent*
+#### Removed *EntityTameableComponent*
+#### Removed *EntityType*
+#### Removed *EntityTypeIterator*
+#### Removed *EntityTypes*
+#### Removed *EntityUnderwaterMovementComponent*
+#### Removed *ExplosionAfterEvent*
+#### Removed *ExplosionAfterEventSignal*
+#### Removed *ExplosionBeforeEvent*
+#### Removed *ExplosionBeforeEventSignal*
+#### Removed *FilterGroup*
+#### Removed *FluidContainer*
+#### Removed *IBlockBreakAfterEventSignal*
+#### Removed *IBlockExplodeAfterEventSignal*
+#### Removed *IBlockPlaceAfterEventSignal*
+#### Removed *IChatSendAfterEventSignal*
+#### Removed *IChatSendBeforeEventSignal*
+#### Removed *IDataDrivenEntityTriggerAfterEventSignal*
+#### Removed *IDataDrivenEntityTriggerBeforeEventSignal*
+#### Removed *IEffectAddAfterEventSignal*
+#### Removed *IEntityDieAfterEventSignal*
+#### Removed *IEntityHealthChangedAfterEventSignal*
+#### Removed *IEntityHitAfterEventSignal*
+#### Removed *IEntityHurtAfterEventSignal*
+#### Removed *IEntityRemovedAfterEventSignal*
+#### Removed *IEntitySpawnAfterEventSignal*
+#### Removed *IExplosionAfterEventSignal*
+#### Removed *IExplosionBeforeEventSignal*
+#### Removed *IItemCompleteUseAfterEventSignal*
+#### Removed *IItemDefinitionAfterEventSignal*
+#### Removed *IItemDefinitionBeforeEventSignal*
+#### Removed *IItemReleaseUseAfterEventSignal*
+#### Removed *IItemStartUseAfterEventSignal*
+#### Removed *IItemStartUseOnAfterEventSignal*
+#### Removed *IItemStopUseAfterEventSignal*
+#### Removed *IItemStopUseOnAfterEventSignal*
+#### Removed *IItemUseAfterEventSignal*
+#### Removed *IItemUseBeforeEventSignal*
+#### Removed *IItemUseOnAfterEventSignal*
+#### Removed *IItemUseOnBeforeEventSignal*
+#### Removed *IPistonActivateAfterEventSignal*
+#### Removed *IPistonActivateBeforeEventSignal*
+#### Removed *IPressurePlatePopAfterEventSignal*
+#### Removed *IPressurePlatePushAfterEventSignal*
+#### Removed *IProjectileHitAfterEventSignal*
+#### Removed *IServerMessageAfterEventSignal*
+#### Removed *ITargetBlockHitAfterEventSignal*
+#### Removed *ItemCompleteUseAfterEvent*
+#### Removed *ItemCompleteUseAfterEventSignal*
+#### Changed *[ItemComponent](ItemComponent.md)*
+- Removed function *isValid*
+#### Removed *ItemCooldownComponent*
+#### Removed *ItemDefinitionAfterEventSignal*
+#### Removed *ItemDefinitionBeforeEventSignal*
+#### Removed *ItemDefinitionTriggeredAfterEvent*
+#### Removed *ItemDefinitionTriggeredBeforeEvent*
+#### Removed *ItemDurabilityComponent*
+#### Removed *ItemEnchantsComponent*
+#### Removed *ItemFoodComponent*
+#### Removed *ItemReleaseUseAfterEvent*
+#### Removed *ItemReleaseUseAfterEventSignal*
+#### Changed *[ItemStack](ItemStack.md)*
+- Removed property *amount*
+- Removed property *keepOnDeath*
+- Removed property *lockMode*
+- Removed property *nameTag*
+- Removed function *clone*
+- Removed function *getTags*
+- Removed function *hasTag*
+- Removed function *setCanDestroy*
+- Removed function *setCanPlaceOn*
+- Changed function *[setLore](ItemStack.md#setlore)*
+  - Changed return type from *void* to *void* (throws exceptions)
+- Removed function *triggerEvent*
+#### Removed *ItemStartUseAfterEvent*
+#### Removed *ItemStartUseAfterEventSignal*
+#### Removed *ItemStartUseOnAfterEvent*
+#### Removed *ItemStartUseOnAfterEventSignal*
+#### Removed *ItemStopUseAfterEvent*
+#### Removed *ItemStopUseAfterEventSignal*
+#### Removed *ItemStopUseOnAfterEvent*
+#### Removed *ItemStopUseOnAfterEventSignal*
+#### Removed *ItemTypeIterator*
+#### Removed *ItemTypes*
+#### Removed *ItemUseAfterEvent*
+#### Removed *ItemUseAfterEventSignal*
+#### Removed *ItemUseBeforeEvent*
+#### Removed *ItemUseBeforeEventSignal*
+#### Removed *ItemUseOnAfterEvent*
+#### Removed *ItemUseOnAfterEventSignal*
+#### Removed *ItemUseOnBeforeEvent*
+#### Removed *ItemUseOnBeforeEventSignal*
+#### Removed *ITripWireTripAfterEventSignal*
+#### Removed *IWatchdogTerminateBeforeEventSignal*
+#### Removed *IWeatherChangeAfterEventSignal*
+#### Removed *IWorldInitializeAfterEventSignal*
+#### Removed *MessageReceiveAfterEvent*
+#### Removed *MinecraftBlockTypes*
+#### Removed *MinecraftEntityTypes*
+#### Removed *MinecraftItemTypes*
+#### Removed *MolangVariableMap*
+#### Removed *NavigationResult*
+#### Removed *PistonActivateAfterEvent*
+#### Removed *PistonActivateAfterEventSignal*
+#### Removed *PistonActivateBeforeEvent*
+#### Removed *PistonActivateBeforeEventSignal*
+#### Changed *[Player](Player.md)*
+- Removed property *isFlying*
+- Removed property *isGliding*
+- Removed property *isJumping*
+- Removed property *level*
+- Changed type for *[onScreenDisplay](Player.md#onscreendisplay)* from [*ScreenDisplay*](ScreenDisplay.md) to [*ScreenDisplay*](ScreenDisplay.md) (throws exceptions)
+- Removed property *selectedSlot*
+- Removed property *totalXpNeededForNextLevel*
+- Removed property *xpEarnedAtCurrentLevel*
+- Removed function *addExperience*
+- Removed function *addLevels*
+- Removed function *getItemCooldown*
+- Removed function *getSpawnPoint*
+- Removed function *getTotalXp*
+- Removed function *isOp*
+- Removed function *postClientMessage*
+- Removed function *resetLevel*
+- Removed function *setOp*
+- Removed function *setSpawnPoint*
+- Removed function *startItemCooldown*
+#### Removed *PlayerIterator*
+#### Removed *PressurePlatePopAfterEvent*
+#### Removed *PressurePlatePopAfterEventSignal*
+#### Removed *PressurePlatePushAfterEvent*
+#### Removed *PressurePlatePushAfterEventSignal*
+#### Removed *ProjectileHitAfterEvent*
+#### Removed *ProjectileHitAfterEventSignal*
+#### Removed *PropertyRegistry*
+#### Removed *Scoreboard*
+#### Removed *ScoreboardIdentity*
+#### Removed *ScoreboardObjective*
+#### Removed *ScoreboardScoreInfo*
+#### Removed *Seat*
+#### Removed *ServerMessageAfterEventSignal*
+#### Changed *[System](System.md)*
+- Removed property *beforeEvents*
+#### Removed *SystemBeforeEvents*
+#### Removed *TargetBlockHitAfterEvent*
+#### Removed *TargetBlockHitAfterEventSignal*
+#### Removed *Trigger*
+#### Removed *TripWireTripAfterEvent*
+#### Removed *TripWireTripAfterEventSignal*
+#### Removed *Vector*
+#### Removed *WatchdogTerminateBeforeEvent*
+#### Removed *WatchdogTerminateBeforeEventSignal*
+#### Removed *WeatherChangeAfterEvent*
+#### Removed *WeatherChangeAfterEventSignal*
+#### Changed *[World](World.md)*
+- Removed property *afterEvents*
+- Removed property *beforeEvents*
+- Removed property *scoreboard*
+- Removed function *broadcastClientMessage*
+- Changed function *[getAbsoluteTime](World.md#getabsolutetime)*
+  - Changed return type from *number* to *number*
+- Added function *[getDay](World.md#getday)*
+- Removed function *getDefaultSpawnLocation*
+- Removed function *getDynamicProperty*
+- Removed function *getEntity*
+- Removed function *getTime*
+- Added function *[getTimeOfDay](World.md#gettimeofday)*
+- Removed function *removeDynamicProperty*
+- Added function *[setAbsoluteTime](World.md#setabsolutetime)*
+- Removed function *setDefaultSpawnLocation*
+- Removed function *setDynamicProperty*
+- Removed function *setTime*
+- Added function *[setTimeOfDay](World.md#settimeofday)*
+#### Changed *[WorldAfterEvents](WorldAfterEvents.md)*
+- Removed property *blockBreak*
+- Removed property *blockExplode*
+- Removed property *blockPlace*
+- Removed property *chatSend*
+- Removed property *dataDrivenEntityTriggerEvent*
+- Removed property *effectAdd*
+- Removed property *entityDie*
+- Removed property *entityHealthChanged*
+- Removed property *entityHit*
+- Removed property *entityHurt*
+- Removed property *entityRemoved*
+- Removed property *entitySpawn*
+- Removed property *explosion*
+- Removed property *itemCompleteUse*
+- Removed property *itemDefinitionEvent*
+- Removed property *itemReleaseUse*
+- Removed property *itemStartUse*
+- Removed property *itemStartUseOn*
+- Removed property *itemStopUse*
+- Removed property *itemStopUseOn*
+- Removed property *itemUse*
+- Removed property *itemUseOn*
+- Added property *[leverAction](WorldAfterEvents.md#leveraction)*
+- Removed property *leverActivate*
+- Removed property *messageReceive*
+- Removed property *pistonActivate*
+- Removed property *pressurePlatePop*
+- Removed property *pressurePlatePush*
+- Removed property *projectileHit*
+- Removed property *targetBlockHit*
+- Removed property *tripWireTrip*
+- Removed property *weatherChange*
+- Removed property *worldInitialize*
+#### Removed *WorldBeforeEvents*
+#### Removed *WorldInitializeAfterEvent*
+#### Removed *WorldInitializeAfterEventSignal*
+#### Removed enum BlockVolumeIntersection
+#### Removed enum CompoundBlockVolumeAction
+#### Removed enum Direction
+#### Removed enum DisplaySlotId
+#### Removed enum DyeColor
+#### Removed enum EntityLifetimeState
+#### Removed enum EquipmentSlot
+#### Removed enum FluidType
+#### Removed enum ObjectiveSortOrder
+#### Removed enum ScoreboardIdentityType
+#### Changed enum ScriptEventSource
+- Removed value block
+- Added value Block
+- Removed value entity
+- Added value Entity
+- Removed value npcDialogue
+- Added value NPCDialogue
+- Removed value server
+- Added value Server
+#### Removed enum SignSide
+#### Removed enum WatchdogTerminateReason
+#### Removed enum WeatherType
+#### Removed constant TicksPerDay
+#### Removed constant TicksPerSecond
+## 1.4.0-beta
+#### Changed *[Block](Block.md)*
+- Added property *[isWaterlogged](Block.md#iswaterlogged)*
+- Added property *[type](Block.md#type)*
+- Added property *[typeId](Block.md#typeid)*
+- Added function *[canPlace](Block.md#canplace)*
+- Added function *[getItemStack](Block.md#getitemstack)*
+- Added function *[getRedstonePower](Block.md#getredstonepower)*
+- Added function *[getTags](Block.md#gettags)*
+- Added function *[hasTag](Block.md#hastag)*
+- Added function *[isAir](Block.md#isair)*
+- Added function *[isLiquid](Block.md#isliquid)*
+- Added function *[isSolid](Block.md#issolid)*
+- Added function *[isValid](Block.md#isvalid)*
+- Added function *[setType](Block.md#settype)*
+- Added function *[trySetPermutation](Block.md#trysetpermutation)*
+#### Added *[BlockAreaSize](BlockAreaSize.md)*
+#### Added *[BlockBreakAfterEvent](BlockBreakAfterEvent.md)*
+#### Added *[BlockBreakAfterEventSignal](BlockBreakAfterEventSignal.md)*
+#### Added *[BlockExplodeAfterEvent](BlockExplodeAfterEvent.md)*
+#### Added *[BlockExplodeAfterEventSignal](BlockExplodeAfterEventSignal.md)*
+#### Added *[BlockLavaContainerComponent](BlockLavaContainerComponent.md)*
+#### Added *[BlockLiquidContainerComponent](BlockLiquidContainerComponent.md)*
+#### Added *[BlockLocationIterator](BlockLocationIterator.md)*
+#### Changed *[BlockPermutation](BlockPermutation.md)*
+- Added property *[type](BlockPermutation.md#type)*
+- Added function *[clone](BlockPermutation.md#clone)*
+- Added function *[getAllStates](BlockPermutation.md#getallstates)*
+- Added function *[getItemStack](BlockPermutation.md#getitemstack)*
+- Added function *[getState](BlockPermutation.md#getstate)*
+- Added function *[getTags](BlockPermutation.md#gettags)*
+- Added function *[hasTag](BlockPermutation.md#hastag)*
+- Added function *[withState](BlockPermutation.md#withstate)*
+#### Added *[BlockPistonComponent](BlockPistonComponent.md)*
+#### Added *[BlockPlaceAfterEvent](BlockPlaceAfterEvent.md)*
+#### Added *[BlockPlaceAfterEventSignal](BlockPlaceAfterEventSignal.md)*
+#### Added *[BlockPotionContainerComponent](BlockPotionContainerComponent.md)*
+#### Added *[BlockRecordPlayerComponent](BlockRecordPlayerComponent.md)*
+#### Added *[BlockSignComponent](BlockSignComponent.md)*
+#### Added *[BlockSnowContainerComponent](BlockSnowContainerComponent.md)*
+#### Added *[BlockStates](BlockStates.md)*
+#### Added *[BlockStateType](BlockStateType.md)*
+#### Added *[BlockType](BlockType.md)*
+#### Added *[BlockVolumeUtils](BlockVolumeUtils.md)*
+#### Added *[BlockWaterContainerComponent](BlockWaterContainerComponent.md)*
+#### Added *[BoundingBoxUtils](BoundingBoxUtils.md)*
 #### Added *[ChatSendAfterEvent](ChatSendAfterEvent.md)*
 #### Added *[ChatSendAfterEventSignal](ChatSendAfterEventSignal.md)*
 #### Added *[ChatSendBeforeEvent](ChatSendBeforeEvent.md)*
@@ -473,14 +1196,10 @@ Type: [*World*](World.md)
 - Added function *[getBlockFromRay](Dimension.md#getblockfromray)*
 - Added function *[getEntitiesFromRay](Dimension.md#getentitiesfromray)*
 - Added function *[setWeather](Dimension.md#setweather)*
-- Added function *[spawnEntity](Dimension.md#spawnentity)*
-- Added function *[spawnItem](Dimension.md#spawnitem)*
 - Added function *[spawnParticle](Dimension.md#spawnparticle)*
 #### Added *[DynamicPropertiesDefinition](DynamicPropertiesDefinition.md)*
-#### Added *[Effect](Effect.md)*
 #### Added *[EffectAddAfterEvent](EffectAddAfterEvent.md)*
 #### Added *[EffectAddAfterEventSignal](EffectAddAfterEventSignal.md)*
-#### Added *[EffectType](EffectType.md)*
 #### Added *[EffectTypes](EffectTypes.md)*
 #### Added *[Enchantment](Enchantment.md)*
 #### Added *[EnchantmentList](EnchantmentList.md)*
@@ -499,17 +1218,13 @@ Type: [*World*](World.md)
 - Added property *[lifetimeState](Entity.md#lifetimestate)*
 - Added property *[scoreboardIdentity](Entity.md#scoreboardidentity)*
 - Added property *[target](Entity.md#target)*
-- Added function *[addEffect](Entity.md#addeffect)*
 - Added function *[extinguishFire](Entity.md#extinguishfire)*
 - Added function *[getBlockFromViewDirection](Entity.md#getblockfromviewdirection)*
 - Added function *[getDynamicProperty](Entity.md#getdynamicproperty)*
-- Added function *[getEffect](Entity.md#geteffect)*
-- Added function *[getEffects](Entity.md#geteffects)*
 - Added function *[getEntitiesFromViewDirection](Entity.md#getentitiesfromviewdirection)*
 - Added function *[getRotation](Entity.md#getrotation)*
 - Added function *[playAnimation](Entity.md#playanimation)*
 - Added function *[removeDynamicProperty](Entity.md#removedynamicproperty)*
-- Added function *[removeEffect](Entity.md#removeeffect)*
 - Added function *[setDynamicProperty](Entity.md#setdynamicproperty)*
 - Added function *[setOnFire](Entity.md#setonfire)*
 - Added function *[setRotation](Entity.md#setrotation)*
@@ -524,11 +1239,8 @@ Type: [*World*](World.md)
 #### Added *[EntityDieAfterEvent](EntityDieAfterEvent.md)*
 #### Added *[EntityDieAfterEventSignal](EntityDieAfterEventSignal.md)*
 #### Added *[EntityEquipmentInventoryComponent](EntityEquipmentInventoryComponent.md)*
-#### Changed *[EntityHealableComponent](EntityHealableComponent.md)*
-- Added property *[filters](EntityHealableComponent.md#filters)*
 #### Added *[EntityHealthChangedAfterEvent](EntityHealthChangedAfterEvent.md)*
 #### Added *[EntityHealthChangedAfterEventSignal](EntityHealthChangedAfterEventSignal.md)*
-#### Added *[EntityHealthComponent](EntityHealthComponent.md)*
 #### Added *[EntityHitAfterEvent](EntityHitAfterEvent.md)*
 #### Added *[EntityHitAfterEventSignal](EntityHitAfterEventSignal.md)*
 #### Added *[EntityHurtAfterEvent](EntityHurtAfterEvent.md)*
@@ -569,7 +1281,6 @@ Type: [*World*](World.md)
 #### Added *[IBlockBreakAfterEventSignal](IBlockBreakAfterEventSignal.md)*
 #### Added *[IBlockExplodeAfterEventSignal](IBlockExplodeAfterEventSignal.md)*
 #### Added *[IBlockPlaceAfterEventSignal](IBlockPlaceAfterEventSignal.md)*
-#### Added *[IButtonPushAfterEventSignal](IButtonPushAfterEventSignal.md)*
 #### Added *[IChatSendAfterEventSignal](IChatSendAfterEventSignal.md)*
 #### Added *[IChatSendBeforeEventSignal](IChatSendBeforeEventSignal.md)*
 #### Added *[IDataDrivenEntityTriggerAfterEventSignal](IDataDrivenEntityTriggerAfterEventSignal.md)*
@@ -595,12 +1306,8 @@ Type: [*World*](World.md)
 #### Added *[IItemUseBeforeEventSignal](IItemUseBeforeEventSignal.md)*
 #### Added *[IItemUseOnAfterEventSignal](IItemUseOnAfterEventSignal.md)*
 #### Added *[IItemUseOnBeforeEventSignal](IItemUseOnBeforeEventSignal.md)*
-#### Added *[ILeverActionAfterEventSignal](ILeverActionAfterEventSignal.md)*
 #### Added *[IPistonActivateAfterEventSignal](IPistonActivateAfterEventSignal.md)*
 #### Added *[IPistonActivateBeforeEventSignal](IPistonActivateBeforeEventSignal.md)*
-#### Added *[IPlayerJoinAfterEventSignal](IPlayerJoinAfterEventSignal.md)*
-#### Added *[IPlayerLeaveAfterEventSignal](IPlayerLeaveAfterEventSignal.md)*
-#### Added *[IPlayerSpawnAfterEventSignal](IPlayerSpawnAfterEventSignal.md)*
 #### Added *[IPressurePlatePopAfterEventSignal](IPressurePlatePopAfterEventSignal.md)*
 #### Added *[IPressurePlatePushAfterEventSignal](IPressurePlatePushAfterEventSignal.md)*
 #### Added *[IProjectileHitAfterEventSignal](IProjectileHitAfterEventSignal.md)*
@@ -656,8 +1363,6 @@ Type: [*World*](World.md)
 #### Added *[IWatchdogTerminateBeforeEventSignal](IWatchdogTerminateBeforeEventSignal.md)*
 #### Added *[IWeatherChangeAfterEventSignal](IWeatherChangeAfterEventSignal.md)*
 #### Added *[IWorldInitializeAfterEventSignal](IWorldInitializeAfterEventSignal.md)*
-#### Added *[LeverActionAfterEvent](LeverActionAfterEvent.md)*
-#### Added *[LeverActionAfterEventSignal](LeverActionAfterEventSignal.md)*
 #### Added *[MessageReceiveAfterEvent](MessageReceiveAfterEvent.md)*
 #### Added *[MinecraftBlockTypes](MinecraftBlockTypes.md)*
 #### Added *[MinecraftEntityTypes](MinecraftEntityTypes.md)*
@@ -689,9 +1394,6 @@ Type: [*World*](World.md)
 - Added function *[setSpawnPoint](Player.md#setspawnpoint)*
 - Added function *[startItemCooldown](Player.md#startitemcooldown)*
 #### Added *[PlayerIterator](PlayerIterator.md)*
-#### Added *[PlayerJoinAfterEventSignal](PlayerJoinAfterEventSignal.md)*
-#### Added *[PlayerLeaveAfterEventSignal](PlayerLeaveAfterEventSignal.md)*
-#### Added *[PlayerSpawnAfterEventSignal](PlayerSpawnAfterEventSignal.md)*
 #### Added *[PressurePlatePopAfterEvent](PressurePlatePopAfterEvent.md)*
 #### Added *[PressurePlatePopAfterEventSignal](PressurePlatePopAfterEventSignal.md)*
 #### Added *[PressurePlatePushAfterEvent](PressurePlatePushAfterEvent.md)*
@@ -737,7 +1439,40 @@ Type: [*World*](World.md)
 - Added function *[setDefaultSpawnLocation](World.md#setdefaultspawnlocation)*
 - Added function *[setDynamicProperty](World.md#setdynamicproperty)*
 - Added function *[setTime](World.md#settime)*
-#### Added *[WorldAfterEvents](WorldAfterEvents.md)*
+#### Changed *[WorldAfterEvents](WorldAfterEvents.md)*
+- Added property *[blockBreak](WorldAfterEvents.md#blockbreak)*
+- Added property *[blockExplode](WorldAfterEvents.md#blockexplode)*
+- Added property *[blockPlace](WorldAfterEvents.md#blockplace)*
+- Added property *[chatSend](WorldAfterEvents.md#chatsend)*
+- Added property *[dataDrivenEntityTriggerEvent](WorldAfterEvents.md#datadrivenentitytriggerevent)*
+- Added property *[effectAdd](WorldAfterEvents.md#effectadd)*
+- Added property *[entityDie](WorldAfterEvents.md#entitydie)*
+- Added property *[entityHealthChanged](WorldAfterEvents.md#entityhealthchanged)*
+- Added property *[entityHit](WorldAfterEvents.md#entityhit)*
+- Added property *[entityHurt](WorldAfterEvents.md#entityhurt)*
+- Added property *[entityRemoved](WorldAfterEvents.md#entityremoved)*
+- Added property *[entitySpawn](WorldAfterEvents.md#entityspawn)*
+- Added property *[explosion](WorldAfterEvents.md#explosion)*
+- Added property *[itemCompleteUse](WorldAfterEvents.md#itemcompleteuse)*
+- Added property *[itemDefinitionEvent](WorldAfterEvents.md#itemdefinitionevent)*
+- Added property *[itemReleaseUse](WorldAfterEvents.md#itemreleaseuse)*
+- Added property *[itemStartUse](WorldAfterEvents.md#itemstartuse)*
+- Added property *[itemStartUseOn](WorldAfterEvents.md#itemstartuseon)*
+- Added property *[itemStopUse](WorldAfterEvents.md#itemstopuse)*
+- Added property *[itemStopUseOn](WorldAfterEvents.md#itemstopuseon)*
+- Added property *[itemUse](WorldAfterEvents.md#itemuse)*
+- Added property *[itemUseOn](WorldAfterEvents.md#itemuseon)*
+- Removed property *leverAction*
+- Added property *[leverActivate](WorldAfterEvents.md#leveractivate)*
+- Added property *[messageReceive](WorldAfterEvents.md#messagereceive)*
+- Added property *[pistonActivate](WorldAfterEvents.md#pistonactivate)*
+- Added property *[pressurePlatePop](WorldAfterEvents.md#pressureplatepop)*
+- Added property *[pressurePlatePush](WorldAfterEvents.md#pressureplatepush)*
+- Added property *[projectileHit](WorldAfterEvents.md#projectilehit)*
+- Added property *[targetBlockHit](WorldAfterEvents.md#targetblockhit)*
+- Added property *[tripWireTrip](WorldAfterEvents.md#tripwiretrip)*
+- Added property *[weatherChange](WorldAfterEvents.md#weatherchange)*
+- Added property *[worldInitialize](WorldAfterEvents.md#worldinitialize)*
 #### Added *[WorldBeforeEvents](WorldBeforeEvents.md)*
 #### Added *[WorldInitializeAfterEvent](WorldInitializeAfterEvent.md)*
 #### Added *[WorldInitializeAfterEventSignal](WorldInitializeAfterEventSignal.md)*
@@ -778,7 +1513,6 @@ Type: [*World*](World.md)
 #### Removed *BlockAreaSize*
 #### Removed *BlockBreakAfterEvent*
 #### Removed *BlockBreakAfterEventSignal*
-#### Removed *BlockEvent*
 #### Removed *BlockExplodeAfterEvent*
 #### Removed *BlockExplodeAfterEventSignal*
 #### Removed *BlockLavaContainerComponent*
@@ -806,8 +1540,6 @@ Type: [*World*](World.md)
 #### Removed *BlockVolumeUtils*
 #### Removed *BlockWaterContainerComponent*
 #### Removed *BoundingBoxUtils*
-#### Removed *ButtonPushAfterEvent*
-#### Removed *ButtonPushAfterEventSignal*
 #### Removed *ChatSendAfterEvent*
 #### Removed *ChatSendAfterEventSignal*
 #### Removed *ChatSendBeforeEvent*
@@ -827,49 +1559,58 @@ Type: [*World*](World.md)
 - Removed function *getBlockFromRay*
 - Removed function *getEntitiesFromRay*
 - Removed function *setWeather*
-- Removed function *spawnEntity*
-- Removed function *spawnItem*
 - Removed function *spawnParticle*
 #### Removed *DynamicPropertiesDefinition*
-#### Removed *Effect*
+#### Changed *[Effect](Effect.md)*
+- Added property *[typeId](Effect.md#typeid)*
+- Added function *[isValid](Effect.md#isvalid)*
 #### Removed *EffectAddAfterEvent*
 #### Removed *EffectAddAfterEventSignal*
-#### Removed *EffectType*
-#### Removed *EffectTypes*
 #### Removed *Enchantment*
 #### Removed *EnchantmentList*
 #### Removed *EnchantmentSlot*
 #### Removed *EnchantmentType*
 #### Removed *EnchantmentTypes*
 #### Changed *[Entity](Entity.md)*
-- Removed property *fallDistance*
-- Removed property *isClimbing*
-- Removed property *isFalling*
-- Removed property *isInWater*
-- Removed property *isOnGround*
 - Removed property *isSneaking*
-- Removed property *isSprinting*
-- Removed property *isSwimming*
 - Removed property *lifetimeState*
 - Removed property *scoreboardIdentity*
 - Removed property *target*
-- Removed function *addEffect*
+- Changed function *[addEffect](Entity.md#addeffect)*
+  - Changed argument `effectType` type from [*EffectType*](EffectType.md) to [*EffectType*](EffectType.md) | *string*
+  - Added argument `options`
+  - Removed argument `amplifier`
+  - Removed argument `showParticles`
+- Changed function *[applyDamage](Entity.md#applydamage)*
+  - Changed argument `amount` type from *number* to *number*
 - Removed function *extinguishFire*
 - Removed function *getBlockFromViewDirection*
+- Changed function *[getComponent](Entity.md#getcomponent)*
+  - Changed return type from [*EntityComponent*](EntityComponent.md) to [*EntityComponent*](EntityComponent.md)
 - Removed function *getDynamicProperty*
-- Removed function *getEffect*
-- Removed function *getEffects*
+- Changed function *[getEffect](Entity.md#geteffect)*
+  - Changed return type from [*Effect*](Effect.md) (throws exceptions) to [*Effect*](Effect.md) (throws exceptions)
+  - Changed argument `effectType` type from [*EffectType*](EffectType.md) to [*EffectType*](EffectType.md) | *string*
 - Removed function *getEntitiesFromViewDirection*
 - Removed function *getRotation*
 - Removed function *playAnimation*
 - Removed function *removeDynamicProperty*
-- Removed function *removeEffect*
+- Added function *[removeEffect](Entity.md#removeeffect)*
 - Removed function *setDynamicProperty*
 - Removed function *setOnFire*
 - Removed function *setRotation*
 - Removed function *triggerEvent*
 #### Removed *EntityAddRiderComponent*
 #### Removed *EntityAgeableComponent*
+#### Changed *[EntityAttributeComponent](EntityAttributeComponent.md)*
+- Removed property *current*
+- Added property *[currentValue](EntityAttributeComponent.md#currentvalue)*
+- Added property *[defaultValue](EntityAttributeComponent.md#defaultvalue)*
+- Added property *[effectiveMax](EntityAttributeComponent.md#effectivemax)*
+- Added property *[effectiveMin](EntityAttributeComponent.md#effectivemin)*
+- Removed property *value*
+- Removed function *setCurrent*
+- Added function *[setCurrentValue](EntityAttributeComponent.md#setcurrentvalue)*
 #### Removed *EntityBreathableComponent*
 #### Changed *[EntityComponent](EntityComponent.md)*
 - Removed property *entity*
@@ -877,15 +1618,26 @@ Type: [*World*](World.md)
 #### Removed *EntityDieAfterEvent*
 #### Removed *EntityDieAfterEventSignal*
 #### Removed *EntityEquipmentInventoryComponent*
-#### Removed *EntityHealthComponent*
+#### Changed *[EntityHealableComponent](EntityHealableComponent.md)*
+- Removed property *filters*
 #### Removed *EntityHitAfterEvent*
 #### Removed *EntityHitAfterEventSignal*
 #### Removed *EntityHurtAfterEvent*
 #### Removed *EntityHurtAfterEventSignal*
+#### Removed *EntityIsDyableComponent*
+#### Added *[EntityIsDyeableComponent](EntityIsDyeableComponent.md)*
 #### Removed *EntityIterator*
 #### Removed *EntityLavaMovementComponent*
 #### Removed *EntityLeashableComponent*
 #### Removed *EntityMountTamingComponent*
+#### Changed *[EntityMovementAmphibiousComponent](EntityMovementAmphibiousComponent.md)*
+- Added base class [*EntityBaseMovementComponent*](EntityBaseMovementComponent.md)
+- Removed base class *EntityComponent*
+- Removed property *maxTurn*
+#### Changed *[EntityMovementBasicComponent](EntityMovementBasicComponent.md)*
+- Added base class [*EntityBaseMovementComponent*](EntityBaseMovementComponent.md)
+- Removed base class *EntityComponent*
+- Removed property *maxTurn*
 #### Removed *EntityMovementComponent*
 #### Removed *EntityMovementGlideComponent*
 #### Removed *EntityMovementSwayComponent*
@@ -897,8 +1649,6 @@ Type: [*World*](World.md)
 #### Removed *EntityNavigationHoverComponent*
 #### Removed *EntityNavigationWalkComponent*
 #### Removed *EntityOnFireComponent*
-#### Removed *EntityRemovedAfterEvent*
-#### Removed *EntityRemovedAfterEventSignal*
 #### Removed *EntityRideableComponent*
 #### Removed *EntityRidingComponent*
 #### Removed *EntitySpawnAfterEvent*
@@ -918,7 +1668,6 @@ Type: [*World*](World.md)
 #### Removed *IBlockBreakAfterEventSignal*
 #### Removed *IBlockExplodeAfterEventSignal*
 #### Removed *IBlockPlaceAfterEventSignal*
-#### Removed *IButtonPushAfterEventSignal*
 #### Removed *IChatSendAfterEventSignal*
 #### Removed *IChatSendBeforeEventSignal*
 #### Removed *IDataDrivenEntityTriggerAfterEventSignal*
@@ -927,33 +1676,28 @@ Type: [*World*](World.md)
 #### Removed *IEntityDieAfterEventSignal*
 #### Removed *IEntityHitAfterEventSignal*
 #### Removed *IEntityHurtAfterEventSignal*
-#### Removed *IEntityRemovedAfterEventSignal*
 #### Removed *IEntitySpawnAfterEventSignal*
 #### Removed *IExplosionAfterEventSignal*
 #### Removed *IExplosionBeforeEventSignal*
-#### Removed *IItemCompleteUseAfterEventSignal*
+#### Removed *IItemCompleteChargeAfterEventSignal*
 #### Removed *IItemDefinitionAfterEventSignal*
 #### Removed *IItemDefinitionBeforeEventSignal*
-#### Removed *IItemReleaseUseAfterEventSignal*
-#### Removed *IItemStartUseAfterEventSignal*
+#### Removed *IItemReleaseChargeAfterEventSignal*
+#### Removed *IItemStartChargeAfterEventSignal*
 #### Removed *IItemStartUseOnAfterEventSignal*
-#### Removed *IItemStopUseAfterEventSignal*
+#### Removed *IItemStopChargeAfterEventSignal*
 #### Removed *IItemStopUseOnAfterEventSignal*
 #### Removed *IItemUseAfterEventSignal*
 #### Removed *IItemUseBeforeEventSignal*
 #### Removed *IItemUseOnAfterEventSignal*
 #### Removed *IItemUseOnBeforeEventSignal*
-#### Removed *ILeverActionAfterEventSignal*
 #### Removed *IPistonActivateAfterEventSignal*
 #### Removed *IPistonActivateBeforeEventSignal*
-#### Removed *IPlayerJoinAfterEventSignal*
-#### Removed *IPlayerLeaveAfterEventSignal*
-#### Removed *IPlayerSpawnAfterEventSignal*
 #### Removed *IProjectileHitAfterEventSignal*
 #### Removed *IScriptEventCommandMessageAfterEventSignal*
 #### Removed *IServerMessageAfterEventSignal*
-#### Removed *ItemCompleteUseAfterEvent*
-#### Removed *ItemCompleteUseAfterEventSignal*
+#### Removed *ItemCompleteChargeAfterEvent*
+#### Removed *ItemCompleteChargeAfterEventSignal*
 #### Removed *ItemCooldownComponent*
 #### Removed *ItemDefinitionAfterEventSignal*
 #### Removed *ItemDefinitionBeforeEventSignal*
@@ -962,8 +1706,8 @@ Type: [*World*](World.md)
 #### Removed *ItemDurabilityComponent*
 #### Removed *ItemEnchantsComponent*
 #### Removed *ItemFoodComponent*
-#### Removed *ItemReleaseUseAfterEvent*
-#### Removed *ItemReleaseUseAfterEventSignal*
+#### Removed *ItemReleaseChargeAfterEvent*
+#### Removed *ItemReleaseChargeAfterEventSignal*
 #### Changed *[ItemStack](ItemStack.md)*
 - Changed read-only flag for *[amount](ItemStack.md#amount)* from `false` to `true`
 - Changed read-only flag for *[keepOnDeath](ItemStack.md#keepondeath)* from `false` to `true`
@@ -977,12 +1721,12 @@ Type: [*World*](World.md)
 - Removed function *setCanPlaceOn*
 - Removed function *setLore*
 - Removed function *triggerEvent*
-#### Removed *ItemStartUseAfterEvent*
-#### Removed *ItemStartUseAfterEventSignal*
+#### Removed *ItemStartChargeAfterEvent*
+#### Removed *ItemStartChargeAfterEventSignal*
 #### Removed *ItemStartUseOnAfterEvent*
 #### Removed *ItemStartUseOnAfterEventSignal*
-#### Removed *ItemStopUseAfterEvent*
-#### Removed *ItemStopUseAfterEventSignal*
+#### Removed *ItemStopChargeAfterEvent*
+#### Removed *ItemStopChargeAfterEventSignal*
 #### Removed *ItemStopUseOnAfterEvent*
 #### Removed *ItemStopUseOnAfterEventSignal*
 #### Removed *ItemTypeIterator*
@@ -998,8 +1742,6 @@ Type: [*World*](World.md)
 #### Removed *IWatchdogTerminateBeforeEventSignal*
 #### Removed *IWeatherChangeAfterEventSignal*
 #### Removed *IWorldInitializeAfterEventSignal*
-#### Removed *LeverActionAfterEvent*
-#### Removed *LeverActionAfterEventSignal*
 #### Removed *MessageReceiveAfterEvent*
 #### Removed *MinecraftBlockTypes*
 #### Removed *MinecraftEffectTypes*
@@ -1012,9 +1754,6 @@ Type: [*World*](World.md)
 #### Removed *PistonActivateBeforeEvent*
 #### Removed *PistonActivateBeforeEventSignal*
 #### Changed *[Player](Player.md)*
-- Removed property *isFlying*
-- Removed property *isGliding*
-- Removed property *isJumping*
 - Removed property *level*
 - Removed property *onScreenDisplay*
 - Removed property *selectedSlot*
@@ -1034,9 +1773,6 @@ Type: [*World*](World.md)
 - Removed function *setSpawn*
 - Removed function *startItemCooldown*
 #### Removed *PlayerIterator*
-#### Removed *PlayerJoinAfterEventSignal*
-#### Removed *PlayerLeaveAfterEventSignal*
-#### Removed *PlayerSpawnAfterEventSignal*
 #### Removed *ProjectileHitAfterEvent*
 #### Removed *ProjectileHitAfterEventSignal*
 #### Removed *PropertyRegistry*
@@ -1072,6 +1808,7 @@ Type: [*World*](World.md)
 - Removed function *setDefaultSpawn*
 - Removed function *setDynamicProperty*
 - Removed function *setTime*
+#### Added *[WorldAfterEvents](WorldAfterEvents.md)*
 #### Removed *WorldInitializeAfterEvent*
 #### Removed *WorldInitializeAfterEventSignal*
 #### Removed enum BlockVolumeIntersection
@@ -1112,12 +1849,11 @@ Type: [*World*](World.md)
 #### Added *[BlockAreaSize](BlockAreaSize.md)*
 #### Added *[BlockBreakAfterEvent](BlockBreakAfterEvent.md)*
 #### Added *[BlockBreakAfterEventSignal](BlockBreakAfterEventSignal.md)*
-#### Added *[BlockComponent](BlockComponent.md)*
+#### Changed *[BlockComponent](BlockComponent.md)*
+- Added property *[block](BlockComponent.md#block)*
 #### Added *[BlockEvent](BlockEvent.md)*
 #### Added *[BlockExplodeAfterEvent](BlockExplodeAfterEvent.md)*
 #### Added *[BlockExplodeAfterEventSignal](BlockExplodeAfterEventSignal.md)*
-#### Changed *[BlockInventoryComponent](BlockInventoryComponent.md)*
-- Added base class [*BlockComponent*](BlockComponent.md)
 #### Added *[BlockLavaContainerComponent](BlockLavaContainerComponent.md)*
 #### Added *[BlockLiquidContainerComponent](BlockLiquidContainerComponent.md)*
 #### Added *[BlockLocationIterator](BlockLocationIterator.md)*
@@ -1172,27 +1908,23 @@ Type: [*World*](World.md)
 #### Added *[EffectAddAfterEvent](EffectAddAfterEvent.md)*
 #### Added *[EffectAddAfterEventSignal](EffectAddAfterEventSignal.md)*
 #### Added *[EffectType](EffectType.md)*
-#### Added *[EffectTypes](EffectTypes.md)*
 #### Added *[Enchantment](Enchantment.md)*
 #### Added *[EnchantmentList](EnchantmentList.md)*
 #### Added *[EnchantmentSlot](EnchantmentSlot.md)*
 #### Added *[EnchantmentType](EnchantmentType.md)*
 #### Added *[EnchantmentTypes](EnchantmentTypes.md)*
 #### Changed *[Entity](Entity.md)*
-- Added property *[fallDistance](Entity.md#falldistance)*
-- Added property *[isClimbing](Entity.md#isclimbing)*
-- Added property *[isFalling](Entity.md#isfalling)*
-- Added property *[isInWater](Entity.md#isinwater)*
-- Added property *[isOnGround](Entity.md#isonground)*
 - Added property *[isSneaking](Entity.md#issneaking)*
-- Added property *[isSprinting](Entity.md#issprinting)*
-- Added property *[isSwimming](Entity.md#isswimming)*
 - Added property *[lifetimeState](Entity.md#lifetimestate)*
 - Added property *[scoreboardIdentity](Entity.md#scoreboardidentity)*
 - Added property *[target](Entity.md#target)*
 - Added function *[addEffect](Entity.md#addeffect)*
+- Changed function *[applyDamage](Entity.md#applydamage)*
+  - Changed argument `amount` type from *number* to *number*
 - Added function *[extinguishFire](Entity.md#extinguishfire)*
 - Added function *[getBlockFromViewDirection](Entity.md#getblockfromviewdirection)*
+- Changed function *[getComponent](Entity.md#getcomponent)*
+  - Changed return type from [*EntityComponent*](EntityComponent.md) to [*EntityComponent*](EntityComponent.md)
 - Added function *[getDynamicProperty](Entity.md#getdynamicproperty)*
 - Added function *[getEffect](Entity.md#geteffect)*
 - Added function *[getEffects](Entity.md#geteffects)*
@@ -1200,7 +1932,6 @@ Type: [*World*](World.md)
 - Added function *[getRotation](Entity.md#getrotation)*
 - Added function *[playAnimation](Entity.md#playanimation)*
 - Added function *[removeDynamicProperty](Entity.md#removedynamicproperty)*
-- Added function *[removeEffect](Entity.md#removeeffect)*
 - Added function *[setDynamicProperty](Entity.md#setdynamicproperty)*
 - Added function *[setOnFire](Entity.md#setonfire)*
 - Added function *[setRotation](Entity.md#setrotation)*
@@ -1223,10 +1954,20 @@ Type: [*World*](World.md)
 #### Added *[EntityHitAfterEventSignal](EntityHitAfterEventSignal.md)*
 #### Added *[EntityHurtAfterEvent](EntityHurtAfterEvent.md)*
 #### Added *[EntityHurtAfterEventSignal](EntityHurtAfterEventSignal.md)*
+#### Added *[EntityIsDyableComponent](EntityIsDyableComponent.md)*
+#### Removed *EntityIsDyeableComponent*
 #### Added *[EntityIterator](EntityIterator.md)*
 #### Added *[EntityLavaMovementComponent](EntityLavaMovementComponent.md)*
 #### Added *[EntityLeashableComponent](EntityLeashableComponent.md)*
 #### Added *[EntityMountTamingComponent](EntityMountTamingComponent.md)*
+#### Changed *[EntityMovementAmphibiousComponent](EntityMovementAmphibiousComponent.md)*
+- Added base class [*EntityComponent*](EntityComponent.md)
+- Removed base class *EntityBaseMovementComponent*
+- Added property *[maxTurn](EntityMovementAmphibiousComponent.md#maxturn)*
+#### Changed *[EntityMovementBasicComponent](EntityMovementBasicComponent.md)*
+- Added base class [*EntityComponent*](EntityComponent.md)
+- Removed base class *EntityBaseMovementComponent*
+- Added property *[maxTurn](EntityMovementBasicComponent.md#maxturn)*
 #### Added *[EntityMovementComponent](EntityMovementComponent.md)*
 #### Added *[EntityMovementGlideComponent](EntityMovementGlideComponent.md)*
 #### Added *[EntityMovementSwayComponent](EntityMovementSwayComponent.md)*
@@ -1238,8 +1979,6 @@ Type: [*World*](World.md)
 #### Added *[EntityNavigationHoverComponent](EntityNavigationHoverComponent.md)*
 #### Added *[EntityNavigationWalkComponent](EntityNavigationWalkComponent.md)*
 #### Added *[EntityOnFireComponent](EntityOnFireComponent.md)*
-#### Added *[EntityRemovedAfterEvent](EntityRemovedAfterEvent.md)*
-#### Added *[EntityRemovedAfterEventSignal](EntityRemovedAfterEventSignal.md)*
 #### Added *[EntityRideableComponent](EntityRideableComponent.md)*
 #### Added *[EntityRidingComponent](EntityRidingComponent.md)*
 #### Added *[EntitySpawnAfterEvent](EntitySpawnAfterEvent.md)*
@@ -1270,17 +2009,16 @@ Type: [*World*](World.md)
 #### Added *[IEntityDieAfterEventSignal](IEntityDieAfterEventSignal.md)*
 #### Added *[IEntityHitAfterEventSignal](IEntityHitAfterEventSignal.md)*
 #### Added *[IEntityHurtAfterEventSignal](IEntityHurtAfterEventSignal.md)*
-#### Added *[IEntityRemovedAfterEventSignal](IEntityRemovedAfterEventSignal.md)*
 #### Added *[IEntitySpawnAfterEventSignal](IEntitySpawnAfterEventSignal.md)*
 #### Added *[IExplosionAfterEventSignal](IExplosionAfterEventSignal.md)*
 #### Added *[IExplosionBeforeEventSignal](IExplosionBeforeEventSignal.md)*
-#### Added *[IItemCompleteUseAfterEventSignal](IItemCompleteUseAfterEventSignal.md)*
+#### Added *[IItemCompleteChargeAfterEventSignal](IItemCompleteChargeAfterEventSignal.md)*
 #### Added *[IItemDefinitionAfterEventSignal](IItemDefinitionAfterEventSignal.md)*
 #### Added *[IItemDefinitionBeforeEventSignal](IItemDefinitionBeforeEventSignal.md)*
-#### Added *[IItemReleaseUseAfterEventSignal](IItemReleaseUseAfterEventSignal.md)*
-#### Added *[IItemStartUseAfterEventSignal](IItemStartUseAfterEventSignal.md)*
+#### Added *[IItemReleaseChargeAfterEventSignal](IItemReleaseChargeAfterEventSignal.md)*
+#### Added *[IItemStartChargeAfterEventSignal](IItemStartChargeAfterEventSignal.md)*
 #### Added *[IItemStartUseOnAfterEventSignal](IItemStartUseOnAfterEventSignal.md)*
-#### Added *[IItemStopUseAfterEventSignal](IItemStopUseAfterEventSignal.md)*
+#### Added *[IItemStopChargeAfterEventSignal](IItemStopChargeAfterEventSignal.md)*
 #### Added *[IItemStopUseOnAfterEventSignal](IItemStopUseOnAfterEventSignal.md)*
 #### Added *[IItemUseAfterEventSignal](IItemUseAfterEventSignal.md)*
 #### Added *[IItemUseBeforeEventSignal](IItemUseBeforeEventSignal.md)*
@@ -1295,8 +2033,8 @@ Type: [*World*](World.md)
 #### Added *[IProjectileHitAfterEventSignal](IProjectileHitAfterEventSignal.md)*
 #### Added *[IScriptEventCommandMessageAfterEventSignal](IScriptEventCommandMessageAfterEventSignal.md)*
 #### Added *[IServerMessageAfterEventSignal](IServerMessageAfterEventSignal.md)*
-#### Added *[ItemCompleteUseAfterEvent](ItemCompleteUseAfterEvent.md)*
-#### Added *[ItemCompleteUseAfterEventSignal](ItemCompleteUseAfterEventSignal.md)*
+#### Added *[ItemCompleteChargeAfterEvent](ItemCompleteChargeAfterEvent.md)*
+#### Added *[ItemCompleteChargeAfterEventSignal](ItemCompleteChargeAfterEventSignal.md)*
 #### Added *[ItemCooldownComponent](ItemCooldownComponent.md)*
 #### Added *[ItemDefinitionAfterEventSignal](ItemDefinitionAfterEventSignal.md)*
 #### Added *[ItemDefinitionBeforeEventSignal](ItemDefinitionBeforeEventSignal.md)*
@@ -1305,8 +2043,8 @@ Type: [*World*](World.md)
 #### Added *[ItemDurabilityComponent](ItemDurabilityComponent.md)*
 #### Added *[ItemEnchantsComponent](ItemEnchantsComponent.md)*
 #### Added *[ItemFoodComponent](ItemFoodComponent.md)*
-#### Added *[ItemReleaseUseAfterEvent](ItemReleaseUseAfterEvent.md)*
-#### Added *[ItemReleaseUseAfterEventSignal](ItemReleaseUseAfterEventSignal.md)*
+#### Added *[ItemReleaseChargeAfterEvent](ItemReleaseChargeAfterEvent.md)*
+#### Added *[ItemReleaseChargeAfterEventSignal](ItemReleaseChargeAfterEventSignal.md)*
 #### Changed *[ItemStack](ItemStack.md)*
 - Changed read-only flag for *[amount](ItemStack.md#amount)* from `true` to `false`
 - Changed read-only flag for *[keepOnDeath](ItemStack.md#keepondeath)* from `true` to `false`
@@ -1320,12 +2058,12 @@ Type: [*World*](World.md)
 - Added function *[setCanPlaceOn](ItemStack.md#setcanplaceon)*
 - Added function *[setLore](ItemStack.md#setlore)*
 - Added function *[triggerEvent](ItemStack.md#triggerevent)*
-#### Added *[ItemStartUseAfterEvent](ItemStartUseAfterEvent.md)*
-#### Added *[ItemStartUseAfterEventSignal](ItemStartUseAfterEventSignal.md)*
+#### Added *[ItemStartChargeAfterEvent](ItemStartChargeAfterEvent.md)*
+#### Added *[ItemStartChargeAfterEventSignal](ItemStartChargeAfterEventSignal.md)*
 #### Added *[ItemStartUseOnAfterEvent](ItemStartUseOnAfterEvent.md)*
 #### Added *[ItemStartUseOnAfterEventSignal](ItemStartUseOnAfterEventSignal.md)*
-#### Added *[ItemStopUseAfterEvent](ItemStopUseAfterEvent.md)*
-#### Added *[ItemStopUseAfterEventSignal](ItemStopUseAfterEventSignal.md)*
+#### Added *[ItemStopChargeAfterEvent](ItemStopChargeAfterEvent.md)*
+#### Added *[ItemStopChargeAfterEventSignal](ItemStopChargeAfterEventSignal.md)*
 #### Added *[ItemStopUseOnAfterEvent](ItemStopUseOnAfterEvent.md)*
 #### Added *[ItemStopUseOnAfterEventSignal](ItemStopUseOnAfterEventSignal.md)*
 #### Added *[ItemTypeIterator](ItemTypeIterator.md)*
@@ -1355,9 +2093,6 @@ Type: [*World*](World.md)
 #### Added *[PistonActivateBeforeEvent](PistonActivateBeforeEvent.md)*
 #### Added *[PistonActivateBeforeEventSignal](PistonActivateBeforeEventSignal.md)*
 #### Changed *[Player](Player.md)*
-- Added property *[isFlying](Player.md#isflying)*
-- Added property *[isGliding](Player.md#isgliding)*
-- Added property *[isJumping](Player.md#isjumping)*
 - Added property *[level](Player.md#level)*
 - Added property *[onScreenDisplay](Player.md#onscreendisplay)*
 - Added property *[selectedSlot](Player.md#selectedslot)*
@@ -1438,6 +2173,7 @@ Type: [*World*](World.md)
 #### Added constant [TicksPerDay](#ticksperday)
 #### Added constant [TicksPerSecond](#tickspersecond)
 ## 1.2.0
+#### Added *[BlockComponent](BlockComponent.md)*
 #### Added *[BlockInventoryComponent](BlockInventoryComponent.md)*
 #### Added *[Component](Component.md)*
 #### Added *[Container](Container.md)*

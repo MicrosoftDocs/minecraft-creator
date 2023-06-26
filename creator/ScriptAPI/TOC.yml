@@ -264,10 +264,14 @@
         href: minecraft/server/EntityHealthChangedAfterEventSignal.md
       - name: EntityHealthComponent
         href: minecraft/server/EntityHealthComponent.md
-      - name: EntityHitAfterEvent
-        href: minecraft/server/EntityHitAfterEvent.md
-      - name: EntityHitAfterEventSignal
-        href: minecraft/server/EntityHitAfterEventSignal.md
+      - name: EntityHitBlockAfterEvent
+        href: minecraft/server/EntityHitBlockAfterEvent.md
+      - name: EntityHitBlockAfterEventSignal
+        href: minecraft/server/EntityHitBlockAfterEventSignal.md
+      - name: EntityHitEntityAfterEvent
+        href: minecraft/server/EntityHitEntityAfterEvent.md
+      - name: EntityHitEntityAfterEventSignal
+        href: minecraft/server/EntityHitEntityAfterEventSignal.md
       - name: EntityHurtAfterEvent
         href: minecraft/server/EntityHurtAfterEvent.md
       - name: EntityHurtAfterEventSignal
@@ -420,8 +424,10 @@
         href: minecraft/server/IEntityDieAfterEventSignal.md
       - name: IEntityHealthChangedAfterEventSignal
         href: minecraft/server/IEntityHealthChangedAfterEventSignal.md
-      - name: IEntityHitAfterEventSignal
-        href: minecraft/server/IEntityHitAfterEventSignal.md
+      - name: IEntityHitBlockAfterEventSignal
+        href: minecraft/server/IEntityHitBlockAfterEventSignal.md
+      - name: IEntityHitEntityAfterEventSignal
+        href: minecraft/server/IEntityHitEntityAfterEventSignal.md
       - name: IEntityHurtAfterEventSignal
         href: minecraft/server/IEntityHurtAfterEventSignal.md
       - name: IEntityRemovedAfterEventSignal
@@ -668,6 +674,8 @@
         href: minecraft/server/BlockFillOptions.md
       - name: BlockHitInformation
         href: minecraft/server/BlockHitInformation.md
+      - name: BlockRaycastHit
+        href: minecraft/server/BlockRaycastHit.md
       - name: BlockRaycastOptions
         href: minecraft/server/BlockRaycastOptions.md
       - name: BlockVolume
@@ -698,6 +706,8 @@
         href: minecraft/server/EntityQueryOptions.md
       - name: EntityQueryScoreOptions
         href: minecraft/server/EntityQueryScoreOptions.md
+      - name: EntityRaycastHit
+        href: minecraft/server/EntityRaycastHit.md
       - name: EntityRaycastOptions
         href: minecraft/server/EntityRaycastOptions.md
       - name: ExplosionOptions
@@ -730,3 +740,115 @@
         href: minecraft/server/Vector3.md
       - name: WorldSoundOptions
         href: minecraft/server/WorldSoundOptions.md
+    - name: minecraft/server-editor
+      items:
+      - name: minecraft/server-editor
+        href: minecraft/server-editor/minecraft-server-editor.md
+      - name: ActionTypes
+        href: minecraft/server-editor/ActionTypes.md
+      - name: ClipboardMirrorAxis
+        href: minecraft/server-editor/ClipboardMirrorAxis.md
+      - name: ClipboardRotation
+        href: minecraft/server-editor/ClipboardRotation.md
+      - name: CursorControlMode
+        href: minecraft/server-editor/CursorControlMode.md
+      - name: CursorTargetMode
+        href: minecraft/server-editor/CursorTargetMode.md
+      - name: EDITOR_PANE_PROPERTY_ITEM_TYPE
+        href: minecraft/server-editor/EDITOR_PANE_PROPERTY_ITEM_TYPE.md
+      - name: EditorInputContext
+        href: minecraft/server-editor/EditorInputContext.md
+      - name: EditorStatusBarAlignment
+        href: minecraft/server-editor/EditorStatusBarAlignment.md
+      - name: InputModifier
+        href: minecraft/server-editor/InputModifier.md
+      - name: KeyboardKey
+        href: minecraft/server-editor/KeyboardKey.md
+      - name: KeyInputType
+        href: minecraft/server-editor/KeyInputType.md
+      - name: MouseActionCategory
+        href: minecraft/server-editor/MouseActionCategory.md
+      - name: MouseActionType
+        href: minecraft/server-editor/MouseActionType.md
+      - name: MouseInputType
+        href: minecraft/server-editor/MouseInputType.md
+      - name: BedrockEventSubscriptionCache
+        href: minecraft/server-editor/BedrockEventSubscriptionCache.md
+      - name: ClipboardItem
+        href: minecraft/server-editor/ClipboardItem.md
+      - name: ClipboardManager
+        href: minecraft/server-editor/ClipboardManager.md
+      - name: Cursor
+        href: minecraft/server-editor/Cursor.md
+      - name: Extension
+        href: minecraft/server-editor/Extension.md
+      - name: ExtensionContext
+        href: minecraft/server-editor/ExtensionContext.md
+      - name: Logger
+        href: minecraft/server-editor/Logger.md
+      - name: MinecraftEditor
+        href: minecraft/server-editor/MinecraftEditor.md
+      - name: Selection
+        href: minecraft/server-editor/Selection.md
+      - name: SelectionManager
+        href: minecraft/server-editor/SelectionManager.md
+      - name: TransactionManager
+        href: minecraft/server-editor/TransactionManager.md
+      - name: ClipboardWriteOptions
+        href: minecraft/server-editor/ClipboardWriteOptions.md
+      - name: CursorProperties
+        href: minecraft/server-editor/CursorProperties.md
+      - name: ExtensionOptionalParameters
+        href: minecraft/server-editor/ExtensionOptionalParameters.md
+      - name: LogProperties
+        href: minecraft/server-editor/LogProperties.md
+      - name: ActionManager
+        href: minecraft/server-editor/ActionManager.md
+      - name: BuiltInUIManager
+        href: minecraft/server-editor/BuiltInUIManager.md
+      - name: EventSink
+        href: minecraft/server-editor/EventSink.md
+      - name: IDisposable
+        href: minecraft/server-editor/IDisposable.md
+      - name: IDropdownItem
+        href: minecraft/server-editor/IDropdownItem.md
+      - name: IEventToken
+        href: minecraft/server-editor/IEventToken.md
+      - name: IGlobalInputManager
+        href: minecraft/server-editor/IGlobalInputManager.md
+      - name: IMenu
+        href: minecraft/server-editor/IMenu.md
+      - name: IMenuCreationParams
+        href: minecraft/server-editor/IMenuCreationParams.md
+      - name: IModalTool
+        href: minecraft/server-editor/IModalTool.md
+      - name: IModalToolContainer
+        href: minecraft/server-editor/IModalToolContainer.md
+      - name: IPlayerLogger
+        href: minecraft/server-editor/IPlayerLogger.md
+      - name: IPropertyItem
+        href: minecraft/server-editor/IPropertyItem.md
+      - name: IPropertyItemOptions
+        href: minecraft/server-editor/IPropertyItemOptions.md
+      - name: IPropertyItemOptionsBlocks
+        href: minecraft/server-editor/IPropertyItemOptionsBlocks.md
+      - name: IPropertyItemOptionsButton
+        href: minecraft/server-editor/IPropertyItemOptionsButton.md
+      - name: IPropertyItemOptionsDropdown
+        href: minecraft/server-editor/IPropertyItemOptionsDropdown.md
+      - name: IPropertyItemOptionsNumber
+        href: minecraft/server-editor/IPropertyItemOptionsNumber.md
+      - name: IPropertyItemOptionsSubPane
+        href: minecraft/server-editor/IPropertyItemOptionsSubPane.md
+      - name: IPropertyItemOptionsVector3
+        href: minecraft/server-editor/IPropertyItemOptionsVector3.md
+      - name: IPropertyPane
+        href: minecraft/server-editor/IPropertyPane.md
+      - name: IPropertyPaneOptions
+        href: minecraft/server-editor/IPropertyPaneOptions.md
+      - name: IRegisterExtensionOptionalParameters
+        href: minecraft/server-editor/IRegisterExtensionOptionalParameters.md
+      - name: IStatusBarItem
+        href: minecraft/server-editor/IStatusBarItem.md
+      - name: ModalToolCreationParameters
+        href: minecraft/server-editor/ModalToolCreationParameters.md

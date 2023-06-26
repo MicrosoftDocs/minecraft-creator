@@ -7,7 +7,7 @@ title: simulationtype Command
 description: Description and usage of the simulationtype command
 ---
 # `/simulationtype` Command
-Changes simulation type for editor mode
+Editor mode only.  This command changes the net simulation mode of the Minecraft game between being editor specific vs. a game-type simulation.
 
 <table>
   <tr>

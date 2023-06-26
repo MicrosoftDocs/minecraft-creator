@@ -7,7 +7,7 @@ title: script Command
 description: Description and usage of the script command
 ---
 # `/script` Command
-Debugging options for GameTest Framework.
+Debugging options for script within Minecraft.
 
 <table>
   <tr>
@@ -24,14 +24,14 @@ Debugging options for GameTest Framework.
 ### Start profiler
 `/script profiler start`
 
-Start profiler.
+Start profiler (that is, performance) tracking of script within Minecraft.
 
 ### Stop profiler
 `/script profiler stop`
 
-Stop profiler.
+Stop profiler-performance tracking of script with Minecraft.
 
 ### Watchdog export stats
 `/script watchdog exportstats`
 
-Export watchdog stats
+Export watchdog statistics on script runtime behavior and memory consumption.

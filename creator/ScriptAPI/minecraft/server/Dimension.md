@@ -7,8 +7,7 @@ title: minecraft/server.Dimension Class
 description: Contents of the @minecraft/server.Dimension class.
 ---
 # Dimension Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 A class that represents a particular dimension (e.g., The End) within a world.
 
 ## Properties
@@ -159,7 +158,7 @@ Returns a block instance at the given location.
 
 ### **getBlockFromRay**
 `
-getBlockFromRay(location: Vector3, direction: Vector3, options?: BlockRaycastOptions): Block
+getBlockFromRay(location: Vector3, direction: Vector3, options?: BlockRaycastOptions): BlockRaycastHit | undefined
 `
 
 Gets the first block that intersects with a vector emanating from a location.
@@ -175,13 +174,10 @@ Gets the first block that intersects with a vector emanating from a location.
   
   Additional options for processing this raycast query.
 
-#### **Returns** [*Block*](Block.md)
+#### **Returns** [*BlockRaycastHit*](BlockRaycastHit.md) | *undefined*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
 
 ### **getEntities**
 `
@@ -273,7 +269,7 @@ Returns a set of entities at a particular location.
 
 ### **getEntitiesFromRay**
 `
-getEntitiesFromRay(location: Vector3, direction: Vector3, options?: EntityRaycastOptions): Entity[]
+getEntitiesFromRay(location: Vector3, direction: Vector3, options?: EntityRaycastOptions): EntityRaycastHit[]
 `
 
 Gets entities that intersect with a specified vector emanating from a location.
@@ -285,13 +281,10 @@ Gets entities that intersect with a specified vector emanating from a location.
   
   Additional options for processing this raycast query.
 
-#### **Returns** [*Entity*](Entity.md)[]
+#### **Returns** [*EntityRaycastHit*](EntityRaycastHit.md)[]
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
 
 ### **getPlayers**
 `
@@ -382,9 +375,6 @@ Creates a new entity (e.g., a mob) at the specified location.
 
 #### **Returns** [*Entity*](Entity.md) - Newly created entity at the specified location.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
@@ -446,9 +436,6 @@ Creates a new item stack as an entity at the specified location.
   The location at which to create the item stack.
 
 #### **Returns** [*Entity*](Entity.md) - Newly created item stack entity at the specified location.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

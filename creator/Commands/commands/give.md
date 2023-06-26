@@ -24,7 +24,7 @@ Gives an item to a player.
 ### Give item to target
 `/give <player: target> <itemName: Item> [amount: int] [data: int] [components: json]`
 
-Give a target an item.
+Give a set of players selected via a target selector an item.
 
 ## Arguments
 - `amount`: int

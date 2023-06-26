@@ -3794,10 +3794,6 @@ Lodestone Compass
 - `wither_spawn_egg`
 - `minecraft:ender_dragon_spawn_egg`
 - `ender_dragon_spawn_egg`
-- `minecraft:suspicious_stew`
-Suspicious Stew
-- `suspicious_stew`
-Suspicious Stew
 - `speckled_melon`
 Speckled Melon
 - `real_double_stone_slab4`
@@ -3931,6 +3927,10 @@ Spawn Egg
 Spawn Egg
 - `minecraft:dye`
 Dye
+- `minecraft:suspicious_stew`
+Suspicious Stew
+- `suspicious_stew`
+Suspicious Stew
 - `minecraft:filled_map`
 Filled Map
 - `filled_map`
