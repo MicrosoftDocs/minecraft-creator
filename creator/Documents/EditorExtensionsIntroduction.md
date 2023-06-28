@@ -13,7 +13,7 @@ How do you get started? Well, that depends on what you already know. There are a
 >- You have Minecraft Bedrock Preview running on a Windows PC.
 >- You have worked with Resource Packs and Behavior Packs to change something in Minecraft. If not, you should start with [Getting Started with Minecraft Add-ons](GettingStarted.md).
 >- You know how to use slash commands in Minecraft as shown in the [Commands Introduction](CommandsIntroduction.md).
->- You have taken a look at [Minecraft scripting](https://learn.microsoft.com/minecraft/creator/documents/scriptinggettingstarted) and set up your programming environment so you can try it.
+>- You have taken a look at [Minecraft scripting](../Documents/scriptinggettingstarted) and set up your programming environment so you can try it.
 >- You know what an Application Programming Interface (API) is.
 >- You have used Editor to edit a world. If not, you should start with the [Editor Tutorial](EditorTutorial.md).
 >- You would like to change the functionality of one or more of the Editor tools or at least know more about how to do it.
@@ -30,6 +30,6 @@ If you've never worked with an API before, it's worth taking the time to learn a
 
 Then, you could go through the [Scripting tutorial](./ScriptingGettingStarted.md).
 
-After you get all the prerequisites out of the way, you could take a look at some examples of Extensions - there is a [starter kit and GitHub repo](github.com/mojang/minecraft-editor).
+After you get all the prerequisites out of the way, you could take a look at some examples of Extensions - there is a [starter kit and GitHub repo](https://github.com/mojang/minecraft-editor).
 
 Now you're ready to try one of the examples or get started building your own!
