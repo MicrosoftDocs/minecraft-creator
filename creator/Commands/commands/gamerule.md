@@ -106,6 +106,7 @@ controls whether border effects are shown
 
 ### `IntGameRule`
 An `integer` to replace the following default values.
+
 `1` for the `DEFAULT_RANDOMTICKSPEED`.
 `4096` for the `MAX_RANDOMTICKSPEED`.
 `10000` for the `MAX_FUNCTIONCOMMANDLIMIT`.

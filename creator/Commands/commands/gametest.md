@@ -7,7 +7,7 @@ title: gametest Command
 description: Description and usage of the gametest command
 ---
 # `/gametest` Command
-[Requires the Beta APIs experiment].
+[Requires the Beta APIs experiment].  Configures various parameters for managing built-in or custom gametest framework tests.
 
 <table>
   <tr>
@@ -46,7 +46,7 @@ Runs a set of gametests with a particular tag.
 
 Runs a set of gametests until a failure is detected, using a particular tag.
 
-### Clear all
+### Clear all tests
 `/gametest clearall`
 
 Clears out existing gametests and potentially any side effects.
@@ -69,7 +69,7 @@ Runs nearby tests.
 ### Stop all tests
 `/gametest stopall`
 
-Stops all tests.
+Stops all currently-running gametests.
 
 ## Arguments
 - `depth`: int

@@ -7,8 +7,7 @@ title: minecraft/server-gametest.SimulatedPlayer Class
 description: Contents of the @minecraft/server-gametest.SimulatedPlayer class.
 ---
 # SimulatedPlayer Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 ## Extends
 - [*@minecraft/server.Player*](../../minecraft/server/Player.md)
 
@@ -36,6 +35,7 @@ Type: *boolean*
 - [attackEntity](#attackentity)
 - [breakBlock](#breakblock)
 - [disconnect](#disconnect)
+- [dropSelectedItem](#dropselecteditem)
 - [fly](#fly)
 - [giveItem](#giveitem)
 - [glide](#glide)
@@ -134,6 +134,21 @@ disconnect(): void
 `
 
 Simulates and performs a disconnection of the simulated player from the world.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **dropSelectedItem**
+`
+dropSelectedItem(): boolean
+`
+
+Drops the simulated player's selected item
+
+#### **Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

@@ -7,10 +7,6 @@ title: minecraft/server.ScreenDisplay Class
 description: Contents of the @minecraft/server.ScreenDisplay class.
 ---
 # ScreenDisplay Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains information about user interface elements that are showing up on the screen.
 
@@ -120,30 +116,6 @@ Updates the subtitle if the subtitle was previously displayed via the setTitle m
 
 > [!WARNING]
 > This function can throw errors.
-
-#### Examples
-##### ***countdown.ts***
-```typescript
-  let players = mc.world.getPlayers();
-
-  players[0].onScreenDisplay.setTitle("Get ready!", {
-    stayDuration: 220,
-    fadeInDuration: 2,
-    fadeOutDuration: 4,
-    subtitle: "10",
-  });
-
-  let countdown = 10;
-
-  let intervalId = mc.system.runInterval(() => {
-    countdown--;
-    players[0].onScreenDisplay.updateSubtitle(countdown.toString());
-
-    if (countdown == 0) {
-      mc.system.clearRun(intervalId);
-    }
-  }, 20);
-```
 
 #### Examples
 ##### ***countdown.ts***

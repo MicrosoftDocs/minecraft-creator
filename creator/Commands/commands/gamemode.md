@@ -42,13 +42,6 @@ A player name `string` or [`target selector`](https://learn.microsoft.com/minecr
 ## Enums
 ### `GameMode`
 The game mode.
-|Mode|Enum| Abbreviation|Integer|
-|-----|------|-----|----|
-|Survival| `survival` | s|0|
-|Creative| `creative` | c|1|
-|Adventure| `adventure` | a|2|
-|Default| `default` |d|5|
-|Spectator| `spectator` |*none*|*none*|
 
 #### Values
 - `default`

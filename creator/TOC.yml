@@ -184,6 +184,8 @@
             href: Documents/GameTestBuildYourFirstGameTest.md
           - name: Script Versioning
             href: Documents/ScriptVersioning.md
+          - name: Building Editor Extensions
+            href: Documents/EditorExtensionsIntroduction.md
         - name: Creator Tools
           items:
           - name: Commonly Used Tools
@@ -200,6 +202,8 @@
                 href: Documents/EditorOverview.md
               - name: Editor Tutorial
                 href: Documents/EditorTutorial.md
+              - name: Building Editor Extensions
+                href: Documents/EditorExtensionsIntroduction.md
           - name: Blockbench
             items:
             - name: Minecraft Block Wizard

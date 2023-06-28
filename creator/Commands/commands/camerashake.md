@@ -51,4 +51,4 @@ Variation of the camera's shaking.
 - `positional`
 Shakes camera as though target's X and Z position is changing rapidly.
 - `rotational`
-Shakes camera as though target's X,Y,and Z coordinates are changing rapidly.
+Shakes camera as though target's X, Y, and Z coordinates are changing rapidly.

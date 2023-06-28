@@ -7,8 +7,7 @@ title: minecraft/server.DynamicPropertiesDefinition Class
 description: Contents of the @minecraft/server.DynamicPropertiesDefinition class.
 ---
 # DynamicPropertiesDefinition Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
@@ -19,6 +18,7 @@ Class used in conjunction with [*@minecraft/server.PropertyRegistry*](../../mine
 - [defineBoolean](#defineboolean)
 - [defineNumber](#definenumber)
 - [defineString](#definestring)
+- [defineVector](#definevector)
 
 ### **constructor**
 `
@@ -72,6 +72,26 @@ Defines a string dynamic property.
 - **identifier**: *string*
 - **maxLength**: *number*
 - **defaultValue**?: *string* = `null`
+
+#### **Returns** [*DynamicPropertiesDefinition*](DynamicPropertiesDefinition.md)
+
+> [!WARNING]
+> This function can throw errors.
+
+### **defineVector**
+`
+defineVector(identifier: string, defaultValue?: Vector3): DynamicPropertiesDefinition
+`
+
+Defines a new Vector3-based dynamic property.
+
+#### **Parameters**
+- **identifier**: *string*
+  
+  Identifier of the Vector3 property.
+- **defaultValue**?: [*Vector3*](Vector3.md) = `null`
+  
+  Optional default starting Vector for this property.
 
 #### **Returns** [*DynamicPropertiesDefinition*](DynamicPropertiesDefinition.md)
 

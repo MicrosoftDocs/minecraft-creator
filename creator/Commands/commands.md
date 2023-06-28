@@ -30,7 +30,7 @@ description: List and descriptions of Minecraft commands and enums
 | [`/function`](./commands/function.md) | Runs commands found in the corresponding function file. | Game Directors | Yes |
 | [`/gamemode`](./commands/gamemode.md) | Sets a player&#39;s game mode. See more in the [Popular Commands documentation](https:&#x2F;&#x2F;learn.microsoft.com&#x2F;minecraft&#x2F;creator&#x2F;documents&#x2F;commandspopularcommands#gamemode). | Game Directors | Yes |
 | [`/gamerule`](./commands/gamerule.md) | Sets or queries a game rule value. See more in the [Popular Commands documentation](https:&#x2F;&#x2F;learn.microsoft.com&#x2F;minecraft&#x2F;creator&#x2F;documents&#x2F;commandspopularcommands#gamerule). | Game Directors | No |
-| [`/gametest`](./commands/gametest.md) | [Requires the Beta APIs experiment]. | Game Directors | Yes |
+| [`/gametest`](./commands/gametest.md) | [Requires the Beta APIs experiment].  Configures various parameters for managing built-in or custom gametest framework tests. | Game Directors | Yes |
 | [`/give`](./commands/give.md) | Gives an item to a player. | Game Directors | Yes |
 | [`/help`](./commands/help.md) | Running &#x60;&#x2F;help&#x60; in the chat by itself will list every command you can run. However, since there are so many, they have been divided up into several pages, where you are shown only one page at a time. Supplying a page number will change which page of commands to show.Whenever you want to know the usage and all of the syntaxes of a command, you can use &#x2F;help followed by the name of the command. This can be helpful if you want an overview of the command.See more in the [Popular Commands documentation](https:&#x2F;&#x2F;learn.microsoft.com&#x2F;minecraft&#x2F;creator&#x2F;documents&#x2F;commandspopularcommands#help). | Any | No |
 | [`/inputpermission`](./commands/inputpermission.md) | Optionally enables or disables input permissions for a player. | Game Directors | Yes |
@@ -47,20 +47,21 @@ description: List and descriptions of Minecraft commands and enums
 | [`/permission`](./commands/permission.md) | Reloads and applies permissions. This command is for use on a dedicated server only. | Owner | Yes |
 | [`/playanimation`](./commands/playanimation.md) | Makes one or more entities play a one-off animation. | Game Directors | Yes |
 | [`/playsound`](./commands/playsound.md) | Plays a sound. | Game Directors | Yes |
-| [`/project`](./commands/project.md) | Manipulate the currently loaded project | Game Directors | No |
+| [`/project`](./commands/project.md) | This command contains additional tools for managing an Editor project. This command is available in Editor mode only. | Game Directors | No |
 | [`/reload`](./commands/reload.md) | Reloads all function and script files from all behavior packs. | Admin | Yes |
+| [`/reloadconfig`](./commands/reloadconfig.md) | Reloads configuration files relating to variables, secrets, permissions, etc. | Owner | Yes |
 | [`/replaceitem`](./commands/replaceitem.md) | Replaces items in inventories. | Game Directors | Yes |
 | [`/ride`](./commands/ride.md) | Makes entities ride other entities, stops entities from riding, makes rides evict their riders, or summons rides or riders. | Game Directors | Yes |
 | [`/save`](./commands/save.md) | Control or check how the game saves data to disk. This command is for use on a dedicated server only. | Owner | Yes |
 | [`/say`](./commands/say.md) | Sends a message in the chat to other players. | Game Directors | No |
 | [`/schedule`](./commands/schedule.md) | Schedules an action to be executed once an area is loaded, or after a certain amount of time. | Game Directors | Yes |
 | [`/scoreboard`](./commands/scoreboard.md) | Tracks and displays scores for various objectives. See more information about its use in the [Scoreboards Objectives Commands documentation](&#x2F;creator&#x2F;documents&#x2F;scoreboardintroduction#scoreboard-objectives-commands) page. | Game Directors | Yes |
-| [`/script`](./commands/script.md) | Debugging options for GameTest Framework. | Admin | Yes |
-| [`/scriptevent`](./commands/scriptevent.md) | [Experimental feature.] Causes an event to fire within script with the specified message ID and payload. This can be used to connect scripting with any location where commands are used. | Game Directors | Yes |
+| [`/script`](./commands/script.md) | Debugging options for script within Minecraft. | Admin | Yes |
+| [`/scriptevent`](./commands/scriptevent.md) | Causes an event to fire within script with the specified message ID and payload. This can be used to connect scripting with any location where commands are used. | Game Directors | Yes |
 | [`/setblock`](./commands/setblock.md) | Changes a block to another block. | Game Directors | Yes |
 | [`/setmaxplayers`](./commands/setmaxplayers.md) | Sets the maximum number of players for this game session. | Host | Yes |
 | [`/setworldspawn`](./commands/setworldspawn.md) | Sets the location where new players or players who die will spawn in the world. | Game Directors | Yes |
-| [`/simulationtype`](./commands/simulationtype.md) | Changes simulation type for editor mode | Game Directors | No |
+| [`/simulationtype`](./commands/simulationtype.md) | Editor mode only.  This command changes the net simulation mode of the Minecraft game between being editor specific vs. a game-type simulation. | Game Directors | No |
 | [`/spawnpoint`](./commands/spawnpoint.md) | Sets the spawn point for a player. | Game Directors | Yes |
 | [`/spreadplayers`](./commands/spreadplayers.md) | Teleports entities to random locations. | Game Directors | Yes |
 | [`/stop`](./commands/stop.md) | Stops the server. This command is for use on a dedicated server only. | Owner | Yes |
