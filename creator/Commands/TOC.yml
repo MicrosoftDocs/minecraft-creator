@@ -80,6 +80,8 @@
   href: commands/project.md
 - name: reload
   href: commands/reload.md
+- name: reloadconfig
+  href: commands/reloadconfig.md
 - name: replaceitem
   href: commands/replaceitem.md
 - name: ride

@@ -7,13 +7,11 @@ title: minecraft/server.IWorldInitializeAfterEventSignal Class
 description: Contents of the @minecraft/server.IWorldInitializeAfterEventSignal class.
 ---
 # IWorldInitializeAfterEventSignal Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Classes that extend IWorldInitializeAfterEventSignal
-- [*WorldInitializeAfterEventSignal*](WorldInitializeAfterEventSignal.md)
 - [*WorldInitializeAfterEventSignal*](WorldInitializeAfterEventSignal.md)
 
 An event that fires when a world is first initialized or loaded.
@@ -27,10 +25,14 @@ An event that fires when a world is first initialized or loaded.
 subscribe(callback: (arg: WorldInitializeAfterEvent) => void): (arg: WorldInitializeAfterEvent) => void
 `
 
+Subscribes a specified callback to a world initialize event.
+
 #### **Parameters**
 - **callback**: (arg: [*WorldInitializeAfterEvent*](WorldInitializeAfterEvent.md)) => *void*
+  
+  Function to subscribe to the event.
 
-#### **Returns** (arg: [*WorldInitializeAfterEvent*](WorldInitializeAfterEvent.md)) => *void*
+#### **Returns** (arg: [*WorldInitializeAfterEvent*](WorldInitializeAfterEvent.md)) => *void* - Returns a function token that can be used to later unsubscribe callers to the event.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -39,6 +41,8 @@ subscribe(callback: (arg: WorldInitializeAfterEvent) => void): (arg: WorldInitia
 `
 unsubscribe(callback: (arg: WorldInitializeAfterEvent) => void): void
 `
+
+Unsubscribes a previously-subscribed caller to this event.
 
 #### **Parameters**
 - **callback**: (arg: [*WorldInitializeAfterEvent*](WorldInitializeAfterEvent.md)) => *void*

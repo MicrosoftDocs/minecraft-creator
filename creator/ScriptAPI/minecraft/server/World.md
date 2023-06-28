@@ -7,8 +7,7 @@ title: minecraft/server.World Class
 description: Contents of the @minecraft/server.World class.
 ---
 # World Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 A class that wraps the state of a world - a set of dimensions and the environment of Minecraft.
 
 ## Properties
@@ -47,20 +46,22 @@ Type: [*Scoreboard*](Scoreboard.md)
 - [broadcastClientMessage](#broadcastclientmessage)
 - [getAbsoluteTime](#getabsolutetime)
 - [getAllPlayers](#getallplayers)
+- [getDay](#getday)
 - [getDefaultSpawnLocation](#getdefaultspawnlocation)
 - [getDimension](#getdimension)
 - [getDynamicProperty](#getdynamicproperty)
 - [getEntity](#getentity)
 - [getPlayers](#getplayers)
-- [getTime](#gettime)
+- [getTimeOfDay](#gettimeofday)
 - [playMusic](#playmusic)
 - [playSound](#playsound)
 - [queueMusic](#queuemusic)
 - [removeDynamicProperty](#removedynamicproperty)
 - [sendMessage](#sendmessage)
+- [setAbsoluteTime](#setabsolutetime)
 - [setDefaultSpawnLocation](#setdefaultspawnlocation)
 - [setDynamicProperty](#setdynamicproperty)
-- [setTime](#settime)
+- [setTimeOfDay](#settimeofday)
 - [stopMusic](#stopmusic)
 
 ### **broadcastClientMessage**
@@ -89,9 +90,6 @@ Returns the absolute time since the start of the world.
 
 #### **Returns** *number*
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **getAllPlayers**
 `
 getAllPlayers(): Player[]
@@ -104,10 +102,21 @@ Returns an array of all active players within the world.
 > [!WARNING]
 > This function can throw errors.
 
+### **getDay**
+`
+getDay(): number
+`
+
+Returns the day number of the current world.
+
+#### **Returns** *number*
+
 ### **getDefaultSpawnLocation**
 `
 getDefaultSpawnLocation(): Vector3
 `
+
+Returns the default spawn location within the world.
 
 #### **Returns** [*Vector3*](Vector3.md)
 
@@ -131,7 +140,7 @@ Returns a dimension object.
 
 ### **getDynamicProperty**
 `
-getDynamicProperty(identifier: string): boolean | number | string | undefined
+getDynamicProperty(identifier: string): boolean | number | string | Vector3 | undefined
 `
 
 Returns a property value.
@@ -139,7 +148,7 @@ Returns a property value.
 #### **Parameters**
 - **identifier**: *string*
 
-#### **Returns** *boolean* | *number* | *string* | *undefined* - Returns the value for the property, or undefined if the property has not been set.
+#### **Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -238,17 +247,14 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
 > [!WARNING]
 > This function can throw errors.
 
-### **getTime**
+### **getTimeOfDay**
 `
-getTime(): number
+getTimeOfDay(): number
 `
 
-Sets the current game time of the day.
+Gets the current time within the current day.
 
 #### **Returns** *number*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **playMusic**
 `
@@ -433,6 +439,19 @@ const rawMessage = { translate: "accessibility.list.or.two", with: ["First", "Se
 world.sendMessage(rawMessage);
 ```
 
+### **setAbsoluteTime**
+`
+setAbsoluteTime(absoluteTime: number): void
+`
+
+Sets the overall absolute time within the world. This can advance the number of effective days that are considered within the world.
+
+#### **Parameters**
+- **absoluteTime**: *number*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **setDefaultSpawnLocation**
 `
 setDefaultSpawnLocation(spawnLocation: Vector3): void
@@ -456,14 +475,14 @@ Sets a default spawn location for all players.
 
 ### **setDynamicProperty**
 `
-setDynamicProperty(identifier: string, value: boolean | number | string): void
+setDynamicProperty(identifier: string, value: boolean | number | string | Vector3): void
 `
 
 Sets a specified property to a value.
 
 #### **Parameters**
 - **identifier**: *string*
-- **value**: *boolean* | *number* | *string*
+- **value**: *boolean* | *number* | *string* | [*Vector3*](Vector3.md)
   
   Data value of the property to set.
 
@@ -530,21 +549,21 @@ Sets a specified property to a value.
   mc.world.setDynamicProperty("samplelibrary:longerjson", paintStr);
 ```
 
-### **setTime**
+### **setTimeOfDay**
 `
-setTime(timeOfDay: number): void
+setTimeOfDay(timeOfDay: number | TimeOfDay): void
 `
 
-Returns the current game time of the day.
+Sets the current time within the current day.
 
 #### **Parameters**
-- **timeOfDay**: *number*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+- **timeOfDay**: *number* | [*TimeOfDay*](TimeOfDay.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **stopMusic**
 `

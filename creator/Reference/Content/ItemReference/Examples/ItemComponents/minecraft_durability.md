@@ -23,7 +23,7 @@ ms.prod: gaming
     "damage_chance": {
         "min": 10,
         "max": 50
-}
+},
     "max_durability": 36
 }
 ```

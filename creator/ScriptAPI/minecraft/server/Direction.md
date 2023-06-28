@@ -7,35 +7,34 @@ title: .Direction Enumeration
 description: Contents of the .Direction enumeration.
 ---
 # Direction Enumeration
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 > [!CAUTION]
 > This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 A general purpose relative direction enumeration.
 
 ## Constants
-### **down**
-`down = "down"`
+### **Down**
+`Down = "Down"`
 
 Returns the block beneath (y - 1) of this item.
-### **east**
-`east = "east"`
+### **East**
+`East = "East"`
 
 Returns the block to the east (x + 1) of this item.
-### **north**
-`north = "north"`
+### **North**
+`North = "North"`
 
 Returns the block to the east (z + 1) of this item.
-### **south**
-`south = "south"`
+### **South**
+`South = "South"`
 
 Returns the block to the south (z - 1) of this item.
-### **up**
-`up = "up"`
+### **Up**
+`Up = "Up"`
 
 Returns the block above (y + 1) of this item.
-### **west**
-`west = "west"`
+### **West**
+`West = "West"`
 
 Returns the block to the west (x - 1) of this item.

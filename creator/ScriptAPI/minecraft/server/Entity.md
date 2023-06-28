@@ -7,13 +7,8 @@ title: minecraft/server.Entity Class
 description: Contents of the @minecraft/server.Entity class.
 ---
 # Entity Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 ## Classes that extend Entity
-- [*Player*](Player.md)
-- [*Player*](Player.md)
-- [*Player*](Player.md)
-- [*Player*](Player.md)
 - [*Player*](Player.md)
 
 Represents the state of an entity (a mob, the player, or other moving objects like minecarts) in the world.
@@ -193,6 +188,7 @@ Type: *string*
 - [getViewDirection](#getviewdirection)
 - [hasComponent](#hascomponent)
 - [hasTag](#hastag)
+- [isValid](#isvalid)
 - [kill](#kill)
 - [playAnimation](#playanimation)
 - [removeDynamicProperty](#removedynamicproperty)
@@ -224,9 +220,6 @@ Adds or updates an effect, like poison, to the entity.
 - **options**?: [*EntityEffectOptions*](EntityEffectOptions.md) = `null`
   
   Additional options for the effect.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -503,7 +496,7 @@ Extinguishes the fire if the entity is on fire. Note that you can call getCompon
 
 ### **getBlockFromViewDirection**
 `
-getBlockFromViewDirection(options?: BlockRaycastOptions): Block
+getBlockFromViewDirection(options?: BlockRaycastOptions): BlockRaycastHit | undefined
 `
 
 Returns the first intersecting block from the direction that this entity is looking at.
@@ -513,7 +506,7 @@ Returns the first intersecting block from the direction that this entity is look
   
   Additional configuration options for the ray cast.
 
-#### **Returns** [*Block*](Block.md) - Returns the first intersecting block from the direction that this entity is looking at.
+#### **Returns** [*BlockRaycastHit*](BlockRaycastHit.md) | *undefined* - Returns the first intersecting block from the direction that this entity is looking at.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -546,7 +539,7 @@ Returns all components that are both present on this entity and supported by the
 
 ### **getDynamicProperty**
 `
-getDynamicProperty(identifier: string): boolean | number | string | undefined
+getDynamicProperty(identifier: string): boolean | number | string | Vector3 | undefined
 `
 
 Returns a property value.
@@ -556,7 +549,7 @@ Returns a property value.
   
   The property identifier.
 
-#### **Returns** *boolean* | *number* | *string* | *undefined* - Returns the value for the property, or undefined if the property has not been set.
+#### **Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -578,9 +571,6 @@ Returns the effect for the specified EffectType on the entity, undefined if the 
 
 #### **Returns** [*Effect*](Effect.md) | *undefined* - Effect object for the specified effect, undefined if the effect is not present, or throws an error if the effect does not exist.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 
@@ -593,15 +583,12 @@ Returns a set of effects applied to this entity.
 
 #### **Returns** [*Effect*](Effect.md)[] - List of effects.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 
 ### **getEntitiesFromViewDirection**
 `
-getEntitiesFromViewDirection(options?: EntityRaycastOptions): Entity[]
+getEntitiesFromViewDirection(options?: EntityRaycastOptions): EntityRaycastHit[]
 `
 
 Gets the entities that this entity is looking at by performing a ray cast from the view of this entity.
@@ -611,7 +598,7 @@ Gets the entities that this entity is looking at by performing a ray cast from t
   
   Additional configuration options for the ray cast.
 
-#### **Returns** [*Entity*](Entity.md)[] - Returns a set of entities from the direction that this entity is looking at.
+#### **Returns** [*EntityRaycastHit*](EntityRaycastHit.md)[] - Returns a set of entities from the direction that this entity is looking at.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -725,6 +712,18 @@ Returns whether an entity has a particular tag.
 > [!WARNING]
 > This function can throw errors.
 
+### **isValid**
+`
+isValid(): boolean
+`
+
+Returns true if this component is still active and usable within JavaScript. Within a tick or in the scope of an event handler, an Entity object should generally be valid; however, if you hold a reference to an entity across ticks or event callbacks, be careful to check for entity validity. Entities can become invalid if they, for example, get unloaded or after they die.
+
+#### **Returns** *boolean*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **kill**
 `
 kill(): boolean
@@ -819,9 +818,6 @@ Removes the specified EffectType on the entity, or returns false if the effect i
 
 #### **Returns** *boolean* - Returns true if the effect has been removed. Returns false if the effect is not found or does not exist.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
@@ -887,7 +883,7 @@ Runs a particular command asynchronously from the context of this entity. Note t
 
 ### **setDynamicProperty**
 `
-setDynamicProperty(identifier: string, value: boolean | number | string): void
+setDynamicProperty(identifier: string, value: boolean | number | string | Vector3): void
 `
 
 Sets a specified property to a value.
@@ -896,7 +892,7 @@ Sets a specified property to a value.
 - **identifier**: *string*
   
   The property identifier.
-- **value**: *boolean* | *number* | *string*
+- **value**: *boolean* | *number* | *string* | [*Vector3*](Vector3.md)
   
   Data value of the property to set.
 

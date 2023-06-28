@@ -7,8 +7,7 @@ title: minecraft/server.ItemStack Class
 description: Contents of the @minecraft/server.ItemStack class.
 ---
 # ItemStack Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 Defines a collection of items.
 
 ## Properties
@@ -19,6 +18,9 @@ Defines a collection of items.
 Number of the items in the stack. Valid values range between 1-255. The provided value will be clamped to the item's maximum stack size.
 
 Type: *number*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 > [!IMPORTANT]
 > This property can't be edited in read-only mode.
@@ -39,6 +41,9 @@ Type: *boolean*
 Gets or sets whether the item is kept on death.
 
 Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 > [!IMPORTANT]
 > This property can't be edited in read-only mode.
@@ -49,6 +54,9 @@ Type: *boolean*
 Gets or sets the item's lock mode. The default value is `ItemLockMode.none`.
 
 Type: [*ItemLockMode*](ItemLockMode.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 > [!IMPORTANT]
 > This property can't be edited in read-only mode.
@@ -66,6 +74,9 @@ Type: *number*
 Given name of this stack of items. The name tag is displayed when hovering over the item. Setting the name tag to an empty string or `undefined` will remove the name tag.
 
 Type: *string*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 > [!IMPORTANT]
 > This property can't be edited in read-only mode.
@@ -174,9 +185,6 @@ getLore(): string[]
 Returns the lore value - a secondary display string - for an ItemStack.
 
 #### **Returns** *string*[] - An array of lore strings. If the item does not have lore, returns an empty array.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **getTags**
 `
@@ -297,11 +305,11 @@ Sets the lore value - a secondary display string - for an ItemStack.
 #### **Parameters**
 - **loreList**?: *string*[] = `null`
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
 
 #### Examples
 ##### ***diamondAwesomeSword.ts***
