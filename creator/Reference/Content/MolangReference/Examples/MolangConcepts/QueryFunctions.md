@@ -122,6 +122,7 @@ Query Functions are operators that access a wide variety of information. They ca
 | query.is_charged| Returns 1.0 if the entity is charged, else it returns 0.0. |
 | query.is_charging| Returns 1.0 if the entity is charging, else it returns 0.0. |
 | query.is_chested| Returns 1.0 if the entity has chests attached to it, else it returns 0.0. |
+| query.is_crawling| Returns 1.0 if the entity is crawling, else it returns 0.0. |
 | query.is_critical| Returns 1.0 if the entity is critical, else it returns 0.0. |
 | query.is_croaking| Returns 1.0 if the entity is croaking, else it returns 0.0. |
 | query.is_dancing| Returns 1.0 if the entity is dancing, else it returns 0.0. |
@@ -267,7 +268,7 @@ Query Functions are operators that access a wide variety of information. They ca
 | query.unhappy_counter| Returns how unhappy the entity is. |
 | query.variant| Returns the entity's variant index. |
 | query.vertical_speed| Returns the speed of the entity up or down in meters/second, where positive is up. |
-| query.walk_distance| Returns the walk distance of the entity. |
+| query.walk_distance| Returns the total distance traveled by an entity while on the ground and not sneaking. |
 | query.wing_flap_position| Returns the wing flap position of the entity, or 0.0 if this doesn't make sense. |
 | query.wing_flap_speed| Returns the wing flap speed of the entity, or 0.0 if this doesn't make sense. |
 | query.yaw_speed| Returns the entity's yaw speed. |
