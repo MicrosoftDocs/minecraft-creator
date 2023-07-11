@@ -28,7 +28,7 @@ The built-in Camera Preset names are:
 >- "minecraft:third_person_front"
 >- "minecraft:free"
 
-The first three names correspond to the standard gameplay perspective options which you can cycle through by pressing F5 on the keyboard, with the controller directional pad, or by selecting the perspective you want in the Settings menu.  
+The first three names correspond to the standard gameplay perspective options which you can cycle through by pressing F5 on the keyboard, pressing "up" on the controller directional pad, or by selecting the perspective you want in the Settings menu.  
 
 The last name is for the new free camera, which just floats in space and does nothing.
 
@@ -104,7 +104,7 @@ This command has the following syntax options:
 
 `/camera <players> fade [time <fadeInSeconds> <holdSeconds> <fadeOutSeconds>] [color <red> <green> <blue>]`
 
-Every version of the camera command starts with a player selector, which is used to specify the player or player(s) that will be affected by the command. After that, there are three options that you can specify: "set", "clear", or "fade". "set" will cause the targeted player(s) to use a specified camera perspective. "clear" will return the targeted player(s) back to their usual camera mode. "fade" will cause a full-screen fade, like what players see when sleeping in a bed.
+Every version of the camera command starts with a player selector, which is used to specify the player or players who will be affected by the command. After that, there are three options that you can specify: "set", "clear", or "fade". "set" will cause the targeted player(s) to use a specified camera perspective. "clear" will return the targeted player(s) back to their usual camera mode. "fade" will cause a full-screen fade, like what players see when sleeping in a bed.
 
 ## The "set" Option
 
@@ -115,7 +115,7 @@ There are several additional options that can be used with the "set" option.
 
 ### The "ease" sub-option
 
-The ease option will cause the transition between the views to be done over some specified number of seconds, rather than instantly. It requires specifying an 'easeType', which is the name of one of the various easing methods available. 32 different options are "linear", "spring", or the thirty other options that can be viewed at on [Easing Functions Cheat Sheet](https://easings.net) (easings.net)  
+The ease option will cause the transition between the views to be done over some specified number of seconds, rather than instantly. It requires specifying an 'easeType', which is the name of one of the various easing methods available. The 32 different options are "linear", "spring", or the thirty other options that can be viewed at on [Easing Functions Cheat Sheet](https://easings.net) (easings.net)  
 
 Eased motions always start from where the camera currently is, so an ease from A to B which is interrupted with another ease to C will start from somewhere in between A and B.
 
@@ -155,7 +155,7 @@ This sub-option allows for customizing the timing of the fade effect. If not spe
 
 ### The "color" sub-option
 
-This sub-option allows for customizing the color of the fade effect. The red, green, and blue values should be a value from 0.0 to 1.0. The target opacity of the fade is always fully opaque. If this is not specified, it will use 0.0 for each value, which causes a fade to black.
+This sub-option allows for customizing the color of the fade effect. The red, green, and blue values should each be an integer value from 0 to 255. The target opacity of the fade is always fully opaque. If this is not specified, it will use 0 for each value, which causes a fade to black. 
 
 ## Fade timing, networked gameplay, and game performance
 
@@ -211,7 +211,7 @@ To return that camera back to normal, the player could either exit and rejoin th
 
 ## How the Camera Command Affects VR Users
 
-When using a Virtual Reality headset, players can be in an immersive first-person view, or in a virtual living room with a virtual television that displays a flat view of the game. When a camera command using "set" targets a VR player in the immersive first-person view, they will be transitioned to the virtual living room and the specified Camera Preset will appear on the virtual screen. While a "set" is active for force the player to a particular perspective (including "minecraft:first_person"), pressing the perspective change button will display a message explaining the situation, and the transition to the immersive view will be prevented.
+When using a Virtual Reality headset, players can be in an immersive first-person view, or in a virtual living room with a virtual television that displays a flat view of the game. When a camera command using "set" targets a VR player in the immersive first-person view, they will be transitioned to the virtual living room and the specified Camera Preset will appear on the virtual screen. While a "set" is active to force the player to a particular perspective (including "minecraft:first_person"), pressing the perspective change button will display a message explaining the situation, and the transition to the immersive view will be prevented.
 
 Camera commands using "fade" will not do anything for VR users in the immersive first-person mode, but players in the virtual living room will still see it.
 
