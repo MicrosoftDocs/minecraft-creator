@@ -18,6 +18,13 @@ Biomes describe how a local patch of the world should look and behave. By writin
 > * Change the mobs that spawn for a biome.
 > * Change the climate for a biome.
 
+>[!IMPORTANT]
+> Custom biomes require the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
+>
+>Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
+>
+>To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md).
+
 ## JSON format
 
 All biomes should specify the version that they target via the `format_version` field. The remainder of the biome data is divided up into independent JSON sub-objects, or components. In general you can think of the presence of a component as defining what game behaviors a biome participates in with the component fields defining how it participates. Broadly there are two categories of components:
