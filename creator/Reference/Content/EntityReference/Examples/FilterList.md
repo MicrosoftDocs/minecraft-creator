@@ -1,6 +1,6 @@
 ---
-author: iconicNurdle
-ms.author: mikeam
+author: mammerla
+ms.author: v-jimseaman
 title: Entity Documentation - FilterList
 ms.prod: gaming
 ---

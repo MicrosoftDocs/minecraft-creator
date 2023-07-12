@@ -1,6 +1,6 @@
 ---
-author: iconicNurdle
-ms.author: mikeam
+author: mammerla
+ms.author: v-jillheaden
 title: Entity Documentation - minecraft:behavior.nearest_attackable_target
 ms.prod: gaming
 ---

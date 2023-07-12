@@ -1,6 +1,6 @@
 ---
-author: iconicNurdle
-ms.author: mikeam
+author: mammerla
+ms.author: v-jillheaden
 title: Block Documentation - Block Components List
 ms.prod: gaming
 ---
