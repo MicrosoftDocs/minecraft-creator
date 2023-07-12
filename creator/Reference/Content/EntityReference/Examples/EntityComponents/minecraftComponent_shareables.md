@@ -38,7 +38,6 @@ ms.prod: gaming
 | stored_in_inventory| *not set*| Boolean| Determines whether the entity will try to put the item in its inventory if it has the inventory component and if it can't be equipped.|
 | surplus_amount| *not set*| Integer| Number of this item considered extra that the entity wants to share.|
 | want_amount| *not set*| Integer| Number of this item the entity wants to have.|
-| singular_pickup| false | Boolean | Controls if the mob is able to pick up more of the same item if it is already holding that item. |
 
 ## Example
 

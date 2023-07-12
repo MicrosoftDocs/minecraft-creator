@@ -62,8 +62,6 @@
   href: minecraftComponent_color.md
 - name: color2
   href: minecraftComponent_color2.md
-- name: collision_box
-  href: minecraftComponent_collision_box.md
 - name: combat_regeneration
   href: minecraftComponent_combat_regeneration.md
 - name: conditional_bandwidth_optimization
