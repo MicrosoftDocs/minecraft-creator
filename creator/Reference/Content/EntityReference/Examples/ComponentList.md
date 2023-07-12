@@ -41,6 +41,7 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:celebrate_hunt](EntityComponents/minecraftComponent_celebrate_hunt.md) |`minecraft:celebrate_hunt` compels an entity to celebrate when hunting a specific entity. |
 |[minecraft:color](EntityComponents/minecraftComponent_color.md) |`minecraft:color` defines the entity's main color. |
 |[minecraft:color2](EntityComponents/minecraftComponent_color2.md) |`minecraft:color2` defines the entity's second texture color. |
+|[minecraft:collision_box](EntityComponents/minecraftComponent_collision_box.md) |`minecraft:collision_box` defines the boundaries (width and height) of an entity. |
 |[minecraft:combat_regeneration](EntityComponents/minecraftComponent_combat_regeneration.md) |`minecraft:combat_regeneration` gives Regeneration I and removes Mining Fatigue from the entity that kills the Actor's attack target. |
 |[minecraft:conditional_bandwidth_optimization](EntityComponents/minecraftComponent_conditional_bandwidth_optimization.md) |`minecraft:conditional_bandwidth_optimization` defines the Conditional Spatial Update Bandwidth Optimizations of this entity. |
 |[minecraft:custom_hit_test](EntityComponents/minecraftComponent_custom_hit_test.md) |`minecraft:custom_hit_test` defines a list of hitboxes for melee and ranged hits against the entity.|
