@@ -76,7 +76,7 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:heartbeat](EntityComponents/minecraftComponent_heartbeat.md) |`minecraft:heartbeat` defines the entity heartbeat.|
 |[minecraft:hide](EntityComponents/minecraftComponent_hide.md) |`minecraft:hide` compels the entity to move to and hide at their owned POI or the closest nearby.|
 |[minecraft:home](EntityComponents/minecraftComponent_home.md) |`minecraft:home` saves a home point of interest for when the the entity is spawned.|
-|[minecraft:horse.jump_strength](EntityComponents/minecraftComponent_homrse.jump_strength.md) |`minecraft:horse.jump_strength` defines the jump height for a horse or similar entity, such as a donkey.|
+|[minecraft:horse.jump_strength](EntityComponents/minecraftComponent_horse.jump_strength.md) |`minecraft:horse.jump_strength` defines the jump height for a horse or similar entity, such as a donkey.|
 |[minecraft:hurt_on_condition](EntityComponents/minecraftComponent_hurt_on_condition.md) |`minecraft:hurt_on_condition` defines a set of conditions under which the entity should take damage.|
 |[minecraft:input_ground_controlled](EntityComponents/minecraftComponent_input_ground_controlled.md) |`minecraft:input_ground_controlled` allows a ridable entity to be controlled using keyboard controls when ridden by a player. |
 |[minecraft:inside_block_notifier](EntityComponents/minecraftComponent_inside_block_notifier.md) |`minecraft:inside_block_notifier` verifies whether the entity is inside any of the listed blocks.|
@@ -91,7 +91,6 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:is_hidden_when_invisible](EntityComponents/minecraftComponent_is_hidden_when_invisible.md) |`minecraft:is_hidden_when_invisible` sets that the entity can hide from hostile mobs while invisible. |
 |[minecraft:is_ignited](EntityComponents/minecraftComponent_is_ignited.md) |`minecraft:is_ignited` sets that the entity is currently on fire. |
 |[minecraft:is_illager_captain](EntityComponents/minecraftComponent_is_illager_captain.md) |`minecraft:is_illager_captain` sets that the entity is an illager captain. |
-|[minecraft:is_pregnant](EntityComponents/minecraftComponent_is_pregnant.md) |`minecraft:is_pregnant` sets that the entity is currently pregnant. |
 |[minecraft:is_saddled](EntityComponents/minecraftComponent_is_saddled.md) |`minecraft:is_saddled` sets that the entity is currently saddled. |
 |[minecraft:is_shaking](EntityComponents/minecraftComponent_is_shaking.md) |`minecraft:is_shaking` sets an entity is currently shaking. |
 |[minecraft:is_sheared](EntityComponents/minecraftComponent_is_sheared.md) |`minecraft:is_sheared` sets that this entity is currently sheared. |

@@ -9,13 +9,9 @@ description: Description and usage of the help command
 # `/help` Command
 Running `/help` in the chat by itself will list every command you can run. However, since there are so many, they have been divided up into several pages, where you are shown only one page at a time. Supplying a page number will change which page of commands to show.
 
-
-
 Whenever you want to know the usage and all of the syntaxes of a command, you can use /help followed by the name of the command. This can be helpful if you want an overview of the command.
 
-
-
-See more in the [Popular Commands documentation](https://learn.microsoft.com/minecraft/creator/documents/commandspopularcommands#help).
+See more in the [Popular Commands documentation](../../Documents/CommandsPopularCommands.md#help).
 
 <table>
   <tr>
