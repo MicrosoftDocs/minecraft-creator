@@ -24,8 +24,6 @@ Below is a list of all the available Item Components within Minecraft: Bedrock E
 |[minecraft:foil](ItemComponents/minecraft_foil.md)|*not set* | JSON Object|  When an item has a foil component, it gains a shimmery glint to its appearance.|
 |[minecraft:food](ItemComponents/minecraft_food.md)|*not set* | JSON Object|  When an item has a food component, it becomes edible to the player.|
 |[minecraft:fuel](ItemComponents/minecraft_fuel.md)|*not set* |  JSON Object| Allows the item to be used as fuel in a furnace to 'cook' other items. In format versions prior to 1.20.0, this component requires the 'Holiday Creator Features' experimental toggle.|
-|[minecraft:glint](ItemComponents/minecraft_glint.md)|*not set* |  JSON Object| Determines whether the item has the enchanted glint render effect.|
-|[minecraft:hand_equipped](ItemComponents/minecraft_hand_equipped.md)|*not set* |  JSON Object| Determines if an item is rendered like a tool while in hand.|
 |[minecraft:hover_text_color](ItemComponents/minecraft_hover_text_color.md)|*not set* |  JSON Object| Determines the color of the item name when hovering over it.|
 |[minecraft:icon](ItemComponents/minecraft_icon.md)|*not set* | JSON Object| Determines the icon to represent the item in the UI and elsewhere. In format versions before 1.20.10, this component requires the 'Holiday Creator Features' experimental toggle.|
 |[minecraft:max_stack_size](ItemComponents/minecraft_max_stack_size.md)|*not set* | JSON Object| Determines how many of the item can be stacked.|
@@ -36,7 +34,6 @@ Below is a list of all the available Item Components within Minecraft: Bedrock E
 |[minecraft:render_offsets](ItemComponents/minecraft_render_offsets.md)|*not set* | JSON Object|  Render offsets component: optional values can be given to offset the way the item is rendered.|
 |[minecraft:repairable](ItemComponents/minecraft_repairable.md)|*not set* | JSON Object|  Repairable item component: Determines which items can be used to repair a defined item, as well as the amount of durability specified items will repair. In format versions prior to 1.20.10, this component requires the 'Holiday Creator Features' experimental toggle.|
 |[minecraft:shooter](ItemComponents/minecraft_shooter.md)|*not set* | JSON Object|  Shooter Item Component. In format versions prior to 1.20.10, this component requires the 'Holiday Creator Features' experimental toggle.|
-|[minecraft:stacked_by_data](ItemComponents/minecraft_stacked_by_data.md)|*not set* | JSON Object|  Determines if the same item with different aux values can stack. Also defines whether the item actors can merge while floating in the world.|
 |[minecraft:throwable](ItemComponents/minecraft_throwable.md)|*not set* | JSON Object|  Throwable item component. Throwable items, such as a snowball. In format versions prior to 1.20.10, this component requires the 'Holiday Creator Features' experimental toggle.|
 |[minecraft:weapon](ItemComponents/minecraft_weapon.md)|*not set* |  JSON Object| Weapon Item Component. Added to every weapon item such as axe, sword, trident, bow, crossbow.|
 |[minecraft:wearable](ItemComponents/minecraft_wearable.md)|*not set* | JSON Object| Determines where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1. Experimental toggles required: Holiday Creator Features.|
