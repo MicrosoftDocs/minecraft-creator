@@ -8,7 +8,7 @@ description: "An introduction to the `/camera` command"
 
 # Camera Command
 
-The Bedrock version of Minecraft has a new `/camera` command that adds the ability to control how players view the game or adds full-screen fades for a more polished experience. This document goes into all the relevant detail of how it works and can be used to make interesting new experiences.
+The Bedrock version of Minecraft has a `/camera` command that adds the ability to control how players view the game or adds full-screen fades for a more polished experience. This document goes into all the relevant detail of how it works and can be used to make interesting new experiences.
 
 This new feature adds the concept of Camera Presets, plus a new command to interact with those presets. Both are behind a new Cameras experiment toggle while we gather feedback and make changes.
 
@@ -28,11 +28,11 @@ The built-in Camera Preset names are:
 >- "minecraft:third_person_front"
 >- "minecraft:free"
 
-The first three names correspond to the standard gameplay perspective options which you can cycle through by pressing F5 on the keyboard, with the controller directional pad, or by selecting the perspective you want in the Settings menu.  
+The first three names correspond to the standard gameplay perspective options which you can cycle through by pressing F5 on the keyboard, pressing "up" on the controller directional pad, or by selecting the perspective you want in the Settings menu.  
 
 The last name is for the new free camera, which just floats in space and does nothing.
 
-Custom content can define its own Camera Presets. For example, an "example:sky" camera might be defined based on the "minecraft:free" camera, but with a custom position and rotation to view the world at a specific angle.
+Custom content can define its own Camera Presets. For example, an "example:sky" camera might be defined based on the "minecraft:free" camera, but with a custom position and rotation to view the world at a specific angle. 
 
 ## Adding one or more Camera Presets to a Behavior Pack
 
@@ -81,7 +81,7 @@ This defines a new Camera Preset named "example:custom" which inherits settings 
 
 "format_version" behaves like it does in many other Bedrock Minecraft JSON files. It allows Mojang to change the expected JSON format of the file without invalidating old files. For now, you can just use "1.19.50".
 
-"identifier" names the Camera Preset. All Camera Preset identifiers must be namespace-qualified, and like with other content, custom presets must use a namespace other than ""minecraft"".
+"identifier" names the Camera Preset. All Camera Preset identifiers must be namespace-qualified, and like with other content, custom presets must use a namespace other than `"minecraft"`.
 
 "inherit_from" says what other Camera Preset to inherit values and behaviors from. A custom Camera Preset can inherit from other custom Camera Presets, or from the "minecraft:free" preset. For now, the other built-in camera perspectives can’t be specified here. This can let a creator define a hierarchy of Camera Presets if they desire, for example an "example:security_base" camera could have an elevation and pitch defined in its "pos_y" and "rot_x" fields, and "example_security_1" through "example_security_5" could use "inherit_from" to use that preset’s values, and only specify their X/Z positions via "pos_x" and "pos_z" and the yaw via "rot_y". With something like that set up, it would only take one edit to the base security camera to modify the elevation of all the security cameras.
 
@@ -89,8 +89,17 @@ This defines a new Camera Preset named "example:custom" which inherits settings 
 
 "rot_x" and "rot_y" specify the default rotations of the camera, around each of those axes. "rot_x" is equivalent to the pitch of the camera, though with positive values looking downward and negative values looking up, which matches the convention of the teleport command. "rot_y" is equivalent to the yaw, or compass direction of the camera, also matching the behavior of the teleport command. Both values are specified in degrees, and "rot_x" must be no lower than –90 and no higher than 90, to prevent the camera from going upside-down.
 
+## Player state affecting rendering
 
+With this version of Minecraft, the minecraft:free Preset (and any presets based on it, which includes all custom presets) will not by default use the state of the player when the game is rendered. This includes a number of effects such as night vision and blindness. This can be enabled by adding "player_effects": true to the Camera Preset’s JSON file. 
 
+## Player inside block rendering
+
+In typical Minecraft gameplay, there is a screen effect that covers the screen when the player’s head is inside of a block and the camera is in a third-person perspective. Since the minecraft:free camera is not directly connected to the player, this was somewhat confusing to users, for example if the minecraft:free camera was active and the player teleported inside a mountain, the screen would go black. This functionality has been disabled for the minecraft:free camera and other custom Camera Presets. 
+
+## Audio listener position
+
+With Minecraft 1.20.10, the position and orientation of the camera is now used by default for how the game’s audio system directs sounds to your device’s speakers. For example, if a sound is to the left of the camera it should play out of the left speaker regardless of the player’s position or rotation in the world. Previously this was based on the player’s head position and rotation. If you want a custom Camera Preset to use the player position for the audio listener position, simply add "listener":"player" to the Preset’s JSON file. An example "example:example_player_listener" JSON has been included in the experimental Cameras behavior pack to demonstrate this feature. 
 
 ## Camera Command Syntax
 
@@ -104,7 +113,7 @@ This command has the following syntax options:
 
 `/camera <players> fade [time <fadeInSeconds> <holdSeconds> <fadeOutSeconds>] [color <red> <green> <blue>]`
 
-Every version of the camera command starts with a player selector, which is used to specify the player or player(s) that will be affected by the command. After that, there are three options that you can specify: "set", "clear", or "fade". "set" will cause the targeted player(s) to use a specified camera perspective. "clear" will return the targeted player(s) back to their usual camera mode. "fade" will cause a full-screen fade, like what players see when sleeping in a bed.
+Every version of the camera command starts with a player selector, which is used to specify the player or players who will be affected by the command. After that, there are three options that you can specify: "set", "clear", or "fade". "set" will cause the targeted player(s) to use a specified camera perspective. "clear" will return the targeted player(s) back to their usual camera mode. "fade" will cause a full-screen fade, like what players see when sleeping in a bed.
 
 ## The "set" Option
 
@@ -115,7 +124,7 @@ There are several additional options that can be used with the "set" option.
 
 ### The "ease" sub-option
 
-The ease option will cause the transition between the views to be done over some specified number of seconds, rather than instantly. It requires specifying an 'easeType', which is the name of one of the various easing methods available. 32 different options are "linear", "spring", or the thirty other options that can be viewed at on [Easing Functions Cheat Sheet](https://easings.net) (easings.net)  
+The ease option will cause the transition between the views to be done over some specified number of seconds, rather than instantly. It requires specifying an 'easeType', which is the name of one of the various easing methods available. The 32 different options are "linear", "spring", or the thirty other options that can be viewed at on [Easing Functions Cheat Sheet](https://easings.net) (easings.net)  
 
 Eased motions always start from where the camera currently is, so an ease from A to B which is interrupted with another ease to C will start from somewhere in between A and B.
 
@@ -131,9 +140,17 @@ Warning: Setting the position of a camera to an area of the world that isn’t l
 
 Like the "pos" sub-option, the "rot" sub-option overrides the rotation of the Camera Preset. The "~" character is supported here to specify relative rotations. The "xRot" and "yRot" values in this command correspond to the "rot_x" and "rot_y" properties in the Camera Preset JSON file. As with the "rot_x" property, the result of the "xRot" value is clamped to no less than –90 degrees and no more than 90 degrees, to prevent the camera from going upside-down.
 
+### Camera Pitch Limits
+
+To avoid the camera going fully upside-down, the pitch of the camera has been limited to not more than 90 degrees and not less than negative 90 degrees. This applies to the “rot_x” rotation specified in a Camera Preset JSON file and to values specified in the /camera command. If a value outside of this range is specified directly in JSON or a command, a content error message will be displayed and the Preset or command won’t work. If a relative rotation (like ~20) happens to go outside of this range, the resulting pitch value will be clamped to the [–90,90] range and the command will work. 
+
 ### The "default" sub-option
 
 This sub-option of the "set" option will use the position and rotation of the Camera Preset according to its JSON definition in the behavior pack. In other words, this causes any previous "pos" or "rot" overrides to be discarded.
+
+## The facing alternative for the /camera command
+
+To make it easier to point a camera at a particular location, a ‘facing’ option has been added to the /camera command. Wherever a rotation could be previously specified with the ‘rot’ option, now ‘facing’ can be used instead. ‘facing’ should be followed either by an entity selector like [type=cow] or by x y z coordinates. This works a similar way the ‘facing’ option functions with the /teleport command. The x y z position or the center of the targeted entity’s bounding box is put through some math relative to the camera’s current position, and an equivalent x and y rotation are calculated and used as if the ‘rot’ option was used in the first place with those desired angles. 
 
 ## The "clear" Option
 
@@ -155,11 +172,17 @@ This sub-option allows for customizing the timing of the fade effect. If not spe
 
 ### The "color" sub-option
 
-This sub-option allows for customizing the color of the fade effect. The red, green, and blue values should be a value from 0.0 to 1.0. The target opacity of the fade is always fully opaque. If this is not specified, it will use 0.0 for each value, which causes a fade to black.
+This sub-option allows for customizing the color of the fade effect. The red, green, and blue values should each be an integer value from 0 to 255. The target opacity of the fade is always fully opaque. If this is not specified, it will use 0 for each value, which causes a fade to black.
 
 ## Fade timing, networked gameplay, and game performance
 
 Because Minecraft content can be played over a network connection or on a device that isn’t running at a perfect frame rate, it’s important to keep in mind that the timing of camera fades may not always show up at exactly the desired moment. When authoring a fade effect, it’s a good idea to consider adding more time to the ‘holdSeconds’ value or to test on less powerful platforms to check that the presentation is acceptable.  
+
+## Camera Fade Changes
+
+The fade command parameters are now integers that can be as low as 0 and as high as 255. 
+
+The timing of fades has had a limit added, which is that none of the three timing values can exceed 10 seconds. This is to avoid accidental fades that last far longer than intended. As before, issuing multiple fade instructions will continue to combine the timing together, so fades beyond ten seconds are still possible. 
 
 ### Combining fades
 
@@ -211,7 +234,7 @@ To return that camera back to normal, the player could either exit and rejoin th
 
 ## How the Camera Command Affects VR Users
 
-When using a Virtual Reality headset, players can be in an immersive first-person view, or in a virtual living room with a virtual television that displays a flat view of the game. When a camera command using "set" targets a VR player in the immersive first-person view, they will be transitioned to the virtual living room and the specified Camera Preset will appear on the virtual screen. While a "set" is active for force the player to a particular perspective (including "minecraft:first_person"), pressing the perspective change button will display a message explaining the situation, and the transition to the immersive view will be prevented.
+When using a Virtual Reality headset, players can be in an immersive first-person view, or in a virtual living room with a virtual television that displays a flat view of the game. When a camera command using "set" targets a VR player in the immersive first-person view, they will be transitioned to the virtual living room and the specified Camera Preset will appear on the virtual screen. While a "set" is active to force the player to a particular perspective (including "minecraft:first_person"), pressing the perspective change button will display a message explaining the situation, and the transition to the immersive view will be prevented.
 
 Camera commands using "fade" will not do anything for VR users in the immersive first-person mode, but players in the virtual living room will still see it.
 
