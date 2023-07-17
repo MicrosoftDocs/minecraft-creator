@@ -14,7 +14,7 @@ ms.prod: gaming
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
 | allow_dig_when_named| false| Boolean| If true, this behavior can run when this entity is named. Otherwise not. |
-| digs_in_daylight| false| Boolean| Indicates that the actor should start digging when it sees daylight |
+| digs_in_daylight| false| Boolean| Indicates that the entity should start digging when it sees daylight |
 | duration| 0.0| Decimal| Goal duration in seconds |
 | idle_time| | Decimal| The minimum idle time in seconds between the last detected disturbance to the start of digging. |
 | on_start| *not set* | Trigger| Event(s) to run when the goal starts. |

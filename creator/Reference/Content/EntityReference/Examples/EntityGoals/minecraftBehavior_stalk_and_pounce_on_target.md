@@ -30,7 +30,7 @@ ms.prod: gaming
 |max_stalk_dist| 10.0| Decimal|  The maximum distance away a target can be before the mob gives up on stalking. |
 |pounce_max_dist| 5.0| Decimal|  The maximum distance away from the target in blocks to begin pouncing at the target. |
 |priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|set_persistent| false| Boolean|  Allows the actor to be set to persist upon targeting a player. |
+|set_persistent| false| Boolean|  Allows the entity to be set to persist upon targeting a player. |
 |stalk_speed| 1.2| Decimal| The movement speed in which you stalk your target. |
 |strike_dist| 2.0| Decimal|  The max distance away from the target when landing from the pounce that will still result in damaging the target. |
 |stuck_time| 2.0| Decimal|  The amount of time the mob will be stuck if they fail and land on a block they can be stuck on. |

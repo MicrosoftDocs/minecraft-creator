@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Block Documentation - minecraft:on_interact
 
-`minecraft:on_interact` is an Event Trigger for when an actor interacts with a block.
+`minecraft:on_interact` is an Event Trigger for when an entity interacts with a block.
 
 ## Parameters
 

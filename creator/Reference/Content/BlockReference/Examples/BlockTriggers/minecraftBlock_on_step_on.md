@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Block Documentation - minecraft:on_step_on
 
-`minecraft:on_step_on` is an Event Trigger for when an actor steps on the block.
+`minecraft:on_step_on` is an Event Trigger for when an entity steps on the block.
 
 ## Parameters
 
