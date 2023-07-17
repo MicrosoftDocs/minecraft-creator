@@ -24,7 +24,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 |max_dropped_ticks |*not set* |Integer |In relation to the optimization value, determines the maximum ticks spatial update packets can be not sent.|
 |max_optimized_distance |*not set* |Integer|The maximum distance considered during bandwidth optimizations. Any value below the max is interpolated to find optimization, and any value greater than or equal to the max results in max optimization. |
-|use_motion_prediction_hints |false |Boolean |When set to true, smaller motion packets will be sent during drop packet intervals, resulting in the same amount of packets being sent as without optimizations but with less data being sent. This should be used to prevent visual oddities when actors are travelling quickly or teleporting.|
+|use_motion_prediction_hints |false |Boolean |When set to true, smaller motion packets will be sent during drop packet intervals, resulting in the same amount of packets being sent as without optimizations but with less data being sent. This should be used to prevent visual oddities when entities are traveling quickly or teleporting.|
 
 ### default_values
 
@@ -34,7 +34,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 |max_dropped_ticks |*not set* |Integer |In relation to the optimization value, determines the maximum ticks spatial update packets can be not sent.|
 |max_optimized_distance |*not set* |Integer|The maximum distance considered during bandwidth optimizations. Any value below the max is interpolated to find optimization, and any value greater than or equal to this max results in max optimization.|
-|use_motion_prediction_hints |false |Boolean |When set to true, smaller motion packets will be sent during drop packet intervals, resulting in the same amount of packets being sent as without optimizations but with less data being sent. This should be used to prevent visual oddities when actors are travelling quickly or teleporting.|
+|use_motion_prediction_hints |false |Boolean |When set to true, smaller motion packets will be sent during drop packet intervals, resulting in the same amount of packets being sent as without optimizations but with less data being sent. This should be used to prevent visual oddities when entities are traveling quickly or teleporting.|
 
 ## Example
 

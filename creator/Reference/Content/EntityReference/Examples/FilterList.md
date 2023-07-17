@@ -14,11 +14,11 @@ Below is a list of all the available filters within Minecraft: Bedrock Edition f
 |[actor_health](Filters/actor_health.md)|`actor_health` allows a creator to test the health of an entity. |
 |[all_slots_empty](Filters/all_slots_empty.md)|Returns true when the designated equipment location for the subject entity is completely empty. |
 |[any_slot_empty](Filters/any_slot_empty.md)|Returns true when the designated equipment location for the subject entity has any empty slot. |
-|[bool_property](Filters/bool_property.md)|`bool_property` allows a creator to compare an actor property to a boolean value. |
+|[bool_property](Filters/bool_property.md)|`bool_property` allows a creator to compare an entity property to a boolean value. |
 |[clock_time](Filters/clock_time.md)|`clock_time` allows a creator to compare the current time with a float value in the range (0.0, 1.0). |
 |[distance_to_nearest_player](Filters/distance_to_nearest_player.md)|`distance_to_nearest_player` compares the distance to the nearest Player with a float value. |
-|[enum_property](Filters/enum_property.md)|`enum_property` allows a creator to compare an actor property to an enum value. |
-|[float_property](Filters/float_property.md)|`float_property` allows a creator to compare an actor property to a float value. |
+|[enum_property](Filters/enum_property.md)|`enum_property` allows a creator to compare an entity property to an enum value. |
+|[float_property](Filters/float_property.md)|`float_property` allows a creator to compare an entity property to a float value. |
 |[has_ability](Filters/has_ability.md)|Returns true when the subject entity has the named ability. |
 |[has_biome_tag](Filters/has_biome_tag.md)|Tests whether the biome the subject is in has the specified tag. |
 |[has_component](Filters/has_component.md)|Returns true when the subject entity contains the named component. |
@@ -43,7 +43,7 @@ Below is a list of all the available filters within Minecraft: Bedrock Edition f
 |[in_water_or_rain](Filters/in_water_or_rain.md)|Returns true when the subject entity is in water or rain. |
 |[in_water](Filters/in_water.md)|Returns true when the subject entity is in water. |
 |[inactivity_timer](Filters/inactivity_timer.md)|Tests if the specified duration in seconds of inactivity. |
-|[int_property](Filters/int_property.md)|Returns true when the `int` actor property matches the value provided.|
+|[int_property](Filters/int_property.md)|Returns true when the `int` entity property matches the value provided.|
 |[is_altitude](Filters/is_altitude.md)|Tests the current altitude against a provided value. |
 |[is_avoiding_mobs](Filters/is_avoiding_mobs.md)|Returns true if the subject entity is fleeing from other mobs. |
 |[is_baby](Filters/is_baby.md)|Returns `true` when the subject entity is a baby. |
@@ -93,5 +93,5 @@ Below is a list of all the available filters within Minecraft: Bedrock Edition f
 |[surface_mob](Filters/surface_mob.md)|Tests if the subject is a surface mob. |
 |[target_distance](Filters/target_distance.md)|Tests the distance between the calling entity and its target. |
 |[trusts](Filters/trusts.md)|Returns true if the subject is trusted by entity. |
-|[weather_at_position](Filters/weather_at_position.md)|Tests the current weather, at the actor's position, against a provided weather value.|
+|[weather_at_position](Filters/weather_at_position.md)|Tests the current weather, at the entities position, against a provided weather value.|
 |[weather](Filters/weather.md)|Tests for the current weather state the entity is experiencing. |

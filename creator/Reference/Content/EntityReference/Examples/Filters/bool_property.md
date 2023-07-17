@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Entity Documentation - bool_property
 
-Returns true when the `bool` actor property matches the value provided.
+Returns true when the `bool` entity property matches the value provided.
 
 ## Parameters
 
@@ -22,7 +22,7 @@ Returns true when the `bool` actor property matches the value provided.
 | Options| Description |
 |:-----------|:-----------|
 | block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
+| damager| The damaging entity involved with the interaction. |
 | other| The other member of an interaction, not the caller. |
 | parent| The caller's current parent. |
 | player| The player involved with the interaction. |

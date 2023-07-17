@@ -30,7 +30,7 @@ ms.prod: gaming
 |reevaluate_description| false| Boolean| If true, the mob will stop being targeted if it stops meeting any conditions. |
 |reselect_targets |false |Boolean |Allows the attacking entity to update the nearest target, otherwise a target is only reselected after each "scan_interval" or "attack_interval". |
 |scan_interval |10 |Integer |If "attack_interval" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to "scan_interval", minimum value is 1. Values under 10 can affect performance. |
-|set_persistent |false |Boolean |Allows the actor to be set to persist upon targeting a player. |
+|set_persistent |false |Boolean |Allows the entity to be set to persist upon targeting a player. |
 |target_invisible_multiplier |0.70 | Decimal |Multiplied with the target's armor coverage percentage to modify "max_dist" when detecting an invisible target.|
 |target_search_height |-1.00 |Decimal |Maximum vertical target-search distance, if it's greater than the target type's "max_dist". A negative value defaults to "entity_types" greatest "max_dist". |
 |target_sneak_visibility_multiplier |0.80 |Decimal |Multiplied with the target type's "max_dist" when trying to detect a sneaking target. |
