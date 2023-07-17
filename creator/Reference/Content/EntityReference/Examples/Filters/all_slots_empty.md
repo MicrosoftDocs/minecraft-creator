@@ -1,7 +1,7 @@
 ---
 author: mammerla
 ms.author: v-jimseaman
-title: Entity Documentation - actor_health
+title: Entity Documentation - all_slots_empty
 ms.prod: gaming
 ---
 
@@ -14,7 +14,7 @@ Returns true when the designated equipment location for the subject entity is co
 | Options| Description |
 |:-----------|:-----------|
 | block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
+| damager| The damaging entity involved with the interaction. |
 | other| The other member of an interaction, not the caller. |
 | parent| The caller's current parent. |
 | player| The player involved with the interaction. |

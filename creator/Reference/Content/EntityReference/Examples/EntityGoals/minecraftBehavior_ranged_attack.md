@@ -24,9 +24,9 @@ ms.prod: gaming
 | charge_shoot_trigger| 0| Decimal| Amount of time (in seconds, then doubled) a charged shot must be charging before reloading burst shots. Charge-time decays while target is not in sight. |
 |priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | ranged_fov| 90| Decimal| Field of view (in degrees) when using sensing to detect a target for attack. |
-| set_persistent| false| Boolean| Allows the actor to be set to persist upon targeting a player |
+| set_persistent| false| Boolean| Allows the entity to be set to persist upon targeting a player |
 | speed_multiplier| 1| Decimal| During attack behavior, this multiplier modifies the entity's speed when moving toward the target. |
-| swing| false| Boolean| If a swing animation (using variable.attack_time) exists, this causes the actor to swing their arm(s) upon firing the ranged attack. |
+| swing| false| Boolean| If a swing animation (using variable.attack_time) exists, this causes the entity to swing their arm(s) upon firing the ranged attack. |
 | target_in_sight_time| 1| Decimal| Minimum amount of time (in seconds) the attacking entity needs to see the target before moving toward it. |
 | x_max_rotation| 30| Decimal| Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target. |
 | y_max_head_rotation| 30| Decimal| Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target. |

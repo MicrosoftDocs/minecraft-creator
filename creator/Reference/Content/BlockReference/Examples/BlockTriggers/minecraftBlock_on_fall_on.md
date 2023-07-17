@@ -7,7 +7,7 @@ ms.prod: gaming
 
 # Block Documentation - minecraft:on_fall_on
 
-`minecraft:on_fall_on` is an Event Trigger for when an actor falls and lands on the block.
+`minecraft:on_fall_on` is an Event Trigger for when an entity falls and lands on the block.
 
 ## Parameters
 
@@ -17,7 +17,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 |condition|*not set* | String|  The condition of event to be executed on the block. |
 |event|*not set* | String|  The event executed on the block. |
-|min_fall_distance| 0.0| Decimal|  The minimum distance in blocks that an actor needs to fall to trigger this event. |
+|min_fall_distance| 0.0| Decimal|  The minimum distance in blocks that an entity needs to fall to trigger this event. |
 | target| self| String| The target of event executed on the block. |
 
 ## Example

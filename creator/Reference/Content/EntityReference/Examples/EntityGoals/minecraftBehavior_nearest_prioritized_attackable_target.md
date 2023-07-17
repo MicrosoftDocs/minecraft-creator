@@ -24,7 +24,7 @@ ms.prod: gaming
 |reevaluate_description| false| Boolean| If true, the mob will stop being targeted if it stops meeting any conditions. |
 |reselect_targets| false| Boolean| If true, the target will change to the current closest entity whenever a different entity is closer. |
 |scan_interval| 10| Integer| How many ticks to wait between scanning for a target. |
-|set_persistent| false| Boolean| Allows the actor to be set to persist upon targeting a player |
+|set_persistent| false| Boolean| Allows the entity to be set to persist upon targeting a player |
 |target_search_height| -1.0| Decimal| Height in blocks to search for a target mob. -1.0 means the height does not matter. |
 |within_radius| 0.0| Decimal| Distance in blocks that the target can be within to launch an attack. |
 
