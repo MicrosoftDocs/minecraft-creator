@@ -33,7 +33,7 @@
 - name: tree_feature
   href: minecraftTree_feature.md
 - name: underwater_cave_carver_feature
-  href: minecraftUnderwater_cave_carver.md
+  href: minecraftUnderwater_cave_carver_feature.md
 - name: vegetation_patch_feature
   href: minecraftVegetation_patch_feature.md
 - name: weighted_random_feature

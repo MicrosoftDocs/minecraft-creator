@@ -71,7 +71,7 @@ There's more information about behavior pack and resource pack dependencies in t
 | [minecraft:Surface_relative_threshold_feature](Features\minecraftSurface_relative_threshold_feature.md)| Determines whether the provided position is below the estimated surface level of the world, and places a feature if so.If the provided position is above configured surface or the surface is not available, placement will fail. This feature only works for Overworld generators using world generation 1.18 or later.|
 | [minecraft:structure_template_feature](Features\minecraftStructure_template_feature.md)| Places a structure in the world. The structure must be stored as a .mcstructure file in the "structures" subdirectory of a behavior pack.|
 | [minecraft:tree_feature](Features\minecraftTree_feature.md)| Places a tree in the world.|
-| [minecraft:underwater_cave_carver_feature](Features\minecraftUnderwater_cave_carver.md)| Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.|
+| [minecraft:underwater_cave_carver_feature](Features\minecraftUnderwater_cave_carver_feature.md)| Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.|
 | [minecraft:vegetation_patch_feature](Features\minecraftVegetation_patch_feature.md)| Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.|
 | [minecraft:weighted_random_feature](Features\minecraftWeighted_random_feature.md)| Randomly selects and places a feature based on a weight value.|
 
@@ -106,11 +106,11 @@ Biome names for use in the `tag` field can be found on the [Entity Documentation
 
 To control the world generation pass at which a feature rule is applied, you can set the `"placement_pass"`. Order is not guaranteed within each pass. These are the available `"placement_pass"` types:  
 
-| Name| Description |
+| Name| Note (if any) |
 |:-----------|:-----------|
 |"first_pass"| |
 |"before_underground_pass"| |
-|"underground_pass" | |This pass will cover most feature rule scenarios underground |
+|"underground_pass" | This pass will cover most feature rule scenarios underground |
 |"after_underground_pass" | This is the pass to use with decorator features in the underground |
 |"before_surface_pass" | |
 |"surface_pass" | This pass will cover most feature rule scenarios above ground |
