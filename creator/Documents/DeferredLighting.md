@@ -11,33 +11,71 @@ description: "An Introduction to Deferred Lighting in Minecraft: Bedrock Edition
 
 Minecraft supports a Physically Based Rendering (PBR) pipeline that can be used for Deferred Lighting and Ray Tracing. This involves accurately modeling surface details as well as scene illuminators to achieve a lighting model that is coherent across all times of day. By taking advantage of PBR and the new Deferred Lighting pipeline, you unlock new creative control over the mood and lighting conditions of your entire scene.
 
-For example, you can control the intensity and color of the sun & moon, affecting how they contribute to the scene (direct lighting, bloom activation, exposure sensitivity, shadow angle, etc…). Additionally, new properties for describing the atmosphere of your world enables a new level of control over your skies!  All these customization points coupled with the new "key frame" syntax allow you to change any detail of your lighting over the course of the in-game day-night cycle.
+For example, you can control the intensity and color of the sun and moon, affecting how they contribute to the scene (direct lighting, bloom activation, exposure sensitivity, shadow angle, etc.). Additionally, new properties for describing the atmosphere of your world enable a new level of control over your skies! All these customization points coupled with the new "key frame" syntax allow you to change any detail of your lighting over the course of the in-game day-night cycle.
 
 > [!NOTE]
-> Deferred lighting features are experimental. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning. Check the Minecraft Changelog for details on any changes. 
+> Deferred lighting features are experimental. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning. Check the Minecraft Changelog for details on any changes.
+>
 >To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](ExperimentalFeaturesToggle.md).
 
-All newly added lighting capabilities are opt-in, and appropriate defaults will be used if any parameters aren't supplied by a resource pack. These properties are also designed to complement and extend the existing Texture Set capabilities found in RTX resource packs (Texture Sets are no longer restricted to RTX-only packs). Note however that new capabilities are NOT backwards compatible with the RTX pipeline.
+All newly added lighting capabilities are opt-in, and appropriate defaults will be used if any parameters aren't supplied by a resource pack. These properties are also designed to complement and extend the existing Texture Set capabilities found in RTX resource packs (Texture Sets are no longer restricted to RTX-only packs). Note however that new capabilities are NOT backwards compatible with the RTX pipeline. 
 
 ## Opting Into the Deferred Lighting Pipeline
 
-Opting into the Deferred Lighting Pipeline should feel familiar if you have authored an RTX-enabled resource pack before. In fact, any resource pack that was built for use in RTX should "just work" for Deferred Lighting. However, you will likely want to add some additional JSON files (see sections below for more details) to make full use of the pipeline.
+To opt-in to the Deferred Lighting Pipeline, you will need to provide a PBR-enabled resource pack and join a world with the “Render Dragon Features for Creators” Experiment enabled. Resource packs built for RTX should work with the new pipeline, but you will likely want to add some JSON files to make full use of the pipeline, which will be explained in detail.
+
+## PBR Resource Packs  
+
+The Deferred Lighting Pipeline uses the same rules for PBR texture sets used for RTX. If you are not familiar with Physically Based Rendering or building texture sets, there is an overview available on our documentation website in [Introduction to Physically Based Rendering](RTXPBRIntro.md) and more detail on creating the texture sets in [Introduction to Texture Sets](../Reference/Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md)
+
+For Height Map values, the new pipeline supports both Height Map and Normal inputs. In the Deferred Lighting mode, however, you are now able to set PBR textures for entities and mobs in addition to blocks. They follow the exact same Texture Set rules and can be added similarly to the textures/entity folder within your resource pack. 
+
+The key thing that communicates to the game client that a resource pack is capable of Deferred Lighting is the presence of a certain string(s) in the capabilities array in your pack’s manifest.json. Since the assets required for RTX are a subset of the assets needed for Deferred Lighting, a pack that broadcasts the "raytraced" capability will also be capable of activating Deferred Lighting.
+
+However, it is recommended that a new capability string be used going forward for Deferred/PBR Lighting packs as these packs should be expected to run cross-platform, unlike "raytraced" packs which are restricted to RTX-only devices. 
+
+The new capability string is "pbr": 
+
+```JSON 
+{ 
+  "format_version": 1, 
+  "header": { 
+    ... 
+  }, 
+  "modules": [ 
+    ... 
+  ], 
+  "capabilities": [ 
+    "pbr" 
+  ] 
+}
+``````
 
 ## Enabling Deferred Technical Preview in Settings
 
-If you are on a compatible Preview or Beta build supporting the Deferred Lighting Pipeline, you will find a new toggle under the "Creator" tab in the Settings menu:
+If you are on a compatible Preview or Beta, you will find a new Experiments toggle named “Render Dragon Features for Creators”. Turn this Experiment on, and ensure that your PBR-enabled resource pack is activated for your world. Note that if you are hosting a Realm to share worlds in Preview, make sure to require players download resource packs to join. 
 
-![Image showing Creator Settings with Enable deferred lighting technical preview toggle on](Media/DeferredLighting/settings_creator_enableDeferredLighting.png)
+![Image of the Settings screen, Experiments tab, Render Dragon Features for Creators toggle is on](Media/DeferredLighting/experiments_renderDragon_ON.png)
 
-Once this has been toggled ‘On’, you will see new options in the "Video" settings menu. Under "Graphics Mode," the UI element will change to a dropdown selection in which you can now see an option for the "Deferred Technical Preview."
+After you enter the world, you will see new options in the "Video" settings menu. Under "Graphics Mode," the UI element will change to a dropdown selection in which you can now see an option for the "Deferred Technical Preview." 
+
+Turn this on, and your world will now be rendering with the new Deferred Lighting Pipeline! 
 
 ![Image showing Video settings, Graphics mode, Deferred technical preview checkbox](Media/DeferredLighting/settings_video_graphicsMode_deferredTechnicalPreview.png)
 
-Selecting this mode will make the pipeline available, however, you will need to provide a PBR-enabled resource pack and new lighting files in order to fully utilize it. 
+### Hardware Requirements
 
-## Resource Pack - Manifest.json Capabilities
+You must have appropriate hardware and a Preview-enabled platform to execute the Deferred Lighting Pipeline. A ray tracing capable video card is not required, and most modern GPUs on Windows should support the Deferred Pipeline, with more devices to follow. 
 
-Specifically, the key thing that communicates to the game client that a resource pack is capable of Deferred Lighting is the presence of a certain string(s) in the capabilities array in your pack’s manifest.json. Since the assets required for RTX are a subset of the assets needed for Deferred Lighting, a pack that broadcasts the "raytraced" capability will also be capable of activating Deferred Lighting. However, it is recommended that a new capability string be used going forward for Deferred/PBR Lighting packs as these packs should be expected to run cross-platform, unlike "raytraced" packs which are restricted to RTX-only devices. The new capability string is "pbr":
+On Android, there is a hard requirement at this time that only GLES 3 devices running Android OS 9 and above will be able to run the pipeline.
+
+## Resource Pack - manifest.json Capabilities
+
+Specifically, the key thing that communicates to the game client that a resource pack is capable of Deferred Lighting is the presence of a certain string(s) in the capabilities array in your pack’s manifest.json.
+
+Because the assets required for RTX are a subset of the assets needed for Deferred Lighting, a pack that broadcasts the "raytraced" capability will also be capable of activating Deferred Lighting. However, it is recommended that a new capability string be used going forward for Deferred/PBR Lighting packs as these packs should be expected to run cross-platform, unlike "raytraced" packs which are restricted to RTX-only devices. 
+
+The new capability string is "pbr":
 
 ```json
 {
@@ -54,18 +92,11 @@ Specifically, the key thing that communicates to the game client that a resource
 }
 ```
 
-### Resource Pack – PBR Textures
-
-As mentioned above, the Deferred Lighting Pipeline uses the same rules for PBR texture sets used for RTX. If you are not familiar with Physically Based Rendering or building texture sets, there is an overview available on our documentation website here and more detail on creating the textures here. For Height Map values, the new pipeline supports both Height Map and Normal inputs.
-In the Deferred Lighting mode, however, you are now able to set PBR textures for entities and mobs in addition to blocks. They follow the exact same Texture Set rules, and can be added similarly to the textures/entity folder within your resource pack.
-
-### Hardware Requirements
-
-Note that the resource pack capability is only half of what is necessary for playing a given Minecraft world in Deferred Lighting mode; you must also have appropriate hardware. Thankfully, the Deferred Lighting Pipeline is not as demanding as the RTX Pipeline, and thus supports a much broader range of devices. Most modern GPUs on Windows should support the Deferred Pipeline with more devices to follow. At a minimum, we recommend any DX12 capable NVIDIA or AMD GPU; DX11 and/or Intel-based GPUs are also known to work, but with less reliability currently.
-
 ## Deferred Lighting JSONs
 
-Texture Sets are good for defining the surface properties of individual blocks or mobs, but, for more global lighting properties, JSON files provide a simple way to data-drive the renderer. The JSONs described below should be located inside of a "lighting" directory in the root of a given resource pack.
+Texture Sets are good for defining the surface properties of individual blocks or mobs, but for more global lighting properties, JSON files provide a simple way to data-drive the renderer. The JSONs described here should be located inside of a "lighting" directory in the root of a given resource pack.
+
+![Image of the file structure for a resource pack with a manifest file, a lighting folder containing global.json and atmospherics.json files, and a textures file containing a "blocks" folder, an "entities" folder, and a textures_list.json file.](Media/DeferredLighting/RP_file_structure.png)
 
 ### Global Lighting JSON Schema
 
