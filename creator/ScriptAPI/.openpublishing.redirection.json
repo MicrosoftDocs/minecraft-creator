@@ -1334,12 +1334,12 @@
         "redirect_document_id": false
     },
     {
-        "source_path": "Reference/content/featuresreference/examples/features/conditional_list.md",
+        "source_path": "Reference/content/featuresreference/examples/features/minecraftconditional_list.md",
         "redirect_url": "/reference/content/featuresreference/features/featurelist.md",
         "redirect_document_id": false
     },
     {
-        "source_path": "Reference/content/featuresreference/examples/features/rect_layout.md",
+        "source_path": "Reference/content/featuresreference/examples/features/minecraftrect_layout.md",
         "redirect_url": "/reference/content/featuresreference/features/featurelist.md",
         "redirect_document_id": false
     },

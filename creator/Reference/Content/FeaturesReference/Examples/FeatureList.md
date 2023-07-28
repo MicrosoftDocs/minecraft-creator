@@ -24,7 +24,7 @@ Below is a list of all the available Features within Minecraft: Bedrock Edition 
 | [minecraft:multiface_feature](Features/minecraftMultiface_feature.md)| Places one or a few multiface blocks on floors/walls/ceilings.|
 | [minecraft:nether_cave_carver_feature](Features/minecraftnether_cave_carver_feature.md)| Carves a cave through the Nether in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.|
 | [minecraft:ore_feature](Features/minecraftOre_feature.md)| Places a vein of blocks to simulate ore deposits.|
-| [minecraft:partially_exposed_blob_feature](Features/minecraftPartially_exposed_blob_feature_feature.md)| generates a blob of the specified block with the specified dimensions. For the most part, the blob is embedded in the specified surface, however a single side is allowed to be exposed.|
+| [minecraft:partially_exposed_blob_feature](Features/minecraftPartially_exposed_blob_feature.md)| generates a blob of the specified block with the specified dimensions. For the most part, the blob is embedded in the specified surface, however a single side is allowed to be exposed.|
 | [minecraft:scatter_feature](Features/minecraftScatter_feature.md)| Scatters a feature throughout a chunk.|
 | [minecraft:search_feature](Features/minecraftSearch_feature.md)| Sweeps a volume searching for a valid placement location for its referenced feature.|
 | [minecraft:sequence_feature](Features/minecraftSequence_feature.md)| A collection of features sequentially, in the order they appear in data.|
