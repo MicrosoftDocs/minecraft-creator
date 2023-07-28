@@ -18,11 +18,14 @@ For example, you can control the intensity and color of the sun and moon, affect
 >
 >To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](ExperimentalFeaturesToggle.md).
 
-All newly added lighting capabilities are opt-in, and appropriate defaults will be used if any parameters aren't supplied by a resource pack. These properties are also designed to complement and extend the existing Texture Set capabilities found in RTX resource packs (Texture Sets are no longer restricted to RTX-only packs). Note however that new capabilities are NOT backwards compatible with the RTX pipeline. 
+All newly added lighting capabilities are opt-in, and appropriate defaults will be used if any parameters aren't supplied by a resource pack. These properties are also designed to complement and extend the existing Texture Set capabilities found in RTX resource packs (Texture Sets are no longer restricted to RTX-only packs).
+
+> [!NOTE]
+> New capabilities are **NOT** backwards-compatible with the RTX pipeline. 
 
 ## Opting Into the Deferred Lighting Pipeline
 
-To opt-in to the Deferred Lighting Pipeline, you will need to provide a PBR-enabled resource pack and join a world with the “Render Dragon Features for Creators” Experiment enabled. Resource packs built for RTX should work with the new pipeline, but you will likely want to add some JSON files to make full use of the pipeline, which will be explained in detail.
+To opt into the Deferred Lighting Pipeline, you will need to provide a PBR-enabled resource pack and join a world with the “Render Dragon Features for Creators” Experiment enabled. Resource packs built for RTX should work with the new pipeline, but you will likely want to add some JSON files to make full use of the pipeline, as explained in the following sections.
 
 ## PBR Resource Packs  
 
