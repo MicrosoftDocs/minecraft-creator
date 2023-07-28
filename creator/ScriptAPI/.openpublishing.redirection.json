@@ -1334,17 +1334,17 @@
         "redirect_document_id": false
     },
     {
-        "source_path": "Reference/content/featuresreference/examples/features/minecraftconditional_list.md",
+        "source_path": "Reference/content/featuresreference/examples/features/minecraftConditional_list.md",
         "redirect_url": "/reference/content/featuresreference/features/featurelist.md",
         "redirect_document_id": false
     },
     {
-        "source_path": "Reference/content/featuresreference/examples/features/minecraftrect_layout.md",
+        "source_path": "Reference/content/featuresreference/examples/features/minecraftRect_layout.md",
         "redirect_url": "/reference/content/featuresreference/features/featurelist.md",
         "redirect_document_id": false
     },
     {
-        "source_path": "Reference/content/featuresreference/examples/features/minecraftscan_surface.md",
+        "source_path": "Reference/content/featuresreference/examples/features/minecraftcan_surface.md",
         "redirect_url": "/reference/content/featuresreference/features/featurelist.md",
         "redirect_document_id": false
     },
