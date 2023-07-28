@@ -1,6 +1,6 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: iconicnurdle
+ms.author: mikeam
 title: Features Documentation - Introduction to Features
 ms.prod: gaming
 ---
@@ -8,6 +8,7 @@ ms.prod: gaming
 # Features Documentation - Introduction to Features
 
 Features are decorations scattered throughout the world. Things such as trees, plants, flowers, springs, ore, and coral are all features. Basically, if it isn't the terrain or a mob, it's probably a feature!
+
 Features can be standalone or composed of multiple sub-features. In practice, most features in Minecraft are defined as a chain of two or more features. These chains typically end with features that place blocks in the world. Other feature types control flow such as conditional, sequential, or random distribution.
 
 ## JSON format
@@ -36,24 +37,32 @@ All features must specify the version that they target via the "format_version" 
 
 ## Adding features
 
-Features are read from JSON files in the "features" subfolder of behavior packs. Loading enforces one feature per file; the file name and the name of the feature must match. Feature names can include a namespace of the form "namespace:feature_name" to help distinguish them from features that may be in other behavior packs. This namespace is not considered when matching the filename to the feature name. For example, in a file called "my_tree_feature.json" both "my_tree_feature" and "my_pack_name:my_tree_feature" would be valid identifiers. If two behavior packs define the same feature name (including namespace), then the feature from the highest pack in the stack will be used. This allows users to override base features if desired.
+Features are read from JSON files in the "features" subfolder of behavior packs. Loading enforces one feature per file; the file name and the name of the feature must match. Feature names can include a namespace of the form `"namespace:feature_name"` to help distinguish them from features that may be in other behavior packs.
+This namespace is not considered when matching the filename to the feature name. For example, in a file called `"my_tree_feature.json"`, both `"my_tree_feature"` and `"my_pack_name:my_tree_feature"` would be valid identifiers.
+
+If two behavior packs define the same feature name (including namespace), then the feature from the highest pack in the stack will be used. This allows users to override base features.
+
+### Behavior pack definition
+
+To add features, you need to know the behavior pack structure for them. In your behavior pack folder you will want to create a **features** folder and  **feature_rules** folder. These two folders will contain all of the required JSON files to define your features. The features system does not require a resource pack.
+
+If you are using structures in your features that contain custom blocks or items, you will need to follow the resource pack setup that adds the dependency of a resource pack. 
+
+There are examples of structures in the [structure blocks sample behavior pack](https://github.com/microsoft/minecraft-samples/blob/main/structure_blocks_sample_behavior_pack/README.md).
+There's more information about behavior pack and resource pack dependencies in the [Introduction to Behavior Packs](../../../../Documents/BehaviorPack.md#create-the-dependency).
 
 ## Supported features
 
 | Name| Description |
 |:-----------|:-----------|
 | [minecraft:aggregate_feature](Features\minecraftAggregate_feature.md)| A collection of features in an arbitrary order.|
-| [minecraft:beards_and_shavers](Features\minecraftBeards_and_shavers.md)| Will build a 'beard' or 'shave' out space so as to provide a clear space for a feature to place.|
 | [minecraft:cave_carver_feature](Features\minecraftCave_carver_feature.md)| Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.|
-| [minecraft:conditional_list](Features\minecraftConditional_list.md)| Places the first suitable feature within a collection.|
 | [minecraft:fossil_feature](Features\minecraftFossil_feature.md)| Generates a skeletal structure composed of bone blocks and parametric ore blocks.
 | [minecraft:geode_feature](Features\minecraftGeode_feature.md)| Generates a rock formation to simulate a geode.|
 | [minecraft:growing_plant_feature](Features\minecraftGrowing_plant_feature.md)| Places a growing plant in the world.|
 | [minecraft:nether_cave_carver_feature](Features\minecraftNether_cave_carver_feature.md)| Carves a cave through the Nether in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.|
 | [minecraft:multiface_feature](Features\minecraftMultiface_feature.md)| Places one or a few multiface blocks on floors/walls/ceilings.|
 | [minecraft:ore_feature](Features\minecraftOre_feature.md)| Places a vein of blocks to simulate ore deposits.|
-| [minecraft:rect_layout](Features\minecraftRect_layout.md)| Scans the surface of a Chunk, calling place() on the surface of each block column.|
-| [minecraft:scan_surface](Features\minecraftScan_surface.md)| Scans the surface of a Chunk, calling place() on the surface of each block column.|
 | [minecraft:scatter_feature](Features\minecraftScatter_feature.md)| Scatters a feature throughout a chunk.|
 | [minecraft:search_feature](Features\minecraftSearch_feature.md)| Sweeps a volume searching for a valid placement location for its referenced feature.|
 | [minecraft:sequence_feature](Features\minecraftSequence_feature.md)| A collection of features sequentially, in the order they appear in data.|
@@ -61,23 +70,55 @@ Features are read from JSON files in the "features" subfolder of behavior packs.
 | [minecraft:snap_to_surface_feature](Features\minecraftSnap_to_surface_feature.md)| snaps the y-value of a feature placement pos to the floor or the ceiling within the provided `vertical_search_range`.|
 | [minecraft:Surface_relative_threshold_feature](Features\minecraftSurface_relative_threshold_feature.md)| Determines whether the provided position is below the estimated surface level of the world, and places a feature if so.If the provided position is above configured surface or the surface is not available, placement will fail. This feature only works for Overworld generators using world generation 1.18 or later.|
 | [minecraft:structure_template_feature](Features\minecraftStructure_template_feature.md)| Places a structure in the world. The structure must be stored as a .mcstructure file in the "structures" subdirectory of a behavior pack.|
+| [minecraft:tree_feature](Features\minecraftTree_feature.md)| Places a tree in the world.|
 | [minecraft:underwater_cave_carver_feature](Features\minecraftUnderwater_cave_carver.md)| Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.|
+| [minecraft:vegetation_patch_feature](Features\minecraftVegetation_patch_feature.md)| Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.|
 | [minecraft:weighted_random_feature](Features\minecraftWeighted_random_feature.md)| Randomly selects and places a feature based on a weight value.|
+
+## Unsupported features
+
+> [!WARNING]
+> These features existed in the original Features experiment but are no longer available.
+
+| Name| Description |
+|:-----------|:-----------|
+| minecraft:beards_and_shavers | Would build a 'beard' or 'shave' out space so as to provide a clear space for a feature to place.|
+| minecraft:conditional_list | Placed the first suitable feature within a collection.|
+| minecraft:rect_layout | Scanned the surface of a Chunk, calling place() on the surface of each block column. |
+| minecraft:scan_surface | Scanned the surface of a Chunk, calling place() on the surface of each block column.|
 
 ### Full Feature Schema
 
-Click [here](ExampleFeatureSchema.md) to see an example of the full feature schema.
+The [Example Feature Schema](ExampleFeatureSchema.md) document has an example of the full feature schema.
 
 ## Attaching features
 
 Features must be attached to at least one biome in order to show up in the world. During world generation, biomes attempt to place their attached features chunk-by-chunk. Features can be attached in two ways:
 
-1) Via a feature rule definition
-2) Via the "minecraft:forced_features" biome component
+1. Through a feature rule definition
+2. Through the "minecraft:forced_features" biome component
 
 ## Feature rules
 
 Feature rules are separate JSON definition files found in the "feature_rules" subfolder of behavior packs. Feature rules follow the same filename rules as features. Each feature rule controls exactly one feature and serves as the root of a chain of feature data. To attach a feature to a biome with a feature rule, the "conditions" object must include the "minecraft:biome_filter" field. This is a list of filter tests that are performed on each biome to determine if the feature should be attached. Most relevant is the "has_biome_tag" test.
+
+Biome names for use in the `tag` field can be found on the [Entity Documentation - minecraft:biome_filter](../../EntityReference/Examples/Definitions/NestedTables/biome_filter.md) page.
+
+To control the world generation pass at which a feature rule is applied, you can set the `"placement_pass"`. Order is not guaranteed within each pass. These are the available `"placement_pass"` types:  
+
+| Name| Description |
+|:-----------|:-----------|
+|"first_pass"| |
+|"before_underground_pass"| |
+|"underground_pass" | |This pass will cover most feature rule scenarios underground |
+|"after_underground_pass" | This is the pass to use with decorator features in the underground |
+|"before_surface_pass" | |
+|"surface_pass" | This pass will cover most feature rule scenarios above ground |
+|"after_surface_pass" | This is the pass to use with decorator features above ground |
+|"before_sky_pass" | |
+|"sky_pass | |
+|"after_sky_pass" | |
+|"final_pass"| |
 
 ### Example
 
@@ -193,4 +234,5 @@ Feature rules are separate JSON definition files found in the "feature_rules" su
 
 ## Forced features
 
-Features attached with the second method are called "forced" or "explicit" features. Unlike feature rules, forced features are not defined in separate JSON files. Instead, they are specified in the existing biome JSON definitions via the "minecraft:forced_features" component. Like feature rules, this component includes fields that define when features should be placed ("placement_pass") and how they should be scattered ("distribution"). For more information about biome components (including the complete JSON schema), consult the biome documentation.
+Features attached with the second method are called "forced" or "explicit" features. Unlike feature rules, forced features are not defined in separate JSON files. Instead, they are specified in the existing biome JSON definitions via the "minecraft:forced_features" component. Like feature rules, this component includes fields that define when features should be placed ("placement_pass") and how they should be scattered ("distribution"). 
+For more information about biome components (including the complete JSON schema), consult the biome documentation.

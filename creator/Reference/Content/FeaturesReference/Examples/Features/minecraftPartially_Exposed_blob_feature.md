@@ -25,6 +25,5 @@ ms.prod: gaming
       "placement_probability_per_valid_position": 0.5,
       "exposed_face": "up"
     }
-  }
 }
 ```
