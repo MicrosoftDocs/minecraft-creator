@@ -1,6 +1,6 @@
 ---
-author: JDHeaden
-ms.author: v-jillheaden
+author: iconicnurdle
+ms.author: mikeam
 title: Minecraft Bedrock Editor Installation
 ms.prod: gaming
 description: How to get Minecraft Bedrock Editor
