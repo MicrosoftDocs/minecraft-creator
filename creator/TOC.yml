@@ -48,6 +48,8 @@
             href: Documents/ParkourWorldGuide.md                        
         - name: Advanced Topics
           items:
+          - name: Getting Started with Deferred Lighting
+            href: Documents/DeferredLighting.md
           - name: Base Game Versioning
             href: Documents/BaseGameVersioning.md
           - name: Actor Storage
