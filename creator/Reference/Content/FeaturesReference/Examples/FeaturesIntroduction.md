@@ -11,7 +11,7 @@ Features are decorations scattered throughout the world. Things such as trees, p
 
 Features can be standalone or composed of multiple sub-features. In practice, most features in Minecraft are defined as a chain of two or more features. These chains typically end with features that place blocks in the world. Other feature types control flow such as conditional, sequential, or random distribution.
 
-## JSON format
+## JSON Format
 
 All features must specify the version that they target via the "format_version" field. The remainder of the data is contained in independent JSON sub-objects for each supported feature type. These feature types define the behavior of the feature and include properties specific to that behavior. To be valid, a definition must include exactly one of these type objects. See the full feature schema below for additional details and the full list of supported feature types.
 
@@ -35,7 +35,7 @@ All features must specify the version that they target via the "format_version" 
 }
 ```
 
-## Adding features
+## Adding Features
 
 Features are read from JSON files in the "features" subfolder of behavior packs. Loading enforces one feature per file; the file name and the name of the feature must match. Feature names can include a namespace of the form `"namespace:feature_name"` to help distinguish them from features that may be in other behavior packs.
 This namespace is not considered when matching the filename to the feature name. For example, in a file called `"my_tree_feature.json"`, both `"my_tree_feature"` and `"my_pack_name:my_tree_feature"` would be valid identifiers.
@@ -45,6 +45,8 @@ If two behavior packs define the same feature name (including namespace), then t
 ### Behavior pack definition
 
 To add features, you need to know the behavior pack structure for them. In your behavior pack folder you will want to create a **features** folder and  **feature_rules** folder. These two folders will contain all of the required JSON files to define your features. The features system does not require a resource pack.
+
+![Image showing the structure of a custom feature behavior pack](../../../Media/FeaturesIntroduction/custom_feature_behavior_pack_structure.png)
 
 If you are using structures in your features that contain custom blocks or items, you will need to follow the resource pack setup that adds the dependency of a resource pack. 
 
@@ -91,14 +93,14 @@ There's more information about behavior pack and resource pack dependencies in t
 
 The [Example Feature Schema](ExampleFeatureSchema.md) document has an example of the full feature schema.
 
-## Attaching features
+## Attaching Features
 
 Features must be attached to at least one biome in order to show up in the world. During world generation, biomes attempt to place their attached features chunk-by-chunk. Features can be attached in two ways:
 
 1. Through a feature rule definition
 2. Through the "minecraft:forced_features" biome component
 
-## Feature rules
+## Feature Rules
 
 Feature rules are separate JSON definition files found in the "feature_rules" subfolder of behavior packs. Feature rules follow the same filename rules as features. Each feature rule controls exactly one feature and serves as the root of a chain of feature data. To attach a feature to a biome with a feature rule, the "conditions" object must include the "minecraft:biome_filter" field. This is a list of filter tests that are performed on each biome to determine if the feature should be attached. Most relevant is the "has_biome_tag" test.
 
@@ -120,9 +122,9 @@ To control the world generation pass at which a feature rule is applied, you can
 |"after_sky_pass" | |
 |"final_pass"| |
 
-### Example
+### Example: birch_forest_surface_trees_feature
 
-```json
+```JSON
 {
   "format_version": "1.13.0",
   "minecraft:feature_rules": {
@@ -166,73 +168,77 @@ To control the world generation pass at which a feature rule is applied, you can
 
 ## Feature rule schema
 
-```json
+```JSON
+{
+  version "format_version"
+  object "minecraft:feature_rules"
   {
-      version "format_version"
-      object "minecraft:feature_rules"
+      object "description"
       {
-          object "description"
-          {
-              string "identifier" // The name of this feature rule in the format 'namespace_name:rule_name'. 'rule_name' must match the filename.
-              feature_reference "places_feature" // Named reference to the feature controlled by this rule.
-          }
-          object "conditions" // Parameters to control where and when the feature will be placed.
-          {
-              string "placement_pass" // When the feature should be placed relative to others. Earlier passes in the list are guaranteed to occur before later passes. Order is not guaranteed within each pass.
-              biome_filter_group "minecraft:biome_filter" : opt // List of filter tests to determine which biomes this rule will attach to.
-          }
-          object "distribution" : opt // Parameters controlling the initial scatter of the feature.
-          {
-              molang "iterations" // Number of scattered positions to generate
-              object "scatter_chance" : opt // Probability numerator / denominator that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.
-              {
-                  int "numerator"<1-*>
-                  int "denominator"<1-*>
-              }
-              molang "scatter_chance" : opt // Probability (0-100] that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.
-              enumerated_value "coordinate_eval_order"<"xyz", "xzy", "yxz", "yzx", "zxy", "zyx"> : opt // The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to "xzy".
-              molang "x" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
-              object "x" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
-              {
-                  enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
-                  int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
-                  int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
-                  array "extent"[2]
-                  {
-                      molang "[0..0]" : opt // Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around
-                      molang "[1..1]" : opt // Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around
-                  }
-              }
-              molang "z" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
-              object "z" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
-              {
-                  enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
-                  int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
-                  int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
-                  array "extent"[2]
-                  {
-                      molang "[0..0]" : opt // Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around
-                      molang "[1..1]" : opt // Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around
-                  }
-              }
-              molang "y" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
-              object "y" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
-              {
-                  enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
-                  int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
-                  int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
-                  array "extent"[2]
-                  {
-                      molang "[0..0]" : opt // Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around
-                      molang "[1..1]" : opt // Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around
-                  }
-              }
-          }
+          string "identifier" // The name of this feature rule in the format 'namespace_name:rule_name'. 'rule_name' must match the filename.
+          feature_reference "places_feature" // Named reference to the feature controlled by this rule.
       }
-  }
+      object "conditions" // Parameters to control where and when the feature will be placed.
+      {
+          string "placement_pass" // When the feature should be placed relative to others. Earlier passes in the list are guaranteed to occur before later passes. Order is not guaranteed within each pass.
+          biome_filter_group "minecraft:biome_filter" : opt // List of filter tests to determine which biomes this rule will attach to.
+      }
+      object "distribution" : opt // Parameters controlling the initial scatter of the feature.
+      {
+          molang "iterations" // Number of scattered positions to generate
+          object "scatter_chance" : opt // Probability numerator / denominator that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.
+          {
+              int "numerator"<1-*>
+              int "denominator"<1-*>
+          }
+          molang "scatter_chance" : opt // Probability (0-100] that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.
+          enumerated_value "coordinate_eval_order"<"xyz", "xzy", "yxz", "yzx", "zxy", "zyx"> : opt // The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to "xzy".
+          molang "x" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
+          object "x" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
+          {
+            enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
+            int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
+            int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
+            array "extent"[2]
+              {
+                molang "[0..0]" : opt // Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around
+                molang "[1..1]" : opt // Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around
+              }
+          }
+          molang "z" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
+          object "z" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
+          {
+            enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
+            int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
+            int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
+            array "extent"[2]
+              {
+                molang "[0..0]" : opt // Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around
+                molang "[1..1]" : opt // Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around
+              }
+          }
+          molang "y" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
+          object "y" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
+          {
+            enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
+            int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
+            int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
+            array "extent"[2]
+             {
+                molang "[0..0]" : opt // Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around
+                molang "[1..1]" : opt // Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around
+             }
+          }
+        }
+    }
+}
 ```
 
-## Forced features
+## Forced Features
 
-Features attached with the second method are called "forced" or "explicit" features. Unlike feature rules, forced features are not defined in separate JSON files. Instead, they are specified in the existing biome JSON definitions via the "minecraft:forced_features" component. Like feature rules, this component includes fields that define when features should be placed ("placement_pass") and how they should be scattered ("distribution"). 
-For more information about biome components (including the complete JSON schema), consult the biome documentation.
+Features attached with the second method are called "forced" or "explicit" features. 
+
+Unlike feature rules, forced features are not defined in separate JSON files. Instead, they are specified in the existing biome JSON definitions via the "minecraft:forced_features" component. 
+Like feature rules, this component includes fields that define when features should be placed ("placement_pass") and how they should be scattered ("distribution"). 
+
+For more information about biome components (including the complete JSON schema), consult the [biome documentation](../../BiomeReference/Examples/BiomeOverview.md).
