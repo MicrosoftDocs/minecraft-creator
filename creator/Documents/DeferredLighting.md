@@ -72,29 +72,6 @@ You must have appropriate hardware and a Preview-enabled platform to execute the
 
 On Android, there is a hard requirement at this time that only GLES 3 devices running Android OS 9 and above will be able to run the pipeline.
 
-## Resource Pack - manifest.json Capabilities
-
-Specifically, the key thing that communicates to the game client that a resource pack is capable of Deferred Lighting is the presence of a certain string(s) in the capabilities array in your pack’s manifest.json.
-
-Because the assets required for RTX are a subset of the assets needed for Deferred Lighting, a pack that broadcasts the "raytraced" capability will also be capable of activating Deferred Lighting. However, it is recommended that a new capability string be used going forward for Deferred/PBR Lighting packs as these packs should be expected to run cross-platform, unlike "raytraced" packs which are restricted to RTX-only devices. 
-
-The new capability string is "pbr":
-
-```json
-{
-  "format_version": 1,
-  "header": {
-    ...
-  },
-  "modules": [
-    ...
-  ],
-  "capabilities": [
-    "pbr"
-  ]
-}
-```
-
 ## Deferred Lighting JSONs
 
 Texture Sets are good for defining the surface properties of individual blocks or mobs, but for more global lighting properties, JSON files provide a simple way to data-drive the renderer. The JSONs described here should be located inside of a "lighting" directory in the root of a given resource pack.
