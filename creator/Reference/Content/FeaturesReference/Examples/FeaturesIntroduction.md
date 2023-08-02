@@ -44,7 +44,12 @@ If two behavior packs define the same feature name (including namespace), then t
 
 ### Behavior pack definition
 
-To add features, you need to know the behavior pack structure for them. In your behavior pack folder you will want to create a **features** folder and  **feature_rules** folder. These two folders will contain all of the required JSON files to define your features. The features system does not require a resource pack.
+To add features, you need to know the behavior pack structure for them. 
+In your behavior pack folder you will want to create a **features** folder and  **feature_rules** folder. These two folders will contain all of the required JSON files to define your features.
+
+The `"min_engine_version"` for the pack needs to be 1.20.20.
+
+The features system does not require a resource pack. 
 
 ![Image showing the structure of a custom feature behavior pack](../../../Media/FeaturesIntroduction/custom_feature_behavior_pack_structure.png)
 
@@ -108,19 +113,19 @@ Biome names for use in the `tag` field can be found on the [Entity Documentation
 
 To control the world generation pass at which a feature rule is applied, you can set the `"placement_pass"`. Order is not guaranteed within each pass. These are the available `"placement_pass"` types:  
 
-| Name| Note (if any) |
-|:-----------|:-----------|
-|"first_pass"| |
-|"before_underground_pass"| |
-|"underground_pass" | This pass will cover most feature rule scenarios underground |
-|"after_underground_pass" | This is the pass to use with decorator features in the underground |
-|"before_surface_pass" | |
-|"surface_pass" | This pass will cover most feature rule scenarios above ground |
-|"after_surface_pass" | This is the pass to use with decorator features above ground |
-|"before_sky_pass" | |
-|"sky_pass | |
-|"after_sky_pass" | |
-|"final_pass"| |
+| Placement Pass Types|
+|:-----------|
+|first_pass|
+|before_underground_pass|
+|underground_pass|
+|after_underground_pass|
+|before_surface_pass|
+|surface_pass|
+|after_surface_pass|
+|before_sky_pass|
+|sky_pass|
+|after_sky_pass|
+|final_pass|
 
 ### Example: birch_forest_surface_trees_feature
 
