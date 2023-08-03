@@ -59,6 +59,8 @@ controls whether the day cycle moves
 controls whether entities do drops
 - `dofiretick`
 controls whether fire spreads or not
+- `recipesunlock`
+- `dolimitedcrafting`
 - `domobloot`
 controls whether mobs drop loot
 - `domobspawning`
@@ -123,3 +125,4 @@ Random Tick Speed
 Function Command Limit
 - `spawnradius`
 Spawn Radius
+- `playerssleepingpercentage`

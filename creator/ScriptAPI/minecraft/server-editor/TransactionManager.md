@@ -23,6 +23,7 @@ The transactions are stored as a stack, and can be undone in stack order to rest
 - [redo](#redo)
 - [redoSize](#redosize)
 - [trackBlockChangeArea](#trackblockchangearea)
+- [trackBlockChangeCompoundBlockVolume](#trackblockchangecompoundblockvolume)
 - [trackBlockChangeList](#trackblockchangelist)
 - [trackBlockChangeSelection](#trackblockchangeselection)
 - [undo](#undo)
@@ -164,6 +165,22 @@ The pending list will be added to the open transaction record when a commit has 
 - **to**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Max block location of a bounding area
+
+#### **Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **trackBlockChangeCompoundBlockVolume**
+`
+trackBlockChangeCompoundBlockVolume(compoundBlockVolume: minecraftserver.CompoundBlockVolume): boolean
+`
+
+#### **Parameters**
+- **compoundBlockVolume**: [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md)
 
 #### **Returns** *boolean*
 

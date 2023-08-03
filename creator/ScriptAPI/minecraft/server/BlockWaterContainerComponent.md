@@ -39,25 +39,25 @@ Adds an item and colors the water based on a dye item type.
 
 ### **getCustomColor**
 `
-getCustomColor(): Color
+getCustomColor(): RGBA
 `
 
 Retrieves a custom base color used for the sign text.
 
-#### **Returns** [*Color*](Color.md) - Color that is used as the base color for sign text.
+#### **Returns** [*RGBA*](RGBA.md) - Color that is used as the base color for sign text.
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **setCustomColor**
 `
-setCustomColor(color: Color): void
+setCustomColor(color: RGBA): void
 `
 
 Sets a custom base color used for the sign text. 
 
 #### **Parameters**
-- **color**: [*Color*](Color.md)
+- **color**: [*RGBA*](RGBA.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

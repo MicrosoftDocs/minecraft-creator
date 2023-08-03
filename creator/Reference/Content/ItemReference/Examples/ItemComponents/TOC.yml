@@ -4,6 +4,8 @@
    href: minecraft_armor.md
  - name: block_placer
    href: minecraft_block_placer.md
+ - name: can_destroy_in_creative
+   href: minecraft_can_destroy_in_creative.md
  - name: chargeable
    href: minecraft_chargeable.md
  - name: cooldown
@@ -14,8 +16,6 @@
    href: minecraft_display_name.md
  - name: durability
    href: minecraft_durability.md
- - name: dye_powder
-   href: minecraft_dye_powder.md
  - name: entity_placer
    href: minecraft_entity_placer.md
  - name: foil
@@ -24,12 +24,16 @@
    href: minecraft_food.md
  - name: fuel
    href: minecraft_fuel.md
+ - name: hover_text_color
+   href: minecraft_hover_text_color.md
  - name: icon
    href: minecraft_icon.md
  - name: item_storage
    href: minecraft_item_storage.md
  - name: knockback_resistance
    href: minecraft_knockback_resistance.md
+ - name: max_stack_size
+   href: minecraft_max_stack_size.md
  - name: on_use
    href: minecraft_on_use.md
  - name: on_use_on

@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.EntityRaycastOptions class.
 ---
 # EntityRaycastOptions Interface
 
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains additional options for an entity raycast operation.
 
 ## Properties

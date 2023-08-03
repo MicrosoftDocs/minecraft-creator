@@ -51,6 +51,7 @@ Type: [*Scoreboard*](Scoreboard.md)
 - [getDimension](#getdimension)
 - [getDynamicProperty](#getdynamicproperty)
 - [getEntity](#getentity)
+- [getMoonPhase](#getmoonphase)
 - [getPlayers](#getplayers)
 - [getTimeOfDay](#gettimeofday)
 - [playMusic](#playmusic)
@@ -73,7 +74,11 @@ A method that is internal-only, used for broadcasting specific messages between 
 
 #### **Parameters**
 - **id**: *string*
+  
+  The message identifier.
 - **value**: *string*
+  
+  The message.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -107,21 +112,18 @@ Returns an array of all active players within the world.
 getDay(): number
 `
 
-Returns the day number of the current world.
+Returns the current day.
 
-#### **Returns** *number*
+#### **Returns** *number* - The current day, determined by the world time divided by the number of ticks per day. New worlds start at day 0.
 
 ### **getDefaultSpawnLocation**
 `
 getDefaultSpawnLocation(): Vector3
 `
 
-Returns the default spawn location within the world.
+Returns the default Overworld spawn location. 
 
-#### **Returns** [*Vector3*](Vector3.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+#### **Returns** [*Vector3*](Vector3.md) - The default Overworld spawn location. By default, the Y coordinate is 32767, indicating a player's spawn height is not fixed and will be determined by surrounding blocks.
 
 ### **getDimension**
 `
@@ -132,6 +134,8 @@ Returns a dimension object.
 
 #### **Parameters**
 - **dimensionId**: *string*
+  
+  The name of the dimension. For example, "overworld", "nether" or "the_end".
 
 #### **Returns** [*Dimension*](Dimension.md) - The requested dimension
 
@@ -147,6 +151,8 @@ Returns a property value.
 
 #### **Parameters**
 - **identifier**: *string*
+  
+  The property identifier.
 
 #### **Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
 
@@ -154,7 +160,7 @@ Returns a property value.
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
-> This function can throw errors.
+> Throws if the given dynamic property identifier is not defined.
 
 #### Examples
 ##### ***incrementProperty.ts***
@@ -230,6 +236,18 @@ Returns an entity based on the provided id.
 > [!WARNING]
 > Throws if the given entity id is invalid.
 
+### **getMoonPhase**
+`
+getMoonPhase(): MoonPhase
+`
+
+Returns the MoonPhase for the current time.
+
+#### **Returns** [*MoonPhase*](MoonPhase.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **getPlayers**
 `
 getPlayers(options?: EntityQueryOptions): Player[]
@@ -245,16 +263,16 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
 #### **Returns** [*Player*](Player.md)[] - A player array.
 
 > [!WARNING]
-> This function can throw errors.
+> Throws if the provided EntityQueryOptions are invalid.
 
 ### **getTimeOfDay**
 `
 getTimeOfDay(): number
 `
 
-Gets the current time within the current day.
+Returns the time of day.
 
-#### **Returns** *number*
+#### **Returns** *number* - The time of day, in ticks, between 0 and 24000.
 
 ### **playMusic**
 `
@@ -444,10 +462,12 @@ world.sendMessage(rawMessage);
 setAbsoluteTime(absoluteTime: number): void
 `
 
-Sets the overall absolute time within the world. This can advance the number of effective days that are considered within the world.
+Sets the world time.
 
 #### **Parameters**
 - **absoluteTime**: *number*
+  
+  The world time, in ticks.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -464,14 +484,11 @@ Sets a default spawn location for all players.
   
   Location of the spawn point. Note that this is assumed to be within the overworld dimension.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
 > [!WARNING]
-> This function can throw errors.
+> Throws if the provided spawn location is out of bounds.
 
 ### **setDynamicProperty**
 `
@@ -482,6 +499,8 @@ Sets a specified property to a value.
 
 #### **Parameters**
 - **identifier**: *string*
+  
+  The property identifier.
 - **value**: *boolean* | *number* | *string* | [*Vector3*](Vector3.md)
   
   Data value of the property to set.
@@ -493,7 +512,7 @@ Sets a specified property to a value.
 > This function can't be called in read-only mode.
 
 > [!WARNING]
-> This function can throw errors.
+> Throws if the given dynamic property identifier is not defined.
 
 #### Examples
 ##### ***incrementProperty.ts***
@@ -554,16 +573,18 @@ Sets a specified property to a value.
 setTimeOfDay(timeOfDay: number | TimeOfDay): void
 `
 
-Sets the current time within the current day.
+Sets the time of day.
 
 #### **Parameters**
 - **timeOfDay**: *number* | [*TimeOfDay*](TimeOfDay.md)
+  
+  The time of day, in ticks, between 0 and 24000.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
 > [!WARNING]
-> This function can throw errors.
+> Throws if the provided time of day is not within the valid range.
 
 ### **stopMusic**
 `

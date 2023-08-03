@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.BlockRaycastOptions class.
 ---
 # BlockRaycastOptions Interface
 
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains additional options for configuring a block raycast query.
 
 ## Properties

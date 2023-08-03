@@ -106,18 +106,12 @@ This event fires when an entity hits (that is, melee attacks) a block.
 
 Type: [*EntityHitBlockAfterEventSignal*](EntityHitBlockAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **entityHitEntity**
 `read-only entityHitEntity: EntityHitEntityAfterEventSignal;`
 
 This event fires when an entity hits (that is, melee attacks) another entity.
 
 Type: [*EntityHitEntityAfterEventSignal*](EntityHitEntityAfterEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **entityHurt**
 `read-only entityHurt: EntityHurtAfterEventSignal;`
@@ -317,12 +311,22 @@ Type: [*PressurePlatePushAfterEventSignal*](PressurePlatePushAfterEventSignal.md
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-### **projectileHit**
-`read-only projectileHit: ProjectileHitAfterEventSignal;`
+### **projectileHitBlock**
+`read-only projectileHitBlock: ProjectileHitBlockAfterEventSignal;`
 
-This event fires when a projectile hits an entity or block.
+This event fires when a projectile hits a block.
 
-Type: [*ProjectileHitAfterEventSignal*](ProjectileHitAfterEventSignal.md)
+Type: [*ProjectileHitBlockAfterEventSignal*](ProjectileHitBlockAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **projectileHitEntity**
+`read-only projectileHitEntity: ProjectileHitEntityAfterEventSignal;`
+
+This event fires when a projectile hits an entity.
+
+Type: [*ProjectileHitEntityAfterEventSignal*](ProjectileHitEntityAfterEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.

@@ -100,7 +100,7 @@ Creates an explosion at the specified location.
 
 ### **fillBlocks**
 `
-fillBlocks(begin: Vector3, end: Vector3, block: BlockPermutation | BlockType, options?: BlockFillOptions): number
+fillBlocks(begin: Vector3, end: Vector3, block: BlockPermutation | BlockType | string, options?: BlockFillOptions): number
 `
 
 Fills an area between begin and end with block of type block.
@@ -112,7 +112,7 @@ Fills an area between begin and end with block of type block.
 - **end**: [*Vector3*](Vector3.md)
   
   The upper southeast ending corner of the area.
-- **block**: [*BlockPermutation*](BlockPermutation.md) | [*BlockType*](BlockType.md)
+- **block**: [*BlockPermutation*](BlockPermutation.md) | [*BlockType*](BlockType.md) | *string*
   
   Type of block to fill the volume with.
 - **options**?: [*BlockFillOptions*](BlockFillOptions.md) = `null`
@@ -175,9 +175,6 @@ Gets the first block that intersects with a vector emanating from a location.
   Additional options for processing this raycast query.
 
 #### **Returns** [*BlockRaycastHit*](BlockRaycastHit.md) | *undefined*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **getEntities**
 `
@@ -282,9 +279,6 @@ Gets entities that intersect with a specified vector emanating from a location.
   Additional options for processing this raycast query.
 
 #### **Returns** [*EntityRaycastHit*](EntityRaycastHit.md)[]
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **getPlayers**
 `
@@ -446,36 +440,36 @@ Creates a new item stack as an entity at the specified location.
 #### Examples
 ##### ***itemStacks.ts***
 ```typescript
-  const overworld = mc.world.getDimension("overworld");
+const overworld = mc.world.getDimension('overworld');
 
-  const oneItemLoc = { x: targetLocation.x + targetLocation.y + 3, y: 2, z: targetLocation.z + 1 };
-  const fiveItemsLoc = { x: targetLocation.x + 1, y: targetLocation.y + 2, z: targetLocation.z + 1 };
-  const diamondPickaxeLoc = { x: targetLocation.x + 2, y: targetLocation.y + 2, z: targetLocation.z + 4 };
+const oneItemLoc = { x: targetLocation.x + targetLocation.y + 3, y: 2, z: targetLocation.z + 1 };
+const fiveItemsLoc = { x: targetLocation.x + 1, y: targetLocation.y + 2, z: targetLocation.z + 1 };
+const diamondPickaxeLoc = { x: targetLocation.x + 2, y: targetLocation.y + 2, z: targetLocation.z + 4 };
 
-  const oneEmerald = new mc.ItemStack(mc.MinecraftItemTypes.emerald, 1);
-  const onePickaxe = new mc.ItemStack(mc.MinecraftItemTypes.diamondPickaxe, 1);
-  const fiveEmeralds = new mc.ItemStack(mc.MinecraftItemTypes.emerald, 5);
+const oneEmerald = new mc.ItemStack(mc.MinecraftItemTypes.Emerald, 1);
+const onePickaxe = new mc.ItemStack(mc.MinecraftItemTypes.DiamondPickaxe, 1);
+const fiveEmeralds = new mc.ItemStack(mc.MinecraftItemTypes.Emerald, 5);
 
-  log(`Spawning an emerald at (${oneItemLoc.x}, ${oneItemLoc.y}, ${oneItemLoc.z})`);
-  overworld.spawnItem(oneEmerald, oneItemLoc);
+log(`Spawning an emerald at (${oneItemLoc.x}, ${oneItemLoc.y}, ${oneItemLoc.z})`);
+overworld.spawnItem(oneEmerald, oneItemLoc);
 
-  log(`Spawning five emeralds at (${fiveItemsLoc.x}, ${fiveItemsLoc.y}, ${fiveItemsLoc.z})`);
-  overworld.spawnItem(fiveEmeralds, fiveItemsLoc);
+log(`Spawning five emeralds at (${fiveItemsLoc.x}, ${fiveItemsLoc.y}, ${fiveItemsLoc.z})`);
+overworld.spawnItem(fiveEmeralds, fiveItemsLoc);
 
-  log(`Spawning a diamond pickaxe at (${diamondPickaxeLoc.x}, ${diamondPickaxeLoc.y}, ${diamondPickaxeLoc.z})`);
-  overworld.spawnItem(onePickaxe, diamondPickaxeLoc);
+log(`Spawning a diamond pickaxe at (${diamondPickaxeLoc.x}, ${diamondPickaxeLoc.y}, ${diamondPickaxeLoc.z})`);
+overworld.spawnItem(onePickaxe, diamondPickaxeLoc);
 ```
 ##### ***spawnItem.ts***
 ```typescript
-  const featherItem = new mc.ItemStack(mc.MinecraftItemTypes.feather, 1);
+const featherItem = new mc.ItemStack(mc.MinecraftItemTypes.Feather, 1);
 
-  overworld.spawnItem(featherItem, targetLocation);
-  log(`New feather created at ${targetLocation.x}, ${targetLocation.y}, ${targetLocation.z}!`);
+overworld.spawnItem(featherItem, targetLocation);
+log(`New feather created at ${targetLocation.x}, ${targetLocation.y}, ${targetLocation.z}!`);
 ```
 
 ### **spawnParticle**
 `
-spawnParticle(effectName: string, location: Vector3, molangVariables: MolangVariableMap): void
+spawnParticle(effectName: string, location: Vector3, molangVariables?: MolangVariableMap): void
 `
 
 Creates a new particle emitter at a specified location in the world.
@@ -487,9 +481,9 @@ Creates a new particle emitter at a specified location in the world.
 - **location**: [*Vector3*](Vector3.md)
   
   The location at which to create the particle emitter.
-- **molangVariables**: [*MolangVariableMap*](MolangVariableMap.md)
+- **molangVariables**?: [*MolangVariableMap*](MolangVariableMap.md) = `null`
   
-  A set of additional, customizable variables that can be adjusted for this particle emitter.
+  A set of optional, customizable variables that can be adjusted for this particle.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

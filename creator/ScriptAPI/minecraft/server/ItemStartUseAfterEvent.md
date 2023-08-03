@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.ItemStartUseAfterEvent class.
 ---
 # ItemStartUseAfterEvent Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains information related to a chargeable item starting to be charged.
 
 ## Properties
@@ -23,11 +20,11 @@ The impacted item stack that is starting to be charged.
 Type: [*ItemStack*](ItemStack.md)
 
 ### **source**
-`read-only source: Entity;`
+`read-only source: Player;`
 
 Returns the source entity that triggered this item event.
 
-Type: [*Entity*](Entity.md)
+Type: [*Player*](Player.md)
 
 ### **useDuration**
 `read-only useDuration: number;`

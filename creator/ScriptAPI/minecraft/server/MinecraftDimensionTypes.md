@@ -8,6 +8,10 @@ description: Contents of the @minecraft/server.MinecraftDimensionTypes class.
 ---
 # MinecraftDimensionTypes Class
 
+DEPRECATED
+
+Use @minecraft/vanilla-data.MinecraftDimensionTypes
+
 A collection of default Minecraft dimension types.
 
 ## Constants

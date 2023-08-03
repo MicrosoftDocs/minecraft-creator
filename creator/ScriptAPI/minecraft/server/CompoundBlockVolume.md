@@ -44,19 +44,25 @@ Type: *number*
 - [getBoundingBox](#getboundingbox)
 - [getMax](#getmax)
 - [getMin](#getmin)
+- [getOrigin](#getorigin)
+- [isEmpty](#isempty)
 - [isInside](#isinside)
 - [peekLastVolume](#peeklastvolume)
 - [popVolume](#popvolume)
 - [pushVolume](#pushvolume)
 - [replaceOrAddLastVolume](#replaceoraddlastvolume)
-- [translate](#translate)
+- [setOrigin](#setorigin)
+- [translateOrigin](#translateorigin)
 
 ### **constructor**
 `
-new CompoundBlockVolume()
+new CompoundBlockVolume(origin?: Vector3)
 `
 
 Create a CompoundBlockVolume object
+
+#### **Parameters**
+- **origin**?: [*Vector3*](Vector3.md) = `null`
 
 #### **Returns** [*CompoundBlockVolume*](CompoundBlockVolume.md)
 
@@ -124,9 +130,29 @@ Get the min block location of the outermost bounding rectangle which represents 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
+### **getOrigin**
+`
+getOrigin(): Vector3
+`
+
+#### **Returns** [*Vector3*](Vector3.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+### **isEmpty**
+`
+isEmpty(): boolean
+`
+
+#### **Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **isInside**
 `
-isInside(delta: Vector3): boolean
+isInside(worldLocation: Vector3): boolean
 `
 
 Return a boolean representing whether or not a given block location is inside a positive block volume.
@@ -134,9 +160,7 @@ Return a boolean representing whether or not a given block location is inside a 
 E.g. if the stack contains a large cube followed by a slightly smaller negative cube, and the test location is within the negative cube - the function will return false because it's not 'inside' a volume (it IS inside the bounding rectangle, but it is not inside a positively defined location)
 
 #### **Parameters**
-- **delta**: [*Vector3*](Vector3.md)
-  
-  block location to test
+- **worldLocation**: [*Vector3*](Vector3.md)
 
 #### **Returns** *boolean*
 
@@ -145,10 +169,13 @@ E.g. if the stack contains a large cube followed by a slightly smaller negative 
 
 ### **peekLastVolume**
 `
-peekLastVolume(): CompoundBlockVolumeItem | undefined
+peekLastVolume(forceRelativity?: CompoundBlockVolumePositionRelativity): CompoundBlockVolumeItem | undefined
 `
 
 Inspect the last entry pushed to the volume stack without affecting the stack contents
+
+#### **Parameters**
+- **forceRelativity**?: [*CompoundBlockVolumePositionRelativity*](CompoundBlockVolumePositionRelativity.md) = `null`
 
 #### **Returns** [*CompoundBlockVolumeItem*](CompoundBlockVolumeItem.md) | *undefined* - Returns undefined if the stack is empty
 
@@ -201,17 +228,26 @@ If the volume stack is NOT empty, this function will replace the last item on th
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
-### **translate**
+### **setOrigin**
 `
-translate(delta: Vector3): void
+setOrigin(position: Vector3, preserveExistingVolumes?: boolean): void
 `
 
-Move the root block location of the volume by a given amount.  This effectively adds the specified delta to the block location of all of the volumes in the stack
+#### **Parameters**
+- **position**: [*Vector3*](Vector3.md)
+- **preserveExistingVolumes**?: *boolean* = `null`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+### **translateOrigin**
+`
+translateOrigin(delta: Vector3, preserveExistingVolumes?: boolean): void
+`
 
 #### **Parameters**
 - **delta**: [*Vector3*](Vector3.md)
-  
-  Amount to move
+- **preserveExistingVolumes**?: *boolean* = `null`
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

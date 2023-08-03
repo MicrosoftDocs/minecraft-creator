@@ -8,10 +8,40 @@ description: Contents of the @minecraft/server.EntityHealthChangedAfterEventSign
 ---
 # EntityHealthChangedAfterEventSignal Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-## Extends
-- [*IEntityHealthChangedAfterEventSignal*](IEntityHealthChangedAfterEventSignal.md)
-
 Manages callbacks that are connected to when the health of an entity changes.
+
+## Methods
+- [subscribe](#subscribe)
+- [unsubscribe](#unsubscribe)
+
+### **subscribe**
+`
+subscribe(callback: (arg: EntityHealthChangedAfterEvent) => void, options?: EntityEventOptions): (arg: EntityHealthChangedAfterEvent) => void
+`
+
+Adds a callback that will be called when the health of an entity changes.
+
+#### **Parameters**
+- **callback**: (arg: [*EntityHealthChangedAfterEvent*](EntityHealthChangedAfterEvent.md)) => *void*
+- **options**?: [*EntityEventOptions*](EntityEventOptions.md) = `null`
+
+#### **Returns** (arg: [*EntityHealthChangedAfterEvent*](EntityHealthChangedAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+### **unsubscribe**
+`
+unsubscribe(callback: (arg: EntityHealthChangedAfterEvent) => void): void
+`
+
+Removes a callback from being called when the health of an entity changes.
+
+#### **Parameters**
+- **callback**: (arg: [*EntityHealthChangedAfterEvent*](EntityHealthChangedAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.

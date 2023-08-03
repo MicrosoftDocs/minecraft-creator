@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.ScoreboardScoreInfo class.
 ---
 # ScoreboardScoreInfo Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains a pair of a scoreboard participant and its respective score.
 
 ## Properties

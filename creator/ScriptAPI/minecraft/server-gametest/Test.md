@@ -98,13 +98,13 @@ Tests that the condition specified in _condition_ is true. If not, an error with
 
 ### **assertBlockPresent**
 `
-assertBlockPresent(blockType: minecraftserver.BlockType, blockLocation: minecraftserver.Vector3, isPresent?: boolean): void
+assertBlockPresent(blockType: minecraftserver.BlockType | string, blockLocation: minecraftserver.Vector3, isPresent?: boolean): void
 `
 
 Tests that a block of the specified type is present at the specified location. If it is not, an exception is thrown.
 
 #### **Parameters**
-- **blockType**: [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md)
+- **blockType**: [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) | *string*
   
   Expected block type.
 - **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
@@ -457,13 +457,13 @@ Depending on the value of isWaterlogged, tests that a block at a location contai
 
 ### **assertItemEntityCountIs**
 `
-assertItemEntityCountIs(itemType: minecraftserver.ItemType, blockLocation: minecraftserver.Vector3, searchDistance: number, count: number): void
+assertItemEntityCountIs(itemType: minecraftserver.ItemType | string, blockLocation: minecraftserver.Vector3, searchDistance: number, count: number): void
 `
 
 Tests that items of a particular type and count are present within an area. If not, an error is thrown.
 
 #### **Parameters**
-- **itemType**: [*@minecraft/server.ItemType*](../../minecraft/server/ItemType.md)
+- **itemType**: [*@minecraft/server.ItemType*](../../minecraft/server/ItemType.md) | *string*
   
   Type of item to look for.
 - **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
@@ -487,13 +487,13 @@ test.assertItemEntityCountIs(Items.feather, expectedFeatherLoc, 0, 1);
 
 ### **assertItemEntityPresent**
 `
-assertItemEntityPresent(itemType: minecraftserver.ItemType, blockLocation: minecraftserver.Vector3, searchDistance?: number, isPresent?: boolean): void
+assertItemEntityPresent(itemType: minecraftserver.ItemType | string, blockLocation: minecraftserver.Vector3, searchDistance?: number, isPresent?: boolean): void
 `
 
 Depending on the value of isPresent, tests whether a particular item entity is present or not at a particular location. If the condition is not met, an exception is thrown.
 
 #### **Parameters**
-- **itemType**: [*@minecraft/server.ItemType*](../../minecraft/server/ItemType.md)
+- **itemType**: [*@minecraft/server.ItemType*](../../minecraft/server/ItemType.md) | *string*
   
   Type of item to test for.
 - **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
@@ -932,13 +932,13 @@ Sets a block to a particular configuration (a BlockPermutation) at the specified
 
 ### **setBlockType**
 `
-setBlockType(blockType: minecraftserver.BlockType, blockLocation: minecraftserver.Vector3): void
+setBlockType(blockType: minecraftserver.BlockType | string, blockLocation: minecraftserver.Vector3): void
 `
 
 Sets a block to a particular type at the specified block location.
 
 #### **Parameters**
-- **blockType**: [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md)
+- **blockType**: [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) | *string*
   
   Type of block to set.
 - **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
@@ -1092,12 +1092,11 @@ Spawns an item entity at a specified location.
 #### Examples
 ##### ***spawnEmeralds.js***
 ```typescript
-const oneEmerald = new ItemStack(MinecraftItemTypes.emerald, 1, 0);
-const fiveEmeralds = new ItemStack(MinecraftItemTypes.emerald, 5, 0);
+const oneEmerald = new ItemStack(MinecraftItemTypes.Emerald, 1, 0);
+const fiveEmeralds = new ItemStack(MinecraftItemTypes.Emerald, 5, 0);
 
 test.spawnItem(oneEmerald, { x: 3.5, y: 3, z: 1.5 });
 test.spawnItem(fiveEmeralds, { x: 1.5, y: 3, z: 1.5 });
-
 ```
 
 ### **spawnSimulatedPlayer**
@@ -1318,13 +1317,13 @@ Runs the given callback every tick. When the callback successfully executes, the
 
 ### **succeedWhenBlockPresent**
 `
-succeedWhenBlockPresent(blockType: minecraftserver.BlockType, blockLocation: minecraftserver.Vector3, isPresent?: boolean): void
+succeedWhenBlockPresent(blockType: minecraftserver.BlockType | string, blockLocation: minecraftserver.Vector3, isPresent?: boolean): void
 `
 
 Depending on the condition of isPresent, tests for the presence of a block of a particular type on every tick. When the specified block of a type is found or not found (depending on isPresent), the test is marked as a success.
 
 #### **Parameters**
-- **blockType**: [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md)
+- **blockType**: [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) | *string*
   
   Type of block to test for.
 - **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)

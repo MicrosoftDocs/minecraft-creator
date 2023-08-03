@@ -130,9 +130,6 @@ Returns whether a container object (or the entity or block that this container i
 
 #### **Returns** *boolean*
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **moveItem**
 `
 moveItem(fromSlot: number, toSlot: number, toContainer: Container): void

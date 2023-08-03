@@ -4,6 +4,8 @@
       href: index.yml
     - name: "What's New"
       items: 
+        - name: 1.20.10 Update Summary
+          href: Documents/Update1.20.10.md
         - name: 1.20 Update Summary
           href: Documents/Update1.20.md
         - name: 1.19.80 Update Summary
@@ -50,6 +52,8 @@
             href: Documents/ParkourWorldGuide.md                        
         - name: Advanced Topics
           items:
+          - name: Getting Started with Deferred Lighting
+            href: Documents/DeferredLighting.md
           - name: Base Game Versioning
             href: Documents/BaseGameVersioning.md
           - name: Actor Storage

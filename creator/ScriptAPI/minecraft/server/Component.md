@@ -32,9 +32,6 @@ Type: *string*
 isValid(): boolean
 `
 
-Returns true if this component is still active and usable within JavaScript.
+Returns whether the component is valid. A component is considered valid if its owner is valid, in addition to any addition to any additional validation required by the component.
 
-#### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+#### **Returns** *boolean* - Whether the component is valid.
