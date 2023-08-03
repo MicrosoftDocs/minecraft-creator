@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.Scoreboard class.
 ---
 # Scoreboard Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains objectives and participants for the scoreboard.
 
 ## Methods
@@ -42,9 +39,46 @@ Adds a new objective to the scoreboard.
 > [!WARNING]
 > This function can throw errors.
 
+#### Examples
+##### ***updateScoreboard.ts***
+```typescript
+  const scoreboardObjectiveId = "scoreboard_demo_objective";
+  const scoreboardObjectiveDisplayName = "Demo Objective";
+
+  let players = mc.world.getPlayers();
+
+  // Ensure a new objective.
+  let objective = mc.world.scoreboard.getObjective(scoreboardObjectiveId);
+
+  if (!objective) {
+    objective = mc.world.scoreboard.addObjective(scoreboardObjectiveId, scoreboardObjectiveDisplayName);
+  }
+
+  // get the scoreboard identity for player 0
+  let player0Identity = players[0].scoreboardIdentity;
+
+  if (player0Identity === undefined) {
+    log("Could not get a scoreboard identity for player 0.");
+    return -1;
+  }
+
+  // initialize player score to 100;
+  objective.setScore(player0Identity, 100);
+
+  mc.world.scoreboard.setObjectiveAtDisplaySlot("sidebar", {
+    objective: objective,
+    sortOrder: mc.ObjectiveSortOrder.descending,
+  });
+
+  const playerScore = objective.getScore(player0Identity) ?? 0;
+
+  // score should now be 110.
+  objective.setScore(player0Identity, playerScore + 10);
+```
+
 ### **clearObjectiveAtDisplaySlot**
 `
-clearObjectiveAtDisplaySlot(displaySlotId: DisplaySlotId): ScoreboardObjective
+clearObjectiveAtDisplaySlot(displaySlotId: DisplaySlotId): ScoreboardObjective | undefined
 `
 
 Clears the objective that occupies a display slot.
@@ -52,17 +86,14 @@ Clears the objective that occupies a display slot.
 #### **Parameters**
 - **displaySlotId**: [*DisplaySlotId*](DisplaySlotId.md)
 
-#### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md)
+#### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md) | *undefined*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
-> [!WARNING]
-> This function can throw errors.
-
 ### **getObjective**
 `
-getObjective(objectiveId: string): ScoreboardObjective
+getObjective(objectiveId: string): ScoreboardObjective | undefined
 `
 
 Returns a specific objective (by id).
@@ -72,14 +103,11 @@ Returns a specific objective (by id).
   
   Identifier of the objective.
 
-#### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md)
-
-> [!WARNING]
-> This function can throw errors.
+#### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md) | *undefined*
 
 ### **getObjectiveAtDisplaySlot**
 `
-getObjectiveAtDisplaySlot(displaySlotId: DisplaySlotId): ScoreboardObjectiveDisplayOptions
+getObjectiveAtDisplaySlot(displaySlotId: DisplaySlotId): ScoreboardObjectiveDisplayOptions | undefined
 `
 
 Returns an objective that occupies the specified display slot.
@@ -87,10 +115,7 @@ Returns an objective that occupies the specified display slot.
 #### **Parameters**
 - **displaySlotId**: [*DisplaySlotId*](DisplaySlotId.md)
 
-#### **Returns** [*ScoreboardObjectiveDisplayOptions*](ScoreboardObjectiveDisplayOptions.md)
-
-> [!WARNING]
-> This function can throw errors.
+#### **Returns** [*ScoreboardObjectiveDisplayOptions*](ScoreboardObjectiveDisplayOptions.md) | *undefined*
 
 ### **getObjectives**
 `
@@ -101,9 +126,6 @@ Returns all defined objectives.
 
 #### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md)[]
 
-> [!WARNING]
-> This function can throw errors.
-
 ### **getParticipants**
 `
 getParticipants(): ScoreboardIdentity[]
@@ -112,9 +134,6 @@ getParticipants(): ScoreboardIdentity[]
 Returns all defined scoreboard identities.
 
 #### **Returns** [*ScoreboardIdentity*](ScoreboardIdentity.md)[]
-
-> [!WARNING]
-> This function can throw errors.
 
 ### **removeObjective**
 `
@@ -152,3 +171,40 @@ Sets an objective into a display slot with specified additional display settings
 
 > [!WARNING]
 > This function can throw errors.
+
+#### Examples
+##### ***updateScoreboard.ts***
+```typescript
+  const scoreboardObjectiveId = "scoreboard_demo_objective";
+  const scoreboardObjectiveDisplayName = "Demo Objective";
+
+  let players = mc.world.getPlayers();
+
+  // Ensure a new objective.
+  let objective = mc.world.scoreboard.getObjective(scoreboardObjectiveId);
+
+  if (!objective) {
+    objective = mc.world.scoreboard.addObjective(scoreboardObjectiveId, scoreboardObjectiveDisplayName);
+  }
+
+  // get the scoreboard identity for player 0
+  let player0Identity = players[0].scoreboardIdentity;
+
+  if (player0Identity === undefined) {
+    log("Could not get a scoreboard identity for player 0.");
+    return -1;
+  }
+
+  // initialize player score to 100;
+  objective.setScore(player0Identity, 100);
+
+  mc.world.scoreboard.setObjectiveAtDisplaySlot("sidebar", {
+    objective: objective,
+    sortOrder: mc.ObjectiveSortOrder.descending,
+  });
+
+  const playerScore = objective.getScore(player0Identity) ?? 0;
+
+  // score should now be 110.
+  objective.setScore(player0Identity, playerScore + 10);
+```

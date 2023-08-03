@@ -8,9 +8,6 @@ description: Contents of the .DisplaySlotId enumeration.
 ---
 # DisplaySlotId Enumeration
 
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ## Constants
 ### **BelowName**
 `BelowName = "BelowName"`

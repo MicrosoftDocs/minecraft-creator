@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.ItemStartUseOnAfterEvent class.
 ---
 # ItemStartUseOnAfterEvent Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains information related to an item being used on a block. This event fires when a player presses the the Use Item / Place Block button to successfully use an item or place a block. Fires for the first block that is interacted with when performing a build action. Note: This event cannot be used with Hoe or Axe items.
 
 ## Properties
@@ -37,8 +34,8 @@ The impacted item stack that is starting to be used.
 Type: [*ItemStack*](ItemStack.md)
 
 ### **source**
-`read-only source: Entity;`
+`read-only source: Player;`
 
 Returns the source entity that triggered this item event.
 
-Type: [*Entity*](Entity.md)
+Type: [*Player*](Player.md)

@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.PressurePlatePushAfterEvent class
 ---
 # PressurePlatePushAfterEvent Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ## Extends
 - [*BlockEvent*](BlockEvent.md)
 

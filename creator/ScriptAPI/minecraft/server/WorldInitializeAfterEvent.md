@@ -25,15 +25,16 @@ Type: [*PropertyRegistry*](PropertyRegistry.md)
 #### Examples
 ##### ***propertyRegistration.js***
 ```typescript
-import { DynamicPropertiesDefinition, MinecraftEntityTypes, world } from "@minecraft/server";
+import { DynamicPropertiesDefinition, EntityTypes, world } from '@minecraft/server';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
-world.afterEvents.worldInitialize.subscribe((e) => {
-  let def = new DynamicPropertiesDefinition();
+world.afterEvents.worldInitialize.subscribe(e => {
+    let def = new DynamicPropertiesDefinition();
 
-  def.defineNumber("rpgStrength");
-  def.defineString("rpgRole", 16);
-  def.defineBoolean("rpgIsHero");
+    def.defineNumber('rpgStrength');
+    def.defineString('rpgRole', 16);
+    def.defineBoolean('rpgIsHero');
 
-  e.propertyRegistry.registerEntityTypeDynamicProperties(def, MinecraftEntityTypes.skeleton);
+    e.propertyRegistry.registerEntityTypeDynamicProperties(def, EntityTypes.get(MinecraftEntityTypes.Skeleton));
 });
 ```

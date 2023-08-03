@@ -8,10 +8,39 @@ description: Contents of the @minecraft/server.PressurePlatePushAfterEventSignal
 ---
 # PressurePlatePushAfterEventSignal Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-## Extends
-- [*IPressurePlatePushAfterEventSignal*](IPressurePlatePushAfterEventSignal.md)
-
 Manages callbacks that are connected to when a pressure plate is pushed.
+
+## Methods
+- [subscribe](#subscribe)
+- [unsubscribe](#unsubscribe)
+
+### **subscribe**
+`
+subscribe(callback: (arg: PressurePlatePushAfterEvent) => void): (arg: PressurePlatePushAfterEvent) => void
+`
+
+Adds a callback that will be called when a pressure plate is pushed.
+
+#### **Parameters**
+- **callback**: (arg: [*PressurePlatePushAfterEvent*](PressurePlatePushAfterEvent.md)) => *void*
+
+#### **Returns** (arg: [*PressurePlatePushAfterEvent*](PressurePlatePushAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+### **unsubscribe**
+`
+unsubscribe(callback: (arg: PressurePlatePushAfterEvent) => void): void
+`
+
+Removes a callback from being called when a pressure plate is pushed.
+
+#### **Parameters**
+- **callback**: (arg: [*PressurePlatePushAfterEvent*](PressurePlatePushAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.

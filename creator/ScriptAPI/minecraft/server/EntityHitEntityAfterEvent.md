@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.EntityHitEntityAfterEvent class.
 ---
 # EntityHitEntityAfterEvent Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains information related to an entity hitting (melee attacking) another entity.
 
 ## Properties

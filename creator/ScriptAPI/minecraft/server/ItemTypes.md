@@ -31,9 +31,9 @@ Returns a specific item type, if available within Minecraft.
 
 ### **getAll**
 `
-static getAll(): ItemTypeIterator
+static getAll(): ItemType[]
 `
 
 Retrieves all available item types registered within Minecraft.
 
-#### **Returns** [*ItemTypeIterator*](ItemTypeIterator.md)
+#### **Returns** [*ItemType*](ItemType.md)[]

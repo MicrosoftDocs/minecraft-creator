@@ -35,7 +35,7 @@ Type: *number*
 ### **id**
 `read-only id: string;`
 
-Unique identifier of the entity. This identifier is intended to be consistent across loads of a world instance. No meaning should be inferred from the value and structure of this unique identifier - do not parse or interpret it.
+Unique identifier of the entity. This identifier is intended to be consistent across loads of a world instance. No meaning should be inferred from the value and structure of this unique identifier - do not parse or interpret it. This property is accessible even if [*@minecraft/server.Entity.isValid*](../../minecraft/server/Entity.md#isvalid) is false.
 
 Type: *string*
 
@@ -162,7 +162,7 @@ Type: [*Entity*](Entity.md)
 ### **typeId**
 `read-only typeId: string;`
 
-Unique identifier of the type of the entity - for example, 'minecraft:skeleton'.
+Unique identifier of the type of the entity - for example, 'minecraft:skeleton'. This property is accessible even if [*@minecraft/server.Entity.isValid*](../../minecraft/server/Entity.md#isvalid) is false.
 
 Type: *string*
 
@@ -191,6 +191,7 @@ Type: *string*
 - [isValid](#isvalid)
 - [kill](#kill)
 - [playAnimation](#playanimation)
+- [remove](#remove)
 - [removeDynamicProperty](#removedynamicproperty)
 - [removeEffect](#removeeffect)
 - [removeTag](#removetag)
@@ -508,9 +509,6 @@ Returns the first intersecting block from the direction that this entity is look
 
 #### **Returns** [*BlockRaycastHit*](BlockRaycastHit.md) | *undefined* - Returns the first intersecting block from the direction that this entity is looking at.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 
@@ -599,9 +597,6 @@ Gets the entities that this entity is looking at by performing a ray cast from t
   Additional configuration options for the ray cast.
 
 #### **Returns** [*EntityRaycastHit*](EntityRaycastHit.md)[] - Returns a set of entities from the direction that this entity is looking at.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.
@@ -717,12 +712,9 @@ Returns whether an entity has a particular tag.
 isValid(): boolean
 `
 
-Returns true if this component is still active and usable within JavaScript. Within a tick or in the scope of an event handler, an Entity object should generally be valid; however, if you hold a reference to an entity across ticks or event callbacks, be careful to check for entity validity. Entities can become invalid if they, for example, get unloaded or after they die.
+Returns whether the entity can be manipulated by script. A Player is considered valid when it's EntityLifetimeState is set to Loaded.
 
-#### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+#### **Returns** *boolean* - Whether the entity is valid.
 
 ### **kill**
 `
@@ -774,6 +766,20 @@ Cause the entity to play the given animation.
 - **options**?: [*PlayAnimationOptions*](PlayAnimationOptions.md) = `null`
   
   Additional options to control the playback and transitions of the animation.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **remove**
+`
+remove(): void
+`
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

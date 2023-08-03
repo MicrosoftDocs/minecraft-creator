@@ -41,6 +41,7 @@ Type: *boolean*
 - [getBoundingBox](#getboundingbox)
 - [getFillColor](#getfillcolor)
 - [getOutlineColor](#getoutlinecolor)
+- [getVolumeOrigin](#getvolumeorigin)
 - [moveBy](#moveby)
 - [moveTo](#moveto)
 - [peekLastVolume](#peeklastvolume)
@@ -96,12 +97,12 @@ Return a bounding rectangle that contains all of the volumes within the selectio
 
 ### **getFillColor**
 `
-getFillColor(): minecraftserver.Color
+getFillColor(): minecraftserver.RGBA
 `
 
 Return the color of the on-screen selection container hull
 
-#### **Returns** [*@minecraft/server.Color*](../../minecraft/server/Color.md)
+#### **Returns** [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -111,18 +112,28 @@ Return the color of the on-screen selection container hull
 
 ### **getOutlineColor**
 `
-getOutlineColor(): minecraftserver.Color
+getOutlineColor(): minecraftserver.RGBA
 `
 
 Return the color of the on-screen selection container outline
 
-#### **Returns** [*@minecraft/server.Color*](../../minecraft/server/Color.md)
+#### **Returns** [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
+
+### **getVolumeOrigin**
+`
+getVolumeOrigin(): minecraftserver.Vector3
+`
+
+#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 ### **moveBy**
 `
@@ -166,10 +177,13 @@ Move the selection to an absolute world location (causing all of the volumes wit
 
 ### **peekLastVolume**
 `
-peekLastVolume(): minecraftserver.CompoundBlockVolumeItem | undefined
+peekLastVolume(forceRelativity?: minecraftserver.CompoundBlockVolumePositionRelativity): minecraftserver.CompoundBlockVolumeItem | undefined
 `
 
 Fetch the volume information of the last compound volume that was pushed to the volume stack without affecting the stack itself
+
+#### **Parameters**
+- **forceRelativity**?: [*@minecraft/server.CompoundBlockVolumePositionRelativity*](../../minecraft/server/CompoundBlockVolumePositionRelativity.md) = `null`
 
 #### **Returns** [*@minecraft/server.CompoundBlockVolumeItem*](../../minecraft/server/CompoundBlockVolumeItem.md) | *undefined* - Returns undefined if the stack is empty
 
@@ -209,15 +223,13 @@ Push a compound volume item (a volume and action pair) to the volume stack.
 
 ### **set**
 `
-"set"(newSelection: Selection): void
+"set"(other: minecraftserver.CompoundBlockVolume | Selection): void
 `
 
 Replace the contents of the current selection with a new specified selection.  This operation will delete the current contents and copy the contents of the new selection to the target selection - it does this by content, not by reference.
 
 #### **Parameters**
-- **newSelection**: [*Selection*](Selection.md)
-  
-  Selection object to copy
+- **other**: [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) | [*Selection*](Selection.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -227,13 +239,13 @@ Replace the contents of the current selection with a new specified selection.  T
 
 ### **setFillColor**
 `
-setFillColor(color: minecraftserver.Color): void
+setFillColor(color: minecraftserver.RGBA): void
 `
 
 Set the color of the hull of the selection object if it is visible. 
 
 #### **Parameters**
-- **color**: [*@minecraft/server.Color*](../../minecraft/server/Color.md)
+- **color**: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -243,13 +255,13 @@ Set the color of the hull of the selection object if it is visible.
 
 ### **setOutlineColor**
 `
-setOutlineColor(color: minecraftserver.Color): void
+setOutlineColor(color: minecraftserver.RGBA): void
 `
 
 Set the color of the outline around the selection object if it is visible
 
 #### **Parameters**
-- **color**: [*@minecraft/server.Color*](../../minecraft/server/Color.md)
+- **color**: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

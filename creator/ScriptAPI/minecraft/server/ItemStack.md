@@ -123,7 +123,7 @@ Creates a new instance of a stack of items for use in the world.
 #### **Parameters**
 - **itemType**: [*ItemType*](ItemType.md) | *string*
   
-  Type of item to create. See the [*@minecraft/server.MinecraftItemTypes*](../../minecraft/server/MinecraftItemTypes.md) enumeration for a list of standard item types in Minecraft experiences.
+  Type of item to create. See the {@link @minecraft/vanilla-data.MinecraftItemTypes} enumeration for a list of standard item types in Minecraft experiences.
 - **amount**?: *number* = `1`
   
   Number of items to place in the stack, between 1-255. The provided value will be clamped to the item's maximum stack size. Note that certain items can only have one item in the stack.
@@ -422,29 +422,29 @@ Triggers an item type event. For custom items, a number of events are defined in
 ```
 ##### ***itemStacks.ts***
 ```typescript
-  const overworld = mc.world.getDimension("overworld");
+const overworld = mc.world.getDimension('overworld');
 
-  const oneItemLoc = { x: targetLocation.x + targetLocation.y + 3, y: 2, z: targetLocation.z + 1 };
-  const fiveItemsLoc = { x: targetLocation.x + 1, y: targetLocation.y + 2, z: targetLocation.z + 1 };
-  const diamondPickaxeLoc = { x: targetLocation.x + 2, y: targetLocation.y + 2, z: targetLocation.z + 4 };
+const oneItemLoc = { x: targetLocation.x + targetLocation.y + 3, y: 2, z: targetLocation.z + 1 };
+const fiveItemsLoc = { x: targetLocation.x + 1, y: targetLocation.y + 2, z: targetLocation.z + 1 };
+const diamondPickaxeLoc = { x: targetLocation.x + 2, y: targetLocation.y + 2, z: targetLocation.z + 4 };
 
-  const oneEmerald = new mc.ItemStack(mc.MinecraftItemTypes.emerald, 1);
-  const onePickaxe = new mc.ItemStack(mc.MinecraftItemTypes.diamondPickaxe, 1);
-  const fiveEmeralds = new mc.ItemStack(mc.MinecraftItemTypes.emerald, 5);
+const oneEmerald = new mc.ItemStack(mc.MinecraftItemTypes.Emerald, 1);
+const onePickaxe = new mc.ItemStack(mc.MinecraftItemTypes.DiamondPickaxe, 1);
+const fiveEmeralds = new mc.ItemStack(mc.MinecraftItemTypes.Emerald, 5);
 
-  log(`Spawning an emerald at (${oneItemLoc.x}, ${oneItemLoc.y}, ${oneItemLoc.z})`);
-  overworld.spawnItem(oneEmerald, oneItemLoc);
+log(`Spawning an emerald at (${oneItemLoc.x}, ${oneItemLoc.y}, ${oneItemLoc.z})`);
+overworld.spawnItem(oneEmerald, oneItemLoc);
 
-  log(`Spawning five emeralds at (${fiveItemsLoc.x}, ${fiveItemsLoc.y}, ${fiveItemsLoc.z})`);
-  overworld.spawnItem(fiveEmeralds, fiveItemsLoc);
+log(`Spawning five emeralds at (${fiveItemsLoc.x}, ${fiveItemsLoc.y}, ${fiveItemsLoc.z})`);
+overworld.spawnItem(fiveEmeralds, fiveItemsLoc);
 
-  log(`Spawning a diamond pickaxe at (${diamondPickaxeLoc.x}, ${diamondPickaxeLoc.y}, ${diamondPickaxeLoc.z})`);
-  overworld.spawnItem(onePickaxe, diamondPickaxeLoc);
+log(`Spawning a diamond pickaxe at (${diamondPickaxeLoc.x}, ${diamondPickaxeLoc.y}, ${diamondPickaxeLoc.z})`);
+overworld.spawnItem(onePickaxe, diamondPickaxeLoc);
 ```
 ##### ***spawnItem.ts***
 ```typescript
-  const featherItem = new mc.ItemStack(mc.MinecraftItemTypes.feather, 1);
+const featherItem = new mc.ItemStack(mc.MinecraftItemTypes.Feather, 1);
 
-  overworld.spawnItem(featherItem, targetLocation);
-  log(`New feather created at ${targetLocation.x}, ${targetLocation.y}, ${targetLocation.z}!`);
+overworld.spawnItem(featherItem, targetLocation);
+log(`New feather created at ${targetLocation.x}, ${targetLocation.y}, ${targetLocation.z}!`);
 ```

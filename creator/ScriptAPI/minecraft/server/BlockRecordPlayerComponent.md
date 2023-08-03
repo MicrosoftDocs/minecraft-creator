@@ -48,13 +48,13 @@ Returns true if the record-playing block is currently playing a record.
 
 ### **setRecord**
 `
-setRecord(recordItemType: ItemType): void
+setRecord(recordItemType: ItemType | string): void
 `
 
 Sets and plays a record based on an item type.
 
 #### **Parameters**
-- **recordItemType**: [*ItemType*](ItemType.md)
+- **recordItemType**: [*ItemType*](ItemType.md) | *string*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

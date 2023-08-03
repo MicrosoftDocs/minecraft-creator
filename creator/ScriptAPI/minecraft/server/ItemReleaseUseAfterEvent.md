@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.ItemReleaseUseAfterEvent class.
 ---
 # ItemReleaseUseAfterEvent Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains information related to a chargeable item when the player has finished using the item and released the build action.
 
 ## Properties
@@ -23,11 +20,11 @@ Returns the item stack that triggered this item event.
 Type: [*ItemStack*](ItemStack.md)
 
 ### **source**
-`read-only source: Entity;`
+`read-only source: Player;`
 
 Returns the source entity that triggered this item event.
 
-Type: [*Entity*](Entity.md)
+Type: [*Player*](Player.md)
 
 ### **useDuration**
 `read-only useDuration: number;`

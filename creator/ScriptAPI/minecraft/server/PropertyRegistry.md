@@ -19,14 +19,14 @@ Provides methods that should be used within the World Initialize event to regist
 
 ### **registerEntityTypeDynamicProperties**
 `
-registerEntityTypeDynamicProperties(propertiesDefinition: DynamicPropertiesDefinition, entityType: EntityType): void
+registerEntityTypeDynamicProperties(propertiesDefinition: DynamicPropertiesDefinition, entityTypeOrId: EntityType | string): void
 `
 
 Registers a dynamic property for a particular entity type (e.g., a minecraft:skeleton.).
 
 #### **Parameters**
 - **propertiesDefinition**: [*DynamicPropertiesDefinition*](DynamicPropertiesDefinition.md)
-- **entityType**: [*EntityType*](EntityType.md)
+- **entityTypeOrId**: [*EntityType*](EntityType.md) | *string*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

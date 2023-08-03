@@ -19,6 +19,36 @@ Returns the dimension that the block is within.
 
 Type: [*Dimension*](Dimension.md)
 
+### **isAir**
+`read-only isAir: boolean;`
+
+Returns true if this block is an air block (i.e., empty space).
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **isLiquid**
+`read-only isLiquid: boolean;`
+
+Returns true if this block is a liquid block - (e.g., a water block and a lava block are liquid, while an air block and a stone block are not. Water logged blocks are not liquid blocks).
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **isSolid**
+`read-only isSolid: boolean;`
+
+Returns true if this block is solid and impassible - (e.g., a cobblestone block and a diamond block are solid, while a ladder block and a fence block are not).
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **isWaterlogged**
 `isWaterlogged: boolean;`
 
@@ -94,9 +124,6 @@ Type: *number*
 - [getRedstonePower](#getredstonepower)
 - [getTags](#gettags)
 - [hasTag](#hastag)
-- [isAir](#isair)
-- [isLiquid](#isliquid)
-- [isSolid](#issolid)
 - [isValid](#isvalid)
 - [setPermutation](#setpermutation)
 - [setType](#settype)
@@ -104,13 +131,13 @@ Type: *number*
 
 ### **canPlace**
 `
-canPlace(blockToPlace: BlockPermutation | BlockType, faceToPlaceOn?: Direction): boolean
+canPlace(blockToPlace: BlockPermutation | BlockType | string, faceToPlaceOn?: Direction): boolean
 `
 
 Checks to see whether it is valid to place the specified block type or block permutation, on a specified face on this block
 
 #### **Parameters**
-- **blockToPlace**: [*BlockPermutation*](BlockPermutation.md) | [*BlockType*](BlockType.md)
+- **blockToPlace**: [*BlockPermutation*](BlockPermutation.md) | [*BlockType*](BlockType.md) | *string*
   
   Block type or block permutation to check placement for.
 - **faceToPlaceOn**?: [*Direction*](Direction.md) = `null`
@@ -228,51 +255,6 @@ console.log(`Block is wood: ${block.hasTag("wood")}`);
 console.log(`Block is stone: ${block.hasTag("stone")}`);
 ```
 
-### **isAir**
-`
-isAir(): boolean
-`
-
-Returns true if this block is an air block (i.e., empty space).
-
-#### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **isLiquid**
-`
-isLiquid(): boolean
-`
-
-Returns true if this block is a liquid block - (e.g., a water block and a lava black are liquid, while an air block and a stone block are not).
-
-#### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **isSolid**
-`
-isSolid(): boolean
-`
-
-Returns true if this block is solid and impassible - (e.g., a cobblestone block and a diamond block are solid, while a ladder block and a fence block are not).
-
-#### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
 ### **isValid**
 `
 isValid(): boolean
@@ -281,9 +263,6 @@ isValid(): boolean
 Returns true if this reference to a block is still valid (for example, if the block is unloaded, references to that block will no longer be valid.)
 
 #### **Returns** *boolean* - True if this block object is still working and valid.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **setPermutation**
 `
@@ -305,13 +284,13 @@ Sets the block in the dimension to the state of the permutation.
 
 ### **setType**
 `
-setType(blockType: BlockType): void
+setType(blockType: BlockType | string): void
 `
 
 Sets the type of block.
 
 #### **Parameters**
-- **blockType**: [*BlockType*](BlockType.md)
+- **blockType**: [*BlockType*](BlockType.md) | *string*
   
   Identifier of the type of block to apply - for example, minecraft:powered_repeater.
 
