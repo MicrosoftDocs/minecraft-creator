@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: How to Add Custom Sounds 
 ms.prod: gaming
 description: "A tutorial for adding custom sounds to Minecraft: Bedrock Edition"

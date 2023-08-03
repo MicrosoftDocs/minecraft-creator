@@ -3,7 +3,7 @@ author: mammerla
 ms.author: v-jillheaden
 title: Introduction to Entity Properties
 ms.prod: gaming
-description: Entity Properties are data fields defined in the Behavior Pack for any type of Minecraft entity.
+description: "An introductory article detailing entity properties"
 ---
 
 # Introduction to Entity Properties

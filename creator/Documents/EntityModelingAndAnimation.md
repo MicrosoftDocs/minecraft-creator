@@ -3,11 +3,12 @@ author: neonerz
 ms.author: mikeam
 title: Entity Modeling and Animation
 ms.prod: gaming
+description: "A detailing of the process for modeling and animating an entity in Minecraft: Bedrock Edition"
 ---
 
 # Entity Modeling and Animation
 
-In this guide, we'll go through the basics of creating a model and creating animations for Minecraft: Bedrock Edition. As an example, we'll model and animate a small robot, which was started in the [Introduction to Add Entity](IntroductionToAddEntity.md) article.
+In this guide, we'll go through the basics of creating a model and animations for Minecraft: Bedrock Edition. As an example, we'll model and animate a small robot, which was started in the [Introduction to Add Entity](IntroductionToAddEntity.md) article.
 
 In this tutorial you will learn the following:
 

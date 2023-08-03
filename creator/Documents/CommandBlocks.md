@@ -3,7 +3,7 @@ author: mammerla
 ms.author: v-jillheaden
 title: Getting Started with Command Blocks
 ms.prod: gaming
-description: A tutorial that is an introduction to Minecraft Bedrock Edition Command Blocks where you will learn how to access Command Blocks, how to create chains and how to design a gameplay loop with Command Blocks.
+description: "An introduction to Minecraft: Bedrock Edition Command Blocks including how to access Command Blocks, how to create chains, and how to design a gameplay loop with Command Blocks."
 ---
 
 # Getting Started with Command Blocks

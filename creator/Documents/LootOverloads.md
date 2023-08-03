@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Loot Overloads
 ms.prod: gaming
 description: "An overview covering loot overloads"

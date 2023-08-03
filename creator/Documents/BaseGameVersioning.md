@@ -3,7 +3,7 @@ ms.author: mikeam
 title: Base Game Versioning
 ms.prod: gaming
 author: neonerz
-description: "A tutorial to introduce creators to the concept of base game versioning"
+description: "A guide detailing the concept of base game versioning"
 ---
 # Base Game Versioning
 

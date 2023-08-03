@@ -3,7 +3,7 @@ author: mammerla
 ms.author: v-jillheaden
 title: Introduction To Behavior Packs
 ms.prod: gaming
-description: A tutorial that is an introduction to Behavior Packs and how to add a series of attacking behaviors to an in-game cow mob.
+description: "An introduction to Behavior Packs and adding attacking behaviors to an in-game cow mob."
 ---
 
 # Introduction to Behavior Packs

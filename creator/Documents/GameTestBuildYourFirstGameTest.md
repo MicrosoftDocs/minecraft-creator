@@ -2,7 +2,7 @@
 author: mammerla
 ms.author: v-bbortree
 title: Building your first GameTest
-description: Tutorial for building a GameTest using structures and JavaScript.
+description: "A guide to building a GameTest using structures and JavaScript"
 ms.prod: gaming
 ---
 
