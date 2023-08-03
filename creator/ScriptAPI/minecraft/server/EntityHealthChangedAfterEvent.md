@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.EntityHealthChangedAfterEvent cla
 ---
 # EntityHealthChangedAfterEvent Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains information related to an entity when its health changes. Warning: don't change the health of an entity in this event, or it will cause an infinite loop!
 
 ## Properties

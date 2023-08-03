@@ -8,10 +8,7 @@ description: Contents of the @minecraft/server.DimensionLocation class.
 ---
 # DimensionLocation Interface
 
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-Describes a combination of a dimension and a location.
+An exact coordinate within the world, including its dimension and location.
 
 ## Properties
 

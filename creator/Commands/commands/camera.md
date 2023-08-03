@@ -162,13 +162,13 @@ y Rotation value
 A listing of available camera presets.
 
 #### Values
-- `example:example_free`
-- `example:example_player_effects`
-- `example:example_player_listener`
 - `minecraft:first_person`
 - `minecraft:free`
 - `minecraft:third_person`
 - `minecraft:third_person_front`
+- `example:example_free`
+- `example:example_player_effects`
+- `example:example_player_listener`
 
 ### `Easing`
 Specifies an easing function to use for the camera.

@@ -8,10 +8,39 @@ description: Contents of the @minecraft/server.ItemUseAfterEventSignal class.
 ---
 # ItemUseAfterEventSignal Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-## Extends
-- [*IItemUseAfterEventSignal*](IItemUseAfterEventSignal.md)
-
 Manages callbacks that are connected to an item use event.
+
+## Methods
+- [subscribe](#subscribe)
+- [unsubscribe](#unsubscribe)
+
+### **subscribe**
+`
+subscribe(callback: (arg: ItemUseAfterEvent) => void): (arg: ItemUseAfterEvent) => void
+`
+
+Adds a callback that will be called when an item is used.
+
+#### **Parameters**
+- **callback**: (arg: [*ItemUseAfterEvent*](ItemUseAfterEvent.md)) => *void*
+
+#### **Returns** (arg: [*ItemUseAfterEvent*](ItemUseAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+### **unsubscribe**
+`
+unsubscribe(callback: (arg: ItemUseAfterEvent) => void): void
+`
+
+Removes a callback from being called when an item is used.
+
+#### **Parameters**
+- **callback**: (arg: [*ItemUseAfterEvent*](ItemUseAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.

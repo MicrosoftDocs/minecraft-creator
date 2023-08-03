@@ -18,14 +18,20 @@ A specific currently-internal event used for passing messages from client to ser
 ### **id**
 `read-only id: string;`
 
+The message identifier.
+
 Type: *string*
 
 ### **message**
 `read-only message: string;`
 
+The message.
+
 Type: *string*
 
 ### **player**
 `read-only player: Player;`
+
+The player who sent the message.
 
 Type: [*Player*](Player.md)

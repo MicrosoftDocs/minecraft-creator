@@ -264,7 +264,7 @@ Then at the end of the cutscene animations:
 
 To hide a player or other mob teleport, use the camera fade command combined with some delayed teleport commands: 
 
-`/camera @a fade 0.5 0.5 0.5`
+`/camera @a fade time 0.5 0.5 0.5`
 
 Then after half a second, teleport the player to the desired location:
 
@@ -278,7 +278,7 @@ When a player encounters a new part of an adventure map, showing a dramatic flyo
 
 First, start a camera fade to hide the next transition...
 
-`/camera @a fade 0.5 0.2 0.5`
+`/camera @a fade time 0.5 0.2 0.5`
 
 After 0.5 seconds (the "fadeInSeconds" time), issue a command to cut to one position and another command to start an eased camera motion. This assumes that Camera Presets named "example:flyover_start" and "example:flyover_end" have been defined in a behavior pack. 
 
@@ -288,7 +288,7 @@ After 0.5 seconds (the "fadeInSeconds" time), issue a command to cut to one posi
 
 Then after three seconds (before that five second movement ends and with enough time to fade again) issue another fade command. 
 
-`/camera @a fade 0.5 0.2 0.5`
+`/camera @a fade time 0.5 0.2 0.5`
 
 Then after another 0.5 seconds, return the camera back to normal.
 

@@ -17,6 +17,7 @@ Contains a set of additional variable values for further defining how rendering 
 - [constructor](#constructor)
 - [setColorRGB](#setcolorrgb)
 - [setColorRGBA](#setcolorrgba)
+- [setFloat](#setfloat)
 - [setSpeedAndDirection](#setspeedanddirection)
 - [setVector3](#setvector3)
 
@@ -31,7 +32,7 @@ An constructor for creating a new MolangVariableMap object.
 
 ### **setColorRGB**
 `
-setColorRGB(variableName: string, color: Color): MolangVariableMap
+setColorRGB(variableName: string, color: RGB): void
 `
 
 Adds the following variables to Molang:
@@ -44,13 +45,14 @@ Adds the following variables to Molang:
 
 #### **Parameters**
 - **variableName**: *string*
-- **color**: [*Color*](Color.md)
+- **color**: [*RGB*](RGB.md)
 
-#### **Returns** [*MolangVariableMap*](MolangVariableMap.md)
+> [!WARNING]
+> This function can throw errors.
 
 ### **setColorRGBA**
 `
-setColorRGBA(variableName: string, color: Color): MolangVariableMap
+setColorRGBA(variableName: string, color: RGBA): void
 `
 
 Adds the following variables to Molang:
@@ -65,13 +67,26 @@ Adds the following variables to Molang:
 
 #### **Parameters**
 - **variableName**: *string*
-- **color**: [*Color*](Color.md)
+- **color**: [*RGBA*](RGBA.md)
 
-#### **Returns** [*MolangVariableMap*](MolangVariableMap.md)
+> [!WARNING]
+> This function can throw errors.
+
+### **setFloat**
+`
+setFloat(variableName: string, number: number): void
+`
+
+#### **Parameters**
+- **variableName**: *string*
+- **number**: *number*
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **setSpeedAndDirection**
 `
-setSpeedAndDirection(variableName: string, speed: number, direction: Vector3): MolangVariableMap
+setSpeedAndDirection(variableName: string, speed: number, direction: Vector3): void
 `
 
 Adds the following variables to Molang:
@@ -89,11 +104,12 @@ Adds the following variables to Molang:
 - **speed**: *number*
 - **direction**: [*Vector3*](Vector3.md)
 
-#### **Returns** [*MolangVariableMap*](MolangVariableMap.md)
+> [!WARNING]
+> This function can throw errors.
 
 ### **setVector3**
 `
-setVector3(variableName: string, vector: Vector3): MolangVariableMap
+setVector3(variableName: string, vector: Vector3): void
 `
 
 Adds the following variables to Molang:
@@ -108,4 +124,5 @@ Adds the following variables to Molang:
 - **variableName**: *string*
 - **vector**: [*Vector3*](Vector3.md)
 
-#### **Returns** [*MolangVariableMap*](MolangVariableMap.md)
+> [!WARNING]
+> This function can throw errors.

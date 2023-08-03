@@ -43,11 +43,11 @@ This is only used when [controlMode] is set to `Fixed`
 Type: *number*
 
 ### **outlineColor**
-`outlineColor?: minecraftserver.Color;`
+`outlineColor?: minecraftserver.RGBA;`
 
 A [Color] Property representing the color of the block cursor object outline
 
-Type: [*@minecraft/server.Color*](../../minecraft/server/Color.md)
+Type: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
 
 ### **targetMode**
 `targetMode?: CursorTargetMode;`

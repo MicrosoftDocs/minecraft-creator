@@ -11,7 +11,39 @@ description: Contents of the @minecraft/server.ItemDefinitionAfterEventSignal cl
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-## Extends
-- [*IItemDefinitionAfterEventSignal*](IItemDefinitionAfterEventSignal.md)
-
 Manages callbacks that are connected to an item's definition and components changing.
+
+## Methods
+- [subscribe](#subscribe)
+- [unsubscribe](#unsubscribe)
+
+### **subscribe**
+`
+subscribe(callback: (arg: ItemDefinitionTriggeredAfterEvent) => void): (arg: ItemDefinitionTriggeredAfterEvent) => void
+`
+
+Adds a callback that will be called when an item's definition and components change.
+
+#### **Parameters**
+- **callback**: (arg: [*ItemDefinitionTriggeredAfterEvent*](ItemDefinitionTriggeredAfterEvent.md)) => *void*
+
+#### **Returns** (arg: [*ItemDefinitionTriggeredAfterEvent*](ItemDefinitionTriggeredAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+### **unsubscribe**
+`
+unsubscribe(callback: (arg: ItemDefinitionTriggeredAfterEvent) => void): void
+`
+
+Removes a callback from being called when an item's definition and components change.
+
+#### **Parameters**
+- **callback**: (arg: [*ItemDefinitionTriggeredAfterEvent*](ItemDefinitionTriggeredAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.

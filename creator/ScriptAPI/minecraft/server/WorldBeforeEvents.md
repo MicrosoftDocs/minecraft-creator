@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.WorldBeforeEvents class.
 ---
 # WorldBeforeEvents Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 A set of events that fire before an actual action occurs. In most cases, you can potentially cancel or modify the impending event. Note that in before events any APIs that modify gameplay state will not function and will throw an error. (e.g., dimension.spawnEntity) 
 
 ## Properties
@@ -22,12 +19,18 @@ This event is triggered after a chat message has been broadcast or sent to playe
 
 Type: [*ChatSendBeforeEventSignal*](ChatSendBeforeEventSignal.md)
 
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **dataDrivenEntityTriggerEvent**
 `read-only dataDrivenEntityTriggerEvent: DataDrivenEntityTriggerBeforeEventSignal;`
 
 This event is fired when an entity event has been triggered that will update the component definition state of an entity.
 
 Type: [*DataDrivenEntityTriggerBeforeEventSignal*](DataDrivenEntityTriggerBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **explosion**
 `read-only explosion: ExplosionBeforeEventSignal;`
@@ -36,12 +39,18 @@ This event is fired after an explosion occurs.
 
 Type: [*ExplosionBeforeEventSignal*](ExplosionBeforeEventSignal.md)
 
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **itemDefinitionEvent**
 `read-only itemDefinitionEvent: ItemDefinitionBeforeEventSignal;`
 
 For custom items, this event is triggered when the fundamental set of defined components for the item change.  Note that this event is only fired for custom data-driven items.
 
 Type: [*ItemDefinitionBeforeEventSignal*](ItemDefinitionBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **itemUse**
 `read-only itemUse: ItemUseBeforeEventSignal;`
@@ -63,3 +72,6 @@ Type: [*ItemUseOnBeforeEventSignal*](ItemUseOnBeforeEventSignal.md)
 This event fires when a piston expands or retracts.
 
 Type: [*PistonActivateBeforeEventSignal*](PistonActivateBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.

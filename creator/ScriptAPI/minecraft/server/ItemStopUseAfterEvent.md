@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.ItemStopUseAfterEvent class.
 ---
 # ItemStopUseAfterEvent Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains information related to a chargeable item has finished an items use cycle, or when the player has released the use action with the item.
 
 ## Properties
@@ -23,11 +20,11 @@ The impacted item stack that is stopping being charged.
 Type: [*ItemStack*](ItemStack.md)
 
 ### **source**
-`read-only source: Entity;`
+`read-only source: Player;`
 
 Returns the source entity that triggered this item event.
 
-Type: [*Entity*](Entity.md)
+Type: [*Player*](Player.md)
 
 ### **useDuration**
 `read-only useDuration: number;`

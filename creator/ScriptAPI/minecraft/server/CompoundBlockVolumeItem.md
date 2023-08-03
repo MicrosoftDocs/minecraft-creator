@@ -18,7 +18,7 @@ This interface defines an entry into the {@link @minecraft-server/CompoundBlockV
 ## Properties
 
 ### **action**
-`action: CompoundBlockVolumeAction;`
+`action?: CompoundBlockVolumeAction;`
 
 The 'action' defines how the block volume is represented in the compound block volume stack.
 
@@ -27,6 +27,11 @@ The 'action' defines how the block volume is represented in the compound block v
 'Subtract' creates a block volume which represents a hole or negative space in the overall compound block volume.
 
 Type: [*CompoundBlockVolumeAction*](CompoundBlockVolumeAction.md)
+
+### **locationRelativity**
+`locationRelativity?: CompoundBlockVolumePositionRelativity;`
+
+Type: [*CompoundBlockVolumePositionRelativity*](CompoundBlockVolumePositionRelativity.md)
 
 ### **volume**
 `volume: BlockVolume;`
