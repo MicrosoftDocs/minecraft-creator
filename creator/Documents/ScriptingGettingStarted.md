@@ -3,7 +3,7 @@ author: mikeam
 ms.author: mikeam
 title: Build a gameplay experience with TypeScript
 ms.prod: gaming
-description: Use TypeScript to build a simple gameplay experience in Minecraft using the experimental Beta APIs feature.
+description: "Use TypeScript to build a simple gameplay experience in Minecraft using the experimental Beta APIs feature"
 ---
 
 # Build a gameplay experience with TypeScript

@@ -3,7 +3,7 @@ author: mammerla
 ms.author: v-jillheaden
 title: How To Make a Complete the Monument World
 ms.prod: gaming
-description: A tutorial covering how to create a "Complete the Monument" style world using Command Blocks
+description: "A tutorial covering how to create a "Complete the Monument" style world using Command Blocks"
 ---
 
 # Commands - How To Make a "Complete the Monument" World

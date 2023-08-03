@@ -3,7 +3,7 @@ author: mammerla
 ms.author: v-bbortree
 title: Introduction to Physically Based Rendering
 ms.prod: gaming
-description: An introduction to the Physically Based Rendering solutions
+description: "An introduction to Physically Based Rendering (PBR) solutions"
 ---
 
 # Introduction to Physically Based Rendering

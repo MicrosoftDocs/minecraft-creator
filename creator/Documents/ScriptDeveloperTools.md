@@ -3,7 +3,7 @@ author: mikeam
 ms.author: mikeam
 title: Use Visual Studio Code tools to write script
 ms.prod: gaming
-description: Use tools for enhanced editing, debugging and profiling of GameTest scripts within Visual Studio Code
+description: "Using tools for enhanced editing, debugging, and profiling of GameTest scripts within Visual Studio Code"
 ---
 
 # Use Visual Studio Code tools to write script

@@ -3,6 +3,7 @@ author: kakinnun
 ms.author: kakinnun
 title: 1.19.40 Update Notes
 ms.prod: gaming
+description: "A summary of the changes present for creators in Minecraft: Bedrock Edition version 1.19.40"
 ---
 # Minecraft Bedrock 1.19.40 Update Notes for Creators
 

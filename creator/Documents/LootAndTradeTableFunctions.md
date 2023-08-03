@@ -1,9 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Loot and Trade Table Functions
 ms.prod: gaming
-description: An article showcasing the available functions for Loot and Trade Tables
+description: "An article showcasing the available functions for Loot and Trade Tables"
 ---
 
 # Loot and Trade Table Functions

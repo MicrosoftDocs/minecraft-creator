@@ -3,7 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: World Height Changes in Caves and Cliffs Part 2
 ms.prod: gaming
-description: "Effects of world height changes in Caves and Cliffs: Part 2 on creators."
+description: "Effects of world height changes in Caves and Cliffs: Part 2 on creators"
 
 ---
 

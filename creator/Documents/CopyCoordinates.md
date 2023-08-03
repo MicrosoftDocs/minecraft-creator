@@ -3,7 +3,7 @@ author: mammerla
 ms.author: v-jillheaden
 title: Copy and Paste Coordinates
 ms.prod: gaming
-description: A tutorial about the copy and paste coordinates feature.
+description: "A guide detailing the copy and paste coordinates feature"
 ---
 # Introduction to Copying and Pasting Coordinates
 
