@@ -26,4 +26,5 @@ ms.prod: gaming
     "condition": "query.block_property(custom:is_playing_sound) == false", //custom condition
     "event" : "sound_the_alarm", //custom event
     "target": "self"
+}
 ```
