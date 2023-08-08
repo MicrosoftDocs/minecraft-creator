@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:conditional_bandwidth_optimization
 ms.prod: gaming
+description: "A reference document detailing the 'conditional_bandwidth_optimization' entity component"
 ---
 
 # Entity Documentation - minecraft:conditional_bandwidth_optimization

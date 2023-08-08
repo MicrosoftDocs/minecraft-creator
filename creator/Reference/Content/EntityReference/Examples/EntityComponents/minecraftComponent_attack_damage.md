@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:attack_damage
 ms.prod: gaming
+description: "A reference document detailing the 'attack_damage' entity component"
 ---
 
 # Entity Documentation - minecraft:attack_damage
@@ -14,7 +15,6 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |value|*not set* | Integer | How much an attack should damage a target. |
-
 
 ## Example
 

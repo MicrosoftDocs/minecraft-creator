@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Block Documentation - transform_item
 ms.prod: gaming
+description: "A reference document detailing the 'transform_item' block event response"
 ---
 
 # Block Documentation - transform_item

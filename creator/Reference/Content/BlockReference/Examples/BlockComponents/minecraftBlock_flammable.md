@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Block Documentation - minecraft:flammable
 ms.prod: gaming
+description: "A reference document detailing the 'flammable' block component"
 ---
 
 # Block Documentation - minecraft:flammable

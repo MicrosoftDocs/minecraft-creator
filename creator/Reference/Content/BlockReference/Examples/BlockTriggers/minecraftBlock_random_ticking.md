@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-bbortree
+author: JimSeaman42
+ms.author: mikeam
 title: Block Documentation - minecraft:random_ticking
 ms.prod: gaming
+description: "A reference document detailing the 'random_ticking' block trigger"
 ---
 
 # Block Documentation - minecraft:random_ticking
 
-`minecraft:random_ticking`  triggers the specified event randomly based on the random tick speed gamerule. The random tick speed determines how often blocks are updated.
+`minecraft:random_ticking`  triggers the specified event randomly based on the random tick speed game rule. The random tick speed determines how often blocks are updated.
 
 >[!IMPORTANT]
 > `minecraft:random_ticking` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
@@ -20,13 +21,13 @@ ms.prod: gaming
 
 ## Triggers
 
-`minecraft:random_ticking` can use the following parameters that are fired on-tick.
+`minecraft:random_ticking` can use the following parameters:
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|condition| 1| String|  A condition using Molang queries that results to true/false. If true on the random tick, the event will be triggered. If false on the random tick, the event will not be triggered. |
+|condition| 1| String|  A condition using Molang queries that results to true/false. If true, the event will be triggered. If false, the event will not be triggered. |
 |event| set_block_property| String|  The event that will be triggered. |
-|target| self| String| The target of the event executed by the block |
+|target| self| String| The target of the event executed by the block. |
 
 ## Example
 

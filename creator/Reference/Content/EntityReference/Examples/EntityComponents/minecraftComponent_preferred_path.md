@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:preferred_path
 ms.prod: gaming
+description: "A reference document detailing the 'preferred_path' entity component"
 ---
 
 # Entity Documentation - minecraft:preferred_path

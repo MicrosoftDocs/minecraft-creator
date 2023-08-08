@@ -1,17 +1,17 @@
 ---
-author: mammerla
-ms.author: v-bbortree
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:distance_filter
 ms.prod: gaming
 ---
 
 # Entity Documentation - minecraft:distance_filter
 
-This component allows players to set mobs spawn with certain distance levels.
+Allows players to set specific distances for entities to spawn.
 
 ## Parameters
 
 |Name |Default Value|Type |Description |
 |:-----------|:-----------|:-----------|:-----------|
-| max| 128 |String | This is the maximum distance level that a mob spawns |
-| min| 24 |String | This is the minimum distance level that a mob spawns |
+| max| 128 |String | The maximum distance an entity spawns |
+| min| 24 |String | The minimum distance an entity spawns |

@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:entity_transformed
 ms.prod: gaming
+description: "A reference document detailing the 'entity_transformed' entity event"
 ---
 
 # Entity Documentation - minecraft:entity_transformed
@@ -10,7 +11,6 @@ ms.prod: gaming
 `minecraft:entity_transformed` triggers an event call on an entity that transforms into another entity.
 
 ## Parameters
-
 
 ## Example
 

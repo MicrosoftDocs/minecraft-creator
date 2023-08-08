@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Block Documentation - minecraft:light_dampening
 ms.prod: gaming
+description: "A reference document detailing the 'light_dampening' block component"
 ---
 
 # Block Documentation - minecraft:light_dampening

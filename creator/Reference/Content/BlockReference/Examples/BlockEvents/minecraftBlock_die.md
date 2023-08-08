@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Block Documentation - die
 ms.prod: gaming
+description: "A reference document detailing the 'die' block event response"
 ---
 
 # Block Documentation - die

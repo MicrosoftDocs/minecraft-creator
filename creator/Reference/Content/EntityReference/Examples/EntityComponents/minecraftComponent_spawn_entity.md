@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:spawn_entity
 ms.prod: gaming
+description: "A reference document detailing the 'spawn_entity' entity component"
 ---
 
 # Entity Documentation - minecraft:spawn_entity
 
-`minecraft:spawn_entity` adds a timer after which the entity will spawn another entity or item (similar to vanilla's chicken's egg-laying behavior).
+`minecraft:spawn_entity` adds a timer after which the entity will spawn another entity or item (similar to the vanilla chicken's egg-laying behavior).
 
 ## Parameters
 

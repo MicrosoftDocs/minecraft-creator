@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Block Documentation - remove_mob_effect
 ms.prod: gaming
+description: "A reference document detailing the 'remove_mob_effect' block event response"
 ---
 
 # Block Documentation - remove_mob_effect

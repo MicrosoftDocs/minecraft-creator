@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Animation Documentation - Render Controllers
 ms.prod: gaming
+description: "A reference document discussing animation render controllers"
 ---
 
 # Animation Documentation - Render Controllers

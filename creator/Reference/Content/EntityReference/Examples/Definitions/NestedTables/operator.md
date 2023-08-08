@@ -3,6 +3,7 @@ author: mammerla
 ms.author: v-bbortree
 title: Entity Documentation - operators
 ms.prod: gaming
+description: "A reference document detailing operators"
 ---
 
 # Entity Documentation - Operators

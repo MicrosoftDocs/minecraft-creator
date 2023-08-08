@@ -1,8 +1,9 @@
 ---
-author: mammerla
+author: JimSeaman42
 ms.author: mikeam
 title: Block Documentation - Block Properties and Permutations
 ms.prod: gaming
+description: "A reference document providing an overview of block permutations and block properties"
 ---
 
 # Block Documentation - Block Properties and Permutations
@@ -76,7 +77,7 @@ The block has one block property, `"custom:is_lit"` that has two values, true an
 
 The block has one permutation for its "on" state and one permutation for its "off" state. The first permutation's condition requires that the block property `"custom:is_lit"` be equal to true in order to be used.
 
-The second permutation's condition requires that the block property` "custom:is_lit"` be equal to false to be used.
+The second permutation's condition requires that the block property`"custom:is_lit"` be equal to false to be used.
 
 Now the question becomes "How does the block property "custom:is_lit" get set or changed?"
 
@@ -93,7 +94,7 @@ One way to give a block a specific property value is by using the `/setblock` co
 
 Events can also be used to set a specific block property. Use a [block event trigger component](./BlockTriggers/BlockTriggerList.md) to determine when you want an event to fire, and use the event response "set_block_property" to set the block property to a specific value when it fires.
 
-### Unlimited* Power!
+### Unlimited* Power
 
 A cap of 65,536 permutations that all blocks on a map can generate has been placed due to performance concerns. Attempting to add a resource pack with more permutations than said cap will result in the following warning:
 
@@ -101,4 +102,4 @@ A cap of 65,536 permutations that all blocks on a map can generate has been plac
 
 This warning will block marketplace ingestion, so you'll definitely want to fix this issue before submitting. The good news is that you can troubleshoot the issue with the debug log, which contains a list of blocks with permutations, sorted with the largest amount at the top.
 
-*Yes, it's not **technically** unlimited, but 65536 is so mind-bogglingly impressive that it may as well be, right? 
+*Yes, it's not **technically** unlimited, but 65536 is so mind-bogglingly impressive that it may as well be, right?

@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:projectile
 ms.prod: gaming
+description: "A reference document detailing the 'projectile' entity component"
 ---
 
 # Entity Documentation - minecraft:projectile
@@ -226,4 +227,4 @@ Name |Default Value  |Type  |Description  |
 - [wither_skull_dangerous](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skull_dangerous.md)
 - [wither_skull](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skull.md)
 - [xp_bottle](../../../../Source/VanillaBehaviorPack_Snippets/entities/xp_bottle.md)
-- 
+-

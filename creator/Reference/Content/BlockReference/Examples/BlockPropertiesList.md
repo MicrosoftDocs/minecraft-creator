@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Block Documentation - Block Properties List
 ms.prod: gaming
+description: "A reference document listing all currently available block properties"
 ---
 
 # Block Documentation - Block Properties

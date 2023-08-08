@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:dweller
 ms.prod: gaming
+description: "A reference document detailing the 'dweller' entity component"
 ---
 
 # Entity Documentation - minecraft:dweller
 
-`minecraft:dweller` compels a mob to join and migrate between villages and other dwellings.
+`minecraft:dweller` compels an entity to join and migrate between villages and other dwellings.
 
 ## Parameters
 
@@ -22,8 +23,6 @@ ms.prod: gaming
 |can_migrate| *not set*| Boolean| Determines whether the entity can migrate between dwellings, or only have its initial dwelling. |
 |dwelling_bounds_tolerance| *not set*| Float | A padding distance for checking if the entity is within the dwelling. |
 |preferred_profession| *not set*| String| Allows the user to define a starting profession for this particular Dweller, instead of letting them choose organically. (They still need to gain experience from trading before this takes effect.) |
-
-
 
 ## Example
 

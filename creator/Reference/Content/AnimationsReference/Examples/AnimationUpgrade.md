@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: mikeam
 title: Animation Documentation - Upgrading Animation Scripts
 ms.prod: gaming
+description: "A reference document focused on updating animation scripts"
 ---
 
 # Animation Documentation - Upgrading Animation Scripts
@@ -12,6 +13,7 @@ If you are updating your Animation scripts to the latest version of Minecraft: B
 ## Upgrade from v1.17.30 to v1.18.10
 
 The major change with 1.18.10 is:
+
 - Fixed an issue where animation controller events defined in the default state would get skipped if the controller immediately transitioned to another state.
 
 ## Upgrade from v1.10 to v1.17.30
@@ -30,6 +32,7 @@ The v1.8 file format is backwards-compatible with v1.10 so you don't _need_ to c
 ## Upgrade from v1.18.10 to v1.18.20
 
 The major change with 1.18.20 is:
+
 - Molang expressions inside animation scripts for actor resource definition (pre_animation and initialize) that contain capital letters are properly evaluated now. Strings inside such expressions are not forced to lowercase anymore and work as expected.
 
 ## Upgrade from v1.7 Beta to v1.8
@@ -43,4 +46,3 @@ To upgrade previous scripts, you'll want to do the following steps to all of you
 1. The general rule is that 'query' represents read-only values from the entity the script is running on, and 'variable' represents read-write data created by the user.
 1. We've adopted snake_case for all names of things.  You are welcome to use upper-case letters if you wish as we are case-insensitive, however we recommend snake_case in general.
 1. Several variables previously set on mobs have been changed to use the query.foo format.  Look through the updated list below to see what has been added and changed.
-

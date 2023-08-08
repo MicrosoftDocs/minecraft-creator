@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - minecraft:addrider
 ms.prod: gaming
+description: "A reference document detailing the 'addrider' entity component"
 ---
 
 # Entity Documentation - minecraft:addrider
