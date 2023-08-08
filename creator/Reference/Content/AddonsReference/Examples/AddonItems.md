@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Addons Documentation - Items
 ms.prod: gaming
+description: "A reference document detailing the available items for use in Minecraft: Bedrock Edition"
 ---
 
 # Addons Documentation - Items

@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:underwater_movement
 ms.prod: gaming
+description: "A reference document detailing the 'underwater_movement' entity component"
 ---
 
 # Entity Documentation - minecraft:underwater_movement

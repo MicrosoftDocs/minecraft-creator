@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:burns_in_daylight
 ms.prod: gaming
+description: "A reference document detailing the 'burns_in_daylight' entity component"
 ---
 
 # Entity Documentation - minecraft:burns_in_daylight

@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:trade_table
 ms.prod: gaming
+description: "A reference document detailing the 'trade_table' entity component"
 ---
 
 # Entity Documentation - minecraft:trade_table

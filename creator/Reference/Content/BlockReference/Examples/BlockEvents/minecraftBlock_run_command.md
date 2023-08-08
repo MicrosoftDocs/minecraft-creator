@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Block Documentation - run_command
 ms.prod: gaming
+description: "A reference document detailing the 'run_command' block event response"
 ---
 
 # Block Documentation - run_command

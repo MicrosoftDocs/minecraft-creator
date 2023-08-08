@@ -3,6 +3,7 @@ author: iconicNurdle
 ms.author: mikeam
 title: Addons Documentation - Blocks
 ms.prod: gaming
+description: "A reference document listing the available blocks for use in Minecraft: Bedrock Edition"
 ---
 
 # Addon - Blocks
@@ -113,8 +114,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | turtle_egg_count| String| one_egg, two_egg, three_egg, four_egg| Determines the amount of turtle eggs in an egg block |
 | update_bit| Boolean| True, False| Determines if a leaf block or flower block should be updated |
 | upper_block_bit| Boolean| True, False| Determines if a block is the upper half of an object like a door or a tall plant |
-| upside_down_bit| Boolean| True, False| Determines if a stair block or trapdoor block is upsidedown |
-| vine_direction_bits| Integer| 0 - 15| Determines the facing direction for vines, works like the facing_direction blockstate |
+| upside_down_bit| Boolean| True, False| Determines if a stair block or trapdoor block is upside down |
+| vine_direction_bits| Integer| 0 - 15| Determines the facing direction for vines, works like the facing_direction block state |
 | wall_block_type| String| cobblestone, mossy_cobblestone, granite, diorite, andesite, sandstone, brick, stone_brick, mossy_stone_brick, nether_brick, end_brick, prismarine, red_sandstone, red_nether_brick| Determines the type of a stone used in a wall block |
 | wall_connection_type_east| String| none, short, tall| Determines what kind of connection a wall has to the east |
 | wall_connection_type_north| String| none, short, tall| Determines what kind of connection a wall has to the north |
@@ -126,7 +127,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 
 ## BlockTraits
 
-List of all Block Traits and the Block States they include. 
+List of all Block Traits and the Block States they include.
 Experimental toggles required : Upcoming Creator Features
 
 | Block Trait| Type | Valid Values | Description |
@@ -136,7 +137,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:facing_direction| String| down, up, north, south, east, west | Defines all placement directions of a block. |
 | y_rotation_offset| Decimal |0.0 - 360.0 | The y rotation offset to apply to the block. Must be [0.0, 90.0, 180.0, 270.0]. Default is 0, meaning if the player is facing north, the "minecraft:cardinal_direction" and/or minecraft:facing_direction state will be north. |
 | "minecraft:placement_position"| PlacementPosition| | Adds the "minecraft:block_face" and/or "minecraft:vertical_half" BlockStates. The value of these state(s) are set when the block is placed. `enabled_states` array specifies which states to enable. Must specify at least one.|
-| minecraft:block_face| String| down, up, north, south, east, west| Which blockface the player placed the block on. |
+| minecraft:block_face| String| down, up, north, south, east, west| Which block face the player placed the block on. |
 | minecraft:vertical_half| String| bottom, top| Which vertical half of the space the block is placed in. |
 
 ### Block trait example

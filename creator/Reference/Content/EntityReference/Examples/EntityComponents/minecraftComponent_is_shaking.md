@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:is_shaking
 ms.prod: gaming
+description: "A reference document detailing the 'is_shaking' entity component"
 ---
 
 # Entity Documentation -  minecraft:is_shaking

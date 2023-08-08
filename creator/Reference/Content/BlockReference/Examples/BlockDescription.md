@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Block Documentation - Block Description
 ms.prod: gaming
+description: "A reference document detailing the block description section contained in the block behavior pack JSON file"
 ---
 
 # Block Documentation - Block Description
@@ -28,24 +29,24 @@ The block `"description"` is a section inside the `"minecraft:block"` section of
 
 ```json
 {
-	"format_version": "1.19.80",
-	"minecraft:block": {
-		"description": {
-			"identifier": "design:lavenderstone"
-		},
-		"components": {
-			"minecraft:loot": "loot_tables/chests/simple_dungeon.json",
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 4
-			},
-			"minecraft:friction": 0.4,
-			"minecraft:map_color": "#00ff00",
-			"minecraft:flammable": {
-				"catch_chance_modifier": 50,
-				"destroy_chance_modifier": 0
-			},
-			"minecraft:light_emission": 15
-		}
-	}
+ "format_version": "1.19.80",
+ "minecraft:block": {
+  "description": {
+   "identifier": "design:lavenderstone"
+  },
+  "components": {
+   "minecraft:loot": "loot_tables/chests/simple_dungeon.json",
+   "minecraft:destructible_by_mining": {
+    "seconds_to_destroy": 4
+   },
+   "minecraft:friction": 0.4,
+   "minecraft:map_color": "#00ff00",
+   "minecraft:flammable": {
+    "catch_chance_modifier": 50,
+    "destroy_chance_modifier": 0
+   },
+   "minecraft:light_emission": 15
+  }
+ }
 }
 ```

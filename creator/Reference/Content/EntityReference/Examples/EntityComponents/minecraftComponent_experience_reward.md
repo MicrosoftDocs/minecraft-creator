@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:experience_reward
 ms.prod: gaming
+description: "A reference document detailing the 'experience_reward' entity component"
 ---
 
 # Entity Documentation - minecraft:experience_reward

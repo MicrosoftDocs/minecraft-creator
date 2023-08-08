@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Block Documentation - minecraft:map_color
 ms.prod: gaming
+description: "A reference document detailing the 'map_color' block component"
 ---
 
 # Block Documentation - minecraft:map_color

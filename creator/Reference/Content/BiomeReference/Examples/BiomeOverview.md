@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Biome Documentation - Overview
 ms.prod: gaming
+description: "A reference document discussing biomes"
 ---
 
 # Biome Documentation - Overview
@@ -85,7 +86,7 @@ Biomes are read from JSON files in the biomes subfolders of behavior packs. Load
 > If you add a new biome, you will need to write component data that allows it to participate in world generation (see full schema below), or else it will not show up in your worlds.
 
 > [!TIP]
-> Code examples below are tagged with the `C` programing language to have a similar syntax highlighting as Molang and the schema being used.
+> Code examples below are tagged with the `C` programming language to have a similar syntax highlighting as Molang and the schema being used.
 
 ### Schema
 

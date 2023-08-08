@@ -3,6 +3,7 @@ author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:variant
 ms.prod: gaming
+description: "A reference document detailing the 'variant' entity component"
 ---
 
 # Entity Documentation -  minecraft:variant

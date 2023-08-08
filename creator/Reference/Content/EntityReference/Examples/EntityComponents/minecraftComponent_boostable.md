@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:boostable
 ms.prod: gaming
+description: "A reference document detailing the 'boostable' entity component"
 ---
 
 # Entity Documentation - minecraft:boostable

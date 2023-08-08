@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Block Documentation - minecraft:geometry
 ms.prod: gaming
+description: "A reference document detailing the 'geometry' block component"
 ---
 
 # Block Documentation - minecraft:geometry
@@ -24,6 +25,7 @@ Note that all bones default to 'true,' so bones should only be defined if they a
 ```json
 "minecraft:geometry": "geometry.bubble_fish"
 ```
+
 ## Geometry and Bone Visibility Example
 
 ```json

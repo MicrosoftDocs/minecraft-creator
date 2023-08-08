@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Block Documentation - Block Event Responses List
 ms.prod: gaming
+description: "A reference document listing all available block event responses"
 ---
 
 # Block Documentation - Block Event Responses

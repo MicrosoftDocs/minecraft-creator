@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: mikeam
 title: Animation Documentation - Animation Controllers
 ms.prod: gaming
+description: "A reference document detailing animation controllers"
 ---
 
 # Animation Documentation - Animation Controllers

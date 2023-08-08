@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Block Documentation - minecraft:loot
 ms.prod: gaming
+description: "A reference document detailing the 'loot' block component"
 ---
 
 # Block Documentation - minecraft:loot
