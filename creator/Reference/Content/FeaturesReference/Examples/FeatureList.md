@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Features Documentation - Feature List
 ms.prod: gaming
+description: "A reference document listing all available features for use in JSON files"
 ---
 
 # Features Documentation - Feature List

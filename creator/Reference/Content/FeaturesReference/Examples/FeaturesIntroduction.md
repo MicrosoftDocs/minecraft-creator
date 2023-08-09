@@ -1,13 +1,14 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: JimSeaman42
+ms.author: mikeam
 title: Features Documentation - Introduction to Features
 ms.prod: gaming
+description: "A reference document introducing the concept of features"
 ---
 
 # Features Documentation - Introduction to Features
 
-Features are decorations scattered throughout the world. Things such as trees, plants, flowers, springs, ore, and coral are all features. Basically, if it isn't the terrain or a mob, it's probably a feature!
+Features are decorations scattered throughout the world such as trees, plants, flowers, springs, ore, and coral. Basically, if it isn't the terrain or an entity, it's probably a feature!
 Features can be standalone or composed of multiple sub-features. In practice, most features in Minecraft are defined as a chain of two or more features. These chains typically end with features that place blocks in the world. Other feature types control flow such as conditional, sequential, or random distribution.
 
 ## JSON format
@@ -79,7 +80,7 @@ Features must be attached to at least one biome in order to show up in the world
 
 Feature rules are separate JSON definition files found in the "feature_rules" subfolder of behavior packs. Feature rules follow the same filename rules as features. Each feature rule controls exactly one feature and serves as the root of a chain of feature data. To attach a feature to a biome with a feature rule, the "conditions" object must include the "minecraft:biome_filter" field. This is a list of filter tests that are performed on each biome to determine if the feature should be attached. Most relevant is the "has_biome_tag" test.
 
-### Example
+### Feature example
 
 ```json
 {

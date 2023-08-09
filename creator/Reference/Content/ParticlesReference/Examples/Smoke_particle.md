@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Smoke particle
 ms.prod: gaming
+description: "A reference document detailing the 'smoke particle' particle effect"
 ---
 
 # Smoke particle
@@ -11,7 +12,7 @@ This particle is the general-purpose smoke puff.  It appears on torches, furnace
 
 The main feature of this particle different from the flame particle is the flipbook texture animation.  See the details in the particle below, but the effect uses a flipbook subpart of the billboard appearance component to drive uv coordinates from frame to frame over time.
 
-In addition, the use of texturewidth/height in the UV section of the billboard component allows referencing of UVs via texels for the flipbook:
+In addition, the use of texture width/height in the UV section of the billboard component allows referencing of UVs via texels for the flipbook:
 
 ```json
 {

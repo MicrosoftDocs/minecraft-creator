@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Item Documentation - minecraft:durability
 ms.prod: gaming
+description: "A reference document detailing the 'durability' item component"
 ---
 
 # Item Documentation - minecraft:durability

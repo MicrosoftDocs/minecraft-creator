@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Features Documentation - minecraft:rect_layout
 ms.prod: gaming
+description: "A reference document detailing the 'rect_layout' feature"
 ---
 
 # Features Documentation - minecraft:rect_layout

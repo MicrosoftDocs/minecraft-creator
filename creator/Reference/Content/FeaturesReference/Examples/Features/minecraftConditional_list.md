@@ -1,13 +1,14 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Features Documentation - minecraft:conditional_list
 ms.prod: gaming
+description: "A reference document detailing the 'conditional_list' feature"
 ---
 
 # Features Documentation - minecraft:conditional_list
 
-`minecraft:conditional_list` Places the first suitable feature within a collection. These conditional features will be evaluated in order.
+`minecraft:conditional_list` places the first suitable feature within a collection. These conditional features will be evaluated in order.
 
 **Succeeds if**
 A condition is successfully resolved.

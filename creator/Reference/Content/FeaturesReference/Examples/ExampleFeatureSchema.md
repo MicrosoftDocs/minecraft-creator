@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: v-bbortree
+author: JimSeaman42
+ms.author: mikeam
 title: Features Documentation - Feature schema
 ms.prod: gaming
 description: "Examples of feature schemas available in Minecraft: Bedrock Edition."
@@ -118,8 +118,8 @@ Here is an example of the complete feature schema:
           }
           int "min_outer_wall_distance"<1-10> // The minimum distance each distribution point must be from the outer wall. [0,10]
           int "max_outer_wall_distance"<1-20> // The maximum distance each distribution point can be from the outer wall. [0,20]
-          int "min_distribution_points"<1-10> // The minimum number of points inside the distance field that can get generated. The distance field is the area consisting of all points with a minimum distance to all destribution points. [0,10]
-          int "max_distribution_points"<1-20> // The maximum number of points inside the distance field that can get generated. The distance field is the area consisting of all points with a minimum distance to all destribution points. [0,20]
+          int "min_distribution_points"<1-10> // The minimum number of points inside the distance field that can get generated. The distance field is the area consisting of all points with a minimum distance to all distribution points. [0,10]
+          int "max_distribution_points"<1-20> // The maximum number of points inside the distance field that can get generated. The distance field is the area consisting of all points with a minimum distance to all distribution points. [0,20]
           int "min_point_offset"<0-10> // The lowest possible value of random offset applied to the position of each distribution point. [0,10]
           int "max_point_offset"<0-10> // The highest possible value of random offset applied to the position of each distribution point. [0,10]
           int "max_radius" // The maximum possible radius of the geode generated.
@@ -129,7 +129,7 @@ Here is an example of the complete feature schema:
           float "noise_multiplier" // A multiplier applied to the noise that is applied to the distribution points within the geode. Higher = more noisy.
           float "use_potential_placements_chance"<0.000000-1.000000> // The likelihood that a special block will be placed on the inside of the geode. [0,1]
           float "use_alternate_layer0_chance"<0.000000-1.000000> // The likelihood that a block in the innermost layer of the geode will be replaced with an alternate option. [0,1]
-          bool "placements_require_layer0_alternate" // If true, the potential placement block will only be placed on the alternate layer0 blocks that get placed. Potential placement blocks are blocks that depend on the existance of another block to be placed. The latter are the layer0 alternate blocks.
+          bool "placements_require_layer0_alternate" // If true, the potential placement block will only be placed on the alternate layer0 blocks that get placed. Potential placement blocks are blocks that depend on the existence of another block to be placed. The latter are the layer0 alternate blocks.
           int "invalid_blocks_threshold" // The threshold of invalid blocks for a geode to have a distribution point in before it aborts generation entirely.
       }
       object "minecraft:growing_plant_feature" : opt
@@ -346,7 +346,7 @@ Here is an example of the complete feature schema:
                   int "[1..1]" // y_min
                   int "[2..2]" // z_min
               }
-              array "max"[3] // Maxium extent of the bounding volume expressed as [ x, y, z ]
+              array "max"[3] // Maximum extent of the bounding volume expressed as [ x, y, z ]
               {
                   int "[0..0]" // x_max
                   int "[1..1]" // y_max
@@ -422,7 +422,7 @@ Here is an example of the complete feature schema:
               string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
           }
           feature_reference "feature_to_snap" // Named reference of feature to be snapped
-          int "vertical_search_range" // Range to search for a floor or ceiling for snaping the feature.
+          int "vertical_search_range" // Range to search for a floor or ceiling for snapping the feature.
           string "surface" : opt // Defines the surface that the y-value of the placement position will be snapped to. Valid values: 'ceiling', 'floor' and 'random_horizontal'
           bool "allow_air_placement" : opt // Determines whether the feature can snap through air blocks. Defaults to true.
           bool "allow_underwater_placement" : opt // Determines whether the feature can snap through water blocks. Defaults to false.

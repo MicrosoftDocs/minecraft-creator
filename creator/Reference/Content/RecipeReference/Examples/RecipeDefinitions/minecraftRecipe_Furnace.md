@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Recipe Documentation - Furnace Recipe
 ms.prod: gaming
+description: "A reference document detailing furnace recipes"
 ---
 
 # Recipe Documentation - Furnace Recipe

@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: "Schema Documentation - block_reference:1.10.0"
 ms.prod: gaming
+description: "A reference document detailing the 'block_reference:1.10.0' schema"
 ---
 
 # Schema Documentation - block_reference:1.10.0

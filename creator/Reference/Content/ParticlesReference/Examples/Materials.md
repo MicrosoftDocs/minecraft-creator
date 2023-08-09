@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Materials
 ms.prod: gaming
+description: "A reference document detailing how materials are applied to particle effects to determine transparency and color blending"
 ---
 
 # Materials

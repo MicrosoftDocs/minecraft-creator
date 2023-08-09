@@ -1,8 +1,9 @@
 ---
 author: JimSeaman42
-ms.author: v-jillheaden
+ms.author: mikeam
 title: Introduction to Particles
 ms.prod: gaming
+description: "A reference document detailing the basic concepts behind particles"
 ---
 
 # Introduction to Particles

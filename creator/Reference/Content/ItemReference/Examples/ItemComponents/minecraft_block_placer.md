@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Item Documentation - minecraft:block_placer
 ms.prod: gaming
+description: "A reference document detailing the 'block_placer' item component"
 ---
 
 # Item Documentation - minecraft:block_placer

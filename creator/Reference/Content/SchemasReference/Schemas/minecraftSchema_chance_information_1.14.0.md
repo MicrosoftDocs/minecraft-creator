@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: "Schema Documentation - chance_information:1.14.0"
 ms.prod: gaming
+description: "A reference document detailing the 'chance_information:1.14.0' schema"
 ---
 
 # Schema Documentation - chance_information:1.14.0

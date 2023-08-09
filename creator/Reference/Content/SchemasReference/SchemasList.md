@@ -1,14 +1,14 @@
 ---
-author: mammerla
-ms.author: v-bbortree
+author: JimSeaman42
+ms.author: mikeam
 title: Schemas List
 ms.prod: gaming
-description: The list of data format schemas.
+description: "This reference document lists currently available data format schemas"
 ---
 
 # Schemas List
 
-These are the data format schemas for content creators to reference when editing or creating new content.
+This list details the available data format schemas for content creators to reference when editing or creating new content.
 
 | Schema name| Description|
 |:------------|:------------|

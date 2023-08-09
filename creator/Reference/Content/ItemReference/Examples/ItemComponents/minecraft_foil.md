@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Item Documentation - minecraft:foil
 ms.prod: gaming
+description: "A reference document detailing the 'foil' item component"
 ---
 
 # Item Documentation - minecraft:foil

@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Particle Documentation - Particle Initial Spin component
 ms.prod: gaming
+description: "A reference document detailing the 'particle initial spin' particle component"
 ---
 
 # Particle Documentation - Particle Initial Spin component

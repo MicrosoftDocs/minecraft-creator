@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Particle Documentation - Particle Motion Collision component
 ms.prod: gaming
+description: "A reference document detailing the 'particle motion collision' particle component"
 ---
 
 # Particle Documentation - Particle Motion Collision component

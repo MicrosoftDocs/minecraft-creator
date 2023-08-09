@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Item Documentation - minecraft:knockback_resistance
 ms.prod: gaming
+description: "A reference document detailing the 'knockback_resistance' item component"
 ---
 
 # Item Documentation - minecraft:knockback_resistance
