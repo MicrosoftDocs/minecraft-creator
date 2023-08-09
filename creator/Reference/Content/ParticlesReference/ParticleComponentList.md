@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Particle Component List
 ms.prod: gaming
+description: "A reference document listing currently available particle components"
 ---
 
 # Particle Component List

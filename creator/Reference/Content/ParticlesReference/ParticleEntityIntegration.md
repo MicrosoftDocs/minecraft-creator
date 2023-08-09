@@ -3,6 +3,7 @@ author: JimSeaman42
 ms.author: mikeam
 title: Particle Documentation - Particle Entity Integration
 ms.prod: gaming
+description: "A reference document discussing the ways in which creators can integrate particle effects with entities"
 ---
 
 # Particle Documentation - Particle Entity Integration
@@ -51,7 +52,7 @@ In this example, a smoke puff is generated three seconds after a cat sits down.
 
 ```
 
-### Animation controller effects
+## Animation controller effects
 
 Animation controllers can specify effect events for their states. This allows for a list of particle effects to be started upon state entry and for those particle effects to be automatically ended when leaving the state. For particles that don't terminate (or don't terminate prior to state transition), they will be terminated at state exit.
 

@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Texture Set Documentation - Introduction to Texture Sets
 ms.prod: gaming
+description: "A reference document introducing creators to the concept of texture sets"
 ---
 
 # Texture Set Documentation - Introduction to Texture Sets

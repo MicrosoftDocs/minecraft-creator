@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Molang Documentation - Experimental Query Functions
 ms.prod: gaming
+description: "A reference document detailing experimental Molang query functions"
 ---
 
 # Molang Documentation - Experimental Query Functions

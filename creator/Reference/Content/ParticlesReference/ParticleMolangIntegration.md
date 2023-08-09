@@ -3,6 +3,7 @@ author: JimSeaman42
 ms.author: mikeam
 title: Particle Documentation - Particle Molang Integration
 ms.prod: gaming
+description: "A reference document exploring ways creators can utilize Molang in particle effects"
 ---
 
 # Particle Documentation - Particle Molang Integration

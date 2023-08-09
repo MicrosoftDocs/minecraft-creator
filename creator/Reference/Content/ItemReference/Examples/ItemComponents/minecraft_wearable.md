@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Item Documentation - minecraft:wearable
 ms.prod: gaming
+description: "A reference document detailing the 'wearable' item component"
 ---
 
 # Item Documentation - minecraft:wearable

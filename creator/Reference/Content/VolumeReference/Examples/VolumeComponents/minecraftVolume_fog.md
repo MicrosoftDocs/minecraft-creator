@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Volume Documentation - minecraft:fog
 ms.prod: gaming
+description: "A reference document detailing the 'fog' volume component"
 ---
 
 # Volume Documentation -  minecraft:fog

@@ -27,7 +27,7 @@ Below is a list of all the available Item Components within Minecraft: Bedrock E
 |[minecraft:hover_text_color](ItemComponents/minecraft_hover_text_color.md)|*not set* |  JSON Object| Determines the color of the item name when hovering over it.|
 |[minecraft:icon](ItemComponents/minecraft_icon.md)|*not set* | JSON Object| Determines the icon to represent the item in the UI and elsewhere. In format versions before 1.20.10, this component requires the 'Holiday Creator Features' experimental toggle.|
 |[minecraft:item_storage](ItemComponents/minecraft_item_storage.md)|*not set* | JSON Object| Used for storing items within an item's user data.|
-|[minecraft:knockback_resistance](ItemComponents/minecraft_knockback_resistance.md)|*not set* | JSON Object| Sets the knockback resistance item component, deetermining the amount of  knockback resistance that the item has.|
+|[minecraft:knockback_resistance](ItemComponents/minecraft_knockback_resistance.md)|*not set* | JSON Object| Sets the knockback resistance item component, determining the amount of  knockback resistance that the item has.|
 |[minecraft:max_stack_size](ItemComponents/minecraft_max_stack_size.md)|*not set* | JSON Object| Determines how many of the item can be stacked.|
 |[minecraft:on_use](ItemComponents/minecraft_on_use.md)|*not set* | JSON Object|  The on_use item component allows you to receive an event when the item is used.|
 |[minecraft:on_use_on](ItemComponents/minecraft_on_use_on.md)|*not set*| JSON Object | The on_use_on item component allows you to receive an event when the item is used on a block in the world|

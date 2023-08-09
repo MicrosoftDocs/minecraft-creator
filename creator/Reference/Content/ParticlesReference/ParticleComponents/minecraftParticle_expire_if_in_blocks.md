@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Particle Documentation - Particle Expire If In Blocks component
 ms.prod: gaming
+description: "A reference document detailing the 'particle expire if in blocks' particle component"
 ---
 
 # Particle Documentation - Particle Expire If In Blocks component

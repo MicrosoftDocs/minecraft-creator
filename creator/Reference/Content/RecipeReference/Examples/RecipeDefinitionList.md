@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Recipe Documentation - Recipe Definition List
 ms.prod: gaming
+description: "A reference document detailing the different types of recipes that can be used by creators"
 ---
 
 # Recipe Documentation - Recipe Definition List

@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Particle Documentation - Emitter Shape Point component
 ms.prod: gaming
+description: "A reference document detailing the 'emitter shape point' particle component"
 ---
 
 # Particle Documentation - Emitter Shape Point component
@@ -15,7 +16,7 @@ All particles come out of a point offset from the emitter.
     // evaluated once per particle emitted
     "offset": [<float/molang>, <float/molang>, <float/molang>] <default:[0, 0, 0]>
 
-    // specifies the direciton of particles.
+    // specifies the direction of particles.
     // evaluated once per particle emitted
     "direction": [<float/molang>, <float/molang>, <float/molang>]
 }

@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Particle Documentation - Particle Initial Speed component
 ms.prod: gaming
+description: "A reference document detailing the 'particle initial speed' particle component"
 ---
 
 # Particle Documentation - Particle Initial Speed component

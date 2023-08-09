@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: mikeam
 title: Volume Documentation - minecraft:bounds
 ms.prod: gaming
+description: "A reference document detailing the 'bounds' volume component"
 ---
 
 # Volume Documentation - minecraft:bounds
@@ -14,7 +15,7 @@ ms.prod: gaming
 >
 >To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md).
 
-`minecraft:bounds` is a Volume Component that is defined by three parameters. Each item has the following properties:
+`minecraft:bounds` is a Volume Component defined by three parameters. Each item has the following properties:
 
 ## Default Parameter
 

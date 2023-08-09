@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Particle Documentation - Particle Appearance Tinting component
 ms.prod: gaming
+description: "A reference document detailing the 'particle appearance tinting' particle component"
 ---
 
 # Particle Documentation - Particle Appearance Tinting component

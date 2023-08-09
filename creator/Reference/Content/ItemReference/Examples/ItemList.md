@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Item Documentation - Item List
 ms.prod: gaming
+description: "A reference document all available item JSON files"
 ---
 
 # Item Documentation - Items
