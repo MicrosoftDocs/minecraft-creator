@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - in_caravan
 ms.prod: gaming
+description: "A reference document detailing the 'in_caravan' entity filter"
 ---
 
 # Entity Documentation - in_caravan
@@ -11,7 +12,7 @@ Returns true if the subject entity is in a caravan.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `in_caravan` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `in_caravan` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.drink_milk
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.drink_milk' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.drink_milk

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - has_target
 ms.prod: gaming
+description: "A reference document detailing the 'has_target' entity filter"
 ---
 
 # Entity Documentation - has_target
@@ -11,7 +12,7 @@ Returns true if the subject entity has a valid target.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `has_target` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `has_target` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

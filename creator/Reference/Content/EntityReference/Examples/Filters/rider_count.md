@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: mikeam
 title: Entity Documentation - rider_count
 ms.prod: gaming
+description: "A reference document detailing the 'rider_count' entity filter"
 ---
 
 # Entity Documentation - rider_count

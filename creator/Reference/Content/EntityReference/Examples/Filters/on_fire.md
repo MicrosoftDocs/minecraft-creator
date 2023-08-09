@@ -1,15 +1,16 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - on_fire
 ms.prod: gaming
+description: "A reference document detailing the 'on_fire' entity filter"
 ---
 
 # Entity Documentation - on_fire
 
 Tests if the subject is on fire.
 
-### subject
+## subject
 
 | Options| Description |
 |:-----------|:-----------|

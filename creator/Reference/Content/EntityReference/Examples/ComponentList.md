@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - Component List
 ms.prod: gaming
+description: "A reference document listing all available entity components"
 ---
 
 # Entity Documentation - Component list

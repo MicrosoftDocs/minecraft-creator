@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.go_and_give_items_to_noteblock
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.go_and_give_items_to_noteblock' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.go_and_give_items_to_noteblock

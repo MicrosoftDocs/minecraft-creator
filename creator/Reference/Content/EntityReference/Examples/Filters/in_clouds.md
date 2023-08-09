@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - in_clouds
 ms.prod: gaming
+description: "A reference document detailing the 'in_clouds' entity filter"
 ---
 
 # Entity Documentation - in_clouds
@@ -11,7 +12,7 @@ Returns true when the subject entity is in the clouds.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `in_clouds` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `in_clouds` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

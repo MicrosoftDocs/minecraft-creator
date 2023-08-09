@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.pickup_items
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.pickup_items' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.pickup_items

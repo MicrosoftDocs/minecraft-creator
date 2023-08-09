@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_mark_variant
 ms.prod: gaming
+description: "A reference document detailing the 'is_mark_variant' entity filter"
 ---
 
 # Entity Documentation - is_mark_variant

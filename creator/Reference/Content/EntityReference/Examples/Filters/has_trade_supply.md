@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - has_trade_supply
 ms.prod: gaming
+description: "A reference document detailing the 'has_trade_supply' entity filter"
 ---
 
 # Entity Documentation - has_trade_supply
@@ -11,7 +12,7 @@ Tests whether the target has any trade supply left. Will return false if the tar
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `has_trade_supply` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `has_trade_supply` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

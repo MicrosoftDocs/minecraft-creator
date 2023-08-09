@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - in_water_or_rain
 ms.prod: gaming
+description: "A reference document detailing the 'in_water_or_rain' entity filter"
 ---
 
 # Entity Documentation - in_water_or_rain
@@ -11,7 +12,7 @@ Returns true when the subject entity is in water or rain.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `in_water_or_rain` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `in_water_or_rain` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

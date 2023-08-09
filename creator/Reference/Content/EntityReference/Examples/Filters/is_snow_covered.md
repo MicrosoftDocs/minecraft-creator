@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: mikeam
 title: Entity Documentation - is_snow_covered
 ms.prod: gaming
+description: "A reference document detailing the 'is_snow_covered' entity filter"
 ---
 
 # Entity Documentation - is_snow_covered
@@ -11,7 +12,7 @@ Tests whether the subject is in an area covered by snow.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `is_snow_covered` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `is_snow_covered` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
