@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - int_property
 ms.prod: gaming
+description: "A reference document detailing the 'int_property' entity filter"
 ---
 
 # Entity Documentation - int_property

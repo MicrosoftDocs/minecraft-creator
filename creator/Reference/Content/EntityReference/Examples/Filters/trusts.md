@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: mikeam
 title: Entity Documentation - trusts
 ms.prod: gaming
+description: "A reference document detailing the 'trusts' entity filter"
 ---
 
 # Entity Documentation - trusts
@@ -11,7 +12,7 @@ Returns true if the subject is trusted by entity.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `trusts` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 >`trusts` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

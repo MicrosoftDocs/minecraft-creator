@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - bool_property
 ms.prod: gaming
+description: "A reference document detailing the 'bool_property' entity filter"
 ---
 
 # Entity Documentation - bool_property
@@ -65,4 +66,3 @@ No entities currently use `bool_property`
 ## Vanilla entities using `bool_property`
 
 No entities currently use `bool_property`
-

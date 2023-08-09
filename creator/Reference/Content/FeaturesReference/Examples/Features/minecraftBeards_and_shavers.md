@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Features Documentation - minecraft:beards_and_shavers
 ms.prod: gaming
+description: "A reference document detailing the 'beards_and_shavers' feature"
 ---
 
 # Features Documentation - minecraft:beards_and_shavers

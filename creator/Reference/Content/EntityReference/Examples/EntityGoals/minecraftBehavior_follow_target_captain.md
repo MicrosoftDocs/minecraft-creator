@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.follow_target_captain
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.follow_target_captain' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.follow_target_captain

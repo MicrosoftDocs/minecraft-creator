@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: mikeam
 title: Entity Documentation - random_chance
 ms.prod: gaming
+description: "A reference document detailing the 'random_chance' entity filter"
 ---
 
 # Entity Documentation - random_chance

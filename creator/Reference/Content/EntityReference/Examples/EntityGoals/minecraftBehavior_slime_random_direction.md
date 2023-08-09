@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.slime_random_direction
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.slime_random_direction' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.slime_random_direction

@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - is_sleeping
 ms.prod: gaming
+description: "A reference document detailing the 'is_sleeping' entity filter"
 ---
 
 # Entity Documentation - is_sleeping

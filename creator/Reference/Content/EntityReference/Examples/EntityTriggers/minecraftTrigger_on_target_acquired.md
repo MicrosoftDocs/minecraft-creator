@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:on_target_acquired
 ms.prod: gaming
+description: "A reference document detailing the 'on_target_acquired' entity trigger"
 ---
 
 # Entity Documentation - minecraft:on_target_acquired

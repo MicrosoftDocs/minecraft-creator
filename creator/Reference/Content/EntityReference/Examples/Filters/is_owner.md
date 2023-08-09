@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_owner
 ms.prod: gaming
+description: "A reference document detailing the 'is_owner' entity filter"
 ---
 
 # Entity Documentation - is_owner
@@ -11,7 +12,7 @@ Returns true if the subject entity is the owner of the calling entity.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `is_owner` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `is_owner` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

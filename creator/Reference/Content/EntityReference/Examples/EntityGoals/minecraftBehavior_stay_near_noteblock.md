@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.stay_near_noteblock
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.stay_near_noteblock' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.stay_near_noteblock

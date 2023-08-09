@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_altitude
 ms.prod: gaming
+description: "A reference document detailing the 'is_altitude' entity filter"
 ---
 
 # Entity Documentation - is_altitude

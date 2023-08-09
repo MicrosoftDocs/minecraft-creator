@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_brightness
 ms.prod: gaming
+description: "A reference document detailing the 'is_brightness' entity filter"
 ---
 
 # Entity Documentation - is_brightness

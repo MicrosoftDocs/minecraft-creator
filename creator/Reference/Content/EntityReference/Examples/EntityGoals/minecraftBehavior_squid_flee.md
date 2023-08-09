@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.squid_flee
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.squid_flee' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.squid_flee

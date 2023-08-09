@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - in_lava
 ms.prod: gaming
+description: "A reference document detailing the 'in_lava' entity filter"
 ---
 
 # Entity Documentation - in_lava
@@ -11,7 +12,7 @@ Returns true when the subject entity is in lava.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `in_lava` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `in_lava` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

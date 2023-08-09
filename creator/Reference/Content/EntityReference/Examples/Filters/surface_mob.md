@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: mikeam
 title: Entity Documentation - surface_mob
 ms.prod: gaming
+description: "A reference document detailing the 'surface_mob' entity filter"
 ---
 
 # Entity Documentation - surface_mob
@@ -11,7 +12,7 @@ Tests if the subject is a surface mob.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `surface_mob` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `surface_mob` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

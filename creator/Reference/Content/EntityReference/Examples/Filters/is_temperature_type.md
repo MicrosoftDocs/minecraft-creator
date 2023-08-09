@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: mikeam
 title: Entity Documentation - is_temperature_type
 ms.prod: gaming
+description: "A reference document detailing the 'is_temperature_type' entity filter"
 ---
 
 # Entity Documentation - is_temperature_type

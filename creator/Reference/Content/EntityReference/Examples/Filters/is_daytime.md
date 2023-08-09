@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_daytime
 ms.prod: gaming
+description: "A reference document detailing the 'is_daytime' entity filter"
 ---
 
 # Entity Documentation - is_daytime
@@ -11,7 +12,7 @@ Returns true during the daylight hours.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `is_daytime` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `is_daytime` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.random_look_around_and_sit
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.random_look_around_and_sit' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.random_look_around_and_sit
@@ -13,10 +14,10 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|max_look_count| 2| Integer|  The max amount of unique looks a mob will have while looking around. |
-|max_look_time| 40| Integer|  The max amount of time (in ticks) a mob will stay looking at a direction while looking around. |
-|min_look_count| 1| Integer| The min amount of unique looks a mob will have while looking around. |
-|min_look_time| 20| Integer|  The min amount of time (in ticks) a mob will stay looking at a direction while looking around. |
+|max_look_count| 2| Integer|  The max amount of unique looks an entity will have while looking around. |
+|max_look_time| 40| Integer|  The max amount of time (in ticks) an entity will stay looking at a direction while looking around. |
+|min_look_count| 1| Integer| The min amount of unique looks an entity will have while looking around. |
+|min_look_time| 20| Integer|  The min amount of time (in ticks) an entity will stay looking at a direction while looking around. |
 |priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | probability| 0.02| Decimal| The probability of randomly looking around/sitting. |
 
