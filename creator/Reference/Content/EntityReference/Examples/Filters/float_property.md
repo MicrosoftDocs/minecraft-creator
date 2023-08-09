@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - float_property
 ms.prod: gaming
+description: "A reference document detailing the 'float_property' entity filter"
 ---
 
 # Entity Documentation - float_property

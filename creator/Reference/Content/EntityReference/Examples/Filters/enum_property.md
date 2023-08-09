@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - enum_property
 ms.prod: gaming
+description: "A reference document detailing the 'enum_property' entity filter"
 ---
 
 # Entity Documentation - enum_property
@@ -43,7 +44,6 @@ Returns true when the `enum` entity property matches the value provided.
 | player| The player involved with the interaction. |
 | self| The entity or object calling the test |
 | target| The caller's current target. |
-
 
 ## Examples
 

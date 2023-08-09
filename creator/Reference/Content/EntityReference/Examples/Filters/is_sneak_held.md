@@ -1,15 +1,16 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - is_sneak_held
 ms.prod: gaming
+description: "A reference document detailing the 'is_sneak_held' entity filter"
 ---
 
 # Entity Documentation - is_sneak_held
 
 Returns true if the subject entity has the sneak input held.
 
-### subject
+## subject
 
 | Options| Description |
 |:-----------|:-----------|

@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: mikeam
 title: Entity Documentation - on_ladder
 ms.prod: gaming
+description: "A reference document detailing the 'on_ladder' entity filter"
 ---
 
 # Entity Documentation - on_ladder
@@ -11,7 +12,7 @@ Returns true when the subject entity is on a ladder.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `on_ladder` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `on_ladder` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

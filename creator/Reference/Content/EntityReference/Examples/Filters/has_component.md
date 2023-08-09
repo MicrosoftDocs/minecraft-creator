@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - has_component
 ms.prod: gaming
+description: "A reference document detailing the 'has_component' entity filter"
 ---
 
 # Entity Documentation - has_component

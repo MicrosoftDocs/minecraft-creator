@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: mikeam
 title: Entity Documentation - on_ground
 ms.prod: gaming
+description: "A reference document detailing the 'on_ground' entity filter"
 ---
 
 # Entity Documentation - on_ground
@@ -11,7 +12,7 @@ Returns true when the subject entity is on the ground.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `on_ground` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 >`on_ground` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

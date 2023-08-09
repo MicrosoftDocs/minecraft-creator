@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-bbortree
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - has_silk_touch
 ms.prod: gaming
+description: "A reference document detailing the 'has_silk_touch' entity filter"
 ---
 
 # Entity Documentation - has_silk_touch
@@ -10,15 +11,16 @@ ms.prod: gaming
 Tests if the subject is holding an item with silk touch.
 
 ## Parameters
+
 | Name| Default| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
-| operator| equals| String| (Optional) The comparison to apply with 'value'. See Comparator Parameters below. | 
-| subject| self| String | (Optional) The subject of this filter test.| 
+| operator| equals| String| (Optional) The comparison to apply with 'value'. See Comparator Parameters below. |
+| subject| self| String | (Optional) The subject of this filter test.|
 | subject| self|  String |(Optional) The subject of this filter test. See Subject Parameters below.|
 | value| true | Boolean| (Optional) true or false. |
 
-
 ### Comparator Parameters
+
 Options| Description |
 |:-----------:|:-----------:|
 | !=| Test for inequality. |
@@ -33,6 +35,7 @@ Options| Description |
 | not| Test for inequality. |
 
 ### Subject Parameters
+
 | Options| Description |
 |:-----------:|:-----------:|
 | block| The block involved with the interaction. |
@@ -43,22 +46,25 @@ Options| Description |
 | self| The entity or object calling the test |
 | target| The caller's current target. |
 
-**Examples**
+### Examples
 
 **Full..**
-```
+
+```json
 { "test": "has_silk_touch", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 **Short (using Defaults)..**
-```
+
+```json
 { "test": "has_silk_touch" }
 ```
 
 ## Vanilla entities examples
 
 ### bee
-```
+
+```json
 {
     "test": "has_silk_touch",
     "subject": "other",
@@ -66,9 +72,6 @@ Options| Description |
 }
 ```
 
-
 ## Vanilla entities using Filter `has_silk_touch`
 
 - [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-
-

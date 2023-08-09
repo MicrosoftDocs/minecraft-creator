@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_humid
 ms.prod: gaming
+description: "A reference document detailing the 'is_humid' entity filter"
 ---
 
 # Entity Documentation - is_humid
@@ -11,7 +12,7 @@ Tests whether the subject is in an area with humidity.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `is_humid` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `is_humid` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.vex_random_move
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.vex_random_move' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.vex_random_move

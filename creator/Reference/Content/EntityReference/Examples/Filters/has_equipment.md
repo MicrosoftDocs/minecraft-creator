@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - has_equipment
 ms.prod: gaming
+description: "A reference document detailing the 'has_equipment' entity filter"
 ---
 
 # Entity Documentation - has_equipment

@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: mikeam
 title: Entity Documentation - is_underwater
 ms.prod: gaming
+description: "A reference document detailing the 'is_underwater' entity filter"
 ---
 
 # Entity Documentation - is_underwater
@@ -14,7 +15,7 @@ Returns true when the subject entity is under water.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `is_underwater` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `is_underwater` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

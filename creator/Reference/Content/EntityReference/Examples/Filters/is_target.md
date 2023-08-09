@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: mikeam
 title: Entity Documentation - is_target
 ms.prod: gaming
+description: "A reference document detailing the 'is_target' entity filter"
 ---
 
 # Entity Documentation - is_target
@@ -11,7 +12,7 @@ Returns true if the subject entity is the target of the calling entity.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `is_target` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `is_target` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

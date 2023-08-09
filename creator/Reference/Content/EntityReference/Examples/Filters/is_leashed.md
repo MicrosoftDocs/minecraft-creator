@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - is_leashed
 ms.prod: gaming
+description: "A reference document detailing the 'is_leashed' entity filter"
 ---
 
 # Entity Documentation - is_leashed
@@ -11,7 +12,7 @@ Returns true if the subject entity is leashed.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `is_leashed` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `is_leashed` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

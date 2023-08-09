@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - has_mob_effect
 ms.prod: gaming
+description: "A reference document detailing the 'has_mob_effect' entity filter"
 ---
 
 # Entity Documentation - has_mob_effect
@@ -11,7 +12,7 @@ Tests whether the Subject has the specified mob effect.
 
 ## Parameters
 
-> [!Important]
+> [!IMPORTANT]
 > `has_mob_effect` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `has_mob_effect` can use `subject`. [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

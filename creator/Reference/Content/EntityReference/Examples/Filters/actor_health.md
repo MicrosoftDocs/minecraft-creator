@@ -1,15 +1,16 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - actor_health
 ms.prod: gaming
+description: "A reference document detailing the 'actor_health' entity filter"
 ---
 
 # Entity Documentation - actor_health
 
 Tests the health of the subject.
 
-### subject
+## subject
 
 | Options| Description |
 |:-----------|:-----------|

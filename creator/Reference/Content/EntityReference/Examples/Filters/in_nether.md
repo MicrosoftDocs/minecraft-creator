@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - in_nether
 ms.prod: gaming
+description: "A reference document detailing the 'in_nether' entity filter"
 ---
 
 # Entity Documentation - in_nether
@@ -11,7 +12,7 @@ Returns true when the subject entity is in Nether.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `in_nether` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `in_nether` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

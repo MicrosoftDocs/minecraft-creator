@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: mikeam
 title: Entity Documentation - moon_intensity
 ms.prod: gaming
+description: "A reference document detailing the 'moon_intensity' entity filter"
 ---
 
 # Entity Documentation - moon_intensity
