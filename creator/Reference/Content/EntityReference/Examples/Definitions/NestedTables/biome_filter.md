@@ -132,7 +132,7 @@ Listed below are all of the available biomes within Minecraft: Bedrock Edition a
 | Ice Plains| frozen, ice, ice_plains, overworld |
 | Ice Plains Spikes| frozen, ice_plains, monster, mutated, overworld |
 | Jagged Peaks| mountains, monster, overworld, frozen, jagged_peaks |
-| Jungle| animal, monster, overworld, rare |
+| Jungle| animal, jungle, monster, overworld, rare |
 | Jungle Edge| animal, monster, jungle, edge, overworld |
 | Jungle Edge M| animal, monster, jungle, edge, mutated, overworld_generation |
 | Jungle Hills| animal, monster, jungle, hills, overworld |
