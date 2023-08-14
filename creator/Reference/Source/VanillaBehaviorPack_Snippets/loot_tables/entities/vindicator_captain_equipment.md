@@ -1,8 +1,9 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: vidicator_captain_equipment
+title: vindicator_captain_equipment
 ms.prod: gaming
+description: "A code snippet for the vindicator captain equipment entity loot table"
 ---
 
 # vindicator_captain_equipment
