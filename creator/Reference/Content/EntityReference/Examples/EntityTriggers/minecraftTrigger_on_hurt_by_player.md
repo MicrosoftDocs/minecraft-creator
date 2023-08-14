@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:on_hurt_by_player
 ms.prod: gaming
+description: "A reference document detailing the 'on_hurt_by_player' entity trigger"
 ---
 
 # Entity Documentation - minecraft:on_hurt_by_player

@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.ItemUseOnAfterEvent class.
 ---
 # ItemUseOnAfterEvent Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ## Classes that extend ItemUseOnAfterEvent
 - [*ItemUseOnBeforeEvent*](ItemUseOnBeforeEvent.md)
 
@@ -47,8 +44,8 @@ The impacted item stack that is being used on a block.
 Type: [*ItemStack*](ItemStack.md)
 
 ### **source**
-`read-only source: Entity;`
+`read-only source: Player;`
 
 Returns the source entity that triggered this item event.
 
-Type: [*Entity*](Entity.md)
+Type: [*Player*](Player.md)

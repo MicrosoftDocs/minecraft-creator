@@ -3,7 +3,7 @@ author: mammerla
 ms.author: v-jillheaden
 title: Data Driven Overworld Height and Void Generation
 ms.prod: gaming
-description: A tutorial that demonstrates how to use a behavior pack to constrain the height of a world and generate void maps.
+description: "A guide detailing how to use a behavior pack to constrain the height of a world and generate void maps"
 ---
 
 # Data-Driven Overworld Height and Void Generation

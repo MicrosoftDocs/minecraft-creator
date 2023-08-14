@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: mikeam
 title: Entity Documentation - weather_at_position
 ms.prod: gaming
+description: "A reference document detailing the 'weather_at_position' entity filter"
 ---
 
 # Entity Documentation - weather_at_position
@@ -16,6 +17,7 @@ Tests the current weather, at the actor's position, against a provided weather v
 |value |*not set* |String |(Required) The weather type to test against. |
 
 ## values
+
 clear - no precipitation
 rain - precipitation, or snow in cold biomes
 thunder - lightning and sky noises, or blizzard in cold biomes

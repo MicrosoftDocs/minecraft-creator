@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Features Documentation - minecraft:partially_exposed_blob_feature
 ms.prod: gaming
+description: "A reference document detailing the 'partially_exposed_blob_feature' feature"
 ---
 
 # Features Documentation - minecraft:partially_exposed_blob_feature

@@ -1,15 +1,16 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - is_missing_health
 ms.prod: gaming
+description: "A reference document detailing the 'is_missing_health' entity filter"
 ---
 
 # Entity Documentation - is_missing_health
 
 Tests if the subject is not at full health.
 
-### subject
+## subject
 
 | Options| Description |
 |:-----------|:-----------|

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Block Documentation - add_mob_effect
 ms.prod: gaming
+description: "A reference document detailing the 'add_mob_effect' block event response"
 ---
 
 # Block Documentation - add_mob_effect

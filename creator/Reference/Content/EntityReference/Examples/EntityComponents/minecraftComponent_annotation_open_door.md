@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:annotation.open_door
 ms.prod: gaming
+description: "A reference document detailing the 'annotation.open_door' entity component"
 ---
 
 # Entity Documentation - minecraft:annotation.open_door

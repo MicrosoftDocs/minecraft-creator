@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Bouncing Bubbles
 ms.prod: gaming
+description: "A reference document detailing the 'bouncing bubbles' particle effect"
 ---
 
 # Bouncing Bubbles

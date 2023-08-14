@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_riding
 ms.prod: gaming
+description: "A reference document detailing the 'is_riding' entity filter"
 ---
 
 # Entity Documentation - is_riding
@@ -11,7 +12,7 @@ Returns true if the subject entity is riding on another entity.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `is_riding` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `is_riding` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

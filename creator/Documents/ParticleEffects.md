@@ -3,6 +3,7 @@ author: mammerla
 ms.author: v-jillheaden
 title: Particle Effects
 ms.prod: gaming
+description: "Learn about creating custom particle effects in your Minecraft world"
 ---
 
 # Particle Effects

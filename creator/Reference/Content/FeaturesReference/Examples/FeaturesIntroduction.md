@@ -3,6 +3,7 @@ author: iconicnurdle
 ms.author: mikeam
 title: Features Documentation - Introduction to Features
 ms.prod: gaming
+description: "A reference document introducing the concept of features"
 ---
 
 # Features Documentation - Introduction to Features

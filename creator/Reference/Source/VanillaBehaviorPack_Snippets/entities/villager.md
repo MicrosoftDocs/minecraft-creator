@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: villager
 ms.prod: gaming
+description: "A code snippet for the villager entity"
 ---
 
 # villager

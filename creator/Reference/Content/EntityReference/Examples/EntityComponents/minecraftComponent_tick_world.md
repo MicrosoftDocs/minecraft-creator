@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:tick_world
 ms.prod: gaming
+description: "A reference document detailing the 'tick_world' entity component"
 ---
 
 # Entity Documentation - minecraft:tick_world

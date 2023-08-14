@@ -3,6 +3,7 @@ author: neonerz
 ms.author: mikeam
 title: Commonly Used Tools
 ms.prod: gaming
+description: "A guide detailing popular tools used to modify Minecraft content"
 ---
 
 # Commonly Used Tools
@@ -11,18 +12,6 @@ There are a wide variety of tools that have been created for the purpose of incr
 
 >[!IMPORTANT]
 >These tools are provided by external, third-party contributors and are not Mojang/Microsoft offerings. Users should use at their own discretion.
-
-In this tutorial you will learn the following:
-
-> [!div class="checklist"]
->
-> - A variety of tools useful for content creation, including transferring content between editions.
-
-### Requirements
-
-It's recommended that the following be completed before beginning this tutorial before using tools that convert between Minecraft editions.
-
-- [Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition](DifferencesBetweenBedrockAndJava.md)
 
 ## Creating maps
 

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_in_village
 ms.prod: gaming
+description: "A reference document detailing the 'is_in_village' entity filter"
 ---
 
 # Entity Documentation - is_in_village
@@ -11,7 +12,7 @@ Tests whether the Subject is inside the bounds of a village.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `is_in_village` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `is_in_village` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

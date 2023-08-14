@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Particle Documentation - Emitter Rate Manual component
 ms.prod: gaming
+description: "A reference document detailing the 'emitter rate manual' particle component"
 ---
 
 # Particle Documentation - Emitter Rate Manual component

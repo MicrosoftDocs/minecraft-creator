@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Block Documentation - set_block
 ms.prod: gaming
+description: "A reference document detailing the 'set_block' block event response"
 ---
 
 # Block Documentation - set_block

@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.sonic_boom
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.sonic_boom' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.sonic_boom

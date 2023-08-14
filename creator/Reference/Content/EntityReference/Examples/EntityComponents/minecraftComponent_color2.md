@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - minecraft:color2
 ms.prod: gaming
+description: "A reference document detailing the 'color2' entity component"
 ---
 
 # Entity Documentation -  minecraft:color2
@@ -10,7 +11,7 @@ ms.prod: gaming
 `minecraft:color2` Defines the entity's second texture color.
 
 > [!NOTE]
-> This attribute only works on vanilla entities that have a second predefined color values (`tropical fish`)
+> This attribute only works on vanilla entities that have a second predefined color value (`tropical fish`)
 
 ## Parameters
 
@@ -31,7 +32,7 @@ ms.prod: gaming
 ### tropical fish
 
 >[!Note]
->This snippet is showing how `minecraft:color` and `minecraft:color2` working together to create a special variant.
+>This snippet shows `minecraft:color` and `minecraft:color2` working together to create a special variant.
 
 ```json
 "minecraft:color": {

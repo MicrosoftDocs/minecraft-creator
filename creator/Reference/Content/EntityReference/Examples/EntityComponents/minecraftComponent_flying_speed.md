@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:flying_speed
 ms.prod: gaming
+description: "A reference document detailing the 'flying_speed' entity component"
 ---
 
 # Entity Documentation -  minecraft:flying_speed
 
-`minecraft:flying_speed` sets the speed, in Blocks, how fast this entity flies at.
+`minecraft:flying_speed` sets the speed, in Blocks, at which the entity flies.
 
 ## Parameters
 

@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: JimSeaman42
+ms.author: mikeam
 title: Block Documentation - Block Trigger List
 ms.prod: gaming
+description: "A reference document listing all currently available block triggers"
 ---
 
 # Block Documentation - Block Trigger
 
-Below is a list of all the available Block Trigger within Minecraft: Bedrock Edition for use with Block JSON files.
+Below is a list of all available Block Triggers within Minecraft: Bedrock Edition for use with Block JSON files.
 
 >[!IMPORTANT]
 > Block Triggers require the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
@@ -28,4 +29,4 @@ Below is a list of all the available Block Trigger within Minecraft: Bedrock Edi
 |[minecraft:on_step_off](minecraftBlock_on_step_off.md)|*not set*  | JSON Object| When an entity steps off the block.|
 |[minecraft:on_step_on](minecraftBlock_on_step_on.md)|*not set*  |  JSON Object| When an entity steps on the block.|
 |[minecraft:queued_ticking](minecraftBlock_queued_ticking.md)|*not set*  | JSON Object| Triggers the specified event, either once, or at a regular interval equal to a number of ticks randomly chosen from the interval_range provided.|
-|[minecraft:random_ticking](minecraftBlock_random_ticking.md)|*not set*  | JSON Object| Triggers the specified event randomly based on the random tick speed gamerule. The random tick speed determines how often blocks are updated.|
+|[minecraft:random_ticking](minecraftBlock_random_ticking.md)|*not set*  | JSON Object| Triggers the specified event randomly based on the random tick speed game rule. The random tick speed determines how often blocks are updated.|

@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Particle Documentation - Emitter Local Space component
 ms.prod: gaming
+description: "A reference document detailing the 'emitter local space' particle component"
 ---
 
 # Particle Documentation - Emitter Local Space component

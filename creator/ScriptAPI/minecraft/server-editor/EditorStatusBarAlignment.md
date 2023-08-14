@@ -8,8 +8,6 @@ description: Contents of the .EditorStatusBarAlignment enumeration.
 ---
 # EditorStatusBarAlignment Enumeration
 
-@beta
-
 ## Constants
 ### **Right**
 `Right = 0`

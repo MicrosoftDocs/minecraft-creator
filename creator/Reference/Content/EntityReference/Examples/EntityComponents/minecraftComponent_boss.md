@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:boss
 ms.prod: gaming
+description: "A reference document detailing the 'boss' entity component"
 ---
 
 # Entity Documentation - minecraft:boss

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - has_ability
 ms.prod: gaming
+description: "A reference document detailing the 'has_ability' entity filter"
 ---
 
 # Entity Documentation - has_ability

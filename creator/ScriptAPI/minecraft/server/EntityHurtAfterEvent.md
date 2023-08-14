@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.EntityHurtAfterEvent class.
 ---
 # EntityHurtAfterEvent Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains information related to an entity getting hurt.
 
 ## Properties

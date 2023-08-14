@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:balloonable
 ms.prod: gaming
+description: "A reference document detailing the 'balloonable' entity component"
 ---
 
 # Entity Documentation - minecraft:balloonable
@@ -18,7 +19,6 @@ ms.prod: gaming
 |on_balloon| *not set* | String | Event to call when the entity is ballooned. |
 |on_unballoon| *not set* | String | Event to call when the entity is unballooned. |
 |mass| 1.0 | Decimal | Mass that the entity has when computing balloon pull forces.|
-
 
 ## Example
 
@@ -58,5 +58,3 @@ ms.prod: gaming
 - [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)
 - [snow_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
 - [zombie_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_horse.md)
-
-

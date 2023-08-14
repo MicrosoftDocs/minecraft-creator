@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:movement.fly
 ms.prod: gaming
+description: "A reference document detailing the 'movement.fly' entity component"
 ---
 
 # Entity Documentation - minecraft:movement.fly
 
-`minecraft:movement.fly` compels the mob to fly.
+`minecraft:movement.fly` compels the entity to fly.
 
 ## Parameters
 

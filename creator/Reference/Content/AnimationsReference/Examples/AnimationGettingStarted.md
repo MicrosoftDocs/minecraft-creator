@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Animation Documentation - Getting Started
 ms.prod: gaming
+description: "A reference document detailing how to begin in the animation process with Minecraft: Bedrock Edition"
 ---
 
 # Animation Documentation - Getting Started

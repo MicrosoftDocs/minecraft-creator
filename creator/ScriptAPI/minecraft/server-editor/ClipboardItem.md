@@ -21,6 +21,7 @@ Type: *boolean*
 
 ## Methods
 - [clear](#clear)
+- [getPredictedWriteAsCompoundBlockVolume](#getpredictedwriteascompoundblockvolume)
 - [getPredictedWriteAsSelection](#getpredictedwriteasselection)
 - [getSize](#getsize)
 - [readFromSelection](#readfromselection)
@@ -33,6 +34,23 @@ clear(): void
 `
 
 Clear the contents of the item
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getPredictedWriteAsCompoundBlockVolume**
+`
+getPredictedWriteAsCompoundBlockVolume(location: minecraftserver.Vector3, options?: ClipboardWriteOptions): minecraftserver.CompoundBlockVolume
+`
+
+#### **Parameters**
+- **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **options**?: [*ClipboardWriteOptions*](ClipboardWriteOptions.md) = `null`
+
+#### **Returns** [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

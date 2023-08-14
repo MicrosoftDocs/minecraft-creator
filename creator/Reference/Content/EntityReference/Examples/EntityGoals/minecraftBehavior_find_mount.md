@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.find_mount
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.find_mount' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.find_mount

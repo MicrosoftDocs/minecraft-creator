@@ -8,10 +8,39 @@ description: Contents of the @minecraft/server.ItemUseBeforeEventSignal class.
 ---
 # ItemUseBeforeEventSignal Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-## Extends
-- [*IItemUseBeforeEventSignal*](IItemUseBeforeEventSignal.md)
-
 Manages callbacks that fire before an item is used.
+
+## Methods
+- [subscribe](#subscribe)
+- [unsubscribe](#unsubscribe)
+
+### **subscribe**
+`
+subscribe(callback: (arg: ItemUseBeforeEvent) => void): (arg: ItemUseBeforeEvent) => void
+`
+
+Adds a callback that will be called before an item is used.
+
+#### **Parameters**
+- **callback**: (arg: [*ItemUseBeforeEvent*](ItemUseBeforeEvent.md)) => *void*
+
+#### **Returns** (arg: [*ItemUseBeforeEvent*](ItemUseBeforeEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+### **unsubscribe**
+`
+unsubscribe(callback: (arg: ItemUseBeforeEvent) => void): void
+`
+
+Removes a callback from being called before an item is used.
+
+#### **Parameters**
+- **callback**: (arg: [*ItemUseBeforeEvent*](ItemUseBeforeEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.

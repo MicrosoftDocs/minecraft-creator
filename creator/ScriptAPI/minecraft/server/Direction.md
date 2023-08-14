@@ -8,9 +8,6 @@ description: Contents of the .Direction enumeration.
 ---
 # Direction Enumeration
 
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 A general purpose relative direction enumeration.
 
 ## Constants

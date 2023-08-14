@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.ScoreboardObjective class.
 ---
 # ScoreboardObjective Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains objectives and participants for the scoreboard.
 
 ## Properties
@@ -30,6 +27,7 @@ Identifier of the scoreboard objective.
 Type: *string*
 
 ## Methods
+- [addScore](#addscore)
 - [getParticipants](#getparticipants)
 - [getScore](#getscore)
 - [getScores](#getscores)
@@ -37,6 +35,27 @@ Type: *string*
 - [isValid](#isvalid)
 - [removeParticipant](#removeparticipant)
 - [setScore](#setscore)
+
+### **addScore**
+`
+addScore(participant: Entity | ScoreboardIdentity | string, scoreToAdd: number): number
+`
+
+Adds a score to the given participant and objective.
+
+#### **Parameters**
+- **participant**: [*Entity*](Entity.md) | [*ScoreboardIdentity*](ScoreboardIdentity.md) | *string*
+  
+  Participant to apply the scoreboard value addition to.
+- **scoreToAdd**: *number*
+
+#### **Returns** *number*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **getParticipants**
 `

@@ -11,7 +11,40 @@ description: Contents of the @minecraft/server.DataDrivenEntityTriggerAfterEvent
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-## Extends
-- [*IDataDrivenEntityTriggerAfterEventSignal*](IDataDrivenEntityTriggerAfterEventSignal.md)
-
 Contains event registration related to firing of a data driven entity event - for example, the minecraft:ageable_grow_up event on a chicken.
+
+## Methods
+- [subscribe](#subscribe)
+- [unsubscribe](#unsubscribe)
+
+### **subscribe**
+`
+subscribe(callback: (arg: DataDrivenEntityTriggerAfterEvent) => void, options?: EntityDataDrivenTriggerEventOptions): (arg: DataDrivenEntityTriggerAfterEvent) => void
+`
+
+Adds a callback that will be called after a data driven entity event is triggered.
+
+#### **Parameters**
+- **callback**: (arg: [*DataDrivenEntityTriggerAfterEvent*](DataDrivenEntityTriggerAfterEvent.md)) => *void*
+- **options**?: [*EntityDataDrivenTriggerEventOptions*](EntityDataDrivenTriggerEventOptions.md) = `null`
+
+#### **Returns** (arg: [*DataDrivenEntityTriggerAfterEvent*](DataDrivenEntityTriggerAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+### **unsubscribe**
+`
+unsubscribe(callback: (arg: DataDrivenEntityTriggerAfterEvent) => void): void
+`
+
+Removes a callback that will be called after a data driven entity event is triggered.
+
+#### **Parameters**
+- **callback**: (arg: [*DataDrivenEntityTriggerAfterEvent*](DataDrivenEntityTriggerAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.

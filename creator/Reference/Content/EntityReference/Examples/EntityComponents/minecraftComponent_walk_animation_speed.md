@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - minecraft:walk_animation_speed
 ms.prod: gaming
+description: "A reference document detailing the 'walk_animation_speed' entity component"
 ---
 
 # Entity Documentation -  minecraft:walk_animation_speed

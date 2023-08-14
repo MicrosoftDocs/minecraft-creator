@@ -1,9 +1,9 @@
 ---
-author: JDHeaden
-ms.author: v-jillheaden
+author: iconicnurdle
+ms.author: mikeam
 title: Minecraft Bedrock Editor Installation
 ms.prod: gaming
-description: How to get Minecraft Bedrock Editor
+description: "A guide detailing the process of installing and testing Minecraft Bedrock Editor"
 ---
 
 # How to get Minecraft Editor
@@ -99,7 +99,7 @@ Three things to check:
 
 - Did you install Bedrock Preview? If not, you need to do that.  
 
-- Do you have both Bedrock Preview and Bedrock (Retail) installed? You may have selected a checkbox that says “Always open” for Bedrock (Retail). To fix this, perform the following steps:
+- Do you have both Bedrock Preview and Bedrock (Retail) installed? You may have selected a checkbox that says “Always open" for Bedrock (Retail). To fix this, perform the following steps:
 
     1. Press **Windows + I** to open the Settings app.
 

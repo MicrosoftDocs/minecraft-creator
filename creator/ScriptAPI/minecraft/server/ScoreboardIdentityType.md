@@ -8,9 +8,6 @@ description: Contents of the .ScoreboardIdentityType enumeration.
 ---
 # ScoreboardIdentityType Enumeration
 
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains objectives and participants for the scoreboard.
 
 ## Constants

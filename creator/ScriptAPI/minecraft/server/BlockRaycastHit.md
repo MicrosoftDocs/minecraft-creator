@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.BlockRaycastHit class.
 ---
 # BlockRaycastHit Interface
 
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains information for block raycast hit results.
 
 ## Properties

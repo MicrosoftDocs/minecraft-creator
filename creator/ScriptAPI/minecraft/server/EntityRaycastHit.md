@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.EntityRaycastHit class.
 ---
 # EntityRaycastHit Interface
 
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains information for entity raycast hit results.
 
 ## Properties

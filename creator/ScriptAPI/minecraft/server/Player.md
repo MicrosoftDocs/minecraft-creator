@@ -18,6 +18,14 @@ Represents a player within the world.
 
 ## Properties
 
+### **camera**
+`read-only camera: Camera;`
+
+Type: [*Camera*](Camera.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **isFlying**
 `read-only isFlying: boolean;`
 
@@ -130,7 +138,7 @@ Adds/removes experience to/from the Player and returns the current experience of
 #### **Parameters**
 - **amount**: *number*
   
-  Amount of experience to add. Note that this can be negative.
+  Amount of experience to add. Note that this can be negative. Min/max bounds at -2^24 ~ 2^24
 
 #### **Returns** *number* - Returns the current experience of the Player.
 
@@ -153,7 +161,7 @@ Adds/removes level to/from the Player and returns the current level of the Playe
 #### **Parameters**
 - **amount**: *number*
   
-  Amount to add to the player.
+  Amount to add to the player. Min/max bounds at -2^24 ~ 2^24
 
 #### **Returns** *number* - Returns the current level of the Player.
 
@@ -194,9 +202,6 @@ getSpawnPoint(): DimensionLocation | undefined
 Gets the current spawn point of the player.
 
 #### **Returns** [*DimensionLocation*](DimensionLocation.md) | *undefined*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.
@@ -397,9 +402,6 @@ Sets the current starting spawn point for this particular player.
 
 #### **Parameters**
 - **spawnPoint**?: [*DimensionLocation*](DimensionLocation.md) = `null`
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.random_search_and_dig
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.random_search_and_dig' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.random_search_and_dig

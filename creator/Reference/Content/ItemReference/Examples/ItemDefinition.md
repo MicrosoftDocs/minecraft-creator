@@ -3,18 +3,18 @@ author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - Item Definition Properties
 ms.prod: gaming
+description: "A reference document detailing item definition properties"
 ---
 
 # Item Definition Properties
 
-The properties are part of the Item Definition. This helps the system determine how to parse and initialize this item.
-
+Properties are part of the Item Definition, which helps the system determine how to parse and initialize this item.
 
 ## Item Description Properties
 
 ### format_version
 
-Specifies the version of the game this entity was made in. If the version is lower than the current version, any changes made to the entity in the vanilla version will be applied to it.
+Specifies the version of the game this entity was made in. If the specified version is lower than the current version, any changes made to the entity in the vanilla version will be applied to it.
 
 ### minecraft:item
 

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Recipe Documentation - Potion Brewing Mix
 ms.prod: gaming
+description: "A reference document detailing potion brewing mix recipes"
 ---
 
 # Recipe Documentation - Potion Brewing Mix

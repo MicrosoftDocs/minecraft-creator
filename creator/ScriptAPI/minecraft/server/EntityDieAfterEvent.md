@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.EntityDieAfterEvent class.
 ---
 # EntityDieAfterEvent Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains data related to the death of an entity in the game.
 
 ## Properties

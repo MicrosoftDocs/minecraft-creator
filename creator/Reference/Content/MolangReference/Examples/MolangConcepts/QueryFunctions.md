@@ -3,6 +3,7 @@ author: iconicNurdle
 ms.author: mikeam
 title: Molang Documentation - Query Functions
 ms.prod: gaming
+description: "A reference document detailing the query functions available via Molang"
 ---
 
 # Molang Documentation - Query Functions
@@ -12,7 +13,7 @@ Query Functions are operators that access a wide variety of information. They ca
 > [!IMPORTANT]
 > The list below includes only entity queries that are live. See [Experimental Entity Queries](ExperimentalQueryFunctions.md) for experimental Molang query functions.
 
-### Example
+## Example
 
 ```JSON
 "position": [ 0.0, "query.is_baby ? -8.0 : 0.0", "query.is_baby ? 4.0 : 0.0" ]

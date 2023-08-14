@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_persistent
 ms.prod: gaming
+description: "A reference document detailing the 'is_persistent' entity filter"
 ---
 
 # Entity Documentation - is_persistent
@@ -11,7 +12,7 @@ Tests if the subject's persistence matches the bool value passed in.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `is_persistent` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `is_persistent` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

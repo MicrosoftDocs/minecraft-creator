@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: mikeam
 title: Block Documentation - set_block_property
 ms.prod: gaming
+description: "A reference document detailing the 'set_block_property' block event response"
 ---
 
 # Block Documentation - set_block_property

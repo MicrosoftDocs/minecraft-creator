@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Block Documentation - Block Traits
 ms.prod: gaming
+description: "A reference document detailing block traits"
 ---
 
 # Block Documentation - Block Traits
@@ -32,7 +33,7 @@ There are two states that can be included with this trait:
 
 This trait can also be configured with a 'y_rotation_offset' where an axis-aligned angle may be specified via degree (e.g. 90.0). This causes the state within the trait to store a rotated value. In other words, with a rotation offset of 90.0, a block placed when the player is facing south would have a state of 'east'. This rotation offset only applies to the horizontal state values (north, south, east, west).
 
-## Example
+## placement_direction Example
 
 ```json
 "traits": {
@@ -51,7 +52,7 @@ There are two states that can be included with this trait:
 - `minecraft:block_face` is a 6-value state representing the face on which the block was placed. Values for this state are 'up', 'down', 'north', 'south', 'east', and 'west'. For example, if a block using the `minecraft:block_face` is placed on the south face of a neighboring block, the state value will be 'south'.
 - `minecraft:vertical_half` is a 2-value state specifying whether a block was placed in the top or bottom half of a block. The values for this state are 'bottom' and 'top'. For blocks using `minecraft:vertical_half`, if the block is placed on the 'down' face of a block or above the midline of a horizontal face, the state value will be 'top'.
 
-## Example
+## placement_position Example
 
 ```json
 "traits": {

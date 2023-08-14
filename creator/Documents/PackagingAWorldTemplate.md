@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Packaging a World Template
 ms.prod: gaming
 description: "An article detailing the purpose and base functionality of a world template"

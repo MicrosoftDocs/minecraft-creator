@@ -8,9 +8,6 @@ description: Contents of the .ObjectiveSortOrder enumeration.
 ---
 # ObjectiveSortOrder Enumeration
 
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Used for specifying a sort order for how to display an objective and its list of participants.
 
 ## Constants

@@ -8,8 +8,5 @@ description: Contents of the .CommandError class.
 ---
 # CommandError Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ## Extends
 - *Error*

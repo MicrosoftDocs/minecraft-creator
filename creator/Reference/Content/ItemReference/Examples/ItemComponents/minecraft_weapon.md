@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Item Documentation - minecraft:weapon
 ms.prod: gaming
+description: "A reference document detailing the 'weapon' item component"
 ---
 
 # Item Documentation - minecraft:weapon

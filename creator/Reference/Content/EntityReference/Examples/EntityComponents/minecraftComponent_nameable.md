@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:nameable
 ms.prod: gaming
+description: "A reference document detailing the 'nameable' entity component"
 ---
 
 # Entity Documentation - minecraft:nameable

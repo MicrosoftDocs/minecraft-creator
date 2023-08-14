@@ -3,7 +3,7 @@ author: mammerla
 ms.author: v-jillheaden
 title: Working with Scoreboard Operations
 ms.prod: gaming
-description: A tutorial about scoreboard player operations
+description: "A tutorial about scoreboard player operations"
 ---
 
 # Working with Scoreboard Operations

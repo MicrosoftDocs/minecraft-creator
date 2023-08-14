@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:item_controllable
 ms.prod: gaming
+description: "A reference document detailing the 'item_controllable' entity component"
 ---
 
 # Entity Documentation -  minecraft:item_controllable

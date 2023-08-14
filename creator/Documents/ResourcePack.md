@@ -3,7 +3,7 @@ author: mammerla
 ms.author: v-bbortree
 title: Introduction to Resource Packs
 ms.prod: gaming
-description: An introduction to Resource Packs and a tutorial on adding a custom texture to an in-game block.
+description: "An introduction to Resource Packs and a tutorial on adding a custom texture to an in-game block"
 ---
 
 # Introduction to Resource Packs

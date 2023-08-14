@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: axolotl spawn_rule
 ms.prod: gaming
+description: "A code snippet of the axolotl spawn rules"
 ---
 
 # axolotl spawn_rule

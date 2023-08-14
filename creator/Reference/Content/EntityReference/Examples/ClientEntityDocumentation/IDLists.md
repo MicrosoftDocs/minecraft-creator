@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: mikeam
 title: Entity Documentation - ID Lists
 ms.prod: gaming
+description: "A reference document listing all entity ID values"
 ---
 
 # Entity Documentation - ID Lists

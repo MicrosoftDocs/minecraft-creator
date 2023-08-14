@@ -8,10 +8,39 @@ description: Contents of the @minecraft/server.TargetBlockHitAfterEventSignal cl
 ---
 # TargetBlockHitAfterEventSignal Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-## Extends
-- [*ITargetBlockHitAfterEventSignal*](ITargetBlockHitAfterEventSignal.md)
-
 Manages callbacks that are connected to when a target block is hit.
+
+## Methods
+- [subscribe](#subscribe)
+- [unsubscribe](#unsubscribe)
+
+### **subscribe**
+`
+subscribe(callback: (arg: TargetBlockHitAfterEvent) => void): (arg: TargetBlockHitAfterEvent) => void
+`
+
+Adds a callback that will be called when a target block is hit.
+
+#### **Parameters**
+- **callback**: (arg: [*TargetBlockHitAfterEvent*](TargetBlockHitAfterEvent.md)) => *void*
+
+#### **Returns** (arg: [*TargetBlockHitAfterEvent*](TargetBlockHitAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+### **unsubscribe**
+`
+unsubscribe(callback: (arg: TargetBlockHitAfterEvent) => void): void
+`
+
+Removes a callback from being called when a target block is hit.
+
+#### **Parameters**
+- **callback**: (arg: [*TargetBlockHitAfterEvent*](TargetBlockHitAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.

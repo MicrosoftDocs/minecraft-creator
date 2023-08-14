@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Block Documentation - play_sound
 ms.prod: gaming
+description: "A reference document detailing the 'play_sound' block event response"
 ---
 
 # Block Documentation - play_sound

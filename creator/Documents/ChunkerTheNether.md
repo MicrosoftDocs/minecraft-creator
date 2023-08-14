@@ -3,12 +3,12 @@ author: neonerz
 ms.author: mikeam
 title: Chunker - How to Clear The Nether
 ms.prod: gaming
-description: "When converting content with Chunker, some extra steps are needed for bringing over The Nether"
+description: "Using Chunker to reset the Nether in a survival world"
 ---
 
 # Chunker - How to Clear The Nether
 
-When Minecraft world generation is updated, only freshly generated chunks will use the updated generator. This tutorial explains how you can use Chunker to reset The Nether in your survival world.
+When Minecraft world generation is updated, only freshly generated chunks will use the updated generator. This guide explains how you can use Chunker to reset The Nether in your survival world.
 
 The Nether Update saw The Nether transformed into a world with varying biomes, interesting new blocks, and marvelous new creatures. In this tutorial, we'll explain how you can bring the new Nether features into your existing survival world.
 

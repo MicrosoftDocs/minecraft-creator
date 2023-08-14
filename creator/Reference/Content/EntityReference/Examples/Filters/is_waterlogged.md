@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - is_waterlogged
 ms.prod: gaming
+description: "A reference document detailing the 'is_waterlogged' entity filter"
 ---
 
 # Entity Documentation - is_waterlogged
@@ -44,14 +45,16 @@ Tests if the subject block is submerged in water.
 | equals| Test for equality. |
 | not| Test for inequality. |
 
-**Examples**
+### Examples
 
 **Full..**
-```
+
+```json
 { "test": "is_waterlogged", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
 **Short (using Defaults)..**
-```
+
+```json
 { "test": "is_waterlogged", "value": "true" }
 ```

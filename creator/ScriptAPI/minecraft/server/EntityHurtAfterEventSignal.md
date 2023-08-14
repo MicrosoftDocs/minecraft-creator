@@ -8,10 +8,40 @@ description: Contents of the @minecraft/server.EntityHurtAfterEventSignal class.
 ---
 # EntityHurtAfterEventSignal Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-## Extends
-- [*IEntityHurtAfterEventSignal*](IEntityHurtAfterEventSignal.md)
-
 Manages callbacks that are connected to when an entity is hurt.
+
+## Methods
+- [subscribe](#subscribe)
+- [unsubscribe](#unsubscribe)
+
+### **subscribe**
+`
+subscribe(callback: (arg: EntityHurtAfterEvent) => void, options?: EntityEventOptions): (arg: EntityHurtAfterEvent) => void
+`
+
+Adds a callback that will be called when an entity is hurt.
+
+#### **Parameters**
+- **callback**: (arg: [*EntityHurtAfterEvent*](EntityHurtAfterEvent.md)) => *void*
+- **options**?: [*EntityEventOptions*](EntityEventOptions.md) = `null`
+
+#### **Returns** (arg: [*EntityHurtAfterEvent*](EntityHurtAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+### **unsubscribe**
+`
+unsubscribe(callback: (arg: EntityHurtAfterEvent) => void): void
+`
+
+Removes a callback from being called when an entity is hurt.
+
+#### **Parameters**
+- **callback**: (arg: [*EntityHurtAfterEvent*](EntityHurtAfterEvent.md)) => *void*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.

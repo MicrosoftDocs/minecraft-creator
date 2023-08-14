@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_avoiding_mobs
 ms.prod: gaming
+description: "A reference document detailing the 'is_avoiding_mobs' entity filter"
 ---
 
 # Entity Documentation - is_avoiding_mobs
@@ -11,7 +12,7 @@ Returns true if the subject entity is fleeing from other mobs.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `is_avoiding_mobs` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `is_avoiding_mobs` can also use `subject`, `operator` and `value` parameters.

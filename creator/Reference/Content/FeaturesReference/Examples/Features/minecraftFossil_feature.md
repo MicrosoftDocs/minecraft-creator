@@ -3,6 +3,7 @@ author: iconicnurdle
 ms.author: mikeam
 title: Features Documentation - minecraft:fossil_feature
 ms.prod: gaming
+description: "A reference document detailing the 'fossil_feature' feature"
 ---
 
 # Features Documentation - minecraft:fossil_feature
