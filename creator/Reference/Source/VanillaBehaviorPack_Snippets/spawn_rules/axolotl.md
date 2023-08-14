@@ -3,7 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: axolotl spawn_rule
 ms.prod: gaming
-description: Learn Minecraft Creator Axolotl Spawn Rules with our comprehensive guide on population control, conditions, and biome filters. Dive in now!
+description: "A code snippet of the axolotl spawn rules"
 ---
 
 # axolotl spawn_rule
