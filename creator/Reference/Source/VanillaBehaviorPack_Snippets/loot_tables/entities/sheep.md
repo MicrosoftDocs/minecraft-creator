@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: sheep
 ms.prod: gaming
+description: "A code snippet for the sheep entity loot table"
 ---
 
 # sheep
