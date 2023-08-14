@@ -1,5 +1,5 @@
 ---
-author: iconicNurdle
+author: iconicnurdle
 ms.author: mikeam
 title: Features Documentation - minecraft:fossil_feature
 ms.prod: gaming
