@@ -123,7 +123,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntityDefinitionFeedItem](EntityDefinitionFeedItem.md)
 - [EntityDieAfterEvent](EntityDieAfterEvent.md)
 - [EntityDieAfterEventSignal](EntityDieAfterEventSignal.md)
-- [EntityEquipmentInventoryComponent](EntityEquipmentInventoryComponent.md)
+- [EntityEquippableComponent](EntityEquippableComponent.md)
 - [EntityFireImmuneComponent](EntityFireImmuneComponent.md)
 - [EntityFloatsInLiquidComponent](EntityFloatsInLiquidComponent.md)
 - [EntityFlyingSpeedComponent](EntityFlyingSpeedComponent.md)
@@ -178,8 +178,10 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntityNavigationWalkComponent](EntityNavigationWalkComponent.md)
 - [EntityOnFireComponent](EntityOnFireComponent.md)
 - [EntityPushThroughComponent](EntityPushThroughComponent.md)
-- [EntityRemovedAfterEvent](EntityRemovedAfterEvent.md)
-- [EntityRemovedAfterEventSignal](EntityRemovedAfterEventSignal.md)
+- [EntityRemoveAfterEvent](EntityRemoveAfterEvent.md)
+- [EntityRemoveAfterEventSignal](EntityRemoveAfterEventSignal.md)
+- [EntityRemoveBeforeEvent](EntityRemoveBeforeEvent.md)
+- [EntityRemoveBeforeEventSignal](EntityRemoveBeforeEventSignal.md)
 - [EntityRideableComponent](EntityRideableComponent.md)
 - [EntityRidingComponent](EntityRidingComponent.md)
 - [EntityScaleComponent](EntityScaleComponent.md)
@@ -456,7 +458,6 @@ Type: [*World*](World.md)
 - Added function *[createExplosion](Dimension.md#createexplosion)*
 - Added function *[fillBlocks](Dimension.md#fillblocks)*
 - Added function *[setWeather](Dimension.md#setweather)*
-- Added function *[spawnParticle](Dimension.md#spawnparticle)*
 #### Added *[DimensionType](DimensionType.md)*
 #### Added *[DimensionTypes](DimensionTypes.md)*
 #### Added *[DynamicPropertiesDefinition](DynamicPropertiesDefinition.md)*
@@ -474,6 +475,7 @@ Type: [*World*](World.md)
 - Added property *[isFalling](Entity.md#isfalling)*
 - Added property *[isInWater](Entity.md#isinwater)*
 - Added property *[isOnGround](Entity.md#isonground)*
+- Added property *[isSleeping](Entity.md#issleeping)*
 - Added property *[isSneaking](Entity.md#issneaking)*
 - Added property *[isSprinting](Entity.md#issprinting)*
 - Added property *[isSwimming](Entity.md#isswimming)*
@@ -481,21 +483,24 @@ Type: [*World*](World.md)
 - Added property *[target](Entity.md#target)*
 - Added function *[extinguishFire](Entity.md#extinguishfire)*
 - Added function *[getDynamicProperty](Entity.md#getdynamicproperty)*
+- Added function *[getProperty](Entity.md#getproperty)*
 - Added function *[getRotation](Entity.md#getrotation)*
 - Added function *[playAnimation](Entity.md#playanimation)*
 - Added function *[remove](Entity.md#remove)*
 - Added function *[removeDynamicProperty](Entity.md#removedynamicproperty)*
+- Added function *[resetProperty](Entity.md#resetproperty)*
 - Added function *[setDynamicProperty](Entity.md#setdynamicproperty)*
 - Added function *[setOnFire](Entity.md#setonfire)*
+- Added function *[setProperty](Entity.md#setproperty)*
 - Added function *[setRotation](Entity.md#setrotation)*
-- Added function *[triggerEvent](Entity.md#triggerevent)*
 #### Added *[EntityAddRiderComponent](EntityAddRiderComponent.md)*
 #### Added *[EntityAgeableComponent](EntityAgeableComponent.md)*
 #### Added *[EntityBreathableComponent](EntityBreathableComponent.md)*
 #### Changed *[EntityComponent](EntityComponent.md)*
 - Added property *[entity](EntityComponent.md#entity)*
 #### Added *[EntityDefinitionFeedItem](EntityDefinitionFeedItem.md)*
-#### Added *[EntityEquipmentInventoryComponent](EntityEquipmentInventoryComponent.md)*
+#### Changed *[EntityEquippableComponent](EntityEquippableComponent.md)*
+- Added function *[getEquipmentSlot](EntityEquippableComponent.md#getequipmentslot)*
 #### Changed *[EntityHealableComponent](EntityHealableComponent.md)*
 - Added property *[filters](EntityHealableComponent.md#filters)*
 #### Added *[EntityIterator](EntityIterator.md)*
@@ -513,8 +518,10 @@ Type: [*World*](World.md)
 #### Added *[EntityNavigationHoverComponent](EntityNavigationHoverComponent.md)*
 #### Added *[EntityNavigationWalkComponent](EntityNavigationWalkComponent.md)*
 #### Added *[EntityOnFireComponent](EntityOnFireComponent.md)*
-#### Added *[EntityRemovedAfterEvent](EntityRemovedAfterEvent.md)*
-#### Added *[EntityRemovedAfterEventSignal](EntityRemovedAfterEventSignal.md)*
+#### Added *[EntityRemoveAfterEvent](EntityRemoveAfterEvent.md)*
+#### Added *[EntityRemoveAfterEventSignal](EntityRemoveAfterEventSignal.md)*
+#### Added *[EntityRemoveBeforeEvent](EntityRemoveBeforeEvent.md)*
+#### Added *[EntityRemoveBeforeEventSignal](EntityRemoveBeforeEventSignal.md)*
 #### Added *[EntityRideableComponent](EntityRideableComponent.md)*
 #### Added *[EntityRidingComponent](EntityRidingComponent.md)*
 #### Added *[EntitySpawnAfterEvent](EntitySpawnAfterEvent.md)*
@@ -545,6 +552,8 @@ Type: [*World*](World.md)
 - Added property *[lockMode](ItemStack.md#lockmode)*
 - Added property *[nameTag](ItemStack.md#nametag)*
 - Added function *[clone](ItemStack.md#clone)*
+- Added function *[getCanDestroy](ItemStack.md#getcandestroy)*
+- Added function *[getCanPlaceOn](ItemStack.md#getcanplaceon)*
 - Added function *[getTags](ItemStack.md#gettags)*
 - Added function *[hasTag](ItemStack.md#hastag)*
 - Added function *[setCanDestroy](ItemStack.md#setcandestroy)*
@@ -552,7 +561,6 @@ Type: [*World*](World.md)
 - Added function *[triggerEvent](ItemStack.md#triggerevent)*
 #### Added *[ItemTypes](ItemTypes.md)*
 #### Added *[MessageReceiveAfterEvent](MessageReceiveAfterEvent.md)*
-#### Added *[MolangVariableMap](MolangVariableMap.md)*
 #### Added *[NavigationResult](NavigationResult.md)*
 #### Added *[PistonActivateAfterEvent](PistonActivateAfterEvent.md)*
 #### Added *[PistonActivateAfterEventSignal](PistonActivateAfterEventSignal.md)*
@@ -560,6 +568,7 @@ Type: [*World*](World.md)
 #### Added *[PistonActivateBeforeEventSignal](PistonActivateBeforeEventSignal.md)*
 #### Changed *[Player](Player.md)*
 - Added property *[camera](Player.md#camera)*
+- Added property *[isEmoting](Player.md#isemoting)*
 - Added property *[isFlying](Player.md#isflying)*
 - Added property *[isGliding](Player.md#isgliding)*
 - Added property *[isJumping](Player.md#isjumping)*
@@ -577,10 +586,6 @@ Type: [*World*](World.md)
 - Added function *[setOp](Player.md#setop)*
 - Added function *[startItemCooldown](Player.md#startitemcooldown)*
 #### Added *[PlayerIterator](PlayerIterator.md)*
-#### Added *[ProjectileHitBlockAfterEvent](ProjectileHitBlockAfterEvent.md)*
-#### Added *[ProjectileHitBlockAfterEventSignal](ProjectileHitBlockAfterEventSignal.md)*
-#### Added *[ProjectileHitEntityAfterEvent](ProjectileHitEntityAfterEvent.md)*
-#### Added *[ProjectileHitEntityAfterEventSignal](ProjectileHitEntityAfterEventSignal.md)*
 #### Added *[PropertyRegistry](PropertyRegistry.md)*
 #### Added *[Seat](Seat.md)*
 #### Added *[ServerMessageAfterEventSignal](ServerMessageAfterEventSignal.md)*
@@ -607,19 +612,18 @@ Type: [*World*](World.md)
 - Added property *[chatSend](WorldAfterEvents.md#chatsend)*
 - Added property *[dataDrivenEntityTriggerEvent](WorldAfterEvents.md#datadrivenentitytriggerevent)*
 - Added property *[effectAdd](WorldAfterEvents.md#effectadd)*
-- Added property *[entityRemoved](WorldAfterEvents.md#entityremoved)*
+- Added property *[entityRemove](WorldAfterEvents.md#entityremove)*
 - Added property *[entitySpawn](WorldAfterEvents.md#entityspawn)*
 - Added property *[explosion](WorldAfterEvents.md#explosion)*
 - Added property *[itemDefinitionEvent](WorldAfterEvents.md#itemdefinitionevent)*
 - Added property *[messageReceive](WorldAfterEvents.md#messagereceive)*
 - Added property *[pistonActivate](WorldAfterEvents.md#pistonactivate)*
-- Added property *[projectileHitBlock](WorldAfterEvents.md#projectilehitblock)*
-- Added property *[projectileHitEntity](WorldAfterEvents.md#projectilehitentity)*
 - Added property *[weatherChange](WorldAfterEvents.md#weatherchange)*
 - Added property *[worldInitialize](WorldAfterEvents.md#worldinitialize)*
 #### Changed *[WorldBeforeEvents](WorldBeforeEvents.md)*
 - Added property *[chatSend](WorldBeforeEvents.md#chatsend)*
 - Added property *[dataDrivenEntityTriggerEvent](WorldBeforeEvents.md#datadrivenentitytriggerevent)*
+- Added property *[entityRemove](WorldBeforeEvents.md#entityremove)*
 - Added property *[explosion](WorldBeforeEvents.md#explosion)*
 - Added property *[itemDefinitionEvent](WorldBeforeEvents.md#itemdefinitionevent)*
 - Added property *[pistonActivate](WorldBeforeEvents.md#pistonactivate)*
@@ -631,7 +635,6 @@ Type: [*World*](World.md)
 #### Added enum [DyeColor](DyeColor.md)
 #### Added enum [EasingType](EasingType.md)
 #### Added enum [EntityLifetimeState](EntityLifetimeState.md)
-#### Added enum [EquipmentSlot](EquipmentSlot.md)
 #### Added enum [FluidType](FluidType.md)
 #### Added enum [MoonPhase](MoonPhase.md)
 #### Added enum [SignSide](SignSide.md)
@@ -641,6 +644,20 @@ Type: [*World*](World.md)
 #### Added constant [TicksPerDay](#ticksperday)
 #### Added constant [TicksPerSecond](#tickspersecond)
 ## 1.5.0
+#### Changed *[Dimension](Dimension.md)*
+- Added function *[spawnParticle](Dimension.md#spawnparticle)*
+#### Changed *[Entity](Entity.md)*
+- Added function *[triggerEvent](Entity.md#triggerevent)*
+#### Added *[EntityEquippableComponent](EntityEquippableComponent.md)*
+#### Added *[MolangVariableMap](MolangVariableMap.md)*
+#### Added *[ProjectileHitBlockAfterEvent](ProjectileHitBlockAfterEvent.md)*
+#### Added *[ProjectileHitBlockAfterEventSignal](ProjectileHitBlockAfterEventSignal.md)*
+#### Added *[ProjectileHitEntityAfterEvent](ProjectileHitEntityAfterEvent.md)*
+#### Added *[ProjectileHitEntityAfterEventSignal](ProjectileHitEntityAfterEventSignal.md)*
+#### Changed *[WorldAfterEvents](WorldAfterEvents.md)*
+- Added property *[projectileHitBlock](WorldAfterEvents.md#projectilehitblock)*
+- Added property *[projectileHitEntity](WorldAfterEvents.md#projectilehitentity)*
+#### Added enum [EquipmentSlot](EquipmentSlot.md)
 ## 1.4.0
 #### Changed *[Block](Block.md)*
 - Removed property *isWaterlogged*
@@ -707,6 +724,7 @@ Type: [*World*](World.md)
 #### Removed *DataDrivenEntityTriggerBeforeEventSignal*
 #### Removed *DefinitionModifier*
 #### Changed *[Dimension](Dimension.md)*
+- Changed type for *[id](Dimension.md#id)* from *string* (throws exceptions) to *string*
 - Removed function *createExplosion*
 - Removed function *fillBlocks*
 - Changed function *[getBlock](Dimension.md#getblock)*
@@ -734,6 +752,7 @@ Type: [*World*](World.md)
 #### Removed *EnchantmentTypes*
 #### Changed *[Entity](Entity.md)*
 - Removed property *fallDistance*
+- Changed type for *[id](Entity.md#id)* from *string* (throws exceptions) to *string*
 - Removed property *isClimbing*
 - Removed property *isFalling*
 - Removed property *isInWater*
@@ -743,6 +762,7 @@ Type: [*World*](World.md)
 - Removed property *isSwimming*
 - Removed property *lifetimeState*
 - Removed property *target*
+- Changed type for *[typeId](Entity.md#typeid)* from *string* (throws exceptions) to *string*
 - Removed function *extinguishFire*
 - Changed function *[getBlockFromViewDirection](Entity.md#getblockfromviewdirection)*
   - Changed return type from [*Block*](Block.md) (throws exceptions) to [*BlockRaycastHit*](BlockRaycastHit.md) (throws exceptions)
@@ -997,9 +1017,17 @@ Type: [*World*](World.md)
 - Changed function *[getParticipants](Scoreboard.md#getparticipants)*
   - Changed return type from [*ScoreboardIdentity*](ScoreboardIdentity.md)[] (throws exceptions) to [*ScoreboardIdentity*](ScoreboardIdentity.md)[]
 - Changed function *[setObjectiveAtDisplaySlot](Scoreboard.md#setobjectiveatdisplayslot)*
+  - Changed return type from [*ScoreboardObjective*](ScoreboardObjective.md) (throws exceptions) to [*ScoreboardObjective*](ScoreboardObjective.md) (throws exceptions)
   - Changed argument `displaySlotId` type from *string* to [*DisplaySlotId*](DisplaySlotId.md)
+#### Changed *[ScoreboardIdentity](ScoreboardIdentity.md)*
+- Changed function *[getEntity](ScoreboardIdentity.md#getentity)*
+  - Changed return type from [*Entity*](Entity.md) (throws exceptions) to [*Entity*](Entity.md) (throws exceptions)
 #### Changed *[ScoreboardObjective](ScoreboardObjective.md)*
 - Added function *[addScore](ScoreboardObjective.md#addscore)*
+#### Changed *[ScriptEventCommandMessageAfterEvent](ScriptEventCommandMessageAfterEvent.md)*
+- Changed type for *[initiator](ScriptEventCommandMessageAfterEvent.md#initiator)* from [*Entity*](Entity.md) to [*Entity*](Entity.md)
+- Changed type for *[sourceBlock](ScriptEventCommandMessageAfterEvent.md#sourceblock)* from [*Block*](Block.md) to [*Block*](Block.md)
+- Changed type for *[sourceEntity](ScriptEventCommandMessageAfterEvent.md#sourceentity)* from [*Entity*](Entity.md) to [*Entity*](Entity.md)
 #### Changed *[ScriptEventCommandMessageAfterEventSignal](ScriptEventCommandMessageAfterEventSignal.md)*
 - Removed base class *IScriptEventCommandMessageAfterEventSignal*
 - Added function *[subscribe](ScriptEventCommandMessageAfterEventSignal.md#subscribe)*
@@ -1186,6 +1214,7 @@ Type: [*World*](World.md)
 #### Added *[DataDrivenEntityTriggerBeforeEventSignal](DataDrivenEntityTriggerBeforeEventSignal.md)*
 #### Added *[DefinitionModifier](DefinitionModifier.md)*
 #### Changed *[Dimension](Dimension.md)*
+- Changed type for *[id](Dimension.md#id)* from *string* to *string* (throws exceptions)
 - Added function *[createExplosion](Dimension.md#createexplosion)*
 - Added function *[fillBlocks](Dimension.md#fillblocks)*
 - Changed function *[getBlock](Dimension.md#getblock)*
@@ -1211,6 +1240,7 @@ Type: [*World*](World.md)
 #### Added *[EnchantmentTypes](EnchantmentTypes.md)*
 #### Changed *[Entity](Entity.md)*
 - Added property *[fallDistance](Entity.md#falldistance)*
+- Changed type for *[id](Entity.md#id)* from *string* to *string* (throws exceptions)
 - Added property *[isClimbing](Entity.md#isclimbing)*
 - Added property *[isFalling](Entity.md#isfalling)*
 - Added property *[isInWater](Entity.md#isinwater)*
@@ -1221,6 +1251,7 @@ Type: [*World*](World.md)
 - Added property *[lifetimeState](Entity.md#lifetimestate)*
 - Added property *[scoreboardIdentity](Entity.md#scoreboardidentity)*
 - Added property *[target](Entity.md#target)*
+- Changed type for *[typeId](Entity.md#typeid)* from *string* to *string* (throws exceptions)
 - Added function *[extinguishFire](Entity.md#extinguishfire)*
 - Added function *[getBlockFromViewDirection](Entity.md#getblockfromviewdirection)*
 - Added function *[getDynamicProperty](Entity.md#getdynamicproperty)*
@@ -1566,6 +1597,7 @@ Type: [*World*](World.md)
 #### Removed *DataDrivenEntityTriggerBeforeEventSignal*
 #### Removed *DefinitionModifier*
 #### Changed *[Dimension](Dimension.md)*
+- Changed type for *[id](Dimension.md#id)* from *string* (throws exceptions) to *string*
 - Removed function *createExplosion*
 - Removed function *fillBlocks*
 - Changed function *[getBlock](Dimension.md#getblock)*
@@ -1593,6 +1625,7 @@ Type: [*World*](World.md)
 #### Removed *EnchantmentTypes*
 #### Changed *[Entity](Entity.md)*
 - Removed property *fallDistance*
+- Changed type for *[id](Entity.md#id)* from *string* (throws exceptions) to *string*
 - Removed property *isClimbing*
 - Removed property *isFalling*
 - Removed property *isInWater*
@@ -1603,6 +1636,7 @@ Type: [*World*](World.md)
 - Removed property *lifetimeState*
 - Removed property *scoreboardIdentity*
 - Removed property *target*
+- Changed type for *[typeId](Entity.md#typeid)* from *string* (throws exceptions) to *string*
 - Changed function *[addEffect](Entity.md#addeffect)*
   - Changed return type from *boolean* (throws exceptions) to *void* (throws exceptions)
 - Removed function *extinguishFire*
@@ -1901,6 +1935,7 @@ Type: [*World*](World.md)
 #### Added *[DataDrivenEntityTriggerBeforeEventSignal](DataDrivenEntityTriggerBeforeEventSignal.md)*
 #### Added *[DefinitionModifier](DefinitionModifier.md)*
 #### Changed *[Dimension](Dimension.md)*
+- Changed type for *[id](Dimension.md#id)* from *string* to *string* (throws exceptions)
 - Added function *[createExplosion](Dimension.md#createexplosion)*
 - Added function *[fillBlocks](Dimension.md#fillblocks)*
 - Changed function *[getBlock](Dimension.md#getblock)*
@@ -1926,6 +1961,7 @@ Type: [*World*](World.md)
 #### Added *[EnchantmentTypes](EnchantmentTypes.md)*
 #### Changed *[Entity](Entity.md)*
 - Added property *[fallDistance](Entity.md#falldistance)*
+- Changed type for *[id](Entity.md#id)* from *string* to *string* (throws exceptions)
 - Added property *[isClimbing](Entity.md#isclimbing)*
 - Added property *[isFalling](Entity.md#isfalling)*
 - Added property *[isInWater](Entity.md#isinwater)*
@@ -1936,6 +1972,7 @@ Type: [*World*](World.md)
 - Added property *[lifetimeState](Entity.md#lifetimestate)*
 - Added property *[scoreboardIdentity](Entity.md#scoreboardidentity)*
 - Added property *[target](Entity.md#target)*
+- Changed type for *[typeId](Entity.md#typeid)* from *string* to *string* (throws exceptions)
 - Added function *[addEffect](Entity.md#addeffect)*
 - Added function *[extinguishFire](Entity.md#extinguishfire)*
 - Added function *[getBlockFromViewDirection](Entity.md#getblockfromviewdirection)*

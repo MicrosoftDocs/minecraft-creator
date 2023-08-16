@@ -11,8 +11,6 @@ description: Contents of the @minecraft/server-editor.IPropertyItemOptionsVector
 ## Extends
 - *IPropertyItemOptions*
 
-@beta
-
 ## Properties
 
 ### **maxX**
@@ -21,9 +19,6 @@ description: Contents of the @minecraft/server-editor.IPropertyItemOptionsVector
 The max possible value for the X axis. By default Number.MAX_SAFE_INTEGER
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **maxY**
 `maxY: number;`
@@ -31,9 +26,6 @@ Type: *number*
 The max possible value for the Y axis. By default Number.MAX_SAFE_INTEGER
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **maxZ**
 `maxZ: number;`
@@ -41,9 +33,6 @@ Type: *number*
 The max possible value for the z axis. By default Number.MAX_SAFE_INTEGER
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **minX**
 `minX: number;`
@@ -51,9 +40,6 @@ Type: *number*
 The min possible value for the X axis. By default 0
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **minY**
 `minY: number;`
@@ -61,9 +47,6 @@ Type: *number*
 The min possible value for the Y axis. By default 0
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **minZ**
 `minZ: number;`
@@ -71,6 +54,3 @@ Type: *number*
 The min possible value for the Z axis. By default 0
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.

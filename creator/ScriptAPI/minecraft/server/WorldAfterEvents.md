@@ -123,12 +123,10 @@ Type: [*EntityHurtAfterEventSignal*](EntityHurtAfterEventSignal.md)
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-### **entityRemoved**
-`read-only entityRemoved: EntityRemovedAfterEventSignal;`
+### **entityRemove**
+`read-only entityRemove: EntityRemoveAfterEventSignal;`
 
-This event fires when an entity is removed from the game (e.g., is unloaded when it goes out of range; or a few seconds after the death of an entity.)
-
-Type: [*EntityRemovedAfterEventSignal*](EntityRemovedAfterEventSignal.md)
+Type: [*EntityRemoveAfterEventSignal*](EntityRemoveAfterEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -318,18 +316,12 @@ This event fires when a projectile hits a block.
 
 Type: [*ProjectileHitBlockAfterEventSignal*](ProjectileHitBlockAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **projectileHitEntity**
 `read-only projectileHitEntity: ProjectileHitEntityAfterEventSignal;`
 
 This event fires when a projectile hits an entity.
 
 Type: [*ProjectileHitEntityAfterEventSignal*](ProjectileHitEntityAfterEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **targetBlockHit**
 `read-only targetBlockHit: TargetBlockHitAfterEventSignal;`

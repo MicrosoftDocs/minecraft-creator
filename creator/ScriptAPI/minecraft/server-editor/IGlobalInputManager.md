@@ -8,8 +8,6 @@ description: Contents of the @minecraft/server-editor.IGlobalInputManager class.
 ---
 # IGlobalInputManager Interface
 
-@beta
-
 ## Methods
 - [registerKeyBinding](#registerkeybinding)
 
@@ -35,6 +33,3 @@ Register a key press binding for an action which will be handled by the specifie
   Modifiers to create an input binding chord (Default: None).
 
 #### **Returns** *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.

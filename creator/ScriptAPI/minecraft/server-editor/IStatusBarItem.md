@@ -8,8 +8,6 @@ description: Contents of the @minecraft/server-editor.IStatusBarItem class.
 ---
 # IStatusBarItem Interface
 
-@beta
-
 ## Properties
 
 ### **id**
@@ -18,9 +16,6 @@ description: Contents of the @minecraft/server-editor.IStatusBarItem class.
 Unique ID for the item.
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **text**
 `text: string;`
@@ -28,9 +23,6 @@ Type: *string*
 Text to display.
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ## Methods
 - [hide](#hide)
@@ -45,9 +37,6 @@ Hide the Status Bar Item.
 
 #### **Returns** *void*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **show**
 `
 show(): void
@@ -56,6 +45,3 @@ show(): void
 Show the Status Bar Item.
 
 #### **Returns** *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.

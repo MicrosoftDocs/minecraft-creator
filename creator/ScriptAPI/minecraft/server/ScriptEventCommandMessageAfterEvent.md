@@ -20,7 +20,7 @@ Identifier of this ScriptEvent command message.
 Type: *string*
 
 ### **initiator**
-`read-only initiator: Entity;`
+`read-only initiator?: Entity;`
 
 If this command was initiated via an NPC, returns the entity that initiated the NPC dialogue.
 
@@ -34,14 +34,14 @@ Optional additional data passed in with the script event command.
 Type: *string*
 
 ### **sourceBlock**
-`read-only sourceBlock: Block;`
+`read-only sourceBlock?: Block;`
 
 Source block if this command was triggered via a block (e.g., a commandblock.)
 
 Type: [*Block*](Block.md)
 
 ### **sourceEntity**
-`read-only sourceEntity: Entity;`
+`read-only sourceEntity?: Entity;`
 
 Source entity if this command was triggered by an entity (e.g., a NPC).
 

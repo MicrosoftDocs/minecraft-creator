@@ -8,8 +8,6 @@ description: Contents of the @minecraft/server-editor.IPropertyItemOptions class
 ---
 # IPropertyItemOptions Interface
 
-@beta
-
 ## Properties
 
 ### **enable**
@@ -18,9 +16,6 @@ description: Contents of the @minecraft/server-editor.IPropertyItemOptions class
 If the item is enabled in the UI.
 
 Type: *boolean*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **onChange**
 `onChange: OnChangeCallback<PropertyBag, string>;`
@@ -28,9 +23,6 @@ Type: *boolean*
 Callback to execute when the value is updated.
 
 Type: *OnChangeCallback<PropertyBag, string>*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **titleAltText**
 `titleAltText: string;`
@@ -38,9 +30,6 @@ Type: *OnChangeCallback<PropertyBag, string>*
 Fallback display text if no loc ID
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **titleStringId**
 `titleStringId: string;`
@@ -48,9 +37,6 @@ Type: *string*
 Loc ID (resolved on client)
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **visible**
 `visible: boolean;`
@@ -58,6 +44,3 @@ Type: *string*
 If the item should be visible in the UI.
 
 Type: *boolean*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.

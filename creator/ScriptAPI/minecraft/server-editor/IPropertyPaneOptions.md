@@ -18,9 +18,6 @@ The options to create a pane.
 Fallback display text if no loc ID
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **titleStringId**
 `titleStringId: string;`
@@ -28,9 +25,6 @@ Type: *string*
 Loc ID (resolved on client)
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **width**
 `width: number;`
@@ -38,6 +32,3 @@ Type: *string*
 Width of the panel in rem. This property is ignored in case of sub panes
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.

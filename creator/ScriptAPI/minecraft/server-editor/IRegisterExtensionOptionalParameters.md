@@ -18,9 +18,6 @@ Optional parameter definition for RegisterEditorExtension function Allows the ex
 Description of the extension.
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **notes**
 `notes: string;`
@@ -28,6 +25,3 @@ Type: *string*
 Additional notes and description of the extension.
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.

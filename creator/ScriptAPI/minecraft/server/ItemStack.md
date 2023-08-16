@@ -101,6 +101,8 @@ Type: *string*
 ## Methods
 - [constructor](#constructor)
 - [clone](#clone)
+- [getCanDestroy](#getcandestroy)
+- [getCanPlaceOn](#getcanplaceon)
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
 - [getLore](#getlore)
@@ -144,6 +146,32 @@ Creates an exact copy of the item stack, including any custom data or properties
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **getCanDestroy**
+`
+getCanDestroy(): string[]
+`
+
+#### **Returns** *string*[]
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+### **getCanPlaceOn**
+`
+getCanPlaceOn(): string[]
+`
+
+#### **Returns** *string*[]
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 ### **getComponent**
 `

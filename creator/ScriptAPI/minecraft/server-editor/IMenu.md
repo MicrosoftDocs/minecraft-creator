@@ -8,8 +8,6 @@ description: Contents of the @minecraft/server-editor.IMenu class.
 ---
 # IMenu Interface
 
-@beta
-
 ## Properties
 
 ### **id**
@@ -18,9 +16,6 @@ description: Contents of the @minecraft/server-editor.IMenu class.
 Unique ID for the menu
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **submenu**
 `read-only submenu: IMenu[];`
@@ -28,9 +23,6 @@ Type: *string*
 Sub menus of this menu
 
 Type: *IMenu[]*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ## Methods
 - [addItem](#additem)
@@ -57,9 +49,6 @@ Create a child menu on this menu.
 
 #### **Returns** *IMenu*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **addSeparator**
 `
 addSeparator(): IMenu
@@ -68,9 +57,6 @@ addSeparator(): IMenu
 Create a separator
 
 #### **Returns** *IMenu*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 ### **dispose**
 `
@@ -81,9 +67,6 @@ Destroy the menu and all of its children.
 
 #### **Returns** *void*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **hide**
 `
 hide(): void
@@ -92,9 +75,6 @@ hide(): void
 Hide the menu and all of its children.
 
 #### **Returns** *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 ### **replaceAction**
 `
@@ -110,9 +90,6 @@ Replaces the current associated menu action with a new action
 
 #### **Returns** *void*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **show**
 `
 show(): void
@@ -121,6 +98,3 @@ show(): void
 Show the menu and all of its children.
 
 #### **Returns** *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.

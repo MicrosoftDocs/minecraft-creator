@@ -155,7 +155,7 @@ Removes an objective from the scoreboard.
 
 ### **setObjectiveAtDisplaySlot**
 `
-setObjectiveAtDisplaySlot(displaySlotId: DisplaySlotId, objectiveDisplaySetting: ScoreboardObjectiveDisplayOptions): ScoreboardObjective
+setObjectiveAtDisplaySlot(displaySlotId: DisplaySlotId, objectiveDisplaySetting: ScoreboardObjectiveDisplayOptions): ScoreboardObjective | undefined
 `
 
 Sets an objective into a display slot with specified additional display settings.
@@ -164,7 +164,7 @@ Sets an objective into a display slot with specified additional display settings
 - **displaySlotId**: [*DisplaySlotId*](DisplaySlotId.md)
 - **objectiveDisplaySetting**: [*ScoreboardObjectiveDisplayOptions*](ScoreboardObjectiveDisplayOptions.md)
 
-#### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md)
+#### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md) | *undefined*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
