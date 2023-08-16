@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:timer
 ms.prod: gaming
+description: "A reference document detailing the 'timer' entity component"
 ---
 
 # Entity Documentation - minecraft:timer

@@ -70,7 +70,7 @@ Turn this on, and your world will now be rendering with the new Deferred Lightin
 
 You must have appropriate hardware and a Preview-enabled platform to execute the Deferred Lighting Pipeline. A ray tracing capable video card is not required, and most modern GPUs on Windows should support the Deferred Pipeline, with more devices to follow. 
 
-On Android, there is a hard requirement at this time that only GLES 3 devices running Android OS 9 and above will be able to run the pipeline.
+On Android, there is a hard requirement at this time that only GLES 3.1 devices running Android OS 9 and above will be able to run the pipeline.
 
 ## Deferred Lighting JSONs
 

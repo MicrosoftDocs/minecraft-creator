@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.RGB class.
 ---
 # RGB Interface
 
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Represents a fully customizable color within Minecraft.
 
 ## Properties

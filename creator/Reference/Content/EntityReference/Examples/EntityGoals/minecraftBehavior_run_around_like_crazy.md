@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.run_around_like_crazy
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.run_around_like_crazy' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.run_around_like_crazy

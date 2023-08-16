@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.croak
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.croak' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.croak

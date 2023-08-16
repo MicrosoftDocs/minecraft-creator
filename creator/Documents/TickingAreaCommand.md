@@ -3,7 +3,7 @@ author: RileyManns
 ms.author: v-jillheaden
 title: Introduction to the Tickingarea Command
 ms.prod: gaming
-description: A guide about ticking areas.
+description: "A guide about ticking areas"
 ---
 
 # Introduction to Ticking Areas

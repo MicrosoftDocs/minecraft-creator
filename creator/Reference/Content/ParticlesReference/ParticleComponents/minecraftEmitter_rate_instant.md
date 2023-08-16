@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Particle Documentation - Emitter Rate Instant component
 ms.prod: gaming
+description: "A reference document detailing the 'emitter rate instant' particle component"
 ---
 
 # Particle Documentation - Emitter Rate Instant component

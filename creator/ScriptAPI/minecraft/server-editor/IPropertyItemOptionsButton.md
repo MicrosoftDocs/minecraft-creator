@@ -11,8 +11,6 @@ description: Contents of the @minecraft/server-editor.IPropertyItemOptionsButton
 ## Extends
 - *IPropertyItemOptions*
 
-@beta
-
 ## Properties
 
 ### **variant**
@@ -21,6 +19,3 @@ description: Contents of the @minecraft/server-editor.IPropertyItemOptionsButton
 The variant for the button. By default it is "primary"
 
 Type: *ButtonVariant*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.

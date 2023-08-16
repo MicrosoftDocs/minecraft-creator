@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - has_ranged_weapon
 ms.prod: gaming
+description: "A reference document detailing the 'has_ranged_weapon' entity filter"
 ---
 
 # Entity Documentation - has_ranged_weapon
@@ -11,7 +12,7 @@ Returns true when the subject entity is holding a ranged weapon like a bow or cr
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `has_ranged_weapon` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 >`has_ranged_weapon` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

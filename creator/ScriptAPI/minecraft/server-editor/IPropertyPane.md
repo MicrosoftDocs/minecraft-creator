@@ -12,15 +12,19 @@ Property pane present dynamic content. It can be associated with an object and p
 
 ## Properties
 
+### **collapsed**
+`collapsed: boolean;`
+
+Pane state for being expanded or collapsed.
+
+Type: *boolean*
+
 ### **id**
 `read-only id: string;`
 
 Unique ID for the property pane.
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **onPropertyPaneVisibilityUpdated**
 `onPropertyPaneVisibilityUpdated: EventSink<PropertyPaneVisibilityUpdate>;`
@@ -28,9 +32,6 @@ Type: *string*
 Provides visibility change events
 
 Type: *EventSink<PropertyPaneVisibilityUpdate>*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **parentPaneId**
 `read-only parentPaneId: string;`
@@ -38,9 +39,6 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 In case of sub pane this is the id of the parent pane.
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **titleAltText**
 `titleAltText: string;`
@@ -48,9 +46,6 @@ Type: *string*
 Fallback display text if no loc ID
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **titleStringId**
 `titleStringId: string;`
@@ -58,9 +53,6 @@ Type: *string*
 Loc ID (resolved on client)
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **width**
 `width: number;`
@@ -68,9 +60,6 @@ Type: *string*
 Width of the panel in rem.
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ## Methods
 - [addBlockPicker](#addblockpicker)
@@ -81,7 +70,9 @@ Type: *number*
 - [addNumber](#addnumber)
 - [addString](#addstring)
 - [addVector3](#addvector3)
+- [collapse](#collapse)
 - [createPropertyPane](#createpropertypane)
+- [expand](#expand)
 - [hide](#hide)
 - [removePropertyPane](#removepropertypane)
 - [show](#show)
@@ -100,9 +91,6 @@ Adds a BlockPicker item to the pane.
 
 #### **Returns** *IPropertyItem<T, Prop>*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **addBool**
 `
 addBool(obj: T, property: Prop, options: IPropertyItemOptions): IPropertyItem<T, Prop>
@@ -116,9 +104,6 @@ Adds a boolean item to the pane.
 - **options**: *IPropertyItemOptions*
 
 #### **Returns** *IPropertyItem<T, Prop>*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 ### **addButton**
 `
@@ -137,9 +122,6 @@ Adds a button to the pane and binds the specified action to the button activate.
         EMPTY: undefined;
     }, 'EMPTY'>*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **addDivider**
 `
 addDivider(): IPropertyItem<PropertyBag, string>
@@ -148,9 +130,6 @@ addDivider(): IPropertyItem<PropertyBag, string>
 Adds an divider item to the pane.
 
 #### **Returns** *IPropertyItem<PropertyBag, string>*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 ### **addDropdown**
 `
@@ -166,9 +145,6 @@ Adds an DropDown item to the pane.
 
 #### **Returns** *IPropertyItem<T, Prop>*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **addNumber**
 `
 addNumber(obj: T, property: Prop, options: IPropertyItemOptionsNumber): IPropertyItem<T, Prop>
@@ -182,9 +158,6 @@ Adds a number item to the pane.
 - **options**: *IPropertyItemOptionsNumber*
 
 #### **Returns** *IPropertyItem<T, Prop>*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 ### **addString**
 `
@@ -200,9 +173,6 @@ Adds a string item to the pane
 
 #### **Returns** *IPropertyItem<T, Prop>*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **addVector3**
 `
 addVector3(obj: T, property: Prop, options: IPropertyItemOptionsVector3): IPropertyItem<T, Prop>
@@ -217,8 +187,14 @@ Adds a Vec3 item to the pane.
 
 #### **Returns** *IPropertyItem<T, Prop>*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+### **collapse**
+`
+collapse(): void
+`
+
+Collapse the pane.
+
+#### **Returns** *void*
 
 ### **createPropertyPane**
 `
@@ -232,8 +208,14 @@ Creates an internal sub panel that is presented inside a extender control.
 
 #### **Returns** *IPropertyPane*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+### **expand**
+`
+expand(): void
+`
+
+Expand the pane.
+
+#### **Returns** *void*
 
 ### **hide**
 `
@@ -243,9 +225,6 @@ hide(): void
 Hide the pane.
 
 #### **Returns** *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 ### **removePropertyPane**
 `
@@ -259,9 +238,6 @@ Removes a child property pane from the parent pane.
 
 #### **Returns** *boolean*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **show**
 `
 show(): void
@@ -270,6 +246,3 @@ show(): void
 Show the pane and all of its property items.
 
 #### **Returns** *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.

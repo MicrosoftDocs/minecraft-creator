@@ -336,7 +336,7 @@ Runs a particular command asynchronously from the context of the broader dimensi
 
 ### **setWeather**
 `
-setWeather(weatherType: WeatherType): void
+setWeather(weatherType: WeatherType, duration?: number): void
 `
 
 Sets the current weather within the dimesion
@@ -345,12 +345,16 @@ Sets the current weather within the dimesion
 - **weatherType**: [*WeatherType*](WeatherType.md)
   
   Set of weather to apply.
+- **duration**?: *number* = `null`
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **spawnEntity**
 `
@@ -484,9 +488,6 @@ Creates a new particle emitter at a specified location in the world.
 - **molangVariables**?: [*MolangVariableMap*](MolangVariableMap.md) = `null`
   
   A set of optional, customizable variables that can be adjusted for this particle.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

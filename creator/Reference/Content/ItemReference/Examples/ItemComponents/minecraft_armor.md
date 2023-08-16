@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Item Documentation - minecraft:armor
 ms.prod: gaming
+description: "A reference document detailing the 'armor' item component"
 ---
 
 # Item Documentation - minecraft:armor
@@ -16,6 +17,7 @@ ms.prod: gaming
 >
 >To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md)
 .
+
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |

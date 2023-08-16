@@ -27,9 +27,6 @@ Navigates to the documentation site.
 
 #### **Returns** *void*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **navigateToFeedback**
 `
 navigateToFeedback(): void
@@ -39,9 +36,6 @@ Navigates to the feedback site
 
 #### **Returns** *void*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **navigateToPauseScreen**
 `
 navigateToPauseScreen(): void
@@ -50,9 +44,6 @@ navigateToPauseScreen(): void
 Navigates to the pause screen
 
 #### **Returns** *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 ### **updateLogPanelVisibility**
 `
@@ -66,9 +57,6 @@ Updates the visibility of the log panel
 
 #### **Returns** *void*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **updateUISettingsPanelVisibility**
 `
 updateUISettingsPanelVisibility(visibility: boolean): void
@@ -81,9 +69,6 @@ Updates the visibility of the control demo
 
 #### **Returns** *void*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **updateWelcomePanelVisibility**
 `
 updateWelcomePanelVisibility(visibility: boolean): void
@@ -95,6 +80,3 @@ Updates the visibility of the welcome panel
 - **visibility**: *boolean*
 
 #### **Returns** *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.

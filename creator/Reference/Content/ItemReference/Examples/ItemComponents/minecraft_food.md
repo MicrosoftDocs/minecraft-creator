@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: mikeam
 title: Item Documentation - minecraft:food
 ms.prod: gaming
+description: "A reference document detailing the 'food' item component"
 ---
 
 # Item Documentation - minecraft:food
@@ -24,7 +25,7 @@ ms.prod: gaming
 |effects |*not set* | List| List of Events to fire off when consumed|
 |nutrition | 0 | Integer| The value that is added to the actor's nutrition when the item is used. |
 |on_consume| *not set* | Trigger | Event trigger for when the item is consumed. |
-|saturation_modifier| 0.6 |String| Saturation Modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff.|
+|saturation_modifier| 0.6 |String| Saturation Modifier is used in this formula: (nutrition *saturation_modifier* 2) when applying the saturation buff.|
 |using_converts_to| Not used by default. |String| When used, converts to the item specified by the string in this field. |
 
 ## Example
@@ -49,6 +50,7 @@ ms.prod: gaming
 ## Vanilla entities examples
 
 ### appleEnchanted
+
 ```json
 "minecraft:food": {
   "nutrition": 4,

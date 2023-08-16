@@ -3,6 +3,7 @@ author: mammerla
 ms.author: v-jillheaden
 title: Minecraft Maker Series Episode 1 - Making the Goblin Chef
 ms.prod: gaming
+description: "Learn how to make a goblin chef entity with a Mojang 3D artist"
 ---
 
 # Minecraft Maker Series Episode 1 - Making the Goblin Chef

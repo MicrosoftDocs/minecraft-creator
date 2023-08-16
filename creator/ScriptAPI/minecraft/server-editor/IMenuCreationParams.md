@@ -18,9 +18,6 @@ Properties required to create a Menu
 Loc ID (resolved on client)
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **name**
 `name: string;`
@@ -28,6 +25,3 @@ Type: *string*
 The name of the menu
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.

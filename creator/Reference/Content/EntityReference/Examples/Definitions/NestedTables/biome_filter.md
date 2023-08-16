@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:biome_filter
 ms.prod: gaming
+description: "A reference document detailing the 'biome_filter' entity filter"
 ---
 
 # Entity Documentation - minecraft:biome_filter
 
-The minecraft:biome_filter component allows creators to specify which biomes a mob spawns in. Each biome in the game has one or more tags which are used to determine what biomes mobs spawn in.
+The minecraft:biome_filter component allows creators to specify which biomes an entity spawns in. Each biome in the game has one or more tags which are used to determine what biomes entities spawn in.
 
 > [!NOTE]
 > To learn more about how biomes are defined in JSON, please visit [Biome Documentation - Overview](/creator/Reference/Content/BiomeReferene/Examples/BiomeOverview.md)
@@ -131,7 +132,7 @@ Listed below are all of the available biomes within Minecraft: Bedrock Edition a
 | Ice Plains| frozen, ice, ice_plains, overworld |
 | Ice Plains Spikes| frozen, ice_plains, monster, mutated, overworld |
 | Jagged Peaks| mountains, monster, overworld, frozen, jagged_peaks |
-| Jungle| animal, monster, overworld, rare |
+| Jungle| animal, jungle, monster, overworld, rare |
 | Jungle Edge| animal, monster, jungle, edge, overworld |
 | Jungle Edge M| animal, monster, jungle, edge, mutated, overworld_generation |
 | Jungle Hills| animal, monster, jungle, hills, overworld |

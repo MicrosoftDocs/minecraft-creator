@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: mikeam
 title: Entity Documentation - is_underground
 ms.prod: gaming
+description: "A reference document detailing the 'is_underground' entity filter"
 ---
 
 # Entity Documentation - is_underground
@@ -11,7 +12,7 @@ Returns true when the subject entity is underground. An entity is considered und
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `is_underground` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 >`is_underground` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.

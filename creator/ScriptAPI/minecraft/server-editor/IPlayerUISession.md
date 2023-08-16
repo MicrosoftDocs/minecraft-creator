@@ -8,9 +8,6 @@ description: Contents of the .IPlayerUISession type alias.
 ---
 # IPlayerUISession Type Alias
 
-> [!CAUTION]
-> This alias is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 The IPlayerUISession represents the editor user interface for a given player and given extension. Extensions registered with Minecraft are instantiated for each player which joins a server, and this interface provides the set of functionality needed to create and modify the editor UI for that player. The associated Editor Context for this session object is also player specific. From a given IPlayerUISession object, there is no way to interact with the UI of another player, that must be done from global extension scope registration and/or data sharing independent of the UI object.
 
 ## Declaration

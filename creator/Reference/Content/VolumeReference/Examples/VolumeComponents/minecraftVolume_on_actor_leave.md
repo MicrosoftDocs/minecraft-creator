@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Volume Documentation - minecraft:on_actor_leave
 ms.prod: gaming
+description: "A reference document detailing the 'on_actor_leave' volume component"
 ---
 
 # Volume Documentation -  minecraft:on_actor_leave
@@ -20,7 +21,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 |on_leave |*not set* |Array | Required array that contains all the triggers.|
 
-### on_leave
+## on_leave
 
 `on_leave` is an array parameter that can use the following components:
 

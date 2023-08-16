@@ -3,7 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Contributor Style Guide
 ms.prod: gaming
-description: An article covering the style and tone used when writing content for the Creator Portal
+description: "An article covering the style and tone used when writing content for the Creator Portal"
 ---
 
 # Contributor Style Guide

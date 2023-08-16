@@ -3,6 +3,7 @@ author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - minecraft:hover_text_color
 ms.prod: gaming
+description: "A reference document detailing the 'hover_text_color' item component"
 ---
 
 # Item Documentation - minecraft:hover_text_color

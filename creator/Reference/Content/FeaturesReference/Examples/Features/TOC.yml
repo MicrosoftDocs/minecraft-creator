@@ -4,16 +4,12 @@
   href: minecraftAggregate_feature.md
 - name: sequence_feature
   href: minecraftSequence_feature.md
-- name: beards_and_shavers
-  href: minecraftBeards_and_shavers.md
 - name: cave_carver_feature
   href: minecraftCave_carver_feature.md
-- name: conditional_list
-  href: minecraftConditional_list.md
 - name: growing_plant_feature
   href: minecraftGrowing_plant_feature.md
-- name: hell_cave_carver_feature
-  href: minecraftHell_cave_carver_feature.md
+- name: nether_cave_carver_feature
+  href: minecraftNether_cave_carver_feature.md
 - name: multiface_feature
   href: minecraftMultiface_feature.md
 - name: geode_feature
@@ -22,10 +18,6 @@
   href: minecraftOre_feature.md
 - name: partially_exposed_blob
   href: minecraftPartially_Exposed_blob_feature.md
-- name: rect_layout
-  href: minecraftRect_layout.md
-- name: scan_surface
-  href: minecraftScan_surface.md
 - name: scatter_feature
   href: minecraftScatter_feature.md
 - name: search_feature
@@ -38,7 +30,11 @@
   href: minecraftStructure_template_feature.md
 - name: surface_relative_threshold
   href: minecraftSurface_Relative_threshold_feature.md
+- name: tree_feature
+  href: minecraftTree_feature.md
 - name: underwater_cave_carver_feature
-  href: minecraftUnderwater_cave_carver.md
+  href: minecraftUnderwater_cave_carver_feature.md
+- name: vegetation_patch_feature
+  href: minecraftVegetation_patch_feature.md
 - name: weighted_random_feature
   href: minecraftWeighted_random_feature.md

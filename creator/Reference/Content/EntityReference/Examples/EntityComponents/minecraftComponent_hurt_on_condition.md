@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:hurt_on_condition
 ms.prod: gaming
+description: "A reference document detailing the 'hurt_on_condition' entity component"
 ---
 
 # Entity Documentation - minecraft:hurt_on_condition

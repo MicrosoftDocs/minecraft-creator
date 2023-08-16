@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Particle Documentation - Emitter Initialization component
 ms.prod: gaming
+description: "A reference document detailing the 'emitter initialization' particle component"
 ---
 
 # Particle Documentation - Emitter Initialization component

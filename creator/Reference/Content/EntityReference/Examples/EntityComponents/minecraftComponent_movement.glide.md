@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:movement.glide
 ms.prod: gaming
+description: "A reference document detailing the 'movement.glide' entity component"
 ---
 
 # Entity Documentation - minecraft:movement.glide

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Item Documentation - minecraft:throwable
 ms.prod: gaming
+description: "A reference document detailing the 'throwable' item component"
 ---
 
 # Item Documentation - minecraft:throwable

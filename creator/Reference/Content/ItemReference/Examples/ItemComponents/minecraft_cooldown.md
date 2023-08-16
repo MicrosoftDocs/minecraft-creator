@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Item Documentation - minecraft:cooldown
 ms.prod: gaming
+description: "A reference document detailing the 'cooldown' item component"
 ---
 
 # Item Documentation - minecraft:cooldown

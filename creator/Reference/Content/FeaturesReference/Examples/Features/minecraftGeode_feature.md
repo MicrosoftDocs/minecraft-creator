@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Features Documentation - minecraft:geode_feature
 ms.prod: gaming
+description: "A reference document detailing the 'geode_feature' feature"
 ---
 
 # Features Documentation - minecraft:geode_feature

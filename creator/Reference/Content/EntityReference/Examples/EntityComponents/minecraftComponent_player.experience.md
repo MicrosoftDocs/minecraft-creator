@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:player.experience
 ms.prod: gaming
+description: "A reference document detailing the 'player.experience' entity component"
 ---
 
 # Entity Documentation - minecraft:player.experience

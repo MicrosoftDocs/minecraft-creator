@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.ProjectileHitEntityAfterEvent cla
 ---
 # ProjectileHitEntityAfterEvent Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains information related to a projectile hitting an entity.
 
 ## Properties

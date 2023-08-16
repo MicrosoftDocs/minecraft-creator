@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:rail_sensor
 ms.prod: gaming
+description: "A reference document detailing the 'rail_sensor' entity component"
 ---
 
 # Entity Documentation - minecraft:rail_sensor

@@ -3,6 +3,7 @@ author: neonerz
 ms.author: mikeam
 title: Preparing Raw Text for Localization
 ms.prod: gaming
+description: "A set of guidelines to use when preparing raw text files for localization"
 ---
 # Preparing Raw Text for Localization
 

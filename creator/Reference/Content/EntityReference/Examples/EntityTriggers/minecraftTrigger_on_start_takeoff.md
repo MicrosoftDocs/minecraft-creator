@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:on_start_takeoff
 ms.prod: gaming
+description: "A reference document detailing the 'on_start_takeoff' entity trigger"
 ---
 
 # Entity Documentation - minecraft:on_start_takeoff

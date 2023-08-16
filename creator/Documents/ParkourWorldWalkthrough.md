@@ -3,7 +3,7 @@ author: mammerla
 ms.author: v-bbortree
 title: Parkour Map Walkthrough
 ms.prod: gaming
-description: "Let's walkthrough a sample parkour map"
+description: "Let's walk through a sample parkour map"
 ---
 
 # Parkour Map Walkthrough

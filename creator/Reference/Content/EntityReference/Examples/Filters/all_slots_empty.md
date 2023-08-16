@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - all_slots_empty
 ms.prod: gaming
+description: "A reference document detailing the 'all_slots_empty' entity filter"
 ---
 
 # Entity Documentation - all_slots_empty

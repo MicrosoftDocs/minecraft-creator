@@ -1,17 +1,18 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Mob Flame effect
 ms.prod: gaming
+description: "A reference document detailing the 'mob flame effect' particle effect"
 ---
 
 # Mob Flame effect
 
-The mob flame effect is used by the Blaze when it's charging up to hurl fireballs.  This is a flipbook flame effect that rises over time.
+The mob flame effect is used by the Blaze when it's charging up to hurl fireballs.  This is a flip book flame effect that rises over time.
 
 Unlike the earlier particles, this is a regular emitter.  It is tied to an entity, thus uses the entity_aabb shape, as we want the flames to appear all over the blaze.  As the effect is tied to the charged state, the activation expression is used, tied to the `EntityFlag::CHARGED` entity variable.  This causes the flames to appear when the Blaze is charging, then to disappear when it isn't.
 
-In this case, we use the texturewidth/height to make the texel "resolution" be one frame of animation, thus allowing advancement of the frames to be just 1:
+In this case, we use the texture width/height to make the texel "resolution" be one frame of animation, thus allowing advancement of the frames to be just 1:
 
 ```json
 

@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.rising
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.rising' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.rising

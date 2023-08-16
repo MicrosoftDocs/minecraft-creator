@@ -3,6 +3,7 @@ author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - minecraft:repairable
 ms.prod: gaming
+description: "A reference document detailing the 'repairable' item component"
 ---
 
 # Item Documentation - minecraft:repairable

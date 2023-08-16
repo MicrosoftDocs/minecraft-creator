@@ -3,6 +3,7 @@ author: iconicNurdle
 ms.author: mikeam
 title: Block Documentation - Block States List
 ms.prod: gaming
+description: "A reference document listing all currently available block states"
 ---
 
 # Block Documentation - Block States
@@ -97,7 +98,7 @@ Here is a list of all the Block States within Minecraft: Bedrock Edition. You ca
 |repeater_delay |Integer |0 - 3 |powered repeater, unpowered repeater |Determines the amount of delay of a repeater|
 |respawn_anchor_charge |Integer |0 - 4 |respawn anchor | Determines level of charge (number of respawns remaining) for a respawn anchor |
 |rotation|Integer |0 - 15 |jigsaw |Sets rotation for jigsaw block|
-|sandstone_type |String |default, heiroglyphs, cut, smooth |sandstone, red sandstone |Determines the pattern of a sandstone block|
+|sandstone_type |String |default, hieroglyphs, cut, smooth |sandstone, red sandstone |Determines the pattern of a sandstone block|
 |sand_type |String |normal, red |sand |Determines the sand type of a block|
 |sapling_type |String |evergreen, birch, jungle, acacia, roofed_oak |bamboo sapling, sapling |Determines the type of the sapling block|
 |sculk_sensor_phase | String | inactive, active, cooldown | *TBD* |Determines the current phase of a sculk sensor block. |
@@ -108,7 +109,7 @@ Here is a list of all the Block States within Minecraft: Bedrock Edition. You ca
 |stone_brick_type |String |default, mossy, cracked, chiseled, smooth |stone brick |Determines the type of a stone brick block|
 |stone_slab_type |String |smooth_stone, sandstone, wood, cobblestone, brick, stone_brick, quartz, nether_brick |double stone slab, stone slab |Determines the type of some stone slab blocks|
 |stone_slab_type_2 |String |red_sandstone, purpur, prismarine_rough, prismarine_dark, prismarine_brick, mossy_cobblestone, smooth_sandstone, red_nether_brick |double stone slab 2, stone slab 2 |Determines the type of some stone slab blocks|
-|stone_slab_type_3 |String |end_stone_brick, smooth_red_sandstone, polishe_andesite, andesite, diorite, polished_diorite, granite, polished_granite |double stone slab 3, stone slab 3 |Determines the type of some stone slab blocks|
+|stone_slab_type_3 |String |end_stone_brick, smooth_red_sandstone, polished_andesite, andesite, diorite, polished_diorite, granite, polished_granite |double stone slab 3, stone slab 3 |Determines the type of some stone slab blocks|
 |stone_slab_type_4 |String |mossy_stone_brick, smooth_quartz, stone, cut_sandstone, cut_red_sandstone |double stone slab 4, stone slab 4 |Determines the type of some stone slab blocks|
 |stone_type |String |stone, granite, granite_smooth, diorite, diorite_smooth, andesite, andesite_smooth |stone, granite, smooth granite, diorite, smooth diorite, andesite, smooth andesite |Determines the stone type of a block|
 |stripped_bit |Boolean |True, False |mangrove wood, wood |Describes if a wood log has been stripped of bark|

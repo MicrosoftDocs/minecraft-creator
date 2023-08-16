@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Block Documentation - minecraft:destructible_by_mining
 ms.prod: gaming
+description: "A reference document detailing the 'destructible_by_mining' block component"
 ---
 
 # Block Documentation - minecraft:destructible_by_mining

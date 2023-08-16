@@ -3,7 +3,7 @@ author: iconicNurdle
 ms.author: mikeam
 title: Getting Started with Minecraft Bedrock Editor Extensions
 ms.prod: gaming
-description: How to get started creating Editor Extensions
+description: "How to get started creating Editor Extensions"
 ---
 
 # Getting Started with Editor Extensions

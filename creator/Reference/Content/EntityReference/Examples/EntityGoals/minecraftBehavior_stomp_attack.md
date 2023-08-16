@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.stomp_attack
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.stomp_attack' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.stomp_attack

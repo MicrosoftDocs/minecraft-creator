@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:color
 ms.prod: gaming
+description: "A reference document detailing the 'color' entity component"
 ---
 
 # Entity Documentation -  minecraft:color
@@ -48,4 +49,3 @@ ms.prod: gaming
 - [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
 - [tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/tropicalfish.md)
 - [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
-

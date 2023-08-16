@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Item Documentation - minecraft:item_storage
 ms.prod: gaming
+description: "A reference document detailing the 'item_storage' item component"
 ---
 
 # Item Documentation - minecraft:item_storage

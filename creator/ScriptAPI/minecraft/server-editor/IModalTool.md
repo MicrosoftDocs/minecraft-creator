@@ -8,8 +8,6 @@ description: Contents of the @minecraft/server-editor.IModalTool class.
 ---
 # IModalTool Interface
 
-@beta
-
 ## Properties
 
 ### **id**
@@ -18,9 +16,6 @@ description: Contents of the @minecraft/server-editor.IModalTool class.
 Unique ID for the tool
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **onModalToolActivation**
 `onModalToolActivation: EventSink<ModalToolLifecycleEventPayload>;`
@@ -28,9 +23,6 @@ Type: *string*
 Provides lifecycle activation events for a modal tool
 
 Type: *EventSink<ModalToolLifecycleEventPayload>*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ## Methods
 - [bindPropertyPane](#bindpropertypane)
@@ -55,9 +47,6 @@ Binds a property pane to the toggle option. Show/hide will be handle depending s
 
 #### **Returns** *void*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **dispose**
 `
 dispose(): void
@@ -67,9 +56,6 @@ Destroy the tool.
 
 #### **Returns** *void*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **hide**
 `
 hide(): void
@@ -78,9 +64,6 @@ hide(): void
 Hide the tool.
 
 #### **Returns** *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 ### **registerKeyBinding**
 `
@@ -102,9 +85,6 @@ Register a key press binding for an action which will be handled by the tool inp
 
 #### **Returns** *void*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **registerMouseButtonBinding**
 `
 registerMouseButtonBinding(action: SupportedMouseActionTypes): void
@@ -118,9 +98,6 @@ Register an action to be called when mouse left/middle/right buttons are pressed
   Action to register the binding for.
 
 #### **Returns** *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 ### **registerMouseDragBinding**
 `
@@ -136,9 +113,6 @@ Register an action to be called when mouse is dragged while left mouse button is
 
 #### **Returns** *void*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **registerMouseWheelBinding**
 `
 registerMouseWheelBinding(action: SupportedMouseActionTypes): void
@@ -153,9 +127,6 @@ Register an action to be called when mouse wheel is scrolled.
 
 #### **Returns** *void*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **show**
 `
 show(): void
@@ -165,9 +136,6 @@ Show the tool.
 
 #### **Returns** *void*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **unregisterInputBindings**
 `
 unregisterInputBindings(): void
@@ -176,6 +144,3 @@ unregisterInputBindings(): void
 Unregister all input binding for this toggle.
 
 #### **Returns** *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.

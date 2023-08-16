@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:skin_id
 ms.prod: gaming
+description: "A reference document detailing the 'skin_id' entity component"
 ---
 
 # Entity Documentation -  minecraft:skin_id

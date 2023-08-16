@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.random_stroll
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.random_stroll' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.random_stroll
@@ -15,9 +16,9 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 |interval| 120| Integer|  A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal. |
 |priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|speed_multiplier| 1.0| Decimal|  Movement speed multiplier of the mob when using this AI Goal. |
-|xz_dist| 10| Integer|  Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1. |
-|y_dist| 7| Integer|  Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1. |
+|speed_multiplier| 1.0| Decimal|  Movement speed multiplier of the entity when using this AI Goal. |
+|xz_dist| 10| Integer|  Distance in blocks on ground that the entity will look for a new spot to move to. Must be at least 1. |
+|y_dist| 7| Integer|  Distance in blocks that the entity will look up or down for a new spot to move to. Must be at least 1. |
 
 ## Example
 

@@ -11,8 +11,6 @@ description: Contents of the @minecraft/server-editor.IPropertyItemOptionsSubPan
 ## Extends
 - *IPropertyItemOptions*
 
-@beta
-
 ## Properties
 
 ### **pane**
@@ -21,6 +19,3 @@ description: Contents of the @minecraft/server-editor.IPropertyItemOptionsSubPan
 The sub pane to render in UI.
 
 Type: *IPropertyPane*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.

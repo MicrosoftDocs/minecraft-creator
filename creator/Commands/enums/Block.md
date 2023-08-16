@@ -10,6 +10,8 @@ description: Description and values of the Block enum
 Minecraft block
 
 ## Values
+- `minecraft:cyan_terracotta`
+- `cyan_terracotta`
 - `minecraft:blue_candle`
 Blue Candle
 - `blue_candle`
@@ -412,6 +414,8 @@ Stripped Jungle Log
 Polished Blackstone Double Slab
 - `polished_blackstone_double_slab`
 Polished Blackstone Double Slab
+- `minecraft:light_gray_terracotta`
+- `light_gray_terracotta`
 - `minecraft:smoker`
 Smoker
 - `smoker`
@@ -536,6 +540,8 @@ Gray Candle
 Mangrove Planks
 - `mangrove_planks`
 Mangrove Planks
+- `minecraft:red_terracotta`
+- `red_terracotta`
 - `minecraft:magenta_wool`
 - `magenta_wool`
 - `minecraft:magenta_glazed_terracotta`
@@ -692,6 +698,8 @@ Jungle Pressure Plate
 Double Cut Copper Slab
 - `double_cut_copper_slab`
 Double Cut Copper Slab
+- `minecraft:blue_terracotta`
+- `blue_terracotta`
 - `minecraft:sandstone`
 Sandstone
 - `sandstone`
@@ -734,6 +742,8 @@ Stone Stairs
 Stone Stairs
 - `minecraft:gray_stained_glass`
 - `gray_stained_glass`
+- `minecraft:green_terracotta`
+- `green_terracotta`
 - `minecraft:deepslate_brick_slab`
 Deepslate Brick Slab
 - `deepslate_brick_slab`
@@ -860,6 +870,8 @@ Monster Egg
 Polished Granite Stairs
 - `polished_granite_stairs`
 Polished Granite Stairs
+- `minecraft:pink_terracotta`
+- `pink_terracotta`
 - `minecraft:pink_candle_cake`
 Pink Candle Cake
 - `pink_candle_cake`
@@ -896,6 +908,8 @@ Structure Void
 Polished Blackstone Brick Slab
 - `polished_blackstone_brick_slab`
 Polished Blackstone Brick Slab
+- `minecraft:yellow_terracotta`
+- `yellow_terracotta`
 - `minecraft:snow`
 Snow
 - `snow`
@@ -1004,6 +1018,8 @@ Crimson Trapdoor
 Basalt
 - `basalt`
 Basalt
+- `minecraft:light_blue_terracotta`
+- `light_blue_terracotta`
 - `minecraft:lit_redstone_lamp`
 Lit Redstone Lamp
 - `lit_redstone_lamp`
@@ -1134,6 +1150,8 @@ Deepslate Tiles
 Smooth Stone
 - `smooth_stone`
 Smooth Stone
+- `minecraft:gray_terracotta`
+- `gray_terracotta`
 - `minecraft:lime_concrete`
 - `lime_concrete`
 - `minecraft:black_candle_cake`
@@ -1148,6 +1166,8 @@ Red Mushroom
 Gilded Blackstone
 - `gilded_blackstone`
 Gilded Blackstone
+- `minecraft:magenta_terracotta`
+- `magenta_terracotta`
 - `minecraft:exposed_cut_copper_stairs`
 Exposed Cut Copper Stairs
 - `exposed_cut_copper_stairs`
@@ -1270,6 +1290,8 @@ Cave Vines
 Iron Bars
 - `iron_bars`
 Iron Bars
+- `minecraft:white_terracotta`
+- `white_terracotta`
 - `minecraft:light_blue_carpet`
 - `light_blue_carpet`
 - `minecraft:oak_hanging_sign`
@@ -1764,6 +1786,8 @@ Prismarine
 Magenta Candle Cake
 - `magenta_candle_cake`
 Magenta Candle Cake
+- `minecraft:black_terracotta`
+- `black_terracotta`
 - `minecraft:leaves`
 Leaves
 - `leaves`
@@ -1804,10 +1828,6 @@ Waxed Weathered Cut Copper Stairs
 Mangrove Roots
 - `mangrove_roots`
 Mangrove Roots
-- `minecraft:stained_hardened_clay`
-Stained Hardened Clay
-- `stained_hardened_clay`
-Stained Hardened Clay
 - `minecraft:yellow_candle`
 Yellow Candle
 - `yellow_candle`
@@ -1890,6 +1910,8 @@ Structure Block
 End Brick Stairs
 - `end_brick_stairs`
 End Brick Stairs
+- `minecraft:purple_terracotta`
+- `purple_terracotta`
 - `minecraft:target`
 Target
 - `target`
@@ -2436,6 +2458,8 @@ Cave Vines Head with Berries
 Dark Oak Trapdoor
 - `dark_oak_trapdoor`
 Dark Oak Trapdoor
+- `minecraft:orange_terracotta`
+- `orange_terracotta`
 - `minecraft:waxed_oxidized_copper`
 Waxed Oxidized Copper
 - `waxed_oxidized_copper`
@@ -2624,6 +2648,8 @@ Magma
 Dispenser
 - `dispenser`
 Dispenser
+- `minecraft:brown_terracotta`
+- `brown_terracotta`
 - `minecraft:deepslate_diamond_ore`
 Deepslate Diamond Ore
 - `deepslate_diamond_ore`
@@ -2674,6 +2700,8 @@ Weathered Copper
 Unlit Redstone Torch
 - `unlit_redstone_torch`
 Unlit Redstone Torch
+- `minecraft:lime_terracotta`
+- `lime_terracotta`
 - `minecraft:cherry_fence_gate`
 - `cherry_fence_gate`
 - `minecraft:gray_glazed_terracotta`
@@ -2818,6 +2846,10 @@ Carpet
 Concrete
 - `minecraft:concrete`
 Concrete
+- `stained_hardened_clay`
+Stained Hardened Clay
+- `minecraft:stained_hardened_clay`
+Stained Hardened Clay
 - `stained_glass`
 Stained Glass
 - `minecraft:stained_glass`

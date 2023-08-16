@@ -1,15 +1,16 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - any_slot_empty
 ms.prod: gaming
+description: "A reference document detailing the 'any_slot_empty' entity filter"
 ---
 
 # Entity Documentation - any_slot_empty
 
 Returns true when the designated equipment location for the subject entity has any empty slot.
 
-### subject
+## subject
 
 | Options| Description |
 |:-----------|:-----------|

@@ -21,6 +21,3 @@ unsubscribe(): void
 Removes registered listener from an event
 
 #### **Returns** *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.

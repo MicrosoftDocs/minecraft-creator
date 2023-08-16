@@ -3,6 +3,7 @@ author: mammerla
 ms.author: v-jillheaden
 title: Mash-up Pack Overview
 ms.prod: gaming
+description: "Learn about what constitutes a mash-up pack and how the components work"
 ---
 
 # Overview of a Mash-up Pack

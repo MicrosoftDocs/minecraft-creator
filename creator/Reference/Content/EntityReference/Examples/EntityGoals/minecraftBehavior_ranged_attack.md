@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-bbortree
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.ranged_attack
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.ranged_attack' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.ranged_attack
 
-`minecraft:behavior.ranged_attack` allows an entity to attack by using ranged shots. `charge_shoot_trigger` must be greater than 0 to enable charged up burst-shot attacks. Requires minecraft:shooter to define projectile behavior.
+`minecraft:behavior.ranged_attack` compels an entity to attack by using ranged shots. `charge_shoot_trigger` must be greater than 0 to enable charged up burst-shot attacks. Requires minecraft:shooter to define projectile behavior.
 
 ## Parameter
 

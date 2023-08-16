@@ -21,6 +21,3 @@ teardown(): void
 Initiates the teardown and cleanup of this disposable item.
 
 #### **Returns** *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.

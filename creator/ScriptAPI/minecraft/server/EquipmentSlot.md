@@ -8,33 +8,30 @@ description: Contents of the .EquipmentSlot enumeration.
 ---
 # EquipmentSlot Enumeration
 
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 The equipment slot of the mob. This includes armor, offhand and mainhand slots.
 
 ## Constants
-### **chest**
-`chest = "chest"`
+### **Chest**
+`Chest = "Chest"`
 
 The chest slot. This slot is used to hold items such as Chestplate or Elytra.
-### **feet**
-`feet = "feet"`
+### **Feet**
+`Feet = "Feet"`
 
 The feet slot. This slot is used to hold items such as Boots.
-### **head**
-`head = "head"`
+### **Head**
+`Head = "Head"`
 
 The head slot. This slot is used to hold items such as Helmets or Carved Pumpkins.
-### **legs**
-`legs = "legs"`
+### **Legs**
+`Legs = "Legs"`
 
 The legs slot. This slot is used to hold items such as Leggings.
-### **mainhand**
-`mainhand = "mainhand"`
+### **Mainhand**
+`Mainhand = "Mainhand"`
 
 The mainhand slot. For players, the mainhand slot refers to the currently active hotbar slot.
-### **offhand**
-`offhand = "offhand"`
+### **Offhand**
+`Offhand = "Offhand"`
 
 The offhand slot. This slot is used to hold items such as shields and maps.

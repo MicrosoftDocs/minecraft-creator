@@ -3,6 +3,7 @@ author: mammerla
 ms.author: v-jillheaden
 title: Packaging a Skin Pack
 ms.prod: gaming
+description: "A guide to skin packs in Minecraft: Bedrock Edition"
 ---
 
 # Packaging a Skin Pack

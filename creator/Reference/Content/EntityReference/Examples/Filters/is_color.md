@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_color
 ms.prod: gaming
+description: "A reference document detailing the 'is_color' entity filter"
 ---
 
 # Entity Documentation - is_color
