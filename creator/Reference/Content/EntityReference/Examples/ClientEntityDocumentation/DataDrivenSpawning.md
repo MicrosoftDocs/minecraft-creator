@@ -1,8 +1,9 @@
 ---
 author: JimSeaman42
-ms.author: v-jimseaman
+ms.author: mikeam
 title: Data-Driven Spawn Rules
 ms.prod: gaming
+description: "A reference document outlining the concept of data-driven spawning"
 ---
 
 # Data-Driven Spawn Rules

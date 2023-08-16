@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Block Documentation - swing
 ms.prod: gaming
+description: "A reference document detailing the 'swing' block event response"
 ---
 
 # Block Documentation - swing

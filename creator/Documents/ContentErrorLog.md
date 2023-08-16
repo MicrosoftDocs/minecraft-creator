@@ -3,18 +3,12 @@ author: neonerz
 ms.author: mikeam
 title: Content Error Log
 ms.prod: gaming
+description: "Learn more about the messages in the content error log and what they mean"
 ---
 
 # Content Error Log
 
 While playing Minecraft: Bedrock Edition, the game is constantly processing content to produce the game experience we all know and love. This content can be anything from textures for character skins, configuration files describing how a torch's fire looks, or a behavior for a mob. While this is going on, Minecraft logs information related to this in a separate content specific log. Some of these messages are just noting normal game operations, but some of the messages denote problems detected in content that can either lead to instability or unpredictable behavior.
-
-In this tutorial you will learn the following:
-
-> [!div class="checklist"]
->
-> - What sort of messages are logged and how to differentiate between them.
-> - How to enable logging in order to access those messages.
 
 The messages in this log are broken into two larger categories outlined below.
 

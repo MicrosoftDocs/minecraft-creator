@@ -124,9 +124,6 @@ Takes the input object (a property bag of values) and bind it to the pane as a d
 
 #### **Returns** *T*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **executeLargeOperation**
 `
 executeLargeOperation(selection: Selection, operation: (blockLocation: Vector3) => void): Promise<void>
@@ -144,9 +141,6 @@ Executes an operation over a selection via chunks to allow splitting operation o
 
 #### **Returns** *Promise<void>*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **getLocalizationId**
 `
 getLocalizationId(locId: string): string
@@ -158,9 +152,6 @@ Adds the resource pack editor prefix and returns the full localization ID
 - **locId**: *string*
 
 #### **Returns** *string*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 ### **registerEditorExtension**
 `
@@ -176,9 +167,6 @@ Registers an editor extension into Minecraft. This function calls underlying fun
 - **options**: *IRegisterExtensionOptionalParameters*
 
 #### **Returns** *Extension*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 ## Objects
   

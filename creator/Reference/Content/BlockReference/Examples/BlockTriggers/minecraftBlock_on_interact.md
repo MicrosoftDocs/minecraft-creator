@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Block Documentation - minecraft:on_interact
 ms.prod: gaming
+description: "A reference document detailing the 'on_interact' block trigger"
 ---
 
 # Block Documentation - minecraft:on_interact

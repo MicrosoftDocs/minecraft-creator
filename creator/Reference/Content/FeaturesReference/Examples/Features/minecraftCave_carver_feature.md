@@ -1,13 +1,13 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: JimSeaman42
+ms.author: mikeam
 title: Features Documentation - minecraft:cave_carver_feature
 ms.prod: gaming
 ---
 
 # Features Documentation - minecraft:cave_carver_feature
 
-`minecraft:cave_carver_feature` carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.This feature will also only work when placed specifically in the pass "pregeneration_pass".
+`minecraft:cave_carver_feature` carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern. This feature only works when placed in the pass "pregeneration_pass".
 
 ## Example
 
@@ -22,7 +22,7 @@ ms.prod: gaming
     },
     "fill_with": "minecraft:air",
     "width_modifier": 0.0,
-		"skip_carve_chance": 15
+  "skip_carve_chance": 15
   }
 }
 ```

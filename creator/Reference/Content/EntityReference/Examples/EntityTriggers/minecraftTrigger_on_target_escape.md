@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - minecraft:on_target_escape
 ms.prod: gaming
+description: "A reference document detailing the 'on_target_escape' entity trigger"
 ---
 
 # Entity Documentation - minecraft:on_target_escape

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Block Documentation - minecraft:on_step_on
 ms.prod: gaming
+description: "A reference document detailing the 'on_step_on' block trigger"
 ---
 
 # Block Documentation - minecraft:on_step_on

@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Block Documentation - spawn_loot
 ms.prod: gaming
+description: "A reference document detailing the 'spawn_loot' block event response"
 ---
 
 # Block Documentation - spawn_loot

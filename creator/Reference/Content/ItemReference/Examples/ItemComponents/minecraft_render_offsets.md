@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Item Documentation - minecraft:render_offsets
 ms.prod: gaming
+description: "A reference document detailing the 'render_offsets' item component"
 ---
 
 # Item Documentation - minecraft:render_offsets

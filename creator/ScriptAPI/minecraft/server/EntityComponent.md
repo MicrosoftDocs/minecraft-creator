@@ -21,7 +21,7 @@ description: Contents of the @minecraft/server.EntityComponent class.
 - [*EntityCanFlyComponent*](EntityCanFlyComponent.md)
 - [*EntityCanPowerJumpComponent*](EntityCanPowerJumpComponent.md)
 - [*EntityColorComponent*](EntityColorComponent.md)
-- [*EntityEquipmentInventoryComponent*](EntityEquipmentInventoryComponent.md)
+- [*EntityEquippableComponent*](EntityEquippableComponent.md)
 - [*EntityFireImmuneComponent*](EntityFireImmuneComponent.md)
 - [*EntityFloatsInLiquidComponent*](EntityFloatsInLiquidComponent.md)
 - [*EntityFlyingSpeedComponent*](EntityFlyingSpeedComponent.md)

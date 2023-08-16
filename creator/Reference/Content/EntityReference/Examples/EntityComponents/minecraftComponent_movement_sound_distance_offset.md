@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:movement_sound_distance_offset
 ms.prod: gaming
+description: "A reference document detailing the 'movement_sound_distance_offset' entity component"
 ---
 
 # Entity Documentation -  minecraft:movement_sound_distance_offset

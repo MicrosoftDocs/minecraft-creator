@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: "Schema Documentation - geometry:1.14.0"
 ms.prod: gaming
+description: "A reference document detailing the 'geometry:1.14.0' schema"
 ---
 
 # Schema Documentation - geometry:1.14.0

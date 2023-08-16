@@ -18,9 +18,6 @@ Parameters for creating a modal tool in the tool container
 The displayed string for the tool
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **displayStringId**
 `displayStringId: string;`
@@ -28,9 +25,6 @@ Type: *string*
 Loc ID (resolved on client)
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **icon**
 `icon: string;`
@@ -38,9 +32,6 @@ Type: *string*
 Icon, if any (from resource pack on client)
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **tooltipAltText**
 `tooltipAltText: string;`
@@ -48,9 +39,6 @@ Type: *string*
 tooltipAltText alt text, if any
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **tooltipStringId**
 `tooltipStringId: string;`
@@ -58,6 +46,3 @@ Type: *string*
 Tooltip localization string ID
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.

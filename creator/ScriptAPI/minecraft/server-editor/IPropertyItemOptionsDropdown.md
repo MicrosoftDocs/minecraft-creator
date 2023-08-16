@@ -11,8 +11,6 @@ description: Contents of the @minecraft/server-editor.IPropertyItemOptionsDropdo
 ## Extends
 - *IPropertyItemOptions*
 
-@beta
-
 ## Properties
 
 ### **dropdownItems**
@@ -21,6 +19,3 @@ description: Contents of the @minecraft/server-editor.IPropertyItemOptionsDropdo
 The possible options for the drop down control.
 
 Type: *IDropdownItem[]*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.

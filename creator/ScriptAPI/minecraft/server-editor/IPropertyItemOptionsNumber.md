@@ -11,8 +11,6 @@ description: Contents of the @minecraft/server-editor.IPropertyItemOptionsNumber
 ## Extends
 - *IPropertyItemOptions*
 
-@beta
-
 ## Properties
 
 ### **max**
@@ -21,9 +19,6 @@ description: Contents of the @minecraft/server-editor.IPropertyItemOptionsNumber
 The min possible value for the number.
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **min**
 `min: number;`
@@ -31,9 +26,6 @@ Type: *number*
 The max possible value for the number.
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **showSlider**
 `showSlider: boolean;`
@@ -41,6 +33,3 @@ Type: *number*
 If UI should show slider control.
 
 Type: *boolean*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.

@@ -258,8 +258,8 @@
         href: minecraft/server/EntityDieAfterEvent.md
       - name: EntityDieAfterEventSignal
         href: minecraft/server/EntityDieAfterEventSignal.md
-      - name: EntityEquipmentInventoryComponent
-        href: minecraft/server/EntityEquipmentInventoryComponent.md
+      - name: EntityEquippableComponent
+        href: minecraft/server/EntityEquippableComponent.md
       - name: EntityFireImmuneComponent
         href: minecraft/server/EntityFireImmuneComponent.md
       - name: EntityFloatsInLiquidComponent
@@ -368,10 +368,14 @@
         href: minecraft/server/EntityOnFireComponent.md
       - name: EntityPushThroughComponent
         href: minecraft/server/EntityPushThroughComponent.md
-      - name: EntityRemovedAfterEvent
-        href: minecraft/server/EntityRemovedAfterEvent.md
-      - name: EntityRemovedAfterEventSignal
-        href: minecraft/server/EntityRemovedAfterEventSignal.md
+      - name: EntityRemoveAfterEvent
+        href: minecraft/server/EntityRemoveAfterEvent.md
+      - name: EntityRemoveAfterEventSignal
+        href: minecraft/server/EntityRemoveAfterEventSignal.md
+      - name: EntityRemoveBeforeEvent
+        href: minecraft/server/EntityRemoveBeforeEvent.md
+      - name: EntityRemoveBeforeEventSignal
+        href: minecraft/server/EntityRemoveBeforeEventSignal.md
       - name: EntityRideableComponent
         href: minecraft/server/EntityRideableComponent.md
       - name: EntityRidingComponent

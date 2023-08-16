@@ -1,15 +1,16 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - is_raider
 ms.prod: gaming
+description: "A reference document detailing the 'is_raider' entity filter"
 ---
 
 # Entity Documentation - is_raider
 
 Tests if the subject is a raider.
 
-### subject
+## subject
 
 | Options| Description |
 |:-----------|:-----------|

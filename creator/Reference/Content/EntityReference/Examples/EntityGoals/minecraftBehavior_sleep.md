@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.sleep
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.sleep' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.sleep

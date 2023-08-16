@@ -26,6 +26,3 @@ Subscribes an event handler to a particular subscription.
   Handler function to subscribe with.
 
 #### **Returns** *IEventToken* - An event handler subscription token that can be used to unsubscribe and clean-up handlers.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.

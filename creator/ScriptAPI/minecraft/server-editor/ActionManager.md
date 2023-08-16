@@ -18,9 +18,6 @@ Binds actions to the client and manages their lifetime. Action managers are mana
 The active tool ID
 
 Type: *string | undefined*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ## Methods
 - [createAction](#createaction)
@@ -38,6 +35,3 @@ Creates an action and registers it on the client
   The raw action to create. See ActionTypes for supported parameters
 
 #### **Returns** *RegisteredAction<T>*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.

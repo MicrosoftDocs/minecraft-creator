@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:physics
 ms.prod: gaming
+description: "A reference document detailing the 'physics' entity component"
 ---
 
 # Entity Documentation - minecraft:physics

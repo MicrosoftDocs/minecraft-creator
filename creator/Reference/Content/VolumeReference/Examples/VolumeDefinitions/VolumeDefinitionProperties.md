@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Volume Documentation - Properties & Descriptions
 ms.prod: gaming
+description: "A reference document detailing the volume definition and volume properties used in volume JSON files"
 ---
 
 # Volume Documentation - Properties & Descriptions

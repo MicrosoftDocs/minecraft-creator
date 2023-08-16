@@ -32,6 +32,14 @@ Type: [*DataDrivenEntityTriggerBeforeEventSignal*](DataDrivenEntityTriggerBefore
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+### **entityRemove**
+`read-only entityRemove: EntityRemoveBeforeEventSignal;`
+
+Type: [*EntityRemoveBeforeEventSignal*](EntityRemoveBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **explosion**
 `read-only explosion: ExplosionBeforeEventSignal;`
 

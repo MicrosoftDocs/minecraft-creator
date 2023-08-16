@@ -1,9 +1,9 @@
 ---
-author: JDHeaden
+author: iconicNurdle
 ms.author: v-jillheaden
 title: Minecraft Bedrock Editor Overview
 ms.prod: gaming
-description: An overview of the parts of Minecraft Bedrock Editor
+description: "An overview of the parts of Minecraft Bedrock Editor"
 ---
 
 # Editor Overview

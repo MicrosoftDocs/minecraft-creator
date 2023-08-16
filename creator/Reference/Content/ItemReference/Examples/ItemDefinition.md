@@ -3,12 +3,12 @@ author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - Item Definition Properties
 ms.prod: gaming
+description: "A reference document detailing item definition properties"
 ---
 
 # Item Definition Properties
 
 Properties are part of the Item Definition, which helps the system determine how to parse and initialize this item.
-
 
 ## Item Description Properties
 

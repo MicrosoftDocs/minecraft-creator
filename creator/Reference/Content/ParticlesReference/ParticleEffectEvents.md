@@ -3,6 +3,7 @@ author: JimSeaman42
 ms.author: mikeam
 title: Particle Documentation - Particle Effect Events
 ms.prod: gaming
+description: "A reference document introducing the concept of particle effect events to creators"
 ---
 
 # Particle Documentation - Particle Effect Events
@@ -61,7 +62,7 @@ When using **random**, one element will be picked from the array based on the we
   ]
 },
 
-// Fields for a particlar event. Note that any of the above nodes can have events inserted into their blocks.
+// Fields for a particular event. Note that any of the above nodes can have events inserted into their blocks.
 "event_subpart": {
     "particle_effect": {
       // identifier of the effect

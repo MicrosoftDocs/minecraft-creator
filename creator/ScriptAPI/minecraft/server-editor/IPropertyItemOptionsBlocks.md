@@ -11,8 +11,6 @@ description: Contents of the @minecraft/server-editor.IPropertyItemOptionsBlocks
 ## Extends
 - *IPropertyItemOptions*
 
-@beta
-
 ## Properties
 
 ### **allowedBlocks**
@@ -21,6 +19,3 @@ description: Contents of the @minecraft/server-editor.IPropertyItemOptionsBlocks
 The allowed blocks for the Block Picker.
 
 Type: *string[]*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.

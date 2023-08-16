@@ -30,9 +30,6 @@ Dispatch a player log message with Debug log level
 
 #### **Returns** *void*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **error**
 `
 error(message: string): void
@@ -46,9 +43,6 @@ Dispatch a player log message with Error log level
   Message content
 
 #### **Returns** *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 ### **info**
 `
@@ -64,9 +58,6 @@ Dispatch a player log message with Info log level
 
 #### **Returns** *void*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **warning**
 `
 warning(message: string): void
@@ -80,6 +71,3 @@ Dispatch a player log message with Warning log level
   Message content
 
 #### **Returns** *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.

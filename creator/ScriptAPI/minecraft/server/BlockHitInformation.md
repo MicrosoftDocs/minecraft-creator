@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.BlockHitInformation class.
 ---
 # BlockHitInformation Interface
 
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains more information for events where a block is hit.
 
 ## Properties

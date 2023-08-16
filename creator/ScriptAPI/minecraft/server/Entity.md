@@ -79,6 +79,14 @@ Type: *boolean*
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+### **isSleeping**
+`read-only isSleeping: boolean;`
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **isSneaking**
 `isSneaking: boolean;`
 
@@ -182,6 +190,7 @@ Type: *string*
 - [getEffects](#geteffects)
 - [getEntitiesFromViewDirection](#getentitiesfromviewdirection)
 - [getHeadLocation](#getheadlocation)
+- [getProperty](#getproperty)
 - [getRotation](#getrotation)
 - [getTags](#gettags)
 - [getVelocity](#getvelocity)
@@ -195,10 +204,12 @@ Type: *string*
 - [removeDynamicProperty](#removedynamicproperty)
 - [removeEffect](#removeeffect)
 - [removeTag](#removetag)
+- [resetProperty](#resetproperty)
 - [runCommand](#runcommand)
 - [runCommandAsync](#runcommandasync)
 - [setDynamicProperty](#setdynamicproperty)
 - [setOnFire](#setonfire)
+- [setProperty](#setproperty)
 - [setRotation](#setrotation)
 - [teleport](#teleport)
 - [triggerEvent](#triggerevent)
@@ -613,6 +624,22 @@ Returns the current location of the head component of this entity.
 > [!WARNING]
 > This function can throw errors.
 
+### **getProperty**
+`
+getProperty(identifier: string): boolean | number | string | undefined
+`
+
+#### **Parameters**
+- **identifier**: *string*
+
+#### **Returns** *boolean* | *number* | *string* | *undefined*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **getRotation**
 `
 getRotation(): Vector2
@@ -850,6 +877,25 @@ Removes a specified tag from an entity.
 > [!WARNING]
 > This function can throw errors.
 
+### **resetProperty**
+`
+resetProperty(identifier: string): boolean | number | string
+`
+
+#### **Parameters**
+- **identifier**: *string*
+
+#### **Returns** *boolean* | *number* | *string*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **runCommand**
 `
 runCommand(commandString: string): CommandResult
@@ -963,6 +1009,24 @@ Sets an entity on fire (if it is not in water or rain). Note that you can call g
   }, 20);
 ```
 
+### **setProperty**
+`
+setProperty(identifier: string, value: boolean | number | string): void
+`
+
+#### **Parameters**
+- **identifier**: *string*
+- **value**: *boolean* | *number* | *string*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **setRotation**
 `
 setRotation(rotation: Vector2): void
@@ -1037,9 +1101,6 @@ Triggers an entity type event. For every entity, a number of events are defined 
 - **eventName**: *string*
   
   Name of the entity type event to trigger. If a namespace is not specified, minecraft: is assumed.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

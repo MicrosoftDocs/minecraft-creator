@@ -26,6 +26,14 @@ Type: [*Camera*](Camera.md)
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+### **isEmoting**
+`read-only isEmoting: boolean;`
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **isFlying**
 `read-only isFlying: boolean;`
 

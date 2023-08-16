@@ -1,9 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Creating a Loot Table
 ms.prod: gaming
-description: A Tutorial on Creating a Loot Table
+description: "A tutorial detailing the process of creating a loot table"
 ---
 
 # Creating a Loot Table

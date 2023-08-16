@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.scenting
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.scenting' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.scenting
 
-`minecraft:behavior.scenting` compels the a mob to scent for a specified duration.
+`minecraft:behavior.scenting` compels an entity to scent for a specified duration.
 
 > [!IMPORTANT]
 > `minecraft:behavior.scenting` is an internal-only component used by Vanilla Minecraft entities; `minecraft:behavior.scenting` is not available to creators at this time.

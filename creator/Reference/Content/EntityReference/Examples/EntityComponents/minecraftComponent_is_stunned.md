@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - minecraft:is_stunned
 ms.prod: gaming
+description: "A reference document detailing the 'is_stunned' entity component"
 ---
 
 # Entity Documentation -  minecraft:is_stunned

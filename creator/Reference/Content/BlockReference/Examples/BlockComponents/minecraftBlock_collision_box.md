@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Block Documentation - minecraft:collision_box
 ms.prod: gaming
+description: "A reference document detailing the 'collision_box' block component"
 ---
 
 # Block Documentation - minecraft:collision_box

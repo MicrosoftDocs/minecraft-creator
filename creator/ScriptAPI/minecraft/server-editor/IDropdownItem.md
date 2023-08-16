@@ -8,8 +8,6 @@ description: Contents of the @minecraft/server-editor.IDropdownItem class.
 ---
 # IDropdownItem Interface
 
-@beta
-
 ## Properties
 
 ### **displayAltText**
@@ -18,9 +16,6 @@ description: Contents of the @minecraft/server-editor.IDropdownItem class.
 Fallback display text if no loc ID
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **displayStringId**
 `read-only displayStringId: string;`
@@ -28,9 +23,6 @@ Type: *string*
 Loc ID (resolved on client)
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **value**
 `read-only value: number;`
@@ -38,6 +30,3 @@ Type: *string*
 The selectable value of the DropDown item.
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.

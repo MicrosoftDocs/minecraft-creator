@@ -3,7 +3,7 @@ author: mammerla
 ms.author: v-bbortree
 title: Parkour World Introduction
 ms.prod: gaming
-description: "An introduction to creating a world using a parkour world"
+description: "An introduction to creating a parkour world"
 ---
 
 # Creating Worlds and Game Development - Parkour World

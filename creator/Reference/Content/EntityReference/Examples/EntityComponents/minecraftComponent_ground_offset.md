@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Entity Documentation - minecraft:ground_offset
 ms.prod: gaming
+description: "A reference document detailing the 'ground_offset' entity component"
 ---
 
 # Entity Documentation -  minecraft:ground_offset

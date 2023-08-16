@@ -1,16 +1,16 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - target_distance
 ms.prod: gaming
+description: "A reference document detailing the 'target_distance' entity filter"
 ---
 
 # Entity Documentation - target_distance
 
 Tests the distance between the calling entity and its target.
 
-
-### subject
+## subject
 
 | Options| Description |
 |:-----------|:-----------|
@@ -56,4 +56,3 @@ Tests the distance between the calling entity and its target.
 ```json
 { "test": "target_distance", "value": "0.00" }
 ```
-

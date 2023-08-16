@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Item Documentation - minecraft:on_use
 ms.prod: gaming
+description: "A reference document detailing the 'on_use' item component"
 ---
 
 # Item Documentation - minecraft:on_use

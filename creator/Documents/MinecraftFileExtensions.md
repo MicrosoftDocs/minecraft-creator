@@ -1,9 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: JimSeaman42
+ms.author: mikeam
 title: Minecraft File Extensions
 ms.prod: gaming
-description: An overview of different file extensions
+description: "An overview of different file extensions and what they do"
 ---
 
 # Minecraft File Extensions

@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Item Documentation - minecraft:display_name
 ms.prod: gaming
+description: "A reference document detailing the 'display_name' item component"
 ---
 
 # Item Documentation - minecraft:display_name
 
-`minecraft:display_name` sets the item display name within Minecraft: Bedrock Edition. This component may also be used to pull from the localization file by referencing a key from it. 
+`minecraft:display_name` sets the item display name within Minecraft: Bedrock Edition. This component may also be used to pull from the localization file by referencing a key from it.
 
 ## Parameters
 

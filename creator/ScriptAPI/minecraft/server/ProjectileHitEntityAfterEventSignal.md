@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.ProjectileHitEntityAfterEventSign
 ---
 # ProjectileHitEntityAfterEventSignal Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Manages callbacks that are connected to when a projectile hits an entity.
 
 ## Methods

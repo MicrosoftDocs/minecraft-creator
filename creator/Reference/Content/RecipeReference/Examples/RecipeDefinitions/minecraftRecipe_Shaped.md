@@ -1,8 +1,9 @@
 ---
-author: mammerla
+author: JimSeaman42
 ms.author: mikeam
 title: Recipe Documentation -Shaped Recipe
 ms.prod: gaming
+description: "A reference document detailing shaped recipes"
 ---
 
 # Recipe Documentation - Shaped Recipe

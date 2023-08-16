@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: mikeam
 title: Entity Documentation - weather
 ms.prod: gaming
+description: "A reference document detailing the 'weather' entity filter"
 ---
 
 # Entity Documentation - weather

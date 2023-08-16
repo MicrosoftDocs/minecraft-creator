@@ -3,7 +3,7 @@ author: mammerla
 ms.author: v-jillheaden
 title: Target Selectors
 ms.prod: gaming
-description: A guide covering target selectors.
+description: "A guide covering target selectors"
 ---
 
 # Target Selectors

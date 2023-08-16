@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.ocelot_sit_on_block
 ms.prod: gaming
+description: "A reference document detailing the 'behavior.ocelot_sit_on_block' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.ocelot_sit_on_block

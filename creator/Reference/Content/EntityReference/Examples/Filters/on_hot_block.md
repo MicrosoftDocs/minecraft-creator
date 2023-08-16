@@ -1,15 +1,16 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - on_hot_block
 ms.prod: gaming
+description: "A reference document detailing the 'on_hot_block' entity filter"
 ---
 
 # Entity Documentation - on_hot_block
 
 Tests if the subject is on a hot block.
 
-### subject
+## subject
 
 | Options| Description |
 |:-----------|:-----------|

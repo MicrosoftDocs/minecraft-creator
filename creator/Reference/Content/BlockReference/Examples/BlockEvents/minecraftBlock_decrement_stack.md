@@ -3,6 +3,7 @@ author: mammerla
 ms.author: mikeam
 title: Block Documentation - decrement_stack
 ms.prod: gaming
+description: "A reference document detailing the 'decrement_stack' block event response"
 ---
 
 # Block Documentation - decrement_stack

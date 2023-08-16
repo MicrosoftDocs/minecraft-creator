@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: "Schema Documentation - persona_actor_animation:1.8.0"
 ms.prod: gaming
+description: "A reference document detailing the 'persona_actor_animation:1.8.0' schema"
 ---
 
 # Schema Documentation - persona_actor_animation:1.8.0

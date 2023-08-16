@@ -1,15 +1,16 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: iconicnurdle
+ms.author: mikeam
 title: Features Documentation - minecraft:underwater_cave_carver_feature
 ms.prod: gaming
+description: "A reference document detailing the 'underwater_cave_carver_feature' feature"
 ---
 
 # Features Documentation - minecraft:underwater_cave_carver_feature
 
-`minecraft:underwater_cave_carver_feature` carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern. This feature will specifically target creating caves only below sea level.
+`minecraft:underwater_cave_carver_feature` carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8-block radial pattern. This feature will specifically target creating caves only below sea level.
 
-This feature will also only work when placed specifically in the pass "pregeneration_pass".
+This feature will only work when placed specifically in the pass "pregeneration_pass".
 
 ## Example
 

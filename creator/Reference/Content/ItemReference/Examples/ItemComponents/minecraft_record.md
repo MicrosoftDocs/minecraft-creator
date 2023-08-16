@@ -1,8 +1,9 @@
 --- 
 author: mammerla
-ms.author: v-bbortree
+ms.author: mikeam
 title: Item Documentation - minecraft:record
 ms.prod: gaming
+description: "A reference document detailing the 'record' item component"
 --- 
 
 # Item Documentation -  minecraft:record

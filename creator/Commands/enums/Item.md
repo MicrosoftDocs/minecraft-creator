@@ -10,6 +10,8 @@ description: Description and values of the Item enum
 One of the [Minecraft Items available on this page](/creator/reference/content/itemreference/examples/itemcomponentlist).
 
 ## Values
+- `minecraft:cyan_terracotta`
+- `cyan_terracotta`
 - `minecraft:blue_candle`
 Blue Candle
 - `blue_candle`
@@ -338,6 +340,8 @@ Hardened Clay
 Stripped Jungle Log
 - `stripped_jungle_log`
 Stripped Jungle Log
+- `minecraft:light_gray_terracotta`
+- `light_gray_terracotta`
 - `minecraft:smoker`
 Smoker
 - `smoker`
@@ -450,6 +454,8 @@ Gray Candle
 Mangrove Planks
 - `mangrove_planks`
 Mangrove Planks
+- `minecraft:red_terracotta`
+- `red_terracotta`
 - `minecraft:magenta_wool`
 - `magenta_wool`
 - `minecraft:magenta_glazed_terracotta`
@@ -594,6 +600,8 @@ Smooth Sandstone Stairs
 Jungle Pressure Plate
 - `jungle_pressure_plate`
 Jungle Pressure Plate
+- `minecraft:blue_terracotta`
+- `blue_terracotta`
 - `minecraft:sandstone`
 Sandstone
 - `sandstone`
@@ -628,6 +636,8 @@ Stone Stairs
 Stone Stairs
 - `minecraft:gray_stained_glass`
 - `gray_stained_glass`
+- `minecraft:green_terracotta`
+- `green_terracotta`
 - `minecraft:deepslate_brick_slab`
 Deepslate Brick Slab
 - `deepslate_brick_slab`
@@ -738,6 +748,8 @@ Monster Egg
 Polished Granite Stairs
 - `polished_granite_stairs`
 Polished Granite Stairs
+- `minecraft:pink_terracotta`
+- `pink_terracotta`
 - `minecraft:cracked_deepslate_tiles`
 Cracked Deepslate Tiles
 - `cracked_deepslate_tiles`
@@ -768,6 +780,8 @@ Structure Void
 Polished Blackstone Brick Slab
 - `polished_blackstone_brick_slab`
 Polished Blackstone Brick Slab
+- `minecraft:yellow_terracotta`
+- `yellow_terracotta`
 - `minecraft:snow`
 Snow
 - `snow`
@@ -870,6 +884,8 @@ Crimson Trapdoor
 Basalt
 - `basalt`
 Basalt
+- `minecraft:light_blue_terracotta`
+- `light_blue_terracotta`
 - `minecraft:leaves2`
 Leaves 2
 - `leaves2`
@@ -976,6 +992,8 @@ Deepslate Tiles
 Smooth Stone
 - `smooth_stone`
 Smooth Stone
+- `minecraft:gray_terracotta`
+- `gray_terracotta`
 - `minecraft:lime_concrete`
 - `lime_concrete`
 - `minecraft:red_mushroom`
@@ -986,6 +1004,8 @@ Red Mushroom
 Gilded Blackstone
 - `gilded_blackstone`
 Gilded Blackstone
+- `minecraft:magenta_terracotta`
+- `magenta_terracotta`
 - `minecraft:exposed_cut_copper_stairs`
 Exposed Cut Copper Stairs
 - `exposed_cut_copper_stairs`
@@ -1088,6 +1108,8 @@ Quartz Stairs
 Iron Bars
 - `iron_bars`
 Iron Bars
+- `minecraft:white_terracotta`
+- `white_terracotta`
 - `minecraft:light_blue_carpet`
 - `light_blue_carpet`
 - `minecraft:oak_hanging_sign`
@@ -1494,6 +1516,8 @@ End Portal Frame
 Prismarine
 - `prismarine`
 Prismarine
+- `minecraft:black_terracotta`
+- `black_terracotta`
 - `minecraft:leaves`
 Leaves
 - `leaves`
@@ -1534,10 +1558,6 @@ Waxed Weathered Cut Copper Stairs
 Mangrove Roots
 - `mangrove_roots`
 Mangrove Roots
-- `minecraft:stained_hardened_clay`
-Stained Hardened Clay
-- `stained_hardened_clay`
-Stained Hardened Clay
 - `minecraft:yellow_candle`
 Yellow Candle
 - `yellow_candle`
@@ -1604,6 +1624,8 @@ Structure Block
 End Brick Stairs
 - `end_brick_stairs`
 End Brick Stairs
+- `minecraft:purple_terracotta`
+- `purple_terracotta`
 - `minecraft:target`
 Target
 - `target`
@@ -2066,6 +2088,8 @@ Cauldron
 Dark Oak Trapdoor
 - `dark_oak_trapdoor`
 Dark Oak Trapdoor
+- `minecraft:orange_terracotta`
+- `orange_terracotta`
 - `minecraft:waxed_oxidized_copper`
 Waxed Oxidized Copper
 - `waxed_oxidized_copper`
@@ -2216,6 +2240,8 @@ Magma
 Dispenser
 - `dispenser`
 Dispenser
+- `minecraft:brown_terracotta`
+- `brown_terracotta`
 - `minecraft:deepslate_diamond_ore`
 Deepslate Diamond Ore
 - `deepslate_diamond_ore`
@@ -2254,6 +2280,8 @@ Cobbled Deepslate Wall
 Weathered Copper
 - `weathered_copper`
 Weathered Copper
+- `minecraft:lime_terracotta`
+- `lime_terracotta`
 - `minecraft:cherry_fence_gate`
 - `cherry_fence_gate`
 - `minecraft:gray_glazed_terracotta`
@@ -2358,6 +2386,10 @@ Carpet
 Concrete
 - `minecraft:concrete`
 Concrete
+- `stained_hardened_clay`
+Stained Hardened Clay
+- `minecraft:stained_hardened_clay`
+Stained Hardened Clay
 - `stained_glass`
 Stained Glass
 - `minecraft:stained_glass`
@@ -4013,10 +4045,10 @@ Empty Map
 Sign
 - `darkoak_sign`
 Dark Oak Sign
-- `banner_pattern`
-Banner Pattern
 - `dye`
 Dye
+- `banner_pattern`
+Banner Pattern
 - `spawn_egg`
 Spawn Egg
 - `minecraft:spawn_egg`

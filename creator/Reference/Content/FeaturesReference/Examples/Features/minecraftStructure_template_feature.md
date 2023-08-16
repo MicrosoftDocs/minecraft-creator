@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Features Documentation - minecraft:structure_template_feature
 ms.prod: gaming
+description: "A reference document detailing the 'structure_template_feature' feature"
 ---
 
 # Features Documentation - minecraft:structure_template_feature

@@ -3,7 +3,7 @@ author: mikeam
 ms.author: mikeam
 title: Scripting with Dedicated Servers
 ms.prod: gaming
-description: Use TypeScript to customize and configure your dedicated server experiences.
+description: "Use TypeScript to customize and configure your dedicated server experiences"
 ---
 
 # Using script to add new capabilities to dedicated servers

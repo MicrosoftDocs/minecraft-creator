@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.dragonlanding
 ms.prod: gaming
+description: "A reference document detailing the 'dragonlanding' entity goal"
 ---
 
 # Entity Documentation - minecraft:behavior.dragonlanding

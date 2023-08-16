@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:spell_effects
 ms.prod: gaming
+description: "A reference document detailing the 'spell_effects' entity component"
 ---
 
 # Entity Documentation - minecraft:spell_effects
@@ -28,6 +29,7 @@ Similarly to [`addrider`](../EntityComponents/minecraftComponent_addrider.md), t
 * `display_on_screen_animation`: Boolean value. When set to true, applying this effect displays an animated graphic on-screen similar to the totem of undying effect. Obviously, this only works for players. Defaults to false.
 
 ### `remove_effects`
+
 This can either be a single string identifier for a status effect, or a list of them. These define which effects should be removed from the entity, if present, when the component is applied.
 
 ## Example
@@ -73,6 +75,6 @@ This can either be a single string identifier for a status effect, or a list of 
 
 ## Vanilla entities using `minecraft:spell_effects`
 
-- [`player`](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
-- [`zombie_villager_v2`](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-- [`zombie_villager`](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
+* [`player`](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
+* [`zombie_villager_v2`](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
+* [`zombie_villager`](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)

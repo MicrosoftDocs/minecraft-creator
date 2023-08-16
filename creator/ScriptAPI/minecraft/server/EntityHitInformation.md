@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.EntityHitInformation class.
 ---
 # EntityHitInformation Interface
 
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains additional information about an entity that was hit.
 
 ## Properties

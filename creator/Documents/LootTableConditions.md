@@ -1,9 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Loot and Trade Table Conditions
 ms.prod: gaming
-description: "A Guide to the Use of Loot Table Conditions"
+description: "A guide to the sse of loot table conditions"
 ---
 
 # Loot Table Conditions

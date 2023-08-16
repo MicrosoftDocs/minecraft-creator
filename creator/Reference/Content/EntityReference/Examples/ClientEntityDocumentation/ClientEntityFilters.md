@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: mikeam
 title: Entity Documentation - Filters
 ms.prod: gaming
+description: "A reference document detailing filter functionality"
 ---
 
 # Entity Documentation - Filters
