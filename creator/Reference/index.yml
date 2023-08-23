@@ -67,8 +67,8 @@ landingContent:
         links:
           - text: Blocks JSON Documentation Homepage
             url: Content/blockreference/index.yml
-          - text: Block Properties and Permutations
-            url: Content/blockreference/Examples/BlockPropertiesAndPermutations.md
+          - text: Block States and Permutations
+            url: Content/blockreference/Examples/BlockStatesAndPermutations.md
       - linkListType: reference
         links:
           - text: Block Components List

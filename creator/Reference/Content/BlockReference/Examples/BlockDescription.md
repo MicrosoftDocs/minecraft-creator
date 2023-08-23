@@ -15,7 +15,7 @@ The block `"description"` is a section inside the `"minecraft:block"` section of
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |identifier|*not set* | String| The identifier for this block. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla block.|
-|properties|*not set*|JSON Object|Map of key/value pairs that maps the property name (key) to an array of all possible values for that property (value). Learn how to use block properties in [Block Properties and Permutations](BlockPropertiesAndPermutations.md).|
+|states|*not set*|JSON Object|Map of key/value pairs that maps the state name (key) to an array of all possible values for that state (value). Learn how to use block states in [Block States and Permutations](BlockStatesAndPermutations.md).|
 |menu_category|*not set*|JSON Object|Specifies the menu category and group for the block, which determine where this block is placed in the inventory and crafting table container screens. If this field is omitted, the block will not appear in the inventory or crafting table container screens.|
 
 ## menu_category Parameters

@@ -157,7 +157,7 @@ Experimental toggles required : Upcoming Creator Features
     },
     "permutations": [
        {
-          "condition": "query.block_property('minecraft:cardinal_direction') == 1", // west
+          "condition": "query.block_state('minecraft:cardinal_direction') == 1", // west
           "components": {
               // ... 
           }
