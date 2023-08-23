@@ -159,7 +159,7 @@ Experimental toggles required : Upcoming Creator Features
        {
           "condition": "query.block_property('minecraft:cardinal_direction') == 1", // west
           "components": {
-              // ...	
+              // ... 
           }
         }
     ]
@@ -238,7 +238,13 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:black_candle |
 | minecraft:black_candle_cake |
 | minecraft:black_carpet |
+| minecraft:black_concrete |
+| minecraft:black_concrete_powder |
 | minecraft:black_glazed_terracotta |
+| minecraft:black_shulker_box |
+| minecraft:black_stained_glass |
+| minecraft:black_stained_glass_pane |
+| minecraft:black_terracotta |
 | minecraft:black_wool |
 | minecraft:blackstone |
 | minecraft:blackstone_double_slab |
@@ -249,8 +255,14 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:blue_candle |
 | minecraft:blue_candle_cake |
 | minecraft:blue_carpet |
+| minecraft:blue_concrete |
+| minecraft:blue_concrete_powder |
 | minecraft:blue_glazed_terracotta |
 | minecraft:blue_ice |
+| minecraft:blue_shulker_box |
+| minecraft:blue_stained_glass |
+| minecraft:blue_stained_glass_pane |
+| minecraft:blue_terracotta |
 | minecraft:blue_wool |
 | minecraft:bone_block |
 | minecraft:bookshelf |
@@ -262,9 +274,15 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:brown_candle |
 | minecraft:brown_candle_cake |
 | minecraft:brown_carpet |
+| minecraft:brown_concrete |
+| minecraft:brown_concrete_powder |
 | minecraft:brown_glazed_terracotta |
 | minecraft:brown_mushroom |
 | minecraft:brown_mushroom_block |
+| minecraft:brown_shulker_box |
+| minecraft:brown_stained_glass |
+| minecraft:brown_stained_glass_pane |
+| minecraft:brown_terracotta |
 | minecraft:brown_wool |
 | minecraft:bubble_column |
 | minecraft:bubble_coral |
@@ -328,8 +346,6 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:colored_torch_rg |
 | minecraft:command_block |
 | minecraft:composter |
-| minecraft:concrete |
-| minecraft:concrete_powder |
 | minecraft:conduit |
 | minecraft:copper_block |
 | minecraft:copper_ore |
@@ -369,7 +385,13 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:cyan_candle |
 | minecraft:cyan_candle_cake |
 | minecraft:cyan_carpet |
+| minecraft:cyan_concrete |
+| minecraft:cyan_concrete_powder |
 | minecraft:cyan_glazed_terracotta |
+| minecraft:cyan_shulker_box |
+| minecraft:cyan_stained_glass |
+| minecraft:cyan_stained_glass_pane |
+| minecraft:cyan_terracotta |
 | minecraft:cyan_wool |
 | minecraft:dark_oak_button |
 | minecraft:dark_oak_door |
@@ -595,12 +617,24 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:gray_candle |
 | minecraft:gray_candle_cake |
 | minecraft:gray_carpet |
+| minecraft:gray_concrete |
+| minecraft:gray_concrete_powder |
 | minecraft:gray_glazed_terracotta |
+| minecraft:gray_shulker_box |
+| minecraft:gray_stained_glass |
+| minecraft:gray_stained_glass_pane |
+| minecraft:gray_terracotta |
 | minecraft:gray_wool |
 | minecraft:green_candle |
 | minecraft:green_candle_cake |
 | minecraft:green_carpet |
+| minecraft:green_concrete |
+| minecraft:green_concrete_powder |
 | minecraft:green_glazed_terracotta |
+| minecraft:green_shulker_box |
+| minecraft:green_stained_glass |
+| minecraft:green_stained_glass_pane |
+| minecraft:green_terracotta |
 | minecraft:green_wool |
 | minecraft:grindstone |
 | minecraft:hanging_roots |
@@ -653,18 +687,36 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:light_blue_candle |
 | minecraft:light_blue_candle_cake |
 | minecraft:light_blue_carpet |
+| minecraft_light_blue_concrete |
+| minecraft_light_blue_concrete_powder |
 | minecraft:light_blue_glazed_terracotta |
+| minecraft_light_blue_shulker_box |
+| minecraft_light_blue_stained_glass |
+| minecraft_light_blue_stained_glass_pane |
+| minecraft_light_blue_terracotta |
 | minecraft:light_blue_wool|
 | minecraft:light_gray_candle |
 | minecraft:light_gray_candle_cake |
 | minecraft:light_gray_carpet |
+| minecraft:light_gray_concrete |
+| minecraft:light_gray_concrete_powder |
+| minecraft:light_gray_shulker_box |
+| minecraft:light_gray_stained_glass |
+| minecraft:light_gray_stained_glass_pane |
+| minecraft:light_gray_terracotta |
 | minecraft:light_gray_wool |
 | minecraft:light_weighted_pressure_plate |
 | minecraft:lightning_rod |
 | minecraft:lime_candle |
 | minecraft:lime_candle_cake |
 | minecraft:lime_carpet |
+| minecraft:lime_concrete |
+| minecraft:lime_concrete_powder |
 | minecraft:lime_glazed_terracotta |
+| minecraft:lime_shulker_box |
+| minecraft:lime_stained_glass |
+| minecraft:lime_stained_glass_pane |
+| minecraft:lime_terracotta |
 | minecraft:lime_wool |
 | minecraft:lit_blast_furnace |
 | minecraft:lit_deepslate_redstone_ore |
@@ -678,7 +730,13 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:magenta_candle |
 | minecraft:magenta_candle_cake |
 | minecraft:magenta_carpet |
+| minecraft:magenta_concrete |
+| minecraft:magenta_concrete_powder |
 | minecraft:magenta_glazed_terracotta |
+| minecraft:magenta_shulker_box |
+| minecraft:magenta_stained_glass |
+| minecraft:magenta_stained_glass_pane |
+| minecraft:magenta_terracotta |
 | minecraft:magenta_wool |
 | minecraft:magma |
 | minecraft:mangrove_button |
@@ -741,7 +799,13 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:orange_candle |
 | minecraft:orange_candle_cake |
 | minecraft:orange_carpet |
+| minecraft:orange_concrete |
+| minecraft:orange_concrete_powder |
 | minecraft:orange_glazed_terracotta |
+| minecraft:orange_shulker_box |
+| minecraft:orange_stained_glass |
+| minecraft:orange_stained_glass_pane |
+| minecraft:orange_terracotta |
 | minecraft:orange_wool |
 | minecraft:oxidized_copper |
 | minecraft:oxidized_cut_copper |
@@ -754,8 +818,14 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:pink_candle |
 | minecraft:pink_candle_cake |
 | minecraft:pink_carpet |
+| minecraft:pink_concrete |
+| minecraft:pink_concrete_powder |
 | minecraft:pink_glazed_terracotta |
 | minecraft:pink_petals |
+| minecraft:pink_shulker_box |
+| minecraft:pink_stained_glass |
+| minecraft:pink_stained_glass_pane |
+| minecraft:pink_terracotta |
 | minecraft:pink_wool |
 | minecraft:piston |
 | minecraft:piston_arm_collision |
@@ -798,7 +868,13 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:purple_candle |
 | minecraft:purple_candle_cake |
 | minecraft:purple_carpet |
+| minecraft:purple_concrete |
+| minecraft:purple_concrete_powder |
 | minecraft:purple_glazed_terracotta |
+| minecraft:purple_shulker_box |
+| minecraft:purple_stained_glass |
+| minecraft:purple_stained_glass_pane |
+| minecraft:purple_terracotta |
 | minecraft:purple_wool |
 | minecraft:purpur_block |
 | minecraft:purpur_stairs |
@@ -813,6 +889,8 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:red_candle |
 | minecraft:red_candle_cake |
 | minecraft:red_carpet |
+| minecraft:red_concrete |
+| minecraft:red_concrete_powder|
 | minecraft:red_flower |
 | minecraft:red_glazed_terracotta |
 | minecraft:red_mushroom |
@@ -821,6 +899,10 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:red_nether_brick_stairs |
 | minecraft:red_sandstone |
 | minecraft:red_sandstone_stairs |
+| minecraft:red_shulker_box |
+| minecraft:red_stained_glass |
+| minecraft:red_stained_glass_pane |
+| minecraft:red_terracotta |
 | minecraft:red_wool |
 | minecraft:redstone_block |
 | minecraft:redstone_lamp |
@@ -846,7 +928,6 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:sea_pickle |
 | minecraft:seagrass |
 | minecraft:shroomlight |
-| minecraft:shulker_box |
 | minecraft:silver_glazed_terracotta |
 | minecraft:skull |
 | minecraft:slime |
@@ -881,9 +962,6 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:spruce_standing_sign |
 | minecraft:spruce_trapdoor |
 | minecraft:spruce_wall_sign |
-| minecraft:stained_glass |
-| minecraft:stained_glass_pane |
-| minecraft:stained_hardened_clay |
 | minecraft:standing_banner |
 | minecraft:standing_sign |
 | minecraft:sticky_piston |
@@ -997,7 +1075,13 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:white_candle |
 | minecraft:white_candle_cake |
 | minecraft:white_carpet |
+| minecraft:white_concrete |
+| minecraft:white_concrete_powder |
 | minecraft:white_glazed_terracotta |
+| minecraft:white_shulker_box |
+| minecraft:white_stained_glass |
+| minecraft:white_stained_glass_pane |
+| minecraft:white_terracotta |
 | minecraft:white_wool |
 | minecraft:wither_rose |
 | minecraft:wood |
@@ -1008,6 +1092,12 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:yellow_candle |
 | minecraft:yellow_candle_cake |
 | minecraft:yellow_carpet |
+| minecraft:yellow_concrete |
+| minecraft:yellow_concrete_powder |
 | minecraft:yellow_flower |
 | minecraft:yellow_glazed_terracotta |
+| minecraft:yellow_shulker_box |
+| minecraft:yellow_stained_glass |
+| minecraft:yellow_stained_glass_pane |
+| minecraft:yellow_terracotta |
 | minecraft:yellow_wool |

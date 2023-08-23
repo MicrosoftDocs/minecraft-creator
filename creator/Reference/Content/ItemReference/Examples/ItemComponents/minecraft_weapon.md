@@ -8,7 +8,7 @@ description: "A reference document detailing the 'weapon' item component"
 
 # Item Documentation - minecraft:weapon
 
-`minecraft:weapon` sets the weapon item component. Added to every weapon item such as axe, sword, trident, bow, crossbow.
+`minecraft:weapon` sets the weapon item component. Added to every weapon item such as axe, sword, trident, bow, and crossbow.
 
 >[!IMPORTANT]
 > `minecraft:weapon` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.

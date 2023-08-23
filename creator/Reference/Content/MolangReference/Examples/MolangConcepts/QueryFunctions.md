@@ -42,6 +42,7 @@ Listed below are the currently available Molang query functions in the latest re
 | query.average_frame_time| Returns the time in *seconds* of the average frame time over the last `n` frames. If an argument is passed, it is assumed to be the number of frames in the past that you wish to query. `query.average_frame_time` (or the equivalent `query.average_frame_time(0)`) will return the frame time of the frame before the current one. `query.average_frame_time(1)` will return the average frame time of the previous two frames. Currently we store the history of the last 30 frames, although note that this may change in the future. Asking for more frames will result in only sampling the number of frames stored. |
 | query.block_face| Returns the block face for this (only valid for certain triggers such as placing blocks, or interacting with block) (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
 | query.block_property| Returns the value of the associated block's state. To be replaced with block_state. |
+| query.block_state| Returns the value of the associated block's Block State. |
 | query.blocking| Returns 1.0 if the entity is blocking damage, else it returns 0.0. Applies to a player blocking with a shield. |
 | query.body_x_rotation| Returns the body pitch rotation if called on an entity, else it returns 0.0. |
 | query.body_y_rotation| Returns the body yaw rotation if called on an entity, else it returns 0.0. |
@@ -94,7 +95,8 @@ Listed below are the currently available Molang query functions in the latest re
 | query.has_any_family| Returns 1 if the entity has any of the specified families, else 0. |
 | query.has_armor_slot| Takes the armor slot index (0=helmet, 1=chestplate, 2=leggings, 3=boots) as a parameter and returns 1.0 if the entity has armor in the requested slot, else it returns 0.0. |
 | query.has_biome_tag| Returns whether or not a Block Placement Target has a specific biome tag. |
-| query.has_block_property| Returns 1.0 if the associated block has the given block property or 0.0 if not. |
+| query.has_block_property| Returns 1.0 if the associated block has the given block state or 0.0 if not. |
+| query.has_block_state| Returns 1.0 if the associated block has the given block state or 0.0 if not. |
 | query.has_cape| Returns 1.0 if the player has a cape, else it returns 0.0. |
 | query.has_collision| Returns 1.0 if the entity has collisions enabled, else it returns 0.0. |
 | query.has_gravity| Returns 1.0 if the entity is affected by gravity, else it returns 0.0. |
@@ -282,7 +284,7 @@ Listed below are the currently available Molang query functions in the latest re
 | query.unhappy_counter| Returns how unhappy the entity is. Applies to panda. |
 | query.variant| Returns the entity's variant index. Relates to `variant` component. |
 | query.vertical_speed| Returns the speed of the entity up or down in meters/second, where positive is up. |
-| query.walk_distance| Returns the walk distance of the entity. Pertains to player first person animation. |
+| query.walk_distance| Returns the total distance traveled by an entity while on the ground and not sneaking. |
 | query.wing_flap_position| Returns the wing flap position of the entity, or 0.0 if this doesn't make sense. Pertains to dragon and parrot. |
 | query.wing_flap_speed| Returns the wing flap speed of the entity, or 0.0 if this doesn't make sense. Pertains to parrot. |
 | query.yaw_speed| Returns the entity's yaw speed. Related to how an entity moves, `body_y_rotation`. |
