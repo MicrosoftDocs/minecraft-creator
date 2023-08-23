@@ -28,7 +28,7 @@ description: "A reference document detailing the 'queued_ticking' block trigger"
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |condition| 1| String|  A condition using Molang queries that results to true/false. If true on the random tick, the event will be triggered. If false on the random tick, the event will not be triggered. |
-|event| set_block_property| String|  The event that will be triggered. |
+|event| set_block_state| String|  The event that will be triggered. |
 |target| self| String| The target of the event executed by the block |
 
 ## Example

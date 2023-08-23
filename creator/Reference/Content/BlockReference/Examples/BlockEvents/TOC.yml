@@ -20,8 +20,8 @@
    href: minecraftBlock_set_block.md
  - name: set_block_at_pos
    href: minecraftBlock_set_block_at_pos.md
- - name: set_block_property
-   href: minecraftBlock_set_block_property.md
+ - name: set_block_state
+   href: minecraftBlock_set_block_state.md
  - name: spawn_loot
    href: minecraftBlock_spawn_loot.md
  - name: swing

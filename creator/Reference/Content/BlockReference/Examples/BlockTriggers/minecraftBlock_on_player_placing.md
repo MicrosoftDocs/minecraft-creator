@@ -24,7 +24,7 @@ description: "A reference document detailing the 'on_player_placing' block trigg
 
 ```json
 "minecraft:on_player_placing":{
-    "condition": "query.block_property(custom:property) == true", //custom condition
+    "condition": "query.block_state(custom:state) == true", //custom condition
     "event" : "i_put_the_block_down", //custom event
     "target": "self"
 }

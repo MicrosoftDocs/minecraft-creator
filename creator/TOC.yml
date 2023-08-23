@@ -258,12 +258,12 @@
             href: Reference/Content/blockreference/Examples/BlockJsonFileStructure.md
           - name: Block Description
             href: Reference/Content/blockreference/Examples/BlockDescription.md
-          - name: Block Properties and Permutations
-            href: Reference/Content/blockreference/Examples/BlockPropertiesAndPermutations.md
-          - name: Block Properties List
-            href: Reference/Content/blockreference/Examples/BlockPropertiesList.md
-          - name: Block States
+          - name: Block States and Permutations
+            href: Reference/Content/blockreference/Examples/BlockStatesAndPermutations.md
+          - name: Block States List
             href: Reference/Content/blockreference/Examples/BlockStatesList.md
+          - name: Intrinsic Block States
+            href: Reference/Content/blockreference/Examples/IntrinsicBlockStatesList.md
           - name: Block Traits
             href: Reference/Content/blockreference/Examples/BlockTraits.md
           - name: Aux Value to Block State Map

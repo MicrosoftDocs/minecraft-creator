@@ -22,6 +22,6 @@ description: "A reference document detailing the 'set_block_state' block event r
 
 ```json
 "set_block_state": {
-  "property name here": "Molang expression here"
+  "state name here": "Molang expression here"
 }
 ```
