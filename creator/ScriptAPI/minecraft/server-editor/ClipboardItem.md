@@ -46,11 +46,19 @@ Clear the contents of the item
 getPredictedWriteAsCompoundBlockVolume(location: minecraftserver.Vector3, options?: ClipboardWriteOptions): minecraftserver.CompoundBlockVolume
 `
 
+Create a [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) container which represents the occupied block volumes within the ClipboardItem.
+
+This function does not perform any write operations, and instead returns only a prediction of the volume area which would be affected as part of a write operation with a given set of write options.
+
 #### **Parameters**
 - **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+  
+  A world location to which the ClipboardItem may potentially be written (nothing is actually written as part of this operation)
 - **options**?: [*ClipboardWriteOptions*](ClipboardWriteOptions.md) = `null`
+  
+  An optional set of write parameters which govern how the ClipboardItem should be potentially applied to the world
 
-#### **Returns** [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md)
+#### **Returns** [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) - A [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) which represents the occupied block volumes within the ClipboardItem as they would be written to the world with the specified [*@minecraft/server-editor.ClipboardWriteOptions*](../../minecraft/server-editor/ClipboardWriteOptions.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

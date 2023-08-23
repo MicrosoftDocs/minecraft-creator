@@ -179,8 +179,14 @@ The pending list will be added to the open transaction record when a commit has 
 trackBlockChangeCompoundBlockVolume(compoundBlockVolume: minecraftserver.CompoundBlockVolume): boolean
 `
 
+Begin tracking block changes in an area defined by a {@link @minecraft-server/CompoundBlockVolume}.  These will be added to a pending changes list.
+
+The pending list will be added to the open transaction record when a commit has been issued.
+
 #### **Parameters**
 - **compoundBlockVolume**: [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md)
+  
+  {@link @minecraft-server/CompoundBlockVolume} to track.  Only non-void block locations will be tracked -- any changes falling into a void/negative space will not be tracked
 
 #### **Returns** *boolean*
 

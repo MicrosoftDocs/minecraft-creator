@@ -3,10 +3,10 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: minecraft/server.BlockBreakAfterEvent Class
-description: Contents of the @minecraft/server.BlockBreakAfterEvent class.
+title: minecraft/server.PlayerBreakBlockAfterEvent Class
+description: Contents of the @minecraft/server.PlayerBreakBlockAfterEvent class.
 ---
-# BlockBreakAfterEvent Class
+# PlayerBreakBlockAfterEvent Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -14,7 +14,7 @@ description: Contents of the @minecraft/server.BlockBreakAfterEvent class.
 ## Extends
 - [*BlockEvent*](BlockEvent.md)
 
-Contains information regarding an event where a player breaks a block.
+Contains information regarding an event after a player breaks a block.
 
 ## Properties
 
@@ -24,6 +24,20 @@ Contains information regarding an event where a player breaks a block.
 Returns permutation information about this block before it was broken.
 
 Type: [*BlockPermutation*](BlockPermutation.md)
+
+### **itemStackAfterBreak**
+`read-only itemStackAfterBreak?: ItemStack;`
+
+The item stack that was used to break the block after the block was broken, or undefined if empty hand.
+
+Type: [*ItemStack*](ItemStack.md)
+
+### **itemStackBeforeBreak**
+`read-only itemStackBeforeBreak?: ItemStack;`
+
+The item stack that was used to break the block before the block was broken, or undefined if empty hand.
+
+Type: [*ItemStack*](ItemStack.md)
 
 ### **player**
 `read-only player: Player;`

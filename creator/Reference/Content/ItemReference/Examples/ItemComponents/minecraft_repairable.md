@@ -14,8 +14,7 @@ description: "A reference document detailing the 'repairable' item component"
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|on_repaired|*not set* |String|Event that is called when this item has been repaired.|
-|repair_items|*not set* |List|List of repair item entries. |
+|repair_items|*not set* | Array| List of repair item entries. |
 
 ## Example
 

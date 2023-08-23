@@ -12,6 +12,16 @@ A class that represents a particular dimension (e.g., The End) within a world.
 
 ## Properties
 
+### **heightRange**
+`read-only heightRange: NumberRange;`
+
+Height range of the dimension.
+
+Type: [*NumberRange*](NumberRange.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **id**
 `read-only id: string;`
 
@@ -339,13 +349,15 @@ Runs a particular command asynchronously from the context of the broader dimensi
 setWeather(weatherType: WeatherType, duration?: number): void
 `
 
-Sets the current weather within the dimesion
+Sets the current weather within the dimension
 
 #### **Parameters**
 - **weatherType**: [*WeatherType*](WeatherType.md)
   
-  Set of weather to apply.
+  Set the type of weather to apply.
 - **duration**?: *number* = `null`
+  
+  Sets the duration of the weather (in ticks). If no duration is provided, the duration will be set to a random duration between 300 and 900 seconds.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

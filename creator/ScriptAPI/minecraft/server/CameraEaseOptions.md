@@ -11,14 +11,20 @@ description: Contents of the @minecraft/server.CameraEaseOptions class.
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Contains options associated with a camera ease operation.
+
 ## Properties
 
 ### **easeTime**
 `easeTime?: number;`
 
+Time for the ease operation.
+
 Type: *number*
 
 ### **easeType**
 `easeType?: EasingType;`
+
+Type of ease operation to use.
 
 Type: [*EasingType*](EasingType.md)

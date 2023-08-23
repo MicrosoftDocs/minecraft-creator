@@ -18,7 +18,7 @@ Sets the offset from the ground that the entity is actually at.
 ### **value**
 `value: number;`
 
-Value of this particular ground offset.
+Value of this particular ground offset. Note that this value is effectively read only; setting the ground offset value will not have an impact on the related entity.
 
 Type: *number*
   

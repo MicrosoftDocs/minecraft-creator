@@ -11,14 +11,20 @@ description: Contents of the @minecraft/server.CameraFadeOptions class.
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Used to initiate a full-screen color fade.
+
 ## Properties
 
 ### **fadeColor**
 `fadeColor?: RGB;`
 
+Fade color to use.
+
 Type: [*RGB*](RGB.md)
 
 ### **fadeTime**
 `fadeTime?: CameraFadeTimeOptions;`
+
+Time in seconds for the fade-in, hold, and fade-out seconds.
 
 Type: [*CameraFadeTimeOptions*](CameraFadeTimeOptions.md)

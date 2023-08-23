@@ -11,10 +11,18 @@ description: Contents of the .WeatherType enumeration.
 > [!CAUTION]
 > This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Used to specify the type of weather condition within the world.
+
 ## Constants
 ### **Clear**
 `Clear = "Clear"`
+
+Specifies a clear weather condition.
 ### **Rain**
 `Rain = "Rain"`
+
+Specifies a rain weather condition.
 ### **Thunder**
 `Thunder = "Thunder"`
+
+Specifies a rain and thunder weather condition.

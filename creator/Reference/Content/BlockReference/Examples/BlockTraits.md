@@ -85,7 +85,7 @@ Now that you understand the concept of block traits and the traits available, le
                 ...
             },
             "permutations": {
-                "condition": "query.block_property('minecraft:cardinal_direction')== 'south'",
+                "condition": "query.block_state('minecraft:cardinal_direction')== 'south'",
                 "components": {
                     "minecraft:transformation": {
                         "rotation": [0, 180, 0]
@@ -138,7 +138,7 @@ The smiley block uses the `minecraft:cardinal_direction` to act in a similar man
             },
             "permutations": [
                 { // north
-                    "condition": "query.block_property ('minecraft:cardinal_direction') == 'north'",
+                    "condition": "query.block_state ('minecraft:cardinal_direction') == 'north'",
                     "components": {
                         "minecraft:transformation": {
                             "rotation": [0, 0, 0]
@@ -146,7 +146,7 @@ The smiley block uses the `minecraft:cardinal_direction` to act in a similar man
                     }
                 },
                 { // south
-                    "condition": "query.block_property ('minecraft:cardinal_direction') == 'south'",
+                    "condition": "query.block_state ('minecraft:cardinal_direction') == 'south'",
                     "components": {
                         "minecraft:transformation": {
                             "rotation": [0, 180, 0]
@@ -154,7 +154,7 @@ The smiley block uses the `minecraft:cardinal_direction` to act in a similar man
                     }
                 },
                 { // west
-                    "condition": "query.block_property ('minecraft:cardinal_direction') == 'west'",
+                    "condition": "query.block_state ('minecraft:cardinal_direction') == 'west'",
                     "components": {
                         "minecraft:transformation": {
                             "rotation": [0, 90, 0]
@@ -162,7 +162,7 @@ The smiley block uses the `minecraft:cardinal_direction` to act in a similar man
                     }
                 },
                 { // east
-                    "condition": "query.block_property ('minecraft:cardinal_direction') == 'east'",
+                    "condition": "query.block_state ('minecraft:cardinal_direction') == 'east'",
                     "components": {
                         "minecraft:transformation": {
                             "rotation": [0, -90, 0]
@@ -211,7 +211,7 @@ The sample slab block behaves similarly to a Vanilla slab, thanks to the `minecr
                 },
             "permutations": [
                 { // upper_slab
-                    "condition": "query.block_property ('minecraft:vertical_half') == 'top'",
+                    "condition": "query.block_state ('minecraft:vertical_half') == 'top'",
                     "component": {
                         "minecraft:transformation": {
                             "translation": [0, 0.5, 0]
@@ -267,7 +267,7 @@ The sample torch block is an excellent representation of the `minecraft:block_fa
         },
         "permutations": [
             { // all side faces
-                "condition": "query.block_property('minecraft:block_face') != 'up' && query.block_property('minecraft:block_face') != 'down'",
+                "condition": "query.block_state('minecraft:block_face') != 'up' && query.block_state('minecraft:block_face') != 'down'",
                 "components": {
                     "minecraft:collision_box": {
                         "origin": [-2, 3, 4],
@@ -284,7 +284,7 @@ The sample torch block is an excellent representation of the `minecraft:block_fa
         "permutations": [
             ...
             { // north
-                "condition": "query.block_property('minecraft:block_face') == 'north'",
+                "condition": "query.block_state('minecraft:block_face') == 'north'",
                 "components": {
                     "minecraft:transformation": {
                         "rotation": [0, 0, 0]
@@ -292,7 +292,7 @@ The sample torch block is an excellent representation of the `minecraft:block_fa
                 }
             },
             { // west
-                "condition": "query.block_property('minecraft:block_face') == 'west'",
+                "condition": "query.block_state('minecraft:block_face') == 'west'",
                 "components" {
                     "minecraft:transformation": {
                         "rotation": [0, 90, 0]
@@ -300,7 +300,7 @@ The sample torch block is an excellent representation of the `minecraft:block_fa
                 }
             },
             { // south
-                "condition": "query.block_property('minecraft:block_face') == 'south'",
+                "condition": "query.block_state('minecraft:block_face') == 'south'",
                 "components": {
                     "minecraft:transformation": {
                         "rotation": [0, 180, 0]
@@ -308,7 +308,7 @@ The sample torch block is an excellent representation of the `minecraft:block_fa
                 }
             },
             { // east
-                "condition": "query.block_property('minecraft:block_face') ++ 'east'",
+                "condition": "query.block_state('minecraft:block_face') ++ 'east'",
                 "components": {
                     "minecraft:transformation": {
                         "rotation": [0, -90, 0]
@@ -351,7 +351,7 @@ Last, but not least, we have the sample arrow block. This block uses both the `m
             },
             "permutations": [
                 { // south
-                    "condition": "query.block_property('minecraft:facing_direction') == 'south'",
+                    "condition": "query.block_state('minecraft:facing_direction') == 'south'",
                     "components": {
                         "minecraft:transformation": {
                             "rotation": [0, 0, 0]
@@ -359,7 +359,7 @@ Last, but not least, we have the sample arrow block. This block uses both the `m
                     }
                 },
                 { // west
-                    "condition": "query.block_property('minecraft:facing_direction') == 'west'",
+                    "condition": "query.block_state('minecraft:facing_direction') == 'west'",
                     "components": {
                         "minecraft:transformation": {
                             "rotation": [0, -90, 0]
@@ -367,7 +367,7 @@ Last, but not least, we have the sample arrow block. This block uses both the `m
                     }
                 },
                 { // north
-                    "condition": "query.block_property('minecraft:facing_direction') == 'north'",
+                    "condition": "query.block_state('minecraft:facing_direction') == 'north'",
                     "components": {
                         "minecraft:transformation": {
                             "rotation": [0, 180, 0]                                                 
@@ -375,7 +375,7 @@ Last, but not least, we have the sample arrow block. This block uses both the `m
                     }
                 },
                 { // east
-                    "condition": "query.block_property('minecraft:facing_direction') == 'east'",
+                    "condition": "query.block_state('minecraft:facing_direction') == 'east'",
                     "components": {
                         "minecraft:transformation": {
                             "rotation": [0, 90, 0]
@@ -386,7 +386,7 @@ Last, but not least, we have the sample arrow block. This block uses both the `m
             "permutations": [
                 ...
                 { // up and south
-                    "condition": "query.block_property('minecraft:facing_direction') == 'up' && query.block_property('minecraft:cardinal_direction') == 'south'",
+                    "condition": "query.block_state('minecraft:facing_direction') == 'up' && query.block_state('minecraft:cardinal_direction') == 'south'",
                     "components": {
                         "minecraft:transformation": {
                             "rotation": [90, 0, 0]
@@ -394,7 +394,7 @@ Last, but not least, we have the sample arrow block. This block uses both the `m
                     }
                 },
                 { // up and west
-                    "condition": "query.block_property('minecraft:facing_direction') == 'up' && query.block_property('minecraft:cardinal_direction') == 'west'",
+                    "condition": "query.block_state('minecraft:facing_direction') == 'up' && query.block_state('minecraft:cardinal_direction') == 'west'",
                     "components": {
                         "minecraft:transformation": {
                             "rotation": [90, -90, 0]
@@ -402,7 +402,7 @@ Last, but not least, we have the sample arrow block. This block uses both the `m
                     }                                     
                 },
                 { // up and north
-                    "condition": "query.block_property('minecraft:facing_direction') == 'up' && query.block_property('minecraft:cardinal_direction') == 'north'",
+                    "condition": "query.block_state('minecraft:facing_direction') == 'up' && query.block_state('minecraft:cardinal_direction') == 'north'",
                     "components": {
                         "minecraft:transformation": {
                             "rotation": [90, 180, 0]
@@ -410,7 +410,7 @@ Last, but not least, we have the sample arrow block. This block uses both the `m
                     }                                     
                 },
                 { // up and east
-                    "condition": "query.block_property('minecraft:facing_direction') == 'up' && query.block_property('minecraft:cardinal_direction') == 'east'",
+                    "condition": "query.block_state('minecraft:facing_direction') == 'up' && query.block_state('minecraft:cardinal_direction') == 'east'",
                     "components": {
                         "minecraft:transformation": {
                             "rotation": [90, 90, 0]
@@ -420,7 +420,7 @@ Last, but not least, we have the sample arrow block. This block uses both the `m
             ],
             "permutations": [
                 { // down and south
-                    "condition": "query.block_property('minecraft:facing_direction') == 'down' && query.block_property('minecraft:cardinal_direction') == 'south'",
+                    "condition": "query.block_state('minecraft:facing_direction') == 'down' && query.block_state('minecraft:cardinal_direction') == 'south'",
                     "components": {
                         "minecraft:transformation": {
                             "rotation": [-90, 0, 0]
@@ -428,7 +428,7 @@ Last, but not least, we have the sample arrow block. This block uses both the `m
                     }
                 },
                 { // down and west
-                    "condition": "query.block_property('minecraft:facing_direction') == 'down' && query.block_property('minecraft:cardinal_direction') == 'west'",
+                    "condition": "query.block_state('minecraft:facing_direction') == 'down' && query.block_state('minecraft:cardinal_direction') == 'west'",
                     "components": {
                         "minecraft:transformation": {
                             "rotation": [-90, -90, 0]
@@ -436,7 +436,7 @@ Last, but not least, we have the sample arrow block. This block uses both the `m
                     }
                 },
                 { // down and north
-                    "condition": "query.block_property('minecraft:facing_direction') == 'down' && query.block_property('minecraft:cardinal_direction') == 'north'",
+                    "condition": "query.block_state('minecraft:facing_direction') == 'down' && query.block_state('minecraft:cardinal_direction') == 'north'",
                     "components": {
                         "minecraft:transformation": {
                             "rotation": [-90, 180, 0]
@@ -444,7 +444,7 @@ Last, but not least, we have the sample arrow block. This block uses both the `m
                     }
                 },
                 { // down and east
-                    "condition": "query.block_property('minecraft:facing_direction') == 'down' && query.block_property('minecraft:cardinal_direction') == 'east'",
+                    "condition": "query.block_state('minecraft:facing_direction') == 'down' && query.block_state('minecraft:cardinal_direction') == 'east'",
                     "components": {
                         "minecraft:transformation": {
                             "rotation": [-90, 90, 0]

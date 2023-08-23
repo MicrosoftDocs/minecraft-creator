@@ -11,10 +11,18 @@ description: Contents of the .BlockVolumeIntersection enumeration.
 > [!CAUTION]
 > This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Description of the resulting intersection test on two BlockVolume objects
+
 ## Constants
 ### **Disjoint**
 `Disjoint = 0`
+
+Volume B has no intersection points with Volume A
 ### **Contains**
 `Contains = 1`
+
+Volume B resides completely inside Volume A
 ### **Intersects**
 `Intersects = 2`
+
+Volume B partially intersects Volume A

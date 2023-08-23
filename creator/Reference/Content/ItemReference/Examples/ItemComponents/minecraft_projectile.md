@@ -14,8 +14,8 @@ description: "A reference document detailing the 'projectile' item component"
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|minimum_critical_power|*not set*|Decimal|Defines the time a projectile needs to charge in order to critically hit|
-|projectile_entity|*not set* |String| The entity to be fired as a projectile|
+|minimum_critical_power|*not set*| Float| Defines the time a projectile needs to charge in order to critically hit|
+|projectile_entity|*not set* | JSON object| The entity to be fired as a projectile|
 
 ## Example
 

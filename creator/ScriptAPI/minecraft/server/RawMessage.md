@@ -43,6 +43,8 @@ Type: *string*
 ### **with**
 `with?: string[] | RawMessage;`
 
+Arguments for the translation token. Can be either an array of strings or RawMessage containing an array of raw text objects.
+
 Type: *string*[] | [*RawMessage*](RawMessage.md)
 
 #### Examples

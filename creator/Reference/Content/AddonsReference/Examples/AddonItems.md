@@ -79,7 +79,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -520| bamboo_trapdoor|  |
 | -519| bamboo_wall_sign|  |
 | 574| banner|  |
-| 711| banner_pattern|  |
+| 717| banner_pattern|  |
 | -203| barrel|  |
 | -161| barrier|  |
 | -234| basalt|  |
@@ -113,8 +113,14 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -428| black_candle|  |
 | -445| black_candle_cake|  |
 | -611| black_carpet|  |
+| -642| black_concrete|  |
+| -723| black_concrete_powder|  |
 | 397| black_dye|  |
 | 235| black_glazed_terracotta|  |
+| -627| black_shulker_box|  |
+| -687| black_stained_glass|  |
+| -657| black_stained_glass_pane|  |
+| -738| black_terracotta|  |
 | -554| black_wool|  |
 | -273| blackstone|  |
 | -283| blackstone_double_slab|  |
@@ -130,11 +136,17 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -424| blue_candle|  |
 | -441| blue_candle_cake|  |
 | -607| blue_carpet|  |
+| -638 | blue_concrete|  |
+| -719 | blue_concrete_powder|  |
 | 401| blue_dye|  |
 | 231| blue_glazed_terracotta|  |
 | -11| blue_ice|  |
+| -623 | blue_shulker_box|  |
+| -683 | blue_stained_glass|  |
+| -653 | blue_stained_glass_pane|  |
+| -734 | blue_terracotta|  |
 | -563| blue_wool|  |
-| 709| boat|  |
+| 715| boat|  |
 | 417| bone|  |
 | 216| bone_block|  |
 | 413| bone_meal|  |
@@ -154,10 +166,16 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -425| brown_candle|  |
 | -442| brown_candle_cake|  |
 | -608| brown_carpet|  |
+| -639 | brown_concrete|  |
+| -720 | brown_concrete_powder|  |
 | 400| brown_dye|  |
 | 232| brown_glazed_terracotta|  |
 | 39| brown_mushroom|  |
 | 99| brown_mushroom_block|  |
+| -624 | brown_shulker_box|  |
+| -684 | brown_stained_glass|  |
+| -654 | brown_stained_glass_pane|  |
+| -735 | brown_terracotta|  |
 | -555| brown_wool|  |
 | 684| brush|  |
 | -160| bubble_column|  |
@@ -174,7 +192,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 596| campfire|  |
 | -412| candle|  |
 | -429| candle_cake|  |
-| 704| carpet|  |
+| 705| carpet|  |
 | 279| carrot|  |
 | 524| carrot_on_a_stick|  |
 | 141| carrots|  |
@@ -255,8 +273,8 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 393| compass|  |
 | -213| composter|  |
 | 602| compound|  |
-| 236| concrete|  |
-| 237| concrete_powder|  |
+| 710| concrete|  |
+| 711| concrete_powder|  |
 | -157| conduit|  |
 | 274| cooked_beef|  |
 | 276| cooked_chicken|  |
@@ -269,7 +287,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -340| copper_block|  |
 | 511| copper_ingot|  |
 | -311| copper_ore|  |
-| 707| coral|  |
+| 708| coral|  |
 | -132| coral_block|  |
 | -133| coral_fan|  |
 | -134| coral_fan_dead|  |
@@ -311,8 +329,14 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -422| cyan_candle|  |
 | -439| cyan_candle_cake|  |
 | -605| cyan_carpet|  |
+| -636 | cyan_concrete|  |
+| -717 | cyan_concrete_powder|  |
 | 403| cyan_dye|  |
 | 229| cyan_glazed_terracotta|  |
+| -621| cyan_shulker_box|  |
+| -681| cyan_stained_glass|  |
+| -651| cyan_stained_glass_pane|  |
+| -732| cyan_terracotta|  |
 | -561| cyan_wool|  |
 | 670| danger_pottery_sherd|  |
 | 382| dark_oak_boat|  |
@@ -396,7 +420,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 125| dropper|  |
 | 485| drowned_spawn_egg|  |
 | 687| dune_armor_trim_smithing_template|  |
-| 710| dye|  |
+| 716| dye|  |
 | 655| echo_shard|  |
 | 392| egg|  |
 | 473| elder_guardian_spawn_egg|  |
@@ -529,7 +553,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 116| enchanting_table|  |
 | -178| end_brick_stairs|  |
 | 206| end_bricks|  |
-| 713| end_crystal|  |
+| 719| end_crystal|  |
 | 209| end_gateway|  |
 | 119| end_portal|  |
 | 120| end_portal_frame|  |
@@ -552,7 +576,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 691| eye_armor_trim_smithing_template|  |
 | 60| farmland|  |
 | 329| feather|  |
-| 706| fence|  |
+| 707| fence|  |
 | 107| fence_gate|  |
 | 430| fermented_spider_eye|  |
 | 592| field_masoned_banner_pattern|  |
@@ -620,14 +644,26 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -420| gray_candle|  |
 | -437| gray_candle_cake|  |
 | -603| gray_carpet|  |
+| -634| gray_concrete|  |
+| -715| gray_concrete_powder|  |
 | 405| gray_dye|  |
 | 227| gray_glazed_terracotta|  |
+| -619| gray_shulker_box|  |
+| -679| gray_stained_glass|  |
+| -649| gray_stained_glass_pane|  |
+| -730| gray_terracotta|  |
 | -553| gray_wool|  |
 | -426| green_candle|  |
 | -443| green_candle_cake|  |
 | -609| green_carpet|  |
+| -640| green_concrete|  |
+| -721| green_concrete_powder|  |
 | 399| green_dye|  |
 | 233| green_glazed_terracotta|  |
+| -625| green_shulker_box|  |
+| -685| green_stained_glass|  |
+| -655| green_stained_glass_pane|  |
+| -736| green_terracotta|  |
 | -560| green_wool|  |
 | -195| grindstone|  |
 | 463| guardian_spawn_egg|  |
@@ -749,21 +785,39 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -416| light_blue_candle|  |
 | -433| light_blue_candle_cake|  |
 | -599| light_blue_carpet|  |
+| -630| light_blue_concrete|  |
+| -711| light_blue_concrete_powder|  |
 | 409| light_blue_dye|  |
 | 223| light_blue_glazed_terracotta|  |
+| -615| light_blue_shulker_box|  |
+| -675| light_blue_stained_glass|  |
+| -645| light_blue_stained_glass_pane|  |
+| -726| light_blue_terracotta|  |
 | -562| light_blue_wool|  |
 | -421| light_gray_candle|  |
 | -438| light_gray_candle_cake|  |
 | -604| light_gray_carpet|  |
+| -635| light_gray_concrete|  |
+| -716| light_gray_concrete_powder|  |
 | 404| light_gray_dye|  |
+| -620| light_gray_shulker_box|  |
+| -680| light_gray_stained_glass|  |
+| -650| light_gray_stained_glass_pane|  |
+| -731| light_gray_terracotta|  |
 | -552| light_gray_wool|  |
 | 147| light_weighted_pressure_plate|  |
 | -312| lightning_rod|  |
 | -418| lime_candle|  |
 | -435| lime_candle_cake|  |
 | -601| lime_carpet|  |
+| -632| lime_concrete|  |
+| -713| lime_concrete_powder|  |
 | 407| lime_dye|  |
 | 225| lime_glazed_terracotta|  |
+| -617| lime_shulker_box|  |
+| -677| lime_stained_glass|  |
+| -647| lime_stained_glass_pane|  |
+| -728| lime_terracotta|  |
 | -559| lime_wool|  |
 | 569| lingering_potion|  |
 | -214| lit_blast_furnace|  |
@@ -776,14 +830,20 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 475| llama_spawn_egg|  |
 | -222| lodestone|  |
 | 610| lodestone_compass|  |
-| 705| log|  |
-| 708| log2|  |
+| 706| log|  |
+| 709| log2|  |
 | -204| loom|  |
 | -415| magenta_candle|  |
 | -432| magenta_candle_cake|  |
 | -598| magenta_carpet|  |
+| -629| magenta_concrete|  |
+| -710| magenta_concrete_powder|  |
 | 410| magenta_dye|  |
 | 222| magenta_glazed_terracotta|  |
+| -614| magenta_shulker_box|  |
+| -674| magenta_stained_glass|  |
+| -644| magenta_stained_glass_pane|  |
+| -725| magenta_terracotta|  |
 | -565| magenta_wool|  |
 | 213| magma|  |
 | 432| magma_cream|  |
@@ -899,8 +959,14 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -414| orange_candle|  |
 | -431| orange_candle_cake|  |
 | -597| orange_carpet|  |
+| -628| orange_concrete|  |
+| -709| orange_concrete_powder|  |
 | 411| orange_dye|  |
 | 221| orange_glazed_terracotta|  |
+| -613| orange_shulker_box|  |
+| -673| orange_stained_glass|  |
+| -643| orange_stained_glass_pane|  |
+| -724| orange_terracotta|  |
 | -557| orange_wool|  |
 | -343| oxidized_copper|  |
 | -350| oxidized_cut_copper|  |
@@ -924,9 +990,15 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -419| pink_candle|  |
 | -436| pink_candle_cake|  |
 | -602| pink_carpet|  |
+| -633| pink_concrete|  |
+| -714| pink_concrete_powder|  |
 | 406| pink_dye|  |
 | 226| pink_glazed_terracotta|  |
 | -549| pink_petals|  |
+| -618| pink_shulker_box|  |
+| -678| pink_stained_glass|  |
+| -648| pink_stained_glass_pane|  |
+| -729| pink_terracotta|  |
 | -566| pink_wool|  |
 | 33| piston|  |
 | 34| piston_arm_collision|  |
@@ -986,8 +1058,14 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -423| purple_candle|  |
 | -440| purple_candle_cake|  |
 | -606| purple_carpet|  |
+| -637| purple_concrete|  |
+| -718| purple_concrete_powder|  |
 | 402| purple_dye|  |
 | 219| purple_glazed_terracotta|  |
+| -622| purple_shulker_box|  |
+| -682| purple_stained_glass|  |
+| -652| purple_stained_glass_pane|  |
+| -733| purple_terracotta|  |
 | -564| purple_wool|  |
 | 201| purpur_block|  |
 | 203| purpur_stairs|  |
@@ -1015,6 +1093,8 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -427| red_candle|  |
 | -444| red_candle_cake|  |
 | -610| red_carpet|  |
+| -641| red_concrete|  |
+| -722| red_concrete_powder|  |
 | 398| red_dye|  |
 | 38| red_flower|  |
 | 234| red_glazed_terracotta|  |
@@ -1024,6 +1104,10 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -184| red_nether_brick_stairs|  |
 | 179| red_sandstone|  |
 | 180| red_sandstone_stairs|  |
+| -626| red_shulker_box|  |
+| -686| red_stained_glass|  |
+| -656| red_stained_glass_pane|  |
+| -737| red_terracotta|  |
 | -556| red_wool|  |
 | 375| redstone|  |
 | 152| redstone_block|  |
@@ -1064,7 +1148,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | 681| shelter_pottery_sherd|  |
 | 357| shield|  |
 | -230| shroomlight|  |
-| 218| shulker_box|  |
+| 714| shulker_box|  |
 | 573| shulker_shell|  |
 | 471| shulker_spawn_egg|  |
 | 697| silence_armor_trim_smithing_template|  |
@@ -1102,7 +1186,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -236| soul_soil|  |
 | -268| soul_torch|  |
 | 608| sparkler|  |
-| 712| spawn_egg|  |
+| 718| spawn_egg|  |
 | 278| spider_eye|  |
 | 448| spider_spawn_egg|  |
 | 696| spire_armor_trim_smithing_template|  |
@@ -1125,9 +1209,9 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -182| spruce_wall_sign|  |
 | 633| spyglass|  |
 | 452| squid_spawn_egg|  |
-| 241| stained_glass|  |
-| 160| stained_glass_pane|  |
-| 159| stained_hardened_clay|  |
+| 712| stained_glass|  |
+| 713| stained_glass_pane|  |
+| 703| stained_hardened_clay|  |
 | 176| standing_banner|  |
 | 63| standing_sign|  |
 | 322| stick|  |
@@ -1279,8 +1363,14 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -413| white_candle|  |
 | -430| white_candle_cake|  |
 | 171| white_carpet|  |
+| 236| white_concrete|  |
+| 237| white_concrete_powder|  |
 | 412| white_dye|  |
 | 220| white_glazed_terracotta|  |
+| 218| white_shulker_box|  |
+| 241| white_stained_glass|  |
+| 160| white_stained_glass_pane|  |
+| 159| white_terracotta|  |
 | 35| white_wool|  |
 | 689| wild_armor_trim_smithing_template|  |
 | 454| witch_spawn_egg|  |
@@ -1304,9 +1394,15 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | -417| yellow_candle|  |
 | -434| yellow_candle_cake|  |
 | -600| yellow_carpet|  |
+| -631| yellow_concrete|  |
+| -712| yellow_concrete_powder|  |
 | 408| yellow_dye|  |
 | 37| yellow_flower|  |
 | 224| yellow_glazed_terracotta|  |
+| -616| yellow_shulker_box|  |
+| -676| yellow_stained_glass|  |
+| -646| yellow_stained_glass_pane|  |
+| -727| yellow_terracotta|  |
 | -558| yellow_wool|  |
 | 500| zoglin_spawn_egg|  |
 | 470| zombie_horse_spawn_egg|  |

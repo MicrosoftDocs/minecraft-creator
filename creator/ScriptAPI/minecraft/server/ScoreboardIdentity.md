@@ -54,4 +54,6 @@ If the scoreboard identity is an entity or player, returns the entity that this 
 isValid(): boolean
 `
 
+Returns true if the ScoreboardIdentity reference is still valid.
+
 #### **Returns** *boolean*
