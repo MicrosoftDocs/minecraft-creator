@@ -35,6 +35,8 @@ Type: [*DataDrivenEntityTriggerBeforeEventSignal*](DataDrivenEntityTriggerBefore
 ### **entityRemove**
 `read-only entityRemove: EntityRemoveBeforeEventSignal;`
 
+Fires before an entity is removed from the world (for example, unloaded or removed after being killed.)
+
 Type: [*EntityRemoveBeforeEventSignal*](EntityRemoveBeforeEventSignal.md)
 
 > [!CAUTION]
@@ -80,6 +82,36 @@ Type: [*ItemUseOnBeforeEventSignal*](ItemUseOnBeforeEventSignal.md)
 This event fires when a piston expands or retracts.
 
 Type: [*PistonActivateBeforeEventSignal*](PistonActivateBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **playerBreakBlock**
+`read-only playerBreakBlock: PlayerBreakBlockBeforeEventSignal;`
+
+This event fires before a block is broken by a player.
+
+Type: [*PlayerBreakBlockBeforeEventSignal*](PlayerBreakBlockBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **playerDimensionChange**
+`read-only playerDimensionChange: PlayerDimensionChangeBeforeEventSignal;`
+
+Fires before a player is about to change dimensions.
+
+Type: [*PlayerDimensionChangeBeforeEventSignal*](PlayerDimensionChangeBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **playerPlaceBlock**
+`read-only playerPlaceBlock: PlayerPlaceBlockBeforeEventSignal;`
+
+This event fires before a block is placed by a player.
+
+Type: [*PlayerPlaceBlockBeforeEventSignal*](PlayerPlaceBlockBeforeEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.

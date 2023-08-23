@@ -19,7 +19,7 @@ Enumerates all [*@minecraft/server.BlockStateType*](../../minecraft/server/Block
 
 ### **get**
 `
-static "get"(stateName: string): BlockStateType
+static "get"(stateName: string): BlockStateType | undefined
 `
 
 Retrieves a specific block state instance.
@@ -27,7 +27,7 @@ Retrieves a specific block state instance.
 #### **Parameters**
 - **stateName**: *string*
 
-#### **Returns** [*BlockStateType*](BlockStateType.md)
+#### **Returns** [*BlockStateType*](BlockStateType.md) | *undefined* - Returns the block state instance if it is found. If the block state instance is not found returns undefined.
 
 ### **getAll**
 `

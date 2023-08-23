@@ -19,7 +19,7 @@ Returns the set of item types registered within Minecraft.
 
 ### **get**
 `
-static "get"(itemId: string): ItemType
+static "get"(itemId: string): ItemType | undefined
 `
 
 Returns a specific item type, if available within Minecraft.
@@ -27,7 +27,7 @@ Returns a specific item type, if available within Minecraft.
 #### **Parameters**
 - **itemId**: *string*
 
-#### **Returns** [*ItemType*](ItemType.md)
+#### **Returns** [*ItemType*](ItemType.md) | *undefined*
 
 ### **getAll**
 `

@@ -82,6 +82,8 @@ Type: *boolean*
 ### **isSleeping**
 `read-only isSleeping: boolean;`
 
+If true, the entity is currently sleeping.
+
 Type: *boolean*
 
 > [!CAUTION]
@@ -152,10 +154,9 @@ Type: *string*
 
 Returns a scoreboard identity that represents this entity.
 
-Type: [*ScoreboardIdentity*](ScoreboardIdentity.md)
+Will remain valid when the entity is killed.
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+Type: [*ScoreboardIdentity*](ScoreboardIdentity.md)
 
 ### **target**
 `read-only target: Entity;`
@@ -170,7 +171,7 @@ Type: [*Entity*](Entity.md)
 ### **typeId**
 `read-only typeId: string;`
 
-Unique identifier of the type of the entity - for example, 'minecraft:skeleton'. This property is accessible even if [*@minecraft/server.Entity.isValid*](../../minecraft/server/Entity.md#isvalid) is false.
+Identifier of the type of the entity - for example, 'minecraft:skeleton'. This property is accessible even if [*@minecraft/server.Entity.isValid*](../../minecraft/server/Entity.md#isvalid) is false.
 
 Type: *string*
 
@@ -629,16 +630,20 @@ Returns the current location of the head component of this entity.
 getProperty(identifier: string): boolean | number | string | undefined
 `
 
+Gets an entity Property value. If the property was set using the setProperty function within the same tick, the updated value will not be reflected until the subsequent tick.
+
 #### **Parameters**
 - **identifier**: *string*
+  
+  The entity Property identifier.
 
-#### **Returns** *boolean* | *number* | *string* | *undefined*
+#### **Returns** *boolean* | *number* | *string* | *undefined* - Returns the current property value. For enum properties, a string is returned. For float and int properties, a number is returned. For undefined properties, undefined is returned.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
-> This function can throw errors.
+> Throws if the entity is invalid.
 
 ### **getRotation**
 `
@@ -647,7 +652,7 @@ getRotation(): Vector2
 
 Returns the current rotation component of this entity.
 
-#### **Returns** [*Vector2*](Vector2.md) - Returns the current rotation component of this entity.
+#### **Returns** [*Vector2*](Vector2.md) - Returns a Vec2 containing the rotation of this entity (in degrees).
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -808,6 +813,8 @@ Cause the entity to play the given animation.
 remove(): void
 `
 
+Immediately removes the entity from the world. The removed entity will not perform a death animation or drop loot upon removal.
+
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
@@ -882,10 +889,14 @@ Removes a specified tag from an entity.
 resetProperty(identifier: string): boolean | number | string
 `
 
+Resets an Entity Property back to its default value, as specified in the Entity's definition. This property change is not applied until the next tick.
+
 #### **Parameters**
 - **identifier**: *string*
+  
+  The Entity Property identifier.
 
-#### **Returns** *boolean* | *number* | *string*
+#### **Returns** *boolean* | *number* | *string* - Returns the default property value. For enum properties, a string is returned. For float and int properties, a number is returned. For undefined properties, undefined is returned.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -894,7 +905,7 @@ resetProperty(identifier: string): boolean | number | string
 > This function can't be called in read-only mode.
 
 > [!WARNING]
-> This function can throw errors.
+> Throws if the entity is invalid.
 
 ### **runCommand**
 `
@@ -1014,9 +1025,15 @@ Sets an entity on fire (if it is not in water or rain). Note that you can call g
 setProperty(identifier: string, value: boolean | number | string): void
 `
 
+Sets an Entity Property to the provided value. This property change is not applied until the next tick.
+
 #### **Parameters**
 - **identifier**: *string*
+  
+  The Entity Property identifier.
 - **value**: *boolean* | *number* | *string*
+  
+  The property value. The provided type must be compatible with the type specified in the entity's definition. 
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -1025,7 +1042,19 @@ setProperty(identifier: string, value: boolean | number | string): void
 > This function can't be called in read-only mode.
 
 > [!WARNING]
-> This function can throw errors.
+> Throws if the entity is invalid.,Throws if an invalid identifier is provided.,Throws if the provided value type does not match the property type.,Throws if the provided value is outside the expected range (int, float properties).,Throws if the provided string value does not match the set of accepted enum values (enum properties
+
+> [!WARNING]
+> Throws if the entity is invalid.,Throws if an invalid identifier is provided.,Throws if the provided value type does not match the property type.,Throws if the provided value is outside the expected range (int, float properties).,Throws if the provided string value does not match the set of accepted enum values (enum properties
+
+> [!WARNING]
+> Throws if the entity is invalid.,Throws if an invalid identifier is provided.,Throws if the provided value type does not match the property type.,Throws if the provided value is outside the expected range (int, float properties).,Throws if the provided string value does not match the set of accepted enum values (enum properties
+
+> [!WARNING]
+> Throws if the entity is invalid.,Throws if an invalid identifier is provided.,Throws if the provided value type does not match the property type.,Throws if the provided value is outside the expected range (int, float properties).,Throws if the provided string value does not match the set of accepted enum values (enum properties
+
+> [!WARNING]
+> Throws if the entity is invalid.,Throws if an invalid identifier is provided.,Throws if the provided value type does not match the property type.,Throws if the provided value is outside the expected range (int, float properties).,Throws if the provided string value does not match the set of accepted enum values (enum properties
 
 ### **setRotation**
 `
@@ -1037,7 +1066,7 @@ Sets the main rotation of the entity.
 #### **Parameters**
 - **rotation**: [*Vector2*](Vector2.md)
   
-  The x and y rotation of the entity. For most mobs, the x rotation controls the head tilt and the y rotation controls the body rotation.
+  The x and y rotation of the entity (in degrees). For most mobs, the x rotation controls the head tilt and the y rotation controls the body rotation.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -1106,7 +1135,7 @@ Triggers an entity type event. For every entity, a number of events are defined 
 > This function can't be called in read-only mode.
 
 > [!WARNING]
-> This function can throw errors.
+> If the event is not defined in the definition of the entity, an error will be thrown.
 
 #### Examples
 ##### ***triggerEvent.ts***

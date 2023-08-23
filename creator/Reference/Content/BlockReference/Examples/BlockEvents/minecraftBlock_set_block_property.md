@@ -1,27 +1,27 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Block Documentation - set_block_property
+title: Block Documentation - set_block_state
 ms.prod: gaming
-description: "A reference document detailing the 'set_block_property' block event response"
+description: "A reference document detailing the 'set_block_state' block event response"
 ---
 
-# Block Documentation - set_block_property
+# Block Documentation - set_block_state
 
-`set_block_property` is an Event Response that will set the block property.
+`set_block_state` is an Event Response that will set the block state.
 
 ## Extra Parameters
 
-`set_block_property` can use the following parameters
+`set_block_state` can use the following parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|property|*not set* | Molang| Block property to set on the block. |
+||*not set* | Molang| Block state to set on the block. |
 
 ## Example
 
 ```json
-"set_block_property": {
+"set_block_state": {
   "property name here": "Molang expression here"
 }
 ```

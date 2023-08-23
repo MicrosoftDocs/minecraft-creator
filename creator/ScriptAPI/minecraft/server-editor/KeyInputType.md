@@ -13,5 +13,9 @@ Keyboard Key Actions
 ## Constants
 ### **Press**
 `Press = 1`
+
+Button was pressed.
 ### **Release**
 `Release = 2`
+
+Button was released.

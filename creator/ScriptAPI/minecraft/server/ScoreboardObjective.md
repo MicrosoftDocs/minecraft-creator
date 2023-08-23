@@ -118,6 +118,8 @@ Returns if the specified identity is a participant of the scoreboard objective.
 isValid(): boolean
 `
 
+Returns true if the ScoreboardObjective reference is still valid.
+
 #### **Returns** *boolean*
 
 ### **removeParticipant**

@@ -10,6 +10,12 @@ description: "A reference document detailing the 'equip_item' entity component"
 
 `minecraft:equip_item` compels the entity to equip desired equipment.
 
+## Parameters
+
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+| excluded_items| *not set*| List| The list of items that the entity should not equip. |
+
 ## Example
 
 ```json

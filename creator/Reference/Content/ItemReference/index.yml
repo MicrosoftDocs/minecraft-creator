@@ -24,8 +24,8 @@ landingContent:
         links:
           - text: Item Components List
             url: Examples/ItemComponentList.md
-          - text: minecraft:armor
-            url: Examples/ItemComponents/minecraft_armor.md
+          - text: minecraft:wearable
+            url: Examples/ItemComponents/minecraft_wearable.md
           - text: minecraft:block_placer
             url: Examples/ItemComponents/minecraft_block_placer.md
   - title: Item Definitions
