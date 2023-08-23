@@ -15,6 +15,13 @@ Contains data related to an entity spawning within the world.
 
 ## Properties
 
+### **cause**
+`read-only cause: EntityInitializationCause;`
+
+Initialization cause (Spawned, Born ...).
+
+Type: [*EntityInitializationCause*](EntityInitializationCause.md)
+
 ### **entity**
 `entity: Entity;`
 

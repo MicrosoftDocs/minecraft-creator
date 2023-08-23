@@ -74,9 +74,15 @@ Adds the following variables to Molang:
 setFloat(variableName: string, number: number): void
 `
 
+Sets a numeric (decimal) value within the Molang variable map.
+
 #### **Parameters**
 - **variableName**: *string*
+  
+  Name of the float-based number to set.
 - **number**: *number*
+  
+  Value for the Molang-based variable to set.
 
 > [!WARNING]
 > This function can throw errors.

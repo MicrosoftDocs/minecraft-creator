@@ -18,4 +18,6 @@ Represents a type of dimension.
 ### **typeId**
 `read-only typeId: string;`
 
+Identifier of the dimension type.
+
 Type: *string*

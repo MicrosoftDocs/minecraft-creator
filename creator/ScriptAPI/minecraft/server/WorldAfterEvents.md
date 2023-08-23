@@ -12,32 +12,12 @@ Contains a set of events that are available across the scope of the World.
 
 ## Properties
 
-### **blockBreak**
-`read-only blockBreak: BlockBreakAfterEventSignal;`
-
-This event fires for a block that is broken by a player.
-
-Type: [*BlockBreakAfterEventSignal*](BlockBreakAfterEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **blockExplode**
 `read-only blockExplode: BlockExplodeAfterEventSignal;`
 
 This event fires for each BlockLocation destroyed by an explosion. It is fired after the blocks have already been destroyed.
 
 Type: [*BlockExplodeAfterEventSignal*](BlockExplodeAfterEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-### **blockPlace**
-`read-only blockPlace: BlockPlaceAfterEventSignal;`
-
-This event fires for a block that is placed by a player.
-
-Type: [*BlockPlaceAfterEventSignal*](BlockPlaceAfterEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -123,8 +103,20 @@ Type: [*EntityHurtAfterEventSignal*](EntityHurtAfterEventSignal.md)
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+### **entityLoad**
+`read-only entityLoad: EntityLoadAfterEventSignal;`
+
+Fires when an entity is loaded.
+
+Type: [*EntityLoadAfterEventSignal*](EntityLoadAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **entityRemove**
 `read-only entityRemove: EntityRemoveAfterEventSignal;`
+
+Fires when an entity is removed (for example, potentially unloaded, or removed after being killed).
 
 Type: [*EntityRemoveAfterEventSignal*](EntityRemoveAfterEventSignal.md)
 
@@ -268,6 +260,26 @@ Type: [*PistonActivateAfterEventSignal*](PistonActivateAfterEventSignal.md)
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+### **playerBreakBlock**
+`read-only playerBreakBlock: PlayerBreakBlockAfterEventSignal;`
+
+This event fires for a block that is broken by a player.
+
+Type: [*PlayerBreakBlockAfterEventSignal*](PlayerBreakBlockAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **playerDimensionChange**
+`read-only playerDimensionChange: PlayerDimensionChangeAfterEventSignal;`
+
+Fires when a player moved to a different dimension.
+
+Type: [*PlayerDimensionChangeAfterEventSignal*](PlayerDimensionChangeAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **playerJoin**
 `read-only playerJoin: PlayerJoinAfterEventSignal;`
 
@@ -281,6 +293,16 @@ Type: [*PlayerJoinAfterEventSignal*](PlayerJoinAfterEventSignal.md)
 This event fires when a player leaves a world.
 
 Type: [*PlayerLeaveAfterEventSignal*](PlayerLeaveAfterEventSignal.md)
+
+### **playerPlaceBlock**
+`read-only playerPlaceBlock: PlayerPlaceBlockAfterEventSignal;`
+
+This event fires for a block that is placed by a player.
+
+Type: [*PlayerPlaceBlockAfterEventSignal*](PlayerPlaceBlockAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **playerSpawn**
 `read-only playerSpawn: PlayerSpawnAfterEventSignal;`

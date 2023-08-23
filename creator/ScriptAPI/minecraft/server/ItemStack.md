@@ -152,6 +152,8 @@ Creates an exact copy of the item stack, including any custom data or properties
 getCanDestroy(): string[]
 `
 
+Get the list of block types this item can break in Adventure mode.
+
 #### **Returns** *string*[]
 
 > [!CAUTION]
@@ -164,6 +166,8 @@ getCanDestroy(): string[]
 `
 getCanPlaceOn(): string[]
 `
+
+Get the list of block types this item can be placed on in Adventure mode.
 
 #### **Returns** *string*[]
 
@@ -183,7 +187,7 @@ Gets a component (that represents additional capabilities) for an item stack.
 #### **Parameters**
 - **componentId**: *string*
   
-  The identifier of the component (e.g., 'minecraft:food') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed. If the component is not present on the item stack, undefined is returned.
+  The identifier of the component (e.g., 'minecraft:food') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed. If the component is not present on the item stack or doesn't exist, undefined is returned.
 
 #### **Returns** [*ItemComponent*](ItemComponent.md) | *undefined*
 
@@ -212,7 +216,7 @@ getLore(): string[]
 
 Returns the lore value - a secondary display string - for an ItemStack.
 
-#### **Returns** *string*[] - An array of lore strings. If the item does not have lore, returns an empty array.
+#### **Returns** *string*[] - An array of lore lines. If the item does not have lore, returns an empty array.
 
 ### **getTags**
 `
@@ -266,8 +270,10 @@ Returns whether this item stack can be stacked with the given `itemStack`. This 
 
 #### **Parameters**
 - **itemStack**: [*ItemStack*](ItemStack.md)
+  
+  ItemStack to check stacking compatability with.
 
-#### **Returns** *boolean*
+#### **Returns** *boolean* - True if the Item Stack is stackable with the itemStack passed in.
 
 ### **setCanDestroy**
 `
@@ -278,6 +284,8 @@ The list of block types this item can break in Adventure mode. The block names a
 
 #### **Parameters**
 - **blockIdentifiers**?: *string*[] = `null`
+  
+  String list of block types that the item can destroy.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -305,6 +313,8 @@ The list of block types this item can be placed on in Adventure mode. This is on
 
 #### **Parameters**
 - **blockIdentifiers**?: *string*[] = `null`
+  
+  String list of block types that the item can be placed on.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -328,10 +338,12 @@ specialPickaxe.setCanPlaceOn(["minecraft:grass", "minecraft:dirt"]);
 setLore(loreList?: string[]): void
 `
 
-Sets the lore value - a secondary display string - for an ItemStack.
+Sets the lore value - a secondary display string - for an ItemStack. The lore list is cleared if set to an empty string or undefined.
 
 #### **Parameters**
 - **loreList**?: *string*[] = `null`
+  
+  List of lore lines. Each element in the list represents a new line. The maximum lore line count is 20. The maximum lore line length is 50 characters.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

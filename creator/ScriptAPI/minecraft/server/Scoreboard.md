@@ -39,43 +39,6 @@ Adds a new objective to the scoreboard.
 > [!WARNING]
 > This function can throw errors.
 
-#### Examples
-##### ***updateScoreboard.ts***
-```typescript
-  const scoreboardObjectiveId = "scoreboard_demo_objective";
-  const scoreboardObjectiveDisplayName = "Demo Objective";
-
-  let players = mc.world.getPlayers();
-
-  // Ensure a new objective.
-  let objective = mc.world.scoreboard.getObjective(scoreboardObjectiveId);
-
-  if (!objective) {
-    objective = mc.world.scoreboard.addObjective(scoreboardObjectiveId, scoreboardObjectiveDisplayName);
-  }
-
-  // get the scoreboard identity for player 0
-  let player0Identity = players[0].scoreboardIdentity;
-
-  if (player0Identity === undefined) {
-    log("Could not get a scoreboard identity for player 0.");
-    return -1;
-  }
-
-  // initialize player score to 100;
-  objective.setScore(player0Identity, 100);
-
-  mc.world.scoreboard.setObjectiveAtDisplaySlot("sidebar", {
-    objective: objective,
-    sortOrder: mc.ObjectiveSortOrder.descending,
-  });
-
-  const playerScore = objective.getScore(player0Identity) ?? 0;
-
-  // score should now be 110.
-  objective.setScore(player0Identity, playerScore + 10);
-```
-
 ### **clearObjectiveAtDisplaySlot**
 `
 clearObjectiveAtDisplaySlot(displaySlotId: DisplaySlotId): ScoreboardObjective | undefined
@@ -164,47 +127,10 @@ Sets an objective into a display slot with specified additional display settings
 - **displaySlotId**: [*DisplaySlotId*](DisplaySlotId.md)
 - **objectiveDisplaySetting**: [*ScoreboardObjectiveDisplayOptions*](ScoreboardObjectiveDisplayOptions.md)
 
-#### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md) | *undefined*
+#### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md) | *undefined* - Returns the previous `ScoreboardObjective` set at the display slot, if no objective was previously set it returns `undefined`.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
-
-#### Examples
-##### ***updateScoreboard.ts***
-```typescript
-  const scoreboardObjectiveId = "scoreboard_demo_objective";
-  const scoreboardObjectiveDisplayName = "Demo Objective";
-
-  let players = mc.world.getPlayers();
-
-  // Ensure a new objective.
-  let objective = mc.world.scoreboard.getObjective(scoreboardObjectiveId);
-
-  if (!objective) {
-    objective = mc.world.scoreboard.addObjective(scoreboardObjectiveId, scoreboardObjectiveDisplayName);
-  }
-
-  // get the scoreboard identity for player 0
-  let player0Identity = players[0].scoreboardIdentity;
-
-  if (player0Identity === undefined) {
-    log("Could not get a scoreboard identity for player 0.");
-    return -1;
-  }
-
-  // initialize player score to 100;
-  objective.setScore(player0Identity, 100);
-
-  mc.world.scoreboard.setObjectiveAtDisplaySlot("sidebar", {
-    objective: objective,
-    sortOrder: mc.ObjectiveSortOrder.descending,
-  });
-
-  const playerScore = objective.getScore(player0Identity) ?? 0;
-
-  // score should now be 110.
-  objective.setScore(player0Identity, playerScore + 10);
-```

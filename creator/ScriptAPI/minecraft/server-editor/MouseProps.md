@@ -8,9 +8,6 @@ description: Contents of the .MouseProps type alias.
 ---
 # MouseProps Type Alias
 
-> [!CAUTION]
-> This alias is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Mouse properties that provide additional information from client event handling
 
 ## Declaration

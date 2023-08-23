@@ -12,7 +12,7 @@ description: Contents of the @minecraft/server.Player class.
 - [*Entity*](Entity.md)
 
 ## Classes that extend Player
-- [*SimulatedPlayer*](SimulatedPlayer.md)
+- [*@minecraft/server-gametest.SimulatedPlayer*](../../minecraft/server-gametest/SimulatedPlayer.md)
 
 Represents a player within the world.
 
@@ -21,6 +21,8 @@ Represents a player within the world.
 ### **camera**
 `read-only camera: Camera;`
 
+The player's Camera.
+
 Type: [*Camera*](Camera.md)
 
 > [!CAUTION]
@@ -28,6 +30,8 @@ Type: [*Camera*](Camera.md)
 
 ### **isEmoting**
 `read-only isEmoting: boolean;`
+
+If true, the player is currently emoting.
 
 Type: *boolean*
 

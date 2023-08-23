@@ -59,7 +59,7 @@ Returns all available block states associated with this block.
 
 ### **getItemStack**
 `
-getItemStack(amount?: number): ItemStack
+getItemStack(amount?: number): ItemStack | undefined
 `
 
 Retrieves a prototype item stack based on this block permutation that can be used with item Container/ContainerSlot APIs.
@@ -69,7 +69,7 @@ Retrieves a prototype item stack based on this block permutation that can be use
   
   Number of instances of this block to place in the prototype item stack.
 
-#### **Returns** [*ItemStack*](ItemStack.md)
+#### **Returns** [*ItemStack*](ItemStack.md) | *undefined*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

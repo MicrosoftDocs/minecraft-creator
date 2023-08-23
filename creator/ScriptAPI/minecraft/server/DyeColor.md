@@ -11,36 +11,70 @@ description: Contents of the .DyeColor enumeration.
 > [!CAUTION]
 > This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Specifies different colors for use as dye.
+
 ## Constants
 ### **Black**
 `Black = "Black"`
+
+Black dye color.
 ### **Blue**
 `Blue = "Blue"`
+
+Blue dye color.
 ### **Brown**
 `Brown = "Brown"`
+
+Brown dye color.
 ### **Cyan**
 `Cyan = "Cyan"`
+
+Cyan dye color.
 ### **Gray**
 `Gray = "Gray"`
+
+Gray dye color.
 ### **Green**
 `Green = "Green"`
+
+Green dye color.
 ### **LightBlue**
 `LightBlue = "LightBlue"`
+
+Light blue dye color.
 ### **Lime**
 `Lime = "Lime"`
+
+Lime dye color.
 ### **Magenta**
 `Magenta = "Magenta"`
+
+Magenta dye color.
 ### **Orange**
 `Orange = "Orange"`
+
+Orange dye color.
 ### **Pink**
 `Pink = "Pink"`
+
+Pink dye color.
 ### **Purple**
 `Purple = "Purple"`
+
+Purple dye color.
 ### **Red**
 `Red = "Red"`
+
+Red dye color.
 ### **Silver**
 `Silver = "Silver"`
+
+Silver dye color.
 ### **White**
 `White = "White"`
+
+White dye color.
 ### **Yellow**
 `Yellow = "Yellow"`
+
+Yellow dye color.

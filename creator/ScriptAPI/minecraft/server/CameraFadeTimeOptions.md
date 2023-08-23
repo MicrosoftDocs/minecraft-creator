@@ -11,19 +11,27 @@ description: Contents of the @minecraft/server.CameraFadeTimeOptions class.
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Contains timings for a fade transition.
+
 ## Properties
 
 ### **fadeInTime**
 `fadeInTime: number;`
+
+Time, in seconds, for a fade-in.
 
 Type: *number*
 
 ### **fadeOutTime**
 `fadeOutTime: number;`
 
+Time, in seconds, for a fade-out.
+
 Type: *number*
 
 ### **holdTime**
 `holdTime: number;`
+
+Time, in seconds, to hold the full screen color.
 
 Type: *number*
