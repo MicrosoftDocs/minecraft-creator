@@ -21,8 +21,8 @@ description: "A reference document detailing the 'sittable' entity component"
 
 ```json
 "minecraft:sittable":{
-    "sit_event": "minecraft:taking_a_seat",
-    "stand_event": "minecraft:time_to_go"
+    "sit_event": {"event": "minecraft:taking_a_seat"},
+    "stand_event": {"event": "minecraft:time_to_go"}
 }
 ```
 
