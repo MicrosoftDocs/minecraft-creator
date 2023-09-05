@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: "Experimental Features in Minecraft: Bedrock Edition"
-ms.prod: gaming
 description: "An overview of experimental content available to creators in Minecraft: Bedrock Edition"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Experimental Features in Minecraft: Bedrock Edition
