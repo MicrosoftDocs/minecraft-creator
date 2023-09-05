@@ -2,8 +2,8 @@
 author: RileyManns
 ms.author: v-jillheaden
 title: Introduction to the Tickingarea Command
-ms.prod: gaming
 description: "A guide about ticking areas"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Introduction to Ticking Areas

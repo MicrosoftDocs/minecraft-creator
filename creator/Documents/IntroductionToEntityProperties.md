@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Introduction to Entity Properties
-ms.prod: gaming
 description: "An introductory article detailing entity properties"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Introduction to Entity Properties

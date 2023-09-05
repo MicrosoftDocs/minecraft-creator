@@ -2,7 +2,7 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Introduction to Fogs
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 ---
 
 # Introduction to Fogs
