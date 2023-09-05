@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Block Documentation - Block Description
-ms.prod: gaming
 description: "A reference document detailing the block description section contained in the block behavior pack JSON file"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - Block Description

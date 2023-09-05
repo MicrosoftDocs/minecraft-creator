@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: cartographer_trades
-ms.prod: gaming
 description: "A code snippet of cartographer_trades"
+ms.service: minecraft-bedrock-edition
 ---
 
 # cartographer_trades

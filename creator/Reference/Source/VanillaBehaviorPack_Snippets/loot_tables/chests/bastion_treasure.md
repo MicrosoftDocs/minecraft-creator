@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: bastion_treasure
-ms.prod: gaming
 description: "A code snippet for the bastion treasure chest loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # bastion_treasure

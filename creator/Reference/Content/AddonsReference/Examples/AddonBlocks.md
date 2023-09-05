@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Addons Documentation - Blocks
-ms.prod: gaming
 description: "A reference document listing the available blocks for use in Minecraft: Bedrock Edition"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Addon - Blocks

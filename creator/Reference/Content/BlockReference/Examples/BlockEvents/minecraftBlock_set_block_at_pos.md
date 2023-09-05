@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Block Documentation - set_block_at_pos
-ms.prod: gaming
 description: "A reference document detailing the 'set_block_at_pos' block event response"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - set_block_at_pos

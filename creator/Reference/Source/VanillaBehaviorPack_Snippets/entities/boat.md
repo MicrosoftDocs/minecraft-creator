@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: boat
-ms.prod: gaming
 description: "A code snippet for the boat entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # boat

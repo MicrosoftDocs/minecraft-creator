@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Actor Storage in Minecraft - Bedrock Edition
-ms.prod: gaming
 description: "How actor data is organized in the LevelDB on disk"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Actor Storage in Minecraft: Bedrock Edition

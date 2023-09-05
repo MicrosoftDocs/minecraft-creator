@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: bee spawn_rule
-ms.prod: gaming
 description: "A code snippet of the bee spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # bee spawn_rule

@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Animation Documentation - Upgrading Animation Scripts
-ms.prod: gaming
 description: "A reference document focused on updating animation scripts"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Animation Documentation - Upgrading Animation Scripts

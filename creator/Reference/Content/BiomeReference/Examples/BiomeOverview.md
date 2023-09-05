@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Biome Documentation - Overview
-ms.prod: gaming
 description: "A reference document discussing biomes"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Biome Documentation - Overview

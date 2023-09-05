@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Block Documentation - minecraft:loot
-ms.prod: gaming
 description: "A reference document detailing the 'loot' block component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - minecraft:loot

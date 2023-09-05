@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: beetroot
-ms.prod: gaming
 description: "A code snippet for the beetroot item"
+ms.service: minecraft-bedrock-edition
 ---
 
 # beetroot

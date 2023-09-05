@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Block Documentation - Block States List
-ms.prod: gaming
 description: "A reference document listing all currently available block states"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - Block States

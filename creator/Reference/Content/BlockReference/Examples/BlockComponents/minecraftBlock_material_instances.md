@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Block Documentation - minecraft:material_instances
-ms.prod: gaming
 description: "A reference document detailing the 'material_instances' block component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - minecraft:material_instances

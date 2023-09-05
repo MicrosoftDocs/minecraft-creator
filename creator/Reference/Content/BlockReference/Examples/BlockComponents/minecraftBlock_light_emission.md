@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Block Documentation - minecraft:light_emission
-ms.prod: gaming
 description: "A reference document detailing the 'light_emission' block component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - minecraft:light_emission

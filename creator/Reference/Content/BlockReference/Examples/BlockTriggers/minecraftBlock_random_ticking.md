@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Block Documentation - minecraft:random_ticking
-ms.prod: gaming
 description: "A reference document detailing the 'random_ticking' block trigger"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - minecraft:random_ticking

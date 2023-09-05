@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Block Documentation - Block Traits
-ms.prod: gaming
 description: "A reference document detailing block traits"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - Block Traits

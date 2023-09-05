@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Block Documentation - minecraft:queued_ticking
-ms.prod: gaming
 description: "A reference document detailing the 'queued_ticking' block trigger"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - minecraft:queued_ticking

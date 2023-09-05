@@ -2,7 +2,7 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Block Documentation - minecraft:friction
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - minecraft:friction

@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Block Documentation - Aux Value to Block State Map
-ms.prod: gaming
 description: "A reference document listing all supported aux values and corresponding block states"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - Aux Value to Block State Map

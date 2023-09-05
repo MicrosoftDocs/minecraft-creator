@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: bread
-ms.prod: gaming
 description: "A code snippet for the bread item"
+ms.service: minecraft-bedrock-edition
 ---
 
 # bread

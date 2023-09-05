@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Block Documentation -minecraft:on_placed
-ms.prod: gaming
 description: "A reference document detailing the 'on_placed' block trigger"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - minecraft:on_placed
