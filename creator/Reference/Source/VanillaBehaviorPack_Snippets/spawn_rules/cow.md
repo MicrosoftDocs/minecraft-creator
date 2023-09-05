@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: cow spawn_rule
-ms.prod: gaming
 description: "A code snippet of the cow spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # cow spawn_rule

@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - has_component
-ms.prod: gaming
 description: "A reference document detailing the 'has_component' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - has_component

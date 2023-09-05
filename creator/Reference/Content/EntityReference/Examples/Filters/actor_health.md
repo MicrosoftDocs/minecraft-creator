@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - actor_health
-ms.prod: gaming
 description: "A reference document detailing the 'actor_health' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - actor_health

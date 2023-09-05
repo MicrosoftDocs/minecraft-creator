@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: creeper spawn_rule
-ms.prod: gaming
 description: "A code snippet of the creeper spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # creeper spawn_rule

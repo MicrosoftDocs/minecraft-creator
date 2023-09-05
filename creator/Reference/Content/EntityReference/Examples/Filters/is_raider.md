@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - is_raider
-ms.prod: gaming
 description: "A reference document detailing the 'is_raider' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - is_raider

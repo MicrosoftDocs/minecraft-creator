@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - AI Goal Component List
-ms.prod: gaming
 description: "A reference document listing all current AI Goal Components"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - AI Goal Component list

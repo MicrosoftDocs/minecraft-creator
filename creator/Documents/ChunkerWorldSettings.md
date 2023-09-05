@@ -2,8 +2,8 @@
 author: neonerz
 ms.author: mikeam
 title: Chunker - World Settings
-ms.prod: gaming
 description: "Details the world setting available in Chunker, and how they can be used by creators"
+ms.service: minecraft-bedrock-edition
 ---
 # Chunker - World Settings
 

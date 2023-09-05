@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_game_rule
-ms.prod: gaming
 description: "A reference document detailing the 'is_game_rule' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - is_game_rule

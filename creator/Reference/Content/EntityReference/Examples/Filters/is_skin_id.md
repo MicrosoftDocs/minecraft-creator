@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_skin_id
-ms.prod: gaming
 description: "A reference document detailing the 'is_skin_id' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - is_skin_id

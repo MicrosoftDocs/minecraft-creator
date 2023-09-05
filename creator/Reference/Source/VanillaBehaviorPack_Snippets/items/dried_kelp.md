@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: dried_kelp
-ms.prod: gaming
 description: "A code snippet for the dried_kelp item"
+ms.service: minecraft-bedrock-edition
 ---
 
 # dried_kelp

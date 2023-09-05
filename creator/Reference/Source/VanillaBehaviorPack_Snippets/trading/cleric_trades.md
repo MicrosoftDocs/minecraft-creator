@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: cleric_trades
-ms.prod: gaming
 description: "A code snippet of cleric_trades"
+ms.service: minecraft-bedrock-edition
 ---
 
 # cleric_trades

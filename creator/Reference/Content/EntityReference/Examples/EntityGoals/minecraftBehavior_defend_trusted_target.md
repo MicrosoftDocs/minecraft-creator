@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.defend_trusted_target
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.defend_trusted_target' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.defend_trusted_target
