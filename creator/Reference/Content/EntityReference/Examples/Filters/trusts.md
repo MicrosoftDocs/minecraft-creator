@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - trusts
-ms.prod: gaming
 description: "A reference document detailing the 'trusts' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - trusts

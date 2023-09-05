@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Exploring Material Instances and Render Lighting Options
-ms.prod: gaming
 description: "An Advanced Tutorial Detailing the Use of Render and Lighting Options for Custom Blocks in Minecraft: Bedrock Edition"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Custom Blocks Part 3: Render and Lighting Options

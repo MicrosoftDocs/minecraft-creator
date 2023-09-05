@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Features Documentation - Feature schema
-ms.prod: gaming
 description: "Examples of feature schemas available in Minecraft: Bedrock Edition."
+ms.service: minecraft-bedrock-edition
 ---
 
 # Features Documentation - Feature Schema

@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Features Documentation - minecraft:surface_relative_threshold_feature
-ms.prod: gaming
 description: "A reference document detailing the 'surface_relative_threshold' feature"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Features Documentation - minecraft:surface_relative_threshold_feature

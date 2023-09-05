@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:input_ground_controlled
-ms.prod: gaming
 description: "A reference document detailing the 'input_ground_controlled' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation -  minecraft:input_ground_controlled

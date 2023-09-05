@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Flame particle
-ms.prod: gaming
 description: "A reference document detailing the 'flame particle' particle effect"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Flame particle

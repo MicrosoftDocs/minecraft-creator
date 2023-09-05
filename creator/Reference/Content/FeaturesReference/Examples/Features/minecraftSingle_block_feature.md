@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Features Documentation - minecraft:single_block_feature
-ms.prod: gaming
 description: "A reference document detailing the 'single_block_feature' feature"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Features Documentation - minecraft:single_block_feature

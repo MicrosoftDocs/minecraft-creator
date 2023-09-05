@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:movement.dolphin
-ms.prod: gaming
 description: "A reference document detailing the 'movement.dolphin' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:movement.dolphin

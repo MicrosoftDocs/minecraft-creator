@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: farmer_trades
-ms.prod: gaming
 description: "A code snippet of farmer_trades"
+ms.service: minecraft-bedrock-edition
 ---
 
 # farmer_trades
