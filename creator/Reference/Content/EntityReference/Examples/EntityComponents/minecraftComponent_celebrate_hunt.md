@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:celebrate_hunt
-ms.prod: gaming
 description: "A reference document detailing the 'celebrate_hunt' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:celebrate_hunt

@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.stay_while_sitting
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.stay_while_sitting' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.stay_while_sitting
