@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: event Command
 description: Description and usage of the event command
+ms.service: minecraft-bedrock-edition
 ---
 # `/event` Command
 Triggers an event for the specified entity or entities.
