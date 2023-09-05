@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: horse spawn_rule
-ms.prod: gaming
 description: "A code snippet of the horse spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # horse spawn_rule

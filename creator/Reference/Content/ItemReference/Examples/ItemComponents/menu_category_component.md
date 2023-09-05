@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - menu_category
-ms.prod: gaming
 description: "A reference document detailing the 'menu_category' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - menu_category

@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: fox spawn_rule
-ms.prod: gaming
 description: "A code snippet of the  spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # fox spawn_rule
