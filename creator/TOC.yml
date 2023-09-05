@@ -78,6 +78,8 @@
               href: Documents/BehaviorPack.md
             - name: "Installing Add-Ons in Minecraft: Bedrock"
               href: Documents/AddonPackInstallation.md
+            - name: Utilizing Sub-Packs
+              href: Documents/UtilizingSubpacks.md
             - name: Fog in Resource Packs
               href: Documents/FogInResourcePacks.md
             - name: Particle Effects
