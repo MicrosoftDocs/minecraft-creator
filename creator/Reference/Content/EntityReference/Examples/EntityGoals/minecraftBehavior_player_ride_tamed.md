@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.player_ride_tamed
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.player_ride_tamed' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.player_ride_tamed

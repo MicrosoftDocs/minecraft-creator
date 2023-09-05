@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.equip_item
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.equip_item' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.equip_item

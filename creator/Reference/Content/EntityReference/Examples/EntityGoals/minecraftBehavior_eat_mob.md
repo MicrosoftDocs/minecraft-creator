@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.eat_mob
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.eat_mob' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.eat_mob

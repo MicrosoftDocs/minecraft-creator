@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.dragontakeoff
-ms.prod: gaming
 description: "A reference document detailing the 'dragontakeoff' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.dragontakeoff

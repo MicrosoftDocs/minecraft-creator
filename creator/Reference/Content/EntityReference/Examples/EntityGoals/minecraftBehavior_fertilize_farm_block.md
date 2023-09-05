@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.fertilize_farm_block
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.fertilize_farm_block' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.fertilize_farm_block
