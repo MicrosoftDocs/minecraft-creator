@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: difficulty Command
 description: Description and usage of the difficulty command
+ms.service: minecraft-bedrock-edition
 ---
 # `/difficulty` Command
 Sets the difficulty level (Peaceful, Easy, Normal, Hard) using difficulty enum or integer.

@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: clone Command
 description: Description and usage of the clone command
+ms.service: minecraft-bedrock-edition
 ---
 # `/clone` Command
 Clones a set of blocks from one region to another.
