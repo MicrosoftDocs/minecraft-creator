@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: .WeatherType Enumeration
 description: Contents of the .WeatherType enumeration.
+ms.service: minecraft-bedrock-edition
 ---
 # WeatherType Enumeration
 
