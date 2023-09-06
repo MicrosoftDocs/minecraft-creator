@@ -2,7 +2,7 @@
 author: mammerla
 ms.author: v-jillheaden
 title: minecraft:Name Of Component
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 ---
 
 # minecraft:Name Of Component
