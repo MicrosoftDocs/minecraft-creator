@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Popular Commands
-ms.prod: gaming
 description: "A guide covering many of the most common commands that are used within Minecraft: Bedrock Edition"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Popular Commands
