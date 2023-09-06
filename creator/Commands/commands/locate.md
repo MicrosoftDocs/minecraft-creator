@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: locate Command
 description: Description and usage of the locate command
+ms.service: minecraft-bedrock-edition
 ---
 # `/locate` Command
 Finds the nearest specified biome or structure if it exists in the current dimension. Prints an error if it does not. See more in the [Popular Commands documentation](https://learn.microsoft.com/minecraft/creator/documents/commandspopularcommands#locate).
