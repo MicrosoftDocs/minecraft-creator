@@ -2,8 +2,8 @@
 author: mikeam
 ms.author: mikeam
 title: Use Visual Studio Code tools to write script
-ms.prod: gaming
 description: "Using tools for enhanced editing, debugging, and profiling of GameTest scripts within Visual Studio Code"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Use Visual Studio Code tools to write script

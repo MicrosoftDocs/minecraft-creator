@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: snowman
-ms.prod: gaming
 description: "A code snippet for the snowman entity loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # snowman

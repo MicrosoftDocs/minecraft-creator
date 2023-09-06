@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Village Temple
-ms.prod: gaming
 description: "A code snippet for the  chest loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Village Temple

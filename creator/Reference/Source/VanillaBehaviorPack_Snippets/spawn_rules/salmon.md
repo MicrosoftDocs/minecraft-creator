@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: salmon spawn_rule
-ms.prod: gaming
 description: "A code snippet of the salmon spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # salmon spawn_rule

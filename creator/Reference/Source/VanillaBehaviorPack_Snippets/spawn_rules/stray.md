@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: stray spawn_rule
-ms.prod: gaming
 description: "A code snippet of the stray spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # stray spawn_rule

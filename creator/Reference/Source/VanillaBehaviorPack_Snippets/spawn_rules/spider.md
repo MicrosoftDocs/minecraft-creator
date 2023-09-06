@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: spider spawn_rule
-ms.prod: gaming
 description: "A code snippet of the spider spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # spider spawn_rule

@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Tags for Recipes
-ms.prod: gaming
 description: "A reference document listing tags that can be currently used as input for recipe creation"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Recipe Documentation - Tags for Recipes
