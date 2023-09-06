@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: minecraft/server.WatchdogTerminateBeforeEventSignal Class
 description: Contents of the @minecraft/server.WatchdogTerminateBeforeEventSignal class.
+ms.service: minecraft-bedrock-edition
 ---
 # WatchdogTerminateBeforeEventSignal Class
 
