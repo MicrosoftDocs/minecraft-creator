@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Particle Documentation - Particle Effect Events
-ms.prod: gaming
 description: "A reference document introducing the concept of particle effect events to creators"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Particle Effect Events

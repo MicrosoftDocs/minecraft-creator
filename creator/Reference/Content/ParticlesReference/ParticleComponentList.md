@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Particle Component List
-ms.prod: gaming
 description: "A reference document listing currently available particle components"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Component List

@@ -2,7 +2,7 @@
 author: mammerla
 ms.author: mikeam
 title: Name of Filter
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 ---
 
 # Name of Filter

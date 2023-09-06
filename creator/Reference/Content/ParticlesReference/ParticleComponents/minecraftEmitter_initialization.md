@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Particle Documentation - Emitter Initialization component
-ms.prod: gaming
 description: "A reference document detailing the 'emitter initialization' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Emitter Initialization component

@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Particle Documentation - Particle Appearance Tinting component
-ms.prod: gaming
 description: "A reference document detailing the 'particle appearance tinting' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Particle Appearance Tinting component

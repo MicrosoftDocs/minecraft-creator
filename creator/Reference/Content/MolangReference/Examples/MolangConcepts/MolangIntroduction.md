@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Molang Documentation - Introduction to Molang
-ms.prod: gaming
 description: "A reference document introducing the concept of Molang to creators"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Molang Documentation - Introduction to Molang

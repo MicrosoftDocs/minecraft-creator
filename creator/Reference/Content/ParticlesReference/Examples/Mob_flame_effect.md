@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Mob Flame effect
-ms.prod: gaming
 description: "A reference document detailing the 'mob flame effect' particle effect"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Mob Flame effect
