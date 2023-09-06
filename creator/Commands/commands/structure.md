@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: structure Command
 description: Description and usage of the structure command
+ms.service: minecraft-bedrock-edition
 ---
 # `/structure` Command
 Saves or loads a structure in the world. See examples of this command in use in the [Structure Blocks documentation](https://learn.microsoft.com/minecraft/creator/documents/structureblockstutorial#creating-structures-using-the-structure-command).
