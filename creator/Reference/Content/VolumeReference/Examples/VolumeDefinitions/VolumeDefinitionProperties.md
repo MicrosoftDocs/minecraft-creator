@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Volume Documentation - Properties & Descriptions
-ms.prod: gaming
 description: "A reference document detailing the volume definition and volume properties used in volume JSON files"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Volume Documentation - Properties & Descriptions

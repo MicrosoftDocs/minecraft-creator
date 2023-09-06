@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: wither_skeleton_gear
-ms.prod: gaming
 description: "A code snippet for the wither skeleton gear entity loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # wither_skeleton_gear

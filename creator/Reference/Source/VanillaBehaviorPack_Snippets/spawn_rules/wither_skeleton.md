@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: wither_skeleton spawn_rule
-ms.prod: gaming
 description: "A code snippet of the wither skeleton spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # wither_skeleton spawn_rule
