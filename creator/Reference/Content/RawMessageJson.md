@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: JSON - Raw Messages
-ms.prod: gaming
 description: "A reference document introducing creators to the concept of using raw message JSON to customize the look of text"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Raw Message JSON

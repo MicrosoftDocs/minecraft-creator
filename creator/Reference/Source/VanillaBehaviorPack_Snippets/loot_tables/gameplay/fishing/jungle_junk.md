@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: jungle_junk
-ms.prod: gaming
 description: "A code snippet for the jungle junk fishing gameplay loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Jungle Junk

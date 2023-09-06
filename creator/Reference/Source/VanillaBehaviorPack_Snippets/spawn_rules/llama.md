@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: llama spawn_rule
-ms.prod: gaming
 description: "A code snippet of the llama spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # llama spawn_rule

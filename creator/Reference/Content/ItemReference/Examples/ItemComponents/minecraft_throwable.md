@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Item Documentation - minecraft:throwable
-ms.prod: gaming
 description: "A reference document detailing the 'throwable' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:throwable

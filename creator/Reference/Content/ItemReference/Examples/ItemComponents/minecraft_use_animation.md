@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - minecraft:use_animation
-ms.prod: gaming
 description: "A reference document detailing the 'use animation' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:use_animation
