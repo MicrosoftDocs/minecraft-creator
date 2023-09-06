@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-bbortree
 title: NPC Dialogue Command
-ms.prod: gaming
 description: "A tutorial covering how to create a branching dialogue script for use with NPCs in Minecraft: Bedrock Edition"
+ms.service: minecraft-bedrock-edition
 ---
 
 # NPC Dialogue Command
