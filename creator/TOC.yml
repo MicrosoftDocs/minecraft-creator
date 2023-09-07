@@ -36,6 +36,8 @@
             href: Documents/PackagingASkinPack.md
           - name: Packaging a WorldTemplate
             href: Documents/PackagingAWorldTemplate.md
+          - name: Packaging a Random Seed World Template
+            href: Documents/PackagingARandomSeedWorldTemplate.md
           - name: Mash-up Pack Overview
             href: Documents/MashupPackOverview.md
           - name: 'Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition'
