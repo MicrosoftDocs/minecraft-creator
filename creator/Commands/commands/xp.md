@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: xp Command
 description: Description and usage of the xp command
+ms.service: minecraft-bedrock-edition
 ---
 # `/xp` Command
 Adds or removes player experience.
