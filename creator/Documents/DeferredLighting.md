@@ -146,7 +146,7 @@ The difference between a traditional light-emitting block and a point light bloc
 
 Like directional lights, they produce sophisticated lighting effects such as diffuse and specular highlights. This modeling works well for blocks such as torches, but isn't as good for conveying blocks with larger, discrete shapes, such as lava blocks or campfires. Blocks that emit light from a surface "area" rather than a single "point" should use the Emissive properties of Texture Sets and [lightEmission block components](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md) to control their light levels. You can always combine point lights and Emissive texture data in the same block to achieve your desired look.
 
-Feel free to experiment, but beware that point lights are considerably more resource intensive than light produced by other means, so it is recommended that they be employed with care. For instance, while you technically can turn lava blocks, or even dirt blocks(!), into point lights, this is not recommended simply because of the sheer amount of point lights that could be generated in common scenes. 
+Feel free to experiment, but beware that point lights are considerably more resource-intensive than light produced by other means, so it is recommended that they be employed with care. For instance, while you technically can turn lava blocks into point lights, this is not recommended simply because of the sheer amount of point lights that could be generated in common scenes. 
 
 By default, the game will treat the following blocks as point lights. This functionality can't be changed. However, you can override their default color if you include an entry for that block in your pack's **lighting/global.json** file:
 
@@ -157,11 +157,7 @@ By default, the game will treat the following blocks as point lights. This funct
 >- `minecraft:soul_lantern` as `#00FFFF`
 >- `minecraft:soul_torch` as `#00FFFF`
 
-To change the strength of a point light, refer to the [documentation for lightEmission block](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md).
-
-Note that even if you add a block to the list of point lights, if it has a lightEmission value of 0, then it will not emit any light. Therefore, any block that doesn't emit light by default (such as a dirt block) must contain both an entry in **lighting/global.json**'s "point_lights" object as well as a lightEmission block component definition with an emission value greater than 0.
-
-Be aware that this lightEmission value is a separate concept from the "Emissive" value described in PBR or Texture Set documentation.
+To change the strength of a point light, refer to the [documentation for lightEmission block](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md) components. Be aware that this lightEmission value is a separate concept from the “Emissive” value described in PBR or Texture Set documentation.
 
 Color values can be described either as an array of 3 numerical values from the range 0-255 or as a 6-digit hexadecimal string.
 
