@@ -105,19 +105,6 @@ landingContent:
           - text: Entity JSON ID List
             url: Content/entityreference/Examples/ClientEntityDocumentation/IDLists.md
   # Card (comment to space cards)
-  - title: Features
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Features JSON Documentation Homepage
-            url: Content/featuresreference/index.yml
-          - text: Introduction to Features
-            url: Content/FeaturesReference/Examples/FeaturesIntroduction.md
-      - linkListType: reference
-        links:
-          - text: Feature List
-            url: Content/featuresreference/Examples/FeatureList.md
-  # Card (comment to space cards)
   - title: Items
     linkLists:
       - linkListType: reference
@@ -170,12 +157,3 @@ landingContent:
         links:
            - text: Introduction to Texture Sets
              url: Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md
-  # Card (comment to space cards)
-  - title: Volumes
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Volume Properties & Descriptions
-            url: Content/volumeReference/Examples/VolumeDefinitions/VolumeDefinitionProperties.md
-          - text: Volume Components List
-            url: Content/volumeReference/Examples/VolumeComponentsList.md
