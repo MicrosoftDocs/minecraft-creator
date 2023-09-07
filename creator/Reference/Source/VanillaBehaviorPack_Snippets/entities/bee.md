@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: bee
-ms.prod: gaming
 description: "A code snippet for the bee entity"
+ms.service: minecraft-bedrock-edition
 --- 
 
 # bee

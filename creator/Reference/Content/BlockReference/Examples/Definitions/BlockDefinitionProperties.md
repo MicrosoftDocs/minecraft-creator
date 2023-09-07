@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Block Documentation - Block Properties & Descriptions
-ms.prod: gaming
 description: "A reference document discussing block definitions and properties used in block JSON files"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - Block Properties & Descriptions

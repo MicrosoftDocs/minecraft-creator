@@ -1,9 +1,9 @@
 ---
 ms.author: mikeam
 title: Base Game Versioning
-ms.prod: gaming
 author: neonerz
 description: "A guide detailing the concept of base game versioning"
+ms.service: minecraft-bedrock-edition
 ---
 # Base Game Versioning
 

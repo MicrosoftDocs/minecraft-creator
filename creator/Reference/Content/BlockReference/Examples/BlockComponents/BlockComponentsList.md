@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Block Documentation - Block Components List
-ms.prod: gaming
 description: "A reference document listing all currently available block components"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - Block Components

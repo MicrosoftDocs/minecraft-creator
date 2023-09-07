@@ -171,7 +171,7 @@ In each `transition_fog` setting type, you can set the following variables:
 
 ### volumetric
 
-This object contains the values for volumetric fog. This fog will be displayed as a calculation from light passing through blocks. Currently this is only used for PBR (Ray Tracing) and is planned to be added to non-PBR later.
+This object contains the values for volumetric fog. This fog will be displayed as a calculation from light passing through blocks. Currently this is only used for Ray Tracing.
 
 ### density
 

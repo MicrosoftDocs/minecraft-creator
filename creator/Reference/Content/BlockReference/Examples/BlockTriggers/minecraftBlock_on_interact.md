@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Block Documentation - minecraft:on_interact
-ms.prod: gaming
 description: "A reference document detailing the 'on_interact' block trigger"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - minecraft:on_interact
@@ -24,7 +24,7 @@ description: "A reference document detailing the 'on_interact' block trigger"
 
 ```json
 "minecraft:on_interact":{
-    "condition": "query.block_property(custom:block_light) == true", //custom condition
+    "condition": "query.block_state(custom:block_light) == true", //custom condition
     "event" : "light_off", //custom event
     "target": "self"
 }

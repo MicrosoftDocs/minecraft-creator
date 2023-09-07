@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: bat spawn_rule
-ms.prod: gaming
 description: "A code snippet of the bat spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # bat spawn_rule

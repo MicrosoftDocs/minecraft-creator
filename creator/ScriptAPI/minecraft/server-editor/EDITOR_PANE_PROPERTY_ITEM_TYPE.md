@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: .EDITOR_PANE_PROPERTY_ITEM_TYPE Enumeration
 description: Contents of the .EDITOR_PANE_PROPERTY_ITEM_TYPE enumeration.
+ms.service: minecraft-bedrock-edition
 ---
 # EDITOR_PANE_PROPERTY_ITEM_TYPE Enumeration
 

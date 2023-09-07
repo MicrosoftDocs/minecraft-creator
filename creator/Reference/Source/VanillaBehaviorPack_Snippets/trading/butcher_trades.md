@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: butcher_trades
-ms.prod: gaming
 description: "A code snippet of butcher_trades"
+ms.service: minecraft-bedrock-edition
 ---
 
 # butcher_trades

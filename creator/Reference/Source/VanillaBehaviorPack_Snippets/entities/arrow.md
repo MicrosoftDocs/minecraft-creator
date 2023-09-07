@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: arrow
-ms.prod: gaming
 description: "A code snippet for the arrow  entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # arrow

@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: armor_set_leather
-ms.prod: gaming
 description: "A code snippet for the armor set leather entity loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # armor_set_leather

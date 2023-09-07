@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Block Documentation - teleport
-ms.prod: gaming
 description: "A reference document detailing the 'teleport' block event response"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - teleport

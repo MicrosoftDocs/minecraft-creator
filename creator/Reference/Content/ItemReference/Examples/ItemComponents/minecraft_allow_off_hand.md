@@ -8,7 +8,7 @@ description: "A reference document detailing the 'allow_off_hand' item component
 
 # Item Documentation - minecraft:allow_off_hand
 
-`minecraft:armor` determines whether an item can be placed in the off-hand slot of the inventory.
+`minecraft:allow_off_hand` determines whether an item can be placed in the off-hand slot of the inventory.
 
 ## Parameters
 

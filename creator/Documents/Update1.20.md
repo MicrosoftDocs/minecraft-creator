@@ -70,7 +70,7 @@ A third set of Creator APIs have been released out of beta and into stable (see:
   - [runCommand](../ScriptAPI/minecraft/server/Entity.md#runcommand)
   - [runInterval](../ScriptAPI/minecraft/server/System.md#runinterval)
 
-**APIs included in the @minecraft/server-ui version 1.2.0 release:**
+**APIs included in the @minecraft/server-ui version 1.0.0 release:**
 - Basic form server UI
   - [ModalFormData](../ScriptAPI/minecraft/server-ui/ModalFormData.md)
   - [MessageFormData](../ScriptAPI/minecraft/server-ui/MessageFormData.md)

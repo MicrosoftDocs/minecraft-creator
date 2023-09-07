@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: armor_trades economy_trades
-ms.prod: gaming
 description: "A code snippet of 'armorer trades' economy trades"
+ms.service: minecraft-bedrock-edition
 ---
 
 # armorer_trades

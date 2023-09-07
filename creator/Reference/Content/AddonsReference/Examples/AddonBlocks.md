@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Addons Documentation - Blocks
-ms.prod: gaming
 description: "A reference document listing the available blocks for use in Minecraft: Bedrock Edition"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Addon - Blocks
@@ -157,7 +157,7 @@ Experimental toggles required : Upcoming Creator Features
     },
     "permutations": [
        {
-          "condition": "query.block_property('minecraft:cardinal_direction') == 1", // west
+          "condition": "query.block_state('minecraft:cardinal_direction') == 1", // west
           "components": {
               // ... 
           }

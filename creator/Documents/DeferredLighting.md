@@ -4,14 +4,16 @@ ms.author: mikeam
 title: Getting Started with Deferred Lighting
 ms.prod: gaming
 ms.topic: tutorial
-description: "An Introduction to Deferred Lighting in Minecraft: Bedrock Edition."
+description: "An Introduction to Deferred Lighting in Minecraft: Bedrock Edition"
 ---
 
 # Getting Started with Deferred Lighting
 
 Minecraft supports a Physically Based Rendering (PBR) pipeline that can be used for Deferred Lighting and Ray Tracing. This involves accurately modeling surface details as well as scene illuminators to achieve a lighting model that is coherent across all times of day. By taking advantage of PBR and the new Deferred Lighting pipeline, you unlock new creative control over the mood and lighting conditions of your entire scene.
 
-For example, you can control the intensity and color of the sun and moon, affecting how they contribute to the scene (direct lighting, bloom activation, exposure sensitivity, shadow angle, etc.). Additionally, new properties for describing the atmosphere of your world enable a new level of control over your skies! All these customization points coupled with the new "key frame" syntax allow you to change any detail of your lighting over the course of the in-game day-night cycle.
+For example, you can control the intensity and color of the sun and moon, affecting how they contribute to the scene through aspects like direct lighting, bloom activation, exposure sensitivity, and shadow angle.
+
+Additionally, new properties for describing the atmosphere of your world enable a new level of control over your skies! All these customization points coupled with the new "key frame" syntax allow you to change any detail of your lighting over the course of the in-game day-night cycle.
 
 > [!NOTE]
 > Deferred lighting features are experimental. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning. Check the Minecraft Changelog for details on any changes.
@@ -21,58 +23,62 @@ For example, you can control the intensity and color of the sun and moon, affect
 All newly added lighting capabilities are opt-in, and appropriate defaults will be used if any parameters aren't supplied by a resource pack. These properties are also designed to complement and extend the existing Texture Set capabilities found in RTX resource packs (Texture Sets are no longer restricted to RTX-only packs).
 
 > [!NOTE]
-> New capabilities are **NOT** backwards-compatible with the RTX pipeline. 
+> New capabilities are **NOT** backwards-compatible with the RTX pipeline.
 
 ## Opting Into the Deferred Lighting Pipeline
 
-To opt into the Deferred Lighting Pipeline, you will need to provide a PBR-enabled resource pack and join a world with the “Render Dragon Features for Creators” Experiment enabled. Resource packs built for RTX should work with the new pipeline, but you will likely want to add some JSON files to make full use of the pipeline, as explained in the following sections.
+To opt into the Deferred Lighting Pipeline, you will need to provide a PBR-enabled resource pack and join a world with the "Render Dragon Features for Creators" Experiment enabled. Resource packs built for RTX should work with the new pipeline, but you will likely want to add some JSON files to make full use of the pipeline, as explained in the following sections.
 
 ## PBR Resource Packs  
 
 The Deferred Lighting Pipeline uses the same rules for PBR texture sets used for RTX. If you are not familiar with Physically Based Rendering or building texture sets, there is an overview available on our documentation website in [Introduction to Physically Based Rendering](RTXPBRIntro.md) and more detail on creating the texture sets in [Introduction to Texture Sets](../Reference/Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md)
 
-For Height Map values, the new pipeline supports both Height Map and Normal inputs. In the Deferred Lighting mode, however, you are now able to set PBR textures for entities and mobs in addition to blocks. They follow the exact same Texture Set rules and can be added similarly to the textures/entity folder within your resource pack. 
+For Height Map values, the new pipeline supports both Height Map and Normal inputs. In the Deferred Lighting mode, however, you are now able to set PBR textures for entities and mobs in addition to blocks. They follow the exact same Texture Set rules and can be added similarly to the textures/entity folder within your resource pack.
 
-The key thing that communicates to the game client that a resource pack is capable of Deferred Lighting is the presence of a certain string(s) in the capabilities array in your pack’s manifest.json. Since the assets required for RTX are a subset of the assets needed for Deferred Lighting, a pack that broadcasts the "raytraced" capability will also be capable of activating Deferred Lighting.
+The key thing that communicates to the game client that a resource pack is capable of Deferred Lighting is the presence of a certain string(s) in the capabilities array in your pack's **manifest.json**.
 
-However, it is recommended that a new capability string be used going forward for Deferred/PBR Lighting packs as these packs should be expected to run cross-platform, unlike "raytraced" packs which are restricted to RTX-only devices. 
+Because the assets required for RTX are a subset of the assets needed for Deferred Lighting, a pack that broadcasts the "raytraced" capability will also be capable of activating Deferred Lighting.
 
-The new capability string is "pbr": 
+However, it is recommended that a new capability string be used going forward for Deferred/PBR Lighting packs as these packs should be expected to run cross-platform, unlike "raytraced" packs which are restricted to RTX-only devices.
 
-```JSON 
+The new capability string is "pbr":
+
+```json 
 { 
-  "format_version": 1, 
-  "header": { 
-    ... 
+  "format_version": 1,
+  "header": {
+    ...
   }, 
-  "modules": [ 
-    ... 
+  "modules": [
+    ...
   ], 
-  "capabilities": [ 
-    "pbr" 
-  ] 
+  "capabilities": [
+    "pbr"
+  ]
 }
-``````
+```
 
 ## Enabling Deferred Technical Preview in Settings
 
-If you are on a compatible Preview or Beta, you will find a new Experiments toggle named “Render Dragon Features for Creators”. Turn this Experiment on, and ensure that your PBR-enabled resource pack is activated for your world. Note that if you are hosting a Realm to share worlds in Preview, make sure to require players download resource packs to join. 
+If you are on a compatible Preview or Beta version of Minecraft, you will find an Experiments toggle named "Render Dragon Features for Creators".
+Toggle this Experiment **on**, and ensure that your PBR-enabled resource pack is activated for your world. Note that if you are hosting a Realm to share worlds in Preview, make sure to require players download resource packs to join.
 
 ![Image of the Settings screen, Experiments tab, Render Dragon Features for Creators toggle is on](Media/DeferredLighting/experiments_renderDragon_ON.png)
 
-After you enter the world, you will see new options in the "Video" settings menu. Under "Graphics Mode," the UI element will change to a dropdown selection in which you can now see an option for the "Deferred Technical Preview." 
+After you enter the world, you will see new options in the "Video" settings menu.
+Under "Graphics Mode," the UI element will change to a dropdown selection in which you can now see an option for the "Deferred Technical Preview." 
 
-Turn this on, and your world will now be rendering with the new Deferred Lighting Pipeline! 
+Toggle this **on**. Your world will now be rendered with the Deferred Lighting Pipeline!
 
 ![Image showing Video settings, Graphics mode, Deferred technical preview checkbox](Media/DeferredLighting/settings_video_graphicsMode_deferredTechnicalPreview.png)
 
 ### Hardware Requirements
 
-You must have appropriate hardware and a Preview-enabled platform to execute the Deferred Lighting Pipeline. A ray tracing capable video card is not required, and most modern GPUs on Windows should support the Deferred Pipeline, with more devices to follow. 
+You must have appropriate hardware and a Preview-enabled platform to execute the Deferred Lighting Pipeline. A ray tracing capable video card is not required, and most modern GPUs on Windows should support the Deferred Pipeline, with more devices to follow.
 
 On Android, there is a hard requirement at this time that only GLES 3.1 devices running Android OS 9 and above will be able to run the pipeline.
 
-## Deferred Lighting JSONs
+## Deferred Lighting JSON Files
 
 Texture Sets are good for defining the surface properties of individual blocks or mobs, but for more global lighting properties, JSON files provide a simple way to data-drive the renderer. The JSONs described here should be located inside of a "lighting" directory in the root of a given resource pack.
 
@@ -89,7 +95,7 @@ File location: lighting/global.json
     {
       object "sun"
       {
-          float "illuminance" : optkeyframe, // How bright the sun is; measured in lux (lx)
+          float "illuminance" : optkeyframe, // How bright the sun is, measured in lux (lx)
           color "color" : optkeyframe // The RGB color that the sun contributes to direct surface lighting; supports RGB array or HEX string
       },
       object "moon"
@@ -98,7 +104,15 @@ File location: lighting/global.json
           color "color" : optkeyframe // The RGB color that the moon contributes to direct surface lighting; supports RGB array or HEX string
       }
         float "orbital_offset_degrees" : optkeyframe // The rotational offset of the sun and moon from their standard orbital axis; measured in degrees
-    }
+    },
+    object "point_lights"
+    { 
+        "colors": { // List of key-value pairs where the key is a namespace-qualified block name and the value is a color (supports RGB array or HEX string) 
+             string: color, 
+             ... 
+             string: color 
+        } 
+    },
     object "pbr"
     {
       object "blocks"
@@ -119,10 +133,33 @@ The "directional_lights" object is where you can configure properties of the sun
 
 The celestial bodies that are the sun and moon are assumed to be opposite of each other in the sky at all times. When both celestial bodies are visible in the sky, both will contribute opposing light to the scene.
 
-Illuminance values that correspond to “real world” values are suitable for use in our pipeline. For instance, the sun at noon on a clear day measures upwards of 100,000 lux, while the moon only registers < 1 lux.  Tone mapping and auto-exposure will appropriately rebalance drastic differences in light intensities.
+Illuminance values that correspond to "real world" values are suitable for use in our pipeline. For instance, the sun at noon on a clear day measures upwards of 100,000 lux, while the moon only registers < 1 lux. Tone mapping and auto-exposure will appropriately rebalance drastic differences in light intensities.
 
 Color values can either be described as an array of 3 or 4 numerical values from the range 0-255 or as a 6 or 8 hexadecimal digit string.
 Any of these values can be individually key framed (see Key Frame Syntax section for more details).
+
+### Point Lights
+
+The "point_lights" object allows you to specify which blocks should be considered point lights and what color a given point light should emit.
+
+The difference between a traditional light-emitting block and a point light block is that point lights emit light from a single point at the center of the block, thus the name "point" light. 
+
+Like directional lights, they produce sophisticated lighting effects such as diffuse and specular highlights. This modeling works well for blocks such as torches, but isn't as good for conveying blocks with larger, discrete shapes, such as lava blocks or campfires. Blocks that emit light from a surface "area" rather than a single "point" should use the Emissive properties of Texture Sets and [lightEmission block components](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md) to control their light levels. You can always combine point lights and Emissive texture data in the same block to achieve your desired look.
+
+Feel free to experiment, but beware that point lights are considerably more resource-intensive than light produced by other means, so it is recommended that they be employed with care. For instance, while you technically can turn lava blocks into point lights, this is not recommended simply because of the sheer amount of point lights that could be generated in common scenes. 
+
+By default, the game will treat the following blocks as point lights. This functionality can't be changed. However, you can override their default color if you include an entry for that block in your pack's **lighting/global.json** file:
+
+>- `minecraft:torch` as `#EFE39D`
+>- `minecraft:redstone_torch` as `#FF0000`
+>- `minecraft:end_rod` as `#FFFFFF`
+>- `minecraft:lantern` as `#CE8133`
+>- `minecraft:soul_lantern` as `#00FFFF`
+>- `minecraft:soul_torch` as `#00FFFF`
+
+To change the strength of a point light, refer to the [documentation for lightEmission block](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md) components. Be aware that this lightEmission value is a separate concept from the “Emissive” value described in PBR or Texture Set documentation.
+
+Color values can be described either as an array of 3 numerical values from the range 0-255 or as a 6-digit hexadecimal string.
 
 ### PBR Uniforms
 
@@ -198,8 +235,11 @@ The "sky_zenith_color" parameter defines the color of the zenith region in the a
 
 ## Key Frame JSON Syntax
 
-Sometimes, in order to make your world more dynamic, you will want to change a particular lighting parameter over time. To do this, you can take advantage of a new "key frame" syntax, which can be substituted for any value in the lighting JSON schemas annotated with "optkeyframe". 
-Here's how it works. Take this example of a lighting/global.json file:
+Sometimes, in order to make your world more dynamic, you will want to change a particular lighting parameter over time. To do this, you can take advantage of a new "key frame" syntax, which can be substituted for any value in the lighting JSON schemas annotated with "optkeyframe".
+
+Here's how it works:
+
+Take this example of a **lighting/global.json** file:
 
 ```json
 {
@@ -214,7 +254,12 @@ Here's how it works. Take this example of a lighting/global.json file:
         "color": [ 255.0, 255.0, 255.0, 255.0 ]
       }, 
     "orbital_offset_degrees": 0.0
-    }, 
+    },
+    "point_lights": { 
+        "colors": { 
+            "minecraft:soul_torch": "#FFFFFF"
+        } 
+    },
     "pbr": { 
       "blocks": { 
         "global_metalness_emissive_roughness": [0.0, 0.0, 1.0]  
@@ -226,7 +271,7 @@ Here's how it works. Take this example of a lighting/global.json file:
 } 
 ```
 
-While this illuminance parameter of 100,000 lux for our sun looks good at noon, it's far too bright during dawn and dusk. To address this, we can utilize key frames for the sun's illuminance parameter. 
+While this illuminance parameter of 100,000 lux for our sun looks good at noon, it's far too bright during dawn and dusk. To address this, we can use key frames for the sun's illuminance parameter.
 
 Key frames are simply a collection of pairs of numbers. These pairs are referred to as "key-value" pairs, where the "key" is a number (0-1) representing a particular time of day in game, and the "value" represents whatever parameter is being key framed.
 
@@ -255,10 +300,15 @@ With all of this in mind, we can adjust our lighting/global.json slightly to alt
             "color": [ 255.0, 255.0, 255.0, 255.0 ]
         }, 
         "orbital_offset_degrees": 0.0
-    }, 
+    },
+    "point_lights": { 
+        "colors": { 
+            "minecraft:soul_torch": "#FFFFFF"
+        } 
+    },
     "pbr": { 
         "blocks": { 
-            "global_metalness_emissive_roughness": [0.0, 0.0, 1.0]  
+            "global_metalness_emissive_roughness": [0.0, 0.0, 1.0]
         }, 
         "actors": { 
             "global_metalness_emissive_roughness": [0.0, 0.0, 1.0]  
@@ -301,7 +351,12 @@ To get you going, we provide the following example JSON files that will give you
         "color": "#ffffffff"
     }, 
     "orbital_offset_degrees": 3.0
-  }, 
+  },
+  "point_lights": { 
+        "colors": { 
+            "minecraft:soul_torch": "#FFFFFF"
+        } 
+  },
   "pbr": { 
       "blocks": { 
         "global_metalness_emissive_roughness": [0.0, 0.0, 1.0]  
@@ -338,15 +393,15 @@ To get you going, we provide the following example JSON files that will give you
       "0.7487499713897705": 0.1990064233541489, 
       "0.8174999952316284": 0.6179999709129333 
     }, 
-    "mie_start": { 
-      "0.0": 0.5, 
-      "0.1962499916553497": 1.172000050544739, 
-      "0.25": 0.5, 
-      "0.34": 0.5009999871253967, 
-      "0.6": 0.167, 
-      "0.6750000119209290": 0.15, 
-      "0.7487499713897705": 0.55, 
-      "0.8174999952316284": 0.79 
+    "mie_start": {
+      "0.0": 0.5,
+      "0.1962499916553497": 1.172000050544739,
+      "0.25": 0.5,
+      "0.34": 0.5009999871253967,
+      "0.6": 0.167,
+      "0.6750000119209290": 0.15,
+      "0.7487499713897705": 0.55,
+      "0.8174999952316284": 0.79
     }, 
     "max": { 
       "0.0": 0.25, 

@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Animation Documentation - Animation Controllers
-ms.prod: gaming
 description: "A reference document detailing animation controllers"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Animation Documentation - Animation Controllers

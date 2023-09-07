@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Block Documentation - Block Trigger List
-ms.prod: gaming
 description: "A reference document listing all currently available block triggers"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - Block Trigger

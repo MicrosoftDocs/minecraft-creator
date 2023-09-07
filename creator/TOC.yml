@@ -36,6 +36,8 @@
             href: Documents/PackagingASkinPack.md
           - name: Packaging a WorldTemplate
             href: Documents/PackagingAWorldTemplate.md
+          - name: Packaging a Random Seed World Template
+            href: Documents/PackagingARandomSeedWorldTemplate.md
           - name: Mash-up Pack Overview
             href: Documents/MashupPackOverview.md
           - name: 'Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition'
@@ -78,6 +80,8 @@
               href: Documents/BehaviorPack.md
             - name: "Installing Add-Ons in Minecraft: Bedrock"
               href: Documents/AddonPackInstallation.md
+            - name: Utilizing Sub-Packs
+              href: Documents/UtilizingSubpacks.md
             - name: Fog in Resource Packs
               href: Documents/FogInResourcePacks.md
             - name: Particle Effects
@@ -258,12 +262,12 @@
             href: Reference/Content/blockreference/Examples/BlockJsonFileStructure.md
           - name: Block Description
             href: Reference/Content/blockreference/Examples/BlockDescription.md
-          - name: Block Properties and Permutations
-            href: Reference/Content/blockreference/Examples/BlockPropertiesAndPermutations.md
-          - name: Block Properties List
-            href: Reference/Content/blockreference/Examples/BlockPropertiesList.md
-          - name: Block States
+          - name: Block States and Permutations
+            href: Reference/Content/blockreference/Examples/BlockStatesAndPermutations.md
+          - name: Block States List
             href: Reference/Content/blockreference/Examples/BlockStatesList.md
+          - name: Intrinsic Block States
+            href: Reference/Content/blockreference/Examples/IntrinsicBlockStatesList.md
           - name: Block Traits
             href: Reference/Content/blockreference/Examples/BlockTraits.md
           - name: Aux Value to Block State Map
@@ -326,8 +330,6 @@
             href: Reference/Content/schemasreference/SchemasList.md
           - name: actor_animation
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_actor_animation_1.8.0.md
-          - name: actor_animation_controller
-            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_actor_animation_controller_1.10.0.md
           - name: block_reference
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_block_reference_1.10.0.md
           - name: chance_information
@@ -340,6 +342,8 @@
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.14.0.md
           - name: geometry:1.16.0
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.16.0.md
+          - name: geometry:1.19.30
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.19.30.md
           - name: persona_actor_animation
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_persona_actor_animation_1.8.0.md
         - name: Volume JSON

@@ -11,7 +11,7 @@ Minecraft Bedrock has been updated to 1.20.10 and there are a number of changes 
 
 ## Holiday Creator Features
 
-Seven Item Components have released and are now available without using the Holiday Creator Features experiment toggle.
+Several Item Components have released and are now available without using the Holiday Creator Features experiment toggle.
 
 - [cooldown](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_cooldown.md)
 - [repairable](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_repairable.md)
@@ -20,6 +20,9 @@ Seven Item Components have released and are now available without using the Holi
 - [shooter](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_shooter.md)
 - [projectile](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_projectile.md)
 - [throwable](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_throwable.md)
+- [can_destroy_in_creative](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_can_destroy_in_creative.md)
+- [hover_text_color](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_hover_text_color.md)
+- [max_stack_size](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_max_stack_size.md)
 
 Additionally, [bone_visibility](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_geometry.md#bone_visibility) (part of the [geometry](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_geometry.md) Block component) has Molang capability added, restoring the functionality to be closer to the original experimental part_visibility component.
 

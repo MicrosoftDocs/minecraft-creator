@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: blaze spawn_rule
-ms.prod: gaming
 description: "A code snippet of the blaze spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # blaze spawn_rule
