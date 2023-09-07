@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: JimSeaman42
+ms.author: mikeam
 title: Packaging a Skin Pack
 ms.prod: gaming
 description: "A guide to skin packs in Minecraft: Bedrock Edition"
@@ -8,14 +8,16 @@ description: "A guide to skin packs in Minecraft: Bedrock Edition"
 
 # Packaging a Skin Pack
 
-In this tutorial you will learn the following:
+Skin packs are some of the most popular content available, offering players multiple looks for their avatars and fundamentally changing the feel of their gameplay experience. Creating a skin pack is not only a great way to offer something new to players, it's also a lot of fun both technically and artistically!
+
+In this guide you will learn:
 
 > [!div class="checklist"]
 >
 > - The folder and file structure for skin packs in Minecraft: Bedrock Edition.
 > - How to construct the necessary metadata files for a skin pack and how to define skins using them.
 
-### Skin Pack Folder Structure
+## Skin Pack Folder Structure
 
 ![Folder structure of the whole skin pack](Media/PackagingASkinPack/folderstructure.png)
 
@@ -60,7 +62,7 @@ Each individual skin definition will then contain the following:
 - `localization_name`: the localization key whose value is defined later in `en_US.lang`. The value will be the name of the individual skin.
 - `geometry`: the base model this skin is for. `geometry.humanoid.customSlim` is the Alex model and `geometry.humanoid.custom` is the Steve model.
 - `texture`: the file name for each of the skin textures as they appear in the root of the skin pack.
-- `type`: either `free` or `paid`. 
+- `type`: either `free` or `paid`.
 
 ### Template skins.json
 
