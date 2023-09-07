@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: cat spawn_rule
-ms.prod: gaming
 description: "A code snippet of the cat spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # cat spawn_rule

@@ -13,7 +13,7 @@ Minecraft Bedrock has been updated to 1.19.70 and there are a number of changes 
 
 We continue to work on bringing the Holiday Creator Features out of experimental. Our current focus is on block components. The following block components are now available outside of the experimental toggle in 1.19.70.
 
-- [Block Properties and Permutations](../Reference/Content/BlockReference/Examples/BlockPropertiesAndPermutations.md)
+- [Block States and Permutations](../Reference/Content/BlockReference/Examples/BlockStatesAndPermutations.md)
 
 ## Components ##
 

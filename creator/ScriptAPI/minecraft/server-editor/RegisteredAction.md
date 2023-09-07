@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: . Type Alias
 description: Contents of the .RegisteredAction type alias.
+ms.service: minecraft-bedrock-edition
 ---
 # RegisteredAction Type Alias
 

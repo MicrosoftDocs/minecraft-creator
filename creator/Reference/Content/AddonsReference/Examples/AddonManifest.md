@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Addons Documentation - manifest.json
-ms.prod: gaming
 description: "A reference document detailing the basic information about manifest.json files"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Addons Documentation - manifest.json

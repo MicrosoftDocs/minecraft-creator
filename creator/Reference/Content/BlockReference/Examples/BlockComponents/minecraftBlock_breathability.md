@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Block Documentation - minecraft:breathability
-ms.prod: gaming
 description: "A reference document detailing the 'breathability' block component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - minecraft:breathability

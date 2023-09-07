@@ -67,8 +67,8 @@ landingContent:
         links:
           - text: Blocks JSON Documentation Homepage
             url: Content/blockreference/index.yml
-          - text: Block Properties and Permutations
-            url: Content/blockreference/Examples/BlockPropertiesAndPermutations.md
+          - text: Block States and Permutations
+            url: Content/blockreference/Examples/BlockStatesAndPermutations.md
       - linkListType: reference
         links:
           - text: Block Components List
@@ -104,19 +104,6 @@ landingContent:
             url: Content/entityreference/Examples/EntityList.md
           - text: Entity JSON ID List
             url: Content/entityreference/Examples/ClientEntityDocumentation/IDLists.md
-  # Card (comment to space cards)
-  - title: Features
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Features JSON Documentation Homepage
-            url: Content/featuresreference/index.yml
-          - text: Introduction to Features
-            url: Content/FeaturesReference/Examples/FeaturesIntroduction.md
-      - linkListType: reference
-        links:
-          - text: Feature List
-            url: Content/featuresreference/Examples/FeatureList.md
   # Card (comment to space cards)
   - title: Items
     linkLists:
@@ -181,12 +168,3 @@ landingContent:
         links:
            - text: Introduction to Texture Sets
              url: Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md
-  # Card (comment to space cards)
-  - title: Volumes
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Volume Properties & Descriptions
-            url: Content/volumeReference/Examples/VolumeDefinitions/VolumeDefinitionProperties.md
-          - text: Volume Components List
-            url: Content/volumeReference/Examples/VolumeComponentsList.md

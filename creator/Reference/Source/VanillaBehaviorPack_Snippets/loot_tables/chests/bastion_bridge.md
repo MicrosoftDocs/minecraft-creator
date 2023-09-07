@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: bastion_bridge
-ms.prod: gaming
 description: "A code snippet for the bastion bridge chest loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # bastion_bridge

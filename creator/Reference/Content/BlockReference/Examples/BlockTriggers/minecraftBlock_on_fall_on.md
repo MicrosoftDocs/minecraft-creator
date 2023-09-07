@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Block Documentation - minecraft:on_fall_on
-ms.prod: gaming
 description: "A reference document detailing the 'on_fall_on' block trigger"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - minecraft:on_fall_on
@@ -25,7 +25,7 @@ description: "A reference document detailing the 'on_fall_on' block trigger"
 
 ```json
 "minecraft:on_fall_on":{
-    "condition": "query.block_property(custom:block_light) == false", //custom condition
+    "condition": "query.block_state(custom:block_light) == false", //custom condition
     "event": "light_on", //custom event
     "min_fall_distance": 0.0,
     "target" : "self"

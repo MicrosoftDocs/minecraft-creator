@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: axolotl spawn_rule
-ms.prod: gaming
 description: "A code snippet of the axolotl spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # axolotl spawn_rule

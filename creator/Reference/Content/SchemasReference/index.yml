@@ -38,3 +38,5 @@ landingContent:
             url: "Schemas/minecraftSchema_geometry_1.14.0.md"
           - text: geometry:1.16.0
             url: "Schemas/minecraftSchema_geometry_1.16.0.md"
+          - text: geometry:1.19.30
+            url: "Schemas/minecraftSchema_geometry_1.19.30.md"

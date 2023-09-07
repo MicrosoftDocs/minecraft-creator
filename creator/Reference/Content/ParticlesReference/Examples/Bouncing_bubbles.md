@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Bouncing Bubbles
-ms.prod: gaming
 description: "A reference document detailing the 'bouncing bubbles' particle effect"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Bouncing Bubbles

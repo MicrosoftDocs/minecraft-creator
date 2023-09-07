@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: area_effect_cloud
-ms.prod: gaming
 description: "A code snippet for the area_effect_cloud entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # area_effect_cloud
