@@ -347,34 +347,47 @@ First, we need a way to access the player's dimension (to check which dimension 
 
 ```javascript
 function getPlayer() {
-  var allPlayers = world.getAllPlayers();
-  if (allPlayers.length > 0) {
-    return allPlayers[0];
+  const allPlayers = world.getAllPlayers();
+  if (allPlayers.length === 0) {
+    return undefined;
   }
+
+  return allPlayers[0];
 }
 
 function getPlayerDimension() {
-  var player = getPlayer();
-  if (player != undefined) {
-    return player.dimension;
+  const player = getPlayer();
+  if (player === undefined) {
+    return undefined;
   }
+  return player.dimension;
 }
 
 function getPlayerLocation() {
-  var player = getPlayer();
-  if (player != undefined) {
-    return player.location;
+  const player = getPlayer();
+  if (player === undefined) {
+    return undefined;
   }
+  return player.location;
 }
 ```
 
 As you recall, the function mainTick does not have a return statement like these functions do. That is because mainTick is a function whose task does not need to return a result to the code. However, in these functions, the tasks are precisely to give us specific information that we are requesting, such as the player's dimension and the player's location. Thus, wherever we call these functions, that information will be returned back to us for us to use.
 
-In the first function, getPlayer(), we are obtaining and returning Player 1. First, we call world.getAllPlayers() to get an array (a list) of all of the players in the game. We store that array in a variable called allPlayers. We check that there are indeed players in that array (that the length of the array of players is greater than zero). If that array were empty, we would get errors if we tried to access a player from the array. But if that statement is true, we access the first player in that array (denoted by the [0]. In most programming languages, 0 denotes the first item in an array, and you access the first item by adding "[0]" to the end of the array's name. You can access the second item by adding "[1]", the third item by adding "[2]", and so on. Always make sure to affirm that the array's length is what you expect before accessing items willy nilly!). 
+In the first function, `getPlayer()`, we attempt to obtain and return Player 1.
 
-In the next two functions, we use the getPlayer() function that we just created to get the player, store it in a variable called player, and then return the player's dimension and location properties. We of course need to assure that the player is NOT undefined before accessing the player's properties, or we will get an error.
+First, we call `world.getAllPlayers()` to get an **array** (which is a kind of list) of all of the players in the world.
 
-Next, let's add our checks that will tell us which dimension the player is in. In order to do this, we need to access the Dimension's id property, to see if it matches either "minecraft:overworld", or "minecraft:nether", like so:
+We store that array in a variable called **allPlayers**. If that array were empty, we would get errors if we tried to access a player from the array. So, we check that there are indeed players in that array by making sure that the length of the array of players is greater than zero. The if statement performs the check and if it comes back **true** that the array is empty, the `getPlayer()` function returns a status of **undefined**.
+
+If the array is not empty, then the function returns the first player in the array, which is denoted as `allPlayers[0]`. 
+
+>[!NOTE]
+>In most programming languages, 0 denotes the first item in an array, and you access the first item by putting "[0]" on the end of the array's name. You can access the second item by putting "[1]", the third item by putting "[2]", and so on. Always make sure to affirm that the array's length is what you expect before accessing items willy nilly!
+
+In the next two functions, we use the `getPlayer()` function that we just created to get the player, store it in a variable called **player**, and then return the player's dimension and location properties. We of course need to assure that the player is NOT undefined before accessing the player's properties, or we will get an error.
+
+Next, let's add our checks that will tell us which dimension the player is in. In order to do this, we need to access the Dimension's ID property, to see if it matches either "minecraft:overworld", or "minecraft:nether", like so:
 
 ```javascript
     if (playerDimension.id == "minecraft:overworld") {
@@ -388,7 +401,17 @@ Next, let's add our checks that will tell us which dimension the player is in. I
     }
 ```
 
-Now, let's use the spawnEntity function from the Dimension class to spawn these entities. This function is a little different than the ones we've come across so far, because it takes in parameters. A parameter in a function is a piece of data that you give to the function as input, that will affect its output value. For example, the spawnEntity function takes in two arguments: the identifier of the entity you want to spawn, and the location where you want it to spawn. These input values affect the output because you are telling the function which entity to spawn and where. We must provide these parameters within the parentheses at the end of the function. For the first parameter, identifier, we will provide either "minecraft:fox", "minecraft:hoglin", or "minecraft:wolf". For the second parameter, location, we will provide the player's location, by calling the function we created, getPlayerLocation(). Here is how our block of code should look after adding the code to spawn these entities:
+Now, let's use the spawnEntity function from the Dimension class to spawn these entities.
+
+This function is a little different than the ones we've come across so far, because it takes in parameters.
+
+A parameter in a function is a piece of data that you give to the function as input, that will affect its output value. 
+
+For example, the **spawnEntity** function takes in two arguments: the **identifier** of the entity you want to spawn, and the **location** where you want it to spawn. These input values affect the output because you are telling the function which entity to spawn and where. We must provide these parameters within the parentheses at the end of the function. 
+
+For the first parameter, identifier, we will provide either "minecraft:fox", "minecraft:hoglin", or "minecraft:wolf". 
+
+For the second parameter, location, we will provide the player's location, by calling the function we created, **getPlayerLocation()**. Here is how our block of code should look after adding the code to spawn these entities:
 
 ```javascript
     if (playerDimension.id == "minecraft:overworld") {
@@ -403,7 +426,8 @@ Now, let's use the spawnEntity function from the Dimension class to spawn these 
 ```
 
 I hope you can see from this block of code how storing values inside variables, such as playerDimension and playerLocation, greatly helps with reuse of values and conciseness of code.
-And that's it! We have implemented our script that spawns foxes in the Overworld, hoglins in the Nether, and wolves in every other dimension! (Hint: the only other dimension is the End).
+
+And that's it! We have implemented our script that spawns foxes in the Overworld, hoglins in the Nether, and wolves in every other dimension! (Spoiler alert: the only other dimension is the End).
 
 Here is how your whole script should look by the end (no pun intended):
 
@@ -414,24 +438,28 @@ import {
   } from "@minecraft/server";
 
 function getPlayer() {
-  var allPlayers = world.getAllPlayers();
-  if (allPlayers.length > 0) {
-    return allPlayers[0];
+  const allPlayers = world.getAllPlayers();
+  if (allPlayers.length === 0) {
+    return undefined;
   }
+
+  return allPlayers[0];
 }
 
 function getPlayerDimension() {
-  var player = getPlayer();
-  if (player != undefined) {
-    return player.dimension;
+  const player = getPlayer();
+  if (player === undefined) {
+    return ;
   }
+  return player.dimension;
 }
 
 function getPlayerLocation() {
-  var player = getPlayer();
-  if (player != undefined) {
-    return player.location;
+  const player = getPlayer();
+  if (player === undefined) {
+    return undefined;
   }
+  return player.location;
 }
 
 function mainTick() {
