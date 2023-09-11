@@ -347,7 +347,7 @@ The first two lines are declaring variables called `playerDimension` and `player
 
 If Visual Studio is yelling at you about these function calls, have no fear. That is because these are functions that we have not defined yet, but will define in a little bit. Just know for now that this is how we are obtaining the player's dimension and the player's location (x, y, z coordinates).
 
-You will notice that we used the keyword **const** to declare the `playerDimension` and `playerLocation` variables, instead of the keyword `let`. This is because we do not want the values inside these variables to be accidentally or intentionally changed later on in the code (`const` stands for “constant”). This helps keep our code robust, intentional, and less error prone. In our previous script, we wanted to reassign the `secondsPassed` variable every second, so we used the keyword `let`. In the case of our new script, we do not want `playerDimension` or `playerLocation` to be reassigned at all, so we use `const`.
+You will notice that we used the keyword **const** to declare the `playerDimension` and `playerLocation` variables, instead of the keyword `let`. This is because we do not want the values inside these variables to be accidentally or intentionally changed later on in the code (`const` stands for "constant"). This helps keep our code robust, intentional, and less error prone. In our previous script, we wanted to reassign the `secondsPassed` variable every second, so we used the keyword `let`. In the case of our new script, we do not want `playerDimension` or `playerLocation` to be reassigned at all, so we use `const`.
 
 In the `if` statement below, we are making sure that `playerDimension` and `playerLocation` are NOT undefined so that we can use them in our code. If you try to use something undefined, you will get errors! The "!=" operator means "does not equal", and the "&&" operator means "and". So we only run the code inside that `if` statement if "`playerDimension` does not equal undefined and `playerLocation` does not equal undefined."
 
@@ -401,22 +401,22 @@ First, we call `world.getAllPlayers()` to get an **array** (which is a kind of l
 If the array is not empty, then the function returns the first player in the array, which is denoted as `allPlayers[0]`. 
 
 >[!NOTE]
->In most programming languages, 0 denotes the first item in an array, and you access the first item by putting "[0]" on the end of the array's name. You can access the second item by putting "[1]", the third item by putting "[2]", and so on. Always make sure to affirm that the array's length is what you expect before accessing items willy nilly!
+>In most programming languages, "0" denotes the first item in an array, and you access the first item by putting "[0]" on the end of the array's name. You can access the second item by putting "[1]", the third item by putting "[2]", and so on. Always make sure to affirm that the array's length is what you expect before accessing items willy nilly!
 
 In the next two functions, we use the `getPlayer()` function that we just created to get the player, store it in a variable called **player**, and then return the player's dimension and location properties. Just like before, we will need to assure that `player` is NOT `undefined` before accessing the player's properties, or we will get an error.
 
 Next, let's add our checks that will tell us which dimension the player is in. To do this, we need to access the Dimension's ID property, to check whether it matches either "minecraft:overworld", "minecraft:nether", or anywhere else, like so:
 
 ```javascript
-    if (playerDimension.id == "minecraft:overworld") {
-          // spawn a fox
-    }
-    else if (playerDimension.id == "minecraft:nether") {
-          // spawn a hoglin
-    }
-    else {
-          // spawn a wolf
-    }
+  if (playerDimension.id === "minecraft:overworld") {
+      // spawn a fox 
+  } 
+  else if (playerDimension.id === "minecraft:nether") {
+       // spawn a hoglin 
+  } 
+  else { 
+      // spawn a wolf 
+  } 
 ```
 
 Now, let's use the [spawnEntity function](../ScriptAPI/minecraft/server/Dimension.md#spawnentity) from the [Dimension class](../ScriptAPI/minecraft/server/Dimension.md) to spawn these entities.
@@ -432,15 +432,15 @@ For the first parameter, `identifier`, we will provide `"minecraft:fox"`, `"mine
 For the second parameter, `location`, we will provide the player's location, by calling the function we created, `getPlayerLocation()`. Here is how our block of code should look after adding the code to spawn these entities:
 
 ```javascript
-if (playerDimension.id === “minecraft:overworld”) { 
-      playerDimension.spawnEntity(“minecraft:fox”, playerLocation); 
-    } 
-    else if (playerDimension.id === “minecraft:nether”) { 
-      playerDimension.spawnEntity(“minecraft:hoglin”, playerLocation); 
-    } 
-    else { 
-      playerDimension.spawnEntity(“minecraft:wolf”, playerLocation);
-    }
+  if (playerDimension.id === "minecraft:overworld") { 
+      playerDimension.spawnEntity("minecraft:fox", playerLocation); 
+  } 
+  else if (playerDimension.id === "minecraft:nether") { 
+      playerDimension.spawnEntity("minecraft:hoglin", playerLocation); 
+  } 
+  else { 
+      playerDimension.spawnEntity("minecraft:wolf", playerLocation);
+  }
 ```
 
 This block of code stores values inside variables, such as **playerDimension** and **playerLocation**, which greatly helps with reuse of values and conciseness of code.
@@ -485,14 +485,14 @@ function mainTick() {
     const playerDimension = getPlayerDimension();
     const playerLocation = getPlayerLocation();
     if (playerDimension != undefined && playerLocation != undefined) {
-      if (playerDimension.id === “minecraft:overworld”) { 
-        playerDimension.spawnEntity(“minecraft:fox”, playerLocation); 
+      if (playerDimension.id === "minecraft:overworld") { 
+        playerDimension.spawnEntity("minecraft:fox", playerLocation); 
       } 
-      else if (playerDimension.id === “minecraft:nether”) { 
-        playerDimension.spawnEntity(“minecraft:hoglin”, playerLocation); 
+      else if (playerDimension.id === "minecraft:nether") { 
+        playerDimension.spawnEntity("minecraft:hoglin", playerLocation); 
       }
       else {
-        playerDimension.spawnEntity(“minecraft:wolf”, playerLocation);
+        playerDimension.spawnEntity("minecraft:wolf", playerLocation);
       }
     }
   }
