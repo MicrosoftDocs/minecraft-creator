@@ -350,11 +350,11 @@ In the `if` statement below, we are making sure that `playerDimension` and `play
 
 Inside that `if` statement, you may not recognize the /**/ and // characters. These denote a comment in the code, which is part of the JavaScript file that will be ignored. You can use comments to help make sense of confusing code by taking notes directly in the code. We are merely using them as placeholders that we will soon replace.
 
-In this block of code, we first come across another `if` statement. This one is checking if we are in the Overworld. If that is true, then a fox will be spawned. 
+In this block of code, we first come across another `if` statement. This one is checking if we are in the Overworld. If that is true, then a fox will be spawned.
 
 Next, we come across two statements we have not encountered before: **else if**, and after that, an **else**. In the previous script we wrote, we noticed that an `if` statement does not require an `else if` or an `else` to follow it; however, `else if` statements are useful when you want another action (spawning a hoglin) to be executed for a different case (us being in the Nether), and `else` statements are useful when you want to offer a default action (spawning a wolf) for every other case that is not mentioned in the `if` or `else if` statements (us being in any other than the Overworld and the Nether). Note that you can have as many `else if` statements that you want for as many cases as you may have.
 
-![Image of hoglins on soulsand in the Nether with a Nether portal in the background.](Media/ScriptingIntroduction/hoglins_in_the_nether.png)
+![Image of hoglins on soul sand in the Nether with a Nether portal in the background.](Media/ScriptingIntroduction/hoglins_in_the_nether.png)
 
 Now, we will replace the English comments with code together!
 
@@ -536,13 +536,13 @@ When you're more comfortable with JavaScript, you can research the more advanced
 
 You have graduated from Scripting 101! To continue building on your coding skills, please move on to the [Build a Gameplay Experience with TypeScript](ScriptingGettingStarted.md) tutorial! 
 
-There, you will download a couple tools to make your life much easier as a scripter and take your knowledge to the next level by learning how to implement a functioning game in TypeScript.
+There, you will download some tools to make your life much easier as a scripter and take your knowledge to the next level by learning how to implement a functioning game in TypeScript.
 
-You will also learn how to take advantage of all of the goodness of TypeScript and Node.js like:
+You will also learn how to take advantage of all of the goodness of TypeScript and the npm ecosystem like:
 
 >- Intellisense / autocomplete (a game changer) 
 >- Inline reference documentation for types (always good to have handy) 
->- Static typing, which helps prevent errors in the long run (worth it) 
+>- Static typing, which helps prevent errors in the long run and makes it much easier to update to new versions of the API when you want to use new features (worth it)
 >- Easier debugging due to errors surfacing during compile time, as opposed to runtime (a real time saver) 
 
-These may just sound like abstract coding terms, but trust me, the benefits of going through our TypeScript setup will make your scripting experience go much more smoothly once you begin to expand your knowledge and write more complex scripts. Please give it a go once you feel you’ve gotten the basics down from this tutorial... you will not regret it! 
+These may just sound like abstract coding terms, but trust me, the benefits of going through our TypeScript setup will make your scripting experience go much more smoothly once you begin to expand your knowledge and write more complex scripts. Also, all of our samples are written in TypeScript, so you will have lots of examples to test out! Please give it a go once you feel you’ve gotten the basics down from this tutorial... you will not regret it! 
