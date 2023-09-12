@@ -38,9 +38,6 @@ Let's set up your computer. Here are the things you will need:
 - The Attack Cow sample behavior pack downloaded from the Minecraft samples Github repository.
 
 > [!NOTE] 
-> You do not always have to use the Attack Cow behavior pack as a starting point for a script. You can use a different behavior pack or create one just for this tutorial. However, it is a good idea to have some way to tell that the behavior pack is working in case you run into problems (In this case we know that the pack is working correctly if cows observe the attacking behavior).
-
-> [!NOTE] 
 > If you have never downloaded and used a sample behavior pack, here's how:
 > 1. Go to https://github.com/microsoft/minecraft-samples/tree/main, click the green Code button, and choose "Download ZIP" from the drop-down menu.
 > 1. Open your Downloads folder and extract the **minecraft-samples-main** zipped folder contents.
@@ -167,7 +164,7 @@ Some other examples of classes are [Player](../ScriptAPI/minecraft/server/Player
 
 The **from** part tells Minecraft which module your requested classes are defined in. A module stores a bunch of classes and APIs that you can use. There are several modules in Minecraft, but the most important one that contains most of the basic classes and APIs is **"@minecraft/server"**.
 
-The **`function`** part defines a function, which is a block of code that completes a specific task. Eventually, you will have many functions that do different tasks, whose names are descriptive of what they do (we will add more functions in a later section of this tutorial).
+The **function** part defines a function, which is a block of code that completes a specific task. Eventually, you will have many functions that do different tasks, whose names are descriptive of what they do (we will add more functions in a later section of this tutorial).
 
 This function is named **mainTick** because we are using it to define the main game loop. A **game loop** is a sequence of processes (such as updating entity movement, detecting player input and acting on it, or updating the weather) that run over and over again to continuously update the game. A tick describes the time it takes to run the game loop once, which in Minecraft is 1/20th of a second (so 1 second = 20 ticks). The word "tick" can also describe one run through of the game loop, which is why our function is described as the "main tick."
 
@@ -273,11 +270,11 @@ The first thing to notice here is the line that says `let secondsPassed = 0;`. H
 A **variable** is a container for a value that can be used, reused, and changed. The let part tells the computer that we are creating ("declaring") a variable; the secondsPassed part is the descriptive name that we are giving the variable; and the = 0 part is putting the value of `0` into the secondsPassed container (or "initializing" it to 0). 
 Next time we reference secondsPassed, it will be as if we are referencing the number 0.
 
-Variables can be used to store all different types of values, not just numbers. They can also store things like Booleans (true/false), floating point numbers (decimal numbers), strings (text contained in "quotes"), arrays (lists of things), and classes (which we'll learn more about later in this tutorial).
+Variables can be used to store all different types of values, not just numbers. They can also store things like Booleans (true/false), floating point numbers (decimal numbers), strings (text contained in "quotes"), arrays (lists of things), and classes (objects).
 
-Our variable, `secondsPassed`, is declared in the main part of the script (not inside a function), so it is referred to as a **global** variable. Global variables can be used/changed inside any functions or any part of your script (within the same file).
+Our variable, `secondsPassed`, is declared in the main part of the script (not inside a function), so it is referred to as a **global variable**. Global variables can be used/changed inside any functions or any part of your script (within the same file).
 
-You can also declare a variable inside a function, inside an if/else block, or inside a for loop, and those are referred to as local variables, because they are local to the block within which they are defined (they do not exist outside of that block of code).
+You can also declare a variable inside a function, inside an if/else block, or inside a for loop, and those are referred to as **local variables**, because they are local to the block within which they are defined (they do not exist outside of that block of code).
 
 The next thing to notice here is that inside the `if` statement, we changed the tick we are checking to 20. Remember that 20 ticks equals 1 second, so we are now running this block of code every second. This is so that our message can report the number of seconds that have passed, each second.
 
@@ -297,7 +294,7 @@ So in summary, this line adds 1 to the current value of secondsPassed. The next 
 The next line, containing the world.sendMessage function call, is printing the number of seconds that have been counted up to that point. 
 The message that we are sending is: "Seconds Passed: " + secondsPassed, which will print the string "Seconds Passed: " with the current value of the secondsPassed variable at the end.
 
-In JavaScript/TypeScript you can concatenate, or chain together, different types of variables (such as numbers) seamlessly with strings. In many other languages, you can't use the "+" operator with different types like that.
+In JavaScript you can concatenate, or chain together, different types of variables (such as numbers) seamlessly with strings. In many other languages, you can't use the "+" operator with different types like that.
 
 2. Go back into your world, reload your script, and view the result:
 
@@ -323,7 +320,7 @@ function mainTick() {
   if (system.currentTick % 200 === 0) {
     const playerDimension = getPlayerDimension();
     const playerLocation = getPlayerLocation();
-    if (playerDimension != undefined && playerLocation != undefined) {
+    if (playerDimension !== undefined && playerLocation !== undefined) {
       if (/* we are in the Overworld */) {
         // spawn a fox
       }
@@ -353,11 +350,11 @@ In the `if` statement below, we are making sure that `playerDimension` and `play
 
 Inside that `if` statement, you may not recognize the /**/ and // characters. These denote a comment in the code, which is part of the JavaScript file that will be ignored. You can use comments to help make sense of confusing code by taking notes directly in the code. We are merely using them as placeholders that we will soon replace.
 
-In this block of code, we first come across another `if` statement. This one is checking if we are in the Overworld. If that is true, then a fox will be spawned. 
+In this block of code, we first come across another `if` statement. This one is checking if we are in the Overworld. If that is true, then a fox will be spawned.
 
-Next, we come across two statements we have not encourntered before: **else if**, and after that, an **else**. In the previous script we wrote, an `if` statement does not require an `else if` or an `else` to follow it; however, `else if` statements are useful when you want another action (spawning a hoglin) to be executed for a different case (us being in the Nether), and `else` statements are useful when you want to offer a default action (spawning a wolf) for every other case that is not mentioned in the `if` or `else if` statements (us being in any other than the Overworld and the Nether). Note that you can have as many `else if` statements that you want for as many cases as you may have.
+Next, we come across two statements we have not encountered before: **else if**, and after that, an **else**. In the previous script we wrote, we noticed that an `if` statement does not require an `else if` or an `else` to follow it; however, `else if` statements are useful when you want another action (spawning a hoglin) to be executed for a different case (us being in the Nether), and `else` statements are useful when you want to offer a default action (spawning a wolf) for every other case that is not mentioned in the `if` or `else if` statements (us being in any other than the Overworld and the Nether). Note that you can have as many `else if` statements that you want for as many cases as you may have.
 
-![Image of hoglins on soulsand in the Nether with a Nether portal in the background.](Media/ScriptingIntroduction/hoglins_in_the_nether.png)
+![Image of hoglins on soul sand in the Nether with a Nether portal in the background.](Media/ScriptingIntroduction/hoglins_in_the_nether.png)
 
 Now, we will replace the English comments with code together!
 
@@ -423,7 +420,7 @@ Now, let's use the [spawnEntity function](../ScriptAPI/minecraft/server/Dimensio
 
 This function is a little different than the ones we've come across so far, because it takes in parameters.
 
-A parameter in a function is a piece of data that you give to the function as input, that will affect its output value.
+A **parameter** in a function is a piece of data that you give to the function as input, that will affect its output value.
 
 For example, the **spawnEntity** function takes in two arguments: the **identifier** of the entity you want to spawn, and the **location** where you want it to spawn. These input values affect the output because you are telling the function which entity to spawn and where. We must provide these parameters within the parentheses at the end of the function.
 
@@ -484,7 +481,7 @@ function mainTick() {
   if (system.currentTick % 200 === 0) {
     const playerDimension = getPlayerDimension();
     const playerLocation = getPlayerLocation();
-    if (playerDimension != undefined && playerLocation != undefined) {
+    if (playerDimension !== undefined && playerLocation !== undefined) {
       if (playerDimension.id === "minecraft:overworld") { 
         playerDimension.spawnEntity("minecraft:fox", playerLocation); 
       } 
@@ -539,13 +536,13 @@ When you're more comfortable with JavaScript, you can research the more advanced
 
 You have graduated from Scripting 101! To continue building on your coding skills, please move on to the [Build a Gameplay Experience with TypeScript](ScriptingGettingStarted.md) tutorial! 
 
-There, you will download a couple tools to make your life much easier as a scripter and take your knowledge to the next level by learning how to implement a functioning game in TypeScript.
+There, you will download some tools to make your life much easier as a scripter and take your knowledge to the next level by learning how to implement a functioning game in TypeScript.
 
-You will also learn how to take advantage of all of the goodness of TypeScript and Node.js like:
+You will also learn how to take advantage of all of the goodness of TypeScript and the npm ecosystem like:
 
 >- Intellisense / autocomplete (a game changer) 
 >- Inline reference documentation for types (always good to have handy) 
->- Static typing, which helps prevent errors in the long run (worth it) 
+>- Static typing, which helps prevent errors in the long run and makes it much easier to update to new versions of the API when you want to use new features (worth it)
 >- Easier debugging due to errors surfacing during compile time, as opposed to runtime (a real time saver) 
 
-These may just sound like abstract coding terms, but trust me, the benefits of going through our TypeScript setup will make your scripting experience go much more smoothly once you begin to expand your knowledge and write more complex scripts. Please give it a go once you feel you’ve gotten the basics down from this tutorial... you will not regret it! 
+These may just sound like abstract coding terms, but trust me, the benefits of going through our TypeScript setup will make your scripting experience go much more smoothly once you begin to expand your knowledge and write more complex scripts. Also, all of our samples are written in TypeScript, so you will have lots of examples to test out! Please give it a go once you feel you’ve gotten the basics down from this tutorial... you will not regret it! 
