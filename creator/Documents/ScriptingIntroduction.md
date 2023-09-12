@@ -294,7 +294,7 @@ So in summary, this line adds 1 to the current value of secondsPassed. The next 
 The next line, containing the world.sendMessage function call, is printing the number of seconds that have been counted up to that point. 
 The message that we are sending is: "Seconds Passed: " + secondsPassed, which will print the string "Seconds Passed: " with the current value of the secondsPassed variable at the end.
 
-In JavaScript/TypeScript you can concatenate, or chain together, different types of variables (such as numbers) seamlessly with strings. In many other languages, you can't use the "+" operator with different types like that.
+In JavaScript you can concatenate, or chain together, different types of variables (such as numbers) seamlessly with strings. In many other languages, you can't use the "+" operator with different types like that.
 
 2. Go back into your world, reload your script, and view the result:
 
@@ -320,7 +320,7 @@ function mainTick() {
   if (system.currentTick % 200 === 0) {
     const playerDimension = getPlayerDimension();
     const playerLocation = getPlayerLocation();
-    if (playerDimension != undefined && playerLocation != undefined) {
+    if (playerDimension !== undefined && playerLocation !== undefined) {
       if (/* we are in the Overworld */) {
         // spawn a fox
       }
@@ -352,7 +352,7 @@ Inside that `if` statement, you may not recognize the /**/ and // characters. Th
 
 In this block of code, we first come across another `if` statement. This one is checking if we are in the Overworld. If that is true, then a fox will be spawned. 
 
-Next, we come across two statements we have not encourntered before: **else if**, and after that, an **else**. In the previous script we wrote, an `if` statement does not require an `else if` or an `else` to follow it; however, `else if` statements are useful when you want another action (spawning a hoglin) to be executed for a different case (us being in the Nether), and `else` statements are useful when you want to offer a default action (spawning a wolf) for every other case that is not mentioned in the `if` or `else if` statements (us being in any other than the Overworld and the Nether). Note that you can have as many `else if` statements that you want for as many cases as you may have.
+Next, we come across two statements we have not encountered before: **else if**, and after that, an **else**. In the previous script we wrote, we noticed that an `if` statement does not require an `else if` or an `else` to follow it; however, `else if` statements are useful when you want another action (spawning a hoglin) to be executed for a different case (us being in the Nether), and `else` statements are useful when you want to offer a default action (spawning a wolf) for every other case that is not mentioned in the `if` or `else if` statements (us being in any other than the Overworld and the Nether). Note that you can have as many `else if` statements that you want for as many cases as you may have.
 
 ![Image of hoglins on soulsand in the Nether with a Nether portal in the background.](Media/ScriptingIntroduction/hoglins_in_the_nether.png)
 
@@ -420,7 +420,7 @@ Now, let's use the [spawnEntity function](../ScriptAPI/minecraft/server/Dimensio
 
 This function is a little different than the ones we've come across so far, because it takes in parameters.
 
-A parameter in a function is a piece of data that you give to the function as input, that will affect its output value.
+A **parameter** in a function is a piece of data that you give to the function as input, that will affect its output value.
 
 For example, the **spawnEntity** function takes in two arguments: the **identifier** of the entity you want to spawn, and the **location** where you want it to spawn. These input values affect the output because you are telling the function which entity to spawn and where. We must provide these parameters within the parentheses at the end of the function.
 
@@ -481,7 +481,7 @@ function mainTick() {
   if (system.currentTick % 200 === 0) {
     const playerDimension = getPlayerDimension();
     const playerLocation = getPlayerLocation();
-    if (playerDimension != undefined && playerLocation != undefined) {
+    if (playerDimension !== undefined && playerLocation !== undefined) {
       if (playerDimension.id === "minecraft:overworld") { 
         playerDimension.spawnEntity("minecraft:fox", playerLocation); 
       } 
