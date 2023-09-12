@@ -23,7 +23,7 @@ Also, all of the concepts you will learn about here will be applicable to TypeSc
 Before you begin, you should have gone through the Getting Started with Add-Ons tutorial and the Introduction to Behavior Packs tutorial.
 
 - [Getting Started with Add-On Development](GettingStarted.md)
-- [Introduction To Resource Packs](ResourcePack.md)
+- [Introduction To Behavior Packs](BehaviorPack.md)
 
 It should be clear to you how add-on folders must be structured, and what the required files in the behavior pack (such as **manifest.json**) should contain.
 
