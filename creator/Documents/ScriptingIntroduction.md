@@ -1,12 +1,12 @@
 ---
 author: iconicNurdle
 ms.author: mikeam
-title: Introductions to Scripting in Minecraft
+title: Introduction to Scripting in Minecraft
 description: "In introducion to writing and deploying scripts in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
 ---
 
-# What is Scripting?
+# Introduction to Scripting in Minecraft
 
 "Scripting" is just another way of saying "writing a list of instructions for the computer to follow to make it do what you want it to do."
 
