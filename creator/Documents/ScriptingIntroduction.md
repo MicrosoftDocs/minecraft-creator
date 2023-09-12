@@ -38,9 +38,6 @@ Let's set up your computer. Here are the things you will need:
 - The Attack Cow sample behavior pack downloaded from the Minecraft samples Github repository.
 
 > [!NOTE] 
-> You do not always have to use the Attack Cow behavior pack as a starting point for a script. You can use a different behavior pack or create one just for this tutorial. However, it is a good idea to have some way to tell that the behavior pack is working in case you run into problems (In this case we know that the pack is working correctly if cows observe the attacking behavior).
-
-> [!NOTE] 
 > If you have never downloaded and used a sample behavior pack, here's how:
 > 1. Go to https://github.com/microsoft/minecraft-samples/tree/main, click the green Code button, and choose "Download ZIP" from the drop-down menu.
 > 1. Open your Downloads folder and extract the **minecraft-samples-main** zipped folder contents.
