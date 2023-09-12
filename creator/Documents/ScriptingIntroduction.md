@@ -164,7 +164,7 @@ Some other examples of classes are [Player](../ScriptAPI/minecraft/server/Player
 
 The **from** part tells Minecraft which module your requested classes are defined in. A module stores a bunch of classes and APIs that you can use. There are several modules in Minecraft, but the most important one that contains most of the basic classes and APIs is **"@minecraft/server"**.
 
-The **`function`** part defines a function, which is a block of code that completes a specific task. Eventually, you will have many functions that do different tasks, whose names are descriptive of what they do (we will add more functions in a later section of this tutorial).
+The **function** part defines a function, which is a block of code that completes a specific task. Eventually, you will have many functions that do different tasks, whose names are descriptive of what they do (we will add more functions in a later section of this tutorial).
 
 This function is named **mainTick** because we are using it to define the main game loop. A **game loop** is a sequence of processes (such as updating entity movement, detecting player input and acting on it, or updating the weather) that run over and over again to continuously update the game. A tick describes the time it takes to run the game loop once, which in Minecraft is 1/20th of a second (so 1 second = 20 ticks). The word "tick" can also describe one run through of the game loop, which is why our function is described as the "main tick."
 
@@ -270,11 +270,11 @@ The first thing to notice here is the line that says `let secondsPassed = 0;`. H
 A **variable** is a container for a value that can be used, reused, and changed. The let part tells the computer that we are creating ("declaring") a variable; the secondsPassed part is the descriptive name that we are giving the variable; and the = 0 part is putting the value of `0` into the secondsPassed container (or "initializing" it to 0). 
 Next time we reference secondsPassed, it will be as if we are referencing the number 0.
 
-Variables can be used to store all different types of values, not just numbers. They can also store things like Booleans (true/false), floating point numbers (decimal numbers), strings (text contained in "quotes"), arrays (lists of things), and classes (which we'll learn more about later in this tutorial).
+Variables can be used to store all different types of values, not just numbers. They can also store things like Booleans (true/false), floating point numbers (decimal numbers), strings (text contained in "quotes"), arrays (lists of things), and classes (objects).
 
-Our variable, `secondsPassed`, is declared in the main part of the script (not inside a function), so it is referred to as a **global** variable. Global variables can be used/changed inside any functions or any part of your script (within the same file).
+Our variable, `secondsPassed`, is declared in the main part of the script (not inside a function), so it is referred to as a **global variable**. Global variables can be used/changed inside any functions or any part of your script (within the same file).
 
-You can also declare a variable inside a function, inside an if/else block, or inside a for loop, and those are referred to as local variables, because they are local to the block within which they are defined (they do not exist outside of that block of code).
+You can also declare a variable inside a function, inside an if/else block, or inside a for loop, and those are referred to as **local variables**, because they are local to the block within which they are defined (they do not exist outside of that block of code).
 
 The next thing to notice here is that inside the `if` statement, we changed the tick we are checking to 20. Remember that 20 ticks equals 1 second, so we are now running this block of code every second. This is so that our message can report the number of seconds that have passed, each second.
 
