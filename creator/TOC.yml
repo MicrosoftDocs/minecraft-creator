@@ -178,6 +178,8 @@
       items:
         - name: Scripting
           items:
+          - name: Introduction to Scripting in Minecraft
+            href: Documents/ScriptingIntroduction.md
           - name: Build Gameplay with TypeScript
             href: Documents/ScriptingGettingStarted.md
           - name: Use Script Along with Dedicated Servers

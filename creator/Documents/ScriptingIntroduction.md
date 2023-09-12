@@ -1,8 +1,8 @@
 ---
 author: iconicNurdle
 ms.author: mikeam
-title: An Introductions to Writing and Deploying Scripts in Minecraft
-description: "Writing and deploying scripts in Minecraft: Bedrock Edition"
+title: Introductions to Scripting in Minecraft
+description: "In introducion to writing and deploying scripts in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
 ---
 
