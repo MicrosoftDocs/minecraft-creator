@@ -101,7 +101,6 @@ To get there, we are going to start with the Attack Cow behavior pack, add the f
   }
 ```
 
-
 4. Replace the three instances of **`PUT A NEW UUID HERE`** with new UUIDs, just like you did in the [Introduction to Behavior Packs](BehaviorPack.md) tutorial.
 5. Save your edited manifest.json file.
 6. In the **behavior_pack_sample** folder, create a folder and name it **scripts** and open it.
@@ -111,11 +110,12 @@ To get there, we are going to start with the Attack Cow behavior pack, add the f
 ```javascript
 import {
     world,
-    system
+    system,
+    TicksPerSecond
   } from "@minecraft/server";
 
 function mainTick() {
-  if (system.currentTick === 200) {
+  if (system.currentTick === TicksPerSecond * 10) {
     world.sendMessage("All systems GO!");
   }
   system.run(mainTick);
@@ -140,9 +140,9 @@ That proves your script is working. Neat!
 
 For this particular script that we just tried, you must create a new world if you want to update the message in **"world.sendMessage"** and check that it has updated.
 
-Hot reloading (using the **/reload** command) will NOT cause an updated message to display if the original message was displayed before your update>- because tick 200 has already passed, and this line of the code specifically wants that 200th tick:
+Hot reloading (using the **/reload** command) will NOT cause an updated message to display if the original message was displayed before your update, because the 200th tick (meaning the 10th second of the world existing) has already passed, and this line of the code specifically wants that particular tick:
 
-`if (system.currentTick === 200) {`
+`if (system.currentTick === TicksPerSecond * 10) {`
 
 Don't worry, we'll cover **/reload** later in this tutorial.
 
@@ -177,7 +177,7 @@ We also have the same line at the end of the **mainTick** function itself. This 
 
 The contents of the `mainTick` function start with this line:
 
-`if (system.currentTick === 200)`
+`if (system.currentTick === TicksPerSecond * 10)`
 
 This statement is checking if we are currently on the 200th tick. If we are on the 200th tick, then this statement is true and the code inside the `if` statement's curly braces will be executed:
 
@@ -185,7 +185,11 @@ This statement is checking if we are currently on the 200th tick. If we are on t
 
 Otherwise, the code inside the `if` statement's curly braces will be skipped. Lastly, despite whether the `if` statement were true or false, `system.run(mainTick)` will be called again, to check again the next tick.
 
-As mentioned earlier, 20 ticks equals 1 second in Minecraft. So if the value we check in the `system.currentTick === 200` line of code is 200 ticks, then we are telling the code to wait 10 seconds from the start of world load to display the message. If your computer takes longer than 10 seconds to load the world, then this message will not get displayed unless you change 200 to something bigger. This is something to keep in mind as a creator! You do not want any world setup code to run before your world is even loaded!
+As mentioned earlier, 20 ticks equals 1 second in Minecraft. So the constant that we are using from the `@minecraft/server` module, **TicksPerSecond**, equals 20.
+When we multiply it by a number (let's call it "x") we end up with the number of ticks that is equal to x seconds.
+Therefore, if the value we check in the `system.currentTick === TicksPerSecond * 10` line of code is 200 ticks, and 200 ticks is the same at 10 seconds, then we are telling the code to wait 10 seconds from the start of world load to display the message.
+
+If your computer takes longer than 10 seconds to load the world, then this message will not get displayed unless you change the "x" value from 10 to something bigger. This is something to keep in mind as a creator! You do not want any world setup code to run before your world is even loaded!
 
 Anyway, when we load our world with this script in it, that statement is false for a while.
 
@@ -201,11 +205,11 @@ Let's try it! But first, we'll need to make one change to our current code to ma
 1. Open **main.js**.
 2. Change this line of code:
 
-`if (system.currentTick === 200)`
+`if (system.currentTick === TicksPerSecond * 10)`
 
 ...to this, instead:
 
-`if (system.currentTick % 200 === 0)`
+`if (system.currentTick % (TicksPerSecond * 10) === 0)`
 
 The "%" is known as the **modulo operator**, and it is used to obtain the remainder of a division between two integers.
 
@@ -249,13 +253,14 @@ Next, we will implement a simple script that counts the seconds that pass from t
 ```javascript
 import {
     world,
-    system
+    system,
+    TicksPerSecond
   } from "@minecraft/server";
 
 let secondsPassed = 0;
 
 function mainTick() {
-  if (system.currentTick % 20 === 0) {
+  if (system.currentTick % TicksPerSecond === 0) {
     secondsPassed += 1;
     world.sendMessage("Seconds Passed: " + secondsPassed);
   }
@@ -313,11 +318,12 @@ Based on our description above of what we want our script to do, here is the ske
 ```javascript
 import {
     world,
-    system
+    system,
+    TicksPerSecond
   } from "@minecraft/server";
 
 function mainTick() {
-  if (system.currentTick % 200 === 0) {
+  if (system.currentTick % (TicksPerSecond * 10) === 0) {
     const playerDimension = getPlayerDimension();
     const playerLocation = getPlayerLocation();
     if (playerDimension !== undefined && playerLocation !== undefined) {
@@ -449,7 +455,8 @@ Here is how your whole script should look by the end (no pun intended):
 ```javascript
 import {
     world,
-    system
+    system,
+    TicksPerSecond
   } from "@minecraft/server";
 
 function getPlayer() {
@@ -478,7 +485,7 @@ function getPlayerLocation() {
 }
 
 function mainTick() {
-  if (system.currentTick % 200 === 0) {
+  if (system.currentTick % (TicksPerSecond * 10) === 0) {
     const playerDimension = getPlayerDimension();
     const playerLocation = getPlayerLocation();
     if (playerDimension !== undefined && playerLocation !== undefined) {
@@ -507,7 +514,7 @@ Next, let's go back to the game, run `/reload`, and observe the magic! You will 
 
 You can spend lots and lots of time learning all about JavaScript. There are free (and not-so-free) resources on the Internet where you can learn everything you want to know about JavaScript. 
 
-Here is another link to [Microsoft's Beginner Series to: JavaScript tutorial](https://learn.microsoft.com/shows/beginners-series-to-javascript/).
+Here is another link to [Microsoft's Beginner Series to: JavaScript tutorial](https://learn.microsoft.com/shows/beginners-series-to-javascript/). Note that all of these learnings accrue perfectly to Typescript as well!
 
 To learn more about what we did in this tutorial, look into:
 
