@@ -432,7 +432,9 @@ For example, the **spawnEntity** function takes in two arguments: the **identifi
 
 For the first parameter, `identifier`, we will provide `"minecraft:fox"`, `"minecraft:hoglin"`, or `"minecraft:wolf"`.
 
-For the second parameter, `location`, we will provide the player's location, by calling the function we created, `getPlayerLocation()`. Here is how our block of code should look after adding the code to spawn these entities:
+For the second parameter, `location`, we will provide the player's location using the variable we made above, `playerLocation`.
+
+Here are the completed `if` statements:
 
 ```javascript
   if (playerDimension.id === "minecraft:overworld") { 
@@ -446,7 +448,7 @@ For the second parameter, `location`, we will provide the player's location, by 
   }
 ```
 
-This block of code stores values inside variables, such as **playerDimension** and **playerLocation**, which greatly helps with reuse of values and conciseness of code.
+Now it is apparent why we store some values inside variables, such as **playerDimension** and **playerLocation**. This greatly helps with reuse of values and conciseness of code.
 
 And that's it! We have implemented our script that spawns foxes in the Overworld, hoglins in the Nether, and wolves in every other dimension! (Spoiler alert: the only other dimension is the End).
 
@@ -471,7 +473,7 @@ function getPlayer() {
 function getPlayerDimension() {
   const player = getPlayer();
   if (player === undefined) {
-    return ;
+    return undefined;
   }
   return player.dimension;
 }
