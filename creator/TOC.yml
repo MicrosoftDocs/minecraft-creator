@@ -220,6 +220,8 @@
               href: Documents/MinecraftBlockWizard.md
             - name: Minecraft Entity Wizard
               href: Documents/MinecraftEntityWizard.md
+            - name: Minecraft Item Wizard
+              href: Documents/MinecraftItemWizard.md
           - name: Chunker
             items:
               - name: Chunker - Overview
