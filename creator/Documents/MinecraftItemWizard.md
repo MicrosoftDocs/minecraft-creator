@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Getting Started with Minecraft Item Wizard
 ms.prod: gaming
 description: "A tutorial covering how to create a custom item using the Minecraft Item Wizard tool in Blockbench"
