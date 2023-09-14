@@ -42,25 +42,25 @@ The camera command supports adjusting the position relative to the world or to t
 
 ![Graphic showing X, Y, and Z coordinates on a Minecraft map](Media/CameraCommand/PLACEHOLDER_1.png)
 
-1.	World coordinates
+**1. World coordinates**
 
 The world map is on a grid, with every location in space plotted to a spot on the x, y, and z axis. 
 
 You will use these coordinates to place the camera at that location on the grid.
 
->-	x (west and east, or longitude)
->-	y (above or below the player)
->-	z (north and south, or latitude)
+>- x (west and east, or longitude)
+>- y (above or below the player)
+>- z (north and south, or latitude)
 
 The command will look something like this, but with your own values for x, y, and z.
 
 `/camera @s set minecraft:free pos -65 70 17`
 
-2.	Distance from the player, in a cardinal direction 
+**2. Distance from the player, in a cardinal direction**
 
-The world itself has a true North, South, East, and West. 
+The world itself has a true North, South, East, and West.
 
-Using `~ ~ ~` lets you set the distance away from the target determined by cardinal direction. 
+Using `~ ~ ~` lets you set the distance away from the target determined by cardinal direction.
 
 This command will set the camera to be 5 blocks North from the player using the z coordinate:
 
@@ -70,7 +70,7 @@ To set the camera to be 5 blocks South, use a negative z coordinate like this:
 
 `/camera @s set minecraft:free pos ~ ~ ~-5`
 
-3.	Distance from the player, in the direction the player is facing
+**3. Distance from the player, in the direction the player is facing**
 
 To set the camera to be 5 blocks in front of the player:
 
@@ -79,9 +79,9 @@ To set the camera to be 5 blocks in front of the player:
 Action: Find coordinates and set the location of the free camera to those coordinates. 
 
 Steps: 
-•	Go into creative mode and grab coordinates. 
-•	Return your player to the starting area. 
-•	Use a command like this to position the camera at the coordinates:
+>- Go into creative mode and grab coordinates. 
+>- Return your player to the starting area. 
+>- Use a command like this to position the camera at the coordinates:
 
 `/camera @s set minecraft:free pos -51 80 22`
 
@@ -93,10 +93,10 @@ In this example, the camera is in the right location. Now, we need to set the fa
 
 To angle the camera so it points in the direction you want, there are a few options:
 
-• Face the nearest player @p
-• Face yourself @s
-• Face entities @e
-• Set the rotation
+>- Face the nearest player @p
+>- Face yourself @s
+>- Face entities @e
+>- Set the rotation
 
 ### Face yourself
 
@@ -144,7 +144,7 @@ This example shows how to add an easing transition to the position and facing di
 
 Enter the command with your coordinates, time, and an ease to demonstrate the difference between the transition with and without easing.
 
-Then, you could try the command again to demonstrate how it looks when the camera is going fast or slow.
+Then, you can try the command again to demonstrate how it looks when the camera is going fast or slow.
 
 After that, try changing the position coordinates to demonstrate how the distance changes the speed or how the easing transition behaves.
 
@@ -164,7 +164,7 @@ This example will set the fade-in to 3 seconds, the hold to 2 seconds, and the f
 
 `/camera @a fade time 3 2 3`
 
-The target is set to `@a`, so that the fade will be seen by all players. You could also set it so that only the player sees the fade.
+The target is set to `@a`, so that the fade will be seen by all players. You can also set it so that only the player sees the fade.
 
 ![Animation of a player in a Minecraft world using commands to make the screen dim to black.](Media/CameraCommand/fade_time.gif)
 
