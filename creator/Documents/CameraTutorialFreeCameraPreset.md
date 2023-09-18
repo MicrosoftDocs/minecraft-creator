@@ -40,7 +40,7 @@ To get the coordinates you'll use to set the position of the camera, go into a w
 
 The camera command supports adjusting the position relative to the world or to the player in these three ways:
 
-![Graphic showing X, Y, and Z coordinates on a Minecraft map](Media/CameraCommand/creator_xyz_coordinates.png)
+![Graphic showing X, Y, and Z coordinates on a Minecraft map](Media/CameraCommand/creator_xyz_coordinates.jpg)
 
 **1. World coordinates**
 
