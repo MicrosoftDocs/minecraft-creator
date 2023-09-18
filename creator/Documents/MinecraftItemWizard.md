@@ -39,7 +39,7 @@ To get started, you need the following:
 
 ## Getting Started
 
-The first step is to install the Block Wizard plugin.
+The first step is to install the Item Wizard plugin.
 
 1. In Blockbench, go to **File** > **Plugins...**, switch to the **Available** tab, and enter **"Minecraft Item Wizard"** into the search bar.
 1. Find the Item Wizard plugin and select **Install**.
@@ -48,11 +48,13 @@ The first step is to install the Block Wizard plugin.
 
 ![Image of the Blockbench start screen with the Create an Item button.](Media/MinecraftItemWizard/create_an_item.png)
 
-Next time you want to use it, you can open the Item Wizard from the menu via **Tools** > **Minecraft Item Wizard**.
+Next time you want to use it, you can open the Item Wizard from the menu via **Tools** > **Minecraft Item Wizard** or from the center of the start screen.
 
-## Glass Sword
+## Tutorial: Making a Glass Sword
 
 This tutorial starts with something familiar, but nonexistant in vanilla Minecraft: a glass sword.
+
+Of course you don't have to design your items based in any sort of reality. What matters most is that you have an idea and then you make that idea happen!
 
 ### Preset
 
@@ -78,13 +80,13 @@ Your identifier may look like this: `my_item_pack:glass_sword`.
 
 - **Creative Category**: Select the tab of the creative inventory where you want your item to appear. You can also select a sub-group to add your item to in one of the foldable groups within an inventory tab.
 
-Swords are Equipment (by default) so let's put it there, in the Sword sub-group.
+Swords are Equipment (by default) so let's leave it there and leave Sword selected as the sub-group.
 
 ![Naming screen in Blockbench showing the Display Name, Identifier, and Creative Category fields.](Media/MinecraftItemWizard/naming.png)
 
 ### Design
 
-On this page, you can select whether to add a, Item Model or an Icon Glint.
+On this page, you can select whether to add an Item Model or an Icon Glint.
 
 - **Item Model**: Select this option if you want to create a handheld model for your item in addition to the 2D icon.
 
@@ -173,9 +175,7 @@ Enter the world and locate the custom block in your creative inventory. Alternat
 > [!NOTE]
 > Alternatively, if you have exported your addon as a `.mcaddon` file, you can open this file in order to automatically add the packs into Minecraft.
 
-## Modifying your Item
-
-### Model Editing
+## Editing the Model
 
 Because you are already in Blockbench, you can continue to use the program to edit the model and texture. To do that, click **Next**.
 
@@ -196,7 +196,7 @@ Starting with the familiar sword model...
 
 Go to File > Save Model.
 
-### Let's Try it Out!
+## Let's Try it Out!
 
 Launch Minecraft and go a Survival world with cheats toggled on. 
 
