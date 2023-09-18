@@ -40,7 +40,7 @@ To get the coordinates you'll use to set the position of the camera, go into a w
 
 The camera command supports adjusting the position relative to the world or to the player in these three ways:
 
-![Graphic showing X, Y, and Z coordinates on a Minecraft map](Media/CameraCommand/creator_xyz_coordinates.png)
+![Graphic showing X, Y, and Z coordinates on a Minecraft map](Media/CameraCommand/creator_xyz_coordinates.jpg)
 
 **1. World coordinates**
 
@@ -85,9 +85,11 @@ Steps:
 
 `/camera @s set minecraft:free pos -51 80 22`
 
+![Animation showing the result of entering /camera @s set minecraft:free pos -51 80 22](Media/CameraCommand/step_1.gif)
+
 ![World with coordinates toggled on, coordinates displayed are -51 80 22](Media/CameraCommand/free_camera_preset_coordinates.png)
 
-In this example, the camera is in the right location. Now, we need to set the facing direction or rotation.  
+In this example, the camera is in the right location. Now, we need to set the facing direction or rotation.
 
 ## Step 2: Set the Camera's Facing Direction
 
@@ -103,6 +105,8 @@ To angle the camera so it points in the direction you want, there are a few opti
 This is the same command from the previous step, with the addition of `facing @s` so the camera faces you:
 
 `/camera @s set minecraft:free pos -51 80 22 facing @s`
+
+![Animation showing the camera moving to the given position and facing the player.](Media/CameraCommand/step_2.gif)
 
 ### Set the camera rotation
 
@@ -142,6 +146,8 @@ This example shows how to add an easing transition to the position and facing di
 
 `/camera @s set minecraft:free ease 8 linear pos -51 80 22 facing @s`
 
+![Animation showing the camera doing a linear easing transition](Media/CameraCommand/step_3.gif)
+
 Enter the command with your coordinates, time, and an ease to demonstrate the difference between the transition with and without easing.
 
 Then, you can try the command again to demonstrate how it looks when the camera is going fast or slow.
@@ -158,11 +164,19 @@ Fade time is used to configure the lengths of the phases of the fade, and fade c
 
 To set the time, you need to include how many seconds for each phase of the fade: fade-in, hold, and fade-out.
 
-Fade-in will dim the scene and fade in the color, hold will keep the color on the screen, then fade-out will dissolve the fade color and restore the scene. 
+Fade-in will dim the scene and fade in the color, hold will keep the color on the screen, then fade-out will dissolve the fade color and restore the scene.
+
+This example shows the effect of setting all three values to 5 seconds:
+
+`/camera @a fade time 5 5 5`
+
+![Animation showing a camera fade with each value set to 5 seconds](Media/CameraCommand/step_4_5_5_5.gif)
 
 This example will set the fade-in to 3 seconds, the hold to 2 seconds, and the fade-out to 3 seconds:
 
 `/camera @a fade time 3 2 3`
+
+![Animation showing a camera fade with values set to 3, 2, and 3 seconds, respectively.](Media/CameraCommand/step_4_3_2_3.gif)
 
 The target is set to `@a`, so that the fade will be seen by all players. You can also set it so that only the player sees the fade.
 
@@ -183,6 +197,14 @@ To make a red fade, set red to 255, green to 0, and blue to 0 like this:
 `/camera @a fade color 255 0 0`
 
 ![Image of a screen of Minecraft that has a red wash over the scene.](Media/CameraCommand/red_fade.png)
+
+### Clear fade
+
+The clear command fades the screen to black while the camera returns to the usual starting position. 
+
+`/camera @s clear`
+
+![Animation showing the effect of using the fade clear command.](Media/CameraCommand/step_4_clear.gif)
 
 ## Step 5: Prevent the Player from Moving
 
@@ -212,5 +234,11 @@ When the cutscene is over, enable input permissions to allow the player to move 
 
 When teleporting a player to a location, it’s nice to have a transition that makes that smoother.
 
-After configuring a fade, you can add it to the commands to hide a teleport.
+Here is the example of the first part - configuring a 10-second fade...
+
+![Animation showing the configuration of fade time to cover a teleport action.](<Media/CameraCommand/Step 6 pt 1.gif>)
+
+This is the result showing that when the player's screen fades in, they have been teleported to an entirely new location.
+
+![Alt text](<Media/CameraCommand/Step 6 pt 2.gif>)
 
