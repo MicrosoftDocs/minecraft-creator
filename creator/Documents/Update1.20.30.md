@@ -17,6 +17,8 @@ Additional presets and more camera capabilities are planned for the future.
 
 The [/scriptevent command](../Commands/commands/scriptevent.md) provides a bridge between script and command logic.
 
+The [/recipe command](../Commands/commands/recipe.md) allows for locking and unlocking of individual Vanilla recipes. The ```recipesunlock``` game rule was added to limit crafting to unlocked recipes. It can be set through the [/gamerule command](../Commands/commands/gamerule.md).
+
 ## Blocks
 
 **Block Traits**
