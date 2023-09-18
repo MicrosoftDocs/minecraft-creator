@@ -25,7 +25,6 @@ In this tutorial you will learn how to:
 >- Combine easing, position, and facing direction for a flyover camera effect
 >- Disable player movement, as needed
 >- Apply a fade effect with a custom time and color
->- Clear camera during a fade
 >- Teleport during a fade
 
 To practice these features and see how they work in the game, let’s try out a cutscene scenario. Say you want to make a cutscene where the camera transitions from the player’s view to show a flyover of the landscape and then turn to face the player. Let’s try it!
@@ -198,14 +197,6 @@ To make a red fade, set red to 255, green to 0, and blue to 0 like this:
 
 ![Image of a screen of Minecraft that has a red wash over the scene.](Media/CameraCommand/red_fade.png)
 
-### Clear fade
-
-The clear command fades the screen to black while the camera returns to the usual starting position. 
-
-`/camera @s clear`
-
-![Animation showing the effect of using the fade clear command.](Media/CameraCommand/step_4_clear.gif)
-
 ## Step 5: Prevent the Player from Moving
 
 During a fade, the player can’t see anything but they can still move. That can be dangerous! If you don’t want the player to move during a fade, you can disable player movement. 
@@ -240,5 +231,5 @@ Here is the example of the first part - configuring a 10-second fade...
 
 This is the result showing that when the player's screen fades in, they have been teleported to an entirely new location.
 
-![Alt text](<Media/CameraCommand/Step 6 pt 2.gif>)
+![Animation showing a screen fading back in with the player in a new location](<Media/CameraCommand/Step 6 pt 2.gif>)
 
