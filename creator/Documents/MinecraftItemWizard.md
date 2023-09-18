@@ -104,11 +104,13 @@ This is the page for the Sword preset, with some options already selected for yo
 
 - **Melee Attack**: Use the weapon to attack mobs.
 
+Yes. Make sure this is checked.
+
 - **Damage**: If the item can be used to damage mobs, set that level here. 
 
 For the glass sword, set the Damage level all the way up to 20.
 
-- **Dig Blocks**: Check this box if the item is intended to be used for digging blocks.
+- **Break Blocks**: Check this box if the item is intended to be used to break specific blocks blocks.
 
 - **Wearable**: Check this box if the item is intended to be worn by the player.
 
