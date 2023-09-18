@@ -98,7 +98,9 @@ Click Next.
 
 ### Functionality
 
-Blockbench automatically checks some options for us because we chose the Sword preset item.
+Different preset items have different Functionality settings.
+
+This is the page for the Sword preset, with some options already selected for you. 
 
 - **Melee Attack**: Use the weapon to attack mobs.
 
@@ -116,12 +118,16 @@ Leave Dig Blocks and Wearable unchecked.
 
 To make our glass sword act like, well, a sword made out of fragile glass, let's set the durability to 3.
 
-- **Repair Item**: If you want to be able to repair your item, this is where you set what materials should be used and the percentage your item will be repaired.
+- **Repair Item**: If you want to be able to repair your sword, this is where you set what material should be used.
 
-Click the **+** next to the repair materials field. A serach field will be displayed. Enter "glass".
-Select the "Glass" entry.
-Because glass is a recycleable material, let's also add "glass_bottle" and "glass_pane" to the list.
-Set the Repair Amount to 100 percent.
+Click the drop-down menu next to the repair materials field.
+Enter "glass" in the search field and select "Glass." 
+
+- **Repair Amount**: Set the precentage of how much one unit of material will repair your item.
+
+Let's encourage recycling by setting this to 100%.
+
+- **Food** 
 
 - **Furnace Fuel**: Check this if you want to be able to burn the item in a furnace like wood or coal. 
 - **Place Entity**: Check this if you want to be able to place the entity on the ground. 
@@ -160,8 +166,7 @@ Click **Next**.
 
 Blockbench creates your packs and saves them in your com.mojang folder, in the **development_behavior_packs** and **development_resource_packs**, respectively.
 
-You should see a little "Export Successful" message from Blockbench.
-
+You should see an "Export Successful" message from Blockbench.
 
 ## Installing the pack
 
