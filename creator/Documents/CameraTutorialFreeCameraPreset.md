@@ -40,7 +40,7 @@ To get the coordinates you'll use to set the position of the camera, go into a w
 
 The camera command supports adjusting the position relative to the world or to the player in these three ways:
 
-![Graphic showing X, Y, and Z coordinates on a Minecraft map](Media/CameraCommand/PLACEHOLDER_1.png)
+![Graphic showing X, Y, and Z coordinates on a Minecraft map](Media/CameraCommand/creator_xyz_coordinates.png)
 
 **1. World coordinates**
 
@@ -115,6 +115,8 @@ The rotation of the camera 360 degrees around the target parallel to the earth. 
 **X = pitch**
 
 The angle up or down, perpendicular to the earth. Pitch is limited to a range of 90 facing straight down to -90 facing straight up. This limitation is to prevent rolling the camera upside down.
+
+![Graphic showing yaw (y) and pitch (x) relative to the player.](Media/CameraCommand/creator_pitch_and_yaw.jpg)
 
 A couple of notes about position:
 
