@@ -140,8 +140,6 @@ This example shows how to add an easing transition to the position and facing di
 
 `/camera @s set minecraft:free ease 8 linear pos -51 80 22 facing @s`
 
-![Animation showing the results of entering the command to use ease 8 and linear position](Media/CameraCommand/camera_ease_8_linear_pos.gif)
-
 Enter the command with your coordinates, time, and an ease to demonstrate the difference between the transition with and without easing.
 
 Then, you can try the command again to demonstrate how it looks when the camera is going fast or slow.
@@ -165,8 +163,6 @@ This example will set the fade-in to 3 seconds, the hold to 2 seconds, and the f
 `/camera @a fade time 3 2 3`
 
 The target is set to `@a`, so that the fade will be seen by all players. You can also set it so that only the player sees the fade.
-
-![Animation of a player in a Minecraft world using commands to make the screen dim to black.](Media/CameraCommand/fade_time.gif)
 
 ### Fade color
 
@@ -215,6 +211,4 @@ When the cutscene is over, enable input permissions to allow the player to move 
 When teleporting a player to a location, it’s nice to have a transition that makes that smoother.
 
 After configuring a fade, you can add it to the commands to hide a teleport.
-
-![Animation showing a player using commands to teleport as the screen fades to black](Media/CameraCommand/teleport_and_fade.gif)
 
