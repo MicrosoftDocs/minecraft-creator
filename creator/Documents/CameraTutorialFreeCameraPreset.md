@@ -40,7 +40,7 @@ To get the coordinates you'll use to set the position of the camera, go into a w
 
 The camera command supports adjusting the position relative to the world or to the player in these three ways:
 
-![Graphic showing X, Y, and Z coordinates on a Minecraft map](Media/CameraCommand/PLACEHOLDER_1.png)
+![Graphic showing X, Y, and Z coordinates on a Minecraft map](Media/CameraCommand/creator_xyz_coordinates.png)
 
 **1. World coordinates**
 
@@ -116,6 +116,8 @@ The rotation of the camera 360 degrees around the target parallel to the earth. 
 
 The angle up or down, perpendicular to the earth. Pitch is limited to a range of 90 facing straight down to -90 facing straight up. This limitation is to prevent rolling the camera upside down.
 
+![Graphic showing yaw (y) and pitch (x) relative to the player.](Media/CameraCommand/creator_pitch_and_yaw.jpg)
+
 A couple of notes about position:
 
 >- When adjusting the camera position, the camera is not limited to whole numbers. Try setting the camera at 5.75 or 1.95 to fine tune the positioning of the camera to your needs.
@@ -140,8 +142,6 @@ This example shows how to add an easing transition to the position and facing di
 
 `/camera @s set minecraft:free ease 8 linear pos -51 80 22 facing @s`
 
-![Animation showing the results of entering the command to use ease 8 and linear position](Media/CameraCommand/camera_ease_8_linear_pos.gif)
-
 Enter the command with your coordinates, time, and an ease to demonstrate the difference between the transition with and without easing.
 
 Then, you can try the command again to demonstrate how it looks when the camera is going fast or slow.
@@ -165,8 +165,6 @@ This example will set the fade-in to 3 seconds, the hold to 2 seconds, and the f
 `/camera @a fade time 3 2 3`
 
 The target is set to `@a`, so that the fade will be seen by all players. You can also set it so that only the player sees the fade.
-
-![Animation of a player in a Minecraft world using commands to make the screen dim to black.](Media/CameraCommand/fade_time.gif)
 
 ### Fade color
 
@@ -215,6 +213,4 @@ When the cutscene is over, enable input permissions to allow the player to move 
 When teleporting a player to a location, it’s nice to have a transition that makes that smoother.
 
 After configuring a fade, you can add it to the commands to hide a teleport.
-
-![Animation showing a player using commands to teleport as the screen fades to black](Media/CameraCommand/teleport_and_fade.gif)
 
