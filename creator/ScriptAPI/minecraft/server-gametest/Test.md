@@ -95,6 +95,8 @@ Tests that the condition specified in _condition_ is true. If not, an error with
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertBlockPresent**
 `
@@ -116,6 +118,8 @@ Tests that a block of the specified type is present at the specified location. I
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertBlockState**
 `
@@ -134,6 +138,8 @@ Tests that a block has a particular state value at the specified location. If it
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 #### Examples
 ##### ***testIfButtonNotPressed.js***
@@ -163,6 +169,8 @@ Tests that an entity can reach a particular location. Depending on the value of 
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertContainerContains**
 `
@@ -181,6 +189,8 @@ Tests that a container (e.g., a chest) at the specified location contains a spec
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertContainerEmpty**
 `
@@ -196,6 +206,8 @@ Tests that a container (e.g., a chest) at the specified location is empty. If no
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertEntityHasArmor**
 `
@@ -226,6 +238,8 @@ Tests that an entity has a specific piece of armor equipped. If not, an error is
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 #### Examples
 ##### ***horseArmorTest.js***
@@ -256,6 +270,8 @@ Tests that an entity has a particular component. If not, an exception is thrown.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 #### Examples
 ##### ***sheepShearedTest.js***
@@ -283,6 +299,8 @@ Depending on the value for isPresent, tests that a particular entity is present 
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertEntityInstancePresentInArea**
 `
@@ -301,6 +319,8 @@ Tests that an entity instance is present within the GameTest area. If not, an ex
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 #### Examples
 ##### ***simpleMobTest.ts***
@@ -346,6 +366,8 @@ Depending on the value of isPresent, tests for the presence or non-presence of e
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertEntityPresentInArea**
 `
@@ -364,6 +386,8 @@ Tests that an entity of a specified type is present within the GameTest area. If
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 #### Examples
 ##### ***simpleMobTest.ts***
@@ -405,6 +429,8 @@ Tests that an entity (e.g., a skeleton) at the specified location has a particul
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 #### Examples
 ##### ***villagerEffectTest.js***
@@ -436,6 +462,8 @@ Depending on the value of isTouching, tests that an entity of a specified type i
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertIsWaterlogged**
 `
@@ -454,6 +482,8 @@ Depending on the value of isWaterlogged, tests that a block at a location contai
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertItemEntityCountIs**
 `
@@ -478,6 +508,8 @@ Tests that items of a particular type and count are present within an area. If n
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 #### Examples
 ##### ***findFeathers.js***
@@ -508,6 +540,8 @@ Depending on the value of isPresent, tests whether a particular item entity is p
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertRedstonePower**
 `
@@ -526,6 +560,8 @@ Tests that Redstone power at a particular location matches a particular value. I
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **destroyBlock**
 `
@@ -547,6 +583,8 @@ Destroys a block at a particular location.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **fail**
 `
@@ -597,6 +635,8 @@ Gets a block at the specified block location.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 ### **getDimension**
 `
@@ -609,6 +649,8 @@ Gets the dimension of this test.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 ### **getFenceConnectivity**
 `
@@ -629,10 +671,12 @@ If the block at the specified block location is a fence, this returns a helper o
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **getSculkSpreader**
 `
-getSculkSpreader(blockLocation: minecraftserver.Vector3): SculkSpreader
+getSculkSpreader(blockLocation: minecraftserver.Vector3): SculkSpreader | undefined
 `
 
 Retrieves a sculk spreader object that can be used to control and manage how sculk grows from a block.
@@ -642,13 +686,15 @@ Retrieves a sculk spreader object that can be used to control and manage how scu
   
   Location of the block to retrieve a sculk spreader from.
 
-#### **Returns** [*SculkSpreader*](SculkSpreader.md)
+#### **Returns** [*SculkSpreader*](SculkSpreader.md) | *undefined* - Returns the SculkSpreader or undefined if no SculkSpreader is present on the block.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **getTestDirection**
 `
@@ -688,6 +734,8 @@ Kills all entities within the GameTest structure.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **onPlayerJump**
 `
@@ -703,6 +751,8 @@ onPlayerJump(mob: minecraftserver.Entity, jumpAmount: number): void
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **pressButton**
 `
@@ -721,6 +771,8 @@ Presses a button at a block location.
 
 > [!WARNING]
 > Will throw an error if a button is not present at the specified position.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **print**
 `
@@ -739,6 +791,8 @@ Displays the specified message to all players.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **pullLever**
 `
@@ -757,6 +811,8 @@ Pulls a lever at a block location.
 
 > [!WARNING]
 > Will throw an error if a lever is not present at the specified position.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **pulseRedstone**
 `
@@ -778,6 +834,8 @@ Sends a Redstone pulse at a particular location by creating a temporary Redstone
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **relativeBlockLocation**
 `
@@ -795,6 +853,8 @@ From a BlockLocation, returns a new BlockLocation with coordinates relative to t
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 ### **relativeLocation**
 `
@@ -815,6 +875,8 @@ From a location, returns a new location with coordinates relative to the current
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 ### **removeSimulatedPlayer**
 `
@@ -850,6 +912,8 @@ Returns a relative direction given the current rotation of the current test. Pas
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 ### **rotateVector**
 `
@@ -866,6 +930,8 @@ rotateVector(vector: minecraftserver.Vector3): minecraftserver.Vector3
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 ### **runAfterDelay**
 `
@@ -929,6 +995,8 @@ Sets a block to a particular configuration (a BlockPermutation) at the specified
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **setBlockType**
 `
@@ -950,6 +1018,8 @@ Sets a block to a particular type at the specified block location.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **setFluidContainer**
 `
@@ -971,6 +1041,8 @@ For blocks that are fluid containers - like a cauldron - changes the type of flu
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **setTntFuse**
 `
@@ -992,6 +1064,8 @@ Sets the fuse of an explodable entity.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **spawn**
 `
@@ -1013,6 +1087,8 @@ Spawns an entity at a location.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 #### Examples
 ##### ***simpleMobTest.ts***
@@ -1059,6 +1135,8 @@ Spawns an entity at a location.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 #### Examples
 ##### ***spawnAdultPig.js***
@@ -1088,6 +1166,8 @@ Spawns an item entity at a specified location.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 #### Examples
 ##### ***spawnEmeralds.js***
@@ -1122,6 +1202,8 @@ Creates a new simulated player within the world.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **spawnWithoutBehaviors**
 `
@@ -1143,6 +1225,8 @@ Spawns an entity at a location without any AI behaviors. This method is frequent
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 ### **spawnWithoutBehaviorsAtLocation**
 `
@@ -1164,6 +1248,8 @@ Spawns an entity at a location without any AI behaviors. This method is frequent
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 ### **spreadFromFaceTowardDirection**
 `
@@ -1188,6 +1274,8 @@ Tests that a particular item entity is present at a particular location. If not,
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 #### Examples
 ##### ***spreadFromFaceTowardDirection.js***
@@ -1338,6 +1426,8 @@ Depending on the condition of isPresent, tests for the presence of a block of a 
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **succeedWhenEntityHasComponent**
 `
@@ -1409,6 +1499,8 @@ Triggers a block event from a fixed list of available block events.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **until**
 `
@@ -1450,6 +1542,8 @@ Forces a mob to walk to a particular location. Usually used in conjunction with 
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **walkToLocation**
 `
@@ -1474,6 +1568,8 @@ Forces a mob to walk to a particular location. Usually used in conjunction with 
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **worldBlockLocation**
 `
@@ -1491,6 +1587,8 @@ From a BlockLocation with coordinates relative to the GameTest structure block, 
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 ### **worldLocation**
 `
@@ -1508,3 +1606,5 @@ From a location with coordinates relative to the GameTest structure block, retur
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)

@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: golden_apple
-ms.prod: gaming
 description: "A code snippet for the golden_apple item"
+ms.service: minecraft-bedrock-edition
 ---
 
 # golden_apple

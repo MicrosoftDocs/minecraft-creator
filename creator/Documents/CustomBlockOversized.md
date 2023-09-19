@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Custom Blocks Oversized Geometry
-ms.prod: gaming
 description: "An Advanced Tutorial on Customizing Blocks with Oversized Geometry"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Custom Blocks Part 4: Oversized Geometry

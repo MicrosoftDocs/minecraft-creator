@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.move_towards_restriction
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.move_towards_restriction' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.move_towards_restriction

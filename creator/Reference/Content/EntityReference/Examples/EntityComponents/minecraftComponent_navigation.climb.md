@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:navigation.climb
-ms.prod: gaming
 description: "A reference document detailing the 'navigation.climb' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:navigation.climb

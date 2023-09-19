@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:fire_immune
-ms.prod: gaming
 description: "A reference document detailing the 'fire_immune' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation -  minecraft:fire_immune

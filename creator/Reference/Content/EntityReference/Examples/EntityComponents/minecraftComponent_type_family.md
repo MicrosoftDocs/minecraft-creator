@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:type_family
-ms.prod: gaming
 description: "A reference document detailing the 'type_family' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation -  minecraft:type_family

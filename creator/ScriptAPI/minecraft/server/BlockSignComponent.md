@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: minecraft/server.BlockSignComponent Class
 description: Contents of the @minecraft/server.BlockSignComponent class.
+ms.service: minecraft-bedrock-edition
 ---
 # BlockSignComponent Class
 
@@ -24,6 +24,9 @@ Represents a block that can display text on it.
 Whether or not players can edit the sign. This happens if a sign has had a honeycomb used on it or `setWaxed` was called on the sign.
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Methods
 - [getRawText](#getrawtext)

@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - minecraft:should_despawn
-ms.prod: gaming
 description: "A reference document detailing the 'should despawn' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:should_despawn

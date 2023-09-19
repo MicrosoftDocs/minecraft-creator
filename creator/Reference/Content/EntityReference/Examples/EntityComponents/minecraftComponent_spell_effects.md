@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:spell_effects
-ms.prod: gaming
 description: "A reference document detailing the 'spell_effects' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:spell_effects

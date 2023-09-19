@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - light_level
-ms.prod: gaming
 description: "A reference document detailing the 'light_level' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - light_level

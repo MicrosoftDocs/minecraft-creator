@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Entity Behavior Introduction
-ms.prod: gaming
 description: "An article discussing how to use entity behavior files to add customized behaviors to entities."
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Behavior Introduction

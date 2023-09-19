@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:is_shaking
-ms.prod: gaming
 description: "A reference document detailing the 'is_shaking' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation -  minecraft:is_shaking

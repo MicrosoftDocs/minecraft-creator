@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: librarian_trades economy_trades
-ms.prod: gaming
 description: "A code snippet of 'librarian_trades' economy trades"
+ms.service: minecraft-bedrock-edition
 ---
 
 # librarian_trades

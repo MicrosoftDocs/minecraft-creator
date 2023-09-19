@@ -2,7 +2,7 @@
 author: iconicnurdle
 ms.author: mikeam
 title: Features Documentation - minecraft:vegetation_patch_feature 
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 ---
 
 # Features Documentation - minecraft:vegetation_patch_feature 

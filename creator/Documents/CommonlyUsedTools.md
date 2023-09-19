@@ -2,8 +2,8 @@
 author: neonerz
 ms.author: mikeam
 title: Commonly Used Tools
-ms.prod: gaming
 description: "A guide detailing popular tools used to modify Minecraft content"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Commonly Used Tools

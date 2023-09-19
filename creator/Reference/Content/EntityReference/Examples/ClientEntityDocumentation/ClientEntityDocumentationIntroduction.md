@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - Entity JSON Introduction
-ms.prod: gaming
 description: "A reference document providing an introduction to the concept of entity JSON"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - Entity JSON Introduction

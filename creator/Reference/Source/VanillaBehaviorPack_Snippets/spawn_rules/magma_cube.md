@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: magma_cube spawn_rule
-ms.prod: gaming
 description: "A code snippet of the magma cube spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # magma_cube spawn_rule

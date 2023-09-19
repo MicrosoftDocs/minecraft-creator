@@ -26,9 +26,9 @@ highlightedContent:
       itemType: whats-new
       url: Documents/EditorOverview.md
     #card
-    - title: "1.20.10 Update Summary"
+    - title: "1.20.30 Update Summary"
       itemType: whats-new
-      url: Documents/Update1.20.10.md
+      url: Documents/Update1.20.30.md
     #card
     - title: Camera Command
       itemType: whats-new
@@ -38,9 +38,9 @@ highlightedContent:
       itemType: whats-new
       url: Documents/EditorExtensionsIntroduction.md
     #card
-    - title: Advanced Custom Blocks
+    - title: Minecraft Item Wizard
       itemType: whats-new
-      url: Documents/AdvancedCustomBlocks.md
+      url: Documents/MinecraftItemWizard.md
 
 # productDirectory section (optional)
 productDirectory:

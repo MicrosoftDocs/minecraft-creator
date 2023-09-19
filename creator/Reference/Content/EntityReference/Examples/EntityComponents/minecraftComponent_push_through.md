@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - minecraft:push_through
-ms.prod: gaming
 description: "A reference document detailing the 'push_through' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation -  minecraft:push_through

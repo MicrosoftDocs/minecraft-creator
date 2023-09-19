@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - moon_phase
-ms.prod: gaming
 description: "A reference document detailing the 'moon_phase' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - moon_phase

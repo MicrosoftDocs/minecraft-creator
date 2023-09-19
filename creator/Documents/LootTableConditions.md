@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Loot and Trade Table Conditions
-ms.prod: gaming
 description: "A guide to the sse of loot table conditions"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Loot Table Conditions

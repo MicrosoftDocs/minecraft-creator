@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - has_damage
-ms.prod: gaming
 description: "A reference document detailing the 'has_damage' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - has_damage

@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:mark_variant
-ms.prod: gaming
 description: "A reference document detailing the 'mark_variant' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation -  minecraft:mark_variant

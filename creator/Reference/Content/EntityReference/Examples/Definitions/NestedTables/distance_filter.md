@@ -2,7 +2,7 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:distance_filter
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:distance_filter

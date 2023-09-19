@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - entity_type
-ms.prod: gaming
 description: "A reference document detailing the 'entity_types' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - entity_types

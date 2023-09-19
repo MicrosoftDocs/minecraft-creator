@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: cod spawn_rule
-ms.prod: gaming
 description: "A code snippet of the cod spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # cod spawn_rule

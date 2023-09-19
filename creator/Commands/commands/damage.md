@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: damage Command
 description: Description and usage of the damage command
+ms.service: minecraft-bedrock-edition
 ---
 # `/damage` Command
 Apply damage to the specified entities. See more in the [Damage Command documentation](https://learn.microsoft.com/minecraft/creator/documents/commandsdamageintroduction).
@@ -50,12 +50,14 @@ When using the Damage command, this specifies the type of damage being dealt.
 Piston
 - `lava`
 Lava
+- `campfire`
 - `fire`
 Fire
 - `anvil`
 Anvil
 - `magma`
 Magma
+- `soul_campfire`
 - `wither`
 Wither
 - `falling_block`
@@ -66,6 +68,7 @@ Fireworks
 Thorns
 - `none`
 None
+- `sonic_boom`
 - `contact`
 Contact
 - `override`
@@ -80,6 +83,7 @@ Suffocation
 Fall
 - `starve`
 Starve
+- `ram_attack`
 - `fire_tick`
 Fire Tick
 - `stalactite`

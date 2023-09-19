@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:target_nearby_sensor
-ms.prod: gaming
 description: "A reference document detailing the 'target_nearby_sensor' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:target_nearby_sensor

@@ -24,6 +24,9 @@ When added, this component makes the entity spawn with a rider of the specified 
 The type of entity that is added as a rider for this entity when spawned under certain conditions.
 
 Type: *string*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **spawnEvent**
 `read-only spawnEvent: string;`
@@ -31,6 +34,9 @@ Type: *string*
 Optional spawn event to trigger on the rider when that rider is spawned for this entity.
 
 Type: *string*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Constants
 

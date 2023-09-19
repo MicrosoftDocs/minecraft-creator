@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Guide to Redstone
-ms.prod: gaming
 description: "A guide to using Redstone in Minecraft: Bedrock Edition"
+ms.service: minecraft-bedrock-edition
 ---
 
 # A Guide to Redstone

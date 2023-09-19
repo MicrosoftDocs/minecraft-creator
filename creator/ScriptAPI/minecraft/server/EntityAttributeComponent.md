@@ -27,6 +27,9 @@ This is a base abstract class for any entity component that centers around a num
 Current value of this attribute for this instance.
 
 Type: *number*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **defaultValue**
 `read-only defaultValue: number;`
@@ -34,6 +37,9 @@ Type: *number*
 Returns the default defined value for this attribute.
 
 Type: *number*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **effectiveMax**
 `read-only effectiveMax: number;`
@@ -41,6 +47,9 @@ Type: *number*
 Returns the effective max of this attribute given any other ambient components or factors.
 
 Type: *number*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **effectiveMin**
 `read-only effectiveMin: number;`
@@ -48,6 +57,9 @@ Type: *number*
 Returns the effective min of this attribute given any other ambient components or factors.
 
 Type: *number*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Methods
 - [resetToDefaultValue](#resettodefaultvalue)

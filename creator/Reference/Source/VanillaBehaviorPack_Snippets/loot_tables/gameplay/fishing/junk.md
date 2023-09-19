@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: junk
-ms.prod: gaming
 description: "A code snippet for the junk fishing gameplay loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Junk

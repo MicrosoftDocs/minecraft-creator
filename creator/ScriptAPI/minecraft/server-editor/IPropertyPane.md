@@ -175,7 +175,7 @@ Adds a string item to the pane
 
 ### **addVector3**
 `
-addVector3(obj: T, property: Prop, options: IPropertyItemOptionsVector3): IPropertyItem<T, Prop>
+addVector3(obj: T, property: Prop, options: IPropertyItemOptionsVector3): IVector3PropertyItem<T, Prop>
 `
 
 Adds a Vec3 item to the pane.
@@ -185,7 +185,7 @@ Adds a Vec3 item to the pane.
 - **property**: *Prop*
 - **options**: *IPropertyItemOptionsVector3*
 
-#### **Returns** *IPropertyItem<T, Prop>*
+#### **Returns** *IVector3PropertyItem<T, Prop>*
 
 ### **collapse**
 `

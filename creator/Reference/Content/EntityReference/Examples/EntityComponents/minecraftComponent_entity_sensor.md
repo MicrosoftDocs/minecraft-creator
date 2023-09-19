@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:entity_sensor
-ms.prod: gaming
 description: "A reference document detailing the 'entity_sensor' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:entity_sensor

@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:density_limit
-ms.prod: gaming
 description: "A reference document detailing the 'density_limit' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:density_limit

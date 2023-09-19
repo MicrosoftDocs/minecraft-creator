@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - on_ladder
-ms.prod: gaming
 description: "A reference document detailing the 'on_ladder' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - on_ladder

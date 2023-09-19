@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:herd
-ms.prod: gaming
 description: "A reference document detailing the 'herd' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:herd

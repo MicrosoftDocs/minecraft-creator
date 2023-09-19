@@ -21,6 +21,9 @@ If added onto the entity, this indicates that the entity represents a free-float
 Item stack represented by this entity in the world.
 
 Type: [*ItemStack*](ItemStack.md)
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Constants
 

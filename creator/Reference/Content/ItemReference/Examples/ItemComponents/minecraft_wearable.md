@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - minecraft:wearable
-ms.prod: gaming
 description: "A reference document detailing the 'wearable' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:wearable

@@ -42,9 +42,6 @@ Adds a dropdown with choices to the form.
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **show**
 `
 show(player: minecraftserver.Player): Promise<ModalFormResponse>
@@ -81,9 +78,6 @@ Adds a numeric slider to the form.
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **textField**
 `
 textField(label: minecraftserver.RawMessage | string, placeholderText: minecraftserver.RawMessage | string, defaultValue?: string): ModalFormData
@@ -98,9 +92,6 @@ Adds a textbox to the form.
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **title**
 `
 title(titleText: minecraftserver.RawMessage | string): ModalFormData
@@ -112,9 +103,6 @@ This builder method sets the title for the modal dialog.
 - **titleText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 ### **toggle**
 `
@@ -128,9 +116,6 @@ Adds a toggle checkbox button to the form.
 - **defaultValue**?: *boolean* = `null`
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 #### Examples
 ##### ***showBasicModalForm.ts***

@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - surface_mob
-ms.prod: gaming
 description: "A reference document detailing the 'surface_mob' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - surface_mob

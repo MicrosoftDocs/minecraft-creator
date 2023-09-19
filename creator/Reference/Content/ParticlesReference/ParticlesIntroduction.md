@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Introduction to Particles
-ms.prod: gaming
 description: "A reference document detailing the basic concepts behind particles"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Introduction to Particles

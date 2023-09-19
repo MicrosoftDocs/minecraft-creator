@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.look_at_trading_player
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.look_at_trading_player' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.look_at_trading_player

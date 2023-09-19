@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_avoiding_mobs
-ms.prod: gaming
 description: "A reference document detailing the 'is_avoiding_mobs' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - is_avoiding_mobs

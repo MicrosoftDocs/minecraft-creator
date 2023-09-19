@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Features Documentation - minecraft:geode_feature
-ms.prod: gaming
 description: "A reference document detailing the 'geode_feature' feature"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Features Documentation - minecraft:geode_feature

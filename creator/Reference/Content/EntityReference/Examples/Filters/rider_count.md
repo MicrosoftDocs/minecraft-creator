@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - rider_count
-ms.prod: gaming
 description: "A reference document detailing the 'rider_count' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - rider_count

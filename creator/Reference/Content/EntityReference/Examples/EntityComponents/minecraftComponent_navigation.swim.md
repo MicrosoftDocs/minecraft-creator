@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:navigation.swim
-ms.prod: gaming
 description: "A reference document detailing the 'navigation.swim' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:navigation.swim

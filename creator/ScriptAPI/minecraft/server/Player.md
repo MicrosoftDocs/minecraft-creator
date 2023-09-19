@@ -27,6 +27,9 @@ Type: [*Camera*](Camera.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **isEmoting**
 `read-only isEmoting: boolean;`
@@ -37,6 +40,9 @@ Type: *boolean*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **isFlying**
 `read-only isFlying: boolean;`
@@ -47,6 +53,9 @@ Type: *boolean*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **isGliding**
 `read-only isGliding: boolean;`
@@ -57,6 +66,9 @@ Type: *boolean*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **isJumping**
 `read-only isJumping: boolean;`
@@ -67,6 +79,9 @@ Type: *boolean*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **level**
 `read-only level: number;`
@@ -77,6 +92,9 @@ Type: *number*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **name**
 `read-only name: string;`
@@ -84,6 +102,9 @@ Type: *number*
 Name of the player.
 
 Type: *string*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **onScreenDisplay**
 `read-only onScreenDisplay: ScreenDisplay;`
@@ -91,6 +112,9 @@ Type: *string*
 Contains methods for manipulating the on-screen display of a Player.
 
 Type: [*ScreenDisplay*](ScreenDisplay.md)
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **selectedSlot**
 `selectedSlot: number;`
@@ -114,6 +138,9 @@ Type: *number*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **xpEarnedAtCurrentLevel**
 `read-only xpEarnedAtCurrentLevel: number;`
@@ -124,6 +151,9 @@ Type: *number*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Methods
 - [addExperience](#addexperience)
@@ -132,13 +162,16 @@ Type: *number*
 - [getSpawnPoint](#getspawnpoint)
 - [getTotalXp](#gettotalxp)
 - [isOp](#isop)
+- [playMusic](#playmusic)
 - [playSound](#playsound)
 - [postClientMessage](#postclientmessage)
+- [queueMusic](#queuemusic)
 - [resetLevel](#resetlevel)
 - [sendMessage](#sendmessage)
 - [setOp](#setop)
 - [setSpawnPoint](#setspawnpoint)
 - [startItemCooldown](#startitemcooldown)
+- [stopMusic](#stopmusic)
 
 ### **addExperience**
 `
@@ -153,9 +186,6 @@ Adds/removes experience to/from the Player and returns the current experience of
   Amount of experience to add. Note that this can be negative. Min/max bounds at -2^24 ~ 2^24
 
 #### **Returns** *number* - Returns the current experience of the Player.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -176,9 +206,6 @@ Adds/removes level to/from the Player and returns the current level of the Playe
   Amount to add to the player. Min/max bounds at -2^24 ~ 2^24
 
 #### **Returns** *number* - Returns the current level of the Player.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -227,9 +254,6 @@ getTotalXp(): number
 
 #### **Returns** *number*
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 
@@ -248,17 +272,39 @@ Returns true if this player has operator-level permissions.
 > [!WARNING]
 > This function can throw errors.
 
+### **playMusic**
+`
+playMusic(trackId: string, musicOptions?: MusicOptions): void
+`
+
+Plays a music track that only this particular player can hear.
+
+#### **Parameters**
+- **trackId**: *string*
+  
+  Identifier of the music track to play.
+- **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
+  
+  Additional options for the music track.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **playSound**
 `
-playSound(soundID: string, soundOptions?: PlayerSoundOptions): void
+playSound(soundId: string, soundOptions?: PlayerSoundOptions): void
 `
 
 Plays a sound that only this particular player can hear.
 
 #### **Parameters**
-- **soundID**: *string*
-  
-  Identifier of the sound to play.
+- **soundId**: *string*
 - **soundOptions**?: [*PlayerSoundOptions*](PlayerSoundOptions.md) = `null`
   
   Additional optional options for the sound.
@@ -315,15 +361,42 @@ This is an internal-facing method for posting a system message to downstream cli
 > [!WARNING]
 > This function can throw errors.
 
+### **queueMusic**
+`
+queueMusic(trackId: string, musicOptions?: MusicOptions): void
+`
+
+Queues an additional music track that only this particular player can hear. If a track is not playing, a music track will play.
+
+#### **Parameters**
+- **trackId**: *string*
+  
+  Identifier of the music track to play.
+- **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
+  
+  Additional options for the music track.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,
+
+> [!WARNING]
+> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,
+
+> [!WARNING]
+> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,
+
 ### **resetLevel**
 `
 resetLevel(): void
 `
 
 Resets the level of the player.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -420,6 +493,8 @@ Sets the current starting spawn point for this particular player.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **startItemCooldown**
 `
@@ -435,6 +510,22 @@ Sets the item cooldown time for a particular cooldown category.
 - **tickDuration**: *number*
   
   Duration in ticks of the item cooldown.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **stopMusic**
+`
+stopMusic(): void
+`
+
+Stops any music tracks from playing for this particular player.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

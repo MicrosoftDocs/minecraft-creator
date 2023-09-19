@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:variable_max_auto_step
-ms.prod: gaming
 description: "A reference document detailing the 'variable_max_auto_step' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:variable_max_auto_step

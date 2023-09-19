@@ -24,6 +24,9 @@ When present on an item, this item is consumable by entities. Note that this com
 If true, the player can always eat this item (even when not hungry).
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **nutrition**
 `read-only nutrition: number;`
@@ -31,6 +34,9 @@ Type: *boolean*
 Represents how much nutrition this food item will give an entity when eaten.
 
 Type: *number*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **saturationModifier**
 `read-only saturationModifier: number;`
@@ -38,6 +44,9 @@ Type: *number*
 When an item is eaten, this value is used according to this formula (nutrition * saturation_modifier * 2) to apply a saturation buff.
 
 Type: *number*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **usingConvertsTo**
 `read-only usingConvertsTo: string;`
@@ -45,6 +54,9 @@ Type: *number*
 When specified, converts the active item to the one specified by this property.
 
 Type: *string*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Constants
 

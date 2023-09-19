@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - in_block
-ms.prod: gaming
 description: "A reference document detailing the 'in_block' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - in_block

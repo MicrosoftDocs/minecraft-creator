@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: gamerule Command
 description: Description and usage of the gamerule command
+ms.service: minecraft-bedrock-edition
 ---
 # `/gamerule` Command
 Sets or queries a game rule value. See more in the [Popular Commands documentation](https://learn.microsoft.com/minecraft/creator/documents/commandspopularcommands#gamerule).
@@ -60,6 +60,7 @@ controls whether entities do drops
 - `dofiretick`
 controls whether fire spreads or not
 - `recipesunlock`
+controls whether built-in (vanilla) recipes automatically unlock as the player progresses through the game (one alternative to this is to use the /recipe command based on custom gameplay logic.) 
 - `dolimitedcrafting`
 - `domobloot`
 controls whether mobs drop loot

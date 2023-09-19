@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: hoglin spawn_rule
-ms.prod: gaming
 description: "A code snippet of the hoglin spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # hoglin spawn_rule

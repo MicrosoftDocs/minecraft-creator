@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:permute_type
-ms.prod: gaming
 description: "A reference document detailing the 'permute_type' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - Permute Type

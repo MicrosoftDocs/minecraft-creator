@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: chicken spawn_rule
-ms.prod: gaming
 description: "A code snippet of the chicken spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # chicken spawn_rule

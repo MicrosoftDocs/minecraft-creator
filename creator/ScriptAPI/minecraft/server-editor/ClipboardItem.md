@@ -18,6 +18,9 @@ A ClipboardItem is a handle to an object which represents a set of blocks in a c
 Return whether there is any block content in the item
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Methods
 - [clear](#clear)

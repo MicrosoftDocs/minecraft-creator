@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:entity_spawned
-ms.prod: gaming
 description: "A reference document detailing the 'entity_spawned' entity event"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:entity_spawned

@@ -2,7 +2,7 @@
 author: iconicnurdle
 ms.author: mikeam
 title: Features Documentation - minecraft:tree_feature
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 ---
 
 # Features Documentation - minecraft:tree_feature

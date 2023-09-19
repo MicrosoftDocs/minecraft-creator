@@ -37,9 +37,9 @@ Type: [*Entity*](Entity.md)
 
 ### **getImpactedBlocks**
 `
-getImpactedBlocks(): Vector3[]
+getImpactedBlocks(): Block[]
 `
 
 A collection of blocks impacted by this explosion event.
 
-#### **Returns** [*Vector3*](Vector3.md)[]
+#### **Returns** [*Block*](Block.md)[]

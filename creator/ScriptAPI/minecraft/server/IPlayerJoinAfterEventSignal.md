@@ -22,6 +22,8 @@ Provides an adaptable interface for callers to subscribe to an event that fires 
 subscribe(callback: (arg: PlayerJoinAfterEvent) => void): (arg: PlayerJoinAfterEvent) => void
 `
 
+Subscribes to the event.
+
 #### **Parameters**
 - **callback**: (arg: [*PlayerJoinAfterEvent*](PlayerJoinAfterEvent.md)) => *void*
 
@@ -34,6 +36,8 @@ subscribe(callback: (arg: PlayerJoinAfterEvent) => void): (arg: PlayerJoinAfterE
 `
 unsubscribe(callback: (arg: PlayerJoinAfterEvent) => void): void
 `
+
+Unsubscribes from the event.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerJoinAfterEvent*](PlayerJoinAfterEvent.md)) => *void*
