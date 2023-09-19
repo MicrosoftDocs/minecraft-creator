@@ -78,7 +78,7 @@ This is where we enter the meta data for the item. The required fields are Displ
 
 2. To keep things simple, let's name it **Glass Sword**.
 
-**Identifier**: The identifier of the item will be used internally, like with the `/give` command. The identifier needs to start with a namespace such as your own name or the name of your project or addon packs. All items that Minecraft comes with by default have the namespace `minecraft:`, so you can't use that one. That namespace is reserved for vanilla blocks. 
+**Identifier**: The identifier of the item will be used internally, like with the `/give` command. The identifier needs to start with a namespace such as your own name or the name of your project or addon packs. All items that Minecraft comes with by default have the namespace `minecraft:`, so you can't use that one. That namespace is reserved for vanilla Minecraft entities. 
 
 3. Enter an identifier like this: `myname:glass_sword`.
 
@@ -108,7 +108,7 @@ This is the page for the Sword preset, with some options already selected for yo
 
 8. For the glass sword, set the Damage level all the way up to 20.
 
-**Break Blocks**: Check this box if the item is intended to be used to break specific blocks blocks.
+**Break Blocks**: Check this box if the item is intended to be used to break specific blocks.
 
 **Wearable**: Check this box if the item is intended to be worn by the player.
 
@@ -145,7 +145,7 @@ This is the page for the Sword preset, with some options already selected for yo
 
 **Furnace Fuel**: Check this if you want to be able to burn the item in a furnace like wood or coal.
 
-**Place Entity**: Check this if you want to be able to place the entity on the ground. 
+**Place Entity**: Check this if you want to be able to place an entity on the ground. 
 
 14. **Leave Food**, **Furnace Fuel**, and **Place Entity** unchecked.
 
@@ -153,7 +153,7 @@ This is the page for the Sword preset, with some options already selected for yo
 
 ### Design
 
-On this page, you can select whether to add a Handheld Item Model or an Icon Glint.
+On this page, you have the Handheld Item Model option and the option to add an Icon Glint.
 
 ![Image of the Design page showing the Handheld Item Model and Icon Glint selections.](Media/MinecraftItemWizard/design.png)
 
@@ -241,7 +241,7 @@ To enable your packs for the first time, you need to add the behavior pack to yo
 > [!TIP]
 > You can view a detailed step-by-step walkthrough on how to enable tutorial in the [Behavior Pack](BehaviorPack.md#testing-the-pack) tutorial.
 
-Enter the world and locate the custom block in your creative inventory. Alternatively, if you didn't choose to add your block to a creative inventory tab, you can get it using the `/setblock` and `/give` commands.
+Enter the world and locate the custom item in your creative inventory. Alternatively, if you didn't choose to add your item to a creative inventory tab, you can get it using the `/give` command.
 
 > [!NOTE]
 > Alternatively, if you have exported your addon as a `.mcaddon` file, you can open this file in order to automatically add the packs into Minecraft.
@@ -259,7 +259,7 @@ Try it out! Remember, we made it high damage and low durability.
 ![Image if a Minecraft world with the player holding a glass sword and in front of a sheep.](Media/MinecraftItemWizard/glass_sword_in_hand.png)
 
 >[!Note]
->If you use your sword in a Creative Mode world, the durability won't work as intended.
+>Using items in creative mode does not consume durability, so make sure you are in survival mode to test this.
 
 Try repairing it, too!
 
