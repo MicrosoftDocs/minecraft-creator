@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Converting Texture Packs from Java Edition to Bedrock Edition
-ms.prod: gaming
 description: "Using Chunker to reset the Nether in a survival world"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition
