@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: cooked_fish
-ms.prod: gaming
 description: "A code snippet for the cooked_fish item"
+ms.service: minecraft-bedrock-edition
 ---
 
 # cooked_fish

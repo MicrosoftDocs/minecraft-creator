@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - Component List
-ms.prod: gaming
 description: "A reference document listing all available entity components"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - Component list

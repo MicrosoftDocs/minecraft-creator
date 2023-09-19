@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.EntityRemoveBeforeEventSignal cla
 ---
 # EntityRemoveBeforeEventSignal Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Allows registration for an event that fires when an entity is being removed from  the game (for example, unloaded, or a few seconds after they are dead.)
 
 ## Methods

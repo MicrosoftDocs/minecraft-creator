@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.rise_to_liquid_level
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.rise_to_liquid_level' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.rise_to_liquid_level

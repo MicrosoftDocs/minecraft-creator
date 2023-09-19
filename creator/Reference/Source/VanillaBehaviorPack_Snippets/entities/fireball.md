@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: fireball
-ms.prod: gaming
 description: "A code snippet for the fireball entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # fireball

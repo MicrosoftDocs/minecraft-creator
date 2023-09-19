@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - moon_intensity
-ms.prod: gaming
 description: "A reference document detailing the 'moon_intensity' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - moon_intensity

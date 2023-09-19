@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.EntitySpawnAfterEvent class.
 ---
 # EntitySpawnAfterEvent Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains data related to an entity spawning within the world.
 
 ## Properties

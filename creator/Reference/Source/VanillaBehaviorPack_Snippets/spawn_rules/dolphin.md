@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: dolphin spawn_rule
-ms.prod: gaming
 description: "A code snippet of the dolphin spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # dolphin spawn_rule

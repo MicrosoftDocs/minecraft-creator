@@ -2,8 +2,8 @@
 author: iconicnurdle
 ms.author: mikeam
 title: Features Documentation - minecraft:underwater_cave_carver_feature
-ms.prod: gaming
 description: "A reference document detailing the 'underwater_cave_carver_feature' feature"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Features Documentation - minecraft:underwater_cave_carver_feature

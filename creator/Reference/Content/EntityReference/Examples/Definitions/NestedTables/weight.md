@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:weight
-ms.prod: gaming
 description: "A reference document detailing the 'weight' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:weight

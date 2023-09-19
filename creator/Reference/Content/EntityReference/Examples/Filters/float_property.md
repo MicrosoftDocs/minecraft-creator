@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - float_property
-ms.prod: gaming
 description: "A reference document detailing the 'float_property' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - float_property

@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - minecraft:entity_placer
-ms.prod: gaming
 description: "A reference document detailing the 'entity_placer' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:entity_placer

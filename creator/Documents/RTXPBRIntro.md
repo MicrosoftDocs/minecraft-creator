@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-bbortree
 title: Introduction to Physically Based Rendering
-ms.prod: gaming
 description: "An introduction to Physically Based Rendering (PBR) solutions"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Introduction to Physically Based Rendering

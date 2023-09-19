@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: egg
-ms.prod: gaming
 description: "A code snippet for the egg entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # egg

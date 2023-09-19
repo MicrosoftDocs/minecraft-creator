@@ -2,7 +2,7 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Features Documentation - minecraft:cave_carver_feature
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 ---
 
 # Features Documentation - minecraft:cave_carver_feature

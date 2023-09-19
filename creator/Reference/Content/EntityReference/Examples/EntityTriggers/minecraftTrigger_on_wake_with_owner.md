@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:on_wake_with_owner
-ms.prod: gaming
 description: "A reference document detailing the 'on_wake_with_owner' entity trigger"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:on_wake_with_owner

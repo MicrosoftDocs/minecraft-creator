@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - minecraft:hand_equipped
-ms.prod: gaming
 description: "A reference document detailing the 'hand_equipped' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:hand_equipped

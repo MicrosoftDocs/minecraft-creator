@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: frog
-ms.prod: gaming
 description: "A code snippet for the frog entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # frog

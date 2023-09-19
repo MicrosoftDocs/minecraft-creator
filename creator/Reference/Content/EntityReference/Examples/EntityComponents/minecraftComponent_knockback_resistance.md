@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:knockback_resistance
-ms.prod: gaming
 description: "A reference document detailing the 'knockback_resistance' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:knockback_resistance

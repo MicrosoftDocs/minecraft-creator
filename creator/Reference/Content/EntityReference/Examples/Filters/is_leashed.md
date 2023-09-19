@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - is_leashed
-ms.prod: gaming
 description: "A reference document detailing the 'is_leashed' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - is_leashed

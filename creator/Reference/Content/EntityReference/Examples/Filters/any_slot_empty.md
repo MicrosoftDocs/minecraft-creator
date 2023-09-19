@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - any_slot_empty
-ms.prod: gaming
 description: "A reference document detailing the 'any_slot_empty' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - any_slot_empty

@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - target_distance
-ms.prod: gaming
 description: "A reference document detailing the 'target_distance' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - target_distance

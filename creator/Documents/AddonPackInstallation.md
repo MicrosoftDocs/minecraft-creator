@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: "Installing Add-Ons in Minecraft: Bedrock Edition"
-ms.prod: gaming
 description: "A guide to installing add-ons for your Minecraft world"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Installing Add-Ons in Minecraft: Bedrock Edition

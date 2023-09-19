@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Loot and Trade Table Functions
-ms.prod: gaming
 description: "An article showcasing the available functions for Loot and Trade Tables"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Loot and Trade Table Functions

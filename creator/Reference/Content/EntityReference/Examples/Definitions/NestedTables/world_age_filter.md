@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:world_age_filter
-ms.prod: gaming
 description: "A reference document detailing the 'world_age_filter' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:world_age_filter

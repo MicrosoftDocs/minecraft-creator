@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_climbing
-ms.prod: gaming
 description: "A reference document detailing the 'is_climbing' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - is_climbing

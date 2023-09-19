@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - in_lava
-ms.prod: gaming
 description: "A reference document detailing the 'in_lava' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - in_lava

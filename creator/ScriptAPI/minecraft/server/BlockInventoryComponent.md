@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: minecraft/server.BlockInventoryComponent Class
 description: Contents of the @minecraft/server.BlockInventoryComponent class.
+ms.service: minecraft-bedrock-edition
 ---
 # BlockInventoryComponent Class
 
@@ -16,11 +16,14 @@ Represents the inventory of a block in the world. Used with blocks like chests.
 ## Properties
 
 ### **container**
-`read-only container: Container;`
+`read-only container?: Container;`
 
 The container which holds an [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md).
 
 Type: [*Container*](Container.md)
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Constants
 

@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Creating a Loot Table
-ms.prod: gaming
 description: "A tutorial detailing the process of creating a loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Creating a Loot Table

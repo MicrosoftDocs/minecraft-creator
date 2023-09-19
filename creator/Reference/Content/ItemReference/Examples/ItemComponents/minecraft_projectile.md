@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - minecraft:projectile
-ms.prod: gaming
 description: "A reference document detailing the 'projectile' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:projectile

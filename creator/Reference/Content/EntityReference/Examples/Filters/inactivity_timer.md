@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - inactivity_timer
-ms.prod: gaming
 description: "A reference document detailing the 'inactivity_timer' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - inactivity_timer

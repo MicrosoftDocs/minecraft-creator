@@ -30,12 +30,12 @@ Type: *boolean*
 
 ### **setImpactedBlocks**
 `
-setImpactedBlocks(blocks: Vector3[]): void
+setImpactedBlocks(blocks: Block[]): void
 `
 
 Updates a collection of blocks impacted by this explosion event.
 
 #### **Parameters**
-- **blocks**: [*Vector3*](Vector3.md)[]
+- **blocks**: [*Block*](Block.md)[]
   
   New list of blocks that are impacted by this explosion.

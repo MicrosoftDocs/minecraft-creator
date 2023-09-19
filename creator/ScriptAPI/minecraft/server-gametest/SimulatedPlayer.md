@@ -21,9 +21,14 @@ A simulated player can be used within GameTests to represent how a player moves 
 Rotation of the head across pitch and yaw angles.
 
 Type: [*@minecraft/server.Vector2*](../../minecraft/server/Vector2.md)
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **isSprinting**
 `isSprinting: boolean;`
+
+Returns whether the simulated player is sprinting.
 
 Type: *boolean*
   
@@ -34,6 +39,7 @@ Type: *boolean*
 - [attack](#attack)
 - [attackEntity](#attackentity)
 - [breakBlock](#breakblock)
+- [chat](#chat)
 - [disconnect](#disconnect)
 - [dropSelectedItem](#dropselecteditem)
 - [fly](#fly)
@@ -128,6 +134,20 @@ Destroys the block at blockLocation, respecting the rules of the server player's
 > [!WARNING]
 > This function can throw errors.
 
+### **chat**
+`
+chat(message: string): void
+`
+
+#### **Parameters**
+- **message**: *string*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **disconnect**
 `
 disconnect(): void
@@ -160,6 +180,8 @@ Drops the simulated player's selected item
 `
 fly(): void
 `
+
+Causes the simulated player to start flying as though they were flying in creative mode. For flying with Elytra, see function glide.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -195,7 +217,9 @@ Gives the simulated player a particular item stack.
 glide(): boolean
 `
 
-#### **Returns** *boolean*
+Causes the simulated player to start gliding. Elytra must be equipped and the player must be in the air.
+
+#### **Returns** *boolean* - Returns true if the simulated player begins to glide. Returns false if the player is already gliding, or the player does not have Elytra equipped, is in water or is on the ground.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -581,6 +605,8 @@ Stops destroying the block that is currently being hit.
 stopFlying(): void
 `
 
+Causes the simulated player to stop flying.
+
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
@@ -591,6 +617,8 @@ stopFlying(): void
 `
 stopGliding(): void
 `
+
+Causes the simulated player to stop gliding.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -629,6 +657,8 @@ Stops moving/walking/following if the simulated player is moving.
 stopSwimming(): void
 `
 
+Causes the simulated player to stop swimming.
+
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
@@ -652,6 +682,8 @@ Stops using the currently active item.
 `
 swim(): void
 `
+
+Causes the simulated player to start swimming.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

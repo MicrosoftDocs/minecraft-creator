@@ -21,6 +21,9 @@ Used to differentiate the component group of a variant of an entity from others.
 Current value for variant for this entity, as specified via components.
 
 Type: *number*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Constants
 

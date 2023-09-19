@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Introduction to the Damage Command
-ms.prod: gaming
 description: "An introduction to the damage command and some special use cases for it."
+ms.service: minecraft-bedrock-edition
 ---
 
 # Introduction to the Damage Command

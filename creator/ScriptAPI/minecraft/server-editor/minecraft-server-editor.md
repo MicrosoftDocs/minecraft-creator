@@ -6,10 +6,12 @@ ms.prod: gaming
 title: minecraft/server-editor Module
 description: Contents of the @minecraft/server-editor module
 ---
-# @minecraft/server-editor Module
+# `@minecraft/server-editor` Module
 
 > [!CAUTION]
 > This module is still in pre-release.  It may change or it may be removed in future releases.
+
+## [Changelog](changelog.md)
 
 ## Manifest Details
 ```json
@@ -37,6 +39,7 @@ description: Contents of the @minecraft/server-editor module
 - [MouseActionCategory](MouseActionCategory.md)
 - [MouseActionType](MouseActionType.md)
 - [MouseInputType](MouseInputType.md)
+- [PlaytestSessionResult](PlaytestSessionResult.md)
 
 # Type Aliases
 - [Action](Action.md)
@@ -46,6 +49,7 @@ description: Contents of the @minecraft/server-editor module
 - [EventHandler](EventHandler.md)
 - [IActionPropertyItem](IActionPropertyItem.md)
 - [IPlayerUISession](IPlayerUISession.md)
+- [IVector3PropertyItem](IVector3PropertyItem.md)
 - [ModalToolLifecycleEventPayload](ModalToolLifecycleEventPayload.md)
 - [MouseModifiers](MouseModifiers.md)
 - [MouseProps](MouseProps.md)
@@ -70,6 +74,7 @@ description: Contents of the @minecraft/server-editor module
 - [ExtensionContext](ExtensionContext.md)
 - [Logger](Logger.md)
 - [MinecraftEditor](MinecraftEditor.md)
+- [PlaytestManager](PlaytestManager.md)
 - [Selection](Selection.md)
 - [SelectionManager](SelectionManager.md)
 - [TransactionManager](TransactionManager.md)
@@ -79,6 +84,7 @@ description: Contents of the @minecraft/server-editor module
 - [CursorProperties](CursorProperties.md)
 - [ExtensionOptionalParameters](ExtensionOptionalParameters.md)
 - [LogProperties](LogProperties.md)
+- [PlaytestGameOptions](PlaytestGameOptions.md)
 - [ActionManager](ActionManager.md)
 - [BuiltInUIManager](BuiltInUIManager.md)
 - [EventSink](EventSink.md)
@@ -174,7 +180,3 @@ Registers an editor extension into Minecraft. This function calls underlying fun
 `static read-only editor: MinecraftEditor;`
 
 Type: [*MinecraftEditor*](MinecraftEditor.md)
-
-## Change Log
-## 0.1.0-beta
-#### Added `@minecraft/server-editor` Module

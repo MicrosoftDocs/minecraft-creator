@@ -34,6 +34,9 @@ Type: *number*
 Represents the amount of damage that this item can take before breaking.
 
 Type: *number*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Methods
 - [getDamageChance](#getdamagechance)

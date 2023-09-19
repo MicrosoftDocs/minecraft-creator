@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - Filters
-ms.prod: gaming
 description: "A reference document detailing filter functionality"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - Filters

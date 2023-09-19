@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_riding
-ms.prod: gaming
 description: "A reference document detailing the 'is_riding' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - is_riding

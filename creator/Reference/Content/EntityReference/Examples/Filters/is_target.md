@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_target
-ms.prod: gaming
 description: "A reference document detailing the 'is_target' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - is_target

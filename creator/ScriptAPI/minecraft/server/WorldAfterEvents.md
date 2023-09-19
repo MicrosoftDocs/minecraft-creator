@@ -110,9 +110,6 @@ Fires when an entity is loaded.
 
 Type: [*EntityLoadAfterEventSignal*](EntityLoadAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **entityRemove**
 `read-only entityRemove: EntityRemoveAfterEventSignal;`
 
@@ -267,15 +264,28 @@ This event fires for a block that is broken by a player.
 
 Type: [*PlayerBreakBlockAfterEventSignal*](PlayerBreakBlockAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **playerDimensionChange**
 `read-only playerDimensionChange: PlayerDimensionChangeAfterEventSignal;`
 
 Fires when a player moved to a different dimension.
 
 Type: [*PlayerDimensionChangeAfterEventSignal*](PlayerDimensionChangeAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **playerInteractWithBlock**
+`read-only playerInteractWithBlock: PlayerInteractWithBlockAfterEventSignal;`
+
+Type: [*PlayerInteractWithBlockAfterEventSignal*](PlayerInteractWithBlockAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **playerInteractWithEntity**
+`read-only playerInteractWithEntity: PlayerInteractWithEntityAfterEventSignal;`
+
+Type: [*PlayerInteractWithEntityAfterEventSignal*](PlayerInteractWithEntityAfterEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -300,9 +310,6 @@ Type: [*PlayerLeaveAfterEventSignal*](PlayerLeaveAfterEventSignal.md)
 This event fires for a block that is placed by a player.
 
 Type: [*PlayerPlaceBlockAfterEventSignal*](PlayerPlaceBlockAfterEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **playerSpawn**
 `read-only playerSpawn: PlayerSpawnAfterEventSignal;`

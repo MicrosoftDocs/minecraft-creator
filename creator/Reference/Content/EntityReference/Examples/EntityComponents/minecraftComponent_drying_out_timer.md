@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:drying_out_timer
-ms.prod: gaming
 description: "A reference document detailing the 'drying_out_timer' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:drying_out_timer

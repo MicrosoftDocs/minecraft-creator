@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_baby
-ms.prod: gaming
 description: "A reference document detailing the 'is_baby' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - is_baby

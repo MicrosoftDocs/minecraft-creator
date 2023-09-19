@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.wither_target_highest_damage
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.wither_target_highest_damage' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.wither_target_highest_damage

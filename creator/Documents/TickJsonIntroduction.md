@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Introduction to tick.json
-ms.prod: gaming
 description: "A tutorial that introduces creators to the process of using 'tick.json' to repeatedly execute functions"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Introduction to tick.json

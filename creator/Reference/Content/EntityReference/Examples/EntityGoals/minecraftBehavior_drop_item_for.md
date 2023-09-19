@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.drop_item_for
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.drop_item_for' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.drop_item_for

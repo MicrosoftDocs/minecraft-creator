@@ -39,3 +39,8 @@ Type: *string*
 Indicates that the tagged test should be a part of a suite of disabled tests.
 
 Type: *string*
+
+### **suiteNextUpdate**
+`static read-only suiteNextUpdate = "suite:nextupdate";`
+
+Type: *string*

@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Fog Documentation - Introduction to Fogs
-ms.prod: gaming
 description: "A reference document introducing the concept of fogs"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Fog Documentation - Introduction to Fogs

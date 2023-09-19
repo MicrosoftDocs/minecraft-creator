@@ -38,9 +38,6 @@ Method that sets the body text for the modal form.
 
 #### **Returns** [*ActionFormData*](ActionFormData.md)
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **button**
 `
 button(text: minecraftserver.RawMessage | string, iconPath?: string): ActionFormData
@@ -53,9 +50,6 @@ Adds a button to this form with an icon from a resource pack.
 - **iconPath**?: *string* = `null`
 
 #### **Returns** [*ActionFormData*](ActionFormData.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 ### **show**
 `
@@ -88,9 +82,6 @@ This builder method sets the title for the modal dialog.
 - **titleText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
 #### **Returns** [*ActionFormData*](ActionFormData.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 #### Examples
 ##### ***showActionForm.ts***

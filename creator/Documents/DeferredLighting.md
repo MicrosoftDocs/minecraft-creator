@@ -2,9 +2,9 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Getting Started with Deferred Lighting
-ms.prod: gaming
 ms.topic: tutorial
-description: "An Introduction to Deferred Lighting in Minecraft: Bedrock Edition"
+description: "An Introduction to Deferred Lighting in Minecraft: Bedrock Edition."
+ms.service: minecraft-bedrock-edition
 ---
 
 # Getting Started with Deferred Lighting

@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: Item Enum
 description: Description and values of the Item enum
+ms.service: minecraft-bedrock-edition
 ---
 # `Item` Enum
 One of the [Minecraft Items available on this page](/creator/reference/content/itemreference/examples/itemcomponentlist).

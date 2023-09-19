@@ -2,8 +2,8 @@
 author: iconicnurdle
 ms.author: mikeam
 title: Features Documentation - Feature List
-ms.prod: gaming
 description: "A reference document listing all available features for use in JSON files"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Features Documentation - Feature List

@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.slime_keep_on_jumping
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.slime_keep_on_jumping' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.slime_keep_on_jumping

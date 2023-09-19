@@ -2,16 +2,20 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: help Command
 description: Description and usage of the help command
+ms.service: minecraft-bedrock-edition
 ---
 # `/help` Command
 Running `/help` in the chat by itself will list every command you can run. However, since there are so many, they have been divided up into several pages, where you are shown only one page at a time. Supplying a page number will change which page of commands to show.
 
+
+
 Whenever you want to know the usage and all of the syntaxes of a command, you can use /help followed by the name of the command. This can be helpful if you want an overview of the command.
 
-See more in the [Popular Commands documentation](../../Documents/CommandsPopularCommands.md#help).
+
+
+See more in the [Popular Commands documentation](https://learn.microsoft.com/minecraft/creator/documents/commandspopularcommands#help).
 
 <table>
   <tr>
@@ -55,6 +59,7 @@ Command name enumeration
 Manages tags stored in entities.
 - `camera`
 Experimental camera command.
+- `transfer`
 - `clear`
 Clears items from player inventory.
 - `time`

@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Features Documentation - minecraft:structure_template_feature
-ms.prod: gaming
 description: "A reference document detailing the 'structure_template_feature' feature"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Features Documentation - minecraft:structure_template_feature

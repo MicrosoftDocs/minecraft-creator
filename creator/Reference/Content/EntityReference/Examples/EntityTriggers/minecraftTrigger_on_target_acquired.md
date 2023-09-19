@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:on_target_acquired
-ms.prod: gaming
 description: "A reference document detailing the 'on_target_acquired' entity trigger"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:on_target_acquired

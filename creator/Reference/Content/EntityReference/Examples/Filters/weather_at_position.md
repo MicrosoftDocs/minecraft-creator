@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - weather_at_position
-ms.prod: gaming
 description: "A reference document detailing the 'weather_at_position' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - weather_at_position

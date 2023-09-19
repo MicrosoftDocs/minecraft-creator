@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:raid_trigger
-ms.prod: gaming
 description: "A reference document detailing the 'raid_trigger' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:raid_trigger

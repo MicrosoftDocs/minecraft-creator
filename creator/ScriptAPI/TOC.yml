@@ -4,6 +4,8 @@
       items:
       - name: minecraft/server-admin
         href: minecraft/server-admin/minecraft-server-admin.md
+      - name: minecraft/server-admin Changelog
+        href: minecraft/server-admin/changelog.md
       - name: SecretString
         href: minecraft/server-admin/SecretString.md
       - name: ServerSecrets
@@ -14,6 +16,8 @@
       items:
       - name: minecraft/server-gametest
         href: minecraft/server-gametest/minecraft-server-gametest.md
+      - name: minecraft/server-gametest Changelog
+        href: minecraft/server-gametest/changelog.md
       - name: GameTestErrorType
         href: minecraft/server-gametest/GameTestErrorType.md
       - name: FenceConnectivity
@@ -36,6 +40,8 @@
       items:
       - name: minecraft/server-net
         href: minecraft/server-net/minecraft-server-net.md
+      - name: minecraft/server-net Changelog
+        href: minecraft/server-net/changelog.md
       - name: HttpRequestMethod
         href: minecraft/server-net/HttpRequestMethod.md
       - name: HttpClient
@@ -50,6 +56,8 @@
       items:
       - name: minecraft/server-ui
         href: minecraft/server-ui/minecraft-server-ui.md
+      - name: minecraft/server-ui Changelog
+        href: minecraft/server-ui/changelog.md
       - name: FormCancelationReason
         href: minecraft/server-ui/FormCancelationReason.md
       - name: FormRejectReason
@@ -72,12 +80,16 @@
       items:
       - name: minecraft/server
         href: minecraft/server/minecraft-server.md
+      - name: minecraft/server Changelog
+        href: minecraft/server/changelog.md
       - name: BlockVolumeIntersection
         href: minecraft/server/BlockVolumeIntersection.md
       - name: CompoundBlockVolumeAction
         href: minecraft/server/CompoundBlockVolumeAction.md
       - name: CompoundBlockVolumePositionRelativity
         href: minecraft/server/CompoundBlockVolumePositionRelativity.md
+      - name: Difficulty
+        href: minecraft/server/Difficulty.md
       - name: Direction
         href: minecraft/server/Direction.md
       - name: DisplaySlotId
@@ -88,6 +100,8 @@
         href: minecraft/server/EasingType.md
       - name: EntityDamageCause
         href: minecraft/server/EntityDamageCause.md
+      - name: EntityInitializationCause
+        href: minecraft/server/EntityInitializationCause.md
       - name: EntityLifetimeState
         href: minecraft/server/EntityLifetimeState.md
       - name: EquipmentSlot
@@ -118,10 +132,6 @@
         href: minecraft/server/Block.md
       - name: BlockAreaSize
         href: minecraft/server/BlockAreaSize.md
-      - name: BlockBreakAfterEvent
-        href: minecraft/server/BlockBreakAfterEvent.md
-      - name: BlockBreakAfterEventSignal
-        href: minecraft/server/BlockBreakAfterEventSignal.md
       - name: BlockComponent
         href: minecraft/server/BlockComponent.md
       - name: BlockEvent
@@ -142,10 +152,6 @@
         href: minecraft/server/BlockPermutation.md
       - name: BlockPistonComponent
         href: minecraft/server/BlockPistonComponent.md
-      - name: BlockPlaceAfterEvent
-        href: minecraft/server/BlockPlaceAfterEvent.md
-      - name: BlockPlaceAfterEventSignal
-        href: minecraft/server/BlockPlaceAfterEventSignal.md
       - name: BlockPotionContainerComponent
         href: minecraft/server/BlockPotionContainerComponent.md
       - name: BlockRecordPlayerComponent
@@ -208,8 +214,6 @@
         href: minecraft/server/DimensionType.md
       - name: DimensionTypes
         href: minecraft/server/DimensionTypes.md
-      - name: DynamicPropertiesDefinition
-        href: minecraft/server/DynamicPropertiesDefinition.md
       - name: Effect
         href: minecraft/server/Effect.md
       - name: EffectAddAfterEvent
@@ -326,6 +330,10 @@
         href: minecraft/server/EntityLavaMovementComponent.md
       - name: EntityLeashableComponent
         href: minecraft/server/EntityLeashableComponent.md
+      - name: EntityLoadAfterEvent
+        href: minecraft/server/EntityLoadAfterEvent.md
+      - name: EntityLoadAfterEventSignal
+        href: minecraft/server/EntityLoadAfterEventSignal.md
       - name: EntityMarkVariantComponent
         href: minecraft/server/EntityMarkVariantComponent.md
       - name: EntityMountTamingComponent
@@ -516,6 +524,38 @@
         href: minecraft/server/PistonActivateBeforeEventSignal.md
       - name: Player
         href: minecraft/server/Player.md
+      - name: PlayerBreakBlockAfterEvent
+        href: minecraft/server/PlayerBreakBlockAfterEvent.md
+      - name: PlayerBreakBlockAfterEventSignal
+        href: minecraft/server/PlayerBreakBlockAfterEventSignal.md
+      - name: PlayerBreakBlockBeforeEvent
+        href: minecraft/server/PlayerBreakBlockBeforeEvent.md
+      - name: PlayerBreakBlockBeforeEventSignal
+        href: minecraft/server/PlayerBreakBlockBeforeEventSignal.md
+      - name: PlayerDimensionChangeAfterEvent
+        href: minecraft/server/PlayerDimensionChangeAfterEvent.md
+      - name: PlayerDimensionChangeAfterEventSignal
+        href: minecraft/server/PlayerDimensionChangeAfterEventSignal.md
+      - name: PlayerDimensionChangeBeforeEvent
+        href: minecraft/server/PlayerDimensionChangeBeforeEvent.md
+      - name: PlayerDimensionChangeBeforeEventSignal
+        href: minecraft/server/PlayerDimensionChangeBeforeEventSignal.md
+      - name: PlayerInteractWithBlockAfterEvent
+        href: minecraft/server/PlayerInteractWithBlockAfterEvent.md
+      - name: PlayerInteractWithBlockAfterEventSignal
+        href: minecraft/server/PlayerInteractWithBlockAfterEventSignal.md
+      - name: PlayerInteractWithBlockBeforeEvent
+        href: minecraft/server/PlayerInteractWithBlockBeforeEvent.md
+      - name: PlayerInteractWithBlockBeforeEventSignal
+        href: minecraft/server/PlayerInteractWithBlockBeforeEventSignal.md
+      - name: PlayerInteractWithEntityAfterEvent
+        href: minecraft/server/PlayerInteractWithEntityAfterEvent.md
+      - name: PlayerInteractWithEntityAfterEventSignal
+        href: minecraft/server/PlayerInteractWithEntityAfterEventSignal.md
+      - name: PlayerInteractWithEntityBeforeEvent
+        href: minecraft/server/PlayerInteractWithEntityBeforeEvent.md
+      - name: PlayerInteractWithEntityBeforeEventSignal
+        href: minecraft/server/PlayerInteractWithEntityBeforeEventSignal.md
       - name: PlayerIterator
         href: minecraft/server/PlayerIterator.md
       - name: PlayerJoinAfterEvent
@@ -526,6 +566,14 @@
         href: minecraft/server/PlayerLeaveAfterEvent.md
       - name: PlayerLeaveAfterEventSignal
         href: minecraft/server/PlayerLeaveAfterEventSignal.md
+      - name: PlayerPlaceBlockAfterEvent
+        href: minecraft/server/PlayerPlaceBlockAfterEvent.md
+      - name: PlayerPlaceBlockAfterEventSignal
+        href: minecraft/server/PlayerPlaceBlockAfterEventSignal.md
+      - name: PlayerPlaceBlockBeforeEvent
+        href: minecraft/server/PlayerPlaceBlockBeforeEvent.md
+      - name: PlayerPlaceBlockBeforeEventSignal
+        href: minecraft/server/PlayerPlaceBlockBeforeEventSignal.md
       - name: PlayerSpawnAfterEvent
         href: minecraft/server/PlayerSpawnAfterEvent.md
       - name: PlayerSpawnAfterEventSignal
@@ -546,8 +594,6 @@
         href: minecraft/server/ProjectileHitEntityAfterEvent.md
       - name: ProjectileHitEntityAfterEventSignal
         href: minecraft/server/ProjectileHitEntityAfterEventSignal.md
-      - name: PropertyRegistry
-        href: minecraft/server/PropertyRegistry.md
       - name: Scoreboard
         href: minecraft/server/Scoreboard.md
       - name: ScoreboardIdentity
@@ -602,6 +648,8 @@
         href: minecraft/server/WorldInitializeAfterEvent.md
       - name: WorldInitializeAfterEventSignal
         href: minecraft/server/WorldInitializeAfterEventSignal.md
+      - name: BlockEventOptions
+        href: minecraft/server/BlockEventOptions.md
       - name: BlockFillOptions
         href: minecraft/server/BlockFillOptions.md
       - name: BlockHitInformation
@@ -614,12 +662,22 @@
         href: minecraft/server/BlockVolume.md
       - name: BoundingBox
         href: minecraft/server/BoundingBox.md
+      - name: CameraDefaultOptions
+        href: minecraft/server/CameraDefaultOptions.md
       - name: CameraEaseOptions
         href: minecraft/server/CameraEaseOptions.md
       - name: CameraFadeOptions
         href: minecraft/server/CameraFadeOptions.md
       - name: CameraFadeTimeOptions
         href: minecraft/server/CameraFadeTimeOptions.md
+      - name: CameraSetFacingOptions
+        href: minecraft/server/CameraSetFacingOptions.md
+      - name: CameraSetLocationOptions
+        href: minecraft/server/CameraSetLocationOptions.md
+      - name: CameraSetPosOptions
+        href: minecraft/server/CameraSetPosOptions.md
+      - name: CameraSetRotOptions
+        href: minecraft/server/CameraSetRotOptions.md
       - name: CompoundBlockVolumeItem
         href: minecraft/server/CompoundBlockVolumeItem.md
       - name: DimensionLocation
@@ -668,16 +726,6 @@
         href: minecraft/server/RGBA.md
       - name: ScoreboardObjectiveDisplayOptions
         href: minecraft/server/ScoreboardObjectiveDisplayOptions.md
-      - name: ScriptCameraDefaultOptions
-        href: minecraft/server/ScriptCameraDefaultOptions.md
-      - name: ScriptCameraSetFacingOptions
-        href: minecraft/server/ScriptCameraSetFacingOptions.md
-      - name: ScriptCameraSetLocationOptions
-        href: minecraft/server/ScriptCameraSetLocationOptions.md
-      - name: ScriptCameraSetPosOptions
-        href: minecraft/server/ScriptCameraSetPosOptions.md
-      - name: ScriptCameraSetRotOptions
-        href: minecraft/server/ScriptCameraSetRotOptions.md
       - name: ScriptEventMessageFilterOptions
         href: minecraft/server/ScriptEventMessageFilterOptions.md
       - name: TeleportOptions
@@ -694,6 +742,8 @@
       items:
       - name: minecraft/server-editor
         href: minecraft/server-editor/minecraft-server-editor.md
+      - name: minecraft/server-editor Changelog
+        href: minecraft/server-editor/changelog.md
       - name: ActionTypes
         href: minecraft/server-editor/ActionTypes.md
       - name: ClipboardMirrorAxis
@@ -722,6 +772,8 @@
         href: minecraft/server-editor/MouseActionType.md
       - name: MouseInputType
         href: minecraft/server-editor/MouseInputType.md
+      - name: PlaytestSessionResult
+        href: minecraft/server-editor/PlaytestSessionResult.md
       - name: BedrockEventSubscriptionCache
         href: minecraft/server-editor/BedrockEventSubscriptionCache.md
       - name: ClipboardItem
@@ -738,6 +790,8 @@
         href: minecraft/server-editor/Logger.md
       - name: MinecraftEditor
         href: minecraft/server-editor/MinecraftEditor.md
+      - name: PlaytestManager
+        href: minecraft/server-editor/PlaytestManager.md
       - name: Selection
         href: minecraft/server-editor/Selection.md
       - name: SelectionManager
@@ -752,6 +806,8 @@
         href: minecraft/server-editor/ExtensionOptionalParameters.md
       - name: LogProperties
         href: minecraft/server-editor/LogProperties.md
+      - name: PlaytestGameOptions
+        href: minecraft/server-editor/PlaytestGameOptions.md
       - name: ActionManager
         href: minecraft/server-editor/ActionManager.md
       - name: BuiltInUIManager

@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.PlayerBreakBlockBeforeEventSignal
 ---
 # PlayerBreakBlockBeforeEventSignal Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Manages callbacks that are connected to before a player breaks a block.
 
 ## Methods

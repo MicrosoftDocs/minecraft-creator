@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Introduction to Scoreboards
-ms.prod: gaming
 description: "A guide about scoreboards and different ways to use them"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Introduction to Scoreboards

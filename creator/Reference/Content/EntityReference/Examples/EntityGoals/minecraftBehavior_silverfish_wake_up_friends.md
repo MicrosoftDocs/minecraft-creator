@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.silverfish_wake_up_friends
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.silverfish_wake_up_friends' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.silverfish_wake_up_friends

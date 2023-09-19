@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - hourly_clock_time
-ms.prod: gaming
 description: "A reference document detailing the 'hourly_clock_time' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - hourly_clock_time

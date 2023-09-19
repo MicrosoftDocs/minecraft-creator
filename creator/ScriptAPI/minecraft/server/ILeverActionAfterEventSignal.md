@@ -22,6 +22,8 @@ Provides an adaptable interface for callers to subscribe to an event that fires 
 subscribe(callback: (arg: LeverActionAfterEvent) => void): (arg: LeverActionAfterEvent) => void
 `
 
+Subscribes to the event.
+
 #### **Parameters**
 - **callback**: (arg: [*LeverActionAfterEvent*](LeverActionAfterEvent.md)) => *void*
 
@@ -34,6 +36,8 @@ subscribe(callback: (arg: LeverActionAfterEvent) => void): (arg: LeverActionAfte
 `
 unsubscribe(callback: (arg: LeverActionAfterEvent) => void): void
 `
+
+Unsubscribes from the event.
 
 #### **Parameters**
 - **callback**: (arg: [*LeverActionAfterEvent*](LeverActionAfterEvent.md)) => *void*

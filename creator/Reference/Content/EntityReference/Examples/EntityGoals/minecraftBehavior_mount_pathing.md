@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.mount_pathing
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.mount_pathing' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.mount_pathing

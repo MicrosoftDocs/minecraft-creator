@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: honey_bottle
-ms.prod: gaming
 description: "A code snippet for the honey_bottle item"
+ms.service: minecraft-bedrock-edition
 ---
 
 # honey_bottle

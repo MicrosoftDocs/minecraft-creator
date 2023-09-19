@@ -22,6 +22,8 @@ Provides an adaptable interface for callers to subscribe to an event that fires 
 subscribe(callback: (arg: PlayerSpawnAfterEvent) => void): (arg: PlayerSpawnAfterEvent) => void
 `
 
+Subscribes to the event.
+
 #### **Parameters**
 - **callback**: (arg: [*PlayerSpawnAfterEvent*](PlayerSpawnAfterEvent.md)) => *void*
 
@@ -34,6 +36,8 @@ subscribe(callback: (arg: PlayerSpawnAfterEvent) => void): (arg: PlayerSpawnAfte
 `
 unsubscribe(callback: (arg: PlayerSpawnAfterEvent) => void): void
 `
+
+Unsubscribes from the event.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerSpawnAfterEvent*](PlayerSpawnAfterEvent.md)) => *void*

@@ -20,6 +20,9 @@ It's important to note that a Selection is only a representation of the volume s
 Returns a boolean representing whether or not there are any volumes pushed to the selection stack
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **visible**
 `visible: boolean;`

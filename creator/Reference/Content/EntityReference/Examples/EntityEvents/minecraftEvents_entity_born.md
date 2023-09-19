@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:entity_born
-ms.prod: gaming
 description: "A reference document detailing the 'entity_born' entity event"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:entity_born

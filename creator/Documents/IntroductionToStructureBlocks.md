@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Introduction to Structure Blocks
-ms.prod: gaming
 description: "An overview covering what Structure Blocks are and how they are used in Minecraft: Bedrock Edition"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Introduction to Structure Blocks

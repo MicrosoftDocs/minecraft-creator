@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Fog in Resource Packs
-ms.prod: gaming
 description: "A guide detailing the way in which fogs are established in resource packs"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Fog in Resource Packs

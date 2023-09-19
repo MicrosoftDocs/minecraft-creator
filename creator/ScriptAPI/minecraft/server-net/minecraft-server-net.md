@@ -6,12 +6,14 @@ ms.prod: gaming
 title: minecraft/server-net Module
 description: Contents of the @minecraft/server-net module
 ---
-# @minecraft/server-net Module
+# `@minecraft/server-net` Module
 
 The `@minecraft/server-net` module contains types for executing HTTP-based requests. This module can only be used on Bedrock Dedicated Server.
 
 > [!CAUTION]
 > This module is still in pre-release.  It may change or it may be removed in future releases.
+
+## [Changelog](changelog.md)
 
 ## Manifest Details
 ```json
@@ -39,7 +41,3 @@ The `@minecraft/server-net` module contains types for executing HTTP-based reque
 `static read-only http: HttpClient;`
 
 Type: [*HttpClient*](HttpClient.md)
-
-## Change Log
-## 1.0.0-beta
-#### Added `@minecraft/server-net` Module

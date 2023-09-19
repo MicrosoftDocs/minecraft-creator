@@ -22,6 +22,8 @@ Provides an adaptable interface for callers to subscribe to an event that fires 
 subscribe(callback: (arg: ButtonPushAfterEvent) => void): (arg: ButtonPushAfterEvent) => void
 `
 
+Subscribes to the event.
+
 #### **Parameters**
 - **callback**: (arg: [*ButtonPushAfterEvent*](ButtonPushAfterEvent.md)) => *void*
 
@@ -34,6 +36,8 @@ subscribe(callback: (arg: ButtonPushAfterEvent) => void): (arg: ButtonPushAfterE
 `
 unsubscribe(callback: (arg: ButtonPushAfterEvent) => void): void
 `
+
+Unsubscribes from the event.
 
 #### **Parameters**
 - **callback**: (arg: [*ButtonPushAfterEvent*](ButtonPushAfterEvent.md)) => *void*

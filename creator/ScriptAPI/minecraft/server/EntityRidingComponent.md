@@ -24,6 +24,9 @@ This component is added to any entity when it is riding another entity.
 The entity this entity is currently riding on.
 
 Type: [*Entity*](Entity.md)
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Constants
 

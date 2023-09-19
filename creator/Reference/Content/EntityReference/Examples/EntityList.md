@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - EntityList
-ms.prod: gaming
 description: "A reference document listing all available entities located in the Vanilla Behavior Pack"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - Entity List

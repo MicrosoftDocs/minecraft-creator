@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - random_chance
-ms.prod: gaming
 description: "A reference document detailing the 'random_chance' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - random_chance

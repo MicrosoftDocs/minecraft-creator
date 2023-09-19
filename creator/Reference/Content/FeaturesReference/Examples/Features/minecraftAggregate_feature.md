@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Features Documentation - minecraft:aggregate_feature
-ms.prod: gaming
 description: "A reference document detailing the 'aggregate_feature' feature"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Features Documentation - minecraft:aggregate_feature

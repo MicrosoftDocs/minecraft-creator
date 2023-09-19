@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: Difficulty Enum
 description: Description and values of the Difficulty enum
+ms.service: minecraft-bedrock-edition
 ---
 # `Difficulty` Enum
 The game difficulty.

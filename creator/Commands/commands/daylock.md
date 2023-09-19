@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: daylock Command
 description: Description and usage of the daylock command
+ms.service: minecraft-bedrock-edition
 ---
 # `/daylock` Command
 Locks and unlocks the day-night cycle.

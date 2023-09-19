@@ -24,6 +24,9 @@ Type: [*FilterGroup*](FilterGroup.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **forceUse**
 `read-only forceUse: boolean;`
@@ -31,6 +34,9 @@ Type: [*FilterGroup*](FilterGroup.md)
 Determines if an item can be used regardless of the entity being at full health.
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Methods
 - [getFeedItems](#getfeeditems)

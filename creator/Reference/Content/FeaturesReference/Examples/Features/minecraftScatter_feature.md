@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Features Documentation - minecraft:scatter_feature
-ms.prod: gaming
 description: "A reference document detailing the 'scatter_feature' feature"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Features Documentation - minecraft:scatter_feature

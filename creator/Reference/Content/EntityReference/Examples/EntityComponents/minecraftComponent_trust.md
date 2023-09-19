@@ -2,8 +2,8 @@
 author: iconicNUrdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:trust
-ms.prod: gaming
 description: "A reference document detailing the 'trust' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:trust

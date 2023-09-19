@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: enderman spawn_rule
-ms.prod: gaming
 description: "A code snippet of the enderman spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # enderman spawn_rule

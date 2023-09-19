@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.ram_attack
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.ram_attack' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.ram_attack

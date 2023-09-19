@@ -21,6 +21,9 @@ Represents the state of an entity (a mob, the player, or other moving objects li
 Dimension that the entity is currently within.
 
 Type: [*Dimension*](Dimension.md)
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **fallDistance**
 `read-only fallDistance: number;`
@@ -31,6 +34,9 @@ Type: *number*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **id**
 `read-only id: string;`
@@ -48,6 +54,9 @@ Type: *boolean*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **isFalling**
 `read-only isFalling: boolean;`
@@ -58,6 +67,9 @@ Type: *boolean*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **isInWater**
 `read-only isInWater: boolean;`
@@ -68,6 +80,9 @@ Type: *boolean*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **isOnGround**
 `read-only isOnGround: boolean;`
@@ -78,6 +93,9 @@ Type: *boolean*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **isSleeping**
 `read-only isSleeping: boolean;`
@@ -88,6 +106,9 @@ Type: *boolean*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **isSneaking**
 `isSneaking: boolean;`
@@ -111,6 +132,9 @@ Type: *boolean*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **isSwimming**
 `read-only isSwimming: boolean;`
@@ -121,6 +145,9 @@ Type: *boolean*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **lifetimeState**
 `read-only lifetimeState: EntityLifetimeState;`
@@ -138,6 +165,9 @@ Type: [*EntityLifetimeState*](EntityLifetimeState.md)
 Current location of the entity.
 
 Type: [*Vector3*](Vector3.md)
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **nameTag**
 `nameTag: string;`
@@ -167,6 +197,9 @@ Type: [*Entity*](Entity.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **typeId**
 `read-only typeId: string;`
@@ -181,12 +214,15 @@ Type: *string*
 - [applyDamage](#applydamage)
 - [applyImpulse](#applyimpulse)
 - [applyKnockback](#applyknockback)
+- [clearDynamicProperties](#cleardynamicproperties)
 - [clearVelocity](#clearvelocity)
 - [extinguishFire](#extinguishfire)
 - [getBlockFromViewDirection](#getblockfromviewdirection)
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
 - [getDynamicProperty](#getdynamicproperty)
+- [getDynamicPropertyIds](#getdynamicpropertyids)
+- [getDynamicPropertyTotalByteCount](#getdynamicpropertytotalbytecount)
 - [getEffect](#geteffect)
 - [getEffects](#geteffects)
 - [getEntitiesFromViewDirection](#getentitiesfromviewdirection)
@@ -202,7 +238,6 @@ Type: *string*
 - [kill](#kill)
 - [playAnimation](#playanimation)
 - [remove](#remove)
-- [removeDynamicProperty](#removedynamicproperty)
 - [removeEffect](#removeeffect)
 - [removeTag](#removetag)
 - [resetProperty](#resetproperty)
@@ -431,6 +466,19 @@ Applies impulse vector to the current velocity of the entity.
   }
 ```
 
+### **clearDynamicProperties**
+`
+clearDynamicProperties(): void
+`
+
+Clears all dynamic properties that have been set on this entity.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **clearVelocity**
 `
 clearVelocity(): void
@@ -567,6 +615,36 @@ Returns a property value.
 > [!WARNING]
 > This function can throw errors.
 
+### **getDynamicPropertyIds**
+`
+getDynamicPropertyIds(): string[]
+`
+
+Returns the available sett of dynamic property identifiers that have been used on this entity.
+
+#### **Returns** *string*[] - A string array of set dynamic properties used on this entity.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getDynamicPropertyTotalByteCount**
+`
+getDynamicPropertyTotalByteCount(): number
+`
+
+Returns the total size, in bytes, of all the dynamic properties that are currently stored for this entity.  This can be useful for diagnosing performance warning signs - if, for example, an entity has many megabytes of associated dynamic properties, it may be slow to load on various devices.
+
+#### **Returns** *number*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **getEffect**
 `
 getEffect(effectType: EffectType | string): Effect | undefined
@@ -638,9 +716,6 @@ Gets an entity Property value. If the property was set using the setProperty fun
   The entity Property identifier.
 
 #### **Returns** *boolean* | *number* | *string* | *undefined* - Returns the current property value. For enum properties, a string is returned. For float and int properties, a number is returned. For undefined properties, undefined is returned.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > Throws if the entity is invalid.
@@ -824,26 +899,6 @@ Immediately removes the entity from the world. The removed entity will not perfo
 > [!WARNING]
 > This function can throw errors.
 
-### **removeDynamicProperty**
-`
-removeDynamicProperty(identifier: string): boolean
-`
-
-Removes a specified property.
-
-#### **Parameters**
-- **identifier**: *string*
-  
-  The property identifier.
-
-#### **Returns** *boolean* - Returns whether the given property existed on the entity.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
 ### **removeEffect**
 `
 removeEffect(effectType: EffectType | string): boolean
@@ -898,9 +953,6 @@ Resets an Entity Property back to its default value, as specified in the Entity'
 
 #### **Returns** *boolean* | *number* | *string* - Returns the default property value. For enum properties, a string is returned. For float and int properties, a number is returned. For undefined properties, undefined is returned.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
@@ -926,6 +978,8 @@ Runs a synchronous command on the entity.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*CommandError*](CommandError.md), *Error*
 
 ### **runCommandAsync**
 `
@@ -946,7 +1000,7 @@ Runs a particular command asynchronously from the context of this entity. Note t
 
 ### **setDynamicProperty**
 `
-setDynamicProperty(identifier: string, value: boolean | number | string | Vector3): void
+setDynamicProperty(identifier: string, value?: boolean | number | string | Vector3): void
 `
 
 Sets a specified property to a value.
@@ -955,7 +1009,7 @@ Sets a specified property to a value.
 - **identifier**: *string*
   
   The property identifier.
-- **value**: *boolean* | *number* | *string* | [*Vector3*](Vector3.md)
+- **value**?: *boolean* | *number* | *string* | [*Vector3*](Vector3.md) = `null`
   
   Data value of the property to set.
 
@@ -1034,9 +1088,6 @@ Sets an Entity Property to the provided value. This property change is not appli
 - **value**: *boolean* | *number* | *string*
   
   The property value. The provided type must be compatible with the type specified in the entity's definition. 
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

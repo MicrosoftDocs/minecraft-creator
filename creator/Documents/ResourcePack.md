@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-bbortree
 title: Introduction to Resource Packs
-ms.prod: gaming
 description: "An introduction to Resource Packs and a tutorial on adding a custom texture to an in-game block"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Introduction to Resource Packs

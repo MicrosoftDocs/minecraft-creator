@@ -78,6 +78,8 @@
   href: commands/playsound.md
 - name: project
   href: commands/project.md
+- name: recipe
+  href: commands/recipe.md
 - name: reload
   href: commands/reload.md
 - name: reloadconfig
@@ -142,6 +144,8 @@
   href: commands/titleraw.md
 - name: toggledownfall
   href: commands/toggledownfall.md
+- name: transfer
+  href: commands/transfer.md
 - name: volumearea
   href: commands/volumearea.md
 - name: weather

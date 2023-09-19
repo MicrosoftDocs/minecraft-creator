@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - enum_property
-ms.prod: gaming
 description: "A reference document detailing the 'enum_property' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - enum_property

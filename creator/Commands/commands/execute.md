@@ -2,12 +2,12 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: execute Command
 description: Description and usage of the execute command
+ms.service: minecraft-bedrock-edition
 ---
 # `/execute` Command
-Executes a command on behalf of one or more entities. See more information in the [Popular Commands page](../../Documents/CommandsPopularCommands.md#execute) and the [New Execute Syntax page](../../Documents/CommandsNewExecute.md).
+Executes a command on behalf of one or more entities. See more information in the [Popular Commands page](https://learn.microsoft.com/minecraft/creator/documents/commandspopularcommands#execute) and the [New Execute Syntax page](https://learn.microsoft.com/minecraft/creator/documents/commandsnewexecute).
 
 <table>
   <tr>
@@ -116,10 +116,10 @@ A `string` of the command to run. Must be a valid command.
 - `destination: x y z`: position
 - `dimension`: Dimension
 - `end: x y z`: position
-- `objective`: ScoreboardObjectives
+- `objective`: [ScoreboardObjectives](../enums/ScoreboardObjectives.md)
 - `operation`: compareoperator
 - `origin`: target
-The target of the command to execute. Must be a player name or [target selector](../../Documents/TargetSelectors.md).
+The target of the command to execute. Must be a player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors).
 - `pitch`: rotation
 Up-and-down rotation of the command
 - `position: x y z`: position

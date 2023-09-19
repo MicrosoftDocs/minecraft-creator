@@ -39,9 +39,6 @@ Method that sets the body text for the modal form.
 
 #### **Returns** [*MessageFormData*](MessageFormData.md)
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **button1**
 `
 button1(text: minecraftserver.RawMessage | string): MessageFormData
@@ -54,9 +51,6 @@ Method that sets the text for the first button of the dialog.
 
 #### **Returns** [*MessageFormData*](MessageFormData.md)
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 ### **button2**
 `
 button2(text: minecraftserver.RawMessage | string): MessageFormData
@@ -68,9 +62,6 @@ This method sets the text for the second button on the dialog.
 - **text**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
 #### **Returns** [*MessageFormData*](MessageFormData.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 ### **show**
 `
@@ -103,9 +94,6 @@ This builder method sets the title for the modal dialog.
 - **titleText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
 #### **Returns** [*MessageFormData*](MessageFormData.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 #### Examples
 ##### ***showBasicMessageForm.ts***

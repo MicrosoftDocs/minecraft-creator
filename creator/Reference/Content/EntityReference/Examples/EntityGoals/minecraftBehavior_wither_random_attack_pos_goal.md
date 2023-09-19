@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.wither_random_attack_pos_goal
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.wither_random_attack_pos_goal' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.wither_random_attack_pos_goal

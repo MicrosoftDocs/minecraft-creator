@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.look_at_entity
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.look_at_entity' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.look_at_entity

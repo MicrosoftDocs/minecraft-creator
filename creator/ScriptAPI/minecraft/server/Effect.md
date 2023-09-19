@@ -18,6 +18,9 @@ Represents an effect - like poison - that has been added to an Entity.
 Gets an amplifier that may have been applied to this effect. Sample values range typically from 0 to 4. Example: The effect 'Jump Boost II' will have an amplifier value of 1.
 
 Type: *number*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **displayName**
 `read-only displayName: string;`
@@ -25,6 +28,9 @@ Type: *number*
 Gets the player-friendly name of this effect.
 
 Type: *string*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **duration**
 `read-only duration: number;`
@@ -32,6 +38,9 @@ Type: *string*
 Gets the entire specified duration, in ticks, of this effect. There are 20 ticks per second. Use [*@minecraft/server.TicksPerSecond*](../../minecraft/server/minecraft-server.md#tickspersecond) constant to convert between ticks and seconds.
 
 Type: *number*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **typeId**
 `read-only typeId: string;`
@@ -39,6 +48,9 @@ Type: *number*
 Gets the type id of this effect.
 
 Type: *string*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Methods
 - [isValid](#isvalid)

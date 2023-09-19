@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.play_dead
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.play_dead' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.play_dead

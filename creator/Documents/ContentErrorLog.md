@@ -2,8 +2,8 @@
 author: neonerz
 ms.author: mikeam
 title: Content Error Log
-ms.prod: gaming
 description: "Learn more about the messages in the content error log and what they mean"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Content Error Log

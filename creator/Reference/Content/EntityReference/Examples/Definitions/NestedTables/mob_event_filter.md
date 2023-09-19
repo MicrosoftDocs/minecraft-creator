@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:mob_event_filter
-ms.prod: gaming
 description: "A reference document detailing the 'mob_event_filter' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:mob_event_filter

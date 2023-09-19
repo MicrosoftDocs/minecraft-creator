@@ -18,9 +18,6 @@ Defines a collection of items.
 Number of the items in the stack. Valid values range between 1-255. The provided value will be clamped to the item's maximum stack size.
 
 Type: *number*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 > [!IMPORTANT]
 > This property can't be edited in read-only mode.
@@ -41,9 +38,6 @@ Type: *boolean*
 Gets or sets whether the item is kept on death.
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 > [!IMPORTANT]
 > This property can't be edited in read-only mode.
@@ -54,9 +48,6 @@ Type: *boolean*
 Gets or sets the item's lock mode. The default value is `ItemLockMode.none`.
 
 Type: [*ItemLockMode*](ItemLockMode.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 > [!IMPORTANT]
 > This property can't be edited in read-only mode.
@@ -74,9 +65,6 @@ Type: *number*
 Given name of this stack of items. The name tag is displayed when hovering over the item. Setting the name tag to an empty string or `undefined` will remove the name tag.
 
 Type: *string*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 > [!IMPORTANT]
 > This property can't be edited in read-only mode.
@@ -144,9 +132,6 @@ Creates an exact copy of the item stack, including any custom data or properties
 
 #### **Returns** [*ItemStack*](ItemStack.md) - Returns a copy of this item stack.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **getCanDestroy**
 `
 getCanDestroy(): string[]
@@ -155,9 +140,6 @@ getCanDestroy(): string[]
 Get the list of block types this item can break in Adventure mode.
 
 #### **Returns** *string*[]
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -170,9 +152,6 @@ getCanPlaceOn(): string[]
 Get the list of block types this item can be placed on in Adventure mode.
 
 #### **Returns** *string*[]
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -227,9 +206,6 @@ Returns a set of tags associated with this item stack.
 
 #### **Returns** *string*[]
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **hasComponent**
 `
 hasComponent(componentId: string): boolean
@@ -258,9 +234,6 @@ Checks whether this item stack has a particular tag associated with it.
 
 #### **Returns** *boolean* - True if the Item Stack has the tag associated with it, else false.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **isStackableWith**
 `
 isStackableWith(itemStack: ItemStack): boolean
@@ -287,9 +260,6 @@ The list of block types this item can break in Adventure mode. The block names a
   
   String list of block types that the item can destroy.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
@@ -315,9 +285,6 @@ The list of block types this item can be placed on in Adventure mode. This is on
 - **blockIdentifiers**?: *string*[] = `null`
   
   String list of block types that the item can be placed on.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

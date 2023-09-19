@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.stroll_towards_village
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.stroll_towards_village' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # minecraft:behavior.stroll_towards_village
