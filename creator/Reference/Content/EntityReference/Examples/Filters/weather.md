@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - weather
-ms.prod: gaming
 description: "A reference document detailing the 'weather' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - weather

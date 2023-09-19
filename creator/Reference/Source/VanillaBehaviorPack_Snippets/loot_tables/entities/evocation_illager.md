@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: evocation_illager
-ms.prod: gaming
 description: "A code snippet for the evocation illager entity loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # evocation_illager

@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - on_ground
-ms.prod: gaming
 description: "A reference document detailing the 'on_ground' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - on_ground

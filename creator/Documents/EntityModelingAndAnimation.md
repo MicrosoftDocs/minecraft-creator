@@ -2,8 +2,8 @@
 author: neonerz
 ms.author: mikeam
 title: Entity Modeling and Animation
-ms.prod: gaming
 description: "A detailing of the process for modeling and animating an entity in Minecraft: Bedrock Edition"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Modeling and Animation

@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - on_hot_block
-ms.prod: gaming
 description: "A reference document detailing the 'on_hot_block' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - on_hot_block

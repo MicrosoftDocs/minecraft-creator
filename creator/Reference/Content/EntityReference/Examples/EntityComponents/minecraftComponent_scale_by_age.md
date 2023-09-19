@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:scale_by_age
-ms.prod: gaming
 description: "A reference document detailing the 'scale_by_age' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:scale_by_age

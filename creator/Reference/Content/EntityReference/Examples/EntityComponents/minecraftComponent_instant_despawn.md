@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:instant_despawn
-ms.prod: gaming
 description: "A reference document detailing the 'instant_despawn' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:instant_despawn

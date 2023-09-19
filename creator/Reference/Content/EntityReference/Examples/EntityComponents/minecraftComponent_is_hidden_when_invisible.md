@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:is_hidden_when_invisible
-ms.prod: gaming
 description: "A reference document detailing the 'is_hidden_when_invisible' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation -  minecraft:is_hidden_when_invisible
