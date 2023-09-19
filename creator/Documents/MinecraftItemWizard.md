@@ -14,15 +14,21 @@ After you have created a custom item with the Wizard, you can use Blockbench to 
 
 The plugin works similarly to the [Minecraft Entity Wizard](MinecraftEntityWizard.md) and the [Minecraft Block Wizard](MinecraftBlockWizard.md).
 
+## Demonstration: How to Make a Custom Item
+
+> [!VIDEO https://www.youtube.com/embed/5gUTZoTSPgE]
+
+This video shows how to make a custom item with Minecraft Item Wizard.
+
 --------
 
-In this tutorial, you will learn the following:
+In this tutorial, you will learn how to:
 
 > [!div class="checklist"]
 >
-> - How to add the Minecraft Item Wizard plugin to Blockbench.
-> - Understand the steps to create a custom item with the Wizard.
-> - Export the item for use within Minecraft: Bedrock Edition.
+> - Add the Minecraft Item Wizard plugin to Blockbench
+> - Create a custom item with the Wizard
+> - Export the item for use within Minecraft: Bedrock Edition
 
 --------
 
@@ -52,123 +58,167 @@ Next time you want to use it, you can open the Item Wizard from the menu via **T
 
 ## Tutorial: Making a Glass Sword
 
-This tutorial starts with something familiar, but nonexistant in vanilla Minecraft: a glass sword.
-
-Of course you don't have to design your items based in any sort of reality. What matters most is that you have an idea and then you make that idea happen!
+This tutorial starts with something familiar, but nonexistant in vanilla Minecraft: a sword made of glass!
 
 ### Preset
 
 On the first page of the Item Wizard, you can select a preset item to use as starting point for your own custom item.
 
-![Blockbench screen showing the current preset item options: Iron Ingot, Sword, Pickaxe, Helmet.](Media/MinecraftItemWizard/preset_options.png)
+![Blockbench screen showing the current preset item options: Iron Ingot, Apple, Sword, Pickaxe, Helmet, Chestplate, Leggins, and Boots.](Media/MinecraftItemWizard/preset_options.png)
 
-For this tutorial, we are going to start with something simple: a glass sword.
-
-Select the **Sword** preset item and click **Next**.
+1. Select the **Sword** preset item and click **Next**.
 
 ### Naming
 
-Enter the meta data for the item. The required fields are Display Name, Identifier, and Creative Category.
+This is where we enter the meta data for the item. The required fields are Display Name, Identifier, and Creative Category. Stack Size is also on this page, but it is not required.
 
-- **Display Name**: The item's name that will be displayed in the inventory and in other places within the interface.
+![Naming screen in Blockbench showing the Display Name, Identifier, Stack Size, and Creative Category fields.](Media/MinecraftItemWizard/naming.png)
 
-To keep things simple, let's name it ***Glass Sword**.
+**Display Name**: The item's name that will be displayed in the inventory and in other places within the interface.
 
-- **Identifier**: The identifier of the item that will be used internally, like with the `/give` command. The identifier needs to start with a namespace, which is a short identifier of your or your project. All items that Minecraft comes with by default have the namespace `minecraft:`. That namespace is reserved for vanilla blocks. 
+2. To keep things simple, let's name it **Glass Sword**.
 
-Your identifier may look like this: `my_item_pack:glass_sword`.
+**Identifier**: The identifier of the item will be used internally, like with the `/give` command. The identifier needs to start with a namespace such as your own name or the name of your project or addon packs. All items that Minecraft comes with by default have the namespace `minecraft:`, so you can't use that one. That namespace is reserved for vanilla blocks. 
 
-- **Creative Category**: Select the tab of the creative inventory where you want your item to appear. You can also select a sub-group to add your item to in one of the foldable groups within an inventory tab.
+3. Enter an identifier like this: `my_item_pack:glass_sword`.
 
-Swords are Equipment (by default) so let's leave it there and leave Sword selected as the sub-group.
+**Stack Size**: How many items can fit in one stack.
 
-![Naming screen in Blockbench showing the Display Name, Identifier, and Creative Category fields.](Media/MinecraftItemWizard/naming.png)
+4. To keep this sword like other swords in Minecraft, Stack Size should be set to **1**.
 
-### Design
+**Creative Category**: Select the tab of the creative inventory where you want your item to appear. You can also select a sub-group to add your item to in one of the foldable groups within an inventory tab.
 
-On this page, you can select whether to add an Item Model or an Icon Glint.
+5. Swords are **Equipment** (by default) so let's leave it there and select **Swords** as the sub-group.
 
-- **Item Model**: Select this option if you want to create a handheld model for your item in addition to the 2D icon.
-
-- **Icon Glint**: Select this option if you want to display the 2D icon with a shimmery glint, like it's enchanted.
-
-For now, let's keep it as simple as possible and leave the boxes unchecked.
-
-Click Next.
+6. Click **Next**.
 
 ### Functionality
 
 Different preset items have different Functionality settings.
 
-This is the page for the Sword preset, with some options already selected for you. 
+This is the page for the Sword preset, with some options already selected for you.
 
-- **Melee Attack**: Use the weapon to attack mobs.
+![Image of the functionality screen with the options selected according to the instructions in this section.](Media/MinecraftItemWizard/functionality.png)
 
-Yes. Make sure this is checked.
+**Melee Attack**: Use the weapon to attack mobs.
 
-- **Damage**: If the item can be used to damage mobs, set that level here. 
+7. Yes. Because we want to use this like any other sword, **Melee Attack** should be checked.
 
-For the glass sword, set the Damage level all the way up to 20.
+**Damage**: If the item can be used to damage mobs, set that level here. 
 
-- **Break Blocks**: Check this box if the item is intended to be used to break specific blocks blocks.
+8. For the glass sword, set the Damage level all the way up to 20.
 
-- **Wearable**: Check this box if the item is intended to be worn by the player.
+**Break Blocks**: Check this box if the item is intended to be used to break specific blocks blocks.
 
-Leave Dig Blocks and Wearable unchecked.
+**Wearable**: Check this box if the item is intended to be worn by the player.
 
-- **Durability**: Item loses some durability every time it is used, until it breaks. 
+9. Leave **Break Blocks** and **Wearable** unchecked.
 
-To make our glass sword act like, well, a sword made out of fragile glass, let's set the durability to 3.
+**Durability**: Item loses some durability every time it is used, until it breaks. 
 
-- **Repair Item**: If you want to be able to repair your sword, this is where you set what material should be used.
+10. To make our glass sword act like a sword made out of fragile glass, let's set the durability to 3.
 
-Click the drop-down menu next to the repair materials field.
-Enter "glass" in the search field and select "Glass." 
+**Repair Item**: If you want to be able to repair your sword, this is where you set which material should be used.
 
-- **Repair Amount**: Set the precentage of how much one unit of material will repair your item.
+11. Click the drop-down menu and enter "glass" in the search field. 
+12. Select "Glass." 
 
-Let's encourage recycling by setting this to 100%.
+**Repair Amount**: Set the precentage of how much one unit of material will repair your item.
 
-- **Food** 
+13. Let's encourage players to re-use glass by setting this to 100%.
 
-- **Furnace Fuel**: Check this if you want to be able to burn the item in a furnace like wood or coal. 
-- **Place Entity**: Check this if you want to be able to place the entity on the ground. 
+**Food**: Allow players to eat the item.
 
-Leave Furnace Fuel and Place Entity unchecked.
+**Furnace Fuel**: Check this if you want to be able to burn the item in a furnace like wood or coal.
 
-![Image of the functionality screen with the options selected accorrding to the instructions in this section.](Media/MinecraftItemWizard/functionality.png)
+**Place Entity**: Check this if you want to be able to place the entity on the ground. 
+
+14. **Leave Food**, **Furnace Fuel**, and **Place Entity** unchecked.
+
+15. Click **Next**.
+
+### Design
+
+On this page, you can select whether to add a Handheld Item Model or an Icon Glint.
+
+![Image of the Design page showing the Handheld Item Model and Icon Glint selections.](Media/MinecraftItemWizard/design.png)
+
+**Handheld Item Model**: Do you want to create a handheld model for your item, or just use the 2D icon? In the inventory and on the ground it will use the icon either way.
+
+16. Select **Icon + 3D Model**.
+
+**Icon Glint**: Select this option if you want to display the 2D icon with a shimmery glint, like it's enchanted.
+
+17. Leave **Icon Glint** unchecked so you can see the model you create without any enchantments on it.
+
+18. Click **Next**.
 
 ## Export
 
 We're almost there! 
 
-You can choose **Export to Folder**, to export the packs directly into Minecraft, or **Export as MCAddon**.
-
-- **Export Packs:** Select this option if you just want to create a new pack with your custom item on your computer.
-- **Integrate into Pack:** If you have an existing addon on your computer and you want to add this item to it, you can select this option and then select your addon from the list to integrate your new custom item into the existing pack.
-- **Export as MCAddon:** This option will generate a .mcaddon file and save it to your computer. You can open this file to load your addon into Minecraft or you can share this file with anyone at all. If you select this option, you will not be able to directly edit your model in Blockbench after exporting the addon.
-
 ![Image of the Blockbench Export screen showing the fields used for creating the behavior pack and resource pack.](Media/MinecraftItemWizard/export.png)
 
-Choose **Export to Folder**.
+You can choose **Export to Folder**, to export the packs directly into the development pack folders of your Minecraft installation, or **Export as MCAddon** to generate an MCAddon file that you can install in one click or send to your friends.
 
-- **Pack Name**: (Required) The name of each pack. This name will be used both for the generated file, as well as for the name in the pack menu in Minecraft.
+19. Choose **Export to Folder**.
 
-Enter a Pack Name. You can use the identifier from the Naming screen.
+**Pack Name**: (Required) The name of the packs you are exporting. This name will be used both for the generated file, as well as for the name in the pack menu in Minecraft.
 
-- **Pack Author(s)**: You can enter your name as the author of the pack. To enter multiple names, separate them with a comma.
+20. Enter a Pack Name. You can use the identifier from the **Naming** screen.
 
-- **Pack Icon**: The pack icon is optional. You can upload an image as an icon to represent your pack in the pack menu. The image should be a PNG file, the recommended resolution is 64 by 64 pixels.
+**Pack Author(s)**: You can enter your name as the author of the pack. To enter multiple names, separate them with a comma.
 
-Enter author names and give your pack an icon if you want. It's optional.
+**Pack Icon**: You can upload an image as an icon to represent your pack in the pack menu. The image should be a .png file and the recommended resolution is 64 by 64 pixels.
 
-Click **Next**.
+21. Enter author names and give your pack an icon if you want to.
+
+22. Click **Next**.
 
 ### Next Steps
 
 Blockbench creates your packs and saves them in your com.mojang folder, in the **development_behavior_packs** and **development_resource_packs**, respectively.
 
+![Alt text](Media/MinecraftItemWizard/next_steps.png)
+
 You should see an "Export Successful" message from Blockbench.
+
+23. Click **Next**.
+
+## Editing the 3D Model
+
+Because you are already in Blockbench, you can continue to use the program to edit the model and texture.
+
+![Image of Blockbench screen with 2D and 3D models ready to be edited by the user](Media/MinecraftItemWizard/edit_models_glass_sword_before.png)
+
+> [!CAUTION]
+> This option is not available if you have exported your addon as an `.mcaddon` file.
+
+You can learn how to create a model in this tutorial playlist: [ArtsByKev Blockbench Tutorials](https://www.youtube.com/watch?v=U9FLteWmFzg&list=PLvULVkjBtg2SezfUA8kHcPUGpxIS26uJR)
+
+More information on Blockbench can be found on the [Blockbench Wiki](https://www.blockbench.net/wiki/).
+
+Starting with the familiar sword model...
+
+![Image of an iron sword icon file in Blockbench.](Media/MinecraftItemWizard/edit_model_glass_sword_before.png)
+
+... let's give it rainbow colors, like a prism!
+
+![Image of a sword icon edited to look like a rainbow prism.](Media/MinecraftItemWizard/edit_model_glass_sword_after.png)
+
+24. Go to **File** > **Save Model**.
+
+### Editing the 2D Icon
+
+Starting with the sword icon...
+
+![Image of an iron sword icon file in Blockbench.](Media/MinecraftItemWizard/edit_icon_glass_sword_before.png)
+
+... let's make it look more like the glass sword model!
+
+![Image of a sword icon edited to look like a rainbow prism.](Media/MinecraftItemWizard/edit_icon_glass_sword_after.png)
+
+25. Go to **File** > **Save Model**.
 
 ## Installing the pack
 
@@ -182,45 +232,21 @@ Enter the world and locate the custom block in your creative inventory. Alternat
 > [!NOTE]
 > Alternatively, if you have exported your addon as a `.mcaddon` file, you can open this file in order to automatically add the packs into Minecraft.
 
-## Editing the Model
-
-Because you are already in Blockbench, you can continue to use the program to edit the model and texture. To do that, click **Next**.
-
-> [!CAUTION]
-> This option is not available if you have exported your addon as an `.mcaddon` file.
-
-You can learn how to create a model in this tutorial playlist: [ArtsByKev Blockbench Tutorials](https://www.youtube.com/watch?v=U9FLteWmFzg&list=PLvULVkjBtg2SezfUA8kHcPUGpxIS26uJR)
-
-More information on Blockbench can be found on the [Blockbench Wiki](https://www.blockbench.net/wiki/).
-
-Starting with the familiar sword model...
-
-![Image of an iron sword texture file in Blockbench.](Media/MinecraftItemWizard/edit_model_glass_sword_before.png)
-
-... let's give it rainbow colors, like a prism!
-
-![Image of a sword edited to look like a rainbow prism.](Media/MinecraftItemWizard/edit_model_glass_sword_after.png)
-
-Go to File > Save Model.
-
 ## Let's Try it Out!
 
-Launch Minecraft and go a Survival world with cheats toggled on. 
+Launch Minecraft and go a Survival world with cheats toggled on.
 
 Give yourself a sword. You will need to enter the whole name, like "my_item_pack:glass_sword".
+
+`/give @s my_item_pack:glass_sword`
 
 Try it out! Remember, we made it high damage and low durability.
 
 ![Image if a Minecraft world with the player holding a glass sword and in front of a sheep.](Media/MinecraftItemWizard/glass_sword_in_hand.png)
 
-If you use your sword in a Creative Mode world, the durability won't work as intended, but it will look pretty neat in the inventory:
-
-![Image of the glass sword in a creative mode inventory that has been filtered to look for "glass."](Media/MinecraftItemWizard/glass_sword_in_creative_inventory.png)
+If you use your sword in a Creative Mode world, the durability won't work as intended.
 
 Try repairing it, too!
-
-Next: Go back to the Item Wizard, start over what you can create! You are not limited to things that would make sense in vanilla Minecraft - or the real world, for that matter.
-You might find some limitations and unexpected results, but that's a big part of the fun, isn't it?
 
 ## What's Next?
 
