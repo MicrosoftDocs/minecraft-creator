@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: enchant Command
 description: Description and usage of the enchant command
+ms.service: minecraft-bedrock-edition
 ---
 # `/enchant` Command
 Adds an enchantment to a player's selected item.
