@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: execute Command
 description: Description and usage of the execute command
+ms.service: minecraft-bedrock-edition
 ---
 # `/execute` Command
 Executes a command on behalf of one or more entities. See more information in the [Popular Commands page](../../Documents/CommandsPopularCommands.md#execute) and the [New Execute Syntax page](../../Documents/CommandsNewExecute.md).
