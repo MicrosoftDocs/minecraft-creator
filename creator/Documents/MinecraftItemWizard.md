@@ -214,11 +214,11 @@ More information on Blockbench can be found on the [Blockbench Wiki](https://www
 
 Starting with the familiar sword model...
 
-![Image of an iron sword icon file in Blockbench.](Media/MinecraftItemWizard/edit_model_glass_sword_before.png)
+![Image of an iron sword model file in Blockbench.](Media/MinecraftItemWizard/edit_model_glass_sword_before.png)
 
 ... let's give it rainbow colors, like a prism!
 
-![Image of a sword icon edited to look like a rainbow prism.](Media/MinecraftItemWizard/edit_model_glass_sword_after.png)
+![Image of a sword model edited to look like a rainbow prism.](Media/MinecraftItemWizard/edit_model_glass_sword_after.png)
 
 24. Go to **File** > **Save Model**.
 
