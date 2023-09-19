@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - has_ranged_weapon
-ms.prod: gaming
 description: "A reference document detailing the 'has_ranged_weapon' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - has_ranged_weapon

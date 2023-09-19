@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - is_missing_health
-ms.prod: gaming
 description: "A reference document detailing the 'is_missing_health' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - is_missing_health

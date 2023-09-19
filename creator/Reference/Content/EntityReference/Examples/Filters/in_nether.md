@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - in_nether
-ms.prod: gaming
 description: "A reference document detailing the 'in_nether' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - in_nether

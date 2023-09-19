@@ -2,8 +2,8 @@
 ms.author: mikeam
 title: Designing Gameplay for Various Devices
 author: neonerz
-ms.prod: gaming
 description: "An overview covering how to design gameplay content for the many devices used to play Minecraft: Bedrock Edition"
+ms.service: minecraft-bedrock-edition
 ---
 # Designing Gameplay for Various Devices
 

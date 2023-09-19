@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: drowned spawn_rule
-ms.prod: gaming
 description: "A code snippet of the drowned spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # drowned spawn_rule

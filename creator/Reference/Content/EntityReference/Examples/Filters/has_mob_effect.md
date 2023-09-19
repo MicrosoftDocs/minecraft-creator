@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - has_mob_effect
-ms.prod: gaming
 description: "A reference document detailing the 'has_mob_effect' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - has_mob_effect

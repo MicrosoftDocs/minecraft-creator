@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - in_caravan
-ms.prod: gaming
 description: "A reference document detailing the 'in_caravan' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - in_caravan

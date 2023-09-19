@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - FilterList
-ms.prod: gaming
 description: "A reference document listing all available filters for use with Entity JSON files"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - Filter list

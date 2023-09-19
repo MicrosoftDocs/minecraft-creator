@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: dolphin
-ms.prod: gaming
 description: "A code snippet for the dolphin entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # dolphin

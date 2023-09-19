@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - distance_to_nearest_player
-ms.prod: gaming
 description: "A reference document detailing the 'distance_to_nearest_player' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - distance_to_nearest_player

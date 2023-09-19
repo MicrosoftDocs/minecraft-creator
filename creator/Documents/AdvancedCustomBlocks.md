@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: "Custom Blocks Part 2: Geometry and Materials"
-ms.prod: gaming
 description: "A guide to using the Geometry and Material instances to create custom blocks in Minecraft: Bedrock Edition"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Custom Blocks Part 2: Geometry and Material Instances

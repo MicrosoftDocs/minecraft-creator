@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - has_silk_touch
-ms.prod: gaming
 description: "A reference document detailing the 'has_silk_touch' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - has_silk_touch

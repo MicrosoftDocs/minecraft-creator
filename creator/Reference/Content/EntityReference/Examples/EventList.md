@@ -2,7 +2,7 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - Built-in Event List
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - Built-in Event list

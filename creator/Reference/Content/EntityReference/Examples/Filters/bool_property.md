@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - bool_property
-ms.prod: gaming
 description: "A reference document detailing the 'bool_property' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - bool_property

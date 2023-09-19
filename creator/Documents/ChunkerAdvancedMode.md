@@ -2,8 +2,8 @@
 author: neonerz
 ms.author: mikeam
 title: Chunker - Advanced Mode
-ms.prod: gaming
 description: "Working with Clunker"
+ms.service: minecraft-bedrock-edition
 ---
 # Chunker - Advanced Mode
 
