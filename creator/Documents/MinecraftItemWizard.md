@@ -121,7 +121,21 @@ This is the page for the Sword preset, with some options already selected for yo
 **Repair Item**: If you want to be able to repair your sword, this is where you set which material should be used.
 
 11. Click the drop-down menu and enter "glass" in the search field. 
-12. Select "Glass." 
+12. Select "Glass."
+
+>[!Note]
+>If you want to make your item repairable with more than one material, you can add items in the `repair_items` section of the **glass_sword.item.json** file in the behavior pack like this:
+>
+>```json
+>"minecraft:repairable": {
+>  "repair_items": [
+>    {
+>      "items": ["glass", "sand"],
+>        "repair_amount": 3
+>    }
+>  ]
+>}
+>```
 
 **Repair Amount**: Set the precentage of how much one unit of material will repair your item.
 
@@ -244,7 +258,8 @@ Try it out! Remember, we made it high damage and low durability.
 
 ![Image if a Minecraft world with the player holding a glass sword and in front of a sheep.](Media/MinecraftItemWizard/glass_sword_in_hand.png)
 
-If you use your sword in a Creative Mode world, the durability won't work as intended.
+>[!Note]
+>If you use your sword in a Creative Mode world, the durability won't work as intended.
 
 Try repairing it, too!
 
