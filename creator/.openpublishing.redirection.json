@@ -35,10 +35,15 @@
           "redirect_url": "/reference/content/featuresreference/features/featurelist.md",
           "redirect_document_id": false
       },
-      {
+   {
           "source_path": "Reference/content/featuresreference/examples/features/minecraftunderwater_cave_carver.md",
           "redirect_url": "/reference/content/featuresreference/features/minecraftunderwater_cave_carver_feature.md",
           "redirect_document_id": false
-      }
+      },
+      {
+        "source_path": "Reference/content/itemreference/examples/itemcomponents/menu_category_component.md",
+        "redirect_url": "/reference/content/itemreference/examples/itemcomponentlist.md",
+        "redirect_document_id": false
+    }   
     ]
 }
