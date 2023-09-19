@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Loot Overloads
-ms.prod: gaming
 description: "An overview covering loot overloads"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Loot Overloads

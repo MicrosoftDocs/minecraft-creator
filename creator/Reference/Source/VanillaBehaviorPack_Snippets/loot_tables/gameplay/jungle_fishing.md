@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: jungle_fishing
-ms.prod: gaming
 description: "A code snippet for the 'jungle fishing' fishing gameplay loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Jungle Fishing

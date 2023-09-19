@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: jungle_fish
-ms.prod: gaming
 description: "A code snippet for the 'jungle fish' fishing gameplay loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Jungle Fish

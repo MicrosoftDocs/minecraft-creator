@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - minecraft:stacked_by_data
-ms.prod: gaming
 description: "A reference document detailing the 'stacked by data' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:stacked_by_data
