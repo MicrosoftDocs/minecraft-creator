@@ -2,14 +2,11 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.prod: gaming
 title: .EntityInitializationCause Enumeration
 description: Contents of the .EntityInitializationCause enumeration.
-ms.service: minecraft-bedrock-edition
 ---
 # EntityInitializationCause Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 An enumeration describing initialization cause of an entity.
 

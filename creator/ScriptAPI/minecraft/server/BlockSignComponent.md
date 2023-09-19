@@ -24,6 +24,9 @@ Represents a block that can display text on it.
 Whether or not players can edit the sign. This happens if a sign has had a honeycomb used on it or `setWaxed` was called on the sign.
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Methods
 - [getRawText](#getrawtext)

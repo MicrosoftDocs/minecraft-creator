@@ -6,12 +6,14 @@ ms.prod: gaming
 title: minecraft/server-gametest Module
 description: Contents of the @minecraft/server-gametest module
 ---
-# @minecraft/server-gametest Module
+# `@minecraft/server-gametest` Module
 
 The @minecraft/server-gametest module provides scriptable APIs for scaffolding and testing content experiences in Minecraft.
 
 > [!CAUTION]
 > This module is still in pre-release.  It may change or it may be removed in future releases.
+
+## [Changelog](changelog.md)
 
 ## Manifest Details
 ```json
@@ -115,7 +117,3 @@ Registers a new GameTest function that is designed for asynchronous execution. T
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
-
-## Change Log
-## 1.0.0-beta
-#### Added `@minecraft/server-gametest` Module

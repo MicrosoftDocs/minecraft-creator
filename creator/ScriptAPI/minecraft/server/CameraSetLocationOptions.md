@@ -3,13 +3,10 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: minecraft/server.ScriptCameraSetLocationOptions Interface
-description: Contents of the @minecraft/server.ScriptCameraSetLocationOptions class.
+title: minecraft/server.CameraSetLocationOptions Interface
+description: Contents of the @minecraft/server.CameraSetLocationOptions class.
 ---
-# ScriptCameraSetLocationOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
+# CameraSetLocationOptions Interface
 
 ## Properties
 

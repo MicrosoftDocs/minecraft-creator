@@ -60,6 +60,7 @@ controls whether entities do drops
 - `dofiretick`
 controls whether fire spreads or not
 - `recipesunlock`
+controls whether built-in (vanilla) recipes automatically unlock as the player progresses through the game (one alternative to this is to use the /recipe command based on custom gameplay logic.) 
 - `dolimitedcrafting`
 - `domobloot`
 controls whether mobs drop loot

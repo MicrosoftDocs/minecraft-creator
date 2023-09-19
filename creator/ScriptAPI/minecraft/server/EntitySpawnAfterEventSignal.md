@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.EntitySpawnAfterEventSignal class
 ---
 # EntitySpawnAfterEventSignal Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Registers a script-based event handler for handling what happens when an entity spawns.
 
 ## Methods

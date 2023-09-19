@@ -3,13 +3,10 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: minecraft/server.ScriptCameraSetFacingOptions Interface
-description: Contents of the @minecraft/server.ScriptCameraSetFacingOptions class.
+title: minecraft/server.CameraSetPosOptions Interface
+description: Contents of the @minecraft/server.CameraSetPosOptions class.
 ---
-# ScriptCameraSetFacingOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
+# CameraSetPosOptions Interface
 
 ## Properties
 
@@ -18,10 +15,10 @@ description: Contents of the @minecraft/server.ScriptCameraSetFacingOptions clas
 
 Type: [*CameraEaseOptions*](CameraEaseOptions.md)
 
-### **facingEntity**
-`facingEntity: Entity;`
+### **facingLocation**
+`facingLocation: Vector3;`
 
-Type: [*Entity*](Entity.md)
+Type: [*Vector3*](Vector3.md)
 
 ### **location**
 `location?: Vector3;`

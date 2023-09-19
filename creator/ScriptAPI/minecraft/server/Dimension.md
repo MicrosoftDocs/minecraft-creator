@@ -21,6 +21,9 @@ Type: [*NumberRange*](NumberRange.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **id**
 `read-only id: string;`
@@ -38,6 +41,7 @@ Type: *string*
 - [getEntitiesAtBlockLocation](#getentitiesatblocklocation)
 - [getEntitiesFromRay](#getentitiesfromray)
 - [getPlayers](#getplayers)
+- [getWeather](#getweather)
 - [runCommand](#runcommand)
 - [runCommandAsync](#runcommandasync)
 - [setWeather](#setweather)
@@ -71,6 +75,8 @@ Creates an explosion at the specified location.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 #### Examples
 ##### ***createExplosion.ts***
@@ -165,6 +171,8 @@ Returns a block instance at the given location.
 
 > [!WARNING]
 > PositionInUnloadedChunkError: Exception thrown when trying to interact with a Block object that isn't in a loaded and ticking chunk anymore,,PositionOutOfWorldBoundariesError: Exception thrown when trying to interact with a position outside of dimension height range,
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **getBlockFromRay**
 `
@@ -307,6 +315,21 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
 > [!WARNING]
 > This function can throw errors.
 
+### **getWeather**
+`
+getWeather(): WeatherType
+`
+
+Returns the current weather.
+
+#### **Returns** [*WeatherType*](WeatherType.md) - Returns a WeatherType that explains the broad category of weather that is currently going on.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **runCommand**
 `
 runCommand(commandString: string): CommandResult
@@ -326,6 +349,8 @@ Runs a command synchronously using the context of the broader dimenion.
 
 > [!WARNING]
 > Throws an exception if the command fails due to incorrect parameters or command syntax, or in erroneous cases for the command. Note that in many cases, if the command does not operate (e.g., a target selector found no matches), this method will not throw an exception.
+>
+> Throws [*CommandError*](CommandError.md)
 
 ### **runCommandAsync**
 `
@@ -359,9 +384,6 @@ Sets the current weather within the dimension
   
   Sets the duration of the weather (in ticks). If no duration is provided, the duration will be set to a random duration between 300 and 900 seconds.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
@@ -390,6 +412,8 @@ Creates a new entity (e.g., a mob) at the specified location.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 #### Examples
 ##### ***createOldHorse.ts***
@@ -452,6 +476,8 @@ Creates a new item stack as an entity at the specified location.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 #### Examples
 ##### ***itemStacks.ts***
@@ -506,6 +532,8 @@ Creates a new particle emitter at a specified location in the world.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 #### Examples
 ##### ***spawnParticle.ts***

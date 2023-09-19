@@ -8,9 +8,6 @@ ms.service: minecraft-bedrock-edition
 ---
 # Camera Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains methods relating to the active camera for the specified player.
 
 ## Methods
@@ -51,7 +48,7 @@ Begins a camera fade transition. A fade transition is a full-screen color that f
 
 ### **setCamera**
 `
-setCamera(cameraPreset: string, setOptions?: ScriptCameraDefaultOptions | ScriptCameraSetFacingOptions | ScriptCameraSetLocationOptions | ScriptCameraSetPosOptions | ScriptCameraSetRotOptions): void
+setCamera(cameraPreset: string, setOptions?: CameraDefaultOptions | CameraSetFacingOptions | CameraSetLocationOptions | CameraSetPosOptions | CameraSetRotOptions): void
 `
 
 Sets the current active camera for the specified player.
@@ -60,7 +57,7 @@ Sets the current active camera for the specified player.
 - **cameraPreset**: *string*
   
   Identifier of a camera preset file defined within JSON.
-- **setOptions**?: [*ScriptCameraDefaultOptions*](ScriptCameraDefaultOptions.md) | [*ScriptCameraSetFacingOptions*](ScriptCameraSetFacingOptions.md) | [*ScriptCameraSetLocationOptions*](ScriptCameraSetLocationOptions.md) | [*ScriptCameraSetPosOptions*](ScriptCameraSetPosOptions.md) | [*ScriptCameraSetRotOptions*](ScriptCameraSetRotOptions.md) = `null`
+- **setOptions**?: [*CameraDefaultOptions*](CameraDefaultOptions.md) | [*CameraSetFacingOptions*](CameraSetFacingOptions.md) | [*CameraSetLocationOptions*](CameraSetLocationOptions.md) | [*CameraSetPosOptions*](CameraSetPosOptions.md) | [*CameraSetRotOptions*](CameraSetRotOptions.md) = `null`
   
   Additional options for the camera.
 

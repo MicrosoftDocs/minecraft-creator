@@ -8,9 +8,6 @@ ms.service: minecraft-bedrock-edition
 ---
 # CameraEaseOptions Interface
 
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains options associated with a camera ease operation.
 
 ## Properties

@@ -27,7 +27,7 @@ Retrieves a specific block state instance.
 #### **Parameters**
 - **stateName**: *string*
 
-#### **Returns** [*BlockStateType*](BlockStateType.md) | *undefined* - Returns the block state instance if it is found. If the block state instance is not found returns undefined.
+#### **Returns** [*BlockStateType*](BlockStateType.md) | *undefined* - Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) state instance if it is found. If the block state instance is not found returns undefined.
 
 ### **getAll**
 `

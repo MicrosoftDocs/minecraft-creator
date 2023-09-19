@@ -8,9 +8,6 @@ ms.service: minecraft-bedrock-edition
 ---
 # CameraFadeOptions Interface
 
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Used to initiate a full-screen color fade.
 
 ## Properties

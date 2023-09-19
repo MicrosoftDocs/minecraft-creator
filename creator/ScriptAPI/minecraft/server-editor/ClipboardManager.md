@@ -20,6 +20,9 @@ The ClipboardManager (accessible from the [*@minecraft/server-editor.ExtensionCo
 The primary [*@minecraft/server-editor.ClipboardItem*](../../minecraft/server-editor/ClipboardItem.md) object is always present (even if it's empty) and cannot be deleted.  This object represents the main ClipboardItem object which is always accessible through the UI for cut/paste operations
 
 Type: [*ClipboardItem*](ClipboardItem.md)
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Methods
 - [create](#create)

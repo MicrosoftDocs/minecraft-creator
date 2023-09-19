@@ -24,6 +24,9 @@ When added, this movement control allows the mob to glide.
 Speed in effect when the entity is turning.
 
 Type: *number*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **startSpeed**
 `read-only startSpeed: number;`
@@ -31,6 +34,9 @@ Type: *number*
 Start speed during a glide.
 
 Type: *number*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Constants
 

@@ -124,11 +124,6 @@ Purpur Block
 Cooked Cod
 - `minecraft:bow`
 Bow
-- `minecraft:dark_prismarine_stairs`
-Dark Prismarine Stairs
-- `minecraft:deepslate_brick_stairs`
-Deepslate Brick Stairs
-- `minecraft:orange_carpet`
 - `minecraft:end_bricks`
 End Bricks
 - `minecraft:music_disc_ward`
@@ -176,9 +171,7 @@ Golden Horse Armor
 Smooth Quarts Stairs
 - `minecraft:potato`
 Potato
-- `minecraft:light_blue_wool`
-- `minecraft:waxed_oxidized_cut_copper`
-Waxed Oxidized Cut Copper
+- `minecraft:magenta_terracotta`
 - `minecraft:nether_star`
 Nether Star
 - `minecraft:enchanted_golden_apple`
@@ -333,10 +326,10 @@ Lingering Potion
 Rabbit Foot
 - `minecraft:smoker`
 Smoker
-- `minecraft:cooked_chicken`
-Cooked Chicken
 - `minecraft:mangrove_wood`
 Mangrove Wood
+- `minecraft:cooked_chicken`
+Cooked Chicken
 - `minecraft:light_blue_glazed_terracotta`
 Light Blue Glazed Terracotta
 - `minecraft:stone_sword`
@@ -503,9 +496,9 @@ Honey Block
 Lit Deepslate Redstone Ore
 - `minecraft:golden_shovel`
 Golden Shovel
-- `minecraft:green_wool`
 - `minecraft:elytra`
 Elytra
+- `minecraft:green_wool`
 - `minecraft:lit_redstone_lamp`
 Lit Redstone Lamp
 - `minecraft:golden_pickaxe`
@@ -526,11 +519,12 @@ Skull Banner Pattern
 Acacia Stairs
 - `minecraft:wooden_hoe`
 Wooden Hoe
+- `minecraft:brown_terracotta`
+- `minecraft:panda_spawn_egg`
+Panda Spawn Egg
 - `minecraft:snow_golem_spawn_egg`
 - `minecraft:stone_hoe`
 Stone Hoe
-- `minecraft:panda_spawn_egg`
-Panda Spawn Egg
 - `minecraft:iron_hoe`
 Iron Hoe
 - `minecraft:stripped_cherry_wood`
@@ -643,8 +637,6 @@ Flint
 Heart of the Sea
 - `minecraft:painting`
 Painting
-- `minecraft:mossy_cobblestone_stairs`
-Mossy Cobblestone Stairs
 - `minecraft:oak_sign`
 Oak Sign
 - `minecraft:element_55`
@@ -705,6 +697,7 @@ Wolf Spawn Egg
 - `minecraft:minecart`
 Minecart
 - `minecraft:cyan_concrete_powder`
+- `minecraft:gray_terracotta`
 - `minecraft:saddle`
 Saddle
 - `minecraft:iron_door`
@@ -724,12 +717,13 @@ Activator Rail
 Birch Boat
 - `minecraft:element_97`
 [Education Edition] Berkelium (Bk)
+- `minecraft:polished_granite_stairs`
+Polished Granite Stairs
 - `minecraft:jungle_boat`
 Jungle Boat
 - `minecraft:lime_stained_glass_pane`
-- `minecraft:polished_granite_stairs`
-Polished Granite Stairs
 - `minecraft:decorated_pot`
+- `minecraft:light_blue_terracotta`
 - `minecraft:spruce_boat`
 Spruce Boat
 - `minecraft:chemistry_table`
@@ -766,6 +760,7 @@ Netherite Ingot
 Sugar Cane
 - `minecraft:lit_pumpkin`
 Lit Pumpkin
+- `minecraft:yellow_terracotta`
 - `minecraft:heartbreak_pottery_sherd`
 - `minecraft:element_23`
 [Education Edition] Vanadium (V)
@@ -935,9 +930,9 @@ Filled Map
 Drowned Spawn Egg
 - `minecraft:shears`
 Shears
+- `minecraft:white_carpet`
 - `minecraft:ender_pearl`
 Ender Pearl
-- `minecraft:white_carpet`
 - `minecraft:ghast_tear`
 Ghast Tear
 - `minecraft:glass_bottle`
@@ -956,6 +951,7 @@ Jungle Pressure Plate
 Fermented Spider Eye
 - `minecraft:blaze_powder`
 Blaze Powder
+- `minecraft:light_gray_terracotta`
 - `minecraft:magma_cream`
 Magma Cream
 - `minecraft:jigsaw`
@@ -1036,10 +1032,10 @@ Piglin Spawn Egg
 - `minecraft:white_concrete`
 - `minecraft:weeping_vines`
 Weeping Vines
-- `minecraft:wither_skeleton_spawn_egg`
-Wither Skeleton Spawn Egg
 - `minecraft:pink_candle_cake`
 Pink Candle Cake
+- `minecraft:wither_skeleton_spawn_egg`
+Wither Skeleton Spawn Egg
 - `minecraft:brewer_pottery_sherd`
 - `minecraft:spruce_sign`
 Spruce Sign
@@ -1055,6 +1051,7 @@ Skeleton Horse Spawn Egg
 [Education Edition] Meitnerium (Mt)
 - `minecraft:flowering_azalea`
 Flowering Azalea
+- `minecraft:pink_terracotta`
 - `minecraft:netherite_pickaxe`
 Netherite Pickaxe
 - `minecraft:jukebox`
@@ -1119,11 +1116,11 @@ Double Cut Copper Slab
 [Education Edition] Nickel (Ni)
 - `minecraft:item.acacia_door`
 Acacia Door
-- `minecraft:light_gray_wool`
 - `minecraft:oxidized_cut_copper_slab`
 Oxidized Cut Copper Slab
 - `minecraft:cat_spawn_egg`
 Cat Spawn Egg
+- `minecraft:light_gray_wool`
 - `minecraft:cherry_fence`
 - `minecraft:quartz`
 Quartz
@@ -1155,7 +1152,6 @@ Lime Glazed Terracotta
 - `minecraft:iron_golem_spawn_egg`
 - `minecraft:ender_dragon_spawn_egg`
 - `minecraft:wither_spawn_egg`
-- `minecraft:pink_wool`
 - `minecraft:blue_stained_glass`
 - `minecraft:glow_ink_sac`
 Glow Ink Sac
@@ -1219,10 +1215,10 @@ Flower Pot
 Empty Map
 - `minecraft:skull`
 Skull
-- `minecraft:firework_rocket`
-Firework Rocket
 - `minecraft:crimson_nylium`
 Crimson Nylium
+- `minecraft:firework_rocket`
+Firework Rocket
 - `minecraft:firework_star`
 Firework Star
 - `minecraft:colored_torch_bp`
@@ -1274,6 +1270,7 @@ Music Disc Mellohi
 Prismarine Crystals
 - `minecraft:lead`
 Lead
+- `minecraft:blue_terracotta`
 - `minecraft:acacia_sign`
 Acacia Sign
 - `minecraft:brush`
@@ -1319,12 +1316,12 @@ Banner
 Iron Nugget
 - `minecraft:mangrove_planks`
 Mangrove Planks
+- `minecraft:coral_fan_hang2`
+Coral Fan Hang 2
 - `minecraft:birch_sign`
 Birch Sign
 - `minecraft:coral_fan_dead`
 Coral Fan Dead
-- `minecraft:coral_fan_hang2`
-Coral Fan Hang 2
 - `minecraft:balloon`
 Balloon
 - `minecraft:jungle_sign`
@@ -1581,18 +1578,40 @@ Unlit Redstone Torch
 - `minecraft:wayfinder_armor_trim_smithing_template`
 - `minecraft:red_carpet`
 - `minecraft:music_disc_relic`
-- `minecraft:stone`
-Stone
 - `minecraft:wool`
 Wool
-- `minecraft:cyan_wool`
+- `minecraft:stone`
+Stone
+- `minecraft:birch_stairs`
+Birch Stairs
+- `minecraft:element_114`
+[Education Edition] Flerovium (Fl)
+- `minecraft:cracked_deepslate_tiles`
+Cracked Deepslate Tiles
+- `minecraft:white_terracotta`
+- `minecraft:cracked_polished_blackstone_bricks`
+Cracked Polished Blackstone Bricks
+- `minecraft:orange_terracotta`
+- `minecraft:lime_terracotta`
+- `minecraft:cyan_terracotta`
+- `minecraft:purple_terracotta`
+- `minecraft:green_terracotta`
+- `minecraft:red_terracotta`
+- `minecraft:black_terracotta`
+- `minecraft:fletching_table`
+Fletching Table
 - `minecraft:white_wool`
 - `minecraft:nether_brick_stairs`
 Nether Brick Stairs
 - `minecraft:magenta_wool`
+- `minecraft:light_blue_wool`
+- `minecraft:waxed_oxidized_cut_copper`
+Waxed Oxidized Cut Copper
 - `minecraft:yellow_wool`
 - `minecraft:chiseled_bookshelf`
 - `minecraft:lime_wool`
+- `minecraft:pink_wool`
+- `minecraft:cyan_wool`
 - `minecraft:boat`
 Boat
 - `minecraft:purple_wool`
@@ -1611,6 +1630,11 @@ Spruce Standing Sign
 Sticky Piston
 - `minecraft:black_wool`
 - `minecraft:brown_shulker_box`
+- `minecraft:dark_prismarine_stairs`
+Dark Prismarine Stairs
+- `minecraft:deepslate_brick_stairs`
+Deepslate Brick Stairs
+- `minecraft:orange_carpet`
 - `minecraft:bamboo_pressure_plate`
 - `minecraft:light_blue_carpet`
 - `minecraft:gray_carpet`
@@ -1875,8 +1899,6 @@ Cyan Candle Cake
 Grindstone
 - `minecraft:bell`
 Bell
-- `minecraft:fletching_table`
-Fletching Table
 - `minecraft:hard_stained_glass`
 Hard Stained Glass
 - `minecraft:element_84`
@@ -2015,10 +2037,10 @@ Redstone Torch
 [Education Edition] Neptunium (Np)
 - `minecraft:element_95`
 [Education Edition] Americium (Am)
-- `minecraft:element_96`
-[Education Edition] Curium (Cm)
 - `minecraft:waxed_exposed_cut_copper_stairs`
 Waxed Exposed Cut Copper Stairs
+- `minecraft:element_96`
+[Education Edition] Curium (Cm)
 - `minecraft:element_98`
 [Education Edition] Californium (Cf)
 - `minecraft:polished_blackstone_bricks`
@@ -2041,14 +2063,6 @@ Fermium (Fm)
 Warped Button
 - `minecraft:element_113`
 [Education Edition] Nihonium (Nh)
-- `minecraft:cracked_deepslate_tiles`
-Cracked Deepslate Tiles
-- `minecraft:birch_stairs`
-Birch Stairs
-- `minecraft:element_114`
-[Education Edition] Flerovium (Fl)
-- `minecraft:dark_oak_fence_gate`
-Dark Oak Fence Gate
 - `minecraft:element_115`
 [Education Edition] Moscovium (Mc)
 - `minecraft:element_117`
@@ -2224,12 +2238,16 @@ Lava
 Rail
 - `minecraft:blackstone_wall`
 Blackstone Wall
+- `minecraft:mossy_cobblestone_stairs`
+Mossy Cobblestone Stairs
 - `minecraft:coral_fan_hang3`
 Coral Fan Hang 3
 - `minecraft:detector_rail`
 Detector Rail
 - `minecraft:red_glazed_terracotta`
 Red Glazed Terracotta
+- `minecraft:dark_oak_fence_gate`
+Dark Oak Fence Gate
 - `minecraft:bamboo_mosaic_double_slab`
 - `minecraft:structure_void`
 Structure Void
@@ -2536,8 +2554,6 @@ Birch Door
 - `minecraft:item.chain`
 Chain
 - `minecraft:cherry_stairs`
-- `minecraft:cracked_polished_blackstone_bricks`
-Cracked Polished Blackstone Bricks
 - `minecraft:bamboo_standing_sign`
 - `minecraft:deepslate_lapis_ore`
 Deepslate Lapis Ore

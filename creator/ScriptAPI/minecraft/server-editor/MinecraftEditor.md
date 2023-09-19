@@ -18,6 +18,9 @@ The MinecraftEditor class is a namespace container for Editor functionality whic
 A global instance of the log output class object.  This is not contextualized to any particular player, and any messages sent to this instance will be broadcast to all connected editor client sessions
 
 Type: [*Logger*](Logger.md)
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Methods
 - [registerExtension_Internal](#registerextension_internal)

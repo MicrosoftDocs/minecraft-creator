@@ -50,12 +50,14 @@ When using the Damage command, this specifies the type of damage being dealt.
 Piston
 - `lava`
 Lava
+- `campfire`
 - `fire`
 Fire
 - `anvil`
 Anvil
 - `magma`
 Magma
+- `soul_campfire`
 - `wither`
 Wither
 - `falling_block`
@@ -66,6 +68,7 @@ Fireworks
 Thorns
 - `none`
 None
+- `sonic_boom`
 - `contact`
 Contact
 - `override`
@@ -80,6 +83,7 @@ Suffocation
 Fall
 - `starve`
 Starve
+- `ram_attack`
 - `fire_tick`
 Fire Tick
 - `stalactite`

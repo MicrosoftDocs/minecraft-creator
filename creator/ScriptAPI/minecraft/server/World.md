@@ -44,12 +44,15 @@ Type: [*Scoreboard*](Scoreboard.md)
 
 ## Methods
 - [broadcastClientMessage](#broadcastclientmessage)
+- [clearDynamicProperties](#cleardynamicproperties)
 - [getAbsoluteTime](#getabsolutetime)
 - [getAllPlayers](#getallplayers)
 - [getDay](#getday)
 - [getDefaultSpawnLocation](#getdefaultspawnlocation)
 - [getDimension](#getdimension)
 - [getDynamicProperty](#getdynamicproperty)
+- [getDynamicPropertyIds](#getdynamicpropertyids)
+- [getDynamicPropertyTotalByteCount](#getdynamicpropertytotalbytecount)
 - [getEntity](#getentity)
 - [getMoonPhase](#getmoonphase)
 - [getPlayers](#getplayers)
@@ -57,7 +60,6 @@ Type: [*Scoreboard*](Scoreboard.md)
 - [playMusic](#playmusic)
 - [playSound](#playsound)
 - [queueMusic](#queuemusic)
-- [removeDynamicProperty](#removedynamicproperty)
 - [sendMessage](#sendmessage)
 - [setAbsoluteTime](#setabsolutetime)
 - [setDefaultSpawnLocation](#setdefaultspawnlocation)
@@ -85,6 +87,14 @@ A method that is internal-only, used for broadcasting specific messages between 
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
+
+### **clearDynamicProperties**
+`
+clearDynamicProperties(): void
+`
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **getAbsoluteTime**
 `
@@ -216,6 +226,26 @@ Returns a property value.
   mc.world.setDynamicProperty("samplelibrary:longerjson", paintStr);
 ```
 
+### **getDynamicPropertyIds**
+`
+getDynamicPropertyIds(): string[]
+`
+
+#### **Returns** *string*[]
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **getDynamicPropertyTotalByteCount**
+`
+getDynamicPropertyTotalByteCount(): number
+`
+
+#### **Returns** *number*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 ### **getEntity**
 `
 getEntity(id: string): Entity | undefined
@@ -245,9 +275,6 @@ Returns the MoonPhase for the current time.
 
 #### **Returns** [*MoonPhase*](MoonPhase.md)
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **getPlayers**
 `
 getPlayers(options?: EntityQueryOptions): Player[]
@@ -276,13 +303,13 @@ Returns the time of day.
 
 ### **playMusic**
 `
-playMusic(trackID: string, musicOptions?: MusicOptions): void
+playMusic(trackId: string, musicOptions?: MusicOptions): void
 `
 
 Plays a particular music track for all players.
 
 #### **Parameters**
-- **trackID**: *string*
+- **trackId**: *string*
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
 
 > [!IMPORTANT]
@@ -319,13 +346,13 @@ Plays a particular music track for all players.
 
 ### **playSound**
 `
-playSound(soundID: string, location: Vector3, soundOptions?: WorldSoundOptions): void
+playSound(soundId: string, location: Vector3, soundOptions?: WorldSoundOptions): void
 `
 
 Plays a sound for all players.
 
 #### **Parameters**
-- **soundID**: *string*
+- **soundId**: *string*
 - **location**: [*Vector3*](Vector3.md)
 - **soundOptions**?: [*WorldSoundOptions*](WorldSoundOptions.md) = `null`
 
@@ -372,14 +399,18 @@ Plays a sound for all players.
 
 ### **queueMusic**
 `
-queueMusic(trackID: string, musicOptions?: MusicOptions): void
+queueMusic(trackId: string, musicOptions?: MusicOptions): void
 `
 
 Queues an additional music track for players. If a track is not playing, a music track will play.
 
 #### **Parameters**
-- **trackID**: *string*
+- **trackId**: *string*
+  
+  Identifier of the music track to play.
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
+  
+  Additional options for the music track.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -392,27 +423,6 @@ Queues an additional music track for players. If a track is not playing, a music
 
 > [!WARNING]
 > An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,
-
-### **removeDynamicProperty**
-`
-removeDynamicProperty(identifier: string): boolean
-`
-
-Removes a specified property.
-
-#### **Parameters**
-- **identifier**: *string*
-
-#### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
 
 ### **sendMessage**
 `
@@ -489,10 +499,12 @@ Sets a default spawn location for all players.
 
 > [!WARNING]
 > Throws if the provided spawn location is out of bounds.
+>
+> Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **setDynamicProperty**
 `
-setDynamicProperty(identifier: string, value: boolean | number | string | Vector3): void
+setDynamicProperty(identifier: string, value?: boolean | number | string | Vector3): void
 `
 
 Sets a specified property to a value.
@@ -501,15 +513,12 @@ Sets a specified property to a value.
 - **identifier**: *string*
   
   The property identifier.
-- **value**: *boolean* | *number* | *string* | [*Vector3*](Vector3.md)
+- **value**?: *boolean* | *number* | *string* | [*Vector3*](Vector3.md) = `null`
   
   Data value of the property to set.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 > [!WARNING]
 > Throws if the given dynamic property identifier is not defined.

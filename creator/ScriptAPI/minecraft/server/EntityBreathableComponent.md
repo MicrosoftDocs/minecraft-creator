@@ -24,6 +24,9 @@ Defines what blocks this entity can breathe in and gives them the ability to suf
 If true, this entity can breathe in air.
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **breathesLava**
 `read-only breathesLava: boolean;`
@@ -31,6 +34,9 @@ Type: *boolean*
 If true, this entity can breathe in lava.
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **breathesSolids**
 `read-only breathesSolids: boolean;`
@@ -38,6 +44,9 @@ Type: *boolean*
 If true, this entity can breathe in solid blocks.
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **breathesWater**
 `read-only breathesWater: boolean;`
@@ -45,6 +54,9 @@ Type: *boolean*
 If true, this entity can breathe in water.
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **generatesBubbles**
 `read-only generatesBubbles: boolean;`
@@ -52,6 +64,9 @@ Type: *boolean*
 If true, this entity will have visible bubbles while in water.
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **inhaleTime**
 `read-only inhaleTime: number;`
@@ -59,6 +74,9 @@ Type: *boolean*
 Time in seconds to recover breath to maximum.
 
 Type: *number*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **suffocateTime**
 `read-only suffocateTime: number;`
@@ -66,6 +84,9 @@ Type: *number*
 Time in seconds between suffocation damage.
 
 Type: *number*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **totalSupply**
 `read-only totalSupply: number;`
@@ -73,6 +94,9 @@ Type: *number*
 Time in seconds the entity can hold its breath.
 
 Type: *number*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Methods
 - [getBreatheBlocks](#getbreatheblocks)

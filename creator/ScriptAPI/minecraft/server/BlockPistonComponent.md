@@ -24,6 +24,9 @@ When present, this block has piston-like behavior. Contains additional propertie
 Whether the piston is fully expanded.
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **isExpanding**
 `read-only isExpanding: boolean;`
@@ -31,6 +34,9 @@ Type: *boolean*
 Whether the piston is in the process of expanding.
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **isMoving**
 `read-only isMoving: boolean;`
@@ -38,6 +44,9 @@ Type: *boolean*
 Whether the piston is in the process of expanding or retracting.
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **isRetracted**
 `read-only isRetracted: boolean;`
@@ -45,6 +54,9 @@ Type: *boolean*
 Whether the piston is fully retracted.
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **isRetracting**
 `read-only isRetracting: boolean;`
@@ -52,6 +64,9 @@ Type: *boolean*
 Whether the piston is in the process of retracting.
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Methods
 - [getAttachedBlocks](#getattachedblocks)

@@ -3,13 +3,10 @@
 author: jakeshirley
 ms.author: jashir
 ms.prod: gaming
-title: minecraft/server.ScriptCameraDefaultOptions Interface
-description: Contents of the @minecraft/server.ScriptCameraDefaultOptions class.
+title: minecraft/server.CameraDefaultOptions Interface
+description: Contents of the @minecraft/server.CameraDefaultOptions class.
 ---
-# ScriptCameraDefaultOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
+# CameraDefaultOptions Interface
 
 ## Properties
 

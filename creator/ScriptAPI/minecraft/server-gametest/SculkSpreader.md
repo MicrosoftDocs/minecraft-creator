@@ -18,6 +18,9 @@ Implements a class that can be used for testing sculk spreading behaviors. This 
 Gets the maximum charge of a sculk spreader.
 
 Type: *number*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Methods
 - [addCursorsWithOffset](#addcursorswithoffset)

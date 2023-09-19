@@ -93,15 +93,28 @@ This event fires before a block is broken by a player.
 
 Type: [*PlayerBreakBlockBeforeEventSignal*](PlayerBreakBlockBeforeEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **playerDimensionChange**
 `read-only playerDimensionChange: PlayerDimensionChangeBeforeEventSignal;`
 
 Fires before a player is about to change dimensions.
 
 Type: [*PlayerDimensionChangeBeforeEventSignal*](PlayerDimensionChangeBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **playerInteractWithBlock**
+`read-only playerInteractWithBlock: PlayerInteractWithBlockBeforeEventSignal;`
+
+Type: [*PlayerInteractWithBlockBeforeEventSignal*](PlayerInteractWithBlockBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **playerInteractWithEntity**
+`read-only playerInteractWithEntity: PlayerInteractWithEntityBeforeEventSignal;`
+
+Type: [*PlayerInteractWithEntityBeforeEventSignal*](PlayerInteractWithEntityBeforeEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.

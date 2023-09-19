@@ -39,13 +39,13 @@ Type: [*Player*](Player.md)
 ### **toDimension**
 `read-only toDimension: Dimension;`
 
-The dimension that the player is changing to, property will modify dimension change request.
+The dimension that the player is changing to.
 
 Type: [*Dimension*](Dimension.md)
 
 ### **toLocation**
 `read-only toLocation: Vector3;`
 
-The location the player will spawn to after changing dimensions, property will modify spawn location request.
+The location the player will spawn to after changing dimensions.
 
 Type: [*Vector3*](Vector3.md)

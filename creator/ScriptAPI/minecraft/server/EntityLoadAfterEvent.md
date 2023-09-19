@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.EntityLoadAfterEvent class.
 ---
 # EntityLoadAfterEvent Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains data related to an entity loaded within the world. This could happen when an unloaded chunk is reloaded, or when an entity changes dimensions.
 
 ## Properties

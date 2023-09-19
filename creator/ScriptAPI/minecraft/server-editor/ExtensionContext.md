@@ -46,6 +46,11 @@ The current player which is the subject of the extension invocation
 
 Type: [*@minecraft/server.Player*](../../minecraft/server/Player.md)
 
+### **playtest**
+`read-only playtest: PlaytestManager;`
+
+Type: [*PlaytestManager*](PlaytestManager.md)
+
 ### **selectionManager**
 `read-only selectionManager: SelectionManager;`
 
