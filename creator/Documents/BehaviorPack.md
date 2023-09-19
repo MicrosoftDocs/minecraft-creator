@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Introduction To Behavior Packs
-ms.prod: gaming
 description: "An introduction to Behavior Packs and adding attacking behaviors to an in-game cow mob."
+ms.service: minecraft-bedrock-edition
 ---
 
 # Introduction to Behavior Packs

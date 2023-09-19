@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Getting Started with Minecraft Block Wizard
-ms.prod: gaming
 description: "A tutorial covering how to create a custom block using the Minecraft Block Wizard tool in Blockbench"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Getting Started with the Minecraft Block Wizard

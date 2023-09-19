@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Getting Started with Minecraft Entity Wizard
-ms.prod: gaming
 description: "A tutorial covering how to create a custom entity model using the Minecraft Entity Wizard tool in Blockbench"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Getting Started with the Minecraft Entity Wizard
