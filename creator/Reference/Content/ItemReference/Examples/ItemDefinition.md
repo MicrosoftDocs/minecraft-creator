@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - Item Definition Properties
-ms.prod: gaming
 description: "A reference document detailing item definition properties"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Definition Properties

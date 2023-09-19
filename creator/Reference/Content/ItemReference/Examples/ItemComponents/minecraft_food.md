@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Item Documentation - minecraft:food
-ms.prod: gaming
 description: "A reference document detailing the 'food' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:food

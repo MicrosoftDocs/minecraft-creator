@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - Item Component List
-ms.prod: gaming
 description: The list of all components available for Item Components.
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - Item Components

@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - minecraft:display_name
-ms.prod: gaming
 description: "A reference document detailing the 'display_name' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:display_name

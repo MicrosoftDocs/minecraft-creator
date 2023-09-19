@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - minecraft:liquid_clipped
-ms.prod: gaming
 description: "A reference document detailing the 'liquid_clipped' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:liquid_clipped

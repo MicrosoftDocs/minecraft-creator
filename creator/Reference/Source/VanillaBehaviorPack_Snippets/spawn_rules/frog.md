@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: frog spawn_rule
-ms.prod: gaming
 description: "A code snippet of the frog spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # frog spawn_rule
