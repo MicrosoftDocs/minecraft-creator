@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - minecraft:max_stack_size
-ms.prod: gaming
 description: "A reference document detailing the 'max_stack_size' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:max_stack_size

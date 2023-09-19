@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Item Documentation - minecraft:on_use_on
-ms.prod: gaming
 description: "A reference document detailing the 'on_use_on' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:on_use_on

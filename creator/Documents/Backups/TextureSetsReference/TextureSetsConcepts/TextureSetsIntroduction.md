@@ -2,7 +2,7 @@
 author: mammerla
 ms.author: mikeam
 title: Introduction to Texture Sets
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 ---
 
 # Introduction to Texture Sets

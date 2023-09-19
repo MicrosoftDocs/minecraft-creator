@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Item Documentation - minecraft:digger
-ms.prod: gaming
 description: "A reference document detailing the 'digger' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:digger

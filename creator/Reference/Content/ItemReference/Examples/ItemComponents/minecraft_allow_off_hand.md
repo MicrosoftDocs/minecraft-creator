@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - minecraft:allow_off_hand
-ms.prod: gaming
 description: "A reference document detailing the 'allow_off_hand' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:allow_off_hand

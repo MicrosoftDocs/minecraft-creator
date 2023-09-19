@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: ghast spawn_rule
-ms.prod: gaming
 description: "A code snippet of the ghast spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # ghast spawn_rule
