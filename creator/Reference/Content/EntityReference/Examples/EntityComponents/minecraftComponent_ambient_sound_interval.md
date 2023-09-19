@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Entity Documentation -minecraft:ambient_sound_interval
-ms.prod: gaming
 description: "A reference document detailing the 'ambient_sound_interval' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation -  minecraft:ambient_sound_interval
