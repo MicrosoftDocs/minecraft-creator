@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-mammerla
 title: Entity Documentation - in_contact_with_water
-ms.prod: gaming
 description: "A reference document detailing the 'in_contact_with_water' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - in_contact_with_water
