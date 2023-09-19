@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.vex_copy_owner_target
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.vex_copy_owner_target' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.vex_copy_owner_target
