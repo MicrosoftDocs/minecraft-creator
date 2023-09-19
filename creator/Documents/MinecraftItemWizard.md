@@ -80,7 +80,7 @@ This is where we enter the meta data for the item. The required fields are Displ
 
 **Identifier**: The identifier of the item will be used internally, like with the `/give` command. The identifier needs to start with a namespace such as your own name or the name of your project or addon packs. All items that Minecraft comes with by default have the namespace `minecraft:`, so you can't use that one. That namespace is reserved for vanilla blocks. 
 
-3. Enter an identifier like this: `my_item_pack:glass_sword`.
+3. Enter an identifier like this: `myname:glass_sword`.
 
 **Stack Size**: How many items can fit in one stack.
 
@@ -236,9 +236,9 @@ Enter the world and locate the custom block in your creative inventory. Alternat
 
 Launch Minecraft and go a Survival world with cheats toggled on.
 
-Give yourself a sword. You will need to enter the whole name, like "my_item_pack:glass_sword".
+Give yourself a sword. You will need to enter the whole name, like "myname:glass_sword".
 
-`/give @s my_item_pack:glass_sword`
+`/give @s myname:glass_sword`
 
 Try it out! Remember, we made it high damage and low durability.
 
