@@ -38,9 +38,9 @@ highlightedContent:
       itemType: whats-new
       url: Documents/EditorExtensionsIntroduction.md
     #card
-    - title: Advanced Custom Blocks
+    - title: Minecraft Item Wizard
       itemType: whats-new
-      url: Documents/AdvancedCustomBlocks.md
+      url: Documents/MinecraftItemWizard.md
 
 # productDirectory section (optional)
 productDirectory:
