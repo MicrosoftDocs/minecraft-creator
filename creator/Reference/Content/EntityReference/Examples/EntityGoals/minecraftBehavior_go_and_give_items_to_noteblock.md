@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.go_and_give_items_to_noteblock
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.go_and_give_items_to_noteblock' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.go_and_give_items_to_noteblock

@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.explore_outskirts
-ms.prod: gaming
 description: "A reference document detailing the 'behavior.explore_outskirts' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.explore_outskirts
