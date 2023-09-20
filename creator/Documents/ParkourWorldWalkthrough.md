@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-bbortree
 title: Parkour Map Walkthrough
-ms.prod: gaming
 description: "Let's walk through a sample parkour map"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Parkour Map Walkthrough

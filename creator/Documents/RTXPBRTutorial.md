@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-bbortree
 title: Physically Based Rendering Tutorial
-ms.prod: gaming
 description: "A guide to creating textures using RTX Physically Based Rendering with Adobe Photoshop"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Physically Based Rendering Tutorial
