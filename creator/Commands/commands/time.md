@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: time Command
 description: Description and usage of the time command
+ms.service: minecraft-bedrock-edition
 ---
 # `/time` Command
 Changes or queries the world's game time. See more in the [Popular Commands documentation](https://learn.microsoft.com/minecraft/creator/documents/commandspopularcommands#time).

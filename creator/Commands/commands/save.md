@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: save Command
 description: Description and usage of the save command
+ms.service: minecraft-bedrock-edition
 ---
 # `/save` Command
 Control or check how the game saves data to disk. This command is for use on a dedicated server only.
