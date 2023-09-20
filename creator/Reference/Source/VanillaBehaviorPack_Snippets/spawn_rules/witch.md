@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: witch spawn_rule
-ms.prod: gaming
 description: "A code snippet of the witch spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # witch spawn_rule

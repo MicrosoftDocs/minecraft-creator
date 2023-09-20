@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Particle Documentation - Curves in Particle Effects
-ms.prod: gaming
 description: "A reference document detailing how curves work in regards to particle effects"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Curves in Particle Effects

@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Particle Documentation - Emitter Rate Steady component
-ms.prod: gaming
 description: "A reference document detailing the 'emitter rate steady' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Emitter Rate Steady component

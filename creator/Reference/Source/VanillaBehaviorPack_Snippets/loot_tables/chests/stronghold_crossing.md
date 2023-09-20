@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: stronghold_crossing
-ms.prod: gaming
 description: "A code snippet for the stronghold crossing chest loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # stronghold_crossing

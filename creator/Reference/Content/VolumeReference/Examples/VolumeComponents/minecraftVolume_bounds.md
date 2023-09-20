@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Volume Documentation - minecraft:bounds
-ms.prod: gaming
 description: "A reference document detailing the 'bounds' volume component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Volume Documentation - minecraft:bounds

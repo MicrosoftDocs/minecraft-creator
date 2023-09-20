@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: rabbit spawn_rule
-ms.prod: gaming
 description: "A code snippet of the rabbit spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # rabbit spawn_rule

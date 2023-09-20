@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Village Toolsmith
-ms.prod: gaming
 description: "A code snippet for the village toolsmith chest loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Village Toolsmith

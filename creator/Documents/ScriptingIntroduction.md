@@ -52,7 +52,7 @@ To get there, we are going to start with the Attack Cow behavior pack, add the f
 
 ### Setup and Test the Attack Cow Behavior Pack
 
-1. If you haven't already followed this step from the README, copy the **sample_behavior_pack** into the **development_behavior_packs** folder in your com.mojang folder.
+1. If you haven't already followed this step from the README, copy the **sample_behavior_pack** into the **development_behavior_packs** folder in your **com.mojang folder**.
 1. Launch Minecraft and create a survival world with cheats on and the Attack Cow behavior pack activated in it. It needs to be a survival world because the cow's attack behavior won't work in a creative world, and cheats should be on so you can summon a cow.
 1. Summon a cow using the "/summon" command and make sure it attacks you, as expected. Now we know all systems are go!
 1. Save & Quit the world to return to the Minecraft Main Menu screen.
@@ -60,7 +60,7 @@ To get there, we are going to start with the Attack Cow behavior pack, add the f
 ### Add a Script to the Behavior Pack
 
 1. Minimize Minecraft and open your **sample_behavior_pack** in Visual Studio Code.
-2. Open and view the ""manifest.json** file.
+2. Open and view the **manifest.json** file.
 
 ![Image of a behavior pack manifest.json file](Media/ScriptingIntroduction/manifest_json_BP.png)
 

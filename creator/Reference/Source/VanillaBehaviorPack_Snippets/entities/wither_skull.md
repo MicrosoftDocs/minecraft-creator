@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: wither_skull 
-ms.prod: gaming
 description: "A code snippet for the wither_skull entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # wither_skull

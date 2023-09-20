@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Particle Documentation - Emitter Rate Manual component
-ms.prod: gaming
 description: "A reference document detailing the 'emitter rate manual' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Emitter Rate Manual component

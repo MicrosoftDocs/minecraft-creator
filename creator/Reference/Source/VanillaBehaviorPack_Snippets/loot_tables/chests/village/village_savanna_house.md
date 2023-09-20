@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Village Savanna House
-ms.prod: gaming
 description: "A code snippet for the village savanna house chest loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Village Savanna House

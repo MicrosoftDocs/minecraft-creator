@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Particle Documentation - Particle Motion Parametric component
-ms.prod: gaming
 description: "A reference document detailing the 'particle motion parametric' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Particle Motion Parametric component

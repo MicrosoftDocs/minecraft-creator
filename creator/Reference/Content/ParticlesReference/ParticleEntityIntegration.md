@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Particle Documentation - Particle Entity Integration
-ms.prod: gaming
 description: "A reference document discussing the ways in which creators can integrate particle effects with entities"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Particle Entity Integration

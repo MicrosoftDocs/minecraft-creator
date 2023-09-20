@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Particle Documentation - Particle Initialization component
-ms.prod: gaming
 description: "A reference document detailing the 'particle initialization' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Particle Initialization component

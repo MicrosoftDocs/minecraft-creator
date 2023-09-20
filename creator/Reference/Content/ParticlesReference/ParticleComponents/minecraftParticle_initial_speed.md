@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Particle Documentation - Particle Initial Speed component
-ms.prod: gaming
 description: "A reference document detailing the 'particle initial speed' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Particle Initial Speed component

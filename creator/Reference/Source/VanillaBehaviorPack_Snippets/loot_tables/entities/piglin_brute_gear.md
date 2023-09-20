@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: piglin_brute_gear
-ms.prod: gaming
 description: "A code snippet for the piglin brute gear entity loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # piglin_brute_gear

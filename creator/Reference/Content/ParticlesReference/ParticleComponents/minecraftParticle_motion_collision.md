@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Particle Documentation - Particle Motion Collision component
-ms.prod: gaming
 description: "A reference document detailing the 'particle motion collision' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Particle Motion Collision component

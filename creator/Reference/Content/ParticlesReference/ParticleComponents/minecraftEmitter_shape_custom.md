@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Particle Documentation - Emitter Shape Custom component
-ms.prod: gaming
 description: "A reference document detailing the 'emitter shape custom' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Emitter Shape Custom component

@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: tadpole
-ms.prod: gaming
 description: "A code snippet for the tadpole entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # tadpole

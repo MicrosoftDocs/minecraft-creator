@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Schemas List
-ms.prod: gaming
 description: "This reference document lists currently available data format schemas"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Schemas List

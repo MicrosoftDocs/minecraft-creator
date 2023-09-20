@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: pillager spawn_rule
-ms.prod: gaming
 description: "A code snippet of the pillager spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # pillager spawn_rule

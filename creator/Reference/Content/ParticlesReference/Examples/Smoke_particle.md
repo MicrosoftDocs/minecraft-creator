@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Smoke particle
-ms.prod: gaming
 description: "A reference document detailing the 'smoke particle' particle effect"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Smoke particle
