@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: sea_turtle
-ms.prod: gaming
 description: "A code snippet for the sea turtle entity loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # sea_turtle

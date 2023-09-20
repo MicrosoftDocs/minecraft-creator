@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: squid spawn_rule
-ms.prod: gaming
 description: "A code snippet of the squid spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # squid spawn_rule

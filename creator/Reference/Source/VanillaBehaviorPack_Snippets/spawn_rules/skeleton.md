@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: skeleton spawn_rule
-ms.prod: gaming
 description: "A code snippet of the skeleton spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # skeleton spawn_rule

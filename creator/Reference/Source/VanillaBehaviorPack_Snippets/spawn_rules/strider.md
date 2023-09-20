@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: strider spawn_rule
-ms.prod: gaming
 description: "A code snippet of the strider spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # strider spawn_rule

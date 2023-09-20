@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Village Shepherd
-ms.prod: gaming
 description: "A code snippet for the village shepherd chest loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Village Shepherd

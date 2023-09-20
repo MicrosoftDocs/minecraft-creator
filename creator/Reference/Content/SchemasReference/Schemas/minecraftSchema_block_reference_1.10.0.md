@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: "Schema Documentation - block_reference:1.10.0"
-ms.prod: gaming
 description: "A reference document detailing the 'block_reference:1.10.0' schema"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Schema Documentation - block_reference:1.10.0

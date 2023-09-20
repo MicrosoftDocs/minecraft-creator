@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Recipe Documentation - Recipe Definition List
-ms.prod: gaming
 description: "A reference document detailing the different types of recipes that can be used by creators"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Recipe Documentation - Recipe Definition List

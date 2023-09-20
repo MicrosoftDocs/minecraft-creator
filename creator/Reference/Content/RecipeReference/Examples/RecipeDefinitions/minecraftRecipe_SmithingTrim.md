@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Recipe Documentation - Smithing Trim Recipe
-ms.prod: gaming
 description: "A reference document detailing smithing trim recipes"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Recipe Documentation - Smithing Trim Recipe

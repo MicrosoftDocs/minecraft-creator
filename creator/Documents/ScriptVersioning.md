@@ -1,9 +1,9 @@
 ---
 ms.author: mikeam
 title: Script Module Versioning
-ms.prod: gaming
 author: mammerla
 description: "Describes the fundamentals of how script API modules are versioned"
+ms.service: minecraft-bedrock-edition
 ---
 # Script Module Versioning
 

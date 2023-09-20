@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: pig spawn_rule
-ms.prod: gaming
 description: "A code snippet of the pig spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # pig spawn_rule

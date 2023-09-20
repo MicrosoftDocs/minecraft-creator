@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: piglin spawn_rule
-ms.prod: gaming
 description: "A code snippet of the piglin spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # piglin spawn_rule

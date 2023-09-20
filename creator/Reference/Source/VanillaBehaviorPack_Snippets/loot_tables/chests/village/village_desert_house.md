@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Village Desert House
-ms.prod: gaming
 description: "A code snippet for the village desert house chest loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Village Desert House
