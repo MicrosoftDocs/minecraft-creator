@@ -2,7 +2,7 @@
 author: mammerla
 ms.author: v-bbortree
 title: Volume Components List
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 ---
 
 # Volume Components
