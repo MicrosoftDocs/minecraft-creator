@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: permission Command
 description: Description and usage of the permission command
+ms.service: minecraft-bedrock-edition
 ---
 # `/permission` Command
 Reloads and applies permissions. This command is for use on a dedicated server only.
