@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: zombie_horse
-ms.prod: gaming
 description: "A code snippet for the zombie_horse entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # zombie_horse

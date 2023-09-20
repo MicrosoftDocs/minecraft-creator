@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: wolf spawn_rule
-ms.prod: gaming
 description: "A code snippet of the wolf spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # wolf spawn_rule

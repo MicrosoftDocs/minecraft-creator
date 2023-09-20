@@ -2,7 +2,7 @@
 author: mammerla
 ms.author: mikeam
 title: Volume Properties & Descriptions
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 ---
 
 # Volume Properties & Descriptions
