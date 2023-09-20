@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: New execute command support in Minecraft version 1.19.70
-ms.prod: gaming
 description: "A guide to new execute command syntax"
+ms.service: minecraft-bedrock-edition
 ---
 
 # New execute command support in Minecraft version 1.19.70
