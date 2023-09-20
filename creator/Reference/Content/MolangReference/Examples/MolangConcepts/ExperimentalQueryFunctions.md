@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Molang Documentation - Experimental Query Functions
-ms.prod: gaming
 description: "A reference document detailing experimental Molang query functions"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Molang Documentation - Experimental Query Functions

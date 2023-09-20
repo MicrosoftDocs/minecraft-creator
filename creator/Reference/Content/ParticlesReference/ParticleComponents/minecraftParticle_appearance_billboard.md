@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Particle Documentation - Particle Appearance Billboard component
-ms.prod: gaming
 description: "A reference document detailing the 'particle appearance billboard' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Particle Appearance Billboard component

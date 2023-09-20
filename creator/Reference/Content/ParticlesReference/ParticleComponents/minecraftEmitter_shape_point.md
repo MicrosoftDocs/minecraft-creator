@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Particle Documentation - Emitter Shape Point component
-ms.prod: gaming
 description: "A reference document detailing the 'emitter shape point' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Emitter Shape Point component

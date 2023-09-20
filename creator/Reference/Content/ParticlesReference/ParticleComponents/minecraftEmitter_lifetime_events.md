@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Particle Documentation - Emitter Lifetime Events component
-ms.prod: gaming
 description: "A reference document detailing the 'emitter lifetime events' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Emitter Lifetime Events component

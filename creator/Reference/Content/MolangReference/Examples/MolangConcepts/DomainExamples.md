@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Molang Documentation - Domain Examples
-ms.prod: gaming
 description: "A reference document detailing a variety of ways in which Molang can be used"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Molang Documentation - Domain Examples
