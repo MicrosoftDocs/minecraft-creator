@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: scriptevent Command
 description: Description and usage of the scriptevent command
+ms.service: minecraft-bedrock-edition
 ---
 # `/scriptevent` Command
 Causes an event to fire within script with the specified message ID and payload. This can be used to connect scripting with any location where commands are used.

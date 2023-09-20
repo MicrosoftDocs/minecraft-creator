@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: wandering_trader_trades economy_trades
-ms.prod: gaming
 description: "A code snippet of 'wandering_trader_trades' economy trades"
+ms.service: minecraft-bedrock-edition
 ---
 
 # wandering_trader_trades

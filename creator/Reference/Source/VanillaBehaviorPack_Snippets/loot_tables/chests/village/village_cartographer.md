@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Village Cartographer
-ms.prod: gaming
 description: "A code snippet for the village cartographer chest loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Village Cartographer

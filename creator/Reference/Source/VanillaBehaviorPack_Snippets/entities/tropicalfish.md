@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: tropicalfish
-ms.prod: gaming
 description: "A code snippet for the tropicalfish entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # tropicalfish

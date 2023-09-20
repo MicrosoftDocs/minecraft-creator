@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: weapon_smith_trades
-ms.prod: gaming
 description: "A code snippet of weapon_smith_trades"
+ms.service: minecraft-bedrock-edition
 ---
 
 # weapon_smith_trades

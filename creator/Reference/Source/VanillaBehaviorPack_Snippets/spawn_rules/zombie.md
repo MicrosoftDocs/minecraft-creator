@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: zombie spawn_rule
-ms.prod: gaming
 description: "A code snippet of the zombie spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # zombie spawn_rule

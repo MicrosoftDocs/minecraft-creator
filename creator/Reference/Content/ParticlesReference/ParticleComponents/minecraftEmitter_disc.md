@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Particle Documentation - Emitter Disc component
-ms.prod: gaming
 description: "A reference document detailing the 'emitter disc' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Emitter Disc component

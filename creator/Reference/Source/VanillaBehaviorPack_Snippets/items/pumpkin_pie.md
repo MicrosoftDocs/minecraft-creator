@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: pumpkin_pie
-ms.prod: gaming
 description: "A code snippet for the pumpkin_pie item"
+ms.service: minecraft-bedrock-edition
 ---
 
 # pumpkin_pie

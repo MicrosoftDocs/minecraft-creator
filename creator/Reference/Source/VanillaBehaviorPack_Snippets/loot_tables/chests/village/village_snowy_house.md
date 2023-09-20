@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Village Snowy House
-ms.prod: gaming
 description: "A code snippet for the village snowy house chest loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Village Snowy House

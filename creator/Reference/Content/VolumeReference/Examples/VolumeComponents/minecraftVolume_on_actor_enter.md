@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Volume Documentation - minecraft:on_actor_enter
-ms.prod: gaming
 description: "A reference document detailing the 'on_actor_enter' volume component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Volume Documentation -  minecraft:on_actor_enter

@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: rabbit_stew
-ms.prod: gaming
 description: "A code snippet for the rabbit_stew item"
+ms.service: minecraft-bedrock-edition
 ---
 
 # rabbit_stew

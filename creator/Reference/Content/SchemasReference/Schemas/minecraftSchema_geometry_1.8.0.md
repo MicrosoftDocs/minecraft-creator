@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: "Schema Documentation - geometry:1.8.0"
-ms.prod: gaming
 description: "A reference document detailing the 'geometry:1.8.0' schema"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Schema Documentation - geometry:1.8.0

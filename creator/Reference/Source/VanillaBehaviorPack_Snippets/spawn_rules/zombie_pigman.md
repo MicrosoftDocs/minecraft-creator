@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: zombie_pigman spawn_rule
-ms.prod: gaming
 description: "A code snippet of the zombie pigman spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # zombie_pigman spawn_rule

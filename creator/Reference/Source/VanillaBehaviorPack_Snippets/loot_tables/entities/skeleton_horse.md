@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: skeleton_horse
-ms.prod: gaming
 description: "A code snippet for the skeleton horse entity loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # skeleton_horse

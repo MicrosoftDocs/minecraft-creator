@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Village Mason
-ms.prod: gaming
 description: "A code snippet for the village mason chest loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Village Mason

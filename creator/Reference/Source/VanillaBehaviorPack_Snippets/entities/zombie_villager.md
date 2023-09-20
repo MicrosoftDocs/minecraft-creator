@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: zombie_villager
-ms.prod: gaming
 description: "A code snippet for the zombie_villager entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # zombie_villager

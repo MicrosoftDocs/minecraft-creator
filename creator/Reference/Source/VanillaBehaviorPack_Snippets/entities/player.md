@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: player
-ms.prod: gaming
 description: "A code snippet for the player entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # player

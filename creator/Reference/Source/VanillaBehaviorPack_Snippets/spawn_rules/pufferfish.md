@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: pufferfish spawn_rule
-ms.prod: gaming
 description: "A code snippet of the pufferfish spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # pufferfish spawn_rule

@@ -2,7 +2,7 @@
 author: mammerla
 ms.author: mikeam
 title: minecraft:behavior.Name of Behavior
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 ---
 
 ## Parameters

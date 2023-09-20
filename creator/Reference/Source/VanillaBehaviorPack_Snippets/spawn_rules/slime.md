@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: slime spawn_rule
-ms.prod: gaming
 description: "A code snippet of the slime spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # slime spawn_rule

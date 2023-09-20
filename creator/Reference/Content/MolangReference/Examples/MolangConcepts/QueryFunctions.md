@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Molang Documentation - Query Functions
-ms.prod: gaming
 description: "A reference document detailing the query functions available via Molang"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Molang Documentation - Query Functions

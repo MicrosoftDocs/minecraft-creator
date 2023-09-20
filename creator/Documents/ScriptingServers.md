@@ -2,8 +2,8 @@
 author: mikeam
 ms.author: mikeam
 title: Scripting with Dedicated Servers
-ms.prod: gaming
 description: "Use TypeScript to customize and configure your dedicated server experiences"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Using script to add new capabilities to dedicated servers

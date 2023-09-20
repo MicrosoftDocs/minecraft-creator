@@ -2,7 +2,7 @@
 author: mammerla
 ms.author: mikeam
 title: minecraft:bounds
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 ---
 
 # minecraft:bounds
