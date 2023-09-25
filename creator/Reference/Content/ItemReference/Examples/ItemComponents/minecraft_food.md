@@ -24,6 +24,8 @@ ms.service: minecraft-bedrock-edition
 |saturation_modifier| | Float| Saturation Modifier is used in this formula: (nutrition *saturation_modifier* 2) when applying the saturation buff.|
 |using_converts_to| Not used by default. | JSON object| When used, converts to the item specified by the string in this field. |
 
+See [Custom Item Use Priority](../ItemUsePriority.md) for more information on use behavior.
+
 ## Example
 
 ```json

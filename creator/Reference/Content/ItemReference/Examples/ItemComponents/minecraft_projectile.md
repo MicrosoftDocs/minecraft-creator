@@ -17,6 +17,8 @@ ms.service: minecraft-bedrock-edition
 |minimum_critical_power|*not set*| Float| Defines the time a projectile needs to charge in order to critically hit|
 |projectile_entity|*not set* | JSON object| The entity to be fired as a projectile|
 
+See [Custom Item Use Priority](../ItemUsePriority.md) for more information on dispense behavior.
+
 ## Example
 
 ```json
