@@ -1,8 +1,8 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:exhaustion_values
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:exhaustion_values

@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: mobevent Command
 description: Description and usage of the mobevent command
+ms.service: minecraft-bedrock-edition
 ---
 # `/mobevent` Command
 Controls what mob events are allowed to run.
@@ -38,11 +38,11 @@ Default: `false`.
 Enum of Mob Events
 
 #### Values
-- `events_enabled`
-Events Enabled
-- `minecraft:ender_dragon_event`
-Ender Dragon Event
 - `minecraft:pillager_patrols_event`
 Pillager Patrols Event
 - `minecraft:wandering_trader_event`
 Wandering Trader Event
+- `minecraft:ender_dragon_event`
+Ender Dragon Event
+- `events_enabled`
+Events Enabled

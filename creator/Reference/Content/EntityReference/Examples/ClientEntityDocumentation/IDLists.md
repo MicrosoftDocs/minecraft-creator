@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: v-jimseaman
 title: Entity Documentation - ID Lists
-ms.prod: gaming
+description: "A reference document listing all entity ID values"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - ID Lists
@@ -46,6 +47,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.enderman_take_block| -537294220 |
 | minecraft:behavior.equip_item| 13771509599928214056 |
 | minecraft:behavior.explore_outskirts| -1955198366 |
+| minecraft:behavior.feeling_happy| 8645000647498549987 |
 | minecraft:behavior.fertilize_farm_block| 9206289212958280677 |
 | minecraft:behavior.find_cover| -1231227755 |
 | minecraft:behavior.find_mount| 731306871 |
@@ -124,9 +126,11 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.restrict_open_door| 715583988 |
 | minecraft:behavior.restrict_sun| -382716017 |
 | minecraft:behavior.rise_to_liquid_level| -950950337 |
+| minecraft:behavior.rising| 1216537393397581032 |
 | minecraft:behavior.roll| 817471653 |
 | minecraft:behavior.run_around_like_crazy| -1390363669 |
 | minecraft:behavior.scared| -1643945926 |
+| minecraft:behavior.scenting| 6172150932649653379 |
 | minecraft:behavior.send_event| -823429137 |
 | minecraft:behavior.share_items| 2045906118 |
 | minecraft:behavior.silverfish_merge_with_stone| 321908121 |
@@ -328,6 +332,51 @@ Listed below are the ID values for each set of Entity JSON Entries.
 |:-----------:|:-----------:|
 | animations| 1232311658 |
 | scripts| -76244517 |
+
+## Properties
+
+| JSON Name| ID |
+|:-----------:|:-----------:|
+| minecraft:ambient_sound_interval| -1314051310 |
+| minecraft:can_climb| -550459594 |
+| minecraft:can_fly| 985724318 |
+| minecraft:can_power_jump| -763124853 |
+| minecraft:color| 1069623177 |
+| minecraft:color2| 1429635777 |
+| minecraft:default_look_angle| -815556357 |
+| minecraft:equipment| 714661022 |
+| minecraft:fire_immune| -1071767182 |
+| minecraft:floats_in_liquid| 179778474 |
+| minecraft:flying_speed| -570508595 |
+| minecraft:friction_modifier| -714364556 |
+| minecraft:ground_offset| -1816881803 |
+| minecraft:input_ground_controlled| -646415617 |
+| minecraft:is_baby| 1853172763 |
+| minecraft:is_charged| 125340337 |
+| minecraft:is_chested| -817599379 |
+| minecraft:is_dyeable| 1381448355 |
+| minecraft:is_hidden_when_invisible| -1553744 |
+| minecraft:is_ignited| 905710223 |
+| minecraft:is_illager_captain| 921912694 |
+| minecraft:is_pregnant| -1253700046 |
+| minecraft:is_saddled| 1037901616 |
+| minecraft:is_shaking| 523951884 |
+| minecraft:is_sheared| 1154836813 |
+| minecraft:is_stackable| 1184456737 |
+| minecraft:is_stunned| 1818977510 |
+| minecraft:is_tamed| 1646421078 |
+| minecraft:item_controllable| 1868311069 |
+| minecraft:loot| 1775814032 |
+| minecraft:mark_variant| 663621689 |
+| minecraft:movement_sound_distance_offset| 124679519 |
+| minecraft:push_through| -138030768 |
+| minecraft:scale| 77854436 |
+| minecraft:skin_id| 1838729593 |
+| minecraft:sound_volume| 937951776 |
+| minecraft:type_family| -255011285 |
+| minecraft:variant| -1789583977 |
+| minecraft:walk_animation_speed| 972393614 |
+| minecraft:wants_jockey| 1832515141 |
 
 ## Triggers
 

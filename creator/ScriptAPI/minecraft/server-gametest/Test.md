@@ -2,13 +2,12 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: minecraft/server-gametest.Test Class
 description: Contents of the @minecraft/server-gametest.Test class.
+ms.service: minecraft-bedrock-edition
 ---
 # Test Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 Main class for GameTest functions, with helpers and data for manipulating the respective test. Note that all methods of this class expect BlockLocations and Locations relative to the GameTest structure block.
 
 ## Methods
@@ -96,16 +95,18 @@ Tests that the condition specified in _condition_ is true. If not, an error with
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertBlockPresent**
 `
-assertBlockPresent(blockType: minecraftserver.BlockType, blockLocation: minecraftserver.Vector3, isPresent?: boolean): void
+assertBlockPresent(blockType: minecraftserver.BlockType | string, blockLocation: minecraftserver.Vector3, isPresent?: boolean): void
 `
 
 Tests that a block of the specified type is present at the specified location. If it is not, an exception is thrown.
 
 #### **Parameters**
-- **blockType**: [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md)
+- **blockType**: [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) | *string*
   
   Expected block type.
 - **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
@@ -117,6 +118,8 @@ Tests that a block of the specified type is present at the specified location. I
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertBlockState**
 `
@@ -135,10 +138,12 @@ Tests that a block has a particular state value at the specified location. If it
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
-#### **Examples**
-##### *testIfButtonNotPressed.js*
-```javascript
+#### Examples
+##### ***testIfButtonNotPressed.js***
+```typescript
 test.assertBlockState(buttonPos, (block) => {
   return block.permutation.getProperty("button_pressed_bit") == 0;
 });
@@ -164,6 +169,8 @@ Tests that an entity can reach a particular location. Depending on the value of 
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertContainerContains**
 `
@@ -182,6 +189,8 @@ Tests that a container (e.g., a chest) at the specified location contains a spec
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertContainerEmpty**
 `
@@ -197,6 +206,8 @@ Tests that a container (e.g., a chest) at the specified location is empty. If no
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertEntityHasArmor**
 `
@@ -227,10 +238,12 @@ Tests that an entity has a specific piece of armor equipped. If not, an error is
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
-#### **Examples**
-##### *horseArmorTest.js*
-```javascript
+#### Examples
+##### ***horseArmorTest.js***
+```typescript
 test.assertEntityHasArmor("minecraft:horse", armorSlotTorso, "diamond_horse_armor", 0, horseLocation, true);
 ```
 
@@ -257,10 +270,12 @@ Tests that an entity has a particular component. If not, an exception is thrown.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
-#### **Examples**
-##### *sheepShearedTest.js*
-```javascript
+#### Examples
+##### ***sheepShearedTest.js***
+```typescript
 test.assertEntityHasComponent("minecraft:sheep", "minecraft:is_sheared", entityLoc, false);
 ```
 
@@ -284,6 +299,8 @@ Depending on the value for isPresent, tests that a particular entity is present 
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertEntityInstancePresentInArea**
 `
@@ -302,22 +319,28 @@ Tests that an entity instance is present within the GameTest area. If not, an ex
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
-#### **Examples**
-##### *simpleMobTest.ts*
-```javascript
+#### Examples
+##### ***simpleMobTest.ts***
+```typescript
 gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
   const attackerId = "fox";
   const victimId = "chicken";
+
   test.spawn(attackerId, { x: 5, y: 2, z: 5 });
   let victim = test.spawn(victimId, { x: 2, y: 2, z: 2 });
+
   test.assertEntityInstancePresentInArea(victim, true);
+
   test.succeedWhen(() => {
     test.assertEntityInstancePresentInArea(victim, false);
   });
 })
   .maxTicks(400)
   .structureName("gametests:mediumglass");
+
 ```
 
 ### **assertEntityPresent**
@@ -343,6 +366,8 @@ Depending on the value of isPresent, tests for the presence or non-presence of e
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertEntityPresentInArea**
 `
@@ -361,22 +386,27 @@ Tests that an entity of a specified type is present within the GameTest area. If
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
-#### **Examples**
-##### *simpleMobTest.ts*
-```javascript
-gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
-  const attackerId = "fox";
-  const victimId = "chicken";
-  test.spawn(attackerId, { x: 5, y: 2, z: 5 });
-  test.spawn(victimId, { x: 2, y: 2, z: 2 });
-  test.assertEntityPresentInArea(victimId, true);
-  test.succeedWhen(() => {
-    test.assertEntityPresentInArea(victimId, false);
-  });
-})
-  .maxTicks(400)
-  .structureName("gametests:mediumglass");
+#### Examples
+##### ***simpleMobTest.ts***
+```typescript
+  gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
+    const attackerId = "fox";
+    const victimId = "chicken";
+
+    test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+    test.spawn(victimId, { x: 2, y: 2, z: 2 });
+
+    test.assertEntityPresentInArea(victimId, true);
+
+    test.succeedWhen(() => {
+      test.assertEntityPresentInArea(victimId, false);
+    });
+  })
+    .maxTicks(400)
+    .structureName("gametests:mediumglass");
 ```
 
 ### **assertEntityState**
@@ -399,14 +429,16 @@ Tests that an entity (e.g., a skeleton) at the specified location has a particul
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
-#### **Examples**
-##### *villagerEffectTest.js*
-```javascript
+#### Examples
+##### ***villagerEffectTest.js***
+```typescript
 test.assertEntityState(
   villagerPos,
   "minecraft:villager_v2",
-  (entity) => entity.getEffect(MinecraftEffectTypes.regeneration).duration > 120
+  (entity) => entity.getEffect(MinecraftEffectTypes.Regeneration).duration > 120
 ); // At least 6 seconds remaining in the villagers' effect
 ```
 
@@ -430,6 +462,8 @@ Depending on the value of isTouching, tests that an entity of a specified type i
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertIsWaterlogged**
 `
@@ -448,16 +482,18 @@ Depending on the value of isWaterlogged, tests that a block at a location contai
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertItemEntityCountIs**
 `
-assertItemEntityCountIs(itemType: minecraftserver.ItemType, blockLocation: minecraftserver.Vector3, searchDistance: number, count: number): void
+assertItemEntityCountIs(itemType: minecraftserver.ItemType | string, blockLocation: minecraftserver.Vector3, searchDistance: number, count: number): void
 `
 
 Tests that items of a particular type and count are present within an area. If not, an error is thrown.
 
 #### **Parameters**
-- **itemType**: [*@minecraft/server.ItemType*](../../minecraft/server/ItemType.md)
+- **itemType**: [*@minecraft/server.ItemType*](../../minecraft/server/ItemType.md) | *string*
   
   Type of item to look for.
 - **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
@@ -472,22 +508,24 @@ Tests that items of a particular type and count are present within an area. If n
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
-#### **Examples**
-##### *findFeathers.js*
-```javascript
+#### Examples
+##### ***findFeathers.js***
+```typescript
 test.assertItemEntityCountIs(Items.feather, expectedFeatherLoc, 0, 1);
 ```
 
 ### **assertItemEntityPresent**
 `
-assertItemEntityPresent(itemType: minecraftserver.ItemType, blockLocation: minecraftserver.Vector3, searchDistance?: number, isPresent?: boolean): void
+assertItemEntityPresent(itemType: minecraftserver.ItemType | string, blockLocation: minecraftserver.Vector3, searchDistance?: number, isPresent?: boolean): void
 `
 
 Depending on the value of isPresent, tests whether a particular item entity is present or not at a particular location. If the condition is not met, an exception is thrown.
 
 #### **Parameters**
-- **itemType**: [*@minecraft/server.ItemType*](../../minecraft/server/ItemType.md)
+- **itemType**: [*@minecraft/server.ItemType*](../../minecraft/server/ItemType.md) | *string*
   
   Type of item to test for.
 - **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
@@ -502,6 +540,8 @@ Depending on the value of isPresent, tests whether a particular item entity is p
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **assertRedstonePower**
 `
@@ -520,6 +560,8 @@ Tests that Redstone power at a particular location matches a particular value. I
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **destroyBlock**
 `
@@ -536,8 +578,13 @@ Destroys a block at a particular location.
   
   Whether to add resources exposed with a particular drop.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **fail**
 `
@@ -583,8 +630,13 @@ Gets a block at the specified block location.
 
 #### **Returns** [*@minecraft/server.Block*](../../minecraft/server/Block.md)
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 ### **getDimension**
 `
@@ -597,6 +649,8 @@ Gets the dimension of this test.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 ### **getFenceConnectivity**
 `
@@ -612,12 +666,17 @@ If the block at the specified block location is a fence, this returns a helper o
 
 #### **Returns** [*FenceConnectivity*](FenceConnectivity.md)
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **getSculkSpreader**
 `
-getSculkSpreader(blockLocation: minecraftserver.Vector3): SculkSpreader
+getSculkSpreader(blockLocation: minecraftserver.Vector3): SculkSpreader | undefined
 `
 
 Retrieves a sculk spreader object that can be used to control and manage how sculk grows from a block.
@@ -627,10 +686,15 @@ Retrieves a sculk spreader object that can be used to control and manage how scu
   
   Location of the block to retrieve a sculk spreader from.
 
-#### **Returns** [*SculkSpreader*](SculkSpreader.md)
+#### **Returns** [*SculkSpreader*](SculkSpreader.md) | *undefined* - Returns the SculkSpreader or undefined if no SculkSpreader is present on the block.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **getTestDirection**
 `
@@ -655,6 +719,9 @@ This asynchronous function will wait for the specified time in ticks before cont
 
 #### **Returns** Promise&lt;*void*&gt;
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **killAllEntities**
 `
 killAllEntities(): void
@@ -662,8 +729,13 @@ killAllEntities(): void
 
 Kills all entities within the GameTest structure.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **onPlayerJump**
 `
@@ -674,8 +746,13 @@ onPlayerJump(mob: minecraftserver.Entity, jumpAmount: number): void
 - **mob**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
 - **jumpAmount**: *number*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **pressButton**
 `
@@ -689,8 +766,13 @@ Presses a button at a block location.
   
   Location to push the button at.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > Will throw an error if a button is not present at the specified position.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **print**
 `
@@ -704,8 +786,13 @@ Displays the specified message to all players.
   
   Message to display.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **pullLever**
 `
@@ -719,8 +806,13 @@ Pulls a lever at a block location.
   
   Location to pull the lever at.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > Will throw an error if a lever is not present at the specified position.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **pulseRedstone**
 `
@@ -737,8 +829,13 @@ Sends a Redstone pulse at a particular location by creating a temporary Redstone
   
   Number of ticks to pulse Redstone.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **relativeBlockLocation**
 `
@@ -756,6 +853,8 @@ From a BlockLocation, returns a new BlockLocation with coordinates relative to t
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 ### **relativeLocation**
 `
@@ -771,8 +870,13 @@ From a location, returns a new location with coordinates relative to the current
 
 #### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - A location relative to the GameTest command block.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 ### **removeSimulatedPlayer**
 `
@@ -785,6 +889,9 @@ Removes a simulated player from the world.
 - **simulatedPlayer**: [*SimulatedPlayer*](SimulatedPlayer.md)
   
   Simulated player to remove.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 ### **rotateDirection**
 `
@@ -800,21 +907,31 @@ Returns a relative direction given the current rotation of the current test. Pas
 
 #### **Returns** [*@minecraft/server.Direction*](../../minecraft/server/Direction.md)
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 ### **rotateVector**
 `
-rotateVector(vector: minecraftserver.Vector): minecraftserver.Vector
+rotateVector(vector: minecraftserver.Vector3): minecraftserver.Vector3
 `
 
 #### **Parameters**
-- **vector**: [*@minecraft/server.Vector*](../../minecraft/server/Vector.md)
+- **vector**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
-#### **Returns** [*@minecraft/server.Vector*](../../minecraft/server/Vector.md)
+#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 ### **runAfterDelay**
 `
@@ -830,6 +947,9 @@ Runs a specific callback after a specified delay of ticks
 - **callback**: () => *void*
   
   Callback function to execute.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -849,6 +969,9 @@ Runs the given callback after a delay of _tick_ ticks from the start of the Game
   
   Callback function to execute.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -867,26 +990,36 @@ Sets a block to a particular configuration (a BlockPermutation) at the specified
   
   Location of the block to set.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **setBlockType**
 `
-setBlockType(blockType: minecraftserver.BlockType, blockLocation: minecraftserver.Vector3): void
+setBlockType(blockType: minecraftserver.BlockType | string, blockLocation: minecraftserver.Vector3): void
 `
 
 Sets a block to a particular type at the specified block location.
 
 #### **Parameters**
-- **blockType**: [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md)
+- **blockType**: [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) | *string*
   
   Type of block to set.
 - **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the block to set.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **setFluidContainer**
 `
@@ -903,8 +1036,13 @@ For blocks that are fluid containers - like a cauldron - changes the type of flu
   
   Type of fluid to set. See {@link @minecraft/server-gametest.FluidType} for a list of values.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **setTntFuse**
 `
@@ -921,8 +1059,13 @@ Sets the fuse of an explodable entity.
   
   Length of time, in ticks, before the entity explodes.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **spawn**
 `
@@ -939,28 +1082,37 @@ Spawns an entity at a location.
 
 #### **Returns** [*@minecraft/server.Entity*](../../minecraft/server/Entity.md) - The spawned entity. If the entity cannot be spawned, returns undefined.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
-#### **Examples**
-##### *simpleMobTest.ts*
-```javascript
-gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
-  const attackerId = "fox";
-  const victimId = "chicken";
-  test.spawn(attackerId, { x: 5, y: 2, z: 5 });
-  test.spawn(victimId, { x: 2, y: 2, z: 2 });
-  test.assertEntityPresentInArea(victimId, true);
-  test.succeedWhen(() => {
-    test.assertEntityPresentInArea(victimId, false);
-  });
-})
-  .maxTicks(400)
-  .structureName("gametests:mediumglass");
+#### Examples
+##### ***simpleMobTest.ts***
+```typescript
+  gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
+    const attackerId = "fox";
+    const victimId = "chicken";
+
+    test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+    test.spawn(victimId, { x: 2, y: 2, z: 2 });
+
+    test.assertEntityPresentInArea(victimId, true);
+
+    test.succeedWhen(() => {
+      test.assertEntityPresentInArea(victimId, false);
+    });
+  })
+    .maxTicks(400)
+    .structureName("gametests:mediumglass");
 ```
-##### *spawnAdultPig.js*
-```javascript
+##### ***spawnAdultPig.js***
+```typescript
 test.spawn("minecraft:pig<minecraft:ageable_grow_up>", { x: 1, y: 2, z: 1 });
+
 ```
 
 ### **spawnAtLocation**
@@ -978,12 +1130,17 @@ Spawns an entity at a location.
 
 #### **Returns** [*@minecraft/server.Entity*](../../minecraft/server/Entity.md) - The spawned entity. If the entity cannot be spawned, returns undefined.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
-#### **Examples**
-##### *spawnAdultPig.js*
-```javascript
+#### Examples
+##### ***spawnAdultPig.js***
+```typescript
 test.spawn("minecraft:pig<minecraft:ageable_grow_up>", { x: 1.5, y: 2, z: 1.5 });
 ```
 
@@ -1004,14 +1161,20 @@ Spawns an item entity at a specified location.
 
 #### **Returns** [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
-#### **Examples**
-##### *spawnEmeralds.js*
-```javascript
-const oneEmerald = new ItemStack(MinecraftItemTypes.emerald, 1, 0);
-const fiveEmeralds = new ItemStack(MinecraftItemTypes.emerald, 5, 0);
+#### Examples
+##### ***spawnEmeralds.js***
+```typescript
+const oneEmerald = new ItemStack(MinecraftItemTypes.Emerald, 1, 0);
+const fiveEmeralds = new ItemStack(MinecraftItemTypes.Emerald, 5, 0);
+
 test.spawnItem(oneEmerald, { x: 3.5, y: 3, z: 1.5 });
 test.spawnItem(fiveEmeralds, { x: 1.5, y: 3, z: 1.5 });
 ```
@@ -1034,8 +1197,13 @@ Creates a new simulated player within the world.
 
 #### **Returns** [*SimulatedPlayer*](SimulatedPlayer.md)
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **spawnWithoutBehaviors**
 `
@@ -1052,8 +1220,13 @@ Spawns an entity at a location without any AI behaviors. This method is frequent
 
 #### **Returns** [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 ### **spawnWithoutBehaviorsAtLocation**
 `
@@ -1070,8 +1243,13 @@ Spawns an entity at a location without any AI behaviors. This method is frequent
 
 #### **Returns** [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 ### **spreadFromFaceTowardDirection**
 `
@@ -1091,12 +1269,17 @@ Tests that a particular item entity is present at a particular location. If not,
   
   Direction to spread. Use the Minecraft.Direction enum to specify a direction.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
-#### **Examples**
-##### *spreadFromFaceTowardDirection.js*
-```javascript
+#### Examples
+##### ***spreadFromFaceTowardDirection.js***
+```typescript
 test.spreadFromFaceTowardDirection({ x: 1, y: 2, z: 1 }, Direction.south, Direction.down);
 ```
 
@@ -1109,12 +1292,18 @@ Creates a new GameTestSequence - A set of steps that play out sequentially withi
 
 #### **Returns** [*GameTestSequence*](GameTestSequence.md) - A new GameTestSequence with chaining methods that facilitate creating a set of steps.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **succeed**
 `
 succeed(): void
 `
 
 Marks the current test as a success case.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -1131,6 +1320,9 @@ Runs the given callback. If the callback does not throw an exception, the test i
   
   Callback function that runs. If the function runs successfully, the test is marked as a success. Typically, this function will have .assertXyz method calls within it.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -1145,6 +1337,9 @@ Marks the test as a success at the specified tick.
 - **tick**: *number*
   
   Tick after the start of the GameTest to mark the test as successful.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -1164,6 +1359,9 @@ Runs the given callback at _tick_ ticks after the start of the test. If the call
   
   Callback function that runs. If the function runs successfully, the test is marked as a success.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -1179,35 +1377,41 @@ Runs the given callback every tick. When the callback successfully executes, the
   
   Testing callback function that runs. If the function runs successfully, the test is marked as a success.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
-#### **Examples**
-##### *simpleMobTest.ts*
-```javascript
-gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
-  const attackerId = "fox";
-  const victimId = "chicken";
-  test.spawn(attackerId, { x: 5, y: 2, z: 5 });
-  test.spawn(victimId, { x: 2, y: 2, z: 2 });
-  test.assertEntityPresentInArea(victimId, true);
-  test.succeedWhen(() => {
-    test.assertEntityPresentInArea(victimId, false);
-  });
-})
-  .maxTicks(400)
-  .structureName("gametests:mediumglass");
+#### Examples
+##### ***simpleMobTest.ts***
+```typescript
+  gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
+    const attackerId = "fox";
+    const victimId = "chicken";
+
+    test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+    test.spawn(victimId, { x: 2, y: 2, z: 2 });
+
+    test.assertEntityPresentInArea(victimId, true);
+
+    test.succeedWhen(() => {
+      test.assertEntityPresentInArea(victimId, false);
+    });
+  })
+    .maxTicks(400)
+    .structureName("gametests:mediumglass");
 ```
 
 ### **succeedWhenBlockPresent**
 `
-succeedWhenBlockPresent(blockType: minecraftserver.BlockType, blockLocation: minecraftserver.Vector3, isPresent?: boolean): void
+succeedWhenBlockPresent(blockType: minecraftserver.BlockType | string, blockLocation: minecraftserver.Vector3, isPresent?: boolean): void
 `
 
 Depending on the condition of isPresent, tests for the presence of a block of a particular type on every tick. When the specified block of a type is found or not found (depending on isPresent), the test is marked as a success.
 
 #### **Parameters**
-- **blockType**: [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md)
+- **blockType**: [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) | *string*
   
   Type of block to test for.
 - **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
@@ -1217,8 +1421,13 @@ Depending on the condition of isPresent, tests for the presence of a block of a 
   
   If true, this function tests whether a block of the specified type is present. If false, tests that a block of the specified type is not present.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **succeedWhenEntityHasComponent**
 `
@@ -1241,6 +1450,9 @@ Tests for the presence of a component on every tick. Depending on the value of h
   
   If true, this function tests for the presence of a component. If false, this function tests for the lack of a component.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -1262,6 +1474,9 @@ Depending on the value of isPresent, tests for the presence of an entity on ever
   
   If true, this function tests whether an entity of the specified type is present. If false, tests that an entity of the specified type is not present.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -1279,8 +1494,13 @@ Triggers a block event from a fixed list of available block events.
   Event to trigger. Valid values include minecraft:drip, minecraft:grow_stalagtite, minecraft:grow_stalagmite, minecraft:grow_up, minecraft:grow_down and minecraft:grow_sideways.
 - **eventParameters**?: *number*[] = `[]`
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **until**
 `
@@ -1295,6 +1515,9 @@ This asynchronous function will wait until the code in the specified callback su
   Function with code to evaluate.
 
 #### **Returns** Promise&lt;*void*&gt;
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 ### **walkTo**
 `
@@ -1314,8 +1537,13 @@ Forces a mob to walk to a particular location. Usually used in conjunction with 
   
   Adjustable modifier to the mob's walking speed.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **walkToLocation**
 `
@@ -1335,8 +1563,13 @@ Forces a mob to walk to a particular location. Usually used in conjunction with 
   
   Adjustable modifier to the mob's walking speed.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*GameTestError*](GameTestError.md)
 
 ### **worldBlockLocation**
 `
@@ -1354,6 +1587,8 @@ From a BlockLocation with coordinates relative to the GameTest structure block, 
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 ### **worldLocation**
 `
@@ -1371,3 +1606,5 @@ From a location with coordinates relative to the GameTest structure block, retur
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)

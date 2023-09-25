@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: mikeam
 title: Addons Documentation - Entity List
-ms.prod: gaming
+description: "A reference document detailing the entities and damage sources used in addons for Minecraft: Bedrock Edition"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Addons Documentation - Entity List

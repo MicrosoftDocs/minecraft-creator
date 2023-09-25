@@ -2,13 +2,12 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: minecraft/server.EntityAgeableComponent Class
 description: Contents of the @minecraft/server.EntityAgeableComponent class.
+ms.service: minecraft-bedrock-edition
 ---
 # EntityAgeableComponent Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
@@ -25,6 +24,9 @@ Adds a timer for the entity to grow up. It can be accelerated by giving the enti
 Amount of time before the entity grows up, -1 for always a baby.
 
 Type: *number*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **growUp**
 `read-only growUp: Trigger;`
@@ -32,6 +34,9 @@ Type: *number*
 Event to run when this entity grows up.
 
 Type: [*Trigger*](Trigger.md)
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Methods
 - [getDropItems](#getdropitems)
@@ -65,7 +70,5 @@ List of items that can be fed to the entity. Includes 'item' for the item name a
 
 ### **componentId**
 `static read-only componentId = "minecraft:ageable";`
-
-Identifier of this component. Should always be minecraft:ageable.
 
 Type: *string*

@@ -2,14 +2,13 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: minecraft/server.BlockPermutation Class
 description: Contents of the @minecraft/server.BlockPermutation class.
+ms.service: minecraft-bedrock-edition
 ---
 # BlockPermutation Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-Contains the combination of type [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) and properties (also sometimes called block state) which describe a block (but does not belong to a specific [*@minecraft/server.Block*](../../minecraft/server/Block.md)). This type was introduced as of version 1.17.10.21.
+
+Contains the combination of type [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) and properties (also sometimes called block state) which describe a block (but does not belong to a specific [*@minecraft/server.Block*](../../minecraft/server/Block.md)).
 
 ## Properties
 
@@ -25,13 +24,13 @@ Type: [*BlockType*](BlockType.md)
 
 ## Methods
 - [clone](#clone)
-- [getAllProperties](#getallproperties)
+- [getAllStates](#getallstates)
 - [getItemStack](#getitemstack)
-- [getProperty](#getproperty)
+- [getState](#getstate)
 - [getTags](#gettags)
 - [hasTag](#hastag)
 - [matches](#matches)
-- [withProperty](#withproperty)
+- [withState](#withstate)
 - [resolve](#resolve)
 
 ### **clone**
@@ -46,21 +45,21 @@ Creates a copy of this permutation.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-### **getAllProperties**
+### **getAllStates**
 `
-getAllProperties(): Record<string, boolean | number | string>
+getAllStates(): Record<string, boolean | number | string>
 `
 
-Returns all available properties associated with this block.
+Returns all available block states associated with this block.
 
-#### **Returns** Record<*string*, *boolean* | *number* | *string*> - Returns the list of all of the properties that the permutation has.
+#### **Returns** Record<*string*, *boolean* | *number* | *string*> - Returns the list of all of the block states that the permutation has.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **getItemStack**
 `
-getItemStack(amount?: number): ItemStack
+getItemStack(amount?: number): ItemStack | undefined
 `
 
 Retrieves a prototype item stack based on this block permutation that can be used with item Container/ContainerSlot APIs.
@@ -70,22 +69,24 @@ Retrieves a prototype item stack based on this block permutation that can be use
   
   Number of instances of this block to place in the prototype item stack.
 
-#### **Returns** [*ItemStack*](ItemStack.md)
+#### **Returns** [*ItemStack*](ItemStack.md) | *undefined*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-### **getProperty**
+### **getState**
 `
-getProperty(propertyName: string): boolean | number | string | undefined
+getState(stateName: string): boolean | number | string | undefined
 `
 
-Gets a property for the permutation.
+Gets a state for the permutation.
 
 #### **Parameters**
-- **propertyName**: *string*
+- **stateName**: *string*
+  
+  Name of the block state who's value is to be returned.
 
-#### **Returns** *boolean* | *number* | *string* | *undefined* - Returns the property if the permutation has it, else `null`.
+#### **Returns** *boolean* | *number* | *string* | *undefined* - Returns the state if the permutation has it, else `undefined`.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -117,13 +118,15 @@ Checks to see if the permutation has a specific tag.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-#### **Examples**
-##### *check_block_tags.js*
-```javascript
+#### Examples
+##### ***check_block_tags.js***
+```typescript
 import { world } from "@minecraft/server";
+
 // Fetch the block
 const block = world.getDimension("overworld").getBlock({ x: 1, y: 2, z: 3 });
 const blockPerm = block.getPermutation();
+
 console.log(`Block is dirt: ${blockPerm.hasTag("dirt")}`);
 console.log(`Block is wood: ${blockPerm.hasTag("wood")}`);
 console.log(`Block is stone: ${blockPerm.hasTag("stone")}`);
@@ -131,24 +134,22 @@ console.log(`Block is stone: ${blockPerm.hasTag("stone")}`);
 
 ### **matches**
 `
-matches(blockName: string, properties?: Record<string, boolean | number | string>): boolean
+matches(blockName: string, states?: Record<string, boolean | number | string>): boolean
 `
 
-Returns a boolean whether a specified permutation matches this permutation. If properties is not specified, matches checks against the set of types more broadly.
+Returns a boolean whether a specified permutation matches this permutation. If states is not specified, matches checks against the set of types more broadly.
 
 #### **Parameters**
 - **blockName**: *string*
   
-  Identifier of the block.
-- **properties**?: Record<*string*, *boolean* | *number* | *string*> = `null`
-  
-  An optional set of properties to compare against.
+  An optional set of states to compare against.
+- **states**?: Record<*string*, *boolean* | *number* | *string*> = `null`
 
 #### **Returns** *boolean*
 
-### **withProperty**
+### **withState**
 `
-withProperty(name: string, value: boolean | number | string): BlockPermutation
+withState(name: string, value: boolean | number | string): BlockPermutation
 `
 
 Returns a derived BlockPermutation with a specific property set.
@@ -171,7 +172,7 @@ Returns a derived BlockPermutation with a specific property set.
 
 ### **resolve**
 `
-static resolve(blockName: string, properties?: Record<string, boolean | number | string>): BlockPermutation
+static resolve(blockName: string, states?: Record<string, boolean | number | string>): BlockPermutation
 `
 
 Given a type identifier and an optional set of properties, will return a BlockPermutation object that is usable in other block APIs (e.g., block.setPermutation)
@@ -180,11 +181,73 @@ Given a type identifier and an optional set of properties, will return a BlockPe
 - **blockName**: *string*
   
   Identifier of the block to check.
-- **properties**?: Record<*string*, *boolean* | *number* | *string*> = `null`
-  
-  Optional additional set of properties to check against.
+- **states**?: Record<*string*, *boolean* | *number* | *string*> = `null`
 
 #### **Returns** [*BlockPermutation*](BlockPermutation.md)
 
 > [!WARNING]
 > This function can throw errors.
+
+#### Examples
+##### ***addBlockColorCube.ts***
+```typescript
+  const allColorNames: string[] = [
+    "white",
+    "orange",
+    "magenta",
+    "light_blue",
+    "yellow",
+    "lime",
+    "pink",
+    "gray",
+    "silver",
+    "cyan",
+    "purple",
+    "blue",
+    "brown",
+    "green",
+    "red",
+    "black",
+  ];
+
+  const cubeDim = 7;
+
+  let colorIndex = 0;
+
+  for (let x = 0; x <= cubeDim; x++) {
+    for (let y = 0; y <= cubeDim; y++) {
+      for (let z = 0; z <= cubeDim; z++) {
+        colorIndex++;
+        overworld
+          .getBlock({ x: targetLocation.x + x, y: targetLocation.y + y, z: targetLocation.z + z })
+          ?.setPermutation(
+            mc.BlockPermutation.resolve("minecraft:wool", {
+              color: allColorNames[colorIndex % allColorNames.length],
+            })
+          );
+      }
+    }
+  }
+```
+
+#### Examples
+##### ***addTranslatedSign.ts***
+```typescript
+  const players = mc.world.getPlayers();
+
+  const dim = players[0].dimension;
+
+  const signBlock = dim.getBlock(targetLocation);
+
+  if (!signBlock) {
+    log("Could not find a block at specified location.");
+    return -1;
+  }
+  let signPerm = mc.BlockPermutation.resolve("minecraft:standing_sign", { ground_sign_direction: 8 });
+
+  signBlock.setPermutation(signPerm);
+
+  const signComponent = signBlock.getComponent("minecraft:sign") as mc.BlockSignComponent;
+
+  signComponent.setText({ translate: "item.skull.player.name", with: [players[0].name] });
+```

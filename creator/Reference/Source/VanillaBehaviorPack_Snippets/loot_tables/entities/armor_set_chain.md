@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: armor_set_chain
-ms.prod: gaming
+description: "A code snippet for the armor set chain loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # armor_set_chain

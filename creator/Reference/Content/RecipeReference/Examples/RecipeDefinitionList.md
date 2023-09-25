@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Recipe Documentation - Recipe Definition List
-ms.prod: gaming
+description: "A reference document detailing the different types of recipes that can be used by creators"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Recipe Documentation - Recipe Definition List
@@ -19,3 +20,4 @@ Recipes are setup in JSON files under the `behavior_packs/'name of pack'/recipes
 |[Potion Brewing](RecipeDefinitions/minecraftRecipe_PotionBrewing.md) |Represents a recipe that for use with a Potion Brewing station.|
 |[Potion Brewing Mix](RecipeDefinitions/minecraftRecipe_PotionBrewingMix.md) |Represents a Potion Brewing Mix.|
 |[Smithing Transform](RecipeDefinitions/minecraftRecipe_SmithingTransform.md) |Represents a smithing transform recipe for the Smithing Table.|
+|[Smithing Trim](RecipeDefinitions/minecraftRecipe_SmithingTrim.md) |Represents a smithing trim recipe for the Smithing Table.|

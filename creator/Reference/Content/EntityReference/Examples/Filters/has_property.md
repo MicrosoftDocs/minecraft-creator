@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - has_property
-ms.prod: gaming
+description: "A reference document detailing the 'has_property' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - has_property
@@ -16,7 +17,6 @@ Tests for the presence of a property of the subject entity.
 | subject| self|String| (Optional) The subject of this filter test.|
 | operator|equals |String | (Optional) The comparison to apply with 'value'.|
 | value|*not set* |String | (Required) The property name to look for. |
-
 
 ### operator
 

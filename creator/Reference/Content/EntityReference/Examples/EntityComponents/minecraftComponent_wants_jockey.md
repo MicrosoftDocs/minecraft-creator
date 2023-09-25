@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - minecraft:wants_jockey
-ms.prod: gaming
+description: "A reference document detailing the 'wants_jockey' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation -  minecraft:wants_jockey

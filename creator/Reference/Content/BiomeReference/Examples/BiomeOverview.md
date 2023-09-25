@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Biome Documentation - Overview
-ms.prod: gaming
+description: "A reference document discussing biomes"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Biome Documentation - Overview
@@ -17,6 +18,13 @@ Biomes describe how a local patch of the world should look and behave. By writin
 > * Change the distribution of decorative features (e.g. trees, grass, etc.) for a biome.
 > * Change the mobs that spawn for a biome.
 > * Change the climate for a biome.
+
+>[!IMPORTANT]
+> Custom biomes require the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
+>
+>Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
+>
+>To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../Documents/ExperimentalFeaturesToggle.md).
 
 ## JSON format
 
@@ -78,7 +86,7 @@ Biomes are read from JSON files in the biomes subfolders of behavior packs. Load
 > If you add a new biome, you will need to write component data that allows it to participate in world generation (see full schema below), or else it will not show up in your worlds.
 
 > [!TIP]
-> Code examples below are tagged with the `C` programing language to have a similar syntax highlighting as Molang and the schema being used.
+> Code examples below are tagged with the `C` programming language to have a similar syntax highlighting as Molang and the schema being used.
 
 ### Schema
 

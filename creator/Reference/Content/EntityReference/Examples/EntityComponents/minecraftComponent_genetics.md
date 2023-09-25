@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:genetics
-ms.prod: gaming
+description: "A reference document detailing the 'genetics' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:genetics
@@ -15,6 +16,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 | genes| *not set*| List| The list of genes that this entity has and will cross with a partner during breeding.|
 | mutation_rate| 0.03125| Decimal| Chance that an allele will be replaced with a random one instead of the parent's allele during birth. |
+| use_simplified_breeding| --| Boolean| When set to 'true', this optional flag prohibits the inheritance of hidden parent alleles as main alleles in children and the inheritance of main alleles as hidden alleles in children. This allows for easier implementation of basic breeding logic. |
 
 ### genes
 

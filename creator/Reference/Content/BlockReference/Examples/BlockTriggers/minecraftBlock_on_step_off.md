@@ -2,12 +2,13 @@
 author: mammerla
 ms.author: mikeam
 title: Block Documentation - minecraft:on_step_off
-ms.prod: gaming
+description: "A reference document detailing the 'on_step_off' block trigger"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - minecraft:on_step_off
 
-`minecraft:on_step_off` is an Event Trigger for when an actor steps off the block.
+`minecraft:on_step_off` is an Event Trigger for when an entity steps off the block.
 
 ## Parameters
 
@@ -23,7 +24,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:on_step_off":{
-    "condition": "query.block_property(custom:is_playing_sound) == true", //custom condition
+    "condition": "query.block_state(custom:is_playing_sound) == true", //custom condition
     "event" : "disable_the_alarm", //custom event
     "target": "self"
 }

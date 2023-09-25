@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Block Documentation - minecraft:display_name
-ms.prod: gaming
+description: "A reference document detailing the 'display_name' block component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - minecraft:display_name

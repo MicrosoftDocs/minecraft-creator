@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:shareables
-ms.prod: gaming
+description: "A reference document detailing the 'shareables' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:shareables
@@ -34,6 +35,7 @@ ms.prod: gaming
 | pickup_limit| *not set*| Integer| Maximum number of this item the entity will pick up during a single goal tick.|
 | pickup_only | false | Boolean | Determines whether the entity can only pickup the item and not drop it. |
 | priority| *not set*| Integer| Prioritizes which items the entity prefers. 0 is the highest priority.|
+| singular_pickup| False| Boolean| Controls whether the entity can pick up more of the same item if it is already holding that item. |
 | stored_in_inventory| *not set*| Boolean| Determines whether the entity will try to put the item in its inventory if it has the inventory component and if it can't be equipped.|
 | surplus_amount| *not set*| Integer| Number of this item considered extra that the entity wants to share.|
 | want_amount| *not set*| Integer| Number of this item the entity wants to have.|

@@ -11,7 +11,7 @@ metadata:
   ms.topic: hub-page # Required
   ms.date: 08/30/2021
   author: mammerla # Required; Github alias
-  ms.author: v-jillheaden # Required; Microsoft alias; with correct grammar
+  ms.author: kakinnun # Required; Microsoft alias; with correct grammar
 
 # highlighted content section (optional), will outlined up to 8 items in a 4x2 grid.
 highlightedContent:
@@ -26,21 +26,21 @@ highlightedContent:
       itemType: whats-new
       url: Documents/EditorOverview.md
     #card
-    - title: "1.19.70 Update Summary"
+    - title: "1.20.30 Update Summary"
       itemType: whats-new
-      url: Documents/Update1.19.70.md
+      url: Documents/Update1.20.30.md
     #card
-    - title: New /execute Syntax
+    - title: Camera Command
       itemType: whats-new
-      url: Documents/CommandsNewExecute.md
+      url: Documents/CameraCommandIntroduction.md
     #card
-    - title: "Entity Properties"
+    - title: "Building Editor Extensions"
       itemType: whats-new
-      url: Documents/IntroductionToEntityProperties.md
+      url: Documents/EditorExtensionsIntroduction.md
     #card
-    - title: Advanced Custom Blocks
+    - title: Minecraft Item Wizard
       itemType: whats-new
-      url: Documents/AdvancedCustomBlocks.md
+      url: Documents/MinecraftItemWizard.md
 
 # productDirectory section (optional)
 productDirectory:
@@ -85,7 +85,7 @@ conceptualContent:
               itemType: how-to-guide
               text: How to add a Custom Block
         # card
-        - title: Build a "Complete the Monument" world with Commands
+        - title: Build a simple game with Commands
           summary: "Commands are a powerful way to add logic into your experiences."
           links:
             - url: Documents/CommandsIntroduction.md
@@ -138,37 +138,46 @@ conceptualContent:
             text: Introduction to Loot Tables
           - url: Documents/LootAndTradeTableFunctions.md
             itemType: overview
-            text: Loot and Trade Table Functions
-          - url: Documents/LootSpawnAndKill.md
+            text: Loot Overloads
+          - url: Documents/LootOverloads.md
             itemType: overview
-            text: Learn about Loot Spawn and Kill
+            text: Learn about Loot Overloads
         # card
-        - title: Working with Chunker
-          summary: "Utilize Chunker to convert your existing Minecraft: Java Edition worlds to Minecraft: Bedrock Edition"
+        - title: Adding new Custom Blocks
+          summary: "Learn how to make your own custom blocks to decorate your world."
           links:
-          - url: Documents/ChunkerOverview.md
-            itemType: overview
-            text: Chunker - Overview
-          - url: Documents/ChunkerWorldSettings.md
+          - url: Documents/AddCustomDieBlock.md
             itemType: tutorial
-            text: Chunker - World Settings
-          - url: Documents/ChunkerTheNether.md
+            text: Simple Blocks
+          - url: Documents/AdvancedCustomBlocks.md
             itemType: tutorial
-            text: Chunker - How to Clear The Nether
-          - url: Documents/ChunkerAdvancedMode.md
+            text: Unique Shape Blocks
+          - url: Documents/CustomBlockRenderLighting.md
             itemType: tutorial
-            text: Chunker - Advanced Mode
+            text: Block Render and Lighting Options
+          - url: Documents/CustomBlockOversized.md
+            itemType: tutorial
+            text: Oversized Blocks
     # Reference Section
     - title: References  # < 60 chars (optional)
       summary: "Learn how content works with Reference documentation and how GameTest can empower your workflow." # < 160 chars (optional)
       items:
       # card
       - title: Using Script APIs
-        summary: "Learn how new experimental Script APIs can speed up your development time."
+        summary: "Learn how new Script APIs can speed up your development time and make more dynamic content."
         links:
+          - url: Documents/ScriptingGettingStarted.md
+            itemType: how-to-guide
+            text: Get started by building a gameplay experience
           - url: Documents/ScriptDeveloperTools.md
             itemType: how-to-guide
             text: Use Visual Studio Code tools to write script
+          - url: ScriptAPI/index.yml
+            itemType: reference
+            text: Script API
+          - url: Documents/EditorExtensionsIntroduction.md
+            itemType: get-started
+            text: Getting Started with Editor Extensions
           - url: ScriptAPI/minecraft/server-gametest/minecraft-server-gametest.md
             itemType: reference
             text: GameTest API
@@ -191,6 +200,9 @@ conceptualContent:
           - url: Reference/Content/blockreference/index.yml
             itemType: reference
             text: Block JSON Documentation
+          - url: Commands/index.yml
+            itemType: reference
+            text: Command Documentation
           - url: Reference/Content/entityreference/index.yml
             itemType: reference
             text: Entity JSON Documentation
@@ -234,9 +246,6 @@ tools:
     - title: Visual Studio Code
       imageSrc: images/VSCode.png
       url: "https://code.visualstudio.com/Download"
-    - title: Vanilla Behavior Pack
+    - title: Vanilla Resource and Behavior Packs
       imageSrc: images/ResourcePack64.png
       url: "https://aka.ms/behaviorpacktemplate"
-    - title: Vanilla Resource Pack
-      imageSrc: images/ResourcePack64.png
-      url: "https://aka.ms/resourcepacktemplate"

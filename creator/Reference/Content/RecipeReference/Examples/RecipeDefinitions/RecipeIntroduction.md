@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Introduction to Recipes
-ms.prod: gaming
+description: "A reference document discussing the basics of recipes for creators"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Recipe Introduction

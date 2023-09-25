@@ -2,15 +2,11 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: minecraft/server.MolangVariableMap Class
 description: Contents of the @minecraft/server.MolangVariableMap class.
+ms.service: minecraft-bedrock-edition
 ---
 # MolangVariableMap Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains a set of additional variable values for further defining how rendering and animations function.
 
@@ -18,6 +14,7 @@ Contains a set of additional variable values for further defining how rendering 
 - [constructor](#constructor)
 - [setColorRGB](#setcolorrgb)
 - [setColorRGBA](#setcolorrgba)
+- [setFloat](#setfloat)
 - [setSpeedAndDirection](#setspeedanddirection)
 - [setVector3](#setvector3)
 
@@ -32,7 +29,7 @@ An constructor for creating a new MolangVariableMap object.
 
 ### **setColorRGB**
 `
-setColorRGB(variableName: string, color: Color): MolangVariableMap
+setColorRGB(variableName: string, color: RGB): void
 `
 
 Adds the following variables to Molang:
@@ -45,13 +42,14 @@ Adds the following variables to Molang:
 
 #### **Parameters**
 - **variableName**: *string*
-- **color**: [*Color*](Color.md)
+- **color**: [*RGB*](RGB.md)
 
-#### **Returns** [*MolangVariableMap*](MolangVariableMap.md)
+> [!WARNING]
+> This function can throw errors.
 
 ### **setColorRGBA**
 `
-setColorRGBA(variableName: string, color: Color): MolangVariableMap
+setColorRGBA(variableName: string, color: RGBA): void
 `
 
 Adds the following variables to Molang:
@@ -66,13 +64,32 @@ Adds the following variables to Molang:
 
 #### **Parameters**
 - **variableName**: *string*
-- **color**: [*Color*](Color.md)
+- **color**: [*RGBA*](RGBA.md)
 
-#### **Returns** [*MolangVariableMap*](MolangVariableMap.md)
+> [!WARNING]
+> This function can throw errors.
+
+### **setFloat**
+`
+setFloat(variableName: string, number: number): void
+`
+
+Sets a numeric (decimal) value within the Molang variable map.
+
+#### **Parameters**
+- **variableName**: *string*
+  
+  Name of the float-based number to set.
+- **number**: *number*
+  
+  Value for the Molang-based variable to set.
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **setSpeedAndDirection**
 `
-setSpeedAndDirection(variableName: string, speed: number, direction: Vector): MolangVariableMap
+setSpeedAndDirection(variableName: string, speed: number, direction: Vector3): void
 `
 
 Adds the following variables to Molang:
@@ -88,13 +105,14 @@ Adds the following variables to Molang:
 #### **Parameters**
 - **variableName**: *string*
 - **speed**: *number*
-- **direction**: [*Vector*](Vector.md)
+- **direction**: [*Vector3*](Vector3.md)
 
-#### **Returns** [*MolangVariableMap*](MolangVariableMap.md)
+> [!WARNING]
+> This function can throw errors.
 
 ### **setVector3**
 `
-setVector3(variableName: string, vector: Vector): MolangVariableMap
+setVector3(variableName: string, vector: Vector3): void
 `
 
 Adds the following variables to Molang:
@@ -107,6 +125,7 @@ Adds the following variables to Molang:
 
 #### **Parameters**
 - **variableName**: *string*
-- **vector**: [*Vector*](Vector.md)
+- **vector**: [*Vector3*](Vector3.md)
 
-#### **Returns** [*MolangVariableMap*](MolangVariableMap.md)
+> [!WARNING]
+> This function can throw errors.

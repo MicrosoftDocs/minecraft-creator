@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: structure Command
 description: Description and usage of the structure command
+ms.service: minecraft-bedrock-edition
 ---
 # `/structure` Command
 Saves or loads a structure in the world. See examples of this command in use in the [Structure Blocks documentation](https://learn.microsoft.com/minecraft/creator/documents/structureblockstutorial#creating-structures-using-the-structure-command).
@@ -37,12 +37,12 @@ Saves or loads a structure in the world. See examples of this command in use in 
 `Delete` a `structure` by `name`.
 
 ### Load structure
-`/structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [includeEntities: Boolean] [includeBlocks: Boolean] [integrity: float] [seed: string]`
+`/structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [includeEntities: Boolean] [includeBlocks: Boolean] [waterlogged: Boolean] [integrity: float] [seed: string]`
 
 `Load` a `structure` with required structure `name` and `to`, and optional `rotation`, `mirror`, `entities`, `blocks`, `integrity`, and `seed`.
 
 ### Load structure, optional animation mode, animation seconds
-`/structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [animationMode: StructureAnimationMode] [animationSeconds: float] [includeEntities: Boolean] [includeBlocks: Boolean] [integrity: float] [seed: string]`
+`/structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [animationMode: StructureAnimationMode] [animationSeconds: float] [includeEntities: Boolean] [includeBlocks: Boolean] [waterlogged: Boolean] [integrity: float] [seed: string]`
 
 `Load` a `structure` with required structure `name` and `to`, and optional `rotation`, `mirror`, `animation mode`, `animation seconds`, `entities`, `blocks`, `integrity`, and `seed`.
 
@@ -79,20 +79,21 @@ Default: `memory`.
 A `string` that specifies the seed when loading in a block with variable integrity.
 - `to: x y z`: position
 A `vector` used with `from` that specifies the opposing corners of a structure.
+- `waterlogged`: [Boolean](../enums/Boolean.md)
 
 ## Enums
 ### `Mirror`
 An `enum` of `0` for none, `1` to mirror X, `2` to mirror Z, or `3` to mirror XZ.
 
 #### Values
-- `none`
-none - choose '0' for none
 - `x`
 x - choose '1' to mirror x
-- `xz`
-xz - choose '3' to mirror xz
 - `z`
 z - choose '2' to mirror z
+- `none`
+none - choose '0' for none
+- `xz`
+xz - choose '3' to mirror xz
 
 ### `Rotation`
 An `enum` of the rotation when loading in a structure. Must be one of `0_degrees`, `90_degrees`, `180_degrees`, or `270_degrees`.
@@ -101,12 +102,12 @@ Default: `0_degrees`.
 #### Values
 - `0_degrees`
 No rotation
+- `90_degrees`
+Rotate 90 degrees
 - `180_degrees`
 Rotate 180 degrees
 - `270_degrees`
 Rotate 270 degrees
-- `90_degrees`
-Rotate 90 degrees
 
 ### `StructureAnimationMode`
 Enum of Structure Animation Mode

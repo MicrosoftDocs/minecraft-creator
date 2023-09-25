@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.random_search_and_dig
-ms.prod: gaming
+description: "A reference document detailing the 'behavior.random_search_and_dig' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.random_search_and_dig
@@ -17,7 +18,7 @@ ms.prod: gaming
 |digging_duration_range|[0.000000, 0.000000]|Range [a, b]|Digging duration in seconds.|
 |find_valid_position_retries|0.000000|Decimal|Amount of retries to find a valid target position within search range.|
 |goal_radius|1.500000|Decimal|Distance in blocks within the entity to consider it has reached the target position.|
-|item| *not set*| Item Description Properties| The item to spawn on a successful dig. Format: itemName:auxValue |
+|items| *not set*| List| Weighted list of item(s) to spawn on a successful dig. |
 |on_digging_start|*not set*|Trigger|Event to run when the goal ends searching and digging begins.|
 |on_fail_during_digging|*not set*|Trigger|Event to run when the goal failed while in the digging state.|
 |on_fail_during_searching|*not set*|Trigger|Event to run when the goal failed while in the searching state.|

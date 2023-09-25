@@ -1,14 +1,14 @@
 ---
-author: mammerla
-ms.author: v-bbortree
+author: JimSeaman42
+ms.author: mikeam
 title: Schemas List
-ms.prod: gaming
-description: The list of data format schemas.
+description: "This reference document lists currently available data format schemas"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Schemas List
 
-These are the data format schemas for content creators to reference when editing or creating new content.
+This list details the available data format schemas for content creators to reference when editing or creating new content.
 
 | Schema name| Description|
 |:------------|:------------|
@@ -19,3 +19,4 @@ These are the data format schemas for content creators to reference when editing
 | [geometry:1.12.0](Schemas\minecraftSchema_geometry_1.12.0.md)| This schema corresponds to the *.geo.json files in the "models/entity" folder of the resource pack.|
 | [geometry:1.14.0](Schemas\minecraftSchema_geometry_1.14.0.md)| This schema corresponds to the *.geo.json files in the "models/entity" folder of the resource pack.|
 | [geometry:1.16.0](Schemas\minecraftSchema_geometry_1.16.0.md)| This schema corresponds to the *.geo.json files in the "models/entity" folder of the resource pack.|
+| [geometry:1.19.30](Schemas\minecraftSchema_geometry_1.19.30.md)| This schema corresponds to the *.geo.json files in the "models/entity" folder of the resource pack.|

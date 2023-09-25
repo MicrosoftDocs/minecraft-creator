@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Recipe Documentation - Smithing Trim Recipe
-ms.prod: gaming
+description: "A reference document detailing smithing trim recipes"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Recipe Documentation - Smithing Trim Recipe
 
-Represents a smithing transform recipe for the Smithing Table. This recipe applies a colored trim pattern to an item, while preserving its other properties.
+Represents a smithing trim recipe for the Smithing Table. This recipe applies a colored trim pattern to an item while preserving its other properties.
 
 ## Parameters
 
@@ -18,7 +19,7 @@ Represents a smithing transform recipe for the Smithing Table. This recipe appli
 |tags|String array |The crafting station compatible with the recipe. The only accepted value is "smithing_table" |
 |template| item name or item tag| The template needed to perform the trim operation. It defines the pattern which will be applied to the item. In case of stackable items, only 1 item is consumed. Items must have the "minecraft:trim_templates" tag to be accepted into the respective UI slot.|
 
-## Smithing Transform Recipe Example
+## Smithing Trim Recipe Example
 
 ```JSON
 {

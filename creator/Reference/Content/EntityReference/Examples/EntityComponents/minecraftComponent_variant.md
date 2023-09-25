@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:variant
-ms.prod: gaming
+description: "A reference document detailing the 'variant' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation -  minecraft:variant
@@ -37,7 +38,7 @@ ms.prod: gaming
         }
 ```
 
-## Vanilla entities using `minecraft:variant`
+## Vanilla entity sample JSON files using `minecraft:variant`
 
 - [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
 - [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)

@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: titleraw Command
 description: Description and usage of the titleraw command
+ms.service: minecraft-bedrock-edition
 ---
 # `/titleraw` Command
 Controls screen titles with JSON messages.
@@ -63,9 +63,9 @@ Default: `0`.
 Enum of Title Raw Set
 
 #### Values
-- `actionbar`
-Action Bar
-- `subtitle`
-Subtitle
 - `title`
 Title
+- `subtitle`
+Subtitle
+- `actionbar`
+Action Bar

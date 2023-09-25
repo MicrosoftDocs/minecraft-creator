@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: glow squid spawn_rule
-ms.prod: gaming
+description: "A code snippet of the glow squid spawn rules"
+ms.service: minecraft-bedrock-edition
 ---
 
 # glow squid spawn_rule

@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Block Documentation - minecraft:placement_filter
-ms.prod: gaming
+description: "A reference document detailing the 'placement_filter' block component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - minecraft:placement_filter

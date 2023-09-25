@@ -1,9 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Tags as Recipe Input
-ms.prod: gaming
 description: "A guide to Creating Recipes with Tags in Minecraft: Bedrock Edition"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Tags as Recipe Input

@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:celebrate_hunt
-ms.prod: gaming
+description: "A reference document detailing the 'celebrate_hunt' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:celebrate_hunt
@@ -14,7 +15,7 @@ ms.prod: gaming
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |broadcast| true| Boolean|  If true, celebration will be broadcasted to other entities in the radius. |
-|[celeberation_targets](../FilterList.md)|*not set* | Minecraft Filter|  The list of conditions that the target of a hunt must satisfy to initiate celebration. |
+|[celebration_targets](../FilterList.md)|*not set* | Minecraft Filter|  The list of conditions that the target of a hunt must satisfy to initiate celebration. |
 |celebrate_sound|*not set* | String|  The sound event to play when the mob is celebrating |
 |duration| 4| Integer| Duration, in seconds, of celebration |
 |radius| 16| Decimal|  If broadcast is enabled, specifies the radius in which it will notify other entities for celebration. |

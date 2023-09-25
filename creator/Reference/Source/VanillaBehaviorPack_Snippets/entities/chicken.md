@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: chicken
-ms.prod: gaming
+description: "A code snippet for the chicken entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # chicken

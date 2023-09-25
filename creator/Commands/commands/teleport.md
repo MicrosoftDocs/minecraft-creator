@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: teleport Command
 description: Description and usage of the teleport command
+ms.service: minecraft-bedrock-edition
 ---
 # `/teleport` Command
 Teleports entities  to specific locations. Can also be written as `/tp`.
@@ -45,15 +45,15 @@ Teleports entities  to specific locations. Can also be written as `/tp`.
 
 `Teleport` yourself  to a `vector` destination facing an `entity` with an optional `check for blocks`.
 
-### Teleport player
-`/teleport <victim: target> <destination: x y z> [checkForBlocks: Boolean]`
-
-`Teleport` a target `player` to a `vector` destination with optional `check for blocks`.
-
 ### Teleport player, x y rotation
 `/teleport <victim: target> <destination: x y z> [yRot: rotation] [xRot: rotation] [checkForBlocks: Boolean]`
 
 `Teleport` a target `player`  to a `vector` destination with optional `y rotation`, `x rotation`, and `check for blocks`.
+
+### Teleport player
+`/teleport <victim: target> <destination: x y z> [checkForBlocks: Boolean]`
+
+`Teleport` a target `player` to a `vector` destination with optional `check for blocks`.
 
 ### Teleport player, facing position
 `/teleport <victim: target> <destination: x y z> facing <lookAtPosition: x y z> [checkForBlocks: Boolean]`
@@ -66,14 +66,14 @@ Teleports entities  to specific locations. Can also be written as `/tp`.
 `Teleport` player to a `vector` destination facing a `entity` with an optional `check for blocks`.
 
 ### Teleport player to entity destination
-`/teleport <destination: target> [checkForBlocks: Boolean]`
+`/teleport <destination: target>`
 
 `Teleport` a target `player` to an entity's destination with an optional `check for blocks`.
 
-### Teleport entity relative to another entity
+### Teleport player
 `/teleport <victim: target> <destination: target> [checkForBlocks: Boolean]`
 
-`Teleport` a target `player` to a destination entity with an optional `check for blocks`.
+`Teleport` a target `player` to a `vector` destination with an optional `check for blocks`.
 
 ## Arguments
 - `checkForBlocks`: [Boolean](../enums/Boolean.md)

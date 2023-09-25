@@ -2,15 +2,11 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: minecraft/server.EntityQueryOptions Interface
 description: Contents of the @minecraft/server.EntityQueryOptions class.
+ms.service: minecraft-bedrock-edition
 ---
 # EntityQueryOptions Interface
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains options for selecting entities within an area.
 
@@ -177,20 +173,172 @@ In conjunction with location, specified a cuboid volume of entities to include.
 
 Type: [*BlockAreaSize*](BlockAreaSize.md)
 
-#### **Examples**
-##### *testThatEntityIsFeatherItem.ts*
-```javascript
-const query = {
-  type: "item",
-  location: targetLocation,
-};
-const items = overworld.getEntities(query);
-for (const item of items) {
-  const itemComp = item.getComponent("item") as any;
-  if (itemComp) {
-    if (itemComp.itemStack.id.endsWith("feather")) {
-      console.log("Success! Found a feather", 1);
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+#### Examples
+##### ***bounceSkeletons.ts***
+```typescript
+  let mobs = ["creeper", "skeleton", "sheep"];
+
+  // create some sample mob data
+  for (let i = 0; i < 10; i++) {
+    overworld.spawnEntity(mobs[i % mobs.length], targetLocation);
+  }
+
+  let eqo: mc.EntityQueryOptions = {
+    type: "skeleton",
+  };
+
+  for (let entity of overworld.getEntities(eqo)) {
+    entity.applyKnockback(0, 0, 0, 1);
+  }
+```
+##### ***tagsQuery.ts***
+```typescript
+  let mobs = ["creeper", "skeleton", "sheep"];
+
+  // create some sample mob data
+  for (let i = 0; i < 10; i++) {
+    let mobTypeId = mobs[i % mobs.length];
+    let entity = overworld.spawnEntity(mobTypeId, targetLocation);
+    entity.addTag("mobparty." + mobTypeId);
+  }
+
+  let eqo: mc.EntityQueryOptions = {
+    tags: ["mobparty.skeleton"],
+  };
+
+  for (let entity of overworld.getEntities(eqo)) {
+    entity.kill();
+  }
+```
+##### ***testBlockConditional.ts***
+```typescript
+// Having this command:
+
+// execute as @e[type=fox] positioned as @s if block ^ ^-1 ^ stone run summon salmon
+
+// Equivalent scripting code would be:
+dimension
+  .getEntities({
+    type: "fox",
+  })
+  .filter(
+    (entity) =>
+      dimension.getBlock({
+        x: entity.location.x,
+        y: entity.location.y - 1,
+        z: entity.location.z,
+      }).type.id === "minecraft:stone"
+  )
+  .forEach((entity) => {
+    dimension.spawnEntity("salmon", entity.location);
+  });
+```
+##### ***testPlaySoundChained.ts***
+```typescript
+// Having this command:
+
+// execute as @e[type=armor_stand,name=myArmorStand,tag=dummyTag1,tag=!dummyTag2] run playsound raid.horn @a
+
+// Equivalent scripting code would be:
+const targetPlayers = dimension.getPlayers();
+const originEntities = dimension.getEntities({
+  type: "armor_stand",
+  name: "myArmorStand",
+  tags: ["dummyTag1"],
+  excludeTags: ["dummyTag2"],
+});
+
+originEntities.forEach((entity) => {
+  targetPlayers.forEach((player) => {
+    player.playSound("raid.horn");
+  });
+});
+```
+##### ***testSendMessageAllPlayers.ts***
+```typescript
+// Having this command:
+
+// execute as @e[type=armor_stand,name=myArmorStand,tag=dummyTag1,tag=!dummyTag2] run tellraw @a { "rawtext": [{"translate": "hello.world" }] }
+
+// Equivalent scripting code would be:
+const targetPlayers = dimension.getPlayers();
+const originEntities = dimension.getEntities({
+  type: "armor_stand",
+  name: "myArmorStand",
+  tags: ["dummyTag1"],
+  excludeTags: ["dummyTag2"],
+});
+
+originEntities.forEach((entity) => {
+  targetPlayers.forEach((player) => {
+    player.sendMessage({ rawtext: [{ translate: "hello.world" }] });
+  });
+});
+```
+##### ***testSetScoreBoardChained.ts***
+```typescript
+// Having these commands:
+
+// scoreboard objectives add scoreObjective1 dummy
+// scoreboard players set @e[type=armor_stand,name=myArmorStand] scoreObjective1 -1
+
+// Equivalent scripting code would be:
+const objective = world.scoreboard.addObjective("scoreObjective1", "dummy");
+dimension
+  .getEntities({
+    type: "armor_stand",
+    name: "myArmorStand",
+  })
+  .forEach((entity) => {
+    if (entity.scoreboard !== undefined) {
+      objective.setScore(entity.scoreboard, -1);
+    }
+  });
+```
+##### ***testSummonMobChained.ts***
+```typescript
+// Having this command:
+
+// execute as @e[type=armor_stand] run execute as @a[x=0,y=-60,z=0,c=4,r=15] run summon pig ~1 ~ ~
+
+// Equivalent scripting code would be:
+const armorStandArray = dimension.getEntities({
+  type: "armor_stand",
+});
+const playerArray = dimension.getPlayers({
+  location: { x: 0, y: -60, z: 0 },
+  closest: 4,
+  maxDistance: 15,
+});
+armorStandArray.forEach((entity) => {
+  playerArray.forEach((player) => {
+    dimension.spawnEntity("pig", {
+      x: player.location.x + 1,
+      y: player.location.y,
+      z: player.location.z,
+    });
+  });
+});
+```
+##### ***testThatEntityIsFeatherItem.ts***
+```typescript
+  const overworld = mc.world.getDimension("overworld");
+
+  const items = overworld.getEntities({
+    location: targetLocation,
+    maxDistance: 20,
+  });
+
+  for (const item of items) {
+    const itemComp = item.getComponent("item") as mc.EntityItemComponent;
+
+    if (itemComp) {
+      if (itemComp.itemStack.typeId.endsWith("feather")) {
+        log("Success! Found a feather", 1);
+      }
     }
   }
-}
 ```

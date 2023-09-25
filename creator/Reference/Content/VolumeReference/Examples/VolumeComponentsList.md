@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Volume Documentation - Components List
-ms.prod: gaming
+description: "A reference document listing all currently available volume components"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Volume Documentation - Components

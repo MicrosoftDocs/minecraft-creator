@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:breedable
-ms.prod: gaming
+description: "A reference document detailing the 'breedable' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:breedable
 
-`minecraft:breedable` comppels an entity to get into the `love` state used for breeding.
+`minecraft:breedable` compels an entity to get into the `love` state used for breeding.
 
 >[!IMPORTANT]
 > `minecraft:breedable`requires the behavior [`minecraft:behavior.breed`](../EntityGoals/minecraftBehavior_breed.md) in order to breed.

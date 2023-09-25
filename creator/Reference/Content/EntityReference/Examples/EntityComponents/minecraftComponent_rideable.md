@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:rideable
-ms.prod: gaming
+description: "A reference document detailing the 'rideable' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:rideable
@@ -16,9 +17,9 @@ ms.prod: gaming
 | controlling_seat| 0| Integer| The seat that designates the driver of the entity. This is only observed by the horse/boat styles of riding; minecarts/entities with "minecraft:controlled_by_player" give control to any player in any seat.  |
 | crouching_skip_interact| True| Boolean| If true, the entity can't be interacted with if the entity interacting with it is crouching |
 | family_types| *not set*| List| List of entities that can ride this entity |
-| interact_text| *not set*| String| The text to display while playing with touch-screen controles when the player can interact with the entity |
+| interact_text| *not set*| String| The text to display while playing with touch-screen controls when the player can interact with the entity |
 | passenger_max_width| 0.00| Decimal| The max width a mob can be to be a passenger. A value of 0 ignores this parameter. |
-| priority| 0| Integer| This field may exist in old data but isn't used by minecraft:rideable. |
+| priority| 0| Integer| This field may exist in old data but isn't used by `minecraft:rideable`. |
 | pull_in_entities| False| Boolean| If true, the entity will pull in entities that are in the correct family_types into any available seats |
 | rider_can_interact| False| Boolean| If true, the entity will be picked when looked at by the rider |
 | seat_count| 1| Integer| The number of entities that can ride this entity at the same time |

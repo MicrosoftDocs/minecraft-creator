@@ -2,13 +2,12 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: minecraft/server.BlockPistonComponent Class
 description: Contents of the @minecraft/server.BlockPistonComponent class.
+ms.service: minecraft-bedrock-edition
 ---
 # BlockPistonComponent Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
@@ -25,6 +24,9 @@ When present, this block has piston-like behavior. Contains additional propertie
 Whether the piston is fully expanded.
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **isExpanding**
 `read-only isExpanding: boolean;`
@@ -32,6 +34,9 @@ Type: *boolean*
 Whether the piston is in the process of expanding.
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **isMoving**
 `read-only isMoving: boolean;`
@@ -39,6 +44,9 @@ Type: *boolean*
 Whether the piston is in the process of expanding or retracting.
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **isRetracted**
 `read-only isRetracted: boolean;`
@@ -46,6 +54,9 @@ Type: *boolean*
 Whether the piston is fully retracted.
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **isRetracting**
 `read-only isRetracting: boolean;`
@@ -53,6 +64,9 @@ Type: *boolean*
 Whether the piston is in the process of retracting.
 
 Type: *boolean*
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Methods
 - [getAttachedBlocks](#getattachedblocks)
@@ -73,7 +87,5 @@ Retrieves a set of blocks that this piston is connected with.
 
 ### **componentId**
 `static read-only componentId = "minecraft:piston";`
-
-Identifier of this component.
 
 Type: *string*

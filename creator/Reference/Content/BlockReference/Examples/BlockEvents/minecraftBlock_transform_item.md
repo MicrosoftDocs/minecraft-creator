@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Block Documentation - transform_item
-ms.prod: gaming
+description: "A reference document detailing the 'transform_item' block event response"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - transform_item

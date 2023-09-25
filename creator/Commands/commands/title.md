@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: title Command
 description: Description and usage of the title command
+ms.service: minecraft-bedrock-edition
 ---
 # `/title` Command
 Controls screen titles.
@@ -63,9 +63,9 @@ A `plain text` `string`  for the title.
 Enum of Title Sets
 
 #### Values
-- `actionbar`
-Action Bar
-- `subtitle`
-Subtitle
 - `title`
 Title
+- `subtitle`
+Subtitle
+- `actionbar`
+Action Bar

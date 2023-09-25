@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: low_tier_items
-ms.prod: gaming
+description: "A code snippet for the low tier items equipment loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # low_tier_items

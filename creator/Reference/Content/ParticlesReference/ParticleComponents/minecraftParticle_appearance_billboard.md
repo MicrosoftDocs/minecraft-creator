@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Particle Documentation - Particle Appearance Billboard component
-ms.prod: gaming
+description: "A reference document detailing the 'particle appearance billboard' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Particle Appearance Billboard component
@@ -23,9 +24,9 @@ This component tells the particle system to render the particle as a billboard, 
     // "direction_x" - unrotated particle x axis is along the direction vector, unrotated y axis attempts to aim upwards
     // "direction_y" - unrotated particle y axis is along the direction vector, unrotated x axis attempts to aim upwards
     // "direction_z" - billboard face is along the direction vector, unrotated y axis attempts to aim upwards
-	// emitter_transform_xy, // orient the particles to match the emitter's transform (the billboard plane will match the transform's xy plane).
-	// emitter_transform_xz, // orient the particles to match the emitter's transform (the billboard plane will match the transform's xz plane).
-	// emitter_transform_yz, // orient the particles to match the emitter's transform (the billboard plane will match the transform's yz plane).
+ // emitter_transform_xy, // orient the particles to match the emitter's transform (the billboard plane will match the transform's xy plane).
+ // emitter_transform_xz, // orient the particles to match the emitter's transform (the billboard plane will match the transform's xz plane).
+ // emitter_transform_yz, // orient the particles to match the emitter's transform (the billboard plane will match the transform's yz plane).
 
     //"face_camera_mode": <string>
 

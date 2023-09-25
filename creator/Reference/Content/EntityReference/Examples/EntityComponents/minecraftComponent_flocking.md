@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:flocking
-ms.prod: gaming
+description: "A reference document detailing the 'flocking' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:flocking
 
-`minecraft:flocking` compels entities to flock in groups in water or not.
+`minecraft:flocking` compels entities to flock in groups towards or away from the water.
 
 ## Parameters
 
@@ -22,7 +23,7 @@ ms.prod: gaming
 | high_flock_limit| 0| Integer| Determines the maximum amount of entities that can be allowed in the flock. |
 | in_water| False| Boolean| Tells the Flocking Component if the entity exists in water. |
 | influence_radius| 0| Decimal| The area around the entity that allows others to be added to the flock. |
-| innner_cohesion_threshold| 0| Decimal| The distance in which the flocking entity will stop applying cohesion. |
+| inner_cohesion_threshold| 0| Decimal| The distance in which the flocking entity will stop applying cohesion. |
 | loner_chance| 0| Decimal| The percentage chance between 0-1 that a fish will spawn and not want to join flocks. Invalid values will be capped at the end points. |
 | low_flock_limit| 0| Integer| Determines the low bound amount of entities that can be allowed in the flock. |
 | match_variants| False| Boolean| Tells the flocking entities that they can only match similar entities that also match the variant, mark variants, and color data of the other potential flocking entities. |
@@ -45,7 +46,7 @@ ms.prod: gaming
     "high_flock_limit": 0,
     "in_water": false,
     "influence_radius": 0,
-    "innner_cohesion_threshold": 0,
+    "inner_cohesion_threshold": 0,
     "loner_chance": 0,
     "low_flock_limit": 0,
     "match_variants": false,
@@ -76,7 +77,7 @@ ms.prod: gaming
         "separation_threshold": 0.95,
         "cohesion_weight": 2.0,
         "cohesion_threshold": 1.95,
-        "innner_cohesion_threshold": 1.25,
+        "inner_cohesion_threshold": 1.25,
         "min_height": 1.5,
         "max_height": 6.0,
         "block_distance": 2.0,

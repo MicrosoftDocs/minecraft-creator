@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: music Command
 description: Description and usage of the music command
+ms.service: minecraft-bedrock-edition
 ---
 # `/music` Command
 Allows you to control playing music tracks.
@@ -56,7 +56,7 @@ A `float` number to specify the volume of the music track.
 Enum of Music Repeat Modes
 
 #### Values
-- `loop`
-Loop
 - `play_once`
 Play Once
+- `loop`
+Loop

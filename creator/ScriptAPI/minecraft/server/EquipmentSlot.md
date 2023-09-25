@@ -1,0 +1,37 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+title: .EquipmentSlot Enumeration
+description: Contents of the .EquipmentSlot enumeration.
+ms.service: minecraft-bedrock-edition
+---
+# EquipmentSlot Enumeration
+
+The equipment slot of the mob. This includes armor, offhand and mainhand slots.
+
+## Constants
+### **Chest**
+`Chest = "Chest"`
+
+The chest slot. This slot is used to hold items such as Chestplate or Elytra.
+### **Feet**
+`Feet = "Feet"`
+
+The feet slot. This slot is used to hold items such as Boots.
+### **Head**
+`Head = "Head"`
+
+The head slot. This slot is used to hold items such as Helmets or Carved Pumpkins.
+### **Legs**
+`Legs = "Legs"`
+
+The legs slot. This slot is used to hold items such as Leggings.
+### **Mainhand**
+`Mainhand = "Mainhand"`
+
+The mainhand slot. For players, the mainhand slot refers to the currently active hotbar slot.
+### **Offhand**
+`Offhand = "Offhand"`
+
+The offhand slot. This slot is used to hold items such as shields and maps.

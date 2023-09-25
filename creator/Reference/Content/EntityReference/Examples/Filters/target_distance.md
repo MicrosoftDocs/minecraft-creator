@@ -1,21 +1,21 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - target_distance
-ms.prod: gaming
+description: "A reference document detailing the 'target_distance' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - target_distance
 
 Tests the distance between the calling entity and its target.
 
-
-### subject
+## subject
 
 | Options| Description |
 |:-----------|:-----------|
 | block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
+| damager| The damaging entity involved with the interaction. |
 | other| The other member of an interaction, not the caller. |
 | parent| The caller's current parent. |
 | player| The player involved with the interaction. |
@@ -56,4 +56,3 @@ Tests the distance between the calling entity and its target.
 ```json
 { "test": "target_distance", "value": "0.00" }
 ```
-

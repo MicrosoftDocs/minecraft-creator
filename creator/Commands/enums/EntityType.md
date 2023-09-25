@@ -2,402 +2,406 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: EntityType Enum
 description: Description and values of the EntityType enum
+ms.service: minecraft-bedrock-edition
 ---
 # `EntityType` Enum
 Specifies entity type within a world.
 
 ## Values
-- `allay`
-Allay
-- `armor_stand`
-Armor Stand
-- `arrow`
-Arrow
-- `axolotl`
-Axolotl
-- `bat`
-Bat
-- `bee`
-Bee
-- `blaze`
-Blaze
-- `boat`
-Boat
-- `cat`
-Cat
-- `cave_spider`
-Cave Spider
-- `chest_boat`
-Chest Boat
-- `chest_minecart`
-Chest Minecart
-- `chicken`
-Chicken
-- `cod`
-Cod
-- `command_block_minecart`
-Command Block Minecart
-- `cow`
-Cow
-- `creeper`
-Creeper
-- `dolphin`
-Dolphin
-- `donkey`
-Donkey
-- `drowned`
-Drowned
-- `egg`
-Egg
-- `elder_guardian`
-Elder Guardian
-- `elder_guardian_ghost`
-Elder Guardian Ghost
-- `ender_crystal`
-Ender Crystal
-- `ender_dragon`
-Ender Dragon
-- `enderman`
-Enderman
-- `endermite`
-Endermite
-- `evocation_fang`
-Evocation Fang
-- `evocation_illager`
-Evocation Illager
-- `fireworks_rocket`
-Fireworks Rocket
-- `fox`
-Fox
-- `frog`
-Frog
-- `ghast`
-Ghast
-- `glow_squid`
-Glow Squid
-- `goat`
-Goat
-- `guardian`
-Guardian
-- `hoglin`
-Hoglin
-- `hopper_minecart`
-Hopper Minecart
-- `horse`
-Horse
-- `husk`
-Husk
-- `iron_golem`
-Iron Golem
-- `leash_knot`
-Leash Knot
-- `lightning_bolt`
-Lightning Bolt
-- `llama`
-Llama
-- `magma_cube`
-Magma Cube
-- `minecart`
-Minecart
-- `minecraft:allay`
-Allay
-- `minecraft:armor_stand`
-Armor Stand
-- `minecraft:arrow`
-Arrow
-- `minecraft:axolotl`
-Axolotl
-- `minecraft:bat`
-Bat
-- `minecraft:bee`
-Bee
-- `minecraft:blaze`
-Blaze
-- `minecraft:boat`
-Boat
-- `minecraft:cat`
-Cat
-- `minecraft:cave_spider`
-Cave Spider
-- `minecraft:chest_boat`
-Chest Boat
-- `minecraft:chest_minecart`
-Chest Minecart
+- `minecraft:slime`
+Slime
+- `slime`
+Slime
+- `minecraft:tnt`
+TNT
+- `tnt`
+TNT
+- `minecraft:camel`
+- `camel`
+- `minecraft:turtle`
+Turtle
+- `turtle`
+Turtle
 - `minecraft:chicken`
 Chicken
-- `minecraft:cod`
-Cod
-- `minecraft:command_block_minecart`
-Command Block Minecart
+- `chicken`
+Chicken
+- `minecraft:bee`
+Bee
+- `bee`
+Bee
+- `minecraft:axolotl`
+Axolotl
+- `axolotl`
+Axolotl
+- `minecraft:pig`
+Pig
+- `pig`
+Pig
+- `minecraft:hoglin`
+Hoglin
+- `hoglin`
+Hoglin
+- `minecraft:zoglin`
+Zoglin
+- `zoglin`
+Zoglin
+- `minecraft:sniffer`
+- `sniffer`
+- `minecraft:cat`
+Cat
+- `cat`
+Cat
 - `minecraft:cow`
 Cow
-- `minecraft:creeper`
-Creeper
+- `cow`
+Cow
+- `minecraft:sheep`
+Sheep
+- `sheep`
+Sheep
+- `minecraft:wolf`
+Wolf
+- `wolf`
+Wolf
+- `minecraft:villager`
+Villager
+- `villager`
+Villager
+- `minecraft:wandering_trader`
+Wandering Trader
+- `wandering_trader`
+Wandering Trader
+- `minecraft:mooshroom`
+Mooshroom
+- `mooshroom`
+Mooshroom
+- `minecraft:squid`
+Squid
+- `squid`
+Squid
+- `minecraft:glow_squid`
+Glow Squid
+- `glow_squid`
+Glow Squid
+- `minecraft:strider`
+Strider
+- `strider`
+Strider
+- `minecraft:rabbit`
+Rabbit
+- `rabbit`
+Rabbit
+- `minecraft:bat`
+Bat
+- `bat`
+Bat
+- `minecraft:iron_golem`
+Iron Golem
+- `iron_golem`
+Iron Golem
+- `minecraft:snow_golem`
+Snow Golem
+- `snow_golem`
+Snow Golem
+- `minecraft:ocelot`
+Ocelot
+- `ocelot`
+Ocelot
+- `minecraft:horse`
+Horse
+- `horse`
+Horse
+- `minecraft:trader_llama`
+Trader Llama
+- `trader_llama`
+Trader Llama
+- `minecraft:llama`
+Llama
+- `llama`
+Llama
+- `minecraft:polar_bear`
+Polar Bear
+- `polar_bear`
+Polar Bear
+- `minecraft:parrot`
+Parrot
+- `parrot`
+Parrot
 - `minecraft:dolphin`
 Dolphin
-- `minecraft:donkey`
-Donkey
-- `minecraft:drowned`
-Drowned
-- `minecraft:egg`
-Egg
-- `minecraft:elder_guardian`
-Elder Guardian
-- `minecraft:elder_guardian_ghost`
-Elder Guardian Ghost
-- `minecraft:ender_crystal`
-Ender Crystal
-- `minecraft:ender_dragon`
-Ender Dragon
-- `minecraft:enderman`
-Enderman
-- `minecraft:endermite`
-Endermite
-- `minecraft:evocation_fang`
-Evocation Fang
-- `minecraft:evocation_illager`
-Evocation Illager
-- `minecraft:fireworks_rocket`
-Fireworks Rocket
+- `dolphin`
+Dolphin
+- `minecraft:panda`
+Panda
+- `panda`
+Panda
 - `minecraft:fox`
+Fox
+- `fox`
 Fox
 - `minecraft:frog`
 Frog
-- `minecraft:ghast`
-Ghast
-- `minecraft:glow_squid`
-Glow Squid
-- `minecraft:goat`
-Goat
-- `minecraft:guardian`
-Guardian
-- `minecraft:hoglin`
-Hoglin
-- `minecraft:hopper_minecart`
-Hopper Minecart
-- `minecraft:horse`
-Horse
-- `minecraft:husk`
-Husk
-- `minecraft:iron_golem`
-Iron Golem
-- `minecraft:leash_knot`
-Leash Knot
-- `minecraft:lightning_bolt`
-Lightning Bolt
-- `minecraft:llama`
-Llama
-- `minecraft:magma_cube`
-Magma Cube
-- `minecraft:minecart`
-Minecart
-- `minecraft:mooshroom`
-Mooshroom
-- `minecraft:mule`
-Mule
-- `minecraft:npc`
-NPC
-- `minecraft:ocelot`
-Ocelot
-- `minecraft:panda`
-Panda
-- `minecraft:parrot`
-Parrot
-- `minecraft:phantom`
-Phantom
-- `minecraft:pig`
-Pig
-- `minecraft:piglin`
-Piglin
-- `minecraft:piglin_brute`
-Piglin Brute
-- `minecraft:pillager`
-Pillager
-- `minecraft:polar_bear`
-Polar Bear
-- `minecraft:pufferfish`
-Pufferfish
-- `minecraft:rabbit`
-Rabbit
-- `minecraft:ravager`
-Ravager
-- `minecraft:salmon`
-Salmon
-- `minecraft:sheep`
-Sheep
-- `minecraft:shulker`
-Shulker
-- `minecraft:silverfish`
-Silverfish
-- `minecraft:skeleton`
-Skeleton
-- `minecraft:skeleton_horse`
-Skeleton Horse
-- `minecraft:slime`
-Slime
-- `minecraft:snow_golem`
-Snow Golem
-- `minecraft:snowball`
-Snowball
-- `minecraft:spider`
-Spider
-- `minecraft:splash_potion`
-Splash Potion
-- `minecraft:squid`
-Squid
-- `minecraft:stray`
-Stray
-- `minecraft:strider`
-Strider
+- `frog`
+Frog
 - `minecraft:tadpole`
 Tadpole
-- `minecraft:tnt`
-TNT
-- `minecraft:tnt_minecart`
-TNT Minecart
-- `minecraft:trader_llama`
-Trader Llama
+- `tadpole`
+Tadpole
+- `minecraft:allay`
+Allay
+- `allay`
+Allay
+- `minecraft:husk`
+Husk
+- `husk`
+Husk
 - `minecraft:tropicalfish`
 Tropical Fish
-- `minecraft:turtle`
-Turtle
-- `minecraft:vex`
-Vex
-- `minecraft:villager`
-Villager
-- `minecraft:vindicator`
-Vindicator
-- `minecraft:wandering_trader`
-Wandering Trader
-- `minecraft:warden`
-Warden
-- `minecraft:witch`
-Witch
-- `minecraft:wither`
-Wither
+- `tropicalfish`
+Tropical Fish
 - `minecraft:wither_skeleton`
 Wither Skeleton
-- `minecraft:wolf`
-Wolf
+- `wither_skeleton`
+Wither Skeleton
+- `minecraft:cod`
+Cod
+- `cod`
+Cod
+- `minecraft:zombie_villager`
+Zombie Villager
+- `zombie_villager`
+Zombie Villager
+- `minecraft:pufferfish`
+Pufferfish
+- `pufferfish`
+Pufferfish
+- `minecraft:witch`
+Witch
+- `witch`
+Witch
+- `minecraft:salmon`
+Salmon
+- `salmon`
+Salmon
+- `minecraft:donkey`
+Donkey
+- `donkey`
+Donkey
+- `minecraft:mule`
+Mule
+- `mule`
+Mule
+- `minecraft:skeleton_horse`
+Skeleton Horse
+- `skeleton_horse`
+Skeleton Horse
+- `minecraft:zombie_horse`
+Zombie Horse
+- `zombie_horse`
+Zombie Horse
+- `minecraft:zombie`
+Zombie
+- `zombie`
+Zombie
+- `minecraft:stray`
+Stray
+- `stray`
+Stray
+- `minecraft:drowned`
+Drowned
+- `drowned`
+Drowned
+- `minecraft:creeper`
+Creeper
+- `creeper`
+Creeper
+- `minecraft:skeleton`
+Skeleton
+- `skeleton`
+Skeleton
+- `minecraft:spider`
+Spider
+- `spider`
+Spider
+- `minecraft:zombie_pigman`
+Zombie Pigman
+- `zombie_pigman`
+Zombie Pigman
+- `minecraft:enderman`
+Enderman
+- `enderman`
+Enderman
+- `minecraft:silverfish`
+Silverfish
+- `silverfish`
+Silverfish
+- `minecraft:cave_spider`
+Cave Spider
+- `cave_spider`
+Cave Spider
+- `minecraft:ghast`
+Ghast
+- `ghast`
+Ghast
+- `minecraft:magma_cube`
+Magma Cube
+- `magma_cube`
+Magma Cube
+- `minecraft:blaze`
+Blaze
+- `blaze`
+Blaze
+- `minecraft:warden`
+Warden
+- `warden`
+Warden
+- `minecraft:guardian`
+Guardian
+- `guardian`
+Guardian
+- `minecraft:elder_guardian`
+Elder Guardian
+- `elder_guardian`
+Elder Guardian
+- `minecraft:elder_guardian_ghost`
+Elder Guardian Ghost
+- `elder_guardian_ghost`
+Elder Guardian Ghost
+- `minecraft:wither`
+Wither
+- `wither`
+Wither
+- `minecraft:ender_dragon`
+Ender Dragon
+- `ender_dragon`
+Ender Dragon
+- `minecraft:shulker`
+Shulker
+- `shulker`
+Shulker
+- `minecraft:endermite`
+Endermite
+- `endermite`
+Endermite
+- `minecraft:vindicator`
+Vindicator
+- `vindicator`
+Vindicator
+- `minecraft:evocation_illager`
+Evocation Illager
+- `evocation_illager`
+Evocation Illager
+- `minecraft:vex`
+Vex
+- `vex`
+Vex
+- `minecraft:phantom`
+Phantom
+- `phantom`
+Phantom
+- `minecraft:pillager`
+Pillager
+- `pillager`
+Pillager
+- `minecraft:ravager`
+Ravager
+- `ravager`
+Ravager
+- `minecraft:piglin_brute`
+Piglin Brute
+- `piglin_brute`
+Piglin Brute
+- `minecraft:piglin`
+Piglin
+- `piglin`
+Piglin
+- `minecraft:goat`
+Goat
+- `goat`
+Goat
+- `minecraft:minecart`
+Minecart
+- `minecart`
+Minecart
+- `minecraft:hopper_minecart`
+Hopper Minecart
+- `hopper_minecart`
+Hopper Minecart
+- `minecraft:tnt_minecart`
+TNT Minecart
+- `tnt_minecart`
+TNT Minecart
+- `minecraft:chest_minecart`
+Chest Minecart
+- `chest_minecart`
+Chest Minecart
+- `minecraft:command_block_minecart`
+Command Block Minecart
+- `command_block_minecart`
+Command Block Minecart
 - `minecraft:xp_bottle`
+XP Bottle
+- `xp_bottle`
 XP Bottle
 - `minecraft:xp_orb`
 XP Orb
-- `minecraft:zoglin`
-Zoglin
-- `minecraft:zombie`
-Zombie
-- `minecraft:zombie_horse`
-Zombie Horse
-- `minecraft:zombie_pigman`
-Zombie Pigman
-- `minecraft:zombie_villager`
-Zombie Villager
-- `mooshroom`
-Mooshroom
-- `mule`
-Mule
-- `npc`
-NPC
-- `ocelot`
-Ocelot
-- `panda`
-Panda
-- `parrot`
-Parrot
-- `phantom`
-Phantom
-- `pig`
-Pig
-- `piglin`
-Piglin
-- `piglin_brute`
-Piglin Brute
-- `pillager`
-Pillager
-- `polar_bear`
-Polar Bear
-- `pufferfish`
-Pufferfish
-- `rabbit`
-Rabbit
-- `ravager`
-Ravager
-- `salmon`
-Salmon
-- `sheep`
-Sheep
-- `shulker`
-Shulker
-- `silverfish`
-Silverfish
-- `skeleton`
-Skeleton
-- `skeleton_horse`
-Skeleton Horse
-- `slime`
-Slime
-- `snow_golem`
-Snow Golem
-- `snowball`
-Snowball
-- `spider`
-Spider
-- `splash_potion`
-Splash Potion
-- `squid`
-Squid
-- `stray`
-Stray
-- `strider`
-Strider
-- `tadpole`
-Tadpole
-- `tnt`
-TNT
-- `tnt_minecart`
-TNT Minecart
-- `trader_llama`
-Trader Llama
-- `tropicalfish`
-Tropical Fish
-- `turtle`
-Turtle
-- `vex`
-Vex
-- `villager`
-Villager
-- `vindicator`
-Vindicator
-- `wandering_trader`
-Wandering Trader
-- `warden`
-Warden
-- `witch`
-Witch
-- `wither`
-Wither
-- `wither_skeleton`
-Wither Skeleton
-- `wolf`
-Wolf
-- `xp_bottle`
-XP Bottle
 - `xp_orb`
 XP Orb
-- `zoglin`
-Zoglin
-- `zombie`
-Zombie
-- `zombie_horse`
-Zombie Horse
-- `zombie_pigman`
-Zombie Pigman
-- `zombie_villager`
-Zombie Villager
+- `minecraft:ender_crystal`
+Ender Crystal
+- `ender_crystal`
+Ender Crystal
+- `minecraft:arrow`
+Arrow
+- `arrow`
+Arrow
+- `minecraft:snowball`
+Snowball
+- `snowball`
+Snowball
+- `minecraft:egg`
+Egg
+- `egg`
+Egg
+- `minecraft:splash_potion`
+Splash Potion
+- `splash_potion`
+Splash Potion
+- `minecraft:leash_knot`
+Leash Knot
+- `leash_knot`
+Leash Knot
+- `minecraft:boat`
+Boat
+- `boat`
+Boat
+- `minecraft:chest_boat`
+Chest Boat
+- `chest_boat`
+Chest Boat
+- `minecraft:lightning_bolt`
+Lightning Bolt
+- `lightning_bolt`
+Lightning Bolt
+- `minecraft:evocation_fang`
+Evocation Fang
+- `evocation_fang`
+Evocation Fang
+- `minecraft:armor_stand`
+Armor Stand
+- `armor_stand`
+Armor Stand
+- `minecraft:fireworks_rocket`
+Fireworks Rocket
+- `fireworks_rocket`
+Fireworks Rocket
+- `minecraft:npc`
+NPC
+- `npc`
+NPC
 
 ## References
 The following commands reference this enum:

@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: abandoned_mineshaft
-ms.prod: gaming
+description: "A code snippet for the abandoned mineshaft chest loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # abandoned_mineshaft

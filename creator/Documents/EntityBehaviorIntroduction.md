@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Entity Behavior Introduction
-ms.prod: gaming
 description: "An article discussing how to use entity behavior files to add customized behaviors to entities."
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Behavior Introduction
@@ -97,7 +97,6 @@ A good way to learn about a component and see how it's used in practice is to lo
 |----|-----------|--------|
 | `minecraft:physics`| `has_collision`  `has_gravity` | You'll need this component on 99% of custom entities. It allows the entity to stay on the ground and react to interaction and punches in a way that you would expect.      |
 | `minecraft:scale`  | `value` | Sets the relative size of the entity.   |
-| `minecraft:collision_box` | `width` `height` | Specifies the area an entity takes up in the world. Only the width and height can be changed. The collision box always has a square base that's aligned to the world axes. |
 | `minecraft:type_family`   | `family`| Sets a list of type families that the entity is in. Type families can be tested by other entities. For example, to test which mobs they are hostile towards. |
 | `minecraft:movement`      | `value` | Sets the movement speed of the entity. 0.25 is the regular speed of most animals in Minecraft.  |
 | `minecraft:movement.basic`| [See documentation](../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_movement.basic.md)   | Allows the entity to move around on the ground.|
@@ -107,7 +106,7 @@ A good way to learn about a component and see how it's used in practice is to lo
 
 ## Priorities
 
-The option `priority` can be used on all behavior components that are AI goals. 0 is the highest priority and the default priority of all behavior components. The higher the number, the lower the priority. If the entity is busy doing a low priority behavior and a high priority behavior comes up, the entity will immediately switch to the higher priority behavior.
+The option `priority` can be used on all AI goal behavior components. 0 is the highest priority and the default priority of all behavior components. The higher the number, the lower the priority. If the entity is busy doing a low priority behavior and a high priority behavior comes up, the entity will immediately switch to the higher priority behavior.
 
 In the following example, the `hurt_by_target` component has a higher priority. If the entity gets attacked while strolling, it will immediately target the attacker.
 

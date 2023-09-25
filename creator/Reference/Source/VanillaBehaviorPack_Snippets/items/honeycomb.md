@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: honeycomb
-ms.prod: gaming
+description: "A code snippet for the honeycomb item"
+ms.service: minecraft-bedrock-edition
 ---
 
 # honeycomb

@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: mikeam
 title: Block Documentation - damage
-ms.prod: gaming
+description: "A reference document detailing the 'damage' block event response"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - damage

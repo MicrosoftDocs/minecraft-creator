@@ -8,8 +8,8 @@ metadata:
   description: "Landing page containing all Entity JSON documentation for Minecraft: Bedrock Edition." # Required; article description that is displayed in search results. < 160 chars.
   ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
-  author: v-josjones #Required; your GitHub user alias, with correct capitalization.
-  ms.author: v-josjones #Required; microsoft alias of author; optional team alias.
+  author: mammerla #Required; your GitHub user alias, with correct capitalization.
+  ms.author: mikeam #Required; microsoft alias of author; optional team alias.
   ms.date: 04/28/2021 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -27,11 +27,11 @@ landingContent:
           - text: Spawn Rules and Data-Driven Spawning
             url:  Examples/ClientEntityDocumentation/DataDrivenSpawning.md
   # Card (optional)
-  - title: AI Goals
+  - title: AI Goal Components
     linkLists:
       - linkListType: reference
         links:
-          - text: AI Goal List
+          - text: AI Goal Component List
             url: Examples/AIGoalList.md
           - text: "NEW! minecraft:behavior.jump_to_block"
             url: Examples/EntityGoals/minecraftBehavior_jump_to_block.md
@@ -63,17 +63,6 @@ landingContent:
             url: Examples/Filters/clock_time.md
           - text: distance_to_nearest_player
             url: Examples/Filters/distance_to_nearest_player.md
- # Card (optional)
-  - title: Properties
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Properties List
-            url: Examples/PropertiesList.md
-          - text: minecraft:ambient_sound_interval
-            url: Examples/EntityProperties/minecraftProperty_ambient_sound_interval.md
-          - text: minecraft:can_climb
-            url: Examples/EntityProperties/minecraftProperty_can_climb.md
 # Card
   - title: Built-in Events
     linkLists:

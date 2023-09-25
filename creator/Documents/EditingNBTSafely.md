@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Editing NBT Safely
-ms.prod: gaming
-description: An article covering how to utilize NBT to edit data strings for entities, items and blocks
+description: "An article covering how to utilize NBT to edit data strings for entities, items and blocks"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Editing NBT Safely

@@ -1,9 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Getting Started with Minecraft Entity Wizard
-ms.prod: gaming
-description: A tutorial covering how to create a custom entity model using the Minecraft Entity Wizard tool in Blockbench
+description: "A tutorial covering how to create a custom entity model using the Minecraft Entity Wizard tool in Blockbench"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Getting Started with the Minecraft Entity Wizard
@@ -185,7 +185,7 @@ Custom entity behavior is a huge topic, and this article won't attempt to touch 
 > [!div class="nextstepaction"]
 > [Introduction To Behavior Packs](BehaviorPack.md)
 
-To view all of the available behaviors, properties, and AI Goals that an entity can use, you can go to the Entity JSON Reference Documentation.
+To view all of the available behaviors and AI Goal Components that an entity can use, you can go to the Entity JSON Reference Documentation.
 
 > [!div class="nextstepaction"]
 > [Entity JSON Documentation](../Reference/Content/EntityReference/index.yml)

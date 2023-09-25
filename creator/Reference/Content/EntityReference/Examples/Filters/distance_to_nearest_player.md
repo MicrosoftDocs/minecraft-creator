@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - distance_to_nearest_player
-ms.prod: gaming
+description: "A reference document detailing the 'distance_to_nearest_player' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - distance_to_nearest_player
@@ -10,6 +11,7 @@ ms.prod: gaming
 `distance_to_nearest_player` compares the distance to the nearest Player with a float value.
 
 ## Parameters
+
 |Name |Default Value  |Type  |Description  |
 |---------|---------|---------|---------|
 |value | |Decimal|(Required) A floating point value.|
@@ -22,7 +24,7 @@ ms.prod: gaming
 | Options| Description |
 |:-----------|:-----------|
 | block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
+| damager| The damaging entity involved with the interaction. |
 | other| The other member of an interaction, not the caller. |
 | parent| The caller's current parent. |
 | player| The player involved with the interaction. |

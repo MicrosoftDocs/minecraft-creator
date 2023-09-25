@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: nether_wart
-ms.prod: gaming
+description: "A code snippet for the nether_wart item"
+ms.service: minecraft-bedrock-edition
 ---
 
 # nether_wart

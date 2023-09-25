@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:block_climber
-ms.prod: gaming
+description: "A reference document detailing the 'block_climber' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:block_climber
@@ -20,7 +21,6 @@ ms.prod: gaming
 ```json
 "minecraft:block_climber": {}
 ```
-
 
 ## Vanilla entities using `minecraft:block_climber`
 

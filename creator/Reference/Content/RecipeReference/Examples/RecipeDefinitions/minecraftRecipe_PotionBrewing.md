@@ -1,8 +1,9 @@
 ---
-author: mammerla
+author: JimSeaman42
 ms.author: mikeam
 title: Recipe Documentation - Potion Brewing Container Recipe
-ms.prod: gaming
+description: "A reference document detailing potion brewing container recipes"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Recipe Documentation - Potion Brewing Container Recipe

@@ -2,13 +2,12 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: minecraft/server.Block Class
 description: Contents of the @minecraft/server.Block class.
+ms.service: minecraft-bedrock-edition
 ---
 # Block Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 Represents a block in a dimension. A block represents a unique X, Y, and Z within a dimension and get/sets the state of the block at that location. This type was significantly updated in version 1.17.10.21.
 
 ## Properties
@@ -20,6 +19,51 @@ Returns the dimension that the block is within.
 
 Type: [*Dimension*](Dimension.md)
 
+### **isAir**
+`read-only isAir: boolean;`
+
+Returns true if this block is an air block (i.e., empty space).
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
+### **isLiquid**
+`read-only isLiquid: boolean;`
+
+Returns true if this block is a liquid block - (e.g., a water block and a lava block are liquid, while an air block and a stone block are not. Water logged blocks are not liquid blocks).
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
+### **isSolid**
+`read-only isSolid: boolean;`
+
+Returns true if this block is solid and impassible - (e.g., a cobblestone block and a diamond block are solid, while a ladder block and a fence block are not).
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
 ### **isWaterlogged**
 `isWaterlogged: boolean;`
 
@@ -29,6 +73,9 @@ Type: *boolean*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
 
 ### **location**
 `read-only location: Vector3;`
@@ -36,6 +83,9 @@ Type: *boolean*
 Coordinates of the specified block.
 
 Type: [*Vector3*](Vector3.md)
+    
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **permutation**
 `read-only permutation: BlockPermutation;`
@@ -43,6 +93,11 @@ Type: [*Vector3*](Vector3.md)
 Additional block configuration data that describes the block.
 
 Type: [*BlockPermutation*](BlockPermutation.md)
+    
+> [!WARNING]
+> This property can throw errors when used.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **type**
 `read-only type: BlockType;`
@@ -53,6 +108,11 @@ Type: [*BlockType*](BlockType.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **typeId**
 `read-only typeId: string;`
@@ -63,6 +123,11 @@ Type: *string*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+    
+> [!WARNING]
+> This property can throw errors when used.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **x**
 `read-only x: number;`
@@ -86,28 +151,91 @@ Z coordinate of the block.
 Type: *number*
 
 ## Methods
+- [above](#above)
+- [below](#below)
+- [bottomCenter](#bottomcenter)
 - [canPlace](#canplace)
+- [center](#center)
+- [east](#east)
 - [getComponent](#getcomponent)
 - [getItemStack](#getitemstack)
 - [getRedstonePower](#getredstonepower)
 - [getTags](#gettags)
 - [hasTag](#hastag)
-- [isAir](#isair)
-- [isLiquid](#isliquid)
-- [isSolid](#issolid)
+- [isValid](#isvalid)
+- [north](#north)
+- [offset](#offset)
 - [setPermutation](#setpermutation)
 - [setType](#settype)
+- [south](#south)
 - [trySetPermutation](#trysetpermutation)
+- [west](#west)
+
+### **above**
+`
+above(steps?: number): Block | undefined
+`
+
+Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) above this block (positive in the Y direction).
+
+#### **Parameters**
+- **steps**?: *number* = `1`
+  
+  Number of steps above to step before returning.
+
+#### **Returns** [*Block*](Block.md) | *undefined*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
+### **below**
+`
+below(steps?: number): Block | undefined
+`
+
+Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) below this block (negative in the Y direction).
+
+#### **Parameters**
+- **steps**?: *number* = `1`
+  
+  Number of steps below to step before returning.
+
+#### **Returns** [*Block*](Block.md) | *undefined*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
+### **bottomCenter**
+`
+bottomCenter(): Vector3
+`
+
+Returns the {@link @minecraft/server.Location} of the center of this block on the X and Z axis.
+
+#### **Returns** [*Vector3*](Vector3.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **canPlace**
 `
-canPlace(blockToPlace: BlockPermutation | BlockType, faceToPlaceOn?: Direction): boolean
+canPlace(blockToPlace: BlockPermutation | BlockType | string, faceToPlaceOn?: Direction): boolean
 `
 
 Checks to see whether it is valid to place the specified block type or block permutation, on a specified face on this block
 
 #### **Parameters**
-- **blockToPlace**: [*BlockPermutation*](BlockPermutation.md) | [*BlockType*](BlockType.md)
+- **blockToPlace**: [*BlockPermutation*](BlockPermutation.md) | [*BlockType*](BlockType.md) | *string*
   
   Block type or block permutation to check placement for.
 - **faceToPlaceOn**?: [*Direction*](Direction.md) = `null`
@@ -121,10 +249,46 @@ Checks to see whether it is valid to place the specified block type or block per
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
+### **center**
+`
+center(): Vector3
+`
+
+Returns the {@link @minecraft/server.Location} of the center of this block on the X, Y, and Z axis.
+
+#### **Returns** [*Vector3*](Vector3.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **east**
+`
+east(steps?: number): Block | undefined
+`
+
+Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the east of this block (positive in the X direction).
+
+#### **Parameters**
+- **steps**?: *number* = `1`
+  
+  Number of steps to the east to step before returning.
+
+#### **Returns** [*Block*](Block.md) | *undefined*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **getComponent**
 `
-getComponent(componentName: string): any
+getComponent(componentName: string): BlockComponent | undefined
 `
 
 Gets additional configuration properties (a component) for specific capabilities of particular blocks - for example, an inventory component of a chest block.
@@ -134,13 +298,12 @@ Gets additional configuration properties (a component) for specific capabilities
   
   Identifier of the component. If a namespace is not specified, minecraft: is assumed.
 
-#### **Returns** *any* - Returns the component object if it is present on the particular block.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+#### **Returns** [*BlockComponent*](BlockComponent.md) | *undefined* - Returns the component object if it is present on the particular block.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **getItemStack**
 `
@@ -162,6 +325,11 @@ Creates a prototype item stack based on this block that can be used with Contain
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
 ### **getRedstonePower**
 `
 getRedstonePower(): number | undefined
@@ -176,6 +344,8 @@ Returns the net redstone power of this block.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **getTags**
 `
@@ -191,6 +361,8 @@ Returns a set of tags for a block.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **hasTag**
 `
@@ -211,62 +383,74 @@ Checks to see if the permutation of this block has a specific tag.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
-#### **Examples**
-##### *check_block_tags.js*
-```javascript
+#### Examples
+##### ***check_block_tags.js***
+```typescript
 import { world } from "@minecraft/server";
+
 // Fetch the block
 const block = world.getDimension("overworld").getBlock({ x: 1, y: 2, z: 3 });
+
 console.log(`Block is dirt: ${block.hasTag("dirt")}`);
 console.log(`Block is wood: ${block.hasTag("wood")}`);
 console.log(`Block is stone: ${block.hasTag("stone")}`);
 ```
 
-### **isAir**
+### **isValid**
 `
-isAir(): boolean
+isValid(): boolean
 `
 
-Returns true if this block is an air block (i.e., empty space).
+Returns true if this reference to a block is still valid (for example, if the block is unloaded, references to that block will no longer be valid.)
 
-#### **Returns** *boolean*
+#### **Returns** *boolean* - True if this block object is still working and valid.
+
+### **north**
+`
+north(steps?: number): Block | undefined
+`
+
+Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the north of this block (negative in the Z direction).
+
+#### **Parameters**
+- **steps**?: *number* = `1`
+  
+  Number of steps to the north to step before returning.
+
+#### **Returns** [*Block*](Block.md) | *undefined*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
-### **isLiquid**
+### **offset**
 `
-isLiquid(): boolean
+offset(offset: Vector3): Block | undefined
 `
 
-Returns true if this block is a liquid block - (e.g., a water block and a lava black are liquid, while an air block and a stone block are not).
+Returns a block at an offset relative vector to this block.
 
-#### **Returns** *boolean*
+#### **Parameters**
+- **offset**: [*Vector3*](Vector3.md)
+  
+  The offset vector. For example, an offset of 0, 1, 0 will return the block above the current block.
+
+#### **Returns** [*Block*](Block.md) | *undefined* - Block at the specified offset, or undefined if that block could not be retrieved (for example, the block and its relative chunk is not loaded yet.)
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.
-
-### **isSolid**
-`
-isSolid(): boolean
-`
-
-Returns true if this block is solid and impassible - (e.g., a cobblestone block and a diamond block are solid, while a ladder block and a fence block are not).
-
-#### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **setPermutation**
 `
@@ -280,26 +464,58 @@ Sets the block in the dimension to the state of the permutation.
   
   Permutation that contains a set of property states for the Block.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **setType**
 `
-setType(blockType: BlockType): void
+setType(blockType: BlockType | string): void
 `
 
 Sets the type of block.
 
 #### **Parameters**
-- **blockType**: [*BlockType*](BlockType.md)
+- **blockType**: [*BlockType*](BlockType.md) | *string*
   
   Identifier of the type of block to apply - for example, minecraft:powered_repeater.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
+### **south**
+`
+south(steps?: number): Block | undefined
+`
+
+Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the south of this block (positive in the Z direction).
+
+#### **Parameters**
+- **steps**?: *number* = `1`
+  
+  Number of steps to the south to step before returning.
+
+#### **Returns** [*Block*](Block.md) | *undefined*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **trySetPermutation**
 `
@@ -318,5 +534,32 @@ Tries to set the block in the dimension to the state of the permutation by first
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
+### **west**
+`
+west(steps?: number): Block | undefined
+`
+
+Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the west of this block (negative in the X direction).
+
+#### **Parameters**
+- **steps**?: *number* = `1`
+  
+  Number of steps to the west to step before returning.
+
+#### **Returns** [*Block*](Block.md) | *undefined*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)

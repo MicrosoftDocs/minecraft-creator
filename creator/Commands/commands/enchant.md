@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: enchant Command
 description: Description and usage of the enchant command
+ms.service: minecraft-bedrock-edition
 ---
 # `/enchant` Command
 Adds an enchantment to a player's selected item.
@@ -46,79 +46,79 @@ A player name `string` or [`target selector`](https://learn.microsoft.com/minecr
 Enchantment
 
 #### Values
-- `aqua_affinity`
-Aqua Affinity
-- `bane_of_arthropods`
-Bane of Arthropods
-- `binding`
-Binding
-- `blast_protection`
-Blast Protection
-- `channeling`
-Channeling
-- `depth_strider`
-Depth Strider
-- `efficiency`
-Efficiency
-- `feather_falling`
-Feather Falling
-- `fire_aspect`
-Fire Aspect
-- `fire_protection`
-Fire Protection
-- `flame`
-Flame
-- `fortune`
-Fortune
-- `frost_walker`
-Frost Walker
-- `impaling`
-Impaling
-- `infinity`
-Infinity
-- `knockback`
-Knockback
-- `looting`
-Looting
-- `loyalty`
-Loyalty
-- `luck_of_the_sea`
-Luck of the Sea
-- `lure`
-Lure
-- `mending`
-Mending
-- `multishot`
-Multishot
-- `piercing`
-Piercing
-- `power`
-Power
-- `projectile_protection`
-Projectile Protection
 - `protection`
-Protection
-- `punch`
-Punch
-- `quick_charge`
-Quick Charge
-- `respiration`
-Respiration
-- `riptide`
-Riptide
-- `sharpness`
-Sharpness
-- `silk_touch`
-Silk Touch
-- `smite`
-Smite
-- `soul_speed`
-Soul Speed
-- `swift_sneak`
-Swift Sneak
+Protection level: 1, 2, 3, or 4
+- `fire_protection`
+Fire Protection level: 1, 2, 3, or 4
+- `feather_falling`
+Feather Falling level: 1, 2, 3, or 4
+- `blast_protection`
+Blast Protection level: 1, 2, 3, or 4
+- `projectile_protection`
+Projectile Protection level: 1, 2, 3, or 4
 - `thorns`
-Thorns
+Thorns level: 1, 2, or 3
+- `respiration`
+Respiration level: 1, 2, or 3
+- `depth_strider`
+Depth Strider level: 1, 2, or 3
+- `aqua_affinity`
+Aqua Affinity level: 1 only
+- `sharpness`
+Sharpness level: 1, 2, 3, 4, or 5
+- `smite`
+Smite level: 1, 2, 3, 4, or 5
+- `bane_of_arthropods`
+Bane of Arthropods level: 1, 2, 3, 4, or 5
+- `knockback`
+Knockback level: 1 or 2
+- `fire_aspect`
+Fire Aspect level: 1 or 2
+- `looting`
+Looting level: 1, 2, or 3
+- `efficiency`
+Efficiency level: 1, 2, 3, 4, or 5
+- `silk_touch`
+Silk Touch level: 1 only
 - `unbreaking`
-Unbreaking
+Unbreaking level: 1, 2, or 3
+- `fortune`
+Fortune level: 1, 2, or 3
+- `power`
+Power level: 1, 2, 3, 4, or 5
+- `punch`
+Punch level: 1 or 2
+- `flame`
+Flame level: 1 only
+- `infinity`
+Infinity level: 1 only
+- `luck_of_the_sea`
+Luck of the Sea level: 1, 2, or 3
+- `lure`
+Lure level: 1, 2, or 3
+- `frost_walker`
+Frost Walker level: 1 or 2
+- `mending`
+Mending level: 1 only
+- `binding`
+Curse of Binding level: 1 only
 - `vanishing`
-Vanishing
+Curse of Vanishing level: 1 only
+- `impaling`
+Impaling level: 1, 2, 3, 4, or 5
+- `riptide`
+Riptide level: 1, 2, or 3
+- `loyalty`
+Loyalty level: 1, 2, or 3
+- `channeling`
+Channeling level: 1 only
+- `multishot`
+Multishot level: 1 only
+- `piercing`
+Piercing level: 1, 2, 3, or 4
+- `quick_charge`
+Quick Charge level: 1, 2, or 3
+- `soul_speed`
+Soul Speed level: 1, 2, or 3
+- `swift_sneak`
+Swift Sneak level: 1, 2, or 3

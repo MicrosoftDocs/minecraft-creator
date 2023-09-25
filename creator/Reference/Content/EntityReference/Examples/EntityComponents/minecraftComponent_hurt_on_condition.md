@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:hurt_on_condition
-ms.prod: gaming
+description: "A reference document detailing the 'hurt_on_condition' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:hurt_on_condition
@@ -37,7 +38,7 @@ ms.prod: gaming
     "damage_conditions": [
         {
             "filters": {"test": "in_water", "subject": "self", "operator": "==", "value": true},
-            "causes": "drowning",
+            "cause": "drowning",
             "damage_per_tick": 1
         }
     ]

@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: clearspawnpoint Command
 description: Description and usage of the clearspawnpoint command
+ms.service: minecraft-bedrock-edition
 ---
 # `/clearspawnpoint` Command
 Removes the spawn point for a player.
@@ -28,4 +28,4 @@ Clear the spawn point of a given player.
 
 ## Arguments
 - `player`: target
-The player whose checkpoint should be cleared. Must be a [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) or player name.
+The player whose checkpoint should be cleared. When using this command in a command block, a [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) or player name must be specified. When using this command in chat, if no target is specified, then default target is the player using the command.

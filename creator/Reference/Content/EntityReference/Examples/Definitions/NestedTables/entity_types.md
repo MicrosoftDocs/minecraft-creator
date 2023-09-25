@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-bbortree
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - entity_type
-ms.prod: gaming
+description: "A reference document detailing the 'entity_types' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - entity_types
 
-`entity_types` is a specific type of JSON object used by Minecraft: Bedrock Edition in order to encapsulate entity data that can be used in certain behaviors and components.
+`entity_types` is a specific type of JSON object used by Minecraft: Bedrock Edition to encapsulate entity data used in certain behaviors and components.
 
 ## Parameters
 

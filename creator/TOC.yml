@@ -4,16 +4,26 @@
       href: index.yml
     - name: "What's New"
       items: 
-        - name: 1.19.70 Update Summary
-          href: Documents/Update1.19.70.md
-        - name: 1.19.60 Update Summary
-          href: Documents/Update1.19.60.md
-        - name: 1.19.50 Update Summary
-          href: Documents/Update1.19.50.md
-        - name: 1.19.40 Update Summary
-          href: Documents/Update1.19.40.md
-        - name: Minecraft Live 2022 Creator Recap
-          href: Documents/MinecraftLive2022CreatorRecap.md
+        - name: 1.20.30 Update Summary
+          href: Documents/Update1.20.30.md
+        - name: 1.20.10 Update Summary
+          href: Documents/Update1.20.10.md
+        - name: 1.20 Update Summary
+          href: Documents/Update1.20.md
+        - name: "1.19.xx Archive"
+          items:
+            - name: 1.19.80 Update Summary
+              href: Documents/Update1.19.80.md
+            - name: 1.19.70 Update Summary
+              href: Documents/Update1.19.70.md
+            - name: 1.19.60 Update Summary
+              href: Documents/Update1.19.60.md
+            - name: 1.19.50 Update Summary
+              href: Documents/Update1.19.50.md
+            - name: 1.19.40 Update Summary
+              href: Documents/Update1.19.40.md
+            - name: Minecraft Live 2022 Creator Recap
+              href: Documents/MinecraftLive2022CreatorRecap.md
     - name: Useful Knowledge for Creators
       items:
         - name: 'Redstone Guide'
@@ -30,6 +40,8 @@
             href: Documents/PackagingASkinPack.md
           - name: Packaging a WorldTemplate
             href: Documents/PackagingAWorldTemplate.md
+          - name: Packaging a Random Seed World Template
+            href: Documents/PackagingARandomSeedWorldTemplate.md
           - name: Mash-up Pack Overview
             href: Documents/MashupPackOverview.md
           - name: 'Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition'
@@ -46,13 +58,15 @@
             href: Documents/ParkourWorldGuide.md                        
         - name: Advanced Topics
           items:
+          - name: Getting Started with Deferred Lighting
+            href: Documents/DeferredLighting.md
           - name: Base Game Versioning
             href: Documents/BaseGameVersioning.md
           - name: Actor Storage
             href: Documents/ActorStorage.md
           - name: Minecraft File Extensions
             href: Documents/MinecraftFileExtensions.md
-          - name: Data-Driven Overworld Height
+          - name: Data-Driven Overworld Height and Void Generation
             href: Documents/DataDrivenOverworldHeight.md
           - name: Editing NBTs Safely
             href: Documents/EditingNBTSafely.md
@@ -70,6 +84,8 @@
               href: Documents/BehaviorPack.md
             - name: "Installing Add-Ons in Minecraft: Bedrock"
               href: Documents/AddonPackInstallation.md
+            - name: Utilizing Sub-Packs
+              href: Documents/UtilizingSubpacks.md
             - name: Fog in Resource Packs
               href: Documents/FogInResourcePacks.md
             - name: Particle Effects
@@ -110,6 +126,10 @@
             href: Documents/ScoreboardIntroduction.md
           - name: Scoreboard Operations Tutorial
             href: Documents/ScoreboardOperationsTutorial.md
+          - name: The Camera Command
+            href: Documents/CameraCommandIntroduction.md
+          - name: Free Camera Preset Tutorial
+            href: Documents/CameraTutorialFreeCameraPreset.md
           - name: The Tickingarea Command
             href: Documents/TickingAreaCommand.md
           - name: New /execute command syntax
@@ -142,12 +162,12 @@
               href: Documents/IntroductionToLootTables.md
             - name: Loot and Trade Table Functions
               href: Documents/LootAndTradeTableFunctions.md
-            - name: Loot Overload - loot spawn and kill
-              href: Documents/LootSpawnAndKill.md
-            - name: Loot Overload - loot replace block
-              href: Documents/LootReplaceBlock.md
-            - name: Loot Overload - loot replace entity
-              href: Documents/LootReplaceEntity.md
+            - name: Loot Overloads
+              href: Documents/LootOverloads.md
+            - name: Loot Table Conditions
+              href: Documents/LootTableConditions.md
+            - name: Creating a Loot Table
+              href: Documents/CreateLootTable.md
         - name: Physically Based Rendering
           items:
             - name: Getting Started with Ray Tracing
@@ -166,6 +186,8 @@
       items:
         - name: Scripting
           items:
+          - name: Introduction to Scripting in Minecraft
+            href: Documents/ScriptingIntroduction.md
           - name: Build Gameplay with TypeScript
             href: Documents/ScriptingGettingStarted.md
           - name: Use Script Along with Dedicated Servers
@@ -178,6 +200,8 @@
             href: Documents/GameTestBuildYourFirstGameTest.md
           - name: Script Versioning
             href: Documents/ScriptVersioning.md
+          - name: Building Editor Extensions
+            href: Documents/EditorExtensionsIntroduction.md
         - name: Creator Tools
           items:
           - name: Commonly Used Tools
@@ -194,12 +218,16 @@
                 href: Documents/EditorOverview.md
               - name: Editor Tutorial
                 href: Documents/EditorTutorial.md
+              - name: Building Editor Extensions
+                href: Documents/EditorExtensionsIntroduction.md
           - name: Blockbench
             items:
             - name: Minecraft Block Wizard
               href: Documents/MinecraftBlockWizard.md
             - name: Minecraft Entity Wizard
               href: Documents/MinecraftEntityWizard.md
+            - name: Minecraft Item Wizard
+              href: Documents/MinecraftItemWizard.md
           - name: Chunker
             items:
               - name: Chunker - Overview
@@ -244,12 +272,16 @@
             href: Reference/Content/blockreference/Examples/BlockJsonFileStructure.md
           - name: Block Description
             href: Reference/Content/blockreference/Examples/BlockDescription.md
-          - name: Block Properties and Permutations
-            href: Reference/Content/blockreference/Examples/BlockPropertiesAndPermutations.md
-          - name: Block Properties List
-            href: Reference/Content/blockreference/Examples/BlockPropertiesList.md
-          - name: Block States
+          - name: Block States and Permutations
+            href: Reference/Content/blockreference/Examples/BlockStatesAndPermutations.md
+          - name: Block States List
             href: Reference/Content/blockreference/Examples/BlockStatesList.md
+          - name: Intrinsic Block States
+            href: Reference/Content/blockreference/Examples/IntrinsicBlockStatesList.md
+          - name: Block Traits
+            href: Reference/Content/blockreference/Examples/BlockTraits.md
+          - name: Aux Value to Block State Map
+            href: Reference/Content/blockreference/Examples/AuxValueToBlockStateMap.md
           - name: Block Components
             href: Reference/Content/blockreference/Examples/BlockComponents/TOC.yml
           - name: Block Triggers
@@ -264,10 +296,8 @@
             href: Reference/Content/entityreference/Examples/Filters/TOC.yml
           - name: Components
             href: Reference/Content/entityreference/Examples/EntityComponents/TOC.yml
-          - name: AI Goals
+          - name: AI Goal Components
             href: Reference/Content/entityreference/Examples/EntityGoals/TOC.yml
-          - name: Properties
-            href: Reference/Content/entityreference/Examples/EntityProperties/TOC.yml
           - name: Triggers
             href: Reference/Content/entityreference/Examples/EntityTriggers/TOC.yml
           - name: Built-in Events
@@ -310,8 +340,6 @@
             href: Reference/Content/schemasreference/SchemasList.md
           - name: actor_animation
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_actor_animation_1.8.0.md
-          - name: actor_animation_controller
-            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_actor_animation_controller_1.10.0.md
           - name: block_reference
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_block_reference_1.10.0.md
           - name: chance_information
@@ -324,6 +352,8 @@
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.14.0.md
           - name: geometry:1.16.0
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.16.0.md
+          - name: geometry:1.19.30
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.19.30.md
           - name: persona_actor_animation
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_persona_actor_animation_1.8.0.md
         - name: Volume JSON
@@ -416,6 +446,8 @@
             href: Reference/Content/molangreference/index.yml
           - name: Molang Concepts
             href: Reference/Content/Molangreference/Examples/Molangconcepts/TOC.yml
+      - name: Raw Message JSON
+        href: Reference/Content/RawMessageJson.md
     - name: Articles
       items:
         - name: Caves + Cliffs Features

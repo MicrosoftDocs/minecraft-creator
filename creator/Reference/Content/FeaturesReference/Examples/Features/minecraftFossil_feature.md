@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicnurdle
+ms.author: mikeam
 title: Features Documentation - minecraft:fossil_feature
-ms.prod: gaming
+description: "A reference document detailing the 'fossil_feature' feature"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Features Documentation - minecraft:fossil_feature

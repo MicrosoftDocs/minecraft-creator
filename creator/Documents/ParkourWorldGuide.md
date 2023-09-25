@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-bbortree
 title: Parkour Map Creation Guide
-ms.prod: gaming
 description: "Steps to creating a gameplay loop using a Parkour map."
+ms.service: minecraft-bedrock-edition
 ---
 
 # Parkour World Creation Guide

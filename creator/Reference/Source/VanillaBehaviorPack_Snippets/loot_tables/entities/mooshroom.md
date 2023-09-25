@@ -1,8 +1,9 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: moorshroom
-ms.prod: gaming
+title: mooshroom
+description: "A code snippet for the mooshroom entity loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # mooshroom

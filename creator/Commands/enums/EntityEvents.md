@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: EntityEvents Enum
 description: Description and values of the EntityEvents enum
+ms.service: minecraft-bedrock-edition
 ---
 # `EntityEvents` Enum
 Must be one of the default entity events found in an entity's behavior JSON file.
@@ -90,6 +90,7 @@ Entity laid an egg
 Adds attributes to an entity
 - `minecraft:add_biome_and_skin`
 Entity is affected by biome and skin
+- `minecraft:add_can_ride`
 - `minecraft:ageable_grow_up`
 Entity can grow to adulthood
 - `minecraft:ageable_set_baby`
@@ -122,6 +123,7 @@ Entity responds to eating an orchid
 Entity responds to eating a poppy
 - `minecraft:ate_rose`
 Entity responds to eating a rose
+- `minecraft:ate_torchflower`
 - `minecraft:ate_tulip`
 Entity responds to eating a tulip
 - `minecraft:baby_on_calm`
@@ -232,6 +234,8 @@ Entity is born in default mode
 Entity is a born screamer
 - `minecraft:calm`
 Entity is calm
+- `minecraft:camel_saddled`
+- `minecraft:camel_unsaddled`
 - `minecraft:cat_gifted_owner`
 Entity is a cat who gifted its owner
 - `minecraft:clear_add_bad_omen`
@@ -506,6 +510,7 @@ Entity starts Johnny action
 Entity starts tp land
 - `minecraft:start_roar`
 Entity starts roaring
+- `minecraft:start_sitting`
 - `minecraft:start_transforming`
 Entity starts transforming
 - `minecraft:stop_aggro`
@@ -516,6 +521,7 @@ Entity stops celebrating
 Entity stops exploding
 - `minecraft:stop_johnny`
 Entity stops Johnny action
+- `minecraft:stop_sitting`
 - `minecraft:stop_transforming`
 Entity stops transforming
 - `minecraft:switch_to_melee`
@@ -570,8 +576,18 @@ Entity navigates on land
 Entity calms
 - `on_digging_event`
 Entity digs
+- `on_digging_start`
+- `on_egg_spawned`
+- `on_fail_during_digging`
+- `on_fail_during_searching`
+- `on_feeling_happy_end`
+- `on_item_found`
 - `on_not_riding_parent`
 Entity is not riding parent
+- `on_pregnant`
+- `on_rising_end`
+- `on_scenting_success`
+- `on_search_and_digging_success`
 - `perish_event`
 Entity enters the event of perishing
 - `pickup_item_delay`

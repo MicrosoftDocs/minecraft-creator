@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Volume Documentation - Properties & Descriptions
-ms.prod: gaming
+description: "A reference document detailing the volume definition and volume properties used in volume JSON files"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Volume Documentation - Properties & Descriptions
@@ -36,7 +37,7 @@ These properties are part of the Volume Definition and Volume Properties that ar
 
 | Name| Default Value| Type| Description |
 |:----------|:----------|:----------|:----------|
-| format_version|*not set* | String|  Specifies the version of the game this entity was made in. Minimum supported version is 1.17.0. Current supported version is 1.19.80. |
+| format_version|*not set* | String|  Specifies the version of the game this entity was made in. Minimum supported version is 1.17.0. Current supported version is 1.20.30. |
 
 ### Identifier
 

@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: golden_carrot
-ms.prod: gaming
+description: "A code snippet for the golden_carrot item"
+ms.service: minecraft-bedrock-edition
 ---
 
 # golden_carrot

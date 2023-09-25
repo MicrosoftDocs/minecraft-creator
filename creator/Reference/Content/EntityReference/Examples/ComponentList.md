@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - Component List
-ms.prod: gaming
+description: "A reference document listing all available entity components"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - Component list
@@ -39,7 +40,6 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:can_fly](EntityComponents/minecraftComponent_can_fly.md) |`minecraft:can_fly` allows an entity the ability to fly. |
 |[minecraft:can_power_jump](EntityComponents/minecraftComponent_can_power_jump.md) |`minecraft:can_power_jump` allows an entity to power jump similar to the `horse` entity. |
 |[minecraft:celebrate_hunt](EntityComponents/minecraftComponent_celebrate_hunt.md) |`minecraft:celebrate_hunt` compels an entity to celebrate when hunting a specific entity. |
-|[minecraft:collision_box](EntityComponents/minecraftComponent_collision_box.md) |`minecraft:collision_box` sets the width and height of the entity's collision box. |
 |[minecraft:color](EntityComponents/minecraftComponent_color.md) |`minecraft:color` defines the entity's main color. |
 |[minecraft:color2](EntityComponents/minecraftComponent_color2.md) |`minecraft:color2` defines the entity's second texture color. |
 |[minecraft:combat_regeneration](EntityComponents/minecraftComponent_combat_regeneration.md) |`minecraft:combat_regeneration` gives Regeneration I and removes Mining Fatigue from the entity that kills the Actor's attack target. |
@@ -77,7 +77,7 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:heartbeat](EntityComponents/minecraftComponent_heartbeat.md) |`minecraft:heartbeat` defines the entity heartbeat.|
 |[minecraft:hide](EntityComponents/minecraftComponent_hide.md) |`minecraft:hide` compels the entity to move to and hide at their owned POI or the closest nearby.|
 |[minecraft:home](EntityComponents/minecraftComponent_home.md) |`minecraft:home` saves a home point of interest for when the the entity is spawned.|
-|[minecraft:horse.jump_strength](EntityComponents/minecraftComponent_homrse.jump_strength.md) |`minecraft:horse.jump_strength` defines the jump height for a horse or similar entity, such as a donkey.|
+|[minecraft:horse.jump_strength](EntityComponents/minecraftComponent_horse.jump_strength.md) |`minecraft:horse.jump_strength` defines the jump height for a horse or similar entity, such as a donkey.|
 |[minecraft:hurt_on_condition](EntityComponents/minecraftComponent_hurt_on_condition.md) |`minecraft:hurt_on_condition` defines a set of conditions under which the entity should take damage.|
 |[minecraft:input_ground_controlled](EntityComponents/minecraftComponent_input_ground_controlled.md) |`minecraft:input_ground_controlled` allows a ridable entity to be controlled using keyboard controls when ridden by a player. |
 |[minecraft:inside_block_notifier](EntityComponents/minecraftComponent_inside_block_notifier.md) |`minecraft:inside_block_notifier` verifies whether the entity is inside any of the listed blocks.|

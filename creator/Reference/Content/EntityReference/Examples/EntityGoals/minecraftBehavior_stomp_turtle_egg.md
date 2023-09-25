@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.stomp_turtle_egg
-ms.prod: gaming
+description: "A reference document detailing the 'behavior.stomp_turtle_egg' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.stomp_turtle_egg

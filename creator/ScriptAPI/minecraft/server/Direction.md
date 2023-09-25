@@ -7,35 +7,31 @@ title: .Direction Enumeration
 description: Contents of the .Direction enumeration.
 ---
 # Direction Enumeration
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Represents a direction for expressing relative position or facing.
+A general purpose relative direction enumeration.
 
 ## Constants
-### **down**
-`down = "down"`
+### **Down**
+`Down = "Down"`
 
-Represents an object located or facing in the down (z - 1) direction.
-### **east**
-`east = "east"`
+Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) beneath (y - 1) of this item.
+### **East**
+`East = "East"`
 
-Represents an object located or facing in the east (x + 1) direction.
-### **north**
-`north = "north"`
+Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the east (x + 1) of this item.
+### **North**
+`North = "North"`
 
-Represents an object located or facing in the north (z - 1) direction.
-### **south**
-`south = "south"`
+Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the east (z + 1) of this item.
+### **South**
+`South = "South"`
 
-Represents an object located or facing in the south (z + 1) direction.
-### **up**
-`up = "up"`
+Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the south (z - 1) of this item.
+### **Up**
+`Up = "Up"`
 
-Represents an object located or facing in the up (z + 1) direction.
-### **west**
-`west = "west"`
+Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) above (y + 1) of this item.
+### **West**
+`West = "West"`
 
-Represents an object located or facing in the west (x - 1) direction.
+Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the west (x - 1) of this item.

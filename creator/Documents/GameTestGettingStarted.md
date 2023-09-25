@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-bbortree
 title: Introduction to the GameTest Framework
-ms.prod: gaming
-description: A tutorial covering how to get started with GameTest by setting up your environment and running a series of pre-built GameTest examples
+description: "A tutorial covering how to get started with GameTest by setting up your environment and running a series of pre-built GameTest examples"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Introduction to the GameTest Framework

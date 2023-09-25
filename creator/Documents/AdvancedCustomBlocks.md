@@ -1,9 +1,9 @@
 ---
-author: mammerla
-ms.author: JimSeaman42
-title: Custom Blocks Part 2 Geometry and Materials
-ms.prod: gaming
+author: JimSeaman42
+ms.author: mikeam
+title: "Custom Blocks Part 2: Geometry and Materials"
 description: "A guide to using the Geometry and Material instances to create custom blocks in Minecraft: Bedrock Edition"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Custom Blocks Part 2: Geometry and Material Instances
@@ -70,28 +70,28 @@ Navigate to ***File > Export > Export Bedrock Geometry*** to save the geo file t
 
 ```json
 { 
-    "format_version": "1.12.0", 
-    "minecraft:geometry": [ 
-        { 
-            "description": { 
-                "identifier": "geometry.sushi", 
-                "texture_width": 36, 
-                "texture_height": 18, 
-                "visible_bounds_width": 2, 
-                "visible_bounds_height": 2.5, 
-                "visible_bounds_offset": [0, 0.75, 0] 
-            }, 
-            "bones": [ 
-                { 
-                    "name": "bb_main", 
-                    "pivot": [0, 0, 0], 
-                    "cubes": [ 
-                        {"origin": [-6, 0, -3], "size": [12, 12, 6], "uv": [0, 0]} 
-                    ] 
-                } 
-            ] 
-        } 
-    ] 
+  "format_version": "1.12.0", 
+  "minecraft:geometry": [ 
+    { 
+      "description": { 
+        "identifier": "geometry.sushi", 
+        "texture_width": 36, 
+        "texture_height": 18, 
+        "visible_bounds_width": 2, 
+        "visible_bounds_height": 2.5, 
+        "visible_bounds_offset": [0, 0.75, 0] 
+      }, 
+      "bones": [ 
+        { 
+          "name": "bb_main", 
+          "pivot": [0, 0, 0], 
+          "cubes": [ 
+            {"origin": [-6, 0, -3], "size": [12, 12, 6], "uv": [0, 0]} 
+          ] 
+        } 
+      ] 
+    } 
+  ] 
 } 
 ```
 
@@ -138,7 +138,7 @@ As always, feel free to create your own textures!
 
 ***Add friendly name in terrain_texture.json***
 
-The next step is to associate the texture names with a texture file path. This is done in a `terrain_texture.json` file.
+The next step is to associate the texture names with a texture file path. This is done in a`terrain_texture.json`file.
 
 - In ***File Explorer***, navigate to the ***custom_block_resource_pack*** folder and open the ***textures*** folder.
 - Open ***terrain_texture.json*** in a text editor.
@@ -146,22 +146,22 @@ The next step is to associate the texture names with a texture file path. This i
 
 ```json
 { 
-    "texture_data": { 
-        "die_1": { 
-            "textures": "textures/blocks/die_1" 
+  "texture_data": { 
+    "die_1": { 
+      "textures": "textures/blocks/die_1" 
 }, … 
-        "sushi_wrap": { 
-            "textures": "textures/blocks/sushi_wrap" 
-        }, 
-        "salmon_roll": { 
-            "textures": "textures/blocks/salmon_roll" 
-        }, 
-        "tuna_roll": { 
-          "textures": "textures/blocks/tuna_roll" 
-        }, 
-        "california_roll": { 
-          "textures": "textures/blocks/california_roll" 
-        } 
+    "sushi_wrap": { 
+      "textures": "textures/blocks/sushi_wrap" 
+    }, 
+    "salmon_roll": { 
+      "textures": "textures/blocks/salmon_roll" 
+    }, 
+    "tuna_roll": { 
+     "textures": "textures/blocks/tuna_roll" 
+    }, 
+    "california_roll": { 
+     "textures": "textures/blocks/california_roll" 
+    } 
     }
 } 
 ```
@@ -199,7 +199,7 @@ Let's bring all those resource pieces together into one beautiful combination in
 
 Although the sushi blocks share the same "geometry.sushi" geometry, you will create separate files for each of these rolls so they become their own blocks that display their own unique textures.
 
-1. In ***File Explorer***, navigate to the folder ***custom_block_behavior_pack***, located in the ***development_behavior_packs*** folder.
+1. In***File Explorer***, navigate to the folder***custom_block_behavior_pack***, located in the***development_behavior_packs***folder.
 1. Double-click on ***blocks*** to open the folder.
 1. Inside the ***blocks*** folder, create a text document and name it ***salmon_roll.json***.
 1. Double-click on ***salmon_roll.json*** to open it in a text editor.
@@ -212,26 +212,26 @@ Copy and paste the following code into your ***salmon_roll.json*** file:
 
 ```json
 { 
-    "format_version": "1.19.40", 
-    "minecraft:block": { 
-        "description": { 
-            "identifier": "demo:salmon_roll" 
-        }, 
-      "components": { 
-        "minecraft:geometry": "geometry.sushi", 
-        "minecraft:material_instances": { 
-          "north": { 
-            "texture": "salmon_roll" 
-          }, 
-          "south": { 
-            "texture": "salmon_roll" 
-          }, 
-          "*": { 
-            "texture": "sushi_wrap" 
-          } 
-        } 
-      } 
-    } 
+  "format_version": "1.19.40", 
+  "minecraft:block": { 
+    "description": { 
+      "identifier": "demo:salmon_roll" 
+    }, 
+   "components": { 
+    "minecraft:geometry": "geometry.sushi", 
+    "minecraft:material_instances": { 
+     "north": { 
+      "texture": "salmon_roll" 
+     }, 
+     "south": { 
+      "texture": "salmon_roll" 
+     }, 
+     "*": { 
+      "texture": "sushi_wrap" 
+     } 
+    } 
+   } 
+  } 
 } 
 ```
 
@@ -253,25 +253,25 @@ There is another cool part of material_instances to show off. We can actually cr
 
 ```json
 { 
-    "format_version": "1.19.40", 
-    "minecraft:block": 
+  "format_version": "1.19.40", 
+  "minecraft:block": 
     { 
-        "description": { 
-            "identifier": "demo:salmon_roll" 
-        }, 
-      "components": { 
-        "minecraft:geometry": "geometry.sushi", 
-        "minecraft:material_instances": { 
-          "north": "sushi_side", 
-          "south": "sushi_side", 
-          "*": { 
-            "texture": "sushi_wrap" 
-          }, 
+    "description": { 
+      "identifier": "demo:salmon_roll" 
+    }, 
+   "components": { 
+    "minecraft:geometry": "geometry.sushi", 
+    "minecraft:material_instances": { 
+     "north": "sushi_side", 
+     "south": "sushi_side", 
+     "*": { 
+      "texture": "sushi_wrap" 
+     }, 
       "sushi_side":{ 
       "texture": "salmon_roll" 
-        } 
-      } 
-    }
+    } 
+   } 
+  }
     }
 }
 ```

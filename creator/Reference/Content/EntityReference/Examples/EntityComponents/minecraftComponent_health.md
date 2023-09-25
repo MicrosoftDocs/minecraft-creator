@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:health
-ms.prod: gaming
+description: "A reference document detailing the 'health' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:health
@@ -13,10 +14,17 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|value|*not set* | Integer| The default amount of health the entity starts with. |
 |max|*not set* | Integer| The maximum starting health the entity has. |
+|value|*not set* | Integer| The default amount of health the entity starts with. This can be an integer or a 'range_min' and 'range_max' value for entities with varying starting health. |
 
-## Example
+## Examples
+
+```json
+"minecraft:health": {
+        "value": 10,
+        "max": 10
+      }
+```
 
 ```json
 "minecraft:health": {
@@ -36,6 +44,17 @@ ms.prod: gaming
       }
 ```
 
+### horse
+
+```json
+"minecraft:health": {
+        "value": {
+        "range_min": 15,
+        "range_max": 30
+      }
+}
+```
+
 ## Vanilla entities using `minecraft:health`
 
 - [allay](../../../../Source/VanillaBehaviorPack_Snippets/entities/allay.md)
@@ -52,7 +71,6 @@ ms.prod: gaming
 - [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
 - [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
 - [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [egg](../../../../Source/VanillaBehaviorPack_Snippets/entities/egg.md)
 - [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
 - [ender_crystal](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_crystal.md)
 - [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)
@@ -60,7 +78,6 @@ ms.prod: gaming
 - [endermite](../../../../Source/VanillaBehaviorPack_Snippets/entities/endermite.md)
 - [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
 - [fish](../../../../Source/VanillaBehaviorPack_Snippets/entities/fish.md)
-- [fishing_hook](../../../../Source/VanillaBehaviorPack_Snippets/entities/fishing_hook.md)
 - [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
 - [frog](../../../../Source/VanillaBehaviorPack_Snippets/entities/frog.md)
 - [ghast](../../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)

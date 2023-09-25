@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Molang Documentation - Introduction to Molang
-ms.prod: gaming
+description: "A reference document introducing the concept of Molang to creators"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Molang Documentation - Introduction to Molang
@@ -24,10 +25,13 @@ To know which Versioned Changes are in effect, look at the `"min_engine_version"
 | Pack min_engine_version| Description |
 |:---|:---|
 | 1.17.0| Initial support for Versioned Changes added. (Not actually a Versioned Change) |
-| 1.17.30| Fixed query.item_remaining_use_duration conversion from ticks to seconds (multiplied by 20 instead of dividing). Also fixed normalization logic in that query to go from 1 down to 0 instead of 0 up to 1. |
-| 1.17.40| Added some new error messages for invalid expressions which previously ran with probably unexpected results. For example "'text' + 1" will now cause a content error. |
+| 1.17.30| Fixed query.item_remaining_use_duration conversion from ticks to seconds (multiplied by 20 instead of dividing). Also fixed normalization logic in that query to go from 1 to 0 instead of 0 to 1. |
+| 1.17.40| Added new error messages for invalid expressions which previously ran with unexpected results. For example "'text' + 1" will now cause a content error. |
+| 1.17.40| Added error detection for too many operators in parentheses or brackets, such as '1+(2 3)'. Also added more explicit error detection for when an unknown token is encountered. |
 | 1.18.10| Fixed conditional (ternary) operator associativity. Previously nested conditional expressions like `A ? B : C ? D : E` would evaluate as `(A ? B : C) ? D : E`. Now they evaluate as `A ? B : (C ? D : E)`. |
+| 1.18.20 | Fixed Logical AND to evaluate before Logical OR, and for comparison operators to evaluate before equality operators.|
 | 1.19.60| Fixed error where dividing by a dynamically determined negative variable resulted in a division by the absolute (positive) value of the number instead. |
+| 1.20.0| Fixed query.cape_flap_amount using the wrong player rotation (head rotation instead of body rotation).
 
 ## Lexical Structure
 
@@ -49,7 +53,7 @@ All identifiers not in a scope listed below are reserved for future use.
 | Keyword| Description |
 |:-----------|:-----------|
 | `1.23`| Numerical constant value |
-| `! && < <= >= > == !=`| Logical operators |
+| `! || && < <= >= > == !=`| Logical operators |
 | `* / + -`| Basic math operators |
 | `(` `)`| Parentheses for expression term evaluation control |
 | `{` `}`| Braces for execution scope |

@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:follow_range
-ms.prod: gaming
+description: "A reference document detailing the 'follow_range' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:follow_range
 
-`minecraft:follow_range` defines the range of blocks that a mob will pursue a target.
+`minecraft:follow_range` defines the range, in blocks, that a mob will pursue a target.
 
 ## Parameters
 

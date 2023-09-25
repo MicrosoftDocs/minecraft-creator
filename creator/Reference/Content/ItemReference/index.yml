@@ -8,8 +8,8 @@ metadata:
   description: "Landing page containing all Item JSON documentation for Minecraft: Bedrock Edition." # Required; article description that is displayed in search results. < 160 chars.
   ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
-  author: v-josjones #Required; your GitHub user alias, with correct capitalization.
-  ms.author: v-josjones #Required; microsoft alias of author; optional team alias.
+  author: mammerla #Required; your GitHub user alias, with correct capitalization.
+  ms.author: mikeam #Required; microsoft alias of author; optional team alias.
   ms.date: 07/05/2021 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -24,8 +24,8 @@ landingContent:
         links:
           - text: Item Components List
             url: Examples/ItemComponentList.md
-          - text: minecraft:armor
-            url: Examples/ItemComponents/minecraft_armor.md
+          - text: minecraft:wearable
+            url: Examples/ItemComponents/minecraft_wearable.md
           - text: minecraft:block_placer
             url: Examples/ItemComponents/minecraft_block_placer.md
   - title: Item Definitions

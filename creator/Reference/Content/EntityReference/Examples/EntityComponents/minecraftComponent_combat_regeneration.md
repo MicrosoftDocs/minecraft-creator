@@ -1,8 +1,9 @@
 ---
 author: JimSeaman42
-ms.author: v-jimseaman
+ms.author: mikeam
 title: Entity Documentation - minecraft:combat_regeneration
-ms.prod: gaming
+description: "A reference document detailing the 'combat_regeneration' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:combat_regeneration

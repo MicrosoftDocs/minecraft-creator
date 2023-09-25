@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-bbortree
 title: Entity Events
-ms.prod: gaming
 description: "An article discussing how to use entity events to add and remove behaviors for entities."
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Events
@@ -20,7 +20,7 @@ In this tutorial you will learn more about events, including sequential events, 
 
 It's recommended that the following be completed before beginning this tutorial.
 
-- [Creating New Enity Types](IntroductionToAddEntity.md)
+- [Creating New Entity Types](IntroductionToAddEntity.md)
 - [Entity Behavior Introduction](EntityBehaviorIntroduction.md)
 
 ## Events Overview

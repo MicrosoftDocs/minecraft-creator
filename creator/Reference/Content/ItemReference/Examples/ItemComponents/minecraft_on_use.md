@@ -2,12 +2,13 @@
 author: mammerla
 ms.author: mikeam
 title: Item Documentation - minecraft:on_use
-ms.prod: gaming
+description: "A reference document detailing the 'on_use' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:on_use
 
-`minecraft:on_use` Allows you to receive an event when the item is used.
+`minecraft:on_use` allows you to receive an event when the item is used.
 
 >[!IMPORTANT]
 > `minecraft:on_use` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
@@ -20,7 +21,7 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|on_use|*not set*|String |Event trigger for when the item is used.|
+|on_use|*not set*| JSON object| Event trigger for when the item is used.|
 
 ## Example
 

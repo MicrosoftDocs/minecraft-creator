@@ -1,14 +1,14 @@
 ---
-author: ArendDanielek
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Actor Storage in Minecraft - Bedrock Edition
-ms.prod: gaming
 description: "How actor data is organized in the LevelDB on disk"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Actor Storage in Minecraft: Bedrock Edition
 
-Minecraft has inspired many third parties to create useful world file viewing and editing tools that exist outside the client. Tools like the Universal Minecraft Editor and MCEdit are community favorites and are dependent upon knowing where to find each piece of the level's data on disk in the LevelDB files. With the upgrade from legacy actor storage to modern actor storage in R18U2, the locations in the LevelDB files which the data for actors is stored has changed and these third party developers need to be aware.
+Minecraft has inspired many third parties to create useful world file viewing and editing tools that exist outside the client. Tools like the Universal Minecraft Editor and MCEdit are community favorites and are dependent upon knowing where to find each piece of the level's data on disk in the LevelDB files. With the upgrade from legacy actor storage to modern actor storage in 1.18.20, the locations in the LevelDB files which the data for actors (entities) is stored has changed and these third party developers need to be aware.
 
 ### What did legacy actor data look like?
 

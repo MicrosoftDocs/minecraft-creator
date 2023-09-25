@@ -1,20 +1,14 @@
 --- 
 author: mammerla
-ms.author: v-bbortree
+ms.author: mikeam
 title: Item Documentation - minecraft:record
-ms.prod: gaming
+description: "A reference document detailing the 'record' item component"
+ms.service: minecraft-bedrock-edition
 --- 
 
 # Item Documentation -  minecraft:record
 
 `minecraft:record` used by record items to play music.
-
->[!IMPORTANT]
-> `minecraft:record` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
->
->Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
->
->To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md)
 
 ## Parameters
 
@@ -22,7 +16,7 @@ ms.prod: gaming
 |:------------|:------------|:------------|:------------|
 |comparator_signal|1 | integer |Signal strength for comparator blocks to use from 1 - 13.|
 |duration|*not set* | float | Duration of sound event in seconds float value.|
-|sound_event|*not set* | String | Sound event types:  `13`, `cat`, `blocks`, `chirp`, `far`, `mall`, `mellohi`, `stal`, `strad`, `ward`, `11`, `wait`, `pigstep`, `otherside`, `5`. The value may be one listed below. |
+|sound_event|*not set* | String | Sound event types:  `13`, `cat`, `blocks`, `chirp`, `far`, `mall`, `mellohi`, `stal`, `strad`, `ward`, `11`, `wait`, `pigstep`, `otherside`, `5`, `relic`. The value may be one listed below. |
 
 ### sound_event
 
@@ -134,6 +128,7 @@ Listed below are the available sounds:
 - `attach`
 - `detach`
 - `deny`
+- `record.relic`
 - `tripod`
 - `pop`
 - `drop.slot`

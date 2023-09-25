@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: cooked_rabbit
-ms.prod: gaming
+description: "A code snippet for the cooked_rabbit item"
+ms.service: minecraft-bedrock-edition
 ---
 
 # cooked_rabbit

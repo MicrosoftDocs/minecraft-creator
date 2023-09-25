@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: ride Command
 description: Description and usage of the ride command
+ms.service: minecraft-bedrock-edition
 ---
 # `/ride` Command
 Makes entities ride other entities, stops entities from riding, makes rides evict their riders, or summons rides or riders.
@@ -72,10 +72,10 @@ Either `teleport_ride` or `teleport_rider` (default).
 One of `if_group_fits` to check whether riders can ride and only makes them ride if possible. Or `until_full` which makes them ride until rides is full.
 
 #### Values
-- `if_group_fits`
-If Group Fits - check whether riders can ride and only makes them ride if possible
 - `until_full`
 Until Full - riders can ride until rides are all full
+- `if_group_fits`
+If Group Fits - check whether riders can ride and only makes them ride if possible
 
 ### `RideRules`
 Enum of Ride Rules
@@ -92,7 +92,7 @@ Enum of Ride Rules
 Enum of Teleport Rules
 
 #### Values
-- `teleport_ride`
-Teleport the rideable entity
 - `teleport_rider`
 Teleport the rider
+- `teleport_ride`
+Teleport the rideable entity

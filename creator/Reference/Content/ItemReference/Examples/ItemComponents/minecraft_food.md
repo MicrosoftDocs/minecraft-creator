@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: mikeam
 title: Item Documentation - minecraft:food
-ms.prod: gaming
+description: "A reference document detailing the 'food' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:food
@@ -10,11 +11,7 @@ ms.prod: gaming
 `minecraft:food` sets the item as a food component, allowing it to be edible to the player.
 
 >[!IMPORTANT]
-> `minecraft:food` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
->
->Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
->
->To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md)
+> The `minecraft:food` must have the `minecraft:use_duration` component in order to function properly.
 
 ## Parameters
 
@@ -24,8 +21,8 @@ ms.prod: gaming
 |effects |*not set* | List| List of Events to fire off when consumed|
 |nutrition | 0 | Integer| The value that is added to the actor's nutrition when the item is used. |
 |on_consume| *not set* | Trigger | Event trigger for when the item is consumed. |
-|saturation_modifier| 0.6 |String| Saturation Modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff.|
-|using_converts_to| Not used by default. |String| When used, converts to the item specified by the string in this field. |
+|saturation_modifier| | Float| Saturation Modifier is used in this formula: (nutrition *saturation_modifier* 2) when applying the saturation buff.|
+|using_converts_to| Not used by default. | JSON object| When used, converts to the item specified by the string in this field. |
 
 ## Example
 
@@ -49,6 +46,7 @@ ms.prod: gaming
 ## Vanilla entities examples
 
 ### appleEnchanted
+
 ```json
 "minecraft:food": {
   "nutrition": 4,

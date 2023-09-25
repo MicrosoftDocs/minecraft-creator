@@ -2,13 +2,12 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: minecraft/server-ui Module
 description: Contents of the @minecraft/server-ui module
+ms.service: minecraft-bedrock-edition
 ---
-# @minecraft/server-ui Module
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+# `@minecraft/server-ui` Module
+
 The `@minecraft/server-ui` module contains types for expressing simple dialog-based user experiences.
 
 
@@ -19,12 +18,11 @@ The `@minecraft/server-ui` module contains types for expressing simple dialog-ba
 
   * [*@minecraft/server-ui.ModalFormData*](../../minecraft/server-ui/ModalFormData.md) allow for a more flexible "questionnaire-style" list of controls that can be used to take input.
 
-> [!CAUTION]
-> This module is still in pre-release.  It may change or it may be removed in future releases.
+## [Changelog](changelog.md)
 
-#### **Examples**
-##### *createActionForm.js*
-```javascript
+#### Examples
+##### ***createActionForm.js***
+```typescript
 const form = new ActionFormData()
   .title("Months")
   .body("Choose your favorite month!")
@@ -33,6 +31,7 @@ const form = new ActionFormData()
   .button("March")
   .button("April")
   .button("May");
+
 form.show(players[0]).then((response) => {
   if (response.selection === 3) {
     dimension.runCommand("say I like April too!");
@@ -44,15 +43,19 @@ form.show(players[0]).then((response) => {
 ```json
 {
     "module_name": "@minecraft/server-ui",
-    "version": "1.0.0-beta"
+    "version": "1.1.0"
 }
 ```
 
 ## Available Versions
-- `1.0.0-beta`
+- `1.2.0-beta`
+- `1.1.0`
+- `1.0.0`
+- `0.1.0`
 
 ## Enumerations
 - [FormCancelationReason](FormCancelationReason.md)
+- [FormRejectReason](FormRejectReason.md)
 
 ## Classes
 - [ActionFormData](ActionFormData.md)
@@ -63,6 +66,5 @@ form.show(players[0]).then((response) => {
 - [ModalFormData](ModalFormData.md)
 - [ModalFormResponse](ModalFormResponse.md)
 
-## Change Log
-## 1.0.0-beta
-#### Added `@minecraft/server-ui` Module
+## Errors
+- [FormRejectError](FormRejectError.md)

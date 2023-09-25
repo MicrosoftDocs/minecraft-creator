@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Introduction to Scoreboards
-ms.prod: gaming
-description: A guide about scoreboards and different ways to use them.
+description: "A guide about scoreboards and different ways to use them"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Introduction to Scoreboards
@@ -44,11 +44,11 @@ Because the objectives we are tracking do not already exist in the game, you wil
 
     ![Image of a scoreboard objective successfully displayed in a sidebar](Media/Commands/scoreboard_setdisplay_sidebar.png)
 
-1. Now that our objective exists, add a player named "SomeRandomPlayer" and give them a score of 0. Enter `/scoreboard players add SomeRandomPlayer shearedSheep 0`. The player's name will be displayed on the sidebar under Top Shearers.
+1. Now that our objective exists, add a player named "SomeRandomPlayer" and give them a score of 0. Enter `/scoreboard players set SomeRandomPlayer shearedSheep 0`. The player's name will be displayed on the sidebar under Top Shearers.
 
     ![Image of a player name displayed in a sidebar](Media/Commands/scoreboard_player1_sidebar.png)
 
-1. Add yourself and give yourself a score of 50: `/scoreboard players add @s shearedSheep 50`. Your own name will be displayed on the list.
+1. Add yourself and give yourself a score of 50: `/scoreboard players set @s shearedSheep 50`. Your own name will be displayed on the list.
 
     ![Image of a player name displayed in a different sidebar](Media/Commands/scoreboard_player2_sidebar.png)
 
@@ -82,61 +82,61 @@ This command returns a list of all of the objectives in the world.
 To remove an objective from the game use:
 
 ```
-/scoreboard objective remove [objective name]
+/scoreboard objective remove <objective: string>
 ```
 
-### setdisplay list
+### setdisplay 
 
-Use the **list** option of **setdisplay** to see scoreboard information listed on the pause screen. You can specify whether the players are ranked in ascending or descending order, according to score.
+You can modify how scoreboard objectives are displayed in the game. There are three slots that an objective can be displayed in: **belowName**, **list**, and **sidebar**. Specifying a slot without an objective name clears that display slot.
+
+Use the **list** option to see scoreboard information listed on the pause screen. You can specify whether the players are ranked in ascending or descending order, according to score.
 
 ```
-/scoreboard objectives setdisplay list [objective] [ascending|descending]
+/scoreboard objectives setdisplay list [objective: string] [ascending|descending]
 ```
 
  ![Image of player names displayed in a list on pause screen](Media/Commands/scoreboard_setdisplay_list.png)
 
-### setdisplay sidebar
-
 Use the **sidebar** option to display objective information on the main screen. You can specify whether the players are ranked in ascending or descending order, according to score.
-
-### setdisplay belowname
-
-Use **setdisplay belowname [objective]** to display objective information below player names.
-
 ```
-/scoreboard objectives setdisplay belowname <objective> 
+/scoreboard objectives setdisplay sidebar [objective: string] [ascending|descending]
 ```
 
-If you use the command without specifying an objective, the "belowname" slot will be cleared.
+Use the **belowname** option to display objective information below player names in the world.
 
+```
+/scoreboard objectives setdisplay belowname [objective: string]
+```
 
 ## Scoreboard Players Commands
 
-### add
+The following scoreboard player commands affect a player's score value. The arguments can be listed using the chat’s auto-complete feature.
 
-You can use this to add players to an existing objective. The players don't have to be active in the world at the time or even be real players at all. The objective must already exist and you have to give them a score or you get an error.  
+### set
+
+The **set** operation directly sets a player's score to a value. The players don't have to be active in the world at the time or even be real players at all. The objective must already exist and you have to give them a score or you get an error.
 
 ```
-/scoreboard players add <player> <objective> <int>
+/scoreboard players set <player: target> <objective: string> <count: int>
+```
+
+### add
+
+You can use the **add** operation to add points to a player's score.
+
+```
+/scoreboard players add <player: target> <objective: string> <count: int>
 ```
 
 ### remove
 
-This command is used to remove points from the player's score.
+This **remove** operation is used to remove points from the player's score.
 
 ```
-/scoreboard players remove <player> <objective> <int>
+/scoreboard players remove <player: target> <objective: string> <count: int>
 ```
 
-If you're actually trying to remove a player from a scoreboard, use the **reset** command (as explained below.)
-
-### set
-
-If you don't want to use math, you can use the **set** command to set a player's score for the objective to whatever you want it to be.
-
-```
-/scoreboard set <player> <objective> <int>
-```
+If you're actually trying to remove a player from a scoreboard, use the **reset** command (as explained below).
 
 ### list
 
@@ -149,7 +149,7 @@ To get a list of all of the players in a world (including any fake ones you crea
 Use this command with the name of a player to get a list of that player's tracked objectives.
 
 ```
-/scoreboard players list <player>
+/scoreboard players list [playername: target]
 ``` 
 
 ### operation
@@ -157,15 +157,14 @@ Use this command with the name of a player to get a list of that player's tracke
 You can perform mathematical operations to calculate and assign scores.
 
 ```
-/scoreboard players operation Player1 objective operation Player2 objective
+/scoreboard players operation <TargetPlayer> <TargetObjective> <operation> <SourcePlayer> <SourceObjective>
 ```
 
-Each operation uses the scores for two players.  The players can be from two different objectives, which is why you have to specify the objective for each player.
+Each operation uses the scores for two players. The players can be from two different objectives, which is why you have to specify the objective for each player.
 
-For each operation, the score for Player2 is used to get a result, and the result is returned as a new score for Player1. If that isn't super clear, here is a whole tutorial to show you how operations work: [Scoreboard Operations Tutorial](ScoreboardOperationsTutorial.md).
+For each operation, the score for SourcePlayer is used to get a result, and the result is returned as a new score for TargetPlayer. If that isn't super clear, here is a whole tutorial to show you how operations work: [Scoreboard Operations Tutorial](ScoreboardOperationsTutorial.md).
 
-- **`%=` Modulo** - 
-Divides the first score by the second score and returns the remainder.
+- **`%=` Modulo** - Divides the first score by the second score and returns the remainder.
 
 - **`*=` Multiplication** - Returns the product of the scores after multiplying them.
 
@@ -173,7 +172,7 @@ Divides the first score by the second score and returns the remainder.
 
 - **`-=` Subtraction** - Returns the value you get when you subtract the second score from the first.
 
-- **`/=` Division** - Returns the number you get when you divide the first score by the second score.
+- **`/=` Division** - Returns the number you get when you divide the first score by the second score. The returned value is rounded down.
 
 - **`<` Compare, Less Than** - If the second score is lower than the first score, then the first score is replaced with that lower score.
 
@@ -181,14 +180,14 @@ Divides the first score by the second score and returns the remainder.
 
 - **`>` Compare, Greater Than** - If the second score is higher than the first score, then the first score is replaced with that higher score.
 
-- **`><` Swap Values** - The scores are given each other's values.
+- **`><` Swap Values** - The scores are given each other's values. This is the only operation to affect the source score.
 
 ### random
 
 Use this to give a player a random score within a certain range. The numbers you give for the minimum and maximum are included in the list of possible scores.
 
 ```
-/scoreboard players random <player> <objective> <min> <max>
+/scoreboard players random <player: target> <objective: string> <min: int> <max: int>
 ```
 
 For example, if you want to assign Steve a random score of 1, 2, 3 or 4 for the shearedSheep objective, you would use:
@@ -201,20 +200,18 @@ If you try to use this command with the "all players" or '@a' selector, only rea
 
 ### reset
 
-To remove a player from an objective (which removes them from the scoreboard), use:
+The **reset** operation removes a player from all objectives, resetting their value. The objective argument is optional, and will reset a player only in that objective.
 
 ```
-/scoreboard players reset <player name> [optional objective name]
+/scoreboard players reset <player: target> [objective: string]
 ```
-
-If you have only one scoreboard, you don't have to enter the name.
 
 ### test
 
-You can test whether a player's score is within a specified range.
+You can test whether a player's score is within a specified range. You may insert the wild card (`*`) instead of a number to include the smallest possible value, or the largest possible value.
 
 ```
-/scoreboard players test <player name> <objective> [min] [max]
+/scoreboard players test <player: target> <objective: string> [min: int] [max: int]
 ```
 
 You will get either a true or false message after running the command.

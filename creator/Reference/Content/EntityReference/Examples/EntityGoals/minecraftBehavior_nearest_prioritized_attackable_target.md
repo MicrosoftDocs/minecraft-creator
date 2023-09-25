@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.nearest_prioritized_attackable_target
-ms.prod: gaming
+description: "A reference document detailing the 'behavior.nearest_prioritized_attackable_target' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.nearest_prioritized_attackable_target
@@ -15,6 +16,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 |attack_interval| 0| Integer| Time in seconds before selecting a target |
 |entity_types | *not set* |JSON Object | List of entity types that this mob considers valid targets. See [entity_types' definition page](../Definitions/NestedTables/entity_types.md).|
+|cooldown | 0.0 | Decimal |The amount of time in seconds that the mob has to wait before selecting a target of the same type again. |
 |must_reach| false| Boolean| If true, only entities that this mob can path to can be selected as targets |
 |must_see| false| Boolean| If true, only entities in this mob's viewing range can be selected as targets. |
 |must_see_forget_duration| 3.0| Decimal| Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more. |
@@ -23,7 +25,7 @@ ms.prod: gaming
 |reevaluate_description| false| Boolean| If true, the mob will stop being targeted if it stops meeting any conditions. |
 |reselect_targets| false| Boolean| If true, the target will change to the current closest entity whenever a different entity is closer. |
 |scan_interval| 10| Integer| How many ticks to wait between scanning for a target. |
-|set_persistent| false| Boolean| Allows the actor to be set to persist upon targeting a player |
+|set_persistent| false| Boolean| Allows the entity to be set to persist upon targeting a player |
 |target_search_height| -1.0| Decimal| Height in blocks to search for a target mob. -1.0 means the height does not matter. |
 |within_radius| 0.0| Decimal| Distance in blocks that the target can be within to launch an attack. |
 

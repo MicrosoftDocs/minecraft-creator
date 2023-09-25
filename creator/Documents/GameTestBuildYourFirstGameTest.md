@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-bbortree
 title: Building your first GameTest
-description: Tutorial for building a GameTest using structures and JavaScript.
-ms.prod: gaming
+description: "A guide to building a GameTest using structures and JavaScript"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Building your first GameTest

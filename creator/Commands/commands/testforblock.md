@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: testforblock Command
 description: Description and usage of the testforblock command
+ms.service: minecraft-bedrock-edition
 ---
 # `/testforblock` Command
 Tests whether a certain block is in a specific location.
@@ -22,20 +22,13 @@ Tests whether a certain block is in a specific location.
 
 ## Usage
 ### Test for block, optional data value
-`/testforblock <position: x y z> <tileName: Block> [dataValue: int]`
-
-Test for a `block name` in a `vector` position with optional `data value`.
-
-### Test for block, optional block state
 `/testforblock <position: x y z> <tileName: Block> [blockStates: block properties]`
 
-Test for a `block name` in a `vector` position with optional `block states`.
+Test for a `block name` in a `vector` position with optional `data value`.
 
 ## Arguments
 - `blockStates`: block properties
 Optional. The `block states` to match when testing.
-- `dataValue`: int
-Optional. An `integer` to match the block data to test.
 - `position: x y z`: position
 Required. A `vector` of the location the block to test.
 - `tileName`: [Block](../enums/Block.md)

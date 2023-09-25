@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.vex_copy_owner_target
-ms.prod: gaming
+description: "A reference document detailing the 'behavior.vex_copy_owner_target' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.vex_copy_owner_target
@@ -25,6 +26,7 @@ ms.prod: gaming
 
 |Name |Default Value |Type |Description |
 |:-----|:--------------|:-----|:------------|
+|cooldown | 0.0 | Decimal |The amount of time in seconds that the mob has to wait before selecting a target of the same type again. |
 |filters | |Minecraft Filter|Conditions that make this entry in the list valid. |
 |max_dist |16 |Decimal |Maximum distance this mob can be away to be a valid choice. |
 |must_see |false |Boolean |If true, the mob has to be visible to be a valid choice. |

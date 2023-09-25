@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Recipe Documentation - Smithing Transform Recipe
-ms.prod: gaming
+description: "A reference document detailing smithing transform recipes"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Recipe Documentation - Smithing Transform Recipe
@@ -21,7 +22,7 @@ Represents a smithing transform recipe for the Smithing Table. These recipes tra
 
 ## Smithing Transform Recipe Example
 
-```JSON
+```json
 {
 "format_version": "1.17",
     "minecraft:recipe_smithing_transform": {

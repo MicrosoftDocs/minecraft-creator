@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-bbortree
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:navigation.walk
-ms.prod: gaming
+description: "A reference document detailing the 'navigation.walk' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:navigation.walk
 
-`minecraft:navigation.walk` allows this entity to generate paths by walking around and jumping up and down a block like regular mobs.
+`minecraft:navigation.walk` compels the entity to generate paths by walking around and jumping up and down a block.
 
 ## Parameters
 

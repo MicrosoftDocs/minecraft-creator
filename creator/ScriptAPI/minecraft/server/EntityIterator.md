@@ -2,13 +2,12 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: minecraft/server.EntityIterator Class
 description: Contents of the @minecraft/server.EntityIterator class.
+ms.service: minecraft-bedrock-edition
 ---
 # EntityIterator Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
@@ -28,6 +27,9 @@ This type is usable for iterating over a set of entities. This means it can be u
 
 #### **Returns** Iterator&lt;[*Entity*](Entity.md)&gt;
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **next**
 `
 next(): IteratorResult<Entity>
@@ -36,3 +38,6 @@ next(): IteratorResult<Entity>
 Retrieves the next item in this iteration. The resulting IteratorResult contains .done and .value properties which can be used to see the next Entity in the iteration.
 
 #### **Returns** IteratorResult&lt;[*Entity*](Entity.md)&gt;
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.

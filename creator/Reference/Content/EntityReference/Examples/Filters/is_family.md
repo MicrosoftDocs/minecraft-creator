@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_family
-ms.prod: gaming
+description: "A reference document detailing the 'is_family' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - is_family
@@ -23,7 +24,7 @@ Returns true when the subject entity is a member of the named family.
 | Options| Description |
 |:-----------|:-----------|
 | block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
+| damager| The damaging entity involved with the interaction. |
 | other| The other member of an interaction, not the caller. |
 | parent| The caller's current parent. |
 | player| The player involved with the interaction. |

@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:projectile
-ms.prod: gaming
+description: "A reference document detailing the 'projectile' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:projectile
@@ -20,7 +21,7 @@ ms.prod: gaming
 | destroy_on_hurt| False| Boolean| When this projectile deals damage, whether or not to immediately destroy this projectile. |
 | filter| *not set*| String| Entity Definitions defined here can't be hurt by the projectile. |
 | fire_affected_by_griefing| False| Boolean| If true, whether the projectile causes fire is affected by the mob griefing game rule. |
-| gravity| 0.05| Decimal| The gravity applied to this entity when thrown. When this actor is not on the ground, subtracts this amount from the actors change in vertical position every tick. The higher the value, the faster the entity falls.  |
+| gravity| 0.05| Decimal| The gravity applied to this entity when thrown. When this entity is not on the ground, subtracts this amount from the entities change in vertical position every tick. The higher the value, the faster the entity falls.  |
 | hit_sound| *not set*| String| The sound that plays when the projectile hits something. |
 | hit_ground_sound| *not set*| String| The sound that plays when the projectile hits the ground. |
 | homing| False| Boolean| If true, the projectile homes in to the nearest entity. |
@@ -226,4 +227,4 @@ Name |Default Value  |Type  |Description  |
 - [wither_skull_dangerous](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skull_dangerous.md)
 - [wither_skull](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skull.md)
 - [xp_bottle](../../../../Source/VanillaBehaviorPack_Snippets/entities/xp_bottle.md)
-- 
+-

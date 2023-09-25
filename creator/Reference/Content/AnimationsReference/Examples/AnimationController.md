@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: mikeam
 title: Animation Documentation - Animation Controllers
-ms.prod: gaming
+description: "A reference document detailing animation controllers"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Animation Documentation - Animation Controllers
@@ -153,7 +154,7 @@ Below, we use the `crouch` and `stuck` portions of the fox animation controller 
     "tired": {
       "animations": [ "yawn", "stretch" ],
       "transitions": [
-        { "default": "query.all_animation_finished" } // transition back to default state when the yawn and stretch animations have both finished
+        { "default": "query.all_animations_finished" } // transition back to default state when the yawn and stretch animations have both finished
       ]
     }
   }

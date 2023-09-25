@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: xp Command
 description: Description and usage of the xp command
+ms.service: minecraft-bedrock-edition
 ---
 # `/xp` Command
 Adds or removes player experience.
@@ -33,6 +33,6 @@ Adds or removes player experience.
 
 ## Arguments
 - `amount`: int
-An `integer` of the experience to add to the player. May be negative to remove xp levels only.
+An `integer` of the experience to add to the player. May be negative to remove xp levels only. 
 - `player`: target
 A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.

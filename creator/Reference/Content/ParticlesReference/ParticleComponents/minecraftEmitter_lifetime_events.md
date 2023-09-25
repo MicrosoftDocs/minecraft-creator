@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Particle Documentation - Emitter Lifetime Events component
-ms.prod: gaming
+description: "A reference document detailing the 'emitter lifetime events' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Emitter Lifetime Events component
@@ -33,7 +34,7 @@ Allows for lifetime events on the emitter to trigger certain events.
     "travel_distance_events: {
         // a series of distances, e.g. 0.0 or 1.0, that trigger the event
         // these get fired when the emitter has moved by the specified input
-		    // distance, e.g. one line might be:
+      // distance, e.g. one line might be:
         // "0.4": "event"
         "distance": [ <string>, ... ]
         "distance": <string>
@@ -42,9 +43,9 @@ Allows for lifetime events on the emitter to trigger certain events.
     // looping_travel_distance_events
     "looping_travel_distance_events: [
         // a series of events that occur at set intervals
-    		// these get fired every time the emitter has moved the specified input
-    		// distance from the last time it was fired.
-    		// An example for how to format these events would be:
+      // these get fired every time the emitter has moved the specified input
+      // distance from the last time it was fired.
+      // An example for how to format these events would be:
         // {
         //   "distance": 1.0,
         //   "effects": [ "effect_one" ]
@@ -53,8 +54,8 @@ Allows for lifetime events on the emitter to trigger certain events.
         //   "distance": 2.0,
         //   "effects": [ "effect_two" ]
         // }
-		//
-		// Note that "effect_one" and "effect_two" must be defined events within the particle_effect
+  //
+  // Note that "effect_one" and "effect_two" must be defined events within the particle_effect
     ]
 
 }

@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:variable_max_auto_step
-ms.prod: gaming
+description: "A reference document detailing the 'variable_max_auto_step' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:variable_max_auto_step
 
-`minecraft:variable_max_auto_step` 
+`minecraft:variable_max_auto_step`
 Allows entities have a maximum auto step height that is different depending on whether they are on a block that prevents jumping. Incompatible with "runtime_identifier": "minecraft:horse".
 
 ## Parameters

@@ -2,13 +2,12 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: minecraft/server.ContainerSlot Class
 description: Contents of the @minecraft/server.ContainerSlot class.
+ms.service: minecraft-bedrock-edition
 ---
 # ContainerSlot Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
@@ -22,6 +21,9 @@ Represents a slot within a broader container (e.g., entity inventory.)
 Number of the items in the stack. Valid values range between 1-255. The provided value will be clamped to the item's maximum stack size.
 
 Type: *number*
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
 
 > [!WARNING]
 > Throws if the value is outside the range of 1-255.
@@ -36,17 +38,15 @@ Type: *boolean*
 > [!WARNING]
 > Throws if the slot's container is invalid.
 
-### **isValid**
-`read-only isValid: boolean;`
-
-Type: *boolean*
-
 ### **keepOnDeath**
 `keepOnDeath: boolean;`
 
 Gets or sets whether the item is kept on death.
 
 Type: *boolean*
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
 
 > [!WARNING]
 > Throws if the slot's container is invalid.
@@ -57,6 +57,9 @@ Type: *boolean*
 Gets or sets the item's lock mode. The default value is `ItemLockMode.none`.
 
 Type: [*ItemLockMode*](ItemLockMode.md)
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
 
 > [!WARNING]
 > Throws if the slot's container is invalid.
@@ -77,6 +80,9 @@ Type: *number*
 Given name of this stack of items. The name tag is displayed when hovering over the item. Setting the name tag to an empty string or `undefined` will remove the name tag.
 
 Type: *string*
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
 
 > [!WARNING]
 > Throws if the slot's container is invalid. Also throws if the length exceeds 255 characters.
@@ -102,33 +108,25 @@ Type: *string*
 > Throws if the slot's container is invalid.
 
 ## Methods
-- [clone](#clone)
 - [getItem](#getitem)
 - [getLore](#getlore)
+- [getTags](#gettags)
+- [hasTag](#hastag)
 - [isStackableWith](#isstackablewith)
+- [isValid](#isvalid)
 - [setCanDestroy](#setcandestroy)
 - [setCanPlaceOn](#setcanplaceon)
 - [setItem](#setitem)
 - [setLore](#setlore)
 
-### **clone**
+### **getItem**
 `
-clone(): ItemStack
+getItem(): ItemStack | undefined
 `
 
 Creates an exact copy of the item stack, including any custom data or properties.
 
-#### **Returns** [*ItemStack*](ItemStack.md)
-
-> [!WARNING]
-> Throws if the slot's container is invalid.
-
-### **getItem**
-`
-getItem(): ItemStack
-`
-
-#### **Returns** [*ItemStack*](ItemStack.md)
+#### **Returns** [*ItemStack*](ItemStack.md) | *undefined* - Returns a copy of the item in the slot. Returns undefined if the slot is empty.
 
 > [!WARNING]
 > This function can throw errors.
@@ -145,6 +143,35 @@ Returns the lore value - a secondary display string - for an ItemStack.
 > [!WARNING]
 > Throws if the slot's container is invalid.
 
+### **getTags**
+`
+getTags(): string[]
+`
+
+Returns all tags for the item in the slot.
+
+#### **Returns** *string*[] - Returns all tags for the item in the slot. Return an empty array if the the slot is empty.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **hasTag**
+`
+hasTag(tag: string): boolean
+`
+
+Returns whether the item in the slot slot has the given tag.
+
+#### **Parameters**
+- **tag**: *string*
+  
+  The item tag.
+
+#### **Returns** *boolean* - Returns false when the slot is empty or the item in the slot does not have the given tag.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **isStackableWith**
 `
 isStackableWith(itemStack: ItemStack): boolean
@@ -154,11 +181,22 @@ Returns whether this item stack can be stacked with the given `itemStack`. This 
 
 #### **Parameters**
 - **itemStack**: [*ItemStack*](ItemStack.md)
+  
+  The ItemStack that is being compared.
 
-#### **Returns** *boolean*
+#### **Returns** *boolean* - Returns whether this item stack can be stacked with the given `itemStack`. 
 
 > [!WARNING]
 > Throws if the slot's container is invalid.
+
+### **isValid**
+`
+isValid(): boolean
+`
+
+Returns whether the ContainerSlot is valid. The container slot is valid if the container exists and is loaded, and the slot index is valid.
+
+#### **Returns** *boolean*
 
 ### **setCanDestroy**
 `
@@ -169,6 +207,11 @@ The list of block types this item can break in Adventure mode. The block names a
 
 #### **Parameters**
 - **blockIdentifiers**?: *string*[] = `null`
+  
+  The list of blocks, given by their identifiers.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > Throws if the slot's container is invalid. Also throws if any of the provided block identifiers are invalid.
@@ -182,6 +225,11 @@ The list of block types this item can be placed on in Adventure mode. This is on
 
 #### **Parameters**
 - **blockIdentifiers**?: *string*[] = `null`
+  
+  The list of blocks, given by their identifiers.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > Throws if the slot's container is invalid. Also throws if any of the provided block identifiers are invalid.
@@ -191,8 +239,15 @@ The list of block types this item can be placed on in Adventure mode. This is on
 setItem(itemStack?: ItemStack): void
 `
 
+Sets the given ItemStack in the slot, replacing any existing item.
+
 #### **Parameters**
 - **itemStack**?: [*ItemStack*](ItemStack.md) = `null`
+  
+  The ItemStack to be placed in the slot.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -206,6 +261,11 @@ Sets the lore value - a secondary display string - for an ItemStack.
 
 #### **Parameters**
 - **loreList**?: *string*[] = `null`
+  
+  A list of lore strings. Setting this argument to undefined will clear the lore.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > Throws if the slot's container is invalid.

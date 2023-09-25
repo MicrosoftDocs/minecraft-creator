@@ -1,27 +1,21 @@
 ---
-author: mammerla
+author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - minecraft:projectile
-ms.prod: gaming
+description: "A reference document detailing the 'projectile' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:projectile
 
-`minecraft:projectile` sets the projectile item component. Projectile items shoot out, like an arrow.
-
->[!IMPORTANT]
-> `minecraft:projectile` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
->
->Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
->
->To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md)
+`minecraft:projectile` compels the item to shoot, similarly to an arrow. Items with `minecraft:projectile` can be shot from dispensers or used as ammunition for items with the `minecraft:shooter` item component. Additionally, this component sets the entity that is spawned for items that also contain the `minecraft:throwable` component.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|minimum_critical_power|*not set*|Decimal|How long you must charge a projectile for it to critically hit.|
-|projectile_entity|*not set* |String| The entity to be fired as a projectile.|
+|minimum_critical_power|*not set*| Float| Defines the time a projectile needs to charge in order to critically hit|
+|projectile_entity|*not set* | JSON object| The entity to be fired as a projectile|
 
 ## Example
 

@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: fishing_hook
-ms.prod: gaming
+description: "A code snippet for the fishing_hook entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # fishing_hook

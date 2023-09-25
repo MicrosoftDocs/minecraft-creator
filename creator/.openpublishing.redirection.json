@@ -14,6 +14,36 @@
         "source_path": "Reference/Content/SchemasReference/Schemas/minecraftSchema_actor_animation_controller_1.10.0.md",
         "redirect_url": "/reference/content/schemasreference/schemas/schemaslist.md",
         "redirect_document_id": false
-      }
+      },
+      {
+          "source_path": "Reference/content/featuresreference/examples/features/minecraftbeards_and_shavers.md",
+          "redirect_url": "/reference/content/featuresreference/features/featurelist.md",
+          "redirect_document_id": false
+      },
+      {
+          "source_path": "Reference/content/featuresreference/examples/features/minecraftConditional_list.md",
+          "redirect_url": "/reference/content/featuresreference/features/featurelist.md",
+          "redirect_document_id": false
+      },
+      {
+          "source_path": "Reference/content/featuresreference/examples/features/minecraftRect_layout.md",
+          "redirect_url": "/reference/content/featuresreference/features/featurelist.md",
+          "redirect_document_id": false
+      },
+      {
+          "source_path": "Reference/content/featuresreference/examples/features/minecraftScan_surface.md",
+          "redirect_url": "/reference/content/featuresreference/features/featurelist.md",
+          "redirect_document_id": false
+      },
+   {
+          "source_path": "Reference/content/featuresreference/examples/features/minecraftunderwater_cave_carver.md",
+          "redirect_url": "/reference/content/featuresreference/features/minecraftunderwater_cave_carver_feature.md",
+          "redirect_document_id": false
+      },
+      {
+        "source_path": "Reference/content/itemreference/examples/itemcomponents/menu_category_component.md",
+        "redirect_url": "/reference/content/itemreference/examples/itemcomponentlist.md",
+        "redirect_document_id": false
+    }   
     ]
 }

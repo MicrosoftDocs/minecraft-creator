@@ -2,18 +2,18 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: Boolean Enum
 description: Description and values of the Boolean enum
+ms.service: minecraft-bedrock-edition
 ---
 # `Boolean` Enum
 Boolean value
 
 ## Values
-- `false`
-false
 - `true`
 true
+- `false`
+false
 
 ## References
 The following commands reference this enum:
@@ -21,6 +21,7 @@ The following commands reference this enum:
 - [daylock](../commands/daylock.md)
 - [effect](../commands/effect.md)
 - [gamerule](../commands/gamerule.md)
+- [gametest](../commands/gametest.md)
 - [locate](../commands/locate.md)
 - [mobevent](../commands/mobevent.md)
 - [structure](../commands/structure.md)

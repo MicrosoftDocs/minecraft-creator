@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: shipwreck
-ms.prod: gaming
+description: "A code snippet for the shipwreck chest loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # shipwreck

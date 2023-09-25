@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.investigate_suspicious_location
-ms.prod: gaming
+description: "A reference document detailing the 'behavior.investigate_suspicious_location' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.investigate_suspicious_location

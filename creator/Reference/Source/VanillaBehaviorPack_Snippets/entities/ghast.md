@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: ghast
-ms.prod: gaming
+description: "A code snippet for the ghast entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # ghast

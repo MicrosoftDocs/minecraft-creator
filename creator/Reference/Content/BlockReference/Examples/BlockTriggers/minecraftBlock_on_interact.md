@@ -2,12 +2,13 @@
 author: mammerla
 ms.author: mikeam
 title: Block Documentation - minecraft:on_interact
-ms.prod: gaming
+description: "A reference document detailing the 'on_interact' block trigger"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - minecraft:on_interact
 
-`minecraft:on_interact` is an Event Trigger for when an actor interacts with a block.
+`minecraft:on_interact` is an Event Trigger for when an entity interacts with a block.
 
 ## Parameters
 
@@ -23,7 +24,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:on_interact":{
-    "condition": "query.block_property(custom:block_light) == true", //custom condition
+    "condition": "query.block_state(custom:block_light) == true", //custom condition
     "event" : "light_off", //custom event
     "target": "self"
 }

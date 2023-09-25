@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: snow_golem_shear
-ms.prod: gaming
+description: "A code snippet for the snow golem shear entity loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # snow_golem_shear

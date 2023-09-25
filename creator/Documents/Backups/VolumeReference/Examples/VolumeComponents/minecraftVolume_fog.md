@@ -2,7 +2,7 @@
 author: mammerla
 ms.author: mikeam
 title: minecraft:fog
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 ---
 
 # minecraft:fog

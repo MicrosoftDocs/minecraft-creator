@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Block Documentation - minecraft:unit_cube
-ms.prod: gaming
+description: "A reference document detailing the 'unit_cube' block component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - minecraft:unit_cube

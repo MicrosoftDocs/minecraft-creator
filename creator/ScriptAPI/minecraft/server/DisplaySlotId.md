@@ -2,28 +2,24 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
 title: .DisplaySlotId Enumeration
 description: Contents of the .DisplaySlotId enumeration.
+ms.service: minecraft-bedrock-edition
 ---
 # DisplaySlotId Enumeration
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-An enumeration for the locations where scoreboard objectives can be displayed.
+Specifies a mechanism for displaying scores on a scoreboard.
 
 ## Constants
-### **belowname**
-`belowname = "belowname"`
+### **BelowName**
+`BelowName = "BelowName"`
 
-Score for an objective is displayed below a player's nametag.
-### **list**
-`list = "list"`
+Displays the score below the player's name.
+### **List**
+`List = "List"`
 
-This objective and respective list of players is shown on the Pause menu.
-### **sidebar**
-`sidebar = "sidebar"`
+Displays the score as a list on the pause screen.
+### **Sidebar**
+`Sidebar = "Sidebar"`
 
-The objective is shown on the right-hand side of the screen.
+Displays the score on the side of the player's screen.

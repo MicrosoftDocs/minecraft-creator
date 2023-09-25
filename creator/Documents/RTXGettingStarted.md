@@ -2,9 +2,9 @@
 author: mammerla
 ms.author: v-bbortree
 title: Getting Started with Ray Tracing
-ms.prod: gaming
 ms.topic: tutorial
 description: "An introduction to the Ray Tracing features in Minecraft: Bedrock Edition."
+ms.service: minecraft-bedrock-edition
 ---
 
 # Getting Started with Ray Tracing

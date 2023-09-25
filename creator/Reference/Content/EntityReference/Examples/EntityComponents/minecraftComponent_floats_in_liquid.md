@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - minecraft:floats_in_liquid
-ms.prod: gaming
+description: "A reference document detailing the 'floats_in_liquid' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation -  minecraft:floats_in_liquid
