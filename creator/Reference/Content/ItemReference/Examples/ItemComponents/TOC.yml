@@ -1,7 +1,7 @@
  - name: Item Component List
    href: ../ItemComponentList.md
  - name: Custom Item Use Priority
-   href: ItemUsePriority.md
+   href: ../ItemUsePriority.md
  - name: description
    href: description_component.md
  - name: menu_category
