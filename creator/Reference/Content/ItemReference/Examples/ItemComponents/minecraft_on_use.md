@@ -21,7 +21,7 @@ ms.service: minecraft-bedrock-edition
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|on_use|*not set*| JSON object| Event trigger for when the item is used.|
+|on_use|*not set*| JSON object| Event trigger for when the item is used. See [Custom Item Use Priority](../ItemUsePriority.md) for more information on use behavior.|
 
 ## Example
 

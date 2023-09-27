@@ -24,6 +24,8 @@ ms.service: minecraft-bedrock-edition
 |movement_modifier|*not set* |Float | Modifier value to scale the players movement speed when item is in use.|
 |on_complete  |*not set*  | Event| Event trigger for when the item has completed its use duration.|
 
+See [Custom Item Use Priority](../ItemUsePriority.md) for more information on use behavior.
+
 ## Example
 
 ```json

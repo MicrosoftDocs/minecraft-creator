@@ -10,12 +10,8 @@ ms.service: minecraft-bedrock-edition
 
 The Bedrock version of Minecraft has a `/camera` command that adds the ability to control how players view the game or adds full-screen fades for a more polished experience. This document goes into all the relevant detail of how it works and can be used to make interesting new experiences.
 
-This new feature adds the concept of Camera Presets, plus a new command to interact with those presets. Both are behind a new Cameras experiment toggle while we gather feedback and make changes.
+This new feature adds the concept of Camera Presets, plus a new command to interact with those presets.
 
->[!IMPORTANT]
->The camera command is experimental. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning. Check the Minecraft Changelog for details on any changes.
->
->To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](ExperimentalFeaturesToggle.md).
 
 ## Camera Presets
 

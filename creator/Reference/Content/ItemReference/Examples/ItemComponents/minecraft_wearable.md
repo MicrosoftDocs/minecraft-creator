@@ -17,6 +17,8 @@ ms.service: minecraft-bedrock-edition
 |protection|0| Integer| How much protection the wearable has.|
 |slot|*not set*| Enumerator| Determines where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1.|
 
+See [Custom Item Use Priority](../ItemUsePriority.md) for more information on use behavior.
+
 ### slot
 
 Here are the following equipment slots that can be set for the value of `slot`.
