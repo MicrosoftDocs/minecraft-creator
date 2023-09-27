@@ -22,6 +22,8 @@ ms.service: minecraft-bedrock-edition
 |max_draw_duration|0.0| Float| Determines how long can the weapon can be drawn before releasing automatically|
 |scale_power_by_draw_duration| false| Boolean|When set to 'true', the longer the weapon is drawn, the more power it will have when released|
 
+See [Custom Item Use Priority](../ItemUsePriority.md) for more information on use behavior.
+
 ## Ammunition
 
 The 'ammunition' parameter contains four parameters of its own:

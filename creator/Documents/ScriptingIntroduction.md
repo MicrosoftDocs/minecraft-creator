@@ -110,12 +110,11 @@ To get there, we are going to start with the Attack Cow behavior pack, add the f
 ```javascript
 import {
     world,
-    system,
-    TicksPerSecond
+    system
   } from "@minecraft/server";
 
 function mainTick() {
-  if (system.currentTick === TicksPerSecond * 10) {
+  if (system.currentTick === 400) {
     world.sendMessage("All systems GO!");
   }
   system.run(mainTick);
@@ -130,7 +129,7 @@ When you're done, it should look like this:
 
 ![Image of a main.js file with the javascript example code in it](Media/ScriptingIntroduction/main_js_BP.png)
 
-10. Go back to Minecraft, create a world with the behavior pack activated. When you go into the world, your test message will appear after about 10 seconds.
+10. Go back to Minecraft, create a world with the behavior pack activated. When you go into the world, your test message will appear after about 20 seconds.
 
 ![Image of Minecraft world with "All Systems Go!" message displayed successfully](Media/ScriptingIntroduction/all_systems_go_message_success.png)
 
@@ -140,9 +139,9 @@ That proves your script is working. Neat!
 
 For this particular script that we just tried, you must create a new world if you want to update the message in **"world.sendMessage"** and check that it has updated.
 
-Hot reloading (using the **/reload** command) will NOT cause an updated message to display if the original message was displayed before your update, because the 200th tick (meaning the 10th second of the world existing) has already passed, and this line of the code specifically wants that particular tick:
+Hot reloading (using the **/reload** command) will NOT cause an updated message to display if the original message was displayed before your update, because the 400th tick (meaning the 20th second of the world existing) has already passed, and this line of the code specifically wants that particular tick:
 
-`if (system.currentTick === TicksPerSecond * 10) {`
+`if (system.currentTick === 400) {`
 
 Don't worry, we'll cover **/reload** later in this tutorial.
 
@@ -177,19 +176,15 @@ We also have the same line at the end of the **mainTick** function itself. This 
 
 The contents of the `mainTick` function start with this line:
 
-`if (system.currentTick === TicksPerSecond * 10)`
+`if (system.currentTick === 400)`
 
-This statement is checking if we are currently on the 200th tick. If we are on the 200th tick, then this statement is true and the code inside the `if` statement's curly braces will be executed:
+This statement is checking if we are currently on the 400th tick. If we are on the 400th tick, then this statement is true and the code inside the `if` statement's curly braces will be executed:
 
 `world.sendMessage("All systems GO!");`
 
 Otherwise, the code inside the `if` statement's curly braces will be skipped. Lastly, despite whether the `if` statement were true or false, `system.run(mainTick)` will be called again, to check again the next tick.
 
-As mentioned earlier, 20 ticks equals 1 second in Minecraft. So the constant that we are using from the `@minecraft/server` module, **TicksPerSecond**, equals 20.
-When we multiply it by a number (let's call it "x") we end up with the number of ticks that is equal to x seconds.
-Therefore, if the value we check in the `system.currentTick === TicksPerSecond * 10` line of code is 200 ticks, and 200 ticks is the same at 10 seconds, then we are telling the code to wait 10 seconds from the start of world load to display the message.
-
-If your computer takes longer than 10 seconds to load the world, then this message will not get displayed unless you change the "x" value from 10 to something bigger. This is something to keep in mind as a creator! You do not want any world setup code to run before your world is even loaded!
+As mentioned earlier, 20 ticks equals 1 second in Minecraft. If your computer takes longer than 20 seconds to load the world, then this message will not get displayed unless you change the currentTick value from 400 to something greater. This is something to keep in mind as a creator! You do not want any world setup code to run before your world is even loaded!
 
 Anyway, when we load our world with this script in it, that statement is false for a while.
 
@@ -198,22 +193,24 @@ This continues looping until it finally IS lunchtime, so you get to go have lunc
 
 ## What is Hot Reloading?
 
-As alluded to above, hot reloading is a super cool feature of scripting in Minecraft. Instead of having to close the game and reopen it in order to reload your script, hot reloading allows you to reload your script while you are inside your world and the game is still running, and your game will be updated to use the latest version of your script. You will find that this will drastically reduce your game development time because you will be able to test your changes almost instantly.
+As alluded to previously, hot reloading is a super cool feature of scripting in Minecraft. Instead of having to close the game and reopen it in order to reload your script, hot reloading allows you to reload your script while you are inside your world and the game is still running, and your game will be updated to use the latest version of your script. You will find that this will drastically reduce your game development time because you will be able to test your changes almost instantly.
 
 Let's try it! But first, we'll need to make one change to our current code to make it work with hot reloading.
 
 1. Open **main.js**.
 2. Change this line of code:
 
-`if (system.currentTick === TicksPerSecond * 10)`
+`if (system.currentTick === 400)`
 
 ...to this, instead:
 
-`if (system.currentTick % (TicksPerSecond * 10) === 0)`
+`if (system.currentTick % 200 === 0)`
 
 The "%" is known as the **modulo operator**, and it is used to obtain the remainder of a division between two integers.
 
-So what we are now saying is "if the remainder of the current tick divided by 200 equals 0, then execute this code." In other words, "if the current tick is evenly divisible by 200, then execute this code." So this statement will now be true every 200 ticks, instead of being true solely on the 200th tick. 
+Also, we're changing the 400 to 200 so you have a shorter wait time.
+
+So what we are now saying is "if the remainder of the current tick divided by 200 equals 0, then execute this code." In other words, "if the current tick is evenly divisible by 200, then execute this code." So this statement will now be true every 200 ticks, instead of being true solely on the 400th tick. 
 
 Due to this change, our line of code within the `if` statement's brackets:
 
@@ -253,14 +250,13 @@ Next, we will implement a simple script that counts the seconds that pass from t
 ```javascript
 import {
     world,
-    system,
-    TicksPerSecond
+    system
   } from "@minecraft/server";
 
 let secondsPassed = 0;
 
 function mainTick() {
-  if (system.currentTick % TicksPerSecond === 0) {
+  if (system.currentTick % 20 === 0) {
     secondsPassed += 1;
     world.sendMessage("Seconds Passed: " + secondsPassed);
   }
@@ -318,12 +314,11 @@ Based on our description above of what we want our script to do, here is the ske
 ```javascript
 import {
     world,
-    system,
-    TicksPerSecond
+    system
   } from "@minecraft/server";
 
 function mainTick() {
-  if (system.currentTick % (TicksPerSecond * 10) === 0) {
+  if (system.currentTick % 200 === 0) {
     const playerDimension = getPlayerDimension();
     const playerLocation = getPlayerLocation();
     if (playerDimension !== undefined && playerLocation !== undefined) {
@@ -457,8 +452,7 @@ Here is how your whole script should look by the end (no pun intended):
 ```javascript
 import {
     world,
-    system,
-    TicksPerSecond
+    system
   } from "@minecraft/server";
 
 function getPlayer() {
@@ -487,7 +481,7 @@ function getPlayerLocation() {
 }
 
 function mainTick() {
-  if (system.currentTick % (TicksPerSecond * 10) === 0) {
+  if (system.currentTick % 200 === 0) {
     const playerDimension = getPlayerDimension();
     const playerLocation = getPlayerLocation();
     if (playerDimension !== undefined && playerLocation !== undefined) {

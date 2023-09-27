@@ -326,6 +326,8 @@
             href: Reference/Content/ItemReference/Examples/ItemDefinition.md
           - name: Item Components
             href: Reference/Content/itemreference/Examples/ItemComponents/TOC.yml
+          - name: Custom Item Use Priority
+            href: Reference/Content/itemreference/Examples/ItemUsePriority.md
         - name: Recipe JSON
           items:
           - name: Recipe Documentation Homepage

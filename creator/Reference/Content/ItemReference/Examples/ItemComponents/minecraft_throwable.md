@@ -21,6 +21,8 @@ ms.service: minecraft-bedrock-edition
 |min_draw_duration|0.0|Float |The minimum duration to draw a throwable item.|
 |scale_power_by_draw_duration|false|Boolean|Whether or not the power of the throw increases with duration charged. When true, The longer you hold, the more power it will have when released.|
 
+See [Custom Item Use Priority](../ItemUsePriority.md) for more information on use behavior.
+
 ## Example
 
 ```json
