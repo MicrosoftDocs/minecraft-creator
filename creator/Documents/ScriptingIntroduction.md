@@ -318,7 +318,7 @@ import {
   } from "@minecraft/server";
 
 function mainTick() {
-  if (system.currentTick % 20 === 0) {
+  if (system.currentTick % 200 === 0) {
     const playerDimension = getPlayerDimension();
     const playerLocation = getPlayerLocation();
     if (playerDimension !== undefined && playerLocation !== undefined) {
