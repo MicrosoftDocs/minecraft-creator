@@ -71,7 +71,7 @@ To add commands to an NPC, follow these instructions:
 
 ![NPC Command Interface](Media\NPCs\LearningPortal_NPCEditorCommands.PNG)
 
-Your NPC will execute these commands in order whenever a player interacts with them and closes their dialog box. For a list of commands that your NPCs can execute, see [Commands](https://minecraft.fandom.com/wiki/Commands).
+Your NPC will execute these commands in order whenever a player interacts with them and closes their dialog box. For a list of commands that your NPCs can execute, see [Commands](https://minecraft.wiki/w/Commands).
 
 ### Advanced Command Settings
 
