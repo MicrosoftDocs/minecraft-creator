@@ -42,7 +42,12 @@
       },
       {
         "source_path": "Reference/content/itemreference/examples/itemcomponents/menu_category_component.md",
-        "redirect_url": "/reference/content/itemreference/examples/itemcomponentlist.md",
+        "redirect_url": "minecraft/creator/reference/content/itemreference/examples/itemcategorization.md",
+        "redirect_document_id": false
+    },
+      {
+        "source_path": "Reference/content/itemreference/examples/itemcomponents/description_component.md",
+        "redirect_url": "minecraft/creator/reference/content/itemreference/examples/itemdefinition.md",
         "redirect_document_id": false
     }   
     ]
