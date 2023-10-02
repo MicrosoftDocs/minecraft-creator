@@ -2,10 +2,6 @@
    href: ../ItemComponentList.md
  - name: Custom Item Use Priority
    href: ../ItemUsePriority.md
- - name: description
-   href: description_component.md
- - name: menu_category
-   href: menu_category_component.md
  - name: allow_off_hand
    href: minecraft_allow_off_hand.md
  - name: block_placer
