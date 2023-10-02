@@ -30,7 +30,6 @@ Below is a list of all the available Item Components within Minecraft: Bedrock E
 |[minecraft:hover_text_color](ItemComponents/minecraft_hover_text_color.md)|*not set* |  JSON Object| Determines the color of the item name when hovering over it.|
 |[minecraft:icon](ItemComponents/minecraft_icon.md)|*not set* | JSON Object| Determines the icon to represent the item in the UI and elsewhere. In format versions before 1.20.10, this component requires the 'Holiday Creator Features' experimental toggle.|
 |[minecraft:interact_button](ItemComponents/minecraft_interact_button.md)|*not set* | JSON Object| This component is a boolean or string that determines if the interact button is shown in touch controls and what text is displayed on the button. When set to 'true', default 'Use Item' text will be used.|
-|[minecraft:item](ItemComponents/minecraft_item.md)|*not set* | JSON Object| A definition of the item, including the 'description' and 'components' sections of the item file.|
 |[minecraft:liquid_clipped](ItemComponents/minecraft_liquid_clipped.md)|*not set* | JSON Object| Determines whether an item interacts with liquid blocks on use.|
 |[minecraft:max_stack_size](ItemComponents/minecraft_max_stack_size.md)|*not set* | JSON Object| Determines how many of the item can be stacked.|
 |[minecraft:on_use](ItemComponents/minecraft_on_use.md)|*not set* | JSON Object|  The on_use item component allows you to receive an event when the item is used.|
