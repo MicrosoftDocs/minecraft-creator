@@ -38,8 +38,6 @@
    href: minecraft_icon.md
  - name: interact_button
    href: minecraft_interact_button.md
- - name: item
-   href: minecraft_item.md
  - name: liquid_clipped
    href: minecraft_liquid_clipped.md
  - name: max_stack_size
