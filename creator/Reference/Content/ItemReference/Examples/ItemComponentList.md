@@ -12,8 +12,6 @@ Below is a list of all the available Item Components within Minecraft: Bedrock E
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|[description](ItemComponents/description_component.md)|*not set* |  JSON Object| A list of characters representing an item. The description MUST contain an identifier; other fields are optional.|
-|[menu_category](ItemComponents/menu_category_component.md)|*not set* |  JSON Object| Defines the creative group name and menu category of an item.|
 |[minecraft:allow_off_hand](ItemComponents/minecraft_allow_off_hand.md)|*not set* |  JSON Object| Determine whether an item can be placed in the off-hand slot of the inventory.|
 |[minecraft:block_placer](ItemComponents/minecraft_block_placer.md)|*not set* | JSON Object|  Block Placer item component. Items with this component will place a block when used. Experimental toggles required: Holiday Creator Features (in format versions before 1.20.10). |
 |[minecraft:can_destroy_in_creative](ItemComponents/minecraft_can_destroy_in_creative.md)|*not set* | JSON Object| Determines if the item will break blocks in Creative Mode while swinging.|
