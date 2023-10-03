@@ -13,6 +13,7 @@ Minecraft's Bedrock Editor is a multiblock editing experience that helps you eas
 > [!IMPORTANT]
 > The Editor is in early preview and we're working to add more capabilities.
 > It will change significantly as we get feedback from creators like you.
+> Also, the images of Editor in this document might vary a little from what you have on your screen.
 
 First, we are going to install Minecraft Preview. Then, we will create the shortcut that launches Editor. After that, we will open Editor and make sure it works.
 
@@ -62,11 +63,11 @@ Looks good? Great. Close Preview and move on to the next step.
 
 2. For the location of the item, enter the following:
 
-    **`minecraft:?Editor=true`**
+    **`minecraft-preview:?Editor=true`**
 
     This is case-sensitive and needs to match exactly.
 
-![Editor create shortcut path](Media/Editor/editor_install_shortcut_path.png)
+![Editor create shortcut path](Media/Editor/editor_install_shortcut_path_preview.png)
 
 3. Click **Next** and give your shortcut a name like **Minecraft Editor**.
 
@@ -95,9 +96,9 @@ You can only access the Editor through the desktop shortcut and only if you have
 
 Three things to check:  
 
-- Is the desktop shortcut set up correctly? Remember it is case-sensitive and needs to match exactly. Ensure it says the following: **`minecraft:?Editor=true`**.  
+- Is the desktop shortcut set up correctly? Remember it is case-sensitive and needs to match exactly. Ensure it says the following: **`minecraft-preview:?Editor=true`**. 
 
-- Did you install Bedrock Preview? If not, you need to do that.  
+- Did you install Bedrock Preview? If not, you need to do that. 
 
 - Do you have both Bedrock Preview and Bedrock (Retail) installed? You may have selected a checkbox that says “Always open" for Bedrock (Retail). To fix this, perform the following steps:
 
@@ -113,9 +114,9 @@ Three things to check:
 
 ![Apps > Default Apps window where you can set Minecraft Preview as the default app.](Media/Editor/editor_install_select_default_app.png)
 
-- If you would like to open Editor a different way, you can open a file explorer window and enter **`minecraft:?Editor=true`** into the path:
+- If you would like to open Editor a different way, you can open a file explorer window and enter **`minecraft-preview:?Editor=true`** into the path:
 
-![File explorer window with the Editor shortcut as the path](Media/Editor/editor_install_file_explorer_path.png)
+![File explorer window with the Editor shortcut as the path](Media/Editor/editor_install_file_explorer_path_preview.png)
 
 ## What's Next?
 
