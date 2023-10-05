@@ -478,7 +478,7 @@ To get you going, we provide the following example JSON files that will give you
 
 ## Volumetric Fog and Light Shafts 
 
-Minecraft Bedrock Preview after version 1.20.5 add a visual effect to the Deferred Technical Preview: volumetric fog and light shafts! This effect relies on a terrain-aware volumetric representation of the world, allowing for complex fog that changes depending on the environment.
+Minecraft Bedrock Preview version `1.20.50.21` adds a visual effect to the Deferred Technical Preview: volumetric fog and light shafts! This effect relies on a terrain-aware volumetric representation of the world, allowing for complex fog that changes depending on the environment.
 
 Rather than defining new JSON files, this effect takes advantage of existing resource pack capabilities for Fog and Volumes. You can define fog properties for specific biomes, discrete regions in your world, whether the player is under water or above water, and much more.
 
