@@ -475,3 +475,21 @@ To get you going, we provide the following example JSON files that will give you
   } 
 }
 ```
+
+## Volumetric Fog and Light Shafts 
+
+Minecraft Bedrock Preview after version 1.20.5 add a visual effect to the Deferred Technical Preview: volumetric fog and light shafts! This effect relies on a terrain-aware volumetric representation of the world, allowing for complex fog that changes depending on the environment.
+
+Rather than defining new JSON files, this effect takes advantage of existing resource pack capabilities for Fog and Volumes. You can define fog properties for specific biomes, discrete regions in your world, whether the player is under water or above water, and much more.
+
+Please refer to the following articles to get started with these systems: 
+
+>- [Fog in Resource Packs](FogInResourcePacks.md)
+
+>- [Volume JSON Documentation](../Reference/Content/VolumeReference/Examples/VolumeDefinitions/VolumeDefinitionProperties.md)
+
+Note that the Deferred Technical Preview does not fully support tinted absorption as described in the `“media_coefficients”` section of **Fog in Resource Packs**. The JSON format takes an RGB triplet for this value to describe how much light the fog will absorb on a per-channel granularity. This is the behavior for RTX Resource Packs, but volumes in the Deferred Technical Preview only operate at a single-channel of granularity. Therefore, our engine will calculate the standard luminance of the RGB triplet specified for absorption and use it instead of the RGB triplet itself when in Deferred Technical Preview mode.
+
+Luminance is calculated as follows: 
+
+`Luminance=RGB∙[0.2126, 0.7152, 0.0722]`
