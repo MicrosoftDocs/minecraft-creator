@@ -82,7 +82,7 @@ To get there, we are going to start with the Attack Cow behavior pack, add the f
           "description": "My Second Add-On!",
             "type": "data",
             "uuid": "PUT A NEW UUID HERE",
-            "version": [1, 0, 0],
+            "version": [1, 0, 0]
         },
         {
           "description": "Test Scripting",
