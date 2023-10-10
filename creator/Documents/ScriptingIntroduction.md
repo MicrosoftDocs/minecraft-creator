@@ -101,7 +101,7 @@ To get there, we are going to start with the Attack Cow behavior pack, add the f
   }
 ```
 
-4. Replace the three instances of **`PUT A NEW UUID HERE`** with new UUIDs, just like you did in the [Introduction to Behavior Packs](BehaviorPack.md) tutorial.
+4. Replace the three instances of **`PUT A NEW UUID HERE`** with new [UUIDs](https://www.uuidgenerator.net/), just like you did in the [Introduction to Behavior Packs](BehaviorPack.md) tutorial.
 5. Save your edited manifest.json file.
 6. In the **behavior_pack_sample** folder, create a folder and name it **scripts** and open it.
 7. Create a file inside there and name it **main.js**.
