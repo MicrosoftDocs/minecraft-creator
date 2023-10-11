@@ -34,11 +34,11 @@ This trait can also be configured with a 'y_rotation_offset' where an axis-align
 
 ```json
 "traits": {
-    "minecraft:placement_direction": {
-        "enabled_states": ["minecraft:cardinal_direction",
-            "minecraft:facing_direction"],
-        "y_rotation_offset": 90.0
-    }
+ "minecraft:placement_direction": {
+  "enabled_states": ["minecraft:cardinal_direction",
+   "minecraft:facing_direction"],
+  "y_rotation_offset": 90.0
+ }
 }
 ```
 
@@ -65,32 +65,32 @@ Now that you understand the concept of block traits and the traits available, le
 
 ```json
 {
-    "format_version": "1.20.0",
-    "minecraft:block": {
-        "description": {
-            "identifier": "test:rotatable_block",
-            "menu_category": {
-                "category": "construction"
-            },
-                "traits": {
-                    "minecraft:placement_direction": {
-                        "enabled_states": ["minecraft:cardinal_direction"]
-                    }
-                }
-            },
-            "components": {
-                ...
-            },
-            "permutations": {
-                "condition": "query.block_state('minecraft:cardinal_direction')== 'south'",
-                "components": {
-                    "minecraft:transformation": {
-                        "rotation": [0, 180, 0]
-                            }
-                        }
-                    }
-                }
-            }
+ "format_version": "1.20.0",
+ "minecraft:block": {
+  "description": {
+   "identifier": "test:rotatable_block",
+   "menu_category": {
+    "category": "construction"
+   },
+    "traits": {
+     "minecraft:placement_direction": {
+      "enabled_states": ["minecraft:cardinal_direction"]
+     }
+    }
+   },
+   "components": {
+    ...
+   },
+   "permutations": {
+    "condition": "query.block_state('minecraft:cardinal_direction')== 'south'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [0, 180, 0]
+       }
+      }
+     }
+    }
+   }
 ```
 
 ## Block Trait Example Blocks
@@ -103,72 +103,72 @@ The smiley block uses the `minecraft:cardinal_direction` to act in a similar man
 
 ```json
 {
-    "format_version": "1.20.20",
-    "minecraft:block": {
-        "description": {
-            "identifier": "testpack:smiley_block",
-            "menu_category": {
-                "category": "construction"
-            },
-                "traits": {
-                    "minecraft:placement_direction": {
-                        "enabled_states": ["minecraft:cardinal_direction"]
-                    }
-                }
-            }, 
-            "component": {
-                "minecraft:collision_box": {
-                    "origin": [-6, 0, -6],
-                    "size": [12, 12, 12]
-                },
-                "minecraft:selection_box": {
-                    "origin": [-6, 0, -6],
-                    "size": [12, 12, 12]
-                },
-                "minecraft:geometry": "geometry.small_cube",
-                "minecraft:material_instances": {
-                    "*": {
-                        "texture": "smiley",
-                        "render_method": "opaque"
-                    }
-                }
-            },
-            "permutations": [
-                { // north
-                    "condition": "query.block_state ('minecraft:cardinal_direction') == 'north'",
-                    "components": {
-                        "minecraft:transformation": {
-                            "rotation": [0, 0, 0]
-                        }
-                    }
-                },
-                { // south
-                    "condition": "query.block_state ('minecraft:cardinal_direction') == 'south'",
-                    "components": {
-                        "minecraft:transformation": {
-                            "rotation": [0, 180, 0]
-                        }
-                    }
-                },
-                { // west
-                    "condition": "query.block_state ('minecraft:cardinal_direction') == 'west'",
-                    "components": {
-                        "minecraft:transformation": {
-                            "rotation": [0, 90, 0]
-                        }
-                    }
-                },
-                { // east
-                    "condition": "query.block_state ('minecraft:cardinal_direction') == 'east'",
-                    "components": {
-                        "minecraft:transformation": {
-                            "rotation": [0, -90, 0]
-                        }
-                    }
-                }
-            }
-        ]
+ "format_version": "1.20.20",
+ "minecraft:block": {
+  "description": {
+   "identifier": "testpack:smiley_block",
+   "menu_category": {
+    "category": "construction"
+   },
+   "traits": {
+    "minecraft:placement_direction": {
+     "enabled_states": ["minecraft:cardinal_direction"]
     }
+   }
+  }, 
+  "components": {
+   "minecraft:collision_box": {
+    "origin": [-6, 0, -6],
+    "size": [12, 12, 12]
+   },
+   "minecraft:selection_box": {
+    "origin": [-6, 0, -6],
+    "size": [12, 12, 12]
+   },
+   "minecraft:geometry": "geometry.small_cube",
+   "minecraft:material_instances": {
+    "*": {
+     "texture": "smiley",
+     "render_method": "opaque"
+    }
+   }
+  },
+  "permutations": [
+   { // north
+    "condition": "query.block_state ('minecraft:cardinal_direction') == 'north'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [0, 0, 0]
+     }
+    }
+   },
+   { // south
+    "condition": "query.block_state ('minecraft:cardinal_direction') == 'south'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [0, 180, 0]
+     }
+    }
+   },
+   { // west
+    "condition": "query.block_state ('minecraft:cardinal_direction') == 'west'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [0, 90, 0]
+     }
+    }
+   },
+   { // east
+    "condition": "query.block_state ('minecraft:cardinal_direction') == 'east'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [0, -90, 0]
+     }
+    }
+   }
+  ]
+ }
+}
 ```
 
 ## Sample Slab Block
@@ -178,46 +178,50 @@ The sample slab block behaves similarly to a Vanilla slab, thanks to the `minecr
 > [!NOTE] Sample slab blocks will not combine into a double slab; the block only replicates the Vanilla slab top/bottom placement behavior.
 
 ```json
-
+​
 {
-    "format_version": "1.20.20",
-    "minecraft:block": {
-        "description": {
-            "identifier": "testpack:slab_block",
-            "menu_category": {
-                "category": "construction"
-            },
-                "traits": {
-                    "minecraft:placement_position": {
-                        "enabled_states": ["minecraft:vertical_half"]
-                    }
-                }
-            },
-            "component": {
-                "minecraft:geometry": "geometry.slab",
-                "minecraft:material_instances": {
-                    "*": {
-                        "texture": "slab",
-                        "render_method": "opaque"
-                    }
-                }
-            },
-                "minecraft:selection_box": {
-                    "origin": [-8, 0, -8],
-                    "size": [16, 8, 16]
-                },
-            "permutations": [
-                { // upper_slab
-                    "condition": "query.block_state ('minecraft:vertical_half') == 'top'",
-                    "component": {
-                        "minecraft:transformation": {
-                            "translation": [0, 0.5, 0]
-                        }
-                    }
-                }
-            ]
-        }
+ "format_version": "1.20.20",
+ "minecraft:block": {
+  "description": {
+   "identifier": "testpack:slab_block",
+   "menu_category": {
+    "category": "construction"
+   },
+   "traits" : {
+    "minecraft:placement_position": {
+     "enabled_states": ["minecraft:vertical_half"]
     }
+   }
+  },
+  "components": {
+   "minecraft:geometry": "geometry.slab",
+   "minecraft:material_instances": {
+    "*": {
+     "texture": "slab",
+     "render_method": "opaque"
+    }
+   },
+   "minecraft:selection_box": {
+    "origin": [-8, 0, -8],
+    "size": [16, 8, 16]
+   },
+   "minecraft:collision_box": {
+    "origin": [-8, 0, -8],
+    "size": [16, 8, 16]
+   }
+  },
+  "permutations": [
+   { // upper_slab
+    "condition": "query.block_state('minecraft:vertical_half') == 'top'",
+    "components": {
+     "minecraft:transformation": {
+      "translation": [0, 0.5, 0]
+     }
+    }
+   }
+  ]
+ }
+}
 ```
 
 ## Sample Torch Block
@@ -226,94 +230,93 @@ The sample torch block is an excellent representation of the `minecraft:block_fa
 
 ```json
 {
-    "format_version": "1.20.20",
-    "minecraft:block": {
-        "description": {
-            "identifier": "testpack:torch_block",
-            "menu_category": {
-            "category": "construction"
-        },
-        "traits": {
-            "minecraft:placement_position": {
-                "enabled_states": ["minecraft:block_face"]
-            }
-        }
-    },
-        "components": {
-            "minecraft:light_emission": 14,
-            "minecraft:collision_box": {
-                "origin": [-0.5, 0, -0.5],
-                "size": [1, 10, 1]
-            },
-            "minecraft:selection_box": {
-                "origin": [-1, 0, -1],
-                "size": [2, 10, 2]
-            },
-            "minecraft:placement_filter": {
-                "conditions": [
-                    {
-                        "allowed_faces": ["up", "side"]
-                    }
-                ]
-            }
-        },
-        "components": {
-            ...
-            "minecraft:geometry": "geometry.torch",
-            ...
-        },
-        "permutations": [
-            { // all side faces
-                "condition": "query.block_state('minecraft:block_face') != 'up' && query.block_state('minecraft:block_face') != 'down'",
-                "components": {
-                    "minecraft:collision_box": {
-                        "origin": [-2, 3, 4],
-                        "size": [4, 10, 4]
-                    },
-                    "minecraft:selection_box": {
-                        "origin": [-2, 3, 4],
-                        "size": [4, 10, 4]
-                    },
-                    "minecraft:geometry": "geometry.wall_torch"
-                    }
-                },
-            ],
-        "permutations": [
-            ...
-            { // north
-                "condition": "query.block_state('minecraft:block_face') == 'north'",
-                "components": {
-                    "minecraft:transformation": {
-                        "rotation": [0, 0, 0]
-                    }
-                }
-            },
-            { // west
-                "condition": "query.block_state('minecraft:block_face') == 'west'",
-                "components" {
-                    "minecraft:transformation": {
-                        "rotation": [0, 90, 0]
-                    }
-                }
-            },
-            { // south
-                "condition": "query.block_state('minecraft:block_face') == 'south'",
-                "components": {
-                    "minecraft:transformation": {
-                        "rotation": [0, 180, 0]
-                    }
-                }
-            },
-            { // east
-                "condition": "query.block_state('minecraft:block_face') ++ 'east'",
-                "components": {
-                    "minecraft:transformation": {
-                        "rotation": [0, -90, 0]
-                    }
-                }
-            }
-        ]
+ "format_version": "1.20.20",
+ "minecraft:block": {
+  "description": {
+   "identifier": "testpack:torch_block",
+   "menu_category": {
+    "category": "construction"
+   },
+   "traits" : {
+    "minecraft:placement_position": {
+     "enabled_states": ["minecraft:block_face"]
     }
+   }
+  },
+  "components": {
+   "minecraft:collision_box": {
+    "origin": [-0.5, 0, -0.5],
+    "size": [1, 10, 1]
+   },
+   "minecraft:selection_box": {
+    "origin": [-1, 0, -1],
+    "size": [2, 10, 2]
+   },
+   "minecraft:geometry": "geometry.torch",
+   "minecraft:material_instances": {
+    "*": {
+     "texture": "torch",
+     "render_method": "opaque"
+    }
+   },
+   "minecraft:placement_filter":{
+    "conditions": [
+     {
+      "allowed_faces": ["up", "side"]
+     }
+    ]
+   },
+   "minecraft:light_emission": 14
+  },
+  "permutations": [
+   { // north
+    "condition": "query.block_state('minecraft:block_face') == 'north'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [0, 0, 0]
+     }
+    }
+   },
+   { // south
+    "condition": "query.block_state('minecraft:block_face') == 'south'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [0, 180, 0]
+     }
+    }
+   },
+   { // west
+    "condition": "query.block_state('minecraft:block_face') == 'west'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [0, 90, 0]
+     }
+    }
+   },
+   { // east
+    "condition": "query.block_state('minecraft:block_face') == 'east'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [0, -90, 0]
+     }
+    }
+   },
+   { // all side faces
+    "condition": "query.block_state('minecraft:block_face') != 'up' && query.block_state('minecraft:block_face') != 'down'",
+    "components": {
+     "minecraft:collision_box": {
+      "origin": [-2, 3, 4],
+      "size": [4, 10, 4]
+     },
+     "minecraft:selection_box": {
+      "origin": [-2, 3, 4],
+      "size": [4, 10, 4]
+     },
+     "minecraft:geometry": "geometry.wall_torch"
+    }
+   }
+  ]
+ }
 }
 ```
 
@@ -323,132 +326,131 @@ Last, but not least, we have the sample arrow block. This block uses both the `m
 
 ```json
 {
-    "format_version": "1.20.20",
-    "minecraft:block": {
-        "description": {
-            "identifier": "testpack:arrow_block2",
-            "menu_category": {
-                "category": "construction"
-            },
-            "traits": {
-                "minecraft:placement_direction": {
-                    "enabled_states": ["minecraft:cardinal_direction", "minecraft:facing_direction"],
-                    "y_rotation_offset": 180.0
-                }
-            }
-        },
-            "components": {
-                "minecraft:geometry": "geometry.cube",
-                "minecraft:material_instances": {
-                    "*": {
-                        "texture": "arrow2",
-                        "render_method": "opaque"
-                    }
-                }
-            },
-            "permutations": [
-                { // south
-                    "condition": "query.block_state('minecraft:facing_direction') == 'south'",
-                    "components": {
-                        "minecraft:transformation": {
-                            "rotation": [0, 0, 0]
-                        }
-                    }
-                },
-                { // west
-                    "condition": "query.block_state('minecraft:facing_direction') == 'west'",
-                    "components": {
-                        "minecraft:transformation": {
-                            "rotation": [0, -90, 0]
-                        }
-                    }
-                },
-                { // north
-                    "condition": "query.block_state('minecraft:facing_direction') == 'north'",
-                    "components": {
-                        "minecraft:transformation": {
-                            "rotation": [0, 180, 0]                                                 
-                        }
-                    }
-                },
-                { // east
-                    "condition": "query.block_state('minecraft:facing_direction') == 'east'",
-                    "components": {
-                        "minecraft:transformation": {
-                            "rotation": [0, 90, 0]
-                        }
-                    }
-                }
-            ],
-            "permutations": [
-                ...
-                { // up and south
-                    "condition": "query.block_state('minecraft:facing_direction') == 'up' && query.block_state('minecraft:cardinal_direction') == 'south'",
-                    "components": {
-                        "minecraft:transformation": {
-                            "rotation": [90, 0, 0]
-                        }
-                    }
-                },
-                { // up and west
-                    "condition": "query.block_state('minecraft:facing_direction') == 'up' && query.block_state('minecraft:cardinal_direction') == 'west'",
-                    "components": {
-                        "minecraft:transformation": {
-                            "rotation": [90, -90, 0]
-                        }
-                    }                                     
-                },
-                { // up and north
-                    "condition": "query.block_state('minecraft:facing_direction') == 'up' && query.block_state('minecraft:cardinal_direction') == 'north'",
-                    "components": {
-                        "minecraft:transformation": {
-                            "rotation": [90, 180, 0]
-                        }
-                    }                                     
-                },
-                { // up and east
-                    "condition": "query.block_state('minecraft:facing_direction') == 'up' && query.block_state('minecraft:cardinal_direction') == 'east'",
-                    "components": {
-                        "minecraft:transformation": {
-                            "rotation": [90, 90, 0]
-                        }
-                    }                                     
-                }                
-            ],
-            "permutations": [
-                { // down and south
-                    "condition": "query.block_state('minecraft:facing_direction') == 'down' && query.block_state('minecraft:cardinal_direction') == 'south'",
-                    "components": {
-                        "minecraft:transformation": {
-                            "rotation": [-90, 0, 0]
-                        }
-                    }
-                },
-                { // down and west
-                    "condition": "query.block_state('minecraft:facing_direction') == 'down' && query.block_state('minecraft:cardinal_direction') == 'west'",
-                    "components": {
-                        "minecraft:transformation": {
-                            "rotation": [-90, -90, 0]
-                        }
-                    }
-                },
-                { // down and north
-                    "condition": "query.block_state('minecraft:facing_direction') == 'down' && query.block_state('minecraft:cardinal_direction') == 'north'",
-                    "components": {
-                        "minecraft:transformation": {
-                            "rotation": [-90, 180, 0]
-                        }
-                    }
-                },
-                { // down and east
-                    "condition": "query.block_state('minecraft:facing_direction') == 'down' && query.block_state('minecraft:cardinal_direction') == 'east'",
-                    "components": {
-                        "minecraft:transformation": {
-                            "rotation": [-90, 90, 0]
-                        }
-                    }
-                }
-            ]
-        }
+ "format_version": "1.20.20",
+ "minecraft:block": {
+  "description": {
+   "identifier": "testpack:arrow_block",
+   "menu_category": {
+    "category": "construction"
+   },
+   "traits" : {
+    "minecraft:placement_direction": {
+     "enabled_states": ["minecraft:cardinal_direction", "minecraft:facing_direction"],
+     "y_rotation_offset": 180.0
     }
+   }
+  },
+  "components": {
+   "minecraft:collision_box": {
+    "origin": [-8, 0, -8],
+    "size": [16, 16, 16]
+   },
+   "minecraft:geometry": "geometry.cube",
+   "minecraft:material_instances": {
+    "*": {
+     "texture": "arrow",
+     "render_method": "opaque"
+    }
+   }
+  },
+  "permutations": [
+   { // north
+    "condition": "query.block_state('minecraft:facing_direction') == 'north'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [0, 180, 0]
+     }
+    }
+   },
+   { // south
+    "condition": "query.block_state('minecraft:facing_direction') == 'south'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [0, 0, 0]
+     }
+    }
+   },
+   { // west
+    "condition": "query.block_state('minecraft:facing_direction') == 'west'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [0, -90, 0]
+     }
+    }
+   },
+   { // east
+    "condition": "query.block_state('minecraft:facing_direction') == 'east'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [0, 90, 0]
+     }
+    }
+   },
+   { // up and north
+    "condition": "query.block_state('minecraft:facing_direction') == 'up' && query.block_state('minecraft:cardinal_direction') == 'north'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [90, 180, 0]
+     }
+    }
+   },
+   { // up and south
+    "condition": "query.block_state('minecraft:facing_direction') == 'up' && query.block_state('minecraft:cardinal_direction') == 'south'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [90, 0, 0]
+     }
+    }
+   },
+   { // up and west
+    "condition": "query.block_state('minecraft:facing_direction') == 'up' && query.block_state('minecraft:cardinal_direction') == 'west'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [90, -90, 0]
+     }
+    }
+   },
+   { // up and east
+    "condition": "query.block_state('minecraft:facing_direction') == 'up' && query.block_state('minecraft:cardinal_direction') == 'east'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [90, 90, 0]
+     }
+    }
+   },
+   { // down and north
+    "condition": "query.block_state('minecraft:facing_direction') == 'down' && query.block_state('minecraft:cardinal_direction') == 'north'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [-90, 180, 0]
+     }
+    }
+   },
+   { // down and south
+    "condition": "query.block_state('minecraft:facing_direction') == 'down' && query.block_state('minecraft:cardinal_direction') == 'south'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [-90, 0, 0]
+     }
+    }
+   },
+   { // down and west
+    "condition": "query.block_state('minecraft:facing_direction') == 'down' && query.block_state('minecraft:cardinal_direction') == 'west'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [-90, -90, 0]
+     }
+    }
+   },
+   { // down and east
+    "condition": "query.block_state('minecraft:facing_direction') == 'down' && query.block_state('minecraft:cardinal_direction') == 'east'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [-90, 90, 0]
+     }
+    }
+   }
+  ]
+ }
+}
 ```
