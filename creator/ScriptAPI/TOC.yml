@@ -1,5 +1,11 @@
 - name: Modules
   items:
+    - name: minecraft/common
+      items:
+      - name: minecraft/common
+        href: minecraft/common/minecraft-common.md
+      - name: minecraft/common Changelog
+        href: minecraft/common/changelog.md
     - name: minecraft/server-admin
       items:
       - name: minecraft/server-admin
@@ -82,6 +88,8 @@
         href: minecraft/server/minecraft-server.md
       - name: minecraft/server Changelog
         href: minecraft/server/changelog.md
+      - name: BlockComponentTypes
+        href: minecraft/server/BlockComponentTypes.md
       - name: BlockVolumeIntersection
         href: minecraft/server/BlockVolumeIntersection.md
       - name: CompoundBlockVolumeAction
@@ -98,6 +106,8 @@
         href: minecraft/server/DyeColor.md
       - name: EasingType
         href: minecraft/server/EasingType.md
+      - name: EntityComponentTypes
+        href: minecraft/server/EntityComponentTypes.md
       - name: EntityDamageCause
         href: minecraft/server/EntityDamageCause.md
       - name: EntityInitializationCause
@@ -110,6 +120,8 @@
         href: minecraft/server/FluidType.md
       - name: GameMode
         href: minecraft/server/GameMode.md
+      - name: ItemComponentTypes
+        href: minecraft/server/ItemComponentTypes.md
       - name: ItemLockMode
         href: minecraft/server/ItemLockMode.md
       - name: MoonPhase
@@ -220,6 +232,10 @@
         href: minecraft/server/EffectAddAfterEvent.md
       - name: EffectAddAfterEventSignal
         href: minecraft/server/EffectAddAfterEventSignal.md
+      - name: EffectAddBeforeEvent
+        href: minecraft/server/EffectAddBeforeEvent.md
+      - name: EffectAddBeforeEventSignal
+        href: minecraft/server/EffectAddBeforeEventSignal.md
       - name: EffectType
         href: minecraft/server/EffectType.md
       - name: EffectTypes
@@ -536,10 +552,6 @@
         href: minecraft/server/PlayerDimensionChangeAfterEvent.md
       - name: PlayerDimensionChangeAfterEventSignal
         href: minecraft/server/PlayerDimensionChangeAfterEventSignal.md
-      - name: PlayerDimensionChangeBeforeEvent
-        href: minecraft/server/PlayerDimensionChangeBeforeEvent.md
-      - name: PlayerDimensionChangeBeforeEventSignal
-        href: minecraft/server/PlayerDimensionChangeBeforeEventSignal.md
       - name: PlayerInteractWithBlockAfterEvent
         href: minecraft/server/PlayerInteractWithBlockAfterEvent.md
       - name: PlayerInteractWithBlockAfterEventSignal
@@ -566,6 +578,10 @@
         href: minecraft/server/PlayerLeaveAfterEvent.md
       - name: PlayerLeaveAfterEventSignal
         href: minecraft/server/PlayerLeaveAfterEventSignal.md
+      - name: PlayerLeaveBeforeEvent
+        href: minecraft/server/PlayerLeaveBeforeEvent.md
+      - name: PlayerLeaveBeforeEventSignal
+        href: minecraft/server/PlayerLeaveBeforeEventSignal.md
       - name: PlayerPlaceBlockAfterEvent
         href: minecraft/server/PlayerPlaceBlockAfterEvent.md
       - name: PlayerPlaceBlockAfterEventSignal
@@ -758,6 +774,8 @@
         href: minecraft/server-editor/EDITOR_PANE_PROPERTY_ITEM_TYPE.md
       - name: EditorInputContext
         href: minecraft/server-editor/EditorInputContext.md
+      - name: EditorMode
+        href: minecraft/server-editor/EditorMode.md
       - name: EditorStatusBarAlignment
         href: minecraft/server-editor/EditorStatusBarAlignment.md
       - name: InputModifier
@@ -786,10 +804,16 @@
         href: minecraft/server-editor/Extension.md
       - name: ExtensionContext
         href: minecraft/server-editor/ExtensionContext.md
+      - name: ExtensionContextAfterEvents
+        href: minecraft/server-editor/ExtensionContextAfterEvents.md
       - name: Logger
         href: minecraft/server-editor/Logger.md
       - name: MinecraftEditor
         href: minecraft/server-editor/MinecraftEditor.md
+      - name: ModeChangeAfterEvent
+        href: minecraft/server-editor/ModeChangeAfterEvent.md
+      - name: ModeChangeAfterEventSignal
+        href: minecraft/server-editor/ModeChangeAfterEventSignal.md
       - name: PlaytestManager
         href: minecraft/server-editor/PlaytestManager.md
       - name: Selection

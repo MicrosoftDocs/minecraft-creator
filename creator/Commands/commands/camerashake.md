@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: camerashake Command
 description: Description and usage of the camerashake command
-ms.service: minecraft-bedrock-edition
 ---
 # `/camerashake` Command
 Applies shaking to the players' camera with specified intensity and duration. Parameters: 'stop' or 'add' the effect, specify player (target), intensity (float, min 0.0 to max 4.0), seconds(float, min 0.01), and shakeType (positional or rotational). Must have `Allow Camera Shake` option turned on in user settings.

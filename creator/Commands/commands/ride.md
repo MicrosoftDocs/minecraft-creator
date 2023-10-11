@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: ride Command
 description: Description and usage of the ride command
-ms.service: minecraft-bedrock-edition
 ---
 # `/ride` Command
 Makes entities ride other entities, stops entities from riding, makes rides evict their riders, or summons rides or riders.

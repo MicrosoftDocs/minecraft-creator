@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.WorldBeforeEvents Class
 description: Contents of the @minecraft/server.WorldBeforeEvents class.
-ms.service: minecraft-bedrock-edition
 ---
 # WorldBeforeEvents Class
 
@@ -28,6 +28,16 @@ Type: [*ChatSendBeforeEventSignal*](ChatSendBeforeEventSignal.md)
 This event is fired when an entity event has been triggered that will update the component definition state of an entity.
 
 Type: [*DataDrivenEntityTriggerBeforeEventSignal*](DataDrivenEntityTriggerBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **effectAdd**
+`read-only effectAdd: EffectAddBeforeEventSignal;`
+
+This event is triggered after an event has been added to an entity.
+
+Type: [*EffectAddBeforeEventSignal*](EffectAddBeforeEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -93,18 +103,10 @@ This event fires before a block is broken by a player.
 
 Type: [*PlayerBreakBlockBeforeEventSignal*](PlayerBreakBlockBeforeEventSignal.md)
 
-### **playerDimensionChange**
-`read-only playerDimensionChange: PlayerDimensionChangeBeforeEventSignal;`
-
-Fires before a player is about to change dimensions.
-
-Type: [*PlayerDimensionChangeBeforeEventSignal*](PlayerDimensionChangeBeforeEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **playerInteractWithBlock**
 `read-only playerInteractWithBlock: PlayerInteractWithBlockBeforeEventSignal;`
+
+Fires before a player interacts with a block.
 
 Type: [*PlayerInteractWithBlockBeforeEventSignal*](PlayerInteractWithBlockBeforeEventSignal.md)
 
@@ -114,7 +116,19 @@ Type: [*PlayerInteractWithBlockBeforeEventSignal*](PlayerInteractWithBlockBefore
 ### **playerInteractWithEntity**
 `read-only playerInteractWithEntity: PlayerInteractWithEntityBeforeEventSignal;`
 
+Fires before a player interacts with an entity.
+
 Type: [*PlayerInteractWithEntityBeforeEventSignal*](PlayerInteractWithEntityBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+### **playerLeave**
+`read-only playerLeave: PlayerLeaveBeforeEventSignal;`
+
+Fires when a player leaves the game.
+
+Type: [*PlayerLeaveBeforeEventSignal*](PlayerLeaveBeforeEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.

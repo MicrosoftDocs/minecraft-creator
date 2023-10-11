@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-title: minecraft/server.ScriptCameraSetFacingOptions Interface
-description: Contents of the @minecraft/server.ScriptCameraSetFacingOptions class.
 ms.service: minecraft-bedrock-edition
+title: minecraft/server.CameraSetFacingOptions Interface
+description: Contents of the @minecraft/server.CameraSetFacingOptions class.
 ---
 # CameraSetFacingOptions Interface
 

@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-editor.ExtensionContext Class
 description: Contents of the @minecraft/server-editor.ExtensionContext class.
-ms.service: minecraft-bedrock-edition
 ---
 # ExtensionContext Class
 
@@ -17,6 +17,11 @@ The Extension Context is the main interface to all the bound Editor Services.
 As more player services are added to the editor, they will be exposed through this object
 
 ## Properties
+
+### **afterEvents**
+`read-only afterEvents: ExtensionContextAfterEvents;`
+
+Type: [*ExtensionContextAfterEvents*](ExtensionContextAfterEvents.md)
 
 ### **clipboardManager**
 `read-only clipboardManager: ClipboardManager;`

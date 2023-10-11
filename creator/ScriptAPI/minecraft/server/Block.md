@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.Block Class
 description: Contents of the @minecraft/server.Block class.
-ms.service: minecraft-bedrock-edition
 ---
 # Block Class
 
@@ -288,17 +288,17 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the 
 
 ### **getComponent**
 `
-getComponent(componentName: string): BlockComponent | undefined
+getComponent(componentId: T): BlockComponentTypeMap[T] | undefined
 `
 
-Gets additional configuration properties (a component) for specific capabilities of particular blocks - for example, an inventory component of a chest block.
+Gets a component (that represents additional capabilities) for a block - for example, an inventory component of a chest block.
 
 #### **Parameters**
-- **componentName**: *string*
+- **componentId**: *T*
   
-  Identifier of the component. If a namespace is not specified, minecraft: is assumed.
+  The identifier of the component (e.g., 'minecraft:inventory'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.BlockComponentTypes*](../../minecraft/server/BlockComponentTypes.md) enum.
 
-#### **Returns** [*BlockComponent*](BlockComponent.md) | *undefined* - Returns the component object if it is present on the particular block.
+#### **Returns** *BlockComponentTypeMap[T] | undefined* - Returns the component if it exists on the block, otherwise undefined.
 
 > [!WARNING]
 > This function can throw errors.
@@ -307,7 +307,7 @@ Gets additional configuration properties (a component) for specific capabilities
 
 ### **getItemStack**
 `
-getItemStack(amount?: number, withData?: boolean): ItemStack
+getItemStack(amount?: number, withData?: boolean): ItemStack | undefined
 `
 
 Creates a prototype item stack based on this block that can be used with Container/ContainerSlot APIs.
@@ -320,7 +320,7 @@ Creates a prototype item stack based on this block that can be used with Contain
   
   Whether additional data facets of the item stack are included.
 
-#### **Returns** [*ItemStack*](ItemStack.md)
+#### **Returns** [*ItemStack*](ItemStack.md) | *undefined* - An itemStack with the specified amount of items and data. Returns undefined if block type is incompatible.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.World Class
 description: Contents of the @minecraft/server.World class.
-ms.service: minecraft-bedrock-edition
 ---
 # World Class
 
@@ -92,6 +92,8 @@ A method that is internal-only, used for broadcasting specific messages between 
 `
 clearDynamicProperties(): void
 `
+
+Clears the set of dynamic properties declared for this behavior pack within the world.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -231,7 +233,9 @@ Returns a property value.
 getDynamicPropertyIds(): string[]
 `
 
-#### **Returns** *string*[]
+Gets a set of dynamic property identifiers that have been set in this world.
+
+#### **Returns** *string*[] - A string array of active dynamic property identifiers.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -240,6 +244,8 @@ getDynamicPropertyIds(): string[]
 `
 getDynamicPropertyTotalByteCount(): number
 `
+
+Gets the total byte count of dynamic properties. This could potentially be used for your own analytics to ensure you're not storing gigantic sets of dynamic properties.
 
 #### **Returns** *number*
 
