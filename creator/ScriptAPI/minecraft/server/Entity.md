@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.Entity Class
 description: Contents of the @minecraft/server.Entity class.
-ms.service: minecraft-bedrock-edition
 ---
 # Entity Class
 
@@ -236,6 +236,7 @@ Type: *string*
 - [hasTag](#hastag)
 - [isValid](#isvalid)
 - [kill](#kill)
+- [matches](#matches)
 - [playAnimation](#playanimation)
 - [remove](#remove)
 - [removeEffect](#removeeffect)
@@ -574,17 +575,17 @@ Returns the first intersecting block from the direction that this entity is look
 
 ### **getComponent**
 `
-getComponent(componentId: string): EntityComponent | undefined
+getComponent(componentId: T): EntityComponentTypeMap[T] | undefined
 `
 
 Gets a component (that represents additional capabilities) for an entity.
 
 #### **Parameters**
-- **componentId**: *string*
+- **componentId**: *T*
   
-  The identifier of the component (e.g., 'minecraft:rideable') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed. If the component is not present on the entity, undefined is returned.
+  The identifier of the component (e.g., 'minecraft:health'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.EntityComponentTypes*](../../minecraft/server/EntityComponentTypes.md) enum.
 
-#### **Returns** [*EntityComponent*](EntityComponent.md) | *undefined* - Returns the component if it exists on the entity, otherwise undefined.
+#### **Returns** *EntityComponentTypeMap[T] | undefined* - Returns the component if it exists on the entity, otherwise undefined.
 
 ### **getComponents**
 `
@@ -729,9 +730,6 @@ Returns the current rotation component of this entity.
 
 #### **Returns** [*Vector2*](Vector2.md) - Returns a Vec2 containing the rotation of this entity (in degrees).
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 
@@ -740,9 +738,7 @@ Returns the current rotation component of this entity.
 getTags(): string[]
 `
 
-Returns all tags associated with an entity.
-
-#### **Returns** *string*[] - Returns the current rotation component of this entity.
+#### **Returns** *string*[] - Returns all tags associated with an entity.
 
 > [!WARNING]
 > This function can throw errors.
@@ -859,6 +855,24 @@ Kills this entity. The entity will drop loot as normal.
   }
 ```
 
+### **matches**
+`
+matches(options: EntityQueryOptions): boolean
+`
+
+Matches the entity against the passed in options. Uses the location of the entity for matching if the location is not specified in the passed in EntityQueryOptions.
+
+#### **Parameters**
+- **options**: [*EntityQueryOptions*](EntityQueryOptions.md)
+
+#### **Returns** *boolean* - Returns true if the entity matches the criteria in the passed in EntityQueryOptions, otherwise it returns false.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **playAnimation**
 `
 playAnimation(animationName: string, options?: PlayAnimationOptions): void
@@ -958,6 +972,8 @@ Resets an Entity Property back to its default value, as specified in the Entity'
 
 > [!WARNING]
 > Throws if the entity is invalid.
+>
+> Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*
 
 ### **runCommand**
 `
@@ -1118,9 +1134,6 @@ Sets the main rotation of the entity.
 - **rotation**: [*Vector2*](Vector2.md)
   
   The x and y rotation of the entity (in degrees). For most mobs, the x rotation controls the head tilt and the y rotation controls the body rotation.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemStack Class
 description: Contents of the @minecraft/server.ItemStack class.
-ms.service: minecraft-bedrock-edition
 ---
 # ItemStack Class
 
@@ -158,24 +158,24 @@ Get the list of block types this item can be placed on in Adventure mode.
 
 ### **getComponent**
 `
-getComponent(componentId: string): ItemComponent | undefined
+getComponent(componentId: T): ItemComponentTypeMap[T] | undefined
 `
 
 Gets a component (that represents additional capabilities) for an item stack.
 
 #### **Parameters**
-- **componentId**: *string*
+- **componentId**: *T*
   
-  The identifier of the component (e.g., 'minecraft:food') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed. If the component is not present on the item stack or doesn't exist, undefined is returned.
+  The identifier of the component (e.g., 'minecraft:food'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.ItemComponentTypes*](../../minecraft/server/ItemComponentTypes.md) enum.
 
-#### **Returns** [*ItemComponent*](ItemComponent.md) | *undefined*
+#### **Returns** *ItemComponentTypeMap[T] | undefined* - Returns the component if it exists on the item stack, otherwise undefined.
 
 #### Examples
 ##### ***durability.ts***
 ```typescript
 // Get the maximum durability of a custom sword item
-const itemStack = new ItemStack("custom:sword");
-const durability = itemStack.getComponent("minecraft:durability") as ItemDurabilityComponent;
+const itemStack = new ItemStack('custom:sword');
+const durability = itemStack.getComponent(ItemComponentTypes.Durability);
 const maxDurability = durability.maxDurability;
 ```
 

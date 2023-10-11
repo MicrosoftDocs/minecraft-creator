@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server Module
 description: Contents of the @minecraft/server module
-ms.service: minecraft-bedrock-edition
 ---
 # `@minecraft/server` Module
 
@@ -16,12 +16,13 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "1.6.0"
+    "version": "1.7.0"
 }
 ```
 
 ## Available Versions
-- `1.7.0-beta`
+- `1.8.0-beta`
+- `1.7.0`
 - `1.6.0`
 - `1.5.0`
 - `1.4.0`
@@ -31,6 +32,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - `0.1.0`
 
 ## Enumerations
+- [BlockComponentTypes](BlockComponentTypes.md)
 - [BlockVolumeIntersection](BlockVolumeIntersection.md)
 - [CompoundBlockVolumeAction](CompoundBlockVolumeAction.md)
 - [CompoundBlockVolumePositionRelativity](CompoundBlockVolumePositionRelativity.md)
@@ -39,12 +41,14 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [DisplaySlotId](DisplaySlotId.md)
 - [DyeColor](DyeColor.md)
 - [EasingType](EasingType.md)
+- [EntityComponentTypes](EntityComponentTypes.md)
 - [EntityDamageCause](EntityDamageCause.md)
 - [EntityInitializationCause](EntityInitializationCause.md)
 - [EntityLifetimeState](EntityLifetimeState.md)
 - [EquipmentSlot](EquipmentSlot.md)
 - [FluidType](FluidType.md)
 - [GameMode](GameMode.md)
+- [ItemComponentTypes](ItemComponentTypes.md)
 - [ItemLockMode](ItemLockMode.md)
 - [MoonPhase](MoonPhase.md)
 - [ObjectiveSortOrder](ObjectiveSortOrder.md)
@@ -54,6 +58,11 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [TimeOfDay](TimeOfDay.md)
 - [WatchdogTerminateReason](WatchdogTerminateReason.md)
 - [WeatherType](WeatherType.md)
+
+# Type Aliases
+- [BlockComponentTypeMap](BlockComponentTypeMap.md)
+- [EntityComponentTypeMap](EntityComponentTypeMap.md)
+- [ItemComponentTypeMap](ItemComponentTypeMap.md)
 
 ## Classes
 - [Block](Block.md)
@@ -102,6 +111,8 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [Effect](Effect.md)
 - [EffectAddAfterEvent](EffectAddAfterEvent.md)
 - [EffectAddAfterEventSignal](EffectAddAfterEventSignal.md)
+- [EffectAddBeforeEvent](EffectAddBeforeEvent.md)
+- [EffectAddBeforeEventSignal](EffectAddBeforeEventSignal.md)
 - [EffectType](EffectType.md)
 - [EffectTypes](EffectTypes.md)
 - [Enchantment](Enchantment.md)
@@ -260,8 +271,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [PlayerBreakBlockBeforeEventSignal](PlayerBreakBlockBeforeEventSignal.md)
 - [PlayerDimensionChangeAfterEvent](PlayerDimensionChangeAfterEvent.md)
 - [PlayerDimensionChangeAfterEventSignal](PlayerDimensionChangeAfterEventSignal.md)
-- [PlayerDimensionChangeBeforeEvent](PlayerDimensionChangeBeforeEvent.md)
-- [PlayerDimensionChangeBeforeEventSignal](PlayerDimensionChangeBeforeEventSignal.md)
 - [PlayerInteractWithBlockAfterEvent](PlayerInteractWithBlockAfterEvent.md)
 - [PlayerInteractWithBlockAfterEventSignal](PlayerInteractWithBlockAfterEventSignal.md)
 - [PlayerInteractWithBlockBeforeEvent](PlayerInteractWithBlockBeforeEvent.md)
@@ -275,6 +284,8 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [PlayerJoinAfterEventSignal](PlayerJoinAfterEventSignal.md)
 - [PlayerLeaveAfterEvent](PlayerLeaveAfterEvent.md)
 - [PlayerLeaveAfterEventSignal](PlayerLeaveAfterEventSignal.md)
+- [PlayerLeaveBeforeEvent](PlayerLeaveBeforeEvent.md)
+- [PlayerLeaveBeforeEventSignal](PlayerLeaveBeforeEventSignal.md)
 - [PlayerPlaceBlockAfterEvent](PlayerPlaceBlockAfterEvent.md)
 - [PlayerPlaceBlockAfterEventSignal](PlayerPlaceBlockAfterEventSignal.md)
 - [PlayerPlaceBlockBeforeEvent](PlayerPlaceBlockBeforeEvent.md)

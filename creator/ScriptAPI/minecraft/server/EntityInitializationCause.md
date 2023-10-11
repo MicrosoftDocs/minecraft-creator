@@ -2,7 +2,7 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: .EntityInitializationCause Enumeration
 description: Contents of the .EntityInitializationCause enumeration.
 ---
@@ -18,9 +18,11 @@ Case when an entity is created as child of other entity or entities, e.g., cows 
 ### **Event**
 `Event = "Event"`
 
-Case when an entity is created by an event, e.g., Wandering trader spawning llamas.
+Case when an entity is created by an event, e.g., a Wandering trader spawning llamas.
 ### **Loaded**
 `Loaded = "Loaded"`
+
+Case when an entity is loaded into the world.
 ### **Spawned**
 `Spawned = "Spawned"`
 

@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: schedule Command
 description: Description and usage of the schedule command
-ms.service: minecraft-bedrock-edition
 ---
 # `/schedule` Command
 Schedules an action to be executed once an area is loaded, or after a certain amount of time.

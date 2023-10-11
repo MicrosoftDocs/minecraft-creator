@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.WorldAfterEvents Class
 description: Contents of the @minecraft/server.WorldAfterEvents class.
-ms.service: minecraft-bedrock-edition
 ---
 # WorldAfterEvents Class
 
@@ -271,11 +271,10 @@ Fires when a player moved to a different dimension.
 
 Type: [*PlayerDimensionChangeAfterEventSignal*](PlayerDimensionChangeAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **playerInteractWithBlock**
 `read-only playerInteractWithBlock: PlayerInteractWithBlockAfterEventSignal;`
+
+An event for when a player interacts with a block.
 
 Type: [*PlayerInteractWithBlockAfterEventSignal*](PlayerInteractWithBlockAfterEventSignal.md)
 
@@ -284,6 +283,8 @@ Type: [*PlayerInteractWithBlockAfterEventSignal*](PlayerInteractWithBlockAfterEv
 
 ### **playerInteractWithEntity**
 `read-only playerInteractWithEntity: PlayerInteractWithEntityAfterEventSignal;`
+
+This event fires when a player interacts with an entity.
 
 Type: [*PlayerInteractWithEntityAfterEventSignal*](PlayerInteractWithEntityAfterEventSignal.md)
 

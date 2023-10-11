@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: Block Enum
 description: Description and values of the Block enum
-ms.service: minecraft-bedrock-edition
 ---
 # `Block` Enum
 Minecraft block
@@ -44,6 +44,8 @@ Piston Arm Collision
 Dead Coral Fan
 - `coral_fan_dead`
 Dead Coral Fan
+- `minecraft:granite`
+- `granite`
 - `minecraft:blue_stained_glass_pane`
 - `blue_stained_glass_pane`
 - `minecraft:fence_gate`
@@ -84,6 +86,8 @@ Jungle Button
 Spruce Stairs
 - `spruce_stairs`
 Spruce Stairs
+- `minecraft:diorite`
+- `diorite`
 - `minecraft:gray_candle_cake`
 Gray Candle Cake
 - `gray_candle_cake`
@@ -346,6 +350,8 @@ Waxed Cut Copper Stairs
 Mob Spawner
 - `mob_spawner`
 Mob Spawner
+- `minecraft:polished_granite`
+- `polished_granite`
 - `minecraft:soul_fire`
 Soul Fire
 - `soul_fire`
@@ -422,6 +428,8 @@ Smoker
 Smoker
 - `minecraft:brown_stained_glass`
 - `brown_stained_glass`
+- `minecraft:andesite`
+- `andesite`
 - `minecraft:fire_coral`
 - `fire_coral`
 - `minecraft:stone`
@@ -646,6 +654,8 @@ Oxidized Copper
 Copper Ore
 - `copper_ore`
 Copper Ore
+- `minecraft:dark_oak_planks`
+- `dark_oak_planks`
 - `minecraft:birch_pressure_plate`
 Birch Pressure Plate
 - `birch_pressure_plate`
@@ -1084,6 +1094,8 @@ Acacia Door
 Crimson Button
 - `crimson_button`
 Crimson Button
+- `minecraft:acacia_planks`
+- `acacia_planks`
 - `minecraft:magenta_concrete_powder`
 - `magenta_concrete_powder`
 - `minecraft:iron_door`
@@ -1406,6 +1418,8 @@ White Candle
 Andesite Stairs
 - `andesite_stairs`
 Andesite Stairs
+- `minecraft:birch_planks`
+- `birch_planks`
 - `minecraft:golden_rail`
 Golden Rail
 - `golden_rail`
@@ -1604,6 +1618,8 @@ Sould Sand
 Soul Sand
 - `minecraft:spruce_hanging_sign`
 - `spruce_hanging_sign`
+- `minecraft:polished_diorite`
+- `polished_diorite`
 - `minecraft:reinforced_deepslate`
 Reinforced Deepslate
 - `reinforced_deepslate`
@@ -1768,10 +1784,6 @@ Fire
 Fire
 - `minecraft:torchflower`
 - `torchflower`
-- `minecraft:planks`
-Planks
-- `planks`
-Planks
 - `minecraft:end_portal_frame`
 End Portal Frame
 - `end_portal_frame`
@@ -2026,6 +2038,8 @@ Red Nether Brick Stairs
 Green Glazed Terracotta
 - `green_glazed_terracotta`
 Green Glazed Terracotta
+- `minecraft:jungle_planks`
+- `jungle_planks`
 - `minecraft:deepslate_redstone_ore`
 Deepslate Redstone Ore
 - `deepslate_redstone_ore`
@@ -2464,10 +2478,14 @@ Dark Oak Trapdoor
 Waxed Oxidized Copper
 - `waxed_oxidized_copper`
 Waxed Oxidized Copper
+- `minecraft:oak_planks`
+- `oak_planks`
 - `minecraft:stripped_oak_log`
 Stripped Oak Log
 - `stripped_oak_log`
 Stripped Oak Log
+- `minecraft:polished_andesite`
+- `polished_andesite`
 - `minecraft:sea_lantern`
 Sea Lantern
 - `sea_lantern`
@@ -2606,6 +2624,8 @@ Command Block
 Polished Blackstone Button
 - `polished_blackstone_button`
 Polished Blackstone Button
+- `minecraft:spruce_planks`
+- `spruce_planks`
 - `minecraft:furnace`
 Furnace
 - `furnace`
@@ -2806,22 +2826,10 @@ Double Stone Slab 3
 Double Stone Slab 4
 - `minecraft:double_stone_slab4`
 Double Stone Slab 4
-- `coral`
-Coral
-- `minecraft:coral`
-Coral
-- `concrete_powder`
-Concrete Powder
-- `minecraft:concrete_powder`
-Concrete Powder
 - `wool`
 Wool
 - `minecraft:wool`
 Wool
-- `shulker_box`
-Shulker Box
-- `minecraft:shulker_box`
-Shulker Box
 - `log`
 Log
 - `minecraft:log`
@@ -2830,18 +2838,26 @@ Log
 Log 2
 - `minecraft:log2`
 Log 2
-- `fence`
-Fence
-- `minecraft:fence`
-Fence
+- `coral`
+Coral
+- `minecraft:coral`
+Coral
 - `lava_cauldron`
 Lava Cauldron
 - `minecraft:lava_cauldron`
 Lava Cauldron
+- `fence`
+Fence
+- `minecraft:fence`
+Fence
 - `carpet`
 Carpet
 - `minecraft:carpet`
 Carpet
+- `shulker_box`
+Shulker Box
+- `minecraft:shulker_box`
+Shulker Box
 - `concrete`
 Concrete
 - `minecraft:concrete`
@@ -2850,6 +2866,10 @@ Concrete
 Stained Hardened Clay
 - `minecraft:stained_hardened_clay`
 Stained Hardened Clay
+- `concrete_powder`
+Concrete Powder
+- `minecraft:concrete_powder`
+Concrete Powder
 - `stained_glass`
 Stained Glass
 - `minecraft:stained_glass`
@@ -2858,6 +2878,10 @@ Stained Glass
 Stained Glass Pane
 - `minecraft:stained_glass_pane`
 Stained Glass Pane
+- `planks`
+Planks
+- `minecraft:planks`
+Planks
 
 ## References
 The following commands reference this enum:

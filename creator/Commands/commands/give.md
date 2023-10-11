@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: give Command
 description: Description and usage of the give command
-ms.service: minecraft-bedrock-edition
 ---
 # `/give` Command
 Gives an item to a player.
