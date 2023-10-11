@@ -56,16 +56,3 @@ Tests if the subject is a raider.
 ```json
 { "test": "is_raider" }
 ```
-
-## Vanilla entities examples
-
-### zoglin
-
-```json
-{ "test": "is_persistent", "value": false }
-```
-
-## Vanilla entities using `is_persistent`
-
-- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
-- [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)
