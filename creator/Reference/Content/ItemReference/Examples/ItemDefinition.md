@@ -1,34 +1,41 @@
 ---
 author: JimSeaman42
 ms.author: mikeam
-title: Item Documentation - Item Definition Properties
-description: "A reference document detailing item definition properties"
+title: Item Documentation - Item Definition
+description: "A reference document detailing the JSON file structure of a custom item"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Item Definition Properties
+# Item Definition
 
-Properties are part of the Item Definition, which helps the system determine how to parse and initialize this item.
+Custom items are defined using specific JSON properties which help the system determine how to parse and initialize the item.
 
-## Item Description Properties
+An item's JSON file must contain a `format_version` and use `minecraft:item` to define how the item works.
 
-### format_version
+## format_version
 
-Specifies the version of the game this entity was made in. If the specified version is lower than the current version, any changes made to the entity in the vanilla version will be applied to it.
+Specifies the version of the game this item was made in. If the specified version is lower than the current version, any changes made to the item in the vanilla version will be applied to it.
 
-### minecraft:item
+## minecraft:item
 
-Item definition, which includes the "description" and "components" sections.
-
-### List of Properties
-
+Item definition, which includes the `description` and `components` properties.
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| menu_category| "items" | | The Creative Category that includes the specified item. |
-| group| | String| The Creative Group that that includes the specified item. The group name is limited to 256 characters. |
-| is_hidden_in_commands| | Boolean| Determines whether or not this item can be used  with commands. Commands can use items by default |
+| description| *not set* | JSON Object | Contains basic information about the item. |
+| components| *not set* | JSON Object| Contains a list of the components used by this item. |
 
-### Example
+### description
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|identifier|*not set* |String | Sets the unique identifier for this item using the format `namespace:identifier`. The `minecraft` namespace must not be used unless overriding a Vanilla item.|
+|menu_category |*not set*  | JSON object| Defines how this item is categorized in-game.|
+
+### components
+Available components can be found in the [Item Component List](./ItemComponentList.md).
+
+
+
+## Example
 
 ```json
 {  
