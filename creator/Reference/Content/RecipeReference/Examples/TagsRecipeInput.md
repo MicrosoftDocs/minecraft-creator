@@ -26,4 +26,4 @@ Now that you're familiar with the basics of using tags as input, you're ready to
 
  As with most things in Minecraft: Bedrock Edition, the only limit is your imagination.
 
-In order to assist you in the creation process, we have provided [a list of all tags current as of Minecraft:Bedrock Edition Version 1.19.50](../../RecipeReference/Examples/RecipeTagList.md).
+In order to assist you in the creation process, we have provided [a list of all tags current as of Minecraft:Bedrock Edition Version 1.19.50](RecipeTagList.md).
