@@ -45,7 +45,7 @@ See [Custom Item Use Priority](../ItemUsePriority.md) for more information on us
 }
 ```
 
-## Vanilla entities examples
+## Vanilla examples
 
 ### appleEnchanted
 
@@ -83,7 +83,7 @@ See [Custom Item Use Priority](../ItemUsePriority.md) for more information on us
 }
 ```
 
-## Vanilla entities using `minecraft:food`
+## Vanilla items using `minecraft:food`
 
 - [apple](../../../../Source/VanillaBehaviorPack_Snippets/items/apple.md)
 - [appleEnchanted](../../../../Source/VanillaBehaviorPack_Snippets/items/appleEnchanted.md)
