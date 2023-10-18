@@ -14,9 +14,9 @@ ms.service: minecraft-bedrock-edition
 
 |Name |Default Value  |Type  |Description  |
 |:------------|:------------|:------------|:------------|
-|comparator_signal|1 | integer |Signal strength for comparator blocks to use from 1 - 13.|
-|duration|*not set* | float | Duration of sound event in seconds float value.|
-|sound_event|*not set* | String | Sound event types:  `13`, `cat`, `blocks`, `chirp`, `far`, `mall`, `mellohi`, `stal`, `strad`, `ward`, `11`, `wait`, `pigstep`, `otherside`, `5`, `relic`. The value may be one listed below. |
+|comparator_signal|1 |Integer |Signal strength for comparator blocks to use from 1 - 13.|
+|duration|*not set* |Float | Duration of sound event in seconds float value.|
+|sound_event|*not set* |String | Sound event types:  `13`, `cat`, `blocks`, `chirp`, `far`, `mall`, `mellohi`, `stal`, `strad`, `ward`, `11`, `wait`, `pigstep`, `otherside`, `5`, `relic`. The value may be one listed below. |
 
 ### sound_event
 
