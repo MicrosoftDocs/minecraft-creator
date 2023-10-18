@@ -48,16 +48,10 @@
    href: minecraft_liquid_clipped.md
  - name: max_stack_size
    href: minecraft_max_stack_size.md
- - name: on_use
-   href: minecraft_on_use.md
- - name: on_use_on
-   href: minecraft_on_use_on.md
  - name: projectile
    href: minecraft_projectile.md
  - name: record
    href: minecraft_record.md
- - name: render_offsets
-   href: minecraft_render_offsets.md
  - name: repairable
    href: minecraft_repairable.md
  - name: shooter
@@ -72,7 +66,5 @@
    href: minecraft_use_animation.md
  - name: use_duration
    href: minecraft_use_duration.md
- - name: weapon
-   href: minecraft_weapon.md
  - name: wearable
    href: minecraft_wearable.md

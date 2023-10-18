@@ -72,6 +72,8 @@
   href: minecraftComponent_damage_over_time.md
 - name: damage_sensor
   href: minecraftComponent_damage_sensor.md
+- name: dash
+  href: minecraftComponent_dash.md
 - name: default_look_angle
   href: minecraftComponent_default_look_angle.md
 - name: despawn

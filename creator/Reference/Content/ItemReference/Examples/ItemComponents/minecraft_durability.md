@@ -14,8 +14,8 @@ ms.service: minecraft-bedrock-edition
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|damage_chance|*not set* |Integer Range | Damage chance is the percentage chance of this item losing durability. Default is set at 100 to 100. |
-|max_durability|*not set* |Integer | Max durability is the amount of damage that this item can take before breaking. The minimum value for this parameter is 0.|
+|damage_chance|*not set* |JSON Object| Damage chance is the percentage chance of this item losing durability. Default is set at 100. Defined as an int range with min and max value.|
+|max_durability|*not set* |Integer | Max durability is the amount of damage that this item can take before breaking. This is a required parameter with a minimum value of 0.|
 
 ## Example
 
