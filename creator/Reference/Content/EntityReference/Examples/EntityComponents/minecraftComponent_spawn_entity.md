@@ -35,6 +35,7 @@ ms.service: minecraft-bedrock-edition
 
 ## Example
 
+### Spawning an entity
 ```json
 "minecraft:spawn_entity":{
     "entities": [{
@@ -46,10 +47,29 @@ ms.service: minecraft-bedrock-edition
         "num_to_spawn": 1,
         "should_leash": false,
         "single_use": false,
-        "spawn_entity": ,
+        "spawn_entity": "minecraft:chicken",
         "spawn_event": "minecraft:entity_born",
-        "spawn_item": "egg",
         "spawn_method": "born",
+        "spawn_sound": "plop",
+        }
+    ]
+}
+```
+
+### Spawning an item
+```json
+"minecraft:spawn_entity":{
+    "entities": [{
+        "filters": [
+            {"test":"is_daytime", "value": false}
+        ] ,
+        "max_wait_time": 600,
+        "min_wait_time": 300,
+        "num_to_spawn": 1,
+        "should_leash": false,
+        "single_use": false,
+        "spawn_item_event": { "event": "example:just_laid_an_egg" },
+        "spawn_item": "egg",
         "spawn_sound": "plop",
         }
     ]
