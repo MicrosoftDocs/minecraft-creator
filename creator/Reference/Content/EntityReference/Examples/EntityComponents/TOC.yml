@@ -56,8 +56,6 @@
   href: minecraftComponent_can_power_jump.md   
 - name: celebrate_hunt
   href: minecraftComponent_celebrate_hunt.md
-- name: collision_box
-  href: minecraftComponent_collision_box.md
 - name: color
   href: minecraftComponent_color.md
 - name: color2
