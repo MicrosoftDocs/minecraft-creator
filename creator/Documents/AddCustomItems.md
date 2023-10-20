@@ -162,7 +162,7 @@ manifest.json
 
 **Goo Resource Pack/textures/items**
 
-Here is a.png file you can download and use for the goo texture.
+Here is a.png file you can download and use for the goo texture:
 
 ![Image of goo item texture to go in the textures folder](Media/AddCustomItems/goo.png)
 
@@ -267,7 +267,7 @@ manifest.json
 }
 ```
 
-***Wrench Resource Pack/models/entity/wrench.geo.json**
+**Wrench Resource Pack/models/entity/wrench.geo.json**
 
 ```json
 {
@@ -314,7 +314,11 @@ manifest.json
 
 Here are the image files you can use for the wrench icon and for the wrench itself.
 
+Here is the wrench icon:
+
 ![Image of a wrench icon](Media/AddCustomItems/wrench_ico.png)
+
+Here is the wrench texture:
 
 ![Image of a wrench texture](Media/AddCustomItems/wrench.png)
 
@@ -507,7 +511,11 @@ This file creates the custom shape of the crown that the texture will be mapped 
 
 Here are the image files you can download and use for the crown icon and the crown texture itself.
 
+Here is the crown icon:
+
 ![Image of a crown icon](Media/AddCustomItems/crown_ico.png)
+
+Here is the crown texture:
 
 ![Image of a crown texture](Media/AddCustomItems/crown_minecraft.png)
 
