@@ -25,7 +25,7 @@ It is recommended that the following be completed before beginning this tutorial
 - [How to Add a Simple Custom Block](AddCustomDieBlock.md)
 - [Minecraft Item Wizard](MinecraftItemWizard.md)
 
-You might also need [Vanilla Minecraft Add-on Packs](https://aka.ms/resourcepacktemplate).
+Here is a link to the [Vanilla Minecraft Add-on Packs](https://aka.ms/resourcepacktemplate) in case you want to take a look at the pack structure there.
 
 ## Minecraft Custom Items
 
@@ -35,7 +35,7 @@ Here are three items that do not currently exist in Vanilla Minecraft. They are 
 >- Wrench
 >- Crown
 
-You can use the following sections to create add-on packs for each item, or to do one set of packs for two or more items.
+Use the following sections to create add-on packs for each item, or to do one set of packs for two or more items.
 
 Here is the general process from the Add-on pack tutorials:
 
@@ -51,7 +51,7 @@ Here is the general process from the Add-on pack tutorials:
 
 You can also experiment with different item components and edit the graphic and model files in an application like [Blockbench](https://www.blockbench.net)
 
-Here is the template for each **manifest.json** file, which can also be found in the [Resource Pack](ResourcePack.md) and [Behavior Pack](BehaviorPack.md) tutorials.
+Here is the template for each **manifest.json** file, which is also found in the [Resource Pack](ResourcePack.md) and [Behavior Pack](BehaviorPack.md) tutorials.
 
 Be sure to put your own [UUIDs](https://www.uuidgenerator.net/) in there.
 
@@ -162,7 +162,7 @@ manifest.json
 
 **Goo Resource Pack/textures/items**
 
-Here is a.png file you can download and use for the goo texture:
+Here is a.png file to download and use for the goo texture:
 
 ![Image of goo item texture to go in the textures folder](Media/AddCustomItems/goo.png)
 
@@ -312,7 +312,7 @@ manifest.json
 
 **Wrench Resource Pack/textures/items**
 
-Here are the image files you can use for the wrench icon and for the wrench itself.
+Here are the image files to use for the wrench icon and for the wrench itself.
 
 Here is the wrench icon:
 
@@ -509,7 +509,7 @@ This file creates the custom shape of the crown that the texture will be mapped 
 
 **Crown Resource Pack/textures/items**
 
-Here are the image files you can download and use for the crown icon and the crown texture itself.
+Here are the image files to download and use for the crown icon and the crown texture itself.
 
 Here is the crown icon:
 
