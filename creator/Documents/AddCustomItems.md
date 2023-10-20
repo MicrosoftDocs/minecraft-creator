@@ -37,6 +37,20 @@ Here are three items that do not currently exist in Vanilla Minecraft. They are 
 
 You can use the following sections to create add-on packs for each item, or to do one set of packs for two or more items.
 
+Here is the general process from the Add-on pack tutorials:
+
+1. Create Behavior Pack and Resource Pack folders.
+1. Create the folder and file structure for the item you want to create. Be sure to include the **manifest.json** files.
+1. Copy/paste the contents for the custom item files from the content in each section.
+1. Download and save the graphic files into the correct location.
+1. Load the packs into the **development_behavior_pack** and **development_resource_pack** folders in your com.mojang folder.
+1. Launch Minecraft: Bedrock Edition.
+1. Create a world with the behavior pack and resource packs activated. 
+1. Choose either Creative Mode or Survival Mode with cheats toggled on.
+1. Go into your world and use the `/give @s demo:<item>` command to get your custom item.
+
+You can also experiment with different item components and edit the graphic and model files in an application like [Blockbench](https://www.blockbench.net)
+
 Here is the template for each **manifest.json** file, which can also be found in the [Resource Pack](ResourcePack.md) and [Behavior Pack](BehaviorPack.md) tutorials.
 
 Be sure to put your own [UUIDs](https://www.uuidgenerator.net/) in there.
@@ -358,7 +372,6 @@ manifest.json
   }
 }
 ```
-
 
 ### Crown Resource Pack
 
