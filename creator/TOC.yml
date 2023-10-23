@@ -24,6 +24,12 @@
               href: Documents/Update1.19.40.md
             - name: Minecraft Live 2022 Creator Recap
               href: Documents/MinecraftLive2022CreatorRecap.md
+        - name: "News Archive"
+          items:  
+            - name: Introduction to the Caves & Cliffs Entities
+              href: Documents/CavesAndCliffsEntities.md
+            - name: World Height Changes in Caves and Cliffs Part 2
+              href: Documents/WorldHeightChange.md        
     - name: Concepts
       items:
         - name: 'Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition'
@@ -430,14 +436,6 @@
             href: Reference/Content/Molangreference/Examples/Molangconcepts/TOC.yml
       - name: Raw Message JSON
         href: Reference/Content/RawMessageJson.md
-    - name: Articles
-      items:
-        - name: Caves + Cliffs Features
-          items:
-          - name: Introduction to the Caves & Cliffs Entities
-            href: Documents/CavesAndCliffsEntities.md
-          - name: World Height Changes in Caves and Cliffs Part 2
-            href: Documents/WorldHeightChange.md
     - name: Contribute
       items:
       - name: "Contributing to Minecraft: Bedrock Documentation"
