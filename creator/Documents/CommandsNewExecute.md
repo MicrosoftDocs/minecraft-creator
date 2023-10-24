@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: New execute command support in Minecraft version 1.19.70
 description: "A guide to new execute command syntax"
 ms.service: minecraft-bedrock-edition
@@ -10,7 +10,7 @@ ms.service: minecraft-bedrock-edition
 
 We're working on a new, extended version of Minecraft's `/execute` command. Starting with version 1.19.70, we're introducing the next step for the `/execute` command, which moves the command in Minecraft: Bedrock Edition towards parity with Java edition. This move also adds new functionality for creators. In this article, you'll see upcoming changes for the `/execute` command, the new powers it will bring, and how you can get started.
 
-## What the /execute command does, today
+## What the /execute command does today
 
 The /execute command lies at the heart of gameplay for many more advanced add-ons in Minecraft. If you're not familiar with execute, the execute command does three very powerful things:
 

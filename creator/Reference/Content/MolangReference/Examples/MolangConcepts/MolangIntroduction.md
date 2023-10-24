@@ -32,6 +32,8 @@ To know which Versioned Changes are in effect, look at the `"min_engine_version"
 | 1.18.20 | Fixed Logical AND to evaluate before Logical OR, and for comparison operators to evaluate before equality operators.|
 | 1.19.60| Fixed error where dividing by a dynamically determined negative variable resulted in a division by the absolute (positive) value of the number instead. |
 | 1.20.0| Fixed query.cape_flap_amount using the wrong player rotation (head rotation instead of body rotation).
+| 1.20.10| Renamed `block_property` and `has_block_property` to `block_state` and `has_block_state` post this version. |
+| 1.20.40| Deprecated `block_property` and `has_block_property` |
 
 ## Lexical Structure
 

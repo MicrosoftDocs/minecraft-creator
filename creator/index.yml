@@ -26,9 +26,9 @@ highlightedContent:
       itemType: whats-new
       url: Documents/EditorOverview.md
     #card
-    - title: "1.20.30 Update Summary"
+    - title: "1.20.40 Update Summary"
       itemType: whats-new
-      url: Documents/Update1.20.30.md
+      url: Documents/Update1.20.40.md
     #card
     - title: Camera Command
       itemType: whats-new

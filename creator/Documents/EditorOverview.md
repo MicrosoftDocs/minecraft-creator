@@ -527,6 +527,43 @@ As you probably already know, when you create a world in Minecraft, that world i
 When you create a project in Editor, that file is also a world, so it is also stored in the **minecraftWorlds** folder but it is invisible to non-Editor Minecraft unless you import it.
 The Editor project file goes into the **projectbackups** folder only when you export it.
 
+## Editor and Bedrock Dedicated Server
+
+Editor is only enabled in the preview version of Win32 Bedrock Dedicated Server (BDS).
+There are two ways to launch it:
+
+### Launch the .exe with the command line, like this: 
+
+`bedrock_server.exe Editor=true`
+
+This will only work if you're launching BDS from scratch with no existing world.
+
+You should see the output say:
+
+```
+#####################################################
+#                                                   #
+#              CREATING EDITOR PROJECT              #
+#                                                   #
+#####################################################
+```
+
+### Create an Editor project from Minecraft
+
+1. Launch Editor from the usual desktop shortcut.
+1. Create a new Editor Project.
+1. Locate the Editor Project in the **com.mojang/minecraftWorlds** folder and copy it into the BDS worlds folder
+1. Ensure that `server.properties` has the correct world name.
+1. Execute **bedrock_server.exe**.
+
+If correctly set up, you should see the output say
+
+`[2023-10-24 07:21:43:977 INFO] Enabling Editor Services`
+
+Editor Mode is controlled by a flag in the level data (not by the command line), so you need to launch the server either by having the server create a new Editor project, or by launching the server using an existing Editor project.
+
+When the server is up and running, any client connections from Minecraft Bedrock Preview Edition will connect as editor sessions and present the editor interface.  Connections from Non-Preview editions of Minecraft will be refused.
+
 ## What's Next?
 
 Now that you know more about the parts of Editor, let's use the tools to do some editing!
