@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Popular Commands
 description: "A guide covering many of the most common commands that are used within Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
@@ -47,16 +47,16 @@ Adding and removing status effects is done with the `/effect` command. All statu
 
 The primary function of the `/execute` command is to modify the executor and execution origin of a nested command. However, its syntax allows for some conditional command execution that would otherwise be missing in functions.
 
-```
-/execute <origin: target> <position: x y z> <command: command>
+Find more information on the [Execute reference page](../Commands/commands/execute.md) and the [New Execute Syntax page](CommandsNewExecute.md)
 
-/execute <origin: target> <position: x y z> detect <detectPos: x y z> <block: Block> <data: int> <command: command>
+```
+/execute as <origin: target> <chainedCommand: ExecuteChainedOption_0>
 ```
 
 For example, to detect if there's a specific block beneath the player and run a command as a result, the "detect" argument can be used instead of having a nested `/testforblock` command.
 
 ```
-/execute @a ~ ~ ~ detect ~ ~-1 ~ grass 0 say Player is standing on top of grass.
+/execute as @s positioned as @s if block ~ ~-1 ~ grass run say Player is standing on grass.
 ```
 
 ## /gamemode
