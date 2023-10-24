@@ -16,9 +16,34 @@ At least one ore block is successfully placed.
 **Fails if**
 All ore block placements fail.
 
-## Examples
+### Schema
 
-### Malachite ore in different materials
+```json
+object "minecraft:ore_feature" : opt
+{
+  object "description"
+  {
+    string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+  }
+  int "count"<1-*> // The number of blocks to be placed.
+  float "discard_chance_on_air_exposure"<0.000000-1.000000> : opt // Chance of discarding placement if neighboring block is Air.
+  array "replace_rules"[1,*] : opt
+  {
+    object "<any array element>" // Collection of replace rules that will be checked in order of definition. If a rule is resolved, the rest will not be resolved for that block position.
+    {
+      "places_block" // Reference to the block to be placed.
+          array "may_replace"[1,*] : opt
+      {
+        "<any array element>" : opt // A list of blocks that may be replaced during placement. Omit this field to allow any block to be replaced.
+      }
+    }
+  }
+}
+```
+
+### Example
+
+Malachite ore in different materials
 
 ```json
 {

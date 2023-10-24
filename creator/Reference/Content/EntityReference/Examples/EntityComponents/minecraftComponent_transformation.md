@@ -36,6 +36,8 @@ ms.service: minecraft-bedrock-edition
 | block_max| 0| Integer| Maximum number of blocks the entity will look for to aid in the transformation. If not defined or set to 0, it will be set to the block radius |
 | block_radius| 0| Integer| Distance in Blocks that the entity will search for blocks that can help the transformation |
 | block_types| *not set*| List| List of blocks that can help the transformation of this entity |
+| range_max| 0| Decimal| Time in seconds to be added to have the maximum random time until the entity transforms (if non-zero, the time in seconds before the entity transforms will be a random decimal between 'value+range_min' and 'value+range_max') |
+| range_min| 0| Decimal| Time in seconds to be added to have the minimum random time until the entity transforms (if non-zero, the time in seconds before the entity transforms will be a random decimal between 'value+range_min' and 'value+range_max') |
 | value| 0| Decimal| Time in seconds before the entity transforms |
 
 ## Example

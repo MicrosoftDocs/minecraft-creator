@@ -14,9 +14,9 @@ ms.service: minecraft-bedrock-edition
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|dispense_on|*not set* |List |List of block descriptors that contain blocks that this item can be dispensed on. If left empty, all blocks will be allowed.|
-|entity |*not set* | String| The entity to be placed in the world. Note that this parameter is required.|
-|use_on |*not set*  | List| List of block descriptors that contain blocks that this item can be used on. If left empty, all blocks will be allowed. See [Custom Item Use Priority](../ItemUsePriority.md) for more information on use behavior.|
+|dispense_on|*not set* |Array |List of block descriptors that contain blocks that this item can be dispensed on. If left empty, all blocks will be allowed.|
+|entity |*not set* | JSON Object| The entity to be placed in the world.|
+|use_on |*not set* | Array| List of block descriptors that contain blocks that this item can be used on. If left empty, all blocks will be allowed. See [Custom Item Use Priority](../ItemUsePriority.md) for more information on use behavior.|
 
 ## Example
 

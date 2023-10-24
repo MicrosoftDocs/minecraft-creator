@@ -14,7 +14,7 @@ ms.service: minecraft-bedrock-edition
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|category|*not set* |String | The type of cool down for this item.|
+|category|*not set* |JSON Object | The type of cool down for this item.|
 |duration |*not set*  |Float | The duration of time (in seconds) items with a matching category will spend cooling down before becoming usable again.|
 
 ## Example
