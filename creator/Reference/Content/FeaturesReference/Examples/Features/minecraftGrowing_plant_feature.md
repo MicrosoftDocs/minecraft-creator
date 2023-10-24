@@ -12,9 +12,48 @@ ms.service: minecraft-bedrock-edition
 
 This feature can be used to define growing plants with variable body and head blocks, e.g. Cave Vines.
 
-## Example
+### Schema
 
-### Defining a growing plant feature with variable body and head blocks and height distribution
+```json
+object "minecraft:growing_plant_feature" : opt
+{
+  object "description"
+  {
+    string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+  }
+  array "height_distribution"[1,*]
+  {
+    array "<any array element>"[2] // Collection of weighted heights that placement will select from.
+    {
+     "[0..0]" // Plant height.
+      float "[1..1]" // Weight used in random selection. Value is relative to other weights in the collection.
+    }
+  }
+  string "growth_direction" // Direction that the plant grows towards. Valid values: UP and DOWN
+  "age" : opt // Age of the head of the plant.
+      array "body_blocks"[1,*]
+  {
+    array "<any array element>"[2] // Collection of weighted block descriptor that placement will select from for the body of the plant.
+    {
+      "[0..0]" // Plant body block.
+      float "[1..1]" // Weight used in random selection. Value is relative to other weights in the collection.
+    }
+  }
+  array "head_blocks"[1,*]
+  {
+    array "<any array element>"[2] // Collection of weighted block descriptor that placement will select from for the head of the plant.
+    {
+    "[0..0]" // Plant head block.
+    float "[1..1]" // Weight used in random selection. Value is relative to other weights in the collection.
+    }
+  }
+  bool "allow_water" : opt // Plant blocks can be placed in water.
+}
+```
+
+### Example
+
+Defining a growing plant feature with variable body and head blocks and height distribution
 
 ```json
 {
@@ -23,20 +62,20 @@ This feature can be used to define growing plants with variable body and head bl
     "description": {
       "identifier": "minecraft:cave_vine_feature"
     },
-    "height_distribution":  [
-      [{"range_min": 1, "range_max": 13}, 2],
-      [{"range_min": 1, "range_max": 2}, 3],
-      [{"range_min": 1, "range_max": 7}, 10]
+    "height_distribution": [
+      [{ "range_min": 1, "range_max": 13 }, 2],
+      [{ "range_min": 1, "range_max": 2 }, 3],
+      [{ "range_min": 1, "range_max": 7 }, 10]
     ],
     "growth_direction": "DOWN",
-    "age" : {"range_min": 17, "range_max": 26},
-    "body_blocks" : [
+    "age": { "range_min": 17, "range_max": 26 },
+    "body_blocks": [
       ["minecraft:cave_vines", 4],
-      ["minecraft:cave_vines_body_with_berries", 1 ]
+      ["minecraft:cave_vines_body_with_berries", 1]
     ],
-    "head_blocks" : [
+    "head_blocks": [
       ["minecraft:cave_vines", 4],
-      ["minecraft:cave_vines_head_with_berries", 1 ]
+      ["minecraft:cave_vines_head_with_berries", 1]
     ],
     "allow_water": true
   }

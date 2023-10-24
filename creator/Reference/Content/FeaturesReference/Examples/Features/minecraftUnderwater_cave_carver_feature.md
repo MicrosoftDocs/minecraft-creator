@@ -12,9 +12,30 @@ ms.service: minecraft-bedrock-edition
 
 This feature will only work when placed specifically in the pass "pregeneration_pass".
 
-## Example
+### Schema
 
-### Carve caves normally
+```json
+object "minecraft:underwater_cave_carver_feature" : opt
+{
+  object "description"
+  {
+    string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+  }
+  block_reference "fill_with" : opt // Reference to the block to fill the cave with.
+  molang "width_modifier" : opt // How many blocks to increase the cave radius by, from the center point of the cave.
+  int "skip_carve_chance"<1-*> : opt // The chance to skip doing the carve (1 / value).
+  int "height_limit" : opt // The height limit where we attempt to carve.
+  float_range "y_scale" : opt // The scaling in y.
+  float_range "horizontal_radius_multiplier" : opt // Horizontal radius multiplier.
+  float_range "vertical_radius_multiplier" : opt // Vertical radius multiplier.
+  float_range "floor_level" : opt // Floor Level.
+  block_reference "replace_air_with" : opt // Reference to the block to replace air blocks with.
+ }
+```
+
+### Example
+
+Carve caves normally
 
 ```json
 {

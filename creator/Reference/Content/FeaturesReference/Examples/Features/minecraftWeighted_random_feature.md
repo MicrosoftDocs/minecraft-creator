@@ -1,5 +1,5 @@
 ---
-author: mammerla
+author: iconicNurdle
 ms.author: mikeam
 title: Features Documentation - minecraft:weighted_random_feature
 description: "A reference document detailing the 'weighted_random_feature' feature"
@@ -16,9 +16,29 @@ The selected feature is placed.
 **Fails if**
 The selected feature fails to be placed.
 
-## Example
+### Schema
 
-### Selecting and placing a variant of a flower
+```json
+object "minecraft:weighted_random_feature" : opt
+{
+  object "description"
+  {
+    string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+  }
+  array "features"[1,*]
+  {
+    array "<any array element>"[2] : opt // Collection of weighted features that placement will select from.
+    {
+      feature_reference "[0..0]" // Named reference to a feature.
+      float "[1..1]" // Weight used in random selection. Value is relative to other weights in the collection.
+    }
+  }
+}
+```
+
+### Example
+
+Selecting and placing a variant of a flower
 
 ```json
 {
