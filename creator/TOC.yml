@@ -92,6 +92,8 @@
               href: Documents/FogInResourcePacks.md
             - name: Particle Effects
               href: Documents/ParticleEffects.md
+            - name: Adding Custom Items
+              href: Documents/AddCustomItems.md
             - name: Introduction to Sound
               href: Documents/IntroductionToSound.md
             - name: Adding Custom Sounds
