@@ -41,7 +41,7 @@ Listed below are the currently available Molang query functions in the latest re
 | query.armor_texture_slot| Takes the armor slot index as a parameter and returns the texture type (0=Leather, 1=Chain, 2=Iron, 3=Diamond, 4=Gold) of the armor in requested slot. |
 | query.average_frame_time| Returns the time in *seconds* of the average frame time over the last `n` frames. If an argument is passed, it is assumed to be the number of frames in the past that you wish to query. `query.average_frame_time` (or the equivalent `query.average_frame_time(0)`) will return the frame time of the frame before the current one. `query.average_frame_time(1)` will return the average frame time of the previous two frames. Currently we store the history of the last 30 frames, although note that this may change in the future. Asking for more frames will result in only sampling the number of frames stored. |
 | query.block_face| Returns the block face for this (only valid for certain triggers such as placing blocks, or interacting with block) (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
-| query.block_property| Returns the value of the associated block's state. To be replaced with block_state. |
+| query.block_property| (No longer available in pack min_engine_version 1.20.40) Returns the value of the associated block's state. To be replaced with block_state. |
 | query.block_state| Returns the value of the associated block's Block State. |
 | query.blocking| Returns 1.0 if the entity is blocking damage, else it returns 0.0. Applies to a player blocking with a shield. |
 | query.body_x_rotation| Returns the body pitch rotation if called on an entity, else it returns 0.0. |
@@ -95,7 +95,7 @@ Listed below are the currently available Molang query functions in the latest re
 | query.has_any_family| Returns 1 if the entity has any of the specified families, else 0. |
 | query.has_armor_slot| Takes the armor slot index (0=helmet, 1=chestplate, 2=leggings, 3=boots) as a parameter and returns 1.0 if the entity has armor in the requested slot, else it returns 0.0. |
 | query.has_biome_tag| Returns whether or not a Block Placement Target has a specific biome tag. |
-| query.has_block_property| Returns 1.0 if the associated block has the given block state or 0.0 if not. |
+| query.has_block_property| (No longer available in pack min_engine_version 1.20.40) Returns 1.0 if the associated block has the given block state or 0.0 if not. |
 | query.has_block_state| Returns 1.0 if the associated block has the given block state or 0.0 if not. |
 | query.has_cape| Returns 1.0 if the player has a cape, else it returns 0.0. |
 | query.has_collision| Returns 1.0 if the entity has collisions enabled, else it returns 0.0. |
@@ -144,6 +144,7 @@ Listed below are the currently available Molang query functions in the latest re
 | query.is_emerging| Returns 1.0 if the entity is emerging, else it returns 0.0. |
 | query.is_emoting| Returns 1.0 if the entity is emoting, else it returns 0.0. Applies to player. |
 | query.is_enchanted| Returns 1.0 if the entity is enchanted, else it returns 0.0. Applies to armor, bow, crossbow, shield.|
+| query.is_feeling_happy| Returns 1.0 if behavior.timer_flag_2 is running, else it returns 0.0.|
 | query.is_fire_immune| Returns 1.0 if the entity has the `fire_immune` component, else it returns 0.0. |
 | query.is_first_person| Returns 1.0 if the entity is being rendered in first person mode, else it returns 0.0. |
 | query.is_ghost| Returns 1.0 if an entity is a ghost, else it returns 0.0. Applies to guardian.|
@@ -153,6 +154,7 @@ Listed below are the currently available Molang query functions in the latest re
 | query.is_ignited| Returns 1.0 if the entity has the `is_ignited` component, else it returns 0.0. |
 | query.is_illager_captain| Returns 1.0 if the entity has the `is_illager_captain` component, else it returns 0.0. |
 | query.is_in_contact_with_water| Returns 1.0 if the entity is in contact with any water (water, rain, splash water bottle), else it returns 0.0. |
+| query.is_in_lava| Returns 1.0 if the entity is in lava, else it returns 0.0.|
 | query.is_in_love| Returns 1.0 if the entity has love hearts animation active, else it returns 0.0. |
 | query.is_in_ui| Returns 1.0 if the entity is rendered as part of the UI, else it returns 0.0. |
 | query.is_in_water| Returns 1.0 if the entity is in water, else it returns 0.0. |
@@ -183,10 +185,12 @@ Listed below are the currently available Molang query functions in the latest re
 | query.is_ram_attacking| Returns 1.0 if the entity is using a ram attack, else it returns 0.0. Pertains to goats. |
 | query.is_resting| Returns 1.0 if the entity is resting, else it returns 0.0.Applies to bat. |
 | query.is_riding| Returns 1.0 if the entity is riding, else it returns 0.0. |
+|query.is_rising| Returns 1.0 if behavior.timer_flag_2 is running, else it returns 0.0.|
 | query.is_roaring| Returns 1.0 if the entity is currently roaring, else it returns 0.0. Applies to ravager and warden.|
 | query.is_rolling| Returns 1.0 if the entity is rolling, else it returns 0.0. Pertains to panda.|
 | query.is_saddled| Returns 1.0 if the entity has the `is_saddled` component, else it returns 0.0. |
 | query.is_scared| Returns 1.0 if the entity is scared, else it returns 0.0. Pertains to a panda being startled by a baby panda sneeze. |
+| query.is_scenting| Returns 1.0 if behavior.timer_flag_1 is running, else it returns 0.0.|
 | query.is_selected_item| Returns true if the player has selected an item in the inventory, else it returns 0.0. |
 | query.is_shaking| Returns 1.0 if the entity is shaking, else it returns 0.0. Pertains to a hoglin, piglin, piglin brute, skeleton, strider, or villager, zombie villager |
 | query.is_shaking_wetness| Returns 1.0 if the entity is shaking water off, else it returns 0.0. Pertains to wet wolves. |
@@ -278,6 +282,9 @@ Listed below are the currently available Molang query functions in the latest re
 | query.time_of_day| Returns the time of day (midnight=0.0, sunrise=0.25, noon=0.5, sunset=0.75) of the dimension the entity is in. |
 | query.time_since_last_vibration_detection| Returns the time in seconds since the last vibration detected by the entity. On errors or if no vibration has been detected yet, returns -1. Available on clients (Resource Packs) only. |
 | query.time_stamp| Returns the current time stamp of the level. Pertains to cod, piglin, pufferfish, tropical fish, salmon.  |
+| query.timer_flag_1| Returns 1.0 if behavior.timer_flag_1 is running, else it returns 0.0.|
+| query.timer_flag_2| Returns 1.0 if behavior.timer_flag_2 is running, else it returns 0.0.|
+| query.timer_flag_3| Returns 1.0 if behavior.timer_flag_3 is running, else it returns 0.0.|
 | query.total_emitter_count| Returns the total number of active emitters in the world. |
 | query.total_particle_count| Returns the total number of active particles in the world. |
 | query.trade_tier| Returns the trade tier of the entity if it makes sense, else it returns 0.0. Applies to villager. |

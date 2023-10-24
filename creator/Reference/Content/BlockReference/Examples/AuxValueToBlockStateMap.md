@@ -666,14 +666,14 @@ Block Name |Aux Value |Block States|
 |minecraft:chemistry_table| 13| ["chemistry_table_type" = "lab_table", "direction" = 1]|
 |minecraft:chemistry_table| 14| ["chemistry_table_type" = "lab_table", "direction" = 2]|
 |minecraft:chemistry_table| 15| ["chemistry_table_type" = "lab_table", "direction" = 3]|
-|minecraft:chest| 0| ["facing_direction" = 0]|
-|minecraft:chest| 1| ["facing_direction" = 1]|
-|minecraft:chest| 2| ["facing_direction" = 2]|
-|minecraft:chest| 3| ["facing_direction" = 3]|
-|minecraft:chest| 4| ["facing_direction" = 4]|
-|minecraft:chest| 5| ["facing_direction" = 5]|
-|minecraft:chest| 6| ["facing_direction" = 6]|
-|minecraft:chest| 7| ["facing_direction" = 7]|
+|minecraft:chest| 0| ["cardinal_direction" = "north"]|
+|minecraft:chest| 1| ["cardinal_direction" = "north"]|
+|minecraft:chest| 2| ["cardinal_direction" = "north"]|
+|minecraft:chest| 3| ["cardinal_direction" = "south"]|
+|minecraft:chest| 4| ["cardinal_direction" = "west"]|
+|minecraft:chest| 5| ["cardinal_direction" = "east"]|
+|minecraft:chest| 6| ["cardinal_direction" = "north"]|
+|minecraft:chest| 7| ["cardinal_direction" = "north"]|
 |minecraft:chorus_flower| 0| ["age" = 0]|
 |minecraft:chorus_flower| 1| ["age" = 1]|
 |minecraft:chorus_flower| 2| ["age" = 2]|
@@ -1411,14 +1411,14 @@ Block Name |Aux Value |Block States|
 |minecraft:end_rod| 5| ["facing_direction" = 5]|
 |minecraft:end_rod| 6| ["facing_direction" = 6]|
 |minecraft:end_rod| 7| ["facing_direction" = 7]|
-|minecraft:ender_chest| 0| ["facing_direction" = 0]|
-|minecraft:ender_chest| 1| ["facing_direction" = 1]|
-|minecraft:ender_chest| 2| ["facing_direction" = 2]|
-|minecraft:ender_chest| 3| ["facing_direction" = 3]|
-|minecraft:ender_chest| 4| ["facing_direction" = 4]|
-|minecraft:ender_chest| 5| ["facing_direction" = 5]|
-|minecraft:ender_chest| 6| ["facing_direction" = 6]|
-|minecraft:ender_chest| 7| ["facing_direction" = 7]|
+|minecraft:ender_chest| 0| ["cardinal_direction" = "north"]|
+|minecraft:ender_chest| 1| ["cardinal_direction" = "north"]|
+|minecraft:ender_chest| 2| ["cardinal_direction" = "north"]|
+|minecraft:ender_chest| 3| ["cardinal_direction" = "south"]|
+|minecraft:ender_chest| 4| ["cardinal_direction" = "west"]|
+|minecraft:ender_chest| 5| ["cardinal_direction" = "east"]|
+|minecraft:ender_chest| 6| ["cardinal_direction" = "north"]|
+|minecraft:ender_chest| 7| ["cardinal_direction" = "north"]|
 |minecraft:exposed_cut_copper_slab| 0| ["top_slot_bit" = 0]|
 |minecraft:exposed_cut_copper_slab| 1| ["top_slot_bit" = 1]|
 |minecraft:farmland| 0| ["moisturized_amount" = 0]|
@@ -3366,14 +3366,14 @@ Block Name |Aux Value |Block States|
 |minecraft:stonebrick| 5| ["stone_brick_type" = "default"]|
 |minecraft:stonebrick| 6| ["stone_brick_type" = "default"]|
 |minecraft:stonebrick| 7| ["stone_brick_type" = "default"]|
-|minecraft:stonecutter_block| 0| ["facing_direction" = 0]|
-|minecraft:stonecutter_block| 1| ["facing_direction" = 1]|
-|minecraft:stonecutter_block| 2| ["facing_direction" = 2]|
-|minecraft:stonecutter_block| 3| ["facing_direction" = 3]|
-|minecraft:stonecutter_block| 4| ["facing_direction" = 4]|
-|minecraft:stonecutter_block| 5| ["facing_direction" = 5]|
-|minecraft:stonecutter_block| 6| ["facing_direction" = 6]|
-|minecraft:stonecutter_block| 7| ["facing_direction" = 7]|
+|minecraft:stonecutter_block| 0| ["cardinal_direction" = "north"]|
+|minecraft:stonecutter_block| 1| ["cardinal_direction" = "north"]|
+|minecraft:stonecutter_block| 2| ["cardinal_direction" = "north"]|
+|minecraft:stonecutter_block| 3| ["cardinal_direction" = "south"]|
+|minecraft:stonecutter_block| 4| ["cardinal_direction" = "west"]|
+|minecraft:stonecutter_block| 5| ["cardinal_direction" = "east"]|
+|minecraft:stonecutter_block| 6| ["cardinal_direction" = "north"]|
+|minecraft:stonecutter_block| 7| ["cardinal_direction" = "north"]|
 |minecraft:stripped_acacia_log| 0| ["direction" = 0]|
 |minecraft:stripped_acacia_log| 1| ["direction" = 1]|
 |minecraft:stripped_acacia_log| 2| ["direction" = 2]|
@@ -3466,14 +3466,14 @@ Block Name |Aux Value |Block States|
 |minecraft:trapdoor| 13| ["direction" = 1, "open_bit" = 1, "upside_down_bit" = 1]|
 |minecraft:trapdoor| 14| ["direction" = 2, "open_bit" = 1, "upside_down_bit" = 1]|
 |minecraft:trapdoor| 15| ["direction" = 3, "open_bit" = 1, "upside_down_bit" = 1]|
-|minecraft:trapped_chest| 0| ["facing_direction" = 0]|
-|minecraft:trapped_chest| 1| ["facing_direction" = 1]|
-|minecraft:trapped_chest| 2| ["facing_direction" = 2]|
-|minecraft:trapped_chest| 3| ["facing_direction" = 3]|
-|minecraft:trapped_chest| 4| ["facing_direction" = 4]|
-|minecraft:trapped_chest| 5| ["facing_direction" = 5]|
-|minecraft:trapped_chest| 6| ["facing_direction" = 6]|
-|minecraft:trapped_chest| 7| ["facing_direction" = 7]|
+|minecraft:trapped_chest| 0| ["cardinal_direction" = "north"]|
+|minecraft:trapped_chest| 1| ["cardinal_direction" = "north"]|
+|minecraft:trapped_chest| 2| ["cardinal_direction" = "north"]|
+|minecraft:trapped_chest| 3| ["cardinal_direction" = "south"]|
+|minecraft:trapped_chest| 4| ["cardinal_direction" = "west"]|
+|minecraft:trapped_chest| 5| ["cardinal_direction" = "east"]|
+|minecraft:trapped_chest| 6| ["cardinal_direction" = "north"]|
+|minecraft:trapped_chest| 7| ["cardinal_direction" = "north"]|
 |minecraft:trip_wire| 0| ["attached_bit" = 0, "disarmed_bit" = 0, "powered_bit" = 0, "suspended_bit" = 0]|
 |minecraft:trip_wire| 1| ["attached_bit" = 0, "disarmed_bit" = 0, "powered_bit" = 1, "suspended_bit" = 0]|
 |minecraft:trip_wire| 2| ["attached_bit" = 0, "disarmed_bit" = 0, "powered_bit" = 0, "suspended_bit" = 1]|
