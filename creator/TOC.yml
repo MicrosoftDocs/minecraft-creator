@@ -54,6 +54,8 @@
           href: Documents/BehaviorPack.md
         - name: Utilizing Sub-Packs
           href: Documents/UtilizingSubpacks.md
+        - name: Adding Custom Items
+          href: Documents/AddCustomItems.md          
         - name: Adding Custom Sounds
           href: Documents/AddCustomSounds.md
         - name: Packaging Content
