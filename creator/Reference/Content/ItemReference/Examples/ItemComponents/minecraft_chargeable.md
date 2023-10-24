@@ -26,6 +26,8 @@ ms.service: minecraft-bedrock-edition
 
 See [Custom Item Use Priority](../ItemUsePriority.md) for more information on use behavior.
 
+See [Custom Item Use Priority](../ItemUsePriority.md) for more information on use behavior.
+
 ## Example
 
 ```json
