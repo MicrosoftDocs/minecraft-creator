@@ -80,12 +80,10 @@ Runs a specified function at a future time. This is frequently used to implement
       if (mc.system.currentTick % 1200 === 0) {
         mc.world.sendMessage("Another minute passes...");
       }
-      else {
-        mc.system.run(trapTick);
-      }
     } catch (e) {
       console.warn("Error: " + e);
     }
+    mc.system.run(trapTick);
   }
   mc.system.run(trapTick);
 ```
