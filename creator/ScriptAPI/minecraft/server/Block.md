@@ -25,9 +25,6 @@ Type: [*Dimension*](Dimension.md)
 Returns true if this block is an air block (i.e., empty space).
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
     
 > [!WARNING]
 > This property can throw errors when used.
@@ -40,9 +37,6 @@ Type: *boolean*
 Returns true if this block is a liquid block - (e.g., a water block and a lava block are liquid, while an air block and a stone block are not. Water logged blocks are not liquid blocks).
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
     
 > [!WARNING]
 > This property can throw errors when used.
@@ -185,9 +179,6 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) above t
 
 #### **Returns** [*Block*](Block.md) | *undefined*
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 >
@@ -207,9 +198,6 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) below t
 
 #### **Returns** [*Block*](Block.md) | *undefined*
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 >
@@ -223,9 +211,6 @@ bottomCenter(): Vector3
 Returns the {@link @minecraft/server.Location} of the center of this block on the X and Z axis.
 
 #### **Returns** [*Vector3*](Vector3.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **canPlace**
 `
@@ -261,9 +246,6 @@ Returns the {@link @minecraft/server.Location} of the center of this block on th
 
 #### **Returns** [*Vector3*](Vector3.md)
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **east**
 `
 east(steps?: number): Block | undefined
@@ -277,9 +259,6 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the 
   Number of steps to the east to step before returning.
 
 #### **Returns** [*Block*](Block.md) | *undefined*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.
@@ -422,9 +401,6 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the 
 
 #### **Returns** [*Block*](Block.md) | *undefined*
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 >
@@ -443,9 +419,6 @@ Returns a block at an offset relative vector to this block.
   The offset vector. For example, an offset of 0, 1, 0 will return the block above the current block.
 
 #### **Returns** [*Block*](Block.md) | *undefined* - Block at the specified offset, or undefined if that block could not be retrieved (for example, the block and its relative chunk is not loaded yet.)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.
@@ -509,9 +482,6 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the 
 
 #### **Returns** [*Block*](Block.md) | *undefined*
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 >
@@ -555,9 +525,6 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the 
   Number of steps to the west to step before returning.
 
 #### **Returns** [*Block*](Block.md) | *undefined*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.

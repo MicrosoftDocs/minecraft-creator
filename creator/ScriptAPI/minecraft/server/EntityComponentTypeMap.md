@@ -96,6 +96,7 @@ type EntityComponentTypeMap = {
   'minecraft:navigation.generic': EntityNavigationGenericComponent;
   'minecraft:navigation.hover': EntityNavigationHoverComponent;
   'minecraft:navigation.walk': EntityNavigationWalkComponent;
+  'minecraft:npc': EntityNpcComponent;
   'minecraft:onfire': EntityOnFireComponent;
   'minecraft:push_through': EntityPushThroughComponent;
   'minecraft:rideable': EntityRideableComponent;
@@ -124,6 +125,7 @@ type EntityComponentTypeMap = {
   'navigation.generic': EntityNavigationGenericComponent;
   'navigation.hover': EntityNavigationHoverComponent;
   'navigation.walk': EntityNavigationWalkComponent;
+  'npc': EntityNpcComponent;
   'onfire': EntityOnFireComponent;
   'push_through': EntityPushThroughComponent;
   'rideable': EntityRideableComponent;

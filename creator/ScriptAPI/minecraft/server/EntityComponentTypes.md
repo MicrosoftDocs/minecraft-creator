@@ -112,6 +112,8 @@ description: Contents of the .EntityComponentTypes enumeration.
 `NavigationHover = "minecraft:navigation.hover"`
 ### **NavigationWalk**
 `NavigationWalk = "minecraft:navigation.walk"`
+### **Npc**
+`Npc = "minecraft:npc"`
 ### **OnFire**
 `OnFire = "minecraft:onfire"`
 ### **PushThrough**

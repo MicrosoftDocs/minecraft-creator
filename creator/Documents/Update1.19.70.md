@@ -2,8 +2,8 @@
 author: kakinnun
 ms.author: kakinnun
 title: 1.19.70 Update Notes
-ms.prod: gaming
 description: Update summary of Creator changes in Bedrock 1.19.70
+ms.service: minecraft-bedrock-edition
 ---
 # Minecraft Bedrock 1.19.70 Update Notes for Creators
 

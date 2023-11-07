@@ -80,7 +80,7 @@ Adds a numeric slider to the form.
 
 ### **textField**
 `
-textField(label: minecraftserver.RawMessage | string, placeholderText: minecraftserver.RawMessage | string, defaultValue?: string): ModalFormData
+textField(label: minecraftserver.RawMessage | string, placeholderText: minecraftserver.RawMessage | string, defaultValue?: minecraftserver.RawMessage | string): ModalFormData
 `
 
 Adds a textbox to the form.
@@ -88,7 +88,7 @@ Adds a textbox to the form.
 #### **Parameters**
 - **label**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 - **placeholderText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
-- **defaultValue**?: *string* = `null`
+- **defaultValue**?: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string* = `null`
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
 

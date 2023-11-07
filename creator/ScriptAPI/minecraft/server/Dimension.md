@@ -13,14 +13,11 @@ A class that represents a particular dimension (e.g., The End) within a world.
 ## Properties
 
 ### **heightRange**
-`read-only heightRange: NumberRange;`
+`read-only heightRange: minecraftcommon.NumberRange;`
 
 Height range of the dimension.
 
-Type: [*NumberRange*](NumberRange.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+Type: [*@minecraft/common.NumberRange*](../../minecraft/common/NumberRange.md)
     
 > [!WARNING]
 > This property can throw errors when used.

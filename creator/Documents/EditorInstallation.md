@@ -2,8 +2,8 @@
 author: iconicnurdle
 ms.author: mikeam
 title: Minecraft Bedrock Editor Installation
-ms.prod: gaming
 description: "A guide detailing the process of installing and testing Minecraft Bedrock Editor"
+ms.service: minecraft-bedrock-edition
 ---
 
 # How to get Minecraft Editor
