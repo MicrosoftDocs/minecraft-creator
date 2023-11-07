@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.PlayerInteractWithEntityBeforeEve
 ---
 # PlayerInteractWithEntityBeforeEvent Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains information regarding an event before a player interacts with an entity.
 
 ## Properties

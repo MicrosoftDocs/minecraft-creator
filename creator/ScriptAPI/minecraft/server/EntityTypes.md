@@ -19,7 +19,7 @@ Used for accessing all entity types currently available for use within the world
 
 ### **get**
 `
-static "get"(identifier: string): EntityType
+static "get"(identifier: string): EntityType | undefined
 `
 
 Retrieves an entity type using a string-based identifier.
@@ -27,7 +27,7 @@ Retrieves an entity type using a string-based identifier.
 #### **Parameters**
 - **identifier**: *string*
 
-#### **Returns** [*EntityType*](EntityType.md)
+#### **Returns** [*EntityType*](EntityType.md) | *undefined*
 
 ### **getAll**
 `

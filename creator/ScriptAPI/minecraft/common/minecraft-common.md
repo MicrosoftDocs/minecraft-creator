@@ -14,12 +14,16 @@ description: Contents of the @minecraft/common module
 ```json
 {
     "module_name": "@minecraft/common",
-    "version": "1.0.0"
+    "version": "1.1.0"
 }
 ```
 
 ## Available Versions
+- `1.1.0`
 - `1.0.0`
+
+## Interfaces
+- [NumberRange](NumberRange.md)
 
 ## Errors
 - [ArgumentOutOfBoundsError](ArgumentOutOfBoundsError.md)
