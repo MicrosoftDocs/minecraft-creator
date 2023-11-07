@@ -8,8 +8,14 @@ description: Contents of the .EditorMode enumeration.
 ---
 # EditorMode Enumeration
 
+Enumeration representing the different modes Editor can be in.
+
 ## Constants
 ### **Crosshair**
 `Crosshair = "Crosshair"`
+
+Mode for single-block editing.
 ### **Tool**
 `Tool = "Tool"`
+
+Mode for multi-block editing UI and tools.

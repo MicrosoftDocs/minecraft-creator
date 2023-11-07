@@ -22,8 +22,8 @@ Entity that the event triggered on.
 
 Type: [*Entity*](Entity.md)
 
-### **id**
-`read-only id: string;`
+### **eventId**
+`read-only eventId: string;`
 
 Name of the data driven event being triggered.
 
@@ -40,6 +40,3 @@ getModifiers(): DefinitionModifier[]
 An updateable list of modifications to component state that are the effect of this triggered event.
 
 #### **Returns** [*DefinitionModifier*](DefinitionModifier.md)[]
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.

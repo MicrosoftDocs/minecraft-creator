@@ -13,7 +13,7 @@ Contains additional information about an entity that was hit.
 ## Properties
 
 ### **entity**
-`entity: Entity;`
+`entity?: Entity;`
 
 Entity that was hit.
 

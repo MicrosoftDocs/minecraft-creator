@@ -667,10 +667,12 @@ Causes the simulated player to stop swimming.
 
 ### **stopUsingItem**
 `
-stopUsingItem(): void
+stopUsingItem(): minecraftserver.ItemStack | undefined
 `
 
 Stops using the currently active item.
+
+#### **Returns** [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md) | *undefined* - Returns the item that was in use. Undefined if no item was in use.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

@@ -19,9 +19,6 @@ Returns a collection of after-events for system-level operations.
 
 Type: [*SystemAfterEvents*](SystemAfterEvents.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **beforeEvents**
 `read-only beforeEvents: SystemBeforeEvents;`
 

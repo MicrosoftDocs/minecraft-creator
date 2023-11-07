@@ -28,6 +28,3 @@ Base type for components associated with blocks.
 Block instance that this component pertains to.
 
 Type: [*Block*](Block.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.

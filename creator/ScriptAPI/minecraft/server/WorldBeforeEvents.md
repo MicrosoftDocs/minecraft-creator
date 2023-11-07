@@ -49,9 +49,6 @@ Fires before an entity is removed from the world (for example, unloaded or remov
 
 Type: [*EntityRemoveBeforeEventSignal*](EntityRemoveBeforeEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **explosion**
 `read-only explosion: ExplosionBeforeEventSignal;`
 
@@ -129,9 +126,6 @@ Type: [*PlayerInteractWithEntityBeforeEventSignal*](PlayerInteractWithEntityBefo
 Fires when a player leaves the game.
 
 Type: [*PlayerLeaveBeforeEventSignal*](PlayerLeaveBeforeEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **playerPlaceBlock**
 `read-only playerPlaceBlock: PlayerPlaceBlockBeforeEventSignal;`

@@ -34,6 +34,7 @@ description: Contents of the @minecraft/server-editor module
 - [EditorInputContext](EditorInputContext.md)
 - [EditorMode](EditorMode.md)
 - [EditorStatusBarAlignment](EditorStatusBarAlignment.md)
+- [GraphicsSettingsProperty](GraphicsSettingsProperty.md)
 - [InputModifier](InputModifier.md)
 - [KeyboardKey](KeyboardKey.md)
 - [KeyInputType](KeyInputType.md)
@@ -43,6 +44,7 @@ description: Contents of the @minecraft/server-editor module
 - [PlaytestSessionResult](PlaytestSessionResult.md)
 
 # Type Aliases
+- [GraphicsSettingsPropertyTypeMap](GraphicsSettingsPropertyTypeMap.md)
 - [Action](Action.md)
 - [ActionID](ActionID.md)
 - [ActivationFunctionType](ActivationFunctionType.md)
@@ -74,6 +76,7 @@ description: Contents of the @minecraft/server-editor module
 - [Extension](Extension.md)
 - [ExtensionContext](ExtensionContext.md)
 - [ExtensionContextAfterEvents](ExtensionContextAfterEvents.md)
+- [GraphicsSettings](GraphicsSettings.md)
 - [Logger](Logger.md)
 - [MinecraftEditor](MinecraftEditor.md)
 - [ModeChangeAfterEvent](ModeChangeAfterEvent.md)
@@ -81,6 +84,7 @@ description: Contents of the @minecraft/server-editor module
 - [PlaytestManager](PlaytestManager.md)
 - [Selection](Selection.md)
 - [SelectionManager](SelectionManager.md)
+- [SettingsManager](SettingsManager.md)
 - [TransactionManager](TransactionManager.md)
 
 ## Interfaces

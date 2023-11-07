@@ -3,13 +3,10 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/server.NumberRange Interface
-description: Contents of the @minecraft/server.NumberRange class.
+title: minecraft/common.NumberRange Interface
+description: Contents of the @minecraft/common.NumberRange class.
 ---
 # NumberRange Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Represents a min/max structure for expressing a potential range of numbers.
 

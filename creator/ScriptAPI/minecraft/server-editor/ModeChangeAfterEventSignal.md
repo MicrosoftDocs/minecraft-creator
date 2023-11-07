@@ -8,6 +8,8 @@ description: Contents of the @minecraft/server-editor.ModeChangeAfterEventSignal
 ---
 # ModeChangeAfterEventSignal Class
 
+Manages callbacks that are connected to when a player editor mode changes.
+
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -16,6 +18,8 @@ description: Contents of the @minecraft/server-editor.ModeChangeAfterEventSignal
 `
 subscribe(callback: (arg: ModeChangeAfterEvent) => void): (arg: ModeChangeAfterEvent) => void
 `
+
+Subscribes the specified callback to an editor mode change after event.
 
 #### **Parameters**
 - **callback**: (arg: [*ModeChangeAfterEvent*](ModeChangeAfterEvent.md)) => *void*
@@ -29,6 +33,8 @@ subscribe(callback: (arg: ModeChangeAfterEvent) => void): (arg: ModeChangeAfterE
 `
 unsubscribe(callback: (arg: ModeChangeAfterEvent) => void): void
 `
+
+Removes the specified callback from an editor mode change after event.
 
 #### **Parameters**
 - **callback**: (arg: [*ModeChangeAfterEvent*](ModeChangeAfterEvent.md)) => *void*

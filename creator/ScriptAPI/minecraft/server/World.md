@@ -19,9 +19,6 @@ Contains a set of events that are applicable to the entirety of the world.  Even
 
 Type: [*WorldAfterEvents*](WorldAfterEvents.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **beforeEvents**
 `read-only beforeEvents: WorldBeforeEvents;`
 
@@ -29,18 +26,12 @@ Contains a set of events that are applicable to the entirety of the world. Event
 
 Type: [*WorldBeforeEvents*](WorldBeforeEvents.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **scoreboard**
 `read-only scoreboard: Scoreboard;`
 
 Returns the general global scoreboard that applies to the world.
 
 Type: [*Scoreboard*](Scoreboard.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Methods
 - [broadcastClientMessage](#broadcastclientmessage)
@@ -94,9 +85,6 @@ clearDynamicProperties(): void
 `
 
 Clears the set of dynamic properties declared for this behavior pack within the world.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **getAbsoluteTime**
 `
@@ -168,9 +156,6 @@ Returns a property value.
 
 #### **Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > Throws if the given dynamic property identifier is not defined.
 
@@ -237,9 +222,6 @@ Gets a set of dynamic property identifiers that have been set in this world.
 
 #### **Returns** *string*[] - A string array of active dynamic property identifiers.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 ### **getDynamicPropertyTotalByteCount**
 `
 getDynamicPropertyTotalByteCount(): number
@@ -248,9 +230,6 @@ getDynamicPropertyTotalByteCount(): number
 Gets the total byte count of dynamic properties. This could potentially be used for your own analytics to ensure you're not storing gigantic sets of dynamic properties.
 
 #### **Returns** *number*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ### **getEntity**
 `
@@ -265,9 +244,6 @@ Returns an entity based on the provided id.
   The id of the entity.
 
 #### **Returns** [*Entity*](Entity.md) | *undefined* - The requested entity object.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > Throws if the given entity id is invalid.
@@ -522,9 +498,6 @@ Sets a specified property to a value.
 - **value**?: *boolean* | *number* | *string* | [*Vector3*](Vector3.md) = `null`
   
   Data value of the property to set.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > Throws if the given dynamic property identifier is not defined.

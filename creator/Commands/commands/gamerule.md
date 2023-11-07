@@ -107,6 +107,7 @@ controls whether respawn blocks explode
 - `showbordereffect`
 controls whether border effects are shown
 - `showrecipemessages`
+- `projectilescanbreakblocks`
 
 ### `IntGameRule`
 An `integer` to replace the following default values.

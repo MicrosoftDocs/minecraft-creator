@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.PlayerInteractWithEntityAfterEven
 ---
 # PlayerInteractWithEntityAfterEvent Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Contains information regarding an event after a player interacts with an entity.
 
 ## Properties
