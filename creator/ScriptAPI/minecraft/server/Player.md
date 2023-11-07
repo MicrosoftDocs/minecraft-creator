@@ -24,9 +24,6 @@ Represents a player within the world.
 The player's Camera.
 
 Type: [*Camera*](Camera.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
     
 > [!WARNING]
 > This property can throw errors when used.
@@ -37,9 +34,6 @@ Type: [*Camera*](Camera.md)
 If true, the player is currently emoting.
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
     
 > [!WARNING]
 > This property can throw errors when used.
@@ -50,9 +44,6 @@ Type: *boolean*
 Whether the player is flying. For example, in Creative or Spectator mode.
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
     
 > [!WARNING]
 > This property can throw errors when used.
@@ -63,9 +54,6 @@ Type: *boolean*
 Whether the player is gliding with Elytra.
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
     
 > [!WARNING]
 > This property can throw errors when used.
@@ -76,9 +64,6 @@ Type: *boolean*
 Whether the player is jumping. This will remain true while the player is holding the jump action.
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
     
 > [!WARNING]
 > This property can throw errors when used.
@@ -89,9 +74,6 @@ Type: *boolean*
 The current overall level for the player, based on their experience. 
 
 Type: *number*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
     
 > [!WARNING]
 > This property can throw errors when used.
@@ -135,9 +117,6 @@ Type: *number*
 The overall total set of experience needed to achieve the next level for a player.
 
 Type: *number*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
     
 > [!WARNING]
 > This property can throw errors when used.
@@ -148,9 +127,6 @@ Type: *number*
 The current set of experience achieved for the player.
 
 Type: *number*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
     
 > [!WARNING]
 > This property can throw errors when used.

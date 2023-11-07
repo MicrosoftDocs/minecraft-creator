@@ -8,9 +8,13 @@ description: Contents of the @minecraft/server-editor.ExtensionContextAfterEvent
 ---
 # ExtensionContextAfterEvents Class
 
+Contains a set of events that are available across the scope of the ExtensionContext.
+
 ## Properties
 
 ### **modeChange**
 `read-only modeChange: ModeChangeAfterEventSignal;`
+
+This event triggers when the editor mode changes for the player.
 
 Type: [*ModeChangeAfterEventSignal*](ModeChangeAfterEventSignal.md)

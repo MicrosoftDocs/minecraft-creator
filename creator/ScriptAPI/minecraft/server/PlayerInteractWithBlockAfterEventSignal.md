@@ -8,8 +8,7 @@ description: Contents of the @minecraft/server.PlayerInteractWithBlockAfterEvent
 ---
 # PlayerInteractWithBlockAfterEventSignal Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
+Manages callbacks that are connected to after a player interacts with a block.
 
 ## Methods
 - [subscribe](#subscribe)
@@ -19,6 +18,8 @@ description: Contents of the @minecraft/server.PlayerInteractWithBlockAfterEvent
 `
 subscribe(callback: (arg: PlayerInteractWithBlockAfterEvent) => void): (arg: PlayerInteractWithBlockAfterEvent) => void
 `
+
+Adds a callback that will be called after a player interacts with a block.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerInteractWithBlockAfterEvent*](PlayerInteractWithBlockAfterEvent.md)) => *void*
@@ -32,6 +33,8 @@ subscribe(callback: (arg: PlayerInteractWithBlockAfterEvent) => void): (arg: Pla
 `
 unsubscribe(callback: (arg: PlayerInteractWithBlockAfterEvent) => void): void
 `
+
+Removes a callback from being called after a player interacts with a block.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerInteractWithBlockAfterEvent*](PlayerInteractWithBlockAfterEvent.md)) => *void*
