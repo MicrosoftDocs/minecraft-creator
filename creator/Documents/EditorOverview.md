@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Minecraft Bedrock Editor Overview
-ms.prod: gaming
 description: "An overview of the parts of Minecraft Bedrock Editor"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Editor Overview

@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Block Documentation - Block States and Permutations
-ms.prod: gaming
 description: "A reference document providing an overview of block permutations and block states"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - Block States and Permutations
