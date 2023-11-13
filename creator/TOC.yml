@@ -34,14 +34,12 @@
               href: Documents/WorldHeightChange.md        
     - name: Concepts
       items:
+        - name: Getting Started with Add-Ons
+          href: Documents/GettingStarted.md
         - name: 'Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition'
           href: Documents/DifferencesBetweenBedrockAndJava.md
         - name: "Experimental Features in Minecraft: Bedrock Edition"
           href: Documents/ExperimentalFeaturesToggle.md
-        - name: Getting Started
-          href: Documents/GettingStarted.md
-        - name: "Installing Add-Ons in Minecraft: Bedrock"
-          href: Documents/AddonPackInstallation.md
         - name: Copy and Paste Coordinates
           href: Documents/CopyCoordinates.md
         - name: Content Error Log
