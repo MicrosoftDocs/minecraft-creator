@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: JimSeaman42
+ms.author: mikeam
 title: Getting Started With Minecraft Add-Ons
 description: "A tutorial covering how to start developing Add-Ons for Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
