@@ -36,22 +36,18 @@
       items:
         - name: Getting Started with Add-Ons
           href: Documents/GettingStarted.md
-        - name: 'Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition'
-          href: Documents/DifferencesBetweenBedrockAndJava.md
-        - name: "Experimental Features in Minecraft: Bedrock Edition"
-          href: Documents/ExperimentalFeaturesToggle.md
-        - name: Copy and Paste Coordinates
-          href: Documents/CopyCoordinates.md
-        - name: Content Error Log
-          href: Documents/ContentErrorLog.md
-        - name: Designing Gameplay for Various Devices
-          href: Documents/DesigningGameplayForVariousDevices.md
         - name: Introduction to Resource Packs
           href: Documents/ResourcePack.md
         - name: Introduction to Behavior Packs
           href: Documents/BehaviorPack.md
-        - name: Utilizing Sub-Packs
-          href: Documents/UtilizingSubpacks.md
+        - name: 'Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition'
+          href: Documents/DifferencesBetweenBedrockAndJava.md
+        - name: Designing Gameplay for Various Devices
+          href: Documents/DesigningGameplayForVariousDevices.md
+        - name: Minecraft File Extensions
+          href: Documents/MinecraftFileExtensions.md
+        - name: "Experimental Features in Minecraft: Bedrock Edition"
+          href: Documents/ExperimentalFeaturesToggle.md
         - name: Adding Custom Items
           href: Documents/AddCustomItems.md          
         - name: Adding Custom Sounds
@@ -64,6 +60,8 @@
             href: Documents/PackagingAWorldTemplate.md
           - name: Packaging a Random Seed World Template
             href: Documents/PackagingARandomSeedWorldTemplate.md
+          - name: Utilizing Sub-Packs
+            href: Documents/UtilizingSubpacks.md
           - name: Mash-up Pack Overview
             href: Documents/MashupPackOverview.md
           - name: 'Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition'
@@ -74,10 +72,8 @@
           items:
           - name: Getting Started with Deferred Lighting
             href: Documents/DeferredLighting.md
-          - name: Base Game Versioning
+          - name: World Templates and Base Game Versioning
             href: Documents/BaseGameVersioning.md
-          - name: Minecraft File Extensions
-            href: Documents/MinecraftFileExtensions.md
           - name: Editing NBTs Safely
             href: Documents/EditingNBTSafely.md
           - name: Getting Started with Ray Tracing
@@ -200,6 +196,12 @@
       items:
         - name: Commonly Used Tools
           href: Documents/CommonlyUsedTools.md
+        - name: In-Game Tools
+          items:
+            - name: Copy and Paste Coordinates
+              href: Documents/CopyCoordinates.md
+            - name: Content Error Log
+              href: Documents/ContentErrorLog.md
         - name: Bedrock Editor
           items:
             - name: Editor Installation Guide
