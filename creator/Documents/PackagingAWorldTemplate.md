@@ -1,18 +1,114 @@
 ---
-author: JimSeaman42
+author: iconicNurdle
 ms.author: mikeam
 title: Packaging a World Template
-description: "An article detailing the purpose and base functionality of a world template"
+description: "An article detailing the structure and creation of a world template"
 ms.service: minecraft-bedrock-edition
 ---
 
 # Packaging a World Template
 
-A world template is a framework that can be used to create new worlds. Each world created by the template is the same, which is particularly useful for [survival spawns](SurvivalSpawnCreation.md). A world template has a `.mctemplate` file extension and a slightly different structure compared to a standard `.mcworld` world file. All worlds in the marketplace are world templates.
+All of the Worlds in the Minecraft Marketplace, like [survival spawns](SurvivalSpawnCreation.md), are actually world templates. When a player creates a world from the template, they get their own fresh copy of the world.
 
-To package a world template, create a `world_template` folder that contains the world files (a `db` folder with a manifest.json, `level.dat`, etc.), `world_behavior_packs.json`, `world_resource_packs.json`, and your key art as the `world_icon.jpeg`. If you have a behavior pack, place it in the `world_template` folder (see [Introduction to Behavior Packs](BehaviorPack.md) for creating behavior packs).
+Before we dive into creating a world template, let's first take a look at a Minecraft world file and learn some cool renaming tricks.
 
-Resource pack and behavior pack folder names must be kept to **10 characters or less**. This is due to an issue on Xbox where long paths may cause resource or behavior packs to not load properly. We suggest using an acronym of the contents title for folder names.
+## Unpacking, Examining, and Re-Packing a Minecraft World File
+
+We are going to create a world, export it, rename it, unzip it, look at the contents, zip the contents back up, and open it again in Minecraft. 
+
+1. Launch Minecraft, create a world, give it a memorable name like **New_World**, and play in it to test it out. (I love it when instructions tell me to play Minecraft!)
+1. Save and quit the world to go back to the Minecraft **Play** screen that shows you all of your worlds.
+
+![Alt text](Media/PackagingAWorldTemplate/UI_list_of_worlds_step_2.png)
+
+3. Click the Edit button for that world to go to the **Edit World** screen.
+
+![Alt text](Media/PackagingAWorldTemplate/edit_world_export_step_3.png)
+
+4. On the General tab, in the File Management section, find the **Export World** button and click it. The Save As window will be displayed.
+
+![Alt text](Media/PackagingAWorldTemplate/world_save_as.png)
+
+5. Choose a location that is easy for you to find, like your computer's Desktop, and click the **Export** button.
+1. Minimize Minecraft and go find the exported world file.
+1. Change the file extension from **.mcworld** to **.zip**.
+
+![Alt text](Media/PackagingAWorldTemplate/are_you_sure.png)
+
+8. Your computer will warn you that the file might become unusable and ask "Are you sure you want to change it?" We're sure. Click **Yes**. The file's icon will look different.
+
+![Alt text](Media/PackagingAWorldTemplate/changed_to_dot_zip.png)
+
+9. Double-click the zip file to open it and choose **Extract All**. The structure should look something like this:
+
+![Alt text](Media/PackagingAWorldTemplate/extract_all.png)
+
+10. Open the files and check them out in Visual Studio code, but don't move them or change the names of anything.
+
+### The structure of a Minecraft World file
+
+- **db** folder that contains 4 files with names similar to this:
+    - **000005.ldb** - Microsoft Access Record-Locking Information
+    - **000006.log** - Text Document
+    - **CURRENT** - File that contains something like "MANIFEST-000004"
+    - **MANIFEST-000004** - Binary file that cannot be opened
+- **level.dat** - DAT file that contains important data about your Minecraft world
+- **level.dat_old** - DAT_OLD File that can be used as a backup for the other DAT file. 
+- **levelname.txt** - Text document that holds the name of the world: "New_World"
+
+11. Edit the **world_icon.jpeg** file in an app like Paint.
+
+![Alt text](Media/PackagingAWorldTemplate/edited_world_icon_jpeg.png)
+
+Don't get too attached to your edited world icon, though. Whenever you play the world and then Save & Exit, Minecraft will make a new icon to replace it to reflect your gameplay. We just want to make changes to this to distinguish it from the original world.
+
+### Re-Package a Minecraft World File
+
+Now we're going to gather everything back up into a world file and open it again in Minecraft.
+
+1. Inside the world folder, select all of the individual files.
+2. With all of the files selected, right-click any one of the selected files and choose "Compress to ZIP file."
+
+![Alt text](Media/PackagingAWorldTemplate/re-zip_world_contents.png)
+
+3. The zip file will be created among the other files and the computer will automatically give it the same name as the file you right-clicked. That's okay. Name it something distinctive like **New_World_EDITED.zip**.
+
+![Alt text](Media/PackagingAWorldTemplate/new_world_edited_zip.png)
+
+4. After the zip file is created, change the **.zip** extension to **.mcworld**.
+
+![Alt text](Media/PackagingAWorldTemplate/new_world_edited_mcworld.png)
+
+>[!Note]
+> You can just give the new zip file the name **New_World.mcworld** as it's being created, but I wanted to make sure to show you that the final **.mcworld** file is simply a re-named **.zip** file.
+
+>[!Important]
+> Do **not** try to zip the whole folder and rename it from .zip to .mcworld. When the computer zips a file, it creates a folder for the things you want zipped, so the world folder will go inside a another folder and Minecraft will not be able to import the world.
+
+![Alt text](Media/PackagingAWorldTemplate/new_world_edited_mcworld_done.png)
+
+After you change the file extension to **.mcworld**, the file will have the Minecraft logo on it.
+
+5. Double-click the **New_World.mcworld** to launch Minecraft and import the world. You should see messages that confirm that the world has started and finished being imported successfully.
+1. Click **Play** to go to the Play screen, where this world will be displayed along with any others. 
+
+![Alt text](Media/PackagingAWorldTemplate/theres_the_edited_world.png)
+
+7. When you play the edited world, it will look just like the original one.
+
+
+## Structure of the World Template Package
+
+To package a world template, create a `world_template` folder that contains the world files: 
+  a `db` folder with a manifest.json, 
+  `level.dat`, etc.), 
+  `world_behavior_packs.json`, 
+  `world_resource_packs.json`, and 
+  your icon art as the `world_icon.jpeg`. 
+  
+  If you have a behavior pack, place it in the `world_template` folder (see [Introduction to Behavior Packs](BehaviorPack.md) for creating behavior packs).
+
+Resource pack and behavior pack folder names in world templates must be **10 characters or shorter**. This is due to an issue on Xbox where long paths may cause resource or behavior packs to not load properly. We suggest using an acronym of the contents title for folder names.
 
 > [!WARNING]
 > With the release of `1.18`, templates created with base game version `1.17.4` or earlier will be updated with the new world generation tool and may break content when building new maps based upon that template.
@@ -21,7 +117,7 @@ Resource pack and behavior pack folder names must be kept to **10 characters or 
 
 ## World template folder structure
 
-The following image is how a World Template folder structure may be configured.
+The following image is how a world template folder structure may be configured.
 
 ![Folder structure of the whole world template](Media/PackagingAWorldTemplate/folderstructure.png)
 
