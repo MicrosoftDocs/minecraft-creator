@@ -10,9 +10,6 @@ ms.service: minecraft-bedrock-edition
 
 `minecraft:behavior.sneeze` compels an entity to sneeze and potentially startle other entities. While sneezing, the entity may drop an item.
 
-> [!NOTE]
-> `minecraft:behavior.sneeze` requires a `player` to be tagged as the entity's owner, via taming or console command.
-
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
