@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityAgeableComponent Class
 description: Contents of the @minecraft/server.EntityAgeableComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityAgeableComponent Class
 

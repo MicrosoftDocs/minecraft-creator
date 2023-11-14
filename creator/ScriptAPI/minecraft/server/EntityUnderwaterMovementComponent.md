@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityUnderwaterMovementComponent Class
 description: Contents of the @minecraft/server.EntityUnderwaterMovementComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityUnderwaterMovementComponent Class
 

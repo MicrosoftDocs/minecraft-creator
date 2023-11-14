@@ -43,6 +43,7 @@ Type: *boolean*
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **isSolid**
 `read-only isSolid: boolean;`
 
@@ -57,7 +58,9 @@ Type: *boolean*
 > This property can throw errors when used.
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **isWaterlogged**
 `isWaterlogged: boolean;`
 
@@ -70,6 +73,7 @@ Type: *boolean*
   
 > [!IMPORTANT]
 > This property can't be edited in read-only mode.
+::: moniker-end
 
 ### **location**
 `read-only location: Vector3;`
@@ -93,6 +97,7 @@ Type: [*BlockPermutation*](BlockPermutation.md)
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **type**
 `read-only type: BlockType;`
 
@@ -107,7 +112,9 @@ Type: [*BlockType*](BlockType.md)
 > This property can throw errors when used.
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **typeId**
 `read-only typeId: string;`
 
@@ -122,6 +129,7 @@ Type: *string*
 > This property can throw errors when used.
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
 
 ### **x**
 `read-only x: number;`
@@ -212,6 +220,7 @@ Returns the {@link @minecraft/server.Location} of the center of this block on th
 
 #### **Returns** [*Vector3*](Vector3.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **canPlace**
 `
 canPlace(blockToPlace: BlockPermutation | BlockType | string, faceToPlaceOn?: Direction): boolean
@@ -236,6 +245,7 @@ Checks to see whether it is valid to place the specified block type or block per
 > This function can throw errors.
 >
 > Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
 
 ### **center**
 `
@@ -284,6 +294,7 @@ Gets a component (that represents additional capabilities) for a block - for exa
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getItemStack**
 `
 getItemStack(amount?: number, withData?: boolean): ItemStack | undefined
@@ -308,7 +319,9 @@ Creates a prototype item stack based on this block that can be used with Contain
 > This function can throw errors.
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getRedstonePower**
 `
 getRedstonePower(): number | undefined
@@ -325,7 +338,9 @@ Returns the net redstone power of this block.
 > This function can throw errors.
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getTags**
 `
 getTags(): string[]
@@ -342,7 +357,9 @@ Returns a set of tags for a block.
 > This function can throw errors.
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **hasTag**
 `
 hasTag(tag: string): boolean
@@ -377,6 +394,7 @@ console.log(`Block is dirt: ${block.hasTag("dirt")}`);
 console.log(`Block is wood: ${block.hasTag("wood")}`);
 console.log(`Block is stone: ${block.hasTag("stone")}`);
 ```
+::: moniker-end
 
 ### **isValid**
 `
@@ -445,6 +463,7 @@ Sets the block in the dimension to the state of the permutation.
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **setType**
 `
 setType(blockType: BlockType | string): void
@@ -467,6 +486,7 @@ Sets the type of block.
 > This function can throw errors.
 >
 > Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
 
 ### **south**
 `
@@ -487,6 +507,7 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the 
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **trySetPermutation**
 `
 trySetPermutation(permutation: BlockPermutation): boolean
@@ -511,6 +532,7 @@ Tries to set the block in the dimension to the state of the permutation by first
 > This function can throw errors.
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
 
 ### **west**
 `

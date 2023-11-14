@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityDefinitionFeedItem Class
 description: Contents of the @minecraft/server.EntityDefinitionFeedItem class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityDefinitionFeedItem Class
 

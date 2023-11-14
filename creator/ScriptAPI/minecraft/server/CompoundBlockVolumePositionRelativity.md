@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .CompoundBlockVolumePositionRelativity Enumeration
 description: Contents of the .CompoundBlockVolumePositionRelativity enumeration.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CompoundBlockVolumePositionRelativity Enumeration
 

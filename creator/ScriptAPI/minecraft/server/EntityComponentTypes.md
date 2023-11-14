@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .EntityComponentTypes Enumeration
 description: Contents of the .EntityComponentTypes enumeration.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityComponentTypes Enumeration
 

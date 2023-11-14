@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityNavigationWalkComponent Class
 description: Contents of the @minecraft/server.EntityNavigationWalkComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityNavigationWalkComponent Class
 

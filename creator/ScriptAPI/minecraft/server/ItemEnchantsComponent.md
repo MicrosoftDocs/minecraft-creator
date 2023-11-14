@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemEnchantsComponent Class
 description: Contents of the @minecraft/server.ItemEnchantsComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemEnchantsComponent Class
 

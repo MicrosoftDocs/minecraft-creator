@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: . Type Alias
 description: Contents of the .BlockComponentTypeMap type alias.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockComponentTypeMap Type Alias
 

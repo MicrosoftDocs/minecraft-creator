@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.WatchdogTerminateBeforeEvent Class
 description: Contents of the @minecraft/server.WatchdogTerminateBeforeEvent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # WatchdogTerminateBeforeEvent Class
 

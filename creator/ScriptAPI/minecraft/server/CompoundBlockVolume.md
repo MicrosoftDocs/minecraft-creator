@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.CompoundBlockVolume Class
 description: Contents of the @minecraft/server.CompoundBlockVolume class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CompoundBlockVolume Class
 

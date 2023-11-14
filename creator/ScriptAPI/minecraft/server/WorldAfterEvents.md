@@ -12,6 +12,7 @@ Contains a set of events that are available across the scope of the World.
 
 ## Properties
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **blockExplode**
 `read-only blockExplode: BlockExplodeAfterEventSignal;`
 
@@ -21,6 +22,7 @@ Type: [*BlockExplodeAfterEventSignal*](BlockExplodeAfterEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **buttonPush**
 `read-only buttonPush: ButtonPushAfterEventSignal;`
@@ -29,6 +31,7 @@ This event fires when a button is pushed.
 
 Type: [*ButtonPushAfterEventSignal*](ButtonPushAfterEventSignal.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **chatSend**
 `read-only chatSend: ChatSendAfterEventSignal;`
 
@@ -38,7 +41,9 @@ Type: [*ChatSendAfterEventSignal*](ChatSendAfterEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **dataDrivenEntityTriggerEvent**
 `read-only dataDrivenEntityTriggerEvent: DataDrivenEntityTriggerAfterEventSignal;`
 
@@ -48,7 +53,9 @@ Type: [*DataDrivenEntityTriggerAfterEventSignal*](DataDrivenEntityTriggerAfterEv
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **effectAdd**
 `read-only effectAdd: EffectAddAfterEventSignal;`
 
@@ -58,6 +65,7 @@ Type: [*EffectAddAfterEventSignal*](EffectAddAfterEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **entityDie**
 `read-only entityDie: EntityDieAfterEventSignal;`
@@ -115,6 +123,7 @@ This event fires when an entity is spawned.
 
 Type: [*EntitySpawnAfterEventSignal*](EntitySpawnAfterEventSignal.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **explosion**
 `read-only explosion: ExplosionAfterEventSignal;`
 
@@ -124,6 +133,7 @@ Type: [*ExplosionAfterEventSignal*](ExplosionAfterEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **itemCompleteUse**
 `read-only itemCompleteUse: ItemCompleteUseAfterEventSignal;`
@@ -132,6 +142,7 @@ This event fires when a chargeable item completes charging.
 
 Type: [*ItemCompleteUseAfterEventSignal*](ItemCompleteUseAfterEventSignal.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **itemDefinitionEvent**
 `read-only itemDefinitionEvent: ItemDefinitionAfterEventSignal;`
 
@@ -141,6 +152,7 @@ Type: [*ItemDefinitionAfterEventSignal*](ItemDefinitionAfterEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **itemReleaseUse**
 `read-only itemReleaseUse: ItemReleaseUseAfterEventSignal;`
@@ -198,6 +210,7 @@ A lever has been pulled.
 
 Type: [*LeverActionAfterEventSignal*](LeverActionAfterEventSignal.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **messageReceive**
 `read-only messageReceive: ServerMessageAfterEventSignal;`
 
@@ -207,7 +220,9 @@ Type: [*ServerMessageAfterEventSignal*](ServerMessageAfterEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **pistonActivate**
 `read-only pistonActivate: PistonActivateAfterEventSignal;`
 
@@ -217,6 +232,7 @@ Type: [*PistonActivateAfterEventSignal*](PistonActivateAfterEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **playerBreakBlock**
 `read-only playerBreakBlock: PlayerBreakBlockAfterEventSignal;`
@@ -232,6 +248,7 @@ Fires when a player moved to a different dimension.
 
 Type: [*PlayerDimensionChangeAfterEventSignal*](PlayerDimensionChangeAfterEventSignal.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **playerInteractWithBlock**
 `read-only playerInteractWithBlock: PlayerInteractWithBlockAfterEventSignal;`
 
@@ -241,7 +258,9 @@ Type: [*PlayerInteractWithBlockAfterEventSignal*](PlayerInteractWithBlockAfterEv
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **playerInteractWithEntity**
 `read-only playerInteractWithEntity: PlayerInteractWithEntityAfterEventSignal;`
 
@@ -251,6 +270,7 @@ Type: [*PlayerInteractWithEntityAfterEventSignal*](PlayerInteractWithEntityAfter
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **playerJoin**
 `read-only playerJoin: PlayerJoinAfterEventSignal;`
@@ -322,6 +342,7 @@ A trip wire was tripped.
 
 Type: [*TripWireTripAfterEventSignal*](TripWireTripAfterEventSignal.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **weatherChange**
 `read-only weatherChange: WeatherChangeAfterEventSignal;`
 
@@ -331,7 +352,9 @@ Type: [*WeatherChangeAfterEventSignal*](WeatherChangeAfterEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **worldInitialize**
 `read-only worldInitialize: WorldInitializeAfterEventSignal;`
 
@@ -341,3 +364,4 @@ Type: [*WorldInitializeAfterEventSignal*](WorldInitializeAfterEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end

@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockExplodeAfterEvent Class
 description: Contents of the @minecraft/server.BlockExplodeAfterEvent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockExplodeAfterEvent Class
 

@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.FilterGroup Class
 description: Contents of the @minecraft/server.FilterGroup class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # FilterGroup Class
 

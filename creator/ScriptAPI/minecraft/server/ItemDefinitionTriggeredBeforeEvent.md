@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemDefinitionTriggeredBeforeEvent Class
 description: Contents of the @minecraft/server.ItemDefinitionTriggeredBeforeEvent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemDefinitionTriggeredBeforeEvent Class
 

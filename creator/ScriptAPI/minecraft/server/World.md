@@ -58,6 +58,7 @@ Type: [*Scoreboard*](Scoreboard.md)
 - [setTimeOfDay](#settimeofday)
 - [stopMusic](#stopmusic)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **broadcastClientMessage**
 `
 broadcastClientMessage(id: string, value: string): void
@@ -78,6 +79,7 @@ A method that is internal-only, used for broadcasting specific messages between 
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
+::: moniker-end
 
 ### **clearDynamicProperties**
 `

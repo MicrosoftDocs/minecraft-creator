@@ -389,6 +389,7 @@ Holds the number of MoonPhases
 
 Type: *number*
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **TicksPerDay**
 `static read-only TicksPerDay = 24000;`
 
@@ -396,6 +397,7 @@ Type: *number*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **TicksPerSecond**
 `static read-only TicksPerSecond = 20;`

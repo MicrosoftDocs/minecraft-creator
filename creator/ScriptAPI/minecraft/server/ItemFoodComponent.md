@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemFoodComponent Class
 description: Contents of the @minecraft/server.ItemFoodComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemFoodComponent Class
 

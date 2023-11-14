@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockStates Class
 description: Contents of the @minecraft/server.BlockStates class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockStates Class
 

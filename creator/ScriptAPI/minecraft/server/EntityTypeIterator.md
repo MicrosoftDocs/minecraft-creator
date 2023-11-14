@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityTypeIterator Class
 description: Contents of the @minecraft/server.EntityTypeIterator class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityTypeIterator Class
 

@@ -166,6 +166,7 @@ If defined, entities that match this type are included.
 
 Type: *string*
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **volume**
 `volume?: BlockAreaSize;`
 
@@ -175,6 +176,7 @@ Type: [*BlockAreaSize*](BlockAreaSize.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 #### Examples
 ##### ***bounceSkeletons.ts***

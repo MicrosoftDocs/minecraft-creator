@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.DataDrivenEntityTriggerAfterEvent Class
 description: Contents of the @minecraft/server.DataDrivenEntityTriggerAfterEvent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # DataDrivenEntityTriggerAfterEvent Class
 
