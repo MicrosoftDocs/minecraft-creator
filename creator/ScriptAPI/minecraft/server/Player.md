@@ -98,6 +98,7 @@ Type: [*ScreenDisplay*](ScreenDisplay.md)
 > [!WARNING]
 > This property can throw errors when used.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **selectedSlot**
 `selectedSlot: number;`
 
@@ -110,6 +111,7 @@ Type: *number*
   
 > [!IMPORTANT]
 > This property can't be edited in read-only mode.
+::: moniker-end
 
 ### **totalXpNeededForNextLevel**
 `read-only totalXpNeededForNextLevel: number;`
@@ -189,6 +191,7 @@ Adds/removes level to/from the Player and returns the current level of the Playe
 > [!WARNING]
 > This function can throw errors.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getItemCooldown**
 `
 getItemCooldown(itemCategory: string): number
@@ -208,6 +211,7 @@ Gets the current item cooldown time for a particular cooldown category.
 
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end
 
 ### **getSpawnPoint**
 `
@@ -233,6 +237,7 @@ getTotalXp(): number
 > [!WARNING]
 > This function can throw errors.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **isOp**
 `
 isOp(): boolean
@@ -247,7 +252,9 @@ Returns true if this player has operator-level permissions.
 
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **playMusic**
 `
 playMusic(trackId: string, musicOptions?: MusicOptions): void
@@ -271,6 +278,7 @@ Plays a music track that only this particular player can hear.
 
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end
 
 ### **playSound**
 `
@@ -317,6 +325,7 @@ Plays a sound that only this particular player can hear.
   players[0].playSound("bucket.fill_water", playerSoundOptions);
 ```
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **postClientMessage**
 `
 postClientMessage(id: string, value: string): void
@@ -336,7 +345,9 @@ This is an internal-facing method for posting a system message to downstream cli
 
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **queueMusic**
 `
 queueMusic(trackId: string, musicOptions?: MusicOptions): void
@@ -366,6 +377,7 @@ Queues an additional music track that only this particular player can hear. If a
 
 > [!WARNING]
 > An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,
+::: moniker-end
 
 ### **resetLevel**
 `
@@ -435,6 +447,7 @@ const rawMessage = { translate: "accessibility.list.or.two", with: ["First", "Se
 player.sendMessage(rawMessage);
 ```
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **setOp**
 `
 setOp(isOp: boolean): void
@@ -453,6 +466,7 @@ Will change the specified players permissions, and whether they are operator or 
 
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end
 
 ### **setSpawnPoint**
 `
@@ -472,6 +486,7 @@ Sets the current starting spawn point for this particular player.
 >
 > Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **startItemCooldown**
 `
 startItemCooldown(itemCategory: string, tickDuration: number): void
@@ -495,7 +510,9 @@ Sets the item cooldown time for a particular cooldown category.
 
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **stopMusic**
 `
 stopMusic(): void
@@ -511,3 +528,4 @@ Stops any music tracks from playing for this particular player.
 
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end

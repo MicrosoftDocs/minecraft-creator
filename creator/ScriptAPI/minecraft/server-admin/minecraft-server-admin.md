@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server-admin Module
 description: Contents of the @minecraft/server-admin module
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # `@minecraft/server-admin` Module
 

@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityAddRiderComponent Class
 description: Contents of the @minecraft/server.EntityAddRiderComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityAddRiderComponent Class
 

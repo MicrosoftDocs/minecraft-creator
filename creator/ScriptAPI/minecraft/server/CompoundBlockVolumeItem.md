@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.CompoundBlockVolumeItem Interface
 description: Contents of the @minecraft/server.CompoundBlockVolumeItem class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CompoundBlockVolumeItem Interface
 

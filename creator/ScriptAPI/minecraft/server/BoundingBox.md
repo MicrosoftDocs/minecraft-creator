@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BoundingBox Interface
 description: Contents of the @minecraft/server.BoundingBox class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BoundingBox Interface
 

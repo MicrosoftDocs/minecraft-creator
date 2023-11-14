@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.DimensionType Class
 description: Contents of the @minecraft/server.DimensionType class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # DimensionType Class
 

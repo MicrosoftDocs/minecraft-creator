@@ -345,6 +345,7 @@ const itemStack = new ItemStack("minecraft:diamond_sword");
 itemStack.setLore(["Line 1", "Line 2", "Line 3"]);
 ```
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **triggerEvent**
 `
 triggerEvent(eventName: string): void
@@ -362,6 +363,7 @@ Triggers an item type event. For custom items, a number of events are defined in
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
+::: moniker-end
 
 #### Examples
 ##### ***diamondAwesomeSword.ts***

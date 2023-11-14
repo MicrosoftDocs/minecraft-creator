@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemCooldownComponent Class
 description: Contents of the @minecraft/server.ItemCooldownComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemCooldownComponent Class
 

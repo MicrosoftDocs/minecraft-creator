@@ -63,6 +63,7 @@ Base class for downstream entity components.
 
 ## Properties
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **entity**
 `read-only entity?: Entity;`
 
@@ -72,3 +73,4 @@ Type: [*Entity*](Entity.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end

@@ -46,6 +46,7 @@ Type: *string*
 - [spawnItem](#spawnitem)
 - [spawnParticle](#spawnparticle)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **createExplosion**
 `
 createExplosion(location: Vector3, radius: number, explosionOptions?: ExplosionOptions): void
@@ -110,7 +111,9 @@ Creates an explosion at the specified location.
   log("Creating an explosion of radius 15 that does not break blocks.");
   overworld.createExplosion(explodeNoBlocksLoc, 15, { breaksBlocks: false });
 ```
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **fillBlocks**
 `
 fillBlocks(begin: Vector3, end: Vector3, block: BlockPermutation | BlockType | string, options?: BlockFillOptions): number
@@ -142,6 +145,7 @@ Fills an area between begin and end with block of type block.
 
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end
 
 ### **getBlock**
 `
@@ -312,6 +316,7 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
 > [!WARNING]
 > This function can throw errors.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getWeather**
 `
 getWeather(): WeatherType
@@ -326,6 +331,7 @@ Returns the current weather.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
+::: moniker-end
 
 ### **runCommand**
 `

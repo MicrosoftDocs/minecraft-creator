@@ -25,6 +25,7 @@ Type: [*Dimension*](Dimension.md)
 > [!WARNING]
 > This property can throw errors when used.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **fallDistance**
 `read-only fallDistance: number;`
 
@@ -37,6 +38,7 @@ Type: *number*
     
 > [!WARNING]
 > This property can throw errors when used.
+::: moniker-end
 
 ### **id**
 `read-only id: string;`
@@ -125,6 +127,7 @@ Type: *boolean*
 > [!WARNING]
 > This property can throw errors when used.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **lifetimeState**
 `read-only lifetimeState: EntityLifetimeState;`
 
@@ -134,6 +137,7 @@ Type: [*EntityLifetimeState*](EntityLifetimeState.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **location**
 `read-only location: Vector3;`
@@ -164,6 +168,7 @@ Will remain valid when the entity is killed.
 
 Type: [*ScoreboardIdentity*](ScoreboardIdentity.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **target**
 `read-only target?: Entity;`
 
@@ -176,6 +181,7 @@ Type: [*Entity*](Entity.md)
     
 > [!WARNING]
 > This property can throw errors when used.
+::: moniker-end
 
 ### **typeId**
 `read-only typeId: string;`
@@ -477,6 +483,7 @@ Sets the current velocity of the Entity to zero. Note that this method may not h
   zombie.applyImpulse({ x: 0, y: 0.5, z: 0 });
 ```
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **extinguishFire**
 `
 extinguishFire(useEffects?: boolean): boolean
@@ -528,6 +535,7 @@ Extinguishes the fire if the entity is on fire. Note that you can call getCompon
     );
   }, 20);
 ```
+::: moniker-end
 
 ### **getBlockFromViewDirection**
 `
@@ -834,6 +842,7 @@ Matches the entity against the passed in options. Uses the location of the entit
 > [!WARNING]
 > Returns true if this entity matches the specified query criteria.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **playAnimation**
 `
 playAnimation(animationName: string, options?: PlayAnimationOptions): void
@@ -857,6 +866,7 @@ Cause the entity to play the given animation.
 
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end
 
 ### **remove**
 `
@@ -990,6 +1000,7 @@ Sets a specified property to a value.
 > [!WARNING]
 > This function can throw errors.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **setOnFire**
 `
 setOnFire(seconds: number, useEffects?: boolean): boolean
@@ -1044,6 +1055,7 @@ Sets an entity on fire (if it is not in water or rain). Note that you can call g
     );
   }, 20);
 ```
+::: moniker-end
 
 ### **setProperty**
 `

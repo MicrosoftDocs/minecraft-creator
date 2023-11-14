@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityNavigationClimbComponent Class
 description: Contents of the @minecraft/server.EntityNavigationClimbComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityNavigationClimbComponent Class
 

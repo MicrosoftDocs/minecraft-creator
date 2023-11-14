@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .SignSide Enumeration
 description: Contents of the .SignSide enumeration.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # SignSide Enumeration
 

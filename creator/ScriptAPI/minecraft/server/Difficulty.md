@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .Difficulty Enumeration
 description: Contents of the .Difficulty enumeration.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # Difficulty Enumeration
 

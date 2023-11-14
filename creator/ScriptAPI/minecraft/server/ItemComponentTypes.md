@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .ItemComponentTypes Enumeration
 description: Contents of the .ItemComponentTypes enumeration.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemComponentTypes Enumeration
 
