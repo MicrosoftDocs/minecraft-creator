@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityMovementComponent Class
 description: Contents of the @minecraft/server.EntityMovementComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityMovementComponent Class
 

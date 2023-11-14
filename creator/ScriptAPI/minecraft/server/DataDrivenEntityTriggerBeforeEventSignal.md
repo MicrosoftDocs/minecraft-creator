@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.DataDrivenEntityTriggerBeforeEventSignal Class
 description: Contents of the @minecraft/server.DataDrivenEntityTriggerBeforeEventSignal class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # DataDrivenEntityTriggerBeforeEventSignal Class
 

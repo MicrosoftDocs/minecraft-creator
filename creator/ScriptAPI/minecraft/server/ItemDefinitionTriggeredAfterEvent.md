@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemDefinitionTriggeredAfterEvent Class
 description: Contents of the @minecraft/server.ItemDefinitionTriggeredAfterEvent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemDefinitionTriggeredAfterEvent Class
 

@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ExplosionAfterEventSignal Class
 description: Contents of the @minecraft/server.ExplosionAfterEventSignal class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ExplosionAfterEventSignal Class
 

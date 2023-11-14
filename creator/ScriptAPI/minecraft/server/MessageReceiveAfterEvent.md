@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.MessageReceiveAfterEvent Class
 description: Contents of the @minecraft/server.MessageReceiveAfterEvent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # MessageReceiveAfterEvent Class
 

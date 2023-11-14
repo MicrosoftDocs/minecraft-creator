@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockLavaContainerComponent Class
 description: Contents of the @minecraft/server.BlockLavaContainerComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockLavaContainerComponent Class
 

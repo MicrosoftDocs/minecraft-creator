@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityMovementSwayComponent Class
 description: Contents of the @minecraft/server.EntityMovementSwayComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityMovementSwayComponent Class
 

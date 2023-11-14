@@ -12,6 +12,7 @@ Contains the combination of type [*@minecraft/server.BlockType*](../../minecraft
 
 ## Properties
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **type**
 `read-only type: BlockType;`
 
@@ -21,6 +22,7 @@ Type: [*BlockType*](BlockType.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ## Methods
 - [clone](#clone)
@@ -33,6 +35,7 @@ Type: [*BlockType*](BlockType.md)
 - [withState](#withstate)
 - [resolve](#resolve)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **clone**
 `
 clone(): BlockPermutation
@@ -44,7 +47,9 @@ Creates a copy of this permutation.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getAllStates**
 `
 getAllStates(): Record<string, boolean | number | string>
@@ -56,7 +61,9 @@ Returns all available block states associated with this block.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getItemStack**
 `
 getItemStack(amount?: number): ItemStack | undefined
@@ -73,7 +80,9 @@ Retrieves a prototype item stack based on this block permutation that can be use
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getState**
 `
 getState(stateName: string): boolean | number | string | undefined
@@ -90,7 +99,9 @@ Gets a state for the permutation.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getTags**
 `
 getTags(): string[]
@@ -102,7 +113,9 @@ Creates a copy of the permutation.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **hasTag**
 `
 hasTag(tag: string): boolean
@@ -131,6 +144,7 @@ console.log(`Block is dirt: ${blockPerm.hasTag("dirt")}`);
 console.log(`Block is wood: ${blockPerm.hasTag("wood")}`);
 console.log(`Block is stone: ${blockPerm.hasTag("stone")}`);
 ```
+::: moniker-end
 
 ### **matches**
 `
@@ -147,6 +161,7 @@ Returns a boolean whether a specified permutation matches this permutation. If s
 
 #### **Returns** *boolean*
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **withState**
 `
 withState(name: string, value: boolean | number | string): BlockPermutation
@@ -169,6 +184,7 @@ Returns a derived BlockPermutation with a specific property set.
 
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end
 
 ### **resolve**
 `

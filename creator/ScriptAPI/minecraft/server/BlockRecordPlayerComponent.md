@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockRecordPlayerComponent Class
 description: Contents of the @minecraft/server.BlockRecordPlayerComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockRecordPlayerComponent Class
 

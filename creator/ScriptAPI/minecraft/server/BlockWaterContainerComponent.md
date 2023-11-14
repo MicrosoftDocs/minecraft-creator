@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockWaterContainerComponent Class
 description: Contents of the @minecraft/server.BlockWaterContainerComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockWaterContainerComponent Class
 

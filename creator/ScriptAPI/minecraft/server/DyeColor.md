@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .DyeColor Enumeration
 description: Contents of the .DyeColor enumeration.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # DyeColor Enumeration
 

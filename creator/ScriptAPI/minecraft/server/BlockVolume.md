@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockVolume Interface
 description: Contents of the @minecraft/server.BlockVolume class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockVolume Interface
 

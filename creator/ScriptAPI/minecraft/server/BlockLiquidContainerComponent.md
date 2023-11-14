@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockLiquidContainerComponent Class
 description: Contents of the @minecraft/server.BlockLiquidContainerComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockLiquidContainerComponent Class
 

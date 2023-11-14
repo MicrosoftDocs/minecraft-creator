@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.RawText Interface
 description: Contents of the @minecraft/server.RawText class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # RawText Interface
 

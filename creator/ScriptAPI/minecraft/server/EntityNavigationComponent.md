@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityNavigationComponent Class
 description: Contents of the @minecraft/server.EntityNavigationComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityNavigationComponent Class
 

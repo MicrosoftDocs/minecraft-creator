@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EffectAddBeforeEventSignal Class
 description: Contents of the @minecraft/server.EffectAddBeforeEventSignal class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EffectAddBeforeEventSignal Class
 

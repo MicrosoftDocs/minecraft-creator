@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityMovementGlideComponent Class
 description: Contents of the @minecraft/server.EntityMovementGlideComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityMovementGlideComponent Class
 

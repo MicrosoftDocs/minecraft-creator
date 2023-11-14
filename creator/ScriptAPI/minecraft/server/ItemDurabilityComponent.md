@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemDurabilityComponent Class
 description: Contents of the @minecraft/server.ItemDurabilityComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemDurabilityComponent Class
 

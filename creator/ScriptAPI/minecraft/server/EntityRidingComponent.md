@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityRidingComponent Class
 description: Contents of the @minecraft/server.EntityRidingComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityRidingComponent Class
 

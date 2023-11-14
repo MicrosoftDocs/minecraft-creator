@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server-editor Module
 description: Contents of the @minecraft/server-editor module
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # `@minecraft/server-editor` Module
 

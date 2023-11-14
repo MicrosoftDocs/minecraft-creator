@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BoundingBoxUtils Class
 description: Contents of the @minecraft/server.BoundingBoxUtils class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BoundingBoxUtils Class
 

@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server-gametest Module
 description: Contents of the @minecraft/server-gametest module
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # `@minecraft/server-gametest` Module
 

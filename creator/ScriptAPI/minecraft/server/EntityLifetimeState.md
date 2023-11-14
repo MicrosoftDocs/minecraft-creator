@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .EntityLifetimeState Enumeration
 description: Contents of the .EntityLifetimeState enumeration.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityLifetimeState Enumeration
 

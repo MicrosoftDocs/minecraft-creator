@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server-net Module
 description: Contents of the @minecraft/server-net module
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # `@minecraft/server-net` Module
 

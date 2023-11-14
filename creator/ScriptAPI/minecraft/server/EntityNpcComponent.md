@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityNpcComponent Class
 description: Contents of the @minecraft/server.EntityNpcComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityNpcComponent Class
 

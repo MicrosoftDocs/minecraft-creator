@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityBreathableComponent Class
 description: Contents of the @minecraft/server.EntityBreathableComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityBreathableComponent Class
 

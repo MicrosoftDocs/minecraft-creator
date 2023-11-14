@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .WatchdogTerminateReason Enumeration
 description: Contents of the .WatchdogTerminateReason enumeration.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # WatchdogTerminateReason Enumeration
 
