@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.WorldBeforeEvents Class
 description: Contents of the @minecraft/server.WorldBeforeEvents class.
-ms.service: minecraft-bedrock-edition
 ---
 # WorldBeforeEvents Class
 
@@ -12,6 +12,7 @@ A set of events that fire before an actual action occurs. In most cases, you can
 
 ## Properties
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **chatSend**
 `read-only chatSend: ChatSendBeforeEventSignal;`
 
@@ -21,7 +22,9 @@ Type: [*ChatSendBeforeEventSignal*](ChatSendBeforeEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **dataDrivenEntityTriggerEvent**
 `read-only dataDrivenEntityTriggerEvent: DataDrivenEntityTriggerBeforeEventSignal;`
 
@@ -31,6 +34,19 @@ Type: [*DataDrivenEntityTriggerBeforeEventSignal*](DataDrivenEntityTriggerBefore
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **effectAdd**
+`read-only effectAdd: EffectAddBeforeEventSignal;`
+
+This event is triggered after an event has been added to an entity.
+
+Type: [*EffectAddBeforeEventSignal*](EffectAddBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **entityRemove**
 `read-only entityRemove: EntityRemoveBeforeEventSignal;`
@@ -39,9 +55,7 @@ Fires before an entity is removed from the world (for example, unloaded or remov
 
 Type: [*EntityRemoveBeforeEventSignal*](EntityRemoveBeforeEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
+::: moniker range="=minecraft-bedrock-experimental"
 ### **explosion**
 `read-only explosion: ExplosionBeforeEventSignal;`
 
@@ -51,7 +65,9 @@ Type: [*ExplosionBeforeEventSignal*](ExplosionBeforeEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **itemDefinitionEvent**
 `read-only itemDefinitionEvent: ItemDefinitionBeforeEventSignal;`
 
@@ -61,6 +77,7 @@ Type: [*ItemDefinitionBeforeEventSignal*](ItemDefinitionBeforeEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **itemUse**
 `read-only itemUse: ItemUseBeforeEventSignal;`
@@ -76,6 +93,7 @@ This event fires when an item is used on a block by a player.
 
 Type: [*ItemUseOnBeforeEventSignal*](ItemUseOnBeforeEventSignal.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **pistonActivate**
 `read-only pistonActivate: PistonActivateBeforeEventSignal;`
 
@@ -85,6 +103,7 @@ Type: [*PistonActivateBeforeEventSignal*](PistonActivateBeforeEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **playerBreakBlock**
 `read-only playerBreakBlock: PlayerBreakBlockBeforeEventSignal;`
@@ -93,32 +112,38 @@ This event fires before a block is broken by a player.
 
 Type: [*PlayerBreakBlockBeforeEventSignal*](PlayerBreakBlockBeforeEventSignal.md)
 
-### **playerDimensionChange**
-`read-only playerDimensionChange: PlayerDimensionChangeBeforeEventSignal;`
-
-Fires before a player is about to change dimensions.
-
-Type: [*PlayerDimensionChangeBeforeEventSignal*](PlayerDimensionChangeBeforeEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
+::: moniker range="=minecraft-bedrock-experimental"
 ### **playerInteractWithBlock**
 `read-only playerInteractWithBlock: PlayerInteractWithBlockBeforeEventSignal;`
+
+Fires before a player interacts with a block.
 
 Type: [*PlayerInteractWithBlockBeforeEventSignal*](PlayerInteractWithBlockBeforeEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **playerInteractWithEntity**
 `read-only playerInteractWithEntity: PlayerInteractWithEntityBeforeEventSignal;`
+
+Fires before a player interacts with an entity.
 
 Type: [*PlayerInteractWithEntityBeforeEventSignal*](PlayerInteractWithEntityBeforeEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
+### **playerLeave**
+`read-only playerLeave: PlayerLeaveBeforeEventSignal;`
+
+Fires when a player leaves the game.
+
+Type: [*PlayerLeaveBeforeEventSignal*](PlayerLeaveBeforeEventSignal.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
 ### **playerPlaceBlock**
 `read-only playerPlaceBlock: PlayerPlaceBlockBeforeEventSignal;`
 
@@ -128,3 +153,4 @@ Type: [*PlayerPlaceBlockBeforeEventSignal*](PlayerPlaceBlockBeforeEventSignal.md
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end

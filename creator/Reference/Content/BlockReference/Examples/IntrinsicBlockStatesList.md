@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Block Documentation - Intrinsic Block States List
-ms.prod: gaming
 description: "A reference document listing all currently available intrinsic block states"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - Intrinsic Block States

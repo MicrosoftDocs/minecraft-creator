@@ -2,14 +2,13 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.PlayerInteractWithEntityBeforeEventSignal Class
 description: Contents of the @minecraft/server.PlayerInteractWithEntityBeforeEventSignal class.
 ---
 # PlayerInteractWithEntityBeforeEventSignal Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
+Manages callbacks that are connected to before a player interacts with an entity.
 
 ## Methods
 - [subscribe](#subscribe)
@@ -19,6 +18,8 @@ description: Contents of the @minecraft/server.PlayerInteractWithEntityBeforeEve
 `
 subscribe(callback: (arg: PlayerInteractWithEntityBeforeEvent) => void): (arg: PlayerInteractWithEntityBeforeEvent) => void
 `
+
+Adds a callback that will be called before a player interacts with an entity.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerInteractWithEntityBeforeEvent*](PlayerInteractWithEntityBeforeEvent.md)) => *void*
@@ -32,6 +33,8 @@ subscribe(callback: (arg: PlayerInteractWithEntityBeforeEvent) => void): (arg: P
 `
 unsubscribe(callback: (arg: PlayerInteractWithEntityBeforeEvent) => void): void
 `
+
+Removes a callback from being called before a player interacts with an entity.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerInteractWithEntityBeforeEvent*](PlayerInteractWithEntityBeforeEvent.md)) => *void*

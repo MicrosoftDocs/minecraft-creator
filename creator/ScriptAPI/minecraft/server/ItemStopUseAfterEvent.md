@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemStopUseAfterEvent Class
 description: Contents of the @minecraft/server.ItemStopUseAfterEvent class.
-ms.service: minecraft-bedrock-edition
 ---
 # ItemStopUseAfterEvent Class
 
@@ -13,9 +13,9 @@ Contains information related to a chargeable item has finished an items use cycl
 ## Properties
 
 ### **itemStack**
-`read-only itemStack: ItemStack;`
+`read-only itemStack?: ItemStack;`
 
-The impacted item stack that is stopping being charged.
+The impacted item stack that is stopping being charged. ItemStopUseAfterEvent can be called when teleporting to a different dimension and this can be undefined.
 
 Type: [*ItemStack*](ItemStack.md)
 

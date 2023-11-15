@@ -6,8 +6,18 @@
           "redirect_document_id": false
       },
       {
+        "source_path": "Documents/addonpackinstallation.md",
+        "redirect_url": "/minecraft/creator/documents/gettingstarted",
+        "redirect_document_id": false
+    },
+      {
         "source_path": "Reference/Content/BlockReference/Examples/BlockComponentsList.md",
         "redirect_url": "/minecraft/creator/reference/content/blockreference/examples/blockcomponents/blockcomponentslist",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Reference/Content/BlockReference/Examples/BlockStatesList.md",
+        "redirect_url": "/minecraft/creator/reference/content/blockreference/examples/intrinsicblockstateslist",
         "redirect_document_id": false
       },
       {
@@ -44,6 +54,41 @@
         "source_path": "Reference/content/itemreference/examples/itemcomponents/menu_category_component.md",
         "redirect_url": "/reference/content/itemreference/examples/itemcomponentlist.md",
         "redirect_document_id": false
-    }   
+    },  
+    {
+        "source_path": "Reference/Content/EntityReference/Examples/EntityGoals/minecraftBehavior_feeling_happy.md",
+        "redirect_url": "/reference/content/entityreference/examples/aigoallist.md",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "Reference/Content/EntityReference/Examples/EntityGoals/minecraftBehavior_rising.md",
+        "redirect_url": "/reference/content/entityreference/examples/aigoallist.md",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "Reference/Content/EntityReference/Examples/EntityGoals/minecraftBehavior_scenting.md",
+        "redirect_url": "/reference/content/entityreference/examples/aigoallist.md",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "Reference/Content/ItemReference/Examples/ItemComponents/minecraft_on_use.md",
+        "redirect_url": "/reference/content/itemreference/examples/itemcomponentlist.md",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "Reference/Content/ItemReference/Examples/ItemComponents/minecraft_on_use_on.md",
+        "redirect_url": "/reference/content/itemreference/examples/itemcomponentlist.md",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "Reference/Content/ItemReference/Examples/ItemComponents/minecraft_render_offsets.md",
+        "redirect_url": "/reference/content/itemreference/examples/itemcomponentlist.md",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "Reference/Content/ItemReference/Examples/ItemComponents/minecraft_weapon.md",
+        "redirect_url": "/reference/content/itemreference/examples/itemcomponentlist.md",
+        "redirect_document_id": false
+    }
     ]
 }

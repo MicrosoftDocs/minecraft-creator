@@ -2,9 +2,10 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemDurabilityComponent Class
 description: Contents of the @minecraft/server.ItemDurabilityComponent class.
-ms.service: minecraft-bedrock-edition
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemDurabilityComponent Class
 
@@ -64,12 +65,12 @@ Returns the maximum chance that this item would be damaged using the damageRange
 
 ### **getDamageRange**
 `
-getDamageRange(): NumberRange
+getDamageRange(): minecraftcommon.NumberRange
 `
 
 A range of numbers that describes the chance of the item losing durability.
 
-#### **Returns** [*NumberRange*](NumberRange.md)
+#### **Returns** [*@minecraft/common.NumberRange*](../../minecraft/common/NumberRange.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

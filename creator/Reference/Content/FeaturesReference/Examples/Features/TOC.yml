@@ -2,18 +2,18 @@
   href: ../FeatureList.md
 - name: aggregate_feature
   href: minecraftAggregate_feature.md
-- name: sequence_feature
-  href: minecraftSequence_feature.md
 - name: cave_carver_feature
   href: minecraftCave_carver_feature.md
-- name: growing_plant_feature
-  href: minecraftGrowing_plant_feature.md
-- name: nether_cave_carver_feature
-  href: minecraftNether_cave_carver_feature.md
-- name: multiface_feature
-  href: minecraftMultiface_feature.md
+- name: fossil_feature
+  href: minecraftFossil_feature.md
 - name: geode_feature
   href: minecraftGeode_feature.md
+- name: growing_plant_feature
+  href: minecraftGrowing_plant_feature.md
+- name: multiface_feature
+  href: minecraftMultiface_feature.md
+- name: nether_cave_carver_feature
+  href: minecraftNether_cave_carver_feature.md
 - name: ore_feature
   href: minecraftOre_feature.md
 - name: partially_exposed_blob
@@ -22,6 +22,8 @@
   href: minecraftScatter_feature.md
 - name: search_feature
   href: minecraftSearch_feature.md
+- name: sequence_feature
+  href: minecraftSequence_feature.md
 - name: single_block_feature
   href: minecraftSingle_block_feature.md
 - name: snap_to_surface_feature

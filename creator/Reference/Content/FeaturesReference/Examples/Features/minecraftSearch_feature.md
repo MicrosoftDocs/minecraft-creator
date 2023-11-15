@@ -16,9 +16,39 @@ The number of valid positions is equal to the value specified by `required_succe
 **Fails if**
 The number of valid positions is less than the value specified by `required_successes`.
 
-## Example
+### Schema
 
-### Attaching apples to a tree canopy
+```json
+object "minecraft:search_feature" : opt
+{
+  object "description"
+  {
+    string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+  }
+    feature_reference "places_feature" // Named reference of feature to be placed
+    object "search_volume" // Axis-aligned bounding box that will be searched for valid placement positions. Expressed as offsets from the input position.
+  {
+    array "min"[3] // Minimum extent of the bounding volume expressed as [ x, y, z ]
+    {
+      int "[0..0]" // x_min
+      int "[1..1]" // y_min
+      int "[2..2]" // z_min
+    }
+    array "max"[3] // Maximum extent of the bounding volume expressed as [ x, y, z ]
+    {
+      int "[0..0]" // x_max
+      int "[1..1]" // y_max
+      int "[2..2]" // z_max
+    }
+  }
+  enumerated_value "search_axis"<"-x", "+x", "-y", "+y", "-z", "+z"> // Axis that the search will sweep along through the 'search_volume'
+  int "required_successes"<1-*> : opt // Number of valid positions the search must find in order to place the referenced feature
+}
+```
+
+### Example
+
+Attaching apples to a tree canopy
 
 ```json
 {

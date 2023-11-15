@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-gametest.SimulatedPlayer Class
 description: Contents of the @minecraft/server-gametest.SimulatedPlayer class.
-ms.service: minecraft-bedrock-edition
 ---
 # SimulatedPlayer Class
 
@@ -667,10 +667,12 @@ Causes the simulated player to stop swimming.
 
 ### **stopUsingItem**
 `
-stopUsingItem(): void
+stopUsingItem(): minecraftserver.ItemStack | undefined
 `
 
 Stops using the currently active item.
+
+#### **Returns** [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md) | *undefined* - Returns the item that was in use. Undefined if no item was in use.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

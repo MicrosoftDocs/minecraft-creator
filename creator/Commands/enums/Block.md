@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: Block Enum
 description: Description and values of the Block enum
-ms.service: minecraft-bedrock-edition
 ---
 # `Block` Enum
 Minecraft block
@@ -40,10 +40,14 @@ Warped Door
 Piston Arm Collision
 - `piston_arm_collision`
 Piston Arm Collision
+- `minecraft:waxed_oxidized_chiseled_copper`
+- `waxed_oxidized_chiseled_copper`
 - `minecraft:coral_fan_dead`
 Dead Coral Fan
 - `coral_fan_dead`
 Dead Coral Fan
+- `minecraft:granite`
+- `granite`
 - `minecraft:blue_stained_glass_pane`
 - `blue_stained_glass_pane`
 - `minecraft:fence_gate`
@@ -84,10 +88,14 @@ Jungle Button
 Spruce Stairs
 - `spruce_stairs`
 Spruce Stairs
+- `minecraft:diorite`
+- `diorite`
 - `minecraft:gray_candle_cake`
 Gray Candle Cake
 - `gray_candle_cake`
 Gray Candle Cake
+- `minecraft:polished_tuff_slab`
+- `polished_tuff_slab`
 - `minecraft:cherry_pressure_plate`
 - `cherry_pressure_plate`
 - `minecraft:cherry_hanging_sign`
@@ -196,6 +204,10 @@ Deepslate
 - `pitcher_crop`
 - `minecraft:brown_wool`
 - `brown_wool`
+- `minecraft:waxed_exposed_chiseled_copper`
+- `waxed_exposed_chiseled_copper`
+- `minecraft:tuff_slab`
+- `tuff_slab`
 - `minecraft:warped_pressure_plate`
 Warped Pressure Plate
 - `warped_pressure_plate`
@@ -268,6 +280,8 @@ Yellow Flower
 Yellow Flower
 - `minecraft:lime_shulker_box`
 - `lime_shulker_box`
+- `minecraft:weathered_chiseled_copper`
+- `weathered_chiseled_copper`
 - `minecraft:small_amethyst_bud`
 Small Amethyst Bud
 - `small_amethyst_bud`
@@ -314,6 +328,8 @@ Raw Gold block
 Raw Gold block
 - `minecraft:white_shulker_box`
 - `white_shulker_box`
+- `minecraft:copper_grate`
+- `copper_grate`
 - `minecraft:black_wool`
 - `black_wool`
 - `minecraft:orange_candle`
@@ -346,6 +362,8 @@ Waxed Cut Copper Stairs
 Mob Spawner
 - `mob_spawner`
 Mob Spawner
+- `minecraft:polished_granite`
+- `polished_granite`
 - `minecraft:soul_fire`
 Soul Fire
 - `soul_fire`
@@ -370,6 +388,8 @@ Obsidian
 Deepslate Brick Wall
 - `deepslate_brick_wall`
 Deepslate Brick Wall
+- `minecraft:waxed_exposed_copper_grate`
+- `waxed_exposed_copper_grate`
 - `minecraft:oxidized_double_cut_copper_slab`
 Oxidized Double Cut Copper Slab
 - `oxidized_double_cut_copper_slab`
@@ -386,6 +406,8 @@ Polished Deepslate Double Slab
 Stone Button
 - `stone_button`
 Stone Button
+- `minecraft:waxed_copper_bulb`
+- `waxed_copper_bulb`
 - `minecraft:sponge`
 Sponge
 - `sponge`
@@ -422,6 +444,8 @@ Smoker
 Smoker
 - `minecraft:brown_stained_glass`
 - `brown_stained_glass`
+- `minecraft:andesite`
+- `andesite`
 - `minecraft:fire_coral`
 - `fire_coral`
 - `minecraft:stone`
@@ -430,6 +454,8 @@ Stone
 Stone
 - `minecraft:birch_log`
 - `birch_log`
+- `minecraft:tuff_brick_wall`
+- `tuff_brick_wall`
 - `minecraft:brain_coral`
 - `brain_coral`
 - `minecraft:orange_wool`
@@ -472,6 +498,8 @@ Waxed Oxidized Cut Copper Slab
 Cyan Candle Cake
 - `cyan_candle_cake`
 Cyan Candle Cake
+- `minecraft:polished_tuff_wall`
+- `polished_tuff_wall`
 - `minecraft:sapling`
 Sapling
 - `sapling`
@@ -542,6 +570,8 @@ Mangrove Planks
 Mangrove Planks
 - `minecraft:red_terracotta`
 - `red_terracotta`
+- `minecraft:oxidized_copper_bulb`
+- `oxidized_copper_bulb`
 - `minecraft:magenta_wool`
 - `magenta_wool`
 - `minecraft:magenta_glazed_terracotta`
@@ -608,6 +638,8 @@ Wood
 Ochre Froglight
 - `ochre_froglight`
 Ochre Froglight
+- `minecraft:tuff_wall`
+- `tuff_wall`
 - `minecraft:observer`
 Observer
 - `observer`
@@ -638,6 +670,8 @@ Brown Mushroom
 Brown Glazed Terracotta
 - `brown_glazed_terracotta`
 Brown Glazed Terracotta
+- `minecraft:waxed_copper_trapdoor`
+- `waxed_copper_trapdoor`
 - `minecraft:oxidized_copper`
 Oxidized Copper
 - `oxidized_copper`
@@ -646,6 +680,8 @@ Oxidized Copper
 Copper Ore
 - `copper_ore`
 Copper Ore
+- `minecraft:dark_oak_planks`
+- `dark_oak_planks`
 - `minecraft:birch_pressure_plate`
 Birch Pressure Plate
 - `birch_pressure_plate`
@@ -740,6 +776,8 @@ Quartz Block
 Stone Stairs
 - `stone_stairs`
 Stone Stairs
+- `minecraft:waxed_weathered_chiseled_copper`
+- `waxed_weathered_chiseled_copper`
 - `minecraft:gray_stained_glass`
 - `gray_stained_glass`
 - `minecraft:green_terracotta`
@@ -756,6 +794,10 @@ Warped Stairs
 Smithing Table
 - `smithing_table`
 Smithing Table
+- `minecraft:weathered_copper_grate`
+- `weathered_copper_grate`
+- `minecraft:tuff_brick_slab`
+- `tuff_brick_slab`
 - `minecraft:green_wool`
 - `green_wool`
 - `minecraft:green_carpet`
@@ -806,6 +848,8 @@ Loom
 End Stone
 - `end_stone`
 End Stone
+- `minecraft:polished_tuff_double_slab`
+- `polished_tuff_double_slab`
 - `minecraft:crimson_door`
 Crimson Door
 - `crimson_door`
@@ -904,6 +948,8 @@ Structure Void
 Structure Void
 - `minecraft:purple_concrete`
 - `purple_concrete`
+- `minecraft:waxed_exposed_copper_bulb`
+- `waxed_exposed_copper_bulb`
 - `minecraft:polished_blackstone_brick_slab`
 Polished Blackstone Brick Slab
 - `polished_blackstone_brick_slab`
@@ -1004,6 +1050,8 @@ Small Dripleaf Block
 Small Dripleaf Block
 - `minecraft:pink_stained_glass`
 - `pink_stained_glass`
+- `minecraft:waxed_weathered_copper_grate`
+- `waxed_weathered_copper_grate`
 - `minecraft:spruce_button`
 Spruce Button
 - `spruce_button`
@@ -1064,6 +1112,8 @@ Jungle Wall Sign
 Sculk Sensor
 - `sculk_sensor`
 Sculk Sensor
+- `minecraft:copper_bulb`
+- `copper_bulb`
 - `minecraft:diorite_stairs`
 Diorite Stairs
 - `diorite_stairs`
@@ -1084,6 +1134,8 @@ Acacia Door
 Crimson Button
 - `crimson_button`
 Crimson Button
+- `minecraft:acacia_planks`
+- `acacia_planks`
 - `minecraft:magenta_concrete_powder`
 - `magenta_concrete_powder`
 - `minecraft:iron_door`
@@ -1152,6 +1204,8 @@ Smooth Stone
 Smooth Stone
 - `minecraft:gray_terracotta`
 - `gray_terracotta`
+- `minecraft:oxidized_copper_trapdoor`
+- `oxidized_copper_trapdoor`
 - `minecraft:lime_concrete`
 - `lime_concrete`
 - `minecraft:black_candle_cake`
@@ -1262,6 +1316,8 @@ Frosted Ice
 Large Amethyst Bud
 - `large_amethyst_bud`
 Large Amethyst Bud
+- `minecraft:exposed_copper_door`
+- `exposed_copper_door`
 - `minecraft:suspicious_gravel`
 - `suspicious_gravel`
 - `minecraft:warped_trapdoor`
@@ -1276,6 +1332,8 @@ Flowing Water
 Brick Block
 - `brick_block`
 Brick Block
+- `minecraft:waxed_weathered_copper_trapdoor`
+- `waxed_weathered_copper_trapdoor`
 - `minecraft:quartz_stairs`
 Quartz Stairs
 - `quartz_stairs`
@@ -1314,6 +1372,8 @@ Waxed Weathered Cut Copper
 - `white_stained_glass`
 - `minecraft:purple_stained_glass_pane`
 - `purple_stained_glass_pane`
+- `minecraft:waxed_oxidized_copper_trapdoor`
+- `waxed_oxidized_copper_trapdoor`
 - `minecraft:wall_sign`
 Wall Sign
 - `wall_sign`
@@ -1370,6 +1430,8 @@ Acacia Pressure Plate
 Acacia Pressure Plate
 - `minecraft:bamboo_trapdoor`
 - `bamboo_trapdoor`
+- `minecraft:oxidized_chiseled_copper`
+- `oxidized_chiseled_copper`
 - `minecraft:mangrove_wall_sign`
 Mangrove Wall Sign
 - `mangrove_wall_sign`
@@ -1406,6 +1468,8 @@ White Candle
 Andesite Stairs
 - `andesite_stairs`
 Andesite Stairs
+- `minecraft:birch_planks`
+- `birch_planks`
 - `minecraft:golden_rail`
 Golden Rail
 - `golden_rail`
@@ -1434,6 +1498,10 @@ Cracked Deepslate Bricks
 Jungle Fence Gate
 - `jungle_fence_gate`
 Jungle Fence Gate
+- `minecraft:exposed_copper_grate`
+- `exposed_copper_grate`
+- `minecraft:waxed_copper_grate`
+- `waxed_copper_grate`
 - `minecraft:jungle_trapdoor`
 Jungle Trapdoor
 - `jungle_trapdoor`
@@ -1468,6 +1536,8 @@ Kelp
 Double Plant
 - `double_plant`
 Double Plant
+- `minecraft:waxed_exposed_copper_door`
+- `waxed_exposed_copper_door`
 - `minecraft:deepslate_bricks`
 Deepslate Bricks
 - `deepslate_bricks`
@@ -1548,6 +1618,8 @@ Wall Banner
 Twisting Vines
 - `twisting_vines`
 Twisting Vines
+- `minecraft:chiseled_copper`
+- `chiseled_copper`
 - `minecraft:dark_oak_door`
 Dark Oak Door
 - `dark_oak_door`
@@ -1604,6 +1676,8 @@ Sould Sand
 Soul Sand
 - `minecraft:spruce_hanging_sign`
 - `spruce_hanging_sign`
+- `minecraft:polished_diorite`
+- `polished_diorite`
 - `minecraft:reinforced_deepslate`
 Reinforced Deepslate
 - `reinforced_deepslate`
@@ -1622,8 +1696,12 @@ Black Glazed Terracotta
 Waxed Oxidized Cut Copper Stairs
 - `waxed_oxidized_cut_copper_stairs`
 Waxed Oxidized Cut Copper Stairs
+- `minecraft:waxed_weathered_copper_bulb`
+- `waxed_weathered_copper_bulb`
 - `minecraft:calibrated_sculk_sensor`
 - `calibrated_sculk_sensor`
+- `minecraft:copper_trapdoor`
+- `copper_trapdoor`
 - `minecraft:stripped_acacia_log`
 Stripped Acacia Log
 - `stripped_acacia_log`
@@ -1654,6 +1732,8 @@ Double Wooden Slab
 - `brown_concrete_powder`
 - `minecraft:mangrove_hanging_sign`
 - `mangrove_hanging_sign`
+- `minecraft:waxed_exposed_copper_trapdoor`
+- `waxed_exposed_copper_trapdoor`
 - `minecraft:brown_candle`
 Brown Candle
 - `brown_candle`
@@ -1672,6 +1752,8 @@ Crimson Stem
 Crimson Stem
 - `minecraft:green_concrete`
 - `green_concrete`
+- `minecraft:tuff_brick_double_slab`
+- `tuff_brick_double_slab`
 - `minecraft:crimson_slab`
 Crimson Slab
 - `crimson_slab`
@@ -1690,12 +1772,16 @@ Warped Wart Block
 Carrots
 - `carrots`
 Carrots
+- `minecraft:tuff_stairs`
+- `tuff_stairs`
 - `minecraft:yellow_carpet`
 - `yellow_carpet`
 - `minecraft:cyan_stained_glass`
 - `cyan_stained_glass`
 - `minecraft:black_stained_glass`
 - `black_stained_glass`
+- `minecraft:waxed_oxidized_copper_door`
+- `waxed_oxidized_copper_door`
 - `minecraft:dead_horn_coral`
 - `dead_horn_coral`
 - `minecraft:tripwire_hook`
@@ -1710,6 +1796,8 @@ Cave Vines Body with Berries
 Dark Oak Pressure Plate
 - `dark_oak_pressure_plate`
 Dark Oak Pressure Plate
+- `minecraft:copper_door`
+- `copper_door`
 - `minecraft:stripped_birch_log`
 Stripped Birch Log
 - `stripped_birch_log`
@@ -1768,10 +1856,6 @@ Fire
 Fire
 - `minecraft:torchflower`
 - `torchflower`
-- `minecraft:planks`
-Planks
-- `planks`
-Planks
 - `minecraft:end_portal_frame`
 End Portal Frame
 - `end_portal_frame`
@@ -1786,6 +1870,8 @@ Prismarine
 Magenta Candle Cake
 - `magenta_candle_cake`
 Magenta Candle Cake
+- `minecraft:exposed_copper_trapdoor`
+- `exposed_copper_trapdoor`
 - `minecraft:black_terracotta`
 - `black_terracotta`
 - `minecraft:leaves`
@@ -1858,8 +1944,12 @@ Polished Blackstone Pressure Plate
 Acacia Standing Sign
 - `acacia_standing_sign`
 Acacia Standing Sign
+- `minecraft:tuff_brick_stairs`
+- `tuff_brick_stairs`
 - `minecraft:blue_shulker_box`
 - `blue_shulker_box`
+- `minecraft:exposed_copper_bulb`
+- `exposed_copper_bulb`
 - `minecraft:dead_fire_coral`
 - `dead_fire_coral`
 - `minecraft:crimson_stairs`
@@ -1870,6 +1960,8 @@ Crimson Stairs
 Stripped Spruce Log
 - `stripped_spruce_log`
 Stripped Spruce Log
+- `minecraft:waxed_oxidized_copper_bulb`
+- `waxed_oxidized_copper_bulb`
 - `minecraft:pumpkin_stem`
 Pumpkin Stem
 - `pumpkin_stem`
@@ -1924,6 +2016,8 @@ Wooden Button
 Mangrove Door
 - `mangrove_door`
 Mangrove Door
+- `minecraft:weathered_copper_door`
+- `weathered_copper_door`
 - `minecraft:pearlescent_froglight`
 Pearlescent Froglight
 - `pearlescent_froglight`
@@ -1980,6 +2074,8 @@ Lever
 Brick Stairs
 - `brick_stairs`
 Brick Stairs
+- `minecraft:weathered_copper_trapdoor`
+- `weathered_copper_trapdoor`
 - `minecraft:moss_block`
 Moss Block
 - `moss_block`
@@ -2010,6 +2106,8 @@ Chain Command Block
 Red Sandstone
 - `red_sandstone`
 Red Sandstone
+- `minecraft:exposed_chiseled_copper`
+- `exposed_chiseled_copper`
 - `minecraft:spruce_fence_gate`
 Spruce Fence Gate
 - `spruce_fence_gate`
@@ -2026,6 +2124,8 @@ Red Nether Brick Stairs
 Green Glazed Terracotta
 - `green_glazed_terracotta`
 Green Glazed Terracotta
+- `minecraft:jungle_planks`
+- `jungle_planks`
 - `minecraft:deepslate_redstone_ore`
 Deepslate Redstone Ore
 - `deepslate_redstone_ore`
@@ -2038,6 +2138,8 @@ Double Stone Block Slab
 Mangrove Fence
 - `mangrove_fence`
 Mangrove Fence
+- `minecraft:oxidized_copper_grate`
+- `oxidized_copper_grate`
 - `minecraft:anvil`
 Anvil
 - `anvil`
@@ -2046,6 +2148,8 @@ Anvil
 Birch Trapdoor
 - `birch_trapdoor`
 Birch Trapdoor
+- `minecraft:tuff_bricks`
+- `tuff_bricks`
 - `minecraft:mangrove_leaves`
 Mangrove Leaves
 - `mangrove_leaves`
@@ -2236,6 +2340,8 @@ Mangrove Button
 Lantern
 - `lantern`
 Lantern
+- `minecraft:waxed_weathered_copper_door`
+- `waxed_weathered_copper_door`
 - `minecraft:red_stained_glass_pane`
 - `red_stained_glass_pane`
 - `minecraft:lit_blast_furnace`
@@ -2306,6 +2412,8 @@ Cracked Polished Blackstone Bricks
 Flowing Lava
 - `flowing_lava`
 Flowing Lava
+- `minecraft:polished_tuff`
+- `polished_tuff`
 - `minecraft:magenta_stained_glass`
 - `magenta_stained_glass`
 - `minecraft:acacia_button`
@@ -2346,6 +2454,8 @@ Prismarine Stairs
 - `white_carpet`
 - `minecraft:cyan_concrete`
 - `cyan_concrete`
+- `minecraft:polished_tuff_stairs`
+- `polished_tuff_stairs`
 - `minecraft:dragon_egg`
 Dragon Egg
 - `dragon_egg`
@@ -2440,6 +2550,8 @@ Deepslate Brick Stairs
 Dark Prismarine Stairs
 - `dark_prismarine_stairs`
 Dark Prismarine Stairs
+- `minecraft:chiseled_tuff_bricks`
+- `chiseled_tuff_bricks`
 - `minecraft:light_blue_concrete`
 - `light_blue_concrete`
 - `minecraft:trip_wire`
@@ -2464,10 +2576,14 @@ Dark Oak Trapdoor
 Waxed Oxidized Copper
 - `waxed_oxidized_copper`
 Waxed Oxidized Copper
+- `minecraft:oak_planks`
+- `oak_planks`
 - `minecraft:stripped_oak_log`
 Stripped Oak Log
 - `stripped_oak_log`
 Stripped Oak Log
+- `minecraft:polished_andesite`
+- `polished_andesite`
 - `minecraft:sea_lantern`
 Sea Lantern
 - `sea_lantern`
@@ -2480,6 +2596,8 @@ Brewing Stand
 Bamboo Sapling
 - `bamboo_sapling`
 Bamboo Sapling
+- `minecraft:weathered_copper_bulb`
+- `weathered_copper_bulb`
 - `minecraft:blast_furnace`
 Blast Burnace
 - `blast_furnace`
@@ -2584,12 +2702,16 @@ Crimson Fungus
 Polished Deepslate
 - `polished_deepslate`
 Polished Deepslate
+- `minecraft:tuff_double_slab`
+- `tuff_double_slab`
 - `minecraft:purpur_stairs`
 Purpur Stairs
 - `purpur_stairs`
 Purpur Stairs
 - `minecraft:tube_coral`
 - `tube_coral`
+- `minecraft:waxed_copper_door`
+- `waxed_copper_door`
 - `minecraft:portal`
 Portal
 - `portal`
@@ -2606,6 +2728,10 @@ Command Block
 Polished Blackstone Button
 - `polished_blackstone_button`
 Polished Blackstone Button
+- `minecraft:crafter`
+- `crafter`
+- `minecraft:spruce_planks`
+- `spruce_planks`
 - `minecraft:furnace`
 Furnace
 - `furnace`
@@ -2614,6 +2740,8 @@ Furnace
 Amethyst Cluster
 - `amethyst_cluster`
 Amethyst Cluster
+- `minecraft:waxed_chiseled_copper`
+- `waxed_chiseled_copper`
 - `minecraft:waxed_cut_copper_slab`
 Waxed Cut Copper Slab
 - `waxed_cut_copper_slab`
@@ -2634,6 +2762,8 @@ Light Block
 Crimson Fence
 - `crimson_fence`
 Crimson Fence
+- `minecraft:chiseled_tuff`
+- `chiseled_tuff`
 - `minecraft:lime_concrete_powder`
 - `lime_concrete_powder`
 - `minecraft:turtle_egg`
@@ -2674,6 +2804,8 @@ Wooden Pressure Plate
 Lime Candle Cake
 - `lime_candle_cake`
 Lime Candle Cake
+- `minecraft:waxed_oxidized_copper_grate`
+- `waxed_oxidized_copper_grate`
 - `minecraft:white_concrete`
 - `white_concrete`
 - `minecraft:acacia_fence`
@@ -2746,6 +2878,8 @@ Gravel
 Cartography Table
 - `cartography_table`
 Cartography Table
+- `minecraft:oxidized_copper_door`
+- `oxidized_copper_door`
 - `concretepowder`
 Concrete Powder
 - `minecraft:concretepowder`
@@ -2806,22 +2940,10 @@ Double Stone Slab 3
 Double Stone Slab 4
 - `minecraft:double_stone_slab4`
 Double Stone Slab 4
-- `coral`
-Coral
-- `minecraft:coral`
-Coral
-- `concrete_powder`
-Concrete Powder
-- `minecraft:concrete_powder`
-Concrete Powder
 - `wool`
 Wool
 - `minecraft:wool`
 Wool
-- `shulker_box`
-Shulker Box
-- `minecraft:shulker_box`
-Shulker Box
 - `log`
 Log
 - `minecraft:log`
@@ -2830,18 +2952,26 @@ Log
 Log 2
 - `minecraft:log2`
 Log 2
-- `fence`
-Fence
-- `minecraft:fence`
-Fence
+- `coral`
+Coral
+- `minecraft:coral`
+Coral
 - `lava_cauldron`
 Lava Cauldron
 - `minecraft:lava_cauldron`
 Lava Cauldron
+- `fence`
+Fence
+- `minecraft:fence`
+Fence
 - `carpet`
 Carpet
 - `minecraft:carpet`
 Carpet
+- `shulker_box`
+Shulker Box
+- `minecraft:shulker_box`
+Shulker Box
 - `concrete`
 Concrete
 - `minecraft:concrete`
@@ -2850,6 +2980,10 @@ Concrete
 Stained Hardened Clay
 - `minecraft:stained_hardened_clay`
 Stained Hardened Clay
+- `concrete_powder`
+Concrete Powder
+- `minecraft:concrete_powder`
+Concrete Powder
 - `stained_glass`
 Stained Glass
 - `minecraft:stained_glass`
@@ -2858,6 +2992,10 @@ Stained Glass
 Stained Glass Pane
 - `minecraft:stained_glass_pane`
 Stained Glass Pane
+- `planks`
+Planks
+- `minecraft:planks`
+Planks
 
 ## References
 The following commands reference this enum:

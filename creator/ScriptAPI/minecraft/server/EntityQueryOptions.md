@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityQueryOptions Interface
 description: Contents of the @minecraft/server.EntityQueryOptions class.
-ms.service: minecraft-bedrock-edition
 ---
 # EntityQueryOptions Interface
 
@@ -166,6 +166,7 @@ If defined, entities that match this type are included.
 
 Type: *string*
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **volume**
 `volume?: BlockAreaSize;`
 
@@ -175,6 +176,7 @@ Type: [*BlockAreaSize*](BlockAreaSize.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 #### Examples
 ##### ***bounceSkeletons.ts***

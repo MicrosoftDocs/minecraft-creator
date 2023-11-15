@@ -47,7 +47,6 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.enderman_take_block| -537294220 |
 | minecraft:behavior.equip_item| 13771509599928214056 |
 | minecraft:behavior.explore_outskirts| -1955198366 |
-| minecraft:behavior.feeling_happy| 8645000647498549987 |
 | minecraft:behavior.fertilize_farm_block| 9206289212958280677 |
 | minecraft:behavior.find_cover| -1231227755 |
 | minecraft:behavior.find_mount| 731306871 |
@@ -126,11 +125,9 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.restrict_open_door| 715583988 |
 | minecraft:behavior.restrict_sun| -382716017 |
 | minecraft:behavior.rise_to_liquid_level| -950950337 |
-| minecraft:behavior.rising| 1216537393397581032 |
 | minecraft:behavior.roll| 817471653 |
 | minecraft:behavior.run_around_like_crazy| -1390363669 |
 | minecraft:behavior.scared| -1643945926 |
-| minecraft:behavior.scenting| 6172150932649653379 |
 | minecraft:behavior.send_event| -823429137 |
 | minecraft:behavior.share_items| 2045906118 |
 | minecraft:behavior.silverfish_merge_with_stone| 321908121 |
@@ -161,6 +158,9 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.swoop_attack| 7451467701814397451 |
 | minecraft:behavior.take_flower| 1218648257 |
 | minecraft:behavior.tempt| 422904556 |
+| minecraft:behavior.timer_flag_1| 9107193206350859182 |
+| minecraft:behavior.timer_flag_2| 9107192106839230971 |
+| minecraft:behavior.timer_flag_3| 9107191007327602760 |
 | minecraft:behavior.trade_interest| -574851053 |
 | minecraft:behavior.trade_with_player| 13082946109325010651 |
 | minecraft:behavior.vex_copy_owner_target| -643459543 |
@@ -215,6 +215,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:custom_hit_test| 2035968892 |
 | minecraft:damage_over_time| -656420526 |
 | minecraft:damage_sensor| -82616534 |
+| minecraft:dash| -51257122 |
 | minecraft:default_look_angle| -815556357 |
 | minecraft:despawn| 1674909940 |
 | minecraft:drying_out_timer| 2113510784 |

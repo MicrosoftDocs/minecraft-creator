@@ -12,16 +12,72 @@
           "_themes/**",
           "_themes.pdf/**",
           "**/docfx.json",
+          "**/server-net/**",
+          "**/server-gametest/**",
+          "**/server-admin/**",
+          "**/server-editor/**",
           "_repo.en-us/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices.md",
-          "creator/Reference/Source/Templates/**"
-        ]
+          "Reference/Source/Templates/**"
+        ],
+        "group": "minecraft-core"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices.md",
+          "Reference/Source/Templates/**"
+        ],
+        "group": "minecraft-exp"
       }
     ],
+    "groups": {
+      "minecraft-core": {
+        "dest": "mc-dest",
+        "moniker_range": "=minecraft-bedrock-experimental || =minecraft-bedrock-stable"
+      },
+      "minecraft-exp": {
+        "dest": "mc-dest",
+        "moniker_range": "=minecraft-bedrock-experimental"
+      }
+    },
     "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.gif",
+          "**/*.jpg",
+          "**/*.pdf"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/server-net/**",
+          "**/server-gametest/**",
+          "**/server-admin/**",
+          "**/server-editor/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**"
+        ],
+        "group": "minecraft-core"
+      },
       {
         "files": [
           "**/*.png",
@@ -36,14 +92,14 @@
           "_themes.pdf/**",
           "**/docfx.json",
           "_repo.en-us/**"
-        ]
+        ],
+        "group": "minecraft-exp"
       }
     ],
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/minecraft/creator/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/minecraft-creator",
       "ms.topic": "reference",

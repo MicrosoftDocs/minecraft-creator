@@ -2,9 +2,9 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Utilizing Sub-Packs
-ms.prod: gaming
 ms.topic: tutorial
 description: "A guide for creators on utilizing sub-packs in world creation"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Utilizing Sub-Packs

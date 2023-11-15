@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.Container Class
 description: Contents of the @minecraft/server.Container class.
-ms.service: minecraft-bedrock-edition
 ---
 # Container Class
 
@@ -45,7 +45,7 @@ Type: *number*
 
 ### **addItem**
 `
-addItem(itemStack: ItemStack): ItemStack
+addItem(itemStack: ItemStack): ItemStack | undefined
 `
 
 Adds an item to the container. The item is placed in the first available slot(s) and can be stacked with existing items of the same type. Note, use [*@minecraft/server.Container.setItem*](../../minecraft/server/Container.md#setitem) if you wish to set the item in a particular slot.
@@ -55,7 +55,7 @@ Adds an item to the container. The item is placed in the first available slot(s)
   
   The stack of items to add.
 
-#### **Returns** [*ItemStack*](ItemStack.md)
+#### **Returns** [*ItemStack*](ItemStack.md) | *undefined*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -101,6 +101,7 @@ const inventory = player.getComponent("inventory") as EntityInventoryComponent;
 const itemStack = inventory.container.getItem(0);
 ```
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getSlot**
 `
 getSlot(slot: number): ContainerSlot
@@ -120,6 +121,7 @@ Returns a container slot. This acts as a reference to a slot at the given index 
 
 > [!WARNING]
 > Throws if the container is invalid or if the `slot` index is out of bounds.
+::: moniker-end
 
 ### **isValid**
 `
@@ -218,7 +220,7 @@ inventory.container.swapItems(0, 4, inventory);
 
 ### **transferItem**
 `
-transferItem(fromSlot: number, toContainer: Container): ItemStack
+transferItem(fromSlot: number, toContainer: Container): ItemStack | undefined
 `
 
 Moves an item from one slot to another container, or to the first available slot in the same container.
@@ -231,7 +233,7 @@ Moves an item from one slot to another container, or to the first available slot
   
   Target container to transfer to. Note this can be the same container as the source.
 
-#### **Returns** [*ItemStack*](ItemStack.md)
+#### **Returns** [*ItemStack*](ItemStack.md) | *undefined* - An itemStack with the items that couldn't be transferred. Returns undefined if all items were transferred.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

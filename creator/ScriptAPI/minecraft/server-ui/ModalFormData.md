@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-ui.ModalFormData Class
 description: Contents of the @minecraft/server-ui.ModalFormData class.
-ms.service: minecraft-bedrock-edition
 ---
 # ModalFormData Class
 
@@ -80,7 +80,7 @@ Adds a numeric slider to the form.
 
 ### **textField**
 `
-textField(label: minecraftserver.RawMessage | string, placeholderText: minecraftserver.RawMessage | string, defaultValue?: string): ModalFormData
+textField(label: minecraftserver.RawMessage | string, placeholderText: minecraftserver.RawMessage | string, defaultValue?: minecraftserver.RawMessage | string): ModalFormData
 `
 
 Adds a textbox to the form.
@@ -88,7 +88,7 @@ Adds a textbox to the form.
 #### **Parameters**
 - **label**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 - **placeholderText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
-- **defaultValue**?: *string* = `null`
+- **defaultValue**?: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string* = `null`
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
 

@@ -2,9 +2,10 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-editor Module
 description: Contents of the @minecraft/server-editor module
-ms.service: minecraft-bedrock-edition
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # `@minecraft/server-editor` Module
 
@@ -32,7 +33,9 @@ ms.service: minecraft-bedrock-edition
 - [CursorTargetMode](CursorTargetMode.md)
 - [EDITOR_PANE_PROPERTY_ITEM_TYPE](EDITOR_PANE_PROPERTY_ITEM_TYPE.md)
 - [EditorInputContext](EditorInputContext.md)
+- [EditorMode](EditorMode.md)
 - [EditorStatusBarAlignment](EditorStatusBarAlignment.md)
+- [GraphicsSettingsProperty](GraphicsSettingsProperty.md)
 - [InputModifier](InputModifier.md)
 - [KeyboardKey](KeyboardKey.md)
 - [KeyInputType](KeyInputType.md)
@@ -42,6 +45,7 @@ ms.service: minecraft-bedrock-edition
 - [PlaytestSessionResult](PlaytestSessionResult.md)
 
 # Type Aliases
+- [GraphicsSettingsPropertyTypeMap](GraphicsSettingsPropertyTypeMap.md)
 - [Action](Action.md)
 - [ActionID](ActionID.md)
 - [ActivationFunctionType](ActivationFunctionType.md)
@@ -72,11 +76,16 @@ ms.service: minecraft-bedrock-edition
 - [Cursor](Cursor.md)
 - [Extension](Extension.md)
 - [ExtensionContext](ExtensionContext.md)
+- [ExtensionContextAfterEvents](ExtensionContextAfterEvents.md)
+- [GraphicsSettings](GraphicsSettings.md)
 - [Logger](Logger.md)
 - [MinecraftEditor](MinecraftEditor.md)
+- [ModeChangeAfterEvent](ModeChangeAfterEvent.md)
+- [ModeChangeAfterEventSignal](ModeChangeAfterEventSignal.md)
 - [PlaytestManager](PlaytestManager.md)
 - [Selection](Selection.md)
 - [SelectionManager](SelectionManager.md)
+- [SettingsManager](SettingsManager.md)
 - [TransactionManager](TransactionManager.md)
 
 ## Interfaces

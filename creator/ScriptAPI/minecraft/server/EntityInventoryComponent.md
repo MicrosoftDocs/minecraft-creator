@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityInventoryComponent Class
 description: Contents of the @minecraft/server.EntityInventoryComponent class.
-ms.service: minecraft-bedrock-edition
 ---
 # EntityInventoryComponent Class
 
@@ -36,9 +36,9 @@ Type: *boolean*
 > This property can throw errors when used.
 
 ### **container**
-`read-only container: Container;`
+`read-only container?: Container;`
 
-Defines the container for this entity.
+Defines the container for this entity. The container will be undefined if the entity has been removed.
 
 Type: [*Container*](Container.md)
     

@@ -31,10 +31,11 @@ The following components provide the specifics in determining the ways in which 
 | Name| Description |
 |:-----------|:-----------|
 | [minecraft:biome_filter](../Definitions/NestedTables/biome_filter.md)| Allows players to specify which biomes the mob spawns in. Check on **minecraft:biome_filter** to see which Biome Tags exist, and what each biome is tagged as.|
-| [minecraft:brightness_filter](../Definitions/NestedTables/brightness_filter.md)| Allows players to set the light level range that causes the mob to spawn.  |
+| [minecraft:brightness_filter](../Definitions/NestedTables/brightness_filter.md)| Allows players to set the light level range that causes the mob to spawn. |
 | [minecraft:delay_filter](../Definitions/NestedTables/delay_filter.md) |Allows players to set mobs spawn with specified time delays.|
 | [minecraft:density_limit](../Definitions/NestedTables/density_limit.md)| Allows players to specify the amount of mobs to spawn in certain locations. |
 | [minecraft:difficulty_filter](../Definitions/NestedTables/difficulty_filter.md)| Allows creators to set which mobs spawn depending on difficulty level. |
+| [minecraft:disallow_spawns_in_bubble](../Definitions/NestedTables/disallow_spawns_in_bubble.md)| Allows creators to keep entities from spawning in bubbles. |
 | [minecraft:entity_types](../Definitions/NestedTables/entity_types.md) |This is a specific type of JSON object used by Minecraft: Bedrock Edition to encapsulate entity data that can be used in certain behaviors and components. |
 | [minecraft:height_filter](../Definitions/NestedTables/height_filter.md) |Allows players to set mob spawning within specific heights of the map. |
 | [minecraft:herd](../Definitions/NestedTables/herd.md)| Allows players to determine the herd size of animals.|
@@ -42,7 +43,8 @@ The following components provide the specifics in determining the ways in which 
 | [minecraft:operator](../Definitions/NestedTables/operator.md) | Defines arithmetic operators in order to compare the values of two given data points. |
 | [minecraft:permute_type](../Definitions/NestedTables/permute_type.md) |Allows players to specify the permutations of a mob that will spawn. |
 | [minecraft:player_in_village_filter](../Definitions/NestedTables/player_in_village_filter.md) |Allows players to be filtered by whether they are in a village or not, using distance and the village border definitions. |
-| [minecraft:spawns_lava](../Definitions/NestedTables/spawns_lava.md) |Determines if an entity spawns lava. |
+| [minecraft:spawn_event](../Definitions/NestedTables/spawn_event.md) |Event related to the spawning of an entity. |
+| [minecraft:spawns_lava](../Definitions/NestedTables/spawns_lava.md) |Determines if an entity spawns on lava. |
 | [minecraft:spawns_on_block_filter](../Definitions/NestedTables/spawns_on_block_filter.md) |Allows an entity to spawn on a particular block. |
 | [minecraft:spawns_on_block_prevented_filter](../Definitions/NestedTables/spawns_on_block_prevented_filter.md) |Prevents an entity from spawning on a particular block. |
 | [minecraft:spawns_on_surface](../Definitions/NestedTables/spawns_on_surface.md) |Allows an entity to spawn on the surface. |

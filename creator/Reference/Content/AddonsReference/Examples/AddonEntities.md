@@ -154,6 +154,7 @@ Listed below are the available Damage Sources that can be used when working with
 | all|  |
 | anvil|  |
 | block_explosion|  |
+| campfire|  |
 | charging|  |
 | contact|  |
 | drowning|  |
@@ -174,6 +175,9 @@ Listed below are the available Damage Sources that can be used when working with
 | override|  |
 | piston|  |
 | projectile|  |
+| ram_attack|  |
+| sonic_boom|  |
+| soul_campfire|  |
 | stalactite|  |
 | stalagmite|  |
 | starve|  |

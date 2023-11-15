@@ -19,7 +19,7 @@ ms.service: minecraft-bedrock-edition
 |:----------|:----------|:----------|:----------|
 |ammunition|*not set* | Array| Sets the entity that is used as ammunition|
 |charge_on_draw| false| Boolean|Sets if the item is charged when drawn|
-|max_draw_duration|0.0| Float| Determines how long can the weapon can be drawn before releasing automatically|
+|max_draw_duration|0.0| JSON Object| Determines how long can the weapon can be drawn before releasing automatically|
 |scale_power_by_draw_duration| false| Boolean|When set to 'true', the longer the weapon is drawn, the more power it will have when released|
 
 See [Custom Item Use Priority](../ItemUsePriority.md) for more information on use behavior.

@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: setmaxplayers Command
 description: Description and usage of the setmaxplayers command
-ms.service: minecraft-bedrock-edition
 ---
 # `/setmaxplayers` Command
 Sets the maximum number of players for this game session.

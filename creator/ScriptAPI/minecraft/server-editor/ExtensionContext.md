@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-editor.ExtensionContext Class
 description: Contents of the @minecraft/server-editor.ExtensionContext class.
-ms.service: minecraft-bedrock-edition
 ---
 # ExtensionContext Class
 
@@ -17,6 +17,13 @@ The Extension Context is the main interface to all the bound Editor Services.
 As more player services are added to the editor, they will be exposed through this object
 
 ## Properties
+
+### **afterEvents**
+`read-only afterEvents: ExtensionContextAfterEvents;`
+
+Contains a set of events that are applicable to the editor player.  Event callbacks are called in a deferred manner. Event callbacks are executed in read-write mode.
+
+Type: [*ExtensionContextAfterEvents*](ExtensionContextAfterEvents.md)
 
 ### **clipboardManager**
 `read-only clipboardManager: ClipboardManager;`
@@ -57,6 +64,13 @@ Type: [*PlaytestManager*](PlaytestManager.md)
 The instance of the players Selection Manager and the main interface through which the player can create/modify selections
 
 Type: [*SelectionManager*](SelectionManager.md)
+
+### **settings**
+`read-only settings: SettingsManager;`
+
+The instance of the players Settings Manager and the contract through which the settings for the player can be modified.
+
+Type: [*SettingsManager*](SettingsManager.md)
 
 ### **transactionManager**
 `read-only transactionManager: TransactionManager;`

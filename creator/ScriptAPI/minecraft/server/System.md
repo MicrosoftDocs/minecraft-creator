@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.System Class
 description: Contents of the @minecraft/server.System class.
-ms.service: minecraft-bedrock-edition
 ---
 # System Class
 
@@ -19,9 +19,7 @@ Returns a collection of after-events for system-level operations.
 
 Type: [*SystemAfterEvents*](SystemAfterEvents.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
+::: moniker range="=minecraft-bedrock-experimental"
 ### **beforeEvents**
 `read-only beforeEvents: SystemBeforeEvents;`
 
@@ -31,6 +29,7 @@ Type: [*SystemBeforeEvents*](SystemBeforeEvents.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **currentTick**
 `read-only currentTick: number;`

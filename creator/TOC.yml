@@ -2,15 +2,17 @@
   items:
     - name: "Minecraft: Bedrock Documentation Homepage"
       href: index.yml
-    - name: "What's New"
+    - name: "Updates and News"
       items: 
+        - name: 1.20.40 Update Summary
+          href: Documents/Update1.20.40.md
         - name: 1.20.30 Update Summary
           href: Documents/Update1.20.30.md
         - name: 1.20.10 Update Summary
           href: Documents/Update1.20.10.md
         - name: 1.20 Update Summary
           href: Documents/Update1.20.md
-        - name: "1.19.xx Archive"
+        - name: "Update Summary Archive"
           items:
             - name: 1.19.80 Update Summary
               href: Documents/Update1.19.80.md
@@ -24,16 +26,32 @@
               href: Documents/Update1.19.40.md
             - name: Minecraft Live 2022 Creator Recap
               href: Documents/MinecraftLive2022CreatorRecap.md
-    - name: Useful Knowledge for Creators
+        - name: "News Archive"
+          items:  
+            - name: Introduction to the Caves & Cliffs Entities
+              href: Documents/CavesAndCliffsEntities.md
+            - name: World Height Changes in Caves and Cliffs Part 2
+              href: Documents/WorldHeightChange.md        
+    - name: Concepts
       items:
-        - name: 'Redstone Guide'
-          href: Documents/RedstoneGuide.md
+        - name: Getting Started with Add-Ons
+          href: Documents/GettingStarted.md
+        - name: Introduction to Resource Packs
+          href: Documents/ResourcePack.md
+        - name: Introduction to Behavior Packs
+          href: Documents/BehaviorPack.md
         - name: 'Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition'
           href: Documents/DifferencesBetweenBedrockAndJava.md
+        - name: Designing Gameplay for Various Devices
+          href: Documents/DesigningGameplayForVariousDevices.md
+        - name: Minecraft File Extensions
+          href: Documents/MinecraftFileExtensions.md
         - name: "Experimental Features in Minecraft: Bedrock Edition"
           href: Documents/ExperimentalFeaturesToggle.md
-        - name: Survival Spawn Creation
-          href: Documents/SurvivalSpawnCreation.md
+        - name: Adding Custom Items
+          href: Documents/AddCustomItems.md          
+        - name: Adding Custom Sounds
+          href: Documents/AddCustomSounds.md
         - name: Packaging Content
           items:
           - name: Packaging a Skin Pack
@@ -42,202 +60,174 @@
             href: Documents/PackagingAWorldTemplate.md
           - name: Packaging a Random Seed World Template
             href: Documents/PackagingARandomSeedWorldTemplate.md
+          - name: Utilizing Sub-Packs
+            href: Documents/UtilizingSubpacks.md
           - name: Mash-up Pack Overview
             href: Documents/MashupPackOverview.md
           - name: 'Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition'
             href: Documents/ConvertingTexturePacks.md
           - name: Preparing Raw Text for Localization
-            href: Documents/PreparingRawTextForLocalization.md
-        - name: World Creation and Gameplay with Parkour World
-          items:
-          - name: Parkour Introduction
-            href: Documents/ParkourIntro.md
-          - name: Parkour World Walkthrough
-            href: Documents/ParkourWorldWalkthrough.md
-          - name: Parkour World Creation Guide
-            href: Documents/ParkourWorldGuide.md                        
+            href: Documents/PreparingRawTextForLocalization.md                     
         - name: Advanced Topics
           items:
           - name: Getting Started with Deferred Lighting
             href: Documents/DeferredLighting.md
-          - name: Base Game Versioning
+          - name: World Templates and Base Game Versioning
             href: Documents/BaseGameVersioning.md
-          - name: Actor Storage
-            href: Documents/ActorStorage.md
-          - name: Minecraft File Extensions
-            href: Documents/MinecraftFileExtensions.md
-          - name: Data-Driven Overworld Height and Void Generation
-            href: Documents/DataDrivenOverworldHeight.md
           - name: Editing NBTs Safely
             href: Documents/EditingNBTSafely.md
-          - name: Molang Beginner's Guide
-            href: Documents/MolangBeginnersGuide.md
-    - name: Tutorials
+          - name: Getting Started with Ray Tracing
+            href: Documents/RTXGettingStarted.md
+          - name: Introduction to Physically Based Rendering
+            href: Documents/RTXPBRIntro.md
+          - name: Physically Based Rendering Tutorial
+            href: Documents/RTXPBRTutorial.md
+    - name: Game Logic
       items:
-        - name: Add-On Pack Tutorials
-          items:
-            - name: Getting Started
-              href: Documents/GettingStarted.md
-            - name: Introduction to Resource Packs
-              href: Documents/ResourcePack.md
-            - name: Introduction to Behavior Packs
-              href: Documents/BehaviorPack.md
-            - name: "Installing Add-Ons in Minecraft: Bedrock"
-              href: Documents/AddonPackInstallation.md
-            - name: Utilizing Sub-Packs
-              href: Documents/UtilizingSubpacks.md
-            - name: Fog in Resource Packs
-              href: Documents/FogInResourcePacks.md
-            - name: Particle Effects
-              href: Documents/ParticleEffects.md
-            - name: Introduction to Sound
-              href: Documents/IntroductionToSound.md
-            - name: Adding Custom Sounds
-              href: Documents/AddCustomSounds.md
-        - name: Adding a Custom Block
-          items:
-           - name: Add a Custom Die Block 
-             href: Documents/AddCustomDieBlock.md
-           - name: Advanced Custom Blocks 
-             href: Documents/AdvancedCustomBlocks.md
-           - name: Custom Block Render Lighting 
-             href: Documents/CustomBlockRenderLighting.md
-           - name: Advanced Custom Block Oversized 
-             href: Documents/CustomBlockOversized.md
-        - name: Maker Series
-          items:
-            - name: Creating a Goblin Chef Entity 
-              href: Documents/MakerSeriesMakingTheGoblinChef.md
-        - name: Commands and Command Blocks
-          items:
-          - name: Introduction to Commands
-            href: Documents/CommandsIntroduction.md
-          - name: Popular Commands
-            href: Documents/CommandsPopularCommands.md
-          - name: The Damage Command
-            href: Documents/CommandsDamageIntroduction.md
-          - name: Getting Started with Command Blocks
-            href: Documents/CommandBlocks.md
-          - name: How to Make a Complete the Monument World
-            href: Documents/CommandsHowToMakeACTMWorld.md
-          - name: Introduction to Functions
-            href: Documents/FunctionsIntroduction.md
-          - name: Introduction to Scoreboards
-            href: Documents/ScoreboardIntroduction.md
-          - name: Scoreboard Operations Tutorial
-            href: Documents/ScoreboardOperationsTutorial.md
-          - name: The Camera Command
-            href: Documents/CameraCommandIntroduction.md
-          - name: Free Camera Preset Tutorial
-            href: Documents/CameraTutorialFreeCameraPreset.md
-          - name: The Tickingarea Command
-            href: Documents/TickingAreaCommand.md
-          - name: New /execute command syntax
-            href: Documents/CommandsNewExecute.md
-          - name: Copy and Paste Coordinates
-            href: Documents/CopyCoordinates.md
-          - name: How to use tick.json
-            href: Documents/TickJsonIntroduction.md
-        - name: Minecraft Entities
-          items:
-            - name: Creating New Entity Types
-              href: Documents/IntroductionToAddEntity.md
-            - name: Introduction to Entity Properties
-              href: Documents/IntroductionToEntityProperties.md
-            - name: Entity Modeling and Animation
-              href: Documents/EntityModelingAndAnimation.md
-            - name: Entity Behavior Introduction
-              href: Documents/EntityBehaviorIntroduction.md
-            - name: Entity Events
-              href: Documents/EntityEvents.md
-        - name: Adding NPCs
-          items:
-            - name: Create a Custom NPC
-              href: Documents/CreateNPCs.md
-            - name: NPC Dialogue Command
-              href: Documents/NPCDialogue.md        
-        - name: Loot and Trading Tables
-          items:
-            - name: Introduction to Loot Tables
-              href: Documents/IntroductionToLootTables.md
-            - name: Loot and Trade Table Functions
-              href: Documents/LootAndTradeTableFunctions.md
-            - name: Loot Overloads
-              href: Documents/LootOverloads.md
-            - name: Loot Table Conditions
-              href: Documents/LootTableConditions.md
-            - name: Creating a Loot Table
-              href: Documents/CreateLootTable.md
-        - name: Physically Based Rendering
-          items:
-            - name: Getting Started with Ray Tracing
-              href: Documents/RTXGettingStarted.md
-            - name: Introduction to Physically Based Rendering
-              href: Documents/RTXPBRIntro.md
-            - name: Physically Based Rendering Tutorial
-              href: Documents/RTXPBRTutorial.md
-        - name: Structure Blocks
-          items:
-          - name: Introduction to Structure Blocks
-            href: Documents/IntroductionToStructureBlocks.md
-          - name: Structure Blocks Tutorial
-            href: Documents/StructureBlocksTutorial.md
-    - name: Tools and Frameworks
+        - name: 'Redstone Guide'
+          href: Documents/RedstoneGuide.md
+        - name: Molang Beginner's Guide
+          href: Documents/MolangBeginnersGuide.md
+        - name: Introduction to Sound
+          href: Documents/IntroductionToSound.md
+        - name: Introduction to Scripting in Minecraft
+          href: Documents/ScriptingIntroduction.md
+        - name: Popular Commands
+          href: Documents/CommandsPopularCommands.md
+        - name: The Damage Command
+          href: Documents/CommandsDamageIntroduction.md
+        - name: Scoreboard Operations Tutorial
+          href: Documents/ScoreboardOperationsTutorial.md
+        - name: How to use tick.json
+          href: Documents/TickJsonIntroduction.md
+        - name: Introduction to Loot Tables
+          href: Documents/IntroductionToLootTables.md
+        - name: Loot and Trade Table Functions
+          href: Documents/LootAndTradeTableFunctions.md
+        - name: Loot Overloads
+          href: Documents/LootOverloads.md
+        - name: Loot Table Conditions
+          href: Documents/LootTableConditions.md
+        - name: Creating a Loot Table
+          href: Documents/CreateLootTable.md
+        - name: Getting Started with GameTest Framework
+          href: Documents/GameTestGettingStarted.md
+        - name: Script Versioning
+          href: Documents/ScriptVersioning.md
+        - name: Building Editor Extensions
+          href: Documents/EditorExtensionsIntroduction.md
+        - name: Introduction to Functions
+          href: Documents/FunctionsIntroduction.md
+        - name: New /execute command syntax
+          href: Documents/CommandsNewExecute.md
+        - name: Introduction to Commands
+          href: Documents/CommandsIntroduction.md
+        - name: Free Camera Preset Tutorial
+          href: Documents/CameraTutorialFreeCameraPreset.md
+        - name: Introduction to Scoreboards
+          href: Documents/ScoreboardIntroduction.md
+        - name: Build Gameplay with TypeScript
+          href: Documents/ScriptingGettingStarted.md
+        - name: Use Script Along with Dedicated Servers
+          href: Documents/ScriptingServers.md
+        - name: Use Visual Studio Code Tools to Write Script
+          href: Documents/ScriptDeveloperTools.md
+        - name: Build your First GameTest
+          href: Documents/GameTestBuildYourFirstGameTest.md
+        - name: The Camera Command
+          href: Documents/CameraCommandIntroduction.md
+        - name: The Tickingarea Command
+          href: Documents/TickingAreaCommand.md
+    - name: World
       items:
-        - name: Scripting
+        - name: Survival Spawn Creation
+          href: Documents/SurvivalSpawnCreation.md
+        - name: Parkour Introduction
+          href: Documents/ParkourIntro.md
+        - name: Parkour World Walkthrough
+          href: Documents/ParkourWorldWalkthrough.md
+        - name: Parkour World Creation Guide
+          href: Documents/ParkourWorldGuide.md 
+        - name: Data-Driven Overworld Height and Void Generation
+          href: Documents/DataDrivenOverworldHeight.md
+        - name: Introduction to Structure Blocks
+          href: Documents/IntroductionToStructureBlocks.md
+        - name: How to Make a Complete the Monument World
+          href: Documents/CommandsHowToMakeACTMWorld.md
+        - name: Fog in Resource Packs
+          href: Documents/FogInResourcePacks.md
+    - name: Entities
+      items:
+        - name: Introduction to Entity Properties
+          href: Documents/IntroductionToEntityProperties.md
+        - name: Entity Modeling and Animation
+          href: Documents/EntityModelingAndAnimation.md
+        - name: Entity Behavior Introduction
+          href: Documents/EntityBehaviorIntroduction.md
+        - name: Entity Events
+          href: Documents/EntityEvents.md
+        - name: Creating a Goblin Chef Entity 
+          href: Documents/MakerSeriesMakingTheGoblinChef.md
+        - name: Creating New Entity Types
+          href: Documents/IntroductionToAddEntity.md
+        - name: Create a Custom NPC
+          href: Documents/CreateNPCs.md
+        - name: NPC Dialogue Command
+          href: Documents/NPCDialogue.md
+        - name: Actor Storage
+          href: Documents/ActorStorage.md
+        - name: Particle Effects
+          href: Documents/ParticleEffects.md
+    - name: Blocks
+      items:
+        - name: Add a Custom Die Block 
+          href: Documents/AddCustomDieBlock.md
+        - name: Advanced Custom Blocks 
+          href: Documents/AdvancedCustomBlocks.md
+        - name: Custom Block Render Lighting 
+          href: Documents/CustomBlockRenderLighting.md
+        - name: Advanced Custom Block Oversized 
+          href: Documents/CustomBlockOversized.md
+        - name: Structure Blocks Tutorial
+          href: Documents/StructureBlocksTutorial.md
+        - name: Getting Started with Command Blocks
+          href: Documents/CommandBlocks.md
+    - name: Tools
+      items:
+        - name: Commonly Used Tools
+          href: Documents/CommonlyUsedTools.md
+        - name: In-Game Tools
           items:
-          - name: Introduction to Scripting in Minecraft
-            href: Documents/ScriptingIntroduction.md
-          - name: Build Gameplay with TypeScript
-            href: Documents/ScriptingGettingStarted.md
-          - name: Use Script Along with Dedicated Servers
-            href: Documents/ScriptingServers.md
-          - name: Use Visual Studio Code Tools to Write Script
-            href: Documents/ScriptDeveloperTools.md
-          - name: Getting Started with GameTest Framework
-            href: Documents/GameTestGettingStarted.md
-          - name: Build your First GameTest
-            href: Documents/GameTestBuildYourFirstGameTest.md
-          - name: Script Versioning
-            href: Documents/ScriptVersioning.md
-          - name: Building Editor Extensions
-            href: Documents/EditorExtensionsIntroduction.md
-        - name: Creator Tools
+            - name: Copy and Paste Coordinates
+              href: Documents/CopyCoordinates.md
+            - name: Content Error Log
+              href: Documents/ContentErrorLog.md
+        - name: Bedrock Editor
           items:
-          - name: Commonly Used Tools
-            href: Documents/CommonlyUsedTools.md
-          - name: Content Error Log
-            href: Documents/ContentErrorLog.md
-          - name: Designing Gameplay for Various Devices
-            href: Documents/DesigningGameplayForVariousDevices.md
-          - name: Bedrock Editor
-            items:
-              - name: Editor Installation Guide
-                href: Documents/EditorInstallation.md
-              - name: Editor Overview
-                href: Documents/EditorOverview.md
-              - name: Editor Tutorial
-                href: Documents/EditorTutorial.md
-              - name: Building Editor Extensions
-                href: Documents/EditorExtensionsIntroduction.md
-          - name: Blockbench
-            items:
-            - name: Minecraft Block Wizard
-              href: Documents/MinecraftBlockWizard.md
+            - name: Editor Installation Guide
+              href: Documents/EditorInstallation.md
+            - name: Editor Overview
+              href: Documents/EditorOverview.md
+            - name: Editor Tutorial
+              href: Documents/EditorTutorial.md
+        - name: Blockbench
+          items:
+            - name: Minecraft Item Wizard
+              href: Documents/MinecraftItemWizard.md 
             - name: Minecraft Entity Wizard
               href: Documents/MinecraftEntityWizard.md
-            - name: Minecraft Item Wizard
-              href: Documents/MinecraftItemWizard.md
-          - name: Chunker
-            items:
-              - name: Chunker - Overview
-                href: Documents/ChunkerOverview.md
-              - name: Chunker - Advanced Mode
-                href: Documents/ChunkerAdvancedMode.md
-              - name: Chunker - World Settings
-                href: Documents/ChunkerWorldSettings.md
-              - name: Chunker - The Nether
-                href: Documents/ChunkerTheNether.md
+            - name: Minecraft Block Wizard
+              href: Documents/MinecraftBlockWizard.md
+        - name: Chunker
+          items:
+            - name: Chunker - Overview
+              href: Documents/ChunkerOverview.md
+            - name: Chunker - Advanced Mode
+              href: Documents/ChunkerAdvancedMode.md
+            - name: Chunker - World Settings
+              href: Documents/ChunkerWorldSettings.md
+            - name: Chunker - The Nether
+              href: Documents/ChunkerTheNether.md        
     - name: Reference Documentation
       items:
       - name: Scripting and API
@@ -450,14 +440,6 @@
             href: Reference/Content/Molangreference/Examples/Molangconcepts/TOC.yml
       - name: Raw Message JSON
         href: Reference/Content/RawMessageJson.md
-    - name: Articles
-      items:
-        - name: Caves + Cliffs Features
-          items:
-          - name: Introduction to the Caves & Cliffs Entities
-            href: Documents/CavesAndCliffsEntities.md
-          - name: World Height Changes in Caves and Cliffs Part 2
-            href: Documents/WorldHeightChange.md
     - name: Contribute
       items:
       - name: "Contributing to Minecraft: Bedrock Documentation"
