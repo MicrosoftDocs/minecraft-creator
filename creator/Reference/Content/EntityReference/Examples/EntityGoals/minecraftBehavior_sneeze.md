@@ -1,5 +1,5 @@
 ---
-author: iconicNurdle
+author: JimSeaman42
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.sneeze
 description: "A reference document detailing the 'behavior.sneeze' entity goal"
@@ -9,9 +9,6 @@ ms.service: minecraft-bedrock-edition
 # Entity Documentation - minecraft:behavior.sneeze
 
 `minecraft:behavior.sneeze` compels an entity to sneeze and potentially startle other entities. While sneezing, the entity may drop an item.
-
-> [!NOTE]
-> `minecraft:behavior.sneeze` requires a `player` to be tagged as the entity's owner, via taming or console command.
 
 ## Parameters
 
