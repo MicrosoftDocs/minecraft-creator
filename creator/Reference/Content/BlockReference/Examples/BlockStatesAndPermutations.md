@@ -45,7 +45,7 @@ Each permutation is a JSON Object that consists of 2 parameters, shown below.
   "minecraft:block": {
     "description": {
       "identifier": "custom:lamp_block",
-      "state": {
+      "states": {
         "custom:is_lit": [ true, false ]
       }
     },
