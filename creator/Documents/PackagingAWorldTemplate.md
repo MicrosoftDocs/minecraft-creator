@@ -6,22 +6,33 @@ description: "An article detailing the structure and creation of a world templat
 ms.service: minecraft-bedrock-edition
 ---
 
-# Packaging a World Template
+# Creating a World Template from an Exported World
 
-All of the Worlds in the Minecraft Marketplace, like [survival spawns](SurvivalSpawnCreation.md), are actually world templates. When a player creates a world from the template, they get their own fresh copy of the world.
+All of the worlds in the Minecraft Marketplace, like [survival spawns](SurvivalSpawnCreation.md), are actually world templates. Then, when a player creates a world from the template, they get their own fresh copy of the world.
 
-Let's start with a Minecraft world and learn some cool renaming tricks.
+So where do world templates come from? Well, they are basically a zipped Minecraft world that contains the proper **manifest.json** file, a **texts** folder with some files inside it, and has the file extension **.mctemplate**.
+
+If your exported world has neat stuff added to it, like [add-on packs](GettingStarted.md), those get included, too.
+
+When you import a world file (**.mcworld**), it gets added to the list of Worlds and you just open it and get mining and crafting.
+
+When you import a world template (**.mctemplate**), it goes into the list of world templates and Minecraft knows to use it to create a world that will then be added to your list of worlds.
+
+Let's start with the simplest possible Minecraft world and learn some cool renaming tricks.
 
 ## Unpacking, Examining, and Re-Packing a Minecraft World File
 
-We are going to create a world, export it, change the file extension, unzip it, look at the contents, zip the contents back up, and open it again in Minecraft. 
+In this first part, we are going to create a world, export it, change the file extension on the name, unzip it, look at the contents, zip the contents back up, and open it again in Minecraft. This is just to get you used to tinkering around in Minecraft files so things make more sense when you start making changes.
+
+Ready? Here we go!
 
 1. Launch Minecraft, create a world, give it a memorable name like **New_World**, and play in it to test it out. (I love it when instructions tell me to play Minecraft!)
-1. Save and quit the world to go back to the Minecraft **Play** screen that shows you all of your worlds.
 
-![Minecraft UI with list of worlds displayed. New_World is the only one in the list.](Media/PackagingAWorldTemplate/UI_list_of_worlds_step_2.png)
+2. Save and quit the world to go back to the Minecraft **Play** screen that shows all of your worlds.
 
-3. Click the Edit button for that world to go to the **Edit World** screen.
+![Minecraft UI with list of worlds displayed. New_World is the only one on the list.](Media/PackagingAWorldTemplate/UI_list_of_worlds_step_2.png)
+
+3. Click the **Edit** button for that world to go to the **Edit World** screen.
 
 ![Edit World screen with the General tab selected, Export World button is visible under the File Management header.](Media/PackagingAWorldTemplate/edit_world_export_step_3.png)
 
@@ -30,8 +41,10 @@ We are going to create a world, export it, change the file extension, unzip it, 
 ![Windows Save As dialog window showing that the .mcworld file will be saved to the Desktop, inside a Minbecraft World folder.](Media/PackagingAWorldTemplate/world_save_as.png)
 
 5. Choose a location that is easy for you to find, like in a folder on your computer's Desktop, and click the **Export** button.
-1. Minimize Minecraft and go find the exported world file.
-1. Change the file extension from **.mcworld** to **.zip**.
+
+6. Minimize Minecraft and go find the exported world file.
+
+7. Change the file extension from **.mcworld** to **.zip**.
 
 ![Image showing that the New_World.mcworld file has had the extension renamed to .zip, and the computer is displaying a Rename warning window.](Media/PackagingAWorldTemplate/are_you_sure.png)
 
@@ -47,6 +60,8 @@ We are going to create a world, export it, change the file extension, unzip it, 
 
 ### Structure of a Minecraft World package (without Add-On packs)
 
+-------------------------
+
 - **db** folder that contains files similar to this:
     - **000005.ldb** - Microsoft Access Record-Locking Information
     - **000006.log** - Text Document
@@ -59,42 +74,46 @@ We are going to create a world, export it, change the file extension, unzip it, 
 - **world_icon.jpeg** - JPEG File that contains the first image Minecraft displays for the world
 - **world_resource_packs.json** - JSON Source File that is blank if no resource packs are active in the world when it is created
 
+---------------------------
+
 11. Edit the **world_icon.jpeg** file in an app like Paint.
 
 ![Image of the world with added "My Edited World!" text](Media/PackagingAWorldTemplate/edited_world_icon_jpeg.png)
 
-Don't get too attached to your edited world icon, though. Whenever you play the world and then Save & Exit, Minecraft will make a new icon to replace it to reflect your gameplay. We just want to make changes to this to distinguish it from the original world.
+Don't get too attached to your edited world icon, though. Whenever you play the world and then save and exit, Minecraft makes a new icon to replace it to reflect your gameplay. We just want to make changes to this first one to distinguish it from the original world.
 
 ### Re-Packaging a Minecraft World
 
-Now, we're going to zip everything back up, rename the zip to .mcworld, and open it again in Minecraft.
+Now, we're going to zip everything back up, rename the zip to **.mcworld**, and open it again in Minecraft.
 
 1. Inside the world folder, select all of the individual files.
-2. With all of the files selected, right-click any one of the selected files and choose "Compress to ZIP file."
 
-![New_World folder with files selected and right-click context menu displayed; Compress to ZIP file option is selected.](Media/PackagingAWorldTemplate/re-zip_world_contents.png)
+2. With all of the files selected, right-click any one of the selected files and choose **Compress to ZIP file**.
 
-3. The zip file will be created among the other files and the computer will automatically give it the same name as the file you right-clicked. That's okay. Name it something distinctive like **New_World_EDITED.zip**.
+![Image of the New_World folder with files selected and right-click context menu displayed; Compress to ZIP file option is selected.](Media/PackagingAWorldTemplate/re-zip_world_contents.png)
+
+3. The zip file will be created among the other files and the computer will automatically give it the same name as the file you right-clicked. That's okay. You can rename the zip file to something distinctive like **New_World_EDITED.zip**.
 
 ![Image of the world files selected and the context menu displayed. The Compress to ZIP file option is selected.](Media/PackagingAWorldTemplate/new_world_edited_zip.png)
 
-4. After the zip file is created, change the **.zip** extension to **.mcworld**.
+4. After the zip file is created, use the rename option to change the **.zip** extension to **.mcworld**.
 
 ![Image showing the New_World_EDITED.zip file](Media/PackagingAWorldTemplate/new_world_edited_mcworld.png)
 
 >[!NOTE]
-> You can just give the new zip file the name **New_World.mcworld** as it's being created, but I wanted to make sure to show you that the final **.mcworld** file is simply a re-named **.zip** file.
+> You can just give the new zip file the name **New_World.mcworld** as it's being created, but I wanted to show you that the final **.mcworld** file is simply a renamed **.zip** file.
 
 >[!IMPORTANT]
 > Do **not** try to zip the whole folder and rename it from .zip to .mcworld.
-> When the computer zips a file, it creates a folder for the things you want zipped, so the world folder will go inside a another folder and Minecraft will not be able to import the world.
+> When the computer zips a file, it creates a folder for the things you want zipped, so the world folder goes inside another folder and Minecraft will not be able to import the world.
 
 ![Image of the New_World_EDITED.mcworld file displayed with the Minecraft icon.](Media/PackagingAWorldTemplate/new_world_edited_mcworld_done.png)
 
 After you change the file extension to **.mcworld**, the file will have the Minecraft logo on it.
 
 5. Double-click the **New_World.mcworld** to launch Minecraft and import the world. You should see messages that confirm that the world has started and finished being imported successfully.
-1. Click **Play** to go to the Play screen, where this world will be displayed along with any others. 
+
+6. Click **Play** to go to the Play screen, where this world will be displayed along with any others.
 
 ![Image of Minecraft with the Worlds tab displayed. The original and edited worlds named New_World are displayed.](Media/PackagingAWorldTemplate/theres_the_edited_world.png)
 
@@ -107,11 +126,16 @@ Okay. Now that we know what a world file has in it, and how to zip and rename th
 All you need to turn a Minecraft world into a world template is:
 
 1. A working exported world, with any configurations and add-on packs installed.
+
 1. The proper **manifest.json** file.
-1. A folder named **texts** with 2 text files inside.
+
+1. A folder named **texts** with 2 text files inside: **en_US.lang** and **languages.json**.
+
 1. After you zip everything up, rename the file to have a **.mctemplate** extension.
 
-Resource pack and behavior pack folder names in world templates must be **10 characters or shorter**. This is due to an issue on Xbox where long paths may cause resource or behavior packs to not load properly. We suggest using an acronym of the contents title for folder names.
+Resource pack and behavior pack folder names in world templates must be **10 characters or shorter**. This is due to an issue on Xbox where long paths may cause resource or behavior packs to not load properly.
+
+We suggest using an acronym of the contents title for folder names.
 
 > [!WARNING]
 > With the release of `1.18`, templates created with base game version `1.17.4` or earlier will be updated with the new world generation tool and may break content when building new maps based upon that template.
