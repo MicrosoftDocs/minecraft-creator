@@ -1,12 +1,12 @@
 ---
 author: iconicNurdle
 ms.author: mikeam
-title: Creating a World Template from an Exported World
+title: Create a World Template from an Exported World
 description: "Tutorial regarding the structure and process of creating a world template"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Creating a World Template from an Exported World
+# Create a World Template from an Exported World
 
 If you created a really neat Minecraft world and you wanted to share that world with other players, you have some options. 
 
@@ -34,15 +34,15 @@ Ready? Here we go!
 
 2. Save and quit the world to go back to the Minecraft **Play** screen that shows all of your worlds.
 
-![Minecraft UI with list of worlds displayed. New_World is the only one on the list.](Media/CreatingAWorldTemplate/UI_list_of_worlds_step_2.png)
+![Minecraft UI with list of worlds displayed. New_World is the only one on the list.](Media/CreateAWorldTemplate/UI_list_of_worlds_step_2.png)
 
 3. Click the **Edit** button for that world to go to the **Edit World** screen.
 
-![Edit World screen with the General tab selected, Export World button is visible under the File Management header.](Media/CreatingAWorldTemplate/edit_world_export_step_3.png)
+![Edit World screen with the General tab selected, Export World button is visible under the File Management header.](Media/CreateAWorldTemplate/edit_world_export_step_3.png)
 
 4. On the General tab, in the File Management section, find the **Export World** button and click it. The Save As window will be displayed.
 
-![Windows Save As dialog window showing that the .mcworld file will be saved to the Desktop, inside a Minbecraft World folder.](Media/CreatingAWorldTemplate/world_save_as.png)
+![Windows Save As dialog window showing that the .mcworld file will be saved to the Desktop, inside a Minbecraft World folder.](Media/CreateAWorldTemplate/world_save_as.png)
 
 5. Choose a location that is easy for you to find, like in a folder on your computer's Desktop, and click the **Export** button.
 
@@ -50,15 +50,15 @@ Ready? Here we go!
 
 7. Change the file extension from **.mcworld** to **.zip**.
 
-![Image showing that the New_World.mcworld file has had the extension renamed to .zip, and the computer is displaying a Rename warning window.](Media/CreatingAWorldTemplate/are_you_sure.png)
+![Image showing that the New_World.mcworld file has had the extension renamed to .zip, and the computer is displaying a Rename warning window.](Media/CreateAWorldTemplate/are_you_sure.png)
 
 8. Your computer will warn you that the file might become unusable and ask "Are you sure you want to change it?" We're sure. Click **Yes**. The file's icon will look different.
 
-![Image of the New_World.zip file displayed with a typical ZIP file icon.](Media/CreatingAWorldTemplate/changed_to_dot_zip.png)
+![Image of the New_World.zip file displayed with a typical ZIP file icon.](Media/CreateAWorldTemplate/changed_to_dot_zip.png)
 
 9. Double-click the zip file to open it and choose **Extract All**. The structure should look something like this:
 
-![Contents of the New_World.zip folder before they are unzipped/extracted](Media/CreatingAWorldTemplate/extract_all.png)
+![Contents of the New_World.zip folder before they are unzipped/extracted](Media/CreateAWorldTemplate/extract_all.png)
 
 10. Open the files and check them out in Visual Studio code, but don't move them or change the names of anything.
 
@@ -90,7 +90,7 @@ LDB and LOG files are part of the database implementation for how your map is st
 
 11. Edit the **world_icon.jpeg** file in an app like Paint.
 
-![Image of the world with added "My Edited World!" text](Media/CreatingAWorldTemplate/edited_world_icon_jpeg.png)
+![Image of the world with added "My Edited World!" text](Media/CreateAWorldTemplate/edited_world_icon_jpeg.png)
 
 Don't get too attached to your edited world icon, though. Whenever you play the world and then save and exit, Minecraft makes a new icon to replace it to reflect your gameplay. We just want to make changes to this first one to distinguish it from the original world.
 
@@ -102,15 +102,15 @@ Now, we're going to zip everything back up, rename the zip to **.mcworld**, and 
 
 2. With all of the files selected, right-click any one of the selected files and choose **Compress to ZIP file**.
 
-![Image of the New_World folder with files selected and right-click context menu displayed; Compress to ZIP file option is selected.](Media/CreatingAWorldTemplate/re-zip_world_contents.png)
+![Image of the New_World folder with files selected and right-click context menu displayed; Compress to ZIP file option is selected.](Media/CreateAWorldTemplate/re-zip_world_contents.png)
 
 3. The zip file will be created among the other files and the computer will automatically give it the same name as the file you right-clicked. That's okay. You can rename the zip file to something distinctive like **New_World_EDITED.zip**.
 
-![Image of the world files selected and the context menu displayed. The Compress to ZIP file option is selected.](Media/CreatingAWorldTemplate/new_world_edited_zip.png)
+![Image of the world files selected and the context menu displayed. The Compress to ZIP file option is selected.](Media/CreateAWorldTemplate/new_world_edited_zip.png)
 
 4. After the zip file is created, use the rename option to change the **.zip** extension to **.mcworld**.
 
-![Image showing the New_World_EDITED.zip file](Media/CreatingAWorldTemplate/new_world_edited_mcworld.png)
+![Image showing the New_World_EDITED.zip file](Media/CreateAWorldTemplate/new_world_edited_mcworld.png)
 
 >[!NOTE]
 > You can just give the new zip file the name **New_World.mcworld** as it's being created, but I wanted to show you that the final **.mcworld** file is simply a renamed **.zip** file.
@@ -119,7 +119,7 @@ Now, we're going to zip everything back up, rename the zip to **.mcworld**, and 
 > Do **not** try to zip the whole folder and rename it from .zip to .mcworld.
 > When the computer zips a file, it creates a folder for the things you want zipped, so the world folder goes inside another folder and Minecraft will not be able to import the world.
 
-![Image of the New_World_EDITED.mcworld file displayed with the Minecraft icon.](Media/CreatingAWorldTemplate/new_world_edited_mcworld_done.png)
+![Image of the New_World_EDITED.mcworld file displayed with the Minecraft icon.](Media/CreateAWorldTemplate/new_world_edited_mcworld_done.png)
 
 After you change the file extension to **.mcworld**, the file will have the Minecraft logo on it.
 
@@ -127,7 +127,7 @@ After you change the file extension to **.mcworld**, the file will have the Mine
 
 6. Click **Play** to go to the Play screen, where this world will be displayed along with any others.
 
-![Image of Minecraft with the Worlds tab displayed. The original and edited worlds named New_World are displayed.](Media/CreatingAWorldTemplate/theres_the_edited_world.png)
+![Image of Minecraft with the Worlds tab displayed. The original and edited worlds named New_World are displayed.](Media/CreateAWorldTemplate/theres_the_edited_world.png)
 
 7. When you play the edited world, it will look just like the original one.
 
@@ -247,10 +247,47 @@ If you accidentally drag the entire folder out of your **com.mojang** folder, it
 
 3. All of your imported templates are in the **world_templates** folder. Minecraft puts them in there during the import process.
 
-## Variation: Add-on Packs
+## Variation: Add-On Packs
 
-## Variation: Random Seed World Template
+If you activate add-on packs in a world and then export it, this is what you get:
 
+
+When you make that world into a template, the file structure looks like this:
+
+
+
+## World Template Variation: Random Seed
+
+You can give players a random world each time they use your template with two steps:
+
+1. Starting with any unzipped, exported world, delete the **db** folder.
+
+2. Add `"allow_random_seed" : true` to the manifest.json.
+
+**Sample random seed world template manifest.json file**
+
+```json
+{
+  "header": {
+    "name": "pack.name",
+    "description": "pack.description",
+    "version": [1, 0, 0],
+    "uuid": "<FIRS GENERATED UUID>",
+    "allow_random_seed" : true
+
+  },
+  "modules": [
+    {
+      "version": [1, 0, 0],
+      "type": "world_template",
+      "uuid": "<SECOND GENERATED UUID>"
+    }
+  ],
+  "format_version": 2
+}
+```
+
+After the world is created, the world seed is locked and no longer editable.
 
 ### Base Game Versioning
 

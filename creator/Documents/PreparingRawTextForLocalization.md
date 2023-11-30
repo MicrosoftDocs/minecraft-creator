@@ -22,7 +22,7 @@ In this tutorial you will learn the following:
 It's recommended that *at least one* of the following be completed before beginning this tutorial, as they make use of translations and can serve as examples for this tutorial.
 
 - [Packaging a Skin Pack](PackagingASkinPack.md)
-- [Creating a World Template](CreateWorldTemplate.md)
+- [Creating a World Template](CreateAWorldTemplate.md)
 
 ## Text Strings
 

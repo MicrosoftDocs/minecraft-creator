@@ -1,23 +1,28 @@
 {
   "redirections": [
       {
-        "source_path": "Documents/CreatingAWorldTemplate.md",
-        "redirect_url": "/minecraft/creator/documents/createworldtemplate",
+        "source_path": "Documents/PackagingARandomSeedWorldTemplate.md",
+        "redirect_url": "/minecraft/creator/documents/createaworldtemplate.md",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "Documents/PackagingAWorldTemplate.md",
+        "redirect_url": "/minecraft/creator/documents/createaworldtemplate.md",
         "redirect_document_id": false
       },
       {
           "source_path": "Documents/CustomBlock.md",
-          "redirect_url": "/minecraft/creator/documents/addcustomdieblock",
+          "redirect_url": "/minecraft/creator/documents/addcustomdieblock.md",
           "redirect_document_id": false
       },
       {
         "source_path": "Reference/Content/BlockReference/Examples/BlockComponentsList.md",
-        "redirect_url": "/minecraft/creator/reference/content/blockreference/examples/blockcomponents/blockcomponentslist",
+        "redirect_url": "/minecraft/creator/reference/content/blockreference/examples/blockcomponents/blockcomponentslist.md",
         "redirect_document_id": false
       },
       {
         "source_path": "Reference/Content/BlockReference/Examples/BlockStatesList.md",
-        "redirect_url": "/minecraft/creator/reference/content/blockreference/examples/intrinsicblockstateslist",
+        "redirect_url": "/minecraft/creator/reference/content/blockreference/examples/intrinsicblockstateslist.md",
         "redirect_document_id": false
       },
       {

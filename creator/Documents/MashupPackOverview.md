@@ -1,8 +1,8 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Mash-up Pack Overview
-description: "Learn about what constitutes a mash-up pack and how the components work"
+description: "Learn about mash-up packs and how the components work"
 ms.service: minecraft-bedrock-edition
 ---
 
@@ -18,7 +18,7 @@ Here is some information about each individual component.
 
 > [!div class="nextstepaction"]
 > [Introduction to Resource Packs](ResourcePack.md)
-> [Creating a World Template](CreateWorldTemplate.md)
+> [Creating a World Template](CreateAWorldTemplate.md)
 > [Packaging a Skin Pack](PackagingASkinPack.md)
 > [Converting Texture Packs from Java Edition to Bedrock Edition](ConvertingTexturePacks.md)
 

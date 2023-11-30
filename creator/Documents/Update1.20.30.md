@@ -36,7 +36,7 @@ For example:
 **Random Seed** 
 Marketplace maps can now specify map templates to allow for random world seeds. 
 
-See: [Packaging a Random Seed World Template](../Documents/PackagingARandomSeedWorldTemplate.md).
+See: [Create A World Template](../Documents/CreateAWorldTemplate.md).
 
 **Custom Feature Placement**
 Several feature placement rules have released to give creators more world-gen capability. This allows creators to attach their custom features to a biome, and to define the rules by which those features are placed. 

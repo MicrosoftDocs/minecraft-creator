@@ -113,7 +113,7 @@ We'll talk about sharing a world with others. There are several approaches possi
 
 - Create a realm to invite other players to
 - Host a game with your friends in your world
-- [Create a World Template](CreateWorldTemplate.md) with our handy guide
+- [Create a World Template](CreateAWorldTemplate.md) with our handy guide
 
 ## What's Next?
 
