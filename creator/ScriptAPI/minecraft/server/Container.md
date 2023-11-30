@@ -101,6 +101,7 @@ const inventory = player.getComponent("inventory") as EntityInventoryComponent;
 const itemStack = inventory.container.getItem(0);
 ```
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getSlot**
 `
 getSlot(slot: number): ContainerSlot
@@ -120,6 +121,7 @@ Returns a container slot. This acts as a reference to a slot at the given index 
 
 > [!WARNING]
 > Throws if the container is invalid or if the `slot` index is out of bounds.
+::: moniker-end
 
 ### **isValid**
 `

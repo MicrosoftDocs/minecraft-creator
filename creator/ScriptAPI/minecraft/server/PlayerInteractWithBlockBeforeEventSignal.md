@@ -8,8 +8,7 @@ description: Contents of the @minecraft/server.PlayerInteractWithBlockBeforeEven
 ---
 # PlayerInteractWithBlockBeforeEventSignal Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
+Manages callbacks that are connected to before a player interacts with a block.
 
 ## Methods
 - [subscribe](#subscribe)
@@ -19,6 +18,8 @@ description: Contents of the @minecraft/server.PlayerInteractWithBlockBeforeEven
 `
 subscribe(callback: (arg: PlayerInteractWithBlockBeforeEvent) => void): (arg: PlayerInteractWithBlockBeforeEvent) => void
 `
+
+Adds a callback that will be called before a player interacts with a block.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerInteractWithBlockBeforeEvent*](PlayerInteractWithBlockBeforeEvent.md)) => *void*
@@ -32,6 +33,8 @@ subscribe(callback: (arg: PlayerInteractWithBlockBeforeEvent) => void): (arg: Pl
 `
 unsubscribe(callback: (arg: PlayerInteractWithBlockBeforeEvent) => void): void
 `
+
+Removes a callback from being called before a player interacts with a block.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerInteractWithBlockBeforeEvent*](PlayerInteractWithBlockBeforeEvent.md)) => *void*

@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityType Class
 description: Contents of the @minecraft/server.EntityType class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityType Class
 

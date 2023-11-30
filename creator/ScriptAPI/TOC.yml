@@ -6,6 +6,8 @@
         href: minecraft/common/minecraft-common.md
       - name: minecraft/common Changelog
         href: minecraft/common/changelog.md
+      - name: NumberRange
+        href: minecraft/common/NumberRange.md
     - name: minecraft/server-admin
       items:
       - name: minecraft/server-admin
@@ -218,8 +220,6 @@
         href: minecraft/server/DataDrivenEntityTriggerBeforeEvent.md
       - name: DataDrivenEntityTriggerBeforeEventSignal
         href: minecraft/server/DataDrivenEntityTriggerBeforeEventSignal.md
-      - name: DefinitionModifier
-        href: minecraft/server/DefinitionModifier.md
       - name: Dimension
         href: minecraft/server/Dimension.md
       - name: DimensionType
@@ -388,6 +388,8 @@
         href: minecraft/server/EntityNavigationHoverComponent.md
       - name: EntityNavigationWalkComponent
         href: minecraft/server/EntityNavigationWalkComponent.md
+      - name: EntityNpcComponent
+        href: minecraft/server/EntityNpcComponent.md
       - name: EntityOnFireComponent
         href: minecraft/server/EntityOnFireComponent.md
       - name: EntityPushThroughComponent
@@ -696,6 +698,8 @@
         href: minecraft/server/CameraSetRotOptions.md
       - name: CompoundBlockVolumeItem
         href: minecraft/server/CompoundBlockVolumeItem.md
+      - name: DefinitionModifier
+        href: minecraft/server/DefinitionModifier.md
       - name: DimensionLocation
         href: minecraft/server/DimensionLocation.md
       - name: EntityApplyDamageByProjectileOptions
@@ -724,8 +728,6 @@
         href: minecraft/server/ExplosionOptions.md
       - name: MusicOptions
         href: minecraft/server/MusicOptions.md
-      - name: NumberRange
-        href: minecraft/server/NumberRange.md
       - name: PlayAnimationOptions
         href: minecraft/server/PlayAnimationOptions.md
       - name: PlayerSoundOptions
@@ -778,6 +780,8 @@
         href: minecraft/server-editor/EditorMode.md
       - name: EditorStatusBarAlignment
         href: minecraft/server-editor/EditorStatusBarAlignment.md
+      - name: GraphicsSettingsProperty
+        href: minecraft/server-editor/GraphicsSettingsProperty.md
       - name: InputModifier
         href: minecraft/server-editor/InputModifier.md
       - name: KeyboardKey
@@ -806,6 +810,8 @@
         href: minecraft/server-editor/ExtensionContext.md
       - name: ExtensionContextAfterEvents
         href: minecraft/server-editor/ExtensionContextAfterEvents.md
+      - name: GraphicsSettings
+        href: minecraft/server-editor/GraphicsSettings.md
       - name: Logger
         href: minecraft/server-editor/Logger.md
       - name: MinecraftEditor
@@ -820,6 +826,8 @@
         href: minecraft/server-editor/Selection.md
       - name: SelectionManager
         href: minecraft/server-editor/SelectionManager.md
+      - name: SettingsManager
+        href: minecraft/server-editor/SettingsManager.md
       - name: TransactionManager
         href: minecraft/server-editor/TransactionManager.md
       - name: ClipboardWriteOptions

@@ -104,7 +104,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [DataDrivenEntityTriggerAfterEventSignal](DataDrivenEntityTriggerAfterEventSignal.md)
 - [DataDrivenEntityTriggerBeforeEvent](DataDrivenEntityTriggerBeforeEvent.md)
 - [DataDrivenEntityTriggerBeforeEventSignal](DataDrivenEntityTriggerBeforeEventSignal.md)
-- [DefinitionModifier](DefinitionModifier.md)
 - [Dimension](Dimension.md)
 - [DimensionType](DimensionType.md)
 - [DimensionTypes](DimensionTypes.md)
@@ -189,6 +188,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntityNavigationGenericComponent](EntityNavigationGenericComponent.md)
 - [EntityNavigationHoverComponent](EntityNavigationHoverComponent.md)
 - [EntityNavigationWalkComponent](EntityNavigationWalkComponent.md)
+- [EntityNpcComponent](EntityNpcComponent.md)
 - [EntityOnFireComponent](EntityOnFireComponent.md)
 - [EntityPushThroughComponent](EntityPushThroughComponent.md)
 - [EntityRemoveAfterEvent](EntityRemoveAfterEvent.md)
@@ -345,6 +345,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [CameraSetPosOptions](CameraSetPosOptions.md)
 - [CameraSetRotOptions](CameraSetRotOptions.md)
 - [CompoundBlockVolumeItem](CompoundBlockVolumeItem.md)
+- [DefinitionModifier](DefinitionModifier.md)
 - [DimensionLocation](DimensionLocation.md)
 - [EntityApplyDamageByProjectileOptions](EntityApplyDamageByProjectileOptions.md)
 - [EntityApplyDamageOptions](EntityApplyDamageOptions.md)
@@ -359,7 +360,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntityRaycastOptions](EntityRaycastOptions.md)
 - [ExplosionOptions](ExplosionOptions.md)
 - [MusicOptions](MusicOptions.md)
-- [NumberRange](NumberRange.md)
 - [PlayAnimationOptions](PlayAnimationOptions.md)
 - [PlayerSoundOptions](PlayerSoundOptions.md)
 - [RawMessage](RawMessage.md)
@@ -389,9 +389,7 @@ Holds the number of MoonPhases
 
 Type: *number*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
+::: moniker range="=minecraft-bedrock-experimental"
 ### **TicksPerDay**
 `static read-only TicksPerDay = 24000;`
 
@@ -399,6 +397,7 @@ Type: *number*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **TicksPerSecond**
 `static read-only TicksPerSecond = 20;`
@@ -406,9 +405,6 @@ Type: *number*
 How many times the server ticks per second of real time.
 
 Type: *number*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Objects
   

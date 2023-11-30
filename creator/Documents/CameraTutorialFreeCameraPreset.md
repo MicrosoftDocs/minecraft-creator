@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Camera Command Tutorial - Free Camera Preset
-ms.prod: gaming
 description: "A tutorial about the Free Camera Preset command"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Free Camera Preset: Command Basics

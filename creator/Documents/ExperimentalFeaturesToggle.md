@@ -8,6 +8,10 @@ ms.service: minecraft-bedrock-edition
 
 # Experimental Features in Minecraft: Bedrock Edition
 
+> [!NOTE]
+> This documentation is segmented into `Stable` and `Experimental` document sets. To see full documentation about experimental features and APIs, be sure to select the [Minecraft Bedrock Experimental APIs option](/minecraft/creator/documents/experimentalfeaturestoggle?view=minecraft-bedrock-experimental).
+![image showing the Document Versions Dropdown.](Media/ExperimentalFeatures/ExperimentalApiDocs.png)
+
 With each retail version of Minecraft: Bedrock Edition, there are a few features that are currently in an experimental state. Experimental Features can be toggled on for creators who are interested in testing the latest features offered in the beta, preview, and retail versions of Minecraft.
 
 > [!NOTE]

@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.Seat Class
 description: Contents of the @minecraft/server.Seat class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # Seat Class
 

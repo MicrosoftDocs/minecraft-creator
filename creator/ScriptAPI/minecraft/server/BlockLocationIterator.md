@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockLocationIterator Class
 description: Contents of the @minecraft/server.BlockLocationIterator class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockLocationIterator Class
 

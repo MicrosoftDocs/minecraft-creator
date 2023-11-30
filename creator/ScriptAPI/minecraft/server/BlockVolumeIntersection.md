@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .BlockVolumeIntersection Enumeration
 description: Contents of the .BlockVolumeIntersection enumeration.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockVolumeIntersection Enumeration
 

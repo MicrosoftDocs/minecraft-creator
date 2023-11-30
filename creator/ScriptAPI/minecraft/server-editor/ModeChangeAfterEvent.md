@@ -8,9 +8,13 @@ description: Contents of the @minecraft/server-editor.ModeChangeAfterEvent class
 ---
 # ModeChangeAfterEvent Class
 
+Contains information related to changes in player editor mode.
+
 ## Properties
 
 ### **mode**
 `read-only mode: EditorMode;`
+
+The editor mode that the player is changed to.
 
 Type: [*EditorMode*](EditorMode.md)

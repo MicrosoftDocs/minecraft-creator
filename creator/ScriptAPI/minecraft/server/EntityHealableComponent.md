@@ -15,6 +15,7 @@ Defines the interactions with this entity for healing it.
 
 ## Properties
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **filters**
 `read-only filters: FilterGroup;`
 
@@ -27,6 +28,7 @@ Type: [*FilterGroup*](FilterGroup.md)
     
 > [!WARNING]
 > This property can throw errors when used.
+::: moniker-end
 
 ### **forceUse**
 `read-only forceUse: boolean;`

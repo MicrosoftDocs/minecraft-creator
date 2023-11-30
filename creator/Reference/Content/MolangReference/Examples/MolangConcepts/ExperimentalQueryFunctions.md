@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Molang Documentation - Experimental Query Functions
 description: "A reference document detailing experimental Molang query functions"
 ms.service: minecraft-bedrock-edition
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 
 # Molang Documentation - Experimental Query Functions

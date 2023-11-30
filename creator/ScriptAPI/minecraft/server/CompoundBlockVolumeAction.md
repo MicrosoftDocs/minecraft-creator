@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .CompoundBlockVolumeAction Enumeration
 description: Contents of the .CompoundBlockVolumeAction enumeration.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CompoundBlockVolumeAction Enumeration
 

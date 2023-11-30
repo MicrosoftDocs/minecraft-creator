@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Packaging a Random Seed World Template
-ms.prod: gaming
 description: "An article detailing the process of packaging a world template for random seed generated worlds"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Random Seed Generation

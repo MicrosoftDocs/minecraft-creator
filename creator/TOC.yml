@@ -34,26 +34,20 @@
               href: Documents/WorldHeightChange.md        
     - name: Concepts
       items:
-        - name: 'Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition'
-          href: Documents/DifferencesBetweenBedrockAndJava.md
-        - name: "Experimental Features in Minecraft: Bedrock Edition"
-          href: Documents/ExperimentalFeaturesToggle.md
-        - name: Getting Started
+        - name: Getting Started with Add-Ons
           href: Documents/GettingStarted.md
-        - name: "Installing Add-Ons in Minecraft: Bedrock"
-          href: Documents/AddonPackInstallation.md
-        - name: Copy and Paste Coordinates
-          href: Documents/CopyCoordinates.md
-        - name: Content Error Log
-          href: Documents/ContentErrorLog.md
-        - name: Designing Gameplay for Various Devices
-          href: Documents/DesigningGameplayForVariousDevices.md
         - name: Introduction to Resource Packs
           href: Documents/ResourcePack.md
         - name: Introduction to Behavior Packs
           href: Documents/BehaviorPack.md
-        - name: Utilizing Sub-Packs
-          href: Documents/UtilizingSubpacks.md
+        - name: 'Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition'
+          href: Documents/DifferencesBetweenBedrockAndJava.md
+        - name: Designing Gameplay for Various Devices
+          href: Documents/DesigningGameplayForVariousDevices.md
+        - name: Minecraft File Extensions
+          href: Documents/MinecraftFileExtensions.md
+        - name: "Experimental Features in Minecraft: Bedrock Edition"
+          href: Documents/ExperimentalFeaturesToggle.md
         - name: Adding Custom Items
           href: Documents/AddCustomItems.md
         - name: Adding Custom Sounds
@@ -64,6 +58,8 @@
             href: Documents/PackagingASkinPack.md
           - name: Creating a World Template
             href: Documents/CreateWorldTemplate.md
+          - name: Utilizing Sub-Packs
+            href: Documents/UtilizingSubpacks.md
           - name: Mash-up Pack Overview
             href: Documents/MashupPackOverview.md
           - name: 'Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition'
@@ -74,10 +70,8 @@
           items:
           - name: Getting Started with Deferred Lighting
             href: Documents/DeferredLighting.md
-          - name: Base Game Versioning
+          - name: World Templates and Base Game Versioning
             href: Documents/BaseGameVersioning.md
-          - name: Minecraft File Extensions
-            href: Documents/MinecraftFileExtensions.md
           - name: Editing NBTs Safely
             href: Documents/EditingNBTSafely.md
           - name: Getting Started with Ray Tracing
@@ -86,6 +80,8 @@
             href: Documents/RTXPBRIntro.md
           - name: Physically Based Rendering Tutorial
             href: Documents/RTXPBRTutorial.md
+          - name: Actor Storage
+            href: Documents/ActorStorage.md
     - name: Game Logic
       items:
         - name: 'Redstone Guide'
@@ -94,55 +90,41 @@
           href: Documents/MolangBeginnersGuide.md
         - name: Introduction to Sound
           href: Documents/IntroductionToSound.md
-        - name: Introduction to Scripting in Minecraft
-          href: Documents/ScriptingIntroduction.md
-        - name: Popular Commands
-          href: Documents/CommandsPopularCommands.md
-        - name: The Damage Command
-          href: Documents/CommandsDamageIntroduction.md
-        - name: Scoreboard Operations Tutorial
-          href: Documents/ScoreboardOperationsTutorial.md
-        - name: How to use tick.json
-          href: Documents/TickJsonIntroduction.md
-        - name: Introduction to Loot Tables
-          href: Documents/IntroductionToLootTables.md
-        - name: Loot and Trade Table Functions
-          href: Documents/LootAndTradeTableFunctions.md
-        - name: Loot Overloads
-          href: Documents/LootOverloads.md
-        - name: Loot Table Conditions
-          href: Documents/LootTableConditions.md
-        - name: Creating a Loot Table
-          href: Documents/CreateLootTable.md
-        - name: Getting Started with GameTest Framework
-          href: Documents/GameTestGettingStarted.md
-        - name: Script Versioning
-          href: Documents/ScriptVersioning.md
-        - name: Building Editor Extensions
-          href: Documents/EditorExtensionsIntroduction.md
-        - name: Introduction to Functions
-          href: Documents/FunctionsIntroduction.md
-        - name: New /execute command syntax
-          href: Documents/CommandsNewExecute.md
         - name: Introduction to Commands
           href: Documents/CommandsIntroduction.md
-        - name: Free Camera Preset Tutorial
-          href: Documents/CameraTutorialFreeCameraPreset.md
+        - name: Popular Commands
+          href: Documents/CommandsPopularCommands.md
+        - name: Introduction to Scripting in Minecraft
+          href: Documents/ScriptingIntroduction.md
         - name: Introduction to Scoreboards
           href: Documents/ScoreboardIntroduction.md
         - name: Build Gameplay with TypeScript
           href: Documents/ScriptingGettingStarted.md
+        - name: The Damage Command
+          href: Documents/CommandsDamageIntroduction.md
+        - name: Introduction to Functions
+          href: Documents/FunctionsIntroduction.md
+        - name: Scoreboard Operations Tutorial
+          href: Documents/ScoreboardOperationsTutorial.md
+        - name: How to use tick.json
+          href: Documents/TickJsonIntroduction.md
+        - name: Script Versioning
+          href: Documents/ScriptVersioning.md
+        - name: Building Editor Extensions
+          href: Documents/EditorExtensionsIntroduction.md
+        - name: New /execute command syntax
+          href: Documents/CommandsNewExecute.md
+        - name: Free Camera Preset Tutorial
+          href: Documents/CameraTutorialFreeCameraPreset.md
         - name: Use Script Along with Dedicated Servers
           href: Documents/ScriptingServers.md
         - name: Use Visual Studio Code Tools to Write Script
           href: Documents/ScriptDeveloperTools.md
-        - name: Build your First GameTest
-          href: Documents/GameTestBuildYourFirstGameTest.md
         - name: The Camera Command
           href: Documents/CameraCommandIntroduction.md
         - name: The Tickingarea Command
           href: Documents/TickingAreaCommand.md
-    - name: World
+    - name: Worlds
       items:
         - name: Survival Spawn Creation
           href: Documents/SurvivalSpawnCreation.md
@@ -178,8 +160,16 @@
           href: Documents/CreateNPCs.md
         - name: NPC Dialogue Command
           href: Documents/NPCDialogue.md
-        - name: Actor Storage
-          href: Documents/ActorStorage.md
+        - name: Introduction to Loot Tables
+          href: Documents/IntroductionToLootTables.md
+        - name: Loot and Trade Table Functions
+          href: Documents/LootAndTradeTableFunctions.md
+        - name: Loot Overloads
+          href: Documents/LootOverloads.md
+        - name: Loot Table Conditions
+          href: Documents/LootTableConditions.md
+        - name: Creating a Loot Table
+          href: Documents/CreateLootTable.md
         - name: Particle Effects
           href: Documents/ParticleEffects.md
     - name: Blocks
@@ -200,6 +190,16 @@
       items:
         - name: Commonly Used Tools
           href: Documents/CommonlyUsedTools.md
+        - name: In-Game Tools
+          items:
+            - name: Copy and Paste Coordinates
+              href: Documents/CopyCoordinates.md
+            - name: Content Error Log
+              href: Documents/ContentErrorLog.md
+            - name: Getting Started with GameTest Framework
+              href: Documents/GameTestGettingStarted.md
+            - name: Build your First GameTest
+              href: Documents/GameTestBuildYourFirstGameTest.md
         - name: Bedrock Editor
           items:
             - name: Editor Installation Guide
@@ -228,21 +228,21 @@
               href: Documents/ChunkerTheNether.md        
     - name: Reference Documentation
       items:
-      - name: Scripting and API
-        items:
-          - name: Script API Documentation Homepage
-            href: ScriptAPI/index.yml
-          - name: API References
-            href: ScriptAPI/TOC.yml
       - name: Commands
         items:
           - name: Command Documentation Homepage
             href: Commands/index.yml
           - name: Command References
             href: Commands/TOC.yml
+      - name: Scripting and API
+        items:
+          - name: Script API Documentation Homepage
+            href: ScriptAPI/index.yml
+          - name: API References
+            href: ScriptAPI/TOC.yml
       - name: JSON Reference Documentation Homepage
         href: Reference/index.yml
-      - name: Behavior Pack
+      - name: Behavior Pack JSON Files
         items:
         - name: Addons JSON
           items:
@@ -402,7 +402,7 @@
             href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/weight.md
           - name: World Age Filter
             href: Reference/Content/EntityReference/Examples/Definitions/NestedTables/world_age_filter.md
-      - name: Resource Pack
+      - name: Resource Pack JSON Files
         items:
         - name: Client Entity JSON
           href: Reference/Content/entityreference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md
@@ -430,9 +430,9 @@
           items:
           - name: Introduction to Texture Sets
             href: Reference/Content/texturesetsreference/texturesetsconcepts/texturesetsintroduction.md
-      - name: Molang Documentation
+      - name: Molang
         items:
-          - name: Molang Documentation Homepage
+          - name: Molang Homepage
             href: Reference/Content/molangreference/index.yml
           - name: Molang Concepts
             href: Reference/Content/Molangreference/Examples/Molangconcepts/TOC.yml

@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.SystemBeforeEvents Class
 description: Contents of the @minecraft/server.SystemBeforeEvents class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # SystemBeforeEvents Class
 

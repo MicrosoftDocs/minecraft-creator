@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .BlockComponentTypes Enumeration
 description: Contents of the .BlockComponentTypes enumeration.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockComponentTypes Enumeration
 

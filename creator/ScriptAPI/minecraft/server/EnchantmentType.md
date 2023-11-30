@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EnchantmentType Class
 description: Contents of the @minecraft/server.EnchantmentType class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EnchantmentType Class
 

@@ -19,9 +19,7 @@ Returns a collection of after-events for system-level operations.
 
 Type: [*SystemAfterEvents*](SystemAfterEvents.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
+::: moniker range="=minecraft-bedrock-experimental"
 ### **beforeEvents**
 `read-only beforeEvents: SystemBeforeEvents;`
 
@@ -31,6 +29,7 @@ Type: [*SystemBeforeEvents*](SystemBeforeEvents.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **currentTick**
 `read-only currentTick: number;`

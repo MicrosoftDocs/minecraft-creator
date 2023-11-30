@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.PlayerPlaceBlockBeforeEvent Class
 description: Contents of the @minecraft/server.PlayerPlaceBlockBeforeEvent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlayerPlaceBlockBeforeEvent Class
 

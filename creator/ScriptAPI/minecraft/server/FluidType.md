@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .FluidType Enumeration
 description: Contents of the .FluidType enumeration.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # FluidType Enumeration
 

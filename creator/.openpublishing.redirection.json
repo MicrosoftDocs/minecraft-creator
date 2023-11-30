@@ -16,6 +16,11 @@
           "redirect_document_id": false
       },
       {
+        "source_path": "Documents/addonpackinstallation.md",
+        "redirect_url": "/minecraft/creator/documents/gettingstarted",
+        "redirect_document_id": false
+    },
+      {
         "source_path": "Reference/Content/BlockReference/Examples/BlockComponentsList.md",
         "redirect_url": "/minecraft/creator/reference/content/blockreference/examples/blockcomponents/blockcomponentslist.md",
         "redirect_document_id": false

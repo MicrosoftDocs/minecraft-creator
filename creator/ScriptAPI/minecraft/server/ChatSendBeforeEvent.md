@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ChatSendBeforeEvent Class
 description: Contents of the @minecraft/server.ChatSendBeforeEvent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ChatSendBeforeEvent Class
 

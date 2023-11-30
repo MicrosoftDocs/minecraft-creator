@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.NavigationResult Class
 description: Contents of the @minecraft/server.NavigationResult class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # NavigationResult Class
 

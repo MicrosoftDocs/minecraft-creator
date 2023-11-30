@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockVolumeUtils Class
 description: Contents of the @minecraft/server.BlockVolumeUtils class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockVolumeUtils Class
 

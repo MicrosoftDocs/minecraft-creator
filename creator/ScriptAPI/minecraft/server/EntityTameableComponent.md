@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityTameableComponent Class
 description: Contents of the @minecraft/server.EntityTameableComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityTameableComponent Class
 

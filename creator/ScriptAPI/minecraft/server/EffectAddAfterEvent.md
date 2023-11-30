@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EffectAddAfterEvent Class
 description: Contents of the @minecraft/server.EffectAddAfterEvent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EffectAddAfterEvent Class
 

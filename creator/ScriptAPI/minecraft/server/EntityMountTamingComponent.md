@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityMountTamingComponent Class
 description: Contents of the @minecraft/server.EntityMountTamingComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityMountTamingComponent Class
 

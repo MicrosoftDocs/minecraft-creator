@@ -5,6 +5,7 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ServerMessageAfterEventSignal Class
 description: Contents of the @minecraft/server.ServerMessageAfterEventSignal class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ServerMessageAfterEventSignal Class
 

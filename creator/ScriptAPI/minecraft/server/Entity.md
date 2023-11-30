@@ -25,6 +25,7 @@ Type: [*Dimension*](Dimension.md)
 > [!WARNING]
 > This property can throw errors when used.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **fallDistance**
 `read-only fallDistance: number;`
 
@@ -37,6 +38,7 @@ Type: *number*
     
 > [!WARNING]
 > This property can throw errors when used.
+::: moniker-end
 
 ### **id**
 `read-only id: string;`
@@ -51,9 +53,6 @@ Type: *string*
 Whether the entity is touching a climbable block. For example, a player next to a ladder or a spider next to a stone wall.
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
     
 > [!WARNING]
 > This property can throw errors when used.
@@ -64,9 +63,6 @@ Type: *boolean*
 Whether the entity has a fall distance greater than 0, or greater than 1 while gliding.
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
     
 > [!WARNING]
 > This property can throw errors when used.
@@ -77,9 +73,6 @@ Type: *boolean*
 Whether any part of the entity is inside a water block.
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
     
 > [!WARNING]
 > This property can throw errors when used.
@@ -90,9 +83,6 @@ Type: *boolean*
 Whether the entity is on top of a solid block.
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
     
 > [!WARNING]
 > This property can throw errors when used.
@@ -103,9 +93,6 @@ Type: *boolean*
 If true, the entity is currently sleeping.
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
     
 > [!WARNING]
 > This property can throw errors when used.
@@ -116,9 +103,6 @@ Type: *boolean*
 Whether the entity is sneaking - that is, moving more slowly and more quietly.
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 > [!IMPORTANT]
 > This property can't be edited in read-only mode.
@@ -129,9 +113,6 @@ Type: *boolean*
 Whether the entity is sprinting. For example, a player using the sprint action, an ocelot running away or a pig boosting with Carrot on a Stick.
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
     
 > [!WARNING]
 > This property can throw errors when used.
@@ -142,13 +123,11 @@ Type: *boolean*
 Whether the entity is in the swimming state. For example, a player using the swim action or a fish in water.
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
     
 > [!WARNING]
 > This property can throw errors when used.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **lifetimeState**
 `read-only lifetimeState: EntityLifetimeState;`
 
@@ -158,6 +137,7 @@ Type: [*EntityLifetimeState*](EntityLifetimeState.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **location**
 `read-only location: Vector3;`
@@ -188,10 +168,11 @@ Will remain valid when the entity is killed.
 
 Type: [*ScoreboardIdentity*](ScoreboardIdentity.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **target**
-`read-only target: Entity;`
+`read-only target?: Entity;`
 
-Retrieves or sets an entity that is used as the target of AI-related behaviors, like attacking.
+Retrieves or sets an entity that is used as the target of AI-related behaviors, like attacking. If the entity currently has no target returns undefined.
 
 Type: [*Entity*](Entity.md)
 
@@ -200,6 +181,7 @@ Type: [*Entity*](Entity.md)
     
 > [!WARNING]
 > This property can throw errors when used.
+::: moniker-end
 
 ### **typeId**
 `read-only typeId: string;`
@@ -474,9 +456,6 @@ clearDynamicProperties(): void
 
 Clears all dynamic properties that have been set on this entity.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 
@@ -504,6 +483,7 @@ Sets the current velocity of the Entity to zero. Note that this method may not h
   zombie.applyImpulse({ x: 0, y: 0.5, z: 0 });
 ```
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **extinguishFire**
 `
 extinguishFire(useEffects?: boolean): boolean
@@ -555,6 +535,7 @@ Extinguishes the fire if the entity is on fire. Note that you can call getCompon
     );
   }, 20);
 ```
+::: moniker-end
 
 ### **getBlockFromViewDirection**
 `
@@ -610,9 +591,6 @@ Returns a property value.
 
 #### **Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 
@@ -621,12 +599,9 @@ Returns a property value.
 getDynamicPropertyIds(): string[]
 `
 
-Returns the available sett of dynamic property identifiers that have been used on this entity.
+Returns the available set of dynamic property identifiers that have been used on this entity.
 
-#### **Returns** *string*[] - A string array of set dynamic properties used on this entity.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+#### **Returns** *string*[] - A string array of the dynamic properties set on this entity.
 
 > [!WARNING]
 > This function can throw errors.
@@ -639,9 +614,6 @@ getDynamicPropertyTotalByteCount(): number
 Returns the total size, in bytes, of all the dynamic properties that are currently stored for this entity.  This can be useful for diagnosing performance warning signs - if, for example, an entity has many megabytes of associated dynamic properties, it may be slow to load on various devices.
 
 #### **Returns** *number*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.
@@ -867,12 +839,10 @@ Matches the entity against the passed in options. Uses the location of the entit
 
 #### **Returns** *boolean* - Returns true if the entity matches the criteria in the passed in EntityQueryOptions, otherwise it returns false.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
-> This function can throw errors.
+> Returns true if this entity matches the specified query criteria.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **playAnimation**
 `
 playAnimation(animationName: string, options?: PlayAnimationOptions): void
@@ -896,6 +866,7 @@ Cause the entity to play the given animation.
 
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end
 
 ### **remove**
 `
@@ -903,9 +874,6 @@ remove(): void
 `
 
 Immediately removes the entity from the world. The removed entity will not perform a death animation or drop loot upon removal.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -1029,12 +997,10 @@ Sets a specified property to a value.
   
   Data value of the property to set.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **setOnFire**
 `
 setOnFire(seconds: number, useEffects?: boolean): boolean
@@ -1089,6 +1055,7 @@ Sets an entity on fire (if it is not in water or rain). Note that you can call g
     );
   }, 20);
 ```
+::: moniker-end
 
 ### **setProperty**
 `
