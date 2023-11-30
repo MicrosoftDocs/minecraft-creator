@@ -56,8 +56,8 @@
           items:
           - name: Packaging a Skin Pack
             href: Documents/PackagingASkinPack.md
-          - name: Creating a World Template
-            href: Documents/CreateWorldTemplate.md
+          - name: Create a World Template
+            href: Documents/CreateAWorldTemplate.md
           - name: Utilizing Sub-Packs
             href: Documents/UtilizingSubpacks.md
           - name: Mash-up Pack Overview
