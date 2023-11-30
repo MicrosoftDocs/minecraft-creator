@@ -73,8 +73,6 @@ This is the baseline for our project.
 000005.ldb - Microsoft Access Record-Locking Information
 000006.log - Text Document
 LDB and LOG files are part of the database implementation for how your map is stored. They are binary and not friendly for editing by hand, so don't touch these!
-
-
     - **000005.ldb** - Binary file, not editable
     - **000006.log** - Binary file, not editable
     - **CURRENT** - File that contains something like "MANIFEST-000004"
@@ -256,7 +254,10 @@ When you make that world into a template, the file structure looks like this:
 
 
 
-## World Template Variation: Random Seed
+Resource pack and behavior pack folder names in world templates must be **10 characters or shorter**. This is due to an issue on Xbox where long paths may cause resource or behavior packs to not load properly. We suggest using an acronym of the contents title for folder names.
+
+
+## Variation: Random Seed
 
 You can give players a random world each time they use your template with two steps:
 
@@ -272,7 +273,7 @@ You can give players a random world each time they use your template with two st
     "name": "pack.name",
     "description": "pack.description",
     "version": [1, 0, 0],
-    "uuid": "<FIRS GENERATED UUID>",
+    "uuid": "<FIRST GENERATED UUID>",
     "allow_random_seed" : true
 
   },
@@ -291,7 +292,7 @@ After the world is created, the world seed is locked and no longer editable.
 
 ### Base Game Versioning
 
-Resource pack and behavior pack folder names in world templates must be **10 characters or shorter**. This is due to an issue on Xbox where long paths may cause resource or behavior packs to not load properly. We suggest using an acronym of the contents title for folder names.
+
 
 > [!WARNING]
 > With the release of `1.18`, templates created with base game version `1.17.4` or earlier will be updated with the new world generation tool and may break content when building new maps based upon that template.
