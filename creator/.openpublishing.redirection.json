@@ -1,5 +1,10 @@
 {
-  "redirections": [    
+  "redirections": [
+      {
+        "source_path": "Documents/CreatingAWorldTemplate.md",
+        "redirect_url": "/minecraft/creator/documents/createworldtemplate",
+        "redirect_document_id": false
+      },
       {
           "source_path": "Documents/CustomBlock.md",
           "redirect_url": "/minecraft/creator/documents/addcustomdieblock",

@@ -21,25 +21,23 @@ You will also need to add the `allow_random_seed` property to the manifest.json 
 
 ```json
 {
-        "format_version" : 2,
-        "header" : 
-        {
-            "base_game_version" : [ 1, 20, 1 ],
-            "description" : "pack.description",
-            "lock_template_options" : true,
-            "name" : "Allow Random Seed True",
-            "platform_locked" : false,
-            "uuid" : "eae96517-a409-4442-8de3-c518c1d3b2eb",
-            "version" : [ 1, 0, 0 ],
-            "allow_random_seed" : true
-        },
-        "modules" : 
-      [
-        {
-            "type" : "world_template",
-            "uuid" : "0b07f5e4-9e5d-4bbf-97ae-8e4c4d6c184b",
-            "version" : [ 1, 0, 0 ]
-        }
-    ]
+  "format_version": 2,
+  "header": {
+      "base_game_version": [ 1, 20, 1 ],
+      "description": "pack.description",
+      "lock_template_options": true,
+      "name": "Allow Random Seed True",
+      "platform_locked": false,
+      "uuid": "<FIRST GENERATED UUID>",
+      "version" : [ 1, 0, 0 ],
+      "allow_random_seed" : true
+  },
+  "modules": [
+    {
+      "type" : "world_template",
+      "uuid" : "<SECOND GENERATED UUID>",
+      "version" : [ 1, 0, 0 ]
+    }
+  ]
 }
 ```

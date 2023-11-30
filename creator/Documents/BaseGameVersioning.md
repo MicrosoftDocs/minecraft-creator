@@ -29,7 +29,7 @@ In this tutorial you will learn the following:
 
 It's recommended that the following be completed before beginning this tutorial.
 
-- [Packaging a World Template](PackagingAWorldTemplate.md)
+- [Creating a World Template](CreateWorldTemplate.md)
 
 ## Setup
 

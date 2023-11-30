@@ -1,10 +1,11 @@
 ---
-author: neonerz
+author: iconicNurdle
 ms.author: mikeam
 title: Preparing Raw Text for Localization
 description: "A set of guidelines to use when preparing raw text files for localization"
 ms.service: minecraft-bedrock-edition
 ---
+
 # Preparing Raw Text for Localization
 
 Please adhere to these guidelines when preparing raw text files for localization. These guidelines are critical for both the technical aspect of localization - parsing and distributing content within the localization system - and for ensuring the best possible translations through comprehensive and descriptive commenting.
@@ -13,19 +14,20 @@ In this tutorial you will learn the following:
 
 > [!div class="checklist"]
 >
-> - How to create a properly formatted language file.
-> - Best practices for supplying context to each translation.
+> - How to create a properly formatted language file
+> - Best practices for supplying context to each translation
 
 ### Requirements
 
-It's recommended that *at least one* the following be completed before beginning this tutorial, as they make use of translations and can serve as examples for this tutorial.
+It's recommended that *at least one* of the following be completed before beginning this tutorial, as they make use of translations and can serve as examples for this tutorial.
 
 - [Packaging a Skin Pack](PackagingASkinPack.md)
-- [Packaging a World Template](PackagingAWorldTemplate.md)
+- [Creating a World Template](CreateWorldTemplate.md)
 
 ## Text Strings
 
-Text that you have created to appear in the game is found in the `en_US.lang` file. Each text string appears on a single line, specially formatted to include certain data:
+Text that you create to appear in the game is found in the `en_US.lang` file.
+Each text string should be on a single line and have special formatting to include certain data:
 
 1. String Name (required)
 1. String Value (required)
@@ -39,9 +41,9 @@ StringName=StringValue ###StringComment
 
 ## String Names
 
-Each text string must have a *string name* (or *ID*, or *key*). This name is used to identify the text string within our translation system.
+Each text string must have a **string name** (or **ID**, or **key**). This name is used to identify the text string within our translation system.
 
-The string name (key/ID) starts at the beginning of a line and end with an equals `=` sign. It must also be unique when compared with all other names within the file.
+The string name (key/ID) starts at the beginning of a line and end with an equals `=` sign. It must be unique when compared with all other names within the file.
 
 ### String Names Example
 
@@ -53,7 +55,7 @@ Be sure to create a descriptive string name. A good string name gives clues to t
 
 ## String Values
 
-Each text string must have a *string value*. This value is the text that appears in the game to the player. Each value starts at the first equals `=` sign on the line and ends with a tab character followed by a hashtag character.
+Each text string must have a **string value**. This value is the text that appears in the game to the player. Each value starts at the first equals `=` sign on the line and ends with a tab character followed by a hashtag character.
 
 ### String Values Example
 
@@ -61,10 +63,10 @@ Each text string must have a *string value*. This value is the text that appears
 Welcome.Message.1=Welcome to our world! #
 ```
 
-Here, the string name is Welcome.Message.1, and the string value is Welcome to our world!.
+Here, the string name is **Welcome.Message.1**, and the string value is **Welcome to our world!**.
 
 > [!NOTE]
-> `<tab>#` is the required terminator for our parser to recognize the string. There's no harm in adding extra hashtags because that is the start of a comment (see below). Watch out for programs and/or processing that convert tabs to spaces; that won't work. The tab must be character code `U+0009`. Do **not** use leading or trailing spaces around the equals `=` sign.
+> `<tab>#` is the required terminator for our parser to recognize the string. There's no harm in adding extra hashtags because that is the start of a comment (see below). Watch out for programs and/or processing that convert tabs to spaces because that won't work. The tab must be character code `U+0009`. Do **not** use leading or trailing spaces around the equals `=` sign.
 
 ## Comments
 
@@ -106,8 +108,8 @@ Welcome.Sign.4=have fun! ### Welcome to our world! We hope you have fun!
 
 The `en_US.lang` file must be saved in UTF-8 encoding. Processing will fail if the file is encoded in ANSI, UTF-8 BOM, UCS-2, or any other encoding.
 
-For example, if you are using Windows 10's Notepad, when saving a file, make sure the "encoding" drop-down menu has UTF-8 selected. You should also set the "Save as type" to "All files" to avoid accidentally creating a `.txt` file.
+For example, if you are using Windows 10's Notepad, when saving a file, make sure the "encoding" drop-down menu has **UTF-8** selected. You should also set the "Save as type" to "All files" to avoid accidentally creating a `.txt` file.
 
 ![Windows 10's Notepad showing Encoding set to UTF-8](Media/PreparingRawTextForLocalization/utf8.png)
 
-It is possible to send separate documents (like PNG images or PDF documents) that show context for translation, but this is a manual process outside of the regular translation pipeline, and so is not a replacement for well-authored comments and string names.
+It is possible to send separate documents (like PNG images or PDF documents) that show context for translation, but this is a manual process outside of the regular translation pipeline, and is not a replacement for well-authored comments and string names.

@@ -18,7 +18,7 @@ Here is some information about each individual component.
 
 > [!div class="nextstepaction"]
 > [Introduction to Resource Packs](ResourcePack.md)
-> [Packaging a World Template](PackagingAWorldTemplate.md)
+> [Creating a World Template](CreateWorldTemplate.md)
 > [Packaging a Skin Pack](PackagingASkinPack.md)
 > [Converting Texture Packs from Java Edition to Bedrock Edition](ConvertingTexturePacks.md)
 
