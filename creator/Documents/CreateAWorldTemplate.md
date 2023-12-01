@@ -16,11 +16,11 @@ Worlds in the Minecraft Marketplace, like [survival spawns](SurvivalSpawnCreatio
 
 So where do world templates come from? Well, they are basically a zipped Minecraft world that contains the proper **manifest.json** file, a **texts** folder with some files inside it, and has the file extension **.mctemplate**.
 
-If your exported world has neat stuff added to it, like [add-on packs](GettingStarted.md), those get included, too.
+If your exported world has custom stuff added to it, like [add-on packs](GettingStarted.md), those get included, too.
 
 When you import a world file (**.mcworld**), it gets added to the list of Worlds and you just open it and get mining and crafting.
 
-When you import a world template (**.mctemplate**), it goes into the list of world templates and Minecraft knows to use it to create a world that will then be added to your list of worlds.
+When you import a world template (**.mctemplate**), it goes into the list of world templates where you can select it and Minecraft will use it to create a world that will then be added to your list of worlds.
 
 Let's start with the simplest possible Minecraft world and learn some cool renaming tricks.
 
@@ -62,29 +62,28 @@ Ready? Here we go!
 
 10. Open the files and check them out in Visual Studio code, but don't move them or change the names of anything.
 
-### Structure of a Minecraft World package (without Add-On packs)
+### Structure of a Minecraft World package (without add-on packs)
 
 This is the baseline for our project.
 
 -------------------------
 
 - **db** folder that contains files similar to this:
-
 000005.ldb - Microsoft Access Record-Locking Information
 000006.log - Text Document
-LDB and LOG files are part of the database implementation for how your map is stored. They are binary and not friendly for editing by hand, so don't touch these!
     - **000005.ldb** - Binary file, not editable
     - **000006.log** - Binary file, not editable
-    - **CURRENT** - File that contains something like "MANIFEST-000004"
+    - **CURRENT** - File that says something like "MANIFEST-000004"
     - **MANIFEST-000004** - Binary file that cannot be opened
 - **level.dat** - DAT file that contains important data about your Minecraft world
-- **level.dat_old** - DAT_OLD File that can be used as a backup for the other DAT file. 
+- **level.dat_old** - DAT_OLD File that can be used as a backup for the other DAT file
 - **levelname.txt** - Text document that holds the name of the world: "New_World"
-- **world_behavior_packs.json** - JSON Source File that is blank if no behavior packs are active in the world when it is created
 - **world_icon.jpeg** - JPEG File that contains the first image Minecraft displays for the world
-- **world_resource_packs.json** - JSON Source File that is blank if no resource packs are active in the world when it is created
 
 ---------------------------
+
+**.ldb** and **.log** files are part of the database implementation for how your map is stored. They are binary and not friendly for editing by hand, so don't touch these!
+
 
 11. Edit the **world_icon.jpeg** file in an app like Paint.
 
@@ -149,7 +148,7 @@ That's it!
 
 The `manifest.json` for a world template should have these contents:
 
-- `name`: this field is always `pack.name`
+- `name`: this field is always `pack.name`. This is the name that will be in the imported template file in the **world_templates** folder.
 - `description`: this field is always `pack.description`
 - `version`: this tells the game what version of the pack this is. Always create new content with `[1, 0 ,0]`
 - `uuid`: generate **two different UUIDs** from this site: <https://www.uuidgenerator.net/version4>.
@@ -163,20 +162,18 @@ The `manifest.json` for a world template should have these contents:
     "name": "pack.name",
     "description": "pack.description",
     "version": [1, 0, 0],
-    "uuid": "<GENERATE A UUID>"
+    "uuid": "<FIRST GENERATED UUID>"
   },
   "modules": [
     {
       "version": [1, 0, 0],
       "type": "world_template",
-      "uuid": "<GENERATE A UUID>"
+      "uuid": "<SECOND GENERATED UUID>"
     }
   ],
   "format_version": 2
 }
 ```
-
->- `"name: "pack.name"` - This is the name that will be on the imported template file in the world_templates folder.
 
 ### Texts folder 
 
@@ -200,7 +197,7 @@ pack.name=Western World
 pack.description=Howdy partner
 ```
 
-## languages.json (optional)
+### languages.json (optional)
 
 This file tells the game what languages your skin pack supports. The only language currently required is English. If you would like to support other languages, you can create additional `xx_YY.lang` files and edit them to tell the game to support those languages.
 
@@ -212,7 +209,7 @@ This file tells the game what languages your skin pack supports. The only langua
 ]
 ```
 
-## world_icon.jpeg
+### world_icon.jpeg
 
 This is the image that shows up when your world is created from the template. For world templates in the marketplace, this icon should be in a similar style as the key art. Non-marketplace templates do not need a world icon, but if a template is made from an existing world, the world icon will already be available to use.
 
@@ -245,17 +242,32 @@ If you accidentally drag the entire folder out of your **com.mojang** folder, it
 
 3. All of your imported templates are in the **world_templates** folder. Minecraft puts them in there during the import process.
 
-## Variation: Add-On Packs
+## Variation: Add-on Packs
 
-If you activate add-on packs in a world and then export it, this is what you get:
+If you activate add-on packs in a world and then export that world, Minecraft creates a few more folders and files to handle it all:
 
+In addition to the 
 
-When you make that world into a template, the file structure looks like this:
+-------------------------
 
+- **behavior_packs**
+    - <All the behavior packs you activated in the world will be copied into here>
+- **db**
+- **resource_packs**
+    - <All the resource packs you activated in the world will be copied into here>
+- **level.dat**
+- **level.dat_old**
+- **levelname.txt**
+- **world_behavior_pack_history.json** - Contains information about the behavior packs, such as UUIDs
+- **world_behavior_packs.json** - Contains behavior pack ID and version
+- **world_icon.jpeg**
+- **world_resource_pack_history.json** - Contains information about the resource packs, such as UUIDs
+- **world_resource_packs.json** - Contains resource pack ID and version
 
+---------------------------
 
-Resource pack and behavior pack folder names in world templates must be **10 characters or shorter**. This is due to an issue on Xbox where long paths may cause resource or behavior packs to not load properly. We suggest using an acronym of the contents title for folder names.
-
+>[!IMPORTANT]
+>Resource pack and behavior pack folder names in world templates must be **10 characters or shorter**. This is due to an issue on Xbox where long paths may cause resource or behavior packs to not load properly. We suggest using an acronym of the contents title for folder names.
 
 ## Variation: Random Seed
 
@@ -290,14 +302,11 @@ You can give players a random world each time they use your template with two st
 
 After the world is created, the world seed is locked and no longer editable.
 
-### Base Game Versioning
+## What's Next?
 
+Now that you have learned about world tempaltes, you can learn even more interesting things you can do with them.
 
+> [!div class="nextstepaction"]
+> [Base Game Versioning](BaseGameVersioning.md)
 
-> [!WARNING]
-> With the release of `1.18`, templates created with base game version `1.17.4` or earlier will be updated with the new world generation tool and may break content when building new maps based upon that template.
->
-> To learn more about this scenario, please visit [Updating a World Template's Base Game Version to 1.18](BaseGameVersioning.md#updating-a-world-templates-base-game-version-to-118)
-
-> [!IMPORTANT]
-> The default max file path allowed in Windows 10 is 260 characters. Please be mindful when setting up the folder directory and use shorthand naming conventions if you are near the character limit.
+To see examples of unchanged resource and behavior files, check out the Minecraft [Vanilla resource pack](https://aka.ms/resourcepacktemplate) and [Vanilla behavior Pack](https://aka.ms/behaviorpacktemplate).
