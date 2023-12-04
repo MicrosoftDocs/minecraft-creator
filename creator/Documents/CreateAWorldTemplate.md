@@ -14,11 +14,11 @@ You could export the world and send out copies of it, or you could create a temp
 
 Worlds in the Minecraft Marketplace, like [survival spawns](SurvivalSpawnCreation.md), are typically world templates. When a player creates a world from the template, they get their own fresh copy of the world.
 
-So where do world templates come from? Well, they are basically a zipped Minecraft world that contains the proper **manifest.json** file, a **texts** folder with some files inside it, and has the file extension **.mctemplate**.
+So where do world templates come from? Well, they are made from a zipped Minecraft world has been given the file extension **.mctemplate** and has the proper **manifest.json** file and a **texts** folder with some files inside it.
 
 If your exported world has custom stuff added to it, like [add-on packs](GettingStarted.md), those get included, too.
 
-When you import a world file (**.mcworld**), it gets added to the list of Worlds and you just open it and get mining and crafting.
+When you import a world file (**.mcworld**), it gets added to your list of worlds where you can open it and start mining and crafting.
 
 When you import a world template (**.mctemplate**), it goes into the list of world templates where you can select it and Minecraft will use it to create a world that will then be added to your list of worlds.
 
@@ -26,7 +26,9 @@ Let's start with the simplest possible Minecraft world and learn some cool renam
 
 ## Unpacking, Examining, and Re-Packing a Minecraft World File
 
-In this first part, we are going to create a world, export it, change the file extension on the name, unzip it, look at the contents, zip the contents back up, and open it again in Minecraft. This is just to get you used to tinkering around in Minecraft files so things make more sense when you start making changes.
+In this first part, we are going to create a world, export it, change the file extension on the name, unzip it, look at the contents, zip the contents back up, and open it again in Minecraft.
+
+This is just to get you used to tinkering around in Minecraft files so things make more sense when you start making changes.
 
 Ready? Here we go!
 
@@ -40,13 +42,13 @@ Ready? Here we go!
 
 ![Edit World screen with the General tab selected, Export World button is visible under the File Management header.](Media/CreateAWorldTemplate/edit_world_export_step_3.png)
 
-4. On the General tab, in the File Management section, find the **Export World** button and click it. The Save As window will be displayed.
+4. On the **General** tab, in the **File Management** section, find the **Export World** button and click it. The **Save As** window will be displayed.
 
 ![Windows Save As dialog window showing that the .mcworld file will be saved to the Desktop, inside a Minbecraft World folder.](Media/CreateAWorldTemplate/world_save_as.png)
 
 5. Choose a location that is easy for you to find, like in a folder on your computer's Desktop, and click the **Export** button.
 
-6. Minimize Minecraft and go find the exported world file. It will have a Minecraft icon and the .mcworld file extension.
+6. Minimize Minecraft and go find the exported world file. It will have a Minecraft icon and the **.mcworld** file extension.
 
 7. Change the file extension from **.mcworld** to **.zip**.
 
@@ -56,11 +58,11 @@ Ready? Here we go!
 
 ![Image of the New_World.zip file displayed with a typical ZIP file icon.](Media/CreateAWorldTemplate/changed_to_dot_zip.png)
 
-9. Double-click the zip file to open it and choose **Extract All**. The structure should look something like this:
+9. Double-click the **.zip** file to open it and choose **Extract All**. The structure should look something like this:
 
 ![Contents of the New_World.zip folder before they are unzipped/extracted](Media/CreateAWorldTemplate/extract_all.png)
 
-10. Open the files and check them out in Visual Studio code, but don't move them or change the names of anything.
+10. Open the files and check them out in Visual Studio Code, but don't move them or change the names of anything.
 
 ### Structure of a Minecraft World package (without add-on packs)
 
@@ -89,11 +91,11 @@ This is the baseline for our project.
 
 ![Image of the world with added "My Edited World!" text](Media/CreateAWorldTemplate/edited_world_icon_jpeg.png)
 
-Don't get too attached to your edited world icon, though. Whenever you play the world and then save and exit, Minecraft makes a new icon to replace it to reflect your gameplay. We just want to make changes to this first one to distinguish it from the original world.
+Don't get too attached to your edited world icon, though. Whenever you play the world and then save and exit, Minecraft makes a new icon to replace it to reflect your gameplay. We want to make changes to this first one to distinguish it from the original world.
 
 ### Re-Packaging a Minecraft World
 
-Now, we're going to zip everything back up, rename the zip to **.mcworld**, and open it again in Minecraft.
+Now, we're going to zip everything back up, rename the **.zip** extension to **.mcworld**, and open it again in Minecraft.
 
 1. Inside the world folder, select all of the individual files.
 
@@ -110,7 +112,7 @@ Now, we're going to zip everything back up, rename the zip to **.mcworld**, and 
 ![Image showing the New_World_EDITED.zip file](Media/CreateAWorldTemplate/new_world_edited_mcworld.png)
 
 >[!NOTE]
-> You can just give the new zip file the name **New_World.mcworld** as it's being created, but I wanted to show you that the final **.mcworld** file is simply a renamed **.zip** file.
+> You can give the new zip file the name **New_World.mcworld** as it's being created, but we want to show you that the final **.mcworld** file is simply a renamed **.zip** file.
 
 >[!IMPORTANT]
 > Do **not** try to zip the whole folder and rename it from .zip to .mcworld.
@@ -120,15 +122,15 @@ Now, we're going to zip everything back up, rename the zip to **.mcworld**, and 
 
 After you change the file extension to **.mcworld**, the file will have the Minecraft logo on it.
 
-5. Double-click the **New_World.mcworld** to launch Minecraft and import the world. You should see messages that confirm that the world has started and finished being imported successfully.
+5. Double-click the **New_World.mcworld** to launch Minecraft and import the world. You should see messages that confirm the world has started and finished being imported successfully.
 
-6. Click **Play** to go to the Play screen, where this world will be displayed along with any others.
+6. Click **Play** to go to the Play screen, where the world will be displayed along with any others.
 
 ![Image of Minecraft with the Worlds tab displayed. The original and edited worlds named New_World are displayed.](Media/CreateAWorldTemplate/theres_the_edited_world.png)
 
-7. When you play the edited world, it will look just like the original one.
+7. When you go into the edited world, it will look just like the original one.
 
-Okay. Now that we know what a world file has in it, and how to zip and rename the contents, let's learn about the structure of a World Template.
+Okay. Now that we know what a world file has in it, and how to zip and rename the contents, let's learn about the structure of a world template.
 
 ## Creating a World Template
 
@@ -148,11 +150,11 @@ That's it!
 
 The `manifest.json` for a world template should have these contents:
 
-- `name`: this field is always `pack.name`. This is the name that will be in the imported template file in the **world_templates** folder.
-- `description`: this field is always `pack.description`
-- `version`: this tells the game what version of the pack this is. Always create new content with `[1, 0 ,0]`
-- `uuid`: generate **two different UUIDs** from this site: <https://www.uuidgenerator.net/version4>.
-- `type`: this tells the game to treat this pack as a world template
+- `name`: This field is always `pack.name`. This is the name that will be in the imported template file in the **world_templates** folder.
+- `description`: This field is always `pack.description`
+- `version`: This tells the game what version of the pack this is. Always create new content with `[1, 0 ,0]`.
+- `uuid`: Generate **two different UUIDs** from this site: <https://www.uuidgenerator.net/version4>.
+- `type`: This tells the game to treat this pack as a world template
 
 **Template world template manifest.json:**
 
@@ -211,7 +213,7 @@ This file tells the game what languages your skin pack supports. The only langua
 
 ### world_icon.jpeg
 
-This is the image that shows up when your world is created from the template. For world templates in the marketplace, this icon should be in a similar style as the key art. Non-marketplace templates do not need a world icon, but if a template is made from an existing world, the world icon will already be available to use.
+This is the image that shows up when your world is created from the template. Non-marketplace templates do not need a world icon, but if a template is made from an existing world, the world icon will already be available to use.
 
 - **Dimensions:** 800x450px
 - **File format:** JPEG
@@ -219,12 +221,15 @@ This is the image that shows up when your world is created from the template. Fo
 ## Using a World Template
 
 The easiest way to import a world template into Minecraft is to double-click it and let Minecraft do the rest.
-You should see "Import started..." and "Successfully imported '<Your Template Name>'" messages.
 
-After Minecraft launches, click Play.
+You should see **Import started...** and **Successfully imported ...** messages.
+
+After Minecraft launches, click **Play**.
+
 Because we are working with a template instead of a world, it will not be shown in your list of worlds.
-Instead, click Create New.
-On the Create... page, scroll down to the Imported Templates collection. Your template should be listed there. Click it to create a world from the template.
+Instead, click **Create New**.
+
+On the **Create...** page, scroll down to the **Imported Templates** collection. Your template should be listed there. Click it to create a world from the template.
 
 ## Troubleshooting
 
@@ -232,7 +237,7 @@ While you learn how to create and modify worlds and templates, you are probably 
 
 Instead of creating new UUIDs for each manifest.json file, you can clean out the contents of the MinecraftWorlds and Minecraft Templates folders in your com.mojang folder.
 
-You might not want to throw anything away until you're sure you don't need it, so rather than deleting the contents of these folders, you might want to drag the contents to a backup folder.
+You might not want to throw anything away until you're sure you don't need it, so rather than deleting the contents of these folders, we suggest dragging the contents to a backup folder.
 
 If you accidentally drag the entire folder out of your **com.mojang** folder, it should be okay. Minecraft will just make a new one.
 
@@ -246,15 +251,13 @@ If you accidentally drag the entire folder out of your **com.mojang** folder, it
 
 If you activate add-on packs in a world and then export that world, Minecraft creates a few more folders and files to handle it all:
 
-In addition to the 
-
 -------------------------
 
 - **behavior_packs**
-    - <All the behavior packs you activated in the world will be copied into here>
+    - All the behavior packs you activated in the world will be copied into here
 - **db**
 - **resource_packs**
-    - <All the resource packs you activated in the world will be copied into here>
+    - 0.All the resource packs you activated in the world will be copied into here
 - **level.dat**
 - **level.dat_old**
 - **levelname.txt**
@@ -271,7 +274,7 @@ In addition to the
 
 ## Variation: Random Seed
 
-You can give players a random world each time they use your template with two steps:
+Your template does not have to be used on only one world. You can enable random seed generation and have your changes applied to any random world.
 
 1. Starting with any unzipped, exported world, delete the **db** folder.
 
