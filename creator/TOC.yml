@@ -49,17 +49,15 @@
         - name: "Experimental Features in Minecraft: Bedrock Edition"
           href: Documents/ExperimentalFeaturesToggle.md
         - name: Adding Custom Items
-          href: Documents/AddCustomItems.md          
+          href: Documents/AddCustomItems.md
         - name: Adding Custom Sounds
           href: Documents/AddCustomSounds.md
         - name: Packaging Content
           items:
           - name: Packaging a Skin Pack
             href: Documents/PackagingASkinPack.md
-          - name: Packaging a WorldTemplate
-            href: Documents/PackagingAWorldTemplate.md
-          - name: Packaging a Random Seed World Template
-            href: Documents/PackagingARandomSeedWorldTemplate.md
+          - name: Create a World Template
+            href: Documents/CreateAWorldTemplate.md
           - name: Utilizing Sub-Packs
             href: Documents/UtilizingSubpacks.md
           - name: Mash-up Pack Overview
@@ -67,7 +65,7 @@
           - name: 'Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition'
             href: Documents/ConvertingTexturePacks.md
           - name: Preparing Raw Text for Localization
-            href: Documents/PreparingRawTextForLocalization.md                     
+            href: Documents/PreparingRawTextForLocalization.md
         - name: Advanced Topics
           items:
           - name: Getting Started with Deferred Lighting

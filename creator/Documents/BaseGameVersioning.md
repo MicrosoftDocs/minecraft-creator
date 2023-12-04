@@ -7,7 +7,7 @@ ms.service: minecraft-bedrock-edition
 ---
 # World Templates and Base Game Versioning
 
-Base game versioning is a method of keeping changes in Vanilla Minecraft: Bedrock Edition from causing unexpected changes in your world files, allowing you to lock your world template to a specific Minecraft version and assuring future game changes don't impact your .mcworld files. Base game versioning will not affect texture packs or skin packs.
+Base game versioning is a method of keeping changes in Vanilla Minecraft: Bedrock Edition from causing unexpected changes in your world files, allowing you to lock your world template to a specific Minecraft version and assuring future game changes don't impact your **.mcworld** files. Base game versioning will not affect texture packs or skin packs.
 
 If a world template relies on the behavior of certain entities or their spawning mechanics, the world template may break in unexpected ways if Minecraft is updated in a manner that changes those behaviors. For example, when running a version 1.18 client while the `base_game_version` of a world template is set to 1.15, the game will load the resources for all versions up to 1.15 and will skip any new resources implemented in 1.16 through 1.18.
 
@@ -29,7 +29,7 @@ In this article you will learn the following:
 
 It's recommended that the following be completed before reviewing this article:
 
-- [Packaging a World Template](PackagingAWorldTemplate.md)
+- [Creating a World Template](CreateWorldTemplate.md)
 
 ## Setup
 
@@ -78,28 +78,26 @@ When a world template is updated in the Minecraft Marketplace:
 
 This behavior enables Marketplace creators to update their products at any time to address bugs and other issues.
 
-## Updating a World Template's Base Game Version to 1.18
+## Dealing with Different World Heights
 
-With the upcoming 1.18 release for Caves and Cliffs Part 2, we are making significant changes to world generation. There is a potential for content to break when working with existing templates.
-
-To ensure that content continues to operate as intended, Minecraft Marketplace Creators will be unable to update the base game version of their content to v1.18+ after the release of client v1.18. This is a temporary measure to ensure that content continues to operate as designed after this large update.  
+With the 1.18 release for Caves and Cliffs Part 2, significant changes happened to world generation that can affect older templates.
 
 Creators in the community should be aware of a potential scenario:
 
-1. A Creator creates a world template called **TemplateA** and sets the `base_game_version` to `[1, 17, 0]`.
-1. A Player opens Minecraft: Bedrock Edition v1.18, and downloads **TemplateA**.
-1. Creator instantiates a new world utilizing **TemplateA** and calls it **WorldA**.
-1. The Creator updates **TemplateA's** `base_game_version` to `[1, 18, 0]`.
-1. The Player opens **WorldA**.
+1. A creator creates a world template called **TemplateA** and sets the `base_game_version` to `[1, 17, 0]`.
+1. A player opens Minecraft: Bedrock Edition 1.18 or newer and downloads **TemplateA**.
+1. Creator instantiates a new world using **TemplateA** and calls it **WorldA**.
+1. The creator updates **TemplateA's** `base_game_version` to `[1, 18, 0]`.
+1. The player opens **WorldA**.
 
-In this scenario, a Creator creates and releases a world template for a version of Minecraft that does not utilize the updated world height changes. If the Creator updates the existing template to `[1, 18, 0]` (which does use the new world height), then worlds that players have generated using that template will automatically update to the new world height. This can potentially shift the layout of the worlds and break existing content.
+In this scenario, a creator creates and releases a world template for a version of Minecraft that does not use the updated world height changes. If the creator updates the existing template to `[1, 18, 0]` (which does use the new world height), then worlds that players have generated using that template will automatically update to the new world height. This can shift the layout of the worlds and break existing content.
 
-In order to prevent any loss of information, it is recommended to create a copy of the existing template, **TemplateB** from our scenario, that has the `base_game_version` set to `[1, 18, 0]` and to use this new template for distributing to players.
+To prevent any loss of information, it is recommended to create a copy of the existing template, **TemplateB** from our scenario, that has the `base_game_version` set to `[1, 18, 0]` and to use this new template for distributing to players.
 
-1. A Creator creates a template called **TemplateA** and sets the `base_game_version` to `[1.17.4]` or previous version.
-1. A Player opens Minecraft: Bedrock Edition in a version older than 1.18, and downloads **TemplateA**.
-1. The Creator instantiates a new world utilizing **TemplateA** called **WorldA**.
+1. A creator creates a template called **TemplateA** and sets the `base_game_version` to `[1.17.4]` or previous version.
+1. A player opens Minecraft: Bedrock Edition in a version older than 1.18, and downloads **TemplateA**.
+1. The creator instantiates a new world using **TemplateA** called **WorldA**.
 1. Minecraft: Bedrock Edition client is updated to v1.18+.
-1. The Creator copies **TemplateA** and creates a **TemplateB** with `base_game_version` set to `[1, 18, 0]`.
-1. The Creator tests and validates **TemplateB** before publishing.
-1. The Player downloads **TemplateB** and creates a new world, **WorldB**.
+1. The creator copies **TemplateA** and creates a **TemplateB** with `base_game_version` set to `[1, 18, 0]`.
+1. The creator tests and validates **TemplateB** before publishing.
+1. The player downloads **TemplateB** and creates a new world, **WorldB**.
