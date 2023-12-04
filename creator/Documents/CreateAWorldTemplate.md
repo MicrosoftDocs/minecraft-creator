@@ -8,9 +8,9 @@ ms.service: minecraft-bedrock-edition
 
 # Create a World Template from an Exported World
 
-If you created a really neat Minecraft world and you wanted to share that world with other players, you have some options. 
+If you created a really neat Minecraft world and you wanted to share that world with other players, you have some options.
 
-You could export the world and send out copies of it, or you could create a template of the world
+You could export the world and send out copies of it, or you could create a template of the world.
 
 Worlds in the Minecraft Marketplace, like [survival spawns](SurvivalSpawnCreation.md), are typically world templates. When a player creates a world from the template, they get their own fresh copy of the world.
 
@@ -304,7 +304,7 @@ After the world is created, the world seed is locked and no longer editable.
 
 ## What's Next?
 
-Now that you have learned about world tempaltes, you can learn even more interesting things you can do with them.
+Now that you know more about world templates, you can learn even more interesting things you can do with them.
 
 > [!div class="nextstepaction"]
 > [Base Game Versioning](BaseGameVersioning.md)
