@@ -19,7 +19,7 @@ Minecraft Bedrock has been updated to 1.20.50 and there are a number of changes 
  
 ## Items
 
-- [use_modifiers](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_use_modifiers.md.md) - Previously called "chargeable" and part of the Holiday Creator Features experiment. This functionality has been moved under the "use_modifiers" component.
+- [use_modifiers](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_use_modifiers.md) - Previously called "chargeable" and part of the Holiday Creator Features experiment. This functionality has been moved under the "use_modifiers" component.
 - tags - An item component that determines which tags are included on a given item.
 
 ## Creator API
@@ -56,21 +56,15 @@ Another set of Creator APIs have been released out of beta and into stable (see:
     - [getDynamicPropertyIds](../ScriptAPI/minecraft/server/Entity.md#getdynamicpropertyids)
     - [getDynamicPropertyTotalByteCount](../ScriptAPI/minecraft/server/Entity.md#getdynamicpropertytotalbytecount)
     - [setDynamicProperty](../ScriptAPI/minecraft/server/Entity.md#setdynamicproperty)
-- Player interact events
+- **Player interact events**
   - [PlayerInteractWithBlockBeforeEvent](../ScriptAPI/minecraft/server/PlayerInteractWithBlockBeforeEvent.md)
   - [PlayerInteractWithBlockBeforeEventSignal](../ScriptAPI/minecraft/server/PlayerInteractWithBlockBeforeEventSignal.md)
   - [PlayerInteractWithEntityBeforeEvent](../ScriptAPI/minecraft/server/PlayerInteractWithEntityBeforeEvent.md)
   - [PlayerInteractWithEntityBeforeEventSignal](../ScriptAPI/minecraft/server/PlayerInteractWithEntityBeforeEventSignal.md)
-  - WorldBeforeEvents
-    - [playerInteractWithBlock](../ScriptAPI/minecraft/server/WorldBeforeEvents.md#playerinteractwithblock)
-    - [playerInteractWithEntity](../ScriptAPI/minecraft/server/WorldBeforeEvents.md#playerinteractwithentity)
   - [PlayerInteractWithBlockAfterEvent](../ScriptAPI/minecraft/server/PlayerInteractWithBlockAfterEvent.md)
   - [PlayerInteractWithBlockAfterEventSignal](../ScriptAPI/minecraft/server/PlayerInteractWithBlockAfterEventSignal.md)
   - [PlayerInteractWithEntityAfterEvent](../ScriptAPI/minecraft/server/PlayerInteractWithEntityAfterEvent.md)
   - [PlayerInteractWithEntityAfterEventSignal](../ScriptAPI/minecraft/server/PlayerInteractWithEntityAfterEventSignal.md)
-  - WorldAfterEvents
-    - [playerInteractWithBlock](../ScriptAPI/minecraft/server/WorldAfterEvents.md#playerinteractwithblock)
-    - [playerInteractWithEntity](../ScriptAPI/minecraft/server/WorldAfterEvents.md#playerinteractwithentity) 
 - **TicksPerSecond**
   - [TicksPerSecond](../ScriptAPI/minecraft/server/minecraft-server.md#tickspersecond) (constant value = 20)
 - **Entity.remove**
