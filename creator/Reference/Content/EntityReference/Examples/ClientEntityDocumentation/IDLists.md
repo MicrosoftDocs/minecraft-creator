@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - ID Lists
 description: "A reference document listing all entity ID values"
 ms.service: minecraft-bedrock-edition
@@ -77,6 +77,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.look_at_trading_player| -2094605693 |
 | minecraft:behavior.make_love| -1551283431 |
 | minecraft:behavior.melee_attack| 11509785650956819759 |
+| minecraft:behavior.melee_box_attack| 16943510645914782909 |
 | minecraft:behavior.mingle| 385775952 |
 | minecraft:behavior.mount_pathing| 1112137677 |
 | minecraft:behavior.move_indoors| 15759011189030877060 |
@@ -205,6 +206,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:burns_in_daylight| 1256874605 |
 | minecraft:can_climb| -550459594 |
 | minecraft:can_fly| 985724318 |
+| minecraft:can_join_raid| -1847990870 |
 | minecraft:can_power_jump| -763124853 |
 | minecraft:celebrate_hunt| -789611239 |
 | minecraft:collision_box| -1277663508 |

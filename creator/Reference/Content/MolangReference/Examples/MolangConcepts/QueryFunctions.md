@@ -144,7 +144,7 @@ Listed below are the currently available Molang query functions in the latest re
 | query.is_emerging| Returns 1.0 if the entity is emerging, else it returns 0.0. |
 | query.is_emoting| Returns 1.0 if the entity is emoting, else it returns 0.0. Applies to player. |
 | query.is_enchanted| Returns 1.0 if the entity is enchanted, else it returns 0.0. Applies to armor, bow, crossbow, shield.|
-| query.is_feeling_happy| Returns 1.0 if behavior.timer_flag_2 is running, else it returns 0.0.|
+| query.is_feeling_happy| (No longer available in pack min_engine_version 1.20.50. Deprecated) Returns 1.0 if behavior.timer_flag_2 is running, else it returns 0.0.|
 | query.is_fire_immune| Returns 1.0 if the entity has the `fire_immune` component, else it returns 0.0. |
 | query.is_first_person| Returns 1.0 if the entity is being rendered in first person mode, else it returns 0.0. |
 | query.is_ghost| Returns 1.0 if an entity is a ghost, else it returns 0.0. Applies to guardian.|
@@ -185,12 +185,13 @@ Listed below are the currently available Molang query functions in the latest re
 | query.is_ram_attacking| Returns 1.0 if the entity is using a ram attack, else it returns 0.0. Pertains to goats. |
 | query.is_resting| Returns 1.0 if the entity is resting, else it returns 0.0.Applies to bat. |
 | query.is_riding| Returns 1.0 if the entity is riding, else it returns 0.0. |
-|query.is_rising| Returns 1.0 if behavior.timer_flag_2 is running, else it returns 0.0.|
+|query.is_rising| (No longer available in pack min_engine_version 1.20.50. Deprecated.) Returns 1.0 if behavior.timer_flag_2 is running, else it returns 0.0.|
 | query.is_roaring| Returns 1.0 if the entity is currently roaring, else it returns 0.0. Applies to ravager and warden.|
 | query.is_rolling| Returns 1.0 if the entity is rolling, else it returns 0.0. Pertains to panda.|
 | query.is_saddled| Returns 1.0 if the entity has the `is_saddled` component, else it returns 0.0. |
 | query.is_scared| Returns 1.0 if the entity is scared, else it returns 0.0. Pertains to a panda being startled by a baby panda sneeze. |
-| query.is_scenting| Returns 1.0 if behavior.timer_flag_1 is running, else it returns 0.0.|
+| query.is_scenting| (No longer available in pack min_engine_version 1.20.50.Deprecated.) Returns 1.0 if behavior.timer_flag_1 is running, else it returns 0.0.|
+| query.is_searching| Returns 1.0 if the entity is searching, else it returns 0.0. |
 | query.is_selected_item| Returns true if the player has selected an item in the inventory, else it returns 0.0. |
 | query.is_shaking| Returns 1.0 if the entity is shaking, else it returns 0.0. Pertains to a hoglin, piglin, piglin brute, skeleton, strider, or villager, zombie villager |
 | query.is_shaking_wetness| Returns 1.0 if the entity is shaking water off, else it returns 0.0. Pertains to wet wolves. |
