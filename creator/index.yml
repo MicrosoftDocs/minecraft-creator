@@ -180,7 +180,7 @@ conceptualContent:
             text: Getting Started with Editor Extensions
           - url: ScriptAPI/minecraft/server-gametest/minecraft-server-gametest.md
             itemType: reference
-            text: GameTest API
+            text: Scripting API
           - url:  Documents/GameTestGettingStarted.md
             itemType: get-started
             text: Getting Started with GameTest

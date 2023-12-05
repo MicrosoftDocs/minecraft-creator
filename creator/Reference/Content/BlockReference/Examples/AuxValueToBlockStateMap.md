@@ -2478,14 +2478,14 @@ Block Name |Aux Value |Block States|
 |minecraft:piston_arm_collision| 5| ["facing_direction" = 5]|
 |minecraft:piston_arm_collision| 6| ["facing_direction" = 6]|
 |minecraft:piston_arm_collision| 7| ["facing_direction" = 7]|
-|minecraft:planks| 0| ["wood_type" = "oak"]|
-|minecraft:planks| 1| ["wood_type" = "spruce"]|
-|minecraft:planks| 2| ["wood_type" = "birch"]|
-|minecraft:planks| 3| ["wood_type" = "jungle"]|
-|minecraft:planks| 4| ["wood_type" = "acacia"]|
-|minecraft:planks| 5| ["wood_type" = "dark_oak"]|
-|minecraft:planks| 6| ["wood_type" = "oak"]|
-|minecraft:planks| 7| ["wood_type" = "oak"]|
+|minecraft:planks| 0| ["minecraft:oak_planks"]|
+|minecraft:planks| 1| ["minecraft:spruce_planks"]|
+|minecraft:planks| 2| ["minecraft:birch_planks"]|
+|minecraft:planks| 3| ["minecraft:jungle_planks"]|
+|minecraft:planks| 4| ["minecraft:acacia_planks"]|
+|minecraft:planks| 5| ["minecraft:dark_oak_planks"]|
+|minecraft:planks| 6| ["minecraft:oak_planks"]|
+|minecraft:planks| 7| ["minecraft:oak_planks"]|
 |minecraft:polished_andesite_stairs| 0| ["upside_down_bit" = 0, "weirdo_direction" = 0]|
 |minecraft:polished_andesite_stairs| 1| ["upside_down_bit" = 0, "weirdo_direction" = 1]|
 |minecraft:polished_andesite_stairs| 2| ["upside_down_bit" = 0, "weirdo_direction" = 2]|
@@ -3238,14 +3238,13 @@ Block Name |Aux Value |Block States|
 |minecraft:sticky_piston_arm_collision| 5| ["facing_direction" = 5]|
 |minecraft:sticky_piston_arm_collision| 6| ["facing_direction" = 6]|
 |minecraft:sticky_piston_arm_collision| 7| ["facing_direction" = 7]|
-|minecraft:stone| 0| ["stone_type" = "stone"]|
-|minecraft:stone| 1| ["stone_type" = "granite"]|
-|minecraft:stone| 2| ["stone_type" = "granite_smooth"]|
-|minecraft:stone| 3| ["stone_type" = "diorite"]|
-|minecraft:stone| 4| ["stone_type" = "diorite_smooth"]|
-|minecraft:stone| 5| ["stone_type" = "andesite"]|
-|minecraft:stone| 6| ["stone_type" = "andesite_smooth"]|
-|minecraft:stone| 7| ["stone_type" = "stone"]|
+|minecraft:stone| 0| ["minecraft:stone"]|
+|minecraft:stone| 1| ["minecraft:granite"]|
+|minecraft:stone| 2| ["minecraft:polished_granite"]|
+|minecraft:stone| 3| ["minecraft:diorite"]|
+|minecraft:stone| 4| ["minecraft:andesite"]|
+|minecraft:stone| 6| ["minecraft:polished_andesite"]|
+|minecraft:stone| 7| ["minecraft:stone"]|
 |minecraft:stone_block_slab2| 0| ["stone_slab_type_2" = "red_sandstone", "top_slot_bit" = 0]|
 |minecraft:stone_block_slab2| 1| ["stone_slab_type_2" = "purpur", "top_slot_bit" = 0]|
 |minecraft:stone_block_slab2| 2| ["stone_slab_type_2" = "prismarine_rough", "top_slot_bit" = 0]|
