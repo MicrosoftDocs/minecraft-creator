@@ -28,7 +28,7 @@ The 3D block cursor can also be used to query the current block at which the mou
 The face at of the block beneath the 3D block cursor which is intersected by the mouse raycast
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -38,7 +38,7 @@ Type: *number*
 Query whether or not the 3D block cursor is visible or hidden
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 

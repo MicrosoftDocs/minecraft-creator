@@ -39,12 +39,12 @@ This is used to access the players 3D block cursor and it's properties
 
 Type: [*Cursor*](Cursor.md)
 
-### **extensionName**
-`read-only extensionName: string;`
+### **extensionInfo**
+`read-only extensionInfo: Extension;`
 
-The short unique name with which this extension was registered
+Contains information about the registered extension instance.
 
-Type: *string*
+Type: [*Extension*](Extension.md)
 
 ### **player**
 `read-only player: minecraftserver.Player;`

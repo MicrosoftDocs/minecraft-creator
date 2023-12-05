@@ -74,6 +74,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [ClipboardItem](ClipboardItem.md)
 - [ClipboardManager](ClipboardManager.md)
 - [Cursor](Cursor.md)
+- [CursorPropertiesChangeAfterEvent](CursorPropertiesChangeAfterEvent.md)
+- [CursorPropertyChangeAfterEventSignal](CursorPropertyChangeAfterEventSignal.md)
 - [Extension](Extension.md)
 - [ExtensionContext](ExtensionContext.md)
 - [ExtensionContextAfterEvents](ExtensionContextAfterEvents.md)
@@ -86,6 +88,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [Selection](Selection.md)
 - [SelectionManager](SelectionManager.md)
 - [SettingsManager](SettingsManager.md)
+- [SimulationState](SimulationState.md)
 - [TransactionManager](TransactionManager.md)
 
 ## Interfaces
@@ -155,6 +158,15 @@ Executes an operation over a selection via chunks to allow splitting operation o
   the operation to apply over each block location
 
 #### **Returns** *Promise<void>*
+
+### **getBlockPickerDefaultAllowBlockList**
+`
+getBlockPickerDefaultAllowBlockList(): string[]
+`
+
+Returns a string array of the default block types for the Block picker control. Can be used to further filter blocks from the Block picker.
+
+#### **Returns** *string[]* - Default allowed block list
 
 ### **getLocalizationId**
 `

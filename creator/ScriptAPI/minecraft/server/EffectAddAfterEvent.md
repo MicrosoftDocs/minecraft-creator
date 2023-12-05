@@ -17,21 +17,15 @@ Contains information related to changes to an effect - like poison - being added
 ## Properties
 
 ### **effect**
-`effect: Effect;`
+`read-only effect: Effect;`
 
 Additional properties and details of the effect.
 
 Type: [*Effect*](Effect.md)
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
 ### **entity**
-`entity: Entity;`
+`read-only entity: Entity;`
 
 Entity that the effect is being added to.
 
 Type: [*Entity*](Entity.md)
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.

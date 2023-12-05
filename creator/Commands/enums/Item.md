@@ -2390,6 +2390,8 @@ Wooden Pressure Plate
 - `waxed_oxidized_copper_grate`
 - `minecraft:white_concrete`
 - `white_concrete`
+- `minecraft:trial_spawner`
+- `trial_spawner`
 - `minecraft:acacia_fence`
 - `acacia_fence`
 - `minecraft:grass_path`
@@ -3092,6 +3094,8 @@ Ravager Spawn Egg
 - `snow_golem_spawn_egg`
 - `minecraft:sniffer_spawn_egg`
 - `sniffer_spawn_egg`
+- `minecraft:breeze_spawn_egg`
+- `breeze_spawn_egg`
 - `minecraft:chorus_fruit`
 Chorus Fruit
 - `chorus_fruit`
@@ -3844,6 +3848,8 @@ Book
 Writeable Book
 - `writable_book`
 Writeable Book
+- `minecraft:trial_key`
+- `trial_key`
 - `minecraft:enchanted_book`
 Enchanted Book
 - `enchanted_book`

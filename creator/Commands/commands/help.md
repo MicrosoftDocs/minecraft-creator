@@ -207,7 +207,6 @@ Adds or removes player experience.
 - `volumearea`
 - `project`
 A particular command used for managing project settings when in Editor mode.
-- `simulationtype`
 - `agent`
 A particular command used for configuring an Agent in an educational context.
 - `codebuilder_actorinfo`

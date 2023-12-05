@@ -21,7 +21,7 @@ A simulated player can be used within GameTests to represent how a player moves 
 Rotation of the head across pitch and yaw angles.
 
 Type: [*@minecraft/server.Vector2*](../../minecraft/server/Vector2.md)
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -65,7 +65,9 @@ Type: *boolean*
 - [setBodyRotation](#setbodyrotation)
 - [setGameMode](#setgamemode)
 - [setItem](#setitem)
+- [startBuild](#startbuild)
 - [stopBreakingBlock](#stopbreakingblock)
+- [stopBuild](#stopbuild)
 - [stopFlying](#stopflying)
 - [stopGliding](#stopgliding)
 - [stopInteracting](#stopinteracting)
@@ -302,13 +304,14 @@ Causes the simulated player to jump.
 
 ### **lookAtBlock**
 `
-lookAtBlock(blockLocation: minecraftserver.Vector3): void
+lookAtBlock(blockLocation: minecraftserver.Vector3, duration?: LookDuration): void
 `
 
 Rotates the simulated player's head/body to look at the given block location.
 
 #### **Parameters**
 - **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **duration**?: [*LookDuration*](LookDuration.md) = `2`
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -318,13 +321,14 @@ Rotates the simulated player's head/body to look at the given block location.
 
 ### **lookAtEntity**
 `
-lookAtEntity(entity: minecraftserver.Entity): void
+lookAtEntity(entity: minecraftserver.Entity, duration?: LookDuration): void
 `
 
 Rotates the simulated player's head/body to look at the given entity.
 
 #### **Parameters**
 - **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
+- **duration**?: [*LookDuration*](LookDuration.md) = `2`
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -334,13 +338,14 @@ Rotates the simulated player's head/body to look at the given entity.
 
 ### **lookAtLocation**
 `
-lookAtLocation(location: minecraftserver.Vector3): void
+lookAtLocation(location: minecraftserver.Vector3, duration?: LookDuration): void
 `
 
 Rotates the simulated player's head/body to look at the given location.
 
 #### **Parameters**
 - **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **duration**?: [*LookDuration*](LookDuration.md) = `2`
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -386,14 +391,14 @@ Orders the simulated player to walk in the given direction relative to the playe
 
 ### **moveToBlock**
 `
-moveToBlock(blockLocation: minecraftserver.Vector3, speed?: number): void
+moveToBlock(blockLocation: minecraftserver.Vector3, options?: MoveToOptions): void
 `
 
 Orders the simulated player to move to the given block location in a straight line. If a move or navigation is already playing, this will override the last move/navigation.
 
 #### **Parameters**
 - **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-- **speed**?: *number* = `1`
+- **options**?: [*MoveToOptions*](MoveToOptions.md) = `null`
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -403,14 +408,14 @@ Orders the simulated player to move to the given block location in a straight li
 
 ### **moveToLocation**
 `
-moveToLocation(location: minecraftserver.Vector3, speed?: number): void
+moveToLocation(location: minecraftserver.Vector3, options?: MoveToOptions): void
 `
 
 Orders the simulated player to move to the given location in a straight line. If a move or navigation is already playing, this will override the last move/navigation.
 
 #### **Parameters**
 - **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-- **speed**?: *number* = `1`
+- **options**?: [*MoveToOptions*](MoveToOptions.md) = `null`
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -420,7 +425,7 @@ Orders the simulated player to move to the given location in a straight line. If
 
 ### **navigateToBlock**
 `
-navigateToBlock(blockLocation: minecraftserver.Vector3, speed?: number): minecraftserver.NavigationResult
+navigateToBlock(blockLocation: minecraftserver.Vector3, speed?: number): NavigationResult
 `
 
 Orders the simulated player to move to a specific block location using navigation. If a move or navigation is already playing, this will override the last move/walk. Note that if the simulated player gets stuck, that simulated player will stop. The player must be touching the ground in order to start navigation.
@@ -429,7 +434,7 @@ Orders the simulated player to move to a specific block location using navigatio
 - **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 - **speed**?: *number* = `1`
 
-#### **Returns** [*@minecraft/server.NavigationResult*](../../minecraft/server/NavigationResult.md)
+#### **Returns** [*NavigationResult*](NavigationResult.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -439,7 +444,7 @@ Orders the simulated player to move to a specific block location using navigatio
 
 ### **navigateToEntity**
 `
-navigateToEntity(entity: minecraftserver.Entity, speed?: number): minecraftserver.NavigationResult
+navigateToEntity(entity: minecraftserver.Entity, speed?: number): NavigationResult
 `
 
 Will use navigation to follow the selected entity to within a one block radius. If a move or navigation is already playing, this will override the last move/navigation.
@@ -448,7 +453,7 @@ Will use navigation to follow the selected entity to within a one block radius. 
 - **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
 - **speed**?: *number* = `1`
 
-#### **Returns** [*@minecraft/server.NavigationResult*](../../minecraft/server/NavigationResult.md)
+#### **Returns** [*NavigationResult*](NavigationResult.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -458,7 +463,7 @@ Will use navigation to follow the selected entity to within a one block radius. 
 
 ### **navigateToLocation**
 `
-navigateToLocation(location: minecraftserver.Vector3, speed?: number): minecraftserver.NavigationResult
+navigateToLocation(location: minecraftserver.Vector3, speed?: number): NavigationResult
 `
 
 Orders the simulated player to move to a specific location using navigation. If a move or navigation is already playing, this will override the last move/walk. Note that if the simulated player gets stuck, that simulated player will stop. The player must be touching the ground in order to start navigation.
@@ -467,7 +472,7 @@ Orders the simulated player to move to a specific location using navigation. If 
 - **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 - **speed**?: *number* = `1`
 
-#### **Returns** [*@minecraft/server.NavigationResult*](../../minecraft/server/NavigationResult.md)
+#### **Returns** [*NavigationResult*](NavigationResult.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -587,12 +592,37 @@ Sets a particular item for the simulated player.
 > [!WARNING]
 > This function can throw errors.
 
+### **startBuild**
+`
+startBuild(slot?: number): void
+`
+
+#### **Parameters**
+- **slot**?: *number* = `0`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **stopBreakingBlock**
 `
 stopBreakingBlock(): void
 `
 
 Stops destroying the block that is currently being hit.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **stopBuild**
+`
+stopBuild(): void
+`
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

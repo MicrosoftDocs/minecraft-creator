@@ -25,7 +25,7 @@ Represents a block that can display text on it.
 Whether or not players can edit the sign. This happens if a sign has had a honeycomb used on it or `setWaxed` was called on the sign.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -108,31 +108,54 @@ Sets the text of the sign component.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws if the provided message is greater than 512 characters in length.
 
 #### Examples
 ##### ***SetRawMessage.ts***
 ```typescript
-const helloWorldMessage: RawMessage = { text: 'Hello World' };
+const signLocation: Vector3 = { x: 0, y: -60, z: 0 }; // Replace with your sign's coordinates
+const block = world.getDimension("overworld").getBlock(signLocation);
+if (!block) {
+  world.sendMessage("Could not find a block at specified location.");
+  return;
+}
+const sign = block.getComponent("minecraft:sign") as BlockSignComponent;
+const helloWorldMessage: RawMessage = { text: "Hello World" };
 sign.setText(helloWorldMessage);
 
 // Sign text will be saved as a RawText
-const result: RawText = sign.getRawText(); 
-JSON.stringify(result); // { rawtext: [{ text: 'Hello World' }] };
+const result = sign.getRawText();
+world.sendMessage(JSON.stringify(result)); // { rawtext: [{ text: 'Hello World' }] };
 ```
 ##### ***SetRawText.ts***
 ```typescript
-const helloWorldText: RawText = { rawtext: [{ text: 'Hello World' }] };
+const signLocation: Vector3 = { x: 0, y: -60, z: 0 }; // Replace with your sign's coordinates
+const block = world.getDimension("overworld").getBlock(signLocation);
+if (!block) {
+  world.sendMessage("Could not find a block at specified location.");
+  return;
+}
+const sign = block.getComponent("minecraft:sign") as BlockSignComponent;
+const helloWorldText: RawText = { rawtext: [{ text: "Hello World" }] };
 sign.setText(helloWorldText);
 
 // There will be no data transformation unlike calling setText with a RawMessage
-const result: RawText = sign.getRawText(); 
-JSON.stringify(result); // { rawtext: [{ text: 'Hello World' }] };
+const result = sign.getRawText();
+world.sendMessage(JSON.stringify(result)); // { rawtext: [{ text: 'Hello World' }] };
 ```
 ##### ***SetString.ts***
 ```typescript
+const signLocation: Vector3 = { x: 0, y: -60, z: 0 }; // Replace with your sign's coordinates
+const block = world.getDimension("overworld").getBlock(signLocation);
+if (!block) {
+  world.sendMessage("Could not find a block at specified location.");
+  return;
+}
+const sign = block.getComponent("minecraft:sign") as BlockSignComponent;
 // Set sign to say 'Hello'
-sign.setText('Hello');
-sign.getText(); // 'Hello'
+sign.setText("Hello World");
+world.sendMessage(sign.getText() ?? "undefined"); // 'Hello World'
 ```
 
 ### **setTextDyeColor**
@@ -158,10 +181,13 @@ Sets the dye color of the text.
 
 ### **setWaxed**
 `
-setWaxed(): void
+setWaxed(waxed: boolean): void
 `
 
 Makes it so players cannot edit this sign.
+
+#### **Parameters**
+- **waxed**: *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -179,67 +205,54 @@ Type: *string*
 #### Examples
 ##### ***addSign.ts***
 ```typescript
-  const players = mc.world.getPlayers();
-
-  const dim = players[0].dimension;
-
-  const signBlock = dim.getBlock(targetLocation);
-
-  if (!signBlock) {
-    log("Could not find a block at specified location.");
-    return -1;
-  }
-  let signPerm = mc.BlockPermutation.resolve("minecraft:standing_sign", { ground_sign_direction: 8 });
-
-  signBlock.setPermutation(signPerm);
-
-  const signComponent = signBlock.getComponent("minecraft:sign") as mc.BlockSignComponent;
-
-  signComponent.setText(`Basic sign!\nThis is green on the front.`);
+const signLocation: Vector3 = { x: 0, y: -60, z: 0 }; // Replace with the coordinates of where you want to place the sign
+const block = world.getDimension("overworld").getBlock(signLocation);
+if (!block) {
+  world.sendMessage("Could not find a block at specified location.");
+  return;
+}
+const signPerm = BlockPermutation.resolve("minecraft:standing_sign", {
+  ground_sign_direction: 8,
+});
+block.setPermutation(signPerm);
+const sign = block.getComponent("minecraft:sign") as BlockSignComponent;
+sign.setText(`Basic sign!\n§aThis is green on the front.`);
 ```
 ##### ***addTranslatedSign.ts***
 ```typescript
-  const players = mc.world.getPlayers();
-
-  const dim = players[0].dimension;
-
-  const signBlock = dim.getBlock(targetLocation);
-
-  if (!signBlock) {
-    log("Could not find a block at specified location.");
-    return -1;
-  }
-  let signPerm = mc.BlockPermutation.resolve("minecraft:standing_sign", { ground_sign_direction: 8 });
-
-  signBlock.setPermutation(signPerm);
-
-  const signComponent = signBlock.getComponent("minecraft:sign") as mc.BlockSignComponent;
-
-  signComponent.setText({ translate: "item.skull.player.name", with: [players[0].name] });
+const signLocation: Vector3 = { x: 0, y: -60, z: 0 }; // Replace with the coordinates of where you want to place the sign
+const block = world.getDimension("overworld").getBlock(signLocation);
+if (!block) {
+  world.sendMessage("Could not find a block at specified location.");
+  return;
+}
+const signPerm = BlockPermutation.resolve("minecraft:standing_sign", {
+  ground_sign_direction: 8,
+});
+block.setPermutation(signPerm);
+const sign = block.getComponent("minecraft:sign") as BlockSignComponent;
+const player = world.getPlayers()[0];
+sign.setText({ translate: "item.skull.player.name", with: [player.name] });
 ```
 ##### ***addTwoSidedSign.ts***
 ```typescript
-  const players = mc.world.getPlayers();
+const signLocation: Vector3 = { x: 0, y: -60, z: 0 }; // Replace with the coordinates of where you want to place the sign
+const block = world.getDimension("overworld").getBlock(signLocation);
+if (!block) {
+  world.sendMessage("Could not find a block at specified location.");
+  return;
+}
+const signPerm = BlockPermutation.resolve("minecraft:standing_sign", {
+  ground_sign_direction: 8,
+});
+block.setPermutation(signPerm);
+const sign = block.getComponent("minecraft:sign") as BlockSignComponent;
 
-  const dim = players[0].dimension;
+sign.setText(`Party Sign!\nThis is green on the front.`);
+sign.setText(`Party Sign!\nThis is red on the back.`, SignSide.Back);
+sign.setTextDyeColor(DyeColor.Green);
+sign.setTextDyeColor(DyeColor.Red, SignSide.Back);
 
-  const signBlock = dim.getBlock(targetLocation);
-
-  if (!signBlock) {
-    log("Could not find a block at specified location.");
-    return -1;
-  }
-  let signPerm = mc.BlockPermutation.resolve("minecraft:standing_sign", { ground_sign_direction: 8 });
-
-  signBlock.setPermutation(signPerm);
-
-  const signComponent = signBlock.getComponent("minecraft:sign") as mc.BlockSignComponent;
-
-  signComponent.setText(`Party Sign!\nThis is green on the front.`);
-  signComponent.setText(`Party Sign!\nThis is red on the back.`, mc.SignSide.back);
-  signComponent.setTextDyeColor(mc.DyeColor.green);
-  signComponent.setTextDyeColor(mc.DyeColor.red, mc.SignSide.back);
-
-  // players cannot edit sign!
-  signComponent.setWaxed();
+// players cannot edit sign!
+sign.setWaxed(true);
 ```

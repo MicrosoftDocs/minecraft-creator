@@ -25,7 +25,7 @@ Defines the rules for an entity to be tamed by the player.
 The chance of taming the entity with each item use between 0.0 and 1.0, where 1.0 is 100%
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 

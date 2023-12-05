@@ -18,7 +18,7 @@ The SelectionManager (accessible from the [*@minecraft/server-editor.ExtensionCo
 The primary [*@minecraft/server-editor.Selection*](../../minecraft/server-editor/Selection.md) object is always present (even if it's empty) and cannot be deleted.  This object represents the main selection object which is always accessible through the UI, and by default is synchronized between the client and server.
 
 Type: [*Selection*](Selection.md)
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
