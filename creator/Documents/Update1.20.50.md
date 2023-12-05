@@ -19,8 +19,8 @@ Minecraft Bedrock has been updated to 1.20.50 and there are a number of changes 
  
 ## Items
 
-- [use_modifiers](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_use_duration.md) - Previously called "chargable" and part of the Holiday Creator Features experiment. This functionality has been moved under the "use_modifiers" component.
-- [tags](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_tags.md) - An item component that determines which tags are included on a given item.
+- [use_modifiers](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_use_modifiers.md.md) - Previously called "chargeable" and part of the Holiday Creator Features experiment. This functionality has been moved under the "use_modifiers" component.
+- tags - An item component that determines which tags are included on a given item.
 
 ## Creator API
 
