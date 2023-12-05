@@ -15,7 +15,9 @@ Provides access to a mob's equipment slots. This component exists for all mob en
 
 ## Methods
 - [getEquipment](#getequipment)
+::: moniker range="=minecraft-bedrock-experimental"
 - [getEquipmentSlot](#getequipmentslot)
+::: moniker-end
 - [setEquipment](#setequipment)
 
 ### **getEquipment**
@@ -31,9 +33,6 @@ Gets the equipped item for the given EquipmentSlot.
   The equipment slot. e.g. "head", "chest", "offhand"
 
 #### **Returns** [*ItemStack*](ItemStack.md) | *undefined* - Returns the item equipped to the given EquipmentSlot. If empty, returns undefined.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -55,9 +54,6 @@ Gets the ContainerSlot corresponding to the given EquipmentSlot.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

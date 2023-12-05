@@ -49,6 +49,11 @@ A [Color] Property representing the color of the block cursor object outline
 
 Type: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
 
+### **projectThroughLiquid**
+`projectThroughLiquid?: boolean;`
+
+Type: *boolean*
+
 ### **targetMode**
 `targetMode?: CursorTargetMode;`
 

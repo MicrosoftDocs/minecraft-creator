@@ -25,7 +25,7 @@ Allows this entity to be leashed and defines the conditions and events for this 
 Distance in blocks at which the 'spring' effect starts acting to keep this entity close to the entity that leashed it.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 

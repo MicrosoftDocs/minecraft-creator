@@ -32,6 +32,6 @@ Base class for a family of entity movement events.
 Maximum turn rate for this movement modality of the mob.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.

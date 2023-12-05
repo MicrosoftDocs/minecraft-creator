@@ -14,7 +14,7 @@ description: Contents of the @minecraft/server.ItemComponent class.
 ## Classes that extend ItemComponent
 - [*ItemCooldownComponent*](ItemCooldownComponent.md)
 - [*ItemDurabilityComponent*](ItemDurabilityComponent.md)
-- [*ItemEnchantsComponent*](ItemEnchantsComponent.md)
+- [*ItemEnchantableComponent*](ItemEnchantableComponent.md)
 - [*ItemFoodComponent*](ItemFoodComponent.md)
 
 Base class for item components.

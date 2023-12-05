@@ -160,6 +160,7 @@ Bastion Remnant
 - `ancient_city`
 Ancient City
 - `trail_ruins`
+- `trial_chambers`
 - `ancientcity`
 - `bastionremnant`
 - `buriedtreasure`

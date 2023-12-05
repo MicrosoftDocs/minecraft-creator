@@ -18,7 +18,7 @@ A class that represents a particular dimension (e.g., The End) within a world.
 Height range of the dimension.
 
 Type: [*@minecraft/common.NumberRange*](../../minecraft/common/NumberRange.md)
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -30,15 +30,21 @@ Identifier of the dimension.
 Type: *string*
 
 ## Methods
+::: moniker range="=minecraft-bedrock-experimental"
 - [createExplosion](#createexplosion)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [fillBlocks](#fillblocks)
+::: moniker-end
 - [getBlock](#getblock)
 - [getBlockFromRay](#getblockfromray)
 - [getEntities](#getentities)
 - [getEntitiesAtBlockLocation](#getentitiesatblocklocation)
 - [getEntitiesFromRay](#getentitiesfromray)
 - [getPlayers](#getplayers)
+::: moniker range="=minecraft-bedrock-experimental"
 - [getWeather](#getweather)
+::: moniker-end
 - [runCommand](#runcommand)
 - [runCommandAsync](#runcommandasync)
 - [setWeather](#setweather)
@@ -49,7 +55,7 @@ Type: *string*
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **createExplosion**
 `
-createExplosion(location: Vector3, radius: number, explosionOptions?: ExplosionOptions): void
+createExplosion(location: Vector3, radius: number, explosionOptions?: ExplosionOptions): boolean
 `
 
 Creates an explosion at the specified location.
@@ -64,6 +70,8 @@ Creates an explosion at the specified location.
 - **explosionOptions**?: [*ExplosionOptions*](ExplosionOptions.md) = `null`
   
   Additional configurable options for the explosion.
+
+#### **Returns** *boolean*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -162,16 +170,7 @@ Returns a block instance at the given location.
 #### **Returns** [*Block*](Block.md) | *undefined* - Block at the specified location, or 'undefined' if asking for a block at an unloaded chunk.
 
 > [!WARNING]
-> PositionInUnloadedChunkError: Exception thrown when trying to interact with a Block object that isn't in a loaded and ticking chunk anymore,,PositionOutOfWorldBoundariesError: Exception thrown when trying to interact with a position outside of dimension height range,
-
-> [!WARNING]
-> PositionInUnloadedChunkError: Exception thrown when trying to interact with a Block object that isn't in a loaded and ticking chunk anymore,,PositionOutOfWorldBoundariesError: Exception thrown when trying to interact with a position outside of dimension height range,
-
-> [!WARNING]
-> PositionInUnloadedChunkError: Exception thrown when trying to interact with a Block object that isn't in a loaded and ticking chunk anymore,,PositionOutOfWorldBoundariesError: Exception thrown when trying to interact with a position outside of dimension height range,
-
-> [!WARNING]
-> PositionInUnloadedChunkError: Exception thrown when trying to interact with a Block object that isn't in a loaded and ticking chunk anymore,,PositionOutOfWorldBoundariesError: Exception thrown when trying to interact with a position outside of dimension height range,
+> This function can throw errors.
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
@@ -351,7 +350,7 @@ Runs a command synchronously using the context of the broader dimenion.
 > This function can't be called in read-only mode.
 
 > [!WARNING]
-> Throws an exception if the command fails due to incorrect parameters or command syntax, or in erroneous cases for the command. Note that in many cases, if the command does not operate (e.g., a target selector found no matches), this method will not throw an exception.
+> This function can throw errors.
 >
 > Throws [*CommandError*](CommandError.md)
 
@@ -370,6 +369,8 @@ Runs a particular command asynchronously from the context of the broader dimensi
 #### **Returns** Promise&lt;[*CommandResult*](CommandResult.md)&gt; - For commands that return data, returns a CommandResult with an indicator of command results.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws an exception if the command fails due to incorrect parameters or command syntax, or in erroneous cases for the command. Note that in many cases, if the command does not operate (e.g., a target selector found no matches), this method will not throw an exception.
 
 ### **setWeather**

@@ -27,6 +27,8 @@ Type: *number*
 > This property can't be edited in read-only mode.
 
 > [!WARNING]
+> This property can throw errors when used.
+>
 > Throws if the value is outside the range of 1-255.
 
 ### **isStackable**
@@ -37,6 +39,8 @@ Returns whether the item is stackable. An item is considered stackable if the it
 Type: *boolean*
 
 > [!WARNING]
+> This property can throw errors when used.
+>
 > Throws if the slot's container is invalid.
 
 ### **keepOnDeath**
@@ -50,6 +54,8 @@ Type: *boolean*
 > This property can't be edited in read-only mode.
 
 > [!WARNING]
+> This property can throw errors when used.
+>
 > Throws if the slot's container is invalid.
 
 ### **lockMode**
@@ -63,6 +69,8 @@ Type: [*ItemLockMode*](ItemLockMode.md)
 > This property can't be edited in read-only mode.
 
 > [!WARNING]
+> This property can throw errors when used.
+>
 > Throws if the slot's container is invalid.
 
 ### **maxAmount**
@@ -73,6 +81,8 @@ The maximum stack size. This value varies depending on the type of item. For exa
 Type: *number*
 
 > [!WARNING]
+> This property can throw errors when used.
+>
 > Throws if the slot's container is invalid.
 
 ### **nameTag**
@@ -86,6 +96,8 @@ Type: *string*
 > This property can't be edited in read-only mode.
 
 > [!WARNING]
+> This property can throw errors when used.
+>
 > Throws if the slot's container is invalid. Also throws if the length exceeds 255 characters.
 
 ### **type**
@@ -96,6 +108,8 @@ The type of the item.
 Type: [*ItemType*](ItemType.md)
 
 > [!WARNING]
+> This property can throw errors when used.
+>
 > Throws if the slot's container is invalid.
 
 ### **typeId**
@@ -106,6 +120,8 @@ Identifier of the type of items for the stack. If a namespace is not specified, 
 Type: *string*
 
 > [!WARNING]
+> This property can throw errors when used.
+>
 > Throws if the slot's container is invalid.
 
 ## Methods
@@ -142,6 +158,8 @@ Returns the lore value - a secondary display string - for an ItemStack.
 #### **Returns** *string*[] - An array of lore strings. If the item does not have lore, returns an empty array.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if the slot's container is invalid.
 
 ### **getTags**
@@ -188,6 +206,8 @@ Returns whether this item stack can be stacked with the given `itemStack`. This 
 #### **Returns** *boolean* - Returns whether this item stack can be stacked with the given `itemStack`. 
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if the slot's container is invalid.
 
 ### **isValid**
@@ -215,6 +235,8 @@ The list of block types this item can break in Adventure mode. The block names a
 > This function can't be called in read-only mode.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if the slot's container is invalid. Also throws if any of the provided block identifiers are invalid.
 
 ### **setCanPlaceOn**
@@ -233,6 +255,8 @@ The list of block types this item can be placed on in Adventure mode. This is on
 > This function can't be called in read-only mode.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if the slot's container is invalid. Also throws if any of the provided block identifiers are invalid.
 
 ### **setItem**
@@ -269,4 +293,6 @@ Sets the lore value - a secondary display string - for an ItemStack.
 > This function can't be called in read-only mode.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if the slot's container is invalid.

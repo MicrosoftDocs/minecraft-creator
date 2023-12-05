@@ -770,7 +770,7 @@ Presses a button at a block location.
 > This function can't be called in read-only mode.
 
 > [!WARNING]
-> Will throw an error if a button is not present at the specified position.
+> This function can throw errors.
 >
 > Throws [*GameTestError*](GameTestError.md)
 
@@ -810,7 +810,7 @@ Pulls a lever at a block location.
 > This function can't be called in read-only mode.
 
 > [!WARNING]
-> Will throw an error if a lever is not present at the specified position.
+> This function can throw errors.
 >
 > Throws [*GameTestError*](GameTestError.md)
 

@@ -40,12 +40,10 @@ Location relative to the bottom north-west corner of the block where the new blo
 
 Type: [*Vector3*](Vector3.md)
 
-### **itemStack**
-`itemStack: ItemStack;`
+### **permutationBeingPlaced**
+`read-only permutationBeingPlaced: BlockPermutation;`
 
-The item being used to place the block.
-
-Type: [*ItemStack*](ItemStack.md)
+Type: [*BlockPermutation*](BlockPermutation.md)
 
 ### **player**
 `read-only player: Player;`

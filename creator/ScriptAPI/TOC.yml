@@ -28,10 +28,14 @@
         href: minecraft/server-gametest/changelog.md
       - name: GameTestErrorType
         href: minecraft/server-gametest/GameTestErrorType.md
+      - name: LookDuration
+        href: minecraft/server-gametest/LookDuration.md
       - name: FenceConnectivity
         href: minecraft/server-gametest/FenceConnectivity.md
       - name: GameTestSequence
         href: minecraft/server-gametest/GameTestSequence.md
+      - name: NavigationResult
+        href: minecraft/server-gametest/NavigationResult.md
       - name: RegistrationBuilder
         href: minecraft/server-gametest/RegistrationBuilder.md
       - name: SculkSpreader
@@ -44,6 +48,8 @@
         href: minecraft/server-gametest/Test.md
       - name: GameTestErrorContext
         href: minecraft/server-gametest/GameTestErrorContext.md
+      - name: MoveToOptions
+        href: minecraft/server-gametest/MoveToOptions.md
     - name: minecraft/server-net
       items:
       - name: minecraft/server-net
@@ -92,6 +98,8 @@
         href: minecraft/server/changelog.md
       - name: BlockComponentTypes
         href: minecraft/server/BlockComponentTypes.md
+      - name: BlockPistonState
+        href: minecraft/server/BlockPistonState.md
       - name: BlockVolumeIntersection
         href: minecraft/server/BlockVolumeIntersection.md
       - name: CompoundBlockVolumeAction
@@ -240,12 +248,6 @@
         href: minecraft/server/EffectType.md
       - name: EffectTypes
         href: minecraft/server/EffectTypes.md
-      - name: Enchantment
-        href: minecraft/server/Enchantment.md
-      - name: EnchantmentList
-        href: minecraft/server/EnchantmentList.md
-      - name: EnchantmentSlot
-        href: minecraft/server/EnchantmentSlot.md
       - name: EnchantmentType
         href: minecraft/server/EnchantmentType.md
       - name: EnchantmentTypes
@@ -474,8 +476,8 @@
         href: minecraft/server/ItemDefinitionTriggeredBeforeEvent.md
       - name: ItemDurabilityComponent
         href: minecraft/server/ItemDurabilityComponent.md
-      - name: ItemEnchantsComponent
-        href: minecraft/server/ItemEnchantsComponent.md
+      - name: ItemEnchantableComponent
+        href: minecraft/server/ItemEnchantableComponent.md
       - name: ItemFoodComponent
         href: minecraft/server/ItemFoodComponent.md
       - name: ItemReleaseUseAfterEvent
@@ -530,16 +532,10 @@
         href: minecraft/server/MinecraftDimensionTypes.md
       - name: MolangVariableMap
         href: minecraft/server/MolangVariableMap.md
-      - name: NavigationResult
-        href: minecraft/server/NavigationResult.md
       - name: PistonActivateAfterEvent
         href: minecraft/server/PistonActivateAfterEvent.md
       - name: PistonActivateAfterEventSignal
         href: minecraft/server/PistonActivateAfterEventSignal.md
-      - name: PistonActivateBeforeEvent
-        href: minecraft/server/PistonActivateBeforeEvent.md
-      - name: PistonActivateBeforeEventSignal
-        href: minecraft/server/PistonActivateBeforeEventSignal.md
       - name: Player
         href: minecraft/server/Player.md
       - name: PlayerBreakBlockAfterEvent
@@ -702,6 +698,8 @@
         href: minecraft/server/DefinitionModifier.md
       - name: DimensionLocation
         href: minecraft/server/DimensionLocation.md
+      - name: Enchantment
+        href: minecraft/server/Enchantment.md
       - name: EntityApplyDamageByProjectileOptions
         href: minecraft/server/EntityApplyDamageByProjectileOptions.md
       - name: EntityApplyDamageOptions
@@ -804,6 +802,10 @@
         href: minecraft/server-editor/ClipboardManager.md
       - name: Cursor
         href: minecraft/server-editor/Cursor.md
+      - name: CursorPropertiesChangeAfterEvent
+        href: minecraft/server-editor/CursorPropertiesChangeAfterEvent.md
+      - name: CursorPropertyChangeAfterEventSignal
+        href: minecraft/server-editor/CursorPropertyChangeAfterEventSignal.md
       - name: Extension
         href: minecraft/server-editor/Extension.md
       - name: ExtensionContext
@@ -828,6 +830,8 @@
         href: minecraft/server-editor/SelectionManager.md
       - name: SettingsManager
         href: minecraft/server-editor/SettingsManager.md
+      - name: SimulationState
+        href: minecraft/server-editor/SimulationState.md
       - name: TransactionManager
         href: minecraft/server-editor/TransactionManager.md
       - name: ClipboardWriteOptions

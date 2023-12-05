@@ -25,7 +25,7 @@ Adds a timer for the entity to grow up. It can be accelerated by giving the enti
 Amount of time before the entity grows up, -1 for always a baby.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -35,7 +35,7 @@ Type: *number*
 Event to run when this entity grows up.
 
 Type: [*Trigger*](Trigger.md)
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 

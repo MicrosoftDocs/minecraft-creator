@@ -25,7 +25,7 @@ When present on an item, this item has a cooldown effect when used by entities.
 Represents the cooldown category that this item is associated with.
 
 Type: *string*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -35,7 +35,7 @@ Type: *string*
 Amount of time, in ticks, that remain for this item cooldown.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 

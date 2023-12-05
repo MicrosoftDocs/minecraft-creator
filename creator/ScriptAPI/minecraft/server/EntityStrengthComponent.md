@@ -25,7 +25,7 @@ Defines the entity's strength to carry items.
 Maximum strength of this entity, as defined in the entity type definition.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -35,7 +35,7 @@ Type: *number*
 Current value of the strength component that has been set for entities.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 

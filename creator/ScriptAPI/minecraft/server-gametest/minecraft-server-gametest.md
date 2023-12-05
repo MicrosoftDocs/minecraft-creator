@@ -29,10 +29,12 @@ The @minecraft/server-gametest module provides scriptable APIs for scaffolding a
 
 ## Enumerations
 - [GameTestErrorType](GameTestErrorType.md)
+- [LookDuration](LookDuration.md)
 
 ## Classes
 - [FenceConnectivity](FenceConnectivity.md)
 - [GameTestSequence](GameTestSequence.md)
+- [NavigationResult](NavigationResult.md)
 - [RegistrationBuilder](RegistrationBuilder.md)
 - [SculkSpreader](SculkSpreader.md)
 - [SimulatedPlayer](SimulatedPlayer.md)
@@ -41,6 +43,7 @@ The @minecraft/server-gametest module provides scriptable APIs for scaffolding a
 
 ## Interfaces
 - [GameTestErrorContext](GameTestErrorContext.md)
+- [MoveToOptions](MoveToOptions.md)
 
 ## Errors
 - [GameTestError](GameTestError.md)

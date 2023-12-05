@@ -37,6 +37,11 @@ Specifies the state to transition to.
 
 Type: *string*
 
+### **players**
+`players?: string[];`
+
+Type: *string*[]
+
 ### **stopExpression**
 `stopExpression?: string;`
 
