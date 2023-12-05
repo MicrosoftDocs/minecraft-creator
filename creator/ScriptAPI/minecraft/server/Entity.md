@@ -21,7 +21,7 @@ Represents the state of an entity (a mob, the player, or other moving objects li
 Dimension that the entity is currently within.
 
 Type: [*Dimension*](Dimension.md)
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -35,7 +35,7 @@ Type: *number*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 ::: moniker-end
@@ -53,7 +53,7 @@ Type: *string*
 Whether the entity is touching a climbable block. For example, a player next to a ladder or a spider next to a stone wall.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -63,7 +63,7 @@ Type: *boolean*
 Whether the entity has a fall distance greater than 0, or greater than 1 while gliding.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -73,7 +73,7 @@ Type: *boolean*
 Whether any part of the entity is inside a water block.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -83,7 +83,7 @@ Type: *boolean*
 Whether the entity is on top of a solid block.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -93,7 +93,7 @@ Type: *boolean*
 If true, the entity is currently sleeping.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -113,7 +113,7 @@ Type: *boolean*
 Whether the entity is sprinting. For example, a player using the sprint action, an ocelot running away or a pig boosting with Carrot on a Stick.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -123,7 +123,7 @@ Type: *boolean*
 Whether the entity is in the swimming state. For example, a player using the swim action or a fish in water.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -145,7 +145,7 @@ Type: [*EntityLifetimeState*](EntityLifetimeState.md)
 Current location of the entity.
 
 Type: [*Vector3*](Vector3.md)
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -178,7 +178,7 @@ Type: [*Entity*](Entity.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 ::: moniker-end
@@ -198,7 +198,9 @@ Type: *string*
 - [applyKnockback](#applyknockback)
 - [clearDynamicProperties](#cleardynamicproperties)
 - [clearVelocity](#clearvelocity)
+::: moniker range="=minecraft-bedrock-experimental"
 - [extinguishFire](#extinguishfire)
+::: moniker-end
 - [getBlockFromViewDirection](#getblockfromviewdirection)
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
@@ -219,7 +221,9 @@ Type: *string*
 - [isValid](#isvalid)
 - [kill](#kill)
 - [matches](#matches)
+::: moniker range="=minecraft-bedrock-experimental"
 - [playAnimation](#playanimation)
+::: moniker-end
 - [remove](#remove)
 - [removeEffect](#removeeffect)
 - [removeTag](#removetag)
@@ -227,7 +231,9 @@ Type: *string*
 - [runCommand](#runcommand)
 - [runCommandAsync](#runcommandasync)
 - [setDynamicProperty](#setdynamicproperty)
+::: moniker range="=minecraft-bedrock-experimental"
 - [setOnFire](#setonfire)
+::: moniker-end
 - [setProperty](#setproperty)
 - [setRotation](#setrotation)
 - [teleport](#teleport)
@@ -691,6 +697,8 @@ Gets an entity Property value. If the property was set using the setProperty fun
 #### **Returns** *boolean* | *number* | *string* | *undefined* - Returns the current property value. For enum properties, a string is returned. For float and int properties, a number is returned. For undefined properties, undefined is returned.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if the entity is invalid.
 
 ### **getRotation**
@@ -840,6 +848,8 @@ Matches the entity against the passed in options. Uses the location of the entit
 #### **Returns** *boolean* - Returns true if the entity matches the criteria in the passed in EntityQueryOptions, otherwise it returns false.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Returns true if this entity matches the specified query criteria.
 
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -939,7 +949,7 @@ Resets an Entity Property back to its default value, as specified in the Entity'
 > This function can't be called in read-only mode.
 
 > [!WARNING]
-> Throws if the entity is invalid.
+> This function can throw errors.
 >
 > Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*
 
@@ -1076,19 +1086,17 @@ Sets an Entity Property to the provided value. This property change is not appli
 > This function can't be called in read-only mode.
 
 > [!WARNING]
-> Throws if the entity is invalid.,Throws if an invalid identifier is provided.,Throws if the provided value type does not match the property type.,Throws if the provided value is outside the expected range (int, float properties).,Throws if the provided string value does not match the set of accepted enum values (enum properties
-
-> [!WARNING]
-> Throws if the entity is invalid.,Throws if an invalid identifier is provided.,Throws if the provided value type does not match the property type.,Throws if the provided value is outside the expected range (int, float properties).,Throws if the provided string value does not match the set of accepted enum values (enum properties
-
-> [!WARNING]
-> Throws if the entity is invalid.,Throws if an invalid identifier is provided.,Throws if the provided value type does not match the property type.,Throws if the provided value is outside the expected range (int, float properties).,Throws if the provided string value does not match the set of accepted enum values (enum properties
-
-> [!WARNING]
-> Throws if the entity is invalid.,Throws if an invalid identifier is provided.,Throws if the provided value type does not match the property type.,Throws if the provided value is outside the expected range (int, float properties).,Throws if the provided string value does not match the set of accepted enum values (enum properties
-
-> [!WARNING]
-> Throws if the entity is invalid.,Throws if an invalid identifier is provided.,Throws if the provided value type does not match the property type.,Throws if the provided value is outside the expected range (int, float properties).,Throws if the provided string value does not match the set of accepted enum values (enum properties
+> This function can throw errors.
+>
+> Throws if the entity is invalid.
+>
+> Throws if an invalid identifier is provided.
+>
+> Throws if the provided value type does not match the property type.
+>
+> Throws if the provided value is outside the expected range (int, float properties).
+>
+> Throws if the provided string value does not match the set of accepted enum values (enum properties
 
 ### **setRotation**
 `
@@ -1166,6 +1174,8 @@ Triggers an entity type event. For every entity, a number of events are defined 
 > This function can't be called in read-only mode.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > If the event is not defined in the definition of the entity, an error will be thrown.
 
 #### Examples

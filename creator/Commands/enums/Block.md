@@ -2808,6 +2808,8 @@ Lime Candle Cake
 - `waxed_oxidized_copper_grate`
 - `minecraft:white_concrete`
 - `white_concrete`
+- `minecraft:trial_spawner`
+- `trial_spawner`
 - `minecraft:acacia_fence`
 - `acacia_fence`
 - `minecraft:grass_path`

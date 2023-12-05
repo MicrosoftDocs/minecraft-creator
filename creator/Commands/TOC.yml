@@ -106,8 +106,6 @@
   href: commands/setmaxplayers.md
 - name: setworldspawn
   href: commands/setworldspawn.md
-- name: simulationtype
-  href: commands/simulationtype.md
 - name: spawnpoint
   href: commands/spawnpoint.md
 - name: spreadplayers

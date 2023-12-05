@@ -12,6 +12,13 @@ Properties required to create a Menu
 
 ## Properties
 
+### **checked**
+`checked: boolean;`
+
+Whether the menu should show a checkmark
+
+Type: *boolean*
+
 ### **displayStringId**
 `displayStringId: string;`
 

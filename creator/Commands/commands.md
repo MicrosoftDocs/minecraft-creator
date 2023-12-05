@@ -62,7 +62,6 @@ description: List and descriptions of Minecraft commands and enums
 | [`/setblock`](./commands/setblock.md) | Changes a block to another block. | Game Directors | Yes |
 | [`/setmaxplayers`](./commands/setmaxplayers.md) | Sets the maximum number of players for this game session. | Host | Yes |
 | [`/setworldspawn`](./commands/setworldspawn.md) | Sets the location where new players or players who die will spawn in the world. | Game Directors | Yes |
-| [`/simulationtype`](./commands/simulationtype.md) | Editor mode only.  This command changes the net simulation mode of the Minecraft game between being editor specific vs. a game-type simulation. | Game Directors | No |
 | [`/spawnpoint`](./commands/spawnpoint.md) | Sets the spawn point for a player. | Game Directors | Yes |
 | [`/spreadplayers`](./commands/spreadplayers.md) | Teleports entities to random locations. | Game Directors | Yes |
 | [`/stop`](./commands/stop.md) | Stops the server. This command is for use on a dedicated server only. | Owner | Yes |

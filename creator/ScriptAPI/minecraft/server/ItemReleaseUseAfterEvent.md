@@ -13,7 +13,7 @@ Contains information related to a chargeable item when the player has finished u
 ## Properties
 
 ### **itemStack**
-`read-only itemStack: ItemStack;`
+`read-only itemStack?: ItemStack;`
 
 Returns the item stack that triggered this item event.
 

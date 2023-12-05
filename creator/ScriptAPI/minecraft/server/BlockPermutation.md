@@ -25,14 +25,28 @@ Type: [*BlockType*](BlockType.md)
 ::: moniker-end
 
 ## Methods
+::: moniker range="=minecraft-bedrock-experimental"
 - [clone](#clone)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [getAllStates](#getallstates)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [getItemStack](#getitemstack)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [getState](#getstate)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [getTags](#gettags)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [hasTag](#hastag)
+::: moniker-end
 - [matches](#matches)
+::: moniker range="=minecraft-bedrock-experimental"
 - [withState](#withstate)
+::: moniker-end
 - [resolve](#resolve)
 
 ::: moniker range="=minecraft-bedrock-experimental"

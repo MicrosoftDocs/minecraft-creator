@@ -37,3 +37,12 @@ The notes section is meant to convey more detailed information and notes (e.g. a
 The length of this string is capped to 1024 characters
 
 Type: *string*
+
+### **toolGroupId**
+`toolGroupId?: string;`
+
+An optional custom identifier that will be used for all Modal Tools created from the registered extension. 
+
+The length of the string is capped to 256 characters
+
+Type: *string*

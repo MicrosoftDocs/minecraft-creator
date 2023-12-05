@@ -23,6 +23,8 @@ Type: *number*
 > This property can't be edited in read-only mode.
 
 > [!WARNING]
+> This property can throw errors when used.
+>
 > Throws if the value is outside the range of 1-255.
 
 ### **isStackable**
@@ -70,6 +72,8 @@ Type: *string*
 > This property can't be edited in read-only mode.
 
 > [!WARNING]
+> This property can throw errors when used.
+>
 > Throws if the length exceeds 255 characters.
 
 ### **type**
@@ -121,6 +125,8 @@ Creates a new instance of a stack of items for use in the world.
 #### **Returns** [*ItemStack*](ItemStack.md)
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if `itemType` is invalid, or if `amount` is outside the range of 1-255.
 
 ### **clone**
@@ -264,6 +270,8 @@ The list of block types this item can break in Adventure mode. The block names a
 > This function can't be called in read-only mode.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if any of the provided block identifiers are invalid.
 
 #### Examples
@@ -290,6 +298,8 @@ The list of block types this item can be placed on in Adventure mode. This is on
 > This function can't be called in read-only mode.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if any of the provided block identifiers are invalid.
 
 #### Examples
@@ -366,25 +376,6 @@ Triggers an item type event. For custom items, a number of events are defined in
 ::: moniker-end
 
 #### Examples
-##### ***diamondAwesomeSword.ts***
-```typescript
-  const diamondAwesomeSword = new mc.ItemStack(mc.MinecraftItemTypes.diamondSword, 1);
-  let players = mc.world.getAllPlayers();
-
-  diamondAwesomeSword.setLore(["§c§lDiamond Sword of Awesome§r", "+10 coolness", "§p+4 shiny§r"]);
-
-  // hover over/select the item in your inventory to see the lore.
-  const inventory = players[0].getComponent("inventory") as mc.EntityInventoryComponent;
-  inventory.container.setItem(0, diamondAwesomeSword);
-
-  let item = inventory.container.getItem(0);
-
-  if (item) {
-    let enchants = item.getComponent("minecraft:enchantments") as mc.ItemEnchantsComponent;
-    let knockbackEnchant = new mc.Enchantment("knockback", 3);
-    enchants.enchantments.addEnchantment(knockbackEnchant);
-  }
-```
 ##### ***givePlayerEquipment.ts***
 ```typescript
   let players = mc.world.getAllPlayers();
@@ -412,22 +403,16 @@ Triggers an item type event. For custom items, a number of events are defined in
 ```
 ##### ***ironFireSword.ts***
 ```typescript
-  const ironFireSword = new mc.ItemStack(mc.MinecraftItemTypes.diamondSword, 1);
-  let players = mc.world.getAllPlayers();
+const ironFireSword = new mc.ItemStack(mc.MinecraftItemTypes.diamondSword, 1);
+let players = mc.world.getAllPlayers();
 
-  let fireAspectEnchant = new mc.Enchantment("fire_aspect", 3);
-  let enchants = ironFireSword.getComponent("minecraft:enchantments") as mc.ItemEnchantsComponent;
-  let addedFire = enchants.enchantments.addEnchantment(fireAspectEnchant);
+const enchantments = ironFireSword?.getComponent('minecraft:enchantable');
+if (enchantments) {
+    enchantments.addEnchantment({ type: mc.MinecraftEnchantmentTypes.FireAspect, level: 1 });
+}
 
-  if (!addedFire) {
-    log("Could not add fire aspect.");
-    return -1;
-  }
-
-  const inventory = players[0].getComponent("inventory") as mc.EntityInventoryComponent;
-  inventory.container.setItem(0, ironFireSword);
-
-  // hover over/select the item in your inventory to see the lore.
+const inventory = players[0].getComponent('minecraft:inventory');
+inventory.container.setItem(0, ironFireSword);
 ```
 ##### ***itemStacks.ts***
 ```typescript

@@ -44,8 +44,8 @@ Type: [*ChatSendAfterEventSignal*](ChatSendAfterEventSignal.md)
 ::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
-### **dataDrivenEntityTriggerEvent**
-`read-only dataDrivenEntityTriggerEvent: DataDrivenEntityTriggerAfterEventSignal;`
+### **dataDrivenEntityTrigger**
+`read-only dataDrivenEntityTrigger: DataDrivenEntityTriggerAfterEventSignal;`
 
 This event is fired when an entity event has been triggered that will update the component definition state of an entity.
 

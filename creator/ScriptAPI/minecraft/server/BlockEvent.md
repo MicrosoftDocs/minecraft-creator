@@ -13,7 +13,6 @@ description: Contents of the @minecraft/server.BlockEvent class.
 - [*ButtonPushAfterEvent*](ButtonPushAfterEvent.md)
 - [*LeverActionAfterEvent*](LeverActionAfterEvent.md)
 - [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)
-- [*PistonActivateBeforeEvent*](PistonActivateBeforeEvent.md)
 - [*PlayerBreakBlockAfterEvent*](PlayerBreakBlockAfterEvent.md)
 - [*PlayerBreakBlockBeforeEvent*](PlayerBreakBlockBeforeEvent.md)
 - [*PlayerPlaceBlockAfterEvent*](PlayerPlaceBlockAfterEvent.md)
