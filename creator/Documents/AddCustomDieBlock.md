@@ -290,7 +290,6 @@ The die block will use a custom texture for four of the sides, and a different t
       "west": "die_5" 
     }, 
     "carried_textures": "die_red", 
-    "brightness_gamma": 1, 
     "sound": "stone" 
      } 
 }
