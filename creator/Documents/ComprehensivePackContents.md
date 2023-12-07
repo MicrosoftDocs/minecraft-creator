@@ -97,23 +97,14 @@ pack_icon.png
     - <entity_render_controllers>.json
     - default.render_controllers.json
 - [sounds](IntroductionToSound.md)
-    - ambient
-        - cave
-            - cave*.ogg
-        - nether
-            - <nether_location>
-                - mood*.fsb
-        - underwater
-            - enter*.fsb
-            - exit*.fsb
-        - weather
-            - rain*.fsb
-            - thunder*.fsb
-    - ui
-        - <item>
-            <item_sound>.fsb
+    - <location_type>
+        - <location1>
+            - <location*>.ogg
+        - <location2>
+            - <location*>
+                - <sound*>.fsb
 - texts
-    - ja_JP
+    - <language>
         - font
             - glyph_*.png
     - en_US.lang
