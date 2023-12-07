@@ -18,7 +18,7 @@ To begin, create a new folder named "render_controllers" in the root of the Reso
 
 ### Example render controllers JSON for the ocelot entity
 
-```JSONC
+```JSON
 "format_version": "1.8.0",
 "render_controllers": {
   "controller.render.ocelot": {
@@ -38,7 +38,6 @@ To begin, create a new folder named "render_controllers" in the root of the Reso
     "textures": ["Array.skins[query.variant]"]
   }
 }
-
 ```
 
 ## Examples
@@ -127,7 +126,6 @@ In the following examples, you will see how Render Controllers can be used to dr
         "textures": ["array.armor_texture[query.armor_texture_slot(1)]", "texture.enchanted"]
     }
 }
-
 ```
 
 ### Example with is_hurt_color from Creeper render controller JSON
@@ -145,8 +143,8 @@ In the following examples, you will see how Render Controllers can be used to dr
         "b": 1.0,
         "a": 0.5,
     }
+    }
 }
-
 ```
 
 ### Example with on_fire_color from Fireball render controller JSON
@@ -166,7 +164,6 @@ In the following examples, you will see how Render Controllers can be used to dr
         }
     }
 }
-
 ```
 
 ### Example with overlay_color from Wither Boss render controller JSON
@@ -191,7 +188,6 @@ In the following examples, you will see how Render Controllers can be used to dr
         }
     }
 }
-
 ```
 
 ### Example with part_visibility for turning on and off visibility of parts from Llama JSON
@@ -239,7 +235,6 @@ In the following examples, you will see how Render Controllers can be used to dr
     ]
   }
 }
-
 ```
 
 ### Material array example from Horse render controllers
@@ -253,5 +248,4 @@ Saddle will override Mane, which will override TailA, etc.
   { "Mane": "Material.horse_hair" },
   { "*Saddle*": "Material.horse_saddle" }
 ],
-
 ```

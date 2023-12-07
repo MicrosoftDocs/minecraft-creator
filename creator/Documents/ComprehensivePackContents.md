@@ -1,0 +1,162 @@
+---
+author: iconicNurdle
+ms.author: mikeam
+title: Comprehensive List of Pack Contents
+description: "An overview of the structure and contents of behavior packs and resource packs"
+ms.service: minecraft-bedrock-edition
+---
+
+# Comprehensive List of Add-on Pack Contents
+
+Have you ever wondered what files and folders the most comprehensive resource and behavior packs would contain? If so, this list is for you.
+
+Minecraft Bedrock Edition can only use add-on pack file contents if the file is the correct type (like .json, .png, .fsb), and if it is stored in a folder with a particular name, and if that folder is in the correct location.
+
+### Requirements
+
+It's recommended that the following be completed before beginning this tutorial.
+
+- [Getting Started with Add-On Development](GettingStarted.md)
+- [Introduction To Behavior Packs](BehaviorPack.md)
+- [Introduction To Resource Packs](ResourcePack.md)
+
+## About this List...
+
+Behavior packs and resource packs can vary wildly depending on what the creator who made them wants to create.
+
+It can also be a design choice to group entities or items in separate folders, rather than storing their **.json** files all together.
+
+For example, if the creator does not want to use functions, then there is no function section and no **.mcfunction** files. But if they do want to use a function, then this list helps by showing that the **function** folder goes in the behavior pack, that the folder must be named **function** (rather than "functions"), and that only **.mcfunction** files can go in that folder.
+
+The only truly required file in either type of pack is **manifest.json**.
+
+Wherever possible, the sections are linked to related tutorials, overviews, or reference documents.
+
+## Comprehensive Behavior Pack
+
+- [animation_controllers](../Reference/Content/AnimationsReference/Examples/AnimationController.md)
+    - <entity_name>
+        - <entity_name_animation_controller>.json
+    - <entity_controller>.json
+- [animations](../Reference/Content/AnimationsReference/Examples/AnimationGettingStarted.md)
+    - <entity_name>
+        - <entity_name_animations>.json
+    - <entity_name_animations>.json
+- [blocks](AddCustomDieBlock.md)
+    - <block_name>.json
+- [entities]()
+    - <entity_name>
+        - <entity_name_animation_controller>.json
+    - <entity_name>.json
+- [functions](FunctionsIntroduction.md)
+    - <entity_name>
+        - <entity_name_function>.mcfunction
+- [items](AddCustomItems.md)
+    - <item_name>.json
+- [loot_tables](IntroductionToLootTables.md)
+    - entities
+        - <entity_name>.json
+- [recipes](../Reference/Content/RecipeReference/Examples/RecipeDefinitions/RecipeIntroduction.md)
+    - <entity_recipe>.json
+- [spawn_rules](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/DataDrivenSpawning.md)
+    - <entity_spawn_rules>.json
+- [structures](../Reference/Content/FeaturesReference/Examples/Features/minecraftStructure_template_feature.md)
+    - <structure_name>.mcstructure
+- [texts](PreparingRawTextForLocalization.md)
+    - languages.json
+    - en_US.lang
+    - <language>.lang
+- [trading](LootAndTradeTableFunctions.md)
+    - <villager_trades>.json
+manifest.json **(required)**
+pack_icon.png
+
+## Comprehensive Resource Pack
+
+- [animation_controllers](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction#animation_controllers.md)
+    - <entity_animation_controllers>.json
+- [animations](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction#animations.md)
+    - <entity.animation>.json
+- [attachables](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction#enable_attachables.md)
+    - <attachable_entity_name>.json
+- [entity](IntroductionToAddEntity.md)
+    - <entity_name>
+        - <entity_name>.json
+    - <entity_name>.json
+- [fogs](FogInResourcePacks.md)
+    - <location_fog_setting>.json
+- [items](AddCustomItems.md)
+    <item_name>.json
+- [materials](IntroductionToAddEntity#materials.md)
+    - <entity>.material
+- [models](EntityModelingAndAnimation#entity-modeling-and-animation.md)
+    - <entity>.geo.json
+- [particles](../Reference/Content/ParticlesReference/ParticlesIntroduction.md)
+    - <item_name>.json
+- [render_controllers](../Reference/Content/AnimationsReference/Examples/AnimationRenderController.md)
+    - <entity_render_controllers>.json
+    - default.render_controllers.json
+- [sounds](IntroductionToSound.md)
+    - ambient
+        - cave
+            - cave*.ogg
+        - nether
+            - <nether_location>
+                - mood*.fsb
+        - underwater
+            - enter*.fsb
+            - exit*.fsb
+        - weather
+            - rain*.fsb
+            - thunder*.fsb
+    - ui
+        - <item>
+            <item_sound>.fsb
+- texts
+    - ja_JP
+        - font
+            - glyph_*.png
+    - en_US.lang
+- textures
+    - blocks
+        - candles
+            - black_candle.png
+            - black_candle_lit.png
+        - deepslate
+        - huge_fungus
+        - acacia_trapdoor.png
+    - colormap
+    - entity
+    - environment
+    - gui
+    - items
+    - map
+    - misc
+    - models
+    - painting
+    - particle
+    - persona_thumbnails
+    - trims
+    - ui
+    - item_texture.json
+- ui
+biomes_client.json
+blocks.json
+manifest.json **(required)**
+pack_icon.json
+sounds.json
+
+## Sample Packs
+
+To see examples of typical resource and behavior packs, check out the Minecraft [Vanilla resource pack](https://aka.ms/resourcepacktemplate) and [Vanilla behavior Pack](https://aka.ms/behaviorpacktemplate).
+
+## What's Next?
+
+Here are some more advanced add-on pack content information:
+
+> [!div class="nextstepaction"]
+> [IntroductionToSound](IntroductionToSound.md)
+> [ScriptingGettingStarted](ScriptingGettingStarted.md)
+> [Creating New Entity Types](introductiontoaddentity.md)
+> [Entity JSON Documentation](../Reference/Content/EntityReference/index.yml)
+
