@@ -75,9 +75,9 @@ pack_icon.png
 
 ## Comprehensive Resource Pack
 
-- [animation_controllers](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction#animation_controllers.md)
+- [animation_controllers](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md#animation_controllers)
     - `<entity_animation_controllers>`.json
-- [animations](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction#animations.md)
+- [animations](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md#animations)
     - `<entity.animation>`.json
 - [attachables](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction#enable_attachables.md)
     - `<attachable_entity_name>`.json
