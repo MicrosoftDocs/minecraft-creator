@@ -79,7 +79,7 @@ pack_icon.png
     - `<entity_animation_controllers>`.json
 - [animations](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md#animations)
     - `<entity.animation>`.json
-- [attachables](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction#enable_attachables.md)
+- [attachables](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md#enable_attachables)
     - `<attachable_entity_name>`.json
 - [entity](IntroductionToAddEntity.md)
     - `<entity_name>`
@@ -89,9 +89,9 @@ pack_icon.png
     - `<location_fog_setting>`.json
 - [items](AddCustomItems.md)
     `<item_name>`.json
-- [materials](IntroductionToAddEntity#materials.md)
+- [materials](IntroductionToAddEntity.md#materials)
     - `<entity>`.material
-- [models](EntityModelingAndAnimation#entity-modeling-and-animation.md)
+- [models](EntityModelingAndAnimation.md#entity-modeling-and-animation)
     - `<entity>`.geo.json
 - [particles](../Reference/Content/ParticlesReference/ParticlesIntroduction.md)
     - `<item_name>`.json
