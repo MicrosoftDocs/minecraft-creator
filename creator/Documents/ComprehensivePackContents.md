@@ -8,19 +8,9 @@ ms.service: minecraft-bedrock-edition
 
 # Comprehensive List of Add-on Pack Contents
 
-Have you ever wondered what files and folders the most comprehensive resource and behavior packs would contain? If so, this list is for you.
+Have you ever wondered what files and folders the most comprehensive behavior, resource, and skin packs would contain? If so, this list is for you.
 
 Minecraft Bedrock Edition can only use add-on pack file contents if the file is the correct type (like .json, .png, .fsb), and if it is stored in a folder with a particular name, and if that folder is in the correct location.
-
-### Requirements
-
-It's recommended that the following be completed before beginning this tutorial.
-
-- [Getting Started with Add-On Development](GettingStarted.md)
-- [Introduction To Behavior Packs](BehaviorPack.md)
-- [Introduction To Resource Packs](ResourcePack.md)
-
-## About this List...
 
 Behavior packs and resource packs can vary wildly depending on what the creator who made them wants to create.
 
@@ -28,13 +18,15 @@ It can also be a design choice to group entities or items in separate folders, r
 
 For example, if the creator does not want to use functions, then there is no function section and no **.mcfunction** files. But if they do want to use a function, then this list helps by showing that the **function** folder goes in the behavior pack, that the folder must be named **function** (rather than "functions"), and that only **.mcfunction** files can go in that folder.
 
-Some features require both a folder full of resources and a specific manifest file, like **sounds.json**.
+Some features need a folder to contain the resources and a related file like **sounds.json**.
 
-The only truly required file in either type of pack is **manifest.json**.
+The only required file in either type of pack is **manifest.json**.
 
 Wherever possible, the sections are linked to related tutorials, overviews, or reference documents.
 
 ## Comprehensive Behavior Pack
+
+Here is an introduction to [behavior packs](BehaviorPack.md).
 
 - [animation_controllers](../Reference/Content/AnimationsReference/Examples/AnimationController.md)
     - `<entity_name>`
@@ -74,6 +66,8 @@ manifest.json **(required)**
 pack_icon.png
 
 ## Comprehensive Resource Pack
+
+Here is an introduction to [resource packs](ResourcePack.md).
 
 - [animation_controllers](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md#animation_controllers)
     - `<entity_animation_controllers>`.json
@@ -124,6 +118,19 @@ pack_icon.png
 - manifest.json **(required)**
 - pack_icon.png
 - [sounds.json](AddCustomSounds.md)
+
+## Comprehensive Skin Pack
+
+Here is an introduction to [skin packs](PackagingASkinPack.md).
+
+- [texts](PreparingRawTextForLocalization.md)
+    - languages.json
+    - en_US.lang
+- `<skin_graphic>`.png
+- geometry.json
+- manifest.json
+- skins.json
+
 
 ## Sample Packs
 
