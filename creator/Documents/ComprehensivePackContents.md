@@ -28,6 +28,8 @@ It can also be a design choice to group entities or items in separate folders, r
 
 For example, if the creator does not want to use functions, then there is no function section and no **.mcfunction** files. But if they do want to use a function, then this list helps by showing that the **function** folder goes in the behavior pack, that the folder must be named **function** (rather than "functions"), and that only **.mcfunction** files can go in that folder.
 
+Some features require both a folder full of resources and a specific manifest file, like **sounds.json**.
+
 The only truly required file in either type of pack is **manifest.json**.
 
 Wherever possible, the sections are linked to related tutorials, overviews, or reference documents.
@@ -39,7 +41,6 @@ Wherever possible, the sections are linked to related tutorials, overviews, or r
         - `<entity_name_animation_controller>`.json
     - `<entity_controller>`.json
 - [animations](../Reference/Content/AnimationsReference/Examples/AnimationGettingStarted.md)
-    - <entity_name_animations>.json
     - `<entity_name>`
         - `<entity_name_animations>`.json
     - `<entity_name_animations>`.json
@@ -110,33 +111,19 @@ pack_icon.png
             - glyph_*.png
     - en_US.lang
 - textures
-    - blocks
-        - candles
-            - black_candle.png
-            - black_candle_lit.png
-        - deepslate
-        - huge_fungus
-        - acacia_trapdoor.png
-    - colormap
-    - entity
-    - environment
-    - gui
-    - items
-    - map
-    - misc
-    - models
-    - painting
-    - particle
-    - persona_thumbnails
-    - trims
-    - ui
-    - item_texture.json
+    - `<item_category>`
+        - `<item_name>`
+            - `<item_name>`.png
+        - `<item_name>`.png
 - ui
-biomes_client.json
-blocks.json
-manifest.json **(required)**
-pack_icon.json
-sounds.json
+    - `<graphic>`.png
+    - `<graphic>`.jpg
+    - `<file>`.json
+- biomes_client.json
+- blocks.json
+- manifest.json **(required)**
+- pack_icon.png
+- [sounds.json](AddCustomSounds.md)
 
 ## Sample Packs
 
