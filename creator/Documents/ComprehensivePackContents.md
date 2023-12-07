@@ -35,76 +35,77 @@ Wherever possible, the sections are linked to related tutorials, overviews, or r
 ## Comprehensive Behavior Pack
 
 - [animation_controllers](../Reference/Content/AnimationsReference/Examples/AnimationController.md)
-    - <entity_name>
-        - <entity_name_animation_controller>.json
-    - <entity_controller>.json
+    - `<entity_name>`
+        - `<entity_name_animation_controller>`.json
+    - `<entity_controller>`.json
 - [animations](../Reference/Content/AnimationsReference/Examples/AnimationGettingStarted.md)
-    - <entity_name>
-        - <entity_name_animations>.json
     - <entity_name_animations>.json
+    - `<entity_name>`
+        - `<entity_name_animations>`.json
+    - `<entity_name_animations>`.json
 - [blocks](AddCustomDieBlock.md)
-    - <block_name>.json
+    - `<block_name>`.json
 - [entities]()
-    - <entity_name>
-        - <entity_name_animation_controller>.json
-    - <entity_name>.json
+    - `<entity_name>`
+        - `<entity_name_animation_controller>`.json
+    - `<entity_name>`.json
 - [functions](FunctionsIntroduction.md)
-    - <entity_name>
-        - <entity_name_function>.mcfunction
+    - `<entity_name>`
+        - `<entity_name_function>`.mcfunction
 - [items](AddCustomItems.md)
-    - <item_name>.json
+    - `<item_name>`.json
 - [loot_tables](IntroductionToLootTables.md)
     - entities
-        - <entity_name>.json
+        - `<entity_name>`.json
 - [recipes](../Reference/Content/RecipeReference/Examples/RecipeDefinitions/RecipeIntroduction.md)
-    - <entity_recipe>.json
+    - `<entity_recipe>`.json
 - [spawn_rules](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/DataDrivenSpawning.md)
-    - <entity_spawn_rules>.json
+    - `<entity_spawn_rules>`.json
 - [structures](../Reference/Content/FeaturesReference/Examples/Features/minecraftStructure_template_feature.md)
-    - <structure_name>.mcstructure
+    - `<structure_name>`.mcstructure
 - [texts](PreparingRawTextForLocalization.md)
     - languages.json
     - en_US.lang
-    - <language>.lang
+    - `<language>`.lang
 - [trading](LootAndTradeTableFunctions.md)
-    - <villager_trades>.json
+    - `<villager_trades>`.json
 manifest.json **(required)**
 pack_icon.png
 
 ## Comprehensive Resource Pack
 
 - [animation_controllers](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction#animation_controllers.md)
-    - <entity_animation_controllers>.json
+    - `<entity_animation_controllers>`.json
 - [animations](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction#animations.md)
-    - <entity.animation>.json
+    - `<entity.animation>`.json
 - [attachables](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction#enable_attachables.md)
-    - <attachable_entity_name>.json
+    - `<attachable_entity_name>`.json
 - [entity](IntroductionToAddEntity.md)
-    - <entity_name>
-        - <entity_name>.json
-    - <entity_name>.json
+    - `<entity_name>`
+        - `<entity_name>`.json
+    - `<entity_name>`.json
 - [fogs](FogInResourcePacks.md)
-    - <location_fog_setting>.json
+    - `<location_fog_setting>`.json
 - [items](AddCustomItems.md)
-    <item_name>.json
+    `<item_name>`.json
 - [materials](IntroductionToAddEntity#materials.md)
-    - <entity>.material
+    - `<entity>`.material
 - [models](EntityModelingAndAnimation#entity-modeling-and-animation.md)
-    - <entity>.geo.json
+    - `<entity>`.geo.json
 - [particles](../Reference/Content/ParticlesReference/ParticlesIntroduction.md)
-    - <item_name>.json
+    - `<item_name>`.json
 - [render_controllers](../Reference/Content/AnimationsReference/Examples/AnimationRenderController.md)
-    - <entity_render_controllers>.json
+    - `<entity_render_controllers>`.json
     - default.render_controllers.json
 - [sounds](IntroductionToSound.md)
-    - <location_type>
-        - <location1>
-            - <location*>.ogg
-        - <location2>
-            - <location*>
-                - <sound*>.fsb
+    - `<location_type>`
+        - `<location1>`
+            - `<location*>`.ogg
+        - `<location2>`
+            - `<location*>`
+                - `<sound*>`.fsb
 - texts
-    - <language>
+    - `<language>`
         - font
             - glyph_*.png
     - en_US.lang
@@ -145,9 +146,8 @@ To see examples of typical resource and behavior packs, check out the Minecraft 
 
 Here are some more advanced add-on pack content information:
 
-> [!div class="nextstepaction"]
-> [IntroductionToSound](IntroductionToSound.md)
-> [ScriptingGettingStarted](ScriptingGettingStarted.md)
-> [Creating New Entity Types](introductiontoaddentity.md)
-> [Entity JSON Documentation](../Reference/Content/EntityReference/index.yml)
+>` [!div class="nextstepaction"]
+>` [ScriptingGettingStarted](ScriptingGettingStarted.md)
+>` [Creating New Entity Types](introductiontoaddentity.md)
+>` [Entity JSON Documentation](../Reference/Content/EntityReference/index.yml)
 
