@@ -111,7 +111,7 @@ If you have duplicate image references, the priority of file extensions is: .tga
 
 For example: if grass.png and grass.tga both exist in the folder, grass.tga will be chosen. This also applies to other data driven files, like actor json referencing a texture resource.
 
-## Texture Set Json Schema
+## Texture Set JSON Schema
 
 ```json
 {
@@ -126,5 +126,4 @@ For example: if grass.png and grass.tga both exist in the folder, grass.tga will
       string "metalness_emissive_roughness" : opt // The texture name of a textureset layer
   }
 }
-
 ```

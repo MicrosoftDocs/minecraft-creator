@@ -62,7 +62,7 @@ The first property is the header, which defines this JSON file as a valid scene 
 
 #### Example
 
-```JSON
+```json
 {
     "format_version": "1.17",
     "minecraft:npc_dialogue": {

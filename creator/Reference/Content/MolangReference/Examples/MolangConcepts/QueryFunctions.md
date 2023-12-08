@@ -15,7 +15,7 @@ Query Functions are operators that access a wide variety of information. They ca
 
 ## Example
 
-```JSON
+```json
 "position": [ 0.0, "query.is_baby ? -8.0 : 0.0", "query.is_baby ? 4.0 : 0.0" ]
 ```
 

@@ -26,7 +26,7 @@ The `key` used in the pattern may be any single character except the 'space' cha
 
 ## Shaped Recipe Example
 
-```JSON
+```json
 {
 "format_version": "1.17",
 "minecraft:recipe_shaped": {

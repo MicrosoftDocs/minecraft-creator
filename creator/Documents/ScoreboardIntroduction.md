@@ -110,7 +110,7 @@ Use the **belowname** option to display objective information below player names
 
 ## Scoreboard Players Commands
 
-The following scoreboard player commands affect a player's score value. The arguments can be listed using the chat’s auto-complete feature.
+The following scoreboard player commands affect a player's score value. The arguments can be listed using the chat's auto-complete feature.
 
 ### set
 
