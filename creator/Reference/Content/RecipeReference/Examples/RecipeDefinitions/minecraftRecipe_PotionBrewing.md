@@ -21,7 +21,7 @@ Represents a Potion Brewing Container Recipe.
 
 ## Potion Brewing Container Recipe Example
 
-```JSON
+```json
 {
 "format_version": "1.17",
     "minecraft:recipe_brewing_container": {

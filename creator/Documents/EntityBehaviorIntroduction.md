@@ -48,7 +48,7 @@ Entity JSON files are saved in the entities folder of your behavior pack. The ga
 
 The files are written in JSON and the basic structure looks like this:
 
-```JSON
+```json
 {
     "format_version":"1.19.20",
     "minecraft:entity":{
@@ -110,7 +110,7 @@ The option `priority` can be used on all AI goal behavior components. 0 is the h
 
 In the following example, the `hurt_by_target` component has a higher priority. If the entity gets attacked while strolling, it will immediately target the attacker.
 
-```JSON
+```json
 "minecraft:behavior.random_stroll":{
     "priority":4
 },
@@ -136,7 +136,7 @@ For example, an already-added `minecraft:timer` that is added again will start i
 
 In this example, a component group is defined which can cause the entity to become a baby variation. The components defined in the main component section are always active, while the components in the baby component group are only active when that group is added by the `sample:add_baby` event.
 
-```JSON
+```json
 {
     "format_version":"1.19.0",
     "minecraft:entity": {
@@ -147,7 +147,6 @@ In this example, a component group is defined which can cause the entity to beco
         },
         "components":{
             "minecraft:physics": {
-                
             }
         },
         "component_groups": {
@@ -167,8 +166,8 @@ In this example, a component group is defined which can cause the entity to beco
                     ["baby"]
                 }
             }
-        }   
-
+        }
+      }
     }
 }
 ```
@@ -191,7 +190,7 @@ There are a few components where this is important to consider:
 
 In order to avoid this behavior, you need to add a new component group with the updated state of the component. In the case of the scale example, this can be as easy as having two different component groups for the different states that you can switch between.
 
-```JSON
+```json
 "components":{
     "minecraft:scale":{
         "value":2
@@ -252,5 +251,5 @@ Here are a few ideas:
 
 The component system allows you to customize what your entity does and how it interacts with the world. If you want to learn more about entity events and using them to add more component groups with more customized behavior, see the Entity Events documentation.
 
-> [!div class="nextstepaction"]  
+> [!div class="nextstepaction"]
 > [Entity Events](EntityEvents.md)

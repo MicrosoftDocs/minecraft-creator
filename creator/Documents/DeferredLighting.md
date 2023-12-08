@@ -160,7 +160,7 @@ By default, the game will treat the following blocks as point lights. This funct
 >- `minecraft:soul_lantern` as `#00FFFF`
 >- `minecraft:soul_torch` as `#00FFFF`
 
-To change the strength of a point light, refer to the [documentation for lightEmission block](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md) components. Be aware that this lightEmission value is a separate concept from the “Emissive” value described in PBR or Texture Set documentation.
+To change the strength of a point light, refer to the [documentation for lightEmission block](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md) components. Be aware that this lightEmission value is a separate concept from the "Emissive" value described in PBR or Texture Set documentation.
 
 Color values can be described either as an array of 3 numerical values from the range 0-255 or as a 6-digit hexadecimal string.
 

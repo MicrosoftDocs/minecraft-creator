@@ -74,7 +74,7 @@ The wizard will guide you through the steps required to create your custom entit
 
 The Display Name is the name that the entity will later be called in Minecraft. It will appear in the spawn egg name, in chat, and in other places in the interface. This name also supports translations into different languages.
 
-:::image type="content" source="Media/MinecraftEntityWizard/MinecraftEntityWizard_naming.png" alt-text="Minecraft Entity Wizard showcasing where Creators can set the Name and Identifier for their new entity.":::
+:::image type="content" source="Media/MinecraftEntityWizard/MinecraftEntityWizard_naming.png" alt-text="Minecraft Entity Wizard showcasing where creators can set the Name and Identifier for their new entity.":::
 
 > [!NOTE]
 > The **Identifier** is the internal name used within Minecraft that is commonly used in commands and other places to identify this type of entity.

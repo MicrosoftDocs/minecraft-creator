@@ -127,7 +127,7 @@ Every entity's behaviors are defined in its JSON file that lives inside the code
 >[!Note]
 > This is the entire edited cow.json file. It's big because cows do a lot!
 
-```JSON
+```json
 {
     "format_version": "1.16.0",
     "minecraft:entity": {

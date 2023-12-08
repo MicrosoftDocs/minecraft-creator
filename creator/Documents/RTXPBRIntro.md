@@ -128,7 +128,7 @@ For the Texture Set to work properly, you will need to define a JSON file to loa
 
 #### iron_block.texture_set.json
 
-```JSON
+```json
 {
   "format_version": "1.16.100",
   "minecraft:texture_set": {
