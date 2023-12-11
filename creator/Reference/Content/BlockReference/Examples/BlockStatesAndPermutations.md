@@ -49,7 +49,7 @@ Each permutation is a JSON Object that consists of 2 parameters, shown below.
         "custom:is_lit": [ true, false ]
       }
     },
-    "permutations": {
+    "permutations": [
       {
         "condition": "query.block_state('custom:is_lit') == true",
         "components": {
@@ -62,7 +62,7 @@ Each permutation is a JSON Object that consists of 2 parameters, shown below.
           "minecraft:light_emission": 0
         }
       }
-    },
+    ],
     "components": {
       "minecraft:friction": 0.6,
       "minecraft:map_color": "#00ff00" 
