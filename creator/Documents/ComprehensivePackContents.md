@@ -45,6 +45,7 @@ Here is an introduction to [behavior packs](BehaviorPack.md).
 - [functions](FunctionsIntroduction.md)
     - `<entity_name>`
         - `<entity_name_function>`.mcfunction
+    - [tick.json](TickJsonIntroduction.md)
 - [items](AddCustomItems.md)
     - `<item_name>`.json
 - [loot_tables](IntroductionToLootTables.md)
@@ -62,8 +63,8 @@ Here is an introduction to [behavior packs](BehaviorPack.md).
     - `<language>`.lang
 - [trading](LootAndTradeTableFunctions.md)
     - `<villager_trades>`.json
-manifest.json **(required)**
-pack_icon.png
+- [manifest.json](BehaviorPack.md#create-the-manifest-file) **(required)**
+- pack_icon.png
 
 ## Comprehensive Resource Pack
 
@@ -75,6 +76,7 @@ Here is an introduction to [resource packs](ResourcePack.md).
     - `<entity.animation>`.json
 - [attachables](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md#enable_attachables)
     - `<attachable_entity_name>`.json
+
 - [entity](IntroductionToAddEntity.md)
     - `<entity_name>`
         - `<entity_name>`.json
@@ -109,15 +111,26 @@ Here is an introduction to [resource packs](ResourcePack.md).
         - `<item_name>`
             - `<item_name>`.png
         - `<item_name>`.png
+    - [blocks]()
+        - `<custom_block>`.png
+    - [terrain_texture.json](AddCustomDieBlock.md#add-a-friendly-name-in-terrain_texturejson)
 - ui
     - `<graphic>`.png
     - `<graphic>`.jpg
     - `<file>`.json
-- biomes_client.json
-- blocks.json
-- manifest.json **(required)**
+- [biomes_client.json](Backups/FogsReference/Examples/FogsConcepts/FogsIntroduction.md#biomes_clientjson)
+- [blocks.json](AddCustomDieBlock.md#define-textures-and-sounds-with-blocksjson)
+- [manifest.json](ResourcePack.md#create-a-manifest-file) **(required)**
 - pack_icon.png
 - [sounds.json](AddCustomSounds.md)
+
+### Special files in the textures folder
+
+
+flipbook_textures.json
+
+blocks.json
+
 
 ## Comprehensive Skin Pack
 
