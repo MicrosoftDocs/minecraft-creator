@@ -22,14 +22,14 @@ Contains objectives and participants for the scoreboard.
 
 ### **addObjective**
 `
-addObjective(objectiveId: string, displayName: string): ScoreboardObjective
+addObjective(objectiveId: string, displayName?: string): ScoreboardObjective
 `
 
 Adds a new objective to the scoreboard.
 
 #### **Parameters**
 - **objectiveId**: *string*
-- **displayName**: *string*
+- **displayName**?: *string* = `null`
 
 #### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md)
 

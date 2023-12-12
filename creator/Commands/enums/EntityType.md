@@ -36,6 +36,8 @@ Bee
 Axolotl
 - `axolotl`
 Axolotl
+- `minecraft:breeze`
+- `breeze`
 - `minecraft:pig`
 Pig
 - `pig`
@@ -154,18 +156,10 @@ Tadpole
 Allay
 - `allay`
 Allay
-- `minecraft:husk`
-Husk
-- `husk`
-Husk
 - `minecraft:tropicalfish`
 Tropical Fish
 - `tropicalfish`
 Tropical Fish
-- `minecraft:wither_skeleton`
-Wither Skeleton
-- `wither_skeleton`
-Wither Skeleton
 - `minecraft:cod`
 Cod
 - `cod`
@@ -258,6 +252,14 @@ Blaze
 Warden
 - `warden`
 Warden
+- `minecraft:husk`
+Husk
+- `husk`
+Husk
+- `minecraft:wither_skeleton`
+Wither Skeleton
+- `wither_skeleton`
+Wither Skeleton
 - `minecraft:guardian`
 Guardian
 - `guardian`

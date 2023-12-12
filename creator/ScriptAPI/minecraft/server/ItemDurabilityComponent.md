@@ -35,25 +35,23 @@ Type: *number*
 Represents the amount of damage that this item can take before breaking.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
 ## Methods
 - [getDamageChance](#getdamagechance)
-- [getDamageRange](#getdamagerange)
+- [getDamageChanceRange](#getdamagechancerange)
 
 ### **getDamageChance**
 `
-getDamageChance(unbreaking?: number): number
+getDamageChance(unbreakingEnchantmentLevel?: number): number
 `
 
 Returns the maximum chance that this item would be damaged using the damageRange property, given an unbreaking level.
 
 #### **Parameters**
-- **unbreaking**?: *number* = `0`
-  
-  Unbreaking factor to consider in factoring the damage chance. Incoming unbreaking parameter must be greater than 0.
+- **unbreakingEnchantmentLevel**?: *number* = `0`
 
 #### **Returns** *number*
 
@@ -63,12 +61,10 @@ Returns the maximum chance that this item would be damaged using the damageRange
 > [!WARNING]
 > This function can throw errors.
 
-### **getDamageRange**
+### **getDamageChanceRange**
 `
-getDamageRange(): minecraftcommon.NumberRange
+getDamageChanceRange(): minecraftcommon.NumberRange
 `
-
-A range of numbers that describes the chance of the item losing durability.
 
 #### **Returns** [*@minecraft/common.NumberRange*](../../minecraft/common/NumberRange.md)
 

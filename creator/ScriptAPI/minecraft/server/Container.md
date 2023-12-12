@@ -20,6 +20,8 @@ Count of the slots in the container that are empty.
 Type: *number*
 
 > [!WARNING]
+> This property can throw errors when used.
+>
 > Throws if the container is invalid.
 
 ### **size**
@@ -30,13 +32,17 @@ The number of slots in this container. For example, a standard single-block ches
 Type: *number*
 
 > [!WARNING]
+> This property can throw errors when used.
+>
 > Throws if the container is invalid.
 
 ## Methods
 - [addItem](#additem)
 - [clearAll](#clearall)
 - [getItem](#getitem)
+::: moniker range="=minecraft-bedrock-experimental"
 - [getSlot](#getslot)
+::: moniker-end
 - [isValid](#isvalid)
 - [moveItem](#moveitem)
 - [setItem](#setitem)
@@ -74,6 +80,8 @@ Clears all inventory items in the container.
 > This function can't be called in read-only mode.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if the container is invalid.
 
 ### **getItem**
@@ -91,6 +99,8 @@ Gets an [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md) of 
 #### **Returns** [*ItemStack*](ItemStack.md) | *undefined*
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if the container is invalid or if the `slot` index is out of bounds.
 
 #### Examples
@@ -120,6 +130,8 @@ Returns a container slot. This acts as a reference to a slot at the given index 
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if the container is invalid or if the `slot` index is out of bounds.
 ::: moniker-end
 
@@ -154,6 +166,8 @@ Moves an item from one slot to another, potentially across containers.
 > This function can't be called in read-only mode.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if either this container or `toContainer` are invalid or if the `fromSlot` or `toSlot` indices out of bounds.
 
 #### Examples
@@ -184,6 +198,8 @@ Sets an item stack within a particular slot.
 > This function can't be called in read-only mode.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if the container is invalid or if the `slot` index is out of bounds.
 
 ### **swapItems**
@@ -208,6 +224,8 @@ Swaps items between two different slots within containers.
 > This function can't be called in read-only mode.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if either this container or `otherContainer` are invalid or if the `slot` or `otherSlot` are out of bounds.
 
 #### Examples
@@ -239,6 +257,8 @@ Moves an item from one slot to another container, or to the first available slot
 > This function can't be called in read-only mode.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if either this container or `toContainer` are invalid or if the `fromSlot` or `toSlot` indices out of bounds.
 
 #### Examples

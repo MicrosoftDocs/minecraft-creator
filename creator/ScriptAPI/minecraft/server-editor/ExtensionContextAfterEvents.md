@@ -12,6 +12,11 @@ Contains a set of events that are available across the scope of the ExtensionCon
 
 ## Properties
 
+### **cursorPropertyChange**
+`read-only cursorPropertyChange: CursorPropertyChangeAfterEventSignal;`
+
+Type: [*CursorPropertyChangeAfterEventSignal*](CursorPropertyChangeAfterEventSignal.md)
+
 ### **modeChange**
 `read-only modeChange: ModeChangeAfterEventSignal;`
 

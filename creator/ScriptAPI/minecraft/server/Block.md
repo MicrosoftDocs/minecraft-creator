@@ -25,7 +25,7 @@ Type: [*Dimension*](Dimension.md)
 Returns true if this block is an air block (i.e., empty space).
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 >
@@ -37,7 +37,7 @@ Type: *boolean*
 Returns true if this block is a liquid block - (e.g., a water block and a lava block are liquid, while an air block and a stone block are not. Water logged blocks are not liquid blocks).
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 >
@@ -53,7 +53,7 @@ Type: *boolean*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 >
@@ -81,7 +81,7 @@ Type: *boolean*
 Coordinates of the specified block.
 
 Type: [*Vector3*](Vector3.md)
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -91,7 +91,7 @@ Type: [*Vector3*](Vector3.md)
 Additional block configuration data that describes the block.
 
 Type: [*BlockPermutation*](BlockPermutation.md)
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 >
@@ -107,7 +107,7 @@ Type: [*BlockType*](BlockType.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 >
@@ -124,7 +124,7 @@ Type: *string*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 >
@@ -156,21 +156,35 @@ Type: *number*
 - [above](#above)
 - [below](#below)
 - [bottomCenter](#bottomcenter)
+::: moniker range="=minecraft-bedrock-experimental"
 - [canPlace](#canplace)
+::: moniker-end
 - [center](#center)
 - [east](#east)
 - [getComponent](#getcomponent)
+::: moniker range="=minecraft-bedrock-experimental"
 - [getItemStack](#getitemstack)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [getRedstonePower](#getredstonepower)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [getTags](#gettags)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [hasTag](#hastag)
+::: moniker-end
 - [isValid](#isvalid)
 - [north](#north)
 - [offset](#offset)
 - [setPermutation](#setpermutation)
+::: moniker range="=minecraft-bedrock-experimental"
 - [setType](#settype)
+::: moniker-end
 - [south](#south)
+::: moniker range="=minecraft-bedrock-experimental"
 - [trySetPermutation](#trysetpermutation)
+::: moniker-end
 - [west](#west)
 
 ### **above**

@@ -10,7 +10,7 @@ ms.service: minecraft-bedrock-edition
 
 Minecraft supports a Physically Based Rendering (PBR) color pipeline (e.g. used for Ray Tracing). This uses more texture data than just 'color', which enables richer, more realistic visuals. Using PBR, you can have layers for different specular reflections, emissivity, normal maps, and more, which goes beyond the classic color pipeline for Vanilla Minecraft. Texture Sets have been added as the feature for defining multiple PBR layers for a texture resource. Texture Sets are data driven from json files.
 
-## Texture Set Json Schema
+## Texture Set JSON Schema
 
 ```json
 {

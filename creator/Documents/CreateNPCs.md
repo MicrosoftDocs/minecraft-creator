@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: kakinnun
 title: Create a Custom NPC
 description: "A tutorial covering how to create a Non-Playable Character (NPC) within Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition

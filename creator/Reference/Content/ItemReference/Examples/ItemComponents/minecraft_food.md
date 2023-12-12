@@ -11,7 +11,7 @@ ms.service: minecraft-bedrock-edition
 `minecraft:food` sets the item as a food component, allowing it to be edible to the player.
 
 >[!IMPORTANT]
-> The `minecraft:food` must have the `minecraft:use_duration` component in order to function properly.
+> The `minecraft:food` must have the `minecraft:use_modifiers` component in order to function properly.
 
 ## Parameters
 

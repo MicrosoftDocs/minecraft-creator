@@ -142,6 +142,10 @@ Rabbit
 Sea Lantern
 - `minecraft:creeper_banner_pattern`
 Creeper Banner Pattern
+- `minecraft:ravager_spawn_egg`
+Ravager Spawn Egg
+- `minecraft:cooked_porkchop`
+Cooked Porkchop
 - `minecraft:element_25`
 [Education Edition] Manganese (Mn)
 - `minecraft:mangrove_leaves`
@@ -150,10 +154,20 @@ Mangrove Leaves
 Polished Blackstone Brick Slab
 - `minecraft:mushroom_stew`
 Mushroom Stew
-- `minecraft:ravager_spawn_egg`
-Ravager Spawn Egg
-- `minecraft:cooked_porkchop`
-Cooked Porkchop
+- `minecraft:trial_key`
+- `minecraft:iron_sword`
+Iron Sword
+- `minecraft:lantern`
+Lantern
+- `minecraft:torchflower_seeds`
+- `minecraft:smooth_stone`
+Smooth Stone
+- `minecraft:beetroot`
+Beetroot
+- `minecraft:element_43`
+[Education Edition] Technetium (Tc)
+- `minecraft:music_disc_strad`
+Music Disc Strad
 - `minecraft:stripped_oak_log`
 Stripped Oak Log
 - `minecraft:element_50`
@@ -359,19 +373,6 @@ Spruce Stairs
 Pumpkin Pie
 - `minecraft:obsidian`
 Obsidian
-- `minecraft:lantern`
-Lantern
-- `minecraft:torchflower_seeds`
-- `minecraft:iron_sword`
-Iron Sword
-- `minecraft:smooth_stone`
-Smooth Stone
-- `minecraft:beetroot`
-Beetroot
-- `minecraft:element_43`
-[Education Edition] Technetium (Tc)
-- `minecraft:music_disc_strad`
-Music Disc Strad
 - `minecraft:sweet_berries`
 Sweet Berries
 - `minecraft:white_candle`
@@ -464,16 +465,16 @@ Salmon Bucket
 Planks
 - `minecraft:stone_pickaxe`
 Stone Pickaxe
-- `minecraft:exposed_copper_trapdoor`
-- `minecraft:chainmail_helmet`
-Chainmail Helmet
-- `minecraft:diamond_shovel`
-Diamond Shovel
 - `minecraft:oxidized_copper_trapdoor`
 - `minecraft:smithing_table`
 Smithing Table
 - `minecraft:diamond_sword`
 Diamond Sword
+- `minecraft:exposed_copper_trapdoor`
+- `minecraft:chainmail_helmet`
+Chainmail Helmet
+- `minecraft:diamond_shovel`
+Diamond Shovel
 - `minecraft:diamond_pickaxe`
 Diamond Pickaxe
 - `minecraft:diamond_axe`
@@ -1069,6 +1070,7 @@ Zombie Horse Spawn Egg
 - `minecraft:bamboo_slab`
 - `minecraft:npc_spawn_egg`
 NPC Spawn Egg
+- `minecraft:breeze_spawn_egg`
 - `minecraft:end_stone`
 End Stone
 - `minecraft:llama_spawn_egg`
@@ -1601,7 +1603,6 @@ Cracked Polished Blackstone Bricks
 - `minecraft:cyan_terracotta`
 - `minecraft:purple_terracotta`
 - `minecraft:green_terracotta`
-- `minecraft:waxed_copper_trapdoor`
 - `minecraft:red_terracotta`
 - `minecraft:black_terracotta`
 - `minecraft:fletching_table`
@@ -1609,6 +1610,7 @@ Fletching Table
 - `minecraft:brown_carpet`
 - `minecraft:stained_hardened_clay`
 Stained Hardened Clay
+- `minecraft:armadillo_scute`
 - `minecraft:deepslate_coal_ore`
 Deepslate Coal Ore
 - `minecraft:tuff_slab`
@@ -1633,6 +1635,7 @@ Waterlily
 - `minecraft:waxed_exposed_copper_door`
 - `minecraft:waxed_oxidized_copper_door`
 - `minecraft:acacia_log`
+- `minecraft:armadillo_spawn_egg`
 - `minecraft:white_wool`
 - `minecraft:nether_brick_stairs`
 Nether Brick Stairs
@@ -2223,6 +2226,7 @@ Ochre Froglight
 - `minecraft:tuff_wall`
 - `minecraft:brown_glazed_terracotta`
 Brown Glazed Terracotta
+- `minecraft:waxed_copper_trapdoor`
 - `minecraft:moving_block`
 Moving Block
 - `minecraft:oxidized_copper`
@@ -2694,6 +2698,7 @@ Soul Campfire
 Wooden Pressure Plate
 - `minecraft:lime_candle_cake`
 Lime Candle Cake
+- `minecraft:trial_spawner`
 - `minecraft:grass_path`
 Grass Path
 - `minecraft:weathered_copper`

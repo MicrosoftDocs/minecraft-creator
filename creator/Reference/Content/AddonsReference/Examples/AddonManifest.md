@@ -81,7 +81,7 @@ Listed below are two examples showcasing how a manifest.json file can be written
 
 ### Behavior Pack
 
-```JSON
+```json
 {
     "format_version": 1,
     "header": {
@@ -124,8 +124,7 @@ Listed below are two examples showcasing how a manifest.json file can be written
 
 ### Resource Pack
 
-```JSON
-
+```json
 {
     "format_version": 1,
     "header": {

@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ExplosionBeforeEventSignal Class
 description: Contents of the @minecraft/server.ExplosionBeforeEventSignal class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ExplosionBeforeEventSignal Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Manages callbacks that are connected to before an explosion occurs.
 

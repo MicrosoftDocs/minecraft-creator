@@ -16,7 +16,7 @@ You can find more information about the camera command in the [Camera Command In
 
 The free camera preset can be used to accomplish many gameplay scenarios by setting the camera at a distance away from players and entities to show more of the environment. You can even set up cutscenes and use easing methods to have the camera flyover a scene.
 
-The free camera preset can be set up in JSON to be executed in the game at the exact parameters and settings you choose. In this tutorial we’ll focus on how the commands work in the game first.
+The free camera preset can be set up in JSON to be executed in the game at the exact parameters and settings you choose. In this tutorial we'll focus on how the commands work in the game first.
 
 In this tutorial you will learn how to:
 
@@ -27,7 +27,7 @@ In this tutorial you will learn how to:
 >- Apply a fade effect with a custom time and color
 >- Teleport during a fade
 
-To practice these features and see how they work in the game, let’s try out a cutscene scenario. Say you want to make a cutscene where the camera transitions from the player’s view to show a flyover of the landscape and then turn to face the player. Let’s try it!
+To practice these features and see how they work in the game, let's try out a cutscene scenario. Say you want to make a cutscene where the camera transitions from the player's view to show a flyover of the landscape and then turn to face the player. Let's try it!
 
 ## Step 1: Frame your Cutscene
 
@@ -109,7 +109,7 @@ This is the same command from the previous step, with the addition of `facing @s
 
 ### Set the camera rotation
 
-It’s important to note that rotation values are X and Y but those are not the same as x and y coordinate/cardinal values. 
+It's important to note that rotation values are X and Y but those are not the same as x and y coordinate/cardinal values. 
 
 **Y = yaw**
 
@@ -199,7 +199,7 @@ To make a red fade, set red to 255, green to 0, and blue to 0 like this:
 
 ## Step 5: Prevent the Player from Moving
 
-During a fade, the player can’t see anything but they can still move. That can be dangerous! If you don’t want the player to move during a fade, you can disable player movement. 
+During a fade, the player can't see anything but they can still move. That can be dangerous! If you don't want the player to move during a fade, you can disable player movement. 
 
 Do this by using another command before the camera command.
 
@@ -223,7 +223,7 @@ When the cutscene is over, enable input permissions to allow the player to move 
 
 ## Step 6: Using Fades and Teleports Together
 
-When teleporting a player to a location, it’s nice to have a transition that makes that smoother.
+When teleporting a player to a location, it's nice to have a transition that makes that smoother.
 
 Here is the example of the first part - configuring a 10-second fade...
 

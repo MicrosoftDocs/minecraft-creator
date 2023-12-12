@@ -17,3 +17,33 @@ An Editor Extension is defined a name, an activation function and a shutdown fun
 
 
 It is not recommended to directly use this function as the contract is not guaranteed to be stable, instead prefer [*@minecraft/server-editor.registerEditorExtension*](../../minecraft/server-editor/minecraft-server-editor.md#registereditorextension) as it provides additional functionality and a stable contract.
+
+## Properties
+
+### **defaultToolGroupId**
+`read-only defaultToolGroupId: string;`
+
+Default identifier for tool rail grouping. All modal tools created from the extension will use this.
+
+Type: *string*
+
+### **description**
+`read-only description: string;`
+
+Description specified during registration for the extension.
+
+Type: *string*
+
+### **name**
+`read-only name: string;`
+
+Name of the extension.
+
+Type: *string*
+
+### **notes**
+`read-only notes: string;`
+
+Notes specified during registration for the extension.
+
+Type: *string*

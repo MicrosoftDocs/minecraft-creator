@@ -24,7 +24,7 @@ Represents a shapeless crafting recipe.
 
 ## Shapeless Recipe Example
 
-```JSON
+```json
 {
 "format_version": "1.17",
     "minecraft:recipe_shapeless": {

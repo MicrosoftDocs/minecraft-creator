@@ -10,6 +10,13 @@ description: Contents of the @minecraft/server-editor.IMenu class.
 
 ## Properties
 
+### **checked**
+`checked: boolean;`
+
+If defined, the menu will show a checked or unchecked checkbox.
+
+Type: *boolean*
+
 ### **id**
 `read-only id: string;`
 

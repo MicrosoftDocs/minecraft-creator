@@ -12,42 +12,27 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-## Classes that extend ChatSendAfterEvent
-- [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)
-
 An event that fires as players enter chat messages.
 
 ## Properties
 
 ### **message**
-`message: string;`
+`read-only message: string;`
 
-Message that is being broadcast. In a beforeChat event handler, _message_ can be updated with edits before the message is displayed to players.
+Message that is being broadcast.
 
 Type: *string*
 
 ### **sender**
-`sender: Player;`
+`read-only sender: Player;`
 
 Player that sent the chat message.
 
 Type: [*Player*](Player.md)
 
-### **sendToTargets**
-`sendToTargets: boolean;`
+### **targets**
+`read-only targets?: Player[];`
 
-If true, this message is directly targeted to one or more players (i.e., is not broadcast.)
+Optional list of players that will receive this message. If defined, this message is directly targeted to one or more players (i.e., is not broadcast.)
 
-Type: *boolean*
-
-## Methods
-- [getTargets](#gettargets)
-
-### **getTargets**
-`
-getTargets(): Player[]
-`
-
-List of players that will receive this message.
-
-#### **Returns** [*Player*](Player.md)[] - List of player objects.
+Type: [*Player*](Player.md)[]

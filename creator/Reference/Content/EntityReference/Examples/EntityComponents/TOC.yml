@@ -52,6 +52,8 @@
   href: minecraftComponent_can_climb.md
 - name: can_fly
   href: minecraftComponent_can_fly.md
+- name: can_join_raid
+  href: minecraftComponent_can_join_raid.md
 - name: can_power_jump
   href: minecraftComponent_can_power_jump.md   
 - name: celebrate_hunt

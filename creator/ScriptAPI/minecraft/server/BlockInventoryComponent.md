@@ -21,7 +21,7 @@ Represents the inventory of a block in the world. Used with blocks like chests.
 The container which holds an [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md).
 
 Type: [*Container*](Container.md)
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 

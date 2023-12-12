@@ -25,7 +25,7 @@ When added, this component adds the capability that an entity can be ridden by a
 Zero-based index of the seat that can used to control this entity.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -35,7 +35,7 @@ Type: *number*
 Determines whether interactions are not supported if the entity is crouching.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -45,7 +45,7 @@ Type: *boolean*
 Set of text that should be displayed when a player is looking to ride on this entity (commonly with touch-screen controls).
 
 Type: *string*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -55,7 +55,7 @@ Type: *string*
 If true, this entity will pull in entities that are in the correct family_types into any available seat.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -65,7 +65,7 @@ Type: *boolean*
 If true, this entity will be picked when looked at by the rider.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -75,7 +75,7 @@ Type: *boolean*
 Number of seats for riders defined for this entity.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 

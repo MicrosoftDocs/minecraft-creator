@@ -34,7 +34,9 @@ Returns the general global scoreboard that applies to the world.
 Type: [*Scoreboard*](Scoreboard.md)
 
 ## Methods
+::: moniker range="=minecraft-bedrock-experimental"
 - [broadcastClientMessage](#broadcastclientmessage)
+::: moniker-end
 - [clearDynamicProperties](#cleardynamicproperties)
 - [getAbsoluteTime](#getabsolutetime)
 - [getAllPlayers](#getallplayers)
@@ -142,6 +144,8 @@ Returns a dimension object.
 #### **Returns** [*Dimension*](Dimension.md) - The requested dimension
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if the given dimension name is invalid
 
 ### **getDynamicProperty**
@@ -159,6 +163,8 @@ Returns a property value.
 #### **Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if the given dynamic property identifier is not defined.
 
 #### Examples
@@ -248,6 +254,8 @@ Returns an entity based on the provided id.
 #### **Returns** [*Entity*](Entity.md) | *undefined* - The requested entity object.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if the given entity id is invalid.
 
 ### **getMoonPhase**
@@ -274,6 +282,8 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
 #### **Returns** [*Player*](Player.md)[] - A player array.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if the provided EntityQueryOptions are invalid.
 
 ### **getTimeOfDay**
@@ -344,16 +354,15 @@ Plays a sound for all players.
 > This function can't be called in read-only mode.
 
 > [!WARNING]
-> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,An error will be thrown if pitch is less than 0.01.,An error will be thrown if volume is less than 0.0.
-
-> [!WARNING]
-> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,An error will be thrown if pitch is less than 0.01.,An error will be thrown if volume is less than 0.0.
-
-> [!WARNING]
-> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,An error will be thrown if pitch is less than 0.01.,An error will be thrown if volume is less than 0.0.
-
-> [!WARNING]
-> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,An error will be thrown if pitch is less than 0.01.,An error will be thrown if volume is less than 0.0.
+> This function can throw errors.
+>
+> An error will be thrown if volume is less than 0.0.
+>
+> An error will be thrown if fade is less than 0.0.
+>
+> An error will be thrown if pitch is less than 0.01.
+>
+> An error will be thrown if volume is less than 0.0.
 
 #### Examples
 ##### ***playMusicAndSound.ts***
@@ -400,13 +409,13 @@ Queues an additional music track for players. If a track is not playing, a music
 > This function can't be called in read-only mode.
 
 > [!WARNING]
-> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,
-
-> [!WARNING]
-> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,
-
-> [!WARNING]
-> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,
+> This function can throw errors.
+>
+> An error will be thrown if volume is less than 0.0.
+>
+> An error will be thrown if fade is less than 0.0.
+>
+> 
 
 ### **sendMessage**
 `
@@ -421,6 +430,8 @@ Sends a message to all players.
   The message to be displayed.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > This method can throw if the provided [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) is in an invalid format. For example, if an empty `name` string is provided to `score`.
 
 #### Examples
@@ -482,7 +493,7 @@ Sets a default spawn location for all players.
 > This function can't be called in read-only mode.
 
 > [!WARNING]
-> Throws if the provided spawn location is out of bounds.
+> This function can throw errors.
 >
 > Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
@@ -502,6 +513,8 @@ Sets a specified property to a value.
   Data value of the property to set.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if the given dynamic property identifier is not defined.
 
 #### Examples
@@ -574,6 +587,8 @@ Sets the time of day.
 > This function can't be called in read-only mode.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if the provided time of day is not within the valid range.
 
 ### **stopMusic**

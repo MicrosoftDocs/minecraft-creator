@@ -17,7 +17,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 `Cooldown = "minecraft:cooldown"`
 ### **Durability**
 `Durability = "minecraft:durability"`
-### **Enchants**
-`Enchants = "minecraft:enchantments"`
+### **Enchantable**
+`Enchantable = "minecraft:enchantable"`
 ### **Food**
 `Food = "minecraft:food"`

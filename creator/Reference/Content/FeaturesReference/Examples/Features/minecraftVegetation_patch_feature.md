@@ -7,7 +7,7 @@ ms.service: minecraft-bedrock-edition
 
 # Features Documentation - minecraft:vegetation_patch_feature 
 
-`minecraft:vegetation_patch_feature` scatters vegetation in an area. The vegetation feature’s appearance can be modified by adjusting the radius and depth that it will generate. 
+`minecraft:vegetation_patch_feature` scatters vegetation in an area. The vegetation feature's appearance can be modified by adjusting the radius and depth that it will generate. 
 
 ### Schema
 

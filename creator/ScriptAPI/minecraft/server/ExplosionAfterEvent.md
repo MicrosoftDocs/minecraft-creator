@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ExplosionAfterEvent Class
 description: Contents of the @minecraft/server.ExplosionAfterEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ExplosionAfterEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Classes that extend ExplosionAfterEvent
 - [*ExplosionBeforeEvent*](ExplosionBeforeEvent.md)

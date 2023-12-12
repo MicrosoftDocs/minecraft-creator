@@ -142,6 +142,8 @@
   href: minecraftBehavior_make_love.md
 - name: behavior.melee_attack
   href: minecraftBehavior_melee_attack.md
+- name: behavior.melee_box_attack
+  href: minecraftBehavior_melee_box_attack.md
 - name: behavior.mingle
   href: minecraftBehavior_mingle.md
 - name: behavior.mount_pathing

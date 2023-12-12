@@ -19,7 +19,7 @@ In this tutorial you will learn the following:
 
 ### Minecraft: Java Edition
 
-This version was originally released in 2009. It was called simply "Minecraft" until it was renamed to "Minecraft: Java Edition" in September 2017. As the name implies, it’s developed in Java and isn’t compatible with the current version of Minecraft, for the most part. This edition is commonly referred to as "Java".
+This version was originally released in 2009. It was called simply "Minecraft" until it was renamed to "Minecraft: Java Edition" in September 2017. As the name implies, it's developed in Java and isn't compatible with the current version of Minecraft, for the most part. This edition is commonly referred to as "Java".
 
 ### Minecraft: Bedrock Edition
 
@@ -35,7 +35,7 @@ The two versions also use a fairly different block format. Java Edition has flat
 
 The structure and implementation of commands between the two versions have diverged as well. Bedrock Edition's command structure is similar to the system used in versions of Java Edition prior to 1.13. It also forgoes raw JSON strings inside commands for a component-based system. Instead of using long complex JSON strings to customize entities, you can summon an entity with an event to fire, and also name it in a single command.
 
-Redstone functions slightly differently as well. Unlike Java Edition, Bedrock Edition doesn’t support quasi-connectivity. Systems that utilize mechanics such as Block Update Detector (BUD) switches won’t work. Pistons require one tick to retract and won’t leave blocks behind if given a one-tick pulse. Even the way updates happen is slightly different. While the vast majority of redstone circuits work well between the two versions, more complex circuits might not.
+Redstone functions slightly differently as well. Unlike Java Edition, Bedrock Edition doesn't support quasi-connectivity. Systems that utilize mechanics such as Block Update Detector (BUD) switches won't work. Pistons require one tick to retract and won't leave blocks behind if given a one-tick pulse. Even the way updates happen is slightly different. While the vast majority of redstone circuits work well between the two versions, more complex circuits might not.
 
 ### Resource Packs
 

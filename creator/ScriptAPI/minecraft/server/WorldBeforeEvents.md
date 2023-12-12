@@ -93,18 +93,6 @@ This event fires when an item is used on a block by a player.
 
 Type: [*ItemUseOnBeforeEventSignal*](ItemUseOnBeforeEventSignal.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
-### **pistonActivate**
-`read-only pistonActivate: PistonActivateBeforeEventSignal;`
-
-This event fires when a piston expands or retracts.
-
-Type: [*PistonActivateBeforeEventSignal*](PistonActivateBeforeEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
 ### **playerBreakBlock**
 `read-only playerBreakBlock: PlayerBreakBlockBeforeEventSignal;`
 

@@ -60,11 +60,13 @@
    href: minecraft_should_despawn.md
  - name: stacked_by_data
    href: minecraft_stacked_by_data.md
+ - name: tags
+   href: minecraft_tags.md
  - name: throwable
    href: minecraft_throwable.md
  - name: use_animation
    href: minecraft_use_animation.md
- - name: use_duration
-   href: minecraft_use_duration.md
+ - name: use_modifiers
+   href: minecraft_use_modifiers.md
  - name: wearable
    href: minecraft_wearable.md

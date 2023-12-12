@@ -32,9 +32,9 @@ Retrieves an entity type using a string-based identifier.
 
 ### **getAll**
 `
-static getAll(): EntityTypeIterator
+static getAll(): EntityType[]
 `
 
 Retrieves an iterator of all entity types within this world.
 
-#### **Returns** [*EntityTypeIterator*](EntityTypeIterator.md)
+#### **Returns** [*EntityType*](EntityType.md)[]

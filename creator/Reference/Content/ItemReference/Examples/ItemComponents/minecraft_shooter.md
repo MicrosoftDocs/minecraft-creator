@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Item Documentation - minecraft:shooter
 
-`minecraft:shooter` compels an item to shoot projectiles, similarly to a bow or crossbow.
+`minecraft:shooter` compels an item to shoot projectiles, similarly to a bow or crossbow. Must have the `minecraft:use_modifiers` component in order to function properly.
 
 >[!IMPORTANT]
 > Ammunition used by `minecraft:shooter` must have the `minecraft:projectile` component in order to function properly.

@@ -21,7 +21,7 @@ Represents a smithing trim recipe for the Smithing Table. This recipe applies a 
 
 ## Smithing Trim Recipe Example
 
-```JSON
+```json
 {
  "format_version": "1.17",
  "minecraft:recipe_smithing_trim": {

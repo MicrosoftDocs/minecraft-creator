@@ -24,7 +24,7 @@ Represents a player within the world.
 The player's Camera.
 
 Type: [*Camera*](Camera.md)
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -34,7 +34,7 @@ Type: [*Camera*](Camera.md)
 If true, the player is currently emoting.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -44,7 +44,7 @@ Type: *boolean*
 Whether the player is flying. For example, in Creative or Spectator mode.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -54,7 +54,7 @@ Type: *boolean*
 Whether the player is gliding with Elytra.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -64,7 +64,7 @@ Type: *boolean*
 Whether the player is jumping. This will remain true while the player is holding the jump action.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -74,7 +74,7 @@ Type: *boolean*
 The current overall level for the player, based on their experience. 
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -84,7 +84,7 @@ Type: *number*
 Name of the player.
 
 Type: *string*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -94,7 +94,7 @@ Type: *string*
 Contains methods for manipulating the on-screen display of a Player.
 
 Type: [*ScreenDisplay*](ScreenDisplay.md)
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -119,7 +119,7 @@ Type: *number*
 The overall total set of experience needed to achieve the next level for a player.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -129,27 +129,49 @@ Type: *number*
 The current set of experience achieved for the player.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
 ## Methods
 - [addExperience](#addexperience)
 - [addLevels](#addlevels)
+::: moniker range="=minecraft-bedrock-experimental"
+- [eatItem](#eatitem)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [getItemCooldown](#getitemcooldown)
+::: moniker-end
 - [getSpawnPoint](#getspawnpoint)
 - [getTotalXp](#gettotalxp)
+::: moniker range="=minecraft-bedrock-experimental"
 - [isOp](#isop)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [playMusic](#playmusic)
+::: moniker-end
 - [playSound](#playsound)
+::: moniker range="=minecraft-bedrock-experimental"
 - [postClientMessage](#postclientmessage)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [queueMusic](#queuemusic)
+::: moniker-end
 - [resetLevel](#resetlevel)
 - [sendMessage](#sendmessage)
+::: moniker range="=minecraft-bedrock-experimental"
 - [setOp](#setop)
+::: moniker-end
 - [setSpawnPoint](#setspawnpoint)
+::: moniker range="=minecraft-bedrock-experimental"
+- [spawnParticle](#spawnparticle)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [startItemCooldown](#startitemcooldown)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [stopMusic](#stopmusic)
+::: moniker-end
 
 ### **addExperience**
 `
@@ -190,6 +212,25 @@ Adds/removes level to/from the Player and returns the current level of the Playe
 
 > [!WARNING]
 > This function can throw errors.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **eatItem**
+`
+eatItem(itemStack: ItemStack): void
+`
+
+#### **Parameters**
+- **itemStack**: [*ItemStack*](ItemStack.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **getItemCooldown**
@@ -370,13 +411,13 @@ Queues an additional music track that only this particular player can hear. If a
 > This function can't be called in read-only mode.
 
 > [!WARNING]
-> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,
-
-> [!WARNING]
-> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,
-
-> [!WARNING]
-> An error will be thrown if volume is less than 0.0.,An error will be thrown if fade is less than 0.0.,
+> This function can throw errors.
+>
+> An error will be thrown if volume is less than 0.0.
+>
+> An error will be thrown if fade is less than 0.0.
+>
+> 
 ::: moniker-end
 
 ### **resetLevel**
@@ -405,6 +446,8 @@ Sends a message to the player.
   The message to be displayed.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > This method can throw if the provided [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) is in an invalid format. For example, if an empty `name` string is provided to `score`.
 
 #### Examples
@@ -485,6 +528,59 @@ Sets the current starting spawn point for this particular player.
 > This function can throw errors.
 >
 > Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **spawnParticle**
+`
+spawnParticle(effectName: string, location: Vector3, molangVariables?: MolangVariableMap): void
+`
+
+Creates a new particle emitter at a specified location in the world. Only visible to the target player.
+
+#### **Parameters**
+- **effectName**: *string*
+  
+  Identifier of the particle to create.
+- **location**: [*Vector3*](Vector3.md)
+  
+  The location at which to create the particle emitter.
+- **molangVariables**?: [*MolangVariableMap*](MolangVariableMap.md) = `null`
+  
+  A set of optional, customizable variables that can be adjusted for this particle.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
+#### Examples
+##### ***spawnParticle.ts***
+```typescript
+for (let i = 0; i < 100; i++) {
+  const molang = new mc.MolangVariableMap();
+
+  molang.setColorRGB("variable.color", {
+    red: Math.random(),
+    green: Math.random(),
+    blue: Math.random(),
+    alpha: 1,
+  });
+
+  let newLocation = {
+    x: targetLocation.x + Math.floor(Math.random() * 8) - 4,
+    y: targetLocation.y + Math.floor(Math.random() * 8) - 4,
+    z: targetLocation.z + Math.floor(Math.random() * 8) - 4,
+  };
+  player.spawnParticle("minecraft:colored_flame_particle", newLocation, molang);
+}
+```
+::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **startItemCooldown**
