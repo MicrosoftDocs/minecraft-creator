@@ -288,10 +288,10 @@ With all of this in mind, we can adjust our lighting/global.json slightly to alt
     "directional_lights": {
         "sun": {
             "illuminance": {
-              "0.0": 1.0,  // Noon
+              "0.0": 1.0,
               "0.25": 400.0, // Sunrise
               "0.35": 39000.0,
-              "0.5": 100000.0,  // Midnight
+              "0.5": 100000.0,  // Noon
               "0.65": 39000.0,
               "0.75": 400.0, // Sunset
               "1.0": 1.0
@@ -325,7 +325,7 @@ Key frames currently support floats and colors (both RGB and hexadecimal) and th
 
 The following diagram can be used to reference key times of the day:
 
-![Image showing the times of day as numerical values. Noon = 0.0, Sunrise = 0.25, Midnight = 0.5, Sunset = 0.75](Media/DeferredLighting/key_frame_times_of_day.png)
+![Image showing the times of day as numerical values. Midnight = 0.0, Sunrise = 0.25, Noon = 0.5, Sunset = 0.75](Media/DeferredLighting/key_frame_times_of_day.png)
 
 ## Example JSON Files
 
