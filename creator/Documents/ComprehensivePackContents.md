@@ -114,6 +114,7 @@ Here is an introduction to [resource packs](ResourcePack.md).
     - [blocks]()
         - `<custom_block>`.png
     - [terrain_texture.json](AddCustomDieBlock.md#add-a-friendly-name-in-terrain_texturejson)
+    - [flipbook_textures.json](ConvertingTexturePacks.md#best-practices)
 - ui
     - `<graphic>`.png
     - `<graphic>`.jpg
@@ -123,14 +124,6 @@ Here is an introduction to [resource packs](ResourcePack.md).
 - [manifest.json](ResourcePack.md#create-a-manifest-file) **(required)**
 - pack_icon.png
 - [sounds.json](AddCustomSounds.md)
-
-### Special files in the textures folder
-
-
-flipbook_textures.json
-
-blocks.json
-
 
 ## Comprehensive Skin Pack
 
@@ -143,7 +136,6 @@ Here is an introduction to [skin packs](PackagingASkinPack.md).
 - geometry.json
 - manifest.json
 - skins.json
-
 
 ## Sample Packs
 
