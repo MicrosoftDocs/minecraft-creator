@@ -43,7 +43,7 @@ Here is an introduction to [behavior packs](BehaviorPack.md).
 - [dialogue]
     - `<scene_dialogue>`
         - `<scene>`.json
-    - manifest.json
+    - [manifest.json](BehaviorPack.md#create-the-manifest-file)
 - [functions](FunctionsIntroduction.md)
     - `<entity_name>`
         - `<entity_name_function>`.mcfunction
@@ -135,10 +135,10 @@ Here is an introduction to [skin packs](PackagingASkinPack.md).
     - en_US.lang
 - `<skin_graphic>`.png
 - geometry.json
-- manifest.json **(required)**
+- [manifest.json](PackagingASkinPack.md#template-manifestjson) **(required)**
 - skins.json
 
-## Commonly Used Files
+## Common Files
 
 ### manifest.json
 
