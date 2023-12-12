@@ -291,7 +291,7 @@ With all of this in mind, we can adjust our lighting/global.json slightly to alt
               "0.0": 1.0,  // Noon
               "0.25": 400.0, // Sunset
               "0.35": 39000.0,
-              "0.5": 100000.0,  // Noon
+              "0.5": 100000.0,  // Midnight
               "0.65": 39000.0,
               "0.75": 400.0, // Sunrise
               "1.0": 1.0
