@@ -77,7 +77,7 @@ To load a resource pack into Minecraft, we need a manifest file. The manifest fi
  "header": {
    "description": "My dirt resource pack Add-On!",
    "name": "My Resource Pack",
-   "uuid":"",
+   "uuid": "<FIRST GENERATED UUID>",
    "version": [1, 0, 0],
    "min_engine_version": [1, 16, 0]
   },
@@ -85,7 +85,7 @@ To load a resource pack into Minecraft, we need a manifest file. The manifest fi
    {
      "description": "My First Add-On!",
      "type": "resources",
-     "uuid": "",
+     "uuid": "<SECOND GENERATED UUID>",
      "version": [1, 0, 0]
    }
  ]

@@ -70,7 +70,7 @@ To load a behavior pack into Minecraft, you will need to create a manifest file.
   "header": {
     "description": "My attack cow behavior pack Add-On!",
     "name": "My Behavior Pack",
-    "uuid":"",
+    "uuid":"<FIRST GENERATED UUID>",
     "version": [1, 0, 0],
     "min_engine_version": [1, 16, 0]
   },
@@ -79,7 +79,7 @@ To load a behavior pack into Minecraft, you will need to create a manifest file.
       {
         "description": "My First Add-On!",
           "type": "data",
-          "uuid": "",
+          "uuid": "<SECOND GENERATED UUID>",
           "version": [1, 0, 0]
       }
     ],
