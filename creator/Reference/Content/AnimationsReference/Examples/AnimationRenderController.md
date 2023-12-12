@@ -38,7 +38,6 @@ To begin, create a new folder named "render_controllers" in the root of the Reso
     "textures": ["Array.skins[query.variant]"]
   }
 }
-
 ```
 
 ## Examples
@@ -127,7 +126,6 @@ In the following examples, you will see how Render Controllers can be used to dr
         "textures": ["array.armor_texture[query.armor_texture_slot(1)]", "texture.enchanted"]
     }
 }
-
 ```
 
 ### Example with is_hurt_color from Creeper render controller JSON
@@ -166,7 +164,6 @@ In the following examples, you will see how Render Controllers can be used to dr
         }
     }
 }
-
 ```
 
 ### Example with overlay_color from Wither Boss render controller JSON
@@ -191,7 +188,6 @@ In the following examples, you will see how Render Controllers can be used to dr
         }
     }
 }
-
 ```
 
 ### Example with part_visibility for turning on and off visibility of parts from Llama JSON

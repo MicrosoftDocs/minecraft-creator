@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Introduction To Behavior Packs
 description: "An introduction to Behavior Packs and adding attacking behaviors to an in-game cow mob."
 ms.service: minecraft-bedrock-edition
@@ -21,7 +21,7 @@ In this tutorial, you will learn the following:
 
 ## Sample Behavior Pack
 
-There is a [sample behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/behavior_pack_sample) available at the Microsoft samples Github. it may be used to understand the structure of behavior packs and to check your work after the tutorial.
+There is a [sample behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/behavior_pack_sample) available at the Microsoft samples Github. It may be used to understand the structure of behavior packs and to check your work after the tutorial.
 
 ### Requirements
 
