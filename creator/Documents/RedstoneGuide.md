@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: IconicNurdle
+ms.author: mikeam
 title: Guide to Redstone
 description: "A guide to using Redstone in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
@@ -136,4 +136,4 @@ In normal mode (when the light is NOT switched on) then it will not output a sig
 Now that you know more about redstone, you could use it to enhance a "Complete the Monument" map.
 
 > [!div class="nextstepaction"]
-> [How to make a Complete the Monument World](CommandsHowToMakeACTMWorld.md)
+> [Create an In-World Game](CreateAnInWorldGame.md)

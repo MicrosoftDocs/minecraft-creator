@@ -96,8 +96,8 @@ conceptualContent:
               text: Popular Commands
             - url: Documents/CommandBlocks.md
               itemType: get-started
-              text: Getting Started with Command Blocks
-            - url: Documents/CommandsHowToMakeACTMWorld.md
+              text: Create an In-World Game with Commands
+            - url: Documents/CreateAnInWorldGame.md
               itemType: get-started
               text: How To Make a Complete the Monument World
         # card
