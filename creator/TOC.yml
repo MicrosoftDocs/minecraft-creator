@@ -70,6 +70,8 @@
           href: Documents/DesigningGameplayForVariousDevices.md
         - name: Minecraft File Extensions
           href: Documents/MinecraftFileExtensions.md
+        - name: Add-on Pack Contents
+          href: Documents/ComprehensivePackContents.md
         - name: "Experimental Features in Minecraft: Bedrock Edition"
           href: Documents/ExperimentalFeaturesToggle.md
         - name: Adding Custom Items
