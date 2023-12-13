@@ -25,4 +25,4 @@ Here is some information about each individual component.
 Here is a sample world and a tutorial about how to create a world.
 
 > [Sample Parkour World](https://github.com/microsoft/minecraft-samples/tree/main/parkour_sample_world)
-> [Complete the Monument](CommandsHowToMakeACTMWorld.md)
+> [Create an In-World Game](CreateAnInWorldGame.md)

@@ -1,6 +1,6 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: IconicNurdle
+ms.author: mikeam
 title: Introduction to Scoreboards
 description: "A guide about scoreboards and different ways to use them"
 ms.service: minecraft-bedrock-edition
@@ -223,4 +223,4 @@ Now that you have learned more about scoreboards, you could learn more about sco
 
 > [!div class="nextstepaction"]
 > [Scoreboard Operations Tutorial](ScoreboardOperationsTutorial.md)
-> [Complete the Monument](CommandsHowToMakeACTMWorld.md)
+> [Create an In-World Game](CreateAnInWorldGame.md)

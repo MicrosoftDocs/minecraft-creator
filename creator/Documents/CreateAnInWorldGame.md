@@ -17,7 +17,7 @@ In this tutorial you will learn the following:
 >
 > - How to apply what you've learned about commands and scoreboards to make a simple game mechanic.
 
-### Requirements
+## Requirements
 
 It's recommended that the following be completed before beginning this tutorial.
 
