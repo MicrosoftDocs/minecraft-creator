@@ -1,7 +1,7 @@
 ---
 author: mammerla
 ms.author: v-bbortree
-title: Structure Blocks Tutorial
+title: Create a Village with Structure Blocks
 description: "A tutorial on using Structure Blocks for Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
 ---
