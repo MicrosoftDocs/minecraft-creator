@@ -6,7 +6,7 @@ description: "An Advanced Tutorial on Customizing Blocks with Oversized Geometry
 ms.service: minecraft-bedrock-edition
 ---
 
-# Custom Blocks Part 4: Oversized Geometry
+# Custom Blocks: Oversized Geometry
 
 One of the coolest features allows for custom block geometries that are larger than 16x16x16 pixels. We'll dive into how that works in just a moment, but first...
 

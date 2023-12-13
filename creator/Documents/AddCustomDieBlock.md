@@ -1,7 +1,7 @@
 ---
 author: JimSeaman42
 ms.author: mikeam
-title: How to Add a Simple Custom Block
+title: Create a Custom Die Block
 description: "A tutorial for creating custom blocks in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
 ---

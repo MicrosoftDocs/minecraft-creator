@@ -37,10 +37,10 @@
     - name: Creations
       items:
         - name: Create an In-World Game with Commands
-          href: Documents/CommandsHowToMakeACTMWorld.md
-        - name: 'Create a Custom Dirt Block: Introduction to Resource Packs'
+          href: Documents/CreateAnInWorldGame.md
+        - name: 'Create Custom Grass Blocks: An Introduction to Resource Packs'
           href: Documents/ResourcePack.md
-        - name: 'Create an Angry Cow: Introduction to Behavior Packs'
+        - name: 'Create an Angry Cow: An Introduction to Behavior Packs'
           href: Documents/BehaviorPack.md
         - name: Creating and Adding Custom Sounds
           href: Documents/AddCustomSounds.md
@@ -60,9 +60,9 @@
       items:
         - name: Getting Started with Add-Ons
           href: Documents/GettingStarted.md
-        - name: Introduction to Resource Packs
+        - name: "Create Custom Grass Blocks: An Introduction to Resource Packs"
           href: Documents/ResourcePack.md
-        - name: Introduction to Behavior Packs
+        - name: "Create an Angry Cow: An Introduction to Behavior Packs"
           href: Documents/BehaviorPack.md
         - name: 'Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition'
           href: Documents/DifferencesBetweenBedrockAndJava.md
@@ -74,7 +74,7 @@
           href: Documents/ExperimentalFeaturesToggle.md
         - name: Adding Custom Items
           href: Documents/AddCustomItems.md
-        - name: Adding Custom Sounds
+        - name: Creating and Adding Custom Sounds
           href: Documents/AddCustomSounds.md
         - name: Packaging Content
           items:
@@ -168,8 +168,8 @@
           href: Documents/IntroductionToStructureBlocks.md
         - name: Introduction to Features
           href: Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md
-        - name: How to Make a Complete the Monument World
-          href: Documents/CommandsHowToMakeACTMWorld.md
+        - name: Create an In-World Game with Commands
+          href: Documents/CreateAnInGameWorld.md
         - name: Fog in Resource Packs
           href: Documents/FogInResourcePacks.md
     - name: Entities
@@ -204,9 +204,9 @@
           href: Documents/ParticleEffects.md
     - name: Blocks
       items:
-        - name: Add a Custom Die Block 
+        - name: Create a Custom Die Block 
           href: Documents/AddCustomDieBlock.md
-        - name: Advanced Custom Blocks 
+        - name: 'Create a Sushi Block: Advanced Custom Blocks' 
           href: Documents/AdvancedCustomBlocks.md
         - name: Custom Block Render Lighting 
           href: Documents/CustomBlockRenderLighting.md
@@ -216,7 +216,7 @@
           href: Reference/Content/blockreference/Examples/BlockStatesAndPermutations.md
         - name: Block Traits
           href: Reference/Content/blockreference/Examples/BlockTraits.md
-        - name: Structure Blocks Tutorial
+        - name: Create a Village with Structure Blocks
           href: Documents/StructureBlocksTutorial.md
         - name: Getting Started with Command Blocks
           href: Documents/CommandBlocks.md

@@ -1,7 +1,7 @@
 ---
 author: iconicNurdle
 ms.author: mikeam
-title: Introduction To Behavior Packs
+title: 'Create an Angry Cow: An Introduction To Behavior Packs'
 description: "An introduction to Behavior Packs and adding attacking behaviors to an in-game cow mob."
 ms.service: minecraft-bedrock-edition
 ---
