@@ -33,7 +33,29 @@
             - name: Introduction to the Caves & Cliffs Entities
               href: Documents/CavesAndCliffsEntities.md
             - name: World Height Changes in Caves and Cliffs Part 2
-              href: Documents/WorldHeightChange.md        
+              href: Documents/WorldHeightChange.md    
+    - name: Creations
+      items:
+        - name: Create an In-World Game with Commands
+          href: Documents/CommandsHowToMakeACTMWorld.md
+        - name: 'Create a Custom Dirt Block: Introduction to Resource Packs'
+          href: Documents/ResourcePack.md
+        - name: 'Create an Angry Cow: Introduction to Behavior Packs'
+          href: Documents/BehaviorPack.md
+        - name: Creating and Adding Custom Sounds
+          href: Documents/AddCustomSounds.md
+        - name: Create a Custom Die Block 
+          href: Documents/AddCustomDieBlock.md
+        - name: 'Create a Sushi Block: Advanced Custom Blocks' 
+          href: Documents/AdvancedCustomBlocks.md
+        - name: Creating a Goblin Chef Entity 
+          href: Documents/MakerSeriesMakingTheGoblinChef.md
+        - name: Creating New Entity Types
+          href: Documents/IntroductionToAddEntity.md
+        - name: Create a Loot Table
+          href: Documents/CreateLootTable.md
+        - name: Create a Village with Structure Blocks
+          href: Documents/StructureBlocksTutorial.md
     - name: Concepts
       items:
         - name: Getting Started with Add-Ons
@@ -84,46 +106,6 @@
             href: Documents/RTXPBRTutorial.md
           - name: Actor Storage
             href: Documents/ActorStorage.md
-    - name: Creations
-      items:
-        - name: 'Create a Custom Dirt Block: Introduction to Resource Packs'
-          href: Documents/ResourcePack.md
-        - name: 'Create an Angry Cow: Introduction to Behavior Packs'
-          href: Documents/BehaviorPack.md
-        - name: Creating and Adding Custom Sounds
-          href: Documents/AddCustomSounds.md
-        - name: Create a Custom Die Block 
-          href: Documents/AddCustomDieBlock.md
-        - name: 'Create a Sushi Block: Advanced Custom Blocks' 
-          href: Documents/AdvancedCustomBlocks.md
-        - name: 'Create a Bubble Fish Block: Custom Block Render Lighting' 
-          href: Documents/CustomBlockRenderLighting.md
-        - name: 'Create a Giant Umbrella Block: Advanced Custom Block Oversized' 
-          href: Documents/CustomBlockOversized.md
-        - name: Creating a Goblin Chef Entity 
-          href: Documents/MakerSeriesMakingTheGoblinChef.md
-        - name: Create an In-World Game with Commands
-          href: Documents/CommandsHowToMakeACTMWorld.md
-        - name: Creating New Entity Types
-          href: Documents/IntroductionToAddEntity.md
-        - name: Create a Custom NPC
-          href: Documents/CreateNPCs.md
-        - name: Create NPC Dialogue
-          href: Documents/NPCDialogue.md
-        - name: Create a Loot Table
-          href: Documents/CreateLootTable.md
-        - name: Create a Custom Emerald Ore Texture
-          href: Documents/RTXPBRTutorial.md
-        - name: Create a Village with Structure Blocks
-          href: Documents/StructureBlocksTutorial.md
-        - name: Build Gameplay with TypeScript
-          href: Documents/ScriptingGettingStarted.md
-        - name: Use Script Along with Dedicated Servers
-          href: Documents/ScriptingServers.md
-        - name: Create Script Using Visual Studio Code Tools
-          href: Documents/ScriptDeveloperTools.md
-        - name: Create your First GameTest
-          href: Documents/GameTestBuildYourFirstGameTest.md
     - name: Game Logic
       items:
         - name: 'Redstone Guide'
