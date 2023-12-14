@@ -160,7 +160,7 @@ By default, the game will treat the following blocks as point lights. This funct
 >- `minecraft:soul_lantern` as `#00FFFF`
 >- `minecraft:soul_torch` as `#00FFFF`
 
-To change the strength of a point light, refer to the [documentation for lightEmission block](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md) components. Be aware that this lightEmission value is a separate concept from the “Emissive” value described in PBR or Texture Set documentation.
+To change the strength of a point light, refer to the [documentation for lightEmission block](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md) components. Be aware that this lightEmission value is a separate concept from the "Emissive" value described in PBR or Texture Set documentation.
 
 Color values can be described either as an array of 3 numerical values from the range 0-255 or as a 6-digit hexadecimal string.
 
@@ -288,12 +288,12 @@ With all of this in mind, we can adjust our lighting/global.json slightly to alt
     "directional_lights": {
         "sun": {
             "illuminance": {
-              "0.0": 1.0,
-              "0.25": 400.0, // Sunrise
+              "0.0": 1.0,  // Noon
+              "0.25": 400.0, // Sunset
               "0.35": 39000.0,
-              "0.5": 100000.0,  // Noon
+              "0.5": 100000.0,  // Midnight
               "0.65": 39000.0,
-              "0.75": 400.0, // Sunset
+              "0.75": 400.0, // Sunrise
               "1.0": 1.0
             },
             "color": [ 255.0, 255.0, 255.0, 255.0 ]
@@ -325,7 +325,7 @@ Key frames currently support floats and colors (both RGB and hexadecimal) and th
 
 The following diagram can be used to reference key times of the day:
 
-![Image showing the times of day as numerical values. Midnight = 0.0, Sunrise = 0.25, Noon = 0.5, Sunset = 0.75](Media/DeferredLighting/key_frame_times_of_day.png)
+![Image showing the times of day as numerical values. Noon = 0.0, Sunset = 0.25, Midnight = 0.5, Sunrise = 0.75](Media/DeferredLighting/key_frame_times_of_day.png)
 
 ## Example JSON Files
 

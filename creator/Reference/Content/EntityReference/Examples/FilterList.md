@@ -17,13 +17,13 @@ Below is a list of all the available filters within Minecraft: Bedrock Edition f
 |[any_slot_empty](Filters/any_slot_empty.md)|Returns true when the designated equipment location for the subject entity has any empty slot. |
 |[bool_property](Filters/bool_property.md)|`bool_property` allows a creator to compare an entity property to a boolean value. |
 |[clock_time](Filters/clock_time.md)|`clock_time` allows a creator to compare the current time with a float value in the range (0.0, 1.0). |
-|[distance_to_nearest_player](Filters/distance_to_nearest_player.md)|`distance_to_nearest_player` compares the distance to the nearest Player with a float value. |
+|[distance_to_nearest_player](Filters/distance_to_nearest_player.md)|`distance_to_nearest_player` compares the distance to the nearest player with a float value. |
 |[enum_property](Filters/enum_property.md)|`enum_property` allows a creator to compare an entity property to an enum value. |
 |[float_property](Filters/float_property.md)|`float_property` allows a creator to compare an entity property to a float value. |
 |[has_ability](Filters/has_ability.md)|Returns true when the subject entity has the named ability. |
 |[has_biome_tag](Filters/has_biome_tag.md)|Tests whether the biome the subject is in has the specified tag. |
 |[has_component](Filters/has_component.md)|Returns true when the subject entity contains the named component. |
-|[has_container_open](Filters/has_container_open.md)|Returns true when the subject Player entity has opened a container. |
+|[has_container_open](Filters/has_container_open.md)|Returns true when the subject player entity has opened a container. |
 |[has_damage](Filters/has_damage.md)|Returns true when the subject entity receives the named damage type. |
 |[has_equipment](Filters/has_equipment.md)|Tests for the presence of a named item in the designated slot of the subject entity. |
 |[has_mob_effect](Filters/has_mob_effect.md)|Tests whether the Subject has the specified mob effect. |

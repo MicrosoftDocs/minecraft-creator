@@ -37,7 +37,7 @@ See the full biome schema below for additional details and the full list of name
 
 ### Example
 
-```JSON
+```json
 {
   "plains": {
     "format_version": "1.12.0",
@@ -334,5 +334,4 @@ Biomes are read from JSON files in the biomes subfolders of behavior packs. Load
       object "minecraft:legacy_world_generation_rules" : opt // Additional world generation control applicable only to legacy limited worlds.
       object "[a-z0-9_.:]+" : opt // Attach arbitrary string tags to this biome
   }
-
 ```

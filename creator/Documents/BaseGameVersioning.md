@@ -29,7 +29,7 @@ In this article you will learn the following:
 
 It's recommended that the following be completed before reviewing this article:
 
-- [Creating a World Template](CreateWorldTemplate.md)
+- [Creating a World Template](CreateAWorldTemplate.md)
 
 ## Setup
 
