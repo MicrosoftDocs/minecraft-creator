@@ -12,14 +12,10 @@
    href: minecraft_block_placer.md
  - name: can_destroy_in_creative
    href: minecraft_can_destroy_in_creative.md
- - name: chargeable
-   href: minecraft_chargeable.md
  - name: cooldown
    href: minecraft_cooldown.md
  - name: damage
    href: minecraft_damage.md
- - name: digger
-   href: minecraft_digger.md
  - name: display_name
    href: minecraft_display_name.md
  - name: durability
