@@ -171,7 +171,7 @@
         - name: Introduction to Features
           href: Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md
         - name: Create an In-World Game with Commands
-          href: Documents/CreateAnInGameWorld.md
+          href: Documents/CreateAnInWorldGame.md
         - name: Fog in Resource Packs
           href: Documents/FogInResourcePacks.md
     - name: Entities

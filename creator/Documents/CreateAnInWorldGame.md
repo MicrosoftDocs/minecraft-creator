@@ -2,7 +2,7 @@
 author: IconicNurdle
 ms.author: mikeam
 title: Create an In-World Game with Commands
-description: "A tutorial covering how to create a "Complete the Monument" style world using Command Blocks"
+description: "A tutorial covering how to create a 'Complete the Monument' style world using Command Blocks"
 ms.service: minecraft-bedrock-edition
 ---
 
