@@ -331,7 +331,10 @@ To see examples of typical resource and behavior packs, check out the Minecraft 
 
 Here are some more advanced add-on pack content information:
 
->` [!div class="nextstepaction"]
->` [ScriptingGettingStarted](ScriptingGettingStarted.md)
->` [Creating New Entity Types](introductiontoaddentity.md)
->` [Entity JSON Documentation](../Reference/Content/EntityReference/index.yml)
+> [!div class="nextstepaction"]
+
+> [ScriptingGettingStarted](ScriptingGettingStarted.md)
+
+> [Creating New Entity Types](introductiontoaddentity.md)
+
+> [Entity JSON Documentation](../Reference/Content/EntityReference/index.yml)
