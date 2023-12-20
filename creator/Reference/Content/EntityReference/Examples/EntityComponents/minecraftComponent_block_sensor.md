@@ -24,8 +24,8 @@ ms.service: minecraft-bedrock-edition
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|block_list| *not set* | List| List of blocks that will trigger the senor.|
-|on_block_broken|*not set* | String|  Event to run when a block breaks|
+|block_list| *not set* | List| List of blocks that will trigger the sensor.|
+|on_block_broken|*not set* | String|  Event to run when a block breaks.|
 
 ## Example
 
