@@ -54,15 +54,15 @@ Anyway, to keep things nice and tidy, we are going to create three fake players 
 Use these commands to create fake players, add them to the `wool_placed` objective, and give each one a score of 0.
 
 ```
-/scoreboard players set #red wool_placed 0
-/scoreboard players set #green wool_placed 0
-/scoreboard players set #blue wool_placed 0
+/scoreboard players set "#red" wool_placed 0
+/scoreboard players set "#green" wool_placed 0
+/scoreboard players set "#blue" wool_placed 0
 ```
 
 We are also going to add one more fake player called **#total_wool** to the `totals` objective and give it a score of 0, too. Even though we are using the same command, #total_wool is going to be used to tell when all three of the other wool blocks have been placed.
 
 ```
-/scoreboard players set #total_wool totals 0
+/scoreboard players set "#total_wool" totals 0
 ```
 
 Because repeating command blocks are going to be used, the chat is going to be flooded with command block output. This can be disabled using the "commandblockoutput" gamerule.
@@ -110,9 +110,9 @@ Here are the command inputs:
 
 ```
 /testforblock X Y Z wool 13
-/scoreboard players test #green wool_placed 0 0
+/scoreboard players test "#green" wool_placed 0 0
 /give @a diamond
-/scoreboard players set #green wool_placed 1
+/scoreboard players set "#green" wool_placed 1
 /setblock X Y Z cake
 ```
 
@@ -122,9 +122,9 @@ Do the same thing again, but change the color to blue (aux code 11) and the X Y 
 
 ```
 /testforblock X Y Z wool 11
-/scoreboard players test #blue wool_placed 0 0
+/scoreboard players test "#blue" wool_placed 0 0
 /give @a diamond
-/scoreboard players set #blue wool_placed 1
+/scoreboard players set "#blue" wool_placed 1
 /setblock X Y Z cake
 ```
 
