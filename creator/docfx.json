@@ -110,7 +110,6 @@
         "Reference/Source/VanillaBehaviorPack_Snippets/**/*.md": "sample"
       },
       "ms.prod": {
-        "Reference/Source/VanillaBehaviorPack_Snippets/**/*.md": "gaming"
       }
     },
     "template": [],
