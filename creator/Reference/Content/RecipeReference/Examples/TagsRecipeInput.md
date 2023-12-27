@@ -2,7 +2,7 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Utilizing Tags as Recipe Input
-description: "A guide to Creating Recipes with Tags in Minecraft: Bedrock Edition"
+description: "Guide to Creating Recipes with Tags in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
 ---
 
