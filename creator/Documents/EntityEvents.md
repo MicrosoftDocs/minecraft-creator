@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: mikeam
 title: Entity Events
 description: "An article discussing how to use entity events to add and remove behaviors for entities."
 ms.service: minecraft-bedrock-edition
