@@ -6,7 +6,7 @@ description: "A guide to Creating Recipes with Tags in Minecraft: Bedrock Editio
 ms.service: minecraft-bedrock-edition
 ---
 
-# Tags as Recipe Input
+# Use Tags as Recipe Input
 
 Imagine you are a creator, and you want to create a desk that can be crafted from any type of plank. Sounds pretty straightforward, right?
 
