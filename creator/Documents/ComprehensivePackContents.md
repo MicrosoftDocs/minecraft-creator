@@ -36,10 +36,17 @@ Here is an introduction to [behavior packs](BehaviorPack.md).
     - `<entity_name_animations>`.json
 - [blocks](AddCustomDieBlock.md)
     - `<block_name>`.json
+- [cameras](CameraTutorialFreeCameraPreset.md)
+    - presets
+        - `<identifier>`.json
 - [entities]()
     - `<entity_name>`
         - `<entity_name_animation_controller>`.json
     - `<entity_name>`.json
+- [features](../Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md)
+    - `<feature>`.json
+- [feature_rules](../Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md)
+    - `<feature_rule>`.json
 - [dialogue]
     - `<scene_dialogue>`
         - `<scene>`.json
@@ -324,7 +331,10 @@ To see examples of typical resource and behavior packs, check out the Minecraft 
 
 Here are some more advanced add-on pack content information:
 
->` [!div class="nextstepaction"]
->` [ScriptingGettingStarted](ScriptingGettingStarted.md)
->` [Creating New Entity Types](introductiontoaddentity.md)
->` [Entity JSON Documentation](../Reference/Content/EntityReference/index.yml)
+> [!div class="nextstepaction"]
+
+> [ScriptingGettingStarted](ScriptingGettingStarted.md)
+
+> [Creating New Entity Types](introductiontoaddentity.md)
+
+> [Entity JSON Documentation](../Reference/Content/EntityReference/index.yml)

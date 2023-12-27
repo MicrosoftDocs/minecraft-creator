@@ -497,7 +497,11 @@ Luminance is calculated as follows:
 
 `Luminance=RGB∙[0.2126, 0.7152, 0.0722]`
 
-The following example fog JSON is a good place to start: 
+Another way to write that is:
+
+`Luminance = 0.2126*R + 0.7152*G + 0.0722*B`
+
+The following example is a good place to start: 
 
 ### fogs/default_fog_settings.json
 

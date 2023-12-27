@@ -2,8 +2,8 @@
 author: iconicNurdle
 ms.author: mikeam
 title: How to Add Custom Items
-ms.prod: gaming
 description: "A tutorial for creating custom items in Minecraft: Bedrock Edition"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Custom Items

@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: mikeam
 title: Entity Events
 description: "An article discussing how to use entity events to add and remove behaviors for entities."
 ms.service: minecraft-bedrock-edition
@@ -250,25 +250,25 @@ Here is an example of this nuance. An entity type has a component group defined 
 
 ```json
 "component_groups":{
-    "`example":"be_baby":{
-        "`minecraft":"is_baby":{}
+    "example":"be_baby":{
+        "minecraft":"is_baby":{}
         }
     },
-    "`example":"another_group":{
-        "`minecraft":"scale":{
+    "example":"another_group":{
+        "minecraft":"scale":{
             "value":0.5
         }
     },
 "events":{
-    "`example":"become_baby":{
+    "example":"become_baby":{
         "add":{
             "component_groups":[
-                "`example":"be_baby"
+                "example":"be_baby"
             ]
         },
-        "trigger":"`example":"scale_check"
+        "trigger":"example":"scale_check"
     },
-    "`example":"scale_check":{
+    "example":"scale_check":{
         "sequence":[
             {
                 "filters":{
@@ -277,7 +277,7 @@ Here is an example of this nuance. An entity type has a component group defined 
                 },
                 "add"{
                     "component_groups":[
-                        "`example":"another_group"
+                        "example":"another_group"
                     ]
                 }
             }

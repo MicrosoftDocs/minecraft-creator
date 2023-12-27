@@ -149,7 +149,7 @@ The next step is to associate the texture names with a texture file path. This i
   "texture_data": { 
     "die_1": { 
       "textures": "textures/blocks/die_1" 
-},  
+    },
     "sushi_wrap": { 
       "textures": "textures/blocks/sushi_wrap" 
     }, 
@@ -162,7 +162,7 @@ The next step is to associate the texture names with a texture file path. This i
     "california_roll": { 
      "textures": "textures/blocks/california_roll" 
     } 
-    }
+  }
 } 
 ```
 
@@ -210,28 +210,28 @@ In the file, you will need to define what each of the blocks is.
 Copy and paste the following code into your **salmon_roll.json** file:
 
 ```json
-{ 
-  "format_version": "1.19.40", 
-  "minecraft:block": { 
-    "description": { 
-      "identifier": "demo:salmon_roll" 
-    }, 
-   "components": { 
-    "minecraft:geometry": "geometry.sushi", 
-    "minecraft:material_instances": { 
-     "north": { 
-      "texture": "salmon_roll" 
-     }, 
-     "south": { 
-      "texture": "salmon_roll" 
-     }, 
-     "*": { 
-      "texture": "sushi_wrap" 
-     } 
-    } 
-   } 
-  } 
-} 
+{
+  "format_version": "1.19.40",
+  "minecraft:block": {
+    "description": {
+      "identifier": "demo:salmon_roll"
+    },
+    "components": {
+      "minecraft:geometry": "geometry.sushi",
+      "minecraft:material_instances":{
+        "north": { 
+          "texture": "salmon_roll"
+        },
+        "south": { 
+          "texture": "salmon_roll"
+        },
+        "*": {
+          "texture": "sushi_wrap"
+        }
+      }
+    }
+  }
+}
 ```
 
 ### Using custom block components
@@ -251,27 +251,26 @@ The rest can be defined using *to capture any side not previously defined.* is t
 There is another cool part of material_instances to show off. We can actually create defined variables within the material instances component. Let's see an example using salmon_roll:
 
 ```json
-{ 
-  "format_version": "1.19.40", 
-  "minecraft:block": 
-    { 
-    "description": { 
-      "identifier": "demo:salmon_roll" 
-    }, 
-   "components": { 
-    "minecraft:geometry": "geometry.sushi", 
-    "minecraft:material_instances": { 
-     "north": "sushi_side", 
-     "south": "sushi_side", 
-     "*": { 
-      "texture": "sushi_wrap" 
-     }, 
-      "sushi_side":{ 
-      "texture": "salmon_roll" 
-    } 
-   } 
-  }
+{
+  "format_version": "1.19.40",
+  "minecraft:block": {
+    "description": {
+      "identifier": "demo:salmon_roll"
+    },
+    "components": {
+      "minecraft:geometry": "geometry.sushi",
+      "minecraft:material_instances": {
+        "north": "sushi_side",
+        "south": "sushi_side",
+        "*": {
+          "texture": "sushi_wrap"
+        },
+        "sushi_side": {
+          "texture": "salmon_roll"
+        }
+      }
     }
+  }
 }
 ```
 
