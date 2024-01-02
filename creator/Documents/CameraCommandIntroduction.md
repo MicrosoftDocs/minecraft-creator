@@ -244,17 +244,17 @@ To make a simple non-interactive cutscene, a camera command can be combined with
 
 `/camera @a set example:cutscene_camera`
 
-`/inputpermission @a camera disabled`
+`/inputpermission set @a camera disabled`
 
-`/inputpermission @a movement disabled`
+`/inputpermission set @a movement disabled`
 
 Then at the end of the cutscene animations:
 
 `/camera @a clear`
 
-`/inputpermission @a camera enabled`
+`/inputpermission set @a camera enabled`
 
-`/inputpermission @a movement enabled`
+`/inputpermission set @a movement enabled`
 
 ### Hiding a teleport
 
