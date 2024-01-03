@@ -1,5 +1,5 @@
 ---
-author: mammerla
+author: JimSeaman42
 ms.author: mikeam
 title: Block Documentation - damage
 description: "A reference document detailing the 'damage' block event response"
@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Block Documentation - damage
 
-`damage` is an Event Response that applies damage to a target.
+`damage` is an event response that applies damage to a target.
 
 ## Extra Parameters
 
@@ -17,7 +17,7 @@ ms.service: minecraft-bedrock-edition
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |amount| 0| Integer| The amount of damage to deal. |
-| mob_amount| 0 | Integer| The amount of damage to deal if held by a mob. |
+| mob_amount| 0 | Integer| The amount of damage to deal if held by an entity. |
 |target| self| Minecraft Filter|  The target context to execute against. |
 |[type](../../../EntityReference/Examples/Filters/has_damage.md#list-of-damage-types)|*not set* | String| The type of damage to deal. |
 
@@ -26,7 +26,7 @@ ms.service: minecraft-bedrock-edition
 ```json
 "damage":{
     "amount" : 1,
-    "target" : {"test": "in_lava"},
+    "target" : {"test": "player"},
     "type" : "lava"
 }
 ```
