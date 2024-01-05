@@ -293,4 +293,4 @@ Be sure that the ["doweathercycle" gamerule](#doweathercycle) is false if you in
 After learning about commands and target selectors, command blocks, and a variety of useful commands, it's time to put them together and create a small project in the form of a Complete the Monument system.
 
 > [!div class="nextstepaction"]
-> [How to Make a Complete the Monument World](CommandsHowToMakeACTMWorld.md)
+> [Create an In-World Game with Commands](CreateAnInWorldGame.md)

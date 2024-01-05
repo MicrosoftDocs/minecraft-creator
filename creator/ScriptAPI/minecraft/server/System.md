@@ -39,17 +39,40 @@ Represents the current world tick of the server.
 Type: *number*
 
 ## Methods
+::: moniker range="=minecraft-bedrock-experimental"
+- [clearJob](#clearjob)
+::: moniker-end
 - [clearRun](#clearrun)
 - [run](#run)
 - [runInterval](#runinterval)
+::: moniker range="=minecraft-bedrock-experimental"
+- [runJob](#runjob)
+::: moniker-end
 - [runTimeout](#runtimeout)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **clearJob**
+`
+clearJob(jobId: number): void
+`
+
+Cancels the execution of a job queued via System.runJob.
+
+#### **Parameters**
+- **jobId**: *number*
+  
+  The job ID returned from System.runJob.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **clearRun**
 `
 clearRun(runId: number): void
 `
 
-Cancels the execution of a function run that was previously scheduled via the `run` function.
+Cancels the execution of a function run that was previously scheduled via System.run.
 
 #### **Parameters**
 - **runId**: *number*
@@ -111,6 +134,62 @@ Runs a set of code on an interval.
     mc.world.sendMessage("This is an interval run " + intervalRunIdentifier + " sending a message every 30 seconds.");
   }, 600);
 ```
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **runJob**
+`
+runJob(generator: Generator<void, void, void>): number
+`
+
+Queues a generator to run until completion.  The generator will be given a time slice each tick, and will be run until it yields or completes.
+
+#### **Parameters**
+- **generator**: Generator<*void*, *void*, *void*>
+  
+  The instance of the generator to run.
+
+#### **Returns** *number* - An opaque handle that can be used with System.clearJob to stop the run of this generator.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+#### Examples
+##### ***cubeGenerator.ts***
+```typescript
+import { BlockPermutation, Dimension, Location, world, ButtonPushAfterEvent, system } from "@minecraft/server";
+
+// A simple generator that places blocks in a cube at a specific location
+// with a specific size, yielding after every block place.
+function* blockPlacingGenerator(
+  blockPerm: BlockPermutation,
+  dimension: Dimension,
+  size: number,
+  start: Location,
+) {
+  for (let x = start.x; x < start.x + size; x++) {
+    for (let y = start.y; y < start.y + size; y++) {
+      for (let z = start.z; z < start.z + size; z++) {
+        const block = dimension.getBlock({ x: x, y: y, z: z });
+        if (block) {
+          block.setPermutation(blockPerm);
+        }
+        yield;
+      }
+    }
+  }
+}
+
+// When a button is pushed, we will place a 15x15x15 cube of cobblestone 10 blocks above it
+world.afterEvents.buttonPush.subscribe((buttonPushEvent: ButtonPushAfterEvent) => {
+  const cubePos = buttonPushEvent.block.location;
+  cubePos.y += 10;
+
+  const blockPerm = BlockPermutation.resolve("minecraft:cobblestone");
+  
+  system.runJob(blockPlacingGenerator(blockPerm, buttonPushEvent.dimension, 15, cubePos));
+});
+```
+::: moniker-end
 
 ### **runTimeout**
 `

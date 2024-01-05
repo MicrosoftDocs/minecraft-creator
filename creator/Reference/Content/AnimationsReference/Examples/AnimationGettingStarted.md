@@ -79,7 +79,7 @@ Controlling how and when animations are played, and how they interact with other
 
 ### Example of Animation Controller
 
-```JSON
+```json
 {
   "format_version": "1.17.30",
   "animation_controllers": {
@@ -116,13 +116,13 @@ At the beginning of each frame, the skeleton is reset to its default pose from i
 
 Animation data can be either raw data:
 
-```JSON
+```json
 "rotation": [90.0, 0.0, 0.0]
 ```
 
 or a run-time interpreted script:
 
-```JSON
+```json
 "rotation": ["cos(query.anim_pos * 38.17) * 80.0 * query.anim_speed", 0.0, 0.0]
 ```
 
@@ -131,7 +131,7 @@ or a run-time interpreted script:
 
 ### Example from quadruped.animation.json in the vanilla resource pack's animation folder
 
-```JSON
+```json
 {
   "format_version": "1.8.0",
   "animations": {
@@ -167,7 +167,7 @@ As such, when interpolating between two key frames, one can define the slope of 
 
 ### Continuous Example
 
-```JSON
+```json
 "head": {
   "rotation": {
     "0.0":[0, 0, 0],
@@ -188,7 +188,7 @@ To scale the 'head' bone:
 > [!NOTE]
 >"Pre" and "post" can also be defined by a Molang expression that calculates the value at runtime, allowing for a mathematically defined, as opposed to a purely linear, curve.
 
-```JSON
+```json
 "head": {
   "scale": {
     "0.5": {
@@ -212,7 +212,7 @@ Some key concepts on how Transforms work within Minecraft:Bedrock Edition:
 - Bones that don't exist in the targeted geometry can be animated (missing bones are ignored).
 - Scale, rotation, and position can be set individually or uniformly with a single value. For example, these values are equivalent:
 
-```JSON
+```json
 "scale": [2.0, 2.0, 2.0]
 "scale": 2.0
 "scale": [2.0]

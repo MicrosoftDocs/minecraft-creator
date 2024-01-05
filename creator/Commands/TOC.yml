@@ -48,6 +48,8 @@
   href: commands/give.md
 - name: help
   href: commands/help.md
+- name: hud
+  href: commands/hud.md
 - name: inputpermission
   href: commands/inputpermission.md
 - name: kick

@@ -6,7 +6,7 @@ description: "An Advanced Tutorial Detailing the Use of Render and Lighting Opti
 ms.service: minecraft-bedrock-edition
 ---
 
-# Custom Blocks Part 3: Render and Lighting Options
+# Custom Blocks: Render and Lighting Options
 
 Okay, so we can make blocks that are different shapes, which is awesome! But what if we want more cool options? How does a stained glass block work, anyhow?
 

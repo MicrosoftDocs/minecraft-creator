@@ -24,9 +24,7 @@ Event name of the trigger.
 Type: *string*
 
 ## Methods
-- [constructor](#constructor)
-
-### **constructor**
+- [constructor](#constructor)### **constructor**
 `
 new Trigger(eventName: string)
 `

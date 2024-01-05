@@ -12,9 +12,6 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-## Classes that extend ItemDefinitionTriggeredAfterEvent
-- [*ItemDefinitionTriggeredBeforeEvent*](ItemDefinitionTriggeredBeforeEvent.md)
-
 Contains information related to a custom item having a data definition change being triggered.
 
 ## Properties

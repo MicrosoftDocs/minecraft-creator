@@ -98,6 +98,7 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:waxing_weathered_copper_door`
 - `minecraft:waxing_weathered_copper_grate`
 - `minecraft:waxing_weathered_copper_trapdoor`
+- `minecraft:wolf_armor`
 - `minecraft:black_stained_glass`
 - `minecraft:black_stained_glass_from_ink_sac`
 - `minecraft:black_stained_glass_pane`

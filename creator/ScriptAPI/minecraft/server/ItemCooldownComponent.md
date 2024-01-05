@@ -32,7 +32,7 @@ Type: *string*
 ### **cooldownTicks**
 `read-only cooldownTicks: number;`
 
-Amount of time, in ticks, that remain for this item cooldown.
+Amount of time, in ticks, it will take this item to cooldown.
 
 Type: *number*
 

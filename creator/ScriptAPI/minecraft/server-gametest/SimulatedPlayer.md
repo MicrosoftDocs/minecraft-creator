@@ -234,7 +234,7 @@ Causes the simulated player to start gliding. Elytra must be equipped and the pl
 interact(): boolean
 `
 
-Performs a raycast from the player’s head and interacts with the first intersected block or entity. Returns true if the interaction was successful. Maximum range is 6 blocks.
+Performs a raycast from the player's head and interacts with the first intersected block or entity. Returns true if the interaction was successful. Maximum range is 6 blocks.
 
 #### **Returns** *boolean*
 

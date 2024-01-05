@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.IPlayerLeaveAfterEventSignal clas
 ---
 # IPlayerLeaveAfterEventSignal Class
 
-## Classes that extend IPlayerLeaveAfterEventSignal
-- [*PlayerLeaveAfterEventSignal*](PlayerLeaveAfterEventSignal.md)
-
 Provides an adaptable interface for callers to subscribe to an event that fires after a player leaves a world.
 
 ## Methods

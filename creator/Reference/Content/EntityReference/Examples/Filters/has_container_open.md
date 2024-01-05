@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Entity Documentation - has_container_open
 
-Returns true when the subject Player entity has opened a container.
+Returns true when the subject player entity has opened a container.
 
 ## Parameters
 

@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.ExplosionAfterEvent class.
 ---
 # ExplosionAfterEvent Class
 
-## Classes that extend ExplosionAfterEvent
-- [*ExplosionBeforeEvent*](ExplosionBeforeEvent.md)
-
 Contains information regarding an explosion that has happened.
 
 ## Properties

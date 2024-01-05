@@ -12,12 +12,22 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+The types of item components that are accessible via function ItemStack.getComponent.
+
 ## Constants
 ### **Cooldown**
 `Cooldown = "minecraft:cooldown"`
+
+The minecraft:cooldown component.
 ### **Durability**
 `Durability = "minecraft:durability"`
+
+The minecraft:durability component.
 ### **Enchantable**
 `Enchantable = "minecraft:enchantable"`
+
+The minecraft:enchantable component.
 ### **Food**
 `Food = "minecraft:food"`
+
+The minecraft:food component.

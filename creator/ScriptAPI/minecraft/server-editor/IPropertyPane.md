@@ -67,6 +67,7 @@ Type: *number*
 - [addButton](#addbutton)
 - [addDivider](#adddivider)
 - [addDropdown](#adddropdown)
+- [addEntityPicker](#addentitypicker)
 - [addNumber](#addnumber)
 - [addString](#addstring)
 - [addVector3](#addvector3)
@@ -79,7 +80,7 @@ Type: *number*
 
 ### **addBlockPicker**
 `
-addBlockPicker(obj: T, property: Prop, options: IPropertyItemOptionsBlocks): IPropertyItem<T, Prop>
+addBlockPicker(obj: T, property: Prop, options: IPropertyItemOptionsDataPicker): IPropertyItem<T, Prop>
 `
 
 Adds a BlockPicker item to the pane.
@@ -87,7 +88,7 @@ Adds a BlockPicker item to the pane.
 #### **Parameters**
 - **obj**: *T*
 - **property**: *Prop*
-- **options**: *IPropertyItemOptionsBlocks*
+- **options**: *IPropertyItemOptionsDataPicker*
 
 #### **Returns** *IPropertyItem<T, Prop>*
 
@@ -142,6 +143,20 @@ Adds an DropDown item to the pane.
 - **obj**: *T*
 - **property**: *Prop*
 - **options**: *IPropertyItemOptionsDropdown*
+
+#### **Returns** *IPropertyItem<T, Prop>*
+
+### **addEntityPicker**
+`
+addEntityPicker(obj: T, property: Prop, options: IPropertyItemOptionsDataPicker): IPropertyItem<T, Prop>
+`
+
+Adds an EntityPicker item to the pane.
+
+#### **Parameters**
+- **obj**: *T*
+- **property**: *Prop*
+- **options**: *IPropertyItemOptionsDataPicker*
 
 #### **Returns** *IPropertyItem<T, Prop>*
 

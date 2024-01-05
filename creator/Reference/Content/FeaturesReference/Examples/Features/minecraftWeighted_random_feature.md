@@ -10,11 +10,9 @@ ms.service: minecraft-bedrock-edition
 
 `minecraft:weighted_random_feature` randomly selects and places a feature based on a weight value. Weights are relative, with higher values making selection more likely.
 
-**Succeeds if**
-The selected feature is placed.
+- **Succeeds if** the selected feature is placed.
 
-**Fails if**
-The selected feature fails to be placed.
+- **Fails if** the selected feature fails to be placed.
 
 ### Schema
 
@@ -42,7 +40,7 @@ Selecting and placing a variant of a flower
 
 ```json
 {
-  "format_version": 1.13.0,
+  "format_version": "1.13.0",
   "minecraft:weighted_random_feature": {
     "description": {
       "identifier": "example:select_flower_feature"

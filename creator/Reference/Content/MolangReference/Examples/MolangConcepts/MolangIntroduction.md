@@ -97,7 +97,7 @@ In general, variables of a mob are considered private to that mob and cannot be 
 
 ### Example
 
-```JSON
+```json
 {
   "format_version": "1.10.0",
   "minecraft:client_entity": {

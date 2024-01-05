@@ -2,8 +2,8 @@
 author: kakinnun
 ms.author: kakinnun
 title: 1.20.50 Update Notes
-ms.prod: gaming
 description: Update summary of Creator changes in Bedrock 1.20.50
+ms.service: minecraft-bedrock-edition
 ---
 # Minecraft Bedrock 1.20.50 Update Notes for Creators
 
@@ -17,6 +17,10 @@ Minecraft Bedrock has been updated to 1.20.50 and there are a number of changes 
 
 ```/gamerule showrecipemessages```
  
+## Blocks
+- Toggle Decorative Pot Breaking: With 1.20.50, Vanilla was updated to include improved decorated pots including the ability to break them with projectiles. As a creator, you can choose whether you want this gamerule or not using:
+```/gamerule projectilescanbreakblocks```
+
 ## Items
 
 - [use_modifiers](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_use_modifiers.md) - Previously called "chargeable" and part of the Holiday Creator Features experiment. This functionality has been moved under the "use_modifiers" component.
@@ -91,13 +95,6 @@ Scripting is a powerful way to add complex behavior to your experience. It allow
 ## What's Next
 
 Looking ahead, here's what you can expect coming in future releases.
-
-**Custom Armor - Armor Trim Support**
-
-When Armor Trims were introduced in 1.20 they did not support being applied to custom armor. We will be shipping this capability soon.
-
-**Target Selectors for Entity Properties**
-- Extending Entity Property capability with the ability to use Target Selectors.
 
 **queue_command**
 - Previously called "run_command", this allows easier triggering of commands from Entity JSON.

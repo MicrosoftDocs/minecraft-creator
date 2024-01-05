@@ -2,8 +2,8 @@
 author: kakinnun
 ms.author: kakinnun
 title: 1.20.40 Update Notes
-ms.prod: gaming
 description: Update summary of Creator changes in Bedrock 1.20.40
+ms.service: minecraft-bedrock-edition
 ---
 # Minecraft Bedrock 1.20.40 Update Notes for Creators
 
@@ -151,10 +151,6 @@ Scripting is a powerful way to add complex behavior to your experience. It allow
 ## What's Next
 
 Looking ahead, here's what you can expect coming in future releases.
-
-**Custom Armor - Armor Trim Support**
-
-When Armor Trims were introduced in 1.20 they did not support being applied to custom armor. We will be shipping this capaiblity soon.
 
 **Creator API**
 

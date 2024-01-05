@@ -62,7 +62,7 @@ Type: *boolean*
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **isWaterlogged**
-`isWaterlogged: boolean;`
+`read-only isWaterlogged: boolean;`
 
 Returns or sets whether this block has a liquid on it.
 
@@ -70,9 +70,11 @@ Type: *boolean*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+> [!WARNING]
+> This property can throw errors when used.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 ::: moniker-end
 
 ### **location**
@@ -175,11 +177,17 @@ Type: *number*
 - [hasTag](#hastag)
 ::: moniker-end
 - [isValid](#isvalid)
+::: moniker range="=minecraft-bedrock-experimental"
+- [matches](#matches)
+::: moniker-end
 - [north](#north)
 - [offset](#offset)
 - [setPermutation](#setpermutation)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [setType](#settype)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [setWaterlogged](#setwaterlogged)
 ::: moniker-end
 - [south](#south)
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -230,7 +238,7 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) below t
 bottomCenter(): Vector3
 `
 
-Returns the {@link @minecraft/server.Location} of the center of this block on the X and Z axis.
+Returns the @minecraft/server.Location of the center of this block on the X and Z axis.
 
 #### **Returns** [*Vector3*](Vector3.md)
 
@@ -266,7 +274,7 @@ Checks to see whether it is valid to place the specified block type or block per
 center(): Vector3
 `
 
-Returns the {@link @minecraft/server.Location} of the center of this block on the X, Y, and Z axis.
+Returns the @minecraft/server.Location of the center of this block on the X, Y, and Z axis.
 
 #### **Returns** [*Vector3*](Vector3.md)
 
@@ -419,6 +427,33 @@ Returns true if this reference to a block is still valid (for example, if the bl
 
 #### **Returns** *boolean* - True if this block object is still working and valid.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **matches**
+`
+matches(blockName: string, states?: Record<string, boolean | number | string>): boolean
+`
+
+Tests whether this block matches a specific criteria.
+
+#### **Parameters**
+- **blockName**: *string*
+  
+  Block type identifier to match this API against.
+- **states**?: Record<*string*, *boolean* | *number* | *string*> = `null`
+  
+  Optional set of block states to test this block against.
+
+#### **Returns** *boolean* - Returns true if the block matches the specified criteria.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
+
 ### **north**
 `
 north(steps?: number): Block | undefined
@@ -489,6 +524,31 @@ Sets the type of block.
 - **blockType**: [*BlockType*](BlockType.md) | *string*
   
   Identifier of the type of block to apply - for example, minecraft:powered_repeater.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **setWaterlogged**
+`
+setWaterlogged(isWaterlogged: boolean): void
+`
+
+Sets whether this block has a water logged state - for example, whether stairs are submerged within water.
+
+#### **Parameters**
+- **isWaterlogged**: *boolean*
+  
+  true if the block should have water within it.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

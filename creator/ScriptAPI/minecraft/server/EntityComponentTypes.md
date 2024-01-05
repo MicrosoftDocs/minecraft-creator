@@ -117,6 +117,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 `Npc = "minecraft:npc"`
 ### **OnFire**
 `OnFire = "minecraft:onfire"`
+### **Projectile**
+`Projectile = "minecraft:projectile"`
 ### **PushThrough**
 `PushThrough = "minecraft:push_through"`
 ### **Rideable**

@@ -11,17 +11,6 @@ description: Contents of the @minecraft/server.EntityBaseMovementComponent class
 ## Extends
 - [*EntityComponent*](EntityComponent.md)
 
-## Classes that extend EntityBaseMovementComponent
-- [*EntityMovementAmphibiousComponent*](EntityMovementAmphibiousComponent.md)
-- [*EntityMovementBasicComponent*](EntityMovementBasicComponent.md)
-- [*EntityMovementFlyComponent*](EntityMovementFlyComponent.md)
-- [*EntityMovementGenericComponent*](EntityMovementGenericComponent.md)
-- [*EntityMovementGlideComponent*](EntityMovementGlideComponent.md)
-- [*EntityMovementHoverComponent*](EntityMovementHoverComponent.md)
-- [*EntityMovementJumpComponent*](EntityMovementJumpComponent.md)
-- [*EntityMovementSkipComponent*](EntityMovementSkipComponent.md)
-- [*EntityMovementSwayComponent*](EntityMovementSwayComponent.md)
-
 Base class for a family of entity movement events.
 
 ## Properties

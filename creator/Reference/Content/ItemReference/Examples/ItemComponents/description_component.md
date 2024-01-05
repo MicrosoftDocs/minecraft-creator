@@ -17,6 +17,18 @@ ms.service: minecraft-bedrock-edition
 |identifier|*not set* |String | The identifier for this item; must include a namespace. The 'Minecraft' namespace must not be used, unless overriding a Vanilla item.|
 |menu_category |*not set*  | JSON object| The creative group name and category for this item.|
 
+## menu_category
+
+ The `menu_category` parameter details the creative group name and category for an item, and has three parameters of its own:
+
+## menu_category Parameters
+
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+|category |items |String |The creative category that this item belongs to. Options include "construction", "nature", "equipment", "items", and "none"|
+|group |-- |String |The creative group that this item belongs to. Group name is limited to 256 characters. |
+|is_hidden_in_commands |-- |Boolean |Determines whether or not this item can be used with commands. Commands can use items by default. |
+
 ### Example
 
 ```json

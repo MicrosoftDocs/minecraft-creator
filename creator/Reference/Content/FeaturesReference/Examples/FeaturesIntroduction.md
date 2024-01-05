@@ -130,7 +130,7 @@ To control the world generation pass at which a feature rule is applied, you can
 
 ### Example: birch_forest_surface_trees_feature
 
-```JSON
+```json
 {
   "format_version": "1.13.0",
   "minecraft:feature_rules": {
@@ -174,7 +174,7 @@ To control the world generation pass at which a feature rule is applied, you can
 
 ## Feature rule schema
 
-```JSON
+```json
 {
   version "format_version"
   object "minecraft:feature_rules"

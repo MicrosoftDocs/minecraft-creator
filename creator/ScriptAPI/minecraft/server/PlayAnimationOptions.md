@@ -40,6 +40,8 @@ Type: *string*
 ### **players**
 `players?: string[];`
 
+A list of players the animation will be visible to.
+
 Type: *string*[]
 
 ### **stopExpression**

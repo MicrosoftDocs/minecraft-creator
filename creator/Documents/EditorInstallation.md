@@ -73,7 +73,7 @@ Looks good? Great. Close Preview and move on to the next step.
 
 4. Click **Finish**. Your Editor shortcut has been created!
 
-You should see the shortcut created on your desktop and it should automatically have the Minecraft icon if you set it up correctly. If the icon does not populate, don’t worry.
+You should see the shortcut created on your desktop and it should automatically have the Minecraft icon if you set it up correctly. If the icon does not populate, don't worry.
 
 ![Image of the Minecraft Editor desktop shortcut](Media/Editor/editor_install_shortcut_icon.png)
 
@@ -88,11 +88,11 @@ Great job! You're ready to create a project!
 
 ## Troubleshooting
 
-### I can’t get into the Editor when I open Minecraft
+### I can't get into the Editor when I open Minecraft
 
 You can only access the Editor through the desktop shortcut and only if you have Preview installed. If you are attempting to access the Editor through Bedrock Preview or regular Minecraft directly, it will not work.
 
-### I added the desktop shortcut, but it won’t open the Editor. What’s going on?  
+### I added the desktop shortcut, but it won't open the Editor. What's going on?  
 
 Three things to check:  
 
@@ -100,7 +100,7 @@ Three things to check:
 
 - Did you install Bedrock Preview? If not, you need to do that. 
 
-- Do you have both Bedrock Preview and Bedrock (Retail) installed? You may have selected a checkbox that says “Always open" for Bedrock (Retail). To fix this, perform the following steps:
+- Do you have both Bedrock Preview and Bedrock (Retail) installed? You may have selected a checkbox that says "Always open" for Bedrock (Retail). To fix this, perform the following steps:
 
     1. Press **Windows + I** to open the Settings app.
 

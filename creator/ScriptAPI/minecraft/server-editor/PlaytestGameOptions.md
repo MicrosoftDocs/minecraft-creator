@@ -44,3 +44,8 @@ Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 `timeOfDay?: number;`
 
 Type: *number*
+
+### **weather**
+`weather?: number;`
+
+Type: *number*

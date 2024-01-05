@@ -21,7 +21,7 @@ Represents a Potion Brewing Mix.
 
 ## Potion Brewing Mix Example
 
-```JSON
+```json
 {
 "format_version": "1.18",
 "minecraft:recipe_brewing_mix": {
