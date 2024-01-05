@@ -204,6 +204,7 @@ Attempts to connect to the websocket server on the provided URL.
 - `xp`
 Adds or removes player experience.
 - `recipe`
+- `hud`
 - `volumearea`
 - `project`
 A particular command used for managing project settings when in Editor mode.

@@ -91,12 +91,23 @@ Identifier of the type of items for the stack. If a namespace is not specified, 
 Type: *string*
 
 ## Methods
-- [constructor](#constructor)
+- [constructor](#constructor)::: moniker range="=minecraft-bedrock-experimental"
+- [clearDynamicProperties](#cleardynamicproperties)
+::: moniker-end
 - [clone](#clone)
 - [getCanDestroy](#getcandestroy)
 - [getCanPlaceOn](#getcanplaceon)
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getDynamicProperty](#getdynamicproperty)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [getDynamicPropertyIds](#getdynamicpropertyids)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [getDynamicPropertyTotalByteCount](#getdynamicpropertytotalbytecount)
+::: moniker-end
 - [getLore](#getlore)
 - [getTags](#gettags)
 - [hasComponent](#hascomponent)
@@ -104,9 +115,13 @@ Type: *string*
 - [isStackableWith](#isstackablewith)
 - [setCanDestroy](#setcandestroy)
 - [setCanPlaceOn](#setcanplaceon)
+::: moniker range="=minecraft-bedrock-experimental"
+- [setDynamicProperty](#setdynamicproperty)
+::: moniker-end
 - [setLore](#setlore)
+::: moniker range="=minecraft-bedrock-experimental"
 - [triggerEvent](#triggerevent)
-
+::: moniker-end
 ### **constructor**
 `
 new ItemStack(itemType: ItemType | string, amount?: number)
@@ -128,6 +143,18 @@ Creates a new instance of a stack of items for use in the world.
 > This function can throw errors.
 >
 > Throws if `itemType` is invalid, or if `amount` is outside the range of 1-255.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **clearDynamicProperties**
+`
+clearDynamicProperties(): void
+`
+
+Clears all dynamic properties that have been set on this item stack.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **clone**
 `
@@ -193,6 +220,53 @@ getComponents(): ItemComponent[]
 Returns all components that are both present on this item stack and supported by the API.
 
 #### **Returns** [*ItemComponent*](ItemComponent.md)[]
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getDynamicProperty**
+`
+getDynamicProperty(identifier: string): boolean | number | string | Vector3 | undefined
+`
+
+Returns a property value.
+
+#### **Parameters**
+- **identifier**: *string*
+  
+  The property identifier.
+
+#### **Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getDynamicPropertyIds**
+`
+getDynamicPropertyIds(): string[]
+`
+
+Returns the available set of dynamic property identifiers that have been used on this entity.
+
+#### **Returns** *string*[] - A string array of the dynamic properties set on this entity.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getDynamicPropertyTotalByteCount**
+`
+getDynamicPropertyTotalByteCount(): number
+`
+
+Returns the total size, in bytes, of all the dynamic properties that are currently stored for this entity. This includes the size of both the key and the value.  This can be useful for diagnosing performance warning signs - if, for example, an entity has many megabytes of associated dynamic properties, it may be slow to load on various devices.
+
+#### **Returns** *number*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **getLore**
 `
@@ -309,6 +383,31 @@ The list of block types this item can be placed on in Adventure mode. This is on
 const specialGoldBlock = new ItemStack("minecraft:gold_block");
 specialPickaxe.setCanPlaceOn(["minecraft:grass", "minecraft:dirt"]);
 ```
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **setDynamicProperty**
+`
+setDynamicProperty(identifier: string, value?: boolean | number | string | Vector3): void
+`
+
+Sets a specified property to a value. Note: This function only works with non-stackable items.
+
+#### **Parameters**
+- **identifier**: *string*
+  
+  The property identifier.
+- **value**?: *boolean* | *number* | *string* | [*Vector3*](Vector3.md) = `null`
+  
+  Data value of the property to set.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws if the item stack is stackable.
+::: moniker-end
 
 ### **setLore**
 `

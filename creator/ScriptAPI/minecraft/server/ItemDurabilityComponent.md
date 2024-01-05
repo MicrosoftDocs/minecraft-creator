@@ -48,10 +48,12 @@ Type: *number*
 getDamageChance(unbreakingEnchantmentLevel?: number): number
 `
 
-Returns the maximum chance that this item would be damaged using the damageRange property, given an unbreaking level.
+Returns the maximum chance that this item would be damaged using the damageRange property, given an unbreaking enchantment level.
 
 #### **Parameters**
 - **unbreakingEnchantmentLevel**?: *number* = `0`
+  
+  Unbreaking factor to consider in factoring the damage chance. Incoming unbreaking parameter must be within the range [0, 3].
 
 #### **Returns** *number*
 
@@ -65,6 +67,8 @@ Returns the maximum chance that this item would be damaged using the damageRange
 `
 getDamageChanceRange(): minecraftcommon.NumberRange
 `
+
+A range of numbers that is used to calculate the damage chance for an item. The damage chance will fall within this range.
 
 #### **Returns** [*@minecraft/common.NumberRange*](../../minecraft/common/NumberRange.md)
 

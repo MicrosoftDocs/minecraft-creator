@@ -3,12 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/server.ItemComponent Class
-description: Contents of the @minecraft/server.ItemComponent class.
+title: minecraft/server-editor.UserDefinedTransactionHandlerId Class
+description: Contents of the @minecraft/server-editor.UserDefinedTransactionHandlerId class.
 ---
-# ItemComponent Class
-
-## Extends
-- [*Component*](Component.md)
-
-Base class for item components.
+# UserDefinedTransactionHandlerId Class

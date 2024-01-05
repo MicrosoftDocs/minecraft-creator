@@ -11,12 +11,6 @@ description: Contents of the @minecraft/server.EntityAttributeComponent class.
 ## Extends
 - [*EntityComponent*](EntityComponent.md)
 
-## Classes that extend EntityAttributeComponent
-- [*EntityHealthComponent*](EntityHealthComponent.md)
-- [*EntityLavaMovementComponent*](EntityLavaMovementComponent.md)
-- [*EntityMovementComponent*](EntityMovementComponent.md)
-- [*EntityUnderwaterMovementComponent*](EntityUnderwaterMovementComponent.md)
-
 This is a base abstract class for any entity component that centers around a number and can have a minimum, maximum, and default defined value.
 
 ## Properties

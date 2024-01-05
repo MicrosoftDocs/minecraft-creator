@@ -8,9 +8,13 @@ description: Contents of the @minecraft/server.PlayerLeaveBeforeEvent class.
 ---
 # PlayerLeaveBeforeEvent Class
 
+Contains information regarding a player that is leaving the world.
+
 ## Properties
 
 ### **player**
 `read-only player: Player;`
+
+The leaving player.
 
 Type: [*Player*](Player.md)

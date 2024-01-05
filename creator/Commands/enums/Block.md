@@ -2998,6 +2998,10 @@ Stained Glass Pane
 Planks
 - `minecraft:planks`
 Planks
+- `hard_stained_glass`
+- `minecraft:hard_stained_glass`
+- `hard_stained_glass_pane`
+- `minecraft:hard_stained_glass_pane`
 
 ## References
 The following commands reference this enum:

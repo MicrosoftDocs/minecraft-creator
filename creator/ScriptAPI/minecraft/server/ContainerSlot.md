@@ -41,7 +41,7 @@ Type: *boolean*
 > [!WARNING]
 > This property can throw errors when used.
 >
-> Throws if the slot's container is invalid.
+> Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
 ### **keepOnDeath**
 `keepOnDeath: boolean;`
@@ -83,7 +83,7 @@ Type: *number*
 > [!WARNING]
 > This property can throw errors when used.
 >
-> Throws if the slot's container is invalid.
+> Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
 ### **nameTag**
 `nameTag?: string;`
@@ -110,10 +110,10 @@ Type: [*ItemType*](ItemType.md)
 > [!WARNING]
 > This property can throw errors when used.
 >
-> Throws if the slot's container is invalid.
+> Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
 ### **typeId**
-`read-only typeId?: string;`
+`read-only typeId: string;`
 
 Identifier of the type of items for the stack. If a namespace is not specified, 'minecraft:' is assumed. Examples include 'wheat' or 'apple'.
 
@@ -122,19 +122,110 @@ Type: *string*
 > [!WARNING]
 > This property can throw errors when used.
 >
-> Throws if the slot's container is invalid.
+> Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
 ## Methods
+- [clearDynamicProperties](#cleardynamicproperties)
+- [getCanDestroy](#getcandestroy)
+- [getCanPlaceOn](#getcanplaceon)
+- [getDynamicProperty](#getdynamicproperty)
+- [getDynamicPropertyIds](#getdynamicpropertyids)
+- [getDynamicPropertyTotalByteCount](#getdynamicpropertytotalbytecount)
 - [getItem](#getitem)
 - [getLore](#getlore)
 - [getTags](#gettags)
+- [hasItem](#hasitem)
 - [hasTag](#hastag)
 - [isStackableWith](#isstackablewith)
 - [isValid](#isvalid)
 - [setCanDestroy](#setcandestroy)
 - [setCanPlaceOn](#setcanplaceon)
+- [setDynamicProperty](#setdynamicproperty)
 - [setItem](#setitem)
 - [setLore](#setlore)
+
+### **clearDynamicProperties**
+`
+clearDynamicProperties(): void
+`
+
+Clears all dynamic properties that have been set on this item stack.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
+
+### **getCanDestroy**
+`
+getCanDestroy(): string[]
+`
+
+#### **Returns** *string*[]
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
+
+### **getCanPlaceOn**
+`
+getCanPlaceOn(): string[]
+`
+
+#### **Returns** *string*[]
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
+
+### **getDynamicProperty**
+`
+getDynamicProperty(identifier: string): boolean | number | string | Vector3 | undefined
+`
+
+Returns a property value.
+
+#### **Parameters**
+- **identifier**: *string*
+  
+  The property identifier.
+
+#### **Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
+
+### **getDynamicPropertyIds**
+`
+getDynamicPropertyIds(): string[]
+`
+
+Returns the available set of dynamic property identifiers that have been used on this item stack.
+
+#### **Returns** *string*[] - A string array of the dynamic properties set on this entity.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
+
+### **getDynamicPropertyTotalByteCount**
+`
+getDynamicPropertyTotalByteCount(): number
+`
+
+Returns the total size, in bytes, of all the dynamic properties that are currently stored for this entity. This includes the size of both the key and the value.  This can be useful for diagnosing performance warning signs - if, for example, an entity has many megabytes of associated dynamic properties, it may be slow to load on various devices.
+
+#### **Returns** *number*
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
 ### **getItem**
 `
@@ -147,6 +238,8 @@ Creates an exact copy of the item stack, including any custom data or properties
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
 ### **getLore**
 `
@@ -160,7 +253,7 @@ Returns the lore value - a secondary display string - for an ItemStack.
 > [!WARNING]
 > This function can throw errors.
 >
-> Throws if the slot's container is invalid.
+> Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
 ### **getTags**
 `
@@ -173,6 +266,20 @@ Returns all tags for the item in the slot.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
+
+### **hasItem**
+`
+hasItem(): boolean
+`
+
+#### **Returns** *boolean*
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
 ### **hasTag**
 `
@@ -190,6 +297,8 @@ Returns whether the item in the slot slot has the given tag.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
 ### **isStackableWith**
 `
@@ -208,7 +317,7 @@ Returns whether this item stack can be stacked with the given `itemStack`. This 
 > [!WARNING]
 > This function can throw errors.
 >
-> Throws if the slot's container is invalid.
+> Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
 ### **isValid**
 `
@@ -237,7 +346,7 @@ The list of block types this item can break in Adventure mode. The block names a
 > [!WARNING]
 > This function can throw errors.
 >
-> Throws if the slot's container is invalid. Also throws if any of the provided block identifiers are invalid.
+> Throws *Error*, [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
 ### **setCanPlaceOn**
 `
@@ -257,7 +366,27 @@ The list of block types this item can be placed on in Adventure mode. This is on
 > [!WARNING]
 > This function can throw errors.
 >
-> Throws if the slot's container is invalid. Also throws if any of the provided block identifiers are invalid.
+> Throws *Error*, [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
+
+### **setDynamicProperty**
+`
+setDynamicProperty(identifier: string, value?: boolean | number | string | Vector3): void
+`
+
+Sets a specified property to a value.
+
+#### **Parameters**
+- **identifier**: *string*
+  
+  The property identifier.
+- **value**?: *boolean* | *number* | *string* | [*Vector3*](Vector3.md) = `null`
+  
+  Data value of the property to set.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws *Error*, [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
 ### **setItem**
 `
@@ -276,6 +405,8 @@ Sets the given ItemStack in the slot, replacing any existing item.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
 ### **setLore**
 `
@@ -295,4 +426,4 @@ Sets the lore value - a secondary display string - for an ItemStack.
 > [!WARNING]
 > This function can throw errors.
 >
-> Throws if the slot's container is invalid.
+> Throws *Error*, [*InvalidContainerSlotError*](InvalidContainerSlotError.md)

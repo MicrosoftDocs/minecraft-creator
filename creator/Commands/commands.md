@@ -33,6 +33,7 @@ description: List and descriptions of Minecraft commands and enums
 | [`/gametest`](./commands/gametest.md) | [Requires the Beta APIs experiment].  Configures various parameters for managing built-in or custom gametest framework tests. | Game Directors | Yes |
 | [`/give`](./commands/give.md) | Gives an item to a player. | Game Directors | Yes |
 | [`/help`](./commands/help.md) | Running &#x60;&#x2F;help&#x60; in the chat by itself will list every command you can run. However, since there are so many, they have been divided up into several pages, where you are shown only one page at a time. Supplying a page number will change which page of commands to show.Whenever you want to know the usage and all of the syntaxes of a command, you can use &#x2F;help followed by the name of the command. This can be helpful if you want an overview of the command.See more in the [Popular Commands documentation](https:&#x2F;&#x2F;learn.microsoft.com&#x2F;minecraft&#x2F;creator&#x2F;documents&#x2F;commandspopularcommands#help). | Any | No |
+| [`/hud`](./commands/hud.md) | Configures whether elements of the on-screen display (alternately known as the &#39;heads up display&#39;, or &#39;HUD&#39;) are visible on the screen. | Game Directors | Yes |
 | [`/inputpermission`](./commands/inputpermission.md) | Optionally enables or disables input permissions for a player. | Game Directors | Yes |
 | [`/kick`](./commands/kick.md) | Kicks a player from the server. | Game Directors | No |
 | [`/kill`](./commands/kill.md) | Kills entities like players and mobs. | Game Directors | Yes |

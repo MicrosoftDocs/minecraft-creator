@@ -33,7 +33,6 @@ Type: *IMenu[]*
 
 ## Methods
 - [addItem](#additem)
-- [addSeparator](#addseparator)
 - [dispose](#dispose)
 - [hide](#hide)
 - [replaceAction](#replaceaction)
@@ -53,15 +52,6 @@ Create a child menu on this menu.
 - **action**: *RegisteredAction<NoArgsAction>*
   
   The action to associate with the menu item. Only a subset of actions are supported
-
-#### **Returns** *IMenu*
-
-### **addSeparator**
-`
-addSeparator(): IMenu
-`
-
-Create a separator
 
 #### **Returns** *IMenu*
 

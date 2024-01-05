@@ -8,11 +8,6 @@ description: Contents of the @minecraft/server.Component class.
 ---
 # Component Class
 
-## Classes that extend Component
-- [*BlockComponent*](BlockComponent.md)
-- [*EntityComponent*](EntityComponent.md)
-- [*ItemComponent*](ItemComponent.md)
-
 Base class for downstream Component implementations.
 
 ## Properties

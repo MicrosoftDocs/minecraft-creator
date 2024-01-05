@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.ItemUseAfterEvent class.
 ---
 # ItemUseAfterEvent Class
 
-## Classes that extend ItemUseAfterEvent
-- [*ItemUseBeforeEvent*](ItemUseBeforeEvent.md)
-
 Contains information related to an item being used on a block. This event fires when an item used by a player successfully triggers an entity interaction.
 
 ## Properties

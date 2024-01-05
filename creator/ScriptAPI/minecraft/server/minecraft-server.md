@@ -29,6 +29,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - `1.3.0`
 - `1.2.0`
 - `1.1.0`
+- `1.0.0`
 - `0.1.0`
 
 ## Enumerations
@@ -98,6 +99,12 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ::: moniker-end
 
 ## Classes
+::: moniker range="=minecraft-bedrock-experimental"
+- [BiomeType](BiomeType.md)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [BiomeTypes](BiomeTypes.md)
+::: moniker-end
 - [Block](Block.md)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [BlockAreaSize](BlockAreaSize.md)
@@ -334,6 +341,9 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ::: moniker range="=minecraft-bedrock-experimental"
 - [EntityOnFireComponent](EntityOnFireComponent.md)
 ::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [EntityProjectileComponent](EntityProjectileComponent.md)
+::: moniker-end
 - [EntityPushThroughComponent](EntityPushThroughComponent.md)
 - [EntityRemoveAfterEvent](EntityRemoveAfterEvent.md)
 - [EntityRemoveAfterEventSignal](EntityRemoveAfterEventSignal.md)
@@ -542,6 +552,9 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ::: moniker-end
 
 ## Interfaces
+::: moniker range="=minecraft-bedrock-experimental"
+- [BiomeSearchOptions](BiomeSearchOptions.md)
+::: moniker-end
 - [BlockEventOptions](BlockEventOptions.md)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [BlockFillOptions](BlockFillOptions.md)
@@ -594,6 +607,9 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [PlayAnimationOptions](PlayAnimationOptions.md)
 ::: moniker-end
 - [PlayerSoundOptions](PlayerSoundOptions.md)
+::: moniker range="=minecraft-bedrock-experimental"
+- [ProjectileShootOptions](ProjectileShootOptions.md)
+::: moniker-end
 - [RawMessage](RawMessage.md)
 - [RawMessageScore](RawMessageScore.md)
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -619,6 +635,9 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [EnchantmentTypeUnknownIdError](EnchantmentTypeUnknownIdError.md)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [InvalidContainerSlotError](InvalidContainerSlotError.md)
 ::: moniker-end
 - [LocationInUnloadedChunkError](LocationInUnloadedChunkError.md)
 - [LocationOutOfWorldBoundariesError](LocationOutOfWorldBoundariesError.md)

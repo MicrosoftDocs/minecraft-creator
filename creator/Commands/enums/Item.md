@@ -2532,6 +2532,10 @@ Stained Glass Pane
 Planks
 - `minecraft:planks`
 Planks
+- `hard_stained_glass`
+- `minecraft:hard_stained_glass`
+- `hard_stained_glass_pane`
+- `minecraft:hard_stained_glass_pane`
 - `minecraft:chicken`
 Chicken
 - `chicken`
@@ -3096,6 +3100,8 @@ Ravager Spawn Egg
 - `sniffer_spawn_egg`
 - `minecraft:breeze_spawn_egg`
 - `breeze_spawn_egg`
+- `minecraft:armadillo_spawn_egg`
+- `armadillo_spawn_egg`
 - `minecraft:chorus_fruit`
 Chorus Fruit
 - `chorus_fruit`
@@ -3456,6 +3462,8 @@ Golden Horse Armor
 Diamond Horse Armor
 - `diamond_horse_armor`
 Diamond Horse Armor
+- `minecraft:wolf_armor`
+- `wolf_armor`
 - `minecraft:trident`
 Trident
 - `trident`
@@ -3748,10 +3756,10 @@ Nautilus Shell
 Heart of the Sea
 - `heart_of_the_sea`
 Heart of the Sea
-- `minecraft:scute`
-Scute
-- `scute`
-Scute
+- `minecraft:turtle_scute`
+- `turtle_scute`
+- `minecraft:armadillo_scute`
+- `armadillo_scute`
 - `minecraft:phantom_membrane`
 Phantom Membrane
 - `phantom_membrane`
@@ -4171,6 +4179,8 @@ Horse Armor Gold
 Horse Armor Diamond
 - `turtle_shell_piece`
 Turtle Shell Piece
+- `scute`
+Scute
 - `totem`
 Totem
 - `lodestonecompass`

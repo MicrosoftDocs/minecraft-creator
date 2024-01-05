@@ -36,6 +36,9 @@ Type: *string*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [fillBlocks](#fillblocks)
 ::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [findClosestBiome](#findclosestbiome)
+::: moniker-end
 - [getBlock](#getblock)
 - [getBlockFromRay](#getblockfromray)
 - [getEntities](#getentities)
@@ -153,6 +156,39 @@ Fills an area between begin and end with block of type block.
 
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **findClosestBiome**
+`
+findClosestBiome(pos: Vector3, biomeToFind: BiomeType | string, options?: BiomeSearchOptions): Vector3 | undefined
+`
+
+Finds the location of the closest biome of a particular type. Note that the findClosestBiome operation can take some time to complete, so avoid using many of these calls within a particular tick.
+
+#### **Parameters**
+- **pos**: [*Vector3*](Vector3.md)
+  
+  Starting location to look for a biome to find.
+- **biomeToFind**: [*BiomeType*](BiomeType.md) | *string*
+  
+  Identifier of the biome to look for.
+- **options**?: [*BiomeSearchOptions*](BiomeSearchOptions.md) = `null`
+  
+  Additional selection criteria for a biome search.
+
+#### **Returns** [*Vector3*](Vector3.md) | *undefined* - Returns a location of the biome, or undefined if a biome could not be found.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*
 ::: moniker-end
 
 ### **getBlock**

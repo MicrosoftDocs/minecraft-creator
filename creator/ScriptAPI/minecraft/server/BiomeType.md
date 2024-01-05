@@ -3,35 +3,22 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/server.Trigger Class
-description: Contents of the @minecraft/server.Trigger class.
+title: minecraft/server.BiomeType Class
+description: Contents of the @minecraft/server.BiomeType class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# Trigger Class
+# BiomeType Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Represents a trigger for firing an event.
+Describes a type of biome.
 
 ## Properties
 
-### **eventName**
-`eventName: string;`
+### **id**
+`read-only id: string;`
 
-Event name of the trigger.
+Identifier of the biome type.
 
 Type: *string*
-
-## Methods
-- [constructor](#constructor)### **constructor**
-`
-new Trigger(eventName: string)
-`
-
-Creates a new trigger.
-
-#### **Parameters**
-- **eventName**: *string*
-
-#### **Returns** [*Trigger*](Trigger.md)
