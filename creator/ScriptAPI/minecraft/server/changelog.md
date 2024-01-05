@@ -17,8 +17,11 @@ description: Changelog of the `@minecraft/server` module
 - [1.3.0](#130)
 - [1.2.0](#120)
 - [1.1.0](#110)
+- [1.0.0](#100)
 
 ## 1.9.0-beta
+#### Added *[`BiomeType`](BiomeType.md)*
+#### Added *[`BiomeTypes`](BiomeTypes.md)*
 #### Changed *[`Block`](Block.md)*
 - Added property *[`isSolid`](Block.md#issolid)*
 - Added property *[`isWaterlogged`](Block.md#iswaterlogged)*
@@ -32,7 +35,9 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`getRedstonePower`](Block.md#getredstonepower)*
 - Added function *[`getTags`](Block.md#gettags)*
 - Added function *[`hasTag`](Block.md#hastag)*
+- Added function *[`matches`](Block.md#matches)*
 - Added function *[`setType`](Block.md#settype)*
+- Added function *[`setWaterlogged`](Block.md#setwaterlogged)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockAreaSize`](BlockAreaSize.md)*
 #### Added *[`BlockExplodeAfterEvent`](BlockExplodeAfterEvent.md)*
@@ -76,6 +81,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`Dimension`](Dimension.md)*
 - Added function *[`createExplosion`](Dimension.md#createexplosion)*
 - Added function *[`fillBlocks`](Dimension.md#fillblocks)*
+- Added function *[`findClosestBiome`](Dimension.md#findclosestbiome)*
 - Added function *[`getWeather`](Dimension.md#getweather)*
 #### Added *[`DimensionType`](DimensionType.md)*
 #### Added *[`DimensionTypes`](DimensionTypes.md)*
@@ -90,6 +96,8 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`fallDistance`](Entity.md#falldistance)*
 - Added property *[`lifetimeState`](Entity.md#lifetimestate)*
 - Added property *[`target`](Entity.md#target)*
+- Changed function *[`addEffect`](Entity.md#addeffect)*
+  - Changed return type from *void* (throws exceptions) to [*Effect*](Effect.md) (throws exceptions)
 - Added function *[`extinguishFire`](Entity.md#extinguishfire)*
 - Changed function *[`getComponent`](Entity.md#getcomponent)*
   - Changed return type from [*EntityComponent*](EntityComponent.md) to *EntityComponentTypeMap[T] | undefined*
@@ -122,6 +130,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`EntityNavigationWalkComponent`](EntityNavigationWalkComponent.md)*
 #### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
 #### Added *[`EntityOnFireComponent`](EntityOnFireComponent.md)*
+#### Added *[`EntityProjectileComponent`](EntityProjectileComponent.md)*
 #### Added *[`EntityRideableComponent`](EntityRideableComponent.md)*
 #### Added *[`EntityRidingComponent`](EntityRidingComponent.md)*
 #### Added *[`EntityStrengthComponent`](EntityStrengthComponent.md)*
@@ -141,9 +150,14 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`ItemEnchantableComponent`](ItemEnchantableComponent.md)*
 #### Added *[`ItemFoodComponent`](ItemFoodComponent.md)*
 #### Changed *[`ItemStack`](ItemStack.md)*
+- Added function *[`clearDynamicProperties`](ItemStack.md#cleardynamicproperties)*
 - Changed function *[`getComponent`](ItemStack.md#getcomponent)*
   - Changed return type from [*ItemComponent*](ItemComponent.md) to *ItemComponentTypeMap[T] | undefined*
   - Changed argument `componentId` type from *string* to *T*
+- Added function *[`getDynamicProperty`](ItemStack.md#getdynamicproperty)*
+- Added function *[`getDynamicPropertyIds`](ItemStack.md#getdynamicpropertyids)*
+- Added function *[`getDynamicPropertyTotalByteCount`](ItemStack.md#getdynamicpropertytotalbytecount)*
+- Added function *[`setDynamicProperty`](ItemStack.md#setdynamicproperty)*
 - Added function *[`triggerEvent`](ItemStack.md#triggerevent)*
 #### Added *[`ItemTypes`](ItemTypes.md)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
@@ -168,6 +182,8 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
 #### Changed *[`System`](System.md)*
 - Added property *[`beforeEvents`](System.md#beforeevents)*
+- Added function *[`clearJob`](System.md#clearjob)*
+- Added function *[`runJob`](System.md#runjob)*
 #### Added *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
 #### Added *[`Trigger`](Trigger.md)*
 #### Added *[`Vector`](Vector.md)*
@@ -216,6 +232,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
 #### Added constant `TicksPerDay`
 ## 1.7.0
+#### Changed version for module dependency `@minecraft/common` from `1.0.0` to `1.1.0`
 #### Changed *[`Block`](Block.md)*
 - Added function *[`above`](Block.md#above)*
 - Added function *[`below`](Block.md#below)*
@@ -235,8 +252,6 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`getDynamicPropertyTotalByteCount`](Entity.md#getdynamicpropertytotalbytecount)*
 - Added function *[`matches`](Entity.md#matches)*
 - Added function *[`remove`](Entity.md#remove)*
-- Changed function *[`resetProperty`](Entity.md#resetproperty)*
-  - Changed return type from *boolean* | *number* | *string* (throws exceptions) to *boolean* | *number* | *string* (throws exceptions)
 - Added function *[`setDynamicProperty`](Entity.md#setdynamicproperty)*
 #### Added *[`ExplosionAfterEvent`](ExplosionAfterEvent.md)*
 #### Added *[`ExplosionAfterEventSignal`](ExplosionAfterEventSignal.md)*
@@ -579,4 +594,30 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`EntityDamageCause`](EntityDamageCause.md)
 #### Added enum [`ItemLockMode`](ItemLockMode.md)
 ## 1.1.0
+#### Added *[`Block`](Block.md)*
+#### Added *[`BlockPermutation`](BlockPermutation.md)*
+#### Changed *[`Dimension`](Dimension.md)*
+- Added function *[`getBlock`](Dimension.md#getblock)*
+- Added function *[`getEntities`](Dimension.md#getentities)*
+- Added function *[`getEntitiesAtBlockLocation`](Dimension.md#getentitiesatblocklocation)*
+- Added function *[`getPlayers`](Dimension.md#getplayers)*
+#### Changed *[`Entity`](Entity.md)*
+- Added property *[`dimension`](Entity.md#dimension)*
+- Added property *[`location`](Entity.md#location)*
+- Added property *[`nameTag`](Entity.md#nametag)*
+- Added function *[`getHeadLocation`](Entity.md#getheadlocation)*
+- Added function *[`getVelocity`](Entity.md#getvelocity)*
+- Added function *[`getViewDirection`](Entity.md#getviewdirection)*
+#### Changed *[`Player`](Player.md)*
+- Added function *[`sendMessage`](Player.md#sendmessage)*
+#### Changed *[`System`](System.md)*
+- Added property *[`currentTick`](System.md#currenttick)*
+- Added function *[`clearRun`](System.md#clearrun)*
+- Added function *[`runInterval`](System.md#runinterval)*
+- Added function *[`runTimeout`](System.md#runtimeout)*
+#### Changed *[`World`](World.md)*
+- Added function *[`getPlayers`](World.md#getplayers)*
+- Added function *[`sendMessage`](World.md#sendmessage)*
+#### Added enum [`GameMode`](GameMode.md)
+## 1.0.0
 #### Added `@minecraft/server` Module

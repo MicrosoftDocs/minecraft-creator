@@ -11,9 +11,6 @@ description: Contents of the @minecraft/server.Player class.
 ## Extends
 - [*Entity*](Entity.md)
 
-## Classes that extend Player
-- [*@minecraft/server-gametest.SimulatedPlayer*](../../minecraft/server-gametest/SimulatedPlayer.md)
-
 Represents a player within the world.
 
 ## Properties
@@ -219,8 +216,12 @@ Adds/removes level to/from the Player and returns the current level of the Playe
 eatItem(itemStack: ItemStack): void
 `
 
+Eats an item, providing the item's hunger and saturation effects to the player. Can only be used on food items.
+
 #### **Parameters**
 - **itemStack**: [*ItemStack*](ItemStack.md)
+  
+  The item to eat.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -230,6 +231,8 @@ eatItem(itemStack: ItemStack): void
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws if the item is not a food item.
 ::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"

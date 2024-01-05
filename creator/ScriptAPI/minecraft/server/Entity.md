@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.Entity class.
 ---
 # Entity Class
 
-## Classes that extend Entity
-- [*Player*](Player.md)
-
 Represents the state of an entity (a mob, the player, or other moving objects like minecarts) in the world.
 
 ## Properties
@@ -80,7 +77,7 @@ Type: *boolean*
 ### **isOnGround**
 `read-only isOnGround: boolean;`
 
-Whether the entity is on top of a solid block.
+Whether the entity is on top of a solid block. This property may behave in unexpected ways. This property will always be true when an Entity is first spawned, and if the Entity has no gravity this property may be incorrect.
 
 Type: *boolean*
 
@@ -242,7 +239,7 @@ Type: *string*
 
 ### **addEffect**
 `
-addEffect(effectType: EffectType | string, duration: number, options?: EntityEffectOptions): void
+addEffect(effectType: EffectType | string, duration: number, options?: EntityEffectOptions): Effect | undefined
 `
 
 Adds or updates an effect, like poison, to the entity.
@@ -257,6 +254,8 @@ Adds or updates an effect, like poison, to the entity.
 - **options**?: [*EntityEffectOptions*](EntityEffectOptions.md) = `null`
   
   Additional options for the effect.
+
+#### **Returns** [*Effect*](Effect.md) | *undefined* - Returns nothing if the effect was added or updated successfully. This can throw an error if the duration or amplifier are outside of the valid ranges, or if the effect does not exist.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -498,7 +497,7 @@ extinguishFire(useEffects?: boolean): boolean
 Extinguishes the fire if the entity is on fire. Note that you can call getComponent('minecraft:onfire') and, if present, the entity is on fire.
 
 #### **Parameters**
-- **useEffects**?: *boolean* = `null`
+- **useEffects**?: *boolean* = `true`
   
   Whether to show any visual effects connected to the extinguishing.
 
@@ -617,7 +616,7 @@ Returns the available set of dynamic property identifiers that have been used on
 getDynamicPropertyTotalByteCount(): number
 `
 
-Returns the total size, in bytes, of all the dynamic properties that are currently stored for this entity.  This can be useful for diagnosing performance warning signs - if, for example, an entity has many megabytes of associated dynamic properties, it may be slow to load on various devices.
+Returns the total size, in bytes, of all the dynamic properties that are currently stored for this entity. This includes the size of both the key and the value.  This can be useful for diagnosing performance warning signs - if, for example, an entity has many megabytes of associated dynamic properties, it may be slow to load on various devices.
 
 #### **Returns** *number*
 
@@ -718,7 +717,9 @@ Returns the current rotation component of this entity.
 getTags(): string[]
 `
 
-#### **Returns** *string*[] - Returns all tags associated with an entity.
+Returns all tags associated with the entity.
+
+#### **Returns** *string*[] - An array containing all tags as strings.
 
 > [!WARNING]
 > This function can throw errors.
@@ -844,13 +845,15 @@ Matches the entity against the passed in options. Uses the location of the entit
 
 #### **Parameters**
 - **options**: [*EntityQueryOptions*](EntityQueryOptions.md)
+  
+  The query to perform the match against.
 
 #### **Returns** *boolean* - Returns true if the entity matches the criteria in the passed in EntityQueryOptions, otherwise it returns false.
 
 > [!WARNING]
 > This function can throw errors.
 >
-> Returns true if this entity matches the specified query criteria.
+> Throws if the query options are misconfigured.
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **playAnimation**
@@ -1022,7 +1025,7 @@ Sets an entity on fire (if it is not in water or rain). Note that you can call g
 - **seconds**: *number*
   
   Length of time to set the entity on fire.
-- **useEffects**?: *boolean* = `null`
+- **useEffects**?: *boolean* = `true`
   
   Whether side-effects should be applied (e.g. thawing freeze) and other conditions such as rain or fire protection should be taken into consideration.
 

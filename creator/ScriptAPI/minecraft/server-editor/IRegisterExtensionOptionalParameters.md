@@ -25,3 +25,10 @@ Type: *string*
 Additional notes and description of the extension.
 
 Type: *string*
+
+### **toolGroupId**
+`toolGroupId: string;`
+
+An optional custom group identifier that will be used for all Modal Tools created from the registered extension.
+
+Type: *string*

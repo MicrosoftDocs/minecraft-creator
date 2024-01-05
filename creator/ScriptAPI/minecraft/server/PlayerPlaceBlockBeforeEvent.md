@@ -43,6 +43,8 @@ Type: [*Vector3*](Vector3.md)
 ### **permutationBeingPlaced**
 `read-only permutationBeingPlaced: BlockPermutation;`
 
+The block permutation that is being placed.
+
 Type: [*BlockPermutation*](BlockPermutation.md)
 
 ### **player**

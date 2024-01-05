@@ -8,6 +8,8 @@ description: Contents of the @minecraft/server.PlayerLeaveBeforeEventSignal clas
 ---
 # PlayerLeaveBeforeEventSignal Class
 
+Manages callbacks that are connected to a player leaving the world.
+
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -16,6 +18,8 @@ description: Contents of the @minecraft/server.PlayerLeaveBeforeEventSignal clas
 `
 subscribe(callback: (arg: PlayerLeaveBeforeEvent) => void): (arg: PlayerLeaveBeforeEvent) => void
 `
+
+Adds a callback that will be called when a player leaves the world.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerLeaveBeforeEvent*](PlayerLeaveBeforeEvent.md)) => *void*
@@ -29,6 +33,8 @@ subscribe(callback: (arg: PlayerLeaveBeforeEvent) => void): (arg: PlayerLeaveBef
 `
 unsubscribe(callback: (arg: PlayerLeaveBeforeEvent) => void): void
 `
+
+Removes a callback that will be called when a player leaves the world.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerLeaveBeforeEvent*](PlayerLeaveBeforeEvent.md)) => *void*

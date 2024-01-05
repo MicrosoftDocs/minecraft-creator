@@ -64,6 +64,8 @@ Cow
 Sheep
 - `sheep`
 Sheep
+- `minecraft:armadillo`
+- `armadillo`
 - `minecraft:wolf`
 Wolf
 - `wolf`

@@ -150,6 +150,10 @@
         href: minecraft/server/WatchdogTerminateReason.md
       - name: WeatherType
         href: minecraft/server/WeatherType.md
+      - name: BiomeType
+        href: minecraft/server/BiomeType.md
+      - name: BiomeTypes
+        href: minecraft/server/BiomeTypes.md
       - name: Block
         href: minecraft/server/Block.md
       - name: BlockAreaSize
@@ -394,6 +398,8 @@
         href: minecraft/server/EntityNpcComponent.md
       - name: EntityOnFireComponent
         href: minecraft/server/EntityOnFireComponent.md
+      - name: EntityProjectileComponent
+        href: minecraft/server/EntityProjectileComponent.md
       - name: EntityPushThroughComponent
         href: minecraft/server/EntityPushThroughComponent.md
       - name: EntityRemoveAfterEvent
@@ -662,6 +668,8 @@
         href: minecraft/server/WorldInitializeAfterEvent.md
       - name: WorldInitializeAfterEventSignal
         href: minecraft/server/WorldInitializeAfterEventSignal.md
+      - name: BiomeSearchOptions
+        href: minecraft/server/BiomeSearchOptions.md
       - name: BlockEventOptions
         href: minecraft/server/BlockEventOptions.md
       - name: BlockFillOptions
@@ -730,6 +738,8 @@
         href: minecraft/server/PlayAnimationOptions.md
       - name: PlayerSoundOptions
         href: minecraft/server/PlayerSoundOptions.md
+      - name: ProjectileShootOptions
+        href: minecraft/server/ProjectileShootOptions.md
       - name: RawMessage
         href: minecraft/server/RawMessage.md
       - name: RawMessageScore
@@ -834,6 +844,10 @@
         href: minecraft/server-editor/SimulationState.md
       - name: TransactionManager
         href: minecraft/server-editor/TransactionManager.md
+      - name: UserDefinedTransactionHandle
+        href: minecraft/server-editor/UserDefinedTransactionHandle.md
+      - name: UserDefinedTransactionHandlerId
+        href: minecraft/server-editor/UserDefinedTransactionHandlerId.md
       - name: ClipboardWriteOptions
         href: minecraft/server-editor/ClipboardWriteOptions.md
       - name: CursorProperties
@@ -872,10 +886,10 @@
         href: minecraft/server-editor/IPropertyItem.md
       - name: IPropertyItemOptions
         href: minecraft/server-editor/IPropertyItemOptions.md
-      - name: IPropertyItemOptionsBlocks
-        href: minecraft/server-editor/IPropertyItemOptionsBlocks.md
       - name: IPropertyItemOptionsButton
         href: minecraft/server-editor/IPropertyItemOptionsButton.md
+      - name: IPropertyItemOptionsDataPicker
+        href: minecraft/server-editor/IPropertyItemOptionsDataPicker.md
       - name: IPropertyItemOptionsDropdown
         href: minecraft/server-editor/IPropertyItemOptionsDropdown.md
       - name: IPropertyItemOptionsNumber

@@ -8,11 +8,6 @@ description: Contents of the @minecraft/server-ui.FormResponse class.
 ---
 # FormResponse Class
 
-## Classes that extend FormResponse
-- [*ActionFormResponse*](ActionFormResponse.md)
-- [*MessageFormResponse*](MessageFormResponse.md)
-- [*ModalFormResponse*](ModalFormResponse.md)
-
 Base type for a form response.
 
 ## Properties
