@@ -87,7 +87,7 @@ Runs a specified function at a future time. This is frequently used to implement
 #### **Parameters**
 - **callback**: () => *void*
   
-  Function callback to run when the tickDelay time criteria is met.
+  Function callback to run at the next game tick.
 
 #### **Returns** *number* - An opaque identifier that can be used with the `clearRun` function to cancel the execution of this run.
 
@@ -96,15 +96,17 @@ Runs a specified function at a future time. This is frequently used to implement
 ```typescript
   const overworld = mc.world.getDimension("overworld");
 
-  try {
-    // Minecraft runs at 20 ticks per second.
-    if (mc.system.currentTick % 1200 === 0) {
-      mc.world.sendMessage("Another minute passes...");
+  function trapTick() {
+    try {
+      // Minecraft runs at 20 ticks per second.
+      if (mc.system.currentTick % 1200 === 0) {
+        mc.world.sendMessage("Another minute passes...");
+      }
+    } catch (e) {
+      console.warn("Error: " + e);
     }
-  } catch (e) {
-    console.warn("Error: " + e);
+    mc.system.run(trapTick);
   }
-
   mc.system.run(trapTick);
 ```
 
