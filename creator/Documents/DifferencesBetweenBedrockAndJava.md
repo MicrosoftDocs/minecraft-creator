@@ -49,6 +49,8 @@ Bedrock Edition's equivalent to Java's data packs are called behavior packs. Aga
 
 One major difference that tends to be overlooked is the choice of input devices players on different versions prefer. For Java Edition, you can be reasonably sure your player is using a keyboard and mouse; on Bedrock Edition, more than likely your player is using console controls, with touch being a close second, and keyboard and mouse a distant third.
 
+**Considerations**
+
 That means when designing experiences in Bedrock Edition, you should be aware of the different types of input players will be using. Also, keep in mind *how* your players are playing. While "spam clicking" might be fine for players using a mouse or even a typical controller, it would provide a poor experience for touch players. Keyboard players with a bow might have perfect aim, but it's a lot more difficult for players using a controller or touch controls. Complex parkour might even be almost unplayable on a mobile device.
 
 ### Considerations
