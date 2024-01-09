@@ -26,6 +26,11 @@
         "redirect_document_id": false
     },
     {
+      "source_path": "minecraft/creator/Reference/Content/BlockReference/Examples/BlockEvents/minecraftBlock_queue_command.md",
+      "redirect_url": "/minecraft/creator/Reference/Content/BlockReference/Examples/BlockEvents/minecraftBlock_run_command.md",
+      "redirect_document_id": false
+    },
+    {
         "source_path": "minecraft/creator/Reference/Content/ItemReference/Examples/ItemComponents/menu_category_component.md",
         "redirect_url": "/minecraft/creator/Reference/Content/ItemReference/Examples/ItemComponentList.md",
         "redirect_document_id": false
