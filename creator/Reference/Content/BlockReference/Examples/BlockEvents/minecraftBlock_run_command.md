@@ -1,5 +1,5 @@
 ---
-author: mammerla
+author: JimSeaman42
 ms.author: mikeam
 title: Block Documentation - run_command
 description: "A reference document detailing the 'run_command' block event response"
@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Block Documentation - run_command
 
-`run_command` is an Event Response that will trigger a slash command or a series of slash commands set in an array.
+`run_command` is an event response that will trigger a slash command or a series of slash commands set in an array.
 
 ## Extra Parameters
 

@@ -36,6 +36,8 @@
               href: Documents/WorldHeightChange.md    
     - name: Creations
       items:
+        - name: Creations Hub
+          href: Documents/CreationHub.md
         - name: Create an In-World Game with Commands
           href: Documents/CreateAnInWorldGame.md
         - name: 'Create Custom Grass Blocks: An Introduction to Resource Packs'
