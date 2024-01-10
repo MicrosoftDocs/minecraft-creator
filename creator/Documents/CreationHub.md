@@ -14,15 +14,15 @@ Such an important aspect requires some guidance, which is where this page comes 
 
 Here are some articles you should check out to assist in your creator journey... rest assured, there's information in these articles for creators of all levels, but in the nature of the game, we're going to sort things by difficulty level.
 
-## Easy
+## Basic
 
-Let's not get things twisted here: 'easy' in this context is relative, and while these creations aren't as robust is what we'll be looking at later, they cover some integral content such as behavior packs, resource packs, and commands.
+Let's not get things twisted here: 'basic' in this context is relative, and while these creations aren't as robust is what we'll be looking at later, they cover some integral technical content such as behavior packs, resource packs, and commands.
 
 - [Create an In-World Game with Commands](CreateAnInWorldGame.md)
 - [Create Custom Grass Blocks: An Introduction to Resource Packs](ResourcePack.md)
 - [Create an Angry Cow: An Introduction to Behavior Packs](BehaviorPack.md)
 
-## Normal
+## Intermediate
 
 You've mastered the basics, and now it's time to move to the next level. These creations are slightly more complex, but will allow you to create more of a personalized experience for your players.
 
@@ -30,9 +30,9 @@ You've mastered the basics, and now it's time to move to the next level. These c
 - [Creating a Goblin Chef Entity](MakerSeriesMakingTheGoblinChef.md)
 - [Creating and Adding Custom Sounds](AddCustomSounds.md)
 
-## Hard
+## Advanced
 
-Now that you've gone through the normal-level creations, you've come to the top of the mountain. These are the advanced-level tutorials and we're not going to lie, they can get complex. However, by mastering these creations you will bring yourself that much closer to making your wildest dreams into reality. 
+Now that you've pushed through both the basic and intermediate creations, you've come to the top of the mountain. These are the advanced-level tutorials and we're not going to lie, they can get complex. However, by mastering these creations you will bring yourself that much closer to making your wildest dreams into reality.
 
 - [Introduction to Loot Tables](IntroductionToLootTables.md)
 - [Loot and Trade Table Functions](LootAndTradeTableFunctions.md)
