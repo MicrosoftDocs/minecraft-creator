@@ -8,3 +8,5 @@
    href: minecraftEvents_entity_transformed.md
  - name: on_prime
    href: minecraftEvents_on_prime.md
+ - name: queue_command
+   href: minecraftEvents_queue_command.md
