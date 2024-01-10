@@ -1,14 +1,14 @@
 ---
 author: JimSeaman42
 ms.author: mikeam
-title: Block Documentation - queue_command
-description: "A reference document detailing the 'queue_command' block event response"
+title: Entity Documentation - queue_command
+description: "A reference document detailing the 'queue_command' entity event"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Block Documentation - queue_command
+# Entity Documentation - queue_command
 
-`queue_command` is an event response that will queue a slash command or a series of slash commands set in an array to trigger at the end of the tick.
+`queue_command` will queue a slash command or a series of slash commands set in an array to trigger at the end of the tick.
 
 Due to being queued as opposed to triggering instantly, any immediate side-effects of the command may not be observable by other molang queries, commands, or scripts until later in the tick.
 
