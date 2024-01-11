@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Create an Animated Block Texture
 
-In this tutorial, you will learn how to create custom block texture animations by editing files in a resource pack. You do not need any third-party animation applications.
+In this tutorial, you will learn how to create custom block texture animations using a resource pack. You do not need any third-party animation applications.
 
 ### Prerequisites
 
@@ -189,51 +189,55 @@ Now that the canvas can accommodate a total of 6 frames, add 5 more frames worth
 
 ![Image of the texture file for lapis lazuli ore that has been edited for animation.](Media/CreateAnimatedBlockTexture/lapis_ore_EDITED.png)
 
-Put the edited graphic file in the **textures/blocks** folder of your animation pack, make sure the name is **`lapis_ore.png`** and not **lapis_ore_EDITED.png**, and now you're ready to go take a look at your aninmated block in Minecraft.
+Put the edited graphic file in the **textures/blocks** folder of your animation pack, make sure the name is changed from **`lapis_ore_EDITED.png`** to **`lapis_ore.png`**, and you're ready to go take a look at your aninmated block in Minecraft.
 
 ![Image of a Minecraft world with an animated block of lapis_ore placed on the ground.](Media/CreateAnimatedBlockTexture/placed_animated_lapis_ore.png)
 
-
-
-## Custom Die Block - Animated!
+## Custom Die Block - Animated
 
 After completing the [Advanced Custom Blocks tutorial](AdvancedCustomBlocks.md) you will have a red block in your hotbar and hand that, when placed, looks like a die block.
-
-// TODO: Put image of un-animated die block
 
 In this next example, we are going to animate the block in the player's hand to scroll through the pattern of dots.
 
 Due to how textures are mapped onto blocks in the hotbar, all three visible sides of the die block will have the same pattern as the numbers shift from one through six.
 
-You can download the completed sample [Custom Die block resource pack and behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/custom_blocks).
+You can download the completed sample [Custom Die block resource pack and behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/custom_blocks). You will need both the behavior pack and the resource pack for it to work.
 
+Inside the **resource** pack, inside the **textures** folder, add a **flipbook_texture.json** file and put this code in there:
 
 ```json
 [
   {
     "flipbook_texture": "textures/blocks/die_red",
     "atlas_tile": "die_red",
-    "frames": [ 0, 1, 2, 3 ],
+    "frames": [ 0, 1, 2, 3, 4, 5 ],
     "ticks_per_frame": 20,
     "blend_frames": false
   }
 ]
 ```
 
+Then, replace the **`die_red.png`** graphic in the textures/blocks folder with this one:
+
+![Image of graphic composed of six frames that look like the dot pattern of a die.](Media/CreateAnimatedBlockTexture/die_red.png)
+
+In a creative world with the behavior pack and resource pack activated, give yourself a **demo:die** and notice that the red block is now animated.
+
+![Image of a Minecraft word showing 3 die blocks: one in the hotbar, one in the player's hand, and one placed on the ground. All 3 die blocks have a 4-dot pattern showing on all visible sides.](Media/CreateAnimatedBlockTexture/placed_animated_die_block.png)
 
 ## A multi-faceted Animation: the Command Block
 
 For the purpose of this discussion, we are talking only about the basic "vanilla" command black, not the ones with **conditional** or **chain** or **mipmap** in their names. They are all animated the same way. I'm mentioning this so that if you go digging for the code in the **flipbook_textures.json** file or for the graphics in the blocks folder of the vanilla sample pack, you'll know to look for the ones whose names match the names on the `"flipbook_texture":` line of the code.
 
-If you take a really close look at a command block, you'll notice that the front, back, and sides of the block have different shapes with animated blinking dots on them. This is all done with three graphics and 
+If you take a really close look at a command block, you'll notice that the front, back, and sides of the block have different shapes with animated blinking dots on them.
 
-The front of the block has the circle shape:
+The front of the block has the circle shape and the four sides have an arrow shape::
 ![Image showing the front of a placed command block ](Media/CreateAnimatedBlockTexture/placed_command_block_front.png)
 
 The back of the block has the square shape:
 ![Image showing the back of a placed command block](Media/CreateAnimatedBlockTexture/placed_command_block_back.png)
 
-The frames are mapped on there with this code:
+The frames are mapped onto the command block with this code:
 
 ```json
 {
@@ -253,7 +257,7 @@ The frames are mapped on there with this code:
 }
 ```
 
-Here are the graphics. If you want to download them from here rather than going to the bedrock sample folder:
+Here are some edited command block texture graphics.
 
 **command_block_front**
 
@@ -267,16 +271,8 @@ Here are the graphics. If you want to download them from here rather than going 
 
 ![Image of the 4-frame graphic used to animate the side of a command block, showing an arrow-like shape with dots](Media/CreateAnimatedBlockTexture/command_block_side.png)
 
+This is the final result:
 
-// TODO write up how to edit the 3 graphics and then look at them
-
-
-
-## A Block with Each of the 6 Sides Animated Differently
-
-// NOTE: place the block on glass to see the underside
-
-Front, back, north, east, south, west
-
+![Image of a Minecraft world with 2 command blocks with edited textures on the front, back, and sides. The front has a pink square that moves around, the back has a blue square that moves around, and the sides have a green square that moves around.](Media/CreateAnimatedBlockTexture/placed_edited_command_blocks.png)
 
 
