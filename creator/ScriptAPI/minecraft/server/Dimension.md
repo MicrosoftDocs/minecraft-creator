@@ -581,7 +581,7 @@ Creates a new particle emitter at a specified location in the world.
   for (let i = 0; i < 100; i++) {
     const molang = new mc.MolangVariableMap();
 
-    molang.setColorRGB("variable.color", { red: Math.random(), green: Math.random(), blue: Math.random(), alpha: 1 });
+    molang.setColorRGBA("variable.color", { red: Math.random(), green: Math.random(), blue: Math.random(), alpha: 1 });
 
     let newLocation = {
       x: targetLocation.x + Math.floor(Math.random() * 8) - 4,
