@@ -10,12 +10,22 @@ ms.service: minecraft-bedrock-edition
 
 In this tutorial, you will learn how to create custom block texture animations using a resource pack. You do not need any third-party animation applications.
 
+Flipbook animation is an illusion made by displaying multiple graphics one at a time in the same spot so that the viewer percieves motion. It's called a "flipbook" because animators can get a thick book of drawing paper and make little drawings in the corner and then hold the book just right to make the pages flip by so quickly that it looks like their drawings are moving.
+
+Each page's graphic is called a "frame" and the illusion can be affected by how quickly each frame is replaced by the next one, and whether the changes between each frame are blended together to create a smoother appearance.
+
+One difference between Minecraft flipbook animation and paper flipbook animation is that rather than using individual pages/graphic files for each frame, Minecraft animation frames are stored as one long strip. Each frame is a 16 by 16-pixel square and the animation code inside the Minecraft game assigns each square a number and then displays each one starting at the top with frame 0.
+
+![Image of sculk graphics with four 16- by 16-pixel frame labeled 0 through 3, going top to bottom](Media/CreateAnimatedBlockTexture/sculk_frames_numbered.png)
+
+By default, each of the six faces of a Minecraft block show the same frame of animation at the same time. The process to put a different animation on different faces of the block will be covered later.
+
 ### Prerequisites
 
 The following actions are recommended before beginning this tutorial:
 
 - Create a resource pack using [the Creating a Resource Pack tutorial](ResourcePack.md), or download the [sample pack collection](https://github.com/microsoft/minecraft-samples/tree/main/resource_pack_sample) and keep it handy on your computer.
-- Download and expand the latest [vanilla Minecraft packs](https://aka.ms/resourcepacktemplate). The code and graphics needed for these tutorials will be provided along the way, but it's a good idea to have the sample pack as a reference.
+- Download and expand the latest [Vanilla Minecraft packs](https://aka.ms/resourcepacktemplate). The code and graphics needed for these tutorials will be provided along the way, but it's a good idea to have the sample pack as a reference.
 
 ## A Flipbook Animation Resource Pack
 
@@ -28,7 +38,7 @@ This is the basic structure and content for the animation pack we are creating:
     - **flipbook_texture.json**
   - manifest.json
 
-1. Open the resource pack from the [vanilla Minecraft sample packs](https://aka.ms/resourcepacktemplate).
+1. Open the resource pack from the [Vanilla Minecraft sample packs](https://aka.ms/resourcepacktemplate).
 
 2. Open the **textures** folder, then open the **blocks** folder. This is where the **.png** graphics files for blocks live.
 
@@ -77,33 +87,21 @@ Here are some examples:
 |Name |Description  |
 |:----------|:----------|
 | flipbook_texture | Path to the graphic file for one or more faces of a block|
-| atlas_index | This is the index of the first frame to display when beginning the animation. If a problem occurrs, then only this frame will be displayed.|
-| atlas_tile | This is the name of the graphic that will be shown on the block if there is a problem with the animation. |
-| atlas_tile_variant | This is an alternate graphic to display as the atlas tile. |
+| atlas_index | Index of the first frame to display when beginning the animation. If a problem occurrs, then only this frame will be displayed.|
+| atlas_tile | Name of the graphic that will be shown on the block if there is a problem with the animation. |
+| atlas_tile_variant | An alternate graphic to display as the atlas tile. |
 | ticks_per_frame | How many ticks (1/20th of one second) of game time should pass before the next frame is displayed.|
 | frames | An array of frame numbers, used to show what order to display the frames. |
 
-### How do we get from a page of code to moving graphics?
+## Prepare an Animation Resource Pack
 
-Flipbook animation is an illusion made by displaying multiple graphics one at a time in the same spot so that the viewer percieves motion. It's called a "flipbook" because animators can get a thick book of drawing paper and make little drawings in the corner and then hold the book just right to make the pages flip by so quickly that it looks like your drawings are moving.
+1. Start with the finished "green dirt block" resource pack that you can either [create with the resource pack tutorial](ResourcePack.md) or download from [minecraft pack samples](https://github.com/microsoft/minecraft-samples).
 
-Each page's graphic is called a "frame" and the illusion can be affected by how quickly each frame is replaced by the next one, and whether the changes between each frame are blended together to create a smoother appearance.
+2. Rename the pack's folder **animation_resource_pack**.
 
-One difference between Minecraft flipbook animation and paper flipbook animation is that rather than using individual pages/graphic files for each frame, Minecraft animation frames are stored as one long strip. Each frame is a 16 by 16-pixel square and the animation code inside the Minecraft game assigns each square a number and then displays each one starting at the top with frame 0.
+3. Make sure there are new UUIDs in the **manifest.json** file.
 
-![Image of sculk graphics with four 16- by 16-pixel frame labeled 0 through 3, going top to bottom](Media/CreateAnimatedBlockTexture/sculk_frames_numbered.png)
-
-By default, each of the six faces of a Minecraft block show the same frame of animation at the same time. The process to put a different animation on each face will be covered later.
-
-## Prepare your Animation Resource Pack
-
-Start with the finished "green dirt block" resource pack that you can either [create with the resource pack tutorial](ResourcePack.md) or download from [minecraft pack samples](https://github.com/microsoft/minecraft-samples).
-
-Rename the pack's folder **animation_resource_pack**.
-
-Make sure there are new UUIDs in the **manifest.json** file.
-
-(Optional) Change the name and descriptions to reflect the pack's use for animation.
+4. (Optional) Change the name and descriptions to reflect the pack's use for animation.
 
 Okay. Now we're ready to animate!
 
@@ -115,7 +113,7 @@ To get familiar with how block textures are animated, we are going to start with
 
 2. Add a text file and name it **flipbook_textures.json**.
 
-3. Put this content in there, then save it and close it. 
+3. Add this content, then save and close the file.
 
 ```json
 [
@@ -134,7 +132,7 @@ To get familiar with how block textures are animated, we are going to start with
 
 ![Image of the sculk.png file Minecraft uses for sculk blocks.](Media/CreateAnimatedBlockTexture/sculk.png)
 
-6. Open **sculk.png** in a graphics program like paint.net.
+6. Open **sculk.png** in a graphics program like Paint.net.
 
 7. Edit each frame of the sculk graphic so it looks a little different.
 
@@ -175,7 +173,7 @@ In the **lapis ore** section, the **`"frames": [ 0, 1, 2, 3, 4, 5]`** line of th
 
 The **`"ticks_per_frame": 10`** line means that the lapis animation will have a faster frame rate than the one for sculk.
 
-The original vanilla lapis ore texture file, **lapis_ore.png**, looks like this:
+The original Vanilla lapis ore texture file, **lapis_ore.png**, looks like this:
 
 ![Image of an unedited lapis_ore.png file. It has only one frame.](Media/CreateAnimatedBlockTexture/lapis_ore.png)
 
@@ -203,7 +201,7 @@ Due to how textures are mapped onto blocks in the hotbar, all three visible side
 
 You can download the completed sample [Custom Die block resource pack and behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/custom_blocks). You will need both the behavior pack and the resource pack for it to work.
 
-Inside the **resource** pack, inside the **textures** folder, add a **flipbook_texture.json** file and put this code in there:
+Navigate to **resource pack** > **textures**, add a **flipbook_texture.json** file, and insert this code:
 
 ```json
 [
@@ -225,9 +223,9 @@ In a creative world with the behavior pack and resource pack activated, give you
 
 ![Image of a Minecraft word showing 3 die blocks: one in the hotbar, one in the player's hand, and one placed on the ground. All 3 die blocks have a 4-dot pattern showing on all visible sides.](Media/CreateAnimatedBlockTexture/placed_animated_die_block.png)
 
-## A multi-faceted Animation: the Command Block
+## A Multi-faceted Animation: the Command Block
 
-For the purpose of this discussion, we are talking only about the basic "vanilla" command black, not the ones with **conditional** or **chain** or **mipmap** in their names. They are all animated the same way. I'm mentioning this so that if you go digging for the code in the **flipbook_textures.json** file or for the graphics in the blocks folder of the vanilla sample pack, you'll know to look for the ones whose names match the names on the `"flipbook_texture":` line of the code.
+For the purpose of this discussion, we are talking only about the basic "Vanilla" command black, not the ones with **conditional** or **chain** or **mipmap** in their names. They are all animated the same way. I'm mentioning this so that if you go digging for the code in the **flipbook_textures.json** file or for the graphics in the blocks folder of the Vanilla sample pack, you'll know to look for the ones whose names match the names on the `"flipbook_texture":` line of the code.
 
 If you take a really close look at a command block, you'll notice that the front, back, and sides of the block have different shapes with animated blinking dots on them.
 
@@ -275,4 +273,6 @@ This is the final result:
 
 ![Image of a Minecraft world with 2 command blocks with edited textures on the front, back, and sides. The front has a pink square that moves around, the back has a blue square that moves around, and the sides have a green square that moves around.](Media/CreateAnimatedBlockTexture/placed_edited_command_blocks.png)
 
+## Next Steps
 
+Now that you know how to animate block textures, take a look at this page about [Add-on Pack Contents](ComprehensivePackContents.md) to see what else you could do to customize your own Minecraft world.
