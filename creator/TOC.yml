@@ -50,6 +50,8 @@
           href: Documents/AddCustomDieBlock.md
         - name: 'Create a Sushi Block: Advanced Custom Blocks' 
           href: Documents/AdvancedCustomBlocks.md
+        - name: Creating an Animated Block Texture
+          href: Documents/CreateAnimatedBlockTexture.md
         - name: Creating a Goblin Chef Entity 
           href: Documents/MakerSeriesMakingTheGoblinChef.md
         - name: Creating New Entity Types

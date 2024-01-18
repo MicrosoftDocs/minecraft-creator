@@ -93,10 +93,10 @@ We'll begin by creating a behavior pack for the custom block:
    "version": [ 1, 0, 0 ] 
   } 
  ] 
-} 
+}
 ```
 
-Now, let's create the custom block behavior json file in the behavior pack.
+Now, let's create the custom block behavior JSON file in the behavior pack.
 
 1. Inside the **custom_block_behavior_pack** folder, create a folder and name it **blocks**.
 1. Open the **blocks** folder.
@@ -313,13 +313,14 @@ With the die block defined in both the behavior pack and resource pack, you can 
 
 The following are suggested settings for a test world, but feel free to tweak these as you see fit.
 
-1. Flat World
-1. Show Coordinates
-1. Cheats
-1. Always Day
-1. Keep Inventory
-1. No mob spawning
-1. No weather cycle
+- Flat world
+- Show coordinates
+- Cheats
+- Always day
+- Keep inventory
+- No mob spawning
+- No weather cycle
+- Cheats enabled
 
 >[!IMPORTANT]
 > You will need to have a Minecraft world where cheats are enabled in order to add the block to your inventory using the /give command. You will also need to have both **custom_block_resource_pack** and **custom_block_behavior_pack** enabled in the world so you can get access to the die block.
