@@ -178,7 +178,8 @@ Adding a sound in blocks.json is optional, but you can include it here for fun.
 ```json
 { 
   "format_version": "1.19.30", 
-    "demo:die": {…}, 
+    "demo:die": {
+    }, 
     "demo:salmon_roll": { 
     "sound": "mud" 
   }, 
