@@ -201,6 +201,99 @@ Now start dropping those beautiful 'brellas!
 
 ***Note:*** With blocks larger than the 16x16x16 pixel base cube, the parts of the block that are outside of that 16x16x16 range will overlap with other blocks. Be aware of this when creating oversized blocks to assure you are achieving your desired look, especially if your oversized blocks will be placed near other blocks.
 
+## Custom Block Sample Packs
+
+Here is a link to the already-completed [custom block sample packs](https://github.com/microsoft/minecraft-samples).
+
+## Culling
+
+You can make your custom blocks behave like some vanilla blocks do when several of them are placed together by removing unseen, overlapping block faces with "culling."
+
+Culling the unseen, overlapping faces of your blocks can increase performance and decrease instances of graphical glitches.
+
+To use culling, you will need to add a few things to both the behavior pack and the resource pack.
+
+To try this out with the "tuna roll" custom sushi block, add these directories and files to the packs:
+
+**Custom Block Behavior Pack**
+
+Inside the **blocks** folder, open the **tuna_roll.json** file and add "identifier" and "culling" to the `minecraft:geometry:` section:
+
+```json
+"components": {
+  "minecraft:geometry": {
+    "identifier": "geometry.sushi",
+    "culling": "test:sushi_cull"
+  },
+}
+```
+
+Here is the whole **tuna_roll.json** file:
+
+```json
+{
+  "format_version": "1.19.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "demo:tuna_roll"
+    },
+    "components": {
+      "minecraft:geometry": {
+        "identifier": "geometry.sushi",
+        "culling": "test:sushi_cull"
+      },
+      "minecraft:material_instances": {
+        "north": "sushi_side",
+        "south": "sushi_side",
+        "*": {
+          "texture": "sushi_wrap"
+        },
+        "sushi_side": {
+          "texture": "tuna_roll"
+        }
+      }
+    }
+  }
+}
+```
+
+**Custom Block Resource Pack**
+
+1. On the main level of the resrouce pack, add a directory called: **block_culling**.
+
+1. Create a file in there and name it **sushi_cull.json**, then add these contents:
+
+```json
+{
+"format_version": "1.20.60",
+"minecraft:block_culling_rules": {
+    "description": {
+        "identifier": "test:sushi_cull"
+    },
+    "rules": [
+        {
+         "geometry_part": { "bone": "bb_main", "cube": 0, "face": "north" },
+         "direction": "north"
+        },
+        {
+         "geometry_part": { "bone": "bb_main", "cube": 0, "face": "south" },
+         "direction": "south"
+        }
+    ]
+  }
+}
+```
+
+3. Save the file, and test the culled block.
+
+If you place three culled sushi blocks, they have enough space around them and there is no culling. They will look like normal.
+
+![Image of 3 placed tuna sushi rolls. Nothing out of the ordinary. Ho hum.](Media/CustomOversized/3_tuna.png)
+
+If you swap out the center sushi block for a full-sized block like these acacia planks, only the outer seaweed ring is left!
+
+![Image of an acacia planks block between 2 tuna rolls - culling has occurred and only the seaweed wrap remains. Wow!](Media/CustomOversized/culled_tuna.png)
+
 ## Next Steps
 
 Your next step is to take this knowledge and go have some fun! We've learned so much about custom blocks during these tutorials, and we can't wait to see what you come up with using these tools and tips.
