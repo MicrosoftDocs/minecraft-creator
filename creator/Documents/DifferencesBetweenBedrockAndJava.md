@@ -22,9 +22,9 @@ The two versions also use a fairly different block format. Java has flattened it
 
 ## Commands and Redstone
 
-Both Bedrock and Java have a unique structure and implementation of commands. Bedrock's command structure is similar to the system used in versions of Java up to 1.13. It also uses a component-based system for commands instead of raw JSON strings. Instead of using JSON strings to customize entities, you can summon an entity with an event to fire and name it in a single command.
+Both Bedrock and Java have different structures and implementation of commands. Bedrock's command structure is similar to the system used in versions of Java up to 1.13. It also uses a component-based system for commands instead of raw JSON strings. Instead of using JSON strings to customize entities, you can summon an entity with an event to fire and name it in a single command.
 
-There are also differences per version in the way that redstone works, and while the majority of redstone circuits worl well between versions, more complex circuits may not. This is because Bedrock doesn't support quasi-connectivity, while Java does. Systems that utilize mechanics such as Block Update Detector (BUD) switches won't work. Pistons require one tick to retract and won't leave blocks behind if given a one-tick pulse. Additionally, the way updates happen is slightly different.
+There are also differences per version in the way that redstone works, and while the majority of redstone circuits work well between versions, more complex circuits may not. This is because Bedrock doesn't support quasi-connectivity, while Java does. Systems that utilize mechanics such as Block Update Detector (BUD) switches won't work. Pistons require one tick to retract and won't leave blocks behind if given a one-tick pulse. Additionally, the way updates happen is slightly different.
 
 ## Resource Packs
 
@@ -34,10 +34,9 @@ The idea behind resource packs is the same in both editions: change how various 
 
 The equivalent to Java's data packs, Bedrock's behavior packs share some similarities while being significantly different. For example:
 
-- Only Java can change the shape of blocks, while only Bedrock can change the shape of entities. Each uses a geometry format for this purpose that's incompatible with the other.
 - To animate textures, Bedrock uses a single file called `flipbook_textures.json`, while Java uses individual .mcmeta files for each texture.
 - Java can create custom fonts and GLSL shaders, while Bedrock cannot.
-- Bedrock can create custom particles and gods, while Java cannot.
+- Bedrock can create custom particles and fogs, while Java cannot.
 
 ## Controls
 
