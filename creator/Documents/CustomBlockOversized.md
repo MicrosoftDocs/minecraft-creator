@@ -10,7 +10,7 @@ ms.service: minecraft-bedrock-edition
 
 Custom blocks are not constrained to the usual 16x16x16 Minecraft block geometry. Not only can they be larger than 16x16x16 pixels, but since release `1.20.60`, you can use a feature called "culling" to dynamically remove parts of the block when it is placed near blocks that occlude one of the sides.
 
-First, we will cover how to create an over-sized block, then we will use one of the examples from another custom block tuorial (the [Sushi Block]([Title](AdvancedCustomBlocks.md)) one) to demonstrate culling.
+First, we will cover how to create an over-sized block, then we will use one of the examples from another custom block tuorial (the [Sushi Block](AdvancedCustomBlocks.md) one) to demonstrate culling.
 
 ## Prerequisites
 
