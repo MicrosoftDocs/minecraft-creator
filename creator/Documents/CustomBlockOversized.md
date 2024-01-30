@@ -259,7 +259,7 @@ Here is the whole **tuna_roll.json** file:
 
 **Custom Block Resource Pack**
 
-1. On the main level of the resrouce pack, add a directory called: **block_culling**.
+1. On the main level of the resource pack, add a directory called: **block_culling**.
 
 1. Create a file in there and name it **sushi_cull.json**, then add these contents:
 
