@@ -224,7 +224,7 @@
           href: Documents/StructureBlocksTutorial.md
         - name: Getting Started with Command Blocks
           href: Documents/CommandBlocks.md
-    - name: Tools
+    - name: Tools and Libraries
       items:
         - name: Commonly Used Tools
           href: Documents/CommonlyUsedTools.md
