@@ -5,6 +5,11 @@
       "redirect_url": "/minecraft/creator/documents/CreateAnInWorldGame.md",
       "redirect_document_id": false
     },
+    {
+      "source_path": "Documents/MashupPackOverview.md",
+      "redirect_url": "/minecraft/creator/documents/gettingstarted.md",
+      "redirect_document_id": false
+    },
       {
         "source_path": "Documents/PackagingARandomSeedWorldTemplate.md",
         "redirect_url": "/minecraft/creator/documents/createaworldtemplate.md",
