@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition
 
-Since you are on the Bedrock Learning Portal, you'd think that we would be a bit partial to Minecraft: Bedrock Edition, but the truth is that we love all forms of Minecraft equally. However, loving them equally doesn't mean they're identical, and as a creator it's important to know as much as you can about the differences between the flavors of Minecraft. So we're going to review some of the major differences between Minecraft: Java Edition and Minecraft: Bedrock Edition, and what they may mean for you as a creator.
+We love all forms of Minecraft equally, but loving them equally doesn't mean they're identical. As a creator, it's important to know as much as you can about the differences between the flavors of Minecraft. So, we're going to review some of the major differences between Minecraft: Java Edition and Minecraft: Bedrock Edition, and what they may mean for you as a creator.
 
 ## A Brief History of Minecraft
 
