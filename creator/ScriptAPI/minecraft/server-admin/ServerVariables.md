@@ -36,8 +36,6 @@ function getPlayerProfile(playerId: string): Promise<HttpResponse> {
 
     return http.request(req);
 }
-
-getPlayerProfile('dark navi');
 ```
 
 ## Properties
@@ -93,6 +91,4 @@ function getPlayerProfile(playerId: string): Promise<HttpResponse> {
 
     return http.request(req);
 }
-
-getPlayerProfile('dark navi');
 ```

@@ -42,8 +42,6 @@ function getPlayerProfile(playerId: string): Promise<HttpResponse> {
 
     return http.request(req);
 }
-
-getPlayerProfile('dark navi');
 ```
 
 ## Manifest Details
