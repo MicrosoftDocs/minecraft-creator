@@ -40,7 +40,45 @@ Type: *number*
 > This property can throw errors when used.
 
 ## Methods
+- [getCooldownTicksRemaining](#getcooldownticksremaining)
+- [isCooldownCategory](#iscooldowncategory)
 - [startCooldown](#startcooldown)
+
+### **getCooldownTicksRemaining**
+`
+getCooldownTicksRemaining(player: Player): number
+`
+
+#### **Parameters**
+- **player**: [*Player*](Player.md)
+
+#### **Returns** *number*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **isCooldownCategory**
+`
+isCooldownCategory(cooldownCategory: string): boolean
+`
+
+Will return true if the item is the cooldown category passed in and false otherwise.
+
+#### **Parameters**
+- **cooldownCategory**: *string*
+  
+  The cooldown category that might be associated with this item.
+
+#### **Returns** *boolean* - True if the item is the given cooldown category.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **startCooldown**
 `

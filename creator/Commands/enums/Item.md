@@ -326,6 +326,8 @@ Obsidian
 Obsidian
 - `minecraft:light_gray_stained_glass_pane`
 - `light_gray_stained_glass_pane`
+- `minecraft:dark_oak_slab`
+- `dark_oak_slab`
 - `minecraft:deepslate_brick_wall`
 Deepslate Brick Wall
 - `deepslate_brick_wall`
@@ -412,6 +414,8 @@ Waxed Weathered Copper
 Waxed Oxidized Cut Copper Slab
 - `waxed_oxidized_cut_copper_slab`
 Waxed Oxidized Cut Copper Slab
+- `minecraft:oak_leaves`
+- `oak_leaves`
 - `minecraft:polished_tuff_wall`
 - `polished_tuff_wall`
 - `minecraft:sapling`
@@ -528,6 +532,8 @@ Heavy Weighted Pressure Plate
 Lightning Rod
 - `lightning_rod`
 Lightning Rod
+- `minecraft:acacia_leaves`
+- `acacia_leaves`
 - `minecraft:black_stained_glass_pane`
 - `black_stained_glass_pane`
 - `minecraft:cobblestone_wall`
@@ -726,6 +732,8 @@ Waxed Exposed Cut Copper
 Waxed Exposed Cut Copper
 - `minecraft:jungle_hanging_sign`
 - `jungle_hanging_sign`
+- `minecraft:birch_slab`
+- `birch_slab`
 - `minecraft:loom`
 Loom
 - `loom`
@@ -742,6 +750,8 @@ Crimson Door
 Mangrove Pressure Plate
 - `mangrove_pressure_plate`
 Mangrove Pressure Plate
+- `minecraft:jungle_slab`
+- `jungle_slab`
 - `minecraft:light_blue_stained_glass_pane`
 - `light_blue_stained_glass_pane`
 - `minecraft:glowstone`
@@ -790,6 +800,8 @@ Monster Egg
 Polished Granite Stairs
 - `polished_granite_stairs`
 Polished Granite Stairs
+- `minecraft:birch_leaves`
+- `birch_leaves`
 - `minecraft:pink_terracotta`
 - `pink_terracotta`
 - `minecraft:cracked_deepslate_tiles`
@@ -882,6 +894,8 @@ Redstone Ore
 Nether Brick Fence
 - `nether_brick_fence`
 Nether Brick Fence
+- `minecraft:oak_slab`
+- `oak_slab`
 - `minecraft:deepslate_tile_slab`
 Deepslate Tile Slab
 - `deepslate_tile_slab`
@@ -932,10 +946,6 @@ Basalt
 Basalt
 - `minecraft:light_blue_terracotta`
 - `light_blue_terracotta`
-- `minecraft:leaves2`
-Leaves 2
-- `leaves2`
-Leaves 2
 - `minecraft:diamond_ore`
 Diamond Ore
 - `diamond_ore`
@@ -970,6 +980,8 @@ Sculk Sensor
 Diorite Stairs
 - `diorite_stairs`
 Diorite Stairs
+- `minecraft:spruce_leaves`
+- `spruce_leaves`
 - `minecraft:frog_spawn`
 Frog Spawn
 - `frog_spawn`
@@ -1244,10 +1256,6 @@ Acacia Pressure Plate
 Raw Copper Block
 - `raw_copper_block`
 Raw Copper Block
-- `minecraft:wooden_slab`
-Wooden Slab
-- `wooden_slab`
-Wooden Slab
 - `minecraft:oxidized_cut_copper_slab`
 Oxidized Cut Copper Slab
 - `oxidized_cut_copper_slab`
@@ -1276,6 +1284,8 @@ Golden Rail
 Golden Rail
 - `minecraft:cyan_wool`
 - `cyan_wool`
+- `minecraft:jungle_leaves`
+- `jungle_leaves`
 - `minecraft:gray_shulker_box`
 - `gray_shulker_box`
 - `minecraft:red_sandstone_stairs`
@@ -1540,6 +1550,8 @@ Warped Wart Block
 - `waxed_oxidized_copper_door`
 - `minecraft:dead_horn_coral`
 - `dead_horn_coral`
+- `minecraft:grass_block`
+- `grass_block`
 - `minecraft:tripwire_hook`
 Tripwire Hook
 - `tripwire_hook`
@@ -1584,6 +1596,8 @@ Barrier
 Weathered Cut Copper Slab
 - `weathered_cut_copper_slab`
 Weathered Cut Copper Slab
+- `minecraft:dark_oak_leaves`
+- `dark_oak_leaves`
 - `minecraft:torchflower`
 - `torchflower`
 - `minecraft:end_portal_frame`
@@ -1600,10 +1614,6 @@ Prismarine
 - `exposed_copper_trapdoor`
 - `minecraft:black_terracotta`
 - `black_terracotta`
-- `minecraft:leaves`
-Leaves
-- `leaves`
-Leaves
 - `minecraft:deepslate_gold_ore`
 Deepslate Gold Ore
 - `deepslate_gold_ore`
@@ -1612,6 +1622,8 @@ Deepslate Gold Ore
 Ancient Debris
 - `ancient_debris`
 Ancient Debris
+- `minecraft:vault`
+- `vault`
 - `minecraft:beehive`
 Beehive
 - `beehive`
@@ -1940,10 +1952,6 @@ Stripped Crimson Stem
 Jungle Stairs
 - `jungle_stairs`
 Jungle Stairs
-- `minecraft:grass`
-Grass
-- `grass`
-Grass
 - `minecraft:mangrove_propagule`
 Mangrove Propagule
 - `mangrove_propagule`
@@ -1972,6 +1980,8 @@ Purple Glazed Terracotta
 Bedrock
 - `bedrock`
 Bedrock
+- `minecraft:spruce_slab`
+- `spruce_slab`
 - `minecraft:blackstone_stairs`
 Blackstone Stairs
 - `blackstone_stairs`
@@ -2228,6 +2238,8 @@ Blast Furnace
 Crimson Roots
 - `crimson_roots`
 Crimson Roots
+- `minecraft:acacia_slab`
+- `acacia_slab`
 - `minecraft:stonecutter_block`
 Stonecutter Block
 - `stonecutter_block`
@@ -2456,6 +2468,8 @@ Cartography Table
 Cartography Table
 - `minecraft:oxidized_copper_door`
 - `oxidized_copper_door`
+- `grass`
+Grass
 - `concretepowder`
 Concrete Powder
 - `pistonarmcollision`
@@ -2492,6 +2506,14 @@ Log
 Log 2
 - `minecraft:log2`
 Log 2
+- `leaves`
+Leaves
+- `minecraft:leaves`
+Leaves
+- `leaves2`
+Leaves 2
+- `minecraft:leaves2`
+Leaves 2
 - `coral`
 Coral
 - `minecraft:coral`
@@ -2536,6 +2558,10 @@ Planks
 - `minecraft:hard_stained_glass`
 - `hard_stained_glass_pane`
 - `minecraft:hard_stained_glass_pane`
+- `wooden_slab`
+Wooden Slab
+- `minecraft:wooden_slab`
+Wooden Slab
 - `minecraft:chicken`
 Chicken
 - `chicken`

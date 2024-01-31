@@ -70,6 +70,7 @@ Type: *number*
 - [addEntityPicker](#addentitypicker)
 - [addNumber](#addnumber)
 - [addString](#addstring)
+- [addText](#addtext)
 - [addVector3](#addvector3)
 - [collapse](#collapse)
 - [createPropertyPane](#createpropertypane)
@@ -134,7 +135,7 @@ Adds an divider item to the pane.
 
 ### **addDropdown**
 `
-addDropdown(obj: T, property: Prop, options: IPropertyItemOptionsDropdown): IPropertyItem<T, Prop>
+addDropdown(obj: T, property: Prop, options: IPropertyItemOptionsDropdown): IDropdownPropertyItem<T, Prop>
 `
 
 Adds an DropDown item to the pane.
@@ -144,7 +145,7 @@ Adds an DropDown item to the pane.
 - **property**: *Prop*
 - **options**: *IPropertyItemOptionsDropdown*
 
-#### **Returns** *IPropertyItem<T, Prop>*
+#### **Returns** *IDropdownPropertyItem<T, Prop>*
 
 ### **addEntityPicker**
 `
@@ -185,6 +186,20 @@ Adds a string item to the pane
 - **obj**: *T*
 - **property**: *Prop*
 - **options**: *IPropertyItemOptions*
+
+#### **Returns** *IPropertyItem<T, Prop>*
+
+### **addText**
+`
+addText(obj: T, property: Prop, options: IPropertyItemOptionsText): IPropertyItem<T, Prop>
+`
+
+Adds a multiline Text item to the pane.
+
+#### **Parameters**
+- **obj**: *T*
+- **property**: *Prop*
+- **options**: *IPropertyItemOptionsText*
 
 #### **Returns** *IPropertyItem<T, Prop>*
 

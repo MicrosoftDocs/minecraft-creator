@@ -133,6 +133,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 `Strength = "minecraft:strength"`
 ### **Tameable**
 `Tameable = "minecraft:tameable"`
+### **TypeFamily**
+`TypeFamily = "minecraft:type_family"`
 ### **UnderwaterMovement**
 `UnderwaterMovement = "minecraft:underwater_movement"`
 ### **Variant**

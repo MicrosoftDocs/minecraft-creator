@@ -14,6 +14,24 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 Additional configuration options for the [*@minecraft/server.Dimension.createExplosion*](../../minecraft/server/Dimension.md#createexplosion) method.
 
+#### Examples
+##### ***createExplosions.ts***
+```typescript
+// Creates an explosion of radius 15 that does not break blocks
+import { DimensionLocation } from '@minecraft/server';
+
+function createExplosions(location: DimensionLocation) {
+    // Creates an explosion of radius 15 that does not break blocks
+    location.dimension.createExplosion(location, 15, { breaksBlocks: false });
+
+    // Creates an explosion of radius 15 that does not cause fire
+    location.dimension.createExplosion(location, 15, { causesFire: true });
+
+    // Creates an explosion of radius 10 that can go underwater
+    location.dimension.createExplosion(location, 10, { allowUnderwater: true });
+}
+```
+
 ## Properties
 
 ### **allowUnderwater**
@@ -45,30 +63,19 @@ Optional source of the explosion.
 Type: [*Entity*](Entity.md)
 
 #### Examples
-##### ***createFireAndWaterExplosions.ts***
+##### ***createExplosions.ts***
 ```typescript
-  const overworld = mc.world.getDimension("overworld");
+// Creates an explosion of radius 15 that does not break blocks
+import { DimensionLocation } from '@minecraft/server';
 
-  const explosionLoc = { x: targetLocation.x + 0.5, y: targetLocation.y + 0.5, z: targetLocation.z + 0.5};
+function createExplosions(location: DimensionLocation) {
+    // Creates an explosion of radius 15 that does not break blocks
+    location.dimension.createExplosion(location, 15, { breaksBlocks: false });
 
-  log("Creating an explosion of radius 15 that causes fire.");
-  overworld.createExplosion(explosionLoc, 15, { causesFire: true });
+    // Creates an explosion of radius 15 that does not cause fire
+    location.dimension.createExplosion(location, 15, { causesFire: true });
 
-  const belowWaterLoc = { x: targetLocation.x + 3, y: targetLocation.y + 1,z: targetLocation.z + 3};
-
-  log("Creating an explosion of radius 10 that can go underwater.");
-  overworld.createExplosion(belowWaterLoc, 10, { allowUnderwater: true });
-```
-##### ***createNoBlockExplosion.ts***
-```typescript
-  const overworld = mc.world.getDimension("overworld");
-
-  const explodeNoBlocksLoc = {
-    x: Math.floor(targetLocation.x + 1),
-    y: Math.floor(targetLocation.y + 2),
-    z: Math.floor(targetLocation.z + 1)
-  };
-
-  log("Creating an explosion of radius 15 that does not break blocks.");
-  overworld.createExplosion(explodeNoBlocksLoc, 15, { breaksBlocks: false });
+    // Creates an explosion of radius 10 that can go underwater
+    location.dimension.createExplosion(location, 10, { allowUnderwater: true });
+}
 ```

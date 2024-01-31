@@ -9,9 +9,11 @@ description: Changelog of the `@minecraft/common` module
 # `@minecraft/common` Changelog
 
 ## Version Changes
+- [1.2.0](#120)
 - [1.1.0](#110)
 - [1.0.0](#100)
 
+## 1.2.0
 ## 1.1.0
 ## 1.0.0
 #### Added `@minecraft/common` Module

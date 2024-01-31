@@ -103,6 +103,8 @@ Damage caused by a Piston.
 Damage caused by a projectile.
 ### **ramAttack**
 `ramAttack = "ramAttack"`
+### **selfDestruct**
+`selfDestruct = "selfDestruct"`
 ### **sonicBoom**
 `sonicBoom = "sonicBoom"`
 ### **soulCampfire**

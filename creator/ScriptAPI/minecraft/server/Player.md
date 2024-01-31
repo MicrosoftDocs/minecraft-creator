@@ -343,32 +343,6 @@ Plays a sound that only this particular player can hear.
 > [!WARNING]
 > This function can throw errors.
 
-#### Examples
-##### ***playMusicAndSound.ts***
-```typescript
-  let players = mc.world.getPlayers();
-
-  const musicOptions: mc.MusicOptions = {
-    fade: 0.5,
-    loop: true,
-    volume: 1.0,
-  };
-  mc.world.playMusic("music.menu", musicOptions);
-
-  const worldSoundOptions: mc.WorldSoundOptions = {
-    pitch: 0.5,
-    volume: 4.0,
-  };
-  mc.world.playSound("ambient.weather.thunder", targetLocation, worldSoundOptions);
-
-  const playerSoundOptions: mc.PlayerSoundOptions = {
-    pitch: 1.0,
-    volume: 1.0,
-  };
-
-  players[0].playSound("bucket.fill_water", playerSoundOptions);
-```
-
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **postClientMessage**
 `
@@ -454,43 +428,32 @@ Sends a message to the player.
 > This method can throw if the provided [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) is in an invalid format. For example, if an empty `name` string is provided to `score`.
 
 #### Examples
-##### ***nestedTranslation.ts***
+##### ***sendMessagesToPlayer.ts***
 ```typescript
-// Displays "Apple or Coal"
-let rawMessage = {
-  translate: "accessibility.list.or.two",
-  with: { rawtext: [{ translate: "item.apple.name" }, { translate: "item.coal.name" }] },
-};
-player.sendMessage(rawMessage);
-```
-##### ***scoreWildcard.ts***
-```typescript
-// Displays the player's score for objective "obj". Each player will see their own score.
-const rawMessage = { score: { name: "*", objective: "obj" } };
-world.sendMessage(rawMessage);
-```
-##### ***sendBasicMessage.ts***
-```typescript
-  let players = mc.world.getPlayers();
+import { Player } from "@minecraft/server";
 
-  players[0].sendMessage("Hello World!");
-```
-##### ***sendTranslatedMessage.ts***
-```typescript
-  let players = mc.world.getPlayers();
+function sendPlayerMessages(player: Player) {
+    // Displays "First or Second"
+    const rawMessage = { translate: 'accessibility.list.or.two', with: ['First', 'Second'] };
+    player.sendMessage(rawMessage);
 
-  players[0].sendMessage({ translate: "authentication.welcome", with: ["Amazing Player 1"] });
-```
-##### ***simpleString.ts***
-```typescript
-// Displays "Hello, world!"
-world.sendMessage("Hello, world!");
-```
-##### ***translation.ts***
-```typescript
-// Displays "First or Second"
-const rawMessage = { translate: "accessibility.list.or.two", with: ["First", "Second"] };
-player.sendMessage(rawMessage);
+    // Displays "Hello, world!"
+    player.sendMessage('Hello, world!');
+
+    // Displays "Welcome, Amazing Player 1!"
+    player.sendMessage({ translate: 'authentication.welcome', with: ['Amazing Player 1'] });
+
+    // Displays the player's score for objective "obj". Each player will see their own score.
+    const rawMessageWithScore = { score: { name: '*', objective: 'obj' } };
+    player.sendMessage(rawMessageWithScore);
+    
+    // Displays "Apple or Coal"
+    const rawMessageWithNestedTranslations = {
+        translate: 'accessibility.list.or.two',
+        with: { rawtext: [{ translate: 'item.apple.name' }, { translate: 'item.coal.name' }] },
+    };
+    player.sendMessage(rawMessageWithNestedTranslations);
+}
 ```
 
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -565,23 +528,27 @@ Creates a new particle emitter at a specified location in the world. Only visibl
 #### Examples
 ##### ***spawnParticle.ts***
 ```typescript
-for (let i = 0; i < 100; i++) {
-  const molang = new mc.MolangVariableMap();
+import { world, MolangVariableMap, Vector3 } from '@minecraft/server';
 
-  molang.setColorRGB("variable.color", {
-    red: Math.random(),
-    green: Math.random(),
-    blue: Math.random(),
-    alpha: 1,
-  });
+world.afterEvents.playerSpawn.subscribe(event => {
+    const targetLocation = event.player.location;
+    for (let i = 0; i < 100; i++) {
+        const molang = new MolangVariableMap();
 
-  let newLocation = {
-    x: targetLocation.x + Math.floor(Math.random() * 8) - 4,
-    y: targetLocation.y + Math.floor(Math.random() * 8) - 4,
-    z: targetLocation.z + Math.floor(Math.random() * 8) - 4,
-  };
-  player.spawnParticle("minecraft:colored_flame_particle", newLocation, molang);
-}
+        molang.setColorRGB('variable.color', {
+            red: Math.random(),
+            green: Math.random(),
+            blue: Math.random()
+        });
+
+        const newLocation: Vector3 = {
+            x: targetLocation.x + Math.floor(Math.random() * 8) - 4,
+            y: targetLocation.y + Math.floor(Math.random() * 8) - 4,
+            z: targetLocation.z + Math.floor(Math.random() * 8) - 4,
+        };
+        event.player.spawnParticle('minecraft:colored_flame_particle', newLocation, molang);
+    }
+});
 ```
 ::: moniker-end
 

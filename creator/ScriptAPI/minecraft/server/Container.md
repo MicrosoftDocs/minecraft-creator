@@ -10,6 +10,56 @@ description: Contents of the @minecraft/server.Container class.
 
 Represents a container that can hold sets of items. Used with entities such as Players, Chest Minecarts, Llamas, and more.
 
+#### Examples
+##### ***containers.js***
+```typescript
+let leftLocation = test.worldLocation({ x: 2, y: 2, z: 2 }); // left chest location
+let rightLocation = test.worldLocation({ x: 4, y: 2, z: 2 }); // right chest location
+
+const chestCart = test.spawn("chest_minecart", { x: 6, y: 2, z: 2 });
+
+let leftChestBlock = defaultDimension.getBlock(leftLocation);
+let rightChestBlock = defaultDimension.getBlock(rightLocation);
+
+leftChestBlock.setType(MinecraftBlockTypes.chest);
+rightChestBlock.setType(MinecraftBlockTypes.chest);
+
+const rightChestInventoryComp = rightChestBlock.getComponent("inventory");
+const leftChestInventoryComp = leftChestBlock.getComponent("inventory");
+const chestCartInventoryComp = chestCart.getComponent("inventory");
+
+const rightChestContainer = rightChestInventoryComp.container;
+const leftChestContainer = leftChestInventoryComp.container;
+const chestCartContainer = chestCartInventoryComp.container;
+
+rightChestContainer.setItem(0, new ItemStack(Items.apple, 10, 0));
+test.assert(rightChestContainer.getItem(0).id === "apple", "Expected apple in right container slot index 0");
+
+rightChestContainer.setItem(1, new ItemStack(Items.emerald, 10, 0));
+test.assert(rightChestContainer.getItem(1).id === "emerald", "Expected emerald in right container slot index 1");
+
+test.assert(rightChestContainer.size === 27, "Unexpected size: " + rightChestContainer.size);
+test.assert(
+  rightChestContainer.emptySlotsCount === 25,
+  "Unexpected emptySlotsCount: " + rightChestContainer.emptySlotsCount
+);
+
+const itemStack = rightChestContainer.getItem(0);
+test.assert(itemStack.id === "apple", "Expected apple");
+test.assert(itemStack.amount === 10, "Expected 10 apples");
+test.assert(itemStack.data === 0, "Expected 0 data");
+
+leftChestContainer.setItem(0, new ItemStack(Items.cake, 10, 0));
+
+rightChestContainer.transferItem(0, 4, chestCartContainer); // transfer the apple from the right chest to a chest cart
+rightChestContainer.swapItems(1, 0, leftChestContainer); // swap the cake and emerald
+
+test.assert(chestCartContainer.getItem(4).id === "apple", "Expected apple in left container slot index 4");
+test.assert(leftChestContainer.getItem(0).id === "emerald", "Expected emerald in left container slot index 0");
+test.assert(rightChestContainer.getItem(1).id === "cake", "Expected cake in right container slot index 1");
+
+```
+
 ## Properties
 
 ### **emptySlotsCount**
@@ -106,9 +156,16 @@ Gets an [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md) of 
 #### Examples
 ##### ***getItem.ts***
 ```typescript
-// Get a copy of the first item in the player's hotbar
-const inventory = player.getComponent("inventory") as EntityInventoryComponent;
-const itemStack = inventory.container.getItem(0);
+// A function that gets a copy of the first item in the player's hotbar
+import { Player, EntityInventoryComponent, ItemStack } from '@minecraft/server';
+
+function getFirstHotbarItem(player: Player): ItemStack | undefined {
+    const inventory = player.getComponent(EntityInventoryComponent.componentId);
+    if (inventory && inventory.container) {
+        return inventory.container.getItem(0);
+    }
+    return undefined;
+}
 ```
 
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -173,10 +230,17 @@ Moves an item from one slot to another, potentially across containers.
 #### Examples
 ##### ***moveItem.ts***
 ```typescript
-// Move an item from the first slot of fromPlayer's inventory to the fifth slot of toPlayer's inventory
-const fromInventory = fromPlayer.getComponent('inventory') as EntityInventoryComponent;
-const toInventory = toPlayer.getComponent('inventory') as EntityInventoryComponent;
-fromInventory.container.moveItem(0, 4, toInventory.container); 
+// A function that moves an item from one slot of the player's inventory to another player's inventory
+import { Player, EntityComponentTypes } from '@minecraft/server';
+
+function moveBetweenPlayers(slotId: number, fromPlayer: Player, toPlayer: Player) {
+    const fromInventory = fromPlayer.getComponent(EntityComponentTypes.Inventory);
+    const toInventory = toPlayer.getComponent(EntityComponentTypes.Inventory);
+
+    if (fromInventory && toInventory && fromInventory.container && toInventory.container) {
+        fromInventory.container.moveItem(slotId, slotId, toInventory.container);
+    }
+}
 ```
 
 ### **setItem**
@@ -231,9 +295,17 @@ Swaps items between two different slots within containers.
 #### Examples
 ##### ***swapItems.ts***
 ```typescript
-// Swaps an item between slots 0 and 4 in the player's inventory
-const inventory = fromPlayer.getComponent('inventory') as EntityInventoryComponent;
-inventory.container.swapItems(0, 4, inventory); 
+// A function that swaps an item from one slot of the player's inventory to another player's inventory
+import { Player, EntityComponentTypes } from '@minecraft/server';
+
+function swapBetweenPlayers(slotId: number, fromPlayer: Player, toPlayer: Player) {
+    const fromInventory = fromPlayer.getComponent(EntityComponentTypes.Inventory);
+    const toInventory = toPlayer.getComponent(EntityComponentTypes.Inventory);
+
+    if (fromInventory && toInventory && fromInventory.container && toInventory.container) {
+        fromInventory.container.swapItems(slotId, slotId, toInventory.container);
+    }
+}
 ```
 
 ### **transferItem**
@@ -264,10 +336,17 @@ Moves an item from one slot to another container, or to the first available slot
 #### Examples
 ##### ***transferItem.ts***
 ```typescript
-// Transfer an item from the first slot of fromPlayer's inventory to toPlayer's inventory
-const fromInventory = fromPlayer.getComponent('inventory') as EntityInventoryComponent;
-const toInventory = toPlayer.getComponent('inventory') as EntityInventoryComponent;
-fromInventory.container.transferItem(0, toInventory.container); 
+// A function that moves an item from one slot of the player's inventory to another player's inventory
+import { Player, EntityComponentTypes } from '@minecraft/server';
+
+function moveBetweenPlayers(slotId: number, fromPlayer: Player, toPlayer: Player) {
+    const fromInventory = fromPlayer.getComponent(EntityComponentTypes.Inventory);
+    const toInventory = toPlayer.getComponent(EntityComponentTypes.Inventory);
+
+    if (fromInventory && toInventory && fromInventory.container && toInventory.container) {
+        fromInventory.container.transferItem(slotId, toInventory.container);
+    }
+}
 ```
 
 #### Examples

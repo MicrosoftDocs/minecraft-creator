@@ -11,7 +11,9 @@ description: Contents of the @minecraft/server-editor.UserDefinedTransactionHand
 A strongly typed transaction handle to enforce type safety when adding user defined transactions.<br> This transaction handle becomes the context for adding the transaction to the transaction manager.<br> You can obtain one of these handles by calling {@link registerUserDefinedTransactionHandler}
 
 ## Methods
-- [constructor](#(constructor))- [addUserDefinedOperation](#adduserdefinedoperation)
+- [constructor](#(constructor))
+- [addUserDefinedOperation](#adduserdefinedoperation)
+
 ### **constructor**
 `
 new UserDefinedTransactionHandle(nativeHandle: UserDefinedTransactionHandlerId, transactionManager: TransactionManager)

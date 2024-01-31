@@ -9,7 +9,7 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [1.9.0-beta](#190-beta)
+- [1.10.0-beta](#1100-beta)
 - [1.7.0](#170)
 - [1.6.0](#160)
 - [1.5.0](#150)
@@ -19,7 +19,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 1.9.0-beta
+## 1.10.0-beta
 #### Added *[`BiomeType`](BiomeType.md)*
 #### Added *[`BiomeTypes`](BiomeTypes.md)*
 #### Changed *[`Block`](Block.md)*
@@ -63,7 +63,8 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`BlockStateType`](BlockStateType.md)*
 #### Added *[`BlockType`](BlockType.md)*
 #### Added *[`BlockTypes`](BlockTypes.md)*
-#### Added *[`BlockVolumeUtils`](BlockVolumeUtils.md)*
+#### Added *[`BlockVolume`](BlockVolume.md)*
+#### Added *[`BlockVolumeBase`](BlockVolumeBase.md)*
 #### Added *[`BlockWaterContainerComponent`](BlockWaterContainerComponent.md)*
 #### Added *[`BoundingBoxUtils`](BoundingBoxUtils.md)*
 #### Added *[`ChatSendAfterEvent`](ChatSendAfterEvent.md)*
@@ -83,6 +84,7 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`fillBlocks`](Dimension.md#fillblocks)*
 - Added function *[`findClosestBiome`](Dimension.md#findclosestbiome)*
 - Added function *[`getWeather`](Dimension.md#getweather)*
+- Added function *[`playSound`](Dimension.md#playsound)*
 #### Added *[`DimensionType`](DimensionType.md)*
 #### Added *[`DimensionTypes`](DimensionTypes.md)*
 #### Added *[`EffectAddAfterEvent`](EffectAddAfterEvent.md)*
@@ -136,11 +138,13 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`EntityStrengthComponent`](EntityStrengthComponent.md)*
 #### Added *[`EntityTameableComponent`](EntityTameableComponent.md)*
 #### Added *[`EntityType`](EntityType.md)*
+#### Added *[`EntityTypeFamilyComponent`](EntityTypeFamilyComponent.md)*
 #### Added *[`EntityTypeIterator`](EntityTypeIterator.md)*
 #### Added *[`EntityTypes`](EntityTypes.md)*
 #### Added *[`EntityUnderwaterMovementComponent`](EntityUnderwaterMovementComponent.md)*
 #### Added *[`FilterGroup`](FilterGroup.md)*
 #### Added *[`FluidContainer`](FluidContainer.md)*
+#### Added *[`GameRules`](GameRules.md)*
 #### Added *[`ItemCooldownComponent`](ItemCooldownComponent.md)*
 #### Added *[`ItemDefinitionAfterEventSignal`](ItemDefinitionAfterEventSignal.md)*
 #### Added *[`ItemDefinitionBeforeEventSignal`](ItemDefinitionBeforeEventSignal.md)*
@@ -157,6 +161,7 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`getDynamicProperty`](ItemStack.md#getdynamicproperty)*
 - Added function *[`getDynamicPropertyIds`](ItemStack.md#getdynamicpropertyids)*
 - Added function *[`getDynamicPropertyTotalByteCount`](ItemStack.md#getdynamicpropertytotalbytecount)*
+- Added function *[`matches`](ItemStack.md#matches)*
 - Added function *[`setDynamicProperty`](ItemStack.md#setdynamicproperty)*
 - Added function *[`triggerEvent`](ItemStack.md#triggerevent)*
 #### Added *[`ItemTypes`](ItemTypes.md)*
@@ -178,6 +183,12 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PlayerIterator`](PlayerIterator.md)*
 #### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
 #### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
+#### Changed *[`ScreenDisplay`](ScreenDisplay.md)*
+- Added function *[`getHiddenHudElements`](ScreenDisplay.md#gethiddenhudelements)*
+- Added function *[`hideAllExcept`](ScreenDisplay.md#hideallexcept)*
+- Added function *[`isForcedHidden`](ScreenDisplay.md#isforcedhidden)*
+- Added function *[`resetHudElements`](ScreenDisplay.md#resethudelements)*
+- Added function *[`setHudVisibility`](ScreenDisplay.md#sethudvisibility)*
 #### Added *[`Seat`](Seat.md)*
 #### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
 #### Changed *[`System`](System.md)*
@@ -191,7 +202,10 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
 #### Added *[`WeatherChangeAfterEvent`](WeatherChangeAfterEvent.md)*
 #### Added *[`WeatherChangeAfterEventSignal`](WeatherChangeAfterEventSignal.md)*
+#### Added *[`WeatherChangeBeforeEvent`](WeatherChangeBeforeEvent.md)*
+#### Added *[`WeatherChangeBeforeEventSignal`](WeatherChangeBeforeEventSignal.md)*
 #### Changed *[`World`](World.md)*
+- Added property *[`gameRules`](World.md#gamerules)*
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`blockExplode`](WorldAfterEvents.md#blockexplode)*
@@ -215,6 +229,7 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`playerInteractWithBlock`](WorldBeforeEvents.md#playerinteractwithblock)*
 - Added property *[`playerInteractWithEntity`](WorldBeforeEvents.md#playerinteractwithentity)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
+- Added property *[`weatherChange`](WorldBeforeEvents.md#weatherchange)*
 #### Added *[`WorldInitializeAfterEvent`](WorldInitializeAfterEvent.md)*
 #### Added *[`WorldInitializeAfterEventSignal`](WorldInitializeAfterEventSignal.md)*
 #### Added enum [`BlockComponentTypes`](BlockComponentTypes.md)
@@ -227,9 +242,13 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`EntityComponentTypes`](EntityComponentTypes.md)
 #### Added enum [`EntityLifetimeState`](EntityLifetimeState.md)
 #### Added enum [`FluidType`](FluidType.md)
+#### Added enum [`HudElement`](HudElement.md)
+#### Added enum [`HudVisibility`](HudVisibility.md)
 #### Added enum [`ItemComponentTypes`](ItemComponentTypes.md)
 #### Added enum [`SignSide`](SignSide.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
+#### Added constant `HudElementsCount`
+#### Added constant `HudVisibilityCount`
 #### Added constant `TicksPerDay`
 ## 1.7.0
 #### Changed version for module dependency `@minecraft/common` from `1.0.0` to `1.1.0`

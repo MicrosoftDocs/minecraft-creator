@@ -48,6 +48,9 @@ Type: *string*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getWeather](#getweather)
 ::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [playSound](#playsound)
+::: moniker-end
 - [runCommand](#runcommand)
 - [runCommandAsync](#runcommandasync)
 - [setWeather](#setweather)
@@ -88,39 +91,21 @@ Creates an explosion at the specified location.
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 #### Examples
-##### ***createExplosion.ts***
+##### ***createExplosions.ts***
 ```typescript
-  const overworld = mc.world.getDimension("overworld");
+// Creates an explosion of radius 15 that does not break blocks
+import { DimensionLocation } from '@minecraft/server';
 
-  log("Creating an explosion of radius 10.");
-  overworld.createExplosion(targetLocation, 10);
-```
-##### ***createFireAndWaterExplosions.ts***
-```typescript
-  const overworld = mc.world.getDimension("overworld");
+function createExplosions(location: DimensionLocation) {
+    // Creates an explosion of radius 15 that does not break blocks
+    location.dimension.createExplosion(location, 15, { breaksBlocks: false });
 
-  const explosionLoc = { x: targetLocation.x + 0.5, y: targetLocation.y + 0.5, z: targetLocation.z + 0.5};
+    // Creates an explosion of radius 15 that does not cause fire
+    location.dimension.createExplosion(location, 15, { causesFire: true });
 
-  log("Creating an explosion of radius 15 that causes fire.");
-  overworld.createExplosion(explosionLoc, 15, { causesFire: true });
-
-  const belowWaterLoc = { x: targetLocation.x + 3, y: targetLocation.y + 1,z: targetLocation.z + 3};
-
-  log("Creating an explosion of radius 10 that can go underwater.");
-  overworld.createExplosion(belowWaterLoc, 10, { allowUnderwater: true });
-```
-##### ***createNoBlockExplosion.ts***
-```typescript
-  const overworld = mc.world.getDimension("overworld");
-
-  const explodeNoBlocksLoc = {
-    x: Math.floor(targetLocation.x + 1),
-    y: Math.floor(targetLocation.y + 2),
-    z: Math.floor(targetLocation.z + 1)
-  };
-
-  log("Creating an explosion of radius 15 that does not break blocks.");
-  overworld.createExplosion(explodeNoBlocksLoc, 15, { breaksBlocks: false });
+    // Creates an explosion of radius 10 that can go underwater
+    location.dimension.createExplosion(location, 10, { allowUnderwater: true });
+}
 ```
 ::: moniker-end
 
@@ -230,6 +215,9 @@ Gets the first block that intersects with a vector emanating from a location.
 
 #### **Returns** [*BlockRaycastHit*](BlockRaycastHit.md) | *undefined*
 
+> [!WARNING]
+> This function can throw errors.
+
 ### **getEntities**
 `
 getEntities(options?: EntityQueryOptions): Entity[]
@@ -248,60 +236,52 @@ Returns a set of entities based on a set of conditions defined via the EntityQue
 > This function can throw errors.
 
 #### Examples
-##### ***bounceSkeletons.ts***
+##### ***checkFeatherNearby.ts***
 ```typescript
-  let mobs = ["creeper", "skeleton", "sheep"];
+import { DimensionLocation, EntityComponentTypes } from "@minecraft/server";
 
-  // create some sample mob data
-  for (let i = 0; i < 10; i++) {
-    overworld.spawnEntity(mobs[i % mobs.length], targetLocation);
-  }
+// Returns true if a feather item entity is within 'distance' blocks of 'location'.
+function isFeatherNear(location: DimensionLocation, distance: number): boolean {
+    const items = location.dimension.getEntities({
+        location: location,
+        maxDistance: 20,
+    });
+    
+    for (const item of items) {
+        const itemComp = item.getComponent(EntityComponentTypes.Item);
+    
+        if (itemComp) {
+            if (itemComp.itemStack.typeId.endsWith('feather')) {
+                return true;
+            }
+        }
+    }
 
-  let eqo: mc.EntityQueryOptions = {
-    type: "skeleton",
-  };
-
-  for (let entity of overworld.getEntities(eqo)) {
-    entity.applyKnockback(0, 0, 0, 1);
-  }
+    return false;
+}
 ```
 ##### ***tagsQuery.ts***
 ```typescript
-  let mobs = ["creeper", "skeleton", "sheep"];
+import { EntityQueryOptions, DimensionLocation } from '@minecraft/server';
 
-  // create some sample mob data
-  for (let i = 0; i < 10; i++) {
-    let mobTypeId = mobs[i % mobs.length];
-    let entity = overworld.spawnEntity(mobTypeId, targetLocation);
-    entity.addTag("mobparty." + mobTypeId);
-  }
+function mobParty(targetLocation: DimensionLocation) {
+    const mobs = ['creeper', 'skeleton', 'sheep'];
 
-  let eqo: mc.EntityQueryOptions = {
-    tags: ["mobparty.skeleton"],
-  };
-
-  for (let entity of overworld.getEntities(eqo)) {
-    entity.kill();
-  }
-```
-##### ***testThatEntityIsFeatherItem.ts***
-```typescript
-  const overworld = mc.world.getDimension("overworld");
-
-  const items = overworld.getEntities({
-    location: targetLocation,
-    maxDistance: 20,
-  });
-
-  for (const item of items) {
-    const itemComp = item.getComponent("item") as mc.EntityItemComponent;
-
-    if (itemComp) {
-      if (itemComp.itemStack.typeId.endsWith("feather")) {
-        log("Success! Found a feather", 1);
-      }
+    // create some sample mob data
+    for (let i = 0; i < 10; i++) {
+        const mobTypeId = mobs[i % mobs.length];
+        const entity = targetLocation.dimension.spawnEntity(mobTypeId, targetLocation);
+        entity.addTag('mobparty.' + mobTypeId);
     }
-  }
+
+    const eqo: EntityQueryOptions = {
+        tags: ['mobparty.skeleton'],
+    };
+
+    for (const entity of targetLocation.dimension.getEntities(eqo)) {
+        entity.kill();
+    }
+}
 ```
 
 ### **getEntitiesAtBlockLocation**
@@ -366,6 +346,27 @@ Returns the current weather.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **playSound**
+`
+playSound(soundId: string, location: Vector3, soundOptions?: WorldSoundOptions): void
+`
+
+#### **Parameters**
+- **soundId**: *string*
+- **location**: [*Vector3*](Vector3.md)
+- **soundOptions**?: [*WorldSoundOptions*](WorldSoundOptions.md) = `null`
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
 ::: moniker-end
 
 ### **runCommand**
@@ -458,42 +459,39 @@ Creates a new entity (e.g., a mob) at the specified location.
 #### Examples
 ##### ***createOldHorse.ts***
 ```typescript
-  const overworld = mc.world.getDimension("overworld");
+// Spawns an adult horse
+import { DimensionLocation } from '@minecraft/server';
 
-  log("Create a horse and triggering the 'ageable_grow_up' event, ensuring the horse is created as an adult");
-  overworld.spawnEntity("minecraft:horse<minecraft:ageable_grow_up>", targetLocation);
+function spawnAdultHorse(location: DimensionLocation) {
+    // Create a horse and triggering the 'ageable_grow_up' event, ensuring the horse is created as an adult
+    location.dimension.spawnEntity('minecraft:horse<minecraft:ageable_grow_up>', location);
+}
 ```
 ##### ***quickFoxLazyDog.ts***
 ```typescript
-  const overworld = mc.world.getDimension("overworld");
+// Spawns a fox over a dog
+import { DimensionLocation } from '@minecraft/server';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
 
-  const fox = overworld.spawnEntity("minecraft:fox", {
-    x: targetLocation.x + 1,
-    y: targetLocation.y + 2,
-    z: targetLocation.z + 3,
-  });
+function spawnAdultHorse(location: DimensionLocation) {
+    // Create fox (our quick brown fox)
+    const fox = location.dimension.spawnEntity(MinecraftEntityTypes.Fox, {
+        x: location.x,
+        y: location.y + 2,
+        z: location.z,
+    });
 
-  fox.addEffect("speed", 10, {
-    amplifier: 2,
-  });
-  log("Created a fox.");
+    fox.addEffect('speed', 10, {
+        amplifier: 2,
+    });
 
-  const wolf = overworld.spawnEntity("minecraft:wolf", {
-    x: targetLocation.x + 4,
-    y: targetLocation.y + 2,
-    z: targetLocation.z + 3,
-  });
-  wolf.addEffect("slowness", 10, {
-    amplifier: 2,
-  });
-  wolf.isSneaking = true;
-  log("Created a sneaking wolf.", 1);
-```
-##### ***triggerEvent.ts***
-```typescript
-  const creeper = overworld.spawnEntity("minecraft:creeper", targetLocation);
-
-  creeper.triggerEvent("minecraft:start_exploding_forced");
+    // Create wolf (our lazy dog)
+    const wolf = location.dimension.spawnEntity(MinecraftEntityTypes.Wolf, location);
+    wolf.addEffect('slowness', 10, {
+        amplifier: 2,
+    });
+    wolf.isSneaking = true;
+}
 ```
 
 ### **spawnItem**
@@ -520,33 +518,16 @@ Creates a new item stack as an entity at the specified location.
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 #### Examples
-##### ***itemStacks.ts***
+##### ***spawnFeatherItem.ts***
 ```typescript
-const overworld = mc.world.getDimension('overworld');
+// Spawns a feather at a location
+import { ItemStack, DimensionLocation } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
 
-const oneItemLoc = { x: targetLocation.x + targetLocation.y + 3, y: 2, z: targetLocation.z + 1 };
-const fiveItemsLoc = { x: targetLocation.x + 1, y: targetLocation.y + 2, z: targetLocation.z + 1 };
-const diamondPickaxeLoc = { x: targetLocation.x + 2, y: targetLocation.y + 2, z: targetLocation.z + 4 };
-
-const oneEmerald = new mc.ItemStack(mc.MinecraftItemTypes.Emerald, 1);
-const onePickaxe = new mc.ItemStack(mc.MinecraftItemTypes.DiamondPickaxe, 1);
-const fiveEmeralds = new mc.ItemStack(mc.MinecraftItemTypes.Emerald, 5);
-
-log(`Spawning an emerald at (${oneItemLoc.x}, ${oneItemLoc.y}, ${oneItemLoc.z})`);
-overworld.spawnItem(oneEmerald, oneItemLoc);
-
-log(`Spawning five emeralds at (${fiveItemsLoc.x}, ${fiveItemsLoc.y}, ${fiveItemsLoc.z})`);
-overworld.spawnItem(fiveEmeralds, fiveItemsLoc);
-
-log(`Spawning a diamond pickaxe at (${diamondPickaxeLoc.x}, ${diamondPickaxeLoc.y}, ${diamondPickaxeLoc.z})`);
-overworld.spawnItem(onePickaxe, diamondPickaxeLoc);
-```
-##### ***spawnItem.ts***
-```typescript
-const featherItem = new mc.ItemStack(mc.MinecraftItemTypes.Feather, 1);
-
-overworld.spawnItem(featherItem, targetLocation);
-log(`New feather created at ${targetLocation.x}, ${targetLocation.y}, ${targetLocation.z}!`);
+function spawnFeather(location: DimensionLocation) {
+    const featherItem = new ItemStack(MinecraftItemTypes.Feather, 1);
+    location.dimension.spawnItem(featherItem, location);
+}
 ```
 
 ### **spawnParticle**
@@ -578,16 +559,25 @@ Creates a new particle emitter at a specified location in the world.
 #### Examples
 ##### ***spawnParticle.ts***
 ```typescript
-  for (let i = 0; i < 100; i++) {
-    const molang = new mc.MolangVariableMap();
+// A function that spawns a particle at a random location near the target location for all players in the server
+import { world, MolangVariableMap, DimensionLocation, Vector3 } from '@minecraft/server';
 
-    molang.setColorRGB("variable.color", { red: Math.random(), green: Math.random(), blue: Math.random(), alpha: 1 });
+function spawnConfetti(location: DimensionLocation) {
+    for (let i = 0; i < 100; i++) {
+        const molang = new MolangVariableMap();
 
-    let newLocation = {
-      x: targetLocation.x + Math.floor(Math.random() * 8) - 4,
-      y: targetLocation.y + Math.floor(Math.random() * 8) - 4,
-      z: targetLocation.z + Math.floor(Math.random() * 8) - 4,
-    };
-    overworld.spawnParticle("minecraft:colored_flame_particle", newLocation, molang);
-  }
+        molang.setColorRGB('variable.color', {
+            red: Math.random(),
+            green: Math.random(),
+            blue: Math.random()
+        });
+
+        const newLocation: Vector3 = {
+            x: location.x + Math.floor(Math.random() * 8) - 4,
+            y: location.y + Math.floor(Math.random() * 8) - 4,
+            z: location.z + Math.floor(Math.random() * 8) - 4,
+        };
+        location.dimension.spawnParticle('minecraft:colored_flame_particle', newLocation, molang);
+    }
+}
 ```

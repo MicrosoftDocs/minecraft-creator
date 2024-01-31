@@ -321,6 +321,7 @@ Hopper is deactivated
 Horse is wearing a saddle
 - `minecraft:horse_unsaddled`
 Horse is not wearing a saddle
+- `minecraft:increase_max_health`
 - `minecraft:join_caravan`
 Entity joins a caravan
 - `minecraft:laid_egg`
@@ -518,7 +519,6 @@ Entity starts going into half puff
 Entity starts Johnny action
 - `minecraft:start_land`
 Entity starts tp land
-- `minecraft:start_playing_idle_ground_sound`
 - `minecraft:start_roar`
 Entity starts roaring
 - `minecraft:start_sitting`
@@ -533,7 +533,6 @@ Entity stops celebrating
 Entity stops exploding
 - `minecraft:stop_johnny`
 Entity stops Johnny action
-- `minecraft:stop_playing_idle_ground_sound`
 - `minecraft:stop_sitting`
 - `minecraft:stop_transforming`
 Entity stops transforming
