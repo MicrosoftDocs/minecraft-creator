@@ -28,7 +28,7 @@ Note that commands executed via `queue_command` are guaranteed to run in order w
 
 ```json
 "queue_command":{
-    "command" : "/give @p emerald",
+    "command" : "give @p emerald",
     "command array": [], //not used
     "target" : "self"
 }
