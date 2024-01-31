@@ -325,22 +325,24 @@ Tests that an entity instance is present within the GameTest area. If not, an ex
 #### Examples
 ##### ***simpleMobTest.ts***
 ```typescript
-gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
-  const attackerId = "fox";
-  const victimId = "chicken";
+import * as gameTest from '@minecraft/server-gametest';
 
-  test.spawn(attackerId, { x: 5, y: 2, z: 5 });
-  let victim = test.spawn(victimId, { x: 2, y: 2, z: 2 });
+gameTest
+    .register('StarterTests', 'simpleMobTest', (test: gameTest.Test) => {
+        const attackerId = 'fox';
+        const victimId = 'chicken';
 
-  test.assertEntityInstancePresentInArea(victim, true);
+        test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+        const victim = test.spawn(victimId, { x: 2, y: 2, z: 2 });
 
-  test.succeedWhen(() => {
-    test.assertEntityInstancePresentInArea(victim, false);
-  });
-})
-  .maxTicks(400)
-  .structureName("gametests:mediumglass");
+        test.assertEntityInstancePresentInArea(victim, true);
 
+        test.succeedWhen(() => {
+            test.assertEntityInstancePresentInArea(victim, false);
+        });
+    })
+    .maxTicks(400)
+    .structureName('gametests:mediumglass');
 ```
 
 ### **assertEntityPresent**
@@ -392,21 +394,24 @@ Tests that an entity of a specified type is present within the GameTest area. If
 #### Examples
 ##### ***simpleMobTest.ts***
 ```typescript
-  gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
-    const attackerId = "fox";
-    const victimId = "chicken";
+import * as gameTest from '@minecraft/server-gametest';
 
-    test.spawn(attackerId, { x: 5, y: 2, z: 5 });
-    test.spawn(victimId, { x: 2, y: 2, z: 2 });
+gameTest
+    .register('StarterTests', 'simpleMobTest', (test: gameTest.Test) => {
+        const attackerId = 'fox';
+        const victimId = 'chicken';
 
-    test.assertEntityPresentInArea(victimId, true);
+        test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+        test.spawn(victimId, { x: 2, y: 2, z: 2 });
 
-    test.succeedWhen(() => {
-      test.assertEntityPresentInArea(victimId, false);
-    });
-  })
+        test.assertEntityPresentInArea(victimId, true);
+
+        test.succeedWhen(() => {
+            test.assertEntityPresentInArea(victimId, false);
+        });
+    })
     .maxTicks(400)
-    .structureName("gametests:mediumglass");
+    .structureName('gametests:mediumglass');
 ```
 
 ### **assertEntityState**
@@ -1034,7 +1039,7 @@ For blocks that are fluid containers - like a cauldron - changes the type of flu
   Location of the fluid container block.
 - **type**: [*@minecraft/server.FluidType*](../../minecraft/server/FluidType.md)
   
-  Type of fluid to set. See {@link @minecraft/server-gametest.FluidType} for a list of values.
+  Type of fluid to set. See @minecraft/server.FluidType for a list of values.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -1093,21 +1098,24 @@ Spawns an entity at a location.
 #### Examples
 ##### ***simpleMobTest.ts***
 ```typescript
-  gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
-    const attackerId = "fox";
-    const victimId = "chicken";
+import * as gameTest from '@minecraft/server-gametest';
 
-    test.spawn(attackerId, { x: 5, y: 2, z: 5 });
-    test.spawn(victimId, { x: 2, y: 2, z: 2 });
+gameTest
+    .register('StarterTests', 'simpleMobTest', (test: gameTest.Test) => {
+        const attackerId = 'fox';
+        const victimId = 'chicken';
 
-    test.assertEntityPresentInArea(victimId, true);
+        test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+        test.spawn(victimId, { x: 2, y: 2, z: 2 });
 
-    test.succeedWhen(() => {
-      test.assertEntityPresentInArea(victimId, false);
-    });
-  })
+        test.assertEntityPresentInArea(victimId, true);
+
+        test.succeedWhen(() => {
+            test.assertEntityPresentInArea(victimId, false);
+        });
+    })
     .maxTicks(400)
-    .structureName("gametests:mediumglass");
+    .structureName('gametests:mediumglass');
 ```
 ##### ***spawnAdultPig.js***
 ```typescript
@@ -1386,21 +1394,24 @@ Runs the given callback every tick. When the callback successfully executes, the
 #### Examples
 ##### ***simpleMobTest.ts***
 ```typescript
-  gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
-    const attackerId = "fox";
-    const victimId = "chicken";
+import * as gameTest from '@minecraft/server-gametest';
 
-    test.spawn(attackerId, { x: 5, y: 2, z: 5 });
-    test.spawn(victimId, { x: 2, y: 2, z: 2 });
+gameTest
+    .register('StarterTests', 'simpleMobTest', (test: gameTest.Test) => {
+        const attackerId = 'fox';
+        const victimId = 'chicken';
 
-    test.assertEntityPresentInArea(victimId, true);
+        test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+        test.spawn(victimId, { x: 2, y: 2, z: 2 });
 
-    test.succeedWhen(() => {
-      test.assertEntityPresentInArea(victimId, false);
-    });
-  })
+        test.assertEntityPresentInArea(victimId, true);
+
+        test.succeedWhen(() => {
+            test.assertEntityPresentInArea(victimId, false);
+        });
+    })
     .maxTicks(400)
-    .structureName("gametests:mediumglass");
+    .structureName('gametests:mediumglass');
 ```
 
 ### **succeedWhenBlockPresent**

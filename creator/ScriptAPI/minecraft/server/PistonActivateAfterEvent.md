@@ -17,6 +17,18 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 Contains information related to changes to a piston expanding or retracting.
 
+#### Examples
+##### ***pistonAfterEvent.ts***
+```typescript
+import { world, system, PistonActivateAfterEvent } from '@minecraft/server';
+
+world.afterEvents.pistonActivate.subscribe((pistonEvent: PistonActivateAfterEvent) => {
+    console.warn(
+        `Piston event at ${system.currentTick} ${(pistonEvent.piston.isMoving ? ' Moving' : 'Not moving')} with state: ${pistonEvent.piston.state}`,
+    );
+});
+```
+
 ## Properties
 
 ### **isExpanding**
@@ -36,43 +48,11 @@ Type: [*BlockPistonComponent*](BlockPistonComponent.md)
 #### Examples
 ##### ***pistonAfterEvent.ts***
 ```typescript
-// set up a couple of piston blocks
-let piston = overworld.getBlock(targetLocation);
-let button = overworld.getBlock({
-  x: targetLocation.x,
-  y: targetLocation.y + 1,
-  z: targetLocation.z,
+import { world, system, PistonActivateAfterEvent } from '@minecraft/server';
+
+world.afterEvents.pistonActivate.subscribe((pistonEvent: PistonActivateAfterEvent) => {
+    console.warn(
+        `Piston event at ${system.currentTick} ${(pistonEvent.piston.isMoving ? ' Moving' : 'Not moving')} with state: ${pistonEvent.piston.state}`,
+    );
 });
-
-if (piston === undefined || button === undefined) {
-  log("Could not find block at location.");
-  return -1;
-}
-
-piston.setPermutation(
-  mc.BlockPermutation.resolve("piston").withState("facing_direction", 3)
-);
-button.setPermutation(
-  mc.BlockPermutation.resolve("acacia_button").withState("facing_direction", 1)
-);
-
-mc.world.afterEvents.pistonActivate.subscribe(
-  (pistonEvent: mc.PistonActivateAfterEvent) => {
-    let eventLoc = pistonEvent.piston.block.location;
-
-    if (
-      eventLoc.x === targetLocation.x &&
-      eventLoc.y === targetLocation.y &&
-      eventLoc.z === targetLocation.z
-    ) {
-      log(
-        "Piston event at " +
-          mc.system.currentTick +
-          (pistonEvent.piston.isMoving ? " Moving" : "") +
-          " State: " +
-          pistonEvent.piston.state
-      );
-    }
-  }
-);
 ```

@@ -14,11 +14,12 @@ description: Contents of the @minecraft/common module
 ```json
 {
     "module_name": "@minecraft/common",
-    "version": "1.1.0"
+    "version": "1.2.0"
 }
 ```
 
 ## Available Versions
+- `1.2.0`
 - `1.1.0`
 - `1.0.0`
 
@@ -29,3 +30,4 @@ description: Contents of the @minecraft/common module
 - [ArgumentOutOfBoundsError](ArgumentOutOfBoundsError.md)
 - [EngineError](EngineError.md)
 - [InvalidArgumentError](InvalidArgumentError.md)
+- [PropertyOutOfBoundsError](PropertyOutOfBoundsError.md)

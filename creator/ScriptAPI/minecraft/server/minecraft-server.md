@@ -12,6 +12,551 @@ Contains many types related to manipulating a Minecraft world, including entitie
 
 ## [Changelog](changelog.md)
 
+#### Examples
+##### ***applyDamageThenHeal.ts***
+```typescript
+// A function that applies damage and then heals the entity
+import { Entity, EntityComponentTypes, system, world } from '@minecraft/server';
+
+function applyDamageAndHeal(entity: Entity) {
+    entity.applyDamage(19); // Many mobs have max damage of 20 so this is a near-death mob
+
+    system.runTimeout(() => {
+        const health = entity.getComponent(EntityComponentTypes.Health);
+        if (health) {
+            world.sendMessage(`Entity health before heal: ${health.currentValue}`);
+
+            health.resetToMaxValue();
+
+            world.sendMessage(`Entity after before heal: ${health.currentValue}`);
+        } else {
+            console.warn('Entity does not have health component');
+        }
+    }, 40); // Run in a few seconds (40 ticks)
+}
+```
+##### ***bounceSkeletons.ts***
+```typescript
+import { EntityQueryOptions, DimensionLocation } from '@minecraft/server';
+
+function mobParty(targetLocation: DimensionLocation) {
+    const mobs = ['creeper', 'skeleton', 'sheep'];
+
+    // create some sample mob data
+    for (let i = 0; i < 10; i++) {
+        targetLocation.dimension.spawnEntity(mobs[i % mobs.length], targetLocation);
+    }
+
+    const eqo: EntityQueryOptions = {
+        type: 'skeleton',
+    };
+
+    for (const entity of targetLocation.dimension.getEntities(eqo)) {
+        entity.applyKnockback(0, 0, 0, 1);
+    }
+}
+```
+##### ***buttonPushEvent.ts***
+```typescript
+import { world, ButtonPushAfterEvent, system } from '@minecraft/server';
+
+world.afterEvents.buttonPush.subscribe((buttonPushEvent: ButtonPushAfterEvent) => {
+    const eventLoc = buttonPushEvent.block.location;
+
+    world.sendMessage(
+        `Button push event at tick ${system.currentTick} Power:${buttonPushEvent.block.getRedstonePower()}`,
+    );
+});
+```
+##### ***checkFeatherNearby.ts***
+```typescript
+import { DimensionLocation, EntityComponentTypes } from "@minecraft/server";
+
+// Returns true if a feather item entity is within 'distance' blocks of 'location'.
+function isFeatherNear(location: DimensionLocation, distance: number): boolean {
+    const items = location.dimension.getEntities({
+        location: location,
+        maxDistance: 20,
+    });
+    
+    for (const item of items) {
+        const itemComp = item.getComponent(EntityComponentTypes.Item);
+    
+        if (itemComp) {
+            if (itemComp.itemStack.typeId.endsWith('feather')) {
+                return true;
+            }
+        }
+    }
+
+    return false;
+}
+```
+##### ***createExplosions.ts***
+```typescript
+// Creates an explosion of radius 15 that does not break blocks
+import { DimensionLocation } from '@minecraft/server';
+
+function createExplosions(location: DimensionLocation) {
+    // Creates an explosion of radius 15 that does not break blocks
+    location.dimension.createExplosion(location, 15, { breaksBlocks: false });
+
+    // Creates an explosion of radius 15 that does not cause fire
+    location.dimension.createExplosion(location, 15, { causesFire: true });
+
+    // Creates an explosion of radius 10 that can go underwater
+    location.dimension.createExplosion(location, 10, { allowUnderwater: true });
+}
+```
+##### ***createTranslatedSign.ts***
+```typescript
+// A function the creates a sign at the specified location with the specified text
+import { DimensionLocation, BlockPermutation, BlockComponentTypes } from '@minecraft/server';
+import { MinecraftBlockTypes } from '@minecraft/vanilla-data';
+
+function createSignAt(location: DimensionLocation) {
+    const signBlock = location.dimension.getBlock(location);
+
+    if (!signBlock) {
+        console.warn('Could not find a block at specified location.');
+        return;
+    }
+
+    const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, { ground_sign_direction: 8 });
+    signBlock.setPermutation(signPerm); // Update block to be a sign
+
+    // Update the sign block's text
+    // with "Steve's Head"
+    const signComponent = signBlock.getComponent(BlockComponentTypes.Sign);
+    if (signComponent) {
+        signComponent.setText({ translate: 'item.skull.player.name', with: ['Steve'] });
+    }
+}
+```
+##### ***givePlayerEquipment.ts***
+```typescript
+// Gives the player some equipment
+import { EquipmentSlot, ItemStack, Player, EntityComponentTypes } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
+
+function giveEquipment(player: Player) {
+    const equipmentCompPlayer = player.getComponent(EntityComponentTypes.Equippable);
+    if (equipmentCompPlayer) {
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Head, new ItemStack(MinecraftItemTypes.GoldenHelmet));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Chest, new ItemStack(MinecraftItemTypes.IronChestplate));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Legs, new ItemStack(MinecraftItemTypes.DiamondLeggings));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Feet, new ItemStack(MinecraftItemTypes.NetheriteBoots));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Mainhand, new ItemStack(MinecraftItemTypes.WoodenSword));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Offhand, new ItemStack(MinecraftItemTypes.Shield));
+    } else {
+        console.warn('No equipment component found on player');
+    }
+}
+```
+##### ***givePlayerIronFireSword.ts***
+```typescript
+// Spawns a bunch of item stacks
+import { ItemComponentTypes, ItemStack, Player } from '@minecraft/server';
+import { MinecraftItemTypes, MinecraftEnchantmentTypes } from '@minecraft/vanilla-data';
+
+function giveFireSword(player: Player) {
+    const ironFireSword = new ItemStack(MinecraftItemTypes.DiamondSword, 1);
+
+    const enchantments = ironFireSword?.getComponent(ItemComponentTypes.Enchantable);
+    if (enchantments) {
+        enchantments.addEnchantment({ type: MinecraftEnchantmentTypes.FireAspect, level: 1 });
+    }
+
+    const inventory = player.getComponent('minecraft:inventory');
+    if (inventory === undefined || inventory.container === undefined) {
+        return;
+    }
+    inventory.container.setItem(0, ironFireSword);
+}
+```
+##### ***incrementDynamicProperty.ts***
+```typescript
+import * as mc from '@minecraft/server';
+
+function incrementProperty(propertyName: string): boolean {
+    let number = mc.world.getDynamicProperty(propertyName);
+
+    console.warn('Current value is: ' + number);
+
+    if (number === undefined) {
+        number = 0;
+    }
+
+    if (typeof number !== 'number') {
+        console.warn('Number is of an unexpected type.');
+        return false;
+    }
+
+    mc.world.setDynamicProperty(propertyName, number + 1);
+    return true;
+}
+
+incrementProperty('samplelibrary:number');
+```
+##### ***incrementDynamicPropertyInJsonBlob.ts***
+```typescript
+import * as mc from '@minecraft/server';
+
+function updateWorldProperty(propertyName: string): boolean {
+    let paintStr = mc.world.getDynamicProperty(propertyName);
+    let paint: { color: string; intensity: number } | undefined = undefined;
+
+    console.log('Current value is: ' + paintStr);
+
+    if (paintStr === undefined) {
+        paint = {
+            color: 'purple',
+            intensity: 0,
+        };
+    } else {
+        if (typeof paintStr !== 'string') {
+            console.warn('Paint is of an unexpected type.');
+            return false;
+        }
+
+        try {
+            paint = JSON.parse(paintStr);
+        } catch (e) {
+            console.warn('Error parsing serialized struct.');
+            return false;
+        }
+    }
+
+    if (!paint) {
+        console.warn('Error parsing serialized struct.');
+        return false;
+    }
+
+    paint.intensity++;
+    paintStr = JSON.stringify(paint); // be very careful to ensure your serialized JSON str cannot exceed limits
+    mc.world.setDynamicProperty(propertyName, paintStr);
+
+    return true;
+}
+
+updateWorldProperty('samplelibrary:longerjson');
+```
+##### ***itemStacks.ts***
+```typescript
+// Spawns a bunch of item stacks
+import { ItemStack, DimensionLocation, world } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
+
+function spawnFeast(location: DimensionLocation) {
+    const oneItemLoc = { x: location.x + location.y + 3, y: 2, z: location.z + 1 };
+    const fiveItemsLoc = { x: location.x + 1, y: location.y + 2, z: location.z + 1 };
+    const diamondPickaxeLoc = { x: location.x + 2, y: location.y + 2, z: location.z + 4 };
+
+    const oneEmerald = new ItemStack(MinecraftItemTypes.Emerald, 1);
+    const onePickaxe = new ItemStack(MinecraftItemTypes.DiamondPickaxe, 1);
+    const fiveEmeralds = new ItemStack(MinecraftItemTypes.Emerald, 5);
+
+    world.sendMessage(`Spawning an emerald at (${oneItemLoc.x}, ${oneItemLoc.y}, ${oneItemLoc.z})`);
+    location.dimension.spawnItem(oneEmerald, oneItemLoc);
+
+    world.sendMessage(`Spawning five emeralds at (${fiveItemsLoc.x}, ${fiveItemsLoc.y}, ${fiveItemsLoc.z})`);
+    location.dimension.spawnItem(fiveEmeralds, fiveItemsLoc);
+
+    world.sendMessage(`Spawning a diamond pickaxe at (${diamondPickaxeLoc.x}, ${diamondPickaxeLoc.y}, ${diamondPickaxeLoc.z})`);
+    location.dimension.spawnItem(onePickaxe, diamondPickaxeLoc);
+}
+```
+##### ***leverActionEvent.ts***
+```typescript
+import { world, system, LeverActionAfterEvent } from '@minecraft/server';
+
+world.afterEvents.leverAction.subscribe((leverActivateEvent: LeverActionAfterEvent) => {
+    console.warn(
+        `Lever event at ${system.currentTick} with power: ${leverActivateEvent.block.getRedstonePower()}`,
+    );
+});
+
+```
+##### ***logEntitySpawnEvents.ts***
+```typescript
+// Register a new function that is called when a new entity is created.
+import { world, EntitySpawnAfterEvent } from '@minecraft/server';
+
+world.afterEvents.entitySpawn.subscribe((entityEvent: EntitySpawnAfterEvent) => {
+    const spawnLocation = entityEvent.entity.location;
+    world.sendMessage(
+        `New entity of type '${entityEvent.entity.typeId}' spawned at ${spawnLocation.x}, ${spawnLocation.y}, ${spawnLocation.z}!`,
+    );
+});
+```
+##### ***pistonAfterEvent.ts***
+```typescript
+import { world, system, PistonActivateAfterEvent } from '@minecraft/server';
+
+world.afterEvents.pistonActivate.subscribe((pistonEvent: PistonActivateAfterEvent) => {
+    console.warn(
+        `Piston event at ${system.currentTick} ${(pistonEvent.piston.isMoving ? ' Moving' : 'Not moving')} with state: ${pistonEvent.piston.state}`,
+    );
+});
+```
+##### ***playMusicAndSound.ts***
+```typescript
+import { world, MusicOptions, WorldSoundOptions, PlayerSoundOptions, Vector3 } from '@minecraft/server';
+
+const players = world.getPlayers();
+const targetLocation: Vector3 = {
+    x: 0,
+    y: 0,
+    z: 0,
+};
+
+const musicOptions: MusicOptions = {
+    fade: 0.5,
+    loop: true,
+    volume: 1.0,
+};
+world.playMusic('music.menu', musicOptions);
+
+const worldSoundOptions: WorldSoundOptions = {
+    pitch: 0.5,
+    volume: 4.0,
+};
+world.playSound('ambient.weather.thunder', targetLocation, worldSoundOptions);
+
+const playerSoundOptions: PlayerSoundOptions = {
+    pitch: 1.0,
+    volume: 1.0,
+};
+
+players[0].playSound('bucket.fill_water', playerSoundOptions);
+```
+##### ***quickFoxLazyDog.ts***
+```typescript
+// Spawns a fox over a dog
+import { DimensionLocation } from '@minecraft/server';
+import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
+
+function spawnAdultHorse(location: DimensionLocation) {
+    // Create fox (our quick brown fox)
+    const fox = location.dimension.spawnEntity(MinecraftEntityTypes.Fox, {
+        x: location.x,
+        y: location.y + 2,
+        z: location.z,
+    });
+
+    fox.addEffect('speed', 10, {
+        amplifier: 2,
+    });
+
+    // Create wolf (our lazy dog)
+    const wolf = location.dimension.spawnEntity(MinecraftEntityTypes.Wolf, location);
+    wolf.addEffect('slowness', 10, {
+        amplifier: 2,
+    });
+    wolf.isSneaking = true;
+}
+```
+##### ***setEntityOnFire.ts***
+```typescript
+import { world, Entity, EntityComponentTypes, system } from "@minecraft/server";
+
+function setAblaze(entity: Entity) {
+    entity.setOnFire(20, true);
+
+    system.runTimeout(() => {
+        const onfire = entity.getComponent(EntityComponentTypes.OnFire);
+        if (onfire) {
+            world.sendMessage(`${onfire.onFireTicksRemaining} fire ticks remaining, extinguishing the entity.`);
+        }
+        // This will extinguish the entity
+        entity.extinguishFire(true);
+    }, 30); // Run in 30 ticks or ~1.5 seconds
+    
+}
+```
+##### ***setSignText.ts***
+```typescript
+import {
+    BlockComponentTypes,
+    DimensionLocation,
+    RawMessage,
+    RawText,
+} from '@minecraft/server';
+
+// Function which updates a sign blocks text to raw text
+function updateSignText(signLocation: DimensionLocation) {
+    const block = signLocation.dimension.getBlock(signLocation);
+    if (!block) {
+        console.warn('Could not find a block at specified location.');
+        return;
+    }
+
+    const sign = block.getComponent(BlockComponentTypes.Sign);
+    if (sign) {
+        // RawMessage
+        const helloWorldMessage: RawMessage = { text: 'Hello World' };
+        sign.setText(helloWorldMessage);
+
+        // RawText
+        const helloWorldText: RawText = { rawtext: [{ text: 'Hello World' }] };
+        sign.setText(helloWorldText);
+
+        // Regular string
+        sign.setText('Hello World');
+    } else {
+        console.warn('Could not find a sign component on the block.');
+    }
+}
+```
+##### ***setTitle.ts***
+```typescript
+import { world } from '@minecraft/server';
+
+world.afterEvents.playerSpawn.subscribe((event) => {
+    event.player.onScreenDisplay.setTitle('§o§6You respawned!§r');
+});
+```
+##### ***setTitleAndSubtitle.ts***
+```typescript
+import { world } from '@minecraft/server';
+
+world.afterEvents.playerSpawn.subscribe((event) => {
+    event.player.onScreenDisplay.setTitle('You respawned', {
+        stayDuration: 100,
+        fadeInDuration: 2,
+        fadeOutDuration: 4,
+        subtitle: 'Try not to die next time!',
+    });
+});
+```
+##### ***spawnFeatherItem.ts***
+```typescript
+// Spawns a feather at a location
+import { ItemStack, DimensionLocation } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
+
+function spawnFeather(location: DimensionLocation) {
+    const featherItem = new ItemStack(MinecraftItemTypes.Feather, 1);
+    location.dimension.spawnItem(featherItem, location);
+}
+```
+##### ***tagsQuery.ts***
+```typescript
+import { EntityQueryOptions, DimensionLocation } from '@minecraft/server';
+
+function mobParty(targetLocation: DimensionLocation) {
+    const mobs = ['creeper', 'skeleton', 'sheep'];
+
+    // create some sample mob data
+    for (let i = 0; i < 10; i++) {
+        const mobTypeId = mobs[i % mobs.length];
+        const entity = targetLocation.dimension.spawnEntity(mobTypeId, targetLocation);
+        entity.addTag('mobparty.' + mobTypeId);
+    }
+
+    const eqo: EntityQueryOptions = {
+        tags: ['mobparty.skeleton'],
+    };
+
+    for (const entity of targetLocation.dimension.getEntities(eqo)) {
+        entity.kill();
+    }
+}
+```
+##### ***teleportMovement.ts***
+```typescript
+import { world, system } from '@minecraft/server';
+
+const overworld = world.getDimension('overworld');
+const targetLocation = { x: 0, y: 0, z: 0 };
+
+const pig = overworld.spawnEntity('minecraft:pig', targetLocation);
+
+let inc = 1;
+const runId = system.runInterval(() => {
+    pig.teleport(
+        { x: targetLocation.x + inc / 4, y: targetLocation.y + inc / 4, z: targetLocation.z + inc / 4 },
+        {
+            facingLocation: targetLocation,
+        },
+    );
+
+    if (inc > 100) {
+        system.clearRun(runId);
+    }
+    inc++;
+}, 4);
+```
+##### ***titleCountdown.ts***
+```typescript
+import { world, system } from '@minecraft/server';
+
+world.afterEvents.playerSpawn.subscribe(event => {
+    event.player.onScreenDisplay.setTitle('Get ready!', {
+        stayDuration: 220,
+        fadeInDuration: 2,
+        fadeOutDuration: 4,
+        subtitle: '10',
+    });
+
+    let countdown = 10;
+
+    const intervalId = system.runInterval(() => {
+        countdown--;
+        event.player.onScreenDisplay.updateSubtitle(countdown.toString());
+
+        if (countdown == 0) {
+            system.clearRun(intervalId);
+        }
+    }, 20);
+});
+```
+##### ***tripWireTripEvent.ts***
+```typescript
+import { Vector3, world, BlockPermutation, TripWireTripAfterEvent, system } from '@minecraft/server';
+
+const overworld = world.getDimension('overworld');
+const targetLocation: Vector3 = { x: 0, y: 0, z: 0 };
+
+// set up a tripwire
+const redstone = overworld.getBlock({ x: targetLocation.x, y: targetLocation.y - 1, z: targetLocation.z });
+const tripwire = overworld.getBlock(targetLocation);
+
+if (redstone === undefined || tripwire === undefined) {
+    console.warn('Could not find block at location.');
+} else {
+
+redstone.setPermutation(BlockPermutation.resolve('redstone_block'));
+tripwire.setPermutation(BlockPermutation.resolve('tripwire'));
+
+world.afterEvents.tripWireTrip.subscribe((tripWireTripEvent: TripWireTripAfterEvent) => {
+    const eventLoc = tripWireTripEvent.block.location;
+
+    if (eventLoc.x === targetLocation.x && eventLoc.y === targetLocation.y && eventLoc.z === targetLocation.z) {
+        console.warn(
+            'Tripwire trip event at tick ' +
+                system.currentTick +
+                (tripWireTripEvent.sources.length > 0 ? ' by entity ' + tripWireTripEvent.sources[0].id : ''),
+        );
+    }
+});
+}
+```
+##### ***yeetEntity.ts***
+```typescript
+// A function that throws entities up in the air
+import { Entity } from '@minecraft/server';
+
+function yeetEntity(entity: Entity) {
+
+    // Zero out the entity's velocity before applying impulse
+    entity.clearVelocity();
+
+    // throw the zombie up in the air
+    entity.applyImpulse({ x: 0, y: 15, z: 0 });
+}
+```
+
 ## Manifest Details
 ```json
 {
@@ -21,7 +566,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```
 
 ## Available Versions
-- `1.9.0-beta`
+- `1.10.0-beta`
 - `1.7.0`
 - `1.6.0`
 - `1.5.0`
@@ -33,223 +578,108 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - `0.1.0`
 
 ## Enumerations
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockComponentTypes](BlockComponentTypes.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockPistonState](BlockPistonState.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockVolumeIntersection](BlockVolumeIntersection.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [CompoundBlockVolumeAction](CompoundBlockVolumeAction.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [CompoundBlockVolumePositionRelativity](CompoundBlockVolumePositionRelativity.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [Difficulty](Difficulty.md)
-::: moniker-end
 - [Direction](Direction.md)
 - [DisplaySlotId](DisplaySlotId.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [DyeColor](DyeColor.md)
-::: moniker-end
 - [EasingType](EasingType.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityComponentTypes](EntityComponentTypes.md)
-::: moniker-end
 - [EntityDamageCause](EntityDamageCause.md)
 - [EntityInitializationCause](EntityInitializationCause.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityLifetimeState](EntityLifetimeState.md)
-::: moniker-end
 - [EquipmentSlot](EquipmentSlot.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [FluidType](FluidType.md)
-::: moniker-end
 - [GameMode](GameMode.md)
-::: moniker range="=minecraft-bedrock-experimental"
+- [HudElement](HudElement.md)
+- [HudVisibility](HudVisibility.md)
 - [ItemComponentTypes](ItemComponentTypes.md)
-::: moniker-end
 - [ItemLockMode](ItemLockMode.md)
 - [MoonPhase](MoonPhase.md)
 - [ObjectiveSortOrder](ObjectiveSortOrder.md)
 - [ScoreboardIdentityType](ScoreboardIdentityType.md)
 - [ScriptEventSource](ScriptEventSource.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [SignSide](SignSide.md)
-::: moniker-end
 - [TimeOfDay](TimeOfDay.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [WatchdogTerminateReason](WatchdogTerminateReason.md)
-::: moniker-end
 - [WeatherType](WeatherType.md)
 
 # Type Aliases
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockComponentTypeMap](BlockComponentTypeMap.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityComponentTypeMap](EntityComponentTypeMap.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [ItemComponentTypeMap](ItemComponentTypeMap.md)
-::: moniker-end
 
 ## Classes
-::: moniker range="=minecraft-bedrock-experimental"
 - [BiomeType](BiomeType.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [BiomeTypes](BiomeTypes.md)
-::: moniker-end
 - [Block](Block.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockAreaSize](BlockAreaSize.md)
-::: moniker-end
 - [BlockComponent](BlockComponent.md)
 - [BlockEvent](BlockEvent.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockExplodeAfterEvent](BlockExplodeAfterEvent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockExplodeAfterEventSignal](BlockExplodeAfterEventSignal.md)
-::: moniker-end
 - [BlockInventoryComponent](BlockInventoryComponent.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockLavaContainerComponent](BlockLavaContainerComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockLiquidContainerComponent](BlockLiquidContainerComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockLocationIterator](BlockLocationIterator.md)
-::: moniker-end
 - [BlockPermutation](BlockPermutation.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockPistonComponent](BlockPistonComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockPotionContainerComponent](BlockPotionContainerComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockRecordPlayerComponent](BlockRecordPlayerComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockSignComponent](BlockSignComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockSnowContainerComponent](BlockSnowContainerComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockStates](BlockStates.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockStateType](BlockStateType.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockType](BlockType.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockTypes](BlockTypes.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
-- [BlockVolumeUtils](BlockVolumeUtils.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
+- [BlockVolume](BlockVolume.md)
+- [BlockVolumeBase](BlockVolumeBase.md)
 - [BlockWaterContainerComponent](BlockWaterContainerComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [BoundingBoxUtils](BoundingBoxUtils.md)
-::: moniker-end
 - [ButtonPushAfterEvent](ButtonPushAfterEvent.md)
 - [ButtonPushAfterEventSignal](ButtonPushAfterEventSignal.md)
 - [Camera](Camera.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [ChatSendAfterEvent](ChatSendAfterEvent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [ChatSendAfterEventSignal](ChatSendAfterEventSignal.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [ChatSendBeforeEvent](ChatSendBeforeEvent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [ChatSendBeforeEventSignal](ChatSendBeforeEventSignal.md)
-::: moniker-end
 - [CommandResult](CommandResult.md)
 - [Component](Component.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [CompoundBlockVolume](CompoundBlockVolume.md)
-::: moniker-end
 - [Container](Container.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [ContainerSlot](ContainerSlot.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [DataDrivenEntityTriggerAfterEvent](DataDrivenEntityTriggerAfterEvent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [DataDrivenEntityTriggerAfterEventSignal](DataDrivenEntityTriggerAfterEventSignal.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [DataDrivenEntityTriggerBeforeEvent](DataDrivenEntityTriggerBeforeEvent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [DataDrivenEntityTriggerBeforeEventSignal](DataDrivenEntityTriggerBeforeEventSignal.md)
-::: moniker-end
 - [Dimension](Dimension.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [DimensionType](DimensionType.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [DimensionTypes](DimensionTypes.md)
-::: moniker-end
 - [Effect](Effect.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [EffectAddAfterEvent](EffectAddAfterEvent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EffectAddAfterEventSignal](EffectAddAfterEventSignal.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EffectAddBeforeEvent](EffectAddBeforeEvent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EffectAddBeforeEventSignal](EffectAddBeforeEventSignal.md)
-::: moniker-end
 - [EffectType](EffectType.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [EffectTypes](EffectTypes.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EnchantmentType](EnchantmentType.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EnchantmentTypes](EnchantmentTypes.md)
-::: moniker-end
 - [Entity](Entity.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityAddRiderComponent](EntityAddRiderComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityAgeableComponent](EntityAgeableComponent.md)
-::: moniker-end
 - [EntityAttributeComponent](EntityAttributeComponent.md)
 - [EntityBaseMovementComponent](EntityBaseMovementComponent.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityBreathableComponent](EntityBreathableComponent.md)
-::: moniker-end
 - [EntityCanClimbComponent](EntityCanClimbComponent.md)
 - [EntityCanFlyComponent](EntityCanFlyComponent.md)
 - [EntityCanPowerJumpComponent](EntityCanPowerJumpComponent.md)
 - [EntityColorComponent](EntityColorComponent.md)
 - [EntityComponent](EntityComponent.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityDefinitionFeedItem](EntityDefinitionFeedItem.md)
-::: moniker-end
 - [EntityDieAfterEvent](EntityDieAfterEvent.md)
 - [EntityDieAfterEventSignal](EntityDieAfterEventSignal.md)
 - [EntityEquippableComponent](EntityEquippableComponent.md)
@@ -283,100 +713,51 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntityIsStunnedComponent](EntityIsStunnedComponent.md)
 - [EntityIsTamedComponent](EntityIsTamedComponent.md)
 - [EntityItemComponent](EntityItemComponent.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityIterator](EntityIterator.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityLavaMovementComponent](EntityLavaMovementComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityLeashableComponent](EntityLeashableComponent.md)
-::: moniker-end
 - [EntityLoadAfterEvent](EntityLoadAfterEvent.md)
 - [EntityLoadAfterEventSignal](EntityLoadAfterEventSignal.md)
 - [EntityMarkVariantComponent](EntityMarkVariantComponent.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityMountTamingComponent](EntityMountTamingComponent.md)
-::: moniker-end
 - [EntityMovementAmphibiousComponent](EntityMovementAmphibiousComponent.md)
 - [EntityMovementBasicComponent](EntityMovementBasicComponent.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityMovementComponent](EntityMovementComponent.md)
-::: moniker-end
 - [EntityMovementFlyComponent](EntityMovementFlyComponent.md)
 - [EntityMovementGenericComponent](EntityMovementGenericComponent.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityMovementGlideComponent](EntityMovementGlideComponent.md)
-::: moniker-end
 - [EntityMovementHoverComponent](EntityMovementHoverComponent.md)
 - [EntityMovementJumpComponent](EntityMovementJumpComponent.md)
 - [EntityMovementSkipComponent](EntityMovementSkipComponent.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityMovementSwayComponent](EntityMovementSwayComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityNavigationClimbComponent](EntityNavigationClimbComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityNavigationComponent](EntityNavigationComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityNavigationFloatComponent](EntityNavigationFloatComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityNavigationFlyComponent](EntityNavigationFlyComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityNavigationGenericComponent](EntityNavigationGenericComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityNavigationHoverComponent](EntityNavigationHoverComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityNavigationWalkComponent](EntityNavigationWalkComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityNpcComponent](EntityNpcComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityOnFireComponent](EntityOnFireComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityProjectileComponent](EntityProjectileComponent.md)
-::: moniker-end
 - [EntityPushThroughComponent](EntityPushThroughComponent.md)
 - [EntityRemoveAfterEvent](EntityRemoveAfterEvent.md)
 - [EntityRemoveAfterEventSignal](EntityRemoveAfterEventSignal.md)
 - [EntityRemoveBeforeEvent](EntityRemoveBeforeEvent.md)
 - [EntityRemoveBeforeEventSignal](EntityRemoveBeforeEventSignal.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityRideableComponent](EntityRideableComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityRidingComponent](EntityRidingComponent.md)
-::: moniker-end
 - [EntityScaleComponent](EntityScaleComponent.md)
 - [EntitySkinIdComponent](EntitySkinIdComponent.md)
 - [EntitySpawnAfterEvent](EntitySpawnAfterEvent.md)
 - [EntitySpawnAfterEventSignal](EntitySpawnAfterEventSignal.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityStrengthComponent](EntityStrengthComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityTameableComponent](EntityTameableComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityType](EntityType.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
+- [EntityTypeFamilyComponent](EntityTypeFamilyComponent.md)
 - [EntityTypeIterator](EntityTypeIterator.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityTypes](EntityTypes.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityUnderwaterMovementComponent](EntityUnderwaterMovementComponent.md)
-::: moniker-end
 - [EntityVariantComponent](EntityVariantComponent.md)
 - [EntityWantsJockeyComponent](EntityWantsJockeyComponent.md)
 - [ExplosionAfterEvent](ExplosionAfterEvent.md)
@@ -385,12 +766,9 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ExplosionBeforeEventSignal](ExplosionBeforeEventSignal.md)
 - [FeedItem](FeedItem.md)
 - [FeedItemEffect](FeedItemEffect.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [FilterGroup](FilterGroup.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [FluidContainer](FluidContainer.md)
-::: moniker-end
+- [GameRules](GameRules.md)
 - [IButtonPushAfterEventSignal](IButtonPushAfterEventSignal.md)
 - [ILeverActionAfterEventSignal](ILeverActionAfterEventSignal.md)
 - [IPlayerJoinAfterEventSignal](IPlayerJoinAfterEventSignal.md)
@@ -399,30 +777,14 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ItemCompleteUseAfterEvent](ItemCompleteUseAfterEvent.md)
 - [ItemCompleteUseAfterEventSignal](ItemCompleteUseAfterEventSignal.md)
 - [ItemComponent](ItemComponent.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [ItemCooldownComponent](ItemCooldownComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [ItemDefinitionAfterEventSignal](ItemDefinitionAfterEventSignal.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [ItemDefinitionBeforeEventSignal](ItemDefinitionBeforeEventSignal.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [ItemDefinitionTriggeredAfterEvent](ItemDefinitionTriggeredAfterEvent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [ItemDefinitionTriggeredBeforeEvent](ItemDefinitionTriggeredBeforeEvent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [ItemDurabilityComponent](ItemDurabilityComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [ItemEnchantableComponent](ItemEnchantableComponent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [ItemFoodComponent](ItemFoodComponent.md)
-::: moniker-end
 - [ItemReleaseUseAfterEvent](ItemReleaseUseAfterEvent.md)
 - [ItemReleaseUseAfterEventSignal](ItemReleaseUseAfterEventSignal.md)
 - [ItemStack](ItemStack.md)
@@ -435,9 +797,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ItemStopUseOnAfterEvent](ItemStopUseOnAfterEvent.md)
 - [ItemStopUseOnAfterEventSignal](ItemStopUseOnAfterEventSignal.md)
 - [ItemType](ItemType.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [ItemTypes](ItemTypes.md)
-::: moniker-end
 - [ItemUseAfterEvent](ItemUseAfterEvent.md)
 - [ItemUseAfterEventSignal](ItemUseAfterEventSignal.md)
 - [ItemUseBeforeEvent](ItemUseBeforeEvent.md)
@@ -448,17 +808,11 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ItemUseOnBeforeEventSignal](ItemUseOnBeforeEventSignal.md)
 - [LeverActionAfterEvent](LeverActionAfterEvent.md)
 - [LeverActionAfterEventSignal](LeverActionAfterEventSignal.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [MessageReceiveAfterEvent](MessageReceiveAfterEvent.md)
-::: moniker-end
 - [MinecraftDimensionTypes](MinecraftDimensionTypes.md)
 - [MolangVariableMap](MolangVariableMap.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [PistonActivateAfterEvent](PistonActivateAfterEvent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [PistonActivateAfterEventSignal](PistonActivateAfterEventSignal.md)
-::: moniker-end
 - [Player](Player.md)
 - [PlayerBreakBlockAfterEvent](PlayerBreakBlockAfterEvent.md)
 - [PlayerBreakBlockAfterEventSignal](PlayerBreakBlockAfterEventSignal.md)
@@ -474,9 +828,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [PlayerInteractWithEntityAfterEventSignal](PlayerInteractWithEntityAfterEventSignal.md)
 - [PlayerInteractWithEntityBeforeEvent](PlayerInteractWithEntityBeforeEvent.md)
 - [PlayerInteractWithEntityBeforeEventSignal](PlayerInteractWithEntityBeforeEventSignal.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [PlayerIterator](PlayerIterator.md)
-::: moniker-end
 - [PlayerJoinAfterEvent](PlayerJoinAfterEvent.md)
 - [PlayerJoinAfterEventSignal](PlayerJoinAfterEventSignal.md)
 - [PlayerLeaveAfterEvent](PlayerLeaveAfterEvent.md)
@@ -485,12 +837,8 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [PlayerLeaveBeforeEventSignal](PlayerLeaveBeforeEventSignal.md)
 - [PlayerPlaceBlockAfterEvent](PlayerPlaceBlockAfterEvent.md)
 - [PlayerPlaceBlockAfterEventSignal](PlayerPlaceBlockAfterEventSignal.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [PlayerPlaceBlockBeforeEvent](PlayerPlaceBlockBeforeEvent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [PlayerPlaceBlockBeforeEventSignal](PlayerPlaceBlockBeforeEventSignal.md)
-::: moniker-end
 - [PlayerSpawnAfterEvent](PlayerSpawnAfterEvent.md)
 - [PlayerSpawnAfterEventSignal](PlayerSpawnAfterEventSignal.md)
 - [PressurePlatePopAfterEvent](PressurePlatePopAfterEvent.md)
@@ -508,66 +856,38 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ScreenDisplay](ScreenDisplay.md)
 - [ScriptEventCommandMessageAfterEvent](ScriptEventCommandMessageAfterEvent.md)
 - [ScriptEventCommandMessageAfterEventSignal](ScriptEventCommandMessageAfterEventSignal.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [Seat](Seat.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [ServerMessageAfterEventSignal](ServerMessageAfterEventSignal.md)
-::: moniker-end
 - [System](System.md)
 - [SystemAfterEvents](SystemAfterEvents.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [SystemBeforeEvents](SystemBeforeEvents.md)
-::: moniker-end
 - [TargetBlockHitAfterEvent](TargetBlockHitAfterEvent.md)
 - [TargetBlockHitAfterEventSignal](TargetBlockHitAfterEventSignal.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [Trigger](Trigger.md)
-::: moniker-end
 - [TripWireTripAfterEvent](TripWireTripAfterEvent.md)
 - [TripWireTripAfterEventSignal](TripWireTripAfterEventSignal.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [Vector](Vector.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [WatchdogTerminateBeforeEvent](WatchdogTerminateBeforeEvent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [WatchdogTerminateBeforeEventSignal](WatchdogTerminateBeforeEventSignal.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [WeatherChangeAfterEvent](WeatherChangeAfterEvent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [WeatherChangeAfterEventSignal](WeatherChangeAfterEventSignal.md)
-::: moniker-end
+- [WeatherChangeBeforeEvent](WeatherChangeBeforeEvent.md)
+- [WeatherChangeBeforeEventSignal](WeatherChangeBeforeEventSignal.md)
 - [World](World.md)
 - [WorldAfterEvents](WorldAfterEvents.md)
 - [WorldBeforeEvents](WorldBeforeEvents.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [WorldInitializeAfterEvent](WorldInitializeAfterEvent.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [WorldInitializeAfterEventSignal](WorldInitializeAfterEventSignal.md)
-::: moniker-end
 
 ## Interfaces
-::: moniker range="=minecraft-bedrock-experimental"
 - [BiomeSearchOptions](BiomeSearchOptions.md)
-::: moniker-end
 - [BlockEventOptions](BlockEventOptions.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [BlockFillOptions](BlockFillOptions.md)
-::: moniker-end
+- [BlockFilter](BlockFilter.md)
 - [BlockHitInformation](BlockHitInformation.md)
 - [BlockRaycastHit](BlockRaycastHit.md)
 - [BlockRaycastOptions](BlockRaycastOptions.md)
-::: moniker range="=minecraft-bedrock-experimental"
-- [BlockVolume](BlockVolume.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [BoundingBox](BoundingBox.md)
-::: moniker-end
 - [CameraDefaultOptions](CameraDefaultOptions.md)
 - [CameraEaseOptions](CameraEaseOptions.md)
 - [CameraFadeOptions](CameraFadeOptions.md)
@@ -576,22 +896,14 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [CameraSetLocationOptions](CameraSetLocationOptions.md)
 - [CameraSetPosOptions](CameraSetPosOptions.md)
 - [CameraSetRotOptions](CameraSetRotOptions.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [CompoundBlockVolumeItem](CompoundBlockVolumeItem.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [DefinitionModifier](DefinitionModifier.md)
-::: moniker-end
 - [DimensionLocation](DimensionLocation.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [Enchantment](Enchantment.md)
-::: moniker-end
 - [EntityApplyDamageByProjectileOptions](EntityApplyDamageByProjectileOptions.md)
 - [EntityApplyDamageOptions](EntityApplyDamageOptions.md)
 - [EntityDamageSource](EntityDamageSource.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [EntityDataDrivenTriggerEventOptions](EntityDataDrivenTriggerEventOptions.md)
-::: moniker-end
 - [EntityEffectOptions](EntityEffectOptions.md)
 - [EntityEventOptions](EntityEventOptions.md)
 - [EntityHitInformation](EntityHitInformation.md)
@@ -599,22 +911,14 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntityQueryScoreOptions](EntityQueryScoreOptions.md)
 - [EntityRaycastHit](EntityRaycastHit.md)
 - [EntityRaycastOptions](EntityRaycastOptions.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [ExplosionOptions](ExplosionOptions.md)
-::: moniker-end
 - [MusicOptions](MusicOptions.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [PlayAnimationOptions](PlayAnimationOptions.md)
-::: moniker-end
 - [PlayerSoundOptions](PlayerSoundOptions.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [ProjectileShootOptions](ProjectileShootOptions.md)
-::: moniker-end
 - [RawMessage](RawMessage.md)
 - [RawMessageScore](RawMessageScore.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [RawText](RawText.md)
-::: moniker-end
 - [RGB](RGB.md)
 - [RGBA](RGBA.md)
 - [ScoreboardObjectiveDisplayOptions](ScoreboardObjectiveDisplayOptions.md)
@@ -627,22 +931,34 @@ Contains many types related to manipulating a Minecraft world, including entitie
 
 ## Errors
 - [CommandError](CommandError.md)
-::: moniker range="=minecraft-bedrock-experimental"
 - [EnchantmentLevelOutOfBoundsError](EnchantmentLevelOutOfBoundsError.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EnchantmentTypeNotCompatibleError](EnchantmentTypeNotCompatibleError.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [EnchantmentTypeUnknownIdError](EnchantmentTypeUnknownIdError.md)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [InvalidContainerSlotError](InvalidContainerSlotError.md)
-::: moniker-end
 - [LocationInUnloadedChunkError](LocationInUnloadedChunkError.md)
 - [LocationOutOfWorldBoundariesError](LocationOutOfWorldBoundariesError.md)
 
 ## Constants
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **HudElementsCount**
+`static read-only HudElementsCount = 11;`
+
+Type: *number*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **HudVisibilityCount**
+`static read-only HudVisibilityCount = 2;`
+
+Type: *number*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **MoonPhaseCount**
 `static read-only MoonPhaseCount = 8;`

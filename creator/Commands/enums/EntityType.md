@@ -36,8 +36,6 @@ Bee
 Axolotl
 - `axolotl`
 Axolotl
-- `minecraft:breeze`
-- `breeze`
 - `minecraft:pig`
 Pig
 - `pig`
@@ -46,10 +44,6 @@ Pig
 Hoglin
 - `hoglin`
 Hoglin
-- `minecraft:zoglin`
-Zoglin
-- `zoglin`
-Zoglin
 - `minecraft:sniffer`
 - `sniffer`
 - `minecraft:cat`
@@ -146,6 +140,10 @@ Panda
 Fox
 - `fox`
 Fox
+- `minecraft:goat`
+Goat
+- `goat`
+Goat
 - `minecraft:frog`
 Frog
 - `frog`
@@ -322,10 +320,10 @@ Piglin Brute
 Piglin
 - `piglin`
 Piglin
-- `minecraft:goat`
-Goat
-- `goat`
-Goat
+- `minecraft:zoglin`
+Zoglin
+- `zoglin`
+Zoglin
 - `minecraft:minecart`
 Minecart
 - `minecart`

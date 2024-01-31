@@ -108,6 +108,7 @@ type EntityComponentTypeMap = {
   'minecraft:strength': EntityStrengthComponent;
   'minecraft:tameable': EntityTameableComponent;
   'minecraft:tamemount': EntityMountTamingComponent;
+  'minecraft:type_family': EntityTypeFamilyComponent;
   'minecraft:underwater_movement': EntityUnderwaterMovementComponent;
   'minecraft:variant': EntityVariantComponent;
   'minecraft:wants_jockey': EntityWantsJockeyComponent;
@@ -138,6 +139,7 @@ type EntityComponentTypeMap = {
   'strength': EntityStrengthComponent;
   'tameable': EntityTameableComponent;
   'tamemount': EntityMountTamingComponent;
+  'type_family': EntityTypeFamilyComponent;
   'underwater_movement': EntityUnderwaterMovementComponent;
   'variant': EntityVariantComponent;
   'wants_jockey': EntityWantsJockeyComponent;

@@ -3,14 +3,17 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/server.BlockVolume Interface
+title: minecraft/server.BlockVolume Class
 description: Contents of the @minecraft/server.BlockVolume class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# BlockVolume Interface
+# BlockVolume Class
 
 > [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
+> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+## Extends
+- [*BlockVolumeBase*](BlockVolumeBase.md)
 
 A BlockVolume is a simple interface to an object which represents a 3D rectangle of a given size (in blocks) at a world block location.
 
@@ -42,6 +45,9 @@ However, because we're measuring blocks - the size or span of a BlockVolume woul
 A world block location that represents a corner in a 3D rectangle
 
 Type: [*Vector3*](Vector3.md)
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
 
 ### **to**
 `to: Vector3;`
@@ -49,3 +55,62 @@ Type: [*Vector3*](Vector3.md)
 A world block location that represents the opposite corner in a 3D rectangle
 
 Type: [*Vector3*](Vector3.md)
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
+
+## Methods
+- [constructor](#constructor)
+- [doesLocationTouchFaces](#doeslocationtouchfaces)
+- [doesVolumeTouchFaces](#doesvolumetouchfaces)
+- [intersects](#intersects)
+
+### **constructor**
+`
+new BlockVolume(from: Vector3, to: Vector3)
+`
+
+#### **Parameters**
+- **from**: [*Vector3*](Vector3.md)
+- **to**: [*Vector3*](Vector3.md)
+
+#### **Returns** [*BlockVolume*](BlockVolume.md)
+
+### **doesLocationTouchFaces**
+`
+doesLocationTouchFaces(pos: Vector3): boolean
+`
+
+#### **Parameters**
+- **pos**: [*Vector3*](Vector3.md)
+
+#### **Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+### **doesVolumeTouchFaces**
+`
+doesVolumeTouchFaces(other: BlockVolume): boolean
+`
+
+#### **Parameters**
+- **other**: [*BlockVolume*](BlockVolume.md)
+
+#### **Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+### **intersects**
+`
+intersects(other: BlockVolume): BlockVolumeIntersection
+`
+
+#### **Parameters**
+- **other**: [*BlockVolume*](BlockVolume.md)
+
+#### **Returns** [*BlockVolumeIntersection*](BlockVolumeIntersection.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.

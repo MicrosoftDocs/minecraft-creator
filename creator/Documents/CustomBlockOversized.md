@@ -1,14 +1,16 @@
 ---
-author: JimSeaman42
+author: iconicNurdle
 ms.author: mikeam
-title: Custom Blocks Oversized Geometry
-description: "An Advanced Tutorial on Customizing Blocks with Oversized Geometry"
+title: Advanced Block Visuals
+description: "Advanced Tutorial about Customizing Block Sizes"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Custom Blocks: Oversized Geometry
+# Advanced Block Visuals: Sizing and Culling
 
-One of the coolest features allows for custom block geometries that are larger than 16x16x16 pixels. We'll dive into how that works in just a moment, but first...
+Custom blocks are not constrained to the usual 16x16x16 Minecraft block geometry. Not only can they be larger than 16x16x16 pixels, but since release `1.20.60`, you can use a feature called "culling" to dynamically remove parts of the block when it is placed near blocks that occlude one of the sides.
+
+First, we will cover how to create an over-sized block, then we will use one of the examples from another custom block tuorial (the [Sushi Block](AdvancedCustomBlocks.md) one) to demonstrate culling.
 
 ## Prerequisites
 
@@ -25,16 +27,18 @@ It's recommended that the following be completed before beginning this tutorial:
 
 ### Resource Pack
 
-***Create geometry in Blockbench***
+## Create geometry in Blockbench
 
 :::image type="content" source="Media/CustomOversized/Picture2.png" alt-text="An image showing a 30x30x30 pixel block construction.":::
 
 Let's create a 30x30x30 pixel block in Blockbench. First, we have to cover some of the limitations when it comes to creating oversized custom blocks.
 
-***Custom block limitations***
+## Custom block limitations
 
 1. Your block is limited to 30x30x30 pixels in size.
+
 1. The absolute bounds of the position of your 30x30x30 block are 30 pixels in each direction from the origin. The origin is in the middle at the bottom of the base 16x16x16 block. So the absolute bounds give you 30 pixels in the +x direction, 30 pixels in the –x direction, 30 pixels in the +y direction, 30 pixels in the –y direction, 30 pixels in the +z direction, and 30 pixels in the –z direction. Your block can be placed in any position within these bounds, as long as it adheres to rule #3.
+
 1. At least 1 pixel of your block on each axis must be contained by the base 16x16x16 block.
 
 Here is a visualization of the absolute bounds your block must be contained in, in relation to the base 16x16x16 block:
@@ -55,7 +59,7 @@ Next, we have an example of a 30x30x30 custom block that is contained in the abs
 
 For this last tutorial, you're on your own setting up the rest of the Giant Umbrella block. Remember, you've got this! Here are the steps you've followed each time you've made a custom block:
 
-***Resource Pack Steps***
+### Resource Pack Steps
 
 - Export the file in Blockbench
 - Add geometry to Resource Packs
@@ -176,7 +180,7 @@ For this last tutorial, you're on your own setting up the rest of the Giant Umbr
 
 - Remember to add a friendly name for the texture in the terrain texture file, add a display name for the block in `en_US.lang`, and optionally add an entry for the block in `blocks.json` if you want to give the block a sound.
 
-***Behavior Pack Step***
+### Behavior Pack Step
 
 Create `umbrella.json` and fill it in using your knowledge from the previous tutorials. If you get lost, that's totally normal. Here are some troubleshooting tips:
 
@@ -193,13 +197,107 @@ Next up, testing!
 With the giant umbrella block defined in both the behavior pack and resource pack, you can now test it in-game.
 
 1. Open the chat dialogue box (press 'T' or 'Enter' on Windows 10 OS).
+
 1. Type the following command: `/give @p demo:giantumbrella`
 
 Now start dropping those beautiful 'brellas!
 
 :::image type="content" source="Media/CustomOversized/Picture8.png" alt-text="A screenshot of multiple beach chairs and giant umbrellas in Minecraft: Bedrock Edition.":::
 
-***Note:*** With blocks larger than the 16x16x16 pixel base cube, the parts of the block that are outside of that 16x16x16 range will overlap with other blocks. Be aware of this when creating oversized blocks to assure you are achieving your desired look, especially if your oversized blocks will be placed near other blocks.
+![Note] With blocks larger than the 16x16x16 pixel base cube, the parts of the block that are outside of that 16x16x16 range will overlap with other blocks. Be aware of this when creating oversized blocks to assure you are achieving your desired look, especially if your oversized blocks will be placed near other blocks.
+
+## Custom Block Sample Packs
+
+Here is a link to the already-completed [custom block sample packs](https://github.com/microsoft/minecraft-samples).
+
+## Culling
+
+You can make your custom blocks behave like some vanilla blocks do when several of them are placed together by removing unseen, overlapping block faces with "culling."
+
+Culling the unseen, overlapping faces of your blocks can increase performance and decrease instances of graphical glitches.
+
+To use culling, you will need to add a few things to both the behavior pack and the resource pack.
+
+To try this out with the "tuna roll" custom sushi block, add these directories and files to the packs:
+
+**Custom Block Behavior Pack**
+
+Inside the **blocks** folder, open the **tuna_roll.json** file and add "identifier" and "culling" to the `minecraft:geometry:` section:
+
+```json
+"components": {
+  "minecraft:geometry": {
+    "identifier": "geometry.sushi",
+    "culling": "test:sushi_cull"
+  },
+}
+```
+
+Here is the whole **tuna_roll.json** file:
+
+```json
+{
+  "format_version": "1.19.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "demo:tuna_roll"
+    },
+    "components": {
+      "minecraft:geometry": {
+        "identifier": "geometry.sushi",
+        "culling": "test:sushi_cull"
+      },
+      "minecraft:material_instances": {
+        "north": "sushi_side",
+        "south": "sushi_side",
+        "*": {
+          "texture": "sushi_wrap"
+        },
+        "sushi_side": {
+          "texture": "tuna_roll"
+        }
+      }
+    }
+  }
+}
+```
+
+**Custom Block Resource Pack**
+
+1. On the main level of the resource pack, add a directory called: **block_culling**.
+
+1. Create a file in there and name it **sushi_cull.json**, then add these contents:
+
+```json
+{
+"format_version": "1.20.60",
+"minecraft:block_culling_rules": {
+    "description": {
+        "identifier": "test:sushi_cull"
+    },
+    "rules": [
+        {
+         "geometry_part": { "bone": "bb_main", "cube": 0, "face": "north" },
+         "direction": "north"
+        },
+        {
+         "geometry_part": { "bone": "bb_main", "cube": 0, "face": "south" },
+         "direction": "south"
+        }
+    ]
+  }
+}
+```
+
+3. Save the file, and test the culled block.
+
+If you place three culled sushi blocks, they have enough space around them and there is no culling. They will look like normal.
+
+![Image of 3 placed tuna sushi rolls. Nothing out of the ordinary. Ho hum.](Media/CustomOversized/3_tuna.png)
+
+If you swap out the center sushi block for a full-sized block like these acacia planks, only the outer seaweed ring is left!
+
+![Image of an acacia planks block between 2 tuna rolls - culling has occurred and only the seaweed wrap remains. Wow!](Media/CustomOversized/culled_tuna.png)
 
 ## Next Steps
 
