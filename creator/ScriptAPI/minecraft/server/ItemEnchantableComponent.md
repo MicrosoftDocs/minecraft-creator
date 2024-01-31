@@ -17,6 +17,29 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 When present on an item, this item can have enchantments applied to it.
 
+#### Examples
+##### ***givePlayerIronFireSword.ts***
+```typescript
+// Spawns a bunch of item stacks
+import { ItemComponentTypes, ItemStack, Player } from '@minecraft/server';
+import { MinecraftItemTypes, MinecraftEnchantmentTypes } from '@minecraft/vanilla-data';
+
+function giveFireSword(player: Player) {
+    const ironFireSword = new ItemStack(MinecraftItemTypes.DiamondSword, 1);
+
+    const enchantments = ironFireSword?.getComponent(ItemComponentTypes.Enchantable);
+    if (enchantments) {
+        enchantments.addEnchantment({ type: MinecraftEnchantmentTypes.FireAspect, level: 1 });
+    }
+
+    const inventory = player.getComponent('minecraft:inventory');
+    if (inventory === undefined || inventory.container === undefined) {
+        return;
+    }
+    inventory.container.setItem(0, ironFireSword);
+}
+```
+
 ## Methods
 - [addEnchantment](#addenchantment)
 - [addEnchantments](#addenchantments)
@@ -177,16 +200,24 @@ Removes an enchantment of the given type.
 Type: *string*
 
 #### Examples
-##### ***ironFireSword.ts***
+##### ***givePlayerIronFireSword.ts***
 ```typescript
-const ironFireSword = new mc.ItemStack(mc.MinecraftItemTypes.diamondSword, 1);
-let players = mc.world.getAllPlayers();
+// Spawns a bunch of item stacks
+import { ItemComponentTypes, ItemStack, Player } from '@minecraft/server';
+import { MinecraftItemTypes, MinecraftEnchantmentTypes } from '@minecraft/vanilla-data';
 
-const enchantments = ironFireSword?.getComponent('minecraft:enchantable');
-if (enchantments) {
-    enchantments.addEnchantment({ type: mc.MinecraftEnchantmentTypes.FireAspect, level: 1 });
+function giveFireSword(player: Player) {
+    const ironFireSword = new ItemStack(MinecraftItemTypes.DiamondSword, 1);
+
+    const enchantments = ironFireSword?.getComponent(ItemComponentTypes.Enchantable);
+    if (enchantments) {
+        enchantments.addEnchantment({ type: MinecraftEnchantmentTypes.FireAspect, level: 1 });
+    }
+
+    const inventory = player.getComponent('minecraft:inventory');
+    if (inventory === undefined || inventory.container === undefined) {
+        return;
+    }
+    inventory.container.setItem(0, ironFireSword);
 }
-
-const inventory = players[0].getComponent('minecraft:inventory');
-inventory.container.setItem(0, ironFireSword);
 ```

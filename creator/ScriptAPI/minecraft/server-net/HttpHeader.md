@@ -10,6 +10,28 @@ description: Contents of the @minecraft/server-net.HttpHeader class.
 
 Represents an HTTP header - a key/value pair of meta-information about a request.
 
+#### Examples
+##### ***simpleHttpRequest.ts***
+```typescript
+import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
+
+async function updateScore() {
+    const req = new HttpRequest('http://localhost:3000/updateScore');
+
+    req.body = JSON.stringify({
+        score: 22,
+    });
+
+    req.method = HttpRequestMethod.Post;
+    req.headers = [
+        new HttpHeader('Content-Type', 'application/json'),
+        new HttpHeader('auth', 'my-auth-token'),
+    ];
+
+    await http.request(req);
+}
+```
+
 ## Properties
 
 ### **key**
@@ -47,19 +69,23 @@ new HttpHeader(key: string, value: minecraftserveradmin.SecretString | string)
 #### **Returns** [*HttpHeader*](HttpHeader.md)
 
 #### Examples
-##### ***updateScore.ts***
+##### ***simpleHttpRequest.ts***
 ```typescript
-  const req = new mcnet.HttpRequest("http://localhost:3000/updateScore");
+import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
 
-  req.body = JSON.stringify({
-    score: 22,
-  });
+async function updateScore() {
+    const req = new HttpRequest('http://localhost:3000/updateScore');
 
-  req.method = mcnet.HttpRequestMethod.POST;
-  req.headers = [
-    new mcnet.HttpHeader("Content-Type", "application/json"),
-    new mcnet.HttpHeader("auth", "my-auth-token"),
-  ];
+    req.body = JSON.stringify({
+        score: 22,
+    });
 
-  await mcnet.http.request(req);
+    req.method = HttpRequestMethod.Post;
+    req.headers = [
+        new HttpHeader('Content-Type', 'application/json'),
+        new HttpHeader('auth', 'my-auth-token'),
+    ];
+
+    await http.request(req);
+}
 ```

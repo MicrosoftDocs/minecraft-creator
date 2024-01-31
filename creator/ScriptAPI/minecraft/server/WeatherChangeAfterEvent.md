@@ -23,16 +23,16 @@ Dimension in which the weather has changed.
 
 Type: *string*
 
-### **lightning**
-`read-only lightning: boolean;`
+### **newWeather**
+`read-only newWeather: WeatherType;`
 
-Whether it is lightning after the change in weather.
+The weather type after the weather was changed.
 
-Type: *boolean*
+Type: [*WeatherType*](WeatherType.md)
 
-### **raining**
-`read-only raining: boolean;`
+### **previousWeather**
+`read-only previousWeather: WeatherType;`
 
-Whether it is raining after the change in weather.
+The weather type before the weather was changed.
 
-Type: *boolean*
+Type: [*WeatherType*](WeatherType.md)

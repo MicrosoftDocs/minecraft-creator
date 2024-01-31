@@ -10,6 +10,34 @@ description: Contents of the @minecraft/server-admin.ServerSecrets class.
 
 A collection of server secrets defined in dedicated server configuration.
 
+#### Examples
+##### ***getPlayerProfile.ts***
+```typescript
+import { variables, secrets } from "@minecraft/server-admin";
+import { http, HttpRequest, HttpRequestMethod, HttpHeader, HttpResponse } from "@minecraft/server-net";
+
+const serverUrl = variables.get('serverEndpoint');
+
+function getPlayerProfile(playerId: string): Promise<HttpResponse> {
+    const req = new HttpRequest(serverUrl + 'getPlayerProfile');
+
+    req.body = JSON.stringify({
+        playerId,
+    });
+
+    const authTokenSec = secrets.get('authtoken');
+
+    if (!authTokenSec) {
+        throw new Error('authtoken secret not defined.');
+    }
+
+    req.method = HttpRequestMethod.Post;
+    req.headers = [new HttpHeader('Content-Type', 'application/json'), new HttpHeader('auth', authTokenSec)];
+
+    return http.request(req);
+}
+```
+
 ## Properties
 
 ### **names**
@@ -40,22 +68,27 @@ Returns a SecretString that is a placeholder for a secret configured in a JSON f
 #### Examples
 ##### ***getPlayerProfile.ts***
 ```typescript
-  const serverUrl = mcsa.variables.get("serverEndpoint");
+import { variables, secrets } from "@minecraft/server-admin";
+import { http, HttpRequest, HttpRequestMethod, HttpHeader, HttpResponse } from "@minecraft/server-net";
 
-  const req = new mcnet.HttpRequest(serverUrl + "getPlayerProfile");
+const serverUrl = variables.get('serverEndpoint');
 
-  req.body = JSON.stringify({
-    playerId: "johndoe",
-  });
+function getPlayerProfile(playerId: string): Promise<HttpResponse> {
+    const req = new HttpRequest(serverUrl + 'getPlayerProfile');
 
-  const authTokenSec = mcsa.secrets.get("authtoken");
+    req.body = JSON.stringify({
+        playerId,
+    });
 
-  if (!authTokenSec) {
-    throw new Error("authtoken secret not defined.");
-  }
+    const authTokenSec = secrets.get('authtoken');
 
-  req.method = mcnet.HttpRequestMethod.POST;
-  req.headers = [new mcnet.HttpHeader("Content-Type", "application/json"), new mcnet.HttpHeader("auth", authTokenSec)];
+    if (!authTokenSec) {
+        throw new Error('authtoken secret not defined.');
+    }
 
-  await mcnet.http.request(req);
+    req.method = HttpRequestMethod.Post;
+    req.headers = [new HttpHeader('Content-Type', 'application/json'), new HttpHeader('auth', authTokenSec)];
+
+    return http.request(req);
+}
 ```

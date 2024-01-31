@@ -142,3 +142,13 @@ Type: [*PlayerPlaceBlockBeforeEventSignal*](PlayerPlaceBlockBeforeEventSignal.md
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 ::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **weatherChange**
+`read-only weatherChange: WeatherChangeBeforeEventSignal;`
+
+Type: [*WeatherChangeBeforeEventSignal*](WeatherChangeBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end

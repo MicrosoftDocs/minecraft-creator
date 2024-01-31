@@ -32,7 +32,6 @@ These properties are part of the Block Definition and Block Properties that are 
     }
   }
 }
-
 ```
 
 |Name |Default Value  |Type  |Description  |

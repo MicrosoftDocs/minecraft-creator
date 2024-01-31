@@ -27,9 +27,63 @@ Note that commands executed via `queue_command` are guaranteed to run in order w
 ## Example
 
 ```json
-"queue_command":{
-    "command" : "/give @p emerald",
-    "command array": [], //not used
-    "target" : "self"
+{
+    "format_version": "1.20.10",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "demo:demo_mob",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false,
+
+            "animations": {
+                "demo_controller": "controller.animation.demo_mob.idle"
+            },
+            "scripts": {
+                "animate": ["demo_controller"]
+            }
+        },
+        "components": {
+            "minecraft:physics": {
+                "has_gravity": true,
+                "has_collision": true
+            },
+            "minecraft:pushable": {
+                "is_pushable": false
+            },
+            "minecraft:push_through": {
+                "value": 1
+            },
+            "minecraft:on_hurt_by_player": {
+                "event": "hurt_sequence",
+                "target": "self"
+            },
+            "minecraft:on_death": {
+                "event": "death",
+                "target": "self"
+            }
+        },
+        "events": {
+            "death": {
+                "queue_command": {
+                    "command": "say I have died!"
+                }
+            },
+            "hurt_sequence": {
+                "sequence": [
+                    {
+                        "queue_command": {
+                            "command": "say queue command 1"
+                        }
+                    },
+                    {
+                        "queue_command": {
+                            "command": "say queue command 2"
+                        }
+                    }
+                ]
+            }
+        }
+    }
 }
 ```

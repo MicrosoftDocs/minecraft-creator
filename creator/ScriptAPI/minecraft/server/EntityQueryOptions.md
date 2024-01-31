@@ -10,6 +10,163 @@ description: Contents of the @minecraft/server.EntityQueryOptions class.
 
 Contains options for selecting entities within an area.
 
+#### Examples
+##### ***testBlockConditional.ts***
+```typescript
+import { Dimension } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[type=fox] positioned as @s if block ^ ^-1 ^ stone run summon salmon
+
+// Equivalent scripting code would be:
+function spawnFish(dimension: Dimension) {
+    dimension
+        .getEntities({
+            type: 'fox',
+        })
+        .filter(entity => {
+            const block = dimension.getBlock({
+                x: entity.location.x,
+                y: entity.location.y - 1,
+                z: entity.location.z,
+            });
+
+            return block !== undefined && block.matches('minecraft:stone');
+        })
+        .forEach(entity => {
+            dimension.spawnEntity('salmon', entity.location);
+        });
+}
+```
+##### ***testPlaySoundChained.ts***
+```typescript
+import { Dimension } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[type=armor_stand,name=myArmorStand,tag=dummyTag1,tag=!dummyTag2] run playsound raid.horn @a
+
+// Equivalent scripting code would be:
+function playSounds(dimension: Dimension) {
+    const targetPlayers = dimension.getPlayers();
+    const originEntities = dimension.getEntities({
+        type: 'armor_stand',
+        name: 'myArmorStand',
+        tags: ['dummyTag1'],
+        excludeTags: ['dummyTag2'],
+    });
+
+    originEntities.forEach(entity => {
+        targetPlayers.forEach(player => {
+            player.playSound('raid.horn');
+        });
+    });
+}
+```
+##### ***testSendMessageAllPlayers.ts***
+```typescript
+import { Dimension } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[type=armor_stand,name=myArmorStand,tag=dummyTag1,tag=!dummyTag2] run tellraw @a { "rawtext": [{"translate": "hello.world" }] }
+
+// Equivalent scripting code would be:
+function sendMessagesToPlayers(dimension: Dimension) {
+    const targetPlayers = dimension.getPlayers();
+    const originEntities = dimension.getEntities({
+        type: 'armor_stand',
+        name: 'myArmorStand',
+        tags: ['dummyTag1'],
+        excludeTags: ['dummyTag2'],
+    });
+
+    originEntities.forEach(entity => {
+        targetPlayers.forEach(player => {
+            player.sendMessage({ rawtext: [{ translate: 'hello.world' }] });
+        });
+    });
+}
+```
+##### ***testSetScoreBoardChained.ts***
+```typescript
+import { Dimension, world } from '@minecraft/server';
+
+// Having these commands:
+
+// scoreboard objectives add scoreObjective1 dummy
+// scoreboard players set @e[type=armor_stand,name=myArmorStand] scoreObjective1 -1
+
+// Equivalent scripting code would be:
+function setScores(dimension: Dimension) {
+    const objective = world.scoreboard.addObjective('scoreObjective1', 'dummy');
+    dimension
+        .getEntities({
+            type: 'armor_stand',
+            name: 'myArmorStand',
+        })
+        .forEach(entity => {
+            if (entity.scoreboardIdentity !== undefined) {
+                objective.setScore(entity.scoreboardIdentity, -1);
+            }
+        });
+}
+```
+##### ***testSummonMobChained.ts***
+```typescript
+import { Dimension } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[type=armor_stand] run execute as @a[x=0,y=-60,z=0,c=4,r=15] run summon pig ~1 ~ ~
+
+// Equivalent scripting code would be:
+function spawnPigs(dimension: Dimension) {
+    const armorStandArray = dimension.getEntities({
+        type: 'armor_stand',
+    });
+    const playerArray = dimension.getPlayers({
+        location: { x: 0, y: -60, z: 0 },
+        closest: 4,
+        maxDistance: 15,
+    });
+    armorStandArray.forEach(entity => {
+        playerArray.forEach(player => {
+            dimension.spawnEntity('pig', {
+                x: player.location.x + 1,
+                y: player.location.y,
+                z: player.location.z,
+            });
+        });
+    });
+}
+```
+##### ***checkFeatherNearby.ts***
+```typescript
+import { DimensionLocation, EntityComponentTypes } from "@minecraft/server";
+
+// Returns true if a feather item entity is within 'distance' blocks of 'location'.
+function isFeatherNear(location: DimensionLocation, distance: number): boolean {
+    const items = location.dimension.getEntities({
+        location: location,
+        maxDistance: 20,
+    });
+    
+    for (const item of items) {
+        const itemComp = item.getComponent(EntityComponentTypes.Item);
+    
+        if (itemComp) {
+            if (itemComp.itemStack.typeId.endsWith('feather')) {
+                return true;
+            }
+        }
+    }
+
+    return false;
+}
+```
+
 ## Properties
 
 ### **closest**
@@ -179,168 +336,158 @@ Type: [*BlockAreaSize*](BlockAreaSize.md)
 ::: moniker-end
 
 #### Examples
-##### ***bounceSkeletons.ts***
-```typescript
-  let mobs = ["creeper", "skeleton", "sheep"];
-
-  // create some sample mob data
-  for (let i = 0; i < 10; i++) {
-    overworld.spawnEntity(mobs[i % mobs.length], targetLocation);
-  }
-
-  let eqo: mc.EntityQueryOptions = {
-    type: "skeleton",
-  };
-
-  for (let entity of overworld.getEntities(eqo)) {
-    entity.applyKnockback(0, 0, 0, 1);
-  }
-```
-##### ***tagsQuery.ts***
-```typescript
-  let mobs = ["creeper", "skeleton", "sheep"];
-
-  // create some sample mob data
-  for (let i = 0; i < 10; i++) {
-    let mobTypeId = mobs[i % mobs.length];
-    let entity = overworld.spawnEntity(mobTypeId, targetLocation);
-    entity.addTag("mobparty." + mobTypeId);
-  }
-
-  let eqo: mc.EntityQueryOptions = {
-    tags: ["mobparty.skeleton"],
-  };
-
-  for (let entity of overworld.getEntities(eqo)) {
-    entity.kill();
-  }
-```
 ##### ***testBlockConditional.ts***
 ```typescript
+import { Dimension } from '@minecraft/server';
+
 // Having this command:
 
 // execute as @e[type=fox] positioned as @s if block ^ ^-1 ^ stone run summon salmon
 
 // Equivalent scripting code would be:
-dimension
-  .getEntities({
-    type: "fox",
-  })
-  .filter(
-    (entity) =>
-      dimension.getBlock({
-        x: entity.location.x,
-        y: entity.location.y - 1,
-        z: entity.location.z,
-      }).type.id === "minecraft:stone"
-  )
-  .forEach((entity) => {
-    dimension.spawnEntity("salmon", entity.location);
-  });
+function spawnFish(dimension: Dimension) {
+    dimension
+        .getEntities({
+            type: 'fox',
+        })
+        .filter(entity => {
+            const block = dimension.getBlock({
+                x: entity.location.x,
+                y: entity.location.y - 1,
+                z: entity.location.z,
+            });
+
+            return block !== undefined && block.matches('minecraft:stone');
+        })
+        .forEach(entity => {
+            dimension.spawnEntity('salmon', entity.location);
+        });
+}
 ```
 ##### ***testPlaySoundChained.ts***
 ```typescript
+import { Dimension } from '@minecraft/server';
+
 // Having this command:
 
 // execute as @e[type=armor_stand,name=myArmorStand,tag=dummyTag1,tag=!dummyTag2] run playsound raid.horn @a
 
 // Equivalent scripting code would be:
-const targetPlayers = dimension.getPlayers();
-const originEntities = dimension.getEntities({
-  type: "armor_stand",
-  name: "myArmorStand",
-  tags: ["dummyTag1"],
-  excludeTags: ["dummyTag2"],
-});
+function playSounds(dimension: Dimension) {
+    const targetPlayers = dimension.getPlayers();
+    const originEntities = dimension.getEntities({
+        type: 'armor_stand',
+        name: 'myArmorStand',
+        tags: ['dummyTag1'],
+        excludeTags: ['dummyTag2'],
+    });
 
-originEntities.forEach((entity) => {
-  targetPlayers.forEach((player) => {
-    player.playSound("raid.horn");
-  });
-});
+    originEntities.forEach(entity => {
+        targetPlayers.forEach(player => {
+            player.playSound('raid.horn');
+        });
+    });
+}
 ```
 ##### ***testSendMessageAllPlayers.ts***
 ```typescript
+import { Dimension } from '@minecraft/server';
+
 // Having this command:
 
 // execute as @e[type=armor_stand,name=myArmorStand,tag=dummyTag1,tag=!dummyTag2] run tellraw @a { "rawtext": [{"translate": "hello.world" }] }
 
 // Equivalent scripting code would be:
-const targetPlayers = dimension.getPlayers();
-const originEntities = dimension.getEntities({
-  type: "armor_stand",
-  name: "myArmorStand",
-  tags: ["dummyTag1"],
-  excludeTags: ["dummyTag2"],
-});
+function sendMessagesToPlayers(dimension: Dimension) {
+    const targetPlayers = dimension.getPlayers();
+    const originEntities = dimension.getEntities({
+        type: 'armor_stand',
+        name: 'myArmorStand',
+        tags: ['dummyTag1'],
+        excludeTags: ['dummyTag2'],
+    });
 
-originEntities.forEach((entity) => {
-  targetPlayers.forEach((player) => {
-    player.sendMessage({ rawtext: [{ translate: "hello.world" }] });
-  });
-});
+    originEntities.forEach(entity => {
+        targetPlayers.forEach(player => {
+            player.sendMessage({ rawtext: [{ translate: 'hello.world' }] });
+        });
+    });
+}
 ```
 ##### ***testSetScoreBoardChained.ts***
 ```typescript
+import { Dimension, world } from '@minecraft/server';
+
 // Having these commands:
 
 // scoreboard objectives add scoreObjective1 dummy
 // scoreboard players set @e[type=armor_stand,name=myArmorStand] scoreObjective1 -1
 
 // Equivalent scripting code would be:
-const objective = world.scoreboard.addObjective("scoreObjective1", "dummy");
-dimension
-  .getEntities({
-    type: "armor_stand",
-    name: "myArmorStand",
-  })
-  .forEach((entity) => {
-    if (entity.scoreboard !== undefined) {
-      objective.setScore(entity.scoreboard, -1);
-    }
-  });
+function setScores(dimension: Dimension) {
+    const objective = world.scoreboard.addObjective('scoreObjective1', 'dummy');
+    dimension
+        .getEntities({
+            type: 'armor_stand',
+            name: 'myArmorStand',
+        })
+        .forEach(entity => {
+            if (entity.scoreboardIdentity !== undefined) {
+                objective.setScore(entity.scoreboardIdentity, -1);
+            }
+        });
+}
 ```
 ##### ***testSummonMobChained.ts***
 ```typescript
+import { Dimension } from '@minecraft/server';
+
 // Having this command:
 
 // execute as @e[type=armor_stand] run execute as @a[x=0,y=-60,z=0,c=4,r=15] run summon pig ~1 ~ ~
 
 // Equivalent scripting code would be:
-const armorStandArray = dimension.getEntities({
-  type: "armor_stand",
-});
-const playerArray = dimension.getPlayers({
-  location: { x: 0, y: -60, z: 0 },
-  closest: 4,
-  maxDistance: 15,
-});
-armorStandArray.forEach((entity) => {
-  playerArray.forEach((player) => {
-    dimension.spawnEntity("pig", {
-      x: player.location.x + 1,
-      y: player.location.y,
-      z: player.location.z,
+function spawnPigs(dimension: Dimension) {
+    const armorStandArray = dimension.getEntities({
+        type: 'armor_stand',
     });
-  });
-});
+    const playerArray = dimension.getPlayers({
+        location: { x: 0, y: -60, z: 0 },
+        closest: 4,
+        maxDistance: 15,
+    });
+    armorStandArray.forEach(entity => {
+        playerArray.forEach(player => {
+            dimension.spawnEntity('pig', {
+                x: player.location.x + 1,
+                y: player.location.y,
+                z: player.location.z,
+            });
+        });
+    });
+}
 ```
-##### ***testThatEntityIsFeatherItem.ts***
+##### ***checkFeatherNearby.ts***
 ```typescript
-  const overworld = mc.world.getDimension("overworld");
+import { DimensionLocation, EntityComponentTypes } from "@minecraft/server";
 
-  const items = overworld.getEntities({
-    location: targetLocation,
-    maxDistance: 20,
-  });
-
-  for (const item of items) {
-    const itemComp = item.getComponent("item") as mc.EntityItemComponent;
-
-    if (itemComp) {
-      if (itemComp.itemStack.typeId.endsWith("feather")) {
-        log("Success! Found a feather", 1);
-      }
+// Returns true if a feather item entity is within 'distance' blocks of 'location'.
+function isFeatherNear(location: DimensionLocation, distance: number): boolean {
+    const items = location.dimension.getEntities({
+        location: location,
+        maxDistance: 20,
+    });
+    
+    for (const item of items) {
+        const itemComp = item.getComponent(EntityComponentTypes.Item);
+    
+        if (itemComp) {
+            if (itemComp.itemStack.typeId.endsWith('feather')) {
+                return true;
+            }
+        }
     }
-  }
+
+    return false;
+}
 ```

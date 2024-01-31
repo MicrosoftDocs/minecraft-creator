@@ -90,8 +90,6 @@
             href: Documents/CreateAWorldTemplate.md
           - name: Utilizing Sub-Packs
             href: Documents/UtilizingSubpacks.md
-          - name: Mash-up Pack Overview
-            href: Documents/MashupPackOverview.md
           - name: 'Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition'
             href: Documents/ConvertingTexturePacks.md
           - name: Preparing Raw Text for Localization
@@ -138,8 +136,6 @@
           href: Documents/TickJsonIntroduction.md
         - name: Script Versioning
           href: Documents/ScriptVersioning.md
-        - name: Building Editor Extensions
-          href: Documents/EditorExtensionsIntroduction.md
         - name: New /execute command syntax
           href: Documents/CommandsNewExecute.md
         - name: Free Camera Preset Tutorial
@@ -226,7 +222,7 @@
           href: Documents/StructureBlocksTutorial.md
         - name: Getting Started with Command Blocks
           href: Documents/CommandBlocks.md
-    - name: Tools
+    - name: Tools and Libraries
       items:
         - name: Commonly Used Tools
           href: Documents/CommonlyUsedTools.md
@@ -242,12 +238,14 @@
               href: Documents/GameTestBuildYourFirstGameTest.md
         - name: Bedrock Editor
           items:
-            - name: Editor Installation Guide
-              href: Documents/EditorInstallation.md
             - name: Editor Overview
               href: Documents/EditorOverview.md
+            - name: Editor Installation Guide
+              href: Documents/EditorInstallation.md
             - name: Editor Tutorial
               href: Documents/EditorTutorial.md
+            - name: Building Editor Extensions
+              href: Documents/EditorExtensionsIntroduction.md
         - name: Blockbench
           items:
             - name: Minecraft Item Wizard
@@ -269,13 +267,9 @@
     - name: Reference Documentation
       items:
       - name: Commands
-        items:
-          - name: Command References
-            href: Commands/TOC.yml
-      - name: Scripting and API
-        items:
-          - name: API References
-            href: ScriptAPI/TOC.yml
+        href: Commands/TOC.yml
+      - name: Script APIs
+        href: ScriptAPI/TOC.yml
       - name: Behavior Pack JSON Files
         items:
         - name: Addons JSON
@@ -296,6 +290,8 @@
             href: Reference/Content/blockreference/Examples/IntrinsicBlockStatesList.md
           - name: Aux Value to Block State Map
             href: Reference/Content/blockreference/Examples/AuxValueToBlockStateMap.md
+          - name: Block Culling
+            href: Reference/Content/blockreference/Examples/Definitions/BlockCulling.md
           - name: Block Components
             href: Reference/Content/blockreference/Examples/BlockComponents/TOC.yml
           - name: Block Triggers

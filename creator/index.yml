@@ -100,6 +100,10 @@ conceptualContent:
             - url: Documents/CreateAnInWorldGame.md
               itemType: get-started
               text: How To Make a Complete the Monument World
+            - url: Commands/index.yml
+              itemType: reference
+              text: Command Reference Documentation
+
         # card
         - title: Adding new Minecraft Entities
           summary: "Learn how to create and implement your own custom entities."
@@ -119,6 +123,9 @@ conceptualContent:
             - url: Documents/IntroductionToEntityProperties.md
               itemType: tutorial
               text: Entity Properties
+            - url: Reference/Content/molangreference/index.yml
+              itemType: reference
+              text: Molang Documentation
         # card
         - title: Adding NPCs
           summary: "Populate your world with interactive characters to create unique narrative experiences."
@@ -166,64 +173,49 @@ conceptualContent:
       - title: Using Script APIs
         summary: "Learn how new Script APIs can speed up your development time and make more dynamic content."
         links:
-          - url: Documents/ScriptingGettingStarted.md
-            itemType: how-to-guide
-            text: Get started by building a gameplay experience
+          - url:  Documents/ScriptingIntroduction.md
+            itemType: get-started
+            text: Getting Started with Scripting APIs
+          - url: ScriptAPI/index.yml
+            itemType: reference
+            text: Scripting API Reference
+          - url:  Documents/ScriptingGettingStarted.md
+            itemType: get-started
+            text: Using TypeScript with Minecraft Scripting APIs
           - url: Documents/ScriptDeveloperTools.md
             itemType: how-to-guide
             text: Use Visual Studio Code tools to write script
-          - url: ScriptAPI/index.yml
-            itemType: reference
-            text: Script API
           - url: Documents/EditorExtensionsIntroduction.md
             itemType: get-started
             text: Getting Started with Editor Extensions
-          - url: ScriptAPI/minecraft/server-gametest/minecraft-server-gametest.md
-            itemType: reference
-            text: Scripting API
-          - url:  Documents/GameTestGettingStarted.md
-            itemType: get-started
-            text: Getting Started with GameTest
-          - url: Documents/GameTestBuildYourFirstGameTest.md
-            itemType: how-to-guide
-            text: Build your first GameTest
       # card
-      - title: Reference Documentation
-        summary: "Need a hand creating your content? View the reference documentation to see how things work in-game."
+      - title: JSON Reference Documentation
+        summary: "Need a hand creating your content? View the JSON reference documentation to see how things work in-game."
         links:
           - url: Reference/Content/addonsreference/index.yml
             itemType: reference
-            text: Addons JSON Documentation
+            text: Addons JSON
           - url: Reference/Content/animationsreference/index.yml
             itemType: reference
-            text: Animation JSON Documentation
+            text: Animation JSON
           - url: Reference/Content/blockreference/index.yml
             itemType: reference
-            text: Block JSON Documentation
-          - url: Commands/index.yml
-            itemType: reference
-            text: Command Documentation
+            text: Block JSON
           - url: Reference/Content/entityreference/index.yml
             itemType: reference
-            text: Entity JSON Documentation
+            text: Entity JSON
           - url: Reference/Content/featuresreference/index.yml
             itemType: reference
-            text: Features JSON Documentation
+            text: Features JSON
           - url: Reference/Content/itemreference/index.yml
             itemType: reference
-            text: Item JSON Documentation
-          - url: Reference/Content/molangreference/index.yml
-            itemType: reference
-            text: Molang Documentation
+            text: Item JSON
           - url: Reference/Content/Recipereference/index.yml
             itemType: reference
-            text: Recipe JSON Documentation
+            text: Recipe JSON
           - url: Reference/Content/particlesreference/index.yml
             itemType: reference
-            text: Particle JSON Documentation
-          - url: Reference/Content/volumereference/index.yml
-            itemType: reference
-            text: Volume JSON Documentation
+            text: Particle JSON
       # card
       - title: Common Schema Documentation
         summary: "See how Schemas are used to validate JSON files in Minecraft: Bedrock Edition "

@@ -96,8 +96,7 @@ Block Explosion
 Entity Explosion
 - `void`
 Void
-- `suicide`
-Suicide
+- `self_destruct`
 - `magic`
 Magic
 - `charging`

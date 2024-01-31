@@ -16,23 +16,27 @@ Manages callbacks that are connected to when a button is pushed.
 #### Examples
 ##### ***buttonPushEvent.ts***
 ```typescript
-  // set up a button on cobblestone
-  let cobblestone = overworld.getBlock(targetLocation);
-  let button = overworld.getBlock({ x: targetLocation.x, y: targetLocation.y + 1, z: targetLocation.z });
+import { world, ButtonPushAfterEvent, system } from '@minecraft/server';
 
-  if (cobblestone === undefined || button === undefined) {
-    log("Could not find block at location.");
-    return -1;
-  }
+world.afterEvents.buttonPush.subscribe((buttonPushEvent: ButtonPushAfterEvent) => {
+    const eventLoc = buttonPushEvent.block.location;
 
-  cobblestone.setPermutation(mc.BlockPermutation.resolve("cobblestone"));
-  button.setPermutation(mc.BlockPermutation.resolve("acacia_button").withState("facing_direction", 1 /* up */));
+    world.sendMessage(
+        `Button push event at tick ${system.currentTick} Power:${buttonPushEvent.block.getRedstonePower()}`,
+    );
+});
+```
 
-  mc.world.afterEvents.buttonPush.subscribe((buttonPushEvent: mc.ButtonPushAfterEvent) => {
-    let eventLoc = buttonPushEvent.block.location;
+#### Examples
+##### ***buttonPushEvent.ts***
+```typescript
+import { world, ButtonPushAfterEvent, system } from '@minecraft/server';
 
-    if (eventLoc.x === targetLocation.x && eventLoc.y === targetLocation.y + 1 && eventLoc.z === targetLocation.z) {
-      log("Button push event at tick " + mc.system.currentTick + " Power:" + buttonPushEvent.block.getRedstonePower());
-    }
-  });
+world.afterEvents.buttonPush.subscribe((buttonPushEvent: ButtonPushAfterEvent) => {
+    const eventLoc = buttonPushEvent.block.location;
+
+    world.sendMessage(
+        `Button push event at tick ${system.currentTick} Power:${buttonPushEvent.block.getRedstonePower()}`,
+    );
+});
 ```
