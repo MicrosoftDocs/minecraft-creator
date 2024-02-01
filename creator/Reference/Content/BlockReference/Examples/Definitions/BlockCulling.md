@@ -17,23 +17,25 @@ These properties are part of Block Culling used within block JSON files. This he
   "format_version": "1.20.60",
   "minecraft:block_culling_rules": {
     "description": {
-       "identifier": "test:sushi_cull"
+      "identifier": "test:sushi_cull"
     },
     "rules": [
       {
-       "geometry_part": { 
+        "geometry_part": {
           "bone": "bb_main",
-          "cube": 0, 
-          "face": "north" },
+          "cube": 0,
+          "face": "north"
+        },
         "direction": "north"
-       },
-       {
-        "geometry_part": { 
-          "bone": "bb_main", 
-          "cube": 0, 
-          "face": "south" },
+      },
+      {
+        "geometry_part": {
+          "bone": "bb_main",
+          "cube": 0,
+          "face": "south"
+        },
         "direction": "south"
-       }
+      }
     ]
   }
 }
