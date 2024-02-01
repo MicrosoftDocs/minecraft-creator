@@ -51,4 +51,5 @@ The rules list specifies the
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|geometry_part|*not set* | List | Specifies the bone, cube, face, and direction that the block will be culled. |
+|geometry_part|*not set* | List | Specifies the bone, cube, and faceof the block that will be culled. |
+|direction|*not set* | String | Specifies the direction that the block will be culled. |
