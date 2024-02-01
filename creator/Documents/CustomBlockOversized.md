@@ -237,7 +237,7 @@ Here is the whole **tuna_roll.json** file:
 
 ```json
 {
-  "format_version": "1.19.80",
+  "format_version": "1.20.60",
   "minecraft:block": {
     "description": {
       "identifier": "demo:tuna_roll"
