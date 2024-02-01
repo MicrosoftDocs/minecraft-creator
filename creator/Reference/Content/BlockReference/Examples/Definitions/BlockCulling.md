@@ -12,9 +12,9 @@ These properties are part of Block Culling used within block JSON files. This he
 
 ## Code Example of a Custom Block's Culling JSON file, culling specific faces
 
-This section shows how to specify particular faces in a geometry file for culling checks.  Note that face culling & bone culling can both exist in the same culling file.
+This section shows how to specify particular faces in a geometry file for culling checks. Note that face culling and bone culling can both exist in the same culling file.
 
-A face culls (is not visible) if the neighbor in the "direction" direction is full & opaque (a full cube, and drawing using the "opaque" render-method in the minecraft:material_instances component).  Note that if a minecraft:transform component rotates the block, the directions rotate as well.
+A face culls (is not visible) if the neighbor in the "direction" direction is full and opaque (a full cube, and drawing using the "opaque" render-method in the `minecraft:material_instances` component).  Note that if a minecraft:transform component rotates the block, the directions rotate as well.
 
 ```json
 {
@@ -70,7 +70,7 @@ The rules list specifies the
 
 This section shows how to specify particular bones in a geometry file for culling checks.  Note that face culling & bone culling can both exist in the same culling file.
 
-A bone culls (is not visible) if the neighbor in the "direction" direction is full & opaque (a full cube, and drawing using the "opaque" render-method in the minecraft:material_instances component).  Note that if a minecraft:transform component rotates the block, the directions rotate as well.
+A bone culls (is not visible) if the neighbor in the "direction" direction is full and opaque (a full cube, and drawing using the "opaque" render-method in the `minecraft:material_instances` component). Note that if a `minecraft:transform` component rotates the block, the directions rotate as well.
 
 
 ```json
@@ -112,4 +112,3 @@ The rules list specifies the
 |:----------|:----------|:----------|:----------|
 |geometry_part|*not set* | List | Specifies the bone of the face that will be culled. |
 |direction|*not set* | String | Specifies the direction of the neighbor block to check for culling.  This direction rotates with a block's Transform component. |
-
