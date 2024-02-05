@@ -714,7 +714,7 @@ This file creates the custom shape of the chestplate that the texture and armor 
 
 **Chestplate Resource Pack/textures/items**
 
-Here are the image files to download and use for the custom chestplate icon and the geometry’s texture itself.
+Here are the image files to download and use for the custom chestplate icon and the geometry's texture itself.
 
 Here is the chestplate icon:
 
