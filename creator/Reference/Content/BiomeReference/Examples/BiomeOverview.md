@@ -332,6 +332,12 @@ Biomes are read from JSON files in the biomes subfolders of behavior packs. Load
           float "weight" : opt // Weight with which this biome should selected, relative to other biomes.
       }
       object "minecraft:legacy_world_generation_rules" : opt // Additional world generation control applicable only to legacy limited worlds.
-      object "[a-z0-9_.:]+" : opt // Attach arbitrary string tags to this biome
+      object "minecraft:tags"[0,1] : opt // Attach arbitrary string tags to this biome
+      {
+          array "tags"[0,18446744073709551615] // String tags to apply to this biome.
+          {
+              string "<any array element>" : opt
+          }
+      }
   }
 ```

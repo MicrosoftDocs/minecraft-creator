@@ -94,6 +94,8 @@
   href: is_moving.md
 - name: is_owner
   href: is_owner.md
+- name: is_panicking
+  href: is_panicking.md
 - name: is_persistent
   href: is_persistent.md
 - name: is_raider
@@ -110,6 +112,8 @@
   href: is_sneaking.md
 - name: is_snow_covered
   href: is_snow_covered.md
+- name: is_sprinting
+  href: is_sprinting.md
 - name: is_target
   href: is_target.md
 - name: is_temperature_type
