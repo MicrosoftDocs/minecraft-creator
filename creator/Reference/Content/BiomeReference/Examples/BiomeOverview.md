@@ -340,3 +340,4 @@ Biomes are read from JSON files in the biomes subfolders of behavior packs. Load
           }
       }
   }
+```
