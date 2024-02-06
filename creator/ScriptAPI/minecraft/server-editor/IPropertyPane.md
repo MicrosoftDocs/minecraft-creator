@@ -95,7 +95,7 @@ Adds a BlockPicker item to the pane.
 
 ### **addBool**
 `
-addBool(obj: T, property: Prop, options: IPropertyItemOptions): IPropertyItem<T, Prop>
+addBool(obj: T, property: Prop, options: IPropertyItemOptionsBool): IPropertyItem<T, Prop>
 `
 
 Adds a boolean item to the pane.
@@ -103,7 +103,7 @@ Adds a boolean item to the pane.
 #### **Parameters**
 - **obj**: *T*
 - **property**: *Prop*
-- **options**: *IPropertyItemOptions*
+- **options**: *IPropertyItemOptionsBool*
 
 #### **Returns** *IPropertyItem<T, Prop>*
 

@@ -16,6 +16,8 @@ Minecraft block
 Blue Candle
 - `blue_candle`
 Blue Candle
+- `minecraft:dark_oak_wood`
+- `dark_oak_wood`
 - `minecraft:birch_standing_sign`
 Standing Birch Sign
 - `birch_standing_sign`
@@ -212,6 +214,8 @@ Deepslate
 Warped Pressure Plate
 - `warped_pressure_plate`
 Warped Pressure Plate
+- `minecraft:stripped_acacia_wood`
+- `stripped_acacia_wood`
 - `minecraft:diamond_block`
 Diamond Block
 - `diamond_block`
@@ -302,6 +306,8 @@ Potatoes
 Muddy Mangrove Roots
 - `muddy_mangrove_roots`
 Muddy Mangrove Roots
+- `minecraft:stripped_jungle_wood`
+- `stripped_jungle_wood`
 - `minecraft:noteblock`
 Note Block
 - `noteblock`
@@ -460,6 +466,8 @@ Stone
 - `tuff_brick_wall`
 - `minecraft:brain_coral`
 - `brain_coral`
+- `minecraft:stripped_spruce_wood`
+- `stripped_spruce_wood`
 - `minecraft:orange_wool`
 - `orange_wool`
 - `minecraft:polished_blackstone_brick_double_slab`
@@ -484,10 +492,14 @@ Green Candle
 Waxed Exposed Copper
 - `waxed_exposed_copper`
 Waxed Exposed Copper
+- `minecraft:birch_wood`
+- `birch_wood`
 - `minecraft:hay_block`
 Hay Block
 - `hay_block`
 Hay Block
+- `minecraft:jungle_wood`
+- `jungle_wood`
 - `minecraft:waxed_weathered_copper`
 Waxed Weathered Copper
 - `waxed_weathered_copper`
@@ -636,10 +648,6 @@ Deepslate Brick Double Slab
 - `bamboo_mosaic_slab`
 - `minecraft:dark_oak_log`
 - `dark_oak_log`
-- `minecraft:wood`
-Wood
-- `wood`
-Wood
 - `minecraft:acacia_hanging_sign`
 - `acacia_hanging_sign`
 - `minecraft:ochre_froglight`
@@ -1196,6 +1204,8 @@ Coral Fan Hang
 - `orange_stained_glass`
 - `minecraft:white_stained_glass_pane`
 - `white_stained_glass_pane`
+- `minecraft:stripped_birch_wood`
+- `stripped_birch_wood`
 - `minecraft:cracked_nether_bricks`
 Cracked Nether Bricks
 - `cracked_nether_bricks`
@@ -1368,6 +1378,8 @@ Iron Bars
 Iron Bars
 - `minecraft:white_terracotta`
 - `white_terracotta`
+- `minecraft:stripped_oak_wood`
+- `stripped_oak_wood`
 - `minecraft:light_blue_carpet`
 - `light_blue_carpet`
 - `minecraft:oak_hanging_sign`
@@ -1382,12 +1394,16 @@ Melon Stem
 Crimson Planks
 - `crimson_planks`
 Crimson Planks
+- `minecraft:stripped_dark_oak_wood`
+- `stripped_dark_oak_wood`
 - `minecraft:waxed_weathered_cut_copper`
 Waxed Weathered Cut Copper
 - `waxed_weathered_cut_copper`
 Waxed Weathered Cut Copper
 - `minecraft:white_stained_glass`
 - `white_stained_glass`
+- `minecraft:oak_wood`
+- `oak_wood`
 - `minecraft:purple_stained_glass_pane`
 - `purple_stained_glass_pane`
 - `minecraft:waxed_oxidized_copper_trapdoor`
@@ -2256,6 +2272,8 @@ Birch Wall Sign
 Birch Wall Sign
 - `minecraft:bamboo_wall_sign`
 - `bamboo_wall_sign`
+- `minecraft:acacia_wood`
+- `acacia_wood`
 - `minecraft:gray_stained_glass_pane`
 - `gray_stained_glass_pane`
 - `minecraft:hopper`
@@ -2646,6 +2664,8 @@ End Portal
 - `yellow_stained_glass`
 - `minecraft:jungle_double_slab`
 - `jungle_double_slab`
+- `minecraft:spruce_wood`
+- `spruce_wood`
 - `minecraft:blackstone`
 Blackstone
 - `blackstone`
@@ -2978,22 +2998,10 @@ Log
 Log 2
 - `minecraft:log2`
 Log 2
-- `leaves`
-Leaves
-- `minecraft:leaves`
-Leaves
-- `leaves2`
-Leaves 2
-- `minecraft:leaves2`
-Leaves 2
 - `coral`
 Coral
 - `minecraft:coral`
 Coral
-- `lava_cauldron`
-Lava Cauldron
-- `minecraft:lava_cauldron`
-Lava Cauldron
 - `fence`
 Fence
 - `minecraft:fence`
@@ -3042,6 +3050,22 @@ Wooden Slab
 Double Wooden Slab
 - `minecraft:double_wooden_slab`
 Double Wooden Slab
+- `leaves`
+Leaves
+- `minecraft:leaves`
+Leaves
+- `leaves2`
+Leaves 2
+- `minecraft:leaves2`
+Leaves 2
+- `wood`
+Wood
+- `minecraft:wood`
+Wood
+- `lava_cauldron`
+Lava Cauldron
+- `minecraft:lava_cauldron`
+Lava Cauldron
 
 ## References
 The following commands reference this enum:

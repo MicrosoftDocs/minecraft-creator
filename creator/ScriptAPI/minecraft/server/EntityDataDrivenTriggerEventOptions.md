@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityDataDrivenTriggerEventOptions Interface
 description: Contents of the @minecraft/server.EntityDataDrivenTriggerEventOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityDataDrivenTriggerEventOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Specifies additional filters that are used in registering a data driven trigger event for entities.
 

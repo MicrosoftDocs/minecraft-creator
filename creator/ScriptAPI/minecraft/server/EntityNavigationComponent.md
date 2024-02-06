@@ -15,6 +15,14 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Extends
 - [*EntityComponent*](EntityComponent.md)
 
+## Classes that extend EntityNavigationComponent
+- [*EntityNavigationClimbComponent*](EntityNavigationClimbComponent.md)
+- [*EntityNavigationFloatComponent*](EntityNavigationFloatComponent.md)
+- [*EntityNavigationFlyComponent*](EntityNavigationFlyComponent.md)
+- [*EntityNavigationGenericComponent*](EntityNavigationGenericComponent.md)
+- [*EntityNavigationHoverComponent*](EntityNavigationHoverComponent.md)
+- [*EntityNavigationWalkComponent*](EntityNavigationWalkComponent.md)
+
 Allows this entity to generate paths that include vertical walls (for example, like Minecraft spiders do.)
 
 ## Properties

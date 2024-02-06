@@ -3,27 +3,21 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ClipboardMirrorAxis Enumeration
-description: Contents of the .ClipboardMirrorAxis enumeration.
+title: .StructureMirrorAxis Enumeration
+description: Contents of the .StructureMirrorAxis enumeration.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
-# ClipboardMirrorAxis Enumeration
+# StructureMirrorAxis Enumeration
 
-An enumeration describing the axis on which to mirror clipboard contents when writing to the world
+> [!CAUTION]
+> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Constants
 ### **None**
 `None = "None"`
-
-No mirroring
 ### **X**
 `X = "X"`
-
-Mirror on the X axis
 ### **XZ**
 `XZ = "XZ"`
-
-Mirror on both X and Z axes
 ### **Z**
 `Z = "Z"`
-
-Mirror on the Z axis

@@ -134,6 +134,8 @@
       href: minecraft/server/FluidType.md
     - name: GameMode
       href: minecraft/server/GameMode.md
+    - name: GameRule
+      href: minecraft/server/GameRule.md
     - name: HudElement
       href: minecraft/server/HudElement.md
     - name: HudVisibility
@@ -152,6 +154,10 @@
       href: minecraft/server/ScriptEventSource.md
     - name: SignSide
       href: minecraft/server/SignSide.md
+    - name: StructureMirrorAxis
+      href: minecraft/server/StructureMirrorAxis.md
+    - name: StructureRotation
+      href: minecraft/server/StructureRotation.md
     - name: TimeOfDay
       href: minecraft/server/TimeOfDay.md
     - name: WatchdogTerminateReason
@@ -466,6 +472,10 @@
       href: minecraft/server/FilterGroup.md
     - name: FluidContainer
       href: minecraft/server/FluidContainer.md
+    - name: GameRuleChangeAfterEvent
+      href: minecraft/server/GameRuleChangeAfterEvent.md
+    - name: GameRuleChangeAfterEventSignal
+      href: minecraft/server/GameRuleChangeAfterEventSignal.md
     - name: GameRules
       href: minecraft/server/GameRules.md
     - name: IButtonPushAfterEventSignal
@@ -486,14 +496,6 @@
       href: minecraft/server/ItemComponent.md
     - name: ItemCooldownComponent
       href: minecraft/server/ItemCooldownComponent.md
-    - name: ItemDefinitionAfterEventSignal
-      href: minecraft/server/ItemDefinitionAfterEventSignal.md
-    - name: ItemDefinitionBeforeEventSignal
-      href: minecraft/server/ItemDefinitionBeforeEventSignal.md
-    - name: ItemDefinitionTriggeredAfterEvent
-      href: minecraft/server/ItemDefinitionTriggeredAfterEvent.md
-    - name: ItemDefinitionTriggeredBeforeEvent
-      href: minecraft/server/ItemDefinitionTriggeredBeforeEvent.md
     - name: ItemDurabilityComponent
       href: minecraft/server/ItemDurabilityComponent.md
     - name: ItemEnchantableComponent
@@ -570,6 +572,14 @@
       href: minecraft/server/PlayerDimensionChangeAfterEvent.md
     - name: PlayerDimensionChangeAfterEventSignal
       href: minecraft/server/PlayerDimensionChangeAfterEventSignal.md
+    - name: PlayerGameModeChangeAfterEvent
+      href: minecraft/server/PlayerGameModeChangeAfterEvent.md
+    - name: PlayerGameModeChangeAfterEventSignal
+      href: minecraft/server/PlayerGameModeChangeAfterEventSignal.md
+    - name: PlayerGameModeChangeBeforeEvent
+      href: minecraft/server/PlayerGameModeChangeBeforeEvent.md
+    - name: PlayerGameModeChangeBeforeEventSignal
+      href: minecraft/server/PlayerGameModeChangeBeforeEventSignal.md
     - name: PlayerInteractWithBlockAfterEvent
       href: minecraft/server/PlayerInteractWithBlockAfterEvent.md
     - name: PlayerInteractWithBlockAfterEventSignal
@@ -790,10 +800,6 @@
       href: minecraft/server-editor/changelog.md
     - name: ActionTypes
       href: minecraft/server-editor/ActionTypes.md
-    - name: ClipboardMirrorAxis
-      href: minecraft/server-editor/ClipboardMirrorAxis.md
-    - name: ClipboardRotation
-      href: minecraft/server-editor/ClipboardRotation.md
     - name: CursorControlMode
       href: minecraft/server-editor/CursorControlMode.md
     - name: CursorTargetMode
@@ -852,8 +858,14 @@
       href: minecraft/server-editor/ModeChangeAfterEventSignal.md
     - name: PlaytestManager
       href: minecraft/server-editor/PlaytestManager.md
+    - name: PrimarySelectionChangeAfterEventSignal
+      href: minecraft/server-editor/PrimarySelectionChangeAfterEventSignal.md
+    - name: PrimarySelectionChangedEvent
+      href: minecraft/server-editor/PrimarySelectionChangedEvent.md
     - name: Selection
       href: minecraft/server-editor/Selection.md
+    - name: SelectionEventAfterEvent
+      href: minecraft/server-editor/SelectionEventAfterEvent.md
     - name: SelectionManager
       href: minecraft/server-editor/SelectionManager.md
     - name: SettingsManager
@@ -906,6 +918,8 @@
       href: minecraft/server-editor/IPropertyItem.md
     - name: IPropertyItemOptions
       href: minecraft/server-editor/IPropertyItemOptions.md
+    - name: IPropertyItemOptionsBool
+      href: minecraft/server-editor/IPropertyItemOptionsBool.md
     - name: IPropertyItemOptionsButton
       href: minecraft/server-editor/IPropertyItemOptionsButton.md
     - name: IPropertyItemOptionsDataPicker

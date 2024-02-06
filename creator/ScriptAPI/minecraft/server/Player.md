@@ -137,6 +137,9 @@ Type: *number*
 - [eatItem](#eatitem)
 ::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
+- [getGameMode](#getgamemode)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [getItemCooldown](#getitemcooldown)
 ::: moniker-end
 - [getSpawnPoint](#getspawnpoint)
@@ -156,6 +159,9 @@ Type: *number*
 ::: moniker-end
 - [resetLevel](#resetlevel)
 - [sendMessage](#sendmessage)
+::: moniker range="=minecraft-bedrock-experimental"
+- [setGameMode](#setgamemode)
+::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [setOp](#setop)
 ::: moniker-end
@@ -233,6 +239,21 @@ Eats an item, providing the item's hunger and saturation effects to the player. 
 > This function can throw errors.
 >
 > Throws if the item is not a food item.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getGameMode**
+`
+getGameMode(): GameMode
+`
+
+#### **Returns** [*GameMode*](GameMode.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
 ::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -455,6 +476,25 @@ function sendPlayerMessages(player: Player) {
     player.sendMessage(rawMessageWithNestedTranslations);
 }
 ```
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **setGameMode**
+`
+setGameMode(gameMode?: GameMode): void
+`
+
+#### **Parameters**
+- **gameMode**?: [*GameMode*](GameMode.md) = `null`
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **setOp**

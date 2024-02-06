@@ -237,27 +237,29 @@ Here is the whole **tuna_roll.json** file:
 
 ```json
 {
-  "format_version": "1.19.80",
-  "minecraft:block": {
+  "format_version": "1.20.60",
+  "minecraft:block_culling_rules": {
     "description": {
-      "identifier": "demo:tuna_roll"
+      "identifier": "test:sushi_cull"
     },
-    "components": {
-      "minecraft:geometry": {
-        "identifier": "geometry.sushi",
-        "culling": "test:sushi_cull"
-      },
-      "minecraft:material_instances": {
-        "north": "sushi_side",
-        "south": "sushi_side",
-        "*": {
-          "texture": "sushi_wrap"
+    "rules": [
+      {
+        "geometry_part": {
+          "bone": "bb_main",
+          "cube": 0,
+          "face": "north"
         },
-        "sushi_side": {
-          "texture": "tuna_roll"
-        }
+        "direction": "north"
+      },
+      {
+        "geometry_part": {
+          "bone": "bb_main",
+          "cube": 0,
+          "face": "south"
+        },
+        "direction": "south"
       }
-    }
+    ]
   }
 }
 ```

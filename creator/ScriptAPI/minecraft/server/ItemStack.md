@@ -177,9 +177,6 @@ Type: *string*
 - [setDynamicProperty](#setdynamicproperty)
 ::: moniker-end
 - [setLore](#setlore)
-::: moniker range="=minecraft-bedrock-experimental"
-- [triggerEvent](#triggerevent)
-::: moniker-end
 
 ### **constructor**
 `
@@ -191,7 +188,7 @@ Creates a new instance of a stack of items for use in the world.
 #### **Parameters**
 - **itemType**: [*ItemType*](ItemType.md) | *string*
   
-  Type of item to create. See the @minecraft/vanilla-data.MinecraftItemTypes enumeration for a list of standard item types in Minecraft experiences.
+  Type of item to create. See the {@link @minecraft/vanilla-data.MinecraftItemTypes} enumeration for a list of standard item types in Minecraft experiences.
 - **amount**?: *number* = `1`
   
   Number of items to place in the stack, between 1-255. The provided value will be clamped to the item's maximum stack size. Note that certain items can only have one item in the stack.
@@ -571,26 +568,6 @@ function giveAwesomeSword(player: Player) {
     inventory.container.setItem(0, diamondAwesomeSword);
 }
 ```
-
-::: moniker range="=minecraft-bedrock-experimental"
-### **triggerEvent**
-`
-triggerEvent(eventName: string): void
-`
-
-Triggers an item type event. For custom items, a number of events are defined in an items' definition for key item behaviors.
-
-#### **Parameters**
-- **eventName**: *string*
-  
-  Name of the item type event to trigger. If a namespace is not specified, minecraft: is assumed.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-::: moniker-end
 
 #### Examples
 ##### ***givePlayerIronFireSword.ts***

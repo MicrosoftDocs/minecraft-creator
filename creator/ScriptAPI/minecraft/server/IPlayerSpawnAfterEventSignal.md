@@ -8,6 +8,9 @@ description: Contents of the @minecraft/server.IPlayerSpawnAfterEventSignal clas
 ---
 # IPlayerSpawnAfterEventSignal Class
 
+## Classes that extend IPlayerSpawnAfterEventSignal
+- [*PlayerSpawnAfterEventSignal*](PlayerSpawnAfterEventSignal.md)
+
 Provides an adaptable interface for callers to subscribe to an event that fires after a player spawns.
 
 ## Methods

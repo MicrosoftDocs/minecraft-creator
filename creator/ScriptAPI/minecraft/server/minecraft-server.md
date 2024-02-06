@@ -561,12 +561,13 @@ function yeetEntity(entity: Entity) {
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "1.7.0"
+    "version": "1.8.0"
 }
 ```
 
 ## Available Versions
 - `1.10.0-beta`
+- `1.8.0`
 - `1.7.0`
 - `1.6.0`
 - `1.5.0`
@@ -595,6 +596,7 @@ function yeetEntity(entity: Entity) {
 - [EquipmentSlot](EquipmentSlot.md)
 - [FluidType](FluidType.md)
 - [GameMode](GameMode.md)
+- [GameRule](GameRule.md)
 - [HudElement](HudElement.md)
 - [HudVisibility](HudVisibility.md)
 - [ItemComponentTypes](ItemComponentTypes.md)
@@ -604,6 +606,8 @@ function yeetEntity(entity: Entity) {
 - [ScoreboardIdentityType](ScoreboardIdentityType.md)
 - [ScriptEventSource](ScriptEventSource.md)
 - [SignSide](SignSide.md)
+- [StructureMirrorAxis](StructureMirrorAxis.md)
+- [StructureRotation](StructureRotation.md)
 - [TimeOfDay](TimeOfDay.md)
 - [WatchdogTerminateReason](WatchdogTerminateReason.md)
 - [WeatherType](WeatherType.md)
@@ -768,6 +772,8 @@ function yeetEntity(entity: Entity) {
 - [FeedItemEffect](FeedItemEffect.md)
 - [FilterGroup](FilterGroup.md)
 - [FluidContainer](FluidContainer.md)
+- [GameRuleChangeAfterEvent](GameRuleChangeAfterEvent.md)
+- [GameRuleChangeAfterEventSignal](GameRuleChangeAfterEventSignal.md)
 - [GameRules](GameRules.md)
 - [IButtonPushAfterEventSignal](IButtonPushAfterEventSignal.md)
 - [ILeverActionAfterEventSignal](ILeverActionAfterEventSignal.md)
@@ -778,10 +784,6 @@ function yeetEntity(entity: Entity) {
 - [ItemCompleteUseAfterEventSignal](ItemCompleteUseAfterEventSignal.md)
 - [ItemComponent](ItemComponent.md)
 - [ItemCooldownComponent](ItemCooldownComponent.md)
-- [ItemDefinitionAfterEventSignal](ItemDefinitionAfterEventSignal.md)
-- [ItemDefinitionBeforeEventSignal](ItemDefinitionBeforeEventSignal.md)
-- [ItemDefinitionTriggeredAfterEvent](ItemDefinitionTriggeredAfterEvent.md)
-- [ItemDefinitionTriggeredBeforeEvent](ItemDefinitionTriggeredBeforeEvent.md)
 - [ItemDurabilityComponent](ItemDurabilityComponent.md)
 - [ItemEnchantableComponent](ItemEnchantableComponent.md)
 - [ItemFoodComponent](ItemFoodComponent.md)
@@ -820,6 +822,10 @@ function yeetEntity(entity: Entity) {
 - [PlayerBreakBlockBeforeEventSignal](PlayerBreakBlockBeforeEventSignal.md)
 - [PlayerDimensionChangeAfterEvent](PlayerDimensionChangeAfterEvent.md)
 - [PlayerDimensionChangeAfterEventSignal](PlayerDimensionChangeAfterEventSignal.md)
+- [PlayerGameModeChangeAfterEvent](PlayerGameModeChangeAfterEvent.md)
+- [PlayerGameModeChangeAfterEventSignal](PlayerGameModeChangeAfterEventSignal.md)
+- [PlayerGameModeChangeBeforeEvent](PlayerGameModeChangeBeforeEvent.md)
+- [PlayerGameModeChangeBeforeEventSignal](PlayerGameModeChangeBeforeEventSignal.md)
 - [PlayerInteractWithBlockAfterEvent](PlayerInteractWithBlockAfterEvent.md)
 - [PlayerInteractWithBlockAfterEventSignal](PlayerInteractWithBlockAfterEventSignal.md)
 - [PlayerInteractWithBlockBeforeEvent](PlayerInteractWithBlockBeforeEvent.md)
