@@ -170,12 +170,8 @@ Type: *number*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getRedstonePower](#getredstonepower)
 ::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [getTags](#gettags)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [hasTag](#hastag)
-::: moniker-end
 - [isValid](#isvalid)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [matches](#matches)
@@ -362,7 +358,6 @@ Returns the net redstone power of this block.
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getTags**
 `
 getTags(): string[]
@@ -372,16 +367,11 @@ Returns a set of tags for a block.
 
 #### **Returns** *string*[] - The list of tags that the block has.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **hasTag**
 `
 hasTag(tag: string): boolean
@@ -395,9 +385,6 @@ Checks to see if the permutation of this block has a specific tag.
   Tag to check for.
 
 #### **Returns** *boolean* - Returns `true` if the permutation of this block has the tag, else `false`.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.
@@ -416,7 +403,6 @@ console.log(`Block is dirt: ${block.hasTag("dirt")}`);
 console.log(`Block is wood: ${block.hasTag("wood")}`);
 console.log(`Block is stone: ${block.hasTag("stone")}`);
 ```
-::: moniker-end
 
 ### **isValid**
 `

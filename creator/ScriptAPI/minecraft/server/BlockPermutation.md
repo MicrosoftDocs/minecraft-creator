@@ -61,9 +61,7 @@ Type: [*BlockType*](BlockType.md)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getItemStack](#getitemstack)
 ::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [getState](#getstate)
-::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getTags](#gettags)
 ::: moniker-end
@@ -71,9 +69,7 @@ Type: [*BlockType*](BlockType.md)
 - [hasTag](#hastag)
 ::: moniker-end
 - [matches](#matches)
-::: moniker range="=minecraft-bedrock-experimental"
 - [withState](#withstate)
-::: moniker-end
 - [resolve](#resolve)
 
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -123,7 +119,6 @@ Retrieves a prototype item stack based on this block permutation that can be use
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getState**
 `
 getState(stateName: string): boolean | number | string | undefined
@@ -137,10 +132,6 @@ Gets a state for the permutation.
   Name of the block state who's value is to be returned.
 
 #### **Returns** *boolean* | *number* | *string* | *undefined* - Returns the state if the permutation has it, else `undefined`.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **getTags**
@@ -202,7 +193,6 @@ Returns a boolean whether a specified permutation matches this permutation. If s
 
 #### **Returns** *boolean*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **withState**
 `
 withState(name: string, value: boolean | number | string): BlockPermutation
@@ -220,12 +210,8 @@ Returns a derived BlockPermutation with a specific property set.
 
 #### **Returns** [*BlockPermutation*](BlockPermutation.md)
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
-::: moniker-end
 
 ### **resolve**
 `

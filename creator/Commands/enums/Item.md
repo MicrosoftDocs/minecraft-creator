@@ -16,6 +16,8 @@ One of the [Minecraft Items available on this page](/creator/reference/content/i
 Blue Candle
 - `blue_candle`
 Blue Candle
+- `minecraft:dark_oak_wood`
+- `dark_oak_wood`
 - `minecraft:polished_basalt`
 Polished Basalt
 - `polished_basalt`
@@ -182,6 +184,8 @@ Deepslate
 Warped Pressure Plate
 - `warped_pressure_plate`
 Warped Pressure Plate
+- `minecraft:stripped_acacia_wood`
+- `stripped_acacia_wood`
 - `minecraft:diamond_block`
 Diamond Block
 - `diamond_block`
@@ -264,6 +268,8 @@ Iron Trapdoor
 Muddy Mangrove Roots
 - `muddy_mangrove_roots`
 Muddy Mangrove Roots
+- `minecraft:stripped_jungle_wood`
+- `stripped_jungle_wood`
 - `minecraft:noteblock`
 Noteblock
 - `noteblock`
@@ -386,6 +392,8 @@ Stone
 - `tuff_brick_wall`
 - `minecraft:brain_coral`
 - `brain_coral`
+- `minecraft:stripped_spruce_wood`
+- `stripped_spruce_wood`
 - `minecraft:orange_wool`
 - `orange_wool`
 - `minecraft:respawn_anchor`
@@ -402,10 +410,14 @@ Green Candle
 Waxed Exposed Copper
 - `waxed_exposed_copper`
 Waxed Exposed Copper
+- `minecraft:birch_wood`
+- `birch_wood`
 - `minecraft:hay_block`
 Hay Block
 - `hay_block`
 Hay Block
+- `minecraft:jungle_wood`
+- `jungle_wood`
 - `minecraft:waxed_weathered_copper`
 Waxed Weathered Copper
 - `waxed_weathered_copper`
@@ -544,10 +556,6 @@ Cobblestone Wall
 - `bamboo_mosaic_slab`
 - `minecraft:dark_oak_log`
 - `dark_oak_log`
-- `minecraft:wood`
-Wood
-- `wood`
-Wood
 - `minecraft:acacia_hanging_sign`
 - `acacia_hanging_sign`
 - `minecraft:ochre_froglight`
@@ -1034,6 +1042,8 @@ Chorus Flower
 - `orange_stained_glass`
 - `minecraft:white_stained_glass_pane`
 - `white_stained_glass_pane`
+- `minecraft:stripped_birch_wood`
+- `stripped_birch_wood`
 - `minecraft:cracked_nether_bricks`
 Cracked Nether Bricks
 - `cracked_nether_bricks`
@@ -1178,6 +1188,8 @@ Iron Bars
 Iron Bars
 - `minecraft:white_terracotta`
 - `white_terracotta`
+- `minecraft:stripped_oak_wood`
+- `stripped_oak_wood`
 - `minecraft:light_blue_carpet`
 - `light_blue_carpet`
 - `minecraft:oak_hanging_sign`
@@ -1188,12 +1200,16 @@ Iron Bars
 Crimson Planks
 - `crimson_planks`
 Crimson Planks
+- `minecraft:stripped_dark_oak_wood`
+- `stripped_dark_oak_wood`
 - `minecraft:waxed_weathered_cut_copper`
 Waxed Weathered Cut Copper
 - `waxed_weathered_cut_copper`
 Waxed Weathered Cut Copper
 - `minecraft:white_stained_glass`
 - `white_stained_glass`
+- `minecraft:oak_wood`
+- `oak_wood`
 - `minecraft:purple_stained_glass_pane`
 - `purple_stained_glass_pane`
 - `minecraft:waxed_oxidized_copper_trapdoor`
@@ -1928,6 +1944,8 @@ Azalea
 Mud Bricks
 - `mud_bricks`
 Mud Bricks
+- `minecraft:acacia_wood`
+- `acacia_wood`
 - `minecraft:gray_stained_glass_pane`
 - `gray_stained_glass_pane`
 - `minecraft:hopper`
@@ -2250,6 +2268,8 @@ Stonecutter Block
 - `lime_stained_glass_pane`
 - `minecraft:yellow_stained_glass`
 - `yellow_stained_glass`
+- `minecraft:spruce_wood`
+- `spruce_wood`
 - `minecraft:blackstone`
 Blackstone
 - `blackstone`
@@ -2506,14 +2526,6 @@ Log
 Log 2
 - `minecraft:log2`
 Log 2
-- `leaves`
-Leaves
-- `minecraft:leaves`
-Leaves
-- `leaves2`
-Leaves 2
-- `minecraft:leaves2`
-Leaves 2
 - `coral`
 Coral
 - `minecraft:coral`
@@ -2562,6 +2574,18 @@ Planks
 Wooden Slab
 - `minecraft:wooden_slab`
 Wooden Slab
+- `leaves`
+Leaves
+- `minecraft:leaves`
+Leaves
+- `leaves2`
+Leaves 2
+- `minecraft:leaves2`
+Leaves 2
+- `wood`
+Wood
+- `minecraft:wood`
+Wood
 - `minecraft:chicken`
 Chicken
 - `chicken`

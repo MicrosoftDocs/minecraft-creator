@@ -1663,38 +1663,38 @@ Block Name |Aux Value |Block States|
 |minecraft:grindstone| 13| ["attachment" = "multiple", "direction" = 1]|
 |minecraft:grindstone| 14| ["attachment" = "multiple", "direction" = 2]|
 |minecraft:grindstone| 15| ["attachment" = "multiple", "direction" = 3]|
-|minecraft:hard_stained_glass| 0| ["color" = "white"]|
-|minecraft:hard_stained_glass| 1| ["color" = "orange"]|
-|minecraft:hard_stained_glass| 2| ["color" = "magenta"]|
-|minecraft:hard_stained_glass| 3| ["color" = "light_blue"]|
-|minecraft:hard_stained_glass| 4| ["color" = "yellow"]|
-|minecraft:hard_stained_glass| 5| ["color" = "lime"]|
-|minecraft:hard_stained_glass| 6| ["color" = "pink"]|
-|minecraft:hard_stained_glass| 7| ["color" = "gray"]|
-|minecraft:hard_stained_glass| 8| ["color" = "silver"]|
-|minecraft:hard_stained_glass| 9| ["color" = "cyan"]|
-|minecraft:hard_stained_glass| 10| ["color" = "purple"]|
-|minecraft:hard_stained_glass| 11| ["color" = "blue"]|
-|minecraft:hard_stained_glass| 12| ["color" = "brown"]|
-|minecraft:hard_stained_glass| 13| ["color" = "green"]|
-|minecraft:hard_stained_glass| 14| ["color" = "red"]|
-|minecraft:hard_stained_glass| 15| ["color" = "black"]|
-|minecraft:hard_stained_glass_pane| 0| ["color" = "white"]|
-|minecraft:hard_stained_glass_pane| 1| ["color" = "orange"]|
-|minecraft:hard_stained_glass_pane| 2| ["color" = "magenta"]|
-|minecraft:hard_stained_glass_pane| 3| ["color" = "light_blue"]|
-|minecraft:hard_stained_glass_pane| 4| ["color" = "yellow"]|
-|minecraft:hard_stained_glass_pane| 5| ["color" = "lime"]|
-|minecraft:hard_stained_glass_pane| 6| ["color" = "pink"]|
-|minecraft:hard_stained_glass_pane| 7| ["color" = "gray"]|
-|minecraft:hard_stained_glass_pane| 8| ["color" = "silver"]|
-|minecraft:hard_stained_glass_pane| 9| ["color" = "cyan"]|
-|minecraft:hard_stained_glass_pane| 10| ["color" = "purple"]|
-|minecraft:hard_stained_glass_pane| 11| ["color" = "blue"]|
-|minecraft:hard_stained_glass_pane| 12| ["color" = "brown"]|
-|minecraft:hard_stained_glass_pane| 13| ["color" = "green"]|
-|minecraft:hard_stained_glass_pane| 14| ["color" = "red"]|
-|minecraft:hard_stained_glass_pane| 15| ["color" = "black"]|
+|minecraft:hard_stained_glass| 0| minecraft:hard_white_stained_glass|
+|minecraft:hard_stained_glass| 1| minecraft:hard_orange_stained_glass|
+|minecraft:hard_stained_glass| 2| minecraft:hard_magenta_stained_glass|
+|minecraft:hard_stained_glass| 3| minecraft:hard_light_blue_stained_glass|
+|minecraft:hard_stained_glass| 4| minecraft:hard_yellow_stained_glass|
+|minecraft:hard_stained_glass| 5| minecraft:hard_lime_stained_glass|
+|minecraft:hard_stained_glass| 6| minecraft:hard_pink_stained_glass|
+|minecraft:hard_stained_glass| 7| minecraft:hard_gray_stained_glass|
+|minecraft:hard_stained_glass| 8| minecraft:hard_light_gray_stained_glass|
+|minecraft:hard_stained_glass| 9| minecraft:hard_cyan_stained_glass|
+|minecraft:hard_stained_glass| 10| minecraft:hard_purple_stained_glass|
+|minecraft:hard_stained_glass| 11| minecraft:hard_blue_stained_glass|
+|minecraft:hard_stained_glass| 12| minecraft:hard_brown_stained_glass|
+|minecraft:hard_stained_glass| 13| minecraft:hard_green_stained_glass|
+|minecraft:hard_stained_glass| 14| minecraft:hard_red_stained_glass|
+|minecraft:hard_stained_glass| 15| minecraft:hard_black_stained_glass|
+|minecraft:hard_stained_glass_pane| 0| minecraft:hard_white_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 1| minecraft:hard_orange_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 2| minecraft:hard_magenta_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 3| minecraft:hard_light_blue_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 4| minecraft:hard_yellow_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 5| minecraft:hard_lime_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 6| minecraft:hard_pink_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 7| minecraft:hard_gray_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 8| minecraft:hard_light_gray_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 9| minecraft:hard_cyan_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 10| minecraft:hard_purple_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 11| minecraft:hard_blue_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 12| minecraft:hard_brown_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 13| minecraft:hard_green_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 14| minecraft:hard_red_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 15| minecraft:hard_black_stained_glass_pane|
 |minecraft:hay_block| 0| ["deprecated" = 0, "direction" = 0]|
 |minecraft:hay_block| 1| ["deprecated" = 1, "direction" = 0]|
 |minecraft:hay_block| 2| ["deprecated" = 2, "direction" = 0]|

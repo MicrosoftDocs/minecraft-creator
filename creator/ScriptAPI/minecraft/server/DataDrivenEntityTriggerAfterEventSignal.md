@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.DataDrivenEntityTriggerAfterEventSignal Class
 description: Contents of the @minecraft/server.DataDrivenEntityTriggerAfterEventSignal class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # DataDrivenEntityTriggerAfterEventSignal Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains event registration related to firing of a data driven entity event - for example, the minecraft:ageable_grow_up event on a chicken.
 

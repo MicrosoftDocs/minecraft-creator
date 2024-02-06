@@ -8,6 +8,9 @@ description: Contents of the @minecraft/server.Entity class.
 ---
 # Entity Class
 
+## Classes that extend Entity
+- [*Player*](Player.md)
+
 Represents the state of an entity (a mob, the player, or other moving objects like minecarts) in the world.
 
 ## Properties

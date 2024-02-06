@@ -17,6 +17,7 @@ ms.service: minecraft-bedrock-edition
 |add_items| | JSON Object|  Loot table with items to add to the player's inventory upon successful interaction.|
 |cooldown| 0.0| Decimal|  Time in seconds before this entity can be interacted with again. |
 |cooldown_after_being_attacked| 0.0| Decimal|  Time in seconds before this entity can be interacted with after being attacked. |
+|drop_item_slot| -1| Integer| The entity's equipment slot to remove and drop the item from, if any, upon successful interaction. |
 |equip_item_slot| -1| Integer| The entity's equipment slot to equip the item to, if any, upon successful interaction. |
 |health_amount| 0| Integer | The amount of health this entity will recover or hurt when interacting with this item. Negative values will harm the entity. |
 |hurt_item| 0| Integer|  The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability. |

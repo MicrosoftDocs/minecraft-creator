@@ -81,7 +81,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | old_leaf_type| String| oak, spruce, birch, jungle| Determines the leaf type of some blocks |
 | old_log_type| String| oak, spruce, birch, jungle| Determines the wood type of some blocks |
 | open_bit| Boolean| True, False| Determines if a door, gate, or trapdoor is open |
-| orientation| Integer| 0-12| A 12-variant orientation| 
+| orientation| Integer| 0-11| A 12-variant orientation|
 | output_lit_bit| Boolean| True, False| Determines if a Comparator's output is lit |
 | output_subtract_bit| Boolean| True, False| Determines if a Comparator is set to subtract output |
 | persistent_bit| Boolean| True, False| Determines if a leaf block is persistent |
@@ -112,6 +112,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | toggle_bit| Boolean| True, False| Determines if a hopper block is active or not |
 | top_slot_bit| Boolean| True, False| Shows if a slab is the top half of the block or not |
 | torch_facing_direction| String| unknown, west, east, north, south, top| Determines the block that a torch is attached to in relation to its position |
+| trial_spawner_state| Integer| 0-5| Determines the block state for the trial spawner |
 | triggered_bit| Boolean| True, False| Determines if a dispenser is triggered |
 | turtle_egg_count| String| one_egg, two_egg, three_egg, four_egg| Determines the amount of turtle eggs in an egg block |
 | update_bit| Boolean| True, False| Determines if a leaf block or flower block should be updated |
@@ -659,10 +660,39 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:green_wool |
 | minecraft:grindstone |
 | minecraft:hanging_roots |
+| minecraft:hard_black_stained_glass |
+| minecraft:hard_black_stained_glass_pane |
+| minecraft:hard_blue_stained_glass |
+| minecraft:hard_blue_stained_glass_pane |
+| minecraft:hard_brown_stained_glass |
+| minecraft:hard_brown_stained_glass_pane |
 | minecraft:hard_glass |
 | minecraft:hard_glass_pane |
+| minecraft:hard_gray_stained_glass |
+| minecraft:hard_gray_stained_glass_pane |
+| minecraft:hard_green_stained_glass |
+| minecraft:hard_green_stained_glass_pane |
+| minecraft:hard_light_blue_stained_glass |
+| minecraft:hard_light_blue_stained_glass_pane |
 | minecraft:hard_stained_glass |
-| minecraft:hard_stained_glass_pane |
+| minecraft:hard_light_gray_stained_glass |
+| minecraft:hard_light_gray_stained_glass_pane |
+| minecraft:hard_lime_stained_glass |
+| minecraft:hard_lime_stained_glass_pane |
+| minecraft:hard_magenta_stained_glass |
+| minecraft:hard_magenta_stained_glass_pane |
+| minecraft:hard_orange_stained_glass |
+| minecraft:hard_orange_stained_glass_pane |
+| minecraft:hard_pink_stained_glass |
+| minecraft:hard_pink_stained_glass_pane |
+| minecraft:hard_purple_stained_glass |
+| minecraft:hard_purple_stained_glass_pane |
+| minecraft:hard_red_stained_glass |
+| minecraft:hard_red_stained_glass_pane |
+| minecraft:hard_white_stained_glass |
+| minecraft:hard_white_stained_glass_pane |
+| minecraft:hard_yellow_stained_glass |
+| minecraft:hard_yellow_stained_glass_pane |
 | minecraft:hardened_clay |
 | minecraft:hay_block |
 | minecraft:heavy_weighted_pressure_plate |
@@ -1043,6 +1073,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:torchflower_crop |
 | minecraft:trapdoor |
 | minecraft:trapped_chest |
+| minecraft:trial_spawner |
 | minecraft:trip_wire |
 | minecraft:tripwire_hook |
 | minecraft:tube_coral |

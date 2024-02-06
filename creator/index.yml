@@ -7,7 +7,7 @@ metadata:
   title: "Minecraft: Bedrock Edition Creator Documentation" # Required; page title shown in search results < 60 chars
   description: "Learn how to mod Minecraft with Add-Ons. Create skins, design unique experiences, discover the latest features, and develop your skills as a Minecraft creator." # < 160 chars
   service: service
-  ms.service: service # Required; service per approved list.
+  ms.service: minecraft-bedrock-edition
   ms.topic: hub-page # Required
   ms.date: 08/30/2021
   author: mammerla # Required; Github alias
@@ -26,9 +26,9 @@ highlightedContent:
       itemType: whats-new
       url: Documents/EditorOverview.md
     #card
-    - title: "1.20.50 Update Summary"
+    - title: "1.20.60 Update Summary"
       itemType: whats-new
-      url: Documents/Update1.20.50.md
+      url: Documents/Update1.20.60.md
     #card
     - title: Camera Command
       itemType: whats-new

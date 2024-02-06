@@ -23,3 +23,8 @@ Type: [*CursorPropertyChangeAfterEventSignal*](CursorPropertyChangeAfterEventSig
 This event triggers when the editor mode changes for the player.
 
 Type: [*ModeChangeAfterEventSignal*](ModeChangeAfterEventSignal.md)
+
+### **primarySelectionChange**
+`read-only primarySelectionChange: PrimarySelectionChangeAfterEventSignal;`
+
+Type: [*PrimarySelectionChangeAfterEventSignal*](PrimarySelectionChangeAfterEventSignal.md)

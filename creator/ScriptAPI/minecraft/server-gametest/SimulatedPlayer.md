@@ -63,7 +63,6 @@ Type: *boolean*
 - [respawn](#respawn)
 - [rotateBody](#rotatebody)
 - [setBodyRotation](#setbodyrotation)
-- [setGameMode](#setgamemode)
 - [setItem](#setitem)
 - [startBuild](#startbuild)
 - [stopBreakingBlock](#stopbreakingblock)
@@ -541,24 +540,6 @@ Causes the simulated player to turn to face the provided angle, relative to the 
 
 #### **Parameters**
 - **angleInDegrees**: *number*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
-
-### **setGameMode**
-`
-setGameMode(gameMode: minecraftserver.GameMode): void
-`
-
-Sets the game mode that the simulated player is operating under.
-
-#### **Parameters**
-- **gameMode**: [*@minecraft/server.GameMode*](../../minecraft/server/GameMode.md)
-  
-  Game mode to set.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

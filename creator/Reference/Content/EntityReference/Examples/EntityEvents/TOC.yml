@@ -10,3 +10,5 @@
    href: minecraftEvents_on_prime.md
  - name: queue_command
    href: minecraftEvents_queue_command.md
+ - name: set_property
+   href: minecraftEvents_set_property.md

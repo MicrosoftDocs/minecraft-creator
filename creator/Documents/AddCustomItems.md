@@ -34,6 +34,7 @@ Here are three items that do not currently exist in Vanilla Minecraft. They are 
 >- Goo
 >- Wrench
 >- Crown
+>- Custom Chestplate with Vanilla Armor Trim
 
 Use the following sections to create add-on packs for each item, or to do one set of packs for two or more items.
 
@@ -351,7 +352,7 @@ items
 manifest.json
 ```
 
-![Structure of the Crown Behavior Pack. Shows the main Behavior Pack folder contains tmanifest.json and an items folder that contains the crown.json file.](Media/AddCustomItems/crown-behavior-pack-structure.png)
+![Structure of the Crown Behavior Pack. Image shows the main Behavior Pack folder contains manifest.json and an items folder that contains the crown.json file.](Media/AddCustomItems/crown-behavior-pack-structure.png)
 
 **Crown Behavior Pack/items/crown.json**
 
@@ -537,6 +538,223 @@ Here is the crown texture:
 After you create the packs, go into Minecraft, give yourself a crown, and put it on, you should look like this:
 
 ![Image of Minecraft character Alex wearing a custom crown](Media/AddCustomItems/alex_wearing_crown.png)
+
+## Custom Chestplate with Vanilla Armor Trim
+
+If you create a custom chestplate, either by hand or through using the [Minecraft Item Wizard](MinecraftItemWizard.md), you can have it support all the Armor Trims available as of release 1.20.70. You can modify the trim patterns to better fit your custom armor too!
+
+To use armor trim on your custom armor, you need to set your **format versions** on the item and **attachable** to a minimum of 1.20.60.
+
+### Custom Chestplate with Vanilla Armor Trim Behavior Pack
+
+```
+items
+  custom_chestplate.item.json
+manifest.json
+```
+
+**Chestplate Behavior Pack/items/custom_chestplate.item.json**
+
+```json
+{ 
+"format_version": "1.20.60", 
+  "minecraft:item": { 
+    "description": { 
+      "identifier": "demo:custom_chestplate", 
+      "menu_category": { 
+        "category": "equipment", 
+        "group": "itemGroup.name.chestplate" 
+      }
+    },
+    "components": { 
+      "minecraft:max_stack_size": 1, 
+      "minecraft:icon": { 
+        "textures": { 
+          "default": "custom_chestplate" } 
+      }, 
+      "minecraft:wearable": { 
+        "protection": 10, 
+        "slot": "slot.armor.chest" 
+      }, 
+      "minecraft:durability": { 
+        "damage_chance": { 
+          "min": 10, 
+          "max": 50 
+      }, 
+        "max_durability": 1560 
+      }, 
+      "minecraft:repairable": { 
+        "repair_items": [ 
+          { 
+            "items": ["pink_dye"], 
+            "repair_amount": 390 
+          } 
+        ] 
+      }, 
+      "minecraft:tags": { 
+        "tags": [ 
+          "minecraft:is_armor", 
+          "minecraft:trimmable_armors" 
+        ] 
+      } 
+    } 
+  } 
+}
+```
+
+**Chestplate Resource Pack**
+
+```
+attachables
+  custom_chestplate.attachable.json
+models
+  entity
+    custom_chestplate.geo.json
+textures
+  items
+    custom_chestplate_ico.png
+    custom_chestplate.png
+  item_texture.json
+manifest.json
+```
+
+**Chestplate Resource Pack/attachables/custom_chestplate.attachable.json**
+
+This file defines which geometry will appear for the chestplate, as well as the the armor trim palette that will be used and any adjusted trim patterns. 
+
+```json
+{
+  "format_version": "1.20.60", 
+  "minecraft:attachable": { 
+    "description": { 
+      "identifier": "demo:custom_chestplate", 
+      "render_controllers": ["controller.render.armor"], 
+      "materials": { 
+        "default": "entity_alphatest", 
+        "enchanted": "entity_alphatest_glint" 
+      }, 
+      "textures": { 
+        "default": "textures/entity/attachable/custom_chestplate",
+        "enchanted": "textures/misc/enchanted_item_glint", 
+        "wild_trim": "textures/models/armor/custom_wild", 
+        "iron_palette": "textures/trims/color_palettes/diamond_darker"
+      }, 
+      "geometry": { 
+        "default": "geometry.custom_chestplate"
+      }
+    }
+  }
+}
+```
+
+You can add any of the existing vanilla armor trim patterns to the textures section to supply adjusted trim textures to your new armor. 
+
+**Chestplate Resource Pack/models/entity/custom_chestplate.geo.json**
+
+This file creates the custom shape of the chestplate that the texture and armor trim will be mapped on to. 
+
+```json
+{
+  "format_version": "1.16.0", 
+  "minecraft:geometry": [ 
+    { 
+      "description": { 
+        "identifier": "geometry.custom_chestplate", 
+        "texture_width": 32, 
+        "texture_height": 32, 
+        "visible_bounds_width": 3, 
+        "visible_bounds_height": 2.5, 
+        "visible_bounds_offset": [0, 0.75, 0] 
+      }, 
+      "bones": [ 
+        { 
+          "name": "body", 
+          "pivot": [0, 14, 0] 
+        }, 
+        { 
+          "name": "chestplate", 
+          "parent": "body", 
+          "pivot": [0, 0, 0], 
+          "binding": "'body'", 
+          "cubes": [ 
+            {"origin": [-4, 2, -2], "size": [8, 12, 4], "inflate": 1.01, "uv": [0, 0]} 
+          ] 
+        }, 
+        { 
+          "name": "arm_right", 
+          "pivot": [-5, 12, 0] 
+        },
+        { 
+          "name": "arm_plate_right", 
+          "parent": "arm_right", 
+          "pivot": [-5, 12, 0], 
+          "binding": "'rightarm'", 
+          "cubes": [ 
+            {"origin": [-8, 2, -2], "size": [4, 12, 4], "inflate": 1, "uv": [0, 16]} 
+          ] 
+        }, 
+        { 
+          "name": "arm_left", 
+          "pivot": [5, 12, 0] 
+        }, 
+        { 
+          "name": "arm_plate_left", 
+          "parent": "arm_left", 
+          "pivot": [5, 12, 0], 
+          "binding": "'leftarm'", 
+          "cubes": [ 
+            {"origin": [4, 2, -2], "size": [4, 12, 4], "inflate": 1, "uv": [0, 16], "mirror": true} 
+          ] 
+        } 
+      ] 
+    } 
+  ] 
+}
+```
+
+**Chestplate Resource Pack/textures/items**
+
+Here are the image files to download and use for the custom chestplate icon and the geometry's texture itself.
+
+Here is the chestplate icon:
+
+![Downloadable chest plate icon image.](Media/AddCustomItems/custom_chestplate_ico.png)
+
+Here is the chestplate texture:
+
+![Downloadable image that can be used in a resource pack for the chestplate texture.](Media/AddCustomItems/custom_chestplate.png)
+
+Here is the modified "wild" trim pattern:
+
+![Downloadable image that can be used in a resource plack for the chestplate trim.](Media/AddCustomItems/custom_wild.png)
+
+**Chestplate Resource Pack/textures/item_texture.json**
+
+```json
+{
+    "texture_data": {
+        "custom_chestplate": {
+            "textures": "textures/items/custom_chestplate.png"
+        }
+    }
+}
+```
+
+### Custom Chestplate Result
+
+After you create the packs, go into Minecraft, give yourself the custom chestplate, and put it on. You should look like this:
+
+![Image of Minecraft Alex in her beautiful custom untrimmed pink chestplate.](Media/AddCustomItems/chestplate_no_trim_yet.png)
+
+Give yourself the wild armor trim template and combine your chestplate with the wild template at a smithing table, and put it back on, you should now look like this: 
+
+![Image of Minecraft Alex in her beautiful custom trimmed pink chestplate.](Media/AddCustomItems/chestplate_trimmed.png)
+
+If your chestplate instead looks like this...
+
+![Image of a chest plate with an error texture.](Media/AddCustomItems/oops_chestplate.png)
+
+... then check the paths to your textures in the `item_texture.json` and `custom_chestplate.attachable.json` files. If there are any spelling errors or textures in incorrect folders, the geometry will display the "missing texture pattern" on your armor.
 
 ## Next Steps
 

@@ -417,7 +417,6 @@ Entity is promoted to patrol captain
 Raid is expired
 - `minecraft:ranged_mode`
 Entity is in ranged mode
-- `minecraft:relax`
 - `minecraft:remove_persistence`
 Entity is no longer persistent
 - `minecraft:remove_raid_trigger`
@@ -519,12 +518,14 @@ Entity starts going into half puff
 Entity starts Johnny action
 - `minecraft:start_land`
 Entity starts tp land
+- `minecraft:start_peeking`
+- `minecraft:start_playing_idle_ground_sound`
 - `minecraft:start_roar`
 Entity starts roaring
 - `minecraft:start_sitting`
 - `minecraft:start_transforming`
 Entity starts transforming
-- `minecraft:start_trying_to_relax`
+- `minecraft:start_unrolling`
 - `minecraft:stop_aggro`
 Entity stops being aggravated
 - `minecraft:stop_celebrating`
@@ -533,10 +534,11 @@ Entity stops celebrating
 Entity stops exploding
 - `minecraft:stop_johnny`
 Entity stops Johnny action
+- `minecraft:stop_peeking`
+- `minecraft:stop_playing_idle_ground_sound`
 - `minecraft:stop_sitting`
 - `minecraft:stop_transforming`
 Entity stops transforming
-- `minecraft:stop_trying_to_relax`
 - `minecraft:switch_to_melee`
 Entity switches to melee attack
 - `minecraft:switch_to_ranged`
@@ -582,6 +584,7 @@ Entity turns silver
 Entity turns white
 - `minecraft:turn_yellow`
 Entity turns yellow
+- `minecraft:unroll`
 - `navigation_off_land`
 Entity navigates off land
 - `navigation_on_land`
