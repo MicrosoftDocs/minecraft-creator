@@ -41,12 +41,18 @@ Listed below are the currently available Molang query functions in the latest re
 | query.armor_texture_slot| Takes the armor slot index as a parameter and returns the texture type (0=Leather, 1=Chain, 2=Iron, 3=Diamond, 4=Gold) of the armor in requested slot. |
 | query.average_frame_time| Returns the time in *seconds* of the average frame time over the last `n` frames. If an argument is passed, it is assumed to be the number of frames in the past that you wish to query. `query.average_frame_time` (or the equivalent `query.average_frame_time(0)`) will return the frame time of the frame before the current one. `query.average_frame_time(1)` will return the average frame time of the previous two frames. Currently we store the history of the last 30 frames, although note that this may change in the future. Asking for more frames will result in only sampling the number of frames stored. |
 | query.block_face| Returns the block face for this (only valid for certain triggers such as placing blocks, or interacting with block) (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
+| query.block_has_all_tags| Takes a world-origin-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has all of the tags provided. |
+| query.block_has_any_tags| Takes a world-origin-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has any of the tags provided. |
+| query.block_neighbor_has_all_tags| Takes a block-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has all of the tags provided. |
+| query.block_neighbor_has_any_tags| Takes a block-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has any of the tags provided. |
 | query.block_property| (No longer available in pack min_engine_version 1.20.40) Returns the value of the associated block's state. To be replaced with block_state. |
 | query.block_state| Returns the value of the associated block's Block State. |
 | query.blocking| Returns 1.0 if the entity is blocking damage, else it returns 0.0. Applies to a player blocking with a shield. |
 | query.body_x_rotation| Returns the body pitch rotation if called on an entity, else it returns 0.0. |
 | query.body_y_rotation| Returns the body yaw rotation if called on an entity, else it returns 0.0. |
 | query.bone_aabb| Returns the axis aligned bounding box of a bone as a struct with members `.min`, `.max`, along with `.x`, `.y`, and `.z` values for each. |
+| query.bone_orientation_matrix| Takes the name of the bone as an argument. Returns the bone orientation (as a matrix) of the desired bone provided it exists in the queryable geometry of the entity, else this returns the identity matrix and throws a content error. |
+| query.bone_orientation_trs| TRS stands for 'Translate/Rotate/Scale.' Takes the name of the bone as an argument. Returns the bone orientation matrix decomposed into the component translation/rotation/scale parts of the desired bone provided it exists in the queryable geometry of the entity, else this returns the identity matrix and throws a content error. The returned value is returned as a variable of type `struct` with members `.t`, `.r`, and `.s`, each with members `.x`, `.y`, and `.z`, and can be accessed as per this example: v.my_variable = q.bone_orientation_trs('rightarm'); return v.my_variable.r.x; |
 | query.bone_origin| Returns the initial (from the .geo) pivot of a bone as a struct with members `.x`, `.y`, and `.z`. |
 | query.bone_rotation| Returns the initial (from the .geo) rotation of a bone as a struct with members `.x`, `.y`, and `.z` in degrees. |
 | query.camera_distance_range_lerp| Takes two distances (any order) and return a number from 0 to 1 based on the camera distance between the two ranges clamped to that range. For example, `query.camera_distance_range_lerp(10, 20)` will return 0 for any distance less than or equal to 10, 0.2 for a distance of 12, 0.5 for 15, and 1 for 20 or greater. If you pass in (20, 10), a distance of 20 will return 0.0. |
@@ -63,6 +69,8 @@ Listed below are the currently available Molang query functions in the latest re
 | query.cardinal_facing_2d| Returns the current facing of the player ignoring up/down part of the direction (North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
 | query.cardinal_player_facing| Returns the current facing of the player (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
 | query.combine_entities| Combines any valid entity references from all arguments into a single array. Note that order is not preserved, and duplicates and invalid values are removed. |
+| query.cooldown_time| Returns the total cooldown time in seconds for the item held or worn by the specified equipment slot name (and if required second numerical slot id), otherwise returns 0. Uses the same name and id that the replaceitem command takes when querying entities. |
+| query.cooldown_time_remaining| Returns the cooldown time remaining in seconds for specified cooldown type or the item held or worn by the specified equipment slot name (and if required second numerical slot id), otherwise returns 0. Uses the same name and id that the replaceitem command takes when querying entities. Returns highest cooldown if no parameters are supplied. |
 | query.count| Counts the number of things passed to it (arrays are counted as the number of elements they contain; non-arrays count as 1). |
 | query.current_squish_value| Returns the squish value for the current entity, or 0.0 if this doesn't make sense. Applies to slimes and magma cubes. |
 | query.day| Returns the current day of existence of the current world. When the world is first created, that is day `1`. |
@@ -133,6 +141,7 @@ Listed below are the currently available Molang query functions in the latest re
 | query.is_charged| Returns 1.0 if the entity has the `is_charged` component, else it returns 0.0. |
 | query.is_charging| Returns 1.0 if the entity is charging, else it returns 0.0. Applies to animation controller for player, vex, and drowned. |
 | query.is_chested| Returns 1.0 if the entity has has the `is_chested` component, else it returns 0.0.|
+| query.is_cooldown_type| Returns 1.0 if the specified held or worn item has the specified cooldown type name, otherwise returns 0.0. First argument is the cooldown name to check for, second argument is the equipment slot name, and if required third argument is the numerical slot id. For second and third arguments, uses the same name and id tha tthe replaceitem command takes when querying entities. |
 | query.is_critical| Returns 1.0 if the entity is at a critical level of damage, else it returns 0.0. |
 | query.is_croaking| Returns 1.0 if the entity is croaking, else it returns 0.0. |
 | query.is_dancing| Returns 1.0 if the entity is dancing, else it returns 0.0. Applies to parrot and allay. |
@@ -253,6 +262,9 @@ Listed below are the currently available Molang query functions in the latest re
 | query.position| Returns the absolute position of an entity. Takes one argument that represents the desired axis (0 == x-axis, 1 == y-axis, 2 == z-axis). |
 | query.position_delta| Returns the position delta for an entity. Takes one argument that represents the desired axis (0 == x-axis, 1 == y-axis, 2 == z-axis). Pertains to player animation. |
 | query.previous_squish_value| Returns the previous squish value for the current entity, or 0.0 if this doesn't make sense. Applies to slimes and magma cubes.  |
+| query.property| Takes one argument: The name of the property on the entity. Returns the value of that property if it exists, else 0.0 if not. |
+| query.relative_block_has_all_tags| Takes an entity-relative position and one or more tag names, and returns either 0 or 1 based on if that block at that position has all of the tags provided. |
+| query.relative_block_has_any_tags| Takes an entity-relative position and one or more tag names, and returns either 0 or 1 based on if that block at that position has any of the tags provided. |
 | query.remaining_durability| Returns the amount of durability an item has remaining. |
 | query.roll_counter| Returns the roll counter of the entity. Pertains to panda.|
 | query.rotation_to_camera| Returns the rotation required to aim at the camera. Requires one argument representing the rotation axis you would like (0 for x, 1 for y) |
