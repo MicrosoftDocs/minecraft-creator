@@ -36,6 +36,8 @@ Bee
 Axolotl
 - `axolotl`
 Axolotl
+- `minecraft:breeze`
+- `breeze`
 - `minecraft:pig`
 Pig
 - `pig`

@@ -11,6 +11,13 @@ description: Contents of the @minecraft/server.BlockComponent class.
 ## Extends
 - [*Component*](Component.md)
 
+## Classes that extend BlockComponent
+- [*BlockInventoryComponent*](BlockInventoryComponent.md)
+- [*BlockLiquidContainerComponent*](BlockLiquidContainerComponent.md)
+- [*BlockPistonComponent*](BlockPistonComponent.md)
+- [*BlockRecordPlayerComponent*](BlockRecordPlayerComponent.md)
+- [*BlockSignComponent*](BlockSignComponent.md)
+
 Base type for components associated with blocks.
 
 ## Properties

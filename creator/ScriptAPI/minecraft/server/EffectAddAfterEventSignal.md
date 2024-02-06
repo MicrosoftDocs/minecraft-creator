@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EffectAddAfterEventSignal Class
 description: Contents of the @minecraft/server.EffectAddAfterEventSignal class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EffectAddAfterEventSignal Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Manages callbacks that are connected to when an effect is added to an entity.
 

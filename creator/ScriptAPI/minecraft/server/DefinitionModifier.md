@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.DefinitionModifier Interface
 description: Contents of the @minecraft/server.DefinitionModifier class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # DefinitionModifier Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains a set of updates to the component definition state of an entity.
 
@@ -30,9 +26,14 @@ The list of component groups that will be removed via this definition modificati
 
 Type: *string*[]
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **triggers**
 `triggers: Trigger[];`
 
 The list of entity definition events that will be fired via this update.
 
 Type: [*Trigger*](Trigger.md)[]
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end

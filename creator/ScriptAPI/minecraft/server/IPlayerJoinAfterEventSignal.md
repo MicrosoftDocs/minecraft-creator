@@ -8,6 +8,9 @@ description: Contents of the @minecraft/server.IPlayerJoinAfterEventSignal class
 ---
 # IPlayerJoinAfterEventSignal Class
 
+## Classes that extend IPlayerJoinAfterEventSignal
+- [*PlayerJoinAfterEventSignal*](PlayerJoinAfterEventSignal.md)
+
 Provides an adaptable interface for callers to subscribe to an event that fires after a player joins a world.
 
 ## Methods

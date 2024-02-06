@@ -26,7 +26,7 @@ Values for the X/Y/Z components should be within the range `(-1 <= X/Y/Z <=1)`
 Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
 ### **mirror**
-`mirror?: ClipboardMirrorAxis;`
+`mirror?: minecraftserver.StructureMirrorAxis;`
 
 An enum which represents the axis (or combination of axis') along which the item should be mirrored
 
@@ -36,7 +36,7 @@ An enum which represents the axis (or combination of axis') along which the item
 
 - XZ
 
-Type: [*ClipboardMirrorAxis*](ClipboardMirrorAxis.md)
+Type: [*@minecraft/server.StructureMirrorAxis*](../../minecraft/server/StructureMirrorAxis.md)
 
 ### **offset**
 `offset?: minecraftserver.Vector3;`
@@ -46,8 +46,8 @@ A position offset which should be applied to the paste location while the clipbo
 Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
 ### **rotation**
-`rotation?: ClipboardRotation;`
+`rotation?: minecraftserver.StructureRotation;`
 
 An enum representing the rotation around the Y-Axis which should be applied while the clipboard item is being written
 
-Type: [*ClipboardRotation*](ClipboardRotation.md)
+Type: [*@minecraft/server.StructureRotation*](../../minecraft/server/StructureRotation.md)

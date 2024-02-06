@@ -8,6 +8,9 @@ description: Contents of the @minecraft/server.IButtonPushAfterEventSignal class
 ---
 # IButtonPushAfterEventSignal Class
 
+## Classes that extend IButtonPushAfterEventSignal
+- [*ButtonPushAfterEventSignal*](ButtonPushAfterEventSignal.md)
+
 Provides an adaptable interface for callers to subscribe to an event that fires when a button is pushed.
 
 ## Methods

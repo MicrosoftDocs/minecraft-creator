@@ -8,6 +8,9 @@ description: Contents of the @minecraft/server.ILeverActionAfterEventSignal clas
 ---
 # ILeverActionAfterEventSignal Class
 
+## Classes that extend ILeverActionAfterEventSignal
+- [*LeverActionAfterEventSignal*](LeverActionAfterEventSignal.md)
+
 Provides an adaptable interface for callers to subscribe to an event that fires after a lever is used.
 
 ## Methods

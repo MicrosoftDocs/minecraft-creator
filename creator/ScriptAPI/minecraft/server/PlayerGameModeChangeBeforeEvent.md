@@ -3,25 +3,33 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/server.ItemDefinitionTriggeredBeforeEvent Class
-description: Contents of the @minecraft/server.ItemDefinitionTriggeredBeforeEvent class.
+title: minecraft/server.PlayerGameModeChangeBeforeEvent Class
+description: Contents of the @minecraft/server.PlayerGameModeChangeBeforeEvent class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# ItemDefinitionTriggeredBeforeEvent Class
+# PlayerGameModeChangeBeforeEvent Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-## Extends
-- [*ItemDefinitionTriggeredAfterEvent*](ItemDefinitionTriggeredAfterEvent.md)
-
-Contains information related to a triggering of a custom item definition change.
 
 ## Properties
 
 ### **cancel**
 `cancel: boolean;`
 
-If set to true, will cancel the application of this item definition change.
-
 Type: *boolean*
+
+### **fromGameMode**
+`read-only fromGameMode: GameMode;`
+
+Type: [*GameMode*](GameMode.md)
+
+### **player**
+`read-only player: Player;`
+
+Type: [*Player*](Player.md)
+
+### **toGameMode**
+`toGameMode: GameMode;`
+
+Type: [*GameMode*](GameMode.md)

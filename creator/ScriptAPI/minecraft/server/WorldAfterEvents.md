@@ -43,17 +43,12 @@ Type: [*ChatSendAfterEventSignal*](ChatSendAfterEventSignal.md)
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **dataDrivenEntityTrigger**
 `read-only dataDrivenEntityTrigger: DataDrivenEntityTriggerAfterEventSignal;`
 
 This event is fired when an entity event has been triggered that will update the component definition state of an entity.
 
 Type: [*DataDrivenEntityTriggerAfterEventSignal*](DataDrivenEntityTriggerAfterEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **effectAdd**
@@ -135,24 +130,22 @@ Type: [*ExplosionAfterEventSignal*](ExplosionAfterEventSignal.md)
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 ::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **gameRuleChange**
+`read-only gameRuleChange: GameRuleChangeAfterEventSignal;`
+
+Type: [*GameRuleChangeAfterEventSignal*](GameRuleChangeAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **itemCompleteUse**
 `read-only itemCompleteUse: ItemCompleteUseAfterEventSignal;`
 
 This event fires when a chargeable item completes charging.
 
 Type: [*ItemCompleteUseAfterEventSignal*](ItemCompleteUseAfterEventSignal.md)
-
-::: moniker range="=minecraft-bedrock-experimental"
-### **itemDefinitionEvent**
-`read-only itemDefinitionEvent: ItemDefinitionAfterEventSignal;`
-
-For custom items, this event is triggered when the fundamental set of defined components for the item change.  Note that this event is only fired for custom data-driven items.
-
-Type: [*ItemDefinitionAfterEventSignal*](ItemDefinitionAfterEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **itemReleaseUse**
 `read-only itemReleaseUse: ItemReleaseUseAfterEventSignal;`
@@ -247,6 +240,16 @@ Type: [*PlayerBreakBlockAfterEventSignal*](PlayerBreakBlockAfterEventSignal.md)
 Fires when a player moved to a different dimension.
 
 Type: [*PlayerDimensionChangeAfterEventSignal*](PlayerDimensionChangeAfterEventSignal.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **playerGameModeChange**
+`read-only playerGameModeChange: PlayerGameModeChangeAfterEventSignal;`
+
+Type: [*PlayerGameModeChangeAfterEventSignal*](PlayerGameModeChangeAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **playerInteractWithBlock**

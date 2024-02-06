@@ -12,6 +12,9 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+## Classes that extend BlockVolumeBase
+- [*BlockVolume*](BlockVolume.md)
+
 ## Methods
 - [getBlockLocationIterator](#getblocklocationiterator)
 - [getBoundingBox](#getboundingbox)

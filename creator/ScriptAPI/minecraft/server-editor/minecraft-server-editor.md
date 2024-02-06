@@ -27,8 +27,6 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
-- [ClipboardMirrorAxis](ClipboardMirrorAxis.md)
-- [ClipboardRotation](ClipboardRotation.md)
 - [CursorControlMode](CursorControlMode.md)
 - [CursorTargetMode](CursorTargetMode.md)
 - [EDITOR_PANE_PROPERTY_ITEM_TYPE](EDITOR_PANE_PROPERTY_ITEM_TYPE.md)
@@ -86,7 +84,10 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [ModeChangeAfterEvent](ModeChangeAfterEvent.md)
 - [ModeChangeAfterEventSignal](ModeChangeAfterEventSignal.md)
 - [PlaytestManager](PlaytestManager.md)
+- [PrimarySelectionChangeAfterEventSignal](PrimarySelectionChangeAfterEventSignal.md)
+- [PrimarySelectionChangedEvent](PrimarySelectionChangedEvent.md)
 - [Selection](Selection.md)
+- [SelectionEventAfterEvent](SelectionEventAfterEvent.md)
 - [SelectionManager](SelectionManager.md)
 - [SettingsManager](SettingsManager.md)
 - [SimulationState](SimulationState.md)
@@ -115,6 +116,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [IPlayerLogger](IPlayerLogger.md)
 - [IPropertyItem](IPropertyItem.md)
 - [IPropertyItemOptions](IPropertyItemOptions.md)
+- [IPropertyItemOptionsBool](IPropertyItemOptionsBool.md)
 - [IPropertyItemOptionsButton](IPropertyItemOptionsButton.md)
 - [IPropertyItemOptionsDataPicker](IPropertyItemOptionsDataPicker.md)
 - [IPropertyItemOptionsDropdown](IPropertyItemOptionsDropdown.md)

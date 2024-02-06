@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EffectAddBeforeEvent Class
 description: Contents of the @minecraft/server.EffectAddBeforeEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EffectAddBeforeEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains information related to changes to an effect - like poison - being added to an entity.
 

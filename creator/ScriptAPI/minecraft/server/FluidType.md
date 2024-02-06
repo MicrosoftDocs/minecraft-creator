@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .FluidType Enumeration
 description: Contents of the .FluidType enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # FluidType Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Represents the type of fluid for use within a fluid containing block, like a cauldron.
 

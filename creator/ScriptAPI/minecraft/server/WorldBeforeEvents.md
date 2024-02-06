@@ -67,18 +67,6 @@ Type: [*ExplosionBeforeEventSignal*](ExplosionBeforeEventSignal.md)
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
-### **itemDefinitionEvent**
-`read-only itemDefinitionEvent: ItemDefinitionBeforeEventSignal;`
-
-For custom items, this event is triggered when the fundamental set of defined components for the item change.  Note that this event is only fired for custom data-driven items.
-
-Type: [*ItemDefinitionBeforeEventSignal*](ItemDefinitionBeforeEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
 ### **itemUse**
 `read-only itemUse: ItemUseBeforeEventSignal;`
 
@@ -99,6 +87,16 @@ Type: [*ItemUseOnBeforeEventSignal*](ItemUseOnBeforeEventSignal.md)
 This event fires before a block is broken by a player.
 
 Type: [*PlayerBreakBlockBeforeEventSignal*](PlayerBreakBlockBeforeEventSignal.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **playerGameModeChange**
+`read-only playerGameModeChange: PlayerGameModeChangeBeforeEventSignal;`
+
+Type: [*PlayerGameModeChangeBeforeEventSignal*](PlayerGameModeChangeBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **playerInteractWithBlock**
