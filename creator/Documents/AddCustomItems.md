@@ -541,7 +541,7 @@ After you create the packs, go into Minecraft, give yourself a crown, and put it
 
 ## Custom Chestplate with Vanilla Armor Trim
 
-This is a custom chestplate that still supports all the Armor Trims available as of release 1.20.70. You can modify the trim patterns to better fit your custom armor too!
+If you create a custom chestplate, either by hand or through using the [Minecraft Item Wizard](MinecraftItemWizard.md), you can have it support all the Armor Trims available as of release 1.20.70. You can modify the trim patterns to better fit your custom armor too!
 
 To use armor trim on your custom armor, you need to set your **format versions** on the item and **attachable** to a minimum of 1.20.60.
 
