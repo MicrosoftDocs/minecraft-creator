@@ -31,4 +31,12 @@ Below is a list of all the available Block Components within Minecraft: Bedrock 
 |[minecraft:placement_filter](minecraftBlock_placement_filter.md)|*not set* | JSON Object|  Sets rules for under what conditions the block can be placed or survive. Experimental toggles required: Holiday Creator Features (in format versions before 1.19.60).|
 |[minecraft:selection_box](minecraftBlock_selection_box.md)|  Boolean / JSON Object | true |  Defines the area of the block that is selected by the player's cursor. If set to true, default values are used. If set to false, this block is not selectable by the player's cursor. If this component is omitted, default values are used. Experimental toggles required: Holiday Creator Features (in format versions before 1.19.60).|
 |[minecraft:transformation](minecraftBlock_transformation.md)| rotation[0, 0, 0]| Vector [a, b, c]| The block's translation around the center of the cube in degrees. The rotation order is [x, y, z]. Angles need to be in multiples of 90. Experimental toggles required: Holiday Creator Features (in format versions before 1.19.80). |
-|[minecraft:unit_cube](minecraftBlock_unit_cube.md)|*not set* | JSON Object| Specifies that a unit cube is to be used with tessellation. |
+
+## Unsupported features
+
+> [!WARNING]
+> These features were previously applicable but are no longer available.
+
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+| minecraft:unit_cube|*not set* | JSON Object| Specified that a unit cube was to be used with tessellation. The render capabilities were succeeded be the minecraft:geometry.full_block description identifier. |
