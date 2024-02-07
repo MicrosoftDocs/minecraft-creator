@@ -46,6 +46,11 @@
         "redirect_document_id": false
       },
       {
+        "source_path": "Reference/Content/BlockReference/Examples/BlockComponents/minecraftblock_unit_cube.md",
+        "redirect_url": "/minecraft/creator/reference/content/blockreference/examples/blockcomponents/blockcomponentslist.md",
+        "redirect_document_id": false
+      },
+      {
         "source_path": "Reference/Content/BlockReference/Examples/BlockStatesList.md",
         "redirect_url": "/minecraft/creator/reference/content/blockreference/examples/intrinsicblockstateslist.md",
         "redirect_document_id": false
