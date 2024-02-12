@@ -225,4 +225,4 @@ You can also apply conditions to specific `entries` within the roll. The followi
 ]
 ```
 
-Exploring the different [functions](#functions-and-modifying-items) and [conditions](#conditions) available can allow creators to really customize the player experience. Name items and give them lore, drop resource crates full of supplies, and even create written books for instructions or information. The possibilities truly are staggering!
+Exploring the different [functions](LootAndTradeTableFunctions.md) available can allow creators to really customize the player experience. Name items and give them lore, drop resource crates full of supplies, and even create written books for instructions or information. The possibilities truly are staggering!
