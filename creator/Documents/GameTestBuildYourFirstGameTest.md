@@ -267,7 +267,7 @@ Place this mediumglass.mcstructure file within a subfolder called startertests. 
 
 ## Running your tests within the game
 
-Once you have completed your GameTest behavior pack, you'll want to try it out within Minecraft. To do this, create a new Minecraft world. For this new world, you'll want to start in Creative mode and turn the GameTest Framework experiment on. You'll want to add the GameTeset Behavior Packs in your world.  If everything is correct, you should see the Start Hello World GameTest behavior pack when you create your world:
+Once you have completed your GameTest behavior pack, you'll want to try it out within Minecraft. To do this, create a new Minecraft world. For this new world, you'll want to start in Creative mode and turn the _Beta APIs_ experiment on. You'll want to add the GameTest Behavior Packs in your world.  If everything is correct, you should see the Start Hello World GameTest behavior pack when you create your world:
 
 ![Minecraft Behavior Pack with GameTest](Media/GameTestBuildYourFirstGameTest/behaviorpack.png)
 
