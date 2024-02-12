@@ -25,6 +25,21 @@ Example:
       ]
 ```
 
+### has_variant
+
+`has_variant` specifies that there are different variations for the loot.
+
+Example:
+
+```json
+ "conditions": [
+        {
+          "condition": "has_variant",
+          "value": 0
+        }
+      ]
+```
+
 ### killed_by_player_or_pets
 
 The `killed_by_player_or_pets`condition can supply another way to customize a loot drop, depending on how the entity was killed.
