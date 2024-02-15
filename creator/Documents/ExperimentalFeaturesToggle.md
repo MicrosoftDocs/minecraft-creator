@@ -29,7 +29,7 @@ Listed below are the currently available Experimental Features in the latest ret
 |:------|:------|
 |Holiday Creator Features |Data-driven block and item features. We are receiving feedback on these features from Marketplace creators and map-makers.|
 |Custom Biomes|Exposing parameters for biome generation to creators, enabling them to create their own unique biome configurations. |
-|Upcoming Creator Features |Experimental features including actor properties and fog volumes. We are receiving feedback on these features from Marketplace creators and map-makers.|
+|Upcoming Creator Features |Experimental features including entity permutations and fogs/volumes. We are receiving feedback on these features from Marketplace creators and map-makers.|
 |Beta APIs|Provides "-beta" level script APIs (e.g., @minecraft/server 1.1.0-beta), as well as GameTest Framework APIs. |
 |Molang Features |Container for Molang experimental queries and language features that aren't tied to other experimental toggles. |
 |Next Major Update | Features that will be available after the next major update. |
@@ -39,7 +39,7 @@ Listed below are the currently available Experimental Features in the latest ret
 | Experimental Toggle |Features |
 |:------|:------|
 |Custom Biomes|Exposing parameters for biome generation to creators, enabling them to create their own unique biome configurations. |
-|Upcoming Creator Features |Experimental features including actor properties and fog volumes. We are receiving feedback on these features from Marketplace creators and map-makers.|
+|Upcoming Creator Features |Experimental features including entity permutations and fogs/volumes. We are receiving feedback on these features from Marketplace creators and map-makers.|
 |Beta APIs|Provides "-beta" level script APIs (e.g., @minecraft/server 1.1.0-beta), as well as GameTest Framework APIs. |
 |Molang Features |Container for Molang experimental queries and language features that aren't tied to other experimental toggles. |
 
@@ -54,7 +54,7 @@ Listed below are the currently available Experimental Features in the latest bet
 |:------|:------|
 |Holiday Creator Features |Data-driven block and item features. We are receiving feedback on these features from Marketplace creators and map-makers.|
 |Custom Biomes|Exposing parameters for biome generation to creators, enabling them to create their own unique biome configurations. |
-|Upcoming Creator Features |Experimental features including actor properties and fog volumes. We are receiving feedback on these features from Marketplace creators and map-makers.|
+|Upcoming Creator Features |Experimental features including entity permutations and fogs/volumes. We are receiving feedback on these features from Marketplace creators and map-makers.|
 |Beta APIs|Provides "-beta" level script APIs (e.g., @minecraft/server 1.1.0-beta), as well as GameTest Framework APIs. |
 |Molang Features |Container for Molang experimental queries and language features that aren't tied to other experimental toggles. |
 

@@ -1,40 +1,40 @@
 ---
 author: chmeyer-ms
 ms.author: chmeyer
-title: Getting started with the System.Run* APIs
+title: Game Loops and Timed Callbacks - a system.run Guide
 description: "A guide to system.run and the update loop."
 ms.service: minecraft-bedrock-edition
 ---
 
-# Getting started with the system.run APIs
+# Game Loops and Timed Callbacks - a system.run Guide
 
 This guide will help you get familiar with the system.run APIs, how they work, how to use them, and why you might choose one over the other for a given task. After reading this article, you should have a good understanding of how system.run can be used to create a game loop and how system.runJob can assist you with long running operations.
 
 ## The script tick
 
-Before we dive into how to use the system.run APIs, let's first go over the Minecraft script tick. Consider the following outline of operations that occur during a single tick. I will be referring to the sections throughout the article.
+Before we dive into how to use the system.run APIs, let's first go over the Minecraft script tick. Consider the following outline of operations that occur during a single tick:
 
 #### Tick Start
 
 1) Minecraft simulation begins and before events are triggered.
-    - Scripts for these are limited to read-only state. Meaning script is not allowed to alter world state within these callbacks.
+    - Scripts for these are limited to read-only state. In other words, script is not allowed to alter world state within these callbacks.
 
-2) Start of the "script" tick
+1) Start of the "script" tick
     - Execution is now within the script portion of the tick.
 
-3) Process co-routine continuations
+1) Process "asynchronous code" continuations
     - Code following await would execute here.
 
-4) Loop over system.run callbacks and after events.
+1) Loop over system.run callbacks and after events.
     - Process all system.run callbacks.
     - Process all before and after events.
     - Possibly queue any new before and after events as a result of previous steps.
     - Repeat until no more events or system callbacks are queued for the current tick.
 
-5) Process system job queue with time remaining
+1) Process system job queue with time remaining
     - For generators created with system.runJob.
 
-6) Increment tick and end the script portion of the tick.
+1) Increment tick and end the script portion of the tick.
 
 #### Tick End
 
@@ -59,13 +59,13 @@ function update() {
 system.run(update);
 ```
 
-This will execute the `update()` function for each iteration of the Minecraft simulation, this occurs during section [4](#tick-start) from above.
+This will execute the `update()` function for each iteration of the Minecraft simulation. This occurs during section [4](#tick-start) from above.
 
 As shown in this example, it is acceptable to queue another callback from within an existing system.run callback. This works because system.run will mark the new callback to execute during the following tick. This is an important concept to understand. It ensures that the system.run method cannot call itself infinitely within a single tick, which would trigger a watchdog shutdown event.
 
 #### Using system.run to queue work for later in the frame
 
-Another interesting use case for system.run is to schedule work from a before event to later in the frame. As you may know, before events execute in 'read-only' mode. In this mode, functions that change Minecraft world state such as spawning entities, or setting blocks are not allowed. By using system.run, you can defer these operations until later in the tick. Consider the following script.
+Another interesting use case for system.run is to schedule work from a before event to later in the frame. As you may know, before events execute in 'read-only' mode. In this mode, functions that change Minecraft world state (such as spawning entities, or setting blocks) are not allowed. By using system.run, you can defer these operations until later in the tick. Consider the following script.
 
 ```typescript
 import { 
@@ -91,11 +91,11 @@ In this example, the work being done by the event handler alters world state so 
 
 Keep in mind that you would not be able to put event cancelation logic in the deferred portion of the event, as the event will have already happened by the time the system.run callback executes.
 
-### Next up, the one with a tick parameter - system.runTimeout
+### Next up: the one with a tick parameter - system.runTimeout
 
 The system.runTimeout function behaves much like system.run except that it offers a new parameter that lets you indicate how many ticks into the future it should run. If that future tick is 0, it means the current tick or as soon as possible. If the parameter is 1, it behaves much like the standard system.run. A value of 2 means to skip the next tick and execute on the one after.
 
-As stated above, system.runTimeout with a tick parameter of 1 is equivalent to system.run. And just like system.run, if called from within a system.run callback a value of 1 means the next tick. Only if called at the beginning of the tick, or otherwide outside of any system.run* callbacks would a value of 1 exectue in the current tick.
+As stated above, system.runTimeout with a tick parameter of 1 is equivalent to system.run. And just like system.run, if called from within a system.run callback a value of 1 means the next tick. Only if called at the beginning of the tick, or otherwise outside of any system.run* callbacks would a value of 1 execute in the current tick.
 
 A call to system.runTimeout with a tick parameter of 0 means to execute as soon as possible. And unlike system.run, if called from within a system.run callback a value of 0 means to execute within the current tick. This version does not stop you from creating infinite callbacks so be careful when using it in this way.
 
@@ -105,7 +105,7 @@ Here are some example usages:
 // execute as soon as possible, the next time system.run events are processed
 system.runTimeout(() => {}, 0);
 
-// execute this tick if we haven't yet processsed system.run events, 
+// execute this tick if we haven't yet processed system.run events, 
 // otherwise execute next tick
 system.runTimeout(() => {}, 1);
 
@@ -113,11 +113,11 @@ system.runTimeout(() => {}, 1);
 system.runTimeout(() => {}, 2);
 ```
 
-When using system.runTimeout with a tick parameter of 0 or 1 it can sometimes be tricky to know exactly which tick that will execute on, the current tick or the next. In most cases I find it simpler to use system.run, knowing that it will execute as soon as possible any safe enough to not cause infinite recursion.
+When using system.runTimeout with a tick parameter of 0 or 1 it can sometimes be tricky to know exactly which tick that will execute on - either the current tick or the next. In most cases it is simpler to use system.run, knowing that it will execute as soon as possible while being safe enough to not cause infinite recursion.
 
 ### Then the one that keeps going on its own - system.runInterval
 
-Next we have system.runInterval. This method is similar to system.runTimeout except that it will re-queue the same callback on your behalf until you call system.clearRun. Much like system.runTimeout, system.runInterval with a tick parameter of 1 will run the first time on the next tick, and then again each subsequent tick until it is cleared. And system.runInterval with a tick parameter of 2 means to run every other tick. A value of 0 for the tick parameter is effectively the same as system.runInterval with a tick parameter of 1, there is no way to get a runInterval to infinitely queue itself into a watchdog event.
+Next we have system.runInterval. This method is similar to system.runTimeout except that it will re-queue the same callback on your behalf until you call system.clearRun. Much like system.runTimeout, system.runInterval with a tick parameter of 1 will run the first time on the next tick, and then again each subsequent tick until it is cleared. And system.runInterval with a tick parameter of 2 means to run every other tick. A value of 0 for the tick parameter is effectively the same as system.runInterval with a tick parameter of 1 - there is no way to get a runInterval to infinitely queue itself into a watchdog event.
 
 ```javascript
 import { system } from "@minecraft/server";
@@ -128,13 +128,14 @@ function tick() {
 system.runInterval(tick, 0);
 ```
 
-Could you use system.runInterval to create a game loop? Absolutely. But I personally like the flexibilty afforded by system.run. Perhaps there's a condition within the tick function that you are waiting on, and you don't need any additional ticks until that condition is true. At which point you make the call to system.run to queue the next tick. But with system.runInterval your tick function will be called every tick, whether you want it to or not.
+Could you use system.runInterval to create a game loop? Absolutely. But `system.run` is arguably more flexible. Perhaps there's a condition within the tick function that you are waiting on, and you don't need any additional tick callbacks until that condition is true. At that point, you can make the call to `system.run` to queue the next tick.
+However, with system.runInterval your tick function will be called every tick, whether you want it to or not.
 
 ### And finally - system.runJob
 
-The system.runJob method is different from the other system.run methods in a number of ways. It is not well suited for event deferal or game loops. It is best for handling long runnning tasks that don't need to finish on a specific tick.
+The system.runJob method is different from the other system.run methods in a number of ways. It is not well suited for event deferral or game loops. It is best for handling long running tasks that don't need to finish on a specific tick.
 
-It can be difficult to know how much work can be done in a given tick without slowing down the simulation. If you do too little, the results of the operation could take longer than necessary in terms of real game time. But if you do too much work it may trigger a watchdog event, or cause another aspect of the game to appear broken or slow to the user. Hardware differences make matters even worse. What is performant on a PC may be slow on a mobile device or console.
+It can be difficult to know how much work can be done in a given tick without slowing down the simulation. If you do too little, the results of the operation could take longer than necessary in terms of real game time. But if you do too much work it may trigger a watchdog event, or cause another aspect of the game to appear broken or slow to the user. Hardware differences make matters even worse: what is performant on a PC may be slow on a mobile device or console.
 
 The system.runJob method aims to provide a mechanism for performing long running tasks on your behalf without the need to micromanage the amount of work that occurs each tick. It does this by performing work in small increments while closely monitoring how much time has been used, and how much time is left. When approaching the limit, it will stop and continue the remainder of the work next tick, or the tick after, or some future tick until all the work is completed.
 
@@ -169,13 +170,13 @@ system.runJob(generator(10, -2, -60, 1));
 
 In this example, the generator yields execution after every block place operation. This means that the job queue is the deciding factor for how many block place operations execute each tick. It is a best practice to author generator functions with a high level of granularity. That means generator functions should be authored such that a single iteration of the generator (a single block place in this example) would be unlikely to exceed the frame time. This enables the job system to scale based on the performance of the device. On a fast PC it may be able to do 30 block place operations, but on mobile that number drops to 5. A poorly authored generator function may perform 5 iterations on a fast PC but on a mobile device it can only do 1 and that single operation triggers a watchdog warning.  
 
-It is imoprtant to keep in mind that the job system will not starve your generators. At a minimum, every generator for every script behavior pack that has generators will be allowed to execute at least 1 iteration every tick. It is therefore up to the author to ensure a single iteration does not exceed the time allotment of the script tick.
+It is important to keep in mind that the job system will not starve your generators. At a minimum, every generator for every script behavior pack that has generators will be allowed to execute at least 1 iteration every tick. It is therefore up to the author to ensure a single iteration does not exceed the time allotment of the script tick.
 
-#### Best practices when writting generator functions for system.runJob
+#### Best practices when writing generator functions for system.runJob
 
 - Choose a high level of granularity in your generator functions. This offers the most flexibility when the job system has to scale to the performance of different devices.
 - Try to keep the amount of work consistent between iterations. This helps the job system correctly estimate how much time to give each generator per tick.
 
 ## Wrapping up
 
-Hopefully you have enough information to get started using the system.run APIs, when to choose one over the other and how to know when a given callback will execute. 
+Hopefully you have enough information to get started using the system.run APIs, when to choose one over the other and how to know when a given callback will execute.
