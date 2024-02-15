@@ -1,7 +1,7 @@
 ---
 author: iconicNurdle
 ms.author: mikeam
-title: Introduction to Scripting in Minecraft
+title: Introduction to Scripting
 description: "In introducion to writing and deploying scripts in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
 ---
@@ -525,7 +525,7 @@ You can use what you learn about JavaScript to change these scripts and decide w
 
 ### Advanced Topics
 
-When you're more comfortable with JavaScript, you can research the more advanced things you will need for Typescript, GameTest, and scripting in general:
+When you're more comfortable with JavaScript, you can research the more advanced things you will need for Typescript and scripting in general:
 
 >- npm ecosystem
 >- node.js
