@@ -234,6 +234,8 @@
       items:
         - name: Commonly Used Tools
           href: Documents/CommonlyUsedTools.md
+        - name: Open-Source Scripting Libraries
+          href: Documents/ScriptingLibraries.md
         - name: In-Game Tools
           items:
             - name: Copy and Paste Coordinates
