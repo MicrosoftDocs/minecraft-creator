@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Entity Events
 
-In this tutorial you will learn more about events, including sequential events, randomized events, and how event spawning behavior works. This article will cover:
+In this article you will learn more about events, including sequential events, randomized events, and how event spawning behavior works. This article will cover:
 
 > [!div class="checklist"]
 >
@@ -18,14 +18,14 @@ In this tutorial you will learn more about events, including sequential events, 
 
 ## Requirements
 
-It's recommended that the following be completed before beginning this tutorial.
+It's recommended that the following be completed before reviewing this article:
 
 - [Creating New Entity Types](IntroductionToAddEntity.md)
 - [Entity Behavior Introduction](EntityBehaviorIntroduction.md)
 
 ## Events Overview
 
-Events are used to add and remove component groups from the entity. In this example, an old component group is removed while two new ones are added:
+Events are used to add and remove component groups from an entity. In this example, an old component group is removed while two new ones are added:
 
 ```json
 "events":{
@@ -75,7 +75,6 @@ A few events are built into Minecraft and run if the entity is spawned under cer
 | `minecraft:entity_transformed` | Runs when another entity transforms into this entity.                               |
 | `minecraft:on_prime`           | Runs when the entity is primed and ready to explode.                                |
 
-
 ### What are Spawn Events?
 
 The `/summon` command and a few entity components can take a `spawnEvent` argument. Spawn events have been described in several places as any of the events that can be found in an entity's behavior definition, but this isn't entirely accurate.
@@ -103,7 +102,7 @@ A similarly strange situation can happen when using the `/event` command to run 
 The side-effects of using events in unexpected ways will vary based on the nuances of how any particular entity is authored. Sometimes the entity won't misbehave, but other times it might lack the ability to move, or have a very wrong scale, or any number of unexpected traits.
 
 > [!NOTE]
-> These strange conditions of entities can be very entertaining, because they're unexpected, they also aren't intentionally supported. It's possible the specific behaviors of these odd states will change from one game version to the next as other intentional behavior is adjusted for new features or for bug fixing.
+> While these strange conditions of entities can be very entertaining, because they're unexpected they also aren't intentionally supported. It's possible the specific behaviors of these odd states will change from one game version to the next, as other intentional behavior is adjusted for new features or bug fixing.
 
 ## Randomizers
 
@@ -133,9 +132,9 @@ Optionally, you can add a weight option to the options to change the probability
 
 ## Sequences
 
-The `sequence` node is an array node that will execute all entries in order. Sometimes you need to run multiple event instances one after the other in the same event. Sequences are structured similarly to randomizers, but each item in the list is executed in order
+The `sequence` node is an array node that will execute all entries in order. Sometimes you need to run multiple event instances one after the other in the same event. Sequences are structured similarly to randomizers, but each item in the list is executed in order.
 
-For example, you might want to randomize two aspects of the entity, like the color and mark pattern. In this case, you can use a sequence
+For example, you might want to randomize two aspects of the entity, like the color and mark pattern. In this case, you can use a sequence.
 
 Sequences and randomizers can be nested indefinitely.
 
@@ -211,7 +210,7 @@ A minimal example of a filter inside an event could look like the sample below. 
 > [!NOTE]
 > A `format_version` of `1.19.20` or higher is required to use a filter at the root of an event. If a lower `format_version` is specified, filters will only be respected by the game if they are underneath `sequence` or `randomize` nodes.
 
-If you want to use multiple filters, you can group them using the lists `all_of`, `any_of`, or `none_of` and will only succeed if all of the filters inside, any one of the filters inside, or none of the filters inside succeeded. These lists can be nested indefinitely.
+To use multiple filters, you can group them using the lists `all_of`, `any_of`, or `none_of` which will only succeed if all of the filters inside, any one of the filters inside, or none of the filters inside succeeded. These lists can be nested indefinitely.
 
 In the following example, we're adding a second condition to the filter. The event will only run if the entity has the tag from the previous example **and** is less than 10 blocks away from the nearest player.
 
@@ -250,40 +249,40 @@ Here is an example of this nuance. An entity type has a component group defined 
 
 ```json
 "component_groups":{
-    "example":"be_baby":{
-        "minecraft":"is_baby":{}
+    "example:be_baby":{
+        "minecraft:is_baby":{}
         }
     },
-    "example":"another_group":{
-        "minecraft":"scale":{
+    "example:another_group":{
+        "minecraft:scale":{
             "value":0.5
         }
     },
 "events":{
-    "example":"become_baby":{
+    "example:become_baby":{
         "add":{
             "component_groups":[
-                "example":"be_baby"
+                "example:be_baby"
             ]
         },
-        "trigger":"example":"scale_check"
+        "trigger":"example:scale_check"
     },
-    "example":"scale_check":{
+    "example:scale_check":{
         "sequence":[
             {
                 "filters":{
                     "test":"has_component",
                     "value":"minecraft:is_baby"
+                    ]
                 },
                 "add"{
                     "component_groups":[
-                        "example":"another_group"
+                        "example:another_group"
                     ]
                 }
             }
         }
     }
-}
 ```
 
 Imagine an entity with the above JSON does not have any component groups added yet, and it receives an `example:become_baby` event.

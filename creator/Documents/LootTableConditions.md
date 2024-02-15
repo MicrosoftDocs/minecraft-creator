@@ -25,6 +25,21 @@ Example:
       ]
 ```
 
+### has_variant
+
+`has_variant` specifies that there are different variations for the loot.
+
+Example:
+
+```json
+ "conditions": [
+        {
+          "condition": "has_variant",
+          "value": 0
+        }
+      ]
+```
+
 ### killed_by_player_or_pets
 
 The `killed_by_player_or_pets`condition can supply another way to customize a loot drop, depending on how the entity was killed.
@@ -210,4 +225,4 @@ You can also apply conditions to specific `entries` within the roll. The followi
 ]
 ```
 
-Exploring the different [functions](#functions-and-modifying-items) and [conditions](#conditions) available can allow creators to really customize the player experience. Name items and give them lore, drop resource crates full of supplies, and even create written books for instructions or information. The possibilities truly are staggering!
+Exploring the different [functions](LootAndTradeTableFunctions.md) available can allow creators to really customize the player experience. Name items and give them lore, drop resource crates full of supplies, and even create written books for instructions or information. The possibilities truly are staggering!

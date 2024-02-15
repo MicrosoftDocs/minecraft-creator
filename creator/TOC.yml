@@ -114,42 +114,50 @@
             href: Documents/ActorStorage.md
     - name: Game Logic
       items:
-        - name: 'Redstone Guide'
+        - name: Redstone Guide
           href: Documents/RedstoneGuide.md
         - name: Molang Beginner's Guide
           href: Documents/MolangBeginnersGuide.md
         - name: Introduction to Commands
           href: Documents/CommandsIntroduction.md
-        - name: Popular Commands
-          href: Documents/CommandsPopularCommands.md
-        - name: Introduction to Scripting in Minecraft
+        - name: Introduction to Scripting
           href: Documents/ScriptingIntroduction.md
+        - name: Commands
+          items:  
+          - name: Popular Commands
+            href: Documents/CommandsPopularCommands.md
+          - name: Introduction to Functions
+            href: Documents/FunctionsIntroduction.md
+          - name: How to use tick.json
+            href: Documents/TickJsonIntroduction.md
+          - name: The Damage Command
+            href: Documents/CommandsDamageIntroduction.md
+          - name: The Camera Command
+            href: Documents/CameraCommandIntroduction.md
+          - name: The Tickingarea Command
+            href: Documents/TickingAreaCommand.md
+          - name: New /execute command syntax
+            href: Documents/CommandsNewExecute.md
+          - name: Create an In-World Game with Commands
+            href: Documents/CreateAnInWorldGame.md
+        - name: Scripting
+          items:  
+          - name: Build Gameplay with TypeScript
+            href: Documents/ScriptingGettingStarted.md
+          - name: Use Visual Studio Code Tools to Write Script
+            href: Documents/ScriptDeveloperTools.md
+          - name: Game Loops and Timed Callbacks - a system.run Guide
+            href: Documents/SystemRunGuide.md
+          - name: Script Module Versioning
+            href: Documents/ScriptVersioning.md
+          - name: Use Script Along with Dedicated Servers
+            href: Documents/ScriptingServers.md
         - name: Introduction to Scoreboards
           href: Documents/ScoreboardIntroduction.md
-        - name: Build Gameplay with TypeScript
-          href: Documents/ScriptingGettingStarted.md
-        - name: The Damage Command
-          href: Documents/CommandsDamageIntroduction.md
-        - name: Introduction to Functions
-          href: Documents/FunctionsIntroduction.md
         - name: Scoreboard Operations Tutorial
           href: Documents/ScoreboardOperationsTutorial.md
-        - name: How to use tick.json
-          href: Documents/TickJsonIntroduction.md
-        - name: Script Versioning
-          href: Documents/ScriptVersioning.md
-        - name: New /execute command syntax
-          href: Documents/CommandsNewExecute.md
         - name: Free Camera Preset Tutorial
           href: Documents/CameraTutorialFreeCameraPreset.md
-        - name: Use Script Along with Dedicated Servers
-          href: Documents/ScriptingServers.md
-        - name: Use Visual Studio Code Tools to Write Script
-          href: Documents/ScriptDeveloperTools.md
-        - name: The Camera Command
-          href: Documents/CameraCommandIntroduction.md
-        - name: The Tickingarea Command
-          href: Documents/TickingAreaCommand.md
     - name: Assets and Sound
       items:
         - name: Adding Custom Sounds
@@ -166,14 +174,12 @@
           href: Documents/ParkourWorldWalkthrough.md
         - name: Parkour World Creation Guide
           href: Documents/ParkourWorldGuide.md 
-        - name: Data-Driven Overworld Height and Void Generation
-          href: Documents/DataDrivenOverworldHeight.md
         - name: Introduction to Structure Blocks
           href: Documents/IntroductionToStructureBlocks.md
         - name: Introduction to Features
           href: Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md
-        - name: Create an In-World Game with Commands
-          href: Documents/CreateAnInWorldGame.md
+        - name: Data-Driven Overworld Height and Void Generation
+          href: Documents/DataDrivenOverworldHeight.md
         - name: Fog in Resource Packs
           href: Documents/FogInResourcePacks.md
     - name: Entities
@@ -228,6 +234,8 @@
       items:
         - name: Commonly Used Tools
           href: Documents/CommonlyUsedTools.md
+        - name: Open-Source Scripting Libraries
+          href: Documents/ScriptingLibraries.md
         - name: In-Game Tools
           items:
             - name: Copy and Paste Coordinates
