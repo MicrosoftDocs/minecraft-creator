@@ -84,6 +84,8 @@
           href: Documents/AddCustomItems.md
         - name: Creating and Adding Custom Sounds
           href: Documents/AddCustomSounds.md
+        - name: Introduction to Recipes
+          href: Documents/RecipeIntroduction.md
         - name: Packaging Content
           items:
           - name: Packaging a Skin Pack
