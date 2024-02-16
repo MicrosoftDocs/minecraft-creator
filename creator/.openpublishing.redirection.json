@@ -6,6 +6,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "/minecraft/creator/Reference/Content/RecipeReference/Examples/RecipeDefinitions/RecipeIntroduction.md",
+      "redirect_url": "Documents/RecipeIntroduction.md",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "Documents/MashupPackOverview.md",
       "redirect_url": "/minecraft/creator/documents/gettingstarted.md",
       "redirect_document_id": false
