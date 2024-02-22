@@ -1,12 +1,12 @@
 ---
 author: JimSeaman42
 ms.author: mikeam
-title: Creations Hub
+title: Creation Journey
 description: "A guided path through the creations documentation"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Creations Hub
+# Creation Journey
 
 As a creator, everything you put into Minecraft: Bedrock Edition is by default a creation: From the creatures and characters your players will meet to the very game world in which they are playing, creations are the main attraction of the player experience.
 
@@ -18,25 +18,27 @@ Here are some articles you should check out to assist in your creator journey...
 
 Let's not get things twisted here: 'basic' in this context is relative, and while these creations aren't as robust is what we'll be looking at later, they cover some integral technical content such as behavior packs, resource packs, and commands.
 
-- [Create an In-World Game with Commands](CreateAnInWorldGame.md)
-- [Create Custom Grass Blocks: An Introduction to Resource Packs](ResourcePack.md)
-- [Create an Angry Cow: An Introduction to Behavior Packs](BehaviorPack.md)
+1. [Create an In-World Game with Commands](CreateAnInWorldGame.md)
+2. [Create Custom Grass Blocks: An Introduction to Resource Packs](ResourcePack.md)
+3. [Create an Angry Cow: An Introduction to Behavior Packs](BehaviorPack.md)
 
 ## Intermediate
 
 You've mastered the basics, and now it's time to move to the next level. These creations are slightly more complex, but will allow you to create more of a personalized experience for your players.
 
-- [Create a Custom Die Block](AddCustomDieBlock.md)
-- [Creating a Goblin Chef Entity](MakerSeriesMakingTheGoblinChef.md)
-- [Creating and Adding Custom Sounds](AddCustomSounds.md)
+4. [Creating and Adding Custom Sounds](AddCustomSounds.md)
+5. [Creating New Entity Types](IntroductionToAddEntity.md) 
+6. [Create a Custom Die Block](AddCustomDieBlock.md)
+7. [Create a Sushi Block: Advanced Custom Blocks](AdvancedCustomBlocks.md)
 
 ## Advanced
 
 Now that you've pushed through both the basic and intermediate creations, you've come to the top of the mountain. These are the advanced-level tutorials and we're not going to lie, they can get complex. However, by mastering these creations you will bring yourself that much closer to making your wildest dreams into reality.
 
-- [Introduction to Loot Tables](IntroductionToLootTables.md)
-- [Loot and Trade Table Functions](LootAndTradeTableFunctions.md)
-- [Loot Overloads](LootOverloads.md)
+8. [Creating an Animated Block Texture](CreateAnimatedBlockTexture.md)
+9. [Creating a Goblin Chef Entity](MakerSeriesMakingTheGoblinChef.md)
+10. [Create a Loot Table](CreateLootTable.md)
+11. [Create a Village with Structure Blocks](StructureBlocksTutorial.md)
 
 ## Next Steps
 
