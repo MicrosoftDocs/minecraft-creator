@@ -48,7 +48,7 @@
           href: Documents/CreateAnInWorldGame.md
         - name: '2. Create Custom Grass Blocks: An Introduction to Resource Packs'
           href: Documents/ResourcePack.md
-        - name: '2. Create an Angry Cow: An Introduction to Behavior Packs'
+        - name: '3. Create an Angry Cow: An Introduction to Behavior Packs'
           href: Documents/BehaviorPack.md
         - name: 4. Creating and Adding Custom Sounds
           href: Documents/AddCustomSounds.md
