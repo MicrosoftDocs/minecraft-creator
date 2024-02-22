@@ -36,31 +36,35 @@
               href: Documents/CavesAndCliffsEntities.md
             - name: World Height Changes in Caves and Cliffs Part 2
               href: Documents/WorldHeightChange.md    
-    - name: Creations
+    - name: Casual Creator
+      items:              
+        - name: "Chill Dreams Add-On: Part 1 - The Dream Turkey"
+          href: Casual/ChillDreamsPart1TheDreamTurkey.md
+    - name: Learning Journey
       items:
-        - name: Creations Hub
-          href: Documents/CreationHub.md
-        - name: Create an In-World Game with Commands
+        - name: Guide
+          href: Documents/LearningJourneyGuide.md
+        - name: 1. Create an In-World Game with Commands
           href: Documents/CreateAnInWorldGame.md
-        - name: 'Create Custom Grass Blocks: An Introduction to Resource Packs'
+        - name: '2. Create Custom Grass Blocks: An Introduction to Resource Packs'
           href: Documents/ResourcePack.md
-        - name: 'Create an Angry Cow: An Introduction to Behavior Packs'
+        - name: '2. Create an Angry Cow: An Introduction to Behavior Packs'
           href: Documents/BehaviorPack.md
-        - name: Creating and Adding Custom Sounds
+        - name: 4. Creating and Adding Custom Sounds
           href: Documents/AddCustomSounds.md
-        - name: Create a Custom Die Block 
-          href: Documents/AddCustomDieBlock.md
-        - name: 'Create a Sushi Block: Advanced Custom Blocks' 
-          href: Documents/AdvancedCustomBlocks.md
-        - name: Creating an Animated Block Texture
-          href: Documents/CreateAnimatedBlockTexture.md
-        - name: Creating a Goblin Chef Entity 
-          href: Documents/MakerSeriesMakingTheGoblinChef.md
-        - name: Creating New Entity Types
+        - name: 5. Creating New Entity Types
           href: Documents/IntroductionToAddEntity.md
-        - name: Create a Loot Table
+        - name: 6. Create a Custom Die Block 
+          href: Documents/AddCustomDieBlock.md
+        - name: '7. Create a Sushi Block: Advanced Custom Blocks' 
+          href: Documents/AdvancedCustomBlocks.md
+        - name: 8. Creating an Animated Block Texture
+          href: Documents/CreateAnimatedBlockTexture.md
+        - name: 9. Creating a Goblin Chef Entity 
+          href: Documents/MakerSeriesMakingTheGoblinChef.md
+        - name: 10. Create a Loot Table
           href: Documents/CreateLootTable.md
-        - name: Create a Village with Structure Blocks
+        - name: 11. Create a Village with Structure Blocks
           href: Documents/StructureBlocksTutorial.md
     - name: Concepts
       items:
@@ -84,6 +88,8 @@
           href: Documents/AddCustomItems.md
         - name: Creating and Adding Custom Sounds
           href: Documents/AddCustomSounds.md
+        - name: Introduction to Recipes
+          href: Documents/RecipeIntroduction.md
         - name: Packaging Content
           items:
           - name: Packaging a Skin Pack

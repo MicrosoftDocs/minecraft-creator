@@ -24,8 +24,6 @@ landingContent:
         links:
           - text: Recipe Definition List
             url: Examples/RecipeDefinitionList.md
-          - text: Introduction to Recipes
-            url: Examples/RecipeDefinitions/RecipeIntroduction.md
           - text: Tags as Recipe Input
             url: Examples/RecipeDefinitions/TagsRecipeInput.md
           - text: Recipe Tag List

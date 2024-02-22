@@ -6,8 +6,18 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "Reference/Content/RecipeReference/Examples/RecipeDefinitions/RecipeIntroduction.md",
+      "redirect_url": "/minecraft/creator/documents/RecipeIntroduction.md",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "Documents/MashupPackOverview.md",
       "redirect_url": "/minecraft/creator/documents/gettingstarted.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/CreationHub.md",
+      "redirect_url": "/minecraft/creator/documents/learningjourneyguide.md",
       "redirect_document_id": false
     },
       {
