@@ -24,3 +24,5 @@ landingContent:
         links:
            - text: Part 1 - The Dream Turkey
              url: ./ChillDreamsPart1TheDreamTurkey.md
+           - text: Part 2 - Making Dreams Come True
+             url: ./ChillDreamsPart2MakingDreamsComeTrue.md
