@@ -40,6 +40,8 @@
       items:              
         - name: "Chill Dreams Add-On: Part 1 - The Dream Turkey"
           href: Casual/ChillDreamsPart1TheDreamTurkey.md
+        - name: "Chill Dreams Add-On: Part 2 - Making Dreams Come True"
+          href: Casual/ChillDreamsPart2MakingDreamsComeTrue.md
     - name: Learning Journey
       items:
         - name: Guide

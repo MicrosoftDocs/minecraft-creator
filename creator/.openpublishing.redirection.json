@@ -11,6 +11,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "creator/Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_breathability.md",
+      "redirect_url": "creator/Reference/Content/BlockReference/Examples/BlockComponents/BlockComponentsList.md",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "Documents/MashupPackOverview.md",
       "redirect_url": "/minecraft/creator/documents/gettingstarted.md",
       "redirect_document_id": false

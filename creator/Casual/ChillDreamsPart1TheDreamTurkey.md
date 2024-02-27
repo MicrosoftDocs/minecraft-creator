@@ -2,7 +2,7 @@
 author: mammerla
 ms.author: mikeam
 title: Chill Dreams Add-On for Minecraft - Part 1 - The Dream Turkey
-description: "On overview of building "
+description: Part 1 of Chill Dreams Add-On series gives a project overview and discusses the creation of some initial assets
 ms.service: minecraft-bedrock-edition
 ---
 
@@ -21,8 +21,8 @@ I also wanted to accomplish this goal in the Minecraftiest way possible: through
 This is the first in a three-part set of articles. Section 2 and 3 are coming in the next week!
 
 1. The Dream Turkey - _you are here_
-1. Making Dreams Come True - coming soon
-1. Smells Like Memories - coming soon
+1. [Making Dreams Come True](./ChillDreamsPart2MakingDreamsComeTrue.md)
+1. Smells Like Memories - coming soon!
 
 You can get the sample from this project from [https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/). Note that there are subfolders for each part of this series, along with the "complete" sample.
 
@@ -80,9 +80,10 @@ To do this, I looked to [github.com/mojang/bedrock-samples](https://github.com/m
 
 Specifically, I copied 'behavior_packs\items\cooked_chicken.json' and 'chicken.json' into my project as "raw_dream_turkey" and "cooked_dream_turkey" and updated as expected. I also had to create textures within the resource pack - I also copied in images from the raw/cooked chicken (chicken_raw, chicken_cooked) as foundational images - and update item_textures.json 
 
-Finally, I created a third new ingredient, which is "dream essence".  We'll see how dream essence gets used in part 3 – but for now, it's a pretty simple ingredient that looks like seeds.
+Finally, I created a third new ingredient, which is "dream essence".  We'll see how dream essence gets used in part 3 – but for now, it's a pretty simple ingredient that looks like seeds. (I used pumpkin_seeds from bedrock-samples as an inspiration.)
 
-I used pumpkin_seeds from bedrock-samples as an inspiration. I updated their loot table in to generate dream_essence and dream_turkey in place of feathers and chicken.
+Finally, I updated the loot table of the Dream Turkey in to generate dream_essence and dream_turkey in place of feathers and chicken.
+
 OK, now we have our dream turkey all set up! Time to test it. Run `gulp` in your folder, exit and reload your test world, and then `/summon mamm_cds:dream_turkey`.
 
 ![Dream Turkey and Friends](./Media/DreamTurkeyFriends.png)
