@@ -329,7 +329,7 @@ Here is the wrench texture:
 {
   "resource_pack_name": "Wrench Resource Pack",
   "texture_data": {
-    "demo:goo": {
+    "demo:wrench": {
       "textures": "textures/items/wrench_ico"
     }
   }
@@ -526,7 +526,7 @@ Here is the crown texture:
 {
   "resource_pack_name": "crown_resource_pack",
   "texture_data": {
-    "demo:goo": {
+    "demo:crown": {
       "textures": "textures/items/crown"
     }
   }
