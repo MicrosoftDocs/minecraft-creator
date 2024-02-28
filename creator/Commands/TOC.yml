@@ -48,6 +48,8 @@
   href: commands/give.md
 - name: help
   href: commands/help.md
+- name: hud
+  href: commands/hud.md
 - name: inputpermission
   href: commands/inputpermission.md
 - name: kick
@@ -106,8 +108,6 @@
   href: commands/setmaxplayers.md
 - name: setworldspawn
   href: commands/setworldspawn.md
-- name: simulationtype
-  href: commands/simulationtype.md
 - name: spawnpoint
   href: commands/spawnpoint.md
 - name: spreadplayers

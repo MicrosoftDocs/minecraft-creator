@@ -2,13 +2,76 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.RawMessage Interface
 description: Contents of the @minecraft/server.RawMessage class.
-ms.service: minecraft-bedrock-edition
 ---
 # RawMessage Interface
 
 Defines a JSON structure that is used for more flexible.
+
+#### Examples
+##### ***addTranslatedSign.ts***
+```typescript
+import { DimensionLocation, world, BlockPermutation, BlockComponentTypes } from '@minecraft/server';
+
+function placeTranslatedSign(location: DimensionLocation, text: string) {
+    const signBlock = location.dimension.getBlock(location);
+
+    if (!signBlock) {
+        console.warn('Could not find a block at specified location.');
+        return;
+    }
+    const signPerm = BlockPermutation.resolve('minecraft:standing_sign', { ground_sign_direction: 8 });
+    signBlock.setPermutation(signPerm);
+
+    const signComponent = signBlock.getComponent(BlockComponentTypes.Sign);
+    if (signComponent) {
+        signComponent.setText({ translate: 'item.skull.player.name', with: [text] });
+    } else {
+        console.error('Could not find a sign component on the block.');
+    }
+}
+
+placeTranslatedSign(
+    {
+        dimension: world.getDimension('overworld'),
+        x: 0,
+        y: 0,
+        z: 0,
+    },
+    'Steve',
+);
+```
+##### ***showTranslatedMessageForm.ts***
+```typescript
+import { world, Player } from '@minecraft/server';
+import { MessageFormData, MessageFormResponse } from '@minecraft/server-ui';
+
+function showMessage(player: Player) {
+    const messageForm = new MessageFormData()
+        .title({ translate: 'permissions.removeplayer' })
+        .body({ translate: 'accessibility.list.or.two', with: ['Player 1', 'Player 2'] })
+        .button1('Player 1')
+        .button2('Player 2');
+
+    messageForm
+        .show(player)
+        .then((formData: MessageFormResponse) => {
+            // player canceled the form, or another dialog was up and open.
+            if (formData.canceled || formData.selection === undefined) {
+                return;
+            }
+
+            console.warn(`You selected ${formData.selection === 0 ? 'Player 1' : 'Player 2'}`);
+        })
+        .catch((error: Error) => {
+            console.warn('Failed to show form: ' + error);
+        });
+};
+
+showMessage(world.getAllPlayers()[0]);
+```
 
 ## Properties
 
@@ -50,46 +113,62 @@ Type: *string*[] | [*RawMessage*](RawMessage.md)
 #### Examples
 ##### ***addTranslatedSign.ts***
 ```typescript
-  const players = mc.world.getPlayers();
+import { DimensionLocation, world, BlockPermutation, BlockComponentTypes } from '@minecraft/server';
 
-  const dim = players[0].dimension;
+function placeTranslatedSign(location: DimensionLocation, text: string) {
+    const signBlock = location.dimension.getBlock(location);
 
-  const signBlock = dim.getBlock(targetLocation);
+    if (!signBlock) {
+        console.warn('Could not find a block at specified location.');
+        return;
+    }
+    const signPerm = BlockPermutation.resolve('minecraft:standing_sign', { ground_sign_direction: 8 });
+    signBlock.setPermutation(signPerm);
 
-  if (!signBlock) {
-    log("Could not find a block at specified location.");
-    return -1;
-  }
-  let signPerm = mc.BlockPermutation.resolve("minecraft:standing_sign", { ground_sign_direction: 8 });
+    const signComponent = signBlock.getComponent(BlockComponentTypes.Sign);
+    if (signComponent) {
+        signComponent.setText({ translate: 'item.skull.player.name', with: [text] });
+    } else {
+        console.error('Could not find a sign component on the block.');
+    }
+}
 
-  signBlock.setPermutation(signPerm);
-
-  const signComponent = signBlock.getComponent("minecraft:sign") as mc.BlockSignComponent;
-
-  signComponent.setText({ translate: "item.skull.player.name", with: [players[0].name] });
+placeTranslatedSign(
+    {
+        dimension: world.getDimension('overworld'),
+        x: 0,
+        y: 0,
+        z: 0,
+    },
+    'Steve',
+);
 ```
 ##### ***showTranslatedMessageForm.ts***
 ```typescript
-  const players = mc.world.getPlayers();
+import { world, Player } from '@minecraft/server';
+import { MessageFormData, MessageFormResponse } from '@minecraft/server-ui';
 
-  const messageForm = new mcui.MessageFormData()
-    .title({ translate: "permissions.removeplayer" })
-    .body({ translate: "accessibility.list.or.two", with: ["Player 1", "Player 2"] })
-    .button1("Player 1")
-    .button2("Player 2");
+function showMessage(player: Player) {
+    const messageForm = new MessageFormData()
+        .title({ translate: 'permissions.removeplayer' })
+        .body({ translate: 'accessibility.list.or.two', with: ['Player 1', 'Player 2'] })
+        .button1('Player 1')
+        .button2('Player 2');
 
-  messageForm
-    .show(players[0])
-    .then((formData: mcui.MessageFormResponse) => {
-      // player canceled the form, or another dialog was up and open.
-      if (formData.canceled || formData.selection === undefined) {
-        return;
-      }
+    messageForm
+        .show(player)
+        .then((formData: MessageFormResponse) => {
+            // player canceled the form, or another dialog was up and open.
+            if (formData.canceled || formData.selection === undefined) {
+                return;
+            }
 
-      log(`You selected ${formData.selection === 0 ? "Player 1" : "Player 2"}`);
-    })
-    .catch((error: Error) => {
-      log("Failed to show form: " + error);
-      return -1;
-    });
+            console.warn(`You selected ${formData.selection === 0 ? 'Player 1' : 'Player 2'}`);
+        })
+        .catch((error: Error) => {
+            console.warn('Failed to show form: ' + error);
+        });
+};
+
+showMessage(world.getAllPlayers()[0]);
 ```

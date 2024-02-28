@@ -4,16 +4,12 @@
    href: ../ItemUsePriority.md
  - name: description
    href: description_component.md
- - name: menu_category
-   href: menu_category_component.md
  - name: allow_off_hand
    href: minecraft_allow_off_hand.md
  - name: block_placer
    href: minecraft_block_placer.md
  - name: can_destroy_in_creative
    href: minecraft_can_destroy_in_creative.md
- - name: chargeable
-   href: minecraft_chargeable.md
  - name: cooldown
    href: minecraft_cooldown.md
  - name: damage
@@ -48,16 +44,10 @@
    href: minecraft_liquid_clipped.md
  - name: max_stack_size
    href: minecraft_max_stack_size.md
- - name: on_use
-   href: minecraft_on_use.md
- - name: on_use_on
-   href: minecraft_on_use_on.md
  - name: projectile
    href: minecraft_projectile.md
  - name: record
    href: minecraft_record.md
- - name: render_offsets
-   href: minecraft_render_offsets.md
  - name: repairable
    href: minecraft_repairable.md
  - name: shooter
@@ -66,13 +56,13 @@
    href: minecraft_should_despawn.md
  - name: stacked_by_data
    href: minecraft_stacked_by_data.md
+ - name: tags
+   href: minecraft_tags.md
  - name: throwable
    href: minecraft_throwable.md
  - name: use_animation
    href: minecraft_use_animation.md
- - name: use_duration
-   href: minecraft_use_duration.md
- - name: weapon
-   href: minecraft_weapon.md
+ - name: use_modifiers
+   href: minecraft_use_modifiers.md
  - name: wearable
    href: minecraft_wearable.md

@@ -2,8 +2,8 @@
 author: kakinnun
 ms.author: kakinnun
 title: 1.20.30 Update Notes
-ms.prod: gaming
 description: Update summary of Creator changes in Bedrock 1.20.30
+ms.service: minecraft-bedrock-edition
 ---
 # Minecraft Bedrock 1.20.30 Update Notes for Creators
 
@@ -36,7 +36,7 @@ For example:
 **Random Seed** 
 Marketplace maps can now specify map templates to allow for random world seeds. 
 
-See: [Packaging a Random Seed World Template](../Documents/PackagingARandomSeedWorldTemplate.md).
+See: [Create A World Template](../Documents/CreateAWorldTemplate.md).
 
 **Custom Feature Placement**
 Several feature placement rules have released to give creators more world-gen capability. This allows creators to attach their custom features to a biome, and to define the rules by which those features are placed. 
@@ -74,13 +74,12 @@ Several Item Components have released and are now available without using the Ho
 - [food](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_food.md)
 - [damage](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_damage.md)
 - [use_animation](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_use_animation.md)
-- [use_duration](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_use_duration.md)
+- [use_modifiers](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_use_modifiers.md)
 - [allow_off_hand](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_allow_off_hand.md)
 - [should_despawn](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_should_despawn.md)
 - [liquid_clipped](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_liquid_clipped.md)
 - [hand_equipped](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_hand_equipped.md)
 - [glint](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_glint.md) (previously known as foil)
-- [use_duration](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_use_duration.md)
 - [stacked_by_data](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_stacked_by_data.md)
 - [enchantable](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_enchantable.md)
 

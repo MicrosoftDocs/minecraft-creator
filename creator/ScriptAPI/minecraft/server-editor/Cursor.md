@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-editor.Cursor Class
 description: Contents of the @minecraft/server-editor.Cursor class.
-ms.service: minecraft-bedrock-edition
 ---
 # Cursor Class
 
@@ -28,7 +28,7 @@ The 3D block cursor can also be used to query the current block at which the mou
 The face at of the block beneath the 3D block cursor which is intersected by the mouse raycast
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -38,7 +38,7 @@ Type: *number*
 Query whether or not the 3D block cursor is visible or hidden
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -86,7 +86,7 @@ Get a property object which represents the current properties of the 3D block cu
 hide(): void
 `
 
-Hide the 3D block cursor from view until the corresponding {@link @minecraft-server-editor-bindings.Cursor.show} function is called
+Hide the 3D block cursor from view until the corresponding @minecraft-server-editor-bindings.Cursor.show function is called
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -99,7 +99,7 @@ Hide the 3D block cursor from view until the corresponding {@link @minecraft-ser
 moveBy(offset: minecraftserver.Vector3): minecraftserver.Vector3
 `
 
-Manually offset the 3D block cursor by given amount.  Depending on the {@link @minecraft-server-editor-bindings.CursorProperties.CursorControlMode} - this function may have no effect
+Manually offset the 3D block cursor by given amount.  Depending on the @minecraft-server-editor-bindings.CursorProperties.CursorControlMode - this function may have no effect
 
 #### **Parameters**
 - **offset**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)

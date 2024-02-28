@@ -73,7 +73,7 @@ Next, we will create  PBR textures as a resource pack and you can enable it in t
 
 ### Introduction to Physically Based Rendering
 
-You will learn about each new texture map Creators can use to build and design photorealistic materials and lighting effects, and you will learn how to use texture maps to create a mirror in-game.
+You will learn about each new texture map creators can use to build and design photorealistic materials and lighting effects, and you will learn how to use texture maps to create a mirror in-game.
 
 > [!div class="nextstepaction"]
 > [Introduction to Physically Based Rendering](./RTXPBRIntro.md)

@@ -76,8 +76,6 @@
   href: minecraftBehavior_equip_item.md
 - name: behavior.explore_outskirts
   href: minecraftBehavior_explore_outskirts.md
-- name: behavior.feeling_happy
-  href: minecraftBehavior_feeling_happy.md
 - name: behavior.fertilize_farm_block
   href: minecraftBehavior_fertilize_farm_block.md
 - name: behavior.find_cover
@@ -144,6 +142,8 @@
   href: minecraftBehavior_make_love.md
 - name: behavior.melee_attack
   href: minecraftBehavior_melee_attack.md
+- name: behavior.melee_box_attack
+  href: minecraftBehavior_melee_box_attack.md
 - name: behavior.mingle
   href: minecraftBehavior_mingle.md
 - name: behavior.mount_pathing
@@ -242,8 +242,6 @@
   href: minecraftBehavior_restrict_sun.md
 - name: behavior.rise_to_liquid_level
   href: minecraftBehavior_rise_to_liquid_level.md
-- name: behavior.rising
-  href: minecraftBehavior_rising.md
 - name: behavior.roar
   href: minecraftBehavior_roar.md
 - name: behavior.roll
@@ -252,8 +250,6 @@
   href: minecraftBehavior_run_around_like_crazy.md
 - name: behavior.scared
   href: minecraftBehavior_scared.md
-- name: behavior.scenting
-  href: minecraftBehavior_scenting.md
 - name: behavior.send_event
   href: minecraftBehavior_send_event.md
 - name: behavior.share_items
@@ -322,6 +318,12 @@
   href: minecraftBehavior_target_when_pushed.md
 - name: behavior.tempt
   href: minecraftBehavior_tempt.md
+- name: behavior.timer_flag_1
+  href: minecraftBehavior_timer_flag_1.md
+- name: behavior.timer_flag_2
+  href: minecraftBehavior_timer_flag_2.md
+- name: behavior.timer_flag_3
+  href: minecraftBehavior_timer_flag_3.md
 - name: behavior.trade_interest
   href: minecraftBehavior_trade_interest.md
 - name: behavior.trade_with_player

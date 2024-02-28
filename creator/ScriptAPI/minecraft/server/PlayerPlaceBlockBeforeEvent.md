@@ -2,9 +2,10 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.PlayerPlaceBlockBeforeEvent Class
 description: Contents of the @minecraft/server.PlayerPlaceBlockBeforeEvent class.
-ms.service: minecraft-bedrock-edition
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlayerPlaceBlockBeforeEvent Class
 
@@ -39,12 +40,12 @@ Location relative to the bottom north-west corner of the block where the new blo
 
 Type: [*Vector3*](Vector3.md)
 
-### **itemStack**
-`itemStack: ItemStack;`
+### **permutationBeingPlaced**
+`read-only permutationBeingPlaced: BlockPermutation;`
 
-The item being used to place the block.
+The block permutation that is being placed.
 
-Type: [*ItemStack*](ItemStack.md)
+Type: [*BlockPermutation*](BlockPermutation.md)
 
 ### **player**
 `read-only player: Player;`

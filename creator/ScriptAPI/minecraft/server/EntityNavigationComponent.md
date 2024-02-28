@@ -2,9 +2,10 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityNavigationComponent Class
 description: Contents of the @minecraft/server.EntityNavigationComponent class.
-ms.service: minecraft-bedrock-edition
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityNavigationComponent Class
 
@@ -32,7 +33,7 @@ Allows this entity to generate paths that include vertical walls (for example, l
 Tells the pathfinder to avoid blocks that cause damage when finding a path.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -42,7 +43,7 @@ Type: *boolean*
 Tells the pathfinder to avoid portals (like nether portals) when finding a path.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -52,7 +53,7 @@ Type: *boolean*
 Whether or not the pathfinder should avoid tiles that are exposed to the sun when creating paths.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -62,7 +63,7 @@ Type: *boolean*
 Tells the pathfinder to avoid water when creating a path.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -72,7 +73,7 @@ Type: *boolean*
 Tells the pathfinder whether or not it can jump out of water (like a dolphin).
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -82,7 +83,7 @@ Type: *boolean*
 Tells the pathfinder that it can path through a closed door and break it.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -92,7 +93,7 @@ Type: *boolean*
 Tells the pathfinder whether or not it can float.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -102,7 +103,7 @@ Type: *boolean*
 Tells the pathfinder whether or not it can jump up blocks.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -112,7 +113,7 @@ Type: *boolean*
 Tells the pathfinder that it can path through a closed door assuming the AI will open the door.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -122,7 +123,7 @@ Type: *boolean*
 Tells the pathfinder that it can path through a closed iron door assuming the AI will open the door.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -132,7 +133,7 @@ Type: *boolean*
 Whether a path can be created through a door.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -142,7 +143,7 @@ Type: *boolean*
 Tells the pathfinder that it can start pathing when in the air.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -152,7 +153,7 @@ Type: *boolean*
 Tells the pathfinder whether or not it can travel on the surface of the lava.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -162,7 +163,7 @@ Type: *boolean*
 Tells the pathfinder whether or not it can travel on the surface of the water.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -172,7 +173,7 @@ Type: *boolean*
 Tells the pathfinder whether or not it will be pulled down by gravity while in water.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -182,7 +183,7 @@ Type: *boolean*
 Tells the pathfinder whether or not it can path anywhere through water and plays swimming animation along that path.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -192,7 +193,7 @@ Type: *boolean*
 Tells the pathfinder whether or not it can walk on the ground outside water.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -202,7 +203,7 @@ Type: *boolean*
 Tells the pathfinder whether or not it can travel in lava like walking on ground.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -212,6 +213,6 @@ Type: *boolean*
 Tells the pathfinder whether or not it can walk on the ground or go underwater.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.

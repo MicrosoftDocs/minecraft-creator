@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockEvent Class
 description: Contents of the @minecraft/server.BlockEvent class.
-ms.service: minecraft-bedrock-edition
 ---
 # BlockEvent Class
 
@@ -13,7 +13,6 @@ ms.service: minecraft-bedrock-edition
 - [*ButtonPushAfterEvent*](ButtonPushAfterEvent.md)
 - [*LeverActionAfterEvent*](LeverActionAfterEvent.md)
 - [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)
-- [*PistonActivateBeforeEvent*](PistonActivateBeforeEvent.md)
 - [*PlayerBreakBlockAfterEvent*](PlayerBreakBlockAfterEvent.md)
 - [*PlayerBreakBlockBeforeEvent*](PlayerBreakBlockBeforeEvent.md)
 - [*PlayerPlaceBlockAfterEvent*](PlayerPlaceBlockAfterEvent.md)

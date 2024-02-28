@@ -2,9 +2,10 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-net Module
 description: Contents of the @minecraft/server-net module
-ms.service: minecraft-bedrock-edition
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # `@minecraft/server-net` Module
 
@@ -14,6 +15,28 @@ The `@minecraft/server-net` module contains types for executing HTTP-based reque
 > This module is still in pre-release.  It may change or it may be removed in future releases.
 
 ## [Changelog](changelog.md)
+
+#### Examples
+##### ***simpleHttpRequest.ts***
+```typescript
+import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
+
+async function updateScore() {
+    const req = new HttpRequest('http://localhost:3000/updateScore');
+
+    req.body = JSON.stringify({
+        score: 22,
+    });
+
+    req.method = HttpRequestMethod.Post;
+    req.headers = [
+        new HttpHeader('Content-Type', 'application/json'),
+        new HttpHeader('auth', 'my-auth-token'),
+    ];
+
+    await http.request(req);
+}
+```
 
 ## Manifest Details
 ```json

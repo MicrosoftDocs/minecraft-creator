@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-editor.ClipboardManager Class
 description: Contents of the @minecraft/server-editor.ClipboardManager class.
-ms.service: minecraft-bedrock-edition
 ---
 # ClipboardManager Class
 
@@ -20,7 +20,7 @@ The ClipboardManager (accessible from the [*@minecraft/server-editor.ExtensionCo
 The primary [*@minecraft/server-editor.ClipboardItem*](../../minecraft/server-editor/ClipboardItem.md) object is always present (even if it's empty) and cannot be deleted.  This object represents the main ClipboardItem object which is always accessible through the UI for cut/paste operations
 
 Type: [*ClipboardItem*](ClipboardItem.md)
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 

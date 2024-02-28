@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-editor.IRegisterExtensionOptionalParameters Interface
 description: Contents of the @minecraft/server-editor.IRegisterExtensionOptionalParameters class.
-ms.service: minecraft-bedrock-edition
 ---
 # IRegisterExtensionOptionalParameters Interface
 
@@ -23,5 +23,12 @@ Type: *string*
 `notes: string;`
 
 Additional notes and description of the extension.
+
+Type: *string*
+
+### **toolGroupId**
+`toolGroupId: string;`
+
+An optional custom group identifier that will be used for all Modal Tools created from the registered extension.
 
 Type: *string*

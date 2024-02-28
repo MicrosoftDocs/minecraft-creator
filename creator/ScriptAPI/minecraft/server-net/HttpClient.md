@@ -2,11 +2,33 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-net.HttpClient Class
 description: Contents of the @minecraft/server-net.HttpClient class.
-ms.service: minecraft-bedrock-edition
 ---
 # HttpClient Class
+
+#### Examples
+##### ***simpleHttpRequest.ts***
+```typescript
+import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
+
+async function updateScore() {
+    const req = new HttpRequest('http://localhost:3000/updateScore');
+
+    req.body = JSON.stringify({
+        score: 22,
+    });
+
+    req.method = HttpRequestMethod.Post;
+    req.headers = [
+        new HttpHeader('Content-Type', 'application/json'),
+        new HttpHeader('auth', 'my-auth-token'),
+    ];
+
+    await http.request(req);
+}
+```
 
 ## Methods
 - [cancelAll](#cancelall)
@@ -59,3 +81,47 @@ Performs an HTTP request.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
+
+#### Examples
+##### ***simpleHttpRequest.ts***
+```typescript
+import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
+
+async function updateScore() {
+    const req = new HttpRequest('http://localhost:3000/updateScore');
+
+    req.body = JSON.stringify({
+        score: 22,
+    });
+
+    req.method = HttpRequestMethod.Post;
+    req.headers = [
+        new HttpHeader('Content-Type', 'application/json'),
+        new HttpHeader('auth', 'my-auth-token'),
+    ];
+
+    await http.request(req);
+}
+```
+
+#### Examples
+##### ***simpleHttpRequest.ts***
+```typescript
+import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
+
+async function updateScore() {
+    const req = new HttpRequest('http://localhost:3000/updateScore');
+
+    req.body = JSON.stringify({
+        score: 22,
+    });
+
+    req.method = HttpRequestMethod.Post;
+    req.headers = [
+        new HttpHeader('Content-Type', 'application/json'),
+        new HttpHeader('auth', 'my-auth-token'),
+    ];
+
+    await http.request(req);
+}
+```

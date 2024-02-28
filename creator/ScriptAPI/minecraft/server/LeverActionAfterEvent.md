@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.LeverActionAfterEvent Class
 description: Contents of the @minecraft/server.LeverActionAfterEvent class.
-ms.service: minecraft-bedrock-edition
 ---
 # LeverActionAfterEvent Class
 
@@ -12,6 +12,19 @@ ms.service: minecraft-bedrock-edition
 - [*BlockEvent*](BlockEvent.md)
 
 Contains information related to changes to a lever activating or deactivating.
+
+#### Examples
+##### ***leverActionEvent.ts***
+```typescript
+import { world, system, LeverActionAfterEvent } from '@minecraft/server';
+
+world.afterEvents.leverAction.subscribe((leverActivateEvent: LeverActionAfterEvent) => {
+    console.warn(
+        `Lever event at ${system.currentTick} with power: ${leverActivateEvent.block.getRedstonePower()}`,
+    );
+});
+
+```
 
 ## Properties
 
@@ -30,30 +43,14 @@ Optional player that triggered the lever activation.
 Type: [*Player*](Player.md)
 
 #### Examples
-##### ***leverActivateEvent.ts***
+##### ***leverActionEvent.ts***
 ```typescript
-  // set up a lever
-  let cobblestone = overworld.getBlock(targetLocation);
-  let lever = overworld.getBlock({ x: targetLocation.x, y: targetLocation.y + 1, z: targetLocation.z });
+import { world, system, LeverActionAfterEvent } from '@minecraft/server';
 
-  if (cobblestone === undefined || lever === undefined) {
-    log("Could not find block at location.");
-    return -1;
-  }
+world.afterEvents.leverAction.subscribe((leverActivateEvent: LeverActionAfterEvent) => {
+    console.warn(
+        `Lever event at ${system.currentTick} with power: ${leverActivateEvent.block.getRedstonePower()}`,
+    );
+});
 
-  cobblestone.setPermutation(mc.BlockPermutation.resolve("cobblestone"));
-  lever.setPermutation(mc.BlockPermutation.resolve("lever").withState("lever_direction", "up_north_south" /* up */));
-
-  mc.world.afterEvents.leverActivate.subscribe((leverActivateEvent: mc.LeverActionAfterEvent) => {
-    let eventLoc = leverActivateEvent.block.location;
-
-    if (eventLoc.x === targetLocation.x && eventLoc.y === targetLocation.y + 1 && eventLoc.z === targetLocation.z) {
-      log(
-        "Lever activate event at tick " +
-          mc.system.currentTick +
-          " Power:" +
-          leverActivateEvent.block.getRedstonePower()
-      );
-    }
-  });
 ```

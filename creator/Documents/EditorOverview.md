@@ -1,9 +1,9 @@
 ---
 author: iconicNurdle
-ms.author: v-jillheaden
+ms.author: mikeam
 title: Minecraft Bedrock Editor Overview
-ms.prod: gaming
 description: "An overview of the parts of Minecraft Bedrock Editor"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Editor Overview
@@ -12,9 +12,12 @@ This overview is intended to introduce you to the parts of the Editor interface 
 
 For a more in-depth experience using the tools to accomplish basic tasks, take a look at the [Editor Tutorial](EditorTutorial.md).
 
+There's more information about Editor on the [Minecraft: Bedrock Editor GitHub site](https://github.com/Mojang/minecraft-editor)!
+
 > [!IMPORTANT]
 > The Editor is in early preview and we're working to add more capabilities.
 > It will change significantly as we get feedback from creators like you.
+> Also, the images of Editor in this document might vary a little from what you have on your screen.
 
 --------
 
@@ -145,7 +148,7 @@ The contents of these containers will change as Editor is developed.
 
 ![Editor UI with the action bar highlighted](Media/Editor/editor_overview_action_bar.png)
 
-**Toolrail**: Left side of the screen. Currently holds Selection, Paste Preview, and Brush. You can also select these tools using keyboard shortcuts.
+**Toolrail**: Left side of the screen. Currently holds Test World, Brush, Selection, and Paste Preview. You can also select these tools using keyboard shortcuts, if they have one.
 
 ![Editor UI with the tool rail highlighted](Media/Editor/editor_overview_tool_rail.png)
 
@@ -221,11 +224,80 @@ The Action Bar has quick functions like undo and redo that affect the things you
 
 These are some of the tools you can use to edit your world and some quick steps to practice using each tool.
 
+## Test World
+
+Playtest your Editor project as a playable Minecraft world. No changes will be saved to your project. Available only when hosting a single player world.
+
+![Editor selection tool window](Media/Editor/editor_overview_test_world_tool_window.png)
+
+### Game Mode
+
+Choose Survival, Creative, or Adventure.
+
+### Difficulty
+
+Choose Peaceful, Easy, Normal, or Hard.
+
+### World options
+
+You can toggle Daylight Cycle, Weather Cycle, Show Coordinates, and Spawn at Current Location on or off.
+
+### Time of Day
+
+Choose Default, Day, Noon, Sunset, Night, Midnight, or Sunrise.
+
+Practice: Test a world
+
+1. After selecting the options you want, click the Test World button.
+
+2. Your world loads must as it will in regular Minecraft. 
+
+3. Whenever you're ready to continue editing, press **Esc**. From here, you can choose to Resume Testing or Return to Editor.
+
+## Brush, Selection, and Paste Preview
+
 Only one window can be open at a time and you can use the keyboard shortcuts to switch among them.
 
 Practice: Tool window switcheroo
 
 1. Press `Ctrl B`, `Ctrl S`, and `Ctrl Shift V` in any order to get used to switching among the tools.
+
+## Brush
+
+`Ctrl B` opens the Brush tool window.
+
+The Brush tool is used to draw shapes with a selected Block Type.
+
+You can change the Brush Size, ranging from 1 to 16. Brush sizes are rendered as squares of the selected brush size. This means a brush size of 1 draws a 1x1 block shape. If you select a brush size of 3, you get a 3x3 block shape, or 9 total blocks arranged as a cube.
+
+You can click once once to place one block shape, or click and drag to paint blocks everywhere you touch.
+
+![Animation showing how to paint with blocks](Media/Editor/GlowstoneBrush.gif)
+
+If you choose a brush size larger than 3, you can select the Hollow checkbox to make the brush strokes hollow.
+
+If the Face Mode checkbox is selected, the brush cursor acts like the Adjacent selection cursor - meaning you can select the air above a solid block to draw your blocks. This should make it easier to build up shapes from the ground - like mountains!
+
+Practice 1: A humble tree...
+
+1. Move to a clear area.
+1. Set the Brush Size to 1, check the box for Face Mode, and choose 'log' for the Block Type.
+1. Find a clear place on the ground and place one log block.
+1. Draw another log on top of that one.
+1. Draw two more log blocks on top of each other to create a tree trunk.
+![Brush tool was used to draw logs stacked up like a tree trunk](Media/Editor/editor_overview_brush_log.png)
+1. Change the Block Size to 3 and the Block Type to 'leaves' and click the top of your log blocks to put leaves around the top of your tree.
+![Brush tool was used to draw leaves at the top of the tree trunk](Media/Editor/editor_overview_brush_leaves.png)
+
+Practice 2: Is it really Hollow?
+
+1. Move to a clear area.
+1. Change the Brush Size to 16.
+1. Check the box for Hollow.
+1. The box for Face Mode should be checked, too.  
+1. Set the Block Type to 'glass'.
+1. Click the ground once to draw a 16x16, hollow glass shape. You should find yourself inside a huge, glass house.
+![Image of a hollow glass shape created with the brush tool](Media/Editor/editor_overview_brush_glass_house.png)
 
 ## Selection Tool
 
@@ -369,43 +441,6 @@ You can Transform your copied selection by editing the Origin coordinates, Rotat
 Click Confirm Paste after each transformation to place a selected object.
 ![Image of a pasted house after the paste has been confirmed](Media/Editor/editor_overview_paste_preview_copied_house_paste_confirmed3.png)
 
-### Brush
-
-`Ctrl B` opens the Brush tool window.
-
-The Brush tool is used to draw shapes with a selected Block Type.
-
-You can change the Brush Size, ranging from 1 to 16. Brush sizes are rendered as squares of the selected brush size. This means a brush size of 1 draws a 1x1 block shape. If you select a brush size of 3, you get a 3x3 block shape, or 9 total blocks arranged as a cube.
-
-You can click once once to place one block shape, or click and drag to paint blocks everywhere you touch.
-
-![Animation showing how to paint with blocks](Media/Editor/GlowstoneBrush.gif)
-
-If you choose a brush size larger than 3, you can select the Hollow checkbox to make the brush strokes hollow.
-
-If the Face Mode checkbox is selected, the brush cursor acts like the Adjacent selection cursor - meaning you can select the air above a solid block to draw your blocks. This should make it easier to build up shapes from the ground - like mountains!
-
-Practice 1: A humble tree...
-
-1. Move to a clear area.
-1. Set the Brush Size to 1, check the box for Face Mode, and choose 'log' for the Block Type.
-1. Find a clear place on the ground and place one log block.
-1. Draw another log on top of that one.
-1. Draw two more log blocks on top of each other to create a tree trunk.
-![Brush tool was used to draw logs stacked up like a tree trunk](Media/Editor/editor_overview_brush_log.png)
-1. Change the Block Size to 3 and the Block Type to 'leaves' and click the top of your log blocks to put leaves around the top of your tree.
-![Brush tool was used to draw leaves at the top of the tree trunk](Media/Editor/editor_overview_brush_leaves.png)
-
-Practice 2: Is it really Hollow?
-
-1. Move to a clear area.
-1. Change the Brush Size to 16.
-1. Check the box for Hollow.
-1. The box for Face Mode should be checked, too.  
-1. Set the Block Type to 'glass'.
-1. Click the ground once to draw a 16x16, hollow glass shape. You should find yourself inside a huge, glass house.
-![Image of a hollow glass shape created with the brush tool](Media/Editor/editor_overview_brush_glass_house.png)
-
 ## Crosshair Mode
 
 Crosshair Mode is intended for making small single-block edits and placing entities and mobs.
@@ -491,6 +526,43 @@ If you're curious about Minecraft file extensions, there is an article about the
 As you probably already know, when you create a world in Minecraft, that world is stored in the **minecraftWorlds** folder in your **com.Mojang** folder.
 When you create a project in Editor, that file is also a world, so it is also stored in the **minecraftWorlds** folder but it is invisible to non-Editor Minecraft unless you import it.
 The Editor project file goes into the **projectbackups** folder only when you export it.
+
+## Editor and Bedrock Dedicated Server
+
+Editor is only enabled in the preview version of Win32 Bedrock Dedicated Server (BDS).
+There are two ways to launch it:
+
+### Launch the .exe with the command line, like this: 
+
+`bedrock_server.exe Editor=true`
+
+This will only work if you're launching BDS from scratch with no existing world.
+
+You should see the output say:
+
+```
+#####################################################
+#                                                   #
+#              CREATING EDITOR PROJECT              #
+#                                                   #
+#####################################################
+```
+
+### Create an Editor project from Minecraft
+
+1. Launch Editor from the usual desktop shortcut.
+1. Create a new Editor Project.
+1. Locate the Editor Project in the **com.mojang/minecraftWorlds** folder and copy it into the BDS worlds folder
+1. Ensure that `server.properties` has the correct world name.
+1. Execute **bedrock_server.exe**.
+
+If correctly set up, you should see the output say
+
+`[2023-10-24 07:21:43:977 INFO] Enabling Editor Services`
+
+Editor Mode is controlled by a flag in the level data (not by the command line), so you need to launch the server either by having the server create a new Editor project, or by launching the server using an existing Editor project.
+
+When the server is up and running, any client connections from Minecraft Bedrock Preview Edition will connect as editor sessions and present the editor interface.  Connections from Non-Preview editions of Minecraft will be refused.
 
 ## What's Next?
 

@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-editor.SelectionManager Class
 description: Contents of the @minecraft/server-editor.SelectionManager class.
-ms.service: minecraft-bedrock-edition
 ---
 # SelectionManager Class
 
@@ -18,7 +18,7 @@ The SelectionManager (accessible from the [*@minecraft/server-editor.ExtensionCo
 The primary [*@minecraft/server-editor.Selection*](../../minecraft/server-editor/Selection.md) object is always present (even if it's empty) and cannot be deleted.  This object represents the main selection object which is always accessible through the UI, and by default is synchronized between the client and server.
 
 Type: [*Selection*](Selection.md)
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 

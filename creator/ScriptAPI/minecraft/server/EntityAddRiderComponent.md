@@ -2,9 +2,10 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityAddRiderComponent Class
 description: Contents of the @minecraft/server.EntityAddRiderComponent class.
-ms.service: minecraft-bedrock-edition
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityAddRiderComponent Class
 
@@ -24,7 +25,7 @@ When added, this component makes the entity spawn with a rider of the specified 
 The type of entity that is added as a rider for this entity when spawned under certain conditions.
 
 Type: *string*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -34,7 +35,7 @@ Type: *string*
 Optional spawn event to trigger on the rider when that rider is spawned for this entity.
 
 Type: *string*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 

@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: EntityType Enum
 description: Description and values of the EntityType enum
-ms.service: minecraft-bedrock-edition
 ---
 # `EntityType` Enum
 Specifies entity type within a world.
@@ -36,6 +36,8 @@ Bee
 Axolotl
 - `axolotl`
 Axolotl
+- `minecraft:breeze`
+- `breeze`
 - `minecraft:pig`
 Pig
 - `pig`
@@ -44,10 +46,6 @@ Pig
 Hoglin
 - `hoglin`
 Hoglin
-- `minecraft:zoglin`
-Zoglin
-- `zoglin`
-Zoglin
 - `minecraft:sniffer`
 - `sniffer`
 - `minecraft:cat`
@@ -62,6 +60,8 @@ Cow
 Sheep
 - `sheep`
 Sheep
+- `minecraft:armadillo`
+- `armadillo`
 - `minecraft:wolf`
 Wolf
 - `wolf`
@@ -142,6 +142,10 @@ Panda
 Fox
 - `fox`
 Fox
+- `minecraft:goat`
+Goat
+- `goat`
+Goat
 - `minecraft:frog`
 Frog
 - `frog`
@@ -154,18 +158,10 @@ Tadpole
 Allay
 - `allay`
 Allay
-- `minecraft:husk`
-Husk
-- `husk`
-Husk
 - `minecraft:tropicalfish`
 Tropical Fish
 - `tropicalfish`
 Tropical Fish
-- `minecraft:wither_skeleton`
-Wither Skeleton
-- `wither_skeleton`
-Wither Skeleton
 - `minecraft:cod`
 Cod
 - `cod`
@@ -258,6 +254,14 @@ Blaze
 Warden
 - `warden`
 Warden
+- `minecraft:husk`
+Husk
+- `husk`
+Husk
+- `minecraft:wither_skeleton`
+Wither Skeleton
+- `wither_skeleton`
+Wither Skeleton
 - `minecraft:guardian`
 Guardian
 - `guardian`
@@ -318,10 +322,10 @@ Piglin Brute
 Piglin
 - `piglin`
 Piglin
-- `minecraft:goat`
-Goat
-- `goat`
-Goat
+- `minecraft:zoglin`
+Zoglin
+- `zoglin`
+Zoglin
 - `minecraft:minecart`
 Minecart
 - `minecart`

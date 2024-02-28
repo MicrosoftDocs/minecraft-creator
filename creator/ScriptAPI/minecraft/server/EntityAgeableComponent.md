@@ -2,9 +2,10 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityAgeableComponent Class
 description: Contents of the @minecraft/server.EntityAgeableComponent class.
-ms.service: minecraft-bedrock-edition
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityAgeableComponent Class
 
@@ -24,7 +25,7 @@ Adds a timer for the entity to grow up. It can be accelerated by giving the enti
 Amount of time before the entity grows up, -1 for always a baby.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -34,7 +35,7 @@ Type: *number*
 Event to run when this entity grows up.
 
 Type: [*Trigger*](Trigger.md)
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 

@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.System Class
 description: Contents of the @minecraft/server.System class.
-ms.service: minecraft-bedrock-edition
 ---
 # System Class
 
@@ -19,9 +19,7 @@ Returns a collection of after-events for system-level operations.
 
 Type: [*SystemAfterEvents*](SystemAfterEvents.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
+::: moniker range="=minecraft-bedrock-experimental"
 ### **beforeEvents**
 `read-only beforeEvents: SystemBeforeEvents;`
 
@@ -31,6 +29,7 @@ Type: [*SystemBeforeEvents*](SystemBeforeEvents.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **currentTick**
 `read-only currentTick: number;`
@@ -40,17 +39,40 @@ Represents the current world tick of the server.
 Type: *number*
 
 ## Methods
+::: moniker range="=minecraft-bedrock-experimental"
+- [clearJob](#clearjob)
+::: moniker-end
 - [clearRun](#clearrun)
 - [run](#run)
 - [runInterval](#runinterval)
+::: moniker range="=minecraft-bedrock-experimental"
+- [runJob](#runjob)
+::: moniker-end
 - [runTimeout](#runtimeout)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **clearJob**
+`
+clearJob(jobId: number): void
+`
+
+Cancels the execution of a job queued via System.runJob.
+
+#### **Parameters**
+- **jobId**: *number*
+  
+  The job ID returned from System.runJob.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **clearRun**
 `
 clearRun(runId: number): void
 `
 
-Cancels the execution of a function run that was previously scheduled via the `run` function.
+Cancels the execution of a function run that was previously scheduled via System.run.
 
 #### **Parameters**
 - **runId**: *number*
@@ -72,18 +94,22 @@ Runs a specified function at a future time. This is frequently used to implement
 #### Examples
 ##### ***trapTick.ts***
 ```typescript
-  const overworld = mc.world.getDimension("overworld");
+import { system, world } from '@minecraft/server';
 
-  try {
-    // Minecraft runs at 20 ticks per second.
-    if (mc.system.currentTick % 1200 === 0) {
-      mc.world.sendMessage("Another minute passes...");
+function printEveryMinute() {
+    try {
+        // Minecraft runs at 20 ticks per second.
+        if (system.currentTick % 1200 === 0) {
+            world.sendMessage('Another minute passes...');
+        }
+    } catch (e) {
+        console.warn('Error: ' + e);
     }
-  } catch (e) {
-    console.warn("Error: " + e);
-  }
 
-  mc.system.run(trapTick);
+    system.run(printEveryMinute);
+}
+
+printEveryMinute();
 ```
 
 ### **runInterval**
@@ -106,12 +132,65 @@ Runs a set of code on an interval.
 #### Examples
 ##### ***every30Seconds.ts***
 ```typescript
-  let intervalRunIdentifier = Math.floor(Math.random() * 10000);
+import { system, world } from '@minecraft/server';
 
-  mc.system.runInterval(() => {
-    mc.world.sendMessage("This is an interval run " + intervalRunIdentifier + " sending a message every 30 seconds.");
-  }, 600);
+const intervalRunIdentifier = Math.floor(Math.random() * 10000);
+
+system.runInterval(() => {
+    world.sendMessage('This is an interval run ' + intervalRunIdentifier + ' sending a message every 30 seconds.');
+}, 600);
 ```
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **runJob**
+`
+runJob(generator: Generator<void, void, void>): number
+`
+
+Queues a generator to run until completion.  The generator will be given a time slice each tick, and will be run until it yields or completes.
+
+#### **Parameters**
+- **generator**: Generator<*void*, *void*, *void*>
+  
+  The instance of the generator to run.
+
+#### **Returns** *number* - An opaque handle that can be used with System.clearJob to stop the run of this generator.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+#### Examples
+##### ***cubeGenerator.ts***
+```typescript
+import { BlockPermutation, DimensionLocation, world, ButtonPushAfterEvent, system } from '@minecraft/server';
+
+// A simple generator that places blocks in a cube at a specific location
+// with a specific size, yielding after every block place.
+function* blockPlacingGenerator(blockPerm: BlockPermutation, startingLocation: DimensionLocation, size: number) {
+    for (let x = startingLocation.x; x < startingLocation.x + size; x++) {
+        for (let y = startingLocation.y; y < startingLocation.y + size; y++) {
+            for (let z = startingLocation.z; z < startingLocation.z + size; z++) {
+                const block = startingLocation.dimension.getBlock({ x: x, y: y, z: z });
+                if (block) {
+                    block.setPermutation(blockPerm);
+                }
+                yield;
+            }
+        }
+    }
+}
+
+// When a button is pushed, we will place a 15x15x15 cube of cobblestone 10 blocks above it
+world.afterEvents.buttonPush.subscribe((buttonPushEvent: ButtonPushAfterEvent) => {
+    const cubePos = buttonPushEvent.block.location;
+    cubePos.y += 10;
+
+    const blockPerm = BlockPermutation.resolve('minecraft:cobblestone');
+
+    system.runJob(blockPlacingGenerator(blockPerm, { dimension: buttonPushEvent.dimension, ...cubePos }, 15));
+});
+```
+::: moniker-end
 
 ### **runTimeout**
 `

@@ -2,9 +2,10 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.WeatherChangeAfterEvent Class
 description: Contents of the @minecraft/server.WeatherChangeAfterEvent class.
-ms.service: minecraft-bedrock-edition
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # WeatherChangeAfterEvent Class
 
@@ -22,16 +23,16 @@ Dimension in which the weather has changed.
 
 Type: *string*
 
-### **lightning**
-`read-only lightning: boolean;`
+### **newWeather**
+`read-only newWeather: WeatherType;`
 
-Whether it is lightning after the change in weather.
+The weather type after the weather was changed.
 
-Type: *boolean*
+Type: [*WeatherType*](WeatherType.md)
 
-### **raining**
-`read-only raining: boolean;`
+### **previousWeather**
+`read-only previousWeather: WeatherType;`
 
-Whether it is raining after the change in weather.
+The weather type before the weather was changed.
 
-Type: *boolean*
+Type: [*WeatherType*](WeatherType.md)

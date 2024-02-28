@@ -1,5 +1,5 @@
 ---
-author: mammerla
+author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - minecraft:digger
 description: "A reference document detailing the 'digger' item component"
@@ -8,29 +8,11 @@ ms.service: minecraft-bedrock-edition
 
 # Item Documentation - minecraft:digger
 
-`minecraft:digger` sets the item as a "Digger" item. Component put on items that dig.
-
->[!IMPORTANT]
-> `minecraft:digger` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
->
->Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
->
->To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md)
+`minecraft:digger` allows a creator to determine how quickly an item can dig specific blocks.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|destroy_speeds|*not set* |List | Destroy speed per block|
-|on_dig |*not set*  |Trigger | Trigger for when you dig a block that isn't listed in destroy_speeds|
-|use_efficiency |false  | Boolean| Toggles if the item will be used efficiently|
-
-## Example
-
-```json
-"minecraft:digger":{
-    "destroy_speeds": ["dirt", "grass"],
-    "on_dig": "minecraft:destroy_block",
-    "use_efficiency": false
-}
-```
+| destroy_speeds| *not set*| Array| A list of blocks to dig, with correlating speeds of digging.|
+| use_efficiency| *not set*| Boolean| Determines whether the item should be impacted if the `efficiency` enchant is applied to it.|

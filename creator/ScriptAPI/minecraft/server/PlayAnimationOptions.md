@@ -2,9 +2,10 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.PlayAnimationOptions Interface
 description: Contents of the @minecraft/server.PlayAnimationOptions class.
-ms.service: minecraft-bedrock-edition
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlayAnimationOptions Interface
 
@@ -35,6 +36,13 @@ Type: *string*
 Specifies the state to transition to. 
 
 Type: *string*
+
+### **players**
+`players?: string[];`
+
+A list of players the animation will be visible to.
+
+Type: *string*[]
 
 ### **stopExpression**
 `stopExpression?: string;`

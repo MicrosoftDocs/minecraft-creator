@@ -14,8 +14,8 @@ ms.service: minecraft-bedrock-edition
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|value|*not set* | Integer| Range of the amount of damage the melee follow_range deals. A negative value can heal the entity instead of hurting it |
-|max| *not set*| Integer|  Duration, in seconds, of the status ailment applied to the damaged entity |
+|value| *not set* | Integer| The radius of the area of blocks the entity will attempt to stay within around a target. |
+|max| *not set*| Integer| Maximum distance the mob will go from a target. |
 
 ## Example
 

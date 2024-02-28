@@ -2,14 +2,13 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.PlayerInteractWithEntityAfterEventSignal Class
 description: Contents of the @minecraft/server.PlayerInteractWithEntityAfterEventSignal class.
 ---
 # PlayerInteractWithEntityAfterEventSignal Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
+Manages callbacks that are connected to after a player interacts with an entity.
 
 ## Methods
 - [subscribe](#subscribe)
@@ -19,6 +18,8 @@ description: Contents of the @minecraft/server.PlayerInteractWithEntityAfterEven
 `
 subscribe(callback: (arg: PlayerInteractWithEntityAfterEvent) => void): (arg: PlayerInteractWithEntityAfterEvent) => void
 `
+
+Adds a callback that will be called after a player interacts with an entity.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerInteractWithEntityAfterEvent*](PlayerInteractWithEntityAfterEvent.md)) => *void*
@@ -32,6 +33,8 @@ subscribe(callback: (arg: PlayerInteractWithEntityAfterEvent) => void): (arg: Pl
 `
 unsubscribe(callback: (arg: PlayerInteractWithEntityAfterEvent) => void): void
 `
+
+Removes a callback from being called after a player interacts with an entity.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerInteractWithEntityAfterEvent*](PlayerInteractWithEntityAfterEvent.md)) => *void*

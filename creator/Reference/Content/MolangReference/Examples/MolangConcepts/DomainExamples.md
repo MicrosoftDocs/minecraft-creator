@@ -16,7 +16,7 @@ In the definition file, there is a section for pre-computing values. These are e
 
 ### Example
 
-```JSON
+```json
 "scripts": {
     "pre_animation": [
       "variable.my_constant = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed;",
@@ -51,7 +51,7 @@ For each of the three resource types (`materials`, `textures`, and `geometry`), 
 
 Using `materials` as an example:
 
-```JSON
+```json
 "arrays":
 {
   "materials": {
@@ -117,7 +117,7 @@ The materials section specifies how to map what material to what bone of the geo
 
 ### Resource Example
 
-```JSON
+```json
   "materials": [
       { "*": "Material.default" },
       { "TailA": "array.hair_colors[variable.hair_color]" },

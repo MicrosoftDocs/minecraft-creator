@@ -60,9 +60,9 @@ For the sake of simplicity, you will be creating one `scene.json` file for the w
 
 The first property is the header, which defines this JSON file as a valid scene file.
 
-#### Example
+**Example**
 
-```JSON
+```json
 {
     "format_version": "1.17",
     "minecraft:npc_dialogue": {

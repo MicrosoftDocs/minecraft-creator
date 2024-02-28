@@ -2,9 +2,10 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-admin Module
 description: Contents of the @minecraft/server-admin module
-ms.service: minecraft-bedrock-edition
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # `@minecraft/server-admin` Module
 
@@ -14,6 +15,34 @@ Contains types related to administering a Bedrock Dedicated Server. These types 
 > This module is still in pre-release.  It may change or it may be removed in future releases.
 
 ## [Changelog](changelog.md)
+
+#### Examples
+##### ***getPlayerProfile.ts***
+```typescript
+import { variables, secrets } from "@minecraft/server-admin";
+import { http, HttpRequest, HttpRequestMethod, HttpHeader, HttpResponse } from "@minecraft/server-net";
+
+const serverUrl = variables.get('serverEndpoint');
+
+function getPlayerProfile(playerId: string): Promise<HttpResponse> {
+    const req = new HttpRequest(serverUrl + 'getPlayerProfile');
+
+    req.body = JSON.stringify({
+        playerId,
+    });
+
+    const authTokenSec = secrets.get('authtoken');
+
+    if (!authTokenSec) {
+        throw new Error('authtoken secret not defined.');
+    }
+
+    req.method = HttpRequestMethod.Post;
+    req.headers = [new HttpHeader('Content-Type', 'application/json'), new HttpHeader('auth', authTokenSec)];
+
+    return http.request(req);
+}
+```
 
 ## Manifest Details
 ```json

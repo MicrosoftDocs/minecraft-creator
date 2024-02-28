@@ -52,12 +52,12 @@
   href: minecraftComponent_can_climb.md
 - name: can_fly
   href: minecraftComponent_can_fly.md
+- name: can_join_raid
+  href: minecraftComponent_can_join_raid.md
 - name: can_power_jump
   href: minecraftComponent_can_power_jump.md   
 - name: celebrate_hunt
   href: minecraftComponent_celebrate_hunt.md
-- name: collision_box
-  href: minecraftComponent_collision_box.md
 - name: color
   href: minecraftComponent_color.md
 - name: color2
@@ -72,6 +72,8 @@
   href: minecraftComponent_damage_over_time.md
 - name: damage_sensor
   href: minecraftComponent_damage_sensor.md
+- name: dash
+  href: minecraftComponent_dash.md
 - name: default_look_angle
   href: minecraftComponent_default_look_angle.md
 - name: despawn

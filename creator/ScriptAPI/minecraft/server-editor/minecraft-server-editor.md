@@ -2,9 +2,10 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-editor Module
 description: Contents of the @minecraft/server-editor module
-ms.service: minecraft-bedrock-edition
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # `@minecraft/server-editor` Module
 
@@ -26,13 +27,13 @@ ms.service: minecraft-bedrock-edition
 
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
-- [ClipboardMirrorAxis](ClipboardMirrorAxis.md)
-- [ClipboardRotation](ClipboardRotation.md)
 - [CursorControlMode](CursorControlMode.md)
 - [CursorTargetMode](CursorTargetMode.md)
 - [EDITOR_PANE_PROPERTY_ITEM_TYPE](EDITOR_PANE_PROPERTY_ITEM_TYPE.md)
 - [EditorInputContext](EditorInputContext.md)
+- [EditorMode](EditorMode.md)
 - [EditorStatusBarAlignment](EditorStatusBarAlignment.md)
+- [GraphicsSettingsProperty](GraphicsSettingsProperty.md)
 - [InputModifier](InputModifier.md)
 - [KeyboardKey](KeyboardKey.md)
 - [KeyInputType](KeyInputType.md)
@@ -42,12 +43,14 @@ ms.service: minecraft-bedrock-edition
 - [PlaytestSessionResult](PlaytestSessionResult.md)
 
 # Type Aliases
+- [GraphicsSettingsPropertyTypeMap](GraphicsSettingsPropertyTypeMap.md)
 - [Action](Action.md)
 - [ActionID](ActionID.md)
 - [ActivationFunctionType](ActivationFunctionType.md)
 - [ButtonVariant](ButtonVariant.md)
 - [EventHandler](EventHandler.md)
 - [IActionPropertyItem](IActionPropertyItem.md)
+- [IDropdownPropertyItem](IDropdownPropertyItem.md)
 - [IPlayerUISession](IPlayerUISession.md)
 - [IVector3PropertyItem](IVector3PropertyItem.md)
 - [ModalToolLifecycleEventPayload](ModalToolLifecycleEventPayload.md)
@@ -70,14 +73,27 @@ ms.service: minecraft-bedrock-edition
 - [ClipboardItem](ClipboardItem.md)
 - [ClipboardManager](ClipboardManager.md)
 - [Cursor](Cursor.md)
+- [CursorPropertiesChangeAfterEvent](CursorPropertiesChangeAfterEvent.md)
+- [CursorPropertyChangeAfterEventSignal](CursorPropertyChangeAfterEventSignal.md)
 - [Extension](Extension.md)
 - [ExtensionContext](ExtensionContext.md)
+- [ExtensionContextAfterEvents](ExtensionContextAfterEvents.md)
+- [GraphicsSettings](GraphicsSettings.md)
 - [Logger](Logger.md)
 - [MinecraftEditor](MinecraftEditor.md)
+- [ModeChangeAfterEvent](ModeChangeAfterEvent.md)
+- [ModeChangeAfterEventSignal](ModeChangeAfterEventSignal.md)
 - [PlaytestManager](PlaytestManager.md)
+- [PrimarySelectionChangeAfterEventSignal](PrimarySelectionChangeAfterEventSignal.md)
+- [PrimarySelectionChangedEvent](PrimarySelectionChangedEvent.md)
 - [Selection](Selection.md)
+- [SelectionEventAfterEvent](SelectionEventAfterEvent.md)
 - [SelectionManager](SelectionManager.md)
+- [SettingsManager](SettingsManager.md)
+- [SimulationState](SimulationState.md)
 - [TransactionManager](TransactionManager.md)
+- [UserDefinedTransactionHandle](UserDefinedTransactionHandle.md)
+- [UserDefinedTransactionHandlerId](UserDefinedTransactionHandlerId.md)
 
 ## Interfaces
 - [ClipboardWriteOptions](ClipboardWriteOptions.md)
@@ -90,6 +106,7 @@ ms.service: minecraft-bedrock-edition
 - [EventSink](EventSink.md)
 - [IDisposable](IDisposable.md)
 - [IDropdownItem](IDropdownItem.md)
+- [IDropdownPropertyItemMixIn](IDropdownPropertyItemMixIn.md)
 - [IEventToken](IEventToken.md)
 - [IGlobalInputManager](IGlobalInputManager.md)
 - [IMenu](IMenu.md)
@@ -99,11 +116,13 @@ ms.service: minecraft-bedrock-edition
 - [IPlayerLogger](IPlayerLogger.md)
 - [IPropertyItem](IPropertyItem.md)
 - [IPropertyItemOptions](IPropertyItemOptions.md)
-- [IPropertyItemOptionsBlocks](IPropertyItemOptionsBlocks.md)
+- [IPropertyItemOptionsBool](IPropertyItemOptionsBool.md)
 - [IPropertyItemOptionsButton](IPropertyItemOptionsButton.md)
+- [IPropertyItemOptionsDataPicker](IPropertyItemOptionsDataPicker.md)
 - [IPropertyItemOptionsDropdown](IPropertyItemOptionsDropdown.md)
 - [IPropertyItemOptionsNumber](IPropertyItemOptionsNumber.md)
 - [IPropertyItemOptionsSubPane](IPropertyItemOptionsSubPane.md)
+- [IPropertyItemOptionsText](IPropertyItemOptionsText.md)
 - [IPropertyItemOptionsVector3](IPropertyItemOptionsVector3.md)
 - [IPropertyPane](IPropertyPane.md)
 - [IPropertyPaneOptions](IPropertyPaneOptions.md)
@@ -147,6 +166,15 @@ Executes an operation over a selection via chunks to allow splitting operation o
 
 #### **Returns** *Promise<void>*
 
+### **getBlockPickerDefaultAllowBlockList**
+`
+getBlockPickerDefaultAllowBlockList(): string[]
+`
+
+Returns a string array of the default block types for the Block picker control. Can be used to further filter blocks from the Block picker.
+
+#### **Returns** *string[]* - Default allowed block list
+
 ### **getLocalizationId**
 `
 getLocalizationId(locId: string): string
@@ -173,6 +201,38 @@ Registers an editor extension into Minecraft. This function calls underlying fun
 - **options**: *IRegisterExtensionOptionalParameters*
 
 #### **Returns** *Extension*
+
+### **registerUserDefinedTransactionHandler**
+`
+registerUserDefinedTransactionHandler(transactionManager: TransactionManager, undoHandler: (payload: T) => void, redoHandler: (payload: T) => void): UserDefinedTransactionHandle<T>
+`
+
+Creates a strongly typed transaction handle to enforce type safety when adding user defined transactions. This function is a wrapper around the more generalized transaction manager API for script based transactions. Any Editor Extension that needs to insert data into the transaction log for undo/redo should use this function to create a handler for the specific type of data that needs to be inserted. When a transaction is undone/redone, the associated handler function will be invoked with a copy of the payload data that was inserted into the log. As a general rule, transaction data should contain 2 things:<br> 1. The data that will be used to perform the operation we're trying to record<br> 2. The data that will be used to restore the state of the program to what it was before the operation.<br> NOTE/WARNING:<br> The payload data is serialized to JSON before being inserted into the transaction log and the underlying implementation uses the JSON.stringify() function to serialize the data. Any non-primitive data, such as classes or minecraft native objects will not serialize to JSON properly, so you should avoid using them as payload data.
+
+#### **Parameters**
+- **transactionManager**: *TransactionManager*
+  
+  A reference to the TransactionManager (from the extension context for your extension)
+- **undoHandler**: *(payload: T) => void*
+  
+  A function that will be invoked when the transaction is undone. The function will be passed a copy of the payload data that was inserted into the transaction log.
+- **redoHandler**: *(payload: T) => void*
+  
+  A function that will be invoked when the transaction is redone. The function will be passed a copy of the payload data that was inserted into the transaction log.
+
+#### **Returns** *UserDefinedTransactionHandle<T>* - - {@link UserDefinedTransactionHandle} - A strongly typed transaction handle that can be used to add transactions to the transaction manager.
+
+### **stringFromException**
+`
+stringFromException(e: unknown): string
+`
+
+Small utility for getting a string from an unknown exception type
+
+#### **Parameters**
+- **e**: *unknown*
+
+#### **Returns** *string*
 
 ## Objects
   

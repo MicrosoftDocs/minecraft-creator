@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Item Documentation - minecraft:shooter
 
-`minecraft:shooter` compels an item to shoot projectiles, similarly to a bow or crossbow.
+`minecraft:shooter` compels an item to shoot projectiles, similarly to a bow or crossbow. Must have the `minecraft:use_modifiers` component in order to function properly.
 
 >[!IMPORTANT]
 > Ammunition used by `minecraft:shooter` must have the `minecraft:projectile` component in order to function properly.
@@ -19,7 +19,7 @@ ms.service: minecraft-bedrock-edition
 |:----------|:----------|:----------|:----------|
 |ammunition|*not set* | Array| Sets the entity that is used as ammunition|
 |charge_on_draw| false| Boolean|Sets if the item is charged when drawn|
-|max_draw_duration|0.0| Float| Determines how long can the weapon can be drawn before releasing automatically|
+|max_draw_duration|0.0| JSON Object| Determines how long can the weapon can be drawn before releasing automatically|
 |scale_power_by_draw_duration| false| Boolean|When set to 'true', the longer the weapon is drawn, the more power it will have when released|
 
 See [Custom Item Use Priority](../ItemUsePriority.md) for more information on use behavior.

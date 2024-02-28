@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-editor.CursorProperties Interface
 description: Contents of the @minecraft/server-editor.CursorProperties class.
-ms.service: minecraft-bedrock-edition
 ---
 # CursorProperties Interface
 
@@ -48,6 +48,11 @@ Type: *number*
 A [Color] Property representing the color of the block cursor object outline
 
 Type: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
+
+### **projectThroughLiquid**
+`projectThroughLiquid?: boolean;`
+
+Type: *boolean*
 
 ### **targetMode**
 `targetMode?: CursorTargetMode;`

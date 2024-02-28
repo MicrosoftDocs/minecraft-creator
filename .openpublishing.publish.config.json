@@ -6,7 +6,10 @@
       "build_output_subfolder": "minecraft-creator",
       "locale": "en-us",
       "monikers": [],
-      "moniker_ranges": [],
+      "moniker_ranges": [
+        "minecraft-bedrock-stable",
+        "minecraft-bedrock-experimental"
+      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
@@ -19,7 +22,7 @@
     "kakinnun@microsoft.com"
   ],
   "sync_notification_subscribers": [
-    "v-jeffreykim@microsoft.com"
+    "mikeam@microsoft.com"
   ],
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/minecraft-creator",

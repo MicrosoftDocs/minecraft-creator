@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.ScoreboardObjective Class
 description: Contents of the @minecraft/server.ScoreboardObjective class.
-ms.service: minecraft-bedrock-edition
 ---
 # ScoreboardObjective Class
 
@@ -18,7 +18,7 @@ Contains objectives and participants for the scoreboard.
 Returns the player-visible name of this scoreboard objective.
 
 Type: *string*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -28,7 +28,7 @@ Type: *string*
 Identifier of the scoreboard objective.
 
 Type: *string*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 

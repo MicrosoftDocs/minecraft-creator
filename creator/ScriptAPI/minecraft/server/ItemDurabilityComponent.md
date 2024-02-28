@@ -2,9 +2,10 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemDurabilityComponent Class
 description: Contents of the @minecraft/server.ItemDurabilityComponent class.
-ms.service: minecraft-bedrock-edition
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemDurabilityComponent Class
 
@@ -34,25 +35,25 @@ Type: *number*
 Represents the amount of damage that this item can take before breaking.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
 ## Methods
 - [getDamageChance](#getdamagechance)
-- [getDamageRange](#getdamagerange)
+- [getDamageChanceRange](#getdamagechancerange)
 
 ### **getDamageChance**
 `
-getDamageChance(unbreaking?: number): number
+getDamageChance(unbreakingEnchantmentLevel?: number): number
 `
 
-Returns the maximum chance that this item would be damaged using the damageRange property, given an unbreaking level.
+Returns the maximum chance that this item would be damaged using the damageRange property, given an unbreaking enchantment level.
 
 #### **Parameters**
-- **unbreaking**?: *number* = `0`
+- **unbreakingEnchantmentLevel**?: *number* = `0`
   
-  Unbreaking factor to consider in factoring the damage chance. Incoming unbreaking parameter must be greater than 0.
+  Unbreaking factor to consider in factoring the damage chance. Incoming unbreaking parameter must be within the range [0, 3].
 
 #### **Returns** *number*
 
@@ -62,14 +63,14 @@ Returns the maximum chance that this item would be damaged using the damageRange
 > [!WARNING]
 > This function can throw errors.
 
-### **getDamageRange**
+### **getDamageChanceRange**
 `
-getDamageRange(): NumberRange
+getDamageChanceRange(): minecraftcommon.NumberRange
 `
 
-A range of numbers that describes the chance of the item losing durability.
+A range of numbers that is used to calculate the damage chance for an item. The damage chance will fall within this range.
 
-#### **Returns** [*NumberRange*](NumberRange.md)
+#### **Returns** [*@minecraft/common.NumberRange*](../../minecraft/common/NumberRange.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

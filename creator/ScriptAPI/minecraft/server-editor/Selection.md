@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-editor.Selection Class
 description: Contents of the @minecraft/server-editor.Selection class.
-ms.service: minecraft-bedrock-edition
 ---
 # Selection Class
 
@@ -20,7 +20,7 @@ It's important to note that a Selection is only a representation of the volume s
 Returns a boolean representing whether or not there are any volumes pushed to the selection stack
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 

@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Features Documentation - Introduction to Features
 
-Features are decorations scattered throughout the world. Things such as trees, plants, flowers, springs, ore, and coral are all features. Basically, if it isn't the terrain or a mob, it's probably a feature!
+Features are decorations scattered throughout the world. Things such as trees, plants, flowers, springs, ore, and coral are all features. Basically, if it isn't the terrain or an entity, it's probably a feature!
 
 Features can be standalone or composed of multiple sub-features. In practice, most features in Minecraft are defined as a chain of two or more features. These chains typically end with features that place blocks in the world. Other feature types control flow such as conditional, sequential, or random distribution.
 
@@ -45,16 +45,16 @@ If two behavior packs define the same feature name (including namespace), then t
 
 ### Behavior pack definition
 
-To add features, you need to know the behavior pack structure for them. 
+To add features, you need to know the behavior pack structure for them.
 In your behavior pack folder you will want to create a **features** folder and  **feature_rules** folder. These two folders will contain all of the required JSON files to define your features.
 
 The `"min_engine_version"` for the pack needs to be 1.20.20.
 
-The features system does not require a resource pack. 
+The features system does not require a resource pack.
 
 ![Image showing the structure of a custom feature behavior pack](../../../Media/FeaturesIntroduction/custom_feature_behavior_pack_structure.png)
 
-If you are using structures in your features that contain custom blocks or items, you will need to follow the resource pack setup that adds the dependency of a resource pack. 
+If you are using structures in your features that contain custom blocks or items, you will need to follow the resource pack setup that adds the dependency of a resource pack.
 
 There are examples of structures in the [structure blocks sample behavior pack](https://github.com/microsoft/minecraft-samples/blob/main/structure_blocks_sample_behavior_pack/README.md).
 There's more information about behavior pack and resource pack dependencies in the [Introduction to Behavior Packs](../../../../Documents/BehaviorPack.md#create-the-dependency).
@@ -130,7 +130,7 @@ To control the world generation pass at which a feature rule is applied, you can
 
 ### Example: birch_forest_surface_trees_feature
 
-```JSON
+```json
 {
   "format_version": "1.13.0",
   "minecraft:feature_rules": {
@@ -174,7 +174,7 @@ To control the world generation pass at which a feature rule is applied, you can
 
 ## Feature rule schema
 
-```JSON
+```json
 {
   version "format_version"
   object "minecraft:feature_rules"
@@ -242,9 +242,15 @@ To control the world generation pass at which a feature rule is applied, you can
 
 ## Forced Features
 
-Features attached with the second method are called "forced" or "explicit" features. 
+Features attached with the second method are called "forced" or "explicit" features.
 
-Unlike feature rules, forced features are not defined in separate JSON files. Instead, they are specified in the existing biome JSON definitions via the "minecraft:forced_features" component. 
-Like feature rules, this component includes fields that define when features should be placed ("placement_pass") and how they should be scattered ("distribution"). 
+Unlike feature rules, forced features are not defined in separate JSON files. Instead, they are specified in the existing biome JSON definitions via the "minecraft:forced_features" component.
+Like feature rules, this component includes fields that define when features should be placed ("placement_pass") and how they should be scattered ("distribution").
 
 For more information about biome components (including the complete JSON schema), consult the [biome documentation](../../BiomeReference/Examples/BiomeOverview.md).
+
+## Feature Samples
+
+All currently listed features as of version 1.20.40 have been combined into a [sample pack](https://github.com/microsoft/minecraft-samples/blob/main/FeaturesSamples.mcaddon) that can be used in your world as a tutorial to further learn how the feature and feature rules work.
+
+Additionally, check the `feature` and `feature_rules` folders of the latest [Minecraft Dedicated Server](https://www.minecraft.net/en-us/download/server/bedrock) for examples of Vanilla feature rules.

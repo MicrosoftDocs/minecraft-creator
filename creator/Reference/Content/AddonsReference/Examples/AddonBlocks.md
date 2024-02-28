@@ -45,6 +45,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | coral_hang_type_bit| Boolean| True, False| Describes the type of hanging for coral fans |
 | covered_bit| Boolean|True, False| Describes if a top snow block is covering another block |
 | cracked_state| String| no_cracks, cracked, max_cracked| Determines the cracked state of turtle eggs |
+| crafting| Boolean| True, False| Describes if the block has just crafted|
 | damage| String| undamaged, slightly_damaged, very_damaged, broken| Determines the state of damage of an Anvil |
 | dead_bit| Boolean| True, False| Determines if coral, coral fans, or sea pickles are dead |
 | direction| Integer| 0 - 3| Determines the North, South, East, and West direction of some blocks. 0 = South, 1 = West, 2 = North 3 = East |
@@ -80,6 +81,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | old_leaf_type| String| oak, spruce, birch, jungle| Determines the leaf type of some blocks |
 | old_log_type| String| oak, spruce, birch, jungle| Determines the wood type of some blocks |
 | open_bit| Boolean| True, False| Determines if a door, gate, or trapdoor is open |
+| orientation| Integer| 0-11| A 12-variant orientation|
 | output_lit_bit| Boolean| True, False| Determines if a Comparator's output is lit |
 | output_subtract_bit| Boolean| True, False| Determines if a Comparator is set to subtract output |
 | persistent_bit| Boolean| True, False| Determines if a leaf block is persistent |
@@ -110,6 +112,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | toggle_bit| Boolean| True, False| Determines if a hopper block is active or not |
 | top_slot_bit| Boolean| True, False| Shows if a slab is the top half of the block or not |
 | torch_facing_direction| String| unknown, west, east, north, south, top| Determines the block that a torch is attached to in relation to its position |
+| trial_spawner_state| Integer| 0-5| Determines the block state for the trial spawner |
 | triggered_bit| Boolean| True, False| Determines if a dispenser is triggered |
 | turtle_egg_count| String| one_egg, two_egg, three_egg, four_egg| Determines the amount of turtle eggs in an egg block |
 | update_bit| Boolean| True, False| Determines if a leaf block or flower block should be updated |
@@ -177,6 +180,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:acacia_fence_gate |
 | minecraft:acacia_hanging_sign |
 | minecraft:acacia_log |
+| minecraft:acacia_planks |
 | minecraft:acacia_pressure_plate |
 | minecraft:acacia_stairs |
 | minecraft:acacia_standing_sign |
@@ -188,6 +192,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:amethyst_block |
 | minecraft:amethyst_cluster |
 | minecraft:ancient_debris |
+| minecraft:andesite |
 | minecraft:andesite_stairs |
 | minecraft:anvil |
 | minecraft:azalea |
@@ -230,6 +235,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:birch_fence_gate |
 | minecraft:birch_hanging_sign |
 | minecraft:birch_log |
+| minecraft:birch_planks |
 | minecraft:birch_pressure_plate |
 | minecraft:birch_stairs |
 | minecraft:birch_standing_sign |
@@ -325,9 +331,12 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:cherry_wood |
 | minecraft:chest |
 | minecraft:chiseled_bookshelf |
+| minecraft:chiseled_copper |
 | minecraft:chiseled_deepslate |
 | minecraft:chiseled_nether_bricks |
 | minecraft:chiseled_polished_blackstone |
+| minecraft:chiseled_tuff |
+| minecraft:chiseled_tuff_bricks |
 | minecraft:chorus_flower |
 | minecraft:chorus_plant |
 | minecraft:clay |
@@ -348,7 +357,11 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:composter |
 | minecraft:conduit |
 | minecraft:copper_block |
+| minecraft:copper_bulb |
+| minecraft:copper_door |
+| minecraft:copper_grate |
 | minecraft:copper_ore |
+| minecraft:copper_trapdoor |
 | minecraft:coral_block |
 | minecraft:coral_fan |
 | minecraft:coral_fan_dead |
@@ -359,6 +372,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:cracked_deepslate_tiles |
 | minecraft:cracked_nether_bricks |
 | minecraft:cracked_polished_blackstone_bricks |
+| minecraft:crafter |
 | minecraft:crafting_table |
 | minecraft:crimson_button |
 | minecraft:crimson_door |
@@ -399,6 +413,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:dark_oak_fence_gate |
 | minecraft:dark_oak_hanging_sign |
 | minecraft:dark_oak_log |
+| minecraft:dark_oak_planks |
 | minecraft:dark_oak_pressure_plate |
 | minecraft:dark_oak_stairs |
 | minecraft:dark_oak_trapdoor |
@@ -437,6 +452,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:detector_rail |
 | minecraft:diamond_block |
 | minecraft:diamond_ore |
+| minecraft:diorite |
 | minecraft:diorite_stairs |
 | minecraft:dirt |
 | minecraft:dirt_with_roots |
@@ -582,7 +598,12 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:end_rod |
 | minecraft:end_stone |
 | minecraft:ender_chest |
+| minecraft:exposed_chiseled_copper |
 | minecraft:exposed_copper |
+| minecraft:exposed_copper_bulb |
+| minecraft:exposed_copper_door |
+| minecraft:exposed_copper_grate |
+| minecraft:exposed_copper_trapdoor |
 | minecraft:exposed_cut_copper |
 | minecraft:exposed_cut_copper_slab |
 | minecraft:exposed_cut_copper_stairs |
@@ -610,6 +631,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:gold_block |
 | minecraft:gold_ore |
 | minecraft:golden_rail |
+| minecraft:granite |
 | minecraft:granite_stairs |
 | minecraft:grass |
 | minecraft:grass_path |
@@ -638,10 +660,39 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:green_wool |
 | minecraft:grindstone |
 | minecraft:hanging_roots |
+| minecraft:hard_black_stained_glass |
+| minecraft:hard_black_stained_glass_pane |
+| minecraft:hard_blue_stained_glass |
+| minecraft:hard_blue_stained_glass_pane |
+| minecraft:hard_brown_stained_glass |
+| minecraft:hard_brown_stained_glass_pane |
 | minecraft:hard_glass |
 | minecraft:hard_glass_pane |
+| minecraft:hard_gray_stained_glass |
+| minecraft:hard_gray_stained_glass_pane |
+| minecraft:hard_green_stained_glass |
+| minecraft:hard_green_stained_glass_pane |
+| minecraft:hard_light_blue_stained_glass |
+| minecraft:hard_light_blue_stained_glass_pane |
 | minecraft:hard_stained_glass |
-| minecraft:hard_stained_glass_pane |
+| minecraft:hard_light_gray_stained_glass |
+| minecraft:hard_light_gray_stained_glass_pane |
+| minecraft:hard_lime_stained_glass |
+| minecraft:hard_lime_stained_glass_pane |
+| minecraft:hard_magenta_stained_glass |
+| minecraft:hard_magenta_stained_glass_pane |
+| minecraft:hard_orange_stained_glass |
+| minecraft:hard_orange_stained_glass_pane |
+| minecraft:hard_pink_stained_glass |
+| minecraft:hard_pink_stained_glass_pane |
+| minecraft:hard_purple_stained_glass |
+| minecraft:hard_purple_stained_glass_pane |
+| minecraft:hard_red_stained_glass |
+| minecraft:hard_red_stained_glass_pane |
+| minecraft:hard_white_stained_glass |
+| minecraft:hard_white_stained_glass_pane |
+| minecraft:hard_yellow_stained_glass |
+| minecraft:hard_yellow_stained_glass_pane |
 | minecraft:hardened_clay |
 | minecraft:hay_block |
 | minecraft:heavy_weighted_pressure_plate |
@@ -667,6 +718,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:jungle_fence_gate |
 | minecraft:jungle_hanging_sign |
 | minecraft:jungle_log |
+| minecraft:jungle_planks |
 | minecraft:jungle_pressure_plate |
 | minecraft:jungle_stairs |
 | minecraft:jungle_standing_sign |
@@ -792,6 +844,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:oak_fence |
 | minecraft:oak_hanging_sign |
 | minecraft:oak_log |
+| minecraft:oak_planks |
 | minecraft:oak_stairs |
 | minecraft:observer |
 | minecraft:obsidian |
@@ -807,7 +860,12 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:orange_stained_glass_pane |
 | minecraft:orange_terracotta |
 | minecraft:orange_wool |
+| minecraft:oxidized_chiseled_copper |
 | minecraft:oxidized_copper |
+| minecraft:oxidized_copper_bulb |
+| minecraft:oxidized_copper_door |
+| minecraft:oxidized_copper_grate |
+| minecraft:oxidized_copper_trapdoor |
 | minecraft:oxidized_cut_copper |
 | minecraft:oxidized_cut_copper_slab |
 | minecraft:oxidized_cut_copper_stairs |
@@ -831,9 +889,9 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:piston_arm_collision |
 | minecraft:pitcher_crop |
 | minecraft:pitcher_plant |
-| minecraft:planks |
 | minecraft:podzol |
 | minecraft:pointed_dripstone |
+| minecraft:polished_andesite |
 | minecraft:polished_andesite_stairs |
 | minecraft:polished_basalt |
 | minecraft:polished_blackstone |
@@ -853,8 +911,15 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:polished_deepslate_slab |
 | minecraft:polished_deepslate_stairs |
 | minecraft:polished_deepslate_wall |
+| minecraft:polished_diorite |
 | minecraft:polished_diorite_stairs |
+| minecraft:polished_granite |
 | minecraft:polished_granite_stairs |
+| minecraft:polished_tuff |
+| minecraft:polished_tuff_double_slab |
+| minecraft:polished_tuff_slab |
+| minecraft:polished_tuff_stairs |
+| minecraft:polished_tuff_wall
 | minecraft:portal |
 | minecraft:potatoes |
 | minecraft:powder_snow |
@@ -957,6 +1022,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:spruce_fence_gate |
 | minecraft:spruce_hanging_sign |
 | minecraft:spruce_log |
+| minecraft:spruce_planks |
 | minecraft:spruce_pressure_plate |
 | minecraft:spruce_stairs |
 | minecraft:spruce_standing_sign |
@@ -1007,10 +1073,20 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:torchflower_crop |
 | minecraft:trapdoor |
 | minecraft:trapped_chest |
+| minecraft:trial_spawner |
 | minecraft:trip_wire |
 | minecraft:tripwire_hook |
 | minecraft:tube_coral |
 | minecraft:tuff |
+| minecraft:tuff_brick_double_slab |
+| minecraft:tuff_brick_slab |
+| minecraft:tuff_brick_stairs |
+| minecraft:tuff_brick_wall |
+| minecraft:tuff_bricks |
+| minecraft:tuff_double_slab |
+| minecraft:tuff_slab |
+| minecraft:tuff_stairs |
+| minecraft:tuff_wall |
 | minecraft:turtle_egg |
 | minecraft:twisting_vines |
 | minecraft:underwater_torch |
@@ -1044,27 +1120,52 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:warped_wart_block |
 | minecraft:water |
 | minecraft:waterlily |
+| minecraft:waxed_chiseled_copper |
 | minecraft:waxed_copper |
+| minecraft:waxed_copper_bulb |
+| minecraft:waxed_copper_door |
+| minecraft:waxed_copper_grate |
+| minecraft:waxed_copper_trapdoor |
 | minecraft:waxed_cut_copper |
 | minecraft:waxed_cut_copper_slab |
 | minecraft:waxed_cut_copper_stairs |
 | minecraft:waxed_double_cut_copper_slab |
+| minecraft:waxed_exposed_chiseled_copper
 | minecraft:waxed_exposed_copper |
+| minecraft:waxed_exposed_copper_bulb |
+| minecraft:waxed_exposed_copper_door |
+| minecraft:waxed_exposed_copper_grate |
+| minecraft:waxed_exposed_copper_trapdoor |
 | minecraft:waxed_exposed_cut_copper |
 | minecraft:waxed_exposed_cut_copper_slab |
 | minecraft:waxed_exposed_cut_copper_stairs |
 | minecraft:waxed_exposed_double_cut_copper_slab |
+| minecraft:waxed_oxidized_chiseled_copper |
 | minecraft:waxed_oxidized_copper |
+| minecraft:waxed_oxidized_copper_bulb |
+| minecraft:waxed_oxidized_copper_door |
+| minecraft:waxed_oxidized_copper_grate |
+| minecraft:waxed_oxidized_copper_trapdoor |
 | minecraft:waxed_oxidized_cut_copper |
 | minecraft:waxed_oxidized_cut_copper_slab |
 | minecraft:waxed_oxidized_cut_copper_stairs |
 | minecraft:waxed_oxidized_double_cut_copper_slab |
+| minecraft:waxed_weathered_chiseled_copper |
 | minecraft:waxed_weathered_copper |
+| minecraft:waxed_weathered_copper_bulb |
+| minecraft:waxed_weathered_copper_door |
+| minecraft:waxed_weathered_copper_grate |
+| minecraft:waxed_weathered_copper_trapdoor |
 | minecraft:waxed_weathered_cut_copper |
 | minecraft:waxed_weathered_cut_copper_slab |
 | minecraft:waxed_weathered_cut_copper_stairs |
 | minecraft:waxed_weathered_double_cut_copper_slab |
+| minecraft:weathered_chiseled_copper |
 | minecraft:weathered_copper |
+| minecraft:weathered_copper_bulb |
+| minecraft:weathered_copper_door |
+| minecraft:weathered_copper_grate |
+| minecraft:weathered_copper_trapdoor |
 | minecraft:weathered_cut_copper |
 | minecraft:weathered_cut_copper_slab |
 | minecraft:weathered_cut_copper_stairs |

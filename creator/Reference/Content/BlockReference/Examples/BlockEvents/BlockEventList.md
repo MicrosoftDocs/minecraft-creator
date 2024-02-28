@@ -28,7 +28,7 @@ Below is a list of all the available Block Event Responses within Minecraft: Bed
 |[play_effect](minecraftBlock_play_effect.md)|*not set* | JSON Object| Spawns a particle effect relative to the target position.|
 |[play_sound](minecraftBlock_play_sound.md)|*not set* | JSON Object| Play a sound relative to the target position. |
 |[remove_mob_effect](minecraftBlock_remove_mob_effect.md)|*not set* | JSON Object| Removes mob effect from the target.|
-|[run_command](minecraftBlock_run_command.md)|*not set* | JSON Object| Triggers a slash command or a list of slash commands.|
+|[run_command](minecraftBlock_run_command.md)|*not set* | JSON Object| Trigger a slash command or a series of slash commands set in an array.|
 |[set_block](minecraftBlock_set_block.md)|*not set* | JSON Object| Sets this block to another block type.|
 |[set_block_at_pos](minecraftBlock_set_block_at_pos.md)|*not set* | JSON Object| Sets a block relative to this block to another block type.|
 |[set_block_state](minecraftBlock_set_block_state.md)|*not set* | JSON Object| Sets a block state on this block.|

@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: spreadplayers Command
 description: Description and usage of the spreadplayers command
-ms.service: minecraft-bedrock-edition
 ---
 # `/spreadplayers` Command
 Teleports entities to random locations.

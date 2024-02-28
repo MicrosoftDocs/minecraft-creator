@@ -11,17 +11,15 @@ ms.service: minecraft-bedrock-edition
 `minecraft:food` sets the item as a food component, allowing it to be edible to the player.
 
 >[!IMPORTANT]
-> The `minecraft:food` must have the `minecraft:use_duration` component in order to function properly.
+> The `minecraft:food` must have the `minecraft:use_modifiers` component in order to function properly.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|can_always_eat|false |Boolean | If `true` you can always eat this item (even when not hungry). |
-|effects |*not set* | List| List of Events to fire off when consumed|
-|nutrition | 0 | Integer| The value that is added to the actor's nutrition when the item is used. |
-|on_consume| *not set* | Trigger | Event trigger for when the item is consumed. |
-|saturation_modifier| | Float| Saturation Modifier is used in this formula: (nutrition *saturation_modifier* 2) when applying the saturation buff.|
+|can_always_eat |false |Boolean | If `true` you can always eat this item (even when not hungry). |
+|nutrition |0 |Integer |The value that is added to the actor's nutrition when the item is used. |
+|saturation_modifier|0.6 | Float| Saturation Modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff.|
 |using_converts_to| Not used by default. | JSON object| When used, converts to the item specified by the string in this field. |
 
 See [Custom Item Use Priority](../ItemUsePriority.md) for more information on use behavior.
@@ -45,7 +43,7 @@ See [Custom Item Use Priority](../ItemUsePriority.md) for more information on us
 }
 ```
 
-## Vanilla entities examples
+## Vanilla examples
 
 ### appleEnchanted
 
@@ -83,7 +81,7 @@ See [Custom Item Use Priority](../ItemUsePriority.md) for more information on us
 }
 ```
 
-## Vanilla entities using `minecraft:food`
+## Vanilla items using `minecraft:food`
 
 - [apple](../../../../Source/VanillaBehaviorPack_Snippets/items/apple.md)
 - [appleEnchanted](../../../../Source/VanillaBehaviorPack_Snippets/items/appleEnchanted.md)

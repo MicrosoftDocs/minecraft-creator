@@ -2,9 +2,10 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityBreathableComponent Class
 description: Contents of the @minecraft/server.EntityBreathableComponent class.
-ms.service: minecraft-bedrock-edition
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityBreathableComponent Class
 
@@ -24,7 +25,7 @@ Defines what blocks this entity can breathe in and gives them the ability to suf
 If true, this entity can breathe in air.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -34,7 +35,7 @@ Type: *boolean*
 If true, this entity can breathe in lava.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -44,7 +45,7 @@ Type: *boolean*
 If true, this entity can breathe in solid blocks.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -54,7 +55,7 @@ Type: *boolean*
 If true, this entity can breathe in water.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -64,7 +65,7 @@ Type: *boolean*
 If true, this entity will have visible bubbles while in water.
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -74,7 +75,7 @@ Type: *boolean*
 Time in seconds to recover breath to maximum.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -84,7 +85,7 @@ Type: *number*
 Time in seconds between suffocation damage.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -94,7 +95,7 @@ Type: *number*
 Time in seconds the entity can hold its breath.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 

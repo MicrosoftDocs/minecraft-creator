@@ -2,13 +2,67 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemStack Class
 description: Contents of the @minecraft/server.ItemStack class.
-ms.service: minecraft-bedrock-edition
 ---
 # ItemStack Class
 
 Defines a collection of items.
+
+#### Examples
+##### ***givePlayerIronFireSword.ts***
+```typescript
+// Spawns a bunch of item stacks
+import { ItemComponentTypes, ItemStack, Player } from '@minecraft/server';
+import { MinecraftItemTypes, MinecraftEnchantmentTypes } from '@minecraft/vanilla-data';
+
+function giveFireSword(player: Player) {
+    const ironFireSword = new ItemStack(MinecraftItemTypes.DiamondSword, 1);
+
+    const enchantments = ironFireSword?.getComponent(ItemComponentTypes.Enchantable);
+    if (enchantments) {
+        enchantments.addEnchantment({ type: MinecraftEnchantmentTypes.FireAspect, level: 1 });
+    }
+
+    const inventory = player.getComponent('minecraft:inventory');
+    if (inventory === undefined || inventory.container === undefined) {
+        return;
+    }
+    inventory.container.setItem(0, ironFireSword);
+}
+```
+##### ***givePlayerEquipment.ts***
+```typescript
+// Gives the player some equipment
+import { EquipmentSlot, ItemStack, Player, EntityComponentTypes } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
+
+function giveEquipment(player: Player) {
+    const equipmentCompPlayer = player.getComponent(EntityComponentTypes.Equippable);
+    if (equipmentCompPlayer) {
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Head, new ItemStack(MinecraftItemTypes.GoldenHelmet));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Chest, new ItemStack(MinecraftItemTypes.IronChestplate));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Legs, new ItemStack(MinecraftItemTypes.DiamondLeggings));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Feet, new ItemStack(MinecraftItemTypes.NetheriteBoots));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Mainhand, new ItemStack(MinecraftItemTypes.WoodenSword));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Offhand, new ItemStack(MinecraftItemTypes.Shield));
+    } else {
+        console.warn('No equipment component found on player');
+    }
+}
+```
+##### ***spawnFeatherItem.ts***
+```typescript
+// Spawns a feather at a location
+import { ItemStack, DimensionLocation } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
+
+function spawnFeather(location: DimensionLocation) {
+    const featherItem = new ItemStack(MinecraftItemTypes.Feather, 1);
+    location.dimension.spawnItem(featherItem, location);
+}
+```
 
 ## Properties
 
@@ -23,6 +77,8 @@ Type: *number*
 > This property can't be edited in read-only mode.
 
 > [!WARNING]
+> This property can throw errors when used.
+>
 > Throws if the value is outside the range of 1-255.
 
 ### **isStackable**
@@ -70,6 +126,8 @@ Type: *string*
 > This property can't be edited in read-only mode.
 
 > [!WARNING]
+> This property can throw errors when used.
+>
 > Throws if the length exceeds 255 characters.
 
 ### **type**
@@ -88,20 +146,37 @@ Type: *string*
 
 ## Methods
 - [constructor](#constructor)
+::: moniker range="=minecraft-bedrock-experimental"
+- [clearDynamicProperties](#cleardynamicproperties)
+::: moniker-end
 - [clone](#clone)
 - [getCanDestroy](#getcandestroy)
 - [getCanPlaceOn](#getcanplaceon)
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getDynamicProperty](#getdynamicproperty)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [getDynamicPropertyIds](#getdynamicpropertyids)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [getDynamicPropertyTotalByteCount](#getdynamicpropertytotalbytecount)
+::: moniker-end
 - [getLore](#getlore)
 - [getTags](#gettags)
 - [hasComponent](#hascomponent)
 - [hasTag](#hastag)
 - [isStackableWith](#isstackablewith)
+::: moniker range="=minecraft-bedrock-experimental"
+- [matches](#matches)
+::: moniker-end
 - [setCanDestroy](#setcandestroy)
 - [setCanPlaceOn](#setcanplaceon)
+::: moniker range="=minecraft-bedrock-experimental"
+- [setDynamicProperty](#setdynamicproperty)
+::: moniker-end
 - [setLore](#setlore)
-- [triggerEvent](#triggerevent)
 
 ### **constructor**
 `
@@ -121,7 +196,21 @@ Creates a new instance of a stack of items for use in the world.
 #### **Returns** [*ItemStack*](ItemStack.md)
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if `itemType` is invalid, or if `amount` is outside the range of 1-255.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **clearDynamicProperties**
+`
+clearDynamicProperties(): void
+`
+
+Clears all dynamic properties that have been set on this item stack.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **clone**
 `
@@ -158,25 +247,39 @@ Get the list of block types this item can be placed on in Adventure mode.
 
 ### **getComponent**
 `
-getComponent(componentId: string): ItemComponent | undefined
+getComponent(componentId: T): ItemComponentTypeMap[T] | undefined
 `
 
 Gets a component (that represents additional capabilities) for an item stack.
 
 #### **Parameters**
-- **componentId**: *string*
+- **componentId**: *T*
   
-  The identifier of the component (e.g., 'minecraft:food') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed. If the component is not present on the item stack or doesn't exist, undefined is returned.
+  The identifier of the component (e.g., 'minecraft:food'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.ItemComponentTypes*](../../minecraft/server/ItemComponentTypes.md) enum.
 
-#### **Returns** [*ItemComponent*](ItemComponent.md) | *undefined*
+#### **Returns** *ItemComponentTypeMap[T] | undefined* - Returns the component if it exists on the item stack, otherwise undefined.
 
 #### Examples
 ##### ***durability.ts***
 ```typescript
-// Get the maximum durability of a custom sword item
-const itemStack = new ItemStack("custom:sword");
-const durability = itemStack.getComponent("minecraft:durability") as ItemDurabilityComponent;
-const maxDurability = durability.maxDurability;
+// Gives a player a half-damaged diamond sword
+import { ItemStack, Player, ItemComponentTypes, EntityComponentTypes } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
+
+function giveHurtDiamondSword(player: Player) {
+    const hurtDiamondSword = new ItemStack(MinecraftItemTypes.DiamondSword);
+    const durabilityComponent = hurtDiamondSword.getComponent(ItemComponentTypes.Durability);
+    if (durabilityComponent !== undefined) {
+        durabilityComponent.damage = durabilityComponent.maxDurability / 2;
+    }
+    
+    const inventory = player.getComponent(EntityComponentTypes.Inventory);
+    if (inventory === undefined || inventory.container === undefined) {
+        return;
+    }
+
+    inventory.container.addItem(hurtDiamondSword);
+}
 ```
 
 ### **getComponents**
@@ -187,6 +290,53 @@ getComponents(): ItemComponent[]
 Returns all components that are both present on this item stack and supported by the API.
 
 #### **Returns** [*ItemComponent*](ItemComponent.md)[]
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getDynamicProperty**
+`
+getDynamicProperty(identifier: string): boolean | number | string | Vector3 | undefined
+`
+
+Returns a property value.
+
+#### **Parameters**
+- **identifier**: *string*
+  
+  The property identifier.
+
+#### **Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getDynamicPropertyIds**
+`
+getDynamicPropertyIds(): string[]
+`
+
+Returns the available set of dynamic property identifiers that have been used on this entity.
+
+#### **Returns** *string*[] - A string array of the dynamic properties set on this entity.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getDynamicPropertyTotalByteCount**
+`
+getDynamicPropertyTotalByteCount(): number
+`
+
+Returns the total size, in bytes, of all the dynamic properties that are currently stored for this entity. This includes the size of both the key and the value.  This can be useful for diagnosing performance warning signs - if, for example, an entity has many megabytes of associated dynamic properties, it may be slow to load on various devices.
+
+#### **Returns** *number*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **getLore**
 `
@@ -248,6 +398,28 @@ Returns whether this item stack can be stacked with the given `itemStack`. This 
 
 #### **Returns** *boolean* - True if the Item Stack is stackable with the itemStack passed in.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **matches**
+`
+matches(itemName: string, states?: Record<string, boolean | number | string>): boolean
+`
+
+Version safe way of checking if an item matches.
+
+#### **Parameters**
+- **itemName**: *string*
+  
+  Identifier of the item.
+- **states**?: Record<*string*, *boolean* | *number* | *string*> = `null`
+  
+   Applicable only for blocks. An optional set of states to compare against. If states is not specified, matches checks against the set of types more broadly.
+
+#### **Returns** *boolean* - Returns a boolean whether the specified item matches.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **setCanDestroy**
 `
 setCanDestroy(blockIdentifiers?: string[]): void
@@ -264,14 +436,31 @@ The list of block types this item can break in Adventure mode. The block names a
 > This function can't be called in read-only mode.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if any of the provided block identifiers are invalid.
 
 #### Examples
 ##### ***example.ts***
 ```typescript
+const specialPickaxe = new ItemStack('minecraft:diamond_pickaxe');
+specialPickaxe.setCanDestroy(['minecraft:cobblestone', 'minecraft:obsidian']);
+
 // Creates a diamond pickaxe that can destroy cobblestone and obsidian
-const specialPickaxe = new ItemStack("minecraft:diamond_pickaxe");
-specialPickaxe.setCanDestroy(["minecraft:cobblestone", "minecraft:obsidian"]);
+import { ItemStack, Player } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
+
+function giveRestrictedPickaxe(player: Player) {
+    const specialPickaxe = new ItemStack(MinecraftItemTypes.DiamondPickaxe);
+    specialPickaxe.setCanPlaceOn([MinecraftItemTypes.Cobblestone, MinecraftItemTypes.Obsidian]);
+
+    const inventory = player.getComponent('inventory');
+    if (inventory === undefined || inventory.container === undefined) {
+        return;
+    }
+
+    inventory.container.addItem(specialPickaxe);
+}
 ```
 
 ### **setCanPlaceOn**
@@ -290,15 +479,54 @@ The list of block types this item can be placed on in Adventure mode. This is on
 > This function can't be called in read-only mode.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if any of the provided block identifiers are invalid.
 
 #### Examples
 ##### ***example.ts***
 ```typescript
 // Creates a gold block that can be placed on grass and dirt
-const specialGoldBlock = new ItemStack("minecraft:gold_block");
-specialPickaxe.setCanPlaceOn(["minecraft:grass", "minecraft:dirt"]);
+import { ItemStack, Player, EntityComponentTypes } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
+
+function giveRestrictedGoldBlock(player: Player) {
+    const specialGoldBlock = new ItemStack(MinecraftItemTypes.GoldBlock);
+    specialGoldBlock.setCanPlaceOn([MinecraftItemTypes.Grass, MinecraftItemTypes.Dirt]);
+
+    const inventory = player.getComponent(EntityComponentTypes.Inventory);
+    if (inventory === undefined || inventory.container === undefined) {
+        return;
+    }
+
+    inventory.container.addItem(specialGoldBlock);
+}
 ```
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **setDynamicProperty**
+`
+setDynamicProperty(identifier: string, value?: boolean | number | string | Vector3): void
+`
+
+Sets a specified property to a value. Note: This function only works with non-stackable items.
+
+#### **Parameters**
+- **identifier**: *string*
+  
+  The property identifier.
+- **value**?: *boolean* | *number* | *string* | [*Vector3*](Vector3.md) = `null`
+  
+  Data value of the property to set.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws if the item stack is stackable.
+::: moniker-end
 
 ### **setLore**
 `
@@ -321,137 +549,76 @@ Sets the lore value - a secondary display string - for an ItemStack. The lore li
 #### Examples
 ##### ***diamondAwesomeSword.ts***
 ```typescript
-  const diamondAwesomeSword = new mc.ItemStack(mc.MinecraftItemTypes.diamondSword, 1);
-  let players = mc.world.getAllPlayers();
+import { EntityComponentTypes, ItemStack, Player } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
 
-  diamondAwesomeSword.setLore(["§c§lDiamond Sword of Awesome§r", "+10 coolness", "§p+4 shiny§r"]);
+function giveAwesomeSword(player: Player) {
+    const diamondAwesomeSword = new ItemStack(MinecraftItemTypes.DiamondSword, 1);
+    diamondAwesomeSword.setLore([
+        '§c§lDiamond Sword of Awesome§r',
+         '+10 coolness', '§p+4 shiny§r'
+    ]);
 
-  // hover over/select the item in your inventory to see the lore.
-  const inventory = players[0].getComponent("inventory") as mc.EntityInventoryComponent;
-  inventory.container.setItem(0, diamondAwesomeSword);
+    // hover over/select the item in your inventory to see the lore.
+    const inventory = player.getComponent(EntityComponentTypes.Inventory);
+    if (inventory === undefined || inventory.container === undefined) {
+        return;
+    }
 
-  let item = inventory.container.getItem(0);
-
-  if (item) {
-    let enchants = item.getComponent("minecraft:enchantments") as mc.ItemEnchantsComponent;
-    let knockbackEnchant = new mc.Enchantment("knockback", 3);
-    enchants.enchantments.addEnchantment(knockbackEnchant);
-  }
+    inventory.container.setItem(0, diamondAwesomeSword);
+}
 ```
-##### ***multilineLore.ts***
-```typescript
-// Set the lore of an item to multiple lines of text
-const itemStack = new ItemStack("minecraft:diamond_sword");
-itemStack.setLore(["Line 1", "Line 2", "Line 3"]);
-```
-
-### **triggerEvent**
-`
-triggerEvent(eventName: string): void
-`
-
-Triggers an item type event. For custom items, a number of events are defined in an items' definition for key item behaviors.
-
-#### **Parameters**
-- **eventName**: *string*
-  
-  Name of the item type event to trigger. If a namespace is not specified, minecraft: is assumed.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
 
 #### Examples
-##### ***diamondAwesomeSword.ts***
+##### ***givePlayerIronFireSword.ts***
 ```typescript
-  const diamondAwesomeSword = new mc.ItemStack(mc.MinecraftItemTypes.diamondSword, 1);
-  let players = mc.world.getAllPlayers();
+// Spawns a bunch of item stacks
+import { ItemComponentTypes, ItemStack, Player } from '@minecraft/server';
+import { MinecraftItemTypes, MinecraftEnchantmentTypes } from '@minecraft/vanilla-data';
 
-  diamondAwesomeSword.setLore(["§c§lDiamond Sword of Awesome§r", "+10 coolness", "§p+4 shiny§r"]);
+function giveFireSword(player: Player) {
+    const ironFireSword = new ItemStack(MinecraftItemTypes.DiamondSword, 1);
 
-  // hover over/select the item in your inventory to see the lore.
-  const inventory = players[0].getComponent("inventory") as mc.EntityInventoryComponent;
-  inventory.container.setItem(0, diamondAwesomeSword);
+    const enchantments = ironFireSword?.getComponent(ItemComponentTypes.Enchantable);
+    if (enchantments) {
+        enchantments.addEnchantment({ type: MinecraftEnchantmentTypes.FireAspect, level: 1 });
+    }
 
-  let item = inventory.container.getItem(0);
-
-  if (item) {
-    let enchants = item.getComponent("minecraft:enchantments") as mc.ItemEnchantsComponent;
-    let knockbackEnchant = new mc.Enchantment("knockback", 3);
-    enchants.enchantments.addEnchantment(knockbackEnchant);
-  }
+    const inventory = player.getComponent('minecraft:inventory');
+    if (inventory === undefined || inventory.container === undefined) {
+        return;
+    }
+    inventory.container.setItem(0, ironFireSword);
+}
 ```
 ##### ***givePlayerEquipment.ts***
 ```typescript
-  let players = mc.world.getAllPlayers();
+// Gives the player some equipment
+import { EquipmentSlot, ItemStack, Player, EntityComponentTypes } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
 
-  const armorStandLoc = { x: targetLocation.x, y: targetLocation.y, z: targetLocation.z + 4 };
-  let armorStand = players[0].dimension.spawnEntity("armor_stand", armorStandLoc);
-
-  const equipmentCompPlayer = players[0].getComponent("equipment_inventory") as mc.EntityEquipmentInventoryComponent;
-  equipmentCompPlayer.setEquipment(mc.EquipmentSlot.head, new mc.ItemStack("minecraft:golden_helmet"));
-  equipmentCompPlayer.setEquipment(mc.EquipmentSlot.chest, new mc.ItemStack("minecraft:iron_chestplate"));
-  equipmentCompPlayer.setEquipment(mc.EquipmentSlot.legs, new mc.ItemStack("minecraft:diamond_leggings"));
-  equipmentCompPlayer.setEquipment(mc.EquipmentSlot.feet, new mc.ItemStack("minecraft:netherite_boots"));
-  equipmentCompPlayer.setEquipment(mc.EquipmentSlot.mainhand, new mc.ItemStack("minecraft:wooden_sword"));
-  equipmentCompPlayer.setEquipment(mc.EquipmentSlot.offhand, new mc.ItemStack("minecraft:shield"));
-
-  const equipmentCompArmorStand = armorStand.getComponent(
-    "equipment_inventory"
-  ) as mc.EntityEquipmentInventoryComponent;
-  equipmentCompArmorStand.setEquipment(mc.EquipmentSlot.head, new mc.ItemStack("minecraft:golden_helmet"));
-  equipmentCompArmorStand.setEquipment(mc.EquipmentSlot.chest, new mc.ItemStack("minecraft:iron_chestplate"));
-  equipmentCompArmorStand.setEquipment(mc.EquipmentSlot.legs, new mc.ItemStack("minecraft:diamond_leggings"));
-  equipmentCompArmorStand.setEquipment(mc.EquipmentSlot.feet, new mc.ItemStack("minecraft:netherite_boots"));
-  equipmentCompArmorStand.setEquipment(mc.EquipmentSlot.mainhand, new mc.ItemStack("minecraft:wooden_sword"));
-  equipmentCompArmorStand.setEquipment(mc.EquipmentSlot.offhand, new mc.ItemStack("minecraft:shield"));
+function giveEquipment(player: Player) {
+    const equipmentCompPlayer = player.getComponent(EntityComponentTypes.Equippable);
+    if (equipmentCompPlayer) {
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Head, new ItemStack(MinecraftItemTypes.GoldenHelmet));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Chest, new ItemStack(MinecraftItemTypes.IronChestplate));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Legs, new ItemStack(MinecraftItemTypes.DiamondLeggings));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Feet, new ItemStack(MinecraftItemTypes.NetheriteBoots));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Mainhand, new ItemStack(MinecraftItemTypes.WoodenSword));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Offhand, new ItemStack(MinecraftItemTypes.Shield));
+    } else {
+        console.warn('No equipment component found on player');
+    }
+}
 ```
-##### ***ironFireSword.ts***
+##### ***spawnFeatherItem.ts***
 ```typescript
-  const ironFireSword = new mc.ItemStack(mc.MinecraftItemTypes.diamondSword, 1);
-  let players = mc.world.getAllPlayers();
+// Spawns a feather at a location
+import { ItemStack, DimensionLocation } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
 
-  let fireAspectEnchant = new mc.Enchantment("fire_aspect", 3);
-  let enchants = ironFireSword.getComponent("minecraft:enchantments") as mc.ItemEnchantsComponent;
-  let addedFire = enchants.enchantments.addEnchantment(fireAspectEnchant);
-
-  if (!addedFire) {
-    log("Could not add fire aspect.");
-    return -1;
-  }
-
-  const inventory = players[0].getComponent("inventory") as mc.EntityInventoryComponent;
-  inventory.container.setItem(0, ironFireSword);
-
-  // hover over/select the item in your inventory to see the lore.
-```
-##### ***itemStacks.ts***
-```typescript
-const overworld = mc.world.getDimension('overworld');
-
-const oneItemLoc = { x: targetLocation.x + targetLocation.y + 3, y: 2, z: targetLocation.z + 1 };
-const fiveItemsLoc = { x: targetLocation.x + 1, y: targetLocation.y + 2, z: targetLocation.z + 1 };
-const diamondPickaxeLoc = { x: targetLocation.x + 2, y: targetLocation.y + 2, z: targetLocation.z + 4 };
-
-const oneEmerald = new mc.ItemStack(mc.MinecraftItemTypes.Emerald, 1);
-const onePickaxe = new mc.ItemStack(mc.MinecraftItemTypes.DiamondPickaxe, 1);
-const fiveEmeralds = new mc.ItemStack(mc.MinecraftItemTypes.Emerald, 5);
-
-log(`Spawning an emerald at (${oneItemLoc.x}, ${oneItemLoc.y}, ${oneItemLoc.z})`);
-overworld.spawnItem(oneEmerald, oneItemLoc);
-
-log(`Spawning five emeralds at (${fiveItemsLoc.x}, ${fiveItemsLoc.y}, ${fiveItemsLoc.z})`);
-overworld.spawnItem(fiveEmeralds, fiveItemsLoc);
-
-log(`Spawning a diamond pickaxe at (${diamondPickaxeLoc.x}, ${diamondPickaxeLoc.y}, ${diamondPickaxeLoc.z})`);
-overworld.spawnItem(onePickaxe, diamondPickaxeLoc);
-```
-##### ***spawnItem.ts***
-```typescript
-const featherItem = new mc.ItemStack(mc.MinecraftItemTypes.Feather, 1);
-
-overworld.spawnItem(featherItem, targetLocation);
-log(`New feather created at ${targetLocation.x}, ${targetLocation.y}, ${targetLocation.z}!`);
+function spawnFeather(location: DimensionLocation) {
+    const featherItem = new ItemStack(MinecraftItemTypes.Feather, 1);
+    location.dimension.spawnItem(featherItem, location);
+}
 ```

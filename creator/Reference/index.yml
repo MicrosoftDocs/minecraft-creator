@@ -6,7 +6,7 @@ summary: "Landing page containing all JSON documentation for Minecraft: Bedrock 
 metadata:
   title: JSON Reference Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: "Landing page containing all JSON documentation for Minecraft: Bedrock Edition." # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: minecraft-bedrock-edition
   ms.topic: landing-page # Required
   author: mammerla #Required; your GitHub user alias, with correct capitalization.
   ms.author: mikeam #Required; microsoft alias of author; team alias.
@@ -111,17 +111,6 @@ landingContent:
         links:
           - text: Item Components List
             url: Content/itemreference/Examples/ItemComponentList.md
-  # Card (comment to space cards)
-  - title: Materials
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Materials - Getting Started
-            url: Content/materialsreference/Examples/MaterialsGettingStarted.md
-      - linkListType: reference
-        links:
-          - text: Material reference - JSON Shaders and Inputs
-            url: Content/materialsreference/Examples/RenderDragonShaderList.md
   # Card (optional)
   - title: Molang
     linkLists:

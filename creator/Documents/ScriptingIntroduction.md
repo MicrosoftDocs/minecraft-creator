@@ -1,7 +1,7 @@
 ---
 author: iconicNurdle
 ms.author: mikeam
-title: Introduction to Scripting in Minecraft
+title: Introduction to Scripting
 description: "In introducion to writing and deploying scripts in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
 ---
@@ -82,7 +82,7 @@ To get there, we are going to start with the Attack Cow behavior pack, add the f
           "description": "My Second Add-On!",
             "type": "data",
             "uuid": "PUT A NEW UUID HERE",
-            "version": [1, 0, 0],
+            "version": [1, 0, 0]
         },
         {
           "description": "Test Scripting",
@@ -101,7 +101,7 @@ To get there, we are going to start with the Attack Cow behavior pack, add the f
   }
 ```
 
-4. Replace the three instances of **`PUT A NEW UUID HERE`** with new UUIDs, just like you did in the [Introduction to Behavior Packs](BehaviorPack.md) tutorial.
+4. Replace the three instances of **`PUT A NEW UUID HERE`** with new [UUIDs](https://www.uuidgenerator.net/), just like you did in the [Introduction to Behavior Packs](BehaviorPack.md) tutorial.
 5. Save your edited manifest.json file.
 6. In the **behavior_pack_sample** folder, create a folder and name it **scripts** and open it.
 7. Create a file inside there and name it **main.js**.
@@ -525,7 +525,7 @@ You can use what you learn about JavaScript to change these scripts and decide w
 
 ### Advanced Topics
 
-When you're more comfortable with JavaScript, you can research the more advanced things you will need for Typescript, GameTest, and scripting in general:
+When you're more comfortable with JavaScript, you can research the more advanced things you will need for Typescript and scripting in general:
 
 >- npm ecosystem
 >- node.js
@@ -548,4 +548,4 @@ You will also learn how to take advantage of all of the goodness of TypeScript a
 >- Static typing, which helps prevent errors in the long run and makes it much easier to update to new versions of the API when you want to use new features (worth it)
 >- Easier debugging due to errors surfacing during compile time, as opposed to runtime (a real time saver) 
 
-These may just sound like abstract coding terms, but trust me, the benefits of going through our TypeScript setup will make your scripting experience go much more smoothly once you begin to expand your knowledge and write more complex scripts. Also, all of our samples are written in TypeScript, so you will have lots of examples to test out! Please give it a go once you feel you’ve gotten the basics down from this tutorial... you will not regret it! 
+These may just sound like abstract coding terms, but trust me, the benefits of going through our TypeScript setup will make your scripting experience go much more smoothly once you begin to expand your knowledge and write more complex scripts. Also, all of our samples are written in TypeScript, so you will have lots of examples to test out! Please give it a go once you feel you've gotten the basics down from this tutorial... you will not regret it! 

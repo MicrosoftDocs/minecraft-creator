@@ -2,9 +2,10 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityTypes Class
 description: Contents of the @minecraft/server.EntityTypes class.
-ms.service: minecraft-bedrock-edition
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityTypes Class
 
@@ -19,7 +20,7 @@ Used for accessing all entity types currently available for use within the world
 
 ### **get**
 `
-static "get"(identifier: string): EntityType
+static "get"(identifier: string): EntityType | undefined
 `
 
 Retrieves an entity type using a string-based identifier.
@@ -27,13 +28,13 @@ Retrieves an entity type using a string-based identifier.
 #### **Parameters**
 - **identifier**: *string*
 
-#### **Returns** [*EntityType*](EntityType.md)
+#### **Returns** [*EntityType*](EntityType.md) | *undefined*
 
 ### **getAll**
 `
-static getAll(): EntityTypeIterator
+static getAll(): EntityType[]
 `
 
 Retrieves an iterator of all entity types within this world.
 
-#### **Returns** [*EntityTypeIterator*](EntityTypeIterator.md)
+#### **Returns** [*EntityType*](EntityType.md)[]

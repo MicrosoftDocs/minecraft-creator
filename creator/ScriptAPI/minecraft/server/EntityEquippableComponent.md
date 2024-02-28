@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityEquippableComponent Class
 description: Contents of the @minecraft/server.EntityEquippableComponent class.
-ms.service: minecraft-bedrock-edition
 ---
 # EntityEquippableComponent Class
 
@@ -13,9 +13,46 @@ ms.service: minecraft-bedrock-edition
 
 Provides access to a mob's equipment slots. This component exists for all mob entities.
 
+#### Examples
+##### ***givePlayerElytra.ts***
+```typescript
+// Gives the player Elytra
+import { EquipmentSlot, ItemStack, Player, EntityComponentTypes } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
+
+function giveEquipment(player: Player) {
+    const equipmentCompPlayer = player.getComponent(EntityComponentTypes.Equippable);
+    if (equipmentCompPlayer) {
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Chest, new ItemStack(MinecraftItemTypes.Elytra));
+    }
+}
+```
+##### ***givePlayerEquipment.ts***
+```typescript
+// Gives the player some equipment
+import { EquipmentSlot, ItemStack, Player, EntityComponentTypes } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
+
+function giveEquipment(player: Player) {
+    const equipmentCompPlayer = player.getComponent(EntityComponentTypes.Equippable);
+    if (equipmentCompPlayer) {
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Head, new ItemStack(MinecraftItemTypes.GoldenHelmet));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Chest, new ItemStack(MinecraftItemTypes.IronChestplate));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Legs, new ItemStack(MinecraftItemTypes.DiamondLeggings));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Feet, new ItemStack(MinecraftItemTypes.NetheriteBoots));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Mainhand, new ItemStack(MinecraftItemTypes.WoodenSword));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Offhand, new ItemStack(MinecraftItemTypes.Shield));
+    } else {
+        console.warn('No equipment component found on player');
+    }
+}
+```
+
 ## Methods
 - [getEquipment](#getequipment)
+::: moniker range="=minecraft-bedrock-experimental"
 - [getEquipmentSlot](#getequipmentslot)
+::: moniker-end
 - [setEquipment](#setequipment)
 
 ### **getEquipment**
@@ -32,12 +69,10 @@ Gets the equipped item for the given EquipmentSlot.
 
 #### **Returns** [*ItemStack*](ItemStack.md) | *undefined* - Returns the item equipped to the given EquipmentSlot. If empty, returns undefined.
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 > [!WARNING]
 > This function can throw errors.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getEquipmentSlot**
 `
 getEquipmentSlot(equipmentSlot: EquipmentSlot): ContainerSlot
@@ -55,11 +90,9 @@ Gets the ContainerSlot corresponding to the given EquipmentSlot.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end
 
 ### **setEquipment**
 `
@@ -94,35 +127,34 @@ Type: *string*
 #### Examples
 ##### ***givePlayerElytra.ts***
 ```typescript
-  let players = mc.world.getAllPlayers();
+// Gives the player Elytra
+import { EquipmentSlot, ItemStack, Player, EntityComponentTypes } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
 
-  const equipment = players[0].getComponent("equipment_inventory") as mc.EntityEquipmentInventoryComponent;
-  equipment.setEquipment(mc.EquipmentSlot.chest, new mc.ItemStack("minecraft:elytra"));
-
-  log("Player given Elytra");
+function giveEquipment(player: Player) {
+    const equipmentCompPlayer = player.getComponent(EntityComponentTypes.Equippable);
+    if (equipmentCompPlayer) {
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Chest, new ItemStack(MinecraftItemTypes.Elytra));
+    }
+}
 ```
 ##### ***givePlayerEquipment.ts***
 ```typescript
-  let players = mc.world.getAllPlayers();
+// Gives the player some equipment
+import { EquipmentSlot, ItemStack, Player, EntityComponentTypes } from '@minecraft/server';
+import { MinecraftItemTypes } from '@minecraft/vanilla-data';
 
-  const armorStandLoc = { x: targetLocation.x, y: targetLocation.y, z: targetLocation.z + 4 };
-  let armorStand = players[0].dimension.spawnEntity("armor_stand", armorStandLoc);
-
-  const equipmentCompPlayer = players[0].getComponent("equipment_inventory") as mc.EntityEquipmentInventoryComponent;
-  equipmentCompPlayer.setEquipment(mc.EquipmentSlot.head, new mc.ItemStack("minecraft:golden_helmet"));
-  equipmentCompPlayer.setEquipment(mc.EquipmentSlot.chest, new mc.ItemStack("minecraft:iron_chestplate"));
-  equipmentCompPlayer.setEquipment(mc.EquipmentSlot.legs, new mc.ItemStack("minecraft:diamond_leggings"));
-  equipmentCompPlayer.setEquipment(mc.EquipmentSlot.feet, new mc.ItemStack("minecraft:netherite_boots"));
-  equipmentCompPlayer.setEquipment(mc.EquipmentSlot.mainhand, new mc.ItemStack("minecraft:wooden_sword"));
-  equipmentCompPlayer.setEquipment(mc.EquipmentSlot.offhand, new mc.ItemStack("minecraft:shield"));
-
-  const equipmentCompArmorStand = armorStand.getComponent(
-    "equipment_inventory"
-  ) as mc.EntityEquipmentInventoryComponent;
-  equipmentCompArmorStand.setEquipment(mc.EquipmentSlot.head, new mc.ItemStack("minecraft:golden_helmet"));
-  equipmentCompArmorStand.setEquipment(mc.EquipmentSlot.chest, new mc.ItemStack("minecraft:iron_chestplate"));
-  equipmentCompArmorStand.setEquipment(mc.EquipmentSlot.legs, new mc.ItemStack("minecraft:diamond_leggings"));
-  equipmentCompArmorStand.setEquipment(mc.EquipmentSlot.feet, new mc.ItemStack("minecraft:netherite_boots"));
-  equipmentCompArmorStand.setEquipment(mc.EquipmentSlot.mainhand, new mc.ItemStack("minecraft:wooden_sword"));
-  equipmentCompArmorStand.setEquipment(mc.EquipmentSlot.offhand, new mc.ItemStack("minecraft:shield"));
+function giveEquipment(player: Player) {
+    const equipmentCompPlayer = player.getComponent(EntityComponentTypes.Equippable);
+    if (equipmentCompPlayer) {
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Head, new ItemStack(MinecraftItemTypes.GoldenHelmet));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Chest, new ItemStack(MinecraftItemTypes.IronChestplate));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Legs, new ItemStack(MinecraftItemTypes.DiamondLeggings));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Feet, new ItemStack(MinecraftItemTypes.NetheriteBoots));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Mainhand, new ItemStack(MinecraftItemTypes.WoodenSword));
+        equipmentCompPlayer.setEquipment(EquipmentSlot.Offhand, new ItemStack(MinecraftItemTypes.Shield));
+    } else {
+        console.warn('No equipment component found on player');
+    }
+}
 ```

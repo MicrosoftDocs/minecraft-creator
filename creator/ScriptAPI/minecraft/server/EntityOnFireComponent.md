@@ -2,9 +2,10 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityOnFireComponent Class
 description: Contents of the @minecraft/server.EntityOnFireComponent class.
-ms.service: minecraft-bedrock-edition
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityOnFireComponent Class
 
@@ -15,6 +16,26 @@ ms.service: minecraft-bedrock-edition
 - [*EntityComponent*](EntityComponent.md)
 
 When present on an entity, this entity is on fire.
+
+#### Examples
+##### ***setEntityOnFire.ts***
+```typescript
+import { world, Entity, EntityComponentTypes, system } from "@minecraft/server";
+
+function setAblaze(entity: Entity) {
+    entity.setOnFire(20, true);
+
+    system.runTimeout(() => {
+        const onfire = entity.getComponent(EntityComponentTypes.OnFire);
+        if (onfire) {
+            world.sendMessage(`${onfire.onFireTicksRemaining} fire ticks remaining, extinguishing the entity.`);
+        }
+        // This will extinguish the entity
+        entity.extinguishFire(true);
+    }, 30); // Run in 30 ticks or ~1.5 seconds
+    
+}
+```
 
 ## Properties
 
@@ -33,30 +54,21 @@ Type: *number*
 Type: *string*
 
 #### Examples
-##### ***setOnFire.ts***
+##### ***setEntityOnFire.ts***
 ```typescript
-  const skelly = overworld.spawnEntity("minecraft:skeleton", targetLocation);
+import { world, Entity, EntityComponentTypes, system } from "@minecraft/server";
 
-  skelly.setOnFire(20, true);
+function setAblaze(entity: Entity) {
+    entity.setOnFire(20, true);
 
-  mc.system.runTimeout(() => {
-    let onfire = skelly.getComponent("onfire") as mc.EntityOnFireComponent;
-    log(onfire.onFireTicksRemaining + " fire ticks remaining.");
-
-    skelly.extinguishFire(true);
-    log("Never mind. Fire extinguished.");
-  }, 20);
-```
-##### ***teleport.ts***
-```typescript
-  const cow = overworld.spawnEntity("minecraft:cow", targetLocation);
-
-  mc.system.runTimeout(() => {
-    cow.teleport(
-      { x: targetLocation.x + 2, y: targetLocation.y + 2, z: targetLocation.z + 2 },
-      {
-        facingLocation: targetLocation,
-      }
-    );
-  }, 20);
+    system.runTimeout(() => {
+        const onfire = entity.getComponent(EntityComponentTypes.OnFire);
+        if (onfire) {
+            world.sendMessage(`${onfire.onFireTicksRemaining} fire ticks remaining, extinguishing the entity.`);
+        }
+        // This will extinguish the entity
+        entity.extinguishFire(true);
+    }, 30); // Run in 30 ticks or ~1.5 seconds
+    
+}
 ```

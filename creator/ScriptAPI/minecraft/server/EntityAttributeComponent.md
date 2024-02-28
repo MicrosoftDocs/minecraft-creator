@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityAttributeComponent Class
 description: Contents of the @minecraft/server.EntityAttributeComponent class.
-ms.service: minecraft-bedrock-edition
 ---
 # EntityAttributeComponent Class
 
@@ -27,7 +27,7 @@ This is a base abstract class for any entity component that centers around a num
 Current value of this attribute for this instance.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -37,7 +37,7 @@ Type: *number*
 Returns the default defined value for this attribute.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -47,7 +47,7 @@ Type: *number*
 Returns the effective max of this attribute given any other ambient components or factors.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 
@@ -57,7 +57,7 @@ Type: *number*
 Returns the effective min of this attribute given any other ambient components or factors.
 
 Type: *number*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 

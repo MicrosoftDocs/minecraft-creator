@@ -2,8 +2,8 @@
 author: JDHeaden
 ms.author: v-jillheaden
 title: Minecraft Bedrock Editor Tutorial
-ms.prod: gaming
 description: "A step-by-step guide for using Minecraft Editor"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Minecraft Editor Tutorial
@@ -13,6 +13,7 @@ This tutorial is intended to guide you through using Minecraft Bedrock Editor to
 > [!IMPORTANT]
 > The Editor is in early preview and we're working to add more capabilities.
 > It will change significantly as we get feedback from creators like you.
+> Also, the images of Editor in this document might vary a little from what you have on your screen.
 
 --------
 

@@ -2,14 +2,13 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.PlayerInteractWithBlockAfterEventSignal Class
 description: Contents of the @minecraft/server.PlayerInteractWithBlockAfterEventSignal class.
 ---
 # PlayerInteractWithBlockAfterEventSignal Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
+Manages callbacks that are connected to after a player interacts with a block.
 
 ## Methods
 - [subscribe](#subscribe)
@@ -19,6 +18,8 @@ description: Contents of the @minecraft/server.PlayerInteractWithBlockAfterEvent
 `
 subscribe(callback: (arg: PlayerInteractWithBlockAfterEvent) => void): (arg: PlayerInteractWithBlockAfterEvent) => void
 `
+
+Adds a callback that will be called after a player interacts with a block.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerInteractWithBlockAfterEvent*](PlayerInteractWithBlockAfterEvent.md)) => *void*
@@ -32,6 +33,8 @@ subscribe(callback: (arg: PlayerInteractWithBlockAfterEvent) => void): (arg: Pla
 `
 unsubscribe(callback: (arg: PlayerInteractWithBlockAfterEvent) => void): void
 `
+
+Removes a callback from being called after a player interacts with a block.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerInteractWithBlockAfterEvent*](PlayerInteractWithBlockAfterEvent.md)) => *void*

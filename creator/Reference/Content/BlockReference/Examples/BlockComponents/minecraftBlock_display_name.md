@@ -19,3 +19,5 @@ This component is specified as a `Localization String`. If this component is omi
 ```json
 "minecraft:display_name": "customBlock"
 ```
+
+[Click here for a list of existing vanilla block names.](../../../AddonsReference/Examples/AddonBlocks.md#list-of-blocks)

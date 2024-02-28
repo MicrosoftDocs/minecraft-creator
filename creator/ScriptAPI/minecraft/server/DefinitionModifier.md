@@ -2,88 +2,38 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-title: minecraft/server.DefinitionModifier Class
-description: Contents of the @minecraft/server.DefinitionModifier class.
 ms.service: minecraft-bedrock-edition
+title: minecraft/server.DefinitionModifier Interface
+description: Contents of the @minecraft/server.DefinitionModifier class.
 ---
-# DefinitionModifier Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
+# DefinitionModifier Interface
 
 Contains a set of updates to the component definition state of an entity.
 
-## Methods
-- [constructor](#constructor)
-- [getComponentGroupsToAdd](#getcomponentgroupstoadd)
-- [getComponentGroupsToRemove](#getcomponentgroupstoremove)
-- [getTriggers](#gettriggers)
-- [setComponentGroupsToAdd](#setcomponentgroupstoadd)
-- [setComponentGroupsToRemove](#setcomponentgroupstoremove)
-- [setTriggers](#settriggers)
+## Properties
 
-### **constructor**
-`
-new DefinitionModifier()
-`
-
-Constructor for a new DefinitionModifier.
-
-#### **Returns** [*DefinitionModifier*](DefinitionModifier.md)
-
-### **getComponentGroupsToAdd**
-`
-getComponentGroupsToAdd(): string[]
-`
+### **addedComponentGroups**
+`addedComponentGroups: string[];`
 
 Retrieves the list of component groups that will be added via this definition modification.
 
-#### **Returns** *string*[]
+Type: *string*[]
 
-### **getComponentGroupsToRemove**
-`
-getComponentGroupsToRemove(): string[]
-`
+### **removedComponentGroups**
+`removedComponentGroups: string[];`
 
-Retrieves the list of component groups that will be removed via this definition modification.
+The list of component groups that will be removed via this definition modification.
 
-#### **Returns** *string*[]
+Type: *string*[]
 
-### **getTriggers**
-`
-getTriggers(): Trigger[]
-`
+::: moniker range="=minecraft-bedrock-experimental"
+### **triggers**
+`triggers: Trigger[];`
 
-Retrieves the list of entity definition events that will be fired via this update.
+The list of entity definition events that will be fired via this update.
 
-#### **Returns** [*Trigger*](Trigger.md)[]
+Type: [*Trigger*](Trigger.md)[]
 
-### **setComponentGroupsToAdd**
-`
-setComponentGroupsToAdd(newGroups: string[]): void
-`
-
-Updates the list of component groups that will be added via this definition modification.
-
-#### **Parameters**
-- **newGroups**: *string*[]
-
-### **setComponentGroupsToRemove**
-`
-setComponentGroupsToRemove(removedGroups: string[]): void
-`
-
-Updates the list of component groups that will be removed via this definition modification.
-
-#### **Parameters**
-- **removedGroups**: *string*[]
-
-### **setTriggers**
-`
-setTriggers(newTriggers: Trigger[]): void
-`
-
-Updates the list of entity definition events that will be fired via this update.
-
-#### **Parameters**
-- **newTriggers**: [*Trigger*](Trigger.md)[]
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end

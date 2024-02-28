@@ -2,13 +2,20 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-editor.IMenu Interface
 description: Contents of the @minecraft/server-editor.IMenu class.
-ms.service: minecraft-bedrock-edition
 ---
 # IMenu Interface
 
 ## Properties
+
+### **checked**
+`checked: boolean;`
+
+If defined, the menu will show a checked or unchecked checkbox.
+
+Type: *boolean*
 
 ### **id**
 `read-only id: string;`
@@ -26,7 +33,6 @@ Type: *IMenu[]*
 
 ## Methods
 - [addItem](#additem)
-- [addSeparator](#addseparator)
 - [dispose](#dispose)
 - [hide](#hide)
 - [replaceAction](#replaceaction)
@@ -46,15 +52,6 @@ Create a child menu on this menu.
 - **action**: *RegisteredAction<NoArgsAction>*
   
   The action to associate with the menu item. Only a subset of actions are supported
-
-#### **Returns** *IMenu*
-
-### **addSeparator**
-`
-addSeparator(): IMenu
-`
-
-Create a separator
 
 #### **Returns** *IMenu*
 

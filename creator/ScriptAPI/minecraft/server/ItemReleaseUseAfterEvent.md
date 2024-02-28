@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemReleaseUseAfterEvent Class
 description: Contents of the @minecraft/server.ItemReleaseUseAfterEvent class.
-ms.service: minecraft-bedrock-edition
 ---
 # ItemReleaseUseAfterEvent Class
 
@@ -13,7 +13,7 @@ Contains information related to a chargeable item when the player has finished u
 ## Properties
 
 ### **itemStack**
-`read-only itemStack: ItemStack;`
+`read-only itemStack?: ItemStack;`
 
 Returns the item stack that triggered this item event.
 

@@ -2,13 +2,39 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-ui.ActionFormData Class
 description: Contents of the @minecraft/server-ui.ActionFormData class.
-ms.service: minecraft-bedrock-edition
 ---
 # ActionFormData Class
 
 Builds a simple player form with buttons that let the player take action.
+
+#### Examples
+##### ***actionFormAskFavoriteMonth.ts***
+```typescript
+import { Player } from '@minecraft/server';
+import { ActionFormData, ActionFormResponse } from '@minecraft/server-ui';
+
+function askFavoriteMonth(player: Player) {
+    const form = new ActionFormData()
+        .title('Months')
+        .body('Choose your favorite month!')
+        .button('January')
+        .button('February')
+        .button('March')
+        .button('April')
+        .button('May');
+
+    form.show(player).then((response: ActionFormResponse) => {
+        if (response.selection === 3) {
+            player.sendMessage('I like April too!');
+        } else {
+            player.sendMessage('Nah, April is the best.');
+        }
+    });
+}
+```
 
 ## Methods
 - [constructor](#constructor)
@@ -84,49 +110,27 @@ This builder method sets the title for the modal dialog.
 #### **Returns** [*ActionFormData*](ActionFormData.md)
 
 #### Examples
-##### ***showActionForm.ts***
+##### ***actionFormAskFavoriteMonth.ts***
 ```typescript
-  const playerList = mc.world.getPlayers();
+import { Player } from '@minecraft/server';
+import { ActionFormData, ActionFormResponse } from '@minecraft/server-ui';
 
-  if (playerList.length >= 1) {
-    const form = new mcui.ActionFormData()
-      .title("Test Title")
-      .body("Body text here!")
-      .button("btn 1")
-      .button("btn 2")
-      .button("btn 3")
-      .button("btn 4")
-      .button("btn 5");
+function askFavoriteMonth(player: Player) {
+    const form = new ActionFormData()
+        .title('Months')
+        .body('Choose your favorite month!')
+        .button('January')
+        .button('February')
+        .button('March')
+        .button('April')
+        .button('May');
 
-    const result = await form.show(playerList[0]);
-
-    if (result.canceled) {
-      log("Player exited out of the dialog. Note that if the chat window is up, dialogs are automatically canceled.");
-      return -1;
-    } else {
-      log("Your result was: " + result.selection);
-    }
-  }
-```
-##### ***showFavoriteMonth.ts***
-```typescript
-  const players = mc.world.getPlayers();
-
-  if (players.length >= 1) {
-    const form = new mcui.ActionFormData()
-      .title("Months")
-      .body("Choose your favorite month!")
-      .button("January")
-      .button("February")
-      .button("March")
-      .button("April")
-      .button("May");
-
-    form.show(players[0]).then((response: mcui.ActionFormResponse) => {
-      if (response.selection === 3) {
-        log("I like April too!");
-        return -1;
-      }
+    form.show(player).then((response: ActionFormResponse) => {
+        if (response.selection === 3) {
+            player.sendMessage('I like April too!');
+        } else {
+            player.sendMessage('Nah, April is the best.');
+        }
     });
-  }
+}
 ```

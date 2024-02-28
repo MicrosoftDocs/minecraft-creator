@@ -14,7 +14,7 @@ These properties are part of the Block Definition and Block Properties that are 
 
 ```json
 {
-  "format_version": "1.20.30",
+  "format_version": "1.20.50",
   "minecraft:block": {
     "description": {
       "identifier": "design:lavenderstone"
@@ -32,7 +32,6 @@ These properties are part of the Block Definition and Block Properties that are 
     }
   }
 }
-
 ```
 
 |Name |Default Value  |Type  |Description  |

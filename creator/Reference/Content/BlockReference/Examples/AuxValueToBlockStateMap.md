@@ -666,14 +666,14 @@ Block Name |Aux Value |Block States|
 |minecraft:chemistry_table| 13| ["chemistry_table_type" = "lab_table", "direction" = 1]|
 |minecraft:chemistry_table| 14| ["chemistry_table_type" = "lab_table", "direction" = 2]|
 |minecraft:chemistry_table| 15| ["chemistry_table_type" = "lab_table", "direction" = 3]|
-|minecraft:chest| 0| ["facing_direction" = 0]|
-|minecraft:chest| 1| ["facing_direction" = 1]|
-|minecraft:chest| 2| ["facing_direction" = 2]|
-|minecraft:chest| 3| ["facing_direction" = 3]|
-|minecraft:chest| 4| ["facing_direction" = 4]|
-|minecraft:chest| 5| ["facing_direction" = 5]|
-|minecraft:chest| 6| ["facing_direction" = 6]|
-|minecraft:chest| 7| ["facing_direction" = 7]|
+|minecraft:chest| 0| ["cardinal_direction" = "north"]|
+|minecraft:chest| 1| ["cardinal_direction" = "north"]|
+|minecraft:chest| 2| ["cardinal_direction" = "north"]|
+|minecraft:chest| 3| ["cardinal_direction" = "south"]|
+|minecraft:chest| 4| ["cardinal_direction" = "west"]|
+|minecraft:chest| 5| ["cardinal_direction" = "east"]|
+|minecraft:chest| 6| ["cardinal_direction" = "north"]|
+|minecraft:chest| 7| ["cardinal_direction" = "north"]|
 |minecraft:chorus_flower| 0| ["age" = 0]|
 |minecraft:chorus_flower| 1| ["age" = 1]|
 |minecraft:chorus_flower| 2| ["age" = 2]|
@@ -1411,14 +1411,14 @@ Block Name |Aux Value |Block States|
 |minecraft:end_rod| 5| ["facing_direction" = 5]|
 |minecraft:end_rod| 6| ["facing_direction" = 6]|
 |minecraft:end_rod| 7| ["facing_direction" = 7]|
-|minecraft:ender_chest| 0| ["facing_direction" = 0]|
-|minecraft:ender_chest| 1| ["facing_direction" = 1]|
-|minecraft:ender_chest| 2| ["facing_direction" = 2]|
-|minecraft:ender_chest| 3| ["facing_direction" = 3]|
-|minecraft:ender_chest| 4| ["facing_direction" = 4]|
-|minecraft:ender_chest| 5| ["facing_direction" = 5]|
-|minecraft:ender_chest| 6| ["facing_direction" = 6]|
-|minecraft:ender_chest| 7| ["facing_direction" = 7]|
+|minecraft:ender_chest| 0| ["cardinal_direction" = "north"]|
+|minecraft:ender_chest| 1| ["cardinal_direction" = "north"]|
+|minecraft:ender_chest| 2| ["cardinal_direction" = "north"]|
+|minecraft:ender_chest| 3| ["cardinal_direction" = "south"]|
+|minecraft:ender_chest| 4| ["cardinal_direction" = "west"]|
+|minecraft:ender_chest| 5| ["cardinal_direction" = "east"]|
+|minecraft:ender_chest| 6| ["cardinal_direction" = "north"]|
+|minecraft:ender_chest| 7| ["cardinal_direction" = "north"]|
 |minecraft:exposed_cut_copper_slab| 0| ["top_slot_bit" = 0]|
 |minecraft:exposed_cut_copper_slab| 1| ["top_slot_bit" = 1]|
 |minecraft:farmland| 0| ["moisturized_amount" = 0]|
@@ -1663,38 +1663,38 @@ Block Name |Aux Value |Block States|
 |minecraft:grindstone| 13| ["attachment" = "multiple", "direction" = 1]|
 |minecraft:grindstone| 14| ["attachment" = "multiple", "direction" = 2]|
 |minecraft:grindstone| 15| ["attachment" = "multiple", "direction" = 3]|
-|minecraft:hard_stained_glass| 0| ["color" = "white"]|
-|minecraft:hard_stained_glass| 1| ["color" = "orange"]|
-|minecraft:hard_stained_glass| 2| ["color" = "magenta"]|
-|minecraft:hard_stained_glass| 3| ["color" = "light_blue"]|
-|minecraft:hard_stained_glass| 4| ["color" = "yellow"]|
-|minecraft:hard_stained_glass| 5| ["color" = "lime"]|
-|minecraft:hard_stained_glass| 6| ["color" = "pink"]|
-|minecraft:hard_stained_glass| 7| ["color" = "gray"]|
-|minecraft:hard_stained_glass| 8| ["color" = "silver"]|
-|minecraft:hard_stained_glass| 9| ["color" = "cyan"]|
-|minecraft:hard_stained_glass| 10| ["color" = "purple"]|
-|minecraft:hard_stained_glass| 11| ["color" = "blue"]|
-|minecraft:hard_stained_glass| 12| ["color" = "brown"]|
-|minecraft:hard_stained_glass| 13| ["color" = "green"]|
-|minecraft:hard_stained_glass| 14| ["color" = "red"]|
-|minecraft:hard_stained_glass| 15| ["color" = "black"]|
-|minecraft:hard_stained_glass_pane| 0| ["color" = "white"]|
-|minecraft:hard_stained_glass_pane| 1| ["color" = "orange"]|
-|minecraft:hard_stained_glass_pane| 2| ["color" = "magenta"]|
-|minecraft:hard_stained_glass_pane| 3| ["color" = "light_blue"]|
-|minecraft:hard_stained_glass_pane| 4| ["color" = "yellow"]|
-|minecraft:hard_stained_glass_pane| 5| ["color" = "lime"]|
-|minecraft:hard_stained_glass_pane| 6| ["color" = "pink"]|
-|minecraft:hard_stained_glass_pane| 7| ["color" = "gray"]|
-|minecraft:hard_stained_glass_pane| 8| ["color" = "silver"]|
-|minecraft:hard_stained_glass_pane| 9| ["color" = "cyan"]|
-|minecraft:hard_stained_glass_pane| 10| ["color" = "purple"]|
-|minecraft:hard_stained_glass_pane| 11| ["color" = "blue"]|
-|minecraft:hard_stained_glass_pane| 12| ["color" = "brown"]|
-|minecraft:hard_stained_glass_pane| 13| ["color" = "green"]|
-|minecraft:hard_stained_glass_pane| 14| ["color" = "red"]|
-|minecraft:hard_stained_glass_pane| 15| ["color" = "black"]|
+|minecraft:hard_stained_glass| 0| minecraft:hard_white_stained_glass|
+|minecraft:hard_stained_glass| 1| minecraft:hard_orange_stained_glass|
+|minecraft:hard_stained_glass| 2| minecraft:hard_magenta_stained_glass|
+|minecraft:hard_stained_glass| 3| minecraft:hard_light_blue_stained_glass|
+|minecraft:hard_stained_glass| 4| minecraft:hard_yellow_stained_glass|
+|minecraft:hard_stained_glass| 5| minecraft:hard_lime_stained_glass|
+|minecraft:hard_stained_glass| 6| minecraft:hard_pink_stained_glass|
+|minecraft:hard_stained_glass| 7| minecraft:hard_gray_stained_glass|
+|minecraft:hard_stained_glass| 8| minecraft:hard_light_gray_stained_glass|
+|minecraft:hard_stained_glass| 9| minecraft:hard_cyan_stained_glass|
+|minecraft:hard_stained_glass| 10| minecraft:hard_purple_stained_glass|
+|minecraft:hard_stained_glass| 11| minecraft:hard_blue_stained_glass|
+|minecraft:hard_stained_glass| 12| minecraft:hard_brown_stained_glass|
+|minecraft:hard_stained_glass| 13| minecraft:hard_green_stained_glass|
+|minecraft:hard_stained_glass| 14| minecraft:hard_red_stained_glass|
+|minecraft:hard_stained_glass| 15| minecraft:hard_black_stained_glass|
+|minecraft:hard_stained_glass_pane| 0| minecraft:hard_white_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 1| minecraft:hard_orange_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 2| minecraft:hard_magenta_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 3| minecraft:hard_light_blue_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 4| minecraft:hard_yellow_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 5| minecraft:hard_lime_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 6| minecraft:hard_pink_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 7| minecraft:hard_gray_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 8| minecraft:hard_light_gray_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 9| minecraft:hard_cyan_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 10| minecraft:hard_purple_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 11| minecraft:hard_blue_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 12| minecraft:hard_brown_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 13| minecraft:hard_green_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 14| minecraft:hard_red_stained_glass_pane|
+|minecraft:hard_stained_glass_pane| 15| minecraft:hard_black_stained_glass_pane|
 |minecraft:hay_block| 0| ["deprecated" = 0, "direction" = 0]|
 |minecraft:hay_block| 1| ["deprecated" = 1, "direction" = 0]|
 |minecraft:hay_block| 2| ["deprecated" = 2, "direction" = 0]|
@@ -2478,14 +2478,14 @@ Block Name |Aux Value |Block States|
 |minecraft:piston_arm_collision| 5| ["facing_direction" = 5]|
 |minecraft:piston_arm_collision| 6| ["facing_direction" = 6]|
 |minecraft:piston_arm_collision| 7| ["facing_direction" = 7]|
-|minecraft:planks| 0| ["wood_type" = "oak"]|
-|minecraft:planks| 1| ["wood_type" = "spruce"]|
-|minecraft:planks| 2| ["wood_type" = "birch"]|
-|minecraft:planks| 3| ["wood_type" = "jungle"]|
-|minecraft:planks| 4| ["wood_type" = "acacia"]|
-|minecraft:planks| 5| ["wood_type" = "dark_oak"]|
-|minecraft:planks| 6| ["wood_type" = "oak"]|
-|minecraft:planks| 7| ["wood_type" = "oak"]|
+|minecraft:planks| 0| ["minecraft:oak_planks"]|
+|minecraft:planks| 1| ["minecraft:spruce_planks"]|
+|minecraft:planks| 2| ["minecraft:birch_planks"]|
+|minecraft:planks| 3| ["minecraft:jungle_planks"]|
+|minecraft:planks| 4| ["minecraft:acacia_planks"]|
+|minecraft:planks| 5| ["minecraft:dark_oak_planks"]|
+|minecraft:planks| 6| ["minecraft:oak_planks"]|
+|minecraft:planks| 7| ["minecraft:oak_planks"]|
 |minecraft:polished_andesite_stairs| 0| ["upside_down_bit" = 0, "weirdo_direction" = 0]|
 |minecraft:polished_andesite_stairs| 1| ["upside_down_bit" = 0, "weirdo_direction" = 1]|
 |minecraft:polished_andesite_stairs| 2| ["upside_down_bit" = 0, "weirdo_direction" = 2]|
@@ -3238,14 +3238,13 @@ Block Name |Aux Value |Block States|
 |minecraft:sticky_piston_arm_collision| 5| ["facing_direction" = 5]|
 |minecraft:sticky_piston_arm_collision| 6| ["facing_direction" = 6]|
 |minecraft:sticky_piston_arm_collision| 7| ["facing_direction" = 7]|
-|minecraft:stone| 0| ["stone_type" = "stone"]|
-|minecraft:stone| 1| ["stone_type" = "granite"]|
-|minecraft:stone| 2| ["stone_type" = "granite_smooth"]|
-|minecraft:stone| 3| ["stone_type" = "diorite"]|
-|minecraft:stone| 4| ["stone_type" = "diorite_smooth"]|
-|minecraft:stone| 5| ["stone_type" = "andesite"]|
-|minecraft:stone| 6| ["stone_type" = "andesite_smooth"]|
-|minecraft:stone| 7| ["stone_type" = "stone"]|
+|minecraft:stone| 0| ["minecraft:stone"]|
+|minecraft:stone| 1| ["minecraft:granite"]|
+|minecraft:stone| 2| ["minecraft:polished_granite"]|
+|minecraft:stone| 3| ["minecraft:diorite"]|
+|minecraft:stone| 4| ["minecraft:andesite"]|
+|minecraft:stone| 6| ["minecraft:polished_andesite"]|
+|minecraft:stone| 7| ["minecraft:stone"]|
 |minecraft:stone_block_slab2| 0| ["stone_slab_type_2" = "red_sandstone", "top_slot_bit" = 0]|
 |minecraft:stone_block_slab2| 1| ["stone_slab_type_2" = "purpur", "top_slot_bit" = 0]|
 |minecraft:stone_block_slab2| 2| ["stone_slab_type_2" = "prismarine_rough", "top_slot_bit" = 0]|
@@ -3366,14 +3365,14 @@ Block Name |Aux Value |Block States|
 |minecraft:stonebrick| 5| ["stone_brick_type" = "default"]|
 |minecraft:stonebrick| 6| ["stone_brick_type" = "default"]|
 |minecraft:stonebrick| 7| ["stone_brick_type" = "default"]|
-|minecraft:stonecutter_block| 0| ["facing_direction" = 0]|
-|minecraft:stonecutter_block| 1| ["facing_direction" = 1]|
-|minecraft:stonecutter_block| 2| ["facing_direction" = 2]|
-|minecraft:stonecutter_block| 3| ["facing_direction" = 3]|
-|minecraft:stonecutter_block| 4| ["facing_direction" = 4]|
-|minecraft:stonecutter_block| 5| ["facing_direction" = 5]|
-|minecraft:stonecutter_block| 6| ["facing_direction" = 6]|
-|minecraft:stonecutter_block| 7| ["facing_direction" = 7]|
+|minecraft:stonecutter_block| 0| ["cardinal_direction" = "north"]|
+|minecraft:stonecutter_block| 1| ["cardinal_direction" = "north"]|
+|minecraft:stonecutter_block| 2| ["cardinal_direction" = "north"]|
+|minecraft:stonecutter_block| 3| ["cardinal_direction" = "south"]|
+|minecraft:stonecutter_block| 4| ["cardinal_direction" = "west"]|
+|minecraft:stonecutter_block| 5| ["cardinal_direction" = "east"]|
+|minecraft:stonecutter_block| 6| ["cardinal_direction" = "north"]|
+|minecraft:stonecutter_block| 7| ["cardinal_direction" = "north"]|
 |minecraft:stripped_acacia_log| 0| ["direction" = 0]|
 |minecraft:stripped_acacia_log| 1| ["direction" = 1]|
 |minecraft:stripped_acacia_log| 2| ["direction" = 2]|
@@ -3466,14 +3465,14 @@ Block Name |Aux Value |Block States|
 |minecraft:trapdoor| 13| ["direction" = 1, "open_bit" = 1, "upside_down_bit" = 1]|
 |minecraft:trapdoor| 14| ["direction" = 2, "open_bit" = 1, "upside_down_bit" = 1]|
 |minecraft:trapdoor| 15| ["direction" = 3, "open_bit" = 1, "upside_down_bit" = 1]|
-|minecraft:trapped_chest| 0| ["facing_direction" = 0]|
-|minecraft:trapped_chest| 1| ["facing_direction" = 1]|
-|minecraft:trapped_chest| 2| ["facing_direction" = 2]|
-|minecraft:trapped_chest| 3| ["facing_direction" = 3]|
-|minecraft:trapped_chest| 4| ["facing_direction" = 4]|
-|minecraft:trapped_chest| 5| ["facing_direction" = 5]|
-|minecraft:trapped_chest| 6| ["facing_direction" = 6]|
-|minecraft:trapped_chest| 7| ["facing_direction" = 7]|
+|minecraft:trapped_chest| 0| ["cardinal_direction" = "north"]|
+|minecraft:trapped_chest| 1| ["cardinal_direction" = "north"]|
+|minecraft:trapped_chest| 2| ["cardinal_direction" = "north"]|
+|minecraft:trapped_chest| 3| ["cardinal_direction" = "south"]|
+|minecraft:trapped_chest| 4| ["cardinal_direction" = "west"]|
+|minecraft:trapped_chest| 5| ["cardinal_direction" = "east"]|
+|minecraft:trapped_chest| 6| ["cardinal_direction" = "north"]|
+|minecraft:trapped_chest| 7| ["cardinal_direction" = "north"]|
 |minecraft:trip_wire| 0| ["attached_bit" = 0, "disarmed_bit" = 0, "powered_bit" = 0, "suspended_bit" = 0]|
 |minecraft:trip_wire| 1| ["attached_bit" = 0, "disarmed_bit" = 0, "powered_bit" = 1, "suspended_bit" = 0]|
 |minecraft:trip_wire| 2| ["attached_bit" = 0, "disarmed_bit" = 0, "powered_bit" = 0, "suspended_bit" = 1]|

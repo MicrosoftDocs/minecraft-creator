@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: setworldspawn Command
 description: Description and usage of the setworldspawn command
-ms.service: minecraft-bedrock-edition
 ---
 # `/setworldspawn` Command
 Sets the location where new players or players who die will spawn in the world.

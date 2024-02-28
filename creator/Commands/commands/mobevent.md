@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: mobevent Command
 description: Description and usage of the mobevent command
-ms.service: minecraft-bedrock-edition
 ---
 # `/mobevent` Command
 Controls what mob events are allowed to run.

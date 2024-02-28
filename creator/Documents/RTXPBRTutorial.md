@@ -44,7 +44,7 @@ First, you will need to create a Texture Set .JSON file that will load your new 
 
 ### emerald_ore.texture_set.json
 
-```JSON
+```json
 {
   "format_version": "1.16.100",
   "minecraft:texture_set": {

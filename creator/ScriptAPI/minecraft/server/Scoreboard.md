@@ -2,13 +2,50 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.Scoreboard Class
 description: Contents of the @minecraft/server.Scoreboard class.
-ms.service: minecraft-bedrock-edition
 ---
 # Scoreboard Class
 
 Contains objectives and participants for the scoreboard.
+
+#### Examples
+##### ***updateScoreboard.ts***
+```typescript
+  const scoreboardObjectiveId = "scoreboard_demo_objective";
+  const scoreboardObjectiveDisplayName = "Demo Objective";
+
+  let players = mc.world.getPlayers();
+
+  // Ensure a new objective.
+  let objective = mc.world.scoreboard.getObjective(scoreboardObjectiveId);
+
+  if (!objective) {
+    objective = mc.world.scoreboard.addObjective(scoreboardObjectiveId, scoreboardObjectiveDisplayName);
+  }
+
+  // get the scoreboard identity for player 0
+  let player0Identity = players[0].scoreboardIdentity;
+
+  if (player0Identity === undefined) {
+    log("Could not get a scoreboard identity for player 0.");
+    return -1;
+  }
+
+  // initialize player score to 100;
+  objective.setScore(player0Identity, 100);
+
+  mc.world.scoreboard.setObjectiveAtDisplaySlot("sidebar", {
+    objective: objective,
+    sortOrder: mc.ObjectiveSortOrder.descending,
+  });
+
+  const playerScore = objective.getScore(player0Identity) ?? 0;
+
+  // score should now be 110.
+  objective.setScore(player0Identity, playerScore + 10);
+```
 
 ## Methods
 - [addObjective](#addobjective)
@@ -22,14 +59,14 @@ Contains objectives and participants for the scoreboard.
 
 ### **addObjective**
 `
-addObjective(objectiveId: string, displayName: string): ScoreboardObjective
+addObjective(objectiveId: string, displayName?: string): ScoreboardObjective
 `
 
 Adds a new objective to the scoreboard.
 
 #### **Parameters**
 - **objectiveId**: *string*
-- **displayName**: *string*
+- **displayName**?: *string* = `null`
 
 #### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md)
 

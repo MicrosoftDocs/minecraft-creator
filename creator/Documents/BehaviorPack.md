@@ -1,7 +1,7 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
-title: Introduction To Behavior Packs
+author: iconicNurdle
+ms.author: mikeam
+title: 'Create an Angry Cow: An Introduction To Behavior Packs'
 description: "An introduction to Behavior Packs and adding attacking behaviors to an in-game cow mob."
 ms.service: minecraft-bedrock-edition
 ---
@@ -21,7 +21,7 @@ In this tutorial, you will learn the following:
 
 ## Sample Behavior Pack
 
-There is a [sample behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/behavior_pack_sample) available at the Microsoft samples Github. it may be used to understand the structure of behavior packs and to check your work after the tutorial.
+There is a [sample behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/behavior_pack_sample) available at the Microsoft samples Github. It may be used to understand the structure of behavior packs and to check your work after the tutorial.
 
 ### Requirements
 
@@ -70,7 +70,7 @@ To load a behavior pack into Minecraft, you will need to create a manifest file.
   "header": {
     "description": "My attack cow behavior pack Add-On!",
     "name": "My Behavior Pack",
-    "uuid":"",
+    "uuid":"<FIRST GENERATED UUID>",
     "version": [1, 0, 0],
     "min_engine_version": [1, 16, 0]
   },
@@ -79,7 +79,7 @@ To load a behavior pack into Minecraft, you will need to create a manifest file.
       {
         "description": "My First Add-On!",
           "type": "data",
-          "uuid": "",
+          "uuid": "<SECOND GENERATED UUID>",
           "version": [1, 0, 0]
       }
     ],
@@ -127,7 +127,7 @@ Every entity's behaviors are defined in its JSON file that lives inside the code
 >[!Note]
 > This is the entire edited cow.json file. It's big because cows do a lot!
 
-```JSON
+```json
 {
     "format_version": "1.16.0",
     "minecraft:entity": {

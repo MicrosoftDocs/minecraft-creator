@@ -2,9 +2,10 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.BoundingBox Interface
 description: Contents of the @minecraft/server.BoundingBox class.
-ms.service: minecraft-bedrock-edition
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BoundingBox Interface
 
@@ -13,7 +14,7 @@ ms.service: minecraft-bedrock-edition
 
 A BoundingBox is an interface to an object which represents an AABB aligned rectangle.  
 
-The BoundingBox assumes that it was created in a valid state (min <= max) but cannot guarantee it (unless it was created using the associated {@link @minecraft-server.BoundingBoxUtils} utility functions.
+The BoundingBox assumes that it was created in a valid state (min <= max) but cannot guarantee it (unless it was created using the associated @minecraft-server.BoundingBoxUtils utility functions.
 
 The min/max coordinates represent the diametrically opposite corners of the rectangle.
 
@@ -35,6 +36,6 @@ Type: [*Vector3*](Vector3.md)
 ### **min**
 `min: Vector3;`
 
-A {@link @minecraft-server.Vector3} that represents the smallest corner of the rectangle
+A @minecraft-server.Vector3 that represents the smallest corner of the rectangle
 
 Type: [*Vector3*](Vector3.md)

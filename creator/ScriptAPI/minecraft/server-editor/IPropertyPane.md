@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-editor.IPropertyPane Interface
 description: Contents of the @minecraft/server-editor.IPropertyPane class.
-ms.service: minecraft-bedrock-edition
 ---
 # IPropertyPane Interface
 
@@ -67,8 +67,10 @@ Type: *number*
 - [addButton](#addbutton)
 - [addDivider](#adddivider)
 - [addDropdown](#adddropdown)
+- [addEntityPicker](#addentitypicker)
 - [addNumber](#addnumber)
 - [addString](#addstring)
+- [addText](#addtext)
 - [addVector3](#addvector3)
 - [collapse](#collapse)
 - [createPropertyPane](#createpropertypane)
@@ -79,7 +81,7 @@ Type: *number*
 
 ### **addBlockPicker**
 `
-addBlockPicker(obj: T, property: Prop, options: IPropertyItemOptionsBlocks): IPropertyItem<T, Prop>
+addBlockPicker(obj: T, property: Prop, options: IPropertyItemOptionsDataPicker): IPropertyItem<T, Prop>
 `
 
 Adds a BlockPicker item to the pane.
@@ -87,13 +89,13 @@ Adds a BlockPicker item to the pane.
 #### **Parameters**
 - **obj**: *T*
 - **property**: *Prop*
-- **options**: *IPropertyItemOptionsBlocks*
+- **options**: *IPropertyItemOptionsDataPicker*
 
 #### **Returns** *IPropertyItem<T, Prop>*
 
 ### **addBool**
 `
-addBool(obj: T, property: Prop, options: IPropertyItemOptions): IPropertyItem<T, Prop>
+addBool(obj: T, property: Prop, options: IPropertyItemOptionsBool): IPropertyItem<T, Prop>
 `
 
 Adds a boolean item to the pane.
@@ -101,7 +103,7 @@ Adds a boolean item to the pane.
 #### **Parameters**
 - **obj**: *T*
 - **property**: *Prop*
-- **options**: *IPropertyItemOptions*
+- **options**: *IPropertyItemOptionsBool*
 
 #### **Returns** *IPropertyItem<T, Prop>*
 
@@ -133,7 +135,7 @@ Adds an divider item to the pane.
 
 ### **addDropdown**
 `
-addDropdown(obj: T, property: Prop, options: IPropertyItemOptionsDropdown): IPropertyItem<T, Prop>
+addDropdown(obj: T, property: Prop, options: IPropertyItemOptionsDropdown): IDropdownPropertyItem<T, Prop>
 `
 
 Adds an DropDown item to the pane.
@@ -142,6 +144,20 @@ Adds an DropDown item to the pane.
 - **obj**: *T*
 - **property**: *Prop*
 - **options**: *IPropertyItemOptionsDropdown*
+
+#### **Returns** *IDropdownPropertyItem<T, Prop>*
+
+### **addEntityPicker**
+`
+addEntityPicker(obj: T, property: Prop, options: IPropertyItemOptionsDataPicker): IPropertyItem<T, Prop>
+`
+
+Adds an EntityPicker item to the pane.
+
+#### **Parameters**
+- **obj**: *T*
+- **property**: *Prop*
+- **options**: *IPropertyItemOptionsDataPicker*
 
 #### **Returns** *IPropertyItem<T, Prop>*
 
@@ -170,6 +186,20 @@ Adds a string item to the pane
 - **obj**: *T*
 - **property**: *Prop*
 - **options**: *IPropertyItemOptions*
+
+#### **Returns** *IPropertyItem<T, Prop>*
+
+### **addText**
+`
+addText(obj: T, property: Prop, options: IPropertyItemOptionsText): IPropertyItem<T, Prop>
+`
+
+Adds a multiline Text item to the pane.
+
+#### **Parameters**
+- **obj**: *T*
+- **property**: *Prop*
+- **options**: *IPropertyItemOptionsText*
 
 #### **Returns** *IPropertyItem<T, Prop>*
 

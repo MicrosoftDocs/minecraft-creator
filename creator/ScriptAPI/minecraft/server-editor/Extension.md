@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-editor.Extension Class
 description: Contents of the @minecraft/server-editor.Extension class.
-ms.service: minecraft-bedrock-edition
 ---
 # Extension Class
 
@@ -17,3 +17,33 @@ An Editor Extension is defined a name, an activation function and a shutdown fun
 
 
 It is not recommended to directly use this function as the contract is not guaranteed to be stable, instead prefer [*@minecraft/server-editor.registerEditorExtension*](../../minecraft/server-editor/minecraft-server-editor.md#registereditorextension) as it provides additional functionality and a stable contract.
+
+## Properties
+
+### **defaultToolGroupId**
+`read-only defaultToolGroupId: string;`
+
+Default identifier for tool rail grouping. All modal tools created from the extension will use this.
+
+Type: *string*
+
+### **description**
+`read-only description: string;`
+
+Description specified during registration for the extension.
+
+Type: *string*
+
+### **name**
+`read-only name: string;`
+
+Name of the extension.
+
+Type: *string*
+
+### **notes**
+`read-only notes: string;`
+
+Notes specified during registration for the extension.
+
+Type: *string*

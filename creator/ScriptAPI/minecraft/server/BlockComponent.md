@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockComponent Class
 description: Contents of the @minecraft/server.BlockComponent class.
-ms.service: minecraft-bedrock-edition
 ---
 # BlockComponent Class
 
@@ -28,6 +28,3 @@ Base type for components associated with blocks.
 Block instance that this component pertains to.
 
 Type: [*Block*](Block.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.

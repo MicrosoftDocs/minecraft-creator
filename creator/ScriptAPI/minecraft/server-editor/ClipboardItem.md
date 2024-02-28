@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-editor.ClipboardItem Class
 description: Contents of the @minecraft/server-editor.ClipboardItem class.
-ms.service: minecraft-bedrock-edition
 ---
 # ClipboardItem Class
 
@@ -18,7 +18,7 @@ A ClipboardItem is a handle to an object which represents a set of blocks in a c
 Return whether there is any block content in the item
 
 Type: *boolean*
-    
+
 > [!WARNING]
 > This property can throw errors when used.
 

@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-editor.TransactionManager Class
 description: Contents of the @minecraft/server-editor.TransactionManager class.
-ms.service: minecraft-bedrock-edition
 ---
 # TransactionManager Class
 
@@ -15,8 +15,10 @@ Transaction Manager is the basis of the UNDO and REDO operations, and allows a c
 The transactions are stored as a stack, and can be undone in stack order to restore the world to it's original state
 
 ## Methods
+- [addUserDefinedOperation](#adduserdefinedoperation)
 - [commitOpenTransaction](#commitopentransaction)
 - [commitTrackedChanges](#committrackedchanges)
+- [createUserDefinedTransactionHandler](#createuserdefinedtransactionhandler)
 - [discardOpenTransaction](#discardopentransaction)
 - [discardTrackedChanges](#discardtrackedchanges)
 - [openTransaction](#opentransaction)
@@ -28,6 +30,22 @@ The transactions are stored as a stack, and can be undone in stack order to rest
 - [trackBlockChangeSelection](#trackblockchangeselection)
 - [undo](#undo)
 - [undoSize](#undosize)
+
+### **addUserDefinedOperation**
+`
+addUserDefinedOperation(transactionHandlerId: UserDefinedTransactionHandlerId, operationData: string, operationName?: string): void
+`
+
+#### **Parameters**
+- **transactionHandlerId**: [*UserDefinedTransactionHandlerId*](UserDefinedTransactionHandlerId.md)
+- **operationData**: *string*
+- **operationName**?: *string* = `null`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **commitOpenTransaction**
 `
@@ -56,6 +74,23 @@ This function will commit the pending changes caused by any of the track changes
 Pending block changes from tracking operations will be added to the transaction record before submission to the transaction manager
 
 #### **Returns** *number* - Returns the number of change requests that were being tracked
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **createUserDefinedTransactionHandler**
+`
+createUserDefinedTransactionHandler(undoClosure: (arg: string) => void, redoClosure: (arg: string) => void): UserDefinedTransactionHandlerId
+`
+
+#### **Parameters**
+- **undoClosure**: (arg: *string*) => *void*
+- **redoClosure**: (arg: *string*) => *void*
+
+#### **Returns** [*UserDefinedTransactionHandlerId*](UserDefinedTransactionHandlerId.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

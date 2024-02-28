@@ -2,16 +2,44 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockPermutation Class
 description: Contents of the @minecraft/server.BlockPermutation class.
-ms.service: minecraft-bedrock-edition
 ---
 # BlockPermutation Class
 
 Contains the combination of type [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) and properties (also sometimes called block state) which describe a block (but does not belong to a specific [*@minecraft/server.Block*](../../minecraft/server/Block.md)).
 
+#### Examples
+##### ***createTranslatedSign.ts***
+```typescript
+// A function the creates a sign at the specified location with the specified text
+import { DimensionLocation, BlockPermutation, BlockComponentTypes } from '@minecraft/server';
+import { MinecraftBlockTypes } from '@minecraft/vanilla-data';
+
+function createSignAt(location: DimensionLocation) {
+    const signBlock = location.dimension.getBlock(location);
+
+    if (!signBlock) {
+        console.warn('Could not find a block at specified location.');
+        return;
+    }
+
+    const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, { ground_sign_direction: 8 });
+    signBlock.setPermutation(signPerm); // Update block to be a sign
+
+    // Update the sign block's text
+    // with "Steve's Head"
+    const signComponent = signBlock.getComponent(BlockComponentTypes.Sign);
+    if (signComponent) {
+        signComponent.setText({ translate: 'item.skull.player.name', with: ['Steve'] });
+    }
+}
+```
+
 ## Properties
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **type**
 `read-only type: BlockType;`
 
@@ -21,18 +49,30 @@ Type: [*BlockType*](BlockType.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ## Methods
+::: moniker range="=minecraft-bedrock-experimental"
 - [clone](#clone)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [getAllStates](#getallstates)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [getItemStack](#getitemstack)
+::: moniker-end
 - [getState](#getstate)
+::: moniker range="=minecraft-bedrock-experimental"
 - [getTags](#gettags)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [hasTag](#hastag)
+::: moniker-end
 - [matches](#matches)
 - [withState](#withstate)
 - [resolve](#resolve)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **clone**
 `
 clone(): BlockPermutation
@@ -44,7 +84,9 @@ Creates a copy of this permutation.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getAllStates**
 `
 getAllStates(): Record<string, boolean | number | string>
@@ -56,7 +98,9 @@ Returns all available block states associated with this block.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getItemStack**
 `
 getItemStack(amount?: number): ItemStack | undefined
@@ -73,6 +117,7 @@ Retrieves a prototype item stack based on this block permutation that can be use
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **getState**
 `
@@ -88,9 +133,7 @@ Gets a state for the permutation.
 
 #### **Returns** *boolean* | *number* | *string* | *undefined* - Returns the state if the permutation has it, else `undefined`.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getTags**
 `
 getTags(): string[]
@@ -102,7 +145,9 @@ Creates a copy of the permutation.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **hasTag**
 `
 hasTag(tag: string): boolean
@@ -131,6 +176,7 @@ console.log(`Block is dirt: ${blockPerm.hasTag("dirt")}`);
 console.log(`Block is wood: ${blockPerm.hasTag("wood")}`);
 console.log(`Block is stone: ${blockPerm.hasTag("stone")}`);
 ```
+::: moniker-end
 
 ### **matches**
 `
@@ -164,9 +210,6 @@ Returns a derived BlockPermutation with a specific property set.
 
 #### **Returns** [*BlockPermutation*](BlockPermutation.md)
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 
@@ -191,63 +234,68 @@ Given a type identifier and an optional set of properties, will return a BlockPe
 #### Examples
 ##### ***addBlockColorCube.ts***
 ```typescript
-  const allColorNames: string[] = [
-    "white",
-    "orange",
-    "magenta",
-    "light_blue",
-    "yellow",
-    "lime",
-    "pink",
-    "gray",
-    "silver",
-    "cyan",
-    "purple",
-    "blue",
-    "brown",
-    "green",
-    "red",
-    "black",
-  ];
+import { DimensionLocation, BlockPermutation } from '@minecraft/server';
+import { MinecraftBlockTypes } from '@minecraft/vanilla-data';
 
-  const cubeDim = 7;
+const allWoolBlocks: string[] = [
+    MinecraftBlockTypes.WhiteWool,
+    MinecraftBlockTypes.OrangeWool,
+    MinecraftBlockTypes.MagentaWool,
+    MinecraftBlockTypes.LightBlueWool,
+    MinecraftBlockTypes.YellowWool,
+    MinecraftBlockTypes.LimeWool,
+    MinecraftBlockTypes.PinkWool,
+    MinecraftBlockTypes.GrayWool,
+    MinecraftBlockTypes.LightGrayWool,
+    MinecraftBlockTypes.CyanWool,
+    MinecraftBlockTypes.PurpleWool,
+    MinecraftBlockTypes.BlueWool,
+    MinecraftBlockTypes.BrownWool,
+    MinecraftBlockTypes.GreenWool,
+    MinecraftBlockTypes.RedWool,
+    MinecraftBlockTypes.BlackWool,
+];
 
-  let colorIndex = 0;
+const cubeDim = 7;
 
-  for (let x = 0; x <= cubeDim; x++) {
-    for (let y = 0; y <= cubeDim; y++) {
-      for (let z = 0; z <= cubeDim; z++) {
-        colorIndex++;
-        overworld
-          .getBlock({ x: targetLocation.x + x, y: targetLocation.y + y, z: targetLocation.z + z })
-          ?.setPermutation(
-            mc.BlockPermutation.resolve("minecraft:wool", {
-              color: allColorNames[colorIndex % allColorNames.length],
-            })
-          );
-      }
+function placeRainbowCube(location: DimensionLocation) {
+    let colorIndex = 0;
+    for (let x = 0; x <= cubeDim; x++) {
+        for (let y = 0; y <= cubeDim; y++) {
+            for (let z = 0; z <= cubeDim; z++) {
+                colorIndex++;
+                location.dimension
+                    .getBlock({ x: location.x + x, y: location.y + y, z: location.z + z })
+                    ?.setPermutation(BlockPermutation.resolve(allWoolBlocks[colorIndex % allWoolBlocks.length]));
+            }
+        }
     }
-  }
+}
 ```
 
 #### Examples
-##### ***addTranslatedSign.ts***
+##### ***createTranslatedSign.ts***
 ```typescript
-  const players = mc.world.getPlayers();
+// A function the creates a sign at the specified location with the specified text
+import { DimensionLocation, BlockPermutation, BlockComponentTypes } from '@minecraft/server';
+import { MinecraftBlockTypes } from '@minecraft/vanilla-data';
 
-  const dim = players[0].dimension;
+function createSignAt(location: DimensionLocation) {
+    const signBlock = location.dimension.getBlock(location);
 
-  const signBlock = dim.getBlock(targetLocation);
+    if (!signBlock) {
+        console.warn('Could not find a block at specified location.');
+        return;
+    }
 
-  if (!signBlock) {
-    log("Could not find a block at specified location.");
-    return -1;
-  }
-  let signPerm = mc.BlockPermutation.resolve("minecraft:standing_sign", { ground_sign_direction: 8 });
+    const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, { ground_sign_direction: 8 });
+    signBlock.setPermutation(signPerm); // Update block to be a sign
 
-  signBlock.setPermutation(signPerm);
-
-  const signComponent = signBlock.getComponent("minecraft:sign") as mc.BlockSignComponent;
-
-  signComponent.setText({ translate: "item.skull.player.name", with: [players[0].name] });
+    // Update the sign block's text
+    // with "Steve's Head"
+    const signComponent = signBlock.getComponent(BlockComponentTypes.Sign);
+    if (signComponent) {
+        signComponent.setText({ translate: 'item.skull.player.name', with: ['Steve'] });
+    }
+}
 ```

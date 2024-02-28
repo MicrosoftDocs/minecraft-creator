@@ -2,8 +2,8 @@
 author: JimSeaman42
 ms.author: mikeam
 title: Block Documentation - Block States and Permutations
-ms.prod: gaming
 description: "A reference document providing an overview of block permutations and block states"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - Block States and Permutations
@@ -19,6 +19,9 @@ The "states" field is contained in the "description" section of a custom block's
 > State values can also be json objects, defining a range of numbers:
 >
 > "test:integer_state":{"values":{"min":0,"max":3}} would be the same as "test:integer_state":[0, 1, 2, 3]
+
+> [!NOTE]
+> To use custom block states, the _Holiday Creator Features_ experiment must be toggled ON.
 
 ## Block Permutations
 
@@ -45,11 +48,11 @@ Each permutation is a JSON Object that consists of 2 parameters, shown below.
   "minecraft:block": {
     "description": {
       "identifier": "custom:lamp_block",
-      "state": {
+      "states": {
         "custom:is_lit": [ true, false ]
       }
     },
-    "permutations": {
+    "permutations": [
       {
         "condition": "query.block_state('custom:is_lit') == true",
         "components": {
@@ -62,7 +65,7 @@ Each permutation is a JSON Object that consists of 2 parameters, shown below.
           "minecraft:light_emission": 0
         }
       }
-    },
+    ],
     "components": {
       "minecraft:friction": 0.6,
       "minecraft:map_color": "#00ff00" 

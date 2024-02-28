@@ -33,9 +33,10 @@ ms.service: minecraft-bedrock-edition
 
 ```json
 "minecraft:random_ticking":{
-    "condition": 1,
-    "event": "minecraft:redstone_signal", //custom
-    "range": [5,10],
-    "target": "self"
+    "on_tick": {
+        "condition": 1,
+        "event": "minecraft:redstone_signal", //custom
+        "target": "self"
+    }
 }
 ```

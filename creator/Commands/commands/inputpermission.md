@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: inputpermission Command
 description: Description and usage of the inputpermission command
-ms.service: minecraft-bedrock-edition
 ---
 # `/inputpermission` Command
 Optionally enables or disables input permissions for a player.

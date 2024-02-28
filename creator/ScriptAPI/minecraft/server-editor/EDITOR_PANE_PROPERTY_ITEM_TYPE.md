@@ -2,9 +2,9 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
+ms.service: minecraft-bedrock-edition
 title: .EDITOR_PANE_PROPERTY_ITEM_TYPE Enumeration
 description: Contents of the .EDITOR_PANE_PROPERTY_ITEM_TYPE enumeration.
-ms.service: minecraft-bedrock-edition
 ---
 # EDITOR_PANE_PROPERTY_ITEM_TYPE Enumeration
 
@@ -27,5 +27,7 @@ Type of item that can be added to the property pane
 `String = editorUI:String`
 ### **SubPane**
 `SubPane = editorUI:SubPane`
+### **Text**
+`Text = editorUI:Text`
 ### **Vec3**
 `Vec3 = editorUI:Vec3`
