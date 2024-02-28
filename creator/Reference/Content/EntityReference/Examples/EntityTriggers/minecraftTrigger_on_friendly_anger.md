@@ -41,6 +41,6 @@ ms.service: minecraft-bedrock-edition
 
 ## Vanilla entities using `minecraft:on_friendly_anger`
 
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
 - [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
 - [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
+- [trader_llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/trader_llama.md)
