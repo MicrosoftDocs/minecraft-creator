@@ -50,6 +50,6 @@ ms.service: minecraft-bedrock-edition
 },
 ```
 
-## Vanilla entities using `minecraft:angry`
+## Vanilla entities using `minecraft:anger_level`
 
 - [warden](../../../../Source/VanillaBehaviorPack_Snippets/entities/warden.md)
