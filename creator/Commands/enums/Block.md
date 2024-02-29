@@ -162,6 +162,8 @@ Stripped Dark Oak Log
 Stripped Dark Oak Log
 - `minecraft:jungle_log`
 - `jungle_log`
+- `minecraft:bubble_coral_fan`
+- `bubble_coral_fan`
 - `minecraft:sculk_shrieker`
 Sculk Shrieker
 - `sculk_shrieker`
@@ -184,6 +186,8 @@ Trapdoor
 Seagrass
 - `seagrass`
 Seagrass
+- `minecraft:tube_coral_fan`
+- `tube_coral_fan`
 - `minecraft:waxed_exposed_cut_copper_slab`
 Waxed Exposed Cut Copper Slab
 - `waxed_exposed_cut_copper_slab`
@@ -354,6 +358,8 @@ Warped Wall Sign
 Warped Wall Sign
 - `minecraft:spruce_fence`
 - `spruce_fence`
+- `minecraft:dark_oak_sapling`
+- `dark_oak_sapling`
 - `minecraft:melon_block`
 Melon Block
 - `melon_block`
@@ -440,6 +446,8 @@ Hardened Clay
 Stripped Jungle Log
 - `stripped_jungle_log`
 Stripped Jungle Log
+- `minecraft:oak_sapling`
+- `oak_sapling`
 - `minecraft:polished_blackstone_double_slab`
 Polished Blackstone Double Slab
 - `polished_blackstone_double_slab`
@@ -510,16 +518,14 @@ Waxed Oxidized Cut Copper Slab
 Waxed Oxidized Cut Copper Slab
 - `minecraft:oak_leaves`
 - `oak_leaves`
+- `minecraft:brain_coral_fan`
+- `brain_coral_fan`
 - `minecraft:cyan_candle_cake`
 Cyan Candle Cake
 - `cyan_candle_cake`
 Cyan Candle Cake
 - `minecraft:polished_tuff_wall`
 - `polished_tuff_wall`
-- `minecraft:sapling`
-Sapling
-- `sapling`
-Sapling
 - `minecraft:bamboo_stairs`
 - `bamboo_stairs`
 - `minecraft:torch`
@@ -980,6 +986,8 @@ Structure Void
 Polished Blackstone Brick Slab
 - `polished_blackstone_brick_slab`
 Polished Blackstone Brick Slab
+- `minecraft:spruce_sapling`
+- `spruce_sapling`
 - `minecraft:yellow_terracotta`
 - `yellow_terracotta`
 - `minecraft:snow`
@@ -1262,10 +1270,6 @@ Mangrove Stairs
 Cut Copper Stairs
 - `cut_copper_stairs`
 Cut Copper Stairs
-- `minecraft:coral_fan`
-Coral Fan
-- `coral_fan`
-Coral Fan
 - `minecraft:cherry_button`
 - `cherry_button`
 - `minecraft:yellow_candle_cake`
@@ -1864,6 +1868,8 @@ Reeds
 Reeds
 - `minecraft:black_shulker_box`
 - `black_shulker_box`
+- `minecraft:jungle_sapling`
+- `jungle_sapling`
 - `minecraft:barrier`
 Barrier
 - `barrier`
@@ -2014,6 +2020,8 @@ Warped Nylium
 Deepslate Emerald Ore
 - `deepslate_emerald_ore`
 Deepslate Emerald Ore
+- `minecraft:acacia_sapling`
+- `acacia_sapling`
 - `minecraft:quartz_bricks`
 Quartz Bricks
 - `quartz_bricks`
@@ -2086,6 +2094,8 @@ Warped Slab
 Warped Stem
 - `warped_stem`
 Warped Stem
+- `minecraft:horn_coral_fan`
+- `horn_coral_fan`
 - `minecraft:green_shulker_box`
 - `green_shulker_box`
 - `minecraft:stripped_crimson_hyphae`
@@ -2126,6 +2136,8 @@ Waxed Weathered Cut Copper Slab
 Stonebrick
 - `stonebrick`
 Stonebrick
+- `minecraft:fire_coral_fan`
+- `fire_coral_fan`
 - `minecraft:spruce_trapdoor`
 Spruce Trapdoor
 - `spruce_trapdoor`
@@ -2598,6 +2610,8 @@ Cauldron
 Cave Vines Head with Berries
 - `cave_vines_head_with_berries`
 Cave Vines Head with Berries
+- `minecraft:birch_sapling`
+- `birch_sapling`
 - `minecraft:dark_oak_trapdoor`
 Dark Oak Trapdoor
 - `dark_oak_trapdoor`
@@ -3062,6 +3076,14 @@ Leaves 2
 Wood
 - `minecraft:wood`
 Wood
+- `sapling`
+Sapling
+- `minecraft:sapling`
+Sapling
+- `coral_fan`
+Coral Fan
+- `minecraft:coral_fan`
+Coral Fan
 - `lava_cauldron`
 Lava Cauldron
 - `minecraft:lava_cauldron`

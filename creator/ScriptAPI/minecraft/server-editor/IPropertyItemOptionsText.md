@@ -11,9 +11,14 @@ description: Contents of the @minecraft/server-editor.IPropertyItemOptionsText c
 ## Extends
 - *IPropertyItemOptions*
 
-Localization string id for multiline text component.
+Localization string id and border enable boolean for multiline text component.
 
 ## Properties
+
+### **border**
+`border: boolean;`
+
+Type: *boolean*
 
 ### **valueStringId**
 `valueStringId: string;`

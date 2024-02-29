@@ -20,6 +20,7 @@ description: Contents of the @minecraft/server.EntityComponent class.
 - [*EntityCanClimbComponent*](EntityCanClimbComponent.md)
 - [*EntityCanFlyComponent*](EntityCanFlyComponent.md)
 - [*EntityCanPowerJumpComponent*](EntityCanPowerJumpComponent.md)
+- [*EntityColor2Component*](EntityColor2Component.md)
 - [*EntityColorComponent*](EntityColorComponent.md)
 - [*EntityEquippableComponent*](EntityEquippableComponent.md)
 - [*EntityFireImmuneComponent*](EntityFireImmuneComponent.md)
@@ -67,7 +68,7 @@ Base class for downstream entity components.
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **entity**
-`read-only entity?: Entity;`
+`read-only entity: Entity;`
 
 The entity that owns this component. The entity will be undefined if it has been removed.
 

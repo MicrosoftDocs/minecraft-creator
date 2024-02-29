@@ -9,7 +9,7 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [1.10.0-beta](#1100-beta)
+- [1.11.0-beta](#1110-beta)
 - [1.8.0](#180)
 - [1.7.0](#170)
 - [1.6.0](#160)
@@ -20,7 +20,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 1.10.0-beta
+## 1.11.0-beta
 #### Added *[`BiomeType`](BiomeType.md)*
 #### Added *[`BiomeTypes`](BiomeTypes.md)*
 #### Changed *[`Block`](Block.md)*
@@ -39,6 +39,7 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`setWaterlogged`](Block.md#setwaterlogged)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockAreaSize`](BlockAreaSize.md)*
+#### Added *[`BlockComponentStepOnEvent`](BlockComponentStepOnEvent.md)*
 #### Added *[`BlockExplodeAfterEvent`](BlockExplodeAfterEvent.md)*
 #### Added *[`BlockExplodeAfterEventSignal`](BlockExplodeAfterEventSignal.md)*
 #### Added *[`BlockLavaContainerComponent`](BlockLavaContainerComponent.md)*
@@ -61,6 +62,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`BlockType`](BlockType.md)*
 - Added property *[`canBeWaterlogged`](BlockType.md#canbewaterlogged)*
 - Added property *[`id`](BlockType.md#id)*
+#### Added *[`BlockTypeRegistry`](BlockTypeRegistry.md)*
 #### Added *[`BlockTypes`](BlockTypes.md)*
 #### Added *[`BlockVolume`](BlockVolume.md)*
 #### Added *[`BlockVolumeBase`](BlockVolumeBase.md)*
@@ -102,13 +104,12 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`EntityAddRiderComponent`](EntityAddRiderComponent.md)*
 #### Added *[`EntityAgeableComponent`](EntityAgeableComponent.md)*
 #### Added *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
+#### Added *[`EntityColor2Component`](EntityColor2Component.md)*
 #### Changed *[`EntityComponent`](EntityComponent.md)*
 - Added property *[`entity`](EntityComponent.md#entity)*
 #### Added *[`EntityDefinitionFeedItem`](EntityDefinitionFeedItem.md)*
 #### Changed *[`EntityEquippableComponent`](EntityEquippableComponent.md)*
 - Added function *[`getEquipmentSlot`](EntityEquippableComponent.md#getequipmentslot)*
-#### Changed *[`EntityHealableComponent`](EntityHealableComponent.md)*
-- Added property *[`filters`](EntityHealableComponent.md#filters)*
 #### Added *[`EntityIterator`](EntityIterator.md)*
 #### Added *[`EntityLavaMovementComponent`](EntityLavaMovementComponent.md)*
 #### Added *[`EntityLeashableComponent`](EntityLeashableComponent.md)*
@@ -155,6 +156,7 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`matches`](ItemStack.md#matches)*
 - Added function *[`setDynamicProperty`](ItemStack.md#setdynamicproperty)*
 #### Added *[`ItemTypes`](ItemTypes.md)*
+#### Added *[`ListBlockVolume`](ListBlockVolume.md)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
 #### Added *[`PistonActivateAfterEvent`](PistonActivateAfterEvent.md)*
 #### Added *[`PistonActivateAfterEventSignal`](PistonActivateAfterEventSignal.md)*
@@ -187,6 +189,8 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`setHudVisibility`](ScreenDisplay.md#sethudvisibility)*
 #### Added *[`Seat`](Seat.md)*
 #### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
+#### Added *[`Structure`](Structure.md)*
+#### Added *[`StructureManager`](StructureManager.md)*
 #### Changed *[`System`](System.md)*
 - Added property *[`beforeEvents`](System.md#beforeevents)*
 - Added function *[`clearJob`](System.md#clearjob)*
@@ -202,6 +206,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`WeatherChangeBeforeEventSignal`](WeatherChangeBeforeEventSignal.md)*
 #### Changed *[`World`](World.md)*
 - Added property *[`gameRules`](World.md#gamerules)*
+- Added property *[`structureManager`](World.md#structuremanager)*
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`blockExplode`](WorldAfterEvents.md#blockexplode)*
@@ -226,8 +231,11 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`playerInteractWithEntity`](WorldBeforeEvents.md#playerinteractwithentity)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
 - Added property *[`weatherChange`](WorldBeforeEvents.md#weatherchange)*
+- Added property *[`worldInitialize`](WorldBeforeEvents.md#worldinitialize)*
 #### Added *[`WorldInitializeAfterEvent`](WorldInitializeAfterEvent.md)*
 #### Added *[`WorldInitializeAfterEventSignal`](WorldInitializeAfterEventSignal.md)*
+#### Added *[`WorldInitializeBeforeEvent`](WorldInitializeBeforeEvent.md)*
+#### Added *[`WorldInitializeBeforeEventSignal`](WorldInitializeBeforeEventSignal.md)*
 #### Added enum [`BlockComponentTypes`](BlockComponentTypes.md)
 #### Added enum [`BlockPistonState`](BlockPistonState.md)
 #### Added enum [`BlockVolumeIntersection`](BlockVolumeIntersection.md)
@@ -241,9 +249,12 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`HudElement`](HudElement.md)
 #### Added enum [`HudVisibility`](HudVisibility.md)
 #### Added enum [`ItemComponentTypes`](ItemComponentTypes.md)
+#### Added enum [`PaletteColor`](PaletteColor.md)
 #### Added enum [`SignSide`](SignSide.md)
+#### Added enum [`StructureAnimationMode`](StructureAnimationMode.md)
 #### Added enum [`StructureMirrorAxis`](StructureMirrorAxis.md)
 #### Added enum [`StructureRotation`](StructureRotation.md)
+#### Added enum [`StructureSaveMode`](StructureSaveMode.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
 #### Added constant `HudElementsCount`
 #### Added constant `HudVisibilityCount`

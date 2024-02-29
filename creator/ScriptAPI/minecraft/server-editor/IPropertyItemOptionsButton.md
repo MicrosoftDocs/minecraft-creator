@@ -13,6 +13,11 @@ description: Contents of the @minecraft/server-editor.IPropertyItemOptionsButton
 
 ## Properties
 
+### **icon**
+`icon: string;`
+
+Type: *string*
+
 ### **variant**
 `variant: ButtonVariant;`
 

@@ -25,6 +25,11 @@ Contains a set of events that are applicable to the editor player.  Event callba
 
 Type: [*ExtensionContextAfterEvents*](ExtensionContextAfterEvents.md)
 
+### **blockPalette**
+`read-only blockPalette: BlockPaletteManager;`
+
+Type: [*BlockPaletteManager*](BlockPaletteManager.md)
+
 ### **clipboardManager**
 `read-only clipboardManager: ClipboardManager;`
 
@@ -78,3 +83,8 @@ Type: [*SettingsManager*](SettingsManager.md)
 The instance of the players Transaction Manager and the main interface through which the creator can create transaction records, and undo/redo previous transactions
 
 Type: [*TransactionManager*](TransactionManager.md)
+
+### **widgetManager**
+`read-only widgetManager: WidgetManager;`
+
+Type: [*WidgetManager*](WidgetManager.md)

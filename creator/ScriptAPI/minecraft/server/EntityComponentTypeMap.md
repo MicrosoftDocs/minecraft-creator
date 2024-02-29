@@ -22,6 +22,7 @@ type EntityComponentTypeMap = {
   'can_fly': EntityCanFlyComponent;
   'can_power_jump': EntityCanPowerJumpComponent;
   'color': EntityColorComponent;
+  'color2': EntityColor2Component;
   'equippable': EntityEquippableComponent;
   'fire_immune': EntityFireImmuneComponent;
   'floats_in_liquid': EntityFloatsInLiquidComponent;
@@ -55,6 +56,7 @@ type EntityComponentTypeMap = {
   'minecraft:can_fly': EntityCanFlyComponent;
   'minecraft:can_power_jump': EntityCanPowerJumpComponent;
   'minecraft:color': EntityColorComponent;
+  'minecraft:color2': EntityColor2Component;
   'minecraft:equippable': EntityEquippableComponent;
   'minecraft:fire_immune': EntityFireImmuneComponent;
   'minecraft:floats_in_liquid': EntityFloatsInLiquidComponent;
