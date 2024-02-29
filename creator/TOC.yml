@@ -130,6 +130,8 @@
           href: Documents/CommandsIntroduction.md
         - name: Introduction to Scripting
           href: Documents/ScriptingIntroduction.md
+        - name: Custom Components
+          href: Documents/CustomComponents.md
         - name: Commands
           items:  
           - name: Popular Commands
