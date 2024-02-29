@@ -74,6 +74,8 @@ Villager
 Wandering Trader
 - `wandering_trader`
 Wandering Trader
+- `minecraft:bogged`
+- `bogged`
 - `minecraft:mooshroom`
 Mooshroom
 - `mooshroom`
@@ -202,10 +204,6 @@ Zombie Horse
 Zombie
 - `zombie`
 Zombie
-- `minecraft:stray`
-Stray
-- `stray`
-Stray
 - `minecraft:drowned`
 Drowned
 - `drowned`
@@ -254,6 +252,10 @@ Blaze
 Warden
 - `warden`
 Warden
+- `minecraft:stray`
+Stray
+- `stray`
+Stray
 - `minecraft:husk`
 Husk
 - `husk`
@@ -406,6 +408,7 @@ Fireworks Rocket
 NPC
 - `npc`
 NPC
+- `editor:map_marker`
 
 ## References
 The following commands reference this enum:

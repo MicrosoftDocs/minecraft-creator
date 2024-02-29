@@ -10,53 +10,6 @@ description: Contents of the @minecraft/server.ScreenDisplay class.
 
 Contains information about user interface elements that are showing up on the screen.
 
-#### Examples
-##### ***setTitle.ts***
-```typescript
-import { world } from '@minecraft/server';
-
-world.afterEvents.playerSpawn.subscribe((event) => {
-    event.player.onScreenDisplay.setTitle('§o§6You respawned!§r');
-});
-```
-##### ***setTitleAndSubtitle.ts***
-```typescript
-import { world } from '@minecraft/server';
-
-world.afterEvents.playerSpawn.subscribe((event) => {
-    event.player.onScreenDisplay.setTitle('You respawned', {
-        stayDuration: 100,
-        fadeInDuration: 2,
-        fadeOutDuration: 4,
-        subtitle: 'Try not to die next time!',
-    });
-});
-```
-##### ***titleCountdown.ts***
-```typescript
-import { world, system } from '@minecraft/server';
-
-world.afterEvents.playerSpawn.subscribe(event => {
-    event.player.onScreenDisplay.setTitle('Get ready!', {
-        stayDuration: 220,
-        fadeInDuration: 2,
-        fadeOutDuration: 4,
-        subtitle: '10',
-    });
-
-    let countdown = 10;
-
-    const intervalId = system.runInterval(() => {
-        countdown--;
-        event.player.onScreenDisplay.updateSubtitle(countdown.toString());
-
-        if (countdown == 0) {
-            system.clearRun(intervalId);
-        }
-    }, 20);
-});
-```
-
 ## Methods
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getHiddenHudElements](#gethiddenhudelements)
@@ -216,53 +169,6 @@ Will cause a title to show up on the player's on screen display. Will clear the 
 > [!WARNING]
 > This function can throw errors.
 
-#### Examples
-##### ***setTitle.ts***
-```typescript
-import { world } from '@minecraft/server';
-
-world.afterEvents.playerSpawn.subscribe((event) => {
-    event.player.onScreenDisplay.setTitle('§o§6You respawned!§r');
-});
-```
-##### ***setTitleAndSubtitle.ts***
-```typescript
-import { world } from '@minecraft/server';
-
-world.afterEvents.playerSpawn.subscribe((event) => {
-    event.player.onScreenDisplay.setTitle('You respawned', {
-        stayDuration: 100,
-        fadeInDuration: 2,
-        fadeOutDuration: 4,
-        subtitle: 'Try not to die next time!',
-    });
-});
-```
-##### ***titleCountdown.ts***
-```typescript
-import { world, system } from '@minecraft/server';
-
-world.afterEvents.playerSpawn.subscribe(event => {
-    event.player.onScreenDisplay.setTitle('Get ready!', {
-        stayDuration: 220,
-        fadeInDuration: 2,
-        fadeOutDuration: 4,
-        subtitle: '10',
-    });
-
-    let countdown = 10;
-
-    const intervalId = system.runInterval(() => {
-        countdown--;
-        event.player.onScreenDisplay.updateSubtitle(countdown.toString());
-
-        if (countdown == 0) {
-            system.clearRun(intervalId);
-        }
-    }, 20);
-});
-```
-
 ### **updateSubtitle**
 `
 updateSubtitle(subtitle: (RawMessage | string)[] | RawMessage | string): void
@@ -301,51 +207,4 @@ Updates the subtitle if the subtitle was previously displayed via the setTitle m
       mc.system.clearRun(intervalId);
     }
   }, 20);
-```
-
-#### Examples
-##### ***setTitle.ts***
-```typescript
-import { world } from '@minecraft/server';
-
-world.afterEvents.playerSpawn.subscribe((event) => {
-    event.player.onScreenDisplay.setTitle('§o§6You respawned!§r');
-});
-```
-##### ***setTitleAndSubtitle.ts***
-```typescript
-import { world } from '@minecraft/server';
-
-world.afterEvents.playerSpawn.subscribe((event) => {
-    event.player.onScreenDisplay.setTitle('You respawned', {
-        stayDuration: 100,
-        fadeInDuration: 2,
-        fadeOutDuration: 4,
-        subtitle: 'Try not to die next time!',
-    });
-});
-```
-##### ***titleCountdown.ts***
-```typescript
-import { world, system } from '@minecraft/server';
-
-world.afterEvents.playerSpawn.subscribe(event => {
-    event.player.onScreenDisplay.setTitle('Get ready!', {
-        stayDuration: 220,
-        fadeInDuration: 2,
-        fadeOutDuration: 4,
-        subtitle: '10',
-    });
-
-    let countdown = 10;
-
-    const intervalId = system.runInterval(() => {
-        countdown--;
-        event.player.onScreenDisplay.updateSubtitle(countdown.toString());
-
-        if (countdown == 0) {
-            system.clearRun(intervalId);
-        }
-    }, 20);
-});
 ```

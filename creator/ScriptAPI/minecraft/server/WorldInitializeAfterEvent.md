@@ -12,4 +12,4 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Contains information and methods that can be used at the initialization of the scripting environment for a World. Also, use the supplied propertyRegistry object to register any dynamic properties, within the scope of the World Initialize execution.
+Contains information and methods that can be used at the initialization of the scripting environment for a World.
