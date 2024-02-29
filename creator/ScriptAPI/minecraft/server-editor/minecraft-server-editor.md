@@ -37,10 +37,12 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [InputModifier](InputModifier.md)
 - [KeyboardKey](KeyboardKey.md)
 - [KeyInputType](KeyInputType.md)
+- [LayoutDirection](LayoutDirection.md)
 - [MouseActionCategory](MouseActionCategory.md)
 - [MouseActionType](MouseActionType.md)
 - [MouseInputType](MouseInputType.md)
 - [PlaytestSessionResult](PlaytestSessionResult.md)
+- [WidgetGroupSelectionMode](WidgetGroupSelectionMode.md)
 
 # Type Aliases
 - [GraphicsSettingsPropertyTypeMap](GraphicsSettingsPropertyTypeMap.md)
@@ -70,17 +72,28 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 ## Classes
 - [BedrockEventSubscriptionCache](BedrockEventSubscriptionCache.md)
+- [BlockPaletteManager](BlockPaletteManager.md)
 - [ClipboardItem](ClipboardItem.md)
 - [ClipboardManager](ClipboardManager.md)
 - [Cursor](Cursor.md)
 - [CursorPropertiesChangeAfterEvent](CursorPropertiesChangeAfterEvent.md)
 - [CursorPropertyChangeAfterEventSignal](CursorPropertyChangeAfterEventSignal.md)
+- [CustomWidget](CustomWidget.md)
+- [CustomWidgetMoveEventData](CustomWidgetMoveEventData.md)
+- [DataStore](DataStore.md)
+- [DataStoreActionContainer](DataStoreActionContainer.md)
+- [DataStoreAfterEvents](DataStoreAfterEvents.md)
+- [DataStoreMenuContainer](DataStoreMenuContainer.md)
+- [DataStorePayloadAfterEvent](DataStorePayloadAfterEvent.md)
+- [DataStorePayloadAfterEventSignal](DataStorePayloadAfterEventSignal.md)
 - [Extension](Extension.md)
 - [ExtensionContext](ExtensionContext.md)
 - [ExtensionContextAfterEvents](ExtensionContextAfterEvents.md)
 - [GraphicsSettings](GraphicsSettings.md)
+- [LineWidget](LineWidget.md)
 - [Logger](Logger.md)
 - [MinecraftEditor](MinecraftEditor.md)
+- [MinecraftEditorInternal](MinecraftEditorInternal.md)
 - [ModeChangeAfterEvent](ModeChangeAfterEvent.md)
 - [ModeChangeAfterEventSignal](ModeChangeAfterEventSignal.md)
 - [PlaytestManager](PlaytestManager.md)
@@ -94,13 +107,20 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [TransactionManager](TransactionManager.md)
 - [UserDefinedTransactionHandle](UserDefinedTransactionHandle.md)
 - [UserDefinedTransactionHandlerId](UserDefinedTransactionHandlerId.md)
+- [Widget](Widget.md)
+- [WidgetGroup](WidgetGroup.md)
+- [WidgetManager](WidgetManager.md)
+- [WidgetStateChangeEventData](WidgetStateChangeEventData.md)
 
 ## Interfaces
 - [ClipboardWriteOptions](ClipboardWriteOptions.md)
 - [CursorProperties](CursorProperties.md)
+- [CustomWidgetCreateOptions](CustomWidgetCreateOptions.md)
 - [ExtensionOptionalParameters](ExtensionOptionalParameters.md)
 - [LogProperties](LogProperties.md)
 - [PlaytestGameOptions](PlaytestGameOptions.md)
+- [WidgetCreateOptions](WidgetCreateOptions.md)
+- [WidgetGroupCreateOptions](WidgetGroupCreateOptions.md)
 - [ActionManager](ActionManager.md)
 - [BuiltInUIManager](BuiltInUIManager.md)
 - [EventSink](EventSink.md)
@@ -240,3 +260,8 @@ Small utility for getting a string from an unknown exception type
 `static read-only editor: MinecraftEditor;`
 
 Type: [*MinecraftEditor*](MinecraftEditor.md)
+  
+### **editorInternal**
+`static read-only editorInternal: MinecraftEditorInternal;`
+
+Type: [*MinecraftEditorInternal*](MinecraftEditorInternal.md)

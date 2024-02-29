@@ -12,6 +12,13 @@ The options to create a pane.
 
 ## Properties
 
+### **direction**
+`direction: LayoutDirection;`
+
+Layout direction for sub panes
+
+Type: *LayoutDirection*
+
 ### **titleAltText**
 `titleAltText: string;`
 

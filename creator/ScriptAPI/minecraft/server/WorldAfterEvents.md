@@ -134,6 +134,8 @@ Type: [*ExplosionAfterEventSignal*](ExplosionAfterEventSignal.md)
 ### **gameRuleChange**
 `read-only gameRuleChange: GameRuleChangeAfterEventSignal;`
 
+This event fires when a world.gameRules property has changed.
+
 Type: [*GameRuleChangeAfterEventSignal*](GameRuleChangeAfterEventSignal.md)
 
 > [!CAUTION]
@@ -361,7 +363,7 @@ Type: [*WeatherChangeAfterEventSignal*](WeatherChangeAfterEventSignal.md)
 ### **worldInitialize**
 `read-only worldInitialize: WorldInitializeAfterEventSignal;`
 
-This event fires when the script environment is initialized on a World. In addition, you can register dynamic properties within the scope of a world Initialize event.
+This event fires when the script environment is initialized on a World.
 
 Type: [*WorldInitializeAfterEventSignal*](WorldInitializeAfterEventSignal.md)
 

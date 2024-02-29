@@ -77,6 +77,7 @@ I then re-used a custom smoke particle effect from the [particle samples](https:
 Be careful not to get too carried away with many entities with many animations that run commands... they could slow down the players' experience.
 
 ![Memory Jar](./Media/MemoryJar.png)
+
 _Ooof, in my first experience, it puts out a lot of smoke! But I kind-of like how odd that is, so I think I'll keep it._
 
 ## Dream Journal & Pencil

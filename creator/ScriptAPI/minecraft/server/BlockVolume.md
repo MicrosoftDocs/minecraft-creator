@@ -81,10 +81,16 @@ new BlockVolume(from: Vector3, to: Vector3)
 doesLocationTouchFaces(pos: Vector3): boolean
 `
 
+Check to see if the given location is directly adjacent to the outer surface of a BlockVolume.  
+
+
+
 #### **Parameters**
 - **pos**: [*Vector3*](Vector3.md)
+  
+  The world block location to test
 
-#### **Returns** *boolean*
+#### **Returns** *boolean* - If the location is either inside or more than 0 blocks away, the function will return false.,If the location is directly contacting the outer surface of the BlockVolume, the function will return true. - If the location is either inside or more than 0 blocks away, the function will return false.,If the location is directly contacting the outer surface of the BlockVolume, the function will return true.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -94,10 +100,14 @@ doesLocationTouchFaces(pos: Vector3): boolean
 doesVolumeTouchFaces(other: BlockVolume): boolean
 `
 
+Check to see if a two block volumes are directly adjacent and two faces touch.
+
 #### **Parameters**
 - **other**: [*BlockVolume*](BlockVolume.md)
+  
+  The volume to test
 
-#### **Returns** *boolean*
+#### **Returns** *boolean* - If the outer faces of both block volumes touch and are directly adjacent at any point, return true.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -106,6 +116,8 @@ doesVolumeTouchFaces(other: BlockVolume): boolean
 `
 intersects(other: BlockVolume): BlockVolumeIntersection
 `
+
+Return an enumeration which represents the intersection between two BlockVolume objects
 
 #### **Parameters**
 - **other**: [*BlockVolume*](BlockVolume.md)

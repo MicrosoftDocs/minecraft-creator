@@ -12,14 +12,20 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Contains information regarding a changed world.gameRules property.
+
 ## Properties
 
 ### **rule**
 `read-only rule: GameRule;`
 
+The rule identifier pertaining to the changed world.gameRules property.
+
 Type: [*GameRule*](GameRule.md)
 
 ### **value**
 `read-only value: boolean | number;`
+
+The value of the world.gameRules property after being changed.
 
 Type: *boolean* | *number*

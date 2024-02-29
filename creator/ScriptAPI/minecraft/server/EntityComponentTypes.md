@@ -27,6 +27,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 `CanPowerJump = "minecraft:can_power_jump"`
 ### **Color**
 `Color = "minecraft:color"`
+### **Color2**
+`Color2 = "minecraft:color2"`
 ### **Equippable**
 `Equippable = "minecraft:equippable"`
 ### **FireImmune**

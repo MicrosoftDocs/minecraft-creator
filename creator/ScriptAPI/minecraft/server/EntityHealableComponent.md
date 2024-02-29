@@ -15,21 +15,6 @@ Defines the interactions with this entity for healing it.
 
 ## Properties
 
-::: moniker range="=minecraft-bedrock-experimental"
-### **filters**
-`read-only filters: FilterGroup;`
-
-A set of filters that healable items might be associated with.
-
-Type: [*FilterGroup*](FilterGroup.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This property can throw errors when used.
-::: moniker-end
-
 ### **forceUse**
 `read-only forceUse: boolean;`
 

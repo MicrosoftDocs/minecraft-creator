@@ -98,6 +98,7 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:waxing_weathered_copper_door`
 - `minecraft:waxing_weathered_copper_grate`
 - `minecraft:waxing_weathered_copper_trapdoor`
+- `minecraft:WorkBench_recipeId_from_oak`
 - `minecraft:wolf_armor`
 - `minecraft:acacia_planks_from_stripped_wood`
 - `minecraft:acacia_planks_from_wood`

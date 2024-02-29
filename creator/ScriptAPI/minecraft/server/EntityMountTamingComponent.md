@@ -15,8 +15,6 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Extends
 - [*EntityComponent*](EntityComponent.md)
 
-Contains options for taming a rideable entity based on the entity that mounts it.
-
 ## Methods
 - [setTamed](#settamed)
 
@@ -25,12 +23,8 @@ Contains options for taming a rideable entity based on the entity that mounts it
 setTamed(showParticles: boolean): void
 `
 
-Sets this rideable entity as tamed.
-
 #### **Parameters**
 - **showParticles**: *boolean*
-  
-  Whether to show effect particles when this entity is tamed.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

@@ -87,6 +87,7 @@ Finally, I updated the loot table of the Dream Turkey in to generate dream_essen
 OK, now we have our dream turkey all set up! Time to test it. Run `gulp` in your folder, exit and reload your test world, and then `/summon mamm_cds:dream_turkey`.
 
 ![Dream Turkey and Friends](./Media/DreamTurkeyFriends.png)
+
 _Dream Turkey and Friends_
 
 ### This Part will Put You to Sleep
@@ -143,6 +144,7 @@ function startDreamSleep(player: Player) {
 What this code does is detect if the player eats a turkey for at least 60 ticks (3 seconds) by measuring the time in between the start and stop events. When the dream sequence starts, I’ll basically set the action bar with some text that will fade in and fade out. Because title/subtitle/and action bar are generally all controlled by the same fade in/fade out logic, we set the title too, here, even if we’re not really using that text.  If you try it out with `gulp` again, gulp should compile the TypeScript into JavaScript and push it into the Minecraft folder.
 
 ![Getting Sleepy after Eating Dream Turkey](./Media/DreamTurkeyGettingSleepy.png)
+
 _Outside in a rainstorm is not the best place for sleeping_
 
 So, that's it for this first part of building the Chill Dreams add-on. I got a start to the add-on by building a turkey as the "entry point" mob into our experience and implemented a simple dream effect.  We've got a turkey that will put you to sleep.
@@ -154,4 +156,5 @@ In the next part, we’ll implement the Dream effect more broadly – and in the
 --
 
 ![Baby Turkey with a Large Head](./Media/DreamTurkeyBaby.png)
+
 _The Dream Turkey has an unintended effect where, when it's a baby, it has a really large head. Love it._
