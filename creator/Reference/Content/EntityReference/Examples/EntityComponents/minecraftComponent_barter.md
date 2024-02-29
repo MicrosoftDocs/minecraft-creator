@@ -31,9 +31,10 @@ ms.service: minecraft-bedrock-edition
 ### piglin
 
 ```json
-"minecraft:behavior.barter": {
-    "priority": 3
-}
+"minecraft:barter": {
+    "barter_table": "loot_tables/entities/piglin_barter.json",
+    "cooldown_after_being_attacked": 20
+},
 ```
 
 ## Vanilla entities using `minecraft:barter`

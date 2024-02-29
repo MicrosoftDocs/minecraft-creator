@@ -27,4 +27,5 @@ ms.service: minecraft-bedrock-edition
     "condition": "query.block_state(custom:is_playing_sound) == false", //custom condition
     "event" : "sound_the_alarm", //custom event
     "target": "self"
+}
 ```
