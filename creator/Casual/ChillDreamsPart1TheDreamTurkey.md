@@ -22,7 +22,7 @@ This is the first in a three-part set of articles. Section 2 and 3 are coming in
 
 1. The Dream Turkey - _you are here_
 1. [Making Dreams Come True](./ChillDreamsPart2MakingDreamsComeTrue.md)
-1. Smells Like Memories - coming soon!
+1. [Smells Like Memories](./ChillDreamsPart3SmellsLikeMemories.md)
 
 You can get the sample from this project from [https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/). Note that there are subfolders for each part of this series, along with the "complete" sample.
 
