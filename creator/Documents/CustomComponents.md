@@ -81,7 +81,7 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
 ```
 
 In the above example, a custom component is registered with the name `content:turn_to_air` that listens to the `onStepOn` event.
-It is possible to register a JavasSript class as a custom component as well; the only thing that matters is that the `BlockCustomComponent` interface is adhered to. Here is an example that uses a class pattern instead.
+It is possible to register a JavaScript class as a custom component as well; the only thing that matters is that the `BlockCustomComponent` interface is adhered to. Here is an example that uses a class pattern instead.
 
 ```typescript
 class TurnToAirComponent implements BlockCustomComponent {
