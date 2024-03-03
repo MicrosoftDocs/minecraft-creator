@@ -39,14 +39,10 @@ ms.service: minecraft-bedrock-edition
 ```json
 "minecraft:behavior.slime_attack":{
     "priority": 2,
-    "stalk_speed": 0.8,
-    "max_stalk_dist": 12.0,
-    "leap_height": 0.7,
-    "leap_dist": 0.65,
-    "pounce_max_dist": 5.0,
-    "interest_time": 4.0,
-    "stuck_time": 2.0,
-    "strike_dist": 2.0
+    "set_persistent": true,
+    "speed_multiplier": 3.0,
+    "x_max_rotation": 15.0,
+    "y_max_rotation": 15.0
 }
 ```
 
