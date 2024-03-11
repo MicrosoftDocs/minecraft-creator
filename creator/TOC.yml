@@ -96,6 +96,8 @@
           href: Documents/AddCustomSounds.md
         - name: Introduction to Recipes
           href: Documents/RecipeIntroduction.md
+        - name: Target Selectors
+          href: Documents/targetselectors.md
         - name: Packaging Content
           items:
           - name: Packaging a Skin Pack
