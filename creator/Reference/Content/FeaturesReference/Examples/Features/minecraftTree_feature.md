@@ -889,7 +889,7 @@ object "minecraft:tree_feature" : opt
     ],
     "may_grow_on": [
       "minecraft:dirt",
-      "minecraft:grass",
+      "minecraft:grass_block",
       "minecraft:podzol",
       "minecraft:dirt_with_roots",
       "minecraft:moss_block",
@@ -956,50 +956,28 @@ object "minecraft:tree_feature" : opt
       }
     ],
     "may_replace": [
-      "minecraft:air",
-      "minecraft:mangrove_leaves",
+      "minecraft:oak_leaves",
+      "minecraft:spruce_leaves",
+      "minecraft:birch_leaves",
+      "minecraft:jungle_leaves",
+      "minecraft:acacia_leaves",
+      "minecraft:dark_oak_leaves",
+      "minecraft:azalea",
+      "minecraft:flowering_azalea",
       "minecraft:azalea_leaves",
       "minecraft:azalea_leaves_flowered",
-      {
-        "name": "minecraft:leaves",
-        "states": {
-          "old_leaf_type": "oak"
-        }
-      },
-      {
-        "name": "minecraft:leaves",
-        "states": {
-          "old_leaf_type": "spruce"
-        }
-      },
-      {
-        "name": "minecraft:leaves",
-        "states": {
-          "old_leaf_type": "birch"
-        }
-      },
-      {
-        "name": "minecraft:leaves",
-        "states": {
-          "old_leaf_type": "jungle"
-        }
-      },
-      {
-        "name": "minecraft:leaves2",
-        "states": {
-          "new_leaf_type": "acacia"
-        }
-      },
-      {
-        "name": "minecraft:leaves2",
-        "states": {
-          "new_leaf_type": "dark_oak"
-        }
-      }
+      "minecraft:mangrove_leaves",
+      "minecraft:water",
+      "minecraft:flowing_water",
+      "minecraft:moss_carpet",
+      "minecraft:tallgrass",
+      "minecraft:grass_block",
+      "minecraft:air",
+      "minecraft:double_plant"
     ],
     "may_grow_through": [
       "minecraft:dirt",
-      "minecraft:grass",
+      "minecraft:grass_block",
       "minecraft:crimson_nylium",
       "minecraft:nether_wart_block",
       "minecraft:nether_wart",

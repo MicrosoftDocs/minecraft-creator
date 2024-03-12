@@ -51,7 +51,6 @@ ms.service: minecraft-bedrock-edition
     "random_stop_interval": 0,
     "reach_multiplier": 1.5,
     "speed_multiplier": 1.0,
-    "attack_duration": 0.75,
     "hit_delay_pct": 0.5
 }
 ```

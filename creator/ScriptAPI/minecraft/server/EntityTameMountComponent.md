@@ -3,11 +3,11 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/server.EntityMountTamingComponent Class
-description: Contents of the @minecraft/server.EntityMountTamingComponent class.
+title: minecraft/server.EntityTameMountComponent Class
+description: Contents of the @minecraft/server.EntityTameMountComponent class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# EntityMountTamingComponent Class
+# EntityTameMountComponent Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -15,16 +15,22 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Extends
 - [*EntityComponent*](EntityComponent.md)
 
-## Methods
-- [setTamed](#settamed)
+Contains options for taming a rideable entity based on the entity that mounts it.
 
-### **setTamed**
+## Methods
+- [tame](#tame)
+
+### **tame**
 `
-setTamed(showParticles: boolean): void
+tame(showParticles: boolean): void
 `
+
+Sets this rideable entity as tamed.
 
 #### **Parameters**
 - **showParticles**: *boolean*
+  
+  Whether to show effect particles when this entity is tamed.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

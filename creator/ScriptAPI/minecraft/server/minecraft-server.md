@@ -16,12 +16,13 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "1.8.0"
+    "version": "1.9.0"
 }
 ```
 
 ## Available Versions
 - `1.11.0-beta`
+- `1.9.0`
 - `1.8.0`
 - `1.7.0`
 - `1.6.0`
@@ -81,7 +82,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [Block](Block.md)
 - [BlockAreaSize](BlockAreaSize.md)
 - [BlockComponent](BlockComponent.md)
-- [BlockComponentStepOnEvent](BlockComponentStepOnEvent.md)
 - [BlockEvent](BlockEvent.md)
 - [BlockExplodeAfterEvent](BlockExplodeAfterEvent.md)
 - [BlockExplodeAfterEventSignal](BlockExplodeAfterEventSignal.md)
@@ -98,7 +98,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BlockStates](BlockStates.md)
 - [BlockStateType](BlockStateType.md)
 - [BlockType](BlockType.md)
-- [BlockTypeRegistry](BlockTypeRegistry.md)
 - [BlockTypes](BlockTypes.md)
 - [BlockVolume](BlockVolume.md)
 - [BlockVolumeBase](BlockVolumeBase.md)
@@ -184,7 +183,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntityLoadAfterEvent](EntityLoadAfterEvent.md)
 - [EntityLoadAfterEventSignal](EntityLoadAfterEventSignal.md)
 - [EntityMarkVariantComponent](EntityMarkVariantComponent.md)
-- [EntityMountTamingComponent](EntityMountTamingComponent.md)
 - [EntityMovementAmphibiousComponent](EntityMovementAmphibiousComponent.md)
 - [EntityMovementBasicComponent](EntityMovementBasicComponent.md)
 - [EntityMovementComponent](EntityMovementComponent.md)
@@ -218,6 +216,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntitySpawnAfterEventSignal](EntitySpawnAfterEventSignal.md)
 - [EntityStrengthComponent](EntityStrengthComponent.md)
 - [EntityTameableComponent](EntityTameableComponent.md)
+- [EntityTameMountComponent](EntityTameMountComponent.md)
 - [EntityType](EntityType.md)
 - [EntityTypeFamilyComponent](EntityTypeFamilyComponent.md)
 - [EntityTypeIterator](EntityTypeIterator.md)
@@ -336,7 +335,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [Trigger](Trigger.md)
 - [TripWireTripAfterEvent](TripWireTripAfterEvent.md)
 - [TripWireTripAfterEventSignal](TripWireTripAfterEventSignal.md)
-- [Vector](Vector.md)
 - [WatchdogTerminateBeforeEvent](WatchdogTerminateBeforeEvent.md)
 - [WatchdogTerminateBeforeEventSignal](WatchdogTerminateBeforeEventSignal.md)
 - [WeatherChangeAfterEvent](WeatherChangeAfterEvent.md)
@@ -348,12 +346,9 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [WorldBeforeEvents](WorldBeforeEvents.md)
 - [WorldInitializeAfterEvent](WorldInitializeAfterEvent.md)
 - [WorldInitializeAfterEventSignal](WorldInitializeAfterEventSignal.md)
-- [WorldInitializeBeforeEvent](WorldInitializeBeforeEvent.md)
-- [WorldInitializeBeforeEventSignal](WorldInitializeBeforeEventSignal.md)
 
 ## Interfaces
 - [BiomeSearchOptions](BiomeSearchOptions.md)
-- [BlockCustomComponent](BlockCustomComponent.md)
 - [BlockEventOptions](BlockEventOptions.md)
 - [BlockFillOptions](BlockFillOptions.md)
 - [BlockFilter](BlockFilter.md)
@@ -381,14 +376,22 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntityEventOptions](EntityEventOptions.md)
 - [EntityHitInformation](EntityHitInformation.md)
 - [EntityQueryOptions](EntityQueryOptions.md)
+- [EntityQueryPropertyOptions](EntityQueryPropertyOptions.md)
 - [EntityQueryScoreOptions](EntityQueryScoreOptions.md)
 - [EntityRaycastHit](EntityRaycastHit.md)
 - [EntityRaycastOptions](EntityRaycastOptions.md)
+- [EqualsComparison](EqualsComparison.md)
 - [ExplosionOptions](ExplosionOptions.md)
+- [GreaterThanComparison](GreaterThanComparison.md)
+- [GreaterThanOrEqualsComparison](GreaterThanOrEqualsComparison.md)
+- [LessThanComparison](LessThanComparison.md)
+- [LessThanOrEqualsComparison](LessThanOrEqualsComparison.md)
 - [MusicOptions](MusicOptions.md)
+- [NotEqualsComparison](NotEqualsComparison.md)
 - [PlayAnimationOptions](PlayAnimationOptions.md)
 - [PlayerSoundOptions](PlayerSoundOptions.md)
 - [ProjectileShootOptions](ProjectileShootOptions.md)
+- [RangeComparison](RangeComparison.md)
 - [RawMessage](RawMessage.md)
 - [RawMessageScore](RawMessageScore.md)
 - [RawText](RawText.md)
@@ -419,7 +422,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **HudElementsCount**
-`static read-only HudElementsCount = 11;`
+`static read-only HudElementsCount = 13;`
 
 Type: *number*
 

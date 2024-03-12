@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .BlockPistonState Enumeration
 description: Contents of the .BlockPistonState enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockPistonState Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 An enumeration describing the state of a block piston.
 

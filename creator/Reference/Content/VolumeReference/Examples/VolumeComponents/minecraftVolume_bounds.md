@@ -15,17 +15,13 @@ ms.service: minecraft-bedrock-edition
 >
 >To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md).
 
-`minecraft:bounds` is a Volume Component defined by three parameters. Each item has the following properties:
+`minecraft:bounds` is a Volume Component defined by three parameters.
 
-## Default Parameter
-
-|Default Value|Type |
-|:----|:----|
-|0.0| Decimal|
-
-## Extra Parameters
-
-`minecraft:bounds` does not use any extra parameters.
+| Name| Default Value| Type| Description |
+|:-----------:|:-----------:|:-----------:|:-----------:|
+| dimension| *not set*| String| The name of the dimension the bounding box will exist in: one of 'overworld', 'nether' or 'the end'. |
+| max| *not set*| Vector [a, b, c]| The maximum block position of the bounding box. |
+| min| *not set*| Vector [a, b, c]| The minimum block position of the bounding box. |
 
 ## Example
 

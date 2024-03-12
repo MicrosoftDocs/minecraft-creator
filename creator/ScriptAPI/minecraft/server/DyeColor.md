@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .DyeColor Enumeration
 description: Contents of the .DyeColor enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # DyeColor Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Specifies different colors for use as dye.
 

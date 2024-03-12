@@ -140,6 +140,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [IPropertyItemOptionsButton](IPropertyItemOptionsButton.md)
 - [IPropertyItemOptionsDataPicker](IPropertyItemOptionsDataPicker.md)
 - [IPropertyItemOptionsDropdown](IPropertyItemOptionsDropdown.md)
+- [IPropertyItemOptionsImage](IPropertyItemOptionsImage.md)
 - [IPropertyItemOptionsNumber](IPropertyItemOptionsNumber.md)
 - [IPropertyItemOptionsSubPane](IPropertyItemOptionsSubPane.md)
 - [IPropertyItemOptionsText](IPropertyItemOptionsText.md)

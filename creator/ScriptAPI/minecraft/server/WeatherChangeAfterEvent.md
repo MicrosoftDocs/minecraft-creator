@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.WeatherChangeAfterEvent Class
 description: Contents of the @minecraft/server.WeatherChangeAfterEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # WeatherChangeAfterEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains information related to changes in weather in the environment.
 

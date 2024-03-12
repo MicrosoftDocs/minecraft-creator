@@ -386,8 +386,6 @@
       href: minecraft/server/EntityLoadAfterEventSignal.md
     - name: EntityMarkVariantComponent
       href: minecraft/server/EntityMarkVariantComponent.md
-    - name: EntityMountTamingComponent
-      href: minecraft/server/EntityMountTamingComponent.md
     - name: EntityMovementAmphibiousComponent
       href: minecraft/server/EntityMovementAmphibiousComponent.md
     - name: EntityMovementBasicComponent
@@ -454,6 +452,8 @@
       href: minecraft/server/EntityStrengthComponent.md
     - name: EntityTameableComponent
       href: minecraft/server/EntityTameableComponent.md
+    - name: EntityTameMountComponent
+      href: minecraft/server/EntityTameMountComponent.md
     - name: EntityType
       href: minecraft/server/EntityType.md
     - name: EntityTypeFamilyComponent
@@ -690,8 +690,6 @@
       href: minecraft/server/TripWireTripAfterEvent.md
     - name: TripWireTripAfterEventSignal
       href: minecraft/server/TripWireTripAfterEventSignal.md
-    - name: Vector
-      href: minecraft/server/Vector.md
     - name: WatchdogTerminateBeforeEvent
       href: minecraft/server/WatchdogTerminateBeforeEvent.md
     - name: WatchdogTerminateBeforeEventSignal
@@ -776,22 +774,38 @@
       href: minecraft/server/EntityHitInformation.md
     - name: EntityQueryOptions
       href: minecraft/server/EntityQueryOptions.md
+    - name: EntityQueryPropertyOptions
+      href: minecraft/server/EntityQueryPropertyOptions.md
     - name: EntityQueryScoreOptions
       href: minecraft/server/EntityQueryScoreOptions.md
     - name: EntityRaycastHit
       href: minecraft/server/EntityRaycastHit.md
     - name: EntityRaycastOptions
       href: minecraft/server/EntityRaycastOptions.md
+    - name: EqualsComparison
+      href: minecraft/server/EqualsComparison.md
     - name: ExplosionOptions
       href: minecraft/server/ExplosionOptions.md
+    - name: GreaterThanComparison
+      href: minecraft/server/GreaterThanComparison.md
+    - name: GreaterThanOrEqualsComparison
+      href: minecraft/server/GreaterThanOrEqualsComparison.md
+    - name: LessThanComparison
+      href: minecraft/server/LessThanComparison.md
+    - name: LessThanOrEqualsComparison
+      href: minecraft/server/LessThanOrEqualsComparison.md
     - name: MusicOptions
       href: minecraft/server/MusicOptions.md
+    - name: NotEqualsComparison
+      href: minecraft/server/NotEqualsComparison.md
     - name: PlayAnimationOptions
       href: minecraft/server/PlayAnimationOptions.md
     - name: PlayerSoundOptions
       href: minecraft/server/PlayerSoundOptions.md
     - name: ProjectileShootOptions
       href: minecraft/server/ProjectileShootOptions.md
+    - name: RangeComparison
+      href: minecraft/server/RangeComparison.md
     - name: RawMessage
       href: minecraft/server/RawMessage.md
     - name: RawMessageScore
@@ -996,6 +1010,8 @@
       href: minecraft/server-editor/IPropertyItemOptionsDataPicker.md
     - name: IPropertyItemOptionsDropdown
       href: minecraft/server-editor/IPropertyItemOptionsDropdown.md
+    - name: IPropertyItemOptionsImage
+      href: minecraft/server-editor/IPropertyItemOptionsImage.md
     - name: IPropertyItemOptionsNumber
       href: minecraft/server-editor/IPropertyItemOptionsNumber.md
     - name: IPropertyItemOptionsSubPane
