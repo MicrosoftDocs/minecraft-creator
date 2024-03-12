@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.PlayAnimationOptions Interface
 description: Contents of the @minecraft/server.PlayAnimationOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlayAnimationOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains additional options for how an animation is played.
 

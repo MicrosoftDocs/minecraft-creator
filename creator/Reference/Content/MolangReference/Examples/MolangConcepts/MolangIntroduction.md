@@ -35,6 +35,7 @@ To know which Versioned Changes are in effect, look at the `"min_engine_version"
 | 1.20.10| Renamed `block_property` and `has_block_property` to `block_state` and `has_block_state` post this version. |
 | 1.20.40| Deprecated `block_property` and `has_block_property` |
 | 1.20.50| `block_property` is no longer supported, as that logic is done in the animation. Additionally, `is_scenting` `is_rising` and `is_feelingHappy` queries are no longer available;  `timer_flag_1`, `timer_flag_2`, and `timer_flag_3` can be used instead. |
+| 1.20.70| Queries surface_particle_texture_size, surface_particle_texture_coordinate, and surface_particle_texture_size now register leaf blocks as supporting for step particles|
 
 ## Lexical Structure
 

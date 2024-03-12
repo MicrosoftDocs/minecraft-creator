@@ -30,8 +30,8 @@ Biomes describe how a local patch of the world should look and behave. By writin
 
 All biomes should specify the version that they target via the `format_version` field. The remainder of the biome data is divided up into independent JSON sub-objects, or components. In general you can think of the presence of a component as defining what game behaviors a biome participates in with the component fields defining how it participates. Broadly there are two categories of components:
 
-1. Namespaced components (i.e. those with a `name:` prefix) map to specific behaviors in-game; they may have member fields that parameterize that behavior; only names that have a valid mapping are supported
-1. Components with no namespace are treated as 'tags': any name consisting of alphanumeric characters, '.' and '_' is permitted; the tag is attached to the biome so that either code or data may check for its existence; tag components may not have member fields.
+1. Namespaced components (i.e. those with a 'name:' prefix) map to specific behaviors in-game; they may have member fields that parameterize that behavior; only names that have a valid mapping are supported.
+1. 'tags' are defined under the "minecraft:tags" component: any tag consisting of alphanumeric characters, '.' and '_' is permitted; the tag is attached to the biome so that either code or data may check for its existence;
 
 See the full biome schema below for additional details and the full list of namespaced components.
 
@@ -40,7 +40,7 @@ See the full biome schema below for additional details and the full list of name
 ```json
 {
   "plains": {
-    "format_version": "1.12.0",
+    "format_version": "1.20.60",
 
     "minecraft:climate": {
       "downfall": 0.4,
@@ -55,7 +55,7 @@ See the full biome schema below for additional details and the full list of name
       "sea_floor_material": "minecraft:gravel",
       "foundation_material": "minecraft:stone",
       "mid_material": "minecraft:dirt",
-      "top_material": "minecraft:grass"
+      "top_material": "minecraft:grass_block"
     },
     "minecraft:overworld_generation_rules": {
       "hills_transformation": [
@@ -69,11 +69,14 @@ See the full biome schema below for additional details and the full list of name
         [ "cold", 1 ]
       ]
     },
-
-    "animal": {},
-    "monster": {},
-    "overworld": {},
-    "plains": {}
+    "minecraft:tags": {
+      "tags": [
+        "animal",
+        "monster",
+        "overworld",
+        "plains"
+      ]
+    }
   }
 }
 ```

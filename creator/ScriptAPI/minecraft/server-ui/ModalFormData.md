@@ -48,6 +48,9 @@ function showExampleModal(player: Player) {
 - [dropdown](#dropdown)
 - [show](#show)
 - [slider](#slider)
+::: moniker range="=minecraft-bedrock-experimental"
+- [submitButton](#submitbutton)
+::: moniker-end
 - [textField](#textfield)
 - [title](#title)
 - [toggle](#toggle)
@@ -110,6 +113,21 @@ Adds a numeric slider to the form.
 - **defaultValue**?: *number* = `null`
 
 #### **Returns** [*ModalFormData*](ModalFormData.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **submitButton**
+`
+submitButton(submitButtonText: minecraftserver.RawMessage | string): ModalFormData
+`
+
+#### **Parameters**
+- **submitButtonText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
+
+#### **Returns** [*ModalFormData*](ModalFormData.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **textField**
 `

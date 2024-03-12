@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ContainerSlot Class
 description: Contents of the @minecraft/server.ContainerSlot class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ContainerSlot Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Represents a slot within a broader container (e.g., entity inventory.)
 

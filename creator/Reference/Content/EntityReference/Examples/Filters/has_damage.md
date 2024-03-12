@@ -40,12 +40,12 @@ Below is a list of damage types that can be used for the `value` string.
 | override|  |
 | piston|  |
 | projectile|  |
+| self_destruct|  |
 | sonic_boom|  |
 | stalactite|  |
 | stalagmite|  |
 | starve|  |
 | suffocation|  |
-| suicide|  |
 | thorns|  |
 | void|  |
 | wither|  |

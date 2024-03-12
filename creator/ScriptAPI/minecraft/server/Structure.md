@@ -33,6 +33,9 @@ Type: [*Vector3*](Vector3.md)
 - [getBlockPermutation](#getblockpermutation)
 - [getIsWaterlogged](#getiswaterlogged)
 - [isValid](#isvalid)
+- [saveAs](#saveas)
+- [saveToWorld](#savetoworld)
+- [setBlockPermutation](#setblockpermutation)
 
 ### **getBlockPermutation**
 `
@@ -70,3 +73,53 @@ isValid(): boolean
 `
 
 #### **Returns** *boolean*
+
+### **saveAs**
+`
+saveAs(identifier: string, saveMode?: StructureSaveMode): Structure
+`
+
+#### **Parameters**
+- **identifier**: *string*
+- **saveMode**?: [*StructureSaveMode*](StructureSaveMode.md) = `1`
+
+#### **Returns** [*Structure*](Structure.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
+
+### **saveToWorld**
+`
+saveToWorld(): void
+`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*InvalidStructureError*](InvalidStructureError.md)
+
+### **setBlockPermutation**
+`
+setBlockPermutation(location: Vector3, blockPermutation?: BlockPermutation, waterlogged?: boolean): void
+`
+
+#### **Parameters**
+- **location**: [*Vector3*](Vector3.md)
+- **blockPermutation**?: [*BlockPermutation*](BlockPermutation.md) = `null`
+- **waterlogged**?: *boolean* = `false`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)

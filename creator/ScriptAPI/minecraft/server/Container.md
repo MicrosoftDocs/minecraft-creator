@@ -90,9 +90,7 @@ Type: *number*
 - [addItem](#additem)
 - [clearAll](#clearall)
 - [getItem](#getitem)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getSlot](#getslot)
-::: moniker-end
 - [isValid](#isvalid)
 - [moveItem](#moveitem)
 - [setItem](#setitem)
@@ -168,7 +166,6 @@ function getFirstHotbarItem(player: Player): ItemStack | undefined {
 }
 ```
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getSlot**
 `
 getSlot(slot: number): ContainerSlot
@@ -183,14 +180,10 @@ Returns a container slot. This acts as a reference to a slot at the given index 
 
 #### **Returns** [*ContainerSlot*](ContainerSlot.md)
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 >
 > Throws if the container is invalid or if the `slot` index is out of bounds.
-::: moniker-end
 
 ### **isValid**
 `

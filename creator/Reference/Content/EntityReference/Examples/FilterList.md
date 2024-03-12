@@ -94,5 +94,6 @@ Below is a list of all the available filters within Minecraft: Bedrock Edition f
 |[surface_mob](Filters/surface_mob.md)|Tests if the subject is a surface mob. |
 |[target_distance](Filters/target_distance.md)|Tests the distance between the calling entity and its target. |
 |[trusts](Filters/trusts.md)|Returns true if the subject is trusted by entity. |
+|[was_last_hurt_by](Filters/was_last_hurt_by.md)|Tests if the subject is the last player who attacked the entity in the last 400 seconds, or the last mob to do so in the last 60 seconds.|
 |[weather_at_position](Filters/weather_at_position.md)|Tests the current weather, at the entities position, against a provided weather value.|
 |[weather](Filters/weather.md)|Tests for the current weather state the entity is experiencing. |

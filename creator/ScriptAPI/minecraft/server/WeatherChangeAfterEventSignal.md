@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.WeatherChangeAfterEventSignal Class
 description: Contents of the @minecraft/server.WeatherChangeAfterEventSignal class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # WeatherChangeAfterEventSignal Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Manages callbacks that are connected to weather changing.
 

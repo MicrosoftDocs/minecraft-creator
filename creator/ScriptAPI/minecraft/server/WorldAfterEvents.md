@@ -50,17 +50,12 @@ This event is fired when an entity event has been triggered that will update the
 
 Type: [*DataDrivenEntityTriggerAfterEventSignal*](DataDrivenEntityTriggerAfterEventSignal.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **effectAdd**
 `read-only effectAdd: EffectAddAfterEventSignal;`
 
 This event fires when an effect, like poisoning, is added to an entity.
 
 Type: [*EffectAddAfterEventSignal*](EffectAddAfterEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **entityDie**
 `read-only entityDie: EntityDieAfterEventSignal;`
@@ -118,17 +113,12 @@ This event fires when an entity is spawned.
 
 Type: [*EntitySpawnAfterEventSignal*](EntitySpawnAfterEventSignal.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **explosion**
 `read-only explosion: ExplosionAfterEventSignal;`
 
 This event is fired after an explosion occurs.
 
 Type: [*ExplosionAfterEventSignal*](ExplosionAfterEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **gameRuleChange**
@@ -217,17 +207,12 @@ Type: [*ServerMessageAfterEventSignal*](ServerMessageAfterEventSignal.md)
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **pistonActivate**
 `read-only pistonActivate: PistonActivateAfterEventSignal;`
 
 This event fires when a piston expands or retracts.
 
 Type: [*PistonActivateAfterEventSignal*](PistonActivateAfterEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **playerBreakBlock**
 `read-only playerBreakBlock: PlayerBreakBlockAfterEventSignal;`
@@ -347,17 +332,12 @@ A trip wire was tripped.
 
 Type: [*TripWireTripAfterEventSignal*](TripWireTripAfterEventSignal.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **weatherChange**
 `read-only weatherChange: WeatherChangeAfterEventSignal;`
 
 This event will be triggered when the weather changes within Minecraft.
 
 Type: [*WeatherChangeAfterEventSignal*](WeatherChangeAfterEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **worldInitialize**
