@@ -21,6 +21,8 @@ Type of item that can be added to the property pane
 `Divider = editorUI:Divider`
 ### **Dropdown**
 `Dropdown = editorUI:Dropdown`
+### **Image**
+`Image = editorUI:Image`
 ### **Number**
 `Number = editorUI:Number`
 ### **String**

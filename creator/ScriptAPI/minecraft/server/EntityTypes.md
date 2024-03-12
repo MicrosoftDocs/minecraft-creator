@@ -35,6 +35,6 @@ Retrieves an entity type using a string-based identifier.
 static getAll(): EntityType[]
 `
 
-Retrieves an iterator of all entity types within this world.
+Retrieves a set of all entity types within this world.
 
 #### **Returns** [*EntityType*](EntityType.md)[]

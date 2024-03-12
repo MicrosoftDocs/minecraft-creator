@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockStateType Class
 description: Contents of the @minecraft/server.BlockStateType class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockStateType Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Represents a configurable state value of a block instance.  For example, the facing direction of stairs is accessible as a block state. 
 

@@ -50,9 +50,7 @@ function giveEquipment(player: Player) {
 
 ## Methods
 - [getEquipment](#getequipment)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getEquipmentSlot](#getequipmentslot)
-::: moniker-end
 - [setEquipment](#setequipment)
 
 ### **getEquipment**
@@ -72,7 +70,6 @@ Gets the equipped item for the given EquipmentSlot.
 > [!WARNING]
 > This function can throw errors.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getEquipmentSlot**
 `
 getEquipmentSlot(equipmentSlot: EquipmentSlot): ContainerSlot
@@ -87,12 +84,8 @@ Gets the ContainerSlot corresponding to the given EquipmentSlot.
 
 #### **Returns** [*ContainerSlot*](ContainerSlot.md) - Returns the ContainerSlot corresponding to the given EquipmentSlot.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
-::: moniker-end
 
 ### **setEquipment**
 `

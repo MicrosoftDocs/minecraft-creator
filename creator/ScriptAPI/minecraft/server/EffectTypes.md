@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EffectTypes Class
 description: Contents of the @minecraft/server.EffectTypes class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EffectTypes Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Represents a type of effect - like poison - that can be applied to an entity.
 

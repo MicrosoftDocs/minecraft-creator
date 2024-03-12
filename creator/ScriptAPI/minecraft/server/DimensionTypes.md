@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.DimensionTypes Class
 description: Contents of the @minecraft/server.DimensionTypes class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # DimensionTypes Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Used for accessing all available dimension types.
 

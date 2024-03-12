@@ -36,17 +36,12 @@ Type: [*DataDrivenEntityTriggerBeforeEventSignal*](DataDrivenEntityTriggerBefore
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **effectAdd**
 `read-only effectAdd: EffectAddBeforeEventSignal;`
 
 This event is triggered after an event has been added to an entity.
 
 Type: [*EffectAddBeforeEventSignal*](EffectAddBeforeEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **entityRemove**
 `read-only entityRemove: EntityRemoveBeforeEventSignal;`
@@ -55,17 +50,12 @@ Fires before an entity is removed from the world (for example, unloaded or remov
 
 Type: [*EntityRemoveBeforeEventSignal*](EntityRemoveBeforeEventSignal.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **explosion**
 `read-only explosion: ExplosionBeforeEventSignal;`
 
 This event is fired after an explosion occurs.
 
 Type: [*ExplosionBeforeEventSignal*](ExplosionBeforeEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **itemUse**
 `read-only itemUse: ItemUseBeforeEventSignal;`
@@ -146,18 +136,6 @@ Type: [*PlayerPlaceBlockBeforeEventSignal*](PlayerPlaceBlockBeforeEventSignal.md
 `read-only weatherChange: WeatherChangeBeforeEventSignal;`
 
 Type: [*WeatherChangeBeforeEventSignal*](WeatherChangeBeforeEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
-### **worldInitialize**
-`read-only worldInitialize: WorldInitializeBeforeEventSignal;`
-
-This event fires immediately when the script environment is initialized on a World. Not all script functionality may be available. For guaranteed access to world state, use the world initialize after event.
-
-Type: [*WorldInitializeBeforeEventSignal*](WorldInitializeBeforeEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.

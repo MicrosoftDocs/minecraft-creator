@@ -68,6 +68,7 @@ Type: *number*
 - [addDivider](#adddivider)
 - [addDropdown](#adddropdown)
 - [addEntityPicker](#addentitypicker)
+- [addImage](#addimage)
 - [addNumber](#addnumber)
 - [addString](#addstring)
 - [addText](#addtext)
@@ -158,6 +159,18 @@ Adds an EntityPicker item to the pane.
 - **obj**: *T*
 - **property**: *Prop*
 - **options**: *IPropertyItemOptionsDataPicker*
+
+#### **Returns** *IPropertyItem<T, Prop>*
+
+### **addImage**
+`
+addImage(obj: T, property: Prop, options: IPropertyItemOptionsImage): IPropertyItem<T, Prop>
+`
+
+#### **Parameters**
+- **obj**: *T*
+- **property**: *Prop*
+- **options**: *IPropertyItemOptionsImage*
 
 #### **Returns** *IPropertyItem<T, Prop>*
 

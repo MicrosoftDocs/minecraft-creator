@@ -81,8 +81,6 @@ monikerRange: "=minecraft-bedrock-experimental"
 `Leashable = "minecraft:leashable"`
 ### **MarkVariant**
 `MarkVariant = "minecraft:mark_variant"`
-### **MountTaming**
-`MountTaming = "minecraft:tamemount"`
 ### **Movement**
 `Movement = "minecraft:movement"`
 ### **MovementAmphibious**
@@ -135,6 +133,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 `Strength = "minecraft:strength"`
 ### **Tameable**
 `Tameable = "minecraft:tameable"`
+### **TameMount**
+`TameMount = "minecraft:tamemount"`
 ### **TypeFamily**
 `TypeFamily = "minecraft:type_family"`
 ### **UnderwaterMovement**

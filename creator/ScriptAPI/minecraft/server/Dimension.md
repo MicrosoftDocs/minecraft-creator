@@ -30,9 +30,7 @@ Identifier of the dimension.
 Type: *string*
 
 ## Methods
-::: moniker range="=minecraft-bedrock-experimental"
 - [createExplosion](#createexplosion)
-::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [fillBlocks](#fillblocks)
 ::: moniker-end
@@ -58,7 +56,6 @@ Type: *string*
 - [spawnItem](#spawnitem)
 - [spawnParticle](#spawnparticle)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **createExplosion**
 `
 createExplosion(location: Vector3, radius: number, explosionOptions?: ExplosionOptions): boolean
@@ -78,9 +75,6 @@ Creates an explosion at the specified location.
   Additional configurable options for the explosion.
 
 #### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -107,7 +101,6 @@ function createExplosions(location: DimensionLocation) {
     location.dimension.createExplosion(location, 10, { allowUnderwater: true });
 }
 ```
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **fillBlocks**

@@ -198,9 +198,7 @@ Type: *string*
 - [applyKnockback](#applyknockback)
 - [clearDynamicProperties](#cleardynamicproperties)
 - [clearVelocity](#clearvelocity)
-::: moniker range="=minecraft-bedrock-experimental"
 - [extinguishFire](#extinguishfire)
-::: moniker-end
 - [getBlockFromViewDirection](#getblockfromviewdirection)
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
@@ -221,9 +219,7 @@ Type: *string*
 - [isValid](#isvalid)
 - [kill](#kill)
 - [matches](#matches)
-::: moniker range="=minecraft-bedrock-experimental"
 - [playAnimation](#playanimation)
-::: moniker-end
 - [remove](#remove)
 - [removeEffect](#removeeffect)
 - [removeTag](#removetag)
@@ -231,9 +227,7 @@ Type: *string*
 - [runCommand](#runcommand)
 - [runCommandAsync](#runcommandasync)
 - [setDynamicProperty](#setdynamicproperty)
-::: moniker range="=minecraft-bedrock-experimental"
 - [setOnFire](#setonfire)
-::: moniker-end
 - [setProperty](#setproperty)
 - [setRotation](#setrotation)
 - [teleport](#teleport)
@@ -501,7 +495,6 @@ function yeetEntity(entity: Entity) {
 }
 ```
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **extinguishFire**
 `
 extinguishFire(useEffects?: boolean): boolean
@@ -515,9 +508,6 @@ Extinguishes the fire if the entity is on fire. Note that you can call getCompon
   Whether to show any visual effects connected to the extinguishing.
 
 #### **Returns** *boolean* - Returns whether the entity was on fire.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -544,7 +534,6 @@ function setAblaze(entity: Entity) {
     
 }
 ```
-::: moniker-end
 
 ### **getBlockFromViewDirection**
 `
@@ -869,7 +858,6 @@ Matches the entity against the passed in options. Uses the location of the entit
 >
 > Throws if the query options are misconfigured.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playAnimation**
 `
 playAnimation(animationName: string, options?: PlayAnimationOptions): void
@@ -885,15 +873,11 @@ Cause the entity to play the given animation.
   
   Additional options to control the playback and transitions of the animation.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
-::: moniker-end
 
 ### **remove**
 `
@@ -1027,7 +1011,6 @@ Sets a specified property to a value.
 > [!WARNING]
 > This function can throw errors.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **setOnFire**
 `
 setOnFire(seconds: number, useEffects?: boolean): boolean
@@ -1044,9 +1027,6 @@ Sets an entity on fire (if it is not in water or rain). Note that you can call g
   Whether side-effects should be applied (e.g. thawing freeze) and other conditions such as rain or fire protection should be taken into consideration.
 
 #### **Returns** *boolean* - Whether the entity was set on fire. This can fail if seconds is less than or equal to zero, the entity is wet or the entity is immune to fire.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -1073,7 +1053,6 @@ function setAblaze(entity: Entity) {
     
 }
 ```
-::: moniker-end
 
 ### **setProperty**
 `

@@ -10,6 +10,7 @@ description: Changelog of the `@minecraft/server` module
 
 ## Version Changes
 - [1.11.0-beta](#1110-beta)
+- [1.9.0](#190)
 - [1.8.0](#180)
 - [1.7.0](#170)
 - [1.6.0](#160)
@@ -39,7 +40,6 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`setWaterlogged`](Block.md#setwaterlogged)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockAreaSize`](BlockAreaSize.md)*
-#### Added *[`BlockComponentStepOnEvent`](BlockComponentStepOnEvent.md)*
 #### Added *[`BlockExplodeAfterEvent`](BlockExplodeAfterEvent.md)*
 #### Added *[`BlockExplodeAfterEventSignal`](BlockExplodeAfterEventSignal.md)*
 #### Added *[`BlockLavaContainerComponent`](BlockLavaContainerComponent.md)*
@@ -48,21 +48,15 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`BlockPermutation`](BlockPermutation.md)*
 - Added property *[`type`](BlockPermutation.md#type)*
 - Added function *[`clone`](BlockPermutation.md#clone)*
-- Added function *[`getAllStates`](BlockPermutation.md#getallstates)*
 - Added function *[`getItemStack`](BlockPermutation.md#getitemstack)*
 - Added function *[`getTags`](BlockPermutation.md#gettags)*
 - Added function *[`hasTag`](BlockPermutation.md#hastag)*
-#### Added *[`BlockPistonComponent`](BlockPistonComponent.md)*
 #### Added *[`BlockPotionContainerComponent`](BlockPotionContainerComponent.md)*
 #### Added *[`BlockRecordPlayerComponent`](BlockRecordPlayerComponent.md)*
-#### Added *[`BlockSignComponent`](BlockSignComponent.md)*
 #### Added *[`BlockSnowContainerComponent`](BlockSnowContainerComponent.md)*
-#### Added *[`BlockStates`](BlockStates.md)*
-#### Added *[`BlockStateType`](BlockStateType.md)*
 #### Changed *[`BlockType`](BlockType.md)*
 - Added property *[`canBeWaterlogged`](BlockType.md#canbewaterlogged)*
 - Added property *[`id`](BlockType.md#id)*
-#### Added *[`BlockTypeRegistry`](BlockTypeRegistry.md)*
 #### Added *[`BlockTypes`](BlockTypes.md)*
 #### Added *[`BlockVolume`](BlockVolume.md)*
 #### Added *[`BlockVolumeBase`](BlockVolumeBase.md)*
@@ -73,20 +67,13 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`ChatSendBeforeEvent`](ChatSendBeforeEvent.md)*
 #### Added *[`ChatSendBeforeEventSignal`](ChatSendBeforeEventSignal.md)*
 #### Added *[`CompoundBlockVolume`](CompoundBlockVolume.md)*
-#### Changed *[`Container`](Container.md)*
-- Added function *[`getSlot`](Container.md#getslot)*
-#### Added *[`ContainerSlot`](ContainerSlot.md)*
 #### Added *[`DataDrivenEntityTriggerBeforeEvent`](DataDrivenEntityTriggerBeforeEvent.md)*
 #### Added *[`DataDrivenEntityTriggerBeforeEventSignal`](DataDrivenEntityTriggerBeforeEventSignal.md)*
 #### Changed *[`Dimension`](Dimension.md)*
-- Added function *[`createExplosion`](Dimension.md#createexplosion)*
 - Added function *[`fillBlocks`](Dimension.md#fillblocks)*
 - Added function *[`findClosestBiome`](Dimension.md#findclosestbiome)*
 - Added function *[`getWeather`](Dimension.md#getweather)*
 - Added function *[`playSound`](Dimension.md#playsound)*
-#### Added *[`DimensionType`](DimensionType.md)*
-#### Added *[`DimensionTypes`](DimensionTypes.md)*
-#### Added *[`EffectTypes`](EffectTypes.md)*
 #### Added *[`EnchantmentType`](EnchantmentType.md)*
 #### Added *[`EnchantmentTypes`](EnchantmentTypes.md)*
 #### Changed *[`Entity`](Entity.md)*
@@ -95,12 +82,9 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`target`](Entity.md#target)*
 - Changed function *[`addEffect`](Entity.md#addeffect)*
   - Changed return type from *void* (throws exceptions) to [*Effect*](Effect.md) (throws exceptions)
-- Added function *[`extinguishFire`](Entity.md#extinguishfire)*
 - Changed function *[`getComponent`](Entity.md#getcomponent)*
   - Changed return type from [*EntityComponent*](EntityComponent.md) to *EntityComponentTypeMap[T] | undefined*
   - Changed argument `componentId` type from *string* to *T*
-- Added function *[`playAnimation`](Entity.md#playanimation)*
-- Added function *[`setOnFire`](Entity.md#setonfire)*
 #### Added *[`EntityAddRiderComponent`](EntityAddRiderComponent.md)*
 #### Added *[`EntityAgeableComponent`](EntityAgeableComponent.md)*
 #### Added *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
@@ -108,12 +92,11 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`EntityComponent`](EntityComponent.md)*
 - Added property *[`entity`](EntityComponent.md#entity)*
 #### Added *[`EntityDefinitionFeedItem`](EntityDefinitionFeedItem.md)*
-#### Changed *[`EntityEquippableComponent`](EntityEquippableComponent.md)*
-- Added function *[`getEquipmentSlot`](EntityEquippableComponent.md#getequipmentslot)*
+#### Changed *[`EntityHitBlockAfterEvent`](EntityHitBlockAfterEvent.md)*
+- Added property *[`hitBlockPermutation`](EntityHitBlockAfterEvent.md#hitblockpermutation)*
 #### Added *[`EntityIterator`](EntityIterator.md)*
 #### Added *[`EntityLavaMovementComponent`](EntityLavaMovementComponent.md)*
 #### Added *[`EntityLeashableComponent`](EntityLeashableComponent.md)*
-#### Added *[`EntityMountTamingComponent`](EntityMountTamingComponent.md)*
 #### Added *[`EntityMovementComponent`](EntityMovementComponent.md)*
 #### Added *[`EntityMovementGlideComponent`](EntityMovementGlideComponent.md)*
 #### Added *[`EntityMovementSwayComponent`](EntityMovementSwayComponent.md)*
@@ -125,12 +108,12 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`EntityNavigationHoverComponent`](EntityNavigationHoverComponent.md)*
 #### Added *[`EntityNavigationWalkComponent`](EntityNavigationWalkComponent.md)*
 #### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
-#### Added *[`EntityOnFireComponent`](EntityOnFireComponent.md)*
 #### Added *[`EntityProjectileComponent`](EntityProjectileComponent.md)*
 #### Added *[`EntityRideableComponent`](EntityRideableComponent.md)*
 #### Added *[`EntityRidingComponent`](EntityRidingComponent.md)*
 #### Added *[`EntityStrengthComponent`](EntityStrengthComponent.md)*
 #### Added *[`EntityTameableComponent`](EntityTameableComponent.md)*
+#### Added *[`EntityTameMountComponent`](EntityTameMountComponent.md)*
 #### Added *[`EntityType`](EntityType.md)*
 #### Added *[`EntityTypeFamilyComponent`](EntityTypeFamilyComponent.md)*
 #### Added *[`EntityTypeIterator`](EntityTypeIterator.md)*
@@ -142,24 +125,15 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`GameRuleChangeAfterEventSignal`](GameRuleChangeAfterEventSignal.md)*
 #### Added *[`GameRules`](GameRules.md)*
 #### Added *[`ItemCooldownComponent`](ItemCooldownComponent.md)*
-#### Added *[`ItemDurabilityComponent`](ItemDurabilityComponent.md)*
 #### Added *[`ItemEnchantableComponent`](ItemEnchantableComponent.md)*
-#### Added *[`ItemFoodComponent`](ItemFoodComponent.md)*
 #### Changed *[`ItemStack`](ItemStack.md)*
-- Added function *[`clearDynamicProperties`](ItemStack.md#cleardynamicproperties)*
 - Changed function *[`getComponent`](ItemStack.md#getcomponent)*
   - Changed return type from [*ItemComponent*](ItemComponent.md) to *ItemComponentTypeMap[T] | undefined*
   - Changed argument `componentId` type from *string* to *T*
-- Added function *[`getDynamicProperty`](ItemStack.md#getdynamicproperty)*
-- Added function *[`getDynamicPropertyIds`](ItemStack.md#getdynamicpropertyids)*
-- Added function *[`getDynamicPropertyTotalByteCount`](ItemStack.md#getdynamicpropertytotalbytecount)*
 - Added function *[`matches`](ItemStack.md#matches)*
-- Added function *[`setDynamicProperty`](ItemStack.md#setdynamicproperty)*
 #### Added *[`ItemTypes`](ItemTypes.md)*
 #### Added *[`ListBlockVolume`](ListBlockVolume.md)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
-#### Added *[`PistonActivateAfterEvent`](PistonActivateAfterEvent.md)*
-#### Added *[`PistonActivateAfterEventSignal`](PistonActivateAfterEventSignal.md)*
 #### Changed *[`Player`](Player.md)*
 - Added property *[`selectedSlot`](Player.md#selectedslot)*
 - Added function *[`eatItem`](Player.md#eatitem)*
@@ -197,11 +171,8 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`runJob`](System.md#runjob)*
 #### Added *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
 #### Added *[`Trigger`](Trigger.md)*
-#### Added *[`Vector`](Vector.md)*
 #### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
-#### Added *[`WeatherChangeAfterEvent`](WeatherChangeAfterEvent.md)*
-#### Added *[`WeatherChangeAfterEventSignal`](WeatherChangeAfterEventSignal.md)*
 #### Added *[`WeatherChangeBeforeEvent`](WeatherChangeBeforeEvent.md)*
 #### Added *[`WeatherChangeBeforeEventSignal`](WeatherChangeBeforeEventSignal.md)*
 #### Changed *[`World`](World.md)*
@@ -211,38 +182,27 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`blockExplode`](WorldAfterEvents.md#blockexplode)*
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
-- Added property *[`effectAdd`](WorldAfterEvents.md#effectadd)*
-- Added property *[`explosion`](WorldAfterEvents.md#explosion)*
 - Added property *[`gameRuleChange`](WorldAfterEvents.md#gamerulechange)*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
-- Added property *[`pistonActivate`](WorldAfterEvents.md#pistonactivate)*
 - Added property *[`playerGameModeChange`](WorldAfterEvents.md#playergamemodechange)*
 - Added property *[`playerInteractWithBlock`](WorldAfterEvents.md#playerinteractwithblock)*
 - Added property *[`playerInteractWithEntity`](WorldAfterEvents.md#playerinteractwithentity)*
-- Added property *[`weatherChange`](WorldAfterEvents.md#weatherchange)*
 - Added property *[`worldInitialize`](WorldAfterEvents.md#worldinitialize)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
 - Added property *[`dataDrivenEntityTriggerEvent`](WorldBeforeEvents.md#datadrivenentitytriggerevent)*
-- Added property *[`effectAdd`](WorldBeforeEvents.md#effectadd)*
-- Added property *[`explosion`](WorldBeforeEvents.md#explosion)*
 - Added property *[`playerGameModeChange`](WorldBeforeEvents.md#playergamemodechange)*
 - Added property *[`playerInteractWithBlock`](WorldBeforeEvents.md#playerinteractwithblock)*
 - Added property *[`playerInteractWithEntity`](WorldBeforeEvents.md#playerinteractwithentity)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
 - Added property *[`weatherChange`](WorldBeforeEvents.md#weatherchange)*
-- Added property *[`worldInitialize`](WorldBeforeEvents.md#worldinitialize)*
 #### Added *[`WorldInitializeAfterEvent`](WorldInitializeAfterEvent.md)*
 #### Added *[`WorldInitializeAfterEventSignal`](WorldInitializeAfterEventSignal.md)*
-#### Added *[`WorldInitializeBeforeEvent`](WorldInitializeBeforeEvent.md)*
-#### Added *[`WorldInitializeBeforeEventSignal`](WorldInitializeBeforeEventSignal.md)*
 #### Added enum [`BlockComponentTypes`](BlockComponentTypes.md)
-#### Added enum [`BlockPistonState`](BlockPistonState.md)
 #### Added enum [`BlockVolumeIntersection`](BlockVolumeIntersection.md)
 #### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
 #### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
 #### Added enum [`Difficulty`](Difficulty.md)
-#### Added enum [`DyeColor`](DyeColor.md)
 #### Added enum [`EntityComponentTypes`](EntityComponentTypes.md)
 #### Added enum [`EntityLifetimeState`](EntityLifetimeState.md)
 #### Added enum [`GameRule`](GameRule.md)
@@ -250,7 +210,6 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`HudVisibility`](HudVisibility.md)
 #### Added enum [`ItemComponentTypes`](ItemComponentTypes.md)
 #### Added enum [`PaletteColor`](PaletteColor.md)
-#### Added enum [`SignSide`](SignSide.md)
 #### Added enum [`StructureAnimationMode`](StructureAnimationMode.md)
 #### Added enum [`StructureMirrorAxis`](StructureMirrorAxis.md)
 #### Added enum [`StructureRotation`](StructureRotation.md)
@@ -259,6 +218,51 @@ description: Changelog of the `@minecraft/server` module
 #### Added constant `HudElementsCount`
 #### Added constant `HudVisibilityCount`
 #### Added constant `TicksPerDay`
+## 1.9.0
+#### Changed *[`BlockPermutation`](BlockPermutation.md)*
+- Added function *[`getAllStates`](BlockPermutation.md#getallstates)*
+#### Added *[`BlockPistonComponent`](BlockPistonComponent.md)*
+#### Added *[`BlockSignComponent`](BlockSignComponent.md)*
+#### Added *[`BlockStates`](BlockStates.md)*
+#### Added *[`BlockStateType`](BlockStateType.md)*
+#### Changed *[`Container`](Container.md)*
+- Added function *[`getSlot`](Container.md#getslot)*
+#### Added *[`ContainerSlot`](ContainerSlot.md)*
+#### Changed *[`Dimension`](Dimension.md)*
+- Added function *[`createExplosion`](Dimension.md#createexplosion)*
+#### Added *[`DimensionType`](DimensionType.md)*
+#### Added *[`DimensionTypes`](DimensionTypes.md)*
+#### Added *[`EffectTypes`](EffectTypes.md)*
+#### Changed *[`Entity`](Entity.md)*
+- Added function *[`extinguishFire`](Entity.md#extinguishfire)*
+- Added function *[`playAnimation`](Entity.md#playanimation)*
+- Added function *[`setOnFire`](Entity.md#setonfire)*
+#### Changed *[`EntityEquippableComponent`](EntityEquippableComponent.md)*
+- Added function *[`getEquipmentSlot`](EntityEquippableComponent.md#getequipmentslot)*
+#### Added *[`EntityOnFireComponent`](EntityOnFireComponent.md)*
+#### Added *[`ItemDurabilityComponent`](ItemDurabilityComponent.md)*
+#### Added *[`ItemFoodComponent`](ItemFoodComponent.md)*
+#### Changed *[`ItemStack`](ItemStack.md)*
+- Added function *[`clearDynamicProperties`](ItemStack.md#cleardynamicproperties)*
+- Added function *[`getDynamicProperty`](ItemStack.md#getdynamicproperty)*
+- Added function *[`getDynamicPropertyIds`](ItemStack.md#getdynamicpropertyids)*
+- Added function *[`getDynamicPropertyTotalByteCount`](ItemStack.md#getdynamicpropertytotalbytecount)*
+- Added function *[`setDynamicProperty`](ItemStack.md#setdynamicproperty)*
+#### Added *[`PistonActivateAfterEvent`](PistonActivateAfterEvent.md)*
+#### Added *[`PistonActivateAfterEventSignal`](PistonActivateAfterEventSignal.md)*
+#### Added *[`WeatherChangeAfterEvent`](WeatherChangeAfterEvent.md)*
+#### Added *[`WeatherChangeAfterEventSignal`](WeatherChangeAfterEventSignal.md)*
+#### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
+- Added property *[`effectAdd`](WorldAfterEvents.md#effectadd)*
+- Added property *[`explosion`](WorldAfterEvents.md#explosion)*
+- Added property *[`pistonActivate`](WorldAfterEvents.md#pistonactivate)*
+- Added property *[`weatherChange`](WorldAfterEvents.md#weatherchange)*
+#### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
+- Added property *[`effectAdd`](WorldBeforeEvents.md#effectadd)*
+- Added property *[`explosion`](WorldBeforeEvents.md#explosion)*
+#### Added enum [`BlockPistonState`](BlockPistonState.md)
+#### Added enum [`DyeColor`](DyeColor.md)
+#### Added enum [`SignSide`](SignSide.md)
 ## 1.8.0
 #### Changed *[`Block`](Block.md)*
 - Added function *[`getTags`](Block.md#gettags)*

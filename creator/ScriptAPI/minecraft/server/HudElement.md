@@ -35,3 +35,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 `AirBubbles = 9`
 ### **HorseHealth**
 `HorseHealth = 10`
+### **StatusEffects**
+`StatusEffects = 11`
+### **ItemText**
+`ItemText = 12`

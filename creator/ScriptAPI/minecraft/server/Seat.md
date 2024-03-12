@@ -19,7 +19,7 @@ Describes a particular seating position on this rideable entity.
 ### **lockRiderRotation**
 `read-only lockRiderRotation: number;`
 
-If specified, contains a forced rotation that the riders in this seat are facing.
+Angle in degrees that a rider is allowed to rotate while riding this entity.
 
 Type: *number*
 

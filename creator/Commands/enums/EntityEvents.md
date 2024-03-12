@@ -22,6 +22,7 @@ Entity that can age grows to adulthood
 Entity has completed cooling down
 - `attacked`
 Entity is being attacked
+- `be_sheared`
 - `become_angry`
 Entity is going into a state of anger
 - `become_angry_event`
@@ -355,8 +356,6 @@ Mule is not wearing a saddle
 - `minecraft:no_threat_detected`
 - `minecraft:on_anger`
 Entity is angered
-- `minecraft:on_armor_equip`
-- `minecraft:on_armor_unequip`
 - `minecraft:on_calm`
 Entity is calmed
 - `minecraft:on_chest`
@@ -444,8 +443,17 @@ Librarian entity schedules work
 Entity schedules work as a villager with a profession
 - `minecraft:scheduled`
 Entity action is scheduled
+- `minecraft:set_ashen_variant`
+- `minecraft:set_black_variant`
+- `minecraft:set_chestnut_variant`
+- `minecraft:set_pale_variant`
+- `minecraft:set_rusty_variant`
+- `minecraft:set_snowy_variant`
+- `minecraft:set_spotted_variant`
+- `minecraft:set_striped_variant`
 - `minecraft:set_trap`
 Entity sets a trap
+- `minecraft:set_woods_variant`
 - `minecraft:sink`
 Entity sinks
 - `minecraft:spawn_adult`

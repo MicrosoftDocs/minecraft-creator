@@ -62,6 +62,8 @@ Progress bar element of the HUD.
 Air bubble status element of the HUD.
 - `horse_health`
 Visual representation of the players' ride element of the HUD.
+- `status_effects`
+- `item_text`
 
 ### `HudVisibility`
 Enumeration for HUD visibility states.

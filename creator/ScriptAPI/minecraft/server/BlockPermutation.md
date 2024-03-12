@@ -55,9 +55,7 @@ Type: [*BlockType*](BlockType.md)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [clone](#clone)
 ::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [getAllStates](#getallstates)
-::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getItemStack](#getitemstack)
 ::: moniker-end
@@ -86,7 +84,6 @@ Creates a copy of this permutation.
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getAllStates**
 `
 getAllStates(): Record<string, boolean | number | string>
@@ -95,10 +92,6 @@ getAllStates(): Record<string, boolean | number | string>
 Returns all available block states associated with this block.
 
 #### **Returns** Record<*string*, *boolean* | *number* | *string*> - Returns the list of all of the block states that the permutation has.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **getItemStack**

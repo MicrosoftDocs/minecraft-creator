@@ -266,8 +266,6 @@ Gets the current item cooldown time for a particular cooldown category.
 
 #### **Parameters**
 - **itemCategory**: *string*
-  
-  Specifies the cooldown category to retrieve the current cooldown for.
 
 #### **Returns** *number*
 
@@ -483,8 +481,12 @@ function sendPlayerMessages(player: Player) {
 setGameMode(gameMode?: GameMode): void
 `
 
+Sets a specific game-mode for this player. Note that changing the gamemode can have broader impacts on the world - so even calling player.setGameMode(player.gameMode) can result in changes within the world.
+
 #### **Parameters**
 - **gameMode**?: [*GameMode*](GameMode.md) = `null`
+  
+  If set to undefined, this will reset the player to inheriting the default gamemode for the world.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -602,8 +604,6 @@ Sets the item cooldown time for a particular cooldown category.
 
 #### **Parameters**
 - **itemCategory**: *string*
-  
-  Specifies the cooldown category to retrieve the current cooldown for.
 - **tickDuration**: *number*
   
   Duration in ticks of the item cooldown.

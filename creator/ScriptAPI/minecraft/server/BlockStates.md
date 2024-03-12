@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockStates Class
 description: Contents of the @minecraft/server.BlockStates class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockStates Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Enumerates all [*@minecraft/server.BlockStateType*](../../minecraft/server/BlockStateType.md)s.
 
