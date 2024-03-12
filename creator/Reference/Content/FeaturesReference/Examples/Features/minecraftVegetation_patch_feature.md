@@ -48,7 +48,7 @@ object "minecraft:vegetation_patch_feature" : opt
       "minecraft:dirt",
       "minecraft:podzol",
       "minecraft:dirt_with_roots",
-      "minecraft:grass",
+      "minecraft:grass_block",
       "minecraft:mycelium",
       "minecraft:stone",
       "minecraft:sand"

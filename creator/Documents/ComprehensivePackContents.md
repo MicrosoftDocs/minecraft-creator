@@ -129,7 +129,7 @@ Here is an introduction to [resource packs](ResourcePack.md).
     - `<graphic>`.png
     - `<graphic>`.jpg
     - `<file>`.json
-- [biomes_client.json](Backups/FogsReference/Examples/FogsConcepts/FogsIntroduction.md#biomes_clientjson)
+- [biomes_client.json](../Reference/Content/FogsReference/Examples/FogsIntroduction.md#biomes_clientjson)
 - [blocks.json](AddCustomDieBlock.md#define-textures-and-sounds-with-blocksjson)
 - [manifest.json](ResourcePack.md#create-a-manifest-file) **(required)**
 - pack_icon.png

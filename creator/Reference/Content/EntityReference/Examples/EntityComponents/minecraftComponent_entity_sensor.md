@@ -19,7 +19,7 @@ ms.service: minecraft-bedrock-edition
 | event| *not set*|String | Event to initiate when the conditions are met.|
 | maximum_count| -1| Integer| The maximum number of entities that must pass the filter conditions for the event to send. |
 | minimum_count| 1| Integer| The minimum number of entities that must pass the filter conditions for the event to send. |
-| range| 10| Decimal| The maximum distance another entity can be and have the filters checked against it. |
+| range| [10, 10]| Vector [a, b]| The maximum horizontal and vertical distance another entity can be from this and have the filters checked against it. |
 | require_all| False| Boolean| If true, requires all nearby entities to pass the filter conditions for the event to send. |
 | subsensors| --| List| The list of subsensors which sense for entities and emit events when all conditions are met. |
 

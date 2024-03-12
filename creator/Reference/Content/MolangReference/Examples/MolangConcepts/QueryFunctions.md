@@ -109,11 +109,13 @@ Listed below are the currently available Molang query functions in the latest re
 | query.has_collision| Returns 1.0 if the entity has collisions enabled, else it returns 0.0. |
 | query.has_gravity| Returns 1.0 if the entity is affected by gravity, else it returns 0.0. |
 | query.has_owner| Returns 1.0 if the entity has an owner ID, else it returns 0.0. Pertains to wolf. |
+| query.has_player_rider| Returns 1 if the entity has a player riding it in any seat, else it returns 0.|
+| query.has_property| Takes one argument: the name of the property on the entity. Returns 1.0 if a property with the given name exists, 0 otherwise.|
 | query.has_rider| Returns 1.0 if the entity has a rider, else it returns 0.0. |
 | query.has_target| Returns 1.0 if the entity has a target for a behavior, else it returns 0.0. |
 | query.head_roll_angle| Returns the roll angle of the head of the entity if it makes sense, else it returns 0.0. Applies to how a wolf looks at a player holding food. |
-| query.head_x_rotation| Takes one argument as a parameter. Returns the nth head x rotation of the entity if it makes sense, else it returns 0.0. Applies to wither.|
-| query.head_y_rotation| Takes one argument as a parameter. Returns the nth head y rotation of the entity if it makes sense, else it returns 0.0. Applies to wither. |
+| query.head_x_rotation| Takes one argument as a parameter. Returns the nth head x rotation of the entity if it makes sense, else it returns 0.0. |
+| query.head_y_rotation| Takes one argument as a parameter. Returns the nth head y rotation of the entity if it makes sense, else it returns 0.0. Horses, zombie horses, skeleton horses, donkeys and mules require a second parameter that clamps rotation in degrees. |
 | query.health| Returns the health of the entity, or 0.0 if it doesn't make sense to call on this entity. |
 | query.heartbeat_interval| Returns the heartbeat interval of the entity in seconds. Returns 0 when the entity has no heartbeat. |
 | query.heartbeat_phase| Returns the heartbeat phase of the entity. 0.0 if at start of current heartbeat, 1.0 if at the end. Returns 0 on errors or when the entity has no heartbeat. Available on clients (Resource Packs) only. |
@@ -128,6 +130,7 @@ Listed below are the currently available Molang query functions in the latest re
 | query.is_admiring| Returns 1.0 if the entity is admiring, else it returns 0.0. Pertains to piglin. |
 | query.is_alive| Returns 1.0 if the entity is alive, and 0.0 if it's dead. |
 | query.is_angry| Returns 1.0 if the entity is angry, else it returns 0.0. |
+| query.is_attached| Returns 1.0 if the entity is attached to another entity (such as being held or worn), else it will return 0.0. Available only with resource packs.|
 | query.is_attached_to_entity| Returns 1.0 if the entity is attached to an entity, else it will return 0.0. Pertains to player holding a fireworks rocket. |
 | query.is_avoiding_block| Returns 1.0 if the entity is fleeing from a block, else it returns 0.0. |
 | query.is_avoiding_mobs| Returns 1.0 if the entity is fleeing from mobs, else it returns 0.0. Pertains to wandering trader. |
@@ -266,8 +269,17 @@ Listed below are the currently available Molang query functions in the latest re
 | query.relative_block_has_all_tags| Takes an entity-relative position and one or more tag names, and returns either 0 or 1 based on if that block at that position has all of the tags provided. |
 | query.relative_block_has_any_tags| Takes an entity-relative position and one or more tag names, and returns either 0 or 1 based on if that block at that position has any of the tags provided. |
 | query.remaining_durability| Returns the amount of durability an item has remaining. |
+| query.ride_body_x_rotation| Returns the body pitch world-rotation of the ride an entity, else it returns 0.0. |
+| query.ride_body_y_rotation| Returns the body yaw world-rotation of the ride of on an entity, else it returns 0.0. |
+| query.ride_head_x_rotation| Returns the head x world-rotation of the ride of an entity, else it returns 0.0. |
+| query.ride_head_y_rotation| Takes one optional argument as a parameter. Returns the head y world-rotation of the ride of an entity, else it returns 0.0. First parameter only for horses, zombie horses, skeleton horses, donkeys and mules that clamps rotation in degrees. |
+| query.rider_body_x_rotation| Returns the body pitch world-rotation of a valid rider at the provided index if called on an entity, else it returns 0.0. |
+| query.rider_body_y_rotation| Returns the body yaw world-rotation of a valid rider at the provided index if called on an entity, else it returns 0.0. |
+| query.rider_head_x_rotation| Takes one argument as a parameter. Returns the head x world-rotation of the rider entity at the provided index, else it returns 0.0. |
+| query.rider_head_y_rotation| Takes one or two arguments as parameters. Returns the head y world-rotation of the rider entity at the provided index, else it returns 0.0. Horses, zombie horses, skeleton horses, donkeys and mules require a second parameter that clamps rotation in degrees. |
 | query.roll_counter| Returns the roll counter of the entity. Pertains to panda.|
 | query.rotation_to_camera| Returns the rotation required to aim at the camera. Requires one argument representing the rotation axis you would like (0 for x, 1 for y) |
+| query.scoreboard| Takes one argument - the name of the scoreboard entry for this entity. Returns the specified scoreboard value for this entity. Available only with behavior packs.|
 
 | Name | Description |
 |:---------|:---------|

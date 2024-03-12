@@ -152,6 +152,8 @@
   href: target_distance.md
 - name: trusts
   href: trusts.md
+- name: was_last_hurt_by
+  href: was_last_hurt_by.md
 - name: weather_at_position
   href: weather_at_position.md
 - name: weather
