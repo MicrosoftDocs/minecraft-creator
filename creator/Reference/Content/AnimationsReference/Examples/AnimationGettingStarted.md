@@ -68,10 +68,12 @@ In the `scripts/animate` section, list the animations to play and in which order
 
 Animations are channel based (rotation, position, or scale), and within that are key-framed:
 
+```
 EntityAnimation: animation name
-__BoneAnimation[]: bone name for this animation
-____AnimationChannel[]: rotation, scale, or translation to animate
-______KeyFrame[]: the value for the channel to have at a specific time
+  BoneAnimation[]: bone name for this animation
+    AnimationChannel[]: rotation, scale, or translation to animate
+      KeyFrame[]: the value for the channel to have at a specific time
+```
 
 ## Animation Controller
 
