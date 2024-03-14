@@ -337,11 +337,11 @@ Type: *string*
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **volume**
-`volume?: BlockAreaSize;`
+`volume?: Vector3;`
 
 In conjunction with location, specified a cuboid volume of entities to include.
 
-Type: [*BlockAreaSize*](BlockAreaSize.md)
+Type: [*Vector3*](Vector3.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.

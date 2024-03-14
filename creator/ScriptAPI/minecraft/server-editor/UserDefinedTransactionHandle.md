@@ -25,7 +25,7 @@ Constructs a new instance of the `UserDefinedTransactionHandle` class
 - **nativeHandle**: *UserDefinedTransactionHandlerId*
 - **transactionManager**: *TransactionManager*
 
-#### **Returns** *UserDefinedTransactionHandle*
+**Returns** *UserDefinedTransactionHandle*
 
 ### **addUserDefinedOperation**
 `
@@ -42,4 +42,4 @@ Add a user defined transaction operation to the transaction manager with a paylo
   
   A string name that will be associated with this operation
 
-#### **Returns** *void*
+**Returns** *void*

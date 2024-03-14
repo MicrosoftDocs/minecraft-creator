@@ -99,7 +99,7 @@ Adds an entity to this entity as a rider.
   
   Entity that will become the rider of this entity.
 
-#### **Returns** *boolean* - True if the rider entity was successfully added.
+**Returns** *boolean* - True if the rider entity was successfully added.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -145,7 +145,7 @@ getFamilyTypes(): string[]
 
 A string-list of entity types that this entity can support as riders.
 
-#### **Returns** *string*[]
+**Returns** *string*[]
 
 > [!WARNING]
 > This function can throw errors.
@@ -157,7 +157,7 @@ getRiders(): Entity[]
 
 Gets a list of the all the entities currently riding this entity.
 
-#### **Returns** [*Entity*](Entity.md)[]
+**Returns** [*Entity*](Entity.md)[]
 
 > [!WARNING]
 > This function can throw errors.
@@ -169,7 +169,7 @@ getSeats(): Seat[]
 
 Gets a list of positions and number of riders for each position for entities riding this entity.
 
-#### **Returns** [*Seat*](Seat.md)[]
+**Returns** [*Seat*](Seat.md)[]
 
 > [!WARNING]
 > This function can throw errors.

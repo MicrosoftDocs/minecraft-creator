@@ -25,7 +25,7 @@ Adds a callback that will be called when a block is placed by a player.
 - **callback**: (arg: [*PlayerPlaceBlockAfterEvent*](PlayerPlaceBlockAfterEvent.md)) => *void*
 - **options**?: [*BlockEventOptions*](BlockEventOptions.md) = `null`
 
-#### **Returns** (arg: [*PlayerPlaceBlockAfterEvent*](PlayerPlaceBlockAfterEvent.md)) => *void*
+**Returns** (arg: [*PlayerPlaceBlockAfterEvent*](PlayerPlaceBlockAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

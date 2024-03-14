@@ -92,7 +92,7 @@ Adds a BlockPicker item to the pane.
 - **property**: *Prop*
 - **options**: *IPropertyItemOptionsDataPicker*
 
-#### **Returns** *IPropertyItem<T, Prop>*
+**Returns** *IPropertyItem<T, Prop>*
 
 ### **addBool**
 `
@@ -106,7 +106,7 @@ Adds a boolean item to the pane.
 - **property**: *Prop*
 - **options**: *IPropertyItemOptionsBool*
 
-#### **Returns** *IPropertyItem<T, Prop>*
+**Returns** *IPropertyItem<T, Prop>*
 
 ### **addButton**
 `
@@ -121,7 +121,7 @@ Adds a button to the pane and binds the specified action to the button activate.
 - **action**: *RegisteredAction<NoArgsAction>*
 - **options**: *IPropertyItemOptionsButton*
 
-#### **Returns** *IActionPropertyItem<{
+**Returns** *IActionPropertyItem<{
         EMPTY: undefined;
     }, 'EMPTY'>*
 
@@ -132,7 +132,7 @@ addDivider(): IPropertyItem<PropertyBag, string>
 
 Adds an divider item to the pane.
 
-#### **Returns** *IPropertyItem<PropertyBag, string>*
+**Returns** *IPropertyItem<PropertyBag, string>*
 
 ### **addDropdown**
 `
@@ -146,7 +146,7 @@ Adds an DropDown item to the pane.
 - **property**: *Prop*
 - **options**: *IPropertyItemOptionsDropdown*
 
-#### **Returns** *IDropdownPropertyItem<T, Prop>*
+**Returns** *IDropdownPropertyItem<T, Prop>*
 
 ### **addEntityPicker**
 `
@@ -160,7 +160,7 @@ Adds an EntityPicker item to the pane.
 - **property**: *Prop*
 - **options**: *IPropertyItemOptionsDataPicker*
 
-#### **Returns** *IPropertyItem<T, Prop>*
+**Returns** *IPropertyItem<T, Prop>*
 
 ### **addImage**
 `
@@ -172,7 +172,7 @@ addImage(obj: T, property: Prop, options: IPropertyItemOptionsImage): IPropertyI
 - **property**: *Prop*
 - **options**: *IPropertyItemOptionsImage*
 
-#### **Returns** *IPropertyItem<T, Prop>*
+**Returns** *IPropertyItem<T, Prop>*
 
 ### **addNumber**
 `
@@ -186,7 +186,7 @@ Adds a number item to the pane.
 - **property**: *Prop*
 - **options**: *IPropertyItemOptionsNumber*
 
-#### **Returns** *IPropertyItem<T, Prop>*
+**Returns** *IPropertyItem<T, Prop>*
 
 ### **addString**
 `
@@ -200,7 +200,7 @@ Adds a string item to the pane
 - **property**: *Prop*
 - **options**: *IPropertyItemOptions*
 
-#### **Returns** *IPropertyItem<T, Prop>*
+**Returns** *IPropertyItem<T, Prop>*
 
 ### **addText**
 `
@@ -214,7 +214,7 @@ Adds a multiline Text item to the pane.
 - **property**: *Prop*
 - **options**: *IPropertyItemOptionsText*
 
-#### **Returns** *IPropertyItem<T, Prop>*
+**Returns** *IPropertyItem<T, Prop>*
 
 ### **addVector3**
 `
@@ -228,7 +228,7 @@ Adds a Vec3 item to the pane.
 - **property**: *Prop*
 - **options**: *IPropertyItemOptionsVector3*
 
-#### **Returns** *IVector3PropertyItem<T, Prop>*
+**Returns** *IVector3PropertyItem<T, Prop>*
 
 ### **collapse**
 `
@@ -237,7 +237,7 @@ collapse(): void
 
 Collapse the pane.
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **createPropertyPane**
 `
@@ -249,7 +249,7 @@ Creates an internal sub panel that is presented inside a extender control.
 #### **Parameters**
 - **options**: *IPropertyPaneOptions*
 
-#### **Returns** *IPropertyPane*
+**Returns** *IPropertyPane*
 
 ### **expand**
 `
@@ -258,7 +258,7 @@ expand(): void
 
 Expand the pane.
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **hide**
 `
@@ -267,7 +267,7 @@ hide(): void
 
 Hide the pane.
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **removePropertyPane**
 `
@@ -279,7 +279,7 @@ Removes a child property pane from the parent pane.
 #### **Parameters**
 - **paneToRemove**: *IPropertyPane*
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 ### **show**
 `
@@ -288,4 +288,4 @@ show(): void
 
 Show the pane and all of its property items.
 
-#### **Returns** *void*
+**Returns** *void*

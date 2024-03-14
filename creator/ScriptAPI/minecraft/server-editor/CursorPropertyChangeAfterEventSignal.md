@@ -20,7 +20,7 @@ subscribe(callback: (arg: CursorPropertiesChangeAfterEvent) => void): (arg: Curs
 #### **Parameters**
 - **callback**: (arg: [*CursorPropertiesChangeAfterEvent*](CursorPropertiesChangeAfterEvent.md)) => *void*
 
-#### **Returns** (arg: [*CursorPropertiesChangeAfterEvent*](CursorPropertiesChangeAfterEvent.md)) => *void*
+**Returns** (arg: [*CursorPropertiesChangeAfterEvent*](CursorPropertiesChangeAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

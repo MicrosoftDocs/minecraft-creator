@@ -16,12 +16,13 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "1.9.0"
+    "version": "1.10.0"
 }
 ```
 
 ## Available Versions
 - `1.11.0-beta`
+- `1.10.0`
 - `1.9.0`
 - `1.8.0`
 - `1.7.0`
@@ -45,6 +46,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [DisplaySlotId](DisplaySlotId.md)
 - [DyeColor](DyeColor.md)
 - [EasingType](EasingType.md)
+- [EnchantmentSlot](EnchantmentSlot.md)
 - [EntityComponentTypes](EntityComponentTypes.md)
 - [EntityDamageCause](EntityDamageCause.md)
 - [EntityInitializationCause](EntityInitializationCause.md)
@@ -80,8 +82,9 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BiomeType](BiomeType.md)
 - [BiomeTypes](BiomeTypes.md)
 - [Block](Block.md)
-- [BlockAreaSize](BlockAreaSize.md)
 - [BlockComponent](BlockComponent.md)
+- [BlockComponentRandomTickEvent](BlockComponentRandomTickEvent.md)
+- [BlockComponentStepOnEvent](BlockComponentStepOnEvent.md)
 - [BlockEvent](BlockEvent.md)
 - [BlockExplodeAfterEvent](BlockExplodeAfterEvent.md)
 - [BlockExplodeAfterEventSignal](BlockExplodeAfterEventSignal.md)
@@ -98,6 +101,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BlockStates](BlockStates.md)
 - [BlockStateType](BlockStateType.md)
 - [BlockType](BlockType.md)
+- [BlockTypeRegistry](BlockTypeRegistry.md)
 - [BlockTypes](BlockTypes.md)
 - [BlockVolume](BlockVolume.md)
 - [BlockVolumeBase](BlockVolumeBase.md)
@@ -117,8 +121,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ContainerSlot](ContainerSlot.md)
 - [DataDrivenEntityTriggerAfterEvent](DataDrivenEntityTriggerAfterEvent.md)
 - [DataDrivenEntityTriggerAfterEventSignal](DataDrivenEntityTriggerAfterEventSignal.md)
-- [DataDrivenEntityTriggerBeforeEvent](DataDrivenEntityTriggerBeforeEvent.md)
-- [DataDrivenEntityTriggerBeforeEventSignal](DataDrivenEntityTriggerBeforeEventSignal.md)
 - [Dimension](Dimension.md)
 - [DimensionType](DimensionType.md)
 - [DimensionTypes](DimensionTypes.md)
@@ -346,9 +348,12 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [WorldBeforeEvents](WorldBeforeEvents.md)
 - [WorldInitializeAfterEvent](WorldInitializeAfterEvent.md)
 - [WorldInitializeAfterEventSignal](WorldInitializeAfterEventSignal.md)
+- [WorldInitializeBeforeEvent](WorldInitializeBeforeEvent.md)
+- [WorldInitializeBeforeEventSignal](WorldInitializeBeforeEventSignal.md)
 
 ## Interfaces
 - [BiomeSearchOptions](BiomeSearchOptions.md)
+- [BlockCustomComponent](BlockCustomComponent.md)
 - [BlockEventOptions](BlockEventOptions.md)
 - [BlockFillOptions](BlockFillOptions.md)
 - [BlockFilter](BlockFilter.md)
@@ -417,6 +422,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [InvalidStructureError](InvalidStructureError.md)
 - [LocationInUnloadedChunkError](LocationInUnloadedChunkError.md)
 - [LocationOutOfWorldBoundariesError](LocationOutOfWorldBoundariesError.md)
+- [UnloadedChunksError](UnloadedChunksError.md)
 
 ## Constants
 

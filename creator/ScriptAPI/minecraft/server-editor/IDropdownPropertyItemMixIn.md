@@ -24,4 +24,4 @@ Used to update the Dropdown options in the control. Will trigger onChange with -
 - **dropdownItems**: *IDropdownItem[]*
 - **newValue**: *number*
 
-#### **Returns** *void*
+**Returns** *void*

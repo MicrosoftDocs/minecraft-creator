@@ -24,7 +24,7 @@ Adds a callback that will be called when a pressure plate is pushed.
 #### **Parameters**
 - **callback**: (arg: [*PressurePlatePushAfterEvent*](PressurePlatePushAfterEvent.md)) => *void*
 
-#### **Returns** (arg: [*PressurePlatePushAfterEvent*](PressurePlatePushAfterEvent.md)) => *void*
+**Returns** (arg: [*PressurePlatePushAfterEvent*](PressurePlatePushAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

@@ -144,7 +144,7 @@ Returns the RawText of the sign if `setText` was called with a RawMessage or a R
   
   The side of the sign to read the message from. If not provided, this will return the message from the front side of the sign.
 
-#### **Returns** [*RawText*](RawText.md) | *undefined*
+**Returns** [*RawText*](RawText.md) | *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -161,7 +161,7 @@ Returns the text of the sign if `setText` was called with a string, otherwise re
   
   The side of the sign to read the message from. If not provided, this will return the message from the front side of the sign.
 
-#### **Returns** *string* | *undefined*
+**Returns** *string* | *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -178,7 +178,7 @@ Gets the dye that is on the text or undefined if the sign has not been dyed.
   
   The side of the sign to read the dye from. If not provided, this will return the dye on the front side of the sign.
 
-#### **Returns** [*DyeColor*](DyeColor.md) | *undefined*
+**Returns** [*DyeColor*](DyeColor.md) | *undefined*
 
 > [!WARNING]
 > This function can throw errors.

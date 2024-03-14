@@ -36,4 +36,4 @@ getEffects(): FeedItemEffect[]
 
 As part of the Healable component, an optional collection of side effects that can occur from being fed an item.
 
-#### **Returns** [*FeedItemEffect*](FeedItemEffect.md)[]
+**Returns** [*FeedItemEffect*](FeedItemEffect.md)[]

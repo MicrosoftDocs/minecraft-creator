@@ -24,7 +24,7 @@ Retrieves a dimension type using a string-based identifier.
 #### **Parameters**
 - **dimensionTypeId**: *string*
 
-#### **Returns** [*DimensionType*](DimensionType.md) | *undefined*
+**Returns** [*DimensionType*](DimensionType.md) | *undefined*
 
 ### **getAll**
 `
@@ -33,4 +33,4 @@ static getAll(): DimensionType[]
 
 Retrieves an array of all dimension types.
 
-#### **Returns** [*DimensionType*](DimensionType.md)[]
+**Returns** [*DimensionType*](DimensionType.md)[]

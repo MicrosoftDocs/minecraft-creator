@@ -39,4 +39,4 @@ getImpactedBlocks(): Block[]
 
 A collection of blocks impacted by this explosion event.
 
-#### **Returns** [*Block*](Block.md)[]
+**Returns** [*Block*](Block.md)[]

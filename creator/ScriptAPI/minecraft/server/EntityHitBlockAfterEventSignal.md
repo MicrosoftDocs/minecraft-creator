@@ -25,7 +25,7 @@ Adds a callback that will be called when an entity hits a block.
 - **callback**: (arg: [*EntityHitBlockAfterEvent*](EntityHitBlockAfterEvent.md)) => *void*
 - **options**?: [*EntityEventOptions*](EntityEventOptions.md) = `null`
 
-#### **Returns** (arg: [*EntityHitBlockAfterEvent*](EntityHitBlockAfterEvent.md)) => *void*
+**Returns** (arg: [*EntityHitBlockAfterEvent*](EntityHitBlockAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

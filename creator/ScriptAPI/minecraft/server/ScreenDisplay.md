@@ -84,7 +84,7 @@ world.afterEvents.playerSpawn.subscribe(event => {
 getHiddenHudElements(): HudElement[]
 `
 
-#### **Returns** [*HudElement*](HudElement.md)[]
+**Returns** [*HudElement*](HudElement.md)[]
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -124,7 +124,7 @@ isForcedHidden(hudElement: HudElement): boolean
 #### **Parameters**
 - **hudElement**: [*HudElement*](HudElement.md)
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -143,7 +143,7 @@ isValid(): boolean
 
 Returns true if the current reference to this screen display manager object is valid and functional.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **resetHudElements**

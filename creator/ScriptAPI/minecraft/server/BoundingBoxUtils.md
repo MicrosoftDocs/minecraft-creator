@@ -42,7 +42,7 @@ Create a validated instance of a {@link @minecraft-server.BoundingBox} where the
   
   A corner world location diametrically opposite
 
-#### **Returns** [*BoundingBox*](BoundingBox.md)
+**Returns** [*BoundingBox*](BoundingBox.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -62,7 +62,7 @@ Note: corners can be inverted if the contraction size is greater than the span, 
 - **box**: [*BoundingBox*](BoundingBox.md)
 - **size**: [*Vector3*](Vector3.md)
 
-#### **Returns** [*BoundingBox*](BoundingBox.md) - Return a new {@link @minecraft-server.BoundingBox} object representing the changes
+**Returns** [*BoundingBox*](BoundingBox.md) - Return a new {@link @minecraft-server.BoundingBox} object representing the changes
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -78,7 +78,7 @@ Check if two {@link @minecraft-server.BoundingBox} objects are identical
 - **box**: [*BoundingBox*](BoundingBox.md)
 - **other**: [*BoundingBox*](BoundingBox.md)
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -94,7 +94,7 @@ Expand the initial box object bounds to include the 2nd box argument.  The resul
 - **box**: [*BoundingBox*](BoundingBox.md)
 - **other**: [*BoundingBox*](BoundingBox.md)
 
-#### **Returns** [*BoundingBox*](BoundingBox.md) - A new {@link @minecraft-server.BoundingBox} instance representing the smallest possible bounding box which can encompass both
+**Returns** [*BoundingBox*](BoundingBox.md) - A new {@link @minecraft-server.BoundingBox} instance representing the smallest possible bounding box which can encompass both
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -109,7 +109,7 @@ Calculate the center block of a given {@link @minecraft-server.BoundingBox} obje
 #### **Parameters**
 - **box**: [*BoundingBox*](BoundingBox.md)
 
-#### **Returns** [*Vector3*](Vector3.md) - Note that {@link @minecraft-server.BoundingBox} objects represent whole blocks, so the center of boxes which have odd numbered bounds are not mathematically centered...,i.e. a BoundingBox( 0,0,0 -> 3,3,3 )  would have a center of (1,1,1)  (not (1.5, 1.5, 1.5) as expected) - Note that {@link @minecraft-server.BoundingBox} objects represent whole blocks, so the center of boxes which have odd numbered bounds are not mathematically centered...,i.e. a BoundingBox( 0,0,0 -> 3,3,3 )  would have a center of (1,1,1)  (not (1.5, 1.5, 1.5) as expected)
+**Returns** [*Vector3*](Vector3.md) - Note that {@link @minecraft-server.BoundingBox} objects represent whole blocks, so the center of boxes which have odd numbered bounds are not mathematically centered...,i.e. a BoundingBox( 0,0,0 -> 3,3,3 )  would have a center of (1,1,1)  (not (1.5, 1.5, 1.5) as expected) - Note that {@link @minecraft-server.BoundingBox} objects represent whole blocks, so the center of boxes which have odd numbered bounds are not mathematically centered...,i.e. a BoundingBox( 0,0,0 -> 3,3,3 )  would have a center of (1,1,1)  (not (1.5, 1.5, 1.5) as expected)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -125,7 +125,7 @@ Calculate the BoundingBox which represents the union area of two intersecting Bo
 - **box**: [*BoundingBox*](BoundingBox.md)
 - **other**: [*BoundingBox*](BoundingBox.md)
 
-#### **Returns** [*BoundingBox*](BoundingBox.md) | *undefined*
+**Returns** [*BoundingBox*](BoundingBox.md) | *undefined*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -140,7 +140,7 @@ Get the Span of each of the BoundingBox Axis components
 #### **Parameters**
 - **box**: [*BoundingBox*](BoundingBox.md)
 
-#### **Returns** [*Vector3*](Vector3.md)
+**Returns** [*Vector3*](Vector3.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -156,7 +156,7 @@ Check to see if two BoundingBox objects intersect
 - **box**: [*BoundingBox*](BoundingBox.md)
 - **other**: [*BoundingBox*](BoundingBox.md)
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -172,7 +172,7 @@ Check to see if a given coordinate is inside a BoundingBox
 - **box**: [*BoundingBox*](BoundingBox.md)
 - **pos**: [*Vector3*](Vector3.md)
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -187,7 +187,7 @@ Check to see if a BoundingBox is valid (i.e. (min <= max))
 #### **Parameters**
 - **box**: [*BoundingBox*](BoundingBox.md)
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -203,7 +203,7 @@ Move a BoundingBox by a given amount
 - **box**: [*BoundingBox*](BoundingBox.md)
 - **delta**: [*Vector3*](Vector3.md)
 
-#### **Returns** [*BoundingBox*](BoundingBox.md) - Return a new BoundingBox object which represents the change
+**Returns** [*BoundingBox*](BoundingBox.md) - Return a new BoundingBox object which represents the change
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

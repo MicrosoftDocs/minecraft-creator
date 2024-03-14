@@ -45,7 +45,7 @@ getCustomColor(): RGBA
 
 Retrieves a custom base color used for the sign text.
 
-#### **Returns** [*RGBA*](RGBA.md) - Color that is used as the base color for sign text.
+**Returns** [*RGBA*](RGBA.md) - Color that is used as the base color for sign text.
 
 > [!WARNING]
 > This function can throw errors.

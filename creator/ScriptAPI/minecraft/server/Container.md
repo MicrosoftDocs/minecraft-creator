@@ -109,7 +109,7 @@ Adds an item to the container. The item is placed in the first available slot(s)
   
   The stack of items to add.
 
-#### **Returns** [*ItemStack*](ItemStack.md) | *undefined*
+**Returns** [*ItemStack*](ItemStack.md) | *undefined*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -144,7 +144,7 @@ Gets an [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md) of 
   
   Zero-based index of the slot to retrieve items from.
 
-#### **Returns** [*ItemStack*](ItemStack.md) | *undefined*
+**Returns** [*ItemStack*](ItemStack.md) | *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -178,7 +178,7 @@ Returns a container slot. This acts as a reference to a slot at the given index 
   
   The index of the slot to return. This index must be within the bounds of the container.
 
-#### **Returns** [*ContainerSlot*](ContainerSlot.md)
+**Returns** [*ContainerSlot*](ContainerSlot.md)
 
 > [!WARNING]
 > This function can throw errors.
@@ -192,7 +192,7 @@ isValid(): boolean
 
 Returns whether a container object (or the entity or block that this container is associated with) is still available for use in this context.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 ### **moveItem**
 `
@@ -316,7 +316,7 @@ Moves an item from one slot to another container, or to the first available slot
   
   Target container to transfer to. Note this can be the same container as the source.
 
-#### **Returns** [*ItemStack*](ItemStack.md) | *undefined* - An itemStack with the items that couldn't be transferred. Returns undefined if all items were transferred.
+**Returns** [*ItemStack*](ItemStack.md) | *undefined* - An itemStack with the items that couldn't be transferred. Returns undefined if all items were transferred.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

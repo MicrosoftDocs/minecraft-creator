@@ -28,7 +28,7 @@ Returns a specific item type, if available within Minecraft.
 #### **Parameters**
 - **itemId**: *string*
 
-#### **Returns** [*ItemType*](ItemType.md) | *undefined*
+**Returns** [*ItemType*](ItemType.md) | *undefined*
 
 ### **getAll**
 `
@@ -37,4 +37,4 @@ static getAll(): ItemType[]
 
 Retrieves all available item types registered within Minecraft.
 
-#### **Returns** [*ItemType*](ItemType.md)[]
+**Returns** [*ItemType*](ItemType.md)[]

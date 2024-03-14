@@ -40,7 +40,7 @@ getTameItems(): string[]
 
 Returns a set of items that can be used to tame this entity.
 
-#### **Returns** *string*[]
+**Returns** *string*[]
 
 > [!WARNING]
 > This function can throw errors.
@@ -52,7 +52,7 @@ tame(): boolean
 
 Tames this entity.
 
-#### **Returns** *boolean* - Returns true if the entity was tamed.
+**Returns** *boolean* - Returns true if the entity was tamed.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

@@ -53,7 +53,7 @@ Create a child menu on this menu.
   
   The action to associate with the menu item. Only a subset of actions are supported
 
-#### **Returns** *IMenu*
+**Returns** *IMenu*
 
 ### **dispose**
 `
@@ -62,7 +62,7 @@ dispose(): void
 
 Destroy the menu and all of its children.
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **hide**
 `
@@ -71,7 +71,7 @@ hide(): void
 
 Hide the menu and all of its children.
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **replaceAction**
 `
@@ -85,7 +85,7 @@ Replaces the current associated menu action with a new action
   
   The registered action to associated with this menu item
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **show**
 `
@@ -94,4 +94,4 @@ show(): void
 
 Show the menu and all of its children.
 
-#### **Returns** *void*
+**Returns** *void*

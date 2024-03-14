@@ -14,3 +14,5 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 ## Extends
 - *Error*
+
+Thrown when a Structure is invalid. A structure becomes invalid when it is deleted.

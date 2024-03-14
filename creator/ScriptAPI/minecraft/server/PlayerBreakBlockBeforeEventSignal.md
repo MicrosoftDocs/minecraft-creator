@@ -25,7 +25,7 @@ Adds a callback that will be called before a block is broken by a player.
 - **callback**: (arg: [*PlayerBreakBlockBeforeEvent*](PlayerBreakBlockBeforeEvent.md)) => *void*
 - **options**?: [*BlockEventOptions*](BlockEventOptions.md) = `null`
 
-#### **Returns** (arg: [*PlayerBreakBlockBeforeEvent*](PlayerBreakBlockBeforeEvent.md)) => *void*
+**Returns** (arg: [*PlayerBreakBlockBeforeEvent*](PlayerBreakBlockBeforeEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

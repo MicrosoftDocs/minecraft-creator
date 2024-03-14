@@ -54,7 +54,7 @@ new MessageFormData()
 
 Creates a new modal form builder.
 
-#### **Returns** [*MessageFormData*](MessageFormData.md)
+**Returns** [*MessageFormData*](MessageFormData.md)
 
 ### **body**
 `
@@ -66,7 +66,7 @@ Method that sets the body text for the modal form.
 #### **Parameters**
 - **bodyText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
-#### **Returns** [*MessageFormData*](MessageFormData.md)
+**Returns** [*MessageFormData*](MessageFormData.md)
 
 ### **button1**
 `
@@ -78,7 +78,7 @@ Method that sets the text for the first button of the dialog.
 #### **Parameters**
 - **text**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
-#### **Returns** [*MessageFormData*](MessageFormData.md)
+**Returns** [*MessageFormData*](MessageFormData.md)
 
 ### **button2**
 `
@@ -90,7 +90,7 @@ This method sets the text for the second button on the dialog.
 #### **Parameters**
 - **text**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
-#### **Returns** [*MessageFormData*](MessageFormData.md)
+**Returns** [*MessageFormData*](MessageFormData.md)
 
 ### **show**
 `
@@ -104,7 +104,7 @@ Creates and shows this modal popup form. Returns asynchronously when the player 
   
   Player to show this dialog to.
 
-#### **Returns** Promise&lt;[*MessageFormResponse*](MessageFormResponse.md)&gt;
+**Returns** Promise&lt;[*MessageFormResponse*](MessageFormResponse.md)&gt;
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -122,7 +122,7 @@ This builder method sets the title for the modal dialog.
 #### **Parameters**
 - **titleText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
-#### **Returns** [*MessageFormData*](MessageFormData.md)
+**Returns** [*MessageFormData*](MessageFormData.md)
 
 #### Examples
 ##### ***messageFormSimple.ts***

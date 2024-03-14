@@ -46,7 +46,7 @@ getAttachedBlocks(): Block[]
 
 Retrieves a set of blocks that this piston is connected with.
 
-#### **Returns** [*Block*](Block.md)[]
+**Returns** [*Block*](Block.md)[]
 
 > [!WARNING]
 > This function can throw errors.
@@ -58,7 +58,7 @@ getAttachedBlocksLocations(): Vector3[]
 
 Retrieves a set of block locations that this piston is connected with.
 
-#### **Returns** [*Vector3*](Vector3.md)[]
+**Returns** [*Vector3*](Vector3.md)[]
 
 > [!WARNING]
 > This function can throw errors.

@@ -62,4 +62,4 @@ isValid(): boolean
 
 Returns whether an effect instance is available for use in this context.
 
-#### **Returns** *boolean*
+**Returns** *boolean*

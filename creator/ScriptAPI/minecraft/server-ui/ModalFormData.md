@@ -62,7 +62,7 @@ new ModalFormData()
 
 Creates a new modal form builder.
 
-#### **Returns** [*ModalFormData*](ModalFormData.md)
+**Returns** [*ModalFormData*](ModalFormData.md)
 
 ### **dropdown**
 `
@@ -76,7 +76,7 @@ Adds a dropdown with choices to the form.
 - **options**: ([*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*)[]
 - **defaultValueIndex**?: *number* = `null`
 
-#### **Returns** [*ModalFormData*](ModalFormData.md)
+**Returns** [*ModalFormData*](ModalFormData.md)
 
 ### **show**
 `
@@ -90,7 +90,7 @@ Creates and shows this modal popup form. Returns asynchronously when the player 
   
   Player to show this dialog to.
 
-#### **Returns** Promise&lt;[*ModalFormResponse*](ModalFormResponse.md)&gt;
+**Returns** Promise&lt;[*ModalFormResponse*](ModalFormResponse.md)&gt;
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -112,7 +112,7 @@ Adds a numeric slider to the form.
 - **valueStep**: *number*
 - **defaultValue**?: *number* = `null`
 
-#### **Returns** [*ModalFormData*](ModalFormData.md)
+**Returns** [*ModalFormData*](ModalFormData.md)
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **submitButton**
@@ -123,7 +123,7 @@ submitButton(submitButtonText: minecraftserver.RawMessage | string): ModalFormDa
 #### **Parameters**
 - **submitButtonText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
-#### **Returns** [*ModalFormData*](ModalFormData.md)
+**Returns** [*ModalFormData*](ModalFormData.md)
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -141,7 +141,7 @@ Adds a textbox to the form.
 - **placeholderText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 - **defaultValue**?: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string* = `null`
 
-#### **Returns** [*ModalFormData*](ModalFormData.md)
+**Returns** [*ModalFormData*](ModalFormData.md)
 
 ### **title**
 `
@@ -153,7 +153,7 @@ This builder method sets the title for the modal dialog.
 #### **Parameters**
 - **titleText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
-#### **Returns** [*ModalFormData*](ModalFormData.md)
+**Returns** [*ModalFormData*](ModalFormData.md)
 
 ### **toggle**
 `
@@ -166,7 +166,7 @@ Adds a toggle checkbox button to the form.
 - **label**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 - **defaultValue**?: *boolean* = `null`
 
-#### **Returns** [*ModalFormData*](ModalFormData.md)
+**Returns** [*ModalFormData*](ModalFormData.md)
 
 #### Examples
 ##### ***modalFormSimple.ts***

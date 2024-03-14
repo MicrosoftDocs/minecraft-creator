@@ -32,3 +32,10 @@ Type: *string*
 The name of the menu
 
 Type: *string*
+
+### **uniqueId**
+`uniqueId: string;`
+
+Custom unique identifier that will replace random id
+
+Type: *string*

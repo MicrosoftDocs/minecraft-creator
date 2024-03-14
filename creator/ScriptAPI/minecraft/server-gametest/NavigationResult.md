@@ -23,4 +23,4 @@ Type: *boolean*
 getPath(): minecraftserver.Vector3[]
 `
 
-#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)[]
+**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)[]

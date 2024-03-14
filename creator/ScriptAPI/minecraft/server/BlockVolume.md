@@ -74,7 +74,7 @@ new BlockVolume(from: Vector3, to: Vector3)
 - **from**: [*Vector3*](Vector3.md)
 - **to**: [*Vector3*](Vector3.md)
 
-#### **Returns** [*BlockVolume*](BlockVolume.md)
+**Returns** [*BlockVolume*](BlockVolume.md)
 
 ### **doesLocationTouchFaces**
 `
@@ -90,7 +90,7 @@ Check to see if the given location is directly adjacent to the outer surface of 
   
   The world block location to test
 
-#### **Returns** *boolean* - If the location is either inside or more than 0 blocks away, the function will return false.,If the location is directly contacting the outer surface of the BlockVolume, the function will return true. - If the location is either inside or more than 0 blocks away, the function will return false.,If the location is directly contacting the outer surface of the BlockVolume, the function will return true.
+**Returns** *boolean* - If the location is either inside or more than 0 blocks away, the function will return false.,If the location is directly contacting the outer surface of the BlockVolume, the function will return true. - If the location is either inside or more than 0 blocks away, the function will return false.,If the location is directly contacting the outer surface of the BlockVolume, the function will return true.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -107,7 +107,7 @@ Check to see if a two block volumes are directly adjacent and two faces touch.
   
   The volume to test
 
-#### **Returns** *boolean* - If the outer faces of both block volumes touch and are directly adjacent at any point, return true.
+**Returns** *boolean* - If the outer faces of both block volumes touch and are directly adjacent at any point, return true.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -122,7 +122,7 @@ Return an enumeration which represents the intersection between two BlockVolume 
 #### **Parameters**
 - **other**: [*BlockVolume*](BlockVolume.md)
 
-#### **Returns** [*BlockVolumeIntersection*](BlockVolumeIntersection.md)
+**Returns** [*BlockVolumeIntersection*](BlockVolumeIntersection.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

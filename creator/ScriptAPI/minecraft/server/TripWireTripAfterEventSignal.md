@@ -57,7 +57,7 @@ Adds a callback that will be called when a trip wire is tripped.
 #### **Parameters**
 - **callback**: (arg: [*TripWireTripAfterEvent*](TripWireTripAfterEvent.md)) => *void*
 
-#### **Returns** (arg: [*TripWireTripAfterEvent*](TripWireTripAfterEvent.md)) => *void*
+**Returns** (arg: [*TripWireTripAfterEvent*](TripWireTripAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

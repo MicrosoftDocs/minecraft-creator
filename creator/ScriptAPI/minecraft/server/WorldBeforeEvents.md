@@ -24,18 +24,6 @@ Type: [*ChatSendBeforeEventSignal*](ChatSendBeforeEventSignal.md)
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
-### **dataDrivenEntityTriggerEvent**
-`read-only dataDrivenEntityTriggerEvent: DataDrivenEntityTriggerBeforeEventSignal;`
-
-This event is fired when an entity event has been triggered that will update the component definition state of an entity.
-
-Type: [*DataDrivenEntityTriggerBeforeEventSignal*](DataDrivenEntityTriggerBeforeEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
 ### **effectAdd**
 `read-only effectAdd: EffectAddBeforeEventSignal;`
 
@@ -136,6 +124,18 @@ Type: [*PlayerPlaceBlockBeforeEventSignal*](PlayerPlaceBlockBeforeEventSignal.md
 `read-only weatherChange: WeatherChangeBeforeEventSignal;`
 
 Type: [*WeatherChangeBeforeEventSignal*](WeatherChangeBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **worldInitialize**
+`read-only worldInitialize: WorldInitializeBeforeEventSignal;`
+
+This event fires immediately when the script environment is initialized on a World. Not all script functionality may be available. For guaranteed access to world state, use the world initialize after event.
+
+Type: [*WorldInitializeBeforeEventSignal*](WorldInitializeBeforeEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.

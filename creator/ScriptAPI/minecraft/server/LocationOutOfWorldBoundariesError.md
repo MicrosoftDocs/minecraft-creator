@@ -10,3 +10,5 @@ description: Contents of the .LocationOutOfWorldBoundariesError class.
 
 ## Extends
 - *Error*
+
+Thrown when a provided location or bounding area is outside the minimum or maximum dimension height.

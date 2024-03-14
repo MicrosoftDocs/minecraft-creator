@@ -44,7 +44,7 @@ getEntity(): Entity | undefined
 
 If the scoreboard identity is an entity or player, returns the entity that this scoreboard item corresponds to.
 
-#### **Returns** [*Entity*](Entity.md) | *undefined*
+**Returns** [*Entity*](Entity.md) | *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -56,4 +56,4 @@ isValid(): boolean
 
 Returns true if the ScoreboardIdentity reference is still valid.
 
-#### **Returns** *boolean*
+**Returns** *boolean*

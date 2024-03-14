@@ -203,7 +203,7 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) above t
   
   Number of steps above to step before returning.
 
-#### **Returns** [*Block*](Block.md) | *undefined*
+**Returns** [*Block*](Block.md) | *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -222,7 +222,7 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) below t
   
   Number of steps below to step before returning.
 
-#### **Returns** [*Block*](Block.md) | *undefined*
+**Returns** [*Block*](Block.md) | *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -236,7 +236,7 @@ bottomCenter(): Vector3
 
 Returns the @minecraft/server.Location of the center of this block on the X and Z axis.
 
-#### **Returns** [*Vector3*](Vector3.md)
+**Returns** [*Vector3*](Vector3.md)
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **canPlace**
@@ -254,7 +254,7 @@ Checks to see whether it is valid to place the specified block type or block per
   
   Optional specific face of this block to check placement against.
 
-#### **Returns** *boolean* - Returns `true` if the block type or permutation can be placed on this block, else `false`.
+**Returns** *boolean* - Returns `true` if the block type or permutation can be placed on this block, else `false`.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -270,9 +270,9 @@ Checks to see whether it is valid to place the specified block type or block per
 center(): Vector3
 `
 
-Returns the @minecraft/server.Location of the center of this block on the X, Y, and Z axis.
+Returns the {@link @minecraft/server.Location} of the center of this block on the X, Y, and Z axis.
 
-#### **Returns** [*Vector3*](Vector3.md)
+**Returns** [*Vector3*](Vector3.md)
 
 ### **east**
 `
@@ -286,7 +286,7 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the 
   
   Number of steps to the east to step before returning.
 
-#### **Returns** [*Block*](Block.md) | *undefined*
+**Returns** [*Block*](Block.md) | *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -305,7 +305,7 @@ Gets a component (that represents additional capabilities) for a block - for exa
   
   The identifier of the component (e.g., 'minecraft:inventory'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.BlockComponentTypes*](../../minecraft/server/BlockComponentTypes.md) enum.
 
-#### **Returns** *BlockComponentTypeMap[T] | undefined* - Returns the component if it exists on the block, otherwise undefined.
+**Returns** *BlockComponentTypeMap[T] | undefined* - Returns the component if it exists on the block, otherwise undefined.
 
 > [!WARNING]
 > This function can throw errors.
@@ -328,7 +328,7 @@ Creates a prototype item stack based on this block that can be used with Contain
   
   Whether additional data facets of the item stack are included.
 
-#### **Returns** [*ItemStack*](ItemStack.md) | *undefined* - An itemStack with the specified amount of items and data. Returns undefined if block type is incompatible.
+**Returns** [*ItemStack*](ItemStack.md) | *undefined* - An itemStack with the specified amount of items and data. Returns undefined if block type is incompatible.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -347,7 +347,7 @@ getRedstonePower(): number | undefined
 
 Returns the net redstone power of this block.
 
-#### **Returns** *number* | *undefined* - Returns undefined if redstone power is not applicable to this block.
+**Returns** *number* | *undefined* - Returns undefined if redstone power is not applicable to this block.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -365,7 +365,7 @@ getTags(): string[]
 
 Returns a set of tags for a block.
 
-#### **Returns** *string*[] - The list of tags that the block has.
+**Returns** *string*[] - The list of tags that the block has.
 
 > [!WARNING]
 > This function can throw errors.
@@ -384,7 +384,7 @@ Checks to see if the permutation of this block has a specific tag.
   
   Tag to check for.
 
-#### **Returns** *boolean* - Returns `true` if the permutation of this block has the tag, else `false`.
+**Returns** *boolean* - Returns `true` if the permutation of this block has the tag, else `false`.
 
 > [!WARNING]
 > This function can throw errors.
@@ -411,7 +411,7 @@ isValid(): boolean
 
 Returns true if this reference to a block is still valid (for example, if the block is unloaded, references to that block will no longer be valid.)
 
-#### **Returns** *boolean* - True if this block object is still working and valid.
+**Returns** *boolean* - True if this block object is still working and valid.
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **matches**
@@ -429,7 +429,7 @@ Tests whether this block matches a specific criteria.
   
   Optional set of block states to test this block against.
 
-#### **Returns** *boolean* - Returns true if the block matches the specified criteria.
+**Returns** *boolean* - Returns true if the block matches the specified criteria.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -437,7 +437,7 @@ Tests whether this block matches a specific criteria.
 > [!WARNING]
 > This function can throw errors.
 >
-> Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 ::: moniker-end
 
 ### **north**
@@ -452,7 +452,7 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the 
   
   Number of steps to the north to step before returning.
 
-#### **Returns** [*Block*](Block.md) | *undefined*
+**Returns** [*Block*](Block.md) | *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -471,7 +471,7 @@ Returns a block at an offset relative vector to this block.
   
   The offset vector. For example, an offset of 0, 1, 0 will return the block above the current block.
 
-#### **Returns** [*Block*](Block.md) | *undefined* - Block at the specified offset, or undefined if that block could not be retrieved (for example, the block and its relative chunk is not loaded yet.)
+**Returns** [*Block*](Block.md) | *undefined* - Block at the specified offset, or undefined if that block could not be retrieved (for example, the block and its relative chunk is not loaded yet.)
 
 > [!WARNING]
 > This function can throw errors.
@@ -560,7 +560,7 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the 
   
   Number of steps to the south to step before returning.
 
-#### **Returns** [*Block*](Block.md) | *undefined*
+**Returns** [*Block*](Block.md) | *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -580,7 +580,7 @@ Tries to set the block in the dimension to the state of the permutation by first
   
   Permutation that contains a set of property states for the Block.
 
-#### **Returns** *boolean* - Returns `true` if the block permutation data was successfully set, else `false`.
+**Returns** *boolean* - Returns `true` if the block permutation data was successfully set, else `false`.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -606,7 +606,7 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the 
   
   Number of steps to the west to step before returning.
 
-#### **Returns** [*Block*](Block.md) | *undefined*
+**Returns** [*Block*](Block.md) | *undefined*
 
 > [!WARNING]
 > This function can throw errors.

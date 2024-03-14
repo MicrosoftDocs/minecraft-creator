@@ -21,4 +21,4 @@ new SecretString(value: string)
 #### **Parameters**
 - **value**: *string*
 
-#### **Returns** [*SecretString*](SecretString.md)
+**Returns** [*SecretString*](SecretString.md)

@@ -55,7 +55,7 @@ Adds a score to the given participant and objective.
   Participant to apply the scoreboard value addition to.
 - **scoreToAdd**: *number*
 
-#### **Returns** *number*
+**Returns** *number*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -70,7 +70,7 @@ getParticipants(): ScoreboardIdentity[]
 
 Returns all objective participant identities.
 
-#### **Returns** [*ScoreboardIdentity*](ScoreboardIdentity.md)[]
+**Returns** [*ScoreboardIdentity*](ScoreboardIdentity.md)[]
 
 > [!WARNING]
 > This function can throw errors.
@@ -87,7 +87,7 @@ Returns a specific score for a participant.
   
   Identifier of the participant to retrieve a score for.
 
-#### **Returns** *number* | *undefined*
+**Returns** *number* | *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -99,7 +99,7 @@ getScores(): ScoreboardScoreInfo[]
 
 Returns specific scores for this objective for all participants.
 
-#### **Returns** [*ScoreboardScoreInfo*](ScoreboardScoreInfo.md)[]
+**Returns** [*ScoreboardScoreInfo*](ScoreboardScoreInfo.md)[]
 
 > [!WARNING]
 > This function can throw errors.
@@ -114,7 +114,7 @@ Returns if the specified identity is a participant of the scoreboard objective.
 #### **Parameters**
 - **participant**: [*Entity*](Entity.md) | [*ScoreboardIdentity*](ScoreboardIdentity.md) | *string*
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.
@@ -126,7 +126,7 @@ isValid(): boolean
 
 Returns true if the ScoreboardObjective reference is still valid.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 ### **removeParticipant**
 `
@@ -140,7 +140,7 @@ Removes a participant from this scoreboard objective.
   
   Participant to remove from being tracked with this objective.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

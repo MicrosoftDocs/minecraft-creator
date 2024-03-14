@@ -252,7 +252,7 @@ Adds or updates an effect, like poison, to the entity.
   
   Additional options for the effect.
 
-#### **Returns** [*Effect*](Effect.md) | *undefined* - Returns nothing if the effect was added or updated successfully. This can throw an error if the duration or amplifier are outside of the valid ranges, or if the effect does not exist.
+**Returns** [*Effect*](Effect.md) | *undefined* - Returns nothing if the effect was added or updated successfully. This can throw an error if the duration or amplifier are outside of the valid ranges, or if the effect does not exist.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -317,7 +317,7 @@ Adds a specified tag to an entity.
   
   Content of the tag to add. The tag must be less than 256 characters.
 
-#### **Returns** *boolean* - Returns true if the tag was added successfully. This can fail if the tag already exists on the entity.
+**Returns** *boolean* - Returns true if the tag was added successfully. This can fail if the tag already exists on the entity.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -340,7 +340,7 @@ Applies a set of damage to an entity.
   
   Additional options about the source of damage, which may add additional effects or spur additional behaviors on this entity.
 
-#### **Returns** *boolean* - Whether the entity takes any damage. This can return false if the entity is invulnerable or if the damage applied is less than or equal to 0.
+**Returns** *boolean* - Whether the entity takes any damage. This can return false if the entity is invulnerable or if the damage applied is less than or equal to 0.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -507,7 +507,7 @@ Extinguishes the fire if the entity is on fire. Note that you can call getCompon
   
   Whether to show any visual effects connected to the extinguishing.
 
-#### **Returns** *boolean* - Returns whether the entity was on fire.
+**Returns** *boolean* - Returns whether the entity was on fire.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -547,7 +547,7 @@ Returns the first intersecting block from the direction that this entity is look
   
   Additional configuration options for the ray cast.
 
-#### **Returns** [*BlockRaycastHit*](BlockRaycastHit.md) | *undefined* - Returns the first intersecting block from the direction that this entity is looking at.
+**Returns** [*BlockRaycastHit*](BlockRaycastHit.md) | *undefined* - Returns the first intersecting block from the direction that this entity is looking at.
 
 > [!WARNING]
 > This function can throw errors.
@@ -564,7 +564,7 @@ Gets a component (that represents additional capabilities) for an entity.
   
   The identifier of the component (e.g., 'minecraft:health'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.EntityComponentTypes*](../../minecraft/server/EntityComponentTypes.md) enum.
 
-#### **Returns** *EntityComponentTypeMap[T] | undefined* - Returns the component if it exists on the entity, otherwise undefined.
+**Returns** *EntityComponentTypeMap[T] | undefined* - Returns the component if it exists on the entity, otherwise undefined.
 
 ### **getComponents**
 `
@@ -573,7 +573,7 @@ getComponents(): EntityComponent[]
 
 Returns all components that are both present on this entity and supported by the API.
 
-#### **Returns** [*EntityComponent*](EntityComponent.md)[] - Returns all components that are both present on this entity and supported by the API.
+**Returns** [*EntityComponent*](EntityComponent.md)[] - Returns all components that are both present on this entity and supported by the API.
 
 ### **getDynamicProperty**
 `
@@ -587,7 +587,7 @@ Returns a property value.
   
   The property identifier.
 
-#### **Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
+**Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
 
 > [!WARNING]
 > This function can throw errors.
@@ -599,7 +599,7 @@ getDynamicPropertyIds(): string[]
 
 Returns the available set of dynamic property identifiers that have been used on this entity.
 
-#### **Returns** *string*[] - A string array of the dynamic properties set on this entity.
+**Returns** *string*[] - A string array of the dynamic properties set on this entity.
 
 > [!WARNING]
 > This function can throw errors.
@@ -611,7 +611,7 @@ getDynamicPropertyTotalByteCount(): number
 
 Returns the total size, in bytes, of all the dynamic properties that are currently stored for this entity. This includes the size of both the key and the value.  This can be useful for diagnosing performance warning signs - if, for example, an entity has many megabytes of associated dynamic properties, it may be slow to load on various devices.
 
-#### **Returns** *number*
+**Returns** *number*
 
 > [!WARNING]
 > This function can throw errors.
@@ -628,7 +628,7 @@ Returns the effect for the specified EffectType on the entity, undefined if the 
   
   The effect identifier.
 
-#### **Returns** [*Effect*](Effect.md) | *undefined* - Effect object for the specified effect, undefined if the effect is not present, or throws an error if the effect does not exist.
+**Returns** [*Effect*](Effect.md) | *undefined* - Effect object for the specified effect, undefined if the effect is not present, or throws an error if the effect does not exist.
 
 > [!WARNING]
 > This function can throw errors.
@@ -640,7 +640,7 @@ getEffects(): Effect[]
 
 Returns a set of effects applied to this entity.
 
-#### **Returns** [*Effect*](Effect.md)[] - List of effects.
+**Returns** [*Effect*](Effect.md)[] - List of effects.
 
 > [!WARNING]
 > This function can throw errors.
@@ -657,7 +657,7 @@ Gets the entities that this entity is looking at by performing a ray cast from t
   
   Additional configuration options for the ray cast.
 
-#### **Returns** [*EntityRaycastHit*](EntityRaycastHit.md)[] - Returns a set of entities from the direction that this entity is looking at.
+**Returns** [*EntityRaycastHit*](EntityRaycastHit.md)[] - Returns a set of entities from the direction that this entity is looking at.
 
 > [!WARNING]
 > This function can throw errors.
@@ -669,7 +669,7 @@ getHeadLocation(): Vector3
 
 Returns the current location of the head component of this entity.
 
-#### **Returns** [*Vector3*](Vector3.md) - Returns the current location of the head component of this entity.
+**Returns** [*Vector3*](Vector3.md) - Returns the current location of the head component of this entity.
 
 > [!WARNING]
 > This function can throw errors.
@@ -686,7 +686,7 @@ Gets an entity Property value. If the property was set using the setProperty fun
   
   The entity Property identifier.
 
-#### **Returns** *boolean* | *number* | *string* | *undefined* - Returns the current property value. For enum properties, a string is returned. For float and int properties, a number is returned. For undefined properties, undefined is returned.
+**Returns** *boolean* | *number* | *string* | *undefined* - Returns the current property value. For enum properties, a string is returned. For float and int properties, a number is returned. For undefined properties, undefined is returned.
 
 > [!WARNING]
 > This function can throw errors.
@@ -700,7 +700,7 @@ getRotation(): Vector2
 
 Returns the current rotation component of this entity.
 
-#### **Returns** [*Vector2*](Vector2.md) - Returns a Vec2 containing the rotation of this entity (in degrees).
+**Returns** [*Vector2*](Vector2.md) - Returns a Vec2 containing the rotation of this entity (in degrees).
 
 > [!WARNING]
 > This function can throw errors.
@@ -712,7 +712,7 @@ getTags(): string[]
 
 Returns all tags associated with the entity.
 
-#### **Returns** *string*[] - An array containing all tags as strings.
+**Returns** *string*[] - An array containing all tags as strings.
 
 > [!WARNING]
 > This function can throw errors.
@@ -724,7 +724,7 @@ getVelocity(): Vector3
 
 Returns the current velocity vector of the entity.
 
-#### **Returns** [*Vector3*](Vector3.md) - Returns the current velocity vector of the entity.
+**Returns** [*Vector3*](Vector3.md) - Returns the current velocity vector of the entity.
 
 > [!WARNING]
 > This function can throw errors.
@@ -754,7 +754,7 @@ getViewDirection(): Vector3
 
 Returns the current view direction of the entity.
 
-#### **Returns** [*Vector3*](Vector3.md) - Returns the current view direction of the entity.
+**Returns** [*Vector3*](Vector3.md) - Returns the current view direction of the entity.
 
 > [!WARNING]
 > This function can throw errors.
@@ -771,7 +771,7 @@ Returns true if the specified component is present on this entity.
   
   The identifier of the component (e.g., 'minecraft:rideable') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed.
 
-#### **Returns** *boolean* - Returns true if the specified component is present on this entity.
+**Returns** *boolean* - Returns true if the specified component is present on this entity.
 
 ### **hasTag**
 `
@@ -785,7 +785,7 @@ Returns whether an entity has a particular tag.
   
   Identifier of the tag to test for.
 
-#### **Returns** *boolean* - Returns whether an entity has a particular tag.
+**Returns** *boolean* - Returns whether an entity has a particular tag.
 
 > [!WARNING]
 > This function can throw errors.
@@ -797,7 +797,7 @@ isValid(): boolean
 
 Returns whether the entity can be manipulated by script. A Player is considered valid when it's EntityLifetimeState is set to Loaded.
 
-#### **Returns** *boolean* - Whether the entity is valid.
+**Returns** *boolean* - Whether the entity is valid.
 
 ### **kill**
 `
@@ -806,7 +806,7 @@ kill(): boolean
 
 Kills this entity. The entity will drop loot as normal.
 
-#### **Returns** *boolean* - Returns true if entity can be killed (even if it is already dead), otherwise it returns false.
+**Returns** *boolean* - Returns true if entity can be killed (even if it is already dead), otherwise it returns false.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -851,7 +851,7 @@ Matches the entity against the passed in options. Uses the location of the entit
   
   The query to perform the match against.
 
-#### **Returns** *boolean* - Returns true if the entity matches the criteria in the passed in EntityQueryOptions, otherwise it returns false.
+**Returns** *boolean* - Returns true if the entity matches the criteria in the passed in EntityQueryOptions, otherwise it returns false.
 
 > [!WARNING]
 > This function can throw errors.
@@ -904,7 +904,7 @@ Removes the specified EffectType on the entity, or returns false if the effect i
   
   The effect identifier.
 
-#### **Returns** *boolean* - Returns true if the effect has been removed. Returns false if the effect is not found or does not exist.
+**Returns** *boolean* - Returns true if the effect has been removed. Returns false if the effect is not found or does not exist.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -924,7 +924,7 @@ Removes a specified tag from an entity.
   
   Content of the tag to remove.
 
-#### **Returns** *boolean* - Returns whether the tag existed on the entity.
+**Returns** *boolean* - Returns whether the tag existed on the entity.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -944,7 +944,7 @@ Resets an Entity Property back to its default value, as specified in the Entity'
   
   The Entity Property identifier.
 
-#### **Returns** *boolean* | *number* | *string* - Returns the default property value. For enum properties, a string is returned. For float and int properties, a number is returned. For undefined properties, undefined is returned.
+**Returns** *boolean* | *number* | *string* - Returns the default property value. For enum properties, a string is returned. For float and int properties, a number is returned. For undefined properties, undefined is returned.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -966,7 +966,7 @@ Runs a synchronous command on the entity.
   
   The command string. Note: This should not include a leading forward slash.
 
-#### **Returns** [*CommandResult*](CommandResult.md) - A command result containing whether the command was successful.
+**Returns** [*CommandResult*](CommandResult.md) - A command result containing whether the command was successful.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -988,7 +988,7 @@ Runs a particular command asynchronously from the context of this entity. Note t
   
   Command to run. Note that command strings should not start with slash.
 
-#### **Returns** Promise&lt;[*CommandResult*](CommandResult.md)&gt; - For commands that return data, returns a JSON structure with command response values.
+**Returns** Promise&lt;[*CommandResult*](CommandResult.md)&gt; - For commands that return data, returns a JSON structure with command response values.
 
 > [!WARNING]
 > This function can throw errors.
@@ -1026,7 +1026,7 @@ Sets an entity on fire (if it is not in water or rain). Note that you can call g
   
   Whether side-effects should be applied (e.g. thawing freeze) and other conditions such as rain or fire protection should be taken into consideration.
 
-#### **Returns** *boolean* - Whether the entity was set on fire. This can fail if seconds is less than or equal to zero, the entity is wet or the entity is immune to fire.
+**Returns** *boolean* - Whether the entity was set on fire. This can fail if seconds is less than or equal to zero, the entity is wet or the entity is immune to fire.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -1199,7 +1199,7 @@ Attempts to try a teleport, but may not complete the teleport operation (for exa
   
   Options regarding the teleport operation.
 
-#### **Returns** *boolean* - Returns whether the teleport succeeded. This can fail if the destination chunk is unloaded or if the teleport would result in intersecting with blocks.
+**Returns** *boolean* - Returns whether the teleport succeeded. This can fail if the destination chunk is unloaded or if the teleport would result in intersecting with blocks.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

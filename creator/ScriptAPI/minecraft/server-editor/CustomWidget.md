@@ -37,7 +37,7 @@ Type: *boolean*
 getText(): string
 `
 
-#### **Returns** *string*
+**Returns** *string*
 
 ### **setText**
 `
