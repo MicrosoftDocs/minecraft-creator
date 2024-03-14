@@ -32,7 +32,7 @@ create(): Selection
 
 Create a new, empty [*@minecraft/server-editor.Selection*](../../minecraft/server-editor/Selection.md) object
 
-#### **Returns** [*Selection*](Selection.md)
+**Returns** [*Selection*](Selection.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

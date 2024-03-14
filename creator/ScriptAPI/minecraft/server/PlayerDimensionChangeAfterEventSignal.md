@@ -24,7 +24,7 @@ Subscribes the specified callback to a player dimension change after event.
 #### **Parameters**
 - **callback**: (arg: [*PlayerDimensionChangeAfterEvent*](PlayerDimensionChangeAfterEvent.md)) => *void*
 
-#### **Returns** (arg: [*PlayerDimensionChangeAfterEvent*](PlayerDimensionChangeAfterEvent.md)) => *void*
+**Returns** (arg: [*PlayerDimensionChangeAfterEvent*](PlayerDimensionChangeAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

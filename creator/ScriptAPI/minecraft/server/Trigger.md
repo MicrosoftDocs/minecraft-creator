@@ -36,4 +36,4 @@ Creates a new trigger.
 #### **Parameters**
 - **eventName**: *string*
 
-#### **Returns** [*Trigger*](Trigger.md)
+**Returns** [*Trigger*](Trigger.md)

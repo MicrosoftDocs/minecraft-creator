@@ -12,15 +12,21 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Represents a loaded structure template (.mcstructure file). Structures can be placed in a world using the /structure command or the [*@minecraft/server.StructureManager*](../../minecraft/server/StructureManager.md) APIs.
+
 ## Properties
 
 ### **id**
 `read-only id: string;`
 
+The name of the structure. The identifier must include a namespace. For structures created via the /structure command or structure blocks, this namespace defaults to "mystructure".
+
 Type: *string*
 
 ### **size**
 `read-only size: Vector3;`
+
+The dimensions of the structure. For example, a single block structure will have a size of {x:1, y:1, z:1}
 
 Type: [*Vector3*](Vector3.md)
 
@@ -42,10 +48,14 @@ Type: [*Vector3*](Vector3.md)
 getBlockPermutation(location: Vector3): BlockPermutation | undefined
 `
 
+Returns a BlockPermutation representing the block contained within the Structure at the given location.
+
 #### **Parameters**
 - **location**: [*Vector3*](Vector3.md)
+  
+  The block location relative to the Structure's origin.
 
-#### **Returns** [*BlockPermutation*](BlockPermutation.md) | *undefined*
+**Returns** [*BlockPermutation*](BlockPermutation.md) | *undefined* - Returns a BlockPermutation. Returns undefined if a block does not exist at the given location.
 
 > [!WARNING]
 > This function can throw errors.
@@ -57,10 +67,14 @@ getBlockPermutation(location: Vector3): BlockPermutation | undefined
 getIsWaterlogged(location: Vector3): boolean
 `
 
+Returns whether the block at the given location is waterlogged.
+
 #### **Parameters**
 - **location**: [*Vector3*](Vector3.md)
+  
+  The block location relative to the Structure's origin.
 
-#### **Returns** *boolean*
+**Returns** *boolean* - Returns whether the block at the given location is waterlogged. Returns false if a block does not exist at the given location.
 
 > [!WARNING]
 > This function can throw errors.
@@ -72,18 +86,26 @@ getIsWaterlogged(location: Vector3): boolean
 isValid(): boolean
 `
 
-#### **Returns** *boolean*
+Returns whether the Structure is valid. The Structure may become invalid if it is deleted.
+
+**Returns** *boolean* - Returns whether the Structure is valid.
 
 ### **saveAs**
 `
 saveAs(identifier: string, saveMode?: StructureSaveMode): Structure
 `
 
+Creates a copy of a Structure and saves it with a new name.
+
 #### **Parameters**
 - **identifier**: *string*
+  
+  The name of the newly created Structure.
 - **saveMode**?: [*StructureSaveMode*](StructureSaveMode.md) = `1`
+  
+  Determines how the Structure should be saved. Defaults to saving to the world.
 
-#### **Returns** [*Structure*](Structure.md)
+**Returns** [*Structure*](Structure.md) - Returns the newly created structure.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -98,6 +120,8 @@ saveAs(identifier: string, saveMode?: StructureSaveMode): Structure
 saveToWorld(): void
 `
 
+Saves a modified Structure to the world file.
+
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
@@ -111,10 +135,18 @@ saveToWorld(): void
 setBlockPermutation(location: Vector3, blockPermutation?: BlockPermutation, waterlogged?: boolean): void
 `
 
+Sets a BlockPermutation within a Structure.
+
 #### **Parameters**
 - **location**: [*Vector3*](Vector3.md)
+  
+  The block location relative to the Structure's origin.
 - **blockPermutation**?: [*BlockPermutation*](BlockPermutation.md) = `null`
+  
+  The BlockPermutation to set.
 - **waterlogged**?: *boolean* = `false`
+  
+  Specifies whether the block should be waterlogged. Air and undefined blocks cannot be waterlogged.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

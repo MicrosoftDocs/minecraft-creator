@@ -25,7 +25,7 @@ Adds a callback that will be called when a block is broken by a player.
 - **callback**: (arg: [*PlayerBreakBlockAfterEvent*](PlayerBreakBlockAfterEvent.md)) => *void*
 - **options**?: [*BlockEventOptions*](BlockEventOptions.md) = `null`
 
-#### **Returns** (arg: [*PlayerBreakBlockAfterEvent*](PlayerBreakBlockAfterEvent.md)) => *void*
+**Returns** (arg: [*PlayerBreakBlockAfterEvent*](PlayerBreakBlockAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

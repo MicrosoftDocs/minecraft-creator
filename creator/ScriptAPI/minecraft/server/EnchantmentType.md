@@ -29,3 +29,19 @@ Type: *string*
 The maximum level this type of enchantment can have.
 
 Type: *number*
+
+## Methods
+- [constructor](#constructor)
+
+### **constructor**
+`
+new EnchantmentType(enchantmentType: string)
+`
+
+#### **Parameters**
+- **enchantmentType**: *string*
+
+**Returns** [*EnchantmentType*](EnchantmentType.md)
+
+> [!WARNING]
+> This function can throw errors.

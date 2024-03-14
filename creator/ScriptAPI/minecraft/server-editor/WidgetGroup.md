@@ -32,7 +32,7 @@ createCustomWidget(customEntityName: string, location: minecraftserver.Vector3, 
 - **rotation**?: [*@minecraft/server.Vector2*](../../minecraft/server/Vector2.md) = `null`
 - **options**?: [*CustomWidgetCreateOptions*](CustomWidgetCreateOptions.md) = `null`
 
-#### **Returns** [*CustomWidget*](CustomWidget.md)
+**Returns** [*CustomWidget*](CustomWidget.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -59,7 +59,7 @@ deleteWidget(widgetToDelete: Widget): void
 getIsVisible(): boolean
 `
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

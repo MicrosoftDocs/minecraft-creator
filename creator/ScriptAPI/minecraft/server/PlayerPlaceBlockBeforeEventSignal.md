@@ -29,7 +29,7 @@ Adds a callback that will be called before a block is placed by a player.
 - **callback**: (arg: [*PlayerPlaceBlockBeforeEvent*](PlayerPlaceBlockBeforeEvent.md)) => *void*
 - **options**?: [*BlockEventOptions*](BlockEventOptions.md) = `null`
 
-#### **Returns** (arg: [*PlayerPlaceBlockBeforeEvent*](PlayerPlaceBlockBeforeEvent.md)) => *void*
+**Returns** (arg: [*PlayerPlaceBlockBeforeEvent*](PlayerPlaceBlockBeforeEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

@@ -25,7 +25,7 @@ navigateToDocumentation(): void
 
 Navigates to the documentation site.
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **navigateToFeedback**
 `
@@ -34,7 +34,7 @@ navigateToFeedback(): void
 
 Navigates to the feedback site
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **navigateToPauseScreen**
 `
@@ -43,7 +43,7 @@ navigateToPauseScreen(): void
 
 Navigates to the pause screen
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **updateLogPanelVisibility**
 `
@@ -55,7 +55,7 @@ Updates the visibility of the log panel
 #### **Parameters**
 - **visibility**: *boolean*
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **updateUISettingsPanelVisibility**
 `
@@ -67,7 +67,7 @@ Updates the visibility of the control demo
 #### **Parameters**
 - **visibility**: *boolean*
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **updateWelcomePanelVisibility**
 `
@@ -79,4 +79,4 @@ Updates the visibility of the welcome panel
 #### **Parameters**
 - **visibility**: *boolean*
 
-#### **Returns** *void*
+**Returns** *void*

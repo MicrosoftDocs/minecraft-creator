@@ -24,7 +24,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 getTypeFamilies(): string[]
 `
 
-#### **Returns** *string*[]
+**Returns** *string*[]
 
 > [!WARNING]
 > This function can throw errors.
@@ -37,7 +37,7 @@ hasTypeFamily(typeFamily: string): boolean
 #### **Parameters**
 - **typeFamily**: *string*
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.

@@ -111,7 +111,7 @@ getBreatheBlocks(): BlockPermutation[]
 
 List of blocks this entity can breathe in, in addition to the separate properties for classes of blocks.
 
-#### **Returns** [*BlockPermutation*](BlockPermutation.md)[]
+**Returns** [*BlockPermutation*](BlockPermutation.md)[]
 
 > [!WARNING]
 > This function can throw errors.
@@ -123,7 +123,7 @@ getNonBreatheBlocks(): BlockPermutation[]
 
 List of blocks this entity can't breathe in.
 
-#### **Returns** [*BlockPermutation*](BlockPermutation.md)[]
+**Returns** [*BlockPermutation*](BlockPermutation.md)[]
 
 > [!WARNING]
 > This function can throw errors.

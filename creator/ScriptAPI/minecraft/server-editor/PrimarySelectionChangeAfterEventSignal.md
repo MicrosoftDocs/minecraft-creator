@@ -20,7 +20,7 @@ subscribe(callback: (arg: SelectionEventAfterEvent) => void): (arg: SelectionEve
 #### **Parameters**
 - **callback**: (arg: [*SelectionEventAfterEvent*](SelectionEventAfterEvent.md)) => *void*
 
-#### **Returns** (arg: [*SelectionEventAfterEvent*](SelectionEventAfterEvent.md)) => *void*
+**Returns** (arg: [*SelectionEventAfterEvent*](SelectionEventAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

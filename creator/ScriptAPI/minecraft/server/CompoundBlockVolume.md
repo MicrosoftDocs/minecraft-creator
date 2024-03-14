@@ -73,7 +73,7 @@ Create a CompoundBlockVolume object
   
   If not specified, the origin is set to (0,0,0)
 
-#### **Returns** [*CompoundBlockVolume*](CompoundBlockVolume.md)
+**Returns** [*CompoundBlockVolume*](CompoundBlockVolume.md)
 
 ### **clear**
 `
@@ -98,7 +98,7 @@ Areas of a volume which have been overridden by a subtractive volume will not be
 
 Note that the Block Locations returned by this iterator are in absolute world space (irrespective of whether the compound volume items pushed are absolute or relative)
 
-#### **Returns** [*BlockLocationIterator*](BlockLocationIterator.md)
+**Returns** [*BlockLocationIterator*](BlockLocationIterator.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -112,7 +112,7 @@ Get the largest bounding box that represents a container for all of the volumes 
 
 Note that the bounding box returned is represented in absolute world space  (irrespective of whether the compound volume items pushed are absolute or relative)
 
-#### **Returns** [*BoundingBox*](BoundingBox.md)
+**Returns** [*BoundingBox*](BoundingBox.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -126,7 +126,7 @@ Get the max block location of the outermost bounding rectangle which represents 
 
 Note that the max location returned is in absolute world space (irrespective of whether the compound volume items pushed are absolute or relative)
 
-#### **Returns** [*Vector3*](Vector3.md)
+**Returns** [*Vector3*](Vector3.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -140,7 +140,7 @@ Get the min block location of the outermost bounding rectangle which represents 
 
 Note that the min location returned is in absolute world space (irrespective of whether the compound volume items pushed are absolute or relative)
 
-#### **Returns** [*Vector3*](Vector3.md)
+**Returns** [*Vector3*](Vector3.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -152,7 +152,7 @@ getOrigin(): Vector3
 
 Fetch the origin in world space of the compound volume
 
-#### **Returns** [*Vector3*](Vector3.md)
+**Returns** [*Vector3*](Vector3.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -164,7 +164,7 @@ isEmpty(): boolean
 
 Return a boolean which signals if there are any volume items pushed to the volume
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -181,7 +181,7 @@ E.g. if the stack contains a large cube followed by a slightly smaller negative 
 #### **Parameters**
 - **worldLocation**: [*Vector3*](Vector3.md)
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -206,7 +206,7 @@ Inspect the last entry pushed to the volume stack without affecting the stack co
   
   If no flag is specified, the item returned retains whatever relativity it had when it was pushed
 
-#### **Returns** [*CompoundBlockVolumeItem*](CompoundBlockVolumeItem.md) | *undefined* - Returns undefined if the stack is empty
+**Returns** [*CompoundBlockVolumeItem*](CompoundBlockVolumeItem.md) | *undefined* - Returns undefined if the stack is empty
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -218,7 +218,7 @@ popVolume(): boolean
 
 Remove the last entry from the volume stack.  This will reduce the stack size by one
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -254,7 +254,7 @@ If the volume stack is NOT empty, this function will replace the last item on th
   
   Item to add or replace
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -294,7 +294,7 @@ Set the origin of the compound volume to an absolute world space location
 translateOrigin(delta: Vector3, preserveExistingVolumes?: boolean): void
 `
 
-Similar to {@link @minecraft-server/CompoundBlockVolume.setOrigin} - this function will translate the origin by a given delta to a new position
+Similar to @minecraft-server/CompoundBlockVolume.setOrigin - this function will translate the origin by a given delta to a new position
 
 #### **Parameters**
 - **delta**: [*Vector3*](Vector3.md)

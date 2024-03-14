@@ -100,7 +100,7 @@ new HttpRequest(uri: string)
 #### **Parameters**
 - **uri**: *string*
 
-#### **Returns** [*HttpRequest*](HttpRequest.md)
+**Returns** [*HttpRequest*](HttpRequest.md)
 
 ### **addHeader**
 `
@@ -113,7 +113,7 @@ Adds an additional header to the overall list of headers used in the correspondi
 - **key**: *string*
 - **value**: [*@minecraft/server-admin.SecretString*](../../minecraft/server-admin/SecretString.md) | *string*
 
-#### **Returns** [*HttpRequest*](HttpRequest.md)
+**Returns** [*HttpRequest*](HttpRequest.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -128,7 +128,7 @@ Updates the content of the body of the HTTP request.
 #### **Parameters**
 - **body**: *string*
 
-#### **Returns** [*HttpRequest*](HttpRequest.md)
+**Returns** [*HttpRequest*](HttpRequest.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -143,7 +143,7 @@ Replaces and applies a set of HTTP Headers for the request.
 #### **Parameters**
 - **headers**: [*HttpHeader*](HttpHeader.md)[]
 
-#### **Returns** [*HttpRequest*](HttpRequest.md)
+**Returns** [*HttpRequest*](HttpRequest.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -158,7 +158,7 @@ Sets the desired HTTP method (e.g., GET or PUT or PATCH) to use for making the r
 #### **Parameters**
 - **method**: [*HttpRequestMethod*](HttpRequestMethod.md)
 
-#### **Returns** [*HttpRequest*](HttpRequest.md)
+**Returns** [*HttpRequest*](HttpRequest.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -171,7 +171,7 @@ setTimeout(timeout: number): HttpRequest
 #### **Parameters**
 - **timeout**: *number*
 
-#### **Returns** [*HttpRequest*](HttpRequest.md)
+**Returns** [*HttpRequest*](HttpRequest.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

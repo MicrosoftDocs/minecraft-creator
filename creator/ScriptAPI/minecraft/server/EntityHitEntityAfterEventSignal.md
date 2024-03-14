@@ -25,7 +25,7 @@ Adds a callback that will be called when an entity hits another entity.
 - **callback**: (arg: [*EntityHitEntityAfterEvent*](EntityHitEntityAfterEvent.md)) => *void*
 - **options**?: [*EntityEventOptions*](EntityEventOptions.md) = `null`
 
-#### **Returns** (arg: [*EntityHitEntityAfterEvent*](EntityHitEntityAfterEvent.md)) => *void*
+**Returns** (arg: [*EntityHitEntityAfterEvent*](EntityHitEntityAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

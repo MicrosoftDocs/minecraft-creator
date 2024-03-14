@@ -24,7 +24,7 @@ Adds a callback that will be called when a projectile hits a block.
 #### **Parameters**
 - **callback**: (arg: [*ProjectileHitBlockAfterEvent*](ProjectileHitBlockAfterEvent.md)) => *void*
 
-#### **Returns** (arg: [*ProjectileHitBlockAfterEvent*](ProjectileHitBlockAfterEvent.md)) => *void*
+**Returns** (arg: [*ProjectileHitBlockAfterEvent*](ProjectileHitBlockAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

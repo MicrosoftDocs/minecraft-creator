@@ -26,7 +26,7 @@ Will call your function every time an entity is being removed from the game.
   
   Function to call.
 
-#### **Returns** (arg: [*EntityRemoveBeforeEvent*](EntityRemoveBeforeEvent.md)) => *void* - Returns a closure that can be used in subsequent unsubscribe operations.
+**Returns** (arg: [*EntityRemoveBeforeEvent*](EntityRemoveBeforeEvent.md)) => *void* - Returns a closure that can be used in subsequent unsubscribe operations.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

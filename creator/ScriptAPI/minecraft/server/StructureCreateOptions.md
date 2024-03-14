@@ -12,19 +12,27 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Provides additional options for [*@minecraft/server.StructureManager.createFromWorld*](../../minecraft/server/StructureManager.md#createfromworld)
+
 ## Properties
 
 ### **includeBlocks**
 `includeBlocks?: boolean;`
+
+Whether blocks should be included in the structure. Defaults to true.
 
 Type: *boolean*
 
 ### **includeEntities**
 `includeEntities?: boolean;`
 
+Whether entities should be included in the structure. Defaults to true.
+
 Type: *boolean*
 
 ### **saveMode**
 `saveMode?: StructureSaveMode;`
+
+How the Structure should be saved. Defaults to StructureSaveMode.World.
 
 Type: [*StructureSaveMode*](StructureSaveMode.md)

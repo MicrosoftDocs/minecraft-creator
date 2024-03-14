@@ -28,22 +28,3 @@ Type: [*Logger*](Logger.md)
 Allows querying and modifying some properties of the simulation.
 
 Type: [*SimulationState*](SimulationState.md)
-
-## Methods
-- [registerExtension_Internal](#registerextension_internal)
-
-### **registerExtension_Internal**
-`
-registerExtension_Internal(extensionName: string, activationFunction: (arg: ExtensionContext) => void, shutdownFunction: (arg: ExtensionContext) => void, options?: ExtensionOptionalParameters): Extension
-`
-
-#### **Parameters**
-- **extensionName**: *string*
-- **activationFunction**: (arg: [*ExtensionContext*](ExtensionContext.md)) => *void*
-- **shutdownFunction**: (arg: [*ExtensionContext*](ExtensionContext.md)) => *void*
-- **options**?: [*ExtensionOptionalParameters*](ExtensionOptionalParameters.md) = `null`
-
-#### **Returns** [*Extension*](Extension.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.

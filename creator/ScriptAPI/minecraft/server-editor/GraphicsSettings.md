@@ -28,7 +28,7 @@ Retrieves a graphics settings property value.
   
   Property identifier.
 
-#### **Returns** *GraphicsSettingsPropertyTypeMap[T] | undefined* - Returns the property value if it is found. If the property is not available, it returns undefined.
+**Returns** *GraphicsSettingsPropertyTypeMap[T] | undefined* - Returns the property value if it is found. If the property is not available, it returns undefined.
 
 ### **getAll**
 `
@@ -37,7 +37,7 @@ getAll(): GraphicsSettingsPropertyTypeMap
 
 Retrieves all graphics settings properties and their values.
 
-#### **Returns** *GraphicsSettingsPropertyTypeMap* - Returns a property value map for all available properties.
+**Returns** *GraphicsSettingsPropertyTypeMap* - Returns a property value map for all available properties.
 
 ### **set**
 `
@@ -54,7 +54,7 @@ Modifies a graphics settings property value.
   
   New property value.
 
-#### **Returns** *void*
+**Returns** *void*
 
 > [!WARNING]
 > This function can throw errors.
@@ -71,7 +71,7 @@ Modify multiple graphics settings properties.
   
   Property map to set available property values. If the property is not defined in the map, it will not be modified.
 
-#### **Returns** *void*
+**Returns** *void*
 
 > [!WARNING]
 > This function can throw errors.

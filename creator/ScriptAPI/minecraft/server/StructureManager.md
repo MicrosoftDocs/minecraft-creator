@@ -12,11 +12,14 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Manager for Structure related APIs. Includes APIs for creating, getting, placing and deleting Structures.
+
 ## Methods
 - [createEmpty](#createempty)
 - [createFromWorld](#createfromworld)
 - [delete](#delete)
 - [get](#get)
+- [getIds](#getids)
 - [place](#place)
 
 ### **createEmpty**
@@ -24,12 +27,20 @@ monikerRange: "=minecraft-bedrock-experimental"
 createEmpty(identifier: string, size: Vector3, saveMode?: StructureSaveMode): Structure
 `
 
+Creates an empty Structure in memory. Use [*@minecraft/server.Structure.setBlockPermutation*](../../minecraft/server/Structure.md#setblockpermutation) to populate the structure with blocks and save changes with @minecraft/server.Structure.save.
+
 #### **Parameters**
 - **identifier**: *string*
+  
+  The name of the structure. A valid identifier must include a namespace and must be unique.
 - **size**: [*Vector3*](Vector3.md)
-- **saveMode**?: [*StructureSaveMode*](StructureSaveMode.md) = `1`
+  
+  The size of the structure. For example, to create a single block structure the size should be {x:1, y:1, z:1}.
+- **saveMode**?: [*StructureSaveMode*](StructureSaveMode.md) = `0`
+  
+  How the Structure should be saved upon creation. Defaults to StructureSaveMode.Memory.
 
-#### **Returns** [*Structure*](Structure.md)
+**Returns** [*Structure*](Structure.md) - Returns the newly created Structure.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -44,13 +55,23 @@ createEmpty(identifier: string, size: Vector3, saveMode?: StructureSaveMode): St
 createFromWorld(identifier: string, dimension: Dimension, blockVolume: BlockVolume, options?: StructureCreateOptions): Structure
 `
 
+Creates a new Structure from blocks in the world. This is functionally equivalent to the /structure save command.
+
 #### **Parameters**
 - **identifier**: *string*
+  
+  The name of the structure. A valid identifier must include a namespace and must be unique.
 - **dimension**: [*Dimension*](Dimension.md)
+  
+  The dimension where the blocks should be read from.
 - **blockVolume**: [*BlockVolume*](BlockVolume.md)
+  
+  The location and bounds of the blocks that should be read.
 - **options**?: [*StructureCreateOptions*](StructureCreateOptions.md) = `null`
+  
+  Additional options for creating a structure from the world.
 
-#### **Returns** [*Structure*](Structure.md)
+**Returns** [*Structure*](Structure.md) - Returns the newly created Structure.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -65,10 +86,14 @@ createFromWorld(identifier: string, dimension: Dimension, blockVolume: BlockVolu
 "delete"(structure: string | Structure): boolean
 `
 
+Deletes a structure from memory and from the world if it exists.
+
 #### **Parameters**
 - **structure**: *string* | [*Structure*](Structure.md)
+  
+  The structure identifier or Structure object that should be deleted. Note, a Structure object will become invalid after it is deleted.
 
-#### **Returns** *boolean*
+**Returns** *boolean* - Returns whether the structure was removed.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -83,10 +108,24 @@ createFromWorld(identifier: string, dimension: Dimension, blockVolume: BlockVolu
 "get"(identifier: string): Structure | undefined
 `
 
+Gets a Structure that is saved to memory or the world.
+
 #### **Parameters**
 - **identifier**: *string*
+  
+  The name of the structure to get.
 
-#### **Returns** [*Structure*](Structure.md) | *undefined*
+**Returns** [*Structure*](Structure.md) | *undefined* - Returns a Structure if it exists, otherwise undefined.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+### **getIds**
+`
+getIds(): string[]
+`
+
+**Returns** *string*[]
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -96,11 +135,21 @@ createFromWorld(identifier: string, dimension: Dimension, blockVolume: BlockVolu
 place(structure: string | Structure, dimension: Dimension, location: Vector3, options?: StructurePlaceOptions): void
 `
 
+Places a structure in the world. Structures placed in unloaded chunks will be queued for loading.
+
 #### **Parameters**
 - **structure**: *string* | [*Structure*](Structure.md)
+  
+  The structure's identifier or a Structure object.
 - **dimension**: [*Dimension*](Dimension.md)
+  
+  The dimension where the Structure should be placed.
 - **location**: [*Vector3*](Vector3.md)
+  
+  The location within the dimension where the Structure should be placed.
 - **options**?: [*StructurePlaceOptions*](StructurePlaceOptions.md) = `null`
+  
+  Additional options for Structure placement.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

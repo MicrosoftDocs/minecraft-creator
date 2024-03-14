@@ -24,8 +24,8 @@ The level of this enchantment instance.
 Type: *number*
 
 ### **type**
-`type: EnchantmentType | string;`
+`type: EnchantmentType;`
 
 The enchantment type of this instance.
 
-Type: [*EnchantmentType*](EnchantmentType.md) | *string*
+Type: [*EnchantmentType*](EnchantmentType.md)

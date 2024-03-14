@@ -28,7 +28,7 @@ Adds a callback that will be called when the scripting environment is initialize
 #### **Parameters**
 - **callback**: (arg: [*WorldInitializeBeforeEvent*](WorldInitializeBeforeEvent.md)) => *void*
 
-#### **Returns** (arg: [*WorldInitializeBeforeEvent*](WorldInitializeBeforeEvent.md)) => *void*
+**Returns** (arg: [*WorldInitializeBeforeEvent*](WorldInitializeBeforeEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

@@ -61,7 +61,7 @@ This function does not perform any write operations, and instead returns only a 
   
   An optional set of write parameters which govern how the ClipboardItem should be potentially applied to the world
 
-#### **Returns** [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) - A [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) which represents the occupied block volumes within the ClipboardItem as they would be written to the world with the specified [*@minecraft/server-editor.ClipboardWriteOptions*](../../minecraft/server-editor/ClipboardWriteOptions.md)
+**Returns** [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) - A [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) which represents the occupied block volumes within the ClipboardItem as they would be written to the world with the specified [*@minecraft/server-editor.ClipboardWriteOptions*](../../minecraft/server-editor/ClipboardWriteOptions.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -86,7 +86,7 @@ This function does not perform any write operations, and instead returns only a 
   
   An optional set of write parameters which govern how the ClipboardItem should be potentially applied to the world
 
-#### **Returns** [*Selection*](Selection.md) - A [*@minecraft/server-editor.Selection*](../../minecraft/server-editor/Selection.md) which represents the occupied block volumes within the ClipboardItem as they would be written to the world with the specified [*@minecraft/server-editor.ClipboardWriteOptions*](../../minecraft/server-editor/ClipboardWriteOptions.md)
+**Returns** [*Selection*](Selection.md) - A [*@minecraft/server-editor.Selection*](../../minecraft/server-editor/Selection.md) which represents the occupied block volumes within the ClipboardItem as they would be written to the world with the specified [*@minecraft/server-editor.ClipboardWriteOptions*](../../minecraft/server-editor/ClipboardWriteOptions.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -101,7 +101,7 @@ getSize(): minecraftserver.Vector3
 
 Get the bounding size of the ClipboardItem
 
-#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -163,7 +163,7 @@ Apply the contents of a ClipboardItem to the world at a given location using a s
   
   An optional set of write parameters which modify the properties of the ClipboardItem as it is applied to the world
 
-#### **Returns** *boolean* - Success or Failure
+**Returns** *boolean* - Success or Failure
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

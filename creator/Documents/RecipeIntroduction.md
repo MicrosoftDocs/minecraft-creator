@@ -30,28 +30,93 @@ Recipe parameters are the building blocks that make up the recipe. While all rec
 |Addition |Smithing Transform |Items used to perform the transformation |
 |Base |Smithing Transform |Item to be transformed |
 
+
+## Recipe Tags
+
+Recipe tags allow you to group together similar elments (e.g., different types of wood stairs) so that you can construct one recipe that can adapt to multiple different types of things. See [this article](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/TagsRecipeInput.md) for more information on recipe tags.
+
+## Recipe Unlocking
+
+Starting with version 1.20.10, a player can "unlock" recipes starting from very basic starters (e.g., a wooden pickaxe) up through the most sophisticated items.As part of designing your items and recipes, you can control how your item gets unlocked via the 'unlock' element in your recipe JSON.
+
+You can choose an unlock strategy for your recipe based on either:
+
+An `item`, specifying the item to unlock. You can add a `data` tag, optionally, to filter down the item to a specific type of item.
+
+Acacia Planks:
+```json
+  "unlock": [
+    {
+      "item": "minecraft:wood",
+      "data": 4
+    }
+  ]
+```
+
+A `context` which can be one of three values:
+
+* `AlwaysUnlocked`: Always unlock this item
+* `PlayerInWater`: Player enters the water
+* `PlayerHasManyItems`: Player has more than 10 items in their inventory
+
+
+Crafting table:
+```json
+  "unlock": {
+    "context": "AlwaysUnlocked"
+  }
+```
+
+Chest:
+
+```json
+  "unlock": {
+    "context": "PlayerHasManyItems"
+  }
+```
+
 ## Recipe Examples
 
 ### Furnace Recipe
 
 These are recipes that require a furnace. `Input` items will burn and transform into the item(s) specified in `Output`. Furnace recipes use the **input**, **output**, and **tags** parameters.
 
+* [Furnace reference documentation](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_Furnace.md)
+
+
 ### Shaped Recipe
 
 Shaped recipes are created with a crafting table and require a dedicated pattern, which is why they're 'shaped' recipes. Shaped recipes use the **key**, **pattern**, **priority**, **result**, and **tags** parameters.
+
+* [Shaped recipe reference documentation](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_Shaped.md)
 
 ### Shapeless Recipe
 
 Shapeless recipes are recipes that do not require a dedicated pattern. Shapeless recipes use the **ingredients**, **priority**, **result**, and **tags** parameters.
 
+* [Shapeless recipe reference documentation](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_Shapeless.md)
+
 ### Potion Brewing Container Recipe
 
 Potion brewing container recipes are recipes used with a potion brewing station to create containers for potions. Potion brewing container recipes use the **input**, **output**, **reagent**, and **tags** parameters.
+
+* [Potion brewing mix reference documentation](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_PotionBrewingMix.md)
 
 ### Potion Brewing Mix
 
 Potion brewing mixes are recipes used to create potions to fill the containers mentioned above. Potion brewing mixes use the **input**, **output**, **reagent**, and **tags** parameters.
 
+* [Potion brewing reference documentation](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_PotionBrewingMix.md)
+
 ### Smithing Transform Recipe
 
 Smithing Transform recipes are used with a smithing table to transform one item into another while retaining properties.
+
+* [Smithing transform reference documentation](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_SmithingTransform.md)
+
+### Smithing Trim Recipe
+
+Smithing trim recipes are used with a smithing table to add a color trim to an item while retaining properties.
+
+* [Smithing trim reference documentation](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_SmithingTrim.md)
+

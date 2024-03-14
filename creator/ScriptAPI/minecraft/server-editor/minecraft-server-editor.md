@@ -27,6 +27,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
+- [CoreMenuType](CoreMenuType.md)
 - [CursorControlMode](CursorControlMode.md)
 - [CursorTargetMode](CursorTargetMode.md)
 - [EDITOR_PANE_PROPERTY_ITEM_TYPE](EDITOR_PANE_PROPERTY_ITEM_TYPE.md)
@@ -80,12 +81,6 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [CursorPropertyChangeAfterEventSignal](CursorPropertyChangeAfterEventSignal.md)
 - [CustomWidget](CustomWidget.md)
 - [CustomWidgetMoveEventData](CustomWidgetMoveEventData.md)
-- [DataStore](DataStore.md)
-- [DataStoreActionContainer](DataStoreActionContainer.md)
-- [DataStoreAfterEvents](DataStoreAfterEvents.md)
-- [DataStoreMenuContainer](DataStoreMenuContainer.md)
-- [DataStorePayloadAfterEvent](DataStorePayloadAfterEvent.md)
-- [DataStorePayloadAfterEventSignal](DataStorePayloadAfterEventSignal.md)
 - [Extension](Extension.md)
 - [ExtensionContext](ExtensionContext.md)
 - [ExtensionContextAfterEvents](ExtensionContextAfterEvents.md)
@@ -93,7 +88,6 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [LineWidget](LineWidget.md)
 - [Logger](Logger.md)
 - [MinecraftEditor](MinecraftEditor.md)
-- [MinecraftEditorInternal](MinecraftEditorInternal.md)
 - [ModeChangeAfterEvent](ModeChangeAfterEvent.md)
 - [ModeChangeAfterEventSignal](ModeChangeAfterEventSignal.md)
 - [PlaytestManager](PlaytestManager.md)
@@ -130,6 +124,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [IEventToken](IEventToken.md)
 - [IGlobalInputManager](IGlobalInputManager.md)
 - [IMenu](IMenu.md)
+- [IMenuContainer](IMenuContainer.md)
 - [IMenuCreationParams](IMenuCreationParams.md)
 - [IModalTool](IModalTool.md)
 - [IModalToolContainer](IModalToolContainer.md)
@@ -168,7 +163,7 @@ Takes the input object (a property bag of values) and bind it to the pane as a d
   
   The property bag to bind to the pane.
 
-#### **Returns** *T*
+**Returns** *T*
 
 ### **executeLargeOperation**
 `
@@ -185,7 +180,7 @@ Executes an operation over a selection via chunks to allow splitting operation o
   
   the operation to apply over each block location
 
-#### **Returns** *Promise<void>*
+**Returns** *Promise<void>*
 
 ### **getBlockPickerDefaultAllowBlockList**
 `
@@ -194,7 +189,7 @@ getBlockPickerDefaultAllowBlockList(): string[]
 
 Returns a string array of the default block types for the Block picker control. Can be used to further filter blocks from the Block picker.
 
-#### **Returns** *string[]* - Default allowed block list
+**Returns** *string[]* - Default allowed block list
 
 ### **getLocalizationId**
 `
@@ -206,7 +201,7 @@ Adds the resource pack editor prefix and returns the full localization ID
 #### **Parameters**
 - **locId**: *string*
 
-#### **Returns** *string*
+**Returns** *string*
 
 ### **registerEditorExtension**
 `
@@ -221,7 +216,7 @@ Registers an editor extension into Minecraft. This function calls underlying fun
 - **shutdownFunction**: *ShutdownFunctionType<PerPlayerStorageType>*
 - **options**: *IRegisterExtensionOptionalParameters*
 
-#### **Returns** *Extension*
+**Returns** *Extension*
 
 ### **registerUserDefinedTransactionHandler**
 `
@@ -241,7 +236,7 @@ Creates a strongly typed transaction handle to enforce type safety when adding u
   
   A function that will be invoked when the transaction is redone. The function will be passed a copy of the payload data that was inserted into the transaction log.
 
-#### **Returns** *UserDefinedTransactionHandle<T>* - - {@link UserDefinedTransactionHandle} - A strongly typed transaction handle that can be used to add transactions to the transaction manager.
+**Returns** *UserDefinedTransactionHandle<T>* - - {@link UserDefinedTransactionHandle} - A strongly typed transaction handle that can be used to add transactions to the transaction manager.
 
 ### **stringFromException**
 `
@@ -253,7 +248,7 @@ Small utility for getting a string from an unknown exception type
 #### **Parameters**
 - **e**: *unknown*
 
-#### **Returns** *string*
+**Returns** *string*
 
 ## Objects
   
@@ -261,8 +256,3 @@ Small utility for getting a string from an unknown exception type
 `static read-only editor: MinecraftEditor;`
 
 Type: [*MinecraftEditor*](MinecraftEditor.md)
-  
-### **editorInternal**
-`static read-only editorInternal: MinecraftEditorInternal;`
-
-Type: [*MinecraftEditorInternal*](MinecraftEditorInternal.md)

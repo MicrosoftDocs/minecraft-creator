@@ -43,18 +43,11 @@ Another set of Creator APIs have been released out of beta and into stable (see:
 **APIs included in the @minecraft/server version 1.9.0 release:**
 
 - **Block type and state Manipulation**
-  - Block
-    - [isWaterlogged](../ScriptAPI/minecraft/server/Block.md#iswaterlogged)
-    - [setWaterlogged](../ScriptAPI/minecraft/server/Block.md#setwaterlogged)
-    - [setType](../ScriptAPI/minecraft/server/Block.md#settype)
-    - [typeId](../ScriptAPI/minecraft/server/Block.md#typeid)
   - BlockPermutation
-    - [type](../ScriptAPI/minecraft/server/BlockPermutation.md#type)
     - [matches](../ScriptAPI/minecraft/server/BlockPermutation.md#matches)
     - [getAllStates](../ScriptAPI/minecraft/server/BlockPermutation.md#getallstates)
 - **Item Components**
   - [ItemFoodComponent](../ScriptAPI/minecraft/server/ItemFoodComponent.md)
-  - [ItemEnchantableComponent](../ScriptAPI/minecraft/server/ItemEnchantableComponent.md)
   - [ItemDurabilityComponent](../ScriptAPI/minecraft/server/ItemDurabilityComponent.md)
 - **ItemStack dynamic properties**
     - ItemStack
@@ -72,13 +65,9 @@ Another set of Creator APIs have been released out of beta and into stable (see:
     - [setOnFire](../ScriptAPI/minecraft/server/Entity.md#setonfire)
 - **Projectiles and Particles**
   - player
-    - [spawnParticle](../ScriptAPI/minecraft/server/Player.md#spawnparticle)
-  - [EntityProjectileComponent](../ScriptAPI/minecraft/server/EntityProjectileComponent.md)
 - **Effect Type Discovery**
   - [EffectType](../ScriptAPI/minecraft/server/EffectType.md)
   - [EffectTypes](../ScriptAPI/minecraft/server/EffectTypes.md)
-- **Weather**
-  - [WeatherChangeBeforeEvent](../ScriptAPI/minecraft/server/WeatherChangeBeforeEvent.md)
     
 Beta APIs will continue to be developed behind the Beta API experimental flag so if you want to use those, make sure you have that flag enabled and your manifest.json references will need to update to 1.10.0-beta. Read more about [script versioning](ScriptVersioning.md).
 

@@ -147,16 +147,12 @@ Type: *number*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [isOp](#isop)
 ::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [playMusic](#playmusic)
-::: moniker-end
 - [playSound](#playsound)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [postClientMessage](#postclientmessage)
 ::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [queueMusic](#queuemusic)
-::: moniker-end
 - [resetLevel](#resetlevel)
 - [sendMessage](#sendmessage)
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -172,9 +168,7 @@ Type: *number*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [startItemCooldown](#startitemcooldown)
 ::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [stopMusic](#stopmusic)
-::: moniker-end
 
 ### **addExperience**
 `
@@ -188,7 +182,7 @@ Adds/removes experience to/from the Player and returns the current experience of
   
   Amount of experience to add. Note that this can be negative. Min/max bounds at -2^24 ~ 2^24
 
-#### **Returns** *number* - Returns the current experience of the Player.
+**Returns** *number* - Returns the current experience of the Player.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -208,7 +202,7 @@ Adds/removes level to/from the Player and returns the current level of the Playe
   
   Amount to add to the player. Min/max bounds at -2^24 ~ 2^24
 
-#### **Returns** *number* - Returns the current level of the Player.
+**Returns** *number* - Returns the current level of the Player.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -247,7 +241,7 @@ Eats an item, providing the item's hunger and saturation effects to the player. 
 getGameMode(): GameMode
 `
 
-#### **Returns** [*GameMode*](GameMode.md)
+**Returns** [*GameMode*](GameMode.md)
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -259,15 +253,17 @@ getGameMode(): GameMode
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **getItemCooldown**
 `
-getItemCooldown(itemCategory: string): number
+getItemCooldown(cooldownCategory: string): number
 `
 
 Gets the current item cooldown time for a particular cooldown category.
 
 #### **Parameters**
-- **itemCategory**: *string*
+- **cooldownCategory**: *string*
+  
+  Specifies the cooldown category to retrieve the current cooldown for.
 
-#### **Returns** *number*
+**Returns** *number*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -283,7 +279,7 @@ getSpawnPoint(): DimensionLocation | undefined
 
 Gets the current spawn point of the player.
 
-#### **Returns** [*DimensionLocation*](DimensionLocation.md) | *undefined*
+**Returns** [*DimensionLocation*](DimensionLocation.md) | *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -295,7 +291,7 @@ getTotalXp(): number
 
  Gets the total experience of the Player.
 
-#### **Returns** *number*
+**Returns** *number*
 
 > [!WARNING]
 > This function can throw errors.
@@ -308,7 +304,7 @@ isOp(): boolean
 
 Returns true if this player has operator-level permissions.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -317,7 +313,6 @@ Returns true if this player has operator-level permissions.
 > This function can throw errors.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playMusic**
 `
 playMusic(trackId: string, musicOptions?: MusicOptions): void
@@ -333,15 +328,11 @@ Plays a music track that only this particular player can hear.
   
   Additional options for the music track.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
-::: moniker-end
 
 ### **playSound**
 `
@@ -384,7 +375,6 @@ This is an internal-facing method for posting a system message to downstream cli
 > This function can throw errors.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **queueMusic**
 `
 queueMusic(trackId: string, musicOptions?: MusicOptions): void
@@ -400,9 +390,6 @@ Queues an additional music track that only this particular player can hear. If a
   
   Additional options for the music track.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
@@ -414,7 +401,6 @@ Queues an additional music track that only this particular player can hear. If a
 > An error will be thrown if fade is less than 0.0.
 >
 > 
-::: moniker-end
 
 ### **resetLevel**
 `
@@ -597,13 +583,15 @@ world.afterEvents.playerSpawn.subscribe(event => {
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **startItemCooldown**
 `
-startItemCooldown(itemCategory: string, tickDuration: number): void
+startItemCooldown(cooldownCategory: string, tickDuration: number): void
 `
 
 Sets the item cooldown time for a particular cooldown category.
 
 #### **Parameters**
-- **itemCategory**: *string*
+- **cooldownCategory**: *string*
+  
+  Specifies the cooldown category to retrieve the current cooldown for.
 - **tickDuration**: *number*
   
   Duration in ticks of the item cooldown.
@@ -618,7 +606,6 @@ Sets the item cooldown time for a particular cooldown category.
 > This function can throw errors.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **stopMusic**
 `
 stopMusic(): void
@@ -626,12 +613,8 @@ stopMusic(): void
 
 Stops any music tracks from playing for this particular player.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
-::: moniker-end

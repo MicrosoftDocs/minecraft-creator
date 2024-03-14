@@ -24,7 +24,7 @@ subscribe(callback: (arg: PlayerGameModeChangeBeforeEvent) => void): (arg: Playe
 #### **Parameters**
 - **callback**: (arg: [*PlayerGameModeChangeBeforeEvent*](PlayerGameModeChangeBeforeEvent.md)) => *void*
 
-#### **Returns** (arg: [*PlayerGameModeChangeBeforeEvent*](PlayerGameModeChangeBeforeEvent.md)) => *void*
+**Returns** (arg: [*PlayerGameModeChangeBeforeEvent*](PlayerGameModeChangeBeforeEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

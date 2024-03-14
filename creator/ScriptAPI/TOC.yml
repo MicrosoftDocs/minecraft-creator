@@ -120,6 +120,8 @@
       href: minecraft/server/DyeColor.md
     - name: EasingType
       href: minecraft/server/EasingType.md
+    - name: EnchantmentSlot
+      href: minecraft/server/EnchantmentSlot.md
     - name: EntityComponentTypes
       href: minecraft/server/EntityComponentTypes.md
     - name: EntityDamageCause
@@ -176,10 +178,10 @@
       href: minecraft/server/BiomeTypes.md
     - name: Block
       href: minecraft/server/Block.md
-    - name: BlockAreaSize
-      href: minecraft/server/BlockAreaSize.md
     - name: BlockComponent
       href: minecraft/server/BlockComponent.md
+    - name: BlockComponentRandomTickEvent
+      href: minecraft/server/BlockComponentRandomTickEvent.md
     - name: BlockComponentStepOnEvent
       href: minecraft/server/BlockComponentStepOnEvent.md
     - name: BlockEvent
@@ -254,10 +256,6 @@
       href: minecraft/server/DataDrivenEntityTriggerAfterEvent.md
     - name: DataDrivenEntityTriggerAfterEventSignal
       href: minecraft/server/DataDrivenEntityTriggerAfterEventSignal.md
-    - name: DataDrivenEntityTriggerBeforeEvent
-      href: minecraft/server/DataDrivenEntityTriggerBeforeEvent.md
-    - name: DataDrivenEntityTriggerBeforeEventSignal
-      href: minecraft/server/DataDrivenEntityTriggerBeforeEventSignal.md
     - name: Dimension
       href: minecraft/server/Dimension.md
     - name: DimensionType
@@ -844,6 +842,8 @@
       href: minecraft/server-editor/changelog.md
     - name: ActionTypes
       href: minecraft/server-editor/ActionTypes.md
+    - name: CoreMenuType
+      href: minecraft/server-editor/CoreMenuType.md
     - name: CursorControlMode
       href: minecraft/server-editor/CursorControlMode.md
     - name: CursorTargetMode
@@ -894,18 +894,6 @@
       href: minecraft/server-editor/CustomWidget.md
     - name: CustomWidgetMoveEventData
       href: minecraft/server-editor/CustomWidgetMoveEventData.md
-    - name: DataStore
-      href: minecraft/server-editor/DataStore.md
-    - name: DataStoreActionContainer
-      href: minecraft/server-editor/DataStoreActionContainer.md
-    - name: DataStoreAfterEvents
-      href: minecraft/server-editor/DataStoreAfterEvents.md
-    - name: DataStoreMenuContainer
-      href: minecraft/server-editor/DataStoreMenuContainer.md
-    - name: DataStorePayloadAfterEvent
-      href: minecraft/server-editor/DataStorePayloadAfterEvent.md
-    - name: DataStorePayloadAfterEventSignal
-      href: minecraft/server-editor/DataStorePayloadAfterEventSignal.md
     - name: Extension
       href: minecraft/server-editor/Extension.md
     - name: ExtensionContext
@@ -920,8 +908,6 @@
       href: minecraft/server-editor/Logger.md
     - name: MinecraftEditor
       href: minecraft/server-editor/MinecraftEditor.md
-    - name: MinecraftEditorInternal
-      href: minecraft/server-editor/MinecraftEditorInternal.md
     - name: ModeChangeAfterEvent
       href: minecraft/server-editor/ModeChangeAfterEvent.md
     - name: ModeChangeAfterEventSignal
@@ -990,6 +976,8 @@
       href: minecraft/server-editor/IGlobalInputManager.md
     - name: IMenu
       href: minecraft/server-editor/IMenu.md
+    - name: IMenuContainer
+      href: minecraft/server-editor/IMenuContainer.md
     - name: IMenuCreationParams
       href: minecraft/server-editor/IMenuCreationParams.md
     - name: IModalTool

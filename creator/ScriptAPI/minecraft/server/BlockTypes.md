@@ -30,7 +30,7 @@ Returns a BlockType object for the specified identifier.
   
   Identifier of the block type. Should follow a namespace:id pattern, such as minecraft:dirt.
 
-#### **Returns** [*BlockType*](BlockType.md) | *undefined* - BlockType object, or undefined if the block type is not available within this world.
+**Returns** [*BlockType*](BlockType.md) | *undefined* - BlockType object, or undefined if the block type is not available within this world.
 
 ### **getAll**
 `
@@ -39,4 +39,4 @@ static getAll(): BlockType[]
 
 Returns a collection of all available block types.
 
-#### **Returns** [*BlockType*](BlockType.md)[]
+**Returns** [*BlockType*](BlockType.md)[]

@@ -52,7 +52,7 @@ Retrieves the current position of the specified cursor.
 #### **Parameters**
 - **index**: *number*
 
-#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -67,7 +67,7 @@ getNumberOfCursors(): number
 
 Returns a number of overall cursors for this sculk spreader.
 
-#### **Returns** *number*
+**Returns** *number*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -82,7 +82,7 @@ getTotalCharge(): number
 
 Gets the total current charge of the sculk spreader.
 
-#### **Returns** *number*
+**Returns** *number*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

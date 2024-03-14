@@ -66,7 +66,7 @@ new HttpHeader(key: string, value: minecraftserveradmin.SecretString | string)
 - **key**: *string*
 - **value**: [*@minecraft/server-admin.SecretString*](../../minecraft/server-admin/SecretString.md) | *string*
 
-#### **Returns** [*HttpHeader*](HttpHeader.md)
+**Returns** [*HttpHeader*](HttpHeader.md)
 
 #### Examples
 ##### ***simpleHttpRequest.ts***

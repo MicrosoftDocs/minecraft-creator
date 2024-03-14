@@ -52,7 +52,7 @@ getCooldownTicksRemaining(player: Player): number
 #### **Parameters**
 - **player**: [*Player*](Player.md)
 
-#### **Returns** *number*
+**Returns** *number*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -72,7 +72,7 @@ Will return true if the item is the cooldown category passed in and false otherw
   
   The cooldown category that might be associated with this item.
 
-#### **Returns** *boolean* - True if the item is the given cooldown category.
+**Returns** *boolean* - True if the item is the given cooldown category.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

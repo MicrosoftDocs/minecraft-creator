@@ -86,7 +86,7 @@ attack(): boolean
 
 Causes the simulated player to make an attack 'swipe'. Returns true if the attack was performed - for example, the player was not on cooldown and had a valid target. Target selection is performed by raycasting from the player's head.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -104,7 +104,7 @@ Causes the simulated player to attack the provided target. Returns true if the a
 #### **Parameters**
 - **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -127,7 +127,7 @@ Destroys the block at blockLocation, respecting the rules of the server player's
   
   Direction to place the specified item within.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -169,7 +169,7 @@ dropSelectedItem(): boolean
 
 Drops the simulated player's selected item
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -205,7 +205,7 @@ Gives the simulated player a particular item stack.
   
   Whether to set the selected slot once given.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -220,7 +220,7 @@ glide(): boolean
 
 Causes the simulated player to start gliding. Elytra must be equipped and the player must be in the air.
 
-#### **Returns** *boolean* - Returns true if the simulated player begins to glide. Returns false if the player is already gliding, or the player does not have Elytra equipped, is in water or is on the ground.
+**Returns** *boolean* - Returns true if the simulated player begins to glide. Returns false if the player is already gliding, or the player does not have Elytra equipped, is in water or is on the ground.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -235,7 +235,7 @@ interact(): boolean
 
 Performs a raycast from the player’s head and interacts with the first intersected block or entity. Returns true if the interaction was successful. Maximum range is 6 blocks.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -258,7 +258,7 @@ Causes the simulated player to interact with a block. The block at the specified
   
   Direction to place the specified item within.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -278,7 +278,7 @@ Causes the simulated player to interact with a mob. Returns true if the interact
   
   Entity to interact with.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -293,7 +293,7 @@ jump(): boolean
 
 Causes the simulated player to jump.
 
-#### **Returns** *boolean* - True if a jump was performed.
+**Returns** *boolean* - True if a jump was performed.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -433,7 +433,7 @@ Orders the simulated player to move to a specific block location using navigatio
 - **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 - **speed**?: *number* = `1`
 
-#### **Returns** [*NavigationResult*](NavigationResult.md)
+**Returns** [*NavigationResult*](NavigationResult.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -452,7 +452,7 @@ Will use navigation to follow the selected entity to within a one block radius. 
 - **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
 - **speed**?: *number* = `1`
 
-#### **Returns** [*NavigationResult*](NavigationResult.md)
+**Returns** [*NavigationResult*](NavigationResult.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -471,7 +471,7 @@ Orders the simulated player to move to a specific location using navigation. If 
 - **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 - **speed**?: *number* = `1`
 
-#### **Returns** [*NavigationResult*](NavigationResult.md)
+**Returns** [*NavigationResult*](NavigationResult.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -507,7 +507,7 @@ respawn(): boolean
 
 Respawns the particular simulated player.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -565,7 +565,7 @@ Sets a particular item for the simulated player.
   
   Whether to set the selected slot once set.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -683,7 +683,7 @@ stopUsingItem(): minecraftserver.ItemStack | undefined
 
 Stops using the currently active item.
 
-#### **Returns** [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md) | *undefined* - Returns the item that was in use. Undefined if no item was in use.
+**Returns** [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md) | *undefined* - Returns the item that was in use. Undefined if no item was in use.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -716,7 +716,7 @@ Causes the simulated player to use an item. Does not consume the item. Returns f
   
   Item to use.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -736,7 +736,7 @@ Causes the simulated player to hold and use an item in their inventory.
   
   Index of the inventory slot.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -765,7 +765,7 @@ Causes the simulated player to use an item in their inventory on a block. The bl
   
   Location relative to the bottom north-west corner of the block where the item is placed.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -794,7 +794,7 @@ Causes the simulated player to use an item on a block. The block at the specifie
   
   Location relative to the bottom north-west corner of the block where the item is placed.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

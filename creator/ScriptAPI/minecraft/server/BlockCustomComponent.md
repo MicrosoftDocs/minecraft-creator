@@ -16,6 +16,13 @@ Contains a set of events that will be raised for a block. This object must be bo
 
 ## Properties
 
+### **onRandomTick**
+`onRandomTick?: (arg: BlockComponentRandomTickEvent) => void;`
+
+This function will be called when a block randomly ticks.
+
+Type: (arg: [*BlockComponentRandomTickEvent*](BlockComponentRandomTickEvent.md)) => *void*
+
 ### **onStepOn**
 `onStepOn?: (arg: BlockComponentStepOnEvent) => void;`
 

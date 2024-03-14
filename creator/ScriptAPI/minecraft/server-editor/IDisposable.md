@@ -20,4 +20,4 @@ teardown(): void
 
 Initiates the teardown and cleanup of this disposable item.
 
-#### **Returns** *void*
+**Returns** *void*

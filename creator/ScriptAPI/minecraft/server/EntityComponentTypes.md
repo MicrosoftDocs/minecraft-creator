@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .EntityComponentTypes Enumeration
 description: Contents of the .EntityComponentTypes enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityComponentTypes Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Constants
 ### **AddRider**

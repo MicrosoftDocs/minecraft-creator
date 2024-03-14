@@ -36,4 +36,4 @@ getModifiers(): DefinitionModifier[]
 
 An updateable list of modifications to component state that are the effect of this triggered event.
 
-#### **Returns** [*DefinitionModifier*](DefinitionModifier.md)[]
+**Returns** [*DefinitionModifier*](DefinitionModifier.md)[]

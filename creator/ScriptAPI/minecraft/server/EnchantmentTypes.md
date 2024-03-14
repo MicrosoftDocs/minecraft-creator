@@ -29,4 +29,4 @@ Retrieves an enchantment with the specified identifier.
   
   Identifier of the enchantment.  For example, "minecraft:flame".
 
-#### **Returns** [*EnchantmentType*](EnchantmentType.md) | *undefined* - If available, returns an EnchantmentType object that represents the specified enchantment.
+**Returns** [*EnchantmentType*](EnchantmentType.md) | *undefined* - If available, returns an EnchantmentType object that represents the specified enchantment.

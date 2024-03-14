@@ -35,7 +35,7 @@ hide(): void
 
 Hide the Status Bar Item.
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **show**
 `
@@ -44,4 +44,4 @@ show(): void
 
 Show the Status Bar Item.
 
-#### **Returns** *void*
+**Returns** *void*

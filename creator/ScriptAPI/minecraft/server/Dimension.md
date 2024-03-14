@@ -30,6 +30,9 @@ Identifier of the dimension.
 Type: *string*
 
 ## Methods
+::: moniker range="=minecraft-bedrock-experimental"
+- [containsBlock](#containsblock)
+::: moniker-end
 - [createExplosion](#createexplosion)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [fillBlocks](#fillblocks)
@@ -39,6 +42,9 @@ Type: *string*
 ::: moniker-end
 - [getBlock](#getblock)
 - [getBlockFromRay](#getblockfromray)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getBlocks](#getblocks)
+::: moniker-end
 - [getEntities](#getentities)
 - [getEntitiesAtBlockLocation](#getentitiesatblocklocation)
 - [getEntitiesFromRay](#getentitiesfromray)
@@ -51,10 +57,38 @@ Type: *string*
 ::: moniker-end
 - [runCommand](#runcommand)
 - [runCommandAsync](#runcommandasync)
+::: moniker range="=minecraft-bedrock-experimental"
+- [setBlockPermutation](#setblockpermutation)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [setBlockType](#setblocktype)
+::: moniker-end
 - [setWeather](#setweather)
 - [spawnEntity](#spawnentity)
 - [spawnItem](#spawnitem)
 - [spawnParticle](#spawnparticle)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **containsBlock**
+`
+containsBlock(volume: BlockVolumeBase, filter: BlockFilter, allowUnloadedChunks?: boolean): boolean
+`
+
+#### **Parameters**
+- **volume**: [*BlockVolumeBase*](BlockVolumeBase.md)
+- **filter**: [*BlockFilter*](BlockFilter.md)
+- **allowUnloadedChunks**?: *boolean* = `false`
+
+**Returns** *boolean*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
+::: moniker-end
 
 ### **createExplosion**
 `
@@ -74,7 +108,7 @@ Creates an explosion at the specified location.
   
   Additional configurable options for the explosion.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -124,7 +158,7 @@ Fills an area between begin and end with block of type block.
   
   A set of additional options, such as a matching block to potentially replace this fill block with.
 
-#### **Returns** *number* -  Returns number of blocks placed.
+**Returns** *number* -  Returns number of blocks placed.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -155,7 +189,7 @@ Finds the location of the closest biome of a particular type. Note that the find
   
   Additional selection criteria for a biome search.
 
-#### **Returns** [*Vector3*](Vector3.md) | *undefined* - Returns a location of the biome, or undefined if a biome could not be found.
+**Returns** [*Vector3*](Vector3.md) | *undefined* - Returns a location of the biome, or undefined if a biome could not be found.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -181,7 +215,7 @@ Returns a block instance at the given location.
   
   The location at which to return a block.
 
-#### **Returns** [*Block*](Block.md) | *undefined* - Block at the specified location, or 'undefined' if asking for a block at an unloaded chunk.
+**Returns** [*Block*](Block.md) | *undefined* - Block at the specified location, or 'undefined' if asking for a block at an unloaded chunk.
 
 > [!WARNING]
 > This function can throw errors.
@@ -206,10 +240,32 @@ Gets the first block that intersects with a vector emanating from a location.
   
   Additional options for processing this raycast query.
 
-#### **Returns** [*BlockRaycastHit*](BlockRaycastHit.md) | *undefined*
+**Returns** [*BlockRaycastHit*](BlockRaycastHit.md) | *undefined*
 
 > [!WARNING]
 > This function can throw errors.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getBlocks**
+`
+getBlocks(volume: BlockVolumeBase, filter: BlockFilter, allowUnloadedChunks?: boolean): ListBlockVolume
+`
+
+#### **Parameters**
+- **volume**: [*BlockVolumeBase*](BlockVolumeBase.md)
+- **filter**: [*BlockFilter*](BlockFilter.md)
+- **allowUnloadedChunks**?: *boolean* = `false`
+
+**Returns** [*ListBlockVolume*](ListBlockVolume.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
+::: moniker-end
 
 ### **getEntities**
 `
@@ -223,7 +279,7 @@ Returns a set of entities based on a set of conditions defined via the EntityQue
   
   Additional options that can be used to filter the set of entities returned.
 
-#### **Returns** [*Entity*](Entity.md)[] - An entity array.
+**Returns** [*Entity*](Entity.md)[] - An entity array.
 
 > [!WARNING]
 > This function can throw errors.
@@ -289,7 +345,7 @@ Returns a set of entities at a particular location.
   
   The location at which to return entities.
 
-#### **Returns** [*Entity*](Entity.md)[] - Zero or more entities at the specified location.
+**Returns** [*Entity*](Entity.md)[] - Zero or more entities at the specified location.
 
 ### **getEntitiesFromRay**
 `
@@ -305,7 +361,7 @@ Gets entities that intersect with a specified vector emanating from a location.
   
   Additional options for processing this raycast query.
 
-#### **Returns** [*EntityRaycastHit*](EntityRaycastHit.md)[]
+**Returns** [*EntityRaycastHit*](EntityRaycastHit.md)[]
 
 ### **getPlayers**
 `
@@ -319,7 +375,7 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
   
   Additional options that can be used to filter the set of players returned.
 
-#### **Returns** [*Player*](Player.md)[] - A player array.
+**Returns** [*Player*](Player.md)[] - A player array.
 
 > [!WARNING]
 > This function can throw errors.
@@ -332,7 +388,7 @@ getWeather(): WeatherType
 
 Returns the current weather.
 
-#### **Returns** [*WeatherType*](WeatherType.md) - Returns a WeatherType that explains the broad category of weather that is currently going on.
+**Returns** [*WeatherType*](WeatherType.md) - Returns a WeatherType that explains the broad category of weather that is currently going on.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -374,7 +430,7 @@ Runs a command synchronously using the context of the broader dimenion.
   
   Command to run. Note that command strings should not start with slash.
 
-#### **Returns** [*CommandResult*](CommandResult.md) - Returns a command result with a count of successful values from the command.
+**Returns** [*CommandResult*](CommandResult.md) - Returns a command result with a count of successful values from the command.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -396,12 +452,56 @@ Runs a particular command asynchronously from the context of the broader dimensi
   
   Command to run. Note that command strings should not start with slash.
 
-#### **Returns** Promise&lt;[*CommandResult*](CommandResult.md)&gt; - For commands that return data, returns a CommandResult with an indicator of command results.
+**Returns** Promise&lt;[*CommandResult*](CommandResult.md)&gt; - For commands that return data, returns a CommandResult with an indicator of command results.
 
 > [!WARNING]
 > This function can throw errors.
 >
 > Throws an exception if the command fails due to incorrect parameters or command syntax, or in erroneous cases for the command. Note that in many cases, if the command does not operate (e.g., a target selector found no matches), this method will not throw an exception.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **setBlockPermutation**
+`
+setBlockPermutation(location: Vector3, permutation: BlockPermutation): void
+`
+
+#### **Parameters**
+- **location**: [*Vector3*](Vector3.md)
+- **permutation**: [*BlockPermutation*](BlockPermutation.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **setBlockType**
+`
+setBlockType(location: Vector3, blockType: BlockType | string): void
+`
+
+#### **Parameters**
+- **location**: [*Vector3*](Vector3.md)
+- **blockType**: [*BlockType*](BlockType.md) | *string*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
 
 ### **setWeather**
 `
@@ -439,7 +539,7 @@ Creates a new entity (e.g., a mob) at the specified location.
   
   The location at which to create the entity.
 
-#### **Returns** [*Entity*](Entity.md) - Newly created entity at the specified location.
+**Returns** [*Entity*](Entity.md) - Newly created entity at the specified location.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -500,7 +600,7 @@ Creates a new item stack as an entity at the specified location.
   
   The location at which to create the item stack.
 
-#### **Returns** [*Entity*](Entity.md) - Newly created item stack entity at the specified location.
+**Returns** [*Entity*](Entity.md) - Newly created item stack entity at the specified location.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

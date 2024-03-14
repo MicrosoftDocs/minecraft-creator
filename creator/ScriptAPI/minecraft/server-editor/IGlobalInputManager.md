@@ -32,4 +32,4 @@ Register a key press binding for an action which will be handled by the specifie
   
   Modifiers to create an input binding chord (Default: None).
 
-#### **Returns** *void*
+**Returns** *void*

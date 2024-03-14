@@ -34,7 +34,7 @@ Unless otherwise specified by the parent shape - the BlockLocationIterator will 
 [Symbol.iterator](): Iterator<Vector3>
 `
 
-#### **Returns** Iterator&lt;[*Vector3*](Vector3.md)&gt;
+**Returns** Iterator&lt;[*Vector3*](Vector3.md)&gt;
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -44,7 +44,7 @@ Unless otherwise specified by the parent shape - the BlockLocationIterator will 
 next(): IteratorResult<Vector3>
 `
 
-#### **Returns** IteratorResult&lt;[*Vector3*](Vector3.md)&gt;
+**Returns** IteratorResult&lt;[*Vector3*](Vector3.md)&gt;
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

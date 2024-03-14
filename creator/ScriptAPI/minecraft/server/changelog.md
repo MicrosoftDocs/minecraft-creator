@@ -10,6 +10,7 @@ description: Changelog of the `@minecraft/server` module
 
 ## Version Changes
 - [1.11.0-beta](#1110-beta)
+- [1.10.0](#1100)
 - [1.9.0](#190)
 - [1.8.0](#180)
 - [1.7.0](#170)
@@ -39,7 +40,8 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`setType`](Block.md#settype)*
 - Added function *[`setWaterlogged`](Block.md#setwaterlogged)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
-#### Added *[`BlockAreaSize`](BlockAreaSize.md)*
+#### Added *[`BlockComponentRandomTickEvent`](BlockComponentRandomTickEvent.md)*
+#### Added *[`BlockComponentStepOnEvent`](BlockComponentStepOnEvent.md)*
 #### Added *[`BlockExplodeAfterEvent`](BlockExplodeAfterEvent.md)*
 #### Added *[`BlockExplodeAfterEventSignal`](BlockExplodeAfterEventSignal.md)*
 #### Added *[`BlockLavaContainerComponent`](BlockLavaContainerComponent.md)*
@@ -57,6 +59,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`BlockType`](BlockType.md)*
 - Added property *[`canBeWaterlogged`](BlockType.md#canbewaterlogged)*
 - Added property *[`id`](BlockType.md#id)*
+#### Added *[`BlockTypeRegistry`](BlockTypeRegistry.md)*
 #### Added *[`BlockTypes`](BlockTypes.md)*
 #### Added *[`BlockVolume`](BlockVolume.md)*
 #### Added *[`BlockVolumeBase`](BlockVolumeBase.md)*
@@ -67,13 +70,15 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`ChatSendBeforeEvent`](ChatSendBeforeEvent.md)*
 #### Added *[`ChatSendBeforeEventSignal`](ChatSendBeforeEventSignal.md)*
 #### Added *[`CompoundBlockVolume`](CompoundBlockVolume.md)*
-#### Added *[`DataDrivenEntityTriggerBeforeEvent`](DataDrivenEntityTriggerBeforeEvent.md)*
-#### Added *[`DataDrivenEntityTriggerBeforeEventSignal`](DataDrivenEntityTriggerBeforeEventSignal.md)*
 #### Changed *[`Dimension`](Dimension.md)*
+- Added function *[`containsBlock`](Dimension.md#containsblock)*
 - Added function *[`fillBlocks`](Dimension.md#fillblocks)*
 - Added function *[`findClosestBiome`](Dimension.md#findclosestbiome)*
+- Added function *[`getBlocks`](Dimension.md#getblocks)*
 - Added function *[`getWeather`](Dimension.md#getweather)*
 - Added function *[`playSound`](Dimension.md#playsound)*
+- Added function *[`setBlockPermutation`](Dimension.md#setblockpermutation)*
+- Added function *[`setBlockType`](Dimension.md#setblocktype)*
 #### Added *[`EnchantmentType`](EnchantmentType.md)*
 #### Added *[`EnchantmentTypes`](EnchantmentTypes.md)*
 #### Changed *[`Entity`](Entity.md)*
@@ -108,16 +113,13 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`EntityNavigationHoverComponent`](EntityNavigationHoverComponent.md)*
 #### Added *[`EntityNavigationWalkComponent`](EntityNavigationWalkComponent.md)*
 #### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
-#### Added *[`EntityProjectileComponent`](EntityProjectileComponent.md)*
 #### Added *[`EntityRideableComponent`](EntityRideableComponent.md)*
 #### Added *[`EntityRidingComponent`](EntityRidingComponent.md)*
 #### Added *[`EntityStrengthComponent`](EntityStrengthComponent.md)*
 #### Added *[`EntityTameableComponent`](EntityTameableComponent.md)*
 #### Added *[`EntityTameMountComponent`](EntityTameMountComponent.md)*
-#### Added *[`EntityType`](EntityType.md)*
 #### Added *[`EntityTypeFamilyComponent`](EntityTypeFamilyComponent.md)*
 #### Added *[`EntityTypeIterator`](EntityTypeIterator.md)*
-#### Added *[`EntityTypes`](EntityTypes.md)*
 #### Added *[`EntityUnderwaterMovementComponent`](EntityUnderwaterMovementComponent.md)*
 #### Added *[`FilterGroup`](FilterGroup.md)*
 #### Added *[`FluidContainer`](FluidContainer.md)*
@@ -140,14 +142,11 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`getGameMode`](Player.md#getgamemode)*
 - Added function *[`getItemCooldown`](Player.md#getitemcooldown)*
 - Added function *[`isOp`](Player.md#isop)*
-- Added function *[`playMusic`](Player.md#playmusic)*
 - Added function *[`postClientMessage`](Player.md#postclientmessage)*
-- Added function *[`queueMusic`](Player.md#queuemusic)*
 - Added function *[`setGameMode`](Player.md#setgamemode)*
 - Added function *[`setOp`](Player.md#setop)*
 - Added function *[`spawnParticle`](Player.md#spawnparticle)*
 - Added function *[`startItemCooldown`](Player.md#startitemcooldown)*
-- Added function *[`stopMusic`](Player.md#stopmusic)*
 #### Added *[`PlayerGameModeChangeAfterEvent`](PlayerGameModeChangeAfterEvent.md)*
 #### Added *[`PlayerGameModeChangeAfterEventSignal`](PlayerGameModeChangeAfterEventSignal.md)*
 #### Added *[`PlayerGameModeChangeBeforeEvent`](PlayerGameModeChangeBeforeEvent.md)*
@@ -187,28 +186,58 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`playerGameModeChange`](WorldAfterEvents.md#playergamemodechange)*
 - Added property *[`playerInteractWithBlock`](WorldAfterEvents.md#playerinteractwithblock)*
 - Added property *[`playerInteractWithEntity`](WorldAfterEvents.md#playerinteractwithentity)*
-- Added property *[`worldInitialize`](WorldAfterEvents.md#worldinitialize)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
-- Added property *[`dataDrivenEntityTriggerEvent`](WorldBeforeEvents.md#datadrivenentitytriggerevent)*
 - Added property *[`playerGameModeChange`](WorldBeforeEvents.md#playergamemodechange)*
 - Added property *[`playerInteractWithBlock`](WorldBeforeEvents.md#playerinteractwithblock)*
 - Added property *[`playerInteractWithEntity`](WorldBeforeEvents.md#playerinteractwithentity)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
 - Added property *[`weatherChange`](WorldBeforeEvents.md#weatherchange)*
-#### Added *[`WorldInitializeAfterEvent`](WorldInitializeAfterEvent.md)*
-#### Added *[`WorldInitializeAfterEventSignal`](WorldInitializeAfterEventSignal.md)*
-#### Added enum [`BlockComponentTypes`](BlockComponentTypes.md)
+- Added property *[`worldInitialize`](WorldBeforeEvents.md#worldinitialize)*
+#### Added *[`WorldInitializeBeforeEvent`](WorldInitializeBeforeEvent.md)*
+#### Added *[`WorldInitializeBeforeEventSignal`](WorldInitializeBeforeEventSignal.md)*
+#### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
+- Added value `LavaContainer`
+- Added value `PotionContainer`
+- Added value `RecordPlayer`
+- Added value `SnowContainer`
+- Added value `WaterContainer`
 #### Added enum [`BlockVolumeIntersection`](BlockVolumeIntersection.md)
 #### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
 #### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
 #### Added enum [`Difficulty`](Difficulty.md)
-#### Added enum [`EntityComponentTypes`](EntityComponentTypes.md)
+#### Added enum [`EnchantmentSlot`](EnchantmentSlot.md)
+#### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
+- Added value `AddRider`
+- Added value `Ageable`
+- Added value `Breathable`
+- Added value `Color2`
+- Added value `LavaMovement`
+- Added value `Leashable`
+- Added value `Movement`
+- Added value `MovementGlide`
+- Added value `MovementSway`
+- Added value `NavigationClimb`
+- Added value `NavigationFloat`
+- Added value `NavigationFly`
+- Added value `NavigationGeneric`
+- Added value `NavigationHover`
+- Added value `NavigationWalk`
+- Added value `Npc`
+- Added value `Rideable`
+- Added value `Riding`
+- Added value `Strength`
+- Added value `Tameable`
+- Added value `TameMount`
+- Added value `TypeFamily`
+- Added value `UnderwaterMovement`
 #### Added enum [`EntityLifetimeState`](EntityLifetimeState.md)
 #### Added enum [`GameRule`](GameRule.md)
 #### Added enum [`HudElement`](HudElement.md)
 #### Added enum [`HudVisibility`](HudVisibility.md)
-#### Added enum [`ItemComponentTypes`](ItemComponentTypes.md)
+#### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
+- Added value `Cooldown`
+- Added value `Enchantable`
 #### Added enum [`PaletteColor`](PaletteColor.md)
 #### Added enum [`StructureAnimationMode`](StructureAnimationMode.md)
 #### Added enum [`StructureMirrorAxis`](StructureMirrorAxis.md)
@@ -218,6 +247,21 @@ description: Changelog of the `@minecraft/server` module
 #### Added constant `HudElementsCount`
 #### Added constant `HudVisibilityCount`
 #### Added constant `TicksPerDay`
+## 1.10.0
+#### Added *[`EntityProjectileComponent`](EntityProjectileComponent.md)*
+#### Added *[`EntityType`](EntityType.md)*
+#### Added *[`EntityTypes`](EntityTypes.md)*
+#### Changed *[`Player`](Player.md)*
+- Added function *[`playMusic`](Player.md#playmusic)*
+- Added function *[`queueMusic`](Player.md#queuemusic)*
+- Added function *[`stopMusic`](Player.md#stopmusic)*
+#### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
+- Added property *[`worldInitialize`](WorldAfterEvents.md#worldinitialize)*
+#### Added *[`WorldInitializeAfterEvent`](WorldInitializeAfterEvent.md)*
+#### Added *[`WorldInitializeAfterEventSignal`](WorldInitializeAfterEventSignal.md)*
+#### Added enum [`BlockComponentTypes`](BlockComponentTypes.md)
+#### Added enum [`EntityComponentTypes`](EntityComponentTypes.md)
+#### Added enum [`ItemComponentTypes`](ItemComponentTypes.md)
 ## 1.9.0
 #### Changed *[`BlockPermutation`](BlockPermutation.md)*
 - Added function *[`getAllStates`](BlockPermutation.md#getallstates)*

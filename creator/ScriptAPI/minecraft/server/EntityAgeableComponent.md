@@ -50,7 +50,7 @@ getDropItems(): string[]
 
 List of items that the entity drops when it grows up.
 
-#### **Returns** *string*[]
+**Returns** *string*[]
 
 > [!WARNING]
 > This function can throw errors.
@@ -62,7 +62,7 @@ getFeedItems(): EntityDefinitionFeedItem[]
 
 List of items that can be fed to the entity. Includes 'item' for the item name and 'growth' to define how much time it grows up by.
 
-#### **Returns** [*EntityDefinitionFeedItem*](EntityDefinitionFeedItem.md)[]
+**Returns** [*EntityDefinitionFeedItem*](EntityDefinitionFeedItem.md)[]
 
 > [!WARNING]
 > This function can throw errors.

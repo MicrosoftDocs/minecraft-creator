@@ -24,7 +24,7 @@ Adds a callback that will be called after a player interacts with an entity.
 #### **Parameters**
 - **callback**: (arg: [*PlayerInteractWithEntityAfterEvent*](PlayerInteractWithEntityAfterEvent.md)) => *void*
 
-#### **Returns** (arg: [*PlayerInteractWithEntityAfterEvent*](PlayerInteractWithEntityAfterEvent.md)) => *void*
+**Returns** (arg: [*PlayerInteractWithEntityAfterEvent*](PlayerInteractWithEntityAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

@@ -34,7 +34,7 @@ Sets the batch for the test to run in.
   
   Name of the batch for the test.
 
-#### **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
+**Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -49,7 +49,7 @@ Sets the maximum number of times a test will try to rerun if it fails.
 #### **Parameters**
 - **attemptCount**: *number*
 
-#### **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
+**Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -64,7 +64,7 @@ Sets the maximum number of ticks a test will run for before timing out and faili
 #### **Parameters**
 - **tickCount**: *number*
 
-#### **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
+**Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -81,7 +81,7 @@ Size around the GameTest, in blocks, that should be reserved for the test when r
   
   Size, in blocks, around the GameTest where additional GameTests should not be created.
 
-#### **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
+**Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -98,7 +98,7 @@ Whether this test is required to pass as part of its broader set of tests.
   
   If set to true, the test must pass in order for the entire run of tests to pass.
 
-#### **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
+**Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -113,7 +113,7 @@ Sets the number of successful test runs to be considered successful.
 #### **Parameters**
 - **attemptCount**: *number*
 
-#### **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
+**Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -128,7 +128,7 @@ If true, runs the test in all four rotations when run via /gametest runset.
 #### **Parameters**
 - **rotate**: *boolean*
 
-#### **Returns** [*RegistrationBuilder*](RegistrationBuilder.md)
+**Returns** [*RegistrationBuilder*](RegistrationBuilder.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -143,7 +143,7 @@ Sets the number of ticks for a test to wait before executing when the structure 
 #### **Parameters**
 - **tickCount**: *number*
 
-#### **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
+**Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -158,7 +158,7 @@ Sets the name of the structure for a test to use. "xyz:bar" will load `/structur
 #### **Parameters**
 - **structureName**: *string*
 
-#### **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
+**Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -173,7 +173,7 @@ Adds a tag to a test. You can run all tests with a given tag with `/gametest run
 #### **Parameters**
 - **tag**: *string*
 
-#### **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
+**Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

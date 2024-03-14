@@ -20,4 +20,4 @@ unsubscribe(): void
 
 Removes registered listener from an event
 
-#### **Returns** *void*
+**Returns** *void*

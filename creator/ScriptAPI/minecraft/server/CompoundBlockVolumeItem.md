@@ -12,7 +12,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-This interface defines an entry into the {@link @minecraft-server/CompoundBlockVolume} which represents a volume of positive or negative space.
+This interface defines an entry into the @minecraft-server/CompoundBlockVolume which represents a volume of positive or negative space.
 
 
 

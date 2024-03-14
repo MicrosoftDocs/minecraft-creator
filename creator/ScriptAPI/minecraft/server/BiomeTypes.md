@@ -30,7 +30,7 @@ Returns a specific biome type.
   
   Identifier of the biome.  Generally, namespaced identifiers (e.g., minecraft:frozen_peaks) should be used.
 
-#### **Returns** [*BiomeType*](BiomeType.md) | *undefined* - If the biome exists, a BiomeType object is returned. If not, undefined is returned.
+**Returns** [*BiomeType*](BiomeType.md) | *undefined* - If the biome exists, a BiomeType object is returned. If not, undefined is returned.
 
 ### **getAll**
 `
@@ -39,4 +39,4 @@ static getAll(): BiomeType[]
 
 Returns all registered biome types within Minecraft
 
-#### **Returns** [*BiomeType*](BiomeType.md)[]
+**Returns** [*BiomeType*](BiomeType.md)[]

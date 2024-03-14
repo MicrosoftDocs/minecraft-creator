@@ -28,7 +28,7 @@ Dispatch a player log message with Debug log level
   
   Message content
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **error**
 `
@@ -42,7 +42,7 @@ Dispatch a player log message with Error log level
   
   Message content
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **info**
 `
@@ -56,7 +56,7 @@ Dispatch a player log message with Info log level
   
   Message content
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **warning**
 `
@@ -70,4 +70,4 @@ Dispatch a player log message with Warning log level
   
   Message content
 
-#### **Returns** *void*
+**Returns** *void*

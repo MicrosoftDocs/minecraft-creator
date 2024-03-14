@@ -44,7 +44,7 @@ Create a new tool in the modal tool container represented via button on the tool
   
   Construction parameters for the new tool
 
-#### **Returns** *IModalTool*
+**Returns** *IModalTool*
 
 ### **dispose**
 `
@@ -53,7 +53,7 @@ dispose(): void
 
 Destroy the menu and its items.
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **hide**
 `
@@ -62,7 +62,7 @@ hide(): void
 
 Hide the tool container and its items.
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **removeTool**
 `
@@ -76,7 +76,7 @@ Remove an existing tool by id from the tool container
   
   Name of the tool to remove.
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **setSelectedOptionId**
 `
@@ -89,7 +89,7 @@ Sets the selected tool.
 - **value**: *string | undefined*
 - **update**: *boolean*
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **show**
 `
@@ -98,4 +98,4 @@ show(): void
 
 Show the tool container and its items.
 
-#### **Returns** *void*
+**Returns** *void*

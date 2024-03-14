@@ -24,7 +24,7 @@ Adds a callback that will be called before an item is used.
 #### **Parameters**
 - **callback**: (arg: [*ItemUseBeforeEvent*](ItemUseBeforeEvent.md)) => *void*
 
-#### **Returns** (arg: [*ItemUseBeforeEvent*](ItemUseBeforeEvent.md)) => *void*
+**Returns** (arg: [*ItemUseBeforeEvent*](ItemUseBeforeEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

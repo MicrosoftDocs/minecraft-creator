@@ -28,7 +28,7 @@ Adds a callback that will be called before weather changes.
 #### **Parameters**
 - **callback**: (arg: [*WeatherChangeBeforeEvent*](WeatherChangeBeforeEvent.md)) => *void*
 
-#### **Returns** (arg: [*WeatherChangeBeforeEvent*](WeatherChangeBeforeEvent.md)) => *void*
+**Returns** (arg: [*WeatherChangeBeforeEvent*](WeatherChangeBeforeEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

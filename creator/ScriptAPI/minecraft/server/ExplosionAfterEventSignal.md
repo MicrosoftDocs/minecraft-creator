@@ -24,7 +24,7 @@ Adds a callback that will be called when an explosion occurs.
 #### **Parameters**
 - **callback**: (arg: [*ExplosionAfterEvent*](ExplosionAfterEvent.md)) => *void*
 
-#### **Returns** (arg: [*ExplosionAfterEvent*](ExplosionAfterEvent.md)) => *void*
+**Returns** (arg: [*ExplosionAfterEvent*](ExplosionAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

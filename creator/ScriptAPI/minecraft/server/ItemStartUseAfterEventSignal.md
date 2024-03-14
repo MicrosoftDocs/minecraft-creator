@@ -24,7 +24,7 @@ Adds a callback that will be called when a chargeable item starts charging.
 #### **Parameters**
 - **callback**: (arg: [*ItemStartUseAfterEvent*](ItemStartUseAfterEvent.md)) => *void*
 
-#### **Returns** (arg: [*ItemStartUseAfterEvent*](ItemStartUseAfterEvent.md)) => *void*
+**Returns** (arg: [*ItemStartUseAfterEvent*](ItemStartUseAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

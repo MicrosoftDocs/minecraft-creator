@@ -45,7 +45,7 @@ Binds a property pane to the toggle option. Show/hide will be handle depending s
 #### **Parameters**
 - **pane**: *IPropertyPane*
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **dispose**
 `
@@ -54,7 +54,7 @@ dispose(): void
 
 Destroy the tool.
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **hide**
 `
@@ -63,7 +63,7 @@ hide(): void
 
 Hide the tool.
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **registerKeyBinding**
 `
@@ -83,7 +83,7 @@ Register a key press binding for an action which will be handled by the tool inp
   
   Modifiers to create an input binding chord (Default: None).
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **registerMouseButtonBinding**
 `
@@ -97,7 +97,7 @@ Register an action to be called when mouse left/middle/right buttons are pressed
   
   Action to register the binding for.
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **registerMouseDragBinding**
 `
@@ -111,7 +111,7 @@ Register an action to be called when mouse is dragged while left mouse button is
   
   Action to register the binding for.
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **registerMouseWheelBinding**
 `
@@ -125,7 +125,7 @@ Register an action to be called when mouse wheel is scrolled.
   
   Action to register the binding for.
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **show**
 `
@@ -134,7 +134,7 @@ show(): void
 
 Show the tool.
 
-#### **Returns** *void*
+**Returns** *void*
 
 ### **unregisterInputBindings**
 `
@@ -143,4 +143,4 @@ unregisterInputBindings(): void
 
 Unregister all input binding for this toggle.
 
-#### **Returns** *void*
+**Returns** *void*

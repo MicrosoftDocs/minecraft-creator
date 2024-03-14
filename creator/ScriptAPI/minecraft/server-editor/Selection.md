@@ -78,7 +78,7 @@ Block iteration is not guaranteed to be contiguous - it is possible to create ir
 
 The Block iterator will return only selected volume locations
 
-#### **Returns** [*@minecraft/server.BlockLocationIterator*](../../minecraft/server/BlockLocationIterator.md)
+**Returns** [*@minecraft/server.BlockLocationIterator*](../../minecraft/server/BlockLocationIterator.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -90,7 +90,7 @@ getBoundingBox(): minecraftserver.BoundingBox
 
 Return a bounding rectangle that contains all of the volumes within the selection (the bounding rectangle does NOT represent the shape of the selection, only the largest rectangle that will fit all of the volumes)
 
-#### **Returns** [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md)
+**Returns** [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -105,7 +105,7 @@ getFillColor(): minecraftserver.RGBA
 
 Return the color of the on-screen selection container hull
 
-#### **Returns** [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
+**Returns** [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -120,7 +120,7 @@ getOutlineColor(): minecraftserver.RGBA
 
 Return the color of the on-screen selection container outline
 
-#### **Returns** [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
+**Returns** [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -135,7 +135,7 @@ getVolumeOrigin(): minecraftserver.Vector3
 
 Get the origin of the CompoundBlockVolume that makes up the block component part of selection
 
-#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -152,7 +152,7 @@ Translate a selection by a given amount (this causes all of the volumes within t
   
   The amount by which to move
 
-#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - Return the newly moved position
+**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - Return the newly moved position
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -172,7 +172,7 @@ Move the selection to an absolute world location (causing all of the volumes wit
   
   The world location to which to relocate the selection
 
-#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - Return the newly moved position
+**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - Return the newly moved position
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -192,7 +192,7 @@ Fetch the volume information of the last compound volume that was pushed to the 
   
   See the description for {@link @minecraft-server/CompoundBlockVolume.peekLastVolume}
 
-#### **Returns** [*@minecraft/server.CompoundBlockVolumeItem*](../../minecraft/server/CompoundBlockVolumeItem.md) | *undefined* - Returns undefined if the stack is empty
+**Returns** [*@minecraft/server.CompoundBlockVolumeItem*](../../minecraft/server/CompoundBlockVolumeItem.md) | *undefined* - Returns undefined if the stack is empty
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

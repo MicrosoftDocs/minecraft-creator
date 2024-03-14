@@ -28,7 +28,7 @@ new ListBlockVolume(locations: Vector3[])
 #### **Parameters**
 - **locations**: [*Vector3*](Vector3.md)[]
 
-#### **Returns** [*ListBlockVolume*](ListBlockVolume.md)
+**Returns** [*ListBlockVolume*](ListBlockVolume.md)
 
 ### **add**
 `

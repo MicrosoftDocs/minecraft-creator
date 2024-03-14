@@ -42,7 +42,7 @@ isPlaying(): boolean
 
 Returns true if the record-playing block is currently playing a record.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.
