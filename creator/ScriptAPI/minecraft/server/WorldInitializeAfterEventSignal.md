@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.WorldInitializeAfterEventSignal Class
 description: Contents of the @minecraft/server.WorldInitializeAfterEventSignal class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # WorldInitializeAfterEventSignal Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Manages callbacks that are run on the first tick of the World. Do note that this event may run multiple times within a session in the case that the /reload command is used.
 
@@ -28,7 +24,7 @@ Adds a callback that will be called when the scripting environment is initialize
 #### **Parameters**
 - **callback**: (arg: [*WorldInitializeAfterEvent*](WorldInitializeAfterEvent.md)) => *void*
 
-#### **Returns** (arg: [*WorldInitializeAfterEvent*](WorldInitializeAfterEvent.md)) => *void*
+**Returns** (arg: [*WorldInitializeAfterEvent*](WorldInitializeAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

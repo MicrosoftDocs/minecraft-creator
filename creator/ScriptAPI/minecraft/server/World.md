@@ -49,6 +49,8 @@ Type: [*Scoreboard*](Scoreboard.md)
 ### **structureManager**
 `read-only structureManager: StructureManager;`
 
+Returns the manager for [*@minecraft/server.Structure*](../../minecraft/server/Structure.md) related APIs.
+
 Type: [*StructureManager*](StructureManager.md)
 
 > [!CAUTION]
@@ -119,7 +121,7 @@ getAbsoluteTime(): number
 
 Returns the absolute time since the start of the world.
 
-#### **Returns** *number*
+**Returns** *number*
 
 ### **getAllPlayers**
 `
@@ -128,7 +130,7 @@ getAllPlayers(): Player[]
 
 Returns an array of all active players within the world.
 
-#### **Returns** [*Player*](Player.md)[]
+**Returns** [*Player*](Player.md)[]
 
 > [!WARNING]
 > This function can throw errors.
@@ -140,7 +142,7 @@ getDay(): number
 
 Returns the current day.
 
-#### **Returns** *number* - The current day, determined by the world time divided by the number of ticks per day. New worlds start at day 0.
+**Returns** *number* - The current day, determined by the world time divided by the number of ticks per day. New worlds start at day 0.
 
 ### **getDefaultSpawnLocation**
 `
@@ -149,7 +151,7 @@ getDefaultSpawnLocation(): Vector3
 
 Returns the default Overworld spawn location. 
 
-#### **Returns** [*Vector3*](Vector3.md) - The default Overworld spawn location. By default, the Y coordinate is 32767, indicating a player's spawn height is not fixed and will be determined by surrounding blocks.
+**Returns** [*Vector3*](Vector3.md) - The default Overworld spawn location. By default, the Y coordinate is 32767, indicating a player's spawn height is not fixed and will be determined by surrounding blocks.
 
 ### **getDimension**
 `
@@ -163,7 +165,7 @@ Returns a dimension object.
   
   The name of the dimension. For example, "overworld", "nether" or "the_end".
 
-#### **Returns** [*Dimension*](Dimension.md) - The requested dimension
+**Returns** [*Dimension*](Dimension.md) - The requested dimension
 
 > [!WARNING]
 > This function can throw errors.
@@ -182,7 +184,7 @@ Returns a property value.
   
   The property identifier.
 
-#### **Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
+**Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
 
 > [!WARNING]
 > This function can throw errors.
@@ -265,7 +267,7 @@ getDynamicPropertyIds(): string[]
 
 Gets a set of dynamic property identifiers that have been set in this world.
 
-#### **Returns** *string*[] - A string array of active dynamic property identifiers.
+**Returns** *string*[] - A string array of active dynamic property identifiers.
 
 ### **getDynamicPropertyTotalByteCount**
 `
@@ -274,7 +276,7 @@ getDynamicPropertyTotalByteCount(): number
 
 Gets the total byte count of dynamic properties. This could potentially be used for your own analytics to ensure you're not storing gigantic sets of dynamic properties.
 
-#### **Returns** *number*
+**Returns** *number*
 
 ### **getEntity**
 `
@@ -288,7 +290,7 @@ Returns an entity based on the provided id.
   
   The id of the entity.
 
-#### **Returns** [*Entity*](Entity.md) | *undefined* - The requested entity object.
+**Returns** [*Entity*](Entity.md) | *undefined* - The requested entity object.
 
 > [!WARNING]
 > This function can throw errors.
@@ -302,7 +304,7 @@ getMoonPhase(): MoonPhase
 
 Returns the MoonPhase for the current time.
 
-#### **Returns** [*MoonPhase*](MoonPhase.md)
+**Returns** [*MoonPhase*](MoonPhase.md)
 
 ### **getPlayers**
 `
@@ -316,7 +318,7 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
   
   Additional options that can be used to filter the set of players returned.
 
-#### **Returns** [*Player*](Player.md)[] - A player array.
+**Returns** [*Player*](Player.md)[] - A player array.
 
 > [!WARNING]
 > This function can throw errors.
@@ -330,7 +332,7 @@ getTimeOfDay(): number
 
 Returns the time of day.
 
-#### **Returns** *number* - The time of day, in ticks, between 0 and 24000.
+**Returns** *number* - The time of day, in ticks, between 0 and 24000.
 
 ### **playMusic**
 `

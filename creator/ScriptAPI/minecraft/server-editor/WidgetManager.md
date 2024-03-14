@@ -20,7 +20,7 @@ createGroup(options?: WidgetGroupCreateOptions): WidgetGroup
 #### **Parameters**
 - **options**?: [*WidgetGroupCreateOptions*](WidgetGroupCreateOptions.md) = `null`
 
-#### **Returns** [*WidgetGroup*](WidgetGroup.md)
+**Returns** [*WidgetGroup*](WidgetGroup.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

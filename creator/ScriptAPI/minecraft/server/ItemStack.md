@@ -178,12 +178,12 @@ Creates a new instance of a stack of items for use in the world.
 #### **Parameters**
 - **itemType**: [*ItemType*](ItemType.md) | *string*
   
-  Type of item to create. See the {@link @minecraft/vanilla-data.MinecraftItemTypes} enumeration for a list of standard item types in Minecraft experiences.
+  Type of item to create. See the @minecraft/vanilla-data.MinecraftItemTypes enumeration for a list of standard item types in Minecraft experiences.
 - **amount**?: *number* = `1`
   
   Number of items to place in the stack, between 1-255. The provided value will be clamped to the item's maximum stack size. Note that certain items can only have one item in the stack.
 
-#### **Returns** [*ItemStack*](ItemStack.md)
+**Returns** [*ItemStack*](ItemStack.md)
 
 > [!WARNING]
 > This function can throw errors.
@@ -204,7 +204,7 @@ clone(): ItemStack
 
 Creates an exact copy of the item stack, including any custom data or properties.
 
-#### **Returns** [*ItemStack*](ItemStack.md) - Returns a copy of this item stack.
+**Returns** [*ItemStack*](ItemStack.md) - Returns a copy of this item stack.
 
 ### **getCanDestroy**
 `
@@ -213,7 +213,7 @@ getCanDestroy(): string[]
 
 Get the list of block types this item can break in Adventure mode.
 
-#### **Returns** *string*[]
+**Returns** *string*[]
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -225,7 +225,7 @@ getCanPlaceOn(): string[]
 
 Get the list of block types this item can be placed on in Adventure mode.
 
-#### **Returns** *string*[]
+**Returns** *string*[]
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -242,7 +242,7 @@ Gets a component (that represents additional capabilities) for an item stack.
   
   The identifier of the component (e.g., 'minecraft:food'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.ItemComponentTypes*](../../minecraft/server/ItemComponentTypes.md) enum.
 
-#### **Returns** *ItemComponentTypeMap[T] | undefined* - Returns the component if it exists on the item stack, otherwise undefined.
+**Returns** *ItemComponentTypeMap[T] | undefined* - Returns the component if it exists on the item stack, otherwise undefined.
 
 #### Examples
 ##### ***durability.ts***
@@ -274,7 +274,7 @@ getComponents(): ItemComponent[]
 
 Returns all components that are both present on this item stack and supported by the API.
 
-#### **Returns** [*ItemComponent*](ItemComponent.md)[]
+**Returns** [*ItemComponent*](ItemComponent.md)[]
 
 ### **getDynamicProperty**
 `
@@ -288,7 +288,7 @@ Returns a property value.
   
   The property identifier.
 
-#### **Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
+**Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
 
 ### **getDynamicPropertyIds**
 `
@@ -297,7 +297,7 @@ getDynamicPropertyIds(): string[]
 
 Returns the available set of dynamic property identifiers that have been used on this entity.
 
-#### **Returns** *string*[] - A string array of the dynamic properties set on this entity.
+**Returns** *string*[] - A string array of the dynamic properties set on this entity.
 
 ### **getDynamicPropertyTotalByteCount**
 `
@@ -306,7 +306,7 @@ getDynamicPropertyTotalByteCount(): number
 
 Returns the total size, in bytes, of all the dynamic properties that are currently stored for this entity. This includes the size of both the key and the value.  This can be useful for diagnosing performance warning signs - if, for example, an entity has many megabytes of associated dynamic properties, it may be slow to load on various devices.
 
-#### **Returns** *number*
+**Returns** *number*
 
 ### **getLore**
 `
@@ -315,7 +315,7 @@ getLore(): string[]
 
 Returns the lore value - a secondary display string - for an ItemStack.
 
-#### **Returns** *string*[] - An array of lore lines. If the item does not have lore, returns an empty array.
+**Returns** *string*[] - An array of lore lines. If the item does not have lore, returns an empty array.
 
 ### **getTags**
 `
@@ -324,7 +324,7 @@ getTags(): string[]
 
 Returns a set of tags associated with this item stack.
 
-#### **Returns** *string*[]
+**Returns** *string*[]
 
 ### **hasComponent**
 `
@@ -338,7 +338,7 @@ Returns true if the specified component is present on this item stack.
   
   The identifier of the component (e.g., 'minecraft:food') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 ### **hasTag**
 `
@@ -352,7 +352,7 @@ Checks whether this item stack has a particular tag associated with it.
   
   Tag to search for.
 
-#### **Returns** *boolean* - True if the Item Stack has the tag associated with it, else false.
+**Returns** *boolean* - True if the Item Stack has the tag associated with it, else false.
 
 ### **isStackableWith**
 `
@@ -366,7 +366,7 @@ Returns whether this item stack can be stacked with the given `itemStack`. This 
   
   ItemStack to check stacking compatability with.
 
-#### **Returns** *boolean* - True if the Item Stack is stackable with the itemStack passed in.
+**Returns** *boolean* - True if the Item Stack is stackable with the itemStack passed in.
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **matches**
@@ -384,7 +384,7 @@ Version safe way of checking if an item matches.
   
    Applicable only for blocks. An optional set of states to compare against. If states is not specified, matches checks against the set of types more broadly.
 
-#### **Returns** *boolean* - Returns a boolean whether the specified item matches.
+**Returns** *boolean* - Returns a boolean whether the specified item matches.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

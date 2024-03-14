@@ -10,3 +10,5 @@ description: Contents of the .LocationInUnloadedChunkError class.
 
 ## Extends
 - *Error*
+
+Thrown when the chunk for provided location or bounding area is not loaded.

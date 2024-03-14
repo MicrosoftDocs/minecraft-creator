@@ -34,7 +34,7 @@ subscribe(callback: (arg: PistonActivateAfterEvent) => void): (arg: PistonActiva
 #### **Parameters**
 - **callback**: (arg: [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)) => *void*
 
-#### **Returns** (arg: [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)) => *void*
+**Returns** (arg: [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

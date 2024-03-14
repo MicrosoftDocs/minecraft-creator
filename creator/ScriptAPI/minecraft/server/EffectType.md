@@ -20,4 +20,4 @@ getName(): string
 
 Identifier name of this effect type.
 
-#### **Returns** *string* - Identifier of the effect type.
+**Returns** *string* - Identifier of the effect type.

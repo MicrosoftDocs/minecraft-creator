@@ -76,4 +76,4 @@ dispose(): void
 
 Destroy the property item.
 
-#### **Returns** *void*
+**Returns** *void*

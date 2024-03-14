@@ -24,7 +24,7 @@ Adds a callback that will be called when a projectile hits an entity.
 #### **Parameters**
 - **callback**: (arg: [*ProjectileHitEntityAfterEvent*](ProjectileHitEntityAfterEvent.md)) => *void*
 
-#### **Returns** (arg: [*ProjectileHitEntityAfterEvent*](ProjectileHitEntityAfterEvent.md)) => *void*
+**Returns** (arg: [*ProjectileHitEntityAfterEvent*](ProjectileHitEntityAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

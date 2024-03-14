@@ -26,7 +26,7 @@ An iterator that loops through available entity types.
 [Symbol.iterator](): Iterator<EntityType>
 `
 
-#### **Returns** Iterator&lt;[*EntityType*](EntityType.md)&gt;
+**Returns** Iterator&lt;[*EntityType*](EntityType.md)&gt;
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -36,7 +36,7 @@ An iterator that loops through available entity types.
 next(): IteratorResult<EntityType>
 `
 
-#### **Returns** IteratorResult&lt;[*EntityType*](EntityType.md)&gt;
+**Returns** IteratorResult&lt;[*EntityType*](EntityType.md)&gt;
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

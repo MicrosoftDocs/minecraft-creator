@@ -25,7 +25,7 @@ Constructs a new instance of the `BedrockEventSubscriptionCache` class
 #### **Parameters**
 - **mEvents**: *WorldAfterEvents*
 
-#### **Returns** *BedrockEventSubscriptionCache*
+**Returns** *BedrockEventSubscriptionCache*
 
 ### **subscribeToBedrockEvent**
 `
@@ -42,7 +42,7 @@ Subcribes to a bedrock event using the key of the desired event. When subscribed
   
   The parameters to the subscription method for the event. Auto complete will display this for you
 
-#### **Returns** *ReturnType<WorldAfterEvents[T]['subscribe']>*
+**Returns** *ReturnType<WorldAfterEvents[T]['subscribe']>*
 
 ### **teardown**
 `
@@ -51,4 +51,4 @@ teardown(): void
 
 Cleans up the set of internal registrations and subscriptions.
 
-#### **Returns** *void*
+**Returns** *void*

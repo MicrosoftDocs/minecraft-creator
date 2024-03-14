@@ -51,7 +51,7 @@ Returns the maximum chance that this item would be damaged using the damageRange
   
   Unbreaking factor to consider in factoring the damage chance. Incoming unbreaking parameter must be within the range [0, 3].
 
-#### **Returns** *number*
+**Returns** *number*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -66,7 +66,7 @@ getDamageChanceRange(): minecraftcommon.NumberRange
 
 A range of numbers that is used to calculate the damage chance for an item. The damage chance will fall within this range.
 
-#### **Returns** [*@minecraft/common.NumberRange*](../../minecraft/common/NumberRange.md)
+**Returns** [*@minecraft/common.NumberRange*](../../minecraft/common/NumberRange.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

@@ -27,7 +27,7 @@ Subscribes to the event.
 #### **Parameters**
 - **callback**: (arg: [*PlayerSpawnAfterEvent*](PlayerSpawnAfterEvent.md)) => *void*
 
-#### **Returns** (arg: [*PlayerSpawnAfterEvent*](PlayerSpawnAfterEvent.md)) => *void*
+**Returns** (arg: [*PlayerSpawnAfterEvent*](PlayerSpawnAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

@@ -29,14 +29,14 @@ Type: *boolean*
 getIsSelected(): boolean
 `
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 ### **getIsVisible**
 `
 getIsVisible(): boolean
 `
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 ### **setIsVisible**
 `

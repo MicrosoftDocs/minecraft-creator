@@ -28,7 +28,7 @@ Adds a callback that will be called before new chat messages are sent.
 #### **Parameters**
 - **callback**: (arg: [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)) => *void*
 
-#### **Returns** (arg: [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)) => *void*
+**Returns** (arg: [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

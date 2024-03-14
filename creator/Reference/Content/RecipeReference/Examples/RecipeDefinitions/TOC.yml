@@ -1,7 +1,7 @@
  - name: Recipe Definition List
    href: ../RecipeDefinitionList.md
  - name: Recipe Tag List
-   href: ../RecipeTagList.md
+   href: RecipeTagList.md
  - name: Furnace Recipe
    href: minecraftRecipe_Furnace.md
  - name: Shaped Recipe
@@ -17,6 +17,6 @@
  - name: Smithing Trim Recipe
    href: minecraftRecipe_SmithingTrim.md
  - name: Tags as Recipe Input
-   href: ../TagsRecipeInput.md
+   href: TagsRecipeInput.md
  - name: Introduction to Recipes 
    href: RecipeIntroduction.md

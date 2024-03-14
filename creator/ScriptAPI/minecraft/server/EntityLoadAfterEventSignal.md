@@ -26,7 +26,7 @@ Method to register an event handler for what happens when an entity loads.
   
   Function that handles the load event.
 
-#### **Returns** (arg: [*EntityLoadAfterEvent*](EntityLoadAfterEvent.md)) => *void*
+**Returns** (arg: [*EntityLoadAfterEvent*](EntityLoadAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

@@ -21,7 +21,7 @@ isPaused(): boolean
 
 Returns `true` if mob simulation is paused.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 ### **setPaused**
 `

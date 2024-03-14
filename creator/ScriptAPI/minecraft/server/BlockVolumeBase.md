@@ -35,7 +35,7 @@ getBlockLocationIterator(): BlockLocationIterator
 
 Fetch a [*@minecraft/server.BlockLocationIterator*](../../minecraft/server/BlockLocationIterator.md) that represents all of the block world locations within the specified volume
 
-#### **Returns** [*BlockLocationIterator*](BlockLocationIterator.md)
+**Returns** [*BlockLocationIterator*](BlockLocationIterator.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -47,7 +47,7 @@ getBoundingBox(): BoundingBox
 
 Return a [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md) object which represents the validated min and max coordinates of the volume
 
-#### **Returns** [*BoundingBox*](BoundingBox.md)
+**Returns** [*BoundingBox*](BoundingBox.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -62,7 +62,7 @@ getCapacity(): number
 
 Return the capacity (volume) of the BlockVolume (W*D*H)
 
-#### **Returns** *number*
+**Returns** *number*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -74,7 +74,7 @@ getMax(): Vector3
 
 Get the largest corner position of the volume (guaranteed to be >= min)
 
-#### **Returns** [*Vector3*](Vector3.md)
+**Returns** [*Vector3*](Vector3.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -89,7 +89,7 @@ getMin(): Vector3
 
 Get the smallest corner position of the volume (guaranteed to be <= max)
 
-#### **Returns** [*Vector3*](Vector3.md)
+**Returns** [*Vector3*](Vector3.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -104,7 +104,7 @@ getSpan(): Vector3
 
 Get a [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) object where each component represents the number of blocks along that axis
 
-#### **Returns** [*Vector3*](Vector3.md)
+**Returns** [*Vector3*](Vector3.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -119,7 +119,7 @@ Check to see if a given world block location is inside a BlockVolume
 #### **Parameters**
 - **pos**: [*Vector3*](Vector3.md)
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

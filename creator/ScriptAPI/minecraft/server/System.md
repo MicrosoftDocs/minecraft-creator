@@ -89,7 +89,7 @@ Runs a specified function at a future time. This is frequently used to implement
   
   Function callback to run when the tickDelay time criteria is met.
 
-#### **Returns** *number* - An opaque identifier that can be used with the `clearRun` function to cancel the execution of this run.
+**Returns** *number* - An opaque identifier that can be used with the `clearRun` function to cancel the execution of this run.
 
 #### Examples
 ##### ***trapTick.ts***
@@ -127,7 +127,7 @@ Runs a set of code on an interval.
   
   An interval of every N ticks that the callback will be called upon.
 
-#### **Returns** *number* - An opaque handle that can be used with the clearRun method to stop the run of this function on an interval.
+**Returns** *number* - An opaque handle that can be used with the clearRun method to stop the run of this function on an interval.
 
 #### Examples
 ##### ***every30Seconds.ts***
@@ -154,7 +154,7 @@ Queues a generator to run until completion.  The generator will be given a time 
   
   The instance of the generator to run.
 
-#### **Returns** *number* - An opaque handle that can be used with System.clearJob to stop the run of this generator.
+**Returns** *number* - An opaque handle that can be used with System.clearJob to stop the run of this generator.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -207,4 +207,4 @@ Runs a set of code at a future time specified by tickDelay.
   
   Amount of time, in ticks, before the interval will be called.
 
-#### **Returns** *number* - An opaque handle that can be used with the clearRun method to stop the run of this function on an interval.
+**Returns** *number* - An opaque handle that can be used with the clearRun method to stop the run of this function on an interval.

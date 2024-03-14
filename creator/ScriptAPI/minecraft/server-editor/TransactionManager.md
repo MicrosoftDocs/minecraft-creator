@@ -56,7 +56,7 @@ Commit all of the transaction operations currently attached to the open transact
 
 The open record will be closed and all tracking operations will cease.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -73,7 +73,7 @@ This function will commit the pending changes caused by any of the track changes
 
 Pending block changes from tracking operations will be added to the transaction record before submission to the transaction manager
 
-#### **Returns** *number* - Returns the number of change requests that were being tracked
+**Returns** *number* - Returns the number of change requests that were being tracked
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -90,7 +90,7 @@ createUserDefinedTransactionHandler(undoClosure: (arg: string) => void, redoClos
 - **undoClosure**: (arg: *string*) => *void*
 - **redoClosure**: (arg: *string*) => *void*
 
-#### **Returns** [*UserDefinedTransactionHandlerId*](UserDefinedTransactionHandlerId.md)
+**Returns** [*UserDefinedTransactionHandlerId*](UserDefinedTransactionHandlerId.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -107,7 +107,7 @@ Discard the currently open transaction without committing it to the transaction 
 
 All records within the transaction will be discarded, and any tracking requests currently active will be stopped
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -122,7 +122,7 @@ discardTrackedChanges(): number
 
 Discard any pending tracked changes.  This does not affect the current open transaction contents, only the pending tracked block operations
 
-#### **Returns** *number* - Returns the number of change requests that were discarded
+**Returns** *number* - Returns the number of change requests that were discarded
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -144,7 +144,7 @@ All transaction operations within a record are grouped and treated as a single a
   
   Give the transaction record a name
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -176,7 +176,7 @@ redoSize(): number
 
 Return the number of transaction records on the redo stack.
 
-#### **Returns** *number*
+**Returns** *number*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -201,7 +201,7 @@ The pending list will be added to the open transaction record when a commit has 
   
   Max block location of a bounding area
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -223,7 +223,7 @@ The pending list will be added to the open transaction record when a commit has 
   
   {@link @minecraft-server/CompoundBlockVolume} to track.  Only non-void block locations will be tracked -- any changes falling into a void/negative space will not be tracked
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -243,7 +243,7 @@ Begin tracking block changes in a list of specified block locations.
   
   An array of block locations to monitor for changes
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -269,7 +269,7 @@ Selection Volumes can also represent irregular shapes with non-contiguous blocks
   
   The Selection Volume is copied, so further changes to the volume after this call will not be reflected in the tracking list.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -301,7 +301,7 @@ undoSize(): number
 
 Return how many transactions records currently exist on the stack
 
-#### **Returns** *number*
+**Returns** *number*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

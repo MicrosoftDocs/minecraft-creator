@@ -538,3 +538,11 @@ The following example is a good place to start:
   }
 }
 ```
+
+## Sky Reflections
+
+Minecraft Bedrock **1.20.80.22+** Previews bring a new level of realism to your Deferred Technical Preview worlds by adding sky reflections! This new feature will reflect the sky, clouds, sun, moon, stars, and more on your world's surfaces. 
+
+Creators can make use of the Roughness and Metalness parameters in Texture Sets to control how different materials elicit reflections. Default PBR values for blocks and actors defined in the global lighting JSON will also impact this property for blocks/actors with no Texture Set.
+
+Note that since these are reflections of the sky, reflections will not be visible when in caves, indoors, or in the Nether. Reflections for these scenarios and of other objects such as the terrain and entities will be added in future updates.

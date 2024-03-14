@@ -17,7 +17,7 @@ description: Contents of the @minecraft/server-editor.BlockPaletteManager class.
 getSelectedBlockType(): minecraftserver.BlockType
 `
 
-#### **Returns** [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md)
+**Returns** [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md)
 
 > [!WARNING]
 > This function can throw errors.

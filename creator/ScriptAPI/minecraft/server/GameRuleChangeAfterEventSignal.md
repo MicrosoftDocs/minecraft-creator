@@ -28,7 +28,7 @@ Adds a callback that will be called when a world.gameRules property is changed.
 #### **Parameters**
 - **callback**: (arg: [*GameRuleChangeAfterEvent*](GameRuleChangeAfterEvent.md)) => *void*
 
-#### **Returns** (arg: [*GameRuleChangeAfterEvent*](GameRuleChangeAfterEvent.md)) => *void*
+**Returns** (arg: [*GameRuleChangeAfterEvent*](GameRuleChangeAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

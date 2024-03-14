@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityTypes Class
 description: Contents of the @minecraft/server.EntityTypes class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityTypes Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Used for accessing all entity types currently available for use within the world.
 
@@ -28,7 +24,7 @@ Retrieves an entity type using a string-based identifier.
 #### **Parameters**
 - **identifier**: *string*
 
-#### **Returns** [*EntityType*](EntityType.md) | *undefined*
+**Returns** [*EntityType*](EntityType.md) | *undefined*
 
 ### **getAll**
 `
@@ -37,4 +33,4 @@ static getAll(): EntityType[]
 
 Retrieves a set of all entity types within this world.
 
-#### **Returns** [*EntityType*](EntityType.md)[]
+**Returns** [*EntityType*](EntityType.md)[]

@@ -60,7 +60,7 @@ Returns a SecretString that is a placeholder for a secret configured in a JSON f
 #### **Parameters**
 - **name**: *string*
 
-#### **Returns** [*SecretString*](SecretString.md) | *undefined*
+**Returns** [*SecretString*](SecretString.md) | *undefined*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

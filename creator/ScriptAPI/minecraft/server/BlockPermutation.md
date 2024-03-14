@@ -78,7 +78,7 @@ clone(): BlockPermutation
 
 Creates a copy of this permutation.
 
-#### **Returns** [*BlockPermutation*](BlockPermutation.md) - A copy of the permutation.
+**Returns** [*BlockPermutation*](BlockPermutation.md) - A copy of the permutation.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -91,7 +91,7 @@ getAllStates(): Record<string, boolean | number | string>
 
 Returns all available block states associated with this block.
 
-#### **Returns** Record<*string*, *boolean* | *number* | *string*> - Returns the list of all of the block states that the permutation has.
+**Returns** Record<*string*, *boolean* | *number* | *string*> - Returns the list of all of the block states that the permutation has.
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **getItemStack**
@@ -106,7 +106,7 @@ Retrieves a prototype item stack based on this block permutation that can be use
   
   Number of instances of this block to place in the prototype item stack.
 
-#### **Returns** [*ItemStack*](ItemStack.md) | *undefined*
+**Returns** [*ItemStack*](ItemStack.md) | *undefined*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -124,7 +124,7 @@ Gets a state for the permutation.
   
   Name of the block state who's value is to be returned.
 
-#### **Returns** *boolean* | *number* | *string* | *undefined* - Returns the state if the permutation has it, else `undefined`.
+**Returns** *boolean* | *number* | *string* | *undefined* - Returns the state if the permutation has it, else `undefined`.
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **getTags**
@@ -134,7 +134,7 @@ getTags(): string[]
 
 Creates a copy of the permutation.
 
-#### **Returns** *string*[]
+**Returns** *string*[]
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -151,7 +151,7 @@ Checks to see if the permutation has a specific tag.
 #### **Parameters**
 - **tag**: *string*
 
-#### **Returns** *boolean* - Returns `true` if the permutation has the tag, else `false`.
+**Returns** *boolean* - Returns `true` if the permutation has the tag, else `false`.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -184,7 +184,7 @@ Returns a boolean whether a specified permutation matches this permutation. If s
   An optional set of states to compare against.
 - **states**?: Record<*string*, *boolean* | *number* | *string*> = `null`
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 ### **withState**
 `
@@ -201,7 +201,7 @@ Returns a derived BlockPermutation with a specific property set.
   
   Value of the block property.
 
-#### **Returns** [*BlockPermutation*](BlockPermutation.md)
+**Returns** [*BlockPermutation*](BlockPermutation.md)
 
 > [!WARNING]
 > This function can throw errors.
@@ -219,7 +219,7 @@ Given a type identifier and an optional set of properties, will return a BlockPe
   Identifier of the block to check.
 - **states**?: Record<*string*, *boolean* | *number* | *string*> = `null`
 
-#### **Returns** [*BlockPermutation*](BlockPermutation.md)
+**Returns** [*BlockPermutation*](BlockPermutation.md)
 
 > [!WARNING]
 > This function can throw errors.

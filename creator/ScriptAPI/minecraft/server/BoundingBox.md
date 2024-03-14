@@ -29,7 +29,7 @@ has a size of ( 0,0,0 ) (unlike the very similar [*@minecraft/server.BlockVolume
 ### **max**
 `max: Vector3;`
 
-A {@link @minecraft-server.Vector3} that represents the largest corner of the rectangle
+A @minecraft-server.Vector3 that represents the largest corner of the rectangle
 
 Type: [*Vector3*](Vector3.md)
 

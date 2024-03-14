@@ -157,7 +157,7 @@ Clears all dynamic properties that have been set on this item stack.
 getCanDestroy(): string[]
 `
 
-#### **Returns** *string*[]
+**Returns** *string*[]
 
 > [!WARNING]
 > This function can throw errors.
@@ -169,7 +169,7 @@ getCanDestroy(): string[]
 getCanPlaceOn(): string[]
 `
 
-#### **Returns** *string*[]
+**Returns** *string*[]
 
 > [!WARNING]
 > This function can throw errors.
@@ -188,7 +188,7 @@ Returns a property value.
   
   The property identifier.
 
-#### **Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
+**Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
 
 > [!WARNING]
 > This function can throw errors.
@@ -202,7 +202,7 @@ getDynamicPropertyIds(): string[]
 
 Returns the available set of dynamic property identifiers that have been used on this item stack.
 
-#### **Returns** *string*[] - A string array of the dynamic properties set on this entity.
+**Returns** *string*[] - A string array of the dynamic properties set on this entity.
 
 > [!WARNING]
 > This function can throw errors.
@@ -216,7 +216,7 @@ getDynamicPropertyTotalByteCount(): number
 
 Returns the total size, in bytes, of all the dynamic properties that are currently stored for this entity. This includes the size of both the key and the value.  This can be useful for diagnosing performance warning signs - if, for example, an entity has many megabytes of associated dynamic properties, it may be slow to load on various devices.
 
-#### **Returns** *number*
+**Returns** *number*
 
 > [!WARNING]
 > This function can throw errors.
@@ -230,7 +230,7 @@ getItem(): ItemStack | undefined
 
 Creates an exact copy of the item stack, including any custom data or properties.
 
-#### **Returns** [*ItemStack*](ItemStack.md) | *undefined* - Returns a copy of the item in the slot. Returns undefined if the slot is empty.
+**Returns** [*ItemStack*](ItemStack.md) | *undefined* - Returns a copy of the item in the slot. Returns undefined if the slot is empty.
 
 > [!WARNING]
 > This function can throw errors.
@@ -244,7 +244,7 @@ getLore(): string[]
 
 Returns the lore value - a secondary display string - for an ItemStack.
 
-#### **Returns** *string*[] - An array of lore strings. If the item does not have lore, returns an empty array.
+**Returns** *string*[] - An array of lore strings. If the item does not have lore, returns an empty array.
 
 > [!WARNING]
 > This function can throw errors.
@@ -258,7 +258,7 @@ getTags(): string[]
 
 Returns all tags for the item in the slot.
 
-#### **Returns** *string*[] - Returns all tags for the item in the slot. Return an empty array if the the slot is empty.
+**Returns** *string*[] - Returns all tags for the item in the slot. Return an empty array if the the slot is empty.
 
 > [!WARNING]
 > This function can throw errors.
@@ -270,7 +270,7 @@ Returns all tags for the item in the slot.
 hasItem(): boolean
 `
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.
@@ -289,7 +289,7 @@ Returns whether the item in the slot slot has the given tag.
   
   The item tag.
 
-#### **Returns** *boolean* - Returns false when the slot is empty or the item in the slot does not have the given tag.
+**Returns** *boolean* - Returns false when the slot is empty or the item in the slot does not have the given tag.
 
 > [!WARNING]
 > This function can throw errors.
@@ -308,7 +308,7 @@ Returns whether this item stack can be stacked with the given `itemStack`. This 
   
   The ItemStack that is being compared.
 
-#### **Returns** *boolean* - Returns whether this item stack can be stacked with the given `itemStack`. 
+**Returns** *boolean* - Returns whether this item stack can be stacked with the given `itemStack`. 
 
 > [!WARNING]
 > This function can throw errors.
@@ -322,7 +322,7 @@ isValid(): boolean
 
 Returns whether the ContainerSlot is valid. The container slot is valid if the container exists and is loaded, and the slot index is valid.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 ### **setCanDestroy**
 `

@@ -24,7 +24,7 @@ Adds a callback that will be called when an item is used on a block.
 #### **Parameters**
 - **callback**: (arg: [*ItemUseOnAfterEvent*](ItemUseOnAfterEvent.md)) => *void*
 
-#### **Returns** (arg: [*ItemUseOnAfterEvent*](ItemUseOnAfterEvent.md)) => *void*
+**Returns** (arg: [*ItemUseOnAfterEvent*](ItemUseOnAfterEvent.md)) => *void*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

@@ -58,7 +58,7 @@ getPosition(): minecraftserver.Vector3
 
 Get the world position of the 3D block cursor
 
-#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -73,7 +73,7 @@ getProperties(): CursorProperties
 
 Get a property object which represents the current properties of the 3D block cursor.
 
-#### **Returns** [*CursorProperties*](CursorProperties.md)
+**Returns** [*CursorProperties*](CursorProperties.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -106,7 +106,7 @@ Manually offset the 3D block cursor by given amount.  Depending on the @minecraf
   
   Amount by which the 3D block cursor should be moved
 
-#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - Return the newly modified position (or previous position if movement was restricted)
+**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - Return the newly modified position (or previous position if movement was restricted)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

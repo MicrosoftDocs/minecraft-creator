@@ -34,4 +34,4 @@ Creates an action and registers it on the client
   
   The raw action to create. See ActionTypes for supported parameters
 
-#### **Returns** *RegisteredAction<T>*
+**Returns** *RegisteredAction<T>*

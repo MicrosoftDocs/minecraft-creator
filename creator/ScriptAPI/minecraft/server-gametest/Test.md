@@ -633,7 +633,7 @@ Gets a block at the specified block location.
   
   Location of the block to retrieve.
 
-#### **Returns** [*@minecraft/server.Block*](../../minecraft/server/Block.md)
+**Returns** [*@minecraft/server.Block*](../../minecraft/server/Block.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -650,7 +650,7 @@ getDimension(): minecraftserver.Dimension
 
 Gets the dimension of this test.
 
-#### **Returns** [*@minecraft/server.Dimension*](../../minecraft/server/Dimension.md)
+**Returns** [*@minecraft/server.Dimension*](../../minecraft/server/Dimension.md)
 
 > [!WARNING]
 > This function can throw errors.
@@ -669,7 +669,7 @@ If the block at the specified block location is a fence, this returns a helper o
   
   Location of the block to retrieve.
 
-#### **Returns** [*FenceConnectivity*](FenceConnectivity.md)
+**Returns** [*FenceConnectivity*](FenceConnectivity.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -691,7 +691,7 @@ Retrieves a sculk spreader object that can be used to control and manage how scu
   
   Location of the block to retrieve a sculk spreader from.
 
-#### **Returns** [*SculkSpreader*](SculkSpreader.md) | *undefined* - Returns the SculkSpreader or undefined if no SculkSpreader is present on the block.
+**Returns** [*SculkSpreader*](SculkSpreader.md) | *undefined* - Returns the SculkSpreader or undefined if no SculkSpreader is present on the block.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -708,7 +708,7 @@ getTestDirection(): minecraftserver.Direction
 
 Returns the direction of the current test - see the [*@minecraft/server.Direction*](../../minecraft/server/Direction.md) enum for more information on potential values (north, east, south, west - values 2-5).
 
-#### **Returns** [*@minecraft/server.Direction*](../../minecraft/server/Direction.md)
+**Returns** [*@minecraft/server.Direction*](../../minecraft/server/Direction.md)
 
 ### **idle**
 `
@@ -722,7 +722,7 @@ This asynchronous function will wait for the specified time in ticks before cont
   
   Amount of time to wait, in ticks.
 
-#### **Returns** Promise&lt;*void*&gt;
+**Returns** Promise&lt;*void*&gt;
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -854,7 +854,7 @@ From a BlockLocation, returns a new BlockLocation with coordinates relative to t
   
   Absolute location in the world to convert to a relative location.
 
-#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - A location relative to the GameTest command block.
+**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - A location relative to the GameTest command block.
 
 > [!WARNING]
 > This function can throw errors.
@@ -873,7 +873,7 @@ From a location, returns a new location with coordinates relative to the current
   
   Absolute location in the world to convert to a relative location.
 
-#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - A location relative to the GameTest command block.
+**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - A location relative to the GameTest command block.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -910,7 +910,7 @@ Returns a relative direction given the current rotation of the current test. Pas
   
   Direction to translate into a direction relative to the GameTest facing. Passing in Direction.south will return the test direction; Passing in Direction.north will return the opposite of the test direction, and so on.
 
-#### **Returns** [*@minecraft/server.Direction*](../../minecraft/server/Direction.md)
+**Returns** [*@minecraft/server.Direction*](../../minecraft/server/Direction.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -928,7 +928,7 @@ rotateVector(vector: minecraftserver.Vector3): minecraftserver.Vector3
 #### **Parameters**
 - **vector**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
-#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -1039,7 +1039,7 @@ For blocks that are fluid containers - like a cauldron - changes the type of flu
   Location of the fluid container block.
 - **type**: [*@minecraft/server.FluidType*](../../minecraft/server/FluidType.md)
   
-  Type of fluid to set. See @minecraft/server.FluidType for a list of values.
+  Type of fluid to set. See @minecraft/server-gametest.FluidType for a list of values.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -1085,7 +1085,7 @@ Spawns an entity at a location.
   Type of entity to create. If no namespace is provided, 'minecraft:' is assumed. Note that an optional initial spawn event can be specified between less than/greater than signs (e.g., namespace:entityType<spawnEvent>).
 - **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
-#### **Returns** [*@minecraft/server.Entity*](../../minecraft/server/Entity.md) - The spawned entity. If the entity cannot be spawned, returns undefined.
+**Returns** [*@minecraft/server.Entity*](../../minecraft/server/Entity.md) - The spawned entity. If the entity cannot be spawned, returns undefined.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -1136,7 +1136,7 @@ Spawns an entity at a location.
   Type of entity to create. If no namespace is provided, 'minecraft:' is assumed. Note that an optional initial spawn event can be specified between less than/greater than signs (e.g., namespace:entityType<spawnEvent>).
 - **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
-#### **Returns** [*@minecraft/server.Entity*](../../minecraft/server/Entity.md) - The spawned entity. If the entity cannot be spawned, returns undefined.
+**Returns** [*@minecraft/server.Entity*](../../minecraft/server/Entity.md) - The spawned entity. If the entity cannot be spawned, returns undefined.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -1167,7 +1167,7 @@ Spawns an item entity at a specified location.
   
   Location to create the item entity at.
 
-#### **Returns** [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
+**Returns** [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -1203,7 +1203,7 @@ Creates a new simulated player within the world.
   Name to give the new simulated player.
 - **gameMode**?: [*@minecraft/server.GameMode*](../../minecraft/server/GameMode.md) = `0`
 
-#### **Returns** [*SimulatedPlayer*](SimulatedPlayer.md)
+**Returns** [*SimulatedPlayer*](SimulatedPlayer.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -1226,7 +1226,7 @@ Spawns an entity at a location without any AI behaviors. This method is frequent
   
   Location where the entity should be spawned.
 
-#### **Returns** [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
+**Returns** [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -1249,7 +1249,7 @@ Spawns an entity at a location without any AI behaviors. This method is frequent
   
   Location where the entity should be spawned.
 
-#### **Returns** [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
+**Returns** [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -1298,7 +1298,7 @@ startSequence(): GameTestSequence
 
 Creates a new GameTestSequence - A set of steps that play out sequentially within a GameTest.
 
-#### **Returns** [*GameTestSequence*](GameTestSequence.md) - A new GameTestSequence with chaining methods that facilitate creating a set of steps.
+**Returns** [*GameTestSequence*](GameTestSequence.md) - A new GameTestSequence with chaining methods that facilitate creating a set of steps.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -1525,7 +1525,7 @@ This asynchronous function will wait until the code in the specified callback su
   
   Function with code to evaluate.
 
-#### **Returns** Promise&lt;*void*&gt;
+**Returns** Promise&lt;*void*&gt;
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -1594,7 +1594,7 @@ From a BlockLocation with coordinates relative to the GameTest structure block, 
   
   Location relative to the GameTest command block.
 
-#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - An absolute location relative to the GameTest command block.
+**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - An absolute location relative to the GameTest command block.
 
 > [!WARNING]
 > This function can throw errors.
@@ -1613,7 +1613,7 @@ From a location with coordinates relative to the GameTest structure block, retur
   
   Location relative to the GameTest command block.
 
-#### **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - An absolute location relative to the GameTest command block.
+**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - An absolute location relative to the GameTest command block.
 
 > [!WARNING]
 > This function can throw errors.

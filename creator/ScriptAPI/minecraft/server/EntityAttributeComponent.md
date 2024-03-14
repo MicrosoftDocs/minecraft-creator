@@ -116,7 +116,7 @@ Sets the current value of this attribute.
 #### **Parameters**
 - **value**: *number*
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

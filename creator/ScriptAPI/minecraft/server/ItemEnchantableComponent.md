@@ -40,6 +40,16 @@ function giveFireSword(player: Player) {
 }
 ```
 
+## Properties
+
+### **slots**
+`read-only slots: EnchantmentSlot[];`
+
+Type: [*EnchantmentSlot*](EnchantmentSlot.md)[]
+
+> [!WARNING]
+> This property can throw errors when used.
+
 ## Methods
 - [addEnchantment](#addenchantment)
 - [addEnchantments](#addenchantments)
@@ -102,7 +112,7 @@ Checks whether an enchantment can be added to the item stack.
   
   The enchantment interface to be added.
 
-#### **Returns** *boolean* - Returns true if the enchantment can be added to the item stack.
+**Returns** *boolean* - Returns true if the enchantment can be added to the item stack.
 
 > [!WARNING]
 > This function can throw errors.
@@ -121,7 +131,7 @@ Gets the enchantment of a given type from the item stack.
   
   The enchantment type to get.
 
-#### **Returns** [*Enchantment*](Enchantment.md) | *undefined* - Returns the enchantment if it exists on the item stack.
+**Returns** [*Enchantment*](Enchantment.md) | *undefined* - Returns the enchantment if it exists on the item stack.
 
 > [!WARNING]
 > This function can throw errors.
@@ -135,7 +145,7 @@ getEnchantments(): Enchantment[]
 
 Gets all enchantments on the item stack.
 
-#### **Returns** [*Enchantment*](Enchantment.md)[] - Returns a list of enchantments on the item stack.
+**Returns** [*Enchantment*](Enchantment.md)[] - Returns a list of enchantments on the item stack.
 
 > [!WARNING]
 > This function can throw errors.
@@ -152,7 +162,7 @@ Checks whether an item stack has a given enchantment type.
   
   The enchantment type to check for.
 
-#### **Returns** *boolean* - Returns true if the item stack has the enchantment type.
+**Returns** *boolean* - Returns true if the item stack has the enchantment type.
 
 > [!WARNING]
 > This function can throw errors.
