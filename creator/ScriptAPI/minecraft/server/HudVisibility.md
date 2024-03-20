@@ -12,8 +12,14 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Enumeration that specifies how to treat the visibility of a HUD element.
+
 ## Constants
 ### **Hide**
 `Hide = 0`
+
+Specifies that this HUD element should be hidden.
 ### **Reset**
 `Reset = 1`
+
+Specifies that this HUD element should be reset to its default state (while most HUD elements are visible, some HUD elements can be hidden by the player via settings.)

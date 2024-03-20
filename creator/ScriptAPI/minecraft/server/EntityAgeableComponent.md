@@ -32,9 +32,19 @@ Type: *number*
 ### **growUp**
 `read-only growUp: Trigger;`
 
-Event to run when this entity grows up.
+Event that runs when this entity grows up.
 
 Type: [*Trigger*](Trigger.md)
+
+> [!WARNING]
+> This property can throw errors when used.
+
+### **transformToItem**
+`read-only transformToItem: string;`
+
+The feed item used will transform into this item upon successful interaction.
+
+Type: *string*
 
 > [!WARNING]
 > This property can throw errors when used.

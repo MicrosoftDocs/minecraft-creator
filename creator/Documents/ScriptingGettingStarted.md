@@ -51,14 +51,6 @@ Visit the [Visual Studio Code website](https://code.visualstudio.com) and instal
     npm i
     ```
 
-1. When that's done, enter:
-
-    ```powershell
-    npm i gulp-cli --global
-    ```
-
-![Initial commands run](Media/ScriptingGettingStarted/200-InitialCommands.png)
-
 1. Use this shortcut command to open the project in Visual Studio Code:
 
     ```powershell
@@ -71,17 +63,20 @@ It might also ask you to install the Minecraft Debugger and Blockception's Visua
 
 ### Chapter 1. Customize the behavior pack
 
-In Visual Studio Code, expand the `behavior_packs` node in the treeview to the left, and rename the **starterbp** folder to "cotta".
+In Visual Studio Code, open the file `.env`. This contains the environment variables to use to configure project:
 
-Use the Find/Replace command (Ctrl-Shift-F) to search for "starterbp" and replace the instance in **gulpfile.js** and the instance in **launch.json** with "cotta."
+```
+PROJECT_NAME="starter"
+MINECRAFT_PRODUCT="BedrockUWP"
+CUSTOM_DEPLOYMENT_PATH=""
+```
 
-![Changing instances of starterbp to cotta](Media/ScriptingGettingStarted/400-CottaGulp.png)
+- **PROJECT_NAME** is used as the folder name under all the assets are going to be deployed inside the game directories (e.g., development_behavior_packs\\**PROJECT_NAME**, development_resource_packs\\**PROJECT_NAME**).
 
-> [!IMPORTANT]
-> You may choose to use either Minecraft or Minecraft Preview to debug and work
-> with your scripts. If you do use Minecraft Preview,
-> open up **gulpfile.js** and, at the top of the file, set
-> `useMinecraftPreview = true;`
+- **MINECRAFT_PRODUCT**. You can choose to use either Minecraft or Minecraft Preview to debug and work with your scripts. These are the possible values: **BedrockUWP, PreviewUWP, Custom**.
+  Use **Custom** in case of deploy on any other path.
+
+- **CUSTOM_DEPLOYMENT_PATH**. In case of using **Custom** for **MINECRAFT_PRODUCT**, this is the path used to generate the assets.
 
 Go back the Files tree view and open `behavior_packs\cotta\manifest.json`
 
@@ -103,12 +98,12 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 Run this one, too.
 
 ```powershell
-gulp
+npm run local-deploy
 ```
 
-This uses a build tool called GulpJS and automatically compiles your TypeScript project and pushes it over into Minecraft.
+This uses a build tool called just-scripts and automatically compiles your TypeScript project and pushes it over into Minecraft.
 
-![Initial Gulp run](Media/ScriptingGettingStarted/600-InitialGulpRun.png)
+![Initial just-scripts run](Media/ScriptingGettingStarted/600-InitialGulpRun.png)
 
 Launch Minecraft and create a new world:
 
@@ -176,14 +171,14 @@ function initializeBreakTheTerracotta() {
     objective: scoreObjective,
   });
 
-  let players = world.getAllPlayers();
+  const players = world.getAllPlayers();
 
-  for (let player of players) {
-    player.runCommand("scoreboard players set @s score 0");
+  for (const player of players) {
+    scoreObjective.setScore(player, 0);
 
     let inv = player.getComponent("inventory") as EntityInventoryComponent;
-    inv.container.addItem(new ItemStack("diamond_sword"));
-    inv.container.addItem(new ItemStack("dirt", 64));
+    inv.container?.addItem(new ItemStack("diamond_sword"));
+    inv.container?.addItem(new ItemStack("dirt", 64));
 
     player.teleport(
       {
@@ -228,20 +223,20 @@ Note that we wait until `START_TICK` (100 ticks in) before the world is actually
 
 Within the initialize function, we run commands that:
 
-* Clear out any existing mobs near the player in the world.
-* Set up a scoreboard objective for overall Level of the player, meaning the number of terracotta breaks they have
-* Give the current player a diamond sword and some dirty dirt
-* Use chat to give the player an instructional message
+- Clear out any existing mobs near the player in the world.
+- Set up a scoreboard objective for overall Level of the player, meaning the number of terracotta breaks they have
+- Give the current player a diamond sword and some dirty dirt
+- Use chat to give the player an instructional message
 
-Now, let's run the code. This time, we're going to run gulp in "watch mode" - meaning it will just sit in the background and watch for changes, and if they happen, they will automatically compile and deploy to the Minecraft folder. This way, we won't have to worry about separately compiling every time we make a change to code.
+Now, let's run the code. This time, we're going to run the local-deploy task in "watch mode" - meaning it will just sit in the background and watch for changes, and if they happen, they will automatically compile and deploy to the Minecraft folder. This way, we won't have to worry about separately compiling every time we make a change to code.
 
 Go back to your PowerShell window, and enter:
 
 ```powershell
-gulp watch
+npm run local-deploy -- --watch
 ```
 
-You should see gulp compile and deploy to the Minecraft folder, and make a noise when it does that. From here, we don't need to tend to PowerShell except to see if there are any compilation errors down the road.
+You should see that the local-deploy task compiles and deploys to the Minecraft folder. From here, we don't need to tend to PowerShell except to see if there are any compilation errors down the road.
 
 When you are done coding for the day, either hit **ctrl-c** in the PowerShell Window to stop the watch mode or close the window.
 
@@ -251,7 +246,7 @@ Save and Quit to exit out of the world. We'll want to reload the world from here
 
 Now load the world. You should see your initialization changes: a new scoreboard, new items in your inventory, and a script message.
 
-Note that as you work through this tutorial, we are going to run the initialization code more than once, so your player is going to get multiples of these items during this development and test phase. If that bothers you, feel free to toss out these items before you close the world.
+Note that as you work through this tutorial, we are going to run the initialization code more than once, so your player is going to get multiples of these items during this development and test phase.
 
 ![Initial items](Media/ScriptingGettingStarted/1000-InitialItems.png)
 
@@ -332,31 +327,31 @@ import Utilities from "./Utilities.js";
 Then, within `initializeBreakTheTerracotta`, let's add our arena initialization beneath the `world.sendMessage("BREAK THE TERRACOTTA!");` line of code:
 
 ```typescript
- let airBlockPerm = BlockPermutation.resolve("minecraft:air");
- let cobblestoneBlockPerm = BlockPermutation.resolve("minecraft:cobblestone");
+let airBlockPerm = BlockPermutation.resolve("minecraft:air");
+let cobblestoneBlockPerm = BlockPermutation.resolve("minecraft:cobblestone");
 
- if (airBlockPerm) {
-   Utilities.fillBlock(
-     airBlockPerm,
-     ARENA_X_OFFSET - ARENA_X_SIZE / 2 + 1,
-     ARENA_Y_OFFSET,
-     ARENA_Z_OFFSET - ARENA_Z_SIZE / 2 + 1,
-     ARENA_X_OFFSET + ARENA_X_SIZE / 2 - 1,
-     ARENA_Y_OFFSET + 10,
-     ARENA_Z_OFFSET + ARENA_Z_SIZE / 2 - 1
-   );
- }
+if (airBlockPerm) {
+  Utilities.fillBlock(
+    airBlockPerm,
+    ARENA_X_OFFSET - ARENA_X_SIZE / 2 + 1,
+    ARENA_Y_OFFSET,
+    ARENA_Z_OFFSET - ARENA_Z_SIZE / 2 + 1,
+    ARENA_X_OFFSET + ARENA_X_SIZE / 2 - 1,
+    ARENA_Y_OFFSET + 10,
+    ARENA_Z_OFFSET + ARENA_Z_SIZE / 2 - 1
+  );
+}
 
- if (cobblestoneBlockPerm) {
-   Utilities.fourWalls(
-     cobblestoneBlockPerm,
-     ARENA_X_OFFSET - ARENA_X_SIZE / 2,
-     ARENA_Y_OFFSET,
-     ARENA_Z_OFFSET - ARENA_Z_SIZE / 2,
-     ARENA_X_OFFSET + ARENA_X_SIZE / 2,
-     ARENA_Y_OFFSET + 10,
-     ARENA_Z_OFFSET + ARENA_Z_SIZE / 2
-   );
+if (cobblestoneBlockPerm) {
+  Utilities.fourWalls(
+    cobblestoneBlockPerm,
+    ARENA_X_OFFSET - ARENA_X_SIZE / 2,
+    ARENA_Y_OFFSET,
+    ARENA_Z_OFFSET - ARENA_Z_SIZE / 2,
+    ARENA_X_OFFSET + ARENA_X_SIZE / 2,
+    ARENA_Y_OFFSET + 10,
+    ARENA_Z_OFFSET + ARENA_Z_SIZE / 2
+  );
 }
 ```
 
@@ -384,18 +379,18 @@ let spawnCountdown = 1;
 Add the following to the `gameTick` function, beneath the `curTick++` line of code:
 
 ```typescript
-    if (curTick > START_TICK && curTick % 20 === 0) {
-      // no terracotta exists, and we're waiting to spawn a new one.
-      if (spawnCountdown > 0) {
-        spawnCountdown--;
+if (curTick > START_TICK && curTick % 20 === 0) {
+  // no terracotta exists, and we're waiting to spawn a new one.
+  if (spawnCountdown > 0) {
+    spawnCountdown--;
 
-        if (spawnCountdown <= 0) {
-          spawnNewTerracotta();
-        }
-      } else {
-        checkForTerracotta();
-      }
+    if (spawnCountdown <= 0) {
+      spawnNewTerracotta();
     }
+  } else {
+    checkForTerracotta();
+  }
+}
 ```
 
 Now add the `spawnNewTerracotta()` and `checkForTerracotta()` functions after the last function and before the last `system.run(gameTick);` line of code:
@@ -529,6 +524,26 @@ You may wonder why the interval here is 29. The main idea was to select a number
 ![Fuzzy leaves at night](Media/ScriptingGettingStarted/1900-FuzzyLeavesAtNight.png)
 
 Now exit out and reload your game. As you run around, you should see new leaves get spawned. This should add a little bit more challenge to your gameplay!
+
+### Other Commands
+
+To run a lint operation (that is, scan your code for errors) use this shortcut command:
+
+```powershell
+   npm run lint
+```
+
+To auto-fix lint issues, you can use this:
+
+```powershell
+   npm run lint -- --fix
+```
+
+To create an addon file you can share, run:
+
+```powershell
+   npm run mcaddon
+```
 
 ### Summary
 

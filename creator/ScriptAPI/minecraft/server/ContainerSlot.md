@@ -157,6 +157,8 @@ Clears all dynamic properties that have been set on this item stack.
 getCanDestroy(): string[]
 `
 
+Returns whether the item within this container slot can be destroyed. 
+
 **Returns** *string*[]
 
 > [!WARNING]
@@ -168,6 +170,8 @@ getCanDestroy(): string[]
 `
 getCanPlaceOn(): string[]
 `
+
+Returns if the item in this container slot can be placed on.
 
 **Returns** *string*[]
 
@@ -269,6 +273,8 @@ Returns all tags for the item in the slot.
 `
 hasItem(): boolean
 `
+
+Returns true if this slot has an item.
 
 **Returns** *boolean*
 

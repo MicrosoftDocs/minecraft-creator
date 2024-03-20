@@ -3,22 +3,25 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/server.EntityType Class
-description: Contents of the @minecraft/server.EntityType class.
+title: minecraft/server.BlockComponentStepOffEvent Class
+description: Contents of the @minecraft/server.BlockComponentStepOffEvent class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# EntityType Class
+# BlockComponentStepOffEvent Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Represents information about a type of entity.
+## Extends
+- [*BlockEvent*](BlockEvent.md)
+
+Contains information regarding an entity stepping off a specific block.
 
 ## Properties
 
-### **id**
-`read-only id: string;`
+### **entity**
+`read-only entity?: Entity;`
 
-Identifier of this entity type - for example, 'minecraft:skeleton'.
+The entity that stepped off the block.
 
-Type: *string*
+Type: [*Entity*](Entity.md)

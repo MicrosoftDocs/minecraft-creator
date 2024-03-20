@@ -403,10 +403,18 @@ Returns the current weather.
 playSound(soundId: string, location: Vector3, soundOptions?: WorldSoundOptions): void
 `
 
+Plays a sound within the dimension for all players that are close to the sound.
+
 #### **Parameters**
 - **soundId**: *string*
+  
+  Identifier of the sound.
 - **location**: [*Vector3*](Vector3.md)
+  
+  Location of the sound.
 - **soundOptions**?: [*WorldSoundOptions*](WorldSoundOptions.md) = `null`
+  
+  Additional options for configuring additional effects for the sound.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -526,7 +534,7 @@ Sets the current weather within the dimension
 
 ### **spawnEntity**
 `
-spawnEntity(identifier: string, location: Vector3): Entity
+spawnEntity(identifier: string, location: Vector3, options?: SpawnEntityOptions): Entity
 `
 
 Creates a new entity (e.g., a mob) at the specified location.
@@ -538,6 +546,7 @@ Creates a new entity (e.g., a mob) at the specified location.
 - **location**: [*Vector3*](Vector3.md)
   
   The location at which to create the entity.
+- **options**?: [*SpawnEntityOptions*](SpawnEntityOptions.md) = `null`
 
 **Returns** [*Entity*](Entity.md) - Newly created entity at the specified location.
 

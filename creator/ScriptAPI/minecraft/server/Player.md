@@ -147,12 +147,16 @@ Type: *number*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [isOp](#isop)
 ::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [playMusic](#playmusic)
+::: moniker-end
 - [playSound](#playsound)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [postClientMessage](#postclientmessage)
 ::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [queueMusic](#queuemusic)
+::: moniker-end
 - [resetLevel](#resetlevel)
 - [sendMessage](#sendmessage)
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -168,7 +172,9 @@ Type: *number*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [startItemCooldown](#startitemcooldown)
 ::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [stopMusic](#stopmusic)
+::: moniker-end
 
 ### **addExperience**
 `
@@ -240,6 +246,8 @@ Eats an item, providing the item's hunger and saturation effects to the player. 
 `
 getGameMode(): GameMode
 `
+
+Retrieves the active gamemode for this player, if specified.
 
 **Returns** [*GameMode*](GameMode.md)
 
@@ -313,6 +321,7 @@ Returns true if this player has operator-level permissions.
 > This function can throw errors.
 ::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **playMusic**
 `
 playMusic(trackId: string, musicOptions?: MusicOptions): void
@@ -328,11 +337,15 @@ Plays a music track that only this particular player can hear.
   
   Additional options for the music track.
 
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end
 
 ### **playSound**
 `
@@ -375,6 +388,7 @@ This is an internal-facing method for posting a system message to downstream cli
 > This function can throw errors.
 ::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **queueMusic**
 `
 queueMusic(trackId: string, musicOptions?: MusicOptions): void
@@ -390,6 +404,9 @@ Queues an additional music track that only this particular player can hear. If a
   
   Additional options for the music track.
 
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
@@ -401,6 +418,7 @@ Queues an additional music track that only this particular player can hear. If a
 > An error will be thrown if fade is less than 0.0.
 >
 > 
+::: moniker-end
 
 ### **resetLevel**
 `
@@ -467,12 +485,12 @@ function sendPlayerMessages(player: Player) {
 setGameMode(gameMode?: GameMode): void
 `
 
-Sets a specific game-mode for this player. Note that changing the gamemode can have broader impacts on the world - so even calling player.setGameMode(player.gameMode) can result in changes within the world.
+Sets a gamemode override for this player. 
 
 #### **Parameters**
 - **gameMode**?: [*GameMode*](GameMode.md) = `null`
   
-  If set to undefined, this will reset the player to inheriting the default gamemode for the world.
+  Active gamemode.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -606,6 +624,7 @@ Sets the item cooldown time for a particular cooldown category.
 > This function can throw errors.
 ::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **stopMusic**
 `
 stopMusic(): void
@@ -613,8 +632,12 @@ stopMusic(): void
 
 Stops any music tracks from playing for this particular player.
 
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end

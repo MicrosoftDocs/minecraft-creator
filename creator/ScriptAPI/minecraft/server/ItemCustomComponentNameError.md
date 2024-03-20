@@ -3,13 +3,16 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/server.WorldInitializeAfterEvent Class
-description: Contents of the @minecraft/server.WorldInitializeAfterEvent class.
+title: .ItemCustomComponentNameError Class
+description: Contents of the .ItemCustomComponentNameError class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# WorldInitializeAfterEvent Class
+# ItemCustomComponentNameError Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Contains information and methods that can be used at the initialization of the scripting environment for a World.
+## Extends
+- *Error*
+
+Thrown when trying to register an item custom component with an invalid namespace.

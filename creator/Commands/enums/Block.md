@@ -44,10 +44,6 @@ Piston Arm Collision
 Piston Arm Collision
 - `minecraft:waxed_oxidized_chiseled_copper`
 - `waxed_oxidized_chiseled_copper`
-- `minecraft:coral_fan_dead`
-Dead Coral Fan
-- `coral_fan_dead`
-Dead Coral Fan
 - `minecraft:granite`
 - `granite`
 - `minecraft:blue_stained_glass_pane`
@@ -110,6 +106,8 @@ Crimson Wall Sign
 Crimson Wall Sign
 - `minecraft:yellow_stained_glass_pane`
 - `yellow_stained_glass_pane`
+- `minecraft:azure_bluet`
+- `azure_bluet`
 - `minecraft:beacon`
 Beacon
 - `beacon`
@@ -160,6 +158,8 @@ Calcite
 Stripped Dark Oak Log
 - `stripped_dark_oak_log`
 Stripped Dark Oak Log
+- `minecraft:dead_bubble_coral_fan`
+- `dead_bubble_coral_fan`
 - `minecraft:jungle_log`
 - `jungle_log`
 - `minecraft:bubble_coral_fan`
@@ -174,6 +174,8 @@ Sculk Shrieker
 - `orange_stained_glass_pane`
 - `minecraft:gray_carpet`
 - `gray_carpet`
+- `minecraft:lily_of_the_valley`
+- `lily_of_the_valley`
 - `minecraft:lime_glazed_terracotta`
 Lime Glazed Terracotta
 - `lime_glazed_terracotta`
@@ -182,6 +184,8 @@ Lime Glazed Terracotta
 Trapdoor
 - `trapdoor`
 Trapdoor
+- `minecraft:dead_brain_coral_fan`
+- `dead_brain_coral_fan`
 - `minecraft:seagrass`
 Seagrass
 - `seagrass`
@@ -336,6 +340,8 @@ Deepslate Tile Double Slab
 Raw Gold block
 - `raw_gold_block`
 Raw Gold block
+- `minecraft:allium`
+- `allium`
 - `minecraft:white_shulker_box`
 - `white_shulker_box`
 - `minecraft:copper_grate`
@@ -740,10 +746,6 @@ Cobblestone
 - `yellow_concrete`
 - `minecraft:cyan_carpet`
 - `cyan_carpet`
-- `minecraft:red_flower`
-Red Flower
-- `red_flower`
-Red Flower
 - `minecraft:oak_double_slab`
 - `oak_double_slab`
 - `minecraft:smooth_sandstone_stairs`
@@ -820,6 +822,8 @@ Smithing Table
 Smithing Table
 - `minecraft:weathered_copper_grate`
 - `weathered_copper_grate`
+- `minecraft:poppy`
+- `poppy`
 - `minecraft:tuff_brick_slab`
 - `tuff_brick_slab`
 - `minecraft:green_wool`
@@ -936,6 +940,8 @@ Detector Rail
 Monster Egg
 - `monster_egg`
 Monster Egg
+- `minecraft:blue_orchid`
+- `blue_orchid`
 - `minecraft:green_stained_glass_pane`
 - `green_stained_glass_pane`
 - `minecraft:polished_granite_stairs`
@@ -1052,6 +1058,8 @@ Redstone Ore
 Nether Brick Fence
 - `nether_brick_fence`
 Nether Brick Fence
+- `minecraft:pink_tulip`
+- `pink_tulip`
 - `minecraft:oak_slab`
 - `oak_slab`
 - `minecraft:deepslate_tile_slab`
@@ -1242,6 +1250,8 @@ Smooth Stone
 - `gray_terracotta`
 - `minecraft:oxidized_copper_trapdoor`
 - `oxidized_copper_trapdoor`
+- `minecraft:white_tulip`
+- `white_tulip`
 - `minecraft:lime_concrete`
 - `lime_concrete`
 - `minecraft:black_candle_cake`
@@ -1432,6 +1442,8 @@ Shroomlight
 Shroomlight
 - `minecraft:bamboo_fence_gate`
 - `bamboo_fence_gate`
+- `minecraft:cornflower`
+- `cornflower`
 - `minecraft:chiseled_polished_blackstone`
 Chiseled Polished Blackstone
 - `chiseled_polished_blackstone`
@@ -2240,6 +2252,8 @@ Purple Candle Cake
 Web
 - `web`
 Web
+- `minecraft:dead_tube_coral_fan`
+- `dead_tube_coral_fan`
 - `minecraft:polished_diorite_stairs`
 Polished Diorite Stairs
 - `polished_diorite_stairs`
@@ -2254,6 +2268,8 @@ Crying Obsidian
 Crying Obsidian
 - `minecraft:lime_carpet`
 - `lime_carpet`
+- `minecraft:dead_fire_coral_fan`
+- `dead_fire_coral_fan`
 - `minecraft:decorated_pot`
 - `decorated_pot`
 - `minecraft:enchanting_table`
@@ -2268,6 +2284,8 @@ Polished Blackstone Wall
 Waxed Exposed Double Cut Copper Slab
 - `waxed_exposed_double_cut_copper_slab`
 Waxed Exposed Double Cut Copper Slab
+- `minecraft:orange_tulip`
+- `orange_tulip`
 - `minecraft:brown_shulker_box`
 - `brown_shulker_box`
 - `minecraft:azalea`
@@ -2380,6 +2398,8 @@ Mangrove Button
 Mangrove Button
 - `minecraft:orange_carpet`
 - `orange_carpet`
+- `minecraft:dead_horn_coral_fan`
+- `dead_horn_coral_fan`
 - `minecraft:lantern`
 Lantern
 - `lantern`
@@ -2514,6 +2534,8 @@ Nether Brick
 Deepslate Iron Ore
 - `deepslate_iron_ore`
 Deepslate Iron Ore
+- `minecraft:oxeye_daisy`
+- `oxeye_daisy`
 - `minecraft:wheat`
 Wheat
 - `wheat`
@@ -2522,6 +2544,8 @@ Wheat
 Waxed Cut Copper
 - `waxed_cut_copper`
 Waxed Cut Copper
+- `minecraft:heavy_core`
+- `heavy_core`
 - `minecraft:cobbled_deepslate_slab`
 Cobbled Deepslate Slab
 - `cobbled_deepslate_slab`
@@ -2598,6 +2622,8 @@ Dark Prismarine Stairs
 - `chiseled_tuff_bricks`
 - `minecraft:light_blue_concrete`
 - `light_blue_concrete`
+- `minecraft:red_tulip`
+- `red_tulip`
 - `minecraft:trip_wire`
 Trip Wire
 - `trip_wire`
@@ -3084,6 +3110,14 @@ Sapling
 Coral Fan
 - `minecraft:coral_fan`
 Coral Fan
+- `coral_fan_dead`
+Dead Coral Fan
+- `minecraft:coral_fan_dead`
+Dead Coral Fan
+- `red_flower`
+Red Flower
+- `minecraft:red_flower`
+Red Flower
 - `lava_cauldron`
 Lava Cauldron
 - `minecraft:lava_cauldron`

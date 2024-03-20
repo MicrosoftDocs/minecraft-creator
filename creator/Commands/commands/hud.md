@@ -69,7 +69,7 @@ Visual representation of the players' ride element of the HUD.
 Enumeration for HUD visibility states.
 
 #### Values
-- `reset`
-Resets the HUD element visibility back to its default state (which is that HUD elements should be visible if no options are toggled in settings.)
 - `hide`
 Hides the HUD element.
+- `reset`
+Resets the HUD element visibility back to its default state (which is that HUD elements should be visible if no options are toggled in settings.)

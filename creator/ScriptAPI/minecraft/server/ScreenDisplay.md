@@ -185,9 +185,15 @@ Set the action bar text - a piece of text that displays beneath the title and ab
 setHudVisibility(visible: HudVisibility, hudElements?: HudElement[]): void
 `
 
+Sets visibility of a particular element of the heads up display (HUD).
+
 #### **Parameters**
 - **visible**: [*HudVisibility*](HudVisibility.md)
+  
+  Whether to set the HUD element to invisible, or to reset it back to its default.
 - **hudElements**?: [*HudElement*](HudElement.md)[] = `null`
+  
+  Optional list of HUD elements to configure visibility for.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

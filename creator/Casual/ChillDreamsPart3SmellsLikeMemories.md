@@ -2,7 +2,7 @@
 author: mammerla
 ms.author: mikeam
 title: Chill Dreams Add-On for Minecraft - Part 3 - Smells Like Memories
-description: Part 3 of Chill Dreams Add-On series covers adding custom items and wrapping up the first version of the Chill Dreams add-on
+description: Part 3 of Chill Dreams Add-On series covers adding custom items and wrapping up the first version of the Chill Dreams Add-On
 ms.service: minecraft-bedrock-edition
 ---
 
@@ -10,7 +10,7 @@ ms.service: minecraft-bedrock-edition
 
 _This article is part of a casual new series of articles focusing on building cool things in Minecraft for the fun of it. We hope you like them!_
 
-As discussed in [part 2](./ChillDreamsPart2MakingDreamsComeTrue.md), we've now got our basic Dream mode set up. But dreams aren't the same if they don't involve some of your memories. Don't you want your latest builds and cool spots that you've tracked to be in your dreams? Of course you do! In this third and final part of the Chill Dreams add-on series, I'm going to add a new system: Memories, which are used to track locales you've been to and that will serve as waypoints for dreams.
+As discussed in [part 2](./ChillDreamsPart2MakingDreamsComeTrue.md), we've now got our basic Dream mode set up. But dreams aren't the same if they don't involve some of your memories. Don't you want your latest builds and cool spots that you've tracked to be in your dreams? Of course you do! In this third and final part of the Chill Dreams Add-On series, I'm going to add a new system: Memories, which are used to track locales you've been to and that will serve as waypoints for dreams.
 
 You can get the sample from this project from [https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/). Note that there are subfolders for each part of this series - this is the final `complete` part.
 
@@ -36,9 +36,11 @@ There are a couple of downsides to using entities for static things:
 
 But we'll continue with memory jars as entities. To model the memory incense jar, I again used my trusty friend [BlockBench](../Documents/MinecraftEntityWizard.md) to design the visuals of the memory jar.
 
-In my case, I wanted to add something a little extra to my memory incense jar. I would love it if it had a little smokey effect. To support this, I added a behavior animation that simply runs a /particle command on a loop, every five seconds. Despite its name, a "behavior animation" doesn't really have to do with _visual animations_ per se; it provides a system for managing different events and actions that happen over the lifecycle of an entity. It gets its name because it re-uses a lot of the same semantics as [resource pack animations](../Documents/EntityModelingAndAnimation.md).
+In my case, I wanted to add something a little extra to my memory incense jar. I would love it if it had a little smokey effect. To support this, I added a behavior animation that simply runs a /particle command on a loop, every five seconds. 
 
-Behavior pack animations give us a simple way to add simple actions to your entity, like a firing a command, on a broader timeline in response to conditions. Here, within our `memory_jar` entity JSON, we have:
+Despite its name, a "behavior animation" doesn't really have to do with _visual animations_ per se; it provides a system for managing different events and actions that happen over the lifecycle of an entity. It gets its name because it re-uses a lot of the same semantics as [resource pack animations](../Documents/EntityModelingAndAnimation.md).
+
+Behavior pack animations give us a simple way to add simple actions to your entity, like firing a command, on a broader timeline in response to conditions. Here, within our `memory_jar` entity JSON, we have:
 
 ```json
       "scripts": {
@@ -55,7 +57,7 @@ Behavior pack animations give us a simple way to add simple actions to your enti
 
 _Note that we have an animation named ambient that is set to "1.0" - for always run_
 
-Then, within our animation file, we simply define a 5 second timeline that runs a command:
+Within our animation file, we simply define a 5 second timeline that runs a command:
 
 ```json
 {
@@ -72,7 +74,9 @@ Then, within our animation file, we simply define a 5 second timeline that runs 
 }
 ```
 
-I then re-used a custom smoke particle effect from the [particle samples](https://github.com/microsoft/minecraft-samples/tree/main/particles_examples_1.19) to design the smoke effect. With particles, it's worth thinking about them as actually two things: a _particle emitter_ where you configure the parameters of how small particles are generated, and the _particles_ themselves: the actual look and feel and motion (this case, swirling smoke puffs). I tweaked some of the emitter variables and particle effect articles. You can read more about how to build particle effects - in part using a tool called Snowstorm - [from this article](../Documents/ParticleEffects.md).
+I then re-used a custom smoke particle effect from the [particle samples](https://github.com/microsoft/minecraft-samples/tree/main/particles_examples_1.19) to design the smoke effect.
+
+With particles, it's worth thinking about them as actually two things: a _particle emitter_ where you configure the parameters of how small particles are generated, and the _particles_ themselves: the actual look and feel and motion (this case, swirling smoke puffs). I tweaked some of the emitter variables and particle effect articles. You can read more about how to build particle effects - in part using a tool called Snowstorm - [from this article](../Documents/ParticleEffects.md).
 
 Be careful not to get too carried away with many entities with many animations that run commands... they could slow down the players' experience.
 
@@ -82,7 +86,11 @@ _Ooof, in my first experience, it puts out a lot of smoke! But I kind-of like ho
 
 ## Dream Journal & Pencil
 
-Next, I wanted to create a dream journal and a dream journal pencil. These are _custom items_. You can see more about how to build different types of custom items via [a three part series that starts here](../Documents/AddCustomDieBlock.md). I used some samples from [github.com/microsoft/minecraft-samples/custom_items](https://github.com/microsoft/minecraft-samples/tree/main/custom_items) as starters – in particular the items that have models associated with them (crown and wrench) as our inspiration. Ultimately, our goal here is that when these items are used, it will fire some script events. Then, with the script, we can implement custom experiences for our dream.
+Next, I wanted to create a dream journal and a dream journal pencil. These are _custom items_. You can see more about how to build different types of custom items via [a three part series that starts here](../Documents/AddCustomDieBlock.md). 
+
+I used some samples from [github.com/microsoft/minecraft-samples/custom_items](https://github.com/microsoft/minecraft-samples/tree/main/custom_items) as starters – in particular the items that have models associated with them (crown and wrench) as our inspiration. 
+
+Ultimately, our goal here is that when these items are used, it will fire some script events. Then, with the script, we can implement custom experiences for our dream.
 
 The Dream Journal and Dream Journal Pencil both have 3D models, to make using them more visual. Again, I modeled these using BlockBench.
 
@@ -107,7 +115,7 @@ function afterItemUse(event: ItemUseAfterEvent) {
 world.afterEvents.itemUse.subscribe(afterItemUse);
 ```
 
-When the Dream Journal Pencil is used, we "ensure" that there is a nearby memory jar. When I say ensure, I mean the pattern of: get the nearby memory jar if it's there, or create one and return it if not.
+When the Dream Journal Pencil is used, we "ensure" that there is a nearby memory jar. When I say ensure, I mean the pattern of: **get the nearby memory jar if it's there, or create one and return it if not**.
 
 To find the nearby memory pot, I first check to see if a player is looking at a memory jar:
 
@@ -162,7 +170,7 @@ Here it's also important to note that we're going to build out a data structure 
 
 This makes it easy to always discover where the memories are when a dream sequence starts; I don't need to be bound to whether the memory entities are actually loaded by Minecraft or not.
 
-For the Dream Journal implementation, I essentially pop up a server-ui dialog listing all of the Memory locations. I added button(s) that can immediately transport the player back to their memory. This is.. an interesting and controversial design because it hugely changes the dynamic of Minecraft if you can easily transport amongst locations. Maybe I should take it out? Probably.
+For the Dream Journal implementation, I essentially pop up a server-ui dialog listing all of the Memory locations. I added button(s) that can immediately transport the player back to their memory. This is... an interesting and controversial design because it hugely changes the dynamic of Minecraft if you can easily transport amongst locations. Maybe I should take it out? Probably.
 
 To delete a memory, you would simply destroy the memory jar (and remember: memory jars are _entities_, so you have to destroy it.) You can track when the memory jar is destroyed with the `entityDie` after event:
 
@@ -207,8 +215,8 @@ I then made it optional to navigate amongst the completely random parts in the w
 
 ## Summary and Conclusions
 
-In this three-part series, I've talked about how I built an add-on that adds a number of interesting new dynamics to Minecraft, primarily featuring dream sequences that can also act as a screensaver for all of the beauty of Minecraft. There are still many many bugs to fix and features to add (foreshadowing?), but it works well enough to get a Minecraft screensaver going.
+In this three-part series, I've talked about how I built an  Add-On that adds a number of interesting new dynamics to Minecraft, primarily featuring dream sequences that can also act as a screensaver for all of the beauty of Minecraft. There are still many many bugs to fix and features to add (foreshadowing?), but it works well enough to get a Minecraft screensaver going.
 
 ![Animation of the Start of a Dream Sequence](./Media/DreamStart.gif)
 
-Hopefully in reading this series you've picked up some design pointers or code snippets you can look at that might make for useful ideas in the elements you create. Add-Ons in the marketplace complement the set of Add-Ons that creators like you have been sharing in the community for many years now; I hope you feel inspired to try or even implement your own dream add-ons!
+Hopefully in reading this series you've picked up some design pointers or code snippets you can look at that might make for useful ideas in the elements you create. Add-Ons in the marketplace complement the set of Add-Ons that creators like you have been sharing in the community for many years now; I hope you feel inspired to try or even implement your own dream  Add-Ons!

@@ -5,8 +5,12 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .BlockComponentTypes Enumeration
 description: Contents of the .BlockComponentTypes enumeration.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockComponentTypes Enumeration
+
+> [!CAUTION]
+> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Constants
 ### **Inventory**
