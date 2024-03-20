@@ -16,13 +16,12 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "1.10.0"
+    "version": "1.9.0"
 }
 ```
 
 ## Available Versions
 - `1.11.0-beta`
-- `1.10.0`
 - `1.9.0`
 - `1.8.0`
 - `1.7.0`
@@ -83,8 +82,16 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BiomeTypes](BiomeTypes.md)
 - [Block](Block.md)
 - [BlockComponent](BlockComponent.md)
+- [BlockComponentEntityFallOnEvent](BlockComponentEntityFallOnEvent.md)
+- [BlockComponentOnPlaceEvent](BlockComponentOnPlaceEvent.md)
+- [BlockComponentPlayerDestroyEvent](BlockComponentPlayerDestroyEvent.md)
+- [BlockComponentPlayerInteractEvent](BlockComponentPlayerInteractEvent.md)
+- [BlockComponentPlayerPlaceBeforeEvent](BlockComponentPlayerPlaceBeforeEvent.md)
 - [BlockComponentRandomTickEvent](BlockComponentRandomTickEvent.md)
+- [BlockComponentRegistry](BlockComponentRegistry.md)
+- [BlockComponentStepOffEvent](BlockComponentStepOffEvent.md)
 - [BlockComponentStepOnEvent](BlockComponentStepOnEvent.md)
+- [BlockComponentTickEvent](BlockComponentTickEvent.md)
 - [BlockEvent](BlockEvent.md)
 - [BlockExplodeAfterEvent](BlockExplodeAfterEvent.md)
 - [BlockExplodeAfterEventSignal](BlockExplodeAfterEventSignal.md)
@@ -101,7 +108,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BlockStates](BlockStates.md)
 - [BlockStateType](BlockStateType.md)
 - [BlockType](BlockType.md)
-- [BlockTypeRegistry](BlockTypeRegistry.md)
 - [BlockTypes](BlockTypes.md)
 - [BlockVolume](BlockVolume.md)
 - [BlockVolumeBase](BlockVolumeBase.md)
@@ -245,6 +251,8 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ItemCompleteUseAfterEvent](ItemCompleteUseAfterEvent.md)
 - [ItemCompleteUseAfterEventSignal](ItemCompleteUseAfterEventSignal.md)
 - [ItemComponent](ItemComponent.md)
+- [ItemComponentRegistry](ItemComponentRegistry.md)
+- [ItemComponentUseEvent](ItemComponentUseEvent.md)
 - [ItemCooldownComponent](ItemCooldownComponent.md)
 - [ItemDurabilityComponent](ItemDurabilityComponent.md)
 - [ItemEnchantableComponent](ItemEnchantableComponent.md)
@@ -389,6 +397,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ExplosionOptions](ExplosionOptions.md)
 - [GreaterThanComparison](GreaterThanComparison.md)
 - [GreaterThanOrEqualsComparison](GreaterThanOrEqualsComparison.md)
+- [ItemCustomComponent](ItemCustomComponent.md)
 - [LessThanComparison](LessThanComparison.md)
 - [LessThanOrEqualsComparison](LessThanOrEqualsComparison.md)
 - [MusicOptions](MusicOptions.md)
@@ -404,9 +413,9 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [RGBA](RGBA.md)
 - [ScoreboardObjectiveDisplayOptions](ScoreboardObjectiveDisplayOptions.md)
 - [ScriptEventMessageFilterOptions](ScriptEventMessageFilterOptions.md)
+- [SpawnEntityOptions](SpawnEntityOptions.md)
 - [StructureCreateOptions](StructureCreateOptions.md)
 - [StructurePlaceOptions](StructurePlaceOptions.md)
-- [StructureReadOptions](StructureReadOptions.md)
 - [TeleportOptions](TeleportOptions.md)
 - [TitleDisplayOptions](TitleDisplayOptions.md)
 - [Vector2](Vector2.md)
@@ -420,6 +429,11 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EnchantmentTypeUnknownIdError](EnchantmentTypeUnknownIdError.md)
 - [InvalidContainerSlotError](InvalidContainerSlotError.md)
 - [InvalidStructureError](InvalidStructureError.md)
+- [ItemCustomComponentAlreadyRegisteredError](ItemCustomComponentAlreadyRegisteredError.md)
+- [ItemCustomComponentNameError](ItemCustomComponentNameError.md)
+- [ItemCustomComponentReloadNewComponentError](ItemCustomComponentReloadNewComponentError.md)
+- [ItemCustomComponentReloadNewEventError](ItemCustomComponentReloadNewEventError.md)
+- [ItemCustomComponentReloadVersionError](ItemCustomComponentReloadVersionError.md)
 - [LocationInUnloadedChunkError](LocationInUnloadedChunkError.md)
 - [LocationOutOfWorldBoundariesError](LocationOutOfWorldBoundariesError.md)
 - [UnloadedChunksError](UnloadedChunksError.md)

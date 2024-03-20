@@ -8,7 +8,7 @@ description: Contents of the .CursorControlMode enumeration.
 ---
 # CursorControlMode Enumeration
 
-An enumeration used by the 3D block cursor @minecraft/server-editor-bindings.Cursor
+An enumeration used by the 3D block cursor [*@minecraft/server-editor.Cursor*](../../minecraft/server-editor/Cursor.md)
 
 ## Constants
 ### **Keyboard**

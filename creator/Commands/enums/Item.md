@@ -36,10 +36,6 @@ Warped Door
 - `bamboo_block`
 - `minecraft:waxed_oxidized_chiseled_copper`
 - `waxed_oxidized_chiseled_copper`
-- `minecraft:coral_fan_dead`
-Coral Fan Dead
-- `coral_fan_dead`
-Coral Fan Dead
 - `minecraft:granite`
 - `granite`
 - `minecraft:blue_stained_glass_pane`
@@ -86,6 +82,8 @@ Spruce Stairs
 - `yellow_wool`
 - `minecraft:yellow_stained_glass_pane`
 - `yellow_stained_glass_pane`
+- `minecraft:azure_bluet`
+- `azure_bluet`
 - `minecraft:beacon`
 Beacon
 - `beacon`
@@ -132,6 +130,8 @@ Calcite
 Stripped Dark Oak Log
 - `stripped_dark_oak_log`
 Stripped Dark Oak Log
+- `minecraft:dead_bubble_coral_fan`
+- `dead_bubble_coral_fan`
 - `minecraft:jungle_log`
 - `jungle_log`
 - `minecraft:bubble_coral_fan`
@@ -146,6 +146,8 @@ Sculk Shrieker
 - `orange_stained_glass_pane`
 - `minecraft:gray_carpet`
 - `gray_carpet`
+- `minecraft:lily_of_the_valley`
+- `lily_of_the_valley`
 - `minecraft:lime_glazed_terracotta`
 Lime Glazed Terracotta
 - `lime_glazed_terracotta`
@@ -154,6 +156,8 @@ Lime Glazed Terracotta
 Trapdoor
 - `trapdoor`
 Trapdoor
+- `minecraft:dead_brain_coral_fan`
+- `dead_brain_coral_fan`
 - `minecraft:seagrass`
 Seagrass
 - `seagrass`
@@ -294,6 +298,8 @@ Oxidized Cut Copper Stairs
 Raw Gold Block
 - `raw_gold_block`
 Raw Gold Block
+- `minecraft:allium`
+- `allium`
 - `minecraft:white_shulker_box`
 - `white_shulker_box`
 - `minecraft:copper_grate`
@@ -644,10 +650,6 @@ Cobblestone
 - `yellow_concrete`
 - `minecraft:cyan_carpet`
 - `cyan_carpet`
-- `minecraft:red_flower`
-Red Flower
-- `red_flower`
-Red Flower
 - `minecraft:smooth_sandstone_stairs`
 Smooth Sandstone Stairs
 - `smooth_sandstone_stairs`
@@ -710,6 +712,8 @@ Smithing Table
 Smithing Table
 - `minecraft:weathered_copper_grate`
 - `weathered_copper_grate`
+- `minecraft:poppy`
+- `poppy`
 - `minecraft:tuff_brick_slab`
 - `tuff_brick_slab`
 - `minecraft:green_wool`
@@ -808,6 +812,8 @@ Detector Rail
 Monster Egg
 - `monster_egg`
 Monster Egg
+- `minecraft:blue_orchid`
+- `blue_orchid`
 - `minecraft:green_stained_glass_pane`
 - `green_stained_glass_pane`
 - `minecraft:polished_granite_stairs`
@@ -910,6 +916,8 @@ Redstone Ore
 Nether Brick Fence
 - `nether_brick_fence`
 Nether Brick Fence
+- `minecraft:pink_tulip`
+- `pink_tulip`
 - `minecraft:oak_slab`
 - `oak_slab`
 - `minecraft:deepslate_tile_slab`
@@ -1076,6 +1084,8 @@ Smooth Stone
 - `gray_terracotta`
 - `minecraft:oxidized_copper_trapdoor`
 - `oxidized_copper_trapdoor`
+- `minecraft:white_tulip`
+- `white_tulip`
 - `minecraft:lime_concrete`
 - `lime_concrete`
 - `minecraft:red_mushroom`
@@ -1234,6 +1244,8 @@ Shroomlight
 Shroomlight
 - `minecraft:bamboo_fence_gate`
 - `bamboo_fence_gate`
+- `minecraft:cornflower`
+- `cornflower`
 - `minecraft:chiseled_polished_blackstone`
 Chiseled Polished Blackstone
 - `chiseled_polished_blackstone`
@@ -1922,6 +1934,8 @@ TNT
 Web
 - `web`
 Web
+- `minecraft:dead_tube_coral_fan`
+- `dead_tube_coral_fan`
 - `minecraft:polished_diorite_stairs`
 Polished Diorite Stairs
 - `polished_diorite_stairs`
@@ -1936,6 +1950,8 @@ Crying Obsidian
 Crying Obsidian
 - `minecraft:lime_carpet`
 - `lime_carpet`
+- `minecraft:dead_fire_coral_fan`
+- `dead_fire_coral_fan`
 - `minecraft:decorated_pot`
 - `decorated_pot`
 - `minecraft:enchanting_table`
@@ -1946,6 +1962,8 @@ Enchanting Table
 Polished Blackstone Wall
 - `polished_blackstone_wall`
 Polished Blackstone Wall
+- `minecraft:orange_tulip`
+- `orange_tulip`
 - `minecraft:brown_shulker_box`
 - `brown_shulker_box`
 - `minecraft:azalea`
@@ -2044,6 +2062,8 @@ Mangrove Button
 Mangrove Button
 - `minecraft:orange_carpet`
 - `orange_carpet`
+- `minecraft:dead_horn_coral_fan`
+- `dead_horn_coral_fan`
 - `minecraft:lantern`
 Lantern
 - `lantern`
@@ -2160,6 +2180,8 @@ Nether Brick
 Deepslate Iron Ore
 - `deepslate_iron_ore`
 Deepslate Iron Ore
+- `minecraft:oxeye_daisy`
+- `oxeye_daisy`
 - `minecraft:wheat`
 Wheat
 - `wheat`
@@ -2168,6 +2190,8 @@ Wheat
 Waxed Cut Copper
 - `waxed_cut_copper`
 Waxed Cut Copper
+- `minecraft:heavy_core`
+- `heavy_core`
 - `minecraft:cobbled_deepslate_slab`
 Cobbled Deepslate Slab
 - `cobbled_deepslate_slab`
@@ -2228,6 +2252,8 @@ Dark Prismarine Stairs
 - `chiseled_tuff_bricks`
 - `minecraft:light_blue_concrete`
 - `light_blue_concrete`
+- `minecraft:red_tulip`
+- `red_tulip`
 - `minecraft:cauldron`
 Cauldron
 - `cauldron`
@@ -2608,6 +2634,14 @@ Sapling
 Coral Fan
 - `minecraft:coral_fan`
 Coral Fan
+- `coral_fan_dead`
+Coral Fan Dead
+- `minecraft:coral_fan_dead`
+Coral Fan Dead
+- `red_flower`
+Red Flower
+- `minecraft:red_flower`
+Red Flower
 - `minecraft:chicken`
 Chicken
 - `chicken`
@@ -3409,6 +3443,8 @@ Bow
 Crossbow
 - `crossbow`
 Crossbow
+- `minecraft:mace`
+- `mace`
 - `minecraft:shield`
 Shield
 - `shield`
@@ -3877,6 +3913,8 @@ Fire Charge
 Blaze Rod
 - `blaze_rod`
 Blaze Rod
+- `minecraft:breeze_rod`
+- `breeze_rod`
 - `minecraft:blaze_powder`
 Blaze Powder
 - `blaze_powder`
@@ -4055,6 +4093,10 @@ Piglin Banner Pattern
 Globe Banner Pattern
 - `globe_banner_pattern`
 Globe Banner Pattern
+- `minecraft:flow_banner_pattern`
+- `flow_banner_pattern`
+- `minecraft:guster_banner_pattern`
+- `guster_banner_pattern`
 - `minecraft:angler_pottery_sherd`
 - `angler_pottery_sherd`
 - `minecraft:archer_pottery_sherd`
@@ -4071,8 +4113,12 @@ Globe Banner Pattern
 - `danger_pottery_sherd`
 - `minecraft:explorer_pottery_sherd`
 - `explorer_pottery_sherd`
+- `minecraft:flow_pottery_sherd`
+- `flow_pottery_sherd`
 - `minecraft:friend_pottery_sherd`
 - `friend_pottery_sherd`
+- `minecraft:guster_pottery_sherd`
+- `guster_pottery_sherd`
 - `minecraft:heart_pottery_sherd`
 - `heart_pottery_sherd`
 - `minecraft:heartbreak_pottery_sherd`
@@ -4087,6 +4133,8 @@ Globe Banner Pattern
 - `plenty_pottery_sherd`
 - `minecraft:prize_pottery_sherd`
 - `prize_pottery_sherd`
+- `minecraft:scrape_pottery_sherd`
+- `scrape_pottery_sherd`
 - `minecraft:sheaf_pottery_sherd`
 - `sheaf_pottery_sherd`
 - `minecraft:shelter_pottery_sherd`
@@ -4129,6 +4177,10 @@ Globe Banner Pattern
 - `eye_armor_trim_smithing_template`
 - `minecraft:spire_armor_trim_smithing_template`
 - `spire_armor_trim_smithing_template`
+- `minecraft:flow_armor_trim_smithing_template`
+- `flow_armor_trim_smithing_template`
+- `minecraft:bolt_armor_trim_smithing_template`
+- `bolt_armor_trim_smithing_template`
 - `minecraft:firework_rocket`
 Firework Rocket
 - `firework_rocket`

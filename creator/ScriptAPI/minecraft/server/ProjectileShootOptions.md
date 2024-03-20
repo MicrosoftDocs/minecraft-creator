@@ -5,8 +5,12 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ProjectileShootOptions Interface
 description: Contents of the @minecraft/server.ProjectileShootOptions class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ProjectileShootOptions Interface
+
+> [!CAUTION]
+> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Properties
 

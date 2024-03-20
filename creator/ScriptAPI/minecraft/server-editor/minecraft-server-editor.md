@@ -27,6 +27,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
+- [BlockPaletteItemType](BlockPaletteItemType.md)
 - [CoreMenuType](CoreMenuType.md)
 - [CursorControlMode](CursorControlMode.md)
 - [CursorTargetMode](CursorTargetMode.md)
@@ -85,6 +86,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [ExtensionContext](ExtensionContext.md)
 - [ExtensionContextAfterEvents](ExtensionContextAfterEvents.md)
 - [GraphicsSettings](GraphicsSettings.md)
+- [IBlockPaletteItem](IBlockPaletteItem.md)
 - [LineWidget](LineWidget.md)
 - [Logger](Logger.md)
 - [MinecraftEditor](MinecraftEditor.md)
@@ -93,10 +95,12 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [PlaytestManager](PlaytestManager.md)
 - [PrimarySelectionChangeAfterEventSignal](PrimarySelectionChangeAfterEventSignal.md)
 - [PrimarySelectionChangedEvent](PrimarySelectionChangedEvent.md)
+- [ProbabilityBlockPaletteItem](ProbabilityBlockPaletteItem.md)
 - [Selection](Selection.md)
 - [SelectionEventAfterEvent](SelectionEventAfterEvent.md)
 - [SelectionManager](SelectionManager.md)
 - [SettingsManager](SettingsManager.md)
+- [SimpleBlockPaletteItem](SimpleBlockPaletteItem.md)
 - [SimulationState](SimulationState.md)
 - [TransactionManager](TransactionManager.md)
 - [UserDefinedTransactionHandle](UserDefinedTransactionHandle.md)

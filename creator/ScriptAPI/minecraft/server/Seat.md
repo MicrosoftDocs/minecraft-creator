@@ -43,3 +43,10 @@ Type: *number*
 Physical location of this seat, relative to the entity's location.
 
 Type: [*Vector3*](Vector3.md)
+
+### **seatRotation**
+`read-only seatRotation: number;`
+
+Angle in degrees to rotate riders by.
+
+Type: *number*

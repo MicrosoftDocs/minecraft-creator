@@ -17,6 +17,13 @@ Contains information and methods that can be used at the initialization of the s
 ## Properties
 
 ### **blockTypeRegistry**
-`read-only blockTypeRegistry: BlockTypeRegistry;`
+`read-only blockTypeRegistry: BlockComponentRegistry;`
 
-Type: [*BlockTypeRegistry*](BlockTypeRegistry.md)
+Type: [*BlockComponentRegistry*](BlockComponentRegistry.md)
+
+### **itemComponentRegistry**
+`read-only itemComponentRegistry: ItemComponentRegistry;`
+
+Provides the functionality for registering custom components for items.
+
+Type: [*ItemComponentRegistry*](ItemComponentRegistry.md)

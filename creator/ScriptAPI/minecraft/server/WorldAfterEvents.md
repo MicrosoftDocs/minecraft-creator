@@ -339,9 +339,14 @@ This event will be triggered when the weather changes within Minecraft.
 
 Type: [*WeatherChangeAfterEventSignal*](WeatherChangeAfterEventSignal.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **worldInitialize**
 `read-only worldInitialize: WorldInitializeAfterEventSignal;`
 
 This event fires when the script environment is initialized on a World.
 
 Type: [*WorldInitializeAfterEventSignal*](WorldInitializeAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end

@@ -443,17 +443,8 @@ Librarian entity schedules work
 Entity schedules work as a villager with a profession
 - `minecraft:scheduled`
 Entity action is scheduled
-- `minecraft:set_ashen_variant`
-- `minecraft:set_black_variant`
-- `minecraft:set_chestnut_variant`
-- `minecraft:set_pale_variant`
-- `minecraft:set_rusty_variant`
-- `minecraft:set_snowy_variant`
-- `minecraft:set_spotted_variant`
-- `minecraft:set_striped_variant`
 - `minecraft:set_trap`
 Entity sets a trap
-- `minecraft:set_woods_variant`
 - `minecraft:sink`
 Entity sinks
 - `minecraft:spawn_adult`
@@ -495,7 +486,17 @@ Entity spawns as a skilled adult
 - `minecraft:spawn_tame_adult`
 - `minecraft:spawn_tame_baby`
 - `minecraft:spawn_wild_adult`
+- `minecraft:spawn_wild_ashen`
 - `minecraft:spawn_wild_baby`
+- `minecraft:spawn_wild_baby_or_adult`
+- `minecraft:spawn_wild_black`
+- `minecraft:spawn_wild_chestnut`
+- `minecraft:spawn_wild_pale`
+- `minecraft:spawn_wild_rusty`
+- `minecraft:spawn_wild_snowy`
+- `minecraft:spawn_wild_spotted`
+- `minecraft:spawn_wild_striped`
+- `minecraft:spawn_wild_woods`
 - `minecraft:spawn_with_pillager_captain_rider`
 Entity spawns with a pillager captain rider
 - `minecraft:spawn_with_pillager_rider`

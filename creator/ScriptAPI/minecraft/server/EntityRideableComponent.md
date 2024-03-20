@@ -49,6 +49,16 @@ Type: *string*
 > [!WARNING]
 > This property can throw errors when used.
 
+### **passengerMaxWidth**
+`read-only passengerMaxWidth: number;`
+
+The max width a mob can be to be a passenger.
+
+Type: *number*
+
+> [!WARNING]
+> This property can throw errors when used.
+
 ### **pullInEntities**
 `read-only pullInEntities: boolean;`
 
