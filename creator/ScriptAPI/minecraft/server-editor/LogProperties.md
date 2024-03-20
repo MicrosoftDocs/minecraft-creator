@@ -10,7 +10,7 @@ description: Contents of the @minecraft/server-editor.LogProperties class.
 
 A properties class for the global instance of the logger object.
 
-While the logger object is available through the {@link @minecraft/server-editor-bindings.ExtensionContext} - using the global instance allows the creator to use this properties class to perform direct server->client messaging and broadcasts.
+While the logger object is available through the [*@minecraft/server-editor.ExtensionContext*](../../minecraft/server-editor/ExtensionContext.md) - using the global instance allows the creator to use this properties class to perform direct server->client messaging and broadcasts.
 
 ## Properties
 

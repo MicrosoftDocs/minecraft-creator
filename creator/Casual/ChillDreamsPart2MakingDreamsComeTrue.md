@@ -12,7 +12,7 @@ _This article is part of a casual new series of articles focusing on building co
 
 ![Animation of the Start of a Dream Sequence](./Media/DreamStart.gif)
 
-In [part 1 of our Chill Dreams Add-on series](./ChillDreamsPart1TheDreamTurkey.md), I covered the Chill-Dreams add-on as a "Minecraft Screen Saver.", how the screensaver mode is synonymous with "dreaming," and how dreams get started by eating the Dream Turkey. Now I need to make the dreams _happen_!
+In [part 1 of our Chill Dreams Add-on series](./ChillDreamsPart1TheDreamTurkey.md), I covered the Chill-Dreams  Add-On as a "Minecraft Screen Saver.", how the screensaver mode is synonymous with "dreaming," and how dreams get started by eating the Dream Turkey. Now I need to make the dreams _happen_!
 
 In this section I'll discuss how dreams are implemented, primarily via script. This section of the series will be fairly script-heavy - if you haven't written some script yet, check out this [JavaScript Introduction](../Documents/ScriptingIntroduction.md) and the more advanced [TypeScript tutorial](../Documents/ScriptingGettingStarted.md) to get started with scripting.
 
@@ -20,7 +20,7 @@ You can get the sample from this project from [https://github.com/microsoft/mine
 
 The first general concept is that dream modes should run like a "screensaver" - always showing something a little different. Dream mode shouldn't end until it's interrupted by the player – it can "run forever." A dream is implemented as an infinite set of "tracks," where each part runs for a couple of minutes before moving onto a new track. It works like Shuffle in a music player – playing amongst a set of "tracks" in a random manner.
 
-Each "track" then, is basically a small 1-3 minute flyover around part of the Minecraft terrain. You could imagine other ideas for different types of tracks – maybe just parking the camera statically outside of a village while villagers do their thing, or maybe even creating dream scene "set pieces" with spawned entities and mobs. But for now, let's just talk about the one kind of "track" that we implemented for this add-on: 1-3 minute flyovers and how they were built.
+Each "track" then, is basically a small 1-3 minute flyover around part of the Minecraft terrain. You could imagine other ideas for different types of tracks – maybe just parking the camera statically outside of a village while villagers do their thing, or maybe even creating dream scene "set pieces" with spawned entities and mobs. But for now, let's just talk about the one kind of "track" that we implemented for this Add-On: 1-3 minute flyovers and how they were built.
 
 To start with, the dream mode will just generate random points within 800 blocks of the players' spawn point. Then, we'll see if we can generate a shuffle playlist of tracks around those random 'reference points'.
 
@@ -28,9 +28,9 @@ To start with, the dream mode will just generate random points within 800 blocks
 
 The biggest obstacle in making fly-overs across random parts of the world work effectively is to understand that Minecraft tries very hard to only load terrain and mobs around active players, for the sake of efficiency. This is why, for example, with Minecraft Scripting APIs you can't really access blocks 1000 blocks away from any loaded player and expect it to return results (`dimension.getBlock` will return `undefined` to signify _unloaded_.) Similarly, something like Minecraft's new [Camera Command feature](../Documents/CameraCommandIntroduction.md) – which seems like a natural choice for the screensaver – suffers from the same problem: when it's far-flung from any active player, it won't work quite right because the terrain around the camera won't get loaded.
 
-There is a feature called [Ticking Areas](../Documents/TickingAreaCommand.md) which can help by asynchronously force-loading areas, but these come with some limitations: there is a max total of 10 ticking areas active for the entire world, and they can be a little hard to work with in their current command-only form. While it's common in many Minecraft worlds and add-ons to carefully and judiciously manage ticking areas to ensure that experiences load as expected, I'm not going to rely on them here – mostly for the sake of simplicity, and it would be a little 'rude' for an add-on to "take up" the precious set of ticking areas. I don't want my add-ons to be rude.
+There is a feature called [Ticking Areas](../Documents/TickingAreaCommand.md) which can help by asynchronously force-loading areas, but these come with some limitations: there is a max total of 10 ticking areas active for the entire world, and they can be a little hard to work with in their current command-only form. While it's common in many Minecraft worlds and Add-Ons to carefully and judiciously manage ticking areas to ensure that experiences load as expected, I'm not going to rely on them here – mostly for the sake of simplicity, and it would be a little 'rude' for an Add-On to "take up" the precious set of ticking areas. I don't want my Add-Ons to be rude.
 
-So how then do we move the player around? One idea that has been a part of Minecraft since the dawn of add-ons is "simply" to teleport the player every single tick, along the course of a track. 
+So how then do we move the player around? One idea that has been a part of Minecraft since the dawn of Add-Ons is "simply" to teleport the player every single tick, along the course of a track. 
 
 ```typescript
       const thisSegment = this.segments[activeSegmentIndex];
@@ -83,7 +83,7 @@ The broader algorithm we're using here has all kinds of problems, even with lots
 * Features like steep cliffsides can make the transitions very sharp.
 * The view frustum (that is, the cone-shaped perspective/view of all the stuff that is visible from your first-person view) – is generally "wider" than one block. Even if you've computed a great path from point to point, you'll still appear to collide with trees if they are one block off your chosen path.
 
-A future project might be to take the "terrain math" and spin it into a separate re-usable library, make it more nuanced against common Minecraft terrain types, and more advanced as well. It would be nice if the algorithm was flexible enough to do something beautiful when working underwater, as well as work in tight caves.  Making all this work in a way that deals with unpredictable load semantics adds a challenge.
+A future project might be to take the "terrain math" and spin it into a separate re-usable library, make it more nuanced against common Minecraft terrain types, and more advanced as well. It would be nice if the algorithm was flexible enough to do something beautiful when working underwater, as well as work in tight caves. Making all this work in a way that deals with unpredictable load semantics adds a challenge.
 
 In summary: we have an animation scheme that is serviceable, but still could be greatly improved.
 

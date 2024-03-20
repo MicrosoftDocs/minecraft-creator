@@ -3,23 +3,18 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/server.StructureReadOptions Interface
-description: Contents of the @minecraft/server.StructureReadOptions class.
+title: minecraft/server.SpawnEntityOptions Interface
+description: Contents of the @minecraft/server.SpawnEntityOptions class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# StructureReadOptions Interface
+# SpawnEntityOptions Interface
 
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Properties
 
-### **includeBlocks**
-`includeBlocks?: boolean;`
-
-Type: *boolean*
-
-### **includeEntities**
-`includeEntities?: boolean;`
+### **initialPersistence**
+`initialPersistence?: boolean;`
 
 Type: *boolean*

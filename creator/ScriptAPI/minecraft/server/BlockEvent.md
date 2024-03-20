@@ -9,8 +9,15 @@ description: Contents of the @minecraft/server.BlockEvent class.
 # BlockEvent Class
 
 ## Classes that extend BlockEvent
+- [*BlockComponentEntityFallOnEvent*](BlockComponentEntityFallOnEvent.md)
+- [*BlockComponentOnPlaceEvent*](BlockComponentOnPlaceEvent.md)
+- [*BlockComponentPlayerDestroyEvent*](BlockComponentPlayerDestroyEvent.md)
+- [*BlockComponentPlayerInteractEvent*](BlockComponentPlayerInteractEvent.md)
+- [*BlockComponentPlayerPlaceBeforeEvent*](BlockComponentPlayerPlaceBeforeEvent.md)
 - [*BlockComponentRandomTickEvent*](BlockComponentRandomTickEvent.md)
+- [*BlockComponentStepOffEvent*](BlockComponentStepOffEvent.md)
 - [*BlockComponentStepOnEvent*](BlockComponentStepOnEvent.md)
+- [*BlockComponentTickEvent*](BlockComponentTickEvent.md)
 - [*BlockExplodeAfterEvent*](BlockExplodeAfterEvent.md)
 - [*ButtonPushAfterEvent*](ButtonPushAfterEvent.md)
 - [*LeverActionAfterEvent*](LeverActionAfterEvent.md)
