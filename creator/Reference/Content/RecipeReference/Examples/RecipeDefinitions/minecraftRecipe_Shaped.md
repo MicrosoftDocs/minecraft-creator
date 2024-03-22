@@ -58,7 +58,7 @@ The `key` used in the pattern may be any single character except the 'space' cha
 
 ## Shaped Recipes with assume_symmetry Property Set
 
-`assume_symmetry` is an optional field.  If not set, it will default to `true`.  If it is set to true, then Minecraft will assume the symmetrical version of your recipe is valid when using the crafting table. By setting it to false, you can define mirrored versions of a recipe and have different results.
+`assume_symmetry` is an optional field.  If not set, it will default to `true`. By setting it to false, you can define mirrored versions of a recipe and have different results.
 
 ```json
 {
