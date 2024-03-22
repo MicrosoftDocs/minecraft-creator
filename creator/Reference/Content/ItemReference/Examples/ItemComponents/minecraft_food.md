@@ -30,14 +30,6 @@ See [Custom Item Use Priority](../ItemUsePriority.md) for more information on us
 "minecraft:food":{
     "can_always_eat": false,
     "nutrition" : 3,
-    "effects" : [
-          {
-            "name": "poison",
-            "chance": 1.0,
-            "duration": 5,
-            "amplifier": 0
-          }
-    ],
     "saturation_modifier": "normal",
     "using_converts_to": "bowl"
 }
@@ -51,33 +43,7 @@ See [Custom Item Use Priority](../ItemUsePriority.md) for more information on us
 "minecraft:food": {
   "nutrition": 4,
   "saturation_modifier": "supernatural",
-  "can_always_eat": true,
-  "effects": [
-    {
-      "name": "regeneration",
-      "chance": 1.0,
-      "duration": 30,
-      "amplifier": 4
-    },
-    {
-      "name": "absorption",
-      "chance": 1.0,
-      "duration": 120, // 2 * 60
-      "amplifier": 3
-    },
-    {
-      "name": "resistance", // damage resistance
-      "chance": 1.0,
-      "duration": 300,
-      "amplifier": 0
-    },
-    {
-      "name": "fire_resistance",
-      "chance": 1.0,
-      "duration": 300,
-      "amplifier": 0
-    }
-  ]
+  "can_always_eat": true
 }
 ```
 
