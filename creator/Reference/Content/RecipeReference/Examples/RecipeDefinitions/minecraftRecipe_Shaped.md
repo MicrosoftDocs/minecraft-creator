@@ -12,13 +12,14 @@ Represents a crafting recipe that is to be used with a crafting table. The key u
 
 ## Parameters
 
-|Name |Type| Description |
-|:-----------|:-----------|:-----------|
-|key| array of key and item pairs| Patten key character mapped to item names. |
-|pattern|String array| Characters that represent a pattern to be defined by keys. |
-|priority| Integer| Sets the priority order of the recipe. Lower numbers represent a higher priority. |
-|result| array of item names| When input items match the pattern then these items are the result. |
-|tags |String array| Item that can create the shaped recipe, such as "crafting_table". |
+|Name |Type| Default| Description |
+|:-----------|:-----------|------------|:-----------|
+|key| array of key and item pairs| N/A| Patten key character mapped to item names. |
+|pattern|String array|N/A| Characters that represent a pattern to be defined by keys. |
+|priority| Integer|N/A| Sets the priority order of the recipe. Lower numbers represent a higher priority. |
+|result| array of item names|N/A| When input items match the pattern then these items are the result. |
+|tags |String array| N/A | Item that can create the shaped recipe, such as "crafting_table". |
+|assume_symmetry| boolean| true| Used to automatically assume a symmetrical recipe should return the same result|
 
 ### key and pattern
 
@@ -50,6 +51,60 @@ The `key` used in the pattern may be any single character except the 'space' cha
     "result": {
         "item": "minecraft:boat",
         "data": 4
+        }
+    }
+}
+```
+
+## Shaped Recipes with assume_symmetry Property Set
+
+`assume_symmetry` is an optional field.  If not set, it will default to `true`. By setting it to false, you can define mirrored versions of a recipe and have different results.
+
+```json
+{
+"format_version": "1.19",
+"minecraft:recipe_shaped": {
+    "description": {
+        "identifier": "minecraft:zig"
+        },
+    "tags": [ "crafting_table" ],
+    "assume_symmetry": false,
+    "pattern": [
+        "##",
+        " ##"
+        ],
+    "key": {
+        "#": {
+            "item": "minecraft:planks"
+        }
+    },
+    "result": {
+        "item": "minecraft:zig"
+        }
+    }
+}
+```
+
+```json
+{
+"format_version": "1.20",
+"minecraft:recipe_shaped": {
+    "description": {
+        "identifier": "minecraft:zag"
+        },
+    "tags": [ "crafting_table" ],
+    "assume_symmetry": false,
+    "pattern": [
+        " ##",
+        "##"
+        ],
+    "key": {
+        "#": {
+            "item": "minecraft:planks"
+        }
+    },
+    "result": {
+        "item": "minecraft:zag"
         }
     }
 }
