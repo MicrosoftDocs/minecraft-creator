@@ -54,23 +54,6 @@ landingContent:
            - text: ItemStack Class
              url: minecraft/server/ItemStack.md
   # Card (optional)
-  - title: minecraft/server-editor
-    linkLists:
-      - linkListType: overview
-        links:
-           - text: Build Editor Extensions
-             url: ../Documents/EditorExtensionsIntroduction.md
-           - text: minecraft/server-editor Module
-             url: minecraft/server-editor/minecraft-server-editor.md
-      - linkListType: reference
-        links:
-           - text: ExtensionContext Class
-             url: minecraft/server-editor/extensioncontext.md
-           - text: SelectionManager Class
-             url: minecraft/server-editor/selectionmanager.md
-           - text: registerEditorExtension Function
-             url: minecraft/server-editor/minecraft-server-editor#registereditorextension
-  # Card (optional)
   - title: minecraft/server-ui
     linkLists:
       - linkListType: overview
@@ -85,16 +68,3 @@ landingContent:
              url: minecraft/server-ui/MessageFormData.md             
            - text: ModalFormData Class
              url: minecraft/server-ui/ModalFormData.md
-  # Card (optional)
-  - title: minecraft/server-gametest
-    linkLists:
-      - linkListType: overview
-        links:
-           - text: minecraft/server-gametest Module
-             url: minecraft/server-gametest/minecraft-server-gametest.md
-      - linkListType: reference
-        links:
-           - text: RegistrationBuilder Class
-             url: minecraft/server-gametest/RegistrationBuilder.md
-           - text: Test Class
-             url: minecraft/server-gametest/Test.md
