@@ -10,6 +10,10 @@ ms.service: minecraft-bedrock-edition
 
 `minecraft:geometry` is an `Identifier String` component that specifies the geometry description identifier to use to render this block. This identifier must match an existing geometry identifier in any of the currently loaded resource packs.
 
+## UV Rotation
+In version 1.20.80 and higher, your geometry model can use a new `uv_rotation` attribute, in 90 degeree increments,
+to adjust the rotation of how UV textures apply to cube faces. See [the 1.20.80 geometry reference](../../../SchemasReference/Schemas/minecraftSchema_geometry_1.20.80.md) for more details.
+
 ## Default Value of the Component
 
 This component is specified as an `Identifier String`, so it does not have a default value. You must provide a valid geometry identifier in order to use this component.

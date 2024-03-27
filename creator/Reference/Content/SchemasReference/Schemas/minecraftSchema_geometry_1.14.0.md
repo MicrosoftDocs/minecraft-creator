@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Schema Documentation - geometry:1.14.0
 
-This schema corresponds to the *.geo.json files in the "models/entity" folder of the resource pack.
+This schema corresponds to the *.geo.json files in the "models" folder of the resource pack.
 
 ```json
 geometry:1.14.0:{
