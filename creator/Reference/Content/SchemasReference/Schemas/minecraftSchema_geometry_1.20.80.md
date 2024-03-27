@@ -1,17 +1,17 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Schema Documentation - geometry:1.16.0"
-description: "A reference document detailing the 'geometry:1.16.0' schema"
+title: "Schema Documentation - geometry:1.20.80"
+description: "A reference document detailing the 'geometry:1.20.80' schema"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Schema Documentation - geometry:1.16.0
+# Schema Documentation - geometry:1.20.80
 
 This schema corresponds to the *.geo.json files in the "models" folder of the resource pack.
 
 ```json
-geometry:1.16.0:{
+geometry:1.20.80:{
     version "format_version"
     bool "debug" : opt
     array "minecraft:geometry"[1,*]
@@ -87,6 +87,7 @@ geometry:1.16.0:{
                                     {
                                         float "<any array element>" // The face maps this many texels from the uv origin. If not specified, the box dimensions are used instead.
                                     }
+                                    int "uv_rotation" : opt // Specifies an optional rotation for the specified UV rect in 90-degree clockwise increments before applying it to a geometry cube face. If not specified, no rotation will be applied.
                                     string "material_instance" : opt
                                 }
                                 object "south" : opt // Specifies the UV's for the face that stretches along the x and y axes, and faces the z axis
@@ -99,6 +100,7 @@ geometry:1.16.0:{
                                     {
                                         float "<any array element>" // The face maps this many texels from the uv origin. If not specified, the box dimensions are used instead.
                                     }
+                                    int "uv_rotation" : opt // Specifies an optional rotation for the specified UV rect in 90-degree clockwise increments before applying it to a geometry cube face. If not specified, no rotation will be applied.
                                     string "material_instance" : opt
                                 }
                                 object "east" : opt // Specifies the UV's for the face that stretches along the z and y axes, and faces the x axis
@@ -111,6 +113,7 @@ geometry:1.16.0:{
                                     {
                                         float "<any array element>" // The face maps this many texels from the uv origin. If not specified, the box dimensions are used instead.
                                     }
+                                    int "uv_rotation" : opt // Specifies an optional rotation for the specified UV rect in 90-degree clockwise increments before applying it to a geometry cube face. If not specified, no rotation will be applied.
                                     string "material_instance" : opt
                                 }
                                 object "west" : opt // Specifies the UV's for the face that stretches along the z and y axes, and faces the -x axis
@@ -123,6 +126,7 @@ geometry:1.16.0:{
                                     {
                                         float "<any array element>" // The face maps this many texels from the uv origin. If not specified, the box dimensions are used instead.
                                     }
+                                    int "uv_rotation" : opt // Specifies an optional rotation for the specified UV rect in 90-degree clockwise increments before applying it to a geometry cube face. If not specified, no rotation will be applied.
                                     string "material_instance" : opt
                                 }
                                 object "up" : opt // Specifies the UV's for the face that stretches along the x and z axes, and faces the y axis
@@ -135,6 +139,7 @@ geometry:1.16.0:{
                                     {
                                         float "<any array element>" // The face maps this many texels from the uv origin. If not specified, the box dimensions are used instead.
                                     }
+                                    int "uv_rotation" : opt // Specifies an optional rotation for the specified UV rect in 90-degree clockwise increments before applying it to a geometry cube face. If not specified, no rotation will be applied.
                                     string "material_instance" : opt
                                 }
                                 object "down" : opt // Specifies the UV's for the face that stretches along the x and z axes, and faces the -y axis
@@ -147,6 +152,7 @@ geometry:1.16.0:{
                                     {
                                         float "<any array element>" // The face maps this many texels from the uv origin. If not specified, the box dimensions are used instead.
                                     }
+                                    int "uv_rotation" : opt // Specifies an optional rotation for the specified UV rect in 90-degree clockwise increments before applying it to a geometry cube face. If not specified, no rotation will be applied.
                                     string "material_instance" : opt
                                 }
                             }
@@ -237,4 +243,5 @@ geometry:1.16.0:{
     }
 }
 
+----------
 ```
