@@ -32,7 +32,7 @@ The manifest file contains all the basic information about the pack that Minecra
 | base_game_version|Vector [a, b, c]| This is the version of the base game your world template requires, specified as [majorVersion, minorVersion, revision]. We use this to determine what version of the base game resource and behavior packs to apply when your content is used. |
 | description| String| This is a short description of the pack. It will appear in the game below the name of the pack. We recommend keeping it to 1-2 lines. |
 | lock_template_options| Boolean| This option is required for any world templates. This will lock the player from modifying the options of the world. |
-| min_engine_version| String| This is the minimum version of the game that this pack was written for.  This is a required field for resource and behavior packs. This helps the game identify whether any backwards compatibility is needed for your pack. You should always use the highest version currently available when creating packs. |
+| min_engine_version|Vector [a, b, c]| This is the minimum version of the game that this pack was written for.  This is a required field for resource and behavior packs. This helps the game identify whether any backwards compatibility is needed for your pack. You should always use the highest version currently available when creating packs. |
 | name| String| This is the name of the pack as it appears within Minecraft. This is a required field. |
 | uuid| String| This is a special type of identifier that uniquely identifies this pack from any other pack. UUIDs are written in the format xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx where each x is a hexadecimal value (0-9 or a-f). We recommend using an online service to generate this and guarantee their uniqueness,|
 | version|Vector [a, b, c] or [SemVer](https://semver.org/) String| This is the version of your pack in the format [majorVersion, minorVersion, revision]. The version number is used when importing a pack that has been imported before. The new pack will replace the old one if the version is higher, and ignored if it's the same or lower. |
@@ -45,7 +45,7 @@ The manifest file contains all the basic information about the pack that Minecra
 |type| String|  This is the type of the module. Can be any of the following: `resources`, `data`, `world_template` or `script`. |
 |uuid| String| This is a unique identifier for the module in the same format as the pack's UUID in the header. This should be different from the pack's UUID, and different for every module. |
 | version| Vector [a, b, c] or [SemVer](https://semver.org/) String | This is the version of the module in the same format as the pack's version in the header. This can be used to further identify changes in your pack. |
-|lanugage| String| Only present if `type` is `script`.  This indicates the language in which scripts are written in the pack.  The only supported value is `javascript`. |
+|language| String| Only present if `type` is `script`.  This indicates the language in which scripts are written in the pack.  The only supported value is `javascript`. |
 
 > [!IMPORTANT]
 > In order to submit any content to the marketplace, the version `a` value will need to be set to a value greater than 0. e.g `"version": [1, 0, 0]` or `"version": "1.0.0"`
