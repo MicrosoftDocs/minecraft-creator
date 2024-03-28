@@ -113,8 +113,6 @@ In normal mode (when the light is NOT switched on) then it will not output a sig
 
 (Remember, the signal starts at 15 and then goes down by one for each segment of redstone dust.)
 
-- Observer: Has two sides - observer face and output face. When the face detects a block update, it emits a signal out of the back.
-
 - Daylight sensor: Produces different levels of power depending on the level of light it detects. It can be inverted to emit light when it detects darkness. To invert it, place one and right-click on it. It will turn blue.
 
 - Dropper: Spits out a random item from its inventory when powered directly or powered by an adjacent block. For example, if loaded with a horse spawn egg, when activated, it drops a horse spawn egg. If loaded with arrows, it spits out an arrow.
