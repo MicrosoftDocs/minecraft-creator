@@ -51,13 +51,13 @@ Returns true if the subject entity is the variant number provided.
 ### Full
 
 ```json
-{ "test": "is_variant", "subject": "self", "operator": "equals", "value": "0" }
+{ "test": "is_variant", "subject": "self", "operator": "equals", "value": 0 }
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "is_variant", "value": "0" }
+{ "test": "is_variant", "value": 0 }
 ```
 
 ## Vanilla entities examples
