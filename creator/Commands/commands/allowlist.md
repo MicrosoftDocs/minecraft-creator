@@ -11,10 +11,6 @@ Manages the server allowlist.
 
 <table>
   <tr>
-    <th>Aliases</th>
-    <td>/whitelist</td>
-  </tr>
-  <tr>
     <th>Permission Level</th>
     <td>Owner</td>
   </tr>
