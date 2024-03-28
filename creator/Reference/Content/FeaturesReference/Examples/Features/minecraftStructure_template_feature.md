@@ -34,7 +34,7 @@ object "minecraft:structure_template_feature" : opt
     object "unburied" : opt // When specified, ensures the structure has air above it.
     object "block_intersection" : opt // When specified, ensures the structure only intersects with allowlisted blocks.
     {
-      array "block_allowlist|block_whitelist"
+      array "block_allowlist"
       {
         "<any array element>" : opt // List of blocks the owning structure is allowed to intersect with.
       }

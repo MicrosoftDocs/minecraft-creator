@@ -85,7 +85,7 @@ A behavior pack manifest needs to have additional elements to support GameTests.
             "description": "Script that implements basic starter tests.",
             "type": "script",
             "language": "javascript",
-            "uuid": "1a1b53fc-5653-4a75-91b7-9cdF027674ae",
+            "uuid": "1a1b53fc-5653-4a75-91b7-9cdf027674ae",
             "version": [0, 0, 1],
             "entry": "scripts/StarterTests.js"
         }
@@ -137,7 +137,7 @@ A full manifest file for a Behavior Pack with a GameTest looks like:
             "description": "Script that implements basic starter tests.",
             "type": "script",
             "language": "javascript",
-            "uuid": "1a1b53fc-5653-4a75-91b7-9cdF027674ae",
+            "uuid": "1a1b53fc-5653-4a75-91b7-9cdf027674ae",
             "version": [0, 0, 1],
             "entry": "scripts/StarterTests.js"
         }
