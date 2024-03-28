@@ -34,12 +34,6 @@ Amulet is a utility tool designed to edit Minecraft maps. It can come in handy f
 
 Image Map is a small application for both Bedrock Edition and Java Edition that can convert images to Minecraft maps. This can be used to add custom banners and art inside of Minecraft worlds.
 
-### [bridge.](https://bridge-core.app)
-
-bridge. is a powerful add-on editor designed to speed up your development process. It provides a rich editing experience for all files inside behavior packs, resource packs, skin packs and world templates and provides a powerful work environment for JavaScript, JSON, functions and more. bridge. also allows you to choose between the tree editor or raw text editor for JSON files. A summary of bridge.'s most notable features can be found [here](https://github.com/bridge-core/editor/blob/main/README.md). Unleash the full power of add-ons with [bridge. extensions](https://bridge-core.app/extension-docs/) and make use of rich auto-completions provided as you navigate through a file.
-
-You can also visit the [github repo](https://github.com/solvedDev/bridge.) by clicking the link provided.
-
 ## Server Based Tools
 
 Many commonly used tools are designed to be used on Java Edition servers utilizing a server software known as [Spigot](https://www.spigotmc.org/), which is based on the Craftbukkit API. The following tools are plugins that work on servers running this software.
@@ -70,6 +64,13 @@ Blockbench is a free entity-modeling application for creating working Bedrock Ed
 
 An extension that provides support for files such as .mcfunction, .json and .lang. This extension adds features like completion, validations, formatters, diagnostics, cheat-sheets, code-actions, generation of files, and development tools to help develop Minecraft: Bedrock Edition Addons or Minecraft Education. It's recommended that you use the Dark+ theme for the best color highlighting.
 
+### [bridge.](https://bridge-core.app)
+
+bridge. is a light-weight, dedicated editor for Minecraft Add-Ons that makes it easy to get started with Add-Ons and later scales with your growing needs. It requires zero setup and provides you with an [instantly bootable development environment](https://editor.bridge-core.app/) with syntax highlighting, [code completions and file diagnostics](https://bridge-core.app/guide/features/index.html#auto-completions-and-validation) all designed to make developing Minecraft Add-Ons more convenient. To read more, please refer to bridge.'s [getting started guide](https://bridge-core.app/guide/index.html) or [learn more about why you should use bridge.](https://bridge-core.app/guide/why-bridge.html)
+
+bridge. is [open source](https://github.com/bridge-core/editor) and freely available to all Add-On creators on desktop and mobile platforms.
+
+
 ### [Snowstorm](https://jannisx11.github.io/snowstorm/)
 
 Snowstorm is a small application for Bedrock Edition created by the developer of Blockbench that can be used to create custom particle effects that are usable in-game.
@@ -80,7 +81,13 @@ Skin and resource pack creation can be done primarily within any image-editing s
 
 ### [Blockbench](https://blockbench.net/)
 
-Blockbench is also used in many character skin workflows alongside applications like Photoshop or Aseprite. 
+Blockbench has a skin editor that allows skins to be edited in 3D (or 2D) with Blockbench's advanced paint tools such as mirror painting and color palettes. It has presets to create entity textures for resource packs as well.
+
+Skins can be packaged for the Marketplace using the [Skin Pack Packager plugin](https://www.blockbench.net/plugins/skin_packager) in Blockbench.
+
+### [PMCSkin3D](https://www.planetminecraft.com/pmcskin3d/)
+
+PMCSkin3D is a web-based dedicated skin editor from PlanetMinecraft. It has a 3D and 2D as well as split-screen mode and advanced brush options. There is also a lite edition with simplified tools.
 
 ### [Aseprite](https://www.aseprite.org/)
 

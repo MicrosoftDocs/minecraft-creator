@@ -96,10 +96,10 @@ conceptualContent:
               text: Popular Commands
             - url: Documents/CommandBlocks.md
               itemType: get-started
-              text: Create an In-World Game with Commands
+              text: Introduction to Command Blocks
             - url: Documents/CreateAnInWorldGame.md
-              itemType: get-started
-              text: How To Make a Complete the Monument World
+              itemType: how-to-guide
+              text: Create an In-World Game with Commands
             - url: Commands/index.yml
               itemType: reference
               text: Command Reference Documentation
