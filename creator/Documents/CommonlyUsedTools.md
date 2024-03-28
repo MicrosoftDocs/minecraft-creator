@@ -81,7 +81,13 @@ Skin and resource pack creation can be done primarily within any image-editing s
 
 ### [Blockbench](https://blockbench.net/)
 
-Blockbench is also used in many character skin workflows alongside applications like Photoshop or Aseprite. 
+Blockbench has a skin editor that allows skins to be edited in 3D (or 2D) with Blockbench's advanced paint tools such as mirror painting and color palettes. It has presets to create entity textures for resource packs as well.
+
+Skins can be packaged for the Marketplace using the [Skin Pack Packager plugin](https://www.blockbench.net/plugins/skin_packager) in Blockbench.
+
+### [PMCSkin3D](https://www.planetminecraft.com/pmcskin3d/)
+
+PMCSkin3D is a web-based dedicated skin editor from PlanetMinecraft. It has a 3D and 2D as well as split-screen mode and advanced brush options. There is also a lite edition with simplified tools.
 
 ### [Aseprite](https://www.aseprite.org/)
 
