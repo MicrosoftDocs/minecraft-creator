@@ -20,4 +20,4 @@ This list details the available data format schemas for content creators to refe
 | [geometry:1.14.0](Schemas\minecraftSchema_geometry_1.14.0.md)| This schema corresponds to the *.geo.json files in the "models" folder of the resource pack.|
 | [geometry:1.16.0](Schemas\minecraftSchema_geometry_1.16.0.md)| This schema corresponds to the *.geo.json files in the "models" folder of the resource pack.|
 | [geometry:1.19.30](Schemas\minecraftSchema_geometry_1.19.30.md)| This schema corresponds to the *.geo.json files in the "models" folder of the resource pack.|
-| [geometry:1.20.80](Schemas\minecraftSchema_geometry_1.20.80.md)| This schema corresponds to the *.geo.json files in the "models" folder of the resource pack.|
+| [geometry:uv_rotation future preview](Schemas\minecraftSchema_geometry_futurepreview.md)| This schema corresponds to the *.geo.json files in the "models" folder of the resource pack for a future upcoming preview of Minecraft.|

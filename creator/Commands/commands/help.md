@@ -214,7 +214,6 @@ A particular command used for configuring an Agent in an educational context.
 - `enchant`
 Adds an enchantment to a player's selected item.
 - `allowlist`
-- `whitelist`
 - `changesetting`
 - `reloadconfig`
 - `script`
