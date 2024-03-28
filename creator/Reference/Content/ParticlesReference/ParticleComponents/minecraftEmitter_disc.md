@@ -1,13 +1,14 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: JimSeaman42
+ms.author: mikeam
 title: Particle Documentation - Emitter Disc component
-ms.prod: gaming
+description: "A reference document detailing the 'emitter disc' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Emitter Disc component
 
-This component spawns particles using a disc shape, particles can be spawned inside the shape or on its outer perimeter.
+This component spawns particles using a disc shape. Particles can be spawned inside the shape, or on its outer perimeter.
 
 ```json
 "minecraft:emitter_shape_disc": {

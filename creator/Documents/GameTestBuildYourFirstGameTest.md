@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-bbortree
 title: Building your first GameTest
-description: Tutorial for building a GameTest using structures and JavaScript.
-ms.prod: gaming
+description: "A guide to building a GameTest using structures and JavaScript"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Building your first GameTest
@@ -267,7 +267,7 @@ Place this mediumglass.mcstructure file within a subfolder called startertests. 
 
 ## Running your tests within the game
 
-Once you have completed your GameTest behavior pack, you'll want to try it out within Minecraft. To do this, create a new Minecraft world. For this new world, you'll want to start in Creative mode and turn the GameTest Framework experiment on. You'll want to add the GameTeset Behavior Packs in your world.  If everything is correct, you should see the Start Hello World GameTest behavior pack when you create your world:
+Once you have completed your GameTest behavior pack, you'll want to try it out within Minecraft. To do this, create a new Minecraft world. For this new world, you'll want to start in Creative mode and turn the _Beta APIs_ experiment on. You'll want to add the GameTest Behavior Packs in your world.  If everything is correct, you should see the Start Hello World GameTest behavior pack when you create your world:
 
 ![Minecraft Behavior Pack with GameTest](Media/GameTestBuildYourFirstGameTest/behaviorpack.png)
 
@@ -286,7 +286,7 @@ To run a specific test, use `/gametest run <classname>:<testName>`, like:
 
 ## What's Next
 
-You've created your first GameTest Framework test. GameTests allow you as a Creator to stretch your content, exercise your entities, and validate your gameplay mechanics. You can view the GameTest API below to learn more about what is included in the GameTest Framework.
+You've created your first GameTest Framework test. GameTests allow you, as a creator, to stretch your content, exercise your entities, and validate your gameplay mechanics. You can view the GameTest API below to learn more about what is included in the GameTest Framework.
 
 > [!div class="nextstepaction"]
 > [GameTest API](../ScriptAPI/minecraft/server-gametest/minecraft-server-gametest.md)

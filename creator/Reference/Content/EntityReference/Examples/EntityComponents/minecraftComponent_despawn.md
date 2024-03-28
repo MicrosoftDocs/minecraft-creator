@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:despawn
-ms.prod: gaming
+description: "A reference document detailing the 'despawn' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:despawn
@@ -17,7 +18,7 @@ ms.prod: gaming
 |despawn_from_chance| true| Boolean|  Determines if "min_range_random_chance" is used in the standard despawn rules. |
 |despawn_from_inactivity| true| Boolean|  Determines if the "min_range_inactivity_timer" is used in the standard despawn rules. |
 |despawn_from_simulation_edge| true|  Boolean| Determines if the mob is instantly despawned at the edge of simulation distance in the standard despawn rules. |
-|[filters](../FilterList.md)|*not set* | Minecraft Filter|  The list of conditions that must be satisfied before the Actor is despawned. If a filter is defined then standard despawn rules are ignored. |
+|[filters](../FilterList.md)|*not set* | Minecraft Filter|  The list of conditions that must be satisfied before the entity is despawned. If a filter is defined then standard despawn rules are ignored. |
 |min_range_inactivity_timer| 30| Integer|  The amount of time in seconds that the mob must be inactive. |
 |min_range_random_chance| 800| Integer|  A random chance between 1 and the given value. |
 | remove_child_entities| false| Boolean|If true, all entities linked to this entity in a child relationship (eg. leashed) will also be despawned. |

@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.leap_at_target
-ms.prod: gaming
+description: "A reference document detailing the 'behavior.leap_at_target' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.leap_at_target
@@ -21,7 +22,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 |must_be_on_ground| true| Boolean|  If true, the mob will only jump at its target if its on the ground. Setting it to false will allow it to jump even if its already in the air |
 |priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|set_persistent| false| Boolean|  Allows the actor to be set to persist upon targeting a player |
+|set_persistent| false| Boolean|  Allows the entity to be set to persist upon targeting a player |
 |target_dist| 0.3| Decimal| Distance in blocks the mob jumps when leaping at its target.|
 |yd| 0.0| Decimal| Height in blocks the mob jumps when leaping at its target. |
 

@@ -2,10 +2,18 @@
 author: mammerla
 ms.author: mikeam
 title: Volume Documentation - minecraft:on_actor_leave
-ms.prod: gaming
+description: "A reference document detailing the 'on_actor_leave' volume component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Volume Documentation -  minecraft:on_actor_leave
+
+>[!IMPORTANT]
+> `minecraft:on_actor_leave` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
+>
+>Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
+>
+>To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md).
 
 `minecraft:on_actor_leave` is a Volume Component that defines what happens when an actor leaves the volume.
 
@@ -13,7 +21,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 |on_leave |*not set* |Array | Required array that contains all the triggers.|
 
-### on_leave
+## on_leave
 
 `on_leave` is an array parameter that can use the following components:
 

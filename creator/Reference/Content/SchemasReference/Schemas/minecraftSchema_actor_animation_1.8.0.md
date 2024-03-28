@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: "Schema Documentation - actor_animation:1.8.0"
-ms.prod: gaming
+description: "A reference document detailing the 'actor_animation:1.8.0' schema"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Schema Documentation - actor_animation:1.8.0

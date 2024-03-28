@@ -1,10 +1,11 @@
 ---
-author: mammerla
-ms.author: v-bbortree
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:spawns_on_block_prevented_filter
-ms.prod: gaming
+description: "A reference document detailing the 'spawns_on_block_prevented' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:spawns_on_block_prevented_filter
 
-This component allows an entity to not spawn on a particular block. It includes a string or array of strings for the block they may not spawn on.
+Allows an entity to not spawn on a particular block. Includes a string or array of strings for the block they may not spawn on.

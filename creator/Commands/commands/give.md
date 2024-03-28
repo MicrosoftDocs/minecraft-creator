@@ -2,7 +2,7 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: give Command
 description: Description and usage of the give command
 ---
@@ -24,7 +24,7 @@ Gives an item to a player.
 ### Give item to target
 `/give <player: target> <itemName: Item> [amount: int] [data: int] [components: json]`
 
-Give a target an item.
+Give a set of players selected via a target selector an item.
 
 ## Arguments
 - `amount`: int

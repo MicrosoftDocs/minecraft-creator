@@ -1,13 +1,20 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:equip_item
-ms.prod: gaming
+description: "A reference document detailing the 'equip_item' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:equip_item
 
 `minecraft:equip_item` compels the entity to equip desired equipment.
+
+## Parameters
+
+|Name |Default Value  |Type  |Description  |
+|:----------|:----------|:----------|:----------|
+| excluded_items| *not set*| List| The list of items that the entity should not equip. |
 
 ## Example
 

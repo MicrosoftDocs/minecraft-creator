@@ -1,4 +1,4 @@
-- name: AI Goals List
+- name: AI Goal Components List
   href: ../AIGoalList.md
 - name: behavior.admire_item
   href: minecraftBehavior_admire_item.md
@@ -142,6 +142,8 @@
   href: minecraftBehavior_make_love.md
 - name: behavior.melee_attack
   href: minecraftBehavior_melee_attack.md
+- name: behavior.melee_box_attack
+  href: minecraftBehavior_melee_box_attack.md
 - name: behavior.mingle
   href: minecraftBehavior_mingle.md
 - name: behavior.mount_pathing
@@ -316,6 +318,12 @@
   href: minecraftBehavior_target_when_pushed.md
 - name: behavior.tempt
   href: minecraftBehavior_tempt.md
+- name: behavior.timer_flag_1
+  href: minecraftBehavior_timer_flag_1.md
+- name: behavior.timer_flag_2
+  href: minecraftBehavior_timer_flag_2.md
+- name: behavior.timer_flag_3
+  href: minecraftBehavior_timer_flag_3.md
 - name: behavior.trade_interest
   href: minecraftBehavior_trade_interest.md
 - name: behavior.trade_with_player

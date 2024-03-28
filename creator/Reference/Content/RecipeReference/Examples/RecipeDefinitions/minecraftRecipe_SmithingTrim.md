@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Recipe Documentation - Smithing Trim Recipe
-ms.prod: gaming
+description: "A reference document detailing smithing trim recipes"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Recipe Documentation - Smithing Trim Recipe
@@ -20,7 +21,7 @@ Represents a smithing trim recipe for the Smithing Table. This recipe applies a 
 
 ## Smithing Trim Recipe Example
 
-```JSON
+```json
 {
  "format_version": "1.17",
  "minecraft:recipe_smithing_trim": {

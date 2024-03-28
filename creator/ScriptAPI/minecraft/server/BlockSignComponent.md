@@ -2,20 +2,115 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockSignComponent Class
 description: Contents of the @minecraft/server.BlockSignComponent class.
 ---
 # BlockSignComponent Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*BlockComponent*](BlockComponent.md)
 
 Represents a block that can display text on it.
+
+#### Examples
+##### ***addTwoSidedSign.ts***
+```typescript
+// A function the creates a sign at the specified location with text on both sides and dye colors
+import {
+    DimensionLocation,
+    BlockPermutation,
+    BlockSignComponent,
+    BlockComponentTypes,
+    DyeColor,
+    SignSide,
+} from '@minecraft/server';
+import { MinecraftBlockTypes } from '@minecraft/vanilla-data';
+
+function createSignAt(location: DimensionLocation) {
+    const block = location.dimension.getBlock(location);
+    if (!block) {
+        console.warn('Could not find a block at specified location.');
+        return;
+    }
+    const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, {
+        ground_sign_direction: 8,
+    });
+    block.setPermutation(signPerm);
+    const sign = block.getComponent(BlockComponentTypes.Sign);
+
+    if (sign !== undefined) {
+        sign.setText(`Party Sign!\nThis is green on the front.`);
+        sign.setText(`Party Sign!\nThis is red on the back.`, SignSide.Back);
+        sign.setTextDyeColor(DyeColor.Green);
+        sign.setTextDyeColor(DyeColor.Red, SignSide.Back);
+
+        // players cannot edit sign!
+        sign.setWaxed(true);
+    } else {
+        console.warn('Could not find a sign component on the block.');
+    }
+}
+```
+##### ***setSignText.ts***
+```typescript
+import {
+    BlockComponentTypes,
+    DimensionLocation,
+    RawMessage,
+    RawText,
+} from '@minecraft/server';
+
+// Function which updates a sign blocks text to raw text
+function updateSignText(signLocation: DimensionLocation) {
+    const block = signLocation.dimension.getBlock(signLocation);
+    if (!block) {
+        console.warn('Could not find a block at specified location.');
+        return;
+    }
+
+    const sign = block.getComponent(BlockComponentTypes.Sign);
+    if (sign) {
+        // RawMessage
+        const helloWorldMessage: RawMessage = { text: 'Hello World' };
+        sign.setText(helloWorldMessage);
+
+        // RawText
+        const helloWorldText: RawText = { rawtext: [{ text: 'Hello World' }] };
+        sign.setText(helloWorldText);
+
+        // Regular string
+        sign.setText('Hello World');
+    } else {
+        console.warn('Could not find a sign component on the block.');
+    }
+}
+```
+##### ***createTranslatedSign.ts***
+```typescript
+// A function the creates a sign at the specified location with the specified text
+import { DimensionLocation, BlockPermutation, BlockComponentTypes } from '@minecraft/server';
+import { MinecraftBlockTypes } from '@minecraft/vanilla-data';
+
+function createSignAt(location: DimensionLocation) {
+    const signBlock = location.dimension.getBlock(location);
+
+    if (!signBlock) {
+        console.warn('Could not find a block at specified location.');
+        return;
+    }
+
+    const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, { ground_sign_direction: 8 });
+    signBlock.setPermutation(signPerm); // Update block to be a sign
+
+    // Update the sign block's text
+    // with "Steve's Head"
+    const signComponent = signBlock.getComponent(BlockComponentTypes.Sign);
+    if (signComponent) {
+        signComponent.setText({ translate: 'item.skull.player.name', with: ['Steve'] });
+    }
+}
+```
 
 ## Properties
 
@@ -25,6 +120,9 @@ Represents a block that can display text on it.
 Whether or not players can edit the sign. This happens if a sign has had a honeycomb used on it or `setWaxed` was called on the sign.
 
 Type: *boolean*
+
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Methods
 - [getRawText](#getrawtext)
@@ -46,7 +144,7 @@ Returns the RawText of the sign if `setText` was called with a RawMessage or a R
   
   The side of the sign to read the message from. If not provided, this will return the message from the front side of the sign.
 
-#### **Returns** [*RawText*](RawText.md) | *undefined*
+**Returns** [*RawText*](RawText.md) | *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -63,7 +161,7 @@ Returns the text of the sign if `setText` was called with a string, otherwise re
   
   The side of the sign to read the message from. If not provided, this will return the message from the front side of the sign.
 
-#### **Returns** *string* | *undefined*
+**Returns** *string* | *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -80,7 +178,7 @@ Gets the dye that is on the text or undefined if the sign has not been dyed.
   
   The side of the sign to read the dye from. If not provided, this will return the dye on the front side of the sign.
 
-#### **Returns** [*DyeColor*](DyeColor.md) | *undefined*
+**Returns** [*DyeColor*](DyeColor.md) | *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -100,31 +198,48 @@ Sets the text of the sign component.
   
   The side of the sign the message will be set on. If not provided, the message will be set on the front side of the sign.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws if the provided message is greater than 512 characters in length.
 
-#### **Examples**
-##### *SetRawMessage.ts*
-```javascript
-const helloWorldMessage: RawMessage = { text: 'Hello World' };
-sign.setText(helloWorldMessage);
-// Sign text will be saved as a RawText
-const result: RawText = sign.getRawText(); 
-JSON.stringify(result); // { rawtext: [{ text: 'Hello World' }] };
-```
-##### *SetRawText.ts*
-```javascript
-const helloWorldText: RawText = { rawtext: [{ text: 'Hello World' }] };
-sign.setText(helloWorldText);
-// There will be no data transformation unlike calling setText with a RawMessage
-const result: RawText = sign.getRawText(); 
-JSON.stringify(result); // { rawtext: [{ text: 'Hello World' }] };
-```
-##### *SetString.ts*
-```javascript
-// Set sign to say 'Hello'
-sign.setText('Hello');
-sign.getText(); // 'Hello'
+#### Examples
+##### ***setSignText.ts***
+```typescript
+import {
+    BlockComponentTypes,
+    DimensionLocation,
+    RawMessage,
+    RawText,
+} from '@minecraft/server';
+
+// Function which updates a sign blocks text to raw text
+function updateSignText(signLocation: DimensionLocation) {
+    const block = signLocation.dimension.getBlock(signLocation);
+    if (!block) {
+        console.warn('Could not find a block at specified location.');
+        return;
+    }
+
+    const sign = block.getComponent(BlockComponentTypes.Sign);
+    if (sign) {
+        // RawMessage
+        const helloWorldMessage: RawMessage = { text: 'Hello World' };
+        sign.setText(helloWorldMessage);
+
+        // RawText
+        const helloWorldText: RawText = { rawtext: [{ text: 'Hello World' }] };
+        sign.setText(helloWorldText);
+
+        // Regular string
+        sign.setText('Hello World');
+    } else {
+        console.warn('Could not find a sign component on the block.');
+    }
+}
 ```
 
 ### **setTextDyeColor**
@@ -142,15 +257,24 @@ Sets the dye color of the text.
   
   The side of the sign the color will be set on. If not provided, the color will be set on the front side of the sign.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
 ### **setWaxed**
 `
-setWaxed(): void
+setWaxed(waxed: boolean): void
 `
 
 Makes it so players cannot edit this sign.
+
+#### **Parameters**
+- **waxed**: *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -160,6 +284,103 @@ Makes it so players cannot edit this sign.
 ### **componentId**
 `static read-only componentId = "minecraft:sign";`
 
-Identifier of this component. Should always be minecraft:sign.
-
 Type: *string*
+
+#### Examples
+##### ***addTwoSidedSign.ts***
+```typescript
+// A function the creates a sign at the specified location with text on both sides and dye colors
+import {
+    DimensionLocation,
+    BlockPermutation,
+    BlockSignComponent,
+    BlockComponentTypes,
+    DyeColor,
+    SignSide,
+} from '@minecraft/server';
+import { MinecraftBlockTypes } from '@minecraft/vanilla-data';
+
+function createSignAt(location: DimensionLocation) {
+    const block = location.dimension.getBlock(location);
+    if (!block) {
+        console.warn('Could not find a block at specified location.');
+        return;
+    }
+    const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, {
+        ground_sign_direction: 8,
+    });
+    block.setPermutation(signPerm);
+    const sign = block.getComponent(BlockComponentTypes.Sign);
+
+    if (sign !== undefined) {
+        sign.setText(`Party Sign!\nThis is green on the front.`);
+        sign.setText(`Party Sign!\nThis is red on the back.`, SignSide.Back);
+        sign.setTextDyeColor(DyeColor.Green);
+        sign.setTextDyeColor(DyeColor.Red, SignSide.Back);
+
+        // players cannot edit sign!
+        sign.setWaxed(true);
+    } else {
+        console.warn('Could not find a sign component on the block.');
+    }
+}
+```
+##### ***setSignText.ts***
+```typescript
+import {
+    BlockComponentTypes,
+    DimensionLocation,
+    RawMessage,
+    RawText,
+} from '@minecraft/server';
+
+// Function which updates a sign blocks text to raw text
+function updateSignText(signLocation: DimensionLocation) {
+    const block = signLocation.dimension.getBlock(signLocation);
+    if (!block) {
+        console.warn('Could not find a block at specified location.');
+        return;
+    }
+
+    const sign = block.getComponent(BlockComponentTypes.Sign);
+    if (sign) {
+        // RawMessage
+        const helloWorldMessage: RawMessage = { text: 'Hello World' };
+        sign.setText(helloWorldMessage);
+
+        // RawText
+        const helloWorldText: RawText = { rawtext: [{ text: 'Hello World' }] };
+        sign.setText(helloWorldText);
+
+        // Regular string
+        sign.setText('Hello World');
+    } else {
+        console.warn('Could not find a sign component on the block.');
+    }
+}
+```
+##### ***createTranslatedSign.ts***
+```typescript
+// A function the creates a sign at the specified location with the specified text
+import { DimensionLocation, BlockPermutation, BlockComponentTypes } from '@minecraft/server';
+import { MinecraftBlockTypes } from '@minecraft/vanilla-data';
+
+function createSignAt(location: DimensionLocation) {
+    const signBlock = location.dimension.getBlock(location);
+
+    if (!signBlock) {
+        console.warn('Could not find a block at specified location.');
+        return;
+    }
+
+    const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, { ground_sign_direction: 8 });
+    signBlock.setPermutation(signPerm); // Update block to be a sign
+
+    // Update the sign block's text
+    // with "Steve's Head"
+    const signComponent = signBlock.getComponent(BlockComponentTypes.Sign);
+    if (signComponent) {
+        signComponent.setText({ translate: 'item.skull.player.name', with: ['Steve'] });
+    }
+}
+```

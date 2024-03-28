@@ -2,12 +2,13 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - has_container_open
-ms.prod: gaming
+description: "A reference document detailing the 'has_container_open' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - has_container_open
 
-Returns true when the subject Player entity has opened a container.
+Returns true when the subject player entity has opened a container.
 
 ## Parameters
 
@@ -23,7 +24,7 @@ Returns true when the subject Player entity has opened a container.
 | Options| Description |
 |:-----------|:-----------|
 | block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
+| damager| The damaging entity involved with the interaction. |
 | other| The other member of an interaction, not the caller. |
 | parent| The caller's current parent. |
 | player| The player involved with the interaction. |

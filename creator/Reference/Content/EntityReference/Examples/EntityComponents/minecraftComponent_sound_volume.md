@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - minecraft:sound_volume
-ms.prod: gaming
+description: "A reference document detailing the 'sound_volume' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation -  minecraft:sound_volume

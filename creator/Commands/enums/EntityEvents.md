@@ -2,7 +2,7 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: EntityEvents Enum
 description: Description and values of the EntityEvents enum
 ---
@@ -22,6 +22,7 @@ Entity that can age grows to adulthood
 Entity has completed cooling down
 - `attacked`
 Entity is being attacked
+- `be_sheared`
 - `become_angry`
 Entity is going into a state of anger
 - `become_angry_event`
@@ -136,6 +137,7 @@ Entity is becoming aggravated
 Entity becomes an anemone
 - `minecraft:become_angry`
 Entity becomes angry
+- `minecraft:become_armorable`
 - `minecraft:become_armorer`
 Entity, presumably a villager, takes on the role of armorer
 - `minecraft:become_black_tang`
@@ -320,6 +322,7 @@ Hopper is deactivated
 Horse is wearing a saddle
 - `minecraft:horse_unsaddled`
 Horse is not wearing a saddle
+- `minecraft:increase_max_health`
 - `minecraft:join_caravan`
 Entity joins a caravan
 - `minecraft:laid_egg`
@@ -350,6 +353,7 @@ Entity is in melee mode
 Mule is wearing a saddle
 - `minecraft:mule_unsaddled`
 Mule is not wearing a saddle
+- `minecraft:no_threat_detected`
 - `minecraft:on_anger`
 Entity is angered
 - `minecraft:on_calm`
@@ -418,6 +422,7 @@ Entity is no longer persistent
 Raid trigger is removed
 - `minecraft:resupply_trades`
 Entities with a trade are having those trades resupplied
+- `minecraft:roll_up`
 - `minecraft:schedule_bed_villager`
 Villager is scheduled to go to bed
 - `minecraft:schedule_gather_villager`
@@ -478,6 +483,20 @@ Entity spawns as a librarian
 Entity spawns as a midnight cat
 - `minecraft:spawn_skilled_adult`
 Entity spawns as a skilled adult
+- `minecraft:spawn_tame_adult`
+- `minecraft:spawn_tame_baby`
+- `minecraft:spawn_wild_adult`
+- `minecraft:spawn_wild_ashen`
+- `minecraft:spawn_wild_baby`
+- `minecraft:spawn_wild_baby_or_adult`
+- `minecraft:spawn_wild_black`
+- `minecraft:spawn_wild_chestnut`
+- `minecraft:spawn_wild_pale`
+- `minecraft:spawn_wild_rusty`
+- `minecraft:spawn_wild_snowy`
+- `minecraft:spawn_wild_spotted`
+- `minecraft:spawn_wild_striped`
+- `minecraft:spawn_wild_woods`
 - `minecraft:spawn_with_pillager_captain_rider`
 Entity spawns with a pillager captain rider
 - `minecraft:spawn_with_pillager_rider`
@@ -508,11 +527,14 @@ Entity starts going into half puff
 Entity starts Johnny action
 - `minecraft:start_land`
 Entity starts tp land
+- `minecraft:start_peeking`
+- `minecraft:start_playing_idle_ground_sound`
 - `minecraft:start_roar`
 Entity starts roaring
 - `minecraft:start_sitting`
 - `minecraft:start_transforming`
 Entity starts transforming
+- `minecraft:start_unrolling`
 - `minecraft:stop_aggro`
 Entity stops being aggravated
 - `minecraft:stop_celebrating`
@@ -521,6 +543,8 @@ Entity stops celebrating
 Entity stops exploding
 - `minecraft:stop_johnny`
 Entity stops Johnny action
+- `minecraft:stop_peeking`
+- `minecraft:stop_playing_idle_ground_sound`
 - `minecraft:stop_sitting`
 - `minecraft:stop_transforming`
 Entity stops transforming
@@ -532,6 +556,7 @@ Entity switches to ranged attack
 Entity's target is far enough
 - `minecraft:target_too_close`
 Entity's target it too close
+- `minecraft:threat_detected`
 - `minecraft:to_full_puff`
 Entity fully puffs
 - `minecraft:trigger_raid`
@@ -568,6 +593,7 @@ Entity turns silver
 Entity turns white
 - `minecraft:turn_yellow`
 Entity turns yellow
+- `minecraft:unroll`
 - `navigation_off_land`
 Entity navigates off land
 - `navigation_on_land`

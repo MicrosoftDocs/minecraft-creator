@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: iconicNurdle
+ms.author: mikeam
 title: Features Documentation - minecraft:structure_template_feature
-ms.prod: gaming
+description: "A reference document detailing the 'structure_template_feature' feature"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Features Documentation - minecraft:structure_template_feature
@@ -15,9 +16,36 @@ The structure is placed in the world.
 **Fails if**
 The structure fails to be placed within the world.
 
-## Example
+### Schema
 
-### Place a hot air balloon structure that "floats" in the air
+```json
+object "minecraft:structure_template_feature" : opt
+{
+  object "description"
+  {
+    string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+  }
+  structure_reference "structure_name" // Reference to the structure to be placed.
+  int "adjustment_radius"<0-16> : opt // How far the structure is allowed to move when searching for a valid placement position. Search is radial, stopping when the nearest valid position is found. Defaults to 0 if omitted.
+  enumerated_value "facing_direction"<"north", "south", "east", "west", "random"> : opt // Direction the structure will face when placed in the world. Defaults to "random" if omitted.
+  object "constraints" // Specific constraints that must be satisfied when placing this structure.
+  {
+    object "grounded" : opt // When specified, ensures the structure is on the ground.
+    object "unburied" : opt // When specified, ensures the structure has air above it.
+    object "block_intersection" : opt // When specified, ensures the structure only intersects with allowlisted blocks.
+    {
+      array "block_allowlist|block_whitelist"
+      {
+        "<any array element>" : opt // List of blocks the owning structure is allowed to intersect with.
+      }
+    }
+  }
+}
+```
+
+### Example
+
+Place a hot air balloon structure that "floats" in the air
 
 ```json
 {

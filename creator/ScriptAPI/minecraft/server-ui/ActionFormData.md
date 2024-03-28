@@ -2,14 +2,39 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-ui.ActionFormData Class
 description: Contents of the @minecraft/server-ui.ActionFormData class.
 ---
 # ActionFormData Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 Builds a simple player form with buttons that let the player take action.
+
+#### Examples
+##### ***actionFormAskFavoriteMonth.ts***
+```typescript
+import { Player } from '@minecraft/server';
+import { ActionFormData, ActionFormResponse } from '@minecraft/server-ui';
+
+function askFavoriteMonth(player: Player) {
+    const form = new ActionFormData()
+        .title('Months')
+        .body('Choose your favorite month!')
+        .button('January')
+        .button('February')
+        .button('March')
+        .button('April')
+        .button('May');
+
+    form.show(player).then((response: ActionFormResponse) => {
+        if (response.selection === 3) {
+            player.sendMessage('I like April too!');
+        } else {
+            player.sendMessage('Nah, April is the best.');
+        }
+    });
+}
+```
 
 ## Methods
 - [constructor](#constructor)
@@ -25,7 +50,7 @@ new ActionFormData()
 
 Creates a new modal form builder.
 
-#### **Returns** [*ActionFormData*](ActionFormData.md)
+**Returns** [*ActionFormData*](ActionFormData.md)
 
 ### **body**
 `
@@ -37,7 +62,7 @@ Method that sets the body text for the modal form.
 #### **Parameters**
 - **bodyText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
-#### **Returns** [*ActionFormData*](ActionFormData.md)
+**Returns** [*ActionFormData*](ActionFormData.md)
 
 ### **button**
 `
@@ -50,7 +75,7 @@ Adds a button to this form with an icon from a resource pack.
 - **text**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 - **iconPath**?: *string* = `null`
 
-#### **Returns** [*ActionFormData*](ActionFormData.md)
+**Returns** [*ActionFormData*](ActionFormData.md)
 
 ### **show**
 `
@@ -64,7 +89,10 @@ Creates and shows this modal popup form. Returns asynchronously when the player 
   
   Player to show this dialog to.
 
-#### **Returns** Promise&lt;[*ActionFormResponse*](ActionFormResponse.md)&gt;
+**Returns** Promise&lt;[*ActionFormResponse*](ActionFormResponse.md)&gt;
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -79,47 +107,30 @@ This builder method sets the title for the modal dialog.
 #### **Parameters**
 - **titleText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
-#### **Returns** [*ActionFormData*](ActionFormData.md)
+**Returns** [*ActionFormData*](ActionFormData.md)
 
-#### **Examples**
-##### *showActionForm.ts*
-```javascript
-const players = mc.world.getPlayers();
-const playerList = Array.from(players);
-if (playerList.length >= 1) {
-  const form = new mcui.ActionFormData()
-    .title("Test Title")
-    .body("Body text here!")
-    .button("btn 1")
-    .button("btn 2")
-    .button("btn 3")
-    .button("btn 4")
-    .button("btn 5");
-  const result = await form.show(playerList[0]);
-  if (result.canceled) {
-    log("Player exited out of the dialog.");
-  } else {
-    log("Your result was: " + result.selection);
-  }
-}
-```
-##### *showFavoriteMonth.ts*
-```javascript
-  const players = mc.world.getPlayers();
-  const playerList = Array.from(players);
-  if (playerList.length >= 1) {
-    const form = new mcui.ActionFormData()
-      .title("Months")
-      .body("Choose your favorite month!")
-      .button("January")
-      .button("February")
-      .button("March")
-      .button("April")
-      .button("May");
-    form.show(playerList[0]).then((response: mcui.ActionFormResponse) => {
-      if (response.selection === 3) {
-        log("I like April too!");
-      }
+#### Examples
+##### ***actionFormAskFavoriteMonth.ts***
+```typescript
+import { Player } from '@minecraft/server';
+import { ActionFormData, ActionFormResponse } from '@minecraft/server-ui';
+
+function askFavoriteMonth(player: Player) {
+    const form = new ActionFormData()
+        .title('Months')
+        .body('Choose your favorite month!')
+        .button('January')
+        .button('February')
+        .button('March')
+        .button('April')
+        .button('May');
+
+    form.show(player).then((response: ActionFormResponse) => {
+        if (response.selection === 3) {
+            player.sendMessage('I like April too!');
+        } else {
+            player.sendMessage('Nah, April is the best.');
+        }
     });
-  }
+}
 ```

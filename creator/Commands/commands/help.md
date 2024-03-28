@@ -2,14 +2,18 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: help Command
 description: Description and usage of the help command
 ---
 # `/help` Command
 Running `/help` in the chat by itself will list every command you can run. However, since there are so many, they have been divided up into several pages, where you are shown only one page at a time. Supplying a page number will change which page of commands to show.
 
+
+
 Whenever you want to know the usage and all of the syntaxes of a command, you can use /help followed by the name of the command. This can be helpful if you want an overview of the command.
+
+
 
 See more in the [Popular Commands documentation](https://learn.microsoft.com/minecraft/creator/documents/commandspopularcommands#help).
 
@@ -53,11 +57,16 @@ Command name enumeration
 #### Values
 - `tag`
 Manages tags stored in entities.
+- `camera`
+Experimental camera command.
+- `transfer`
+- `clear`
+Clears items from player inventory.
+- `time`
+Changes or queries the world's game time.
 - `stop`
 - `camerashake`
 Applies shaking to the players' camera with a specified intensity and duration.
-- `clear`
-Clears items from player inventory.
 - `clearspawnpoint`
 Removes the spawn point for a player.
 - `clone`
@@ -144,6 +153,8 @@ Add, remove, or list ticking areas.
 Schedules an action to be executed once an area is loaded, or after a certain amount of time.
 - `scoreboard`
 Tracks and displays scores for various objectives.
+- `scriptevent`
+Sends a message and additional content that can trigger an event in a backing script implementation.
 - `setblock`
 Changes a block to another block.
 - `setmaxplayers`
@@ -157,7 +168,7 @@ Teleports entities to random locations.
 - `stopsound`
 Stops a sound.
 - `save`
-Save
+Configures the world to go into a save-supporting mode, on dedicated server.
 - `summon`
 Summons an entity.
 - `teleport`
@@ -178,8 +189,6 @@ Tests whether a certain block is in a specific location.
 Tests whether the blocks in two regions match.
 - `testfor`
 Counts entities (players, mobs, items, etc.) matching specified conditions.
-- `time`
-Changes or queries the world's game time.
 - `title`
 Controls screen titles.
 - `titleraw`
@@ -194,13 +203,19 @@ Attempts to connect to the websocket server on the provided URL.
 Attempts to connect to the websocket server on the provided URL.
 - `xp`
 Adds or removes player experience.
+- `recipe`
+- `hud`
+- `volumearea`
 - `project`
-- `simulationtype`
+A particular command used for managing project settings when in Editor mode.
 - `agent`
+A particular command used for configuring an Agent in an educational context.
 - `codebuilder_actorinfo`
 - `enchant`
 Adds an enchantment to a player's selected item.
 - `allowlist`
 - `whitelist`
 - `changesetting`
+- `reloadconfig`
 - `script`
+Contains additional tools for managing the runtime of script, including debugger and profiler options.

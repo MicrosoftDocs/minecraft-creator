@@ -2,8 +2,8 @@
 author: mikeam
 ms.author: mikeam
 title: Scripting with Dedicated Servers
-ms.prod: gaming
-description: Use TypeScript to customize and configure your dedicated server experiences.
+description: "Use TypeScript to customize and configure your dedicated server experiences"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Using script to add new capabilities to dedicated servers
@@ -15,7 +15,7 @@ In this article, we'll cover the foundation of everything you need to know about
 But first! A few warnings and notices on this topic before we get started:
 
 * ***Important:*** These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes or even removals of functionality in updated Minecraft versions. Check the [the Minecraft changelog](https://aka.ms/mcchanges) for details on any changes to Beta APIs.
-* We'll cover a few more advanced topics in this article, so you should  be familiar with the [basics of GameTest Framework](GameTestGettingStarted.md) and general Minecraft customization concepts.
+* We'll cover a few more advanced topics in this article, so you should  be familiar with the [basics of scripting](ScriptingGettingStarted.md) and general Minecraft customization concepts.
 * Make sure you back up worlds and files before you get deep into modifying and copying worlds around.
 * These tips work only in conjunction with Bedrock Dedicated Server, available at [Bedrock Server Download](https://www.minecraft.net/download/server/bedrock), that you can host on your own. This article does not apply to gameplay servers provided as part of Minecraft Realms.
 * See more information on Bedrock Dedicated Server [via this FAQ](https://help.minecraft.net/hc/articles/4408873961869-Minecraft-Dedicated-and-Featured-Servers-FAQ-).
@@ -75,12 +75,12 @@ When using a Preview Dedicated Server, you'll want to make sure that the players
 
 ## Building out your server world
 
-It is important for Server administrators to understand the content they are hosting via their server and should opt-in to using experimental capabilities. For this reason, by default, generated worlds in Bedrock Dedicated Server do not have the GameTest Framework experiment turned on, and therefore do not run script. That's OK – you'll probably want to carefully build out your custom server world anyways, and as part of that, turn on the GameTest Framework experiment in that world to enable custom scripts.
+It is important for Server administrators to understand the content they are hosting via their server and should opt-in to using experimental capabilities. For this reason, by default, generated worlds in Bedrock Dedicated Server do not have the Beta APIs experiment turned on, and therefore do not run script. That's OK – you'll probably want to carefully build out your custom server world anyways, and as part of that, turn on the Beta APIs experiment in that world to enable custom scripts.
 
 Here are the steps to creating your Minecraft world:
 
 1. Use the Minecraft Client singleplayer to create and customize the world in the way that you like it. You can use whatever general Minecraft builder tips and techniques you'd like to build the world of your dreams.
-1. Enable the GameTest Framework experiment in that world.
+1. Enable the Beta APIs experiment in that world.
 1. Within this world, you will also need to add your behavior packs that use script. For building, those behavior packs should not use dedicated-server only modules like "@minecraft/server-net" or "@minecraft/server-admin"
 1. Then, when you're ready to use that world on a dedicated server, copy it from your Minecraft client's Worlds folder:
 `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\minecraftWorlds`
@@ -90,16 +90,16 @@ Here are the steps to creating your Minecraft world:
 
 `[2022-05-20 07:00:06:619 INFO] Experiment(s) active: gtst`
 
-Where gtst stands for the GameTest Framework, indicating scripts are now available in your world.
+Where gtst is a code for the Beta APIs experiment, indicating experimental script APIs are now available in your world.
 
 ## The Bedrock Dedicated Server configuration system
 
-Now that you have a custom world up and running with a bit of GameTest JavaScript within it, we'll want to extend it to take advantage of the new capabilities.
+Now that you have a custom world up and running with a bit of JavaScript within it, we'll want to extend it to take advantage of the new capabilities.
 
 By default, most server configuration is stored within the "server.properties" file in the root of your Minecraft Bedrock Dedicated Server folder. Here, you can configure default permissions for new players that enter the game, server ports, number of threads, and more. Much of the documentation is embedded in line within "server.properties." To get started, open "server.properties" with your favorite text editor, like Notepad.
 
 For scripting, configuration files are stored in the "<Bedrock Dedicated Server>/config/" folder. In that folder is the subfolder "<Bedrock Dedicated Server>/config/default/", which controls default settings for all script modules.
-Within the "default" folder is a "permissions.json" file, which controls the default set of Mojang scripting modules that are accessible to worlds, assuming they have the GameTest Framework experiment enabled.
+Within the "default" folder is a "permissions.json" file, which controls the default set of Mojang scripting modules that are accessible to worlds, assuming they have the Beta APIs experiment enabled.
 
 ![Default allowed modules for a server](Media/ScriptingServers/allowedmodules.png)
 

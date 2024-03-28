@@ -2,13 +2,13 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockRecordPlayerComponent Class
 description: Contents of the @minecraft/server.BlockRecordPlayerComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockRecordPlayerComponent Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
@@ -29,6 +29,9 @@ clearRecord(): void
 
 Clears the currently playing record of this record-playing block.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -39,20 +42,23 @@ isPlaying(): boolean
 
 Returns true if the record-playing block is currently playing a record.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **setRecord**
 `
-setRecord(recordItemType: ItemType): void
+setRecord(recordItemType: ItemType | string): void
 `
 
 Sets and plays a record based on an item type.
 
 #### **Parameters**
-- **recordItemType**: [*ItemType*](ItemType.md)
+- **recordItemType**: [*ItemType*](ItemType.md) | *string*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -61,7 +67,5 @@ Sets and plays a record based on an item type.
 
 ### **componentId**
 `static read-only componentId = "minecraft:recordPlayer";`
-
-Identifier of this component. Should always be minecraft:recordPlayer.
 
 Type: *string*

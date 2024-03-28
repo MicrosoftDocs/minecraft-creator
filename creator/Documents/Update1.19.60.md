@@ -2,8 +2,8 @@
 author: kakinnun
 ms.author: kakinnun
 title: 1.19.60 Update Notes
-ms.prod: gaming
 description: Update summary of Creator changes in Bedrock 1.19.60
+ms.service: minecraft-bedrock-edition
 ---
 # Minecraft Bedrock 1.19.60 Update Notes for Creators
 
@@ -30,7 +30,7 @@ We continue to work on bringing the Holiday Creator Features out of experimental
 Some existing entity components have new capability that may be helpful to add-on creators.
 
 - [Minecraft:shooter](../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_shooter.md) component – expanded to define multiple projectiles that can specify different projectile definitions and condition filters. Exposed more fields to shooter component to allow for more projectile customization such as throw power, sounds, and whether the attack is a magic attack.
-- [has_equipment](../Reference/Content/EntityReference/Examples/Filters/has_equipment.md) filter - Added "inventory" as a possible "domain" value which allows to check for items stored in the actor's inventory.
+- [has_equipment](../Reference/Content/EntityReference/Examples/Filters/has_equipment.md) filter - Added "inventory" as a possible "domain" value which allows to check for items stored in the entities' inventory.
 - [interact](../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_interact.md) component - Added an "equip_item_slot" field.
   - If set, an item held by the player will be equipped to the specified slot upon successful interaction.
   - If an item is already present in the specified slot, it will be moved to the player's inventory

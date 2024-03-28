@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Molang Documentation - Domain Examples
-ms.prod: gaming
+description: "A reference document detailing a variety of ways in which Molang can be used"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Molang Documentation - Domain Examples
@@ -15,7 +16,7 @@ In the definition file, there is a section for pre-computing values. These are e
 
 ### Example
 
-```JSON
+```json
 "scripts": {
     "pre_animation": [
       "variable.my_constant = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed;",
@@ -46,11 +47,11 @@ The array definition section allows you to create arrays of resources by resourc
 
 For each of the three resource types (`materials`, `textures`, and `geometry`), you can define an array of resources. The name of the resource is the "nice-name" from the definition file.
 
-### Example
+### Materials Example
 
 Using `materials` as an example:
 
-```JSON
+```json
 "arrays":
 {
   "materials": {
@@ -78,25 +79,25 @@ index = max(0, expression_result) % array_size
 
 A resource expression must return a single resource of a specific type depending on the context. For example, in the "geometry" section, you must produce an expression that will result in a single geometry. Listed below are some examples:
 
-**Use a specific geometry**
+## Use a specific geometry
 
 ```C#
 "geometry": "geometry.my_geo"
 ```
 
-**Cycle through an array of geometries at a rate of one per second**
+### Cycle through an array of geometries at a rate of one per second
 
 ```C#
 "geometry": "array.my_geometries[query.anim_time]"
 ```
 
-**Use a specific geometry when sleeping, otherwise flip through an array based on a cosine curve, using index zero for almost half the time while the cosine curve is negative**
+### Use a specific geometry when sleeping, otherwise flip through an array based on a cosine curve, using index zero for almost half the time while the cosine curve is negative
 
 ```C#
 "geometry": "query.is_sleeping ? geometry.my_sleeping_geo : array.my_geos[math.cos(query.anim_time * 12.3 + 41.9) * 10 + 0.6]"
 ```
 
-**Pick a geometry based on an entity flag**
+### Pick a geometry based on an entity flag
 
 ```C#
 "geometry": "query.is_sheared ? geometry.sheared : geometry.woolly"
@@ -114,9 +115,9 @@ The geometry section specifies which geometry to use when rendering. As you can 
 
 The materials section specifies how to map what material to what bone of the geometry. A single material is mapped to a whole bone. Material expressions are evaluated in the order listed. The first part of each statement is the name of the model part to apply the material to, and the second part is the material to use. The model part name can use `*` for wildcard matching of characters.
 
-### Example
+### Resource Example
 
-```JSON
+```json
   "materials": [
       { "*": "Material.default" },
       { "TailA": "array.hair_colors[variable.hair_color]" },

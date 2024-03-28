@@ -2,7 +2,7 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: gamerule Command
 description: Description and usage of the gamerule command
 ---
@@ -59,6 +59,10 @@ controls whether the day cycle moves
 controls whether entities do drops
 - `dofiretick`
 controls whether fire spreads or not
+- `recipesunlock`
+controls whether built-in (vanilla) recipes automatically unlock as the player progresses through the game (one alternative to this is to use the /recipe command based on custom gameplay logic.) 
+- `dolimitedcrafting`
+Determines whether players should be able to craft only those recipes that they've unlocked first - when dolimitedcrafting is set to true
 - `domobloot`
 controls whether mobs drop loot
 - `domobspawning`
@@ -103,9 +107,14 @@ controls whether there is damage from freezing or not
 controls whether respawn blocks explode
 - `showbordereffect`
 controls whether border effects are shown
+- `showrecipemessages`
+Configures if standard player notifications for recipes will show. When set to false, "player unlocked recipes" are no longer sent as player notifications
+- `projectilescanbreakblocks`
+Defines if projectiles (entities with a projectile component, like Arrows, thrown Tridents or Fireworks) can destroy certain blocks that support this interaction (such as Chorus Fruit, Dripstone or Decorated Pots). Restrictions on which projectiles can destroy certain blocks apply
 
 ### `IntGameRule`
 An `integer` to replace the following default values.
+
 `1` for the `DEFAULT_RANDOMTICKSPEED`.
 `4096` for the `MAX_RANDOMTICKSPEED`.
 `10000` for the `MAX_FUNCTIONCOMMANDLIMIT`.
@@ -122,3 +131,4 @@ Random Tick Speed
 Function Command Limit
 - `spawnradius`
 Spawn Radius
+- `playerssleepingpercentage`

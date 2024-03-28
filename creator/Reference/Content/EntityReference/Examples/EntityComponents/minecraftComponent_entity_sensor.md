@@ -1,25 +1,27 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:entity_sensor
-ms.prod: gaming
+description: "A reference document detailing the 'entity_sensor' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:entity_sensor
 
-`minecraft:entity_sensor` is a component that initiates an event when a set of conditions are met by other entities within the defined range.
+`minecraft:entity_sensor` is a component that owns multiple subsensors, with each firing an event when a set of conditions are met by other entities within the defined range.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
+| cooldown | -1| Decimal| How many seconds should elapse before the subsensor can once again sense for entities. The cooldown is applied on top of the base 1 tick (0.05 seconds) delay. Negative values will result in no cooldown being used. |
 | [event_filters](../FilterList.md)| *not set*|Minecraft Filter | The set of conditions that must be satisfied to initiate the event.  |
 | event| *not set*|String | Event to initiate when the conditions are met.|
 | maximum_count| -1| Integer| The maximum number of entities that must pass the filter conditions for the event to send. |
 | minimum_count| 1| Integer| The minimum number of entities that must pass the filter conditions for the event to send. |
-| relative_range| True| Boolean| If true, the sensor range is additive on top of the entity's size. |
+| range| [10, 10]| Vector [a, b]| The maximum horizontal and vertical distance another entity can be from this and have the filters checked against it. |
 | require_all| False| Boolean| If true, requires all nearby entities to pass the filter conditions for the event to send. |
-| sensor_range| 10| Decimal| The maximum distance another entity can be from this and have the filters checked against it. |
+| subsensors| --| List| The list of subsensors which sense for entities and emit events when all conditions are met. |
 
 ## Example
 
@@ -27,9 +29,9 @@ ms.prod: gaming
 "minecraft:entity_sensor":{
     "maximum_count": -1,
     "minimum_count": 1,
-    "relative_range": true,
+    "cooldown": -1,
     "require_all": false,
-    "sensor_range": 10,
+    "range": 10,
     "event_filters": {"test": "has_trade_supply"},
     "event": "minecraft:offer_trade"
 }

@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-bbortree
 title: Introduction to Physically Based Rendering
-ms.prod: gaming
-description: An introduction to the Physically Based Rendering solutions
+description: "An introduction to Physically Based Rendering (PBR) solutions"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Introduction to Physically Based Rendering
@@ -128,7 +128,7 @@ For the Texture Set to work properly, you will need to define a JSON file to loa
 
 #### iron_block.texture_set.json
 
-```JSON
+```json
 {
   "format_version": "1.16.100",
   "minecraft:texture_set": {

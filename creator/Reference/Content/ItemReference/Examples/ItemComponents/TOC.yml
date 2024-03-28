@@ -1,52 +1,68 @@
  - name: Item Component List
    href: ../ItemComponentList.md
- - name: armor
-   href: minecraft_armor.md
+ - name: Custom Item Use Priority
+   href: ../ItemUsePriority.md
+ - name: description
+   href: description_component.md
+ - name: allow_off_hand
+   href: minecraft_allow_off_hand.md
  - name: block_placer
    href: minecraft_block_placer.md
- - name: chargeable
-   href: minecraft_chargeable.md
+ - name: can_destroy_in_creative
+   href: minecraft_can_destroy_in_creative.md
  - name: cooldown
    href: minecraft_cooldown.md
+ - name: damage
+   href: minecraft_damage.md
  - name: digger
    href: minecraft_digger.md
  - name: display_name
    href: minecraft_display_name.md
  - name: durability
    href: minecraft_durability.md
- - name: dye_powder
-   href: minecraft_dye_powder.md
+ - name: enchantable
+   href: minecraft_enchantable.md
  - name: entity_placer
    href: minecraft_entity_placer.md
- - name: foil
-   href: minecraft_foil.md
  - name: food
    href: minecraft_food.md
  - name: fuel
    href: minecraft_fuel.md
+ - name: glint
+   href: minecraft_glint.md
+ - name: hand_equipped
+   href: minecraft_hand_equipped.md
+ - name: hover_text_color
+   href: minecraft_hover_text_color.md
  - name: icon
    href: minecraft_icon.md
- - name: item_storage
-   href: minecraft_item_storage.md
- - name: knockback_resistance
-   href: minecraft_knockback_resistance.md
- - name: on_use
-   href: minecraft_on_use.md
- - name: on_use_on
-   href: minecraft_on_use_on.md
+ - name: interact_button
+   href: minecraft_interact_button.md
+ - name: item
+   href: minecraft_item.md
+ - name: liquid_clipped
+   href: minecraft_liquid_clipped.md
+ - name: max_stack_size
+   href: minecraft_max_stack_size.md
  - name: projectile
    href: minecraft_projectile.md
  - name: record
    href: minecraft_record.md
- - name: render_offsets
-   href: minecraft_render_offsets.md
  - name: repairable
    href: minecraft_repairable.md
  - name: shooter
    href: minecraft_shooter.md
+ - name: should_despawn
+   href: minecraft_should_despawn.md
+ - name: stacked_by_data
+   href: minecraft_stacked_by_data.md
+ - name: tags
+   href: minecraft_tags.md
  - name: throwable
    href: minecraft_throwable.md
- - name: weapon
-   href: minecraft_weapon.md
+ - name: use_animation
+   href: minecraft_use_animation.md
+ - name: use_modifiers
+   href: minecraft_use_modifiers.md
  - name: wearable
    href: minecraft_wearable.md

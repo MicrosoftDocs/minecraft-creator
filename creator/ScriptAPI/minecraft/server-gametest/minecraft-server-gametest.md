@@ -2,17 +2,19 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-gametest Module
 description: Contents of the @minecraft/server-gametest module
+monikerRange: "=minecraft-bedrock-experimental"
 ---
-# @minecraft/server-gametest Module
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+# `@minecraft/server-gametest` Module
+
 The @minecraft/server-gametest module provides scriptable APIs for scaffolding and testing content experiences in Minecraft.
 
 > [!CAUTION]
 > This module is still in pre-release.  It may change or it may be removed in future releases.
+
+## [Changelog](changelog.md)
 
 ## Manifest Details
 ```json
@@ -27,10 +29,12 @@ The @minecraft/server-gametest module provides scriptable APIs for scaffolding a
 
 ## Enumerations
 - [GameTestErrorType](GameTestErrorType.md)
+- [LookDuration](LookDuration.md)
 
 ## Classes
 - [FenceConnectivity](FenceConnectivity.md)
 - [GameTestSequence](GameTestSequence.md)
+- [NavigationResult](NavigationResult.md)
 - [RegistrationBuilder](RegistrationBuilder.md)
 - [SculkSpreader](SculkSpreader.md)
 - [SimulatedPlayer](SimulatedPlayer.md)
@@ -39,6 +43,7 @@ The @minecraft/server-gametest module provides scriptable APIs for scaffolding a
 
 ## Interfaces
 - [GameTestErrorContext](GameTestErrorContext.md)
+- [MoveToOptions](MoveToOptions.md)
 
 ## Errors
 - [GameTestError](GameTestError.md)
@@ -63,29 +68,32 @@ Registers a new GameTest function. This GameTest will become available in Minecr
   
   Implementation of the test function.
 
-#### **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - Returns a [*@minecraft/server-gametest.RegistrationBuilder*](../../minecraft/server-gametest/RegistrationBuilder.md) object where additional options for this test can be specified via builder methods.
+**Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - Returns a [*@minecraft/server-gametest.RegistrationBuilder*](../../minecraft/server-gametest/RegistrationBuilder.md) object where additional options for this test can be specified via builder methods.
 
-#### **Examples**
-##### *example1.js*
-```javascript
-GameTest.register("ExampleTests", "alwaysFail", (test) => {
-  test.fail("This test, runnable via '/gametest run ExampleTests:alwaysFail', will always fail");
-});
-```
-##### *simpleMobTest.ts*
-```javascript
-gt.register("StarterTests", "simpleMobTest", (test: gt.Test) => {
-  const attackerId = "fox";
-  const victimId = "chicken";
-  test.spawn(attackerId, { x: 5, y: 2, z: 5 });
-  test.spawn(victimId, { x: 2, y: 2, z: 2 });
-  test.assertEntityPresentInArea(victimId, true);
-  test.succeedWhen(() => {
-    test.assertEntityPresentInArea(victimId, false);
-  });
-})
-  .maxTicks(400)
-  .structureName("gametests:mediumglass");
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+#### Examples
+##### ***simpleMobTest.ts***
+```typescript
+import * as gameTest from '@minecraft/server-gametest';
+
+gameTest
+    .register('StarterTests', 'simpleMobTest', (test: gameTest.Test) => {
+        const attackerId = 'fox';
+        const victimId = 'chicken';
+
+        test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+        test.spawn(victimId, { x: 2, y: 2, z: 2 });
+
+        test.assertEntityPresentInArea(victimId, true);
+
+        test.succeedWhen(() => {
+            test.assertEntityPresentInArea(victimId, false);
+        });
+    })
+    .maxTicks(400)
+    .structureName('gametests:mediumglass');
 ```
 
 ### **registerAsync**
@@ -106,8 +114,30 @@ Registers a new GameTest function that is designed for asynchronous execution. T
   
   Implementation of the test function.
 
-#### **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - Returns a [*@minecraft/server-gametest.RegistrationBuilder*](../../minecraft/server-gametest/RegistrationBuilder.md) object where additional options for this test can be specified via builder methods.
+**Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - Returns a [*@minecraft/server-gametest.RegistrationBuilder*](../../minecraft/server-gametest/RegistrationBuilder.md) object where additional options for this test can be specified via builder methods.
 
-## Change Log
-## 1.0.0-beta
-#### Added `@minecraft/server-gametest` Module
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+#### Examples
+##### ***simpleMobAsyncTest.ts***
+```typescript
+import * as gameTest from '@minecraft/server-gametest';
+
+gameTest
+    .registerAsync('StarterTests', 'simpleMobTest', async (test: gameTest.Test) => {
+        const attackerId = 'fox';
+        const victimId = 'chicken';
+
+        test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+        test.spawn(victimId, { x: 2, y: 2, z: 2 });
+
+        test.assertEntityPresentInArea(victimId, true);
+
+        test.succeedWhen(() => {
+            test.assertEntityPresentInArea(victimId, false);
+        });
+    })
+    .maxTicks(400)
+    .structureName('gametests:mediumglass');
+```

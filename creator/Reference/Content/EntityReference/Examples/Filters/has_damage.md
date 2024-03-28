@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - has_damage
-ms.prod: gaming
+description: "A reference document detailing the 'has_damage' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - has_damage
@@ -39,12 +40,12 @@ Below is a list of damage types that can be used for the `value` string.
 | override|  |
 | piston|  |
 | projectile|  |
+| self_destruct|  |
 | sonic_boom|  |
 | stalactite|  |
 | stalagmite|  |
 | starve|  |
 | suffocation|  |
-| suicide|  |
 | thorns|  |
 | void|  |
 | wither|  |
@@ -57,7 +58,7 @@ Below is a list of damage types that can be used for the `value` string.
 | Options| Description |
 |:-----------|:-----------|
 | block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
+| damager| The damaging entity involved with the interaction. |
 | other| The other member of an interaction, not the caller. |
 | parent| The caller's current parent. |
 | player| The player involved with the interaction. |

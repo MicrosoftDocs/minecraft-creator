@@ -2,20 +2,29 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.LeverActionAfterEvent Class
 description: Contents of the @minecraft/server.LeverActionAfterEvent class.
 ---
 # LeverActionAfterEvent Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*BlockEvent*](BlockEvent.md)
 
 Contains information related to changes to a lever activating or deactivating.
+
+#### Examples
+##### ***leverActionEvent.ts***
+```typescript
+import { world, system, LeverActionAfterEvent } from '@minecraft/server';
+
+world.afterEvents.leverAction.subscribe((leverActivateEvent: LeverActionAfterEvent) => {
+    console.warn(
+        `Lever event at ${system.currentTick} with power: ${leverActivateEvent.block.getRedstonePower()}`,
+    );
+});
+
+```
 
 ## Properties
 
@@ -32,3 +41,16 @@ Type: *boolean*
 Optional player that triggered the lever activation.
 
 Type: [*Player*](Player.md)
+
+#### Examples
+##### ***leverActionEvent.ts***
+```typescript
+import { world, system, LeverActionAfterEvent } from '@minecraft/server';
+
+world.afterEvents.leverAction.subscribe((leverActivateEvent: LeverActionAfterEvent) => {
+    console.warn(
+        `Lever event at ${system.currentTick} with power: ${leverActivateEvent.block.getRedstonePower()}`,
+    );
+});
+
+```

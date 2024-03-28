@@ -1,23 +1,27 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: mikeam
 title: Volume Documentation - minecraft:bounds
-ms.prod: gaming
+description: "A reference document detailing the 'bounds' volume component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Volume Documentation - minecraft:bounds
 
-`minecraft:bounds` is a Volume Component that is defined by three parameters. Each item has the following properties:
+>[!IMPORTANT]
+> `minecraft:bounds` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
+>
+>Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
+>
+>To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md).
 
-## Default Parameter
+`minecraft:bounds` is a Volume Component defined by three parameters.
 
-|Default Value|Type |
-|:----|:----|
-|0.0| Decimal|
-
-## Extra Parameters
-
-`minecraft:bounds` does not use any extra parameters.
+| Name| Default Value| Type| Description |
+|:-----------:|:-----------:|:-----------:|:-----------:|
+| dimension| *not set*| String| The name of the dimension the bounding box will exist in: one of 'overworld', 'nether' or 'the end'. |
+| max| *not set*| Vector [a, b, c]| The maximum block position of the bounding box. |
+| min| *not set*| Vector [a, b, c]| The minimum block position of the bounding box. |
 
 ## Example
 

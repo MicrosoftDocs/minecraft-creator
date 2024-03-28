@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.melee_attack
-ms.prod: gaming
+description: "A reference document detailing the 'behavior.melee_attack' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.melee_attack
@@ -37,7 +38,7 @@ ms.prod: gaming
 | random_stop_interval| 0| Integer| This entity will have a 1 in N chance to stop it's current attack, where N = "random_stop_interval". |
 | reach_multiplier| 2| Decimal| Used with the base size of the entity to determine minimum target-distance before trying to deal attack damage. |
 | require_complete_path| false| Boolean| Toggles (on/off) the need to have a full path from the entity to the target when using this melee attack behavior. |
-| set_persistent| false| Boolean| Allows the actor to be set to persist upon targeting a player |
+| set_persistent| false| Boolean| Allows the entity to be set to persist upon targeting a player |
 | speed_multiplier| 1| Decimal| This multiplier modifies the attacking entity's speed when moving toward the target. |
 | target_dist| N/a| Decimal| Unused. No effect on "minecraft:behavior.melee_attack". |
 | track_target| false| Boolean| Allows the entity to track the attack target, even if the entity has no sensing. |

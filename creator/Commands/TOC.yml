@@ -2,6 +2,8 @@
   href: commands.md
 - name: allowlist
   href: commands/allowlist.md
+- name: camera
+  href: commands/camera.md
 - name: camerashake
   href: commands/camerashake.md
 - name: changesetting
@@ -40,10 +42,14 @@
   href: commands/gamemode.md
 - name: gamerule
   href: commands/gamerule.md
+- name: gametest
+  href: commands/gametest.md
 - name: give
   href: commands/give.md
 - name: help
   href: commands/help.md
+- name: hud
+  href: commands/hud.md
 - name: inputpermission
   href: commands/inputpermission.md
 - name: kick
@@ -74,8 +80,12 @@
   href: commands/playsound.md
 - name: project
   href: commands/project.md
+- name: recipe
+  href: commands/recipe.md
 - name: reload
   href: commands/reload.md
+- name: reloadconfig
+  href: commands/reloadconfig.md
 - name: replaceitem
   href: commands/replaceitem.md
 - name: ride
@@ -90,14 +100,14 @@
   href: commands/scoreboard.md
 - name: script
   href: commands/script.md
+- name: scriptevent
+  href: commands/scriptevent.md
 - name: setblock
   href: commands/setblock.md
 - name: setmaxplayers
   href: commands/setmaxplayers.md
 - name: setworldspawn
   href: commands/setworldspawn.md
-- name: simulationtype
-  href: commands/simulationtype.md
 - name: spawnpoint
   href: commands/spawnpoint.md
 - name: spreadplayers
@@ -134,6 +144,10 @@
   href: commands/titleraw.md
 - name: toggledownfall
   href: commands/toggledownfall.md
+- name: transfer
+  href: commands/transfer.md
+- name: volumearea
+  href: commands/volumearea.md
 - name: weather
   href: commands/weather.md
 - name: wsserver

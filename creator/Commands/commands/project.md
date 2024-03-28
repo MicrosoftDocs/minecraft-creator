@@ -2,12 +2,12 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: project Command
 description: Description and usage of the project command
 ---
 # `/project` Command
-Manipulates project settings while in-game.
+This command contains additional tools for managing an Editor project. This command is available in Editor mode only.
 
 <table>
   <tr>

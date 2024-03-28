@@ -2,17 +2,17 @@
 author: mikeam
 ms.author: mikeam
 title: Use Visual Studio Code tools to write script
-ms.prod: gaming
-description: Use tools for enhanced editing, debugging and profiling of GameTest scripts within Visual Studio Code
+description: "Using tools for enhanced editing, debugging, and profiling of JavaScript within Visual Studio Code"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Use Visual Studio Code tools to write script
 
-Two new tools can make the process of writing your GameTest scripts easier and more fun within Visual Studio Code. In this article, we'll discuss how you can install custom type definitions for Minecraft to provide autocomplete as you work, the Minecraft Script Debugger, and the Minecraft Script Profiler.
+Two new tools can make the process of writing your JavaScript easier and more fun within Visual Studio Code. In this article, we'll discuss how you can install custom type definitions for Minecraft to provide autocomplete as you work, the Minecraft Script Debugger, and the Minecraft Script Profiler.
 
 ## Custom type definition files for Visual Studio Code Intellisense
 
-Visual Studio Code can display detailed type information for different libraries to provide hints and code-completion dropdowns as you type. Type information has been made available for scripting modules `@minecraft/server` and `@minecraft/server-gametest`.
+Visual Studio Code can display detailed type information for different libraries to provide hints and code-completion dropdowns as you type. Type information has been made available for scripting modules `@minecraft/server`,`@minecraft/server-ui`, and several beta modules such as `@minecraft/server-gametest`.
 
 To get started, use the Node Package Manager, or npm. npm makes it easy to download and install different modules of code within your packages. Install Node.js – which includes npm - on your development device. More info on installing npm is available from [nodejs.org](https://nodejs.org). Install the latest LTS version of Node.js to get started.
 
@@ -34,11 +34,18 @@ and inline reference documentation for types:
 ![Inline reference documentation in Visual Studio Code](Media/ScriptDeveloperTools/inlinedocumentation.png)
 
 >[!Note]
->We are updating these type definitions to match the latest beta APIs, so be sure to check npm often to see if there are updated type definitions.
+>We are updating these type definitions to match the latest APIs, so be sure to check npm often to see if there are updated type definitions.
+
+If you wish to access the latest beta API versions of modules, you can use the @beta version signifier, as follows:
+
+```powershell
+npm i @minecraft/server@beta
+npm i @minecraft/server-ui@beta
+```
 
 ## Get insight into your code with Minecraft script debugging
 
-As you build more of a codebase in script, you'll want to inspect your code at various points to see the state of variables and test your algorithms. In many starter projects, people start by using commands like Console.log or Chat to print various variables as they go – informally, this is called "print debugging". But for developers, there is a better way! With scripting within GameTest in Minecraft Bedrock Edition, you can use script debugging capabilities that make inspecting data in Minecraft script a snap.
+As you build more of a codebase in script, you'll want to inspect your code at various points to see the state of variables and test your algorithms. In many starter projects, people start by using commands like Console.log or Chat to print various variables as they go – informally, this is called "print debugging". But for developers, there is a better way! With scripting in Minecraft Bedrock Edition, you can use script debugging capabilities that make inspecting data in Minecraft script a snap.
 
 To get started, you'll want to use Visual Studio Code as your editor for the JavaScript files you've been developing. Steps from there include:
 
@@ -46,9 +53,6 @@ To get started, you'll want to use Visual Studio Code as your editor for the Jav
 1. Open Visual Studio Code within your development_behavior_packs folder
 1. Depending on your testing client - either in Bedrock Dedicated Server or within Minecraft Bedrock clients -- connect Minecraft Bedrock Edition and Visual Studio Code
 1. Set break points and add watch variables in your code as you go, and then connect Minecraft to Visual Studio Code
-
->[!IMPORTANT]
->The Minecraft debugger and GameTest Framework experiment are optimized to work with the latest Beta versions of Minecraft. See [Minecraft Betas](https://aka.ms/mcbeta) for more information.
 
 ### Debugging with Minecraft Bedrock Edition
 
@@ -73,7 +77,7 @@ CheckNetIsolation.exe LoopbackExempt -a -p=S-1-15-2-1958404141-86561845-17529206
 
 In order for the debugger to know where to find your source JavaScript files, you'll need to specifically open up a window of Visual Studio Code relative to the behavior pack where your JavaScript source files are.
 
-While you're building out gametests, you will most likely deploy them to Minecraft's development_behavior_packs folder. This is located within `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\development_behavior_packs`. Select the behavior pack you'd like to debug, and open up a Visual Studio Code window pointed at that folder.
+While you're building out scripting within your packs, you will most likely deploy them to Minecraft's development_behavior_packs folder. This is located within `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\development_behavior_packs`. Select the behavior pack you'd like to debug, and open up a Visual Studio Code window pointed at that folder.
 
 #### Step 4: Prepare Visual Studio Code for a connection
 
@@ -107,7 +111,7 @@ Now that you've prepared Visual Studio Code and prepared your Behavior Pack, you
 
 First, click **Start Debugging** inside of Visual Studio Code. This will put Visual Studio Code into *listen for a debugging connection* mode.
 
-Start Minecraft and load into a world with your scripting behavior pack. You may want to set a break point inside of your GameTest function. To do this, click to the left of the specific lines of code where you want to set your break point.
+Start Minecraft and load into a world with your scripting behavior pack. You may want to set a break point inside of your script function. To do this, click to the left of the specific lines of code where you want to set your break point.
 
 ![Breakpoints set within Visual Studio Code](Media/ScriptDeveloperTools/listenandbreakpoints.png)
 
@@ -200,11 +204,11 @@ Note that there may be additional configuration required in your build tools - f
 
 ### Using the Minecraft Scripting Profiler
 
-A profiler is a set of monitoring code that measures the amount of time spent running various functions. With it, you can identify where most of your time is spent within your GameTest scripts. This may then lead you to discovering unexpected function calling patterns that may consume a lot of time.
+A profiler is a set of monitoring code that measures the amount of time spent running various functions. With it, you can identify where most of your time is spent within your scripts. This may then lead you to discovering unexpected function calling patterns that may consume a lot of time.
 
 #### Run the profiler during a typical session for your script
 
-To get started, ensure you have a world with the GameTest Framework experiment enabled, and a behavior pack with JavaScript within it. Your first step is to create a profile session, or in other words, log the performance characteristics of your script as you play through the game.
+To get started, ensure you have a behavior pack with JavaScript within it. Your first step is to create a profile session, or in other words, log the performance characteristics of your script as you play through the game.
 
 To run the script profiler and start a new profile session, run the following command:
 
@@ -212,7 +216,7 @@ To run the script profiler and start a new profile session, run the following co
 /script profiler start
 ```
 
-Then, exercise your code by running through and playing Minecraft. You'll want to go through normal gameplay or testing patterns to have your GameTest code exercised in representative ways of how players might encounter your experience.
+Then, exercise your code by running through and playing Minecraft. You'll want to go through normal gameplay or testing patterns to have your JavaScript exercised in representative ways of how players might encounter your experience.
 
 After a while – many minutes, perhaps, end your profiler session by running the following command:
 

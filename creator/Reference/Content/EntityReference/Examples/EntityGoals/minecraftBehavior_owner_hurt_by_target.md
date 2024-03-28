@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.owner_hurt_by_target
-ms.prod: gaming
+description: "A reference document detailing the 'behavior.owner_hurt_by_target' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.owner_hurt_by_target

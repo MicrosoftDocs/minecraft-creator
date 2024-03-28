@@ -2,8 +2,8 @@
 author: neonerz
 ms.author: mikeam
 title: Creating New Entity Types
-ms.prod: gaming
-description: "Building upon the knowledge learned in the Resource Pack Tutorial, Creating New Entity Types goes over the steps needed to start creating your own custom Entity Type"
+description: "A guide detailing the steps needed to start creating a custom entity type"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Creating New Entity Types

@@ -2,26 +2,36 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: .Direction Enumeration
 description: Contents of the .Direction enumeration.
 ---
 # Direction Enumeration
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+A general purpose relative direction enumeration.
 
 ## Constants
-### **down**
-`down = "down"`
-### **east**
-`east = "east"`
-### **north**
-`north = "north"`
-### **south**
-`south = "south"`
-### **up**
-`up = "up"`
-### **west**
-`west = "west"`
+### **Down**
+`Down = "Down"`
+
+Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) beneath (y - 1) of this item.
+### **East**
+`East = "East"`
+
+Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the east (x + 1) of this item.
+### **North**
+`North = "North"`
+
+Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the east (z + 1) of this item.
+### **South**
+`South = "South"`
+
+Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the south (z - 1) of this item.
+### **Up**
+`Up = "Up"`
+
+Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) above (y + 1) of this item.
+### **West**
+`West = "West"`
+
+Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the west (x - 1) of this item.

@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: mikeam
 title: Entity Documentation - is_sneaking
-ms.prod: gaming
+description: "A reference document detailing the 'is_sneaking' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - is_sneaking
@@ -11,7 +12,7 @@ Tests whether the subject is sneaking.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `is_sneaking` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `is_sneaking` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
@@ -21,7 +22,7 @@ Tests whether the subject is sneaking.
 | Options| Description |
 |:-----------|:-----------|
 | block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
+| damager| The damaging entity involved with the interaction. |
 | other| The other member of an interaction, not the caller. |
 | parent| The caller's current parent. |
 | player| The player involved with the interaction. |

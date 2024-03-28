@@ -1,9 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: JimSeaman42
+ms.author: mikeam
 title: Loot and Trade Table Functions
-ms.prod: gaming
-description: An article showcasing the similarities and differences between Loot Tables and Trade Tables
+description: "An article showcasing the available functions for Loot and Trade Tables"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Loot and Trade Table Functions
@@ -180,6 +180,27 @@ This function allows you to modify the count of how many items are returned when
 }
 ```
 
+### random_aux_value
+
+Similar to `random_block_state`, this allows you to pick a random auxiliary value for an item. The following example will result in a randomly-colored dye.
+
+```json
+{
+    "type": "item",
+    "name": "minecraft:dye",
+    "weight": 1,
+    "functions": [
+        {
+          "function": "random_aux_value",
+          "values": {
+            "min": 0,
+            "max": 15
+          }
+        }
+    ]
+}
+```
+
 ### random_block_state
 
 This allows you to randomize the block state of the resulting item. For instance, the following example code can drop stone (0), granite (1), polished granite (2), diorite (3), polished diorite (4), or andesite (5).
@@ -202,25 +223,24 @@ This allows you to randomize the block state of the resulting item. For instance
 }
 ```
 
-### random_aux_value
+### random_dye
 
-Similar to `random_block_state`, this allows you to pick a random auxiliary value for an item. The following example will result in a randomly-colored dye.
+This function affects the colors of the random leather items supplied by a leather worker.
+
+Example:
 
 ```json
-{
-    "type": "item",
-    "name": "minecraft:dye",
-    "weight": 1,
-    "functions": [
-        {
-          "function": "random_aux_value",
-          "values": {
-            "min": 0,
-            "max": 15
-          }
-        }
-    ]
-}
+"gives": [
+           {
+            "item": "minecraft:leather_helmet",
+            "quantity": 1,
+            "functions": [
+                {
+                    "function": "random_dye"
+                }
+              ]
+            }
+]
 ```
 
 ### set_actor_id
@@ -398,7 +418,7 @@ Or you can define a min/max amount the game will randomly choose from. The next 
 
 ### set_data
 
-Sets the data value of a block or item to an exact id. The following example will result in a polished diorite block.
+Sets the data value of a block or item to an exact id. This is useful for things like returning a specific potion or specific color of item. It also allows you to return different block values, like a specific log type.The following example will result in a polished diorite block.
 
 ```json
 {
@@ -474,27 +494,6 @@ This function allows you to set the name of an item. There's currently no suppor
 
 The following contains functions that don't fit anywhere else.
 
-### fill_container
-
-This function allows you to define the loot table for a chest. When the item is generated and the player places it, it will be full of the contents defined inside the referenced loot table.
-
-Loot tables for chests are generated at the time of opening or breaking. Consider it a Schrödinger's box. The content of the chest isn't decided until you look inside.
-
-```json
-  {
-      "type": "item",
-      "name": "minecraft:chest",
-      "functions": [
-          {
-              "function": "fill_container",
-              "loot_table": "loot_tables/chests/simple_dungeon.json"
-          }
-      ]
-  }
-```
-
-It's advisable to always use `set_name` to give the chest a name when using `fill_container`. If you don't, the resulting chest won't look any different in the player's inventory than a normal empty chest would.
-
 ### exploration_map
 
 Transforms a normal map into a treasure map that marks the location of hidden treasure. The `destination` value defines what type of treasure map they receive.
@@ -530,6 +529,27 @@ You could currently choose from the following destinations:
 |temple|
 |village|
 
+### fill_container
+
+This function allows you to define the loot table for a chest. When the item is generated and the player places it, it will be full of the contents defined inside the referenced loot table.
+
+Loot tables for chests are generated at the time of opening or breaking. Consider it a Schrödinger's box. The content of the chest isn't decided until you look inside.
+
+```json
+  {
+      "type": "item",
+      "name": "minecraft:chest",
+      "functions": [
+          {
+              "function": "fill_container",
+              "loot_table": "loot_tables/chests/simple_dungeon.json"
+          }
+      ]
+  }
+```
+
+It's advisable to always use `set_name` to give the chest a name when using `fill_container`. If you don't, the resulting chest won't look any different in the player's inventory than a normal empty chest would.
+
 ### furnace_smelt (loot table only)
 
 If the item to return has a smelted crafting recipe and the loot table is triggered by an entity killed with fire (Fire Aspect, flint and steel, lava, etc), the result will be the smelted version of the item. Due to these requirements, this function does not work in villager trades or with chests. This function only works if used in conjunction with the `minecraft:loot` behavior.
@@ -544,6 +564,78 @@ The following example will drop a stone block if the entity is killed by fire or
     "functions": [
         {
             "function": "furnace_smelt"
+        }
+    ]
+}
+```
+
+### trader_material_type
+
+This function affects the type of items a fisherman wants to trade for other items, such as a boat.
+
+```json
+"wants": [
+            {
+                "item": "minecraft:boat",
+                "quantity": 1,
+                "price_multiplier": 0.05,
+                "functions": [
+                    {
+                      "function": "trader_material_type"
+                    }
+                ]
+            }
+
+```
+
+### Multiple functions
+
+Multiple functions can be defined. Here's an example of combining two functions together. In this example, this entry will return between one and three Potions of Healing.
+
+```json
+{
+    "type": "item",
+    "name": "minecraft:potion",
+    "weight": 1,
+    "functions": [
+        {
+            "function": "set_count",
+            "count": {
+              "min": 1,
+              "max": 3
+            }
+        },
+        {
+            "function": "set_data",
+            "data": 21
+        }
+    ]
+}
+```
+
+Multiple functions can even be multiple of the same function, but if there's a conflict between those functions, the last to be defined will win.
+
+For example, using multiple `set_count` functions, like with the example below, will result in only the last of the duplicates being used, causing the item to have a count between 5 and 7 rather than between 1 and 3.
+
+```json
+{
+    "type": "item",
+    "name": "minecraft:potion",
+    "weight": 1,
+    "functions": [
+        {
+            "function": "set_count",
+            "count": {
+              "min": 1,
+              "max": 3
+            }
+        },
+        {
+            "function": "set_count",
+            "count": {
+              "min": 5,
+              "max": 7
+            }
         }
     ]
 }

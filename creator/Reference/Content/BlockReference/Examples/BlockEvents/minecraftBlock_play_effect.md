@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Block Documentation - play_effect
-ms.prod: gaming
+description: "A reference document detailing the 'play_effect' block event response"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - play_effect

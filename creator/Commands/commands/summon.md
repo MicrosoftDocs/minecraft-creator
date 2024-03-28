@@ -2,7 +2,7 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: summon Command
 description: Description and usage of the summon command
 ---
@@ -48,6 +48,6 @@ A `string` of the in-game event for the entity.
 - `spawnPos: x y z`: position
 A `vector` of `float` numbers for the position of the summoned entity.
 - `xRot`: rotation
-X rotation to have the entity face after summon.
+
 - `yRot`: rotation
-Y rotation to have the entity face after summon.
+

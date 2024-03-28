@@ -1,18 +1,18 @@
 ---
-author: mammerla
-ms.author: v-bbortree
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:height_filter
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:height_filter
 
-This component allows players to set mobs spawn within certain heights of their map.
+Allows players to set specific heights for entities to spawn.
 
 ## Parameters
 
 
 |Name |Default Value|Type |Description |
 |:-----------|:-----------|:-----------|:-----------|
-| max| *not set* |Integer | This is the maximum height level that a mob spawns |
-| min| *not set* |Integer | This is the minimum height level that a mob spawns |
+| max| *not set* |Integer | The maximum height level an entity spawns |
+| min| *not set* |Integer | The minimum height level an entity spawns |

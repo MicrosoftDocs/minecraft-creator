@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.avoid_mob_type
-ms.prod: gaming
+description: "A reference document detailing the 'behavior.avoid_mob_type' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.avoid_mob_type
@@ -17,7 +18,7 @@ ms.prod: gaming
 | avoid_target_xz| 16 | Integer| The next target position the entity chooses to avoid another entity will be chosen within this XZ Distance. |
 | avoid_target_y| 7 | Integer | The next target position the entity chooses to avoid another entity will be chosen within this Y Distance. |
 | entity_types| | Minecraft Filter| The list of conditions another entity must meet to be a valid target to avoid. |
-| ignore_visibilty| false | Boolean | Whether or not to ignore direct line of sight while this entity is running away from other specified entities. |
+| ignore_visibility| false | Boolean | Whether or not to ignore direct line of sight while this entity is running away from other specified entities. |
 | max_dist| 3.0 | Decimal | Maximum distance to look for an avoid target for the entity. |
 | max_flee| 10.0 | Decimal | How many blocks away from its avoid target the entity must be for it to stop fleeing from the avoid target. |
 | on_escape_event| | Trigger | Event that is triggered when escaping from a mob. |

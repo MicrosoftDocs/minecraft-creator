@@ -1,16 +1,17 @@
 ---
-author: mammerla
-ms.author: v-bbortree
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:weight
-ms.prod: gaming
+description: "A reference document detailing the 'weight' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:weight
 
-This component allows players to set a priority for how often that mob should spawn. Mobs with lower weight values will have a lower chance to spawn than mobs with higher weight values.
+Allows players to set a priority for how often an entity should spawn. Entities with lower weight values will have a lower chance to spawn than entities with higher weight values.
 
 ## Parameters
 
 |Name |Default Value |Type |Description |
 |:-----------|:-----------|:-----------|:-----------|
-|default |*not set*|Decimal| This is the priority of the mob spawning out of 100. |
+|default |*not set*|Decimal| This is the priority out of 100 of the entity spawning. |

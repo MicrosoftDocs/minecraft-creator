@@ -2,7 +2,7 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: camerashake Command
 description: Description and usage of the camerashake command
 ---
@@ -51,4 +51,4 @@ Variation of the camera's shaking.
 - `positional`
 Shakes camera as though target's X and Z position is changing rapidly.
 - `rotational`
-Shakes camera as though target's X,Y,and Z coordinates are changing rapidly.
+Shakes camera as though target's X, Y, and Z coordinates are changing rapidly.

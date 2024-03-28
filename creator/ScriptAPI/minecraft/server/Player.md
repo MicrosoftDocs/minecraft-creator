@@ -2,22 +2,68 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.Player Class
 description: Contents of the @minecraft/server.Player class.
 ---
 # Player Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 ## Extends
 - [*Entity*](Entity.md)
-
-## Classes that extend Player
-- [*SimulatedPlayer*](SimulatedPlayer.md)
 
 Represents a player within the world.
 
 ## Properties
+
+### **camera**
+`read-only camera: Camera;`
+
+The player's Camera.
+
+Type: [*Camera*](Camera.md)
+
+> [!WARNING]
+> This property can throw errors when used.
+
+### **isEmoting**
+`read-only isEmoting: boolean;`
+
+If true, the player is currently emoting.
+
+Type: *boolean*
+
+> [!WARNING]
+> This property can throw errors when used.
+
+### **isFlying**
+`read-only isFlying: boolean;`
+
+Whether the player is flying. For example, in Creative or Spectator mode.
+
+Type: *boolean*
+
+> [!WARNING]
+> This property can throw errors when used.
+
+### **isGliding**
+`read-only isGliding: boolean;`
+
+Whether the player is gliding with Elytra.
+
+Type: *boolean*
+
+> [!WARNING]
+> This property can throw errors when used.
+
+### **isJumping**
+`read-only isJumping: boolean;`
+
+Whether the player is jumping. This will remain true while the player is holding the jump action.
+
+Type: *boolean*
+
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **level**
 `read-only level: number;`
@@ -26,8 +72,8 @@ The current overall level for the player, based on their experience.
 
 Type: *number*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **name**
 `read-only name: string;`
@@ -36,6 +82,9 @@ Name of the player.
 
 Type: *string*
 
+> [!WARNING]
+> This property can throw errors when used.
+
 ### **onScreenDisplay**
 `read-only onScreenDisplay: ScreenDisplay;`
 
@@ -43,9 +92,10 @@ Contains methods for manipulating the on-screen display of a Player.
 
 Type: [*ScreenDisplay*](ScreenDisplay.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+> [!WARNING]
+> This property can throw errors when used.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **selectedSlot**
 `selectedSlot: number;`
 
@@ -55,16 +105,10 @@ Type: *number*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-### **spawnDimension**
-`read-only spawnDimension?: Dimension;`
-
-If this player has an individual spawn point set, returns the dimension that their spawn point is within.
-
-Type: [*Dimension*](Dimension.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
+::: moniker-end
 
 ### **totalXpNeededForNextLevel**
 `read-only totalXpNeededForNextLevel: number;`
@@ -73,8 +117,8 @@ The overall total set of experience needed to achieve the next level for a playe
 
 Type: *number*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **xpEarnedAtCurrentLevel**
 `read-only xpEarnedAtCurrentLevel: number;`
@@ -83,24 +127,54 @@ The current set of experience achieved for the player.
 
 Type: *number*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Methods
 - [addExperience](#addexperience)
 - [addLevels](#addlevels)
-- [clearSpawn](#clearspawn)
+::: moniker range="=minecraft-bedrock-experimental"
+- [eatItem](#eatitem)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [getGameMode](#getgamemode)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [getItemCooldown](#getitemcooldown)
-- [getSpawnPosition](#getspawnposition)
+::: moniker-end
+- [getSpawnPoint](#getspawnpoint)
 - [getTotalXp](#gettotalxp)
+::: moniker range="=minecraft-bedrock-experimental"
 - [isOp](#isop)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [playMusic](#playmusic)
+::: moniker-end
 - [playSound](#playsound)
+::: moniker range="=minecraft-bedrock-experimental"
 - [postClientMessage](#postclientmessage)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [queueMusic](#queuemusic)
+::: moniker-end
 - [resetLevel](#resetlevel)
 - [sendMessage](#sendmessage)
+::: moniker range="=minecraft-bedrock-experimental"
+- [setGameMode](#setgamemode)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [setOp](#setop)
-- [setSpawn](#setspawn)
+::: moniker-end
+- [setSpawnPoint](#setspawnpoint)
+::: moniker range="=minecraft-bedrock-experimental"
+- [spawnParticle](#spawnparticle)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [startItemCooldown](#startitemcooldown)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [stopMusic](#stopmusic)
+::: moniker-end
 
 ### **addExperience**
 `
@@ -112,12 +186,12 @@ Adds/removes experience to/from the Player and returns the current experience of
 #### **Parameters**
 - **amount**: *number*
   
-  Amount of experience to add. Note that this can be negative.
+  Amount of experience to add. Note that this can be negative. Min/max bounds at -2^24 ~ 2^24
 
-#### **Returns** *number* - Returns the current experience of the Player.
+**Returns** *number* - Returns the current experience of the Player.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -127,65 +201,93 @@ Adds/removes experience to/from the Player and returns the current experience of
 addLevels(amount: number): number
 `
 
- Adds/removes level to/from the Player and returns the current level of the Player.
+Adds/removes level to/from the Player and returns the current level of the Player.
 
 #### **Parameters**
 - **amount**: *number*
   
-  Amount to add to the player.
+  Amount to add to the player. Min/max bounds at -2^24 ~ 2^24
 
-#### **Returns** *number* - Returns the current level of the Player.
+**Returns** *number* - Returns the current level of the Player.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **eatItem**
+`
+eatItem(itemStack: ItemStack): void
+`
+
+Eats an item, providing the item's hunger and saturation effects to the player. Can only be used on food items.
+
+#### **Parameters**
+- **itemStack**: [*ItemStack*](ItemStack.md)
+  
+  The item to eat.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws if the item is not a food item.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getGameMode**
+`
+getGameMode(): GameMode
+`
+
+Retrieves the active gamemode for this player, if specified.
+
+**Returns** [*GameMode*](GameMode.md)
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end
 
-### **clearSpawn**
-`
-clearSpawn(): void
-`
-
-Clears the spawn point that has been individually set for a player.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
-
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getItemCooldown**
 `
-getItemCooldown(itemCategory: string): number
+getItemCooldown(cooldownCategory: string): number
 `
 
 Gets the current item cooldown time for a particular cooldown category.
 
 #### **Parameters**
-- **itemCategory**: *string*
+- **cooldownCategory**: *string*
   
   Specifies the cooldown category to retrieve the current cooldown for.
 
-#### **Returns** *number*
+**Returns** *number*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end
 
-### **getSpawnPosition**
+### **getSpawnPoint**
 `
-getSpawnPosition(): Vector3 | undefined
+getSpawnPoint(): DimensionLocation | undefined
 `
 
-Returns an individualized spawn position, if set, for a player.
+Gets the current spawn point of the player.
 
-#### **Returns** [*Vector3*](Vector3.md) | *undefined* - The individual spawn position, or undefined if there is no specific spawn position set for a player.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+**Returns** [*DimensionLocation*](DimensionLocation.md) | *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -197,14 +299,12 @@ getTotalXp(): number
 
  Gets the total experience of the Player.
 
-#### **Returns** *number*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+**Returns** *number*
 
 > [!WARNING]
 > This function can throw errors.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **isOp**
 `
 isOp(): boolean
@@ -212,32 +312,61 @@ isOp(): boolean
 
 Returns true if this player has operator-level permissions.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **playMusic**
+`
+playMusic(trackId: string, musicOptions?: MusicOptions): void
+`
+
+Plays a music track that only this particular player can hear.
+
+#### **Parameters**
+- **trackId**: *string*
+  
+  Identifier of the music track to play.
+- **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
+  
+  Additional options for the music track.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+::: moniker-end
 
 ### **playSound**
 `
-playSound(soundID: string, soundOptions?: PlayerSoundOptions): void
+playSound(soundId: string, soundOptions?: PlayerSoundOptions): void
 `
 
 Plays a sound that only this particular player can hear.
 
 #### **Parameters**
-- **soundID**: *string*
-  
-  Identifier of the sound to play.
+- **soundId**: *string*
 - **soundOptions**?: [*PlayerSoundOptions*](PlayerSoundOptions.md) = `null`
   
   Additional optional options for the sound.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **postClientMessage**
 `
 postClientMessage(id: string, value: string): void
@@ -252,8 +381,44 @@ This is an internal-facing method for posting a system message to downstream cli
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **queueMusic**
+`
+queueMusic(trackId: string, musicOptions?: MusicOptions): void
+`
+
+Queues an additional music track that only this particular player can hear. If a track is not playing, a music track will play.
+
+#### **Parameters**
+- **trackId**: *string*
+  
+  Identifier of the music track to play.
+- **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
+  
+  Additional options for the music track.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> An error will be thrown if volume is less than 0.0.
+>
+> An error will be thrown if fade is less than 0.0.
+>
+> 
+::: moniker-end
 
 ### **resetLevel**
 `
@@ -262,8 +427,8 @@ resetLevel(): void
 
 Resets the level of the player.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -281,36 +446,63 @@ Sends a message to the player.
   The message to be displayed.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > This method can throw if the provided [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) is in an invalid format. For example, if an empty `name` string is provided to `score`.
 
-#### **Examples**
-##### *nestedTranslation.ts*
-```javascript
-// Displays "Apple or Coal"
-let rawMessage = {
-  translate: "accessibility.list.or.two",
-  with: { rawtext: [{ translate: "item.apple.name" }, { translate: "item.coal.name" }] },
-};
-player.sendMessage(rawMessage);
-```
-##### *scoreWildcard.ts*
-```javascript
-// Displays the player's score for objective "obj". Each player will see their own score.
-const rawMessage = { score: { name: "*", objective: "obj" } };
-world.sendMessage(rawMessage);
-```
-##### *simpleString.ts*
-```javascript
-// Displays "Hello, world!"
-world.sendMessage("Hello, world!");
-```
-##### *translation.ts*
-```javascript
-// Displays "First or Second"
-const rawMessage = { translate: "accessibility.list.or.two", with: ["First", "Second"] };
-player.sendMessage(rawMessage);
+#### Examples
+##### ***sendMessagesToPlayer.ts***
+```typescript
+import { Player } from "@minecraft/server";
+
+function sendPlayerMessages(player: Player) {
+    // Displays "First or Second"
+    const rawMessage = { translate: 'accessibility.list.or.two', with: ['First', 'Second'] };
+    player.sendMessage(rawMessage);
+
+    // Displays "Hello, world!"
+    player.sendMessage('Hello, world!');
+
+    // Displays "Welcome, Amazing Player 1!"
+    player.sendMessage({ translate: 'authentication.welcome', with: ['Amazing Player 1'] });
+
+    // Displays the player's score for objective "obj". Each player will see their own score.
+    const rawMessageWithScore = { score: { name: '*', objective: 'obj' } };
+    player.sendMessage(rawMessageWithScore);
+    
+    // Displays "Apple or Coal"
+    const rawMessageWithNestedTranslations = {
+        translate: 'accessibility.list.or.two',
+        with: { rawtext: [{ translate: 'item.apple.name' }, { translate: 'item.coal.name' }] },
+    };
+    player.sendMessage(rawMessageWithNestedTranslations);
+}
 ```
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **setGameMode**
+`
+setGameMode(gameMode?: GameMode): void
+`
+
+Sets a gamemode override for this player. 
+
+#### **Parameters**
+- **gameMode**?: [*GameMode*](GameMode.md) = `null`
+  
+  Active gamemode.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
 ### **setOp**
 `
 setOp(isOp: boolean): void
@@ -324,39 +516,98 @@ Will change the specified players permissions, and whether they are operator or 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end
 
-### **setSpawn**
+### **setSpawnPoint**
 `
-setSpawn(spawnPosition: Vector3, spawnDimension: Dimension): void
+setSpawnPoint(spawnPoint?: DimensionLocation): void
 `
 
-Sets the individual spawn point of this player.
+Sets the current starting spawn point for this particular player.
 
 #### **Parameters**
-- **spawnPosition**: [*Vector3*](Vector3.md)
+- **spawnPoint**?: [*DimensionLocation*](DimensionLocation.md) = `null`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **spawnParticle**
+`
+spawnParticle(effectName: string, location: Vector3, molangVariables?: MolangVariableMap): void
+`
+
+Creates a new particle emitter at a specified location in the world. Only visible to the target player.
+
+#### **Parameters**
+- **effectName**: *string*
   
-  Location of the spawn point.
-- **spawnDimension**: [*Dimension*](Dimension.md)
+  Identifier of the particle to create.
+- **location**: [*Vector3*](Vector3.md)
   
-  Dimension to place the players' individualized spawn point within.
+  The location at which to create the particle emitter.
+- **molangVariables**?: [*MolangVariableMap*](MolangVariableMap.md) = `null`
+  
+  A set of optional, customizable variables that can be adjusted for this particle.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
+#### Examples
+##### ***spawnParticle.ts***
+```typescript
+import { world, MolangVariableMap, Vector3 } from '@minecraft/server';
+
+world.afterEvents.playerSpawn.subscribe(event => {
+    const targetLocation = event.player.location;
+    for (let i = 0; i < 100; i++) {
+        const molang = new MolangVariableMap();
+
+        molang.setColorRGB('variable.color', {
+            red: Math.random(),
+            green: Math.random(),
+            blue: Math.random()
+        });
+
+        const newLocation: Vector3 = {
+            x: targetLocation.x + Math.floor(Math.random() * 8) - 4,
+            y: targetLocation.y + Math.floor(Math.random() * 8) - 4,
+            z: targetLocation.z + Math.floor(Math.random() * 8) - 4,
+        };
+        event.player.spawnParticle('minecraft:colored_flame_particle', newLocation, molang);
+    }
+});
+```
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
 ### **startItemCooldown**
 `
-startItemCooldown(itemCategory: string, tickDuration: number): void
+startItemCooldown(cooldownCategory: string, tickDuration: number): void
 `
 
 Sets the item cooldown time for a particular cooldown category.
 
 #### **Parameters**
-- **itemCategory**: *string*
+- **cooldownCategory**: *string*
   
   Specifies the cooldown category to retrieve the current cooldown for.
 - **tickDuration**: *number*
@@ -366,5 +617,27 @@ Sets the item cooldown time for a particular cooldown category.
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **stopMusic**
+`
+stopMusic(): void
+`
+
+Stops any music tracks from playing for this particular player.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+::: moniker-end

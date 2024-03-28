@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Particle Documentation - Particle Motion Dynamic component
-ms.prod: gaming
+description: "A reference document detailing the 'particle motion dynamic' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Particle Motion Dynamic component

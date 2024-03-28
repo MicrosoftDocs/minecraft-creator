@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: mikeam
 title: Entity Documentation - weather_at_position
-ms.prod: gaming
+description: "A reference document detailing the 'weather_at_position' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - weather_at_position
@@ -16,6 +17,7 @@ Tests the current weather, at the actor's position, against a provided weather v
 |value |*not set* |String |(Required) The weather type to test against. |
 
 ## values
+
 clear - no precipitation
 rain - precipitation, or snow in cold biomes
 thunder - lightning and sky noises, or blizzard in cold biomes
@@ -28,7 +30,7 @@ thunder - lightning and sky noises, or blizzard in cold biomes
 | Options| Description |
 |:-----------|:-----------|
 | block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
+| damager| The damaging entity involved with the interaction. |
 | other| The other member of an interaction, not the caller. |
 | parent| The caller's current parent. |
 | player| The player involved with the interaction. |

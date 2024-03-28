@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Block Documentation -minecraft:on_placed
-ms.prod: gaming
+description: "A reference document detailing the 'on_placed' block trigger"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - minecraft:on_placed
@@ -23,7 +24,7 @@ ms.prod: gaming
 
 ```json
 "minecraft:on_placed":{
-    "condition": "query.block_property(custom:normal_facing_up) == true", //custom condition
+    "condition": "query.block_state(custom:normal_facing_up) == true", //custom condition
     "event" : "the_thing_has_been_placed", //custom event
     "target": "self"
 }

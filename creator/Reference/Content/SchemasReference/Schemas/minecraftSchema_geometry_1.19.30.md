@@ -2,12 +2,13 @@
 author: mammerla
 ms.author: mikeam
 title: "Schema Documentation - geometry:1.19.30"
-ms.prod: gaming
+description: "A reference document detailing the 'geometry:1.19.30' schema"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Schema Documentation - geometry:1.19.30
 
-This schema corresponds to the *.geo.json files in the "models/entity" folder of the resource pack.
+This schema corresponds to the *.geo.json files in the "models" folder of the resource pack.
 
 ```json
 geometry:1.19.30:{

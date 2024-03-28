@@ -2,19 +2,13 @@
 author: mammerla
 ms.author: mikeam
 title: Item Documentation - minecraft:throwable
-ms.prod: gaming
+description: "A reference document detailing the 'throwable' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:throwable
 
 `minecraft:throwable` sets the throwable item component.
-
->[!IMPORTANT]
-> `minecraft:throwable` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
->
->Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
->
->To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md)
 
 ## Parameters
 
@@ -26,6 +20,8 @@ ms.prod: gaming
 |max_launch_power|1.0|Float |The maximum power to launch the throwable item.|
 |min_draw_duration|0.0|Float |The minimum duration to draw a throwable item.|
 |scale_power_by_draw_duration|false|Boolean|Whether or not the power of the throw increases with duration charged. When true, The longer you hold, the more power it will have when released.|
+
+See [Custom Item Use Priority](../ItemUsePriority.md) for more information on use behavior.
 
 ## Example
 

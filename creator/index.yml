@@ -7,11 +7,11 @@ metadata:
   title: "Minecraft: Bedrock Edition Creator Documentation" # Required; page title shown in search results < 60 chars
   description: "Learn how to mod Minecraft with Add-Ons. Create skins, design unique experiences, discover the latest features, and develop your skills as a Minecraft creator." # < 160 chars
   service: service
-  ms.service: service # Required; service per approved list.
+  ms.service: minecraft-bedrock-edition
   ms.topic: hub-page # Required
   ms.date: 08/30/2021
   author: mammerla # Required; Github alias
-  ms.author: v-jillheaden # Required; Microsoft alias; with correct grammar
+  ms.author: kakinnun # Required; Microsoft alias; with correct grammar
 
 # highlighted content section (optional), will outlined up to 8 items in a 4x2 grid.
 highlightedContent:
@@ -26,21 +26,21 @@ highlightedContent:
       itemType: whats-new
       url: Documents/EditorOverview.md
     #card
-    - title: "1.19.80 Update Summary"
+    - title: "1.20.70 Update Summary"
       itemType: whats-new
-      url: Documents/Update1.19.80.md
+      url: Documents/Update1.20.70.md
     #card
-    - title: New /execute Syntax
+    - title: Camera Command
       itemType: whats-new
-      url: Documents/CommandsNewExecute.md
+      url: Documents/CameraCommandIntroduction.md
     #card
-    - title: "Entity Properties"
+    - title: "Building Editor Extensions"
       itemType: whats-new
-      url: Documents/IntroductionToEntityProperties.md
+      url: Documents/EditorExtensionsIntroduction.md
     #card
-    - title: Advanced Custom Blocks
+    - title: Minecraft Item Wizard
       itemType: whats-new
-      url: Documents/AdvancedCustomBlocks.md
+      url: Documents/MinecraftItemWizard.md
 
 # productDirectory section (optional)
 productDirectory:
@@ -85,7 +85,7 @@ conceptualContent:
               itemType: how-to-guide
               text: How to add a Custom Block
         # card
-        - title: Build a "Complete the Monument" world with Commands
+        - title: Build a simple game with Commands
           summary: "Commands are a powerful way to add logic into your experiences."
           links:
             - url: Documents/CommandsIntroduction.md
@@ -96,10 +96,14 @@ conceptualContent:
               text: Popular Commands
             - url: Documents/CommandBlocks.md
               itemType: get-started
-              text: Getting Started with Command Blocks
-            - url: Documents/CommandsHowToMakeACTMWorld.md
-              itemType: get-started
-              text: How To Make a Complete the Monument World
+              text: Introduction to Command Blocks
+            - url: Documents/CreateAnInWorldGame.md
+              itemType: how-to-guide
+              text: Create an In-World Game with Commands
+            - url: Commands/index.yml
+              itemType: reference
+              text: Command Reference Documentation
+
         # card
         - title: Adding new Minecraft Entities
           summary: "Learn how to create and implement your own custom entities."
@@ -119,6 +123,9 @@ conceptualContent:
             - url: Documents/IntroductionToEntityProperties.md
               itemType: tutorial
               text: Entity Properties
+            - url: Reference/Content/molangreference/index.yml
+              itemType: reference
+              text: Molang Documentation
         # card
         - title: Adding NPCs
           summary: "Populate your world with interactive characters to create unique narrative experiences."
@@ -138,80 +145,77 @@ conceptualContent:
             text: Introduction to Loot Tables
           - url: Documents/LootAndTradeTableFunctions.md
             itemType: overview
-            text: Loot and Trade Table Functions
-          - url: Documents/LootSpawnAndKill.md
+            text: Loot Overloads
+          - url: Documents/LootOverloads.md
             itemType: overview
-            text: Learn about Loot Spawn and Kill
+            text: Learn about Loot Overloads
         # card
-        - title: Working with Chunker
-          summary: "Utilize Chunker to convert your existing Minecraft: Java Edition worlds to Minecraft: Bedrock Edition"
+        - title: Adding new Custom Blocks
+          summary: "Learn how to make your own custom blocks to decorate your world."
           links:
-          - url: Documents/ChunkerOverview.md
-            itemType: overview
-            text: Chunker - Overview
-          - url: Documents/ChunkerWorldSettings.md
+          - url: Documents/AddCustomDieBlock.md
             itemType: tutorial
-            text: Chunker - World Settings
-          - url: Documents/ChunkerTheNether.md
+            text: Simple Blocks
+          - url: Documents/AdvancedCustomBlocks.md
             itemType: tutorial
-            text: Chunker - How to Clear The Nether
-          - url: Documents/ChunkerAdvancedMode.md
+            text: Unique Shape Blocks
+          - url: Documents/CustomBlockRenderLighting.md
             itemType: tutorial
-            text: Chunker - Advanced Mode
+            text: Block Render and Lighting Options
+          - url: Documents/CustomBlockOversized.md
+            itemType: tutorial
+            text: Oversized Blocks
     # Reference Section
     - title: References  # < 60 chars (optional)
       summary: "Learn how content works with Reference documentation and how GameTest can empower your workflow." # < 160 chars (optional)
       items:
       # card
       - title: Using Script APIs
-        summary: "Learn how new experimental Script APIs can speed up your development time."
+        summary: "Learn how new Script APIs can speed up your development time and make more dynamic content."
         links:
+          - url:  Documents/ScriptingIntroduction.md
+            itemType: get-started
+            text: Getting Started with Scripting APIs
+          - url: ScriptAPI/index.yml
+            itemType: reference
+            text: Scripting API Reference
+          - url:  Documents/ScriptingGettingStarted.md
+            itemType: get-started
+            text: Using TypeScript with Minecraft Scripting APIs
           - url: Documents/ScriptDeveloperTools.md
             itemType: how-to-guide
             text: Use Visual Studio Code tools to write script
-          - url: ScriptAPI/minecraft/server-gametest/minecraft-server-gametest.md
-            itemType: reference
-            text: GameTest API
-          - url:  Documents/GameTestGettingStarted.md
+          - url: Documents/EditorExtensionsIntroduction.md
             itemType: get-started
-            text: Getting Started with GameTest
-          - url: Documents/GameTestBuildYourFirstGameTest.md
-            itemType: how-to-guide
-            text: Build your first GameTest
+            text: Getting Started with Editor Extensions
       # card
-      - title: Reference Documentation
-        summary: "Need a hand creating your content? View the reference documentation to see how things work in-game."
+      - title: JSON Reference Documentation
+        summary: "Need a hand creating your content? View the JSON reference documentation to see how things work in-game."
         links:
           - url: Reference/Content/addonsreference/index.yml
             itemType: reference
-            text: Addons JSON Documentation
+            text: Addons JSON
           - url: Reference/Content/animationsreference/index.yml
             itemType: reference
-            text: Animation JSON Documentation
+            text: Animation JSON
           - url: Reference/Content/blockreference/index.yml
             itemType: reference
-            text: Block JSON Documentation
+            text: Block JSON
           - url: Reference/Content/entityreference/index.yml
             itemType: reference
-            text: Entity JSON Documentation
+            text: Entity JSON
           - url: Reference/Content/featuresreference/index.yml
             itemType: reference
-            text: Features JSON Documentation
+            text: Features JSON
           - url: Reference/Content/itemreference/index.yml
             itemType: reference
-            text: Item JSON Documentation
-          - url: Reference/Content/molangreference/index.yml
-            itemType: reference
-            text: Molang Documentation
+            text: Item JSON
           - url: Reference/Content/Recipereference/index.yml
             itemType: reference
-            text: Recipe JSON Documentation
+            text: Recipe JSON
           - url: Reference/Content/particlesreference/index.yml
             itemType: reference
-            text: Particle JSON Documentation
-          - url: Reference/Content/volumereference/index.yml
-            itemType: reference
-            text: Volume JSON Documentation
+            text: Particle JSON
       # card
       - title: Common Schema Documentation
         summary: "See how Schemas are used to validate JSON files in Minecraft: Bedrock Edition "
@@ -234,9 +238,6 @@ tools:
     - title: Visual Studio Code
       imageSrc: images/VSCode.png
       url: "https://code.visualstudio.com/Download"
-    - title: Vanilla Behavior Pack
+    - title: Vanilla Resource and Behavior Packs
       imageSrc: images/ResourcePack64.png
       url: "https://aka.ms/behaviorpacktemplate"
-    - title: Vanilla Resource Pack
-      imageSrc: images/ResourcePack64.png
-      url: "https://aka.ms/resourcepacktemplate"

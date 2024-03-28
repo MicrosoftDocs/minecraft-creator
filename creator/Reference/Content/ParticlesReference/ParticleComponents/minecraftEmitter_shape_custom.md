@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Particle Documentation - Emitter Shape Custom component
-ms.prod: gaming
+description: "A reference document detailing the 'emitter shape custom' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Emitter Shape Custom component
@@ -15,7 +16,7 @@ All particles are emitted  based on a specified set of Molang expressions.
     // evaluated once per particle emitted
     "offset": [<float/molang>, <float/molang>, <float/molang>] <default:[0, 0, 0]>
 
-    // specifies the direciton for the particle
+    // specifies the direction for the particle
     // evaluated once per particle emitted
     "direction": [<float/molang>, <float/molang>, <float/molang>] <default:[0, 0, 0]
 }

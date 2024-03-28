@@ -1,9 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Introduction to Sound
-ms.prod: gaming
-description: A guide detailing the basics of sounds in Minecraft: Bedrock Edition.
+description: "A guide detailing the basics of sounds in Minecraft: Bedrock Edition"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Introduction to Sounds

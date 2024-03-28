@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Molang - A Beginner's Guide
-ms.prod: gaming
 description: "A first look at Molang"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Molang: a Beginner's Guide

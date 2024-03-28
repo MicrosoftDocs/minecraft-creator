@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: axolotl
-ms.prod: gaming
+description: "A code snippet for the axolotl entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # axolotl

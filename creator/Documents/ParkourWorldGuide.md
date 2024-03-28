@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-bbortree
 title: Parkour Map Creation Guide
-ms.prod: gaming
 description: "Steps to creating a gameplay loop using a Parkour map."
+ms.service: minecraft-bedrock-edition
 ---
 
 # Parkour World Creation Guide
@@ -113,7 +113,7 @@ We'll talk about sharing a world with others. There are several approaches possi
 
 - Create a realm to invite other players to
 - Host a game with your friends in your world
-- [Packaging a World Template](PackagingAWorldTemplate.md) with our handy guide
+- [Create a World Template](CreateAWorldTemplate.md) with our handy guide
 
 ## What's Next?
 

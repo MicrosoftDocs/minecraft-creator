@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - has_mob_effect
-ms.prod: gaming
+description: "A reference document detailing the 'has_mob_effect' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - has_mob_effect
@@ -11,7 +12,7 @@ Tests whether the Subject has the specified mob effect.
 
 ## Parameters
 
-> [!Important]
+> [!IMPORTANT]
 > `has_mob_effect` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `has_mob_effect` can use `subject`. [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
@@ -21,7 +22,7 @@ Tests whether the Subject has the specified mob effect.
 | Options| Description |
 |:-----------|:-----------|
 | block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
+| damager| The damaging entity involved with the interaction. |
 | other| The other member of an interaction, not the caller. |
 | parent| The caller's current parent. |
 | player| The player involved with the interaction. |

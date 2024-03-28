@@ -2,8 +2,8 @@
 author: kakinnun
 ms.author: kakinnun
 title: 1.19.80 Update Notes
-ms.prod: gaming
 description: Update summary of Creator changes in Bedrock 1.19.80
+ms.service: minecraft-bedrock-edition
 ---
 # Minecraft Bedrock 1.19.80 Update Notes for Creators
 
@@ -20,7 +20,7 @@ No existing Holiday Creator Features left experimental this release. But two new
 
 **New Block Transformation Component**
 
-Added a new [transformation](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_transformation.md) component for blocks to support rotation, scaling and translation. The component can be added to the whole block, and/or to individual [block permutations](../Reference/Content/BlockReference/Examples/BlockPropertiesAndPermutations.md#block-permutations).
+Added a new [transformation](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_transformation.md) component for blocks to support rotation, scaling and translation. The component can be added to the whole block, and/or to individual [block permutations](../Reference/Content/BlockReference/Examples/BlockStatesAndPermutations.md#block-permutations).
 
 ````JSON
 "minecraft:transformation": {

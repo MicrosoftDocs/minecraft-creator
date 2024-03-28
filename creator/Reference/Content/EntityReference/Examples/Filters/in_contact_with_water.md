@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: v-mammerla
 title: Entity Documentation - in_contact_with_water
-ms.prod: gaming
+description: "A reference document detailing the 'in_contact_with_water' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - in_contact_with_water
@@ -11,7 +12,7 @@ Returns true when the subject entity is inside a specified Block type.
 
 ## Parameters
 
-> [!Note]
+> [!NOTE]
 > `in_contact_with_water` does **not** require any parameters to work properly. It can be used as a standalone filter.
 >
 > `in_contact_with_water` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
@@ -21,7 +22,7 @@ Returns true when the subject entity is inside a specified Block type.
 | Options| Description |
 |:-----------|:-----------|
 | block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
+| damager| The damaging entity involved with the interaction. |
 | other| The other member of an interaction, not the caller. |
 | parent| The caller's current parent. |
 | player| The player involved with the interaction. |

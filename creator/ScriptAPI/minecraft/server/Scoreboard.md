@@ -2,15 +2,11 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.Scoreboard Class
 description: Contents of the @minecraft/server.Scoreboard class.
 ---
 # Scoreboard Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains objectives and participants for the scoreboard.
 
@@ -21,45 +17,46 @@ Contains objectives and participants for the scoreboard.
 - [getObjectiveAtDisplaySlot](#getobjectiveatdisplayslot)
 - [getObjectives](#getobjectives)
 - [getParticipants](#getparticipants)
-- [getScore](#getscore)
 - [removeObjective](#removeobjective)
 - [setObjectiveAtDisplaySlot](#setobjectiveatdisplayslot)
-- [setScore](#setscore)
 
 ### **addObjective**
 `
-addObjective(objectiveId: string, displayName: string): ScoreboardObjective
+addObjective(objectiveId: string, displayName?: string): ScoreboardObjective
 `
 
 Adds a new objective to the scoreboard.
 
 #### **Parameters**
 - **objectiveId**: *string*
-- **displayName**: *string*
+- **displayName**?: *string* = `null`
 
-#### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md)
+**Returns** [*ScoreboardObjective*](ScoreboardObjective.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **clearObjectiveAtDisplaySlot**
 `
-clearObjectiveAtDisplaySlot(displaySlotId: string): ScoreboardObjective
+clearObjectiveAtDisplaySlot(displaySlotId: DisplaySlotId): ScoreboardObjective | undefined
 `
 
 Clears the objective that occupies a display slot.
 
 #### **Parameters**
-- **displaySlotId**: *string*
+- **displaySlotId**: [*DisplaySlotId*](DisplaySlotId.md)
 
-#### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md)
+**Returns** [*ScoreboardObjective*](ScoreboardObjective.md) | *undefined*
 
-> [!WARNING]
-> This function can throw errors.
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 ### **getObjective**
 `
-getObjective(objectiveId: string): ScoreboardObjective
+getObjective(objectiveId: string): ScoreboardObjective | undefined
 `
 
 Returns a specific objective (by id).
@@ -69,25 +66,19 @@ Returns a specific objective (by id).
   
   Identifier of the objective.
 
-#### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md)
-
-> [!WARNING]
-> This function can throw errors.
+**Returns** [*ScoreboardObjective*](ScoreboardObjective.md) | *undefined*
 
 ### **getObjectiveAtDisplaySlot**
 `
-getObjectiveAtDisplaySlot(displaySlotId: string): ScoreboardObjectiveDisplayOptions
+getObjectiveAtDisplaySlot(displaySlotId: DisplaySlotId): ScoreboardObjectiveDisplayOptions | undefined
 `
 
 Returns an objective that occupies the specified display slot.
 
 #### **Parameters**
-- **displaySlotId**: *string*
+- **displaySlotId**: [*DisplaySlotId*](DisplaySlotId.md)
 
-#### **Returns** [*ScoreboardObjectiveDisplayOptions*](ScoreboardObjectiveDisplayOptions.md)
-
-> [!WARNING]
-> This function can throw errors.
+**Returns** [*ScoreboardObjectiveDisplayOptions*](ScoreboardObjectiveDisplayOptions.md) | *undefined*
 
 ### **getObjectives**
 `
@@ -96,10 +87,7 @@ getObjectives(): ScoreboardObjective[]
 
 Returns all defined objectives.
 
-#### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md)[]
-
-> [!WARNING]
-> This function can throw errors.
+**Returns** [*ScoreboardObjective*](ScoreboardObjective.md)[]
 
 ### **getParticipants**
 `
@@ -108,30 +96,7 @@ getParticipants(): ScoreboardIdentity[]
 
 Returns all defined scoreboard identities.
 
-#### **Returns** [*ScoreboardIdentity*](ScoreboardIdentity.md)[]
-
-> [!WARNING]
-> This function can throw errors.
-
-### **getScore**
-`
-getScore(objective: ScoreboardObjective, participant: ScoreboardIdentity): number
-`
-
-Returns a score given an objective and participant.
-
-#### **Parameters**
-- **objective**: [*ScoreboardObjective*](ScoreboardObjective.md)
-  
-  Objective to retrieve the score for.
-- **participant**: [*ScoreboardIdentity*](ScoreboardIdentity.md)
-  
-  Participant to retrieve the score for.
-
-#### **Returns** *number* - Score value.
-
-> [!WARNING]
-> This function can throw errors.
+**Returns** [*ScoreboardIdentity*](ScoreboardIdentity.md)[]
 
 ### **removeObjective**
 `
@@ -143,44 +108,29 @@ Removes an objective from the scoreboard.
 #### **Parameters**
 - **objectiveId**: [*ScoreboardObjective*](ScoreboardObjective.md) | *string*
 
-#### **Returns** *boolean*
+**Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **setObjectiveAtDisplaySlot**
 `
-setObjectiveAtDisplaySlot(displaySlotId: string, objectiveDisplaySetting: ScoreboardObjectiveDisplayOptions): ScoreboardObjective
+setObjectiveAtDisplaySlot(displaySlotId: DisplaySlotId, objectiveDisplaySetting: ScoreboardObjectiveDisplayOptions): ScoreboardObjective | undefined
 `
 
 Sets an objective into a display slot with specified additional display settings.
 
 #### **Parameters**
-- **displaySlotId**: *string*
+- **displaySlotId**: [*DisplaySlotId*](DisplaySlotId.md)
 - **objectiveDisplaySetting**: [*ScoreboardObjectiveDisplayOptions*](ScoreboardObjectiveDisplayOptions.md)
 
-#### **Returns** [*ScoreboardObjective*](ScoreboardObjective.md)
+**Returns** [*ScoreboardObjective*](ScoreboardObjective.md) | *undefined* - Returns the previous `ScoreboardObjective` set at the display slot, if no objective was previously set it returns `undefined`.
 
-> [!WARNING]
-> This function can throw errors.
-
-### **setScore**
-`
-setScore(objective: ScoreboardObjective, participant: ScoreboardIdentity, score: number): boolean
-`
-
-Sets the score given a participant and objective.
-
-#### **Parameters**
-- **objective**: [*ScoreboardObjective*](ScoreboardObjective.md)
-  
-  Objective to use for the scoreboard.
-- **participant**: [*ScoreboardIdentity*](ScoreboardIdentity.md)
-  
-  Participant to apply the scoreboard value to.
-- **score**: *number*
-
-#### **Returns** *boolean*
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

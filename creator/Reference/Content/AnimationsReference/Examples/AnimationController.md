@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: mikeam
 title: Animation Documentation - Animation Controllers
-ms.prod: gaming
+description: "A reference document detailing animation controllers"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Animation Documentation - Animation Controllers
@@ -11,7 +12,7 @@ Animation controllers decide which animations to play and when.  Each controller
 
 ## Animation Controller Format
 
-```JSON
+```json
 {
   "format_version": "1.17.30",
   "animation_controllers": {
@@ -61,7 +62,7 @@ If you would like there to be a cross-fade between states when transitioning, si
 
 #### Example of State Blending
 
-```JSON
+```json
 "controller.animation.tiger.move": {
   "states": {
     "default": {
@@ -90,7 +91,7 @@ Below, we use the `crouch` and `stuck` portions of the fox animation controller 
 > [!NOTE]
 > Only one transition will be processed per frame.
 
-```JSON
+```json
 "animation_controllers" : {
   "controller.animation.fox.move" : {
    "initial_state" : "default",
@@ -134,7 +135,7 @@ Below, we use the `crouch` and `stuck` portions of the fox animation controller 
 
 #### Example of State Transitions
 
-```JSON
+```json
 "controller.animation.tiger.move": {
   "states": {
     "default": {
@@ -153,7 +154,7 @@ Below, we use the `crouch` and `stuck` portions of the fox animation controller 
     "tired": {
       "animations": [ "yawn", "stretch" ],
       "transitions": [
-        { "default": "query.all_animation_finished" } // transition back to default state when the yawn and stretch animations have both finished
+        { "default": "query.all_animations_finished" } // transition back to default state when the yawn and stretch animations have both finished
       ]
     }
   }
@@ -168,7 +169,7 @@ Variables are either set by the game or by a user-defined script that can be fou
 
 This defines a controller with a single state.  It will create a variable `variable.ground_speed_curve` that lives on the entity only while processing the animation controller for that frame.  It will take the value of `query.ground_speed`, then remap it to between 0.2 and 0.7 based on the value of `query.ground_speed` going from 0.0 to 1.0It will play one animation walk that will blend from 0.0 to 1.0 as the ground speed increases from stopped to 2.3 m/s.  The remap curve can have any number of entries.  The animation controller will then play the entity-referenced `wiggle_nose` animations, followed by the `walk` animation, scaling the latter by the value of `variable.ground_speed_curve`.
 
-```JSON
+```json
 {
   "format_version": "1.17.30",
   "animation_controllers": {
@@ -204,7 +205,7 @@ This script will set foo to the result of the sine of `query.life_time` to later
 
 In definitions\entity\tiger.json:
 
-```JSON
+```json
 {
   "custom:tiger":{
     "scripts":{
@@ -218,7 +219,7 @@ In definitions\entity\tiger.json:
 
 Because foo is equal to a sin wave, its values will range from -1 to 1.  This means that you will have a period from 0 to -1 to 0 where only `base_pose` will play and then an equal amount of time where `walk` will play on top of base_pose as foo goes from 0 to 1 back to 0.  `base_pose` will have a blend value of 1.0.
 
-```JSON
+```json
 "controller.animation.tiger.move": {
   "states": {
     "default": {

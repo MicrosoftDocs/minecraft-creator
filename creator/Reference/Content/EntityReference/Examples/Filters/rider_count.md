@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author: mikeam
 title: Entity Documentation - rider_count
-ms.prod: gaming
+description: "A reference document detailing the 'rider_count' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - rider_count
@@ -23,7 +24,7 @@ Returns the number of riders on this entity.
 | Options| Description |
 |:-----------|:-----------|
 | block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
+| damager| The damaging entity involved with the interaction. |
 | other| The other member of an interaction, not the caller. |
 | parent| The caller's current parent. |
 | player| The player involved with the interaction. |

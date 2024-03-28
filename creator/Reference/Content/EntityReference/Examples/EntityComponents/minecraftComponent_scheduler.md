@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:scheduler
-ms.prod: gaming
+description: "A reference document detailing the 'scheduler' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:scheduler
@@ -16,7 +17,6 @@ ms.prod: gaming
 | scheduled_events| *not set*| List| The list of triggers that initiate when the conditions match the given filter criteria. If any filter criteria overlap, the first defined event will be picked. |
 |min_delay_secs|0.0||Decimal| The minimum amount in seconds the scheduler will be delayed.|
 |max_delay_secs|0.0||Decimal| The maximum amount in seconds the scheduler will be delayed.|
-
 
 ## Example
 

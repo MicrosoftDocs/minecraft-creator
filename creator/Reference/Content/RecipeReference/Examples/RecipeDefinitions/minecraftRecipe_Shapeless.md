@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Recipe Documentation - Shapeless Recipe
-ms.prod: gaming
+description: "A reference document detailing shapeless recipes"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Recipe Documentation - Shapeless Recipe
@@ -23,7 +24,7 @@ Represents a shapeless crafting recipe.
 
 ## Shapeless Recipe Example
 
-```JSON
+```json
 {
 "format_version": "1.17",
     "minecraft:recipe_shapeless": {

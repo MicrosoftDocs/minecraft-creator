@@ -1,9 +1,9 @@
 ---
 ms.author: mikeam
 title: Script Module Versioning
-ms.prod: gaming
 author: mammerla
 description: "Describes the fundamentals of how script API modules are versioned"
+ms.service: minecraft-bedrock-edition
 ---
 # Script Module Versioning
 
@@ -16,6 +16,24 @@ Minecraft API modules currently operate on three tracks:
 * an internal track (for example, version `1.4.0-internal`)
 
 When specifying dependencies within `manifest.json` of a behavior pack, it is important to consider the impact of the versions of APIs that you wish to use. Where possible, try to use stable track APIs (although admittedly, as of version 1.19.60, stable track APIs are fairly limited.)
+
+## @minecraft/server script versions to product versions
+
+For reference, @minecraft/server is our most frequently updating script module. It tends to increment
+in version number with every major release of Minecraft. Here are the mappings of @minecraft/server version
+to Minecraft product version:
+
+| @minecraft/server module version | Minecraft product version |
+|:-----------|:-----------|
+| 1.0.0 | 1.19.70 |
+| 1.1.0 | 1.19.80 |
+| 1.2.0 | 1.20.0 |
+| 1.3.0 | 1.20.10 |
+| 1.4.0 | 1.20.20 |
+| 1.5.0 | 1.20.30 |
+| 1.6.0 | 1.20.40 |
+| 1.7.0 | 1.20.50 |
+| 1.8.0 | 1.20.60 |
 
 ## Stable Track
 

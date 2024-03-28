@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: 
-ms.prod: gaming
+description: "A code snippet for the fireworks_rocket entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # fireworks_rocket

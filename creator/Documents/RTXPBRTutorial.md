@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-bbortree
 title: Physically Based Rendering Tutorial
-ms.prod: gaming
-description: A guide to creating textures using RTX Physically Based Rendering with Adobe Photoshop
+description: "A guide to creating textures using RTX Physically Based Rendering with Adobe Photoshop"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Physically Based Rendering Tutorial
@@ -44,7 +44,7 @@ First, you will need to create a Texture Set .JSON file that will load your new 
 
 ### emerald_ore.texture_set.json
 
-```JSON
+```json
 {
   "format_version": "1.16.100",
   "minecraft:texture_set": {

@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: wandering_trader
-ms.prod: gaming
+description: "A code snippet for the wandering_trader entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # wandering_trader

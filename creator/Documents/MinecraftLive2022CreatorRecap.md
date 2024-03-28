@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Minecraft Live 2022 Creator Recap
-ms.prod: gaming
-description: Minecraft Live 2022 Creator Recap
+description: "Minecraft Live 2022 Creator Recap"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Minecraft Live 2022 Creator Recap

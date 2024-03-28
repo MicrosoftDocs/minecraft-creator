@@ -2,14 +2,41 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-admin.ServerSecrets Class
 description: Contents of the @minecraft/server-admin.ServerSecrets class.
 ---
 # ServerSecrets Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 A collection of server secrets defined in dedicated server configuration.
+
+#### Examples
+##### ***getPlayerProfile.ts***
+```typescript
+import { variables, secrets } from "@minecraft/server-admin";
+import { http, HttpRequest, HttpRequestMethod, HttpHeader, HttpResponse } from "@minecraft/server-net";
+
+const serverUrl = variables.get('serverEndpoint');
+
+function getPlayerProfile(playerId: string): Promise<HttpResponse> {
+    const req = new HttpRequest(serverUrl + 'getPlayerProfile');
+
+    req.body = JSON.stringify({
+        playerId,
+    });
+
+    const authTokenSec = secrets.get('authtoken');
+
+    if (!authTokenSec) {
+        throw new Error('authtoken secret not defined.');
+    }
+
+    req.method = HttpRequestMethod.Post;
+    req.headers = [new HttpHeader('Content-Type', 'application/json'), new HttpHeader('auth', authTokenSec)];
+
+    return http.request(req);
+}
+```
 
 ## Properties
 
@@ -33,20 +60,35 @@ Returns a SecretString that is a placeholder for a secret configured in a JSON f
 #### **Parameters**
 - **name**: *string*
 
-#### **Returns** [*SecretString*](SecretString.md) | *undefined*
+**Returns** [*SecretString*](SecretString.md) | *undefined*
 
-#### **Examples**
-##### *getPlayerProfile.ts*
-```javascript
-  const serverUrl = mcsa.variables.get("serverEndpoint");
-  const req = new mcnet.HttpRequest(serverUrl + "getPlayerProfile");
-  req.body = JSON.stringify({
-    playerId: "johndoe",
-  });
-  req.method = mcnet.HttpRequestMethod.POST;
-  req.headers = [
-    new mcnet.HttpHeader("Content-Type", "application/json"),
-    new mcnet.HttpHeader("auth", mcsa.secrets.get("authtoken")),
-  ];
-  const response: any = await mcnet.http.request(req);
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+#### Examples
+##### ***getPlayerProfile.ts***
+```typescript
+import { variables, secrets } from "@minecraft/server-admin";
+import { http, HttpRequest, HttpRequestMethod, HttpHeader, HttpResponse } from "@minecraft/server-net";
+
+const serverUrl = variables.get('serverEndpoint');
+
+function getPlayerProfile(playerId: string): Promise<HttpResponse> {
+    const req = new HttpRequest(serverUrl + 'getPlayerProfile');
+
+    req.body = JSON.stringify({
+        playerId,
+    });
+
+    const authTokenSec = secrets.get('authtoken');
+
+    if (!authTokenSec) {
+        throw new Error('authtoken secret not defined.');
+    }
+
+    req.method = HttpRequestMethod.Post;
+    req.headers = [new HttpHeader('Content-Type', 'application/json'), new HttpHeader('auth', authTokenSec)];
+
+    return http.request(req);
+}
 ```

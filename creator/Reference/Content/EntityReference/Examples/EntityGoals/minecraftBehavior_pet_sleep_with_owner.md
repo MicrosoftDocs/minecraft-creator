@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.pet_sleep_with_owner
-ms.prod: gaming
+description: "A reference document detailing the 'behavior.pet_sleep_with_owner' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.pet_sleep_with_owner

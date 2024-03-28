@@ -2,20 +2,36 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityOnFireComponent Class
 description: Contents of the @minecraft/server.EntityOnFireComponent class.
 ---
 # EntityOnFireComponent Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*EntityComponent*](EntityComponent.md)
 
 When present on an entity, this entity is on fire.
+
+#### Examples
+##### ***setEntityOnFire.ts***
+```typescript
+import { world, Entity, EntityComponentTypes, system } from "@minecraft/server";
+
+function setAblaze(entity: Entity) {
+    entity.setOnFire(20, true);
+
+    system.runTimeout(() => {
+        const onfire = entity.getComponent(EntityComponentTypes.OnFire);
+        if (onfire) {
+            world.sendMessage(`${onfire.onFireTicksRemaining} fire ticks remaining, extinguishing the entity.`);
+        }
+        // This will extinguish the entity
+        entity.extinguishFire(true);
+    }, 30); // Run in 30 ticks or ~1.5 seconds
+    
+}
+```
 
 ## Properties
 
@@ -32,3 +48,23 @@ Type: *number*
 `static read-only componentId = "minecraft:onfire";`
 
 Type: *string*
+
+#### Examples
+##### ***setEntityOnFire.ts***
+```typescript
+import { world, Entity, EntityComponentTypes, system } from "@minecraft/server";
+
+function setAblaze(entity: Entity) {
+    entity.setOnFire(20, true);
+
+    system.runTimeout(() => {
+        const onfire = entity.getComponent(EntityComponentTypes.OnFire);
+        if (onfire) {
+            world.sendMessage(`${onfire.onFireTicksRemaining} fire ticks remaining, extinguishing the entity.`);
+        }
+        // This will extinguish the entity
+        entity.extinguishFire(true);
+    }, 30); // Run in 30 ticks or ~1.5 seconds
+    
+}
+```

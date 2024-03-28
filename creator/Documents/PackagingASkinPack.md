@@ -1,20 +1,23 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: JimSeaman42
+ms.author: mikeam
 title: Packaging a Skin Pack
-ms.prod: gaming
+description: "A guide to skin packs in Minecraft: Bedrock Edition"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Packaging a Skin Pack
 
-In this tutorial you will learn the following:
+Skin packs are some of the most popular content available, offering players multiple looks for their avatars and fundamentally changing the feel of their gameplay experience. Creating a skin pack is not only a great way to offer something new to players, it's also a lot of fun both technically and artistically!
+
+In this guide you will learn:
 
 > [!div class="checklist"]
 >
 > - The folder and file structure for skin packs in Minecraft: Bedrock Edition.
 > - How to construct the necessary metadata files for a skin pack and how to define skins using them.
 
-### Skin Pack Folder Structure
+## Skin Pack Folder Structure
 
 ![Folder structure of the whole skin pack](Media/PackagingASkinPack/folderstructure.png)
 
@@ -135,46 +138,3 @@ skin.TemplateSkinPack.TemplateSkin4=Skin Name 4
 skin.TemplateSkinPack.TemplateSkin5=Skin Name 5
 ```
 
-### languages.json
-
-This file tells Minecraft what languages your skin pack supports. Only English is required. If you want to support other languages you can make other `xx_YY.lang` files and then edit this to tell the game you support them.
-
-The following locales/languages are currently supported:
-
-- "en_US"
-- "de_DE"
-- "ru_RU"
-- "zh_CN"
-- "fr_FR"
-- "it_IT"
-- "pt_BR"
-- "fr_CA"
-- "zh_TW"
-- "es_MX"
-- "es_ES"
-- "pt_PT"
-- "en_GB"
-- "ko_KR"
-- "ja_JP"
-- "nl_NL"
-- "bg_BG"
-- "cs_CZ"
-- "da_DK"
-- "el_GR"
-- "fi_FI"
-- "hu_HU"
-- "id_ID"
-- "nb_NO"
-- "pl_PL"
-- "sk_SK"
-- "sv_SE"
-- "tr_TR"
-- "uk_UA"
-
-#### Template languages.json
-
-```json
-[
-  "en_US"
-]
-```

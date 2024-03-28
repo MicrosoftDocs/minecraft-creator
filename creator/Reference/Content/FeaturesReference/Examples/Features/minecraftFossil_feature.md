@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicnurdle
+ms.author: mikeam
 title: Features Documentation - minecraft:fossil_feature
-ms.prod: gaming
+description: "A reference document detailing the 'fossil_feature' feature"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Features Documentation - minecraft:fossil_feature
@@ -15,7 +16,23 @@ The fossil is placed.
 **Fails if**
 The fossil is not placed because it overlaps with another structure or because its bounding box has too many corners occupied by air or fluid.
 
-**Example use: Fossil composed of bone blocks and coal ore blocks.**
+### Schema
+
+```json
+object "minecraft:fossil_feature" : opt
+{
+  object "description"
+  {
+  string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+  }
+  "ore_block"
+  int "max_empty_corners"
+}
+```
+
+### Example
+
+Fossil composed of bone blocks and coal ore blocks
 
 ```json
 {

@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - minecraft:friction_modifier
-ms.prod: gaming
+description: "A reference document detailing the 'friction_modifier' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation -  minecraft:friction_modifier

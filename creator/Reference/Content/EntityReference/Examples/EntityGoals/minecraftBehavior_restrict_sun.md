@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.restrict_sun
-ms.prod: gaming
+description: "A reference document detailing the 'behavior.restrict_sun' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.restrict_sun

@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Particle Component List
-ms.prod: gaming
+description: "A reference document listing currently available particle components"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Component List
@@ -12,7 +13,7 @@ There are two types of components used with particle systems in Minecraft: Bedro
 > [!NOTE]
 > For fields in these components, the following shorthand is used:
 >
-> ```JSON
+> ```json
 > <float> - field takes a floating point input
 > <float/Molang> - field takes a floating point input or a Molang expression
 > <default:val> - specifies the default value used if no value is given

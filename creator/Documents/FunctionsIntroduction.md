@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-jillheaden
 title: Introduction to Functions
-ms.prod: gaming
-description: "A tutorial that introduces a Creator on how to use functions"
+description: "A tutorial that introduces a creator to using functions"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Introduction to Functions

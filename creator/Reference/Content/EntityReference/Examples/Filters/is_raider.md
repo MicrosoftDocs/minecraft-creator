@@ -1,20 +1,21 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - is_raider
-ms.prod: gaming
+description: "A reference document detailing the 'is_raider' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - is_raider
 
 Tests if the subject is a raider.
 
-### subject
+## subject
 
 | Options| Description |
 |:-----------|:-----------|
 | block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
+| damager| The damaging entity involved with the interaction. |
 | other| The other member of an interaction, not the caller. |
 | parent| The caller's current parent. |
 | player| The player involved with the interaction. |
@@ -55,16 +56,3 @@ Tests if the subject is a raider.
 ```json
 { "test": "is_raider" }
 ```
-
-## Vanilla entities examples
-
-### zoglin
-
-```json
-{ "test": "is_persistent", "value": false }
-```
-
-## Vanilla entities using `is_persistent`
-
-- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
-- [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)

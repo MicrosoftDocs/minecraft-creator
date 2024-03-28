@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.scared
-ms.prod: gaming
+description: "A reference document detailing the 'behavior.scared' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.scared
 
-`minecraft:behavior.scared` compels the a mob to become scared when the weather outside is thundering.
+`minecraft:behavior.scared` compels an entity to become scared when the weather outside is thundering.
 
 ## Parameters
 

@@ -1,13 +1,18 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Block Documentation - minecraft:geometry
-ms.prod: gaming
+description: "A reference document detailing the 'geometry' block component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - minecraft:geometry
 
 `minecraft:geometry` is an `Identifier String` component that specifies the geometry description identifier to use to render this block. This identifier must match an existing geometry identifier in any of the currently loaded resource packs.
+
+## UV Rotation
+In version 1.20.80 and higher, your geometry model can use a new `uv_rotation` attribute, in 90 degeree increments,
+to adjust the rotation of how UV textures apply to cube faces. See [the 1.20.80 geometry reference](../../../SchemasReference/Schemas/minecraftSchema_geometry_1.20.80.md) for more details.
 
 ## Default Value of the Component
 
@@ -24,6 +29,7 @@ Note that all bones default to 'true,' so bones should only be defined if they a
 ```json
 "minecraft:geometry": "geometry.bubble_fish"
 ```
+
 ## Geometry and Bone Visibility Example
 
 ```json
@@ -31,7 +37,7 @@ Note that all bones default to 'true,' so bones should only be defined if they a
         "identifier": "geometry:bubble_fish", 
         "bone_visibility": { 
           "bone1": true, 
-          "bone2": false, 
+          "bone2": false 
         } 
       }
 ```

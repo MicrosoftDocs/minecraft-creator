@@ -1,37 +1,38 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:navigation.generic
-ms.prod: gaming
+description: "A reference document detailing the 'navigation.generic' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:navigation.generic
 
-`minecraft:navigation.generic` allows this entity to generate paths by walking, swimming, flying and/or climbing around and jumping up and down a block.
+`minecraft:navigation.generic` compels the entity to generate paths by walking, swimming, flying, climbing, or jumping up and down a block.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | avoid_damage_blocks| False| Boolean| Tells the pathfinder to avoid blocks that cause damage when finding a path |
-| avoid_portals| False| Boolean| Tells the pathfinder to avoid portals (like nether portals) when finding a path |
-| avoid_sun| False| Boolean| Whether or not the pathfinder should avoid tiles that are exposed to the sun when creating paths |
-| avoid_water| False| Boolean| Tells the pathfinder to avoid water when creating a path |
+| avoid_portals| False| Boolean| Tells the pathfinder to avoid portals when finding a path |
+| avoid_sun| False| Boolean| Determines whether the pathfinder should avoid tiles that are exposed to the sun when creating paths |
+| avoid_water| False| Boolean| Determines whether the pathfinder should avoid water when creating a path |
 | blocks_to_avoid| *not set*| List| Tells the pathfinder which blocks to avoid when creating a path |
-| can_breach| False| Boolean| Tells the pathfinder whether or not it can jump out of water (like a dolphin) |
-| can_break_doors| False| Boolean| Tells the pathfinder that it can path through a closed door and break it |
+| can_breach| False| Boolean| Tells the pathfinder whether or not it can jump out of water, like a dolphin |
+| can_break_doors| False| Boolean| Determines whether the pathfinder can break through doors when creating a path |
 | can_jump| True| Boolean| Tells the pathfinder whether or not it can jump up blocks |
-| can_open_doors| False| Boolean| Tells the pathfinder that it can path through a closed door assuming the AI will open the door |
-| can_open_iron_doors| False| Boolean| Tells the pathfinder that it can path through a closed iron door assuming the AI will open the door |
+| can_open_doors| False| Boolean| Determines whether the pathfinder can path through a closed door when creating a path |
+| can_open_iron_doors| False| Boolean| Determines whether the pathfinder can path through a closed iron door when creating a path |
 | can_pass_doors| True| Boolean| Whether a path can be created through a door |
-| can_path_from_air| False| Boolean| Tells the pathfinder that it can start pathing when in the air |
-| can_path_over_lava| False| Boolean| Tells the pathfinder whether or not it can travel on the surface of the lava |
-| can_path_over_water| False| Boolean| Tells the pathfinder whether or not it can travel on the surface of the water |
-| can_sink| True| Boolean| Tells the pathfinder whether or not it will be pulled down by gravity while in water |
-| can_swim| False| Boolean| Tells the pathfinder whether or not it can path anywhere through water and plays swimming animation along that path |
-| can_walk| True| Boolean| Tells the pathfinder whether or not it can walk on the ground outside water |
-| can_walk_in_lava| False| Boolean| Tells the pathfinder whether or not it can travel in lava like walking on ground |
-| is_amphibious| False| Boolean| Tells the pathfinder whether or not it can walk on the ground underwater |
+| can_path_from_air| False| Boolean| Determines whether the pathfinder can start pathing when in the air |
+| can_path_over_lava| False| Boolean| Determines whether the pathfinder can travel on the surface of lava |
+| can_path_over_water| False| Boolean| Determines whether the pathfinder can travel on the surface of water |
+| can_sink| True| Boolean| Determines whether the pathfinder will be pulled down by gravity while in water |
+| can_swim| False| Boolean| Determines whether the pathfinder can path anywhere through water and play a swimming animation along that path |
+| can_walk| True| Boolean| Determines if the pathfinder can walk on the ground outside water |
+| can_walk_in_lava| False| Boolean| Determines if the pathfinder can walk in lava |
+| is_amphibious| False| Boolean| Determines if the pathfinder can walk on the ground underwater |
 
 ## Example
 

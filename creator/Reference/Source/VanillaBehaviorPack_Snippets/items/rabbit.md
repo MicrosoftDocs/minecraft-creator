@@ -2,9 +2,10 @@
 author: mammerla
 ms.author: mikeam
 title: rabbit
-ms.prod: gaming
+description: "A code snippet for the rabbit item"
+ms.service: minecraft-bedrock-edition
 ---
 
-# rabbit 
+# rabbit
 
 :::code language="json" source="../../VanillaBehaviorPack/items/rabbit.json":::

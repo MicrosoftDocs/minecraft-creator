@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:ageable
-ms.prod: gaming
+description: "A reference document detailing the 'ageable' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:ageable
@@ -17,6 +18,8 @@ ms.prod: gaming
 | duration | 1200.0| Decimal |  Amount of time before the entity grows up, -1 for always a baby. |
 | feed_items |*not set* | List | List of items that can be fed to the entity. Includes 'item' for the item name and 'growth' to define how much time growth is accelerated. |
 | grow_up | *not set* | JSON Object  |  Event to run when the entity grows up. |
+| interact_filters| --| Minecraft Filter| A list of conditions to meet for the entity to be fed. |
+| transform_to_item |-- |Item Description Properties| The feed item used will transform into this item upon successful interaction. Format: `itemName:auxValue`. |
 
 ## Example
 

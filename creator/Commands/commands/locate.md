@@ -2,7 +2,7 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: locate Command
 description: Description and usage of the locate command
 ---
@@ -160,6 +160,7 @@ Bastion Remnant
 - `ancient_city`
 Ancient City
 - `trail_ruins`
+- `trial_chambers`
 - `ancientcity`
 - `bastionremnant`
 - `buriedtreasure`

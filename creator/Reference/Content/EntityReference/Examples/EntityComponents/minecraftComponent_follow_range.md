@@ -1,20 +1,21 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:follow_range
-ms.prod: gaming
+description: "A reference document detailing the 'follow_range' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:follow_range
 
-`minecraft:follow_range` defines the range of blocks that a mob will pursue a target.
+`minecraft:follow_range` defines the range, in blocks, that a mob will pursue a target.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|value|*not set* | Integer| Range of the amount of damage the melee follow_range deals. A negative value can heal the entity instead of hurting it |
-|max| *not set*| Integer|  Duration, in seconds, of the status ailment applied to the damaged entity |
+|value| *not set* | Integer| The radius of the area of blocks the entity will attempt to stay within around a target. |
+|max| *not set*| Integer| Maximum distance the mob will go from a target. |
 
 ## Example
 

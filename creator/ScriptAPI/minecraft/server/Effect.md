@@ -2,15 +2,11 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.Effect Class
 description: Contents of the @minecraft/server.Effect class.
 ---
 # Effect Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Represents an effect - like poison - that has been added to an Entity.
 
@@ -23,6 +19,9 @@ Gets an amplifier that may have been applied to this effect. Sample values range
 
 Type: *number*
 
+> [!WARNING]
+> This property can throw errors when used.
+
 ### **displayName**
 `read-only displayName: string;`
 
@@ -30,9 +29,37 @@ Gets the player-friendly name of this effect.
 
 Type: *string*
 
+> [!WARNING]
+> This property can throw errors when used.
+
 ### **duration**
 `read-only duration: number;`
 
-Gets the entire specified duration, in ticks, of this effect.
+Gets the entire specified duration, in ticks, of this effect. There are 20 ticks per second. Use [*@minecraft/server.TicksPerSecond*](../../minecraft/server/minecraft-server.md#tickspersecond) constant to convert between ticks and seconds.
 
 Type: *number*
+
+> [!WARNING]
+> This property can throw errors when used.
+
+### **typeId**
+`read-only typeId: string;`
+
+Gets the type id of this effect.
+
+Type: *string*
+
+> [!WARNING]
+> This property can throw errors when used.
+
+## Methods
+- [isValid](#isvalid)
+
+### **isValid**
+`
+isValid(): boolean
+`
+
+Returns whether an effect instance is available for use in this context.
+
+**Returns** *boolean*

@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.swim_with_entity
-ms.prod: gaming
+description: "A reference document detailing the 'behavior.swim_with_entity' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.swim_with_entity
@@ -24,7 +25,6 @@ ms.prod: gaming
 |state_check_interval| 0.5| Decimal| Time (in seconds) between checks to determine if this entity should catch up to the entity being followed or match the direction of the entity being followed.|
 |stop_distance| 5| Decimal| Distance, from the entity being followed, at which this entity will stop following that entity.|
 success_rate| 0.1| Decimal| Percent chance to start following another entity, if not already doing so. 1.0 = 100%.|
-
 
 ## Example
 

@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: chorus_fruit
-ms.prod: gaming
+description: "A code snippet for the chorus_fruit item"
+ms.service: minecraft-bedrock-edition
 ---
 
 # chorus_fruit

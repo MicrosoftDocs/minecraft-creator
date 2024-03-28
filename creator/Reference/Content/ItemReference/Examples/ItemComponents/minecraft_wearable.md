@@ -1,27 +1,23 @@
 ---
-author: mammerla
+author: JimSeaman42
 ms.author: mikeam
 title: Item Documentation - minecraft:wearable
-ms.prod: gaming
+description: "A reference document detailing the 'wearable' item component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - minecraft:wearable
 
 `minecraft:wearable` sets the wearable item component.
 
->[!IMPORTANT]
-> `minecraft:wearable` requires the Holiday Creator Features experimental toggle to be set to `true` in order to function properly.
->
->Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
->
->To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../../../../../Documents/ExperimentalFeaturesToggle.md)
-
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|dispensable|*not set*| Boolean|Sets if the item can be dropped by a dispenser block|
-|slot|*not set*| Enumerator| Which equipment slot the item can fit in.|
+|protection|0| Integer| How much protection the wearable has.|
+|slot|*not set*| Enumerator| Determines where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1.|
+
+See [Custom Item Use Priority](../ItemUsePriority.md) for more information on use behavior.
 
 ### slot
 

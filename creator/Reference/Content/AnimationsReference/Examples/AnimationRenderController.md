@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Animation Documentation - Render Controllers
-ms.prod: gaming
+description: "A reference document discussing animation render controllers"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Animation Documentation - Render Controllers
@@ -17,7 +18,7 @@ To begin, create a new folder named "render_controllers" in the root of the Reso
 
 ### Example render controllers JSON for the ocelot entity
 
-```JSONC
+```json
 "format_version": "1.8.0",
 "render_controllers": {
   "controller.render.ocelot": {
@@ -37,7 +38,6 @@ To begin, create a new folder named "render_controllers" in the root of the Reso
     "textures": ["Array.skins[query.variant]"]
   }
 }
-
 ```
 
 ## Examples
@@ -46,7 +46,7 @@ In the following examples, you will see how Render Controllers can be used to dr
 
 ### Example Array for geometry from the sheep JSON
 
-```JSON
+```json
 "arrays": {
   "geometries": {
     "Array.geos": ["Geometry.default", "Geometry.sheared"]
@@ -58,7 +58,7 @@ In the following examples, you will see how Render Controllers can be used to dr
 
 ### Example Array for materials from the spider JSON
 
-```JSON
+```json
 "arrays": {
   "materials": {
     "Array.materials": ["Material.default", "Material.invisible"]
@@ -70,7 +70,7 @@ In the following examples, you will see how Render Controllers can be used to dr
 
 ### Example Array for textures from the villager JSON
 
-```JSON
+```json
 "arrays": {
   "textures": {
     "Array.skins": ["Texture.farmer", "Texture.librarian", "Texture.priest", "Texture.smith", "Texture.butcher"]
@@ -82,7 +82,7 @@ In the following examples, you will see how Render Controllers can be used to dr
 
 ### Example with color for tinting of parts from Armor 1.0 render controller JSON
 
-```JSON
+```json
 "format_version": "1.8.0",
 "render_controllers": {
     "controller.render.armor.chest.v1.0": {
@@ -126,12 +126,11 @@ In the following examples, you will see how Render Controllers can be used to dr
         "textures": ["array.armor_texture[query.armor_texture_slot(1)]", "texture.enchanted"]
     }
 }
-
 ```
 
 ### Example with is_hurt_color from Creeper render controller JSON
 
-```JSON
+```json
 "format_version": "1.8.0",
 "render_controllers": {
     "controller.render.creeper": {
@@ -144,13 +143,13 @@ In the following examples, you will see how Render Controllers can be used to dr
         "b": 1.0,
         "a": 0.5,
     }
+  }
 }
-
 ```
 
 ### Example with on_fire_color from Fireball render controller JSON
 
-```JSON
+```json
 "format_version": "1.8.0",
 "render_controllers": {
     "controller.render.fireball": {
@@ -165,12 +164,11 @@ In the following examples, you will see how Render Controllers can be used to dr
         }
     }
 }
-
 ```
 
 ### Example with overlay_color from Wither Boss render controller JSON
 
-```JSON
+```json
 "format_version": "1.8.0",
 "render_controllers": {
     "controller.render.wither_boss": {
@@ -190,12 +188,11 @@ In the following examples, you will see how Render Controllers can be used to dr
         }
     }
 }
-
 ```
 
 ### Example with part_visibility for turning on and off visibility of parts from Llama JSON
 
-```JSON
+```json
 "format_version": "1.8.0",
 "render_controllers": {
   "controller.render.llama": {
@@ -238,19 +235,17 @@ In the following examples, you will see how Render Controllers can be used to dr
     ]
   }
 }
-
 ```
 
 ### Material array example from Horse render controllers
 
 Saddle will override Mane, which will override TailA, etc.
 
-```JSON
+```json
 "materials": [
   { "*": "Material.default" },
   { "TailA": "Material.horse_hair" },
   { "Mane": "Material.horse_hair" },
   { "*Saddle*": "Material.horse_saddle" }
 ],
-
 ```

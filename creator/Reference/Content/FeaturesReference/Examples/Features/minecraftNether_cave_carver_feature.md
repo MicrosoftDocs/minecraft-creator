@@ -1,0 +1,48 @@
+---
+author: JimSeaman42
+ms.author: mikeam
+title: Features Documentation - minecraft:nether_cave_carver_feature
+description: "A reference document detailing the 'nether_cave_carver_feature' feature"
+ms.service: minecraft-bedrock-edition
+---
+
+# Features Documentation - minecraft:nether_cave_carver_feature
+
+`minecraft:nether_cave_carver_feature` carves a cave through the Nether in the current chunk, and in every chunk around the current chunk in an 8 radial pattern. This feature will also only work when placed specifically in the pass "pregeneration_pass".
+
+### Schema
+
+```json
+object "minecraft:nether_cave_carver_feature" : opt
+{
+  object "description"
+  {
+    string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+  }
+  block_reference "fill_with" : opt // Reference to the block to fill the cave with.
+  molang "width_modifier" : opt // How many blocks to increase the cave radius by, from the center point of the cave.
+  int "skip_carve_chance"<1-*> : opt // The chance to skip doing the carve (1 / value).
+  int "height_limit" : opt // The height limit where we attempt to carve.
+  float_range "y_scale" : opt // The scaling in y.
+  float_range "horizontal_radius_multiplier" : opt // Horizontal radius multiplier.
+  float_range "vertical_radius_multiplier" : opt // Vertical radius multiplier.
+  float_range "floor_level" : opt // Floor Level.
+}
+```
+
+### Example
+
+Carve nether caves normally
+
+```json
+{
+"format_version": "1.16.100",
+  "minecraft:nether_cave_carver_feature": {
+    "description": {
+      "identifier": "minecraft:nether_cave_carver_feature"
+    },
+    "fill_with": "minecraft:air"
+    "width_modifier": 0.0
+  }
+}
+```

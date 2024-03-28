@@ -1,14 +1,14 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Particle Documentation - Emitter Shape Entity-AABB component
-ms.prod: gaming
+description: "A reference document detailing the 'emitter shape entity AABB' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Emitter Shape Entity-AABB component
 
 All particles come out of the axis-aligned bounding box (AABB) for the entity the emitter is attached to, or the emitter point if no entity.
-
 
 ```json
 

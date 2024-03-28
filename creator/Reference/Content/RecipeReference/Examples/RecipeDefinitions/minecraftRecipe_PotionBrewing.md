@@ -1,8 +1,9 @@
 ---
-author: mammerla
+author: JimSeaman42
 ms.author: mikeam
 title: Recipe Documentation - Potion Brewing Container Recipe
-ms.prod: gaming
+description: "A reference document detailing potion brewing container recipes"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Recipe Documentation - Potion Brewing Container Recipe
@@ -20,7 +21,7 @@ Represents a Potion Brewing Container Recipe.
 
 ## Potion Brewing Container Recipe Example
 
-```JSON
+```json
 {
 "format_version": "1.17",
     "minecraft:recipe_brewing_container": {

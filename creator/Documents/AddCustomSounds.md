@@ -1,12 +1,12 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
-title: How to Add Custom Sounds 
-ms.prod: gaming
-description: "A tutorial for adding custom sounds to Minecraft: Bedrock Edition"
+author: JimSeaman42
+ms.author: mikeam
+title: Creating and Adding Custom Sounds 
+description: "A tutorial for creating and adding custom sounds to Minecraft: Bedrock Edition"
+ms.service: minecraft-bedrock-edition
 ---
 
-# Adding Custom Sounds to Minecraft
+# Creating and Adding Custom Sounds to Minecraft
 
 :::image type="content" source="Media/AddCustomSounds/Custom Sounds 1.png" alt-text="Image of player standing with two jukeboxes.":::
 

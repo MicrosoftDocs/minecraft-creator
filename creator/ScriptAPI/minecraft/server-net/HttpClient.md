@@ -2,13 +2,34 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-net.HttpClient Class
 description: Contents of the @minecraft/server-net.HttpClient class.
 ---
 # HttpClient Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
+#### Examples
+##### ***simpleHttpRequest.ts***
+```typescript
+import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
+
+async function updateScore() {
+    const req = new HttpRequest('http://localhost:3000/updateScore');
+
+    req.body = JSON.stringify({
+        score: 22,
+    });
+
+    req.method = HttpRequestMethod.Post;
+    req.headers = [
+        new HttpHeader('Content-Type', 'application/json'),
+        new HttpHeader('auth', 'my-auth-token'),
+    ];
+
+    await http.request(req);
+}
+```
+
 ## Methods
 - [cancelAll](#cancelall)
 - [get](#get)
@@ -24,6 +45,9 @@ Cancels all pending requests.
 #### **Parameters**
 - **reason**: *string*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 ### **get**
 `
 "get"(uri: string): Promise<HttpResponse>
@@ -36,7 +60,10 @@ Performs a simple HTTP get request.
   
   URL to make an HTTP Request to.
 
-#### **Returns** Promise&lt;[*HttpResponse*](HttpResponse.md)&gt; - An awaitable promise that contains the HTTP response.
+**Returns** Promise&lt;[*HttpResponse*](HttpResponse.md)&gt; - An awaitable promise that contains the HTTP response.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 ### **request**
 `
@@ -50,4 +77,51 @@ Performs an HTTP request.
   
   Contains an HTTP Request object with configuration data on the HTTP request.
 
-#### **Returns** Promise&lt;[*HttpResponse*](HttpResponse.md)&gt; - An awaitable promise that contains the HTTP response.
+**Returns** Promise&lt;[*HttpResponse*](HttpResponse.md)&gt; - An awaitable promise that contains the HTTP response.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+#### Examples
+##### ***simpleHttpRequest.ts***
+```typescript
+import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
+
+async function updateScore() {
+    const req = new HttpRequest('http://localhost:3000/updateScore');
+
+    req.body = JSON.stringify({
+        score: 22,
+    });
+
+    req.method = HttpRequestMethod.Post;
+    req.headers = [
+        new HttpHeader('Content-Type', 'application/json'),
+        new HttpHeader('auth', 'my-auth-token'),
+    ];
+
+    await http.request(req);
+}
+```
+
+#### Examples
+##### ***simpleHttpRequest.ts***
+```typescript
+import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
+
+async function updateScore() {
+    const req = new HttpRequest('http://localhost:3000/updateScore');
+
+    req.body = JSON.stringify({
+        score: 22,
+    });
+
+    req.method = HttpRequestMethod.Post;
+    req.headers = [
+        new HttpHeader('Content-Type', 'application/json'),
+        new HttpHeader('auth', 'my-auth-token'),
+    ];
+
+    await http.request(req);
+}
+```

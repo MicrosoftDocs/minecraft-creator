@@ -2,8 +2,8 @@
 author: mammerla
 ms.author: v-bbortree
 title: Introduction to the GameTest Framework
-ms.prod: gaming
-description: A tutorial covering how to get started with GameTest by setting up your environment and running a series of pre-built GameTest examples
+description: "A tutorial covering how to get started with GameTest by setting up your environment and running a series of pre-built GameTest examples"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Introduction to the GameTest Framework
@@ -33,7 +33,7 @@ Let's examine a potential use case for a GameTest. Let's say that we want to val
 
 To run tests within a game, you'll want to create a new world or start with a copy of your existing adventure and experience.
 
-Within this GameTest world, you'll want to ensure that cheats are enabled and that the GameTest Framework experiment is turned on. If you've created GameTest Framework tests within behavior packs, you'll want to add those behavior packs in your world.
+Within this GameTest world, you'll want to ensure that cheats are enabled and that the _Beta APIs_ experiment is turned on. If you've created GameTest Framework tests within behavior packs, you'll want to add those behavior packs in your world.
 
 >[!IMPORTANT]
 >You'll also likely want to specify some additional changes in your environment:

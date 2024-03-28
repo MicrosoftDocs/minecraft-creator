@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Block Documentation - teleport
-ms.prod: gaming
+description: "A reference document detailing the 'teleport' block event response"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Block Documentation - teleport
@@ -20,7 +21,6 @@ ms.prod: gaming
 |land_on_block| true| Boolean|  Determines if the teleport places the target on a block. |
 |max_range| [8.0, 8.0, 8.0]| Vector [a, b, c]|  Max range the target can teleport relative to the origin destination. |
 |[target](../../../EntityReference/Examples/FilterList.md)| self| Minecraft Filter|  The target context to execute against. |
-
 
 ## Example
 

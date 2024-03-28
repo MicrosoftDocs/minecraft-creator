@@ -1,13 +1,14 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:navigation.hover
-ms.prod: gaming
+description: "A reference document detailing the 'navigation.hover' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:navigation.hover
 
-`minecraft:navigation.hover` allows this entity to generate paths in the air like the vanilla Bees do. Keeps them from falling out of the skies and doing predictive movement.
+`minecraft:navigation.hover` compels the entity to generate paths in the air like the vanilla Bees do. Keeps them from falling out of the skies and doing predictive movement.
 
 ## Parameters
 

@@ -2,44 +2,41 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.World Class
 description: Contents of the @minecraft/server.World class.
 ---
 # World Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 A class that wraps the state of a world - a set of dimensions and the environment of Minecraft.
 
 ## Properties
 
 ### **afterEvents**
-`read-only afterEvents: AfterEvents;`
+`read-only afterEvents: WorldAfterEvents;`
 
-Contains a set of events that are applicable to the entirety of the world.
+Contains a set of events that are applicable to the entirety of the world.  Event callbacks are called in a deferred manner. Event callbacks are executed in read-write mode.
 
-Event callbacks are called in a deferred manner.
-
-Event callbacks are executed in read-write mode.
-
-Type: [*AfterEvents*](AfterEvents.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+Type: [*WorldAfterEvents*](WorldAfterEvents.md)
 
 ### **beforeEvents**
-`read-only beforeEvents: BeforeEvents;`
+`read-only beforeEvents: WorldBeforeEvents;`
 
-Contains a set of events that are applicable to the entirety of the world.
+Contains a set of events that are applicable to the entirety of the world. Event callbacks are called immediately. Event callbacks are executed in read-only mode.
 
-Event callbacks are called immediately.
+Type: [*WorldBeforeEvents*](WorldBeforeEvents.md)
 
-Event callbacks are executed in read-only mode.
+::: moniker range="=minecraft-bedrock-experimental"
+### **gameRules**
+`read-only gameRules: GameRules;`
 
-Type: [*BeforeEvents*](BeforeEvents.md)
+The game rules that apply to the world.
+
+Type: [*GameRules*](GameRules.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **scoreboard**
 `read-only scoreboard: Scoreboard;`
@@ -48,29 +45,46 @@ Returns the general global scoreboard that applies to the world.
 
 Type: [*Scoreboard*](Scoreboard.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **structureManager**
+`read-only structureManager: StructureManager;`
+
+Returns the manager for [*@minecraft/server.Structure*](../../minecraft/server/Structure.md) related APIs.
+
+Type: [*StructureManager*](StructureManager.md)
+
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ## Methods
+::: moniker range="=minecraft-bedrock-experimental"
 - [broadcastClientMessage](#broadcastclientmessage)
+::: moniker-end
+- [clearDynamicProperties](#cleardynamicproperties)
 - [getAbsoluteTime](#getabsolutetime)
 - [getAllPlayers](#getallplayers)
-- [getDefaultSpawnPosition](#getdefaultspawnposition)
+- [getDay](#getday)
+- [getDefaultSpawnLocation](#getdefaultspawnlocation)
 - [getDimension](#getdimension)
 - [getDynamicProperty](#getdynamicproperty)
+- [getDynamicPropertyIds](#getdynamicpropertyids)
+- [getDynamicPropertyTotalByteCount](#getdynamicpropertytotalbytecount)
 - [getEntity](#getentity)
+- [getMoonPhase](#getmoonphase)
 - [getPlayers](#getplayers)
-- [getTime](#gettime)
+- [getTimeOfDay](#gettimeofday)
 - [playMusic](#playmusic)
 - [playSound](#playsound)
 - [queueMusic](#queuemusic)
-- [removeDynamicProperty](#removedynamicproperty)
 - [sendMessage](#sendmessage)
-- [setDefaultSpawn](#setdefaultspawn)
+- [setAbsoluteTime](#setabsolutetime)
+- [setDefaultSpawnLocation](#setdefaultspawnlocation)
 - [setDynamicProperty](#setdynamicproperty)
-- [setTime](#settime)
+- [setTimeOfDay](#settimeofday)
 - [stopMusic](#stopmusic)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **broadcastClientMessage**
 `
 broadcastClientMessage(id: string, value: string): void
@@ -80,10 +94,25 @@ A method that is internal-only, used for broadcasting specific messages between 
 
 #### **Parameters**
 - **id**: *string*
+  
+  The message identifier.
 - **value**: *string*
+  
+  The message.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+::: moniker-end
+
+### **clearDynamicProperties**
+`
+clearDynamicProperties(): void
+`
+
+Clears the set of dynamic properties declared for this behavior pack within the world.
 
 ### **getAbsoluteTime**
 `
@@ -92,10 +121,7 @@ getAbsoluteTime(): number
 
 Returns the absolute time since the start of the world.
 
-#### **Returns** *number*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+**Returns** *number*
 
 ### **getAllPlayers**
 `
@@ -104,22 +130,28 @@ getAllPlayers(): Player[]
 
 Returns an array of all active players within the world.
 
-#### **Returns** [*Player*](Player.md)[]
+**Returns** [*Player*](Player.md)[]
 
 > [!WARNING]
 > This function can throw errors.
 
-### **getDefaultSpawnPosition**
+### **getDay**
 `
-getDefaultSpawnPosition(): Vector3
+getDay(): number
 `
 
-Returns the default spawn position within the world where players are spawned if they don't have a specific spawn position set.
+Returns the current day.
 
-#### **Returns** [*Vector3*](Vector3.md) - Returns the default spawn position.
+**Returns** *number* - The current day, determined by the world time divided by the number of ticks per day. New worlds start at day 0.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+### **getDefaultSpawnLocation**
+`
+getDefaultSpawnLocation(): Vector3
+`
+
+Returns the default Overworld spawn location. 
+
+**Returns** [*Vector3*](Vector3.md) - The default Overworld spawn location. By default, the Y coordinate is 32767, indicating a player's spawn height is not fixed and will be determined by surrounding blocks.
 
 ### **getDimension**
 `
@@ -130,29 +162,121 @@ Returns a dimension object.
 
 #### **Parameters**
 - **dimensionId**: *string*
+  
+  The name of the dimension. For example, "overworld", "nether" or "the_end".
 
-#### **Returns** [*Dimension*](Dimension.md) - The requested dimension
+**Returns** [*Dimension*](Dimension.md) - The requested dimension
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if the given dimension name is invalid
 
 ### **getDynamicProperty**
 `
-getDynamicProperty(identifier: string): boolean | number | string | undefined
+getDynamicProperty(identifier: string): boolean | number | string | Vector3 | undefined
 `
 
 Returns a property value.
 
 #### **Parameters**
 - **identifier**: *string*
+  
+  The property identifier.
 
-#### **Returns** *boolean* | *number* | *string* | *undefined* - Returns the value for the property, or undefined if the property has not been set.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+**Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws if the given dynamic property identifier is not defined.
+
+#### Examples
+##### ***incrementDynamicProperty.ts***
+```typescript
+import * as mc from '@minecraft/server';
+
+function incrementProperty(propertyName: string): boolean {
+    let number = mc.world.getDynamicProperty(propertyName);
+
+    console.warn('Current value is: ' + number);
+
+    if (number === undefined) {
+        number = 0;
+    }
+
+    if (typeof number !== 'number') {
+        console.warn('Number is of an unexpected type.');
+        return false;
+    }
+
+    mc.world.setDynamicProperty(propertyName, number + 1);
+    return true;
+}
+
+incrementProperty('samplelibrary:number');
+```
+##### ***incrementDynamicPropertyInJsonBlob.ts***
+```typescript
+import * as mc from '@minecraft/server';
+
+function updateWorldProperty(propertyName: string): boolean {
+    let paintStr = mc.world.getDynamicProperty(propertyName);
+    let paint: { color: string; intensity: number } | undefined = undefined;
+
+    console.log('Current value is: ' + paintStr);
+
+    if (paintStr === undefined) {
+        paint = {
+            color: 'purple',
+            intensity: 0,
+        };
+    } else {
+        if (typeof paintStr !== 'string') {
+            console.warn('Paint is of an unexpected type.');
+            return false;
+        }
+
+        try {
+            paint = JSON.parse(paintStr);
+        } catch (e) {
+            console.warn('Error parsing serialized struct.');
+            return false;
+        }
+    }
+
+    if (!paint) {
+        console.warn('Error parsing serialized struct.');
+        return false;
+    }
+
+    paint.intensity++;
+    paintStr = JSON.stringify(paint); // be very careful to ensure your serialized JSON str cannot exceed limits
+    mc.world.setDynamicProperty(propertyName, paintStr);
+
+    return true;
+}
+
+updateWorldProperty('samplelibrary:longerjson');
+```
+
+### **getDynamicPropertyIds**
+`
+getDynamicPropertyIds(): string[]
+`
+
+Gets a set of dynamic property identifiers that have been set in this world.
+
+**Returns** *string*[] - A string array of active dynamic property identifiers.
+
+### **getDynamicPropertyTotalByteCount**
+`
+getDynamicPropertyTotalByteCount(): number
+`
+
+Gets the total byte count of dynamic properties. This could potentially be used for your own analytics to ensure you're not storing gigantic sets of dynamic properties.
+
+**Returns** *number*
 
 ### **getEntity**
 `
@@ -166,13 +290,21 @@ Returns an entity based on the provided id.
   
   The id of the entity.
 
-#### **Returns** [*Entity*](Entity.md) | *undefined* - The requested entity object.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+**Returns** [*Entity*](Entity.md) | *undefined* - The requested entity object.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > Throws if the given entity id is invalid.
+
+### **getMoonPhase**
+`
+getMoonPhase(): MoonPhase
+`
+
+Returns the MoonPhase for the current time.
+
+**Returns** [*MoonPhase*](MoonPhase.md)
 
 ### **getPlayers**
 `
@@ -186,83 +318,157 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
   
   Additional options that can be used to filter the set of players returned.
 
-#### **Returns** [*Player*](Player.md)[] - A player array.
+**Returns** [*Player*](Player.md)[] - A player array.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws if the provided EntityQueryOptions are invalid.
 
-### **getTime**
+### **getTimeOfDay**
 `
-getTime(): number
+getTimeOfDay(): number
 `
 
-Sets the current game time of the day.
+Returns the time of day.
 
-#### **Returns** *number*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+**Returns** *number* - The time of day, in ticks, between 0 and 24000.
 
 ### **playMusic**
 `
-playMusic(trackID: string, musicOptions?: MusicOptions): void
+playMusic(trackId: string, musicOptions?: MusicOptions): void
 `
 
 Plays a particular music track for all players.
 
 #### **Parameters**
-- **trackID**: *string*
+- **trackId**: *string*
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
 
+#### Examples
+##### ***playMusicAndSound.ts***
+```typescript
+import { world, MusicOptions, WorldSoundOptions, PlayerSoundOptions, Vector3 } from '@minecraft/server';
+
+const players = world.getPlayers();
+const targetLocation: Vector3 = {
+    x: 0,
+    y: 0,
+    z: 0,
+};
+
+const musicOptions: MusicOptions = {
+    fade: 0.5,
+    loop: true,
+    volume: 1.0,
+};
+world.playMusic('music.menu', musicOptions);
+
+const worldSoundOptions: WorldSoundOptions = {
+    pitch: 0.5,
+    volume: 4.0,
+};
+world.playSound('ambient.weather.thunder', targetLocation, worldSoundOptions);
+
+const playerSoundOptions: PlayerSoundOptions = {
+    pitch: 1.0,
+    volume: 1.0,
+};
+
+players[0].playSound('bucket.fill_water', playerSoundOptions);
+```
+
 ### **playSound**
 `
-playSound(soundID: string, location: Vector3, soundOptions?: WorldSoundOptions): void
+playSound(soundId: string, location: Vector3, soundOptions?: WorldSoundOptions): void
 `
 
 Plays a sound for all players.
 
 #### **Parameters**
-- **soundID**: *string*
+- **soundId**: *string*
 - **location**: [*Vector3*](Vector3.md)
 - **soundOptions**?: [*WorldSoundOptions*](WorldSoundOptions.md) = `null`
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
+>
+> An error will be thrown if volume is less than 0.0.
+>
+> An error will be thrown if fade is less than 0.0.
+>
+> An error will be thrown if pitch is less than 0.01.
+>
+> An error will be thrown if volume is less than 0.0.
+
+#### Examples
+##### ***playMusicAndSound.ts***
+```typescript
+import { world, MusicOptions, WorldSoundOptions, PlayerSoundOptions, Vector3 } from '@minecraft/server';
+
+const players = world.getPlayers();
+const targetLocation: Vector3 = {
+    x: 0,
+    y: 0,
+    z: 0,
+};
+
+const musicOptions: MusicOptions = {
+    fade: 0.5,
+    loop: true,
+    volume: 1.0,
+};
+world.playMusic('music.menu', musicOptions);
+
+const worldSoundOptions: WorldSoundOptions = {
+    pitch: 0.5,
+    volume: 4.0,
+};
+world.playSound('ambient.weather.thunder', targetLocation, worldSoundOptions);
+
+const playerSoundOptions: PlayerSoundOptions = {
+    pitch: 1.0,
+    volume: 1.0,
+};
+
+players[0].playSound('bucket.fill_water', playerSoundOptions);
+```
 
 ### **queueMusic**
 `
-queueMusic(trackID: string, musicOptions?: MusicOptions): void
+queueMusic(trackId: string, musicOptions?: MusicOptions): void
 `
 
 Queues an additional music track for players. If a track is not playing, a music track will play.
 
 #### **Parameters**
-- **trackID**: *string*
+- **trackId**: *string*
+  
+  Identifier of the music track to play.
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
+  
+  Additional options for the music track.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
-
-### **removeDynamicProperty**
-`
-removeDynamicProperty(identifier: string): boolean
-`
-
-Removes a specified property.
-
-#### **Parameters**
-- **identifier**: *string*
-
-#### **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
+>
+> An error will be thrown if volume is less than 0.0.
+>
+> An error will be thrown if fade is less than 0.0.
+>
+> 
 
 ### **sendMessage**
 `
@@ -277,85 +483,189 @@ Sends a message to all players.
   The message to be displayed.
 
 > [!WARNING]
+> This function can throw errors.
+>
 > This method can throw if the provided [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) is in an invalid format. For example, if an empty `name` string is provided to `score`.
 
-#### **Examples**
-##### *nestedTranslation.ts*
-```javascript
+#### Examples
+##### ***nestedTranslation.ts***
+```typescript
+import { world } from '@minecraft/server';
+
 // Displays "Apple or Coal"
-let rawMessage = {
-  translate: "accessibility.list.or.two",
-  with: { rawtext: [{ translate: "item.apple.name" }, { translate: "item.coal.name" }] },
+const rawMessage = {
+    translate: 'accessibility.list.or.two',
+    with: { rawtext: [{ translate: 'item.apple.name' }, { translate: 'item.coal.name' }] },
 };
 world.sendMessage(rawMessage);
 ```
-##### *scoreWildcard.ts*
-```javascript
+##### ***scoreWildcard.ts***
+```typescript
+import { world } from '@minecraft/server';
+
 // Displays the player's score for objective "obj". Each player will see their own score.
-const rawMessage = { score: { name: "*", objective: "obj" } };
+const rawMessage = { score: { name: '*', objective: 'obj' } };
 world.sendMessage(rawMessage);
 ```
-##### *simpleString.ts*
-```javascript
+##### ***simpleString.ts***
+```typescript
+import { world } from '@minecraft/server';
+
 // Displays "Hello, world!"
-world.sendMessage("Hello, world!");
+world.sendMessage('Hello, world!');
 ```
-##### *translation.ts*
-```javascript
+##### ***translation.ts***
+```typescript
+import { world } from '@minecraft/server';
+
 // Displays "First or Second"
-const rawMessage = { translate: "accessibility.list.or.two", with: ["First", "Second"] };
+const rawMessage = { translate: 'accessibility.list.or.two', with: ['First', 'Second'] };
 world.sendMessage(rawMessage);
 ```
 
-### **setDefaultSpawn**
+### **setAbsoluteTime**
 `
-setDefaultSpawn(spawnPosition: Vector3): void
+setAbsoluteTime(absoluteTime: number): void
 `
 
-Sets the default spawn location for players within the world. Note that players can override this with their own spawn position. Note also that the default spawn position must be in the overworld dimension.
+Sets the world time.
 
 #### **Parameters**
-- **spawnPosition**: [*Vector3*](Vector3.md)
+- **absoluteTime**: *number*
   
-  Location within the overworld where a player will spawn.
+  The world time, in ticks.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+### **setDefaultSpawnLocation**
+`
+setDefaultSpawnLocation(spawnLocation: Vector3): void
+`
+
+Sets a default spawn location for all players.
+
+#### **Parameters**
+- **spawnLocation**: [*Vector3*](Vector3.md)
+  
+  Location of the spawn point. Note that this is assumed to be within the overworld dimension.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **setDynamicProperty**
 `
-setDynamicProperty(identifier: string, value: boolean | number | string): void
+setDynamicProperty(identifier: string, value?: boolean | number | string | Vector3): void
 `
 
 Sets a specified property to a value.
 
 #### **Parameters**
 - **identifier**: *string*
-- **value**: *boolean* | *number* | *string*
+  
+  The property identifier.
+- **value**?: *boolean* | *number* | *string* | [*Vector3*](Vector3.md) = `null`
   
   Data value of the property to set.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws if the given dynamic property identifier is not defined.
+
+#### Examples
+##### ***incrementDynamicProperty.ts***
+```typescript
+import * as mc from '@minecraft/server';
+
+function incrementProperty(propertyName: string): boolean {
+    let number = mc.world.getDynamicProperty(propertyName);
+
+    console.warn('Current value is: ' + number);
+
+    if (number === undefined) {
+        number = 0;
+    }
+
+    if (typeof number !== 'number') {
+        console.warn('Number is of an unexpected type.');
+        return false;
+    }
+
+    mc.world.setDynamicProperty(propertyName, number + 1);
+    return true;
+}
+
+incrementProperty('samplelibrary:number');
+```
+##### ***incrementDynamicPropertyInJsonBlob.ts***
+```typescript
+import * as mc from '@minecraft/server';
+
+function updateWorldProperty(propertyName: string): boolean {
+    let paintStr = mc.world.getDynamicProperty(propertyName);
+    let paint: { color: string; intensity: number } | undefined = undefined;
+
+    console.log('Current value is: ' + paintStr);
+
+    if (paintStr === undefined) {
+        paint = {
+            color: 'purple',
+            intensity: 0,
+        };
+    } else {
+        if (typeof paintStr !== 'string') {
+            console.warn('Paint is of an unexpected type.');
+            return false;
+        }
+
+        try {
+            paint = JSON.parse(paintStr);
+        } catch (e) {
+            console.warn('Error parsing serialized struct.');
+            return false;
+        }
+    }
+
+    if (!paint) {
+        console.warn('Error parsing serialized struct.');
+        return false;
+    }
+
+    paint.intensity++;
+    paintStr = JSON.stringify(paint); // be very careful to ensure your serialized JSON str cannot exceed limits
+    mc.world.setDynamicProperty(propertyName, paintStr);
+
+    return true;
+}
+
+updateWorldProperty('samplelibrary:longerjson');
+```
+
+### **setTimeOfDay**
+`
+setTimeOfDay(timeOfDay: number | TimeOfDay): void
+`
+
+Sets the time of day.
+
+#### **Parameters**
+- **timeOfDay**: *number* | [*TimeOfDay*](TimeOfDay.md)
+  
+  The time of day, in ticks, between 0 and 24000.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
-
-### **setTime**
-`
-setTime(timeOfDay: number): void
-`
-
-Returns the current game time of the day.
-
-#### **Parameters**
-- **timeOfDay**: *number*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+>
+> Throws if the provided time of day is not within the valid range.
 
 ### **stopMusic**
 `
@@ -363,3 +673,6 @@ stopMusic(): void
 `
 
 Stops any music tracks from playing.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.

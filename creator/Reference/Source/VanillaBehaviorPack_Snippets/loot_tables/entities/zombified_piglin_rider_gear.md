@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: zombified_piglin_rider_gear
-ms.prod: gaming
+description: "A code snippet for the zombified piglin rider gear entity loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # zombified_piglin_rider_gear

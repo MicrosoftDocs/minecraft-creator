@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-josjones
+ms.author:  mikeam
 title: Entity Documentation - is_temperature_value
-ms.prod: gaming
+description: "A reference document detailing the 'is_temperature_value' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - is_temperature_value
@@ -23,7 +24,7 @@ Tests the current temperature against a provided value in the range (0.0, 1.0) w
 | Options| Description |
 |:-----------|:-----------|
 | block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
+| damager| The damaging entity involved with the interaction. |
 | other| The other member of an interaction, not the caller. |
 | parent| The caller's current parent. |
 | player| The player involved with the interaction. |

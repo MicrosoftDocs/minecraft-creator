@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:barter
-ms.prod: gaming
+description: "A reference document detailing the 'barter' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:barter
@@ -30,9 +31,10 @@ ms.prod: gaming
 ### piglin
 
 ```json
-"minecraft:behavior.barter": {
-    "priority": 3
-}
+"minecraft:barter": {
+    "barter_table": "loot_tables/entities/piglin_barter.json",
+    "cooldown_after_being_attacked": 20
+},
 ```
 
 ## Vanilla entities using `minecraft:barter`

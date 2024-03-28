@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: chest_boat
-ms.prod: gaming
+description: "A code snippet for the chest boat entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # chest_boat

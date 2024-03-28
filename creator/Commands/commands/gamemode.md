@@ -2,7 +2,7 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: gamemode Command
 description: Description and usage of the gamemode command
 ---
@@ -42,14 +42,6 @@ A player name `string` or [`target selector`](https://learn.microsoft.com/minecr
 ## Enums
 ### `GameMode`
 The game mode.
-
-|Mode|Enum| Abbreviation|Integer|
-|-----|------|-----|----|
-|Survival| `survival` | s|0|
-|Creative| `creative` | c|1|
-|Adventure| `adventure` | a|2|
-|Default| `default` |d|5|
-|Spectator| `spectator` |*none*|*none*|
 
 #### Values
 - `default`

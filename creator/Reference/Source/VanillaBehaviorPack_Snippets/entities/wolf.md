@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: wolf
-ms.prod: gaming
+description: "A code snippet for the wolf entity"
+ms.service: minecraft-bedrock-edition
 ---
 
 # wolf

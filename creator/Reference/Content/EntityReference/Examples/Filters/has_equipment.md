@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - has_equipment
-ms.prod: gaming
+description: "A reference document detailing the 'has_equipment' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - has_equipment
@@ -23,7 +24,7 @@ Tests for the presence of a named item in the designated slot of the subject ent
 | Options| Description |
 |:-----------|:-----------|
 | block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
+| damager| The damaging entity involved with the interaction. |
 | other| The other member of an interaction, not the caller. |
 | parent| The caller's current parent. |
 | player| The player involved with the interaction. |

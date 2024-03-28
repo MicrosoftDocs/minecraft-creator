@@ -2,46 +2,76 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: .DyeColor Enumeration
 description: Contents of the .DyeColor enumeration.
 ---
 # DyeColor Enumeration
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Specifies different colors for use as dye.
 
 ## Constants
-### **black**
-`black = "black"`
-### **blue**
-`blue = "blue"`
-### **brown**
-`brown = "brown"`
-### **cyan**
-`cyan = "cyan"`
-### **gray**
-`gray = "gray"`
-### **green**
-`green = "green"`
-### **lightBlue**
-`lightBlue = "lightBlue"`
-### **lime**
-`lime = "lime"`
-### **magenta**
-`magenta = "magenta"`
-### **orange**
-`orange = "orange"`
-### **pink**
-`pink = "pink"`
-### **purple**
-`purple = "purple"`
-### **red**
-`red = "red"`
-### **silver**
-`silver = "silver"`
-### **white**
-`white = "white"`
-### **yellow**
-`yellow = "yellow"`
+### **Black**
+`Black = "Black"`
+
+Black dye color.
+### **Blue**
+`Blue = "Blue"`
+
+Blue dye color.
+### **Brown**
+`Brown = "Brown"`
+
+Brown dye color.
+### **Cyan**
+`Cyan = "Cyan"`
+
+Cyan dye color.
+### **Gray**
+`Gray = "Gray"`
+
+Gray dye color.
+### **Green**
+`Green = "Green"`
+
+Green dye color.
+### **LightBlue**
+`LightBlue = "LightBlue"`
+
+Light blue dye color.
+### **Lime**
+`Lime = "Lime"`
+
+Lime dye color.
+### **Magenta**
+`Magenta = "Magenta"`
+
+Magenta dye color.
+### **Orange**
+`Orange = "Orange"`
+
+Orange dye color.
+### **Pink**
+`Pink = "Pink"`
+
+Pink dye color.
+### **Purple**
+`Purple = "Purple"`
+
+Purple dye color.
+### **Red**
+`Red = "Red"`
+
+Red dye color.
+### **Silver**
+`Silver = "Silver"`
+
+Silver dye color.
+### **White**
+`White = "White"`
+
+White dye color.
+### **Yellow**
+`Yellow = "Yellow"`
+
+Yellow dye color.

@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: spider_eye
-ms.prod: gaming
+description: "A code snippet for the spider_eye item"
+ms.service: minecraft-bedrock-edition
 ---
 
 # spider_eye

@@ -2,15 +2,11 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockPistonComponent Class
 description: Contents of the @minecraft/server.BlockPistonComponent class.
 ---
 # BlockPistonComponent Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*BlockComponent*](BlockComponent.md)
@@ -19,20 +15,6 @@ When present, this block has piston-like behavior. Contains additional propertie
 
 ## Properties
 
-### **isExpanded**
-`read-only isExpanded: boolean;`
-
-Whether the piston is fully expanded.
-
-Type: *boolean*
-
-### **isExpanding**
-`read-only isExpanding: boolean;`
-
-Whether the piston is in the process of expanding.
-
-Type: *boolean*
-
 ### **isMoving**
 `read-only isMoving: boolean;`
 
@@ -40,31 +22,43 @@ Whether the piston is in the process of expanding or retracting.
 
 Type: *boolean*
 
-### **isRetracted**
-`read-only isRetracted: boolean;`
+> [!WARNING]
+> This property can throw errors when used.
 
-Whether the piston is fully retracted.
+### **state**
+`read-only state: BlockPistonState;`
 
-Type: *boolean*
+The current state of the piston.
 
-### **isRetracting**
-`read-only isRetracting: boolean;`
+Type: [*BlockPistonState*](BlockPistonState.md)
 
-Whether the piston is in the process of retracting.
-
-Type: *boolean*
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Methods
 - [getAttachedBlocks](#getattachedblocks)
+- [getAttachedBlocksLocations](#getattachedblockslocations)
 
 ### **getAttachedBlocks**
 `
-getAttachedBlocks(): Vector3[]
+getAttachedBlocks(): Block[]
 `
 
 Retrieves a set of blocks that this piston is connected with.
 
-#### **Returns** [*Vector3*](Vector3.md)[]
+**Returns** [*Block*](Block.md)[]
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getAttachedBlocksLocations**
+`
+getAttachedBlocksLocations(): Vector3[]
+`
+
+Retrieves a set of block locations that this piston is connected with.
+
+**Returns** [*Vector3*](Vector3.md)[]
 
 > [!WARNING]
 > This function can throw errors.
@@ -73,7 +67,5 @@ Retrieves a set of blocks that this piston is connected with.
 
 ### **componentId**
 `static read-only componentId = "minecraft:piston";`
-
-Identifier of this component.
 
 Type: *string*

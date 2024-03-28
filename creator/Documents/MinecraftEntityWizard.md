@@ -1,9 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Getting Started with Minecraft Entity Wizard
-ms.prod: gaming
-description: A tutorial covering how to create a custom entity model using the Minecraft Entity Wizard tool in Blockbench
+description: "A tutorial covering how to create a custom entity model using the Minecraft Entity Wizard tool in Blockbench"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Getting Started with the Minecraft Entity Wizard
@@ -74,7 +74,7 @@ The wizard will guide you through the steps required to create your custom entit
 
 The Display Name is the name that the entity will later be called in Minecraft. It will appear in the spawn egg name, in chat, and in other places in the interface. This name also supports translations into different languages.
 
-:::image type="content" source="Media/MinecraftEntityWizard/MinecraftEntityWizard_naming.png" alt-text="Minecraft Entity Wizard showcasing where Creators can set the Name and Identifier for their new entity.":::
+:::image type="content" source="Media/MinecraftEntityWizard/MinecraftEntityWizard_naming.png" alt-text="Minecraft Entity Wizard showcasing where creators can set the Name and Identifier for their new entity.":::
 
 > [!NOTE]
 > The **Identifier** is the internal name used within Minecraft that is commonly used in commands and other places to identify this type of entity.
@@ -185,7 +185,7 @@ Custom entity behavior is a huge topic, and this article won't attempt to touch 
 > [!div class="nextstepaction"]
 > [Introduction To Behavior Packs](BehaviorPack.md)
 
-To view all of the available behaviors, properties, and AI Goals that an entity can use, you can go to the Entity JSON Reference Documentation.
+To view all of the available behaviors and AI Goal Components that an entity can use, you can go to the Entity JSON Reference Documentation.
 
 > [!div class="nextstepaction"]
 > [Entity JSON Documentation](../Reference/Content/EntityReference/index.yml)

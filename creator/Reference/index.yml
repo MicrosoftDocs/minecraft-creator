@@ -6,7 +6,7 @@ summary: "Landing page containing all JSON documentation for Minecraft: Bedrock 
 metadata:
   title: JSON Reference Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: "Landing page containing all JSON documentation for Minecraft: Bedrock Edition." # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: minecraft-bedrock-edition
   ms.topic: landing-page # Required
   author: mammerla #Required; your GitHub user alias, with correct capitalization.
   ms.author: mikeam #Required; microsoft alias of author; team alias.
@@ -67,8 +67,8 @@ landingContent:
         links:
           - text: Blocks JSON Documentation Homepage
             url: Content/blockreference/index.yml
-          - text: Block Properties and Permutations
-            url: Content/blockreference/Examples/BlockPropertiesAndPermutations.md
+          - text: Block States and Permutations
+            url: Content/blockreference/Examples/BlockStatesAndPermutations.md
       - linkListType: reference
         links:
           - text: Block Components List
@@ -90,14 +90,12 @@ landingContent:
             url:  Content/entityreference/Examples/ClientEntityDocumentation/DataDrivenSpawning.md
       - linkListType: reference
         links:
-          - text: AI Goal List
+          - text: AI Goal Component List
             url: Content/entityreference/Examples/AIGoalList.md
           - text: Components List
             url: Content/entityreference/Examples/ComponentList.md
           - text: Filters List
             url: Content/entityreference/Examples/FilterList.md
-          - text: Properties List
-            url: Content/entityreference/Examples/PropertiesList.md
           - text: Events List
             url: Content/entityreference/Examples/EventList.md
           - text: Trigger List
@@ -107,36 +105,12 @@ landingContent:
           - text: Entity JSON ID List
             url: Content/entityreference/Examples/ClientEntityDocumentation/IDLists.md
   # Card (comment to space cards)
-  - title: Features
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Features JSON Documentation Homepage
-            url: Content/featuresreference/index.yml
-          - text: Introduction to Features
-            url: Content/FeaturesReference/Examples/FeaturesIntroduction.md
-      - linkListType: reference
-        links:
-          - text: Feature List
-            url: Content/featuresreference/Examples/FeatureList.md
-  # Card (comment to space cards)
   - title: Items
     linkLists:
       - linkListType: reference
         links:
           - text: Item Components List
             url: Content/itemreference/Examples/ItemComponentList.md
-  # Card (comment to space cards)
-  - title: Materials
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Materials - Getting Started
-            url: Content/materialsreference/Examples/MaterialsGettingStarted.md
-      - linkListType: reference
-        links:
-          - text: Material reference - JSON Shaders and Inputs
-            url: Content/materialsreference/Examples/RenderDragonShaderList.md
   # Card (optional)
   - title: Molang
     linkLists:
@@ -183,12 +157,3 @@ landingContent:
         links:
            - text: Introduction to Texture Sets
              url: Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md
-  # Card (comment to space cards)
-  - title: Volumes
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Volume Properties & Descriptions
-            url: Content/volumeReference/Examples/VolumeDefinitions/VolumeDefinitionProperties.md
-          - text: Volume Components List
-            url: Content/volumeReference/Examples/VolumeComponentsList.md

@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Features Documentation - minecraft:sequence_feature
-ms.prod: gaming
+description: "A reference document detailing the 'sequence_feature' feature"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Features Documentation - minecraft:sequence_feature
@@ -15,9 +16,24 @@ All features in the sequence are successfully placed.
 **Fails if**
 Any feature in the sequence fails to be placed. Features that have not yet been placed at the time of failure are skipped.
 
-## Example
+### Schema
 
-### Scattering fruit throughout the canopy of a tree
+```json
+
+object "minecraft:sequence_feature" : opt
+{
+  object "description"
+  {
+    string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+  }
+  array "features"[1,*] // List of features to be placed in sequence. The output position of the previous feature is used as the input position to the next.
+  {
+    feature_reference "<any array element>" : opt
+  }
+}
+```
+
+### Example: Scattering fruit throughout the canopy of a tree
 
 ```json
 {

@@ -1,15 +1,16 @@
 ---
-author: mammerla
-ms.author: v-bbortree
-title: Entity Documentation - AI Goal List
-ms.prod: gaming
+author: JimSeaman42
+ms.author: mikeam
+title: Entity Documentation - AI Goal Component List
+description: "A reference document listing all current AI Goal Components"
+ms.service: minecraft-bedrock-edition
 ---
 
-# Entity Documentation - AI Goal list
+# Entity Documentation - AI Goal Component list
 
-Below is a list of all the available AI Goals within Minecraft: Bedrock Edition for use with Entity JSON files.
+Below is a list of all the available AI Goal Components within Minecraft: Bedrock Edition for use with Entity JSON files.
 
-AI Goal |Description
+AI Goal Component |Description
 :-----|:----------
 [minecraft:behavior.admire_item](EntityGoals/minecraftBehavior_admire_item.md)|`minecraft:behavior.admire_item` compels an entity to admire an object they are holding.
 [minecraft:behavior.avoid_block](EntityGoals/minecraftBehavior_avoid_block.md)|`minecraft:behavior.avoid_block` compels an entity to avoid certain blocks.
@@ -28,7 +29,7 @@ AI Goal |Description
 [minecraft:behavior.defend_trusted_target](EntityGoals/minecraftBehavior_defend_trusted_target.md)|`minecraft:behavior.defend_trusted_target` compels an entity to react with an event when a trusted target is attacked.
 [minecraft:behavior.defend_village_target](EntityGoals/minecraftBehavior_defend_village_target.md)|`minecraft:behavior.defend_village_target` compels the entity to stay in a village and defend the village from aggressors. If a player is in bad standing with the village, this goal will cause the entity to attack the player regardless of filter conditions.
 [minecraft:behavior.delayed_attack](EntityGoals/minecraftBehavior_delayed_attack.md)|`minecraft:behavior.delayed_attack` compels the entity to stay in a village and defend the village from aggressors. If a player is in bad standing with the village, this goal will cause the entity to attack the player regardless of filter conditions.
-[minecraft:behavior.dig](EntityGoals/minecraftBehavior_dig.md)|`minecraft:behavior.dig` activates the "DIGGING" actor flag during the specified duration. Currently only Warden can use the dig goal.
+[minecraft:behavior.dig](EntityGoals/minecraftBehavior_dig.md)|`minecraft:behavior.dig` activates the "DIGGING" entity flag during the specified duration. Currently only Warden can use the dig goal.
 [minecraft:behavior.drink_milk](EntityGoals/minecraftBehavior_drink_milk.md)|`minecraft:behavior.drink_milk` compels the mob to drink milk based on specified environment conditions.
 [minecraft:behavior.door_interact](EntityGoals/minecraftBehavior_door_interact.md)|`minecraft:behavior.door_interact` allows an entity to interact with doors.
 [minecraft:behavior.dragonchargeplayer](EntityGoals/minecraftBehavior_dragonchargeplayer.md)|`minecraft:behavior.dragonchargeplayer`  compels this entity to attack a player by charging at them. The player is chosen by the `minecraft:behavior.dragonscanning`. Can only be used by the Ender Dragon.
@@ -44,7 +45,7 @@ AI Goal |Description
 [minecraft:behavior.eat_block](EntityGoals/minecraftBehavior_eat_block.md)|`minecraft:behavior.eat_block` compels the entity to consume a block, replace the eaten block with another block, and trigger an event as a result.
 [minecraft:behavior.eat_carried_item](EntityGoals/minecraftBehavior_eat_carried_item.md)|`minecraft:behavior.eat_carried_item` allows an entity to eat any item in its inventory and gain the benefits of the item.
 [minecraft:behavior.eat_mob](EntityGoals/minecraftBehavior_eat_mob.md)|`minecraft:behavior.eat_mob` compels the entity to eat a specified mob.
-[minecraft:behavior.emerge](EntityGoals/minecraftBehavior_emerge.md)|`minecraft:behavior.emerge` activates the "EMERGING" actor flag during the specified duration and triggers "on_done" at the end.
+[minecraft:behavior.emerge](EntityGoals/minecraftBehavior_emerge.md)|`minecraft:behavior.emerge` activates the "EMERGING" entity flag during the specified duration and triggers "on_done" at the end.
 [minecraft:behavior.enderman_leave_block](EntityGoals/minecraftBehavior_enderman_leave_block.md)|`minecraft:behavior.enderman_leave_block` compels the entity to drop the block they are currently holding.
 [minecraft:behavior.enderman_take_block](EntityGoals/minecraftBehavior_enderman_take_block.md)|`minecraft:behavior.enderman_take_block` compels the entity to pick up a nearby block and carry the block in its hands.
 [minecraft:behavior.equip_item](EntityGoals/minecraftBehavior_equip_item.md)|`minecraft:behavior.equip_item` causes an entity to equip an item.
@@ -128,7 +129,7 @@ AI Goal |Description
 [minecraft:behavior.restrict_open_door](EntityGoals/minecraftBehavior_restrict_open_door.md)|`minecraft:behavior.restrict_open_door` compels an entity to stay indoors while the sun is down.
 [minecraft:behavior.restrict_sun](EntityGoals/minecraftBehavior_restrict_sun.md)|`minecraft:behavior.restrict_sun` compels an entity to actively avoid direct sunlight.
 [minecraft:behavior.rise_to_liquid_level](EntityGoals/minecraftBehavior_rise_to_liquid_level.md)|`minecraft:behavior.rise_to_liquid_level` compels the mob to stay at a certain level when in liquid.
-[minecraft:behavior.roar](EntityGoals/minecraftBehavior_roar.md)|`minecraft:behavior.roar` plays the provided sound and activates the "ROARING" actor flag during the specified duration.
+[minecraft:behavior.roar](EntityGoals/minecraftBehavior_roar.md)|`minecraft:behavior.roar` plays the provided sound and activates the "ROARING" entity flag during the specified duration.
 [minecraft:behavior.roll](EntityGoals/minecraftBehavior_roll.md)|`minecraft:behavior.roll` compels an entity roll forward.
 [minecraft:behavior.run_around_like_crazy](EntityGoals/minecraftBehavior_run_around_like_crazy.md)|`minecraft:behavior.run_around_like_crazy` compels an entity to run around without a set goal.
 [minecraft:behavior.scared](EntityGoals/minecraftBehavior_scared.md)|`minecraft:behavior.scared` compels the a mob to become scared when the weather outside is thundering.
@@ -145,7 +146,7 @@ AI Goal |Description
 [minecraft:behavior.snacking](EntityGoals/minecraftBehavior_snacking.md)|`minecraft:behavior.snacking` compels an entity to stop and interact with select food items that are nearby.
 [minecraft:behavior.sneeze](EntityGoals/minecraftBehavior_sneeze.md)|`minecraft:behavior.sneeze` compels an entity to sneeze and potentially started other entities. While sneezing, the entity may drop an item.
 [minecraft:behavior.sniff](EntityGoals/minecraftBehavior_sniff.md)|`minecraft:behavior.sniff` means the entity detects the nearest player within "sniffing_radius" and updates its "minecraft:suspect_tracking" component state.
-[minecraft:behavior.sonic_boom](EntityGoals/minecraftBehavior_sonic_boom.md)|`minecraft:behavior.sonic_boom` plays the provided sounds and activates the "SONIC BOOM" actor flag during the specified duration.
+[minecraft:behavior.sonic_boom](EntityGoals/minecraftBehavior_sonic_boom.md)|`minecraft:behavior.sonic_boom` plays the provided sounds and activates the "SONIC BOOM" entity flag during the specified duration.
 [minecraft:behavior.squid_dive](EntityGoals/minecraftBehavior_squid_dive.md)|`minecraft:behavior.squid_dive` compels an entity to dive underwater.
 [minecraft:behavior.squid_flee](EntityGoals/minecraftBehavior_squid_flee.md)|`minecraft:behavior.squid_flee` compels an entity to swim away when attacked.
 [minecraft:behavior.squid_idle](EntityGoals/minecraftBehavior_squid_idle.md)|`minecraft:behavior.squid_idle` compels an entity to swim in place.

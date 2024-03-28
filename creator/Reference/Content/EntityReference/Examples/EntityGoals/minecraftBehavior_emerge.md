@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.emerge
-ms.prod: gaming
+description: "A reference document detailing the 'behavior.emerge' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.emerge
 
-`minecraft:behavior.emerge` activates the "EMERGING" actor flag during the specified duration and triggers "on_done" at the end.
+`minecraft:behavior.emerge` activates the "EMERGING" entity flag during the specified duration and triggers "on_done" at the end.
 
 ## Parameters
 

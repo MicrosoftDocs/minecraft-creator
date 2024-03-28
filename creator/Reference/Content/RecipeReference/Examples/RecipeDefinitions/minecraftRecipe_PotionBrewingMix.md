@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Recipe Documentation - Potion Brewing Mix
-ms.prod: gaming
+description: "A reference document detailing potion brewing mix recipes"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Recipe Documentation - Potion Brewing Mix
@@ -20,7 +21,7 @@ Represents a Potion Brewing Mix.
 
 ## Potion Brewing Mix Example
 
-```JSON
+```json
 {
 "format_version": "1.18",
 "minecraft:recipe_brewing_mix": {

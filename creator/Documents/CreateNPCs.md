@@ -1,9 +1,9 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: kakinnun
 title: Create a Custom NPC
-ms.prod: gaming
 description: "A tutorial covering how to create a Non-Playable Character (NPC) within Minecraft: Bedrock Edition"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Create a Custom NPC
@@ -71,25 +71,25 @@ To add commands to an NPC, follow these instructions:
 
 ![NPC Command Interface](Media\NPCs\LearningPortal_NPCEditorCommands.PNG)
 
-Your NPC will execute these commands in order whenever a player interacts with them and closes their dialog box. For a list of commands that your NPCs can execute, see [Commands](https://minecraft.fandom.com/wiki/Commands).
+Your NPC will execute these commands in order whenever a player interacts with them and closes their dialog box. There is more information about commands in the [Introduction to Commands article](CommandsIntroduction.md).
 
-### Advanced Command Settings
+## Advanced Command Settings
 
 There are settings to customize the way commands work with NPCs.
 
-#### Button Mode
+### Button Mode
 
 If Button Mode is toggled on, a text box appears where you can enter text that will appear on a button. This command will only run if the button is pressed.
 
 For example, we could use a combination of the command `/give @p gold_ingot` and a button labelled `Money?` When players click the `Money?` button, they receive one gold ingot into their inventory.
 
-#### On Enter
+### On Enter
 
 If On Enter is toggled, then the command will run when players initiate a conversation with the NPC.
 
 In this case, with On Enter toggled on and the command `/give @p gold_ingot`, players would receive one gold ingot in their inventory when the dialogue box opens on dialogue initiation with the NPC.
 
-#### On Exit
+### On Exit
 
 If On Exit is toggled, then the command will trigger when the player ends and interaction and closes the NPC dialogue.
 

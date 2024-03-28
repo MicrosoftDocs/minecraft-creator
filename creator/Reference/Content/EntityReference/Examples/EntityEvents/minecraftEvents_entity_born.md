@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:entity_born
-ms.prod: gaming
+description: "A reference document detailing the 'entity_born' entity event"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:entity_born
@@ -11,7 +12,6 @@ ms.prod: gaming
 
 > [!NOTE]
 > `minecraft:entity_born` is used to trigger events when the entity is born in the world. For events to trigger when the entity spawns, see [minecraft:entity_spawned](minecraftEvents_entity_spawned.md)
-
 
 >[!IMPORTANT]
 > `minecraft:entity_born` requires an entity to be `born` into the world via the [minecraft:behavior.breed](../EntityGoals/minecraftBehavior_breed.md) behavior.

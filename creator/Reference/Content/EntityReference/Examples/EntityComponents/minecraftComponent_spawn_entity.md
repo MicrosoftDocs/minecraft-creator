@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:spawn_entity
-ms.prod: gaming
+description: "A reference document detailing the 'spawn_entity' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:spawn_entity
 
-`minecraft:spawn_entity` adds a timer after which the entity will spawn another entity or item (similar to vanilla's chicken's egg-laying behavior).
+`minecraft:spawn_entity` adds a timer after which the entity will spawn another entity or item (similar to the vanilla chicken's egg-laying behavior).
 
 ## Parameters
 
@@ -26,13 +27,15 @@ ms.prod: gaming
 | should_leash| false| Boolean| If true, this the spawned entity will be leashed to the parent. |
 | single_use| false| Boolean| If true, this component will only ever spawn the specified entity once. |
 | spawn_entity| *not set*| String| Identifier of the entity to spawn, leave empty to spawn the item defined by "spawn_item" instead. |
-| spawn_event| minecraft:entity_born| String| Event to call when the entity is spawned. |
+| spawn_event| minecraft:entity_born| String| Event to call on the entity when it spawns. |
 | spawn_item| egg| String| Item identifier of the item to spawn. |
+| spawn_item_event| --| Trigger| Event to call on the entity when the item is spawned. |
 | spawn_method| born| String| Method to use to spawn the entity. |
 | spawn_sound| plop| String| Identifier of the sound effect to play when the entity is spawned. |
 
 ## Example
 
+### Spawning an entity
 ```json
 "minecraft:spawn_entity":{
     "entities": [{
@@ -44,10 +47,29 @@ ms.prod: gaming
         "num_to_spawn": 1,
         "should_leash": false,
         "single_use": false,
-        "spawn_entity": ,
+        "spawn_entity": "minecraft:chicken",
         "spawn_event": "minecraft:entity_born",
-        "spawn_item": "egg",
         "spawn_method": "born",
+        "spawn_sound": "plop",
+        }
+    ]
+}
+```
+
+### Spawning an item
+```json
+"minecraft:spawn_entity":{
+    "entities": [{
+        "filters": [
+            {"test":"is_daytime", "value": false}
+        ] ,
+        "max_wait_time": 600,
+        "min_wait_time": 300,
+        "num_to_spawn": 1,
+        "should_leash": false,
+        "single_use": false,
+        "spawn_item_event": { "event": "example:just_laid_an_egg" },
+        "spawn_item": "egg",
         "spawn_sound": "plop",
         }
     ]

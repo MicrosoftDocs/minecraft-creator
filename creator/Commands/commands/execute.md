@@ -2,7 +2,7 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: execute Command
 description: Description and usage of the execute command
 ---
@@ -21,47 +21,86 @@ Executes a command on behalf of one or more entities. See more information in th
 </table>
 
 ## Usage
-### Execute from position and origin
-`/execute as <origin: target> <chainedCommand: ExecuteChainedOption_0>`
+### `/execute as <origin: target> <chainedCommand: executechainedoption_0>`
 
-Execute a given command from a `position` and specified `origin` target.
+### `/execute at <origin: target> <chainedCommand: executechainedoption_0>`
 
-### Execute from position and origin, check for block, block id
-`/execute at <origin: target> <chainedCommand: ExecuteChainedOption_0>`
+### As another entity
+`/execute in <dimension: Dimension> <chainedCommand: executechainedoption_0>`
+
+Executes a command using the context of an entity returned by the chosen selector.
+
+### At the position of an entity
+`/execute positioned <position: x y z> <chainedCommand: executechainedoption_0>`
+
+Executes a command from the position of an entity returned via the selection.
+
+### In dimension
+`/execute positioned as <origin: target> <chainedCommand: executechainedoption_0>`
+
+Executes a command within a particular dimension.
+
+### Positioned
+`/execute rotated <yaw: rotation> <pitch: rotation> <chainedCommand: executechainedoption_0>`
 
 Execute a given command from a `position` and specified `origin` target, while checking for a specific `block` and block id.
 
-### `/execute in <dimension: Dimension> <chainedCommand: ExecuteChainedOption_0>`
+### Positioned as a selected entity
+`/execute rotated as <origin: target> <chainedCommand: executechainedoption_0>`
 
-### `/execute positioned <position: x y z> <chainedCommand: ExecuteChainedOption_0>`
+Execute a given command from a `position` and specified `origin` target.
 
-### `/execute positioned as <origin: target> <chainedCommand: ExecuteChainedOption_0>`
+### Rotated with a specific yaw/pitch
+`/execute facing <position: x y z> <chainedCommand: executechainedoption_0>`
 
-### `/execute rotated <yaw: rotation> <pitch: rotation> <chainedCommand: ExecuteChainedOption_0>`
+Runs a command with the specified rotation as yaw and pitch.
 
-### `/execute rotated as <origin: target> <chainedCommand: ExecuteChainedOption_0>`
+### Rotated as a another entity
+`/execute facing entity <origin: target> <anchor: ActorLocation> <chainedCommand: executechainedoption_0>`
 
-### `/execute facing <position: x y z> <chainedCommand: ExecuteChainedOption_0>`
+Runs a command using the rotation from another entity as specified by the selector
 
-### `/execute facing entity <origin: target> <anchor: ActorLocation> <chainedCommand: ExecuteChainedOption_0>`
+### Facing a position
+`/execute align <axes: string> <chainedCommand: executechainedoption_0>`
 
-### `/execute align <axes: string> <chainedCommand: ExecuteChainedOption_0>`
+Runs a command with an entity facing a particular direction.
 
-### `/execute anchored <anchored: ActorLocation> <chainedCommand: ExecuteChainedOption_0>`
+### Facing a selected entity
+`/execute anchored <anchored: ActorLocation> <chainedCommand: executechainedoption_0>`
 
-### `/execute <subcommand: Option_If_Unless> block <position: x y z> <block: Block> [chainedCommand: ExecuteChainedOption_0]`
+Runs a command with a contextual facing to another entity that is returned by a selection.
 
-### `/execute <subcommand: Option_If_Unless> block <position: x y z> <block: Block> <blockStates: block properties> [chainedCommand: ExecuteChainedOption_0]`
+### Align
+`/execute <subcommand: Option_If_Unless> block <position: x y z> <block: Block> [chainedCommand: executechainedoption_0]`
 
-### `/execute <subcommand: Option_If_Unless> blocks <begin: x y z> <end: x y z> <destination: x y z> <scan mode: BlocksScanMode> [chainedCommand: ExecuteChainedOption_0]`
+Runs a command where positions are aligned (floored) to block axes
 
-### `/execute <subcommand: Option_If_Unless> entity <target: target> [chainedCommand: ExecuteChainedOption_0]`
+### Anchored
+`/execute <subcommand: Option_If_Unless> block <position: x y z> <block: Block> <blockStates: block properties> [chainedCommand: executechainedoption_0]`
 
-### `/execute <subcommand: Option_If_Unless> score <target: target> <objective: ScoreboardObjectives> <operation: compareoperator> <source: target> <objective: ScoreboardObjectives> [chainedCommand: ExecuteChainedOption_0]`
+Runs a command with a position anchored to a specific location - e.g., the toes or eyes - for an entity
 
-### `/execute <subcommand: Option_If_Unless> score <target: target> <objective: ScoreboardObjectives> matches <range: fullintegerrange> [chainedCommand: ExecuteChainedOption_0]`
+### If/unless block matches type
+`/execute <subcommand: Option_If_Unless> blocks <begin: x y z> <end: x y z> <destination: x y z> <scan mode: BlocksScanMode> [chainedCommand: executechainedoption_0]`
 
-### `/execute run <command: command>`
+Runs a command if or unless there is a block at a position of a particular type
+
+### If/unless block has block states
+`/execute <subcommand: Option_If_Unless> entity <target: target> [chainedCommand: executechainedoption_0]`
+
+Runs a command with if or unless there is a block with a set of block states that matches the specified set.
+
+### `/execute <subcommand: Option_If_Unless> score <target: target> <objective: ScoreboardObjectives> <operation: compareoperator> <source: target> <objective: ScoreboardObjectives> [chainedCommand: executechainedoption_0]`
+
+### If unless a set of blocks matches scan criteria
+`/execute <subcommand: Option_If_Unless> score <target: target> <objective: ScoreboardObjectives> matches <range: fullintegerrange> [chainedCommand: executechainedoption_0]`
+
+Runs a command if a particular set of blocks in a volume matches the scan mode criteria
+
+### If/unless an entity matches
+`/execute run <command: command>`
+
+Runs a command if (or unless) a selector returns at least one matching entity.
 
 ## Arguments
 - `anchor`: ActorLocation
@@ -71,17 +110,18 @@ Execute a given command from a `position` and specified `origin` target, while c
 - `block`: [Block](../enums/Block.md)
 Compares block to a given block `id`.
 - `blockStates`: block properties
-- `chainedCommand`: ExecuteChainedOption_0
+- `chainedCommand`: executechainedoption_0
 - `command`: command
 A `string` of the command to run. Must be a valid command.
 - `destination: x y z`: position
 - `dimension`: Dimension
 - `end: x y z`: position
-- `objective`: ScoreboardObjectives
+- `objective`: [ScoreboardObjectives](../enums/ScoreboardObjectives.md)
 - `operation`: compareoperator
 - `origin`: target
 The target of the command to execute. Must be a player name or [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors).
 - `pitch`: rotation
+Up-and-down rotation of the command
 - `position: x y z`: position
 A `vector` of where to run the command from.
 - `range`: fullintegerrange
@@ -90,43 +130,33 @@ A `vector` of where to run the command from.
 - `subcommand`: Option_If_Unless
 - `target`: target
 - `yaw`: rotation
+Left-to-right rotation context of the command
 
 ## Enums
 ### `ActorLocation`
+Specifies where on the selected entity to look at.
 
 #### Values
 - `eyes`
 - `feet`
 
 ### `BlocksScanMode`
+For a blocks condition, specifies how to look for blocks.
 
 #### Values
 - `masked`
 - `all`
 
 ### `Dimension`
+Specifies a dimension to run the command within.
 
 #### Values
 - `overworld`
 - `nether`
 - `the_end`
 
-### `ExecuteChainedOption_0`
-
-#### Values
-- `as`
-- `at`
-- `in`
-- `positioned`
-- `rotated`
-- `facing`
-- `align`
-- `anchored`
-- `if`
-- `unless`
-- `run`
-
 ### `Option_If_Unless`
+Specifies an additional condition to run this command within
 
 #### Values
 - `if`

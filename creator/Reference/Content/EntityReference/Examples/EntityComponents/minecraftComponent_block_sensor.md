@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jimseaman
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:block_sensor
-ms.prod: gaming
+description: "A reference document detailing the 'block_sensor' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:block_sensor
@@ -23,8 +24,8 @@ ms.prod: gaming
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|block_list| *not set* | List| List of blocks that will trigger the senor.|
-|on_block_broken|*not set* | String|  Event to run when a block breaks|
+|block_list| *not set* | List| List of blocks that will trigger the sensor.|
+|on_block_broken|*not set* | String|  Event to run when a block breaks.|
 
 ## Example
 

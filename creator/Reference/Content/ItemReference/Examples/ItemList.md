@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Item Documentation - Item List
-ms.prod: gaming
+description: "A reference document all available item JSON files"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Item Documentation - Items

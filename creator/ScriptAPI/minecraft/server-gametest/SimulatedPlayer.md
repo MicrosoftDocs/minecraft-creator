@@ -2,17 +2,16 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: minecraft/server-gametest.SimulatedPlayer Class
 description: Contents of the @minecraft/server-gametest.SimulatedPlayer class.
 ---
 # SimulatedPlayer Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 ## Extends
 - [*@minecraft/server.Player*](../../minecraft/server/Player.md)
 
-A simulated player can be used within GameTests to represent how a player moves throughout the world and to support testing of how entities and the environment will react to a player. This type derives much of its structure and methods from the [*@minecraft/server.Player*](../../minecraft/server/Player.md) type.
+A simulated player can be used within GameTests to represent how a player moves throughout the world and to support testing of how entities and the environment will react to a player. This type derives much of its structure and methods from the [*@minecraft/server.Player*](../../minecraft/server/Player.md) type. Note that many types of events that may be available for entities more broadly, such as item use events, may not fire in the same capacity for simulated players.
 
 ## Properties
 
@@ -23,17 +22,29 @@ Rotation of the head across pitch and yaw angles.
 
 Type: [*@minecraft/server.Vector2*](../../minecraft/server/Vector2.md)
 
+> [!WARNING]
+> This property can throw errors when used.
+
 ### **isSprinting**
 `isSprinting: boolean;`
 
+Returns whether the simulated player is sprinting.
+
 Type: *boolean*
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
 
 ## Methods
 - [attack](#attack)
 - [attackEntity](#attackentity)
 - [breakBlock](#breakblock)
+- [chat](#chat)
 - [disconnect](#disconnect)
+- [dropSelectedItem](#dropselecteditem)
+- [fly](#fly)
 - [giveItem](#giveitem)
+- [glide](#glide)
 - [interact](#interact)
 - [interactWithBlock](#interactwithblock)
 - [interactWithEntity](#interactwithentity)
@@ -52,12 +63,17 @@ Type: *boolean*
 - [respawn](#respawn)
 - [rotateBody](#rotatebody)
 - [setBodyRotation](#setbodyrotation)
-- [setGameMode](#setgamemode)
 - [setItem](#setitem)
+- [startBuild](#startbuild)
 - [stopBreakingBlock](#stopbreakingblock)
+- [stopBuild](#stopbuild)
+- [stopFlying](#stopflying)
+- [stopGliding](#stopgliding)
 - [stopInteracting](#stopinteracting)
 - [stopMoving](#stopmoving)
+- [stopSwimming](#stopswimming)
 - [stopUsingItem](#stopusingitem)
+- [swim](#swim)
 - [useItem](#useitem)
 - [useItemInSlot](#useiteminslot)
 - [useItemInSlotOnBlock](#useiteminslotonblock)
@@ -70,7 +86,10 @@ attack(): boolean
 
 Causes the simulated player to make an attack 'swipe'. Returns true if the attack was performed - for example, the player was not on cooldown and had a valid target. Target selection is performed by raycasting from the player's head.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -85,7 +104,10 @@ Causes the simulated player to attack the provided target. Returns true if the a
 #### **Parameters**
 - **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
 
-#### **Returns** *boolean*
+**Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -105,7 +127,24 @@ Destroys the block at blockLocation, respecting the rules of the server player's
   
   Direction to place the specified item within.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **chat**
+`
+chat(message: string): void
+`
+
+#### **Parameters**
+- **message**: *string*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -116,6 +155,37 @@ disconnect(): void
 `
 
 Simulates and performs a disconnection of the simulated player from the world.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **dropSelectedItem**
+`
+dropSelectedItem(): boolean
+`
+
+Drops the simulated player's selected item
+
+**Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **fly**
+`
+fly(): void
+`
+
+Causes the simulated player to start flying as though they were flying in creative mode. For flying with Elytra, see function glide.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -135,7 +205,25 @@ Gives the simulated player a particular item stack.
   
   Whether to set the selected slot once given.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **glide**
+`
+glide(): boolean
+`
+
+Causes the simulated player to start gliding. Elytra must be equipped and the player must be in the air.
+
+**Returns** *boolean* - Returns true if the simulated player begins to glide. Returns false if the player is already gliding, or the player does not have Elytra equipped, is in water or is on the ground.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -147,7 +235,10 @@ interact(): boolean
 
 Performs a raycast from the player’s head and interacts with the first intersected block or entity. Returns true if the interaction was successful. Maximum range is 6 blocks.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -167,7 +258,10 @@ Causes the simulated player to interact with a block. The block at the specified
   
   Direction to place the specified item within.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -184,7 +278,10 @@ Causes the simulated player to interact with a mob. Returns true if the interact
   
   Entity to interact with.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -196,46 +293,61 @@ jump(): boolean
 
 Causes the simulated player to jump.
 
-#### **Returns** *boolean* - True if a jump was performed.
+**Returns** *boolean* - True if a jump was performed.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **lookAtBlock**
 `
-lookAtBlock(blockLocation: minecraftserver.Vector3): void
+lookAtBlock(blockLocation: minecraftserver.Vector3, duration?: LookDuration): void
 `
 
 Rotates the simulated player's head/body to look at the given block location.
 
 #### **Parameters**
 - **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **duration**?: [*LookDuration*](LookDuration.md) = `2`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **lookAtEntity**
 `
-lookAtEntity(entity: minecraftserver.Entity): void
+lookAtEntity(entity: minecraftserver.Entity, duration?: LookDuration): void
 `
 
 Rotates the simulated player's head/body to look at the given entity.
 
 #### **Parameters**
 - **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
+- **duration**?: [*LookDuration*](LookDuration.md) = `2`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **lookAtLocation**
 `
-lookAtLocation(location: minecraftserver.Vector3): void
+lookAtLocation(location: minecraftserver.Vector3, duration?: LookDuration): void
 `
 
 Rotates the simulated player's head/body to look at the given location.
 
 #### **Parameters**
 - **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **duration**?: [*LookDuration*](LookDuration.md) = `2`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -252,6 +364,9 @@ Orders the simulated player to walk in the given direction relative to the GameT
 - **northSouth**: *number*
 - **speed**?: *number* = `1`
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -267,40 +382,49 @@ Orders the simulated player to walk in the given direction relative to the playe
 - **backwardForward**: *number*
 - **speed**?: *number* = `1`
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
 ### **moveToBlock**
 `
-moveToBlock(blockLocation: minecraftserver.Vector3, speed?: number): void
+moveToBlock(blockLocation: minecraftserver.Vector3, options?: MoveToOptions): void
 `
 
 Orders the simulated player to move to the given block location in a straight line. If a move or navigation is already playing, this will override the last move/navigation.
 
 #### **Parameters**
 - **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-- **speed**?: *number* = `1`
+- **options**?: [*MoveToOptions*](MoveToOptions.md) = `null`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **moveToLocation**
 `
-moveToLocation(location: minecraftserver.Vector3, speed?: number): void
+moveToLocation(location: minecraftserver.Vector3, options?: MoveToOptions): void
 `
 
 Orders the simulated player to move to the given location in a straight line. If a move or navigation is already playing, this will override the last move/navigation.
 
 #### **Parameters**
 - **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-- **speed**?: *number* = `1`
+- **options**?: [*MoveToOptions*](MoveToOptions.md) = `null`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **navigateToBlock**
 `
-navigateToBlock(blockLocation: minecraftserver.Vector3, speed?: number): minecraftserver.NavigationResult
+navigateToBlock(blockLocation: minecraftserver.Vector3, speed?: number): NavigationResult
 `
 
 Orders the simulated player to move to a specific block location using navigation. If a move or navigation is already playing, this will override the last move/walk. Note that if the simulated player gets stuck, that simulated player will stop. The player must be touching the ground in order to start navigation.
@@ -309,14 +433,17 @@ Orders the simulated player to move to a specific block location using navigatio
 - **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 - **speed**?: *number* = `1`
 
-#### **Returns** [*@minecraft/server.NavigationResult*](../../minecraft/server/NavigationResult.md)
+**Returns** [*NavigationResult*](NavigationResult.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **navigateToEntity**
 `
-navigateToEntity(entity: minecraftserver.Entity, speed?: number): minecraftserver.NavigationResult
+navigateToEntity(entity: minecraftserver.Entity, speed?: number): NavigationResult
 `
 
 Will use navigation to follow the selected entity to within a one block radius. If a move or navigation is already playing, this will override the last move/navigation.
@@ -325,14 +452,17 @@ Will use navigation to follow the selected entity to within a one block radius. 
 - **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
 - **speed**?: *number* = `1`
 
-#### **Returns** [*@minecraft/server.NavigationResult*](../../minecraft/server/NavigationResult.md)
+**Returns** [*NavigationResult*](NavigationResult.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **navigateToLocation**
 `
-navigateToLocation(location: minecraftserver.Vector3, speed?: number): minecraftserver.NavigationResult
+navigateToLocation(location: minecraftserver.Vector3, speed?: number): NavigationResult
 `
 
 Orders the simulated player to move to a specific location using navigation. If a move or navigation is already playing, this will override the last move/walk. Note that if the simulated player gets stuck, that simulated player will stop. The player must be touching the ground in order to start navigation.
@@ -341,7 +471,10 @@ Orders the simulated player to move to a specific location using navigation. If 
 - **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 - **speed**?: *number* = `1`
 
-#### **Returns** [*@minecraft/server.NavigationResult*](../../minecraft/server/NavigationResult.md)
+**Returns** [*NavigationResult*](NavigationResult.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -361,6 +494,9 @@ Use navigation to follow the route provided via the locations parameter. If a mo
   
   Net speed to use for doing the navigation.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -371,7 +507,10 @@ respawn(): boolean
 
 Respawns the particular simulated player.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -386,6 +525,9 @@ Causes the simulated player to turn by the provided angle, relative to the playe
 #### **Parameters**
 - **angleInDegrees**: *number*
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -399,20 +541,8 @@ Causes the simulated player to turn to face the provided angle, relative to the 
 #### **Parameters**
 - **angleInDegrees**: *number*
 
-> [!WARNING]
-> This function can throw errors.
-
-### **setGameMode**
-`
-setGameMode(gameMode: minecraftserver.GameMode): void
-`
-
-Sets the game mode that the simulated player is operating under.
-
-#### **Parameters**
-- **gameMode**: [*@minecraft/server.GameMode*](../../minecraft/server/GameMode.md)
-  
-  Game mode to set.
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -435,7 +565,24 @@ Sets a particular item for the simulated player.
   
   Whether to set the selected slot once set.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **startBuild**
+`
+startBuild(slot?: number): void
+`
+
+#### **Parameters**
+- **slot**?: *number* = `0`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -447,6 +594,46 @@ stopBreakingBlock(): void
 
 Stops destroying the block that is currently being hit.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **stopBuild**
+`
+stopBuild(): void
+`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **stopFlying**
+`
+stopFlying(): void
+`
+
+Causes the simulated player to stop flying.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **stopGliding**
+`
+stopGliding(): void
+`
+
+Causes the simulated player to stop gliding.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
@@ -456,6 +643,9 @@ stopInteracting(): void
 `
 
 Stops interacting with entities or blocks.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -467,15 +657,49 @@ stopMoving(): void
 
 Stops moving/walking/following if the simulated player is moving.
 
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **stopSwimming**
+`
+stopSwimming(): void
+`
+
+Causes the simulated player to stop swimming.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
 > [!WARNING]
 > This function can throw errors.
 
 ### **stopUsingItem**
 `
-stopUsingItem(): void
+stopUsingItem(): minecraftserver.ItemStack | undefined
 `
 
 Stops using the currently active item.
+
+**Returns** [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md) | *undefined* - Returns the item that was in use. Undefined if no item was in use.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **swim**
+`
+swim(): void
+`
+
+Causes the simulated player to start swimming.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -492,7 +716,10 @@ Causes the simulated player to use an item. Does not consume the item. Returns f
   
   Item to use.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -509,7 +736,10 @@ Causes the simulated player to hold and use an item in their inventory.
   
   Index of the inventory slot.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -535,7 +765,10 @@ Causes the simulated player to use an item in their inventory on a block. The bl
   
   Location relative to the bottom north-west corner of the block where the item is placed.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
@@ -561,7 +794,10 @@ Causes the simulated player to use an item on a block. The block at the specifie
   
   Location relative to the bottom north-west corner of the block where the item is placed.
 
-#### **Returns** *boolean*
+**Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.

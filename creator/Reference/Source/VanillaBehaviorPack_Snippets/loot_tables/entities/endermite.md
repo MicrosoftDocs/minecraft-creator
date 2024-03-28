@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: endermite
-ms.prod: gaming
+description: "A code snippet for the endermite entity loot table"
+ms.service: minecraft-bedrock-edition
 ---
 
 # endermite

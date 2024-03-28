@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: mikeam
 title: Entity Documentation - is_biome
-ms.prod: gaming
+description: "A reference document detailing the 'is_biome' entity filter"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - is_biome
@@ -48,7 +49,7 @@ Below is a list of biome types that can be used for the `value` string.
 | Options| Description |
 |:-----------|:-----------|
 | block| The block involved with the interaction. |
-| damager| The damaging actor involved with the interaction. |
+| damager| The damaging entity involved with the interaction. |
 | other| The other member of an interaction, not the caller. |
 | parent| The caller's current parent. |
 | player| The player involved with the interaction. |

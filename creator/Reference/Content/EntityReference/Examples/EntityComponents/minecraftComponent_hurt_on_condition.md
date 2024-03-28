@@ -1,8 +1,9 @@
 ---
-author: mammerla
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Entity Documentation - minecraft:hurt_on_condition
-ms.prod: gaming
+description: "A reference document detailing the 'hurt_on_condition' entity component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:hurt_on_condition
@@ -23,7 +24,7 @@ ms.prod: gaming
 |:----------|:----------|:----------|:----------|
 |[filters](../FilterList.md)|*not set* | Minecraft Filter| Filter used to test for|
 |cause|*not set* |String| The kind of damage that is caused to the entity. Various armors and spells use this to determine if the entity is immune. |
-|damange_per_tick |*not set*| Integer| Amount of damage done each tick that the conditions are met.|
+|damage_per_tick |*not set*| Integer| Amount of damage done each tick that the conditions are met.|
 
 ### cause
 

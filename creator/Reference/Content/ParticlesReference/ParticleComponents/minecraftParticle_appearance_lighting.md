@@ -1,8 +1,9 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: mammerla
+ms.author: mikeam
 title: Particle Documentation - Particle Appearance Lighting
-ms.prod: gaming
+description: "A reference document detailing the 'particle appearance lighting' particle component"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Particle Documentation - Particle Appearance Lighting

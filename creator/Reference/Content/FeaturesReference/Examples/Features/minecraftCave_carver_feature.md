@@ -1,17 +1,37 @@
 ---
-author: v-jeffreykim
-ms.author: v-jeffreykim
+author: JimSeaman42
+ms.author: mikeam
 title: Features Documentation - minecraft:cave_carver_feature
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 ---
 
 # Features Documentation - minecraft:cave_carver_feature
 
-`minecraft:cave_carver_feature` carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.This feature will also only work when placed specifically in the pass "pregeneration_pass".
+`minecraft:cave_carver_feature` carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern. This feature only works when placed in the pass "pregeneration_pass".
 
-## Example
+### Schema
 
-### Carve caves normally
+```json
+object "minecraft:cave_carver_feature" : opt
+{
+  object "description"
+  {
+    string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+  }
+  block_reference "fill_with" : opt // Reference to the block to fill the cave with.
+  molang "width_modifier" : opt // How many blocks to increase the cave radius by, from the center point of the cave.
+  int "skip_carve_chance"<1-*> : opt // The chance to skip doing the carve (1 / value).
+  int "height_limit" : opt // The height limit where we attempt to carve.
+  float_range "y_scale" : opt // The scaling in y.
+  float_range "horizontal_radius_multiplier" : opt // Horizontal radius multiplier.
+  float_range "vertical_radius_multiplier" : opt // Vertical radius multiplier.
+  float_range "floor_level" : opt // Floor Level.
+}
+```
+
+### Example
+
+Carve caves normally
 
 ```json
 {
@@ -22,7 +42,7 @@ ms.prod: gaming
     },
     "fill_with": "minecraft:air",
     "width_modifier": 0.0,
-		"skip_carve_chance": 15
+  "skip_carve_chance": 15
   }
 }
 ```

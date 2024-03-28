@@ -1,8 +1,9 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: kakinnun
 title: Converting Texture Packs from Java Edition to Bedrock Edition
-ms.prod: gaming
+description: "Converting resource packs from Java to Bedrock"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition
@@ -35,7 +36,7 @@ In general, the differences between texture packs for Java Edition and Bedrock E
 
 |Content|Bedrock Edition|Notes|
 |:---|:---|:---|
-|Animation|Block animations controlled by `flipbook_textures.json`, can be customized|External site: [Block Animations](https://minecraft.fandom.com/wiki/Bedrock_Edition_animation_documentation)|
+|Animation|Block animations controlled by `flipbook_textures.json`, can be customized| |
 |Spawn Egg|Individual spawn egg textures||
 |Potion bottle|Individual potion bottles||
 |Color maps|`.json` file||

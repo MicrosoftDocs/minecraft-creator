@@ -2,7 +2,8 @@
 author: mammerla
 ms.author: v-bbortree
 title: Entity Documentation - operators
-ms.prod: gaming
+description: "A reference document detailing operators"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - Operators

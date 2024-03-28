@@ -1,13 +1,14 @@
 ---
-author: mammerla
-ms.author: v-bbortree
+author: JimSeaman42
+ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.ram_attack
-ms.prod: gaming
+description: "A reference document detailing the 'behavior.ram_attack' entity goal"
+ms.service: minecraft-bedrock-edition
 ---
 
 # Entity Documentation - minecraft:behavior.ram_attack
 
-`minecraft:behavior.ram_attack` allows the mob to search for a random target and, if a direct path exists between the mob and the target, it will perform a charge. If the attack hits, the target will be knocked back based on the mob's speed.
+`minecraft:behavior.ram_attack` compels an entity to search for a random target and, if a direct path exists between the entity and the target, it will perform a charge. If the attack hits, the target will be knocked back based on the entity's speed.
 
 ## Parameters
 
@@ -15,16 +16,16 @@ ms.prod: gaming
 |:-----------:|:-----------:|:-----------:|:-----------:|
 | baby_knockback_modifier| 0.333333| Decimal| The modifier to knockback that babies have. |
 | cooldown_range| [10, 20]| Range [a, b]| Minimum and maximum cooldown time-range (positive, in seconds) between each attempted ram attack. |
-| knockback_force| 5.000000| Decimal| The force of the knockback of the ram attack. |
-| knockback_height| 0.100000| Decimal| The height of the knockback of the ram attack. |
-| min_ram_distance| 0.000000| Decimal| The minimum distance at which the mob can start a ram attack. |
-| on_start| | Trigger| The event to trigger when attacking |
+| knockback_force| 5.000000| Decimal| The force of the ram attack knockback. |
+| knockback_height| 0.100000| Decimal| The height of the ram attack knockback. |
+| min_ram_distance| 0.000000| Decimal| The minimum distance the entity can start a ram attack. |
+| on_start| | Trigger| The event to trigger when attacking. |
 | pre_ram_sound| | String| The sound to play when an entity is about to perform a ram attack. |
 |priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-| ram_distance| 0.000000| Decimal| The distance at which the mob start to run with ram speed. |
+| ram_distance| 0.000000| Decimal| The distance the mob start to run with ram speed. |
 | ram_impact_sound| | String| The sound to play when an entity is impacting on a ram attack. |
-| ram_speed| 2.000000| Decimal| Sets the entity's speed when charging toward the target. |
-| run_speed| 1.000000| Decimal| Sets the entity's speed when running toward the target. |
+| ram_speed| 2.000000| Decimal| The entity's speed when charging toward the target. |
+| run_speed| 1.000000| Decimal| The entity's speed when running toward the target. |
 
 ## Example
 

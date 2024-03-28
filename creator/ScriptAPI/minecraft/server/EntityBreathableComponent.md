@@ -2,13 +2,13 @@
 # DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
 author: jakeshirley
 ms.author: jashir
-ms.prod: gaming
+ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityBreathableComponent Class
 description: Contents of the @minecraft/server.EntityBreathableComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityBreathableComponent Class
->[!IMPORTANT]
->These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes in functionality in updated Minecraft versions. Check the Minecraft Changelog for details on any changes to Beta APIs. Where possible, this documentation reflects the latest updates to APIs in Minecraft beta versions.
+
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
@@ -26,12 +26,18 @@ If true, this entity can breathe in air.
 
 Type: *boolean*
 
+> [!WARNING]
+> This property can throw errors when used.
+
 ### **breathesLava**
 `read-only breathesLava: boolean;`
 
 If true, this entity can breathe in lava.
 
 Type: *boolean*
+
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **breathesSolids**
 `read-only breathesSolids: boolean;`
@@ -40,12 +46,18 @@ If true, this entity can breathe in solid blocks.
 
 Type: *boolean*
 
+> [!WARNING]
+> This property can throw errors when used.
+
 ### **breathesWater**
 `read-only breathesWater: boolean;`
 
 If true, this entity can breathe in water.
 
 Type: *boolean*
+
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **generatesBubbles**
 `read-only generatesBubbles: boolean;`
@@ -54,12 +66,18 @@ If true, this entity will have visible bubbles while in water.
 
 Type: *boolean*
 
+> [!WARNING]
+> This property can throw errors when used.
+
 ### **inhaleTime**
 `read-only inhaleTime: number;`
 
 Time in seconds to recover breath to maximum.
 
 Type: *number*
+
+> [!WARNING]
+> This property can throw errors when used.
 
 ### **suffocateTime**
 `read-only suffocateTime: number;`
@@ -68,12 +86,18 @@ Time in seconds between suffocation damage.
 
 Type: *number*
 
+> [!WARNING]
+> This property can throw errors when used.
+
 ### **totalSupply**
 `read-only totalSupply: number;`
 
 Time in seconds the entity can hold its breath.
 
 Type: *number*
+
+> [!WARNING]
+> This property can throw errors when used.
 
 ## Methods
 - [getBreatheBlocks](#getbreatheblocks)
@@ -87,7 +111,7 @@ getBreatheBlocks(): BlockPermutation[]
 
 List of blocks this entity can breathe in, in addition to the separate properties for classes of blocks.
 
-#### **Returns** [*BlockPermutation*](BlockPermutation.md)[]
+**Returns** [*BlockPermutation*](BlockPermutation.md)[]
 
 > [!WARNING]
 > This function can throw errors.
@@ -99,7 +123,7 @@ getNonBreatheBlocks(): BlockPermutation[]
 
 List of blocks this entity can't breathe in.
 
-#### **Returns** [*BlockPermutation*](BlockPermutation.md)[]
+**Returns** [*BlockPermutation*](BlockPermutation.md)[]
 
 > [!WARNING]
 > This function can throw errors.
@@ -123,7 +147,5 @@ Sets the current air supply of the entity.
 
 ### **componentId**
 `static read-only componentId = "minecraft:breathable";`
-
-Identifier of this component. Should always be minecraft:breathable.
 
 Type: *string*
