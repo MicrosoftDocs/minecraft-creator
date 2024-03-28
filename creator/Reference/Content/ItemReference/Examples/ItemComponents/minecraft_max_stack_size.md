@@ -14,4 +14,4 @@ ms.service: minecraft-bedrock-edition
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| value|*not set*| | How many of an item that can be stacked together.|
+| value|64|Integer | How many of an item that can be stacked together.|
