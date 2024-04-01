@@ -368,9 +368,9 @@ To get you going, we provide the following example JSON files that will give you
     "orbital_offset_degrees": 3.0
   },
   "point_lights": { 
-        "colors": { 
-            "minecraft:soul_torch": "#FFFFFF"
-        } 
+      "colors": { 
+         "minecraft:soul_torch": "#FFFFFF"
+      } 
   },
   "pbr": { 
       "blocks": { 
