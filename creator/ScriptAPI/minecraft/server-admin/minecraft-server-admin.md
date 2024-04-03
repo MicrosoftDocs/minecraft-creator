@@ -9,7 +9,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 ---
 # `@minecraft/server-admin` Module
 
-Contains types related to administering a Bedrock Dedicated Server. These types allow for the configuration of variables and secrets in JSON files in the Bedrock Dedicated Server folder. These types cannot be used on Minecraft clients.
+Contains types related to administering a Bedrock Dedicated Server. These types allow for the configuration of variables and secrets in JSON files in the Bedrock Dedicated Server folder. These types cannot be used on Minecraft clients or within Minecraft Realms.
 
 > [!CAUTION]
 > This module is still in pre-release.  It may change or it may be removed in future releases.

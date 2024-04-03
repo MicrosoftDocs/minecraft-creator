@@ -21,7 +21,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```
 
 ## Available Versions
-- `1.11.0-beta`
+- `1.12.0-beta`
 - `1.9.0`
 - `1.8.0`
 - `1.7.0`
@@ -56,6 +56,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [GameRule](GameRule.md)
 - [HudElement](HudElement.md)
 - [HudVisibility](HudVisibility.md)
+- [InputPermissionCategory](InputPermissionCategory.md)
 - [ItemComponentTypes](ItemComponentTypes.md)
 - [ItemLockMode](ItemLockMode.md)
 - [MoonPhase](MoonPhase.md)
@@ -251,6 +252,9 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ItemCompleteUseAfterEvent](ItemCompleteUseAfterEvent.md)
 - [ItemCompleteUseAfterEventSignal](ItemCompleteUseAfterEventSignal.md)
 - [ItemComponent](ItemComponent.md)
+- [ItemComponentBeforeDurabilityDamageEvent](ItemComponentBeforeDurabilityDamageEvent.md)
+- [ItemComponentHitEntityEvent](ItemComponentHitEntityEvent.md)
+- [ItemComponentMineBlockEvent](ItemComponentMineBlockEvent.md)
 - [ItemComponentRegistry](ItemComponentRegistry.md)
 - [ItemComponentUseEvent](ItemComponentUseEvent.md)
 - [ItemCooldownComponent](ItemCooldownComponent.md)
@@ -297,6 +301,9 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [PlayerGameModeChangeAfterEventSignal](PlayerGameModeChangeAfterEventSignal.md)
 - [PlayerGameModeChangeBeforeEvent](PlayerGameModeChangeBeforeEvent.md)
 - [PlayerGameModeChangeBeforeEventSignal](PlayerGameModeChangeBeforeEventSignal.md)
+- [PlayerInputPermissionCategoryChangeAfterEvent](PlayerInputPermissionCategoryChangeAfterEvent.md)
+- [PlayerInputPermissionCategoryChangeAfterEventSignal](PlayerInputPermissionCategoryChangeAfterEventSignal.md)
+- [PlayerInputPermissions](PlayerInputPermissions.md)
 - [PlayerInteractWithBlockAfterEvent](PlayerInteractWithBlockAfterEvent.md)
 - [PlayerInteractWithBlockAfterEventSignal](PlayerInteractWithBlockAfterEventSignal.md)
 - [PlayerInteractWithBlockBeforeEvent](PlayerInteractWithBlockBeforeEvent.md)
@@ -387,6 +394,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntityDataDrivenTriggerEventOptions](EntityDataDrivenTriggerEventOptions.md)
 - [EntityEffectOptions](EntityEffectOptions.md)
 - [EntityEventOptions](EntityEventOptions.md)
+- [EntityFilter](EntityFilter.md)
 - [EntityHitInformation](EntityHitInformation.md)
 - [EntityQueryOptions](EntityQueryOptions.md)
 - [EntityQueryPropertyOptions](EntityQueryPropertyOptions.md)

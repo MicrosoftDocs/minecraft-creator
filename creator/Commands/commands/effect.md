@@ -111,3 +111,8 @@ Bad Omen
 Village Hero
 - `darkness`
 Darkness
+- `trial_omen`
+- `wind_charged`
+- `weaving`
+- `oozing`
+- `infested`
