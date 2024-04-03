@@ -16,6 +16,23 @@ Contains a set of events that will be raised for an item. This object must be bo
 
 ## Properties
 
+### **onBeforeDurabilityDamage**
+`onBeforeDurabilityDamage?: (arg: ItemComponentBeforeDurabilityDamageEvent) => void;`
+
+Type: (arg: [*ItemComponentBeforeDurabilityDamageEvent*](ItemComponentBeforeDurabilityDamageEvent.md)) => *void*
+
+### **onHitEntity**
+`onHitEntity?: (arg: ItemComponentHitEntityEvent) => void;`
+
+Type: (arg: [*ItemComponentHitEntityEvent*](ItemComponentHitEntityEvent.md)) => *void*
+
+### **onMineBlock**
+`onMineBlock?: (arg: ItemComponentMineBlockEvent) => void;`
+
+This function will be called when an item containing this component is used to mine a block.
+
+Type: (arg: [*ItemComponentMineBlockEvent*](ItemComponentMineBlockEvent.md)) => *void*
+
 ### **onUse**
 `onUse?: (arg: ItemComponentUseEvent) => void;`
 

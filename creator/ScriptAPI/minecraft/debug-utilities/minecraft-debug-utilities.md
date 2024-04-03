@@ -27,13 +27,13 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 ## Functions
 
-### **disableWatchdog**
+### **disableWatchdogTimingWarnings**
 `
-disableWatchdog(isStopped: boolean): void
+disableWatchdogTimingWarnings(disable: boolean): void
 `
 
 #### **Parameters**
-- **isStopped**: *boolean*
+- **disable**: *boolean*
 
 > [!WARNING]
 > This function can throw errors.

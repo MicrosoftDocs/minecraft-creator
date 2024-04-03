@@ -111,6 +111,7 @@ controls whether border effects are shown
 Configures if standard player notifications for recipes will show. When set to false, "player unlocked recipes" are no longer sent as player notifications
 - `projectilescanbreakblocks`
 Defines if projectiles (entities with a projectile component, like Arrows, thrown Tridents or Fireworks) can destroy certain blocks that support this interaction (such as Chorus Fruit, Dripstone or Decorated Pots). Restrictions on which projectiles can destroy certain blocks apply
+- `tntexplosiondropdecay`
 
 ### `IntGameRule`
 An `integer` to replace the following default values.

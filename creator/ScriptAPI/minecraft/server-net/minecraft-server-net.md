@@ -9,7 +9,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 ---
 # `@minecraft/server-net` Module
 
-The `@minecraft/server-net` module contains types for executing HTTP-based requests. This module can only be used on Bedrock Dedicated Server.
+The `@minecraft/server-net` module contains types for executing HTTP-based requests. This module can only be used on Bedrock Dedicated Server. These APIs do not function within the Minecraft game client or within Minecraft Realms.
 
 > [!CAUTION]
 > This module is still in pre-release.  It may change or it may be removed in future releases.

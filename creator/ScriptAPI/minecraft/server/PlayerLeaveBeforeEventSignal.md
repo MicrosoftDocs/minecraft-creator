@@ -41,6 +41,3 @@ Removes a callback that will be called when a player leaves the world.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.

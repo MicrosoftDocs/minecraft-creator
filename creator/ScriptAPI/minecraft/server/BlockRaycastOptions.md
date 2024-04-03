@@ -8,19 +8,12 @@ description: Contents of the @minecraft/server.BlockRaycastOptions class.
 ---
 # BlockRaycastOptions Interface
 
+## Extends
+- [*BlockFilter*](BlockFilter.md)
+
 Contains additional options for configuring a block raycast query.
 
 ## Properties
-
-::: moniker range="=minecraft-bedrock-experimental"
-### **blockFilter**
-`blockFilter?: BlockFilter;`
-
-Type: [*BlockFilter*](BlockFilter.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **includeLiquidBlocks**
 `includeLiquidBlocks?: boolean;`

@@ -363,6 +363,9 @@ Gets entities that intersect with a specified vector emanating from a location.
 
 **Returns** [*EntityRaycastHit*](EntityRaycastHit.md)[]
 
+> [!WARNING]
+> This function can throw errors.
+
 ### **getPlayers**
 `
 getPlayers(options?: EntityQueryOptions): Player[]

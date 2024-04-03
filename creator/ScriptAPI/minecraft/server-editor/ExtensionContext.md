@@ -30,6 +30,11 @@ Type: [*ExtensionContextAfterEvents*](ExtensionContextAfterEvents.md)
 
 Type: [*BlockPaletteManager*](BlockPaletteManager.md)
 
+### **brushShapeManager**
+`read-only brushShapeManager: BrushShapeManager;`
+
+Type: [*BrushShapeManager*](BrushShapeManager.md)
+
 ### **clipboardManager**
 `read-only clipboardManager: ClipboardManager;`
 

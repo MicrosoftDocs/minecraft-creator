@@ -41,6 +41,3 @@ Removes the specified callback from a player dimension change after event.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
