@@ -153,3 +153,5 @@ The block radius from world spawn that a player is allowed to spawn in. Does not
 `TntExplodes = "tntExplodes"`
 
 Affects whether TNT blocks can be lit.
+### **TntExplosionDropDecay**
+`TntExplosionDropDecay = "tntExplosionDropDecay"`

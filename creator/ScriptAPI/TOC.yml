@@ -142,6 +142,8 @@
       href: minecraft/server/HudElement.md
     - name: HudVisibility
       href: minecraft/server/HudVisibility.md
+    - name: InputPermissionCategory
+      href: minecraft/server/InputPermissionCategory.md
     - name: ItemComponentTypes
       href: minecraft/server/ItemComponentTypes.md
     - name: ItemLockMode
@@ -518,6 +520,12 @@
       href: minecraft/server/ItemCompleteUseAfterEventSignal.md
     - name: ItemComponent
       href: minecraft/server/ItemComponent.md
+    - name: ItemComponentBeforeDurabilityDamageEvent
+      href: minecraft/server/ItemComponentBeforeDurabilityDamageEvent.md
+    - name: ItemComponentHitEntityEvent
+      href: minecraft/server/ItemComponentHitEntityEvent.md
+    - name: ItemComponentMineBlockEvent
+      href: minecraft/server/ItemComponentMineBlockEvent.md
     - name: ItemComponentRegistry
       href: minecraft/server/ItemComponentRegistry.md
     - name: ItemComponentUseEvent
@@ -610,6 +618,12 @@
       href: minecraft/server/PlayerGameModeChangeBeforeEvent.md
     - name: PlayerGameModeChangeBeforeEventSignal
       href: minecraft/server/PlayerGameModeChangeBeforeEventSignal.md
+    - name: PlayerInputPermissionCategoryChangeAfterEvent
+      href: minecraft/server/PlayerInputPermissionCategoryChangeAfterEvent.md
+    - name: PlayerInputPermissionCategoryChangeAfterEventSignal
+      href: minecraft/server/PlayerInputPermissionCategoryChangeAfterEventSignal.md
+    - name: PlayerInputPermissions
+      href: minecraft/server/PlayerInputPermissions.md
     - name: PlayerInteractWithBlockAfterEvent
       href: minecraft/server/PlayerInteractWithBlockAfterEvent.md
     - name: PlayerInteractWithBlockAfterEventSignal
@@ -786,6 +800,8 @@
       href: minecraft/server/EntityEffectOptions.md
     - name: EntityEventOptions
       href: minecraft/server/EntityEventOptions.md
+    - name: EntityFilter
+      href: minecraft/server/EntityFilter.md
     - name: EntityHitInformation
       href: minecraft/server/EntityHitInformation.md
     - name: EntityQueryOptions
@@ -900,8 +916,14 @@
       href: minecraft/server-editor/WidgetGroupSelectionMode.md
     - name: BedrockEventSubscriptionCache
       href: minecraft/server-editor/BedrockEventSubscriptionCache.md
+    - name: BlockPalette
+      href: minecraft/server-editor/BlockPalette.md
     - name: BlockPaletteManager
       href: minecraft/server-editor/BlockPaletteManager.md
+    - name: BrushShape
+      href: minecraft/server-editor/BrushShape.md
+    - name: BrushShapeManager
+      href: minecraft/server-editor/BrushShapeManager.md
     - name: ClipboardItem
       href: minecraft/server-editor/ClipboardItem.md
     - name: ClipboardManager
@@ -952,6 +974,8 @@
       href: minecraft/server-editor/SelectionManager.md
     - name: SettingsManager
       href: minecraft/server-editor/SettingsManager.md
+    - name: SettingsUIElement
+      href: minecraft/server-editor/SettingsUIElement.md
     - name: SimpleBlockPaletteItem
       href: minecraft/server-editor/SimpleBlockPaletteItem.md
     - name: SimulationState

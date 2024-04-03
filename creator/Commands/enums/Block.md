@@ -578,10 +578,6 @@ Piston
 Piston
 - `minecraft:brown_carpet`
 - `brown_carpet`
-- `minecraft:tallgrass`
-Tallgrass
-- `tallgrass`
-Tallgrass
 - `minecraft:stone_brick_stairs`
 Stone Brick Stairs
 - `stone_brick_stairs`
@@ -1906,6 +1902,8 @@ Weathered Cut Copper Slab
 Fire
 - `fire`
 Fire
+- `minecraft:fern`
+- `fern`
 - `minecraft:torchflower`
 - `torchflower`
 - `minecraft:end_portal_frame`
@@ -2140,6 +2138,8 @@ Moss Block
 Pink Glazed Terracotta
 - `pink_glazed_terracotta`
 Pink Glazed Terracotta
+- `minecraft:short_grass`
+- `short_grass`
 - `minecraft:waxed_weathered_cut_copper_slab`
 Waxed Weathered Cut Copper Slab
 - `waxed_weathered_cut_copper_slab`
@@ -3118,6 +3118,10 @@ Dead Coral Fan
 Red Flower
 - `minecraft:red_flower`
 Red Flower
+- `tallgrass`
+Tallgrass
+- `minecraft:tallgrass`
+Tallgrass
 - `lava_cauldron`
 Lava Cauldron
 - `minecraft:lava_cauldron`

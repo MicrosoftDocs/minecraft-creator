@@ -239,6 +239,18 @@ Type: [*PlayerGameModeChangeAfterEventSignal*](PlayerGameModeChangeAfterEventSig
 ::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
+### **playerInputPermissionCategoryChange**
+`read-only playerInputPermissionCategoryChange: PlayerInputPermissionCategoryChangeAfterEventSignal;`
+
+This event fires when a players input permissions change.
+
+Type: [*PlayerInputPermissionCategoryChangeAfterEventSignal*](PlayerInputPermissionCategoryChangeAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
 ### **playerInteractWithBlock**
 `read-only playerInteractWithBlock: PlayerInteractWithBlockAfterEventSignal;`
 

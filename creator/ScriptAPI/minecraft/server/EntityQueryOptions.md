@@ -8,6 +8,9 @@ description: Contents of the @minecraft/server.EntityQueryOptions class.
 ---
 # EntityQueryOptions Interface
 
+## Extends
+- [*EntityFilter*](EntityFilter.md)
+
 Contains options for selecting entities within an area.
 
 #### Examples
@@ -62,6 +65,162 @@ function playSounds(dimension: Dimension) {
             player.playSound('raid.horn');
         });
     });
+}
+```
+##### ***testPropertyOptionsWithEqualsComparison.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[has_property={propId=propValue}]
+
+// Equivalent scripting code would be:
+function findEntitiesHavingPropertyEqualsTo(propId: string, propValue: boolean | number | string) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId, value: { equals: propValue } }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+```
+##### ***testPropertyOptionsWithGreaterThanComparison.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// No equivalent commands as `propValue..` is inclusive in commands 
+
+function findEntitiesHavingPropertyGreaterThan(propId: string, propValue: number) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId, value: { greaterThan: propValue } }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+```
+##### ***testPropertyOptionsWithGreaterThanOrEqualsComparison.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[has_property={propId=propValue..}]
+
+// Equivalent scripting code would be:
+function findEntitiesHavingPropertyGreaterThanOrEqualsTo(propId: string, propValue: number) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId, value: { greaterThanOrEquals: propValue } }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+```
+##### ***testPropertyOptionsWithHavingAProperty.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[has_property={property=propId}]
+
+// Equivalent scripting code would be:
+function findEntitiesHavingAProperty(propId: string) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+```
+##### ***testPropertyOptionsWithLessThanComparison.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// No equivalent commands as `..propValue` is inclusive in commands 
+
+function findEntitiesHavingPropertyLessThan(propId: string, propValue: number) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId, value: { lessThan: propValue } }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+```
+##### ***testPropertyOptionsWithLessThanOrEqualsComparison.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[has_property={propId=..propValue}]
+
+// Equivalent scripting code would be:
+function findEntitiesHavingPropertyLessThanOrEqualsTo(propId: string, propValue: number) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId, value: { lessThanOrEquals: propValue } }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+```
+##### ***testPropertyOptionsWithNotEqualsComparison.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[has_property={propId=!propValue}]
+
+// Equivalent scripting code would be:
+function findEntitiesHavingPropertyNotEqualsTo(propId: string, propValue: boolean | number | string) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId, value: { notEquals: propValue } }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+```
+##### ***testPropertyOptionsWithNotHavingAProperty.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[has_property={property=!propId}]
+
+// Equivalent scripting code would be:
+function findEntitiesNotHavingAProperty(propId: string) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId, exclude: true }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+```
+##### ***testPropertyOptionsWithRangeComparison.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[has_property={propId=lowerBoundValue..upperBoundValue}]
+
+// Equivalent scripting code would be:
+function findEntitiesHavingPropertyWithinRange(propId: string, lowerBoundValue: number, upperBoundValue: number) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId, value: { lowerBound: lowerBoundValue, upperBound: upperBoundValue } }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
 }
 ```
 ##### ***testSendMessageAllPlayers.ts***
@@ -142,30 +301,6 @@ function spawnPigs(dimension: Dimension) {
     });
 }
 ```
-##### ***checkFeatherNearby.ts***
-```typescript
-import { DimensionLocation, EntityComponentTypes } from "@minecraft/server";
-
-// Returns true if a feather item entity is within 'distance' blocks of 'location'.
-function isFeatherNear(location: DimensionLocation, distance: number): boolean {
-    const items = location.dimension.getEntities({
-        location: location,
-        maxDistance: 20,
-    });
-    
-    for (const item of items) {
-        const itemComp = item.getComponent(EntityComponentTypes.Item);
-    
-        if (itemComp) {
-            if (itemComp.itemStack.typeId.endsWith('feather')) {
-                return true;
-            }
-        }
-    }
-
-    return false;
-}
-```
 
 ## Properties
 
@@ -176,61 +311,12 @@ Limits the number of entities to return, opting for the closest N entities as sp
 
 Type: *number*
 
-### **excludeFamilies**
-`excludeFamilies?: string[];`
-
-Excludes entities that match one or more of the specified families.
-
-Type: *string*[]
-
-### **excludeGameModes**
-`excludeGameModes?: GameMode[];`
-
-Excludes entities if have a specific gamemode that matches the specified gamemode.
-
-Type: [*GameMode*](GameMode.md)[]
-
-### **excludeNames**
-`excludeNames?: string[];`
-
-Excludes entities that have a name that match one of the specified values.
-
-Type: *string*[]
-
-### **excludeTags**
-`excludeTags?: string[];`
-
-Excludes entities with a tag that matches one of the specified values.
-
-Type: *string*[]
-
-### **excludeTypes**
-`excludeTypes?: string[];`
-
-Excludes entities if they are one of the specified types.
-
-Type: *string*[]
-
-### **families**
-`families?: string[];`
-
-If specified, includes entities that match all of the specified families.
-
-Type: *string*[]
-
 ### **farthest**
 `farthest?: number;`
 
 Limits the number of entities to return, opting for the farthest N entities as specified by this property. The location value must also be specified on the query options object.
 
 Type: *number*
-
-### **gameMode**
-`gameMode?: GameMode;`
-
-If specified, includes entities with a gamemode that matches the specified gamemode.
-
-Type: [*GameMode*](GameMode.md)
 
 ### **location**
 `location?: Vector3;`
@@ -246,94 +332,12 @@ If specified, includes entities that are less than this distance away from the l
 
 Type: *number*
 
-### **maxHorizontalRotation**
-`maxHorizontalRotation?: number;`
-
-If specified, will only include entities that have at most this horizontal rotation.
-
-Type: *number*
-
-### **maxLevel**
-`maxLevel?: number;`
-
-If defined, only players that have at most this level are returned.
-
-Type: *number*
-
-### **maxVerticalRotation**
-`maxVerticalRotation?: number;`
-
-If specified, only entities that have at most this vertical rotation are returned.
-
-Type: *number*
-
 ### **minDistance**
 `minDistance?: number;`
 
 If specified, includes entities that are least this distance away from the location specified in the location property.
 
 Type: *number*
-
-### **minHorizontalRotation**
-`minHorizontalRotation?: number;`
-
-If specified, will only include entities that have at a minimum this horizontal rotation.
-
-Type: *number*
-
-### **minLevel**
-`minLevel?: number;`
-
-If defined, only players that have at least this level are returned.
-
-Type: *number*
-
-### **minVerticalRotation**
-`minVerticalRotation?: number;`
-
-If specified, will only include entities that have at least this vertical rotation.
-
-Type: *number*
-
-### **name**
-`name?: string;`
-
-Includes entities with the specified name.
-
-Type: *string*
-
-::: moniker range="=minecraft-bedrock-experimental"
-### **propertyOptions**
-`propertyOptions?: EntityQueryPropertyOptions[];`
-
-Gets/sets a collection of EntityQueryPropertyOptions objects with filters for specific properties.
-
-Type: [*EntityQueryPropertyOptions*](EntityQueryPropertyOptions.md)[]
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-### **scoreOptions**
-`scoreOptions?: EntityQueryScoreOptions[];`
-
-Gets/sets a collection of EntityQueryScoreOptions objects with filters for specific scoreboard objectives.
-
-Type: [*EntityQueryScoreOptions*](EntityQueryScoreOptions.md)[]
-
-### **tags**
-`tags?: string[];`
-
-Includes entities that match all of the specified tags.
-
-Type: *string*[]
-
-### **type**
-`type?: string;`
-
-If defined, entities that match this type are included.
-
-Type: *string*
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **volume**
@@ -401,6 +405,162 @@ function playSounds(dimension: Dimension) {
     });
 }
 ```
+##### ***testPropertyOptionsWithEqualsComparison.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[has_property={propId=propValue}]
+
+// Equivalent scripting code would be:
+function findEntitiesHavingPropertyEqualsTo(propId: string, propValue: boolean | number | string) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId, value: { equals: propValue } }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+```
+##### ***testPropertyOptionsWithGreaterThanComparison.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// No equivalent commands as `propValue..` is inclusive in commands 
+
+function findEntitiesHavingPropertyGreaterThan(propId: string, propValue: number) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId, value: { greaterThan: propValue } }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+```
+##### ***testPropertyOptionsWithGreaterThanOrEqualsComparison.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[has_property={propId=propValue..}]
+
+// Equivalent scripting code would be:
+function findEntitiesHavingPropertyGreaterThanOrEqualsTo(propId: string, propValue: number) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId, value: { greaterThanOrEquals: propValue } }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+```
+##### ***testPropertyOptionsWithHavingAProperty.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[has_property={property=propId}]
+
+// Equivalent scripting code would be:
+function findEntitiesHavingAProperty(propId: string) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+```
+##### ***testPropertyOptionsWithLessThanComparison.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// No equivalent commands as `..propValue` is inclusive in commands 
+
+function findEntitiesHavingPropertyLessThan(propId: string, propValue: number) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId, value: { lessThan: propValue } }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+```
+##### ***testPropertyOptionsWithLessThanOrEqualsComparison.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[has_property={propId=..propValue}]
+
+// Equivalent scripting code would be:
+function findEntitiesHavingPropertyLessThanOrEqualsTo(propId: string, propValue: number) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId, value: { lessThanOrEquals: propValue } }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+```
+##### ***testPropertyOptionsWithNotEqualsComparison.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[has_property={propId=!propValue}]
+
+// Equivalent scripting code would be:
+function findEntitiesHavingPropertyNotEqualsTo(propId: string, propValue: boolean | number | string) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId, value: { notEquals: propValue } }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+```
+##### ***testPropertyOptionsWithNotHavingAProperty.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[has_property={property=!propId}]
+
+// Equivalent scripting code would be:
+function findEntitiesNotHavingAProperty(propId: string) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId, exclude: true }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+```
+##### ***testPropertyOptionsWithRangeComparison.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[has_property={propId=lowerBoundValue..upperBoundValue}]
+
+// Equivalent scripting code would be:
+function findEntitiesHavingPropertyWithinRange(propId: string, lowerBoundValue: number, upperBoundValue: number) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId, value: { lowerBound: lowerBoundValue, upperBound: upperBoundValue } }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+```
 ##### ***testSendMessageAllPlayers.ts***
 ```typescript
 import { Dimension } from '@minecraft/server';
@@ -477,29 +637,5 @@ function spawnPigs(dimension: Dimension) {
             });
         });
     });
-}
-```
-##### ***checkFeatherNearby.ts***
-```typescript
-import { DimensionLocation, EntityComponentTypes } from "@minecraft/server";
-
-// Returns true if a feather item entity is within 'distance' blocks of 'location'.
-function isFeatherNear(location: DimensionLocation, distance: number): boolean {
-    const items = location.dimension.getEntities({
-        location: location,
-        maxDistance: 20,
-    });
-    
-    for (const item of items) {
-        const itemComp = item.getComponent(EntityComponentTypes.Item);
-    
-        if (itemComp) {
-            if (itemComp.itemStack.typeId.endsWith('feather')) {
-                return true;
-            }
-        }
-    }
-
-    return false;
 }
 ```

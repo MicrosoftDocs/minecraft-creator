@@ -174,6 +174,22 @@ Stripped Oak Log
 - `minecraft:bamboo_sign`
 - `minecraft:apple`
 Apple
+- `minecraft:raw_gold_block`
+Raw Gold Block
+- `minecraft:vex_armor_trim_smithing_template`
+- `minecraft:black_carpet`
+- `minecraft:carrot`
+Carrot
+- `minecraft:strider_spawn_egg`
+Strider Spawn Egg
+- `minecraft:command_block`
+Command Block
+- `minecraft:potion`
+Potion
+- `minecraft:chicken`
+Chicken
+- `minecraft:ominous_trial_key`
+- `minecraft:dead_fire_coral_fan`
 - `minecraft:bookshelf`
 Bookshelf
 - `minecraft:golden_horse_armor`
@@ -232,10 +248,10 @@ Porkchop
 Cookie
 - `minecraft:music_disc_chirp`
 Music Disc Chirp
-- `minecraft:cooked_rabbit`
-Cooked Rabbit
 - `minecraft:prismarine_bricks_stairs`
 Prismarine Bricks Stairs
+- `minecraft:cooked_rabbit`
+Cooked Rabbit
 - `minecraft:glow_squid_spawn_egg`
 Glow Squid Spawn Egg
 - `minecraft:item.iron_door`
@@ -268,10 +284,6 @@ Silver Glazed Terracotta
 Cocoa Beans
 - `minecraft:tropical_fish`
 Tropical Fish
-- `minecraft:stone_axe`
-Stone Axe
-- `minecraft:stained_glass_pane`
-Stained Glass Pane
 - `minecraft:bucket`
 Bucket
 - `minecraft:ancient_debris`
@@ -317,20 +329,6 @@ Exposed Copper
 Cooked Beef
 - `minecraft:comparator`
 Comparator
-- `minecraft:raw_gold_block`
-Raw Gold Block
-- `minecraft:vex_armor_trim_smithing_template`
-- `minecraft:black_carpet`
-- `minecraft:carrot`
-Carrot
-- `minecraft:strider_spawn_egg`
-Strider Spawn Egg
-- `minecraft:command_block`
-Command Block
-- `minecraft:potion`
-Potion
-- `minecraft:chicken`
-Chicken
 - `minecraft:rotten_flesh`
 Rotten Flesh
 - `minecraft:element_62`
@@ -474,6 +472,10 @@ Salmon Bucket
 Planks
 - `minecraft:stone_pickaxe`
 Stone Pickaxe
+- `minecraft:stone_axe`
+Stone Axe
+- `minecraft:stained_glass_pane`
+Stained Glass Pane
 - `minecraft:oxidized_copper_trapdoor`
 - `minecraft:smithing_table`
 Smithing Table
@@ -618,12 +620,12 @@ Music Disc Pigstep
 Eye of Ender
 - `minecraft:diamond_helmet`
 Diamond Helmet
+- `minecraft:sand`
+Sand
 - `minecraft:stone_pressure_plate`
 Stone Pressure Plate
 - `minecraft:diamond_chestplate`
 Diamond Chestplate
-- `minecraft:sand`
-Sand
 - `minecraft:cut_copper_slab`
 Cut Copper Slab
 - `minecraft:axolotl_spawn_egg`
@@ -1388,6 +1390,7 @@ Field Masoned Banner Pattern
 Bordure Indented Banner Pattern
 - `minecraft:purple_candle_cake`
 Purple Candle Cake
+- `minecraft:short_grass`
 - `minecraft:orange_shulker_box`
 - `minecraft:potatoes`
 Potatoes
@@ -1405,6 +1408,17 @@ Honeycomb
 Honey Bottle
 - `minecraft:red_nether_brick`
 Red Nether Brick
+- `minecraft:stripped_warped_hyphae`
+Stripped Warped Hyphae
+- `minecraft:mangrove_sign`
+Mangrove Sign
+- `minecraft:blue_candle_cake`
+Blue Candle Cake
+- `minecraft:magma`
+Magma
+- `minecraft:element_22`
+[Education Edition] Titanium (Ti)
+- `minecraft:ominous_bottle`
 - `minecraft:compound`
 [Education Edition] Compound
 - `minecraft:ice_bomb`
@@ -1497,10 +1511,6 @@ Frog Spawn
 Waxed Weathered Double Cut Copper Slab
 - `minecraft:allay_spawn_egg`
 Allay Spawn Egg
-- `minecraft:stripped_warped_hyphae`
-Stripped Warped Hyphae
-- `minecraft:mangrove_sign`
-Mangrove Sign
 - `minecraft:mangrove_slab`
 Mangrove Slab
 - `minecraft:mangrove_propagule`
@@ -1650,10 +1660,10 @@ Deepslate Coal Ore
 - `minecraft:tuff_slab`
 - `minecraft:element_9`
 [Education Edition] Fluorine (F)
-- `minecraft:polished_tuff_slab`
-- `minecraft:light_blue_wool`
 - `minecraft:waxed_oxidized_cut_copper`
 Waxed Oxidized Cut Copper
+- `minecraft:polished_tuff_slab`
+- `minecraft:light_blue_wool`
 - `minecraft:oxidized_chiseled_copper`
 - `minecraft:birch_planks`
 - `minecraft:tuff_brick_slab`
@@ -1769,7 +1779,6 @@ Large Amethyst Bud
 Coral Fan
 - `minecraft:dead_brain_coral_fan`
 - `minecraft:dead_bubble_coral_fan`
-- `minecraft:dead_fire_coral_fan`
 - `minecraft:dead_horn_coral_fan`
 - `minecraft:lily_of_the_valley`
 - `minecraft:polished_blackstone_button`
@@ -1833,12 +1842,6 @@ Red Nether Brick Stairs
 - `minecraft:light_blue_concrete_powder`
 - `minecraft:acacia_planks`
 - `minecraft:dark_oak_planks`
-- `minecraft:blue_candle_cake`
-Blue Candle Cake
-- `minecraft:magma`
-Magma
-- `minecraft:element_22`
-[Education Edition] Titanium (Ti)
 - `minecraft:quartz_block`
 Quartz Block
 - `minecraft:tube_coral`
@@ -1856,6 +1859,11 @@ Small Amethyst Bud
 - `minecraft:dead_bubble_coral`
 - `minecraft:dead_fire_coral`
 - `minecraft:purple_stained_glass_pane`
+- `minecraft:element_6`
+[Education Edition] Carbon (C)
+- `minecraft:waxed_cut_copper_stairs`
+Waxed Cut Copper Stairs
+- `minecraft:fern`
 - `minecraft:soul_soil`
 Soul Soil
 - `minecraft:acacia_pressure_plate`
@@ -1915,14 +1923,14 @@ Concrete Powder
 - `minecraft:element_64`
 [Education Edition] Gadolinium (Gd)
 - `minecraft:yellow_stained_glass`
-- `minecraft:lime_stained_glass`
-- `minecraft:mud_brick_double_slab`
-Mud Brick Double Slab
 - `minecraft:item.hopper`
 Hopper
 - `minecraft:wood`
 Wood
 - `minecraft:hard_magenta_stained_glass`
+- `minecraft:mud_brick_double_slab`
+Mud Brick Double Slab
+- `minecraft:lime_stained_glass`
 - `minecraft:crimson_double_slab`
 Crimson Double Slab
 - `minecraft:hard_purple_stained_glass`
@@ -1986,8 +1994,6 @@ Bell
 - `minecraft:stripped_oak_wood`
 - `minecraft:birch_wood`
 - `minecraft:stripped_birch_wood`
-- `minecraft:hanging_roots`
-Hanging Roots
 - `minecraft:dark_oak_wood`
 - `minecraft:stripped_dark_oak_wood`
 - `minecraft:hard_white_stained_glass`
@@ -2037,8 +2043,6 @@ Polished Deepslate Wall
 Black Candle
 - `minecraft:element_5`
 [Education Edition] Boron (B)
-- `minecraft:element_6`
-[Education Edition] Carbon (C)
 - `minecraft:element_8`
 [Education Edition] Oxygen (O)
 - `minecraft:element_10`
@@ -2195,6 +2199,8 @@ Jungle Button
 Crimson Wall Sign
 - `minecraft:cobbled_deepslate_stairs`
 Cobbled Deepslate Stairs
+- `minecraft:hanging_roots`
+Hanging Roots
 - `minecraft:calcite`
 Calcite
 - `minecraft:stripped_dark_oak_log`
@@ -2251,8 +2257,6 @@ Deepslate Tile Double Slab
 Powered Comparator
 - `minecraft:warped_wall_sign`
 Warped Wall Sign
-- `minecraft:waxed_cut_copper_stairs`
-Waxed Cut Copper Stairs
 - `minecraft:mangrove_double_slab`
 Mangrove Double Slab
 - `minecraft:waxed_exposed_copper_grate`

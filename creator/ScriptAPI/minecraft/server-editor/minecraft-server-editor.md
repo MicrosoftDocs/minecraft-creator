@@ -74,7 +74,10 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 ## Classes
 - [BedrockEventSubscriptionCache](BedrockEventSubscriptionCache.md)
+- [BlockPalette](BlockPalette.md)
 - [BlockPaletteManager](BlockPaletteManager.md)
+- [BrushShape](BrushShape.md)
+- [BrushShapeManager](BrushShapeManager.md)
 - [ClipboardItem](ClipboardItem.md)
 - [ClipboardManager](ClipboardManager.md)
 - [Cursor](Cursor.md)
@@ -100,6 +103,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [SelectionEventAfterEvent](SelectionEventAfterEvent.md)
 - [SelectionManager](SelectionManager.md)
 - [SettingsManager](SettingsManager.md)
+- [SettingsUIElement](SettingsUIElement.md)
 - [SimpleBlockPaletteItem](SimpleBlockPaletteItem.md)
 - [SimulationState](SimulationState.md)
 - [TransactionManager](TransactionManager.md)
