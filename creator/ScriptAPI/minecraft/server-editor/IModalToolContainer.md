@@ -34,7 +34,7 @@ Type: *string*
 
 ### **addTool**
 `
-addTool(params: ModalToolCreationParameters): IModalTool
+addTool(params: ModalToolCreationParameters, action: RegisteredAction<NoArgsAction>): IModalTool
 `
 
 Create a new tool in the modal tool container represented via button on the tool rail.
@@ -43,6 +43,7 @@ Create a new tool in the modal tool container represented via button on the tool
 - **params**: *ModalToolCreationParameters*
   
   Construction parameters for the new tool
+- **action**: *RegisteredAction<NoArgsAction>*
 
 **Returns** *IModalTool*
 

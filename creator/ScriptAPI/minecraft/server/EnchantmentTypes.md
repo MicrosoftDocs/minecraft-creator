@@ -16,6 +16,7 @@ Contains a catalog of Minecraft Enchantment Types that are available in this wor
 
 ## Methods
 - [get](#get)
+- [getAll](#getall)
 
 ### **get**
 `
@@ -30,3 +31,12 @@ Retrieves an enchantment with the specified identifier.
   Identifier of the enchantment.  For example, "minecraft:flame".
 
 **Returns** [*EnchantmentType*](EnchantmentType.md) | *undefined* - If available, returns an EnchantmentType object that represents the specified enchantment.
+
+### **getAll**
+`
+static getAll(): EnchantmentType[]
+`
+
+Returns a collection of all available enchantment types.
+
+**Returns** [*EnchantmentType*](EnchantmentType.md)[]

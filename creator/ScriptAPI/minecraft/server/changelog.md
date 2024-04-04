@@ -9,7 +9,7 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [1.11.0-beta](#1110-beta)
+- [1.12.0-beta](#1120-beta)
 - [1.9.0](#190)
 - [1.8.0](#180)
 - [1.7.0](#170)
@@ -21,7 +21,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 1.11.0-beta
+## 1.12.0-beta
 #### Added *[`BiomeType`](BiomeType.md)*
 #### Added *[`BiomeTypes`](BiomeTypes.md)*
 #### Changed *[`Block`](Block.md)*
@@ -56,7 +56,6 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`BlockLocationIterator`](BlockLocationIterator.md)*
 #### Changed *[`BlockPermutation`](BlockPermutation.md)*
 - Added property *[`type`](BlockPermutation.md#type)*
-- Added function *[`clone`](BlockPermutation.md#clone)*
 - Added function *[`getItemStack`](BlockPermutation.md#getitemstack)*
 - Added function *[`getTags`](BlockPermutation.md#gettags)*
 - Added function *[`hasTag`](BlockPermutation.md#hastag)*
@@ -137,6 +136,9 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`GameRuleChangeAfterEvent`](GameRuleChangeAfterEvent.md)*
 #### Added *[`GameRuleChangeAfterEventSignal`](GameRuleChangeAfterEventSignal.md)*
 #### Added *[`GameRules`](GameRules.md)*
+#### Added *[`ItemComponentBeforeDurabilityDamageEvent`](ItemComponentBeforeDurabilityDamageEvent.md)*
+#### Added *[`ItemComponentHitEntityEvent`](ItemComponentHitEntityEvent.md)*
+#### Added *[`ItemComponentMineBlockEvent`](ItemComponentMineBlockEvent.md)*
 #### Added *[`ItemComponentRegistry`](ItemComponentRegistry.md)*
 #### Added *[`ItemComponentUseEvent`](ItemComponentUseEvent.md)*
 #### Added *[`ItemCooldownComponent`](ItemCooldownComponent.md)*
@@ -150,6 +152,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`ListBlockVolume`](ListBlockVolume.md)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
 #### Changed *[`Player`](Player.md)*
+- Added property *[`inputPermissions`](Player.md#inputpermissions)*
 - Added property *[`selectedSlot`](Player.md#selectedslot)*
 - Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`getGameMode`](Player.md#getgamemode)*
@@ -167,6 +170,9 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PlayerGameModeChangeAfterEventSignal`](PlayerGameModeChangeAfterEventSignal.md)*
 #### Added *[`PlayerGameModeChangeBeforeEvent`](PlayerGameModeChangeBeforeEvent.md)*
 #### Added *[`PlayerGameModeChangeBeforeEventSignal`](PlayerGameModeChangeBeforeEventSignal.md)*
+#### Added *[`PlayerInputPermissionCategoryChangeAfterEvent`](PlayerInputPermissionCategoryChangeAfterEvent.md)*
+#### Added *[`PlayerInputPermissionCategoryChangeAfterEventSignal`](PlayerInputPermissionCategoryChangeAfterEventSignal.md)*
+#### Added *[`PlayerInputPermissions`](PlayerInputPermissions.md)*
 #### Added *[`PlayerIterator`](PlayerIterator.md)*
 #### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
 #### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
@@ -200,6 +206,7 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`gameRuleChange`](WorldAfterEvents.md#gamerulechange)*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
 - Added property *[`playerGameModeChange`](WorldAfterEvents.md#playergamemodechange)*
+- Added property *[`playerInputPermissionCategoryChange`](WorldAfterEvents.md#playerinputpermissioncategorychange)*
 - Added property *[`playerInteractWithBlock`](WorldAfterEvents.md#playerinteractwithblock)*
 - Added property *[`playerInteractWithEntity`](WorldAfterEvents.md#playerinteractwithentity)*
 - Added property *[`worldInitialize`](WorldAfterEvents.md#worldinitialize)*
@@ -226,6 +233,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`GameRule`](GameRule.md)
 #### Added enum [`HudElement`](HudElement.md)
 #### Added enum [`HudVisibility`](HudVisibility.md)
+#### Added enum [`InputPermissionCategory`](InputPermissionCategory.md)
 #### Added enum [`ItemComponentTypes`](ItemComponentTypes.md)
 #### Added enum [`PaletteColor`](PaletteColor.md)
 #### Added enum [`StructureAnimationMode`](StructureAnimationMode.md)

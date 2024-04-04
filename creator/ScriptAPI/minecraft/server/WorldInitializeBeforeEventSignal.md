@@ -45,6 +45,3 @@ Removes a callback from being called the scripting environment is initialized fo
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.

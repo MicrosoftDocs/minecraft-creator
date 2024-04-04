@@ -60,9 +60,6 @@ Unregisters a method that was previously subscribed to the subscription event.
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
-> [!WARNING]
-> This function can throw errors.
-
 #### Examples
 ##### ***logEntitySpawnEvents.ts***
 ```typescript

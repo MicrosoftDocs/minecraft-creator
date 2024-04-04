@@ -14,7 +14,7 @@ Defines a collection of items.
 ##### ***givePlayerIronFireSword.ts***
 ```typescript
 // Spawns a bunch of item stacks
-import { ItemComponentTypes, ItemStack, Player } from '@minecraft/server';
+import { EnchantmentType, ItemComponentTypes, ItemStack, Player } from '@minecraft/server';
 import { MinecraftItemTypes, MinecraftEnchantmentTypes } from '@minecraft/vanilla-data';
 
 function giveFireSword(player: Player) {
@@ -22,7 +22,7 @@ function giveFireSword(player: Player) {
 
     const enchantments = ironFireSword?.getComponent(ItemComponentTypes.Enchantable);
     if (enchantments) {
-        enchantments.addEnchantment({ type: MinecraftEnchantmentTypes.FireAspect, level: 1 });
+        enchantments.addEnchantment({ type: new EnchantmentType(MinecraftEnchantmentTypes.FireAspect), level: 1 });
     }
 
     const inventory = player.getComponent('minecraft:inventory');
@@ -178,7 +178,7 @@ Creates a new instance of a stack of items for use in the world.
 #### **Parameters**
 - **itemType**: [*ItemType*](ItemType.md) | *string*
   
-  Type of item to create. See the @minecraft/vanilla-data.MinecraftItemTypes enumeration for a list of standard item types in Minecraft experiences.
+  Type of item to create. See the {@link @minecraft/vanilla-data.MinecraftItemTypes} enumeration for a list of standard item types in Minecraft experiences.
 - **amount**?: *number* = `1`
   
   Number of items to place in the stack, between 1-255. The provided value will be clamped to the item's maximum stack size. Note that certain items can only have one item in the stack.
@@ -538,7 +538,7 @@ function giveAwesomeSword(player: Player) {
 ##### ***givePlayerIronFireSword.ts***
 ```typescript
 // Spawns a bunch of item stacks
-import { ItemComponentTypes, ItemStack, Player } from '@minecraft/server';
+import { EnchantmentType, ItemComponentTypes, ItemStack, Player } from '@minecraft/server';
 import { MinecraftItemTypes, MinecraftEnchantmentTypes } from '@minecraft/vanilla-data';
 
 function giveFireSword(player: Player) {
@@ -546,7 +546,7 @@ function giveFireSword(player: Player) {
 
     const enchantments = ironFireSword?.getComponent(ItemComponentTypes.Enchantable);
     if (enchantments) {
-        enchantments.addEnchantment({ type: MinecraftEnchantmentTypes.FireAspect, level: 1 });
+        enchantments.addEnchantment({ type: new EnchantmentType(MinecraftEnchantmentTypes.FireAspect), level: 1 });
     }
 
     const inventory = player.getComponent('minecraft:inventory');

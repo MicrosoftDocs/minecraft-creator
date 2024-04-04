@@ -52,9 +52,6 @@ Type: [*BlockType*](BlockType.md)
 ::: moniker-end
 
 ## Methods
-::: moniker range="=minecraft-bedrock-experimental"
-- [clone](#clone)
-::: moniker-end
 - [getAllStates](#getallstates)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getItemStack](#getitemstack)
@@ -69,20 +66,6 @@ Type: [*BlockType*](BlockType.md)
 - [matches](#matches)
 - [withState](#withstate)
 - [resolve](#resolve)
-
-::: moniker range="=minecraft-bedrock-experimental"
-### **clone**
-`
-clone(): BlockPermutation
-`
-
-Creates a copy of this permutation.
-
-**Returns** [*BlockPermutation*](BlockPermutation.md) - A copy of the permutation.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **getAllStates**
 `
