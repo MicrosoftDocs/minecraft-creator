@@ -566,7 +566,7 @@ Note that since these are reflections of the sky, reflections will not be visibl
 
 New data-driving capabilities for Color Grading and Tone Mapping are available in Minecraft Bedrock **1.21.0.22** Previews and newer. These new tools allow resource packs to convey unique moods and themes through industry standard color correction controls.
 
-### Color Grading
+### Color rading
 
 Minecraft's color grading system allows for many degrees of customization of the final image. You can control the saturation, contrast, gain, and offset of pixels per RGB channel. This can be done on a global scale regardless of pixel luminance, or it can be done on a more fine-grained scale with unique sets of parameters for shadows, midtones and highlights. The highlight parameters are applied to the brightest pixels, the shadow parameters applied to the darkest pixels, and the midtone parameters applied to the pixels with luminance close to the average luminance of the scene.
 
@@ -606,7 +606,7 @@ For instance, the relative difference in luminous power between a torch and an E
 
 ### Schema
 
-Color grading configurations are JSON files located in the "color_grading" directory in a resource pack, and must adhere to the following format:
+Color grading configurations are JSON files located in the "color_grading" directory in a resource pack. They must have the filename "color_grading.json", and adhere to the following format:
 
 ```json
 {
@@ -655,6 +655,8 @@ Color grading configurations are JSON files located in the "color_grading" direc
 
 The following example JSON can be used as a starting point:
 
+**color_grading/color_grading.json**
+
 ```json
 {
   "my_resource_pack:color_grading_settings"
@@ -665,7 +667,7 @@ The following example JSON can be used as a starting point:
     }
     "color_grading"
     {
-      "global"
+      "midtones"
         {
           "contrast": [1.3, 1.3, 1.3],
           "gain": [1.0, 1.0, 1.0],
