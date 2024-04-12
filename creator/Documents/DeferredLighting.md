@@ -592,16 +592,11 @@ Tone mapping determines how a color is remapped from HDR-space to SDR-space for 
 
 | Tone Map | Description |
 |----------|-------|
-| Reinhard | A low-cost tone mapping operator that remaps HDR color values in the range `[0, ∞)` to `[0, 1)`. This operator looks especially good when applied to low-contrast scenes whose values are already within the range of `[0, 1)`, but tends to mute higher luminance values. |
-| Reinhard Luma | An extended version of the Reinhard operator that comes at a slightly higher cost, but it preserves details in low dynamic range regions of an image that would otherwise be lost by the standard Reinhard operator. |
-| Reinhard Luminance | A version of the extended Reinhard operator modified to adjust the luminance of the input colors. It comes at a slightly higher cost, but it preserves colors in high luminance regions of an image that would otherwise be washed out by the standard Reinhard operator. |
-| Hable | A filmic tone mapping operator meant to emulate the behaviors of real-life film, developed and shared by John Hable at a GDC talk from 2010 titled "Uncharted 2: HDR Lighting". |
-| Academy Color Encoding System (ACES) | A filmic tone mapping operator meant to emulate the behaviors of real-life film, specifically following the ACES standard used in television and film. |
-
-> [!NOTE]
-> - The **Reinhard**, **Reinhard Luma**, and **Reinhard Luminance** tone mapping operators come from the 2002 work of Erik Reinhard, Michael Stark, Peter Shirley, and James Ferwerda.
-> - The **Hable** tone mapping operator comes from John Hable's 2010 work.
-> - The **Academy Color Encoding System** was originally fitted and shared by Stephen Hill, Krzysztof Narkowicz, and MJP.
+| Reinhard | A low-cost tone mapping operator [[3](#ref_reinhard), eq. 3] that remaps HDR color values in the range `[0, ∞)` to `[0, 1)`. This operator looks especially good when applied to low-contrast scenes whose values are already within the range of `[0, 1)`, but tends to mute higher luminance values. |
+| Reinhard Luma | An extended version of the Reinhard operator [[3](#ref_reinhard), eq. 4] that comes at a slightly higher cost, but it preserves details in low dynamic range regions of an image that would otherwise be lost by the standard Reinhard operator. |
+| Reinhard Luminance | A version of the extended Reinhard operator [[3](#ref_reinhard), eq. 4] modified to adjust the luminance of the input colors. It comes at a slightly higher cost, but it preserves colors in high luminance regions of an image that would otherwise be washed out by the standard Reinhard operator. |
+| Hable | A filmic tone mapping operator meant to emulate the behaviors of real-life film, developed and shared by John Hable at a GDC talk from 2010 titled "Uncharted 2: HDR Lighting". [[1](#ref_hable)] |
+| Academy Color Encoding System (ACES) | A filmic tone mapping operator meant to emulate the behaviors of real-life film, specifically following the ACES standard used in television and film. [[2](#ref_hill)] |
 
 ### Filmic tone mapping operators
 
