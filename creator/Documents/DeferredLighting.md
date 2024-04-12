@@ -564,7 +564,7 @@ Note that since these are reflections of the sky, reflections will not be visibl
 
 ## Color Grading and Tone Mapping
 
-New data-driving capabilities for Color Grading and Tone Mapping are available in Minecraft Bedrock **1.21.??.??** Previews and newer. These new tools allow resource packs to convey unique moods and themes through industry standard color correction controls.
+New data-driving capabilities for Color Grading and Tone Mapping are available in Minecraft Bedrock **1.21.0.22** Previews and newer. These new tools allow resource packs to convey unique moods and themes through industry standard color correction controls.
 
 ### Color Grading
 
